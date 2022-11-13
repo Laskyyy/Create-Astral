@@ -1,0 +1,35 @@
+UI Tex
+https://www.curseforge.com/minecraft/texture-packs/faithless
+
+Computercraft x create
+https://www.curseforge.com/minecraft/texture-packs/computercreate
+
+Machinery x create
+https://www.curseforge.com/minecraft/texture-packs/thermal-series-create-version
+
+Bettervanillabuilding - general texture pack
+https://www.curseforge.com/minecraft/texture-packs/bettervanillabuilding
+
+Toms storage create-ified
+https://www.curseforge.com/minecraft/texture-packs/toms-simple-storage-revamped
+
+Bow model
+https://www.curseforge.com/minecraft/texture-packs/create-guns
+
+Create Alloyed Mod - Steel and bronze texture related items
+https://www.curseforge.com/minecraft/mc-mods/create-alloyed
+
+Bronze Cogwheel - Steam powered
+https://www.curseforge.com/minecraft/mc-mods/steam-powered-create
+
+Copper / Brass armoury from stuff additions
+https://www.curseforge.com/minecraft/mc-mods/create-stuff-additions
+
+Moon Texture
+https://www.curseforge.com/minecraft/texture-packs/fractured-moon
+
+Sturdy sheet & copper block
+https://www.curseforge.com/minecraft/mc-mods/create-misc-and-things
+
+Create Unique Mechanism Textures ala Cabricality
+https://github.com/DM-Earth/Cabricality

@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "pack_format": 8,
+    "description": "To remove custom textures delete the 'resources' folder in the modpack"
+  }
+}
