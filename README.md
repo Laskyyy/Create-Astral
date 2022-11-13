@@ -3,6 +3,7 @@
 Dev Github for the modpack Create: Astral
 
 https://www.curseforge.com/minecraft/modpacks/create-astral
+
 https://discord.gg/mNeHyuZdqm
 
 Does not include mods, or most configs.
