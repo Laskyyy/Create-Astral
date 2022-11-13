@@ -6,10 +6,10 @@
 			"stream": true
 		}]
 	},
-  "music.msc_graverave": {
+  "music.astrallakes": {
 		"category": "music",
 		"sounds": [{
-			"name": "musictriggers:music/msc_graverave",
+			"name": "musictriggers:music/astrallakes",
 			"stream": true
 		}]
 	}

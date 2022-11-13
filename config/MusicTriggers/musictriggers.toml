@@ -1,5 +1,5 @@
-[ambient1]
-    [ambient1.trigger]
-        name = "menu"
+[astrallakes]
+    [astrallakes.trigger]
+        name= "menu"
         fade_in = "200"
-        fade_out = "100"
+        fade_out = "200"
