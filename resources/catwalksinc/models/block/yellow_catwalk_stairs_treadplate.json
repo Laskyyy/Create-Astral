@@ -1,0 +1,43 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"particle": "catwalksinc:block/yellow_treadplate",
+		"texture": "catwalksinc:block/yellow_treadplate",
+		"front": "catwalksinc:block/yellow_catwalk_stairs_front"
+	},
+	"elements": [
+		{
+			"from": [0, 9, 0],
+			"to": [16, 9, 8],
+			"faces": {
+				"up": {"uv": [0, 0, 16, 8], "texture": "#texture"},
+				"down": {"uv": [0, 8, 16, 16], "texture": "#texture"}
+			}
+		},
+		{
+			"from": [0, 1, 0],
+			"to": [16, 9, 0],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 8], "texture": "#front", "cullface": "north"},
+				"south": {"uv": [0, 0, 16, 8], "texture": "#front", "cullface": "north"}
+			}
+		},
+		{
+			"from": [0, 17, 8],
+			"to": [16, 17, 16],
+			"faces": {
+				"up": {"uv": [0, 8, 16, 16], "texture": "#texture"},
+				"down": {"uv": [0, 0, 16, 8], "texture": "#texture"}
+			}
+		},
+		{
+			"from": [0, 9, 8],
+			"to": [16, 17, 8],
+			"faces": {
+				"north": {"uv": [0, 8, 16, 16], "texture": "#front"},
+				"south": {"uv": [0, 8, 16, 16], "texture": "#front"}
+			}
+		}
+	]
+}
