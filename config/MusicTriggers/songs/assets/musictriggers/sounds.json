@@ -1,0 +1,16 @@
+{
+  "music.ambient1": {
+		"category": "music",
+		"sounds": [{
+			"name": "musictriggers:music/ambient1",
+			"stream": true
+		}]
+	},
+  "music.msc_graverave": {
+		"category": "music",
+		"sounds": [{
+			"name": "musictriggers:music/msc_graverave",
+			"stream": true
+		}]
+	}
+}
