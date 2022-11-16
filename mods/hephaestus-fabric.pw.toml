@@ -1,0 +1,14 @@
+name = "Hephaestus Fabric"
+filename = "Hephaestus-1.18.2-3.5.2.150.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "a26944b9b78e95981de3a9aee9dfa5d045e1e654"
+
+[update]
+[update.curseforge]
+file-id = 4022701
+project-id = 667894

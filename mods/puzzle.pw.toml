@@ -1,0 +1,14 @@
+name = "Puzzle"
+filename = "puzzle-1.4.1-1.18.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "a630f54c71b7bf43999a41b37763f245a2687f5f"
+
+[update]
+[update.curseforge]
+file-id = 4013747
+project-id = 563977

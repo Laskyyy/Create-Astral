@@ -1,0 +1,14 @@
+name = "InvMove"
+filename = "InvMove-1.18-0.8.1-Fabric.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "9bcb5931b33f3e9727befb846b22566370234736"
+
+[update]
+[update.curseforge]
+file-id = 3905167
+project-id = 581854

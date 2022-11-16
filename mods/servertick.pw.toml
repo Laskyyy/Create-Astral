@@ -1,0 +1,14 @@
+name = "Server Tick"
+filename = "servertick-mc1.18-1.6.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "13f2ef00ba465ceaa0c7046e4a9fcb7b28311854"
+
+[update]
+[update.curseforge]
+file-id = 3542454
+project-id = 402240

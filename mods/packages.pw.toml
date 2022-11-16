@@ -1,0 +1,14 @@
+name = "Packages"
+filename = "packages-fabric-1.18.2-3.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "26f7f57afe552b927b5425eaf170444f30589ce3"
+
+[update]
+[update.curseforge]
+file-id = 4026184
+project-id = 383733

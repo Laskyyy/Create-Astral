@@ -1,0 +1,14 @@
+name = "Iris Flywheel Compat"
+filename = "iris-flywheel-compat-1.18.2-0.1.7-BETA.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "7d89c24dd8632780e41fd7e836c1e4ed07c322fd"
+
+[update]
+[update.curseforge]
+file-id = 4032748
+project-id = 659897

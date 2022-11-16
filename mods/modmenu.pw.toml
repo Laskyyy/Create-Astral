@@ -1,0 +1,14 @@
+name = "Mod Menu"
+filename = "modmenu-3.2.4.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "610eef23101d0477efd826b3527ebbc242ac7ccf"
+
+[update]
+[update.curseforge]
+file-id = 4065495
+project-id = 308702

@@ -1,0 +1,14 @@
+name = "Mystical Oak Tree"
+filename = "mysticaloaktree-1.18.2-1.0-fabric.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "62984d39cc4e93b9046055ac9c16f471569c35a4"
+
+[update]
+[update.curseforge]
+file-id = 4070368
+project-id = 691002

@@ -1,0 +1,14 @@
+name = "Catwalks Inc."
+filename = "catwalks-inc-1.3.0.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "2af2681f1cd3c8291f32688375c571b80163f2f8"
+
+[update]
+[update.curseforge]
+file-id = 3670317
+project-id = 554340

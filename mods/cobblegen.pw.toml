@@ -1,0 +1,14 @@
+name = "CobbleGen"
+filename = "cobblegen-v1.11b36+mc1.18.x.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "829008fedd1606524f2fe8dce108cdeea8f67dca"
+
+[update]
+[update.curseforge]
+file-id = 3901427
+project-id = 581293

@@ -1,0 +1,14 @@
+name = "Create: Crystal Clear Refabricated"
+filename = "CreateCrystalClear-1.0-fabric port.jar"
+side = "both"
+
+[download]
+mode = "url"
+url = "https://cdn.modrinth.com/data/28pbjFvD/versions/w3tfmSKA/CreateCrystalClear-1.0-fabric-patch1.jar"
+hash-format = "sha512"
+hash = "4b74ebfe2676ddabd35d6cf443e9dc3e7bc344be8fb921c24d1855da5685727b885e4377be8ff5a74a80a23a2d82c5b15f786de2edbe861707c09f1bc07c83da"
+
+[update]
+[update.modrinth]
+mod-id = "28pbjFvD"
+version = "w3tfmSKA"

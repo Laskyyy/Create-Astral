@@ -1,0 +1,14 @@
+name = "HotbarCycle"
+filename = "hotbarcycle-1.0.2.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "3f11d18f4fac5822ac6c3af995347abb9b031adb"
+
+[update]
+[update.curseforge]
+file-id = 3668780
+project-id = 576281

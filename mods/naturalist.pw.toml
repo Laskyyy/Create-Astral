@@ -1,0 +1,14 @@
+name = "Naturalist"
+filename = "naturalist-fabric-1.1.1-1.18.2.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "fe2bbb80314746ef6731aaa8163b5710075447d4"
+
+[update]
+[update.curseforge]
+file-id = 3930805
+project-id = 627986

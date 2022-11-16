@@ -1,0 +1,14 @@
+name = "Towns and Towers - Structure Add-on"
+filename = "Towns-and-Towers-1.18.2-1.9.1-B.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "bbbeded3be3adaa39e43624f31ab261814eb47f0"
+
+[update]
+[update.curseforge]
+file-id = 4061457
+project-id = 626761

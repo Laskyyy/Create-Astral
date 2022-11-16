@@ -1,0 +1,14 @@
+name = "Idwtialsimmoedm"
+filename = "idwtialsimmoedm-0.1.1+1.18.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "bb6a21c1a3e9b62d144c8a4a31fe24f767f03c0e"
+
+[update]
+[update.curseforge]
+file-id = 3818819
+project-id = 629373

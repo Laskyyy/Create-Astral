@@ -1,0 +1,14 @@
+name = "Custom Machinery"
+filename = "custommachinery-1.18.2-0.7.1-fabric.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "96d2d215be48cb061bd2fb8f771e1ba98c980561"
+
+[update]
+[update.curseforge]
+file-id = 4059172
+project-id = 457017

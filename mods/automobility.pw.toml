@@ -1,0 +1,14 @@
+name = "Automobility"
+filename = "automobility-0.3+1.18.2.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "721d6ac5d53d540d1e306602d46df7604e364eef"
+
+[update]
+[update.curseforge]
+file-id = 4085492
+project-id = 658286
