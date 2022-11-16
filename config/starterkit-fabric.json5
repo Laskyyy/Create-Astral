@@ -1,0 +1,4 @@
+{
+	// Whether the starter kit should be re-set after the '/ftbteamislands create' command from FTB Team Islands. Does nothing when it's not installed.
+	"enableFTBIslandCreateCompatibility": true
+}

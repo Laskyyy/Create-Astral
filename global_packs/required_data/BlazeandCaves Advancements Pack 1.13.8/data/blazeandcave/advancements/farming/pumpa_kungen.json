@@ -1,0 +1,30 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:carved_pumpkin"
+		},
+		"title": {"translate":"Pumpa kungen!"},
+		"description": {"color":"#75E1FF","translate":"Carve a stack of pumpkins"},
+		"announce_to_chat": "true",
+		"frame": "goal"
+	},
+	"parent": "blazeandcave:farming/unmasked",
+	"rewards": {
+		"function": "bc_rewards:farming/pumpa_kungen"
+	},		
+	"criteria": {
+		"carved_pumpkin": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:carved_pumpkin"
+						],
+						"count": 64
+					}
+				]
+			}
+		}		
+	}	
+}

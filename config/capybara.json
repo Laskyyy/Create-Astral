@@ -1,0 +1,6 @@
+{
+  "debugMode": false,
+  "spawnWeight": 3,
+  "minGroupSize": 1,
+  "maxGroupSize": 4
+}

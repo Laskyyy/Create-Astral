@@ -1,0 +1,14 @@
+{
+  "type": "tconstruct:ore_melting",
+  "rate": "metal",
+  "ingredient": {
+    "item": "ad_astra:raw_ostrum_block"
+  },
+  "result": {
+    "fluid": "kubejs:molten_ostrum",
+    "amount": 81000
+  },
+  "temperature": 800,
+  "time": 389,
+  
+}

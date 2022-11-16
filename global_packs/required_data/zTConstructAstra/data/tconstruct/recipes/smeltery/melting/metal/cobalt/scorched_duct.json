@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "tconstruct:scorched_duct"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_cobalt",
+    "amount": 18000
+  },
+  "temperature": 800,
+  "time": 162,
+  "byproducts": [
+    {
+      "fluid": "tconstruct:scorched_stone",
+      "amount": 81000
+    }
+  ]
+}

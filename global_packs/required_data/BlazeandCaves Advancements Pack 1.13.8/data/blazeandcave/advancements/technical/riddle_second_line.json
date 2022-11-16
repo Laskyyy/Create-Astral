@@ -1,0 +1,51 @@
+{
+    "rewards": {
+        "function": "blazeandcave:riddle/second_line"
+    },
+    "criteria": {
+        "drowned": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:drowned",
+					"equipment": {
+						"mainhand": {
+							"items": [
+								"minecraft:fishing_rod"
+							]
+						}
+					}
+                },
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:technical/riddle_first_line": "true"
+						}
+					}
+				}
+            }
+        },
+        "zombie_villager": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+					"type": "minecraft:zombie_villager",
+					"nbt": "{VillagerData:{profession:\"minecraft:fisherman\"}}"
+                },
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:technical/riddle_first_line": "true"
+						}
+					}
+				}
+            }
+        }
+    },
+	"requirements": [
+		[
+			"drowned",
+			"zombie_villager"
+		]
+	]
+}

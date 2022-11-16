@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"rabbit_stew": {
+			"trigger": "consume_item",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:rabbit_stew"
+					]
+				}
+			}
+		}
+	}
+}

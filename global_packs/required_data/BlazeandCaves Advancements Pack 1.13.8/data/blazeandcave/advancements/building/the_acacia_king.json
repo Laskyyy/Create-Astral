@@ -1,0 +1,197 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:acacia_sapling"
+        },
+        "title": {"translate":"The Acacia King"},
+        "description": {"color":"#75E1FF","translate":"Craft every item made out of acacia wood"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:building/the_jungler",
+    "rewards": {
+		"function": "bc_rewards:building/the_acacia_king"
+    },		
+    "criteria": {
+        "acacia_planks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:acacia_planks"
+						]
+                    }
+                ]
+            }
+        },
+        "acacia_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:acacia_log"
+						]
+                    }
+                ]
+            }
+        },
+        "acacia_wood": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:acacia_wood"
+						]
+                    }
+                ]
+            }
+        },
+        "stripped_acacia_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:stripped_acacia_log"
+						]
+                    }
+                ]
+            }
+        },
+        "stripped_acacia_wood": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:stripped_acacia_wood"
+						]
+                    }
+                ]
+            }
+        },
+        "acacia_slab": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:acacia_slab"
+						]
+                    }
+                ]
+            }
+        },
+        "acacia_pressure_plate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:acacia_pressure_plate"
+						]
+                    }
+                ]
+            }
+        },
+        "acacia_fence": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:acacia_fence"
+						]
+                    }
+                ]
+            }
+        },
+        "acacia_trapdoor": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:acacia_trapdoor"
+						]
+                    }
+                ]
+            }
+        },
+        "acacia_fence_gate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:acacia_fence_gate"
+						]
+                    }
+                ]
+            }
+        },
+        "acacia_stairs": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:acacia_stairs"
+						]
+                    }
+                ]
+            }
+        },
+        "acacia_button": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:acacia_button"
+						]
+                    }
+                ]
+            }
+        },
+        "acacia_door": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:acacia_door"
+						]
+                    }
+                ]
+            }
+        },
+        "acacia_boat": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:acacia_boat"
+						]
+                    }
+                ]
+            }
+        },
+        "acacia_sign": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:acacia_sign"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

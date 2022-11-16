@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:fox_spawn_egg"
+        },
+        "title": {"translate":"What Does The Fox Say?"},
+        "description": {"translate":"Breed two red foxes with sweet berries"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:animal/puppies_yipe",
+	"rewards": {
+		"function": "bc_rewards:animal/what_does_the_fox_say"
+    },		
+    "criteria": {
+        "fox": {
+            "trigger": "minecraft:bred_animals",
+            "conditions": {
+				"parent": {
+					"type": "minecraft:fox",
+					"nbt": "{Type:red}"
+				},
+				"partner": {
+					"type": "minecraft:fox",
+					"nbt": "{Type:red}"
+				}
+            }
+        }
+    }
+}

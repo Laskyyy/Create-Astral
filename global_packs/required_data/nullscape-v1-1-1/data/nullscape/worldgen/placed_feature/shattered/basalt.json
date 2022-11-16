@@ -1,0 +1,19 @@
+{
+	"feature": "nullscape:shattered/basalt",
+	"placement": [
+		{
+			"type": "carving_mask",
+			"step": "liquid"
+		},
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 8
+		},
+		{
+			"type": "minecraft:noise_based_count",
+			"noise_to_count_ratio": 1,
+			"noise_factor": 177,
+			"noise_offset": 0.35
+		}
+	]
+}

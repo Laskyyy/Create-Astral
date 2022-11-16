@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:rabbit_hide"
+        },
+        "title": {"translate":"Going Down the Rabbit Hole"},
+        "description": {"color":"#75E1FF","translate":"Bring a rabbit to the bottom of the world, then kill it"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:animal/getting_into_a_stew",
+    "rewards": {
+        "function": "bc_rewards:animal/going_down_the_rabbit_hole"
+    },		
+    "criteria": {
+        "rabbit": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "rabbit",
+					"location": {
+						"position": {
+							"y": {
+								"max": -59.5
+							}
+						}
+					}
+                }
+            }
+        }
+    }
+}

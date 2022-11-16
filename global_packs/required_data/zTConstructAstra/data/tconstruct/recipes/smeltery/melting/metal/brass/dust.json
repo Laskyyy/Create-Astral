@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:dusts/brass"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "c:dusts/brass"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_brass",
+    "amount": 9000
+  },
+  "temperature": 605,
+  "time": 40
+}

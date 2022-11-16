@@ -1,0 +1,241 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:poppy"
+        },
+        "title": {"translate":"For you, my sweet"},
+        "description": {"translate":"Pick a flower for someone special"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:biomes/root",
+    "rewards": {
+		"function": "bc_rewards:biomes/for_you_my_sweet"
+    },		
+    "criteria": {
+        "dandelion": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:dandelion"
+						]
+                    }
+                ]
+            }
+        },
+        "poppy": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:poppy"
+						]
+                    }
+                ]
+            }
+        },
+        "blue_orchid": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:blue_orchid"
+						]
+                    }
+                ]
+            }
+        },
+        "allium": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:allium"
+						]
+                    }
+                ]
+            }
+        },
+        "azure_bluet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:azure_bluet"
+						]
+                    }
+                ]
+            }
+        },
+        "red_tulip": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:red_tulip"
+						]
+                    }
+                ]
+            }
+        },
+        "orange_tulip": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:orange_tulip"
+						]
+                    }
+                ]
+            }
+        },
+        "white_tulip": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:white_tulip"
+						]
+                    }
+                ]
+            }
+        },
+        "pink_tulip": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:pink_tulip"
+						]
+                    }
+                ]
+            }
+        },
+        "oxeye_daisy": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:oxeye_daisy"
+						]
+                    }
+                ]
+            }
+        },
+        "sunflower": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:sunflower"
+						]
+                    }
+                ]
+            }
+        },
+        "lilac": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:lilac"
+						]
+                    }
+                ]
+            }
+        },
+        "rose_bush": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:rose_bush"
+						]
+                    }
+                ]
+            }
+        },
+        "peony": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:peony"
+						]
+                    }
+                ]
+            }
+        },
+        "cornflower": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:cornflower"
+						]
+                    }
+                ]
+            }
+        },
+        "lily_of_the_valley": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:lily_of_the_valley"
+						]
+                    }
+                ]
+            }
+        },
+        "wither_rose": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:wither_rose"
+						]
+                    }
+                ]
+            }
+        }
+    },
+	"requirements": [
+		[
+		"dandelion",
+		"poppy",
+		"blue_orchid",
+		"allium",
+		"azure_bluet",
+		"red_tulip",
+		"orange_tulip",
+		"pink_tulip",
+		"white_tulip",
+		"oxeye_daisy",
+		"sunflower",
+		"lilac",
+		"rose_bush",
+		"peony",
+		"cornflower",
+		"lily_of_the_valley",
+		"wither_rose"
+		]
+	]
+}

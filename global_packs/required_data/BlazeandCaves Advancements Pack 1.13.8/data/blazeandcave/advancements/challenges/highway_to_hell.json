@@ -1,0 +1,765 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:netherrack"
+        },
+        "title": {"translate":"Highway to Hell"},
+        "description": {"color":"#FF2A2A","translate":"Send every mob to the Nether... and kill them all there"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:challenges/telescopic",
+	"rewards": {
+		"function": "bc_rewards:challenges/highway_to_hell"
+    },	
+    "criteria": {
+        "bat": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "bat",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "chicken": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "chicken",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "cod": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "cod",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "cow": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "cow",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "mooshroom": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "mooshroom",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "pig": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "pig",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "rabbit": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "rabbit",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "salmon": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "salmon",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "sheep": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "sheep",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "squid": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "squid",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "tropical_fish": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "tropical_fish",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "turtle": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "turtle",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "villager": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "villager",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "wandering_trader": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "wandering_trader",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "pufferfish": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "pufferfish",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "cave_spider": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "cave_spider",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "enderman": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "enderman",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "panda": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "panda",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "polar_bear": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "polar_bear",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "spider": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "spider",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "zombified_piglin": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "zombified_piglin",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "blaze": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "blaze",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "creeper": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "creeper",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "drowned": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "drowned",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "endermite": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "endermite",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "evoker": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "evoker",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "ghast": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "ghast",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "guardian": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "guardian",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "husk": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "husk",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "magma_cube": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "magma_cube",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "phantom": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "phantom",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "pillager": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "pillager",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "ravager": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "ravager",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "shulker": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "shulker",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "silverfish": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "silverfish",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "skeleton": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "skeleton",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "slime": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "slime",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "stray": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "stray",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "vex": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "vex",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "vindicator": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "vindicator",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "witch": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "witch",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "wither_skeleton": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "wither_skeleton",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "zombie_villager": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "zombie_villager",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "zombie": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "zombie",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "cat": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "cat",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "donkey": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "donkey",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "horse": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "horse",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "llama": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "llama",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "mule": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "mule",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "parrot": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "parrot",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "skeleton_horse": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "skeleton_horse",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "trader_llama": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "trader_llama",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "wolf": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "wolf",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "dolphin": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "dolphin",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "fox": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "fox",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "ocelot": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "ocelot",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "iron_golem": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "iron_golem",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "snow_golem": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "snow_golem",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "wither": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "wither",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "bee": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "bee",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "piglin": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "piglin",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "hoglin": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "hoglin",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "strider": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "strider",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "zoglin": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "zoglin",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "piglin_brute": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "piglin_brute",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "axolotl": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "axolotl",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "glow_squid": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "glow_squid",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        },
+        "goat": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "goat",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+				}
+            }
+        }
+    }
+}

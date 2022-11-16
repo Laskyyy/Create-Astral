@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    "IFI",
+    "IBI"
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:furnace"
+    },
+    "C": {
+      "item": "indrev:circuit_mk1"
+    },
+    "I": {
+      "tag": "c:bronze_plates"
+    },
+    "B": {
+      "item": "indrev:battery"
+    }
+  },
+  "result": {
+    "item": "indrev:electric_furnace_mk1"
+  }
+}

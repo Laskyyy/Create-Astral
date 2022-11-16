@@ -1,0 +1,16 @@
+{
+  "exhaustionPerHarvest": 0.005,
+  "additionalLogging": false,
+  "crops": {
+    "wheatEnabled": true,
+    "wheatStage": 7,
+    "netherWartEnabled": true,
+    "netherWartStage": 3,
+    "carrotEnabled": true,
+    "carrotStage": 7,
+    "potatoEnabled": true,
+    "potatoStage": 7,
+    "beetrootEnabled": true,
+    "beetrootStage": 3
+  }
+}

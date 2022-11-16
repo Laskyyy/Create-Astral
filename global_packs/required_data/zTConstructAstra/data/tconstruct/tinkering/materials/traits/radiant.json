@@ -1,0 +1,20 @@
+{
+  "default": [
+    {
+      "name": "tconstruct:enhanced",
+      "level": 1
+    },
+    {
+      "name": "tconstruct:shiny",
+      "level": 1
+    },
+    {
+      "name": "tconstruct:glowing",
+      "level": 1
+    },
+    {
+      "name": "tconstruct:lustrous",
+      "level": 1
+    }
+  ]
+}

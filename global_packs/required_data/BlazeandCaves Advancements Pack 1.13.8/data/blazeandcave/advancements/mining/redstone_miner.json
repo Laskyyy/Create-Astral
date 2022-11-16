@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:redstone_block"
+        },
+        "title": {"translate":"Redstone Miner"},
+        "description": {"color":"#75E1FF","translate":"Mine enough redstone to craft a stack of redstone blocks"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:mining/whats_the_time_mr_wolf",
+    "rewards": {
+		"function": "bc_rewards:mining/redstone_miner"
+    },		
+    "criteria": {
+        "redstone_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:redstone_block"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }
+    }
+}

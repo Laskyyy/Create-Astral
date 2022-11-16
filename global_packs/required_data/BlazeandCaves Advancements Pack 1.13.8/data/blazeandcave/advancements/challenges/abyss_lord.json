@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:conduit"
+        },
+        "title": {"translate":"Abyss Lord"},
+        "description": {"color":"#FF2A2A","translate":"Obtain a stack of Conduits"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:challenges/hearts_of_the_stack",
+	"rewards": {
+		"function": "bc_rewards:challenges/abyss_lord"
+    },		
+    "criteria": {
+        "conduit": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:conduit"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }
+    }
+}

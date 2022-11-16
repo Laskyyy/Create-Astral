@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:cobblestone_wall"
+        },
+        "title": {"translate":"The Walls"},
+        "description": {"translate":"Build some cobblestone walls"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:building/en_garde",
+	"rewards": {
+		"function": "bc_rewards:building/the_walls"
+    },		
+    "criteria": {
+        "cobblestone_wall": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:cobblestone_wall"
+            }
+        }
+    }
+}

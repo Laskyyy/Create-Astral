@@ -1,0 +1,19 @@
+{
+  "modules": {
+    "megane-deep-mob-learning-simulacrum": {
+      "lol.bai.megane.module.dmlsimulacrum.MeganeDmlSimulacrum": true
+    },
+    "megane-fabric-transfer": {
+      "lol.bai.megane.module.fabrictransfer.MeganeFabricTransfer": true
+    },
+    "megane-create": {
+      "lol.bai.megane.module.create.MeganeCreate": true
+    },
+    "megane-reborn-energy": {
+      "lol.bai.megane.module.rebornenergy.MeganeRebornEnergy": true
+    },
+    "megane-vanilla": {
+      "lol.bai.megane.module.vanilla.MeganeVanilla": true
+    }
+  }
+}

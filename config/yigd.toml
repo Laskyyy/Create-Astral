@@ -1,0 +1,130 @@
+[graveSettings]
+generateGraves = true
+retrievalType = "ON_USE"
+compactRetrieveItems = true
+retrievalRequireShovel = false
+dropType = "IN_INVENTORY"
+dropPlayerHead = true
+dropGraveBlock = false
+requireGraveItem = false
+generateEmptyGraves = false
+ignoreSpawnProtection = true
+deathInSpawnProtection = "KEEP_ITEMS"
+priority = "GRAVE"
+unlockableGraves = true
+deleteEnchantments = ["minecraft:vanishing_curse", "vanishing_curse"]
+soulboundEnchantments = ["yigd:soulbound"]
+loseSoulboundLevelOnDeath = false
+voidSlots = []
+soulboundSlots = []
+applyBindingCurse = true
+trySoft = false
+trySoftApproach = "RADIUS"
+tryStrict = true
+replaceWhenClaimed = true
+persistGraves = false
+blacklistDimensions = []
+graveInVoid = true
+ignoreDeathTypes = []
+graveSpawnHeight = 60
+lastResort = "DROP_ITEMS"
+putXpInGrave = true
+defaultXpDrop = false
+xpDropPercent = 50
+tellDeathPos = true
+maxGraveBackups = 50
+
+[graveSettings.graveRobbing]
+enableRobbing = true
+onlyMurderer = false
+afterTime = 2
+timeType = "HOURS"
+robPriority = "INVENTORY"
+tellRobber = true
+notifyWhenRobbed = true
+
+[graveSettings.graveDeletion]
+canDelete = false
+afterTime = 1
+timeType = "HOURS"
+dropInventory = false
+
+[graveSettings.itemLoss]
+enableLoss = false
+ignoreSoulboundItems = true
+affectStacks = false
+usePercentRange = false
+lossRangeFrom = 0
+lossRangeTo = 5
+percentChanceOfLoss = 100
+
+[graveSettings.randomSpawnSettings]
+percentSpawnChance = 0
+spawnEntity = "minecraft:zombie"
+spawnNbt = "{ArmorItems:[{},{},{},{id:\"minecraft:player_head\",tag:{SkullOwner:{Name:\"${name}\",Id:\"${uuid}\"}},Count:1b}]}"
+
+[graveSettings.blockUnderGrave]
+generateBlockUnder = true
+inOverWorld = "minecraft:cobblestone"
+inNether = "minecraft:soul_soil"
+inTheEnd = "minecraft:end_stone"
+inCustom = "minecraft:dirt"
+generateWhenProtected = false
+
+[graveSettings.graveCompatConfig]
+levelzXpInGraves = true
+levelzXpDropPercent = 100
+claimRuleOverride = "CREATE_GRAVE"
+prioritiseTheGraveyardGraves = false
+graveyardSearchRadius = 10
+keepAllTrinkets = false
+
+[graveSettings.graveRenderSettings]
+useRenderFeatures = true
+useSpecialBlockRenderer = true
+renderGraveSkull = true
+renderGraveOwner = true
+textShadow = true
+adaptRenderer = false
+glowingGrave = true
+glowMinDistance = 0
+glowMaxDistance = 10
+[utilitySettings.soulboundEnchant]
+enabled = true
+isTreasure = false
+villagerTrade = true
+tableAndLoot = false
+[utilitySettings.deathSightEnchant]
+enabled = false
+isTreasure = true
+villagerTrade = true
+tableAndLoot = true
+[utilitySettings.scrollItem]
+scrollType = "DISABLED"
+retrieveOnRespawn = true
+[utilitySettings.graveKeySettings]
+enableKeys = false
+alwaysRequire = false
+retrieveOnRespawn = true
+getFromGui = false
+rebindable = false
+graveKeySpecification = "PLAYER"
+[utilitySettings.graveCompassSettings]
+receiveOnDeath = false
+tryDeleteOnClaim = true
+[commandToggles]
+coreCommandName = "yigd"
+retrieveGrave = true
+robGrave = true
+selfView = true
+adminView = true
+moderateGraves = true
+clearGraveBackups = true
+whitelist = true
+whitelistAdd = true
+whitelistRemove = true
+whitelistToggle = true
+coordinateToggle = true
+[debugConfig]
+clearInventoryOnRespawn = false
+createGraveBeforeDeathMessage = false

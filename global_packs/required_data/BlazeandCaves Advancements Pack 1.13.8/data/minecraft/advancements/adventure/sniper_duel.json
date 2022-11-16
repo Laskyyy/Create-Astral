@@ -1,0 +1,55 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:skeleton_skull"
+		},
+		"title": {"translate":"Sniper Duel"},
+		"description": {"translate":"Kill a skeleton with an arrow from more than 50 meters"},
+		"announce_to_chat": "true",
+		"frame": "challenge"
+	},
+	"parent": "blazeandcave:weaponry/bow_spammer",
+	"rewards": {
+		"function": "bc_rewards:weaponry/sniper_duel"
+	},	
+	"criteria": {
+		"killed_skeleton": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"killing_blow": {
+					"is_projectile": true
+				},
+				"entity": {
+					"type": "skeleton",
+					"distance": {
+						"horizontal": {
+							"min": 50
+						}
+					}
+				}
+			}
+		},
+		"killed_stray": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"killing_blow": {
+					"is_projectile": true
+				},
+				"entity": {
+					"type": "stray",
+					"distance": {
+						"horizontal": {
+							"min": 50
+						}
+					}
+				}
+			}
+		}	
+	},
+	"requirements": [
+		[
+		"killed_skeleton",
+		"killed_stray"
+		]
+	]
+}

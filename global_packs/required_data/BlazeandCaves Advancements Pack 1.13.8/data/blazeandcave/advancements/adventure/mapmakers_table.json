@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:cartography_table"
+        },
+        "title": {"translate":"Mapmaker's Table"},
+        "description": {"translate":"Craft a cartography table with paper and planks"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:adventure/mapmaker",
+    "rewards": {
+        "function": "bc_rewards:adventure/mapmakers_table"
+    },		
+    "criteria": {
+        "cartography_table": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:cartography_table"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

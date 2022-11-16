@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:flint"
+        },
+        "title": {"translate":"Flint Miner"},
+        "description": {"color":"#75E1FF","translate":"Mine a stack of flint"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:mining/meet_the_flintstones",
+    "rewards": {
+		"function": "bc_rewards:mining/flint_miner"
+    },		
+    "criteria": {
+        "flint": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:flint"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }
+    }
+}

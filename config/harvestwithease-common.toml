@@ -1,0 +1,11 @@
+#List of in-game IDs of additional crops
+crops = []
+#Require holding a hoe (either hands) to right-click harvest
+"require hoe" = false
+#If [require hoe] is set to true, damage the hoe of the given amount (0 to disable, must be an integer)
+"damage on harvest" = 0
+#Amount of experience to grant on harvest (0 to disable, must be an integer).
+"exp on harvest" = 0
+#Play a sound when harvesting a crop.
+"play sound" = true
+

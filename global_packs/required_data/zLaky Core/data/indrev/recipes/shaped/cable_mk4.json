@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "HHH",
+    "HEH",
+    "HHH"
+  ],
+  "key": {
+    "E": {
+      "item": "indrev:enriched_nikolite_ingot"
+    },
+    "H": {
+      "item": "indrev:cable_mk3"
+    }
+  },
+  "result": {
+    "item": "indrev:cable_mk4",
+    "count": 8
+  }
+}

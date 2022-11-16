@@ -1,0 +1,108 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:stone_bricks"
+        },
+        "title": {"translate":"Dungeon Crawler"},
+        "description": {"color":"#75E1FF","translate":"Defeat all kinds of mobs from special structures"},
+        "announce_to_chat": "true",
+        "frame": "goal"
+    },
+    "parent": "blazeandcave:monsters/void_ender",
+    "rewards": {
+		"function": "bc_rewards:monsters/dungeon_crawler"
+    },	
+    "criteria": {
+        "cave_spider": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "cave_spider"
+                }
+            }
+        },
+        "silverfish": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "silverfish"
+                }
+            }
+        },
+        "guardian": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "guardian"
+                }
+            }
+        },
+        "elder_guardian": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "elder_guardian"
+                }
+            }
+        },
+        "pillager": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "pillager",
+					"nbt": "{Wave:0}"
+                }
+            }
+        },		
+        "vindicator": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "vindicator",
+					"nbt": "{Wave:0}"
+                }
+            }
+        },
+        "evoker": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "evoker",
+					"nbt": "{Wave:0}"
+                }
+            }
+        },
+        "vex": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "vex"
+                }
+            }
+        },
+        "blaze": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "blaze"
+                }
+            }
+        },
+        "wither_skeleton": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "wither_skeleton"
+                }
+            }
+        },
+        "shulker": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "shulker"
+                }
+            }
+        }
+    }
+}

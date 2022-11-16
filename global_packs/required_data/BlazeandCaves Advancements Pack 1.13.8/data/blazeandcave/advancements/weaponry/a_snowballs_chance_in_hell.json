@@ -1,0 +1,31 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:blaze_powder"
+		},
+		"title": {"translate":"A snowball's chance in hell"},
+		"description": {"color":"#75E1FF","translate":"Defeat a Blaze using snowballs"},
+		"announce_to_chat": "true",
+		"frame": "goal"
+	},
+	"parent": "blazeandcave:weaponry/snowball_fight",
+	"rewards": {
+		"function": "bc_rewards:weaponry/a_snowballs_chance_in_hell"
+	},		
+	"criteria": {
+		"snowball": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+					"type": "blaze"
+				},
+				"killing_blow": {
+					"is_projectile": true,
+					"direct_entity": {
+						"type": "minecraft:snowball"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,332 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:horse_spawn_egg"
+        },
+        "title": {"translate":"Master Farrier"},
+        "description": {"translate":"Tame all horse variants"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:animal/artificial_selection",
+	"rewards": {
+		"function": "bc_rewards:animal/master_farrier"
+    },		
+    "criteria": {
+        "white_none": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:0}"
+                }
+			}
+        },
+        "creamy_none": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:1}"
+                }
+			}
+        },
+        "chestnut_none": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:2}"
+                }
+			}
+        },
+        "brown_none": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:3}"
+                }
+			}
+        },
+        "black_none": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:4}"
+                }
+			}
+        },
+        "gray_none": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:5}"
+                }
+			}
+        },
+        "dark_brown_none": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:6}"
+                }
+			}
+        },
+        "white_white": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:256}"
+                }
+			}
+        },
+        "creamy_white": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:257}"
+                }
+			}
+        },
+        "chestnut_white": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:258}"
+                }
+			}
+        },
+        "brown_white": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:259}"
+                }
+			}
+        },
+        "black_white": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:260}"
+                }
+			}
+        },
+        "gray_white": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:261}"
+                }
+			}
+        },
+        "dark_brown_white": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:262}"
+                }
+			}
+        },
+        "white_white_field": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:512}"
+                }
+			}
+        },
+        "creamy_white_field": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:513}"
+                }
+			}
+        },
+        "chestnut_white_field": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:514}"
+                }
+			}
+        },
+        "brown_white_field": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:515}"
+                }
+			}
+        },
+        "black_white_field": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:516}"
+                }
+			}
+        },
+        "gray_white_field": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:517}"
+                }
+			}
+        },
+        "dark_brown_white_field": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:518}"
+                }
+			}
+        },
+        "white_white_dots": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:768}"
+                }
+			}
+        },
+        "creamy_white_dots": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:769}"
+                }
+			}
+        },
+        "chestnut_white_dots": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:770}"
+                }
+			}
+        },
+        "brown_white_dots": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:771}"
+                }
+			}
+        },
+        "black_white_dots": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:772}"
+                }
+			}
+        },
+        "gray_white_dots": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:773}"
+                }
+			}
+        },
+        "dark_brown_white_dots": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:774}"
+                }
+			}
+        },
+        "white_black_dots": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:1024}"
+                }
+			}
+        },
+        "creamy_black_dots": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:1025}"
+                }
+			}
+        },
+        "chestnut_black_dots": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:1026}"
+                }
+			}
+        },
+        "brown_black_dots": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:1027}"
+                }
+			}
+        },
+        "black_black_dots": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:1028}"
+                }
+			}
+        },
+        "gray_black_dots": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:1029}"
+                }
+			}
+        },
+        "dark_brown_black_dots": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse",
+					"nbt": "{Variant:1030}"
+                }
+			}
+        }
+    }
+}

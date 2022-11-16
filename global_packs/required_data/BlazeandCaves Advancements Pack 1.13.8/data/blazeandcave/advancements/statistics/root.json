@@ -1,0 +1,48 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:writable_book"
+        },
+        "title": {"translate":"Statistics"},
+        "description": {"translate":"If your numbers go up, you're having more fun"},
+        "background": "minecraft:textures/block/loom_side.png",
+        "show_toast": false,
+        "announce_to_chat": "false"
+    },
+    "rewards": {
+        "function": "bc_rewards:statistics/root"
+    },		
+    "criteria": {
+        "diamond": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:diamond"
+						]
+                    }
+                ]
+            }
+        },
+        "entered_nether_portal": {
+            "trigger": "minecraft:enter_block",
+            "conditions": {
+				"block": "minecraft:nether_portal"
+            }
+        },
+        "entered_end_portal": {
+            "trigger": "minecraft:enter_block",
+            "conditions": {
+				"block": "minecraft:end_portal"
+            }
+		}
+    },
+    "requirements": [
+		[
+        "diamond",
+        "entered_nether_portal",
+		"entered_end_portal"
+		]
+    ]
+}

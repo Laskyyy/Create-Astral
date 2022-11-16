@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:bundle",
+			"nbt": "{Items:[{id:\"minecraft:bundle\",Count:1}]}"
+        },
+        "title": {"translate":"Fractal"},
+        "description": {"color":"light_purple","translate":"Put a Bundle in a Bundle in a Bundle in a Bundle in a Bundle… 16 layers deep"},
+        "announce_to_chat": "true",
+		"frame": "challenge",
+		"hidden": "true"
+    },
+    "parent": "blazeandcave:animal/humble_bundle",
+	"rewards": {
+		"function": "bc_rewards:animal/fractal"
+    },		
+    "criteria": {
+        "bundle": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:bundle"
+						],
+						"nbt": "{Items:[{id:\"minecraft:bundle\",Count:1b,tag:{Items:[{id:\"minecraft:bundle\",Count:1b,tag:{Items:[{id:\"minecraft:bundle\",Count:1b,tag:{Items:[{id:\"minecraft:bundle\",Count:1b,tag:{Items:[{id:\"minecraft:bundle\",Count:1b,tag:{Items:[{id:\"minecraft:bundle\",Count:1b,tag:{Items:[{id:\"minecraft:bundle\",Count:1b,tag:{Items:[{id:\"minecraft:bundle\",Count:1b,tag:{Items:[{id:\"minecraft:bundle\",Count:1b,tag:{Items:[{id:\"minecraft:bundle\",Count:1b,tag:{Items:[{id:\"minecraft:bundle\",Count:1b,tag:{Items:[{id:\"minecraft:bundle\",Count:1b,tag:{Items:[{id:\"minecraft:bundle\",Count:1b,tag:{Items:[{id:\"minecraft:bundle\",Count:1b,tag:{Items:[{id:\"minecraft:bundle\",Count:1b,tag:{Items:[{id:\"minecraft:bundle\",Count:1b}]}}]}}]}}]}}]}}]}}]}}]}}]}}]}}]}}]}}]}}]}}]}}]}"
+                    }
+                ]
+            }
+        }
+    }
+}

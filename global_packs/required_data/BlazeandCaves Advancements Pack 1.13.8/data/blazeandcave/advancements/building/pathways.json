@@ -1,0 +1,31 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:dirt_path"
+        },
+        "title": {"translate":"Pathways"},
+        "description": {"translate":"Use a shovel to create dirt paths"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:building/i_dont_like_sand",
+	"rewards": {
+		"function": "bc_rewards:building/pathways"
+    },
+    "criteria": {
+		"dirt_path": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:dirt_path"
+						]
+					}
+				},
+				"item": {
+					"tag": "minecraft:shovels"
+				}
+			}
+		}
+    }
+}

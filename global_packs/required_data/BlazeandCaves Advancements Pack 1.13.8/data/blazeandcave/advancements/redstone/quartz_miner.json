@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:quartz_block"
+        },
+        "title": {"translate":"Quartz Miner"},
+        "description": {"color":"#75E1FF","translate":"Mine enough nether quartz to craft a stack of quartz blocks"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:redstone/quirky_quartz",
+    "rewards": {
+		"function": "bc_rewards:redstone/quartz_miner"
+    },		
+    "criteria": {
+        "quartz_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:quartz_block"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:tube_coral_fan"
+        },
+        "title": {"translate":"Free Diver"},
+        "description": {"color":"#75E1FF","translate":"Stay underwater for 2 minutes"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:biomes/dive_bomb",
+	"rewards": {
+		"function": "bc_rewards:biomes/free_diver"
+    },		
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

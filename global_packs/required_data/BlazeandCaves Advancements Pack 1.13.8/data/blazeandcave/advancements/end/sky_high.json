@@ -1,0 +1,41 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:feather"
+        },
+        "title": {"translate":"Sky High"},
+        "description": {"color":"#75E1FF","translate":"Fly up beyond the world height limit"},
+        "announce_to_chat": "true",
+        "frame": "goal"
+    },
+    "parent": "minecraft:end/elytra",
+    "rewards": {
+        "function": "bc_rewards:end/sky_high"
+    },		
+    "criteria": {
+        "world_height": {
+            "trigger": "minecraft:location",
+            "conditions": {
+				"position": {
+					"y": {
+						"min": 325.0
+					}
+				},
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "player": {
+                                    "gamemode": "spectator"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }	
+    }
+}

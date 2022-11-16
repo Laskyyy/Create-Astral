@@ -1,0 +1,1049 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:map"
+        },
+        "title": {"translate":"Adventure Milestone"},
+        "description": {"color":"yellow","translate":"Complete every advancement in the Adventure tab"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:bacap/biomes_milestone",
+	"rewards": {
+		"function": "bc_rewards:bacap/adventure_milestone"
+    },		
+    "criteria": {
+        "a_complete_catalogue": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:husbandry/complete_catalogue": "true"
+						}
+					}
+				}
+			}
+        },
+        "all_chained_up": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/all_chained_up": "true"
+						}
+					}
+				}
+			}
+        },
+		"body_guard": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:adventure/summon_iron_golem": "true"
+						}
+					}
+				}
+			}
+        },
+		"businessman": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/businessman": "true"
+						}
+					}
+				}
+			}
+        },
+		"crazy_cat_lady": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/crazy_cat_lady": "true"
+						}
+					}
+				}
+			}
+        },
+		"deals_off": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/deals_off": "true"
+						}
+					}
+				}
+			}
+        },
+		"disc_jockey": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/disc_jockey": "true"
+						}
+					}
+				}
+			}
+        },
+		"do_you_want_to_trade": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/do_you_want_to_trade": "true"
+						}
+					}
+				}
+			}
+        },
+		"dry_spell": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/dry_spell": "true"
+						}
+					}
+				}
+			}
+        },
+		"feeling_ill": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/feeling_ill": "true"
+						}
+					}
+				}
+			}
+        },
+		"filthy_rich": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/filthy_rich": "true"
+						}
+					}
+				}
+			}
+        },
+		"filthy_stinkin_rich": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/filthy_stinkin_rich": "true"
+						}
+					}
+				}
+			}
+        },
+		"florist": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/florist": "true"
+						}
+					}
+				}
+			}
+        },
+		"ghostbuster": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/ghostbuster": "true"
+						}
+					}
+				}
+			}
+        },
+		"grave_robber": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/grave_robber": "true"
+						}
+					}
+				}
+			}
+        },
+		"guardian_destroyer": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/guardian_destroyer": "true"
+						}
+					}
+				}
+			}
+        },
+		"heres_johnny": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/heres_johnny": "true"
+						}
+					}
+				}
+			}
+        },
+		"hero_of_the_village": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:adventure/hero_of_the_village": "true"
+						}
+					}
+				}
+			}
+        },
+		"house_of_psychos": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/house_of_psychos": "true"
+						}
+					}
+				}
+			}
+        },
+		"i_am_ravager_hear_me_roar": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/i_am_ravager_hear_me_roar": "true"
+						}
+					}
+				}
+			}
+        },
+		"i_hereby_dub_thee": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/i_hereby_dub_thee": "true"
+						}
+					}
+				}
+			}
+        },
+		"if_only_cats_grew_into_kittens": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/if_only_cats_grew_into_kittens": "true"
+						}
+					}
+				}
+			}
+        },
+		"its_so_beast_like": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/its_so_beast_like": "true"
+						}
+					}
+				}
+			}
+        },
+		"ive_got_a_bad_feeling_about_this": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:adventure/voluntary_exile": "true"
+						}
+					}
+				}
+			}
+        },
+		"laser_sharks": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/laser_sharks": "true"
+						}
+					}
+				}
+			}
+        },
+		"lilypad_hatter": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/lilypad_hatter": "true"
+						}
+					}
+				}
+			}
+        },
+		"knowledge_is_power": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/knowledge_is_power": "true"
+						}
+					}
+				}
+			}
+        },
+		"mapmaker": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/mapmaker": "true"
+						}
+					}
+				}
+			}
+        },
+		"mapmakers_table": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/mapmakers_table": "true"
+						}
+					}
+				}
+			}
+        },
+		"master_trader": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/master_trader": "true"
+						}
+					}
+				}
+			}
+        },
+		"monumental": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/monumental": "true"
+						}
+					}
+				}
+			}
+        },
+		"murderer": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/murderer": "true"
+						}
+					}
+				}
+			}
+        },
+		"music_to_my_ears": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/music_to_my_ears": "true"
+						}
+					}
+				}
+			}
+        },
+		"oh_look_it_dings": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/oh_look_it_dings": "true"
+						}
+					}
+				}
+			}
+        },
+		"out_of_posts": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/out_of_posts": "true"
+						}
+					}
+				}
+			}
+        },
+		"overpowered": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/overpowered": "true"
+						}
+					}
+				}
+			}
+        },
+		"picador": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/picador": "true"
+						}
+					}
+				}
+			}
+        },
+		"postmortal": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:adventure/totem_of_undying": "true"
+						}
+					}
+				}
+			}
+		},
+		"raidin_master": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/raidin_master": "true"
+						}
+					}
+				}
+			}
+        },
+		"rebuilding_the_oceans": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/rebuilding_the_oceans": "true"
+						}
+					}
+				}
+			}
+        },
+		"rekt": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/rekt": "true"
+						}
+					}
+				}
+			}
+        },
+		"retro_future_knight": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/retro_future_knight": "true"
+						}
+					}
+				}
+			}
+        },
+		"riot_shield": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/riot_shield": "true"
+						}
+					}
+				}
+			}
+        },
+		"root": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:adventure/root": "true"
+						}
+					}
+				}
+			}
+        },
+		"secret_of_the_igloo": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/secret_of_the_igloo": "true"
+						}
+					}
+				}
+			}
+        },
+		"shady_deals": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/shady_deals": "true"
+						}
+					}
+				}
+			}
+        },
+		"spear_fishing": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/spear_fishing": "true"
+						}
+					}
+				}
+			}
+        },
+		"sponge_miner": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/sponge_miner": "true"
+						}
+					}
+				}
+			}
+        },
+		"superhero_of_the_village": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/superhero_of_the_village": "true"
+						}
+					}
+				}
+			}
+        },
+		"the_deep_end": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/the_deep_end": "true"
+						}
+					}
+				}
+			}
+        },
+		"professional": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/professional": "true"
+						}
+					}
+				}
+			}
+        },
+		"the_shielding": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/the_shielding": "true"
+						}
+					}
+				}
+			}
+        },
+		"the_tribal_villagers": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/the_tribal_villagers": "true"
+						}
+					}
+				}
+			}
+        },
+		"tomb_raider": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/tomb_raider": "true"
+						}
+					}
+				}
+			}
+        },
+		"town_planner": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/town_planner": "true"
+						}
+					}
+				}
+			}
+        },
+		"traveller": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/traveller": "true"
+						}
+					}
+				}
+			}
+        },
+		"travelling_merchant": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/travelling_merchant": "true"
+						}
+					}
+				}
+			}
+        },
+		"treasure_map": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/treasure_map": "true"
+						}
+					}
+				}
+			}
+        },
+		"veteran_of_the_village": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/veteran_of_the_village": "true"
+						}
+					}
+				}
+			}
+        },
+		"village_settler": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/village_settler": "true"
+						}
+					}
+				}
+			}
+        },
+		"war_is_coming": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/war_is_coming": "true"
+						}
+					}
+				}
+			}
+        },
+		"were_being_attacked": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/were_being_attacked": "true"
+						}
+					}
+				}
+			}
+        },
+		"what_a_deal": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:adventure/trade": "true"
+						}
+					}
+				}
+			}
+        },
+		"witchcraft": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/witchcraft": "true"
+						}
+					}
+				}
+			}
+        },
+		"wololo": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/wololo": "true"
+						}
+					}
+				}
+			}
+        },
+		"you_are_the_pillager": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/you_are_the_pillager": "true"
+						}
+					}
+				}
+			}
+        },
+		"now_youre_thinking_with_portals": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/now_youre_thinking_with_portals": "true"
+						}
+					}
+				}
+			}
+        },
+		"i_just_want_to_make_toast": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/i_just_want_to_make_toast": "true"
+						}
+					}
+				}
+			}
+        },
+		"whats_up_doc": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/whats_up_doc": "true"
+						}
+					}
+				}
+			}
+        },
+		"nyan_sheep": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/nyan_sheep": "true"
+						}
+					}
+				}
+			}
+        },
+		"slenderman": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/slenderman": "true"
+						}
+					}
+				}
+			}
+        },
+		"the_one_and_true_johnny": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/the_one_and_true_johnny": "true"
+						}
+					}
+				}
+			}
+        },
+		"prime_specimen": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/prime_specimen": "true"
+						}
+					}
+				}
+			}
+        },
+		"star_trader": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:adventure/trade_at_world_height": "true"
+						}
+					}
+				}
+			}
+        },
+		"redemption_arc": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/redemption_arc": "true"
+						}
+					}
+				}
+			}
+        },
+		"workaholic": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/workaholic": "true"
+						}
+					}
+				}
+			}
+        },
+		"your_daily_fix": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/your_daily_fix": "true"
+						}
+					}
+				}
+			}
+        },
+		"im_not_lost_anymore": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/im_not_lost_anymore": "true"
+						}
+					}
+				}
+			}
+        },
+        "beethoven": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/beethoven": "true"
+						}
+					}
+				}
+			}
+        },
+        "buy_low_sell_high": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/buy_low_sell_high": "true"
+						}
+					}
+				}
+			}
+        },
+        "justice": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/justice": "true"
+						}
+					}
+				}
+			}
+        },
+        "rare_candy_shop": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/rare_candy_shop": "true"
+						}
+					}
+				}
+			}
+        },
+        "hey_you_two_should_kiss": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/hey_you_two_should_kiss": "true"
+						}
+					}
+				}
+			}
+        },
+        "map_room": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/map_room": "true"
+						}
+					}
+				}
+			}
+        },
+        "sound_the_alarm": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:adventure/sound_the_alarm": "true"
+						}
+					}
+				}
+			}
+        },
+        "the_sound_of_music": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:adventure/play_jukebox_in_meadows": "true"
+						}
+					}
+				}
+			}
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:netherite_ingot"
+        },
+        "title": {"translate":"Master Netherite Miner"},
+        "description": {"translate":"Mine enough Ancient Debris to make a stack of Netherite Ingots (don’t worry, mining a stack of Netherite Blocks is optional in this datapack, I’m not that evil…)"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:nether/netherite_miner",
+	"rewards": {
+		"function": "bc_rewards:nether/master_netherite_miner"
+    },	
+    "criteria": {
+        "netherite_ingot": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:netherite_ingot"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }
+    }
+}

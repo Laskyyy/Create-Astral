@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:netherite_scrap"
+        },
+        "title": {"translate":"Holy Scrap!"},
+        "description": {"translate":"Smelt Ancient Debris into Netherite Scrap"},
+        "announce_to_chat": "true"
+    },
+    "parent": "minecraft:nether/obtain_ancient_debris",
+	"rewards": {
+		"function": "bc_rewards:nether/holy_scrap"
+    },	
+    "criteria": {
+        "netherite_scrap": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:netherite_scrap"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

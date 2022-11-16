@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BNB",
+    "NIN",
+    "BNB"
+  ],
+  "key": {
+    "N": {
+      "item": "indrev:nikolite_dust"
+    },
+    "I": {
+      "item": "create:golden_sheet"
+    },
+    "B": {
+      "item": "create:copper_sheet"
+    }
+  },
+  "result": {
+    "item": "indrev:circuit_mk1"
+  }
+}

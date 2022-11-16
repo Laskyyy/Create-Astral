@@ -1,0 +1,17 @@
+{
+    "parent": "blazeandcave:challenges/death_from_all",	
+    "criteria": {
+        "root": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:challenges/root": "true"
+						}
+					}
+				}
+			}
+        }
+    }
+}

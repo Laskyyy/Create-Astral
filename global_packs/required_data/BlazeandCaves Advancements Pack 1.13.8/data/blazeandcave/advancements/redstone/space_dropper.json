@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:dropper"
+        },
+        "title": {"translate":"Space Dropper"},
+        "description": {"translate":"Craft a dropper for item transportation"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:redstone/space_hopper",
+	"rewards": {
+		"function": "bc_rewards:redstone/space_dropper"
+    },
+    "criteria": {
+        "dropper": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:dropper"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

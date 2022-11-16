@@ -1,0 +1,52 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe",
+			"nbt": "{Enchantments:[{id:\"minecraft:efficiency\",lvl:5}]}"
+        },
+        "title": {"translate":"Instant Mining"},
+        "description": {"translate":"Hold a Diamond or Netherite Pickaxe enchanted with Efficiency V while under the Haste II effect"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "minecraft:nether/create_full_beacon",
+	"rewards": {
+		"function": "bc_rewards:nether/instant_mining"
+    },	
+    "criteria": {
+        "instant_mining": {
+            "trigger": "minecraft:location",
+            "conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"effects": {
+								"minecraft:haste": {
+									"amplifier": {
+										"min": 1
+									},
+									"duration": {
+										"min": 1
+									}
+								}
+							},
+							"equipment": {
+								"mainhand": {
+									"tag": "blazeandcave:master_pickaxes",
+									"enchantments": [
+										{
+											"enchantment": "minecraft:efficiency",
+											"levels": 5
+										}
+									]
+								}
+							}
+						}
+					}
+				]
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+	"criteria": {
+		"killed_wither": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+					"type": "wither"
+				}
+			}
+		}
+	}
+}

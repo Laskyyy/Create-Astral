@@ -1,0 +1,121 @@
+# Config for GAG
+# If you're a modpack maker, use the defaultconfigs folder instead!
+
+{
+	# Settings related to the Escape Rope
+	escape_rope: {
+		# Time (in ticks) the player has to wait after using the rope, default is 10 seconds
+		# Default: 200
+		# Range: 0 ~ 72000
+		cooldown: 200
+		
+		# Maximum durability of the rope, default is 512
+		# Default: 512
+		# Range: 0 ~ 32767
+		durability: 512
+		
+		# Time (in ticks) it takes to use the rope, default is 3 seconds
+		# Default: 60
+		# Range: 0 ~ 72000
+		warmup: 60
+	}
+	
+	# Settings related to the Hearthstone
+	hearthstone: {
+		# Whether the stone should teleport a player to the spawn point if they have no respawn point
+		# Default: true
+		allowSpawn: true
+		
+		# Time (in ticks) the player has to wait after using the stone, default is 60 seconds
+		# Default: 1200
+		# Range: 0 ~ 72000
+		cooldown: 1200
+		
+		# Damage multiplier for using the stone across dimensions, default is 2
+		# Set to -1 to disable teleporting across dimensions
+		# Default: 2
+		# Range: -∞ ~ +∞
+		dimensionMultiplier: 2
+		
+		# Maximum durability of the stone, default is 64
+		# Default: 64
+		# Range: 0 ~ 32767
+		durability: 64
+		
+		# Whether the stone should ignore checking whether the spawn block is still valid and unobstructed
+		# Default: false
+		ignoreSpawnBlock: false
+		
+		# Maximum range of the stone, set to -1 for unlimited range
+		# Default: -1
+		# Range: -∞ ~ +∞
+		range: -1
+		
+		# Whether the stone should use a charge on the player's respawn anchor, if applicable
+		# Default: true
+		useAnchorCharge: true
+		
+		# Time (in ticks) it takes to use the stone, default is 5 seconds
+		# Default: 100
+		# Range: 0 ~ 72000
+		warmup: 100
+	}
+	
+	# Settings related to miscellaneous items and features
+	misc: {
+		# Radius (in blocks) in which the 'No Solicitors!' sign will stop Wandering Traders from spawning, default is 32
+		# Default: 64
+		# Range: 1 ~ 512
+		noSolicitorsRadius: 64
+	}
+	
+	# Settings related to the Sands Of Time mechanic
+	# (You can also selectively disable this mechanic for certain block entities using the gag:do_not_accelerate tag)
+	sands_of_time: {
+		# Whether the Temporal Pouch is allowed to accelerate random ticks
+		# Default: true
+		allowRandomTicks: true
+		
+		# Time (in seconds) that a block is accelerated per use, default is 30 seconds
+		# This determines the 'worth' of grains as displayed in the Pouch's tooltip
+		# Default: 30
+		# Range: 1 ~ 60
+		durationPerUse: 30
+		
+		# [NYI] Amount of grains one Sand Of Time yields
+		# Default: 32
+		# Range: 1 ~ 2147483647
+		grainsPerSand: 32
+		
+		# Amount of grains used per click of the Temporal Pouch
+		# (Since the actual sands are NYI, this is currently just equivalent to the 'ticks' used per click)
+		# Default: 600
+		# Range: 1 ~ 2147483647
+		grainsUsed: 600
+		
+		# If true, the Sands Of Time mechanic will instead *only* work in the levels specified in the levelFilter list
+		# Default: false
+		invertLevelFilter: false
+		
+		# List of levels that the Sands Of Time mechanic will not work in
+		# Default: []
+		levelFilter: [ ]
+		
+		# Maximum times the Temporal Pouch can be used in a row, corresponding to maximum speed, default is max speed of 2^8 = x256
+		# Default: 8
+		# Range: 1 ~ 16
+		maxRate: 8
+		
+		# Max amount of grains a Pouch can hold
+		# Default: 2147483647
+		# Range: 0 ~ 2147483647
+		pouchCapacity: 2147483647
+		
+		# Chance that a random tick will be performed when a random ticking block like crops or saplings is accelerated
+		# On average, this is done every 4096 / 3 ≈ 1365.33 ticks in Vanilla (see https://minecraft.gamepedia.com/Tick#Random_tick)
+		# Actual value is (config value) / (random tick game rule)
+		# Default: 4096
+		# Range: 256 ~ 65536
+		randomTickChance: 4096
+	}
+}

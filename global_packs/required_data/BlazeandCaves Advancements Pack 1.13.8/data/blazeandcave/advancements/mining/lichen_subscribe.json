@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:glow_lichen"
+        },
+        "title": {"translate":"Lichen Subscribe"},
+        "description": {"translate":"Use shears to obtain Glow Lichen from an underground cave"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:mining/spelunker",
+    "rewards": {
+		"function": "bc_rewards:mining/lichen_subscribe"
+    },		
+    "criteria": {
+        "glow_lichen": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:glow_lichen"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

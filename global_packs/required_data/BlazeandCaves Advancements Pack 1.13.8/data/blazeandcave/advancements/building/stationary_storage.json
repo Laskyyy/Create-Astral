@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:chest"
+        },
+        "title": {"translate":"Stationary Storage"},
+        "description": {"translate":"Craft and place down a chest for storing your items"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:building/your_door_was_locked",
+	"rewards": {
+		"function": "bc_rewards:building/stationary_storage"
+    },		
+    "criteria": {
+        "chest": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:chest"
+            }
+        }
+    }
+}

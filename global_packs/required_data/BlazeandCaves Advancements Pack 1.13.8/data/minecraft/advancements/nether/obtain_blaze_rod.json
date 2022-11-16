@@ -1,0 +1,28 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:blaze_rod"
+		},
+		"title": {"translate":"Into Fire"},
+		"description": {"translate":"Relieve a Blaze of its rod"},
+		"announce_to_chat": "true"
+	},
+	"parent": "minecraft:nether/find_fortress",
+	"rewards": {
+		"function": "bc_rewards:nether/into_fire"
+	},		
+	"criteria": {
+		"blaze_rod": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [ 
+							"minecraft:blaze_rod"
+						]
+					}
+				]
+			}
+		}
+	}
+}

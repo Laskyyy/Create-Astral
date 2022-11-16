@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:dragon_head"
+        },
+        "title": {"translate":"Off With His Head!"},
+        "description": {"translate":"Collect a dragon's head from the bow of an end ship"},
+        "announce_to_chat": "true"
+    },
+    "parent": "minecraft:end/find_end_city",
+	"rewards": {
+		"function": "bc_rewards:end/off_with_his_head"
+    },		
+    "criteria": {
+        "chorus_fruit": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:dragon_head"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

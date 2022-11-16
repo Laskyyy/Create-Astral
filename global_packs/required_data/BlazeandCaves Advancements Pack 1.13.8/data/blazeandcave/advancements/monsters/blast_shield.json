@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:shield",
+			"nbt": "{BlockEntityTag:{Base:5,Patterns:[{Pattern:hh,Color:5},{Pattern:hhb,Color:5},{Pattern:cre,Color:15},{Pattern:cre,Color:15},{Pattern:cre,Color:15}]}}"
+        },
+        "title": {"translate":"Blast Shield"},
+        "description": {"translate":"Survive a creeper's blast with your shield"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:monsters/keep_your_distance",
+	"rewards": {
+		"function": "bc_rewards:monsters/blast_shield"
+    },
+    "criteria": {
+        "deflected_explosion": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "blocked": true,
+					"source_entity": {
+						"type": "creeper"
+					}
+                }
+            }
+        }
+    }
+}

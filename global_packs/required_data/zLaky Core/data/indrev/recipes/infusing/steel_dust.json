@@ -1,0 +1,18 @@
+{
+  "type": "indrev:infuse",
+  "ingredients": [
+    {
+      "item": "indrev:iron_dust",
+      "count": 5
+    },
+    {
+      "item": "indrev:coal_dust",
+      "count": 8
+    }
+  ],
+  "output": {
+    "item": "indrev:steel_dust",
+    "count": 3
+  },
+  "processTime": 1000
+}

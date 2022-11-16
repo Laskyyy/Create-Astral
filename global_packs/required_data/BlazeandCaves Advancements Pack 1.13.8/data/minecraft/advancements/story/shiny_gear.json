@@ -1,0 +1,104 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:diamond_chestplate"
+		},
+		"title": {"translate":"Cover Me With Diamonds"},
+		"description": {"translate":"Diamond armor saves lives"},
+		"announce_to_chat": "true"
+	},
+	"parent": "blazeandcave:mining/iconic_merchandising_prop",
+	"rewards": {
+		"function": "bc_rewards:mining/cover_me_with_diamonds"
+	},			
+	"criteria": {
+		"diamond_helmet": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"equipment": {
+								"head": {
+									"items": [ 
+										"minecraft:diamond_helmet"
+									]
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"diamond_chestplate": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"equipment": {
+								"chest": {
+									"items": [ 
+										"minecraft:diamond_chestplate"
+									]
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"diamond_leggings": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"equipment": {
+								"legs": {
+									"items": [ 
+										"minecraft:diamond_leggings"
+									]
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"diamond_boots": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"equipment": {
+								"feet": {
+									"items": [ 
+										"minecraft:diamond_boots"
+									]
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"diamond_helmet",
+			"diamond_chestplate",
+			"diamond_leggings",
+			"diamond_boots"
+		]
+	]
+}

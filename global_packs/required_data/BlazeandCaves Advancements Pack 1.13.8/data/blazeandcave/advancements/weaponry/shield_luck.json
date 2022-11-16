@@ -1,0 +1,24 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:rotten_flesh"
+		},
+		"title": {"translate":"Shield Luck"},
+		"description": {"translate":"Protect yourself from an enemy's attack with your shield"},
+		"announce_to_chat": "true"
+	},
+	"parent": "blazeandcave:weaponry/sir_knight",
+	"rewards": {
+		"function": "bc_rewards:weaponry/shield_luck"
+	},
+	"criteria": {
+		"deflected_trident": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true
+				}
+			}
+		}
+	}
+}

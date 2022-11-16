@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:rods/pewter"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "c:rods/pewter"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_pewter",
+    "amount": 4500
+  },
+  "temperature": 400,
+  "time": 9
+}

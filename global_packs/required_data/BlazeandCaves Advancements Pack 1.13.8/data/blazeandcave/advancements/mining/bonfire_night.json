@@ -1,0 +1,2227 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:stripped_spruce_log"
+        },
+        "title": {"translate":"Bonfire Night"},
+        "description": {"translate":"Light every flammable block on fire"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:mining/strike_a_light",
+	"rewards": {
+		"function": "bc_rewards:mining/bonfire_night"
+    },		
+    "criteria": {
+		"oak_log": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:oak_log"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"spruce_log": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:spruce_log"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"birch_log": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:birch_log"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"jungle_log": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:jungle_log"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"acacia_log": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:acacia_log"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"dark_oak_log": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:dark_oak_log"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"stripped_oak_log": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:stripped_oak_log"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"stripped_spruce_log": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:stripped_spruce_log"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"stripped_birch_log": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:stripped_birch_log"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"stripped_jungle_log": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:stripped_jungle_log"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"stripped_acacia_log": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:stripped_acacia_log"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"stripped_dark_oak_log": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:stripped_dark_oak_log"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"oak_wood": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:oak_wood"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"spruce_wood": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:spruce_wood"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"birch_wood": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:birch_wood"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"jungle_wood": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:jungle_wood"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"acacia_wood": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:acacia_wood"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"dark_oak_wood": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:dark_oak_wood"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"stripped_oak_wood": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:stripped_oak_wood"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"stripped_spruce_wood": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:stripped_spruce_wood"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"stripped_birch_wood": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:stripped_birch_wood"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"stripped_jungle_wood": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:stripped_jungle_wood"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"stripped_acacia_wood": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:stripped_acacia_wood"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"stripped_dark_oak_wood": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:stripped_dark_oak_wood"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"coal_block": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:coal_block"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"oak_planks": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:oak_planks"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"spruce_planks": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:spruce_planks"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"birch_planks": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:birch_planks"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"jungle_planks": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:jungle_planks"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"acacia_planks": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:acacia_planks"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"dark_oak_planks": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:dark_oak_planks"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"oak_slab": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:oak_slab"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"spruce_slab": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:spruce_slab"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"birch_slab": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:birch_slab"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"jungle_slab": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:jungle_slab"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"acacia_slab": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:acacia_slab"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"dark_oak_slab": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:dark_oak_slab"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"oak_fence_gate": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:oak_fence_gate"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"spruce_fence_gate": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:spruce_fence_gate"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"birch_fence_gate": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:birch_fence_gate"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"jungle_fence_gate": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:jungle_fence_gate"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"acacia_fence_gate": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:acacia_fence_gate"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"dark_oak_fence_gate": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:dark_oak_fence_gate"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"oak_fence": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:oak_fence"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"spruce_fence": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:spruce_fence"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"birch_fence": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:birch_fence"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"jungle_fence": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:jungle_fence"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"acacia_fence": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:acacia_fence"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"dark_oak_fence": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:dark_oak_fence"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"oak_stairs": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:oak_stairs"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"spruce_stairs": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:spruce_stairs"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"birch_stairs": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:birch_stairs"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"jungle_stairs": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:jungle_stairs"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"acacia_stairs": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:acacia_stairs"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"dark_oak_stairs": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:dark_oak_stairs"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"composter": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"beehive": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:beehive"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"target": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:target"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"tnt": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:tnt"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"vine": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:vine"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"bookshelf": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:bookshelf"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"lectern": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:lectern"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"bee_nest": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:bee_nest"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"oak_leaves": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:oak_leaves"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"spruce_leaves": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:spruce_leaves"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"birch_leaves": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:birch_leaves"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"jungle_leaves": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:jungle_leaves"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"acacia_leaves": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:acacia_leaves"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"dark_oak_leaves": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:dark_oak_leaves"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"azalea_leaves": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:azalea_leaves"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"flowering_azalea_leaves": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:flowering_azalea_leaves"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"white_wool": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:white_wool"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"orange_wool": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:orange_wool"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"magenta_wool": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:magenta_wool"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"light_blue_wool": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:light_blue_wool"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"yellow_wool": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:yellow_wool"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"lime_wool": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:lime_wool"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"pink_wool": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:pink_wool"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"gray_wool": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:gray_wool"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"light_gray_wool": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:light_gray_wool"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"cyan_wool": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:cyan_wool"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"purple_wool": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:purple_wool"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"blue_wool": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:blue_wool"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"brown_wool": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:brown_wool"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"green_wool": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:green_wool"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"red_wool": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:red_wool"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"black_wool": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:black_wool"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"dried_kelp_block": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:dried_kelp_block"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"white_carpet": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:white_carpet"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"orange_carpet": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:orange_carpet"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"magenta_carpet": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:magenta_carpet"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"light_blue_carpet": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:light_blue_carpet"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"yellow_carpet": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:yellow_carpet"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"lime_carpet": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:lime_carpet"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"pink_carpet": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:pink_carpet"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"gray_carpet": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:gray_carpet"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"light_gray_carpet": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:light_gray_carpet"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"cyan_carpet": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:cyan_carpet"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"purple_carpet": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:purple_carpet"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"blue_carpet": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:blue_carpet"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"brown_carpet": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:brown_carpet"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"green_carpet": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:green_carpet"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"red_carpet": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:red_carpet"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"black_carpet": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:black_carpet"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"hay_block": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:hay_block"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"bamboo": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:bamboo"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"scaffolding": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:scaffolding"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"dandelion": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:dandelion"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"poppy": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:poppy"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"blue_orchid": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:blue_orchid"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"allium": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:allium"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"azure_bluet": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:azure_bluet"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"red_tulip": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:red_tulip"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"orange_tulip": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:orange_tulip"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"pink_tulip": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:pink_tulip"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"white_tulip": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:white_tulip"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"oxeye_daisy": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:oxeye_daisy"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"cornflower": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:cornflower"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"lily_of_the_valley": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:lily_of_the_valley"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"wither_rose": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:wither_rose"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"sunflower": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:sunflower"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"lilac": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:lilac"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"rose_bush": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:rose_bush"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"peony": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:peony"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"grass": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:grass"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"tall_grass": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:tall_grass"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"fern": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:fern"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"large_fern": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:large_fern"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"dead_bush": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:dead_bush"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		},
+		"sweet_berry_bush": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:sweet_berry_bush"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				}
+			}
+		}
+    }
+}

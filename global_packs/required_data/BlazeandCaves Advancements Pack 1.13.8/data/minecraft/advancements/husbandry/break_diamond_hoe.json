@@ -1,0 +1,30 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:diamond_hoe"
+		},
+		"title": {"translate":"Serious Dedication"},
+		"description": {"translate":"Completely use up a diamond hoe, and then reevaluate your life choices"},
+		"announce_to_chat": "true",
+		"frame": "challenge"
+	},
+	"parent": "blazeandcave:farming/come_to_the_countryside",
+	"rewards": {
+		"function": "bc_rewards:farming/serious_dedication"
+	},		
+	"criteria": {
+		"break_hoe": {
+			"trigger": "minecraft:item_durability_changed",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:diamond_hoe"
+					]
+				},
+				"durability": {
+					"max": 0
+				}
+			}
+		}
+	}
+}

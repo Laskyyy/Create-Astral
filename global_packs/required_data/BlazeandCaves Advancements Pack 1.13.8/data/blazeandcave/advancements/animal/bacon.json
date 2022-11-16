@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:porkchop"
+        },
+        "title": {"translate":"Bacon!"},
+        "description": {"translate":"Gotta kill this pig pig pig pig"},
+        "announce_to_chat": "true"
+    },
+    "parent": "minecraft:husbandry/root",
+    "rewards": {
+        "function": "bc_rewards:animal/bacon"
+    },		
+    "criteria": {
+        "pig": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "pig"
+                }
+            }
+        }
+    }
+}

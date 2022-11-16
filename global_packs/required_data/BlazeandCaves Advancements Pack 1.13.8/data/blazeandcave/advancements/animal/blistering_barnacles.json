@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:light_blue_carpet"
+        },
+        "title": {"translate":"Blistering Barnacles!"},
+        "description": {"translate":"Get spat at by a llama"},
+        "announce_to_chat": "true"
+
+    },
+    "parent": "blazeandcave:animal/so_i_got_that_going_for_me",
+    "rewards": {
+        "function": "bc_rewards:animal/blistering_barnacles"
+    },		
+    "criteria": {
+        "llama_hurt_player": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+				"damage": {
+					"source_entity": {
+						"type": "minecraft:llama"
+					}
+				}
+            }
+        }		
+    }
+}

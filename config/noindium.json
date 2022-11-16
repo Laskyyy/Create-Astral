@@ -1,0 +1,8 @@
+{
+  //Whether the 'missing indium' screen can show up. This config value is set to false if the user uses the checkbox.
+  "showIndiumScreen": true,
+  //Whether the 'remove optifabric' screen can show up. This config value is set to false if the user uses the checkbox.
+  "showOptifabricScreen": true,
+  //Allow the user to proceed to the Title Screen even if one of the screens shows up. Setting this to false also removes the checkbox.
+  "allowToProceed": true
+}

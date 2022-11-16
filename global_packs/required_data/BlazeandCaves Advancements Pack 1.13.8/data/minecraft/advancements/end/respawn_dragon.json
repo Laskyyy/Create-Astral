@@ -1,0 +1,25 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:end_crystal"
+		},
+		"title": {"translate":"The End... Again"},
+		"description": {"color":"#75E1FF","translate":"Respawn the Ender Dragon"},
+		"announce_to_chat": "true",
+		"frame": "goal"
+	},
+	"parent": "blazeandcave:end/the_start_of_something",
+	"rewards": {
+		"function": "bc_rewards:end/the_end_again"
+	},	
+	"criteria": {
+		"summoned_dragon": {
+			"trigger": "minecraft:summoned_entity",
+			"conditions": {
+				"entity": {
+					"type": "ender_dragon"
+				}
+			}
+		}
+	}
+}

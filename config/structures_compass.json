@@ -1,0 +1,36 @@
+{
+  "comments": {
+    "_filterMode": "The mode of the filter, either blacklist or whitelist, default is blacklist",
+    "_filter": "A list of structures that the compass will not search in blacklist mode or will only search in whitelist mode, specified by resource location, supporting regex",
+    "_maxDistance": "The pseudo maximum searching radius. If the distance to the structure exceeds this value, HUD would display 'Not Found'",
+    "_radius": "The real maximum searching radius used by the underlying method (no idea how it works.)If you still couldn't find a structure with a big enough MaxSearchRadius, increase this one.If you think searching makes the server slow, decrease this one.",
+    "_HudInfoLevel": "HUD information detail level. 0: Nothing.1+: Structure and Dimension name.2+: Distance to the structure.3: Position of the structure and distance in x/y/z axis.",
+    "_HudPosition": "The side of the information HUD. Either LEFT or RIGHT.",
+    "_displayWithChatOpen": "Displays the compass information HUD even while chat is open.",
+    "_xOffset": "The X offset for information rendered on the HUD. (default:7)",
+    "_yOffset": "The Y offset for information rendered on the HUD. (default:16)",
+    "_overlayLineOffset": "The line offset for information rendered on the HUD. (default:1)",
+    "_closedEnough": "The X/Y/Z-distance won't be shown if the distance is smaller than the value. (default:0.3)"
+  },
+  "common": {
+    "filterMode": "BLACKLIST",
+    "filterList": [
+      "bosses_of_mass_destruction:lich_tower",
+      "minecraft:stronghold",
+      "minecraft:monument",
+      "minecraft:buried_treasure",
+      "bosses_of_mass_destruction:void_blossom"
+    ],
+    "maxDistance": 5000.0,
+    "radius": 64
+  },
+  "client": {
+    "HudInfoLevel": 3,
+    "HudPosition": "LEFT",
+    "displayWithChatOpen": true,
+    "xOffset": 7,
+    "yOffset": 16,
+    "overlayLineOffset": 1,
+    "closedEnough": 0.3
+  }
+}

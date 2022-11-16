@@ -1,0 +1,88 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:polished_diorite"
+        },
+        "title": {"translate":"Rock Polish"},
+        "description": {"translate":"Craft every type of polished block"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:building/rock_collection",
+    "rewards": {
+        "function": "bc_rewards:building/rock_polish"
+    },		
+    "criteria": {
+        "polished_granite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:polished_granite"
+						]
+                    }
+                ]
+            }
+        },
+        "polished_diorite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:polished_diorite"
+						]
+                    }
+                ]
+            }
+        },
+        "polished_andesite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:polished_andesite"
+						]
+                    }
+                ]
+            }
+        },
+        "polished_deepslate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:polished_deepslate"
+						]
+                    }
+                ]
+            }
+        },
+        "polished_basalt": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:polished_basalt"
+						]
+                    }
+                ]
+            }
+        },
+        "polished_blackstone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:polished_blackstone"
+						]
+                    }
+                ]
+            }
+        }
+	}		
+}

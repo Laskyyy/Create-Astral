@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_block"
+        },
+        "title": {"translate":"Master Iron Miner"},
+        "description": {"translate":"Mine enough iron to make a stack of iron blocks"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:mining/iron_miner",
+    "rewards": {
+		"function": "bc_rewards:mining/master_iron_miner"
+    },		
+    "criteria": {
+        "iron": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:iron_block"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }
+    }
+}

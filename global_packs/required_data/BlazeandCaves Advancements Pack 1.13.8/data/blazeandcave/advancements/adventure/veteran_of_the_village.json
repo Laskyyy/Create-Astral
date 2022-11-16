@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:emerald_block"
+        },
+        "title": {"translate":"Veteran of the Village"},
+        "description": {"translate":"Attain the highest level of Hero of the Village"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:adventure/war_is_coming",
+    "rewards": {
+		"function": "bc_rewards:adventure/veteran_of_the_village"
+    },		
+    "criteria": {
+        "hero_of_the_village": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:hero_of_the_village": {
+						"amplifier": {
+							"min": 4
+						}					
+					}
+                }
+            }
+        }
+    }
+}

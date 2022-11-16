@@ -1,0 +1,89 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:magma_block"
+        },
+        "title": {"translate":"Stepping on Legos"},
+        "description": {"translate":"Walk on some hot Magma Blocks in the Nether"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:nether/nugget_in_a_biscuit",
+	"rewards": {
+		"function": "bc_rewards:nether/stepping_on_legos"
+    },		
+    "criteria": {
+        "legos": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"stepping_on": {
+								"block": {
+									"blocks": [
+										"minecraft:magma_block"
+									]
+								},
+								"dimension": "the_nether"
+							},
+							"flags": {
+								"is_sneaking": "false"
+							}
+						},
+						"entity": "this"
+					},
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"predicate": {
+								"equipment": {
+									"feet": {
+										"enchantments": [
+											{
+												"enchantment": "minecraft:frost_walker"
+											}
+										]
+									}
+								}
+							},
+							"entity": "this"
+						}
+					},
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"predicate": {
+								"effects": {
+									"minecraft:fire_resistance": {
+										"amplifier": {
+											"min": 0
+										},
+										"duration": {
+											"min": 1
+										}
+									}
+								}
+							},
+							"entity": "this"
+						}
+					},
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+				]
+			}
+		}
+    }
+}

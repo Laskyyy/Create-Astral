@@ -1,0 +1,24 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:honey_block"
+		},
+		"title": {"translate":"Sticky Situation"},
+		"description": {"translate":"Jump into a honey block to slide down it"},
+		"announce_to_chat": "true"
+	},
+	"parent": "blazeandcave:animal/winnie_the_pooh",
+	"rewards": {
+		"function": "bc_rewards:animal/sticky_situation"
+	},
+	"criteria": {
+		"honey_block_slide": {
+			"trigger": "minecraft:slide_down_block",
+			"conditions": {
+				"blocks": [
+					"minecraft:honey_block"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:snow_block"
+        },
+        "title": {"translate":"Olaf"},
+        "description": {"translate":"Do you want to build a snow golem?"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:farming/the_pie",
+	"rewards": {
+		"function": "bc_rewards:farming/olaf"
+    },		
+    "criteria": {
+        "summoned": {
+            "trigger": "minecraft:summoned_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:snow_golem"
+                }
+            }
+        }
+    }
+}

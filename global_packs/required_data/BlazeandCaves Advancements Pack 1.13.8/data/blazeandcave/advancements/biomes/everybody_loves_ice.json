@@ -1,0 +1,56 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:poisonous_potato"
+        },
+        "title": {"translate":"Everybody Loves Ice!"},
+        "description": {"color":"#75E1FF","translate":"Obtain a stack of every type of ice in your inventory"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:biomes/thick_ice",
+    "rewards": {
+		"function": "bc_rewards:biomes/everybody_loves_ice"
+    },		
+    "criteria": {
+        "ice": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:ice"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        },
+        "packed_ice": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:packed_ice"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        },
+        "blue_ice": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:blue_ice"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }	
+    }	
+}

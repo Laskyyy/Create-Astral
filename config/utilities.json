@@ -1,0 +1,7 @@
+{
+  "unit": "KPH",
+  "loot_in_village": true,
+  "decreased_loot": false,
+  "disable_loot": false,
+  "text_location": "LEFT_MID"
+}

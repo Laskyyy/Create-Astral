@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:dead_horn_coral_fan"
+        },
+        "title": {"translate":"Goat Simulator"},
+        "description": {"translate":"Get killed by a Goat that rammed into you.","extra":[{"text":" "},{"italic":"true","translate":"You have Goat to be kidding me!"}]},
+        "announce_to_chat": "true"
+
+    },
+    "parent": "blazeandcave:animal/billy_the_kid",
+    "rewards": {
+        "function": "bc_rewards:animal/goat_simulator"
+    },		
+    "criteria": {
+        "goat": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "type": "goat"
+                }
+            }
+        }
+    }
+}

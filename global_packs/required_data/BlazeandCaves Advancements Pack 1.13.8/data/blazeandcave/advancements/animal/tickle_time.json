@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:feather"
+        },
+        "title": {"translate":"Tickle Time!"},
+        "description": {"translate":"Pluck some feathers from a chicken"},
+        "announce_to_chat": "true"
+    },
+    "parent": "minecraft:husbandry/root",
+	"rewards": {
+		"function": "bc_rewards:animal/tickle_time"
+    },		
+    "criteria": {
+        "feather": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:feather"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

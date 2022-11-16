@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:ice"
+        },
+        "title": {"translate":"Thin Ice!"},
+        "description": {"translate":"Use a silk touch pickaxe to pick up some ice blocks"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:biomes/powder_full",
+    "rewards": {
+        "function": "bc_rewards:biomes/thin_ice"
+    },		
+    "criteria": {
+        "ice": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:ice"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

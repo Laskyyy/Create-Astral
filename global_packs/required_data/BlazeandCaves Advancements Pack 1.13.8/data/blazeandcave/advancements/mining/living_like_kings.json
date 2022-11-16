@@ -1,0 +1,104 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:golden_chestplate"
+        },
+        "title": {"translate":"Living Like Kings"},
+        "description": {"translate":"Make yourself shiny with golden armor"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:mining/gold_rush",
+	"rewards": {
+		"function": "bc_rewards:mining/living_like_kings"
+    },
+    "criteria": {
+        "golden_helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"equipment": {
+								"head": {
+									"items": [
+										"minecraft:golden_helmet"
+									]
+								}
+							}
+						}
+                    }
+                ]
+            }
+        },
+        "golden_chestplate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"equipment": {
+								"chest": {
+									"items": [
+										"minecraft:golden_chestplate"
+									]
+								}
+							}
+						}
+                    }
+                ]
+            }
+        },
+        "golden_leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"equipment": {
+								"legs": {
+									"items": [
+										"minecraft:golden_leggings"
+									]
+								}
+							}
+						}
+                    }
+                ]
+            }
+        },
+        "golden_boots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"equipment": {
+								"feet": {
+									"items": [
+										"minecraft:golden_boots"
+									]
+								}
+							}
+						}
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "golden_helmet",
+            "golden_chestplate",
+            "golden_leggings",
+            "golden_boots"
+        ]
+    ]
+}

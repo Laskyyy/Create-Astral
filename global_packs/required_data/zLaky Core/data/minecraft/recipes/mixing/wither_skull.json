@@ -1,0 +1,30 @@
+{
+	"type":"create:mixing",
+	"ingredients":[
+		{
+			"item":"minecraft:coal_block"
+		},
+		{
+			"item":"minecraft:bone_block"
+		},
+		{
+			"item":"minecraft:wither_rose"
+		},
+		{
+			"item":"minecraft:wither_rose"
+		},
+		{
+			"item":"minecraft:wither_rose"
+		},
+		{
+			"item":"minecraft:wither_rose"
+		}
+	],
+	"results":[
+		{
+			"item":"minecraft:wither_skeleton_skull",
+			"count": 1
+		}
+	],
+	"heatRequirement":"superheated"
+}

@@ -1,0 +1,6 @@
+{
+	// The address to connect to when the Connect button is pressed.
+	"address": "143.47.230.34:25565",
+	// The name of the Button.
+	"connectButton": "LakySMP"
+}

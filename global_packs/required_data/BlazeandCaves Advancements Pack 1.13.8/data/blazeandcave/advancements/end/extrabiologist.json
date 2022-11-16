@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:chorus_flower"
+        },
+        "title": {"translate":"Extrabiologist"},
+        "description": {"translate":"Plant a chorus plant in the overworld for study"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:end/getting_chorus",
+	"rewards": {
+		"function": "bc_rewards:end/extrabiologist"
+    },		
+    "criteria": {
+        "chorus_flower": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:chorus_flower",
+				"location": {
+					"dimension": "overworld"
+				}
+            }
+        }
+    }
+}

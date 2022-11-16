@@ -1,0 +1,32 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:arrow"
+		},
+		"title": {"translate":"Bow Spammer"},
+		"description": {"translate":"Attack a mob by bow-spamming"},
+		"announce_to_chat": "true"
+	},
+	"parent": "blazeandcave:weaponry/point_blank",
+	"rewards": {
+		"function": "bc_rewards:weaponry/bow_spammer"
+	},		
+	"criteria": {
+		"bow_spammer": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"damage": {
+					"taken": {
+						"max": 1.0
+						},
+					"type": {
+						"is_projectile": true,
+						"direct_entity": {
+							"type": "minecraft:arrow"
+						}
+					}
+				}
+			}
+		}
+	}
+}

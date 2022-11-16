@@ -1,0 +1,36 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:water_bucket"
+		},
+		"title": {"translate":"King of the Sea"},
+		"description": {"translate":"Kill a drowned using a trident from at least 30 metres"},
+		"announce_to_chat": "true",
+		"frame": "challenge"
+	},
+	"parent": "minecraft:adventure/throw_trident",
+	"rewards": {
+		"function": "bc_rewards:weaponry/king_of_the_sea"
+	},	
+	"criteria": {
+		"killed_drowned": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"killing_blow": {
+					"is_projectile": true,
+					"direct_entity": {
+						"type": "minecraft:trident"
+					}
+				},
+				"entity": {
+					"type": "minecraft:drowned",
+					"distance": {
+						"horizontal": {
+							"min": 30
+						}
+					}
+				}
+			}
+		}
+	}
+}

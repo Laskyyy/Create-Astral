@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:rabbit_stew"
+        },
+        "title": {"translate":"Getting Into a Stew"},
+        "description": {"translate":"Make and eat some rabbit stew"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:animal/lucky_charm",
+	"rewards": {
+		"function": "bc_rewards:animal/getting_into_a_stew"
+    },		
+    "criteria": {
+        "rabbit_stew": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+					"items": [
+						"minecraft:rabbit_stew"
+					]
+                }
+            }
+        }
+    }
+}

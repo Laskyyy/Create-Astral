@@ -1,0 +1,98 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:wooden_shovel"
+        },
+        "title": {"translate":"Time to Dig!"},
+        "description": {"translate":"Use planks and sticks to make a shovel"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:bacap/time_to_chop",
+	"rewards": {
+		"function": "bc_rewards:bacap/time_to_dig"
+    },		
+    "criteria": {
+        "wooden_shovel": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:wooden_shovel"
+						]
+                    }
+                ]
+            }
+        },
+        "stone_shovel": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:stone_shovel"
+						]
+                    }
+                ]
+            }
+        },
+        "iron_shovel": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:iron_shovel"
+						]
+                    }
+                ]
+            }
+        },
+        "diamond_shovel": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:diamond_shovel"
+						]
+                    }
+                ]
+            }
+        },
+        "golden_shovel": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:golden_shovel"
+						]
+                    }
+                ]
+            }
+        },
+        "netherite_shovel": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:netherite_shovel"
+						]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+		[
+        "wooden_shovel",
+        "stone_shovel",
+		"iron_shovel",
+		"diamond_shovel",
+		"golden_shovel",
+		"netherite_shovel"
+		]
+    ]
+}

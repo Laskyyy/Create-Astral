@@ -1,0 +1,82 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:amethyst_block"
+        },
+        "title": {"translate":"Amethyst Miner"},
+        "description": {"translate":"Mine a stack of Amethyst Blocks, Amethyst Clusters, and every size of Amethyst Bud"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:mining/blackout",
+    "rewards": {
+		"function": "bc_rewards:mining/amethyst_miner"
+    },		
+    "criteria": {
+        "amethyst_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:amethyst_block"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        },
+        "small_amethyst_bud": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:small_amethyst_bud"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        },
+        "medium_amethyst_bud": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:medium_amethyst_bud"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        },
+        "large_amethyst_bud": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:large_amethyst_bud"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        },
+        "amethyst_cluster": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:amethyst_cluster"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }
+    }
+}

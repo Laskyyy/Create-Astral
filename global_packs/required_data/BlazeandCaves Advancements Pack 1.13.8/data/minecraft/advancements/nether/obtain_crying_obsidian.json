@@ -1,0 +1,28 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:crying_obsidian"
+		},
+		"title": {"translate":"Who is Cutting Onions?"},
+		"description": {"translate":"Obtain Crying Obsidian from a ruined portal or bartering with Piglins"},
+		"announce_to_chat": "true"
+	},
+	"parent": "blazeandcave:nether/from_whence_it_came",
+	"rewards": {
+		"function": "bc_rewards:nether/who_is_cutting_onions"
+	},		
+	"criteria": {
+		"crying_obsidian": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [ 
+							"minecraft:crying_obsidian"
+						]
+					}
+				]
+			}
+		}
+	}
+}

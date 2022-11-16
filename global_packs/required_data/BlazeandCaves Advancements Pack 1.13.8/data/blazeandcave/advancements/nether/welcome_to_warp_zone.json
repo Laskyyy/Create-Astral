@@ -1,0 +1,185 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:warped_planks"
+        },
+        "title": {"translate":"Welcome to Warp Zone!"},
+        "description": {"color":"#75E1FF","translate":"Craft every item made out of warped wood"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:nether/what_about_corruption_planks",
+    "rewards": {
+		"function": "bc_rewards:nether/welcome_to_warp_zone"
+    },		
+    "criteria": {
+        "warped_planks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:warped_planks"
+						]
+                    }
+                ]
+            }
+        },
+        "warped_stem": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:warped_stem"
+						]
+                    }
+                ]
+            }
+        },
+        "stripped_warped_stem": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:stripped_warped_stem"
+						]
+                    }
+                ]
+            }
+        },
+        "warped_hyphae": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:warped_hyphae"
+						]
+                    }
+                ]
+            }
+        },
+        "stripped_warped_hyphae": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:stripped_warped_hyphae"
+						]
+                    }
+                ]
+            }
+        },
+        "warped_slab": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:warped_slab"
+						]
+                    }
+                ]
+            }
+        },
+        "warped_pressure_plate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:warped_pressure_plate"
+						]
+                    }
+                ]
+            }
+        },
+        "warped_fence": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:warped_fence"
+						]
+                    }
+                ]
+            }
+        },
+        "warped_trapdoor": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:warped_trapdoor"
+						]
+                    }
+                ]
+            }
+        },
+        "warped_fence_gate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:warped_fence_gate"
+						]
+                    }
+                ]
+            }
+        },
+        "warped_stairs": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:warped_stairs"
+						]
+                    }
+                ]
+            }
+        },
+        "warped_button": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:warped_button"
+						]
+                    }
+                ]
+            }
+        },
+        "warped_door": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:warped_door"
+						]
+                    }
+                ]
+            }
+        },
+        "warped_sign": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:warped_sign"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:string"
+		},
+		"title": {"translate":"Point Blank"},
+		"description": {"translate":"Shoot a mob from point-blank range"},
+		"announce_to_chat": "true"
+	},
+	"parent": "minecraft:adventure/shoot_arrow",
+	"rewards": {
+		"function": "bc_rewards:weaponry/point_blank"
+	},		
+	"criteria": {
+		"point_blank": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"damage": {
+					"type": {
+						"is_projectile": true,
+						"direct_entity": {
+							"type": "minecraft:arrow"
+						}
+					}
+				},
+				"entity": {
+					"distance": {
+						"absolute": {
+							"max": 2.0
+						}
+					}
+				}
+			}
+		}
+	}
+}

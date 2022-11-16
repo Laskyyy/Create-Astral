@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:furnace_minecart"
+        },
+        "title": {"translate":"I Like Trains"},
+        "description": {"color":"#75E1FF","translate":"Ride 10km in a minecart"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:statistics/minecart_rider",
+	"rewards": {
+		"function": "bc_rewards:statistics/i_like_trains"
+    },		
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"stats": [
+							{
+								"type": "minecraft:custom",
+								"stat": "minecraft:minecart_one_cm",
+								"value": {
+									"min": 1000000
+								}
+							}
+						]
+					}
+				}
+			}
+        }
+    }
+}

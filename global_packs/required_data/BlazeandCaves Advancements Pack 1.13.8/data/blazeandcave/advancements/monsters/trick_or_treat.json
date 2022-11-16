@@ -1,0 +1,131 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:carved_pumpkin"
+        },
+        "title": {"translate":"Trick or Treat!"},
+        "description": {"color":"#75E1FF","translate":"Defeat a mob wearing a pumpkin"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:monsters/desert_nomad",
+    "rewards": {
+        "function": "bc_rewards:monsters/trick_or_treat"
+    },		
+    "criteria": {
+        "zombie": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "zombie",
+					"nbt": "{ArmorItems:[{},{},{},{id:\"minecraft:carved_pumpkin\",Count:1b}]}"
+                }
+            }
+        },
+        "zombie_villager": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "zombie_villager",
+					"nbt": "{ArmorItems:[{},{},{},{id:\"minecraft:carved_pumpkin\",Count:1b}]}"
+                }
+            }
+        },
+        "zombified_piglin": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "zombified_piglin",
+					"nbt": "{ArmorItems:[{},{},{},{id:\"minecraft:carved_pumpkin\",Count:1b}]}"
+                }
+            }
+        },
+        "husk": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "husk",
+					"nbt": "{ArmorItems:[{},{},{},{id:\"minecraft:carved_pumpkin\",Count:1b}]}"
+                }
+            }
+        },
+        "drowned": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "drowned",
+					"nbt": "{ArmorItems:[{},{},{},{id:\"minecraft:carved_pumpkin\",Count:1b}]}"
+                }
+            }
+        },
+        "skeleton": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "skeleton",
+					"nbt": "{ArmorItems:[{},{},{},{id:\"minecraft:carved_pumpkin\",Count:1b}]}"
+                }
+            }
+        },
+        "wither_skeleton": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "wither_skeleton",
+					"nbt": "{ArmorItems:[{},{},{},{id:\"minecraft:carved_pumpkin\",Count:1b}]}"
+                }
+            }
+        },
+        "stray": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "stray",
+					"nbt": "{ArmorItems:[{},{},{},{id:\"minecraft:carved_pumpkin\",Count:1b}]}"
+                }
+            }
+        },
+        "player": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "player",
+					"nbt": "{ArmorItems:[{},{},{},{id:\"minecraft:carved_pumpkin\",Count:1b}]}"
+                }
+            }
+        },
+        "piglin": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "piglin",
+					"nbt": "{ArmorItems:[{},{},{},{id:\"minecraft:carved_pumpkin\",Count:1b}]}"
+                }
+            }
+        },
+        "piglin_brute": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "piglin_brute",
+					"nbt": "{ArmorItems:[{},{},{},{id:\"minecraft:carved_pumpkin\",Count:1b}]}"
+                }
+            }
+        }		
+    },
+	"requirements": [
+		[
+		"zombie",
+		"zombie_villager",
+		"zombified_piglin",
+		"husk",
+		"drowned",
+		"skeleton",
+		"wither_skeleton",
+		"stray",
+		"player",
+		"piglin",
+		"piglin_brute"
+		]
+	]
+}

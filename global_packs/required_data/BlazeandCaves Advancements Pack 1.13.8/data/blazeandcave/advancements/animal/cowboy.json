@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:saddle"
+        },
+        "title": {"translate":"Cowboy"},
+        "description": {"translate":"Tame a horse by jumping on it over and over again"},
+        "announce_to_chat": "true"
+    },
+    "parent": "minecraft:husbandry/root",
+	"rewards": {
+		"function": "bc_rewards:animal/cowboy"
+    },		
+    "criteria": {
+        "tamed_animal": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:horse"
+                }
+			}
+        }
+    }
+}

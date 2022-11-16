@@ -1,0 +1,2 @@
+give @s minecraft:golden_helmet{Enchantments:[{id:"minecraft:fortune",lvl:1}],Trophy:1,CustomModelData:131,HideFlags:70,Unbreakable:1,display:{Name:"{\"italic\":\"false\",\"bold\":\"true\",\"color\":\"#E9B115\",\"translate\":\"Golden Crown\"}",Lore:["{\"color\":\"#E9B115\",\"translate\":\"Piglin-approved\"}","{\"text\":\" \"}","{\"color\":\"gray\",\"translate\":\"Awarded for achieving\"}","{\"italic\":\"false\",\"color\":\"light_purple\",\"translate\":\"Master Gold Miner\"}"]}} 1
+tellraw @s {"color":"gold","text":" +1 ","extra":[{"translate":"Golden Crown"}]}

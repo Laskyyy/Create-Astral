@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:raw_copper"
+        },
+        "title": {"translate":"Copper Miner"},
+        "description": {"color":"#75E1FF","translate":"Mine a stack of Raw Copper"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:mining/dont_come_a_copper",
+    "rewards": {
+		"function": "bc_rewards:mining/copper_miner"
+    },		
+    "criteria": {
+        "raw_copper": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:raw_copper"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }
+    }
+}

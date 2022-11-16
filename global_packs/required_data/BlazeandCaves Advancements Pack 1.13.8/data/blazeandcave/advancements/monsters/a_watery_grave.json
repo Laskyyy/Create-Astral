@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:seagrass"
+        },
+        "title": {"translate":"A Watery Grave"},
+        "description": {"translate":"Defeat a drowned in the briny depths. ","extra":[{"italic":"true","translate":"Gurgle"}]},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:monsters/iron_belly",
+    "rewards": {
+        "function": "bc_rewards:monsters/a_watery_grave"
+    },		
+    "criteria": {
+        "drowned": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "drowned"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:creeper_banner_pattern"
+        },
+        "title": {"translate":"Fruit of the Looms"},
+        "description": {"translate":"Obtain all the special banner patterns"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:building/prepare_to_meet_your_loom",
+    "rewards": {
+        "function": "bc_rewards:building/fruit_of_the_looms"
+    },		
+    "criteria": {
+        "flower_banner_pattern": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:flower_banner_pattern"
+						]
+                    }
+                ]
+            }
+        },
+        "creeper_banner_pattern": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:creeper_banner_pattern"
+						]
+                    }
+                ]
+            }
+        },
+        "skull_banner_pattern": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:skull_banner_pattern"
+						]
+                    }
+                ]
+            }
+        },
+        "mojang_banner_pattern": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:mojang_banner_pattern"
+						]
+                    }
+                ]
+            }
+        },
+        "globe_banner_pattern": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:globe_banner_pattern"
+						]
+                    }
+                ]
+            }
+        },
+        "piglin_banner_pattern": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:piglin_banner_pattern"
+						]
+                    }
+                ]
+            }
+        }
+	}
+}

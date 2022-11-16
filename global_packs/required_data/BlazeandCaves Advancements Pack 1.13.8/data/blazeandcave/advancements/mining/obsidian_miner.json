@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:obsidian"
+        },
+        "title": {"translate":"Obsidian Miner"},
+        "description": {"color":"#75E1FF","translate":"Mine a stack of obsidian. (This might take a while...)"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "minecraft:story/enter_the_nether",
+    "rewards": {
+		"function": "bc_rewards:mining/obsidian_miner"
+    },		
+    "criteria": {
+        "obsidian": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:obsidian"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }
+    }
+}

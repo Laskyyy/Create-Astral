@@ -1,0 +1,2 @@
+give @s minecraft:yellow_dye{Enchantments:[{id:"minecraft:unbreaking",lvl:1}],Trophy:1,CustomModelData:131,HideFlags:33,display:{Name:"{\"italic\":\"false\",\"bold\":\"true\",\"color\":\"#F9FA32\",\"translate\":\"Mind Stone\"}",Lore:["{\"color\":\"#F9FA32\",\"translate\":\"The ability to give the mindless minds of their own\"}","{\"text\":\" \"}","{\"color\":\"gray\",\"translate\":\"Awarded for achieving\"}","{\"italic\":\"false\",\"color\":\"#FF2A2A\",\"translate\":\"Zombie Apocalypse\"}"]}} 1
+tellraw @s {"color":"gold","text":" +1 ","extra":[{"translate":"Mind Stone"}]}

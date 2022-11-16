@@ -1,0 +1,96 @@
+[general]
+spawnCorruptedLunarians = true
+spawnStarCrawlers = true
+spawnMartianRaptors = true
+spawnMoglers = true
+spawnSulfurCreepers = true
+spawnLunarianWanderingTrader = true
+doEntityGravity = true
+doLivingEntityGravity = true
+acidRainBurns = true
+doOxygen = true
+doSpaceMuffler = true
+oxygenTankSize = 40500
+hammerDurability = 64
+orbitGravity = 3.26
+giveAstroduxAtSpawn = false
+oxygenBarXOffset = 0
+oxygenBarYOffset = 0
+energyBarXOffset = 0
+energyBarYOffset = 0
+allowFlagImages = true
+[spaceSuit]
+spaceSuitTankSize = 81000
+netheriteSpaceSuitTankSize = 162000
+netheriteSpaceSuitHasFireResistance = true
+jetSuitSpeed = 0.4
+jetSuitUpwardsSpeed = 0.2
+jetSuitEnergyPerTick = 250
+jetSuitTankSize = 324000
+jetSuitMaxEnergy = 300000
+spawnJetSuitParticles = true
+enableJetSuitFlight = true
+jetSuitProtectionMultiplier = 1
+jetSuitArmorToughness = 5
+[vehicles]
+fallingExplosionThreshold = -1.2
+fallingExplosionMultiplier = 0.7
+gravity = -2.0
+moveCameraInVehicle = true
+[rocket]
+atmosphereLeave = 600
+countDownTicks = 200
+acceleration = 0.005
+maxSpeed = 0.5
+entitiesBurnUnderRocket = true
+tankBuckets = 10
+[rover]
+explodeRoverInLava = true
+fuelPerTick = 27
+turnSpeed = 3.0
+maxTurnSpeed = 6.0
+deceleration = 0.9
+minSpeed = -0.2
+maxSpeed = 0.3
+tankBuckets = 3
+[lander]
+boosterSpeed = 0.1
+boosterThreshold = -0.1
+[coalGenerator]
+maxEnergy = 9000
+energyPerTick = 20
+[compressor]
+maxEnergy = 9000
+energyPerTick = 32
+[fuelRefinery]
+maxEnergy = 9000
+energyPerTick = 35
+tankBuckets = 6
+[oxygenLoader]
+maxEnergy = 9000
+energyPerTick = 15
+tankBuckets = 3
+[oxygenDistributor]
+maxEnergy = 20000
+fluidConversionEnergyPerTick = 5
+tankBuckets = 5
+maxBlockChecks = 2000
+refreshTicks = 60
+oxygenMultiplier = 0.8
+energyMultiplier = 3.0
+[solarPanel]
+maxEnergy = 15000
+energyMultiplier = 1.05
+[waterPump]
+maxEnergy = 9000
+energyPerTick = 10
+tankBuckets = 6
+transferPerTick = 810
+deleteWaterBelowWaterPump = true
+[energizer]
+maxEnergy = 250000
+energyPerTick = 55
+[cryoFreezer]
+maxEnergy = 30000
+energyPerTick = 30
+tankBuckets = 5

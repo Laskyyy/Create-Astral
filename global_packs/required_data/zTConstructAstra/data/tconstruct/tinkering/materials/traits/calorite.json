@@ -1,0 +1,12 @@
+{
+  "default": [
+    {
+      "name": "tconstruct:sharpness",
+      "level": 1
+    },
+    {
+      "name": "tconstruct:looting",
+      "level": 1
+    }
+  ]
+}

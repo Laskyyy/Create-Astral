@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:loom"
+        },
+        "title": {"translate":"Professional"},
+        "description": {"color":"#75E1FF","translate":"Trade with a villager at master level"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:adventure/traveller",
+    "rewards": {
+        "function": "bc_rewards:adventure/professional"
+    },		
+    "criteria": {
+        "master": {
+            "trigger": "minecraft:villager_trade",
+			"conditions": {
+				"villager": {
+					"nbt": "{VillagerData:{level:5}}"
+				}
+			}
+        }	
+    }
+}

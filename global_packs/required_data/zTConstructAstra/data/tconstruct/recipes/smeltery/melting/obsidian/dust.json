@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:dusts/obsidian"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "c:dusts/obsidian"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_obsidian",
+    "amount": 20250
+  },
+  "temperature": 800,
+  "time": 66
+}

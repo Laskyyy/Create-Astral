@@ -1,0 +1,64 @@
+{
+  "effects": {
+    "sky_color": 0,
+    "fog_color": 10518688,
+    "water_color": 7172215,
+    "water_fog_color": 329011,
+    "ambient_sound": "minecraft:ambient.soul_sand_valley.loop",
+    "mood_sound": {
+      "sound": "minecraft:ambient.basalt_deltas.mood",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    },
+    "additions_sound": {
+      "sound": "minecraft:block.amethyst_block.chime",
+      "tick_chance": 0.004
+    },
+    "particle": {
+      "options": {
+        "type": "falling_obsidian_tear"
+      },
+      "probability": 0.01
+    }
+  },
+  "carvers": {},
+  "features": [
+    [
+      "nullscape:crystal/crystal"
+    ],
+    [],
+    [],
+    [],
+    [
+      "minecraft:end_gateway_return"
+    ],
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:enderman",
+        "weight": 10,
+        "minCount": 4,
+        "maxCount": 4
+      }
+    ],
+    "creature": [],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "precipitation": "none",
+  "temperature": 0.5,
+  "downfall": 0.5,
+  "category": "the_end"
+}

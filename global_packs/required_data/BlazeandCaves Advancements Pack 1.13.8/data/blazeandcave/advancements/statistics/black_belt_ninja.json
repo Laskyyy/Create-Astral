@@ -1,0 +1,36 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:leather_chestplate",
+			"nbt": "{display:{color:0}}"
+        },
+        "title": {"translate":"Black Belt Ninja"},
+        "description": {"color":"#75E1FF","translate":"Sneak 1km"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:statistics/sneaky_snitch",
+	"rewards": {
+		"function": "bc_rewards:statistics/black_belt_ninja"
+    },		
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"stats": [
+							{
+								"type": "minecraft:custom",
+								"stat": "minecraft:crouch_one_cm",
+								"value": {
+									"min": 100000
+								}
+							}
+						]
+					}
+				}
+			}
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:spyglass"
+		},
+		"title": {"translate":"Inspector Gadget"},
+		"description": {"translate":"Kill a zombie while holding a spyglass"},
+		"announce_to_chat": "true"
+	},
+	"parent": "blazeandcave:weaponry/diemonds",
+	"rewards": {
+		"function": "bc_rewards:weaponry/inspector_gadget"
+	},		
+	"criteria": {
+		"inspector_gadget": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+					"type": "zombie",
+					"distance": {
+						"absolute": {
+							"max": 5
+						}
+					}
+				},			
+				"player": {
+					"equipment": {
+						"mainhand": {
+							"items": [
+								"minecraft:spyglass"
+							]
+						}
+					}
+				}
+			}
+		}	
+	}
+}

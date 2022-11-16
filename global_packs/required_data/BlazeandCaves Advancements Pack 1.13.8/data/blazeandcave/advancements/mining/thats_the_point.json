@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:pointed_dripstone"
+        },
+        "title": {"translate":"That's the point!"},
+        "description": {"translate":"Obtain some Pointed Dripstone from a Dripstone Cave"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:mining/lichen_subscribe",
+    "rewards": {
+		"function": "bc_rewards:mining/thats_the_point"
+    },		
+    "criteria": {
+        "pointed_dripstone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:pointed_dripstone"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+execute at @s if block ~-1 ~ ~ end_gateway as @p[gamemode=!spectator] run function nullscape:technical/dim/to_null_island
+execute at @s if block ~1 ~ ~ end_gateway as @p[gamemode=!spectator] run function nullscape:technical/dim/to_null_island
+execute at @s if block ~ ~ ~1 end_gateway as @p[gamemode=!spectator] run function nullscape:technical/dim/to_null_island
+execute at @s if block ~ ~ ~-1 end_gateway as @p[gamemode=!spectator] run function nullscape:technical/dim/to_null_island
+execute at @s if block ~ ~-1 ~ end_gateway as @p[gamemode=!spectator] run function nullscape:technical/dim/to_null_island
+execute at @s if block ~ ~1 ~ end_gateway as @p[gamemode=!spectator] run function nullscape:technical/dim/to_null_island
+execute at @s if block ~1 ~ ~1 end_gateway as @p[gamemode=!spectator] run function nullscape:technical/dim/to_null_island
+execute at @s if block ~1 ~ ~-1 end_gateway as @p[gamemode=!spectator] run function nullscape:technical/dim/to_null_island
+execute at @s if block ~-1 ~ ~-1 end_gateway as @p[gamemode=!spectator] run function nullscape:technical/dim/to_null_island
+execute at @s if block ~-2 ~ ~ end_gateway as @p[gamemode=!spectator] run function nullscape:technical/dim/to_null_island
+execute at @s if block ~2 ~ ~ end_gateway as @p[gamemode=!spectator] run function nullscape:technical/dim/to_null_island
+execute at @s if block ~ ~ ~2 end_gateway as @p[gamemode=!spectator] run function nullscape:technical/dim/to_null_island
+execute at @s if block ~ ~ ~-2 end_gateway as @p[gamemode=!spectator] run function nullscape:technical/dim/to_null_island

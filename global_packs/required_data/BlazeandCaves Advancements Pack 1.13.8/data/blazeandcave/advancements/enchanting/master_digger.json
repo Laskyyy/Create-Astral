@@ -1,0 +1,80 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+			"nbt": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}]}"
+        },
+        "title": {"translate":"Master Digger"},
+        "description": {"translate":"Create a shovel with all possible enchantments at max level"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:enchanting/master_miner",
+    "rewards": {
+		"function": "bc_rewards:enchanting/master_digger"
+    },		
+    "criteria": {
+        "perfect_shovel_fortune": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+				"items": [
+                    {
+                        "tag": "blazeandcave:master_shovels",
+						"enchantments": [
+							{
+								"enchantment": "minecraft:efficiency",
+								"levels": 5
+							},
+							{
+								"enchantment": "minecraft:fortune",
+								"levels": 3
+							},
+							{
+								"enchantment": "minecraft:unbreaking",
+								"levels": 3
+							},
+							{
+								"enchantment": "minecraft:mending",
+								"levels": 1
+							}	
+						]
+                    }
+                ]
+            }
+        },
+        "perfect_shovel_silk_touch": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+				"items": [
+                    {
+                        "tag": "blazeandcave:master_shovels",
+						"enchantments": [
+							{
+								"enchantment": "minecraft:efficiency",
+								"levels": 5
+							},
+							{
+								"enchantment": "minecraft:silk_touch",
+								"levels": 1
+							},
+							{
+								"enchantment": "minecraft:unbreaking",
+								"levels": 3
+							},
+							{
+								"enchantment": "minecraft:mending",
+								"levels": 1
+							}	
+						]
+                    }
+                ]
+            }
+        }
+    },	
+    "requirements": [
+        [
+            "perfect_shovel_fortune",
+            "perfect_shovel_silk_touch"
+        ]
+    ]
+}

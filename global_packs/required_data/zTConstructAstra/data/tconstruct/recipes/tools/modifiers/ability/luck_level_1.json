@@ -1,0 +1,38 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "item": "minecraft:blue_dye"
+    },
+    {
+      "ingredient": [
+        {
+          "tag": "c:storage_blocks/lapis"
+        },
+        {
+          "tag": "c:storage_blocks/lapis"
+        }
+      ]
+    },
+    {
+      "tag": "c:storage_blocks/lapis"
+    },
+    {
+      "tag": "c:storage_blocks/lapis"
+    },
+    {
+      "tag": "c:storage_blocks/lapis"
+    }
+  ],
+  "tools": {
+    "tag": "tconstruct:modifiable/melee_or_harvest"
+  },
+  "slots": {
+    "abilities": 1
+  },
+  "result": {
+    "name": "tconstruct:luck",
+    "level": 1
+  },
+  "max_level": 1
+}

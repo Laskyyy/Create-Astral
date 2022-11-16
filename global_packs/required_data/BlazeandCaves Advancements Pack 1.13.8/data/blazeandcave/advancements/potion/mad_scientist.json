@@ -1,0 +1,138 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:player_head",
+			"nbt": "{SkullOwner:{Id:[I;-209858666,1741245018,-1449060731,-1881581368],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjRiZDgzMjgxM2FjMzhlNjg2NDg5MzhkN2EzMmY2YmEyOTgwMWFhZjMxNzQwNDM2N2YyMTRiNzhiNGQ0NzU0YyJ9fX0=\"}]}}}"
+        },
+        "title": {"translate":"Mad Scientist"},
+        "description": {"translate":"Cure a zombie villager of every profession"},
+        "announce_to_chat": "true",
+        "frame": "challenge"
+    },
+    "parent": "minecraft:story/cure_zombie_villager",
+	"rewards": {
+		"function": "bc_rewards:potion/mad_scientist"
+    },		
+    "criteria": {
+        "farmer": {
+            "trigger": "minecraft:cured_zombie_villager",
+			"conditions": {
+				"villager": {
+					"nbt": "{VillagerData:{profession:\"minecraft:farmer\"}}"
+				}
+			}
+        },
+        "fisherman": {
+            "trigger": "minecraft:cured_zombie_villager",
+			"conditions": {
+				"villager": {
+					"nbt": "{VillagerData:{profession:\"minecraft:fisherman\"}}"
+				}
+			}
+        },
+        "shepherd": {
+            "trigger": "minecraft:cured_zombie_villager",
+			"conditions": {
+				"villager": {
+					"nbt": "{VillagerData:{profession:\"minecraft:shepherd\"}}"
+				}
+			}
+        },
+        "fletcher": {
+            "trigger": "minecraft:cured_zombie_villager",
+			"conditions": {
+				"villager": {
+					"nbt": "{VillagerData:{profession:\"minecraft:fletcher\"}}"
+				}
+			}
+        },
+        "librarian": {
+            "trigger": "minecraft:cured_zombie_villager",
+			"conditions": {
+				"villager": {
+					"nbt": "{VillagerData:{profession:\"minecraft:librarian\"}}"
+				}
+			}
+        },
+        "cartographer": {
+            "trigger": "minecraft:cured_zombie_villager",
+			"conditions": {
+				"villager": {
+					"nbt": "{VillagerData:{profession:\"minecraft:cartographer\"}}"
+				}
+			}
+        },
+        "cleric": {
+            "trigger": "minecraft:cured_zombie_villager",
+			"conditions": {
+				"villager": {
+					"nbt": "{VillagerData:{profession:\"minecraft:cleric\"}}"
+				}
+			}
+        },
+        "armorer": {
+            "trigger": "minecraft:cured_zombie_villager",
+			"conditions": {
+				"villager": {
+					"nbt": "{VillagerData:{profession:\"minecraft:armorer\"}}"
+				}
+			}
+        },
+        "weapon_smith": {
+            "trigger": "minecraft:cured_zombie_villager",
+			"conditions": {
+				"villager": {
+					"nbt": "{VillagerData:{profession:\"minecraft:weaponsmith\"}}"
+				}
+			}
+        },
+        "tool_smith": {
+            "trigger": "minecraft:cured_zombie_villager",
+			"conditions": {
+				"villager": {
+					"nbt": "{VillagerData:{profession:\"minecraft:toolsmith\"}}"
+				}
+			}
+        },
+        "butcher": {
+            "trigger": "minecraft:cured_zombie_villager",
+			"conditions": {
+				"villager": {
+					"nbt": "{VillagerData:{profession:\"minecraft:butcher\"}}"
+				}
+			}
+        },
+        "leatherworker": {
+            "trigger": "minecraft:cured_zombie_villager",
+			"conditions": {
+				"villager": {
+					"nbt": "{VillagerData:{profession:\"minecraft:leatherworker\"}}"
+				}
+			}
+        },
+        "mason": {
+            "trigger": "minecraft:cured_zombie_villager",
+			"conditions": {
+				"villager": {
+					"nbt": "{VillagerData:{profession:\"minecraft:mason\"}}"
+				}
+			}
+        },
+        "nitwit": {
+            "trigger": "minecraft:cured_zombie_villager",
+			"conditions": {
+				"villager": {
+					"nbt": "{VillagerData:{profession:\"minecraft:nitwit\"}}"
+				}
+			}
+        },
+        "none": {
+            "trigger": "minecraft:cured_zombie_villager",
+			"conditions": {
+				"villager": {
+					"nbt": "{VillagerData:{profession:\"minecraft:none\"}}"
+				}
+			}
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "general": {
+    "enable": true,
+    "debugDisplay": false
+  },
+  "movement": {
+    "enable": true,
+    "jump": true,
+    "sneak": "Maintain",
+    "dismount": false,
+    "textFieldDisables": true,
+    "unrecognizedScreenDefault": true
+  },
+  "background": {
+    "enable": true,
+    "hideOnPause": "Show",
+    "unrecognizedScreenDefault": true
+  }
+}

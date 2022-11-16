@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:redstone_torch"
+        },
+        "title": {"translate":"Must be your birthday"},
+        "description": {"color":"#75E1FF","translate":"Eat 100 slices of cake"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:farming/hay_there",
+	"rewards": {
+		"function": "bc_rewards:farming/must_be_your_birthday"
+    },		
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"stats": [
+							{
+								"type": "minecraft:custom",
+								"stat": "minecraft:eat_cake_slice",
+								"value": {
+									"min": 100
+								}
+							}
+						]
+					}
+				}
+			}
+        }
+    }
+}

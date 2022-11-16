@@ -1,0 +1,34 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:red_terracotta"
+        },
+        "title": {"translate":"Natural Sprinter"},
+        "description": {"translate":"Sprint 10km"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:statistics/root",
+	"rewards": {
+		"function": "bc_rewards:statistics/natural_sprinter"
+    },		
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"stats": [
+							{
+								"type": "minecraft:custom",
+								"stat": "minecraft:sprint_one_cm",
+								"value": {
+									"min": 1000000
+								}
+							}
+						]
+					}
+				}
+			}
+        }
+    }
+}

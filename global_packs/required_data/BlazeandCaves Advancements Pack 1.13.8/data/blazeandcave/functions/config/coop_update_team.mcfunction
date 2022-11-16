@@ -1,0 +1,16 @@
+execute if entity @s[team=bac_team_black] run function blazeandcave:config/coop_update_team_black
+execute if entity @s[team=bac_team_dark_blue] run function blazeandcave:config/coop_update_team_dark_blue
+execute if entity @s[team=bac_team_dark_green] run function blazeandcave:config/coop_update_team_dark_green
+execute if entity @s[team=bac_team_dark_aqua] run function blazeandcave:config/coop_update_team_dark_aqua
+execute if entity @s[team=bac_team_dark_red] run function blazeandcave:config/coop_update_team_dark_red
+execute if entity @s[team=bac_team_dark_purple] run function blazeandcave:config/coop_update_team_dark_purple
+execute if entity @s[team=bac_team_gold] run function blazeandcave:config/coop_update_team_gold
+execute if entity @s[team=bac_team_gray] run function blazeandcave:config/coop_update_team_gray
+execute if entity @s[team=bac_team_dark_gray] run function blazeandcave:config/coop_update_team_dark_gray
+execute if entity @s[team=bac_team_blue] run function blazeandcave:config/coop_update_team_blue
+execute if entity @s[team=bac_team_green] run function blazeandcave:config/coop_update_team_green
+execute if entity @s[team=bac_team_aqua] run function blazeandcave:config/coop_update_team_aqua
+execute if entity @s[team=bac_team_red] run function blazeandcave:config/coop_update_team_red
+execute if entity @s[team=bac_team_light_purple] run function blazeandcave:config/coop_update_team_light_purple
+execute if entity @s[team=bac_team_yellow] run function blazeandcave:config/coop_update_team_yellow
+execute if entity @s[team=bac_team_white] run function blazeandcave:config/coop_update_team_white

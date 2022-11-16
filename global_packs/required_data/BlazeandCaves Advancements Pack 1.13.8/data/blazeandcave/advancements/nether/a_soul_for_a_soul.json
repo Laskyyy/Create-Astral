@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:soul_campfire"
+        },
+        "title": {"translate":"A Soul For A Soul"},
+        "description": {"translate":"Place down a Soul Campfire"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:nether/burnt_right_into_your_soul",
+	"rewards": {
+		"function": "bc_rewards:nether/a_soul_for_a_soul"
+    },		
+    "criteria": {
+        "soul_campfire": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:soul_campfire"
+            }
+        }
+    }
+}

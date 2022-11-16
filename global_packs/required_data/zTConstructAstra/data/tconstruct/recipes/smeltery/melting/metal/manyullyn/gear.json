@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:gears/manyullyn"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "c:gears/manyullyn"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_manyullyn",
+    "amount": 36000
+  },
+  "temperature": 800,
+  "time": 144
+}

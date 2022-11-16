@@ -1,0 +1,4 @@
+{
+	// Controls how some suggestions are filtered and sorted based on case
+	"isCaseSensitive": false
+}

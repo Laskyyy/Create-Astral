@@ -1,0 +1,104 @@
+{
+  //Default Generators
+  //{
+  //  "id": "mod_id:block_id",
+  //  "weight": 95.5,
+  //  "dimensions": [
+  //    "mod_id:dimension_id",
+  //    "mod_id:dimension_id"
+  //  ],
+  //  "excludedDimensions": [
+  //    "mod_id:dimension_id",
+  //    "mod_id:dimension_id"
+  //  ],
+  //  "minY": 0,
+  //  "maxY": 69
+  //}
+  "cobbleGen": [
+    {
+      "id": "minecraft:cobblestone",
+      "weight": 100.0,
+      "minY": 0
+    },
+    {
+      "id": "minecraft:cobbled_deepslate",
+      "weight": 100.0,
+      "maxY": 0
+    }
+  ],
+  "stoneGen": [
+    {
+      "id": "minecraft:stone",
+      "weight": 100.0
+    }
+  ],
+  "basaltGen": [
+    {
+      "id": "minecraft:basalt",
+      "weight": 100.0
+    }
+  ],
+  //Custom Generators
+  //<stoneGen|cobbleGen|basaltGen>: {
+  //  "mod_id:modifier_block_id": [
+  //    {
+  //      "id": "mod_id:block_id",
+  //      "weight": 95.5,
+  //      "dimensions": [
+  //        "mod_id:dimension_id",
+  //        "mod_id:dimension_id"
+  //      ],
+  //      "excludedDimensions": [
+  //        "mod_id:dimension_id",
+  //        "mod_id:dimension_id"
+  //      ],
+  //      "minY": 0,
+  //      "maxY": 69
+  //    },
+  //    ...
+  //  ]
+  //}
+  "customGen": {
+    //Default Generators
+    //{
+    //  "id": "mod_id:block_id",
+    //  "weight": 95.5,
+    //  "dimensions": [
+    //    "mod_id:dimension_id",
+    //    "mod_id:dimension_id"
+    //  ],
+    //  "excludedDimensions": [
+    //    "mod_id:dimension_id",
+    //    "mod_id:dimension_id"
+    //  ],
+    //  "minY": 0,
+    //  "maxY": 69
+    //}
+    "cobbleGen": {
+      "compressor:triple_compressed_sand": [
+        {
+          "id": "minecraft:sand",
+          "weight": 100.0
+        }
+      ]
+    },
+    "basaltGen": {
+      "compressor:triple_compressed_andesite": [
+        {
+          "id": "minecraft:andesite",
+          "weight": 100.0,
+          "dimensions": [
+            "minecraft:overworld"
+          ]
+        },
+        {
+          "id": "minecraft:andesite",
+          "weight": 100.0,
+          "excludedDimensions": [
+            "minecraft:the_end"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:golden_shovel"
+        },
+        "title": {"translate":"We've broken our last shovel"},
+        "description": {"translate":"Break all six types of shovels"},
+        "announce_to_chat": "true",
+        "frame": "challenge"
+    },
+    "parent": "blazeandcave:mining/bling_bling_gone",
+    "rewards": {
+		"function": "bc_rewards:mining/weve_broken_our_last_shovel"
+    },		
+    "criteria": {
+        "wooden_shovel": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+				"item": {
+					"items": [
+						"minecraft:wooden_shovel"
+					]
+				},
+				"durability": {
+					"max": 0
+				}
+            }
+        },
+        "stone_shovel": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+				"item": {
+					"items": [
+						"minecraft:stone_shovel"
+					]
+				},
+				"durability": {
+					"max": 0
+				}
+            }
+        },
+        "gold_shovel": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+				"item": {
+					"items": [
+						"minecraft:golden_shovel"
+					]
+				},
+				"durability": {
+					"max": 0
+				}
+            }
+        },
+        "iron_shovel": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+				"item": {
+					"items": [
+						"minecraft:iron_shovel"
+					]
+				},
+				"durability": {
+					"max": 0
+				}
+            }
+        },
+        "diamond_shovel": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+				"item": {
+					"items": [
+						"minecraft:diamond_shovel"
+					]
+				},
+				"durability": {
+					"max": 0
+				}
+            }
+        },
+        "netherite_shovel": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+				"item": {
+					"items": [
+						"minecraft:netherite_shovel"
+					]
+				},
+				"durability": {
+					"max": 0
+				}
+            }
+        }	
+    }
+}

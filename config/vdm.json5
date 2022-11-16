@@ -1,0 +1,74 @@
+{
+	"defaultMultipliers": {
+		// Config options only apply on world creation for the fabric port! For later enabling or disabling in existing worlds, use the commands! /vdm help for more info!
+		"notice": false,
+		// We all get old at some point. Upon breeding a finite number of times, animals and villagers will die of old age.
+		"aging": false,
+		// When you take damage, your ability to heal is nullified until you hit a monster or a player with a melee attack. Punch 'em in the chin!
+		"blackeye": false,
+		// Bombs away! Creepers always explode on death, regardless of method.
+		"cannon": false,
+		// Phantoms are a lame punishment for lack of sleep. Enjoy debuffs and eventual death by lack of sleep with this modifier!
+		"fatigue": false,
+		// There is a chance any animal usually farmed for food will explode violently when a player hits them. Tread Lightly.
+		"karmicjustice": false,
+		// !!!Temporarily Disabled in Code!!! Fighting the same zombies gets old. Zombies are converted to drowned, husks, or zombie villagers instantly, skeletons are converted to strays instantly, and creepers are always supercharged.
+		"shift": false,
+		// Your particularly soft skin makes you more vulnerable to damage. All incoming damage has an extra added to it.
+		"softskin": false,
+		// Cave spiders inflict poison for a brief moment on easy, and both wither and poison on normal and hard. Spiders also get the ability to poison you for a shorter amount of time.
+		"venom": false,
+		// All hostile mobs have increased health
+		"hardened": false,
+		// Pillagers, Skeletons, Strays, and Witches all have significantly sped up attack rates.
+		"anger": false,
+		// Creeper explosions and Ghast fireballs have a larger explosion radius. For all your mass terrain destruction needs.
+		"unstable": false,
+		// Entities on fire will stay on fire until water is applied (or they have died)
+		"flammable": false,
+		// Eating meat makes you feel sick to your stomach. Whether or not it's for moral reasons, health reasons, or anything in between.
+		"vegetarian": false,
+		// That's just... Wrong - Some neutral mobs may have more aggression towards you.
+		"wrong": false,
+		// Burn! BURN! BUUURRRRN! - Fire damage does significantly more damage.
+		"inferno": false,
+		// Bees will explode violently upon stinging.
+		"eruptiveswarm": false,
+		// Future technology embedded into your skin allows you to store up kinetic energy from attacks to release on your foes on your next attack, adding up to 50 hearts of damage maximum.
+		"kinetic": false,
+		// When you are about to die, you're instantly brought back to full health. Allows you to get back into the fight immediately, but does still increase your death counters.
+		"undying": false,
+		// Stronger understanding of proper anvil usage makes you less likely to damage it.
+		"blacksmithing": false,
+		// Tools may be replaced when they are destroyed.
+		"warranty": false,
+		// Npc villagers may celebrate on any given day
+		"celebration": false,
+		// Resting works wonders to heal you...
+		"rested": false,
+		// Your attacks cause a surge of uncontrollable magic to manifest.. for better or worse.
+		"wild": false,
+		// All living entities that harm you have a chance to infect you with Immortuos Calyx, even if they aren't infected themselves
+		"pandemic": false
+	},
+	"multiplierTweaks": {
+		// The amount of times a creature can breed before dying of old age with the aging multiplier enabled
+		"maximumage": 4,
+		// The health multiplier given to monsters when spawned while Hardened is enabled
+		"hardenedboost": 1.75,
+		// The multiplier given to damage taken by players when SoftSkin is enabled
+		"damagemultiplier": 1.5,
+		// Explosion size of creepers and ghast fireballs when Unstable is enabled
+		"unstableexplosionsize": 5,
+		// Explosion size of bees when Eruptive Swarm is enabled
+		"eruptiveswarmsize": 4,
+		// 1 in X chance that a valid neutral mob will be effected by wrong when it is enabled.
+		"wrongchance": 30,
+		// 1 in X chance that a valid passive mob will be effected by karmic justice when it is enabled.
+		"karmicjusticechance": 20,
+		// 1 in X chance that an attack will invoke a wild effect when Wild is enabled.
+		"wildchance": 6,
+		// 1 in X chance during the day to activate a celebration when it is enabled
+		"celebrationchance": 9
+	}
+}

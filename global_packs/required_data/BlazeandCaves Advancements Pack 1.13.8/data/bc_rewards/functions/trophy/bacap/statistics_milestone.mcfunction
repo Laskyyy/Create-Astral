@@ -1,0 +1,2 @@
+give @s minecraft:book{Enchantments:[{id:"minecraft:unbreaking",lvl:1}],Trophy:1,CustomModelData:131,HideFlags:1,display:{Name:"{\"italic\":\"false\",\"bold\":\"true\",\"color\":\"#654B17\",\"translate\":\"Statistician's Trophy\"}",Lore:["{\"color\":\"#654B17\",\"translate\":\"Lies, damned lies, and statistics\"}","{\"text\":\" \"}","{\"color\":\"gray\",\"translate\":\"Awarded for achieving\"}","{\"italic\":\"false\",\"color\":\"yellow\",\"translate\":\"Statistics Milestone\"}"]}} 1
+tellraw @s {"color":"gold","text":" +1 ","extra":[{"translate":"Statistician's Trophy"}]}

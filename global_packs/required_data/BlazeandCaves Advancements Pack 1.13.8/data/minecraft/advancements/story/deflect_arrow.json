@@ -1,0 +1,51 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:shield",
+			"nbt": "{BlockEntityTag:{Base:0,Patterns:[{Pattern:bt,Color:8},{Pattern:tt,Color:8},{Pattern:mr,Color:8},{Pattern:cbo,Color:8},{Pattern:sku,Color:0}]}}"
+		},
+		"title": {"translate":"Not Today, Thank You"},
+		"description": {"translate":"Deflect an arrow with a shield"},
+		"announce_to_chat": "true"
+	},
+	"parent": "blazeandcave:monsters/boned",
+	"rewards": {
+		"function": "bc_rewards:monsters/not_today_thank_you"
+	},
+	"criteria": {
+		"deflected_skeleton": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"type": {
+						"is_projectile": true
+					},
+					"blocked": true,
+					"source_entity": {
+						"type": "skeleton"
+					}
+				}
+			}
+		},
+		"deflected_stray": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"type": {
+						"is_projectile": true
+					},
+					"blocked": true,
+					"source_entity": {
+						"type": "stray"
+					}
+				}
+			}
+		}		
+	},
+	"requirements": [
+		[
+		"deflected_skeleton",
+		"deflected_stray"
+		]
+	]
+}

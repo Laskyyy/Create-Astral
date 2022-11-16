@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:shield",
+			"nbt": "{BlockEntityTag:{Base:11,Patterns:[{Pattern:ms,Color:5},{Pattern:cs,Color:11},{Pattern:ts,Color:15},{Pattern:bs,Color:15}]}}"
+        },
+        "title": {"translate":"Ricochet Swoop"},
+        "description": {"translate":"Deflect a Phantom's swoop with your shield"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:monsters/the_phantom_menace",
+	"rewards": {
+		"function": "bc_rewards:monsters/ricochet_swoop"
+    },
+    "criteria": {
+        "deflected_swoop": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "blocked": true,
+					"source_entity": {
+						"type": "phantom"
+					}
+                }
+            }
+        }
+    }
+}

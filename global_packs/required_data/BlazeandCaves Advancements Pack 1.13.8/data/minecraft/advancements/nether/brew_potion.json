@@ -1,0 +1,28 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:brewing_stand"
+		},
+		"title": {"translate":"Local Brewery"},
+		"description": {"translate":"Craft a Brewing Stand for brewing potions"},
+		"announce_to_chat": "true"
+	},
+	"parent": "blazeandcave:nether/basis_of_brewing",
+	"rewards": {
+		"function": "bc_rewards:nether/local_brewery"
+	},	
+	"criteria": {
+		"brewing_stand": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:brewing_stand"
+						]
+					}
+				]
+			}
+		}
+	}
+}

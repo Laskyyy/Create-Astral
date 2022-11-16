@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:barrel"
+        },
+        "title": {"translate":"Barrel Rider"},
+        "description": {"translate":"Craft and place a barrel. Totally not for riding in"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:building/its_a_sign",
+	"rewards": {
+		"function": "bc_rewards:building/barrel_rider"
+    },		
+    "criteria": {
+        "barrel": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:barrel"
+            }
+        }
+    }
+}

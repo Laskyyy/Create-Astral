@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "create:shadow_steel"
+  },
+  "value": 1,
+  "needed": 1,
+  "material": "tconstruct:shadow"
+}

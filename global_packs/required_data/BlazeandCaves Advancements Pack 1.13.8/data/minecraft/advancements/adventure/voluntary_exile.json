@@ -1,0 +1,26 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:white_banner",
+			"nbt": "{BlockEntityTag:{Patterns:[{Pattern:\"mr\",Color:9},{Pattern:\"bs\",Color:8},{Pattern:\"cs\",Color:7},{Pattern:\"bo\",Color:8},{Pattern:\"ms\",Color:15},{Pattern:\"hh\",Color:8},{Pattern:\"mc\",Color:8},{Pattern:\"bo\",Color:15}]}}"
+		},
+		"title": {"translate":"I've got a bad feeling about this"},
+		"description": {"translate":"Kill a raid captain. Maybe consider staying away from villages for the time being..."},
+		"announce_to_chat": "true"
+
+	},
+	"parent": "blazeandcave:adventure/riot_shield",
+	"rewards": {
+		"function": "bc_rewards:adventure/ive_got_a_bad_feeling_about_this"
+	},		
+	"criteria": {
+		"bad_omen": {
+			"trigger": "minecraft:effects_changed",
+			"conditions": {
+				"effects": {
+					"minecraft:bad_omen": {}
+				}
+			}
+		}
+	}
+}

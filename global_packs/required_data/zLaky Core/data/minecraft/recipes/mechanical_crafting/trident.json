@@ -1,0 +1,26 @@
+{
+	"type":"create:mechanical_crafting",
+	"pattern":[
+		"  C  ",
+		"C S C",
+		" SDS ",
+		"  S  ",
+		"  S  "
+	],
+	"key":{
+		"S":{
+			"item":"minecraft:prismarine_shard"
+		},
+		"D":{
+			"item":"createaddition:diamond_grit"
+		},
+		"C":{
+			"item":"minecraft:prismarine_crystals"
+		}
+	},
+	"result":{
+		"item":"minecraft:trident",
+		"count":1
+	},
+	"acceptMirrored":false
+}

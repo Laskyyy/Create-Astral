@@ -1,0 +1,47 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:large_fern"
+        },
+        "title": {"translate":"Prime Specimen"},
+        "description": {"color":"#75E1FF","translate":"Find Tall Grass or a Large Fern inside a village chest"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:adventure/do_you_want_to_trade",
+    "rewards": {
+        "function": "bc_rewards:adventure/prime_specimen"
+    },		
+    "criteria": {
+        "tall_grass": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:tall_grass"
+						]
+                    }
+                ]
+            }
+        },
+        "large_fern": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:large_fern"
+						]
+                    }
+                ]
+            }
+        }
+    },
+	"requirements": [
+		[
+		"tall_grass",
+		"large_fern"
+		]
+	]
+}

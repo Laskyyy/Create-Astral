@@ -1,0 +1,6 @@
+{
+  "description_prefix": " ? ",
+  "description_indent": "   ",
+  "display_only_when_shift_is_held": false,
+  "display_on_books_only": true
+}

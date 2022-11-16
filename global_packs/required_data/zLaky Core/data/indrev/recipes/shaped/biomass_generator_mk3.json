@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ICI",
+    "NMN",
+    "EBE"
+  ],
+  "key": {
+    "M": {
+      "item": "indrev:machine_block"
+    },
+    "C": {
+      "item": "indrev:circuit_mk3"
+    },
+    "I": {
+      "item": "indrev:biomass"
+    },
+    "E": {
+      "tag": "c:electrum_plates"
+    },
+    "N": {
+      "item": "indrev:nikolite_dust"
+    },
+    "B": {
+      "item": "indrev:battery"
+    }
+  },
+  "result": {
+    "item": "indrev:biomass_generator_mk3"
+  }
+}

@@ -1,0 +1,47 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "extended_equipment/crossbow/rifle_reloading_0"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-45, -90, 0],
+			"translation": [0, 0.25, -8.5],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-45, 90, 0],
+			"translation": [0, 0.25, -8.5],
+			"scale": [1.7, 1.7, 0.85]
+		},
+		"firstperson_righthand": {
+			"rotation": [-35, -90, 0],
+			"translation": [7.25, 4, -6.25],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-180, 85, 145],
+			"translation": [-2, 5, -6.25],
+			"scale": [1.36, 1.36, 0.68]
+		},
+		"ground": {
+			"translation": [-3.25, 5, 0],
+			"scale": [1, 1, 0.5]
+		},
+		"gui": {
+			"translation": [-7, 7, 0],
+			"scale": [2, 2, 1]
+		},
+		"head": {
+			"rotation": [-45, -90, 0],
+			"translation": [0, 7, -13.75],
+			"scale": [2, 2, 1]
+		},
+		"fixed": {
+			"rotation": [180, 0, -135],
+			"translation": [7.5, 0, 0],
+			"scale": [1.65, 1.65, 1]
+		}
+	}
+}

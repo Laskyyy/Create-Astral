@@ -1,0 +1,89 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:acacia_log"
+        },
+        "title": {"translate":"Yay! I got my wood!"},
+        "description": {"color":"#75E1FF","translate":"Collect all six types of wood"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:building/lost_its_bark",
+    "rewards": {
+        "function": "bc_rewards:building/yay_i_got_my_wood"
+    },		
+    "criteria": {
+        "oak_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:oak_log"
+						]
+                    }
+                ]
+            }
+        },
+        "spruce_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:spruce_log"
+						]
+                    }
+                ]
+            }
+        },
+        "birch_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:birch_log"
+						]
+                    }
+                ]
+            }
+        },
+        "jungle_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:jungle_log"
+						]
+                    }
+                ]
+            }
+        },
+        "acacia_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:acacia_log"
+						]
+                    }
+                ]
+            }
+        },
+        "dark_oak_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:dark_oak_log"
+						]
+                    }
+                ]
+            }
+        }
+	}		
+}

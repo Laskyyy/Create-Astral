@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:white_dye"
+        },
+        "title": {"translate":"Goat out of here!"},
+        "description": {"translate":"Slaughter a Goat"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:animal/have_a_shearful_day",
+    "rewards": {
+        "function": "bc_rewards:animal/goat_out_of_here"
+    },		
+    "criteria": {
+        "goat": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "goat"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:shield",
+			"nbt": "{BlockEntityTag:{Base:7,Patterns:[{Pattern:hh,Color:3},{Pattern:ts,Color:7}]}}"
+        },
+        "title": {"translate":"Riot Shield"},
+        "description": {"translate":"Deflect a Pillager's crossbow bolt"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:adventure/out_of_posts",
+	"rewards": {
+		"function": "bc_rewards:adventure/riot_shield"
+    },
+    "criteria": {
+        "deflected_crossbow": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "is_projectile": true
+                    },
+                    "blocked": true,
+					"source_entity": {
+						"type": "pillager"
+					}
+                }
+            }
+        }
+    }
+}

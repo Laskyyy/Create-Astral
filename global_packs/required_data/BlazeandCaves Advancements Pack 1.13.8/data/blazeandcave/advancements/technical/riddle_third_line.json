@@ -1,0 +1,43 @@
+{
+    "rewards": {
+        "function": "blazeandcave:riddle/third_line"
+    },		
+    "criteria": {
+        "dinnerbone": {
+			"trigger": "minecraft:started_riding",
+			"conditions": {
+				"player": {
+					"vehicle": {
+						"nbt": "{CustomName:\"{\\\"text\\\":\\\"Dinnerbone\\\"}\"}"
+					},
+					"player": {
+						"advancements": {
+							"blazeandcave:technical/riddle_second_line": "true"
+						}
+					}
+				}
+			}
+		},
+        "grumm": {
+			"trigger": "minecraft:started_riding",
+			"conditions": {
+				"player": {
+					"vehicle": {
+						"nbt": "{CustomName:\"{\\\"text\\\":\\\"Grumm\\\"}\"}"
+					},
+					"player": {
+						"advancements": {
+							"blazeandcave:technical/riddle_second_line": "true"
+						}
+					}
+				}
+			}
+		}
+    },
+	"requirements": [
+		[
+			"dinnerbone",
+			"grumm"
+		]
+	]
+}

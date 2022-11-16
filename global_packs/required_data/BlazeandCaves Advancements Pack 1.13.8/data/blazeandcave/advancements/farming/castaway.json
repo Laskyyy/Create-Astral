@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:dried_kelp"
+        },
+        "title": {"translate":"Castaway"},
+        "description": {"translate":"Eat nothing but dried kelp for three in-game days"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:farming/undersea_gardener",
+	"rewards": {
+		"function": "bc_rewards:farming/castaway"
+    },
+    "criteria": {
+        "castaway": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

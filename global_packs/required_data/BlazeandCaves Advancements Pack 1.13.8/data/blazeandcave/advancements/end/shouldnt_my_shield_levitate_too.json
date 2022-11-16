@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:shield",
+			"nbt": "{BlockEntityTag:{Base:0,Patterns:[{Pattern:ts,Color:2},{Pattern:hhb,Color:2},{Pattern:bo,Color:0},{Pattern:bo,Color:2},{Pattern:ms,Color:0},{Pattern:tts,Color:10},{Pattern:bts,Color:10}]}}"
+        },
+        "title": {"translate":"Shouldn't my shield levitate too?"},
+        "description": {"translate":"Block a Shulker's bullet with your shield"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:end/for_mother_clarence",
+	"rewards": {
+		"function": "bc_rewards:end/shouldnt_my_shield_levitate_too"
+    },
+    "criteria": {
+        "deflected_bullet": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "blocked": true,
+					"source_entity": {
+						"type": "shulker"
+					}
+                }
+            }
+        }
+    }
+}

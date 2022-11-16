@@ -1,0 +1,136 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:cracked_stone_bricks"
+        },
+        "title": {"translate":"Fake stronghold"},
+        "description": {"translate":"Craft or collect all forms of normal, cracked, mossy and chiseled stone bricks"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:building/rock_polish",
+    "rewards": {
+        "function": "bc_rewards:building/fake_stronghold"
+    },		
+    "criteria": {
+        "normal": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:stone_bricks"
+						]
+                    }
+                ]
+            }
+        },
+        "normal_slab": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:stone_brick_slab"
+						]
+                    }
+                ]
+            }
+        },
+        "normal_stairs": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:stone_brick_stairs"
+						]
+                    }
+                ]
+            }
+        },
+        "normal_wall": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:stone_brick_wall"
+						]
+                    }
+                ]
+            }
+        },
+        "mossy": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:mossy_stone_bricks"
+						]
+                    }
+                ]
+            }
+        },
+        "mossy_slab": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:mossy_stone_brick_slab"
+						]
+                    }
+                ]
+            }
+        },
+        "mossy_stairs": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:mossy_stone_brick_stairs"
+						]
+                    }
+                ]
+            }
+        },
+        "mossy_wall": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:mossy_stone_brick_wall"
+						]
+                    }
+                ]
+            }
+        },
+		"cracked": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:cracked_stone_bricks"
+						]
+                    }
+                ]
+            }
+        },
+        "chiseled": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:chiseled_stone_bricks"
+						]
+                    }
+                ]
+            }
+        }
+	}		
+}

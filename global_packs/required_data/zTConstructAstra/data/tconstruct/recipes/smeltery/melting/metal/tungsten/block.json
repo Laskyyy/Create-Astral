@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:storage_blocks/tungsten"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "c:storage_blocks/tungsten"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_tungsten",
+    "amount": 81000
+  },
+  "temperature": 700,
+  "time": 194
+}

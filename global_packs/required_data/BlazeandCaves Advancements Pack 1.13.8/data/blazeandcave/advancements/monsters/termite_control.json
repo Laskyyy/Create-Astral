@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:cracked_stone_bricks"
+        },
+        "title": {"translate":"Termite Control"},
+        "description": {"translate":"Kill a silverfish"},
+        "announce_to_chat": "true"
+    },
+    "parent": "minecraft:adventure/kill_a_mob",
+    "rewards": {
+        "function": "bc_rewards:monsters/termite_control"
+    },		
+    "criteria": {
+        "silverfish": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "silverfish"
+                }
+            }
+        }
+    }
+}

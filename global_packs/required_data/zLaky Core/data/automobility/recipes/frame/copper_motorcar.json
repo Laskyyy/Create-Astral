@@ -1,0 +1,18 @@
+{
+    "type": "automobility:auto_mechanic_table",
+    "category": "automobility:frames",
+    "sortnum": 1,
+    "ingredients": [
+        {"item": "minecraft:redstone"},
+        {"tag": "minecraft:stone_crafting_materials"},
+        {"item": "minecraft:leather"},
+        {"item": "minecraft:copper_ingot"},
+        {"tag": "minecraft:planks"},
+        {"item": "minecraft:copper_block"},
+        {"item": "minecraft:copper_ingot"}
+    ],
+    "result": {
+        "item": "automobility:automobile_frame",
+        "component": "automobility:copper_motorcar"
+    }
+}

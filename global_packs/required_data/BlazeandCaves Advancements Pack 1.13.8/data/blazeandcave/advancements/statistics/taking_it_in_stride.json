@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:lava_bucket"
+        },
+        "title": {"translate":"Taking It In Stride"},
+        "description": {"translate":"Ride 100m on a Strider"},
+        "announce_to_chat": "true",
+		"frame": "task"
+    },
+    "parent": "blazeandcave:statistics/root",
+	"rewards": {
+		"function": "bc_rewards:statistics/taking_it_in_stride"
+    },		
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"stats": [
+							{
+								"type": "minecraft:custom",
+								"stat": "minecraft:strider_one_cm",
+								"value": {
+									"min": 10000
+								}
+							}
+						]
+					}
+				}
+			}
+        }
+    }
+}

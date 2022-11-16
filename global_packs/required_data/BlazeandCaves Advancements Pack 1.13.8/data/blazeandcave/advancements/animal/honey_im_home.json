@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:honeycomb_block"
+        },
+        "title": {"translate":"Honey, I'm Home!"},
+        "description": {"color":"#75E1FF","translate":"Craft a stack of honeycomb blocks for building a home out of"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "minecraft:husbandry/silk_touch_nest",
+	"rewards": {
+		"function": "bc_rewards:animal/honey_im_home"
+    },		
+    "criteria": {
+        "honeycomb_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:honeycomb_block"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }
+    }
+}

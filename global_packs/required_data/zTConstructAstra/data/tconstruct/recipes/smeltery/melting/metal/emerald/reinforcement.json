@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "tconstruct:emerald_reinforcement"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_emerald",
+    "amount": 2025
+  },
+  "temperature": 800,
+  "time": 31,
+  "byproducts": [
+    {
+      "fluid": "tconstruct:molten_obsidian",
+      "amount": 20250
+    }
+  ]
+}

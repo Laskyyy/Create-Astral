@@ -1,0 +1,28 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:obsidian"
+		},
+		"title": {"translate":"Ice Bucket Challenge"},
+		"description": {"translate":"Form and mine a block of Obsidian"},
+		"announce_to_chat": "true"
+	},
+	"parent": "minecraft:story/lava_bucket",
+	"rewards": {
+		"function": "bc_rewards:mining/ice_bucket_challenge"
+	},			
+	"criteria": {
+		"obsidian": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [ 
+							"minecraft:obsidian"
+						]
+					}
+				]
+			}
+		}
+	}
+}

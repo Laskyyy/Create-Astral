@@ -1,0 +1,52 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:crimson_stem"
+        },
+        "title": {"translate":"Stem Research"},
+        "description": {"translate":"Attack a huge Nether Fungi until a stem pops out"},
+        "announce_to_chat": "true"
+    },
+    "parent": "minecraft:nether/root",
+	"rewards": {
+		"function": "bc_rewards:nether/stem_research"
+    },	
+    "criteria": {
+        "crimson_stem": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:crimson_stem",
+							"minecraft:stripped_crimson_stem",
+							"minecraft:crimson_hyphae",
+							"minecraft:stripped_crimson_hyphae"
+						]
+                    }
+                ]
+            }
+        },
+        "warped_stem": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:warped_stem",
+							"minecraft:stripped_warped_stem",
+							"minecraft:warped_hyphae",
+							"minecraft:stripped_warped_hyphae"
+						]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+		[
+			"crimson_stem",
+			"warped_stem"
+		]
+    ]
+}

@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:casting_table",
+  "fluid": {
+    "tag": "tconstruct:ichor",
+    "amount": 20250
+  },
+  "result": "tconstruct:ichor_slime_ball",
+  "cooling_time": 46
+}

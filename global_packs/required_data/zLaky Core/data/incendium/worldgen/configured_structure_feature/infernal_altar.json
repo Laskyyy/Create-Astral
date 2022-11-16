@@ -1,0 +1,11 @@
+{
+  "config": {
+    "start_pool": "incendium:purified_arena",
+    "size": 6
+  },
+  "biomes": "incendium:infernal_dunes",
+  "adapt_noise":true,
+  "spawn_overrides": {
+  },
+  "type": "minecraft:bastion_remnant"
+}

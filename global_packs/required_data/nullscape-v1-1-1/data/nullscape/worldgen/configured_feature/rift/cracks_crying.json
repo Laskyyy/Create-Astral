@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:netherrack_replace_blobs",
+  "config": {
+    "state": {
+      "Name": "minecraft:crying_obsidian"
+    },
+    "target": {
+      "Name": "minecraft:obsidian"
+    },
+    "radius": 0
+  }
+}

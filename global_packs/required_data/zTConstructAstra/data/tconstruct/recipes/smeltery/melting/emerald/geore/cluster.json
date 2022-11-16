@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:geore_clusters/emerald"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "c:geore_clusters/emerald"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_emerald",
+    "amount": 32400
+  },
+  "temperature": 800,
+  "time": 161
+}

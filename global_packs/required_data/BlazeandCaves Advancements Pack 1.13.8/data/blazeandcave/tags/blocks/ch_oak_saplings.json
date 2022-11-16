@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+	"minecraft:oak_sapling",
+	"minecraft:oak_log"
+  ]
+}

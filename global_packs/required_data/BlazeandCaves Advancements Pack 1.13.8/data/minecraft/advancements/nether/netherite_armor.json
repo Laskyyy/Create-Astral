@@ -1,0 +1,65 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:netherite_chestplate"
+		},
+		"title": {"translate":"A Knight to Nether Forget"},
+		"description": {"color":"#75E1FF","translate":"Use a Smithing Table to upgrade your diamond armor to netherite armor"},
+		"announce_to_chat": "true",
+		"frame": "goal"
+	},
+	"parent": "blazeandcave:nether/moar_upgraded_tools",
+	"rewards": {
+		"function": "bc_rewards:nether/a_knight_to_nether_forget"
+	},			
+	"criteria": {
+		"netherite_helmet": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [ 
+							"minecraft:netherite_helmet"
+						]
+					}
+				]
+			}
+		},
+		"netherite_chestplate": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [ 
+							"minecraft:netherite_chestplate"
+						]
+					}
+				]
+			}
+		},
+		"netherite_leggings": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [ 
+							"minecraft:netherite_leggings"
+						]
+					}
+				]
+			}
+		},
+		"netherite_boots": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [ 
+							"minecraft:netherite_boots"
+						]
+					}
+				]
+			}
+		}
+	}
+}

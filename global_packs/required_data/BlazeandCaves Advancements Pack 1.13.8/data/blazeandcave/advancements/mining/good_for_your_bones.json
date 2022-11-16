@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:calcite"
+        },
+        "title": {"translate":"Good For Your Bones"},
+        "description": {"translate":"Mine some Calcite encasing an Amethyst Geode"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:mining/gi_geode",
+    "rewards": {
+		"function": "bc_rewards:mining/good_for_your_bones"
+    },		
+    "criteria": {
+        "calcite": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:calcite"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

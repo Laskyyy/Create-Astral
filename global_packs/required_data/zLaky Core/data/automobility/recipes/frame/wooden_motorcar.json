@@ -1,0 +1,19 @@
+{
+    "type": "automobility:auto_mechanic_table",
+    "category": "automobility:frames",
+    "sortnum": 0,
+    "ingredients": [
+        {"item": "minecraft:redstone"},
+        {"tag": "minecraft:stone_crafting_materials"},
+        {"item": "minecraft:leather"},
+        {"tag": "minecraft:planks"},
+        {"tag": "minecraft:planks"},
+        {"item": "minecraft:smooth_stone"},
+        {"item": "minecraft:stick"},
+        {"item": "minecraft:iron_ingot"}
+    ],
+    "result": {
+        "item": "automobility:automobile_frame",
+        "component": "automobility:wooden_motorcar"
+    }
+}

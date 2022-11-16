@@ -1,0 +1,12 @@
+{
+  "triggerType": "F3H",
+  "showSeparator": true,
+  "maxLinesShown": 20,
+  "showDelimiters": true,
+  "compress": true,
+  "ticksBeforeScroll": 20,
+  "ctrlSuppressesRest": true,
+  "splitLongLines": true,
+  "tooltipEngine": "FRIENDLY",
+  "copyingEngine": "JSON"
+}

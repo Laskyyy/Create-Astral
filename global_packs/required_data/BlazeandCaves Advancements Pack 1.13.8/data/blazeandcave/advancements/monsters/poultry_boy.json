@@ -1,0 +1,74 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:player_head",
+			"nbt": "{SkullOwner:{Id:[I;-258220559,-434548866,-1620885784,1820151027],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTE2YjhlOTgzODljNTQxYmIzNjQ1Mzg1MGJjYmQxZjdiYzVhNTdkYTYyZGNjNTA1MDYwNDA5NzM3ZWM1YjcyYSJ9fX0=\"}]}}}"
+        },
+        "title": {"translate":"Poultry Boy"},
+        "description": {"color":"#75E1FF","translate":"Slay the elusive Chicken Jockey"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:monsters/baby_baby_baby_noo",
+    "rewards": {
+        "function": "bc_rewards:monsters/poultry_boy"
+    },		
+    "criteria": {
+        "chicken_zombie": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "chicken",
+					"nbt": "{Passengers:[{id:\"minecraft:zombie\"}]}"
+                }
+            }
+        },
+        "chicken_husk": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "chicken",
+					"nbt": "{Passengers:[{id:\"minecraft:husk\"}]}"
+                }
+            }
+        },
+        "chicken_zombie_villager": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "chicken",
+					"nbt": "{Passengers:[{id:\"minecraft:zombie_villager\"}]}"
+                }
+            }
+        },
+        "chicken_drowned": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "chicken",
+					"nbt": "{Passengers:[{id:\"minecraft:drowned\"}]}"
+                }
+            }
+        },
+        "zombie": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "tag": "blazeandcave:overworld_zombies",
+					"vehicle": {
+						"type": "chicken"
+					}
+                }
+            }
+        }
+    },
+	"requirements": [
+		[
+			"chicken_zombie",
+			"chicken_husk",
+			"chicken_zombie_villager",
+			"chicken_drowned",
+			"zombie"
+		]
+	]
+}

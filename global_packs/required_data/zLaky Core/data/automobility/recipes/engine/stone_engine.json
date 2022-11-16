@@ -1,0 +1,16 @@
+{
+    "type": "automobility:auto_mechanic_table",
+    "category": "automobility:engines",
+    "sortnum": 0,
+    "ingredients": [
+        {"tag": "minecraft:logs"},
+        {"item": "minecraft:coal_block"},
+        {"item": "minecraft:blast_furnace"},
+        {"tag": "minecraft:stone_crafting_materials"},
+        {"tag": "minecraft:logs"}
+    ],
+    "result": {
+        "item": "automobility:automobile_engine",
+        "component": "automobility:stone"
+    }
+}

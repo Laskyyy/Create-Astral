@@ -1,0 +1,6 @@
+{
+  "Villager_Comment": "Villagers that already sell AP items will continue to do so regardless of this setting.",
+  "enableVillagerTrades": true,
+  "Vertical_Comment": "Adds vertical slabs for the OG builders out there",
+  "enableVerticalSlabs": false
+}

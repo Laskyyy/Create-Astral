@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:beetroot_soup"
+        },
+        "title": {"translate":"Souperman"},
+        "description": {"translate":"Beetroot soup gives you souperpowers!"},
+        "announce_to_chat": "true"
+    },
+    "parent": "minecraft:husbandry/plant_seed",
+	"rewards": {
+		"function": "bc_rewards:farming/souperman"
+    },		
+    "criteria": {
+        "beetroot_soup": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+					"items": [
+						"minecraft:beetroot_soup"
+					]
+                }
+            }
+        }
+    }
+}

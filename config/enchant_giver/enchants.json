@@ -1,0 +1,164 @@
+{
+  "mcdw:sword_sponge_striker": {
+    "mcdw:enigma_resonator": 1
+  },
+  "mcdw:sickle_soul_scythe": {
+    "mcdw:soul_devourer": 1
+  },
+  "mcdw:gauntlet_soul_fists": {
+    "mcdw:enigma_resonator": 1
+  },
+  "mcdw:spear_cackling_broom": {
+    "mcdw:smiting": 1
+  },
+  "mcdw:hammer_bone_cudgel": {
+    "mcdw:illagers_bane": 1
+  },
+  "mcdw:spear_whispering_spear": {
+    "mcdw:echo": 1
+  },
+  "mcdw:whip_vine_whip": {
+    "mcdw:jungle_poison": 1
+  },
+  "mcdw:hammer_stormlander": {
+    "mcdw:thundering": 1
+  },
+  "mcdw:sword_heartstealer": {
+    "mcdw:leeching": 1
+  },
+  "mcdw:sword_broadsword": {
+    "mcdw:swirling": 1
+  },
+  "mcdw:dagger_backstabber": {
+    "mcdw:ambush": 1
+  },
+  "mcdw:sickle_jailors_scythe": {
+    "mcdw:chains": 1
+  },
+  "mcdw:axe_encrusted_anchor": {
+    "mcdw:jungle_poison": 1,
+    "mcdw:gravity": 1
+  },
+  "mcdw:sword_great_axeblade": {
+    "mcdw:dynamo": 1
+  },
+  "mcdw:axe_cursed": {
+    "mcdw:exploding": 1
+  },
+  "mcdw:staff_growing_staff": {
+    "mcdw:committed": 1
+  },
+  "mcdw:sword_sinister": {
+    "mcdw:critical_hit": 1
+  },
+  "mcdw:dagger_swift_striker": {
+    "mcdw:echo": 1,
+    "mcdw:ambush": 1
+  },
+  "mcdw:spear_fortune": {
+    "minecraft:looting": 1
+  },
+  "mcdw:sickle_last_laugh_gold": {
+    "mcdw:prospector": 1
+  },
+  "mcdw:dagger_the_end": {
+    "mcdw:void_strike": 1
+  },
+  "mcdw:axe_firebrand": {
+    "minecraft:fire_aspect": 1
+  },
+  "mcdw:axe_highland": {
+    "mcdw:stunning": 1
+  },
+  "mcdw:spear_venom_glaive": {
+    "mcdw:poison_cloud": 1
+  },
+  "mcdw:dagger_the_beginning": {
+    "mcdw:leeching": 1
+  },
+  "mcdw:spear_grave_bane": {
+    "mcdw:smiting": 1
+  },
+  "mcdw:sword_nameless_blade": {
+    "mcdw:weakening": 1
+  },
+  "mcdw:dagger_moon": {
+    "mcdw:enigma_resonator": 1
+  },
+  "mcdw:sword_dancers_sword": {
+    "mcdw:rampaging": 1
+  },
+  "mcdw:dagger_shear_dagger": {
+    "mcdw:swirling": 1
+  },
+  "mcdw:hammer_flail": {
+    "mcdw:chains": 1
+  },
+  "mcdw:sword_masters_katana": {
+    "mcdw:critical_hit": 1
+  },
+  "mcdw:gauntlet_maulers": {
+    "mcdw:rampaging": 1
+  },
+  "mcdw:staff_battlestaff_of_terror": {
+    "mcdw:exploding": 1
+  },
+  "mcdw:dagger_eternal_knife": {
+    "mcdw:soul_siphon": 1
+  },
+  "mcdw:dagger_fangs_of_frost": {
+    "mcdw:freezing": 1
+  },
+  "mcdw:sickle_skull_scythe": {
+    "mcdw:freezing": 1
+  },
+  "mcdw:hammer_suns_grace": {
+    "mcdw:radiance": 1
+  },
+  "mcdw:sword_hawkbrand": {
+    "mcdw:critical_hit": 1
+  },
+  "mcdw:hammer_gravity": {
+    "mcdw:gravity": 1
+  },
+  "mcdw:sickle_nightmares_bite": {
+    "mcdw:poison_cloud": 1
+  },
+  "mcdw:sword_the_starless_night": {
+    "mcdw:shared_pain": 1
+  },
+  "mcdw:sword_freezing_foil": {
+    "mcdw:freezing": 1
+  },
+  "minecraft:air": {
+    "mcdw:wild_rage": 1
+  },
+  "mcdw:sword_truthseeker": {
+    "mcdw:committed": 1
+  },
+  "mcdw:sword_dark_katana": {
+    "mcdw:smiting": 1
+  },
+  "mcdw:dagger_chill_gale_knife": {
+    "mcdw:freezing": 1
+  },
+  "mcdw:sickle_last_laugh_silver": {
+    "mcdw:prospector": 1
+  },
+  "mcdw:dagger_void_touched_blade": {
+    "mcdw:void_strike": 1
+  },
+  "mcdw:sickle_frost_scythe": {
+    "mcdw:freezing": 1
+  },
+  "mcdw:sword_frost_slayer": {
+    "mcdw:freezing": 1
+  },
+  "mcdw:dagger_resolute_tempest_knife": {
+    "mcdw:rushdown": 1,
+    "mcdw:committed": 1
+  },
+  "mcdw:axe_whirlwind": {
+    "mcdw:shockwave": 1
+  }
+}

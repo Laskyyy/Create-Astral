@@ -1,0 +1,124 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:chiseled_quartz_block"
+        },
+        "title": {"translate":"Greek Art Decor"},
+        "description": {"translate":"Craft all forms of quartz blocks"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:building/fake_fortress",
+    "rewards": {
+        "function": "bc_rewards:building/greek_art_decor"
+    },		
+    "criteria": {
+        "quartz_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:quartz_block"
+						]
+                    }
+                ]
+            }
+        },
+        "quartz_chiseled": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:chiseled_quartz_block"
+						]
+                    }
+                ]
+            }
+        },
+		"quartz_pillar": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:quartz_pillar"
+						]
+                    }
+                ]
+            }
+        },
+        "quartz_stairs": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:quartz_stairs"
+						]
+                    }
+                ]
+            }
+        },
+		"quartz_slab": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:quartz_slab"
+						]
+                    }
+                ]
+            }
+        },
+		"quartz_bricks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:quartz_bricks"
+						]
+                    }
+                ]
+            }
+        },
+		"smooth_quartz": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:smooth_quartz"
+						]
+                    }
+                ]
+            }
+        },
+        "smooth_quartz_stairs": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:smooth_quartz_stairs"
+						]
+                    }
+                ]
+            }
+        },
+		"smooth_quartz_slab": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:smooth_quartz_slab"
+						]
+                    }
+                ]
+            }
+        }
+	}		
+}

@@ -1,0 +1,17 @@
+{
+	"parent": "minecraft:nether/all_effects",	
+	"criteria": {
+        "root": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:challenges/root": "true"
+						}
+					}
+				}
+			}
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:scaffolding"
+        },
+        "title": {"translate":"Construction Worker"},
+        "description": {"translate":"Craft and use some scaffolding"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:biomes/bamboom",
+	"rewards": {
+		"function": "bc_rewards:biomes/construction_worker"
+    },		
+    "criteria": {
+        "scaffolding": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "item": {
+					"items": [
+						"minecraft:scaffolding"
+					]
+                }
+            }
+        }	
+    }
+}

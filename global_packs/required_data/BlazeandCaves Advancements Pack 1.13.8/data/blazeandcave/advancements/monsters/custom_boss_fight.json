@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_helmet"
+        },
+        "title": {"translate":"Custom Boss Fight!"},
+        "description": {"translate":"Give a zombie full diamond armor and a diamond sword... then kill it"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:monsters/freezing",
+    "rewards": {
+        "function": "bc_rewards:monsters/custom_boss_fight"
+    },		
+    "criteria": {
+        "zombie": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "zombie",
+					"nbt": "{HandItems:[{id:\"minecraft:diamond_sword\",Count:1b}],ArmorItems:[{id:\"minecraft:diamond_boots\",Count:1b},{id:\"minecraft:diamond_leggings\",Count:1b},{id:\"minecraft:diamond_chestplate\",Count:1b},{id:\"minecraft:diamond_helmet\",Count:1b}]}"
+                }
+            }
+        }
+    }
+}

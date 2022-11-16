@@ -1,0 +1,44 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:golden_carrot"
+        },
+        "title": {"translate":"Nocturnal"},
+        "description": {"translate":"Brew and drink a night vision potion"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:potion/hyper_healing",
+	"rewards": {
+		"function": "bc_rewards:potion/nocturnal"
+    },	
+    "criteria": {
+        "night_vision": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+					"items": [
+						"minecraft:potion"
+					],
+					"nbt": "{Potion:\"minecraft:night_vision\"}"
+                }
+            }
+        },
+        "long_night_vision": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+					"items": [
+						"minecraft:potion"
+					],
+					"nbt": "{Potion:\"minecraft:long_night_vision\"}"
+                }
+            }
+        }
+    },
+	"requirements": [
+		[
+			"night_vision",
+			"long_night_vision"
+		]
+	]
+}

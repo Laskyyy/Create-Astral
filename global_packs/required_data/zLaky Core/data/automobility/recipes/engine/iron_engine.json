@@ -1,0 +1,17 @@
+{
+    "type": "automobility:auto_mechanic_table",
+    "category": "automobility:engines",
+    "sortnum": 2,
+    "ingredients": [
+        {"item": "create:precision_mechanism"},
+        {"item": "create:blaze_burner"},
+        {"item": "indrev:nikolite_ingot"},
+        {"item": "minecraft:iron_block"},
+        {"item": "createastral:navigation_mechanism"},
+        {"tag": "createdeco:cast_iron_ingot"}
+    ],
+    "result": {
+        "item": "automobility:automobile_engine",
+        "component": "automobility:iron"
+    }
+}

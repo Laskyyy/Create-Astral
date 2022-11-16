@@ -1,0 +1,10 @@
+{
+	// Block snailboxes from being opened by non-owners
+	"lock_boxes": true,
+	// Protect snailboxes from being destroyed by non-owners
+	"protect_box_destroy": true,
+	// If the op level defined in bypass_lock_op_level can bypass locked boxes
+	"op_bypass_lock": true,
+	// Op level to bypass snailbox locks
+	"bypass_lock_op_level": 3
+}

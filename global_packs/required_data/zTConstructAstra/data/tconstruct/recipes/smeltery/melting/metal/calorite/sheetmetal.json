@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "ad_astra:calorite_plating"
+      ]
+    }
+  ],
+  "ingredient": {
+    "item": "ad_astra:calorite_plating"
+  },
+  "result": {
+    "fluid": "kubejs:molten_calorite",
+    "amount": 1000
+  },
+  "temperature": 800,
+  "time": 65
+}

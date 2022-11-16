@@ -1,0 +1,34 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:compass",
+			"nbt": "{LodestoneDimension:\"minecraft:the_nether\"}"
+		},
+		"title": {"translate":"Country Lode, Take Me Home"},
+		"description": {"translate":"Use a Compass on a Lodestone"},
+		"announce_to_chat": "true"
+	},
+	"parent": "blazeandcave:nether/get_a_lode_of_this",
+	"rewards": {
+		"function": "bc_rewards:nether/country_lode_take_me_home"
+	},	
+	"criteria": {
+		"use_lodestone": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [ 
+							"minecraft:lodestone"
+						]
+					}
+				},
+				"item": {
+					"items": [ 
+						"minecraft:compass"
+					]
+				}
+			}
+		}
+	}
+}

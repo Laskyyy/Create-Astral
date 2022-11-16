@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:cake"
+        },
+        "title": {"translate":"Happy Birthday!"},
+        "description": {"translate":"Place a candle on a cake"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:building/setting_up_the_mood",
+    "rewards": {
+        "function": "bc_rewards:building/happy_birthday"
+    },		
+    "criteria": {
+		"candle_cake": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"tag": "minecraft:candle_cakes"
+					}
+				},
+				"item": {
+					"tag": "minecraft:candles"
+				}
+			}
+		}
+	}	
+}

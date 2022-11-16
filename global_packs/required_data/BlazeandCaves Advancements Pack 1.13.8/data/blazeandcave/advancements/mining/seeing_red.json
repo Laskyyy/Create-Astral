@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:redstone"
+        },
+        "title": {"translate":"Seeing Red"},
+        "description": {"translate":"Mine some redstone from the deepest caves"},
+        "announce_to_chat": "true"
+    },
+    "parent": "minecraft:story/iron_tools",
+	"rewards": {
+		"function": "bc_rewards:mining/seeing_red"
+    },
+    "criteria": {
+        "redstone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:redstone"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

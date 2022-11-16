@@ -1,0 +1,11 @@
+{
+    "variants": {
+        "": [
+		{ "model": "block/warped_wart_block" },
+		{ "model": "block/warped_wart_block2" },
+		{ "model": "block/warped_wart_block3" },
+		{ "model": "block/warped_wart_block4"},
+		{ "model": "block/warped_wart_block5"}
+]
+    }
+}

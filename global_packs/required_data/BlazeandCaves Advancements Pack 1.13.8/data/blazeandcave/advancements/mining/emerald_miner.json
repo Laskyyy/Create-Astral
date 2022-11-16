@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:emerald_ore"
+        },
+        "title": {"translate":"Emerald Miner"},
+        "description": {"translate":"Mine a stack of raw emerald ore"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:mining/diamond_miner",
+    "rewards": {
+		"function": "bc_rewards:mining/emerald_miner"
+    },		
+    "criteria": {
+        "silk_touch": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "minecraft:emerald_ores",
+						"count": 64
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,217 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:oak_sapling"
+        },
+        "title": {"translate":"One with the forest"},
+        "description": {"color":"#75E1FF","translate":"Discover every forest biome"},
+        "announce_to_chat": "true",
+        "frame": "goal"
+    },
+    "parent": "blazeandcave:biomes/kilometre_walk",	
+    "rewards": {
+		"function": "bc_rewards:biomes/one_with_the_forest"
+    },	
+    "criteria": {
+        "forest": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:forest",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },
+        "flower_forest": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:flower_forest",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },
+        "plains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:plains",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },
+        "sunflower_plains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:sunflower_plains",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },
+        "dark_forest": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:dark_forest",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },
+        "birch_forest": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:birch_forest",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },
+        "old_growth_birch_forest": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:old_growth_birch_forest",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },
+        "old_growth_pine_taiga": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:old_growth_pine_taiga",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },
+        "old_growth_spruce_taiga": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:old_growth_spruce_taiga",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },
+        "taiga": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:taiga",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        }
+    }
+}

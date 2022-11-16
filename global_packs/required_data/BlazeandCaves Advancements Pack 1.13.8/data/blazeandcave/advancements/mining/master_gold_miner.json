@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:gold_block"
+        },
+        "title": {"translate":"Master Gold Miner"},
+        "description": {"translate":"Mine enough gold to make a stack of gold blocks"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:mining/gold_miner",
+    "rewards": {
+		"function": "bc_rewards:mining/master_gold_miner"
+    },		
+    "criteria": {
+        "gold": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:gold_block"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:sheep_spawn_egg"
+        },
+        "title": {"translate":"Mary Had a Little Lamb..."},
+        "description": {"translate":"Breed two sheep to get a lamb"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:animal/feeling_sheepish",
+	"rewards": {
+		"function": "bc_rewards:animal/mary_had_a_little_lamb"
+    },		
+    "criteria": {
+        "sheep": {
+            "trigger": "minecraft:bred_animals",
+            "conditions": {
+				"parent": {
+					"type": "minecraft:sheep"
+				},
+				"partner": {
+					"type": "minecraft:sheep"
+				}
+            }
+        }
+    }
+}

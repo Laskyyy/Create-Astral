@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IVI",
+    "IBI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "tag": "c:steel_plates"
+    },
+    "B": {
+      "tag": "c:lead_plates"
+    },
+    "V": {
+      "item": "indrev:fan"
+    }
+  },
+  "result": {
+    "item": "indrev:intake"
+  }
+}

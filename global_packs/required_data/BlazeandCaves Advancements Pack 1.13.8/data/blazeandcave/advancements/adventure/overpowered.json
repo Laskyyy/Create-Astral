@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:enchanted_golden_apple"
+        },
+        "title": {"translate":"Overpowered"},
+        "description": {"translate":"Obtain a Notch Apple"},
+        "announce_to_chat": "true",
+        "frame": "challenge"
+    },
+    "parent": "blazeandcave:adventure/disc_jockey",
+    "rewards": {
+        "function": "bc_rewards:adventure/overpowered"
+    },		
+    "criteria": {
+        "golden_apple": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:enchanted_golden_apple"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

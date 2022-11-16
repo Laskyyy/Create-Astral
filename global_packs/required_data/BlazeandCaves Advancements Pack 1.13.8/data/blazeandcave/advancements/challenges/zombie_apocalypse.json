@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:zombie_head"
+        },
+        "title": {"translate":"Zombie Apocalypse"},
+        "description": {"color":"#FF2A2A","translate":"Obtain a stack of Zombie Heads"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:challenges/nuclear_fusion",
+	"rewards": {
+		"function": "bc_rewards:challenges/zombie_apocalypse"
+    },		
+    "criteria": {
+        "zombie_head": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:zombie_head"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }
+    }
+}

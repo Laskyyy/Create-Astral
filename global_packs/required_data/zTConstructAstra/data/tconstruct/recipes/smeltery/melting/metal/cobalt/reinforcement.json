@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "tconstruct:cobalt_reinforcement"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_cobalt",
+    "amount": 3000
+  },
+  "temperature": 800,
+  "time": 37,
+  "byproducts": [
+    {
+      "fluid": "tconstruct:molten_obsidian",
+      "amount": 20250
+    }
+  ]
+}

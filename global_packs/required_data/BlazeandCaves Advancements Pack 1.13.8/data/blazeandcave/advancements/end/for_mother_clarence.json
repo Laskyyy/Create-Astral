@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:shulker_box"
+        },
+        "title": {"translate":"For Mother, Clarence"},
+        "description": {"translate":"Kill a shulker"},
+        "announce_to_chat": "true"
+    },
+    "parent": "minecraft:end/find_end_city",
+    "rewards": {
+        "function": "bc_rewards:end/for_mother_clarence"
+    },		
+    "criteria": {
+        "shulker": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "shulker"
+                }
+            }
+        }
+    }
+}

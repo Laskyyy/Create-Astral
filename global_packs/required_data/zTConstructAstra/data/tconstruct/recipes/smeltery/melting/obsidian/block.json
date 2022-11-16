@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "c:obsidian"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_obsidian",
+    "amount": 81000
+  },
+  "temperature": 800,
+  "time": 133
+}

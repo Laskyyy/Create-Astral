@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:plates/nickel"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "c:plates/nickel"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_nickel",
+    "amount": 9000
+  },
+  "temperature": 950,
+  "time": 65
+}

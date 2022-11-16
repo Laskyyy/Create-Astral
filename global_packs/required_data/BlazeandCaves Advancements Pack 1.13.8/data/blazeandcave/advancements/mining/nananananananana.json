@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:bat_spawn_egg"
+        },
+        "title": {"translate":"Nananananananana..."},
+        "description": {"translate":"Accidentally hit a bat underground"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:mining/my_work_here_is_done",
+    "rewards": {
+        "function": "bc_rewards:mining/nananananananana"
+    },		
+    "criteria": {
+        "bat": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "bat"
+                }
+            }
+        }
+    }
+}

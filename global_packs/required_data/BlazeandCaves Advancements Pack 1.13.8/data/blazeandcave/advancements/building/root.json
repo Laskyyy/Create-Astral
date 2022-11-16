@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:oak_planks"
+        },
+        "title": {"translate":"Building"},
+        "description": {"translate":"Your only limit is your imagination... and resources"},
+        "background": "minecraft:textures/block/oak_planks.png",
+        "show_toast": false,
+        "announce_to_chat": "false"
+    },
+	"rewards": {
+		"function": "bc_rewards:building/root"
+    },		
+    "criteria": {
+        "crafting_table": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:crafting_table"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

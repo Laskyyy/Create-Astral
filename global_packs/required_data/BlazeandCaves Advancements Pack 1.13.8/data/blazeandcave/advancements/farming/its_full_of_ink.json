@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:ink_sac"
+        },
+        "title": {"translate":"It's full of ink"},
+        "description": {"translate":"Obtain some ink from hunting a squid"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:farming/sugar_sugar",
+	"rewards": {
+		"function": "bc_rewards:farming/its_full_of_ink"
+    },		
+    "criteria": {
+        "ink_sac": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:ink_sac"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

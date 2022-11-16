@@ -1,0 +1,558 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:structure_block"
+        },
+        "title": {"translate":"Raidin' Master"},
+        "description": {"translate":"Discover every structure type"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:adventure/secret_of_the_igloo",
+    "rewards": {
+        "function": "bc_rewards:adventure/raidin_master"
+    },		
+    "criteria": {
+        "dungeon": {
+			"trigger": "minecraft:player_generates_container_loot",
+			"conditions": {
+				"loot_table": "minecraft:chests/simple_dungeon"
+			}
+		},
+        "igloo": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "feature": "igloo",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },
+        "desert_pyramid": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "feature": "desert_pyramid",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },	
+        "jungle_pyramid": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "feature": "jungle_pyramid",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },	
+        "swamp_hut": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "feature": "swamp_hut",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },	
+        "village_desert": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "feature": "village_desert",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },	
+        "village_plains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "feature": "village_plains",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },	
+        "village_savanna": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "feature": "village_savanna",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },	
+        "village_snowy": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "feature": "village_snowy",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },	
+        "village_taiga": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "feature": "village_taiga",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },	
+        "mineshaft": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "feature": "mineshaft",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },
+        "mineshaft_mesa": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "feature": "mineshaft_mesa",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },	
+        "stronghold": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "feature": "stronghold",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },	
+        "fortress": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "feature": "fortress",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },	
+        "end_city": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "feature": "end_city",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },	
+        "monument": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "feature": "monument",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },	
+        "mansion": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "feature": "mansion",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },	
+        "ocean_ruin_cold": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "feature": "ocean_ruin_cold",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },
+        "ocean_ruin_warm": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "feature": "ocean_ruin_warm",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },
+        "shipwreck": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": [
+					{
+						"condition": "minecraft:alternative",
+						"terms": [
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"location": {
+										"feature": "minecraft:shipwreck"
+									}
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"location": {
+										"feature": "minecraft:shipwreck_beached"
+									}
+								}
+							}
+						]
+					},
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },
+        "buried_treasure": {
+			"trigger": "minecraft:player_generates_container_loot",
+			"conditions": {
+				"loot_table": "minecraft:chests/buried_treasure"
+			}
+		},	
+        "pillager_outpost": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "feature": "pillager_outpost",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },	
+        "ruined_portal": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": [
+					{
+						"condition": "minecraft:alternative",
+						"terms": [
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"location": {
+										"feature": "minecraft:ruined_portal"
+									}
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"location": {
+										"feature": "minecraft:ruined_portal_desert"
+									}
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"location": {
+										"feature": "minecraft:ruined_portal_jungle"
+									}
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"location": {
+										"feature": "minecraft:ruined_portal_mountain"
+									}
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"location": {
+										"feature": "minecraft:ruined_portal_nether"
+									}
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"location": {
+										"feature": "minecraft:ruined_portal_ocean"
+									}
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"location": {
+										"feature": "minecraft:ruined_portal_swamp"
+									}
+								}
+							}
+						]
+					},
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },
+        "bastion_remnant": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "feature": "bastion_remnant",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        }
+    }
+}

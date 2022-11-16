@@ -1,0 +1,38 @@
+[doodadItems]
+enableSlingshot = false
+enableDuctTape = true
+enablePaintbrush = true
+enableSporeSword = false
+enableDoodadBundle = false
+enableGlareStaff = true
+enableMagicPlum = true
+enablePebble = false
+enableRubberBand = true
+enableScissors = false
+[doodadTrinkets]
+enableBeaverTeeth = false
+enableBendyStraw = true
+enableBlossomBelt = true
+enableCactusRing = true
+enableEnderGoggles = true
+enableGlarePlushie = false
+enableLoggersGlove = true
+enableMoonStoneRing = true
+enableSlimeyShoes = true
+enableCelestialStoneRing = true
+enableMidnightsEye = true
+enableShulkerAglet = true
+enableSoggyGlove = true
+enableSpeedySneakers = true
+enableSunStoneRing = true
+[doodadBlocks]
+enableAsphalt = false
+enableBrickRoad = false
+enableStoneBrickRoad = false
+enableYellowBrickRoad = false
+enablePlatform = true
+enablePortableNether = true
+[doodadWorldGen]
+chestDoodadSpawnRate = 0.0
+enableDoodadSpawnsInVillages = false
+entityDoodadDropRate = 0.0

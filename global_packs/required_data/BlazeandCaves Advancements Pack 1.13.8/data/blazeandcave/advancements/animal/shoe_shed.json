@@ -1,0 +1,226 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:leather_boots",
+			"nbt": "{display:{color:8439583}}"
+        },
+        "title": {"translate":"Shoe Shed"},
+        "description": {"color":"#75E1FF","translate":"Dye 16 pairs of leather boots each with one of the individual colors"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:animal/fashion_statement",
+	"rewards": {
+		"function": "bc_rewards:animal/shoe_shed"
+    },		
+    "criteria": {
+        "white": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:leather_boots"
+						],
+						"nbt": "{display:{color:16383998}}"
+                    }
+                ]
+            }
+        },
+        "orange": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:leather_boots"
+						],
+						"nbt": "{display:{color:16351261}}"
+                    }
+                ]
+            }
+        },
+        "magenta": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:leather_boots"
+						],
+						"nbt": "{display:{color:13061821}}"
+                    }
+                ]
+            }
+        },
+        "light_blue": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:leather_boots"
+						],
+						"nbt": "{display:{color:3847130}}"
+                    }
+                ]
+            }
+        },
+        "yellow": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:leather_boots"
+						],
+						"nbt": "{display:{color:16701501}}"
+                    }
+                ]
+            }
+        },
+        "lime": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:leather_boots"
+						],
+						"nbt": "{display:{color:8439583}}"
+                    }
+                ]
+            }
+        },
+        "pink": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:leather_boots"
+						],
+						"nbt": "{display:{color:15961002}}"
+                    }
+                ]
+            }
+        },
+        "gray": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:leather_boots"
+						],
+						"nbt": "{display:{color:4673362}}"
+                    }
+                ]
+            }
+        },
+        "light_gray": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:leather_boots"
+						],
+						"nbt": "{display:{color:10329495}}"
+                    }
+                ]
+            }
+        },
+        "cyan": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:leather_boots"
+						],
+						"nbt": "{display:{color:1481884}}"
+                    }
+                ]
+            }
+        },
+        "purple": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:leather_boots"
+						],
+						"nbt": "{display:{color:8991416}}"
+                    }
+                ]
+            }
+        },
+        "blue": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:leather_boots"
+						],
+						"nbt": "{display:{color:3949738}}"
+                    }
+                ]
+            }
+        },
+        "brown": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:leather_boots"
+						],
+						"nbt": "{display:{color:8606770}}"
+                    }
+                ]
+            }
+        },
+        "green": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:leather_boots"
+						],
+						"nbt": "{display:{color:6192150}}"
+                    }
+                ]
+            }
+        },
+        "red": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:leather_boots"
+						],
+						"nbt": "{display:{color:11546150}}"
+                    }
+                ]
+            }
+        },
+        "black": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:leather_boots"
+						],
+						"nbt": "{display:{color:1908001}}"
+                    }
+                ]
+            }
+        }
+    }
+}

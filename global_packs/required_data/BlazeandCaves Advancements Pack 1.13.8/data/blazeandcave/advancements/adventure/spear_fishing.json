@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:arrow"
+        },
+        "title": {"translate":"Spear Fishing"},
+        "description": {"translate":"Kill a Guardian with arrows"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:adventure/laser_sharks",
+    "rewards": {
+        "function": "bc_rewards:adventure/spear_fishing"
+    },	
+    "criteria": {
+        "guardian": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "killing_blow": {
+                    "is_projectile": true,
+                        "direct_entity": {
+                            "type": "minecraft:arrow"
+                        }
+                },
+                "entity": {
+                    "type": "guardian"
+                }
+            }
+        }	
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:powder_snow_bucket"
+        },
+        "title": {"translate":"Polar Opposites"},
+        "description": {"color":"#75E1FF","translate":"Start freezing in the Nether"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:nether/hells_bells",
+	"rewards": {
+		"function": "bc_rewards:nether/polar_opposites"
+    },		
+    "criteria": {
+        "nether_freeze": {
+            "trigger": "minecraft:enter_block",
+            "conditions": {
+				"block": "minecraft:powder_snow",
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"location": {
+								"dimension": "the_nether"
+							},
+							"nbt": "{TicksFrozen:140}"
+						}
+                    }
+                ]
+            }
+        }
+    }
+}

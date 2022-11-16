@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:experience_bottle"
+        },
+        "title": {"translate":"Magical Stockpile"},
+        "description": {"color":"#75E1FF","translate":"Obtain a full stack of bottles of enchanting"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:enchanting/librarian",
+    "rewards": {
+        "function": "bc_rewards:enchanting/magical_stockpile"
+    },		
+    "criteria": {
+        "experience_bottle": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:experience_bottle"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:wires/tungsten"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "c:wires/tungsten"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_tungsten",
+    "amount": 4500
+  },
+  "temperature": 700,
+  "time": 13
+}

@@ -1,0 +1,17 @@
+[mimicSettings]
+mimicDifficulty = "EASY"
+spawnNaturalMimics = false
+naturalMimicSpawnRate = 0.0
+allowPetMimics = true
+doPetMimicLimit = true
+petMimicLimit = 2
+abandonedMimicTimer = 5
+allowPetMimicLocking = true
+[worldGen]
+potSpawnChance = 0.3
+chestSpawnChance = 0.3
+surfaceChestSpawnChance = 0.15
+secretMimicChance = 0.0
+[chestSettings]
+allowChestLocking = true
+enableLockedChestOwners = true

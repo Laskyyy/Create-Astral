@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:player_head",
+			"nbt": "{SkullOwner:{Id:[I;441626043,2118598717,-1677875405,-296564702],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY4MzI1MzQ4YmI4MzEwZjFkNzQ4ZmRjYWFiZjQzZGNmOWJkMjQ0ZDE4OWNjYjE4ZDZhYzU0N2ZiMDA0NzhhNCJ9fX0=\"}]}}}"
+        },
+        "title": {"translate":"Aww man!"},
+        "description": {"translate":"That was a nice life you had. Shame it had to end at this time time time"},
+        "announce_to_chat": "true"
+
+    },
+    "parent": "blazeandcave:monsters/blast_shield",
+    "rewards": {
+        "function": "bc_rewards:monsters/aww_man"
+    },		
+    "criteria": {
+        "creeper": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "type": "creeper"
+                }
+            }
+        }
+    }
+}

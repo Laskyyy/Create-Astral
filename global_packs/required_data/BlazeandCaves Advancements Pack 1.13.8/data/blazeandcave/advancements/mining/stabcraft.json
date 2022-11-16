@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_sword"
+        },
+        "title": {"translate":"Stabcraft"},
+        "description": {"translate":"Do you like my sword sword"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:mining/iconic_merchandising_prop",
+    "rewards": {
+		"function": "bc_rewards:mining/stabcraft"
+    },			
+    "criteria": {
+        "diamond_sword": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:diamond_sword"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

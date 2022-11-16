@@ -1,0 +1,5 @@
+{
+  "engine": "INSTANCING",
+  "debugNormals": false,
+  "limitUpdates": true
+}

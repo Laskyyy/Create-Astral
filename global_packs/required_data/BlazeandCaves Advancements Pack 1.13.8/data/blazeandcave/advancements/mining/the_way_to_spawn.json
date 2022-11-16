@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:compass"
+        },
+        "title": {"translate":"The way to spawn"},
+        "description": {"translate":"Craft a compass in case you forgot where spawn is"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:mining/seeing_red",
+    "rewards": {
+		"function": "bc_rewards:mining/the_way_to_spawn"
+    },		
+    "criteria": {
+        "compass": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:compass"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

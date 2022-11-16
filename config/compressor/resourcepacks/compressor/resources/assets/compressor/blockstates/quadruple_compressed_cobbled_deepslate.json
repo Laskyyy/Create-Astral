@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "compressor:block/quadruple_compressed_cobbled_deepslate"
+    }
+  }
+}

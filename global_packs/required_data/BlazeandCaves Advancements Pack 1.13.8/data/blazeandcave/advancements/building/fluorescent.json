@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:end_rod"
+        },
+        "title": {"translate":"Fluorescent!"},
+        "description": {"translate":"Light up the area with some end rods"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:building/expensive",
+	"rewards": {
+		"function": "bc_rewards:building/fluorescent"
+    },		
+    "criteria": {
+        "end_rod": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:end_rod"
+            }
+        }
+    }
+}

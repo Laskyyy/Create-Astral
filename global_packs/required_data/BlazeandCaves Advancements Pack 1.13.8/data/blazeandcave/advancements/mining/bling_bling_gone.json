@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:golden_pickaxe"
+        },
+        "title": {"translate":"Bling Bling Gone"},
+        "description": {"color":"#75E1FF","translate":"Completely use up a golden pickaxe, and then seriously reevaluate your life choices"},
+        "announce_to_chat": "true",
+        "frame": "goal"
+    },
+    "parent": "blazeandcave:mining/living_like_kings",
+    "rewards": {
+		"function": "bc_rewards:mining/bling_bling_gone"
+    },		
+    "criteria": {
+        "break_pickaxe": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+				"item": {
+					"items": [
+						"minecraft:golden_pickaxe"
+					]
+				},
+				"durability": {
+					"max": 0
+				}
+            }
+        }
+    }
+}

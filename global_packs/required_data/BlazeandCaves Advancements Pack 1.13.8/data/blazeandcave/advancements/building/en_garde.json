@@ -1,0 +1,83 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:oak_fence"
+        },
+        "title": {"translate":"En Garde"},
+        "description": {"translate":"Erect some fencing"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:building/your_door_was_locked",
+	"rewards": {
+		"function": "bc_rewards:building/en_garde"
+    },		
+    "criteria": {
+        "oak_fence": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:oak_fence"
+            }
+        },
+        "spruce_fence": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:spruce_fence"
+            }
+        },	
+        "birch_fence": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:birch_fence"
+            }
+        },
+        "jungle_fence": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:jungle_fence"
+            }
+        },
+        "acacia_fence": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:acacia_fence"
+            }
+        },
+        "dark_oak_fence": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:dark_oak_fence"
+            }
+        },
+        "crimson_fence": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:crimson_fence"
+            }
+        },
+        "warped_fence": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:warped_fence"
+            }
+        },
+        "nether_brick_fence": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:nether_brick_fence"
+            }
+        }
+    },
+    "requirements": [
+		[
+        "oak_fence",
+        "spruce_fence",
+		"birch_fence",
+		"jungle_fence",
+		"acacia_fence",
+		"dark_oak_fence",
+		"crimson_fence",
+		"warped_fence",
+		"nether_brick_fence"
+		]
+    ]	
+}

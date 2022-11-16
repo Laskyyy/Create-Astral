@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:sculk_sensor"
+        },
+        "title": {"translate":"Vibe Check"},
+        "description": {"color":"light_purple","translate":"Obtain a Sculk Sensor"},
+        "announce_to_chat": "true",
+		"hidden": "true"
+    },
+    "parent": "blazeandcave:redstone/root",
+    "rewards": {
+		"function": "bc_rewards:redstone/vibe_check"
+    },		
+    "criteria": {
+        "sculk_sensor": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:sculk_sensor"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

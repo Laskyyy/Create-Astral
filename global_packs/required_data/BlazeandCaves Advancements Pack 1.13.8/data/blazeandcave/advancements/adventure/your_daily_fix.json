@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_ingot"
+        },
+        "title": {"translate":"Your Daily Fix"},
+        "description": {"translate":"Use an Iron Ingot to repair a damaged Iron Golem"},
+        "announce_to_chat": "true"
+    },
+    "parent": "minecraft:adventure/summon_iron_golem",
+	"rewards": {
+		"function": "bc_rewards:adventure/your_daily_fix"
+    },		
+    "criteria": {
+		"iron_golem": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:iron_ingot"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:iron_golem"
+						}
+					}
+				]
+			}
+		}
+    }
+}

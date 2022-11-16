@@ -1,0 +1,1564 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:oak_leaves"
+        },
+        "title": {"translate":"What's new with composting?"},
+        "description": {"translate":"Compost every type of compostable item in a Composter"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:farming/combine_harvester",
+	"rewards": {
+		"function": "bc_rewards:farming/whats_new_with_composting"
+    },
+    "criteria": {
+        "beetroot_seeds": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:beetroot_seeds"
+					]
+				}
+			}
+		},
+        "dried_kelp": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:dried_kelp"
+					]
+				}
+			}
+		},
+        "grass": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:grass"
+					]
+				}
+			}
+		},
+        "kelp": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:kelp"
+					]
+				}
+			}
+		},
+        "oak_leaves": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:oak_leaves"
+					]
+				}
+			}
+		},
+        "spruce_leaves": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:spruce_leaves"
+					]
+				}
+			}
+		},
+        "birch_leaves": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:birch_leaves"
+					]
+				}
+			}
+		},
+        "jungle_leaves": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:jungle_leaves"
+					]
+				}
+			}
+		},
+        "acacia_leaves": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:acacia_leaves"
+					]
+				}
+			}
+		},
+        "dark_oak_leaves": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:dark_oak_leaves"
+					]
+				}
+			}
+		},
+        "melon_seeds": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:melon_seeds"
+					]
+				}
+			}
+		},
+        "pumpkin_seeds": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:pumpkin_seeds"
+					]
+				}
+			}
+		},
+        "oak_sapling": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:oak_sapling"
+					]
+				}
+			}
+		},
+        "spruce_sapling": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:spruce_sapling"
+					]
+				}
+			}
+		},
+        "birch_sapling": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:birch_sapling"
+					]
+				}
+			}
+		},
+        "jungle_sapling": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:jungle_sapling"
+					]
+				}
+			}
+		},
+        "acacia_sapling": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:acacia_sapling"
+					]
+				}
+			}
+		},
+        "dark_oak_sapling": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:dark_oak_sapling"
+					]
+				}
+			}
+		},
+        "seagrass": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:seagrass"
+					]
+				}
+			}
+		},
+        "sweet_berries": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:sweet_berries"
+					]
+				}
+			}
+		},
+        "wheat_seeds": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:wheat_seeds"
+					]
+				}
+			}
+		},
+        "cactus": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:cactus"
+					]
+				}
+			}
+		},
+        "dried_kelp_block": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:dried_kelp_block"
+					]
+				}
+			}
+		},
+        "melon_slice": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:melon_slice"
+					]
+				}
+			}
+		},
+        "sugar_cane": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:sugar_cane"
+					]
+				}
+			}
+		},
+        "tall_grass": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:tall_grass"
+					]
+				}
+			}
+		},
+        "vine": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:vine"
+					]
+				}
+			}
+		},
+        "weeping_vines": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:weeping_vines"
+					]
+				}
+			}
+		},
+        "twisting_vines": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:twisting_vines"
+					]
+				}
+			}
+		},
+        "nether_sprouts": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:nether_sprouts"
+					]
+				}
+			}
+		},
+        "apple": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:apple"
+					]
+				}
+			}
+		},
+        "beetroot": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:beetroot"
+					]
+				}
+			}
+		},
+        "carrot": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:carrot"
+					]
+				}
+			}
+		},
+        "cocoa_beans": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:cocoa_beans"
+					]
+				}
+			}
+		},
+        "fern": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:fern"
+					]
+				}
+			}
+		},
+        "large_fern": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:large_fern"
+					]
+				}
+			}
+		},
+        "dandelion": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:dandelion"
+					]
+				}
+			}
+		},
+        "poppy": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:poppy"
+					]
+				}
+			}
+		},
+        "blue_orchid": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:blue_orchid"
+					]
+				}
+			}
+		},
+        "allium": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:allium"
+					]
+				}
+			}
+		},
+        "azure_bluet": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:azure_bluet"
+					]
+				}
+			}
+		},
+        "red_tulip": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:red_tulip"
+					]
+				}
+			}
+		},
+        "orange_tulip": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:orange_tulip"
+					]
+				}
+			}
+		},
+        "white_tulip": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:white_tulip"
+					]
+				}
+			}
+		},
+        "pink_tulip": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:pink_tulip"
+					]
+				}
+			}
+		},
+        "oxeye_daisy": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:oxeye_daisy"
+					]
+				}
+			}
+		},
+        "cornflower": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:cornflower"
+					]
+				}
+			}
+		},
+        "lily_of_the_valley": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:lily_of_the_valley"
+					]
+				}
+			}
+		},
+        "wither_rose": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:wither_rose"
+					]
+				}
+			}
+		},
+        "sunflower": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:sunflower"
+					]
+				}
+			}
+		},
+        "lilac": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:lilac"
+					]
+				}
+			}
+		},
+        "rose_bush": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:rose_bush"
+					]
+				}
+			}
+		},
+        "peony": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:peony"
+					]
+				}
+			}
+		},
+        "lily_pad": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:lily_pad"
+					]
+				}
+			}
+		},
+        "melon": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:melon"
+					]
+				}
+			}
+		},
+        "red_mushroom": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:red_mushroom"
+					]
+				}
+			}
+		},
+        "brown_mushroom": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:brown_mushroom"
+					]
+				}
+			}
+		},
+        "potato": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:potato"
+					]
+				}
+			}
+		},
+        "pumpkin": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:pumpkin"
+					]
+				}
+			}
+		},
+        "carved_pumpkin": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:carved_pumpkin"
+					]
+				}
+			}
+		},
+        "sea_pickle": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:sea_pickle"
+					]
+				}
+			}
+		},
+        "wheat": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:wheat"
+					]
+				}
+			}
+		},
+        "crimson_fungus": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:crimson_fungus"
+					]
+				}
+			}
+		},
+        "warped_fungus": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:warped_fungus"
+					]
+				}
+			}
+		},
+        "nether_wart": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:nether_wart"
+					]
+				}
+			}
+		},
+        "crimson_roots": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:crimson_roots"
+					]
+				}
+			}
+		},
+        "warped_roots": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:warped_roots"
+					]
+				}
+			}
+		},
+        "baked_potato": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:baked_potato"
+					]
+				}
+			}
+		},
+        "bread": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:bread"
+					]
+				}
+			}
+		},
+        "cookie": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:cookie"
+					]
+				}
+			}
+		},
+        "hay_block": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:hay_block"
+					]
+				}
+			}
+		},
+        "red_mushroom_block": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:red_mushroom_block"
+					]
+				}
+			}
+		},
+        "brown_mushroom_block": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:brown_mushroom_block"
+					]
+				}
+			}
+		},
+        "mushroom_stem": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:mushroom_stem"
+					]
+				}
+			}
+		},
+        "nether_wart_block": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:nether_wart_block"
+					]
+				}
+			}
+		},
+        "warped_wart_block": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:warped_wart_block"
+					]
+				}
+			}
+		},
+        "cake": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:cake"
+					]
+				}
+			}
+		},
+        "pumpkin_pie": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:pumpkin_pie"
+					]
+				}
+			}
+		},
+        "shroomlight": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:shroomlight"
+					]
+				}
+			}
+		},
+        "glow_berries": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:glow_berries"
+					]
+				}
+			}
+		},
+        "azalea_leaves": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:azalea_leaves"
+					]
+				}
+			}
+		},
+        "flowering_azalea_leaves": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flowering_azalea_leaves"
+					]
+				}
+			}
+		},
+        "small_dripleaf": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:small_dripleaf"
+					]
+				}
+			}
+		},
+        "big_dripleaf": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:big_dripleaf"
+					]
+				}
+			}
+		},
+        "moss_carpet": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:moss_carpet"
+					]
+				}
+			}
+		},
+        "moss_block": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:moss_block"
+					]
+				}
+			}
+		},
+        "azalea": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:azalea"
+					]
+				}
+			}
+		},
+        "flowering_azalea": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:flowering_azalea"
+					]
+				}
+			}
+		},
+        "hanging_roots": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:hanging_roots"
+					]
+				}
+			}
+		},
+        "glow_lichen": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:glow_lichen"
+					]
+				}
+			}
+		},
+        "spore_blossom": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:composter"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:spore_blossom"
+					]
+				}
+			}
+		}
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:fishing_rod",
+			"nbt": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}]}"
+        },
+        "title": {"translate":"Master Fisher"},
+        "description": {"translate":"Create a fishing rod with all possible enchantments at max level"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:enchanting/unbreakable",
+    "rewards": {
+		"function": "bc_rewards:enchanting/master_fisher"
+    },		
+    "criteria": {
+        "perfect_rod": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+				"items": [
+                    {
+						"items": [
+							"minecraft:fishing_rod"
+						],
+						"enchantments": [
+							{
+								"enchantment": "minecraft:lure",
+								"levels": 3
+							},
+							{
+								"enchantment": "minecraft:luck_of_the_sea",
+								"levels": 3
+							},	
+							{
+								"enchantment": "minecraft:unbreaking",
+								"levels": 3
+							},	
+							{
+								"enchantment": "minecraft:mending",
+								"levels": 1
+							}		
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

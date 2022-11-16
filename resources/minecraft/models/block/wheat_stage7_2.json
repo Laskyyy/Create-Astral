@@ -1,0 +1,6 @@
+{
+    "parent": "block/croptall",
+    "textures": {
+        "croptall": "block/wheat_stage7_2"
+    }
+}

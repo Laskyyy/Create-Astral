@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:zombie_head"
+        },
+        "title": {"translate":"Still Talking!"},
+        "description": {"translate":"Blow up a zombie with a charged creeper to get a zombie head"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:monsters/freezing",
+    "rewards": {
+        "function": "bc_rewards:monsters/still_talking"
+    },		
+    "criteria": {
+        "zombie_head": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:zombie_head"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

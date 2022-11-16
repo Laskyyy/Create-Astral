@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:minecart"
+        },
+        "title": {"translate":"All Aboard!"},
+        "description": {"translate":"Craft and board a Minecart for railway journeys"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:redstone/root",
+    "rewards": {
+		"function": "bc_rewards:redstone/all_aboard"
+    },		
+    "criteria": {
+        "minecart": {
+			"trigger": "minecraft:started_riding",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"vehicle": {
+								"type": "minecraft:minecart"
+							}
+						},
+						"entity": "this"
+					}
+				]
+			}
+		}
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:golden_apple"
+        },
+        "title": {"translate":"Ultra Hardcore"},
+        "description": {"translate":"Craft and eat a normal golden apple"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:farming/bapple",
+	"rewards": {
+		"function": "bc_rewards:farming/ultra_hardcore"
+    },		
+    "criteria": {
+        "golden_apple": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+					"items": [
+						"minecraft:golden_apple"
+					]
+                }
+            }
+        }
+    }
+}

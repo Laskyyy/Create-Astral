@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:light_blue_shulker_box"
+        },
+        "title": {"translate":"Anti-Gravity Generator"},
+        "description": {"translate":"Bring a shulker into the overworld and let it give you anti-gravity"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "minecraft:end/levitate",
+    "rewards": {
+        "function": "bc_rewards:end/anti_gravity_generator"
+    },		
+    "criteria": {
+        "shulker_hurt_player": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+				"damage": {
+					"source_entity": {
+						"type": "minecraft:shulker",
+						"location": {
+							"dimension": "overworld"
+						}
+					}
+				}
+            }
+        }		
+    }
+}

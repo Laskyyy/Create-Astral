@@ -1,0 +1,18 @@
+{
+    "type": "automobility:auto_mechanic_table",
+    "category": "automobility:engines",
+    "sortnum": 3,
+    "ingredients": [
+        {"item": "indrev:machine_block"},
+        {"item": "indrev:electric_furnace_mk1"},
+        {"item": "minecraft:lava_bucket"},
+        {"item": "minecraft:gold_block"},
+        {"item": "indrev:battery"},
+        {"item": "createastral:navigation_mechanism"},
+        {"item": "indrev:enriched_nikolite_dust"}
+    ],
+    "result": {
+        "item": "automobility:automobile_engine",
+        "component": "automobility:gold"
+    }
+}

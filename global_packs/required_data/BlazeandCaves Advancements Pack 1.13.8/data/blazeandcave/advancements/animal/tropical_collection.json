@@ -1,0 +1,303 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:tropical_fish_bucket"
+        },
+        "title": {"translate":"Tropical Collection"},
+        "description": {"translate":"Collect all 22 of the common types of tropical fish"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:animal/aquarium",
+	"rewards": {
+		"function": "bc_rewards:animal/tropical_collection"
+    },		
+    "criteria": {
+        "fish1": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:tropical_fish_bucket"
+						],
+						"nbt": "{BucketVariantTag:65536}"
+                    }
+                ]
+            }
+        },
+        "fish2": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:tropical_fish_bucket"
+						],
+						"nbt": "{BucketVariantTag:917504}"
+                    }
+                ]
+            }
+        },
+        "fish3": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:tropical_fish_bucket"
+						],
+						"nbt": "{BucketVariantTag:918273}"
+                    }
+                ]
+            }
+        },
+        "fish4": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:tropical_fish_bucket"
+						],
+						"nbt": "{BucketVariantTag:918529}"
+                    }
+                ]
+            }
+        },
+        "fish5": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:tropical_fish_bucket"
+						],
+						"nbt": "{BucketVariantTag:16778497}"
+                    }
+                ]
+            }
+        },
+        "fish6": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:tropical_fish_bucket"
+						],
+						"nbt": "{BucketVariantTag:50660352}"
+                    }
+                ]
+            }
+        },
+        "fish7": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:tropical_fish_bucket"
+						],
+						"nbt": "{BucketVariantTag:50726144}"
+                    }
+                ]
+            }
+        },
+        "fish8": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:tropical_fish_bucket"
+						],
+						"nbt": "{BucketVariantTag:67108865}"
+                    }
+                ]
+            }
+        },
+        "fish9": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:tropical_fish_bucket"
+						],
+						"nbt": "{BucketVariantTag:67110144}"
+                    }
+                ]
+            }
+        },
+        "fish10": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:tropical_fish_bucket"
+						],
+						"nbt": "{BucketVariantTag:67371009}"
+                    }
+                ]
+            }
+        },
+        "fish11": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:tropical_fish_bucket"
+						],
+						"nbt": "{BucketVariantTag:67764993}"
+                    }
+                ]
+            }
+        },
+        "fish12": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:tropical_fish_bucket"
+						],
+						"nbt": "{BucketVariantTag:101253888}"
+                    }
+                ]
+            }
+        },
+        "fish13": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:tropical_fish_bucket"
+						],
+						"nbt": "{BucketVariantTag:117441025}"
+                    }
+                ]
+            }
+        },
+        "fish14": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:tropical_fish_bucket"
+						],
+						"nbt": "{BucketVariantTag:67699456}"
+                    }
+                ]
+            }
+        },
+        "fish15": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:tropical_fish_bucket"
+						],
+						"nbt": "{BucketVariantTag:117441793}"
+                    }
+                ]
+            }
+        },
+        "fish16": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:tropical_fish_bucket"
+						],
+						"nbt": "{BucketVariantTag:117506305}"
+                    }
+                ]
+            }
+        },
+        "fish17": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:tropical_fish_bucket"
+						],
+						"nbt": "{BucketVariantTag:117899265}"
+                    }
+                ]
+            }
+        },
+        "fish18": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:tropical_fish_bucket"
+						],
+						"nbt": "{BucketVariantTag:118161664}"
+                    }
+                ]
+            }
+        },
+        "fish19": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:tropical_fish_bucket"
+						],
+						"nbt": "{BucketVariantTag:459008}"
+                    }
+                ]
+            }
+        },
+        "fish20": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:tropical_fish_bucket"
+						],
+						"nbt": "{BucketVariantTag:185008129}"
+                    }
+                ]
+            }
+        },
+        "fish21": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:tropical_fish_bucket"
+						],
+						"nbt": "{BucketVariantTag:234882305}"
+                    }
+                ]
+            }
+        },
+        "fish22": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:tropical_fish_bucket"
+						],
+						"nbt": "{BucketVariantTag:235340288}"
+                    }
+                ]
+            }
+        }		
+    }
+}

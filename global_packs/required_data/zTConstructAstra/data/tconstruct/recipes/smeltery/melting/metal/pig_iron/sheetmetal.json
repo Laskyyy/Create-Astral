@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:sheetmetals/pig_iron"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "c:sheetmetals/pig_iron"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_pig_iron",
+    "amount": 9000
+  },
+  "temperature": 800,
+  "time": 60
+}

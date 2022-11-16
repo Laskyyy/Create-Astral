@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:flint_and_steel"
+        },
+        "title": {"translate":"Controlled Detonation"},
+        "description": {"translate":"Persuade a Creeper to blow up using Flint and Steel"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:monsters/blast_shield",
+	"rewards": {
+		"function": "bc_rewards:monsters/controlled_detonation"
+    },		
+    "criteria": {
+		"controlled_detonation": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:creeper"
+						}
+					}
+				]
+			}
+		}
+    }
+}

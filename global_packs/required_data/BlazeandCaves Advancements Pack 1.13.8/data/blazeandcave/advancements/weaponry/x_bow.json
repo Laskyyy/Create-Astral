@@ -1,0 +1,28 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:tripwire_hook"
+		},
+		"title": {"translate":"X-Bow"},
+		"description": {"translate":"Craft a crossbow using stick, spider string, iron and a hook"},
+		"announce_to_chat": "true"
+	},
+	"parent": "blazeandcave:weaponry/root",
+	"rewards": {
+		"function": "bc_rewards:weaponry/x_bow"
+	},		
+	"criteria": {
+		"crossbow": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:crossbow"
+						]
+					}
+				]
+			}
+		}
+	}
+}

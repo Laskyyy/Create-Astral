@@ -971,4 +971,21 @@ onEvent('worldgen.add', event => {
 })
   
   
- 
+let music_list = {
+  "sogcore": "Sogcore",
+}
+
+onEvent("sound_event.registry", event => {
+  Object.keys(music_list).forEach(value => {
+      event.create(`musictriggers:music.${value}`)
+  })
+})
+
+onEvent("item.registry", event => {
+  Object.keys(music_list).forEach((value, index) => {
+      event.create(value, "music_disc")
+          .song(`musictriggers:music.${value}`)
+          .analogOutput(index + 1)
+          .texture("createastral:item/orcane")
+  })
+})

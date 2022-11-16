@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:elytra",
+			"nbt": "{Damage:432}"
+        },
+        "title": {"translate":"Some Breakthrough"},
+        "description": {"translate":"Exhaust your elytra"},
+        "announce_to_chat": "true",
+        "frame": "challenge"
+    },
+    "parent": "minecraft:end/elytra",
+    "rewards": {
+		"function": "bc_rewards:end/some_breakthrough"
+    },		
+    "criteria": {
+        "exhaust_elytra": {
+            "trigger": "minecraft:item_durability_changed",
+            "conditions": {
+				"item": {
+					"items": [
+						"minecraft:elytra"
+					]
+				},
+				"durability": 1
+            }
+        }
+    }
+}

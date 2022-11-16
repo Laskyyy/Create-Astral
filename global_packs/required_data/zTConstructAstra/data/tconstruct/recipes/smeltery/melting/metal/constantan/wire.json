@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:wires/constantan"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "c:wires/constantan"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_constantan",
+    "amount": 4500
+  },
+  "temperature": 920,
+  "time": 13
+}

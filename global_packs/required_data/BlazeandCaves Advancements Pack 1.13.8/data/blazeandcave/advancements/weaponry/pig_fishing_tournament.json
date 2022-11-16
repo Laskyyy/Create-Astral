@@ -1,0 +1,24 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:porkchop"
+		},
+		"title": {"translate":"Pig Fishing Tournament"},
+		"description": {"translate":"Pull a pig using a fishing rod"},
+		"announce_to_chat": "true"
+	},
+	"parent": "blazeandcave:weaponry/root",
+	"rewards": {
+		"function": "bc_rewards:weaponry/pig_fishing_tournament"
+	},		
+	"criteria": {
+		"pig": {
+			"trigger": "minecraft:fishing_rod_hooked",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:pig"
+				}
+			}
+		}
+	}
+}

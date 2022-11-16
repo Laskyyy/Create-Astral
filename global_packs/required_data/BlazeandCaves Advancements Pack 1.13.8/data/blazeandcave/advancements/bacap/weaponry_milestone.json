@@ -1,0 +1,581 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:stone_sword"
+        },
+        "title": {"translate":"Weaponry Milestone"},
+        "description": {"color":"yellow","translate":"Complete every advancement in the Weaponry tab"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:bacap/monsters_milestone",
+	"rewards": {
+		"function": "bc_rewards:bacap/weaponry_milestone"
+    },		
+    "criteria": {
+        "a_snowballs_chance_in_hell": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/a_snowballs_chance_in_hell": "true"
+						}
+					}
+				}
+			}
+        },
+        "a_throwaway_joke": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:adventure/throw_trident": "true"
+						}
+					}
+				}
+			}
+        },
+		"artillery": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/artillery": "true"
+						}
+					}
+				}
+			}
+        },
+		"axeman": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/axeman": "true"
+						}
+					}
+				}
+			}
+        },
+		"bombs_away": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/bombs_away": "true"
+						}
+					}
+				}
+			}
+        },
+		"bow_spammer": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/bow_spammer": "true"
+						}
+					}
+				}
+			}
+        },
+		"demolitions_expert": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/demolitions_expert": "true"
+						}
+					}
+				}
+			}
+        },
+		"diemonds": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/diemonds": "true"
+						}
+					}
+				}
+			}
+        },
+		"egging_dude": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/egging_dude": "true"
+						}
+					}
+				}
+			}
+        },
+		"expelliarmus": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/expelliarmus": "true"
+						}
+					}
+				}
+			}
+        },
+		"explosive_fire": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/explosive_fire": "true"
+						}
+					}
+				}
+			}
+        },
+		"fireworks_display": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/fireworks_display": "true"
+						}
+					}
+				}
+			}
+        },
+		"flying_colors": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/flying_colors": "true"
+						}
+					}
+				}
+			}
+        },
+		"indiana_jones": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/indiana_jones": "true"
+						}
+					}
+				}
+			}
+        },
+		"king_of_the_sea": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/king_of_the_sea": "true"
+						}
+					}
+				}
+			}
+        },
+		"master_shieldsman": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/master_shieldsman": "true"
+						}
+					}
+				}
+			}
+        },
+		"ol_betsy": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:adventure/ol_betsy": "true"
+						}
+					}
+				}
+			}
+        },
+		"pig_fishing_tournament": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/pig_fishing_tournament": "true"
+						}
+					}
+				}
+			}
+        },
+		"point_blank": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/point_blank": "true"
+						}
+					}
+				}
+			}
+        },
+		"poseidon_vs_hades": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/poseidon_vs_hades": "true"
+						}
+					}
+				}
+			}
+        },
+		"revenge": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/revenge": "true"
+						}
+					}
+				}
+			}
+        },
+		"root": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/root": "true"
+						}
+					}
+				}
+			}
+        },
+		"shield_luck": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/shield_luck": "true"
+						}
+					}
+				}
+			}
+        },
+		"shovel_knight": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/shovel_knight": "true"
+						}
+					}
+				}
+			}
+        },
+		"sir_knight": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/sir_knight": "true"
+						}
+					}
+				}
+			}
+        },
+		"slapfish": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/slapfish": "true"
+						}
+					}
+				}
+			}
+        },
+		"sniper_duel": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:adventure/sniper_duel": "true"
+						}
+					}
+				}
+			}
+        },
+		"snowball_fight": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/snowball_fight": "true"
+						}
+					}
+				}
+			}
+        },
+		"take_aim": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:adventure/shoot_arrow": "true"
+						}
+					}
+				}
+			}
+        },
+		"that_is_so_fletch": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/that_is_so_fletch": "true"
+						}
+					}
+				}
+			}
+        },
+		"the_aquatic_hunter": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/the_aquatic_hunter": "true"
+						}
+					}
+				}
+			}
+        },
+		"the_mighty_hunter": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/the_mighty_hunter": "true"
+						}
+					}
+				}
+			}
+        },
+		"theres_yolk_on_my_head": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/theres_yolk_on_my_head": "true"
+						}
+					}
+				}
+			}
+        },
+		"viking": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/viking": "true"
+						}
+					}
+				}
+			}
+        },
+		"when_pigs_finally_fly": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/when_pigs_finally_fly": "true"
+						}
+					}
+				}
+			}
+        },
+		"whos_the_pillager_now": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:adventure/whos_the_pillager_now": "true"
+						}
+					}
+				}
+			}
+        },
+		"x_bow": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/x_bow": "true"
+						}
+					}
+				}
+			}
+        },
+		"loser": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/loser": "true"
+						}
+					}
+				}
+			}
+        },
+		"multiclassed": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/multiclassed": "true"
+						}
+					}
+				}
+			}
+        },
+		"pyrotechnic": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/pyrotechnic": "true"
+						}
+					}
+				}
+			}
+        },
+		"my_eyes": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/my_eyes": "true"
+						}
+					}
+				}
+			}
+        },
+		"who_ya_gonna_call": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/who_ya_gonna_call": "true"
+						}
+					}
+				}
+			}
+        },
+		"half_heart_life": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/half_heart_life": "true"
+						}
+					}
+				}
+			}
+        },
+		"its_time_consuming": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/its_time_consuming": "true"
+						}
+					}
+				}
+			}
+        },
+		"inspector_gadget": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/inspector_gadget": "true"
+						}
+					}
+				}
+			}
+        },
+		"rock_paper_shears": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/rock_paper_shears": "true"
+						}
+					}
+				}
+			}
+        },
+		"backfire": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:weaponry/backfire": "true"
+						}
+					}
+				}
+			}
+        }
+    }
+}

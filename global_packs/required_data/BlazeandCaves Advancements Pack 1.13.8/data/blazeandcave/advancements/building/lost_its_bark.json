@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:stripped_oak_wood"
+        },
+        "title": {"translate":"Lost Its Bark"},
+        "description": {"translate":"Strip a bark block of its bark"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:building/barking_mad",
+    "rewards": {
+        "function": "bc_rewards:building/lost_its_bark"
+    },		
+    "criteria": {
+		"stripped_wood": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"tag": "minecraft:stripped_wood"
+					}
+				},
+				"item": {
+					"tag": "minecraft:axes"
+				}
+			}
+		}
+	}
+}

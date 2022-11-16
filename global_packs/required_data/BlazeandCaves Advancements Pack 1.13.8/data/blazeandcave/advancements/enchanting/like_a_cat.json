@@ -1,0 +1,39 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_boots"
+        },
+        "title": {"translate":"Like a Cat"},
+        "description": {"color":"#75E1FF","translate":"Obtain boots enchanted with Feather Falling"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:enchanting/root",
+    "rewards": {
+		"function": "bc_rewards:enchanting/like_a_cat"
+    },			
+    "criteria": {
+        "feather_falling": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:leather_boots",
+							"minecraft:chainmail_boots",
+							"minecraft:golden_boots",
+							"minecraft:iron_boots",
+							"minecraft:diamond_boots",
+							"minecraft:netherite_boots"
+						],					
+						"enchantments": [
+							{
+								"enchantment": "minecraft:feather_falling"
+							}
+						]
+					}
+				]
+			}
+		}
+    }
+}

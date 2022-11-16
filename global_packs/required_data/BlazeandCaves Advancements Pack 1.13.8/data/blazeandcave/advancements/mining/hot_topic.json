@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:furnace"
+        },
+        "title": {"translate":"Hot Topic"},
+        "description": {"translate":"Construct a furnace out of eight stone blocks"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:mining/fossil_fuel",
+	"rewards": {
+		"function": "bc_rewards:mining/hot_topic"
+    },		
+    "criteria": {
+        "furnace": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:furnace"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:magma_cube_spawn_egg"
+        },
+        "title": {"translate":"Magma Cube Squisher"},
+        "description": {"color":"#75E1FF","translate":"Collect a stack of magma cream"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:nether/legend_of_hell_chicken_riders",
+    "rewards": {
+		"function": "bc_rewards:nether/magma_cube_squisher"
+    },		
+    "criteria": {
+        "magma_cream": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:magma_cream"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }
+    }	
+}

@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:cocoa_beans"
+        },
+        "title": {"translate":"It's where nutella comes from"},
+        "description": {"translate":"Obtain some cocoa beans from a jungle"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:farming/bake_bread",
+	"rewards": {
+		"function": "bc_rewards:farming/its_where_nutella_comes_from"
+    },		
+    "criteria": {
+        "cocoa_beans": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+					{
+						"items": [
+							"minecraft:cocoa_beans"
+						]
+					}
+				]
+            }
+        }
+    }
+}

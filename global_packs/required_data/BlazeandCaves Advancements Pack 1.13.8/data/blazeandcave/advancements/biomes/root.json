@@ -1,0 +1,29 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:birch_sapling"
+		},
+		"title": {"translate":"Biomes"},
+		"description": {"translate":"All around the world!"},
+		"background": "minecraft:textures/block/snow.png",
+		"show_toast": false,
+		"announce_to_chat": "false"
+	},
+	"rewards": {
+		"function": "bc_rewards:biomes/root"
+	},		
+	"criteria": {
+		"killed_something": {
+			"trigger": "minecraft:player_killed_entity"
+		},
+		"killed_by_something": {
+			"trigger": "minecraft:entity_killed_player"
+		}
+	},
+	"requirements": [
+		[
+			"killed_something", 
+			"killed_by_something"
+		]
+	]
+}

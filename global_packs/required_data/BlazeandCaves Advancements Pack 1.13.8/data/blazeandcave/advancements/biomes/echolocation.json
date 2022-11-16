@@ -1,0 +1,33 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:cod"
+        },
+        "title": {"translate":"Echolocation"},
+        "description": {"translate":"Feed a dolphin fish to have it lead you to treasure"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:biomes/dolphin_dasher",
+	"rewards": {
+		"function": "bc_rewards:biomes/echolocation"
+    },		
+    "criteria": {
+		"echolocation": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"tag": "blazeandcave:dolphin_feedable"
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:dolphin"
+						}
+					}
+				]
+			}
+		}
+    }
+}

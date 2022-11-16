@@ -1,0 +1,14 @@
+{
+    "criteria": {
+        "chorus_fruit": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+					"items": [
+						"minecraft:chorus_fruit"
+					]
+                }
+            }
+        }
+    }
+}

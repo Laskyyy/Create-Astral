@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:powder_snow_bucket"
+        },
+        "title": {"translate":"Powder-full"},
+        "description": {"translate":"Pick up some Powder Snow in a Bucket"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:biomes/this_snow_is_snowier",
+	"rewards": {
+		"function": "bc_rewards:biomes/powder_full"
+    },		
+    "criteria": {
+        "powder_snow_bucket": {
+            "trigger": "minecraft:filled_bucket",
+            "conditions": {
+                "item":
+                {
+					"items": [
+						"minecraft:powder_snow_bucket"
+					]
+                }
+            }
+        }		
+    }
+}

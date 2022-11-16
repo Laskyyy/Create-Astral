@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:nether_wart"
+        },
+        "title": {"translate":"Basis of Brewing"},
+        "description": {"translate":"Harvest some nether wart from a nether fortress"},
+        "announce_to_chat": "true"
+    },
+    "parent": "minecraft:nether/obtain_blaze_rod",
+	"rewards": {
+		"function": "bc_rewards:nether/basis_of_brewing"
+    },	
+    "criteria": {
+        "nether_wart": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:nether_wart"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

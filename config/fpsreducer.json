@@ -1,0 +1,87 @@
+{
+  "enableFpsReducer": true,
+  "hudReferencePos": 3,
+  "hudPos": [
+    {
+      "id": 0,
+      "offsetX": 0,
+      "offsetY": 0,
+      "alignment": 0
+    },
+    {
+      "id": 1,
+      "offsetX": 2,
+      "offsetY": 2,
+      "alignment": 0
+    },
+    {
+      "id": 2,
+      "offsetX": 0,
+      "offsetY": 2,
+      "alignment": 2
+    },
+    {
+      "id": 3,
+      "offsetX": -2,
+      "offsetY": 2,
+      "alignment": 1
+    },
+    {
+      "id": 4,
+      "offsetX": -2,
+      "offsetY": 0,
+      "alignment": 1
+    },
+    {
+      "id": 5,
+      "offsetX": -2,
+      "offsetY": -2,
+      "alignment": 1
+    },
+    {
+      "id": 6,
+      "offsetX": 0,
+      "offsetY": -2,
+      "alignment": 2
+    },
+    {
+      "id": 7,
+      "offsetX": 2,
+      "offsetY": -2,
+      "alignment": 0
+    },
+    {
+      "id": 8,
+      "offsetX": 2,
+      "offsetY": 0,
+      "alignment": 0
+    }
+  ],
+  "hudScale": 1.0,
+  "hudBehindChatBox": 2,
+  "hudInfo": 4,
+  "hudColor": "f0f0f0",
+  "hudPreText": "FPS: ",
+  "hudReductionColor": "00f000",
+  "hudReductionPreText": "ECO: ",
+  "hudGuiModeColor": "b6ecff",
+  "hudGuiModePreText": "FPS: ",
+  "hudNoActModeColor": "ceffd4",
+  "cpuUsageType": 0,
+  "cpuUsageThread": 0,
+  "allowOneFps": false,
+  "debugLog": false,
+  "logInChat": false,
+  "waitingTime": 0,
+  "idleFps": 10,
+  "guiScreenFps": 0,
+  "noActFps": 0,
+  "detectMoving": 1,
+  "ignoreHoldButton": false,
+  "reducingInGameMenu": true,
+  "reducingInBackground": true,
+  "suppressSound": true,
+  "suppressedVolume": 20,
+  "hudEnabled": false,
+  "profile": 1
+}

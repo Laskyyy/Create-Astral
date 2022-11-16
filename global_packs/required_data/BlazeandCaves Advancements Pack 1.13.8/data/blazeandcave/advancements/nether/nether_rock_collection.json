@@ -1,0 +1,68 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:basalt"
+        },
+        "title": {"translate":"Nether Rock Collection"},
+        "description": {"translate":"Mine a stack of Netherrack, Basalt, Blackstone and Magma in the Nether"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:nether/dark_ages",
+	"rewards": {
+		"function": "bc_rewards:nether/nether_rock_collection"
+    },		
+    "criteria": {
+        "netherrack": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:netherrack"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        },
+        "basalt": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:basalt"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        },
+        "blackstone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:blackstone"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        },
+        "magma_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:magma_block"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }
+    }
+}

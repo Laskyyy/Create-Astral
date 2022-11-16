@@ -1,0 +1,241 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:glass_pane"
+        },
+        "title": {"translate":"What a pane"},
+        "description": {"translate":"Craft some glass panes"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:building/classy_glassy",
+	"rewards": {
+		"function": "bc_rewards:building/what_a_pane"
+    },		
+    "criteria": {
+        "glass_pane": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:glass_pane"
+						]
+                    }
+                ]
+            }
+        },
+        "white_stained_glass_pane": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:white_stained_glass_pane"
+						]
+                    }
+                ]
+            }
+        },
+        "orange_stained_glass_pane": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:orange_stained_glass_pane"
+						]
+                    }
+                ]
+            }
+        },
+        "magenta_stained_glass_pane": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:magenta_stained_glass_pane"
+						]
+                    }
+                ]
+            }
+        },
+        "light_blue_stained_glass_pane": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:light_blue_stained_glass_pane"
+						]
+                    }
+                ]
+            }
+        },
+        "yellow_stained_glass_pane": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:yellow_stained_glass_pane"
+						]
+                    }
+                ]
+            }
+        },
+        "lime_stained_glass_pane": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:lime_stained_glass_pane"
+						]
+                    }
+                ]
+            }
+        },
+        "pink_stained_glass_pane": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:pink_stained_glass_pane"
+						]
+                    }
+                ]
+            }
+        },
+        "gray_stained_glass_pane": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:gray_stained_glass_pane"
+						]
+                    }
+                ]
+            }
+        },
+        "light_gray_stained_glass_pane": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:light_gray_stained_glass_pane"
+						]
+                    }
+                ]
+            }
+        },
+        "cyan_stained_glass_pane": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:cyan_stained_glass_pane"
+						]
+                    }
+                ]
+            }
+        },
+        "purple_stained_glass_pane": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:purple_stained_glass_pane"
+						]
+                    }
+                ]
+            }
+        },
+        "blue_stained_glass_pane": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:blue_stained_glass_pane"
+						]
+                    }
+                ]
+            }
+        },
+        "brown_stained_glass_pane": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:brown_stained_glass_pane"
+						]
+                    }
+                ]
+            }
+        },
+        "green_stained_glass_pane": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:green_stained_glass_pane"
+						]
+                    }
+                ]
+            }
+        },
+        "red_stained_glass_pane": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:red_stained_glass_pane"
+						]
+                    }
+                ]
+            }
+        },
+        "black_stained_glass_pane": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:black_stained_glass_pane"
+						]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+		[
+        "glass_pane",
+        "white_stained_glass_pane",
+        "orange_stained_glass_pane",
+        "magenta_stained_glass_pane",
+        "light_blue_stained_glass_pane",
+        "yellow_stained_glass_pane",
+        "lime_stained_glass_pane",
+        "pink_stained_glass_pane",
+        "gray_stained_glass_pane",
+        "light_gray_stained_glass_pane",
+        "cyan_stained_glass_pane",
+        "purple_stained_glass_pane",
+        "blue_stained_glass_pane",
+        "brown_stained_glass_pane",
+        "green_stained_glass_pane",
+        "red_stained_glass_pane",
+        "black_stained_glass_pane"
+		]
+    ]	
+}

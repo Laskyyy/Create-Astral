@@ -1,0 +1,36 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:player_head",
+			"nbt": "{SkullOwner:{Id:[I;-409077305,-170507060,-1767981928,-214256487],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTU2MmEzN2I4NzFmOTY0YmZjM2UxMzExZWE2NzJhYWEwMzk4NGE1ZGM0NzIxNTRhMzRkYzI1YWYxNTdlMzgyYiJ9fX0=\"}]}}}"
+        },
+        "title": {"translate":"Lightning McPig"},
+        "description": {"translate":"Ride 10km on a pig"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:statistics/snout_500",
+	"rewards": {
+		"function": "bc_rewards:statistics/lightning_mcpig"
+    },		
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"stats": [
+							{
+								"type": "minecraft:custom",
+								"stat": "minecraft:pig_one_cm",
+								"value": {
+									"min": 1000000
+								}
+							}
+						]
+					}
+				}
+			}
+        }
+    }
+}

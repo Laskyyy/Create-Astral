@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:ender_eye"
+        },
+        "title": {"translate":"Event Horizon"},
+        "description": {"translate":"Survive void damage"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:end/the_point_of_no_return",
+	"rewards": {
+		"function": "bc_rewards:end/event_horizon"
+    },		
+    "criteria": {
+        "event_horizon": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

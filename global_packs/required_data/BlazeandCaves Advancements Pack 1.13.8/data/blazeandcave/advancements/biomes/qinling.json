@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:brown_dye"
+        },
+        "title": {"translate":"Qinling"},
+        "description": {"color":"#75E1FF","translate":"Breed a rare brown panda"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:biomes/zoologist",
+	"rewards": {
+		"function": "bc_rewards:biomes/qinling"
+    },		
+    "criteria": {
+        "panda": {
+            "trigger": "minecraft:bred_animals",
+            "conditions": {
+				"child": {
+					"type": "minecraft:panda",
+					"nbt": "{MainGene:\"brown\",HiddenGene:\"brown\"}"
+				}
+            }
+        }
+    }
+}

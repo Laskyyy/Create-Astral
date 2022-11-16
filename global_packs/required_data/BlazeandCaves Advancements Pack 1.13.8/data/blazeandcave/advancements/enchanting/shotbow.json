@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:arrow"
+        },
+        "title": {"translate":"Shotbow"},
+        "description": {"color":"#75E1FF","translate":"Shoot three arrows at once with a crossbow"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:enchanting/machine_bow",
+    "rewards": {
+		"function": "bc_rewards:enchanting/shotbow"
+    },			
+    "criteria": {
+		"shot_crossbow": {
+			"trigger": "minecraft:shot_crossbow",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:crossbow"
+					],
+					"enchantments": [
+						{
+							"enchantment": "minecraft:multishot"
+						}
+					]					
+				}
+			}
+		}
+    }
+}

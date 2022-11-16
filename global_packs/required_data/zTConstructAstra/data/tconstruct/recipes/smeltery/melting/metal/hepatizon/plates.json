@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:plates/hepatizon"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "c:plates/hepatizon"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_hepatizon",
+    "amount": 9000
+  },
+  "temperature": 800,
+  "time": 78
+}

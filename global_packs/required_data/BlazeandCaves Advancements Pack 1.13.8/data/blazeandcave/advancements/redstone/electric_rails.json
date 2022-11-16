@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:powered_rail"
+        },
+        "title": {"translate":"Electric Rails"},
+        "description": {"translate":"Making furnace minecarts completely useless"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:redstone/fuel_engine",
+    "rewards": {
+		"function": "bc_rewards:redstone/electric_rails"
+    },		
+    "criteria": {
+        "powered_rail": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:powered_rail"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "": [
+      {"model": "minecraft:block/oxeye_daisy"},
+	  {"model": "minecraft:block/oxeye_daisy2"},
+	  {"model": "minecraft:block/oxeye_daisy3"}
+    ]
+  }
+}

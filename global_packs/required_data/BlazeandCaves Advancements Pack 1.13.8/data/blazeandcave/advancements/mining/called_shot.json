@@ -1,0 +1,58 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:exposed_cut_copper"
+        },
+        "title": {"translate":"Called Shot"},
+        "description": {"color":"#75E1FF","translate":"Get struck by lightning while standing on a Lightning Rod"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "minecraft:adventure/lightning_rod_with_villager_no_fire",
+    "rewards": {
+		"function": "bc_rewards:mining/called_shot"
+    },		
+    "criteria": {
+        "called_shot": {
+			"trigger": "minecraft:lightning_strike",
+			"conditions": {
+				"lightning": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"distance": {
+								"absolute": {
+									"max": 2
+								}
+							},
+							"entity_struck": [
+								{
+									"condition": "minecraft:entity_properties",
+									"predicate": {
+										"type": "minecraft:player"
+									}
+								}
+							]
+						},
+						"entity": "this"
+					}
+				],
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"stepping_on": {
+								"block": {
+									"blocks": [
+										"minecraft:lightning_rod"
+									]
+								}
+							}
+						},
+						"entity": "this"
+					}
+				]
+			}
+		}
+    }
+}

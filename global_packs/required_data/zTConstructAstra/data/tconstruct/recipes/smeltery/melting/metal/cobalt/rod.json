@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:rods/cobalt"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "c:rods/cobalt"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_cobalt",
+    "amount": 4500
+  },
+  "temperature": 800,
+  "time": 13
+}

@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:skeleton_skull"
+        },
+        "title": {"translate":"Spooky Skulls"},
+        "description": {"translate":"Blow up a skeleton with a charged creeper to get a skeleton skull"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:monsters/melting",
+    "rewards": {
+        "function": "bc_rewards:monsters/spooky_skulls"
+    },		
+    "criteria": {
+        "skeleton_skull": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:skeleton_skull"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

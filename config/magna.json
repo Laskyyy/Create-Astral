@@ -1,0 +1,18 @@
+{
+  //Whether an extended hitbox should show air blocks (or other blocks without hitboxes).
+  "highlightAirBlocks": false,
+  //Whether non-full blocks (stairs, slabs) should be represented by a full cube in extended hitboxes.
+  "fullBlockShapes": false,
+  //Whether extended hitboxes should be enabled for the appropriate tools.
+  "enableExtendedHitbox": true,
+  //Whether block breaking should show animation on all blocks.
+  "enableAllBlockBreakingAnimation": true,
+  //Whether extended hitboxes should be disabled when the player is sneaking.
+  "disableExtendedHitboxWhileSneaking": true,
+  //Whether only a single block should be disabled when the player is sneaking.
+  "breakSingleBlockWhenSneaking": true,
+  //Whether each block in an extended hitbox should show its outline separately.
+  "individualBlockOutlines": false,
+  //If true, dropped items are automatically inserted into the inventory.
+  "autoPickup": false
+}

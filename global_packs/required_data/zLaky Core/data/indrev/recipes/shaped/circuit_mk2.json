@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SES",
+    "ECE",
+    "SES"
+  ],
+  "key": {
+    "E": {
+      "item": "indrev:nikolite_ingot"
+    },
+    "C": {
+      "item": "indrev:circuit_mk1"
+    },
+    "S": {
+      "tag": "c:silver_plates"
+    }
+  },
+  "result": {
+    "item": "indrev:circuit_mk2"
+  }
+}

@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:salmon"
+        },
+        "title": {"translate":"Crazy Cat Lady"},
+        "description": {"translate":"Tame a stray cat in a village"},
+        "announce_to_chat": "true"
+    },
+    "parent": "minecraft:adventure/trade",
+	"rewards": {
+		"function": "bc_rewards:adventure/crazy_cat_lady"
+    },		
+    "criteria": {
+        "tamed_animal": {
+            "trigger": "minecraft:tame_animal",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:cat"
+                }
+			}
+        }
+    }
+}

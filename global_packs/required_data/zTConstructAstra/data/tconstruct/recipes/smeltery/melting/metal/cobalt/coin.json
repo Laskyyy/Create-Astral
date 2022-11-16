@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:coins/cobalt"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "c:coins/cobalt"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_cobalt",
+    "amount": 3000
+  },
+  "temperature": 800,
+  "time": 43
+}

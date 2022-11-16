@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:zombie_head"
+        },
+        "title": {"translate":"Monsters"},
+        "description": {"translate":"Battle against the monsters of this world"},
+        "background": "minecraft:textures/block/mossy_cobblestone.png",
+        "show_toast": false,
+        "announce_to_chat": "false"
+    },
+    "rewards": {
+        "function": "bc_rewards:monsters/root"
+    },		
+    "criteria": {
+        "sword": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"tag": "minecraft:swords"
+					}
+                ]
+            }
+        }
+    }
+}

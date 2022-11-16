@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:tropical_fish"
+        },
+        "title": {"translate":"Grinding Nemo"},
+        "description": {"color":"#75E1FF","translate":"Skewer a tropical fish"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:animal/direct_fishing",
+    "rewards": {
+        "function": "bc_rewards:animal/grinding_nemo"
+    },		
+    "criteria": {
+        "tropical_fish": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "tropical_fish"
+                }
+            }
+        }		
+    }
+}

@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:wither_skeleton_skull"
+		}
+	],
+	"result": {
+		"item": "minecraft:wither_rose",
+		"count": 4
+	}
+}

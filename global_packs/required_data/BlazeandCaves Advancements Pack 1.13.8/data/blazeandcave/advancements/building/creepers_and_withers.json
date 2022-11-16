@@ -1,0 +1,40 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:chiseled_sandstone"
+        },
+        "title": {"translate":"Creepers and Withers"},
+        "description": {"translate":"Engrave sandstone with creeper and wither patterns"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:building/jailhouse_block",
+    "rewards": {
+        "function": "bc_rewards:building/creepers_and_withers"
+    },		
+    "criteria": {
+        "sandstone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:chiseled_sandstone"
+						]
+                    }
+                ]
+            }
+        },
+        "red_sandstone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:chiseled_red_sandstone"
+						]
+                    }
+                ]
+            }
+        }
+	}		
+}

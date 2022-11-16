@@ -1,0 +1,197 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:jungle_sapling"
+        },
+        "title": {"translate":"The Jungler"},
+        "description": {"color":"#75E1FF","translate":"Craft every item made out of jungle wood"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:building/professor_birch",
+    "rewards": {
+		"function": "bc_rewards:building/the_jungler"
+    },		
+    "criteria": {
+        "jungle_planks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:jungle_planks"
+						]
+                    }
+                ]
+            }
+        },
+        "jungle_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:jungle_log"
+						]
+                    }
+                ]
+            }
+        },
+        "jungle_wood": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:jungle_wood"
+						]
+                    }
+                ]
+            }
+        },
+        "stripped_jungle_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:stripped_jungle_log"
+						]
+                    }
+                ]
+            }
+        },
+        "stripped_jungle_wood": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:stripped_jungle_wood"
+						]
+                    }
+                ]
+            }
+        },
+        "jungle_slab": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:jungle_slab"
+						]
+                    }
+                ]
+            }
+        },
+        "jungle_pressure_plate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:jungle_pressure_plate"
+						]
+                    }
+                ]
+            }
+        },
+        "jungle_fence": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:jungle_fence"
+						]
+                    }
+                ]
+            }
+        },
+        "jungle_trapdoor": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:jungle_trapdoor"
+						]
+                    }
+                ]
+            }
+        },
+        "jungle_fence_gate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:jungle_fence_gate"
+						]
+                    }
+                ]
+            }
+        },
+        "jungle_stairs": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:jungle_stairs"
+						]
+                    }
+                ]
+            }
+        },
+        "jungle_button": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:jungle_button"
+						]
+                    }
+                ]
+            }
+        },
+        "jungle_door": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:jungle_door"
+						]
+                    }
+                ]
+            }
+        },
+        "jungle_boat": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:jungle_boat"
+						]
+                    }
+                ]
+            }
+        },
+        "jungle_sign": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:jungle_sign"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

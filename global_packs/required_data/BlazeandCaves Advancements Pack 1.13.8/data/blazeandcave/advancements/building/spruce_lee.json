@@ -1,0 +1,197 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:spruce_sapling"
+        },
+        "title": {"translate":"Spruce Lee"},
+        "description": {"color":"#75E1FF","translate":"Craft every item made out of spruce wood"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:building/professor_oak",
+    "rewards": {
+		"function": "bc_rewards:building/spruce_lee"
+    },		
+    "criteria": {
+        "spruce_planks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:spruce_planks"
+						]
+                    }
+                ]
+            }
+        },
+        "spruce_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:spruce_log"
+						]
+                    }
+                ]
+            }
+        },
+        "spruce_wood": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:spruce_wood"
+						]
+                    }
+                ]
+            }
+        },
+        "stripped_spruce_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:stripped_spruce_log"
+						]
+                    }
+                ]
+            }
+        },
+        "stripped_spruce_wood": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:stripped_spruce_wood"
+						]
+                    }
+                ]
+            }
+        },
+        "spruce_slab": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:spruce_slab"
+						]
+                    }
+                ]
+            }
+        },
+        "spruce_pressure_plate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:spruce_pressure_plate"
+						]
+                    }
+                ]
+            }
+        },
+        "spruce_fence": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:spruce_fence"
+						]
+                    }
+                ]
+            }
+        },
+        "spruce_trapdoor": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:spruce_trapdoor"
+						]
+                    }
+                ]
+            }
+        },
+        "spruce_fence_gate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:spruce_fence_gate"
+						]
+                    }
+                ]
+            }
+        },
+        "spruce_stairs": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:spruce_stairs"
+						]
+                    }
+                ]
+            }
+        },
+        "spruce_button": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:spruce_button"
+						]
+                    }
+                ]
+            }
+        },
+        "spruce_door": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:spruce_door"
+						]
+                    }
+                ]
+            }
+        },
+        "spruce_boat": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:spruce_boat"
+						]
+                    }
+                ]
+            }
+        },
+        "spruce_sign": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:spruce_sign"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

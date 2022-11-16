@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:slime_spawn_egg"
+        },
+        "title": {"translate":"Slime Squisher"},
+        "description": {"color":"#75E1FF","translate":"Collect a stack of slimeballs"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:monsters/trampoline",
+    "rewards": {
+		"function": "bc_rewards:monsters/slime_squisher"
+    },		
+    "criteria": {
+        "slime_ball": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:slime_ball"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }		
+    }	
+}

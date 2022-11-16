@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:steel_nuggets"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "c:steel_nuggets"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_steel",
+    "amount": 1000
+  },
+  "temperature": 800,
+  "time": 22
+}

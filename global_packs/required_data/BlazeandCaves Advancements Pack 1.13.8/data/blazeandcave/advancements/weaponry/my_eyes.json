@@ -1,0 +1,26 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:gunpowder"
+		},
+		"title": {"translate":"My eyes!"},
+		"description": {"translate":"Kill a mob using a firework's explosion"},
+		"announce_to_chat": "true"
+	},
+	"parent": "blazeandcave:weaponry/explosive_fire",
+	"rewards": {
+		"function": "bc_rewards:weaponry/my_eyes"
+	},		
+	"criteria": {
+		"firework_rocket_kill": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"killing_blow": {
+					"direct_entity": {
+						"type": "minecraft:firework_rocket"
+					}
+				}
+			}
+		}
+	}
+}

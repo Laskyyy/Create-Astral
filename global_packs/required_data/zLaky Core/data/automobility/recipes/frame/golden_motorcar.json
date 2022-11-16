@@ -1,0 +1,18 @@
+{
+    "type": "automobility:auto_mechanic_table",
+    "category": "automobility:frames",
+    "sortnum": 3,
+    "ingredients": [
+        {"item": "minecraft:redstone"},
+        {"tag": "minecraft:logs"},
+        {"item": "minecraft:leather"},
+        {"item": "minecraft:gold_block"},
+        {"item": "minecraft:nether_brick"},
+        {"item": "minecraft:gold_block"},
+        {"item": "minecraft:gold_ingot"}
+    ],
+    "result": {
+        "item": "automobility:automobile_frame",
+        "component": "automobility:golden_motorcar"
+    }
+}

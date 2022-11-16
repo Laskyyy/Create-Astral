@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:grass_block"
+        },
+        "title": {"translate":"Marathon"},
+        "description": {"color":"#75E1FF","translate":"Sprint 42.195km"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:statistics/natural_sprinter",
+	"rewards": {
+		"function": "bc_rewards:statistics/marathon"
+    },		
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"stats": [
+							{
+								"type": "minecraft:custom",
+								"stat": "minecraft:sprint_one_cm",
+								"value": {
+									"min": 4219500
+								}
+							}
+						]
+					}
+				}
+			}
+        }
+    }
+}

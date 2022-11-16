@@ -1,0 +1,391 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:stick"
+        },
+        "title": {"translate":"Take Notes"},
+        "description": {"translate":"Tune a Note Block through every possible note"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:redstone/mozart",
+    "rewards": {
+        "function": "bc_rewards:redstone/take_notes"
+    },		
+    "criteria": {
+        "note0": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:note_block"
+						],
+						"state": {
+							"note": 0
+						}
+					}
+				}
+			}
+		},
+        "note1": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:note_block"
+						],
+						"state": {
+							"note": 1
+						}
+					}
+				}
+			}
+		},
+        "note2": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:note_block"
+						],
+						"state": {
+							"note": 2
+						}
+					}
+				}
+			}
+		},
+        "note3": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:note_block"
+						],
+						"state": {
+							"note": 3
+						}
+					}
+				}
+			}
+		},
+        "note4": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:note_block"
+						],
+						"state": {
+							"note": 4
+						}
+					}
+				}
+			}
+		},
+        "note5": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:note_block"
+						],
+						"state": {
+							"note": 5
+						}
+					}
+				}
+			}
+		},
+        "note6": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:note_block"
+						],
+						"state": {
+							"note": 6
+						}
+					}
+				}
+			}
+		},
+        "note7": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:note_block"
+						],
+						"state": {
+							"note": 7
+						}
+					}
+				}
+			}
+		},
+        "note8": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:note_block"
+						],
+						"state": {
+							"note": 8
+						}
+					}
+				}
+			}
+		},
+        "note9": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:note_block"
+						],
+						"state": {
+							"note": 9
+						}
+					}
+				}
+			}
+		},
+        "note10": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:note_block"
+						],
+						"state": {
+							"note": 10
+						}
+					}
+				}
+			}
+		},
+        "note11": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:note_block"
+						],
+						"state": {
+							"note": 11
+						}
+					}
+				}
+			}
+		},
+        "note12": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:note_block"
+						],
+						"state": {
+							"note": 12
+						}
+					}
+				}
+			}
+		},
+        "note13": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:note_block"
+						],
+						"state": {
+							"note": 13
+						}
+					}
+				}
+			}
+		},
+        "note14": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:note_block"
+						],
+						"state": {
+							"note": 14
+						}
+					}
+				}
+			}
+		},
+        "note15": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:note_block"
+						],
+						"state": {
+							"note": 15
+						}
+					}
+				}
+			}
+		},
+        "note16": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:note_block"
+						],
+						"state": {
+							"note": 16
+						}
+					}
+				}
+			}
+		},
+        "note17": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:note_block"
+						],
+						"state": {
+							"note": 17
+						}
+					}
+				}
+			}
+		},
+        "note18": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:note_block"
+						],
+						"state": {
+							"note": 18
+						}
+					}
+				}
+			}
+		},
+        "note19": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:note_block"
+						],
+						"state": {
+							"note": 19
+						}
+					}
+				}
+			}
+		},
+        "note20": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:note_block"
+						],
+						"state": {
+							"note": 20
+						}
+					}
+				}
+			}
+		},
+        "note21": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:note_block"
+						],
+						"state": {
+							"note": 21
+						}
+					}
+				}
+			}
+		},
+        "note22": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:note_block"
+						],
+						"state": {
+							"note": 22
+						}
+					}
+				}
+			}
+		},
+        "note23": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:note_block"
+						],
+						"state": {
+							"note": 23
+						}
+					}
+				}
+			}
+		},
+        "note24": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:note_block"
+						],
+						"state": {
+							"note": 24
+						}
+					}
+				}
+			}
+		}
+	}
+}

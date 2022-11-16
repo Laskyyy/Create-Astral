@@ -1,0 +1,131 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:iron_shovel"
+		},
+		"title": {"translate":"Shovel Knight"},
+		"description": {"color":"#75E1FF","translate":"Hit a mob using all six types of shovels"},
+		"announce_to_chat": "true",
+		"frame": "goal"
+	},
+	"parent": "blazeandcave:weaponry/axeman",
+	"rewards": {
+		"function": "bc_rewards:weaponry/shovel_knight"
+	},		
+	"criteria": {
+		"wooden_shovel": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"entity": {
+					"distance": {
+						"absolute": {
+							"max": 5
+						}
+					}
+				},			
+				"damage": {
+					"type": {
+						"source_entity": {
+							"nbt": "{SelectedItem:{id:\"minecraft:wooden_shovel\",}}"
+						}
+					}
+				}
+			}
+		},
+		"stone_shovel": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"entity": {
+					"distance": {
+						"absolute": {
+							"max": 5
+						}
+					}
+				},
+				"damage": {
+					"type": {
+						"source_entity": {
+							"nbt": "{SelectedItem:{id:\"minecraft:stone_shovel\",}}"
+						}
+					}
+				}
+			}
+		},
+		"iron_shovel": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"entity": {
+					"distance": {
+						"absolute": {
+							"max": 5
+						}
+					}
+				},
+				"damage": {
+					"type": {
+						"source_entity": {
+							"nbt": "{SelectedItem:{id:\"minecraft:iron_shovel\",}}"
+						}
+					}
+				}
+			}
+		},
+		"golden_shovel": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"entity": {
+					"distance": {
+						"absolute": {
+							"max": 5
+						}
+					}
+				},
+				"damage": {
+					"type": {
+						"source_entity": {
+							"nbt": "{SelectedItem:{id:\"minecraft:golden_shovel\",}}"
+						}
+					}
+				}
+			}
+		},
+		"diamond_shovel": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"entity": {
+					"distance": {
+						"absolute": {
+							"max": 5
+						}
+					}
+				},
+				"damage": {
+					"type": {
+						"source_entity": {
+							"nbt": "{SelectedItem:{id:\"minecraft:diamond_shovel\",}}"
+						}
+					}
+				}
+			}
+		},
+		"netherite_shovel": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"entity": {
+					"distance": {
+						"absolute": {
+							"max": 5
+						}
+					}
+				},
+				"damage": {
+					"type": {
+						"source_entity": {
+							"nbt": "{SelectedItem:{id:\"minecraft:netherite_shovel\",}}"
+						}
+					}
+				}
+			}
+		}
+	}
+}

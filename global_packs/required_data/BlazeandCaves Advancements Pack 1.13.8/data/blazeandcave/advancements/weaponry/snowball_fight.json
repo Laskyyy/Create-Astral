@@ -1,0 +1,29 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:snowball"
+		},
+		"title": {"translate":"Snowball Fight"},
+		"description": {"translate":"The spirit of Christmas... quickly drowned out by a battle"},
+		"announce_to_chat": "true"
+	},
+	"parent": "blazeandcave:weaponry/root",
+	"rewards": {
+		"function": "bc_rewards:weaponry/snowball_fight"
+	},		
+	"criteria": {
+		"snowball": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"damage": {
+					"type": {
+						"is_projectile": true,
+						"direct_entity": {
+							"type": "minecraft:snowball"
+						}
+					}
+				}
+			}
+		}
+	}
+}

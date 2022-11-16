@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:rabbit_foot"
+        },
+        "title": {"translate":"Hopping Mad"},
+        "description": {"translate":"Get jump boost from a beacon or a potion"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:potion/marine_marauder",
+    "rewards": {
+		"function": "bc_rewards:potion/hopping_mad"
+    },		
+    "criteria": {
+        "jump_boost": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:jump_boost": {}
+                }
+            }
+        }
+    }
+}

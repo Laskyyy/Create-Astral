@@ -1,0 +1,47 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:honeycomb"
+		},
+		"title": {"translate":"Wax On"},
+		"description": {"translate":"Use Honeycombs to wax a Copper Block, preventing it from oxidising"},
+		"announce_to_chat": "true"
+	},
+	"parent": "blazeandcave:mining/dont_come_a_copper",
+	"rewards": {
+		"function": "bc_rewards:mining/wax_on"
+	},		
+	"criteria": {
+		"obtain_waxed_block": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"tag": "blazeandcave:waxed_copper_blocks"
+					}
+				]
+			}
+		},
+		"directly_wax_block": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"tag": "blazeandcave:waxed_copper_blocks"
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:honeycomb"
+					]
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"obtain_waxed_block",
+			"directly_wax_block"
+		]
+	]
+}

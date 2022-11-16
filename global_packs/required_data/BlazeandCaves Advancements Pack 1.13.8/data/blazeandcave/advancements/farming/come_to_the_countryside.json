@@ -1,0 +1,53 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:beetroot_seeds"
+        },
+        "title": {"translate":"Come to the countryside!"},
+        "description": {"color":"#75E1FF","translate":"Plant every single type of crop on farmland"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:farming/one_course_meal",
+	"rewards": {
+		"function": "bc_rewards:farming/come_to_the_countryside"
+    },		
+    "criteria": {
+        "wheat": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:wheat"
+            }
+        },
+        "pumpkin_stem": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:pumpkin_stem"
+            }
+        },
+        "melon_stem": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:melon_stem"
+            }
+        },
+        "beetroots": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:beetroots"
+            }
+        },
+        "carrots": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:carrots"
+            }
+        },
+        "potatoes": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:potatoes"
+            }
+        }
+    }
+}

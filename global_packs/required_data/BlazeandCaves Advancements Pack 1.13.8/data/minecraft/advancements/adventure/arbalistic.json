@@ -1,0 +1,24 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:spectral_arrow"
+		},
+		"title": {"translate":"Arbalistic"},
+		"description": {"translate":"Kill five unique mobs with one crossbow shot"},
+		"announce_to_chat": "true",
+		"frame": "challenge"
+	},
+	"parent": "blazeandcave:enchanting/shotbow",
+	"rewards": {
+		"function": "bc_rewards:enchanting/arbalistic"
+	},	
+	"criteria": {
+		"arbalistic": {
+			"trigger": "minecraft:killed_by_crossbow",
+			"conditions": {
+				"victims": [],
+				"unique_entity_types": 5
+			}
+		}
+	}
+}

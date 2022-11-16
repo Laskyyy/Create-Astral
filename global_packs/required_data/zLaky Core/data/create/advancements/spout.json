@@ -1,0 +1,1 @@
+{"parent":"create:copper_casing","display":{"icon":{"item":"create:spout"},"title":{"translate":"advancement.create.spout"},"description":{"color":"#DBA213","translate":"advancement.create.spout.desc"},"frame":"task","show_toast":true,"announce_to_chat":true,"hidden":false},"criteria":{"0":{"trigger":"create:spout_builtin","conditions":{}}},"requirements":[["0"]]}

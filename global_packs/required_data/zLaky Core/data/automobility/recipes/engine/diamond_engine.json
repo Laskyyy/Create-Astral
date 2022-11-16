@@ -1,0 +1,17 @@
+{
+    "type": "automobility:auto_mechanic_table",
+    "category": "automobility:engines",
+    "sortnum": 4,
+    "ingredients": [
+        {"item": "minecraft:diamond_block"},
+        {"item": "ad_astra:desh_block"},
+        {"item": "ad_astra:coal_generator"},
+        {"item": "ad_astra:cryo_fuel_bucket"},
+        {"item": "createastral:navigation_mechanism"},
+        {"item": "indrev:enriched_nikolite_ingot"}
+    ],
+    "result": {
+        "item": "automobility:automobile_engine",
+        "component": "automobility:diamond"
+    }
+}

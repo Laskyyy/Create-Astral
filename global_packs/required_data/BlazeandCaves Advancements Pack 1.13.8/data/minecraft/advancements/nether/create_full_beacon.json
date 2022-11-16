@@ -1,0 +1,23 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:beacon"
+		},
+		"title": {"translate":"Beaconator"},
+		"description": {"translate":"Bring a beacon to full power"},
+		"announce_to_chat": "true",
+		"frame": "challenge"
+	},
+	"parent": "minecraft:nether/create_beacon",
+	"rewards": {
+		"function": "bc_rewards:nether/beaconator"
+	},	
+	"criteria": {
+		"beacon": {
+			"trigger": "minecraft:construct_beacon",
+			"conditions": {
+				"level": 4
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "c:nuggets/netherite_scrap"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_debris",
+    "amount": 1000
+  },
+  "temperature": 800,
+  "time": 24
+}

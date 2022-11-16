@@ -1,0 +1,29 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:stone_axe"
+		},
+		"title": {"translate":"Wax Off"},
+		"description": {"translate":"Use an axe to scrape wax off of a Copper Block"},
+		"announce_to_chat": "true"
+	},
+	"parent": "minecraft:husbandry/wax_on",
+	"rewards": {
+		"function": "bc_rewards:mining/wax_off"
+	},		
+	"criteria": {
+		"wax_off": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"tag": "blazeandcave:waxed_copper_blocks"
+					}
+				},
+				"item": {
+					"tag": "blazeandcave:axes"
+				}
+			}
+		}
+	}
+}

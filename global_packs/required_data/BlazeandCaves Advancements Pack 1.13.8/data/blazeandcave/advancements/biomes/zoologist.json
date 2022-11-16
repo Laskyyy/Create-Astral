@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:panda_spawn_egg"
+        },
+        "title": {"translate":"Zoologist"},
+        "description": {"translate":"Breed two pandas to get a baby panda"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:biomes/construction_worker",
+	"rewards": {
+		"function": "bc_rewards:biomes/zoologist"
+    },		
+    "criteria": {
+        "panda": {
+            "trigger": "minecraft:bred_animals",
+            "conditions": {
+				"parent": {
+					"type": "minecraft:panda"
+				},
+				"partner": {
+					"type": "minecraft:panda"
+				}
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "defaultTooltipConfig": {
+    "showWhenEmpty": false,
+    "rows": -1,
+    "columns": -1,
+    "usePredefinedColor": false,
+    "enable": true,
+    "compact": false
+  },
+  "tooltips": {},
+  "defaultValidationConfig": {
+    "suppressValidationInCreative": true,
+    "requiresPlayerOnGround": true,
+    "enable": true
+  },
+  "validation": {}
+}

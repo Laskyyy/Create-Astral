@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "tconstruct:calorite",
+  "temperature": 950,
+  "result": {
+    "fluid": "kubejs:molten_calorite",
+    "amount": 9000
+  }
+}

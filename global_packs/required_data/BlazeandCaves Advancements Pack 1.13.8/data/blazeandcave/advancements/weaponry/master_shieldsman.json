@@ -1,0 +1,337 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:shield",
+			"nbt": "{BlockEntityTag:{Base:15}}"
+		},
+		"title": {"translate":"Master Shieldsman"},
+		"description": {"translate":"Deflect an attack from every hostile monster"},
+		"announce_to_chat": "true",
+		"frame": "challenge"
+	},
+	"parent": "blazeandcave:weaponry/flying_colors",
+	"rewards": {
+		"function": "bc_rewards:weaponry/master_shieldsman"
+	},
+	"criteria": {
+		"cave_spider": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "cave_spider"
+					}
+				}
+			}
+		},
+		"spider": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "spider"
+					}
+				}
+			}
+		},
+		"zombified_piglin": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "zombified_piglin"
+					}
+				}
+			}
+		},
+		"enderman": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "enderman"
+					}
+				}
+			}
+		},
+		"blaze": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "blaze"
+					}
+				}
+			}
+		},
+		"creeper": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "creeper"
+					}
+				}
+			}
+		},
+		"ghast": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "ghast"
+					}
+				}
+			}
+		},
+		"husk": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "husk"
+					}
+				}
+			}
+		},
+		"magma_cube": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "magma_cube"
+					}
+				}
+			}
+		},
+		"shulker": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "shulker"
+					}
+				}
+			}
+		},
+		"silverfish": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "silverfish"
+					}
+				}
+			}
+		},
+		"skeleton": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "skeleton"
+					}
+				}
+			}
+		},
+		"slime": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "slime"
+					}
+				}
+			}
+		},
+		"stray": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "stray"
+					}
+				}
+			}
+		},
+		"vindicator": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "vindicator"
+					}
+				}
+			}
+		},
+		"wither_skeleton": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "wither_skeleton"
+					}
+				}
+			}
+		},
+		"zombie": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "zombie"
+					}
+				}
+			}
+		},
+		"zombie_villager": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "zombie_villager"
+					}
+				}
+			}
+		},
+		"phantom": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "phantom"
+					}
+				}
+			}
+		},
+		"drowned": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "drowned"
+					}
+				}
+			}
+		},
+		"pillager": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "pillager"
+					}
+				}
+			}
+		},
+		"ravager": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "ravager"
+					}
+				}
+			}
+		},
+		"endermite": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "endermite"
+					}
+				}
+			}
+		},
+		"vex": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "vex"
+					}
+				}
+			}
+		},
+		"piglin": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "piglin"
+					}
+				}
+			}
+		},
+		"hoglin": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "hoglin"
+					}
+				}
+			}
+		},
+		"zoglin": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "zoglin"
+					}
+				}
+			}
+		},
+		"piglin_brute": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "piglin_brute"
+					}
+				}
+			}
+		},
+		"ender_dragon": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"blocked": true,
+					"source_entity": {
+						"type": "ender_dragon"
+					}
+				}
+			}
+		}
+	}
+}

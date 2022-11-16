@@ -1,0 +1,95 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:stonecutter"
+        },
+        "title": {"translate":"Town Planner"},
+        "description": {"color":"#75E1FF","translate":"Craft and place every type of villager workstation"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:adventure/village_settler",
+	"rewards": {
+		"function": "bc_rewards:adventure/town_planner"
+    },		
+    "criteria": {
+        "composter": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:composter"
+            }
+        },
+        "barrel": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:barrel"
+            }
+        },
+        "loom": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:loom"
+            }
+        },
+        "fletching_table": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:fletching_table"
+            }
+        },
+        "brewing_stand": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:brewing_stand"
+            }
+        },
+        "smoker": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:smoker"
+            }
+        },
+        "cauldron": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:cauldron"
+            }
+        },
+        "grindstone": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:grindstone"
+            }
+        },
+        "blast_furnace": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:blast_furnace"
+            }
+        },
+        "smithing_table": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:smithing_table"
+            }
+        },
+        "lectern": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:lectern"
+            }
+        },
+        "cartography_table": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:cartography_table"
+            }
+        },
+        "stonecutter": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:stonecutter"
+            }
+        }
+    }
+}

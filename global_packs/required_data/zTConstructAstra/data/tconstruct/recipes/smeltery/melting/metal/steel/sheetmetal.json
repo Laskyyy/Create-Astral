@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "ad_astra:steel_plating"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "ad_astra:steel_plating"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_steel",
+    "amount": 1000
+  },
+  "temperature": 800,
+  "time": 65
+}

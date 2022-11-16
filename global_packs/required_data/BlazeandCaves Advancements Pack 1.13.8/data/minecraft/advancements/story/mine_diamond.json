@@ -1,0 +1,28 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:diamond_ore"
+		},
+		"title": {"translate":"Diamonds!"},
+		"description": {"translate":"Acquire diamonds"},
+		"announce_to_chat": "true"
+	},
+	"parent": "minecraft:story/iron_tools",
+	"rewards": {
+		"function": "bc_rewards:mining/diamonds"
+	},			
+	"criteria": {
+		"diamond": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [ 
+							"minecraft:diamond"
+						]
+					}
+				]
+			}
+		}
+	}
+}

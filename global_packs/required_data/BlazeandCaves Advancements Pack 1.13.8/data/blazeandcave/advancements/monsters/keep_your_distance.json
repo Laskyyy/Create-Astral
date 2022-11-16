@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:bow"
+        },
+        "title": {"translate":"Keep Your Distance"},
+        "description": {"translate":"Kill a Creeper with arrows"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:monsters/what_a_creep",
+    "rewards": {
+        "function": "bc_rewards:monsters/keep_your_distance"
+    },	
+    "criteria": {
+        "creeper": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "killing_blow": {
+                    "is_projectile": true,
+                        "direct_entity": {
+                            "type": "minecraft:arrow"
+                        }
+                },
+                "entity": {
+                    "type": "creeper"
+                }
+            }
+        }	
+    }
+}

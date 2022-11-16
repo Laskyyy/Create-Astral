@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:golden_horse_armor"
+        },
+        "title": {"translate":"Sheriff Firearm"},
+        "description": {"color":"#75E1FF","translate":"Ride 10km on a horse"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:statistics/horse_training",
+	"rewards": {
+		"function": "bc_rewards:statistics/sheriff_firearm"
+    },		
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"stats": [
+							{
+								"type": "minecraft:custom",
+								"stat": "minecraft:horse_one_cm",
+								"value": {
+									"min": 1000000
+								}
+							}
+						]
+					}
+				}
+			}
+        }
+    }
+}

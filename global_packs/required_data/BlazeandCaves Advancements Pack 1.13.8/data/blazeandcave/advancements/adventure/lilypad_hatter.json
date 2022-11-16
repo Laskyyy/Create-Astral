@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:lily_pad"
+        },
+        "title": {"translate":"Lilypad Hatter"},
+        "description": {"color":"#75E1FF","translate":"Breed and trade with a swamp villager"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:adventure/the_tribal_villagers",
+    "rewards": {
+        "function": "bc_rewards:adventure/lilypad_hatter"
+    },		
+    "criteria": {
+        "swamp": {
+            "trigger": "minecraft:villager_trade",
+			"conditions": {
+				"villager": {
+					"nbt": "{VillagerData:{type:\"minecraft:swamp\"}}"
+				}
+			}
+        }	
+    }
+}

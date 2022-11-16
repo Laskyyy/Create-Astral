@@ -1,0 +1,137 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:oak_door"
+        },
+        "title": {"translate":"Your Door Was Locked"},
+        "description": {"translate":"Craft a door to stop monsters from entering your house"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:building/root",
+	"rewards": {
+		"function": "bc_rewards:building/your_door_was_locked"
+    },		
+    "criteria": {
+        "oak_door": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:oak_door"
+						]
+                    }
+                ]
+            }
+        },
+        "spruce_door": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:spruce_door"
+						]
+                    }
+                ]
+            }
+        },
+        "birch_door": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:birch_door"
+						]
+                    }
+                ]
+            }
+        },
+        "jungle_door": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:jungle_door"
+						]
+                    }
+                ]
+            }
+        },
+        "acacia_door": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:acacia_door"
+						]
+                    }
+                ]
+            }
+        },
+        "dark_oak_door": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:dark_oak_door"
+						]
+                    }
+                ]
+            }
+        },
+        "crimson_door": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:crimson_door"
+						]
+                    }
+                ]
+            }
+        },
+        "warped_door": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:warped_door"
+						]
+                    }
+                ]
+            }
+        },
+        "iron_door": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:iron_door"
+						]
+                    }
+                ]
+            }
+        }		
+    },
+    "requirements": [
+		[
+        "oak_door",
+        "spruce_door",
+		"birch_door",
+		"jungle_door",
+		"acacia_door",
+		"dark_oak_door",
+		"crimson_door",
+		"warped_door",
+		"iron_door"
+		]
+    ]	
+}

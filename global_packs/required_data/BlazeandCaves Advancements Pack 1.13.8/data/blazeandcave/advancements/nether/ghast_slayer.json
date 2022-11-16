@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:ghast_spawn_egg"
+        },
+        "title": {"translate":"Ghast Slayer"},
+        "description": {"color":"#75E1FF","translate":"Collect a stack of ghast tears"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:nether/bring_down_the_beast",
+    "rewards": {
+		"function": "bc_rewards:nether/ghast_slayer"
+    },		
+    "criteria": {
+        "ghast_tear": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:ghast_tear"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }
+    }	
+}

@@ -1,0 +1,36 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:totem_of_undying"
+        },
+        "title": {"translate":"Foxy Thievery"},
+        "description": {"color":"#75E1FF","translate":"Give a fox a Totem of Undying"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:animal/blackberry_market",
+    "rewards": {
+        "function": "bc_rewards:animal/foxy_thievery"
+    },
+	"criteria": {
+		"totem_of_undying": {
+			"trigger": "minecraft:thrown_item_picked_up_by_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:totem_of_undying"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:fox"
+						}
+					}
+				]
+			}
+		}
+	}
+}

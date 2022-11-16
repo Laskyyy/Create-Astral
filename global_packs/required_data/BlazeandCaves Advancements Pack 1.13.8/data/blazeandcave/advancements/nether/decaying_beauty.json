@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:wither_rose"
+        },
+        "title": {"translate":"Decaying Beauty"},
+        "description": {"translate":"Pick up some Wither Roses from the damage the Wither wrought on your world"},
+        "announce_to_chat": "true"
+    },
+    "parent": "minecraft:nether/summon_wither",
+	"rewards": {
+		"function": "bc_rewards:nether/decaying_beauty"
+    },		
+    "criteria": {
+        "wither_rose": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:wither_rose"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

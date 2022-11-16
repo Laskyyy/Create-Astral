@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "c:nuggets/netherite"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_netherite",
+    "amount": 1000
+  },
+  "temperature": 800,
+  "time": 25
+}

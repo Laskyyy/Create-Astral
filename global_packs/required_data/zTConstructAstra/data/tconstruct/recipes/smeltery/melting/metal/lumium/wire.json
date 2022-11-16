@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:wires/lumium"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "c:wires/lumium"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_lumium",
+    "amount": 4500
+  },
+  "temperature": 800,
+  "time": 14
+}

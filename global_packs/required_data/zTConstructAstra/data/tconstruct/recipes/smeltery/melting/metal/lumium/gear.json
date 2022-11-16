@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:gears/lumium"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "c:gears/lumium"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_lumium",
+    "amount": 36000
+  },
+  "temperature": 800,
+  "time": 136
+}

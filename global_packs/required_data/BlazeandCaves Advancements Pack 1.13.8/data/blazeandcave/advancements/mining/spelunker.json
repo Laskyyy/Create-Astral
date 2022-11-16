@@ -1,0 +1,45 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:chainmail_helmet"
+        },
+        "title": {"translate":"Spelunker"},
+        "description": {"translate":"Enter an underground cave"},
+        "announce_to_chat": "true"
+    },
+    "parent": "minecraft:story/mine_stone",
+	"rewards": {
+		"function": "bc_rewards:mining/spelunker"
+    },
+    "criteria": {
+        "enter_cave": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "block": {
+					"blocks": [
+						"minecraft:cave_air"
+					]
+				},
+				"position": {
+					"y": {
+						"max": 56.0
+					}
+				},
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        }
+    }
+}

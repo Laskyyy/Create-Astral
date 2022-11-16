@@ -1,0 +1,41 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:firework_rocket"
+        },
+        "title": {"translate":"Uh, Houston? We have a problem"},
+        "description": {"translate":"Fly up to a ridiculous height"},
+        "announce_to_chat": "true",
+        "frame": "challenge"
+    },
+    "parent": "blazeandcave:end/sky_high",
+    "rewards": {
+        "function": "bc_rewards:end/uh_houston_we_have_a_problem"
+    },		
+    "criteria": {
+        "world_height": {
+            "trigger": "minecraft:location",
+            "conditions": {
+				"position": {
+					"y": {
+						"min": 1000.0
+					}
+				},
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "player": {
+                                    "gamemode": "spectator"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }	
+    }
+}

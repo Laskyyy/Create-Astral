@@ -1,0 +1,23 @@
+{
+    "criteria": {
+		"do_not_do_this": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:cookie"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:parrot"
+						}
+					}
+				]
+			}
+		}
+    }
+}

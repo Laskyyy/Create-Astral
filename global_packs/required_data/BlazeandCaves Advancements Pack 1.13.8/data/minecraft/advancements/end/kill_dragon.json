@@ -1,0 +1,25 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:dragon_head"
+		},
+		"title": {"translate":"Free the End"},
+		"description": {"color":"#75E1FF","translate":"Good luck"},
+		"announce_to_chat": "true",
+		"frame": "goal"
+	},
+	"parent": "blazeandcave:end/dragon_shield",
+	"rewards": {
+		"function": "bc_rewards:end/free_the_end"
+	},	
+	"criteria": {
+		"killed_dragon": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+					"type": "ender_dragon"
+				}
+			}
+		}
+	}
+}

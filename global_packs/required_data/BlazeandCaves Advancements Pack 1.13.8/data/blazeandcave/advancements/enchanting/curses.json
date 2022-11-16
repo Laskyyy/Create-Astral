@@ -1,0 +1,83 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:creeper_head"
+        },
+        "title": {"translate":"Curses!"},
+        "description": {"color":"#75E1FF","translate":"Obtain both types of curses"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:enchanting/heavy_metal",
+    "rewards": {
+		"function": "bc_rewards:enchanting/curses"
+    },			
+    "criteria": {
+        "binding_curse": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+				"items": [
+					{
+						"enchantments": [
+							{
+								"enchantment": "minecraft:binding_curse"
+							}
+						]
+					}
+				]
+			}
+		},
+        "vanishing_curse": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+				"items": [
+					{
+						"enchantments": [
+							{
+								"enchantment": "minecraft:vanishing_curse"
+							}
+						]
+					}
+				]
+			}
+		},
+        "binding_curse_book": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+				"items": [
+					{
+						"stored_enchantments": [
+							{
+								"enchantment": "minecraft:binding_curse"
+							}
+						]
+					}
+				]
+			}
+		},
+        "vanishing_curse_book": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+				"items": [
+					{
+						"stored_enchantments": [
+							{
+								"enchantment": "minecraft:vanishing_curse"
+							}
+						]
+					}
+				]
+			}
+		}
+    },	
+    "requirements": [
+        [
+            "binding_curse",
+            "binding_curse_book"
+		],
+        [
+            "vanishing_curse",
+            "vanishing_curse_book"
+		]
+    ]
+}

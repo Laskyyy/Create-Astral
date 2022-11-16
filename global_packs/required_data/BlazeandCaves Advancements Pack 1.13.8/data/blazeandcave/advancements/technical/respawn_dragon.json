@@ -1,0 +1,12 @@
+{
+	"criteria": {
+		"summoned_dragon": {
+			"trigger": "minecraft:summoned_entity",
+			"conditions": {
+				"entity": {
+					"type": "ender_dragon"
+				}
+			}
+		}
+	}
+}

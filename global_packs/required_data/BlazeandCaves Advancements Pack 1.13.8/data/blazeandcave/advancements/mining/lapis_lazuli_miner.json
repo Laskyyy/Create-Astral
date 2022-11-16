@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:lapis_block"
+        },
+        "title": {"translate":"Lapis Lazuli Miner"},
+        "description": {"color":"#75E1FF","translate":"Mine enough lapis lazuli to craft a stack of lapis lazuli blocks"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:mining/diam_oh_wait_no",
+    "rewards": {
+		"function": "bc_rewards:mining/lapis_lazuli_miner"
+    },		
+    "criteria": {
+        "lapis_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:lapis_block"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:trident",
+			"nbt": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}]}"
+        },
+        "title": {"translate":"Elderly Enchanter"},
+        "description": {"translate":"Enchant 250 items"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:statistics/journeyman_enchanter",
+	"rewards": {
+		"function": "bc_rewards:statistics/elderly_enchanter"
+    },		
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"stats": [
+							{
+								"type": "minecraft:custom",
+								"stat": "minecraft:enchant_item",
+								"value": {
+									"min": 250
+								}
+							}
+						]
+					}
+				}
+			}
+        }
+    }
+}

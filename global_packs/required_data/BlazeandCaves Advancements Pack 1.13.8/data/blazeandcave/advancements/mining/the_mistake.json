@@ -1,0 +1,94 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:golden_leggings",
+			"nbt": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}]}"
+        },
+        "title": {"translate":"The Mistake!"},
+        "description": {"translate":"Put Mending on a piece of golden armor and realise what you are doing in life"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:mining/living_like_kings",
+	"rewards": {
+		"function": "bc_rewards:mining/the_mistake"
+    },
+    "criteria": {
+        "golden_helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:golden_helmet"
+						],
+						"enchantments": [
+							{
+								"enchantment": "minecraft:mending"
+							}
+						]
+                    }
+                ]
+            }
+        },
+        "golden_chestplate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:golden_chestplate"
+						],
+						"enchantments": [
+							{
+								"enchantment": "minecraft:mending"
+							}
+						]
+                    }
+                ]
+            }
+        },
+        "golden_leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:golden_leggings"
+						],
+						"enchantments": [
+							{
+								"enchantment": "minecraft:mending"
+							}
+						]
+                    }
+                ]
+            }
+        },
+        "golden_boots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:golden_boots"
+						],
+						"enchantments": [
+							{
+								"enchantment": "minecraft:mending"
+							}
+						]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "golden_helmet",
+            "golden_chestplate",
+            "golden_leggings",
+            "golden_boots"
+        ]
+    ]
+}

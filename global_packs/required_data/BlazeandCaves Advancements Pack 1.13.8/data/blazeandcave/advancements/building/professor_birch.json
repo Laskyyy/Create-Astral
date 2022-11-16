@@ -1,0 +1,197 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:birch_sapling"
+        },
+        "title": {"translate":"Professor Birch"},
+        "description": {"color":"#75E1FF","translate":"Craft every item made out of birch wood"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:building/spruce_lee",
+    "rewards": {
+		"function": "bc_rewards:building/professor_birch"
+    },		
+    "criteria": {
+        "birch_planks": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:birch_planks"
+						]
+                    }
+                ]
+            }
+        },
+        "birch_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:birch_log"
+						]
+                    }
+                ]
+            }
+        },
+        "birch_wood": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:birch_wood"
+						]
+                    }
+                ]
+            }
+        },
+        "stripped_birch_log": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:stripped_birch_log"
+						]
+                    }
+                ]
+            }
+        },
+        "stripped_birch_wood": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:stripped_birch_wood"
+						]
+                    }
+                ]
+            }
+        },
+        "birch_slab": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:birch_slab"
+						]
+                    }
+                ]
+            }
+        },
+        "birch_pressure_plate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:birch_pressure_plate"
+						]
+                    }
+                ]
+            }
+        },
+        "birch_fence": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:birch_fence"
+						]
+                    }
+                ]
+            }
+        },
+        "birch_trapdoor": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:birch_trapdoor"
+						]
+                    }
+                ]
+            }
+        },
+        "birch_fence_gate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:birch_fence_gate"
+						]
+                    }
+                ]
+            }
+        },
+        "birch_stairs": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:birch_stairs"
+						]
+                    }
+                ]
+            }
+        },
+        "birch_button": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:birch_button"
+						]
+                    }
+                ]
+            }
+        },
+        "birch_door": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:birch_door"
+						]
+                    }
+                ]
+            }
+        },
+        "birch_boat": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:birch_boat"
+						]
+                    }
+                ]
+            }
+        },
+        "birch_sign": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:birch_sign"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+{
+	"rewards": {
+        "function": "blazeandcave:riddle/seventh_line"
+	},
+	"criteria": {
+		"seventh_line": {
+			"trigger": "minecraft:thrown_item_picked_up_by_entity",
+			"conditions": {
+				"item": {
+					"tag": "minecraft:piglin_loved"
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"type": "minecraft:piglin",
+							"flags": {
+								"is_baby": true
+							}
+						},
+						"entity": "this"
+					}
+				],
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:technical/riddle_sixth_line": "true"
+						}
+					}
+				}
+			}
+		},
+		"seventh_line_directly": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"tag": "minecraft:piglin_loved"
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"type": "minecraft:piglin",
+							"flags": {
+								"is_baby": true
+							}
+						},
+						"entity": "this"
+					}
+				],
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:technical/riddle_sixth_line": "true"
+						}
+					}
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"seventh_line",
+			"seventh_line_directly"
+		]
+	]
+}

@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:light_gray_wool"
+        },
+        "title": {"translate":"Sheariously?"},
+        "description": {"color":"#75E1FF","translate":"Collect a stack of white wool"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:animal/have_a_shearful_day",
+    "rewards": {
+		"function": "bc_rewards:animal/sheariously"
+    },		
+    "criteria": {
+        "white_wool": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:white_wool"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }		
+    }	
+}

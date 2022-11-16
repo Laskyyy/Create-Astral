@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:salmon"
+        },
+        "title": {"translate":"Salmonella Poisoning"},
+        "description": {"translate":"Eat some raw salmon... and not get poisoned after all"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:animal/sushi",
+	"rewards": {
+		"function": "bc_rewards:animal/salmonella_poisoning"
+    },		
+    "criteria": {
+        "salmon": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+					"items": [
+						"minecraft:salmon"
+					]
+                }
+            }
+        }
+    }
+}

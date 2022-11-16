@@ -1,0 +1,28 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:crafting_table"
+		},
+		"title": {"translate":"Benchmarking"},
+		"description": {"translate":"Construct a crafting bench with four wooden planks"},
+		"announce_to_chat": "true"
+	},
+	"parent": "blazeandcave:bacap/getting_wood",
+	"rewards": {
+		"function": "bc_rewards:bacap/benchmarking"
+	},		
+	"criteria": {
+		"crafting_table": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [ 
+							"minecraft:crafting_table"
+						]
+					}
+				]
+			}
+		}
+	}
+}

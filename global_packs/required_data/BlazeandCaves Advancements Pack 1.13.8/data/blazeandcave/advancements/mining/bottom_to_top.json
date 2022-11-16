@@ -1,0 +1,199 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diorite"
+        },
+        "title": {"translate":"Bottom to Top"},
+        "description": {"translate":"Place every cave block at the very top of the world"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:mining/rock_bottom",
+	"rewards": {
+		"function": "bc_rewards:mining/bottom_to_top"
+    },		
+    "criteria": {
+        "stone": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:stone",
+				"location": {
+					"position": {
+						"y": {
+							"min": 319
+						},
+						"dimension": "minecraft:overworld"
+					}
+				}
+            }
+        },
+        "granite": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:granite",
+				"location": {
+					"position": {
+						"y": {
+							"min": 319
+						},
+						"dimension": "minecraft:overworld"
+					}
+				}
+            }
+        },
+        "andesite": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:andesite",
+				"location": {
+					"position": {
+						"y": {
+							"min": 319
+						},
+						"dimension": "minecraft:overworld"
+					}
+				}
+            }
+        },
+        "diorite": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:diorite",
+				"location": {
+					"position": {
+						"y": {
+							"min": 319
+						},
+						"dimension": "minecraft:overworld"
+					}
+				}
+            }
+        },
+        "gravel": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:gravel",
+				"location": {
+					"position": {
+						"y": {
+							"min": 319
+						},
+						"dimension": "minecraft:overworld"
+					}
+				}
+            }
+        },
+        "dirt": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:dirt",
+				"location": {
+					"position": {
+						"y": {
+							"min": 319
+						},
+						"dimension": "minecraft:overworld"
+					}
+				}
+            }
+        },
+        "deepslate": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:deepslate",
+				"location": {
+					"position": {
+						"y": {
+							"min": 319
+						},
+						"dimension": "minecraft:overworld"
+					}
+				}
+            }
+        },
+        "tuff": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:tuff",
+				"location": {
+					"position": {
+						"y": {
+							"min": 319
+						},
+						"dimension": "minecraft:overworld"
+					}
+				}
+            }
+        },
+        "moss_block": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:moss_block",
+				"location": {
+					"position": {
+						"y": {
+							"min": 319
+						},
+						"dimension": "minecraft:overworld"
+					}
+				}
+            }
+        },
+        "moss_carpet": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:moss_carpet",
+				"location": {
+					"position": {
+						"y": {
+							"min": 319
+						},
+						"dimension": "minecraft:overworld"
+					}
+				}
+            }
+        },
+        "clay": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:clay",
+				"location": {
+					"position": {
+						"y": {
+							"min": 319
+						},
+						"dimension": "minecraft:overworld"
+					}
+				}
+            }
+        },
+        "dripstone_block": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:dripstone_block",
+				"location": {
+					"position": {
+						"y": {
+							"min": 319
+						},
+						"dimension": "minecraft:overworld"
+					}
+				}
+            }
+        },
+        "pointed_dripstone": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:pointed_dripstone",
+				"location": {
+					"position": {
+						"y": {
+							"min": 319
+						},
+						"dimension": "minecraft:overworld"
+					}
+				}
+            }
+        }
+    }
+}

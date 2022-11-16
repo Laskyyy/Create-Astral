@@ -1,0 +1,29 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:trident"
+		},
+		"title": {"translate":"A Throwaway Joke"},
+		"description": {"translate":"Throw a trident at something. Note: Throwing away your only weapon is not a good idea"},
+		"announce_to_chat": "true"
+	},
+	"parent": "blazeandcave:weaponry/root",
+	"rewards": {
+		"function": "bc_rewards:weaponry/a_throwaway_joke"
+	},
+	"criteria": {
+		"shot_trident": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"damage": {
+					"type": {
+						"is_projectile": true,
+						"direct_entity": {
+							"type": "minecraft:trident"
+						}
+					}
+				}
+			}
+		}
+	}
+}

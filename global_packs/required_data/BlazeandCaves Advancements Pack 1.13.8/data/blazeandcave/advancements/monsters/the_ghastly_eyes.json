@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:fermented_spider_eye"
+        },
+        "title": {"translate":"The Ghastly Eyes"},
+        "description": {"translate":"Kill an invisible spider"},
+        "announce_to_chat": "true",
+        "frame": "challenge"
+    },
+    "parent": "blazeandcave:monsters/spider_skeleton",
+	"rewards": {
+		"function": "bc_rewards:monsters/the_ghastly_eyes"
+    },	
+    "criteria": {
+        "invisible_spider": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "#blazeandcave:spiders",
+                    "effects": {
+						"minecraft:invisibility": {}
+					}
+                }
+            }
+        }
+    }
+}

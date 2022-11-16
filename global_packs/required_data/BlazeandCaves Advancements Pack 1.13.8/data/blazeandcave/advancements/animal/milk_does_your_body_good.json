@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:milk_bucket"
+        },
+        "title": {"translate":"Milk does your body good"},
+        "description": {"translate":"Take a swig swig swig swig"},
+        "announce_to_chat": "true"
+    },
+    "parent": "minecraft:husbandry/breed_an_animal",
+	"rewards": {
+		"function": "bc_rewards:animal/milk_does_your_body_good"
+    },		
+    "criteria": {
+        "milk_bucket": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+					"items": [
+						"minecraft:milk_bucket"
+					]
+                }
+            }
+        }
+    }
+}

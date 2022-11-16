@@ -1,0 +1,44 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:structure_void"
+        },
+        "title": {"translate":"The Invisible Player"},
+        "description": {"translate":"Brew and drink an invisibility potion"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:potion/nocturnal",
+	"rewards": {
+		"function": "bc_rewards:potion/the_invisible_player"
+    },	
+    "criteria": {
+        "invisibility": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+					"items": [
+						"minecraft:potion"
+					],
+					"nbt": "{Potion:\"minecraft:invisibility\"}"
+                }
+            }
+        },
+        "long_invisibility": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+					"items": [
+						"minecraft:potion"
+					],
+					"nbt": "{Potion:\"minecraft:long_invisibility\"}"
+                }
+            }
+        }
+    },
+	"requirements": [
+		[
+			"invisibility",
+			"long_invisibility"
+		]
+	]
+}

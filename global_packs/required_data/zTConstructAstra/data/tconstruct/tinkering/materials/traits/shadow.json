@@ -1,0 +1,16 @@
+{
+  "default": [
+    {
+      "name": "tconstruct:sturdy",
+      "level": 2
+    },
+    {
+      "name": "tconstruct:ductile",
+      "level": 1
+    },
+    {
+      "name": "tconstruct:crumbling",
+      "level": 1
+    }
+  ]
+}

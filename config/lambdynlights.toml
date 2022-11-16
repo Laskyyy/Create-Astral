@@ -1,0 +1,316 @@
+# LambDynamicLights configuration.
+# The dynamic lights mode
+mode = "fastest"
+
+# Light sources settings.
+[light_sources]
+	# Enables water-sensitive light sources check. This means that water-sensitive items will not light up when submerged in water.
+	water_sensitive_check = true
+	# Enable block entities light source.
+	block_entities = true
+	# Enable entities light source.
+	entities = true
+	# TNT lighting mode. May be off, simple or fancy.
+	tnt = "off"
+	# Creeper lighting mode. May be off, simple or fancy.
+	creeper = "simple"
+
+	[light_sources.settings]
+
+		[light_sources.settings.block_entities]
+
+			[light_sources.settings.block_entities.minecraft]
+				bed = true
+				furnace = true
+				dropper = true
+				daylight_detector = true
+				sign = true
+				jukebox = true
+				brewing_stand = true
+				sculk_sensor = true
+				conduit = true
+				beehive = true
+				dispenser = true
+				smoker = true
+				lectern = true
+				skull = true
+				campfire = true
+				barrel = true
+				chest = true
+				piston = true
+				end_portal = true
+				shulker_box = true
+				enchanting_table = true
+				banner = true
+				structure_block = true
+				ender_chest = true
+				bell = true
+				end_gateway = true
+				comparator = true
+				beacon = true
+				command_block = true
+				jigsaw = true
+				hopper = true
+				mob_spawner = true
+				trapped_chest = true
+				blast_furnace = true
+
+			[light_sources.settings.block_entities.toms_storage]
+
+				[light_sources.settings.block_entities.toms_storage.ts]
+
+					[light_sources.settings.block_entities.toms_storage.ts.storage_terminal]
+						tile = true
+
+					[light_sources.settings.block_entities.toms_storage.ts.level_emitter]
+						tile = true
+
+					[light_sources.settings.block_entities.toms_storage.ts.inventory_cable_connector_filtered]
+						tile = true
+
+					[light_sources.settings.block_entities.toms_storage.ts.painted]
+						tile = true
+
+					[light_sources.settings.block_entities.toms_storage.ts.inventory_cable_connector]
+						tile = true
+
+					[light_sources.settings.block_entities.toms_storage.ts.inventoty_hopper_basic]
+						tile = true
+
+					[light_sources.settings.block_entities.toms_storage.ts.crafting_terminal]
+						tile = true
+
+					[light_sources.settings.block_entities.toms_storage.ts.inventory_proxy]
+						tile = true
+
+					[light_sources.settings.block_entities.toms_storage.ts.inventory_connector]
+						tile = true
+
+					[light_sources.settings.block_entities.toms_storage.ts.open_crate]
+						tile = true
+
+			[light_sources.settings.block_entities.create]
+				pulse_repeater = true
+				mechanical_bearing = true
+				schematicannon = true
+				depot = true
+				clockwork_bearing = true
+				funnel = true
+				chute = true
+				hand_crank = true
+				simple_kinetic = true
+				fluid_pipe = true
+				rope_pulley = true
+				encased_cogwheel = true
+				harvester = true
+				mechanical_crafter = true
+				lectern_controller = true
+				cursed_bell = true
+				encased_shaft = true
+				hose_pulley = true
+				item_drain = true
+				rotation_speed_controller = true
+				belt = true
+				creative_crate = true
+				basin = true
+				chassis = true
+				encased_fluid_pipe = true
+				fluid_valve = true
+				brass_tunnel = true
+				gantry_pinion = true
+				fluid_tank = true
+				schematic_table = true
+				portable_fluid_interface = true
+				analog_lever = true
+				clutch = true
+				windmill_bearing = true
+				toolbox = true
+				cuckoo_clock = true
+				speedometer = true
+				millstone = true
+				creative_fluid_tank = true
+				peculiar_bell = true
+				motor = true
+				furnace_engine = true
+				pulse_extender = true
+				turntable = true
+				gantry_shaft = true
+				sequenced_gearshift = true
+				crushing_wheel = true
+				mechanical_arm = true
+				item_vault = true
+				blaze_heater = true
+				weighted_ejector = true
+				spout = true
+				flywheel = true
+				adjustable_pulley = true
+				content_observer = true
+				gearbox = true
+				deployer = true
+				stockpile_switch = true
+				andesite_tunnel = true
+				stressometer = true
+				smart_chute = true
+				sticker = true
+				saw = true
+				copper_backtank = true
+				encased_large_cogwheel = true
+				nixie_tube = true
+				drill = true
+				mechanical_pump = true
+				mechanical_mixer = true
+				water_wheel = true
+				nozzle = true
+				cart_assembler = true
+				mechanical_piston = true
+				mechanical_press = true
+				encased_fan = true
+				glass_fluid_pipe = true
+				smart_fluid_pipe = true
+				gearshift = true
+				portable_storage_interface = true
+				crushing_wheel_controller = true
+				redstone_link = true
+
+			[light_sources.settings.block_entities.createaddition]
+				creative_energy = true
+				furnace_burner = true
+				connector = true
+				redstone_relay = true
+				electric_motor = true
+				heater = true
+				tesla_coil = true
+				alternator = true
+				accumulator = true
+				crude_burner = true
+				rolling_mill = true
+
+		[light_sources.settings.entities]
+
+			[light_sources.settings.entities.minecraft]
+				zombie_horse = true
+				axolotl = true
+				egg = true
+				zoglin = true
+				spawner_minecart = true
+				llama = true
+				mule = true
+				bat = true
+				husk = true
+				experience_bottle = true
+				rabbit = true
+				firework_rocket = true
+				silverfish = true
+				giant = true
+				drowned = true
+				item = true
+				goat = true
+				horse = true
+				vindicator = true
+				minecart = true
+				spectral_arrow = true
+				llama_spit = true
+				mooshroom = true
+				glow_item_frame = false
+				tnt = true
+				snowball = true
+				parrot = true
+				creeper = true
+				lightning_bolt = true
+				ravager = true
+				evoker_fangs = true
+				chest_minecart = true
+				tropical_fish = true
+				slime = true
+				pillager = true
+				area_effect_cloud = true
+				blaze = true
+				piglin = true
+				end_crystal = true
+				endermite = true
+				zombie = true
+				ender_pearl = true
+				guardian = true
+				fireball = true
+				illusioner = true
+				eye_of_ender = true
+				wither_skull = true
+				wolf = true
+				zombie_villager = true
+				tnt_minecart = true
+				elder_guardian = true
+				boat = true
+				small_fireball = true
+				strider = true
+				cave_spider = true
+				witch = true
+				cod = true
+				snow_golem = true
+				spider = true
+				command_block_minecart = true
+				panda = true
+				bee = true
+				arrow = true
+				cow = true
+				magma_cube = true
+				pig = true
+				skeleton = true
+				hoglin = true
+				armor_stand = true
+				experience_orb = true
+				dolphin = true
+				stray = true
+				turtle = true
+				shulker = true
+				salmon = true
+				wandering_trader = true
+				vex = true
+				wither_skeleton = true
+				piglin_brute = true
+				ocelot = true
+				furnace_minecart = true
+				item_frame = true
+				phantom = true
+				ender_dragon = true
+				leash_knot = true
+				evoker = true
+				marker = true
+				glow_squid = true
+				squid = true
+				shulker_bullet = true
+				enderman = true
+				dragon_fireball = true
+				chicken = true
+				trader_llama = true
+				donkey = true
+				fox = true
+				iron_golem = true
+				zombified_piglin = true
+				cat = true
+				ghast = true
+				sheep = true
+				player = true
+				pufferfish = true
+				potion = true
+				trident = true
+				villager = true
+				skeleton_horse = true
+				fishing_bobber = true
+				polar_bear = true
+				hopper_minecart = true
+				falling_block = true
+				painting = true
+				wither = true
+
+			[light_sources.settings.entities.immersive_portals]
+				loading_indicator = true
+
+			[light_sources.settings.entities.create]
+				seat = true
+				stationary_contraption = true
+				contraption = true
+				gantry_contraption = true
+				super_glue = true
+				crafting_blueprint = true
+				potato_projectile = true
+

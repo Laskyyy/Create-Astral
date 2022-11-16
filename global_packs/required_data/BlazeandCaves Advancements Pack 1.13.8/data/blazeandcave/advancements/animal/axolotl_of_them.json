@@ -1,0 +1,117 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:bucket"
+        },
+        "title": {"translate":"Axolotl of them"},
+        "description": {"color":"#75E1FF","translate":"Catch all variants of Axolotls inside a Bucket"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:animal/axolittle",
+    "rewards": {
+		"function": "bc_rewards:animal/axolotl_of_them"
+    },		
+    "criteria": {
+		"leucistic": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:water_bucket"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:axolotl",
+							"nbt": "{Variant:0}"
+						}
+					}
+				]
+			}
+		},
+		"wild": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:water_bucket"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:axolotl",
+							"nbt": "{Variant:1}"
+						}
+					}
+				]
+			}
+		},
+		"gold": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:water_bucket"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:axolotl",
+							"nbt": "{Variant:2}"
+						}
+					}
+				]
+			}
+		},
+		"cyan": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:water_bucket"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:axolotl",
+							"nbt": "{Variant:3}"
+						}
+					}
+				]
+			}
+		},
+		"blue": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:water_bucket"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:axolotl",
+							"nbt": "{Variant:4}"
+						}
+					}
+				]
+			}
+		}
+	}	
+}

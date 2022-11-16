@@ -1,0 +1,51 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:bucket"
+		},
+		"title": {"translate":"How Did We Get Here?"},
+		"description": {"color":"#FF2A2A","translate":"Have every effect applied at the same time"},
+		"announce_to_chat": "true",
+		"frame": "challenge",
+		"hidden": false
+	},
+	"parent": "blazeandcave:challenges/global_vaccination",
+	"rewards": {
+		"function": "bc_rewards:challenges/how_did_we_get_here"
+	},	
+	"criteria": {
+		"all_effects": {
+			"trigger": "minecraft:effects_changed",
+			"conditions": {
+				"effects": {
+					"minecraft:speed": {},
+					"minecraft:slowness": {},
+					"minecraft:strength": {},
+					"minecraft:jump_boost": {},
+					"minecraft:regeneration": {},
+					"minecraft:fire_resistance": {},
+					"minecraft:water_breathing": {},
+					"minecraft:invisibility": {},
+					"minecraft:night_vision": {},
+					"minecraft:weakness": {},
+					"minecraft:poison": {},
+					"minecraft:wither": {},
+					"minecraft:haste": {},
+					"minecraft:mining_fatigue": {},
+					"minecraft:levitation": {},
+					"minecraft:glowing": {},
+					"minecraft:absorption": {},
+					"minecraft:hunger": {},
+					"minecraft:nausea": {},
+					"minecraft:resistance": {},
+					"minecraft:slow_falling": {},
+					"minecraft:conduit_power": {},
+					"minecraft:dolphins_grace": {},
+					"minecraft:blindness": {},
+					"minecraft:bad_omen": {},
+					"minecraft:hero_of_the_village": {}
+				}
+			}
+		}
+	}
+}

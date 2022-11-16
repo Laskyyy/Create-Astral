@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:anvil"
+        },
+        "title": {"translate":"Heavy Metal"},
+        "description": {"translate":"Craft an anvil"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:enchanting/root",
+	"rewards": {
+		"function": "bc_rewards:enchanting/heavy_metal"
+    },
+    "criteria": {
+        "anvil": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:anvil"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

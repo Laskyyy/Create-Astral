@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:ocelot_spawn_egg"
+        },
+        "title": {"translate":"Simba"},
+        "description": {"color":"#75E1FF","translate":"Breed a baby ocelot"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:biomes/lion_hunter",
+	"rewards": {
+		"function": "bc_rewards:biomes/simba"
+    },		
+    "criteria": {
+        "ocelot": {
+            "trigger": "minecraft:bred_animals",
+            "conditions": {
+				"parent": {
+					"type": "minecraft:ocelot"
+				},
+				"partner": {
+					"type": "minecraft:ocelot"
+				}
+            }
+        }
+    }
+}

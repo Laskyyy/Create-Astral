@@ -1,0 +1,433 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:flint_and_steel"
+        },
+        "title": {"translate":"Gas Bomb"},
+        "description": {"translate":"Ignite a Creeper of each possible effect using Flint and Steel"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:potion/a_furious_test_subject",
+	"rewards": {
+		"function": "bc_rewards:potion/gas_bomb"
+    },		
+    "criteria": {
+		"speed": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:creeper",
+							"effects": {
+								"minecraft:speed": {
+									"duration": {
+										"min": 1
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"slowness": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:creeper",
+							"effects": {
+								"minecraft:slowness": {
+									"duration": {
+										"min": 1
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"strength": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:creeper",
+							"effects": {
+								"minecraft:strength": {
+									"duration": {
+										"min": 1
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"weakness": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:creeper",
+							"effects": {
+								"minecraft:weakness": {
+									"duration": {
+										"min": 1
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"jump_boost": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:creeper",
+							"effects": {
+								"minecraft:jump_boost": {
+									"duration": {
+										"min": 1
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"regeneration": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:creeper",
+							"effects": {
+								"minecraft:regeneration": {
+									"duration": {
+										"min": 1
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"resistance": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:creeper",
+							"effects": {
+								"minecraft:resistance": {
+									"duration": {
+										"min": 1
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"fire_resistance": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:creeper",
+							"effects": {
+								"minecraft:fire_resistance": {
+									"duration": {
+										"min": 1
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"water_breathing": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:creeper",
+							"effects": {
+								"minecraft:water_breathing": {
+									"duration": {
+										"min": 1
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"invisibility": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:creeper",
+							"effects": {
+								"minecraft:invisibility": {
+									"duration": {
+										"min": 1
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"night_vision": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:creeper",
+							"effects": {
+								"minecraft:night_vision": {
+									"duration": {
+										"min": 1
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"poison": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:creeper",
+							"effects": {
+								"minecraft:poison": {
+									"duration": {
+										"min": 1
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"wither": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:creeper",
+							"effects": {
+								"minecraft:wither": {
+									"duration": {
+										"min": 1
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"glowing": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:creeper",
+							"effects": {
+								"minecraft:glowing": {
+									"duration": {
+										"min": 1
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"levitation": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:creeper",
+							"effects": {
+								"minecraft:levitation": {
+									"duration": {
+										"min": 1
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"slow_falling": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:flint_and_steel"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:creeper",
+							"effects": {
+								"minecraft:slow_falling": {
+									"duration": {
+										"min": 1
+									}
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+    }
+}

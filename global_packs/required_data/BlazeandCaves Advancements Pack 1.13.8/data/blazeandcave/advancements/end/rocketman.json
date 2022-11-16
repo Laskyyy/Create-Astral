@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:firework_star",
+			"nbt": "{Explosion:{Type:0b,Colors:[I; 16701501]}}"
+        },
+        "title": {"translate":"Rocketman"},
+        "description": {"translate":"Fill your inventory with full stacks of firework rockets"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:end/some_breakthrough",
+	"rewards": {
+		"function": "bc_rewards:end/rocketman"
+    },		
+    "criteria": {
+		"rocketman": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+				"player": {
+					"nbt": "{Inventory:[{Slot:0b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:1b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:2b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:3b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:4b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:5b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:6b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:7b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:8b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:9b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:10b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:11b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:12b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:13b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:14b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:15b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:16b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:17b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:18b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:19b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:20b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:21b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:22b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:23b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:24b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:25b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:26b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:27b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:28b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:29b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:30b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:31b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:32b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:33b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:34b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:35b,id:\"minecraft:firework_rocket\",Count:64b},{Slot:-106b,id:\"minecraft:firework_rocket\",Count:64b}]}"
+				}
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:panda_spawn_egg"
+        },
+        "title": {"translate":"Ancient Kung Fu Master"},
+        "description": {"translate":"Sneak 10km"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:statistics/black_belt_ninja",
+	"rewards": {
+		"function": "bc_rewards:statistics/ancient_kung_fu_master"
+    },		
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"stats": [
+							{
+								"type": "minecraft:custom",
+								"stat": "minecraft:crouch_one_cm",
+								"value": {
+									"min": 1000000
+								}
+							}
+						]
+					}
+				}
+			}
+        }
+    }
+}

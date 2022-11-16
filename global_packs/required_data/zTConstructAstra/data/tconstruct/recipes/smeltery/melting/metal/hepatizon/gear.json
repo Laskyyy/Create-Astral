@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:gears/hepatizon"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "c:gears/hepatizon"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_hepatizon",
+    "amount": 36000
+  },
+  "temperature": 800,
+  "time": 155
+}

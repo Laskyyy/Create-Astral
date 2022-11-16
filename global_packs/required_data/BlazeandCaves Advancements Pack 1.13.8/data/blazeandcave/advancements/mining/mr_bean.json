@@ -1,0 +1,56 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:raw_copper_block"
+        },
+        "title": {"translate":"Mr. Bean"},
+        "description": {"translate":"Mine and craft a stack of Raw Iron, Copper and Gold Blocks"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:mining/mineral_collection",
+    "rewards": {
+		"function": "bc_rewards:mining/mr_bean"
+    },		
+    "criteria": {
+        "raw_iron_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:raw_iron_block"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        },
+        "raw_copper_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:raw_copper_block"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        },
+        "raw_gold_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:raw_gold_block"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }
+    }
+}

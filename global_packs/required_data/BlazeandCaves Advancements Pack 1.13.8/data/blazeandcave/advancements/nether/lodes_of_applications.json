@@ -1,0 +1,56 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:end_stone"
+        },
+        "title": {"translate":"Lodes of Applications"},
+        "description": {"color":"#75E1FF","translate":"Create a Lodestone Compass in all three dimensions"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "minecraft:nether/use_lodestone",
+	"rewards": {
+		"function": "bc_rewards:nether/lodes_of_applications"
+    },	
+    "criteria": {
+        "overworld": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:compass"
+						],
+						"nbt": "{LodestoneDimension:\"minecraft:overworld\"}"
+                    }
+                ]
+            }
+        },
+        "the_nether": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:compass"
+						],
+						"nbt": "{LodestoneDimension:\"minecraft:the_nether\"}"
+                    }
+                ]
+            }
+        },
+        "the_end": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:compass"
+						],
+						"nbt": "{LodestoneDimension:\"minecraft:the_end\"}"
+                    }
+                ]
+            }
+        }
+    }
+}

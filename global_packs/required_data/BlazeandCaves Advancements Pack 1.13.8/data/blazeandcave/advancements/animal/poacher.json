@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:seagrass"
+        },
+        "title": {"translate":"Poacher"},
+        "description": {"translate":"Kill a turtle for their shells only to find they don't actually drop any when killed"},
+        "announce_to_chat": "true"
+    },
+    "parent": "minecraft:husbandry/root",
+    "rewards": {
+        "function": "bc_rewards:animal/poacher"
+    },		
+    "criteria": {
+        "turtle": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "turtle"
+                }
+            }
+        }
+    }
+}

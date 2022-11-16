@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:blaze_spawn_egg"
+        },
+        "title": {"translate":"Blaze Extinguisher"},
+        "description": {"color":"#75E1FF","translate":"Collect a stack of blaze rods"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:nether/the_nethers_shield",
+    "rewards": {
+		"function": "bc_rewards:nether/blaze_extinguisher"
+    },		
+    "criteria": {
+        "blaze_rod": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:blaze_rod"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }
+    }	
+}

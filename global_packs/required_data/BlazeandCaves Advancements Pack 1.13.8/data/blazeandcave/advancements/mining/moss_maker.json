@@ -1,0 +1,33 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:moss_carpet"
+        },
+        "title": {"translate":"Moss Maker"},
+        "description": {"translate":"Use Bone Meal on Moss to spread its wonderful lushness across hard blocks of stone"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:mining/this_dirt_is_dirtier",
+	"rewards": {
+		"function": "bc_rewards:mining/moss_maker"
+    },
+    "criteria": {
+        "bone_meal": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:moss_block"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:bone_meal"
+					]
+				}
+			}
+		}
+    }
+}

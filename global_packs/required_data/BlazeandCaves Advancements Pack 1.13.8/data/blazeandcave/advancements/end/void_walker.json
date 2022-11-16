@@ -1,0 +1,117 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:obsidian"
+        },
+        "title": {"translate":"Void Walker"},
+        "description": {"color":"#75E1FF","translate":"Explore every end biome"},
+        "announce_to_chat": "true",
+        "frame": "goal"
+    },
+    "parent": "minecraft:end/enter_end_gateway",	
+    "rewards": {
+		"function": "bc_rewards:end/void_walker"
+    },	
+    "criteria": {
+        "the_end": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:the_end",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },
+        "small_end_islands": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:small_end_islands",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },
+        "end_highlands": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:end_highlands",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },
+        "end_midlands": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:end_midlands",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        },
+        "end_barrens": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:end_barrens",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        }
+    }
+}

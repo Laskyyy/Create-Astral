@@ -1,0 +1,41 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:netherrack"
+        },
+        "title": {"translate":"The Descent"},
+        "description": {"translate":"Dig down into the deepest depths of the Nether"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:nether/nugget_in_a_biscuit",
+    "rewards": {
+        "function": "bc_rewards:nether/the_descent"
+    },		
+    "criteria": {
+        "the_descent": {
+            "trigger": "minecraft:location",
+            "conditions": {
+				"dimension": "the_nether",
+				"position": {
+					"y": {
+						"max": 22.0
+					}
+				},
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        }	
+    }
+}

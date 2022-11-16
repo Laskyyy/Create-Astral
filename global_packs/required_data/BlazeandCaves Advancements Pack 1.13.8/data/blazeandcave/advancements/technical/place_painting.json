@@ -1,0 +1,17 @@
+{
+	"rewards": {
+		"function": "blazeandcave:check_paintings"
+	},
+	"criteria": {
+		"painting": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:painting"
+					]
+				}
+			}
+		}
+	}
+}

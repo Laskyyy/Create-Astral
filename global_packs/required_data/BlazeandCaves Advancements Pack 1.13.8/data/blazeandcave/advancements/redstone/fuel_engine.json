@@ -1,0 +1,36 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:furnace_minecart"
+        },
+        "title": {"translate":"Fuel Engine"},
+        "description": {"translate":"Craft a Minecart with Furnace and use coal or charcoal to send it chugging"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:redstone/all_aboard",
+    "rewards": {
+		"function": "bc_rewards:redstone/fuel_engine"
+    },			
+    "criteria": {
+		"furnace_minecart": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:coal",
+						"minecraft:charcoal"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:furnace_minecart"
+						}
+					}
+				]
+			}
+		}
+    }
+}

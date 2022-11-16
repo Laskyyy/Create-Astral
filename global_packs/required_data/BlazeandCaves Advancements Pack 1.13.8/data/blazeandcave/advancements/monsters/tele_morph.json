@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:ender_pearl"
+        },
+        "title": {"translate":"Tele-Morph"},
+        "description": {"translate":"Damage a mob by teleporting into it"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:monsters/ender_worm",
+    "rewards": {
+        "function": "bc_rewards:monsters/tele_morph"
+    },		
+    "criteria": {
+        "ender_pearl": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "is_projectile": true,
+                        "direct_entity": {
+                            "type": "minecraft:ender_pearl"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

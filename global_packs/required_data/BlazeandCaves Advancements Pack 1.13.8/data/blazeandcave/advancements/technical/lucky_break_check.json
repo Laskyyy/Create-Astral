@@ -1,0 +1,17 @@
+{
+    "rewards": {
+        "function": "blazeandcave:lucky_break_check"
+    },		
+    "criteria": {
+		"lucky_break_check": {
+			"trigger": "minecraft:fall_from_height",
+			"conditions": {
+				"distance": {
+					"y": {
+						"min": 15.0
+					}
+				}
+			}
+		}
+    }
+}

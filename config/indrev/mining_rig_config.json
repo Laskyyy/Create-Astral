@@ -1,0 +1,17 @@
+{
+  "allowedTags": {
+    "minecraft:copper_ores": 1,
+    "minecraft:coal_ores": 1,
+    "minecraft:gold_ores": 2,
+    "minecraft:iron_ores": 2,
+    "c:nikolite_ores": 2,
+    "c:tin_ores": 2,
+    "minecraft:redstone_ores": 2,
+    "c:lead_ores": 3,
+    "c:silver_ores": 3,
+    "c:tungsten_ores": 3,
+    "minecraft:diamond_ores": 4,
+    "minecraft:emerald_ores": 4,
+    "c:ancient_debris_ores": 4
+  }
+}

@@ -1,0 +1,701 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:birch_sapling"
+        },
+        "title": {"translate":"Biomes Milestone"},
+        "description": {"color":"yellow","translate":"Complete every advancement in the Biomes tab"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:bacap/weaponry_milestone",
+	"rewards": {
+		"function": "bc_rewards:bacap/biomes_milestone"
+    },		
+    "criteria": {
+        "adventuring_time": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:adventure/adventuring_time": "true"
+						}
+					}
+				}
+			}
+        },
+        "atlantis": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/atlantis": "true"
+						}
+					}
+				}
+			}
+        },
+		"bamboom": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/bamboom": "true"
+						}
+					}
+				}
+			}
+        },
+		"boaty_mcboatface": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/boaty_mcboatface": "true"
+						}
+					}
+				}
+			}
+        },
+		"high_feet": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/high_feet": "true"
+						}
+					}
+				}
+			}
+        },
+		"construction_worker": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/construction_worker": "true"
+						}
+					}
+				}
+			}
+        },
+		"dolphin_dasher": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/dolphin_dasher": "true"
+						}
+					}
+				}
+			}
+        },
+		"enchanted_forest": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/enchanted_forest": "true"
+						}
+					}
+				}
+			}
+        },
+		"barbearian": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/barbearian": "true"
+						}
+					}
+				}
+			}
+        },
+		"everybody_loves_ice": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/everybody_loves_ice": "true"
+						}
+					}
+				}
+			}
+        },
+		"flower_power": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/flower_power": "true"
+						}
+					}
+				}
+			}
+        },
+		"for_you_my_sweet": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/for_you_my_sweet": "true"
+						}
+					}
+				}
+			}
+        },
+		"free_diver": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/free_diver": "true"
+						}
+					}
+				}
+			}
+        },
+		"ahoy": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/ahoy": "true"
+						}
+					}
+				}
+			}
+        },
+		"in_a_pickle": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/in_a_pickle": "true"
+						}
+					}
+				}
+			}
+        },
+		"just_a_sample": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/just_a_sample": "true"
+						}
+					}
+				}
+			}
+        },
+		"just_keep_swimming": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/just_keep_swimming": "true"
+						}
+					}
+				}
+			}
+        },
+		"kilometre_walk": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/kilometre_walk": "true"
+						}
+					}
+				}
+			}
+        },
+		"kung_fu_panda": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/kung_fu_panda": "true"
+						}
+					}
+				}
+			}
+        },
+		"no_reefing": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/no_reefing": "true"
+						}
+					}
+				}
+			}
+        },
+		"one_with_the_forest": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/one_with_the_forest": "true"
+						}
+					}
+				}
+			}
+        },
+		"overgrown": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/overgrown": "true"
+						}
+					}
+				}
+			}
+        },
+		"moskstraumen": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/moskstraumen": "true"
+						}
+					}
+				}
+			}
+        },
+		"pushed_around": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/pushed_around": "true"
+						}
+					}
+				}
+			}
+        },
+		"qinling": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/qinling": "true"
+						}
+					}
+				}
+			}
+        },
+		"root": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/root": "true"
+						}
+					}
+				}
+			}
+        },
+		"simba": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/simba": "true"
+						}
+					}
+				}
+			}
+        },
+		"sleep_with_the_fishes": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/sleep_with_the_fishes": "true"
+						}
+					}
+				}
+			}
+        },
+		"cold_feet": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/cold_feet": "true"
+						}
+					}
+				}
+			}
+        },
+		"spike_ice": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/spike_ice": "true"
+						}
+					}
+				}
+			}
+        },
+		"tarzan": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/tarzan": "true"
+						}
+					}
+				}
+			}
+        },
+		"ten_thousand_blocks": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/ten_thousand_blocks": "true"
+						}
+					}
+				}
+			}
+        },
+		"the_great_blocky_reef": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/the_great_blocky_reef": "true"
+						}
+					}
+				}
+			}
+        },
+		"the_mighty_jungle": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/the_mighty_jungle": "true"
+						}
+					}
+				}
+			}
+        },
+		"the_sea_calls_you": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/the_sea_calls_you": "true"
+						}
+					}
+				}
+			}
+        },
+		"theres_a_zombie_on_the_lawn": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/theres_a_zombie_on_the_lawn": "true"
+						}
+					}
+				}
+			}
+        },
+		"thick_ice": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/thick_ice": "true"
+						}
+					}
+				}
+			}
+        },
+		"thin_ice": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/thin_ice": "true"
+						}
+					}
+				}
+			}
+        },
+		"titanic": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/titanic": "true"
+						}
+					}
+				}
+			}
+        },
+		"top_of_the_world": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/top_of_the_world": "true"
+						}
+					}
+				}
+			}
+        },
+		"voyage": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/voyage": "true"
+						}
+					}
+				}
+			}
+        },
+		"warm_feet": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/warm_feet": "true"
+						}
+					}
+				}
+			}
+        },
+		"wet_feet": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/wet_feet": "true"
+						}
+					}
+				}
+			}
+        },
+		"x_marks_the_spot": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/x_marks_the_spot": "true"
+						}
+					}
+				}
+			}
+        },
+		"zoologist": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/zoologist": "true"
+						}
+					}
+				}
+			}
+        },
+		"so_long_and_thanks_for_all_the_fish": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/so_long_and_thanks_for_all_the_fish": "true"
+						}
+					}
+				}
+			}
+        },
+		"echolocation": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/echolocation": "true"
+						}
+					}
+				}
+			}
+        },
+		"lion_hunter": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/lion_hunter": "true"
+						}
+					}
+				}
+			}
+        },
+		"this_snow_is_snowier": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/this_snow_is_snowier": "true"
+						}
+					}
+				}
+			}
+        },
+		"powder_full": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/powder_full": "true"
+						}
+					}
+				}
+			}
+        },
+		"pandamonium": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/pandamonium": "true"
+						}
+					}
+				}
+			}
+        },
+		"light_as_a_rabbit": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:adventure/walk_on_powder_snow_with_leather_boots": "true"
+						}
+					}
+				}
+			}
+        },
+		"boatception": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/boatception": "true"
+						}
+					}
+				}
+			}
+        },
+		"smooth_operator": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/smooth_operator": "true"
+						}
+					}
+				}
+			}
+        },
+		"were_going_on_a_bear_hunt": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/were_going_on_a_bear_hunt": "true"
+						}
+					}
+				}
+			}
+        },
+		"dive_bomb": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/dive_bomb": "true"
+						}
+					}
+				}
+			}
+        },
+		"captain_america": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:biomes/captain_america": "true"
+						}
+					}
+				}
+			}
+        }
+    }
+}

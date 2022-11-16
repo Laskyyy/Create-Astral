@@ -1,0 +1,131 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:hay_block"
+        },
+        "title": {"translate":"So Hungry I Could Eat a Horse!"},
+        "description": {"color":"#75E1FF","translate":"Feed a Horse every type of food that it can eat"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:animal/foal_play",
+	"rewards": {
+		"function": "bc_rewards:animal/so_hungry_i_could_eat_a_horse"
+    },		
+    "criteria": {
+		"sugar": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:sugar"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "#blazeandcave:horses"
+						}
+					}
+				]
+			}
+		},
+		"wheat": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:wheat"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "#blazeandcave:horses"
+						}
+					}
+				]
+			}
+		},
+		"apple": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:apple"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "#blazeandcave:horses"
+						}
+					}
+				]
+			}
+		},
+		"golden_apple": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:golden_apple"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "#blazeandcave:horses"
+						}
+					}
+				]
+			}
+		},
+		"golden_carrot": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:golden_carrot"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "#blazeandcave:horses"
+						}
+					}
+				]
+			}
+		},
+		"hay_block": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:hay_block"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "#blazeandcave:horses"
+						}
+					}
+				]
+			}
+		}
+    }
+}

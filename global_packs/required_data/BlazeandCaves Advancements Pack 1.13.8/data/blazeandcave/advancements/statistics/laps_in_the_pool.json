@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:leather_leggings",
+			"nbt": "{display:{color:41727}}"
+        },
+        "title": {"translate":"Laps in the pool"},
+        "description": {"translate":"Swim 1km"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:statistics/root",
+	"rewards": {
+		"function": "bc_rewards:statistics/laps_in_the_pool"
+    },		
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"stats": [
+							{
+								"type": "minecraft:custom",
+								"stat": "minecraft:swim_one_cm",
+								"value": {
+									"min": 100000
+								}
+							}
+						]
+					}
+				}
+			}
+        }
+    }
+}

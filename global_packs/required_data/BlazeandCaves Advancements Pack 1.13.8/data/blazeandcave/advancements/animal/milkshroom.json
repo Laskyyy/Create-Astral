@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:mushroom_stew"
+        },
+        "title": {"translate":"Milkshroom"},
+        "description": {"translate":"Milk a mooshroom with a bowl to get mushroom stew"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:animal/super_mooshroom",
+	"rewards": {
+		"function": "bc_rewards:animal/milkshroom"
+    },		
+    "criteria": {
+		"shears": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:bowl"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:mooshroom"
+						}
+					}
+				]
+			}
+		}
+    }
+}

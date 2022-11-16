@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"dried_kelp": {
+			"trigger": "consume_item",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:dried_kelp"
+					]
+				}
+			}
+		}
+	}
+}

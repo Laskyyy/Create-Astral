@@ -1,0 +1,38 @@
+scoreboard objectives remove bac_obtained
+scoreboard objectives add bac_obtained dummy
+
+scoreboard objectives remove bac_obtained_black
+scoreboard objectives remove bac_obtained_dark_blue
+scoreboard objectives remove bac_obtained_dark_green
+scoreboard objectives remove bac_obtained_dark_aqua
+scoreboard objectives remove bac_obtained_dark_red
+scoreboard objectives remove bac_obtained_dark_purple
+scoreboard objectives remove bac_obtained_gold
+scoreboard objectives remove bac_obtained_gray
+scoreboard objectives remove bac_obtained_dark_gray
+scoreboard objectives remove bac_obtained_blue
+scoreboard objectives remove bac_obtained_green
+scoreboard objectives remove bac_obtained_aqua
+scoreboard objectives remove bac_obtained_red
+scoreboard objectives remove bac_obtained_light_purple
+scoreboard objectives remove bac_obtained_yellow
+scoreboard objectives remove bac_obtained_white
+
+scoreboard objectives add bac_obtained_black dummy
+scoreboard objectives add bac_obtained_dark_blue dummy
+scoreboard objectives add bac_obtained_dark_green dummy
+scoreboard objectives add bac_obtained_dark_aqua dummy
+scoreboard objectives add bac_obtained_dark_red dummy
+scoreboard objectives add bac_obtained_dark_purple dummy
+scoreboard objectives add bac_obtained_gold dummy
+scoreboard objectives add bac_obtained_gray dummy
+scoreboard objectives add bac_obtained_dark_gray dummy
+scoreboard objectives add bac_obtained_blue dummy
+scoreboard objectives add bac_obtained_green dummy
+scoreboard objectives add bac_obtained_aqua dummy
+scoreboard objectives add bac_obtained_red dummy
+scoreboard objectives add bac_obtained_light_purple dummy
+scoreboard objectives add bac_obtained_yellow dummy
+scoreboard objectives add bac_obtained_white dummy
+
+function blazeandcave:config/technical_settings

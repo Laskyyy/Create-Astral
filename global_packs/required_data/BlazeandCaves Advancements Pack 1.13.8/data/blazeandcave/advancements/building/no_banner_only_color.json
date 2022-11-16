@@ -1,0 +1,209 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:magenta_banner"
+        },
+        "title": {"translate":"No Banner, Only Color!"},
+        "description": {"color":"#75E1FF","translate":"Craft all 16 banner colors"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:building/raise_the_flag",
+    "rewards": {
+		"function": "bc_rewards:building/no_banner_only_color"
+    },		
+    "criteria": {
+        "white_banner": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:white_banner"
+						]
+                    }
+                ]
+            }
+        },
+        "orange_banner": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:orange_banner"
+						]
+                    }
+                ]
+            }
+        },
+        "magenta_banner": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:magenta_banner"
+						]
+                    }
+                ]
+            }
+        },
+        "light_blue_banner": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:light_blue_banner"
+						]
+                    }
+                ]
+            }
+        },
+        "yellow_banner": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:yellow_banner"
+						]
+                    }
+                ]
+            }
+        },
+        "lime_banner": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:lime_banner"
+						]
+                    }
+                ]
+            }
+        },
+        "pink_banner": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:pink_banner"
+						]
+                    }
+                ]
+            }
+        },
+        "gray_banner": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:gray_banner"
+						]
+                    }
+                ]
+            }
+        },
+        "light_gray_banner": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:light_gray_banner"
+						]
+                    }
+                ]
+            }
+        },
+        "cyan_banner": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:cyan_banner"
+						]
+                    }
+                ]
+            }
+        },
+        "purple_banner": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:purple_banner"
+						]
+                    }
+                ]
+            }
+        },
+        "blue_banner": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:blue_banner"
+						]
+                    }
+                ]
+            }
+        },
+        "brown_banner": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:brown_banner"
+						]
+                    }
+                ]
+            }
+        },
+        "green_banner": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:green_banner"
+						]
+                    }
+                ]
+            }
+        },
+        "red_banner": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:red_banner"
+						]
+                    }
+                ]
+            }
+        },
+        "black_banner": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:black_banner"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

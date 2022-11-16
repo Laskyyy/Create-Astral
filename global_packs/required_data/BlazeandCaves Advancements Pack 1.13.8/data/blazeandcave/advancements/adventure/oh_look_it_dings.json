@@ -1,0 +1,101 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:bell"
+        },
+        "title": {"translate":"Oh, look, it dings!"},
+        "description": {"translate":"Ring a bell in a village"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:adventure/do_you_want_to_trade",
+	"rewards": {
+		"function": "bc_rewards:adventure/oh_look_it_dings"
+    },		
+    "criteria": {
+        "bell": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:bell"
+						]
+					}
+				},
+                "player": [
+					{
+						"condition": "minecraft:alternative",
+						"terms": [
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"location": {
+										"feature": "minecraft:village"
+									}
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"location": {
+										"feature": "minecraft:village_desert"
+									}
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"location": {
+										"feature": "minecraft:village_plains"
+									}
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"location": {
+										"feature": "minecraft:village_savanna"
+									}
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"location": {
+										"feature": "minecraft:village_snowy"
+									}
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"location": {
+										"feature": "minecraft:village_taiga"
+									}
+								}
+							}
+						]
+					},
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+			}
+		}
+    }
+}

@@ -1,0 +1,79 @@
+{
+	"type": "ad_astra:nasa_workbench",
+	"ingredients": [
+		{
+			"ingredient": {
+				"item": "indrev:circuit_mk4"
+			}
+		},
+		{
+			"ingredient": {
+				"tag": "c:calorite_blocks"
+			}
+		},
+		{
+			"ingredient": {
+				"tag": "c:calorite_blocks"
+			}
+		},
+		{
+			"ingredient": {
+				"tag": "c:calorite_blocks"
+			}
+		},
+		{
+			"ingredient": {
+				"tag": "c:calorite_blocks"
+			}
+		},
+		{
+			"ingredient": {
+				"tag": "c:calorite_blocks"
+			}
+		},
+		{
+			"ingredient": {
+				"tag": "c:calorite_blocks"
+			}
+		},
+		{
+			"ingredient": {
+				"item": "create:shadow_steel"
+			}
+		},
+		{
+			"ingredient": {
+				"item": "ad_astra:calorite_tank"
+			}
+		},
+		{
+			"ingredient": {
+				"item": "ad_astra:calorite_tank"
+			}
+		},
+		{
+			"ingredient": {
+				"item": "create:shadow_steel"
+			}
+		},
+		{
+			"ingredient": {
+				"item": "create:shadow_steel"
+			}
+		},
+		{
+			"ingredient": {
+				"item": "bosses_of_mass_destruction:monolith_block"
+			}
+		},
+		{
+			"ingredient": {
+				"item": "create:shadow_steel"
+			}
+		}
+	],
+	"output": {
+		"item": "ad_astra:tier_4_rocket",
+		"count": 1
+	}
+}

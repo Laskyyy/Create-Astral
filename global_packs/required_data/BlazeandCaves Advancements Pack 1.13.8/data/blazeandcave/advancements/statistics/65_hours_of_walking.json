@@ -1,0 +1,36 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:netherite_boots"
+        },
+        "title": {"bold":"true","translate":"65","extra":[{"text":" "},{"bold":"false","translate":"hours of walking"}]},
+        "description": {"color":"light_purple","translate":"Walk 1000km. The statistics tab shall no longer be the grindy super challenges tab"},
+        "announce_to_chat": "true",
+		"frame": "challenge",
+		"hidden": "true"
+    },
+    "parent": "blazeandcave:statistics/i_enjoy_long_walks_and_playing_minecraft",
+	"rewards": {
+		"function": "bc_rewards:statistics/65_hours_of_walking"
+    },		
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"stats": [
+							{
+								"type": "minecraft:custom",
+								"stat": "minecraft:walk_one_cm",
+								"value": {
+									"min": 100000000
+								}
+							}
+						]
+					}
+				}
+			}
+        }
+    }
+}

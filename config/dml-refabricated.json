@@ -1,0 +1,86 @@
+{
+  "trial": {
+    "maxMobsInArena": 8,
+    "postEndTimeout": 60,
+    "arenaRadius": 12,
+    "warmupTime": 60,
+    "maxTime": 24000,
+    "allowStartInWrongTerrain": false,
+    "allowPlayersLeavingArena": false,
+    "allowMobsLeavingArena": false,
+    "buildGriefPrevention": true,
+    "interactGriefPrevention": true,
+    "explosionGriefPrevention": true,
+    "trialKeyConsume": true,
+    "trialKeyReturnIfSucceed": true
+  },
+  "lootFabricator": {
+    "pristineExchangeRate": 16,
+    "processTime": 200
+  },
+  "dataModel": {
+    "basicDataRequired": 8,
+    "advancedDataRequired": 16,
+    "superiorDataRequired": 32,
+    "selfAwareDataRequired": 64
+  },
+  "systemGlitch": {
+    "teleportChance": 0.05,
+    "teleportMinDistance": 5,
+    "teleportDelay": 100,
+    "teleportAroundPlayerRadius": 2,
+    "damageLimiter": 20.0
+  },
+  "dataCollection": {
+    "baseDataGainPerKill": 1
+  },
+  "affix": {
+    "maxAffixesInKey": 3,
+    "enableMobStrength": true,
+    "enableMobSpeed": true,
+    "enableMobResistance": true,
+    "enableThunderstorm": true,
+    "enablePartyPoison": true,
+    "thunderstormBoltChance": 0.05,
+    "partyPoisonChance": 0.005
+  },
+  "matterCondenser": {
+    "processTime": 40
+  },
+  "glitchArmor": {
+    "dataAmountToBasic": 32,
+    "dataAmountToAdvanced": 96,
+    "dataAmountToSuperior": 192,
+    "dataAmountToSelfAware": 384,
+    "soulVisionRange": 12,
+    "maxFlightTicksPerLevel": 600,
+    "undyingCooldownTime": 36000,
+    "costs": {
+      "fireProtection": 1.0,
+      "piglinTruce": 3.5,
+      "autoExtinguish": 4.0,
+      "featherFalling": 3.0,
+      "fireImmunity": 1.0,
+      "jumpBoost": 0.0075,
+      "plenty": 1.0,
+      "unrottenFlesh": 0.5,
+      "rotResistance": 0.5,
+      "zombieFriendly": 0.1,
+      "archery": 0.5,
+      "skeletonFriendly": 0.1,
+      "fallImmunity": 1.0,
+      "endermenProofVision": 1.0,
+      "shulkerFriendly": 0.2,
+      "teleports": 1.5,
+      "soulVision": 8.0,
+      "nightVision": 0.005,
+      "fly": 0.05,
+      "underwaterHaste": 0.01,
+      "depthStrider": 0.01,
+      "waterBreathing": 0.01,
+      "poseidonBless": 0.015,
+      "resistance": 0.3,
+      "undying": 8.0
+    }
+  }
+}

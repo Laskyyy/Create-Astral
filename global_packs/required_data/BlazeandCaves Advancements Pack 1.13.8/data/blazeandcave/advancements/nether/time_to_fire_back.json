@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:fire_charge"
+        },
+        "title": {"translate":"Time to Fire Back"},
+        "description": {"color":"#75E1FF","translate":"Craft a stack of fire charges"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:nether/blaze_extinguisher",
+    "rewards": {
+		"function": "bc_rewards:nether/time_to_fire_back"
+    },		
+    "criteria": {
+        "fire_charge": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:fire_charge"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }
+    }	
+}

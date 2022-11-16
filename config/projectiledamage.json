@@ -1,0 +1,7 @@
+{
+  "status_effect_impact_multiplier_per_stack": 0.2,
+  "default_bow_damage": 6.0,
+  "default_crossbow_damage": 9.0,
+  "add_default_attributes_for_unspecified_bows": false,
+  "add_default_attributes_for_unspecified_crossbows": false
+}

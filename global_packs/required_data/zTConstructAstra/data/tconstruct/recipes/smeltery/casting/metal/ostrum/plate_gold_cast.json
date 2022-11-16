@@ -1,0 +1,22 @@
+{
+  "type": "tconstruct:casting_table",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:ostrum_plates"
+      ]
+    }
+  ],
+  "cast": {
+    "tag": "tconstruct:casts/multi_use/plate"
+  },
+  "fluid": {
+    "tag": "c:molten_ostrum",
+    "amount": 9000
+  },
+  "result": {
+    "tag": "c:ostrum_plates"
+  },
+  "cooling_time": 65
+}

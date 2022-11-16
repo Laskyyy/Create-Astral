@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:enchanted_book",
+			"nbt": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}]}"
+        },
+        "title": {"translate":"Overlevelling"},
+        "description": {"color":"#75E1FF","translate":"Reach 100 experience levels"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:statistics/level_up",
+	"rewards": {
+		"function": "bc_rewards:statistics/overlevelling"
+    },		
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"level": {
+							"min": 100
+						}
+					}
+				}
+			}
+        }
+    }
+}

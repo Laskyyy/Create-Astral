@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:snow_block"
+        },
+        "title": {"translate":"This Snow is Snowier"},
+        "description": {"translate":"Fall into some Powder Snow"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:biomes/smooth_operator",
+	"rewards": {
+		"function": "bc_rewards:biomes/this_snow_is_snowier"
+    },
+    "criteria": {
+        "enter_water": {
+            "trigger": "minecraft:enter_block",
+            "conditions": {
+				"block": "minecraft:powder_snow"
+            }
+        }
+    }
+}

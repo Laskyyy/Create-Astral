@@ -1,0 +1,33 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond"
+        },
+        "title": {"translate":"Diamonds to you!"},
+        "description": {"translate":"Throw diamonds at another player or mob"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:mining/diamond_miner",
+    "rewards": {
+        "function": "bc_rewards:mining/diamonds_to_you"
+    },
+	"criteria": {
+		"diamonds_to_you": {
+			"trigger": "minecraft:thrown_item_picked_up_by_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:diamond"
+					]
+				},
+				"entity": {
+					"distance": {
+						"absolute": {
+							"min": 1
+						}
+					}
+				}
+			}
+		}
+	}
+}

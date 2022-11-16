@@ -1,0 +1,10 @@
+{
+    "rewards": {
+        "function": "blazeandcave:riddle/tenth_line"
+    },		
+    "criteria": {
+        "tenth_line": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

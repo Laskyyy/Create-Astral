@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:grindstone"
+        },
+        "title": {"translate":"Sharpening Station"},
+        "description": {"translate":"Craft a grindstone using a stone slab, planks and sticks for repairing tools"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:building/its_original_form",
+    "rewards": {
+		"function": "bc_rewards:building/sharpening_station"
+    },		
+    "criteria": {
+        "grindstone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:grindstone"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

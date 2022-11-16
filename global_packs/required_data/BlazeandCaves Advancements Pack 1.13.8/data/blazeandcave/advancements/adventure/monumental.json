@@ -1,0 +1,36 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:prismarine"
+        },
+        "title": {"translate":"Monumental"},
+        "description": {"translate":"Find an Ocean Monument"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:adventure/treasure_map",
+    "rewards": {
+        "function": "bc_rewards:adventure/monumental"
+    },		
+    "criteria": {
+        "monument": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "feature": "monument",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        }
+    }
+}

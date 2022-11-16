@@ -1,0 +1,25 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:nether_star"
+		},
+		"title": {"translate":"Withering Heights"},
+		"description": {"color":"#75E1FF","translate":"Summon the Wither"},
+		"announce_to_chat": "true",
+		"frame": "goal"
+	},
+	"parent": "minecraft:nether/get_wither_skull",
+	"rewards": {
+		"function": "bc_rewards:nether/withering_heights"
+	},	
+	"criteria": {
+		"summoned": {
+			"trigger": "minecraft:summoned_entity",
+			"conditions": {
+				"entity": {
+					"type": "wither"
+				}
+			}
+		}
+	}
+}

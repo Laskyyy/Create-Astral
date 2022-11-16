@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "ad_astra:ostrum_plating"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "ad_astra:ostrum_plating"
+  },
+  "result": {
+    "fluid": "kubejs:molten_ostrum",
+    "amount": 1000
+  },
+  "temperature": 800,
+  "time": 65
+}

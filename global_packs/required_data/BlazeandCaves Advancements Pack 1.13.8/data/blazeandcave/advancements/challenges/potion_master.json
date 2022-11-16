@@ -1,0 +1,956 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:splash_potion",
+			"nbt": "{Potion:\"minecraft:harming\"}"
+        },
+        "title": {"translate":"Potion Master"},
+        "description": {"color":"#FF2A2A","translate":"Kill every mob in the game with splash potions"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:challenges/endergeddon",
+	"rewards": {
+		"function": "bc_rewards:challenges/potion_master"
+    },	
+    "criteria": {
+        "bat": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "bat"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "chicken": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "chicken"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "cod": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "cod"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "cow": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "cow"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "mooshroom": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "mooshroom"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "pig": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "pig"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "rabbit": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "rabbit"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "salmon": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "salmon"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "sheep": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "sheep"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "squid": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "squid"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "tropical_fish": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "tropical_fish"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "turtle": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "turtle"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "villager": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "villager"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "wandering_trader": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "wandering_trader"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "pufferfish": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "pufferfish"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "cave_spider": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "cave_spider"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "panda": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "panda"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "polar_bear": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "polar_bear"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "spider": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "spider"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "zombified_piglin": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "zombified_piglin"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "blaze": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "blaze"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "creeper": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "creeper"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "drowned": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "drowned"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "endermite": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "endermite"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "evoker": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "evoker"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "ghast": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "ghast"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "guardian": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "guardian"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "husk": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "husk"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "magma_cube": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "magma_cube"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "phantom": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "phantom"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "pillager": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "pillager"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "ravager": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "ravager"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "shulker": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "shulker"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "silverfish": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "silverfish"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "skeleton": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "skeleton"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "slime": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "slime"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "stray": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "stray"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "vex": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "vex"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "vindicator": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "vindicator"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "witch": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "witch"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "wither_skeleton": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "wither_skeleton"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "zombie_villager": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "zombie_villager"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "zombie": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "zombie"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "cat": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "cat"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "donkey": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "donkey"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "horse": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "horse"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "llama": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "llama"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "mule": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "mule"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "parrot": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "parrot"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "skeleton_horse": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "skeleton_horse"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "trader_llama": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "trader_llama"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "wolf": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "wolf"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "dolphin": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "dolphin"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "fox": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "fox"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "ocelot": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "ocelot"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "iron_golem": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "iron_golem"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "snow_golem": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "snow_golem"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "wither": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "wither"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "bee": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "bee"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "piglin": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "piglin"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "hoglin": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "hoglin"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "strider": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "strider"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "zoglin": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "zoglin"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "piglin_brute": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "piglin_brute"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "axolotl": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "axolotl"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "glow_squid": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "glow_squid"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        },
+        "goat": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": {
+					"type": "goat"
+				},
+				"killing_blow": {
+					"is_magic": "true",
+					"direct_entity": {
+						"type": "minecraft:potion"
+					}
+				}
+            }
+        }
+    }
+}

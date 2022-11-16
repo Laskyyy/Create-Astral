@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:honeycomb"
+        },
+        "title": {"translate":"Beeloons!"},
+        "description": {"translate":"Attach a lead to a bee"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:animal/lead_the_way",
+    "rewards": {
+        "function": "bc_rewards:animal/beeloons"
+    },
+	"criteria": {
+		"lead": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:lead"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "minecraft:bee"
+						}
+					}
+				]
+			}
+		}
+	}
+}

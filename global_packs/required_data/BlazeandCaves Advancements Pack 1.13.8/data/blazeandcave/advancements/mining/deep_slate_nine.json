@@ -1,0 +1,41 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:deepslate"
+        },
+        "title": {"translate":"Deep Slate Nine"},
+        "description": {"translate":"Mine deep enough that the stone darkens"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:mining/spelunker",
+    "rewards": {
+		"function": "bc_rewards:mining/deep_slate_nine"
+    },		
+    "criteria": {
+        "deepslate_level": {
+            "trigger": "minecraft:location",
+            "conditions": {
+				"position": {
+					"y": {
+						"max": 4.5
+					}
+				},
+				"dimension": "minecraft:overworld",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "player": {
+                                    "gamemode": "spectator"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "INI"
+  ],
+  "key": {
+    "N": {
+      "item": "indrev:nikolite_dust"
+    },
+    "I": {
+      "tag": "c:gold_plates"
+    }
+  },
+  "result": {
+    "item": "indrev:cable_mk1",
+    "count": 8
+  }
+}

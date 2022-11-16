@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:writable_book"
+        },
+        "title": {"translate":"Write your thoughts"},
+        "description": {"translate":"Use a book, ink and a feather to craft a book and quill"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:farming/its_full_of_ink",
+	"rewards": {
+		"function": "bc_rewards:farming/write_your_thoughts"
+    },		
+    "criteria": {
+        "writable_book": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:writable_book"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

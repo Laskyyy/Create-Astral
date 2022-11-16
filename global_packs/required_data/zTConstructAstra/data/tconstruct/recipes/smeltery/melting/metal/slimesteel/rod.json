@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:rods/slimesteel"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "c:rods/slimesteel"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_slimesteel",
+    "amount": 4500
+  },
+  "temperature": 800,
+  "time": 13
+}

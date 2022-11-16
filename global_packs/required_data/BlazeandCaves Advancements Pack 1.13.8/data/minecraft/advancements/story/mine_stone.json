@@ -1,0 +1,26 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:wooden_pickaxe"
+		},
+		"title": {"translate":"Stone Age"},
+		"description": {"translate":"Mine stone with your new pickaxe"},
+		"announce_to_chat": "true"
+	},
+	"parent": "blazeandcave:mining/root",
+	"rewards": {
+		"function": "bc_rewards:mining/stone_age"
+	},		
+	"criteria": {
+		"cobblestone": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"tag": "minecraft:stone_tool_materials"
+					}
+				]
+			}
+		}
+	}
+}

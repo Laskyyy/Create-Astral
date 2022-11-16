@@ -1,0 +1,25 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:firework_rocket"
+		},
+		"title": {"translate":"Hero of the Village"},
+		"description": {"color":"#75E1FF","translate":"Triumph over a full raid for the first time"},
+		"announce_to_chat": "true",
+		"frame": "goal"
+	},
+	"parent": "blazeandcave:adventure/feeling_ill",
+	"rewards": {
+		"function": "bc_rewards:adventure/hero_of_the_village"
+	},		
+	"criteria": {
+		"hero_of_the_village": {
+			"trigger": "minecraft:effects_changed",
+			"conditions": {
+				"effects": {
+					"minecraft:hero_of_the_village": {}
+				}
+			}
+		}
+	}
+}

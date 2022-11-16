@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:shield",
+			"nbt": "{BlockEntityTag:{Base:0,Patterns:[{Pattern:mr,Color:11},{Pattern:bs,Color:8},{Pattern:cs,Color:7},{Pattern:ms,Color:15},{Pattern:bo,Color:8},{Pattern:hh,Color:8}]}}"
+        },
+        "title": {"translate":"The Shielding"},
+        "description": {"translate":"A shield does no better than a locked door"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:adventure/heres_johnny",
+	"rewards": {
+		"function": "bc_rewards:adventure/the_shielding"
+    },
+    "criteria": {
+        "deflected_vindicator": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "blocked": true,
+					"source_entity": {
+						"type": "vindicator"
+					}
+                }
+            }
+        }
+    }
+}

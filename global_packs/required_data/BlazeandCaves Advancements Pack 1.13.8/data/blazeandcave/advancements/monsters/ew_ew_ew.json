@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:string"
+        },
+        "title": {"translate":"Ew Ew Ew!"},
+        "description": {"translate":"Kill a spider"},
+        "announce_to_chat": "true"
+    },
+    "parent": "minecraft:adventure/kill_a_mob",
+    "rewards": {
+        "function": "bc_rewards:monsters/ew_ew_ew"
+    },		
+    "criteria": {
+        "spider": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "spider"
+                }
+            }
+        }
+    }
+}

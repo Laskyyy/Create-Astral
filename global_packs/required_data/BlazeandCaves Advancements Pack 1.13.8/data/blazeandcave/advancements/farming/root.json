@@ -1,0 +1,27 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:hay_block"
+		},
+		"title": {"translate":"Farming"},
+		"description": {"translate":"Hoe hoe hoe!"},
+		"background": "minecraft:textures/gui/advancements/backgrounds/husbandry.png",
+		"show_toast": false,
+		"announce_to_chat": "false"
+	},
+	"rewards": {
+		"function": "bc_rewards:farming/root"
+	},		
+	"criteria": {
+		"hoe": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"tag": "minecraft:hoes"
+					}
+				]
+			}
+		}
+	}
+}

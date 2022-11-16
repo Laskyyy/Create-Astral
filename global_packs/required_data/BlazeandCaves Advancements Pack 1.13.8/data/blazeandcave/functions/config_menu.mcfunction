@@ -1,0 +1,1 @@
+function blazeandcave:config

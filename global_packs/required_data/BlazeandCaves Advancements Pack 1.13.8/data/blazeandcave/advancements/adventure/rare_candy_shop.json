@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:experience_bottle"
+        },
+        "title": {"translate":"Rare Candy Shop"},
+        "description": {"translate":"Trade for a Bottle o’ Enchanting from a Cleric"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:adventure/knowledge_is_power",
+    "rewards": {
+        "function": "bc_rewards:adventure/rare_candy_shop"
+    },		
+    "criteria": {
+        "experience_bottle": {
+            "trigger": "minecraft:villager_trade",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:experience_bottle"
+					]
+				}
+			}
+        }
+    }
+}

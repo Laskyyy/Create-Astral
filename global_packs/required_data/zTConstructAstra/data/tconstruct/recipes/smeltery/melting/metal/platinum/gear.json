@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:gears/platinum"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "c:gears/platinum"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_platinum",
+    "amount": 36000
+  },
+  "temperature": 970,
+  "time": 131
+}

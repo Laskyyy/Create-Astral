@@ -1,0 +1,95 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:green_stained_glass_pane"
+        },
+        "title": {"translate":"Art Gallery"},
+        "description": {"color":"#75E1FF","translate":"Place every type of painting"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:building/a_masterpiece",
+	"rewards": {
+		"function": "bc_rewards:building/art_gallery"
+    },		
+    "criteria": {
+        "kebab": {
+            "trigger": "minecraft:impossible"
+        },
+        "aztec": {
+            "trigger": "minecraft:impossible"
+        },
+        "alban": {
+            "trigger": "minecraft:impossible"
+        },
+        "aztec2": {
+            "trigger": "minecraft:impossible"
+        },
+        "bomb": {
+            "trigger": "minecraft:impossible"
+        },
+        "plant": {
+            "trigger": "minecraft:impossible"
+        },
+        "wasteland": {
+            "trigger": "minecraft:impossible"
+        },
+        "wanderer": {
+            "trigger": "minecraft:impossible"
+        },
+        "graham": {
+            "trigger": "minecraft:impossible"
+        },
+        "pool": {
+            "trigger": "minecraft:impossible"
+        },
+        "courbet": {
+            "trigger": "minecraft:impossible"
+        },
+        "sunset": {
+            "trigger": "minecraft:impossible"
+        },
+        "sea": {
+            "trigger": "minecraft:impossible"
+        },
+        "creebet": {
+            "trigger": "minecraft:impossible"
+        },
+        "match": {
+            "trigger": "minecraft:impossible"
+        },
+        "bust": {
+            "trigger": "minecraft:impossible"
+        },
+        "stage": {
+            "trigger": "minecraft:impossible"
+        },
+        "void": {
+            "trigger": "minecraft:impossible"
+        },
+        "skull_and_roses": {
+            "trigger": "minecraft:impossible"
+        },
+        "wither": {
+            "trigger": "minecraft:impossible"
+        },
+        "fighters": {
+            "trigger": "minecraft:impossible"
+        },
+        "skeleton": {
+            "trigger": "minecraft:impossible"
+        },
+        "donkey_kong": {
+            "trigger": "minecraft:impossible"
+        },
+        "pointer": {
+            "trigger": "minecraft:impossible"
+        },
+        "pigscene": {
+            "trigger": "minecraft:impossible"
+        },
+        "burning_skull": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

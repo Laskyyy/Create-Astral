@@ -1,0 +1,98 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:wooden_sword"
+        },
+        "title": {"translate":"Time to Strike!"},
+        "description": {"translate":"Use planks and sticks to make a sword"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:bacap/time_to_mine",
+	"rewards": {
+		"function": "bc_rewards:bacap/time_to_strike"
+    },		
+    "criteria": {
+        "wooden_sword": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:wooden_sword"
+						]
+                    }
+                ]
+            }
+        },
+        "stone_sword": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:stone_sword"
+						]
+                    }
+                ]
+            }
+        },
+        "iron_sword": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:iron_sword"
+						]
+                    }
+                ]
+            }
+        },
+        "diamond_sword": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:diamond_sword"
+						]
+                    }
+                ]
+            }
+        },
+        "golden_sword": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:golden_sword"
+						]
+                    }
+                ]
+            }
+        },
+        "netherite_sword": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:netherite_sword"
+						]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+		[
+        "wooden_sword",
+        "stone_sword",
+		"iron_sword",
+		"diamond_sword",
+		"golden_sword",
+		"netherite_sword"
+		]
+    ]
+}

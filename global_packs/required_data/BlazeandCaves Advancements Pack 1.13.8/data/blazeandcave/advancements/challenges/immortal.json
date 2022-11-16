@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:totem_of_undying"
+        },
+        "title": {"translate":"Immortal"},
+        "description": {"color":"#FF2A2A","translate":"Fill your entire inventory with Totems of Undying"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:challenges/the_world_is_ending",
+	"rewards": {
+		"function": "bc_rewards:challenges/immortal"
+    },		
+    "criteria": {
+        "totem_inventory": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+				"player": {
+					"nbt": "{Inventory:[{Slot:0b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:1b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:2b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:3b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:4b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:5b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:6b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:7b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:8b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:9b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:10b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:11b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:12b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:13b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:14b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:15b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:16b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:17b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:18b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:19b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:20b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:21b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:22b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:23b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:24b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:25b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:26b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:27b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:28b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:29b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:30b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:31b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:32b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:33b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:34b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:35b,id:\"minecraft:totem_of_undying\",Count:1b},{Slot:-106b,id:\"minecraft:totem_of_undying\",Count:1b}]}"
+				}
+            }
+        }
+    }
+}

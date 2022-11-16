@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "c:storage_blocks/hepatizon"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_hepatizon",
+    "amount": 81000
+  },
+  "temperature": 800,
+  "time": 233
+}

@@ -1,0 +1,45 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:structure_void"
+        },
+        "title": {"translate":"Pixel Perfect"},
+        "description": {"translate":"Use a Spyglass to stare at a bat from at least 50 blocks away"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:mining/galileo_figaro",
+    "rewards": {
+		"function": "bc_rewards:mining/pixel_perfect"
+    },		
+    "criteria": {
+        "pixel_perfect": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"player": {
+								"looking_at": {
+									"type": "minecraft:bat",
+									"distance": {
+										"absolute": {
+											"min": 50
+										}
+									}
+								}
+							}
+						},
+						"entity": "this"
+					}
+				],
+				"item": {
+					"items": [
+						"minecraft:spyglass"
+					]
+				}
+			}
+		}
+    }
+}

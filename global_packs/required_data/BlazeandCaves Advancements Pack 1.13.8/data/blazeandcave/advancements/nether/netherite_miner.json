@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:ancient_debris"
+        },
+        "title": {"translate":"Netherite Miner"},
+        "description": {"color":"#75E1FF","translate":"Mine a stack of Ancient Debris"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:nether/diamonds_are_not_forever",
+	"rewards": {
+		"function": "bc_rewards:nether/netherite_miner"
+    },	
+    "criteria": {
+        "ancient_debris": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:ancient_debris"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }
+    }
+}

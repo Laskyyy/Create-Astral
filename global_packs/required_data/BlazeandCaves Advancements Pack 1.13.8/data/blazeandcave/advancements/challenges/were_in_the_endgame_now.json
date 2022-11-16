@@ -1,0 +1,29 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:end_stone"
+        },
+        "title": {"translate":"We're in the endgame now"},
+        "description": {"color":"#FF2A2A","translate":"Construct a village in the End and defend it from a raid"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:challenges/root",
+    "rewards": {
+		"function": "bc_rewards:challenges/were_in_the_endgame_now"
+    },		
+    "criteria": {
+        "start_raid_end": {
+            "trigger": "minecraft:voluntary_exile",
+            "conditions": {
+                "dimension": "the_end"
+            }
+        },	
+        "defend_raid_end": {
+            "trigger": "minecraft:hero_of_the_village",
+            "conditions": {
+                "dimension": "the_end"
+            }
+        }
+    }
+}

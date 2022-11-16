@@ -1,0 +1,27 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:stone_sword"
+		},
+		"title": {"translate":"Weaponry"},
+		"description": {"translate":"Weapons of choice for combat"},
+		"background": "minecraft:textures/block/smithing_table_top.png",
+		"show_toast": false,
+		"announce_to_chat": "false"
+	},
+	"rewards": {
+		"function": "bc_rewards:weaponry/root"
+	},		
+	"criteria": {
+		"sword": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"tag": "minecraft:swords"
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:wires/zinc"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "c:wires/zinc"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_zinc",
+    "amount": 4500
+  },
+  "temperature": 420,
+  "time": 9
+}

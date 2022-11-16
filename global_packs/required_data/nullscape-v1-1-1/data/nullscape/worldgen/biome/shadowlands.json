@@ -1,0 +1,92 @@
+{
+  "temperature": 2,
+  "downfall": 0,
+  "precipitation": "none",
+  "category": "the_end",
+  "effects": {
+    "sky_color": 0,
+    "fog_color": 10518688,
+    "water_color": 7172215,
+    "water_fog_color": 329011,
+    "mood_sound": {
+      "sound": "minecraft:ambient.soul_sand_valley.mood",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    },
+    "additions_sound": {
+      "sound": "minecraft:ambient.soul_sand_valley.additions",
+      "tick_chance": 0.0111
+    },
+    "ambient_sound": "minecraft:ambient.warped_forest.loop",
+    "particle": {
+      "options": {
+        "type": "minecraft:ash",
+        "fromColor": [
+          0.4,
+          0.4,
+          0.4
+        ],
+        "toColor": [
+          0,
+          0,
+          0
+        ],
+        "scale": 1.45
+      },
+      "probability": 0.08
+    }
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:phantom",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "minecraft:enderman",
+        "weight": 10,
+        "minCount": 4,
+        "maxCount": 4
+      }
+    ],
+    "creature": [],
+    "ambient": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {
+    "phantom": {
+      "energy_budget": 0.12,
+      "charge": 1
+    }
+  },
+  "carvers": {},
+  "features": [
+    [
+      "nullscape:asteroid_carver"
+    ],
+    [
+      "minecraft:end_gateway_return"
+    ],
+    [],
+    [
+      "nullscape:shadow/shadow_cut"
+    ],
+    [
+      "nullscape:shadow/blackstone",
+      "nullscape:shadow/basalt",
+      "nullscape:shadow/bone_trees1",
+      "nullscape:shadow/droop"
+    ],
+    [
+      "nullscape:shadow/pillar",
+      "nullscape:shadow/vegetation",
+      "nullscape:shadow/pillars_coral"
+    ]
+  ]
+}

@@ -1,0 +1,1385 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:beef"
+        },
+        "title": {"translate":"Animal Milestone"},
+        "description": {"color":"yellow","translate":"Complete every advancement in the Animal tab"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:bacap/farming_milestone",
+	"rewards": {
+		"function": "bc_rewards:bacap/animal_milestone"
+    },		
+    "criteria": {
+        "a_horse_in_shining_armor": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/a_horse_in_shining_armor": "true"
+						}
+					}
+				}
+			}
+        },
+        "aquarium": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/aquarium": "true"
+						}
+					}
+				}
+			}
+        },
+		"are_we_there_yet": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/are_we_there_yet": "true"
+						}
+					}
+				}
+			}
+        },
+		"artificial_selection": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/artificial_selection": "true"
+						}
+					}
+				}
+			}
+        },
+		"bacon": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/bacon": "true"
+						}
+					}
+				}
+			}
+        },
+		"bee_our_guest": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:husbandry/safely_harvest_honey": "true"
+						}
+					}
+				}
+			}
+        },
+		"birdkeeper": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/birdkeeper": "true"
+						}
+					}
+				}
+			}
+        },
+		"blistering_barnacles": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/blistering_barnacles": "true"
+						}
+					}
+				}
+			}
+        },
+		"bunny_lover": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/bunny_lover": "true"
+						}
+					}
+				}
+			}
+        },
+		"catching_nemo": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/catching_nemo": "true"
+						}
+					}
+				}
+			}
+        },
+		"chatterbox": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/chatterbox": "true"
+						}
+					}
+				}
+			}
+        },
+		"chicken_cooper": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/chicken_cooper": "true"
+						}
+					}
+				}
+			}
+        },
+		"colorful_cavalry": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/colorful_cavalry": "true"
+						}
+					}
+				}
+			}
+        },
+		"cool_kids": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/cool_kids": "true"
+						}
+					}
+				}
+			}
+        },
+		"cow_tipper": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/cow_tipper": "true"
+						}
+					}
+				}
+			}
+        },
+		"cowboy": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/cowboy": "true"
+						}
+					}
+				}
+			}
+        },
+		"direct_fishing": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/direct_fishing": "true"
+						}
+					}
+				}
+			}
+        },
+		"foal_play": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/foal_play": "true"
+						}
+					}
+				}
+			}
+        },
+		"fashion_statement": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/fashion_statement": "true"
+						}
+					}
+				}
+			}
+        },
+		"feeding_the_chickens": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/feeding_the_chickens": "true"
+						}
+					}
+				}
+			}
+        },
+		"feeling_sheepish": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/feeling_sheepish": "true"
+						}
+					}
+				}
+			}
+        },
+		"fishy_business": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:husbandry/fishy_business": "true"
+						}
+					}
+				}
+			}
+        },
+		"fuzzy_feet": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/fuzzy_feet": "true"
+						}
+					}
+				}
+			}
+        },
+		"getting_into_a_stew": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/getting_into_a_stew": "true"
+						}
+					}
+				}
+			}
+        },
+		"grinding_nemo": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/grinding_nemo": "true"
+						}
+					}
+				}
+			}
+        },
+		"have_a_shearful_day": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/have_a_shearful_day": "true"
+						}
+					}
+				}
+			}
+        },
+		"hey_look_mom": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/hey_look_mom": "true"
+						}
+					}
+				}
+			}
+        },
+		"high_steaks": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/high_steaks": "true"
+						}
+					}
+				}
+			}
+        },
+		"hive_mind": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/hive_mind": "true"
+						}
+					}
+				}
+			}
+        },
+		"honey_im_home": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/honey_im_home": "true"
+						}
+					}
+				}
+			}
+        },
+		"horse_armorer": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/horse_armorer": "true"
+						}
+					}
+				}
+			}
+        },
+		"in_a_hole_there_lived_a_rabbit": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/in_a_hole_there_lived_a_rabbit": "true"
+						}
+					}
+				}
+			}
+        },
+		"leader_of_the_pack": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:husbandry/tame_an_animal": "true"
+						}
+					}
+				}
+			}
+        },
+		"llama_llama_duck_king": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/llama_llama_duck_king": "true"
+						}
+					}
+				}
+			}
+        },
+		"lucky_charm": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/lucky_charm": "true"
+						}
+					}
+				}
+			}
+        },
+		"mary_had_a_little_lamb": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/mary_had_a_little_lamb": "true"
+						}
+					}
+				}
+			}
+        },
+		"master_angler": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/master_angler": "true"
+						}
+					}
+				}
+			}
+        },
+		"master_farrier": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/master_farrier": "true"
+						}
+					}
+				}
+			}
+        },
+		"milk_does_your_body_good": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/milk_does_your_body_good": "true"
+						}
+					}
+				}
+			}
+        },
+		"mooshroom_kingdom": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/mooshroom_kingdom": "true"
+						}
+					}
+				}
+			}
+        },
+		"mushroom_scientist": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/mushroom_scientist": "true"
+						}
+					}
+				}
+			}
+        },
+		"not_the_bees": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/not_the_bees": "true"
+						}
+					}
+				}
+			}
+        },
+		"overpopulation": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:husbandry/bred_all_animals": "true"
+						}
+					}
+				}
+			}
+        },
+		"pig_slaughterer": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/pig_slaughterer": "true"
+						}
+					}
+				}
+			}
+        },
+		"poacher": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/poacher": "true"
+						}
+					}
+				}
+			}
+        },
+		"pork_chop": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/pork_chop": "true"
+						}
+					}
+				}
+			}
+        },
+		"puppies_yipe": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/puppies_yipe": "true"
+						}
+					}
+				}
+			}
+        },
+		"rabbit_season": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/rabbit_season": "true"
+						}
+					}
+				}
+			}
+        },
+		"rainbow_collection": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/rainbow_collection": "true"
+						}
+					}
+				}
+			}
+        },
+		"repopulation": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:husbandry/breed_an_animal": "true"
+						}
+					}
+				}
+			}
+        },
+		"root": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:husbandry/root": "true"
+						}
+					}
+				}
+			}
+        },
+		"salmonella_poisoning": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/salmonella_poisoning": "true"
+						}
+					}
+				}
+			}
+        },
+		"scuttler": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/scuttler": "true"
+						}
+					}
+				}
+			}
+        },
+		"sheariously": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/sheariously": "true"
+						}
+					}
+				}
+			}
+        },
+		"shoe_shed": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/shoe_shed": "true"
+						}
+					}
+				}
+			}
+        },
+		"snow_fox_64": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/snow_fox_64": "true"
+						}
+					}
+				}
+			}
+        },
+		"so_good": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/so_good": "true"
+						}
+					}
+				}
+			}
+        },
+		"so_i_got_that_going_for_me": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/so_i_got_that_going_for_me": "true"
+						}
+					}
+				}
+			}
+        },
+		"someones_been_here_before": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/someones_been_here_before": "true"
+						}
+					}
+				}
+			}
+        },
+		"stay_calmer": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/stay_calmer": "true"
+						}
+					}
+				}
+			}
+        },
+		"sticky_situation": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:adventure/honey_block_slide": "true"
+						}
+					}
+				}
+			}
+        },
+		"super_mooshroom": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/super_mooshroom": "true"
+						}
+					}
+				}
+			}
+        },
+		"sushi": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/sushi": "true"
+						}
+					}
+				}
+			}
+        },
+		"tactical_fishing": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:husbandry/tactical_fishing": "true"
+						}
+					}
+				}
+			}
+        },
+		"theyre_breeding_like_rabbits": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/theyre_breeding_like_rabbits": "true"
+						}
+					}
+				}
+			}
+        },
+		"tickle_time": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/tickle_time": "true"
+						}
+					}
+				}
+			}
+        },
+		"total_beelocation": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:husbandry/silk_touch_nest": "true"
+						}
+					}
+				}
+			}
+        },
+		"totally_not_an_afk_fisher": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/totally_not_an_afk_fisher": "true"
+						}
+					}
+				}
+			}
+        },
+		"treasure_hunter": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/treasure_hunter": "true"
+						}
+					}
+				}
+			}
+        },
+		"tropical_collection": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/tropical_collection": "true"
+						}
+					}
+				}
+			}
+        },
+		"true_cow_tipper": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/true_cow_tipper": "true"
+						}
+					}
+				}
+			}
+        },
+		"turtle_army": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/turtle_army": "true"
+						}
+					}
+				}
+			}
+        },
+		"turtle_soldier": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/turtle_soldier": "true"
+						}
+					}
+				}
+			}
+        },
+		"what_a_piece_of_junk": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/what_a_piece_of_junk": "true"
+						}
+					}
+				}
+			}
+        },
+		"what_does_the_fox_say": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/what_does_the_fox_say": "true"
+						}
+					}
+				}
+			}
+        },
+		"when_pigs_used_to_fly": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/when_pigs_used_to_fly": "true"
+						}
+					}
+				}
+			}
+        },
+		"wheres_the_honey_lebowski": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/wheres_the_honey_lebowski": "true"
+						}
+					}
+				}
+			}
+        },
+		"which_came_first": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/which_came_first": "true"
+						}
+					}
+				}
+			}
+        },
+		"winnie_the_pooh": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/winnie_the_pooh": "true"
+						}
+					}
+				}
+			}
+        },
+		"wooly": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/wooly": "true"
+						}
+					}
+				}
+			}
+        },
+		"ya_like_jazz": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/ya_like_jazz": "true"
+						}
+					}
+				}
+			}
+        },
+		"you_lead_ill_follow": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/you_lead_ill_follow": "true"
+						}
+					}
+				}
+			}
+        },
+		"going_down_the_rabbit_hole": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/going_down_the_rabbit_hole": "true"
+						}
+					}
+				}
+			}
+        },
+		"just_keeps_going": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/just_keeps_going": "true"
+						}
+					}
+				}
+			}
+        },
+		"nest_quick": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/nest_quick": "true"
+						}
+					}
+				}
+			}
+        },
+		"heavy_duty_caravan": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/heavy_duty_caravan": "true"
+						}
+					}
+				}
+			}
+        },
+		"save_the_turtles": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/save_the_turtles": "true"
+						}
+					}
+				}
+			}
+        },
+		"delicious_fish": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/delicious_fish": "true"
+						}
+					}
+				}
+			}
+        },
+		"milkshroom": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/milkshroom": "true"
+						}
+					}
+				}
+			}
+        },
+		"live_and_let_dye": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/live_and_let_dye": "true"
+						}
+					}
+				}
+			}
+        },
+		"foxy_thievery": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/foxy_thievery": "true"
+						}
+					}
+				}
+			}
+        },
+		"lead_the_way": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/lead_the_way": "true"
+						}
+					}
+				}
+			}
+        },
+		"beeloons": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/beeloons": "true"
+						}
+					}
+				}
+			}
+        },
+		"follow_the_leader": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/follow_the_leader": "true"
+						}
+					}
+				}
+			}
+        },
+		"goat_out_of_here": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/goat_out_of_here": "true"
+						}
+					}
+				}
+			}
+        },
+		"billy_the_kid": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/billy_the_kid": "true"
+						}
+					}
+				}
+			}
+        },
+		"goat_simulator": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/goat_simulator": "true"
+						}
+					}
+				}
+			}
+        },
+		"cephalight": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/cephalight": "true"
+						}
+					}
+				}
+			}
+        },
+		"glow_and_behold": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:husbandry/make_a_sign_glow": "true"
+						}
+					}
+				}
+			}
+        },
+		"flashy_items": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/flashy_items": "true"
+						}
+					}
+				}
+			}
+        },
+		"iceologer_shouldve_won": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/iceologer_shouldve_won": "true"
+						}
+					}
+				}
+			}
+        },
+		"the_cutest_predator": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:husbandry/axolotl_in_a_bucket": "true"
+						}
+					}
+				}
+			}
+        },
+		"axolittle": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/axolittle": "true"
+						}
+					}
+				}
+			}
+        },
+		"axolotl_of_them": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/axolotl_of_them": "true"
+						}
+					}
+				}
+			}
+        },
+		"axeolotl": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/axeolotl": "true"
+						}
+					}
+				}
+			}
+        },
+		"thanks_a_lotl": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/thanks_a_lotl": "true"
+						}
+					}
+				}
+			}
+        },
+		"swine_sailing": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/swine_sailing": "true"
+						}
+					}
+				}
+			}
+        },
+		"llama_festival": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/llama_festival": "true"
+						}
+					}
+				}
+			}
+        },
+		"so_hungry_i_could_eat_a_horse": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/so_hungry_i_could_eat_a_horse": "true"
+						}
+					}
+				}
+			}
+        },
+		"screaming_milk": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/screaming_milk": "true"
+						}
+					}
+				}
+			}
+        },
+		"whatever_floats_your_goat": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:husbandry/ride_a_boat_with_a_goat": "true"
+						}
+					}
+				}
+			}
+        },
+		"the_healing_power_of_friendship": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:husbandry/kill_axolotl_target": "true"
+						}
+					}
+				}
+			}
+        },
+		"is_it_a_bird": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:adventure/spyglass_at_parrot": "true"
+						}
+					}
+				}
+			}
+        },
+		"blackberry_market": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:animal/blackberry_market": "true"
+						}
+					}
+				}
+			}
+        }
+    }
+}

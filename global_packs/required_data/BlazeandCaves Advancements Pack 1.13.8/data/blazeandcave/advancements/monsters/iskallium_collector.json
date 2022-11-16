@@ -1,0 +1,31 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:player_head",
+			"nbt": "{SkullOwner:{Id:[I;-2094978945,1481330305,-2101253845,-849097528],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTIwZTg0ZDMyZDFlOWM5MTlkM2ZkYmI1M2YyYjM3YmEyNzRjMTIxYzU3YjI4MTBlNWE0NzJmNDBkYWNmMDA0ZiJ9fX0=\"}]}}}"
+        },
+        "title": {"translate":"Iskallium Collector"},
+        "description": {"translate":"Collect enough slimeballs to craft a stack of slime blocks"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:monsters/slime_squisher",
+    "rewards": {
+		"function": "bc_rewards:monsters/iskallium_collector"
+    },		
+    "criteria": {
+        "slime_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:slime_block"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }		
+    }	
+}

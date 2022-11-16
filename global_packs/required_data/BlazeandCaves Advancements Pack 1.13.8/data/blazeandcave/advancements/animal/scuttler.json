@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:scute"
+        },
+        "title": {"translate":"Scuttler"},
+        "description": {"translate":"Get a scute from a baby turtle when it grows up"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:animal/hey_look_mom",
+	"rewards": {
+		"function": "bc_rewards:animal/scuttler"
+    },		
+    "criteria": {
+        "scute": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:scute"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

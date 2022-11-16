@@ -1,0 +1,64 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:purpur_pillar"
+        },
+        "title": {"translate":"Purpurfect!"},
+        "description": {"translate":"Craft or collect purpur blocks, slabs, pillars and stairs"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:end/extrabiologist",
+    "rewards": {
+        "function": "bc_rewards:end/purpurfect"
+    },		
+    "criteria": {
+        "purpur_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:purpur_block"
+						]
+                    }
+                ]
+            }
+        },
+        "purpur_pillar": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:purpur_pillar"
+						]
+                    }
+                ]
+            }
+        },
+		"purpur_slab": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:purpur_slab"
+						]
+                    }
+                ]
+            }
+        },
+        "purpur_stairs": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:purpur_stairs"
+						]
+                    }
+                ]
+            }
+        }
+	}		
+}

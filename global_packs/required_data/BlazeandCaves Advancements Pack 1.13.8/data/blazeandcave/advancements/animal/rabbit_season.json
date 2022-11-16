@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:cooked_rabbit"
+        },
+        "title": {"translate":"Rabbit Season"},
+        "description": {"translate":"Killing bunnies is cruel. Period."},
+        "announce_to_chat": "true"
+    },
+    "parent": "minecraft:husbandry/root",
+	"rewards": {
+		"function": "bc_rewards:animal/rabbit_season"
+    },		
+    "criteria": {
+        "cooked_rabbit": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+					"items": [
+						"minecraft:cooked_rabbit"
+					]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:crimson_roots"
+        },
+        "title": {"translate":"I am Root"},
+        "description": {"translate":"Pick up some crimson or warped roots"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:nether/what_a_fungi",
+	"rewards": {
+		"function": "bc_rewards:nether/i_am_root"
+    },	
+    "criteria": {
+        "nether_roots": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "tag": "minecraft:nether_roots"
+                    }
+                ]
+            }
+        }
+    }
+}

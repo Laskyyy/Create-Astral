@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NPN",
+    "OCO",
+    "OBO"
+  ],
+  "key": {
+    "C": {
+      "item": "indrev:circuit_mk4"
+    },
+    "N": {
+      "item": "indrev:enriched_nikolite_ingot"
+    },
+    "P": {
+      "item": "indrev:netherite_drill_head"
+    },
+    "B": {
+      "item": "indrev:battery"
+    },
+    "O": {
+      "tag": "c:lead_plates"
+    }
+  },
+  "result": {
+    "item": "indrev:mining_drill_mk4"
+  }
+}

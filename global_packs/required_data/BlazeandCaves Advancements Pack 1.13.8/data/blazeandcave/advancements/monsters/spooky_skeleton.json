@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:bone"
+        },
+        "title": {"translate":"Spooky Skeleton"},
+        "description": {"translate":"Kill a skeleton"},
+        "announce_to_chat": "true"
+    },
+    "parent": "minecraft:adventure/kill_a_mob",
+    "rewards": {
+        "function": "bc_rewards:monsters/spooky_skeleton"
+    },		
+    "criteria": {
+        "skeleton": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "skeleton"
+                }
+            }
+        }
+    }
+}

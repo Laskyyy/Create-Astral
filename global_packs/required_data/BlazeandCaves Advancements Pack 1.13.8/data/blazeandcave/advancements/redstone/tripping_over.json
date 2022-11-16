@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:tripwire_hook"
+        },
+        "title": {"translate":"Tripping Over"},
+        "description": {"translate":"Place a line of string between two tripwire hooks, and trigger it"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:redstone/under_pressure",
+	"rewards": {
+		"function": "bc_rewards:redstone/tripping_over"
+    },
+    "criteria": {
+        "tripwire_hook": {
+            "trigger": "minecraft:enter_block",
+            "conditions": {
+				"block": "minecraft:tripwire",
+				"state": {
+					"attached": "true",
+					"powered": "true"
+				}
+            }
+        }
+    }
+}

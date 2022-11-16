@@ -1,0 +1,509 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:end_stone"
+        },
+        "title": {"translate":"End Milestone"},
+        "description": {"color":"yellow","translate":"Complete every advancement in the End tab"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:bacap/potion_milestone",
+	"rewards": {
+		"function": "bc_rewards:bacap/end_milestone"
+    },		
+    "criteria": {
+        "anti_gravity_generator": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/anti_gravity_generator": "true"
+						}
+					}
+				}
+			}
+        },
+        "cow_jumped_over_the_moon": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/cow_jumped_over_the_moon": "true"
+						}
+					}
+				}
+			}
+        },
+		"dragon_shield": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/dragon_shield": "true"
+						}
+					}
+				}
+			}
+        },
+		"dragon_vs_dragon": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/dragon_vs_dragon": "true"
+						}
+					}
+				}
+			}
+        },
+		"end_bricks": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/end_bricks": "true"
+						}
+					}
+				}
+			}
+        },
+		"event_horizon": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/event_horizon": "true"
+						}
+					}
+				}
+			}
+        },
+		"extrabiologist": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/extrabiologist": "true"
+						}
+					}
+				}
+			}
+        },
+		"for_mother_clarence": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/for_mother_clarence": "true"
+						}
+					}
+				}
+			}
+        },
+		"free_the_end": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:end/kill_dragon": "true"
+						}
+					}
+				}
+			}
+        },
+		"getting_chorus": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/getting_chorus": "true"
+						}
+					}
+				}
+			}
+        },
+		"great_view_from_up_here": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:end/levitate": "true"
+						}
+					}
+				}
+			}
+        },
+		"im_coming_back_murph": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/im_coming_back_murph": "true"
+						}
+					}
+				}
+			}
+        },
+		"no_dont_let_me_leave_murph": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/no_dont_let_me_leave_murph": "true"
+						}
+					}
+				}
+			}
+        },
+		"off_with_his_head": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/off_with_his_head": "true"
+						}
+					}
+				}
+			}
+        },
+		"portable_storage": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/portable_storage": "true"
+						}
+					}
+				}
+			}
+        },
+		"purpurfect": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/purpurfect": "true"
+						}
+					}
+				}
+			}
+        },
+		"remote_getaway": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:end/enter_end_gateway": "true"
+						}
+					}
+				}
+			}
+        },
+		"rocketman": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/rocketman": "true"
+						}
+					}
+				}
+			}
+        },
+		"root": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:end/root": "true"
+						}
+					}
+				}
+			}
+        },
+		"shouldnt_my_shield_levitate_too": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/shouldnt_my_shield_levitate_too": "true"
+						}
+					}
+				}
+			}
+        },
+		"shulker_breaker": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/shulker_breaker": "true"
+						}
+					}
+				}
+			}
+        },
+		"sky_high": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/sky_high": "true"
+						}
+					}
+				}
+			}
+        },
+		"skys_the_limit": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:end/elytra": "true"
+						}
+					}
+				}
+			}
+        },
+		"some_breakthrough": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/some_breakthrough": "true"
+						}
+					}
+				}
+			}
+        },
+		"somewhere_over_the_rainbow": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/somewhere_over_the_rainbow": "true"
+						}
+					}
+				}
+			}
+        },
+		"the_actual_end": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/the_actual_end": "true"
+						}
+					}
+				}
+			}
+        },
+		"the_beginning": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/the_beginning": "true"
+						}
+					}
+				}
+			}
+        },
+		"the_city_at_the_end_of_the_game": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:end/find_end_city": "true"
+						}
+					}
+				}
+			}
+        },
+		"the_end_again": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:end/respawn_dragon": "true"
+						}
+					}
+				}
+			}
+        },
+		"the_next_generation": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:end/dragon_egg": "true"
+						}
+					}
+				}
+			}
+        },
+		"the_point_of_no_return": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/the_point_of_no_return": "true"
+						}
+					}
+				}
+			}
+        },
+		"the_start_of_something": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/the_start_of_something": "true"
+						}
+					}
+				}
+			}
+        },
+		"uh_houston_we_have_a_problem": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/uh_houston_we_have_a_problem": "true"
+						}
+					}
+				}
+			}
+        },
+		"void_walker": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/void_walker": "true"
+						}
+					}
+				}
+			}
+        },
+		"what_for": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/what_for": "true"
+						}
+					}
+				}
+			}
+        },
+		"ring_of_the_end": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/ring_of_the_end": "true"
+						}
+					}
+				}
+			}
+        },
+		"in_your_face_neil_armstrong": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/in_your_face_neil_armstrong": "true"
+						}
+					}
+				}
+			}
+        },
+		"organizational_wizard": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/organizational_wizard": "true"
+						}
+					}
+				}
+			}
+        },
+		"a_wizards_breakfast": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/a_wizards_breakfast": "true"
+						}
+					}
+				}
+			}
+        },
+		"is_it_a_plane": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"minecraft:adventure/spyglass_at_dragon": "true"
+						}
+					}
+				}
+			}
+        },
+		"dogfight": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"advancements": {
+							"blazeandcave:end/dogfight": "true"
+						}
+					}
+				}
+			}
+        }
+    }
+}

@@ -1,0 +1,64 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:stone_shovel"
+        },
+        "title": {"translate":"MOAR Tools"},
+        "description": {"translate":"Craft a stone pickaxe, axe, shovel and hoe"},
+        "announce_to_chat": "true"
+    },
+    "parent": "minecraft:story/upgrade_tools",
+	"rewards": {
+		"function": "bc_rewards:mining/moar_tools"
+    },
+    "criteria": {
+        "stone_pickaxe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:stone_pickaxe"
+						]
+                    }
+                ]
+            }
+        },
+        "stone_axe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:stone_axe"
+						]
+                    }
+                ]
+            }
+        },
+        "stone_shovel": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:stone_shovel"
+						]
+                    }
+                ]
+            }
+        },
+        "stone_hoe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:stone_hoe"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

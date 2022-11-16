@@ -1,0 +1,34 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:emerald"
+        },
+        "title": {"translate":"The Haggler"},
+        "description": {"translate":"Trade with villagers 100 times"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:statistics/root",
+	"rewards": {
+		"function": "bc_rewards:statistics/the_haggler"
+    },		
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"stats": [
+							{
+								"type": "minecraft:custom",
+								"stat": "minecraft:traded_with_villager",
+								"value": {
+									"min": 100
+								}
+							}
+						]
+					}
+				}
+			}
+        }
+    }
+}

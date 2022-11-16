@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:coins/netherite"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "c:coins/netherite"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_netherite",
+    "amount": 3000
+  },
+  "temperature": 800,
+  "time": 49
+}

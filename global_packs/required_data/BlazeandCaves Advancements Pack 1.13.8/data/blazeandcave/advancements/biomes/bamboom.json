@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:bamboo"
+        },
+        "title": {"translate":"Bamboom!"},
+        "description": {"translate":"Break down some bamboo"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:biomes/tarzan",
+    "rewards": {
+        "function": "bc_rewards:biomes/bamboom"
+    },		
+    "criteria": {
+        "bamboo": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:bamboo"
+						]
+                    }
+                ]
+            }
+        }
+	}	
+}

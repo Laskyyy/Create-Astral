@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:netherrack"
+        },
+        "title": {"translate":"We'll handle this"},
+        "description": {"translate":"Lure a Phantom into the Nether and then kill it"},
+        "announce_to_chat": "true",
+        "frame": "challenge"
+    },
+    "parent": "minecraft:adventure/two_birds_one_arrow",
+	"rewards": {
+		"function": "bc_rewards:monsters/well_handle_this"
+    },	
+    "criteria": {
+        "nether": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:phantom",
+                    "location": {
+                        "dimension": "the_nether"
+                    }
+                }
+            }
+        }
+    }
+}

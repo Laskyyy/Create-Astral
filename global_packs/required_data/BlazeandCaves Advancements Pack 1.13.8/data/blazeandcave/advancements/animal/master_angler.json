@@ -1,0 +1,69 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:pufferfish"
+        },
+        "title": {"translate":"Master Angler"},
+        "description": {"color":"#75E1FF","translate":"Collect a stack of all four types of fish"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:animal/someones_been_here_before",
+	"rewards": {
+		"function": "bc_rewards:animal/master_angler"
+    },		
+    "criteria": {
+        "cod": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:cod"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        },
+        "salmon": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:salmon"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        },
+        "pufferfish": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:pufferfish"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        },
+        "tropical_fish": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:tropical_fish"
+						],
+						"count": 64
+                    }
+                ]
+            }
+        }		
+    }
+}

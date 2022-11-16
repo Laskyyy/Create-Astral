@@ -1,0 +1,318 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:cake"
+        },
+        "title": {"translate":"Pandamonium"},
+        "description": {"translate":"Feed cake to every type of panda"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:biomes/qinling",
+    "rewards": {
+        "function": "bc_rewards:biomes/pandamonium"
+    },
+	"criteria": {
+		"normal": {
+			"trigger": "minecraft:thrown_item_picked_up_by_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:cake"
+					]
+				},
+				"entity": {
+					"type": "panda",
+					"nbt": "{MainGene:\"normal\"}"
+				}
+			}
+		},
+		"normal_wn": {
+			"trigger": "minecraft:thrown_item_picked_up_by_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:cake"
+					]
+				},
+				"entity": {
+					"type": "panda",
+					"nbt": "{MainGene:\"weak\",HiddenGene:\"normal\"}"
+				}
+			}
+		},
+		"normal_wa": {
+			"trigger": "minecraft:thrown_item_picked_up_by_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:cake"
+					]
+				},
+				"entity": {
+					"type": "panda",
+					"nbt": "{MainGene:\"weak\",HiddenGene:\"aggressive\"}"
+				}
+			}
+		},
+		"normal_wl": {
+			"trigger": "minecraft:thrown_item_picked_up_by_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:cake"
+					]
+				},
+				"entity": {
+					"type": "panda",
+					"nbt": "{MainGene:\"weak\",HiddenGene:\"lazy\"}"
+				}
+			}
+		},
+		"normal_ww": {
+			"trigger": "minecraft:thrown_item_picked_up_by_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:cake"
+					]
+				},
+				"entity": {
+					"type": "panda",
+					"nbt": "{MainGene:\"weak\",HiddenGene:\"worried\"}"
+				}
+			}
+		},
+		"normal_wp": {
+			"trigger": "minecraft:thrown_item_picked_up_by_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:cake"
+					]
+				},
+				"entity": {
+					"type": "panda",
+					"nbt": "{MainGene:\"weak\",HiddenGene:\"playful\"}"
+				}
+			}
+		},
+		"normal_wb": {
+			"trigger": "minecraft:thrown_item_picked_up_by_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:cake"
+					]
+				},
+				"entity": {
+					"type": "panda",
+					"nbt": "{MainGene:\"weak\",HiddenGene:\"brown\"}"
+				}
+			}
+		},
+		"normal_bn": {
+			"trigger": "minecraft:thrown_item_picked_up_by_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:cake"
+					]
+				},
+				"entity": {
+					"type": "panda",
+					"nbt": "{MainGene:\"brown\",HiddenGene:\"normal\"}"
+				}
+			}
+		},
+		"normal_ba": {
+			"trigger": "minecraft:thrown_item_picked_up_by_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:cake"
+					]
+				},
+				"entity": {
+					"type": "panda",
+					"nbt": "{MainGene:\"brown\",HiddenGene:\"aggressive\"}"
+				}
+			}
+		},
+		"normal_bl": {
+			"trigger": "minecraft:thrown_item_picked_up_by_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:cake"
+					]
+				},
+				"entity": {
+					"type": "panda",
+					"nbt": "{MainGene:\"brown\",HiddenGene:\"lazy\"}"
+				}
+			}
+		},
+		"normal_bw": {
+			"trigger": "minecraft:thrown_item_picked_up_by_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:cake"
+					]
+				},
+				"entity": {
+					"type": "panda",
+					"nbt": "{MainGene:\"brown\",HiddenGene:\"worried\"}"
+				}
+			}
+		},
+		"normal_bp": {
+			"trigger": "minecraft:thrown_item_picked_up_by_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:cake"
+					]
+				},
+				"entity": {
+					"type": "panda",
+					"nbt": "{MainGene:\"brown\",HiddenGene:\"playful\"}"
+				}
+			}
+		},
+		"normal_bwe": {
+			"trigger": "minecraft:thrown_item_picked_up_by_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:cake"
+					]
+				},
+				"entity": {
+					"type": "panda",
+					"nbt": "{MainGene:\"brown\",HiddenGene:\"weak\"}"
+				}
+			}
+		},
+		"aggressive": {
+			"trigger": "minecraft:thrown_item_picked_up_by_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:cake"
+					]
+				},
+				"entity": {
+					"type": "panda",
+					"nbt": "{MainGene:\"aggressive\"}"
+				}
+			}
+		},
+		"lazy": {
+			"trigger": "minecraft:thrown_item_picked_up_by_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:cake"
+					]
+				},
+				"entity": {
+					"type": "panda",
+					"nbt": "{MainGene:\"lazy\"}"
+				}
+			}
+		},
+		"worried": {
+			"trigger": "minecraft:thrown_item_picked_up_by_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:cake"
+					]
+				},
+				"entity": {
+					"type": "panda",
+					"nbt": "{MainGene:\"worried\"}"
+				}
+			}
+		},
+		"playful": {
+			"trigger": "minecraft:thrown_item_picked_up_by_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:cake"
+					]
+				},
+				"entity": {
+					"type": "panda",
+					"nbt": "{MainGene:\"playful\"}"
+				}
+			}
+		},
+		"weak": {
+			"trigger": "minecraft:thrown_item_picked_up_by_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:cake"
+					]
+				},
+				"entity": {
+					"type": "panda",
+					"nbt": "{MainGene:\"weak\",HiddenGene:\"weak\"}"
+				}
+			}
+		},
+		"brown": {
+			"trigger": "minecraft:thrown_item_picked_up_by_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:cake"
+					]
+				},
+				"entity": {
+					"type": "panda",
+					"nbt": "{MainGene:\"brown\",HiddenGene:\"brown\"}"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"normal",
+			"normal_wn",
+			"normal_wa",
+			"normal_wl",
+			"normal_ww",
+			"normal_wp",
+			"normal_wb",
+			"normal_bn",
+			"normal_ba",
+			"normal_bl",
+			"normal_bw",
+			"normal_bp",
+			"normal_bwe"
+		],
+		[
+			"aggressive"
+		],
+		[
+			"lazy"
+		],
+		[
+			"worried"
+		],
+		[
+			"playful"
+		],
+		[
+			"weak"
+		],
+		[
+			"brown"
+		]
+	]
+}

@@ -1,0 +1,121 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_boots"
+        },
+        "title": {"translate":"Ten Thousand Blocks"},
+        "description": {"color":"#75E1FF","translate":"Travel at least 10,000 blocks from the centre of the world in any direction.","extra":[{"text":"\n"},{"color":"#75E1FF","translate":"A journey that long begins with a single step"}]},
+        "announce_to_chat": "true",
+        "frame": "goal"
+    },
+    "parent": "blazeandcave:biomes/kilometre_walk",
+    "rewards": {
+        "function": "bc_rewards:biomes/ten_thousand_blocks"
+    },		
+    "criteria": {
+        "outer_pos_x": {
+            "trigger": "minecraft:location",
+            "conditions": {
+				"position": {
+					"x": {
+						"min": 10000.0
+					}
+				},
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "player": {
+                                    "gamemode": "spectator"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "outer_pos_z": {
+            "trigger": "minecraft:location",
+            "conditions": {
+				"position": {
+					"z": {
+						"min": 10000.0
+					}
+				},
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "player": {
+                                    "gamemode": "spectator"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "outer_neg_x": {
+            "trigger": "minecraft:location",
+            "conditions": {
+				"position": {
+					"x": {
+						"max": -10000.0
+					}
+				},
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "player": {
+                                    "gamemode": "spectator"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "outer_neg_z": {
+            "trigger": "minecraft:location",
+            "conditions": {
+				"position": {
+					"z": {
+						"max": -10000.0
+					}
+				},
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "player": {
+                                    "gamemode": "spectator"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }	
+    },
+    "requirements": [
+        [
+            "outer_pos_x",
+            "outer_pos_z",
+            "outer_neg_x",
+            "outer_neg_z"
+        ]
+    ]
+}

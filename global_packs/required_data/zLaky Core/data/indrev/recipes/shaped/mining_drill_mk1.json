@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NPN",
+    "OCO",
+    "OBO"
+  ],
+  "key": {
+    "C": {
+      "item": "indrev:circuit_mk1"
+    },
+    "N": {
+      "item": "indrev:nikolite_dust"
+    },
+    "P": {
+      "item": "indrev:stone_drill_head"
+    },
+    "B": {
+      "item": "indrev:battery"
+    },
+    "O": {
+      "tag": "c:bronze_plates"
+    }
+  },
+  "result": {
+    "item": "indrev:mining_drill_mk1"
+  }
+}

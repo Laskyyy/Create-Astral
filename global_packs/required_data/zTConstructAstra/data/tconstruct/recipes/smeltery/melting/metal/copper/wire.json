@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:wires/copper"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "c:wires/copper"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_copper",
+    "amount": 4500
+  },
+  "temperature": 500,
+  "time": 10
+}

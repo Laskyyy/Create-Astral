@@ -1,0 +1,32 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:dispenser"
+        },
+        "title": {"translate":"A Furious Test Subject"},
+        "description": {"translate":"Get attacked by a mob with every potion effect"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "minecraft:nether/all_potions",
+    "rewards": {
+        "function": "bc_rewards:potion/a_furious_test_subject"
+    },		
+    "criteria": {
+        "phantom": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+						"nbt": "{ActiveEffects:[{Id:1b},{Id:2b},{Id:5b},{Id:8b},{Id:10b},{Id:11b},{Id:12b},{Id:13b},{Id:14b},{Id:16b},{Id:18b},{Id:19b},{Id:28b}]}",
+						"distance": {
+							"absolute": {
+								"min": 0.001
+							}
+						}
+					}
+                }
+            }
+        }
+    }
+}

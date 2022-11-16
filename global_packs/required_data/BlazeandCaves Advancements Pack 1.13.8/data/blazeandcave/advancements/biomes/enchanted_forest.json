@@ -1,0 +1,36 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:allium"
+        },
+        "title": {"translate":"Enchanted Forest"},
+        "description": {"translate":"Find a flower forest"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:biomes/theres_a_zombie_on_the_lawn",	
+    "rewards": {
+		"function": "bc_rewards:biomes/enchanted_forest"
+    },	
+    "criteria": {
+        "flower_forest": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:flower_forest",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+						    "entity": "this",
+						    "predicate": {
+						    	"player": {
+						    		"gamemode": "spectator"
+			    				}
+                            }
+						}
+                    }
+                ]
+            }
+        }
+    }
+}

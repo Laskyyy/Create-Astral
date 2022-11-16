@@ -1,0 +1,17 @@
+{
+    "type": "automobility:auto_mechanic_table",
+    "category": "automobility:frames",
+    "sortnum": 308,
+    "ingredients": [
+        {"item": "minecraft:iron_ingot"},
+        {"item": "minecraft:copper_block"},
+        {"item": "minecraft:light_gray_dye"},
+        {"item": "minecraft:leather"},
+        {"item": "minecraft:calcite"},
+        {"item": "minecraft:iron_ingot"}
+    ],
+    "result": {
+        "item": "automobility:automobile_frame",
+        "component": "automobility:standard_light_gray"
+    }
+}

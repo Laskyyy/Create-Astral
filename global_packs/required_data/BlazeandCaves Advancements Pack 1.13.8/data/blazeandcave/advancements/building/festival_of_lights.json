@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:lantern"
+        },
+        "title": {"translate":"Festival of Lights"},
+        "description": {"translate":"Light up the area using a lantern"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:building/torched",
+	"rewards": {
+		"function": "bc_rewards:building/festival_of_lights"
+    },		
+    "criteria": {
+        "lantern": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:lantern"
+            }
+        }
+    }
+}

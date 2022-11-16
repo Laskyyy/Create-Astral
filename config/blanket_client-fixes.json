@@ -1,0 +1,137 @@
+{
+  "aboutConfig": "Blanket config: The mod only cares about the *value* property, you can edit, delete the others.",
+  "aboutConfig2": "But if you save the config from the mod, it will override this file.",
+  "aboutConfig3": "Good luck!",
+  "extraLog": {
+    "description": "The only internal config. Toggle how much log should blanket create",
+    "issues": [],
+    "categories": [
+      "EXPERIMENTAL"
+    ],
+    "value": true
+  },
+  "mouseCloseNotHandledFix": {
+    "description": "Fix inventory can not be closed by mouse button.",
+    "issues": [
+      "MC-577"
+    ],
+    "categories": [
+      "BUGFIX",
+      "RECOMMENDED",
+      "UI"
+    ],
+    "value": true
+  },
+  "chatLagFix": {
+    "description": "Fix chat lag on multiplayer servers",
+    "issues": [
+      "MC-247973"
+    ],
+    "categories": [
+      "BUGFIX",
+      "RECOMMENDED",
+      "PERFORMANCE"
+    ],
+    "value": true
+  },
+  "lavaDamageDesyncFix": {
+    "description": "Fix lava damaging entities client-side leading to de-sync",
+    "issues": [
+      "MC-246465"
+    ],
+    "categories": [
+      "BUGFIX",
+      "EXPERIMENTAL"
+    ],
+    "value": false
+  },
+  "entityDamageDesyncFix": {
+    "description": "Fix client damaging items \u0026 experience orbs leading to de-sync",
+    "issues": [
+      "MC-53850"
+    ],
+    "categories": [
+      "BUGFIX",
+      "EXPERIMENTAL"
+    ],
+    "value": false
+  },
+  "guardianBeamRenderFix": {
+    "description": "Fix guardian beam not rendering due to world time being too high\nSodium-extra has the same fix",
+    "issues": [
+      "MC-165595"
+    ],
+    "categories": [
+      "BUGFIX",
+      "RECOMMENDED",
+      "RENDER"
+    ],
+    "value": true
+  },
+  "sharedEntityIdFix": {
+    "description": "Fix entity id being shared by the client renderer and integrated server",
+    "issues": [
+      "MC-238384"
+    ],
+    "categories": [
+      "BUGFIX",
+      "SINGLEPLAYER"
+    ],
+    "value": true
+  },
+  "rotatePlayerWithMinecart": {
+    "description": "Rotate the player with the minecart if it turns",
+    "issues": [],
+    "categories": [
+      "TWEAK",
+      "EXPERIMENTAL"
+    ],
+    "value": false,
+    "extra": {
+      "rotatePlayerWithMinecart_smartMode": true,
+      "rotatePlayerWithMinecart_threshold": 8,
+      "rotatePlayerWithMinecart_alwaysLookForward": false
+    }
+  },
+  "optimizedBiomeAccess": {
+    "description": "Optimized the getBiome call to be 25% - 75% faster",
+    "issues": [],
+    "categories": [
+      "PERFORMANCE",
+      "RECOMMENDED"
+    ],
+    "value": true
+  },
+  "crystalsTargetDeadDragonFix": {
+    "description": "Fix end crystals attempting to heal the ender dragon",
+    "issues": [
+      "MC-187100"
+    ],
+    "categories": [
+      "BUGFIX"
+    ],
+    "value": true
+  },
+  "wolfTailSpinFix": {
+    "description": "Fix wolf tail spinning if health is increased",
+    "issues": [
+      "MC-175622"
+    ],
+    "categories": [
+      "BUGFIX",
+      "RENDER"
+    ],
+    "value": true
+  },
+  "fixSwappedAmethystSound": {
+    "description": "Fix switched amethyst sound",
+    "issues": [
+      "MC-248223"
+    ],
+    "categories": [
+      "BUGFIX",
+      "RECOMMENDED"
+    ],
+    "value": true
+  }
+}

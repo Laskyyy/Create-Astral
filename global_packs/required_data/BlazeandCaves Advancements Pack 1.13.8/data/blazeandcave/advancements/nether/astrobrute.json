@@ -1,0 +1,34 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:glass"
+        },
+        "title": {"translate":"Astrobrute"},
+        "description": {"translate":"Send a Piglin Brute to the End and kill it there before it zombifies"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:nether/et_tu_brute",
+    "rewards": {
+        "function": "bc_rewards:nether/astrobrute"
+    },		
+    "criteria": {
+        "astrobrute": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "piglin_brute",
+							"location": {
+								"dimension": "the_end"
+							}
+						}
+					}
+				]
+			}
+        }
+    }
+}

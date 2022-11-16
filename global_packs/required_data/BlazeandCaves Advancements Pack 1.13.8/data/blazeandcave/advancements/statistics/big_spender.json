@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:emerald_block"
+        },
+        "title": {"translate":"Big Spender"},
+        "description": {"color":"#75E1FF","translate":"Trade with villagers 500 times"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:statistics/the_haggler",
+	"rewards": {
+		"function": "bc_rewards:statistics/big_spender"
+    },		
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"stats": [
+							{
+								"type": "minecraft:custom",
+								"stat": "minecraft:traded_with_villager",
+								"value": {
+									"min": 500
+								}
+							}
+						]
+					}
+				}
+			}
+        }
+    }
+}

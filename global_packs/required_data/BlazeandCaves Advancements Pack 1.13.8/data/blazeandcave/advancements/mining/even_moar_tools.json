@@ -1,0 +1,64 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_shovel"
+        },
+        "title": {"translate":"Even MOAR Tools"},
+        "description": {"translate":"Craft a full diamond tools set"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:mining/stabcraft",
+    "rewards": {
+		"function": "bc_rewards:mining/even_moar_tools"
+    },			
+    "criteria": {
+        "diamond_pickaxe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:diamond_pickaxe"
+						]
+                    }
+                ]
+            }
+        },
+        "diamond_axe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:diamond_axe"
+						]
+                    }
+                ]
+            }
+        },
+        "diamond_shovel": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:diamond_shovel"
+						]
+                    }
+                ]
+            }
+        },
+        "diamond_hoe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:diamond_hoe"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

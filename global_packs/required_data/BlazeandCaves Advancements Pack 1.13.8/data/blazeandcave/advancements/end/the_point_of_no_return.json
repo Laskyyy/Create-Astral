@@ -1,0 +1,41 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:black_concrete_powder"
+        },
+        "title": {"translate":"The Point of No Return"},
+        "description": {"translate":"Fall into the void"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:end/the_actual_end",
+    "rewards": {
+        "function": "bc_rewards:end/the_point_of_no_return"
+    },		
+    "criteria": {
+        "world_height": {
+            "trigger": "minecraft:location",
+            "conditions": {
+				"position": {
+					"y": {
+						"max": 0.0
+					}
+				},
+				"dimension": "minecraft:the_end",
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "player": {
+                                    "gamemode": "spectator"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }	
+    }
+}

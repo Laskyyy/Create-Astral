@@ -1,0 +1,183 @@
+{
+    "rewards": {
+        "function": "blazeandcave:riddle/ninth_line"
+    },		
+    "criteria": {
+        "ninth_line_left": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:spyglass"
+					]
+				},
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"equipment": {
+								"offhand": {
+									"items": [
+										"minecraft:map",
+										"minecraft:filled_map"
+									]
+								}
+							},
+							"vehicle": {
+								"type": "boat",
+								"stepping_on": {
+									"block": {
+										"blocks": [
+											"water"
+										]
+									}
+								}
+							},
+							"nbt": "{ShoulderEntityLeft:{id:\"minecraft:parrot\"}}",
+							"player": {
+								"advancements": {
+									"blazeandcave:technical/riddle_eighth_line": "true"
+								}
+							}
+						},
+						"entity": "this"
+					}
+				]
+			}
+		},
+        "ninth_line_right": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:spyglass"
+					]
+				},
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"equipment": {
+								"offhand": {
+									"items": [
+										"minecraft:map",
+										"minecraft:filled_map"
+									]
+								}
+							},
+							"vehicle": {
+								"type": "boat",
+								"stepping_on": {
+									"block": {
+										"blocks": [
+											"water"
+										]
+									}
+								}
+							},
+							"nbt": "{ShoulderEntityRight:{id:\"minecraft:parrot\"}}",
+							"player": {
+								"advancements": {
+									"blazeandcave:technical/riddle_eighth_line": "true"
+								}
+							}
+						},
+						"entity": "this"
+					}
+				]
+			}
+		},
+        "ninth_line_left_mainhand": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:spyglass"
+					]
+				},
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"equipment": {
+								"mainhand": {
+									"items": [
+										"minecraft:map",
+										"minecraft:filled_map"
+									]
+								}
+							},
+							"vehicle": {
+								"type": "boat",
+								"stepping_on": {
+									"block": {
+										"blocks": [
+											"water"
+										]
+									}
+								}
+							},
+							"nbt": "{ShoulderEntityLeft:{id:\"minecraft:parrot\"}}",
+							"player": {
+								"advancements": {
+									"blazeandcave:technical/riddle_eighth_line": "true"
+								}
+							}
+						},
+						"entity": "this"
+					}
+				]
+			}
+		},
+        "ninth_line_right_mainhand": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:spyglass"
+					]
+				},
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"equipment": {
+								"mainhand": {
+									"items": [
+										"minecraft:map",
+										"minecraft:filled_map"
+									]
+								}
+							},
+							"vehicle": {
+								"type": "boat",
+								"stepping_on": {
+									"block": {
+										"blocks": [
+											"water"
+										]
+									}
+								}
+							},
+							"nbt": "{ShoulderEntityRight:{id:\"minecraft:parrot\"}}",
+							"player": {
+								"advancements": {
+									"blazeandcave:technical/riddle_eighth_line": "true"
+								}
+							}
+						},
+						"entity": "this"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"ninth_line_left",
+			"ninth_line_right",
+			"ninth_line_left_mainhand",
+			"ninth_line_right_mainhand"
+		]
+	]
+}

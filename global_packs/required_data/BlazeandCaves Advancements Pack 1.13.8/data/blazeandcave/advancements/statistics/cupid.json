@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:beef"
+        },
+        "title": {"translate":"Cupid"},
+        "description": {"color":"#75E1FF","translate":"Breed 500 animals"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:statistics/the_parrots_and_the_bats",
+	"rewards": {
+		"function": "bc_rewards:statistics/cupid"
+    },		
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"stats": [
+							{
+								"type": "minecraft:custom",
+								"stat": "minecraft:animals_bred",
+								"value": {
+									"min": 500
+								}
+							}
+						]
+					}
+				}
+			}
+        }
+    }
+}

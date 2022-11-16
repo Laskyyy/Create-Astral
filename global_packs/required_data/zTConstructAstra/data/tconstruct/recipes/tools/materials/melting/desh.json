@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "tconstruct:desh",
+  "temperature": 950,
+  "result": {
+    "fluid": "kubejs:molten_desh",
+    "amount": 9000
+  }
+}

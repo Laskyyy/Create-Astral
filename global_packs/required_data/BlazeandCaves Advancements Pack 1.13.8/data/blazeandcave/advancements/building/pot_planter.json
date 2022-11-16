@@ -1,0 +1,22 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:flower_pot"
+        },
+        "title": {"translate":"Pot Planter"},
+        "description": {"translate":"Craft and place a flower pot"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:building/bricks",
+	"rewards": {
+		"function": "bc_rewards:building/pot_planter"
+    },		
+    "criteria": {
+        "flower_pot": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+				"block": "minecraft:flower_pot"
+            }
+        }
+    }
+}

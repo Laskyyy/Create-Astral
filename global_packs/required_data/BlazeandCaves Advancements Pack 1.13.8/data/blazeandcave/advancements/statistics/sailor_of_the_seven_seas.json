@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:dark_oak_boat"
+        },
+        "title": {"translate":"Sailor of the Seven Seas"},
+        "description": {"translate":"Sail 50km in a boat"},
+        "announce_to_chat": "true",
+		"frame": "challenge"
+    },
+    "parent": "blazeandcave:statistics/pirate_captain",
+	"rewards": {
+		"function": "bc_rewards:statistics/sailor_of_the_seven_seas"
+    },		
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:location",
+			"conditions": {
+				"player":  {
+					"player": {
+						"stats": [
+							{
+								"type": "minecraft:custom",
+								"stat": "minecraft:boat_one_cm",
+								"value": {
+									"min": 5000000
+								}
+							}
+						]
+					}
+				}
+			}
+        }
+    }
+}

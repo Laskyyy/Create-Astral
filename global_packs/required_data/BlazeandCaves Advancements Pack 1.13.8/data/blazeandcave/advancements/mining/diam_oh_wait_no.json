@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:lapis_lazuli"
+        },
+        "title": {"translate":"DIAM- oh, wait, no."},
+        "description": {"translate":"It's still useful for enchanting"},
+        "announce_to_chat": "true"
+    },
+    "parent": "minecraft:story/iron_tools",
+    "rewards": {
+		"function": "bc_rewards:mining/diam_oh_wait_no"
+    },		
+    "criteria": {
+        "coal": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+						"items": [
+							"minecraft:lapis_lazuli"
+						]
+                    }
+                ]
+            }
+        }
+    }
+}

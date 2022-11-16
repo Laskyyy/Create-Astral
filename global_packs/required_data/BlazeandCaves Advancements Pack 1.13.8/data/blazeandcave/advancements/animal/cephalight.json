@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:glow_ink_sac"
+        },
+        "title": {"translate":"Cephalight"},
+        "description": {"translate":"Kill a Glow Squid"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:animal/direct_fishing",
+    "rewards": {
+        "function": "bc_rewards:animal/cephalight"
+    },		
+    "criteria": {
+        "glow_squid": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "glow_squid"
+                }
+            }
+        }
+    }
+}

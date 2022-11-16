@@ -1,0 +1,50 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:honey_bottle"
+        },
+        "title": {"translate":"Miracle Drink"},
+        "description": {"color":"#75E1FF","translate":"Drink milk or honey to cure poison when on half a heart"},
+        "announce_to_chat": "true",
+		"frame": "goal"
+    },
+    "parent": "blazeandcave:monsters/witch",
+	"rewards": {
+		"function": "bc_rewards:monsters/miracle_drink"
+    },		
+    "criteria": {
+        "miracle_drink": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "tag": "blazeandcave:poison_cures"
+                },
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"effects": {
+								"minecraft:poison": {
+									"amplifier": {
+										"min": 0
+									},
+									"duration": {
+										"min": 1
+									}
+								}
+							}
+						}
+					},
+					{
+						"condition": "minecraft:entity_scores",
+						"entity": "this",
+						"scores": {
+							"bac_health": 1
+						}
+					}
+				]
+            }
+        }
+    }
+}

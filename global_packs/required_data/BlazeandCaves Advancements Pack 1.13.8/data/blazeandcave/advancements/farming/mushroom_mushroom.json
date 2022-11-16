@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:mushroom_stew"
+        },
+        "title": {"translate":"Mushroom, Mushroom!"},
+        "description": {"translate":"Slurp some mushroom stew"},
+        "announce_to_chat": "true"
+    },
+    "parent": "blazeandcave:farming/shrooms",
+	"rewards": {
+		"function": "bc_rewards:farming/mushroom_mushroom"
+    },		
+    "criteria": {
+        "mushroom_stew": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+					"items": [
+						"minecraft:mushroom_stew"
+					]
+                }
+            }
+        }
+    }
+}
