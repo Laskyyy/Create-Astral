@@ -1,0 +1,12 @@
+[astrallakes]
+    [astrallakes.trigger]
+        name= "menu"
+        fade_in = "200"
+        fade_out = "200"
+
+[ambient1]
+    [ambient1.trigger]
+        name= "dimension"
+        fade_in = "200"
+        fade_out = "200"
+        resource_name = "minecraft:overworld"

@@ -1,7 +1,7 @@
 ##[general]
 
 [If menu background sounds added by FancyMenu should be played when a world is loaded.]
-B:playbackgroundsoundsinworld = 'false';
+B:playbackgroundsoundsinworld = 'true';
 B:forcefullscreen = 'false';
 [If menu background sounds added by FancyMenu should be played or not.]
 B:playbackgroundsounds = 'true';
@@ -32,7 +32,7 @@ S:customgameintroskiptext = '';
 ##[minecraftwindow]
 
 [A minecraft restart is required after changing this value.]
-S:customwindowtitle = 'Create: Astral v1.2';
+S:customwindowtitle = 'Create: Astral v2.0';
 [A minecraft restart is required after changing this value.]
 B:customwindowicon = 'true';
 

@@ -241,6 +241,8 @@ onEvent('item.registry', event => {
 	// Register new items here
 	
 event.create('createastral:bronze_sheet'),
+event.create('create:lapis_sheet'),
+event.create('create:integrated_circuit'),
 event.create('createastral:bronze_ingot'),
 event.create('createastral:production_mechanism')
 event.create('createastral:blazing_mechanism')
@@ -967,6 +969,33 @@ onEvent('worldgen.add', event => {
 			.squared()
 			.triangleHeight(0, 200)
 	})
+
+  event.addOre((ore) => {
+		ore.id = "kubejs:silver_ore" // optional
+		ore.biomes = [{
+			not: {
+				category: "river"
+			}
+		}]
+		ore.addTarget('#ad_astra:moon_ore_replaceables', 'indrev:deepslate_silver_ore')
+
+		ore.count([10, 40])
+			.squared()
+			.triangleHeight(-64, 200)
+	})
+
+
+  event.addOre((ore) => {
+		ore.id = "kubejs:basalt_moon_iron" // optional
+		ore.biomes = "minecraft:basalt_deltas"
+		ore.addTarget('#ad_astra:moon_ore_replaceables', 'ad_astra:moon_iron_ore')
+
+		ore.count([10, 40])
+			.squared()
+			.triangleHeight(-64, 200)
+    ore.size = 18
+	})
+  
 
 })
   

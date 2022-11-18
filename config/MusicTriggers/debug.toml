@@ -1,0 +1,10 @@
+# Show the debug info
+showdebuginfo = "false"
+# If ShowDebugInfo is set to true, but you only want to see the song name
+showjustcursong = "false"
+# Show an overlay for the name of the current GUI
+showguiname = "false"
+# Only silence blocked music when there is music from Music Triggers already playing
+silenceisbad = "false"
+# List of mod ids to remove the music from so there is not any overlap
+blockedmods = [ ]

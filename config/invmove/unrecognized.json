@@ -187,7 +187,9 @@
     "dev.cammiescorner.camsbackpacks.client.screen.BackpackScreen": true,
     "com.github.alexnijjar.ad_astra.client.screens.CoalGeneratorScreen": true,
     "aztech.modern_industrialization.blocks.forgehammer.ForgeHammerScreen": true,
-    "aztech.modern_industrialization.machines.MachineScreenHandlers$ClientScreen": true
+    "aztech.modern_industrialization.machines.MachineScreenHandlers$ClientScreen": true,
+    "fr.frinn.custommachinery.client.screen.creator.MachineLoadingScreen": true,
+    "fr.frinn.custommachinery.client.screen.CustomMachineScreen": true
   },
   "hideBackground": {
     "com.simibubi.create.content.curiosities.zapper.terrainzapper.WorldshaperScreen": true,
@@ -298,6 +300,8 @@
     "dev.cammiescorner.camsbackpacks.client.screen.BackpackScreen": true,
     "com.github.alexnijjar.ad_astra.client.screens.CoalGeneratorScreen": true,
     "aztech.modern_industrialization.blocks.forgehammer.ForgeHammerScreen": true,
-    "aztech.modern_industrialization.machines.MachineScreenHandlers$ClientScreen": true
+    "aztech.modern_industrialization.machines.MachineScreenHandlers$ClientScreen": true,
+    "fr.frinn.custommachinery.client.screen.creator.MachineLoadingScreen": true,
+    "fr.frinn.custommachinery.client.screen.CustomMachineScreen": true
   }
 }

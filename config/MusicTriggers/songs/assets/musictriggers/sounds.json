@@ -1,0 +1,16 @@
+{
+  "music.ambient1": {
+		"category": "music",
+		"sounds": [{
+			"name": "musictriggers:music/ambient1",
+			"stream": true
+		}]
+	},
+  "music.astrallakes": {
+		"category": "music",
+		"sounds": [{
+			"name": "musictriggers:music/astrallakes",
+			"stream": true
+		}]
+	}
+}
