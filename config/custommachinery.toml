@@ -5,3 +5,4 @@ structureRenderTime = 10000
 blockTagCycleTime = 1000
 itemSlotCycleTime = 1000
 needAdvancedInfoForRecipeID = true
+modelFolders = ["machine", "machines"]

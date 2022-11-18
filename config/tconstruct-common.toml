@@ -120,7 +120,7 @@
 		#If true, earthslime geodes generate deep in the world as another way to get slime
 		earth = true
 		#If true, ichor geodes generate high in the nether. Strongly encouraged to keep enabled even if you disable the other geodes, as ichor crystals have some unique recipes and the fallbacks kinda suck for gameplay.
-		ichor = true
+		ichor = false
 		#If true, enderslime geodes generate as additional islands in the end
 		ender = true
 

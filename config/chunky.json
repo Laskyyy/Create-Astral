@@ -12,6 +12,16 @@
       "shape": "square",
       "count": 16080,
       "time": 369613
+    },
+    "nullscape:end_island": {
+      "cancelled": true,
+      "radius": 200.0,
+      "centerX": 0.0,
+      "centerZ": 0.0,
+      "iterator": "concentric",
+      "shape": "circle",
+      "count": 680,
+      "time": 15662
     }
   }
 }
