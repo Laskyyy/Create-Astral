@@ -1,0 +1,86 @@
+{
+  "name": "Stone Generator",
+  "appearance": {
+    "idle": {
+      "block": "testresourcepack:machine/stone_generator_model"
+    },
+    "running": {
+      "lightlevel": 15
+    }
+  },
+  "components": [
+    {
+      "capacity": 100000,
+      "type": "custommachinery:energy"
+    },
+    {
+      "mode": "input",
+      "id": "input1",
+      "capacity": 10000,
+      "type": "custommachinery:fluid"
+    },
+    {
+      "mode": "input",
+      "id": "input2",
+      "capacity": 10000,
+      "type": "custommachinery:fluid"
+    },
+    {
+      "mode": "output",
+      "id": "output1",
+      "type": "custommachinery:item"
+    }
+  ],
+  "gui": [
+    {
+      "texture": "custommachinery:textures/gui/base_background.png",
+      "x": 0,
+      "y": 0,
+      "type": "custommachinery:texture"
+    },
+    {
+      "x": 47,
+      "y": 80,
+      "type": "custommachinery:player_inventory"
+    },
+    {
+      "x": 47,
+      "y": 30,
+      "type": "custommachinery:energy"
+    },
+    {
+      "x": 67,
+      "y": 30,
+      "type": "custommachinery:fluid",
+      "id": "input1"
+    },
+    {
+      "x": 87,
+      "y": 30,
+      "type": "custommachinery:fluid",
+      "id": "input2"
+    },
+    {
+      "id": "output1",
+      "x": 149,
+      "y": 30,
+      "type": "custommachinery:slot"
+    },
+    {
+      "x": 116,
+      "y": 30,
+      "type": "custommachinery:progress"
+    },
+    {
+      "x": 236,
+      "y": 5,
+      "type": "custommachinery:status"
+    },
+    {
+      "text": "Stone Generator",
+      "x": 7,
+      "y": 5,
+      "type": "custommachinery:text"
+    }
+  ]
+}

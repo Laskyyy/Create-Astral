@@ -1,0 +1,14 @@
+name = "Diamond Ingots"
+filename = "fabric-diamondingots-1.03-038.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "4f7b68d126835e0ebcf624b9c631e31ff0ae2fdd"
+
+[update]
+[update.curseforge]
+file-id = 3821809
+project-id = 438303

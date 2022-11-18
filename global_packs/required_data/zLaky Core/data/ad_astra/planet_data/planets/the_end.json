@@ -1,0 +1,17 @@
+{
+    "translation": "The End",
+    "galaxy": "ad_astra:milky_way",
+    "solar_system": "ad_astra:proxima_centauri",
+    "world": "minecraft:the_end",
+    "orbit_world": "ad_astra:glacio_orbit",
+    "parent_world": null,
+    "rocket_tier": 4,
+    "gravity": 2.721,
+    "has_atmosphere": false,
+    "days_in_year": 365,
+    "temperature": -20,
+    "solar_power": 0,
+    "orbit_solar_power": 0,
+    "has_oxygen": false,
+    "button_color": "light_blue"
+}

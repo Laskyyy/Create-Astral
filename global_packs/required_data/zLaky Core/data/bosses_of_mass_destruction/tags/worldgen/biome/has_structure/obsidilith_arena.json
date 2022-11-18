@@ -1,6 +1,7 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
-    "#bosses_of_mass_destruction:collections/in_end"
+    "nullscape:crystal_peaks",
+    "nullscape:shadowlands"
   ]
 }

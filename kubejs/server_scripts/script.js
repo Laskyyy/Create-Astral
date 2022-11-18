@@ -311,6 +311,7 @@ onEvent('recipes', event => {
 
 
   event.replaceInput({mod: 'phonos'}, 'minecraft:iron_ingot', 'indrev:tin_ingot')
+  event.replaceInput({}, 'minecraft:diamond', 'diamondingots:diamond_ingot')
   event.replaceInput({mod: 'farmersdelight'}, 'minecraft:iron_ingot', 'indrev:tin_ingot')
   event.replaceInput({mod: 'drinkbeer'}, 'minecraft:iron_ingot', 'indrev:tin_ingot')
   event.replaceInput({output: 'tconstruct:grout'}, '#minecraft:sand', 'indrev:tin_nugget')

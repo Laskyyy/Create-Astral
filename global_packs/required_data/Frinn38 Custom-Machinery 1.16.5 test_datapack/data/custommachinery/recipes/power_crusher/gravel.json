@@ -1,0 +1,38 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "custommachinery:power_crusher",
+	"time": 100,
+	"requirements": [
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:stone",
+			"amount": 1,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:energy_per_tick",
+			"amount": 20,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:gravel",
+			"amount": 1,
+			"mode": "output"
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:gravel",
+			"amount": 1,
+			"mode": "output",
+			"chance": 0.5
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:gravel",
+			"amount": 1,
+			"mode": "output",
+			"chance": 0.1
+		}
+	]
+}

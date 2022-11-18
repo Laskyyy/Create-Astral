@@ -1,0 +1,12 @@
+{
+	"item": "minecraft:diamond",
+	"machines": ["custommachinery:power_crusher"],
+	"modifiers": [
+		{
+			"requirement": "custommachinery:speed",
+			"mode": "input",
+			"operation": "multiplication",
+			"modifier": 0.5
+		}
+	]
+}
