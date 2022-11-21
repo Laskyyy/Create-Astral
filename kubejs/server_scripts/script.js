@@ -149,6 +149,7 @@ onEvent('recipes', event => {
 	event.remove({output: 'tconstruct:seared_ingot_tank'})
 	event.remove({output: 'tconstruct:seared_fuel_gauge'})
 	event.remove({output: 'tconstruct:seared_fuel_tank'})
+  event.remove({output: 'tconstruct:grout'})
 	event.remove({type: 'create:mixing', output: 'create:brass_ingot'})
 	event.remove({type: 'create:mixing', output: 'tconstruct:rose_gold_ingot'})
 	event.remove({type: 'create:mixing', output: 'tconstruct:slimesteel_ingot'})
@@ -158,6 +159,7 @@ onEvent('recipes', event => {
 	event.remove({type: 'create:mixing', output: 'tconstruct:queens_slime_ingot'})
 	event.remove({output: 'create:blaze_cake'})
 	event.remove({output: 'create:blaze_cake_base'})
+  event.remove({output: 'create:andesite_alloy', input: 'minecraft:andesite'})
 	event.remove({type: 'tconstruct:foundry'})
 	event.remove({type: 'tconstruct:entity_melting'})
 	event.remove({type: 'tconstruct:alloy'})
@@ -177,12 +179,14 @@ onEvent('recipes', event => {
   event.remove({output: 'ad_astra:launch_pad'})
   
 
-  event.replaceInput({output: 'ad_astra:space_helmet'}, 'ad_astra:steel_ingot', 'indrev:silver_block')
-  event.replaceInput({output: 'ad_astra:space_pants'}, 'ad_astra:steel_ingot', 'indrev:silver_block')
-  event.replaceInput({output: 'ad_astra:space_boots'}, 'ad_astra:steel_ingot', 'indrev:silver_block')
-  event.replaceInput({output: 'ad_astra:space_suit'}, 'ad_astra:steel_ingot', 'indrev:silver_block')
-  event.replaceInput({output: 'ad_astra:oxygen_tank'}, 'ad_astra:compressed_steel', 'createastral:bronze_block')
-  event.replaceInput({output: 'ad_astra:oxygen_gear'}, 'ad_astra:compressed_steel', 'createastral:bronze_block')
+  event.replaceInput({output: 'ad_astra:space_helmet'}, 'ad_astra:steel_ingot', 'create:sturdy_sheet')
+  event.replaceInput({output: 'ad_astra:space_helmet'}, 'minecraft:orange_stained_glass_pane', 'create:diving_helmet')
+  event.replaceInput({output: 'ad_astra:space_pants'}, 'ad_astra:steel_ingot', 'create:sturdy_sheet')
+  event.remove({output: 'ad_astra:space_boots'})
+  event.replaceInput({output: 'ad_astra:space_suit'}, 'ad_astra:steel_ingot', 'create:sturdy_sheet')
+  event.replaceInput({output: 'ad_astra:space_suit'}, 'ad_astra:oxygen_gear', 'create:copper_backtank')
+  event.replaceInput({output: 'ad_astra:oxygen_tank'}, 'ad_astra:compressed_steel', 'createastral:bronze_sheet')
+  event.replaceInput({output: 'ad_astra:oxygen_gear'}, 'ad_astra:compressed_steel', 'createastral:bronze_sheet')
   event.replaceInput({output: 'ad_astra:steel_tank'}, 'ad_astra:compressed_steel', 'ad_astra:iron_plate')
   event.replaceInput({output: 'ad_astra:steel_tank'}, 'minecraft:bucket', 'indrev:sulfur_dust')
   event.replaceInput({output: 'ad_astra:rocket_nose_cone'}, 'ad_astra:compressed_steel', 'ad_astra:iron_plate')
@@ -314,7 +318,6 @@ onEvent('recipes', event => {
   event.replaceInput({}, 'minecraft:diamond', 'diamondingots:diamond_ingot')
   event.replaceInput({mod: 'farmersdelight'}, 'minecraft:iron_ingot', 'indrev:tin_ingot')
   event.replaceInput({mod: 'drinkbeer'}, 'minecraft:iron_ingot', 'indrev:tin_ingot')
-  event.replaceInput({output: 'tconstruct:grout'}, '#minecraft:sand', 'indrev:tin_nugget')
 
   event.replaceInput({type: 'indrev:modules'}, 'indrev:steel_plate', 'create:polished_rose_quartz')
   //Tinker's Construct Reworking (New fluids and recipes)
@@ -398,11 +401,12 @@ onEvent('recipes', event => {
 	
 	event.shaped('tconstruct:seared_melter', [
     'CWC',
-    'SSS'
+    'SSS',
+    'CSC'
   ], {
-    S: 'tconstruct:seared_brick',
+    S: 'tconstruct:seared_bricks',
 	W: 'create:fluid_tank',
-  C: 'indrev:tin_ingot'	 
+  C: 'create:zinc_ingot'	 
 	 })
 	 	event.shaped('tconstruct:smeltery_controller', [
     'DDD',
@@ -440,11 +444,11 @@ event.recipes.createMixing(Fluid.of('tconstruct:molten_bronze', 405), [
 	event.recipes.createMixing(Fluid.of('tconstruct:molten_rose_gold', 8100), [
     'minecraft:copper_ingot',
     'minecraft:gold_ingot'
-]).heated().processingTime(300)
+]).processingTime(300)
 	event.recipes.createMixing(Fluid.of('tconstruct:molten_rose_gold', 405), [
     {fluid: 'tconstruct:molten_copper', amount: 405},
     {fluid: 'tconstruct:molten_gold', amount: 405}
-]).heated().processingTime(10)
+]).processingTime(10)
 event.recipes.createMixing(Fluid.of('tconstruct:molten_electrum', 405), [
   {fluid: 'tconstruct:molten_silver', amount: 405},
   {fluid: 'tconstruct:molten_gold', amount: 405}
@@ -1169,6 +1173,15 @@ event.recipes.createFilling('structures_compass:structures_compass', [
   ], {
     S: 'ad_astra:steel_ingot'
 	})
+
+  event.shaped('ad_astra:space_boots', [
+    'S S',
+    'BAB'
+  ], {
+    S: 'minecraft:white_wool',
+    A: 'create:diving_boots',
+    B: 'create:sturdy_sheet'
+	})
 	
 	event.shaped('createastral:sturdy_chestplate', [
     'S S',
@@ -1225,6 +1238,24 @@ event.recipes.createFilling('structures_compass:structures_compass', [
   ], {
     S: 'create:copper_sheet',
 	A: 'create:electron_tube'
+	})
+
+  event.shaped('createastral:copper_heating_coil', [
+    'SSS',
+    'SAS',
+    'SSS'
+  ], {
+    S: 'indrev:heat_coil',
+	A: 'create:electron_tube'
+	})
+
+  event.shaped('indrev:heat_coil', [
+    'S S',
+    'SAS',
+    'S S'
+  ], {
+    S: 'createaddition:copper_wire',
+	A: 'createaddition:iron_rod'
 	})
 	 
 	//DOODADS RECIPES
@@ -1388,7 +1419,7 @@ event.recipes.createFilling('structures_compass:structures_compass', [
 
 		//Create Shit
 	
-	event.shaped('2x create:cogwheel', [
+	event.shaped('3x create:cogwheel', [
     'AB'
   ], {
     A: 'create:andesite_alloy',
@@ -1523,8 +1554,10 @@ event.recipes.createFilling('structures_compass:structures_compass', [
 	 event.recipes.createCompacting('ad_astra:iron_plate', [
   'create:iron_sheet',
 ]).heated()
- 
 
+event.recipes.createPressing('createastral:bronze_sheet', 'createastral:bronze_ingot')
+ 
+////////////////  EARLY GAME ANDESITE / GROUT RELATED STUFF 
 
  event.recipes.createMixing('create:chromatic_compound', [
   'ad_astra:desh_block',
@@ -1534,19 +1567,60 @@ event.recipes.createFilling('structures_compass:structures_compass', [
   {fluid: 'kubejs:shimmer', amount: 81000},
 ]).superheated().processingTime(2500)
 
-event.recipes.createMixing('create:andesite_alloy', [
+event.recipes.createMixing(Fluid.of('kubejs:compound_mixture', 9000), [
   'minecraft:andesite',
-  'indrev:tin_nugget'
+  'indrev:tin_nugget',
+  'minecraft:clay_ball'
 ])
 
-event.shaped('create:andesite_alloy', [
-  'AB',
-  'BA'
+event.recipes.createMixing(Fluid.of('kubejs:compound_mixture', 9000), [
+  'minecraft:andesite',
+  'create:zinc_nugget',
+  'minecraft:clay_ball'
+])
+
+event.recipes.createMixing(Fluid.of('kubejs:compound_mixture', 9000), [
+  'minecraft:andesite',
+  'minecraft:iron_nugget',
+  'minecraft:clay_ball'
+])
+
+event.shaped('createastral:andesite_compound', [
+  'BBB',
+  'AAA',
+  'CCC'
 ], {
   A: 'indrev:tin_nugget',
-  B: 'minecraft:andesite'
+  B: 'minecraft:andesite',
+  C: 'minecraft:clay_ball'
 })
- 
+
+event.shaped('createastral:andesite_compound', [
+  'BBB',
+  'AAA',
+  'CCC'
+], {
+  A: 'create:zinc_nugget',
+  B: 'minecraft:andesite',
+  C: 'minecraft:clay_ball'
+})
+
+event.shaped('createastral:andesite_compound', [
+  'BBB',
+  'AAA',
+  'CCC'
+], {
+  A: 'minecraft:iron_nugget',
+  B: 'minecraft:andesite',
+  C: 'minecraft:clay_ball'
+})
+event.smelting('create:andesite_alloy', 'createastral:andesite_compound')
+
+event.recipes.createMixing('8x tconstruct:grout', [
+  'create:andesite_alloy',
+  'create:zinc_ingot',
+  '8x minecraft:gravel'
+])
  
  
  
@@ -1587,6 +1661,11 @@ event.shaped('create:andesite_alloy', [
     'create:crushed_uranium_ore',
     Item.of('create:zinc_nugget').withChance(1),
   ], 'indrev:raw_tungsten')
+
+  event.recipes.createCrushing([
+    'minecraft:quartz',
+    Item.of('minecraft:iron_nugget').withChance(0.5),
+  ], 'ad_astra:moon_sand')
 
 event.shaped('minecraft:experience_bottle', [
   'AAA',
@@ -1702,7 +1781,7 @@ event.recipes.createMixing('indrev:enriched_nikolite_ingot', [
 	B: 'minecraft:stick'
 	})
 	
-	event.shaped('campanion:hiking_pack', [
+	event.shaped('camsbackpacks:white_backpack', [
     'ABA',
     'CDE',
 	'FAF'

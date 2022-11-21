@@ -26,6 +26,13 @@ onEvent('fluid.registry', event => {
 	.stillTexture('tconstruct:block/fluid/molten/still')
 	.flowingTexture('tconstruct:block/fluid/molten/flowing')
 
+  event.create('compound_mixture')
+    .thickTexture(0x66786f)
+    .bucketColor(0x66786f)
+    .displayName('Compound Mixture')
+	.stillTexture('tconstruct:block/fluid/molten/still')
+	.flowingTexture('tconstruct:block/fluid/molten/flowing')
+
   event.create('shimmer')
     .thickTexture(0xffd6fa)
     .bucketColor(0xffd6fa)
@@ -258,6 +265,7 @@ onEvent('item.registry.armor_tiers', event => {
 onEvent('item.registry', event => {
 	// Register new items here
 	
+event.create('createastral:andesite_compound'),
 event.create('createastral:bronze_sheet'),
 event.create('create:lapis_sheet'),
 event.create('create:integrated_circuit'),
