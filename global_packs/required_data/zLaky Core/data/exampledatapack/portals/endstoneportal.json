@@ -1,0 +1,10 @@
+{
+  "block": "ad_astra:moon_stone",
+  "dim": "ad_astra:moon",
+  "ignitionType": "ITEM",
+  "ignitionSource": "minecraft:stick",
+  "r": 102,
+  "g": 179,
+  "b": 255
+}
+

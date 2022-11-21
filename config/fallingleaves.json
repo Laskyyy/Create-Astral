@@ -60,6 +60,14 @@
     "minecraft:spruce_leaves": {
       "spawnRateFactor": 1.0,
       "isConiferBlock": true
+    },
+    "techreborn:rubber_leaves": {
+      "spawnRateFactor": 1.0,
+      "isConiferBlock": false
+    },
+    "edenring:auritis_leaves": {
+      "spawnRateFactor": 1.0,
+      "isConiferBlock": false
     }
   },
   "leafSpawners": [],

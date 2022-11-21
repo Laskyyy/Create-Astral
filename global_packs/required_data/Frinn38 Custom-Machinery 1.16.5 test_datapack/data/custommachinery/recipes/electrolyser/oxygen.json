@@ -1,0 +1,19 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "custommachinery:electrolyser",
+	"time": 20,
+	"requirements": [
+		{
+			"type": "custommachinery:fluid",
+			"fluid": "minecraft:water",
+			"amount": 8100,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:fluid",
+			"fluid": "ad_astra:oxygen",
+			"amount": 405,
+			"mode": "output"
+		}
+	]
+}

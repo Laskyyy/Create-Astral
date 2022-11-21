@@ -189,7 +189,10 @@
     "aztech.modern_industrialization.blocks.forgehammer.ForgeHammerScreen": true,
     "aztech.modern_industrialization.machines.MachineScreenHandlers$ClientScreen": true,
     "fr.frinn.custommachinery.client.screen.creator.MachineLoadingScreen": true,
-    "fr.frinn.custommachinery.client.screen.CustomMachineScreen": true
+    "fr.frinn.custommachinery.client.screen.CustomMachineScreen": true,
+    "techreborn.client.gui.GuiFluidReplicator": true,
+    "techreborn.client.gui.GuiSolar": true,
+    "techreborn.client.gui.GuiChunkLoader": true
   },
   "hideBackground": {
     "com.simibubi.create.content.curiosities.zapper.terrainzapper.WorldshaperScreen": true,
@@ -302,6 +305,9 @@
     "aztech.modern_industrialization.blocks.forgehammer.ForgeHammerScreen": true,
     "aztech.modern_industrialization.machines.MachineScreenHandlers$ClientScreen": true,
     "fr.frinn.custommachinery.client.screen.creator.MachineLoadingScreen": true,
-    "fr.frinn.custommachinery.client.screen.CustomMachineScreen": true
+    "fr.frinn.custommachinery.client.screen.CustomMachineScreen": true,
+    "techreborn.client.gui.GuiFluidReplicator": true,
+    "techreborn.client.gui.GuiSolar": true,
+    "techreborn.client.gui.GuiChunkLoader": true
   }
 }

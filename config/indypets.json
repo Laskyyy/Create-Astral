@@ -1,0 +1,10 @@
+{
+  "independentCats": true,
+  "independentParrots": true,
+  "independentWolves": true,
+  "silentMode": false,
+  "blocklist": [
+    "mythicmounts:*",
+    "lovely_snails:snail"
+  ]
+}

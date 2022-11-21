@@ -1,0 +1,62 @@
+{
+  "general": {
+    "manualRefund": {
+      "comment": "Allow refunding items used to craft the manual",
+      "value": true
+    },
+    "MachineSoundVolume": {
+      "comment": "Machines crafting sound volume (0 - disabled, 1 - max)",
+      "value": 1.0
+    },
+    "DispenserScrapbox": {
+      "comment": "Dispensers will open scrapboxes",
+      "value": true
+    },
+    "vanillaUnlockRecipes": {
+      "comment": "Enable recipe unlocks only with vanilla mechanic, instead of getting all of them at once",
+      "value": false
+    },
+    "IC2TransformersStyle": {
+      "comment": "Input from dots side, output from other sides, like in IC2.",
+      "value": true
+    }
+  },
+  "nuke": {
+    "radius": {
+      "comment": "Nuke explosion radius",
+      "value": 40
+    },
+    "fusetime": {
+      "comment": "Nuke fuse time (ticks)",
+      "value": 400
+    },
+    "enabled": {
+      "comment": "Should the nuke explode, set to false to prevent block damage",
+      "value": true
+    }
+  },
+  "resin_basin": {
+    "saptime": {
+      "comment": "How long it takes to harvest one sap (ticks)",
+      "value": 80
+    },
+    "SapCheckTime": {
+      "comment": "How often to check for sap (will check if world time % this number is zero)",
+      "value": 50
+    }
+  },
+  "cable": {
+    "uninsulatedElectrocutionSound": {
+      "comment": "When true an uninsulated cable will create a spark sound when an entity touches it",
+      "value": true
+    },
+    "uninsulatedElectrocutionDamage": {
+      "comment": "When true an uninsulated cable will cause damage to entities",
+      "value": true
+    },
+    "uninsulatedElectrocutionParticles": {
+      "comment": "When true an uninsulated cable will create a spark when an entity touches it",
+      "value": true
+    }
+  }
+}

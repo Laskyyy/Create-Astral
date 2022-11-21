@@ -152,6 +152,24 @@ onEvent('block.registry', event => {
        .hardness(3)
        .displayName('Bronze Block')
        .tagBlock('minecraft:mineable/pickaxe') 
+
+    event.create('createastral:copper_heating_coil')
+  	   .material('lantern')
+       .hardness(3)
+       .displayName('Copper Heating Coil')
+       .tagBlock('minecraft:mineable/pickaxe') 
+       
+    event.create('createastral:electrum_heating_coil')
+  	   .material('lantern')
+       .hardness(3)
+       .displayName('Electrum Heating Coil')
+       .tagBlock('minecraft:mineable/pickaxe')
+
+    event.create('createastral:ender_heating_coil')
+  	   .material('lantern')
+       .hardness(3)
+       .displayName('Ender Heating Coil')
+       .tagBlock('minecraft:mineable/pickaxe')
  })
 
 onEvent("item.modification", event => {

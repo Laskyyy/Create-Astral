@@ -350,7 +350,7 @@
             "continentalness": 0,
             "erosion": 0,
             "weirdness": -0.5,
-            "depth": 0,
+            "depth": 0.5,
             "offset": 0
           }
         },
@@ -366,7 +366,7 @@
             "offset": 0
           }
         }
-      ]
+        ]
     }
   }
 }

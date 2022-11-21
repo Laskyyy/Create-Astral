@@ -5538,9 +5538,9 @@
 				Count: 1b
 				tag: {
 					Automobile: {
-						wheels: "automobility:standard"
-						frame: "automobility:yellow_tractor"
 						engine: "automobility:stone"
+						frame: "automobility:yellow_tractor"
+						wheels: "automobility:standard"
 					}
 				}
 			}
@@ -5627,9 +5627,9 @@
 						Count: 1b
 						tag: {
 							Automobile: {
-								engine: "automobility:stone"
-								frame: "automobility:yellow_tractor"
 								wheels: "automobility:standard"
+								frame: "automobility:yellow_tractor"
+								engine: "automobility:stone"
 							}
 						}
 					}
@@ -5646,6 +5646,19 @@
 					}
 				}
 			]
+		}
+		{
+			x: 14.5d
+			y: -1.5d
+			id: "7000B12FADB29F73"
+			tasks: [{
+				id: "74BDE4AC7D8A4A87"
+				type: "questsadditions:structure"
+				name: ""
+				hasCustomPicture: false
+				layer: true
+				rightclick: false
+			}]
 		}
 	]
 }
