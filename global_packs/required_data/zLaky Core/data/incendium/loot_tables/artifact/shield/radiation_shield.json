@@ -1,0 +1,51 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "shield",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "Releases radiation",
+                  "color": "#77cc00",
+                  "italic": "false"
+                },
+                {
+                  "translate": "when blocking an attack",
+                  "color": "#77cc00",
+                  "italic": "false"
+                },
+                "",
+                {
+                  "translate": "Incendium",
+                  "color": "#FF8000",
+                  "italic": true
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "translate": "Radiation Shield",
+                "italic": false,
+                "color": "#44ff00"
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:1450302,incendium:{item:'radiation_shield'},HideFlags:32,BlockEntityTag:{Patterns:[{Pattern:\"hhb\",Color:15},{Pattern:\"bt\",Color:4},{Pattern:\"mr\",Color:14},{Pattern:\"mc\",Color:15},{Pattern:\"flo\",Color:14},{Pattern:\"tt\",Color:15}],Base:4}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

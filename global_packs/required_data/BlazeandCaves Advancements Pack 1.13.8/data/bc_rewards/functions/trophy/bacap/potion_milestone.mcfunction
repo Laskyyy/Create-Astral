@@ -1,2 +1,0 @@
-give @s minecraft:glass_bottle{Enchantments:[{id:"minecraft:unbreaking",lvl:1}],Trophy:1,CustomModelData:131,HideFlags:33,display:{Name:"{\"italic\":\"false\",\"bold\":\"true\",\"color\":\"#D9CC3F\",\"translate\":\"Potion Brewer's Trophy\"}",Lore:["{\"color\":\"#D9CC3F\",\"translate\":\"How did you get here?\"}","{\"text\":\" \"}","{\"color\":\"gray\",\"translate\":\"Awarded for achieving\"}","{\"italic\":\"false\",\"color\":\"yellow\",\"translate\":\"Potions Milestone\"}"]}} 1
-tellraw @s {"color":"gold","text":" +1 ","extra":[{"translate":"Potion Brewer's Trophy"}]}

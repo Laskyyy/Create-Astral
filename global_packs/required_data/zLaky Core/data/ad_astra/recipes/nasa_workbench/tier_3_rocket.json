@@ -3,7 +3,7 @@
 	"ingredients": [
 		{
 			"ingredient": {
-				"item": "indrev:circuit_mk3"
+				"item": "create:integrated_circuit"
 			}
 		},
 		{
@@ -38,7 +38,7 @@
 		},
 		{
 			"ingredient": {
-				"item": "tconstruct:manyullyn_block"
+				"item": "createastral:sturdy_sheet_block"
 			}
 		},
 		{
@@ -53,22 +53,22 @@
 		},
 		{
 			"ingredient": {
-				"item": "tconstruct:manyullyn_block"
+				"item": "createastral:sturdy_sheet_block"
 			}
 		},
 		{
 			"ingredient": {
-				"item": "ad_astra:rocket_fin"
+				"item": "ad_astra:ostrum_tank"
 			}
 		},
 		{
 			"ingredient": {
-				"item": "ad_astra:ostrum_engine"
+				"item": "create:blaze_burner"
 			}
 		},
 		{
 			"ingredient": {
-				"item": "ad_astra:rocket_fin"
+				"item": "ad_astra:ostrum_tank"
 			}
 		}
 	],

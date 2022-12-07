@@ -24,7 +24,7 @@
     },
     "enableOreGeneration": {
       "comment": "When enabled ores will generate in the world",
-      "value": true
+      "value": false
     }
   }
 }

@@ -1,2 +1,0 @@
-give @s minecraft:leather{Enchantments:[{id:"minecraft:unbreaking",lvl:1}],Trophy:1,CustomModelData:131,HideFlags:33,display:{Name:"{\"italic\":\"false\",\"bold\":\"true\",\"color\":\"#C65C35\",\"translate\":\"Quiver\"}",Lore:["{\"color\":\"#C65C35\",\"translate\":\"You can't actually store arrows in it\"}","{\"text\":\" \"}","{\"color\":\"gray\",\"translate\":\"Awarded for achieving\"}","{\"italic\":\"false\",\"color\":\"light_purple\",\"translate\":\"Bullseye\"}"]}} 1
-tellraw @s {"color":"gold","text":" +1 ","extra":[{"translate":"Quiver"}]}

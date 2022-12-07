@@ -1,4 +1,25 @@
-To refresh this file, delete it and run /reload command again! Last updated: Nov 12, 2022, 10:35:48 PM
+To refresh this file, delete it and run /reload command again! Last updated: Dec 1, 2022, 5:57:57 PM
+
+#incendium:ghastling_enemy
+- minecraft:ghast
+- minecraft:fireball
+
+#incendium:castle
+- minecraft:piglin
+- minecraft:piglin_brute
+- minecraft:marker
+- minecraft:area_effect_cloud
+
+#minecraft:axolotl_always_hostiles
+- minecraft:drowned
+- minecraft:guardian
+- minecraft:elder_guardian
+
+#minecraft:freeze_immune_entity_types
+- minecraft:stray
+- minecraft:polar_bear
+- minecraft:snow_golem
+- minecraft:wither
 
 #ad_astra:entities/lives_without_oxygen
 - ad_astra:lunarian
@@ -20,15 +41,33 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - minecraft:iron_golem
 - minecraft:snow_golem
 - minecraft:magma_cube
+- minecraft:blaze
+- minecraft:piglin
+- minecraft:piglin_brute
+- minecraft:zombified_piglin
+- minecraft:ghast
+- minecraft:enderman
+- minecraft:hoglin
+
+#ad_astra:entities/fire_immune
+- ad_astra:pygro
+- ad_astra:zombified_pygro
+- ad_astra:pygro_brute
+- ad_astra:mogler
+- ad_astra:zombified_mogler
+- ad_astra:sulfur_creeper
+- ad_astra:lunarian_wandering_trader
+- ad_astra:pygro
+- ad_astra:zombified_pygro
+- ad_astra:pygro_brute
+- ad_astra:mogler
+- ad_astra:zombified_mogler
+- ad_astra:sulfur_creeper
+- ad_astra:lunarian_wandering_trader
 
 #incendium:mobs
 - minecraft:player
 - #incendium:mobs_no_player
-
-#blazeandcave:horses
-- minecraft:horse
-- minecraft:donkey
-- minecraft:mule
 
 #tconstruct:rare_mobs
 - minecraft:wither
@@ -50,9 +89,17 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - minecraft:trident
 - minecraft:ender_pearl
 
-#blazeandcave:llamas
-- minecraft:llama
-- minecraft:trader_llama
+#c:slimes
+- minecraft:slime
+- tconstruct:earth_slime
+- tconstruct:sky_slime
+- tconstruct:ender_slime
+- tconstruct:terracube
+- minecraft:slime
+- tconstruct:earth_slime
+- tconstruct:sky_slime
+- tconstruct:ender_slime
+- tconstruct:terracube
 
 #tconstruct:melting/show_in_default
 - minecraft:iron_golem
@@ -60,18 +107,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - minecraft:villager
 - minecraft:player
 
-#blazeandcave:player_rideables
-- minecraft:pig
+#naturalist:lion_hostiles
+- naturalist:rhino
 - minecraft:horse
-- minecraft:donkey
-- minecraft:mule
-- minecraft:zombie_horse
-- minecraft:skeleton_horse
-- minecraft:llama
-- minecraft:trader_llama
-- minecraft:strider
-- minecraft:boat
-- minecraft:minecart
 
 #naturalist:bear_hostiles
 - minecraft:tropical_fish
@@ -81,11 +119,39 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 
 #tconstruct:piggybackpack_blacklist
 
+#nullscape:not_teleportable
+- minecraft:enderman
+- minecraft:ender_pearl
+- minecraft:marker
+- minecraft:wither
+- minecraft:ender_dragon
+- minecraft:fishing_bobber
+
+#c:bosses
+- minecraft:ender_dragon
+- minecraft:wither
+
 #incendium:withersbane_targets
 - minecraft:wither
 - minecraft:wither_skeleton
 - minecraft:skeleton
 - minecraft:zombified_piglin
+
+#farmersdelight:horse_feed_users
+- minecraft:horse
+- minecraft:skeleton_horse
+- minecraft:zombie_horse
+- minecraft:donkey
+- minecraft:mule
+- minecraft:llama
+
+#minecraft:raiders
+- minecraft:evoker
+- minecraft:pillager
+- minecraft:ravager
+- minecraft:vindicator
+- minecraft:illusioner
+- minecraft:witch
 
 #minecraft:powder_snow_walkable_mobs
 - minecraft:rabbit
@@ -93,15 +159,22 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - minecraft:silverfish
 - minecraft:fox
 
+#tconstruct:melting/hide_in_default
+- minecraft:giant
+
+#minecraft:axolotl_hunt_targets
+- minecraft:tropical_fish
+- minecraft:pufferfish
+- minecraft:salmon
+- minecraft:cod
+- minecraft:squid
+- minecraft:glow_squid
+
 #farmersdelight:dog_food_users
 - minecraft:wolf
 
-#minecraft:zombies
-- minecraft:zombie
-- minecraft:zombie_villager
-- minecraft:husk
-- minecraft:drowned
-- minecraft:zombified_piglin
+#naturalist:deer_predators
+- naturalist:bear
 
 #incendium:mobs_no_player
 - minecraft:axolotl
@@ -171,6 +244,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - minecraft:zombie
 - minecraft:zombie_villager
 
+#tconstruct:killagers
+- #c:villagers
+- #c:illagers
+- minecraft:iron_golem
+- minecraft:ravager
+
 #minecraft:impact_projectiles
 - #minecraft:arrows
 - minecraft:snowball
@@ -235,16 +314,19 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - minecraft:player
 - minecraft:armor_stand
 
+#minecraft:freeze_hurts_extra_types
+- minecraft:strider
+- minecraft:blaze
+- minecraft:magma_cube
+
 #tconstruct:bacon_producer
 - minecraft:pig
 - minecraft:piglin
 - minecraft:hoglin
 
-#blazeandcave:overworld_zombies
-- minecraft:zombie
-- minecraft:zombie_villager
-- minecraft:husk
-- minecraft:drowned
+#c:creepers
+- minecraft:creeper
+- minecraft:creeper
 
 #naturalist:vulture_hostiles
 - minecraft:zombie
@@ -253,6 +335,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - minecraft:zombified_piglin
 - minecraft:zoglin
 - minecraft:zombie_horse
+
+#incendium:castle_spawned
+- minecraft:area_effect_cloud
+- #minecraft:arrows
+- minecraft:armor_stand
+- minecraft:firework_rocket
+- minecraft:fireball
+- minecraft:small_fireball
 
 #c:minecarts
 - minecraft:minecart
@@ -278,129 +368,3 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 #c:small_armor
 - #c:slimes
 - #c:slimes
-
-#incendium:ghastling_enemy
-- minecraft:ghast
-- minecraft:fireball
-
-#incendium:castle
-- minecraft:piglin
-- minecraft:piglin_brute
-- minecraft:marker
-- minecraft:area_effect_cloud
-
-#minecraft:axolotl_always_hostiles
-- minecraft:drowned
-- minecraft:guardian
-- minecraft:elder_guardian
-
-#minecraft:freeze_immune_entity_types
-- minecraft:stray
-- minecraft:polar_bear
-- minecraft:snow_golem
-- minecraft:wither
-
-#ad_astra:entities/fire_immune
-- ad_astra:pygro
-- ad_astra:zombified_pygro
-- ad_astra:pygro_brute
-- ad_astra:mogler
-- ad_astra:zombified_mogler
-- ad_astra:sulfur_creeper
-- ad_astra:lunarian_wandering_trader
-
-#blazeandcave:spiders
-- minecraft:spider
-- minecraft:cave_spider
-
-#c:slimes
-- minecraft:slime
-- tconstruct:earth_slime
-- tconstruct:sky_slime
-- tconstruct:ender_slime
-- tconstruct:terracube
-- minecraft:slime
-- tconstruct:earth_slime
-- tconstruct:sky_slime
-- tconstruct:ender_slime
-- tconstruct:terracube
-
-#naturalist:lion_hostiles
-- naturalist:rhino
-- minecraft:horse
-
-#nullscape:not_teleportable
-- minecraft:enderman
-- minecraft:ender_pearl
-- minecraft:marker
-- minecraft:wither
-- minecraft:ender_dragon
-- minecraft:fishing_bobber
-
-#c:bosses
-- minecraft:ender_dragon
-- minecraft:wither
-
-#farmersdelight:horse_feed_users
-- minecraft:horse
-- minecraft:skeleton_horse
-- minecraft:zombie_horse
-- minecraft:donkey
-- minecraft:mule
-- minecraft:llama
-
-#minecraft:raiders
-- minecraft:evoker
-- minecraft:pillager
-- minecraft:ravager
-- minecraft:vindicator
-- minecraft:illusioner
-- minecraft:witch
-
-#tconstruct:melting/hide_in_default
-- minecraft:giant
-
-#minecraft:axolotl_hunt_targets
-- minecraft:tropical_fish
-- minecraft:pufferfish
-- minecraft:salmon
-- minecraft:cod
-- minecraft:squid
-- minecraft:glow_squid
-
-#naturalist:deer_predators
-- naturalist:bear
-
-#blazeandcave:piglins
-- minecraft:piglin
-- minecraft:piglin_brute
-
-#tconstruct:killagers
-- #c:villagers
-- #c:illagers
-- minecraft:iron_golem
-- minecraft:ravager
-
-#blazeandcave:cj_rideables
-- minecraft:zombie
-- minecraft:zombie_villager
-- minecraft:husk
-- minecraft:drowned
-- minecraft:zombified_piglin
-
-#minecraft:freeze_hurts_extra_types
-- minecraft:strider
-- minecraft:blaze
-- minecraft:magma_cube
-
-#c:creepers
-- minecraft:creeper
-- minecraft:creeper
-
-#incendium:castle_spawned
-- minecraft:area_effect_cloud
-- #minecraft:arrows
-- minecraft:armor_stand
-- minecraft:firework_rocket
-- minecraft:fireball
-- minecraft:small_fireball

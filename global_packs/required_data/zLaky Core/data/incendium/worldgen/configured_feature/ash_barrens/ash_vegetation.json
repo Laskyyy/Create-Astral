@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.02,
+        "feature": "incendium:ash_barrens/tree"
+      },
+      {
+        "chance": 0.01,
+        "feature": "incendium:ash_barrens/tree_bend"
+      }
+    ],
+    "default": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "weight": 55,
+                "data": {
+                  "Name": "minecraft:crimson_roots"
+                }
+              },
+              {
+                "weight": 11,
+                "data": {
+                  "Name": "minecraft:crimson_fungus"
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:warped_fungus"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              -1,
+              0
+            ],
+            "blocks": [
+              "minecraft:crimson_nylium"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

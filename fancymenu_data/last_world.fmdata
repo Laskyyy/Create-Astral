@@ -1,7 +1,0 @@
-type = last_world
-
-last_world {
-  is_server = false
-  world = C:/Users/jacob/AppData/Roaming/PrismLauncher/instances/Create Astral v1.2/minecraft/saves/New World (48)
-}
-

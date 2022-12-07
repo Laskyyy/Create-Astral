@@ -1,0 +1,6 @@
+{
+	// Whether villagers should use Numismatic currency for trading
+	"enableVillagerTrading": true,
+	// Whether taxes from Minecraft Comes Alive: Reborn should be delivered as Numismatic currency
+	"enableMcaCompatibility": true
+}

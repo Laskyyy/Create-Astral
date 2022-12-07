@@ -1,0 +1,15 @@
+{
+  "name": "minecraft:bastion/starts",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:wither_cage",
+        "processors": "incendium:lab",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

@@ -1,2 +1,0 @@
-give @s minecraft:coal_block{Enchantments:[{id:"minecraft:unbreaking",lvl:1}],Trophy:1,CustomModelData:131,HideFlags:33,display:{Name:"{\"italic\":\"false\",\"bold\":\"true\",\"color\":\"#412C2C\",\"translate\":\"Santa's Present\"}",Lore:["{\"color\":\"#412C2C\",\"translate\":\"Someone's been naughty this year...\"}","{\"text\":\" \"}","{\"color\":\"gray\",\"translate\":\"Awarded for achieving\"}","{\"italic\":\"false\",\"color\":\"light_purple\",\"translate\":\"Master Coal Miner\"}"]}} 1
-tellraw @s {"color":"gold","text":" +1 ","extra":[{"translate":"Santa's Present"}]}

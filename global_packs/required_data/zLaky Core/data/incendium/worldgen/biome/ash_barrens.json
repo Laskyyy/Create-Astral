@@ -1,0 +1,109 @@
+{
+  "spawners": {
+    "water_ambient": [],
+    "ambient": [],
+    "misc": [],
+    "water_creature": [],
+    "creature": [
+      {
+        "type": "minecraft:strider",
+        "weight": 60,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ],
+    "monster": [
+      {
+        "type": "minecraft:ghast",
+        "weight": 20,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "minecraft:magma_cube",
+        "weight": 100,
+        "minCount": 2,
+        "maxCount": 7
+      },
+      {
+        "type": "minecraft:piglin",
+        "weight": 100,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:nether_cave"
+    ]
+  },
+  "features": [
+    [
+      "incendium:ash_barrens/ash_delta",
+      "incendium:ash_barrens/crimson_patch_large",
+      "incendium:ash_barrens/crimson_patch_small",
+      "incendium:ash_barrens/vines_ceiling",
+      "incendium:ash_barrens/vines_ceiling_dx"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "minecraft:basalt_blobs",
+      "minecraft:blackstone_blobs",
+      "minecraft:spring_delta",
+      "minecraft:patch_fire",
+      "minecraft:patch_soul_fire",
+      "minecraft:glowstone_extra",
+      "minecraft:glowstone",
+      "minecraft:ore_magma",
+      "minecraft:spring_closed",
+      "minecraft:ore_gravel_nether",
+      "minecraft:ore_blackstone",
+      "minecraft:ore_gold_nether",
+      "minecraft:ore_quartz_nether",
+      "minecraft:ore_ancient_debris_large",
+      "minecraft:ore_debris_small"
+    ],
+    [],
+    []
+  ],
+  "temperature": 2,
+  "downfall": 0,
+  "effects": {
+    "ambient_sound": "minecraft:ambient.basalt_deltas.loop",
+    "mood_sound": {
+      "sound": "minecraft:ambient.basalt_deltas.mood",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    },
+    "additions_sound": {
+      "sound": "minecraft:ambient.basalt_deltas.additions",
+      "tick_chance": 0.0111
+    },
+    "music": {
+      "sound": "minecraft:music.nether.basalt_deltas",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": false
+    },
+    "fog_color": 6184034,
+    "water_color": 4143428,
+    "water_fog_color": 4341314,
+    "sky_color": 7254527,
+    "particle": {
+      "options": {
+        "type": "minecraft:ash"
+      },
+      "probability": 0.08
+    }
+  },
+  "precipitation": "none",
+  "category": "nether"
+}

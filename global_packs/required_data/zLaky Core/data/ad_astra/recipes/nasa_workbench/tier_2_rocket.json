@@ -3,7 +3,7 @@
 	"ingredients": [
 		{
 			"ingredient": {
-				"item": "indrev:circuit_mk2"
+				"item": "create:integrated_circuit"
 			}
 		},
 		{

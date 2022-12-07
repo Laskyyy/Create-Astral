@@ -1,0 +1,76 @@
+{
+  "name": "Electrolyser",
+  "appearance": {
+    "block": "adoptafloppa:floppa_block",    
+    "running": {
+      "lightlevel": 15
+    }
+  },
+  "gui": [
+    {
+      "texture": "custommachinery:textures/gui/base_background.png",
+      "x": 0,
+      "y": 0,
+      "type": "custommachinery:texture"
+    },
+    {
+      "x": 47,
+      "y": 80,
+      "type": "custommachinery:player_inventory"
+    },
+    {
+      "id": "watertank",
+      "x": 90,
+      "y": 30,
+      "type": "custommachinery:fluid"
+    },
+    
+    {
+      "id": "oxygentank",
+      "x": 142,
+      "y": 30,
+      "type": "custommachinery:fluid"
+    },
+    
+    {
+      "x": 116,
+      "y": 30,
+      "type": "custommachinery:progress"
+    },
+    {
+      "x": 236,
+      "y": 5,
+      "type": "custommachinery:status"
+    },
+    {
+      "text": "Electrolyser",
+      "x": 7,
+      "y": 5,
+      "type": "custommachinery:text"
+    }
+  ],
+  "components": [
+    {
+      "type": "custommachinery:fluid",
+      "capacity": 810000,
+      "id": "watertank",
+      "maxInput": 666,
+      "maxOutput": 1000,
+      "filter": ["minecraft:water"],
+      "whitelist": true
+  },
+    {
+      "type": "custommachinery:fluid",
+      "capacity": 810000,
+      "id": "oxygentank",
+      "maxInput": 666,
+      "maxOutput": 1000,
+      "filter": ["ad_astra:oxygen"],
+      "whitelist": true
+  },
+    {
+    	"type": "custommachinery:redstone",
+    	"poweroutput": 15
+    }
+  ]
+}

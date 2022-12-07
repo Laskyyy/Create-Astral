@@ -1,0 +1,8 @@
+{
+  "replace": "true",
+  "values": [
+    "minecraft:redstone",
+    "minecraft:lapis_lazuli",
+    "minecraft:quartz"
+  ]
+}

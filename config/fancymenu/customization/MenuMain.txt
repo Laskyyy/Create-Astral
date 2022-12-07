@@ -1,0 +1,29 @@
+type = menu
+
+customization-meta {
+  identifier = %fancymenu:universal_layout%
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  audio_source:9cb93f64-f2ce-4db3-b666-e4cd49692b5f1669507105227 = resources/astrallakes.ogg;EXTERNAL_LOCAL;100;1
+  orientation = top-left
+  loop = true
+  channel = master
+  x = 287
+  width = 50
+  action = custom_layout_element:fancymenu_extension:audio_item
+  actionid = fa3cd1ac-4442-4876-84d1-f2a34c226bba1669507099277
+  y = 144
+  once_per_session = false
+  height = 50
+}
+

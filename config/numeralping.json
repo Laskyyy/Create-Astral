@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "defaultPingColour": 65280,
+  "levelOnePingColour": 16776960,
+  "levelTwoPingColour": 16750080,
+  "levelThreePingColour": 16737280,
+  "levelFourPingColour": 16711680,
+  "levelFivePingColour": 16711680,
+  "smallPing": true
+}

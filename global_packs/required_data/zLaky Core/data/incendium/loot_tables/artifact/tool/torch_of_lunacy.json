@@ -1,0 +1,54 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:soul_torch",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "Torch of Lunacy",
+                "color": "#aaccff",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "translate": "Emits a strange light which",
+                  "color": "#aaffcc",
+                  "italic": true
+                },
+                {
+                  "translate": "blinds nearby desert blazes",
+                  "color": "#aaffcc",
+                  "italic": true
+                },
+                {
+                  "translate": "if kept in your inventory",
+                  "color": "#aaffcc",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "Incendium",
+                  "color": "#FF8000",
+                  "italic": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:1450400,incendium:{item:'torch_of_lunacy'},Enchantments:[]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

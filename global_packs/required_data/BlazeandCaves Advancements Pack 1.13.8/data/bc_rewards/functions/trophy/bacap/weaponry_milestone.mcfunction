@@ -1,2 +1,0 @@
-give @s minecraft:iron_sword{Trophy:1,CustomModelData:131,HideFlags:71,Unbreakable:1,Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Name:"{\"italic\":\"false\",\"bold\":\"true\",\"color\":\"#D8D8D8\",\"translate\":\"Sword Trophy\"}",Lore:["{\"color\":\"#D8D8D8\",\"translate\":\"Slice and dice\"}","{\"text\":\" \"}","{\"color\":\"gray\",\"translate\":\"Awarded for achieving\"}","{\"italic\":\"false\",\"color\":\"yellow\",\"translate\":\"Weaponry Milestone\"}"]}} 1
-tellraw @s {"color":"gold","text":" +1 ","extra":[{"translate":"Sword Trophy"}]}

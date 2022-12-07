@@ -1,10 +1,10 @@
 {
-  "block": "ad_astra:moon_stone",
+  "block": "createastral:shimmering_stone",
   "dim": "ad_astra:moon",
   "ignitionType": "ITEM",
-  "ignitionSource": "minecraft:stick",
-  "r": 102,
-  "g": 179,
+  "ignitionSource": "createastral:astral_conduit",
+  "r": 255,
+  "g": 192,
   "b": 255
 }
 

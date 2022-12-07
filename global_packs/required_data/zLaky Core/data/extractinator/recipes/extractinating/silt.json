@@ -1,0 +1,26 @@
+{
+  "type": "extractinator:extractinating",
+  "input": {
+    "item": "extractinator:silt"
+  },
+  "drops": [
+    {
+      "drop": "#extractinator:common_drops",
+      "drop_chance": 0.60,
+      "min_drop_count": 1,
+      "max_drop_count": 2
+    },
+    {
+      "drop": "#extractinator:rare_drops",
+      "drop_chance": 0.10,
+      "min_drop_count": 1,
+      "max_drop_count": 2
+    },
+    {
+      "drop": "#extractinator:very_rare_drops",
+      "drop_chance": 0.02,
+      "min_drop_count": 1,
+      "max_drop_count": 2
+    }
+  ]
+}

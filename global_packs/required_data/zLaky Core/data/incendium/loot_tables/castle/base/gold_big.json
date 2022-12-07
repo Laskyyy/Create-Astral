@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:tag",
+                    "name": "incendium:gold_stackable",
+                    "weight": 1,
+                    "expand": true
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "minecraft:set_count",
+            "count": {
+                "type": "minecraft:uniform",
+                "min": 4,
+                "max": 10
+            }
+        }
+    ]
+}

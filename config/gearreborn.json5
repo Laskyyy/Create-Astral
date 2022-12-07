@@ -1,0 +1,28 @@
+{ 
+	// The energy capacity of the hazmat chestpiece, expressed in E
+	"hazmatChestpieceEnergyCapacity": 80000,
+	// How many ticks of water breathing you can get with the hazmat chestpiece with one compressed air cell
+	"hazmatChestpieceAirTicksCapacity": 524,
+	// How much energy (expressed in E) per tick the hazmat chestpiece consumes when shielding the player from lava damage
+	"hazmatChestpieceLavaCoolingEnergyCost": 32,
+	// How much energy (expressed in E) per tick the NVG consume when they're active and on the player's head
+	"nvgActiveEnergyPerTickCost": 16,
+	// The energy capacity of the NVG, expressed in E
+	"nvgEnergyCapacity": 80000,
+	// How much energy (expressed in E) per tick the stun gun consumes when it's charging its capacitors
+	"stungunOneClickEnergyCost": 8,
+	// The energy capacity of the stun gun, expressed in E
+	"stungunEnergyCapacity": 10000,
+	// How many ticks it takes for the stun gun's capacitors to fully charge
+	"stungunChargeTicks": 64,
+	// How much damage a charged stun gun deals specifically to arthropods. Set to 0 to disable this whole spider zapping feature
+	"stungunDamageDealtToArthropodsOnChargedHit": 16,
+	// Should the stun gun ignite Creepers
+	"stungunShouldChargedHitsIgniteCreepers": true,
+	// Should the stun gun stun vanilla boss mobs
+	"stungunShouldStunBossMobs": false,
+	// How many ticks of Slowness should the Stun Gun inflict on mobs
+	"stungunSlownessTicks": 100,
+	// How many ticks of Weakness should the Stun Gun inflict on mobs
+	"stungunWeaknessTicks": 100
+}

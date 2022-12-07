@@ -1,0 +1,238 @@
+{
+  "pools": [
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "iron_ingot",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 4,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "redstone_block",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "lantern",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 7,
+                "max": 12
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coal",
+          "weight": 7,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 7,
+                "max": 16
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "lava_bucket",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cooked_porkchop",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "gold_ingot",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 9
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "soul_torch",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "crying_obsidian",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "flint",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "diamond",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "nether_brick",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 10,
+                "max": 25
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "chainmail_helmet",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "chainmail_leggings",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "chainmail_chestplate",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "chainmail_boots",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "golden_helmet",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "golden_leggings",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "golden_chestplate",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "golden_boots",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iron_pickaxe",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iron_shovel",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iron_axe",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "iron_sword",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

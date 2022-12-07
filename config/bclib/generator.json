@@ -1,0 +1,26 @@
+{
+  "options": {
+    "useOldBiomeGenerator [default: false]": false,
+    "customNetherBiomeSource [default: true]": true,
+    "customEndBiomeSource [default: true]": true,
+    "addNetherBiomesByCategory [default: false]": false,
+    "addEndBiomesByCategory [default: false]": false,
+    "verticalBiomesInTallNether [default: true]": true,
+    "biomeSource": {
+      "fixEndBiomeSource [default: true]": true,
+      "fixNetherBiomeSource [default: true]": true
+    }
+  },
+  "nether": {
+    "biomeMap": {
+      "biomeSize [default: 256]": 256,
+      "biomeVerticalSize(onlyInTallNether) [default: 86]": 86
+    }
+  },
+  "end": {
+    "biomeMap": {
+      "biomeSizeLand [default: 256]": 256,
+      "biomeSizeVoid [default: 256]": 256
+    }
+  }
+}

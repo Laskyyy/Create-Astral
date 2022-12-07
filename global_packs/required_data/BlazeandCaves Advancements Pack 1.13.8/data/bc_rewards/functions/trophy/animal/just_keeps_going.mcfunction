@@ -1,2 +1,0 @@
-give @s minecraft:potato{Enchantments:[{id:"minecraft:unbreaking",lvl:1}],Trophy:1,CustomModelData:131,HideFlags:33,display:{Name:"{\"italic\":\"false\",\"bold\":\"true\",\"color\":\"#E4D173\",\"translate\":\"Potato Mine\"}",Lore:["{\"color\":\"#E4D173\",\"translate\":\"SPUDOW!\"}","{\"text\":\" \"}","{\"color\":\"gray\",\"translate\":\"Awarded for achieving\"}","{\"italic\":\"false\",\"color\":\"light_purple\",\"translate\":\"Just Keeps Going\"}"]}} 1
-tellraw @s {"color":"gold","text":" +1 ","extra":[{"translate":"Potato Mine"}]}

@@ -1,0 +1,10 @@
+{
+  "replace": "true",
+  "values": [
+    "minecraft:gunpowder",
+    "minecraft:glowstone_dust",
+    "minecraft:coal",
+    "minecraft:redstone",
+    "minecraft:lapis_lazuli"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "translate": "Multiplex Crossbow",
+                "color": "#ccbb44",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "translate": "Shoots a blast of fiery",
+                  "color": "#ddcc55",
+                  "italic": true
+                },
+                {
+                  "translate": "arrows at a short-range",
+                  "color": "#ddcc55",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "Incendium",
+                  "color": "#FF8000",
+                  "italic": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:1450102,incendium:{item:'multiplex_crossbow'}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

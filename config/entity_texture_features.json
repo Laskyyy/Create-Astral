@@ -13,6 +13,7 @@
   "enableEmissiveTextures": true,
   "enableEmissiveBlockEntities": true,
   "fullBrightEmissives": false,
+  "emissiveRenderMode": "DULL",
   "specialEmissiveShield": true,
   "alwaysCheckVanillaEmissiveSuffix": true,
   "skinFeaturesEnabled": true,

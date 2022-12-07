@@ -1,0 +1,828 @@
+{
+	id: "547D8D23D3A6A883"
+	group: ""
+	order_index: 1
+	filename: "chapter_2"
+	title: "2) Getting started with Create"
+	icon: "create:andesite_alloy"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -2.5d
+			y: 9.0d
+			shape: "pentagon"
+			subtitle: "A new metal"
+			description: ["Oddly cheese-shaped, you think? Combine copper and tin in a smithing table to get the most primitive of alloys."]
+			dependencies: ["601A619C6E96920A"]
+			id: "5268B7CCEDC48422"
+			tasks: [{
+				id: "22254C04A4E1B471"
+				type: "item"
+				item: "createastral:bronze_ingot"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 6.0d
+			shape: "gear"
+			description: ["You might want to stock up on these,,,"]
+			dependencies: [
+				"4D1A55B136F62B3F"
+				"74E7B48237BED17D"
+			]
+			id: "515FDE185E1FB782"
+			tasks: [{
+				id: "3CB54526940AEDD0"
+				type: "item"
+				item: "create:cogwheel"
+			}]
+			rewards: [
+				{
+					id: "625B90CB642D9A4B"
+					type: "item"
+					item: "create:large_cogwheel"
+					count: 3
+				}
+				{
+					id: "6D1214A71440BF3E"
+					type: "item"
+					item: "create:cogwheel"
+					count: 3
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 6.0d
+			description: ["Slap a depot below a powered press and watch the magic happen!"]
+			dependencies: [
+				"4AF3238551E346E1"
+				"35F1B635057746F0"
+			]
+			dependency_requirement: "one_completed"
+			id: "6499CD689863283D"
+			tasks: [{
+				id: "0D84CDE16B17D208"
+				type: "advancement"
+				advancement: "create:mechanical_press"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "58C0759B314F7A1A"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 3
+			}]
+		}
+		{
+			x: 3.0d
+			y: 6.0d
+			description: ["Sheets! Yes! With these there are new options for create blocks. Drills (these will assist in mining the first few diamonds) or mechanical saws to chop down huge amounts of logs instantaneously."]
+			dependencies: ["6499CD689863283D"]
+			id: "4EB4838CCED125E2"
+			tasks: [{
+				id: "5C8677CAB68CDBF5"
+				type: "item"
+				item: "create:iron_sheet"
+				count: 10L
+			}]
+			rewards: [{
+				id: "5DEE6FCAA4C9AF9A"
+				type: "item"
+				item: "farmersdelight:smoked_ham"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 6.0d
+			subtitle: "All that for a drop of iron."
+			description: [""]
+			dependencies: ["4EB4838CCED125E2"]
+			id: "122CDE9C00B5CA06"
+			tasks: [{
+				id: "36322B5F310191BE"
+				type: "item"
+				item: {
+					id: "minecraft:iron_chestplate"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "2CBC687393EAC648"
+				type: "item"
+				item: {
+					id: "mcdw:spear_spear"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: 7.0d
+			subtitle: "More efficient with mixers!"
+			description: ["The quintessential create crafting component. Better off starting to build up a supply now."]
+			dependencies: ["76704C59FAFCD2E7"]
+			id: "74E7B48237BED17D"
+			tasks: [{
+				id: "6F6521AD31ABDEDB"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+			rewards: [{
+				id: "15A8D721E715AA17"
+				type: "item"
+				item: {
+					id: "mcdw:dagger_dagger"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: 7.0d
+			subtitle: "Better than a copper sheet."
+			description: ["Cause it's vertical, yeah?"]
+			dependencies: ["5268B7CCEDC48422"]
+			id: "4D1A55B136F62B3F"
+			tasks: [{
+				id: "754C2AF1CE1B6795"
+				type: "item"
+				item: "createastral:bronze_sheet"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 9.0d
+			shape: "pentagon"
+			description: ["Perhaps *the* most important block in create. Andesite can be automated, take a look at its recipes to see the components (mining the ol' fashioned way is also valid.)"]
+			dependencies: ["601A619C6E96920A"]
+			id: "6ABB448DA7C278A5"
+			tasks: [
+				{
+					id: "7E892847B494E154"
+					type: "item"
+					item: "minecraft:andesite"
+				}
+				{
+					id: "5AD2EE652E5A4FEE"
+					type: "item"
+					item: "minecraft:clay_ball"
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: 7.0d
+			subtitle: "Drills go brrr"
+			description: [
+				"This'll be the most consistent method of grabbing diamonds before upgrading your first tinker tool with a diamond gem."
+				"Diamonds can otherwise be found in loot across the overworld."
+			]
+			hide_dependency_lines: true
+			dependencies: ["6499CD689863283D"]
+			id: "5D51B2F9F28ECE8A"
+			tasks: [{
+				id: "33D6253E8E977ED8"
+				type: "item"
+				item: "create:mechanical_drill"
+			}]
+			rewards: [{
+				id: "66C7D5F72E20E263"
+				type: "item"
+				item: "farmersdelight:chocolate_pie_slice"
+				count: 5
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.5d
+			shape: "rsquare"
+			subtitle: "Trains? Trains!!!"
+			description: ["Finally, trains (oh yeah, and space, lol)"]
+			dependencies: ["68108C8A6AC63A01"]
+			id: "0A5DC78719B9A244"
+			tasks: [{
+				id: "1787745DB2A1DBAF"
+				type: "advancement"
+				advancement: "create:sturdy_sheet"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "4C67A01DA11A0B50"
+					type: "item"
+					item: "farmersdelight:cabbage_rolls"
+					count: 5
+				}
+				{
+					id: "5630FA2B5DB4EC30"
+					type: "item"
+					item: "dustrial_decor:industrial_iron_billet"
+					count: 64
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: 1.5d
+			subtitle: "TRAINS"
+			dependencies: ["0A5DC78719B9A244"]
+			id: "67AA35D9D18AD64B"
+			tasks: [{
+				id: "468DAC2C5ADA4A11"
+				type: "advancement"
+				advancement: "create:track_0"
+				criterion: ""
+			}]
+		}
+		{
+			x: -4.5d
+			y: 2.5d
+			description: ["Casing used in train creation, and some other misc. recipes. Once again, applies the same as other casings, this time using sturdy sheet and a brass casing as a base."]
+			dependencies: ["0A5DC78719B9A244"]
+			id: "1579C73B735F06F8"
+			tasks: [{
+				id: "69BCBD91F1468527"
+				type: "advancement"
+				advancement: "create:train_casing_00"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "73BB68E05FE6085E"
+				type: "item"
+				item: "farmersdelight:stuffed_pumpkin_block"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 2.5d
+			subtitle: "TRAAAAAAAINS"
+			dependencies: ["1579C73B735F06F8"]
+			id: "36129D7A46CC6F6D"
+			tasks: [{
+				id: "0AF596BE70DCA925"
+				type: "advancement"
+				advancement: "create:train"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "2732F8299290593F"
+				type: "item"
+				item: "dustrial_decor:cast_iron_billet"
+				count: 64
+			}]
+		}
+		{
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "createdeco:textures/block/palettes/decal/blue_decal.png"
+				}
+			}
+			x: 1.0d
+			y: 5.0d
+			subtitle: "Power a waterwheel"
+			description: ["The first automatic power generation method you are likely to utilise. Should last you enough until the brass age!"]
+			hide_dependency_lines: true
+			id: "35F1B635057746F0"
+			tasks: [{
+				id: "78758D6F5FAB59D4"
+				type: "advancement"
+				advancement: "create:water_wheel"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "75D6346CB8A5E30C"
+				type: "item"
+				item: "create:water_wheel"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 7.0d
+			description: ["Apply an andesite alloy to a stripped log to create andesite casing. These can be automated later on with deployers, but for now it's manual labour."]
+			dependencies: ["74E7B48237BED17D"]
+			id: "604CF717881C323A"
+			tasks: [{
+				id: "3FA50413079C72C2"
+				type: "advancement"
+				advancement: "create:andesite_casing"
+				criterion: ""
+			}]
+		}
+		{
+			x: 3.0d
+			y: 7.0d
+			subtitle: "Is that a gun?"
+			description: ["Surely this is overkill, right?"]
+			dependencies: ["604CF717881C323A"]
+			id: "07ED5ADF97F6F0D8"
+			tasks: [
+				{
+					id: "09149B060A7A39E2"
+					type: "item"
+					item: {
+						id: "minecraft:bow"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "639A21D7159EAEB7"
+					type: "item"
+					item: "minecraft:arrow"
+				}
+			]
+			rewards: [{
+				id: "4E124F950CDC52D4"
+				type: "item"
+				item: "minecraft:arrow"
+				count: 16
+			}]
+		}
+		{
+			x: 0.0d
+			y: 9.0d
+			subtitle: "Hate making andesite?"
+			description: ["So do I! Make a basalt generator with triple compressed andesite as the catalyst to ignore andesite production entirely. Lava has to touch both the andesite, and blue ice to form."]
+			dependencies: ["6ABB448DA7C278A5"]
+			id: "1B5245476A321C24"
+			tasks: [{
+				id: "6CB5E797D027C3B7"
+				type: "item"
+				item: "compressor:triple_compressed_andesite"
+			}]
+			rewards: [{
+				id: "4CD8DDB0266CAE21"
+				type: "item"
+				item: "catwalksinc:catwalk"
+				count: 64
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.5d
+			shape: "circle"
+			subtitle: "You could've made this a while ago, but it's required now."
+			description: ["Mixing is broken into 3 categories. Unheated, Heated, and Superheated (Blaze cakes). That final tier is not going to be accessible to you for a little while."]
+			dependencies: ["515FDE185E1FB782"]
+			id: "545BF28E82A07D19"
+			tasks: [{
+				id: "0AB657FF6B5C651D"
+				type: "advancement"
+				advancement: "create:mechanical_mixer"
+				criterion: ""
+			}]
+		}
+		{
+			x: -5.0d
+			y: 6.0d
+			subtitle: "Not associated wiith Terraria"
+			hide_dependency_lines: true
+			dependencies: ["74E7B48237BED17D"]
+			id: "638367CB9262248E"
+			tasks: [{
+				id: "4D557555BDA21F35"
+				type: "item"
+				item: "doodads:platform"
+				count: 16L
+			}]
+			rewards: [{
+				id: "0DC3D0AAF6DD9929"
+				type: "item"
+				item: "doodads:platform"
+				count: 16
+				only_one: true
+			}]
+		}
+		{
+			x: 2.5d
+			y: 8.0d
+			subtitle: "Pewtah' Craft"
+			description: ["This is technically discriminatory against people who can't code."]
+			dependencies: ["604CF717881C323A"]
+			id: "247AF9BF2D5EBF78"
+			tasks: [{
+				id: "0FE3D0A672182AE6"
+				type: "item"
+				item: "computercraft:computer_normal"
+			}]
+			rewards: [{
+				id: "7E0B5E1A08BA855C"
+				type: "item"
+				item: "minecraft:note_block"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 8.0d
+			subtitle: "I like turtles."
+			description: [
+				"It's not forced labour if they're robots."
+				"You can give these iron tools instead of diamond (unlike the advanced bots) and they will still hold a diamond pickaxe for you!"
+			]
+			dependencies: ["247AF9BF2D5EBF78"]
+			id: "266B4D9BDF29BD12"
+			tasks: [{
+				id: "3EF37A796B2984A4"
+				type: "item"
+				item: "computercraft:turtle_normal"
+			}]
+			rewards: [{
+				id: "4640E103DF6899CD"
+				type: "item"
+				item: "create:mechanical_bearing"
+			}]
+		}
+		{
+			title: "Pick a fuel!"
+			x: 4.5d
+			y: 7.0d
+			shape: "square"
+			subtitle: "A stack of kelp blocks?"
+			description: ["Trust me. automate any of these three and fuel will never be an issue again."]
+			hide_dependency_lines: true
+			id: "7AAA2363D859EA19"
+			tasks: [
+				{
+					id: "26EBC2D49F9B8E42"
+					type: "item"
+					item: "minecraft:lava_bucket"
+					count: 64L
+				}
+				{
+					id: "76CD7F8AFE6A1D18"
+					type: "item"
+					item: "minecraft:charcoal"
+					count: 640L
+				}
+				{
+					id: "6EEEF49765888512"
+					type: "item"
+					item: "minecraft:dried_kelp_block"
+					count: 32L
+				}
+			]
+			rewards: [{
+				id: "72E4E63193A57873"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 64
+			}]
+		}
+		{
+			title: "Regarding Create"
+			x: -3.5d
+			y: 9.0d
+			subtitle: "More information to read."
+			description: ["Due to simply how large create is, I have not included a lot of blocks and features due to there simply being too much. At each stage of the game explore what new blocks are available to you, and search REI with @create to get the whole catalogue of machinery and blocks to toy with. The contraption possibilities are endless, and are easily explained through the ponder system or youtube videos."]
+			dependencies: ["601A619C6E96920A"]
+			id: "4B8515241FFE23EE"
+			tasks: [{
+				id: "308E4D90A0B42E76"
+				type: "item"
+				item: "create:wrench"
+			}]
+			rewards: [{
+				id: "670CD303C0AFFA3F"
+				type: "xp"
+				auto: "enabled"
+				xp: 50
+			}]
+		}
+		{
+			title: "Continued..."
+			x: -4.0d
+			y: 8.0d
+			description: ["The progressions included in the quest book are ones most impactful to the pack progression or heavily modified areas gameplay-wise (tinkers x create compat focus)"]
+			dependencies: ["4B8515241FFE23EE"]
+			id: "71FAD740158C77E4"
+			tasks: [{
+				id: "1CD6226CE32E9F8F"
+				type: "item"
+				item: "create:goggles"
+			}]
+			rewards: [{
+				id: "385172A935FA6E5E"
+				type: "xp"
+				auto: "enabled"
+				xp: 50
+			}]
+		}
+		{
+			title: "The sturdiest of sturdy"
+			x: -2.0d
+			y: 1.0d
+			subtitle: "Armour maintenance doesn't exist."
+			description: ["Excellent all-around, yet will require enchanted books if you desire any kind of enchantments..."]
+			dependencies: ["0A5DC78719B9A244"]
+			id: "2B458E50ED7705ED"
+			tasks: [
+				{
+					id: "2FDFDEF6F83F8517"
+					type: "item"
+					item: {
+						id: "createastral:sturdy_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1D09A517B2063CDD"
+					type: "item"
+					item: {
+						id: "createastral:sturdy_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2C6C4EC8D0E9DB8C"
+					type: "item"
+					item: {
+						id: "createastral:sturdy_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4265EA690C4CBDB7"
+					type: "item"
+					item: {
+						id: "createastral:sturdy_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "17F4671881A115DF"
+				type: "item"
+				item: {
+					id: "mcdw:hammer_flail"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: 5.0d
+			description: ["Iron gear can be utilised the same as vanilla, with the exception of needing to process iron ingots to sheets before access."]
+			dependencies: ["4EB4838CCED125E2"]
+			id: "735D255FF23C8967"
+			tasks: [{
+				id: "063F105EAF2E1CD1"
+				type: "item"
+				item: {
+					id: "minecraft:iron_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: 6.0d
+			subtitle: "Ok, some of you like to use this thing."
+			description: ["You are only delaying the inevitable... that sweet automated power generation."]
+			hide_dependency_lines: true
+			id: "4AF3238551E346E1"
+			tasks: [{
+				id: "5AA7D9B4E863846A"
+				type: "item"
+				item: "create:hand_crank"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 4.5d
+			dependencies: ["515FDE185E1FB782"]
+			id: "1DEF161DE26F3587"
+			tasks: [{
+				id: "062D9D73045B04F3"
+				type: "item"
+				item: "create:millstone"
+			}]
+			rewards: [{
+				id: "20738A978098D996"
+				type: "item"
+				item: "minecraft:quartz"
+				count: 4
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.5d
+			dependencies: ["1DEF161DE26F3587"]
+			id: "6B85CBE54B33C91F"
+			tasks: [{
+				id: "77BFFF7831525CB0"
+				type: "item"
+				item: "minecraft:quartz"
+				count: 16L
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.5d
+			dependencies: ["1DEF161DE26F3587"]
+			id: "68108C8A6AC63A01"
+			tasks: [{
+				id: "20CDF6DD734135C3"
+				type: "item"
+				item: "create:powdered_obsidian"
+				count: 16L
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "Chapter 3 Unlock"
+			dependencies: ["550F91EE08A48F1D"]
+			id: "7354F2BFB2591ECF"
+			tasks: [{
+				id: "4F44B7121D6C4F8D"
+				type: "item"
+				item: "tconstruct:grout"
+				count: 16L
+			}]
+		}
+		{
+			x: -1.5d
+			y: 8.0d
+			dependencies: ["6ABB448DA7C278A5"]
+			id: "76704C59FAFCD2E7"
+			tasks: [{
+				id: "11F5577E4AC6319A"
+				type: "item"
+				item: "createastral:andesite_compound"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.0d
+			id: "3E60BDCB04CF78DD"
+			tasks: [{
+				id: "5C39DB31451CF702"
+				type: "item"
+				item: "minecraft:red_sand"
+			}]
+			rewards: [
+				{
+					id: "5ED6D06A47A79D99"
+					type: "item"
+					item: "minecraft:gold_nugget"
+				}
+				{
+					id: "0EC722964D22DE4B"
+					type: "item"
+					item: "techreborn:tin_nugget"
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 1.0d
+			id: "6B6CD25C2769C9CC"
+			tasks: [{
+				id: "4410929B2BB731A5"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
+			rewards: [
+				{
+					id: "52AD83FD12B807AB"
+					type: "item"
+					item: "minecraft:iron_nugget"
+				}
+				{
+					id: "04D303E3CCB2862E"
+					type: "item"
+					item: "minecraft:flint"
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 1.0d
+			id: "4991E01B29D62DF8"
+			tasks: [{
+				id: "3DD7A375F09E4212"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+			rewards: [{
+				id: "5A84CE0477FEC3ED"
+				type: "item"
+				item: "minecraft:clay_ball"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 4.5d
+			dependencies: ["1DEF161DE26F3587"]
+			id: "392516C890B749C8"
+			tasks: [{
+				id: "4338CFB76306088F"
+				type: "item"
+				item: "extractinator:extractinator"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 4.5d
+			dependencies: ["392516C890B749C8"]
+			id: "3DBD012732199053"
+			tasks: [{
+				id: "4CAB1128165A4732"
+				type: "item"
+				item: "minecraft:sand"
+				count: 256L
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.5d
+			dependencies: ["545BF28E82A07D19"]
+			id: "3340110F97036535"
+			tasks: [
+				{
+					id: "01D8AA9918BA3576"
+					type: "item"
+					item: "techreborn:sap"
+				}
+				{
+					id: "23AC0328FA6518CD"
+					type: "item"
+					item: {
+						id: "techreborn:treetap"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: 2.5d
+			dependencies: ["3340110F97036535"]
+			id: "550F91EE08A48F1D"
+			tasks: [{
+				id: "5AA4A66955AAD20D"
+				type: "item"
+				item: "techreborn:rubber"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.5d
+			dependencies: ["550F91EE08A48F1D"]
+			id: "2E2B5B3581E73687"
+			tasks: [{
+				id: "44D7D8E1325363AC"
+				type: "item"
+				item: "create:belt_connector"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 2.5d
+			dependencies: ["550F91EE08A48F1D"]
+			id: "6B08C3E85CEE833D"
+			tasks: [{
+				id: "62B392E2438E7950"
+				type: "item"
+				item: "create:brass_hand"
+			}]
+		}
+	]
+}

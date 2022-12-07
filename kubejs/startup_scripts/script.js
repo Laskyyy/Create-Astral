@@ -92,42 +92,32 @@ onEvent('block.modification', event => {
     block.hasCollision = true
 	block.explosionResistance = 99999
   })
-  event.modify('indrev:tungsten_ore', block => {
+  event.modify('techreborn:tungsten_ore', block => {
     block.destroySpeed = 6
     block.hasCollision = true
 	block.explosionResistance = 99999
   })
-  event.modify('indrev:deepslate_tungsten_ore', block => {
+  event.modify('techreborn:deepslate_tungsten_ore', block => {
     block.destroySpeed = 7
     block.hasCollision = true
 	block.explosionResistance = 99999
   })
-  event.modify('indrev:nikolite_ore', block => {
+  event.modify('techreborn:silver_ore', block => {
     block.destroySpeed = 6
     block.hasCollision = true
 	block.explosionResistance = 99999
   })
-  event.modify('indrev:deepslate_nikolite_ore', block => {
+  event.modify('techreborn:deepslate_silver_ore', block => {
     block.destroySpeed = 7
     block.hasCollision = true
 	block.explosionResistance = 99999
   })
-  event.modify('indrev:silver_ore', block => {
+  event.modify('techreborn:lead_ore', block => {
     block.destroySpeed = 6
     block.hasCollision = true
 	block.explosionResistance = 99999
   })
-  event.modify('indrev:deepslate_silver_ore', block => {
-    block.destroySpeed = 7
-    block.hasCollision = true
-	block.explosionResistance = 99999
-  })
-  event.modify('indrev:lead_ore', block => {
-    block.destroySpeed = 6
-    block.hasCollision = true
-	block.explosionResistance = 99999
-  })
-  event.modify('indrev:deepslate_lead_ore', block => {
+  event.modify('techreborn:deepslate_lead_ore', block => {
     block.destroySpeed = 7
     block.hasCollision = true
 	block.explosionResistance = 99999
@@ -139,6 +129,12 @@ onEvent('block.registry', event => {
   	   .material('lantern')
        .hardness(9)
        .displayName('Sturdy Sheet Block')
+       .tagBlock('minecraft:mineable/pickaxe') 
+
+       event.create('createastral:shimmering_stone')
+  	   .material('stone')
+       .hardness(20)
+       .displayName('Shimmering Stone')
        .tagBlock('minecraft:mineable/pickaxe') 
 	   
 	   event.create('createastral:copper_plating')
@@ -244,7 +240,7 @@ onEvent('item.registry.armor_tiers', event => {
   })
   event.add('sturdyarmor', tier => {
     tier.durabilityMultiplier = 300 // Each slot will be multiplied with [13, 15, 16, 11]
-    tier.slotProtections = [3, 4, 4, 3]
+    tier.slotProtections = [4, 6, 5, 4]
     tier.enchantmentValue = 0
     tier.equipSound = 'minecraft:item.armor.equip_iron'
     tier.repairIngredient = '#c:steel_ingots'
@@ -265,6 +261,7 @@ onEvent('item.registry.armor_tiers', event => {
 onEvent('item.registry', event => {
 	// Register new items here
 	
+event.create('createastral:astral_conduit'),
 event.create('createastral:andesite_compound'),
 event.create('createastral:bronze_sheet'),
 event.create('create:lapis_sheet'),
@@ -959,16 +956,6 @@ onEvent('item.tooltip', e => {
       
     }
   })
-  e.addAdvanced('snailmail:snail_box', (item, advanced, text) => {
-    if (!e.isShift()) {
-      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-    }
-    if (e.isShift()) {
-      
-      text.add(1, [Text.of('Place to allow other players to send you mail from anywhere in the world! Can opt show or hide the snailbox location.').gold(),])
-      
-    }
-  })
   e.addAdvanced('computercraft:disk', (item, advanced, text) => {
     if (!e.isShift()) {
       text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
@@ -989,58 +976,140 @@ onEvent('worldgen.add', event => {
 				category: "river"
 			}
 		}]
-		ore.addTarget('minecraft:stone', 'indrev:tin_ore')
+		ore.addTarget('minecraft:stone', 'techreborn:tin_ore')
 
 		ore.count([10, 40])
 			.squared()
 			.triangleHeight(0, 200)
 	})
-
+  
   event.addOre((ore) => {
-		ore.id = "kubejs:silver_ore" // optional
+		ore.id = "kubejs:glowstonemoon" // optional
 		ore.biomes = [{
 			not: {
 				category: "river"
 			}
 		}]
-		ore.addTarget('#ad_astra:moon_ore_replaceables', 'indrev:deepslate_silver_ore')
+		ore.addTarget('#ad_astra:moon_ore_replaceables', 'minecraft:glowstone')
 
 		ore.count([10, 40])
 			.squared()
-			.triangleHeight(-64, 200)
+			.triangleHeight(0, 85)
+	})
+
+  event.addOre((ore) => {
+		ore.id = "kubejs:rubyoremoon" // optional
+		ore.biomes = [{
+			not: {
+				category: "river"
+			}
+		}]
+		ore.addTarget('#ad_astra:moon_ore_replaceables', 'techreborn:deepslate_ruby_ore')
+
+		ore.count([10, 10])
+			.squared()
+			.triangleHeight(-64, 85)
+	})
+
+  event.addOre((ore) => {
+		ore.id = "kubejs:silveroremoon" // optional
+		ore.biomes = [{
+			not: {
+				category: "river"
+			}
+		}]
+		ore.addTarget('#ad_astra:moon_ore_replaceables', 'techreborn:deepslate_silver_ore')
+
+		ore.count([25, 40])
+			.squared()
+			.triangleHeight(-64, 85)
+	})
+
+  event.addOre((ore) => {
+		ore.id = "kubejs:leadoremars" // optional
+		ore.biomes = [{
+			not: {
+				category: "river"
+			}
+		}]
+		ore.addTarget('#ad_astra:mars_ore_replaceables', 'techreborn:deepslate_lead_ore')
+
+		ore.count([10, 40])
+			.squared()
+			.triangleHeight(0, 100)
+	})
+
+  event.addOre((ore) => {
+		ore.id = "kubejs:galenaoremars" // optional
+		ore.biomes = [{
+			not: {
+				category: "river"
+			}
+		}]
+		ore.addTarget('#ad_astra:mars_ore_replaceables', 'techreborn:deepslate_galena_ore')
+
+		ore.count([10, 40])
+			.squared()
+			.triangleHeight(-64, 0)
+	})
+
+  event.addOre((ore) => {
+		ore.id = "kubejs:sodaliteoremars" // optional
+		ore.biomes = [{
+			not: {
+				category: "river"
+			}
+		}]
+		ore.addTarget('#ad_astra:mars_ore_replaceables', 'techreborn:deepslate_sodalite_ore')
+
+		ore.count([10, 20])
+			.squared()
+			.triangleHeight(-64, 64)
 	})
 
 
   event.addOre((ore) => {
-		ore.id = "kubejs:basalt_moon_iron" // optional
-		ore.biomes = "minecraft:basalt_deltas"
-		ore.addTarget('#ad_astra:moon_ore_replaceables', 'ad_astra:moon_iron_ore')
+		ore.id = "kubejs:iridiumoremerc" // optional
+		ore.biomes = [{
+			not: {
+				category: "river"
+			}
+		}]
+		ore.addTarget('#ad_astra:mercury_ore_replaceables', 'techreborn:deepslate_iridium_ore')
 
-		ore.count([10, 40])
+		ore.count([25, 40])
 			.squared()
-			.triangleHeight(-64, 200)
-    ore.size = 18
+			.triangleHeight(-64, 85)
+	})
+
+  event.addOre((ore) => {
+		ore.id = "kubejs:silveroremerc" // optional
+		ore.biomes = [{
+			not: {
+				category: "river"
+			}
+		}]
+		ore.addTarget('#ad_astra:mercury_ore_replaceables', 'techreborn:deepslate_silver_ore')
+
+		ore.count([25, 40])
+			.squared()
+			.triangleHeight(-64, 85)
+	})
+
+  event.addOre((ore) => {
+		ore.id = "kubejs:caloriteore" // optional
+		ore.biomes = [{
+			not: {
+				category: "river"
+			}
+		}]
+		ore.addTarget('#ad_astra:mercury_ore_replaceables', 'ad_astra:deepslate_calorite_ore')
+
+		ore.count([10, 20])
+			.squared()
+			.triangleHeight(-64, 85)
 	})
   
 
 })
   
-  
-let music_list = {
-  "sogcore": "Sogcore",
-}
-
-onEvent("sound_event.registry", event => {
-  Object.keys(music_list).forEach(value => {
-      event.create(`musictriggers:music.${value}`)
-  })
-})
-
-onEvent("item.registry", event => {
-  Object.keys(music_list).forEach((value, index) => {
-      event.create(value, "music_disc")
-          .song(`musictriggers:music.${value}`)
-          .analogOutput(index + 1)
-          .texture("createastral:item/orcane")
-  })
-})

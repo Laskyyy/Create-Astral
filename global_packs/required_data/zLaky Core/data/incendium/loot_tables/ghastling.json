@@ -1,0 +1,49 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ghast_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{incendium:{item:'ghastling_egg'},Enchantments:[{}],EntityTag:{id:\"minecraft:vex\",Tags:[\"in.baby_ghast\"],PersistenceRequired:1b,NoAI:1b,Silent:1,ArmorDropChances:[0.085F,0.085F,0.085F,0.000F],ArmorItems:[{},{},{},{id:\"minecraft:player_head\",Count:1b,tag:{SkullOwner:\"MHF_Ghast\"}}],HandItems:[{id:\"minecraft:air\"}],ActiveEffects:[{Id:14,Amplifier:0,Duration:2147483647,ShowParticles:0b}]}}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "translate": "Ghastling",
+                "color": "#ddafaf",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "translate": "Destroys ghast fireballs that it can see.",
+                  "color": "#bbbbbb",
+                  "italic": false
+                },
+                {
+                  "translate": "Loves to eat fire charges.",
+                  "color": "#b4b4b4",
+                  "italic": false
+                },
+                {
+                  "translate": "Loyal but lazy",
+                  "color": "#b4b4b4",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

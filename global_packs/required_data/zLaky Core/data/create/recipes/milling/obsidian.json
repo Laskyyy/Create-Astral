@@ -1,0 +1,1 @@
+{"type":"create:milling","ingredients":[{"item":"minecraft:obsidian"}],"results":[{"item":"create:powdered_obsidian","count":1},{"item":"minecraft:obsidian","chance":0.25}],"processingTime":400}

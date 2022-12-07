@@ -1,0 +1,6 @@
+{
+  "patches": {
+    "applyPatches [default: true]": true,
+    "repairBiomesOnLoad [default: true]": true
+  }
+}

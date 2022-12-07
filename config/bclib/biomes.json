@@ -1,0 +1,89 @@
+{
+  "force_include": {
+    "end_land_biomes": [],
+    "end_void_biomes": [],
+    "nether_biomes": []
+  },
+  "edenring": {
+    "stone_garden": {
+      "generation_chance [default: 1.0]": 1.0,
+      "fog_density [default: 1.0]": 1.0,
+      "vertical [default: false]": false,
+      "terrain_height [default: 0.1]": 0.1
+    },
+    "golden_forest": {
+      "generation_chance [default: 1.0]": 1.0,
+      "fog_density [default: 1.0]": 1.0,
+      "vertical [default: false]": false,
+      "terrain_height [default: 0.1]": 0.1
+    },
+    "mycotic_forest": {
+      "generation_chance [default: 1.0]": 1.0,
+      "fog_density [default: 1.0]": 1.0,
+      "vertical [default: false]": false,
+      "terrain_height [default: 0.1]": 0.1
+    },
+    "pulse_forest": {
+      "generation_chance [default: 1.0]": 1.0,
+      "fog_density [default: 1.0]": 1.0,
+      "vertical [default: false]": false,
+      "terrain_height [default: 0.1]": 0.1
+    },
+    "brainstorm": {
+      "generation_chance [default: 1.0]": 1.0,
+      "fog_density [default: 2.0]": 2.0,
+      "vertical [default: false]": false,
+      "terrain_height [default: 0.1]": 0.1
+    },
+    "lakeside_desert": {
+      "generation_chance [default: 1.0]": 1.0,
+      "fog_density [default: 1.75]": 1.75,
+      "vertical [default: false]": false,
+      "terrain_height [default: 0.1]": 0.1
+    },
+    "wind_valley": {
+      "generation_chance [default: 1.0]": 1.0,
+      "fog_density [default: 1.0]": 1.0,
+      "vertical [default: false]": false,
+      "terrain_height [default: 0.1]": 0.1
+    },
+    "air_ocean": {
+      "generation_chance [default: 1.0]": 1.0,
+      "fog_density [default: 1.0]": 1.0,
+      "vertical [default: false]": false,
+      "terrain_height [default: 0.1]": 0.1
+    },
+    "sky_colony": {
+      "generation_chance [default: 1.0]": 1.0,
+      "fog_density [default: 1.0]": 1.0,
+      "vertical [default: false]": false,
+      "terrain_height [default: 0.1]": 0.1
+    },
+    "empty_cave": {
+      "generation_chance [default: 1.0]": 1.0,
+      "fog_density [default: 1.0]": 1.0,
+      "vertical [default: false]": false,
+      "terrain_height [default: 0.1]": 0.1
+    },
+    "eroded_cave": {
+      "generation_chance [default: 1.0]": 1.0,
+      "fog_density [default: 1.0]": 1.0,
+      "vertical [default: false]": false,
+      "terrain_height [default: 0.1]": 0.1
+    },
+    "old_mycotic_forest": {
+      "generation_chance [default: 0.5]": 0.5,
+      "fog_density [default: 1.0]": 1.0,
+      "vertical [default: false]": false,
+      "terrain_height [default: 0.1]": 0.1
+    }
+  },
+  "minecraft": {
+    "end_midlands": {
+      "generation_chance [default: 0.5]": 0.5
+    },
+    "end_highlands": {
+      "generation_chance [default: 0.5]": 0.5
+    }
+  }
+}

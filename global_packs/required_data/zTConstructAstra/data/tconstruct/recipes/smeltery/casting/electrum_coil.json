@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_basin",
+  "cast": {
+    "item": "createastral:copper_heating_coil"
+  },
+  "cast_consumed": true,
+  "fluid": {
+    "name": "tconstruct:molten_electrum",
+    "amount": 18000
+  },
+  "result": "createastral:electrum_heating_coil",
+  "cooling_time": 200
+}

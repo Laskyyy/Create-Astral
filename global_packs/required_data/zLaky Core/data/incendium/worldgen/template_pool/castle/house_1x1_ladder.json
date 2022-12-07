@@ -1,0 +1,60 @@
+{
+  "name": "incendium:generic",
+  "fallback": "incendium:castle/roof_1x1_ladder",
+  "elements": [
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:castle/roof_1x1_4",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:castle/roof_1x1_8",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "incendium:castle/rooms/1x1/pigstep",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "incendium:castle/rooms/1x1/brewing",
+        "processors": "incendium:castle/armory",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "incendium:castle/rooms/1x1/brewing_w",
+        "processors": "incendium:castle/armory",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "incendium:castle/rooms/1x1/pig_ben",
+        "processors": "incendium:castle/clock",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

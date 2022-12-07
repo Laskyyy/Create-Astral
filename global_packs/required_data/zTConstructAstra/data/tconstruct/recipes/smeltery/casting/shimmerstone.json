@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_basin",
+  "cast": {
+    "item": "ad_astra:moon_stone"
+  },
+  "cast_consumed": true,
+  "fluid": {
+    "name": "kubejs:shimmer",
+    "amount": 81000
+  },
+  "result": "createastral:shimmering_stone",
+  "cooling_time": 1000
+}

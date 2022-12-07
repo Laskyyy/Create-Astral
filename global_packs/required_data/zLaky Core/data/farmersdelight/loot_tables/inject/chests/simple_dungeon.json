@@ -1,6 +1,32 @@
 {
   "pools": [
     {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "farmersdelight:cooking_pot"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "min": 0.15,
+                "max": 0.8
+              }
+            }
+          ],
+          "name": "farmersdelight:skillet"
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 6
+        }
+      ]
+    },
+    {
       "rolls": {
         "min": 1.0,
         "max": 4.0,
@@ -19,7 +45,7 @@
               }
             }
           ],
-          "name": "farmersdelight:tomato_seeds"
+          "name": "ad_astra:moon_stone"
         },
         {
           "type": "minecraft:item",
@@ -33,7 +59,21 @@
               }
             }
           ],
-          "name": "farmersdelight:cabbage_seeds"
+          "name": "ad_astra:moon_stone"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2.0,
+                "max": 4.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "farmersdelight:rice"
         },
         {
           "type": "minecraft:empty",
@@ -61,6 +101,21 @@
         {
           "type": "minecraft:empty",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2.0,
+                "max": 4.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "createastral:andesite_compound"
         }
       ]
     }

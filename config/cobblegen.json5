@@ -100,5 +100,23 @@
         }
       ]
     }
+    "moonGen": {
+      "ad_astra:moon_stone": [
+        {
+          "id": "ad_astra:moon_stone",
+          "weight": 100.0,
+          "dimensions": [
+            "ad_astra:moon"
+          ]
+        },
+        {
+          "id": "ad_astra:moon_stone",
+          "weight": 100.0,
+          "excludedDimensions": [
+            "minecraft:the_end"
+          ]
+        }
+      ]
+    }
   }
 }

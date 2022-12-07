@@ -1,0 +1,1075 @@
+{
+	id: "1A12E870F117B0D1"
+	group: ""
+	order_index: 3
+	filename: "chapter_4"
+	title: "Chapter 4"
+	icon: {
+		id: "ftbquests:custom_icon"
+		Count: 1b
+		tag: {
+			Icon: "createastral:textures/item/questmoon.png"
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: -13.0d
+		y: 0.5d
+		width: 3.0d
+		height: 3.0d
+		rotation: 0.0d
+		image: "ad_astra:textures/painting/moon.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			x: -17.0d
+			y: 3.0d
+			subtitle: "Tier 2 Tinkering materials and alloys!"
+			dependencies: ["6027602617EC9F1F"]
+			id: "51BD31261A5725E3"
+			tasks: [{
+				id: "0D02301437FE6A13"
+				type: "item"
+				item: "create:blaze_burner"
+			}]
+		}
+		{
+			x: -15.5d
+			y: 3.0d
+			shape: "circle"
+			subtitle: "Form an ingot of brass."
+			description: ["Brass production into OVERDRIVE, from here on out it might be a good investment to get yourself a quarry or tunnel bore to allow efficient gathering of large amounts of ore (especially if you tail them with a fortune 3 pickaxe)"]
+			dependencies: ["51BD31261A5725E3"]
+			id: "705C815541DB89F8"
+			tasks: [{
+				id: "4F445E77DE25C93E"
+				type: "advancement"
+				advancement: "create:brass"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "08DE0E85F643FAEA"
+				type: "item"
+				item: "farmersdelight:shepherds_pie"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 3.0d
+			description: ["So many new recipes..."]
+			dependencies: [
+				"21DBCD51CC35B794"
+				"22B29B232EF2638F"
+			]
+			id: "3EA569DE4AC60CC2"
+			tasks: [{
+				id: "49D02CD04B8DB0A7"
+				type: "advancement"
+				advancement: "create:mechanical_crafter"
+				criterion: ""
+			}]
+		}
+		{
+			x: -13.5d
+			y: 3.5d
+			subtitle: "A common crafting component."
+			description: ["From this point, the most efficient way of producing cogwheels is going to be directly pouring them with a brass filled spout. Consider automating brass casing and cogwheels this way, as these are going to be needed in bulk!"]
+			dependencies: ["705C815541DB89F8"]
+			id: "21DBCD51CC35B794"
+			tasks: [
+				{
+					id: "586A0D69F87BEB98"
+					type: "advancement"
+					advancement: "create:precision_mechanism"
+					criterion: ""
+				}
+				{
+					id: "6CD840BFC30ED0B4"
+					type: "item"
+					item: "create:precision_mechanism"
+					count: 5L
+				}
+			]
+			rewards: [{
+				id: "1A841E22B421B286"
+				type: "item"
+				item: "create:large_cogwheel"
+				count: 5
+			}]
+		}
+		{
+			x: -10.0d
+			y: -6.5d
+			description: ["it's a precision mechanism but more expensive! How creative!"]
+			id: "5E688FD0A3A294AC"
+			tasks: [{
+				id: "025EE4A4C74CC7F2"
+				type: "item"
+				item: "createastral:production_mechanism"
+			}]
+			rewards: [{
+				id: "69B2529D69BD9617"
+				type: "item"
+				item: "create:encased_chain_drive"
+				count: 32
+			}]
+		}
+		{
+			x: -7.0d
+			y: -6.5d
+			description: ["hot hot hot HOT HOT"]
+			id: "3DC33841A6CACA80"
+			tasks: [{
+				id: "660C0CB0CC361991"
+				type: "item"
+				item: "createastral:blazing_mechanism"
+			}]
+			rewards: [{
+				id: "0D118ADDCE5CBDFC"
+				type: "item"
+				item: "farmersdelight:nether_salad"
+				count: 10
+			}]
+		}
+		{
+			x: -14.0d
+			y: -6.5d
+			description: ["These will become relevant later on when you can process cobalt, as these will be needed for various space travel blocks."]
+			id: "3B27080E8533EE67"
+			tasks: [{
+				id: "629F0F60E748829A"
+				type: "item"
+				item: "createastral:navigation_mechanism"
+			}]
+			rewards: [{
+				id: "58CD5C78B3509E8E"
+				type: "item"
+				item: "phonos:redstone_chip"
+				count: 5
+			}]
+		}
+		{
+			x: -11.0d
+			y: 2.0d
+			subtitle: "CRUSH"
+			description: ["Beginning to crush ores into it's components before smelting can present you with experience crystals, which can be used as portable xp storage. (These will be required later down the line...)"]
+			dependencies: ["3EA569DE4AC60CC2"]
+			id: "429D2340C2B20A60"
+			tasks: [{
+				id: "1301133C5F159842"
+				type: "item"
+				item: "create:crushing_wheel"
+			}]
+			rewards: [
+				{
+					id: "22FB9564D8489F57"
+					type: "item"
+					item: "create:crushed_iron_ore"
+					count: 5
+				}
+				{
+					id: "2C3A9DF5C7850621"
+					type: "item"
+					item: "create:crushed_gold_ore"
+					count: 5
+				}
+				{
+					id: "35AEE17AA1541902"
+					type: "item"
+					item: "create:crushed_copper_ore"
+					count: 5
+				}
+				{
+					id: "0BE9FB2ACC5AE776"
+					type: "item"
+					item: "create:crushed_zinc_ore"
+					count: 5
+				}
+			]
+		}
+		{
+			title: "It's like copper but cooler"
+			x: -15.5d
+			y: 4.0d
+			subtitle: "and highly enchantable!"
+			description: ["Brass also includes a small jump bonus due to it's light weight. Effectively a direct upgrade to iron for those who haven't got the diamonds for expensive drip."]
+			id: "156E58E3BD65E3A0"
+			tasks: [
+				{
+					id: "6585A2231EB47FE1"
+					type: "item"
+					item: {
+						id: "createastral:brass_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "53825A6AD93FEE1A"
+					type: "item"
+					item: {
+						id: "createastral:brass_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3FE3730E122E3D15"
+					type: "item"
+					item: {
+						id: "createastral:brass_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7E882572E80D273E"
+					type: "item"
+					item: {
+						id: "createastral:brass_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "02CA4F4215074213"
+					type: "item"
+					item: "create:experience_nugget"
+					count: 15
+				}
+				{
+					id: "54F50034AEFBC8F4"
+					type: "item"
+					item: {
+						id: "mcdw:spear_cackling_broom"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "minecraft:textures/item/diamond_chestplate.png"
+				}
+			}
+			x: -9.0d
+			y: -6.5d
+			subtitle: "This is new..."
+			description: ["Gosh diamond armour is so expensive now, I wonder why... (haste I)"]
+			id: "642F6B99B9F339C5"
+			tasks: [{
+				id: "3A075953119FAF1F"
+				type: "advancement"
+				advancement: "blazeandcave:mining/diamond_clad"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "31831735CE3FB9F5"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:long_swiftness"
+						}
+					}
+				}
+				{
+					id: "7A81949CA9333677"
+					type: "item"
+					item: {
+						id: "mcdw:sword_diamond_sword_var"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -9.5d
+			y: 2.5d
+			subtitle: "Probably shouldn't launch that rocket from some grass."
+			hide_dependency_lines: false
+			dependencies: ["3EA569DE4AC60CC2"]
+			id: "44D51F142E9E8902"
+			tasks: [{
+				id: "734050A549967E71"
+				type: "item"
+				item: "ad_astra:launch_pad"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -6.5d
+			description: [
+				"From this point on it might be wise to look into steam powering your setup."
+				"Aim for a level 9 boiler as these are incredibly efficient for their cost, the moment electricity generation enters the room those stress units will be eaten up in no time."
+			]
+			id: "186E8426BD7CE343"
+			tasks: [{
+				id: "694CB5C081138DAE"
+				type: "advancement"
+				advancement: "create:steam_engine"
+				criterion: ""
+			}]
+		}
+		{
+			x: -9.0d
+			y: -7.5d
+			subtitle: "What's that, free fire resistance set bonus???"
+			id: "760D59395A2E71F6"
+			tasks: [{
+				id: "5CB1D31745A36C86"
+				type: "advancement"
+				advancement: "minecraft:nether/netherite_armor"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "62088943E2152E34"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:long_fire_resistance"
+					}
+				}
+			}]
+		}
+		{
+			x: -12.0d
+			y: 4.0d
+			subtitle: "It's brass now."
+			description: ["A basic computer but like, better?"]
+			dependencies: ["3EA569DE4AC60CC2"]
+			id: "1142742E67E7F493"
+			tasks: [{
+				id: "34E2A2F81176C47A"
+				type: "item"
+				item: "computercraft:computer_advanced"
+			}]
+			rewards: [{
+				id: "5D20F0622359EE77"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 15
+			}]
+		}
+		{
+			x: -12.0d
+			y: 5.0d
+			subtitle: "Stop playing bad apple on boot, PLEASE"
+			description: ["\"no\""]
+			dependencies: ["1142742E67E7F493"]
+			id: "75E964418F7E94F0"
+			tasks: [{
+				id: "581714BC88B65CFE"
+				type: "item"
+				item: "computercraft:monitor_advanced"
+			}]
+			rewards: [{
+				id: "606EB535C24A2BF2"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 5
+			}]
+		}
+		{
+			x: -12.0d
+			y: 6.0d
+			dependencies: ["75E964418F7E94F0"]
+			id: "02AE40C72FE1744E"
+			tasks: [{
+				id: "1BDADD385B8DE7B9"
+				type: "item"
+				item: "computercraft:turtle_advanced"
+			}]
+			rewards: [{
+				id: "3D015AE415FE2FDA"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 5
+			}]
+		}
+		{
+			x: -11.0d
+			y: 5.0d
+			shape: "heart"
+			subtitle: "They say happiness is a warm gun."
+			description: ["Rifles are exceptionally powerful in conjunction with potion arrows. Might be a neat investment, mm?"]
+			hide_dependency_lines: true
+			dependencies: ["3EA569DE4AC60CC2"]
+			hide: false
+			id: "5175CCC25B53E288"
+			tasks: [{
+				id: "573CC2D0A646E934"
+				type: "item"
+				item: {
+					id: "minecraft:crossbow"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "18E604508CF969CC"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:quick_charge"
+							lvl: 2s
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: -13.0d
+			y: -6.5d
+			subtitle: "Roll iron into rods, allowing the creation of more storage features, and industrial decoration."
+			hide_dependency_lines: true
+			id: "4D1110519363CD89"
+			tasks: [{
+				id: "04B48EB175AED1B7"
+				type: "item"
+				item: "createaddition:rolling_mill"
+			}]
+		}
+		{
+			x: -11.0d
+			y: 4.0d
+			shape: "gear"
+			subtitle: "It's free inventory space."
+			description: ["6 extra inventory slots sounds like a slick deal to me."]
+			dependencies: ["3EA569DE4AC60CC2"]
+			id: "73026295911CCE90"
+			tasks: [{
+				id: "0FE7ACA48FD9D29A"
+				type: "item"
+				item: {
+					id: "scout:upgraded_pouch"
+					Count: 1b
+					tag: {
+						Items: [
+							{
+								Slot: 0
+								Stack: {
+									id: "minecraft:air"
+									Count: 1b
+								}
+							}
+							{
+								Slot: 1
+								Stack: {
+									id: "minecraft:air"
+									Count: 1b
+								}
+							}
+							{
+								Slot: 2
+								Stack: {
+									id: "minecraft:air"
+									Count: 1b
+								}
+							}
+							{
+								Slot: 3
+								Stack: {
+									id: "minecraft:air"
+									Count: 1b
+								}
+							}
+							{
+								Slot: 4
+								Stack: {
+									id: "minecraft:air"
+									Count: 1b
+								}
+							}
+							{
+								Slot: 5
+								Stack: {
+									id: "minecraft:air"
+									Count: 1b
+								}
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: -12.0d
+			y: -6.5d
+			shape: "gear"
+			description: ["The smelter now exists to make bulk smelting much easier. You only get a 1.1x raw ore multiplier, with the trade-off of extreme ease of smelting in bulk without the infrastructure."]
+			id: "0A9BAB1BB59B4C7F"
+			tasks: [{
+				id: "1DD577BC9CBE1101"
+				type: "item"
+				item: "tconstruct:smeltery_controller"
+			}]
+			rewards: [{
+				id: "72645C7657845CEE"
+				type: "item"
+				item: "tconstruct:seared_bricks"
+				count: 16
+			}]
+		}
+		{
+			x: -11.0d
+			y: -6.5d
+			subtitle: "Crush for assorted goodies."
+			description: ["Rather than being dead-weight, deepslate can be crushed into random ores at extremely low odds, that tunnel bore filled with 100k deepslate now has a use..."]
+			id: "014B450CC8D472A4"
+			tasks: [{
+				id: "6DF91EC85EA51BE5"
+				type: "item"
+				item: "minecraft:cobbled_deepslate"
+				count: 2000L
+			}]
+			rewards: [
+				{
+					id: "5B0EF06B40399E55"
+					type: "item"
+					item: {
+						id: "mcdw:hammer_mace"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5D03038864FD11C2"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								id: "mcdw:gravity"
+								lvl: 3s
+							}]
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -17.5d
+			y: -6.0d
+			subtitle: "Rockets need FUEL"
+			description: [
+				""
+				"Ensure you have crafted enough buckets for the return trip! This is a mistake you only make once."
+			]
+			id: "6CFD1B03F10B04AD"
+			tasks: [{
+				id: "6F042841FD515CED"
+				type: "item"
+				item: "ad_astra:fuel_bucket"
+			}]
+			rewards: [{
+				id: "105265BF76F2BF3E"
+				type: "item"
+				item: "create:railway_casing"
+				count: 15
+			}]
+		}
+		{
+			x: -18.5d
+			y: -5.0d
+			description: ["The most pure of organic material, tree fertiliser can serve as the base of the initial fuel production. You will obtain easier methods later, but this is what you have to deal with now."]
+			hide_dependency_lines: true
+			min_required_tasks: 1
+			id: "59C1BBC3C57A277A"
+			tasks: [
+				{
+					id: "4517FCB4B211BE97"
+					type: "item"
+					item: "create:tree_fertilizer"
+				}
+				{
+					id: "0070A6A36C2EEE35"
+					type: "item"
+					item: "indrev:biomass"
+				}
+			]
+		}
+		{
+			x: -16.5d
+			y: -5.0d
+			description: ["A primary component in the basic fuel recipe."]
+			hide_dependency_lines: true
+			id: "67862FE789FEC93C"
+			tasks: [{
+				id: "5253B40F1B304FDC"
+				type: "item"
+				item: "createaddition:seed_oil_bucket"
+			}]
+		}
+		{
+			x: -17.5d
+			y: -5.0d
+			description: ["The main component of fuel, more efficient recipes will be revealed once steel can be produced."]
+			hide_dependency_lines: true
+			id: "65CBD16E989F60EE"
+			tasks: [{
+				id: "73D4479E5E0913B9"
+				type: "item"
+				item: "ad_astra:oil_bucket"
+			}]
+		}
+		{
+			x: -18.5d
+			y: -6.0d
+			subtitle: "Crush some fertiliser into submission."
+			description: ["This will take a while you little masochist."]
+			id: "1533B14714529386"
+			tasks: [{
+				id: "6C67D64488400F03"
+				type: "item"
+				item: "createastral:pure_biomatter"
+			}]
+			rewards: [{
+				id: "405706BF3F2C038F"
+				type: "item"
+				item: "farmersdelight:organic_compost"
+				count: 15
+			}]
+		}
+		{
+			icon: "ad_astra:moon_globe"
+			x: -19.487755102040808d
+			y: 0.2551020408163325d
+			id: "306D009F01634115"
+			tasks: [{
+				id: "3D1C9C82DFB06842"
+				type: "dimension"
+				icon: "ad_astra:moon_globe"
+				dimension: "ad_astra:moon"
+			}]
+		}
+		{
+			x: -18.5d
+			y: -1.5d
+			dependencies: ["306D009F01634115"]
+			id: "1DFF76A494C9A586"
+			tasks: [{
+				id: "1745C912A6341265"
+				type: "item"
+				item: "techreborn:deepslate_silver_ore"
+			}]
+		}
+		{
+			x: -20.776190476190486d
+			y: 0.2646258503401171d
+			dependencies: ["306D009F01634115"]
+			id: "7909A5A0E194C800"
+			tasks: [{
+				id: "139C176741ED776B"
+				type: "item"
+				item: "ad_astra:moon_sand"
+			}]
+			rewards: [{
+				id: "1A7D716BFFA40438"
+				type: "item"
+				item: "indrev:silver_nugget"
+			}]
+		}
+		{
+			x: -13.5d
+			y: 2.5d
+			dependencies: ["705C815541DB89F8"]
+			id: "22B29B232EF2638F"
+			tasks: [{
+				id: "0CB617B942B4D296"
+				type: "item"
+				item: "create:brass_casing"
+			}]
+		}
+		{
+			x: -18.5d
+			y: 2.0d
+			dependencies: ["306D009F01634115"]
+			id: "6027602617EC9F1F"
+			tasks: [{
+				id: "369624A3BE4061DF"
+				type: "structure"
+				structure: "incendium:pipeline"
+			}]
+		}
+		{
+			x: -17.0d
+			y: -2.5d
+			dependencies: ["1DFF76A494C9A586"]
+			id: "1A08EE7C76242947"
+			tasks: [{
+				id: "325D01D8E55F1EAE"
+				type: "item"
+				item: "techreborn:silver_plate"
+			}]
+		}
+		{
+			x: -16.5d
+			y: -1.5d
+			dependencies: ["1A08EE7C76242947"]
+			id: "595839F1E1013C84"
+			tasks: [{
+				id: "2028FFC7334CB32F"
+				type: "item"
+				item: "techreborn:electronic_circuit"
+			}]
+		}
+		{
+			x: -15.5d
+			y: -1.5d
+			dependencies: ["595839F1E1013C84"]
+			id: "73973C5E6D2573B8"
+			tasks: [{
+				id: "05C23BCCCFD166F1"
+				type: "item"
+				item: "create:integrated_circuit"
+			}]
+		}
+		{
+			x: -16.5d
+			y: -3.5d
+			dependencies: ["1A08EE7C76242947"]
+			id: "2E7D02CA77627EF5"
+			tasks: [{
+				id: "157F079AAECD588C"
+				type: "item"
+				item: "techreborn:basic_machine_frame"
+			}]
+		}
+		{
+			x: -15.5d
+			y: -3.5d
+			dependencies: ["2E7D02CA77627EF5"]
+			id: "19CCFE1A90B73F44"
+			tasks: [{
+				id: "5D4E64E2939D6A58"
+				type: "item"
+				item: "techreborn:red_cell_battery"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -1.5d
+			dependencies: ["61878C8DC870AC6A"]
+			id: "52EC8406E928BDB3"
+			tasks: [{
+				id: "7B8CE51F9D9A0633"
+				type: "item"
+				item: "techreborn:wire_mill"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -1.5d
+			dependencies: ["752215E611021472"]
+			id: "61878C8DC870AC6A"
+			tasks: [{
+				id: "254AAF5B99A444A3"
+				type: "item"
+				item: "techreborn:extractor"
+			}]
+		}
+		{
+			x: -14.5d
+			y: -1.5d
+			dependencies: ["752215E611021472"]
+			id: "4CAF04D992D9EB6B"
+			tasks: [{
+				id: "5C65E4603F6A01A6"
+				type: "item"
+				item: "techreborn:grinder"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -2.5d
+			dependencies: ["752215E611021472"]
+			id: "07B10625859F1AF9"
+			tasks: [{
+				id: "22E87A1C837C13D8"
+				type: "item"
+				item: "techreborn:compressor"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -2.5d
+			dependencies: ["07B10625859F1AF9"]
+			id: "5406D5779F7B697A"
+			tasks: [
+				{
+					id: "5A3310D1E25EC423"
+					type: "item"
+					item: "techreborn:solid_canning_machine"
+				}
+				{
+					id: "55094469CC992B8F"
+					type: "item"
+					item: "techreborn:cell"
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: -2.5d
+			dependencies: ["5406D5779F7B697A"]
+			id: "57724BFDF0A78FAF"
+			tasks: [{
+				id: "6FDEEB9ACA45AA73"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "techreborn:biofuel"
+					}
+				}
+			}]
+		}
+		{
+			x: -15.0d
+			y: -2.5d
+			dependencies: [
+				"73973C5E6D2573B8"
+				"19CCFE1A90B73F44"
+			]
+			min_required_tasks: 1
+			id: "5459F646B9A392C4"
+			tasks: [
+				{
+					id: "29034D96D8AAF58D"
+					type: "item"
+					item: "createaddition:alternator"
+				}
+				{
+					id: "77140CAF59797097"
+					type: "item"
+					item: "createaddition:electric_motor"
+				}
+			]
+		}
+		{
+			x: -14.0d
+			y: -2.5d
+			dependencies: ["5459F646B9A392C4"]
+			id: "752215E611021472"
+			tasks: [
+				{
+					id: "7EE6369103C1E25B"
+					type: "item"
+					item: "createaddition:connector"
+				}
+				{
+					id: "1CFFDA15E6B5E8DF"
+					type: "item"
+					item: "techreborn:insulated_copper_cable"
+				}
+				{
+					id: "2C15FF4A593E1B6C"
+					type: "item"
+					item: "createaddition:copper_spool"
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 0.0d
+			shape: "gear"
+			dependencies: [
+				"28980EA356A2F0BF"
+				"1BF9656E9FBB2364"
+			]
+			id: "6E20B194F5CA8F22"
+			tasks: [{
+				id: "5125BCD5170B4867"
+				type: "item"
+				item: {
+					id: "ad_astra:tier_2_rocket"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -7.0d
+			y: 0.5d
+			dependencies: [
+				"44D51F142E9E8902"
+				"75CE520F392CC1E1"
+			]
+			id: "1BF9656E9FBB2364"
+			tasks: [{
+				id: "21511A94B9A5AD53"
+				type: "item"
+				item: "ad_astra:nasa_workbench"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -1.5d
+			hide_dependency_lines: true
+			dependencies: ["1BF9656E9FBB2364"]
+			id: "03F74AD3D7F6650E"
+			tasks: [{
+				id: "3F18393BE5E50474"
+				type: "item"
+				item: "ad_astra:solar_panel"
+			}]
+		}
+		{
+			x: -12.5d
+			y: -4.0d
+			dependencies: ["07B10625859F1AF9"]
+			id: "64271E1245394C9A"
+			tasks: [{
+				id: "6BC46E7216E1544D"
+				type: "item"
+				item: "techreborn:low_voltage_su"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -3.5d
+			dependencies: ["64271E1245394C9A"]
+			id: "4649E8638D453CFB"
+			tasks: [{
+				id: "287898CC893AB92B"
+				type: "item"
+				item: "techreborn:basic_drill"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -3.5d
+			dependencies: ["64271E1245394C9A"]
+			id: "5A7912DAF9F6C05E"
+			tasks: [{
+				id: "387149BF7F140B2A"
+				type: "item"
+				item: "techreborn:basic_chainsaw"
+			}]
+		}
+		{
+			x: -13.5d
+			y: -4.5d
+			dependencies: ["64271E1245394C9A"]
+			id: "006608C6FDD18B20"
+			tasks: [{
+				id: "2985D693FD8F5DA3"
+				type: "item"
+				item: "techreborn:basic_jackhammer"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -4.5d
+			dependencies: ["64271E1245394C9A"]
+			id: "20CFA79532615B61"
+			tasks: [{
+				id: "1CCBB710DC967AA3"
+				type: "item"
+				item: {
+					id: "techreborn:rock_cutter"
+					Count: 1b
+					tag: {
+						Enchantments: [{
+							id: "minecraft:silk_touch"
+							lvl: 1s
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: -12.5d
+			y: -5.0d
+			dependencies: ["64271E1245394C9A"]
+			id: "520ABA39D0E22434"
+			tasks: [{
+				id: "6451B34C764E2D1F"
+				type: "item"
+				item: "techreborn:electric_treetap"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 2.5d
+			id: "75CE520F392CC1E1"
+			tasks: [{
+				id: "6D255A3F6549F8EC"
+				type: "item"
+				item: "createastral:navigation_mechanism"
+			}]
+		}
+		{
+			x: -18.20884353741497d
+			y: 0.22789115646256874d
+			dependencies: ["306D009F01634115"]
+			id: "59694D713430B333"
+			tasks: [{
+				id: "24A310896656E45C"
+				type: "item"
+				item: "ad_astra:moon_desh_ore"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -0.5d
+			dependencies: ["57724BFDF0A78FAF"]
+			id: "28980EA356A2F0BF"
+			tasks: [
+				{
+					id: "4609CD28E67533EA"
+					type: "item"
+					item: "ad_astra:desh_engine"
+				}
+				{
+					id: "402EFC892C071DBA"
+					type: "item"
+					item: "ad_astra:rocket_fin"
+				}
+				{
+					id: "37D1856D01B2D99A"
+					type: "item"
+					item: "ad_astra:desh_tank"
+				}
+			]
+		}
+	]
+}

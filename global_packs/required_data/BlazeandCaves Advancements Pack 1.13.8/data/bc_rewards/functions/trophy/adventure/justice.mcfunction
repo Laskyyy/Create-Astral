@@ -1,2 +1,0 @@
-give @s minecraft:beetroot_soup{Enchantments:[{id:"minecraft:unbreaking",lvl:1}],Trophy:1,CustomModelData:131,HideFlags:1,display:{Name:"{\"italic\":\"false\",\"bold\":\"true\",\"color\":\"#A7D388\",\"translate\":\"The Salad Bowl\"}",Lore:["{\"color\":\"#A7D388\",\"translate\":\"Perfect for serving justice in\"}","{\"text\":\" \"}","{\"color\":\"gray\",\"translate\":\"Awarded for achieving\"}","{\"italic\":\"false\",\"color\":\"light_purple\",\"translate\":\"Justice\"}"]}} 1
-tellraw @s {"color":"gold","text":" +1 ","extra":[{"translate":"The Salad Bowl"}]}

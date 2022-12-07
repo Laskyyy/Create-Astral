@@ -1,2 +1,0 @@
-give @s minecraft:raw_copper_block{Enchantments:[{id:"minecraft:unbreaking",lvl:1}],Trophy:1,CustomModelData:131,HideFlags:33,display:{Name:"{\"italic\":\"false\",\"bold\":\"true\",\"color\":\"#FB9E58\",\"translate\":\"Bean Block\"}",Lore:["{\"color\":\"#FB9E58\",\"translate\":\"Mmm, tasty\"}","{\"text\":\" \"}","{\"color\":\"gray\",\"translate\":\"Awarded for achieving\"}","{\"italic\":\"false\",\"color\":\"light_purple\",\"translate\":\"Mr. Bean\"}"]}} 1
-tellraw @s {"color":"gold","text":" +1 ","extra":[{"translate":"Bean Block"}]}

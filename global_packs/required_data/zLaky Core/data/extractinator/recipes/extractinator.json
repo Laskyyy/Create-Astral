@@ -1,0 +1,32 @@
+{
+  "mod_id": "minecraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "H  ",
+    "PRA",
+    "C#A"
+  ],
+  "key": {
+    "H": {
+      "item": "minecraft:hopper"
+    },
+    "P": {
+      "item": "minecraft:piston"
+    },
+    "C": {
+      "item": "minecraft:cauldron"
+    },
+    "#": {
+      "item": "minecraft:copper_block"
+    },
+    "R": {
+      "item": "minecraft:redstone_block"
+    },
+    "A": {
+      "item": "minecraft:chain"
+    }
+  },
+  "result": {
+    "item": "extractinator:extractinator"
+  }
+}

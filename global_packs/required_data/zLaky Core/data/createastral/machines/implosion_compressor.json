@@ -1,0 +1,99 @@
+{
+  "name": "Implosion Compressor",
+  "appearance": {
+    "block": "ad_astra:compressor",
+    "running": {
+      "lightlevel": 15,
+      "ambient_sound": "minecraft:entity.generic.explode"
+    }
+  },
+  "gui": [
+    {
+      "texture": "custommachinery:textures/gui/base_background.png",
+      "x": 0,
+      "y": 0,
+      "type": "custommachinery:texture"
+    },
+    {
+      "x": 47,
+      "y": 80,
+      "type": "custommachinery:player_inventory"
+    },
+    {
+      "id": "input",
+      "x": 67,
+      "y": 30,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "input2",
+      "x": 87,
+      "y": 30,
+      "type": "custommachinery:slot"
+    },
+    {
+      "x": 47,
+      "y": 30,
+      "type": "custommachinery:energy"
+    },
+    {
+      "id": "output1",
+      "x": 149,
+      "y": 30,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "output2",
+      "x": 169,
+      "y": 30,
+      "type": "custommachinery:slot"
+    },
+    {
+      "x": 116,
+      "y": 30,
+      "type": "custommachinery:progress"
+    },
+    {
+      "x": 236,
+      "y": 5,
+      "type": "custommachinery:status"
+    },
+    {
+      "text": "Implosion Compressor",
+      "x": 7,
+      "y": 5,
+      "type": "custommachinery:text"
+    }
+  ],
+  "components": [
+    {
+      "mode": "input",
+      "id": "input",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "input",
+      "id": "input2",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "output",
+      "id": "output1",
+      "type": "custommachinery:item"
+    },
+    {
+      "mode": "output",
+      "id": "output2",
+      "type": "custommachinery:item"
+    },
+    {
+      "capacity": 60000,
+      "type": "custommachinery:energy"
+    },
+    {
+    	"type": "custommachinery:redstone",
+    	"poweroutput": 15
+    }
+  ],
+  "catalysts": ["custommachinery:magic_spawner", "custommachinery:stone_generator"]
+}

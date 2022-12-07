@@ -3,7 +3,7 @@
 	"ingredients": [
 		{
 			"ingredient": {
-				"item": "indrev:circuit_mk4"
+				"item": "create:integrated_circuit"
 			}
 		},
 		{
@@ -63,7 +63,7 @@
 		},
 		{
 			"ingredient": {
-				"item": "bosses_of_mass_destruction:monolith_block"
+				"item": "doom:argent_energy"
 			}
 		},
 		{

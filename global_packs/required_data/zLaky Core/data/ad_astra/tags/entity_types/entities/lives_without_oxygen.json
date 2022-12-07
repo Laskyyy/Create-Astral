@@ -24,6 +24,8 @@
     "minecraft:piglin",
     "minecraft:piglin_brute",
     "minecraft:zombified_piglin",
-    "minecraft:ghast"
+    "minecraft:ghast",
+    "minecraft:enderman",
+    "minecraft:hoglin"
   ]
 }

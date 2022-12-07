@@ -1,0 +1,37 @@
+{
+	"feature": "incendium:ash_barrens/smooth_basalt",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": {
+				"type": "minecraft:weighted_list",
+				"distribution": [
+					{
+						"weight": 100,
+						"data": 7
+					},
+					{
+						"weight": 0,
+						"data": 7
+					}
+				]
+			}
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"min_inclusive": {
+					"absolute": 33
+				},
+				"max_inclusive": {
+					"absolute": 127
+				}
+			}
+		},
+		{"type":"biome"}
+	]
+}

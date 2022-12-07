@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Nov 12, 2022, 10:35:48 PM
+To refresh this file, delete it and run /reload command again! Last updated: Dec 1, 2022, 5:57:57 PM
 
 #tconstruct:molten_manyullyn
 - tconstruct:molten_manyullyn
@@ -485,6 +485,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 #tconstruct:molten_lead
 - tconstruct:molten_lead
 - tconstruct:flowing_molten_lead
+
+#c:molten_andesite
+- kubejs:compound_mixture
 
 #c:water
 - #minecraft:water?

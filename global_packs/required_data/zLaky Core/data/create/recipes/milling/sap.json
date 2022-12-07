@@ -1,0 +1,1 @@
+{"type":"create:milling","ingredients":[{"item":"techreborn:rubber_log"}],"results":[{"item":"techreborn:sap","count":1},{"item":"techreborn:sap","chance":0.25}],"processingTime":200}

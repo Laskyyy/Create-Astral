@@ -39,7 +39,7 @@
         "terrain_shaper": {
           "offset": 0.1,
           "factor": 4,
-          "jaggedness": 0
+          "jaggedness": 4
         }
       },
       "noise_router": {

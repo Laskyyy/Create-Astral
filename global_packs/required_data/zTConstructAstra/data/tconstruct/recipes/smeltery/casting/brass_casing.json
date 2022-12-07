@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_basin",
+  "cast": {
+    "item": "create:copper_casing"
+  },
+  "cast_consumed": true,
+  "fluid": {
+    "name": "tconstruct:molten_brass",
+    "amount": 18000
+  },
+  "result": "create:brass_casing",
+  "cooling_time": 150
+}

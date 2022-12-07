@@ -1,0 +1,96 @@
+{
+  "temperature": 0.8,
+  "downfall": 0,
+  "precipitation": "none",
+  "category": "none",
+  "effects": {
+    "sky_color": 15117444,
+    "fog_color": 15117444,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "grass_color": 9551193,
+    "foliage_color": 7842607,
+    "particle": {
+      "options": {
+        "type": "minecraft:crimson_spore"
+      },
+      "probability": 0.014
+    }
+  },
+  "creature_spawn_probability": 0.2,
+  "spawners": {
+    "monster": [
+      {
+        "type": "ad_astra:martian_raptor",
+        "weight": 100,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "type": "ad_astra:mogler",
+        "weight": 100,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "type": "ad_astra:sulfur_creeper",
+        "weight": 100,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "type": "minecraft:piglin",
+        "weight": 100,
+        "minCount": 2,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:hoglin",
+        "weight": 100,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ]
+  },
+  "spawn_costs": {
+    "ad_astra:martian_raptor": {
+      "energy_budget": 0.015,
+      "charge": 0.2
+    },
+    "ad_astra:mogler": {
+      "energy_budget": 0.015,
+      "charge": 0.2
+    },
+    "ad_astra:sulfur_creeper": {
+      "energy_budget": 0.02,
+      "charge": 0.2
+    },
+    "minecraft:piglin": {
+      "energy_budget": 0.015,
+      "charge": 0.2
+    },
+    "minecraft:hoglin": {
+      "energy_budget": 0.015,
+      "charge": 0.2
+    }
+  },
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
+  "features": [
+    [
+      "ad_astra:mars_rock",
+      "ad_astra:mars_ice_shard_ore",
+      "ad_astra:mars_iron_ore",
+      "ad_astra:mars_diamond_ore",
+      "ad_astra:mars_ostrum_ore"
+    ],
+    [
+
+    ]
+  ]
+}

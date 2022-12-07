@@ -1,0 +1,18 @@
+{
+  "values": [
+    "minecraft:soul_soil",
+    "minecraft:soul_sand",
+    "minecraft:smooth_quartz",
+    "minecraft:netherrack",
+    "minecraft:warped_nylium",
+    "minecraft:crimson_nylium",
+    "minecraft:yellow_terracotta",
+    "minecraft:red_sand",
+    "minecraft:red_terracotta",
+    "minecraft:red_sandstone",
+    "minecraft:smooth_red_sandstone",
+    "ad_astra:moon_stone",
+		"ad_astra:mars_stone",
+		"ad_astra:mercury_stone"
+  ]
+}

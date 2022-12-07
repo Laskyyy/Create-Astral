@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 20,
+          "name": "incendium:castle/barrel/food"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 20,
+          "name": "incendium:castle/barrel/food_low"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 25,
+          "name": "incendium:castle/barrel/generic"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 15,
+          "name": "incendium:castle/barrel/barracks"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 5,
+          "name": "incendium:castle/barrel/alchemist"
+        }
+      ]
+    }
+  ]
+}

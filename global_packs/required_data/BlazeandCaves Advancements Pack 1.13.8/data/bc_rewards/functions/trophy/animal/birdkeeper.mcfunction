@@ -1,2 +1,0 @@
-give @s minecraft:black_dye{Enchantments:[{id:"minecraft:unbreaking",lvl:1}],Trophy:1,CustomModelData:131,HideFlags:33,display:{Name:"{\"italic\":\"false\",\"bold\":\"true\",\"color\":\"#696969\",\"translate\":\"Black Bird\"}",Lore:["{\"color\":\"#696969\",\"translate\":\"They should add Crows to Minecraft. Caw!\"}","{\"text\":\" \"}","{\"color\":\"gray\",\"translate\":\"Awarded for achieving\"}","{\"italic\":\"false\",\"color\":\"#75E1FF\",\"translate\":\"Birdkeeper\"}"]}} 1
-tellraw @s {"color":"gold","text":" +1 ","extra":[{"translate":"Black Bird"}]}

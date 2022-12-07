@@ -1,1 +1,0 @@
-scoreboard players add $tickcount DayCounterSc 1

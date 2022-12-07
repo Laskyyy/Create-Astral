@@ -1,0 +1,15 @@
+{
+  "grid": {
+    "tag_smith_table [default: true]": true,
+    "tag_cauldron [default: true]": true,
+    "tag_hopper [default: true]": true,
+    "tag_piston [default: true]": true,
+    "tag_rail [default: true]": true,
+    "tag_stonecutter [default: true]": true,
+    "tag_bucket [default: true]": true,
+    "tag_compass [default: true]": true,
+    "tag_minecart [default: true]": true,
+    "tag_shield [default: true]": true,
+    "tag_shulker_box [default: true]": true
+  }
+}

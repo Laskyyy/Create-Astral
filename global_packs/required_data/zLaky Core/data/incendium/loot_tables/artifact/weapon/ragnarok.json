@@ -1,0 +1,54 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "The longer you hold back the bow,",
+                  "color": "#ABC4B8",
+                  "italic": true
+                },
+                {
+                  "translate": "the more powerful the lightning you create",
+                  "color": "#ABC4B8",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "Incendium",
+                  "color": "#FF8000",
+                  "italic": true
+                }
+              ],
+              "entity": "this",
+              "replace": true
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {
+                  "translate": "Ragnarok",
+                  "color": "#CCEBDB",
+                  "italic": false
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:1450105,incendium:{item:'ragnarok'}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

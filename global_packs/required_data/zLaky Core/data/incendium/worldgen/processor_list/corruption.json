@@ -1,0 +1,60 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:linear_pos",
+            "min_dist": 0,
+            "max_dist": 32,
+            "min_chance": 1,
+            "max_chance": 0.25
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "minecraft:blackstone"
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:linear_pos",
+            "min_dist": 32,
+            "max_dist": 48,
+            "min_chance": 1,
+            "max_chance": 0
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "minecraft:blackstone"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:lava"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "minecraft:lava",
+            "Properties": {
+              "level": "0"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -3,9 +3,9 @@
     "start_pool": "incendium:purified_arena",
     "size": 6
   },
-  "biomes": "incendium:infernal_dunes",
+  "biomes": "ad_astra:mercury_deltas",
   "adapt_noise":true,
   "spawn_overrides": {
   },
-  "type": "minecraft:bastion_remnant"
+  "type": "ad_astra:mars_temple"
 }

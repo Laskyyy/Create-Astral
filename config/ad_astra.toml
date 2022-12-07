@@ -23,7 +23,7 @@ allowFlagImages = true
 spaceSuitTankSize = 81000
 netheriteSpaceSuitTankSize = 162000
 netheriteSpaceSuitHasFireResistance = true
-jetSuitSpeed = 0.4
+jetSuitSpeed = 0.55
 jetSuitUpwardsSpeed = 0.2
 jetSuitEnergyPerTick = 250
 jetSuitTankSize = 324000
@@ -38,12 +38,12 @@ fallingExplosionMultiplier = 0.7
 gravity = -2.0
 moveCameraInVehicle = true
 [rocket]
-atmosphereLeave = 600
+atmosphereLeave = 500
 countDownTicks = 200
 acceleration = 0.005
 maxSpeed = 0.5
 entitiesBurnUnderRocket = true
-tankBuckets = 10
+tankBuckets = 6
 [rover]
 explodeRoverInLava = true
 fuelPerTick = 27
@@ -67,9 +67,9 @@ maxEnergy = 9000
 energyPerTick = 35
 tankBuckets = 6
 [oxygenLoader]
-maxEnergy = 9000
-energyPerTick = 15
-tankBuckets = 3
+maxEnergy = 0
+energyPerTick = 0
+tankBuckets = 5
 [oxygenDistributor]
 maxEnergy = 20000
 fluidConversionEnergyPerTick = 5

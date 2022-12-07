@@ -1,0 +1,548 @@
+{
+	id: "3E0862BB5F2DDA3C"
+	group: ""
+	order_index: 2
+	filename: "chapter_3"
+	title: "Chapter 3"
+	icon: "create:fluid_tank"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 4.0d
+			y: -1.0d
+			description: ["You won't be able to use tinker's fluid tanks until owning a smeltery, however, create tanks just so happen to serve this function just fine. They will require a pipe to input fluid, as buckets cannot be directly used on them."]
+			dependencies: ["70799237323247B7"]
+			id: "6AEEE2B22E28945B"
+			tasks: [{
+				id: "5852E083EF17B463"
+				type: "item"
+				item: "create:fluid_tank"
+				count: 4L
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.0d
+			subtitle: "The... fluid age?"
+			description: ["Time to learn how molten fluids work! Any raw material placed in a melter will be multiplied by ~1.33x, rewarding you for storing metals in fluid form. For this tier you can still alloy metals without their fluid forms, but I recommend you get used to it as it will be needed later."]
+			dependencies: ["751CC4EF84A919C7"]
+			id: "0A34148EBAF329B3"
+			tasks: [{
+				id: "3C8959799657F5E3"
+				type: "item"
+				item: "tconstruct:seared_melter"
+			}]
+			rewards: [{
+				id: "6CAB1338A11F9FAE"
+				type: "item"
+				item: {
+					id: "mcdw:axe_firebrand"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.0d
+			description: ["Heat your seared melter with this, every single metal requires less than 800 degrees now, so this heat will be fine for the rest of your game."]
+			dependencies: ["0A34148EBAF329B3"]
+			id: "38B99A94B043A6BD"
+			tasks: [{
+				id: "7BD848C38CD89278"
+				type: "item"
+				item: "tconstruct:seared_heater"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.5d
+			subtitle: "Don't eat this either"
+			description: ["Bulk blast, or furnace smelt some grout to grab these bricks. A depot might be a good idea if bulk blasting as it has been heavily slowed in Astral! Perhaps this will be alleviated later on with some comically efficient machinery..."]
+			dependencies: ["1F79F4D01B219D7E"]
+			id: "751CC4EF84A919C7"
+			tasks: [{
+				id: "19A59A4A0A2A5541"
+				type: "item"
+				item: "tconstruct:seared_brick"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			subtitle: "Fluid movement"
+			description: [
+				"Establishing a melter setup with pumps outputting to various tanks using smart pipes is possibly the greatest investment you can make right now.                                     "
+				"WARNING! Mixing fluids within the same pipe will cause it to break and spill, be sure to have a way to account for this if making a large fluid smelting network (see #showcase on discord for examples)"
+			]
+			dependencies: ["0A34148EBAF329B3"]
+			id: "70799237323247B7"
+			tasks: [
+				{
+					id: "10C300B57E40F356"
+					type: "item"
+					item: "create:fluid_pipe"
+				}
+				{
+					id: "03ED82015AE3D467"
+					type: "item"
+					item: "create:mechanical_pump"
+				}
+			]
+			rewards: [{
+				id: "1BC7927E26233E37"
+				type: "item"
+				item: "create:fluid_pipe"
+				count: 4
+			}]
+		}
+		{
+			title: "I am grout."
+			x: 0.5d
+			y: 2.5d
+			shape: "pentagon"
+			subtitle: "Do not eat"
+			hide_dependency_lines: true
+			dependencies: ["0FC0B4E8EC58F791"]
+			id: "1F79F4D01B219D7E"
+			tasks: [{
+				id: "6A0810245928DCDF"
+				type: "item"
+				item: "tconstruct:grout"
+				count: 16L
+			}]
+			rewards: [
+				{
+					id: "2FC52E48BD867E0B"
+					type: "item"
+					item: "minecraft:bricks"
+					count: 16
+				}
+				{
+					id: "5C0B61B81EB06B8D"
+					type: "item"
+					item: "tconstruct:puny_smelting"
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 2.0d
+			subtitle: "Compatible with tinkers fluids"
+			description: ["This spout can be used in automation of recipes in casting tables and basins, as funnels, etc. also work on them. Neat."]
+			dependencies: ["557684C7D7B955B8"]
+			id: "17041A495A41EEFD"
+			tasks: [{
+				id: "1EB6C9FA4DC032A7"
+				type: "advancement"
+				advancement: "create:spout"
+				criterion: ""
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			subtitle: "Compatible with tinkers fluids"
+			description: ["Freshly mixed alloy picked up by a bucket? Drain it and pump it into a fluid tank."]
+			dependencies: ["70799237323247B7"]
+			id: "2D86CC26B4A2E07A"
+			tasks: [{
+				id: "2F392E9D8E53C4A7"
+				type: "advancement"
+				advancement: "create:drain"
+				criterion: ""
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.0d
+			subtitle: "A note on tinkers integration"
+			description: ["Tinkers faucets can operate from any create liquid holding block, such as fluid tanks and filled basins!"]
+			dependencies: ["0A34148EBAF329B3"]
+			id: "6D5301A68808F8E8"
+			tasks: [{
+				id: "590F0D26EB4E4101"
+				type: "item"
+				item: "tconstruct:seared_faucet"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.0d
+			description: ["Casting tables/basins will allow you to convert that fluid storage into different forms. Buckets, blocks, ingots, whatever you currently require!"]
+			dependencies: ["0A34148EBAF329B3"]
+			id: "1519A1EA2CFA6FB1"
+			tasks: [
+				{
+					id: "782BA71DB02EEEEC"
+					type: "item"
+					item: "tconstruct:seared_basin"
+				}
+				{
+					id: "08C5A5228375128B"
+					type: "item"
+					item: "tconstruct:seared_table"
+				}
+			]
+			rewards: [
+				{
+					id: "5FCAC2FEAE3BBD14"
+					type: "item"
+					item: "tconstruct:ingot_sand_cast"
+				}
+				{
+					id: "3F9FD4F760452A44"
+					type: "item"
+					item: "tconstruct:ingot_sand_cast"
+				}
+				{
+					id: "27B0718F511A03E3"
+					type: "item"
+					item: "tconstruct:ingot_sand_cast"
+				}
+			]
+		}
+		{
+			title: "Find yourself some structures."
+			x: 2.0d
+			y: 1.0d
+			subtitle: "Will point the direction of the majority of structures."
+			description: ["Strongholds and some other structures with ingame ways to search are not valid targets."]
+			dependencies: ["17041A495A41EEFD"]
+			id: "33B14FCDB52879E4"
+			tasks: [{
+				id: "6EB0DD4B64ED4C64"
+				type: "item"
+				item: {
+					id: "structures_compass:structures_compass"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 8.5d
+			y: 1.5d
+			dependencies: ["4D7BFA8973D61425"]
+			id: "624026189BBACBB0"
+			tasks: [{
+				id: "7AB8005F32B46DEF"
+				type: "advancement"
+				advancement: "ad_astra:space_suit"
+				criterion: ""
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.5d
+			id: "0A71AC65808AFBE5"
+			tasks: [{
+				id: "2DBDDF4C51DE3879"
+				type: "item"
+				item: "createastral:shimmering_stone"
+				count: 10L
+			}]
+		}
+		{
+			x: 7.0d
+			y: 0.5d
+			dependencies: [
+				"0A71AC65808AFBE5"
+				"267CD8D04921402E"
+			]
+			id: "33F13EB2C45C36B3"
+			tasks: [{
+				id: "0C1658CB1EAE88C0"
+				type: "item"
+				item: "createastral:astral_conduit"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 1.5d
+			dependencies: ["343B8B2BF76B1D3B"]
+			id: "4D7BFA8973D61425"
+			tasks: [{
+				id: "773F68FCB1D6F848"
+				type: "item"
+				item: "ad_astra:oxygen_loader"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 2.5d
+			dependencies: ["267CD8D04921402E"]
+			id: "343B8B2BF76B1D3B"
+			tasks: [{
+				id: "16EB4FE518665789"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "createastral:electrolyser"
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: 2.0d
+			dependencies: ["0F4C452C9C9AB1B8"]
+			id: "32B9EAE28E1C5D7A"
+			tasks: [{
+				id: "059E87732C2699DC"
+				type: "item"
+				item: "create:electron_tube"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 1.5d
+			dependencies: ["32B9EAE28E1C5D7A"]
+			id: "267CD8D04921402E"
+			tasks: [{
+				id: "799B7B25F4911437"
+				type: "item"
+				item: "phonos:redstone_chip"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			dependencies: ["17041A495A41EEFD"]
+			id: "0F4C452C9C9AB1B8"
+			tasks: [{
+				id: "24A0C118196AF7BF"
+				type: "item"
+				item: "tconstruct:rose_gold_ingot"
+			}]
+		}
+		{
+			icon: "ad_astra:moon_globe"
+			x: 8.5d
+			y: 0.5d
+			shape: "gear"
+			dependencies: ["33F13EB2C45C36B3"]
+			id: "15B9947ABCCB882F"
+			tasks: [{
+				id: "26E0A4319968F290"
+				type: "dimension"
+				dimension: "ad_astra:moon"
+			}]
+			rewards: [{
+				id: "2D472B6164AB0317"
+				type: "item"
+				item: "amongus:crewmate"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -0.5d
+			id: "00F3EA4A8FB5B11B"
+			tasks: [{
+				id: "1BE3D8C8806EA239"
+				type: "item"
+				item: "kubejs:shimmer_bucket"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.0d
+			dependencies: ["70799237323247B7"]
+			id: "557684C7D7B955B8"
+			tasks: [{
+				id: "6CC8E342EABC3432"
+				type: "item"
+				item: "create:copper_casing"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 3.5d
+			id: "3A6FBCB0C9C41439"
+			tasks: [{
+				id: "749D797497A47853"
+				type: "item"
+				item: "create:veridium"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.0d
+			id: "10129383A51A7B1D"
+			tasks: [{
+				id: "6B65B4BEC4379476"
+				type: "item"
+				item: {
+					id: "create:super_glue"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.0d
+			dependencies: ["1519A1EA2CFA6FB1"]
+			id: "67012541C365BA5A"
+			tasks: [
+				{
+					id: "2DE68D06C55FDAA4"
+					type: "item"
+					item: "create:asurine"
+				}
+				{
+					id: "7A2337E4ED41268F"
+					type: "item"
+					item: "tconstruct:seared_stone"
+				}
+			]
+			rewards: [{
+				id: "3B349940636B5A3B"
+				type: "item"
+				item: "create:crushed_zinc_ore"
+			}]
+		}
+		{
+			title: "Efficient Bronze + Alloy production."
+			x: 4.0d
+			y: -2.0d
+			dependencies: ["6AEEE2B22E28945B"]
+			id: "5A1B85C3323DDBD1"
+			tasks: [
+				{
+					id: "57C817AD45B1C430"
+					type: "item"
+					item: "tconstruct:molten_bronze_bucket"
+				}
+				{
+					id: "57BB6CFDC8C9F731"
+					type: "item"
+					item: "kubejs:compound_mixture_bucket"
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: -1.0d
+			dependencies: [
+				"3EA569DE4AC60CC2"
+				"38B99A94B043A6BD"
+			]
+			id: "5042E544D3181FAC"
+			tasks: [{
+				id: "622223D1E4140C47"
+				type: "item"
+				item: {
+					id: "tconstruct:tinkers_anvil"
+					Count: 1b
+					tag: {
+						texture: "createastral:bronze_block"
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.0d
+			dependencies: ["5042E544D3181FAC"]
+			min_required_tasks: 1
+			id: "68FDC2C761EF6BC0"
+			tasks: [
+				{
+					id: "1C272BE87714B7EB"
+					type: "item"
+					item: {
+						id: "tconstruct:hammer_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:bronze"
+						}
+					}
+				}
+				{
+					id: "5BBF1C4CAF0AEEF0"
+					type: "item"
+					item: {
+						id: "tconstruct:broad_axe_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:bronze"
+						}
+					}
+				}
+				{
+					id: "50862D4CC58352D9"
+					type: "item"
+					item: {
+						id: "tconstruct:broad_blade"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:bronze"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: -2.0d
+			dependencies: ["5042E544D3181FAC"]
+			id: "1717E5063CC231DD"
+			tasks: [
+				{
+					id: "0BF6EB8118C0A5AD"
+					type: "item"
+					item: "minecraft:lapis_block"
+				}
+				{
+					id: "45ACDF07F7369A1E"
+					type: "item"
+					item: "minecraft:blue_dye"
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: -3.0d
+			dependencies: ["1717E5063CC231DD"]
+			id: "1C10D7A2828DE436"
+			tasks: [
+				{
+					id: "16168BDE7ED0509A"
+					type: "item"
+					item: "minecraft:lapis_block"
+				}
+				{
+					id: "2508A6165CEAA162"
+					type: "item"
+					item: "minecraft:diamond"
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: -4.0d
+			dependencies: ["1C10D7A2828DE436"]
+			id: "25085C910155E06D"
+			tasks: [
+				{
+					id: "5C84001C06B8BE8F"
+					type: "item"
+					item: "minecraft:lapis_block"
+				}
+				{
+					id: "0D2ACD60E744E17F"
+					type: "item"
+					item: "minecraft:diamond_block"
+				}
+			]
+		}
+	]
+}

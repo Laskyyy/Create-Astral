@@ -3,9 +3,9 @@
     "start_pool": "incendium:cvill/town_centers",
     "size": 6
   },
-  "biomes": ["crimson_forest","warped_forest"],
+  "biomes": ["crimson_forest","warped_forest","ad_astra:martian_wastelands","ad_astra:martian_canyon_creek"],
   "adapt_noise":true,
   "spawn_overrides": {
   },
-  "type": "minecraft:bastion_remnant"
+  "type": "ad_astra:mars_temple"
 }

@@ -1,0 +1,15 @@
+{
+  "name": "incendium:generic",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 5,
+      "element": {
+        "location": "incendium:castle/courtyard_2x1",
+        "processors": "incendium:nuclear_option_courtyard",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
