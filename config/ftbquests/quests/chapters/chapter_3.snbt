@@ -3,10 +3,36 @@
 	group: ""
 	order_index: 2
 	filename: "chapter_3"
-	title: "Chapter 3"
+	title: "3) Look to the stars"
 	icon: "create:fluid_tank"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	images: [
+		{
+			x: 9.5d
+			y: 0.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "createastral:textures/item/questmoon.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 7.5d
+			y: -4.0d
+			width: 3.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/painting/sun.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
 	quests: [
 		{
 			x: 4.0d
@@ -274,7 +300,10 @@
 		{
 			x: 7.0d
 			y: 2.5d
-			dependencies: ["267CD8D04921402E"]
+			dependencies: [
+				"267CD8D04921402E"
+				"3C26E1DEA0265C03"
+			]
 			id: "343B8B2BF76B1D3B"
 			tasks: [{
 				id: "16EB4FE518665789"
@@ -326,17 +355,15 @@
 			x: 8.5d
 			y: 0.5d
 			shape: "gear"
-			dependencies: ["33F13EB2C45C36B3"]
+			dependencies: [
+				"33F13EB2C45C36B3"
+				"624026189BBACBB0"
+			]
 			id: "15B9947ABCCB882F"
 			tasks: [{
 				id: "26E0A4319968F290"
 				type: "dimension"
 				dimension: "ad_astra:moon"
-			}]
-			rewards: [{
-				id: "2D472B6164AB0317"
-				type: "item"
-				item: "amongus:crewmate"
 			}]
 		}
 		{
@@ -491,6 +518,7 @@
 			]
 		}
 		{
+			icon: "minecraft:blue_dye"
 			x: 1.5d
 			y: -2.0d
 			dependencies: ["5042E544D3181FAC"]
@@ -509,6 +537,7 @@
 			]
 		}
 		{
+			icon: "minecraft:diamond"
 			x: 1.5d
 			y: -3.0d
 			dependencies: ["1717E5063CC231DD"]
@@ -527,6 +556,7 @@
 			]
 		}
 		{
+			icon: "minecraft:diamond_block"
 			x: 1.5d
 			y: -4.0d
 			dependencies: ["1C10D7A2828DE436"]
@@ -540,9 +570,69 @@
 				{
 					id: "0D2ACD60E744E17F"
 					type: "item"
+					icon: "minecraft:diamond_block"
 					item: "minecraft:diamond_block"
 				}
 			]
+		}
+		{
+			x: 7.0d
+			y: -0.5d
+			id: "586FA45ED205784F"
+			tasks: [{
+				id: "0C119FAAECA6085E"
+				type: "item"
+				item: "minecraft:shulker_box"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 2.5d
+			id: "3C26E1DEA0265C03"
+			tasks: [
+				{
+					id: "332E2B7A9B05C112"
+					type: "item"
+					item: "createastral:copper_heating_coil"
+					count: 8L
+				}
+				{
+					id: "44EBEC6416325EB0"
+					type: "item"
+					item: "createastral:copper_plating"
+					count: 9L
+				}
+				{
+					id: "13E157B81D7B2039"
+					type: "item"
+					item: "create:copper_casing"
+					count: 8L
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: 3.5d
+			id: "1306DB590F3FAF09"
+			tasks: [{
+				id: "56958956BAAD369A"
+				type: "structure"
+				structure: "minecraft:mineshaft"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 3.5d
+			id: "3DEFD0BC385F0B93"
+			tasks: [{
+				id: "62B7C24D87B88973"
+				type: "questsadditions:structure"
+				name: "minecraft:mineshaft"
+				hasCustomPicture: false
+				layer: false
+				rightclick: true
+				item: "minecraft:granite"
+			}]
 		}
 	]
 }

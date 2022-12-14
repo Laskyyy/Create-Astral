@@ -18,6 +18,7 @@ loseSoulboundLevelOnDeath = false
 voidSlots = []
 soulboundSlots = []
 applyBindingCurse = true
+useLastGroundPos = false
 trySoft = false
 trySoftApproach = "RADIUS"
 tryStrict = true

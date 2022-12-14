@@ -1,0 +1,60 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 5,
+          "data": {
+            "Name": "minecraft:light",
+            "Properties": {
+              "level": "11",
+              "waterlogged": "false"
+            }
+          }
+        },
+        {
+          "weight": 6,
+          "data": {
+            "Name": "minecraft:light",
+            "Properties": {
+              "level": "12",
+              "waterlogged": "false"
+            }
+          }
+        },
+        {
+          "weight": 7,
+          "data": {
+            "Name": "minecraft:light",
+            "Properties": {
+              "level": "13",
+              "waterlogged": "false"
+            }
+          }
+        },
+        {
+          "weight": 8,
+          "data": {
+            "Name": "minecraft:light",
+            "Properties": {
+              "level": "14",
+              "waterlogged": "false"
+            }
+          }
+        },
+        {
+          "weight": 9,
+          "data": {
+            "Name": "minecraft:light",
+            "Properties": {
+              "level": "15",
+              "waterlogged": "false"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

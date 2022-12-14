@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "dimension": "minecraft:the_end"
+              }
+            }
+          }
+        ],
+        "block": "minecraft:end_gateway"
+      }
+    }
+  },
+  "rewards": {
+    "function": "nullscape:technical/gateway/rift"
+  }
+}

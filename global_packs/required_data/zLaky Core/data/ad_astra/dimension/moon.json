@@ -359,7 +359,7 @@
           "parameters": {
             "temperature": 0,
             "humidity": 0,
-            "continentalness": -0.65,
+            "continentalness": -0.2,
             "erosion": 0,
             "weirdness": -1.5,
             "depth": 0,

@@ -70,7 +70,7 @@
     },
     "PlasmaGeneratorMaxOutput": {
       "comment": "Plasma Generator Max Output (Energy per tick)",
-      "value": 2048
+      "value": 1024
     },
     "PlasmaGeneratorMaxEnergy": {
       "comment": "Plasma Generator Max Energy",
@@ -94,7 +94,7 @@
     },
     "ThermalGeneratorEnergyPerTick": {
       "comment": "Thermal Generator Energy Per Tick",
-      "value": 16
+      "value": 10
     },
     "ThermalGeneratorMaxOutput": {
       "comment": "Thermal Generator Max Output (Energy per tick)",
@@ -108,17 +108,17 @@
     },
     "advancedDayRate": {
       "comment": "Generation rate during day for Advanced Solar Panel (Energy per tick)",
-      "value": 12
+      "value": 8
     }
   },
   "solarPanelQuantum": {
     "quantumNightRate": {
       "comment": "Generation rate during night for Quantum Solar Panel (Energy per tick)",
-      "value": 32
+      "value": 16
     },
     "quantumDayRate": {
       "comment": "Generation rate during day for Quantum Solar Panel (Energy per tick)",
-      "value": 512
+      "value": 200
     }
   },
   "solarPanelIndustrial": {
@@ -128,7 +128,7 @@
     },
     "industrialDayRate": {
       "comment": "Generation rate during day for Industrial Solar Panel (Energy per tick)",
-      "value": 24
+      "value": 20
     }
   },
   "generator": {
@@ -142,7 +142,7 @@
     },
     "GeneratorEnergyOutput": {
       "comment": "Solid Fuel Generator Energy Per Tick",
-      "value": 10
+      "value": 8
     }
   },
   "semifluid_generator": {
@@ -170,7 +170,7 @@
     },
     "GasGeneratorEnergyPerTick": {
       "comment": "Gas Generator Energy Per Tick",
-      "value": 16
+      "value": 12
     }
   },
   "solarPanelGeneral": {
@@ -182,7 +182,7 @@
   "solarPanelUltimate": {
     "ultimateDayRate": {
       "comment": "Generation rate during day for Ultimate Solar Panel (Energy per tick)",
-      "value": 48
+      "value": 36
     },
     "ultimateNightRate": {
       "comment": "Generation rate during night for Ultimate Solar Panel (Energy per tick)",

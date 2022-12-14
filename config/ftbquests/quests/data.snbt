@@ -1,7 +1,7 @@
 {
 	version: 13
 	title: "Create: Astral"
-	icon: "kubejs:orcane"
+	icon: "adoptafloppa:kitney_item"
 	default_reward_team: false
 	default_consume_items: false
 	default_autoclaim_rewards: "disabled"

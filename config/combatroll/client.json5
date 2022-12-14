@@ -1,0 +1,9 @@
+{
+	"playCooldownSound": true,
+	"playCooldownFlash": true,
+	"playRollSound": true,
+	"hudArrowColor": 5540067,
+	"hudBackgroundOpacity": 0,
+	"showWhenFull": true,
+	"showHUDInCreative": false
+}

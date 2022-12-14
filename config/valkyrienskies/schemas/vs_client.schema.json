@@ -1,0 +1,14 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "renderDebugText" : {
+      "type" : "boolean",
+      "description" : "Renders the VS2 debug HUD with TPS"
+    },
+    "$schema" : {
+      "type" : "string"
+    }
+  },
+  "additionalProperties" : false
+}

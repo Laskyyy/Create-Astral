@@ -7,13 +7,13 @@
   ],
   "key": {
     "#": {
-      "tag": "c:compressed_ostrum"
+      "tag": "c:compressed_steel"
     },
     "N": {
       "item": "createastral:sturdy_leggings"
     },
     "D": {
-      "tag": "c:compressed_desh"
+      "tag": "c:compressed_ostrum"
     }
   },
   "result": {

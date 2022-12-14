@@ -1,0 +1,1 @@
+{"type":"create:crushing","ingredients":[{"item":"minecraft:dried_kelp"}],"results":[{"item":"minecraft:gunpowder","chance":0.75},{"item":"create:experience_nugget","chance":0.1}],"processingTime":200}

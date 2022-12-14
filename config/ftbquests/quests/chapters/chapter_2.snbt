@@ -7,6 +7,18 @@
 	icon: "create:andesite_alloy"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	images: [{
+		x: 3.5d
+		y: 3.0d
+		width: 3.0d
+		height: 3.0d
+		rotation: 0.0d
+		image: "ad_astra:textures/sky/earth.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
 	quests: [
 		{
 			x: -2.5d
@@ -822,6 +834,17 @@
 				id: "62B392E2438E7950"
 				type: "item"
 				item: "create:brass_hand"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 5.0d
+			dependencies: ["4EB4838CCED125E2"]
+			id: "4117DCE0FDD1C403"
+			tasks: [{
+				id: "0B8A1FC256D818B0"
+				type: "item"
+				item: "createaddition:rolling_mill"
 			}]
 		}
 	]

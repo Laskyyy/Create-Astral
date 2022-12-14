@@ -1,0 +1,8 @@
+{
+  "replace": "true",
+  "values": [
+    "minecraft:blaze_powder",
+    "minecraft:ghast_tear",
+    "minecraft:wither_rose"
+  ]
+}

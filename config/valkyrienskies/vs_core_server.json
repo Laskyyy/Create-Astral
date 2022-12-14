@@ -1,0 +1,14 @@
+{
+  "pt" : {
+    "synchronizePhysics" : false,
+    "physicsTicksPerGameTick" : 3
+  },
+  "udpPort" : 25565,
+  "enableUdp" : false,
+  "shipLoadDistance" : 128.0,
+  "shipUnloadDistance" : 196.0,
+  "physics" : {
+    "lodDetail" : 4096
+  },
+  "$schema" : "schemas/vs_core_server.schema.json"
+}

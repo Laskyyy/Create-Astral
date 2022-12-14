@@ -7,5 +7,5 @@
   "adapt_noise":true,
   "spawn_overrides": {
   },
-  "type": "minecraft:bastion_remnant"
+  "type": "ad_astra:mars_temple"
 }

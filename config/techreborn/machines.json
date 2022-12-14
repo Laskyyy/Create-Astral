@@ -124,7 +124,7 @@
     },
     "DistillationTowerMaxInput": {
       "comment": "Distillation Tower Max Input (Energy per tick)",
-      "value": 128
+      "value": 196
     }
   },
   "compressor": {

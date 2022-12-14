@@ -1,9 +1,9 @@
 // priority: 0
 
-settings.logAddedRecipes = true
-settings.logRemovedRecipes = true
+settings.logAddedRecipes = false
+settings.logRemovedRecipes = false
 settings.logSkippedRecipes = false
-settings.logErroringRecipes = true
+settings.logErroringRecipes = false
 
 console.info('Welcome to white space.')
 
@@ -26,7 +26,6 @@ onEvent('recipes', event => {
 	 event.remove({output: 'ad_astra:fuel_refinery'})
 	 event.remove({output: 'ad_astra:oxygen_loader'})
 	 event.remove({output: 'ad_astra:energizer'})
-   event.remove({mod: 'doom'})
 	 
 	
     
@@ -90,7 +89,8 @@ onEvent('recipes', event => {
 	event.replaceInput({type: 'minecraft:crafting_shaped'}, 'farmersdelight:rope', 'campanion:rope')
 	event.remove({output: 'farmersdelight:rope'})
 	event.remove({output: 'tconstruct:nether_grout'})
-	event.remove({output: 'tconstruct:scorched_brick'})
+	event.replaceInput('tconstruct:scorched_brick', 'tconstruct:scorched_bricks')
+  event.replaceInput({mod:'tconstruct'}, 'minecraft:quartz', 'ae2:charged_certus_quartz')
 	event.remove({output: 'tconstruct:efln_ball'})
 	event.remove({output: 'campanion:mre'})
 	event.remove({output: 'campanion:day_pack'})
@@ -113,12 +113,7 @@ onEvent('recipes', event => {
 	//Tinker's Construct Reworking (recipe removal)
 	
 	event.remove({output: 'tconstruct:smeltery_controller'})
-	event.remove({output: 'tconstruct:foundry_controller'})
 	event.remove({output: 'tconstruct:seared_melter'})
-	event.remove({output: 'tconstruct:scorched_ingot_gauge'})
-	event.remove({output: 'tconstruct:scorched_ingot_tank'})
-	event.remove({output: 'tconstruct:scorched_fuel_gauge'})
-	event.remove({output: 'tconstruct:scorched_fuel_tank'})
 	event.remove({output: 'tconstruct:scorched_alloyer'})
 	event.remove({output: 'tconstruct:earth_slime_sling'})
 	event.remove({output: 'tconstruct:sky_slime_sling'})
@@ -129,6 +124,7 @@ onEvent('recipes', event => {
 	event.remove({output: 'tconstruct:seared_fuel_tank'})
   event.remove({output: 'tconstruct:seared_bricks'})
   event.remove({output: 'tconstruct:grout'})
+  event.remove({output: 'tconstruct:scorched_bricks'})
 	event.remove({type: 'create:mixing', output: 'create:brass_ingot'})
 	event.remove({type: 'create:mixing', output: 'tconstruct:rose_gold_ingot'})
 	event.remove({type: 'create:mixing', output: 'tconstruct:slimesteel_ingot'})
@@ -139,23 +135,23 @@ onEvent('recipes', event => {
 	event.remove({output: 'create:blaze_cake'})
   event.remove({output: 'tconstruct:blazing_blood'})
   event.remove({output: 'create:andesite_alloy', input: 'minecraft:andesite'})
-	event.remove({type: 'tconstruct:foundry'})
 	event.remove({type: 'tconstruct:entity_melting'})
 	event.remove({type: 'tconstruct:alloy'})
   event.remove({output: 'farmersdelight:cooking_pot'})
   event.remove({output: 'ad_astra:nasa_workbench'})
-	event.replaceInput({type: 'create:mechanical_crafting', mod: 'createaddition'}, 'create:andesite_alloy', 'tconstruct:rose_gold_ingot')
+  event.remove({output: 'ad_astra:rocket_fin'})
+	event.replaceInput({type: 'create:mechanical_crafting', mod: 'createaddition'}, 'create:andesite_alloy', 'techreborn:red_cell_battery')
+  event.replaceInput({type: 'create:mechanical_crafting', mod: 'createaddition'}, 'createaddition:iron_rod', 'create:integrated_circuit')
 	event.replaceInput({mod: 'createaddition'}, 'minecraft:redstone_torch', 'create:electron_tube')
 	event.replaceInput({output: 'create:wand_of_symmetry'}, 'minecraft:ender_pearl', 'create:refined_radiance')
   event.replaceInput({output: 'ad_astra:engine_fan'}, 'ad_astra:compressed_steel', 'ad_astra:iron_plate')
 	event.replaceInput({output: 'create:mechanical_drill'}, 'minecraft:iron_ingot', 'create:iron_sheet')
-	event.replaceInput({output: 'create:mechanical_arm'}, 'create:precision_mechanism', 'createastral:production_mechanism')
 	event.replaceInput({output: 'create:mechanical_crafter'}, 'minecraft:crafting_table', 'create:precision_mechanism')
   event.replaceInput({output: 'ad_astra:rocket_fin'}, 'ad_astra:steel_ingot', 'create:sturdy_sheet')
-  event.replaceInput({output: 'ad_astra:engine_frame'}, 'ad_astra:steel_ingot', 'create:sturdy_sheet')
+  event.replaceInput({output: 'ad_astra:engine_frame'}, 'ad_astra:steel_plate', 'create:sturdy_sheet')
 
 	event.replaceInput({output: 'toms_storage:ts.adv_wireless_terminal'}, 'minecraft:netherite_ingot', 'tconstruct:hepatizon_ingot')
-	event.replaceInput({output: 'createaddition:accumulator'}, 'create:brass_casing', 'createastral:production_mechanism')
+	event.replaceInput({output: 'createaddition:accumulator'}, 'create:brass_casing', 'techreborn:red_cell_battery')
 	event.replaceInput({output: 'ad_astra:netherite_space_suit'}, 'ad_astra:oxygen_gear', 'techreborn:lead_plate')
   event.remove({output: 'ad_astra:launch_pad'})
   
@@ -197,12 +193,12 @@ onEvent('recipes', event => {
   event.replaceInput({mod: 'techreborn'}, 'techreborn:copper_plate', 'create:copper_sheet')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:gold_plate', 'create:gold_sheet')
   event.remove({output: 'techreborn:iron_plate'})
-  event.remove({output: 'createaddition:spool'})
   event.remove({output: 'create:copper_casing'})
   event.replaceInput({mod: 'techreborn'}, 'techreborn:steel_plate', 'ad_astra:steel_ingot')
-  event.replaceInput({mod: 'techreborn'}, 'minecraft:redstone', 'create:electron_tube')
+  event.replaceInput({mod: 'techreborn'}, 'minecraft:redstone', 'ae2:certus_quartz_crystal')
   event.remove({output: 'ad_astra:desh_cable'})
   event.remove({output: 'ad_astra:steel_cable'})
+  event.remove({output: 'techreborn:steel_ingot'})
 
 
 //////// TECH REBORN
@@ -278,7 +274,16 @@ onEvent('recipes', event => {
   event.remove({output: 'techreborn:silver_pickaxe'})
   event.remove({output: 'techreborn:silver_hoe'})
   event.remove({output: 'techreborn:silver_shovel'})
+  event.remove({output: 'techreborn:electronic_circuit'})
+  event.remove({output: 'techreborn:industrial_circuit'})
+  event.remove({output: 'techreborn:lithium_ion_battery'})
+  event.remove({mod: 'powah'})
   event.remove({output: 'techreborn:rubber', type: 'minecraft:smelting'})
+  event.remove({output: 'techreborn:basic_machine_frame'})
+  event.remove({output: 'techreborn:advanced_machine_frame'})
+  event.remove({output: 'techreborn:industrial_machine_frame'})
+  event.remove({output: 'techreborn:advanced_machine_casing'})
+  event.remove({output: 'techreborn:industrial_machine_casing'})
 
   event.replaceInput({mod: 'techreborn'}, 'techreborn:refined_iron_plate', 'techreborn:silver_plate')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:refined_iron_ingot', 'techreborn:silver_plate')
@@ -310,6 +315,7 @@ onEvent('recipes', event => {
   event.replaceInput({mod: 'techreborn'}, 'techreborn:titanium_storage_block', 'ad_astra:calorite_block')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:titanium_nugget', 'ad_astra:calorite_nugget')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:platinum_plate', 'ad_astra:compressed_calorite')
+  event.replaceInput({output: 'techreborn:implosion_compressor'}, 'techreborn:advanced_alloy_ingot', 'techreborn:advanced_alloy_plate')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:nickel_ingot', 'ad_astra:compressed_desh')
 
   event.replaceInput({mod: 'techreborn'}, 'techreborn:brass_plate', 'create:brass_sheet')
@@ -325,6 +331,22 @@ onEvent('recipes', event => {
   event.replaceInput({mod: 'techreborn'}, 'techreborn:zinc_nugget', 'create:zinc_nugget')
   
 
+
+  event.replaceInput({mod: 'ae2'}, 'minecraft:iron_ingot', 'techreborn:lead_plate')
+  event.replaceInput({mod: 'ae2'}, 'minecraft:copper_ingot', 'techreborn:silver_plate')
+  event.replaceInput({mod: 'ae2'}, 'minecraft:redstone', 'create:electron_tube')
+  event.replaceInput({mod: 'ae2'}, 'ae2:engineering_processor', 'techreborn:electronic_circuit')
+  event.replaceInput({mod: 'ae2'}, 'ae2:logic_processor', 'techreborn:electronic_circuit')
+  event.replaceInput({mod: 'ae2'}, 'ae2:calculation_processor', 'techreborn:electronic_circuit')
+  event.replaceInput({mod: 'techreborn'}, 'techreborn:advanced_circuit', 'techreborn:electronic_circuit')
+  event.replaceOutput('techreborn:electronic_circuit', 'create:integrated_circuit')
+  event.replaceInput({mod: 'techreborn'}, 'techreborn:cupronickel_heating_coil', 'createastral:copper_heating_coil')
+  event.replaceInput({mod: 'techreborn'}, 'techreborn:nichrome_heating_coil', 'createastral:ender_heating_coil')
+  event.replaceInput({mod: 'techreborn'}, 'techreborn:energy_crystal', 'createastral:astral_conduit')
+  event.replaceInput({mod: 'ae2'}, 'ae2:fluix_dust', 'techreborn:lithium_ion_battery')
+  event.replaceInput({mod: 'techreborn', output: 'techreborn:advanced_drill'}, 'ad_astra:compressed_calorite', 'techreborn:lead_plate')
+  event.replaceInput({mod: 'techreborn', output: 'techreborn:advanced_chainsaw'}, 'ad_astra:compressed_calorite', 'techreborn:lead_plate')
+  event.replaceInput({mod: 'techreborn', output: 'techreborn:advanced_jackhammer'}, 'ad_astra:compressed_calorite', 'techreborn:lead_plate')
 
 /////// TECH REBORN ACTUAL RECIPES
 
@@ -354,15 +376,6 @@ event.recipes.createDeploying('create:andesite_casing', ['create:copper_sheet', 
 	event.smithing('createastral:bronze_ingot', 'techreborn:tin_ingot', 'minecraft:copper_ingot')
   event.smithing('createastral:bronze_ingot', 'minecraft:copper_ingot', 'techreborn:tin_ingot')
 
-  event.recipes.createMechanicalCrafting('createaddition:spool', [
-    'BBB',
-    'BAB',
-    'BBB'
-  ], {
-    A: 'create:brass_sheet',
-    B: 'create:integrated_circuit'
-    
-  })
   event.shaped('tconstruct:seared_fuel_tank', [
     'CCC',
     'BDB',
@@ -486,6 +499,10 @@ event.recipes.createMixing(Fluid.of('tconstruct:molten_electrum', 405), [
   'create:blaze_cake_base',
   {fluid: 'tconstruct:blazing_blood', amount: 20250},
 ])
+event.recipes.createFilling('techreborn:lithium_ion_battery', [
+  'techreborn:red_cell_battery',
+  {fluid: 'techreborn:lithium', amount: 81000},
+])
 event.recipes.createFilling('2x create:cogwheel', [
   'create:andesite_alloy',
   {fluid: 'tconstruct:molten_bronze', amount: 3500},
@@ -506,10 +523,6 @@ event.recipes.createFilling('create:large_cogwheel', [
 ]).heated().processingTime(250)
 	//Tinker's Construct Reworking (New fluids and recipes)
 	//Tier 4 materials
-	
-	event.recipes.createMixing(Fluid.of('tconstruct:molten_steel', 9000), [
-   '3x techreborn:steel_dust',
- ]).superheated().processingTime(1000)
  
  	event.recipes.createMixing('3x tconstruct:nether_grout', [
    'minecraft:magma_cream',
@@ -524,25 +537,21 @@ event.recipes.createFilling('create:large_cogwheel', [
 	event.recipes.createMixing(Fluid.of('tconstruct:molten_queens_slime', 810), [
     {fluid: 'tconstruct:molten_cobalt', amount: 405},
 	{fluid: 'tconstruct:molten_tungsten', amount: 810},
-]).superheated().processingTime(5)
+]).heated().processingTime(5)
 	event.recipes.createMixing(Fluid.of('tconstruct:molten_manyullyn', 12000), [
     {fluid: 'tconstruct:molten_cobalt', amount: 32400},
     '2x minecraft:netherite_scrap',
 	{fluid: 'kubejs:molten_desh', amount: 9000},
-]).superheated().processingTime(1000)
+]).heated().processingTime(1000)
 
 	event.recipes.createMixing(Fluid.of('tconstruct:molten_hepatizon', 810), [
     {fluid: 'tconstruct:molten_cobalt', amount: 405},
     {fluid: 'tconstruct:molten_lead', amount: 810},
-]).superheated().processingTime(5)
-
-		event.recipes.createMixing(Fluid.of('tconstruct:molten_lumium', 81000), [
-    'minecraft:glowstone'
-]).superheated().processingTime(500)
+]).heated().processingTime(5)
 	
 		event.recipes.createMixing(Fluid.of('tconstruct:molten_debris', 20250), [
     'minecraft:ancient_debris'
-]).superheated().processingTime(500)
+]).heated().processingTime(500)
 	
 	
 	
@@ -608,7 +617,7 @@ event.recipes.createFilling('create:large_cogwheel', [
   A: 'ad_astra:iron_plate',
   B: 'create:electron_tube',
   C: 'create:mechanical_press',
-  D: 'createastral:production_mechanism',
+  D: 'create:precision_mechanism',
   E: 'techreborn:silver_block'
   
 })
@@ -646,7 +655,7 @@ event.recipes.createMechanicalCrafting('ad_astra:nasa_workbench', [
   ], {
     A: 'ad_astra:compressed_steel',
     B: 'techreborn:lead_ingot',
-    C: 'createastral:production_mechanism',
+    C: 'create:precision_mechanism',
     E: 'ad_astra:engine_fan'
     })
 		 	event.recipes.createMechanicalCrafting('computercraft:computer_advanced', [
@@ -771,7 +780,7 @@ event.recipes.createMechanicalCrafting('scout:upgraded_pouch', [
   A: 'create:attribute_filter',
   B: 'ad_astra:compressed_steel',
   C: 'create:mechanical_mixer',
-  D: 'createastral:production_mechanism',
+  D: 'create:precision_mechanism',
   E: 'create:fluid_tank'
   
 })
@@ -859,19 +868,7 @@ event.recipes.createMechanicalCrafting('scout:upgraded_pouch', [
   E: 'minecraft:obsidian'
   })
 
-  event.recipes.createMechanicalCrafting('create:integrated_circuit', [
-    'B',
-    'A',
-    'D'
-  ], {
-    A: 'techreborn:electronic_circuit',
-    B: 'create:lapis_sheet',
-    D: 'create:brass_sheet'
-    })
-	
-	
-	
-	
+  
 	
 	
 	
@@ -1435,15 +1432,15 @@ event.recipes.createFilling('structures_compass:structures_compass', [
   event.stonecutting('2x automobility:grass_off_road', 'minecraft:moss_carpet')
   event.stonecutting('8x automobility:sand_off_road', 'minecraft:sand')
 	 
-	 event.recipes.createSequencedAssembly([ // start the recipe
-        'createastral:pure_biomatter', // have this item be a guaranteed output
-		], 'create:tree_fertilizer', [ // 'create:brass_ingot' is the input.
+	 event.recipes.createSequencedAssembly([ 
+        'createastral:pure_biomatter', 
+		], 'techreborn:compressed_plantball', [
         event.recipes.createPressing('create:tree_fertilizer', 'create:tree_fertilizer').processingTime(50)
     ]).transitionalItem('create:tree_fertilizer').loops(500)
 
-    event.recipes.createSequencedAssembly([ // start the recipe
-        'automobility:launch_gel', // have this item be a guaranteed output
-		], 'tconstruct:slimesteel_nugget', [ // 'create:brass_ingot' is the input.
+    event.recipes.createSequencedAssembly([ 
+        'automobility:launch_gel', 
+		], 'tconstruct:slimesteel_nugget', [ 
         event.recipes.createPressing('tconstruct:slimesteel_nugget', 'tconstruct:slimesteel_nugget')
     ]).transitionalItem('create:tree_fertilizer').loops(125)
 
@@ -1455,13 +1452,38 @@ event.recipes.createFilling('structures_compass:structures_compass', [
 ]).heated().processingTime(2500)
 	
 	
-	event.recipes.createSequencedAssembly([ // start the recipe
-        'createastral:navigation_mechanism', // have this item be a guaranteed output
-		], 'phonos:redstone_chip', [ // 'create:brass_ingot' is the input.
+	event.recipes.createSequencedAssembly([ 
+        'createastral:navigation_mechanism', 
+		], 'phonos:redstone_chip', [ 
 		event.recipes.createPressing('create:incomplete_precision_mechanism', 'create:incomplete_precision_mechanism'),
 		event.recipes.createFilling('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', {fluid: 'tconstruct:molten_cobalt', amount: 1000}]), //fill bronze
         event.recipes.createDeploying('create:incomplete_precision_mechanism', ['techreborn:electrum_nugget', 'techreborn:electrum_nugget']), //fill bronze
     ]).transitionalItem('create:incomplete_precision_mechanism').loops(30)
+
+    	
+	event.recipes.createSequencedAssembly([ 
+  'create:integrated_circuit', 
+], 'ae2:certus_quartz_crystal', [ 
+event.recipes.createPressing('techreborn:silver_plate', 'techreborn:silver_plate'),
+event.recipes.createFilling('techreborn:silver_plate', ['techreborn:silver_plate', {fluid: 'tconstruct:molten_silver', amount: 1300}]), //fill bronze
+  event.recipes.createDeploying('techreborn:silver_plate', ['techreborn:silver_plate', 'techreborn:insulated_copper_cable']), //fill bronze
+]).transitionalItem('techreborn:silver_plate').loops(6)
+
+event.recipes.createSequencedAssembly([ 
+'techreborn:electronic_circuit',
+], 'create:integrated_circuit', [ 
+event.recipes.createPressing('create:integrated_circuit', 'create:integrated_circuit'),
+event.recipes.createFilling('create:integrated_circuit', ['create:integrated_circuit', {fluid: 'tconstruct:molten_lead', amount: 2600}]), //fill bronze
+event.recipes.createDeploying('create:integrated_circuit', ['create:integrated_circuit', 'ae2:charged_certus_quartz_crystal']), //fill bronze
+]).transitionalItem('create:integrated_circuit').loops(3)
+
+event.recipes.createSequencedAssembly([ 
+  'techreborn:industrial_circuit',
+  ], 'techreborn:electronic_circuit', [ 
+  event.recipes.createFilling('techreborn:electronic_circuit', ['techreborn:electronic_circuit', {fluid: 'techreborn:lithium', amount: 10125}]), //fill bronze
+  event.recipes.createPressing('techreborn:electronic_circuit', 'techreborn:electronic_circuit'),
+  event.recipes.createDeploying('techreborn:electronic_circuit', ['techreborn:electronic_circuit', 'ad_astra:compressed_calorite']), //fill bronze
+  ]).transitionalItem('techreborn:electronic_circuit').loops(3)
 	 
 	event.recipes.createSequencedAssembly([ // begin
         'createastral:blazing_mechanism', // output
@@ -1587,6 +1609,9 @@ event.recipes.createMixing('8x tconstruct:grout', [
     Item.of('minecraft:iron_nugget').withChance(1),
   ], 'techreborn:raw_tin')
   event.recipes.createCrushing([
+    'techreborn:clay_dust'
+  ], 'minecraft:clay_ball')
+  event.recipes.createCrushing([
     'create:crushed_silver_ore',
     Item.of('create:experience_nugget').withChance(0.75),
   ], 'techreborn:raw_silver')
@@ -1618,6 +1643,10 @@ event.recipes.createMixing('8x tconstruct:grout', [
   event.recipes.createSplashing([
     Item.of('techreborn:lead_nugget').withChance(0.25),
   ], 'ad_astra:mars_sand')
+
+  event.recipes.createHaunting([
+    Item.of('minecraft:netherrack').withChance(1),
+  ], 'minecraft:soul_sand')
 
 event.shaped('minecraft:experience_bottle', [
   'AAA',
@@ -1702,6 +1731,14 @@ event.recipes.createMixing('tconstruct:seared_bricks', [
   ], {
     A: 'create:copper_sheet',
 	})
+
+  event.shaped('createastral:copper_heating_coil', [
+    'AAA',
+    'AAA',
+    'AAA'
+  ], {
+    A: 'createaddition:copper_spool',
+	})
 	
 	 event.shaped('createastral:refined_radiance_block', [
     'AAA',
@@ -1727,12 +1764,64 @@ event.recipes.createMixing('tconstruct:seared_bricks', [
 	})
 
 event.custom(
-  {"type":"create:sequenced_assembly","ingredient":{"tag":"c:plates/gold"},"transitionalItem":{"item":"create:incomplete_precision_mechanism"},"sequence":[{"type":"create:deploying","ingredients":[{"item":"create:incomplete_precision_mechanism"},{"item":"create:cogwheel"}],"results":[{"item":"create:incomplete_precision_mechanism"}]},{"type":"create:deploying","ingredients":[{"item":"create:incomplete_precision_mechanism"},{"item":"create:large_cogwheel"}],"results":[{"item":"create:incomplete_precision_mechanism"}]},{"type":"create:deploying","ingredients":[{"item":"create:incomplete_precision_mechanism"},{"tag":"c:nuggets/iron"}],"results":[{"item":"create:incomplete_precision_mechanism"}]}],"results":[{"item":"create:precision_mechanism","chance":120.0},{"item":"create:golden_sheet","chance":8.0},{"item":"create:andesite_alloy","chance":8.0},{"item":"create:cogwheel","chance":5.0},{"item":"minecraft:gold_nugget","chance":3.0},{"item":"create:shaft","chance":2.0},{"item":"create:crushed_gold_ore","chance":2.0},{"item":"minecraft:iron_ingot"},{"item":"minecraft:clock"}],"loops":5}
+  {"type":"create:sequenced_assembly","ingredient":{"tag":"c:plates/gold"},"transitionalItem":{"item":"create:incomplete_precision_mechanism"},"sequence":[{"type":"create:deploying","ingredients":[{"item":"create:incomplete_precision_mechanism"},{"item":"create:cogwheel"}],"results":[{"item":"create:incomplete_precision_mechanism"}]},{"type":"create:deploying","ingredients":[{"item":"create:incomplete_precision_mechanism"},{"item":"create:large_cogwheel"}],"results":[{"item":"create:incomplete_precision_mechanism"}]},{"type":"create:deploying","ingredients":[{"item":"create:incomplete_precision_mechanism"},{"tag":"c:nuggets/iron"}],"results":[{"item":"create:incomplete_precision_mechanism"}]}],"results":[{"item":"create:precision_mechanism","chance":120.0},{"item":"create:golden_sheet","chance":8.0},{"item":"create:andesite_alloy","chance":8.0},{"item":"create:cogwheel","chance":5.0},{"item":"minecraft:gold_nugget","chance":3.0},{"item":"create:shaft","chance":2.0},{"item":"create:crushed_gold_ore","chance":2.0},{"item":"minecraft:iron_ingot"},{"item":"minecraft:clock"}],"loops":5})
+
+event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:basic_machine_casing"},{"item":"ad_astra:compressed_steel"}],"results":[{"item":"techreborn:advanced_machine_casing"}]})
+event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:advanced_machine_frame"},{"item":"techreborn:industrial_circuit"}],"results":[{"item":"techreborn:industrial_machine_frame"}]})
+event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:basic_machine_frame"},{"item":"techreborn:advanced_alloy_plate"}],"results":[{"item":"techreborn:advanced_machine_frame"}]})
+event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:basic_machine_casing"},{"item":"create:sturdy_sheet"}],"results":[{"item":"techreborn:industrial_machine_casing"}]})
+event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:silver_storage_block"},{"item":"create:andesite_alloy"}],"results":[{"item":"techreborn:basic_machine_frame"}]})
+event.custom({"type":"create:item_application","ingredients":[{"item":"create:andesite_casing"},{"tag":"c:plates/obsidian"}],"results":[{"item":"create:railway_casing"}]})
 
 
+event.custom({
+  "type": "techreborn:compressor",
+  "power": 10,
+  "time": 600,
+  "ingredients": [
+    {
+      "item": "create:sturdy_sheet",
+      "count": 16
+    }
+  ],
+  "results": [
+    {
+      "item": "ad_astra:rocket_fin",
+      "count": 1
+    }
+  ]
+})
 
+event.custom({
+  "type": "techreborn:implosion_compressor",
+  "power": 30,
+  "time": 2000,
+  "ingredients": [
+	{
+	  "count": 1,
+	  "item": "techreborn:steel_dust"
+	},
+    {
+      "item": "minecraft:tnt",
+      "count": 4
+    }
+  ],
+  "results": [
+    {
+      "item": "ad_astra:steel_ingot",
+      "count": 1
+    },
+    {
+      "item": "techreborn:dark_ashes_dust",
+      "count": 1
+    }
+  ]
+})
 
-)
+event.recipes.createMixing('techreborn:steel_dust', [
+  '5x minecraft:iron_ingot',
+'2x techreborn:coal_dust'
+]).heated().processingTime(400)
 
     event.shaped(Item.of('custommachinery:custom_machine_item', {machine:"createastral:electrolyser"}), [
         'CCC',
@@ -1917,12 +2006,12 @@ event.recipes.createSequencedAssembly([
 event.recipes.createMixing('tconstruct:ender_slime_ball', [
   {fluid: 'kubejs:shimmer', amount: 8100},
   '2x tconstruct:ichor_slime_ball',
-]).superheated().processingTime(30)
+]).heated().processingTime(30)
 
 event.recipes.createMixing('doodads:portable_nether', [
   {fluid: 'kubejs:shimmer', amount: 81000},
   'minecraft:lodestone',
-]).superheated().processingTime(500)
+]).heated().processingTime(500)
 
 event.recipes.createMixing('32x doodads:stone_brick_road', [
   {fluid: 'kubejs:shimmer', amount: 40500},

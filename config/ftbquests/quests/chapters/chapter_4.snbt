@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 3
 	filename: "chapter_4"
-	title: "Chapter 4"
+	title: "4) A lost civilisation"
 	icon: {
 		id: "ftbquests:custom_icon"
 		Count: 1b
@@ -103,57 +103,6 @@
 			}]
 		}
 		{
-			x: -10.0d
-			y: -6.5d
-			description: ["it's a precision mechanism but more expensive! How creative!"]
-			id: "5E688FD0A3A294AC"
-			tasks: [{
-				id: "025EE4A4C74CC7F2"
-				type: "item"
-				item: "createastral:production_mechanism"
-			}]
-			rewards: [{
-				id: "69B2529D69BD9617"
-				type: "item"
-				item: "create:encased_chain_drive"
-				count: 32
-			}]
-		}
-		{
-			x: -7.0d
-			y: -6.5d
-			description: ["hot hot hot HOT HOT"]
-			id: "3DC33841A6CACA80"
-			tasks: [{
-				id: "660C0CB0CC361991"
-				type: "item"
-				item: "createastral:blazing_mechanism"
-			}]
-			rewards: [{
-				id: "0D118ADDCE5CBDFC"
-				type: "item"
-				item: "farmersdelight:nether_salad"
-				count: 10
-			}]
-		}
-		{
-			x: -14.0d
-			y: -6.5d
-			description: ["These will become relevant later on when you can process cobalt, as these will be needed for various space travel blocks."]
-			id: "3B27080E8533EE67"
-			tasks: [{
-				id: "629F0F60E748829A"
-				type: "item"
-				item: "createastral:navigation_mechanism"
-			}]
-			rewards: [{
-				id: "58CD5C78B3509E8E"
-				type: "item"
-				item: "phonos:redstone_chip"
-				count: 5
-			}]
-		}
-		{
 			x: -11.0d
 			y: 2.0d
 			subtitle: "CRUSH"
@@ -198,6 +147,7 @@
 			y: 4.0d
 			subtitle: "and highly enchantable!"
 			description: ["Brass also includes a small jump bonus due to it's light weight. Effectively a direct upgrade to iron for those who haven't got the diamonds for expensive drip."]
+			dependencies: ["705C815541DB89F8"]
 			id: "156E58E3BD65E3A0"
 			tasks: [
 				{
@@ -266,50 +216,6 @@
 			]
 		}
 		{
-			icon: {
-				id: "ftbquests:custom_icon"
-				Count: 1b
-				tag: {
-					Icon: "minecraft:textures/item/diamond_chestplate.png"
-				}
-			}
-			x: -9.0d
-			y: -6.5d
-			subtitle: "This is new..."
-			description: ["Gosh diamond armour is so expensive now, I wonder why... (haste I)"]
-			id: "642F6B99B9F339C5"
-			tasks: [{
-				id: "3A075953119FAF1F"
-				type: "advancement"
-				advancement: "blazeandcave:mining/diamond_clad"
-				criterion: ""
-			}]
-			rewards: [
-				{
-					id: "31831735CE3FB9F5"
-					type: "item"
-					item: {
-						id: "minecraft:potion"
-						Count: 1b
-						tag: {
-							Potion: "minecraft:long_swiftness"
-						}
-					}
-				}
-				{
-					id: "7A81949CA9333677"
-					type: "item"
-					item: {
-						id: "mcdw:sword_diamond_sword_var"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
-		}
-		{
 			x: -9.5d
 			y: 2.5d
 			subtitle: "Probably shouldn't launch that rocket from some grass."
@@ -323,8 +229,9 @@
 			}]
 		}
 		{
-			x: -8.0d
-			y: -6.5d
+			x: -15.5d
+			y: 0.5d
+			shape: "diamond"
 			description: [
 				"From this point on it might be wise to look into steam powering your setup."
 				"Aim for a level 9 boiler as these are incredibly efficient for their cost, the moment electricity generation enters the room those stress units will be eaten up in no time."
@@ -335,29 +242,6 @@
 				type: "advancement"
 				advancement: "create:steam_engine"
 				criterion: ""
-			}]
-		}
-		{
-			x: -9.0d
-			y: -7.5d
-			subtitle: "What's that, free fire resistance set bonus???"
-			id: "760D59395A2E71F6"
-			tasks: [{
-				id: "5CB1D31745A36C86"
-				type: "advancement"
-				advancement: "minecraft:nether/netherite_armor"
-				criterion: ""
-			}]
-			rewards: [{
-				id: "62088943E2152E34"
-				type: "item"
-				item: {
-					id: "minecraft:potion"
-					Count: 1b
-					tag: {
-						Potion: "minecraft:long_fire_resistance"
-					}
-				}
 			}]
 		}
 		{
@@ -452,18 +336,6 @@
 			}]
 		}
 		{
-			x: -13.0d
-			y: -6.5d
-			subtitle: "Roll iron into rods, allowing the creation of more storage features, and industrial decoration."
-			hide_dependency_lines: true
-			id: "4D1110519363CD89"
-			tasks: [{
-				id: "04B48EB175AED1B7"
-				type: "item"
-				item: "createaddition:rolling_mill"
-			}]
-		}
-		{
 			x: -11.0d
 			y: 4.0d
 			shape: "gear"
@@ -527,28 +399,11 @@
 			}]
 		}
 		{
-			x: -12.0d
-			y: -6.5d
-			shape: "gear"
-			description: ["The smelter now exists to make bulk smelting much easier. You only get a 1.1x raw ore multiplier, with the trade-off of extreme ease of smelting in bulk without the infrastructure."]
-			id: "0A9BAB1BB59B4C7F"
-			tasks: [{
-				id: "1DD577BC9CBE1101"
-				type: "item"
-				item: "tconstruct:smeltery_controller"
-			}]
-			rewards: [{
-				id: "72645C7657845CEE"
-				type: "item"
-				item: "tconstruct:seared_bricks"
-				count: 16
-			}]
-		}
-		{
-			x: -11.0d
-			y: -6.5d
+			x: -10.0d
+			y: 1.5d
 			subtitle: "Crush for assorted goodies."
 			description: ["Rather than being dead-weight, deepslate can be crushed into random ores at extremely low odds, that tunnel bore filled with 100k deepslate now has a use..."]
+			dependencies: ["429D2340C2B20A60"]
 			id: "014B450CC8D472A4"
 			tasks: [{
 				id: "6DF91EC85EA51BE5"
@@ -585,75 +440,24 @@
 			]
 		}
 		{
-			x: -17.5d
-			y: -6.0d
-			subtitle: "Rockets need FUEL"
-			description: [
-				""
-				"Ensure you have crafted enough buckets for the return trip! This is a mistake you only make once."
-			]
-			id: "6CFD1B03F10B04AD"
-			tasks: [{
-				id: "6F042841FD515CED"
-				type: "item"
-				item: "ad_astra:fuel_bucket"
-			}]
-			rewards: [{
-				id: "105265BF76F2BF3E"
-				type: "item"
-				item: "create:railway_casing"
-				count: 15
-			}]
-		}
-		{
-			x: -18.5d
-			y: -5.0d
+			x: -10.5d
+			y: -2.5d
 			description: ["The most pure of organic material, tree fertiliser can serve as the base of the initial fuel production. You will obtain easier methods later, but this is what you have to deal with now."]
-			hide_dependency_lines: true
+			dependencies: ["5406D5779F7B697A"]
 			min_required_tasks: 1
 			id: "59C1BBC3C57A277A"
-			tasks: [
-				{
-					id: "4517FCB4B211BE97"
-					type: "item"
-					item: "create:tree_fertilizer"
-				}
-				{
-					id: "0070A6A36C2EEE35"
-					type: "item"
-					item: "indrev:biomass"
-				}
-			]
-		}
-		{
-			x: -16.5d
-			y: -5.0d
-			description: ["A primary component in the basic fuel recipe."]
-			hide_dependency_lines: true
-			id: "67862FE789FEC93C"
 			tasks: [{
-				id: "5253B40F1B304FDC"
+				id: "4517FCB4B211BE97"
 				type: "item"
-				item: "createaddition:seed_oil_bucket"
+				item: "techreborn:compressed_plantball"
 			}]
 		}
 		{
-			x: -17.5d
-			y: -5.0d
-			description: ["The main component of fuel, more efficient recipes will be revealed once steel can be produced."]
-			hide_dependency_lines: true
-			id: "65CBD16E989F60EE"
-			tasks: [{
-				id: "73D4479E5E0913B9"
-				type: "item"
-				item: "ad_astra:oil_bucket"
-			}]
-		}
-		{
-			x: -18.5d
-			y: -6.0d
+			x: -9.5d
+			y: -2.5d
 			subtitle: "Crush some fertiliser into submission."
 			description: ["This will take a while you little masochist."]
+			dependencies: ["59C1BBC3C57A277A"]
 			id: "1533B14714529386"
 			tasks: [{
 				id: "6C67D64488400F03"
@@ -691,8 +495,8 @@
 			}]
 		}
 		{
-			x: -20.776190476190486d
-			y: 0.2646258503401171d
+			x: -18.0d
+			y: 1.0d
 			dependencies: ["306D009F01634115"]
 			id: "7909A5A0E194C800"
 			tasks: [{
@@ -703,7 +507,7 @@
 			rewards: [{
 				id: "1A7D716BFFA40438"
 				type: "item"
-				item: "indrev:silver_nugget"
+				item: "techreborn:silver_nugget"
 			}]
 		}
 		{
@@ -718,6 +522,7 @@
 			}]
 		}
 		{
+			icon: "ad_astra:iron_plating"
 			x: -18.5d
 			y: 2.0d
 			dependencies: ["306D009F01634115"]
@@ -740,20 +545,9 @@
 			}]
 		}
 		{
-			x: -16.5d
+			x: -16.0d
 			y: -1.5d
 			dependencies: ["1A08EE7C76242947"]
-			id: "595839F1E1013C84"
-			tasks: [{
-				id: "2028FFC7334CB32F"
-				type: "item"
-				item: "techreborn:electronic_circuit"
-			}]
-		}
-		{
-			x: -15.5d
-			y: -1.5d
-			dependencies: ["595839F1E1013C84"]
 			id: "73973C5E6D2573B8"
 			tasks: [{
 				id: "05C23BCCCFD166F1"
@@ -846,9 +640,9 @@
 			]
 		}
 		{
-			x: -10.0d
+			x: -8.5d
 			y: -2.5d
-			dependencies: ["5406D5779F7B697A"]
+			dependencies: ["1533B14714529386"]
 			id: "57724BFDF0A78FAF"
 			tasks: [{
 				id: "6FDEEB9ACA45AA73"
@@ -908,7 +702,7 @@
 			]
 		}
 		{
-			x: -4.5d
+			x: -5.5d
 			y: 0.0d
 			shape: "gear"
 			dependencies: [
@@ -1038,8 +832,8 @@
 			}]
 		}
 		{
-			x: -18.20884353741497d
-			y: 0.22789115646256874d
+			x: -18.0d
+			y: -0.5d
 			dependencies: ["306D009F01634115"]
 			id: "59694D713430B333"
 			tasks: [{
@@ -1068,6 +862,195 @@
 					id: "37D1856D01B2D99A"
 					type: "item"
 					item: "ad_astra:desh_tank"
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: 0.0d
+			dependencies: ["6E20B194F5CA8F22"]
+			id: "63DCF596AAA9A232"
+			tasks: [{
+				id: "16182598B074073D"
+				type: "dimension"
+				icon: "ad_astra:mars_globe"
+				dimension: "ad_astra:mars"
+			}]
+		}
+		{
+			x: -17.0d
+			y: -1.0d
+			dependencies: ["59694D713430B333"]
+			id: "5A8CB0CAB6E98321"
+			tasks: [{
+				id: "008BAD5CE1A2185E"
+				type: "item"
+				item: "ad_astra:oxygen_distributor"
+			}]
+		}
+		{
+			x: -9.5d
+			y: 4.0d
+			dependencies: ["3EA569DE4AC60CC2"]
+			id: "3D1DFB4B570E062A"
+			tasks: [{
+				id: "56AF57C351155D92"
+				type: "item"
+				item: "immersive_aircraft:airship"
+			}]
+		}
+		{
+			x: -15.0d
+			y: -4.5d
+			hide_dependency_lines: true
+			dependencies: ["752215E611021472"]
+			id: "6AC13A0D339D57F4"
+			tasks: [
+				{
+					id: "18D1656A6C466458"
+					type: "item"
+					item: "techreborn:lamp_led"
+				}
+				{
+					id: "6B681DC7AE014A32"
+					type: "item"
+					item: "techreborn:lamp_incandescent"
+				}
+			]
+		}
+		{
+			x: -16.0d
+			y: -0.5d
+			dependencies: [
+				"5D69FB71CD8A1391"
+				"73973C5E6D2573B8"
+			]
+			id: "0ADFE1D87DB51856"
+			tasks: [{
+				id: "75F20E3FC26D6824"
+				type: "item"
+				item: "techreborn:basic_storage_unit"
+			}]
+		}
+		{
+			title: "Nuclear?"
+			x: -21.0d
+			y: -0.5d
+			dependencies: ["306D009F01634115"]
+			id: "63C197DE5231155D"
+			tasks: [{
+				id: "7AA332BD2DA6428E"
+				type: "structure"
+				icon: "chipped:yellow_concrete_19"
+				structure: "incendium:nether_reactor"
+			}]
+		}
+		{
+			x: -21.0d
+			y: 1.0d
+			dependencies: ["306D009F01634115"]
+			id: "30CFD7D46876627F"
+			tasks: [{
+				id: "4F47EF8D3F091A99"
+				type: "advancement"
+				advancement: "ad_astra:moon_dungeon"
+				criterion: ""
+			}]
+		}
+		{
+			x: -16.5d
+			y: 5.0d
+			dependencies: ["0E59475F511DBCC7"]
+			id: "1E83F62D325A44F2"
+			tasks: [
+				{
+					id: "485C131D88348C81"
+					type: "item"
+					item: "tconstruct:scorched_table"
+				}
+				{
+					id: "1559D8CE0491D5B8"
+					type: "item"
+					item: "tconstruct:scorched_fuel_tank"
+				}
+				{
+					id: "49040D51B95CA4DA"
+					type: "item"
+					item: "tconstruct:scorched_basin"
+				}
+				{
+					id: "632527AFC8202ADE"
+					type: "item"
+					item: "tconstruct:scorched_bricks"
+				}
+			]
+		}
+		{
+			x: -17.0d
+			y: 4.0d
+			dependencies: ["51BD31261A5725E3"]
+			id: "0E59475F511DBCC7"
+			tasks: [{
+				id: "04FCFDAB24FECF45"
+				type: "item"
+				item: "create:scoria"
+				count: 256L
+			}]
+		}
+		{
+			x: -17.5d
+			y: 5.0d
+			dependencies: ["0E59475F511DBCC7"]
+			id: "5355CA2F0BA74BF1"
+			tasks: [{
+				id: "197ABEE39D155F79"
+				type: "item"
+				item: "tconstruct:foundry_controller"
+			}]
+		}
+		{
+			x: -9.5d
+			y: 5.0d
+			id: "3B27F482BC8939A6"
+			tasks: [{
+				id: "551EF4577CB1944E"
+				type: "item"
+				item: "automobility:auto_mechanic_table"
+			}]
+		}
+		{
+			x: -10.0d
+			y: 6.0d
+			dependencies: ["3B27F482BC8939A6"]
+			id: "12DFDA396C44D93D"
+			tasks: [
+				{
+					id: "43CFCA7DAA542B16"
+					type: "item"
+					item: "automobility:automobile_assembler"
+				}
+				{
+					id: "55186D7A993DB48D"
+					type: "item"
+					item: "automobility:crowbar"
+				}
+			]
+		}
+		{
+			x: -9.0d
+			y: 6.0d
+			dependencies: ["3B27F482BC8939A6"]
+			id: "5D0287CE6D3481CC"
+			tasks: [
+				{
+					id: "7C715B49FBC93970"
+					type: "item"
+					item: "automobility:dash_panel"
+				}
+				{
+					id: "2C0B6E0609E8D4C0"
+					type: "item"
+					item: "automobility:launch_gel"
 				}
 			]
 		}

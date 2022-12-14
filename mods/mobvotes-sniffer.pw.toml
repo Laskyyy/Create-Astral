@@ -1,0 +1,14 @@
+name = "Mobvotes Sniffer"
+filename = "sniffer-fabric-1.18.2-1.1.2.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "446adb9868ebb4b11f88a4947da29ef48866bc08"
+
+[update]
+[update.curseforge]
+file-id = 4105940
+project-id = 686090

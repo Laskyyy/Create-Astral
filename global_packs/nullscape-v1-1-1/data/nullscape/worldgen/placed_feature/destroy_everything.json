@@ -1,0 +1,20 @@
+{
+	"feature": "nullscape:destroy_everything",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 250
+		},
+		{
+			"type": "minecraft:count",
+			"count": 20
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "heightmap",
+			"heightmap": "WORLD_SURFACE"
+		}
+	]
+}

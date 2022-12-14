@@ -7,18 +7,32 @@
 	icon: "minecraft:furnace"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	images: [{
-		x: -7.0d
-		y: 8.5d
-		width: 2.0d
-		height: 1.5d
-		rotation: 0.0d
-		image: "ad_astra:textures/gui/countdown_numbers/1.png"
-		hover: ["Division One: Promising Beginnings"]
-		click: "raow"
-		dev: false
-		corner: false
-	}]
+	images: [
+		{
+			x: -7.0d
+			y: 8.5d
+			width: 2.0d
+			height: 1.5d
+			rotation: 0.0d
+			image: "ad_astra:textures/gui/countdown_numbers/1.png"
+			hover: ["Division One: Promising Beginnings"]
+			click: "raow"
+			dev: false
+			corner: false
+		}
+		{
+			x: -5.0d
+			y: 6.5d
+			width: 6.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "createastral:textures/item/logos_binted.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
 	quests: [
 		{
 			title: "A knight in shining copper."
@@ -874,7 +888,7 @@
 				}
 			}
 			x: -8.5d
-			y: 8.0d
+			y: 8.5d
 			description: ["The package crafter will allow any combination of blocks to be made into framed packages, perfect for storing large quantities of singular blocks."]
 			hide_dependency_lines: true
 			dependencies: ["11ACD707D7284920"]
@@ -996,9 +1010,9 @@
 				Count: 1b
 				tag: {
 					Automobile: {
-						engine: "automobility:stone"
-						frame: "automobility:yellow_tractor"
 						wheels: "automobility:standard"
+						frame: "automobility:yellow_tractor"
+						engine: "automobility:stone"
 					}
 				}
 			}
@@ -1085,9 +1099,9 @@
 						Count: 1b
 						tag: {
 							Automobile: {
-								wheels: "automobility:standard"
-								frame: "automobility:yellow_tractor"
 								engine: "automobility:stone"
+								frame: "automobility:yellow_tractor"
+								wheels: "automobility:standard"
 							}
 						}
 					}
@@ -1108,7 +1122,7 @@
 		{
 			x: -2.0d
 			y: 8.0d
-			shape: "octagon"
+			shape: "gear"
 			subtitle: "Chapter 2 Unlock."
 			dependencies: ["601A619C6E96920A"]
 			id: "1337920DA45E72AD"
@@ -1117,6 +1131,94 @@
 				type: "item"
 				item: "createastral:bronze_ingot"
 				count: 10L
+			}]
+		}
+		{
+			x: -9.0d
+			y: 7.5d
+			dependencies: ["5D69FB71CD8A1391"]
+			id: "3147C3CCBC6856B6"
+			tasks: [
+				{
+					id: "4AD8D3B2156A38B8"
+					type: "item"
+					item: "techreborn:storage_buffer"
+				}
+				{
+					id: "6435D0B2DADB3D95"
+					type: "item"
+					item: "techreborn:crude_storage_unit"
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: 13.5d
+			id: "791D3292F22706E6"
+			tasks: [{
+				id: "40EFAB1EA82C0179"
+				type: "item"
+				item: "chipped:botanist_workbench"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 13.5d
+			id: "61268E9695C2B0B0"
+			tasks: [{
+				id: "686BE4BE4E9EE3FB"
+				type: "item"
+				item: "chipped:glassblower"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 13.5d
+			id: "441D6F369B7912E5"
+			tasks: [{
+				id: "4F02DF2E116D3E92"
+				type: "item"
+				item: "chipped:carpenters_table"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 13.5d
+			id: "5FFC7DFF4294C81A"
+			tasks: [{
+				id: "74EB7FF43AA93703"
+				type: "item"
+				item: "chipped:loom_table"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 13.5d
+			id: "65C0B4100CD88D77"
+			tasks: [{
+				id: "184486A840B467DE"
+				type: "item"
+				item: "chipped:mason_table"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 13.5d
+			id: "11B2E25F18AD9C35"
+			tasks: [{
+				id: "1077A31DBE0B61EF"
+				type: "item"
+				item: "chipped:alchemy_bench"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 13.5d
+			id: "30A8E779764AE865"
+			tasks: [{
+				id: "0F24228CDCEB910E"
+				type: "item"
+				item: "chipped:mechanist_workbench"
 			}]
 		}
 	]

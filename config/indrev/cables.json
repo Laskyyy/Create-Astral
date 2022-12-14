@@ -1,0 +1,14 @@
+{
+  "cableMk1": 128,
+  "cableMk2": 512,
+  "cableMk3": 4096,
+  "cableMk4": 16384,
+  "itemPipeMk1": 32,
+  "itemPipeMk2": 64,
+  "itemPipeMk3": 128,
+  "itemPipeMk4": 256,
+  "fluidPipeMk1": 1,
+  "fluidPipeMk2": 2,
+  "fluidPipeMk3": 4,
+  "fluidPipeMk4": 8
+}

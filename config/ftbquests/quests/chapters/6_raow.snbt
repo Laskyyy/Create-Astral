@@ -1,0 +1,549 @@
+{
+	id: "5CC09F97DD5CD4CA"
+	group: ""
+	order_index: 5
+	filename: "6_raow"
+	title: "6) Raow"
+	icon: "create:refined_radiance"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: -2.0d
+		y: -4.0d
+		width: 3.0d
+		height: 3.0d
+		rotation: 0.0d
+		image: "ad_astra:textures/sky/mercury.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			x: 0.0d
+			y: 6.0d
+			dependencies: [
+				"00EB34849356498A"
+				"0AB999328E2EB545"
+			]
+			id: "35C3F50E90C39464"
+			tasks: [{
+				id: "65205AD20423F707"
+				type: "item"
+				item: {
+					id: "create:chromatic_compound"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: 7.0d
+			dependencies: ["35C3F50E90C39464"]
+			id: "1E93A90AEF614FA3"
+			tasks: [
+				{
+					id: "16E34BBA321B1591"
+					type: "item"
+					item: "create:shadow_steel"
+				}
+				{
+					id: "49D7814698B13860"
+					type: "item"
+					item: "create:refined_radiance"
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: 5.0d
+			dependencies: ["6F1D5D69B4E9266E"]
+			id: "00EB34849356498A"
+			tasks: [{
+				id: "0CD2F946292C0C82"
+				type: "item"
+				item: "techreborn:uu_matter"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.0d
+			dependencies: ["7A4255522DA6FEB7"]
+			id: "1B4E78DD0C8DD4E7"
+			tasks: [{
+				id: "76798BDD9C18FCC5"
+				type: "item"
+				item: "ad_astra:deepslate_calorite_ore"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.0d
+			dependencies: ["26E14ABB9FB1F8EB"]
+			id: "11F776AD4AEA326A"
+			tasks: [{
+				id: "6B36647F19D4A0E4"
+				type: "item"
+				item: "techreborn:industrial_circuit"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.0d
+			dependencies: ["11F776AD4AEA326A"]
+			id: "21A0BECE0BA8537F"
+			tasks: [
+				{
+					id: "245C147012EC7D57"
+					type: "item"
+					item: "techreborn:industrial_storage_unit"
+				}
+				{
+					id: "0AE1E24146E0A0AF"
+					type: "item"
+					item: "techreborn:industrial_tank_unit"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 6.5d
+			dependencies: ["18F3314CC2E353AB"]
+			id: "15845FFA9B8ADC8F"
+			tasks: [{
+				id: "4924E70FAAFDF9CA"
+				type: "item"
+				item: {
+					id: "techreborn:nanosaber"
+					Count: 1b
+					tag: {
+						isActive: 1b
+						energy: 1000000L
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: 4.5d
+			dependencies: ["18F3314CC2E353AB"]
+			id: "454FA2A4B535C20A"
+			tasks: [{
+				id: "1FBFD9F1BAA1ED30"
+				type: "advancement"
+				advancement: "ad_astra:jet_suit"
+				criterion: ""
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			id: "7A4255522DA6FEB7"
+			tasks: [{
+				id: "5602FF437BAA6984"
+				type: "dimension"
+				icon: "ad_astra:mercury_globe"
+				dimension: "ad_astra:mercury"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.0d
+			dependencies: ["7A4255522DA6FEB7"]
+			id: "4329020373E27B1F"
+			tasks: [{
+				id: "2BC1C5C71643A2D9"
+				type: "item"
+				item: "techreborn:deepslate_iridium_ore"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 5.5d
+			id: "145DB2939CA23578"
+			tasks: [{
+				id: "42893148C0486F38"
+				type: "item"
+				item: {
+					id: "techreborn:industrial_drill"
+					Count: 1b
+					tag: {
+						energy: 1000000L
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: 6.0d
+			id: "15D4CF543BB0B94F"
+			tasks: [{
+				id: "439FAA31282FA86E"
+				type: "item"
+				item: {
+					id: "techreborn:industrial_chainsaw"
+					Count: 1b
+					tag: {
+						energy: 1000000L
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: 7.5d
+			id: "596186F7A06DD4D1"
+			tasks: [{
+				id: "41D73AB875366823"
+				type: "item"
+				item: {
+					id: "techreborn:industrial_jackhammer"
+					Count: 1b
+					tag: {
+						energy: 1000000L
+					}
+				}
+			}]
+		}
+		{
+			x: -4.5d
+			y: 4.0d
+			id: "4A508A5DE354EC3C"
+			tasks: [{
+				id: "7923187226B54FF9"
+				type: "dimension"
+				icon: "minecraft:ender_eye"
+				dimension: "minecraft:the_end"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 4.0d
+			dependencies: [
+				"3705B91C0D4EA2A0"
+				"2605212C0EC5C277"
+			]
+			id: "6F1D5D69B4E9266E"
+			tasks: [{
+				id: "75713A42067B0433"
+				type: "item"
+				item: "techreborn:matter_fabricator"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.5d
+			dependencies: ["34611496C02ECF4E"]
+			id: "26E14ABB9FB1F8EB"
+			tasks: [{
+				id: "17C15B60A64843ED"
+				type: "item"
+				item: "techreborn:iridium_alloy_plate"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 5.0d
+			dependencies: ["669ADA8AEADEAD5F"]
+			id: "0537C5A3B3A41F19"
+			tasks: [{
+				id: "323482063C7CCEB0"
+				type: "item"
+				item: "techreborn:superconductor"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 6.0d
+			id: "0AB999328E2EB545"
+			tasks: [{
+				id: "03D223DA92FEFEF6"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "kubejs:shimmer"
+					}
+				}
+			}]
+		}
+		{
+			title: "placeholder astral ingot"
+			x: -2.0d
+			y: 10.0d
+			id: "18D6162BB90CC58D"
+			tasks: [{
+				id: "27D6CE1537BAEDE9"
+				type: "item"
+				item: "tconstruct:knightslime_ingot"
+			}]
+		}
+		{
+			title: "That new bar or whatever it was called"
+			x: -2.0d
+			y: 5.5d
+			dependencies: [
+				"1E93A90AEF614FA3"
+				"78932223283B0376"
+			]
+			id: "18F3314CC2E353AB"
+			tasks: [{
+				id: "7E21B170D48B08E6"
+				type: "item"
+				item: "minecraft:netherite_ingot"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 9.5d
+			dependencies: ["18D6162BB90CC58D"]
+			id: "2F39FDFB0C6BCCAF"
+			tasks: [{
+				id: "5CBE803BCC08BFBD"
+				type: "item"
+				item: "create:creative_motor"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 8.5d
+			dependencies: ["18D6162BB90CC58D"]
+			id: "0743798EA35F1FE0"
+			tasks: [{
+				id: "6E1009E64690A49C"
+				type: "item"
+				item: "create:creative_fluid_tank"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 9.5d
+			dependencies: ["18D6162BB90CC58D"]
+			id: "63DA60DE474050AF"
+			tasks: [{
+				id: "3C32995C8EF007D1"
+				type: "item"
+				item: "create:creative_blaze_cake"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 11.5d
+			dependencies: ["18D6162BB90CC58D"]
+			id: "77F2E3999E29D646"
+			tasks: [{
+				id: "294066E41D7C6060"
+				type: "item"
+				item: "createaddition:creative_energy"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 11.5d
+			dependencies: ["18D6162BB90CC58D"]
+			id: "5BB6CDAEEA228EEA"
+			tasks: [{
+				id: "2C0FB134A59CABBB"
+				type: "item"
+				item: "create:handheld_worldshaper"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 2.5d
+			dependencies: ["11F776AD4AEA326A"]
+			id: "3705B91C0D4EA2A0"
+			tasks: [
+				{
+					id: "365D2B43D0C60CEE"
+					type: "item"
+					item: "techreborn:lapotron_crystal"
+				}
+				{
+					id: "7C490195DEDC649C"
+					type: "item"
+					item: "techreborn:energy_flow_chip"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			dependencies: [
+				"4329020373E27B1F"
+				"1B4E78DD0C8DD4E7"
+			]
+			id: "34611496C02ECF4E"
+			tasks: [{
+				id: "25422A255709A092"
+				type: "item"
+				item: "techreborn:iridium_alloy_ingot"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 7.0d
+			dependencies: ["7A25FF7058F0C3CD"]
+			id: "78932223283B0376"
+			tasks: [{
+				id: "6E5E7D2A1C158814"
+				type: "item"
+				item: "techreborn:fusion_control_computer"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 6.0d
+			dependencies: ["0537C5A3B3A41F19"]
+			id: "7A25FF7058F0C3CD"
+			tasks: [{
+				id: "52D1D476DE48D2DD"
+				type: "item"
+				item: "techreborn:fusion_coil"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 7.0d
+			dependencies: ["1E93A90AEF614FA3"]
+			id: "5E7A2EC55B6B1DF9"
+			tasks: [
+				{
+					id: "2CA47210587A07BB"
+					type: "item"
+					item: {
+						id: "createastral:radiant_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5B8230512E0F9AB1"
+					type: "item"
+					item: {
+						id: "createastral:radiant_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "04FBEEFFA5594A6A"
+					type: "item"
+					item: {
+						id: "createastral:radiant_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "33D8E978A667A1C5"
+					type: "item"
+					item: {
+						id: "createastral:radiant_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "idk we have a tier to work with so like meme planets or something?"
+			x: -3.5d
+			y: 8.5d
+			id: "2C47091E3B6EF9AA"
+			tasks: [{
+				id: "1341C35882E6C32B"
+				type: "item"
+				item: {
+					id: "ad_astra:tier_4_rocket"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: 4.0d
+			dependencies: [
+				"18B380AA3519AFCE"
+				"2F2C790D543694FF"
+			]
+			id: "2605212C0EC5C277"
+			tasks: [{
+				id: "17D1194695CD9AB4"
+				type: "item"
+				item: "techreborn:scrap"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 3.0d
+			id: "18B380AA3519AFCE"
+			tasks: [{
+				id: "6CE102A86C617398"
+				type: "item"
+				item: "techreborn:recycler"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 4.0d
+			id: "2F2C790D543694FF"
+			tasks: [{
+				id: "2920AFC8D06F7153"
+				type: "item"
+				item: "techreborn:scrapboxinator"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 4.0d
+			dependencies: [
+				"3705B91C0D4EA2A0"
+				"4A508A5DE354EC3C"
+			]
+			id: "669ADA8AEADEAD5F"
+			tasks: [{
+				id: "71E8E4F4BC2141B1"
+				type: "item"
+				item: "createastral:ender_heating_coil"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.5d
+			dependencies: ["3705B91C0D4EA2A0"]
+			id: "3856A2E3E58A8BB6"
+			tasks: [{
+				id: "4D6CB0F8256EF237"
+				type: "item"
+				item: "powah:reactor_niotic"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.5d
+			dependencies: [
+				"391DABA73E51CB87"
+				"3705B91C0D4EA2A0"
+			]
+			id: "49171A9164934608"
+			tasks: [{
+				id: "1F34F8E86E7F7D45"
+				type: "item"
+				item: "bosses_of_mass_destruction:levitation_block"
+			}]
+		}
+	]
+}

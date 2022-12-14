@@ -260,7 +260,8 @@ onEvent('item.registry.armor_tiers', event => {
 
 onEvent('item.registry', event => {
 	// Register new items here
-	
+
+event.create('createastral:subatomic_ingot'),
 event.create('createastral:astral_conduit'),
 event.create('createastral:andesite_compound'),
 event.create('createastral:bronze_sheet'),
@@ -1004,11 +1005,11 @@ onEvent('worldgen.add', event => {
 				category: "river"
 			}
 		}]
-		ore.addTarget('#ad_astra:moon_ore_replaceables', 'techreborn:deepslate_ruby_ore')
+		ore.addTarget('#ad_astra:moon_ore_replaceables', 'ae2:deepslate_quartz_ore')
 
-		ore.count([10, 10])
+		ore.count([10, 20])
 			.squared()
-			.triangleHeight(-64, 85)
+			.triangleHeight(0, 85)
 	})
 
   event.addOre((ore) => {
@@ -1022,7 +1023,21 @@ onEvent('worldgen.add', event => {
 
 		ore.count([25, 40])
 			.squared()
-			.triangleHeight(-64, 85)
+			.triangleHeight(0, 115)
+	})
+
+  event.addOre((ore) => {
+		ore.id = "kubejs:radioactive" // optional
+		ore.biomes = [{
+			not: {
+				category: "river"
+			}
+		}]
+		ore.addTarget('#ad_astra:moon_ore_replaceables', 'techreborn:deepslate_uraninite_ore')
+
+		ore.count([5, 25])
+			.squared()
+			.triangleHeight(0, 115)
 	})
 
   event.addOre((ore) => {
@@ -1107,9 +1122,24 @@ onEvent('worldgen.add', event => {
 
 		ore.count([10, 20])
 			.squared()
-			.triangleHeight(-64, 85)
+			.triangleHeight(0, 85)
+	})
+
+  event.addOre((ore) => {
+		ore.id = "kubejs:basalt" // optional
+		ore.biomes = [{
+			not: {
+				category: "river"
+			}
+		}]
+		ore.addTarget('#ad_astra:moon_ore_replaceables', 'create:scoria')
+
+
+		ore.count([1, 2])
+			.squared()
+			.triangleHeight(60, 110)
+    ore.size = 60
 	})
   
-
 })
   

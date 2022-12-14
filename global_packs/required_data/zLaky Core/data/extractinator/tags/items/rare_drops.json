@@ -2,7 +2,7 @@
   "replace": "true",
   "values": [
     "minecraft:redstone",
-    "minecraft:lapis_lazuli",
+    "ae2:certus_quartz_dust",
     "minecraft:quartz"
   ]
 }

@@ -59,16 +59,16 @@
 		[recipes.ore_rates.foundry]
 			#Number of nuggets produced per metal ore unit melted. 9 nuggets would give 1 ingot
 			#Range: 1 ~ 45
-			nuggetsPerMetal = 9
+			nuggetsPerMetal = 14
 			#Number of gem shards produced per gem ore unit melted. 4 gem shards would give 1 gem
 			#Range: 1 ~ 20
-			shardsPerGem = 4
+			shardsPerGem = 10
 
 		#Byprouct rates when melting in the foundry
 		[recipes.ore_rates.foundry_byproduct]
 			#Number of nuggets produced per metal ore unit melted. 9 nuggets would give 1 ingot
 			#Range: 1 ~ 45
-			nuggetsPerMetal = 3
+			nuggetsPerMetal = 4
 			#Number of gem shards produced per gem ore unit melted. 4 gem shards would give 1 gem
 			#Range: 1 ~ 20
 			shardsPerGem = 4

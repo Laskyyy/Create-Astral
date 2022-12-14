@@ -43,7 +43,7 @@ countDownTicks = 200
 acceleration = 0.005
 maxSpeed = 0.5
 entitiesBurnUnderRocket = true
-tankBuckets = 6
+tankBuckets = 3
 [rover]
 explodeRoverInLava = true
 fuelPerTick = 27

@@ -1,0 +1,140 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.8,
+        "feature": {
+          "feature": {
+            "type": "minecraft:tree",
+            "config": {
+              "ignore_vines": false,
+              "force_dirt": false,
+              "minimum_size": {
+                "type": "minecraft:two_layers_feature_size",
+                "min_clipped_height": 6,
+                "limit": 1,
+                "lower_size": 2,
+                "upper_size": 4
+              },
+              "dirt_provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "minecraft:dead_fire_coral_block"
+                }
+              },
+              "sapling_provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "minecraft:stone"
+                }
+              },
+              "trunk_provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "minecraft:bone_block",
+                  "Properties": {
+                    "axis": "y"
+                  }
+                }
+              },
+              "foliage_provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "minecraft:air"
+                }
+              },
+              "trunk_placer": {
+                "type": "minecraft:forking_trunk_placer",
+                "base_height": 4,
+                "height_rand_a": 3,
+                "height_rand_b": 1
+              },
+              "foliage_placer": {
+                "type": "minecraft:pine_foliage_placer",
+                "radius": 0,
+                "offset": 0,
+                "height": 0
+              },
+              "decorators": []
+            }
+          },
+          "placement": []
+        }
+      }
+    ],
+    "default": {
+      "feature": {
+        "type": "minecraft:tree",
+        "config": {
+          "ignore_vines": false,
+          "force_dirt": false,
+          "minimum_size": {
+            "type": "minecraft:two_layers_feature_size",
+            "min_clipped_height": 6,
+            "limit": 1,
+            "lower_size": 2,
+            "upper_size": 4
+          },
+          "dirt_provider": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:dead_fire_coral_block"
+            }
+          },
+          "sapling_provider": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:stone"
+            }
+          },
+          "trunk_provider": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:bone_block",
+              "Properties": {
+                "axis": "y"
+              }
+            }
+          },
+          "foliage_provider": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "weight": 6,
+                "data": {
+                  "Name": "minecraft:dead_brain_coral_block"
+                }
+              },
+              {
+                "weight": 1,
+                "data": {
+                  "Name": "minecraft:air"
+                }
+              }
+            ]
+          },
+          "trunk_placer": {
+            "type": "minecraft:forking_trunk_placer",
+            "base_height": 7,
+            "height_rand_a": 5,
+            "height_rand_b": 4
+          },
+          "foliage_placer": {
+            "type": "minecraft:acacia_foliage_placer",
+            "radius": {
+              "type": "minecraft:uniform",
+              "value": {
+                "min_inclusive": 2,
+                "max_inclusive": 3
+              }
+            },
+            "offset": 0
+          },
+          "decorators": []
+        }
+      },
+      "placement": []
+    }
+  }
+}

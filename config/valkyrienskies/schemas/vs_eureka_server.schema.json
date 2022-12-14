@@ -1,0 +1,135 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "anchorSpeed" : {
+      "type" : "number",
+      "format" : "double",
+      "description" : "Max speed an anchor will pull a ship back to the anchor point"
+    },
+    "antiVelocityMassRelevance" : {
+      "type" : "number",
+      "format" : "double",
+      "description" : "How much inertia affects Eureka ships. Max 10 = full inertia"
+    },
+    "assembliesPerTick" : {
+      "type" : "integer",
+      "format" : "int32",
+      "description" : "How many blocks to assemble per tick"
+    },
+    "ballastNoWeight" : {
+      "type" : "number",
+      "format" : "double",
+      "description" : "Weight of ballast when highest redstone power"
+    },
+    "ballastWeight" : {
+      "type" : "number",
+      "format" : "double",
+      "description" : "Weight of ballast when lowest redstone power"
+    },
+    "baseSpeed" : {
+      "type" : "number",
+      "format" : "double",
+      "description" : "The speed a ship with no engines can move at"
+    },
+    "blockBlacklist" : {
+      "description" : "Blacklist of blocks that don't get assembled",
+      "type" : "array",
+      "items" : {
+        "type" : "string",
+        "description" : "Blacklist of blocks that don't get assembled"
+      }
+    },
+    "diagonals" : {
+      "type" : "boolean",
+      "description" : "Whether the ship helm assembles diagonally connected blocks or not"
+    },
+    "doFluidDrag" : {
+      "type" : "boolean",
+      "description" : "Allow Eureka controlled ships to be affected by fluid drag"
+    },
+    "enableDisassembly" : {
+      "type" : "boolean",
+      "description" : "Disassembly is broken ATM, enable at ur own risk."
+    },
+    "engineHeatGain" : {
+      "type" : "number",
+      "format" : "float",
+      "description" : "The amount of heat a gain per tick (when burning)"
+    },
+    "engineHeatLoss" : {
+      "type" : "number",
+      "format" : "float",
+      "description" : "The amount of heat a engine loses per tick"
+    },
+    "enginePower" : {
+      "type" : "number",
+      "format" : "float",
+      "description" : "Movement power per engine heated fully"
+    },
+    "floaterBuoyantFactorPerKg" : {
+      "type" : "number",
+      "format" : "double",
+      "description" : "The amount extra that each floater will make the ship float, per kg mass"
+    },
+    "impulseElevationRate" : {
+      "type" : "integer",
+      "format" : "int32",
+      "description" : "Vertical sensitivity up ascend/descend"
+    },
+    "linearStabilizeMaxAntiVelocity" : {
+      "type" : "number",
+      "format" : "double",
+      "description" : "How fast a ship will stop. 1 = fast stop, 0 = slow stop"
+    },
+    "massPerBalloon" : {
+      "type" : "number",
+      "format" : "double",
+      "description" : "Amount of mass in kg a balloon can lift"
+    },
+    "maxCasualSpeed" : {
+      "type" : "number",
+      "format" : "float",
+      "description" : "Max speed of a ship without boosting"
+    },
+    "maxFloaterBuoyantFactor" : {
+      "type" : "number",
+      "format" : "double",
+      "description" : "The maximum amount extra each floater will multiply the buoyant force by, irrespective of mass"
+    },
+    "minEnginePower" : {
+      "type" : "number",
+      "format" : "float",
+      "description" : "Movement power per engine with minimal heat"
+    },
+    "neutralLimit" : {
+      "type" : "number",
+      "format" : "double",
+      "description" : "The Y level that a ship with 0 mass would naturally float to"
+    },
+    "popSideBalloonChance" : {
+      "type" : "number",
+      "format" : "double",
+      "description" : "Chance for popped balloons to pop adjacent balloons, per side"
+    },
+    "stabilizationSpeed" : {
+      "type" : "number",
+      "format" : "double",
+      "description" : "The speed at which the ship stabilizes"
+    },
+    "stabilizationTorqueConstant" : {
+      "type" : "number",
+      "format" : "double",
+      "description" : "How much torque a ship will apply to try and keep level"
+    },
+    "turnSpeed" : {
+      "type" : "number",
+      "format" : "double",
+      "description" : "Turn sensitivity of the ship helm"
+    },
+    "$schema" : {
+      "type" : "string"
+    }
+  },
+  "additionalProperties" : false
+}

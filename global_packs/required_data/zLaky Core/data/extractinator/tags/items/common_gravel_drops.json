@@ -3,8 +3,6 @@
   "values": [
     "minecraft:gunpowder",
     "minecraft:glowstone_dust",
-    "minecraft:coal",
-    "minecraft:redstone",
-    "minecraft:lapis_lazuli"
+    "ae2:certus_quartz_dust"
   ]
 }

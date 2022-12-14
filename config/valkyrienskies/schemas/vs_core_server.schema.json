@@ -1,0 +1,56 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "enableUdp" : {
+      "type" : "boolean",
+      "description" : "Is udp enabled? If not, the server will only use TCP"
+    },
+    "physics" : {
+      "type" : "object",
+      "properties" : {
+        "lodDetail" : {
+          "type" : "integer",
+          "format" : "int32",
+          "description" : "The detail of the collision LOD of ships, higher values are more detailed but heavier to compute"
+        }
+      },
+      "additionalProperties" : false,
+      "description" : "All related settings to the physics engine"
+    },
+    "pt" : {
+      "type" : "object",
+      "properties" : {
+        "physicsTicksPerGameTick" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "synchronizePhysics" : {
+          "type" : "boolean",
+          "description" : "Synchronize the physics thread and the game thread"
+        }
+      },
+      "additionalProperties" : false,
+      "title" : "Physics Thread Settings"
+    },
+    "shipLoadDistance" : {
+      "type" : "number",
+      "format" : "double",
+      "description" : "Ship load distance in blocks"
+    },
+    "shipUnloadDistance" : {
+      "type" : "number",
+      "format" : "double",
+      "description" : "Ship unload distance in blocks"
+    },
+    "udpPort" : {
+      "type" : "integer",
+      "format" : "int32",
+      "description" : "Port to attempt to establish UDP connections on"
+    },
+    "$schema" : {
+      "type" : "string"
+    }
+  },
+  "additionalProperties" : false
+}

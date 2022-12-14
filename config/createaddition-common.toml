@@ -27,7 +27,7 @@
 [alternator]
 	#Alternator efficiency relative to base conversion rate.
 	#Range: 0.01 ~ 1.0
-	generator_efficiency = 0.8
+	generator_efficiency = 0.5
 	#Alternator internal capacity in FE.
 	#Range: 0 ~ 2147483647
 	generator_capacity = 2048
@@ -71,10 +71,10 @@
 	wire_length = 16
 	#Connector max output in FE/t (Energy transfer).
 	#Range: 0 ~ 9223372036854775807
-	connector_max_output = 1024
+	connector_max_output = 32
 	#Connector internal input buffer in FE.
 	#Range: 0 ~ 9223372036854775807
-	connector_input_capacity = 2048
+	connector_input_capacity = 128
 
 #Accumulator
 [accumulator]

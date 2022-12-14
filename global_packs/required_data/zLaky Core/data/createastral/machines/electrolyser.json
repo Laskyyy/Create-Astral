@@ -1,7 +1,7 @@
 {
   "name": "Electrolyser",
   "appearance": {
-    "block": "adoptafloppa:floppa_block",    
+    "block": "phonos:copper_speaker",    
     "running": {
       "lightlevel": 15
     }

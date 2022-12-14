@@ -1,14 +1,14 @@
-name = "Lithium"
-filename = "lithium-fabric-mc1.18.2-0.10.2.jar"
+name = "Lithium (Fabric)"
+filename = "lithium-fabric-mc1.18.2-0.10.3.jar"
 side = "both"
 
 [download]
 mode = "metadata:curseforge"
 url = ""
 hash-format = "sha1"
-hash = "ddb9874625d8e091b1d88d699f9364b33237af55"
+hash = "d47d223403bbc4d14748141cdddc4beeb451fe4e"
 
 [update]
 [update.curseforge]
-file-id = 4081372
+file-id = 4143613
 project-id = 360438

@@ -1,0 +1,14 @@
+name = "Extractinator"
+filename = "extractinator-fabric-1.18.2-2.0.0.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "f6c3b04d516e118682bbfe2771a33cfa6cec1759"
+
+[update]
+[update.curseforge]
+file-id = 4124739
+project-id = 567114

@@ -24,7 +24,11 @@
     "sky_colors": false
   },
   "render_settings": {
-    "fog_distance": 33,
+    "fog_distance": 0,
+    "fog_start": 100,
+    "multi_dimension_fog_control": false,
+    "dimensionFogDistance": {},
+    "use_linear_flat_color_blender": false,
     "light_updates": true,
     "item_frame": true,
     "armor_stand": true,
@@ -45,6 +49,10 @@
     "use_adaptive_sync": false,
     "cloud_height": 192,
     "toasts": true,
+    "advancement_toast": true,
+    "recipe_toast": true,
+    "system_toast": true,
+    "tutorial_toast": true,
     "instant_sneak": false,
     "prevent_shaders": false,
     "use_fast_random": true

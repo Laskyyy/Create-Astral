@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "compressor:block/triple_compressed_blackstone"
+    }
+  }
+}
