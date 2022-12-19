@@ -3,14 +3,14 @@
 	group: ""
 	order_index: 2
 	filename: "chapter_3"
-	title: "3) Look to the stars"
+	title: "2) Getting industrial."
 	icon: "create:fluid_tank"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	images: [
 		{
-			x: 9.5d
-			y: 0.5d
+			x: 11.0d
+			y: -0.5d
 			width: 1.0d
 			height: 1.0d
 			rotation: 0.0d
@@ -37,6 +37,7 @@
 		{
 			x: 4.0d
 			y: -1.0d
+			subtitle: "Tech Reborn tanks also exist later"
 			description: ["You won't be able to use tinker's fluid tanks until owning a smeltery, however, create tanks just so happen to serve this function just fine. They will require a pipe to input fluid, as buckets cannot be directly used on them."]
 			dependencies: ["70799237323247B7"]
 			id: "6AEEE2B22E28945B"
@@ -72,6 +73,7 @@
 			}]
 		}
 		{
+			title: "Molten core"
 			x: 0.5d
 			y: -1.0d
 			description: ["Heat your seared melter with this, every single metal requires less than 800 degrees now, so this heat will be fine for the rest of your game."]
@@ -132,7 +134,7 @@
 			shape: "pentagon"
 			subtitle: "Do not eat"
 			hide_dependency_lines: true
-			dependencies: ["0FC0B4E8EC58F791"]
+			dependencies: ["7354F2BFB2591ECF"]
 			id: "1F79F4D01B219D7E"
 			tasks: [{
 				id: "6A0810245928DCDF"
@@ -157,7 +159,7 @@
 		{
 			x: 3.0d
 			y: 2.0d
-			subtitle: "Compatible with tinkers fluids"
+			subtitle: "Compatible with tinkers fluids AND casting basin + table recipes instead of a faucet"
 			description: ["This spout can be used in automation of recipes in casting tables and basins, as funnels, etc. also work on them. Neat."]
 			dependencies: ["557684C7D7B955B8"]
 			id: "17041A495A41EEFD"
@@ -183,10 +185,13 @@
 			}]
 		}
 		{
-			x: -0.5d
+			x: -1.5d
 			y: 0.0d
 			subtitle: "A note on tinkers integration"
-			description: ["Tinkers faucets can operate from any create liquid holding block, such as fluid tanks and filled basins!"]
+			description: [
+				"Tinkers faucets can operate from any create liquid holding block, such as fluid tanks and filled basins!"
+				"IMPORTANT!! These can be automated by transmitting a redstone signal into them!"
+			]
 			dependencies: ["0A34148EBAF329B3"]
 			id: "6D5301A68808F8E8"
 			tasks: [{
@@ -196,6 +201,7 @@
 			}]
 		}
 		{
+			title: "Get casting"
 			x: -0.5d
 			y: -1.0d
 			description: ["Casting tables/basins will allow you to convert that fluid storage into different forms. Buckets, blocks, ingots, whatever you currently require!"]
@@ -250,8 +256,11 @@
 			}]
 		}
 		{
-			x: 8.5d
-			y: 1.5d
+			title: "LETSGOOO"
+			x: 9.5d
+			y: 2.0d
+			subtitle: "Create is going ASTRAL"
+			description: ["Roll credits"]
 			dependencies: ["4D7BFA8973D61425"]
 			id: "624026189BBACBB0"
 			tasks: [{
@@ -262,8 +271,14 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 0.5d
+			x: 9.0d
+			y: -1.0d
+			subtitle: "What is the nether?"
+			description: [
+				"The nether no longer exists, never heard of it, nuh-uh."
+				"Make a regular portal using this pretty little block to cross the boundary to.... the moon...."
+			]
+			dependencies: ["00F3EA4A8FB5B11B"]
 			id: "0A71AC65808AFBE5"
 			tasks: [{
 				id: "2DBDDF4C51DE3879"
@@ -273,12 +288,11 @@
 			}]
 		}
 		{
-			x: 7.0d
+			title: "An Astral Gemstone..."
+			x: 9.0d
 			y: 0.5d
-			dependencies: [
-				"0A71AC65808AFBE5"
-				"267CD8D04921402E"
-			]
+			subtitle: "Light the portal."
+			dependencies: ["00F3EA4A8FB5B11B"]
 			id: "33F13EB2C45C36B3"
 			tasks: [{
 				id: "0C1658CB1EAE88C0"
@@ -287,8 +301,9 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 1.5d
+			x: 8.5d
+			y: 2.0d
+			subtitle: "To load oxygen into your suit however, some more specialised tools will be needed..."
 			dependencies: ["343B8B2BF76B1D3B"]
 			id: "4D7BFA8973D61425"
 			tasks: [{
@@ -298,8 +313,10 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 2.5d
+			x: 7.5d
+			y: 2.0d
+			subtitle: "Custom Astral Multiblock!"
+			description: ["The electrolyser (not to be confused with the Tech Reborn one) can have water pumped into it and using only the power of redstone, extract oxygen at a very slow pace. This will assist in preparing youself to go to the moon"]
 			dependencies: [
 				"267CD8D04921402E"
 				"3C26E1DEA0265C03"
@@ -320,6 +337,8 @@
 		{
 			x: 5.0d
 			y: 2.0d
+			subtitle: "Electron Tube PTSD"
+			description: ["Yes these used to cost 4x the amount, I know"]
 			dependencies: ["0F4C452C9C9AB1B8"]
 			id: "32B9EAE28E1C5D7A"
 			tasks: [{
@@ -329,8 +348,9 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 1.5d
+			x: 6.5d
+			y: 2.0d
+			subtitle: "This will be terrible for the industrial revolution"
 			dependencies: ["32B9EAE28E1C5D7A"]
 			id: "267CD8D04921402E"
 			tasks: [{
@@ -342,6 +362,8 @@
 		{
 			x: 4.0d
 			y: 2.0d
+			subtitle: "What a nice alloy, I hope I dont need to make loads of it"
+			description: ["Oh dear"]
 			dependencies: ["17041A495A41EEFD"]
 			id: "0F4C452C9C9AB1B8"
 			tasks: [{
@@ -351,13 +373,16 @@
 			}]
 		}
 		{
+			title: "Create: Astral"
 			icon: "ad_astra:moon_globe"
-			x: 8.5d
+			x: 10.5d
 			y: 0.5d
 			shape: "gear"
+			subtitle: "Can we get much higher."
 			dependencies: [
 				"33F13EB2C45C36B3"
 				"624026189BBACBB0"
+				"0A71AC65808AFBE5"
 			]
 			id: "15B9947ABCCB882F"
 			tasks: [{
@@ -367,8 +392,11 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: -0.5d
+			x: 6.5d
+			y: 0.5d
+			subtitle: "The Iconic Astral Branded Fluid"
+			description: ["Shimmer can be produced using the recipes provided, and fully automated with glow ink sacs and amethyst."]
+			dependencies: ["267CD8D04921402E"]
 			id: "00F3EA4A8FB5B11B"
 			tasks: [{
 				id: "1BE3D8C8806EA239"
@@ -379,6 +407,8 @@
 		{
 			x: 3.0d
 			y: 1.0d
+			subtitle: "Ohoho, tiered casings"
+			description: ["When making the next tier of casing, you'll be needing a lot of the previous tiered stuff too, and as such, over produce this and save yourself the future responsibility."]
 			dependencies: ["70799237323247B7"]
 			id: "557684C7D7B955B8"
 			tasks: [{
@@ -388,34 +418,42 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 3.5d
+			title: "Automate Copper!"
+			x: -1.5d
+			y: -2.0d
+			subtitle: "Gainz"
+			dependencies: ["1519A1EA2CFA6FB1"]
 			id: "3A6FBCB0C9C41439"
-			tasks: [{
-				id: "749D797497A47853"
-				type: "item"
-				item: "create:veridium"
-			}]
-		}
-		{
-			x: -0.5d
-			y: 1.0d
-			id: "10129383A51A7B1D"
-			tasks: [{
-				id: "6B65B4BEC4379476"
-				type: "item"
-				item: {
-					id: "create:super_glue"
-					Count: 1b
-					tag: {
-						Damage: 0
+			tasks: [
+				{
+					id: "749D797497A47853"
+					type: "item"
+					item: "create:veridium"
+				}
+				{
+					id: "6DF68DF5E8993152"
+					type: "item"
+					title: "Any #c:andesite"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "c:andesite"
+						}
 					}
 				}
+			]
+			rewards: [{
+				id: "4A8CD911AC4067D8"
+				type: "item"
+				item: "create:crushed_copper_ore"
 			}]
 		}
 		{
+			title: "Automate Zinc!"
 			x: -1.5d
 			y: -1.0d
+			subtitle: "Asurine is a renewable source of copper if you've been amassing a stockpile of clay"
 			dependencies: ["1519A1EA2CFA6FB1"]
 			id: "67012541C365BA5A"
 			tasks: [
@@ -438,26 +476,22 @@
 		}
 		{
 			title: "Efficient Bronze + Alloy production."
-			x: 4.0d
+			x: 3.5d
 			y: -2.0d
+			subtitle: "Andesite alloy can be produced at 1/3rd the cost if you opt to mix it into a liquid form and cast it into a solid!"
 			dependencies: ["6AEEE2B22E28945B"]
 			id: "5A1B85C3323DDBD1"
-			tasks: [
-				{
-					id: "57C817AD45B1C430"
-					type: "item"
-					item: "tconstruct:molten_bronze_bucket"
-				}
-				{
-					id: "57BB6CFDC8C9F731"
-					type: "item"
-					item: "kubejs:compound_mixture_bucket"
-				}
-			]
+			tasks: [{
+				id: "57BB6CFDC8C9F731"
+				type: "item"
+				item: "kubejs:compound_mixture_bucket"
+			}]
 		}
 		{
-			x: 2.0d
+			title: "Make some real tools now"
+			x: 1.5d
 			y: -1.0d
+			subtitle: "The good 3x3 stuff oh yeaaa"
 			dependencies: [
 				"3EA569DE4AC60CC2"
 				"38B99A94B043A6BD"
@@ -478,6 +512,7 @@
 		{
 			x: 2.5d
 			y: -2.0d
+			subtitle: "Basic tools, bronze is pretty good all around"
 			dependencies: ["5042E544D3181FAC"]
 			min_required_tasks: 1
 			id: "68FDC2C761EF6BC0"
@@ -518,6 +553,7 @@
 			]
 		}
 		{
+			title: "Get lucky"
 			icon: "minecraft:blue_dye"
 			x: 1.5d
 			y: -2.0d
@@ -528,6 +564,7 @@
 					id: "0BF6EB8118C0A5AD"
 					type: "item"
 					item: "minecraft:lapis_block"
+					count: 4L
 				}
 				{
 					id: "45ACDF07F7369A1E"
@@ -537,6 +574,7 @@
 			]
 		}
 		{
+			title: "Get luckier"
 			icon: "minecraft:diamond"
 			x: 1.5d
 			y: -3.0d
@@ -547,6 +585,7 @@
 					id: "16168BDE7ED0509A"
 					type: "item"
 					item: "minecraft:lapis_block"
+					count: 4L
 				}
 				{
 					id: "2508A6165CEAA162"
@@ -556,6 +595,7 @@
 			]
 		}
 		{
+			title: "Get real."
 			icon: "minecraft:diamond_block"
 			x: 1.5d
 			y: -4.0d
@@ -566,6 +606,7 @@
 					id: "5C84001C06B8BE8F"
 					type: "item"
 					item: "minecraft:lapis_block"
+					count: 4L
 				}
 				{
 					id: "0D2ACD60E744E17F"
@@ -576,8 +617,10 @@
 			]
 		}
 		{
-			x: 7.0d
-			y: -0.5d
+			x: 6.5d
+			y: -1.0d
+			subtitle: "Have access to shulkers, as a treat"
+			dependencies: ["00F3EA4A8FB5B11B"]
 			id: "586FA45ED205784F"
 			tasks: [{
 				id: "0C119FAAECA6085E"
@@ -586,8 +629,17 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 2.5d
+			title: "HOW DO I MAKE THIS?!"
+			x: 7.5d
+			y: 3.5d
+			subtitle: "Multiblock Components"
+			description: [
+				"Bottom Layer, Front center electrolyser, 3x3 remaining copper casing"
+				"Middle Layer, 3x3 Copper coils"
+				"Top layer, 3x3 Copper Plating"
+			]
+			hide_dependency_lines: true
+			dependencies: ["32B9EAE28E1C5D7A"]
 			id: "3C26E1DEA0265C03"
 			tasks: [
 				{
@@ -611,27 +663,28 @@
 			]
 		}
 		{
-			x: 9.5d
-			y: 3.5d
-			id: "1306DB590F3FAF09"
+			x: 4.0d
+			y: 1.0d
+			subtitle: "Hey look it says gold chest but its pink!"
+			description: ["Yipee!!!"]
+			dependencies: ["0F4C452C9C9AB1B8"]
+			id: "069634A427DE403F"
 			tasks: [{
-				id: "56958956BAAD369A"
-				type: "structure"
-				structure: "minecraft:mineshaft"
+				id: "363C22605DD3C4ED"
+				type: "item"
+				item: "reinfchest:gold_chest"
 			}]
 		}
 		{
-			x: 10.5d
-			y: 3.5d
-			id: "3DEFD0BC385F0B93"
+			x: 4.5d
+			y: -2.0d
+			subtitle: "Bronze can be produced at half the cost with the mixing recipe."
+			dependencies: ["6AEEE2B22E28945B"]
+			id: "0E939F8167F47710"
 			tasks: [{
-				id: "62B7C24D87B88973"
-				type: "questsadditions:structure"
-				name: "minecraft:mineshaft"
-				hasCustomPicture: false
-				layer: false
-				rightclick: true
-				item: "minecraft:granite"
+				id: "48920459D1BBDA83"
+				type: "item"
+				item: "tconstruct:molten_bronze_bucket"
 			}]
 		}
 	]

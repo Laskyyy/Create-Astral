@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 3
 	filename: "chapter_4"
-	title: "4) A lost civilisation"
+	title: "3) Remnants of a lost civilisation"
 	icon: {
 		id: "ftbquests:custom_icon"
 		Count: 1b
@@ -29,7 +29,8 @@
 		{
 			x: -17.0d
 			y: 3.0d
-			subtitle: "Tier 2 Tinkering materials and alloys!"
+			subtitle: "Obtain a blaze from a lost pipeline on the moon!"
+			description: ["They spawn with dangerous wither skeletons and guaranteed Blaze spawners, which you can pick up and take home if need be,"]
 			dependencies: ["6027602617EC9F1F"]
 			id: "51BD31261A5725E3"
 			tasks: [{
@@ -59,6 +60,7 @@
 			}]
 		}
 		{
+			title: "Create: Mechanical Crafting"
 			x: -11.5d
 			y: 3.0d
 			description: ["So many new recipes..."]
@@ -146,7 +148,7 @@
 			x: -15.5d
 			y: 4.0d
 			subtitle: "and highly enchantable!"
-			description: ["Brass also includes a small jump bonus due to it's light weight. Effectively a direct upgrade to iron for those who haven't got the diamonds for expensive drip."]
+			description: ["Effectively a minor upgrade to iron, except with a major enchanting bonus allowing for easy god tier enchants."]
 			dependencies: ["705C815541DB89F8"]
 			id: "156E58E3BD65E3A0"
 			tasks: [
@@ -216,9 +218,11 @@
 			]
 		}
 		{
+			title: "We're gonna need a bigger crafter..."
 			x: -9.5d
 			y: 2.5d
 			subtitle: "Probably shouldn't launch that rocket from some grass."
+			description: ["A large Mechanical crafting setup will be needed for this recipe. With it crafted you've got yourself the perfect base to launch a rocket from."]
 			hide_dependency_lines: false
 			dependencies: ["3EA569DE4AC60CC2"]
 			id: "44D51F142E9E8902"
@@ -229,19 +233,21 @@
 			}]
 		}
 		{
-			x: -15.5d
-			y: 0.5d
+			title: "Operate a boiler, young wolf."
+			x: -17.0d
+			y: 2.0d
 			shape: "diamond"
 			description: [
 				"From this point on it might be wise to look into steam powering your setup."
 				"Aim for a level 9 boiler as these are incredibly efficient for their cost, the moment electricity generation enters the room those stress units will be eaten up in no time."
 			]
+			dependencies: ["51BD31261A5725E3"]
 			id: "186E8426BD7CE343"
 			tasks: [{
-				id: "694CB5C081138DAE"
-				type: "advancement"
-				advancement: "create:steam_engine"
-				criterion: ""
+				id: "14D6DAEC2B1BB1C9"
+				type: "item"
+				item: "create:steam_engine"
+				count: 9L
 			}]
 		}
 		{
@@ -300,6 +306,7 @@
 			}]
 		}
 		{
+			title: "For his neutral special he wields a gun"
 			x: -11.0d
 			y: 5.0d
 			shape: "heart"
@@ -336,6 +343,7 @@
 			}]
 		}
 		{
+			title: "Expand your inventory with satchels!"
 			x: -11.0d
 			y: 4.0d
 			shape: "gear"
@@ -440,9 +448,11 @@
 			]
 		}
 		{
+			title: "Vegan fuel? More likely than you think!"
 			x: -10.5d
 			y: -2.5d
-			description: ["The most pure of organic material, tree fertiliser can serve as the base of the initial fuel production. You will obtain easier methods later, but this is what you have to deal with now."]
+			subtitle: "Compress plant matter into plant balls."
+			description: [""]
 			dependencies: ["5406D5779F7B697A"]
 			min_required_tasks: 1
 			id: "59C1BBC3C57A277A"
@@ -472,9 +482,13 @@
 			}]
 		}
 		{
+			title: "MOON INFO:"
 			icon: "ad_astra:moon_globe"
 			x: -19.487755102040808d
 			y: 0.2551020408163325d
+			subtitle: "Read me!"
+			description: ["As the nether is not exactly a dimension anymore, you are going to need to be a little more creative when searching for regular nether blocks and items."]
+			dependencies: ["15B9947ABCCB882F"]
 			id: "306D009F01634115"
 			tasks: [{
 				id: "3D1C9C82DFB06842"
@@ -484,8 +498,11 @@
 			}]
 		}
 		{
+			title: "The path of Silver."
 			x: -18.5d
 			y: -1.5d
+			subtitle: "Let's get electric"
+			description: ["Both sides of this tree will converge at the end, making them both mandatory."]
 			dependencies: ["306D009F01634115"]
 			id: "1DFF76A494C9A586"
 			tasks: [{
@@ -495,8 +512,13 @@
 			}]
 		}
 		{
+			title: "Automate silver!"
 			x: -18.0d
 			y: 1.0d
+			description: [
+				"By washing moon sand in the same way you'd make an iron farm, you can obtain a renewable source of silver nuggets."
+				"Moon sand itself can be automated by generating moon stone and crushing it into sand, which you will be able to achieve soon with the crushing wheels."
+			]
 			dependencies: ["306D009F01634115"]
 			id: "7909A5A0E194C800"
 			tasks: [{
@@ -513,6 +535,8 @@
 		{
 			x: -13.5d
 			y: 2.5d
+			subtitle: "Pour molten brass onto a copper casing to craft brass casing."
+			description: ["Reminder that tinker faucets and create spouts are fully automatable, don't expose yourself to manual labour!"]
 			dependencies: ["705C815541DB89F8"]
 			id: "22B29B232EF2638F"
 			tasks: [{
@@ -522,18 +546,23 @@
 			}]
 		}
 		{
+			title: "The path of Brass."
 			icon: "ad_astra:iron_plating"
 			x: -18.5d
 			y: 2.0d
+			subtitle: "Let's get creative"
+			description: ["Both sides of this tree will converge at the end, making them both mandatory."]
 			dependencies: ["306D009F01634115"]
 			id: "6027602617EC9F1F"
 			tasks: [{
 				id: "369624A3BE4061DF"
 				type: "structure"
+				icon: "ad_astra:iron_plating"
 				structure: "incendium:pipeline"
 			}]
 		}
 		{
+			title: "Creating Silver Plates"
 			x: -17.0d
 			y: -2.5d
 			dependencies: ["1DFF76A494C9A586"]
@@ -545,17 +574,20 @@
 			}]
 		}
 		{
+			title: "Automate Circuits!"
 			x: -16.0d
-			y: -1.5d
+			y: -2.5d
 			dependencies: ["1A08EE7C76242947"]
 			id: "73973C5E6D2573B8"
 			tasks: [{
 				id: "05C23BCCCFD166F1"
 				type: "item"
 				item: "create:integrated_circuit"
+				count: 16L
 			}]
 		}
 		{
+			title: "The basics of machinery"
 			x: -16.5d
 			y: -3.5d
 			dependencies: ["1A08EE7C76242947"]
@@ -567,6 +599,7 @@
 			}]
 		}
 		{
+			title: "The basics of energy storage"
 			x: -15.5d
 			y: -3.5d
 			dependencies: ["2E7D02CA77627EF5"]
@@ -578,8 +611,10 @@
 			}]
 		}
 		{
+			title: "Efficiently produce wires."
 			x: -12.5d
 			y: -1.5d
+			subtitle: "Save on some resources this way, entirely optional."
 			dependencies: ["61878C8DC870AC6A"]
 			id: "52EC8406E928BDB3"
 			tasks: [{
@@ -589,8 +624,11 @@
 			}]
 		}
 		{
+			title: "HUGE rubber gainz"
 			x: -13.5d
 			y: -1.5d
+			subtitle: "Increase the efficiency of converting tree sap into rubber using an extractor."
+			description: ["Many more recipes included to cater for automation of resources."]
 			dependencies: ["752215E611021472"]
 			id: "61878C8DC870AC6A"
 			tasks: [{
@@ -600,6 +638,7 @@
 			}]
 		}
 		{
+			title: "Dust grinder"
 			x: -14.5d
 			y: -1.5d
 			dependencies: ["752215E611021472"]
@@ -611,6 +650,7 @@
 			}]
 		}
 		{
+			title: "Let's set up a fuel production line,"
 			x: -12.5d
 			y: -2.5d
 			dependencies: ["752215E611021472"]
@@ -622,8 +662,10 @@
 			}]
 		}
 		{
+			title: "...extended"
 			x: -11.5d
 			y: -2.5d
+			subtitle: "Cells operate in the same way as a bucket, but are stackable"
 			dependencies: ["07B10625859F1AF9"]
 			id: "5406D5779F7B697A"
 			tasks: [
@@ -640,8 +682,10 @@
 			]
 		}
 		{
+			title: "Prepare the biofuel"
 			x: -8.5d
 			y: -2.5d
+			subtitle: "Use that canning machine to load pure biomatter into liquid form."
 			dependencies: ["1533B14714529386"]
 			id: "57724BFDF0A78FAF"
 			tasks: [{
@@ -657,8 +701,11 @@
 			}]
 		}
 		{
+			title: "The first electricity source!"
 			x: -15.0d
 			y: -2.5d
+			subtitle: "With access to alternators you may convert SU into electrical units."
+			description: ["The electric motor operates the opposite conversion, allowing you to link entire bases with electricity instead of shafts to save on your framerate and sanity. This conversion is not very efficient however."]
 			dependencies: [
 				"73973C5E6D2573B8"
 				"19CCFE1A90B73F44"
@@ -679,6 +726,7 @@
 			]
 		}
 		{
+			title: "Basics of transferring power"
 			x: -14.0d
 			y: -2.5d
 			dependencies: ["5459F646B9A392C4"]
@@ -702,9 +750,11 @@
 			]
 		}
 		{
+			title: "We're going to Mars"
 			x: -5.5d
 			y: 0.0d
 			shape: "gear"
+			subtitle: "Not sponsored by SpaceX"
 			dependencies: [
 				"28980EA356A2F0BF"
 				"1BF9656E9FBB2364"
@@ -721,8 +771,10 @@
 			}]
 		}
 		{
+			title: "Those hands sure can craft"
 			x: -7.0d
 			y: 0.5d
+			subtitle: "Produce a NASA workbench for rocket creation"
 			dependencies: [
 				"44D51F142E9E8902"
 				"75CE520F392CC1E1"
@@ -735,8 +787,10 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: -1.5d
+			title: "Space Powah"
+			x: -5.5d
+			y: -1.0d
+			subtitle: "A little more expensive, but allows for easy movement of power generation."
 			hide_dependency_lines: true
 			dependencies: ["1BF9656E9FBB2364"]
 			id: "03F74AD3D7F6650E"
@@ -747,19 +801,23 @@
 			}]
 		}
 		{
+			title: "I got some new tools for ya"
 			x: -12.5d
 			y: -4.0d
+			subtitle: "These have no durability, are enchantable but require power as a resource instead!"
 			dependencies: ["07B10625859F1AF9"]
 			id: "64271E1245394C9A"
 			tasks: [{
-				id: "6BC46E7216E1544D"
-				type: "item"
-				item: "techreborn:low_voltage_su"
+				id: "6D52114BB4345CAD"
+				type: "checkmark"
+				title: "I understand."
 			}]
 		}
 		{
+			title: "Craft a drill."
 			x: -13.5d
 			y: -3.5d
+			subtitle: "Love me minin"
 			dependencies: ["64271E1245394C9A"]
 			id: "4649E8638D453CFB"
 			tasks: [{
@@ -769,8 +827,10 @@
 			}]
 		}
 		{
+			title: "Craft a chainsaw."
 			x: -11.5d
 			y: -3.5d
+			subtitle: "Love me trees"
 			dependencies: ["64271E1245394C9A"]
 			id: "5A7912DAF9F6C05E"
 			tasks: [{
@@ -780,8 +840,10 @@
 			}]
 		}
 		{
+			title: "Craft a Jackhammer."
 			x: -13.5d
 			y: -4.5d
+			subtitle: "Love me rocks"
 			dependencies: ["64271E1245394C9A"]
 			id: "006608C6FDD18B20"
 			tasks: [{
@@ -791,8 +853,10 @@
 			}]
 		}
 		{
+			title: "Craft a rockcutter."
 			x: -11.5d
 			y: -4.5d
+			subtitle: "Love me silk"
 			dependencies: ["64271E1245394C9A"]
 			id: "20CFA79532615B61"
 			tasks: [{
@@ -811,8 +875,10 @@
 			}]
 		}
 		{
+			title: "Electrify your rubber collection."
 			x: -12.5d
 			y: -5.0d
+			subtitle: "Love me sap"
 			dependencies: ["64271E1245394C9A"]
 			id: "520ABA39D0E22434"
 			tasks: [{
@@ -822,8 +888,10 @@
 			}]
 		}
 		{
+			title: "Navigation systems: Check"
 			x: -8.0d
 			y: 2.5d
+			subtitle: "Raow"
 			id: "75CE520F392CC1E1"
 			tasks: [{
 				id: "6D255A3F6549F8EC"
@@ -832,8 +900,10 @@
 			}]
 		}
 		{
+			title: "Desh Race"
 			x: -18.0d
 			y: -0.5d
+			subtitle: "It does look tasty, doesn't it."
 			dependencies: ["306D009F01634115"]
 			id: "59694D713430B333"
 			tasks: [{
@@ -843,8 +913,10 @@
 			}]
 		}
 		{
+			title: "Essential Rocket pieces"
 			x: -7.0d
 			y: -0.5d
+			subtitle: "Compress some rocket fins and craft a few rocket parts!"
 			dependencies: ["57724BFDF0A78FAF"]
 			id: "28980EA356A2F0BF"
 			tasks: [
@@ -866,8 +938,10 @@
 			]
 		}
 		{
+			title: "The Piglin Planet"
 			x: -4.0d
 			y: 0.0d
+			subtitle: "It's time to introduce yourself to some porky friends."
 			dependencies: ["6E20B194F5CA8F22"]
 			id: "63DCF596AAA9A232"
 			tasks: [{
@@ -878,8 +952,11 @@
 			}]
 		}
 		{
+			title: "Living safe on the moon!"
 			x: -17.0d
 			y: -1.0d
+			subtitle: "If you have plans to base on the Moon or any other planet without oxygen, you'll need to set up an oxygen distributor with a decent source of oxygen to pump out."
+			description: ["By using airlocks and solid blocks you can reduce to volume of area needed to distribute oxygen."]
 			dependencies: ["59694D713430B333"]
 			id: "5A8CB0CAB6E98321"
 			tasks: [{
@@ -900,8 +977,11 @@
 			}]
 		}
 		{
-			x: -15.0d
-			y: -4.5d
+			title: "Let there be LED."
+			x: -10.5d
+			y: -1.5d
+			subtitle: "Light up the world with snazzy new lights."
+			description: ["Require an adjacent power source to turn on."]
 			hide_dependency_lines: true
 			dependencies: ["752215E611021472"]
 			id: "6AC13A0D339D57F4"
@@ -919,8 +999,9 @@
 			]
 		}
 		{
+			title: "Upgrading storage units."
 			x: -16.0d
-			y: -0.5d
+			y: -1.5d
 			dependencies: [
 				"5D69FB71CD8A1391"
 				"73973C5E6D2573B8"
@@ -936,6 +1017,8 @@
 			title: "Nuclear?"
 			x: -21.0d
 			y: -0.5d
+			subtitle: "Uncover the site of a disaster, where a strange entity resides..."
+			description: ["The gauntlet at the centre of a reactor is an optional boss for those wanting to test their skills. Bring highly enchanted armour and a bed!"]
 			dependencies: ["306D009F01634115"]
 			id: "63C197DE5231155D"
 			tasks: [{
@@ -946,20 +1029,10 @@
 			}]
 		}
 		{
-			x: -21.0d
-			y: 1.0d
-			dependencies: ["306D009F01634115"]
-			id: "30CFD7D46876627F"
-			tasks: [{
-				id: "4F47EF8D3F091A99"
-				type: "advancement"
-				advancement: "ad_astra:moon_dungeon"
-				criterion: ""
-			}]
-		}
-		{
+			title: "Foundry blocks"
 			x: -16.5d
 			y: 5.0d
+			subtitle: "Kit it out with some snazzy gear"
 			dependencies: ["0E59475F511DBCC7"]
 			id: "1E83F62D325A44F2"
 			tasks: [
@@ -986,8 +1059,10 @@
 			]
 		}
 		{
+			title: "Gathering for a more efficient Smeltery"
 			x: -17.0d
 			y: 4.0d
+			subtitle: "Find scoria within the moon's caverns"
 			dependencies: ["51BD31261A5725E3"]
 			id: "0E59475F511DBCC7"
 			tasks: [{
@@ -998,8 +1073,11 @@
 			}]
 		}
 		{
+			title: "The foundry controller!"
 			x: -17.5d
 			y: 5.0d
+			subtitle: "Get yourself a tinkers multiblock smeltery."
+			description: ["The foundry is capable of smelting at even higher levels of efficiency compared to the melter, and produces secondary metals when melting."]
 			dependencies: ["0E59475F511DBCC7"]
 			id: "5355CA2F0BA74BF1"
 			tasks: [{
@@ -1011,6 +1089,8 @@
 		{
 			x: -9.5d
 			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["3EA569DE4AC60CC2"]
 			id: "3B27F482BC8939A6"
 			tasks: [{
 				id: "551EF4577CB1944E"
@@ -1051,6 +1131,141 @@
 					id: "2C0B6E0609E8D4C0"
 					type: "item"
 					item: "automobility:launch_gel"
+				}
+			]
+		}
+		{
+			title: "Automate redstone!"
+			x: -14.5d
+			y: -4.5d
+			subtitle: "By using a Create Additions Tesla Coil(tm) you can electrify these synthetic crystals to obtain an infinitely renewable source of redstone dust."
+			description: [
+				"The recipe doesnt show in REI, it will work regardless."
+				"(Press U on a tesla coil instead)"
+			]
+			dependencies: ["19CCFE1A90B73F44"]
+			id: "512B5F1349E34457"
+			tasks: [{
+				id: "2346509FED8141D4"
+				type: "item"
+				item: "techreborn:synthetic_redstone_crystal"
+			}]
+		}
+		{
+			title: "These chests are just getting silly..."
+			x: -11.5d
+			y: -1.5d
+			subtitle: "How many slots does a man really need?"
+			dependencies: [
+				"0F4C452C9C9AB1B8"
+				"07B10625859F1AF9"
+			]
+			id: "39DE2EF14165FB0A"
+			tasks: [{
+				id: "02F6BEA1478B6059"
+				type: "item"
+				item: "reinfchest:diamond_chest"
+			}]
+		}
+		{
+			title: "MEKA ACTIVATED"
+			icon: "mtmechs:pa_whole_item"
+			x: -15.5d
+			y: -4.5d
+			subtitle: "Welcome to Overwatch"
+			dependencies: ["19CCFE1A90B73F44"]
+			id: "34E41CF057C08A48"
+			tasks: [
+				{
+					id: "5501747A7C2434E7"
+					type: "item"
+					item: "mtmechs:pa_whole_item"
+				}
+				{
+					id: "43E483078FEF00F0"
+					type: "item"
+					item: "mtmechs:magicite_item"
+				}
+			]
+		}
+		{
+			title: "Lunatic Traveller"
+			x: -21.0d
+			y: 1.0d
+			subtitle: "Learn the resources you can find on the moon."
+			dependencies: ["306D009F01634115"]
+			id: "661A93F58DBEFB8F"
+			tasks: [
+				{
+					id: "5C113680FFF388E7"
+					type: "biome"
+					icon: "ad_astra:moon_stone"
+					biome: "ad_astra:lunar_wastelands"
+				}
+				{
+					id: "2A4580D2BB989DD2"
+					type: "biome"
+					icon: "minecraft:polished_basalt"
+					biome: "minecraft:basalt_deltas"
+				}
+				{
+					id: "5F58EC85A04C70F4"
+					type: "item"
+					item: "minecraft:glowstone_dust"
+				}
+				{
+					id: "2F4DB30FAB4D626C"
+					type: "item"
+					item: "minecraft:soul_soil"
+				}
+				{
+					id: "41AFDE5655EED3CB"
+					type: "item"
+					item: "minecraft:nether_wart"
+				}
+				{
+					id: "107173184163B37E"
+					type: "item"
+					item: "minecraft:blaze_powder"
+				}
+				{
+					id: "2D2E54A1CA9B844E"
+					type: "item"
+					item: "create:scoria"
+				}
+			]
+		}
+		{
+			title: "Creating a space station!!"
+			x: -5.5d
+			y: 1.0d
+			subtitle: "Orbit dimensions have a 1:8 block travel ratio, just like the nether."
+			description: ["It might be worth setting up an outpost for fast travel, as planets are only 1:2."]
+			id: "47A155F9CAD19710"
+			tasks: [
+				{
+					id: "5B9178A6D6E78EDC"
+					type: "item"
+					item: "create:zinc_ingot"
+					count: 32L
+				}
+				{
+					id: "63BB45AF2D40E144"
+					type: "item"
+					item: "ad_astra:iron_plate"
+					count: 32L
+				}
+				{
+					id: "6869CE7DA56027CA"
+					type: "item"
+					item: "create:integrated_circuit"
+					count: 6L
+				}
+				{
+					id: "50D956034D3D2FD4"
+					type: "item"
+					item: "ad_astra:compressed_desh"
+					count: 32L
 				}
 			]
 		}

@@ -3,30 +3,45 @@
 	group: ""
 	order_index: 1
 	filename: "chapter_2"
-	title: "2) Getting started with Create"
+	title: "1) The andesite world."
 	icon: "create:andesite_alloy"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	images: [{
-		x: 3.5d
-		y: 3.0d
-		width: 3.0d
-		height: 3.0d
-		rotation: 0.0d
-		image: "ad_astra:textures/sky/earth.png"
-		hover: [ ]
-		click: ""
-		dev: false
-		corner: false
-	}]
+	images: [
+		{
+			x: 3.5d
+			y: 3.0d
+			width: 3.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/sky/earth.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -9.5d
+			y: 4.5d
+			width: 6.0d
+			height: 6.0d
+			rotation: 0.0d
+			image: "createastral:textures/item/flowchart.png"
+			hover: ["Recipe tree from base create, using only cobble you can automate almost every metal from the overworld in Astral!"]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
 	quests: [
 		{
 			x: -2.5d
 			y: 9.0d
 			shape: "pentagon"
-			subtitle: "A new metal"
-			description: ["Oddly cheese-shaped, you think? Combine copper and tin in a smithing table to get the most primitive of alloys."]
-			dependencies: ["601A619C6E96920A"]
+			subtitle: "A new metal?"
+			description: ["Combine copper and tin in a smithing table to get the most primitive of alloys."]
+			hide_dependency_lines: false
+			dependencies: ["1337920DA45E72AD"]
 			id: "5268B7CCEDC48422"
 			tasks: [{
 				id: "22254C04A4E1B471"
@@ -176,6 +191,7 @@
 			x: -1.5d
 			y: 9.0d
 			shape: "pentagon"
+			subtitle: "Go get some clay balls you little Greg goblin."
 			description: ["Perhaps *the* most important block in create. Andesite can be automated, take a look at its recipes to see the components (mining the ol' fashioned way is also valid.)"]
 			dependencies: ["601A619C6E96920A"]
 			id: "6ABB448DA7C278A5"
@@ -220,7 +236,7 @@
 			y: 2.5d
 			shape: "rsquare"
 			subtitle: "Trains? Trains!!!"
-			description: ["Finally, trains (oh yeah, and space, lol)"]
+			description: ["Trains this early? How generous."]
 			dependencies: ["68108C8A6AC63A01"]
 			id: "0A5DC78719B9A244"
 			tasks: [{
@@ -260,7 +276,7 @@
 		{
 			x: -4.5d
 			y: 2.5d
-			description: ["Casing used in train creation, and some other misc. recipes. Once again, applies the same as other casings, this time using sturdy sheet and a brass casing as a base."]
+			description: ["Casing used in train creation, and some other misc. recipes. Once again, applies the same as other casings, this time using sturdy sheet and an andesite casing as a base."]
 			dependencies: ["0A5DC78719B9A244"]
 			id: "1579C73B735F06F8"
 			tasks: [{
@@ -307,6 +323,7 @@
 			subtitle: "Power a waterwheel"
 			description: ["The first automatic power generation method you are likely to utilise. Should last you enough until the brass age!"]
 			hide_dependency_lines: true
+			dependencies: ["74E7B48237BED17D"]
 			id: "35F1B635057746F0"
 			tasks: [{
 				id: "78758D6F5FAB59D4"
@@ -388,7 +405,7 @@
 			x: -1.5d
 			y: 4.5d
 			shape: "circle"
-			subtitle: "You could've made this a while ago, but it's required now."
+			subtitle: "Mixing up progression much?"
 			description: ["Mixing is broken into 3 categories. Unheated, Heated, and Superheated (Blaze cakes). That final tier is not going to be accessible to you for a little while."]
 			dependencies: ["515FDE185E1FB782"]
 			id: "545BF28E82A07D19"
@@ -421,7 +438,7 @@
 			}]
 		}
 		{
-			x: 2.5d
+			x: 2.0d
 			y: 8.0d
 			subtitle: "Pewtah' Craft"
 			description: ["This is technically discriminatory against people who can't code."]
@@ -439,7 +456,7 @@
 			}]
 		}
 		{
-			x: 3.5d
+			x: 3.0d
 			y: 8.0d
 			subtitle: "I like turtles."
 			description: [
@@ -467,6 +484,7 @@
 			subtitle: "A stack of kelp blocks?"
 			description: ["Trust me. automate any of these three and fuel will never be an issue again."]
 			hide_dependency_lines: true
+			dependencies: ["604CF717881C323A"]
 			id: "7AAA2363D859EA19"
 			tasks: [
 				{
@@ -624,6 +642,7 @@
 			subtitle: "Ok, some of you like to use this thing."
 			description: ["You are only delaying the inevitable... that sweet automated power generation."]
 			hide_dependency_lines: true
+			dependencies: ["74E7B48237BED17D"]
 			id: "4AF3238551E346E1"
 			tasks: [{
 				id: "5AA7D9B4E863846A"
@@ -634,6 +653,8 @@
 		{
 			x: -2.5d
 			y: 4.5d
+			subtitle: "Millstones are slightly more useful now."
+			description: ["Produce quartz, obsidian dust, and gunpowder early into the game."]
 			dependencies: ["515FDE185E1FB782"]
 			id: "1DEF161DE26F3587"
 			tasks: [{
@@ -651,6 +672,7 @@
 		{
 			x: -2.0d
 			y: 3.5d
+			subtitle: "Automate me!!!"
 			dependencies: ["1DEF161DE26F3587"]
 			id: "6B85CBE54B33C91F"
 			tasks: [{
@@ -661,8 +683,10 @@
 			}]
 		}
 		{
+			title: "Get Rail."
 			x: -3.0d
 			y: 3.5d
+			subtitle: "Get rail."
 			dependencies: ["1DEF161DE26F3587"]
 			id: "68108C8A6AC63A01"
 			tasks: [{
@@ -673,10 +697,12 @@
 			}]
 		}
 		{
+			title: "Come get yer grout."
 			x: -0.5d
 			y: 1.0d
 			shape: "gear"
 			subtitle: "Chapter 3 Unlock"
+			description: ["Grout is to be used in tinkers-related blocks, I told you clay was going to be useful."]
 			dependencies: ["550F91EE08A48F1D"]
 			id: "7354F2BFB2591ECF"
 			tasks: [{
@@ -689,6 +715,11 @@
 		{
 			x: -1.5d
 			y: 8.0d
+			subtitle: "Mwahahahah"
+			description: [
+				"Forcing you to use *shudders* furnaces."
+				"If you're thinking, jeez this is expensive, do not fret! it becomes 1/3rd the cost later."
+			]
 			dependencies: ["6ABB448DA7C278A5"]
 			id: "76704C59FAFCD2E7"
 			tasks: [{
@@ -698,8 +729,12 @@
 			}]
 		}
 		{
+			title: "Automate Gold+Tin"
 			x: 1.0d
 			y: 1.0d
+			subtitle: "Use the chart to figure out automating red sand production"
+			hide_dependency_lines: true
+			dependencies: ["515FDE185E1FB782"]
 			id: "3E60BDCB04CF78DD"
 			tasks: [{
 				id: "5C39DB31451CF702"
@@ -720,8 +755,12 @@
 			]
 		}
 		{
+			title: "Automate Iron+flint"
 			x: 2.0d
 			y: 1.0d
+			subtitle: "You've probably made this dozens of times already"
+			hide_dependency_lines: true
+			dependencies: ["515FDE185E1FB782"]
 			id: "6B6CD25C2769C9CC"
 			tasks: [{
 				id: "4410929B2BB731A5"
@@ -742,8 +781,12 @@
 			]
 		}
 		{
+			title: "Automate Clay"
 			x: 3.0d
 			y: 1.0d
+			subtitle: "Balanced Greg"
+			hide_dependency_lines: true
+			dependencies: ["515FDE185E1FB782"]
 			id: "4991E01B29D62DF8"
 			tasks: [{
 				id: "3DD7A375F09E4212"
@@ -759,6 +802,8 @@
 		{
 			x: -4.5d
 			y: 4.5d
+			subtitle: "Not a terraria reference."
+			description: [""]
 			dependencies: ["1DEF161DE26F3587"]
 			id: "392516C890B749C8"
 			tasks: [{
@@ -768,8 +813,10 @@
 			}]
 		}
 		{
+			title: "Mob farms are soooo last year..."
 			x: -5.5d
 			y: 4.5d
+			subtitle: "Extractinating sand will result in most overworld mob drops, negating the need to spend time on the same farms you've been building since 2012."
 			dependencies: ["392516C890B749C8"]
 			id: "3DBD012732199053"
 			tasks: [{
@@ -778,10 +825,45 @@
 				item: "minecraft:sand"
 				count: 256L
 			}]
+			rewards: [
+				{
+					id: "5807402B0565A95D"
+					type: "item"
+					item: "minecraft:string"
+				}
+				{
+					id: "479C7EA81305E321"
+					type: "item"
+					item: "minecraft:spider_eye"
+				}
+				{
+					id: "7BA81C863A551473"
+					type: "item"
+					item: "minecraft:rotten_flesh"
+				}
+				{
+					id: "1CFC88356FB05350"
+					type: "item"
+					item: "minecraft:ink_sac"
+				}
+				{
+					id: "1FEAA15F96242579"
+					type: "item"
+					item: "minecraft:ender_pearl"
+				}
+				{
+					id: "60C1A50B98E5653F"
+					type: "item"
+					item: "minecraft:bone"
+				}
+			]
 		}
 		{
+			title: "Spy's sappin my sentry."
 			x: -0.5d
 			y: 3.5d
+			subtitle: "Rubberino"
+			description: ["Obtaining a rubber tree by now should be your priority, as a fair amount of this will be used in initial production of belts, chests, and casing!"]
 			dependencies: ["545BF28E82A07D19"]
 			id: "3340110F97036535"
 			tasks: [
@@ -804,8 +886,10 @@
 			]
 		}
 		{
+			title: "Rubbah"
 			x: -0.5d
 			y: 2.5d
+			subtitle: "Mix up some sap in a mixer and get this lovely substance"
 			dependencies: ["3340110F97036535"]
 			id: "550F91EE08A48F1D"
 			tasks: [{
@@ -815,8 +899,10 @@
 			}]
 		}
 		{
+			title: "Belter"
 			x: 1.0d
 			y: 2.5d
+			subtitle: "MMM belt"
 			dependencies: ["550F91EE08A48F1D"]
 			id: "2E2B5B3581E73687"
 			tasks: [{
@@ -828,6 +914,7 @@
 		{
 			x: -1.5d
 			y: 2.5d
+			subtitle: "Whaaaat, sequenced assembly already?"
 			dependencies: ["550F91EE08A48F1D"]
 			id: "6B08C3E85CEE833D"
 			tasks: [{
@@ -839,12 +926,25 @@
 		{
 			x: 3.0d
 			y: 5.0d
+			description: ["Used in wire and rod production, the rolling mill works just like the millstone!"]
 			dependencies: ["4EB4838CCED125E2"]
 			id: "4117DCE0FDD1C403"
 			tasks: [{
 				id: "0B8A1FC256D818B0"
 				type: "item"
 				item: "createaddition:rolling_mill"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.5d
+			subtitle: "Upgrade those copper chests with iron ones for bonus storage capacity."
+			dependencies: ["550F91EE08A48F1D"]
+			id: "4BFBEFD5E1511E7A"
+			tasks: [{
+				id: "23DA0E90406F95D0"
+				type: "item"
+				item: "reinfchest:iron_chest"
 			}]
 		}
 	]

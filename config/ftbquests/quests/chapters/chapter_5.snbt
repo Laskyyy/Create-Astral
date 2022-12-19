@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 4
 	filename: "chapter_5"
-	title: "5) BrAIn RoT"
+	title: "4) Piglin Peculiarities."
 	icon: "techreborn:electronic_circuit"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -35,8 +35,11 @@
 	]
 	quests: [
 		{
+			title: "Welcome to Mars."
 			x: -8.0d
 			y: -3.0d
+			subtitle: "Make yourself at home, it only gets worse from here..."
+			dependencies: ["63DCF596AAA9A232"]
 			id: "253F29A00B4EA050"
 			tasks: [{
 				id: "136C0FE1977335AD"
@@ -46,6 +49,7 @@
 			}]
 		}
 		{
+			title: "Ostrum."
 			x: -7.5d
 			y: -2.0d
 			dependencies: ["253F29A00B4EA050"]
@@ -57,8 +61,14 @@
 			}]
 		}
 		{
+			title: "Lead, a new tier of ore."
 			x: -8.5d
 			y: -2.0d
+			description: [
+				"Lead, found above y=0"
+				"Galena, found below y=0"
+				"Both of these result in lead when processed."
+			]
 			dependencies: ["253F29A00B4EA050"]
 			id: "5A74A349BAB14745"
 			tasks: [
@@ -80,6 +90,7 @@
 			]
 		}
 		{
+			title: "Lead Pressing."
 			x: -8.0d
 			y: -1.0d
 			dependencies: [
@@ -94,8 +105,11 @@
 			}]
 		}
 		{
+			title: "A new tier of circuit..."
 			x: -8.0d
 			y: 1.0d
+			subtitle: "This time it will be needed a LOT, like a lot."
+			description: ["All components of the recipe are automatable allowing for some creative methods."]
 			dependencies: [
 				"391DABA73E51CB87"
 				"378F3FCF17F0EDBC"
@@ -108,25 +122,7 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: 7.0d
-			id: "19284B775BD5166E"
-			tasks: [
-				{
-					id: "0E126CFD144AE867"
-					type: "item"
-					item: "techreborn:implosion_compressor"
-				}
-				{
-					id: "30C8FBE5BEB5D01A"
-					type: "item"
-					item: "techreborn:advanced_machine_casing"
-					count: 26L
-					consume_items: false
-				}
-			]
-		}
-		{
+			title: "It's like gol- uh, steel duuust~"
 			x: -7.0d
 			y: 4.0d
 			dependencies: ["30B554B51AEFEB0C"]
@@ -145,8 +141,10 @@
 			]
 		}
 		{
+			title: "Iron but slightly harder, I reckon"
 			x: -8.0d
 			y: 8.0d
+			subtitle: "This stuff should be durable enough to make a phat new rocket."
 			dependencies: ["08C6AE71948EE199"]
 			id: "3A5D7E60EF1C3BC3"
 			tasks: [{
@@ -173,8 +171,11 @@
 			}]
 		}
 		{
+			title: "Automate Lithium + Batteries"
 			x: -5.0d
 			y: 1.0d
+			subtitle: "Pour Lithium into your red cell batteries for this component. "
+			description: ["Lithium can be processed from basic clay balls for a large amount, if you use one of the earlier clay farms."]
 			dependencies: [
 				"5729A883639B2EEF"
 				"684E33C50BD55A8E"
@@ -200,6 +201,7 @@
 			]
 		}
 		{
+			title: "Upgrade! Drill!"
 			x: -5.5d
 			y: 0.0d
 			dependencies: ["7B5DE5040FC24D21"]
@@ -211,6 +213,7 @@
 			}]
 		}
 		{
+			title: "Upgrade! Chainsaw!"
 			x: -4.5d
 			y: 0.0d
 			dependencies: ["7B5DE5040FC24D21"]
@@ -222,6 +225,7 @@
 			}]
 		}
 		{
+			title: "Upgrade! Jackhammer!"
 			x: -3.5d
 			y: 0.0d
 			dependencies: ["7B5DE5040FC24D21"]
@@ -233,8 +237,10 @@
 			}]
 		}
 		{
+			title: "REQUIRED: electrolysis (for real this time)"
 			x: -6.5d
 			y: 1.0d
+			subtitle: "This isn't a dodgy Astral multiblock, its a fully fledged block."
 			dependencies: ["5729A883639B2EEF"]
 			id: "684E33C50BD55A8E"
 			tasks: [{
@@ -244,30 +250,62 @@
 			}]
 		}
 		{
-			x: -10.0d
-			y: 7.0d
-			id: "21E686D503A2E86A"
-			tasks: [{
-				id: "10638E9EC7D772F1"
-				type: "item"
-				item: "techreborn:industrial_centrifuge"
-			}]
-		}
-		{
 			x: -7.0d
 			y: 10.0d
 			dependencies: ["2E53AE0F26538CF3"]
 			id: "7B5AE0A782DE8DF8"
-			tasks: [{
-				id: "1314EEA04F8E9369"
-				type: "advancement"
-				advancement: "ad_astra:netherite_space_suit"
-				criterion: ""
-			}]
+			tasks: [
+				{
+					id: "25670D5E53F8126E"
+					type: "item"
+					item: {
+						id: "ad_astra:netherite_space_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6F72345D41E7D7AA"
+					type: "item"
+					item: {
+						id: "ad_astra:netherite_space_suit"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "52D7518F38975E04"
+					type: "item"
+					item: {
+						id: "ad_astra:netherite_space_pants"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4809FA89B6C48F41"
+					type: "item"
+					item: {
+						id: "ad_astra:netherite_space_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
 		}
 		{
+			title: "Rocket barrage, activated!"
 			x: -9.0d
 			y: 10.0d
+			subtitle: "We CAN get much higheerrr it seems..."
 			dependencies: ["2E53AE0F26538CF3"]
 			id: "3CF2DB0B0ACE19B6"
 			tasks: [{
@@ -281,8 +319,14 @@
 			}]
 		}
 		{
+			title: "Feed the Fire."
 			x: -8.0d
 			y: 7.0d
+			subtitle: "Break your vision."
+			description: [
+				"Throw your fists up."
+				"Come with me..."
+			]
 			dependencies: [
 				"110BE0EF1AC0E454"
 				"0373FACF0AB8113E"
@@ -322,8 +366,10 @@
 			}]
 		}
 		{
+			title: "Charge it up."
 			x: -7.5d
 			y: 0.0d
+			description: ["Accessible since brass, these could also be used to process synthetic redstone. It will be required now."]
 			dependencies: ["36BC3DD3F3898B48"]
 			id: "378F3FCF17F0EDBC"
 			tasks: [{
@@ -335,6 +381,7 @@
 		{
 			x: -8.5d
 			y: 0.0d
+			subtitle: "Charge some certus quartz on a depot alongside a tesla coil to supercharge them into this!"
 			dependencies: ["36BC3DD3F3898B48"]
 			id: "391DABA73E51CB87"
 			tasks: [{
@@ -344,8 +391,10 @@
 			}]
 		}
 		{
+			title: "Delving into a storage system."
 			x: -9.5d
 			y: 1.0d
+			subtitle: "We've punished you with stinky chests and barrels for too long. "
 			dependencies: ["5729A883639B2EEF"]
 			id: "5E1315712299E894"
 			tasks: [{
@@ -440,6 +489,8 @@
 		{
 			x: -12.0d
 			y: 0.0d
+			hide_dependency_lines: false
+			dependencies: ["5E1315712299E894"]
 			id: "0548BB12575AC3A3"
 			tasks: [{
 				id: "70C850976D766533"
@@ -448,9 +499,11 @@
 			}]
 		}
 		{
+			title: "Hot hot hot HOT. Let me put some insulation on."
 			x: -8.0d
 			y: 11.5d
 			shape: "gear"
+			description: ["To survive on mercury with it's super hot surface temperature, ensure you are wearing the netherite space suit at all times!"]
 			dependencies: [
 				"3CF2DB0B0ACE19B6"
 				"7B5AE0A782DE8DF8"
@@ -474,6 +527,7 @@
 			}]
 		}
 		{
+			title: "A blast furnace for forging steel alloy."
 			x: -7.0d
 			y: 3.0d
 			dependencies: ["5729A883639B2EEF"]
@@ -496,16 +550,7 @@
 			}]
 		}
 		{
-			x: -10.5d
-			y: 5.5d
-			id: "47C6CE8197583725"
-			tasks: [{
-				id: "12EAA7622918CD6C"
-				type: "item"
-				item: "techreborn:greenhouse_controller"
-			}]
-		}
-		{
+			title: "Press that steel fella"
 			x: -8.0d
 			y: 9.5d
 			dependencies: ["3A5D7E60EF1C3BC3"]
@@ -517,8 +562,10 @@
 			}]
 		}
 		{
+			title: "That's some good fuel, right there."
 			x: -7.0d
 			y: 5.0d
+			subtitle: "In conjunction with Ad Astra Oil, you can distill a fuel fluid which can burn hotter than anything you've seen."
 			dependencies: ["30B554B51AEFEB0C"]
 			id: "0373FACF0AB8113E"
 			tasks: [
@@ -567,6 +614,8 @@
 		{
 			x: -10.0d
 			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["5729A883639B2EEF"]
 			id: "70D85FE365F51349"
 			tasks: [{
 				id: "7218999BCEA2CF6E"
@@ -575,41 +624,74 @@
 			}]
 		}
 		{
+			title: "Martian Traveller"
 			x: -6.0d
 			y: -3.0d
+			subtitle: "Discover the biomes of this treacherous climate."
+			hide_dependency_lines: true
+			dependencies: ["253F29A00B4EA050"]
 			id: "28B99F2B5CA82BF9"
-			tasks: [{
-				id: "19B41F5159E92423"
-				type: "structure"
-				icon: "chipped:raw_gold_block_46"
-				structure: "incendium:forbidden_castle"
-			}]
+			tasks: [
+				{
+					id: "68293CB7A35DED12"
+					type: "biome"
+					icon: "ad_astra:mars_sand"
+					biome: "ad_astra:mars_wastelands"
+				}
+				{
+					id: "0EADEDD630D75A8E"
+					type: "biome"
+					icon: "ad_astra:conglomerate"
+					biome: "ad_astra:mars_canyon_creek"
+				}
+				{
+					id: "3A9B33851300612F"
+					type: "biome"
+					icon: "ad_astra:infernal_spire_block"
+					biome: "ad_astra:infernal_venus_barrens"
+				}
+				{
+					id: "73BBF21C30B00F13"
+					type: "biome"
+					icon: "minecraft:red_terracotta"
+					biome: "incendium:infernal_dunes"
+				}
+			]
 		}
 		{
-			x: -4.5d
-			y: -2.5d
-			id: "3808BBBFB40ED729"
-			tasks: [{
-				id: "285BD583FE479CA0"
-				type: "structure"
-				icon: "minecraft:quartz_pillar"
-				structure: "incendium:sanctum"
-			}]
-		}
-		{
+			title: "Martian Explorer"
 			x: -10.0d
 			y: -3.0d
+			subtitle: "Uncover the secrets of piglin civilisation..."
+			hide_dependency_lines: true
+			dependencies: ["253F29A00B4EA050"]
 			id: "16D7DDD842CB4797"
-			tasks: [{
-				id: "3FEB50C48D701D63"
-				type: "structure"
-				icon: "minecraft:crimson_stem"
-				structure: "incendium:piglin_village"
-			}]
+			tasks: [
+				{
+					id: "3FEB50C48D701D63"
+					type: "structure"
+					icon: "minecraft:crimson_stem"
+					structure: "incendium:piglin_village"
+				}
+				{
+					id: "6ECBF3C4BDA6BB76"
+					type: "structure"
+					icon: "chipped:raw_gold_block_46"
+					structure: "incendium:forbidden_castle"
+				}
+				{
+					id: "066178CA6B2603B9"
+					type: "structure"
+					icon: "chipped:gilded_blackstone_38"
+					structure: "minecraft:bastion_remnant"
+				}
+			]
 		}
 		{
+			title: "Oh no we're going nuclear."
 			x: -5.0d
 			y: 2.0d
+			subtitle: "~40 of these when held in the inventory and placed will auto build the structure for you!"
 			dependencies: ["7B5DE5040FC24D21"]
 			id: "4F8857155A31DF9D"
 			tasks: [{
@@ -619,28 +701,25 @@
 			}]
 		}
 		{
-			x: -11.5d
-			y: -2.5d
-			id: "49A003FE31344299"
-			tasks: [{
-				id: "685DBF2224D5A894"
-				type: "structure"
-				icon: "minecraft:chiseled_polished_blackstone"
-				structure: "minecraft:bastion_remnant"
-			}]
-		}
-		{
 			x: -9.5d
 			y: -1.0d
-			dependencies: [
-				"18F3314CC2E353AB"
-				"391DABA73E51CB87"
-			]
+			dependencies: ["391DABA73E51CB87"]
 			id: "5CD7D403F747DBE9"
 			tasks: [{
 				id: "42162526590DD3DA"
 				type: "item"
 				item: "bosses_of_mass_destruction:mob_ward"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 8.5d
+			dependencies: ["78C43CAB30772606"]
+			id: "55296900512F9ABE"
+			tasks: [{
+				id: "1F8B7DC6F13D6762"
+				type: "item"
+				item: "mtmechs:ta_whole_item"
 			}]
 		}
 	]

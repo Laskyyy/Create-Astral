@@ -3,36 +3,22 @@
 	group: ""
 	order_index: 0
 	filename: "assorted_goals"
-	title: "1) Basic Survival"
+	title: "0.5) Getting Started."
 	icon: "minecraft:furnace"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	images: [
-		{
-			x: -7.0d
-			y: 8.5d
-			width: 2.0d
-			height: 1.5d
-			rotation: 0.0d
-			image: "ad_astra:textures/gui/countdown_numbers/1.png"
-			hover: ["Division One: Promising Beginnings"]
-			click: "raow"
-			dev: false
-			corner: false
-		}
-		{
-			x: -5.0d
-			y: 6.5d
-			width: 6.0d
-			height: 3.0d
-			rotation: 0.0d
-			image: "createastral:textures/item/logos_binted.png"
-			hover: [ ]
-			click: ""
-			dev: false
-			corner: false
-		}
-	]
+	images: [{
+		x: -5.0d
+		y: 6.5d
+		width: 6.0d
+		height: 3.0d
+		rotation: 0.0d
+		image: "createastral:textures/item/logos_binted.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
 	quests: [
 		{
 			title: "A knight in shining copper."
@@ -178,12 +164,39 @@
 				advancement: "tconstruct:tools/tinker_tool"
 				criterion: ""
 			}]
-			rewards: [{
-				id: "276B32077595C4F2"
-				type: "item"
-				item: "minecraft:torch"
-				count: 5
-			}]
+			rewards: [
+				{
+					id: "276B32077595C4F2"
+					type: "item"
+					item: "minecraft:torch"
+					count: 5
+				}
+				{
+					id: "7D91A597B4B4BF09"
+					type: "item"
+					item: "tconstruct:materials_and_you"
+				}
+				{
+					id: "0D49D0A6E2FEB974"
+					type: "item"
+					item: "tconstruct:puny_smelting"
+				}
+				{
+					id: "6F4D4CD528623798"
+					type: "item"
+					item: "tconstruct:mighty_smelting"
+				}
+				{
+					id: "660CC63F25D4B6C5"
+					type: "item"
+					item: "tconstruct:tinkers_gadgetry"
+				}
+				{
+					id: "540BF27B86E16E58"
+					type: "item"
+					item: "tconstruct:encyclopedia"
+				}
+			]
 		}
 		{
 			x: 1.0d
@@ -237,6 +250,7 @@
 			}]
 		}
 		{
+			title: "Let's get cooking"
 			x: -9.5d
 			y: 11.0d
 			description: ["Figured out how to make meals, eh? Now, here is a list of crops to automate >:D"]
@@ -276,65 +290,114 @@
 			x: -0.5d
 			y: 12.0d
 			subtitle: "Livin' life like Larry"
-			description: ["If you want to feel particularly lucky... why not try and wear a full set of golden armour? (Luck I)"]
+			description: ["If you want to feel particularly lucky... why not try and wear a full set of golden armour? Just for the flex i'll give you some mad loot for the deserving chad you are."]
 			dependencies: ["601A619C6E96920A"]
 			id: "5E6B48D6A4254759"
-			tasks: [{
-				id: "2CF21C86BDEC17C9"
-				type: "item"
-				item: {
-					id: "minecraft:golden_chestplate"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
-			}]
-		}
-		{
-			title: "The beginning of a problem."
-			x: -7.5d
-			y: 13.5d
-			subtitle: "Alchoholics anonymous"
-			id: "05E45A7D1C9927E5"
-			tasks: [{
-				id: "06BFB633FC06AF54"
-				type: "item"
-				item: "drinkbeer:beer_barrel"
-			}]
-		}
-		{
-			title: "Amateur Brewery"
-			x: -8.5d
-			y: 14.0d
-			subtitle: "Bartending to infuse spice into beer, and trading to manipulate the markets!"
-			description: [""]
-			dependencies: ["05E45A7D1C9927E5"]
-			id: "3E499250F88E22DA"
 			tasks: [
 				{
-					id: "25B8877222B6CAE0"
+					id: "2CF21C86BDEC17C9"
 					type: "item"
-					item: "drinkbeer:bartending_table_normal"
+					item: {
+						id: "minecraft:golden_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
 				}
 				{
-					id: "4C08DE69B9F3B0D9"
+					id: "6147E82FBBFCE6C1"
 					type: "item"
-					item: "drinkbeer:trade_box_normal"
+					item: {
+						id: "minecraft:golden_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7807C759C6353BD2"
+					type: "item"
+					item: {
+						id: "minecraft:golden_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "26B5E87291EAC402"
+					type: "item"
+					item: {
+						id: "minecraft:golden_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "3B8BEA1DD35933B7"
+					type: "item"
+					item: "minecraft:enchanted_golden_apple"
+				}
+				{
+					id: "64B9A4353C49300E"
+					type: "item"
+					item: "minecraft:golden_carrot"
+					count: 3
+				}
+				{
+					id: "4D7B25FD0B84E234"
+					type: "item"
+					item: {
+						id: "campanion:golden_spear"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
 				}
 			]
 		}
 		{
-			title: "Amateur Drinker"
+			title: "The beginning of a problem."
 			x: -7.5d
-			y: 14.5d
-			subtitle: "We don't use glass here, hun"
+			y: 14.0d
+			subtitle: "Alchoholics anonymous"
+			description: ["Beginning your brewing journey will allow access to potion effects before brewing is available!"]
+			id: "05E45A7D1C9927E5"
+			tasks: [
+				{
+					id: "06BFB633FC06AF54"
+					type: "item"
+					item: "drinkbeer:beer_barrel"
+				}
+				{
+					id: "1CA938F3C387BA3E"
+					type: "item"
+					item: "drinkbeer:recipe_board_package"
+				}
+			]
+		}
+		{
+			title: "Amateur Brewery"
+			x: -8.0d
+			y: 15.0d
+			description: [
+				""
+				"Bartering will allow you to obtain loot and spice for your beer. They have a tendency to request stone and wooden tools, which are removed, so when you get to andesite age these can be substituted for 1 andesite alloy."
+			]
 			dependencies: ["05E45A7D1C9927E5"]
-			id: "122DFB8F2A17E3B3"
+			id: "3E499250F88E22DA"
 			tasks: [{
-				id: "759BCB944FED05D4"
+				id: "4C08DE69B9F3B0D9"
 				type: "item"
-				item: "drinkbeer:empty_beer_mug"
+				item: "drinkbeer:trade_box_normal"
 			}]
 		}
 		{
@@ -412,6 +475,7 @@
 			]
 		}
 		{
+			title: "Begin your chef career."
 			x: -8.5d
 			y: 10.0d
 			subtitle: "Let's begin with some light cooking, eh?"
@@ -452,7 +516,10 @@
 		{
 			x: -6.0d
 			y: 10.0d
-			description: ["All my homies hate enchanting early game, let's get some REAL man's drip."]
+			description: [
+				"All my homies hate enchanting early game, let's get some REAL man's drip."
+				"Craft a full set of traveller's gear and i'll bless with you a gift. Fair?"
+			]
 			dependencies: ["0FC0B4E8EC58F791"]
 			id: "78E055160B11FC48"
 			tasks: [{
@@ -461,22 +528,40 @@
 				advancement: "tconstruct:tools/travelers_gear"
 				criterion: ""
 			}]
-			rewards: [{
-				id: "4D442FD95DEBC09A"
-				type: "item"
-				item: "minecraft:gray_dye"
-				count: 12
-			}]
+			rewards: [
+				{
+					id: "4D442FD95DEBC09A"
+					type: "item"
+					item: "minecraft:gray_dye"
+					count: 12
+				}
+				{
+					id: "003476D34FD33AD5"
+					type: "item"
+					item: "reinfchest:iron_chest"
+				}
+			]
 		}
 		{
-			icon: "createastral:orcane"
+			title: "Special Thanks"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "createastral:textures/item/uwaah.png"
+				}
+			}
 			x: -5.5d
 			y: 13.5d
 			shape: "gear"
-			subtitle: "Please Read"
+			subtitle: "uwaaaah"
 			description: [
-				"Welcome! This quest tree is still an early concept. Progression breaks are likely going to exist as I do NOT want to railroad players completely. As such, you don't need to follow these to the exact quest order, however it is the only general idea I have used and supported through development!"
 				""
+				"Ethanicuss - Structure dev. flopdev, moral support and progression insight."
+				"Iris - Music, Menu!!!"
+				"Choco - Structures"
+				"The Astral Discord - Showing appreciation for the pack."
+				"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Nathan?"
 			]
 			id: "1472D9CAB3B3A74D"
 			tasks: [{
@@ -491,6 +576,7 @@
 			}]
 		}
 		{
+			title: "Gather! 64 Melon Blocks."
 			x: -10.5d
 			y: 11.0d
 			dependencies: ["4F4C278C3A8C0281"]
@@ -508,6 +594,7 @@
 			}]
 		}
 		{
+			title: "Gather! 64 Cactus"
 			x: -9.5d
 			y: 12.0d
 			dependencies: ["4F4C278C3A8C0281"]
@@ -526,6 +613,7 @@
 			}]
 		}
 		{
+			title: "Gather! 64 pumpkins!"
 			x: -10.5d
 			y: 12.0d
 			dependencies: ["4F4C278C3A8C0281"]
@@ -543,6 +631,7 @@
 			}]
 		}
 		{
+			title: "Gather! 64 Carrot crates"
 			x: -10.5d
 			y: 14.0d
 			hide_dependency_lines: true
@@ -570,6 +659,7 @@
 			]
 		}
 		{
+			title: "Gather! 64 Potato crates"
 			x: -12.5d
 			y: 14.5d
 			hide_dependency_lines: true
@@ -597,6 +687,7 @@
 			]
 		}
 		{
+			title: "Gather! 64 Corn crates"
 			x: -11.5d
 			y: 14.5d
 			hide_dependency_lines: true
@@ -624,6 +715,7 @@
 			]
 		}
 		{
+			title: "Gather! 64 Bags of Rice"
 			x: -9.5d
 			y: 13.5d
 			hide_dependency_lines: true
@@ -651,6 +743,7 @@
 			]
 		}
 		{
+			title: "Gather! 64 Onion crates"
 			x: -12.0d
 			y: 11.5d
 			hide_dependency_lines: true
@@ -678,6 +771,7 @@
 			]
 		}
 		{
+			title: "Gather! 64 tomato crates"
 			x: -12.5d
 			y: 12.5d
 			hide_dependency_lines: true
@@ -705,6 +799,7 @@
 			]
 		}
 		{
+			title: "Gather! 64 Cabbage crates"
 			x: -12.5d
 			y: 13.5d
 			hide_dependency_lines: true
@@ -733,14 +828,11 @@
 		}
 		{
 			title: "Very nice spice."
-			x: -9.0d
-			y: 15.5d
+			x: -8.0d
+			y: 16.0d
 			subtitle: "Was it worth it?"
 			description: ["(oh yeah, it was worth it.)"]
-			dependencies: [
-				"3E499250F88E22DA"
-				"122DFB8F2A17E3B3"
-			]
+			dependencies: ["3E499250F88E22DA"]
 			id: "69C0C2601F6F79A7"
 			tasks: [
 				{
@@ -847,10 +939,12 @@
 			}]
 		}
 		{
+			title: "I LOVE BACKPACKS"
 			icon: "campanion:hiking_pack"
 			x: -10.5d
 			y: 10.0d
-			description: ["Porta-Storage? Excellent..."]
+			subtitle: "Porta-Storage? Excellent..."
+			description: ["These backpacks take up your chest slot, but contain a huge amount of slots and a built-in crafting bench."]
 			dependencies: ["504201C234C38437"]
 			id: "501AD44D7875F4D9"
 			tasks: [{
@@ -861,6 +955,7 @@
 		}
 		{
 			title: "Where is my zoom key?"
+			icon: "minecraft:spyglass"
 			x: 1.0d
 			y: 9.0d
 			subtitle: "Right here, silly!"
@@ -868,15 +963,22 @@
 			dependencies: ["11ACD707D7284920"]
 			id: "6B68AF2DE79A65A3"
 			tasks: [{
-				id: "36070699457929C3"
-				type: "item"
-				item: "minecraft:spyglass"
+				id: "36090F953BBA78B4"
+				type: "checkmark"
+				title: "I understand."
 			}]
-			rewards: [{
-				id: "62EBCF9C550E38E7"
-				type: "item"
-				item: "create:gray_toolbox"
-			}]
+			rewards: [
+				{
+					id: "62EBCF9C550E38E7"
+					type: "item"
+					item: "create:gray_toolbox"
+				}
+				{
+					id: "44E31D1175B6FDDF"
+					type: "item"
+					item: "minecraft:spyglass"
+				}
+			]
 		}
 		{
 			title: "The Amazon Warehouse."
@@ -887,11 +989,13 @@
 					Icon: "createdeco:textures/block/palettes/decal/cyan_decal.png"
 				}
 			}
-			x: -8.5d
-			y: 8.5d
+			x: -0.5d
+			y: 8.0d
 			description: ["The package crafter will allow any combination of blocks to be made into framed packages, perfect for storing large quantities of singular blocks."]
-			hide_dependency_lines: true
-			dependencies: ["11ACD707D7284920"]
+			dependencies: [
+				"11ACD707D7284920"
+				"22EDB2C326C53A89"
+			]
 			id: "5D69FB71CD8A1391"
 			tasks: [{
 				id: "46475A543AEB495D"
@@ -901,8 +1005,8 @@
 		}
 		{
 			title: "Storage solutions on a budget."
-			x: -9.5d
-			y: 8.5d
+			x: -1.0d
+			y: 7.0d
 			subtitle: "Pick up and move them!"
 			description: ["Package up single items into a box, like a shulker box with 1 slot. Should clear out those chests of pesky cobble and dirt."]
 			dependencies: ["5D69FB71CD8A1391"]
@@ -924,7 +1028,10 @@
 			title: "Ahoy!"
 			x: 2.0d
 			y: 11.5d
-			description: ["Ye filthy landlubbers can't even walk 10 seconds on the ocean floor without spluttering for air."]
+			description: [
+				"Ye filthy landlubbers can't even walk 10 seconds on the ocean floor without spluttering for air."
+				"These will be used in a certain *astral* suit in the near future, you might want to make some now."
+			]
 			dependencies: ["327EA8E115211B55"]
 			id: "2C8290C44890E0B5"
 			tasks: [
@@ -964,42 +1071,14 @@
 			]
 			rewards: [
 				{
-					id: "09769ED409429839"
-					type: "item"
-					item: {
-						id: "minecraft:lingering_potion"
-						Count: 1b
-						tag: {
-							Potion: "minecraft:water"
-						}
-					}
-				}
-				{
-					id: "5B025D91A95676F8"
-					type: "item"
-					item: {
-						id: "minecraft:potion"
-						Count: 1b
-						tag: {
-							Potion: "minecraft:water"
-						}
-					}
-				}
-				{
-					id: "40E294248D80AEE8"
-					type: "item"
-					item: {
-						id: "minecraft:splash_potion"
-						Count: 1b
-						tag: {
-							Potion: "minecraft:water"
-						}
-					}
-				}
-				{
 					id: "358BBCC53DC4B6AF"
 					type: "item"
 					item: "minecraft:nautilus_shell"
+				}
+				{
+					id: "546B41C75CBB7182"
+					type: "item"
+					item: "minecraft:heart_of_the_sea"
 				}
 			]
 		}
@@ -1010,9 +1089,9 @@
 				Count: 1b
 				tag: {
 					Automobile: {
-						wheels: "automobility:standard"
-						frame: "automobility:yellow_tractor"
 						engine: "automobility:stone"
+						frame: "automobility:yellow_tractor"
+						wheels: "automobility:standard"
 					}
 				}
 			}
@@ -1099,9 +1178,9 @@
 						Count: 1b
 						tag: {
 							Automobile: {
-								engine: "automobility:stone"
-								frame: "automobility:yellow_tractor"
 								wheels: "automobility:standard"
+								frame: "automobility:yellow_tractor"
+								engine: "automobility:stone"
 							}
 						}
 					}
@@ -1123,7 +1202,8 @@
 			x: -2.0d
 			y: 8.0d
 			shape: "gear"
-			subtitle: "Chapter 2 Unlock."
+			subtitle: "Chapter 1 Unlock."
+			description: ["Feel free to refer back to this tab for basic info on some of the simpler content, setting up a decent food source will sure help you, as it increases max HP!"]
 			dependencies: ["601A619C6E96920A"]
 			id: "1337920DA45E72AD"
 			tasks: [{
@@ -1134,8 +1214,10 @@
 			}]
 		}
 		{
-			x: -9.0d
-			y: 7.5d
+			title: "Techreborn Storage"
+			x: 0.0d
+			y: 7.0d
+			description: ["Alternatively, treat yourself to some techreborn barrels to organise a storage system. They have much higher density of storage per block for their tier, but only contain one item with a smaller icon."]
 			dependencies: ["5D69FB71CD8A1391"]
 			id: "3147C3CCBC6856B6"
 			tasks: [
@@ -1152,8 +1234,9 @@
 			]
 		}
 		{
-			x: -4.0d
+			x: -2.5d
 			y: 13.5d
+			dependencies: ["30671A15990F39D8"]
 			id: "791D3292F22706E6"
 			tasks: [{
 				id: "40EFAB1EA82C0179"
@@ -1162,8 +1245,9 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: 13.5d
+			x: -4.0d
+			y: 15.0d
+			dependencies: ["30671A15990F39D8"]
 			id: "61268E9695C2B0B0"
 			tasks: [{
 				id: "686BE4BE4E9EE3FB"
@@ -1172,8 +1256,9 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 13.5d
+			x: -1.0d
+			y: 15.0d
+			dependencies: ["30671A15990F39D8"]
 			id: "441D6F369B7912E5"
 			tasks: [{
 				id: "4F02DF2E116D3E92"
@@ -1183,7 +1268,8 @@
 		}
 		{
 			x: -1.0d
-			y: 13.5d
+			y: 14.0d
+			dependencies: ["30671A15990F39D8"]
 			id: "5FFC7DFF4294C81A"
 			tasks: [{
 				id: "74EB7FF43AA93703"
@@ -1192,8 +1278,9 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 13.5d
+			x: -4.0d
+			y: 14.0d
+			dependencies: ["30671A15990F39D8"]
 			id: "65C0B4100CD88D77"
 			tasks: [{
 				id: "184486A840B467DE"
@@ -1202,8 +1289,9 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 13.5d
+			x: -1.0d
+			y: 16.0d
+			dependencies: ["30671A15990F39D8"]
 			id: "11B2E25F18AD9C35"
 			tasks: [{
 				id: "1077A31DBE0B61EF"
@@ -1212,14 +1300,202 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 13.5d
+			x: -4.0d
+			y: 16.0d
+			dependencies: ["30671A15990F39D8"]
 			id: "30A8E779764AE865"
 			tasks: [{
 				id: "0F24228CDCEB910E"
 				type: "item"
 				item: "chipped:mechanist_workbench"
 			}]
+		}
+		{
+			x: -0.5d
+			y: 9.0d
+			subtitle: "Wooden chests? Boring."
+			description: ["Each tier of chest you make in the future will require the previous tiers to craft."]
+			dependencies: ["11ACD707D7284920"]
+			id: "22EDB2C326C53A89"
+			tasks: [{
+				id: "247A190DDF6719BF"
+				type: "item"
+				item: "reinfchest:copper_chest"
+			}]
+		}
+		{
+			title: "Laying the groundwork."
+			x: -9.5d
+			y: 9.0d
+			description: ["These tiles connect all cooking for blockheads blocks between them, so use them as a floor in your kitchens."]
+			dependencies: ["2CE5BB6A7B30CA4C"]
+			id: "3522109BABC7E48B"
+			tasks: [{
+				id: "34A0BAA9C0AE7A74"
+				type: "item"
+				item: "cookingforblockheads:white_kitchen_floor"
+			}]
+		}
+		{
+			title: "Everything including the kitchen sink."
+			x: -9.5d
+			y: 8.0d
+			subtitle: "Important blocks with functionality."
+			dependencies: ["3522109BABC7E48B"]
+			id: "337723130C80CD91"
+			tasks: [
+				{
+					id: "7D33C5F208328B37"
+					type: "item"
+					item: "cookingforblockheads:oven"
+				}
+				{
+					id: "5E02F460E91CA16F"
+					type: "item"
+					item: "cookingforblockheads:fridge"
+				}
+				{
+					id: "01F817CDA1FD1EB1"
+					type: "item"
+					item: "cookingforblockheads:cooking_table"
+				}
+			]
+		}
+		{
+			x: -8.5d
+			y: 8.0d
+			subtitle: "Storage space for ingredients."
+			dependencies: ["3522109BABC7E48B"]
+			id: "18BA6A99120CF00D"
+			tasks: [
+				{
+					id: "46DDBA57E0E31ED4"
+					type: "item"
+					item: "cookingforblockheads:counter"
+				}
+				{
+					id: "5DAAA626786D2781"
+					type: "item"
+					item: "cookingforblockheads:sink"
+				}
+			]
+		}
+		{
+			title: "Extra utilities."
+			x: -10.5d
+			y: 8.0d
+			subtitle: "Some foods require extra components."
+			dependencies: ["3522109BABC7E48B"]
+			id: "3BACB90B72AE7623"
+			tasks: [
+				{
+					id: "5E8E12E883FDC595"
+					type: "item"
+					item: "cookingforblockheads:tool_rack"
+				}
+				{
+					id: "5AB7422E73C26E76"
+					type: "item"
+					item: "cookingforblockheads:spice_rack"
+				}
+				{
+					id: "591F6C488FB3F775"
+					type: "item"
+					item: "cookingforblockheads:fruit_basket"
+				}
+				{
+					id: "3D63E7309CEE69AA"
+					type: "item"
+					item: "cookingforblockheads:milk_jar"
+				}
+			]
+		}
+		{
+			title: "Chipped Decoration Blocks!"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "chipped:textures/block/stripped_dark_oak_log/stripped_dark_oak_log_16.png"
+				}
+			}
+			x: -2.5d
+			y: 15.0d
+			subtitle: "If you are of the building type, you *might* be interested in this. Not only do each of these stations look cool, they also provide hundreds of possible blocks to build with, in any colour."
+			id: "30671A15990F39D8"
+			tasks: [{
+				id: "0156EF5B8B50BDB8"
+				type: "checkmark"
+				title: "I understand."
+			}]
+		}
+		{
+			x: -7.0d
+			y: 15.0d
+			subtitle: "This is the recipe for your first beer."
+			dependencies: ["05E45A7D1C9927E5"]
+			id: "7D768E5AA9EA358C"
+			tasks: [
+				{
+					id: "070C4B0598E4F104"
+					type: "item"
+					item: "drinkbeer:empty_beer_mug"
+				}
+				{
+					id: "479FFE3123D77A5A"
+					type: "item"
+					item: "minecraft:wheat"
+					count: 3L
+				}
+				{
+					id: "4D9FB657EA74050E"
+					type: "item"
+					item: "minecraft:water_bucket"
+				}
+			]
+		}
+		{
+			x: -7.0d
+			y: 16.0d
+			subtitle: "Slippery slope."
+			dependencies: ["7D768E5AA9EA358C"]
+			id: "52832D8DA239C017"
+			tasks: [{
+				id: "67BF890594998248"
+				type: "item"
+				item: "drinkbeer:beer_mug"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 17.0d
+			subtitle: "Infuse beer by clicking this table with them."
+			dependencies: ["52832D8DA239C017"]
+			id: "154EF80FC9B8F0B0"
+			tasks: [{
+				id: "145A72A4C427E775"
+				type: "item"
+				item: "drinkbeer:bartending_table_normal"
+			}]
+		}
+		{
+			x: -10.5d
+			y: 9.0d
+			subtitle: "A book, full of food!"
+			dependencies: ["3522109BABC7E48B"]
+			id: "152FF1A843FFDDB5"
+			tasks: [
+				{
+					id: "17B4104F33DAE09C"
+					type: "item"
+					item: "cookingforblockheads:recipe_book"
+				}
+				{
+					id: "44ABB2A96EF3BC1D"
+					type: "item"
+					item: "cookingforblockheads:no_filter_edition"
+				}
+			]
 		}
 	]
 }

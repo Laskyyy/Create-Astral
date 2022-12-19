@@ -1,0 +1,448 @@
+{
+	id: "6F9B91D7EB45DFB6"
+	group: ""
+	order_index: 6
+	filename: "6_greggification_stage_6"
+	title: "6) Greggification Stage 6"
+	icon: "tconstruct:knightslime_ingot"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: 8.0d
+		y: 2.0d
+		width: 2.0d
+		height: 2.0d
+		rotation: 20.0d
+		image: "createastral:textures/item/HESPERYD (WHITE).png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			title: "Beginning of The End"
+			x: 0.0d
+			y: 0.0d
+			shape: "rsquare"
+			dependencies: ["0CE73BAC9F3A9E03"]
+			size: 2.0d
+			id: "26F58F61AC2DD1B4"
+			tasks: [{
+				id: "4B7485FF8CB77AE5"
+				type: "item"
+				title: "astral matter placeholder"
+				item: "tconstruct:knightslime_ingot"
+			}]
+		}
+		{
+			title: "Infinite Clockworks"
+			x: 3.0d
+			y: 7.5d
+			shape: "gear"
+			dependencies: [
+				"26F58F61AC2DD1B4"
+				"676F4FAC0BC947B3"
+				"0CB3F16B45888EC2"
+				"699E6004AF2A9D0F"
+			]
+			size: 1.5d
+			id: "036A6EF5C44F8DBD"
+			tasks: [{
+				id: "66E7FE4DA2B2B3A1"
+				type: "item"
+				title: "Infinite Clockworks"
+				item: "create:precision_mechanism"
+				count: 4L
+			}]
+		}
+		{
+			x: 5.5d
+			y: 8.0d
+			dependencies: ["036A6EF5C44F8DBD"]
+			id: "4976C48661247CA4"
+			tasks: [{
+				id: "3B472780DF61D638"
+				type: "item"
+				item: "create:creative_motor"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 6.0d
+			dependencies: ["036A6EF5C44F8DBD"]
+			id: "1F59AF68FD7090B6"
+			tasks: [{
+				id: "5D0429F0526E3C10"
+				type: "item"
+				item: "create:creative_fluid_tank"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 10.5d
+			dependencies: ["036A6EF5C44F8DBD"]
+			id: "7A5E7085AAA0BB0F"
+			tasks: [{
+				id: "7C9C5B861EB1D182"
+				type: "item"
+				item: "create:creative_blaze_cake"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 7.0d
+			dependencies: ["036A6EF5C44F8DBD"]
+			id: "2888BB51B9CD0A10"
+			tasks: [{
+				id: "5CEBD05A480FC898"
+				type: "item"
+				item: "create:handheld_worldshaper"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 9.5d
+			dependencies: ["036A6EF5C44F8DBD"]
+			id: "487007CF93086307"
+			tasks: [{
+				id: "7BFBFF7A98EDA273"
+				type: "item"
+				item: "createaddition:creative_energy"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 8.0d
+			dependencies: ["036A6EF5C44F8DBD"]
+			id: "75F940F55C032DF8"
+			tasks: [{
+				id: "1B4C22C25A1EBD31"
+				type: "item"
+				item: "powah:energy_cell_creative"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 5.0d
+			dependencies: ["036A6EF5C44F8DBD"]
+			id: "57795BF3AD94A873"
+			tasks: [{
+				id: "19C1B3ADA32D8F05"
+				type: "item"
+				item: "techreborn:creative_solar_panel"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 5.5d
+			dependencies: ["036A6EF5C44F8DBD"]
+			id: "669D09B02C1FA9DB"
+			tasks: [{
+				id: "4AFC2B1F1FC2F864"
+				type: "item"
+				item: "techreborn:creative_storage_unit"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 8.5d
+			dependencies: ["036A6EF5C44F8DBD"]
+			id: "1A82B0FC64A06700"
+			tasks: [{
+				id: "308D41DC2372DC8E"
+				type: "item"
+				item: "techreborn:creative_tank_unit"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 9.5d
+			dependencies: ["036A6EF5C44F8DBD"]
+			id: "7C19FE2193AD94C8"
+			tasks: [{
+				id: "28A94FF54518FD6E"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "upgrades"
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 8.5d
+			dependencies: ["036A6EF5C44F8DBD"]
+			id: "4DE54BD7A93A1A1B"
+			tasks: [{
+				id: "4846C7E90CBF8056"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "defense"
+					}
+				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: 10.5d
+			dependencies: ["036A6EF5C44F8DBD"]
+			id: "781CF5155D669521"
+			tasks: [{
+				id: "19705ABBB0540B91"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "abilities"
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 5.5d
+			dependencies: ["036A6EF5C44F8DBD"]
+			id: "5951B8AB838A51AF"
+			tasks: [{
+				id: "1585F7AAED8951F3"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "souls"
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 7.0d
+			dependencies: ["036A6EF5C44F8DBD"]
+			id: "5EB9D6A8B8CE8102"
+			tasks: [{
+				id: "05E8D3D4C8FC527F"
+				type: "item"
+				item: "ae2:creative_item_cell"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 5.0d
+			dependencies: ["036A6EF5C44F8DBD"]
+			id: "035A1BFD479C3A9D"
+			tasks: [{
+				id: "2893E1BA33E5B954"
+				type: "item"
+				item: "ae2:creative_fluid_cell"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 11.5d
+			dependencies: ["036A6EF5C44F8DBD"]
+			id: "7D483636DE2ED6A8"
+			tasks: [{
+				id: "2B2C2447ACEB5AA5"
+				type: "item"
+				item: "create:creative_crate"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 6.0d
+			dependencies: ["036A6EF5C44F8DBD"]
+			id: "3C4F610FB2E3CF3A"
+			tasks: [{
+				id: "2378C9AD2B8858CD"
+				type: "item"
+				item: {
+					id: "phonos:custom_music_disc"
+					Count: 1b
+					tag: {
+						MusicData: {
+							SoundId: "minecraft:empty"
+							ComparatorSignal: 1
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Nanomachines, son."
+			x: 1.5d
+			y: -1.0d
+			subtitle: "Zero-Point Armor"
+			description: [
+				"Zero-Point armor offers"
+				"no defense just as it's"
+				"predeccessor, but instead"
+				"of flight it provides you"
+				"with massive regeneration."
+				"Hunger might be your weakness"
+				"though :))"
+			]
+			dependencies: ["26F58F61AC2DD1B4"]
+			id: "0C3A240BFDE3231F"
+			tasks: [{
+				id: "64004BC390004C8B"
+				type: "item"
+				title: "placeholder"
+				item: {
+					id: "tconstruct:plate_chestplate"
+					Count: 1b
+					tag: {
+						tic_modifiers: [ ]
+						tic_broken: 0b
+						tic_stats: {
+							"tconstruct:knockback_resistance": 0.1f
+							"tconstruct:armor": 7.0f
+							"tconstruct:durability": 480.0f
+							"tconstruct:armor_toughness": 2.0f
+						}
+						Damage: 0
+						tic_multipliers: { }
+						tic_persistent_data: {
+							upgrades: 1
+							abilities: 1
+							defense: 4
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Galaxia"
+			x: -1.5d
+			y: -1.0d
+			subtitle: "The PTSD of a certain witch has just triggered."
+			description: [
+				"The Galaxia is a sword forged"
+				"to bring stability to the universe."
+				"It doesn't perform as well"
+				"as swords of the same tier,"
+				"however it deals monstrous"
+				"damage to hostile creatures."
+				""
+			]
+			dependencies: ["26F58F61AC2DD1B4"]
+			id: "0DADD3950895FC32"
+			tasks: [{
+				id: "5F57437169396FA2"
+				type: "item"
+				item: {
+					id: "ae2:certus_quartz_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: 0.0d
+			shape: "rsquare"
+			dependencies: [
+				"0CE73BAC9F3A9E03"
+				"6E93550DF0302208"
+			]
+			size: 2.0d
+			id: "2DD0BFA67E116EEA"
+			tasks: [{
+				id: "22C56905F314EF02"
+				type: "dimension"
+				icon: "minecraft:ender_eye"
+				dimension: "minecraft:the_end"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 2.0d
+			dependencies: ["2DD0BFA67E116EEA"]
+			id: "699E6004AF2A9D0F"
+			tasks: [{
+				id: "308F2DB6794D2B7C"
+				type: "item"
+				item: "minecraft:shulker_shell"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 3.0d
+			dependencies: ["2DD0BFA67E116EEA"]
+			id: "0CB3F16B45888EC2"
+			tasks: [{
+				id: "3ADF9EE43C17785D"
+				type: "item"
+				item: "minecraft:end_stone"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 3.0d
+			dependencies: ["2DD0BFA67E116EEA"]
+			id: "676F4FAC0BC947B3"
+			tasks: [{
+				id: "03F13DCC7EABA875"
+				type: "item"
+				item: "minecraft:chorus_fruit"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -4.0d
+			shape: "rsquare"
+			dependencies: ["26F58F61AC2DD1B4"]
+			size: 2.0d
+			id: "6E93550DF0302208"
+			tasks: [{
+				id: "280D18A2949E8CC2"
+				type: "item"
+				item: {
+					id: "ad_astra:tier_4_rocket"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			icon: "create:large_cogwheel"
+			x: 3.0d
+			y: 14.5d
+			shape: "heart"
+			description: ["laky this is your pack fill this"]
+			dependencies: ["7D483636DE2ED6A8"]
+			size: 3.0d
+			id: "334C2F1D70DB1B79"
+			tasks: [{
+				id: "4D4594DE6416DC9E"
+				type: "checkmark"
+				title: "Infinity"
+			}]
+			rewards: [{
+				id: "53F02F74E0C13B85"
+				type: "item"
+				item: {
+					id: "minecraft:written_book"
+					Count: 1b
+					tag: {
+						pages: ["{\"underlined\":true,\"color\":\"blue\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.curseforge.com/minecraft/modpacks/gt-new-horizons\"},\"text\":\"Greg\"}"]
+						resolved: 1b
+						display: { }
+						title: "Library Of Babel"
+						author: "Jorge Luis Borges"
+					}
+				}
+			}]
+		}
+	]
+}
