@@ -1,0 +1,14 @@
+name = "More Chests"
+filename = "morechests-fabric-1.18.2-1.0.2.jar"
+side = "both"
+
+[download]
+mode = "url"
+url = "https://cdn.modrinth.com/data/Du77FavA/versions/VqVSOQ9P/morechests-fabric-1.18.2-1.0.2.jar"
+hash-format = "sha512"
+hash = "d76efc40e85507a56d1ab267d9060094b3bb8bf4d14128ad11c52a2772f60caab09063578ad5c340ff031804c65b4c5379b6d0dd21b782eaf86fe9014ad08649"
+
+[update]
+[update.modrinth]
+mod-id = "Du77FavA"
+version = "VqVSOQ9P"
