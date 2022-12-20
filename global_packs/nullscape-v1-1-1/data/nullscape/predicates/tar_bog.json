@@ -1,9 +1,0 @@
-{
-  "condition": "minecraft:location_check",
-  "predicate": {
-    "biome": "nullscape:tar_bog",
-    "fluid": {
-      "fluid": "minecraft:water"
-    }
-  }
-}

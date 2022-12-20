@@ -489,6 +489,7 @@
 			subtitle: "Read me!"
 			description: ["As the nether is not exactly a dimension anymore, you are going to need to be a little more creative when searching for regular nether blocks and items."]
 			dependencies: ["15B9947ABCCB882F"]
+			size: 1.5d
 			id: "306D009F01634115"
 			tasks: [{
 				id: "3D1C9C82DFB06842"
@@ -515,6 +516,7 @@
 			title: "Automate silver!"
 			x: -18.0d
 			y: 1.0d
+			shape: "diamond"
 			description: [
 				"By washing moon sand in the same way you'd make an iron farm, you can obtain a renewable source of silver nuggets."
 				"Moon sand itself can be automated by generating moon stone and crushing it into sand, which you will be able to achieve soon with the crushing wheels."
@@ -547,10 +549,10 @@
 		}
 		{
 			title: "The path of Brass."
-			icon: "ad_astra:iron_plating"
+			icon: "createdeco:black_decal"
 			x: -18.5d
 			y: 2.0d
-			subtitle: "Let's get creative"
+			subtitle: "This wasteland is scattered with pipelines... what for?"
 			description: ["Both sides of this tree will converge at the end, making them both mandatory."]
 			dependencies: ["306D009F01634115"]
 			id: "6027602617EC9F1F"
@@ -563,7 +565,7 @@
 		}
 		{
 			title: "Creating Silver Plates"
-			x: -17.0d
+			x: -17.5d
 			y: -2.5d
 			dependencies: ["1DFF76A494C9A586"]
 			id: "1A08EE7C76242947"
@@ -575,8 +577,9 @@
 		}
 		{
 			title: "Automate Circuits!"
-			x: -16.0d
+			x: -16.5d
 			y: -2.5d
+			shape: "diamond"
 			dependencies: ["1A08EE7C76242947"]
 			id: "73973C5E6D2573B8"
 			tasks: [{
@@ -601,7 +604,7 @@
 		{
 			title: "The basics of energy storage"
 			x: -15.5d
-			y: -3.5d
+			y: -4.5d
 			dependencies: ["2E7D02CA77627EF5"]
 			id: "19CCFE1A90B73F44"
 			tasks: [{
@@ -616,6 +619,7 @@
 			y: -1.5d
 			subtitle: "Save on some resources this way, entirely optional."
 			dependencies: ["61878C8DC870AC6A"]
+			size: 0.8d
 			id: "52EC8406E928BDB3"
 			tasks: [{
 				id: "7B8CE51F9D9A0633"
@@ -630,23 +634,12 @@
 			subtitle: "Increase the efficiency of converting tree sap into rubber using an extractor."
 			description: ["Many more recipes included to cater for automation of resources."]
 			dependencies: ["752215E611021472"]
+			size: 0.8d
 			id: "61878C8DC870AC6A"
 			tasks: [{
 				id: "254AAF5B99A444A3"
 				type: "item"
 				item: "techreborn:extractor"
-			}]
-		}
-		{
-			title: "Dust grinder"
-			x: -14.5d
-			y: -1.5d
-			dependencies: ["752215E611021472"]
-			id: "4CAF04D992D9EB6B"
-			tasks: [{
-				id: "5C65E4603F6A01A6"
-				type: "item"
-				item: "techreborn:grinder"
 			}]
 		}
 		{
@@ -685,6 +678,7 @@
 			title: "Prepare the biofuel"
 			x: -8.5d
 			y: -2.5d
+			shape: "diamond"
 			subtitle: "Use that canning machine to load pure biomatter into liquid form."
 			dependencies: ["1533B14714529386"]
 			id: "57724BFDF0A78FAF"
@@ -702,6 +696,7 @@
 		}
 		{
 			title: "The first electricity source!"
+			icon: "createdeco:yellow_decal"
 			x: -15.0d
 			y: -2.5d
 			subtitle: "With access to alternators you may convert SU into electrical units."
@@ -710,6 +705,7 @@
 				"73973C5E6D2573B8"
 				"19CCFE1A90B73F44"
 			]
+			size: 1.5d
 			min_required_tasks: 1
 			id: "5459F646B9A392C4"
 			tasks: [
@@ -727,7 +723,7 @@
 		}
 		{
 			title: "Basics of transferring power"
-			x: -14.0d
+			x: -13.5d
 			y: -2.5d
 			dependencies: ["5459F646B9A392C4"]
 			id: "752215E611021472"
@@ -751,14 +747,15 @@
 		}
 		{
 			title: "We're going to Mars"
-			x: -5.5d
+			x: -5.0d
 			y: 0.0d
-			shape: "gear"
+			shape: "hexagon"
 			subtitle: "Not sponsored by SpaceX"
 			dependencies: [
 				"28980EA356A2F0BF"
 				"1BF9656E9FBB2364"
 			]
+			size: 2.0d
 			id: "6E20B194F5CA8F22"
 			tasks: [{
 				id: "5125BCD5170B4867"
@@ -789,7 +786,7 @@
 		{
 			title: "Space Powah"
 			x: -5.5d
-			y: -1.0d
+			y: -1.5d
 			subtitle: "A little more expensive, but allows for easy movement of power generation."
 			hide_dependency_lines: true
 			dependencies: ["1BF9656E9FBB2364"]
@@ -802,10 +799,10 @@
 		}
 		{
 			title: "I got some new tools for ya"
-			x: -12.5d
-			y: -4.0d
+			x: -11.5d
+			y: -5.0d
 			subtitle: "These have no durability, are enchantable but require power as a resource instead!"
-			dependencies: ["07B10625859F1AF9"]
+			dependencies: ["5406D5779F7B697A"]
 			id: "64271E1245394C9A"
 			tasks: [{
 				id: "6D52114BB4345CAD"
@@ -815,8 +812,8 @@
 		}
 		{
 			title: "Craft a drill."
-			x: -13.5d
-			y: -3.5d
+			x: -12.5d
+			y: -4.5d
 			subtitle: "Love me minin"
 			dependencies: ["64271E1245394C9A"]
 			id: "4649E8638D453CFB"
@@ -828,8 +825,8 @@
 		}
 		{
 			title: "Craft a chainsaw."
-			x: -11.5d
-			y: -3.5d
+			x: -10.5d
+			y: -4.5d
 			subtitle: "Love me trees"
 			dependencies: ["64271E1245394C9A"]
 			id: "5A7912DAF9F6C05E"
@@ -841,8 +838,8 @@
 		}
 		{
 			title: "Craft a Jackhammer."
-			x: -13.5d
-			y: -4.5d
+			x: -12.5d
+			y: -5.5d
 			subtitle: "Love me rocks"
 			dependencies: ["64271E1245394C9A"]
 			id: "006608C6FDD18B20"
@@ -854,8 +851,8 @@
 		}
 		{
 			title: "Craft a rockcutter."
-			x: -11.5d
-			y: -4.5d
+			x: -10.5d
+			y: -5.5d
 			subtitle: "Love me silk"
 			dependencies: ["64271E1245394C9A"]
 			id: "20CFA79532615B61"
@@ -876,8 +873,8 @@
 		}
 		{
 			title: "Electrify your rubber collection."
-			x: -12.5d
-			y: -5.0d
+			x: -11.5d
+			y: -6.0d
 			subtitle: "Love me sap"
 			dependencies: ["64271E1245394C9A"]
 			id: "520ABA39D0E22434"
@@ -939,10 +936,12 @@
 		}
 		{
 			title: "The Piglin Planet"
-			x: -4.0d
+			x: -3.0d
 			y: 0.0d
+			shape: "gear"
 			subtitle: "It's time to introduce yourself to some porky friends."
 			dependencies: ["6E20B194F5CA8F22"]
+			size: 1.5d
 			id: "63DCF596AAA9A232"
 			tasks: [{
 				id: "16182598B074073D"
@@ -978,8 +977,8 @@
 		}
 		{
 			title: "Let there be LED."
-			x: -10.5d
-			y: -1.5d
+			x: -8.5d
+			y: -4.0d
 			subtitle: "Light up the world with snazzy new lights."
 			description: ["Require an adjacent power source to turn on."]
 			hide_dependency_lines: true
@@ -1137,7 +1136,8 @@
 		{
 			title: "Automate redstone!"
 			x: -14.5d
-			y: -4.5d
+			y: -5.5d
+			shape: "diamond"
 			subtitle: "By using a Create Additions Tesla Coil(tm) you can electrify these synthetic crystals to obtain an infinitely renewable source of redstone dust."
 			description: [
 				"The recipe doesnt show in REI, it will work regardless."
@@ -1170,8 +1170,8 @@
 		{
 			title: "MEKA ACTIVATED"
 			icon: "mtmechs:pa_whole_item"
-			x: -15.5d
-			y: -4.5d
+			x: -16.5d
+			y: -5.5d
 			subtitle: "Welcome to Overwatch"
 			dependencies: ["19CCFE1A90B73F44"]
 			id: "34E41CF057C08A48"
@@ -1238,7 +1238,7 @@
 		{
 			title: "Creating a space station!!"
 			x: -5.5d
-			y: 1.0d
+			y: 2.0d
 			subtitle: "Orbit dimensions have a 1:8 block travel ratio, just like the nether."
 			description: ["It might be worth setting up an outpost for fast travel, as planets are only 1:2."]
 			id: "47A155F9CAD19710"

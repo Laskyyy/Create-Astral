@@ -384,6 +384,7 @@
 				"624026189BBACBB0"
 				"0A71AC65808AFBE5"
 			]
+			size: 1.5d
 			id: "15B9947ABCCB882F"
 			tasks: [{
 				id: "26E0A4319968F290"
@@ -421,6 +422,7 @@
 			title: "Automate Copper!"
 			x: -1.5d
 			y: -2.0d
+			shape: "diamond"
 			subtitle: "Gainz"
 			dependencies: ["1519A1EA2CFA6FB1"]
 			id: "3A6FBCB0C9C41439"
@@ -453,6 +455,7 @@
 			title: "Automate Zinc!"
 			x: -1.5d
 			y: -1.0d
+			shape: "diamond"
 			subtitle: "Asurine is a renewable source of copper if you've been amassing a stockpile of clay"
 			dependencies: ["1519A1EA2CFA6FB1"]
 			id: "67012541C365BA5A"
@@ -478,6 +481,7 @@
 			title: "Efficient Bronze + Alloy production."
 			x: 3.5d
 			y: -2.0d
+			shape: "rsquare"
 			subtitle: "Andesite alloy can be produced at 1/3rd the cost if you opt to mix it into a liquid form and cast it into a solid!"
 			dependencies: ["6AEEE2B22E28945B"]
 			id: "5A1B85C3323DDBD1"
@@ -678,6 +682,7 @@
 		{
 			x: 4.5d
 			y: -2.0d
+			shape: "rsquare"
 			subtitle: "Bronze can be produced at half the cost with the mixing recipe."
 			dependencies: ["6AEEE2B22E28945B"]
 			id: "0E939F8167F47710"

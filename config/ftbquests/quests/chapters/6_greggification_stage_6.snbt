@@ -1,10 +1,10 @@
 {
 	id: "6F9B91D7EB45DFB6"
 	group: ""
-	order_index: 6
+	order_index: 7
 	filename: "6_greggification_stage_6"
-	title: "6) Greggification Stage 6"
-	icon: "tconstruct:knightslime_ingot"
+	title: "6) Creating Astral"
+	icon: "createastral:astral_singularity"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	images: [{
@@ -14,7 +14,7 @@
 		height: 2.0d
 		rotation: 20.0d
 		image: "createastral:textures/item/HESPERYD (WHITE).png"
-		hover: [ ]
+		hover: ["Tier contributed by Iris! Go listen to Hesperyd on Spotify ;)"]
 		click: ""
 		dev: false
 		corner: false
@@ -32,7 +32,7 @@
 				id: "4B7485FF8CB77AE5"
 				type: "item"
 				title: "astral matter placeholder"
-				item: "tconstruct:knightslime_ingot"
+				item: "createastral:astral_singularity"
 			}]
 		}
 		{
@@ -302,14 +302,14 @@
 					tag: {
 						tic_modifiers: [ ]
 						tic_broken: 0b
+						tic_multipliers: { }
+						Damage: 0
 						tic_stats: {
 							"tconstruct:knockback_resistance": 0.1f
 							"tconstruct:armor": 7.0f
 							"tconstruct:durability": 480.0f
 							"tconstruct:armor_toughness": 2.0f
 						}
-						Damage: 0
-						tic_multipliers: { }
 						tic_persistent_data: {
 							upgrades: 1
 							abilities: 1
@@ -436,10 +436,10 @@
 					Count: 1b
 					tag: {
 						pages: ["{\"underlined\":true,\"color\":\"blue\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.curseforge.com/minecraft/modpacks/gt-new-horizons\"},\"text\":\"Greg\"}"]
-						resolved: 1b
+						author: "Jorge Luis Borges"
 						display: { }
 						title: "Library Of Babel"
-						author: "Jorge Luis Borges"
+						resolved: 1b
 					}
 				}
 			}]

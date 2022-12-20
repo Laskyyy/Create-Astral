@@ -1,0 +1,21 @@
+{
+	"clientOnlyMode": false,
+	// Whether players can pick up items by clicking them. This also affects the keybind
+	"rightClickPickup": true,
+	// Whether players can throw items farther than normal by holding down the drop key
+	"itemThrowing": false,
+	// Whether the Item Filter should be loaded
+	"itemFilterEnabled": true,
+	// Whether items that have damage modifiers should also deal damage when thrown
+	"itemsActAsProjectiles": false,
+	// Whether players should be able to pick up items like normal
+	"autoPickup": true,
+	// Whether Interactic should override Minecraft's default item rendering with a more fancy version. Highly recommended
+	"fancyItemRendering": true,
+	// Whether Interactic should render the tooltips of items under the crosshair
+	"renderItemTooltips": true,
+	// Whether Interactic should render the full tooltip of items
+	"renderFullTooltip": true,
+	// Whether your arms should swing when dropping items
+	"swingArm": true
+}

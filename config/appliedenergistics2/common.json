@@ -28,7 +28,7 @@
     "inWorldSingularity_comment": "Enable the in-world crafting of singularities.",
     "inWorldSingularity": true,
     "inWorldFluix_comment": "Enable the in-world crafting of fluix crystals.",
-    "inWorldFluix": true,
+    "inWorldFluix": false,
     "inWorldCrystalGrowth_comment": "Enable the in-world crafting of crystals.",
     "inWorldCrystalGrowth": true,
     "disassemblyCrafting_comment": "Enable shift-clicking with the crafting units in hand to disassemble them.",

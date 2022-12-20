@@ -672,6 +672,7 @@
 		{
 			x: -2.0d
 			y: 3.5d
+			shape: "diamond"
 			subtitle: "Automate me!!!"
 			dependencies: ["1DEF161DE26F3587"]
 			id: "6B85CBE54B33C91F"
@@ -699,11 +700,12 @@
 		{
 			title: "Come get yer grout."
 			x: -0.5d
-			y: 1.0d
+			y: 0.5d
 			shape: "gear"
 			subtitle: "Chapter 3 Unlock"
 			description: ["Grout is to be used in tinkers-related blocks, I told you clay was going to be useful."]
 			dependencies: ["550F91EE08A48F1D"]
+			size: 1.5d
 			id: "7354F2BFB2591ECF"
 			tasks: [{
 				id: "4F44B7121D6C4F8D"
@@ -732,6 +734,7 @@
 			title: "Automate Gold+Tin"
 			x: 1.0d
 			y: 1.0d
+			shape: "diamond"
 			subtitle: "Use the chart to figure out automating red sand production"
 			hide_dependency_lines: true
 			dependencies: ["515FDE185E1FB782"]
@@ -758,6 +761,7 @@
 			title: "Automate Iron+flint"
 			x: 2.0d
 			y: 1.0d
+			shape: "diamond"
 			subtitle: "You've probably made this dozens of times already"
 			hide_dependency_lines: true
 			dependencies: ["515FDE185E1FB782"]
@@ -784,6 +788,7 @@
 			title: "Automate Clay"
 			x: 3.0d
 			y: 1.0d
+			shape: "diamond"
 			subtitle: "Balanced Greg"
 			hide_dependency_lines: true
 			dependencies: ["515FDE185E1FB782"]
@@ -816,6 +821,7 @@
 			title: "Mob farms are soooo last year..."
 			x: -5.5d
 			y: 4.5d
+			shape: "diamond"
 			subtitle: "Extractinating sand will result in most overworld mob drops, negating the need to spend time on the same farms you've been building since 2012."
 			dependencies: ["392516C890B749C8"]
 			id: "3DBD012732199053"

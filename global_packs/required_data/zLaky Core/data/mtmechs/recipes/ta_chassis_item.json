@@ -1,0 +1,33 @@
+ {
+	"type": "create:mechanical_crafting",
+	"pattern": [
+	"ifi",
+	"LmL",
+	"lrl"
+	],
+	"key": {
+		"i":{
+			"item": "ad_astra:steel_ingot"
+		},
+		"f":{
+			"item": "techreborn:electric_furnace"
+		},
+		"m":{
+			"item": "minecraft:minecart"
+		},
+		"r":{
+			"item": "minecraft:repeater"
+		},
+		"L":{
+			"item": "minecraft:lapis_block"
+		},
+		"l":{
+			"item": "minecraft:lever"
+		}
+		
+	},
+	"result": {
+		"item": "mtmechs:ta_chassis_item",
+		"count": 1
+	}
+}

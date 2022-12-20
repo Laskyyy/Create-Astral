@@ -1,0 +1,19 @@
+{
+  "length": 12,
+  "rows": 6,
+  "inventoryOffset": 35,
+  "menuOffset": 8,
+  "width": 232,
+  "height": 222,
+  "texture": "diamond",
+  "transparent": true,
+  "renderItems": true,
+  "properties": {
+    "type": "builder",
+    "material": "glass",
+    "explosionResistance": 0.3,
+    "destroyTime": 0.3,
+    "sound": "glass",
+    "noOcclusion": true
+  }
+}

@@ -1,0 +1,21 @@
+ {
+	"type": "create:mechanical_crafting",
+	"pattern": [
+	"iii",
+	"igi",
+	"iii"
+	],
+	"key": {
+		"i":{
+			"item": "ad_astra:steel_ingot"
+		},
+		"g":{
+			"item": "mtmechs:iron_gear_item"
+		}
+		
+	},
+	"result": {
+		"item": "mtmechs:ta_wheel_item",
+		"count": 1
+	}
+}

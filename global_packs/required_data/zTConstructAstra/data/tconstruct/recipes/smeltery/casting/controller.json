@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_basin",
+  "cast": {
+    "item": "ae2:energy_cell"
+  },
+  "cast_consumed": true,
+  "fluid": {
+    "name": "kubejs:shimmer",
+    "amount": 162000
+  },
+  "result": "ae2:controller",
+  "cooling_time": 3000
+}

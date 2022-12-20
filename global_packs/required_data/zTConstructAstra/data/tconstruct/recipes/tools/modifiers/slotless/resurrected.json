@@ -2,7 +2,7 @@
   "type": "tconstruct:modifier",
   "inputs": [
     {
-      "item": "create:blaze_cake"
+      "item": "createastral:astral_conduit"
     }
   ],
   "tools": {

@@ -1,0 +1,29 @@
+{
+	"type": "ad_astra:space_station",
+	"ingredients": [
+		{
+			"ingredient": {
+				"item": "create:zinc_ingot"
+			},
+			"count": 32
+		},
+		{
+			"ingredient": {
+				"item": "create:integrated_circuit"
+			},
+			"count": 6
+		},
+		{
+			"ingredient": {
+				"tag": "c:iron_plates"
+			},
+			"count": 64
+		},
+		{
+			"ingredient": {
+				"tag": "c:compressed_desh"
+			},
+			"count": 32
+		}
+	]
+}

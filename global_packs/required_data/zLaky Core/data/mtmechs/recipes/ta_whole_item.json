@@ -1,0 +1,27 @@
+ {
+	"type": "create:mechanical_crafting",
+	"pattern": [
+	"S S",
+	"ACA",
+	"W W"
+	],
+	"key": {
+		"S":{
+			"item": "mtmechs:ta_stack_item"
+		},
+		"A":{
+			"item": "mtmechs:ta_arm_item"
+		},
+		"C":{
+			"item": "mtmechs:ta_chassis_item"
+		},
+		"W":{
+			"item": "mtmechs:ta_wheel_item"
+		}
+		
+	},
+	"result": {
+		"item": "mtmechs:ta_whole_item",
+		"count": 1
+	}
+}

@@ -10,8 +10,8 @@
       "centerZ": 0.0,
       "iterator": "concentric",
       "shape": "square",
-      "count": 16080,
-      "time": 369613
+      "count": 16129,
+      "time": 3
     },
     "nullscape:end_island": {
       "cancelled": true,

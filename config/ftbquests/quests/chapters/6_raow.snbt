@@ -1,10 +1,10 @@
 {
 	id: "5CC09F97DD5CD4CA"
 	group: ""
-	order_index: 5
+	order_index: 6
 	filename: "6_raow"
-	title: "5) brAinRot"
-	icon: "create:refined_radiance"
+	title: "5) Sub-Atomic"
+	icon: "createastral:subatomic_ingot"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	images: [{
@@ -52,7 +52,7 @@
 		}
 		{
 			title: "Calorite collection"
-			x: -1.5d
+			x: 0.0d
 			y: -2.0d
 			dependencies: ["7A4255522DA6FEB7"]
 			id: "1B4E78DD0C8DD4E7"
@@ -77,7 +77,7 @@
 		}
 		{
 			title: "This amount of storage is just getting frankly silly..."
-			x: -1.0d
+			x: -3.5d
 			y: 1.0d
 			dependencies: ["11F776AD4AEA326A"]
 			id: "21A0BECE0BA8537F"
@@ -96,8 +96,9 @@
 		}
 		{
 			x: -4.0d
-			y: 4.5d
-			hide_dependency_lines: true
+			y: 6.5d
+			hide_dependency_lines: false
+			dependencies: ["1E93A90AEF614FA3"]
 			id: "15845FFA9B8ADC8F"
 			tasks: [{
 				id: "4924E70FAAFDF9CA"
@@ -116,8 +117,10 @@
 			title: "Welcome to the heat death of the universe."
 			x: -2.0d
 			y: -3.0d
+			shape: "gear"
 			subtitle: "Enjoy your stay."
 			dependencies: ["5BD2D0F7F0D70180"]
+			size: 1.5d
 			id: "7A4255522DA6FEB7"
 			tasks: [{
 				id: "5602FF437BAA6984"
@@ -128,7 +131,7 @@
 		}
 		{
 			title: "Iridium collection"
-			x: -2.5d
+			x: -4.0d
 			y: -2.0d
 			dependencies: ["7A4255522DA6FEB7"]
 			id: "4329020373E27B1F"
@@ -210,8 +213,8 @@
 		}
 		{
 			title: "Plate it up, as usual."
-			x: -3.0d
-			y: 0.5d
+			x: -2.0d
+			y: 0.0d
 			dependencies: ["34611496C02ECF4E"]
 			id: "26E14ABB9FB1F8EB"
 			tasks: [{
@@ -239,8 +242,8 @@
 			]
 		}
 		{
-			x: -2.0d
-			y: 0.0d
+			x: 0.0d
+			y: -1.0d
 			dependencies: ["39B529A749BEC970"]
 			id: "34611496C02ECF4E"
 			tasks: [{
@@ -278,8 +281,8 @@
 			}]
 		}
 		{
-			x: -4.0d
-			y: 6.0d
+			x: -3.5d
+			y: 5.5d
 			dependencies: ["1E93A90AEF614FA3"]
 			id: "5E7A2EC55B6B1DF9"
 			tasks: [
@@ -362,7 +365,8 @@
 		}
 		{
 			title: "TOO MUCH POWAH"
-			x: -3.0d
+			icon: "createdeco:lime_decal"
+			x: -3.5d
 			y: 2.5d
 			dependencies: ["3705B91C0D4EA2A0"]
 			id: "3856A2E3E58A8BB6"
@@ -436,7 +440,7 @@
 			}]
 		}
 		{
-			x: -5.0d
+			x: -6.0d
 			y: 5.5d
 			subtitle: "You did not need this much cobblestone."
 			hide_dependency_lines: true
@@ -460,7 +464,7 @@
 			}]
 		}
 		{
-			x: -5.0d
+			x: -7.0d
 			y: 4.5d
 			subtitle: "The power however, is gracefully welcomed."
 			hide_dependency_lines: true
@@ -473,10 +477,11 @@
 		}
 		{
 			title: "Let there be flight!"
-			x: -6.0d
-			y: 5.5d
+			x: -3.5d
+			y: 8.0d
 			subtitle: "By charging this up, you obtain a limited but powerful flight ability that scales the lower gravity is! On earth it is pretty effective, but in space is where the real action is."
-			hide_dependency_lines: true
+			hide_dependency_lines: false
+			dependencies: ["3ED703EAA646A18A"]
 			id: "0299295DF9D47181"
 			tasks: [
 				{
@@ -529,12 +534,14 @@
 			title: "the new bar or whatever it's called"
 			x: -2.0d
 			y: 9.0d
+			shape: "hexagon"
 			subtitle: "fuckin uhhhh conglomerate ingot"
 			dependencies: [
 				"1E93A90AEF614FA3"
 				"69F63D2FA5384442"
 				"78932223283B0376"
 			]
+			size: 1.5d
 			id: "3ED703EAA646A18A"
 			tasks: [{
 				id: "62B66772EBD3B7F0"
@@ -550,10 +557,11 @@
 		}
 		{
 			title: "Subatomic Armor"
-			x: -3.5d
-			y: 8.0d
+			x: -7.0d
+			y: 5.5d
 			subtitle: "subatomic armor placeholder"
 			description: ["Wearing a full set of this bad boy allows creative flight... But you get no armor. Maybe tinkers could help a little?"]
+			hide_dependency_lines: true
 			dependencies: ["3ED703EAA646A18A"]
 			id: "396FFCC3357FC1E8"
 			tasks: [

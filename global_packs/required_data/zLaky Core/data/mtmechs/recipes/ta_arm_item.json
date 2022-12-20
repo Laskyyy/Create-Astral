@@ -1,0 +1,24 @@
+ {
+	"type": "create:mechanical_crafting",
+	"pattern": [
+	"i  ",
+	"igd",
+	"igd"
+	],
+	"key": {
+		"i":{
+			"item": "ad_astra:steel_ingot"
+		},
+		"g":{
+			"item": "mtmechs:iron_gear_item"
+		},
+		"d":{
+			"item": "minecraft:diamond"
+		}
+		
+	},
+	"result": {
+		"item": "mtmechs:ta_arm_item",
+		"count": 1
+	}
+}

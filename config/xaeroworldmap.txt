@@ -18,7 +18,7 @@ renderArrow:true
 displayZoom:true
 worldmapWaypointsScale:1.0
 openMapAnimation:true
-reloadVersion:0
+reloadVersion:2
 reloadEverything:false
 zoomButtons:true
 waypointBackgrounds:true

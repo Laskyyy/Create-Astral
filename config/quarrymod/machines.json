@@ -1,0 +1,47 @@
+{
+  "quarry": {
+    "QuarryMaxEnergy": {
+      "comment": "Quarry Max Energy (Value in EU)",
+      "value": 100000
+    },
+    "QuarryAccessibleExcavationModes": {
+      "comment": "Quarry Accessible Excavation Modes, 1 - ores only, 2 - all only, 3 - all and ores",
+      "value": 3
+    },
+    "QuarryMaxInput": {
+      "comment": "Quarry Max Input (Value in EU)",
+      "value": 128
+    },
+    "QuarryMaxInputOverclockerMultipier": {
+      "comment": "Quarry Max Input Multiplier by overclocker upgrades",
+      "value": 6.0
+    },
+    "QuarryExtenderWorkRadius": {
+      "comment": "Quarry Extender Work Radius, added radius to SqrWorkRadius for each level, in blocks",
+      "value": [
+        7.0,
+        12.0,
+        18.0,
+        24.0
+      ]
+    },
+    "QuarryEnergyPerExcavation": {
+      "comment": "Quarry Energy Per Excavation (Value in EU)",
+      "value": 6000
+    },
+    "QuarryAdditioanlBlocksToMine": {
+      "comment": "Additioanl Blocks to Mine list",
+      "value": [
+        "minecraft:ancient_debris"
+      ]
+    },
+    "QuarryMinTiksPerExcavation": {
+      "comment": "Quarry Min Tiks Per Excavation (with all 4 upgrdes), 20 ticks - 1 second",
+      "value": 20
+    },
+    "QuarryTiksPerExcavation": {
+      "comment": "Quarry Tiks Per Excavation, 20 ticks - 1 second",
+      "value": 80
+    }
+  }
+}

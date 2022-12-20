@@ -1,0 +1,16 @@
+{
+  "length": 13,
+  "rows": 7,
+  "inventoryOffset": 44,
+  "menuOffset": 8,
+  "width": 250,
+  "height": 240,
+  "properties": {
+    "type": "builder",
+    "material": "metal",
+    "requiresCorrectToolForDrops": true,
+    "explosionResistance": 1200.0,
+    "destroyTime": 50.0,
+    "sound": "netherite_block"
+  }
+}

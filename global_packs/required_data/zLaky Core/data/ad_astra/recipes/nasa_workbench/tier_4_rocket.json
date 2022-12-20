@@ -3,7 +3,7 @@
 	"ingredients": [
 		{
 			"ingredient": {
-				"item": "create:integrated_circuit"
+				"item": "techreborn:advanced_circuit"
 			}
 		},
 		{
@@ -18,7 +18,12 @@
 		},
 		{
 			"ingredient": {
-				"tag": "c:calorite_blocks"
+				"item": "techreborn:iridium_storage_block"
+			}
+		},
+		{
+			"ingredient": {
+				"item": "techreborn:iridium_storage_block"
 			}
 		},
 		{
@@ -33,12 +38,7 @@
 		},
 		{
 			"ingredient": {
-				"tag": "c:calorite_blocks"
-			}
-		},
-		{
-			"ingredient": {
-				"item": "create:shadow_steel"
+				"item": "createastral:subatomic_ingot"
 			}
 		},
 		{
@@ -53,7 +53,7 @@
 		},
 		{
 			"ingredient": {
-				"item": "create:shadow_steel"
+				"item": "createastral:subatomic_ingot"
 			}
 		},
 		{
@@ -63,12 +63,12 @@
 		},
 		{
 			"ingredient": {
-				"item": "doom:argent_energy"
+				"item": "createastral:subatomic_ingot"
 			}
 		},
 		{
 			"ingredient": {
-				"item": "create:shadow_steel"
+				"item": "create:refined_radiance"
 			}
 		}
 	],

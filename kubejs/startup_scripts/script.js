@@ -2,6 +2,10 @@
 
 console.info('Hello, World! (You will only see this line once in console, during startup)')
 
+///// REGISTERING CUSTOM FLUIDS ////
+
+
+
 
 
 onEvent('fluid.registry', event => {
@@ -40,6 +44,11 @@ onEvent('fluid.registry', event => {
 	.stillTexture('tconstruct:block/fluid/molten/shimmer')
 	.flowingTexture('tconstruct:block/fluid/molten/shimmer')
 })
+
+
+
+///// MODIFY CHARACTERISTICS OF BLOCKS /////
+
 onEvent('block.modification', event => {
   event.modify('lchunkloader:chunk_loader', block => {
     block.destroySpeed = 999999
@@ -124,6 +133,11 @@ onEvent('block.modification', event => {
   })
 })
 
+
+///// REGISTER CUSTOM BLOCKS /////
+
+
+
 onEvent('block.registry', event => {
   event.create('createastral:sturdy_sheet_block')
   	   .material('lantern')
@@ -161,12 +175,6 @@ onEvent('block.registry', event => {
        .hardness(3)
        .displayName('Copper Heating Coil')
        .tagBlock('minecraft:mineable/pickaxe') 
-       
-    event.create('createastral:electrum_heating_coil')
-  	   .material('lantern')
-       .hardness(3)
-       .displayName('Electrum Heating Coil')
-       .tagBlock('minecraft:mineable/pickaxe')
 
     event.create('createastral:ender_heating_coil')
   	   .material('lantern')
@@ -174,6 +182,15 @@ onEvent('block.registry', event => {
        .displayName('Ender Heating Coil')
        .tagBlock('minecraft:mineable/pickaxe')
  })
+
+
+
+
+
+ ///// ADD BURN TIME TO FUEL /////
+
+
+
 
 onEvent("item.modification", event => {
 
@@ -183,6 +200,12 @@ onEvent("item.modification", event => {
   })
 
 })		
+
+
+
+
+
+///// CUSTOM TOOL TIERS /////
 
 onEvent('item.registry.tool_tiers', event => {
 
@@ -209,6 +232,17 @@ onEvent('item.registry.tool_tiers', event => {
   })
   
 })
+
+
+
+
+
+///// CUSTOM ARMOUR TIERS /////
+
+
+
+
+
 onEvent('item.registry.armor_tiers', event => {
   // Slot indicies are [FEET, LEGS, BODY, HEAD]
   event.add('copperarmor', tier => {
@@ -258,8 +292,16 @@ onEvent('item.registry.armor_tiers', event => {
   })
 })
 
+
+
+
+
+
 onEvent('item.registry', event => {
 	// Register new items here
+
+///// REGISTER NEW ITEMS HERE /////
+
 
 event.create('createastral:subatomic_ingot'),
 event.create('createastral:astral_conduit'),
@@ -268,8 +310,6 @@ event.create('createastral:bronze_sheet'),
 event.create('create:lapis_sheet'),
 event.create('create:integrated_circuit'),
 event.create('createastral:bronze_ingot'),
-event.create('createastral:production_mechanism')
-event.create('createastral:blazing_mechanism')
 event.create('createastral:navigation_mechanism')
 event.create('createastral:radiant_helmet', 'helmet').tier('radiantarmor').glow(true).rarity('Epic'),
 event.create('createastral:radiant_chestplate', 'chestplate').tier('radiantarmor').glow(true).rarity('Epic'),
@@ -310,24 +350,43 @@ event.create('createastral:sturdy_chestplate', 'chestplate').tier('sturdyarmor')
 event.create('createastral:sturdy_leggings', 'leggings').tier('sturdyarmor'),
 event.create('createastral:sturdy_boots', 'boots').tier('sturdyarmor'),
 event.create('createastral:orcane').displayName('Information / General Progression').glow(true),
-
+event.create('createastral:astral_singularity').food(food => {
+  food
+      .hunger(50)
+      .saturation(50)//This value does not directly translate to saturation points gained
+        //The real value can be assumed to be:
+        //min(hunger * saturation * 2 + saturation, foodAmountAfterEating)
+        .effect('regeneration', 3000, 0, 1)
+        .effect('speed', 3000, 0, 1)
+        .effect('saturation', 3000, 0, 1)
+        .effect('glowing', 6000, 0, 1)
+        .removeEffect('poison')
+        .alwaysEdible()//Like golden apples
+})
 event.create('createastral:pure_biomatter').type('create:sequenced_assembly').displayName('Pure Biomatter')
 
+
+
+
 })
+
+
 
 onEvent('block.registry', event => {
 	// Register new blocks here
 	// event.create('example_block').material('wood').hardness(1.0).displayName('Example Block')
 	
 })
-     //ITEM TOOLTIPS
+    
 	 
 	 
 	 
 	 
+	 ///// ITEM TOOLTIPS REGISTRY /////
 	 
 	 
-	 
+
+
 	 
 	 
 	 
@@ -847,12 +906,8 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-	text.add(1, [Text.of('If you are new to create, use pondering or online guides. The pack is almost exclusively centered around it. The quest book has some items which gives a general idea of what has changed / what is included, in an order of when to take note of them, however the pack can be played without following it exactly, so do what you enjoy.').gold(),])
-    text.add(2, [Text.of('KNOWN ISSUES PLEASE READ:').red(),])
-    text.add(3, [Text.of('- All profiling for performance on this pack is based on reaching between 100-144fps w/ shaders on a 1080 + R5 5600X @ 8 chunks, lower end machines may not perform as well with shaders and may need to disable them, or an easier to run shader of your choosing (Keypress: O). I just included 2 presets if you dont know where to look.').white(),])
-	text.add(4, [Text.of('- Exceptionally large mechanical crafting recipes appear odd in the UI, they still function as intended despite this.').gray(),])
-  text.add(5, [Text.of('- Recipes are updated in realtime on the official server, whereas singleplayer will have to wait between curseforge releases for latest content changes.').white(),])
-
+	text.add(1, [Text.of('If you are new to create, use pondering or online guides. The pack is almost exclusively centered around it and Tech Reborn. The quest book has some items which gives a general idea of what has changed / what is included, in an order of when to take note of them, however the pack can be played without following it exactly, so do what you enjoy.').gold(),])
+	text.add(2, [Text.of('A major change you *might* want to be aware of. The nether does not exist. Do not even try to make the portal as it will not function. All nether related items are distributed throughout the pack (mostly planets)').white(),])
 
     }
   })
@@ -969,6 +1024,13 @@ onEvent('item.tooltip', e => {
   })
 })
   
+
+
+///// CUSTOM ASTRAL WORLDGEN /////
+
+
+///OVERWORLD
+
 onEvent('worldgen.add', event => {
 	event.addOre((ore) => {
 		ore.id = "kubejs:new_tin_ore" // optional
@@ -984,6 +1046,10 @@ onEvent('worldgen.add', event => {
 			.triangleHeight(0, 200)
 	})
   
+
+  ///MOON
+
+
   event.addOre((ore) => {
 		ore.id = "kubejs:glowstonemoon" // optional
 		ore.biomes = [{
@@ -1033,12 +1099,17 @@ onEvent('worldgen.add', event => {
 				category: "river"
 			}
 		}]
-		ore.addTarget('#ad_astra:moon_ore_replaceables', 'techreborn:deepslate_uraninite_ore')
+		ore.addTarget('#ad_astra:moon_ore_replaceables', 'powah:deepslate_uraninite_ore')
 
 		ore.count([5, 25])
 			.squared()
 			.triangleHeight(0, 115)
 	})
+
+
+
+  ///MARS
+
 
   event.addOre((ore) => {
 		ore.id = "kubejs:leadoremars" // optional
@@ -1055,6 +1126,21 @@ onEvent('worldgen.add', event => {
 	})
 
   event.addOre((ore) => {
+		ore.id = "kubejs:goldoremars" // optional
+		ore.biomes = [{
+			not: {
+				category: "river"
+			}
+		}]
+		ore.addTarget('#ad_astra:mars_ore_replaceables', 'ad_astra:deepslate_gold_ore')
+
+		ore.count([10, 40])
+			.squared()
+			.triangleHeight(0, 100)
+    ore.size = 9
+	})
+
+  event.addOre((ore) => {
 		ore.id = "kubejs:galenaoremars" // optional
 		ore.biomes = [{
 			not: {
@@ -1063,9 +1149,10 @@ onEvent('worldgen.add', event => {
 		}]
 		ore.addTarget('#ad_astra:mars_ore_replaceables', 'techreborn:deepslate_galena_ore')
 
-		ore.count([10, 40])
+		ore.count([3, 5])
 			.squared()
-			.triangleHeight(-64, 0)
+			.triangleHeight(-64, 64)
+    ore.size = 15
 	})
 
   event.addOre((ore) => {
@@ -1081,6 +1168,13 @@ onEvent('worldgen.add', event => {
 			.squared()
 			.triangleHeight(-64, 64)
 	})
+
+
+
+
+
+  ///MERCURY
+
 
 
   event.addOre((ore) => {
@@ -1143,3 +1237,5 @@ onEvent('worldgen.add', event => {
   
 })
   
+
+////END SCRIPT

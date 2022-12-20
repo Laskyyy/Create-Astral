@@ -1,0 +1,52 @@
+type = hud
+
+customization-meta {
+  randomgroup = 1
+  keepaspectratio = false
+  autoscale_baseheight = 1017
+  renderorder = foreground
+  autoscale_basewidth = 1920
+  randommode = false
+  scale = 2
+  randomonlyfirsttime = false
+  backgroundcolor = 232323
+}
+
+customization {
+  visible = false
+  action = editlogo
+}
+
+customization {
+  x = 1
+  action = editprogressbar
+  y = -126
+  barcolor = afd6e1
+}
+
+customization {
+  path = kubejs/assets/createastral/textures/item/logos_binted.png
+  orientation = mid-centered
+  x = 6
+  width = 348
+  action = addtexture
+  actionid = 07fe68b5-402c-47d4-8f37-2f25247b84a11671210091668
+  y = -30
+  height = 204
+}
+
+customization {
+  orientation = mid-centered
+  basecolor = bc77ef
+  shadow = true
+  splashfilepath = resources/minecraft/texts/splashes.txt
+  rotation = 0.0
+  x = 0
+  actionid = 24192cc8-5464-49a1-b2df-2092293cbe3a1671210244103
+  action = addsplash
+  y = 63
+  scale = 1.0
+  refresh = false
+  bouncing = true
+}
+

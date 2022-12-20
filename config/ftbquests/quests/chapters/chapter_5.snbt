@@ -1,7 +1,7 @@
 {
 	id: "33205DD87098DE65"
 	group: ""
-	order_index: 4
+	order_index: 5
 	filename: "chapter_5"
 	title: "4) Piglin Peculiarities."
 	icon: "techreborn:electronic_circuit"
@@ -22,7 +22,7 @@
 		}
 		{
 			x: -8.0d
-			y: 13.0d
+			y: 14.0d
 			width: 2.0d
 			height: 2.0d
 			rotation: 0.0d
@@ -107,13 +107,15 @@
 		{
 			title: "A new tier of circuit..."
 			x: -8.0d
-			y: 1.0d
+			y: 1.5d
+			shape: "rsquare"
 			subtitle: "This time it will be needed a LOT, like a lot."
 			description: ["All components of the recipe are automatable allowing for some creative methods."]
 			dependencies: [
 				"391DABA73E51CB87"
 				"378F3FCF17F0EDBC"
 			]
+			size: 1.5d
 			id: "5729A883639B2EEF"
 			tasks: [{
 				id: "5F77DA249763A9A4"
@@ -172,8 +174,8 @@
 		}
 		{
 			title: "Automate Lithium + Batteries"
-			x: -5.0d
-			y: 1.0d
+			x: -4.5d
+			y: 1.5d
 			subtitle: "Pour Lithium into your red cell batteries for this component. "
 			description: ["Lithium can be processed from basic clay balls for a large amount, if you use one of the earlier clay farms."]
 			dependencies: [
@@ -238,8 +240,8 @@
 		}
 		{
 			title: "REQUIRED: electrolysis (for real this time)"
-			x: -6.5d
-			y: 1.0d
+			x: -6.0d
+			y: 1.5d
 			subtitle: "This isn't a dodgy Astral multiblock, its a fully fledged block."
 			dependencies: ["5729A883639B2EEF"]
 			id: "684E33C50BD55A8E"
@@ -355,17 +357,6 @@
 			}]
 		}
 		{
-			x: -12.0d
-			y: 2.5d
-			dependencies: ["3DB6D0431116A44F"]
-			id: "62198BE1E06A95BC"
-			tasks: [{
-				id: "1054F0082F544E7E"
-				type: "item"
-				item: "ae2:controller"
-			}]
-		}
-		{
 			title: "Charge it up."
 			x: -7.5d
 			y: 0.0d
@@ -391,114 +382,6 @@
 			}]
 		}
 		{
-			title: "Delving into a storage system."
-			x: -9.5d
-			y: 1.0d
-			subtitle: "We've punished you with stinky chests and barrels for too long. "
-			dependencies: ["5729A883639B2EEF"]
-			id: "5E1315712299E894"
-			tasks: [{
-				id: "72329A5671C54FD0"
-				type: "item"
-				item: {
-					id: "ae2:energy_cell"
-					Count: 1b
-					tag: { }
-				}
-			}]
-		}
-		{
-			x: -11.5d
-			y: 1.0d
-			dependencies: ["3DB6D0431116A44F"]
-			id: "5E5417AF1E753AA8"
-			tasks: [{
-				id: "3E432C6522C03CA4"
-				type: "item"
-				item: "ae2:drive"
-			}]
-		}
-		{
-			x: -10.0d
-			y: 0.0d
-			dependencies: ["5E1315712299E894"]
-			id: "7704D43386A0B614"
-			tasks: [{
-				id: "073DE5CF0816D708"
-				type: "item"
-				item: "ae2:cell_component_1k"
-			}]
-		}
-		{
-			x: -11.0d
-			y: 0.0d
-			dependencies: ["7704D43386A0B614"]
-			id: "3B19C86158BE2BDF"
-			tasks: [{
-				id: "03882CB902F58FFF"
-				type: "item"
-				item: {
-					id: "ae2:item_storage_cell_1k"
-					Count: 1b
-					tag: { }
-				}
-			}]
-		}
-		{
-			x: -10.0d
-			y: 2.0d
-			dependencies: ["5E1315712299E894"]
-			id: "63ED3D805B148AFF"
-			tasks: [
-				{
-					id: "6F403C81B310BD62"
-					type: "item"
-					item: "ae2:formation_core"
-				}
-				{
-					id: "2D68550605592E09"
-					type: "item"
-					item: "ae2:annihilation_core"
-				}
-			]
-		}
-		{
-			x: -11.0d
-			y: 2.0d
-			dependencies: ["63ED3D805B148AFF"]
-			min_required_tasks: 2
-			id: "3DB6D0431116A44F"
-			tasks: [
-				{
-					id: "0BAF3F055C1EBD24"
-					type: "item"
-					item: "ae2:crafting_terminal"
-				}
-				{
-					id: "2131CA0D4DC62156"
-					type: "item"
-					item: "ae2:semi_dark_monitor"
-				}
-				{
-					id: "204018E600F6C29A"
-					type: "item"
-					item: "ae2:terminal"
-				}
-			]
-		}
-		{
-			x: -12.0d
-			y: 0.0d
-			hide_dependency_lines: false
-			dependencies: ["5E1315712299E894"]
-			id: "0548BB12575AC3A3"
-			tasks: [{
-				id: "70C850976D766533"
-				type: "item"
-				item: "ae2:cell_workbench"
-			}]
-		}
-		{
 			title: "Hot hot hot HOT. Let me put some insulation on."
 			x: -8.0d
 			y: 11.5d
@@ -508,6 +391,7 @@
 				"3CF2DB0B0ACE19B6"
 				"7B5AE0A782DE8DF8"
 			]
+			size: 1.5d
 			id: "5BD2D0F7F0D70180"
 			tasks: [{
 				id: "39BBDC85B1D5AAA7"
@@ -536,17 +420,6 @@
 				id: "68BB3658712A39A5"
 				type: "item"
 				item: "techreborn:industrial_blast_furnace"
-			}]
-		}
-		{
-			x: -10.5d
-			y: 1.0d
-			dependencies: ["5E1315712299E894"]
-			id: "35D16EFB056D02F2"
-			tasks: [{
-				id: "75AEB1966D9D8260"
-				type: "item"
-				item: "techreborn:advanced_storage_unit"
 			}]
 		}
 		{
@@ -689,8 +562,9 @@
 		}
 		{
 			title: "Oh no we're going nuclear."
-			x: -5.0d
-			y: 2.0d
+			icon: "createdeco:light_blue_decal"
+			x: -3.0d
+			y: 1.5d
 			subtitle: "~40 of these when held in the inventory and placed will auto build the structure for you!"
 			dependencies: ["7B5DE5040FC24D21"]
 			id: "4F8857155A31DF9D"
@@ -698,17 +572,6 @@
 				id: "6638B0F62F2AB955"
 				type: "item"
 				item: "powah:reactor_hardened"
-			}]
-		}
-		{
-			x: -9.5d
-			y: -1.0d
-			dependencies: ["391DABA73E51CB87"]
-			id: "5CD7D403F747DBE9"
-			tasks: [{
-				id: "42162526590DD3DA"
-				type: "item"
-				item: "bosses_of_mass_destruction:mob_ward"
 			}]
 		}
 		{

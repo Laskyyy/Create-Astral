@@ -1,0 +1,11 @@
+cowJarEnabled = true
+cowJarMilkPerTick = 1
+compressedCowJarMilkMultiplier = 9.0
+sinkRequiresWater = false
+largeCounters = false
+disallowOvenAutomation = false
+ovenFuelTimeMultiplier = 0.33000001311302185
+ovenCookTimeMultiplier = 1.0
+ovenRequiresCookingOil = false
+showIngredientIcon = true
+allowVeryToastedBread = true

@@ -368,6 +368,7 @@
 			title: "The beginning of a problem."
 			x: -7.5d
 			y: 14.0d
+			shape: "diamond"
 			subtitle: "Alchoholics anonymous"
 			description: ["Beginning your brewing journey will allow access to potion effects before brewing is available!"]
 			id: "05E45A7D1C9927E5"
@@ -476,10 +477,12 @@
 		}
 		{
 			title: "Begin your chef career."
-			x: -8.5d
+			x: -8.0d
 			y: 10.0d
+			shape: "diamond"
 			subtitle: "Let's begin with some light cooking, eh?"
 			description: ["You'll need some of this rice too, plant it and get yourself some straw!"]
+			size: 1.5d
 			id: "2CE5BB6A7B30CA4C"
 			tasks: [{
 				id: "5F1D78666FED176F"
@@ -558,7 +561,7 @@
 			description: [
 				""
 				"Ethanicuss - Structure dev. flopdev, moral support and progression insight."
-				"Iris - Music, Menu!!!"
+				"Iris - Music, Menu!!! Greg Chapter 6"
 				"Choco - Structures"
 				"The Astral Discord - Showing appreciation for the pack."
 				"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Nathan?"
@@ -1205,6 +1208,7 @@
 			subtitle: "Chapter 1 Unlock."
 			description: ["Feel free to refer back to this tab for basic info on some of the simpler content, setting up a decent food source will sure help you, as it increases max HP!"]
 			dependencies: ["601A619C6E96920A"]
+			size: 1.5d
 			id: "1337920DA45E72AD"
 			tasks: [{
 				id: "2C3E2DFED79A499B"
@@ -1421,7 +1425,9 @@
 			}
 			x: -2.5d
 			y: 15.0d
+			shape: "diamond"
 			subtitle: "If you are of the building type, you *might* be interested in this. Not only do each of these stations look cool, they also provide hundreds of possible blocks to build with, in any colour."
+			size: 1.5d
 			id: "30671A15990F39D8"
 			tasks: [{
 				id: "0156EF5B8B50BDB8"

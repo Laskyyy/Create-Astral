@@ -652,6 +652,10 @@
     "terrestria:hemlock_leaves": {
       "spawnRateFactor": 1.0,
       "isConiferBlock": true
+    },
+    "minecraft:warped_wart_block": {
+      "spawnRateFactor": 1.0,
+      "isConiferBlock": false
     }
   },
   "leafSpawners": [],

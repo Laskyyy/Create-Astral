@@ -1,0 +1,20 @@
+ {
+	"type": "create:mechanical_crafting",
+	"pattern": [
+	" i ",
+	" i ",
+	"iIi"
+	],
+	"key": {
+		"i":{
+			"item": "techreborn:silver_ingot"
+		},
+		"I":{
+			"item": "techreborn:silver_storage_block"
+		}
+	},
+	"result": {
+		"item": "mtmechs:pa_leg_item",
+		"count": 1
+	}
+}

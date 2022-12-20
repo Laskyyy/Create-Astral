@@ -1,0 +1,76 @@
+{
+  //Whether an overlay message appears above the hotbar when a new identity is unlocked.
+  "overlayIdentityUnlocks": true,
+  //Whether an overlay message appears above the hotbar when a new identity is revoked.
+  "overlayIdentityRevokes": true,
+  //Whether a player's equipped identity is revoked on death.
+  "revokeIdentityOnDeath": false,
+  //Whether identities equip the items (swords, items, tools) held by the underlying player.
+  "identitiesEquipItems": true,
+  //Whether identities equip the armor (chestplate, leggings, elytra) worn by the underlying player.
+  "identitiesEquipArmor": true,
+  //Whether hostile mobs ignore players with hostile mob identities.
+  "hostilesIgnoreHostileIdentityPlayer": true,
+  //Whether a hostile mob will stop targeting you after switching to a hostile mob identity.
+  "hostilesForgetNewHostileIdentityPlayer": false,
+  //Whether Wolves will attack Players with an identity that the Wolf would normally hunt (Sheep, Fox, Skeleton).
+  "wolvesAttackIdentityPrey": true,
+  //Whether owned Wolves will attack Players with an identity that the Wolf would normally hunt (Sheep, Fox, Skeleton).
+  "ownedWolvesAttackIdentityPrey": false,
+  //Whether Villagers will run from Players morphed as identities villagers normally run from (Zombies).
+  "villagersRunFromIdentities": true,
+  //Whether Foxes will attack Players with an identity that the Fox would normally hunt (Fish, Chicken).
+  "foxesAttackIdentityPrey": true,
+  //Whether Identity sounds take priority over Player Sounds (eg. Blaze hurt sound when hit).
+  "useIdentitySounds": true,
+  //Whether disguised players should randomly emit the ambient sound of their Identity.
+  "playAmbientSounds": true,
+  //Whether disguised players should hear their own ambient sounds (only if playAmbientSounds is true).
+  "hearSelfAmbient": false,
+  //Whether mobs in the flying entity tag can fly.
+  "enableFlight": true,
+  //How long hostility lasts for players morphed as hostile mobs (think: Pigman aggression
+  "hostilityTime": 300,
+  //A list of Advancements required before the player can fly using an Identity.
+  "advancementsRequiredForFlight": [],
+  //Whether Identities modify your max health value based on their max health value.
+  "scalingHealth": true,
+  //The maximum value of scaling health. Useful for not giving players 300 HP when they turn into a wither.
+  "maxHealth": 40,
+  //If set to false, only operators can switch identities through the ` menu. Note that this config option is synced from S2C when a client joins the game, but a client can still open the menu if they have a modified version of Identity.
+  "enableClientSwapMenu": true,
+  //If set to false, only operators can switch identities. Used on the server; guaranteed to be authoritative.
+  "enableSwaps": true,
+  //In blocks, how far can the Enderman ability teleport?
+  "endermanAbilityTeleportDistance": 32,
+  //Should player nametags render above players disguised with an identity? Note that the server is the authority for this config option.
+  "showPlayerNametag": false,
+  //If true, players that gain a NEW Identity will be forcibly changed into it on kill.
+  "forceChangeNew": false,
+  //If true, players will be forcibly changed into any entity they kill. The above option, forceChangeNew, only applies to new unlocks.
+  "forceChangeAlways": false,
+  //If true, /identity commands will send feedback in the action bar.
+  "logCommands": true,
+  "flySpeed": 0.05,
+  //If true, the player has to kill a certain number of entities before unlocking an Identity.
+  "killForIdentity": false,
+  //Number of kills required to unlock an Identity if killsForIdentity is true.
+  "requiredKillsForIdentity": 50,
+  //An override map for requiredKillsForIdentity for specific entity types.
+  "requiredKillsByType": {
+    "minecraft:elder_guardian": 1,
+    "minecraft:wither": 1,
+    "minecraft:ender_dragon": 1
+  },
+  "abilityCooldownMap": {
+    "minecraft:blaze": 20,
+    "minecraft:enderman": 100,
+    "minecraft:witch": 200,
+    "minecraft:creeper": 100,
+    "minecraft:wither": 200,
+    "minecraft:ghast": 60,
+    "minecraft:ender_dragon": 20,
+    "minecraft:snow_golem": 10,
+    "minecraft:evoker": 10
+  }
+}

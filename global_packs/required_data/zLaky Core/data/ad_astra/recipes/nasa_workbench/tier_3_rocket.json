@@ -3,7 +3,7 @@
 	"ingredients": [
 		{
 			"ingredient": {
-				"item": "create:integrated_circuit"
+				"item": "techreborn:electronic_circuit"
 			}
 		},
 		{
@@ -18,7 +18,12 @@
 		},
 		{
 			"ingredient": {
-				"tag": "c:ostrum_blocks"
+				"item": "ad_astra:steel_block"
+			}
+		},
+		{
+			"ingredient": {
+				"item": "ad_astra:steel_block"
 			}
 		},
 		{
@@ -33,12 +38,7 @@
 		},
 		{
 			"ingredient": {
-				"tag": "c:ostrum_blocks"
-			}
-		},
-		{
-			"ingredient": {
-				"item": "createastral:sturdy_sheet_block"
+				"item": "techreborn:lead_storage_block"
 			}
 		},
 		{
@@ -53,7 +53,7 @@
 		},
 		{
 			"ingredient": {
-				"item": "createastral:sturdy_sheet_block"
+				"item": "techreborn:lead_storage_block"
 			}
 		},
 		{
@@ -63,7 +63,7 @@
 		},
 		{
 			"ingredient": {
-				"item": "create:blaze_burner"
+				"item": "ad_astra:ostrum_engine"
 			}
 		},
 		{

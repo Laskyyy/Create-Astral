@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["LLL", "MCM", "LLL"],
+  "key": {
+    "C": {
+      "item": "reinfchest:copper_chest"
+    },
+    "M": {
+      "item": "minecraft:iron_block"
+    },
+    "L": {
+      "item": "techreborn:rubber"
+    }
+  },
+  "result": {
+    "item": "reinfchest:iron_chest"
+  }
+}

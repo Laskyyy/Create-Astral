@@ -1,0 +1,16 @@
+{
+  "length": 9,
+  "rows": 4,
+  "inventoryOffset": 8,
+  "menuOffset": 8,
+  "width": 176,
+  "height": 187,
+  "properties": {
+    "type": "builder",
+    "material": "metal",
+    "requiresCorrectToolForDrops": true,
+    "explosionResistance": 6.0,
+    "destroyTime": 3.0,
+    "sound": "copper"
+  }
+}
