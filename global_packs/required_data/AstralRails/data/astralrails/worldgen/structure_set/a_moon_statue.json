@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "astralrails:moon/a_moon_statue",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"spacing": 100,
+		"separation": 50,
+		"salt": 1182274104
+	}
+}

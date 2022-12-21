@@ -384,6 +384,12 @@
 					item: "drinkbeer:recipe_board_package"
 				}
 			]
+			rewards: [{
+				id: "2FB3A079A96DE590"
+				type: "item"
+				item: "create:dough"
+				count: 3
+			}]
 		}
 		{
 			title: "Amateur Brewery"
@@ -646,20 +652,12 @@
 				item: "farmersdelight:carrot_crate"
 				count: 64L
 			}]
-			rewards: [
-				{
-					id: "64C5214D379321F1"
-					type: "item"
-					item: "minecraft:deepslate_copper_ore"
-					count: 30
-				}
-				{
-					id: "28A158C4319A3C98"
-					type: "item"
-					item: "indrev:deepslate_lead_ore"
-					count: 32
-				}
-			]
+			rewards: [{
+				id: "64C5214D379321F1"
+				type: "item"
+				item: "minecraft:deepslate_copper_ore"
+				count: 30
+			}]
 		}
 		{
 			title: "Gather! 64 Potato crates"
@@ -702,20 +700,12 @@
 				item: "farmersdelight:beetroot_crate"
 				count: 64L
 			}]
-			rewards: [
-				{
-					id: "52FC831AEA7F2A46"
-					type: "item"
-					item: "minecraft:deepslate_redstone_ore"
-					count: 25
-				}
-				{
-					id: "4C9B543A658E923A"
-					type: "item"
-					item: "indrev:silver_ore"
-					count: 32
-				}
-			]
+			rewards: [{
+				id: "52FC831AEA7F2A46"
+				type: "item"
+				item: "minecraft:deepslate_redstone_ore"
+				count: 25
+			}]
 		}
 		{
 			title: "Gather! 64 Bags of Rice"
@@ -730,20 +720,12 @@
 				item: "farmersdelight:rice_bag"
 				count: 64L
 			}]
-			rewards: [
-				{
-					id: "19EF8ED55AE8ABED"
-					type: "item"
-					item: "minecraft:quartz"
-					count: 32
-				}
-				{
-					id: "7545ACA750C6ED4E"
-					type: "item"
-					item: "indrev:tin_ore"
-					count: 32
-				}
-			]
+			rewards: [{
+				id: "19EF8ED55AE8ABED"
+				type: "item"
+				item: "minecraft:quartz"
+				count: 32
+			}]
 		}
 		{
 			title: "Gather! 64 Onion crates"
@@ -786,20 +768,12 @@
 				item: "farmersdelight:tomato_crate"
 				count: 64L
 			}]
-			rewards: [
-				{
-					id: "504F364ED908935F"
-					type: "item"
-					item: "minecraft:redstone_ore"
-					count: 32
-				}
-				{
-					id: "7F3DD53CAE5930D4"
-					type: "item"
-					item: "indrev:nikolite_ore"
-					count: 10
-				}
-			]
+			rewards: [{
+				id: "504F364ED908935F"
+				type: "item"
+				item: "minecraft:redstone_ore"
+				count: 32
+			}]
 		}
 		{
 			title: "Gather! 64 Cabbage crates"
@@ -814,20 +788,12 @@
 				item: "farmersdelight:cabbage_crate"
 				count: 64L
 			}]
-			rewards: [
-				{
-					id: "15293C6F9430DA31"
-					type: "item"
-					item: "minecraft:emerald_ore"
-					count: 25
-				}
-				{
-					id: "32D9EF1C678D8016"
-					type: "item"
-					item: "indrev:tungsten_ore"
-					count: 32
-				}
-			]
+			rewards: [{
+				id: "15293C6F9430DA31"
+				type: "item"
+				item: "minecraft:emerald_ore"
+				count: 25
+			}]
 		}
 		{
 			title: "Very nice spice."
@@ -954,6 +920,12 @@
 				id: "18650A6066610756"
 				type: "item"
 				item: "camsbackpacks:white_backpack"
+			}]
+			rewards: [{
+				id: "1E0A00A53BFB7196"
+				type: "item"
+				item: "more_chests:copper_chest"
+				count: 4
 			}]
 		}
 		{
@@ -1092,9 +1064,9 @@
 				Count: 1b
 				tag: {
 					Automobile: {
-						engine: "automobility:stone"
-						frame: "automobility:yellow_tractor"
 						wheels: "automobility:standard"
+						frame: "automobility:yellow_tractor"
+						engine: "automobility:stone"
 					}
 				}
 			}
@@ -1181,9 +1153,9 @@
 						Count: 1b
 						tag: {
 							Automobile: {
-								wheels: "automobility:standard"
-								frame: "automobility:yellow_tractor"
 								engine: "automobility:stone"
+								frame: "automobility:yellow_tractor"
+								wheels: "automobility:standard"
 							}
 						}
 					}
@@ -1247,6 +1219,12 @@
 				type: "item"
 				item: "chipped:botanist_workbench"
 			}]
+			rewards: [{
+				id: "37C1156AB1726C5E"
+				type: "item"
+				item: "minecraft:moss_block"
+				count: 8
+			}]
 		}
 		{
 			x: -4.0d
@@ -1257,6 +1235,12 @@
 				id: "686BE4BE4E9EE3FB"
 				type: "item"
 				item: "chipped:glassblower"
+			}]
+			rewards: [{
+				id: "412393C0BD8AAFC9"
+				type: "item"
+				item: "minecraft:glass"
+				count: 16
 			}]
 		}
 		{
@@ -1269,6 +1253,12 @@
 				type: "item"
 				item: "chipped:carpenters_table"
 			}]
+			rewards: [{
+				id: "2C267CF0C88E548F"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 32
+			}]
 		}
 		{
 			x: -1.0d
@@ -1279,6 +1269,12 @@
 				id: "74EB7FF43AA93703"
 				type: "item"
 				item: "chipped:loom_table"
+			}]
+			rewards: [{
+				id: "1F16D277E7B3D5DD"
+				type: "item"
+				item: "minecraft:white_wool"
+				count: 16
 			}]
 		}
 		{
@@ -1291,6 +1287,12 @@
 				type: "item"
 				item: "chipped:mason_table"
 			}]
+			rewards: [{
+				id: "5B3D1DB7984B6EA4"
+				type: "item"
+				item: "minecraft:andesite"
+				count: 16
+			}]
 		}
 		{
 			x: -1.0d
@@ -1302,6 +1304,11 @@
 				type: "item"
 				item: "chipped:alchemy_bench"
 			}]
+			rewards: [{
+				id: "302E910F93ECC032"
+				type: "item"
+				item: "minecraft:copper_block"
+			}]
 		}
 		{
 			x: -4.0d
@@ -1312,6 +1319,11 @@
 				id: "0F24228CDCEB910E"
 				type: "item"
 				item: "chipped:mechanist_workbench"
+			}]
+			rewards: [{
+				id: "21B1578A2172D29C"
+				type: "item"
+				item: "minecraft:redstone_block"
 			}]
 		}
 		{
@@ -1338,6 +1350,12 @@
 				id: "34A0BAA9C0AE7A74"
 				type: "item"
 				item: "cookingforblockheads:white_kitchen_floor"
+			}]
+			rewards: [{
+				id: "3E69ED9AD85027DE"
+				type: "item"
+				item: "chipped:white_concrete_1"
+				count: 10
 			}]
 		}
 		{
@@ -1412,7 +1430,27 @@
 					type: "item"
 					item: "cookingforblockheads:milk_jar"
 				}
+				{
+					id: "6372A49D46ED573E"
+					type: "item"
+					item: "cookingforblockheads:toaster"
+				}
 			]
+			rewards: [{
+				id: "2727129F435DDB21"
+				type: "item"
+				item: {
+					id: "minecraft:bread"
+					Count: 1b
+					tag: {
+						CookingForBlockheadsToasted: 1b
+						display: {
+							Name: "{\"translate\":\"tooltip.cookingforblockheads:toasted\",\"with\":[{\"translate\":\"item.minecraft.bread\"}]}"
+						}
+					}
+				}
+				count: 2
+			}]
 		}
 		{
 			title: "Chipped Decoration Blocks!"
@@ -1471,6 +1509,12 @@
 				type: "item"
 				item: "drinkbeer:beer_mug"
 			}]
+			rewards: [{
+				id: "004A64084DE31C6B"
+				type: "item"
+				item: "drinkbeer:empty_beer_mug"
+				count: 5
+			}]
 		}
 		{
 			x: -7.5d
@@ -1482,6 +1526,11 @@
 				id: "145A72A4C427E775"
 				type: "item"
 				item: "drinkbeer:bartending_table_normal"
+			}]
+			rewards: [{
+				id: "3093A76BEC813CA5"
+				type: "item"
+				item: "farmersdelight:hot_cocoa"
 			}]
 		}
 		{
@@ -1502,6 +1551,11 @@
 					item: "cookingforblockheads:no_filter_edition"
 				}
 			]
+			rewards: [{
+				id: "424A77A5F66DAD47"
+				type: "item"
+				item: "minecraft:cooked_beef"
+			}]
 		}
 	]
 }

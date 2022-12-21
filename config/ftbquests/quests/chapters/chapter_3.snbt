@@ -393,10 +393,14 @@
 			}]
 		}
 		{
+			title: "Shimmering Heights"
 			x: 6.5d
 			y: 0.5d
 			subtitle: "The Iconic Astral Branded Fluid"
-			description: ["Shimmer can be produced using the recipes provided, and fully automated with glow ink sacs and amethyst."]
+			description: [
+				"Shimmer can be produced using the recipes provided, and fully automated with glow ink sacs and amethyst."
+				"Shimmer can be found in underground shimmer lakes which can be detected with the structure compass, pumping a pool of that will set you up for a long while."
+			]
 			dependencies: ["267CD8D04921402E"]
 			id: "00F3EA4A8FB5B11B"
 			tasks: [{
@@ -691,6 +695,24 @@
 				type: "item"
 				item: "tconstruct:molten_bronze_bucket"
 			}]
+		}
+		{
+			x: 4.5d
+			y: -3.0d
+			dependencies: ["0E939F8167F47710"]
+			id: "15069E711021763F"
+			tasks: [
+				{
+					id: "243CAF3164E51094"
+					type: "item"
+					item: "tconstruct:gear_cast"
+				}
+				{
+					id: "62FF8DAC8FB23C0A"
+					type: "item"
+					item: "tconstruct:coin_cast"
+				}
+			]
 		}
 	]
 }

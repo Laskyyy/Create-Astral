@@ -1,0 +1,25 @@
+{
+	"type": "techreborn:fusion_reactor",
+	"power": 2048,
+	"time": 1024,
+	"start-power": 90000000,
+	"min-size": 1,
+	"ingredients": [
+		{
+			"fluid": "kubejs:hellfire",
+			"holder": "techreborn:cell"
+		},
+		{
+			"fluid": "kubejs:shimmer",
+			"holder": "techreborn:cell"
+		}
+	],
+	"results": [
+		{
+			"item": "techreborn:cell",
+			"nbt":{
+				"fluid": "kubejs:plasma_fluid"
+			}
+		}
+	]
+}

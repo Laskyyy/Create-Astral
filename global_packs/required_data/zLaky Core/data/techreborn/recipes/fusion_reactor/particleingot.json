@@ -1,0 +1,20 @@
+{
+	"type": "techreborn:fusion_reactor",
+	"power": 2048,
+	"time": 1024,
+	"start-power": 90000000,
+	"min-size": 1,
+	"ingredients": [
+		{
+			"item": "create:shadow_steel"
+		},
+		{
+			"item": "create:refined_radiance"
+		}
+	],
+	"results": [
+		{
+			"item": "createastral:subatomic_ingot"
+		}
+	]
+}

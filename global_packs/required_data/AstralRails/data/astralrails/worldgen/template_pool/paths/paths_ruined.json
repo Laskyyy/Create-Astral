@@ -1,0 +1,138 @@
+{
+  "name": "astralrails:rails/rails",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "astralrails:paths/path1_ruined",
+        "processors": [
+					{
+						"processor_type": "minecraft:rule",
+						"rules": [
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:dirt_path",
+									"probability": 0.4
+								},
+								"output_state": {
+									"Name": "minecraft:grass_block"
+								}
+							},
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:dirt_path",
+									"probability": 0.4
+								},
+								"output_state": {
+									"Name": "minecraft:coarse_dirt"
+								}
+							}
+						]
+					}
+				],
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:paths/path2_ruined",
+        "processors": [
+					{
+						"processor_type": "minecraft:rule",
+						"rules": [
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:dirt_path",
+									"probability": 0.4
+								},
+								"output_state": {
+									"Name": "minecraft:grass_block"
+								}
+							},
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:dirt_path",
+									"probability": 0.4
+								},
+								"output_state": {
+									"Name": "minecraft:coarse_dirt"
+								}
+							}
+						]
+					}
+				],
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:paths/path3_ruined",
+        "processors": [
+					{
+						"processor_type": "minecraft:rule",
+						"rules": [
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:dirt_path",
+									"probability": 0.4
+								},
+								"output_state": {
+									"Name": "minecraft:grass_block"
+								}
+							},
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:dirt_path",
+									"probability": 0.4
+								},
+								"output_state": {
+									"Name": "minecraft:coarse_dirt"
+								}
+							}
+						]
+					}
+				],
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 4,
+      "element": {
+        "location": "astralrails:buildings/mining_house_ruined",
+        "processors": "minecraft:empty",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

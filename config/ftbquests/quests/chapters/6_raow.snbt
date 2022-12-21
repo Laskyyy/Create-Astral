@@ -441,7 +441,7 @@
 		}
 		{
 			x: -6.0d
-			y: 5.5d
+			y: 8.5d
 			subtitle: "You did not need this much cobblestone."
 			hide_dependency_lines: true
 			id: "2B4F4694ED5364CB"
@@ -453,7 +453,7 @@
 		}
 		{
 			x: -6.0d
-			y: 4.5d
+			y: 6.5d
 			subtitle: "Funny box of lava."
 			hide_dependency_lines: true
 			id: "5EE3491BADD5E62D"
@@ -464,8 +464,8 @@
 			}]
 		}
 		{
-			x: -7.0d
-			y: 4.5d
+			x: -6.0d
+			y: 7.5d
 			subtitle: "The power however, is gracefully welcomed."
 			hide_dependency_lines: true
 			id: "42EA88741D1C43C3"
@@ -557,7 +557,7 @@
 		}
 		{
 			title: "Subatomic Armor"
-			x: -7.0d
+			x: -6.0d
 			y: 5.5d
 			subtitle: "subatomic armor placeholder"
 			description: ["Wearing a full set of this bad boy allows creative flight... But you get no armor. Maybe tinkers could help a little?"]
@@ -659,9 +659,15 @@
 			]
 			id: "46382C349512DBEE"
 			tasks: [{
-				id: "57B222EBCBC6F76F"
+				id: "477984AE67E8C8B1"
 				type: "item"
-				item: "ad_astra:oil_bucket"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "kubejs:plasma_fluid"
+					}
+				}
 			}]
 		}
 		{
@@ -730,7 +736,7 @@
 			tasks: [{
 				id: "445F1481313A0962"
 				type: "item"
-				item: "ad_astra:coal_generator"
+				item: "ad_astra:cryo_freezer"
 			}]
 		}
 	]

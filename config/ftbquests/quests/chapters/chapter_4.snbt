@@ -1193,6 +1193,7 @@
 			x: -21.0d
 			y: 1.0d
 			subtitle: "Learn the resources you can find on the moon."
+			description: ["Moon Sand and rock can be used as an infinite burner for soul fire."]
 			dependencies: ["306D009F01634115"]
 			id: "661A93F58DBEFB8F"
 			tasks: [

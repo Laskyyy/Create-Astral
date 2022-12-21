@@ -50,9 +50,11 @@
 			}]
 		}
 		{
+			title: "Tough Teeth"
 			x: -2.0d
 			y: 6.0d
 			shape: "gear"
+			subtitle: "Craft your first cogwheel"
 			description: ["You might want to stock up on these,,,"]
 			dependencies: [
 				"4D1A55B136F62B3F"
@@ -151,6 +153,7 @@
 			}]
 		}
 		{
+			title: "Andesite alloy!"
 			x: -1.5d
 			y: 7.0d
 			subtitle: "More efficient with mixers!"
@@ -178,7 +181,7 @@
 			x: -2.5d
 			y: 7.0d
 			subtitle: "Better than a copper sheet."
-			description: ["Cause it's vertical, yeah?"]
+			description: ["Slice a bronze ingot in two using a stonecutter. Two for one, what a steal!"]
 			dependencies: ["5268B7CCEDC48422"]
 			id: "4D1A55B136F62B3F"
 			tasks: [{
@@ -200,11 +203,13 @@
 					id: "7E892847B494E154"
 					type: "item"
 					item: "minecraft:andesite"
+					count: 9L
 				}
 				{
 					id: "5AD2EE652E5A4FEE"
 					type: "item"
 					item: "minecraft:clay_ball"
+					count: 9L
 				}
 			]
 		}
@@ -670,10 +675,11 @@
 			}]
 		}
 		{
+			title: "Automate Nether Quartz!"
 			x: -2.0d
 			y: 3.5d
 			shape: "diamond"
-			subtitle: "Automate me!!!"
+			subtitle: "With a solid source of diorite, you can produce excess amounts of quartz."
 			dependencies: ["1DEF161DE26F3587"]
 			id: "6B85CBE54B33C91F"
 			tasks: [{
@@ -713,8 +719,14 @@
 				item: "tconstruct:grout"
 				count: 16L
 			}]
+			rewards: [{
+				id: "2FC3C3C1EEF29421"
+				type: "item"
+				item: "sniffer:sniffer_egg"
+			}]
 		}
 		{
+			title: "Ew it's stuck to my hands"
 			x: -1.5d
 			y: 8.0d
 			subtitle: "Mwahahahah"
@@ -728,6 +740,7 @@
 				id: "11F5577E4AC6319A"
 				type: "item"
 				item: "createastral:andesite_compound"
+				count: 3L
 			}]
 		}
 		{
@@ -918,6 +931,7 @@
 			}]
 		}
 		{
+			title: "A *handy* tip for you"
 			x: -1.5d
 			y: 2.5d
 			subtitle: "Whaaaat, sequenced assembly already?"
@@ -942,6 +956,7 @@
 			}]
 		}
 		{
+			title: "Getting an upgrade (of a chest)"
 			x: 1.0d
 			y: 3.5d
 			subtitle: "Upgrade those copper chests with iron ones for bonus storage capacity."

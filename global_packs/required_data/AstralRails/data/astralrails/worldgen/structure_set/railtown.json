@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "astralrails:railtown",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"spacing": 25,
+		"separation": 8,
+		"salt": 1546207470
+	}
+}

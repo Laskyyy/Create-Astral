@@ -7,18 +7,6 @@
 	icon: "createastral:astral_singularity"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	images: [{
-		x: 8.0d
-		y: 2.0d
-		width: 2.0d
-		height: 2.0d
-		rotation: 20.0d
-		image: "createastral:textures/item/HESPERYD (WHITE).png"
-		hover: ["Tier contributed by Iris! Go listen to Hesperyd on Spotify ;)"]
-		click: ""
-		dev: false
-		corner: false
-	}]
 	quests: [
 		{
 			title: "Beginning of The End"
@@ -31,7 +19,6 @@
 			tasks: [{
 				id: "4B7485FF8CB77AE5"
 				type: "item"
-				title: "astral matter placeholder"
 				item: "createastral:astral_singularity"
 			}]
 		}
@@ -302,14 +289,14 @@
 					tag: {
 						tic_modifiers: [ ]
 						tic_broken: 0b
-						tic_multipliers: { }
-						Damage: 0
 						tic_stats: {
 							"tconstruct:knockback_resistance": 0.1f
 							"tconstruct:armor": 7.0f
 							"tconstruct:durability": 480.0f
 							"tconstruct:armor_toughness": 2.0f
 						}
+						Damage: 0
+						tic_multipliers: { }
 						tic_persistent_data: {
 							upgrades: 1
 							abilities: 1
@@ -436,10 +423,10 @@
 					Count: 1b
 					tag: {
 						pages: ["{\"underlined\":true,\"color\":\"blue\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.curseforge.com/minecraft/modpacks/gt-new-horizons\"},\"text\":\"Greg\"}"]
-						author: "Jorge Luis Borges"
+						resolved: 1b
 						display: { }
 						title: "Library Of Babel"
-						resolved: 1b
+						author: "Jorge Luis Borges"
 					}
 				}
 			}]
