@@ -380,9 +380,21 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
+          "biome": "ad_astra:infernal_venus_barrens",
+          "parameters": {
+            "temperature": 1.6,
+            "humidity": 0,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": -0.5,
+            "depth": 0.5,
+            "offset": 0
+          }
+        },
+        {
           "biome": "incendium:infernal_dunes",
           "parameters": {
-            "temperature": 1,
+            "temperature": 1.2,
             "humidity": -1,
             "continentalness": 0,
             "erosion": 0,
@@ -392,19 +404,7 @@
           }
         },
         {
-          "biome": "ad_astra:infernal_venus_barrens",
-          "parameters": {
-            "temperature": 1,
-            "humidity": -0.5,
-            "continentalness": 0,
-            "erosion": 1,
-            "weirdness": -0.5,
-            "depth": 0.5,
-            "offset": 0
-          }
-        },
-        {
-          "biome": "ad_astra:martian_canyon_creek",
+          "biome": "ad_astra:martian_wastelands",
           "parameters": {
             "temperature": 0,
             "humidity": 0,
@@ -416,13 +416,13 @@
           }
         },
         {
-          "biome": "ad_astra:martian_wastelands",
+          "biome": "ad_astra:martian_canyon_creek",
           "parameters": {
-            "temperature": -1,
-            "humidity": 0.1,
+            "temperature": -1.7,
+            "humidity": 0,
             "continentalness": -0.2,
             "erosion": 0,
-            "weirdness": -1.5,
+            "weirdness": -1,
             "depth": 0,
             "offset": 0
           }

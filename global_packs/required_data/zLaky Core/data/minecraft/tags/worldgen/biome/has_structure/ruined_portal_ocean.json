@@ -1,6 +1,6 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
-    "#minecraft:is_ocean"
+    "ad_astra:martian_wastelands"
   ]
 }

@@ -1,11 +1,6 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
-    "#minecraft:is_badlands",
-    "#minecraft:is_hill",
-    "minecraft:savanna_plateau",
-    "minecraft:windswept_savanna",
-    "minecraft:stony_shore",
-    "#minecraft:is_mountain"
+    "ad_astra:martian_wastelands"
   ]
 }

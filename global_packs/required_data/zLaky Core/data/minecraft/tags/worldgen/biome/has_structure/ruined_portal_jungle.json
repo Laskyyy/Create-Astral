@@ -1,6 +1,6 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
-    "#minecraft:is_jungle"
+    "minecraft:nether_wastes"
   ]
 }

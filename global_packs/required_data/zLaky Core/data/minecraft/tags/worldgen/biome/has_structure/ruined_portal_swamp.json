@@ -1,6 +1,6 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
-    "minecraft:swamp"
+    "ad_astra:martian_wastelands"
   ]
 }

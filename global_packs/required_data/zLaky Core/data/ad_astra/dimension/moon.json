@@ -343,9 +343,21 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
+          "biome": "incendium:toxic_heap",
+          "parameters": {
+            "temperature": 1.2,
+            "humidity": -1,
+            "continentalness": 1.5,
+            "erosion": 0,
+            "weirdness": -0.5,
+            "depth": 0.5,
+            "offset": 0
+          }
+        },
+        {
           "biome": "minecraft:basalt_deltas",
           "parameters": {
-            "temperature": 1,
+            "temperature": 1.2,
             "humidity": -1,
             "continentalness": 0,
             "erosion": 0,
