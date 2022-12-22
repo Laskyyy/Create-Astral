@@ -628,13 +628,19 @@
 			x: 6.5d
 			y: -1.0d
 			subtitle: "Have access to shulkers, as a treat"
-			dependencies: ["00F3EA4A8FB5B11B"]
 			id: "586FA45ED205784F"
-			tasks: [{
-				id: "0C119FAAECA6085E"
-				type: "item"
-				item: "minecraft:shulker_box"
-			}]
+			tasks: [
+				{
+					id: "0C119FAAECA6085E"
+					type: "item"
+					item: "minecraft:shulker_box"
+				}
+				{
+					id: "74C312D1BA7AE516"
+					type: "structure"
+					structure: "astralrails:shimmer_lake"
+				}
+			]
 		}
 		{
 			title: "HOW DO I MAKE THIS?!"

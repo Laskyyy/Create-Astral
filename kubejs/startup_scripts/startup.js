@@ -210,7 +210,15 @@ onEvent("item.modification", event => {
 
 	
 	event.modify('create:blaze_cake', item => {
-    item.burnTime = 100000
+    item.burnTime = 50000
+  })
+
+  event.modify('powah:uraninite_raw', item => {
+    item.burnTime = 25000
+  })
+
+  event.modify('powah:uraninite', item => {
+    item.burnTime = 50000
   })
 
 })		
