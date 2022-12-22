@@ -1074,11 +1074,7 @@ onEvent('worldgen.add', event => {
 
   event.addOre((ore) => {
 		ore.id = "kubejs:glowstonemoon" // optional
-		ore.biomes = [{
-			not: {
-				category: "river"
-			}
-		}]
+		ore.biomes = ['ad_astra:lunar_wastelands', 'minecraft:basalt_deltas', 'incendium:toxic_heap']
 		ore.addTarget('#ad_astra:moon_ore_replaceables', 'minecraft:glowstone')
 
 		ore.count([10, 40])
@@ -1102,11 +1098,7 @@ onEvent('worldgen.add', event => {
 
   event.addOre((ore) => {
 		ore.id = "kubejs:silveroremoon" // optional
-		ore.biomes = [{
-			not: {
-				category: "river"
-			}
-		}]
+		ore.biomes = ['ad_astra:lunar_wastelands', 'minecraft:basalt_deltas', 'incendium:toxic_heap']
 		ore.addTarget('#ad_astra:moon_ore_replaceables', 'techreborn:deepslate_silver_ore')
 
 		ore.count([25, 40])
@@ -1116,16 +1108,12 @@ onEvent('worldgen.add', event => {
 
   event.addOre((ore) => {
 		ore.id = "kubejs:radioactive" // optional
-		ore.biomes = [{
-			not: {
-				category: "river"
-			}
-		}]
+    ore.biomes = 'incendium:toxic_heap' 
 		ore.addTarget('#ad_astra:moon_ore_replaceables', 'powah:deepslate_uraninite_ore')
 
-		ore.count([5, 25])
+		ore.count([15, 30])
 			.squared()
-			.triangleHeight(0, 115)
+			.triangleHeight(0, 120)
 	})
 
 
@@ -1243,11 +1231,7 @@ onEvent('worldgen.add', event => {
 
   event.addOre((ore) => {
 		ore.id = "kubejs:basalt" // optional
-		ore.biomes = [{
-			not: {
-				category: "river"
-			}
-		}]
+		ore.biomes = ['ad_astra:lunar_wastelands', 'minecraft:basalt_deltas', 'incendium:toxic_heap']
 		ore.addTarget('#ad_astra:moon_ore_replaceables', 'create:scoria')
 
 
