@@ -339,30 +339,57 @@ onEvent('recipes', event => {
   event.replaceInput({mod: 'techreborn'}, 'techreborn:refined_iron_storage_block', 'techreborn:silver_storage_block')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:refined_iron_nugget', 'techreborn:silver_nugget')
 
+
+
+
   event.replaceInput({mod: 'techreborn'}, 'techreborn:aluminum_plate', 'techreborn:lead_plate')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:aluminum_ingot', 'techreborn:lead_plate')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:aluminum_storage_block', 'techreborn:lead_storage_block')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:aluminum_nugget', 'techreborn:lead_nugget')
+  event.remove({output: 'techreborn:aluminum_plate'})
+  event.remove({output: 'techreborn:aluminum_ingot'})
+  event.remove({output: 'techreborn:aluminum_storage_block'})
+  event.remove({output: 'techreborn:aluminum_nugget'})
+
+
 
   event.replaceInput({mod: 'techreborn'}, 'techreborn:tungsten_plate', 'ad_astra:compressed_steel')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:tungsten_ingot', 'ad_astra:compressed_steel')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:tungsten_storage_block', 'ad_astra:steel_block')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:tungsten_nugget', 'ad_astra:steel_nugget')
+  event.remove({output: 'techreborn:tungsten_plate'})
+  event.remove({output: 'techreborn:tungsten_ingot'})
+  event.remove({output: 'techreborn:tungsten_storage_block'})
+  event.remove({output: 'techreborn:tungsten_nugget'})
 
   event.replaceInput({mod: 'techreborn'}, 'techreborn:tungstensteel_plate', 'ad_astra:compressed_steel')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:tungstensteel_ingot', 'ad_astra:compressed_steel')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:tungstensteel_storage_block', 'ad_astra:steel_block')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:tungstensteel_nugget', 'ad_astra:steel_nugget')
+  event.remove({output: 'techreborn:tungstensteel_plate'})
+  event.remove({output: 'techreborn:tungstensteel_ingot'})
+  event.remove({output: 'techreborn:tungstensteel_storage_block'})
+  event.remove({output: 'techreborn:tungstensteel_nugget'})
 
   event.replaceInput({mod: 'techreborn'}, 'techreborn:chrome_plate', 'ad_astra:compressed_ostrum')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:chrome_ingot', 'ad_astra:compressed_ostrum')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:chrome_storage_block', 'ad_astra:ostrum_block')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:chrome_nugget', 'ad_astra:ostrum_nugget')
+  event.remove({output: 'techreborn:chrome_plate'})
+  event.remove({output: 'techreborn:chrome_ingot'})
+  event.remove({output: 'techreborn:chrome_storage_block'})
+  event.remove({output: 'techreborn:chrome_nugget'})
 
   event.replaceInput({mod: 'techreborn'}, 'techreborn:titanium_plate', 'ad_astra:compressed_calorite')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:titanium_ingot', 'ad_astra:compressed_calorite')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:titanium_storage_block', 'ad_astra:calorite_block')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:titanium_nugget', 'ad_astra:calorite_nugget')
+  event.remove({output: 'techreborn:titanium_plate'})
+  event.remove({output: 'techreborn:titanium_ingot'})
+  event.remove({output: 'techreborn:titanium_storage_block'})
+  event.remove({output: 'techreborn:titanium_nugget'})
+
+
   event.replaceInput({mod: 'techreborn'}, 'techreborn:platinum_plate', 'ad_astra:compressed_calorite')
   event.replaceInput({output: 'techreborn:implosion_compressor'}, 'techreborn:advanced_alloy_ingot', 'techreborn:advanced_alloy_plate')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:nickel_ingot', 'ad_astra:compressed_desh')
@@ -371,6 +398,10 @@ onEvent('recipes', event => {
   event.replaceInput({mod: 'techreborn'}, 'techreborn:brass_ingot', 'create:brass_ingot')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:brass_storage_block', 'create:brass_block')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:brass_nugget', 'create:brass_nugget')
+  event.remove({output: 'techreborn:brass_plate'})
+  event.remove({output: 'techreborn:brass_ingot'})
+  event.remove({output: 'techreborn:brass_storage_block'})
+  event.remove({output: 'techreborn:brass_nugget'})
 
   event.replaceInput({mod: 'techreborn'}, 'techreborn:electronic_circuit', 'create:integrated_circuit')
   event.replaceInput({mod: 'techreborn'}, 'minecraft:lapis_lazuli', 'techreborn:lead_plate')
@@ -378,6 +409,10 @@ onEvent('recipes', event => {
   event.replaceInput({mod: 'techreborn'}, 'techreborn:zinc_plate', 'createaddition:zinc_sheet')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:zinc_ingot', 'create:zinc_ingot')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:zinc_nugget', 'create:zinc_nugget')
+  event.remove({output: 'techreborn:zinc_plate'})
+  event.remove({output: 'techreborn:zinc_ingot'})
+  event.remove({output: 'techreborn:zinc_storage_block'})
+  event.remove({output: 'techreborn:zinc_nugget'})
   
 
  ///// APPLIED ENERGISTICS (AE2) OVERHAUL /////
@@ -474,7 +509,7 @@ event.recipes.createDeploying('createastral:astral_singularity', ['createastral:
 event.recipes.createDeploying('createastral:astral_singularity', ['createastral:astral_singularity', 'create:polished_rose_quartz']),
 event.recipes.createDeploying('createastral:astral_singularity', ['createastral:astral_singularity', 'create:brass_ingot']),
 
-]).transitionalItem('createastral:astral_singularity').loops(3) 
+]).transitionalItem('createastral:astral_singularity').loops(100) 
 
 
 
@@ -1655,7 +1690,6 @@ event.recipes.createFilling('structures_compass:structures_compass', [
 		], 'tconstruct:slimesteel_nugget', [ 
         event.recipes.createPressing('tconstruct:slimesteel_nugget', 'tconstruct:slimesteel_nugget')
     ]).transitionalItem('create:tree_fertilizer').loops(125)
-
 
 
 event.recipes.createMixing(Fluid.of('kubejs:hellfire', 81), [

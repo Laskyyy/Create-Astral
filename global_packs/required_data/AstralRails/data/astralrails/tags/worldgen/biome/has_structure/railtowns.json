@@ -1,11 +1,16 @@
 {
-  "replace": false,
-  "values": [
-    "minecraft:forest",
-		"minecraft:plains",
-		"minecraft:savanna",
-		"minecraft:sunflower_plains",
-		"minecraft:flower_forest",
-		"minecraft:birch_forest"
-  ]
-}
+	"replace": false,
+	"values": [
+	  "#minecraft:is_badlands",
+	  "#minecraft:is_beach",
+	  "#minecraft:is_forest",
+	  "#minecraft:is_hill",
+	  "#minecraft:is_jungle",
+	  "#minecraft:is_mountain",
+	  "#minecraft:is_plains",
+	  "#minecraft:is_savanna",
+	  "#minecraft:is_swamp",
+	  "#minecraft:is_taiga"
+	]
+  }
+  

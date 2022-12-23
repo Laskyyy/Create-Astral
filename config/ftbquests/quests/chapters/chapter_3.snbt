@@ -625,22 +625,25 @@
 			]
 		}
 		{
+			title: "Shimmer Lakes..."
 			x: 6.5d
-			y: -1.0d
-			subtitle: "Have access to shulkers, as a treat"
+			y: -0.5d
+			subtitle: "Spread across the overworld and moon, you might uncover a buried meteor filled with shimmer..."
+			description: ["Pumping this and shipping it off to your base might be wise, shimmer is a valuable resource to control."]
+			dependencies: ["00F3EA4A8FB5B11B"]
 			id: "586FA45ED205784F"
-			tasks: [
-				{
-					id: "0C119FAAECA6085E"
-					type: "item"
-					item: "minecraft:shulker_box"
+			tasks: [{
+				id: "74C312D1BA7AE516"
+				type: "structure"
+				icon: {
+					id: "ftbquests:custom_icon"
+					Count: 1b
+					tag: {
+						Icon: "createdeco:textures/block/palettes/decal/pink_decal.png"
+					}
 				}
-				{
-					id: "74C312D1BA7AE516"
-					type: "structure"
-					structure: "astralrails:shimmer_lake"
-				}
-			]
+				structure: "astralrails:shimmer_lake"
+			}]
 		}
 		{
 			title: "HOW DO I MAKE THIS?!"

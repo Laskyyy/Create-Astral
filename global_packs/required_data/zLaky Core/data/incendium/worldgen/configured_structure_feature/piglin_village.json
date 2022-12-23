@@ -3,7 +3,7 @@
     "start_pool": "incendium:cvill/town_centers",
     "size": 6
   },
-  "biomes": ["crimson_forest","warped_forest", "ad_astra:martian_canyon_creek"],
+  "biomes": ["crimson_forest","warped_forest", "ad_astra:martian_canyon_creek", "ad_astra:martian_wastelands"],
   "adapt_noise":true,
   "spawn_overrides": {
   },
