@@ -75,42 +75,86 @@
     //  "maxY": 69
     //}
     "cobbleGen": {
-      "compressor:triple_compressed_sand": [
+      "minecraft:bedrock": [
         {
-          "id": "minecraft:sand",
-          "weight": 100.0
+          "id": "minecraft:stone",
+          "weight": 40.0
+        },
+        {
+          "id": "minecraft:granite",
+          "weight": 20.0
+        },
+        {
+          "id": "minecraft:diorite",
+          "weight": 20.0
+        },
+        {
+          "id": "minecraft:andesite",
+          "weight": 20.0
+        }
+      ],
+      "ad_astra:moon_stone": [
+        {
+          "id": "ad_astra:moon_stone",
+          "weight": 2.0
+        },
+        {
+          "id": "minecraft:basalt",
+          "weight": 1.0
+        }
+      ],
+      "ad_astra:mars_stone": [
+        {
+          "id": "ad_astra:mars_stone",
+          "weight": 2.0
+        },
+        {
+          "id": "ad_astra:conglomerate",
+          "weight": 1.0
+        }
+      ],
+      "ad_astra:mercury_stone": [
+        {
+          "id": "ad_astra:mercury_stone",
+          "weight": 2.0
+        },
+        {
+          "id": "minecraft:blackstone",
+          "weight": 1.0
+        }
+      ]
+    },
+    "stoneGen": {
+      "minecraft:bedrock": [
+        {
+          "id": "minecraft:stone",
+          "weight": 40.0
+        },
+        {
+          "id": "minecraft:diorite",
+          "weight": 20.0
+        },
+        {
+          "id": "minecraft:andesite",
+          "weight": 20.0
+        },
+        {
+          "id": "minecraft:granite",
+          "weight": 20.0
         }
       ]
     },
     "basaltGen": {
-      "compressor:triple_compressed_andesite": [
+      "minecraft:bedrock": [
         {
-          "id": "minecraft:andesite",
+          "id": "minecraft:end_stone",
           "weight": 100.0,
           "dimensions": [
-            "minecraft:overworld"
-          ]
-        },
-        {
-          "id": "minecraft:andesite",
-          "weight": 100.0,
-          "excludedDimensions": [
             "minecraft:the_end"
           ]
-        }
-      ]
-    }
-    "moonGen": {
-      "ad_astra:moon_stone": [
-        {
-          "id": "ad_astra:moon_stone",
-          "weight": 100.0,
-          "dimensions": [
-            "ad_astra:moon"
-          ]
         },
         {
-          "id": "ad_astra:moon_stone",
+          "id": "minecraft:blackstone",
           "weight": 100.0,
           "excludedDimensions": [
             "minecraft:the_end"
