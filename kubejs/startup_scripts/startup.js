@@ -2,6 +2,38 @@
 
 console.info('Hello, World! (You will only see this line once in console, during startup)')
 
+
+
+
+function lizardBurnModificationChanges(event) {
+  var ONE_ITEM_BURN_TICKS = 200;
+  
+  event.modify('createaddition:biomass_pellet', item => {
+    item.burnTime = ONE_ITEM_BURN_TICKS * 16;
+  });
+}
+
+function lizardTooltipChanges(event) {
+  // TODO: how can we remove biomass pellet's current toolip?
+  
+  event.addAdvanced('createaddition:biomass_pellet', (item, advanced, text) => {
+    if (!event.shift) {
+      // text.add(1, [Text.of('Hold [').darkGray(), Text.of('Shift').gray(), Text.of('] for Summary').darkGray()])
+    } else {
+      // text.add(1, [Text.of('Hold [').darkGray(), Text.of('Shift').white(), Text.of('] for Summary').darkGray()])
+      // text.add(1, [Text.of('').white()]);
+      // text.add(3, [Text.of('A ').darkGreen(), Text.of('solid fuel').green(), Text.of(' which can smelt ').darkGray(),
+      //  Text.of('16 items').green(), Text.of(' in a ').darkGreen(), Text.of('Furnace').green()]);
+      // text.add(1, Text.white('Can smelt '), Text.green('16 '), Text.white('item.'));
+      // text.add(2, Text.green('16 '));
+      // text.add(3, [Text.white('Iron, '), Text.aqua('Diamonds, '), Text.gold('Gold '), Text.white('or even '), Text.green('Emeralds '), Text.white('are valid base blocks!')])
+      text.add(1, [Text.of('').white()]);
+      text.add(2, [Text.of('(It actually smelts ').darkGreen(), Text.of('16 items').green(), Text.of(", ignore what it says above)").darkGreen()]);
+    }
+  });
+}
+
+
 ///// REGISTERING CUSTOM FLUIDS ////
 
 

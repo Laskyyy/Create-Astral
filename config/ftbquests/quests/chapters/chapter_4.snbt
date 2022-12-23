@@ -448,12 +448,17 @@
 			]
 		}
 		{
-			title: "Vegan fuel? More likely than you think!"
-			x: -10.5d
-			y: -2.5d
-			subtitle: "Compress plant matter into plant balls."
-			description: [""]
-			dependencies: ["5406D5779F7B697A"]
+			title: "Vegan fuel? Closer than you think!"
+			x: -8.625d
+			y: -4.125d
+			description: [
+				""
+				"The plantball will fall apart if sent directly to the compressor. Pre-press it a bit."
+				"Some plantballs will break apart, so be ready to dispose or recyle the defects."
+			]
+			dependencies: ["5CD6C6CA30CA50F0"]
+			dependency_requirement: "one_completed"
+			size: 0.75d
 			min_required_tasks: 1
 			id: "59C1BBC3C57A277A"
 			tasks: [{
@@ -463,11 +468,13 @@
 			}]
 		}
 		{
-			x: -9.5d
-			y: -2.5d
-			subtitle: "Crush some fertiliser into submission."
-			description: ["This will take a while you little masochist."]
-			dependencies: ["59C1BBC3C57A277A"]
+			title: "Pure Fuel"
+			x: -7.5d
+			y: -2.625d
+			subtitle: "Wet some fertiliser into submission."
+			description: ["You do not want ANY impurities in rocket fuel. Wash them away."]
+			dependencies: ["232F25F6D9BFC2F5"]
+			size: 0.75d
 			id: "1533B14714529386"
 			tasks: [{
 				id: "6C67D64488400F03"
@@ -615,8 +622,8 @@
 		}
 		{
 			title: "Efficiently produce wires."
-			x: -12.5d
-			y: -1.5d
+			x: -12.8d
+			y: -1.2d
 			subtitle: "Save on some resources this way, entirely optional."
 			dependencies: ["61878C8DC870AC6A"]
 			size: 0.8d
@@ -643,9 +650,17 @@
 			}]
 		}
 		{
-			title: "Let's set up a fuel production line,"
-			x: -12.5d
+			title: "Let's set up a fuel production line"
+			x: -11.5d
 			y: -2.5d
+			subtitle: "The first electrical machines"
+			description: [
+				"Electrical machines allow you to either do new things, or do things more efficiently than ever before."
+				""
+				"The compressor allows you to compress more efficiently than the mechanical press. It is strong enough to turn organic matter into fuel."
+				""
+				"Rocket biofuel is still a difficult process anyways, especially with the technology available. Automating it will test your factory-building skills, but the stars beckon you discover a new age within them."
+			]
 			dependencies: ["752215E611021472"]
 			id: "07B10625859F1AF9"
 			tasks: [{
@@ -655,10 +670,17 @@
 			}]
 		}
 		{
-			title: "...extended"
-			x: -11.5d
-			y: -2.5d
+			title: "Let's finish the fuel production line"
+			x: -8.0d
+			y: -2.0d
 			subtitle: "Cells operate in the same way as a bucket, but are stackable"
+			description: [
+				"The solid canning machine can turn some materials into liquids, or transform a liquid into something different."
+				""
+				"Cells operate in the same way as a bucket, but are stackable. The solid canning machine uses these items."
+				""
+				"The canning machine is the only way to turn solid biofuel into an ignitable liquid."
+			]
 			dependencies: ["07B10625859F1AF9"]
 			id: "5406D5779F7B697A"
 			tasks: [
@@ -673,14 +695,29 @@
 					item: "techreborn:cell"
 				}
 			]
+			rewards: [{
+				id: "7541CC7649913889"
+				type: "item"
+				item: "techreborn:cell"
+				count: 3
+			}]
 		}
 		{
 			title: "Prepare the biofuel"
-			x: -8.5d
-			y: -2.5d
+			x: -7.0d
+			y: -1.5d
 			shape: "diamond"
 			subtitle: "Use that canning machine to load pure biomatter into liquid form."
-			dependencies: ["1533B14714529386"]
+			description: [
+				"This is one of the three essential components for space flight. The other two are rocket pieces and a workbench to assemble the rocket."
+				""
+				"If you wish to store the fuel in fuel tanks, you'll need to run the cell over an item drain."
+			]
+			dependencies: [
+				"1533B14714529386"
+				"5406D5779F7B697A"
+			]
+			size: 1.5d
 			id: "57724BFDF0A78FAF"
 			tasks: [{
 				id: "6FDEEB9ACA45AA73"
@@ -692,6 +729,19 @@
 						fluid: "techreborn:biofuel"
 					}
 				}
+				count: 3L
+			}]
+			rewards: [{
+				id: "0474A2B5026E54DD"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "techreborn:biofuel"
+					}
+				}
+				count: 3
 			}]
 		}
 		{
@@ -754,8 +804,9 @@
 			dependencies: [
 				"28980EA356A2F0BF"
 				"1BF9656E9FBB2364"
+				"57724BFDF0A78FAF"
 			]
-			size: 2.0d
+			size: 2.5d
 			id: "6E20B194F5CA8F22"
 			tasks: [{
 				id: "5125BCD5170B4867"
@@ -770,12 +821,14 @@
 		{
 			title: "Those hands sure can craft"
 			x: -7.0d
-			y: 0.5d
+			y: 1.5d
+			shape: "diamond"
 			subtitle: "Produce a NASA workbench for rocket creation"
 			dependencies: [
 				"44D51F142E9E8902"
 				"75CE520F392CC1E1"
 			]
+			size: 1.5d
 			id: "1BF9656E9FBB2364"
 			tasks: [{
 				id: "21511A94B9A5AD53"
@@ -785,11 +838,11 @@
 		}
 		{
 			title: "Space Powah"
-			x: -5.5d
-			y: -1.5d
+			x: -5.0d
+			y: 2.0d
 			subtitle: "A little more expensive, but allows for easy movement of power generation."
-			hide_dependency_lines: true
-			dependencies: ["1BF9656E9FBB2364"]
+			description: ["Especially useful for space."]
+			dependencies: ["75CE520F392CC1E1"]
 			id: "03F74AD3D7F6650E"
 			tasks: [{
 				id: "3F18393BE5E50474"
@@ -802,7 +855,7 @@
 			x: -11.5d
 			y: -5.0d
 			subtitle: "These have no durability, are enchantable but require power as a resource instead!"
-			dependencies: ["5406D5779F7B697A"]
+			dependencies: ["07B10625859F1AF9"]
 			id: "64271E1245394C9A"
 			tasks: [{
 				id: "6D52114BB4345CAD"
@@ -911,10 +964,13 @@
 		}
 		{
 			title: "Essential Rocket pieces"
-			x: -7.0d
-			y: -0.5d
+			x: -8.0d
+			y: 0.0d
+			shape: "diamond"
 			subtitle: "Compress some rocket fins and craft a few rocket parts!"
-			dependencies: ["57724BFDF0A78FAF"]
+			description: ["This is one of the three essential components for space flight. The other two is a workbench to assembly these parts, and fuel to power the rocket."]
+			dependencies: ["07B10625859F1AF9"]
+			size: 1.5d
 			id: "28980EA356A2F0BF"
 			tasks: [
 				{
@@ -926,17 +982,25 @@
 					id: "402EFC892C071DBA"
 					type: "item"
 					item: "ad_astra:rocket_fin"
+					count: 2L
 				}
 				{
 					id: "37D1856D01B2D99A"
 					type: "item"
 					item: "ad_astra:desh_tank"
+					count: 2L
+				}
+				{
+					id: "0203F3BE45C8D653"
+					type: "item"
+					item: "ad_astra:desh_block"
+					count: 6L
 				}
 			]
 		}
 		{
 			title: "The Piglin Planet"
-			x: -3.0d
+			x: -2.25d
 			y: 0.0d
 			shape: "gear"
 			subtitle: "It's time to introduce yourself to some porky friends."
@@ -977,8 +1041,8 @@
 		}
 		{
 			title: "Let there be LED."
-			x: -8.5d
-			y: -4.0d
+			x: -6.5d
+			y: -4.5d
 			subtitle: "Light up the world with snazzy new lights."
 			description: ["Require an adjacent power source to turn on."]
 			hide_dependency_lines: true
@@ -1193,7 +1257,6 @@
 			x: -21.0d
 			y: 1.0d
 			subtitle: "Learn the resources you can find on the moon."
-			description: ["Moon Sand and rock can be used as an infinite burner for soul fire."]
 			dependencies: ["306D009F01634115"]
 			id: "661A93F58DBEFB8F"
 			tasks: [
@@ -1238,10 +1301,15 @@
 		}
 		{
 			title: "Creating a space station!!"
-			x: -5.5d
-			y: 2.0d
+			x: -5.0d
+			y: -2.0d
 			subtitle: "Orbit dimensions have a 1:8 block travel ratio, just like the nether."
-			description: ["It might be worth setting up an outpost for fast travel, as planets are only 1:2."]
+			description: [
+				"It might be worth setting up an outpost for fast travel, as planets are only 1:2."
+				""
+				"Also, it's really awesome to live in space."
+			]
+			dependencies: ["6E20B194F5CA8F22"]
 			id: "47A155F9CAD19710"
 			tasks: [
 				{
@@ -1269,6 +1337,148 @@
 					count: 32L
 				}
 			]
+		}
+		{
+			title: "Fast Food Fuel"
+			icon: "createaddition:seed_oil_bucket"
+			x: -8.625d
+			y: -6.0d
+			subtitle: "Automate a seed."
+			description: ["Seed Oil, which our biofuel will be derived from, is made by compressing heated seeds. There are many seeds to choose from, so automate which one makes the most sense to you."]
+			hide_dependency_lines: true
+			size: 0.75d
+			id: "494F84A10D6934E7"
+			tasks: [
+				{
+					id: "428441742E5CD542"
+					type: "item"
+					item: "createaddition:seed_oil_bucket"
+				}
+				{
+					id: "1C7275685128FEF1"
+					type: "item"
+					title: "Any #c:seeds"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "c:seeds"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4BBAEC49C8261FFC"
+				type: "item"
+				item: "farmersdelight:hamburger"
+			}]
+		}
+		{
+			title: "Plant Materials"
+			x: -7.875d
+			y: -6.0d
+			subtitle: "Automate one of these"
+			description: ["Seed oil will need to mix with plant matter in order to coalesce. It can't be too salty or sugary, but that still leaves a couple of options to automate."]
+			hide_dependency_lines: true
+			min_required_dependencies: 1
+			size: 0.75d
+			id: "5B11C7CE6EF9FB2E"
+			tasks: [
+				{
+					id: "624F8EE22AB2B55B"
+					type: "item"
+					title: "Any #minecraft:leaves"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:leaves"
+						}
+					}
+				}
+				{
+					id: "1BBBBFF3AD97414F"
+					type: "item"
+					title: "Any #minecraft:saplings"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:saplings"
+						}
+					}
+				}
+				{
+					id: "301F319A8D43EC84"
+					type: "item"
+					title: "Any #c:grass_variants"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "c:grass_variants"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Painballs"
+			x: -8.25d
+			y: -5.25d
+			subtitle: "Not a paintball"
+			description: ["Mixing seed oil and plant material will clamp it into a loose organic compound that can be refined further."]
+			dependencies: [
+				"5B11C7CE6EF9FB2E"
+				"494F84A10D6934E7"
+			]
+			size: 0.75d
+			id: "5CD6C6CA30CA50F0"
+			tasks: [{
+				id: "61FAD1BFF5CC15A5"
+				type: "item"
+				item: "techreborn:plantball"
+			}]
+		}
+		{
+			title: "We're Going to Burn Dead Things"
+			x: -8.5d
+			y: -3.0d
+			subtitle: "Just some final processing to do."
+			description: ["It smells like MacDonalds."]
+			dependencies: [
+				"07B10625859F1AF9"
+				"59C1BBC3C57A277A"
+			]
+			id: "232F25F6D9BFC2F5"
+			tasks: [{
+				id: "387350F56B1AE2E9"
+				type: "item"
+				item: "createaddition:biomass"
+			}]
+		}
+		{
+			title: "Impure Fuel"
+			x: -7.5d
+			y: -3.375d
+			subtitle: "A great coal alternative"
+			description: ["Biomass can be refined into biomatter pellets, a very efficient solid fuel source to power furnaces and other such machines. It might be worth using some biomatter for this, or coming back to this recipe once there is excess rocket fuel."]
+			dependencies: ["232F25F6D9BFC2F5"]
+			size: 0.75d
+			optional: true
+			id: "0AF6740D30DD0D65"
+			tasks: [{
+				id: "4A594487727583A6"
+				type: "item"
+				item: "createaddition:biomass_pellet"
+				count: 16L
+			}]
+			rewards: [{
+				id: "6B2D5BE81396A8C9"
+				type: "item"
+				item: "createaddition:biomass_pellet"
+				count: 64
+			}]
 		}
 	]
 }

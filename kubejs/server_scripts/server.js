@@ -21,11 +21,100 @@ onEvent('tags.blocks', event => {
 })
 
 
+// Lasky - feel free to move the code in here to more appropriate places, I just wanted
+//  to keep all my changes together
+function lizardChanges(event) {
+  var FULL_BUCKET_AMMOUNT = 81000;
+  
+  event.remove({output: 'techreborn:plantball'});
+  event.remove({
+    type: 'minecraft:crafting_shaped',
+    output: 'techreborn:plantball',
+  });
+
+  event.remove({
+    type: 'minecraft:crafting_shapeless',
+    output: 'techreborn:plantball',
+  });
+
+  event.recipes.createMixing('techreborn:plantball', [
+    '9x #minecraft:leaves',
+    {fluid: 'createaddition:seed_oil', amount: FULL_BUCKET_AMMOUNT / 2},
+  ]).heated().processingTime(1000)
+
+  event.recipes.createMixing('techreborn:plantball', [
+    '9x #c:grass_variants',
+    {fluid: 'createaddition:seed_oil', amount: FULL_BUCKET_AMMOUNT / 2},
+  ]).heated().processingTime(1000)
+
+  event.recipes.createMixing('techreborn:plantball', [
+    '9x #minecraft:saplings',
+    {fluid: 'createaddition:seed_oil', amount: FULL_BUCKET_AMMOUNT / 2},
+  ]).heated().processingTime(1000)
+
+  event.remove({output: 'techreborn:compressed_plantball'});
+
+  var transitional_c_plantball = 'techreborn:plantball';
+  event.recipes.createSequencedAssembly([
+    Item.of('techreborn:compressed_plantball').withChance(8),
+    Item.of('minecraft:grass').withChance(1),
+    Item.of('minecraft:green_dye').withChance(.5),
+    Item.of('farmersdelight:straw').withChance(.5)
+  ], 'techreborn:plantball', [
+    event.recipes.createPressing(transitional_c_plantball, transitional_c_plantball)
+  ]).transitionalItem(transitional_c_plantball).loops(4);
+ 
+  
+  event.remove({
+    'output': 'createaddition:biomass'
+  });
+
+  event.custom({
+    "type": "techreborn:compressor",
+    "power": 10,
+    "time": 300,
+    "ingredients": [
+      {
+        "item": "techreborn:compressed_plantball",
+        "count": 4
+      }
+    ],
+    "results": [
+      {
+        "item": "createaddition:biomass",
+        "count": 1
+      }
+    ]
+  });
+
+  event.recipes.createSplashing([
+    'createastral:pure_biomatter',
+    Item.of('minecraft:sugar').withChance(.2),
+    Item.of('minecraft:bonemeal').withChance(.2),
+  ], 'createaddition:biomass')
+  
+
+  event.remove({
+    'output': 'createaddition:biomass_pellet'
+  });
+
+  var transitional_bio_pellet = 'createaddition:biomass';
+  event.recipes.createSequencedAssembly([
+    Item.of('4x createaddition:biomass_pellet').withChance(1),
+  ], 'createaddition:biomass', [
+    event.recipes.createCutting(transitional_bio_pellet, transitional_bio_pellet),
+    event.recipes.createCutting(transitional_bio_pellet, transitional_bio_pellet),
+    event.recipes.createPressing(transitional_bio_pellet, transitional_bio_pellet)
+  ]).transitionalItem(transitional_bio_pellet).loops(1);
+
+}
 
 
 
 onEvent('recipes', event => {
 	
+  // Lizard's changes (mostly plantball and biofuel recipes)
+  lizardChanges(event);
   
   
   
