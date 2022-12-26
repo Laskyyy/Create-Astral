@@ -513,19 +513,19 @@
 					id: "45D6962D76FE0D81"
 					type: "item"
 					item: "minecraft:raw_iron"
-					count: 16L
+					count: 8L
 				}
 				{
 					id: "753722BA8991D63B"
 					type: "item"
 					item: "techreborn:raw_tin"
-					count: 16L
+					count: 8L
 				}
 				{
 					id: "0A51F489FEEE71F0"
 					type: "item"
 					item: "minecraft:raw_copper"
-					count: 16L
+					count: 8L
 				}
 			]
 		}
@@ -1035,7 +1035,7 @@
 					Icon: "createdeco:textures/block/palettes/decal/cyan_decal.png"
 				}
 			}
-			x: 1.5d
+			x: 2.0d
 			y: 8.0d
 			subtitle: "Give me mini shulker boxes for dedicated items"
 			description: [
@@ -1262,13 +1262,13 @@
 			]
 		}
 		{
-			title: "Bronzeworking"
+			title: "Essential Materials"
 			x: -1.5d
 			y: 8.0d
 			shape: "gear"
 			subtitle: "Chapter 1 Unlock."
 			description: [
-				"Bronze is the basis of your first simple machines. All you need is to put some copper and tin together, and the dreams of industry open up to you!"
+				"Tin and Copper will be used for a new metal needed to create the gears of industry, while andesite and clay forms the cornerstone of Create. You'll want to stockpile far more than what's needed to clear this quest."
 				""
 				""
 				"Feel free to refer back to this tab for basic info on some of the simpler content. Setting up a decent food source will sure help you, as it increases max HP!"
@@ -1276,15 +1276,41 @@
 			dependencies: ["601A619C6E96920A"]
 			size: 2.0d
 			id: "1337920DA45E72AD"
-			tasks: [{
-				id: "2C3E2DFED79A499B"
-				type: "item"
-				item: "createastral:bronze_ingot"
-				count: 32L
-			}]
+			tasks: [
+				{
+					id: "5ACD13D871B7909B"
+					type: "item"
+					item: "techreborn:tin_ingot"
+					count: 8L
+				}
+				{
+					id: "32032BEF96EE21E3"
+					type: "item"
+					item: "minecraft:copper_ingot"
+					count: 8L
+				}
+				{
+					id: "069C76715AC2E719"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 8L
+				}
+				{
+					id: "6B75A05B669468D5"
+					type: "item"
+					item: "minecraft:andesite"
+					count: 16L
+				}
+				{
+					id: "5F9D6891E391AC4E"
+					type: "item"
+					item: "minecraft:clay"
+					count: 4L
+				}
+			]
 		}
 		{
-			title: "Techreborn Storage"
+			title: "Tech Reborn Storage"
 			x: 0.5d
 			y: 8.0d
 			subtitle: "Give me mass storage for a single item"
@@ -1709,7 +1735,7 @@
 		}
 		{
 			title: "Packaged Up"
-			x: 2.5d
+			x: 3.0d
 			y: 8.0d
 			subtitle: "A rainforest of inventory."
 			description: [
