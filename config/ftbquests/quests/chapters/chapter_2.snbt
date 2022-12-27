@@ -38,7 +38,11 @@
 			x: -2.5d
 			y: 10.5d
 			subtitle: "A new metal?"
-			description: ["Combine copper and tin in a smithing table to get the most primitive of alloys."]
+			description: [
+				"Combine copper and tin in a smithing table to get the most primitive of alloys."
+				""
+				"This material is used for creating cogwheels."
+			]
 			hide_dependency_lines: false
 			dependencies: [
 				"1337920DA45E72AD"
@@ -53,11 +57,16 @@
 		}
 		{
 			title: "Tough Teeth"
+			icon: "create:cogwheel"
 			x: -2.0d
 			y: 8.0d
 			shape: "gear"
 			subtitle: "Craft your first cogwheel"
-			description: ["You might want to stock up on these,,,"]
+			description: [
+				"Cogwheels and shafts take rotating input - such as from a hand crank or water wheel - and transfer the power around. Large cogwheels in particular can be used to change the axis of rotation, or speed up/slow down the rotation speed when used in combination with small cogwheels."
+				""
+				"Definitely give them a [w] ponder. You'll want to stock up on these!"
+			]
 			dependencies: [
 				"4D1A55B136F62B3F"
 				"74E7B48237BED17D"
@@ -99,9 +108,11 @@
 			]
 		}
 		{
+			icon: "create:mechanical_press"
 			x: -2.0d
 			y: 4.5d
-			description: ["Slap a depot below a powered press and watch the magic happen!"]
+			subtitle: "Watch your hands"
+			description: ["Slap a depot below a powered press, place some stuff on it, and watch the magic happen!"]
 			dependencies: [
 				"604CF717881C323A"
 				"35F1B635057746F0"
@@ -124,13 +135,13 @@
 				id: "58C0759B314F7A1A"
 				type: "item"
 				item: "create:andesite_alloy"
-				count: 3
+				count: 8
 			}]
 		}
 		{
 			x: -2.0d
 			y: 3.0d
-			description: ["Sheets! Yes! With these there are new options for create blocks. Drills (these will assist in mining the first few diamonds) or mechanical saws to chop down huge amounts of logs instantaneously."]
+			description: ["Sheets! Yes! With these there are new options for create blocks. Machines like drills that will assist in mining the first few diamonds or mechanical saws to chop down huge amounts of logs instantaneously are now available."]
 			dependencies: ["6499CD689863283D"]
 			id: "4EB4838CCED125E2"
 			tasks: [{
@@ -139,11 +150,19 @@
 				item: "create:iron_sheet"
 				count: 10L
 			}]
-			rewards: [{
-				id: "5DEE6FCAA4C9AF9A"
-				type: "item"
-				item: "farmersdelight:smoked_ham"
-			}]
+			rewards: [
+				{
+					id: "5DEE6FCAA4C9AF9A"
+					type: "item"
+					item: "farmersdelight:smoked_ham"
+				}
+				{
+					id: "0FB7CCEC080D88A7"
+					type: "item"
+					item: "create:andesite_casing"
+					count: 8
+				}
+			]
 		}
 		{
 			x: -3.0d
@@ -204,7 +223,7 @@
 		{
 			x: -2.5d
 			y: 9.5d
-			subtitle: "Better than a copper sheet."
+			subtitle: "Better than a copper sheet"
 			description: ["Slice a bronze ingot in two using a stonecutter. Two for one, what a steal!"]
 			dependencies: ["5268B7CCEDC48422"]
 			id: "4D1A55B136F62B3F"
@@ -220,6 +239,7 @@
 			subtitle: "Drills go brrr"
 			description: [
 				"This'll be the most consistent method of grabbing diamonds before upgrading your first tinker tool with a diamond gem."
+				""
 				"Diamonds can otherwise be found in loot across the overworld."
 			]
 			dependencies: ["4EB4838CCED125E2"]
@@ -241,7 +261,15 @@
 			y: 4.5d
 			shape: "rsquare"
 			subtitle: "Trains? Trains!!!"
-			description: ["Trains this early? How generous."]
+			description: [
+				"Trains have specific uses. Not only can they transport players, they can also transport items and fluids in bulk. They can also be automatically scheduled and will travel through unloaded chunks, making them perfect for transporting resources from faraway production and resource sites."
+				""
+				"They're not necessary for progression, so feel free to ignore this section of the chapter. That being said, they're also darn cool."
+				""
+				"Normally trains come much later, but we're generous."
+				""
+				""
+			]
 			dependencies: [
 				"68108C8A6AC63A01"
 				"6499CD689863283D"
@@ -269,9 +297,14 @@
 		}
 		{
 			x: -7.0d
-			y: 3.0d
+			y: 2.0d
 			subtitle: "TRAINS"
-			description: ["There will be a cheaper way to produce tracks in the near future. For now, have a little boost."]
+			description: [
+				"There will be a cheaper way to produce tracks in the near future."
+				""
+				"After placing down a track, right click with another track in your hand, and you'll be able to create tracks with smooth bends."
+			]
+			hide_dependency_lines: true
 			dependencies: ["0A5DC78719B9A244"]
 			id: "67AA35D9D18AD64B"
 			tasks: [{
@@ -283,7 +316,7 @@
 				id: "68BF3F2B051CCF01"
 				type: "item"
 				item: "create:track"
-				count: 96
+				count: 16
 			}]
 		}
 		{
@@ -304,14 +337,20 @@
 			}]
 		}
 		{
-			x: -8.5d
-			y: 3.0d
+			x: -9.5d
+			y: 2.0d
 			shape: "rsquare"
 			subtitle: "TRAAAAAAAINS"
+			description: [
+				"Assemble a train to earn this advancement."
+				""
+				"Trains are pretty advanced compared to the rest of this chapter. It's highly recommend you probe around with the ponder feature!"
+			]
 			dependencies: [
-				"1579C73B735F06F8"
 				"67AA35D9D18AD64B"
 				"0E28273A4D119B81"
+				"31B9F34B69172C02"
+				"4E17A29F84247877"
 			]
 			size: 1.5d
 			id: "36129D7A46CC6F6D"
@@ -321,12 +360,43 @@
 				advancement: "create:train"
 				criterion: ""
 			}]
-			rewards: [{
-				id: "2732F8299290593F"
-				type: "item"
-				item: "dustrial_decor:cast_iron_billet"
-				count: 64
-			}]
+			rewards: [
+				{
+					id: "2732F8299290593F"
+					type: "item"
+					item: "dustrial_decor:cast_iron_billet"
+					count: 64
+				}
+				{
+					id: "190791854AEC801D"
+					type: "item"
+					item: "create:track"
+					count: 96
+				}
+				{
+					id: "4375AC6679993CC0"
+					type: "item"
+					item: "create:metal_girder"
+					count: 64
+				}
+				{
+					id: "7767CFF33CC1DABC"
+					type: "item"
+					item: "create:steam_whistle"
+				}
+				{
+					id: "0DDBBF6F28AF3160"
+					type: "item"
+					item: "create:train_door"
+					count: 4
+				}
+				{
+					id: "057D2BB607293DB0"
+					type: "item"
+					item: "create:railway_casing"
+					count: 8
+				}
+			]
 		}
 		{
 			icon: {
@@ -339,7 +409,11 @@
 			x: -1.0d
 			y: 5.0d
 			subtitle: "Power a waterwheel"
-			description: ["The first automatic power generation method you are likely to utilise. Should last you enough until the brass age!"]
+			description: [
+				"Constantly hand-cranking machines isn't sustainable. It'll be necessary to rely on power generators. This is the simplest one: it will provide power (\"stress units\") depending on many of its fins are in contact with flowing water."
+				""
+				"Water power can last you until the brass age!"
+			]
 			hide_dependency_lines: true
 			dependencies: ["515FDE185E1FB782"]
 			id: "35F1B635057746F0"
@@ -360,13 +434,18 @@
 				id: "75D6346CB8A5E30C"
 				type: "item"
 				item: "create:water_wheel"
+				count: 3
 			}]
 		}
 		{
 			x: -2.0d
 			y: 6.5d
 			shape: "rsquare"
-			description: ["Apply an andesite alloy to a stripped log to create andesite casing. These can be automated later on with deployers, but for now it's manual labour."]
+			description: [
+				"Strip any log with an axe and right click it with andesite alloy to create andesite casing. These can be automated later on with deployers, but for now it's manual labour."
+				""
+				"Andesite casing are essential components for a large variety of basic machines. They can also be used to decorate shafts, cogwheels, and belts."
+			]
 			dependencies: ["515FDE185E1FB782"]
 			size: 1.5d
 			id: "604CF717881C323A"
@@ -375,8 +454,21 @@
 				type: "item"
 				item: "create:andesite_casing"
 			}]
+			rewards: [{
+				id: "48A89D444D1AC0F6"
+				type: "item"
+				item: "minecraft:clay"
+				count: 8
+			}]
 		}
 		{
+			icon: {
+				id: "minecraft:bow"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
 			x: -3.0d
 			y: 5.5d
 			subtitle: "Is that a gun?"
@@ -411,15 +503,22 @@
 		{
 			x: 0.0d
 			y: 12.0d
-			subtitle: "Hate making andesite?"
+			subtitle: "Hate finding andesite?"
 			description: ["So do I! Make a basalt generator with triple compressed andesite as the catalyst to ignore andesite production entirely. Lava has to touch both the andesite, and blue ice to form."]
 			dependencies: ["5BE7EBA598FD5EE0"]
 			id: "1B5245476A321C24"
-			tasks: [{
-				id: "6CB5E797D027C3B7"
-				type: "item"
-				item: "compressor:triple_compressed_andesite"
-			}]
+			tasks: [
+				{
+					id: "6CB5E797D027C3B7"
+					type: "item"
+					item: "compressor:triple_compressed_andesite"
+				}
+				{
+					id: "770A3298F1EAE3E2"
+					type: "item"
+					item: "minecraft:blue_ice"
+				}
+			]
 			rewards: [{
 				id: "4CD8DDB0266CAE21"
 				type: "item"
@@ -428,11 +527,16 @@
 			}]
 		}
 		{
+			icon: "create:mechanical_mixer"
 			x: -2.0d
 			y: 1.5d
 			shape: "circle"
 			subtitle: "Mixing up progression much?"
-			description: ["Mixing is broken into 3 categories. Unheated, Heated, and Superheated (Blaze cakes). That final tier is not going to be accessible to you for a little while."]
+			description: [
+				"Mixer mixes things. There's not much to it."
+				""
+				"Some recipes required \"heated\" and \"super-heated\" mixing, but both won't be available for awhile."
+			]
 			dependencies: ["4EB4838CCED125E2"]
 			id: "545BF28E82A07D19"
 			tasks: [
@@ -494,6 +598,7 @@
 			subtitle: "I like turtles."
 			description: [
 				"It's not forced labour if they're robots."
+				""
 				"You can give these iron tools instead of diamond (unlike the advanced bots) and they will still hold a diamond pickaxe for you!"
 			]
 			dependencies: ["247AF9BF2D5EBF78"]
@@ -504,17 +609,12 @@
 				type: "item"
 				item: "computercraft:turtle_normal"
 			}]
-			rewards: [{
-				id: "4640E103DF6899CD"
-				type: "item"
-				item: "create:mechanical_bearing"
-			}]
 		}
 		{
 			title: "The sturdiest of sturdy"
 			x: -5.5d
 			y: 3.0d
-			subtitle: "Armour maintenance doesn't exist."
+			subtitle: "Armour maintenance doesn't exist"
 			description: ["Excellent all-around, yet will require enchanted books if you desire any kind of enchantments..."]
 			dependencies: ["0A5DC78719B9A244"]
 			optional: true
@@ -604,7 +704,13 @@
 			x: -1.0d
 			y: 8.0d
 			subtitle: "Ok, some of you like to use this thing."
-			description: ["You are only delaying the inevitable... that sweet automated power generation."]
+			description: [
+				"The hand crank is a primitive power source. right clicking it will move cogwheels, but this will use up your hunger bar."
+				""
+				"Pretty essential for testing contraptions."
+				""
+				"You are only delaying the inevitable... that sweet automated power generation."
+			]
 			dependencies: ["74E7B48237BED17D"]
 			id: "4AF3238551E346E1"
 			tasks: [{
@@ -612,12 +718,22 @@
 				type: "item"
 				item: "create:hand_crank"
 			}]
+			rewards: [{
+				id: "23B7C7FE9EE1C6BF"
+				type: "item"
+				item: "minecraft:cooked_beef"
+				count: 4
+			}]
 		}
 		{
 			x: -4.5d
 			y: 6.5d
 			subtitle: "Millstones are more useful now."
-			description: ["Produce quartz, obsidian dust, and gunpowder early in the game."]
+			description: [
+				"Millstones are used to grind materials into more powdery forms. Simply chuck stuff onto the opening and right click it after awhile."
+				""
+				"You can produce quartz, obsidian dust, and gunpowder early in the game."
+			]
 			dependencies: ["604CF717881C323A"]
 			id: "1DEF161DE26F3587"
 			tasks: [{
@@ -625,12 +741,20 @@
 				type: "item"
 				item: "create:millstone"
 			}]
-			rewards: [{
-				id: "20738A978098D996"
-				type: "item"
-				item: "minecraft:quartz"
-				count: 4
-			}]
+			rewards: [
+				{
+					id: "20738A978098D996"
+					type: "item"
+					item: "minecraft:quartz"
+					count: 4
+				}
+				{
+					id: "3EBD1C846242F9BD"
+					type: "item"
+					item: "create:cogwheel"
+					count: 4
+				}
+			]
 		}
 		{
 			title: "Get Nether Quartz!"
@@ -638,6 +762,7 @@
 			y: 7.0d
 			shape: "diamond"
 			subtitle: "With a solid source of diorite, you can produce excess amounts of quartz."
+			description: [""]
 			dependencies: ["1DEF161DE26F3587"]
 			id: "6B85CBE54B33C91F"
 			tasks: [{
@@ -648,17 +773,24 @@
 			}]
 		}
 		{
-			title: "Get Rail."
+			title: "Get Rail"
 			x: -4.5d
 			y: 5.5d
-			subtitle: "Get rail."
+			subtitle: "Get rail"
+			description: ["The path to trains require obsidian dust. Unforunately, you won't be able to collect obsidian until you get a drill, so you might have to come back to this later."]
 			dependencies: ["1DEF161DE26F3587"]
 			id: "68108C8A6AC63A01"
 			tasks: [{
 				id: "20CDF6DD734135C3"
 				type: "item"
 				item: "create:powdered_obsidian"
-				count: 16L
+				count: 4L
+			}]
+			rewards: [{
+				id: "7EEED7520D320247"
+				type: "item"
+				item: "minecraft:obsidian"
+				count: 12
 			}]
 		}
 		{
@@ -667,7 +799,11 @@
 			y: -0.5d
 			shape: "gear"
 			subtitle: "Chapter 2 Unlock"
-			description: ["Grout is to be used in tinkers-related blocks, I told you clay was going to be useful."]
+			description: [
+				"Use the mixer to create grout, which is used in tinkers-related blocks,"
+				""
+				"Don't eat this."
+			]
 			dependencies: ["545BF28E82A07D19"]
 			size: 2.0d
 			id: "7354F2BFB2591ECF"
@@ -677,11 +813,55 @@
 				item: "tconstruct:grout"
 				count: 16L
 			}]
-			rewards: [{
-				id: "2FC3C3C1EEF29421"
-				type: "item"
-				item: "sniffer:sniffer_egg"
-			}]
+			rewards: [
+				{
+					id: "2FC3C3C1EEF29421"
+					type: "item"
+					item: "sniffer:sniffer_egg"
+				}
+				{
+					id: "02C1E6C64FF675CE"
+					type: "item"
+					item: "create:cogwheel"
+					count: 32
+				}
+				{
+					id: "6E745FEF91101A6C"
+					type: "item"
+					item: "create:large_cogwheel"
+					count: 8
+				}
+				{
+					id: "559628E110BA3920"
+					type: "item"
+					item: "create:shaft"
+					count: 64
+				}
+				{
+					id: "6D73F8A2532F0D15"
+					type: "item"
+					item: "create:andesite_casing"
+					count: 32
+				}
+				{
+					id: "3AF3F3526015EBC7"
+					type: "item"
+					item: "create:gearbox"
+					count: 32
+				}
+				{
+					id: "31F3038409E57876"
+					type: "item"
+					item: "create:andesite_alloy"
+					count: 32
+				}
+				{
+					id: "25D89697A7FE9804"
+					type: "item"
+					item: "create:water_wheel"
+					count: 8
+				}
+			]
 		}
 		{
 			title: "Ew it's stuck to my hands"
@@ -690,6 +870,7 @@
 			subtitle: "Mwahahahah"
 			description: [
 				"Forcing you to use *shudders* furnaces."
+				""
 				"If you're thinking, jeez this is expensive, do not fret! it becomes 1/3rd the cost later."
 			]
 			dependencies: ["5BE7EBA598FD5EE0"]
@@ -787,7 +968,7 @@
 			x: -3.5d
 			y: 0.5d
 			subtitle: "The Minecraft Dream"
-			description: ["You'll be able to tip you tools with diamond later which will allow you to mine diamonds and all deepslate ore directly."]
+			description: ["You'll be able to tip your tools with diamond later which will allow you to mine diamonds and all deepslate ore directly."]
 			dependencies: ["5D51B2F9F28ECE8A"]
 			id: "605ECFFA4F1C2736"
 			tasks: [{
@@ -806,7 +987,7 @@
 			x: -4.5d
 			y: 0.5d
 			subtitle: "Astral decoration"
-			description: ["A nice touch for your base"]
+			description: ["A nice touch for your base."]
 			dependencies: ["4117DCE0FDD1C403"]
 			id: "0563257D5CE9C8A5"
 			tasks: [{
@@ -837,13 +1018,13 @@
 			title: "Good for Business"
 			x: -0.5d
 			y: 0.5d
-			subtitle: "Don't forget to plant saplings!"
+			subtitle: "Don't forget to re-plant saplings!"
 			dependencies: ["0E7A9F741823BB1C"]
 			id: "4881D5FF815609C3"
 			tasks: [{
 				id: "2F0FF11646ED9D1C"
 				type: "item"
-				title: "Any #minecraft:logs"
+				title: "100x Logs"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -911,6 +1092,7 @@
 		}
 		{
 			title: "Better Smelting"
+			icon: "minecraft:blast_furnace"
 			x: 0.5d
 			y: 0.5d
 			subtitle: "A helpful hint..."
@@ -926,6 +1108,12 @@
 			tasks: [{
 				id: "1A528CDF4DA51B41"
 				type: "checkmark"
+				title: "Understood."
+			}]
+			rewards: [{
+				id: "220200620D9BA6CF"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -944,7 +1132,7 @@
 				id: "0584F4786C257952"
 				type: "item"
 				item: "create:encased_chain_drive"
-				count: 3
+				count: 6
 			}]
 		}
 		{
@@ -994,9 +1182,18 @@
 			]
 		}
 		{
-			x: -8.5d
+			x: -9.5d
 			y: 4.5d
-			subtitle: "You'll need this for creating the train boxes themselves"
+			subtitle: "You'll need this for creating the train cars themselves"
+			description: [
+				"To glue stuff together, right click a block and move the cursor around. Use ponder for more information."
+				""
+				"Gluing things together is a little finnicky especially when starting out, you might need to take a few tries to get things right."
+				""
+				"You'll also be using glue for things in later chapters."
+			]
+			hide_dependency_lines: true
+			dependencies: ["0A5DC78719B9A244"]
 			id: "0E28273A4D119B81"
 			tasks: [{
 				id: "4842B54099B4114B"
@@ -1009,6 +1206,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "38DF6AA8C288E420"
+				type: "item"
+				item: "minecraft:slime_block"
+			}]
 		}
 		{
 			title: "ABSOLUTELY ESSENTIAL"
@@ -1016,7 +1218,7 @@
 			y: 3.0d
 			shape: "gear"
 			subtitle: "You'll use this forever"
-			description: ["The wrench will allow you to rotate blocks with a right click. It'll also destroy Create blocks instantly and put them in your inventory with crouch+click."]
+			description: ["The wrench will allow you to rotate create blocks with a right click. It'll also destroy Create blocks instantly and put them in your inventory with crouch+click."]
 			dependencies: ["6499CD689863283D"]
 			size: 1.25d
 			id: "0C6D01057E4E29FC"
@@ -1046,12 +1248,13 @@
 			x: -2.0d
 			y: 12.0d
 			shape: "pentagon"
+			subtitle: "Going Beyond Above"
 			description: [
 				"The world of Create is one of machinery, industry, and automation, and is the backbone of this modpack."
 				""
-				"This chapter will introduce you to the basics of Create and what new blocks are available to you. However, due to the scope of Create, this questbook can not cover the full extent of what's to know about Create. However, hover over any Create block - whether in your inventory or in the REI screen - and hold W for a detailed explanation of how mechanics function. If this still isn't enough, feel free to look up videos - resourcefulness is a trait to be proud of!"
+				"This chapter will introduce you to the basics of Create and what new blocks are available to you. Due to the scope of Create, this questbook can not cover the full extent of what's to know about Create. Thankfully, hover over any Create block - whether in your inventory or in the REI screen - and hold W for a detailed explanation of how its mechanics function. If this still isn't enough, feel free to look up videos - resourcefulness is a trait to be proud of!"
 				""
-				"Each successive chapters will introduce more complicated recipes and materials, challenging you to create bigger and more intricate manufacturing setups. The reward will be full access to the cosmos above."
+				"Each successive chapter will introduce more complicated recipes and materials, challenging you to create bigger and more intricate manufacturing setups. The reward will be access to the cosmos above."
 				""
 				""
 			]
@@ -1068,6 +1271,62 @@
 				type: "xp"
 				xp: 100
 			}]
+		}
+		{
+			x: -7.5d
+			y: 3.0d
+			subtitle: "Pretty important"
+			dependencies: ["1579C73B735F06F8"]
+			id: "4E17A29F84247877"
+			tasks: [{
+				id: "0FB3C74D1CF20AF1"
+				type: "item"
+				item: "create:controls"
+			}]
+		}
+		{
+			x: -8.5d
+			y: 4.0d
+			subtitle: "All aboard!!!"
+			description: ["Train stations are necessary for building trains themselves."]
+			dependencies: ["1579C73B735F06F8"]
+			id: "31B9F34B69172C02"
+			tasks: [{
+				id: "6869CF716EC9137A"
+				type: "item"
+				item: "create:track_station"
+			}]
+		}
+		{
+			title: "Misc. Train Utilities"
+			x: -9.5d
+			y: 0.5d
+			subtitle: "MORE TRAINS"
+			description: [
+				"Here are some extra, advanced stuff if you want to complicate things even more."
+				""
+				"What they do and how they work is outside the scope of this guide, but feel free to take advantage of the ponder mechanic!"
+			]
+			dependencies: ["36129D7A46CC6F6D"]
+			optional: true
+			id: "4525F3F3177D72B8"
+			tasks: [
+				{
+					id: "4DDF48CBA9ECE6E1"
+					type: "item"
+					item: "create:track_signal"
+				}
+				{
+					id: "504180FCBBDE01F7"
+					type: "item"
+					item: "create:schedule"
+				}
+				{
+					id: "5565F447E4F83BAC"
+					type: "item"
+					item: "create:track_observer"
+				}
+			]
 		}
 	]
 }

@@ -191,7 +191,7 @@
 					id: "276B32077595C4F2"
 					type: "item"
 					item: "minecraft:torch"
-					count: 5
+					count: 16
 				}
 				{
 					id: "0D49D0A6E2FEB974"
@@ -212,6 +212,12 @@
 					id: "540BF27B86E16E58"
 					type: "item"
 					item: "tconstruct:encyclopedia"
+				}
+				{
+					id: "1D4C6C09C4204360"
+					type: "item"
+					item: "tconstruct:pattern"
+					count: 16
 				}
 			]
 		}
@@ -242,7 +248,7 @@
 			shape: "rsquare"
 			subtitle: "Where did the bricks come from..."
 			description: ["With access to smelting, the basic copper tools can fill in for where iron would be in your usual progression."]
-			dependencies: ["6698096C19C55333"]
+			dependencies: ["0FC0B4E8EC58F791"]
 			size: 1.25d
 			id: "601A619C6E96920A"
 			tasks: [{
@@ -473,6 +479,25 @@
 					item: "minecraft:crafting_table"
 				}
 			]
+			rewards: [
+				{
+					id: "10ED69DCCDA4E6C2"
+					type: "item"
+					item: "minecraft:white_bed"
+				}
+				{
+					id: "033BA9F7707381D5"
+					type: "item"
+					item: "minecraft:torch"
+					count: 16
+				}
+				{
+					id: "097517C279C0B8C0"
+					type: "item"
+					item: "minecraft:wheat_seeds"
+					count: 16
+				}
+			]
 		}
 		{
 			x: -6.5d
@@ -501,8 +526,8 @@
 		}
 		{
 			title: "Get Those Resources!"
-			x: -3.0d
-			y: 10.0d
+			x: -2.5d
+			y: 9.0d
 			subtitle: "We have iron at home:"
 			description: ["Iron and tin; they're essential, but a stone pickaxe with tinker's is required.  Don't use a stone pickadze though! They are effectively a wood tier tool!"]
 			dependencies: ["0FC0B4E8EC58F791"]
@@ -1273,7 +1298,10 @@
 				""
 				"Feel free to refer back to this tab for basic info on some of the simpler content. Setting up a decent food source will sure help you, as it increases max HP!"
 			]
-			dependencies: ["601A619C6E96920A"]
+			dependencies: [
+				"601A619C6E96920A"
+				"6698096C19C55333"
+			]
 			size: 2.0d
 			id: "1337920DA45E72AD"
 			tasks: [
