@@ -616,7 +616,7 @@
 		{
 			x: -4.5d
 			y: 6.5d
-			subtitle: "Millstones are slightly more useful now."
+			subtitle: "Millstones are more useful now."
 			description: ["Produce quartz, obsidian dust, and gunpowder early in the game."]
 			dependencies: ["604CF717881C323A"]
 			id: "1DEF161DE26F3587"

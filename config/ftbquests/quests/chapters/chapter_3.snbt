@@ -9,8 +9,8 @@
 	default_hide_dependency_lines: false
 	images: [
 		{
-			x: 11.0d
-			y: -0.5d
+			x: 11.5d
+			y: -2.5d
 			width: 1.0d
 			height: 1.0d
 			rotation: 0.0d
@@ -21,8 +21,8 @@
 			corner: false
 		}
 		{
-			x: 7.5d
-			y: -4.0d
+			x: 4.0d
+			y: -2.5d
 			width: 3.0d
 			height: 3.0d
 			rotation: 0.0d
@@ -35,7 +35,7 @@
 	]
 	quests: [
 		{
-			x: 4.0d
+			x: 0.0d
 			y: -1.0d
 			subtitle: "Tech Reborn tanks also exist later"
 			description: ["You won't be able to use tinker's fluid tanks until owning a smeltery, however, create tanks just so happen to serve this function just fine. They will require a pipe to input fluid, as buckets cannot be directly used on them."]
@@ -49,17 +49,26 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: 0.0d
+			x: -2.0d
+			y: 0.5d
+			shape: "rsquare"
 			subtitle: "The... fluid age?"
 			description: ["Time to learn how molten fluids work! Any raw material placed in a melter will be multiplied by ~1.33x, rewarding you for storing metals in fluid form. For this tier you can still alloy metals without their fluid forms, but I recommend you get used to it as it will be needed later."]
 			dependencies: ["751CC4EF84A919C7"]
+			size: 1.5d
 			id: "0A34148EBAF329B3"
-			tasks: [{
-				id: "3C8959799657F5E3"
-				type: "item"
-				item: "tconstruct:seared_melter"
-			}]
+			tasks: [
+				{
+					id: "3C8959799657F5E3"
+					type: "item"
+					item: "tconstruct:seared_melter"
+				}
+				{
+					id: "56C67F71E1B37C35"
+					type: "item"
+					item: "tconstruct:seared_heater"
+				}
+			]
 			rewards: [{
 				id: "6CAB1338A11F9FAE"
 				type: "item"
@@ -73,20 +82,7 @@
 			}]
 		}
 		{
-			title: "Molten core"
-			x: 0.5d
-			y: -1.0d
-			description: ["Heat your seared melter with this, every single metal requires less than 800 degrees now, so this heat will be fine for the rest of your game."]
-			dependencies: ["0A34148EBAF329B3"]
-			id: "38B99A94B043A6BD"
-			tasks: [{
-				id: "7BD848C38CD89278"
-				type: "item"
-				item: "tconstruct:seared_heater"
-			}]
-		}
-		{
-			x: 0.5d
+			x: -3.0d
 			y: 1.5d
 			subtitle: "Don't eat this either"
 			description: ["Bulk blast, or furnace smelt some grout to grab these bricks. A depot might be a good idea if bulk blasting as it has been heavily slowed in Astral! Perhaps this will be alleviated later on with some comically efficient machinery..."]
@@ -99,14 +95,18 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 0.0d
+			x: 0.0d
+			y: 0.5d
+			shape: "rsquare"
 			subtitle: "Fluid movement"
 			description: [
 				"Establishing a melter setup with pumps outputting to various tanks using smart pipes is possibly the greatest investment you can make right now.                                     "
 				"WARNING! Mixing fluids within the same pipe will cause it to break and spill, be sure to have a way to account for this if making a large fluid smelting network (see #showcase on discord for examples)"
 			]
-			dependencies: ["0A34148EBAF329B3"]
+			dependencies: [
+				"62DAEDF65FB2226B"
+				"0A34148EBAF329B3"
+			]
 			id: "70799237323247B7"
 			tasks: [
 				{
@@ -129,12 +129,13 @@
 		}
 		{
 			title: "I am grout."
-			x: 0.5d
-			y: 2.5d
+			x: -4.0d
+			y: 3.0d
 			shape: "pentagon"
 			subtitle: "Do not eat"
 			hide_dependency_lines: true
 			dependencies: ["7354F2BFB2591ECF"]
+			size: 2.0d
 			id: "1F79F4D01B219D7E"
 			tasks: [{
 				id: "6A0810245928DCDF"
@@ -158,35 +159,41 @@
 		}
 		{
 			x: 3.0d
-			y: 2.0d
+			y: 0.5d
 			subtitle: "Compatible with tinkers fluids AND casting basin + table recipes instead of a faucet"
 			description: ["This spout can be used in automation of recipes in casting tables and basins, as funnels, etc. also work on them. Neat."]
 			dependencies: ["557684C7D7B955B8"]
 			id: "17041A495A41EEFD"
 			tasks: [{
-				id: "1EB6C9FA4DC032A7"
-				type: "advancement"
-				advancement: "create:spout"
-				criterion: ""
+				id: "2D468975DA98C2B7"
+				type: "item"
+				item: "create:spout"
 			}]
 		}
 		{
-			x: 4.0d
-			y: 0.0d
+			x: 2.0d
+			y: -0.5d
 			subtitle: "Compatible with tinkers fluids"
 			description: ["Freshly mixed alloy picked up by a bucket? Drain it and pump it into a fluid tank."]
-			dependencies: ["70799237323247B7"]
+			dependencies: ["557684C7D7B955B8"]
 			id: "2D86CC26B4A2E07A"
-			tasks: [{
-				id: "2F392E9D8E53C4A7"
-				type: "advancement"
-				advancement: "create:drain"
-				criterion: ""
-			}]
+			tasks: [
+				{
+					id: "2F392E9D8E53C4A7"
+					type: "advancement"
+					advancement: "create:drain"
+					criterion: ""
+				}
+				{
+					id: "00BB2093C329A339"
+					type: "item"
+					item: "create:item_drain"
+				}
+			]
 		}
 		{
-			x: -1.5d
-			y: 0.0d
+			x: -4.0d
+			y: 0.5d
 			subtitle: "A note on tinkers integration"
 			description: [
 				"Tinkers faucets can operate from any create liquid holding block, such as fluid tanks and filled basins!"
@@ -202,8 +209,8 @@
 		}
 		{
 			title: "Get casting"
-			x: -0.5d
-			y: -1.0d
+			x: -4.0d
+			y: -0.5d
 			description: ["Casting tables/basins will allow you to convert that fluid storage into different forms. Buckets, blocks, ingots, whatever you currently require!"]
 			dependencies: ["0A34148EBAF329B3"]
 			id: "1519A1EA2CFA6FB1"
@@ -239,8 +246,8 @@
 		}
 		{
 			title: "Find yourself some structures."
-			x: 2.0d
-			y: 1.0d
+			x: 3.5d
+			y: 1.5d
 			subtitle: "Will point the direction of the majority of structures."
 			description: ["Strongholds and some other structures with ingame ways to search are not valid targets."]
 			dependencies: ["17041A495A41EEFD"]
@@ -257,11 +264,13 @@
 		}
 		{
 			title: "LETSGOOO"
-			x: 9.5d
-			y: 2.0d
+			x: 10.0d
+			y: 0.5d
+			shape: "hexagon"
 			subtitle: "Create is going ASTRAL"
 			description: ["Roll credits"]
 			dependencies: ["4D7BFA8973D61425"]
+			size: 1.25d
 			id: "624026189BBACBB0"
 			tasks: [{
 				id: "7AB8005F32B46DEF"
@@ -271,14 +280,16 @@
 			}]
 		}
 		{
-			x: 9.0d
-			y: -1.0d
+			x: 10.0d
+			y: -2.5d
+			shape: "hexagon"
 			subtitle: "What is the nether?"
 			description: [
 				"The nether no longer exists, never heard of it, nuh-uh."
 				"Make a regular portal using this pretty little block to cross the boundary to.... the moon...."
 			]
 			dependencies: ["00F3EA4A8FB5B11B"]
+			size: 1.25d
 			id: "0A71AC65808AFBE5"
 			tasks: [{
 				id: "2DBDDF4C51DE3879"
@@ -289,10 +300,12 @@
 		}
 		{
 			title: "An Astral Gemstone..."
-			x: 9.0d
-			y: 0.5d
+			x: 9.5d
+			y: -1.0d
+			shape: "hexagon"
 			subtitle: "Light the portal."
 			dependencies: ["00F3EA4A8FB5B11B"]
+			size: 1.25d
 			id: "33F13EB2C45C36B3"
 			tasks: [{
 				id: "0C1658CB1EAE88C0"
@@ -302,7 +315,7 @@
 		}
 		{
 			x: 8.5d
-			y: 2.0d
+			y: 0.5d
 			subtitle: "To load oxygen into your suit however, some more specialised tools will be needed..."
 			dependencies: ["343B8B2BF76B1D3B"]
 			id: "4D7BFA8973D61425"
@@ -314,7 +327,7 @@
 		}
 		{
 			x: 7.5d
-			y: 2.0d
+			y: 0.5d
 			subtitle: "Custom Astral Multiblock!"
 			description: ["The electrolyser (not to be confused with the Tech Reborn one) can have water pumped into it and using only the power of redstone, extract oxygen at a very slow pace. This will assist in preparing youself to go to the moon"]
 			dependencies: [
@@ -336,7 +349,7 @@
 		}
 		{
 			x: 5.0d
-			y: 2.0d
+			y: 0.5d
 			subtitle: "Electron Tube PTSD"
 			description: ["Yes these used to cost 4x the amount, I know"]
 			dependencies: ["0F4C452C9C9AB1B8"]
@@ -349,7 +362,7 @@
 		}
 		{
 			x: 6.5d
-			y: 2.0d
+			y: 0.5d
 			subtitle: "This will be terrible for the industrial revolution"
 			dependencies: ["32B9EAE28E1C5D7A"]
 			id: "267CD8D04921402E"
@@ -361,7 +374,7 @@
 		}
 		{
 			x: 4.0d
-			y: 2.0d
+			y: 0.5d
 			subtitle: "What a nice alloy, I hope I dont need to make loads of it"
 			description: ["Oh dear"]
 			dependencies: ["17041A495A41EEFD"]
@@ -375,8 +388,8 @@
 		{
 			title: "Create: Astral"
 			icon: "ad_astra:moon_globe"
-			x: 10.5d
-			y: 0.5d
+			x: 12.0d
+			y: -1.0d
 			shape: "gear"
 			subtitle: "Can we get much higher."
 			dependencies: [
@@ -384,7 +397,7 @@
 				"624026189BBACBB0"
 				"0A71AC65808AFBE5"
 			]
-			size: 1.5d
+			size: 3.0d
 			id: "15B9947ABCCB882F"
 			tasks: [{
 				id: "26E0A4319968F290"
@@ -395,7 +408,7 @@
 		{
 			title: "Shimmering Heights"
 			x: 6.5d
-			y: 0.5d
+			y: -1.0d
 			subtitle: "The Iconic Astral Branded Fluid"
 			description: [
 				"Shimmer can be produced using the recipes provided, and fully automated with glow ink sacs and amethyst."
@@ -410,11 +423,14 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 1.0d
+			x: 2.0d
+			y: 0.5d
 			subtitle: "Ohoho, tiered casings"
 			description: ["When making the next tier of casing, you'll be needing a lot of the previous tiered stuff too, and as such, over produce this and save yourself the future responsibility."]
-			dependencies: ["70799237323247B7"]
+			dependencies: [
+				"70799237323247B7"
+				"41926BDF2F7890F6"
+			]
 			id: "557684C7D7B955B8"
 			tasks: [{
 				id: "6CC8E342EABC3432"
@@ -424,8 +440,8 @@
 		}
 		{
 			title: "Automate Copper!"
-			x: -1.5d
-			y: -2.0d
+			x: -5.5d
+			y: -0.5d
 			shape: "diamond"
 			subtitle: "Gainz"
 			dependencies: ["1519A1EA2CFA6FB1"]
@@ -457,8 +473,8 @@
 		}
 		{
 			title: "Automate Zinc!"
-			x: -1.5d
-			y: -1.0d
+			x: -5.5d
+			y: 0.5d
 			shape: "diamond"
 			subtitle: "Asurine is a renewable source of copper if you've been amassing a stockpile of clay"
 			dependencies: ["1519A1EA2CFA6FB1"]
@@ -483,7 +499,7 @@
 		}
 		{
 			title: "Efficient Bronze + Alloy production."
-			x: 3.5d
+			x: -0.5d
 			y: -2.0d
 			shape: "rsquare"
 			subtitle: "Andesite alloy can be produced at 1/3rd the cost if you opt to mix it into a liquid form and cast it into a solid!"
@@ -497,12 +513,12 @@
 		}
 		{
 			title: "Make some real tools now"
-			x: 1.5d
-			y: -1.0d
+			x: -2.0d
+			y: -1.5d
 			subtitle: "The good 3x3 stuff oh yeaaa"
 			dependencies: [
 				"3EA569DE4AC60CC2"
-				"38B99A94B043A6BD"
+				"0A34148EBAF329B3"
 			]
 			id: "5042E544D3181FAC"
 			tasks: [{
@@ -518,10 +534,13 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: -2.0d
+			x: -3.0d
+			y: -2.5d
 			subtitle: "Basic tools, bronze is pretty good all around"
-			dependencies: ["5042E544D3181FAC"]
+			dependencies: [
+				"5042E544D3181FAC"
+				"7856BCA1DB363174"
+			]
 			min_required_tasks: 1
 			id: "68FDC2C761EF6BC0"
 			tasks: [
@@ -563,16 +582,16 @@
 		{
 			title: "Get lucky"
 			icon: "minecraft:blue_dye"
-			x: 1.5d
-			y: -2.0d
+			x: -2.0d
+			y: -2.5d
 			dependencies: ["5042E544D3181FAC"]
+			optional: true
 			id: "1717E5063CC231DD"
 			tasks: [
 				{
 					id: "0BF6EB8118C0A5AD"
 					type: "item"
 					item: "minecraft:lapis_block"
-					count: 4L
 				}
 				{
 					id: "45ACDF07F7369A1E"
@@ -584,9 +603,11 @@
 		{
 			title: "Get luckier"
 			icon: "minecraft:diamond"
-			x: 1.5d
-			y: -3.0d
+			x: -2.0d
+			y: -3.5d
 			dependencies: ["1717E5063CC231DD"]
+			optional: true
+			secret: true
 			id: "1C10D7A2828DE436"
 			tasks: [
 				{
@@ -604,17 +625,19 @@
 		}
 		{
 			title: "Get real."
-			icon: "minecraft:diamond_block"
-			x: 1.5d
-			y: -4.0d
+			icon: "minecraft:deepslate_diamond_ore"
+			x: -2.0d
+			y: -4.5d
 			dependencies: ["1C10D7A2828DE436"]
+			optional: true
+			secret: true
 			id: "25085C910155E06D"
 			tasks: [
 				{
 					id: "5C84001C06B8BE8F"
 					type: "item"
 					item: "minecraft:lapis_block"
-					count: 4L
+					count: 16L
 				}
 				{
 					id: "0D2ACD60E744E17F"
@@ -627,7 +650,7 @@
 		{
 			title: "Shimmer Lakes..."
 			x: 6.5d
-			y: -0.5d
+			y: -2.0d
 			subtitle: "Spread across the overworld and moon, you might uncover a buried meteor filled with shimmer..."
 			description: ["Pumping this and shipping it off to your base might be wise, shimmer is a valuable resource to control."]
 			dependencies: ["00F3EA4A8FB5B11B"]
@@ -648,7 +671,7 @@
 		{
 			title: "HOW DO I MAKE THIS?!"
 			x: 7.5d
-			y: 3.5d
+			y: 2.0d
 			subtitle: "Multiblock Components"
 			description: [
 				"Bottom Layer, Front center electrolyser, 3x3 remaining copper casing"
@@ -657,6 +680,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["32B9EAE28E1C5D7A"]
+			hide: false
 			id: "3C26E1DEA0265C03"
 			tasks: [
 				{
@@ -680,8 +704,8 @@
 			]
 		}
 		{
-			x: 4.0d
-			y: 1.0d
+			x: 4.5d
+			y: 1.5d
 			subtitle: "Hey look it says gold chest but its pink!"
 			description: ["Yipee!!!"]
 			dependencies: ["0F4C452C9C9AB1B8"]
@@ -693,7 +717,7 @@
 			}]
 		}
 		{
-			x: 4.5d
+			x: 0.5d
 			y: -2.0d
 			shape: "rsquare"
 			subtitle: "Bronze can be produced at half the cost with the mixing recipe."
@@ -706,7 +730,7 @@
 			}]
 		}
 		{
-			x: 4.5d
+			x: 0.5d
 			y: -3.0d
 			dependencies: ["0E939F8167F47710"]
 			id: "15069E711021763F"
@@ -720,6 +744,565 @@
 					id: "62FF8DAC8FB23C0A"
 					type: "item"
 					item: "tconstruct:coin_cast"
+				}
+			]
+		}
+		{
+			title: "Spy's Sappin my Sentry!"
+			x: -2.0d
+			y: 2.5d
+			subtitle: "Rubberino"
+			dependencies: ["1F79F4D01B219D7E"]
+			id: "1FAC54D118F09831"
+			tasks: [
+				{
+					id: "4C432F24E70A5F96"
+					type: "item"
+					item: {
+						id: "techreborn:treetap"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1EA6B47A0A9AABFF"
+					type: "item"
+					item: "techreborn:sap"
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			shape: "rsquare"
+			dependencies: ["1FAC54D118F09831"]
+			size: 1.5d
+			id: "62DAEDF65FB2226B"
+			tasks: [{
+				id: "744B5A4CE8D4DBD4"
+				type: "item"
+				item: "techreborn:rubber"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 4.5d
+			dependencies: ["62DAEDF65FB2226B"]
+			id: "710C81D7DE6C7FCB"
+			tasks: [{
+				id: "69CD74B242D4D7D4"
+				type: "item"
+				item: "create:belt_connector"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 4.5d
+			dependencies: ["62DAEDF65FB2226B"]
+			id: "13B2095F8EE6B4D3"
+			tasks: [{
+				id: "716518D91561DEFD"
+				type: "item"
+				item: "reinfchest:iron_chest"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.5d
+			dependencies: ["62DAEDF65FB2226B"]
+			id: "41926BDF2F7890F6"
+			tasks: [
+				{
+					id: "116A1C6B3FAAAE36"
+					type: "item"
+					item: "create:brass_hand"
+				}
+				{
+					id: "605FB50C0F3B8331"
+					type: "item"
+					item: "create:deployer"
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 4.5d
+			dependencies: ["62DAEDF65FB2226B"]
+			id: "18159A0691993E5B"
+			tasks: [{
+				id: "781EE507F4A75175"
+				type: "item"
+				item: "create:andesite_funnel"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 4.5d
+			shape: "gear"
+			dependencies: ["62DAEDF65FB2226B"]
+			size: 1.25d
+			id: "22F037A9108D116A"
+			tasks: [{
+				id: "52B4D82C0E3E59E2"
+				type: "item"
+				item: "create:goggles"
+			}]
+		}
+		{
+			title: "The World Revolving"
+			x: 3.5d
+			y: 6.0d
+			subtitle: "Automate farming"
+			dependencies: [
+				"38814494AB07C2D8"
+				"0C3A39AC4C3D10A2"
+			]
+			id: "6C28C7FB221EA517"
+			tasks: [
+				{
+					id: "52F6062C88CED3FD"
+					type: "item"
+					item: "create:mechanical_bearing"
+				}
+				{
+					id: "2F151B54216622AA"
+					type: "item"
+					item: "create:linear_chassis"
+					count: 8L
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 5.5d
+			dependencies: ["6C28C7FB221EA517"]
+			id: "1A683B56285B7DFC"
+			tasks: [{
+				id: "7F67736E31940425"
+				type: "item"
+				item: "create:mechanical_harvester"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 5.5d
+			shape: "diamond"
+			dependencies: ["1A683B56285B7DFC"]
+			id: "600FB959B71E4B18"
+			tasks: [{
+				id: "72CCE7A23842964A"
+				type: "item"
+				item: "minecraft:dried_kelp"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 6.5d
+			dependencies: ["6C28C7FB221EA517"]
+			id: "34F33F38F8BF2B22"
+			tasks: [{
+				id: "49E6527651CCE3DC"
+				type: "item"
+				item: "create:mechanical_saw"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 6.5d
+			shape: "diamond"
+			dependencies: ["34F33F38F8BF2B22"]
+			id: "726EED16A080CFC4"
+			tasks: [{
+				id: "351C7D49A9C4EFD9"
+				type: "item"
+				title: "Any #minecraft:logs_that_burn"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs_that_burn"
+					}
+				}
+			}]
+		}
+		{
+			title: "Automate Gold+Tin"
+			x: -1.5d
+			y: 6.5d
+			shape: "diamond"
+			dependencies: ["6E9F3AA80AB398EB"]
+			id: "60906B723CCE6D10"
+			tasks: [{
+				id: "675B16F2461B1576"
+				type: "item"
+				item: "minecraft:red_sand"
+			}]
+		}
+		{
+			title: "Automate Iron + Flint"
+			x: -0.5d
+			y: 6.0d
+			shape: "diamond"
+			dependencies: ["38814494AB07C2D8"]
+			id: "6E9F3AA80AB398EB"
+			tasks: [{
+				id: "3F5CCBB3ED3D2522"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
+		}
+		{
+			title: "Automate Clay"
+			x: -1.0d
+			y: 7.0d
+			shape: "diamond"
+			dependencies: ["6E9F3AA80AB398EB"]
+			id: "3B80A4FBF7D2AB7B"
+			tasks: [{
+				id: "50EC05071089BC85"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+		}
+		{
+			title: "Funnel's Awkward Sibbling"
+			x: 0.0d
+			y: 4.5d
+			dependencies: ["62DAEDF65FB2226B"]
+			id: "42817242953BD9CA"
+			tasks: [{
+				id: "28DBB8ADEE366629"
+				type: "item"
+				item: "create:andesite_tunnel"
+			}]
+		}
+		{
+			title: "The Basis of Automation"
+			icon: "create:mechanical_arm"
+			x: 1.5d
+			y: 6.0d
+			shape: "gear"
+			dependencies: [
+				"18159A0691993E5B"
+				"710C81D7DE6C7FCB"
+			]
+			size: 2.0d
+			id: "38814494AB07C2D8"
+			tasks: [{
+				id: "645496942E14E974"
+				type: "checkmark"
+				title: "The Basis of Automation"
+			}]
+		}
+		{
+			icon: "create:track"
+			x: 3.0d
+			y: 3.0d
+			shape: "diamond"
+			dependencies: ["41926BDF2F7890F6"]
+			id: "1BC8A4F925705AAD"
+			tasks: [{
+				id: "6F02CB1D80713CD7"
+				type: "advancement"
+				advancement: "create:track_crafting_factory"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Diamond Tipped Tools"
+			icon: {
+				id: "minecraft:diamond_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -3.0d
+			y: -1.5d
+			subtitle: "The Drill is Dumb!!"
+			dependencies: ["5042E544D3181FAC"]
+			id: "6B81D3B3A282E7BC"
+			tasks: [{
+				id: "748571509ABA1CC5"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Automate Mining Itself"
+			x: 1.5d
+			y: 9.0d
+			subtitle: "How to build a tunnelbore"
+			dependencies: ["4642949B43A4F838"]
+			id: "1C084F85AD4E24BE"
+			tasks: [
+				{
+					id: "1571406F47294F05"
+					type: "item"
+					item: "create:mechanical_drill"
+					count: 10L
+				}
+				{
+					id: "5D4430517959C1F2"
+					type: "item"
+					item: "create:mechanical_plough"
+				}
+				{
+					id: "0A6C0CDF02203960"
+					type: "item"
+					item: "minecraft:rail"
+					count: 10L
+				}
+				{
+					id: "63817FFBBE80F012"
+					type: "item"
+					item: "create:deployer"
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 8.0d
+			subtitle: "An alternative to mechanical bearings"
+			dependencies: [
+				"38814494AB07C2D8"
+				"0C3A39AC4C3D10A2"
+			]
+			id: "4642949B43A4F838"
+			tasks: [{
+				id: "27DED2EFB8738FD3"
+				type: "item"
+				item: "create:cart_assembler"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 7.0d
+			dependencies: ["38814494AB07C2D8"]
+			size: 0.75d
+			id: "0C3A39AC4C3D10A2"
+			tasks: [{
+				id: "084292B4BAFB17C5"
+				type: "item"
+				item: {
+					id: "create:super_glue"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Automate Fuel"
+			x: 6.5d
+			y: 6.0d
+			shape: "diamond"
+			min_required_dependencies: 1
+			dependencies: [
+				"600FB959B71E4B18"
+				"726EED16A080CFC4"
+			]
+			dependency_requirement: "one_completed"
+			size: 1.5d
+			id: "3A20912CB1E34B1A"
+			tasks: [
+				{
+					id: "15435C852622B0D4"
+					type: "item"
+					item: "minecraft:dried_kelp_block"
+				}
+				{
+					id: "54E59B27898C5A60"
+					type: "item"
+					item: "minecraft:charcoal"
+				}
+			]
+		}
+		{
+			title: "Reusable Casts"
+			x: -4.5d
+			y: -1.5d
+			dependencies: ["1519A1EA2CFA6FB1"]
+			id: "7856BCA1DB363174"
+			tasks: [{
+				id: "61061313B1FF9DC3"
+				type: "item"
+				title: "Any #tconstruct:casts/gold"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tconstruct:casts/gold"
+					}
+				}
+			}]
+		}
+		{
+			title: "Collect Them All"
+			x: -5.0d
+			y: -2.5d
+			dependencies: ["7856BCA1DB363174"]
+			id: "346D47B32354428D"
+			tasks: [
+				{
+					id: "6D740F628F501950"
+					type: "item"
+					item: "tconstruct:ingot_cast"
+				}
+				{
+					id: "3B7ACD8D61366E17"
+					type: "item"
+					item: "tconstruct:nugget_cast"
+				}
+				{
+					id: "1DD5FD54F75F49DF"
+					type: "item"
+					item: "tconstruct:gem_cast"
+				}
+				{
+					id: "22FCD426F6CF0CCC"
+					type: "item"
+					item: "tconstruct:rod_cast"
+				}
+				{
+					id: "47B9DF4AEA196ACD"
+					type: "item"
+					item: "tconstruct:repair_kit_cast"
+				}
+				{
+					id: "7D74EC7D91008FF6"
+					type: "item"
+					item: "tconstruct:plate_cast"
+				}
+				{
+					id: "24DF774F47BF9B29"
+					type: "item"
+					item: "tconstruct:gear_cast"
+				}
+				{
+					id: "4563C09EB62E983A"
+					type: "item"
+					item: "tconstruct:coin_cast"
+				}
+				{
+					id: "5C086CC09D13AAC0"
+					type: "item"
+					item: "tconstruct:wire_cast"
+				}
+				{
+					id: "6BC3D4A7D3295523"
+					type: "item"
+					item: "tconstruct:pick_head_cast"
+				}
+				{
+					id: "4B68A4BCAD6B56EE"
+					type: "item"
+					item: "tconstruct:small_axe_head_cast"
+				}
+				{
+					id: "4405AE360F8A468F"
+					type: "item"
+					item: "tconstruct:small_blade_cast"
+				}
+				{
+					id: "1B4F36B259DE109C"
+					type: "item"
+					item: "tconstruct:hammer_head_cast"
+				}
+				{
+					id: "2EA04C4C429B67F9"
+					type: "item"
+					item: "tconstruct:broad_blade_cast"
+				}
+				{
+					id: "02F15F721DDE410B"
+					type: "item"
+					item: "tconstruct:broad_axe_head_cast"
+				}
+				{
+					id: "42093463ADB255E1"
+					type: "item"
+					item: "tconstruct:tool_binding_cast"
+				}
+				{
+					id: "754A415787F18A60"
+					type: "item"
+					item: "tconstruct:round_plate_cast"
+				}
+				{
+					id: "03CD9AD088E5A7EC"
+					type: "item"
+					item: "tconstruct:large_plate_cast"
+				}
+				{
+					id: "65CED805D00C9ACA"
+					type: "item"
+					item: "tconstruct:tool_handle_cast"
+				}
+				{
+					id: "37A421D3C2F38122"
+					type: "item"
+					item: "tconstruct:tough_handle_cast"
+				}
+			]
+			rewards: [
+				{
+					id: "526DC221F6058122"
+					type: "item"
+					item: "minecraft:gold_block"
+					count: 8
+				}
+				{
+					id: "3FB772F1AD3CDC58"
+					type: "item"
+					item: "minecraft:diamond_block"
+				}
+			]
+		}
+		{
+			title: "Get Fake"
+			icon: "minecraft:diamond_block"
+			x: -2.0d
+			y: -5.5d
+			dependencies: ["25085C910155E06D"]
+			optional: true
+			secret: true
+			id: "3F331B0DAE1062E8"
+			tasks: [
+				{
+					id: "6357813BD979AC3C"
+					type: "item"
+					item: "minecraft:lapis_block"
+					count: 64L
+				}
+				{
+					id: "37108F9E11F62C54"
+					type: "item"
+					item: "minecraft:diamond_block"
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "Harness the Power of Wind"
+			x: -5.0d
+			y: 2.0d
+			subtitle: "An Alternative to Watermills"
+			dependencies: ["1F79F4D01B219D7E"]
+			id: "7DA20A39EC1DE7EA"
+			tasks: [
+				{
+					id: "04A9735CAD1B5944"
+					type: "item"
+					item: "create:windmill_bearing"
+				}
+				{
+					id: "3A80619C9D9E33DD"
+					type: "item"
+					item: "create:white_sail"
+					count: 8L
 				}
 			]
 		}
