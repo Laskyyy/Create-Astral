@@ -1066,7 +1066,7 @@ event.recipes.createMechanicalCrafting('scout:upgraded_pouch', [
   'BBCBB'
 ], {
   A: 'ad_astra:oxygen_tank',
-  B: 'ad_astra:iron_plate',
+  B: '#c:iron_plates',
   C: 'ad_astra:engine_fan',
   D: 'create:smart_fluid_pipe',
   E: 'create:fluid_tank'
