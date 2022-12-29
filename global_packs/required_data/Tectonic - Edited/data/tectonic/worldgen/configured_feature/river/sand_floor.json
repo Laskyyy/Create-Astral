@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:disk",
+  "config": {
+    "state": {
+      "Name": "minecraft:sand"
+    },
+    "radius": {
+      "type": "minecraft:uniform",
+      "value": {
+        "min_inclusive": 4,
+        "max_inclusive": 6
+      }
+    },
+    "half_height": 1,
+    "targets": [
+      {
+        "Name": "minecraft:stone"
+      },
+      {
+        "Name": "minecraft:dirt"
+      },
+      {
+        "Name": "minecraft:granite"
+      },
+      {
+        "Name": "minecraft:diorite"
+      },
+      {
+        "Name": "minecraft:andesite"
+      },
+      {
+        "Name": "minecraft:gravel"
+      },
+      {
+        "Name": "minecraft:coal_ore"
+      },
+      {
+        "Name": "minecraft:copper_ore"
+      },
+      {
+        "Name": "minecraft:iron_ore"
+      },
+      {
+        "Name": "minecraft:lapis_ore"
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:disk",
+  "config": {
+    "state": {
+      "Name": "minecraft:sand"
+    },
+    "radius": 4,
+    "half_height": 3,
+    "targets": [
+      {
+        "Name": "minecraft:grass_block",
+        "Properties": {
+          "snowy": "false"
+        }
+      },
+      {
+        "Name": "minecraft:coarse_dirt"
+      },
+      {
+        "Name": "minecraft:dirt"
+      },
+      {
+        "Name": "minecraft:gravel"
+      }
+    ]
+  }
+}
