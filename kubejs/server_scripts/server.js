@@ -107,6 +107,97 @@ function lizardChanges(event) {
     event.recipes.createPressing(transitional_bio_pellet, transitional_bio_pellet)
   ]).transitionalItem(transitional_bio_pellet).loops(1);
 
+
+  // Pre-bulk-washing obisidian (train de-gating)
+	event.shapeless('minecraft:obsidian', [
+    "minecraft:magma_block",
+    "minecraft:water_bucket"
+	]).replaceIngredient('minecraft:water_bucket', 'minecraft:bucket')
+    .id('createastral:washing_obsidian_manual_only');
+
+
+  // Pre-spout sturdy sheet
+  var transitional_sturdy_sheet = 'create:unprocessed_obsidian_sheet';
+  event.recipes.createSequencedAssembly([
+    Item.of('create:sturdy_sheet').withChance(12),
+    Item.of('minecraft:gravel').withChance(8)
+  ], 'create:powdered_obsidian', [
+    event.recipes.createPressing(transitional_sturdy_sheet, transitional_sturdy_sheet),
+    event.recipes.createPressing(transitional_sturdy_sheet, transitional_sturdy_sheet)
+  ]).transitionalItem(transitional_sturdy_sheet).loops(5);
+
+
+  // Pre-deployer track
+  var track_shape = ['NSN', 'NSN', 'NSN'];  
+  event.shaped('create:track', track_shape, {
+    N: 'techreborn:tin_nugget',
+    S: '#create:sleepers',    
+  });
+  event.shaped('create:track', track_shape, {
+    N: 'create:zinc_nugget',
+    S: '#create:sleepers',    
+  });
+  event.shaped('create:track', track_shape, {
+    N: 'minecraft:iron_nugget',
+    S: '#create:sleepers',    
+  });
+
+  // Pre-brass Smart Pipe
+  event.shaped('create:smart_fluid_pipe', [
+    'FB',
+    'CO',
+    'VP'
+  ], {
+    B: 'createastral:bronze_sheet',
+    O: 'minecraft:observer',
+    F: 'create:filter',
+    C: 'minecraft:comparator',
+    P: 'create:fluid_pipe',
+    V: 'create:fluid_valve'
+  });
+
+  // Manual dripstone
+	event.shapeless('minecraft:dripstone_block', [
+    "minecraft:calcite",
+    "minecraft:water_bucket"
+	]).replaceIngredient('minecraft:water_bucket', 'minecraft:bucket')
+    .id('createastral:dripstone_block_manual_only');
+
+  // Manual Pointed Dripstone
+  event.stonecutting('2x minecraft:pointed_dripstone', 'minecraft:dripstone_block');
+
+  // More efficient pointed dripstone filling recipe
+  event.recipes.createFilling('4x minecraft:pointed_dripstone', [
+    'minecraft:calcite',
+    {fluid: 'minecraft:water', amount: FULL_BUCKET_AMMOUNT / 2}
+  ]);
+
+
+  // Pre-crushing copper and zinc generation
+  event.recipes.createMilling([
+    Item.of('create:crushed_copper_ore').withChance(.4)
+  ], '#create:stone_types/veridium');
+
+  event.recipes.createMilling([
+    Item.of('create:crushed_zinc_ore').withChance(.15)
+  ], '#create:stone_types/asurine');
+
+  // event.recipes.createCrushing([
+  //   'create:crushed_tin_ore',
+  //   Item.of('minecraft:iron_nugget').withChance(1),
+  // ], 'techreborn:raw_tin')
+
+  // Pre-brass display links (we can get pre-brass display boards after all)
+  event.shaped('create:display_link', [
+    ' R ',
+    'BOB',
+    ' C '
+  ], {
+    B: 'createastral:bronze_sheet',
+    O: 'minecraft:observer',
+    R: 'minecraft:redstone_torch',
+    C: '#c:plates/copper'
+  });
 }
 
 
@@ -700,10 +791,17 @@ event.recipes.createMixing(Fluid.of('tconstruct:molten_bronze', 810), [
   {fluid: 'tconstruct:molten_copper', amount: 405}
 ]).heated()
 
+// 	event.recipes.createMixing(Fluid.of('tconstruct:molten_rose_gold', 8100), [
+//     'minecraft:copper_ingot',
+//     'minecraft:gold_ingot'
+// ]).processingTime(300)
+
+//  Heated ingot version of above recipe
+// TODO: does the fluid amount output add up to an ammount that makes sense?
 	event.recipes.createMixing(Fluid.of('tconstruct:molten_rose_gold', 8100), [
     'minecraft:copper_ingot',
     'minecraft:gold_ingot'
-]).processingTime(300)
+]).processingTime(300).heated()
 
 event.recipes.createMixing(Fluid.of('tconstruct:molten_bronze', 16200), [
   'minecraft:copper_ingot',

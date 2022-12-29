@@ -942,6 +942,8 @@
 			x: -8.0d
 			y: 2.5d
 			subtitle: "Raow"
+			hide_dependency_lines: true
+			dependencies: ["3EA569DE4AC60CC2"]
 			id: "75CE520F392CC1E1"
 			tasks: [{
 				id: "6D255A3F6549F8EC"
@@ -1346,6 +1348,7 @@
 			subtitle: "Automate a seed."
 			description: ["Seed Oil, which our biofuel will be derived from, is made by compressing heated seeds. There are many seeds to choose from, so automate which one makes the most sense to you."]
 			hide_dependency_lines: true
+			dependencies: ["07B10625859F1AF9"]
 			size: 0.75d
 			id: "494F84A10D6934E7"
 			tasks: [
@@ -1381,6 +1384,7 @@
 			description: ["Seed oil will need to mix with plant matter in order to coalesce. It can't be too salty or sugary, but that still leaves a couple of options to automate."]
 			hide_dependency_lines: true
 			min_required_dependencies: 1
+			dependencies: ["07B10625859F1AF9"]
 			size: 0.75d
 			id: "5B11C7CE6EF9FB2E"
 			tasks: [

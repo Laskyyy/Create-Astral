@@ -188,12 +188,6 @@
 			}]
 			rewards: [
 				{
-					id: "276B32077595C4F2"
-					type: "item"
-					item: "minecraft:torch"
-					count: 16
-				}
-				{
 					id: "0D49D0A6E2FEB974"
 					type: "item"
 					item: "tconstruct:puny_smelting"
@@ -496,6 +490,16 @@
 					type: "item"
 					item: "minecraft:wheat_seeds"
 					count: 16
+				}
+				{
+					id: "323745EE2A4A8F67"
+					type: "item"
+					item: "minecraft:oak_sapling"
+				}
+				{
+					id: "74A0DFC4B5517744"
+					type: "item"
+					item: "minecraft:dirt"
 				}
 			]
 		}

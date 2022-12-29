@@ -21,8 +21,8 @@
 			corner: false
 		}
 		{
-			x: 7.0d
-			y: 3.5d
+			x: 19.5d
+			y: 6.0d
 			width: 6.0d
 			height: 6.0d
 			rotation: 0.0d
@@ -160,7 +160,7 @@
 					id: "0FB7CCEC080D88A7"
 					type: "item"
 					item: "create:andesite_casing"
-					count: 8
+					count: 3
 				}
 			]
 		}
@@ -371,7 +371,7 @@
 					id: "190791854AEC801D"
 					type: "item"
 					item: "create:track"
-					count: 96
+					count: 128
 				}
 				{
 					id: "4375AC6679993CC0"
@@ -394,7 +394,7 @@
 					id: "057D2BB607293DB0"
 					type: "item"
 					item: "create:railway_casing"
-					count: 8
+					count: 4
 				}
 			]
 		}
@@ -453,12 +453,6 @@
 				id: "29F229B39989651C"
 				type: "item"
 				item: "create:andesite_casing"
-			}]
-			rewards: [{
-				id: "48A89D444D1AC0F6"
-				type: "item"
-				item: "minecraft:clay"
-				count: 8
 			}]
 		}
 		{
@@ -790,7 +784,7 @@
 				id: "7EEED7520D320247"
 				type: "item"
 				item: "minecraft:obsidian"
-				count: 12
+				count: 6
 			}]
 		}
 		{
@@ -811,7 +805,7 @@
 				id: "4F44B7121D6C4F8D"
 				type: "item"
 				item: "tconstruct:grout"
-				count: 16L
+				count: 32L
 			}]
 			rewards: [
 				{
@@ -823,7 +817,7 @@
 					id: "02C1E6C64FF675CE"
 					type: "item"
 					item: "create:cogwheel"
-					count: 32
+					count: 24
 				}
 				{
 					id: "6E745FEF91101A6C"
@@ -835,25 +829,19 @@
 					id: "559628E110BA3920"
 					type: "item"
 					item: "create:shaft"
-					count: 64
+					count: 32
 				}
 				{
 					id: "6D73F8A2532F0D15"
 					type: "item"
 					item: "create:andesite_casing"
-					count: 32
+					count: 16
 				}
 				{
 					id: "3AF3F3526015EBC7"
 					type: "item"
 					item: "create:gearbox"
-					count: 32
-				}
-				{
-					id: "31F3038409E57876"
-					type: "item"
-					item: "create:andesite_alloy"
-					count: 32
+					count: 8
 				}
 				{
 					id: "25D89697A7FE9804"
@@ -1218,7 +1206,7 @@
 			y: 3.0d
 			shape: "gear"
 			subtitle: "You'll use this forever"
-			description: ["The wrench will allow you to rotate create blocks with a right click. It'll also destroy Create blocks instantly and put them in your inventory with crouch+click."]
+			description: ["The wrench will allow you to reorient create blocks with a right click. It'll also destroy Create blocks instantly and put them in your inventory with crouch+click."]
 			dependencies: ["6499CD689863283D"]
 			size: 1.25d
 			id: "0C6D01057E4E29FC"
