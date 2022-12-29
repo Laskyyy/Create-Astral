@@ -22,9 +22,10 @@
 	quests: [
 		{
 			title: "A knight in shining copper."
-			x: 1.0d
-			y: 11.5d
+			x: 0.5d
+			y: 12.0d
 			subtitle: "Cheap defense."
+			description: ["Don't get hit by lightning."]
 			dependencies: ["11ACD707D7284920"]
 			id: "327EA8E115211B55"
 			tasks: [
@@ -88,29 +89,46 @@
 		{
 			x: -5.5d
 			y: 12.0d
-			subtitle: "The source of basic tinker toolparts."
-			description: [""]
+			subtitle: "Craft your tool parts with this."
+			description: [
+				""
+				"The part builder is where you take a pattern, take your base materials, and craft the individual components of a tool."
+			]
 			dependencies: ["1AC4A5B8D86CAB0F"]
 			id: "75B36BB7FE771333"
 			tasks: [{
-				id: "753BD3EED6D3B697"
-				type: "advancement"
-				advancement: "tconstruct:tools/part_builder"
-				criterion: ""
+				id: "0793DCFD2EA88A6B"
+				type: "item"
+				item: {
+					id: "tconstruct:part_builder"
+					Count: 1b
+					tag: {
+						texture: "minecraft:oak_planks"
+					}
+				}
 			}]
 		}
 		{
-			x: -5.5d
-			y: 11.0d
-			subtitle: "Tinker tool info."
-			description: ["The tinker station exists for the formation of basic tinker tools, which will be needed to grab some stone, copper and iron. Wooden and stone tools are the first goal, as the vanilla versions of these no longer exist."]
+			x: -6.0d
+			y: 10.5d
+			subtitle: "Assemble your tools with this."
+			description: [
+				"The Tinker Station is where you assemble your tinker tools, which will be needed to grab stone, copper, and iron. Wooden and stone tools are the first goal, as the vanilla versions of these no longer exist."
+				""
+				"You can also repair tinker tools at this station by placing your tool and its materials in any slots. Its super convenient!"
+			]
 			dependencies: ["1AC4A5B8D86CAB0F"]
 			id: "584489E0781D5C0C"
 			tasks: [{
-				id: "2819C1E6B37718D7"
-				type: "advancement"
-				advancement: "tconstruct:tools/tinker_station"
-				criterion: ""
+				id: "7E9FEA64819569DC"
+				type: "item"
+				item: {
+					id: "tconstruct:tinker_station"
+					Count: 1b
+					tag: {
+						texture: "minecraft:oak_planks"
+					}
+				}
 			}]
 		}
 		{
@@ -124,10 +142,7 @@
 			x: -4.5d
 			y: 11.5d
 			subtitle: "Each tool consists of three (or more) components which can be combined into a full tool, give it a go."
-			dependencies: [
-				"75B36BB7FE771333"
-				"584489E0781D5C0C"
-			]
+			dependencies: ["75B36BB7FE771333"]
 			id: "29AF19492CFCB2DB"
 			tasks: [{
 				id: "0939A1A78118E737"
@@ -153,10 +168,17 @@
 			y: 10.0d
 			subtitle: "Create your first tinker tool"
 			description: [
-				"Nothing is stopping you from setting up a melter with some grout now for basic metal tools the tinker way! To smelt into seared brick, an encased fan might be needed however...  and those things take a good while to smelt...  "
-				"                                                  Oh! And don't forget! Pressing the (V) key by default will switch better combat compatible tools attacking mode to prevent them from mining blocks, perfect for combat situations."
+				"Now that you have mining tools, nothing is stopping you from skipping ahead and making a smelter with seared bricks. For this truly curious, the rest of the tinker construct's guides are available. Good luck if you want to skip around!"
+				""
+				"Another than that, time to start the other half of \"Minecraft\"!"
+				""
+				"Oh, important: Pressing the (V) key (default binding) will switch better combat compatible tools between attacking mode and use mode. Perfect for combat situations."
 			]
-			dependencies: ["29AF19492CFCB2DB"]
+			dependencies: [
+				"29AF19492CFCB2DB"
+				"584489E0781D5C0C"
+			]
+			size: 1.25d
 			id: "0FC0B4E8EC58F791"
 			tasks: [{
 				id: "2722741D5C4A6C82"
@@ -165,17 +187,6 @@
 				criterion: ""
 			}]
 			rewards: [
-				{
-					id: "276B32077595C4F2"
-					type: "item"
-					item: "minecraft:torch"
-					count: 5
-				}
-				{
-					id: "7D91A597B4B4BF09"
-					type: "item"
-					item: "tconstruct:materials_and_you"
-				}
 				{
 					id: "0D49D0A6E2FEB974"
 					type: "item"
@@ -196,14 +207,22 @@
 					type: "item"
 					item: "tconstruct:encyclopedia"
 				}
+				{
+					id: "1D4C6C09C4204360"
+					type: "item"
+					item: "tconstruct:pattern"
+					count: 16
+				}
 			]
 		}
 		{
-			x: 1.0d
-			y: 10.0d
+			title: "I Miss the Old Way."
+			x: 1.5d
+			y: 11.0d
 			subtitle: "Options, people, options"
-			description: ["if you dislike tinkers, the original tools are still here to tide you along."]
+			description: ["If you dislike tinkers, vanilla-style tools can be made with copper ingots to tide you along."]
 			dependencies: ["11ACD707D7284920"]
+			optional: true
 			id: "01B4EDC69A4BDBBD"
 			tasks: [{
 				id: "462E8991B3305276"
@@ -218,43 +237,58 @@
 			}]
 		}
 		{
-			x: -2.0d
+			x: -1.5d
 			y: 10.0d
 			shape: "rsquare"
 			subtitle: "Where did the bricks come from..."
 			description: ["With access to smelting, the basic copper tools can fill in for where iron would be in your usual progression."]
-			dependencies: ["6698096C19C55333"]
+			dependencies: ["0FC0B4E8EC58F791"]
+			size: 1.25d
 			id: "601A619C6E96920A"
 			tasks: [{
 				id: "29288FDE98AD30BB"
 				type: "item"
 				item: "minecraft:furnace"
 			}]
-			rewards: [{
-				id: "5D6FD8197D731E3E"
-				type: "item"
-				item: "farmersdelight:egg_sandwich"
-			}]
+			rewards: [
+				{
+					id: "5D6FD8197D731E3E"
+					type: "item"
+					item: "farmersdelight:egg_sandwich"
+				}
+				{
+					id: "563798D5608355A7"
+					type: "item"
+					item: "minecraft:coal"
+					count: 32
+				}
+			]
 		}
 		{
-			x: -0.5d
-			y: 10.0d
-			description: ["Copper should keep you safe before the ability to process iron has been discovered."]
+			title: "Copper Utilities"
+			icon: "minecraft:copper_ingot"
+			x: 0.5d
+			y: 11.0d
+			description: [
+				"Copper should keep you safe before the ability to process iron has been discovered."
+				""
+				"There's also a few helpful utilities it can bring."
+			]
 			dependencies: ["601A619C6E96920A"]
 			id: "11ACD707D7284920"
 			tasks: [{
-				id: "432BB1692614AAA1"
-				type: "item"
-				item: "minecraft:copper_ingot"
-				count: 3L
+				id: "091AFA0FDB6FB307"
+				type: "checkmark"
+				title: "Understood."
 			}]
 		}
 		{
 			title: "Let's get cooking"
-			x: -9.5d
+			x: -10.5d
 			y: 11.0d
 			description: ["Figured out how to make meals, eh? Now, here is a list of crops to automate >:D"]
 			dependencies: ["2CE5BB6A7B30CA4C"]
+			optional: true
 			id: "4F4C278C3A8C0281"
 			tasks: [
 				{
@@ -287,11 +321,12 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: 12.0d
+			x: -1.5d
+			y: 11.5d
 			subtitle: "Livin' life like Larry"
 			description: ["If you want to feel particularly lucky... why not try and wear a full set of golden armour? Just for the flex i'll give you some mad loot for the deserving chad you are."]
 			dependencies: ["601A619C6E96920A"]
+			optional: true
 			id: "5E6B48D6A4254759"
 			tasks: [
 				{
@@ -366,11 +401,15 @@
 		}
 		{
 			title: "The beginning of a problem."
-			x: -7.5d
-			y: 14.0d
+			x: -10.0d
+			y: 16.0d
 			shape: "diamond"
 			subtitle: "Alchoholics anonymous"
 			description: ["Beginning your brewing journey will allow access to potion effects before brewing is available!"]
+			hide_dependency_lines: true
+			dependencies: ["0BCED0F8481E0C21"]
+			size: 1.5d
+			optional: true
 			id: "05E45A7D1C9927E5"
 			tasks: [
 				{
@@ -393,13 +432,14 @@
 		}
 		{
 			title: "Amateur Brewery"
-			x: -8.0d
-			y: 15.0d
+			x: -9.0d
+			y: 17.0d
 			description: [
 				""
 				"Bartering will allow you to obtain loot and spice for your beer. They have a tendency to request stone and wooden tools, which are removed, so when you get to andesite age these can be substituted for 1 andesite alloy."
 			]
 			dependencies: ["05E45A7D1C9927E5"]
+			optional: true
 			id: "3E499250F88E22DA"
 			tasks: [{
 				id: "4C08DE69B9F3B0D9"
@@ -408,10 +448,11 @@
 			}]
 		}
 		{
-			x: -6.5d
-			y: 12.5d
+			x: -7.8078231292516875d
+			y: 13.244897959183653d
 			shape: "pentagon"
-			subtitle: "Take your pick of crafting station."
+			subtitle: "Take your pick of crafting station and begin the game."
+			size: 2.5d
 			min_required_tasks: 1
 			id: "0BCED0F8481E0C21"
 			tasks: [
@@ -432,18 +473,54 @@
 					item: "minecraft:crafting_table"
 				}
 			]
+			rewards: [
+				{
+					id: "10ED69DCCDA4E6C2"
+					type: "item"
+					item: "minecraft:white_bed"
+				}
+				{
+					id: "033BA9F7707381D5"
+					type: "item"
+					item: "minecraft:torch"
+					count: 16
+				}
+				{
+					id: "097517C279C0B8C0"
+					type: "item"
+					item: "minecraft:wheat_seeds"
+					count: 16
+				}
+				{
+					id: "323745EE2A4A8F67"
+					type: "item"
+					item: "minecraft:oak_sapling"
+				}
+				{
+					id: "74A0DFC4B5517744"
+					type: "item"
+					item: "minecraft:dirt"
+				}
+			]
 		}
 		{
 			x: -6.5d
 			y: 11.5d
 			subtitle: "Let's get started with the basics of tinkers."
-			description: ["The book will provide insightful information to those unfamiliar with how tinker's construct (Hephaestus, on fabric) works."]
+			description: [
+				"Tinker's Construct (aka \"Hephaestus\" for Fabric) is a mod that allows you to create highly customized tools by allowing you to craft each individual component with a wide range of material options, each with different effects."
+				""
+				"The early game tools will require you to use a lot of patterns and a few special workbenches. For now, stockpile a couple of patterns."
+				""
+				"The reward for this request will provide you supplemental insights to how the process works, as well as the tool materials you may use and what effects they have."
+			]
 			dependencies: ["0BCED0F8481E0C21"]
 			id: "1AC4A5B8D86CAB0F"
 			tasks: [{
 				id: "0A56270F3A56875F"
 				type: "item"
 				item: "tconstruct:pattern"
+				count: 12L
 			}]
 			rewards: [{
 				id: "1D969A2DAF5418C8"
@@ -452,43 +529,46 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: 10.0d
+			title: "Get Those Resources!"
+			x: -2.5d
+			y: 9.0d
 			subtitle: "We have iron at home:"
-			description: ["Iron and tin, they're essential, but a stone pickaxe with tinker's is required.  Don't use a stone pickadze though! They are effectively a wood tier tool!"]
+			description: ["Iron and tin; they're essential, but a stone pickaxe with tinker's is required.  Don't use a stone pickadze though! They are effectively a wood tier tool!"]
 			dependencies: ["0FC0B4E8EC58F791"]
 			min_required_tasks: 1
 			id: "6698096C19C55333"
 			tasks: [
 				{
-					id: "20950554752E63EC"
-					type: "checkmark"
-				}
-				{
 					id: "45D6962D76FE0D81"
 					type: "item"
 					item: "minecraft:raw_iron"
+					count: 8L
 				}
 				{
 					id: "753722BA8991D63B"
 					type: "item"
 					item: "techreborn:raw_tin"
+					count: 8L
 				}
 				{
 					id: "0A51F489FEEE71F0"
 					type: "item"
 					item: "minecraft:raw_copper"
+					count: 8L
 				}
 			]
 		}
 		{
 			title: "Begin your chef career."
-			x: -8.0d
+			x: -9.0d
 			y: 10.0d
 			shape: "diamond"
 			subtitle: "Let's begin with some light cooking, eh?"
 			description: ["You'll need some of this rice too, plant it and get yourself some straw!"]
+			hide_dependency_lines: true
+			dependencies: ["0BCED0F8481E0C21"]
 			size: 1.5d
+			optional: true
 			id: "2CE5BB6A7B30CA4C"
 			tasks: [{
 				id: "5F1D78666FED176F"
@@ -504,11 +584,12 @@
 		}
 		{
 			title: "Acquiring new materials."
-			x: -9.5d
+			x: -10.5d
 			y: 10.0d
 			subtitle: "MMM rice"
 			description: ["Lotsa new crops in Farmers delight, can you automate them all?"]
 			dependencies: ["2CE5BB6A7B30CA4C"]
+			optional: true
 			id: "504201C234C38437"
 			tasks: [{
 				id: "2F0EB60847E4ECF7"
@@ -523,13 +604,15 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: 10.0d
+			x: -5.5d
+			y: 9.0d
 			description: [
 				"All my homies hate enchanting early game, let's get some REAL man's drip."
-				"Craft a full set of traveller's gear and i'll bless with you a gift. Fair?"
+				""
+				"Craft a full set of traveller's gear and I'll bless with you a gift. You'll need to dig through REI and the tinker books yourself. Fair?"
 			]
 			dependencies: ["0FC0B4E8EC58F791"]
+			optional: true
 			id: "78E055160B11FC48"
 			tasks: [{
 				id: "100F661313FF3C14"
@@ -560,8 +643,8 @@
 					Icon: "createastral:textures/item/uwaah.png"
 				}
 			}
-			x: -5.5d
-			y: 13.5d
+			x: -6.536394557823115d
+			y: 14.571088435374122d
 			shape: "gear"
 			subtitle: "uwaaaah"
 			description: [
@@ -572,6 +655,7 @@
 				"The Astral Discord - Showing appreciation for the pack."
 				"Lizard - Being a good reptile <3 Contributing assembly lines and kubejs."
 			]
+			size: 1.25d
 			id: "1472D9CAB3B3A74D"
 			tasks: [{
 				id: "03400A6C3B703E48"
@@ -586,9 +670,10 @@
 		}
 		{
 			title: "Gather! 64 Melon Blocks."
-			x: -10.5d
+			x: -11.5d
 			y: 11.0d
 			dependencies: ["4F4C278C3A8C0281"]
+			optional: true
 			id: "6D072F2027D8DFCE"
 			tasks: [{
 				id: "072F87225B252EF0"
@@ -604,9 +689,10 @@
 		}
 		{
 			title: "Gather! 64 Cactus"
-			x: -9.5d
+			x: -10.5d
 			y: 12.0d
 			dependencies: ["4F4C278C3A8C0281"]
+			optional: true
 			id: "1645C544BEBC01EE"
 			tasks: [{
 				id: "1E76A2267860CAB1"
@@ -623,9 +709,10 @@
 		}
 		{
 			title: "Gather! 64 pumpkins!"
-			x: -10.5d
+			x: -11.5d
 			y: 12.0d
 			dependencies: ["4F4C278C3A8C0281"]
+			optional: true
 			id: "79886A5C435F29E0"
 			tasks: [{
 				id: "455B346FB9ADE2BB"
@@ -641,10 +728,11 @@
 		}
 		{
 			title: "Gather! 64 Carrot crates"
-			x: -10.5d
+			x: -11.5d
 			y: 14.0d
 			hide_dependency_lines: true
 			dependencies: ["4F4C278C3A8C0281"]
+			optional: true
 			id: "513E187ADFD4F2A4"
 			tasks: [{
 				id: "1CB5135CDE0FEAB3"
@@ -661,10 +749,11 @@
 		}
 		{
 			title: "Gather! 64 Potato crates"
-			x: -12.5d
+			x: -13.5d
 			y: 14.5d
 			hide_dependency_lines: true
 			dependencies: ["4F4C278C3A8C0281"]
+			optional: true
 			id: "09A4CEF0AF68A055"
 			tasks: [{
 				id: "107F3E609ABD62F6"
@@ -689,10 +778,11 @@
 		}
 		{
 			title: "Gather! 64 Corn crates"
-			x: -11.5d
+			x: -12.5d
 			y: 14.5d
 			hide_dependency_lines: true
 			dependencies: ["4F4C278C3A8C0281"]
+			optional: true
 			id: "6FF9501CDF19F0D5"
 			tasks: [{
 				id: "51D0686E879398CF"
@@ -709,10 +799,11 @@
 		}
 		{
 			title: "Gather! 64 Bags of Rice"
-			x: -9.5d
+			x: -10.5d
 			y: 13.5d
 			hide_dependency_lines: true
 			dependencies: ["4F4C278C3A8C0281"]
+			optional: true
 			id: "1858F35E1B7128AA"
 			tasks: [{
 				id: "632EC9B47BD48D61"
@@ -729,10 +820,11 @@
 		}
 		{
 			title: "Gather! 64 Onion crates"
-			x: -12.0d
+			x: -13.0d
 			y: 11.5d
 			hide_dependency_lines: true
 			dependencies: ["4F4C278C3A8C0281"]
+			optional: true
 			id: "641D3099B18682CD"
 			tasks: [{
 				id: "371A5F8851677000"
@@ -757,10 +849,11 @@
 		}
 		{
 			title: "Gather! 64 tomato crates"
-			x: -12.5d
+			x: -13.5d
 			y: 12.5d
 			hide_dependency_lines: true
 			dependencies: ["4F4C278C3A8C0281"]
+			optional: true
 			id: "0C6D7B3DCF139FA9"
 			tasks: [{
 				id: "559246BCCF5EDD0A"
@@ -777,10 +870,11 @@
 		}
 		{
 			title: "Gather! 64 Cabbage crates"
-			x: -12.5d
+			x: -13.5d
 			y: 13.5d
 			hide_dependency_lines: true
 			dependencies: ["4F4C278C3A8C0281"]
+			optional: true
 			id: "4E0B5BFE718A99CD"
 			tasks: [{
 				id: "01BAB43531550385"
@@ -798,10 +892,11 @@
 		{
 			title: "Very nice spice."
 			x: -8.0d
-			y: 16.0d
+			y: 17.5d
 			subtitle: "Was it worth it?"
 			description: ["(oh yeah, it was worth it.)"]
 			dependencies: ["3E499250F88E22DA"]
+			optional: true
 			id: "69C0C2601F6F79A7"
 			tasks: [
 				{
@@ -910,11 +1005,12 @@
 		{
 			title: "I LOVE BACKPACKS"
 			icon: "campanion:hiking_pack"
-			x: -10.5d
+			x: -11.5d
 			y: 10.0d
 			subtitle: "Porta-Storage? Excellent..."
 			description: ["These backpacks take up your chest slot, but contain a huge amount of slots and a built-in crafting bench."]
 			dependencies: ["504201C234C38437"]
+			optional: true
 			id: "501AD44D7875F4D9"
 			tasks: [{
 				id: "18650A6066610756"
@@ -931,10 +1027,14 @@
 		{
 			title: "Where is my zoom key?"
 			icon: "minecraft:spyglass"
-			x: 1.0d
-			y: 9.0d
-			subtitle: "Right here, silly!"
-			description: ["By default the zoom button is Z."]
+			x: 1.5d
+			y: 12.0d
+			subtitle: "Right here, zilly!"
+			description: [
+				"By default the zoom button is (Z) (default key binding)."
+				""
+				"(Wait, what does this have to do with copper?)"
+			]
 			dependencies: ["11ACD707D7284920"]
 			id: "6B68AF2DE79A65A3"
 			tasks: [{
@@ -964,47 +1064,63 @@
 					Icon: "createdeco:textures/block/palettes/decal/cyan_decal.png"
 				}
 			}
-			x: -0.5d
+			x: 2.0d
 			y: 8.0d
-			description: ["The package crafter will allow any combination of blocks to be made into framed packages, perfect for storing large quantities of singular blocks."]
-			dependencies: [
-				"11ACD707D7284920"
-				"22EDB2C326C53A89"
+			subtitle: "Give me mini shulker boxes for dedicated items"
+			description: [
+				"The packsage crafter will allow you to craft packsages with a copper ingot, a dye, and all manners of common decorative materials."
+				""
+				"These packages can hold 8 stacks. However, they can be broken and moved around while keeping all their items, like a shulker box, and are cheap to produce."
+				""
+				"If you want more raw storage space, consider Tech Reborn storage units."
 			]
+			dependencies: ["6433AD83545428C3"]
 			id: "5D69FB71CD8A1391"
-			tasks: [{
-				id: "46475A543AEB495D"
-				type: "item"
-				item: "packages:package_maker"
-			}]
-		}
-		{
-			title: "Storage solutions on a budget."
-			x: -1.0d
-			y: 7.0d
-			subtitle: "Pick up and move them!"
-			description: ["Package up single items into a box, like a shulker box with 1 slot. Should clear out those chests of pesky cobble and dirt."]
-			dependencies: ["5D69FB71CD8A1391"]
-			id: "15CE33A7A68632F3"
-			tasks: [{
-				id: "3F272038657BCA54"
-				type: "item"
-				icon: "dustrial_decor:cardboard_box"
-				item: "packages:package"
-			}]
-			rewards: [{
-				id: "1DCD388B4A9AF6E4"
-				type: "item"
-				item: "dustrial_decor:cardboard_box"
-				count: 3
-			}]
+			tasks: [
+				{
+					id: "46475A543AEB495D"
+					type: "item"
+					item: "packages:package_maker"
+				}
+				{
+					id: "1548CF476FD5F8D3"
+					type: "item"
+					title: "Any #c:dyes"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "c:dyes"
+						}
+					}
+				}
+				{
+					id: "6E62E369EA9C1050"
+					type: "item"
+					title: "Any #minecraft:planks"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:planks"
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "5FC98BCF7897AF8C"
+					type: "item"
+					item: "minecraft:copper_ingot"
+				}
+			]
 		}
 		{
 			title: "Ahoy!"
-			x: 2.0d
-			y: 11.5d
+			x: 0.5d
+			y: 13.0d
 			description: [
 				"Ye filthy landlubbers can't even walk 10 seconds on the ocean floor without spluttering for air."
+				""
 				"These will be used in a certain *astral* suit in the near future, you might want to make some now."
 			]
 			dependencies: ["327EA8E115211B55"]
@@ -1064,16 +1180,16 @@
 				Count: 1b
 				tag: {
 					Automobile: {
-						wheels: "automobility:standard"
-						frame: "automobility:yellow_tractor"
 						engine: "automobility:stone"
+						frame: "automobility:yellow_tractor"
+						wheels: "automobility:standard"
 					}
 				}
 			}
-			x: -11.172448979591834d
+			x: -12.172448979591834d
 			y: 12.847959183673467d
 			shape: "gear"
-			subtitle: "Look at this beauty, i'll let you have 'er, on one condition."
+			subtitle: "Look at this beauty, I'll let you have 'er, on one condition."
 			description: ["Show me yer' able to complete TWO of these stockpile quests, and i'll be convinced to let you buy her.  A feast for the ages will be enough to convince me... so get cooking!"]
 			hide_dependency_lines: true
 			min_required_dependencies: 2
@@ -1087,6 +1203,7 @@
 				"1858F35E1B7128AA"
 			]
 			hide: false
+			optional: true
 			id: "0F603C66B0DD9BFB"
 			tasks: [
 				{
@@ -1174,27 +1291,67 @@
 			]
 		}
 		{
-			x: -2.0d
+			title: "Essential Materials"
+			x: -1.5d
 			y: 8.0d
 			shape: "gear"
 			subtitle: "Chapter 1 Unlock."
-			description: ["Feel free to refer back to this tab for basic info on some of the simpler content, setting up a decent food source will sure help you, as it increases max HP!"]
-			dependencies: ["601A619C6E96920A"]
-			size: 1.5d
+			description: [
+				"Tin and Copper will be used for a new metal needed to create the gears of industry, while andesite and clay forms the cornerstone of Create. You'll want to stockpile far more than what's needed to clear this quest."
+				""
+				""
+				"Feel free to refer back to this tab for basic info on some of the simpler content. Setting up a decent food source will sure help you, as it increases max HP!"
+			]
+			dependencies: [
+				"601A619C6E96920A"
+				"6698096C19C55333"
+			]
+			size: 2.0d
 			id: "1337920DA45E72AD"
-			tasks: [{
-				id: "2C3E2DFED79A499B"
-				type: "item"
-				item: "createastral:bronze_ingot"
-				count: 10L
-			}]
+			tasks: [
+				{
+					id: "5ACD13D871B7909B"
+					type: "item"
+					item: "techreborn:tin_ingot"
+					count: 8L
+				}
+				{
+					id: "32032BEF96EE21E3"
+					type: "item"
+					item: "minecraft:copper_ingot"
+					count: 8L
+				}
+				{
+					id: "069C76715AC2E719"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 8L
+				}
+				{
+					id: "6B75A05B669468D5"
+					type: "item"
+					item: "minecraft:andesite"
+					count: 16L
+				}
+				{
+					id: "5F9D6891E391AC4E"
+					type: "item"
+					item: "minecraft:clay"
+					count: 4L
+				}
+			]
 		}
 		{
-			title: "Techreborn Storage"
-			x: 0.0d
-			y: 7.0d
-			description: ["Alternatively, treat yourself to some techreborn barrels to organise a storage system. They have much higher density of storage per block for their tier, but only contain one item with a smaller icon."]
-			dependencies: ["5D69FB71CD8A1391"]
+			title: "Tech Reborn Storage"
+			x: 0.5d
+			y: 8.0d
+			subtitle: "Give me mass storage for a single item"
+			description: [
+				"Tech Reborn storages allow you to store massive quantities of a single item (Up to 32 stacks). As producing specific items is what you'll be doing, its a huge help to have dedicated storages for these."
+				""
+				"One downside is that these willl drop everything when broken. Consider packages if you want some flexibility."
+			]
+			dependencies: ["6433AD83545428C3"]
 			id: "3147C3CCBC6856B6"
 			tasks: [
 				{
@@ -1208,11 +1365,18 @@
 					item: "techreborn:crude_storage_unit"
 				}
 			]
+			rewards: [{
+				id: "136E8C4D5C4A0054"
+				type: "item"
+				item: "techreborn:crude_storage_unit"
+				count: 4
+			}]
 		}
 		{
-			x: -2.5d
+			x: -2.0d
 			y: 13.5d
 			dependencies: ["30671A15990F39D8"]
+			optional: true
 			id: "791D3292F22706E6"
 			tasks: [{
 				id: "40EFAB1EA82C0179"
@@ -1227,9 +1391,10 @@
 			}]
 		}
 		{
-			x: -4.0d
+			x: -3.5d
 			y: 15.0d
 			dependencies: ["30671A15990F39D8"]
+			optional: true
 			id: "61268E9695C2B0B0"
 			tasks: [{
 				id: "686BE4BE4E9EE3FB"
@@ -1244,9 +1409,10 @@
 			}]
 		}
 		{
-			x: -1.0d
+			x: -0.5d
 			y: 15.0d
 			dependencies: ["30671A15990F39D8"]
+			optional: true
 			id: "441D6F369B7912E5"
 			tasks: [{
 				id: "4F02DF2E116D3E92"
@@ -1261,9 +1427,10 @@
 			}]
 		}
 		{
-			x: -1.0d
+			x: -0.5d
 			y: 14.0d
 			dependencies: ["30671A15990F39D8"]
+			optional: true
 			id: "5FFC7DFF4294C81A"
 			tasks: [{
 				id: "74EB7FF43AA93703"
@@ -1278,9 +1445,10 @@
 			}]
 		}
 		{
-			x: -4.0d
+			x: -3.5d
 			y: 14.0d
 			dependencies: ["30671A15990F39D8"]
+			optional: true
 			id: "65C0B4100CD88D77"
 			tasks: [{
 				id: "184486A840B467DE"
@@ -1295,9 +1463,10 @@
 			}]
 		}
 		{
-			x: -1.0d
+			x: -0.5d
 			y: 16.0d
 			dependencies: ["30671A15990F39D8"]
+			optional: true
 			id: "11B2E25F18AD9C35"
 			tasks: [{
 				id: "1077A31DBE0B61EF"
@@ -1311,9 +1480,10 @@
 			}]
 		}
 		{
-			x: -4.0d
+			x: -3.5d
 			y: 16.0d
 			dependencies: ["30671A15990F39D8"]
+			optional: true
 			id: "30A8E779764AE865"
 			tasks: [{
 				id: "0F24228CDCEB910E"
@@ -1327,24 +1497,37 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: 9.0d
-			subtitle: "Wooden chests? Boring."
-			description: ["Each tier of chest you make in the future will require the previous tiers to craft."]
-			dependencies: ["11ACD707D7284920"]
+			x: 1.5d
+			y: 10.0d
+			subtitle: "Give me better general storage"
+			description: [
+				"Copper chests offer more inventory than boring old wooden chests!"
+				""
+				"There are even better tiers of chests to make in the future, but crafting each one requires the previous tier."
+			]
+			dependencies: [
+				"11ACD707D7284920"
+				"6433AD83545428C3"
+			]
 			id: "22EDB2C326C53A89"
 			tasks: [{
 				id: "247A190DDF6719BF"
 				type: "item"
 				item: "reinfchest:copper_chest"
 			}]
+			rewards: [{
+				id: "75AB59721C18FE4E"
+				type: "item"
+				item: "more_chests:copper_chest"
+			}]
 		}
 		{
 			title: "Laying the groundwork."
-			x: -9.5d
+			x: -10.5d
 			y: 9.0d
 			description: ["These tiles connect all cooking for blockheads blocks between them, so use them as a floor in your kitchens."]
 			dependencies: ["2CE5BB6A7B30CA4C"]
+			optional: true
 			id: "3522109BABC7E48B"
 			tasks: [{
 				id: "34A0BAA9C0AE7A74"
@@ -1360,10 +1543,11 @@
 		}
 		{
 			title: "Everything including the kitchen sink."
-			x: -9.5d
+			x: -10.5d
 			y: 8.0d
 			subtitle: "Important blocks with functionality."
 			dependencies: ["3522109BABC7E48B"]
+			optional: true
 			id: "337723130C80CD91"
 			tasks: [
 				{
@@ -1384,10 +1568,11 @@
 			]
 		}
 		{
-			x: -8.5d
+			x: -9.5d
 			y: 8.0d
 			subtitle: "Storage space for ingredients."
 			dependencies: ["3522109BABC7E48B"]
+			optional: true
 			id: "18BA6A99120CF00D"
 			tasks: [
 				{
@@ -1404,10 +1589,11 @@
 		}
 		{
 			title: "Extra utilities."
-			x: -10.5d
+			x: -11.5d
 			y: 8.0d
 			subtitle: "Some foods require extra components."
 			dependencies: ["3522109BABC7E48B"]
+			optional: true
 			id: "3BACB90B72AE7623"
 			tasks: [
 				{
@@ -1461,11 +1647,14 @@
 					Icon: "chipped:textures/block/stripped_dark_oak_log/stripped_dark_oak_log_16.png"
 				}
 			}
-			x: -2.5d
+			x: -2.0d
 			y: 15.0d
 			shape: "diamond"
 			subtitle: "If you are of the building type, you *might* be interested in this. Not only do each of these stations look cool, they also provide hundreds of possible blocks to build with, in any colour."
+			hide_dependency_lines: true
+			dependencies: ["0BCED0F8481E0C21"]
 			size: 1.5d
+			optional: true
 			id: "30671A15990F39D8"
 			tasks: [{
 				id: "0156EF5B8B50BDB8"
@@ -1474,10 +1663,11 @@
 			}]
 		}
 		{
-			x: -7.0d
-			y: 15.0d
+			x: -8.5d
+			y: 16.0d
 			subtitle: "This is the recipe for your first beer."
 			dependencies: ["05E45A7D1C9927E5"]
+			optional: true
 			id: "7D768E5AA9EA358C"
 			tasks: [
 				{
@@ -1499,10 +1689,11 @@
 			]
 		}
 		{
-			x: -7.0d
-			y: 16.0d
+			x: -7.5d
+			y: 16.5d
 			subtitle: "Slippery slope."
 			dependencies: ["7D768E5AA9EA358C"]
+			optional: true
 			id: "52832D8DA239C017"
 			tasks: [{
 				id: "67BF890594998248"
@@ -1517,10 +1708,11 @@
 			}]
 		}
 		{
-			x: -7.5d
+			x: -6.5d
 			y: 17.0d
 			subtitle: "Infuse beer by clicking this table with them."
 			dependencies: ["52832D8DA239C017"]
+			optional: true
 			id: "154EF80FC9B8F0B0"
 			tasks: [{
 				id: "145A72A4C427E775"
@@ -1534,10 +1726,11 @@
 			}]
 		}
 		{
-			x: -10.5d
+			x: -11.5d
 			y: 9.0d
 			subtitle: "A book, full of food!"
 			dependencies: ["3522109BABC7E48B"]
+			optional: true
 			id: "152FF1A843FFDDB5"
 			tasks: [
 				{
@@ -1555,6 +1748,67 @@
 				id: "424A77A5F66DAD47"
 				type: "item"
 				item: "minecraft:cooked_beef"
+			}]
+		}
+		{
+			title: "Storage Upgrades"
+			icon: "minecraft:barrel"
+			x: 0.5d
+			y: 9.0d
+			subtitle: "I WANT MORE INVENTORY SPACE"
+			description: ["The next chapter will involve creating factories that produce items forever. You'll want to be aware of what storage solutions are available, lest you run into inventory management nightmares."]
+			dependencies: ["601A619C6E96920A"]
+			id: "6433AD83545428C3"
+			tasks: [{
+				id: "162E460403877286"
+				type: "checkmark"
+				title: "Understood."
+			}]
+		}
+		{
+			title: "Packaged Up"
+			x: 3.0d
+			y: 8.0d
+			subtitle: "A rainforest of inventory."
+			description: [
+				"Craft a single package, using the ingredients required in the previous chapter."
+				""
+				"It is possible to mix and match, and you can use decorative materials other than wood. Check out your options in REI!"
+			]
+			dependencies: ["5D69FB71CD8A1391"]
+			id: "36A1589C564732B1"
+			tasks: [{
+				id: "56447C1ED629FE47"
+				type: "item"
+				title: "Any #packages:banned_from_package_maker"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "packages:banned_from_package_maker"
+					}
+				}
+			}]
+			rewards: [{
+				id: "224477A367A53727"
+				type: "item"
+				item: {
+					id: "packages:package"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							PackageContents: {
+								realCount: 0
+							}
+							PackageStyle: {
+								inner: "minecraft:oak_planks"
+								frame: "minecraft:oak_log"
+								color: 0
+							}
+						}
+					}
+				}
+				count: 4
 			}]
 		}
 	]
