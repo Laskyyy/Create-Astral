@@ -698,7 +698,7 @@ event.recipes.createDeploying('create:andesite_casing', ['create:copper_sheet', 
 event.recipes.createSequencedAssembly([ // begin
 'createastral:incomplete_electronic_circuit', // output
 ], 'create:integrated_circuit', [ // input
-event.recipes.createDeploying('create:integrated_circuit', ['create:integrated_circuit', 'createastral:golden_pin']), 
+event.recipes.createDeploying('create:integrated_circuit', ['create:integrated_circuit', 'createastral:static_pin']), 
 ]).transitionalItem('create:integrated_circuit').loops(64) 
 
 event.recipes.createSequencedAssembly([ // begin
@@ -2267,6 +2267,19 @@ event.custom({
 		"count": 5
 	},
 	"energy": 10000
+})
+
+event.custom({
+	"type":"createaddition:charging",
+	"input": {
+      	"item": "createastral:golden_pin",
+		"count": 1
+	},
+	"result": {
+		"item": "createastral:electrified_pin",
+		"count": 1
+	},
+	"energy": 2500
 })
 
 event.custom({

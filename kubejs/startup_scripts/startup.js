@@ -369,6 +369,7 @@ event.create('create:lapis_sheet'),
 event.create('create:integrated_circuit'),
 event.create('createastral:incomplete_electronic_circuit'),
 event.create('createastral:golden_pin'),
+event.create('createastral:electrified_pin'),
 event.create('createastral:uwaah'),
 event.create('createastral:bronze_ingot'),
 event.create('createastral:navigation_mechanism')
