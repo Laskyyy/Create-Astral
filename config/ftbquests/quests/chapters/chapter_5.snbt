@@ -10,7 +10,7 @@
 	images: [
 		{
 			x: -8.0d
-			y: -5.0d
+			y: -7.5d
 			width: 3.0d
 			height: 3.0d
 			rotation: 0.0d
@@ -37,7 +37,7 @@
 		{
 			title: "Welcome to Mars."
 			x: -8.0d
-			y: -3.0d
+			y: -4.0d
 			subtitle: "Make yourself at home, it only gets worse from here..."
 			dependencies: ["63DCF596AAA9A232"]
 			id: "253F29A00B4EA050"
@@ -49,105 +49,13 @@
 			}]
 		}
 		{
-			title: "Ostrum."
-			x: -7.5d
-			y: -2.0d
-			dependencies: ["253F29A00B4EA050"]
-			id: "5B51A4C60DE0219A"
-			tasks: [{
-				id: "0ED76A061851F02D"
-				type: "item"
-				item: "ad_astra:mars_ostrum_ore"
-			}]
-		}
-		{
-			title: "Lead, a new tier of ore."
-			x: -8.5d
-			y: -2.0d
-			description: [
-				"Lead, found above y=0"
-				"Galena, found below y=0"
-				"Both of these result in lead when processed."
-			]
-			dependencies: ["253F29A00B4EA050"]
-			id: "5A74A349BAB14745"
-			tasks: [
-				{
-					id: "74E2F2D8A0F6846A"
-					type: "item"
-					item: "techreborn:deepslate_lead_ore"
-				}
-				{
-					id: "4C9CDD49A5A99182"
-					type: "item"
-					item: "techreborn:deepslate_galena_ore"
-				}
-				{
-					id: "6CFCED74BE222755"
-					type: "item"
-					item: "techreborn:deepslate_sodalite_ore"
-				}
-			]
-		}
-		{
-			title: "Lead Pressing."
-			x: -8.0d
-			y: -1.0d
-			dependencies: [
-				"5B51A4C60DE0219A"
-				"5A74A349BAB14745"
-			]
-			id: "36BC3DD3F3898B48"
-			tasks: [{
-				id: "713AA8E7897809C6"
-				type: "item"
-				item: "techreborn:lead_plate"
-			}]
-		}
-		{
-			title: "A new tier of circuit..."
-			x: -8.0d
-			y: 1.5d
-			shape: "rsquare"
-			subtitle: "This time it will be needed a LOT, like a lot."
-			description: ["All components of the recipe are automatable allowing for some creative methods."]
-			dependencies: [
-				"391DABA73E51CB87"
-				"378F3FCF17F0EDBC"
-			]
-			size: 1.5d
-			id: "5729A883639B2EEF"
-			tasks: [{
-				id: "5F77DA249763A9A4"
-				type: "item"
-				item: "techreborn:electronic_circuit"
-			}]
-		}
-		{
-			title: "It's like gol- uh, steel duuust~"
-			x: -7.0d
-			y: 4.0d
-			dependencies: ["30B554B51AEFEB0C"]
-			id: "151BEB6BFA2090D9"
-			tasks: [
-				{
-					id: "458949D026FD8A9D"
-					type: "item"
-					item: "techreborn:steel_dust"
-				}
-				{
-					id: "085296B341A0DA75"
-					type: "item"
-					item: "minecraft:tnt"
-				}
-			]
-		}
-		{
 			title: "Iron but slightly harder, I reckon"
 			x: -8.0d
-			y: 8.0d
+			y: 5.0d
+			shape: "square"
 			subtitle: "This stuff should be durable enough to make a phat new rocket."
-			dependencies: ["08C6AE71948EE199"]
+			dependencies: ["5729A883639B2EEF"]
+			size: 2.0d
 			id: "3A5D7E60EF1C3BC3"
 			tasks: [{
 				id: "31C9A429FF4C66EA"
@@ -156,9 +64,10 @@
 			}]
 		}
 		{
-			x: -7.0d
-			y: 8.5d
+			x: -10.5d
+			y: 5.0d
 			dependencies: ["3A5D7E60EF1C3BC3"]
+			optional: true
 			id: "78C43CAB30772606"
 			tasks: [{
 				id: "3930A2D25F371304"
@@ -174,12 +83,12 @@
 		}
 		{
 			title: "Automate Lithium + Batteries"
-			x: -4.5d
+			x: -3.5d
 			y: 1.5d
 			subtitle: "Pour Lithium into your red cell batteries for this component. "
 			description: ["Lithium can be processed from basic clay balls for a large amount, if you use one of the earlier clay farms."]
 			dependencies: [
-				"5729A883639B2EEF"
+				"42FDBAC4A8966F9D"
 				"684E33C50BD55A8E"
 			]
 			id: "7B5DE5040FC24D21"
@@ -204,9 +113,10 @@
 		}
 		{
 			title: "Upgrade! Drill!"
-			x: -5.5d
+			x: -3.0d
 			y: 0.0d
 			dependencies: ["7B5DE5040FC24D21"]
+			optional: true
 			id: "77F3D564A2AE72AE"
 			tasks: [{
 				id: "0E031E746AC39336"
@@ -216,9 +126,10 @@
 		}
 		{
 			title: "Upgrade! Chainsaw!"
-			x: -4.5d
-			y: 0.0d
+			x: -2.0d
+			y: 0.5d
 			dependencies: ["7B5DE5040FC24D21"]
+			optional: true
 			id: "1D5DEE21F9178935"
 			tasks: [{
 				id: "19C512CEF9BECFDC"
@@ -228,9 +139,10 @@
 		}
 		{
 			title: "Upgrade! Jackhammer!"
-			x: -3.5d
-			y: 0.0d
+			x: -1.5d
+			y: 1.5d
 			dependencies: ["7B5DE5040FC24D21"]
+			optional: true
 			id: "575F106CD1827C99"
 			tasks: [{
 				id: "6BC916CE343DB9CA"
@@ -252,8 +164,8 @@
 			}]
 		}
 		{
-			x: -7.0d
-			y: 10.0d
+			x: -6.5d
+			y: 7.5d
 			dependencies: ["2E53AE0F26538CF3"]
 			id: "7B5AE0A782DE8DF8"
 			tasks: [
@@ -305,8 +217,8 @@
 		}
 		{
 			title: "Rocket barrage, activated!"
-			x: -9.0d
-			y: 10.0d
+			x: -9.5d
+			y: 7.5d
 			subtitle: "We CAN get much higheerrr it seems..."
 			dependencies: ["2E53AE0F26538CF3"]
 			id: "3CF2DB0B0ACE19B6"
@@ -321,34 +233,10 @@
 			}]
 		}
 		{
-			title: "Feed the Fire."
-			x: -8.0d
-			y: 7.0d
-			subtitle: "Break your vision."
-			description: [
-				"Throw your fists up."
-				"Come with me..."
-			]
-			dependencies: [
-				"110BE0EF1AC0E454"
-				"0373FACF0AB8113E"
-			]
-			id: "08C6AE71948EE199"
-			tasks: [{
-				id: "65B33FCFB86EFC50"
-				type: "item"
-				item: "ad_astra:fuel_bucket"
-			}]
-			rewards: [{
-				id: "5E3624DCDDD2D6A3"
-				type: "item"
-				item: "create:blaze_burner"
-			}]
-		}
-		{
-			x: -9.0d
-			y: 8.5d
+			x: -10.5d
+			y: 6.0d
 			dependencies: ["3A5D7E60EF1C3BC3"]
+			optional: true
 			id: "08CEB76C11CCE833"
 			tasks: [{
 				id: "551F104DC625712F"
@@ -357,41 +245,16 @@
 			}]
 		}
 		{
-			title: "Charge it up."
-			x: -7.5d
-			y: 0.0d
-			description: ["Accessible since brass, these could also be used to process synthetic redstone. It will be required now."]
-			dependencies: ["36BC3DD3F3898B48"]
-			id: "378F3FCF17F0EDBC"
-			tasks: [{
-				id: "317880284A4A54D6"
-				type: "item"
-				item: "createaddition:tesla_coil"
-			}]
-		}
-		{
-			x: -8.5d
-			y: 0.0d
-			subtitle: "Charge some certus quartz on a depot alongside a tesla coil to supercharge them into this!"
-			dependencies: ["36BC3DD3F3898B48"]
-			id: "391DABA73E51CB87"
-			tasks: [{
-				id: "1E7F4B6B5DA9DF2D"
-				type: "item"
-				item: "ae2:charged_certus_quartz_crystal"
-			}]
-		}
-		{
 			title: "Hot hot hot HOT. Let me put some insulation on."
 			x: -8.0d
-			y: 11.5d
+			y: 9.0d
 			shape: "gear"
 			description: ["To survive on mercury with it's super hot surface temperature, ensure you are wearing the netherite space suit at all times!"]
 			dependencies: [
 				"3CF2DB0B0ACE19B6"
 				"7B5AE0A782DE8DF8"
 			]
-			size: 1.5d
+			size: 2.0d
 			id: "5BD2D0F7F0D70180"
 			tasks: [{
 				id: "39BBDC85B1D5AAA7"
@@ -401,19 +264,9 @@
 			}]
 		}
 		{
-			x: -5.5d
-			y: 5.5d
-			id: "3FA7EADED02A2A1A"
-			tasks: [{
-				id: "4CF4BF5C957EEF4C"
-				type: "item"
-				item: "immersive_aircraft:biplane"
-			}]
-		}
-		{
 			title: "A blast furnace for forging steel alloy."
-			x: -7.0d
-			y: 3.0d
+			x: -6.0d
+			y: 3.5d
 			dependencies: ["5729A883639B2EEF"]
 			id: "30B554B51AEFEB0C"
 			tasks: [{
@@ -425,7 +278,7 @@
 		{
 			title: "Press that steel fella"
 			x: -8.0d
-			y: 9.5d
+			y: 6.5d
 			dependencies: ["3A5D7E60EF1C3BC3"]
 			id: "2E53AE0F26538CF3"
 			tasks: [{
@@ -436,10 +289,10 @@
 		}
 		{
 			title: "That's some good fuel, right there."
-			x: -7.0d
-			y: 5.0d
+			x: -10.0d
+			y: 3.5d
 			subtitle: "In conjunction with Ad Astra Oil, you can distill a fuel fluid which can burn hotter than anything you've seen."
-			dependencies: ["30B554B51AEFEB0C"]
+			dependencies: ["5729A883639B2EEF"]
 			id: "0373FACF0AB8113E"
 			tasks: [
 				{
@@ -460,46 +313,9 @@
 			]
 		}
 		{
-			x: -9.0d
-			y: 5.0d
-			dependencies: [
-				"2A5A1FA28ECF3D8E"
-				"70D85FE365F51349"
-			]
-			id: "110BE0EF1AC0E454"
-			tasks: [{
-				id: "65CA1442041D109A"
-				type: "item"
-				item: "ad_astra:oil_bucket"
-			}]
-		}
-		{
-			x: -9.0d
-			y: 3.0d
-			dependencies: ["5729A883639B2EEF"]
-			id: "2A5A1FA28ECF3D8E"
-			tasks: [{
-				id: "3B44DF390BFD6842"
-				type: "item"
-				item: "createastral:pure_biomatter"
-			}]
-		}
-		{
-			x: -10.0d
-			y: 4.0d
-			hide_dependency_lines: true
-			dependencies: ["5729A883639B2EEF"]
-			id: "70D85FE365F51349"
-			tasks: [{
-				id: "7218999BCEA2CF6E"
-				type: "item"
-				item: "techreborn:cell"
-			}]
-		}
-		{
 			title: "Martian Traveller"
 			x: -6.0d
-			y: -3.0d
+			y: -4.0d
 			subtitle: "Discover the biomes of this treacherous climate."
 			hide_dependency_lines: true
 			dependencies: ["253F29A00B4EA050"]
@@ -534,7 +350,7 @@
 		{
 			title: "Martian Explorer"
 			x: -10.0d
-			y: -3.0d
+			y: -4.0d
 			subtitle: "Uncover the secrets of piglin civilisation..."
 			hide_dependency_lines: true
 			dependencies: ["253F29A00B4EA050"]
@@ -561,28 +377,217 @@
 			]
 		}
 		{
-			title: "Oh no we're going nuclear."
-			icon: "createdeco:light_blue_decal"
-			x: -3.0d
-			y: 1.5d
-			subtitle: "~40 of these when held in the inventory and placed will auto build the structure for you!"
-			dependencies: ["7B5DE5040FC24D21"]
-			id: "4F8857155A31DF9D"
-			tasks: [{
-				id: "6638B0F62F2AB955"
-				type: "item"
-				item: "powah:reactor_hardened"
-			}]
-		}
-		{
-			x: -6.0d
-			y: 8.5d
-			dependencies: ["78C43CAB30772606"]
+			x: -5.25d
+			y: 6.0d
+			dependencies: ["3A5D7E60EF1C3BC3"]
+			size: 1.5d
+			optional: true
 			id: "55296900512F9ABE"
 			tasks: [{
 				id: "1F8B7DC6F13D6762"
 				type: "item"
 				item: "mtmechs:ta_whole_item"
+			}]
+		}
+		{
+			title: "Components for an upgraded circuit!"
+			x: -8.0d
+			y: -2.5d
+			dependencies: ["253F29A00B4EA050"]
+			id: "7B0BBD0E9F82939D"
+			tasks: [{
+				id: "462ECA657570F004"
+				type: "item"
+				item: "minecraft:gold_nugget"
+			}]
+			rewards: [{
+				id: "7050ECC0194472C4"
+				type: "item"
+				item: "minecraft:gold_nugget"
+			}]
+		}
+		{
+			title: "roll it"
+			x: -7.0d
+			y: -3.0d
+			id: "0191FC3FA35271FD"
+			tasks: [{
+				id: "20EB397067E46C9A"
+				type: "item"
+				item: "createaddition:rolling_mill"
+			}]
+		}
+		{
+			title: "incomplete"
+			x: -8.0d
+			y: -1.0d
+			dependencies: ["7B0BBD0E9F82939D"]
+			id: "0DF20AB6978A93FE"
+			tasks: [{
+				id: "036E856A5BC3198E"
+				type: "item"
+				item: "create:integrated_circuit"
+			}]
+		}
+		{
+			x: -9.0d
+			y: 0.0d
+			dependencies: ["0DF20AB6978A93FE"]
+			id: "7FFAB99194EEE0FC"
+			tasks: [{
+				id: "5C01AC729BC07CFA"
+				type: "item"
+				item: "ad_astra:compressed_ostrum"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 0.0d
+			dependencies: ["0DF20AB6978A93FE"]
+			id: "209A7861715C36D7"
+			tasks: [{
+				id: "2B164190154B02C2"
+				type: "item"
+				item: "createaddition:tesla_coil"
+			}]
+		}
+		{
+			title: "A new tier of circuit..."
+			x: -7.964285714285715d
+			y: 2.7193877551020407d
+			shape: "rsquare"
+			subtitle: "This time it will be needed a LOT, like a lot."
+			description: ["All components of the recipe are automatable allowing for some creative methods."]
+			dependencies: [
+				"7FFAB99194EEE0FC"
+				"209A7861715C36D7"
+			]
+			size: 1.5d
+			id: "5729A883639B2EEF"
+			tasks: [{
+				id: "5F77DA249763A9A4"
+				type: "item"
+				item: "techreborn:electronic_circuit"
+			}]
+		}
+		{
+			x: -10.0d
+			y: 2.0d
+			dependencies: ["5729A883639B2EEF"]
+			optional: true
+			id: "673DC1F22D2F790D"
+			tasks: [{
+				id: "343A9BACCFB28B13"
+				type: "item"
+				item: "techreborn:industrial_centrifuge"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 2.5d
+			dependencies: ["5729A883639B2EEF"]
+			id: "42FDBAC4A8966F9D"
+			tasks: [{
+				id: "151F4608F7E77B3D"
+				type: "item"
+				item: "techreborn:clay_dust"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 3.5d
+			dependencies: ["30B554B51AEFEB0C"]
+			id: "33DBA03CF188DF0B"
+			tasks: [
+				{
+					id: "4AD6A2F23A9FACEE"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "tconstruct:molten_iron"
+						}
+					}
+				}
+				{
+					id: "5C4466EA099805DA"
+					type: "item"
+					item: "techreborn:coal_dust"
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: 3.5d
+			id: "4AEC38BDC884A6C4"
+			tasks: [{
+				id: "544483DAD0120103"
+				type: "item"
+				item: "techreborn:steel_dust"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 2.0d
+			dependencies: ["673DC1F22D2F790D"]
+			optional: true
+			id: "48F61CBC3AFDEEBD"
+			tasks: [{
+				id: "4D9EE9214394B475"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "ad_astra:oil"
+					}
+				}
+			}]
+		}
+		{
+			x: -11.5d
+			y: 3.5d
+			subtitle: "UNLOCK: Superheated Blaze Burners!"
+			dependencies: ["0373FACF0AB8113E"]
+			id: "62545906EFC80BCD"
+			tasks: [{
+				id: "7DA41241E16D509D"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "ad_astra:fuel"
+					}
+				}
+			}]
+		}
+		{
+			x: -10.799999999999999d
+			y: -0.6d
+			shape: "diamond"
+			size: 1.2d
+			optional: true
+			id: "520A09EF39A1BF5D"
+			tasks: [{
+				id: "63F4A287D6A5B92F"
+				type: "item"
+				item: "ad_astra:infernal_spire_block"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 0.0d
+			shape: "diamond"
+			dependencies: ["520A09EF39A1BF5D"]
+			secret: true
+			id: "27B0EA62812564DD"
+			tasks: [{
+				id: "46A91B73816C6440"
+				type: "item"
+				item: "tconstruct:debris_nugget"
+				count: 64L
 			}]
 		}
 	]

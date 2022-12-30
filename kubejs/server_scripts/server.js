@@ -500,6 +500,7 @@ onEvent('recipes', event => {
 
   event.remove({output: 'techreborn:electronic_circuit'})
   event.remove({output: 'techreborn:industrial_circuit'})
+  event.remove({output: 'techreborn:energy_flow_chip'})
   event.remove({output: 'techreborn:lithium_ion_battery'})
   event.remove({mod: 'powah'})
   event.remove({output: 'techreborn:rubber', type: 'minecraft:smelting'})
@@ -621,11 +622,23 @@ onEvent('recipes', event => {
   event.replaceInput({mod: 'techreborn'}, 'techreborn:nichrome_heating_coil', 'createastral:ender_heating_coil')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:energy_crystal', 'create:precision')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:lapotron_crystal', 'create:precision_mechanism')
+  event.replaceInput({mod: 'techreborn'}, 'techreborn:advanced_alloy_plate', 'techreborn:lead_plate')
   event.replaceInput({mod: 'techreborn', output: 'techreborn:advanced_drill'}, 'ad_astra:compressed_calorite', 'techreborn:lead_plate')
   event.replaceInput({mod: 'techreborn', output: 'techreborn:advanced_chainsaw'}, 'ad_astra:compressed_calorite', 'techreborn:lead_plate')
   event.replaceInput({mod: 'techreborn', output: 'techreborn:advanced_jackhammer'}, 'ad_astra:compressed_calorite', 'techreborn:lead_plate')
 
 
+
+  event.custom({
+    "type":"createaddition:rolling",
+    "input": {
+          "tag": "c:nuggets/gold"
+    },
+    "result": {
+      "item": "createastral:golden_pin",
+      "count": 1
+    }
+  })
 
   event.custom({
     "type": "tconstruct:casting_table",
@@ -683,13 +696,17 @@ event.recipes.createDeploying('create:andesite_casing', ['create:copper_sheet', 
 ]).transitionalItem('create:andesite_casing').loops(1) 
 
 event.recipes.createSequencedAssembly([ // begin
-'create:precision_mechanism', // output
-], 'createastral:astral_singularity', [ // input
-event.recipes.createDeploying('createastral:astral_singularity', ['createastral:astral_singularity', 'create:experience_nugget']),
-event.recipes.createDeploying('createastral:astral_singularity', ['createastral:astral_singularity', 'create:polished_rose_quartz']),
-event.recipes.createDeploying('createastral:astral_singularity', ['createastral:astral_singularity', 'create:brass_ingot']),
+'createastral:incomplete_electronic_circuit', // output
+], 'create:integrated_circuit', [ // input
+event.recipes.createDeploying('create:integrated_circuit', ['create:integrated_circuit', 'createastral:golden_pin']), 
+]).transitionalItem('create:integrated_circuit').loops(64) 
 
-]).transitionalItem('createastral:astral_singularity').loops(100) 
+event.recipes.createSequencedAssembly([ // begin
+'techreborn:electronic_circuit', // output
+], 'createastral:incomplete_electronic_circuit', [ // input
+event.recipes.createDeploying('createastral:incomplete_electronic_circuit', ['createastral:incomplete_electronic_circuit', 'ad_astra:compressed_ostrum']), 
+event.recipes.createPressing('createastral:incomplete_electronic_circuit', 'createastral:incomplete_electronic_circuit')
+]).transitionalItem('createastral:incomplete_electronic_circuit').loops(1) 
 
 
 
@@ -1895,11 +1912,11 @@ event.recipes.createMixing(Fluid.of('kubejs:hellfire', 81), [
     	
 	event.recipes.createSequencedAssembly([ 
   'create:integrated_circuit', 
-], 'ae2:certus_quartz_crystal', [ 
-event.recipes.createPressing('techreborn:silver_plate', 'techreborn:silver_plate'),
-event.recipes.createFilling('techreborn:silver_plate', ['techreborn:silver_plate', {fluid: 'tconstruct:molten_silver', amount: 1300}]), //fill bronze
-  event.recipes.createDeploying('techreborn:silver_plate', ['techreborn:silver_plate', 'techreborn:insulated_copper_cable']), //fill bronze
-]).transitionalItem('techreborn:silver_plate').loops(6)
+], 'create:lapis_sheet', [ 
+event.recipes.createFilling('create:lapis_sheet', ['create:lapis_sheet', {fluid: 'tconstruct:molten_silver', amount: 1300}]), //fill bronze
+  event.recipes.createDeploying('create:lapis_sheet', ['create:lapis_sheet', 'techreborn:insulated_copper_cable']), //fill bronze
+  event.recipes.createPressing('create:lapis_sheet', 'create:lapis_sheet'),
+]).transitionalItem('create:lapis_sheet').loops(6)
 
 event.recipes.createSequencedAssembly([ 
 'techreborn:electronic_circuit',
@@ -1912,10 +1929,10 @@ event.recipes.createDeploying('create:integrated_circuit', ['create:integrated_c
 event.recipes.createSequencedAssembly([ 
   'techreborn:industrial_circuit',
   ], 'techreborn:electronic_circuit', [ 
-  event.recipes.createFilling('techreborn:electronic_circuit', ['techreborn:electronic_circuit', {fluid: 'techreborn:lithium', amount: 10125}]), //fill bronze
+  event.recipes.createFilling('techreborn:electronic_circuit', ['techreborn:electronic_circuit', {fluid: 'techreborn:lithium', amount: 1500}]), //fill bronze
   event.recipes.createPressing('techreborn:electronic_circuit', 'techreborn:electronic_circuit'),
-  event.recipes.createDeploying('techreborn:electronic_circuit', ['techreborn:electronic_circuit', 'ad_astra:compressed_calorite']), //fill bronze
-  ]).transitionalItem('techreborn:electronic_circuit').loops(3)
+  event.recipes.createDeploying('techreborn:electronic_circuit', ['techreborn:electronic_circuit', 'ad_astra:calorite_nugget']), //fill bronze
+  ]).transitionalItem('techreborn:electronic_circuit').loops(18)
 	 
 	event.recipes.createSequencedAssembly([ // begin
         'minecraft:ender_eye', // output
@@ -1944,9 +1961,7 @@ event.recipes.createPressing('createastral:bronze_sheet', 'createastral:bronze_i
 ////////////////  EARLY GAME ANDESITE / GROUT RELATED STUFF 
 
  event.recipes.createMixing('create:chromatic_compound', [
-  'ad_astra:desh_block',
-  'ad_astra:ostrum_block',
-  'ad_astra:calorite_block',,
+  '5x techreborn:uu_matter',
   {fluid: 'kubejs:shimmer', amount: 81000},
 ]).superheated().processingTime(2500)
 
@@ -2077,6 +2092,13 @@ event.recipes.createMixing('8x tconstruct:grout', [
     Item.of('minecraft:netherrack').withChance(1),
   ], 'minecraft:soul_sand')
 
+  event.recipes.createCrushing([
+    'minecraft:magma_block',
+    Item.of('tconstruct:debris_nugget').withChance(0.03),
+  ], 'ad_astra:infernal_spire_block')
+  event.recipes.createCrushing([
+    Item.of('ad_astra:ostrum_nugget').withChance(0.3),
+  ], 'ad_astra:conglomerate')
 
 
 
@@ -2230,7 +2252,7 @@ event.custom(
 
 event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:basic_machine_casing"},{"item":"ad_astra:compressed_steel"}],"results":[{"item":"techreborn:advanced_machine_casing"}]})
 event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:advanced_machine_frame"},{"item":"techreborn:industrial_circuit"}],"results":[{"item":"techreborn:industrial_machine_frame"}]})
-event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:basic_machine_frame"},{"item":"techreborn:advanced_alloy_plate"}],"results":[{"item":"techreborn:advanced_machine_frame"}]})
+event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:basic_machine_frame"},{"item":"techreborn:lead_plate"}],"results":[{"item":"techreborn:advanced_machine_frame"}]})
 event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:basic_machine_casing"},{"item":"create:sturdy_sheet"}],"results":[{"item":"techreborn:industrial_machine_casing"}]})
 event.custom({"type":"create:item_application","ingredients":[{"item":"create:andesite_casing"},{"tag":"c:plates/obsidian"}],"results":[{"item":"create:railway_casing"}]})
 

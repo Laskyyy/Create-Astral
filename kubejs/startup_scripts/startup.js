@@ -253,6 +253,10 @@ onEvent("item.modification", event => {
     item.burnTime = 50000
   })
 
+  event.modify('ad_asta:fuel_bucket', item => {
+    item.burnTime = 50000
+  })
+
 })		
 
 
@@ -363,6 +367,9 @@ event.create('createastral:andesite_compound'),
 event.create('createastral:bronze_sheet'),
 event.create('create:lapis_sheet'),
 event.create('create:integrated_circuit'),
+event.create('createastral:incomplete_electronic_circuit'),
+event.create('createastral:golden_pin'),
+event.create('createastral:uwaah'),
 event.create('createastral:bronze_ingot'),
 event.create('createastral:navigation_mechanism')
 event.create('createastral:radiant_helmet', 'helmet').tier('radiantarmor').glow(true).rarity('Epic'),

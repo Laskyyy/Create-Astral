@@ -256,6 +256,7 @@
 			subtitle: "It's brass now."
 			description: ["A basic computer but like, better?"]
 			dependencies: ["3EA569DE4AC60CC2"]
+			optional: true
 			id: "1142742E67E7F493"
 			tasks: [{
 				id: "34E2A2F81176C47A"
@@ -275,6 +276,7 @@
 			subtitle: "Stop playing bad apple on boot, PLEASE"
 			description: ["\"no\""]
 			dependencies: ["1142742E67E7F493"]
+			optional: true
 			id: "75E964418F7E94F0"
 			tasks: [{
 				id: "581714BC88B65CFE"
@@ -292,6 +294,7 @@
 			x: -12.0d
 			y: 6.0d
 			dependencies: ["75E964418F7E94F0"]
+			optional: true
 			id: "02AE40C72FE1744E"
 			tasks: [{
 				id: "1BDADD385B8DE7B9"
@@ -571,16 +574,23 @@
 			}]
 		}
 		{
-			title: "Creating Silver Plates"
+			title: "Essential Plates."
 			x: -17.5d
 			y: -2.5d
 			dependencies: ["1DFF76A494C9A586"]
 			id: "1A08EE7C76242947"
-			tasks: [{
-				id: "325D01D8E55F1EAE"
-				type: "item"
-				item: "techreborn:silver_plate"
-			}]
+			tasks: [
+				{
+					id: "325D01D8E55F1EAE"
+					type: "item"
+					item: "techreborn:silver_plate"
+				}
+				{
+					id: "3E55E8714C51E60E"
+					type: "item"
+					item: "minecraft:lapis_block"
+				}
+			]
 		}
 		{
 			title: "Automate Circuits!"
@@ -856,6 +866,7 @@
 			y: -5.0d
 			subtitle: "These have no durability, are enchantable but require power as a resource instead!"
 			dependencies: ["07B10625859F1AF9"]
+			optional: true
 			id: "64271E1245394C9A"
 			tasks: [{
 				id: "6D52114BB4345CAD"
@@ -869,6 +880,7 @@
 			y: -4.5d
 			subtitle: "Love me minin"
 			dependencies: ["64271E1245394C9A"]
+			optional: true
 			id: "4649E8638D453CFB"
 			tasks: [{
 				id: "287898CC893AB92B"
@@ -882,6 +894,7 @@
 			y: -4.5d
 			subtitle: "Love me trees"
 			dependencies: ["64271E1245394C9A"]
+			optional: true
 			id: "5A7912DAF9F6C05E"
 			tasks: [{
 				id: "387149BF7F140B2A"
@@ -895,6 +908,7 @@
 			y: -5.5d
 			subtitle: "Love me rocks"
 			dependencies: ["64271E1245394C9A"]
+			optional: true
 			id: "006608C6FDD18B20"
 			tasks: [{
 				id: "2985D693FD8F5DA3"
@@ -908,6 +922,7 @@
 			y: -5.5d
 			subtitle: "Love me silk"
 			dependencies: ["64271E1245394C9A"]
+			optional: true
 			id: "20CFA79532615B61"
 			tasks: [{
 				id: "1CCBB710DC967AA3"
@@ -930,6 +945,7 @@
 			y: -6.0d
 			subtitle: "Love me sap"
 			dependencies: ["64271E1245394C9A"]
+			optional: true
 			id: "520ABA39D0E22434"
 			tasks: [{
 				id: "6451B34C764E2D1F"
@@ -1028,17 +1044,6 @@
 				id: "008BAD5CE1A2185E"
 				type: "item"
 				item: "ad_astra:oxygen_distributor"
-			}]
-		}
-		{
-			x: -9.5d
-			y: 4.0d
-			dependencies: ["3EA569DE4AC60CC2"]
-			id: "3D1DFB4B570E062A"
-			tasks: [{
-				id: "56AF57C351155D92"
-				type: "item"
-				item: "immersive_aircraft:airship"
 			}]
 		}
 		{
@@ -1156,6 +1161,7 @@
 			y: 5.0d
 			hide_dependency_lines: true
 			dependencies: ["3EA569DE4AC60CC2"]
+			optional: true
 			id: "3B27F482BC8939A6"
 			tasks: [{
 				id: "551EF4577CB1944E"
@@ -1167,6 +1173,7 @@
 			x: -10.0d
 			y: 6.0d
 			dependencies: ["3B27F482BC8939A6"]
+			optional: true
 			id: "12DFDA396C44D93D"
 			tasks: [
 				{
@@ -1185,6 +1192,7 @@
 			x: -9.0d
 			y: 6.0d
 			dependencies: ["3B27F482BC8939A6"]
+			optional: true
 			id: "5D0287CE6D3481CC"
 			tasks: [
 				{
@@ -1210,6 +1218,7 @@
 				"(Press U on a tesla coil instead)"
 			]
 			dependencies: ["19CCFE1A90B73F44"]
+			optional: true
 			id: "512B5F1349E34457"
 			tasks: [{
 				id: "2346509FED8141D4"
@@ -1240,6 +1249,7 @@
 			y: -5.5d
 			subtitle: "Welcome to Overwatch"
 			dependencies: ["19CCFE1A90B73F44"]
+			optional: true
 			id: "34E41CF057C08A48"
 			tasks: [
 				{

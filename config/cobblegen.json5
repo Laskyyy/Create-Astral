@@ -96,7 +96,7 @@
       "ad_astra:moon_stone": [
         {
           "id": "ad_astra:moon_stone",
-          "weight": 2.0
+          "weight": 5.0
         },
         {
           "id": "minecraft:basalt",
@@ -106,7 +106,7 @@
       "ad_astra:mars_stone": [
         {
           "id": "ad_astra:mars_stone",
-          "weight": 2.0
+          "weight": 9.0
         },
         {
           "id": "ad_astra:conglomerate",
@@ -116,11 +116,37 @@
       "ad_astra:mercury_stone": [
         {
           "id": "ad_astra:mercury_stone",
-          "weight": 2.0
+          "weight": 5.0
         },
         {
           "id": "minecraft:blackstone",
           "weight": 1.0
+        }
+      ],
+      "compressor:triple_compressed_andesite": [
+        {
+          "id": "minecraft:andesite",
+          "weight": 1
+        },
+        {
+          "id": "minecraft:cobblestone",
+          "weight": 5
+        }
+      ],
+       "compressor:quadruple_compressed_andesite": [
+        {
+          "id": "minecraft:andesite",
+          "weight": 1
+        },
+        {
+          "id": "minecraft:cobblestone",
+          "weight": 2
+        }
+      ],
+       "compressor:quintuple_compressed_andesite": [
+        {
+          "id": "minecraft:andesite",
+          "weight": 1
         }
       ]
     },
