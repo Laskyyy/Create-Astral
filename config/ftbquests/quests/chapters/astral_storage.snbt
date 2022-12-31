@@ -227,6 +227,7 @@
 			title: "Circuits for you..."
 			x: -5.0d
 			y: -1.0d
+			subtitle: "Basic circuit frame for use in the inscriber."
 			dependencies: [
 				"43DF61335F1A3AD6"
 				"227EF17194467491"

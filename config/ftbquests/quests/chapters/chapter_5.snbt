@@ -39,6 +39,7 @@
 			x: -8.0d
 			y: -4.0d
 			subtitle: "Make yourself at home, it only gets worse from here..."
+			description: ["The theming of Mars is Piglin related! Find large quantities of gold, lead and ostrum, along with new structures including the Forbidden castle and piglin bastions."]
 			dependencies: ["63DCF596AAA9A232"]
 			id: "253F29A00B4EA050"
 			tasks: [{
@@ -54,6 +55,7 @@
 			y: 5.0d
 			shape: "square"
 			subtitle: "This stuff should be durable enough to make a phat new rocket."
+			description: ["A key component in later game recipes and survival on mercury!"]
 			dependencies: ["5729A883639B2EEF"]
 			size: 2.0d
 			id: "3A5D7E60EF1C3BC3"
@@ -66,6 +68,7 @@
 		{
 			x: -10.5d
 			y: 5.0d
+			subtitle: "Better than diamonds~"
 			dependencies: ["3A5D7E60EF1C3BC3"]
 			optional: true
 			id: "78C43CAB30772606"
@@ -155,6 +158,11 @@
 			x: -6.0d
 			y: 1.5d
 			subtitle: "This isn't a dodgy Astral multiblock, its a fully fledged block."
+			description: [
+				"Electrolysing various dusts and minerals can produce a large array of new materials."
+				""
+				"As of currently, lithium is the main one to be worried about before further ones are implemented."
+			]
 			dependencies: ["5729A883639B2EEF"]
 			id: "684E33C50BD55A8E"
 			tasks: [{
@@ -164,6 +172,7 @@
 			}]
 		}
 		{
+			title: "Military-Grade Space Gear"
 			x: -6.5d
 			y: 7.5d
 			dependencies: ["2E53AE0F26538CF3"]
@@ -235,6 +244,7 @@
 		{
 			x: -10.5d
 			y: 6.0d
+			subtitle: "Bouncy..."
 			dependencies: ["3A5D7E60EF1C3BC3"]
 			optional: true
 			id: "08CEB76C11CCE833"
@@ -267,6 +277,13 @@
 			title: "A blast furnace for forging steel alloy."
 			x: -6.0d
 			y: 3.5d
+			description: [
+				"Before obtaining steel, a few processes are required to set up."
+				""
+				"Steel dust is the baseline for alloying steel, but such a metal requires a high heat threshold to form."
+				""
+				"The blast furnace multiblock can unlock this capability."
+			]
 			dependencies: ["5729A883639B2EEF"]
 			id: "30B554B51AEFEB0C"
 			tasks: [{
@@ -292,6 +309,11 @@
 			x: -10.0d
 			y: 3.5d
 			subtitle: "In conjunction with Ad Astra Oil, you can distill a fuel fluid which can burn hotter than anything you've seen."
+			description: [
+				"This fuel can be pumped into blaze burners to superheat them."
+				""
+				"Try distilling some oil cells in the tower."
+			]
 			dependencies: ["5729A883639B2EEF"]
 			id: "0373FACF0AB8113E"
 			tasks: [
@@ -379,6 +401,7 @@
 		{
 			x: -5.25d
 			y: 6.0d
+			subtitle: "Create drill without the create?"
 			dependencies: ["3A5D7E60EF1C3BC3"]
 			size: 1.5d
 			optional: true
@@ -391,15 +414,27 @@
 		}
 		{
 			title: "Components for an upgraded circuit!"
-			x: -8.0d
-			y: -2.5d
+			x: -8.5d
+			y: -3.0d
+			description: [
+				"The next tier of circuit will require a new process assembly line."
+				""
+				"Mill golden nuggets into pins and electrify them under a tesla coil + depot to obtain electrified pins."
+			]
 			dependencies: ["253F29A00B4EA050"]
 			id: "7B0BBD0E9F82939D"
-			tasks: [{
-				id: "462ECA657570F004"
-				type: "item"
-				item: "createastral:golden_pin"
-			}]
+			tasks: [
+				{
+					id: "462ECA657570F004"
+					type: "item"
+					item: "createastral:golden_pin"
+				}
+				{
+					id: "7D3A517B56E9930F"
+					type: "item"
+					item: "createaddition:rolling_mill"
+				}
+			]
 			rewards: [{
 				id: "7050ECC0194472C4"
 				type: "item"
@@ -407,21 +442,11 @@
 			}]
 		}
 		{
-			title: "roll it"
-			x: -7.0d
-			y: -3.0d
-			id: "0191FC3FA35271FD"
-			tasks: [{
-				id: "20EB397067E46C9A"
-				type: "item"
-				item: "createaddition:rolling_mill"
-			}]
-		}
-		{
-			title: "incomplete"
-			x: -8.0d
-			y: -1.0d
-			dependencies: ["7B0BBD0E9F82939D"]
+			title: "The incomplete mechanism..."
+			x: -7.5d
+			y: 0.5d
+			description: ["With the basic pins in position, clamp down an ostrum plate to finish the process."]
+			dependencies: ["0476231FB94F095A"]
 			id: "0DF20AB6978A93FE"
 			tasks: [{
 				id: "036E856A5BC3198E"
@@ -430,9 +455,9 @@
 			}]
 		}
 		{
-			x: -9.0d
-			y: 0.0d
-			dependencies: ["0DF20AB6978A93FE"]
+			x: -8.5d
+			y: 0.5d
+			dependencies: ["0476231FB94F095A"]
 			id: "7FFAB99194EEE0FC"
 			tasks: [{
 				id: "5C01AC729BC07CFA"
@@ -441,26 +466,19 @@
 			}]
 		}
 		{
-			x: -7.0d
-			y: 0.0d
-			dependencies: ["0DF20AB6978A93FE"]
-			id: "209A7861715C36D7"
-			tasks: [{
-				id: "2B164190154B02C2"
-				type: "item"
-				item: "createaddition:tesla_coil"
-			}]
-		}
-		{
 			title: "A new tier of circuit..."
 			x: -7.964285714285715d
 			y: 2.7193877551020407d
 			shape: "rsquare"
 			subtitle: "This time it will be needed a LOT, like a lot."
-			description: ["All components of the recipe are automatable allowing for some creative methods."]
+			description: [
+				"With access to Advanced CPUs, new industrial tier machines are now able to be constructed, each with some unique uses."
+				""
+				"Inspect the branching quest lines to uncover more about them."
+			]
 			dependencies: [
 				"7FFAB99194EEE0FC"
-				"209A7861715C36D7"
+				"0DF20AB6978A93FE"
 			]
 			size: 1.5d
 			id: "5729A883639B2EEF"
@@ -468,11 +486,14 @@
 				id: "5F77DA249763A9A4"
 				type: "item"
 				item: "techreborn:electronic_circuit"
+				count: 4L
 			}]
 		}
 		{
+			title: "You spin me right round..."
 			x: -10.0d
 			y: 2.0d
+			description: ["Placeholder text"]
 			dependencies: ["5729A883639B2EEF"]
 			optional: true
 			id: "673DC1F22D2F790D"
@@ -485,6 +506,7 @@
 		{
 			x: -6.0d
 			y: 2.5d
+			subtitle: "Electrolysing clay dust produces lithium liquid, which can be utilised to upgrade red cell batteries."
 			dependencies: ["5729A883639B2EEF"]
 			id: "42FDBAC4A8966F9D"
 			tasks: [{
@@ -494,8 +516,10 @@
 			}]
 		}
 		{
+			title: "The necessary ingredients."
 			x: -4.5d
 			y: 3.5d
+			description: ["Cells of molten iron can be poured from create spouts, ready to be processed with some carbon material to form steel."]
 			dependencies: ["30B554B51AEFEB0C"]
 			id: "33DBA03CF188DF0B"
 			tasks: [
@@ -509,27 +533,33 @@
 							fluid: "tconstruct:molten_iron"
 						}
 					}
+					count: 4L
 				}
 				{
 					id: "5C4466EA099805DA"
 					type: "item"
 					item: "techreborn:coal_dust"
+					count: 32L
 				}
 			]
 		}
 		{
 			x: -3.5d
 			y: 3.5d
+			description: ["Obtain a small stockpile to start with."]
+			dependencies: ["33DBA03CF188DF0B"]
 			id: "4AEC38BDC884A6C4"
 			tasks: [{
 				id: "544483DAD0120103"
 				type: "item"
 				item: "techreborn:steel_dust"
+				count: 16L
 			}]
 		}
 		{
 			x: -11.5d
 			y: 2.0d
+			description: ["Placeholder text."]
 			dependencies: ["673DC1F22D2F790D"]
 			optional: true
 			id: "48F61CBC3AFDEEBD"
@@ -564,9 +594,11 @@
 			}]
 		}
 		{
+			title: "Infernal Spire Processing."
 			x: -10.799999999999999d
 			y: -0.6d
 			shape: "diamond"
+			description: ["Crushing Infernal Spire produces netherite scrap nuggets at a low rate."]
 			size: 1.2d
 			optional: true
 			id: "520A09EF39A1BF5D"
@@ -588,6 +620,34 @@
 				type: "item"
 				item: "tconstruct:debris_nugget"
 				count: 64L
+			}]
+		}
+		{
+			x: -8.0d
+			y: -2.0d
+			description: ["Begin the circuit upgrade by applying 64x of these electrified pins onto an integrated circuit."]
+			dependencies: [
+				"7B0BBD0E9F82939D"
+				"253F29A00B4EA050"
+				"069454E35DC9B5C7"
+			]
+			id: "0476231FB94F095A"
+			tasks: [{
+				id: "04BCF9DF55944974"
+				type: "item"
+				item: "createastral:electrified_pin"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -3.0d
+			description: ["this quest is kinda defunct due to it being a ch3 item, i'll replace it sometime"]
+			dependencies: ["253F29A00B4EA050"]
+			id: "069454E35DC9B5C7"
+			tasks: [{
+				id: "24724A3EB63D3AB1"
+				type: "item"
+				item: "createaddition:tesla_coil"
 			}]
 		}
 	]

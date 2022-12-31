@@ -130,6 +130,7 @@
 			y: -3.75d
 			shape: "gear"
 			subtitle: "Enjoy your stay."
+			description: ["Home to the most hazardous terrain of any planet you've seen so far, mercury holds lucrative returns for those brave enough to explore it."]
 			dependencies: ["5BD2D0F7F0D70180"]
 			size: 1.5d
 			id: "7A4255522DA6FEB7"
@@ -141,7 +142,7 @@
 			}]
 		}
 		{
-			title: "Iridium collection"
+			title: "Ores of mercury"
 			x: 3.5d
 			y: -5.0d
 			dependencies: ["7A4255522DA6FEB7"]
@@ -243,6 +244,7 @@
 			}]
 		}
 		{
+			title: "Energy Flow Chips"
 			x: 2.25d
 			y: 0.0d
 			shape: "square"
@@ -688,10 +690,17 @@
 			tasks: [{
 				id: "445F1481313A0962"
 				type: "item"
-				item: "ad_astra:cryo_freezer"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "kubejs:hellfire"
+					}
+				}
 			}]
 		}
 		{
+			title: "Raw ore"
 			x: 2.0d
 			y: -3.5d
 			dependencies: ["7A4255522DA6FEB7"]
@@ -703,6 +712,7 @@
 			}]
 		}
 		{
+			title: "Calorite Pins, placeholder"
 			x: 7.5d
 			y: -1.0d
 			id: "3091F7AC37F848AD"
@@ -713,6 +723,7 @@
 			}]
 		}
 		{
+			title: "Lithium input placeholder."
 			x: 7.5d
 			y: 1.0d
 			id: "77E9682ED4C5C74D"

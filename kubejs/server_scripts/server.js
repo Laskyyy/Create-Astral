@@ -615,7 +615,7 @@ onEvent('recipes', event => {
   event.replaceInput({mod: 'ae2'}, 'minecraft:copper_ingot', 'techreborn:silver_plate')
   event.replaceInput({mod: 'ae2'}, 'minecraft:redstone', 'ae2:fluix_dust')
   event.replaceInput({mod: 'ae2'}, 'ae2:fluix_crystal', 'ae2:fluix_dust')
-  event.replaceInput({mod: 'techreborn'}, 'techreborn:advanced_circuit', 'techreborn:electronic_circuit')
+  event.replaceInput('techreborn:advanced_circuit', 'techreborn:electronic_circuit')
   event.replaceOutput('techreborn:electronic_circuit', 'create:integrated_circuit')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:cupronickel_heating_coil', 'createastral:copper_heating_coil')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:peridot_plate', 'techreborn:emerald_plate')
