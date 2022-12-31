@@ -10,7 +10,7 @@
 	images: [
 		{
 			x: -8.0d
-			y: -7.5d
+			y: -6.0d
 			width: 3.0d
 			height: 3.0d
 			rotation: 0.0d
@@ -398,7 +398,7 @@
 			tasks: [{
 				id: "462ECA657570F004"
 				type: "item"
-				item: "minecraft:gold_nugget"
+				item: "createastral:golden_pin"
 			}]
 			rewards: [{
 				id: "7050ECC0194472C4"
@@ -426,7 +426,7 @@
 			tasks: [{
 				id: "036E856A5BC3198E"
 				type: "item"
-				item: "create:integrated_circuit"
+				item: "createastral:incomplete_electronic_circuit"
 			}]
 		}
 		{

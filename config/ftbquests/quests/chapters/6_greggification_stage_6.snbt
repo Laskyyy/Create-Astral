@@ -293,14 +293,14 @@
 					tag: {
 						tic_modifiers: [ ]
 						tic_broken: 0b
-						tic_multipliers: { }
-						Damage: 0
 						tic_stats: {
 							"tconstruct:knockback_resistance": 0.1f
 							"tconstruct:armor": 7.0f
 							"tconstruct:durability": 480.0f
 							"tconstruct:armor_toughness": 2.0f
 						}
+						Damage: 0
+						tic_multipliers: { }
 						tic_persistent_data: {
 							upgrades: 1
 							abilities: 1
@@ -430,10 +430,10 @@
 					Count: 1b
 					tag: {
 						pages: ["{\"underlined\":true,\"color\":\"blue\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.curseforge.com/minecraft/modpacks/gt-new-horizons\"},\"text\":\"Greg\"}"]
-						display: { }
-						author: "Jorge Luis Borges"
-						title: "Library Of Babel"
 						resolved: 1b
+						display: { }
+						title: "Library Of Babel"
+						author: "Jorge Luis Borges"
 					}
 				}
 			}]

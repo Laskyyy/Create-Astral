@@ -698,7 +698,7 @@ event.recipes.createDeploying('create:andesite_casing', ['create:copper_sheet', 
 event.recipes.createSequencedAssembly([ // begin
 'createastral:incomplete_electronic_circuit', // output
 ], 'create:integrated_circuit', [ // input
-event.recipes.createDeploying('create:integrated_circuit', ['create:integrated_circuit', 'createastral:static_pin']), 
+event.recipes.createDeploying('create:integrated_circuit', ['create:integrated_circuit', 'createastral:electrified_pin']), 
 ]).transitionalItem('create:integrated_circuit').loops(64) 
 
 event.recipes.createSequencedAssembly([ // begin
@@ -1918,13 +1918,6 @@ event.recipes.createFilling('create:lapis_sheet', ['create:lapis_sheet', {fluid:
   event.recipes.createPressing('create:lapis_sheet', 'create:lapis_sheet'),
 ]).transitionalItem('create:lapis_sheet').loops(6)
 
-event.recipes.createSequencedAssembly([ 
-'techreborn:electronic_circuit',
-], 'create:integrated_circuit', [ 
-event.recipes.createPressing('create:integrated_circuit', 'create:integrated_circuit'),
-event.recipes.createFilling('create:integrated_circuit', ['create:integrated_circuit', {fluid: 'tconstruct:molten_lead', amount: 2600}]), //fill bronze
-event.recipes.createDeploying('create:integrated_circuit', ['create:integrated_circuit', 'ae2:charged_certus_quartz_crystal']), //fill bronze
-]).transitionalItem('create:integrated_circuit').loops(3)
 
 event.recipes.createSequencedAssembly([ 
   'techreborn:industrial_circuit',
