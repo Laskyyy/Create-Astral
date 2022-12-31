@@ -52,7 +52,7 @@
     },
     "WindMillMaxOutput": {
       "comment": "Wind Mill Max Output (Energy per tick)",
-      "value": 128
+      "value": 25
     },
     "WindMillEnergyPerTick": {
       "comment": "Wind Mill generation rate (Energy Per Tick)",
@@ -84,7 +84,7 @@
     },
     "basicDayRate": {
       "comment": "Generation rate during day for Basic Solar Panel (Energy per tick)",
-      "value": 3
+      "value": 5
     }
   },
   "thermal_generator": {
