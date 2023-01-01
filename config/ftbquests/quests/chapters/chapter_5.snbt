@@ -493,7 +493,11 @@
 			title: "You spin me right round..."
 			x: -10.0d
 			y: 2.0d
-			description: ["Placeholder text"]
+			description: [
+				"Centrifuging dusts and various blocks provides further elements."
+				""
+				"For our purposes here, this optional process of centrifuging soul sand into oil can provide a renewable source of it, saving you the need to collect it manually from oil spouts."
+			]
 			dependencies: ["5729A883639B2EEF"]
 			optional: true
 			id: "673DC1F22D2F790D"
@@ -648,6 +652,17 @@
 				id: "24724A3EB63D3AB1"
 				type: "item"
 				item: "createaddition:tesla_coil"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 0.0d
+			dependencies: ["7B5DE5040FC24D21"]
+			id: "259E754B57C45C67"
+			tasks: [{
+				id: "348F9CA589D63FB6"
+				type: "item"
+				item: "gearreborn:nv_goggles"
 			}]
 		}
 	]

@@ -26,6 +26,8 @@
     "minecraft:zombified_piglin",
     "minecraft:ghast",
     "minecraft:enderman",
-    "minecraft:hoglin"
+    "minecraft:hoglin",
+    "minecraft:wolf",
+    "minecraft:parrot"
   ]
 }

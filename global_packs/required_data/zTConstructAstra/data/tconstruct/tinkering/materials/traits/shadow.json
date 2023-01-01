@@ -2,7 +2,7 @@
   "default": [
     {
       "name": "tconstruct:sturdy",
-      "level": 2
+      "level": 1
     },
     {
       "name": "tconstruct:ductile",

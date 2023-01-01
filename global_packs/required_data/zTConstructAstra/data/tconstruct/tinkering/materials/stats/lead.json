@@ -9,7 +9,7 @@
     },
     "tconstruct:head": {
       "durability": 900,
-      "miningSpeed": 5.0,
+      "miningSpeed": 6.5,
       "harvestTier": "minecraft:diamond",
       "attack": 2.5
     }

@@ -53,6 +53,11 @@
 			y: 3.0d
 			shape: "square"
 			subtitle: "Heh, get it?"
+			description: [
+				"UU Matter is a substance which can be utilised in the synthesis of various items. However, it can be harnessed into something even more powerful..."
+				""
+				"Start with mixing this with a superheated burner and some shimmer to form a few chromatic compounds."
+			]
 			dependencies: [
 				"6F1D5D69B4E9266E"
 				"18B380AA3519AFCE"
@@ -72,7 +77,13 @@
 			x: 6.0d
 			y: 0.0d
 			shape: "square"
-			description: ["Lithium and calorite will allow for the creation of cool new circuits with tasty capabilities..."]
+			description: [
+				"Lithium and calorite will allow for the creation of cool new circuits with tasty capabilities..."
+				""
+				"The process for this one will be familiar with the ones you made in chapter 4. These utilise calorite pins and lithium,"
+				""
+				"As you are fairly adept at using REI at this point, I will spare the details on it's creation."
+			]
 			dependencies: [
 				"3091F7AC37F848AD"
 				"77E9682ED4C5C74D"
@@ -543,6 +554,11 @@
 			y: 8.5d
 			shape: "hexagon"
 			subtitle: "fuckin uhhhh conglomerate ingot"
+			description: [
+				"Initiate Fusion between a piece of shadow steel, and a piece of refined radiance. "
+				""
+				"This super-energised alloy is capable of an insane amount of power transfer and durability, proving it as a useful material in powerful items and machines."
+			]
 			dependencies: [
 				"1E93A90AEF614FA3"
 				"69F63D2FA5384442"
@@ -567,6 +583,7 @@
 			x: 1.5d
 			y: 8.5d
 			shape: "square"
+			subtitle: "Concept quest [WIP]"
 			description: [
 				"The Reality Bender allows for an extremely high mining speed at the cost of basically no mining level."
 				"The Atomic Deconstructor functions as a much more powerful nanosaber, though it's damage is reduced to measly 15% against hostile mobs."
@@ -624,10 +641,9 @@
 			}]
 		}
 		{
-			title: "Supercharged Shimmer"
+			title: "Supercharged Singularity."
 			x: 2.5d
 			y: 10.0d
-			subtitle: "tinkers maybe too"
 			dependencies: ["3ED703EAA646A18A"]
 			id: "16A2464A968635F7"
 			tasks: [{
@@ -680,8 +696,8 @@
 			title: "Galactic Collider"
 			x: 7.5d
 			y: 7.5d
-			subtitle: "please greg this recipe"
-			description: ["make plasma with it"]
+			subtitle: "Condensed lava..."
+			description: ["An artificial recreation of the surface of the sun, convert lava using a superheated mixing basin."]
 			dependencies: [
 				"78932223283B0376"
 				"3ED703EAA646A18A"

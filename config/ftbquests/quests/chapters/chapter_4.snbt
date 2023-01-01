@@ -527,6 +527,7 @@
 			x: -18.0d
 			y: 1.0d
 			shape: "diamond"
+			subtitle: "This process applies to same to each planets primary sand+material"
 			description: [
 				"By washing moon sand in the same way you'd make an iron farm, you can obtain a renewable source of silver nuggets."
 				"Moon sand itself can be automated by generating moon stone and crushing it into sand, which you will be able to achieve soon with the crushing wheels."
@@ -1493,6 +1494,40 @@
 				item: "createaddition:biomass_pellet"
 				count: 64
 			}]
+		}
+		{
+			x: -15.5d
+			y: -5.5d
+			dependencies: ["19CCFE1A90B73F44"]
+			id: "6B07593DD5128CAD"
+			tasks: [
+				{
+					id: "0B7212B1ECE573DA"
+					type: "item"
+					item: "gearreborn:hazmat_helmet"
+				}
+				{
+					id: "1389D891058D9693"
+					type: "item"
+					item: "gearreborn:hazmat_chestpiece"
+				}
+				{
+					id: "4AFB367A8FA3323B"
+					type: "item"
+					item: "gearreborn:hazmat_leggings"
+				}
+				{
+					id: "41BA3389E338B21A"
+					type: "item"
+					item: {
+						id: "gearreborn:rubber_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
 		}
 	]
 }
