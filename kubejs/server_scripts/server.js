@@ -643,6 +643,17 @@ onEvent('recipes', event => {
   })
 
   event.custom({
+    "type":"createaddition:rolling",
+    "input": {
+          "item": "ad_astra:calorite_nugget"
+    },
+    "result": {
+      "item": "createastral:calorite_pin",
+      "count": 1
+    }
+  })
+
+  event.custom({
     "type": "tconstruct:casting_table",
     "cast": {
       "item": "ae2:certus_quartz_dust"
@@ -1926,7 +1937,7 @@ event.recipes.createSequencedAssembly([
   ], 'techreborn:electronic_circuit', [ 
   event.recipes.createFilling('techreborn:electronic_circuit', ['techreborn:electronic_circuit', {fluid: 'techreborn:lithium', amount: 1500}]), //fill bronze
   event.recipes.createPressing('techreborn:electronic_circuit', 'techreborn:electronic_circuit'),
-  event.recipes.createDeploying('techreborn:electronic_circuit', ['techreborn:electronic_circuit', 'ad_astra:calorite_nugget']), //fill bronze
+  event.recipes.createDeploying('techreborn:electronic_circuit', ['techreborn:electronic_circuit', 'createastral:calorite_pin']), //fill bronze
   ]).transitionalItem('techreborn:electronic_circuit').loops(18)
 	 
 	event.recipes.createSequencedAssembly([ // begin
