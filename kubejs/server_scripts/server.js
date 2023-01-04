@@ -355,7 +355,6 @@ onEvent('recipes', event => {
 	event.replaceInput({type: 'create:mechanical_crafting', mod: 'createaddition'}, 'create:andesite_alloy', 'techreborn:red_cell_battery')
   event.replaceInput({type: 'create:mechanical_crafting', mod: 'createaddition'}, 'createaddition:iron_rod', 'create:integrated_circuit')
 	event.replaceInput({mod: 'createaddition'}, 'minecraft:redstone_torch', 'create:electron_tube')
-	event.replaceInput({output: 'create:wand_of_symmetry'}, 'minecraft:ender_pearl', 'create:refined_radiance')
   event.replaceInput({output: 'ad_astra:engine_fan'}, 'ad_astra:compressed_steel', 'ad_astra:iron_plate')
   event.replaceInput({output: 'ad_astra:engine_frame'}, 'ad_astra:compressed_steel', 'ad_astra:iron_plate')
 	event.replaceInput({output: 'create:mechanical_drill'}, 'minecraft:iron_ingot', 'create:iron_sheet')
