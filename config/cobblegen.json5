@@ -123,30 +123,26 @@
           "weight": 1.0
         }
       ],
+      "compressor:double_compressed_andesite": [
+        {
+          "id": "minecraft:andesite",
+          "weight": 1.0
+        },
+        {
+          "id": "minecraft:cobblestone",
+          "weight": 5.0
+        }
+      ],
       "compressor:triple_compressed_andesite": [
         {
           "id": "minecraft:andesite",
-          "weight": 1
-        },
-        {
-          "id": "minecraft:cobblestone",
-          "weight": 5
+          "weight": 1.0
         }
       ],
-       "compressor:quadruple_compressed_andesite": [
+      "compressor:quadruple_compressed_andesite": [
         {
-          "id": "minecraft:andesite",
-          "weight": 1
-        },
-        {
-          "id": "minecraft:cobblestone",
-          "weight": 2
-        }
-      ],
-       "compressor:quintuple_compressed_andesite": [
-        {
-          "id": "minecraft:andesite",
-          "weight": 1
+          "id": "compressor:single_compressed_andesite",
+          "weight": 1.0
         }
       ]
     },
