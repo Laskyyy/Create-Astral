@@ -1,5 +1,5 @@
 version:2975
-autoJump:true
+autoJump:false
 autoSuggestions:true
 chatColors:true
 chatLinks:true
@@ -22,7 +22,7 @@ hideLightningFlashes:false
 mouseSensitivity:0.5
 fov:0.5
 screenEffectScale:0.5
-fovEffectScale:0.70710677
+fovEffectScale:0.71041876
 gamma:0.5
 renderDistance:8
 simulationDistance:8

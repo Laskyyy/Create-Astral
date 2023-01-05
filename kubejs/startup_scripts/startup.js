@@ -245,13 +245,6 @@ onEvent("item.modification", event => {
     item.burnTime = 50000
   })
 
-  event.modify('powah:uraninite_raw', item => {
-    item.burnTime = 25000
-  })
-
-  event.modify('powah:uraninite', item => {
-    item.burnTime = 50000
-  })
 
   event.modify('ad_asta:fuel_bucket', item => {
     item.burnTime = 50000
@@ -1147,15 +1140,6 @@ onEvent('worldgen.add', event => {
 			.triangleHeight(0, 115)
 	})
 
-  event.addOre((ore) => {
-		ore.id = "kubejs:radioactive" // optional
-    ore.biomes = 'incendium:toxic_heap' 
-		ore.addTarget('#ad_astra:moon_ore_replaceables', 'powah:deepslate_uraninite_ore')
-
-		ore.count([15, 30])
-			.squared()
-			.triangleHeight(0, 120)
-	})
 
 
 

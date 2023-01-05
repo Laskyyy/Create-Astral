@@ -501,7 +501,6 @@ onEvent('recipes', event => {
   event.remove({output: 'techreborn:industrial_circuit'})
   event.remove({output: 'techreborn:energy_flow_chip'})
   event.remove({output: 'techreborn:lithium_ion_battery'})
-  event.remove({mod: 'powah'})
   event.remove({output: 'techreborn:rubber', type: 'minecraft:smelting'})
   event.remove({output: 'techreborn:basic_machine_frame'})
   event.remove({output: 'techreborn:advanced_machine_frame'})
