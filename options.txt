@@ -115,7 +115,7 @@ key_key.wi_zoom.zoom:key.keyboard.z
 key_key.ae2.wireless_terminal:key.keyboard.unknown
 key_key.ae2.portable_item_cell:key.keyboard.unknown
 key_key.ae2.portable_fluid_cell:key.keyboard.unknown
-key_key.ftbquests.quests:key.keyboard.unknown
+key_key.ftbquests.quests:key.keyboard.j
 key_keybinds.bettercombat.feint:key.keyboard.unknown
 key_keybinds.bettercombat.toggle_mine_with_weapons:key.keyboard.unknown
 key_blanket-client-tweaks.keys.rotateMinecartKey:key.keyboard.unknown
