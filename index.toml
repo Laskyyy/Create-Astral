@@ -726,7 +726,7 @@ hash = "e3cc64740fe9124747d079ac01af461c14b08d2d23cb4b45acda955fd0614484"
 
 [[files]]
 file = "config/spiceoffabric.hjson"
-hash = "8ca6a1ae46b37aa3219c65da1e693615d5923b574a155002ba87f1d7b067cd6b"
+hash = "69a98a56e328b7728889d285818079ac3691e2275e765f2ce4afe44c24e3735e"
 
 [[files]]
 file = "config/starterkit-fabric.json5"
@@ -853,799 +853,799 @@ file = "fancymenustuff/uwu.png"
 hash = "8d7ce46d8038ef37e526605538913133dba45657144c228080d1a8ba1e55436d"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/loot_tables/chests/dungeon.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/loot_tables/chests/dungeon.json"
 hash = "fce304cdedd9c0221b8eaf73f75d67a535f3943ff341e217f2784cc221575d36"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/loot_tables/chests/railtown_coalbarrel.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/loot_tables/chests/railtown_coalbarrel.json"
 hash = "eb5165f3dfd22fd97ce0724e570667536f894be48ea59bd066382a4f789f5926"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/loot_tables/chests/railtown_enginehouse.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/loot_tables/chests/railtown_enginehouse.json"
 hash = "08a85ed7fdc74a0636ed43ca544d174e6a57612978f1436b5b743e72d82c01aa"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/loot_tables/chests/railtown_foodbarrel.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/loot_tables/chests/railtown_foodbarrel.json"
 hash = "adbbfca2595f0b173f2bed56c66610f6c4d782a7cd461517f456eaad94d7ca07"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/loot_tables/chests/railtown_loadinghouse.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/loot_tables/chests/railtown_loadinghouse.json"
 hash = "3a5fe3a8bfdf03b4d140aeb6146f0459d757eafe42a636c6f4df938f222bee0b"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/loot_tables/chests/railtown_minehouse.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/loot_tables/chests/railtown_minehouse.json"
 hash = "662b1dcfbb2943ee7665a8186071fa970e0626fc3ea96a00bd7691cb2d1c6d9c"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/buildings/empty_plot.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/buildings/empty_plot.nbt"
 hash = "f9bc14c0a5d6aa2827ea0110bac832fd03c81d740e452a4c581bfdcd45b7a715"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/buildings/mining_house.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/buildings/mining_house.nbt"
 hash = "e032b30bd250dfb155f61d49d17b51f5cdb0f41a35f870f4e1e9dc9381d4b25b"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/buildings/mining_house_ruined.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/buildings/mining_house_ruined.nbt"
 hash = "caa65eeacbafe6b6235486fa60391f3b5ef8323872d56d8a819874c317c144aa"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/buildings/pillager_tent.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/buildings/pillager_tent.nbt"
 hash = "60a2625a812c1ce6b90e54a58330f1e4270819292b0ef83a583188c15e61131d"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/buildings/wagon.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/buildings/wagon.nbt"
 hash = "88c19d02754affcc3420fb13713c61bd0d98ddd2f273aa737ceca73232a49ab8"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/buildings/well.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/buildings/well.nbt"
 hash = "cdc6152ab5c17c252250fba3dbfd56b45ed228df1089fa34447e62c0d7673121"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/buildings/well_inner1.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/buildings/well_inner1.nbt"
 hash = "c6ee34807a8e2714fe5221ec593961f1b4ebf0ca0ce6e3f01273d7a66089a3ac"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/buildings/well_inner2.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/buildings/well_inner2.nbt"
 hash = "e3ef5161d2a537b867b32ffb7fcba389d874fee5b95c9fb1f5277ebba0353cbb"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/dogstatues/statuecrouch.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/dogstatues/statuecrouch.nbt"
 hash = "c54cb4817a3f725b599ba787bc40f15d319cb483314ba3d5e6e0a75089f3af3d"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/dogstatues/statuelay.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/dogstatues/statuelay.nbt"
 hash = "57bebe4555d04be46179fb49a1f93e907c770b489f640d4902e3eef8f819a842"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/dogstatues/statuepoised.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/dogstatues/statuepoised.nbt"
 hash = "0494ccc7b8d855a28c649d9427f7cb2a04f17448d1af57da75c0564bb8ec00a1"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/dogstatues/statuesit.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/dogstatues/statuesit.nbt"
 hash = "f73004bd62887e908573cb900a39d66a1d98798652e136cff8e9e841a414555b"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/mine/dungeon/dungeon_prop1.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/mine/dungeon/dungeon_prop1.nbt"
 hash = "3bf0851582a64ff28f32e4ebee971461483424d4e10dbf1541578b40609c3e14"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/mine/dungeon/dungeon_prop2.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/mine/dungeon/dungeon_prop2.nbt"
 hash = "212f7b887b15df219e664fdd7a8b350870e26b048342bd38b3a8948dffd5cad0"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/mine/dungeon/dungeon_prop3.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/mine/dungeon/dungeon_prop3.nbt"
 hash = "51556a73c8f5e966ad67e7494bc9981b8cce2dfbc1c914a5d2e0679ba4bb8c5c"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/mine/dungeon/dungeon_prop4.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/mine/dungeon/dungeon_prop4.nbt"
 hash = "eca6e9ea48301d9399f73b17f12076f3bc278c41f0dc86341d8d95a6f68fa1e5"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/mine/dungeon/dungeon_room1.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/mine/dungeon/dungeon_room1.nbt"
 hash = "39b975072eea95e5bea464dfee35841533eb15ff4b56af15a3999970b23354dc"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/mine/dungeon/dungeon_room2.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/mine/dungeon/dungeon_room2.nbt"
 hash = "afb5aea275e9fed14581f21bd23ec53346ff1a5ecefcb02d8ae5a4b879ba24c3"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/mine/dungeon/dungeon_room3.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/mine/dungeon/dungeon_room3.nbt"
 hash = "1e714bf5e95b8e23afb09873cc03c79e21976db153ed986495eec30fed3399fe"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/mine/dungeon/dungeon_room4.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/mine/dungeon/dungeon_room4.nbt"
 hash = "808bc170d615374dd011b570ee2afa1185d58e1018cf465c3903bd2d7cffe1f1"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/mine/dungeon/dungeon_room_final1.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/mine/dungeon/dungeon_room_final1.nbt"
 hash = "b885138e8a3f86c32aa5be903be9183a69881230b4d1b39c42ef7a1f81767cfc"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/mine/dungeon/dungeon_room_final2.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/mine/dungeon/dungeon_room_final2.nbt"
 hash = "974e919a66dfc31b728762ba69f28255f72b472813ba75039b0a292f29c0008a"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/mine/dungeon/dungeon_room_main1.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/mine/dungeon/dungeon_room_main1.nbt"
 hash = "bebddece7c3893c55818944b8cab54efc6edcb25ff3c652a037170e7e6971e1d"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/mine/mine1.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/mine/mine1.nbt"
 hash = "74ad13e09d1cdcf472aa40341186acd27a9f5979576ddabda416bd01fee85309"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/mine/mine_add1.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/mine/mine_add1.nbt"
 hash = "13421c81b3ff07901c7da17eb1f7f6b8859f4a5b9f315e36108417b2e940460b"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/mine/mine_add2.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/mine/mine_add2.nbt"
 hash = "304655bbd7e1dbb1d60dd8b8ad5fa6bc22eb83e438d3caacf9cbf69a6af374e8"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/mine/mine_add3.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/mine/mine_add3.nbt"
 hash = "02c04bad5a1dbcd396b0bc78fdecbecd1c41664eee42f88cdc73f192153224c2"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/mine/mineshaft_floor.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/mine/mineshaft_floor.nbt"
 hash = "9724ee65b751996090655004e2febecb3f394dc4164888c69e2993675c69146a"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/mine/mining_rail1.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/mine/mining_rail1.nbt"
 hash = "645e51f6cd1be1594ba20b207a4c83703a45b7e42fc36d983ff2ce0482e6eaf1"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/mine/mining_rail2.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/mine/mining_rail2.nbt"
 hash = "2e5928d928a40c25cb71f34780e86491d73be06df977a7bb7a5e9d59ffa46366"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/mine/mining_rail3.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/mine/mining_rail3.nbt"
 hash = "f53e0c78b5bc06709e50d0c8cb5ec4b2c1aa20691a4b5bd4add30558a47326f7"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/mine/mining_rail4.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/mine/mining_rail4.nbt"
 hash = "c949df11cb6e6a8bccec3ab4f0a693f08c5391891e885c71c493698818b15bb8"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/moon/a_moon_statue.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/a_moon_statue.nbt"
 hash = "74aa7e3be525e23cd760d272856260d2b4e573919143447906c1fba54d8f597f"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/moon/earth_moon_rock_1.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/earth_moon_rock_1.nbt"
 hash = "df730ffc74805a02f0ecdd8ea950e5dd9bc1c283075cd34b6bd89304ca683a75"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/moon/earth_moon_rock_2.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/earth_moon_rock_2.nbt"
 hash = "c5f3e81a4a2723891b1584bdcc6c6cc41a66bdc495e05c3473530cdca971d94b"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/moon/earth_moon_rock_3.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/earth_moon_rock_3.nbt"
 hash = "e9a4c5c748932424f2e2800130d34538714cc8a2befb7baaa9d8532a33c905ae"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/moon/earth_moon_rock_4.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/earth_moon_rock_4.nbt"
 hash = "3e4a4e0b9e47805c228486a27f04941f1c2698e445ee745080d579279a7a99f8"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/moon/earth_moon_rock_5.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/earth_moon_rock_5.nbt"
 hash = "23e7a8cbd8f9d3be09a681035cdc80337f7e6c212e51d76d072ca895d1cff8a6"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/moon/moon_rock_1.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/moon_rock_1.nbt"
 hash = "39bfc029412071bf94b8cceddeb540b5528d101105e5f08cb30c9ce6fc8d2915"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/moon/moon_rock_1_bottom.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/moon_rock_1_bottom.nbt"
 hash = "034035f30768b93f7daa4c3d2e2d9c1eae74c709963b43f8c1eaf323b485004a"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/moon/moon_rock_2.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/moon_rock_2.nbt"
 hash = "55ba5ded972e2c5e59f524e033c093d0a734f1852171547cb1bf2f0040bc732e"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/moon/moon_rock_2_bottom.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/moon_rock_2_bottom.nbt"
 hash = "1eaf4d739aede13bc552253a36070c62b144d3b947bce8ea8b96a89cc7509f23"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/moon/moon_rock_3.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/moon_rock_3.nbt"
 hash = "78d94389b1ad5e248ac198c9306075acd65b0f41dfc1789efca80b85476166b2"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/moon/moon_rock_3_bottom.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/moon_rock_3_bottom.nbt"
 hash = "fa9f096f3daba20f7a0ac5eb4fb31f485a3a783df4d2b9e8e9dc38219a7079b5"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/moon/moon_rock_4.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/moon_rock_4.nbt"
 hash = "dbcb4dd075518e41e36e5a8ab01661462dc91efc87e0828e49cad6cebb0ebc62"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/moon/moon_rock_4_bottom.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/moon_rock_4_bottom.nbt"
 hash = "bdf5347b3f5831d1a93bcbb73f900ff3858b1270aeb85bcda04c533842050c35"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/moon/moon_rock_5.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/moon_rock_5.nbt"
 hash = "70b130ba6abb65be207b1edefda854ef2da16879e2469154a5cf2e43d1ce3f20"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/moon/moon_rock_5_bottom.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/moon_rock_5_bottom.nbt"
 hash = "6dcb92d580240cce1a442ff612a7ca9a179060efc9a2907fd56d01eaabdf59cd"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/moon/rails/rail1.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/rails/rail1.nbt"
 hash = "688014f46b0db5aa88659599854778bcfccd27fb7cab57e5a52a87f5d2fb9442"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/moon/rails/rail2.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/rails/rail2.nbt"
 hash = "1a53613fc7180108688425a3ff37213392fb5cda957526676cc4bec3ac8aa3a9"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/moon/rails/rail3.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/rails/rail3.nbt"
 hash = "2fee1786fae641f9edeffba3e6a1737838271223781c8393f836c2fbedfc4b79"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/moon/rails/rail_platform.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/rails/rail_platform.nbt"
 hash = "fbc2cf22549bc2a806a80a6002b2d515b941ce834966472b2388a6bc8bcdd4cd"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/paths/path1.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/paths/path1.nbt"
 hash = "b6a48600c6440a0aced37f18d2b4ee3a8917b9f53f8f6a428f791f3d45d63ad5"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/paths/path1_ruined.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/paths/path1_ruined.nbt"
 hash = "ef41cd8aefa35152a286f3517e94111ab7fad451457add83dbbd985545fef7dd"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/paths/path2.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/paths/path2.nbt"
 hash = "d5e12280e7328369360dc629897caa429f07214ce46bedc28bcae78b8d53e5cb"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/paths/path2_ruined.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/paths/path2_ruined.nbt"
 hash = "608f0febd6c19b3db7733e23751f00fc12d7828edabc36e926b8450178c6bc70"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/paths/path3.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/paths/path3.nbt"
 hash = "f9d6cbdbcaadcef4a18f9b5a421adf060ce7d6a525d7c401b3adc1c9cf570d85"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/paths/path3_ruined.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/paths/path3_ruined.nbt"
 hash = "9f20db8568ba5c9690afd8995ad1dc3e1039e195437cd642a556a3d841798f72"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/paths/path_mini1.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/paths/path_mini1.nbt"
 hash = "ec8a484a6e682b121c74572723a5033831d6b04a9d8673d5eb7cd53ce01aa67a"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/paths/path_mini1_ruined.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/paths/path_mini1_ruined.nbt"
 hash = "296d01c2e4edb75828c4abbd8c83fc43cb624e425a8b2be38d39044eab93be5d"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/paths/path_mini2.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/paths/path_mini2.nbt"
 hash = "3cba794bf79c367e36c0a90abb6386476381a7116e3a0d2d6add988d24d74c42"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/paths/path_mini2_ruined.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/paths/path_mini2_ruined.nbt"
 hash = "5da3d8567defaecb0474e10e4a580b6b2d06233de6adc2d37877c1a95bc10e4c"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/paths/path_mini3.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/paths/path_mini3.nbt"
 hash = "b57cb2a1b9851b1964210dfa8798a8bf3396d347aa5a77eaa825e8bc0f83bffa"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/paths/path_start1.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/paths/path_start1.nbt"
 hash = "aacfed51eae586ec2e0704a4e98beea50e6a5035c92c141da271a1ba700e4c15"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/paths/path_start1_ruined.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/paths/path_start1_ruined.nbt"
 hash = "6ed5031358a1c6182fa0ca7ee2a8a4a2696ffe5a90218bd88f81a0cc43e72c33"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/paths/path_start2.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/paths/path_start2.nbt"
 hash = "a4781fff205edc940adbf1a2ce4e3d3ab4e1203d6132795123db8fd13c98eff3"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/paths/path_start2_ruined.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/paths/path_start2_ruined.nbt"
 hash = "d94ffb2d5614829a4231d0cd95ab247b86d7af6306bc32d38c9709e147d801b8"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/paths/path_start3.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/paths/path_start3.nbt"
 hash = "6819832579188ba4e895d8806c7707744e1fee640c373120c49b4515e0ec0462"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/platforms/shelter_platform.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/platforms/shelter_platform.nbt"
 hash = "5bab88fcfcb92bced48b65d6c332acaeebbeae81083a2a9a04abb922b28c053e"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/platforms/shelter_platform_ruined.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/platforms/shelter_platform_ruined.nbt"
 hash = "578cb1e868489cc87538ab0e9a94e9f83b01c64c975b3e730486161dcfc90e4d"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/platforms/small_platform.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/platforms/small_platform.nbt"
 hash = "3614f485411945980431cc2d6badfa90732bc5dfd414748dd3dfe9189c7ae97a"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/platforms/small_platform_ruined.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/platforms/small_platform_ruined.nbt"
 hash = "9ad8a4602d4c38d62ef7775c08582b6d10ebc25ff4409a133a9a5aaeabf5dd5b"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/platforms/ticket_platform.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/platforms/ticket_platform.nbt"
 hash = "69ad01ea9aae5e4826b29ea8e9c68e6ab73f9681ebc0746e7974b0490384b4dc"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/platforms/ticket_platform_ruined.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/platforms/ticket_platform_ruined.nbt"
 hash = "dd52f8500f0fa7ba3a23b4033cb920e39f57942821a91144f278ba93725a2d26"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/rail_buildings/rail_house.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/rail_buildings/rail_house.nbt"
 hash = "87098160ed794202142478a206e4bd0bfb2a80f3a4a561b9d2beb6b35b8d649b"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/rail_buildings/railside_house.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/rail_buildings/railside_house.nbt"
 hash = "f8e98925a9b3e93abe8e74350be82bdf8160f387894621f967d5f2e6a5703fa7"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/rail_buildings/railside_house_ruined.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/rail_buildings/railside_house_ruined.nbt"
 hash = "1915a0c8daa04ad3e05b207ea0e2c7f1984900e61875abfe3effc8295a475c8f"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/rail_buildings/railside_loadinghouse.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/rail_buildings/railside_loadinghouse.nbt"
 hash = "28d815bc168a5643079de93e7679fb0e23ba9fc49863dfc73fb3e502d2131db7"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/rails/straight_rail.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/rails/straight_rail.nbt"
 hash = "ed12361436a969e5b6a8dc0d0c62194fe42d3a86da7b6ae8360bc72fb9d01fb7"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/rails/straight_rail_bridgecrash.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/rails/straight_rail_bridgecrash.nbt"
 hash = "5756d9d94679cc76b0b9175105205571cf9aa97a991318e8fa3b551e8bb36dd3"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/rails/straight_rail_fadeout.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/rails/straight_rail_fadeout.nbt"
 hash = "28448766892ab5c8d208c77a666da5de1fdaa0508d41d0a494808ccaf8a805d7"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/rails/straight_rail_ruined.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/rails/straight_rail_ruined.nbt"
 hash = "52314ac00be034abae0fb25eaa835077215a49d8ff838504f401ce1fad055df1"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/ruins/ruin_ore_1.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/ruins/ruin_ore_1.nbt"
 hash = "f9b7cdd66eb490dfc456959dfad102c2aa2cb22ee7453da6732eea2ff74954f7"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/ruins/ruin_ore_2.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/ruins/ruin_ore_2.nbt"
 hash = "a99d44456093c6293df2b850552a432bf75b226d3440f64ad4adc2add178acb1"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/ruins/ruin_ore_3.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/ruins/ruin_ore_3.nbt"
 hash = "36ee4860ddded3a51df4ac44b2f62f1f7b8e78b0da349cb546223edccb984451"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/ruins/ruin_ore_4.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/ruins/ruin_ore_4.nbt"
 hash = "de6a43365bc97901f8ef7b64c3815e2cd5f6ae661f83cb00337409a984f6eb05"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/ruins/ruin_post_1.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/ruins/ruin_post_1.nbt"
 hash = "15f3c03e258a76b1cede52894bfed76536c9cad28d948e2ee30cbd94b3206f6e"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/ruins/ruin_post_2.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/ruins/ruin_post_2.nbt"
 hash = "f0bc5098c8c2585597a30378c6032f86cffd02abc0e1a5156331f6ac99bfd5f8"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/ruins/ruin_post_3.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/ruins/ruin_post_3.nbt"
 hash = "e92e3a1fb72ec9d07440723fa4ef3646b2ace1b63daa04bedf0f87a55e662cfd"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/ruins/ruin_stone_1.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/ruins/ruin_stone_1.nbt"
 hash = "4afa857ecbafd674b9ef05e46357ab1f4086aff323b2ec9a381d7a9a28e6d6c0"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/ruins/ruin_stone_2.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/ruins/ruin_stone_2.nbt"
 hash = "a6467c2a2f7da49eec1df4d7f66c6040c31d97d32e4c3332812cc0e0a776ac47"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/ruins/ruin_stone_3.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/ruins/ruin_stone_3.nbt"
 hash = "4706c5dcdf9f3c0194a48a2386d65fbc789b88a88ad16da93511ecfade8e87dc"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/ruins/ruin_stone_4.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/ruins/ruin_stone_4.nbt"
 hash = "b2579cb7f55339d967f858f46b19dd1536c2495f97d2f151133c30bdaa7ac6a4"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/ruins/ruin_stone_5.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/ruins/ruin_stone_5.nbt"
 hash = "74757b2950838c650e60be50fb83d1f2b815b852acceb6be4cfee2193a3242ac"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/ruins/ruin_wall_1.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/ruins/ruin_wall_1.nbt"
 hash = "ac1a410be1f085301dd823ee47f428d2279b996deb770e5491302ca1aaec5b84"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/ruins/ruin_wall_10.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/ruins/ruin_wall_10.nbt"
 hash = "a9019707651903c95f291df68b10cafd443d26660dbc397e8177b3de84b8c78b"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/ruins/ruin_wall_2.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/ruins/ruin_wall_2.nbt"
 hash = "5a6c0278abc03fc140ff106e31be4c24760e3bf27ba8611addb9dd73972a0541"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/ruins/ruin_wall_3.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/ruins/ruin_wall_3.nbt"
 hash = "2e6ba3e670382118b23dd0469acff8d2d274935ea0aa9d0bec5214b315d94565"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/ruins/ruin_wall_4.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/ruins/ruin_wall_4.nbt"
 hash = "cff17fbb626843ef268d1091bc2933553dd4cb0e66a93dafd6a3b0f62b6e348c"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/ruins/ruin_wall_5.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/ruins/ruin_wall_5.nbt"
 hash = "a33886bcd6fef8a985a4014a0bdac5a9dc50990b08e8f7b3bbc3e392bccae1f9"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/ruins/ruin_wall_6.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/ruins/ruin_wall_6.nbt"
 hash = "c06cccbfd407985a518887e5ac7b076c83f0a783641309ddc1553d31bb0bf812"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/ruins/ruin_wall_7.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/ruins/ruin_wall_7.nbt"
 hash = "8274e66cac566cae8f82326af11747b13a573611cff5b8cc1aaa6dedb2efe619"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/ruins/ruin_wall_8.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/ruins/ruin_wall_8.nbt"
 hash = "a0a83e6c6c0ba84f90fd31974f1f1262b0b494afc89c8fb4214f542d9ff52163"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/ruins/ruin_wall_9.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/ruins/ruin_wall_9.nbt"
 hash = "eefc2cc05599e3ed2050e010327b1d999d0903d2d946ae0c5741a14835d224b8"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/shimmer_lakes/shimmer_lake_1.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/shimmer_lakes/shimmer_lake_1.nbt"
 hash = "41f10b6324286feb6c645d0354b7b3b29207a383ce7a250ff77c1fd966082a25"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/shimmer_lakes/shimmer_lake_2.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/shimmer_lakes/shimmer_lake_2.nbt"
 hash = "827467ba740d7fd069a49b8a3d668a16f8ea12535c207380ebddd6becd7e6a35"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/shimmer_lakes/shimmer_lake_3.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/shimmer_lakes/shimmer_lake_3.nbt"
 hash = "f20249e0241a3a258a01c5f210645d92a8758f3bda24d67ec744e8f56aa4e755"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/shimmer_lakes/shimmer_lake_lake_add_1.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/shimmer_lakes/shimmer_lake_lake_add_1.nbt"
 hash = "eee5fa517faa0d192e6bb99f4c83a426f93458db1dd22480233fa67c8c37d94c"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/shimmer_lakes/shimmer_lake_lake_add_2.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/shimmer_lakes/shimmer_lake_lake_add_2.nbt"
 hash = "fd7432331cdfdfaa2b41b6ee9f44418abd62f1555e0f71cf7c70a4e39c5bcd1e"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/shimmer_lakes/shimmer_lake_lake_add_3.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/shimmer_lakes/shimmer_lake_lake_add_3.nbt"
 hash = "c399dafe10feac49095672634378b657c7e2580952db48654296db38854f7a8f"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/structures/shimmer_lakes/shimmer_lake_lake_add_4.nbt"
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/shimmer_lakes/shimmer_lake_lake_add_4.nbt"
 hash = "28b15382a7ba1dc0b0c56e8ea1657a8dfc168f0bacfaff60011a87df47e26953"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/tags/worldgen/biome/has_structure/dogstatue.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/tags/worldgen/biome/has_structure/dogstatue.json"
 hash = "f9fdfcf47d4a7cba0fad2ed85fa5268cc4e796d6effef72bce69be130d6a2c72"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/tags/worldgen/biome/has_structure/earth_moon_debris.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/tags/worldgen/biome/has_structure/earth_moon_debris.json"
 hash = "e06688970f49a40dc474181526790466d3239e484ab7a0d18a967eac0731fbd0"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/tags/worldgen/biome/has_structure/mars_moon_debris.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/tags/worldgen/biome/has_structure/mars_moon_debris.json"
 hash = "4183c7ad316d49209bfa25b05f0afcac2d7407c2e37a082eb439e19e387c8443"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/tags/worldgen/biome/has_structure/moon_debris.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/tags/worldgen/biome/has_structure/moon_debris.json"
 hash = "ca2f508c067eee0053bc09675eb772afa845541177b47a9dfec03c1b5677cf29"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/tags/worldgen/biome/has_structure/railtowns.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/tags/worldgen/biome/has_structure/railtowns.json"
 hash = "38333faf77aa7b63252c656e327b343de079ee27c8db9389a6f557e00bde21df"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/tags/worldgen/biome/has_structure/shimmerlakes.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/tags/worldgen/biome/has_structure/shimmerlakes.json"
 hash = "771672cdf45b067c213e57e27708f303c2af7c9a99de0699d474ba011b1e285f"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/tags/worldgen/biome/has_structure/stone_ruins.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/tags/worldgen/biome/has_structure/stone_ruins.json"
 hash = "dfb44eea1d3f89eb5e89b7c354a32c93304ed533d9440655442e3983d9351e09"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/configured_structure_feature/dogstatue.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/configured_structure_feature/dogstatue.json"
 hash = "5c5219eda1d7a007fb8b8830d5e6a784b6f15cd18f033585fb0accf95d8dee9d"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/configured_structure_feature/mars/mars_bastion.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/configured_structure_feature/mars/mars_bastion.json"
 hash = "1d4d120195e31d1a7a72496d14518b217b05b9a997cd23c5e5c03489a2afff4a"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/configured_structure_feature/moon/a_moon_statue.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/configured_structure_feature/moon/a_moon_statue.json"
 hash = "c78ad1fa524bb9673034b2f2079e632c7e4c5d6593e3389b8e15d44c36823229"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/configured_structure_feature/moon/earth_moon_debris.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/configured_structure_feature/moon/earth_moon_debris.json"
 hash = "c2d7f8def112c8d447143fad5fc35b51cda445e5941a3c0743f329b9b4114947"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/configured_structure_feature/moon/mars_moon_debris.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/configured_structure_feature/moon/mars_moon_debris.json"
 hash = "837274e9ff9c6ff006604ff4ec4928248d4df3265a048d3a31eeeb3f0edf9d3d"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/configured_structure_feature/moon/moon_debris.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/configured_structure_feature/moon/moon_debris.json"
 hash = "22177c896198ea9a417d87a4b07ecd5d887f5569800464aaa7d481602d61ef98"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/configured_structure_feature/moon/moon_rail.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/configured_structure_feature/moon/moon_rail.json"
 hash = "ca186bfef35d8da8fe966862b24fb374d26f377def3709fa802c4647b57638be"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/configured_structure_feature/railtown.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/configured_structure_feature/railtown.json"
 hash = "7e413aa8913b6801d031004d51d89d41b7366b7b0437bc16b14d2b225e37033c"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/configured_structure_feature/ruins/ore_ruin.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/configured_structure_feature/ruins/ore_ruin.json"
 hash = "15635667296cc2c46263c6c9852f4b46f11016d81604e8b875ba4b9198f175bf"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/configured_structure_feature/ruins/post_ruin.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/configured_structure_feature/ruins/post_ruin.json"
 hash = "fc994c47b87c4c2bc46765267e126b44d81f3a7e15d83675c8b71677f2dc6b3c"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/configured_structure_feature/ruins/stone_ruin.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/configured_structure_feature/ruins/stone_ruin.json"
 hash = "e1c9ba1945e2a4afea860dd718daf83c78f4c394199b6be4a6f1f5182c56331e"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/configured_structure_feature/ruins/wall_ruin.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/configured_structure_feature/ruins/wall_ruin.json"
 hash = "f8be600f53d7c78a66bb5d069f5b91cc5d07b2fb4367d35d58dcd0d3ad23b03d"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/configured_structure_feature/shimmer_lake.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/configured_structure_feature/shimmer_lake.json"
 hash = "a0f35e1b6cef206d0141553ea13d40104e5e3e9749111a3e792871154a6f68de"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/processor_list/moon_debris/earth_moon_rock_texture.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/processor_list/moon_debris/earth_moon_rock_texture.json"
 hash = "c63d66920749e3757966753758456f6179eba94a6aadaaa1fd71cc0e72337e4c"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/processor_list/moon_debris/earth_moon_rock_texture_cobbled.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/processor_list/moon_debris/earth_moon_rock_texture_cobbled.json"
 hash = "fe09f278e25e30529120d66ccae5372e761398ff0a34ed903a9f6f342d21f07d"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/processor_list/moon_debris/mars_moon_rock_texture.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/processor_list/moon_debris/mars_moon_rock_texture.json"
 hash = "8c55dcc5033c310e0cdbb9346cfb97e1e6e9d2e25df760dda0d29ed3da7243ec"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/processor_list/moon_debris/mars_moon_rock_texture_cobbled.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/processor_list/moon_debris/mars_moon_rock_texture_cobbled.json"
 hash = "3f7578b8f34782336e328b42e55c971759c904d4c03f8da4f1943b991ee7ff24"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/processor_list/moon_debris/moon_rock_texture.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/processor_list/moon_debris/moon_rock_texture.json"
 hash = "48ba1e1a5a6474a58c104fd4ad7306c6a1853d36f9ae5d63bbafbc72767a7ce1"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/processor_list/moon_debris/moon_rock_texture_cobbled.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/processor_list/moon_debris/moon_rock_texture_cobbled.json"
 hash = "1c6a90c729e4ef8d4200dfb6cae55de4c4821e46c7f0dedd977d105f680ade1f"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/processor_list/shimmer_lakes/amethyst_remove.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/processor_list/shimmer_lakes/amethyst_remove.json"
 hash = "5d128a5ece4fd13d7700c288fbbc92cb63133625682bf0b4dcaa16cdaf7b7054"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/processor_list/shimmer_lakes/amethyst_roughen.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/processor_list/shimmer_lakes/amethyst_roughen.json"
 hash = "42fad196cf6e762b486d80e48aacbdfd1ddb19ccbb456f571936d610ef79cf03"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/processor_list/shimmer_lakes/main.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/processor_list/shimmer_lakes/main.json"
 hash = "0957aab4ba605b13810fa4144e8674413fb0a53842dc1d9fd146ca0dde1262b2"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/structure_set/a_moon_statue.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/structure_set/a_moon_statue.json"
 hash = "7029916a29ec121862a9cafe7cb42c061c9f4b8a40e3adb5d8dc67e19e5a9f07"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/structure_set/dogstatues.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/structure_set/dogstatues.json"
 hash = "831ff8b8b4d8772299491ae3002572e96ec564fb6c7014d1914b97c350b59e1c"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/structure_set/earth_moon_debris.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/structure_set/earth_moon_debris.json"
 hash = "5b64b86329e190f0cd2ee92c68816c75a45ee554c7def77a618e8e06b8c2649f"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/structure_set/mars_bastion.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/structure_set/mars_bastion.json"
 hash = "015c88add37516b5fd2e37e239854e7ab9532159a7f1c78493f9accfa95a8295"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/structure_set/mars_moon_debris.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/structure_set/mars_moon_debris.json"
 hash = "4a1009161cebc0c65b288d4062f18a0fde57edf4e5f7f9de020ee7519b0903ff"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/structure_set/moon_debris.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/structure_set/moon_debris.json"
 hash = "d7d2593ce05f4bdd119d9b5cd39cc3f689e4659cd5c60fe2fa1df9390dc4e513"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/structure_set/moon_rail.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/structure_set/moon_rail.json"
 hash = "df96cc37c956a8125bc71fe3c62c207e2ad99a52cc5a5f5797218c9c519daf4d"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/structure_set/railtown.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/structure_set/railtown.json"
 hash = "51d56dbbd17cfd00fa7bc03af390e5dee25fcfa5c1bc08491fe7dd88a83cbce7"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/structure_set/ruins.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/structure_set/ruins.json"
 hash = "595d515a2f43058a3397c332ea3fd7266d4598a9de1d1ea7e56cd9ef90ab0e49"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/structure_set/shimmer_lakes.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/structure_set/shimmer_lakes.json"
 hash = "ccbcc9be1d02380e149e5272963062a8752f67a0438753368d5a7c1058dba536"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/dogstatues/dogstatues.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/dogstatues/dogstatues.json"
 hash = "fbd165f6f37d92ebdd9343e6bbbdb7e25f495de675eaca21e2fed80e7b185fc9"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/mars/bastion.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/mars/bastion.json"
 hash = "2895b017ef649fa3ce9677c7e2ee686de2e91d3b34850fc9c6a2ca91ed979f1e"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/mine/dungeon_props.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/mine/dungeon_props.json"
 hash = "b8d7bcac9acad0eb5b2d5899268f2d6ea57d06aca952859abcae22a20534e6a0"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/mine/dungeon_room.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/mine/dungeon_room.json"
 hash = "2f541273609315eb893ae39030d0db7420e6e80716fb9bfce80c718c0e21390d"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/mine/dungeon_room_final.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/mine/dungeon_room_final.json"
 hash = "99231296786b7416760984c2fe62ffc96dd50ba8325adedad9205add46574c50"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/mine/dungeon_room_main.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/mine/dungeon_room_main.json"
 hash = "33c711908fa485e46081e8d14e8a37b67dcc8aafe9551f6e88b5ad01951da454"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/mine/mine_adds.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/mine/mine_adds.json"
 hash = "9d47b071cacded132932dc64b7a6bbfa39b60e15c930d5b1a3164a9c1ffb76aa"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/mine/mine_rail.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/mine/mine_rail.json"
 hash = "b314d1ef13f835dd3d57645dd79c8ffe9b71e478ed10f0da9e466db612ca6a59"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/mine/mine_shaft.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/mine/mine_shaft.json"
 hash = "177ef6672f579eb317e6e8452ca8dcdf8bd581711564eaa03b783860664b4c2c"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/mine/shaft_floor.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/mine/shaft_floor.json"
 hash = "d6e75ec491bb5366ea6bd73cf45c2bba3eca5ac2d259130a2f381786985b82eb"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/moon/a_moon_statue.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/moon/a_moon_statue.json"
 hash = "1613e358cf9e954a916e749693b07bfad3155beb97b658283705b0602510f610"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/moon/earth_moon_debris.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/moon/earth_moon_debris.json"
 hash = "4c6c69f2aa733c5421734d6c734c8be34755d13968e2dd0b203085adb19d28d4"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/moon/earth_moon_rock_1.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/moon/earth_moon_rock_1.json"
 hash = "07651d0d0d09eb0f27dbcb3fa78a05c1e64e0e286d8c12bdebc75d687f0e040e"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/moon/earth_moon_rock_2.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/moon/earth_moon_rock_2.json"
 hash = "c3cd271499a1308675f5b58f4e404b5bd875c5b4fd1be710c0fe4fbb14c144e8"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/moon/earth_moon_rock_3.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/moon/earth_moon_rock_3.json"
 hash = "9c10e265a986b0f71aaec65c1ae4d8af6997bf0e57eb896d7537a38b9102ae54"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/moon/earth_moon_rock_4.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/moon/earth_moon_rock_4.json"
 hash = "b4dd42affba51dc0b23c9affe4da676064f43b35e0c816cb5ffb3bdfc11b68ea"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/moon/earth_moon_rock_5.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/moon/earth_moon_rock_5.json"
 hash = "94bb08d2530eb0ca9c4c548441d4b381d40f2721a685d44306eed381d164c854"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/moon/mars_moon_debris.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/moon/mars_moon_debris.json"
 hash = "310928937de55643b25876be387251670ced0397d72d19c5b07753ed9f875b82"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/moon/moon_debris.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/moon/moon_debris.json"
 hash = "a3ef21b5e7cc095d2e32c606c66be8e1651aa6bbb6767669a2ff6671b20e1385"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/moon/moon_rock_1.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/moon/moon_rock_1.json"
 hash = "96c2bfe20826a88e8c37d2eef2a4c4ce30ca9c50344f8d6eaab6d478f43038ec"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/moon/moon_rock_2.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/moon/moon_rock_2.json"
 hash = "3c2e92fb3f26063d29a51bd838d91e12920a9f06a6cce5186bc5d31e197c04ce"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/moon/moon_rock_3.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/moon/moon_rock_3.json"
 hash = "bdc7a7d1b82b0649df6443d2c468ef98a7e2feadd93db2391bcfe08c1c061efc"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/moon/moon_rock_4.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/moon/moon_rock_4.json"
 hash = "f571966e2972bce9248c4ef320dfd8f024701f7d596dc90c945e4f181f5ab8c5"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/moon/moon_rock_5.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/moon/moon_rock_5.json"
 hash = "b8982db807f2b738ba60b202feec8f710448db30ecebbf3f2b69433ecefd4b2f"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/moon/rail/rails.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/moon/rail/rails.json"
 hash = "19da4e9f66599c7ab53b80db5f1e447c80a3722340b3886b60a3636c5dbf774b"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/paths/mini_paths.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/paths/mini_paths.json"
 hash = "afe9786eef8d98c619f71a176840f97231b8815d63fbfd89ba0eafb07e4853cf"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/paths/mini_paths_ruined.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/paths/mini_paths_ruined.json"
 hash = "0c7754c90b81a332722a4836f52dac4f4b3a7ada8056414e11ff490d6b08361b"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/paths/paths.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/paths/paths.json"
 hash = "11baa4e7f73001f1872a81a9da12a81cdec542e8fae392e804141cd9b8a6a0f1"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/paths/paths_ruined.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/paths/paths_ruined.json"
 hash = "a3d5bb0d6047053db73262ec23a5d5dcd970e5070afda4e4de8a12e8deeb674c"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/paths/start_paths.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/paths/start_paths.json"
 hash = "1093e75cc7b69083eca2b053edef28a6b7ecf81fd0a878e17be98812da39d446"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/paths/start_paths_ruined.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/paths/start_paths_ruined.json"
 hash = "e877a3902d46d08761f865714cf5e989069191e9a0ffcc8692431b0b63cee2ce"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/platforms/platforms.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/platforms/platforms.json"
 hash = "33a71a0d58491cc1f311ba74964c9a733a25d1ee8ba9a36c52fd4d5a3149d179"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/rails/rails.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/rails/rails.json"
 hash = "c4c55b25a3e527f0ee9077a90956155554cc63bc22a05529c030204a3616365f"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/rails/ruined_rails.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/rails/ruined_rails.json"
 hash = "01afefd2cd228e9b43a844aa2efe45ba2f5b93e4c02261cef3d92ae58e13ef2b"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/ruins/ore_ruins.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/ruins/ore_ruins.json"
 hash = "6c3cdc776dd511b7c90e912ebe197ddd33fd2af2131df889d5d9b72e2edb427d"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/ruins/post_ruins.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/ruins/post_ruins.json"
 hash = "961d770367877d3a1d7d7a9a191e2b3683aa2dc1fc2dab3553926df57808f680"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/ruins/stone_ruins.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/ruins/stone_ruins.json"
 hash = "b0543ee78b6dd65044f5b608f280079ddf054e46a3e561bf641174af501011f8"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/ruins/wall_ruins.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/ruins/wall_ruins.json"
 hash = "b43f4b4cbc84239f6c05af4fc0604a1becb24ea3798570fe5d8c44b431c0eaa7"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/shimmer_lakes/shimmer_lakes_lake_adds.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/shimmer_lakes/shimmer_lakes_lake_adds.json"
 hash = "27f3619932ae63dde55c67745817425782c370fc603de831d94d7b36cd2735f5"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/shimmer_lakes/shimmer_lakes_main.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/shimmer_lakes/shimmer_lakes_main.json"
 hash = "de4a3e27ed9a5ee01e8345fb54bdff38c9998fa5c1921ed348e8ec60cbdc400e"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/data/astralrails/worldgen/template_pool/unique/well.json"
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/unique/well.json"
 hash = "ecb27c9738902d3feaa8e5f2cb0fa030b8bd672cc40c2d57a38e68ebef71a29b"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/pack.mcmeta"
+file = "global_packs/required_data/AstralRails/pack.mcmeta"
 hash = "85c4b83374da5c4d8ee7129697a591e99760c10d0195d1d3a7709b8c898fb9b1"
 
 [[files]]
-file = "global_packs/required_data/AstralRails/AstralRails/pack.png"
+file = "global_packs/required_data/AstralRails/pack.png"
 hash = "678f01057cd46a796eb0f6ef999087b724d6e67e7f1f2176d6471cb91d567c89"
 
 [[files]]
@@ -3082,7 +3082,7 @@ hash = "0743fbe48d9396ac603203156a5d9a34d21c5a774fc1f34210f990c50dcdd3ab"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/extractinator/tags/items/common_drops.json"
-hash = "b4abf9447854832f96dc8fa3ea016c7a5a7515ac7fa59f7de267e37f0e638b21"
+hash = "c6ef6ef015d350bd908d510be04108e9d70e20c032cc446f9d4fb671e313e83d"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/extractinator/tags/items/common_gravel_drops.json"
@@ -16800,6 +16800,11 @@ file = "mods/doodads-0.1.2-github-fork.jar"
 hash = "07ad6be8d379418f51a6fcfa18431477c46b0fed77c209aaf339ed3af987090c"
 
 [[files]]
+file = "mods/drink-beer-fabric.pw.toml"
+hash = "098d21b02f0ecc94c4e06e7d9c9f7beb7d996511b2387fdbf731b5cfacfc24b0"
+metafile = true
+
+[[files]]
 file = "mods/drippy-loading-screen-fabric.pw.toml"
 hash = "7a6f68dfff14a846a72d1bfa9de6a70d183a5a853563251dbd90cb694fcb7e4f"
 metafile = true
@@ -16947,11 +16952,6 @@ metafile = true
 [[files]]
 file = "mods/idwtialsimmoedm.pw.toml"
 hash = "8c6b7556b8a3511ee73121ee2582767923ccc1e96b63cfb681e13466b4ec8a76"
-metafile = true
-
-[[files]]
-file = "mods/immersive-aircraft.pw.toml"
-hash = "960e9ee06df20a391f5110cf8fa0d6d829be7ea6189ef6e81b3cb34745dcc1f7"
 metafile = true
 
 [[files]]
@@ -17311,7 +17311,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "94801f958b78b861677f9b3eae7ade303a20c89afe8cd4cd436f033292eff4cf"
+hash = "446ec631a7127ac387fafc65944ed63b873d7cdd420ce7cba66e803f3660f7d7"
 
 [[files]]
 file = "resourcepacks/BetterVanillaBuildingV2.83.1/assets/.mcassetsroot"
@@ -34308,1706 +34308,6 @@ hash = "03ed12d4683962cf1fae4afb996308a0e563e67df7257743631368d0bffabd6f"
 [[files]]
 file = "resourcepacks/BetterVanillaBuildingV2.83.1/pack.png"
 hash = "e3011cb891f98d303b3c0145bd3a78ca664a30e39ad6ac47cd4ae35f26a80288"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/0.png"
-hash = "2f146d2ce5bd8dd05972f3ae2e79e1c5fa6aad8c5510a0bf63027f38e657a397"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/0.png.mcmeta"
-hash = "aaf0ed9c58bc8aed21cd08c751722c0262242919da2014ec484f3ddaa96e88c5"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/1.png"
-hash = "acdec1d60afaa65705e67e1ffe8a25334ef075bd7ce01d66b5c6ea050f86dcb3"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/1.png.mcmeta"
-hash = "aaf0ed9c58bc8aed21cd08c751722c0262242919da2014ec484f3ddaa96e88c5"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/10.png"
-hash = "672555fb2d7d00488678b97e2f27b0f473f8538bf106113883bb9b1245d52d75"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/10.png.mcmeta"
-hash = "aaf0ed9c58bc8aed21cd08c751722c0262242919da2014ec484f3ddaa96e88c5"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/11.png"
-hash = "d8f656bf649fc688ecc8532a5a5fb5ad589f0e2c74910c6e671d3156e73ebd3f"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/11.png.mcmeta"
-hash = "aaf0ed9c58bc8aed21cd08c751722c0262242919da2014ec484f3ddaa96e88c5"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/12.png"
-hash = "a024a2344e5df36e3d149a690f226361770936a95bd6387745b99834d1b9911a"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/12.png.mcmeta"
-hash = "aaf0ed9c58bc8aed21cd08c751722c0262242919da2014ec484f3ddaa96e88c5"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/13.png"
-hash = "41d22fa3b0fa4b78e62cd30059a22b197a33ddcc2ccdc3cc482a54613b9475ff"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/13.png.mcmeta"
-hash = "aaf0ed9c58bc8aed21cd08c751722c0262242919da2014ec484f3ddaa96e88c5"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/14.png"
-hash = "b031be861549f7d844b3bb98527b44ad3e08cf36b1cc8db336ad4af0468a2f34"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/14.png.mcmeta"
-hash = "aaf0ed9c58bc8aed21cd08c751722c0262242919da2014ec484f3ddaa96e88c5"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/15.png"
-hash = "c3526ca13d97ecc2c02c2902f71de4e0b7a1794015b18c8c47d4de52261805d7"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/15.png.mcmeta"
-hash = "aaf0ed9c58bc8aed21cd08c751722c0262242919da2014ec484f3ddaa96e88c5"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/16.png"
-hash = "04c49cbc3db1b5fd3f156cc71f489f7826bc36eb43b967f76a3c9c46a3be15be"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/16.png.mcmeta"
-hash = "fafbf2ea3c05adc9120adbc1da569cc207065fbf707ffe7fe3b543f715ed7641"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/2.png"
-hash = "226f5d18135356e5171a618c598cb3cee481f851b3f755306a4638514b9b2953"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/2.png.mcmeta"
-hash = "aaf0ed9c58bc8aed21cd08c751722c0262242919da2014ec484f3ddaa96e88c5"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/3.png"
-hash = "83758e0644d2f07c4cfe772aebae4851dc32215210293b40cb0e8974ebc70ee1"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/3.png.mcmeta"
-hash = "aaf0ed9c58bc8aed21cd08c751722c0262242919da2014ec484f3ddaa96e88c5"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/4.png"
-hash = "a577fa79e4f7629e4e3c56339469b96848e18d48700ba7e7c00a9cd245b54d01"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/4.png.mcmeta"
-hash = "aaf0ed9c58bc8aed21cd08c751722c0262242919da2014ec484f3ddaa96e88c5"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/5.png"
-hash = "c45647cd8a33b66dd472b697cd94861ba58340a7e43ea284181b48871892226e"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/5.png.mcmeta"
-hash = "aaf0ed9c58bc8aed21cd08c751722c0262242919da2014ec484f3ddaa96e88c5"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/6.png"
-hash = "816963c545ee4f723b366cf76ce4ab5199a7b0ef152c232ffa9459ee1e5e3356"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/6.png.mcmeta"
-hash = "aaf0ed9c58bc8aed21cd08c751722c0262242919da2014ec484f3ddaa96e88c5"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/7.png"
-hash = "ba63625d0630a1fc99344cf7f97c3f0f1ba3a1c3ef797f5e2f083cc300d3e133"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/7.png.mcmeta"
-hash = "aaf0ed9c58bc8aed21cd08c751722c0262242919da2014ec484f3ddaa96e88c5"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/8.png"
-hash = "a1edd5e637436f6bb8e43560d116c8dde3c0c36e45eab353904ab04e6ddda23a"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/8.png.mcmeta"
-hash = "aaf0ed9c58bc8aed21cd08c751722c0262242919da2014ec484f3ddaa96e88c5"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/9.png"
-hash = "efe542ba2b16263ae458a97f0f6127fa58dbe2e0aa88dc8d48d91848af6b0f82"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/9.png.mcmeta"
-hash = "aaf0ed9c58bc8aed21cd08c751722c0262242919da2014ec484f3ddaa96e88c5"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/dirt.png"
-hash = "73096ec8e2ee17a1d832dc165d2c9eb604cc180c04b48dacc36cd168b0d0d7d8"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/magma/magma.properties"
-hash = "e3fff30baaa86e7f06f1cb2a48a01aa611e1f75ee4c5ebed89bb76ece4428719"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/odirt/0.png"
-hash = "7adf9ae2f93e9f717a8f8fec702d21a845ff709a40a684919f721968c482dee9"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/odirt/1.png"
-hash = "e8c8dec0772fa5452a77bd8da60290800216d3a41fa91d857dffe7852b512b94"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/odirt/10.png"
-hash = "58881d53c0ae70c6589f34eb769340493cf2032884012dec2b1622d918f39568"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/odirt/11.png"
-hash = "c9004f6425a75ce1c4b8b92d606218b72de664c275eb915d0253fc81827bda78"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/odirt/12.png"
-hash = "728cc4875f2182f0c2b9e46247c49b52cf3c252996fd8bb0796f0a085874c27d"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/odirt/13.png"
-hash = "8f4e611b0dcecf338551cf8f5e42dd659c1b785eeef204db8338fbebdbc45225"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/odirt/14.png"
-hash = "6de15a6442be1d0a8ad0526c9609526bf5b9248138297ce10aba635811783e7f"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/odirt/15.png"
-hash = "4439c06bcee5d5c04bac74c80d05c5b4706a9373328d7a2eac83d9803f57571e"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/odirt/16.png"
-hash = "272d9e67bdb2566d24fbdef925379ed3a22291c5efff2589ace7fbfca96b2f1b"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/odirt/2.png"
-hash = "2f462adddf687dda7ec82f9057c188e8771518fa3c1a4fb4333f1a2f6c2b4bb2"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/odirt/3.png"
-hash = "c7fa166ebb7c663853a3e8f5976311208cc96d585bdd343791f5c9890fd51c43"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/odirt/4.png"
-hash = "38fdbeb24065e796dc5c9a2fb6ab41add8e12c4063ed40f9672bcb40617e110b"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/odirt/5.png"
-hash = "37eec591e5379f86ceac0c22e7be1e7f36ddda4b041caa97dab6879ac74db739"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/odirt/6.png"
-hash = "d9d40a1ac642aa2503b8106844d6324c0455ebe956e1d40c09dcee4d08c4d91f"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/odirt/7.png"
-hash = "4a3040dc15976841cacd95a1be893cfcaf7ad5a95797ddc521d3201ae71b09fd"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/odirt/8.png"
-hash = "802d7eecc1a375b9ec3636dff681b8a624bdaacb9bca4767b57329b66078d9a7"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/odirt/9.png"
-hash = "93ac390aa050de95e532456ff2f6900a81c9f941f8d058757a2969e1a6d40ebe"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/odirt/dirt.png"
-hash = "b571faf80401b9d34c01b102af226b8baa65337ca4cf79bc392a99b475ae8968"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/odirt/dirt.properties"
-hash = "21b4bd60d59bbd28b425f5024315bbe6fc3fa2b6776a937b17b454180a5aef8d"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/pcoarse dirt/0.png"
-hash = "81217b1e323ad5d69377e8cc4a29e2c12a5ef82f6d855a8a8f143e6e35dae3a0"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/pcoarse dirt/1.png"
-hash = "8954ea5d8021035270d4c221f5b9583bf7e58e82f4c3a30362aa55725119d08d"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/pcoarse dirt/10.png"
-hash = "3290f0aee342aad8edf5eb0ceca94e5c1a5b4e6d6206733085eb209e1b0b898d"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/pcoarse dirt/11.png"
-hash = "39275989a34012db4023d8b61717dd248bf6e98bb843824d170c6612a892b4aa"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/pcoarse dirt/12.png"
-hash = "6a6e0b5c5fb026a96c427e4efce4bf7a25f133159d27fde91da2c8f5877f5650"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/pcoarse dirt/13.png"
-hash = "d1c22a4863d321af39376e017745481c56c39621e22f68138362dea255ce7552"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/pcoarse dirt/14.png"
-hash = "7e293f8971285bb086df0d615236b42ce378d84ea50d17a909900eb817c5ab97"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/pcoarse dirt/15.png"
-hash = "81862cc9c7522b688a553e8252c9b0bb4c733760435bd8e449fe9cb854b5a6ac"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/pcoarse dirt/16.png"
-hash = "79a5d15e7b07c1192f765c974fb80a4cde09af072345906c7edbab9eb39e9370"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/pcoarse dirt/2.png"
-hash = "ed04e66b47ded615362a05bd8784d356c00b38374a92ea2ff149d9fd89114f59"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/pcoarse dirt/3.png"
-hash = "d816bab47e5989ed084b3a63553f0162219896ee39c08b07d74359ea6fe05159"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/pcoarse dirt/4.png"
-hash = "f8e7c435bc28c4b6b6fa0940ddf6f514fcc18fbadc85c15a8df883a769da8cc2"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/pcoarse dirt/5.png"
-hash = "6ad7d3ffb53bdacd95b524b59c33675a9190716cfe1f383fa7ab6d07b9299ef4"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/pcoarse dirt/6.png"
-hash = "43cf058d5ac1dd0f87fd22871ce6650cfb6ae83fa345df596a57c951e4c92f35"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/pcoarse dirt/7.png"
-hash = "a3f80d10b7ae6a4ed2056cce5cf15ed4b243aed254e9cb4cdc1cd43108274c92"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/pcoarse dirt/8.png"
-hash = "b56453a28e1e8a5a0c6e70441cb56df77cd744810a45e34874d97ceb1416f939"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/pcoarse dirt/9.png"
-hash = "a1d7f0a5356b413bb6bd4359280e99dc9b881fa2db07499104fe1cb605e2e693"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/pcoarse dirt/coarse_dirt.png"
-hash = "39f8bffd9353ea951f7d3c7ffb48f9031c0af17dc97d35688d9cf07c4d4a5166"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/pcoarse dirt/coarsedirt.properties"
-hash = "b8b1b456f055847ca6fac7a0c16fd9c601000d7241f769287d1635f17f223eef"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/pcoarse dirt/dirt.png"
-hash = "90bb3685108357bb749fb0ab95bb8bb859d32ca4abee7b97fd74583247c6784d"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/qpodzol/0.png"
-hash = "e02d63ae9f71d4991fb741cc9f0a15de63ac425e98f664933d4e392e3878cf19"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/qpodzol/1.png"
-hash = "4ec8e110280a2c6f0289adf8ba126ecb2bec6be0a12502f2e84603c9570fc6a5"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/qpodzol/10.png"
-hash = "bc7ab0aaaf149e2240df388fbfff6fbebf9f5eb24600e7e8f5e24fa040a94d42"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/qpodzol/11.png"
-hash = "88c6bc8283e15888c94199d6a57bbc80fcdeb5bbf33053e85dea8e7d9c1fb65d"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/qpodzol/12.png"
-hash = "efa9b52932cda0bae0230f508407a43d879240fd3c80859d3cd9ebd33ecd406e"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/qpodzol/13.png"
-hash = "46a3cfba38f3062dfc15f8607bf7489042b9d23c4a50532bd6011f9e2dc7ff05"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/qpodzol/14.png"
-hash = "c031ded8f1c473eb08751d6765a6c790db2a68502d1bf616a971a5d0c3edc614"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/qpodzol/15.png"
-hash = "96b22ee7b567ad5c58134e77dfa12001066e1669dba73c27ab8d5a6f2a2aa65e"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/qpodzol/16.png"
-hash = "a1cc13815c33c4d2b83d90633b8a9642e30a4487bf3f11ab1680ea6ad1cf8d9f"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/qpodzol/2.png"
-hash = "de23b224ad03e7c9cdaf8ac32f3b33060c0fb5574a916eb92539251ed6cf8b5c"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/qpodzol/3.png"
-hash = "d1d0183b8800431068f3c0bdf61b79f5fdf2c5f98e41e5211c978f160d31bb12"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/qpodzol/4.png"
-hash = "501b216be0b916461cd42a483491e83d9beeaecfe5f5ff805a804c64e1b0fb08"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/qpodzol/5.png"
-hash = "f04cd262fbce621f848634301e89976459a4ef1eac559ac89b3890dd9d241486"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/qpodzol/6.png"
-hash = "6eadcbd74be6ee81ba9811adb9b6fc0cfd5692eb33d82d1364c6c13f1f005f66"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/qpodzol/7.png"
-hash = "b196cff343fb43e96bc8d189cb650228d78803278b4a912baed1b13353c37b4a"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/qpodzol/8.png"
-hash = "09c500d96191c4f0a04cbad56ae22eda0195dd965a676e171f684f112578e12f"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/qpodzol/9.png"
-hash = "708fffd981045195e13b733102de08a624e6a639e0d233a25e1d02c9ded6c05b"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/qpodzol/dirt.png"
-hash = "37860a47820205b8244ce6208e292ddbaae53a53587e7624a316cb5768359859"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/qpodzol/podzol.properties"
-hash = "08311fa3519220b9565e816412f1f4a9febcbc1aac821f292de32a3117955105"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/rclay/0.png"
-hash = "4933856c5d12694731ae28f308b5c8473d3b8bea162f6da0b49aed4a558f1b90"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/rclay/1.png"
-hash = "6e5d879c498150a108e32dd039e782d7cb816cea8d11b509399592578b808dd8"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/rclay/10.png"
-hash = "9824420225ad03da9dad4da0047ee958d1b0751cea75b1889daaa6aabd283926"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/rclay/11.png"
-hash = "423a90e024bb9f85a00c2de2e06f47108fe5d414dde57b97446a317fdc30a6b0"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/rclay/12.png"
-hash = "46c1c9f0cdb83278c9a21493eff5d823dab3b0932eee350edd605716314ca38a"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/rclay/13.png"
-hash = "654c755bd1d8995064771ab45ba7454046c0345e9d28ce671a4d762e5742b431"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/rclay/14.png"
-hash = "7e7f28a68e8d80e169f44e32a714713e798312feb6c5c8f8322b28207aef99bc"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/rclay/15.png"
-hash = "d5f2d14ea99d4252022941c6abee4cd16d12a9d8edd27a2f7a1f2f4496a44b12"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/rclay/16.png"
-hash = "10af289fa724dd852bd207cbebfbba8ed74e0ac21772084a421b7e1ee6128d83"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/rclay/2.png"
-hash = "5a58163e69b7f1dfd92dad4d45b116b2ee726426ec98cccacae79c56d6514d77"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/rclay/3.png"
-hash = "66a7bc8054d993895a0b53493607ababe0b6e08d2965152efd382a1deb61d5c6"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/rclay/4.png"
-hash = "ceda81e3f124c2765a24716f38558d783547965c0d5617c6c9213a8a13740844"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/rclay/5.png"
-hash = "1bffef7bbd28e5c7195a652cad7c2b97041cc84b3fee5434389466c29cf36a25"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/rclay/6.png"
-hash = "acf4aefdf2e6059c58dd46412fe501f12938204c048f6a885c89ef25cb9b85c5"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/rclay/7.png"
-hash = "4a9b9c06556eb716c830ade75f144a3fe055b3bad6de62afb74136e3baebcbe9"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/rclay/8.png"
-hash = "1a7688ec6f89a0ab6bb4b06a41ffa7dcfef39dd3261f1fd75f0e33a1b8648f59"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/rclay/9.png"
-hash = "e9dd94b6760a90a77c76a299bc3244fc25bc8fc5b8a1a74f8cd6f924bb1df5e9"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/rclay/clay.png"
-hash = "9347b1cd7fabc2d39577662a7d08582da5b84cb613c5dbf42401f02f8d18e8d3"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/rclay/clay.properties"
-hash = "bbbfbd7871ff9f01461025adf90b0d78023a519de7d026a419c4e3b6306cc0bb"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/rclay/clayoverlay.png"
-hash = "5ad404cf994397ac523deb571ade97d1181fb0f887ebbf693ec18273c9532ba7"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/smycelium/0.png"
-hash = "e46333779b2af3ad3aee2591a92e0226afc6159b870c38f73520961ac1022eca"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/smycelium/1.png"
-hash = "da1bb59ff73b8cfdcba1aa16b1436f6f3d0034eb3ec0543daa150a11d108e4a6"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/smycelium/10.png"
-hash = "92705f64992c5e755b293bd8d87a39ef33b9bb648527a4b8b711c6467faf7c31"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/smycelium/11.png"
-hash = "f6d0458b6fe9eda68928c16aaef98c2579015ce6523e940c53d2cb295b7dc8f6"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/smycelium/12.png"
-hash = "9462081140550a973f38c89a9ab2d10a6fdc14a108669651ef2668a5ffbac745"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/smycelium/13.png"
-hash = "21fc7c0e0b7b6f28940332df68aaf01965f83073dd36576089f8dfd9cc3c3f59"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/smycelium/14.png"
-hash = "ed4eea91f8d0afa71108d2960cdd2831935bb9bc514dc94a3ff4f83adc8316fa"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/smycelium/15.png"
-hash = "0c1e8adf93f3f861e22bb334fb7239f7b7aca076e9a122e4e2602ab801390bb8"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/smycelium/16.png"
-hash = "bb5e0ac7ec296e2a8aa16048038a9cb7d1549e6168c8cfd3de60f2df322901d4"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/smycelium/2.png"
-hash = "f2fd935a242cbdab9e35f317613890b56836fc791bb331bbdbc8d3c327ff5adb"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/smycelium/3.png"
-hash = "a2281365a7edc63de5f62104c0d15b15d9af846a6d92c837d2b546ce3c58ffc1"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/smycelium/4.png"
-hash = "920fda8b35b41f1c246859c2c42e85079e1eeebfe7d6a64178df715b455bb0bd"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/smycelium/5.png"
-hash = "0336bb06cd5cb501a24e15ee439b4dd5c68510b02bb659d2c3aadd2f84eabd64"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/smycelium/6.png"
-hash = "a10ae283d11919ca8156450bc9901182e405dae27c328644dc71a2369d9bf1d7"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/smycelium/7.png"
-hash = "e4308b520f98e4212114379f91d0edafde995d11b311107a4c6503f95263fe18"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/smycelium/8.png"
-hash = "cf690984e24df880ee378ea8cb1a05d7972ffddb5ec72715530f40009dec0e5f"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/smycelium/9.png"
-hash = "e1cae1880b24ac5fcde932cc8e12abb4d9340e683b9fb5f42759d9fcf5ef42d5"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/smycelium/mycelium.properties"
-hash = "b2e28f1ea8b17b1a03226196708a612873d38c22453f06a8aca988cffc54660e"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/smycelium/mycelium_top.png"
-hash = "3a532ba99ecb5a78e77a60f92c2ea216fde60d9b9c1a46dae8e65da29dac6247"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay/0.png"
-hash = "ce641721ff6d5139b7a6fc1ce3431bfc83d0979f5f64946a90f29e4a35c54f33"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay/1.png"
-hash = "2c50474ffaa34604d3aa986806f1f7e216fb8befa8e28643af8f1b30d9b4b9ac"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay/10.png"
-hash = "1c069d0ac884f409972568421e0b059968ebdd1a35652a1d802df7ea5325ed67"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay/11.png"
-hash = "0a3c23ea2418ec5c5c15b53b34f2122dbe58de1cc7930aa65db309016b99e54d"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay/12.png"
-hash = "d37a709d37723a46933d035993f720ffd30a3e78b9945cf179accf5c1f8444a9"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay/13.png"
-hash = "2114a05a334904363b0797c1ae0db189f072649ecbe15538324384de32126aaf"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay/14.png"
-hash = "e408720edd3015036aba44597f1fa2024ecff884f4142929c8af415aa6d111b6"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay/15.png"
-hash = "71cdc74509c4e8be448d0dd33e9d94617f779a12945f18b855483b95d1a56403"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay/16.png"
-hash = "bc48a793830b2cf8ea5519555dbd12d8e7ac5d4ff4772e10e1c841a111c99b5f"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay/2.png"
-hash = "e4ad35256284714327a3a58156507e887f74d8ff51e9de7dbd2a0c7cab600914"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay/3.png"
-hash = "63be2d1ee0da27489fa2e97414cf10a6f10eeaf41fbeb7d69c5e3648c35f44a8"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay/4.png"
-hash = "881c5256bce68e0808d1e88178bfc61d289113d3b4c9ecb9c298f5181c2264a4"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay/5.png"
-hash = "e4da3761046b60ecd9069e69213071516a5065c20afea4df89a66d235cca3b10"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay/6.png"
-hash = "ef4c2c653a1f1658a3e7e36bdf6b7588eb0bd8b5339b05014119100c0ff6d751"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay/7.png"
-hash = "79aff7870269c553b005fc0b087c42e6fdc9981ccac675fc0872c0481d47647a"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay/8.png"
-hash = "1ab628a28c361144b325f8420e8ca1f514b708f5c33319a2a866aeda3972ec0a"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay/9.png"
-hash = "ce2102120ae7457f74e7029afb4f9753e71bb04aaf3868288c1c4974856aab25"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay/grass2.png"
-hash = "cd22802f0442b334f72de41ea28062791fedf856467c8ba55aef36b58efaf5c2"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay/grass_block.properties"
-hash = "004fe2823f2bfaa63926fac8fb73d1c0247569f4cef20aa72ba08735ef4ba962"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay/grass_block_top.png"
-hash = "ad010d07446008c46b0238611af7d20640816a3594f4dcacfc269da50823d467"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_bottom/0.png"
-hash = "b20b50d2843eada98fa6eac590f62cc137cf7bdd8701addef77db44358fa8bf8"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_bottom/1.png"
-hash = "bce4dee6567153fd9a7a2bb720c2467d15dc1ca75b4fcb86877b1fcaefb4b656"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_bottom/10.png"
-hash = "e3fe7cc90ae7197086baf01edc5067f7f3597930224aa45bfee03ab3d3be8166"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_bottom/11.png"
-hash = "e3fe7cc90ae7197086baf01edc5067f7f3597930224aa45bfee03ab3d3be8166"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_bottom/12.png"
-hash = "e3fe7cc90ae7197086baf01edc5067f7f3597930224aa45bfee03ab3d3be8166"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_bottom/13.png"
-hash = "e3fe7cc90ae7197086baf01edc5067f7f3597930224aa45bfee03ab3d3be8166"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_bottom/14.png"
-hash = "b20b50d2843eada98fa6eac590f62cc137cf7bdd8701addef77db44358fa8bf8"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_bottom/15.png"
-hash = "e3fe7cc90ae7197086baf01edc5067f7f3597930224aa45bfee03ab3d3be8166"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_bottom/16.png"
-hash = "b20b50d2843eada98fa6eac590f62cc137cf7bdd8701addef77db44358fa8bf8"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_bottom/2.png"
-hash = "bce4dee6567153fd9a7a2bb720c2467d15dc1ca75b4fcb86877b1fcaefb4b656"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_bottom/3.png"
-hash = "bce4dee6567153fd9a7a2bb720c2467d15dc1ca75b4fcb86877b1fcaefb4b656"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_bottom/4.png"
-hash = "bce4dee6567153fd9a7a2bb720c2467d15dc1ca75b4fcb86877b1fcaefb4b656"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_bottom/5.png"
-hash = "bce4dee6567153fd9a7a2bb720c2467d15dc1ca75b4fcb86877b1fcaefb4b656"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_bottom/6.png"
-hash = "e3fe7cc90ae7197086baf01edc5067f7f3597930224aa45bfee03ab3d3be8166"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_bottom/7.png"
-hash = "bce4dee6567153fd9a7a2bb720c2467d15dc1ca75b4fcb86877b1fcaefb4b656"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_bottom/8.png"
-hash = "e3fe7cc90ae7197086baf01edc5067f7f3597930224aa45bfee03ab3d3be8166"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_bottom/9.png"
-hash = "bce4dee6567153fd9a7a2bb720c2467d15dc1ca75b4fcb86877b1fcaefb4b656"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_bottom/grass.properties"
-hash = "53fb9a54cdded5bd6da083aa6b8ae4356843cde120946a86e44fd04ae5db14f1"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_side/0.png"
-hash = "03bf9ca2444bfc606fecf5925f733de3207bbe933585a93fb5a3024e4b653c25"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_side/1.png"
-hash = "3d5afc86c0137a05be75d263f7553b55add29ff84f8395efff4f8430c84be124"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_side/10.png"
-hash = "fa4828d87af72179016e63f45ed5ef7499012f379ad8ac941b94a7a43f469015"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_side/11.png"
-hash = "c4de8afd12d1ce431b194add0e09dc54d128ac4f7955101810e4489f3706bc1b"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_side/12.png"
-hash = "1e9f08e7f08b3e684fe8290440cc113ecafeb0418c8b03bbd21161f0b6ae7919"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_side/13.png"
-hash = "8fefb8ccea1b8d42a64412a9e65c86b414fcc1cc365a53783aedcf21ccfebe85"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_side/14.png"
-hash = "bce4dee6567153fd9a7a2bb720c2467d15dc1ca75b4fcb86877b1fcaefb4b656"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_side/15.png"
-hash = "b20b50d2843eada98fa6eac590f62cc137cf7bdd8701addef77db44358fa8bf8"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_side/16.png"
-hash = "bce4dee6567153fd9a7a2bb720c2467d15dc1ca75b4fcb86877b1fcaefb4b656"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_side/2.png"
-hash = "5c576737f99838c92b46281a755e78436f1b45f6b3b3307e93de9eeb28548a5c"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_side/3.png"
-hash = "1382b1bda036647358f637c5c143066062079f43e261fcc961ee56b73cedb149"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_side/4.png"
-hash = "d9a1dc83910fbbf7af588e933f01ce3c7d00c8adbe79c210b0927502a54fa09c"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_side/5.png"
-hash = "767f765261a1b6e33b7647dee0e3ce98d7b797ddcb9a59425e02a1fccf834d1e"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_side/6.png"
-hash = "ea24fa7f68c2b62802dc71144fa6b39fd4e1e4dd00f53bf4c5e8c45eb179fc80"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_side/7.png"
-hash = "e22b43877f84b8f66109277d7c19e88ac64505e515c1f4e6ea9101ea06b86fc4"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_side/8.png"
-hash = "2d0e8d2814726efc6e4e64afda73ad6769eec231d3383a0a56d4b0de5d7952bd"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_side/9.png"
-hash = "c4de8afd12d1ce431b194add0e09dc54d128ac4f7955101810e4489f3706bc1b"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tgrass_overlay_side/grass.properties"
-hash = "730ec75a3b1f6b16fa823ea7fe6587e7864537be9b0040c15cfb535d0831e26e"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grass/0.png"
-hash = "b0720526e45b2d90f454b42bf54b456b12ce5846b3058d2324620183f180478c"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grass/1.png"
-hash = "13788fefeb65022f308121d18178eccd745911a4c6c2ae14966842e2d6416483"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grass/10.png"
-hash = "3a51c291df4f7cba0a463a20d28ce04ba66a4a0492ca0ba83e014bd59a4c16cc"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grass/11.png"
-hash = "e7817b73c4a431ca943ec3b1778b5d9d580146f71ff710ecc690f7411e1496b9"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grass/12.png"
-hash = "251a879b72be81c307c983f7dacd37b68533e813c4f8b2f4492817794396339a"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grass/13.png"
-hash = "9c433b0c3acbc5134a8f7ad1d2ac28a1d676c56893e4088de3cfca539316b65b"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grass/14.png"
-hash = "8d719522d095d9f18fb5d35c2da220c3c925e1177e42a86b747dde8940ea69ff"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grass/15.png"
-hash = "40745cd5acceaaad34b7ba819a417b10ee2497004d389f84245a0ac3f330067b"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grass/16.png"
-hash = "efdfff80bd656a5a4aa40bedd3419c06158ab920e48733b12188eff855b2c466"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grass/2.png"
-hash = "f8b9e8f46effddb1ff5bc9a2d29ef700aefe3aac80e9b8b5a42f0ab0f9c12856"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grass/3.png"
-hash = "0afef48c1e282b05ea64610cfd1ba6fff088a6c4c5e3c1e80f33247bce7aa4cc"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grass/4.png"
-hash = "059fe627391ad22a066228328730db2b7561b3e1590a143df920b21e34fefd13"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grass/5.png"
-hash = "bc3d04e11e12ebc711838f98e61a291ee638358424233ad0f120dce941f24835"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grass/6.png"
-hash = "f4f4678e02822a4a4ff65fdd034dae3fac1c7d84bfbbc71d031c2eaf39d782c2"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grass/7.png"
-hash = "0f11c912c84a0791cc9e988b05e7e976ac2ac61ab5eb22f83c0f79a7515808dc"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grass/8.png"
-hash = "71ead79f0f9a8c8545742aaa9cda3f33ab524ed0e4e9ed571b67447041c01d67"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grass/9.png"
-hash = "dd1d16f4c4ae8fd59c68043508f5ee68d9d719337fd441219083d8ed6665a112"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grass/grasssnow.properties"
-hash = "80301131d5865451d2089041724ddcacd72e6921a86df54371a523b8e92c4436"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grass/snow.png"
-hash = "2db1b7a80cf127eaa85613cd27affbbfa2c90128fecd6b10a020e2d2ef8e9021"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grassside/0.png"
-hash = "b0720526e45b2d90f454b42bf54b456b12ce5846b3058d2324620183f180478c"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grassside/1.png"
-hash = "13788fefeb65022f308121d18178eccd745911a4c6c2ae14966842e2d6416483"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grassside/10.png"
-hash = "54a3ed050c07a09fcf49d1417afbde0875818bbbe31a12d8e46de59fce19dffc"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grassside/11.png"
-hash = "08ef654c0c3ab277f82c278800c78271cfb6415fec64d0f706f32ff1dd0ae8a3"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grassside/12.png"
-hash = "b4d269fe16f3deb406b78cde2c000c0800390142f4fc35ce8635cefa8be102ec"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grassside/13.png"
-hash = "0b73228780bfb0c56f9fade23ad98426e4694b2cb39e1cd75c334ae8f51b0ad9"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grassside/14.png"
-hash = "b20b50d2843eada98fa6eac590f62cc137cf7bdd8701addef77db44358fa8bf8"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grassside/15.png"
-hash = "b20b50d2843eada98fa6eac590f62cc137cf7bdd8701addef77db44358fa8bf8"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grassside/16.png"
-hash = "b20b50d2843eada98fa6eac590f62cc137cf7bdd8701addef77db44358fa8bf8"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grassside/2.png"
-hash = "f8b9e8f46effddb1ff5bc9a2d29ef700aefe3aac80e9b8b5a42f0ab0f9c12856"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grassside/3.png"
-hash = "8469a776b754fa852eeb78889e339691df60bfb871649c62ef1cb2e85aca5fa9"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grassside/4.png"
-hash = "05839a05954a90281b1b28cd08d40a9ade961e93b6ae4e2ff472f98a88f3a16b"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grassside/5.png"
-hash = "60f4ad69b5cf11d45703e6cb9d747656fd4fe6f0bc59325f7daa47c4ddeb9e16"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grassside/6.png"
-hash = "9628afb456fdd71a33ce617fd6a502dd05f01712b5ec9c9e2625fe4a5c05547b"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grassside/7.png"
-hash = "690373d6f863940d779c2710e05e4501f6cc39fdd7ac94f38203d61d7b167169"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grassside/8.png"
-hash = "1e99fa6e05710e770b314b671c661edc22c8ae9ca784cb82252ad6d68bf8f8f6"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grassside/9.png"
-hash = "7e4d0537ece3afae547aad8c34ccb5d5d89610847bedb4f5113af1a105a374c0"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grassside/grasssnow.properties"
-hash = "851541c4ffc1442e857fd3e54acdcf4b26e55ae7d4242e1d7bb080a1e24e0416"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tsnow_grassside/snow.png"
-hash = "2db1b7a80cf127eaa85613cd27affbbfa2c90128fecd6b10a020e2d2ef8e9021"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson/0.png"
-hash = "dcf8cf745f5d77176845e04d56526a2628a10110ad55fc6f03d35507e55b6894"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson/1.png"
-hash = "6de11f863780f8f01ca7f5ec24db0ca516b751d4686b38696e131fa59fbb8070"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson/10.png"
-hash = "2b9e46bc8dd63224e922bcc0d83119dbbe33322bf5a619e32af981489508af72"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson/11.png"
-hash = "d107980e72508dd47e1aef7adf32af3b89ef54c45bd16d77283b26193d7e438d"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson/12.png"
-hash = "c2d8b4c2b75e5db1b6d2d7a109f13624813fb6b47db951a4a19b6a2029258286"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson/13.png"
-hash = "282949525ae4b1c1fc79c860d28087bf1fee3eb7102bee2742e26842fe4496c9"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson/14.png"
-hash = "f506838daf44e6821c0401bdfb9963653b774a4600966cf3fc60fcfe445fb06d"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson/15.png"
-hash = "a63f8ecd6ae7236b942afb759fd562fa9a122f3cfc7e7b76031d4af0503cc5d7"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson/16.png"
-hash = "f5c92299f00561c2b231bc284a013457be48cf933b7236f816da8707359a556c"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson/2.png"
-hash = "3b21c15d731b9036cf94ed7f970c483f5c95d5093e68eed602691ca97b00c2ce"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson/3.png"
-hash = "05770e828d562b892fc0b0c6beee30dfb4ead6b28585c8b09d8e95c8833ce21f"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson/4.png"
-hash = "6acc6ea40217c19fd67318a40eb3fb18f14ac70a74da7a59e51c5ad6df56708f"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson/5.png"
-hash = "5707dc40c93b2ae8a3e861042760613ba7eb7688f4fd190708b890e1ea36753b"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson/6.png"
-hash = "87fe994883e557f1c1af395c7cba8c4846395b1e21401854308b283055524cc3"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson/7.png"
-hash = "14afbefa60e41a096bdf6011bdfe5dc0f1976554b7f99e7c1f8fe4848b0832bc"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson/8.png"
-hash = "a713a8dde01a493904fb24c1a7f420525ae5aa8038617888256ecd15d0c508b4"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson/9.png"
-hash = "5a0c36f099673506e38b245f18f504fbe3648bc025635399ad03e962ac0335b5"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson/crimson.png"
-hash = "a68e79cb76bd318efd8274023cc34883623dc01159879e7f2da84339b6d45cd3"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson/crimson.properties"
-hash = "7efcfe435b42c77a91171e39c0bcf5006b02bde1847640f6ddf61ffbfb9ec527"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson/crimson_nylium_side.png"
-hash = "63d49ee1acc59efcb4f9c63fe048c19374f9eabb169da7953282c4871d3ab3a3"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson_side/0.png"
-hash = "b9c92455189d3ab147ebf6c060ad20d87b3daf7a748ea769c7fc6ebb5e6e7d16"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson_side/1.png"
-hash = "479b1512656027d25b10e7874727a269139fe71b3659c28ac90ab452febb7894"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson_side/10.png"
-hash = "463edae138c5b3ae0755bbb4e1db8d54a38d1187c873e32f81b81342d51e965e"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson_side/11.png"
-hash = "76dbbc24994573c12271bb4f6cf3b5fc95083bed9e8f1c230a6e3625859b75f6"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson_side/12.png"
-hash = "64e0807ae64b4fafb4c375a4ff01a63c742b5d3f03d22b555df304a736e0cfa4"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson_side/13.png"
-hash = "86d65e5462fa64c9c067709969236f8a0adb0aa54343cb49dd5a56e3ae6ae5a8"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson_side/14.png"
-hash = "bce4dee6567153fd9a7a2bb720c2467d15dc1ca75b4fcb86877b1fcaefb4b656"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson_side/15.png"
-hash = "b20b50d2843eada98fa6eac590f62cc137cf7bdd8701addef77db44358fa8bf8"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson_side/16.png"
-hash = "bce4dee6567153fd9a7a2bb720c2467d15dc1ca75b4fcb86877b1fcaefb4b656"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson_side/2.png"
-hash = "376415bdc95328e02ba76d0533e4d5e8fec61dd6abdc092c7ee091504f057b03"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson_side/3.png"
-hash = "d0f6111d712d882048f1ce0c017421f6411df3091f3a29109abd9d44b5688ea9"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson_side/4.png"
-hash = "4a89611a35941ab669b125002d7958e5273e0fee139bf2e0bc05e037cb167df4"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson_side/5.png"
-hash = "c90ba63baa676116ac856a67eb26a74f517098574b5dd64b7bc7b11dcaf14f72"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson_side/6.png"
-hash = "f59b497d7f008721410763b0dd2c406bcac88548dcacb2d90edd9ebe40bd1d82"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson_side/7.png"
-hash = "463edae138c5b3ae0755bbb4e1db8d54a38d1187c873e32f81b81342d51e965e"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson_side/8.png"
-hash = "c90ba63baa676116ac856a67eb26a74f517098574b5dd64b7bc7b11dcaf14f72"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson_side/9.png"
-hash = "76dbbc24994573c12271bb4f6cf3b5fc95083bed9e8f1c230a6e3625859b75f6"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tycrimson_side/crimson.properties"
-hash = "ce7e7d1c9bab2b23e3217c9b2ae857dc526b2aab9a95d3119876719901f2704e"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped/0.png"
-hash = "3f4ec90a235feca63d8fd66a4decf7f2b1635d5241a94ffd2cb95340d0709994"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped/1.png"
-hash = "20f5d23f4329fe6e4d90b4dbb86a18e59dea1d1f5605e84e55dd795ff42f16c7"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped/10.png"
-hash = "4a572d02656190ddddab0d76a587a6a7cddb77e2919a7faa24b94f541ab666d6"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped/11.png"
-hash = "05b3f5193e315be67198dc247daa8af2c246bc52aacc1b604c8cd7cada4b5034"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped/12.png"
-hash = "1b19227880dc9762b72ab53762a68c840da8bc6764a29af2704700cbaef6e66f"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped/13.png"
-hash = "5c329e6f1bbb6319bdfd8592bed84cbccb6256c19e9b029597c00db587a25a3f"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped/14.png"
-hash = "53ef4054e7c91d2fd653312d485d5a63031fce961e7299ea2901a83e6585d4ff"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped/15.png"
-hash = "b178d8df9f67d93646c7a5b62b068552c1d342b10eb84ff64a087447382f60ba"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped/16.png"
-hash = "bcf5c50dd54612a020f1c2239f222db9fb033ef71d723ee52f261657e9dbac43"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped/2.png"
-hash = "e1a98256eb073d696a7745a6396e35dbd95e33a7d0c107a54a4855c8bea91e00"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped/3.png"
-hash = "9d7d7d9566feef22284e8b7bf5aad70dffc73b93efa05c5ccd4eefaee362b3f9"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped/4.png"
-hash = "48900c0978b8ed502652dc64819a91b4a71a7c40cdfed1d5a2bdcf6ea87cb678"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped/5.png"
-hash = "4e3399dd7b5c08384f9954d3eb58dd026aec3500e41030148c78ac64c8dec769"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped/6.png"
-hash = "5b8349195aa500eb81aa49d2880f70d4c4e1873c79b34083cae59e93b4edb6d3"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped/7.png"
-hash = "c343d8e664b64749772d74264fed99670479bac9de3d64b6cccab53950ea518b"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped/8.png"
-hash = "e8777b929cc9d9dae4321327adcc13286976927a844b3d3ea9586e5601e47535"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped/9.png"
-hash = "c985a70d7d7bcee457270e24578b88824fc599d46912b753f2b0d3ea60ce544e"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped/warped.png"
-hash = "5a0aea2845cce62630a3e91e4a2e275e50a14e617f07fd2da7b80605c68c89d5"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped/warped.properties"
-hash = "5a0a42134291136ccf9733e4fb746c3bc997d73234e45cb8db375fcaa16a8afd"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped/warped_nylium_side.png"
-hash = "8714fb8d05e58ed1e779ae543dc4525409dea77b89191eddfa1feff8e1120edd"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped_side/0.png"
-hash = "1a6b2431231120fcd0ef52598dc245c2a1379f6c2920ee734608a48edc2c12d2"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped_side/1.png"
-hash = "20f5d23f4329fe6e4d90b4dbb86a18e59dea1d1f5605e84e55dd795ff42f16c7"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped_side/10.png"
-hash = "ef59555a8a4c74d9357f704b00edfa561c45850d2e699bdf1b4e178c7e829c2a"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped_side/11.png"
-hash = "0de56f4bc22bb604e6104fe24ade77098ff1a1ca34bd9b428be89b10015acf2d"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped_side/12.png"
-hash = "ba40de98d74646af98eccdfe4e14fb5b4d541c330324a63ea9bea72631a3ef17"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped_side/13.png"
-hash = "083b17a7974a2b570df13e03be19d53fc5febfee53da33faf97f49c93f6d760d"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped_side/14.png"
-hash = "bce4dee6567153fd9a7a2bb720c2467d15dc1ca75b4fcb86877b1fcaefb4b656"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped_side/15.png"
-hash = "b20b50d2843eada98fa6eac590f62cc137cf7bdd8701addef77db44358fa8bf8"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped_side/16.png"
-hash = "bce4dee6567153fd9a7a2bb720c2467d15dc1ca75b4fcb86877b1fcaefb4b656"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped_side/2.png"
-hash = "dc5209d5d72c958a15f89b01832dfa7b9ffa336c3199f28ee6a4f328e5976e7a"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped_side/3.png"
-hash = "9d7d7d9566feef22284e8b7bf5aad70dffc73b93efa05c5ccd4eefaee362b3f9"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped_side/4.png"
-hash = "48900c0978b8ed502652dc64819a91b4a71a7c40cdfed1d5a2bdcf6ea87cb678"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped_side/5.png"
-hash = "4e3399dd7b5c08384f9954d3eb58dd026aec3500e41030148c78ac64c8dec769"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped_side/6.png"
-hash = "3f6b1aed5e085d54708101996e6f47aac6873c7f0b7dad7afeb0f2217ead2ad6"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped_side/7.png"
-hash = "ef59555a8a4c74d9357f704b00edfa561c45850d2e699bdf1b4e178c7e829c2a"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped_side/8.png"
-hash = "34cf8a95069bb01bcad20685cce3d903a83dbcb3b2d4dd0acfd4f50fdb260c84"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped_side/9.png"
-hash = "0de56f4bc22bb604e6104fe24ade77098ff1a1ca34bd9b428be89b10015acf2d"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/tzwarped_side/warped.properties"
-hash = "a9b16bd693b118cb6a5b4c7048022772e27b1177f46ffa5e19ca589270817f3c"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ugravel/0.png"
-hash = "86752f5d397f0e2f03e56ffc6a7f5d8a150a0759ba603281c34efba2a3dc0c8f"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ugravel/1.png"
-hash = "3fe911049b62b7441830c10e0e38a9795abdaf8612d2b5089a50f23a11e5f1fb"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ugravel/10.png"
-hash = "274d6875f30872a498d2cb5895b0d502e6b42a510cd04c64ec232584c12e56b3"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ugravel/11.png"
-hash = "6ceb98892e8ad302f60d5e3d233bb269a9a3b08cadbaf48e4fafc249650dea54"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ugravel/12.png"
-hash = "0f74a254e6dbf2c53317c1dd607d77bce49d4a90a66b5d18fe27bdcb667a67d9"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ugravel/13.png"
-hash = "b44bd703b61e7eb763d3761d32f9c48ce114f9507ff38c58ee035e9f2135c84e"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ugravel/14.png"
-hash = "966437b660cd835a77fbc7740070da87860e106e521a89808ca8bcfdc2b62a39"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ugravel/15.png"
-hash = "6d996175c3732d4153a6c41836991789f7ed3c1a427a0a739d284005ae4b9a94"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ugravel/16.png"
-hash = "2122cd8f2c49b76cdfd07b4f2e01eff218dda60217f58916b670551259d9dde3"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ugravel/2.png"
-hash = "e86343a2f8c8933c1e5fa58627f9726f485725c4038b46ae8e484bb7cfebc89b"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ugravel/3.png"
-hash = "1b5159768ae1a1cb1149bd17205a3d4fb6bfe65e90d5c482f3f333a5b18b6294"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ugravel/4.png"
-hash = "c035de0f24c4e02ece83bc9a384d2cd537294f3c76b9d01df5a3aa1d027ee009"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ugravel/5.png"
-hash = "236c9a51aede93c3209b6be0e0555fa12fb275d7ba633e6eac5831bb9d91b0ce"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ugravel/6.png"
-hash = "340678d1c02e97bdf3a2bcdb98c81d03fd33444b30f68287ab0c18f174a2e837"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ugravel/7.png"
-hash = "50d700b7593c69466feed39681e4b7d19b9cb5f55ca619ed53f10697b13317a3"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ugravel/8.png"
-hash = "6743a589e01a18e04f8a97a585acb059ce5573287389d0391e6befcc990b70c5"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ugravel/9.png"
-hash = "ebffaaeb8584a706d254084ebf1086d269689edf6146ad58d8b98dc0199d3948"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ugravel/gravel.png"
-hash = "d6abb378255ca11e880d69a8abccdda8a4d199662fbf013dc4d39aa9258b8383"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ugravel/gravel.properties"
-hash = "e4cea2cab529cada21a0aaad52b9e4b539a23b28ad7b61b4f380cf19eac1d30b"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ugravel/gravel2.png"
-hash = "f583960d4d2035aa2c65ac2544229dbe25b76b17ab467a0678fd967666a28459"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/vred_sand/0.png"
-hash = "031b70438c777aea38a4798150ee57614b15d62c0afc599ee35eb34c18f172fe"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/vred_sand/1.png"
-hash = "851a44bf56142aab65b5b8090ba2544b98ad2ba023a215312effa8f4e97deb8f"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/vred_sand/10.png"
-hash = "3773a5b15cba3393f6d0047d5f00b284ce9c046e3a82fc01a213a9d6117328e8"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/vred_sand/11.png"
-hash = "3d24b89c881b4535f3b61d25d7cc3524d27221315b07a013e5e1015e276db797"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/vred_sand/12.png"
-hash = "8b80b729bfa65d4a81fb94fa9e0fa8cfc86f8afcd14be73ece5c3cd5bdf4d240"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/vred_sand/13.png"
-hash = "0fef09fd615539d87ff86518a373c7dbe5f1324c0add5636039943f29f36bbb8"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/vred_sand/14.png"
-hash = "7ae57f79b52a8661839bd5e6f3a396cd393d8a2da57f620b78825be1f9db3785"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/vred_sand/15.png"
-hash = "d16afaf13d67e806bd0540cb8b9e1925dd04c015b85b78b6edcc874aa3129efa"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/vred_sand/16.png"
-hash = "c8c3a8bbd753fbe81195694a4646d661ac07d79956478a7a2b8e6e15b05ffe46"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/vred_sand/2.png"
-hash = "f5292d4899799d69b7d6c48d3f1f89b2e58b593b11200429f682819f442a2612"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/vred_sand/3.png"
-hash = "3da92524b7e302b6533dab9e2c0ad867e67507087357bc41208c371cbac20925"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/vred_sand/4.png"
-hash = "088397bf94796b52a87d01a5c3b5fc15f7a1b552bfa2aa5342bc7254f052a32f"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/vred_sand/5.png"
-hash = "1cd5e9d7077c93d65d7fde3e03188848d9a7491aec14f9fe233a5e6173cc6b1d"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/vred_sand/6.png"
-hash = "29bce3a63a14a40d83614cec10f66f03661b2b5e7eafda97a6430e11a40a52a0"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/vred_sand/7.png"
-hash = "eb3c08c88980add3c63220a49801d02b4763f6b40bbdd50160259194872796b2"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/vred_sand/8.png"
-hash = "9eab8a79030741564dba40d30593192e802f869ffb3a04b349465123d493dc68"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/vred_sand/9.png"
-hash = "d6b94da0feb910f369ac63884cf4ba4017f5590eacb4477b398547e6448dc679"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/vred_sand/red_sand.png"
-hash = "04d50493923334acdc01ff9aa17fec7d07dd31c1b87f18310e2285adbdffd51a"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/vred_sand/redsand.properties"
-hash = "458f3873ecaa9b758d5a1b8686dd2be1a8419eb7361dada35b4b9efa6926954e"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/vred_sand/sand2.png"
-hash = "e4e16136a2c6195435e0611a82657174f33d5606fbdefc3dfb0635ec12355ec0"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/wsand/0.png"
-hash = "b39e34c673db4c5a5563f4cb22c48f5545f597450088ebc09edba29d8f7632da"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/wsand/1.png"
-hash = "cf1391460e2a5e6954777381a325731869577299a2e39c6137f58487a7f8bdee"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/wsand/10.png"
-hash = "af06fe28de1cc3a39d9f1e99830898d5f022d7476316ecd48741930fb6f35f4e"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/wsand/11.png"
-hash = "2e95aea6f38cfe5ac3672b37f93c26452c7db5639b1c75bd992e2b7c98f08299"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/wsand/12.png"
-hash = "7e5c89e152f4a1a29aaf1418ac972873666b3f9a27b8c3e4b25f3a9b0485f274"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/wsand/13.png"
-hash = "0d93507f98cb4d1e025f6148b24a91adb69983a4037d29fe9cccfe22d17ae3ee"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/wsand/14.png"
-hash = "da2b14d3b6fb4e33aba8230eb30b00d34f7aa3a7f10c0d8eea4591880a2264a4"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/wsand/15.png"
-hash = "0425a189f4e823463f13ed160781ad9fda11f9eec8739a852761dc2e7a1b0a5c"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/wsand/16.png"
-hash = "58ae3b1a6630661ed3905aba99213e893ab337122a3cabbd3490dece4cd5d257"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/wsand/2.png"
-hash = "865a05b9bd030ad43f9edb91c1ac2792ffc2ad7fc9897d5a5446428da0a3d52e"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/wsand/3.png"
-hash = "ff1246fad758281c037969d884590a4f226421c83ec8b9b477295a8feb5f9306"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/wsand/4.png"
-hash = "a04e5652f52d27a051758075c3d207084926d48ff7183900cf8181c7172603d3"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/wsand/5.png"
-hash = "8d1801998690aee713d7bafac2fac4553a3db2d288506eda38f8325683d1dfa3"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/wsand/6.png"
-hash = "324c7d9a12c00822a42742c1cb0ef5ab2da3e2b34dcbb9d0e4ded9f53288b7a1"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/wsand/7.png"
-hash = "1e583398110663ab285f26d042fe8bec58f12a3eea029a156324910703386e8c"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/wsand/8.png"
-hash = "f5e5383312fba4c87737b9a494004cfaa848bb0f7f6f965af74d0be7b905df4b"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/wsand/9.png"
-hash = "6091ca7feeca7301233083a39564d6661e797ee5a8cc75a49a8a6d03cef1a09e"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/wsand/sand.png"
-hash = "914d23dd6cdca91c88e44c362ccbd91ab576a730c630b16950ca0ead329b8d03"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/wsand/sand.properties"
-hash = "dfc9e4e502dfdbd56bd0a582e4bf3451f2ae3cf944b4f73f46495684a7592842"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/wsand/sand2.png"
-hash = "53ed1ad061444f3f2738c7ce0717f29f8d1fff028a2406f8788e59c0d2c75199"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ysnow/0.png"
-hash = "1588584cd4e62a300eab713071aace461fd52c8abac4c41da9e7dce0dd8e1b43"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ysnow/1.png"
-hash = "2d48b0f63624ccf06e47c8d9ac6eb68b402a2b1e109d09343c989ebb4049df07"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ysnow/10.png"
-hash = "2ad6187e55f32d583ac9f7e8d3b2f7bce66be208bf27233d53b948335f271440"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ysnow/11.png"
-hash = "b1da8e6caed8661c22aa3e1682059cc5a740117a88b80b78592bc0a58b4eaad2"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ysnow/12.png"
-hash = "159c293f8d83234f6e3531eaa27f9e0af6cce990cb9f75c9c5b52a649ad27e71"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ysnow/13.png"
-hash = "c680758b46cc066c25ac69db7d00b5baf366023bd016fdcebcb26cf222de85c9"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ysnow/14.png"
-hash = "d4778905dd191b453cdd4d0c8f1d5f35bd2e83b1df0bd93fb121f485de6c96d5"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ysnow/15.png"
-hash = "e1ce8378f68e486c0a71c48f4bd0df3e8a8a6dcbd3121aadb85883a0bb6b8840"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ysnow/16.png"
-hash = "222f8c634244e27ca38873801dee3694ad838b6d9c5e064e9eb6641329ecff65"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ysnow/2.png"
-hash = "18568bbf55251ff4c2f3f7643187915a5cd3eed75393409e3525723021746b8b"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ysnow/3.png"
-hash = "72deecb69bfbb133428a72e3f4f3c99828ebf3bbf957f4c779a902a7038cff3d"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ysnow/4.png"
-hash = "d855472d3a277370507d40ceb055a025f5d54f5fc6af96089769d33571a414f3"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ysnow/5.png"
-hash = "c2446e17d758133cf8a89f8c7bec21c6809b5756113ac552ba8ac39eb2e6442c"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ysnow/6.png"
-hash = "089077c2ae8adab0b0ba00985c20bc9dfb80ddc13cef7c57ad906c96fa9c84ce"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ysnow/7.png"
-hash = "e1169b6dd17e0ef84e2f9d9c09481a399ce91066caac359853b302488fdf8d96"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ysnow/8.png"
-hash = "ea77d9454915a2659cf14e639672ee71907d1b91955f8a5eb00ddc7e7bf4cb47"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ysnow/9.png"
-hash = "3f53529e887fbfb9deaab8eaa070a8febf1053b2ff2cbd6749107a49d59eccb2"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ysnow/desktop.ini"
-hash = "dcf78b640802b381a948b762717af14857ff4c66cbfcb1b2d45aa4b8fef65f56"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ysnow/snow.png"
-hash = "1c3d0cac1cc36993be4fd732f73692045573689e57258f7efd3c3cf743d64419"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/ysnow/snow.properties"
-hash = "e4c8fd73ce9f4a6edb0ec5b16ffa713b7bbc038f0feb04a20eae34fd8a1a1af9"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zhay/0.png"
-hash = "7b9d9c3a196a34a99a2339ee37e5cee0a2d032ef1a0a5221c8ed6657121c0030"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zhay/1.png"
-hash = "bf0c1d2196dcf5e3edc90f703a13fb82facd2737bde9c49778faf4104759985a"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zhay/10.png"
-hash = "f847963a4269c68f1914a5c475135c6d59da37daf1b9c150c8d37ef55ddc18e3"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zhay/11.png"
-hash = "1370d20e9a6f0fe32871f5713b81b3390d7a955c633f656b664c809719cc1b56"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zhay/12.png"
-hash = "33e54eae9c7e2ca62fa755c8803d5916ceeca1336e687ed4b351082245e392e5"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zhay/13.png"
-hash = "6bc5f1550ed80a9cdc3d85ba38ef98b6dd4974901b31e587a7875863099c613b"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zhay/14.png"
-hash = "e33411d98ec73d032cfc7d3525e3356ab633f1bceef33480591484fca7d8e905"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zhay/15.png"
-hash = "d0df8e7227bd312970dd5c9d025b2028e95ce0551494f83141e024d96028ea1e"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zhay/16.png"
-hash = "9a08ed7085efc38f1d8c3b0cf40212c9dad5e221a849e02ea2e7823c9bdcac99"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zhay/2.png"
-hash = "3166aab51b8813eaa9a3daa21d11a3a80e3264d11148cf06a9a3d1d8cf2dd72d"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zhay/3.png"
-hash = "2cd9f82786b787c224574c94fe4fa31c343bfcac6b63bc15ef487da9da159936"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zhay/4.png"
-hash = "6df0f34ff7d52d934d099ea1055dd2715cc721cfd2b98e451cceaa131835f5d6"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zhay/5.png"
-hash = "f728fba38c4ee0e2b244fe50cde273c4e03f6cd51e7757eab73e81dc055e2d5f"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zhay/6.png"
-hash = "61132ad769f216c326e9c8944dca47faf4a7369c6e1995a66f7fc6147adc161a"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zhay/7.png"
-hash = "e472405a0a750608b11195afcdf5c6e4ea8905436d984bf9faa576deecfeb0d2"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zhay/8.png"
-hash = "88e4da3ecd0a39173522defc3d921776a23c502ee912eba9416e66f6669f36a4"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zhay/9.png"
-hash = "ac7f260ac923d793a0d0e57fa70b5cebc4cdb72b2780ab9d5d11cc8ff6606b73"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zhay/hay.png"
-hash = "ae409b5af08133eace814766905172b5269c01b30224e4908349a66c206b98a0"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zhay/hay.properties"
-hash = "1b5a9bf0e69a305fa5c90e94403865d67845b21c4e799f45dbb1c15fef43e47f"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zhay/hay_block_top.png"
-hash = "521560949386594e5a5efe6fe52840c56d2f69a7b1b84779cd7ed53370503869"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zzsculk/0.png"
-hash = "71f40233277eed3b427d016d3baa719e0496c1ed2da667fe253eddb999752b42"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zzsculk/1.png"
-hash = "2245e59b05ccfbee76aa261975fa69c3652f8c6d2681a7ad0d565eb113bc3dec"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zzsculk/10.png"
-hash = "d6d91226c8db924537f8c14b640b98e35a306e184e421b02055b8783d45be1cd"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zzsculk/11.png"
-hash = "f3f861d92589dd370358c9702c277a02109b663f2159c42ecd110d7543b83b73"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zzsculk/12.png"
-hash = "92337616aa8cd41d077c0e85bc8177ff869e46cc92a84e01c033cf1069936aad"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zzsculk/13.png"
-hash = "930ed5451220c840be79fb78f923af1d4d3a0cc9402c445b8d6fdf5b861ebcc6"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zzsculk/14.png"
-hash = "52b016ab867ce2b61303f4829fe14c97f8800588a9229eb4c13c3378ddd0deba"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zzsculk/15.png"
-hash = "13a62fe30f47376f42bc1548d6bbb74770b31fd318c1ed1ba92dc7500fddb7c3"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zzsculk/16.png"
-hash = "52b2b76f2d21a628136ae4e6e188b4ad6ed99d87e2106ea265e73921f6f4919c"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zzsculk/2.png"
-hash = "f6eaf2126632203175561081b4d22034ba9333be8e4ef9eb63e52a63bae51906"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zzsculk/3.png"
-hash = "4a6cc9b2e9d8d55941148a7810d11c87519e66b4b47c0355c55dfb200de7969f"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zzsculk/4.png"
-hash = "b42b29b96f9bd903c361a96798722223d3dabc837cf8c22d8c973d9712da1860"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zzsculk/5.png"
-hash = "523b6bc89279efb85ef25955b45f2fa20b0cb6c72b64ce05cb8b907b067de39d"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zzsculk/6.png"
-hash = "1f65a8277e5602dd8200f27961b7eb4200733574331e1f0d7c99d703af58ba15"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zzsculk/7.png"
-hash = "6409afbe02479472f900733cc33221dc175d3483ac3faf7ac87e9681257de70e"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zzsculk/8.png"
-hash = "494ef3706515eb9136bb9501cceae31c2f6f4824589647be54d1045dcc0aef57"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zzsculk/9.png"
-hash = "d7675a4c4c0fdb95393888cb35527b39b66346c6e6cf6f50cdb151c0bcd3e848"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zzsculk/sculk.png"
-hash = "0dc206a55a6b6e9d75c4c0622e8855caa4c0da6a20d028530d31b8c56f7bef7a"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zzsculk/sculk_block.png"
-hash = "d3735d017c13c2f2b0e45568d4fb5a5e2509321942694e0cd0a95e7cf62d53b6"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/assets/minecraft/optifine/ctm/zsmalloverlays/zzsculk/sculk_block.properties"
-hash = "6716e159f08e1d10ff890a5f6c8a2f412132b52df4c01166d6223ca2ffa4142c"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/pack.mcmeta"
-hash = "03ed12d4683962cf1fae4afb996308a0e563e67df7257743631368d0bffabd6f"
-
-[[files]]
-file = "resourcepacks/BvBOverlaysV4/pack.png"
-hash = "42e68cc9982cb1f789f1c30eb58837835598e684e8213817c615730482fe7194"
 
 [[files]]
 file = "resourcepacks/Reim GUI + Default Dark/LICENSE.txt"
