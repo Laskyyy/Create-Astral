@@ -1,0 +1,14 @@
+name = "Let's do Wine!"
+filename = "vinery-1.0.1.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "07d648de16814e3bc767fdd335b4671a6501c452"
+
+[update]
+[update.curseforge]
+file-id = 4287857
+project-id = 704465

@@ -373,6 +373,7 @@ onEvent('recipes', event => {
   event.replaceInput({output: 'ad_astra:space_helmet'}, 'minecraft:orange_stained_glass_pane', 'create:diving_helmet')
   event.replaceInput({output: 'ad_astra:space_pants'}, 'ad_astra:steel_ingot', 'create:sturdy_sheet')
   event.replaceInput({output: 'create:deployer'}, 'create:electron_tube', 'create:polished_rose_quartz')
+  event.replaceInput({mod: 'chipped'}, 'minecraft:wooden_axe', 'minecraft:flint')
   event.remove({output: 'ad_astra:space_boots'})
   event.replaceInput({output: 'ad_astra:space_suit'}, 'ad_astra:steel_ingot', 'create:sturdy_sheet')
   event.replaceInput({output: 'ad_astra:space_suit'}, 'ad_astra:oxygen_gear', 'create:copper_backtank')
@@ -671,7 +672,7 @@ onEvent('recipes', event => {
     "cast": {
       "tag": "tconstruct:casts/multi_use/coin"
     },
-    "cast_consumed": true,
+    "cast_consumed": false,
     "fluid": {
       "name": "tconstruct:molten_bronze",
       "amount": 4000
@@ -685,7 +686,7 @@ onEvent('recipes', event => {
     "cast": {
       "tag": "tconstruct:casts/multi_use/gear"
     },
-    "cast_consumed": true,
+    "cast_consumed": false,
     "fluid": {
       "name": "tconstruct:molten_bronze",
       "amount": 12000
@@ -1089,10 +1090,10 @@ event.recipes.createMechanicalCrafting('scout:upgraded_pouch', [
   E: 'create:fluid_tank'
   
 })
-	event.recipes.createMechanicalCrafting('ad_astra:oxygen_loader', [
-  'BBABB',
-  'BDEDB',
-  'BBCBB'
+	event.Shaped('ad_astra:oxygen_loader', [
+  'BAB',
+  'DED',
+  'BCB'
 ], {
   A: 'ad_astra:oxygen_tank',
   B: '#c:iron_plates',
@@ -2512,7 +2513,7 @@ event.recipes.createMixing('createastral:astral_conduit', [
   {fluid: 'kubejs:shimmer', amount: 81000},
   'minecraft:diamond_block',
   'phonos:redstone_chip'
-]).heated().processingTime(30)
+]).processingTime(30)
 
 
 })
