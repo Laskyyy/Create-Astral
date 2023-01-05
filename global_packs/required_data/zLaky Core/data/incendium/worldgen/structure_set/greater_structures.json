@@ -1,10 +1,6 @@
 {
   "structures": [
     {
-      "structure": "incendium:sanctum",
-      "weight": 5
-    },
-    {
       "structure": "incendium:forbidden_castle",
       "weight": 5
     },
