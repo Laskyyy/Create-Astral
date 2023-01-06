@@ -90,10 +90,10 @@ onEvent('fluid.registry', event => {
 	.stillTexture('tconstruct:block/fluid/molten/shimmer')
 	.flowingTexture('tconstruct:block/fluid/molten/shimmer')
 
-  event.create('blast-resistant_concrete')
+  event.create('blast-resistant_cement')
     .thickTexture(0x959595)
     .bucketColor(0x959595)
-    .displayName('Blast-Resistant Concrete')
+    .displayName('Blast-Resistant Cement')
   .stillTexture('tconstruct:block/fluid/molten/still')
 	.flowingTexture('tconstruct:block/fluid/molten/flowing')
 })
