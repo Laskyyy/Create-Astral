@@ -89,6 +89,13 @@ onEvent('fluid.registry', event => {
     .displayName('Shimmer')
 	.stillTexture('tconstruct:block/fluid/molten/shimmer')
 	.flowingTexture('tconstruct:block/fluid/molten/shimmer')
+
+  event.create('blast-resistant_concrete')
+    .thickTexture(0x959595)
+    .bucketColor(0x959595)
+    .displayName('Blast-Resistant Concrete')
+  .stillTexture('tconstruct:block/fluid/molten/still')
+	.flowingTexture('tconstruct:block/fluid/molten/flowing')
 })
 
 
@@ -227,6 +234,12 @@ onEvent('block.registry', event => {
        .hardness(3)
        .displayName('Ender Coil Block')
        .tagBlock('minecraft:mineable/pickaxe')
+
+    event.create('createastral:blast-resistant_concrete_slab', 'slab').hardness(4).tagBlock('minecraft:mineable/pickaxe').textureAll('createastral:block/blast_side').texture('up','createastral:block/blast_top').texture('down','createastral:block/blast_top')
+    event.create('createastral:blast-resistant_concrete', 'basic').hardness(4).tagBlock('minecraft:mineable/pickaxe').textureAll('createastral:block/blast_side').texture('up','createastral:block/blast_top').texture('down','createastral:block/blast_top')
+    event.create('createastral:blast-resistant_concrete_stairs', 'stairs').hardness(4).tagBlock('minecraft:mineable/pickaxe').textureAll('createastral:block/blast_side').texture('up','createastral:block/blast_top').texture('down','createastral:block/blast_top')
+
+    event.create('createastral:andesite_alloy_block', 'basic').hardness(4).tagBlock('minecraft:mineable/pickaxe')
  })
 
 
