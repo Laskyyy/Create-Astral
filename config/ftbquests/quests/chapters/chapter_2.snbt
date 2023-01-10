@@ -7,32 +7,18 @@
 	icon: "create:andesite_alloy"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	images: [
-		{
-			x: -5.0d
-			y: 10.0d
-			width: 3.0d
-			height: 3.0d
-			rotation: 0.0d
-			image: "ad_astra:textures/sky/earth.png"
-			hover: [ ]
-			click: ""
-			dev: false
-			corner: false
-		}
-		{
-			x: 5.5d
-			y: 5.5d
-			width: 6.0d
-			height: 6.0d
-			rotation: 0.0d
-			image: "createastral:textures/item/flowchart.png"
-			hover: ["Recipe tree from base create, using only cobble you can automate almost every metal from the overworld in Astral!"]
-			click: ""
-			dev: false
-			corner: false
-		}
-	]
+	images: [{
+		x: -5.0d
+		y: 10.0d
+		width: 3.0d
+		height: 3.0d
+		rotation: 0.0d
+		image: "ad_astra:textures/sky/earth.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
 	quests: [
 		{
 			x: -2.5d
