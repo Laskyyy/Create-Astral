@@ -27,3 +27,6 @@ https://www.curseforge.com/minecraft/texture-packs/fractured-moon
 
 Sturdy sheet & copper block
 https://www.curseforge.com/minecraft/mc-mods/create-misc-and-things
+
+Immersive aircraft item textures
+https://www.curseforge.com/minecraft/texture-packs/create-style-modded-compats
