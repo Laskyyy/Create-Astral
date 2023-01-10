@@ -1,0 +1,14 @@
+# This mod does not create custom audio channels. Here are the acceptable sound categories:
+# master, music, record, weather, block, hostile, neutral, player, ambient, voice
+# Note that you can nest config files in folders by specifying the folder before it like folder/filename.
+
+[music]
+	sound_category = "music"
+	main = "music/main"
+	transitions = "music/transitions"
+	commands = "music/commands"
+	toggles = "music/toggles"
+	redirect = "music/redirect"
+	songs_folder = "config/MusicTriggers/songs"
+	paused_by_jukebox = "true"
+	overrides_normal_music = "true"

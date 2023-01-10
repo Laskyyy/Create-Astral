@@ -38,10 +38,10 @@ fallingExplosionMultiplier = 0.7
 gravity = -2.0
 moveCameraInVehicle = true
 [rocket]
-atmosphereLeave = 500
-countDownTicks = 200
-acceleration = 0.005
-maxSpeed = 0.5
+atmosphereLeave = 400
+countDownTicks = 100
+acceleration = 0.01
+maxSpeed = 0.8
 entitiesBurnUnderRocket = true
 tankBuckets = 3
 [rover]
