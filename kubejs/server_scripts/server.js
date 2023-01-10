@@ -2129,7 +2129,7 @@ event.recipes.createFilling('structures_compass:structures_compass', [
 
 
 event.recipes.createMixing(Fluid.of('kubejs:hellfire', 81), [
-  {fluid: 'minecraft:lava', amount: 81000},
+  {fluid: 'minecraft:lava', amount: 8100},
 ]).superheated()
 	
 	
@@ -2746,3 +2746,12 @@ event.recipes.createMixing('createastral:astral_conduit', [
 })
 
 
+onEvent('player.logged_in', event => {
+
+  if (!event.player.stages.has('starting_items')) {
+
+    event.player.stages.add('starting_items')
+
+    event.player.give('ftbquests:book')
+  }
+})

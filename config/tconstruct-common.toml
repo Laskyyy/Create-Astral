@@ -77,7 +77,7 @@
 		[recipes.ore_rates.smeltery]
 			#Number of nuggets produced per metal ore unit melted. 9 nuggets would give 1 ingot
 			#Range: 1 ~ 45
-			nuggetsPerMetal = 10
+			nuggetsPerMetal = 13
 			#Number of gem shards produced per gem ore unit melted. 4 gem shards would give 1 gem
 			#Range: 1 ~ 20
 			shardsPerGem = 8
