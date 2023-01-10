@@ -20,12 +20,253 @@ onEvent('tags.blocks', event => {
 
 })
 
+// constants
+var FULL_BUCKET_AMMOUNT = 81000;
+var INGOT_FLUID_AMMOUNT = 9000;
 
-// Lasky - feel free to move the code in here to more appropriate places, I just wanted
-//  to keep all my changes together
-function lizardChanges(event) {
-  var FULL_BUCKET_AMMOUNT = 81000;
+// Includes some "ore alchemy" and other misc blocks like andeste alloy blocks
+function lizardMiscChanges(event) {
+  event.replaceInput('create:powdered_obsidian', '#c:dusts/obsidian');
+
+  // Manual dripstone
+	event.shapeless('minecraft:dripstone_block', [
+    "minecraft:calcite",
+    "minecraft:water_bucket"
+	]).replaceIngredient('minecraft:water_bucket', 'minecraft:bucket')
+    .id('createastral:dripstone_block_manual_only');
+
+  // Manual Pointed Dripstone
+  event.stonecutting('2x minecraft:pointed_dripstone', 'minecraft:dripstone_block');
+
+  // More efficient pointed dripstone filling recipe
+  event.recipes.createFilling('4x minecraft:pointed_dripstone', [
+    'minecraft:calcite',
+    {fluid: 'minecraft:water', amount: FULL_BUCKET_AMMOUNT / 2}
+  ]);
+
+  // Pre-crushing copper and zinc generation
+  event.recipes.createMilling([
+    Item.of('create:crushed_copper_ore').withChance(.4)
+  ], '#create:stone_types/veridium');
+  event.recipes.createMilling([
+    Item.of('create:crushed_zinc_ore').withChance(.15)
+  ], '#create:stone_types/asurine');
+
+   // Remove Tech reborn's coal grinding recipe, make the crushing wheel required.
+  // TODO: implement "ore dust" idea.
+  event.remove({type: 'techreborn:grinder', output: 'techreborn:coal_dust'});
+  event.remove({type: 'techreborn:grinder', output: 'techreborn:charcoal_dust'});
+  event.recipes.createCrushing([
+    'techreborn:coal_dust'
+  ], 'minecraft:coal');
+  event.recipes.createCrushing([
+    'techreborn:charcoal_dust'
+  ], 'minecraft:charcoal');
+
+  // Create charcoal dust haunting recipe, parity with normal coal haunting.
+  event.recipes.createHaunting([
+    'techreborn:coal_dust'
+  ], '2x techreborn:charcoal_dust');
+
+  // Implementing Andesite Alloy Block
+  event.shaped('createastral:andesite_alloy_block', [
+    'AAA', 'AAA', 'AAA'
+  ], {
+    A: 'create:andesite_alloy'
+  });
+
+  event.shaped('9x create:andesite_alloy', [
+    'A'
+  ], {
+    A: 'createastral:andesite_alloy_block'
+  });
+
+  // andesite alloy block basin recipe
+  event.custom({
+    "type": "tconstruct:casting_basin",
+    "fluid": {
+      "name": "kubejs:compound_mixture",
+      "amount": INGOT_FLUID_AMMOUNT * 9
+    },
+    "result": "createastral:andesite_alloy_block",
+    "cooling_time": 180,
+  });
+}
+
+// Largely degating trains
+function lizardCH1Changes(event) {
+  // Pre-bulk-washing obisidian (train de-gating)
+	event.shapeless('minecraft:obsidian', [
+    "minecraft:magma_block",
+    "minecraft:water_bucket"
+	]).replaceIngredient('minecraft:water_bucket', 'minecraft:bucket')
+    .id('createastral:washing_obsidian_manual_only');
+
+
+  // Pre-spout sturdy sheet
+  var transitional_sturdy_sheet = 'create:unprocessed_obsidian_sheet';
+  event.recipes.createSequencedAssembly([
+    Item.of('create:sturdy_sheet').withChance(12),
+    Item.of('minecraft:gravel').withChance(8)
+  // ], 'create:powdered_obsidian', [
+  // Todo: should we just do an event.replaceInput so obsidian dust and powdered obsidian is interchangeable?
+  ], '#c:dusts/obsidian', [
+    event.recipes.createPressing(transitional_sturdy_sheet, transitional_sturdy_sheet),
+    event.recipes.createPressing(transitional_sturdy_sheet, transitional_sturdy_sheet)
+  ]).transitionalItem(transitional_sturdy_sheet).loops(5);
+
+
+  // Pre-deployer track
+  var track_shape = ['NSN', 'NSN', 'NSN'];  
+  event.shaped('create:track', track_shape, {
+    N: 'techreborn:tin_nugget',
+    S: '#create:sleepers',    
+  });
+  event.shaped('create:track', track_shape, {
+    N: 'create:zinc_nugget',
+    S: '#create:sleepers',    
+  });
+  event.shaped('create:track', track_shape, {
+    N: 'minecraft:iron_nugget',
+    S: '#create:sleepers',    
+  });
+}
+
+// A lot of progression fixes
+function lizardCH2Changes(event) {
+  // Pre-brass Smart Pipe
+  event.shaped('create:smart_fluid_pipe', [
+    'FB',
+    'CO',
+    'VP'
+  ], {
+    B: 'createastral:bronze_sheet',
+    O: 'minecraft:observer',
+    F: 'create:filter',
+    C: 'minecraft:comparator',
+    P: 'create:fluid_pipe',
+    V: 'create:fluid_valve'
+  });
+
+  // Pre-brass display links (we can get pre-brass display boards after all)
+  event.shaped('create:display_link', [
+    ' R ',
+    'BOB',
+    ' C '
+  ], {
+    B: 'createastral:bronze_sheet',
+    O: 'minecraft:observer',
+    R: 'minecraft:redstone_torch',
+    C: '#c:plates/copper'
+  });
+
+  // Make Oxygen loader possible before the moon
+  // (NOTE: I commented out original recipe)
+	event.shaped('ad_astra:oxygen_loader', [
+    'IOI',
+    'PTP',
+    'IFI'
+  ], {
+    I: 'create:iron_sheet',
+    O: 'ad_astra:oxygen_tanks',
+    P: 'create:smart_fluid_pipe',
+    T: 'create:fluid_tank',
+    F: 'ad_astra:engine_fan'
+	});
+
+
+  // Degate Distributor to be before the compressor, so people can make moon bases as soon as they
+  //  reach the moon.
+  event.remove({output: 'ad_astra:oxygen_distributor'})
+  event.shaped('ad_astra:oxygen_distributor', [
+    'FFF',
+    'TLT',
+    'DGD'
+  ], {
+    F: 'ad_astra:engine_fan',
+    T: 'ad_astra:oxygen_tank',
+    L: 'ad_astra:oxygen_loader',
+    D: 'ad_astra:desh_ingot',
+    G: 'ad_astra:oxygen_gear'
+  });
+}
+
+// Made changes to give silver and brass more unique identities
+function lizardCH3Changes(event) {
+  // Remove mechanical crafter requirement from alternator+electric motor,
+  //  Making it fully unique to the silver path.
+  event.remove({output: 'createaddition:alternator'});
+  event.shaped('createaddition:alternator', [
+    'ABA',
+    'CDC',
+    'EFE'
+  ], {
+    A: 'create:iron_sheet',
+    B: 'techreborn:red_cell_battery',
+    C: 'createaddition:copper_spool',
+    D: 'create:integrated_circuit',
+    E: 'createaddition:capacitor',
+    F: 'techreborn:basic_machine_casing'
+  });
+
+  event.remove({output: 'createaddition:electric_motor'});
+  event.shaped('createaddition:electric_motor', [
+    'ABA',
+    'CDC',
+    'EFE'
+  ], {
+    A: 'createastral:bronze_sheet',
+    B: 'techreborn:red_cell_battery',
+    C: 'createaddition:copper_spool',
+    D: 'create:integrated_circuit',
+    E: 'createaddition:capacitor',
+    F: 'techreborn:basic_machine_casing'
+  });
+
+  // Removed brass+mechanical crafting requirement for Tesla Coil,
+  //  Making it fully unique to the silver path.
+  event.remove({output: 'createaddition:tesla_coil'});
+  event.shaped('createaddition:tesla_coil', [
+    'DSD',
+    'USU',
+    'CMC'
+  ], {
+    D: 'ad_astra:compressed_desh',
+    S: 'createaddition:copper_spool',
+    U: 'techreborn:copper_cable',
+    C: 'createaddition:capacitor',
+    M: 'techreborn:basic_machine_casing'
+  });
   
+  // New Electrum recipe
+  event.custom({
+    "type":"createaddition:charging",
+    "input": {
+          "item": "kubejs:molten_desh_bucket",
+      "count": 1
+    },
+    "result": {
+      "item": "tconstruct:molten_electrum_bucket",
+      "count": 1
+    },
+    "energy": 4000
+  });
+
+  // I commented out the two lines replacing scroched brick input with scorched bricks
+  //  and the one line removing scorched bricks entirely. They made the foundry impossible.
+  // Also: I commented out the original nether grout recipe
+  event.recipes.createMixing('3x tconstruct:nether_grout', [
+    'minecraft:magma_cream',
+    'minecraft:soul_sand',
+    'create:scorchia',
+    '#c:dusts/obsidian',
+    '#c:dusts/obsidian',
+    '#c:dusts/obsidian'
+  ]).heated().processingTime(700);
+}
+
+function lizardCH3Biofuel(event) {
+  // Biofuel rework
   event.remove({output: 'techreborn:plantball'});
   event.remove({
     type: 'minecraft:crafting_shaped',
@@ -106,105 +347,84 @@ function lizardChanges(event) {
     event.recipes.createCutting(transitional_bio_pellet, transitional_bio_pellet),
     event.recipes.createPressing(transitional_bio_pellet, transitional_bio_pellet)
   ]).transitionalItem(transitional_bio_pellet).loops(1);
+}
 
+// This includes the launch pad recipe
+function lizardCH3Concrete(event) {
+  // Cement recipe
+  event.recipes.createMixing(Fluid.of('kubejs:blast-resistant_cement', FULL_BUCKET_AMMOUNT), [
+    {fluid: 'minecraft:water', amount: FULL_BUCKET_AMMOUNT },
+    '4x techreborn:steel_dust',
+    'create:limestone'
+  ]).processingTime(1000);
 
-  // Pre-bulk-washing obisidian (train de-gating)
-	event.shapeless('minecraft:obsidian', [
-    "minecraft:magma_block",
-    "minecraft:water_bucket"
-	]).replaceIngredient('minecraft:water_bucket', 'minecraft:bucket')
-    .id('createastral:washing_obsidian_manual_only');
+  // I wonder if should even bother with the limstone recipe
+  event.recipes.createMixing(Fluid.of('kubejs:blast-resistant_cement', FULL_BUCKET_AMMOUNT), [
+    {fluid: 'minecraft:water', amount: FULL_BUCKET_AMMOUNT },
+    '4x techreborn:steel_dust',
+    '#c:concrete_powder'
+  ]).processingTime(1000);
 
+  // Cement pouring recipe
+  event.custom({
+    "type": "tconstruct:casting_basin",
+    "fluid": {
+      "name": "kubejs:blast-resistant_cement",
+      "amount": FULL_BUCKET_AMMOUNT
+    },
+    "result": "createastral:blast_resistant_concrete",
+    "cooling_time": 400
+  })
 
-  // Pre-spout sturdy sheet
-  var transitional_sturdy_sheet = 'create:unprocessed_obsidian_sheet';
-  event.recipes.createSequencedAssembly([
-    Item.of('create:sturdy_sheet').withChance(12),
-    Item.of('minecraft:gravel').withChance(8)
-  ], 'create:powdered_obsidian', [
-    event.recipes.createPressing(transitional_sturdy_sheet, transitional_sturdy_sheet),
-    event.recipes.createPressing(transitional_sturdy_sheet, transitional_sturdy_sheet)
-  ]).transitionalItem(transitional_sturdy_sheet).loops(5);
-
-
-  // Pre-deployer track
-  var track_shape = ['NSN', 'NSN', 'NSN'];  
-  event.shaped('create:track', track_shape, {
-    N: 'techreborn:tin_nugget',
-    S: '#create:sleepers',    
-  });
-  event.shaped('create:track', track_shape, {
-    N: 'create:zinc_nugget',
-    S: '#create:sleepers',    
-  });
-  event.shaped('create:track', track_shape, {
-    N: 'minecraft:iron_nugget',
-    S: '#create:sleepers',    
-  });
-
-  // Pre-brass Smart Pipe
-  event.shaped('create:smart_fluid_pipe', [
-    'FB',
-    'CO',
-    'VP'
+  // Old school slab and stairs
+  event.shaped('6x createastral:blast_resistant_concrete_slab', [
+    'AAA',
   ], {
-    B: 'createastral:bronze_sheet',
-    O: 'minecraft:observer',
-    F: 'create:filter',
-    C: 'minecraft:comparator',
-    P: 'create:fluid_pipe',
-    V: 'create:fluid_valve'
-  });
+    A: 'createastral:blast_resistant_concrete',    
+  })
 
-  // Manual dripstone
-	event.shapeless('minecraft:dripstone_block', [
-    "minecraft:calcite",
-    "minecraft:water_bucket"
-	]).replaceIngredient('minecraft:water_bucket', 'minecraft:bucket')
-    .id('createastral:dripstone_block_manual_only');
-
-  // Manual Pointed Dripstone
-  event.stonecutting('2x minecraft:pointed_dripstone', 'minecraft:dripstone_block');
-
-  // More efficient pointed dripstone filling recipe
-  event.recipes.createFilling('4x minecraft:pointed_dripstone', [
-    'minecraft:calcite',
-    {fluid: 'minecraft:water', amount: FULL_BUCKET_AMMOUNT / 2}
-  ]);
-
-
-  // Pre-crushing copper and zinc generation
-  event.recipes.createMilling([
-    Item.of('create:crushed_copper_ore').withChance(.4)
-  ], '#create:stone_types/veridium');
-
-  event.recipes.createMilling([
-    Item.of('create:crushed_zinc_ore').withChance(.15)
-  ], '#create:stone_types/asurine');
-
-  // event.recipes.createCrushing([
-  //   'create:crushed_tin_ore',
-  //   Item.of('minecraft:iron_nugget').withChance(1),
-  // ], 'techreborn:raw_tin')
-
-  // Pre-brass display links (we can get pre-brass display boards after all)
-  event.shaped('create:display_link', [
-    ' R ',
-    'BOB',
-    ' C '
+  event.shaped('4x createastral:blast_resistant_concrete_stairs', [
+    'A  ',
+    'AA ',
+    'AAA',
   ], {
-    B: 'createastral:bronze_sheet',
-    O: 'minecraft:observer',
-    R: 'minecraft:redstone_torch',
-    C: '#c:plates/copper'
+    A: 'createastral:blast_resistant_concrete'
   });
+
+  // Cement block-cutting recipe
+  event.stonecutting('2x createastral:blast_resistant_concrete_slab', 'createastral:blast_resistant_concrete');
+  event.stonecutting('createastral:blast_resistant_concrete_stairs',  'createastral:blast_resistant_concrete');
+
+  // Launch pad recipe
+  event.recipes.createMechanicalCrafting('ad_astra:launch_pad', [
+    'BAAAB',
+    'ABABA',
+    'AABAA',
+    'ABABA',
+    'BAAAB',  
+  ], {
+    A: 'createastral:blast_resistant_concrete',
+    B: 'create:sturdy_sheet',
+  });
+}
+
+
+// Lasky - feel free to move the code in here to more appropriate places, I just wanted
+//  to keep all my changes together
+function lizardChanges(event) { 
+  lizardMiscChanges(event);
+  lizardCH1Changes(event);
+  lizardCH2Changes(event);
+  lizardCH3Changes(event);
+  lizardCH3Biofuel(event);
+  lizardCH3Concrete(event);
 }
 
 
 
 onEvent('recipes', event => {
 	
-  // Lizard's changes (mostly plantball and biofuel recipes)
+  // Lizard's changes
   lizardChanges(event);
   
   
@@ -289,7 +509,7 @@ onEvent('recipes', event => {
 	event.replaceInput({type: 'minecraft:crafting_shaped'}, 'farmersdelight:rope', 'campanion:rope')
 	event.remove({output: 'farmersdelight:rope'})
 	event.remove({output: 'tconstruct:nether_grout'})
-	event.replaceInput('tconstruct:scorched_brick', 'tconstruct:scorched_bricks')
+	// event.replaceInput('tconstruct:scorched_brick', 'tconstruct:scorched_bricks') // ???
   event.replaceInput({mod:'tconstruct'}, 'minecraft:quartz', 'ae2:charged_certus_quartz')
 	event.remove({output: 'tconstruct:efln_ball'})
 	event.remove({output: 'campanion:mre'})
@@ -329,7 +549,7 @@ onEvent('recipes', event => {
 	event.remove({output: 'tconstruct:seared_fuel_tank'})
   event.remove({output: 'tconstruct:seared_bricks'})
   event.remove({output: 'tconstruct:grout'})
-  event.remove({output: 'tconstruct:scorched_bricks'})
+  // event.remove({output: 'tconstruct:scorched_bricks'}) // ???
 	event.remove({type: 'create:mixing', output: 'create:brass_ingot'})
 	event.remove({type: 'create:mixing', output: 'tconstruct:rose_gold_ingot'})
 	event.remove({type: 'create:mixing', output: 'tconstruct:slimesteel_ingot'})
@@ -500,6 +720,7 @@ onEvent('recipes', event => {
 
   event.remove({output: 'techreborn:electronic_circuit'})
   event.remove({output: 'techreborn:industrial_circuit'})
+  event.remove({output: 'techreborn:energy_flow_chip'})
   event.remove({output: 'techreborn:lithium_ion_battery'})
   event.remove({mod: 'powah'})
   event.remove({output: 'techreborn:rubber', type: 'minecraft:smelting'})
@@ -614,18 +835,43 @@ onEvent('recipes', event => {
   event.replaceInput({mod: 'ae2'}, 'minecraft:copper_ingot', 'techreborn:silver_plate')
   event.replaceInput({mod: 'ae2'}, 'minecraft:redstone', 'ae2:fluix_dust')
   event.replaceInput({mod: 'ae2'}, 'ae2:fluix_crystal', 'ae2:fluix_dust')
-  event.replaceInput({mod: 'techreborn'}, 'techreborn:advanced_circuit', 'techreborn:electronic_circuit')
+  event.replaceInput('techreborn:advanced_circuit', 'techreborn:electronic_circuit')
+  event.replaceInput({output: 'gearreborn:hazmat_chestpiece'}, 'techreborn:electronic_circuit', 'create:integrated_circuit')
+  event.replaceInput({output: 'gearreborn:hazmat_chestpiece'}, 'techreborn:reinforced_glass', '#c:glass')
   event.replaceOutput('techreborn:electronic_circuit', 'create:integrated_circuit')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:cupronickel_heating_coil', 'createastral:copper_heating_coil')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:peridot_plate', 'techreborn:emerald_plate')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:nichrome_heating_coil', 'createastral:ender_heating_coil')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:energy_crystal', 'create:precision')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:lapotron_crystal', 'create:precision_mechanism')
+  event.replaceInput({mod: 'techreborn'}, 'techreborn:advanced_alloy_plate', 'techreborn:lead_plate')
   event.replaceInput({mod: 'techreborn', output: 'techreborn:advanced_drill'}, 'ad_astra:compressed_calorite', 'techreborn:lead_plate')
   event.replaceInput({mod: 'techreborn', output: 'techreborn:advanced_chainsaw'}, 'ad_astra:compressed_calorite', 'techreborn:lead_plate')
   event.replaceInput({mod: 'techreborn', output: 'techreborn:advanced_jackhammer'}, 'ad_astra:compressed_calorite', 'techreborn:lead_plate')
 
 
+
+  event.custom({
+    "type":"createaddition:rolling",
+    "input": {
+          "tag": "c:nuggets/gold"
+    },
+    "result": {
+      "item": "createastral:golden_pin",
+      "count": 1
+    }
+  })
+
+  event.custom({
+    "type":"createaddition:rolling",
+    "input": {
+          "item": "ad_astra:calorite_nugget"
+    },
+    "result": {
+      "item": "createastral:calorite_pin",
+      "count": 1
+    }
+  })
 
   event.custom({
     "type": "tconstruct:casting_table",
@@ -683,13 +929,17 @@ event.recipes.createDeploying('create:andesite_casing', ['create:copper_sheet', 
 ]).transitionalItem('create:andesite_casing').loops(1) 
 
 event.recipes.createSequencedAssembly([ // begin
-'create:precision_mechanism', // output
-], 'createastral:astral_singularity', [ // input
-event.recipes.createDeploying('createastral:astral_singularity', ['createastral:astral_singularity', 'create:experience_nugget']),
-event.recipes.createDeploying('createastral:astral_singularity', ['createastral:astral_singularity', 'create:polished_rose_quartz']),
-event.recipes.createDeploying('createastral:astral_singularity', ['createastral:astral_singularity', 'create:brass_ingot']),
+'createastral:incomplete_electronic_circuit', // output
+], 'create:integrated_circuit', [ // input
+event.recipes.createDeploying('create:integrated_circuit', ['create:integrated_circuit', 'createastral:electrified_pin']), 
+]).transitionalItem('create:integrated_circuit').loops(64) 
 
-]).transitionalItem('createastral:astral_singularity').loops(100) 
+event.recipes.createSequencedAssembly([ // begin
+'techreborn:electronic_circuit', // output
+], 'createastral:incomplete_electronic_circuit', [ // input
+event.recipes.createDeploying('createastral:incomplete_electronic_circuit', ['createastral:incomplete_electronic_circuit', 'ad_astra:compressed_ostrum']), 
+event.recipes.createPressing('createastral:incomplete_electronic_circuit', 'createastral:incomplete_electronic_circuit')
+]).transitionalItem('createastral:incomplete_electronic_circuit').loops(1) 
 
 
 
@@ -853,16 +1103,16 @@ event.recipes.createFilling('techreborn:lithium_ion_battery', [
 ]).heated().processingTime(250)
 	//Tinker's Construct Reworking (New fluids and recipes)
 	//Tier 4 materials
- 
- 	event.recipes.createMixing('3x tconstruct:nether_grout', [
-   'minecraft:magma_cream',
-   'minecraft:soul_sand',
-   'minecraft:gravel',
-   'create:powdered_obsidian',
-   'create:powdered_obsidian',
-   'create:powdered_obsidian'
 
- ]).heated().processingTime(700)
+//  	event.recipes.createMixing('3x tconstruct:nether_grout', [
+//    'minecraft:magma_cream',
+//    'minecraft:soul_sand',
+//    'minecraft:gravel',
+//    'create:powdered_obsidian',
+//    'create:powdered_obsidian',
+//    'create:powdered_obsidian'
+
+//  ]).heated().processingTime(700)
  
 	event.recipes.createMixing(Fluid.of('tconstruct:molten_queens_slime', 810), [
     {fluid: 'tconstruct:molten_cobalt', amount: 405},
@@ -1060,18 +1310,19 @@ event.recipes.createMechanicalCrafting('scout:upgraded_pouch', [
   E: 'create:fluid_tank'
   
 })
-	event.recipes.createMechanicalCrafting('ad_astra:oxygen_loader', [
-  'BBABB',
-  'BDEDB',
-  'BBCBB'
-], {
-  A: 'ad_astra:oxygen_tank',
-  B: 'ad_astra:iron_plate',
-  C: 'ad_astra:engine_fan',
-  D: 'create:smart_fluid_pipe',
-  E: 'create:fluid_tank'
-  
-})
+// 	event.recipes.createMechanicalCrafting('ad_astra:oxygen_loader', [
+//   'BBABB',
+//   'BDEDB',
+//   'BBCBB'
+// ], {
+//   A: 'ad_astra:oxygen_tank',
+//   B: '#c:iron_plates',
+//   C: 'ad_astra:engine_fan',
+//   D: 'create:smart_fluid_pipe',
+//   E: 'create:fluid_tank'
+// })
+
+
 
 	event.recipes.createMechanicalCrafting('ad_astra:energizer', [
   ' E ',
@@ -1195,20 +1446,20 @@ event.recipes.createMechanicalCrafting('scout:upgraded_pouch', [
     })
   
   
-    event.recipes.createMechanicalCrafting('ad_astra:launch_pad', [
-      'CCCCCC',
-      'CABABC',
-      'CBABAC',
-      'CABABC',
-      'CBABAC',
-      'CCCCCC',
+    // event.recipes.createMechanicalCrafting('ad_astra:launch_pad', [
+    //   'CCCCCC',
+    //   'CABABC',
+    //   'CBABAC',
+    //   'CABABC',
+    //   'CBABAC',
+    //   'CCCCCC',
       
-    ], {
-      A: 'techreborn:silver_plate',
-      B: 'ad_astra:iron_plate',
-      C: 'create:sturdy_sheet'
+    // ], {
+    //   A: 'techreborn:silver_plate',
+    //   B: 'ad_astra:iron_plate',
+    //   C: 'create:sturdy_sheet'
   
-    })
+    // })
   
     event.recipes.createMechanicalCrafting('2x techreborn:fusion_coil', [
       'CCCCC',
@@ -1895,27 +2146,20 @@ event.recipes.createMixing(Fluid.of('kubejs:hellfire', 81), [
     	
 	event.recipes.createSequencedAssembly([ 
   'create:integrated_circuit', 
-], 'ae2:certus_quartz_crystal', [ 
-event.recipes.createPressing('techreborn:silver_plate', 'techreborn:silver_plate'),
-event.recipes.createFilling('techreborn:silver_plate', ['techreborn:silver_plate', {fluid: 'tconstruct:molten_silver', amount: 1300}]), //fill bronze
-  event.recipes.createDeploying('techreborn:silver_plate', ['techreborn:silver_plate', 'techreborn:insulated_copper_cable']), //fill bronze
-]).transitionalItem('techreborn:silver_plate').loops(6)
+], 'create:lapis_sheet', [ 
+event.recipes.createFilling('create:lapis_sheet', ['create:lapis_sheet', {fluid: 'tconstruct:molten_silver', amount: 1300}]), //fill bronze
+  event.recipes.createDeploying('create:lapis_sheet', ['create:lapis_sheet', 'techreborn:insulated_copper_cable']), //fill bronze
+  event.recipes.createPressing('create:lapis_sheet', 'create:lapis_sheet'),
+]).transitionalItem('create:lapis_sheet').loops(6)
 
-event.recipes.createSequencedAssembly([ 
-'techreborn:electronic_circuit',
-], 'create:integrated_circuit', [ 
-event.recipes.createPressing('create:integrated_circuit', 'create:integrated_circuit'),
-event.recipes.createFilling('create:integrated_circuit', ['create:integrated_circuit', {fluid: 'tconstruct:molten_lead', amount: 2600}]), //fill bronze
-event.recipes.createDeploying('create:integrated_circuit', ['create:integrated_circuit', 'ae2:charged_certus_quartz_crystal']), //fill bronze
-]).transitionalItem('create:integrated_circuit').loops(3)
 
 event.recipes.createSequencedAssembly([ 
   'techreborn:industrial_circuit',
   ], 'techreborn:electronic_circuit', [ 
-  event.recipes.createFilling('techreborn:electronic_circuit', ['techreborn:electronic_circuit', {fluid: 'techreborn:lithium', amount: 10125}]), //fill bronze
+  event.recipes.createFilling('techreborn:electronic_circuit', ['techreborn:electronic_circuit', {fluid: 'techreborn:lithium', amount: 1500}]), //fill bronze
   event.recipes.createPressing('techreborn:electronic_circuit', 'techreborn:electronic_circuit'),
-  event.recipes.createDeploying('techreborn:electronic_circuit', ['techreborn:electronic_circuit', 'ad_astra:compressed_calorite']), //fill bronze
-  ]).transitionalItem('techreborn:electronic_circuit').loops(3)
+  event.recipes.createDeploying('techreborn:electronic_circuit', ['techreborn:electronic_circuit', 'createastral:calorite_pin']), //fill bronze
+  ]).transitionalItem('techreborn:electronic_circuit').loops(18)
 	 
 	event.recipes.createSequencedAssembly([ // begin
         'minecraft:ender_eye', // output
@@ -1944,9 +2188,7 @@ event.recipes.createPressing('createastral:bronze_sheet', 'createastral:bronze_i
 ////////////////  EARLY GAME ANDESITE / GROUT RELATED STUFF 
 
  event.recipes.createMixing('create:chromatic_compound', [
-  'ad_astra:desh_block',
-  'ad_astra:ostrum_block',
-  'ad_astra:calorite_block',,
+  '5x techreborn:uu_matter',
   {fluid: 'kubejs:shimmer', amount: 81000},
 ]).superheated().processingTime(2500)
 
@@ -2077,6 +2319,13 @@ event.recipes.createMixing('8x tconstruct:grout', [
     Item.of('minecraft:netherrack').withChance(1),
   ], 'minecraft:soul_sand')
 
+  event.recipes.createCrushing([
+    'minecraft:magma_block',
+    Item.of('tconstruct:debris_nugget').withChance(0.03),
+  ], 'ad_astra:infernal_spire_block')
+  event.recipes.createCrushing([
+    Item.of('ad_astra:ostrum_nugget').withChance(0.3),
+  ], 'ad_astra:conglomerate')
 
 
 
@@ -2230,7 +2479,7 @@ event.custom(
 
 event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:basic_machine_casing"},{"item":"ad_astra:compressed_steel"}],"results":[{"item":"techreborn:advanced_machine_casing"}]})
 event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:advanced_machine_frame"},{"item":"techreborn:industrial_circuit"}],"results":[{"item":"techreborn:industrial_machine_frame"}]})
-event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:basic_machine_frame"},{"item":"techreborn:advanced_alloy_plate"}],"results":[{"item":"techreborn:advanced_machine_frame"}]})
+event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:basic_machine_frame"},{"item":"techreborn:lead_plate"}],"results":[{"item":"techreborn:advanced_machine_frame"}]})
 event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:basic_machine_casing"},{"item":"create:sturdy_sheet"}],"results":[{"item":"techreborn:industrial_machine_casing"}]})
 event.custom({"type":"create:item_application","ingredients":[{"item":"create:andesite_casing"},{"tag":"c:plates/obsidian"}],"results":[{"item":"create:railway_casing"}]})
 
@@ -2245,6 +2494,19 @@ event.custom({
 		"count": 5
 	},
 	"energy": 10000
+})
+
+event.custom({
+	"type":"createaddition:charging",
+	"input": {
+      	"item": "createastral:golden_pin",
+		"count": 1
+	},
+	"result": {
+		"item": "createastral:electrified_pin",
+		"count": 1
+	},
+	"energy": 2500
 })
 
 event.custom({
@@ -2391,10 +2653,16 @@ C: 'minecraft:light_weighted_pressure_plate'
 
 ///// MOST SHIMMER RELATED RECIPES (MANY OF THESE ARE ALSO DONE THRU THE DATAPACK INSTEAD) /////
 
+// event.recipes.createMixing(Fluid.of('kubejs:shimmer', 40500), [
+//   '5x minecraft:amethyst_shard',
+// '2x minecraft:glow_ink_sac'
+// ]).heated().processingTime(400)
+
+// Make shimmer possible pre-moon
 event.recipes.createMixing(Fluid.of('kubejs:shimmer', 40500), [
   '5x minecraft:amethyst_shard',
-'2x minecraft:glow_ink_sac'
-]).heated().processingTime(400)
+  '2x minecraft:glow_ink_sac'
+]).processingTime(400);
 
 event.recipes.createMixing('minecraft:glow_ink_sac', [
   'minecraft:ink_sac',
@@ -2468,12 +2736,13 @@ event.recipes.createMixing({fluid: 'create:honey', amount: 40500}, [
   {fluid: 'kubejs:shimmer', amount: 40500},
 ]).processingTime(3000)
 
+// Broke impossible progression by removing heating requirement from astral
+//  conduit
 event.recipes.createMixing('createastral:astral_conduit', [
   {fluid: 'kubejs:shimmer', amount: 81000},
   'minecraft:diamond_block',
   'phonos:redstone_chip'
-]).heated().processingTime(30)
-
+])/*.heated()*/.processingTime(30)
 
 })
 
