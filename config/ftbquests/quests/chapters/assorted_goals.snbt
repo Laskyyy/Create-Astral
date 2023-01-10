@@ -1180,9 +1180,9 @@
 				Count: 1b
 				tag: {
 					Automobile: {
-						wheels: "automobility:standard"
-						frame: "automobility:yellow_tractor"
 						engine: "automobility:stone"
+						frame: "automobility:yellow_tractor"
+						wheels: "automobility:standard"
 					}
 				}
 			}
@@ -1270,9 +1270,9 @@
 						Count: 1b
 						tag: {
 							Automobile: {
-								wheels: "automobility:standard"
-								frame: "automobility:yellow_tractor"
 								engine: "automobility:stone"
+								frame: "automobility:yellow_tractor"
+								wheels: "automobility:standard"
 							}
 						}
 					}
@@ -1801,8 +1801,8 @@
 								realCount: 0
 							}
 							PackageStyle: {
-								frame: "minecraft:oak_log"
 								inner: "minecraft:oak_planks"
+								frame: "minecraft:oak_log"
 								color: 0
 							}
 						}

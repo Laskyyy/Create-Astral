@@ -2307,5 +2307,20 @@
 				title: "There are a lot of options."
 			}]
 		}
+		{
+			title: "Better think fast!"
+			x: -1.0d
+			y: -5.0d
+			subtitle: "Speed up your pathing."
+			description: ["Andesite Paving grants a minor speed boost when travelling over it. "]
+			dependencies: ["3095586FC5E09B01"]
+			id: "6229BC66A88B614B"
+			tasks: [{
+				id: "535BFA280660D524"
+				type: "item"
+				item: "doodads:asphalt"
+				count: 32L
+			}]
+		}
 	]
 }
