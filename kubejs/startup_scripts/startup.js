@@ -235,9 +235,9 @@ onEvent('block.registry', event => {
        .displayName('Ender Coil Block')
        .tagBlock('minecraft:mineable/pickaxe')
 
-    event.create('createastral:blast-resistant_concrete_slab', 'slab').hardness(4).tagBlock('minecraft:mineable/pickaxe').textureAll('createastral:block/blast_side').texture('up','createastral:block/blast_top').texture('down','createastral:block/blast_top')
-    event.create('createastral:blast-resistant_concrete', 'basic').hardness(4).tagBlock('minecraft:mineable/pickaxe').textureAll('createastral:block/blast_side').texture('up','createastral:block/blast_top').texture('down','createastral:block/blast_top')
-    event.create('createastral:blast-resistant_concrete_stairs', 'stairs').hardness(4).tagBlock('minecraft:mineable/pickaxe').textureAll('createastral:block/blast_side').texture('up','createastral:block/blast_top').texture('down','createastral:block/blast_top')
+    event.create('createastral:blast-resistant_concrete_slab', 'slab').hardness(4).resistance(1200).tagBlock('minecraft:mineable/pickaxe').textureAll('createastral:block/blast_side').texture('up','createastral:block/blast_top').texture('down','createastral:block/blast_top')
+    event.create('createastral:blast-resistant_concrete', 'basic').hardness(4).resistance(1200).tagBlock('minecraft:mineable/pickaxe').textureAll('createastral:block/blast_side').texture('up','createastral:block/blast_top').texture('down','createastral:block/blast_top')
+    event.create('createastral:blast-resistant_concrete_stairs', 'stairs').resistance(1200).hardness(4).tagBlock('minecraft:mineable/pickaxe').textureAll('createastral:block/blast_side').texture('up','createastral:block/blast_top').texture('down','createastral:block/blast_top')
 
     event.create('createastral:andesite_alloy_block', 'basic').hardness(4).tagBlock('minecraft:mineable/pickaxe')
  })
@@ -432,7 +432,7 @@ event.create('createastral:astral_singularity').food(food => {
         .removeEffect('poison')
         .alwaysEdible()//Like golden apples
 })
-event.create('createastral:pure_biomatter').type('create:sequenced_assembly').displayName('Pure Biomatter')
+event.create('createastral:pure_biomatter')
 
 
 

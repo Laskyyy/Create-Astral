@@ -272,7 +272,7 @@ onEvent('recipes', event => {
 	event.remove({output: 'minecraft:crossbow'})
 	event.remove({output: 'minecraft:arrow'})
 	event.remove({mod: 'lchunkloader'})
-	event.remove({mod: 'scout'})
+	event.remove({mod: 'immersive_aircraft'})
 	
 	
 
@@ -721,6 +721,13 @@ event.recipes.createDeploying('createastral:incomplete_electronic_circuit', ['cr
 event.recipes.createPressing('createastral:incomplete_electronic_circuit', 'createastral:incomplete_electronic_circuit')
 ]).transitionalItem('createastral:incomplete_electronic_circuit').loops(1) 
 
+event.recipes.createSequencedAssembly([ // begin
+'immersive_aircraft:engine', // output
+], 'create:precision_mechanism', [ // input
+event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'immersive_aircraft:boiler']), 
+event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'techreborn:nak_coolant_cell_60k']), 
+]).transitionalItem('create:incomplete_precision_mechanism').loops(1) 
+
 
 
 
@@ -961,7 +968,6 @@ event.recipes.createFilling('techreborn:lithium_ion_battery', [
 	event.remove({output: 'computercraft:computer_advanced'})
 	event.remove({output: 'computercraft:pocket_computer_advanced'})
 	event.remove({output: 'ad_astra:compressor'})
-	event.remove({output: 'scout:upgraded_pouch'})
 	event.replaceInput({output: 'computercraft:computer_normal'}, 'create:electron_tube', 'create:polished_rose_quartz')
 	event.replaceInput({output: 'computercraft:turtle_normal'}, 'create:electron_tube', 'create:polished_rose_quartz')
   
@@ -1066,17 +1072,7 @@ event.recipes.createMechanicalCrafting('polaroidcamera:camera', [
   
 })
 
-event.recipes.createMechanicalCrafting('scout:upgraded_pouch', [
-  ' B ',
-  'AEA',
-  'CCC'
-], {
-  A: 'create:railway_casing',
-  B: 'create:zinc_nugget',
-  C: 'minecraft:leather',
-  E: 'campanion:leather_pouch'
-  
-})
+
 	
 	event.recipes.createMechanicalCrafting('ad_astra:fuel_refinery', [
   'BDCDB',
@@ -1090,7 +1086,7 @@ event.recipes.createMechanicalCrafting('scout:upgraded_pouch', [
   E: 'create:fluid_tank'
   
 })
-	event.Shaped('ad_astra:oxygen_loader', [
+	event.shaped('ad_astra:oxygen_loader', [
   'BAB',
   'DED',
   'BCB'

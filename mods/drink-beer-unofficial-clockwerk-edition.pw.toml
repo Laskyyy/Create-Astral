@@ -1,0 +1,14 @@
+name = "Drink Beer Unofficial: Clockwerk Edition"
+filename = "drinkbeer-3.2.0-1.18.2.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "c76f252f2de709ff6f17178efd333275b1bbd7fb"
+
+[update]
+[update.curseforge]
+file-id = 4082019
+project-id = 701009
