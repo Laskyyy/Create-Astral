@@ -653,7 +653,7 @@
 				"Iris - Music, Menu!!! Greg Chapter 6"
 				"Choco - Structures"
 				"The Astral Discord - Showing appreciation for the pack."
-				"Lizard - Being a good reptile <3 Contributing assembly lines and kubejs."
+				"Lizard - Being a good reptile <3 Contributing hugely to quest progression."
 			]
 			size: 1.25d
 			id: "1472D9CAB3B3A74D"
@@ -1180,9 +1180,9 @@
 				Count: 1b
 				tag: {
 					Automobile: {
-						engine: "automobility:stone"
-						frame: "automobility:yellow_tractor"
 						wheels: "automobility:standard"
+						frame: "automobility:yellow_tractor"
+						engine: "automobility:stone"
 					}
 				}
 			}
@@ -1270,9 +1270,9 @@
 						Count: 1b
 						tag: {
 							Automobile: {
-								engine: "automobility:stone"
-								frame: "automobility:yellow_tractor"
 								wheels: "automobility:standard"
+								frame: "automobility:yellow_tractor"
+								engine: "automobility:stone"
 							}
 						}
 					}
@@ -1801,14 +1801,93 @@
 								realCount: 0
 							}
 							PackageStyle: {
-								inner: "minecraft:oak_planks"
 								frame: "minecraft:oak_log"
+								inner: "minecraft:oak_planks"
 								color: 0
 							}
 						}
 					}
 				}
 				count: 4
+			}]
+		}
+		{
+			x: -6.0d
+			y: 18.5d
+			hide_dependency_lines: true
+			dependencies: ["0BCED0F8481E0C21"]
+			id: "165C3C3DF1B9B4A3"
+			tasks: [{
+				id: "0B0B28657F7C6931"
+				type: "item"
+				item: "vinery:fermentation_barrel"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 20.0d
+			dependencies: ["4B565923D33B2CB8"]
+			id: "1D8FB0253FF41716"
+			tasks: [{
+				id: "47820AF8B45F9AEE"
+				type: "item"
+				item: {
+					id: "vinery:apple_juice"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: 18.0d
+			dependencies: ["6BECCB7FA4132517"]
+			id: "529CAD4508F33471"
+			tasks: [{
+				id: "0914332FB936AF32"
+				type: "item"
+				item: {
+					id: "vinery:red_grapejuice_wine_bottle"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: 19.0d
+			dependencies: ["6BECCB7FA4132517"]
+			id: "66AF3CCC6B74CC09"
+			tasks: [{
+				id: "297B32716629650B"
+				type: "item"
+				item: {
+					id: "vinery:white_grapejuice_wine_bottle"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -6.5d
+			y: 19.5d
+			dependencies: ["165C3C3DF1B9B4A3"]
+			id: "4B565923D33B2CB8"
+			tasks: [{
+				id: "46966651EFC64C4E"
+				type: "item"
+				item: "vinery:wine_press"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 18.5d
+			dependencies: ["165C3C3DF1B9B4A3"]
+			id: "6BECCB7FA4132517"
+			tasks: [{
+				id: "4750F1C7CA412A27"
+				type: "item"
+				item: "vinery:grapevine_pot"
 			}]
 		}
 	]

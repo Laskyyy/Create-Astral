@@ -173,9 +173,11 @@
 		}
 		{
 			title: "Military-Grade Space Gear"
-			x: -6.5d
+			x: -9.75d
 			y: 7.5d
-			dependencies: ["2E53AE0F26538CF3"]
+			shape: "square"
+			dependencies: ["3A5D7E60EF1C3BC3"]
+			size: 1.5d
 			id: "7B5AE0A782DE8DF8"
 			tasks: [
 				{
@@ -226,10 +228,16 @@
 		}
 		{
 			title: "Rocket barrage, activated!"
-			x: -9.5d
-			y: 7.5d
+			x: -8.047619047619065d
+			y: 9.666666666666671d
+			shape: "hexagon"
 			subtitle: "We CAN get much higheerrr it seems..."
-			dependencies: ["2E53AE0F26538CF3"]
+			dependencies: [
+				"7D98B3EA84A46227"
+				"356CE973D7F17F3C"
+				"7B5AE0A782DE8DF8"
+			]
+			size: 1.5d
 			id: "3CF2DB0B0ACE19B6"
 			tasks: [{
 				id: "2FC71B79D1D17B9D"
@@ -257,13 +265,10 @@
 		{
 			title: "Hot hot hot HOT. Let me put some insulation on."
 			x: -8.0d
-			y: 9.0d
+			y: 12.0d
 			shape: "gear"
 			description: ["To survive on mercury with it's super hot surface temperature, ensure you are wearing the netherite space suit at all times!"]
-			dependencies: [
-				"3CF2DB0B0ACE19B6"
-				"7B5AE0A782DE8DF8"
-			]
+			dependencies: ["3CF2DB0B0ACE19B6"]
 			size: 2.0d
 			id: "5BD2D0F7F0D70180"
 			tasks: [{
@@ -290,18 +295,6 @@
 				id: "68BB3658712A39A5"
 				type: "item"
 				item: "techreborn:industrial_blast_furnace"
-			}]
-		}
-		{
-			title: "Press that steel fella"
-			x: -8.0d
-			y: 6.5d
-			dependencies: ["3A5D7E60EF1C3BC3"]
-			id: "2E53AE0F26538CF3"
-			tasks: [{
-				id: "5A4E1683A1EDDF70"
-				type: "item"
-				item: "ad_astra:compressed_steel"
 			}]
 		}
 		{
@@ -402,7 +395,7 @@
 			x: -5.25d
 			y: 6.0d
 			subtitle: "Create drill without the create?"
-			dependencies: ["3A5D7E60EF1C3BC3"]
+			dependencies: ["2A95205D3A52622F"]
 			size: 1.5d
 			optional: true
 			id: "55296900512F9ABE"
@@ -561,10 +554,10 @@
 			}]
 		}
 		{
-			x: -11.5d
-			y: 2.0d
+			x: -13.0d
+			y: 3.0d
 			description: ["Placeholder text."]
-			dependencies: ["673DC1F22D2F790D"]
+			dependencies: ["307933B04A6E7CA9"]
 			optional: true
 			id: "48F61CBC3AFDEEBD"
 			tasks: [{
@@ -583,7 +576,10 @@
 			x: -11.5d
 			y: 3.5d
 			subtitle: "UNLOCK: Superheated Blaze Burners!"
-			dependencies: ["0373FACF0AB8113E"]
+			dependencies: [
+				"0373FACF0AB8113E"
+				"48F61CBC3AFDEEBD"
+			]
 			id: "62545906EFC80BCD"
 			tasks: [{
 				id: "7DA41241E16D509D"
@@ -603,6 +599,8 @@
 			y: -0.6d
 			shape: "diamond"
 			description: ["Crushing Infernal Spire produces netherite scrap nuggets at a low rate."]
+			hide_dependency_lines: true
+			dependencies: ["253F29A00B4EA050"]
 			size: 1.2d
 			optional: true
 			id: "520A09EF39A1BF5D"
@@ -663,6 +661,180 @@
 				id: "348F9CA589D63FB6"
 				type: "item"
 				item: "gearreborn:nv_goggles"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 7.5d
+			dependencies: ["3A5D7E60EF1C3BC3"]
+			id: "2A95205D3A52622F"
+			tasks: [{
+				id: "129F224F4BE2DF0B"
+				type: "item"
+				item: "techreborn:machine_parts"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 8.5d
+			dependencies: ["28CF539AA1D6A92F"]
+			id: "4F560FA8145329E8"
+			tasks: [{
+				id: "61845D592787A7BC"
+				type: "item"
+				item: "techreborn:carbon_mesh"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 8.5d
+			dependencies: ["156FCE6FDC8AD38D"]
+			id: "28CF539AA1D6A92F"
+			tasks: [{
+				id: "0E23A3A3FC1614E2"
+				type: "item"
+				item: "techreborn:carbon_fiber"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 8.5d
+			id: "156FCE6FDC8AD38D"
+			tasks: [{
+				id: "39A3E1362162AA2A"
+				type: "item"
+				item: "techreborn:coal_dust"
+			}]
+		}
+		{
+			x: -14.0d
+			y: 8.0d
+			dependencies: ["6C43EB3CBD04AA17"]
+			id: "3110924697AB562C"
+			tasks: [{
+				id: "57E6AB2360AF8EE8"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "techreborn:sodium"
+					}
+				}
+			}]
+		}
+		{
+			x: -14.0d
+			y: 2.0d
+			dependencies: ["307933B04A6E7CA9"]
+			id: "6D5A97122F765FE3"
+			tasks: [{
+				id: "3F4604784AAACD8E"
+				type: "item"
+				item: "techreborn:saltpeter_dust"
+			}]
+		}
+		{
+			x: -14.0d
+			y: 6.0d
+			dependencies: ["6D5A97122F765FE3"]
+			id: "0050671D67C2FC01"
+			tasks: [{
+				id: "48A25495A77F213A"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "techreborn:potassium"
+					}
+				}
+			}]
+		}
+		{
+			x: -14.0d
+			y: 7.0d
+			hide_dependency_lines: true
+			dependencies: ["684E33C50BD55A8E"]
+			id: "6C43EB3CBD04AA17"
+			tasks: [{
+				id: "53092950FA54512A"
+				type: "item"
+				item: "techreborn:lazurite_dust"
+			}]
+		}
+		{
+			x: -12.0d
+			y: 8.0d
+			dependencies: [
+				"0050671D67C2FC01"
+				"3110924697AB562C"
+			]
+			id: "717A6825F23CC07F"
+			tasks: [{
+				id: "05B72CB01449965A"
+				type: "item"
+				item: "techreborn:nak_coolant_cell_60k"
+			}]
+		}
+		{
+			x: -12.5d
+			y: 9.5d
+			id: "2DEFDA584C5773FA"
+			tasks: [{
+				id: "738D974CF5F9438E"
+				type: "item"
+				item: "immersive_aircraft:boiler"
+			}]
+		}
+		{
+			x: -11.0d
+			y: 9.0d
+			dependencies: [
+				"2DEFDA584C5773FA"
+				"717A6825F23CC07F"
+			]
+			id: "7D98B3EA84A46227"
+			tasks: [{
+				id: "23265F3754619462"
+				type: "item"
+				item: "immersive_aircraft:engine"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 9.0d
+			dependencies: [
+				"4F560FA8145329E8"
+				"2A95205D3A52622F"
+			]
+			id: "356CE973D7F17F3C"
+			tasks: [{
+				id: "20C1F118B4A2D99E"
+				type: "item"
+				item: "techreborn:digital_display"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 2.0d
+			dependencies: ["673DC1F22D2F790D"]
+			id: "307933B04A6E7CA9"
+			tasks: [{
+				id: "18B46A0D1C5F5E25"
+				type: "item"
+				item: "minecraft:soul_soil"
+			}]
+		}
+		{
+			x: -12.0d
+			y: 6.5d
+			dependencies: ["717A6825F23CC07F"]
+			id: "19E1C30DBB2B1AB2"
+			tasks: [{
+				id: "65AE540EDF7157E7"
+				type: "item"
+				item: "techreborn:overclocker_upgrade"
 			}]
 		}
 	]

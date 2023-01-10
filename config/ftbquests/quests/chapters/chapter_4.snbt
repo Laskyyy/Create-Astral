@@ -392,70 +392,6 @@
 			}]
 		}
 		{
-			title: "Expand your inventory with satchels!"
-			x: -10.5d
-			y: 1.5d
-			shape: "gear"
-			subtitle: "It's free inventory space."
-			description: ["6 extra inventory slots sounds like a slick deal to me."]
-			dependencies: ["3EA569DE4AC60CC2"]
-			id: "73026295911CCE90"
-			tasks: [{
-				id: "0FE7ACA48FD9D29A"
-				type: "item"
-				item: {
-					id: "scout:upgraded_pouch"
-					Count: 1b
-					tag: {
-						Items: [
-							{
-								Slot: 0
-								Stack: {
-									id: "minecraft:air"
-									Count: 1b
-								}
-							}
-							{
-								Slot: 1
-								Stack: {
-									id: "minecraft:air"
-									Count: 1b
-								}
-							}
-							{
-								Slot: 2
-								Stack: {
-									id: "minecraft:air"
-									Count: 1b
-								}
-							}
-							{
-								Slot: 3
-								Stack: {
-									id: "minecraft:air"
-									Count: 1b
-								}
-							}
-							{
-								Slot: 4
-								Stack: {
-									id: "minecraft:air"
-									Count: 1b
-								}
-							}
-							{
-								Slot: 5
-								Stack: {
-									id: "minecraft:air"
-									Count: 1b
-								}
-							}
-						]
-					}
-				}
-			}]
-		}
-		{
 			title: "The Ultimate Recycling Project"
 			x: -8.5d
 			y: 3.5d
@@ -2722,7 +2658,7 @@
 			tasks: [{
 				id: "2D8437605F091BEF"
 				type: "item"
-				item: "createastral:blast_resistant_concrete"
+				item: "createastral:blast-resistant_concrete"
 			}]
 		}
 		{

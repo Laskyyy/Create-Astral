@@ -87,6 +87,7 @@
 			dependencies: [
 				"3091F7AC37F848AD"
 				"77E9682ED4C5C74D"
+				"3F5054A2481E6F9C"
 			]
 			size: 2.0d
 			id: "11F776AD4AEA326A"
@@ -100,6 +101,7 @@
 			title: "This amount of storage is just getting frankly silly..."
 			x: 4.0d
 			y: 1.0d
+			dependencies: ["11F776AD4AEA326A"]
 			optional: true
 			id: "21A0BECE0BA8537F"
 			tasks: [
@@ -369,11 +371,14 @@
 			y: 3.5d
 			subtitle: "Scrap recyclers can produce anything from scrap, pretty much. "
 			description: ["But why do that when you can produce stacks upon stacks of it to only convert it into UU Matter..."]
+			hide_dependency_lines: true
+			dependencies: ["6F1D5D69B4E9266E"]
 			id: "2605212C0EC5C277"
 			tasks: [{
 				id: "17D1194695CD9AB4"
 				type: "item"
 				item: "techreborn:scrap"
+				count: 256L
 			}]
 		}
 		{
@@ -731,6 +736,8 @@
 			title: "Calorite Pins, placeholder"
 			x: 7.5d
 			y: -1.0d
+			hide_dependency_lines: true
+			dependencies: ["7A4255522DA6FEB7"]
 			id: "3091F7AC37F848AD"
 			tasks: [{
 				id: "6B1169BFB796200B"
@@ -742,6 +749,8 @@
 			title: "Lithium input placeholder."
 			x: 7.5d
 			y: 1.0d
+			hide_dependency_lines: true
+			dependencies: ["7A4255522DA6FEB7"]
 			id: "77E9682ED4C5C74D"
 			tasks: [{
 				id: "1AD7099B7EF44311"
@@ -753,6 +762,29 @@
 						fluid: "techreborn:lithium"
 					}
 				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["7A4255522DA6FEB7"]
+			id: "3F5054A2481E6F9C"
+			tasks: [{
+				id: "1D4622C61B62087D"
+				type: "item"
+				item: "techreborn:machine_parts"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.0d
+			dependencies: ["11F776AD4AEA326A"]
+			id: "01FC63FCED872B8A"
+			tasks: [{
+				id: "73CE3A2BA3ACBC82"
+				type: "item"
+				item: "doodads:speed_boots"
 			}]
 		}
 	]

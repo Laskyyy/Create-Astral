@@ -372,28 +372,28 @@ function lizardCH3Concrete(event) {
       "name": "kubejs:blast-resistant_cement",
       "amount": FULL_BUCKET_AMMOUNT
     },
-    "result": "createastral:blast_resistant_concrete",
+    "result": "createastral:blast-resistant_concrete",
     "cooling_time": 400
   })
 
   // Old school slab and stairs
-  event.shaped('6x createastral:blast_resistant_concrete_slab', [
+  event.shaped('6x createastral:blast-resistant_concrete_slab', [
     'AAA',
   ], {
-    A: 'createastral:blast_resistant_concrete',    
+    A: 'createastral:blast-resistant_concrete',    
   })
 
-  event.shaped('4x createastral:blast_resistant_concrete_stairs', [
+  event.shaped('4x createastral:blast-resistant_concrete_stairs', [
     'A  ',
     'AA ',
     'AAA',
   ], {
-    A: 'createastral:blast_resistant_concrete'
+    A: 'createastral:blast-resistant_concrete'
   });
 
   // Cement block-cutting recipe
-  event.stonecutting('2x createastral:blast_resistant_concrete_slab', 'createastral:blast_resistant_concrete');
-  event.stonecutting('createastral:blast_resistant_concrete_stairs',  'createastral:blast_resistant_concrete');
+  event.stonecutting('2x createastral:blast-resistant_concrete_slab', 'createastral:blast-resistant_concrete');
+  event.stonecutting('createastral:blast-resistant_concrete_stairs',  'createastral:blast-resistant_concrete');
 
   // Launch pad recipe
   event.recipes.createMechanicalCrafting('ad_astra:launch_pad', [
@@ -403,7 +403,7 @@ function lizardCH3Concrete(event) {
     'ABABA',
     'BAAAB',  
   ], {
-    A: 'createastral:blast_resistant_concrete',
+    A: 'createastral:blast-resistant_concrete',
     B: 'create:sturdy_sheet',
   });
 }
