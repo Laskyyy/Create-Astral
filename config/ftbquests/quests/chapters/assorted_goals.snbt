@@ -1020,7 +1020,7 @@
 			rewards: [{
 				id: "1E0A00A53BFB7196"
 				type: "item"
-				item: "more_chests:copper_chest"
+				item: "reinfchest:copper_chest"
 				count: 4
 			}]
 		}
@@ -1518,7 +1518,7 @@
 			rewards: [{
 				id: "75AB59721C18FE4E"
 				type: "item"
-				item: "more_chests:copper_chest"
+				item: "reinfchest:copper_chest"
 			}]
 		}
 		{

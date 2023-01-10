@@ -492,7 +492,7 @@ onEvent('recipes', event => {
 	event.remove({output: 'minecraft:crossbow'})
 	event.remove({output: 'minecraft:arrow'})
 	event.remove({mod: 'lchunkloader'})
-	event.remove({mod: 'scout'})
+	event.remove({mod: 'immersive_aircraft'})
 	
 	
 
@@ -575,7 +575,6 @@ onEvent('recipes', event => {
 	event.replaceInput({type: 'create:mechanical_crafting', mod: 'createaddition'}, 'create:andesite_alloy', 'techreborn:red_cell_battery')
   event.replaceInput({type: 'create:mechanical_crafting', mod: 'createaddition'}, 'createaddition:iron_rod', 'create:integrated_circuit')
 	event.replaceInput({mod: 'createaddition'}, 'minecraft:redstone_torch', 'create:electron_tube')
-	event.replaceInput({output: 'create:wand_of_symmetry'}, 'minecraft:ender_pearl', 'create:refined_radiance')
   event.replaceInput({output: 'ad_astra:engine_fan'}, 'ad_astra:compressed_steel', 'ad_astra:iron_plate')
   event.replaceInput({output: 'ad_astra:engine_frame'}, 'ad_astra:compressed_steel', 'ad_astra:iron_plate')
 	event.replaceInput({output: 'create:mechanical_drill'}, 'minecraft:iron_ingot', 'create:iron_sheet')
@@ -593,6 +592,8 @@ onEvent('recipes', event => {
   event.replaceInput({output: 'create:crushing_wheel'}, '#c:stone', 'techreborn:silver_ingot')
   event.replaceInput({output: 'ad_astra:space_helmet'}, 'minecraft:orange_stained_glass_pane', 'create:diving_helmet')
   event.replaceInput({output: 'ad_astra:space_pants'}, 'ad_astra:steel_ingot', 'create:sturdy_sheet')
+  event.replaceInput({output: 'create:deployer'}, 'create:electron_tube', 'create:polished_rose_quartz')
+  event.replaceInput({mod: 'chipped'}, 'minecraft:wooden_axe', 'minecraft:flint')
   event.remove({output: 'ad_astra:space_boots'})
   event.replaceInput({output: 'ad_astra:space_suit'}, 'ad_astra:steel_ingot', 'create:sturdy_sheet')
   event.replaceInput({output: 'ad_astra:space_suit'}, 'ad_astra:oxygen_gear', 'create:copper_backtank')
@@ -722,7 +723,6 @@ onEvent('recipes', event => {
   event.remove({output: 'techreborn:industrial_circuit'})
   event.remove({output: 'techreborn:energy_flow_chip'})
   event.remove({output: 'techreborn:lithium_ion_battery'})
-  event.remove({mod: 'powah'})
   event.remove({output: 'techreborn:rubber', type: 'minecraft:smelting'})
   event.remove({output: 'techreborn:basic_machine_frame'})
   event.remove({output: 'techreborn:advanced_machine_frame'})
@@ -892,7 +892,7 @@ onEvent('recipes', event => {
     "cast": {
       "tag": "tconstruct:casts/multi_use/coin"
     },
-    "cast_consumed": true,
+    "cast_consumed": false,
     "fluid": {
       "name": "tconstruct:molten_bronze",
       "amount": 4000
@@ -906,7 +906,7 @@ onEvent('recipes', event => {
     "cast": {
       "tag": "tconstruct:casts/multi_use/gear"
     },
-    "cast_consumed": true,
+    "cast_consumed": false,
     "fluid": {
       "name": "tconstruct:molten_bronze",
       "amount": 12000
@@ -940,6 +940,13 @@ event.recipes.createSequencedAssembly([ // begin
 event.recipes.createDeploying('createastral:incomplete_electronic_circuit', ['createastral:incomplete_electronic_circuit', 'ad_astra:compressed_ostrum']), 
 event.recipes.createPressing('createastral:incomplete_electronic_circuit', 'createastral:incomplete_electronic_circuit')
 ]).transitionalItem('createastral:incomplete_electronic_circuit').loops(1) 
+
+event.recipes.createSequencedAssembly([ // begin
+'immersive_aircraft:engine', // output
+], 'create:precision_mechanism', [ // input
+event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'immersive_aircraft:boiler']), 
+event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'techreborn:nak_coolant_cell_60k']), 
+]).transitionalItem('create:incomplete_precision_mechanism').loops(1) 
 
 
 
@@ -1181,7 +1188,6 @@ event.recipes.createFilling('techreborn:lithium_ion_battery', [
 	event.remove({output: 'computercraft:computer_advanced'})
 	event.remove({output: 'computercraft:pocket_computer_advanced'})
 	event.remove({output: 'ad_astra:compressor'})
-	event.remove({output: 'scout:upgraded_pouch'})
 	event.replaceInput({output: 'computercraft:computer_normal'}, 'create:electron_tube', 'create:polished_rose_quartz')
 	event.replaceInput({output: 'computercraft:turtle_normal'}, 'create:electron_tube', 'create:polished_rose_quartz')
   
@@ -1286,17 +1292,7 @@ event.recipes.createMechanicalCrafting('polaroidcamera:camera', [
   
 })
 
-event.recipes.createMechanicalCrafting('scout:upgraded_pouch', [
-  ' B ',
-  'AEA',
-  'CCC'
-], {
-  A: 'create:railway_casing',
-  B: 'create:zinc_nugget',
-  C: 'minecraft:leather',
-  E: 'campanion:leather_pouch'
-  
-})
+
 	
 	event.recipes.createMechanicalCrafting('ad_astra:fuel_refinery', [
   'BDCDB',
@@ -1310,18 +1306,20 @@ event.recipes.createMechanicalCrafting('scout:upgraded_pouch', [
   E: 'create:fluid_tank'
   
 })
-// 	event.recipes.createMechanicalCrafting('ad_astra:oxygen_loader', [
-//   'BBABB',
-//   'BDEDB',
-//   'BBCBB'
-// ], {
-//   A: 'ad_astra:oxygen_tank',
-//   B: '#c:iron_plates',
-//   C: 'ad_astra:engine_fan',
-//   D: 'create:smart_fluid_pipe',
-//   E: 'create:fluid_tank'
-// })
 
+
+	event.shaped('ad_astra:oxygen_loader', [
+  'BAB',
+  'DED',
+  'BCB'
+], {
+  A: 'ad_astra:oxygen_tank',
+  B: '#c:iron_plates',
+  C: 'ad_astra:engine_fan',
+  D: 'create:smart_fluid_pipe',
+  E: 'create:fluid_tank'
+  
+})
 
 
 	event.recipes.createMechanicalCrafting('ad_astra:energizer', [
@@ -2742,7 +2740,8 @@ event.recipes.createMixing('createastral:astral_conduit', [
   {fluid: 'kubejs:shimmer', amount: 81000},
   'minecraft:diamond_block',
   'phonos:redstone_chip'
-])/*.heated()*/.processingTime(30)
+]).processingTime(30)
+
 
 })
 

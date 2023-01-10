@@ -1,17 +1,14 @@
+Andesite Chests Retexture by Mental
+https://www.curseforge.com/minecraft/texture-packs/andesite-chests-crafting-table/screenshots
+
 UI Tex
 https://www.curseforge.com/minecraft/texture-packs/faithless
 
 Computercraft x create
 https://www.curseforge.com/minecraft/texture-packs/computercreate
 
-Machinery x create
-https://www.curseforge.com/minecraft/texture-packs/thermal-series-create-version
-
 Bettervanillabuilding - general texture pack
 https://www.curseforge.com/minecraft/texture-packs/bettervanillabuilding
-
-Toms storage create-ified
-https://www.curseforge.com/minecraft/texture-packs/toms-simple-storage-revamped
 
 Bow model
 https://www.curseforge.com/minecraft/texture-packs/create-guns
@@ -31,5 +28,5 @@ https://www.curseforge.com/minecraft/texture-packs/fractured-moon
 Sturdy sheet & copper block
 https://www.curseforge.com/minecraft/mc-mods/create-misc-and-things
 
-Create Unique Mechanism Textures ala Cabricality
-https://github.com/DM-Earth/Cabricality
+Immersive aircraft item textures
+https://www.curseforge.com/minecraft/texture-packs/create-style-modded-compats

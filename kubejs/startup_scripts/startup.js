@@ -89,6 +89,13 @@ onEvent('fluid.registry', event => {
     .displayName('Shimmer')
 	.stillTexture('tconstruct:block/fluid/molten/shimmer')
 	.flowingTexture('tconstruct:block/fluid/molten/shimmer')
+
+  event.create('blast-resistant_cement')
+    .thickTexture(0x959595)
+    .bucketColor(0x959595)
+    .displayName('Blast-Resistant Cement')
+  .stillTexture('tconstruct:block/fluid/molten/still')
+	.flowingTexture('tconstruct:block/fluid/molten/flowing')
 })
 
 
@@ -227,6 +234,12 @@ onEvent('block.registry', event => {
        .hardness(3)
        .displayName('Ender Coil Block')
        .tagBlock('minecraft:mineable/pickaxe')
+
+    event.create('createastral:blast-resistant_concrete_slab', 'slab').hardness(4).resistance(1200).tagBlock('minecraft:mineable/pickaxe').textureAll('createastral:block/blast_side').texture('up','createastral:block/blast_top').texture('down','createastral:block/blast_top')
+    event.create('createastral:blast-resistant_concrete', 'basic').hardness(4).resistance(1200).tagBlock('minecraft:mineable/pickaxe').textureAll('createastral:block/blast_side').texture('up','createastral:block/blast_top').texture('down','createastral:block/blast_top')
+    event.create('createastral:blast-resistant_concrete_stairs', 'stairs').resistance(1200).hardness(4).tagBlock('minecraft:mineable/pickaxe').textureAll('createastral:block/blast_side').texture('up','createastral:block/blast_top').texture('down','createastral:block/blast_top')
+
+    event.create('createastral:andesite_alloy_block', 'basic').hardness(4).tagBlock('minecraft:mineable/pickaxe')
  })
 
 
@@ -245,11 +258,8 @@ onEvent("item.modification", event => {
     item.burnTime = 50000
   })
 
-  event.modify('powah:uraninite_raw', item => {
-    item.burnTime = 25000
-  })
 
-  event.modify('powah:uraninite', item => {
+  event.modify('ad_asta:fuel_bucket', item => {
     item.burnTime = 50000
   })
 
@@ -363,6 +373,11 @@ event.create('createastral:andesite_compound'),
 event.create('createastral:bronze_sheet'),
 event.create('create:lapis_sheet'),
 event.create('create:integrated_circuit'),
+event.create('createastral:incomplete_electronic_circuit'),
+event.create('createastral:golden_pin'),
+event.create('createastral:calorite_pin'),
+event.create('createastral:electrified_pin'),
+event.create('createastral:uwaah'),
 event.create('createastral:bronze_ingot'),
 event.create('createastral:navigation_mechanism')
 event.create('createastral:radiant_helmet', 'helmet').tier('radiantarmor').glow(true).rarity('Epic'),
@@ -417,7 +432,7 @@ event.create('createastral:astral_singularity').food(food => {
         .removeEffect('poison')
         .alwaysEdible()//Like golden apples
 })
-event.create('createastral:pure_biomatter').type('create:sequenced_assembly').displayName('Pure Biomatter')
+event.create('createastral:pure_biomatter')
 
 
 
@@ -1138,15 +1153,6 @@ onEvent('worldgen.add', event => {
 			.triangleHeight(0, 115)
 	})
 
-  event.addOre((ore) => {
-		ore.id = "kubejs:radioactive" // optional
-    ore.biomes = 'incendium:toxic_heap' 
-		ore.addTarget('#ad_astra:moon_ore_replaceables', 'powah:deepslate_uraninite_ore')
-
-		ore.count([15, 30])
-			.squared()
-			.triangleHeight(0, 120)
-	})
 
 
 

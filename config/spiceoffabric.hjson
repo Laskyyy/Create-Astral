@@ -48,7 +48,7 @@
 		// Sets the amount of last eaten foods to use for the calculations in this category
 		// default: 20
 		// 	Must be greater or equal to 0
-		history-length: 12
+		history-length: 6
 	}
 	// The good ol' carrot style.
 	// Carrot style means, that you start with a certain amount of hearts and gain more by eating unique foods.

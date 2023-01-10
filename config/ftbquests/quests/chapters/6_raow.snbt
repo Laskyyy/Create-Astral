@@ -7,22 +7,36 @@
 	icon: "createastral:subatomic_ingot"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	images: [{
-		x: -2.0d
-		y: -5.0d
-		width: 3.0d
-		height: 3.0d
-		rotation: 0.0d
-		image: "ad_astra:textures/sky/mercury.png"
-		hover: [ ]
-		click: ""
-		dev: false
-		corner: false
-	}]
+	images: [
+		{
+			x: -0.5d
+			y: -6.0d
+			width: 4.0d
+			height: 4.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/sky/mercury.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 10.0d
+			y: 3.5d
+			width: 3.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/painting/mercury.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
 	quests: [
 		{
-			x: -3.0d
-			y: 6.5d
+			x: 3.5d
+			y: 6.0d
 			subtitle: "A godly tinker material."
 			description: ["Extremely brittle, but so fast, and so upgradeable."]
 			dependencies: ["17794A6A366C8497"]
@@ -35,13 +49,21 @@
 		}
 		{
 			title: "This is an Astral matter."
-			x: -2.0d
-			y: 4.5d
+			x: 4.5d
+			y: 3.0d
+			shape: "square"
 			subtitle: "Heh, get it?"
+			description: [
+				"UU Matter is a substance which can be utilised in the synthesis of various items. However, it can be harnessed into something even more powerful..."
+				""
+				"Start with mixing this with a superheated burner and some shimmer to form a few chromatic compounds."
+			]
 			dependencies: [
 				"6F1D5D69B4E9266E"
+				"18B380AA3519AFCE"
 				"2605212C0EC5C277"
 			]
+			size: 1.5d
 			id: "00EB34849356498A"
 			tasks: [{
 				id: "0CD2F946292C0C82"
@@ -51,23 +73,22 @@
 			}]
 		}
 		{
-			title: "Calorite collection"
-			x: 0.0d
-			y: -2.0d
-			dependencies: ["7A4255522DA6FEB7"]
-			id: "1B4E78DD0C8DD4E7"
-			tasks: [{
-				id: "76798BDD9C18FCC5"
-				type: "item"
-				item: "ad_astra:deepslate_calorite_ore"
-			}]
-		}
-		{
 			title: "Aw man, more of this circuit garbage?"
-			x: -2.0d
-			y: 1.0d
-			description: ["Lithium and calorite plates will allow for the creation of cool new circuits with tasty capabilities..."]
-			dependencies: ["26E14ABB9FB1F8EB"]
+			x: 6.0d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"Lithium and calorite will allow for the creation of cool new circuits with tasty capabilities..."
+				""
+				"The process for this one will be familiar with the ones you made in chapter 4. These utilise calorite pins and lithium,"
+				""
+				"As you are fairly adept at using REI at this point, I will spare the details on it's creation."
+			]
+			dependencies: [
+				"3091F7AC37F848AD"
+				"77E9682ED4C5C74D"
+			]
+			size: 2.0d
 			id: "11F776AD4AEA326A"
 			tasks: [{
 				id: "6B36647F19D4A0E4"
@@ -77,9 +98,9 @@
 		}
 		{
 			title: "This amount of storage is just getting frankly silly..."
-			x: -3.5d
+			x: 4.0d
 			y: 1.0d
-			dependencies: ["11F776AD4AEA326A"]
+			optional: true
 			id: "21A0BECE0BA8537F"
 			tasks: [
 				{
@@ -95,10 +116,11 @@
 			]
 		}
 		{
-			x: -4.0d
+			x: 1.0d
 			y: 6.5d
 			hide_dependency_lines: false
 			dependencies: ["1E93A90AEF614FA3"]
+			optional: true
 			id: "15845FFA9B8ADC8F"
 			tasks: [{
 				id: "4924E70FAAFDF9CA"
@@ -115,10 +137,11 @@
 		}
 		{
 			title: "Welcome to the heat death of the universe."
-			x: -2.0d
-			y: -3.0d
+			x: 4.5d
+			y: -3.75d
 			shape: "gear"
 			subtitle: "Enjoy your stay."
+			description: ["Home to the most hazardous terrain of any planet you've seen so far, mercury holds lucrative returns for those brave enough to explore it."]
 			dependencies: ["5BD2D0F7F0D70180"]
 			size: 1.5d
 			id: "7A4255522DA6FEB7"
@@ -130,22 +153,30 @@
 			}]
 		}
 		{
-			title: "Iridium collection"
-			x: -4.0d
-			y: -2.0d
+			title: "Ores of mercury"
+			x: 3.5d
+			y: -5.0d
 			dependencies: ["7A4255522DA6FEB7"]
 			id: "4329020373E27B1F"
-			tasks: [{
-				id: "2BC1C5C71643A2D9"
-				type: "item"
-				item: "techreborn:deepslate_iridium_ore"
-			}]
+			tasks: [
+				{
+					id: "2BC1C5C71643A2D9"
+					type: "item"
+					item: "techreborn:deepslate_iridium_ore"
+				}
+				{
+					id: "0F3F6D863D96B439"
+					type: "item"
+					item: "ad_astra:deepslate_calorite_ore"
+				}
+			]
 		}
 		{
 			title: "Go! Mega Drill!"
-			x: -0.5d
-			y: 2.5d
+			x: 0.5d
+			y: 1.0d
 			dependencies: ["3705B91C0D4EA2A0"]
+			optional: true
 			id: "145DB2939CA23578"
 			tasks: [{
 				id: "42893148C0486F38"
@@ -161,10 +192,10 @@
 		}
 		{
 			title: "Go! Mega Chainsaw!"
-			x: 0.5d
-			y: 2.5d
-			hide_dependency_lines: true
+			x: 0.0d
+			y: 0.0d
 			dependencies: ["3705B91C0D4EA2A0"]
+			optional: true
 			id: "15D4CF543BB0B94F"
 			tasks: [{
 				id: "439FAA31282FA86E"
@@ -180,10 +211,10 @@
 		}
 		{
 			title: "Go! Mega Jackhammer!"
-			x: 1.5d
-			y: 2.5d
-			hide_dependency_lines: true
+			x: 0.5d
+			y: -1.0d
 			dependencies: ["3705B91C0D4EA2A0"]
+			optional: true
 			id: "596186F7A06DD4D1"
 			tasks: [{
 				id: "41D73AB875366823"
@@ -199,8 +230,8 @@
 		}
 		{
 			title: "With big power comes big responsibility."
-			x: -2.5d
-			y: 3.5d
+			x: 2.5d
+			y: 1.5d
 			subtitle: "The matter fabricator uses 2000 units of power a tick."
 			description: ["Make sure your power generation  has been given ample time to adapt to this..."]
 			dependencies: ["3705B91C0D4EA2A0"]
@@ -213,9 +244,9 @@
 		}
 		{
 			title: "Plate it up, as usual."
-			x: -2.0d
-			y: 0.0d
-			dependencies: ["34611496C02ECF4E"]
+			x: 4.0d
+			y: -2.0d
+			dependencies: ["7A4255522DA6FEB7"]
 			id: "26E14ABB9FB1F8EB"
 			tasks: [{
 				id: "17C15B60A64843ED"
@@ -224,27 +255,26 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 2.5d
-			dependencies: ["11F776AD4AEA326A"]
-			id: "3705B91C0D4EA2A0"
-			tasks: [
-				{
-					id: "365D2B43D0C60CEE"
-					type: "item"
-					item: "techreborn:lapotron_crystal"
-				}
-				{
-					id: "7C490195DEDC649C"
-					type: "item"
-					item: "techreborn:energy_flow_chip"
-				}
+			title: "Energy Flow Chips"
+			x: 2.25d
+			y: 0.0d
+			shape: "square"
+			dependencies: [
+				"11F776AD4AEA326A"
+				"26E14ABB9FB1F8EB"
 			]
+			size: 1.5d
+			id: "3705B91C0D4EA2A0"
+			tasks: [{
+				id: "7C490195DEDC649C"
+				type: "item"
+				item: "techreborn:energy_flow_chip"
+			}]
 		}
 		{
-			x: 0.0d
-			y: -1.0d
-			dependencies: ["39B529A749BEC970"]
+			x: 6.5d
+			y: -4.5d
+			dependencies: ["7A4255522DA6FEB7"]
 			id: "34611496C02ECF4E"
 			tasks: [{
 				id: "25422A255709A092"
@@ -254,8 +284,8 @@
 		}
 		{
 			title: "Where we're going, we going to need MOOOORE power...."
-			x: -1.0d
-			y: 6.5d
+			x: 5.5d
+			y: 6.0d
 			subtitle: "Create a fusion control system."
 			description: ["Place the block and use the multiblock hologram to guide you where to go, any radius higher than default is unncecessary, and will likely drive you insane."]
 			dependencies: ["7A25FF7058F0C3CD"]
@@ -268,8 +298,8 @@
 		}
 		{
 			title: "All coiled up."
-			x: -1.5d
-			y: 5.5d
+			x: 5.0d
+			y: 5.0d
 			subtitle: "Don't lick, very electric."
 			description: ["These are required to satisfy the multiblock conditions for the fusion  controller."]
 			dependencies: ["00EB34849356498A"]
@@ -281,9 +311,10 @@
 			}]
 		}
 		{
-			x: -3.5d
+			x: 1.0d
 			y: 5.5d
 			dependencies: ["1E93A90AEF614FA3"]
+			optional: true
 			id: "5E7A2EC55B6B1DF9"
 			tasks: [
 				{
@@ -334,14 +365,10 @@
 		}
 		{
 			title: "Scrap to diamonds"
-			x: -1.5d
+			x: 6.5d
 			y: 3.5d
 			subtitle: "Scrap recyclers can produce anything from scrap, pretty much. "
 			description: ["But why do that when you can produce stacks upon stacks of it to only convert it into UU Matter..."]
-			dependencies: [
-				"18B380AA3519AFCE"
-				"3705B91C0D4EA2A0"
-			]
 			id: "2605212C0EC5C277"
 			tasks: [{
 				id: "17D1194695CD9AB4"
@@ -351,8 +378,8 @@
 		}
 		{
 			title: "Environmentally approved."
-			x: -0.5d
-			y: 3.5d
+			x: 6.5d
+			y: 2.5d
 			subtitle: "Turn any random ol' garbage into useful scrap."
 			hide_dependency_lines: true
 			dependencies: ["7A4255522DA6FEB7"]
@@ -364,27 +391,12 @@
 			}]
 		}
 		{
-			title: "TOO MUCH POWAH"
-			icon: "createdeco:lime_decal"
-			x: -3.5d
-			y: 2.5d
-			dependencies: ["3705B91C0D4EA2A0"]
-			id: "3856A2E3E58A8BB6"
-			tasks: [{
-				id: "4D6CB0F8256EF237"
-				type: "item"
-				item: "powah:reactor_niotic"
-			}]
-		}
-		{
 			title: "Producing Iridium raw ore from the blocks."
-			x: -2.0d
-			y: -1.0d
+			x: 6.0d
+			y: -2.25d
 			subtitle: "A fresh new multiblock can provide that very feature."
-			dependencies: [
-				"4329020373E27B1F"
-				"1B4E78DD0C8DD4E7"
-			]
+			dependencies: ["7A4255522DA6FEB7"]
+			size: 1.5d
 			id: "39B529A749BEC970"
 			tasks: [
 				{
@@ -412,8 +424,8 @@
 			]
 		}
 		{
-			x: -2.0d
-			y: 6.5d
+			x: 4.5d
+			y: 6.0d
 			subtitle: "An unbreaking tinker material."
 			description: ["Marvelously strong, perfect for a tool binding or handle."]
 			dependencies: ["17794A6A366C8497"]
@@ -425,8 +437,8 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: 5.5d
+			x: 4.0d
+			y: 5.0d
 			dependencies: ["00EB34849356498A"]
 			id: "17794A6A366C8497"
 			tasks: [{
@@ -440,10 +452,12 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: 8.5d
+			x: 1.5d
+			y: 12.0d
 			subtitle: "You did not need this much cobblestone."
 			hide_dependency_lines: true
+			dependencies: ["3ED703EAA646A18A"]
+			optional: true
 			id: "2B4F4694ED5364CB"
 			tasks: [{
 				id: "4B842021068A83C2"
@@ -452,10 +466,12 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: 6.5d
+			x: -1.0d
+			y: 8.5d
 			subtitle: "Funny box of lava."
 			hide_dependency_lines: true
+			dependencies: ["3ED703EAA646A18A"]
+			optional: true
 			id: "5EE3491BADD5E62D"
 			tasks: [{
 				id: "532401BAA4135F35"
@@ -464,10 +480,12 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: 7.5d
+			x: -0.5d
+			y: 10.5d
 			subtitle: "The power however, is gracefully welcomed."
 			hide_dependency_lines: true
+			dependencies: ["3ED703EAA646A18A"]
+			optional: true
 			id: "42EA88741D1C43C3"
 			tasks: [{
 				id: "01806CFF98D8B3B9"
@@ -477,8 +495,8 @@
 		}
 		{
 			title: "Let there be flight!"
-			x: -3.5d
-			y: 8.0d
+			x: 3.0d
+			y: 7.5d
 			subtitle: "By charging this up, you obtain a limited but powerful flight ability that scales the lower gravity is! On earth it is pretty effective, but in space is where the real action is."
 			hide_dependency_lines: false
 			dependencies: ["3ED703EAA646A18A"]
@@ -532,16 +550,21 @@
 		}
 		{
 			title: "the new bar or whatever it's called"
-			x: -2.0d
-			y: 9.0d
+			x: 4.5d
+			y: 8.5d
 			shape: "hexagon"
 			subtitle: "fuckin uhhhh conglomerate ingot"
+			description: [
+				"Initiate Fusion between a piece of shadow steel, and a piece of refined radiance. "
+				""
+				"This super-energised alloy is capable of an insane amount of power transfer and durability, proving it as a useful material in powerful items and machines."
+			]
 			dependencies: [
 				"1E93A90AEF614FA3"
 				"69F63D2FA5384442"
 				"78932223283B0376"
 			]
-			size: 1.5d
+			size: 2.0d
 			id: "3ED703EAA646A18A"
 			tasks: [{
 				id: "62B66772EBD3B7F0"
@@ -556,70 +579,17 @@
 			}]
 		}
 		{
-			title: "Subatomic Armor"
-			x: -6.0d
-			y: 5.5d
-			subtitle: "subatomic armor placeholder"
-			description: ["Wearing a full set of this bad boy allows creative flight... But you get no armor. Maybe tinkers could help a little?"]
-			hide_dependency_lines: true
-			dependencies: ["3ED703EAA646A18A"]
-			id: "396FFCC3357FC1E8"
-			tasks: [
-				{
-					id: "7798BF7EE68FDE3C"
-					type: "item"
-					item: {
-						id: "createastral:steel_helmet"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "1D48DA731B7237CE"
-					type: "item"
-					item: {
-						id: "createastral:steel_chestplate"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "366FA7803BAB4DB4"
-					type: "item"
-					item: {
-						id: "createastral:steel_leggings"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "5F810C08C44BDECD"
-					type: "item"
-					item: {
-						id: "createastral:steel_boots"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
-		}
-		{
 			title: "Beautiful."
-			x: -4.0d
-			y: 9.0d
+			x: 1.5d
+			y: 8.5d
+			shape: "square"
+			subtitle: "Concept quest [WIP]"
 			description: [
 				"The Reality Bender allows for an extremely high mining speed at the cost of basically no mining level."
 				"The Atomic Deconstructor functions as a much more powerful nanosaber, though it's damage is reduced to measly 15% against hostile mobs."
 			]
 			dependencies: ["3ED703EAA646A18A"]
+			optional: true
 			id: "561B1E5174FB57BB"
 			tasks: [
 				{
@@ -650,8 +620,8 @@
 		}
 		{
 			title: "Bucket of Quark-Gluon Plasma Fluid"
-			x: 0.0d
-			y: 10.5d
+			x: 6.5d
+			y: 10.0d
 			subtitle: "Have fun trolling your friends. (Or crafting)"
 			dependencies: [
 				"3ED703EAA646A18A"
@@ -671,21 +641,20 @@
 			}]
 		}
 		{
-			title: "Supercharged Shimmer"
-			x: -4.0d
-			y: 10.5d
-			subtitle: "tinkers maybe too"
+			title: "Supercharged Singularity."
+			x: 2.5d
+			y: 10.0d
 			dependencies: ["3ED703EAA646A18A"]
 			id: "16A2464A968635F7"
 			tasks: [{
 				id: "1E54D1C071F7EDD9"
 				type: "item"
-				item: "kubejs:shimmer_bucket"
+				item: "ae2:singularity"
 			}]
 		}
 		{
-			x: -1.0d
-			y: 11.0d
+			x: 5.5d
+			y: 10.5d
 			dependencies: ["3ED703EAA646A18A"]
 			id: "6DD209070CAB39D2"
 			tasks: [{
@@ -695,8 +664,8 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: 11.0d
+			x: 3.5d
+			y: 10.5d
 			dependencies: ["3ED703EAA646A18A"]
 			id: "2B33A0C8A849C319"
 			tasks: [{
@@ -706,8 +675,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 13.0d
+			x: 4.5d
+			y: 12.5d
 			dependencies: [
 				"3ED703EAA646A18A"
 				"2B33A0C8A849C319"
@@ -720,14 +689,15 @@
 				id: "73E54650E0849724"
 				type: "checkmark"
 				title: "Unlimited... Power!!!"
+				icon: "createastral:astral_singularity"
 			}]
 		}
 		{
 			title: "Galactic Collider"
-			x: 1.0d
-			y: 8.0d
-			subtitle: "please greg this recipe"
-			description: ["make plasma with it"]
+			x: 7.5d
+			y: 7.5d
+			subtitle: "Condensed lava..."
+			description: ["An artificial recreation of the surface of the sun, convert lava using a superheated mixing basin."]
 			dependencies: [
 				"78932223283B0376"
 				"3ED703EAA646A18A"
@@ -736,7 +706,53 @@
 			tasks: [{
 				id: "445F1481313A0962"
 				type: "item"
-				item: "ad_astra:cryo_freezer"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "kubejs:hellfire"
+					}
+				}
+			}]
+		}
+		{
+			title: "Raw ore"
+			x: 2.0d
+			y: -3.5d
+			dependencies: ["7A4255522DA6FEB7"]
+			id: "160490A7E60FC575"
+			tasks: [{
+				id: "46009FCC4B2E7ACC"
+				type: "item"
+				item: "techreborn:raw_iridium"
+			}]
+		}
+		{
+			title: "Calorite Pins, placeholder"
+			x: 7.5d
+			y: -1.0d
+			id: "3091F7AC37F848AD"
+			tasks: [{
+				id: "6B1169BFB796200B"
+				type: "item"
+				item: "ad_astra:calorite_nugget"
+			}]
+		}
+		{
+			title: "Lithium input placeholder."
+			x: 7.5d
+			y: 1.0d
+			id: "77E9682ED4C5C74D"
+			tasks: [{
+				id: "1AD7099B7EF44311"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "techreborn:lithium"
+					}
+				}
 			}]
 		}
 	]

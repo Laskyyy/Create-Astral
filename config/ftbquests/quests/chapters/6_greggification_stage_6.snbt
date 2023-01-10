@@ -13,6 +13,8 @@
 			x: 0.0d
 			y: 0.0d
 			shape: "rsquare"
+			subtitle: "Content past this point is WIP!"
+			description: ["We plan to introduce more content in upcoming versions, keep updated on our discord to stay in the know :3"]
 			dependencies: ["0CE73BAC9F3A9E03"]
 			size: 2.0d
 			id: "26F58F61AC2DD1B4"
@@ -27,6 +29,7 @@
 			x: 3.0d
 			y: 7.5d
 			shape: "gear"
+			subtitle: "Chapter 6 is a concept piece and is currently WIP"
 			dependencies: [
 				"26F58F61AC2DD1B4"
 				"676F4FAC0BC947B3"
@@ -235,6 +238,7 @@
 		{
 			x: 3.0d
 			y: 11.5d
+			subtitle: "Chapter 6 is a concept piece and is currently WIP"
 			dependencies: ["036A6EF5C44F8DBD"]
 			id: "7D483636DE2ED6A8"
 			tasks: [{
@@ -338,6 +342,7 @@
 			x: 7.0d
 			y: 0.0d
 			shape: "rsquare"
+			subtitle: "Chapter 6 is a concept piece and is currently WIP"
 			dependencies: [
 				"0CE73BAC9F3A9E03"
 				"6E93550DF0302208"
@@ -388,6 +393,7 @@
 			x: 2.0d
 			y: -4.0d
 			shape: "rsquare"
+			subtitle: "Chapter 6 is a concept piece and is currently WIP"
 			dependencies: ["26F58F61AC2DD1B4"]
 			size: 2.0d
 			id: "6E93550DF0302208"
@@ -418,6 +424,7 @@
 			rewards: [{
 				id: "53F02F74E0C13B85"
 				type: "item"
+				auto: "disabled"
 				item: {
 					id: "minecraft:written_book"
 					Count: 1b

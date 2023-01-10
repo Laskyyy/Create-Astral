@@ -1,0 +1,14 @@
+name = "Music Triggers"
+filename = "Music-Triggers-1.18.2-fabric-6.0-PUBLIC_BETA.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "303f45c483693232e649e343167a850bd0eb39c2"
+
+[update]
+[update.curseforge]
+file-id = 4301455
+project-id = 518410

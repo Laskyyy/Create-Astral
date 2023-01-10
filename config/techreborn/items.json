@@ -14,7 +14,7 @@
     },
     "cloakingDeviceCharge": {
       "comment": "Energy Capacity for Cloaking Device",
-      "value": 10000
+      "value": 500
     },
     "LithiumBatpackCharge": {
       "comment": "Energy Capacity for Lithium Batpack",
