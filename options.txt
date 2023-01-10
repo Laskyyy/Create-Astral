@@ -47,7 +47,7 @@ chatLineSpacing:0.0
 textBackgroundOpacity:0.5
 backgroundForChatOnly:true
 hideServerAddress:false
-advancedItemTooltips:false
+advancedItemTooltips:true
 pauseOnLostFocus:true
 overrideWidth:0
 overrideHeight:0
@@ -66,7 +66,7 @@ tutorialStep:none
 mouseWheelSensitivity:1.0
 rawMouseInput:true
 glDebugVerbosity:1
-skipMultiplayerWarning:false
+skipMultiplayerWarning:true
 skipRealms32bitWarning:false
 hideMatchedNames:true
 joinedFirstServer:false
@@ -120,12 +120,19 @@ key_keybinds.bettercombat.feint:key.keyboard.unknown
 key_keybinds.bettercombat.toggle_mine_with_weapons:key.keyboard.unknown
 key_blanket-client-tweaks.keys.rotateMinecartKey:key.keyboard.unknown
 key_key.campanion.open_backpack:key.keyboard.b
-key_keybinds.combatroll.roll:key.keyboard.r
 key_create.keyinfo.toolmenu:key.keyboard.left.alt
 key_create.keyinfo.toolbelt:key.keyboard.g
 key_key.entityculling.toggle:key.keyboard.unknown
 key_key.gearreborn.toggle_nv:key.keyboard.n
-key_key.interactic.pickup_item:key.keyboard.unknown
+key_key.immersive_aircraft.left:key.keyboard.a
+key_key.immersive_aircraft.right:key.keyboard.d
+key_key.immersive_aircraft.forward:key.keyboard.w
+key_key.immersive_aircraft.backward:key.keyboard.s
+key_key.immersive_aircraft.up:key.keyboard.space
+key_key.immersive_aircraft.down:key.keyboard.left.shift
+key_key.immersive_aircraft.pull:key.keyboard.s
+key_key.immersive_aircraft.push:key.keyboard.w
+key_key.immersive_aircraft.dismount:key.keyboard.r
 key_key.jade.config:key.keyboard.keypad.0
 key_key.jade.show_overlay:key.keyboard.keypad.1
 key_key.jade.toggle_liquid:key.keyboard.keypad.2
@@ -135,6 +142,7 @@ key_key.jade.narrate:key.keyboard.keypad.5
 key_keymap.keyOpenKeymap:key.keyboard.grave.accent
 key_key.modmenu.open_menu:key.keyboard.unknown
 key_key.mtmechs.primary:key.keyboard.v
+key_key.musictriggers.gui:key.keyboard.unknown
 key_key.packed-inventory.interact_with_item:key.keyboard.equal
 key_key.packed-inventory.invert_tooltip_visibility:key.keyboard.left.shift
 key_key.packed-inventory.invert_tooltip_compact_mode:key.keyboard.c
@@ -169,4 +177,3 @@ modelPart_right_sleeve:true
 modelPart_left_pants_leg:true
 modelPart_right_pants_leg:true
 modelPart_hat:true
-fullscreenResolution:1920x1080@144:24
