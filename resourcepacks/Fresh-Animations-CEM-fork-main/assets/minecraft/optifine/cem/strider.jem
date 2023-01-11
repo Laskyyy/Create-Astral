@@ -1,0 +1,292 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 128],
+	"models": [
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "right_leg",
+			"id": "right_leg",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"submodels": [
+				{
+					"id": "bone",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"submodels": [
+						{
+							"id": "body2",
+							"invertAxis": "xy",
+							"translate": [0, 18, 0],
+							"boxes": [
+								{
+									"coordinates": [-8, -3, -8, 16, 14, 16],
+									"uvNorth": [16, 16, 32, 30],
+									"uvEast": [0, 16, 16, 30],
+									"uvSouth": [48, 16, 64, 30],
+									"uvWest": [32, 16, 48, 30],
+									"uvUp": [32, 16, 16, 0],
+									"uvDown": [48, 0, 32, 16]
+								}
+							],
+							"submodels": [
+								{
+									"id": "hair_left_top2",
+									"invertAxis": "xy",
+									"translate": [-8, 10, 0],
+									"rotate": [0, 0, 60],
+									"boxes": [
+										{
+											"coordinates": [-12, 0, -8, 12, 0, 16],
+											"uvDown": [44, 33, 32, 49]
+										}
+									]
+								},
+								{
+									"id": "hair_left_middle2",
+									"invertAxis": "xy",
+									"translate": [-8, 6, 0],
+									"rotate": [0, 0, 60],
+									"boxes": [
+										{
+											"coordinates": [-12, 0, -8, 12, 0, 16],
+											"uvDown": [44, 49, 32, 65]
+										}
+									]
+								},
+								{
+									"id": "hair_left_bottom2",
+									"invertAxis": "xy",
+									"translate": [-8, 1, 0],
+									"rotate": [0, 0, 60],
+									"boxes": [
+										{
+											"coordinates": [-12, 0, -8, 12, 0, 16],
+											"uvDown": [44, 65, 32, 81]
+										}
+									]
+								},
+								{
+									"id": "hair_right_top2",
+									"invertAxis": "xy",
+									"mirrorTexture": "u",
+									"translate": [8, 10, 0],
+									"rotate": [0, 0, -60],
+									"boxes": [
+										{
+											"coordinates": [0, 0, -8, 12, 0, 16],
+											"uvDown": [44, 33, 32, 49]
+										}
+									]
+								},
+								{
+									"id": "hair_right_middle2",
+									"invertAxis": "xy",
+									"mirrorTexture": "u",
+									"translate": [8, 6, 0],
+									"rotate": [0, 0, -60],
+									"boxes": [
+										{
+											"coordinates": [0, 0, -8, 12, 0, 16],
+											"uvDown": [44, 49, 32, 65]
+										}
+									]
+								},
+								{
+									"id": "hair_right_bottom2",
+									"invertAxis": "xy",
+									"mirrorTexture": "u",
+									"translate": [8, 1, 0],
+									"rotate": [0, 0, -60],
+									"boxes": [
+										{
+											"coordinates": [0, 0, -8, 12, 0, 16],
+											"uvDown": [44, 65, 32, 81]
+										}
+									]
+								},
+								{
+									"id": "right_eye",
+									"invertAxis": "xy",
+									"translate": [0, 5, 0],
+									"boxes": [
+										{
+											"coordinates": [5, -4, -8.025, 1, 1, 0.25],
+											"uvNorth": [18, 31, 19, 32],
+											"uvEast": [18, 31, 19, 32],
+											"uvSouth": [18, 31, 19, 32],
+											"uvWest": [18, 31, 19, 32],
+											"uvUp": [19, 32, 18, 31],
+											"uvDown": [19, 31, 18, 32]
+										}
+									]
+								},
+								{
+									"id": "left_eye",
+									"invertAxis": "xy",
+									"translate": [0, 5, 0],
+									"boxes": [
+										{
+											"coordinates": [-6, -4, -8.025, 1, 1, 0.25],
+											"uvNorth": [19, 31, 18, 32],
+											"uvEast": [19, 31, 18, 32],
+											"uvSouth": [19, 31, 18, 32],
+											"uvWest": [19, 31, 18, 32],
+											"uvUp": [18, 32, 19, 31],
+											"uvDown": [18, 31, 19, 32]
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": "left_leg2",
+							"invertAxis": "xy",
+							"translate": [-4, 2, 0],
+							"boxes": [
+								{
+									"coordinates": [-2, -2, -2, 4, 17, 4],
+									"uvNorth": [4, 59, 8, 76],
+									"uvEast": [0, 59, 4, 76],
+									"uvSouth": [12, 59, 16, 76],
+									"uvWest": [8, 59, 12, 76],
+									"uvUp": [8, 59, 4, 55],
+									"uvDown": [12, 55, 8, 59]
+								}
+							]
+						},
+						{
+							"id": "right_leg2",
+							"invertAxis": "xy",
+							"translate": [4, 2, 0],
+							"boxes": [
+								{
+									"coordinates": [-2, -2, -2, 4, 17, 4],
+									"uvNorth": [4, 36, 8, 53],
+									"uvEast": [0, 36, 4, 53],
+									"uvSouth": [12, 36, 16, 53],
+									"uvWest": [8, 36, 12, 53],
+									"uvUp": [8, 36, 4, 32],
+									"uvDown": [12, 32, 8, 36]
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "shake_action",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0]
+				}
+			],
+			"animations": [
+				{
+					"shake_action.tx": "if(is_ridden, 0, clamp(-7 +sin((age+limb_swing/2)/if(is_child, 60, 80))*8, 0, 1))*clamp(1.5-limb_speed*3, 0, 1)"
+				},
+				{
+					"bone.rx": "-right_leg.rx",
+					"bone.ry": "-right_leg.ry",
+					"bone.rz": "-right_leg.rz",
+					"bone.tx": "-right_leg.tx",
+					"bone.ty": "-right_leg.ty +if(is_child&&is_in_lava, -4, 0)",
+					"body2.rx": "if(is_ridden, 0, clamp(torad(head_pitch)  , torad(-30), torad(30))*clamp(1-shake_action.tx, 0, 1) ) -cos((limb_swing/2+age)/if(is_child, 8, 13))/40 +(sin(torad(45)+limb_swing/if(is_child, 2.5, 1.333333)*if(limb_speed>=0.85, 1.3, 2))/if(limb_speed>=0.85, 10, 20) +torad(15)*clamp(-0.5+limb_speed*2, 0, 1))*sin(limb_speed*2.5) +torad(20)*shake_action.tx",
+					"body2.ry": "                 clamp(torad(head_yaw)/1.5, torad(-35), torad(35)) +if(!is_in_lava,  cos(limb_swing/2+age*2)/80, 0)",
+					"body2.rz": "(cos(torad(45)+limb_swing/if(is_child, 2.5, 1.333333)*if(limb_speed>=0.85, 1.3/2, 1)) +sin(torad(45)+limb_swing/if(is_child, 2.5, 1.333333)*if(limb_speed>=0.85, 1.3/2, 1)))/8*if(limb_speed>=0.85, 1, sin(limb_speed*2.8)*if(is_in_lava, 1, 2)/2) +sin(          (limb_swing/2+age)/if(is_child, 1.5, 2))/1.5*shake_action.tx",
+					"body2.tx": "-sin(torad(45)+limb_swing/if(is_child, 2.5, 1.333333)*if(limb_speed>=0.85, 1.3/2, 1)) +cos(torad(45)+limb_swing/if(is_child, 2.5, 1.333333)                               ) /4*clamp(sin(limb_speed*2.8)*3, 0, 1)                                  +cos(torad(70)+(limb_swing/2+age)/if(is_child, 1.5, 2))*2  *shake_action.tx",
+					"body2.ty": "6 +sin(          (limb_swing/2+age)/if(is_child, 8, 13))/2*clamp(1-limb_speed*3, 0, 1) +if(limb_speed>=0.85, -1 +cos(torad(45)+limb_swing/if(is_child, 2.5, 1.333333)*1.3)*1.5, sin(torad(45)+limb_swing/if(is_child, 2.5, 1.333333)*2 -cos(torad(45)+limb_swing/if(is_child, 2.5, 1.333333)*2)/2)*limb_speed) +if(is_ridden||!is_in_lava, 1.5, 0) +if(!is_in_lava, sin(limb_swing/2+age*2)/20, 0)",
+					"body2.tz": " (-sin(torad(45)+(limb_swing/2+age)/if(is_child, 8, 13))/4 +if(limb_speed>=0.85, 0, sin(torad(45)+torad(45)+limb_swing/if(is_child, 2.5, 1.333333)*2+cos(torad(45)+limb_swing/if(is_child, 2.5, 1.333333)*2)/3)*clamp(-0.5+limb_speed*2, 0, 1))*sin(limb_speed*3)) +clamp(torad(head_pitch)*1.2*4, -3, 3)*clamp(1-shake_action.tx, 0, 1) +2*shake_action.tx"
+				},
+				{
+					"left_leg2.rx": " torad(-2) -sin((limb_swing/2+age)/if(is_child, 8, 13))/if(is_in_lava, 40, 20)*clamp(1-limb_speed*3, 0, 1) +sin(torad(45)+limb_swing/if(is_child, 2.5, 1.333333)*if(limb_speed>=0.85, 1.3/2, 1))/3*if(limb_speed>=0.85, 1.7, 1) +clamp( cos(torad(45)+limb_swing/if(is_child, 2.5, 1.333333)*if(limb_speed>=0.85, 1.3/2, 1))/3, torad(-20), 0)*clamp(-0.5+limb_speed*2, 1, 1.8)*if(limb_speed>=0.85, 0.5, 1) +torad(15)*limb_speed +clamp(-torad(head_pitch)/3, -torad(10), torad(10))*clamp(1-shake_action.tx, 0, 1)",
+					"right_leg2.rx": "torad(-2) -sin((limb_swing/2+age)/if(is_child, 8, 13))/if(is_in_lava, 40, 20)*clamp(1-limb_speed*3, 0, 1) -sin(torad(45)+limb_swing/if(is_child, 2.5, 1.333333)*if(limb_speed>=0.85, 1.3/2, 1))/3*if(limb_speed>=0.85, 1.7, 1) +clamp(-cos(torad(45)+limb_swing/if(is_child, 2.5, 1.333333)*if(limb_speed>=0.85, 1.3/2, 1))/3, torad(-20), 0)*clamp(-0.5+limb_speed*2, 1, 1.8)*if(limb_speed>=0.85, 0.5, 1) +torad(15)*limb_speed +clamp(-torad(head_pitch)/3, -torad(10), torad(10))*clamp(1-shake_action.tx, 0, 1)",
+					"left_leg2.ry": " torad( 10) +if(!is_in_lava,  sin(limb_swing/2+age*2)/20, 0)",
+					"right_leg2.ry": "torad(-10) +if(!is_in_lava, -sin(limb_swing/2+age*2)/20, 0)",
+					"left_leg2.rz": " cos(torad(45)+limb_swing/if(is_child, 2.5, 1.333333)*if(limb_speed>=0.85, 1.3/2, 1))/10*if(is_in_lava, 1, 2)/4*clamp(sin(limb_speed*2.8)*3, 0, 1) -sin((limb_swing/2+age)/if(is_child, 1.5, 2))/10*shake_action.tx",
+					"right_leg2.rz": "cos(torad(45)+limb_swing/if(is_child, 2.5, 1.333333)*if(limb_speed>=0.85, 1.3/2, 1))/10*if(is_in_lava, 1, 2)/4*clamp(sin(limb_speed*2.8)*3, 0, 1) -sin((limb_swing/2+age)/if(is_child, 1.5, 2))/10*shake_action.tx",
+					"left_leg2.tx": "  3.5",
+					"right_leg2.tx": "-3.5",
+					"left_leg2.ty": " 22 +clamp( cos(torad(45)+limb_swing/if(is_child, 2.5, 1.333333)*if(limb_speed>=0.85, 1.3/2, 1))*3*clamp(limb_speed*3, 0, 1)*clamp(-0.5+limb_speed*2, 1, 2), -6, clamp(-0.5+limb_speed*3, 0, 3)*if(limb_speed>=0.85, 1.3, 1)) -clamp(-0.5+limb_speed*3, 0, 3)*if(limb_speed>=0.85, 1.3, 1)",
+					"right_leg2.ty": "22 +clamp(-cos(torad(45)+limb_swing/if(is_child, 2.5, 1.333333)*if(limb_speed>=0.85, 1.3/2, 1))*3*clamp(limb_speed*3, 0, 1)*clamp(-0.5+limb_speed*2, 1, 2), -6, clamp(-0.5+limb_speed*3, 0, 3)*if(limb_speed>=0.85, 1.3, 1)) -clamp(-0.5+limb_speed*3, 0, 3)*if(limb_speed>=0.85, 1.3, 1)",
+					"left_leg2.tz": " if(is_in_lava, 0.5 +sin((limb_swing/2+age)/if(is_child, 8, 13))/2*clamp(1-limb_speed*3, 0, 1), 0) +sin(torad(45)+limb_swing/if(is_child, 2.5, 1.333333)*if(limb_speed>=0.85, 1.3/2, 1))*if(limb_speed>=0.85, 10, 6) +clamp( cos(torad(45)+limb_swing/if(is_child, 2.5, 1.333333))*2, -2, 0) +2.5*limb_speed",
+					"right_leg2.tz": "if(is_in_lava, 0.5 +sin((limb_swing/2+age)/if(is_child, 8, 13))/2*clamp(1-limb_speed*3, 0, 1), 0) -sin(torad(45)+limb_swing/if(is_child, 2.5, 1.333333)*if(limb_speed>=0.85, 1.3/2, 1))*if(limb_speed>=0.85, 10, 6) +clamp(-cos(torad(45)+limb_swing/if(is_child, 2.5, 1.333333))*2, -2, 0) +2.5*limb_speed"
+				},
+				{
+					"hair_left_top2.rz": "    clamp(torad( 60) -cos((limb_swing/2+age)/if(is_child, 8, 13))/6*clamp(1-limb_speed*3, 0, 1) +cos((limb_swing/2+age)/7)/10 -sin(torad(45)+limb_swing/if(is_child, 2.5, 1.333333))/8*sin(limb_speed*3)*if(limb_speed>=0.85, 0, 1) +if(limb_speed>=0.85,  sin(torad(45)+limb_swing/if(is_child, 2.5, 1.333333)*if(limb_speed>=0.85, 1.3, 1))/4, -cos(torad(45)+limb_swing/if(is_child, 2.5, 1.333333))/4*limb_speed) -cos((limb_swing/2+age)/if(is_child, 1.5, 2))/if(is_child, 1.2, 1.5)*shake_action.tx, 0, torad( 85))",
+					"hair_right_top2.rz": "   clamp(torad(-60) +cos((limb_swing/2+age)/if(is_child, 8, 13))/6*clamp(1-limb_speed*3, 0, 1) +cos((limb_swing/2+age)/7)/10 -sin(torad(45)+limb_swing/if(is_child, 2.5, 1.333333))/8*sin(limb_speed*3)*if(limb_speed>=0.85, 0, 1) +if(limb_speed>=0.85, -sin(torad(45)+limb_swing/if(is_child, 2.5, 1.333333)*if(limb_speed>=0.85, 1.3, 1))/4,  cos(torad(45)+limb_swing/if(is_child, 2.5, 1.333333))/4*limb_speed) -cos((limb_swing/2+age)/if(is_child, 1.5, 2))/if(is_child, 1.2, 1.5)*shake_action.tx, torad(-85), 0)",
+					"hair_left_middle2.rz": " clamp(torad( 60) -cos((limb_swing/2+age)/if(is_child, 8, 13))/7*clamp(1-limb_speed*3, 0, 1) +cos((limb_swing/2+age)/8)/10 -sin(torad(45)+limb_swing/if(is_child, 2.5, 1.333333))/8*sin(limb_speed*3)*if(limb_speed>=0.85, 0, 1) +if(limb_speed>=0.85,  sin(torad(45)+limb_swing/if(is_child, 2.5, 1.333333)*if(limb_speed>=0.85, 1.3, 1))/4, -cos(torad(45)+limb_swing/if(is_child, 2.5, 1.333333))/4*limb_speed) -cos((limb_swing/2+age)/if(is_child, 1.5, 2))/if(is_child, 1.2, 1.5)*shake_action.tx, 0, torad( 85))",
+					"hair_right_middle2.rz": "clamp(torad(-60) +cos((limb_swing/2+age)/if(is_child, 8, 13))/7*clamp(1-limb_speed*3, 0, 1) +cos((limb_swing/2+age)/8)/10 -sin(torad(45)+limb_swing/if(is_child, 2.5, 1.333333))/8*sin(limb_speed*3)*if(limb_speed>=0.85, 0, 1) +if(limb_speed>=0.85, -sin(torad(45)+limb_swing/if(is_child, 2.5, 1.333333)*if(limb_speed>=0.85, 1.3, 1))/4,  cos(torad(45)+limb_swing/if(is_child, 2.5, 1.333333))/4*limb_speed) -cos((limb_swing/2+age)/if(is_child, 1.5, 2))/if(is_child, 1.2, 1.5)*shake_action.tx, torad(-85), 0)",
+					"hair_left_bottom2.rz": " clamp(torad( 60) -cos((limb_swing/2+age)/if(is_child, 8, 13))/4*clamp(1-limb_speed*3, 0, 1) +cos((limb_swing/2+age)/9)/10 -sin(torad(45)+limb_swing/if(is_child, 2.5, 1.333333))/8*sin(limb_speed*3)*if(limb_speed>=0.85, 0, 1) +if(limb_speed>=0.85,  sin(torad(45)+limb_swing/if(is_child, 2.5, 1.333333)*if(limb_speed>=0.85, 1.3, 1))/4, -cos(torad(45)+limb_swing/if(is_child, 2.5, 1.333333))/4*limb_speed) -cos((limb_swing/2+age)/if(is_child, 1.5, 2))/if(is_child, 1.2, 1.5)*shake_action.tx, 0, torad( 85))",
+					"hair_right_bottom2.rz": "clamp(torad(-60) +cos((limb_swing/2+age)/if(is_child, 8, 13))/4*clamp(1-limb_speed*3, 0, 1) +cos((limb_swing/2+age)/9)/10 -sin(torad(45)+limb_swing/if(is_child, 2.5, 1.333333))/8*sin(limb_speed*3)*if(limb_speed>=0.85, 0, 1) +if(limb_speed>=0.85, -sin(torad(45)+limb_swing/if(is_child, 2.5, 1.333333)*if(limb_speed>=0.85, 1.3, 1))/4,  cos(torad(45)+limb_swing/if(is_child, 2.5, 1.333333))/4*limb_speed) -cos((limb_swing/2+age)/if(is_child, 1.5, 2))/if(is_child, 1.2, 1.5)*shake_action.tx, torad(-85), 0)"
+				},
+				{
+					"right_eye.tx": "clamp(-head_yaw/80, -1, 0)",
+					"left_eye.tx": " clamp(-head_yaw/80,  0, 1)"
+				}
+			]
+		},
+		{
+			"part": "hair_left_top",
+			"id": "hair_left_top",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "hair_left_middle",
+			"id": "hair_left_middle",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "hair_left_bottom",
+			"id": "hair_left_bottom",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "hair_right_top",
+			"id": "hair_right_top",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "hair_right_middle",
+			"id": "hair_right_middle",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "hair_right_bottom",
+			"id": "hair_right_bottom",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "left_leg",
+			"id": "left_leg",
+			"invertAxis": "xy",
+			"translate": [-4, -17, 0],
+			"submodels": [
+				{
+					"id": "by_FreshLX_for_Fresh_Animations",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0]
+				}
+			],
+			"animations": [
+				{
+					"right_leg.rx": "0",
+					"right_leg.ry": "0",
+					"right_leg.rz": "0",
+					"right_leg.tx": "0",
+					"right_leg.ty": "0",
+					"right_leg.tz": "0"
+				}
+			]
+		}
+	]
+}

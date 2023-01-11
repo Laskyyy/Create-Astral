@@ -1,0 +1,211 @@
+{
+	"textureSize": [64, 32],
+	"shadowSize": 2,
+	"models": [
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -20, 0],
+			"submodels": [
+				{
+					"id": "body2",
+					"invertAxis": "xy",
+					"translate": [0, -20, 0],
+					"boxes": [
+						{"coordinates": [-8, -21.5, -8, 16, 16, 16], "textureOffset": [0, 0]}
+					],
+					"submodels": [
+						{
+							"id": "tentacle_1",
+							"invertAxis": "xy",
+							"translate": [3.7, -21, -5],
+							"boxes": [
+								{"coordinates": [-1, -8, -1, 2, 8, 2], "textureOffset": [0, 0]}
+							]
+						},
+						{
+							"id": "tentacle_2",
+							"invertAxis": "xy",
+							"translate": [-6.3, -21, -5],
+							"boxes": [
+								{"coordinates": [-1, -9, -1, 2, 9, 2], "textureOffset": [0, 0]}
+							]
+						},
+						{
+							"id": "tentacle_3",
+							"invertAxis": "xy",
+							"translate": [-1.3, -21, -5],
+							"boxes": [
+								{"coordinates": [-1, -13, -1, 2, 13, 2], "textureOffset": [0, 0]}
+							]
+						},
+						{
+							"id": "tentacle_4",
+							"invertAxis": "xy",
+							"translate": [6.3, -21, 0],
+							"boxes": [
+								{"coordinates": [-1, -11, -1, 2, 11, 2], "textureOffset": [0, 0]}
+							]
+						},
+						{
+							"id": "tentacle_5",
+							"invertAxis": "xy",
+							"translate": [1.3, -21, 0],
+							"boxes": [
+								{"coordinates": [-1, -11, -1, 2, 11, 2], "textureOffset": [0, 0]}
+							]
+						},
+						{
+							"id": "tentacle_6",
+							"invertAxis": "xy",
+							"translate": [-3.7, -21, 0],
+							"boxes": [
+								{"coordinates": [-1, -10, -1, 2, 10, 2], "textureOffset": [0, 0]}
+							]
+						},
+						{
+							"id": "tentacle_7",
+							"invertAxis": "xy",
+							"translate": [3.7, -21, 5],
+							"boxes": [
+								{"coordinates": [-1, -12, -1, 2, 12, 2], "textureOffset": [0, 0]}
+							]
+						},
+						{
+							"id": "tentacle_8",
+							"invertAxis": "xy",
+							"translate": [-6.3, -21, 5],
+							"boxes": [
+								{"coordinates": [-1, -12, -1, 2, 12, 2], "textureOffset": [0, 0]}
+							]
+						},
+						{
+							"id": "tentacle_9",
+							"invertAxis": "xy",
+							"translate": [-1.3, -21, 5],
+							"boxes": [
+								{"coordinates": [-1, -9, -1, 2, 9, 2], "textureOffset": [0, 0]}
+							]
+						}
+					]
+				},
+				{
+					"id": "Created_by_FreshLX_for_Fresh_Animations",
+					"invertAxis": "xy",
+					"translate": [0, -12, 0]
+				}
+			],
+			"animations": [
+				{
+					"body2.rx": "-sin(age*1.5/30)/6 +torad(head_pitch)/4 +clamp(torad(20)*limb_speed, 0, torad(10))",
+					"body2.rz": " sin(age*1.5/25)/16 +clamp(torad(head_yaw)/3, torad(-15), torad(15))",
+					"body2.tx": "-cos(age*1.5/25)",
+					"body2.ty": "-cos(age/10) -cos(age/10-sin(age/10)/2)*2 *clamp(-2 +cos((age)/80)*4, 0, 1) -17",
+					"body2.tz": "-cos(age*1.5/30)*3",
+					"body2.sx": "0.8 -sin(age/10+cos(age/10)/2)/40 *clamp(-2 +cos((age)/80)*4, 0, 1)",
+					"body2.sy": "0.8 +sin(age/10+cos(age/10)/2)/30 *clamp(-2 +cos((age)/80)*4, 0, 1)",
+					"body2.sz": "0.8 -sin(age/10+cos(age/10)/2)/40 *clamp(-2 +cos((age)/80)*4, 0, 1)"
+				},
+				{
+					"tentacle_1.rx": "-body2.rx -sin(age*1.5/30)/2 +sin(limb_swing/3+torad( 0)+age/11)/4 +clamp(torad(50)*limb_speed, 0, torad(30))               +(-sin(limb_swing/3+torad( 0)+age/11)/6 +torad(-15)/2 +cos(age/10-sin(age/10))/4) *clamp(-2 +cos((age)/80)*4, 0, 1)",
+					"tentacle_2.rx": "-body2.rx -sin(age*1.5/30)/2 -sin(limb_swing/3+torad(10)+age/16)/4 +clamp(torad(50)*limb_speed, 0, torad(30))               +( sin(limb_swing/3+torad(10)+age/16)/6 +torad(-15)/2 +cos(age/10-sin(age/10))/4) *clamp(-2 +cos((age)/80)*4, 0, 1)",
+					"tentacle_3.rx": "-body2.rx -sin(age*1.5/30)/2 -cos(limb_swing/3+torad(40)+age/14)/4 +clamp(torad(50)*limb_speed, 0, torad(30))               +( cos(limb_swing/3+torad(40)+age/14)/6 +torad(-30)/2 +cos(age/10-sin(age/10))/2) *clamp(-2 +cos((age)/80)*4, 0, 1)",
+					"tentacle_4.rx": "-body2.rx -sin(age*1.5/30)/2 +cos(limb_swing/3+torad(30)+age/12)/4 +clamp(torad(50)*limb_speed, 0, torad(30))               +(-cos(limb_swing/3+torad(30)+age/12)/6                                         ) *clamp(-2 +cos((age)/80)*4, 0, 1)",
+					"tentacle_5.rx": "-body2.rx -sin(age*1.5/30)/2 +sin(limb_swing/3+torad(60)+age/14)/4 +clamp(torad(50)*limb_speed, 0, torad(30))               +(-sin(limb_swing/3+torad(60)+age/14)/6                                         ) *clamp(-2 +cos((age)/80)*4, 0, 1)",
+					"tentacle_6.rx": "-body2.rx -sin(age*1.5/30)/2 -cos(limb_swing/3+torad(70)+age/16)/4 +clamp(torad(50)*limb_speed, 0, torad(30))               +( cos(limb_swing/3+torad(70)+age/16)/6                                         ) *clamp(-2 +cos((age)/80)*4, 0, 1)",
+					"tentacle_7.rx": "-body2.rx -sin(age*1.5/30)/2 -sin(limb_swing/3+torad(20)+age/12)/4 +clamp(torad(50)*limb_speed, 0, torad(30))               +( sin(limb_swing/3+torad(20)+age/12)/6 +torad( 15)/2 -cos(age/10-sin(age/10))/4) *clamp(-2 +cos((age)/80)*4, 0, 1)",
+					"tentacle_8.rx": "-body2.rx -sin(age*1.5/30)/2 +cos(limb_swing/3+torad(50)+age/11)/4 +clamp(torad(50)*limb_speed, 0, torad(30))               +(-cos(limb_swing/3+torad(50)+age/11)/6 +torad( 15)/2 -cos(age/10-sin(age/10))/4) *clamp(-2 +cos((age)/80)*4, 0, 1)",
+					"tentacle_9.rx": "-body2.rx -sin(age*1.5/30)/2 +cos(limb_swing/3+torad(80)+age/12)/4 +clamp(torad(50)*limb_speed, 0, torad(30))               +(-cos(limb_swing/3+torad(80)+age/12)/6 +torad( 30)/2 -cos(age/10-sin(age/10))/2) *clamp(-2 +cos((age)/80)*4, 0, 1)"
+				},
+				{
+					"tentacle_1.rz": "-body2.rz -cos(age*1.5/25)/6 -sin(limb_swing/3+torad( 0)+age/13)/12 +clamp(-torad(head_yaw)/3, torad(-15), torad(15)) +( sin(limb_swing/3+torad( 0)+age/13)/16 +torad(-15)/2 +cos(age/10-sin(age/10))/4) *clamp(-2 +cos((age)/80)*4, 0, 1)",
+					"tentacle_2.rz": "-body2.rz -cos(age*1.5/25)/6 +cos(limb_swing/3+torad(30)+age/10)/12 +clamp(-torad(head_yaw)/3, torad(-15), torad(15)) +(-cos(limb_swing/3+torad(30)+age/10)/16 +torad( 15)/2 -cos(age/10-sin(age/10))/4) *clamp(-2 +cos((age)/80)*4, 0, 1)",
+					"tentacle_3.rz": "-body2.rz -cos(age*1.5/25)/6 -cos(limb_swing/3+torad(50)+age/12)/12 +clamp(-torad(head_yaw)/3, torad(-15), torad(15)) +( cos(limb_swing/3+torad(50)+age/12)/16 +torad(  5)/2                           ) *clamp(-2 +cos((age)/80)*4, 0, 1)",
+					"tentacle_4.rz": "-body2.rz -cos(age*1.5/25)/6 -sin(limb_swing/3+torad(10)+age/13)/12 +clamp(-torad(head_yaw)/3, torad(-15), torad(15)) +( sin(limb_swing/3+torad(10)+age/13)/16 +torad(-30)/2 +cos(age/10-sin(age/10))/2) *clamp(-2 +cos((age)/80)*4, 0, 1)",
+					"tentacle_5.rz": "-body2.rz -cos(age*1.5/25)/6 +cos(limb_swing/3+torad(70)+age/12)/12 +clamp(-torad(head_yaw)/3, torad(-15), torad(15)) +(-cos(limb_swing/3+torad(70)+age/12)/16 +torad(- 5)/2                           ) *clamp(-2 +cos((age)/80)*4, 0, 1)",
+					"tentacle_6.rz": "-body2.rz -cos(age*1.5/25)/6 +cos(limb_swing/3+torad(80)+age/10)/12 +clamp(-torad(head_yaw)/3, torad(-15), torad(15)) +(-cos(limb_swing/3+torad(80)+age/10)/16 +torad( 30)/2 -cos(age/10-sin(age/10))/2) *clamp(-2 +cos((age)/80)*4, 0, 1)",
+					"tentacle_7.rz": "-body2.rz -cos(age*1.5/25)/6 -cos(limb_swing/3+torad(40)+age/13)/12 +clamp(-torad(head_yaw)/3, torad(-15), torad(15)) +( cos(limb_swing/3+torad(40)+age/13)/16 +torad(-15)/2 +cos(age/10-sin(age/10))/4) *clamp(-2 +cos((age)/80)*4, 0, 1)",
+					"tentacle_8.rz": "-body2.rz -cos(age*1.5/25)/6 -sin(limb_swing/3+torad(60)+age/12)/12 +clamp(-torad(head_yaw)/3, torad(-15), torad(15)) +( sin(limb_swing/3+torad(60)+age/12)/16 +torad( 15)/2 -cos(age/10-sin(age/10))/4) *clamp(-2 +cos((age)/80)*4, 0, 1)",
+					"tentacle_9.rz": "-body2.rz -cos(age*1.5/25)/6 +sin(limb_swing/3+torad(20)+age/10)/12 +clamp(-torad(head_yaw)/3, torad(-15), torad(15)) +(-sin(limb_swing/3+torad(20)+age/10)/16 +torad(  5)/2                           ) *clamp(-2 +cos((age)/80)*4, 0, 1)"
+				},
+				{
+					"tentacle_1.tz": "-4 +sin(limb_swing/3+torad( 0+90)+age/11)/2",
+					"tentacle_2.tz": "-4 -sin(limb_swing/3+torad(10+90)+age/16)/2",
+					"tentacle_3.tz": "-5 -cos(limb_swing/3+torad(40+90)+age/14)/2",
+					"tentacle_4.tz": "   +cos(limb_swing/3+torad(30+90)+age/12)/2",
+					"tentacle_5.tz": "-1 +sin(limb_swing/3+torad(60+90)+age/14)/2",
+					"tentacle_6.tz": " 1 -cos(limb_swing/3+torad(70+90)+age/16)/2",
+					"tentacle_7.tz": " 4 -sin(limb_swing/3+torad(20+90)+age/12)/2",
+					"tentacle_8.tz": " 4 +cos(limb_swing/3+torad(50+90)+age/11)/2",
+					"tentacle_9.tz": " 5 +cos(limb_swing/3+torad(80+90)+age/12)/2"
+				},
+				{
+					"tentacle_1.tx": " 3.7 -sin(limb_swing/3+torad( 0-90)+age/13)/2",
+					"tentacle_2.tx": "-6.3 +cos(limb_swing/3+torad(30-90)+age/10)/2",
+					"tentacle_3.tx": "-1.3 -cos(limb_swing/3+torad(50-90)+age/12)/2",
+					"tentacle_4.tx": " 6.3 -sin(limb_swing/3+torad(10-90)+age/13)/2",
+					"tentacle_5.tx": " 1.3 +cos(limb_swing/3+torad(70-90)+age/12)/2",
+					"tentacle_6.tx": "-3.7 +cos(limb_swing/3+torad(80-90)+age/10)/2",
+					"tentacle_7.tx": " 3.7 -cos(limb_swing/3+torad(40-90)+age/13)/2",
+					"tentacle_8.tx": "-6.3 -sin(limb_swing/3+torad(60-90)+age/12)/2",
+					"tentacle_9.tx": "-1.3 +sin(limb_swing/3+torad(20-90)+age/10)/2"
+				}
+			]
+		},
+		{
+			"part": "tentacle1",
+			"id": "tentacle1",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "tentacle2",
+			"id": "tentacle2",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "tentacle3",
+			"id": "tentacle3",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "tentacle4",
+			"id": "tentacle4",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "tentacle5",
+			"id": "tentacle5",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "tentacle6",
+			"id": "tentacle6",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "tentacle7",
+			"id": "tentacle7",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "tentacle8",
+			"id": "tentacle8",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "tentacle9",
+			"id": "tentacle9",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		}
+	]
+}

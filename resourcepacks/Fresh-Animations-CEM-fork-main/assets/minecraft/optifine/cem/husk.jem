@@ -1,0 +1,212 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 64],
+	"models": [
+		{
+			"part": "headwear",
+			"id": "headwear",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"boxes": [
+				{
+					"coordinates": [-4, 24, -4, 8, 8, 8],
+					"uvNorth": [40, 8, 48, 16],
+					"uvEast": [32, 8, 40, 16],
+					"uvSouth": [56, 8, 64, 16],
+					"uvWest": [48, 8, 56, 16],
+					"uvUp": [48, 8, 40, 0],
+					"uvDown": [56, 0, 48, 8],
+					"sizeAdd": 0.25
+				}
+			]
+		},
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"boxes": [
+				{
+					"coordinates": [-4, 24, -4, 8, 8, 8],
+					"uvNorth": [8, 8, 16, 16],
+					"uvEast": [0, 8, 8, 16],
+					"uvSouth": [24, 8, 32, 16],
+					"uvWest": [16, 8, 24, 16],
+					"uvUp": [16, 8, 8, 0],
+					"uvDown": [24, 0, 16, 8]
+				}
+			],
+			"submodels": [
+				{
+					"id": "Created_by_FreshLX_for_Fresh_Animations",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0]
+				}
+			],
+			"animations": [
+				{
+					"head.rx": "torad(if(is_child, -5, 3)) +sin(torad( 45)+(limb_swing/if(is_child, 3, 1))/1.3*2)/8*limb_speed +sin(torad(-90)+(limb_swing/2+age)/if(is_child, 17, 30)*pi)/40 +torad(head_pitch)/1.4 +clamp(torad(head_yaw)/2, 0, pi/2) +clamp(torad(head_yaw)/4, -pi/2, 0) -sin(pi*2*swing_progress)/3",
+					"head.ry": "torad(head_yaw)/1.2",
+					"head.rz": " sin((limb_swing/if(is_child, 3, 1))/1.3)/4*limb_speed +clamp(torad(head_yaw)/2, 0, pi/2) -sin(pi*swing_progress)/3 +torad(2)*clamp(1-limb_speed*2, 0, 1)",
+					"head.tx": "-cos(torad(20)+(limb_swing/if(is_child, 3, 1))/1.3)*2*limb_speed -torad(head_yaw) +sin(pi*swing_progress)*2",
+					"head.ty": "1 +if(is_child, -1*limb_speed*2 -0.5, 0) +(sin((limb_swing/2+age)/if(is_child, 17, 30)*pi -cos((limb_swing/2+age)/if(is_child, 17, 30)*pi)/3)/2*if(is_child, -1, 1) -sin(torad(30)+(limb_swing/if(is_child, 3, 1))/1.3*2 +cos((limb_swing/if(is_child, 3, 1))/1.3*2)/3)*if(is_child, 3, 1)*clamp(limb_speed*2, 0, 1))/if(is_child, 1.5, 1) +sin(pi*swing_progress)*2",
+					"head.tz": "(if(is_child, -1, -4.7 +clamp(2-limb_speed*4, 0, 2)) -sin(torad(-20)+(limb_swing/2+age)/if(is_child, 17, 30)*pi -cos((limb_swing/2+age)/if(is_child, 17, 30)*pi)/3) -sin(-pi*swing_progress))/if(is_child, 1.5, 1) +1*clamp(limb_speed*2, 0, 1)",
+					"headwear.rx": "head.rx",
+					"headwear.ry": "head.ry",
+					"headwear.rz": "head.rz",
+					"headwear.tx": "head.tx*if(is_child, 1, 1)",
+					"headwear.ty": "head.ty*if(is_child, 1, 1)",
+					"headwear.tz": "head.tz*if(is_child, 1, 1)",
+					"headwear.sx": "headwear.sx*if(is_child, 1.5, 1)",
+					"headwear.sy": "headwear.sy*if(is_child, 1.5, 1)",
+					"headwear.sz": "headwear.sz*if(is_child, 1.5, 1)",
+					"body.rx": "torad(if(is_child, -5, 20)) +sin((limb_swing/2+age)/if(is_child, 17, 30)*pi -cos((limb_swing/2+age)/if(is_child, 17, 30)*pi)/3)/10 +sin(pi*swing_progress)/3",
+					"body.ry": " torad(head_yaw)/6  -sin(torad(-45)+(limb_swing/if(is_child, 3, 1))/1.3)/4*clamp(limb_speed*1.3, 0, 1) +sin(-pi*swing_progress)/1.2",
+					"body.rz": "-torad(head_yaw)/14 -cos(torad( 45)+(limb_swing/if(is_child, 3, 1))/1.3)/if(is_child, 6, 16)*limb_speed -sin(pi*swing_progress)/3",
+					"body.tx": "head.tx",
+					"body.ty": "head.ty",
+					"body.tz": "head.tz +1",
+					"baby_head.ty": "-24 +0/if(is_child, 1, 0)",
+					"head2.ty": "    -24 +0/if(is_child, 0, 1)"
+				},
+				{
+					"right_arm.rx": "if(is_in_lava, torad(-60), 0) +if(is_child, torad(-70), clamp(limb_speed*2, torad(-10), torad(10))) +torad(head_yaw)/8 -sin(torad(30)+(limb_swing/if(is_child, 3, 1))/1.3)/if(is_child, 3, 1.5)*limb_speed +clamp(torad(-120)*limb_speed*2, if(is_child, torad(-40), torad(-70)), 0) +sin((limb_swing/2+age)/if(is_child, 17, 30)*pi-torad(60))/20 -sin(pi*2*swing_progress) -sin(swing_progress*pi)/2",
+					"left_arm.rx": " if(is_in_lava, torad(-60), 0) +if(is_child, torad(-70), clamp(limb_speed*2, torad(-10), torad(10))) -torad(head_yaw)/8 +sin(torad(30)+(limb_swing/if(is_child, 3, 1))/1.3)/if(is_child, 3, 1.5)*limb_speed +clamp(torad(-120)*limb_speed*2, if(is_child, torad(-40), torad(-70)), 0) +sin((limb_swing/2+age)/if(is_child, 17, 30)*pi-torad(60))/20 +sin(pi*swing_progress)*2",
+					"right_arm.ry": "clamp(-(head_yaw/80)*right_arm.rx/2, torad(-30), torad(30)) +torad(-15) +if(is_child, torad( 20), 0) +clamp(torad( 25)*limb_speed*2, 0, torad( 25))/2 +sin(torad( 90)+(limb_swing/2+age)/if(is_child, 17, 30)*pi)/10 +(-sin(limb_swing/if(is_child, 3, 1)/1.3)/3)*clamp(limb_speed*1.3, 0, 1)",
+					"left_arm.ry": " clamp(-(head_yaw/80)* left_arm.rx/2, torad(-30), torad(30)) +torad( 15) +if(is_child, torad(-20), 0) +clamp(torad(-25)*limb_speed*2, torad(-25), 0)/2 +sin(torad(-90)+(limb_swing/2+age)/if(is_child, 17, 30)*pi)/10 +(-sin(limb_swing/if(is_child, 3, 1)/1.3)/3)*clamp(limb_speed*1.3, 0, 1) +sin(-pi/2*swing_progress*2)/4",
+					"right_arm.rz": "if(is_in_water||is_in_lava, torad( 15), torad( 20)*limb_speed) +torad(8) +clamp(-torad(head_pitch)/8, 0, torad( 45)) +cos((limb_swing/2+age)/if(is_child, 17, 30)*pi +sin((limb_swing/2+age)/if(is_child, 17, 30)*pi)/2)/12 -sin(pi*swing_progress*2)/2",
+					"left_arm.rz": " if(is_in_water||is_in_lava, torad(-15), torad(-20)*limb_speed) -torad(8) +clamp( torad(head_pitch)/8, torad(-45), 0) -cos((limb_swing/2+age)/if(is_child, 17, 30)*pi +sin((limb_swing/2+age)/if(is_child, 17, 30)*pi)/2)/12 -sin(pi*swing_progress)",
+					"right_arm.tx": "-5 +body.tx*0.9 +sin(pi*swing_progress)*3",
+					"left_arm.tx": "  5 +body.tx*0.9 -sin(pi*swing_progress)*3",
+					"right_arm.ty": "2.7 -limb_speed +body.ty +sin(torad(-60)+(limb_swing/2+age)/if(is_child, 17, 30)*pi -cos((limb_swing/2+age)/if(is_child, 17, 30)*pi)/3)/1.5*if(is_child, 0, 1) -sin((limb_swing/if(is_child, 3, 1))/1.3*2)*limb_speed -sin(pi*swing_progress*2)*2 +sin(pi*swing_progress)",
+					"left_arm.ty": " 2.7 -limb_speed +body.ty +sin(torad(-60)+(limb_swing/2+age)/if(is_child, 17, 30)*pi -cos((limb_swing/2+age)/if(is_child, 17, 30)*pi)/3)/1.5*if(is_child, 0, 1) -sin((limb_swing/if(is_child, 3, 1))/1.3*2)*limb_speed -sin(pi*swing_progress)",
+					"right_arm.tz": "clamp(2-limb_speed*6, 0, 2) -sin(torad(-20)+(limb_swing/2+age)/if(is_child, 17, 30)*pi -cos((limb_swing/2+age)/if(is_child, 17, 30)*pi)/3) -sin((limb_swing/if(is_child, 3, 1))/1.3)*3*limb_speed +if(is_child, -2, -4) +torad(head_yaw) -sin(-pi*swing_progress)/if(is_child, 1.5, 1) +2*clamp(limb_speed*2, 0, 1) -sin(pi*swing_progress)*4",
+					"left_arm.tz": " clamp(2-limb_speed*6, 0, 2) -sin(torad(-20)+(limb_swing/2+age)/if(is_child, 17, 30)*pi -cos((limb_swing/2+age)/if(is_child, 17, 30)*pi)/3) +sin((limb_swing/if(is_child, 3, 1))/1.3)*3*limb_speed +if(is_child, -2, -4) -torad(head_yaw) -sin(-pi*swing_progress)/if(is_child, 1.5, 1) +2*clamp(limb_speed*2, 0, 1) +sin(pi*swing_progress)*6"
+				},
+				{
+					"right_leg.rx": "if(is_riding, torad(-80), clamp(torad( 10)-limb_speed, 0, torad( 10)) -sin(torad(20)+(limb_swing/2+age)/if(is_child, 17, 30)*pi)/40 +sin((limb_swing/if(is_child, 3, 1))/1.3)/9 +sin((limb_swing/if(is_child, 3, 1))/1.3)/if(is_child, 1, 1.5)*limb_speed +clamp(-cos(torad(45)+(limb_swing/if(is_child, 3, 1))/1.3)/2*clamp(limb_speed*1.5, 0, 1), 0, torad(30)) +torad(7)*limb_speed +if(is_child, torad(2), 0)) -torad(head_yaw)/30 +(sin(-pi*swing_progress)/5)",
+					"left_leg.rx": " if(is_riding,  torad(-80), clamp(torad(-10)+limb_speed, torad(-10), 0) -sin(          (limb_swing/2+age)/if(is_child, 17, 30)*pi)/40 -sin((limb_swing/if(is_child, 3, 1))/1.3)/9 -sin((limb_swing/if(is_child, 3, 1))/1.3)/if(is_child, 1, 1.5)*limb_speed +clamp( cos(torad(45)+(limb_swing/if(is_child, 3, 1))/1.3)/2*clamp(limb_speed*1.5, 0, 1), 0, torad(30)) +torad(7)*limb_speed +if(is_child, torad(2), 0)) +torad(head_yaw)/30 +(sin(-pi*swing_progress)/5)",
+					"right_leg.ry": "if(is_riding, torad( 10), torad( 5)) +clamp(torad(20)-limb_speed, 0, torad(20)) +clamp(-sin(limb_swing/if(is_child, 3, 1)/1.3)/4*clamp(if(is_child, limb_speed*1.5, -cos(limb_speed*pi)), 0, 1), torad(-10), 0)",
+					"left_leg.ry": " if(is_riding, torad(-10), torad(-5)) +clamp(torad(-5)+limb_speed, torad(-5), 0) +clamp(-sin(limb_swing/if(is_child, 3, 1)/1.3)/4*clamp(if(is_child, limb_speed*1.5, -cos(limb_speed*pi)), 0, 1), 0, torad( 10))",
+					"right_leg.rz": "if(is_riding, 0, torad( 6)) +if(is_child,  sin((limb_swing/2+age)/45*pi*2)/100, 0)",
+					"left_leg.rz": " if(is_riding,  0, torad(-6)) +if(is_child, -sin((limb_swing/2+age)/45*pi*2)/100, 0)",
+					"right_leg.tx": "-2 -sin((limb_swing/if(is_child, 3, 1))/1.3 +sin((limb_swing/if(is_child, 3, 1))/1.3)/2)*limb_speed",
+					"left_leg.tx": "  2 -sin((limb_swing/if(is_child, 3, 1))/1.3 +sin((limb_swing/if(is_child, 3, 1))/1.3)/2)*limb_speed",
+					"right_leg.ty": "0.2 +clamp(12 +sin(torad(45)+(limb_swing/if(is_child, 3, 1))/1.3)*4*limb_speed +(1*limb_speed) +head.ty*limb_speed*2, 0, 12.2)",
+					"left_leg.ty": " 0.2 +clamp(12 -sin(torad(45)+(limb_swing/if(is_child, 3, 1))/1.3)*4*limb_speed +(1*limb_speed) +head.ty*limb_speed*2, 0, 12.2)",
+					"right_leg.tz": "if(is_child, 0, clamp(2-limb_speed*4, 0, 2)) +clamp((sin(torad( 90)+(limb_swing/if(is_child, 3, 1))/1.3)*6)*clamp(limb_speed*1.5, 0, 1) +(3*limb_speed), -6, 1) +if(is_child, -0.5, -0.2                             ) +if(is_riding, 0, +sin(torad(20)+(limb_swing/2+age)/if(is_child, 17, 30)*pi)/3) +torad(head_yaw)/2 +(sin(pi*swing_progress)*2)",
+					"left_leg.tz": " if(is_child, 0, clamp(2-limb_speed*4, 0, 2)) +clamp((sin(torad(-90)+(limb_swing/if(is_child, 3, 1))/1.3)*6)*clamp(limb_speed*1.5, 0, 1) +(3*limb_speed), -6, 1) +if(is_child, -0.5, -0.2 -clamp(2-limb_speed*6, 0, 2)) +if(is_riding, 0, +sin(          (limb_swing/2+age)/if(is_child, 17, 30)*pi)/3) -torad(head_yaw)/2 +(sin(pi*swing_progress)*2)"
+				}
+			]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"boxes": [
+				{
+					"coordinates": [-4, 12, -2, 8, 12, 4],
+					"uvNorth": [20, 20, 28, 32],
+					"uvEast": [16, 20, 20, 32],
+					"uvSouth": [32, 20, 40, 32],
+					"uvWest": [28, 20, 32, 32],
+					"uvUp": [28, 20, 20, 16],
+					"uvDown": [36, 16, 28, 20]
+				}
+			]
+		},
+		{
+			"part": "left_arm",
+			"id": "left_arm",
+			"invertAxis": "xy",
+			"translate": [5, -22, 0],
+			"submodels": [
+				{
+					"id": "left_arm_sub_0",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [0, 0, 0],
+					"boxes": [
+						{
+							"coordinates": [-8, 12, -2, 4, 12, 4],
+							"uvNorth": [44, 20, 48, 32],
+							"uvEast": [48, 20, 52, 32],
+							"uvSouth": [52, 20, 56, 32],
+							"uvWest": [40, 20, 44, 32],
+							"uvUp": [48, 20, 44, 16],
+							"uvDown": [52, 16, 48, 20]
+						}
+					]
+				}
+			]
+		},
+		{
+			"part": "right_arm",
+			"id": "right_arm",
+			"invertAxis": "xy",
+			"translate": [-5, -22, 0],
+			"boxes": [
+				{
+					"coordinates": [4, 12, -2, 4, 12, 4],
+					"uvNorth": [44, 20, 48, 32],
+					"uvEast": [40, 20, 44, 32],
+					"uvSouth": [52, 20, 56, 32],
+					"uvWest": [48, 20, 52, 32],
+					"uvUp": [48, 20, 44, 16],
+					"uvDown": [52, 16, 48, 20]
+				}
+			]
+		},
+		{
+			"part": "left_leg",
+			"id": "left_leg",
+			"invertAxis": "xy",
+			"translate": [1.9, -12, 0],
+			"submodels": [
+				{
+					"id": "left_leg_sub_0",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [0, 0, 0],
+					"submodels": [
+						{
+							"id": "left_leg_sub_1",
+							"invertAxis": "xy",
+							"mirrorTexture": "u",
+							"translate": [0, 0, 0],
+							"boxes": [
+								{
+									"coordinates": [-4, 0, -2, 4, 12, 4],
+									"uvNorth": [4, 20, 8, 32],
+									"uvEast": [0, 20, 4, 32],
+									"uvSouth": [12, 20, 16, 32],
+									"uvWest": [8, 20, 12, 32],
+									"uvUp": [8, 20, 4, 16],
+									"uvDown": [12, 16, 8, 20]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"part": "right_leg",
+			"id": "right_leg",
+			"invertAxis": "xy",
+			"translate": [-1.9, -12, 0],
+			"boxes": [
+				{
+					"coordinates": [0, 0, -2, 4, 12, 4],
+					"uvNorth": [4, 20, 8, 32],
+					"uvEast": [0, 20, 4, 32],
+					"uvSouth": [12, 20, 16, 32],
+					"uvWest": [8, 20, 12, 32],
+					"uvUp": [8, 20, 4, 16],
+					"uvDown": [12, 16, 8, 20]
+				}
+			]
+		}
+	]
+}

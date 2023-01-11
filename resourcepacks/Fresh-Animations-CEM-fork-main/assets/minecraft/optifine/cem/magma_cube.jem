@@ -1,0 +1,187 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 32],
+	"models": [
+		{
+			"part": "segment1",
+			"id": "segment1",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "segment2",
+			"id": "segment2",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "segment3",
+			"id": "segment3",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "segment4",
+			"id": "segment4",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "segment5",
+			"id": "segment5",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "segment6",
+			"id": "segment6",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "segment7",
+			"id": "segment7",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "segment8",
+			"id": "segment8",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "core",
+			"id": "core",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"submodels": [
+				{
+					"id": "Created_by_FreshLX_for_Fresh_Animations",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0]
+				},
+				{
+					"id": "layer1",
+					"invertAxis": "xy",
+					"translate": [0, 4, 0],
+					"boxes": [
+						{"coordinates": [-4, 3, -4, 8, 1, 8], "textureOffset": [0, 0]}
+					]
+				},
+				{
+					"id": "layer2",
+					"invertAxis": "xy",
+					"translate": [0, 4, 0],
+					"boxes": [
+						{"coordinates": [-4, 2, -4, 8, 1, 8], "textureOffset": [0, 1]}
+					]
+				},
+				{
+					"id": "layer3",
+					"invertAxis": "xy",
+					"translate": [0, 4, 0],
+					"boxes": [
+						{"coordinates": [-4, 1, -4, 8, 1, 8], "textureOffset": [24, 10]}
+					]
+				},
+				{
+					"id": "layer4",
+					"invertAxis": "xy",
+					"translate": [0, 4, 0],
+					"boxes": [
+						{"coordinates": [-4, 0, -4, 8, 1, 8], "textureOffset": [24, 19]}
+					]
+				},
+				{
+					"id": "layer5",
+					"invertAxis": "xy",
+					"translate": [0, 4, 0],
+					"boxes": [
+						{"coordinates": [-4, -1, -4, 8, 1, 8], "textureOffset": [0, 4]}
+					]
+				},
+				{
+					"id": "layer7",
+					"invertAxis": "xy",
+					"translate": [0, 4, 0],
+					"boxes": [
+						{"coordinates": [-4, -3, -4, 8, 1, 8], "textureOffset": [0, 6]}
+					]
+				},
+				{
+					"id": "layer6",
+					"invertAxis": "xy",
+					"translate": [0, 4, 0],
+					"boxes": [
+						{"coordinates": [-4, -2, -4, 8, 1, 8], "textureOffset": [0, 5]}
+					]
+				},
+				{
+					"id": "layer8",
+					"invertAxis": "xy",
+					"translate": [0, 4, 0],
+					"boxes": [
+						{"coordinates": [-4, -4, -4, 8, 1, 8], "textureOffset": [0, 7]}
+					]
+				},
+				{
+					"id": "core2",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"boxes": [
+						{"coordinates": [-2, 2, -2, 4, 4, 4], "textureOffset": [0, 16]}
+					]
+				}
+			],
+			"animations": [
+				{
+					"core2.ty": "0",
+					"core2.rx": "torad(20)*clamp(-0.5+limb_speed*1.5, 0, 1)",
+					"core2.ry": "if(is_on_ground, (head_yaw/57.5)/2, 0)",
+					"core2.sy": "0.85 +cos(limb_swing/3+age/2/sqrt(max_health) -sin(limb_swing/3+age/2/sqrt(max_health))*if(max_health<=2, 0, 0.5))/10 +0.6*-if(is_on_ground, sin(limb_speed*pi*2+sin(limb_speed*pi*2)), 0)/2",
+					"core2.sx": "1    -cos(limb_swing/3+age/2/sqrt(max_health) -sin(limb_swing/3+age/2/sqrt(max_health))*if(max_health<=2, 0, 0.5))/16 -0.4*-if(is_on_ground, sin(limb_speed*pi*2+sin(limb_speed*pi*2)), 0)/2",
+					"core2.sz": "1    -cos(limb_swing/3+age/2/sqrt(max_health) -sin(limb_swing/3+age/2/sqrt(max_health))*if(max_health<=2, 0, 0.5))/16 -0.4*-if(is_on_ground, sin(limb_speed*pi*2+sin(limb_speed*pi*2)), 0)/2"
+				},
+				{
+					"layer1.rx": "sin(           (limb_swing/3+age/2/sqrt(max_health)))/4* 0.4  *if(max_health<=2, 0, 1) +torad(14)*if(is_on_ground, sin(limb_speed*pi*2+sin(limb_speed*pi*2)), 0)",
+					"layer2.rx": "sin(torad( 10)+(limb_swing/3+age/2/sqrt(max_health)))/4* 0.35 *if(max_health<=2, 0, 1) +torad(12)*if(is_on_ground, sin(limb_speed*pi*2+sin(limb_speed*pi*2)), 0)",
+					"layer3.rx": "sin(torad( 20)+(limb_swing/3+age/2/sqrt(max_health)))/4* 0.3  *if(max_health<=2, 0, 1) +torad(10)*if(is_on_ground, sin(limb_speed*pi*2+sin(limb_speed*pi*2)), 0)",
+					"layer4.rx": "sin(torad( 30)+(limb_swing/3+age/2/sqrt(max_health)))/4* 0.25 *if(max_health<=2, 0, 1) +torad( 8)*if(is_on_ground, sin(limb_speed*pi*2+sin(limb_speed*pi*2)), 0)",
+					"layer5.rx": "sin(torad( 40)+(limb_swing/3+age/2/sqrt(max_health)))/4* 0.2  *if(max_health<=2, 0, 1) +torad( 6)*if(is_on_ground, sin(limb_speed*pi*2+sin(limb_speed*pi*2)), 0)",
+					"layer6.rx": "sin(torad( 50)+(limb_swing/3+age/2/sqrt(max_health)))/4* 0.15 *if(max_health<=2, 0, 1) +torad( 4)*if(is_on_ground, sin(limb_speed*pi*2+sin(limb_speed*pi*2)), 0)",
+					"layer7.rx": "sin(torad( 60)+(limb_swing/3+age/2/sqrt(max_health)))/4* 0.07 *if(max_health<=2, 0, 1) +torad( 2)*if(is_on_ground, sin(limb_speed*pi*2+sin(limb_speed*pi*2)), 0)"
+				},
+				{
+					"layer1.ry": "(head_yaw/57.5)* 0.3 +sin(torad(120+90)+(limb_swing/3+age/4/sqrt(max_health)))* 0.4 /10",
+					"layer2.ry": "(head_yaw/57.5)* 0.2 +sin(torad(100+90)+(limb_swing/3+age/4/sqrt(max_health)))* 0.35/10",
+					"layer3.ry": "(head_yaw/57.5)* 0.1 +sin(torad( 80+90)+(limb_swing/3+age/4/sqrt(max_health)))* 0.3 /10",
+					"layer4.ry": "                      sin(torad( 60+90)+(limb_swing/3+age/4/sqrt(max_health)))* 0.25/10",
+					"layer5.ry": "(head_yaw/57.5)*-0.1 +sin(torad( 40+90)+(limb_swing/3+age/4/sqrt(max_health)))* 0.2 /10",
+					"layer6.ry": "(head_yaw/57.5)*-0.2 +sin(torad( 20+90)+(limb_swing/3+age/4/sqrt(max_health)))* 0.15/10",
+					"layer7.ry": "(head_yaw/57.5)*-0.3 +sin(torad(  0+90)+(limb_swing/3+age/4/sqrt(max_health)))* 0.1 /10",
+					"layer8.ry": "(head_yaw/57.5)*-0.4"
+				},
+				{
+					"layer1.ty": "segment1.ty*1.5 -4",
+					"layer2.ty": "segment2.ty*1.5 -4",
+					"layer3.ty": "segment3.ty*1.5 -4",
+					"layer4.ty": "segment4.ty*1.5 -4",
+					"layer5.ty": "segment5.ty*1.5 -4",
+					"layer6.ty": "segment6.ty*1.5 -4",
+					"layer7.ty": "segment7.ty*1.5 -4",
+					"layer8.ty": "segment8.ty*1.5 -4"
+				},
+				{
+					"layer1.tz": "-if(is_on_ground, sin(limb_speed*pi*2+sin(limb_speed*pi*2)), 0)/2* 0.3",
+					"layer2.tz": "-if(is_on_ground, sin(limb_speed*pi*2+sin(limb_speed*pi*2)), 0)/2* 0.2",
+					"layer3.tz": "-if(is_on_ground, sin(limb_speed*pi*2+sin(limb_speed*pi*2)), 0)/2* 0.1",
+					"layer5.tz": "-if(is_on_ground, sin(limb_speed*pi*2+sin(limb_speed*pi*2)), 0)/2*-0.1",
+					"layer6.tz": "-if(is_on_ground, sin(limb_speed*pi*2+sin(limb_speed*pi*2)), 0)/2*-0.2",
+					"layer7.tz": "-if(is_on_ground, sin(limb_speed*pi*2+sin(limb_speed*pi*2)), 0)/2*-0.3",
+					"layer8.tz": "-if(is_on_ground, sin(limb_speed*pi*2+sin(limb_speed*pi*2)), 0)/2*-0.4"
+				}
+			]
+		}
+	]
+}
