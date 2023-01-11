@@ -1,0 +1,90 @@
+{
+  "name": "astralrails:paths/start_paths",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "astralrails:paths/path_start1",
+        "processors": [
+					{
+						"processor_type": "minecraft:rule",
+						"rules": [
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:dirt_path",
+									"probability": 0.4
+								},
+								"output_state": {
+									"Name": "minecraft:grass_block"
+								}
+							}
+						]
+					}
+				],
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 1,
+      "element": {
+        "location": "astralrails:paths/path_start2",
+        "processors": [
+					{
+						"processor_type": "minecraft:rule",
+						"rules": [
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:dirt_path",
+									"probability": 0.4
+								},
+								"output_state": {
+									"Name": "minecraft:grass_block"
+								}
+							}
+						]
+					}
+				],
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 1,
+      "element": {
+        "location": "astralrails:paths/path_start3",
+        "processors": [
+					{
+						"processor_type": "minecraft:rule",
+						"rules": [
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:dirt_path",
+									"probability": 0.4
+								},
+								"output_state": {
+									"Name": "minecraft:grass_block"
+								}
+							}
+						]
+					}
+				],
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

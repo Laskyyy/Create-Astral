@@ -1,0 +1,26 @@
+{
+	"structures": [
+		{
+			"structure": "astralrails:ruins/ore_ruin",
+			"weight": 1
+		},
+		{
+			"structure": "astralrails:ruins/wall_ruin",
+			"weight": 1
+		},
+		{
+			"structure": "astralrails:ruins/post_ruin",
+			"weight": 1
+		},
+		{
+			"structure": "astralrails:ruins/stone_ruin",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"spacing": 24,
+		"separation": 1,
+		"salt": 1182274104
+	}
+}

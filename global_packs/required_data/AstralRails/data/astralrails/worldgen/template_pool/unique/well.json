@@ -1,0 +1,62 @@
+{
+  "name": "astralrails:paths/start_paths",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 2,
+      "element": {
+        "location": "astralrails:buildings/well_inner1",
+        "processors": [
+					{
+						"processor_type": "minecraft:rule",
+						"rules": [
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:polished_andesite",
+									"probability": 0.3
+								},
+								"output_state": {
+									"Name": "minecraft:andesite"
+								}
+							}
+						]
+					}
+				],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "astralrails:buildings/well_inner2",
+        "processors": [
+					{
+						"processor_type": "minecraft:rule",
+						"rules": [
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:polished_andesite",
+									"probability": 0.5
+								},
+								"output_state": {
+									"Name": "minecraft:andesite"
+								}
+							}
+						]
+					}
+				],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

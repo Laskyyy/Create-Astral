@@ -1,0 +1,63 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "farmersdelight:vegetable_noodles"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 45,
+          "name": "minecraft:egg"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 40,
+          "name": "farmersdelight:milk_bottle"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 50,
+          "name": "farmersdelight:tomato"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 50,
+          "name": "farmersdelight:rice_panicle"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 45,
+          "name": "farmersdelight:cabbage"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 50,
+          "name": "farmersdelight:cabbage_leaf"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 50,
+          "name": "farmersdelight:minced_beef"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 50,
+          "name": "farmersdelight:wheat_dough"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 25,
+          "name": "farmersdelight:cake_slice"
+        }
+      ]
+    }
+  ]
+}

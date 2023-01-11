@@ -1,0 +1,15 @@
+{
+  "name": "astralrails:paths/start_paths",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "astralrails:moon/moon_rock_4_bottom",
+        "processors": "astralrails:moon_debris/earth_moon_rock_texture_cobbled",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

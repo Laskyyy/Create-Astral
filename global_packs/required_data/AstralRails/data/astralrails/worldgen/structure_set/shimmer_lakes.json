@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "astralrails:shimmer_lake",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"spacing": 20,
+		"separation": 15,
+		"salt": 1169284478
+	}
+}

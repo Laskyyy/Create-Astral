@@ -1,0 +1,42 @@
+{
+  "name": "astralrails:rails/ruined_rails",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 5,
+      "element": {
+        "location": "astralrails:rails/straight_rail_ruined",
+        "processors": "minecraft:empty",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:rails/straight_rail_bridgecrash",
+        "processors": "minecraft:empty",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 3,
+      "element": {
+        "location": "astralrails:rails/straight_rail_fadeout",
+        "processors": "minecraft:empty",
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 1,
+      "element": {
+        "location": "astralrails:rail_buildings/railside_house_ruined",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

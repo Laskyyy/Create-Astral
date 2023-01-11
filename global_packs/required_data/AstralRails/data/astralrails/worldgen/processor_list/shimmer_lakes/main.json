@@ -1,0 +1,126 @@
+{
+	"processors": [
+		{
+			"processor_type": "minecraft:rule",
+			"rules": [
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "minecraft:calcite",
+						"probability": 0.8
+					},
+					"output_state": {
+						"Name": "minecraft:stone"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "minecraft:calcite",
+						"probability": 0.2
+					},
+					"output_state": {
+						"Name": "minecraft:amethyst_block"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "minecraft:tuff",
+						"probability": 0.4
+					},
+					"output_state": {
+						"Name": "minecraft:andesite"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "ad_astra:moon_sand",
+						"probability": 0.1
+					},
+					"output_state": {
+						"Name": "ad_astra:moon_stone"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "minecraft:medium_amethyst_bud",
+						"probability": 0.4
+					},
+					"output_state": {
+						"Name": "minecraft:air"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "minecraft:medium_amethyst_bud",
+						"probability": 0.3
+					},
+					"output_state": {
+						"Name": "minecraft:small_amethyst_bud"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "minecraft:medium_amethyst_bud",
+						"probability": 0.3
+					},
+					"output_state": {
+						"Name": "minecraft:large_amethyst_bud"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "minecraft:medium_amethyst_bud",
+						"probability": 0.2
+					},
+					"output_state": {
+						"Name": "minecraft:amethyst_cluster"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "minecraft:glow_lichen",
+						"probability": 1.0
+					},
+					"output_state": {
+						"Name": "minecraft:air"
+					}
+				}
+			]
+		}
+	]
+}

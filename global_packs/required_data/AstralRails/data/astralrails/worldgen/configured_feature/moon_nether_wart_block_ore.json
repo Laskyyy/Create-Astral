@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 2,
+    "xz_spread": 16,
+    "y_spread": 16,
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:noise_provider",
+            "seed": 0,
+            "noise": {
+              "firstOctave": -5,
+              "amplitudes": [
+                1,
+                1
+              ]
+            },
+            "scale": 1,
+            "states": [
+              {
+                "Name": "minecraft:nether_wart_block"
+              }
+            ]
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:soul_soil"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
