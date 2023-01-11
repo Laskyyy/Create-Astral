@@ -422,7 +422,7 @@ function lizardGrinderCrushingRework(event) {
   event.remove({type: 'techreborn:grinder', output:'#c:concrete_powder'});
   event.remove({type: 'techreborn:grinder', input: '#c:sandstone'});
   
-  // Remove grinder recipes that either have a crushing recipe, or doesn't make sense to grind
+  // Remove grinder recipes that either have a unique crushing recipe, or doesn't make sense to grind
   event.remove({type: 'techreborn:grinder', input: '#minecraft:wool'});
   event.remove({type: 'techreborn:grinder', input: 'minecraft:gravel'});
   event.remove({type: 'techreborn:grinder', input: 'minecraft:obsidian'});
@@ -430,6 +430,9 @@ function lizardGrinderCrushingRework(event) {
   event.remove({type: 'techreborn:grinder', input: 'minecraft:glowstone'});
   event.remove({type: 'techreborn:grinder', input: 'ad_astra:steel_block'});
   event.remove({type: 'techreborn:grinder', input: 'createastral:bronze_block'});
+  event.remove({type: 'techreborn:grinder', input: 'minecraft:andesite'});
+  event.remove({type: 'techreborn:grinder', input: 'minecraft:diorite'});
+  event.remove({type: 'techreborn:grinder', input: 'minecraft:granite'});
 
   // Remove recipes that clutter without adding enough value
   event.remove({type: 'techreborn:grinder', output: 'techreborn:saw_small_dust'});
@@ -488,8 +491,6 @@ function lizardGrinderCrushingRework(event) {
     ], 'techreborn:deepslate_' + ore + '_ore');
   }
 
-  
-
   // Add crushing unique crushing recipes to grinder
   // 0: input / 1: output amount / 2: output / 3: custom time / 4: custom power
   // NOTE: some crushing recipes are auto-generated from milling recipes, which means not all these recipes will be removed.
@@ -531,26 +532,30 @@ function lizardGrinderCrushingRework(event) {
   event.remove({ type: 'create:crushing', input: 'minecraft:bone' });
   event.remove({ type: 'create:crushing', input: 'minecraft:lapis_lazuli' });
   event.remove({ type: 'create:crushing', input: 'minecraft:diamond' });
-
-  // event.custom({
-  //   "type": "techreborn:compressor",
-  //   "power": 10,
-  //   "time": 600,
-  //   "ingredients": [
-  //     {
-  //       "item": "create:sturdy_sheet",
-  //       "count": 16
-  //     }
-  //   ],
-  //   "results": [
-  //     {
-  //       "item": "ad_astra:rocket_fin",
-  //       "count": 1
-  //     }
-  //   ]
-  // })
-
+  event.remove({ type: 'create:crushing', input: 'minecraft:diorite' });
+  event.remove({ type: 'create:crushing', input: 'minecraft:granite' });
+  event.remove({ type: 'create:crushing', input: 'minecraft:andesite' });
 } 
+
+function lizardGeologyAlchemyChanges(event) {
+  // Diorite, Granite, and Andesite crushing
+  event.recipes.createCrushing([
+    'minecraft:quartz',
+    Item.of('2x techreborn:diorite_dust').withChance(.75),
+    Item.of('minecraft:quartz').withChance(.25),
+  ], 'minecraft:diorite');
+
+  event.recipes.createCrushing([
+    'minecraft:red_sand',
+    Item.of('2x techreborn:granite_dust').withChance(.75),
+    Item.of('minecraft:red_sand').withChance(.25),
+  ], 'minecraft:granite');
+
+  event.recipes.createCrushing([
+    'minecraft:cobblestone',
+    Item.of('2x techreborn:andesite_dust').withChance(.75)
+  ], 'minecraft:andesite');
+}
 
 // Lasky - feel free to move the code in here to more appropriate places, I just wanted
 //  to keep all my changes together
@@ -562,6 +567,7 @@ function lizardChanges(event) {
   lizardCH3Biofuel(event);
   lizardCH3Concrete(event);
   lizardGrinderCrushingRework(event);
+  lizardGeologyAlchemyChanges(event);
 }
 
 
