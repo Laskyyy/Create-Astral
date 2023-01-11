@@ -524,11 +524,7 @@ onEvent('recipes', event => {
 	event.remove({output: 'create:electron_tube'})
 	event.remove({output: 'minecraft:ender_eye'})
   event.remove({input: 'minecraft:crying_obsidian'})
-	event.remove({output: 'bosses_of_mass_destruction:monolith_block'})
-	event.remove({output: 'bosses_of_mass_destruction:charged_ender_pearl'})
-	event.remove({output: 'bosses_of_mass_destruction:mob_ward'})
-	event.remove({output: 'bosses_of_mass_destruction:levitation_block'})
-	event.remove({output: 'bosses_of_mass_destruction:earthdive_spear'})
+
 	
 
 
@@ -1336,62 +1332,6 @@ event.recipes.createMechanicalCrafting('polaroidcamera:camera', [
   
 })
 
-	event.recipes.createMechanicalCrafting('bosses_of_mass_destruction:mob_ward', [
-  'B',
-  'C',
-  'D',
-  'A'
-], {
-  A: 'tconstruct:hepatizon_block',
-  B: 'bosses_of_mass_destruction:ancient_anima',
-  C: 'bosses_of_mass_destruction:obsidian_heart',
-  D: 'minecraft:crying_obsidian'
-  })
-  	event.recipes.createMechanicalCrafting('bosses_of_mass_destruction:monolith_block', [
-  'DDD',
-  'BCB',
-  'DBD',
-  'DAD'
-], {
-  A: 'tconstruct:hepatizon_block',
-  B: 'create:powdered_obsidian',
-  C: 'bosses_of_mass_destruction:obsidian_heart',
-  D: 'minecraft:obsidian'
-  })
-  
-  event.recipes.createMechanicalCrafting('bosses_of_mass_destruction:earthdive_spear', [
-  '   C',
-  '  B ',
-  ' A  ',
-  'A   '
-], {
-  A: 'campanion:wooden_rod',
-  B: 'bosses_of_mass_destruction:void_thorn',
-  C: 'bosses_of_mass_destruction:obsidian_heart',
-  })
-  
-	event.recipes.createMechanicalCrafting('bosses_of_mass_destruction:charged_ender_pearl', [
-  'BDD',
-  'DAD',
-  'DDC'
-], {
-  A: 'minecraft:ender_eye',
-  B: 'bosses_of_mass_destruction:blazing_eye',
-  C: 'bosses_of_mass_destruction:obsidian_heart',
-  D: 'minecraft:ender_pearl',
-  })
-  
-  event.recipes.createMechanicalCrafting('bosses_of_mass_destruction:levitation_block', [
-  ' C ',
-  'DBA',
-  'EEE'
-], {
-  A: 'createastral:blazing_mechanism',
-  B: 'bosses_of_mass_destruction:blazing_eye',
-  C: 'bosses_of_mass_destruction:ancient_anima',
-  D: 'createastral:navigation_mechanism',
-  E: 'minecraft:obsidian'
-  })
 
   event.recipes.createMechanicalCrafting('ad_astra:jet_suit', [
     '  F  ',
@@ -2377,10 +2317,7 @@ event.recipes.createHaunting([
   'create:electron_tube',
   'techreborn:insulated_copper_cable'
 ])
-	event.recipes.createMixing('4x bosses_of_mass_destruction:soul_star', [
-  '16x ad_astra:glacio_ice_shard_ore',
-  'minecraft:nether_star'
-])
+
 event.recipes.createMixing('tconstruct:seared_bricks', [
   '4x tconstruct:seared_brick',
   '#c:slimeballs'
