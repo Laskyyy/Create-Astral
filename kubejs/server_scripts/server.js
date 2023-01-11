@@ -433,6 +433,9 @@ function lizardGrinderCrushingRework(event) {
   event.remove({type: 'techreborn:grinder', input: 'minecraft:andesite'});
   event.remove({type: 'techreborn:grinder', input: 'minecraft:diorite'});
   event.remove({type: 'techreborn:grinder', input: 'minecraft:granite'});
+  event.remove({type: 'techreborn:grinder', input: 'minecraft:netherrack'});
+  event.remove({type: 'techreborn:grinder', input: 'minecraft:warped_nylium'});
+  event.remove({type: 'techreborn:grinder', input: 'minecraft:crimson_nylium'});
 
   // Remove recipes that clutter without adding enough value
   event.remove({type: 'techreborn:grinder', output: 'techreborn:saw_small_dust'});
@@ -555,6 +558,31 @@ function lizardGeologyAlchemyChanges(event) {
     'minecraft:cobblestone',
     Item.of('2x techreborn:andesite_dust').withChance(.75)
   ], 'minecraft:andesite');
+
+  // Netherrack crushing rework
+  event.remove({ type: 'create:crushing', input: 'minecraft:netherrack' });
+
+  event.recipes.createCrushing([
+    'techreborn:netherrack_dust',
+    Item.of('techreborn:netherrack_dust').withChance(.5)
+  ], 'minecraft:netherrack');
+  event.recipes.createCrushing([
+    'techreborn:netherrack_dust',
+    Item.of('techreborn:netherrack_dust').withChance(.5),
+    Item.of('minecraft:warped_fungus').withChance(.1)
+  ], 'minecraft:warped_nylium');
+  event.recipes.createCrushing([
+    'techreborn:netherrack_dust',
+    Item.of('techreborn:netherrack_dust').withChance(.5),
+    Item.of('minecraft:crimson_fungus').withChance(.1)
+  ], 'minecraft:crimson_nylium');
+
+  // Cheeky :)
+  event.recipes.createFilling('create:cinder_flour', [
+		'techreborn:netherrack_dust',
+		{ fluid: 'minecraft:water', amount: FULL_BUCKET_AMMOUNT / 4 }
+	]);
+
 }
 
 // Lasky - feel free to move the code in here to more appropriate places, I just wanted
