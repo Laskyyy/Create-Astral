@@ -9,7 +9,8 @@ console.info('Welcome to white space.')
 
 ///// DIAMONDS REQUIRE DIAMOND TIER TO MINE (IT MAKES SENSE) /////
 
-
+// Change this constant to change the chance of bonus ore crushing provides
+const BONUS_CRUSH_ORE = .33; 
 
 onEvent('tags.blocks', event => {
   event.remove('minecraft:needs_iron_tool', 'minecraft:diamond_ore')
@@ -27,6 +28,8 @@ var INGOT_FLUID_AMMOUNT = 9000;
 // Includes some "ore alchemy" and other misc blocks like andeste alloy blocks
 function lizardMiscChanges(event) {
   event.replaceInput('create:powdered_obsidian', '#c:dusts/obsidian');
+  event.replaceInput('techreborn:obsidian_dust', '#c:dusts/obsidian');
+  event.replaceInput('createaddition:diamond_grit', 'techreborn:diamond_dust');
 
   // Manual dripstone
 	event.shapeless('minecraft:dripstone_block', [
@@ -408,6 +411,146 @@ function lizardCH3Concrete(event) {
   });
 }
 
+function lizardGrinderCrushingRework(event) {
+
+  // Remove all block techreborn grinding recipes
+  event.remove({type: 'techreborn:grinder', input: '#c:ores'});
+  event.remove({type: 'techreborn:grinder', input: '#c:storage_blocks'});
+  
+  // I'm not giving these recipes below to crushing wheel (they're kind of redundant)
+  event.remove({type: 'techreborn:grinder', input: '#techreborn:storage_blocks'});
+  event.remove({type: 'techreborn:grinder', output:'#c:concrete_powder'});
+  event.remove({type: 'techreborn:grinder', input: '#c:sandstone'});
+  
+  // Remove grinder recipes that either have a crushing recipe, or doesn't make sense to grind
+  event.remove({type: 'techreborn:grinder', input: '#minecraft:wool'});
+  event.remove({type: 'techreborn:grinder', input: 'minecraft:gravel'});
+  event.remove({type: 'techreborn:grinder', input: 'minecraft:obsidian'});
+  event.remove({type: 'techreborn:grinder', input: 'minecraft:shroomlight'});
+  event.remove({type: 'techreborn:grinder', input: 'minecraft:glowstone'});
+  event.remove({type: 'techreborn:grinder', input: 'ad_astra:steel_block'});
+  event.remove({type: 'techreborn:grinder', input: 'createastral:bronze_block'});
+
+  // Remove recipes that clutter without adding enough value
+  event.remove({type: 'techreborn:grinder', output: 'techreborn:saw_small_dust'});
+  event.remove({type: 'techreborn:grinder', output: 'minecraft:sand'});
+  event.remove({type: 'techreborn:grinder', output: 'minecraft:red_sand'});
+
+  // Remove grinder calcite dust, add crushing recipe to just coral
+  event.remove({type: 'techreborn:grinder', input: '#techreborn:calcite_dust_material'});
+  event.recipes.createCrushing(['techreborn:calcite_dust'], '#coral_blocks');
+
+  // Replace grinder recipes with crushing recipes
+  const GRINDER_RECIPES_TO_BECOME_CRUSHING = [['minecraft:wet_sponge', '5x techreborn:sponge_piece'],
+    ['minecraft:prismarine_bricks', '7x minecraft:prismarine_shard'], ['minecraft:prismarine', '3x minecraft:prismarine_shard'],
+    ['minecraft:sea_lantern', '4x prismarine_crystals'], ['#c:basalt', 'techreborn:basalt_dust'],
+    ['minecraft:end_stone', 'techreborn:endstone_dust']
+  ];
+  for (let recipe of GRINDER_RECIPES_TO_BECOME_CRUSHING) {
+    event.remove({type: 'techreborn:grinder', input: recipe[0]})
+    event.recipes.createCrushing([recipe[1]], recipe[0]);
+  }
+  
+  // Replace all techreborn ores to require the crushing wheel for dusts
+  const TECHREBORN_RANDOM_ORE_NEED_CRUSHING = ['sapphire', 'bauxite', 'cinnabar', 'ruby', 'galena', 'peridot', 'sodalite', 'pyrite', 'cinnabar', 'sphalerite'];
+  const TECHREBORN_RANDOM_ORE_NO_DEEPSLATE = ['pyrite', 'cinnabar', 'sphalerite'];
+  // Todo: use tags so there's no need for this second array?
+
+  for (let ore of TECHREBORN_RANDOM_ORE_NEED_CRUSHING) {
+    event.remove({type: 'techreborn:grinder', input: 'techreborn:' + ore + '_ore' });
+    event.recipes.createCrushing([
+      'techreborn:' + ore + '_dust',
+      Item.of('techreborn:' + ore + '_dust').withChance(.8)
+    ], 'techreborn:' + ore + '_ore');
+    
+    // If it doesn't find the ore listed in "no deepslate", repeat the above operations for the deepslate variation
+    if (!TECHREBORN_RANDOM_ORE_NO_DEEPSLATE.find(e => e == ore)) {
+      event.remove({type: 'techreborn:grinder', input: 'techreborn:deepslate_' + ore + '_ore' });
+      event.recipes.createCrushing([
+        'techreborn:' + ore + '_dust',
+        Item.of('techreborn:' + ore + '_dust').withChance(.8)
+      ], 'techreborn:deepslate_' + ore + '_ore');
+    }
+  }
+  
+  // Replace the ore BLOCKS (ie the blocks found in the ground) with crushing recipes to produce raw ore instead of
+  //  grinder recipes
+  const TECHREBORN_PRODUCTION_ORE_NEED_CRUSHING = ['silver', 'tin', 'lead'];
+  for (let ore of TECHREBORN_PRODUCTION_ORE_NEED_CRUSHING) {
+    event.remove({type: 'techreborn:grinder', input: 'techreborn:' + ore + '_ore'});
+    event.remove({type: 'techreborn:grinder', input: 'techreborn:deepslate_' + ore + '_ore'});
+
+    event.recipes.createCrushing([
+      '2x techreborn:raw_' + ore
+    ], 'techreborn:' + ore + '_ore');
+    event.recipes.createCrushing([
+      '2x techreborn:raw_' + ore
+    ], 'techreborn:deepslate_' + ore + '_ore');
+  }
+
+  
+
+  // Add crushing unique crushing recipes to grinder
+  // 0: input / 1: output amount / 2: output / 3: custom time / 4: custom power
+  // NOTE: some crushing recipes are auto-generated from milling recipes, which means not all these recipes will be removed.
+  //  They may remove upgraded crushing recipes though. The quest book will make it clear that
+  //  some milling recipes may be upgraded by the grinder instead of the crushing wheel.
+  const DEFAULT_GRIND_TIME = 100; // five seconds
+  const DEFAULT_GRIND_POWER = 5;  
+  const CRUSHING_RECIPES_TO_BECOME_GRINDING = [
+    ['minecraft:clay_ball', 1, 'techreborn:clay_dust', undefined, undefined], // showing the 4th and 5th for demonstration
+    ['minecraft:amethyst_cluster', 7, 'minecraft:amethyst_shard'],
+    ['minecraft:prismarine_crystals', 2, 'minecraft:quartz'],
+    ['minecraft:saddle', 3, 'minecraft:leather'],
+    ['minecraft:wheat', 3, 'create:wheat_flour'],
+    ['minecraft:ender_pearl', 2, 'ae2:ender_dust'],
+    ['tconstruct:necrotic_bone', 6, 'minecraft:bone_meal']
+  ];
+
+  for (let recipe of CRUSHING_RECIPES_TO_BECOME_GRINDING) {
+    // event.remove({ type:'create:crushing', input: recipe[0] });
+    event.remove({ type: 'create:crushing', input: recipe[0] });
+    event.custom({
+      type: 'techreborn:grinder',
+      time: recipe[3] || DEFAULT_GRIND_TIME,
+      power: recipe[4] || DEFAULT_GRIND_POWER,
+
+      ingredients: [{
+        item: recipe[0],
+        count: 1
+      }],
+      results: [{
+        item: recipe[2],
+        count: recipe[1],
+      }]
+    });
+  }
+
+  // Remove crushing recipes that already have a grinder recipe
+  event.remove({ type: 'create:crushing', input: 'minecraft:blaze_rod' });
+  event.remove({ type: 'create:crushing', input: 'minecraft:bone' });
+  event.remove({ type: 'create:crushing', input: 'minecraft:lapis_lazuli' });
+  event.remove({ type: 'create:crushing', input: 'minecraft:diamond' });
+
+  // event.custom({
+  //   "type": "techreborn:compressor",
+  //   "power": 10,
+  //   "time": 600,
+  //   "ingredients": [
+  //     {
+  //       "item": "create:sturdy_sheet",
+  //       "count": 16
+  //     }
+  //   ],
+  //   "results": [
+  //     {
+  //       "item": "ad_astra:rocket_fin",
+  //       "count": 1
+  //     }
+  //   ]
+  // })
+
+} 
 
 // Lasky - feel free to move the code in here to more appropriate places, I just wanted
 //  to keep all my changes together
@@ -418,6 +561,7 @@ function lizardChanges(event) {
   lizardCH3Changes(event);
   lizardCH3Biofuel(event);
   lizardCH3Concrete(event);
+  lizardGrinderCrushingRework(event);
 }
 
 
@@ -2217,9 +2361,9 @@ event.recipes.createMixing('8x tconstruct:grout', [
     'create:crushed_tin_ore',
     Item.of('minecraft:iron_nugget').withChance(1),
   ], 'techreborn:raw_tin')
-  event.recipes.createCrushing([
-    'techreborn:clay_dust'
-  ], 'minecraft:clay_ball')
+  // event.recipes.createCrushing([
+  //   'techreborn:clay_dust'
+  // ], 'minecraft:clay_ball')
   event.recipes.createCrushing([
     'create:crushed_silver_ore',
     Item.of('create:experience_nugget').withChance(0.75),
