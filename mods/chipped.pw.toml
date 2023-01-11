@@ -1,14 +1,14 @@
 name = "Chipped"
-filename = "chipped-2.0.0-fabric.jar"
+filename = "chipped-fabric-1.18.2-2.0.1.jar"
 side = "both"
 
 [download]
 mode = "metadata:curseforge"
 url = ""
 hash-format = "sha1"
-hash = "fd5f4ccb561ea6e703fb02027f24729500df83c2"
+hash = "f8854623dc65561a5af58adf422439b9d3e2aa74"
 
 [update]
 [update.curseforge]
-file-id = 4020978
+file-id = 4293292
 project-id = 456956
