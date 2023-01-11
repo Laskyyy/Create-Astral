@@ -51,8 +51,7 @@
     [
       "minecraft:large_dripstone",
       "minecraft:dripstone_cluster",
-      "minecraft:pointed_dripstone",
-      "minecraft:lake_lava"
+      "minecraft:pointed_dripstone"
     ]
   ]
 }
