@@ -70,7 +70,8 @@
       "minecraft:ore_gold_nether",
       "minecraft:ore_quartz_nether",
       "minecraft:ore_ancient_debris_large",
-      "minecraft:ore_debris_small"
+      "minecraft:ore_debris_small",
+       "minecraft:lake_lava"
     ]
   ],
   "spawners": {

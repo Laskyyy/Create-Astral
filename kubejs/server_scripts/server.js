@@ -1413,6 +1413,17 @@ event.recipes.createMechanicalCrafting('polaroidcamera:camera', [
   
     })
 
+    event.recipes.createMechanicalCrafting('createastral:astral_singularity', [
+      'DC',
+      'CB',
+      
+    ], {
+      B: 'ae2:singularity',
+      C: 'createastral:subatomic_ingot',
+      D: 'kubejs:plasma_fluid_bucket'
+  
+    })
+
     
 
 ///COMPUTERCRAFT FIXES
