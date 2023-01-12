@@ -586,7 +586,7 @@ function lizardGeologyAlchemyChanges(event) {
   // Add Calcite recipe
   event.recipes.createCompacting('minecraft:calcite', [
     '3x minecraft:bone_meal',
-    'minecraft:stone',
+    'minecraft:gravel',
     { fluid: 'minecraft:lava', amount: FULL_BUCKET_AMMOUNT / 10 }
   ]);
 
@@ -658,9 +658,10 @@ function lizardGeologyAlchemyChanges(event) {
   // Todo: lava press 
   event.recipes.createCompacting('minecraft:granite', [
     'minecraft:diorite',
-    '2x minecraft:flint',
-    'techreborn:netherrack_dust'
-	]).heated();
+    'minecraft:flint',
+    'techreborn:netherrack_dust',
+    { fluid: 'minecraft:lava', amount: FULL_BUCKET_AMMOUNT / 10 }
+	]);
   
   // Nerf vanilla granite recipe
   event.remove({mod: 'minecraft', output: 'minecraft:granite'});
@@ -696,7 +697,7 @@ function lizardGeologyAlchemyChanges(event) {
 
   // New red sand washing for tin
   event.recipes.createSplashing([
-    Item.of('2x techreborn:tin_nugget').withChance(.12),
+    Item.of('techreborn:tin_nugget').withChance(.33),
     Item.of('minecraft:dead_bush').withChance(.12)
   ], 'minecraft:red_sand');
 
