@@ -168,7 +168,7 @@ function lizardCH2Changes(event) {
     'IFI'
   ], {
     I: 'create:iron_sheet',
-    O: 'ad_astra:oxygen_tanks',
+    O: 'ad_astra:oxygen_tank',
     P: 'create:smart_fluid_pipe',
     T: 'create:fluid_tank',
     F: 'ad_astra:engine_fan'
@@ -947,7 +947,7 @@ event.recipes.createMixing('techreborn:nuke', [
   {fluid: 'kubejs:plasma_fluid', amount: 81000},
   '3x createastral:subatomic_ingot',
   'create:linked_controller'
-]).superheated.processingTime(500)
+]).superheated().processingTime(500)
 
 event.recipes.createSequencedAssembly([ // begin
 'create:copper_casing', // output
