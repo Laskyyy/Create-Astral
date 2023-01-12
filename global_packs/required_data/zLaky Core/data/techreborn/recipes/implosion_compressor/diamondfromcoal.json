@@ -1,0 +1,25 @@
+{
+  "type": "techreborn:implosion_compressor",
+  "power": 60,
+  "time": 1000,
+  "ingredients": [
+	{
+	  "count": 64,
+	  "item": "techreborn:coal_dust"
+	},
+    {
+      "item": "minecraft:tnt",
+      "count": 4
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:diamond",
+      "count": 8
+    },
+    {
+      "item": "techreborn:dark_ashes_dust",
+      "count": 8
+    }
+  ]
+}

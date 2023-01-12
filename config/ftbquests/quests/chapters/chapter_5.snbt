@@ -279,7 +279,7 @@
 			}]
 		}
 		{
-			title: "A blast furnace for forging steel alloy."
+			title: "A blast furnace for forging steel alloy more efficiently."
 			x: -6.0d
 			y: 3.5d
 			description: [
@@ -595,8 +595,8 @@
 		}
 		{
 			title: "Infernal Spire Processing."
-			x: -10.799999999999999d
-			y: -0.6d
+			x: -10.299999999999999d
+			y: -0.09999999999999998d
 			shape: "diamond"
 			description: ["Crushing Infernal Spire produces netherite scrap nuggets at a low rate."]
 			hide_dependency_lines: true
@@ -611,8 +611,8 @@
 			}]
 		}
 		{
-			x: -11.5d
-			y: 0.0d
+			x: -11.0d
+			y: 0.5d
 			shape: "diamond"
 			dependencies: ["520A09EF39A1BF5D"]
 			secret: true
@@ -835,6 +835,36 @@
 				id: "65AE540EDF7157E7"
 				type: "item"
 				item: "techreborn:overclocker_upgrade"
+			}]
+		}
+		{
+			title: "Got coal lying around?"
+			x: -3.5d
+			y: 4.5d
+			subtitle: "Let's make some use out of this..."
+			dependencies: ["33DBA03CF188DF0B"]
+			id: "2E320829DF95EB8E"
+			tasks: [{
+				id: "1081B553AE56D482"
+				type: "item"
+				item: "techreborn:implosion_compressor"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 4.5d
+			dependencies: ["2E320829DF95EB8E"]
+			id: "6FC315C473D123F8"
+			tasks: [{
+				id: "366385021857C6CD"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "tconstruct:molten_diamond"
+					}
+				}
 			}]
 		}
 	]

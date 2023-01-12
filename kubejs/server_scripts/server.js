@@ -844,6 +844,22 @@ onEvent('recipes', event => {
   event.replaceInput({mod: 'techreborn', output: 'techreborn:advanced_drill'}, 'ad_astra:compressed_calorite', 'techreborn:lead_plate')
   event.replaceInput({mod: 'techreborn', output: 'techreborn:advanced_chainsaw'}, 'ad_astra:compressed_calorite', 'techreborn:lead_plate')
   event.replaceInput({mod: 'techreborn', output: 'techreborn:advanced_jackhammer'}, 'ad_astra:compressed_calorite', 'techreborn:lead_plate')
+  event.remove({output: 'techreborn:data_storage_chip'})
+    event.remove({output: 'techreborn:player_detector'})
+  event.replaceInput('techreborn:energy_flow_chip', 'techreborn:data_storage_chip')
+  event.replaceInput({output: 'techreborn:nanosaber'}, 'create:precision_mechanism', 'create:refined_radiance')
+
+  	event.recipes.createMechanicalCrafting('techreborn:data_storage_chip', [
+  'A',
+  'C',
+  'B'
+], {
+  A: 'techreborn:peridot_plate',
+  B: 'techreborn:iridium_alloy_plate',
+  C: 'techreborn:industrial_circuit',
+
+  
+})
 
 
 

@@ -229,11 +229,6 @@ onEvent('block.registry', event => {
        .displayName('Copper Coil Block')
        .tagBlock('minecraft:mineable/pickaxe') 
 
-    event.create('createastral:ender_heating_coil')
-  	   .material('lantern')
-       .hardness(3)
-       .displayName('Ender Coil Block')
-       .tagBlock('minecraft:mineable/pickaxe')
 
     event.create('createastral:blast-resistant_concrete_slab', 'slab').hardness(4).resistance(1200).tagBlock('minecraft:mineable/pickaxe').textureAll('createastral:block/blast_side').texture('up','createastral:block/blast_top').texture('down','createastral:block/blast_top').material('stone')
     event.create('createastral:blast-resistant_concrete', 'basic').hardness(4).resistance(1200).tagBlock('minecraft:mineable/pickaxe').textureAll('createastral:block/blast_side').texture('up','createastral:block/blast_top').texture('down','createastral:block/blast_top').material('stone')
@@ -338,10 +333,10 @@ onEvent('item.registry.armor_tiers', event => {
   })
   event.add('sturdyarmor', tier => {
     tier.durabilityMultiplier = 300 // Each slot will be multiplied with [13, 15, 16, 11]
-    tier.slotProtections = [4, 6, 5, 4]
+    tier.slotProtections = [3, 5, 5, 4]
     tier.enchantmentValue = 0
     tier.equipSound = 'minecraft:item.armor.equip_iron'
-    tier.repairIngredient = '#c:steel_ingots'
+    tier.repairIngredient = 'create:sturdy_sheet'
     tier.toughness = 5.0 // diamond has 2.0, netherite 3.0
     tier.knockbackResistance = 0.2
   })
@@ -350,7 +345,7 @@ onEvent('item.registry.armor_tiers', event => {
     tier.slotProtections = [5, 9, 8, 5]
     tier.enchantmentValue = 99
     tier.equipSound = 'minecraft:item.armor.equip_iron'
-    tier.repairIngredient = '#c:steel_ingots'
+    tier.repairIngredient = 'create:refined_radiance'
     tier.toughness = 3.0 // diamond has 2.0, netherite 3.0
     tier.knockbackResistance = 0.2
   })

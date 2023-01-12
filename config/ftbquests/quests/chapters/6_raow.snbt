@@ -156,8 +156,8 @@
 		}
 		{
 			title: "Ores of mercury"
-			x: 3.5d
-			y: -5.0d
+			x: 6.0d
+			y: -3.0d
 			dependencies: ["7A4255522DA6FEB7"]
 			id: "4329020373E27B1F"
 			tasks: [
@@ -175,7 +175,7 @@
 		}
 		{
 			title: "Go! Mega Drill!"
-			x: 0.5d
+			x: 0.0d
 			y: 1.0d
 			dependencies: ["3705B91C0D4EA2A0"]
 			optional: true
@@ -194,7 +194,7 @@
 		}
 		{
 			title: "Go! Mega Chainsaw!"
-			x: 0.0d
+			x: -0.5d
 			y: 0.0d
 			dependencies: ["3705B91C0D4EA2A0"]
 			optional: true
@@ -213,7 +213,7 @@
 		}
 		{
 			title: "Go! Mega Jackhammer!"
-			x: 0.5d
+			x: 0.0d
 			y: -1.0d
 			dependencies: ["3705B91C0D4EA2A0"]
 			optional: true
@@ -245,32 +245,20 @@
 			}]
 		}
 		{
-			title: "Plate it up, as usual."
-			x: 4.0d
-			y: -2.0d
-			dependencies: ["7A4255522DA6FEB7"]
-			id: "26E14ABB9FB1F8EB"
-			tasks: [{
-				id: "17C15B60A64843ED"
-				type: "item"
-				item: "techreborn:iridium_alloy_plate"
-			}]
-		}
-		{
 			title: "Energy Flow Chips"
 			x: 2.25d
 			y: 0.0d
 			shape: "square"
 			dependencies: [
 				"11F776AD4AEA326A"
-				"26E14ABB9FB1F8EB"
+				"4347500C31C8D0DD"
 			]
 			size: 1.5d
 			id: "3705B91C0D4EA2A0"
 			tasks: [{
 				id: "7C490195DEDC649C"
 				type: "item"
-				item: "techreborn:energy_flow_chip"
+				item: "techreborn:data_storage_chip"
 			}]
 		}
 		{
@@ -397,8 +385,8 @@
 		}
 		{
 			title: "Producing Iridium raw ore from the blocks."
-			x: 6.0d
-			y: -2.25d
+			x: 2.25d
+			y: -3.75d
 			subtitle: "A fresh new multiblock can provide that very feature."
 			dependencies: ["7A4255522DA6FEB7"]
 			size: 1.5d
@@ -658,43 +646,19 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 10.5d
-			dependencies: ["3ED703EAA646A18A"]
-			id: "6DD209070CAB39D2"
-			tasks: [{
-				id: "57CFD54DCD962F7D"
-				type: "item"
-				item: "ad_astra:ostrum_block"
-			}]
-		}
-		{
-			x: 3.5d
-			y: 10.5d
-			dependencies: ["3ED703EAA646A18A"]
-			id: "2B33A0C8A849C319"
-			tasks: [{
-				id: "01A5B2A3BD93657E"
-				type: "item"
-				item: "ad_astra:calorite_block"
-			}]
-		}
-		{
+			title: "Become as gods."
 			x: 4.5d
 			y: 12.5d
 			dependencies: [
 				"3ED703EAA646A18A"
-				"2B33A0C8A849C319"
-				"6DD209070CAB39D2"
 				"46382C349512DBEE"
-				"16A2464A968635F7"
+				"585CEEAE5CADECA0"
 			]
 			id: "0CE73BAC9F3A9E03"
 			tasks: [{
-				id: "73E54650E0849724"
-				type: "checkmark"
-				title: "Unlimited... Power!!!"
-				icon: "createastral:astral_singularity"
+				id: "64E9C2EFB9D7FC1C"
+				type: "item"
+				item: "createastral:astral_singularity"
 			}]
 		}
 		{
@@ -721,9 +685,9 @@
 			}]
 		}
 		{
-			title: "Raw ore"
-			x: 2.0d
-			y: -3.5d
+			title: "How do I process raw iridium?"
+			x: 3.5d
+			y: -5.0d
 			dependencies: ["7A4255522DA6FEB7"]
 			id: "160490A7E60FC575"
 			tasks: [{
@@ -736,8 +700,7 @@
 			title: "Calorite Pins, placeholder"
 			x: 7.5d
 			y: -1.0d
-			hide_dependency_lines: true
-			dependencies: ["7A4255522DA6FEB7"]
+			dependencies: ["4329020373E27B1F"]
 			id: "3091F7AC37F848AD"
 			tasks: [{
 				id: "6B1169BFB796200B"
@@ -785,6 +748,61 @@
 				id: "73CE3A2BA3ACBC82"
 				type: "item"
 				item: "doodads:speed_boots"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -3.0d
+			dependencies: ["39B529A749BEC970"]
+			id: "1FFE36A644FA5491"
+			tasks: [{
+				id: "644587A8C9C3587B"
+				type: "item"
+				item: "create:veridium"
+			}]
+		}
+		{
+			icon: "create:crushing_wheel"
+			x: 3.0d
+			y: -2.5d
+			dependencies: ["1FFE36A644FA5491"]
+			id: "1B70BAF5B7B5ED0C"
+			tasks: [{
+				id: "79CDE6A5FA151389"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.0d
+			dependencies: ["1B70BAF5B7B5ED0C"]
+			id: "0E0C76625B24032F"
+			tasks: [{
+				id: "0B734A87872139D8"
+				type: "item"
+				item: "techreborn:peridot_dust"
+			}]
+		}
+		{
+			x: 2.230952380952367d
+			y: -1.6107142857142804d
+			dependencies: ["0E0C76625B24032F"]
+			id: "4347500C31C8D0DD"
+			tasks: [{
+				id: "09FA75F9B9A51AD9"
+				type: "item"
+				item: "techreborn:peridot_plate"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 11.0d
+			dependencies: ["16A2464A968635F7"]
+			id: "585CEEAE5CADECA0"
+			tasks: [{
+				id: "0EE894810AAD28C3"
+				type: "item"
+				item: "techreborn:nuke"
 			}]
 		}
 	]
