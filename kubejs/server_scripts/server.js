@@ -33,7 +33,7 @@ function lizardMiscChanges(event) {
 
 
 
-   // Remove Tech reborn's coal grinding recipe, make the crushing wheel required.
+  // Remove Tech reborn's coal grinding recipe, make the crushing wheel required.
   // TODO: implement "ore dust" idea.
   event.remove({type: 'techreborn:grinder', output: 'techreborn:coal_dust'});
   event.remove({type: 'techreborn:grinder', output: 'techreborn:charcoal_dust'});
@@ -212,7 +212,7 @@ function lizardCH3Changes(event) {
     'USU',
     'CMC'
   ], {
-    D: 'ad_astra:compressed_desh',
+    D: 'ad_astra:desh_ingot',
     S: 'createaddition:copper_spool',
     U: 'techreborn:copper_cable',
     C: 'createaddition:capacitor',
@@ -244,6 +244,19 @@ function lizardCH3Changes(event) {
     '#c:dusts/obsidian',
     '#c:dusts/obsidian'
   ]).heated().processingTime(700);
+
+  // De-gating chunk-loader, but then give it more difficult materials to balance it out
+  // Todo: make it require plates that require special dust crafting.
+  event.replaceInput({type: 'minecraft:crafting_shaped', output: 'techreborn:chunk_loader'}, 
+    'techreborn:industrial_machine_frame', 'techreborn:basic_machine_frame');
+  event.replaceInput({type: 'minecraft:crafting_shaped', output: 'techreborn:chunk_loader'}, 
+    'techreborn:coal_plate', 'techreborn:diamond_plate');
+  event.replaceInput({type: 'minecraft:crafting_shaped', output: 'techreborn:chunk_loader'}, 
+    'techreborn:coal_plate', 'techreborn:diamond_plate');
+  event.replaceInput({type: 'minecraft:crafting_shaped', output: 'techreborn:chunk_loader'}, 
+    'createastral:bronze_sheet', 'techreborn:electrum_plate');
+  event.replaceInput({type: 'minecraft:crafting_shaped', output: 'techreborn:chunk_loader'}, 
+    'create:golden_sheet', 'techreborn:emerald_plate');
 }
 
 function lizardCH3Biofuel(event) {
