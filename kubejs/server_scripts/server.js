@@ -838,7 +838,6 @@ onEvent('recipes', event => {
   event.replaceInput({output: 'gearreborn:hazmat_chestpiece'}, 'techreborn:reinforced_glass', '#c:glass')
   event.replaceOutput('techreborn:electronic_circuit', 'create:integrated_circuit')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:cupronickel_heating_coil', 'createastral:copper_heating_coil')
-  event.replaceInput({mod: 'techreborn'}, 'techreborn:peridot_plate', 'techreborn:emerald_plate')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:nichrome_heating_coil', 'createastral:ender_heating_coil')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:energy_crystal', 'create:precision')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:lapotron_crystal', 'create:precision_mechanism')
@@ -859,7 +858,7 @@ onEvent('recipes', event => {
   'C',
   'B'
 ], {
-  A: 'techreborn:peridot_plate',
+  A: 'techreborn:olivine_sheet',
   B: 'techreborn:iridium_alloy_plate',
   C: 'techreborn:industrial_circuit',
 
@@ -1504,6 +1503,9 @@ event.recipes.createPressing('techreborn:tin_plate', 'techreborn:tin_ingot')
 event.recipes.createPressing('techreborn:lead_plate', 'techreborn:lead_ingot')
 event.recipes.createPressing('techreborn:electrum_plate', 'techreborn:electrum_ingot')
 event.recipes.createPressing('create:lapis_sheet', 'minecraft:lapis_block')
+event.recipes.createCompacting('createastral:olivine_sheet', [
+  'techreborn:olivine_dust',
+]).superheated()
 
 
 
