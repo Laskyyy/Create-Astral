@@ -457,7 +457,8 @@ function lizardGrinderCrushingRework(event) {
       Item.of('techreborn:' + ore + '_dust').withChance(.8)
     ], 'techreborn:' + ore + '_ore');
     
-    // If it doesn't find the ore listed in "no deepslate", repeat the above operations for the deepslate variation
+    // If it doesn't find the ore listed in "no deepslate" (Therefore it has a deepslate version),
+    //  repeat the above operations for the deepslate variation
     if (!TECHREBORN_RANDOM_ORE_NO_DEEPSLATE.find(e => e == ore)) {
       event.remove({type: 'techreborn:grinder', input: 'techreborn:deepslate_' + ore + '_ore' });
       event.recipes.createCrushing([
@@ -662,7 +663,7 @@ function lizardGeologyAlchemyChanges(event) {
 
   // Crushing Veridium bonus gains + peridot dust for ch 4+
   event.recipes.createCrushing([
-    Item.of('2x techreborn:peridot_dust').withChance(.8),
+    Item.of('2x techreborn:olivine_dust').withChance(.8),
     Item.of('minecraft:raw_copper').withChance(.8),
     Item.of('create:copper_nugget').withChance(.8),
     Item.of('minecraft:clay_ball').withChance(.2)
