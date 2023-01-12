@@ -848,6 +848,9 @@ onEvent('recipes', event => {
     event.remove({output: 'techreborn:player_detector'})
   event.replaceInput('techreborn:energy_flow_chip', 'techreborn:data_storage_chip')
   event.replaceInput({output: 'techreborn:nanosaber'}, 'create:precision_mechanism', 'create:refined_radiance')
+  event.replaceInput({output: 'techreborn:industrial_grinder'}, 'techreborn:electronic_circuit', 'immersive_aircraft:engine')
+  event.replaceInput({output: 'techreborn:digital_display'}, 'minecraft:black_dye', 'techreborn:machine_parts')
+  event.replaceInput('techreborn:lapotronic_orb', 'immersive_aircraft:engine')
 
   	event.recipes.createMechanicalCrafting('techreborn:data_storage_chip', [
   'A',
@@ -932,6 +935,12 @@ onEvent('recipes', event => {
 event.recipes.createMixing('techreborn:rubber', [
   'techreborn:sap'
 ]).processingTime(50)
+
+event.recipes.createMixing('3x techreborn:machine_parts', [
+  'techreborn:steel_plate',
+  'techreborn:carbon_mesh',
+  '8x #c:wires'
+]).processingTime(400)
 
 event.recipes.createSequencedAssembly([ // begin
 'create:copper_casing', // output
@@ -1426,17 +1435,6 @@ event.recipes.createMechanicalCrafting('polaroidcamera:camera', [
       B: 'techreborn:insulated_hv_cable',
       C: 'create:sturdy_sheet',
       D: 'techreborn:advanced_machine_casing'
-  
-    })
-
-    event.recipes.createMechanicalCrafting('createastral:astral_singularity', [
-      'DC',
-      'CB',
-      
-    ], {
-      B: 'ae2:singularity',
-      C: 'createastral:subatomic_ingot',
-      D: 'kubejs:plasma_fluid_bucket'
   
     })
 

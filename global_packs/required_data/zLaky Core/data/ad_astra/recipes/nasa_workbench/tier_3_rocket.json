@@ -18,7 +18,7 @@
 		},
 		{
 			"ingredient": {
-				"item": "ad_astra:steel_block"
+				"item": "techreborn:digital_display"
 			}
 		},
 		{
@@ -38,27 +38,27 @@
 		},
 		{
 			"ingredient": {
-				"item": "techreborn:lead_storage_block"
+				"item": "ad_astra:steel_block"
 			}
 		},
 		{
 			"ingredient": {
-				"item": "ad_astra:ostrum_tank"
+				"item": "immersvive_aircraft:engine"
 			}
 		},
 		{
 			"ingredient": {
-				"item": "ad_astra:ostrum_tank"
+				"item": "immersive_aircraft:engine"
 			}
 		},
 		{
 			"ingredient": {
-				"item": "techreborn:lead_storage_block"
+				"item": "ad_astra:steel_block"
 			}
 		},
 		{
 			"ingredient": {
-				"item": "ad_astra:ostrum_tank"
+				"item": "immersive_aircraft:engine"
 			}
 		},
 		{
@@ -68,7 +68,7 @@
 		},
 		{
 			"ingredient": {
-				"item": "ad_astra:ostrum_tank"
+				"item": "immersive_aircraft:engine"
 			}
 		}
 	],
