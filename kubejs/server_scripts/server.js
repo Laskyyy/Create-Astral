@@ -50,10 +50,10 @@ function lizardMiscChanges(event) {
   // Pre-crushing copper and zinc generation
   event.recipes.createMilling([
     Item.of('create:crushed_copper_ore').withChance(.4)
-  ], '#create:stone_types/veridium');
+  ], 'create:veridium');
   event.recipes.createMilling([
     Item.of('create:crushed_zinc_ore').withChance(.15)
-  ], '#create:stone_types/asurine');
+  ], 'create:asurine');
 
    // Remove Tech reborn's coal grinding recipe, make the crushing wheel required.
   // TODO: implement "ore dust" idea.
@@ -583,6 +583,152 @@ function lizardGeologyAlchemyChanges(event) {
 		{ fluid: 'minecraft:water', amount: FULL_BUCKET_AMMOUNT / 4 }
 	]);
 
+  // Add Calcite recipe
+  event.recipes.createCompacting('minecraft:calcite', [
+    '3x minecraft:bone_meal',
+    'minecraft:stone',
+    { fluid: 'minecraft:lava', amount: FULL_BUCKET_AMMOUNT / 10 }
+  ]);
+
+  // Add limestone recipe
+  event.recipes.createCompacting('create:limestone', [
+    '2x minecraft:pointed_dripstone',
+    '2x ad_astra:moon_sand',
+    '2x minecraft:flint',
+    { fluid: 'minecraft:lava', amount: FULL_BUCKET_AMMOUNT/10 }
+  ]);
+
+  // Add lime
+  event.recipes.createCrushing([
+    Item.of('2x createastral:lime').withChance(.75),
+    Item.of('minecraft:clay_ball').withChance(.2),
+  ], 'create:limestone');
+  
+  // Wash lime for silver
+  event.recipes.createSplashing([
+    Item.of('techreborn:silver_nugget').withChance(.15),
+    Item.of('techreborn:raw_silver').withChance(.02)
+  ], 'createastral:lime');
+
+  // Remove Create's default crushing recipes for asurine and veridium (I thought we added them??)
+  event.remove({type: 'create:crushing', input: 'create:asurine'});
+  event.remove({type: 'create:crushing', input: 'create:veridium'});
+
+  // Crushing Asurine bonus gains + lazurite (for lapis lazuli)
+  event.recipes.createCrushing([
+    Item.of('2x techreborn:lazurite_dust').withChance(.8),
+    Item.of('create:zinc_nugget').withChance(.3),
+    Item.of('create:raw_zinc').withChance(.3),
+    Item.of('minecraft:clay_ball').withChance(.2)
+  ], 'create:asurine');
+
+  // Crushing Veridium bonus gains + peridot dust for ch 4+
+  event.recipes.createCrushing([
+    Item.of('2x techreborn:peridot_dust').withChance(.8),
+    Item.of('minecraft:raw_copper').withChance(.8),
+    Item.of('create:copper_nugget').withChance(.8),
+    Item.of('minecraft:clay_ball').withChance(.2)
+  ], 'create:veridium');
+
+  // Lapis recipe
+  event.recipes.createCompacting('minecraft:lapis_lazuli', [
+    '3x techreborn:lazurite_dust',
+    '2x minecraft:gunpowder',
+    '2x minecraft:iron_nugget',
+    { fluid: 'minecraft:lava', amount: FULL_BUCKET_AMMOUNT / 30 }
+  ]);
+
+  // Soul sand recipe
+  event.recipes.createHaunting('minecraft:soul_sand', 'minecraft:sand');
+
+  // Replace Create's default washing recipes, encourage crushing diorite for quartz
+  // event.remove({type: 'create:fan_washing', input: 'minecraft:soul_soil'});
+  event.remove({type: 'create:splashing', input: 'minecraft:soul_sand'});
+  event.recipes.createSplashing([
+    Item.of('minecraft:gold_nugget').withChance(.12),
+    Item.of('minecraft:quartz').withChance(.01),
+  ], 'minecraft:soul_sand');
+  event.recipes.createSplashing([
+    Item.of('minecraft:gold_nugget').withChance(.12),
+    Item.of('minecraft:quartz').withChance(.01),
+  ], 'minecraft:soul_soil');
+
+  
+  // New granite recipe that's more sustainable than shaping diorite with quartz
+  // Todo: lava press 
+  event.recipes.createCompacting('minecraft:granite', [
+    'minecraft:diorite',
+    '2x minecraft:flint',
+    'techreborn:netherrack_dust'
+	]).heated();
+  
+  // Nerf vanilla granite recipe
+  event.remove({mod: 'minecraft', output: 'minecraft:granite'});
+  event.remove({mod: 'tconstruct', output: 'minecraft:granite'})
+  event.shapeless('minecraft:granite', [
+    '1x minecraft:diorite',
+    '3x minecraft:quartz'
+  ]);
+  event.custom({
+    type: 'tconstruct:casting_basin',
+    cast: {
+      item: 'minecraft:diorite'
+    },
+    cast_consumed: true,
+    fluid: {
+      name: "tconstruct:molten_quartz",
+      amount: 3 * FULL_BUCKET_AMMOUNT / 10 ,
+    },
+    result: "minecraft:granite",
+    cooling_time: 140,
+  });
+
+  // Nerf vanilla andesite shapeless
+  event.remove({mod: 'minecraft', input: 'minecraft:diorite', output: 'minecraft:andesite'});
+  event.shapeless('minecraft:andesite', [
+    '2x minecraft:diorite',
+    '4x minecraft:gravel'
+  ]);;
+
+  // Remove vanilla red-sand so it can produce tin instead, and the red sand haunting infinite loop
+  event.remove({type: 'create:splashing', input: 'minecraft:red_sand' });
+  event.remove({type: 'create:haunting', input: 'minecraft:red_sand' })
+
+  // New red sand washing for tin
+  event.recipes.createSplashing([
+    Item.of('2x techreborn:tin_nugget').withChance(.12),
+    Item.of('minecraft:dead_bush').withChance(.12)
+  ], 'minecraft:red_sand');
+
+  // Keep this, let people decide which path to produce diorite is
+  // event.remove({type: 'create:compacting', output: 'minecraft:diorite' });
+  
+  // Nerf vanilla diorite
+  event.remove({mod: 'minecraft', input: 'minecraft:cobblestone', output: 'minecraft:diorite'});
+  event.shapeless('minecraft:diorite', ['minecraft:cobblestone', '6x minecraft:quartz']);
+  // I'm too confused to replace the tconstruct recipe
+  event.remove({type: 'tconstruct:casting_basin', output: 'minecraft:diorite'});
+
+  // Not happy with this, can't think of a better way to utilize basalt though. Might come back to this.
+  event.custom({
+    type: 'tconstruct:casting_basin',
+    cast: {
+      item: 'minecraft:basalt'
+    },
+    cast_consumed: true,
+    fluid: {
+      name: "tconstruct:liquid_soul",
+      amount: FULL_BUCKET_AMMOUNT,
+    },
+    result: "minecraft:diorite",
+    cooling_time: 80,
+  });
+
+  // Deeplate flint garbage
+  event.recipes.createCompacting('minecraft:cobbled_deepslate', [
+    '8x minecraft:flint',
+    'minecraft:gravel'
+  ]);
 }
 
 // Lasky - feel free to move the code in here to more appropriate places, I just wanted
@@ -2586,7 +2732,7 @@ event.recipes.createMixing('tconstruct:seared_bricks', [
 
 ////TECH REBORN CASINGS AND FRAMES ADJUSTMENTS + OTHER JSON FORMAT RECIPES////
 
-
+// WHY THIS LINE
 event.custom(
   {"type":"create:sequenced_assembly","ingredient":{"tag":"c:plates/gold"},"transitionalItem":{"item":"create:incomplete_precision_mechanism"},"sequence":[{"type":"create:deploying","ingredients":[{"item":"create:incomplete_precision_mechanism"},{"item":"create:cogwheel"}],"results":[{"item":"create:incomplete_precision_mechanism"}]},{"type":"create:deploying","ingredients":[{"item":"create:incomplete_precision_mechanism"},{"item":"create:large_cogwheel"}],"results":[{"item":"create:incomplete_precision_mechanism"}]},{"type":"create:deploying","ingredients":[{"item":"create:incomplete_precision_mechanism"},{"tag":"c:nuggets/iron"}],"results":[{"item":"create:incomplete_precision_mechanism"}]}],"results":[{"item":"create:precision_mechanism","chance":120.0},{"item":"create:golden_sheet","chance":8.0},{"item":"create:andesite_alloy","chance":8.0},{"item":"create:cogwheel","chance":5.0},{"item":"minecraft:gold_nugget","chance":3.0},{"item":"create:shaft","chance":2.0},{"item":"create:crushed_gold_ore","chance":2.0},{"item":"minecraft:iron_ingot"},{"item":"minecraft:clock"}],"loops":5})
 
