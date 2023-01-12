@@ -332,19 +332,15 @@ function lizardCH3Biofuel(event) {
 
 // This includes the launch pad recipe
 function lizardCH3Concrete(event) {
-  // Cement recipe
-  event.recipes.createMixing(Fluid.of('kubejs:blast-resistant_cement', FULL_BUCKET_AMMOUNT), [
-    {fluid: 'minecraft:water', amount: FULL_BUCKET_AMMOUNT },
-    '4x techreborn:steel_dust',
-    'create:limestone'
-  ]).processingTime(1000);
 
-  // I wonder if should even bother with the limstone recipe
+  // Cement recipe
+  // Todo: be not lazy and make it so all concrete powders require lime
   event.recipes.createMixing(Fluid.of('kubejs:blast-resistant_cement', FULL_BUCKET_AMMOUNT), [
+    '#c:concrete_powder',
+    '2x createastral:lime',
+    '3x techreborn:steel_dust',
     {fluid: 'minecraft:water', amount: FULL_BUCKET_AMMOUNT },
-    '4x techreborn:steel_dust',
-    '#c:concrete_powder'
-  ]).processingTime(1000);
+  ]).heated().processingTime(1000); // I don't know if heating it makes sense cause of water but it was screaming to be heated
 
   // Cement pouring recipe
   event.custom({
@@ -389,6 +385,7 @@ function lizardCH3Concrete(event) {
   });
 }
 
+// Todo: various tech reborn "gem" ores should give gems when crushed
 function lizardGrinderCrushingRework(event) {
 
   // Remove all block techreborn grinding recipes
