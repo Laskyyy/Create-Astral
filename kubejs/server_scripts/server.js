@@ -530,10 +530,35 @@ function lizardGeologyAlchemyChanges(event) {
   event.stonecutting('2x minecraft:pointed_dripstone', 'minecraft:dripstone_block');
 
   // More efficient pointed dripstone filling recipe
-  event.recipes.createFilling('4x minecraft:pointed_dripstone', [
+  event.recipes.createFilling('3x minecraft:pointed_dripstone', [
     'minecraft:calcite',
     {fluid: 'minecraft:water', amount: FULL_BUCKET_AMMOUNT / 2}
   ]);
+
+  // Using the grinder on individual pointed dripstones give you the best yields
+  // (1.33 for milling dripstone, ~2 per calcite for crushing dripstone, 3 per calcite if grinding pointed drip)
+  event.recipes.createCrushing([
+    'minecraft:clay_ball',
+    Item.of('minecraft:clay_ball').withChance(.5)
+  ], 'minecraft:dripstone_block');
+  
+  event.remove({type: 'techreborn:grinder', input: 'minecraft:pointed_dripstone'});
+  event.custom({
+    type: 'techreborn:grinder',
+    time: 100, // 5 seconds?
+    power: 5,
+
+    ingredients: [{
+      item: 'minecraft:pointed_dripstone',
+      count: 1
+    }],
+    results: [{
+      item: 'minecraft:clay_ball',
+      count: 1,
+    }]
+  });
+
+  // Todo: add back in coral grinder calcite dust recipe that was removed due to replacing pointed dripstone recipe
 
   // Pre-crushing copper and zinc generation
   event.recipes.createMilling([
