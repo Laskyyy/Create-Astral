@@ -944,7 +944,7 @@ event.recipes.createMixing('3x techreborn:machine_parts', [
 
 event.recipes.createMixing('techreborn:nuke', [
   'techreborn:industrial_machine_frame',
-  'kubejs:plasma_fluid',
+  {fluid: 'kubejs:plasma_fluid', amount: 81000},
   '3x createastral:subatomic_ingot',
   'create:linked_controller'
 ]).superheated.processingTime(500)
