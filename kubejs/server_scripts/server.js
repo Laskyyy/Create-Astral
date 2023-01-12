@@ -31,29 +31,7 @@ function lizardMiscChanges(event) {
   event.replaceInput('techreborn:obsidian_dust', '#c:dusts/obsidian');
   event.replaceInput('createaddition:diamond_grit', 'techreborn:diamond_dust');
 
-  // Manual dripstone
-	event.shapeless('minecraft:dripstone_block', [
-    "minecraft:calcite",
-    "minecraft:water_bucket"
-	]).replaceIngredient('minecraft:water_bucket', 'minecraft:bucket')
-    .id('createastral:dripstone_block_manual_only');
 
-  // Manual Pointed Dripstone
-  event.stonecutting('2x minecraft:pointed_dripstone', 'minecraft:dripstone_block');
-
-  // More efficient pointed dripstone filling recipe
-  event.recipes.createFilling('4x minecraft:pointed_dripstone', [
-    'minecraft:calcite',
-    {fluid: 'minecraft:water', amount: FULL_BUCKET_AMMOUNT / 2}
-  ]);
-
-  // Pre-crushing copper and zinc generation
-  event.recipes.createMilling([
-    Item.of('create:crushed_copper_ore').withChance(.4)
-  ], 'create:veridium');
-  event.recipes.createMilling([
-    Item.of('create:crushed_zinc_ore').withChance(.15)
-  ], 'create:asurine');
 
    // Remove Tech reborn's coal grinding recipe, make the crushing wheel required.
   // TODO: implement "ore dust" idea.
@@ -541,6 +519,30 @@ function lizardGrinderCrushingRework(event) {
 } 
 
 function lizardGeologyAlchemyChanges(event) {
+  // Manual dripstone
+	event.shapeless('minecraft:dripstone_block', [
+    "minecraft:calcite",
+    "minecraft:water_bucket"
+	]).replaceIngredient('minecraft:water_bucket', 'minecraft:bucket')
+    .id('createastral:dripstone_block_manual_only');
+
+  // Manual Pointed Dripstone
+  event.stonecutting('2x minecraft:pointed_dripstone', 'minecraft:dripstone_block');
+
+  // More efficient pointed dripstone filling recipe
+  event.recipes.createFilling('4x minecraft:pointed_dripstone', [
+    'minecraft:calcite',
+    {fluid: 'minecraft:water', amount: FULL_BUCKET_AMMOUNT / 2}
+  ]);
+
+  // Pre-crushing copper and zinc generation
+  event.recipes.createMilling([
+    Item.of('create:crushed_copper_ore').withChance(.4)
+  ], 'create:veridium');
+  event.recipes.createMilling([
+    Item.of('create:crushed_zinc_ore').withChance(.15)
+  ], 'create:asurine');
+
   // Diorite, Granite, and Andesite crushing
   event.recipes.createCrushing([
     'minecraft:quartz',
