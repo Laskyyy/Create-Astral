@@ -483,7 +483,8 @@ function lizardGrinderCrushingRework(event) {
     ['minecraft:saddle', 3, 'minecraft:leather'],
     ['minecraft:wheat', 3, 'create:wheat_flour'],
     ['minecraft:ender_pearl', 2, 'ae2:ender_dust'],
-    ['tconstruct:necrotic_bone', 6, 'minecraft:bone_meal']
+    ['tconstruct:necrotic_bone', 6, 'minecraft:bone_meal'],
+    ['minecraft:dried_kelp', 1, 'minecraft:gunpowder']
   ];
 
   for (let recipe of CRUSHING_RECIPES_TO_BECOME_GRINDING) {
