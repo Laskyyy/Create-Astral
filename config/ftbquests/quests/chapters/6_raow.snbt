@@ -614,7 +614,7 @@
 		{
 			title: "Bucket of Quark-Gluon Plasma Fluid"
 			x: 6.5d
-			y: 10.0d
+			y: 11.5d
 			subtitle: "Have fun trolling your friends. (Or crafting)"
 			dependencies: [
 				"3ED703EAA646A18A"
@@ -636,8 +636,8 @@
 		{
 			title: "Supercharged Singularity."
 			x: 2.5d
-			y: 10.0d
-			dependencies: ["3ED703EAA646A18A"]
+			y: 11.5d
+			dependencies: ["0A6A678C1179157D"]
 			id: "16A2464A968635F7"
 			tasks: [{
 				id: "1E54D1C071F7EDD9"
@@ -648,11 +648,10 @@
 		{
 			title: "Become as gods."
 			x: 4.5d
-			y: 12.5d
+			y: 13.5d
 			dependencies: [
-				"3ED703EAA646A18A"
-				"46382C349512DBEE"
 				"585CEEAE5CADECA0"
+				"16A2464A968635F7"
 			]
 			id: "0CE73BAC9F3A9E03"
 			tasks: [{
@@ -795,14 +794,42 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 11.0d
-			dependencies: ["16A2464A968635F7"]
+			x: 4.5d
+			y: 11.5d
+			subtitle: "The Warhead of Liberated Fabric"
+			dependencies: [
+				"3ED703EAA646A18A"
+				"46382C349512DBEE"
+			]
 			id: "585CEEAE5CADECA0"
 			tasks: [{
 				id: "0EE894810AAD28C3"
 				type: "item"
 				item: "techreborn:nuke"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 9.5d
+			dependencies: [
+				"3ED703EAA646A18A"
+				"49C63ADC9B1FC721"
+			]
+			id: "0A6A678C1179157D"
+			tasks: [{
+				id: "342D6D7329D48E42"
+				type: "item"
+				item: "ae2:condenser"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 9.5d
+			id: "49C63ADC9B1FC721"
+			tasks: [{
+				id: "76554531F0767414"
+				type: "item"
+				item: "ae2:cell_component_256k"
 			}]
 		}
 	]

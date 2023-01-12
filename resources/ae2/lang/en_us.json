@@ -215,7 +215,7 @@
   "config.jade.plugin_ae2.power_storage": "AE2 Power State",
   "entity.ae2.charged_quartz": "Charged Quartz",
   "entity.ae2.growing_crystal": "Growing Crystal",
-  "entity.ae2.singularity": "Singularity",
+  "entity.ae2.singularity": "Singularity Framework",
   "entity.ae2.tiny_tnt_primed": "Tiny TNT Primed",
   "gui.ae2.And": "and",
   "gui.ae2.AttachedTo": "Attached to: %s",

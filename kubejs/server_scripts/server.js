@@ -942,6 +942,13 @@ event.recipes.createMixing('3x techreborn:machine_parts', [
   '8x #c:wires'
 ]).processingTime(400)
 
+event.recipes.createMixing('3x techreborn:machine_parts', [
+  'techreborn:industrial_machine_frame',
+  'kubejs:plasma_fluid',
+  '3x createastral:subatomic_ingot',
+  'create:linked_controller'
+]).processingTime(500)
+
 event.recipes.createSequencedAssembly([ // begin
 'create:copper_casing', // output
 ], 'create:andesite_casing', [ // input
