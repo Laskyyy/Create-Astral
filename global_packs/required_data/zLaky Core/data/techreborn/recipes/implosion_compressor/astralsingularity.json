@@ -1,7 +1,7 @@
 {
   "type": "techreborn:implosion_compressor",
-  "power": 1000,
-  "time": 2000,
+  "power": 500,
+  "time": 500,
   "ingredients": [
 	{
 	  "count": 1,
@@ -18,9 +18,11 @@
       "count": 1
     },
     {
-      "fluid": "tconstruct:molten_uranium",
-      "holder": "techreborn:cell",
-      "count": 2
-    }
+      "item": "techreborn:cell",
+      "count": 2,
+      "nbt": {
+        "fluid": "tconstruct:molten_uranium"
+      }
+    },
   ]
 }
