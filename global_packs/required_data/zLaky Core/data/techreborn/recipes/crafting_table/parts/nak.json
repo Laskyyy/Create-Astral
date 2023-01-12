@@ -1,0 +1,22 @@
+{
+  "type": "techreborn:chemical_reactor",
+  "power": 30,
+  "time": 400,
+  "ingredients": [
+    {
+      "fluid": "techreborn:potassium",
+      "count": 2,
+      "holder": "techreborn:cell"
+    },
+    {
+      "fluid": "techreborn:sodium",
+      "count": 2,
+      "holder": "techreborn:cell"
+    }
+  ],
+  "results": [
+    {
+      "item": "techreborn:nak_coolant_cell_60k"
+          }
+  ]
+}

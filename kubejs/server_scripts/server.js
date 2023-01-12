@@ -727,6 +727,7 @@ onEvent('recipes', event => {
   event.remove({output: 'techreborn:industrial_machine_casing'})
   event.remove({output: 'techreborn:refined_iron_ingot'})
   event.remove({output: 'techreborn:fusion_coil'})
+  event.remove({type: 'minecraft:shaped', output: 'techreborn:nak_coolant_cell_60k'})
 
 
 ///REPLACE MAJOR CMOPONENTS TO MATCH ASTRAL PROGRESSION
@@ -821,6 +822,7 @@ onEvent('recipes', event => {
   event.remove({output: 'ae2:pattern_encoding_terminal'})
   event.remove({output: 'ae2:cable_pattern_provider'})
   event.remove({output: 'ae2:inscriber'})
+  
   event.remove({output: 'ae2:controller', type: 'crafting_shaped'})
   event.replaceInput({mod: 'ae2'}, 'minecraft:iron_ingot', 'techreborn:silver_plate')
   event.replaceInput({mod: 'techreborn'}, 'minecraft:cobblestone', 'create:sturdy_sheet')

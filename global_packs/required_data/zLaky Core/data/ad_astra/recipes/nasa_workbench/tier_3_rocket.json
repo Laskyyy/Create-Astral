@@ -23,7 +23,7 @@
 		},
 		{
 			"ingredient": {
-				"item": "ad_astra:steel_block"
+				"item": "techreborn:digital_display"
 			}
 		},
 		{
@@ -43,7 +43,7 @@
 		},
 		{
 			"ingredient": {
-				"item": "immersvive_aircraft:engine"
+				"item": "immersive_aircraft:engine"
 			}
 		},
 		{
