@@ -938,7 +938,7 @@ event.recipes.createMixing('techreborn:rubber', [
   'techreborn:sap'
 ]).processingTime(50)
 
-event.recipes.createMixing('3x techreborn:machine_parts', [
+event.recipes.createMixing('4x techreborn:machine_parts', [
   'techreborn:steel_plate',
   'techreborn:carbon_mesh',
   '8x #c:wires'
@@ -2128,10 +2128,11 @@ event.recipes.createFilling('create:lapis_sheet', ['create:lapis_sheet', {fluid:
 event.recipes.createSequencedAssembly([ 
   'techreborn:industrial_circuit',
   ], 'techreborn:electronic_circuit', [ 
-  event.recipes.createFilling('techreborn:electronic_circuit', ['techreborn:electronic_circuit', {fluid: 'techreborn:lithium', amount: 1500}]), //fill bronze
+  event.recipes.createFilling('techreborn:electronic_circuit', ['techreborn:electronic_circuit', {fluid: 'techreborn:lithium', amount: 2500}]), //fill bronze
   event.recipes.createPressing('techreborn:electronic_circuit', 'techreborn:electronic_circuit'),
+  event.recipes.createDeploying('techreborn:electronic_circuit', ['techreborn:electronic_circuit', 'techreborn:machine_parts']),
   event.recipes.createDeploying('techreborn:electronic_circuit', ['techreborn:electronic_circuit', 'createastral:calorite_pin']), //fill bronze
-  ]).transitionalItem('techreborn:electronic_circuit').loops(18)
+  ]).transitionalItem('techreborn:electronic_circuit').loops(9)
 	 
 	event.recipes.createSequencedAssembly([ // begin
         'minecraft:ender_eye', // output
