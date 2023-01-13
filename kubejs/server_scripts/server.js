@@ -830,6 +830,8 @@ onEvent('recipes', event => {
   event.replaceInput({mod: 'techreborn'}, 'minecraft:stone', 'create:sturdy_sheet')
   event.replaceInput({mod: 'techreborn'}, 'minecraft:cobblestone', 'create:sturdy_sheet')
   event.replaceInput({mod: 'techreborn'}, 'minecraft:flint', 'create:sturdy_sheet')
+  event.replaceInput({mod: 'techreborn'}, 'techreborn:peridot_plate', 'createastral:olivine_sheet')
+  event.remove({output: 'techreborn:data_storage_core'})
   event.replaceInput({mod: 'ae2'}, 'minecraft:copper_ingot', 'techreborn:silver_plate')
   event.replaceInput({mod: 'ae2'}, 'minecraft:redstone', 'ae2:fluix_dust')
   event.replaceInput({mod: 'ae2'}, 'ae2:fluix_crystal', 'ae2:fluix_dust')
@@ -861,6 +863,19 @@ onEvent('recipes', event => {
   A: 'techreborn:olivine_sheet',
   B: 'techreborn:iridium_alloy_plate',
   C: 'techreborn:industrial_circuit',
+
+  
+})
+
+
+event.recipes.createMechanicalCrafting('immersive_aircraft:boiler', [
+  'AB',
+  'CB',
+  'CB'
+], {
+  A: 'techreborn:machine_parts',
+  B: 'create:copper_sheet',
+  C: 'techreborn:rubber',
 
   
 })
