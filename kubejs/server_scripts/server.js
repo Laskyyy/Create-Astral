@@ -72,6 +72,80 @@ function lizardMiscChanges(event) {
     "result": "createastral:andesite_alloy_block",
     "cooling_time": 180,
   });
+
+
+  // Make some machine recipes more interesting
+  event.remove({output: 'techreborn:grinder'});
+  event.shaped('techreborn:grinder', [
+    'ABA',
+    'CDC',
+    ' E '
+  ], {
+    A: 'create:sturdy_sheet',
+    B: 'create:integrated_circuit',
+    C: 'minecraft:diamond',
+    D: 'create:millstone',
+    E: 'techreborn:basic_machine_frame'
+  });
+
+  event.remove({output: 'techreborn:wire_mill'});
+  event.shaped('techreborn:wire_mill', [
+    'ABA',
+    'ADA', /*'CDC',*/
+    ' E '
+  ], {
+    A: 'create:sturdy_sheet',
+    B: 'createaddition:rolling_mill',
+    // C: 'create:integreted' // A little weird since the extractor also has the 
+    D: 'techreborn:extractor',
+    E: 'create:mechanical_piston'
+  });
+
+  event.remove({ output: 'techreborn:compressor' });
+  event.shaped('techreborn:compressor', [
+    'ABA',
+    'ACA',
+    'ADA'
+  ], {
+    A: 'create:sturdy_sheet',
+    B: 'create:integrated_circuit',
+    C: 'create:mechanical_press',
+    D: 'techreborn:basic_machine_frame',
+  });
+
+  // Let's making the rolling mill more relevant
+  event.replaceInput({output:'techreborn:copper_cable'}, 
+    'minecraft:copper_ingot', 'createaddition:copper_rod');
+  event.replaceInput({output:'techreborn:gold_cable'}, 
+    'minecraft:gold_ingot', 'createaddition:gold_rod');
+  event.replaceInput({input: 'techreborn:rubber', output: 'techreborn:insulated_copper_cable'},
+    'minecraft:copper_ingot', 'createaddition:copper_rod');
+
+  // Originally I was going to have the wire mill be an upgraded rolling mill but the above code
+  //  changes the input to rods instead of ingots. I kind of like this a bit more. Downsides is that it may be annoying
+  //  to use both machines for an item they may not craft often, outside of circuit automation. 
+  // Still, I'll let the wire mill produce wires.
+  // event.replaceOutput({type: 'techreborn:wiremill'}, 'techreborn:copper_cable', 'createaddition:copper_rod');
+  const WIRE_MATERIALS = ['iron', 'gold', 'copper', 'brass'];
+  for (let material of WIRE_MATERIALS) {
+    event.custom({
+      "type": "techreborn:wire_mill",
+      "power": 2,
+      "time": 300,
+      "ingredients": [
+        {
+          "item": 'create:' + material + '_sheet',
+          "count": 4
+        }
+      ],
+      "results": [
+        {
+          "item": 'createaddition:' + material + '_wire',
+          "count": 6
+        }
+      ]
+    });
+  }
 }
 
 // Largely degating trains
