@@ -1647,13 +1647,14 @@ event.recipes.createMechanicalCrafting('ad_astra:nasa_workbench', [
   'CDC',
   'ABA'
 ], {
-  A: 'minecraft:redstone_block',
+  // A: minecraft:redstone_block,
+  A: 'createaddition:capacitor',
   B: 'ad_astra:desh_block',
   C: 'ad_astra:compressed_desh',
   D: 'createastral:navigation_mechanism',
-  E: 'create:integrated_circuit',
-  F: 'create:mechanical_arm'
-  
+  // F: 'create:integrated_circuit',
+  F: 'create:display_board',
+  E: 'create:mechanical_arm'
 })
 
 	event.recipes.createMechanicalCrafting('ad_astra:solar_panel', [
