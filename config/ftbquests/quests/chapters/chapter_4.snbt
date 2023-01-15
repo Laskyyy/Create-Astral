@@ -52,7 +52,7 @@
 		}
 		{
 			title: "The World of \"Smart\""
-			x: -17.0d
+			x: -16.5d
 			y: 3.5d
 			subtitle: "Discover the most stylish alloy"
 			description: [
@@ -194,8 +194,8 @@
 		}
 		{
 			title: "It's like copper but cooler"
-			x: -16.5d
-			y: 2.5d
+			x: -17.5d
+			y: 3.5d
 			subtitle: "and highly enchantable!"
 			description: ["Effectively a minor upgrade to iron, except with a major enchanting bonus allowing for easy god tier enchants."]
 			dependencies: ["705C815541DB89F8"]
@@ -1068,10 +1068,9 @@
 		{
 			title: "Some Tinker \"Upgrades\""
 			x: -18.5d
-			y: 3.5d
+			y: 4.0d
 			subtitle: "Kit it out with some snazzy gear"
 			description: ["They don't actually do anything improved though."]
-			dependencies: ["11AF7F7CE0940C06"]
 			optional: true
 			id: "1E83F62D325A44F2"
 			tasks: [
@@ -1110,7 +1109,7 @@
 		}
 		{
 			title: "Even Better Smelting"
-			x: -22.0d
+			x: -21.0d
 			y: 5.0d
 			shape: "rsquare"
 			subtitle: "Get yourself a tinkers multiblock foundry"
@@ -1564,8 +1563,8 @@
 		}
 		{
 			title: "Brass Funnel My Beloved"
-			x: -17.0d
-			y: 5.0d
+			x: -15.5d
+			y: 4.5d
 			subtitle: "The most useful brass gizmo"
 			description: [
 				"Brass funnels operate like andesite tunnels except for two important distinctions: they can filter what what they take or give, and they can input or output up to whole stacks at a time."
@@ -1596,8 +1595,8 @@
 		}
 		{
 			title: "Funnel's Chad Sibbling"
-			x: -16.0d
-			y: 5.0d
+			x: -16.5d
+			y: 4.5d
 			subtitle: "WOW"
 			description: [
 				"Remember how niche andesite tunnels were, especially since chutes were the only way to get stacks onto a conveyor belt?"
@@ -1627,8 +1626,8 @@
 			}]
 		}
 		{
-			x: -18.0d
-			y: 5.0d
+			x: -17.5d
+			y: 4.5d
 			subtitle: "Dump things with intelligence"
 			description: [
 				"Smart Chutes are like normal chutes, except you can filter what gets dumped and by how much."
@@ -2042,7 +2041,7 @@
 			}]
 		}
 		{
-			x: -22.0d
+			x: -21.0d
 			y: 3.5d
 			subtitle: "Cool new multiblock material!!"
 			description: ["Scorched Bricks form the walls of a foundry. Literally. You place them down in a hollow cube and place the controller in one of them to make a foundry."]
@@ -2057,7 +2056,7 @@
 		}
 		{
 			title: "Get Items into the Foundry"
-			x: -24.0d
+			x: -23.0d
 			y: 5.0d
 			subtitle: "For when chucking stuff into the top doesn't work"
 			description: [
@@ -2075,7 +2074,7 @@
 		}
 		{
 			title: "Get Fluids in and out the Foundry"
-			x: -24.0d
+			x: -23.0d
 			y: 4.0d
 			subtitle: "You stick it right into the side!"
 			description: [
@@ -2102,10 +2101,7 @@
 				"However, their biggest purpose is to act as fuel input to the foundary. Foundaries powered by lava will melt the fastest with great fuel efficiency. You'll want one in your foundry."
 			]
 			min_required_dependencies: 1
-			dependencies: [
-				"11AF7F7CE0940C06"
-				"705C815541DB89F8"
-			]
+			dependencies: ["11AF7F7CE0940C06"]
 			id: "0BCFF062FD1518BF"
 			tasks: [
 				{
@@ -2122,7 +2118,7 @@
 		}
 		{
 			title: "Pratical-ish Foundry Deco"
-			x: -24.0d
+			x: -23.0d
 			y: 6.0d
 			subtitle: "Check what's in your foundry!"
 			description: [
@@ -2221,7 +2217,7 @@
 		}
 		{
 			title: "Automate Blood or Slime"
-			x: -22.5d
+			x: -21.5d
 			y: 6.5d
 			shape: "diamond"
 			subtitle: "This is a Children's Game, Obviously."
@@ -2257,7 +2253,7 @@
 		}
 		{
 			title: "Automate Blaze Rods"
-			x: -21.5d
+			x: -20.5d
 			y: 6.5d
 			shape: "diamond"
 			subtitle: "This is hell"
@@ -2720,7 +2716,7 @@
 		}
 		{
 			title: "Where Are My Alloys?"
-			x: -20.5d
+			x: -19.5d
 			y: 6.0d
 			subtitle: "Read this if your a Tinker's expert"
 			description: ["If you've played modded MC before, you probably know high-tier Tinker alloys are made with either the Smeltery, or the Alloy Mixer. Both of these have been removed. Instead, all Tinker Construct's alloys are now mixed with heated basins."]
@@ -2836,7 +2832,7 @@
 		}
 		{
 			title: "Automate Sturdy Sheets"
-			x: -22.0d
+			x: -21.0d
 			y: 7.5d
 			shape: "diamond"
 			subtitle: "These have been popping up more and more"

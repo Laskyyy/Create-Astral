@@ -331,6 +331,25 @@ function lizardCH3Changes(event) {
     'createastral:bronze_sheet', 'techreborn:electrum_plate');
   event.replaceInput({type: 'minecraft:crafting_shaped', output: 'techreborn:chunk_loader'}, 
     'create:golden_sheet', 'techreborn:emerald_plate');
+
+  // Scorched tanks NEED a recipe! These both take the same amount of bricks.
+  //  Seared version did require brass but I don't think that makes sense.
+  event.shaped('tconstruct:scorched_fuel_tank', [
+    'AAA',
+    'ABA',
+  ], {
+    A: 'tconstruct:scorched_brick',
+    B: 'create:fluid_tank',
+  });
+  event.shaped('tconstruct:scorched_fuel_gauge', [
+    'ACA',
+    'CBC',
+    'AAA'
+  ], {
+    A: 'tconstruct:scorched_brick',
+    B: 'create:fluid_tank',
+    C: '#c:glass'
+  });
 }
 
 function lizardCH3Biofuel(event) {
