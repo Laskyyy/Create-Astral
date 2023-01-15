@@ -113,7 +113,7 @@ function lizardMiscChanges(event) {
     D: 'techreborn:basic_machine_frame',
   });
 
-  // Let's making the rolling mill more relevant
+  // Let's making the rolling mill more relevant by making cables require create addition rods
   event.replaceInput({output:'techreborn:copper_cable'}, 
     'minecraft:copper_ingot', 'createaddition:copper_rod');
   event.replaceInput({output:'techreborn:gold_cable'}, 
@@ -144,6 +144,27 @@ function lizardMiscChanges(event) {
           "count": 6
         }
       ]
+    });
+  }
+
+  // Buffed catwalk output. Seriously! Its so resource heavy!
+  const CATWALK_MATERIALS = [
+    ['gold', 'create:golden_sheet'], ['netherite', 'createdeco:netherite_sheet'],
+    ['andesite', 'create:andesite_alloy'], ['brass', 'create:brass_sheet'], 
+    ['cast_iron', 'createdeco:cast_iron_sheet'], ['iron', 'minecraft:iron_sheet'], 
+    ['copper', 'create:copper_sheet'], ['zinc', '#c:plates/zinc']];
+
+  for (let catwalkMaterial of CATWALK_MATERIALS) {
+    event.remove({output: 'createdeco:' + catwalkMaterial[0] + '_catwalk'});
+    
+    // Note I'm deliberately changing iron catwalk recipe to not use sandpapering.
+    event.shaped('8x createdeco:' + catwalkMaterial[0] + '_catwalk', [
+      ' A ',
+      'ABA',
+      ' A '
+    ], {
+      A: catwalkMaterial[1],
+      B: catwalkMaterial[0] == 'iron'? 'minecraft:iron_bars': 'createdeco:' + catwalkMaterial[0] + '_bars'
     });
   }
 }
