@@ -301,8 +301,10 @@
 			}]
 		}
 		{
+			title: "Armour of *radiant* capability"
 			x: 1.0d
 			y: 5.5d
+			subtitle: "Look it even shines"
 			dependencies: ["1E93A90AEF614FA3"]
 			optional: true
 			id: "5E7A2EC55B6B1DF9"
@@ -572,50 +574,10 @@
 			}]
 		}
 		{
-			title: "Beautiful."
-			x: 1.5d
-			y: 8.5d
-			shape: "square"
-			subtitle: "Concept quest [WIP]"
-			description: [
-				"The Reality Bender allows for an extremely high mining speed at the cost of basically no mining level."
-				"The Atomic Deconstructor functions as a much more powerful nanosaber, though it's damage is reduced to measly 15% against hostile mobs."
-			]
-			dependencies: ["3ED703EAA646A18A"]
-			optional: true
-			id: "561B1E5174FB57BB"
-			tasks: [
-				{
-					id: "43FD9FA4E8ABD51D"
-					type: "item"
-					title: "Atomic Deconstructor"
-					item: {
-						id: "createastral:radiant_sword"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "5F43A8525B0CCB00"
-					type: "item"
-					title: "Reality Bender"
-					item: {
-						id: "createastral:radiant_pickaxe"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
-		}
-		{
 			title: "Bucket of Quark-Gluon Plasma Fluid"
 			x: 6.5d
 			y: 11.5d
-			subtitle: "Have fun trolling your friends. (Or crafting)"
+			subtitle: "FUUUUSE WITH SHIMMERRR"
 			dependencies: [
 				"3ED703EAA646A18A"
 				"5779A205B598A69B"
@@ -634,9 +596,10 @@
 			}]
 		}
 		{
-			title: "Supercharged Singularity."
+			title: "The Singularity Framework"
 			x: 2.5d
 			y: 11.5d
+			description: ["Compress 256k items into a singularity."]
 			dependencies: ["0A6A678C1179157D"]
 			id: "16A2464A968635F7"
 			tasks: [{
@@ -661,10 +624,10 @@
 			}]
 		}
 		{
-			title: "Galactic Collider"
+			title: "With the heat of sun."
 			x: 7.5d
 			y: 7.5d
-			subtitle: "Condensed lava..."
+			subtitle: "We will conquer the universe."
 			description: ["An artificial recreation of the surface of the sun, convert lava using a superheated mixing basin."]
 			dependencies: [
 				"78932223283B0376"
@@ -779,7 +742,7 @@
 			tasks: [{
 				id: "0B734A87872139D8"
 				type: "item"
-				item: "techreborn:peridot_dust"
+				item: "techreborn:olivine_dust"
 			}]
 		}
 		{
@@ -790,13 +753,19 @@
 			tasks: [{
 				id: "09FA75F9B9A51AD9"
 				type: "item"
-				item: "techreborn:peridot_plate"
+				item: "createastral:olivine_sheet"
 			}]
 		}
 		{
 			x: 4.5d
 			y: 11.5d
 			subtitle: "The Warhead of Liberated Fabric"
+			description: [
+				"This nuclear weapons primer is DISABLED by default for your own sake, okay?"
+				""
+				""
+				"Hop over to the Tech Reborn config if you'd like to enable it. (It still functions as a recipe ingredient)"
+			]
 			dependencies: [
 				"3ED703EAA646A18A"
 				"46382C349512DBEE"
@@ -809,8 +778,10 @@
 			}]
 		}
 		{
+			title: "256k items isn't *that* much at this point."
 			x: 2.5d
 			y: 9.5d
+			description: ["DO NOT use chutes to charge a singularity! It seems to fail if using it. Use other methods of item transport instead (AE2)"]
 			dependencies: [
 				"3ED703EAA646A18A"
 				"49C63ADC9B1FC721"
@@ -825,6 +796,7 @@
 		{
 			x: 1.0d
 			y: 9.5d
+			subtitle: "You'll need one of these, minimum, to have the space for a singularity."
 			id: "49C63ADC9B1FC721"
 			tasks: [{
 				id: "76554531F0767414"

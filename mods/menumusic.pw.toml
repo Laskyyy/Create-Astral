@@ -1,0 +1,14 @@
+name = "Menu Music"
+filename = "menumusic-1.18.2-1.0-fabric.jar"
+side = "both"
+
+[download]
+mode = "url"
+url = "https://cdn.modrinth.com/data/To1L7Q0X/versions/CvKGI9So/menumusic-1.18.2-1.0-fabric.jar"
+hash-format = "sha512"
+hash = "b58d96f84277b6e0279dbb2c33b00f5025aabaaec9f4cc945a7e1242acb6a1477269925d4f21270c151c42b8bbce09ab380dd1043c975bb53130a223d547f4b5"
+
+[update]
+[update.modrinth]
+mod-id = "To1L7Q0X"
+version = "CvKGI9So"

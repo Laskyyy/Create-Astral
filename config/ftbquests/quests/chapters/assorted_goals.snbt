@@ -11,7 +11,7 @@
 		x: -5.0d
 		y: 6.5d
 		width: 6.0d
-		height: 3.0d
+		height: 3.5d
 		rotation: 0.0d
 		image: "createastral:textures/item/logos_binted.png"
 		hover: [ ]
@@ -1180,9 +1180,9 @@
 				Count: 1b
 				tag: {
 					Automobile: {
-						engine: "automobility:stone"
-						frame: "automobility:yellow_tractor"
 						wheels: "automobility:standard"
+						frame: "automobility:yellow_tractor"
+						engine: "automobility:stone"
 					}
 				}
 			}
@@ -1270,9 +1270,9 @@
 						Count: 1b
 						tag: {
 							Automobile: {
-								engine: "automobility:stone"
-								frame: "automobility:yellow_tractor"
 								wheels: "automobility:standard"
+								frame: "automobility:yellow_tractor"
+								engine: "automobility:stone"
 							}
 						}
 					}
@@ -1801,8 +1801,8 @@
 								realCount: 0
 							}
 							PackageStyle: {
-								inner: "minecraft:oak_planks"
 								frame: "minecraft:oak_log"
+								inner: "minecraft:oak_planks"
 								color: 0
 							}
 						}
@@ -1812,8 +1812,16 @@
 			}]
 		}
 		{
+			title: "A curated touch..."
+			icon: "vinery:old_cherry_sapling"
 			x: -6.0d
 			y: 18.5d
+			subtitle: "it's more sophisticated to drink this, apparently..."
+			description: [
+				"Vinery follows the same path as drinkbeer, with the brewing being performed through a unique block"
+				""
+				"Wines brewed will have the current minecraft 'year' imprinted onto them. The longer they age without being drank, the more potent those effects may become..."
+			]
 			hide_dependency_lines: true
 			dependencies: ["0BCED0F8481E0C21"]
 			id: "165C3C3DF1B9B4A3"
@@ -1822,10 +1830,34 @@
 				type: "item"
 				item: "vinery:fermentation_barrel"
 			}]
+			rewards: [
+				{
+					id: "28323BFEABB17884"
+					type: "item"
+					item: "vinery:red_grape_seeds"
+				}
+				{
+					id: "75F06EEAB86BDAB7"
+					type: "item"
+					item: "vinery:white_grape_seeds"
+				}
+				{
+					id: "5B9905DBF04FDAF2"
+					type: "item"
+					item: "vinery:cherry_sapling"
+				}
+			]
 		}
 		{
+			title: "Juice of the apple variety."
 			x: -5.0d
 			y: 20.0d
+			subtitle: "Recipes inside!"
+			description: [
+				"Apple Cider - 2x Apple juice, 1x basket"
+				"Apple Wine - 2x Apple juice, 1x honey bottle"
+				"Kelp Cider - 1x Apple juice, 2x Kelp"
+			]
 			dependencies: ["4B565923D33B2CB8"]
 			id: "1D8FB0253FF41716"
 			tasks: [{
@@ -1837,10 +1869,32 @@
 					tag: { }
 				}
 			}]
+			rewards: [
+				{
+					id: "5136D615F0B99ABE"
+					type: "item"
+					item: "vinery:chair"
+				}
+				{
+					id: "06F6AB6335CF891E"
+					type: "item"
+					item: "vinery:table"
+					count: 8
+				}
+			]
 		}
 		{
+			title: "Grapejuice of the red variety."
 			x: -3.5d
 			y: 18.0d
+			subtitle: "Recipes inside!"
+			description: [
+				"Bolvar Wine - 2x Red, 1x Honey bottle, 1x cherry"
+				"Chenet Wine - 2x Red, 2x Sweet berry"
+				"Noir Wine - 2x Red"
+				"King Danis - 2x Red, 2x Honey bottle"
+				"Cherry Wine - 2x Red, 2x Cherry"
+			]
 			dependencies: ["6BECCB7FA4132517"]
 			id: "529CAD4508F33471"
 			tasks: [{
@@ -1852,10 +1906,22 @@
 					tag: { }
 				}
 			}]
+			rewards: [{
+				id: "1097AB4611D7E57D"
+				type: "item"
+				item: "vinery:wine_box"
+			}]
 		}
 		{
+			title: "Grapejuice of the white variety."
 			x: -3.5d
 			y: 19.0d
+			subtitle: "Recipes inside!"
+			description: [
+				"Solaris Wine - 2x white, 1x sweet berry, 1x honey bottle"
+				"Clark Wine - 2x white, 2x sweet berry"
+				"Mellohi Wine - 2x White, 2x honey bottle"
+			]
 			dependencies: ["6BECCB7FA4132517"]
 			id: "66AF3CCC6B74CC09"
 			tasks: [{
@@ -1867,10 +1933,18 @@
 					tag: { }
 				}
 			}]
+			rewards: [{
+				id: "75E5A6B7988A3D1A"
+				type: "item"
+				item: "vinery:wine_rack_2"
+			}]
 		}
 		{
+			title: "Squish that cat."
 			x: -6.5d
 			y: 19.5d
+			subtitle: "Recipe inside!"
+			description: ["Apple Juice - 2x Apple mash"]
 			dependencies: ["165C3C3DF1B9B4A3"]
 			id: "4B565923D33B2CB8"
 			tasks: [{
@@ -1878,10 +1952,18 @@
 				type: "item"
 				item: "vinery:wine_press"
 			}]
+			rewards: [{
+				id: "1B24564A722FFBEC"
+				type: "item"
+				item: "vinery:apple_mash"
+			}]
 		}
 		{
+			title: "Look at those stompers go"
+			icon: "vinery:red_grape"
 			x: -5.0d
 			y: 18.5d
+			subtitle: "Slap some grapes into these barrels and go ham! Recover the juice using empy wine bottles."
 			dependencies: ["165C3C3DF1B9B4A3"]
 			id: "6BECCB7FA4132517"
 			tasks: [{

@@ -953,7 +953,7 @@ event.recipes.createMixing('techreborn:rubber', [
 ]).processingTime(50)
 
 event.recipes.createMixing('4x techreborn:machine_parts', [
-  'techreborn:steel_plate',
+  'ad_astra:compressed_steel',
   'techreborn:carbon_mesh',
   '8x #c:wires'
 ]).processingTime(400)
@@ -992,7 +992,23 @@ event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:
 event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'techreborn:nak_coolant_cell_60k']), 
 ]).transitionalItem('create:incomplete_precision_mechanism').loops(1) 
 
-
+	event.recipes.createMechanicalCrafting('techreborn:fusion_control_computer', [
+  'DBCBD',
+  'BDCDB',
+  'CCECC',
+  'BDADB',
+  'DABAD'
+], {
+  A: 'techreborn:industrial_circuit',
+  B: 'techreborn:advanced_machine_casing',
+  C: 'techreborn:fusion_coil',
+  D: 'createaddition:tesla_coil',
+  E: 'techreborn:digital_display'
+  
+  
+ 
+		/// /DOODADS MOD RECIPE CHANGES
+})
 
 
 
@@ -1117,6 +1133,11 @@ event.recipes.createMixing(Fluid.of('tconstruct:molten_electrum', 405), [
   {fluid: 'tconstruct:molten_silver', amount: 405},
   {fluid: 'tconstruct:molten_gold', amount: 405}
 ]).heated()
+
+event.recipes.createMixing(Fluid.of('tconstruct:molten_steel', 8100), [
+'techreborn:steel_dust'
+]).superheated()
+
  	event.recipes.createMixing(Fluid.of('tconstruct:molten_slimesteel', 8100), [
     'minecraft:iron_ingot',
     'tconstruct:sky_slime_ball',
@@ -2465,7 +2486,7 @@ event.custom(
   {"type":"create:sequenced_assembly","ingredient":{"tag":"c:plates/gold"},"transitionalItem":{"item":"create:incomplete_precision_mechanism"},"sequence":[{"type":"create:deploying","ingredients":[{"item":"create:incomplete_precision_mechanism"},{"item":"create:cogwheel"}],"results":[{"item":"create:incomplete_precision_mechanism"}]},{"type":"create:deploying","ingredients":[{"item":"create:incomplete_precision_mechanism"},{"item":"create:large_cogwheel"}],"results":[{"item":"create:incomplete_precision_mechanism"}]},{"type":"create:deploying","ingredients":[{"item":"create:incomplete_precision_mechanism"},{"tag":"c:nuggets/iron"}],"results":[{"item":"create:incomplete_precision_mechanism"}]}],"results":[{"item":"create:precision_mechanism","chance":120.0},{"item":"create:golden_sheet","chance":8.0},{"item":"create:andesite_alloy","chance":8.0},{"item":"create:cogwheel","chance":5.0},{"item":"minecraft:gold_nugget","chance":3.0},{"item":"create:shaft","chance":2.0},{"item":"create:crushed_gold_ore","chance":2.0},{"item":"minecraft:iron_ingot"},{"item":"minecraft:clock"}],"loops":5})
 
 event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:basic_machine_casing"},{"item":"ad_astra:compressed_steel"}],"results":[{"item":"techreborn:advanced_machine_casing"}]})
-event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:advanced_machine_frame"},{"item":"techreborn:industrial_circuit"}],"results":[{"item":"techreborn:industrial_machine_frame"}]})
+event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:advanced_machine_frame"},{"item":"techreborn:machine_parts"}],"results":[{"item":"techreborn:industrial_machine_frame"}]})
 event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:basic_machine_frame"},{"item":"techreborn:lead_plate"}],"results":[{"item":"techreborn:advanced_machine_frame"}]})
 event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:basic_machine_casing"},{"item":"create:sturdy_sheet"}],"results":[{"item":"techreborn:industrial_machine_casing"}]})
 event.custom({"type":"create:item_application","ingredients":[{"item":"create:andesite_casing"},{"tag":"c:plates/obsidian"}],"results":[{"item":"create:railway_casing"}]})

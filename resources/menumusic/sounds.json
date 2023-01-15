@@ -1,0 +1,8 @@
+{
+  "music": {
+    "category": "music",
+    "sounds": [
+      "menumusic:npc_theme"
+    ]
+  }
+}
