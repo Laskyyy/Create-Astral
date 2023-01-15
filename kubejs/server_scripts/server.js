@@ -350,6 +350,29 @@ function lizardCH3Changes(event) {
     B: 'create:fluid_tank',
     C: '#c:glass'
   });
+
+  // Changed blaze burner recipe.
+  event.shaped('create:empty_blaze_burner', [
+    'AAA',
+    'A A',
+    'BCB'
+  ], {
+    A: 'createaddition:iron_rod',
+    B: 'create:iron_sheet',
+    C: 'minecraft:netherrack'
+  });
+
+  // Gag recipe
+  event.shaped('create:blaze_burner', [
+    'AAA',
+    'ADA',
+    'BCB'
+  ], {
+    A: 'createaddition:iron_rod',
+    B: 'create:iron_sheet',
+    C: 'minecraft:netherrack',
+    D: 'tconstruct:blaze_head'
+  });
 }
 
 function lizardCH3Biofuel(event) {
