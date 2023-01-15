@@ -2457,7 +2457,7 @@
 			subtitle: "We meant it when we said automation becomes complicated."
 			description: [
 				""
-				"Netherrack, obtained by haunting soul soil, can be crushed into cinder flour. This is useful for blaze cakes down the road, but it can also be mixed with diorite to produce granite at a more efficient rate, without the need for quartz. Diorite can then be turned into tin."
+				"Netherrack, obtained by haunting soul soil, can be crushed into netherrack dust. It can then be mixed with diorite to produce granite at a more efficient rate, without the need for quartz. Diorite can then be turned into tin."
 				""
 				"Of course, not every optimization is necessary. Decide if you even need more tin or quartz."
 			]
@@ -2529,12 +2529,19 @@
 			dependencies: ["20BFF582275C31C8"]
 			optional: true
 			id: "3EFFCF29981E3159"
-			tasks: [{
-				id: "670E344F88BD7685"
-				type: "item"
-				item: "minecraft:basalt"
-				count: 256L
-			}]
+			tasks: [
+				{
+					id: "670E344F88BD7685"
+					type: "item"
+					item: "minecraft:basalt"
+					count: 256L
+				}
+				{
+					id: "399B0EF91D1565BB"
+					type: "item"
+					item: "minecraft:blue_ice"
+				}
+			]
 			rewards: [{
 				id: "14D072CD91245774"
 				type: "xp"
