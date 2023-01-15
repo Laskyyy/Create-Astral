@@ -803,7 +803,7 @@
 					id: "02C1E6C64FF675CE"
 					type: "item"
 					item: "create:cogwheel"
-					count: 24
+					count: 16
 				}
 				{
 					id: "6E745FEF91101A6C"
@@ -815,7 +815,7 @@
 					id: "559628E110BA3920"
 					type: "item"
 					item: "create:shaft"
-					count: 32
+					count: 16
 				}
 				{
 					id: "6D73F8A2532F0D15"
@@ -833,7 +833,7 @@
 					id: "25D89697A7FE9804"
 					type: "item"
 					item: "create:water_wheel"
-					count: 8
+					count: 4
 				}
 			]
 		}

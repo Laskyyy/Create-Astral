@@ -28,6 +28,11 @@
     "minecraft:enderman",
     "minecraft:hoglin",
     "minecraft:wolf",
-    "minecraft:parrot"
+    "minecraft:parrot",
+    "minecraft:wither_skeleton",
+    
+    "minecraft:endermite",
+    "minecraft:husk",
+    "minecraft:strider"
   ]
 }

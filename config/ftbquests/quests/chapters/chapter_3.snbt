@@ -490,6 +490,7 @@
 		{
 			x: 4.0d
 			y: 0.5d
+			shape: "gear"
 			subtitle: "Electron Tube PTSD"
 			description: [
 				"Yes these used to cost 4x the amount, I know."
@@ -569,7 +570,8 @@
 			x: 11.5d
 			y: -1.0d
 			shape: "gear"
-			subtitle: "Chapter 3 unlock. We can get much higher."
+			subtitle: "Chapter 3 unlock."
+			description: ["We can get much higher."]
 			dependencies: [
 				"33F13EB2C45C36B3"
 				"624026189BBACBB0"
@@ -606,7 +608,7 @@
 					id: "03904FD8E92DC544"
 					type: "item"
 					item: "create:fluid_tank"
-					count: 16
+					count: 4
 				}
 				{
 					id: "00C16FE426CF56A9"
@@ -1196,7 +1198,6 @@
 				"Definitely invest in one."
 			]
 			dependencies: ["62DAEDF65FB2226B"]
-			size: 1.25d
 			id: "22F037A9108D116A"
 			tasks: [{
 				id: "52B4D82C0E3E59E2"
@@ -1369,12 +1370,12 @@
 			}]
 		}
 		{
-			title: "Automate Gold"
-			icon: "minecraft:gold_ingot"
+			title: "Automate Tin"
+			icon: "techreborn:tin_ingot"
 			x: -1.0d
 			y: 6.0d
 			shape: "diamond"
-			subtitle: "All that glitters"
+			subtitle: "its such an exciting material1111"
 			description: ["Washing red sand rarely produces gold and dead bushes. There's no way to automate red sand production itself at this point, so all you can really do is use up the red sand you have lying around... If you have any..."]
 			dependencies: ["38814494AB07C2D8"]
 			id: "60906B723CCE6D10"
@@ -1387,8 +1388,8 @@
 				{
 					id: "56B00DC3D1BC24B5"
 					type: "item"
-					title: "8x64 Gold Nuggets"
-					item: "minecraft:gold_nugget"
+					title: "8x64 Tin Nuggets"
+					item: "techreborn:tin_nugget"
 					count: 512L
 				}
 				{
@@ -1403,7 +1404,7 @@
 				{
 					id: "1E91B41BA3BD511D"
 					type: "xp"
-					xp: 250
+					xp: 150
 				}
 				{
 					id: "6AA0A2B5F940888D"
@@ -1469,6 +1470,8 @@
 				"Sand can be washed into clay much like red sand washes into gold. You can even create sand infintely by crushing gravel, but you don't have access to that yet. All you can do is transform unused sand and settle for semi-automation."
 				""
 				"There is also a different, more complicated semi-automation technique that involves starting with calcite and turning it into dripstone to mill. Unforunately, you can't infintely produce calcite, and therefore there's no way to reliably produce dripstone... Right?"
+				""
+				"Real pros will have a setup that then takes the clay and makes andesite alloy directly."
 			]
 			dependencies: ["38814494AB07C2D8"]
 			id: "3B80A4FBF7D2AB7B"
@@ -2309,11 +2312,11 @@
 		}
 		{
 			title: "Better think fast!"
-			x: -1.0d
-			y: -5.0d
+			x: 6.0d
+			y: -2.0d
 			subtitle: "Speed up your pathing."
 			description: ["Andesite Paving grants a minor speed boost when travelling over it. "]
-			dependencies: ["3095586FC5E09B01"]
+			dependencies: ["00F3EA4A8FB5B11B"]
 			id: "6229BC66A88B614B"
 			tasks: [{
 				id: "535BFA280660D524"

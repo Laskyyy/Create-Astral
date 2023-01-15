@@ -25,6 +25,18 @@
         "weight": 100,
         "minCount": 1,
         "maxCount": 3
+      },
+      {
+      	"type": "minecraft:enderman",
+      	"weight": 15,
+      	"minCount": 1,
+      	"maxCount": 2
+      },
+      {
+      	"type": "minecraft:endermite",
+      	"weight": 1,
+      	"minCount": 1,
+      	"maxCount": 10
       }
     ]
   },
