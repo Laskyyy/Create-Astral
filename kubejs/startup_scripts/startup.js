@@ -433,7 +433,7 @@ event.create('createastral:astral_singularity').food(food => {
         .alwaysEdible()//Like golden apples
 })
 event.create('createastral:pure_biomatter')
-event.create('createastral:lime').displayName('Lime');
+event.create('createastral:lime').displayName('Lime Dust');
 
 
 
