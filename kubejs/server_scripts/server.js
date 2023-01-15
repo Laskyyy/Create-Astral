@@ -313,7 +313,7 @@ function lizardCH3Changes(event) {
   event.recipes.createMixing('3x tconstruct:nether_grout', [
     'minecraft:magma_cream',
     'minecraft:soul_sand',
-    'create:scorchia',
+    'create:scoria',
     '#c:dusts/obsidian',
     '#c:dusts/obsidian',
     '#c:dusts/obsidian'

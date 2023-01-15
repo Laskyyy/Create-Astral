@@ -1066,11 +1066,12 @@
 			}]
 		}
 		{
-			title: "Some Tinker \"Upgrades\""
-			x: -18.5d
-			y: 4.0d
-			subtitle: "Kit it out with some snazzy gear"
-			description: ["They don't actually do anything improved though."]
+			title: "Not So Practical Deco"
+			x: -23.0d
+			y: 6.5d
+			subtitle: "Only if you like keeping colours consistent"
+			description: ["There are scorched versions of many seared tools. Seared faucets, basins, and tables that you've already been using will work with the foundry. The only thing different about these objects is that they have matching colours to your foundry."]
+			dependencies: ["5355CA2F0BA74BF1"]
 			optional: true
 			id: "1E83F62D325A44F2"
 			tasks: [
@@ -2057,7 +2058,7 @@
 		{
 			title: "Get Items into the Foundry"
 			x: -23.0d
-			y: 5.0d
+			y: 4.5d
 			subtitle: "For when chucking stuff into the top doesn't work"
 			description: [
 				"The scorched chute can have a funnel attached to it and be used to input items into the foundry. Useful if you have an ore processing setup."
@@ -2075,7 +2076,7 @@
 		{
 			title: "Get Fluids in and out the Foundry"
 			x: -23.0d
-			y: 4.0d
+			y: 3.5d
 			subtitle: "You stick it right into the side!"
 			description: [
 				"A scorched drain will let you pump fluids in and out of the foundry with Create pipes."
@@ -2119,7 +2120,7 @@
 		{
 			title: "Pratical-ish Foundry Deco"
 			x: -23.0d
-			y: 6.0d
+			y: 5.5d
 			subtitle: "Check what's in your foundry!"
 			description: [
 				"Foundries can be built pretty high. It may be handy to look into them - or even better, have a ladder out of them for when you fall in."
