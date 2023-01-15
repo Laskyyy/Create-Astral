@@ -4,7 +4,7 @@
     "type": "minecraft:blaze"
   },
   "result": {
-    "fluid": "tconstruct:blood",
+    "fluid": "tconstruct:blazing_blood",
     "amount": 1620
   },
   "damage": 2

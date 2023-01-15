@@ -845,6 +845,25 @@ function lizardGeologyAlchemyChanges(event) {
   ]);
 }
 
+// Some changes need to be made after all of Lasky's changes, lest their changes will override mine.
+function lizardPostLaskyChange(event) {
+  // The first number is a number I found looking through the configs. The second number is
+  //  the yield for every other entity smelting - "50mb"
+  const BLAZING_BLOOD_MADIC_AMOUNT = 1620;
+  // const BLAZING_BLOOD_MADIC_AMOUNT = 4050;
+  event.custom({
+    type: 'tconstruct:entity_melting',
+    entity: {
+      type: 'minecraft:blaze'
+    },
+    result: {
+      fluid: "tconstruct:blazing_blood",
+      amount: BLAZING_BLOOD_MADIC_AMOUNT,
+    },
+    damage: 2
+  });
+}
+
 // Lasky - feel free to move the code in here to more appropriate places, I just wanted
 //  to keep all my changes together
 function lizardChanges(event) { 
@@ -992,7 +1011,7 @@ onEvent('recipes', event => {
 	event.remove({type: 'create:mixing', output: 'tconstruct:hepatizon_ingot'})
 	event.remove({type: 'create:mixing', output: 'tconstruct:queens_slime_ingot'})
 	event.remove({output: 'create:blaze_cake'})
-  event.remove({output: 'tconstruct:blazing_blood'})
+  // event.remove({output: 'tconstruct:blazing_blood'})
   event.remove({output: 'create:andesite_alloy', input: 'minecraft:andesite'})
 	event.remove({type: 'tconstruct:entity_melting'})
 	event.remove({type: 'tconstruct:alloy'})
@@ -3118,7 +3137,7 @@ event.recipes.createMixing('createastral:astral_conduit', [
   'phonos:redstone_chip'
 ]).processingTime(30)
 
-
+  lizardPostLaskyChange(event);
 })
 
 
