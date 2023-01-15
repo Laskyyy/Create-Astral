@@ -333,7 +333,7 @@ onEvent('item.registry.armor_tiers', event => {
   })
   event.add('sturdyarmor', tier => {
     tier.durabilityMultiplier = 300 // Each slot will be multiplied with [13, 15, 16, 11]
-    tier.slotProtections = [3, 5, 5, 4]
+    tier.slotProtections = [3, 4, 6, 3]
     tier.enchantmentValue = 0
     tier.equipSound = 'minecraft:item.armor.equip_iron'
     tier.repairIngredient = 'create:sturdy_sheet'
