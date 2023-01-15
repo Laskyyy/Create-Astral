@@ -14,8 +14,8 @@
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	images: [{
-		x: -13.0d
-		y: 0.0d
+		x: -21.5d
+		y: -5.0d
 		width: 3.0d
 		height: 3.0d
 		rotation: 0.0d
@@ -52,11 +52,14 @@
 		}
 		{
 			title: "The World of \"Smart\""
-			x: -16.0d
-			y: 3.0d
-			shape: "rsquare"
+			x: -17.0d
+			y: 3.5d
 			subtitle: "Discover the most stylish alloy"
-			description: ["Put brass production into OVERDRIVE as you'll want to use many of its unique tools. Even if you have automation going on, you may want to consider investing in a quarry or tunnelbore so quick injections of these can be made into your life."]
+			description: [
+				"Put brass production into OVERDRIVE as you'll want to use many of its unique tools. Even if you have automation going on, you may want to consider investing in a quarry or tunnelbore so quick injections of these can be made into your life."
+				""
+				"From this point, the most efficient way of producing cogwheels is going to be directly pouring them with a brass filled spout. Consider automating brass casing and cogwheels this way, as these are going to be needed in bulk!"
+			]
 			dependencies: ["51BD31261A5725E3"]
 			id: "705C815541DB89F8"
 			tasks: [
@@ -81,7 +84,7 @@
 		{
 			title: "Automate the World!"
 			x: -10.0d
-			y: 3.0d
+			y: 3.5d
 			shape: "rsquare"
 			subtitle: "Imagination's the automation limit now"
 			description: [
@@ -97,7 +100,7 @@
 				"21DBCD51CC35B794"
 				"22B29B232EF2638F"
 			]
-			size: 1.5d
+			size: 1.75d
 			id: "3EA569DE4AC60CC2"
 			tasks: [
 				{
@@ -115,10 +118,13 @@
 			]
 		}
 		{
-			x: -13.0d
-			y: 2.0d
+			x: -13.5d
+			y: 2.5d
 			subtitle: "A common crafting component."
-			description: ["From this point, the most efficient way of producing cogwheels is going to be directly pouring them with a brass filled spout. Consider automating brass casing and cogwheels this way, as these are going to be needed in bulk!"]
+			description: [
+				"Precision mechanisms are used in all sorts of powerful Create utilities. You'll find yourself smiling each time you craft one."
+				""
+			]
 			dependencies: ["705C815541DB89F8"]
 			id: "21DBCD51CC35B794"
 			tasks: [{
@@ -136,8 +142,8 @@
 		}
 		{
 			title: "CRUSH"
-			x: -7.0d
-			y: 3.0d
+			x: -6.5d
+			y: 3.5d
 			shape: "rsquare"
 			subtitle: "Like grinding but different"
 			description: [
@@ -188,8 +194,8 @@
 		}
 		{
 			title: "It's like copper but cooler"
-			x: -16.0d
-			y: 1.5d
+			x: -16.5d
+			y: 2.5d
 			subtitle: "and highly enchantable!"
 			description: ["Effectively a minor upgrade to iron, except with a major enchanting bonus allowing for easy god tier enchants."]
 			dependencies: ["705C815541DB89F8"]
@@ -263,7 +269,7 @@
 		}
 		{
 			title: "We're Gonna Need a Bigger Crafter..."
-			x: -2.5d
+			x: -2.0d
 			y: 2.5d
 			shape: "hexagon"
 			subtitle: "Probably shouldn't launch that rocket from some grass."
@@ -274,7 +280,7 @@
 			]
 			hide_dependency_lines: false
 			dependencies: ["62C959AC63DD2A89"]
-			size: 1.5d
+			size: 1.75d
 			id: "44D51F142E9E8902"
 			tasks: [{
 				id: "734050A549967E71"
@@ -285,8 +291,8 @@
 		}
 		{
 			title: "Operate a boiler, young wolf."
-			x: -18.0d
-			y: 2.5d
+			x: -15.5d
+			y: 1.0d
 			shape: "gear"
 			subtitle: "Ultimate Kinetic Power"
 			description: [
@@ -296,7 +302,7 @@
 				"Aim for a level 9 boiler as these are incredibly efficient for their cost. The moment electricity generation enters the room those stress units will be eaten up in no time."
 			]
 			dependencies: ["51BD31261A5725E3"]
-			size: 1.25d
+			size: 1.5d
 			id: "186E8426BD7CE343"
 			tasks: [{
 				id: "14D6DAEC2B1BB1C9"
@@ -307,7 +313,7 @@
 		}
 		{
 			x: -10.0d
-			y: 4.5d
+			y: 5.0d
 			subtitle: "It's brass now."
 			description: ["A basic computer but like, better?"]
 			dependencies: ["3EA569DE4AC60CC2"]
@@ -327,7 +333,7 @@
 		}
 		{
 			x: -10.0d
-			y: 5.5d
+			y: 6.0d
 			subtitle: "Stop playing bad apple on boot, PLEASE"
 			description: ["\"no\""]
 			dependencies: ["1142742E67E7F493"]
@@ -347,7 +353,7 @@
 		}
 		{
 			x: -10.0d
-			y: 6.5d
+			y: 7.0d
 			subtitle: "There are so many uses for this!"
 			description: ["You still can't program though!"]
 			dependencies: ["75E964418F7E94F0"]
@@ -404,8 +410,8 @@
 		}
 		{
 			title: "The Ultimate Recycling Project"
-			x: -8.0d
-			y: 4.0d
+			x: -7.5d
+			y: 4.5d
 			shape: "diamond"
 			subtitle: "Crush for assorted goodies."
 			description: [
@@ -452,8 +458,8 @@
 		}
 		{
 			title: "Vegan fuel? Closer than you think!"
-			x: -5.5d
-			y: -3.5d
+			x: -4.0d
+			y: -4.5d
 			description: [
 				""
 				"The plantball will fall apart if sent directly to the compressor. Pre-press it a bit."
@@ -471,8 +477,8 @@
 		}
 		{
 			title: "Pure Fuel"
-			x: -4.0d
-			y: -2.5d
+			x: -2.0d
+			y: -4.5d
 			subtitle: "Wet some fertiliser into submission."
 			description: ["You do not want ANY impurities in rocket fuel. Wash them away."]
 			dependencies: ["232F25F6D9BFC2F5"]
@@ -486,14 +492,14 @@
 				id: "405706BF3F2C038F"
 				type: "item"
 				item: "farmersdelight:organic_compost"
-				count: 15
+				count: 16
 			}]
 		}
 		{
 			title: "Welcome to the Moon!"
 			icon: "ad_astra:moon_globe"
 			x: -19.5d
-			y: -2.5d
+			y: -3.0d
 			shape: "pentagon"
 			subtitle: "Read me!"
 			description: [
@@ -501,21 +507,26 @@
 				""
 				"However, the moon provides many invaluable resources for accomplishing this. The bottom path will have irreplacable utilities for managing the logistics of so many resources, while the top paths will give you a glimpse of the world of electricity with new tools to process materials in new ways. Both paths will give methods needed to fully automate any kind of earth resource you can imagine."
 				""
-				"Overcome ccience and you'll use it to explore the stars above. Don't let the sinking hole of over-engineering trap you though; automation quests are there to tell you something can be automated; not that it must."
+				"Overcome science and you'll use it to explore the stars above. Don't let the sinking hole of over-engineering trap you though; automation quests are there to tell you something can be automated; not that it must."
 			]
 			dependencies: ["15B9947ABCCB882F"]
-			size: 2.0d
+			size: 2.5d
 			id: "306D009F01634115"
 			tasks: [{
-				id: "3D1C9C82DFB06842"
-				type: "dimension"
+				id: "59023CFBD7DC7228"
+				type: "checkmark"
+				title: "Understood."
 				icon: "ad_astra:moon_globe"
-				dimension: "ad_astra:moon"
+			}]
+			rewards: [{
+				id: "6C0AC8AA4668A80A"
+				type: "xp"
+				xp: 300
 			}]
 		}
 		{
 			title: "The Path of Silver"
-			x: -17.5d
+			x: -17.0d
 			y: -3.0d
 			subtitle: "Let's get electric"
 			description: [
@@ -524,18 +535,22 @@
 				"This path, you'll explore electricity and specialized machines. Getting rotation power around the base can be made much easier, and although these machines may not impact you as much as the brass path, they'll become more and more important as you dive deeper into the cosmos."
 			]
 			dependencies: ["306D009F01634115"]
-			size: 1.25d
+			size: 1.5d
 			id: "1DFF76A494C9A586"
 			tasks: [{
-				id: "1745C912A6341265"
-				type: "item"
-				item: "techreborn:silver_ingot"
+				id: "6D9FBDDB83DBA298"
+				type: "questsadditions:break"
+				title: "Break Silver Ore"
+				block_type: 0
+				block: "techreborn:silver_ore"
+				value: 1L
+				checkItem: false
 			}]
 		}
 		{
 			title: "Automate Desh!"
 			x: -21.5d
-			y: -2.0d
+			y: -2.5d
 			shape: "diamond"
 			subtitle: "This process applies to same to each planets primary sand+material"
 			description: [
@@ -547,29 +562,23 @@
 			]
 			dependencies: ["306D009F01634115"]
 			id: "7909A5A0E194C800"
-			tasks: [
-				{
-					id: "415C272D0390AAFA"
-					type: "item"
-					item: "ad_astra:desh_nugget"
-					count: 512L
-				}
-				{
-					id: "21AFFD1AFDB56D42"
-					type: "item"
-					item: "ad_astra:moon_sand"
-				}
-			]
+			tasks: [{
+				id: "415C272D0390AAFA"
+				type: "item"
+				title: "8x64 Desh Nugget"
+				item: "ad_astra:desh_nugget"
+				count: 512L
+			}]
 		}
 		{
-			x: -13.0d
-			y: 4.0d
+			x: -13.5d
+			y: 4.5d
 			shape: "rsquare"
 			subtitle: "Pour molten brass onto a copper casing to craft brass casing."
 			description: [
 				"Brass casings are needed for the smartest and most useful of Create machines - Machines with \"smart\" functionality. They are essential for logistics in large, complicated factories."
 				""
-				"Brass casings are the final tier of casings, at least for create machines. Machine casings on the other side of the chapter will have more progressions."
+				"Brass casings are the final tier of casings, at least for Create machines. Machine casings on the other side of the chapter will have more progressions."
 				""
 				"Reminder that tinker faucets and create spouts are fully automatable, don't expose yourself to manual labour!"
 			]
@@ -593,19 +602,20 @@
 				"The path of brass will lead you to the ultimate ends of both the Tinker's Construct mod, and the Create mod. You'll have every tool you need to fully manage intricate production lines."
 			]
 			dependencies: ["306D009F01634115"]
-			size: 1.25d
+			size: 1.5d
 			id: "6027602617EC9F1F"
 			tasks: [{
 				id: "369624A3BE4061DF"
 				type: "structure"
+				title: "Find a Lunar Pipeline"
 				icon: "ad_astra:iron_plating"
 				structure: "incendium:pipeline"
 			}]
 		}
 		{
 			title: "Essential Plate #2"
-			x: -17.0d
-			y: -1.5d
+			x: -16.5d
+			y: -1.0d
 			subtitle: "Roundabout importance"
 			description: [
 				"Lapis sheets are ingredients in very recipes, but they have one use: integrated circuits."
@@ -628,7 +638,7 @@
 			title: "Digital Revolution"
 			x: -15.5d
 			y: -2.0d
-			subtitle: "They're kind of important to technology, right?"
+			subtitle: "Funny you invent icrcuits before electricity"
 			description: ["Integrated Circuits are used in all sorts of machines."]
 			dependencies: [
 				"1A08EE7C76242947"
@@ -645,7 +655,8 @@
 			title: "Tier III Casings"
 			x: -15.5d
 			y: -3.0d
-			subtitle: "Read this for the basics of machinery"
+			subtitle: "Those andesite casings have come a long way..."
+			description: ["Machine frames are the basis of many silver electrical machines. They will also be used to craft even further tiers of casings."]
 			dependencies: ["1DFF76A494C9A586"]
 			id: "2E7D02CA77627EF5"
 			tasks: [{
@@ -670,13 +681,15 @@
 		}
 		{
 			title: "Efficiently Produce Wires."
-			x: -10.0d
+			x: -11.0d
 			y: 0.5d
 			subtitle: "Save on some resources this way, entirely optional."
 			description: [
-				"The Create Additions Rolling Mill had its run :("
+				"The Create Additions Rolling Mill had its run as being the cool new thing :("
 				""
 				"...Just in time for Tesla Coils to be the cool new creative addition."
+				""
+				"It will produce Tech Reborn cables and Create Addition cables at an improved rate, but it won't produce Create Additions rods, so do actually keep your rolling mill around."
 			]
 			dependencies: ["61878C8DC870AC6A"]
 			id: "52EC8406E928BDB3"
@@ -688,7 +701,7 @@
 		}
 		{
 			title: "HUGE rubber gainz"
-			x: -10.0d
+			x: -11.0d
 			y: -0.5d
 			subtitle: "Increase the efficiency of converting tree sap into rubber using an extractor."
 			description: ["Many more recipes included to cater for automation of resources. A lot of these are dyes, but there are some useful dyes."]
@@ -702,14 +715,12 @@
 		}
 		{
 			title: "The Compressor"
-			x: -8.0d
+			x: -6.5d
 			y: -2.0d
 			description: [
 				"Electrical machines allow you to either do new things, or do things more efficiently than ever before."
 				""
 				"The compressor allows you to compress items so hard that they become \"plates.\" It is also strong enough to turn organic matter into fuel."
-				""
-				"Rocket biofuel is still a difficult process anyways, especially with the technology available. Automating it will test your factory-building skills, but the stars beckon you discover a new age within them."
 			]
 			dependencies: ["752215E611021472"]
 			id: "07B10625859F1AF9"
@@ -721,7 +732,7 @@
 		}
 		{
 			title: "Prepare the biofuel"
-			x: -2.5d
+			x: -2.0d
 			y: -2.5d
 			shape: "diamond"
 			subtitle: "Use that canning machine to load pure biomatter into liquid form."
@@ -734,7 +745,7 @@
 				"1533B14714529386"
 				"22C043704EB6527C"
 			]
-			size: 1.5d
+			size: 1.75d
 			id: "57724BFDF0A78FAF"
 			tasks: [{
 				id: "6FDEEB9ACA45AA73"
@@ -779,19 +790,23 @@
 			x: -11.0d
 			y: -2.0d
 			shape: "rsquare"
+			subtitle: "All your energy can be transferred around with easy-to-use wires now!"
+			description: [
+				"The connector attaches to either a energy producer, or an energy consumer. Once attached, a copper spool can be be attached between them, allowing electricity to be passed around."
+				""
+				"The copper spool only has so much range. If you need it to travel even further distances, than you can use connectors attached to flat surface as a middle point."
+				""
+				"Tech Reborn insulated cables can also transfer energy around, but are much uglier and clunky."
+			]
 			dependencies: ["5459F646B9A392C4"]
-			size: 1.5d
+			size: 1.75d
 			id: "752215E611021472"
 			tasks: [
 				{
 					id: "7EE6369103C1E25B"
 					type: "item"
 					item: "createaddition:connector"
-				}
-				{
-					id: "1CFFDA15E6B5E8DF"
-					type: "item"
-					item: "techreborn:insulated_copper_cable"
+					count: 2L
 				}
 				{
 					id: "2C15FF4A593E1B6C"
@@ -799,13 +814,28 @@
 					item: "createaddition:copper_spool"
 				}
 			]
+			rewards: [{
+				id: "1D210D89E1A57307"
+				type: "item"
+				item: "techreborn:manual"
+			}]
 		}
 		{
 			title: "We're going to Mars"
-			x: -2.5d
+			x: -2.0d
 			y: 0.0d
 			shape: "circle"
 			subtitle: "Not sponsored by SpaceX"
+			description: [
+				"Crouch and right click to open its UI. From there, biofuel can be deposited. It can store up to three buckets; that being said, its a smart idea to keep some spare. Being stranded is the worst thing that can happen to you."
+				""
+				""
+				"Right-click to enter the rocket. After holding space for awhile you'll launch off and gain access to a planetary selection system. You can't explore every planet just yet, but you'll still have some new options."
+				""
+				"After selecting a location, you'll descend on the planet in a lander. Space will decelerate it. Make sure you do not hit the ground too fast: the lander will explode and you'll be left with no way home. The truly paranoid will take two rockets. F5 can help with the landing process."
+				""
+				"Happy space-faring! There's a whole solar system to discover!"
+			]
 			dependencies: [
 				"1BF9656E9FBB2364"
 				"57724BFDF0A78FAF"
@@ -823,19 +853,44 @@
 					tag: { }
 				}
 			}]
+			rewards: [
+				{
+					id: "0BFEDA7609F5DF19"
+					type: "item"
+					item: "create:precision_mechanism"
+					count: 5
+				}
+				{
+					id: "735F235E48CDAB23"
+					type: "item"
+					item: "createaddition:connector"
+					count: 8
+				}
+				{
+					id: "4C36AF4E594EDE2A"
+					type: "item"
+					item: "createaddition:copper_spool"
+					count: 5
+				}
+			]
 		}
 		{
 			title: "Those hands sure can craft"
-			x: -5.5d
+			x: -4.5d
 			y: 1.0d
 			shape: "hexagon"
 			subtitle: "Produce a NASA workbench for rocket creation"
+			description: [
+				"The NASA workbench is used exclusively for crafting rockets. This thing requires electricity!"
+				""
+				"What the heck's a NASA in this universe?"
+			]
 			dependencies: [
 				"75CE520F392CC1E1"
 				"3EA569DE4AC60CC2"
 				"463D366C0BF340BF"
 			]
-			size: 1.5d
+			size: 1.75d
 			id: "1BF9656E9FBB2364"
 			tasks: [{
 				id: "21511A94B9A5AD53"
@@ -845,7 +900,7 @@
 		}
 		{
 			title: "Space Powah"
-			x: -7.0d
+			x: -5.5d
 			y: -0.5d
 			subtitle: "A little more expensive, but allows for easy movement of power generation."
 			description: ["Especially useful for space."]
@@ -861,60 +916,28 @@
 			}]
 		}
 		{
-			title: "I got some new tools for ya"
+			title: "I Got Some New Tools for Ya"
 			x: -11.0d
-			y: -0.5d
-			subtitle: "These have no durability, are enchantable but require power as a resource instead!"
+			y: -4.5d
+			subtitle: "These have no durability, are enchantable, but require power as a resource instead!"
+			description: [
+				"They may not be more powerful than upgraded tinker tools, but enchanting via the old way and keeping them forever can be pretty handy."
+				""
+				"A description of what they do is in each relevant quest."
+			]
 			dependencies: ["752215E611021472"]
 			optional: true
 			id: "64271E1245394C9A"
-			tasks: [
-				{
-					id: "62646C9BF89088C8"
-					type: "item"
-					item: "techreborn:basic_drill"
-				}
-				{
-					id: "1CBD3BC7D782332B"
-					type: "item"
-					item: "techreborn:basic_chainsaw"
-				}
-				{
-					id: "00A14ED013C50232"
-					type: "item"
-					item: "techreborn:basic_jackhammer"
-				}
-				{
-					id: "600AE253D47E7CE8"
-					type: "item"
-					item: {
-						id: "techreborn:treetap"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "2F631729800845C3"
-					type: "item"
-					item: {
-						id: "techreborn:rock_cutter"
-						Count: 1b
-						tag: {
-							Enchantments: [{
-								id: "minecraft:silk_touch"
-								lvl: 1s
-							}]
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "7B272C5C7E0B9420"
+				type: "checkmark"
+				title: "Understood."
+			}]
 		}
 		{
 			title: "Navigation Systems: Check"
-			x: -7.0d
-			y: 0.5d
+			x: -6.5d
+			y: 0.0d
 			subtitle: "Raow"
 			description: [
 				"The Redstone Chip's specialization in frequency operations turns out to be particularly good for space traveling navigation. It just needs a little more sprucing up so measurements and calculations are as precise they can be."
@@ -932,37 +955,43 @@
 		{
 			title: "Desh Race"
 			x: -20.0d
-			y: -4.5d
+			y: -5.0d
 			subtitle: "It does look tasty, doesn't it."
 			description: ["Desh is used in specialized space machinery. Although it won't help your factories, desh becomes important later on, so you'll want to collect it when you can."]
 			dependencies: ["306D009F01634115"]
 			id: "59694D713430B333"
 			tasks: [{
-				id: "24A310896656E45C"
-				type: "item"
-				item: "ad_astra:moon_desh_ore"
+				id: "09CDB7F72120CC02"
+				type: "questsadditions:break"
+				title: "Break Desh Ore"
+				block_type: 0
+				block: "ad_astra:moon_desh_ore"
+				value: 1L
+				checkItem: false
 			}]
 		}
 		{
 			title: "The Piglin Planet"
-			x: 0.0d
+			icon: "ad_astra:mars_globe"
+			x: 0.5d
 			y: 0.0d
 			shape: "gear"
-			subtitle: "It's time to introduce yourself to some porky friends."
+			subtitle: "Chapter 4 unlock."
+			description: ["It's time to introduce yourself to some porky friends."]
 			dependencies: ["6E20B194F5CA8F22"]
 			size: 1.5d
 			id: "63DCF596AAA9A232"
 			tasks: [{
 				id: "16182598B074073D"
 				type: "dimension"
-				icon: "ad_astra:mars_globe"
+				title: "Visit Dimension: Mars"
 				dimension: "ad_astra:mars"
 			}]
 		}
 		{
 			title: "Living on the Moon!"
 			x: -20.0d
-			y: -5.5d
+			y: -6.0d
 			subtitle: "If you have plans to base on the Moon or any other planet without oxygen, you'll need to set up an oxygen distributor with a decent source of oxygen to pump out."
 			description: ["By using airlocks and solid blocks you can reduce to volume of area needed to distribute oxygen."]
 			dependencies: ["59694D713430B333"]
@@ -975,8 +1004,8 @@
 		}
 		{
 			title: "Let There be LED."
-			x: -12.0d
-			y: -3.5d
+			x: -13.0d
+			y: -1.5d
 			subtitle: "Light up the world with snazzy new lights."
 			description: [
 				"Require an adjacent power source to turn on."
@@ -1001,8 +1030,8 @@
 		}
 		{
 			title: "Upgrading storage units."
-			x: -16.5d
-			y: -0.5d
+			x: -15.5d
+			y: -1.0d
 			subtitle: "Store 128 blocks in one stack!"
 			description: [
 				"Tech Reborn storages can be upgraded to store many more objects."
@@ -1023,7 +1052,7 @@
 		{
 			title: "Nuclear?"
 			x: -21.0d
-			y: -4.0d
+			y: -4.5d
 			subtitle: "Uncover the site of a disaster, where a strange entity resides..."
 			description: ["The gauntlet at the centre of a reactor is an optional boss for those wanting to test their skills. Bring highly enchanted armour and a bed!"]
 			dependencies: ["306D009F01634115"]
@@ -1031,6 +1060,7 @@
 			tasks: [{
 				id: "7AA332BD2DA6428E"
 				type: "structure"
+				title: "Find a Nuclear Reactor"
 				icon: "chipped:yellow_concrete_19"
 				structure: "incendium:nether_reactor"
 			}]
@@ -1038,7 +1068,7 @@
 		{
 			title: "Some Tinker \"Upgrades\""
 			x: -18.5d
-			y: 4.0d
+			y: 3.5d
 			subtitle: "Kit it out with some snazzy gear"
 			description: ["They don't actually do anything improved though."]
 			dependencies: ["11AF7F7CE0940C06"]
@@ -1080,8 +1110,8 @@
 		}
 		{
 			title: "Even Better Smelting"
-			x: -20.5d
-			y: 5.5d
+			x: -22.0d
+			y: 5.0d
 			shape: "rsquare"
 			subtitle: "Get yourself a tinkers multiblock foundry"
 			description: [
@@ -1092,10 +1122,10 @@
 				"For instructions on how to build one, read both these guides. Do note that this modpack skips over \"smelteries\" entirely, which the light gray book deals with. Bother smelteries and foundaries have a lot in common though, and both books will teach you of the best tool materials and upgrades available to you."
 			]
 			dependencies: [
-				"11AF7F7CE0940C06"
 				"1A7150A746855B4D"
+				"0BCFF062FD1518BF"
 			]
-			size: 1.25d
+			size: 1.5d
 			id: "5355CA2F0BA74BF1"
 			tasks: [{
 				id: "197ABEE39D155F79"
@@ -1117,7 +1147,7 @@
 		}
 		{
 			x: -9.0d
-			y: 4.5d
+			y: 5.0d
 			dependencies: ["3EA569DE4AC60CC2"]
 			optional: true
 			id: "3B27F482BC8939A6"
@@ -1129,7 +1159,7 @@
 		}
 		{
 			x: -9.0d
-			y: 5.5d
+			y: 6.0d
 			dependencies: ["3B27F482BC8939A6"]
 			optional: true
 			id: "12DFDA396C44D93D"
@@ -1148,7 +1178,7 @@
 		}
 		{
 			x: -8.0d
-			y: 5.5d
+			y: 6.0d
 			dependencies: ["3B27F482BC8939A6"]
 			optional: true
 			id: "5D0287CE6D3481CC"
@@ -1167,6 +1197,7 @@
 		}
 		{
 			title: "Automate redstone!"
+			icon: "minecraft:redstone"
 			x: -9.0d
 			y: 0.5d
 			shape: "diamond"
@@ -1177,18 +1208,32 @@
 			]
 			dependencies: ["64A1C434EB7021E6"]
 			id: "512B5F1349E34457"
-			tasks: [{
-				id: "2346509FED8141D4"
-				type: "item"
-				item: "techreborn:synthetic_redstone_crystal"
+			tasks: [
+				{
+					id: "2115F7EC251337A0"
+					type: "item"
+					title: "8x64 Redstone"
+					item: "minecraft:redstone"
+					count: 512L
+				}
+				{
+					id: "6011B7411A8E3902"
+					type: "item"
+					item: "techreborn:synthetic_redstone_crystal"
+				}
+			]
+			rewards: [{
+				id: "7421CB981E61C59C"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
 			title: "These chests are just getting silly..."
-			x: -7.0d
-			y: -3.0d
+			x: -6.5d
+			y: -1.0d
 			subtitle: "How many slots does a man really need?"
-			description: ["8 is the zen answer to that question, but tech is about MORE"]
+			description: ["1 slot is all you need, but technology is about having MORE THAN YOU NEED!!!"]
 			dependencies: [
 				"0F4C452C9C9AB1B8"
 				"07B10625859F1AF9"
@@ -1201,47 +1246,13 @@
 			}]
 		}
 		{
-			title: "MEKA ACTIVATED"
-			icon: "mtmechs:pa_whole_item"
-			x: -15.0d
-			y: -5.0d
-			subtitle: "Welcome to Overwatch"
-			dependencies: ["19CCFE1A90B73F44"]
-			optional: true
-			id: "34E41CF057C08A48"
-			tasks: [
-				{
-					id: "5501747A7C2434E7"
-					type: "item"
-					item: "mtmechs:pa_whole_item"
-				}
-				{
-					id: "43E483078FEF00F0"
-					type: "item"
-					item: "mtmechs:magicite_item"
-				}
-			]
-		}
-		{
-			title: "Lunatic Traveller"
+			title: "Lunatic Scavanger"
 			x: -21.5d
-			y: -3.0d
+			y: -3.5d
 			subtitle: "Learn the resources you can find on the moon."
 			dependencies: ["306D009F01634115"]
 			id: "661A93F58DBEFB8F"
 			tasks: [
-				{
-					id: "5C113680FFF388E7"
-					type: "biome"
-					icon: "ad_astra:moon_stone"
-					biome: "ad_astra:lunar_wastelands"
-				}
-				{
-					id: "2A4580D2BB989DD2"
-					type: "biome"
-					icon: "minecraft:polished_basalt"
-					biome: "minecraft:basalt_deltas"
-				}
 				{
 					id: "5F58EC85A04C70F4"
 					type: "item"
@@ -1267,18 +1278,30 @@
 					type: "item"
 					item: "create:scoria"
 				}
+				{
+					id: "7B4E79AB6C49C4A8"
+					type: "item"
+					item: "minecraft:soul_sand"
+				}
+				{
+					id: "11BA44E87B3BDA23"
+					type: "item"
+					item: "ad_astra:cheese"
+				}
 			]
 		}
 		{
 			title: "Creat a Space Station!!"
-			x: -1.0d
-			y: 1.5d
+			x: -0.5d
+			y: -1.5d
 			shape: "circle"
 			subtitle: "Orbit dimensions have a 1:8 block travel ratio, just like the nether."
 			description: [
 				"It might be worth setting up an outpost for fast travel, as planets are only 1:2."
 				""
 				"Also, it's really awesome to live in space."
+				""
+				"Be alert that the space station does not come with oxygen generation or distribution capabilities. You will have to set it up yourself after it's made. That, and you can crash your lander into this space station. Don't do that."
 			]
 			dependencies: ["6E20B194F5CA8F22"]
 			id: "47A155F9CAD19710"
@@ -1308,11 +1331,23 @@
 					count: 32L
 				}
 			]
+			rewards: [
+				{
+					id: "1B8C730BF479F42F"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "4BC03F1BDD44508F"
+					type: "item"
+					item: "minecraft:emerald_block"
+				}
+			]
 		}
 		{
 			title: "Fast Food Fuel"
 			icon: "createaddition:seed_oil_bucket"
-			x: -7.0d
+			x: -6.0d
 			y: -5.0d
 			shape: "diamond"
 			subtitle: "Automate a seed."
@@ -1328,7 +1363,7 @@
 				{
 					id: "1C7275685128FEF1"
 					type: "item"
-					title: "Any #c:seeds"
+					title: "Any seeds"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -1346,11 +1381,17 @@
 		}
 		{
 			title: "Plant Materials"
-			x: -7.0d
+			x: -6.0d
 			y: -4.0d
 			shape: "diamond"
 			subtitle: "Automate one of these"
-			description: ["Seed oil will need to mix with plant matter in order to coalesce. It can't be too salty or sugary, but that still leaves a couple of options to automate."]
+			description: [
+				"Seed oil will need to mix with plant matter in order to coalesce. Too many nutrients will intefere with the chemistry, so your options are limited."
+				""
+				"You can take advantage of an existing tree farm to automate leaves. This will require a way to restock it with sheers however."
+				""
+				"A grass farm might be simpler, especially since you won't need to hotpatch your tree farm. However, you'll still need a deployer with sheers, and you will also need to find a way to deploy bone meal to grass as well."
+			]
 			min_required_dependencies: 1
 			dependencies: ["4C59011F80601279"]
 			secret: true
@@ -1359,7 +1400,7 @@
 				{
 					id: "624F8EE22AB2B55B"
 					type: "item"
-					title: "Any #minecraft:leaves"
+					title: "Any leaves"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -1369,21 +1410,9 @@
 					}
 				}
 				{
-					id: "1BBBBFF3AD97414F"
-					type: "item"
-					title: "Any #minecraft:saplings"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "minecraft:saplings"
-						}
-					}
-				}
-				{
 					id: "301F319A8D43EC84"
 					type: "item"
-					title: "Any #c:grass_variants"
+					title: "Any type of grass"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -1396,7 +1425,7 @@
 		}
 		{
 			title: "Painballs"
-			x: -6.0d
+			x: -5.0d
 			y: -4.5d
 			subtitle: "Not a paintball"
 			description: ["Mixing seed oil and plant material will clamp it into a loose organic compound that can be refined further."]
@@ -1413,8 +1442,8 @@
 		}
 		{
 			title: "We're Going to Burn Dead Things"
-			x: -5.0d
-			y: -2.5d
+			x: -3.0d
+			y: -4.5d
 			subtitle: "Just some final processing to do."
 			description: ["Use the compressor. It smells like MacDonalds."]
 			dependencies: [
@@ -1430,8 +1459,8 @@
 		}
 		{
 			title: "Impure Fuel"
-			x: -4.5d
-			y: -3.875d
+			x: -3.0d
+			y: -5.875d
 			shape: "diamond"
 			subtitle: "A healthy coal alternative"
 			description: ["Biomass can be refined into biomatter pellets, a very efficient solid fuel source to power furnaces and other such machines. It might be worth using some biomatter for this, or coming back to this recipe once there is excess rocket fuel."]
@@ -1452,8 +1481,14 @@
 			}]
 		}
 		{
-			x: -14.0d
+			x: -14.5d
 			y: -5.0d
+			subtitle: "More useful on Earth than the Moon..."
+			description: [
+				"The hazmat will let you wade through lava. It also has fall damage resistance and protects you from freezing."
+				""
+				"It won't give you oxygen though."
+			]
 			dependencies: ["19CCFE1A90B73F44"]
 			id: "6B07593DD5128CAD"
 			tasks: [
@@ -1486,26 +1521,27 @@
 			]
 		}
 		{
+			title: "Lunatic Traveller"
 			x: -19.0d
-			y: -4.5d
+			y: -5.0d
 			dependencies: ["306D009F01634115"]
 			id: "582C723B2F261D68"
-			tasks: [{
-				id: "71A9AEA0F40B0508"
-				type: "location"
-				dimension: "minecraft:overworld"
-				ignore_dimension: false
-				position: [I;
-					0
-					0
-					0
-				]
-				size: [I;
-					1
-					1
-					1
-				]
-			}]
+			tasks: [
+				{
+					id: "380B63DBA28F27EA"
+					type: "biome"
+					title: "Visit Some Lunar Wastelands"
+					icon: "ad_astra:moon_sand"
+					biome: "ad_astra:lunar_wastelands"
+				}
+				{
+					id: "24A51F3747706B79"
+					type: "biome"
+					title: "Visit Some Lunar Basalt Deltas"
+					icon: "minecraft:basalt"
+					biome: "minecraft:basalt_deltas"
+				}
+			]
 		}
 		{
 			x: -9.0d
@@ -1514,7 +1550,9 @@
 			description: [
 				"Tesla Coils are unique in that they operate like kinetic machines, but they use electricity."
 				""
-				"The low-current but high-voltage they produce can be used to repower some tools (not the power tools unforunately). They can also be a way to provide a current to materials that can be ionized. Nice!"
+				"The low-current but high-voltage they produce can be used to provide a current to materials that can become ionized into something different. Nice!"
+				""
+				"DESPITE WHAT ITS PONDER/DESCRIPTION SAYS, IT CAN NOT CHARGE ELECTRICAL TOOLS AND BATTERIES. Use a battery box for that!"
 			]
 			dependencies: ["752215E611021472"]
 			id: "64A1C434EB7021E6"
@@ -1527,7 +1565,7 @@
 		{
 			title: "Brass Funnel My Beloved"
 			x: -17.0d
-			y: 4.5d
+			y: 5.0d
 			subtitle: "The most useful brass gizmo"
 			description: [
 				"Brass funnels operate like andesite tunnels except for two important distinctions: they can filter what what they take or give, and they can input or output up to whole stacks at a time."
@@ -1559,7 +1597,7 @@
 		{
 			title: "Funnel's Chad Sibbling"
 			x: -16.0d
-			y: 4.5d
+			y: 5.0d
 			subtitle: "WOW"
 			description: [
 				"Remember how niche andesite tunnels were, especially since chutes were the only way to get stacks onto a conveyor belt?"
@@ -1589,8 +1627,8 @@
 			}]
 		}
 		{
-			x: -15.0d
-			y: 4.5d
+			x: -18.0d
+			y: 5.0d
 			subtitle: "Dump things with intelligence"
 			description: [
 				"Smart Chutes are like normal chutes, except you can filter what gets dumped and by how much."
@@ -1618,8 +1656,8 @@
 			}]
 		}
 		{
-			x: -13.5d
-			y: 3.0d
+			x: -14.0d
+			y: 3.5d
 			subtitle: "It's the future of industry!!"
 			description: [
 				"Mechnical crafters can take items off of belts and depots and put them somewhere else, including other depots and belts, as well as funnels."
@@ -1645,8 +1683,8 @@
 		}
 		{
 			title: "No More Gearshifting"
-			x: -12.5d
-			y: 3.0d
+			x: -13.0d
+			y: 3.5d
 			subtitle: "This makes a mockery of engineering"
 			description: [
 				"The rotation speed controller lets you set the speed of rotation. It needs a large cogwheel on top of it to work."
@@ -1666,8 +1704,8 @@
 		}
 		{
 			title: "Wireless Redstone"
-			x: -14.5d
-			y: 5.5d
+			x: -14.0d
+			y: 6.5d
 			subtitle: "Great with sequenced gearshifts, and stockpile observers, and, and, and..."
 			description: [
 				"A redstone link will transmit a redstone signal wireless. They must be set to receive or broadcast with a wrench, and the wireless channel is determined by what items are in its two slots."
@@ -1684,8 +1722,8 @@
 			}]
 		}
 		{
-			x: -11.5d
-			y: 7.0d
+			x: -13.0d
+			y: 7.5d
 			shape: "gear"
 			subtitle: "LOGISTICS"
 			description: [
@@ -1705,8 +1743,8 @@
 		}
 		{
 			title: "Simpler Ways"
-			x: -12.5d
-			y: 5.5d
+			x: -12.0d
+			y: 6.5d
 			subtitle: "The observer recipes were so cursed!"
 			description: ["Certain chapter 2 recipes now have simpler recipes. Even if brass is a bit more rare, the simplified recipes are such a huge ease of mind."]
 			dependencies: ["22B29B232EF2638F"]
@@ -1726,8 +1764,8 @@
 		}
 		{
 			title: "CUSTOM AIRLOCKS"
-			x: -13.5d
-			y: 5.5d
+			x: -15.0d
+			y: 6.5d
 			subtitle: "These gearshifts let you overengineer everything!"
 			description: [
 				"Sequenced gearshifts let you you specify a sequence of rotations. For example, when it receives a redstone signal, it can rotate something exactly 60 degrees, regardless of output speed specified."
@@ -1746,8 +1784,8 @@
 		}
 		{
 			title: "GRIND"
-			x: -11.0d
-			y: -3.5d
+			x: -12.0d
+			y: -0.5d
 			shape: "rsquare"
 			subtitle: "Like crushing but different"
 			description: [
@@ -1766,8 +1804,8 @@
 			}]
 		}
 		{
-			x: -11.5d
-			y: 5.5d
+			x: -13.0d
+			y: 6.5d
 			subtitle: "What's in the box?"
 			description: [
 				"The content observer can broadcast a redstone signal whenever an inventory has a matching item."
@@ -1798,7 +1836,7 @@
 		}
 		{
 			x: -3.5d
-			y: -3.5d
+			y: -2.5d
 			subtitle: "Wow this is worthless"
 			description: [
 				"There few solids that can only be turned into liquids when contained in an air-tight cell. The canning machines allow you to do this."
@@ -1823,8 +1861,8 @@
 		}
 		{
 			title: "Useful Moving Contraption #1"
-			x: -14.5d
-			y: 7.0d
+			x: -16.0d
+			y: 6.5d
 			subtitle: "This allows you to move things back and forth"
 			description: [
 				"The gantry shaft allows you to push connected structures back and forth along a connected \"gantry\"."
@@ -1848,8 +1886,8 @@
 		}
 		{
 			title: "Useful Moving Contraption #2"
-			x: -13.5d
-			y: 7.0d
+			x: -16.0d
+			y: 7.5d
 			subtitle: "This allows you to move things back and forth"
 			description: [
 				"The rope pulley can be lowered and attach to connected structures. It can also move structures up and down."
@@ -1868,8 +1906,8 @@
 		}
 		{
 			title: "Useful Moving Contraption #3"
-			x: -12.5d
-			y: 7.0d
+			x: -15.0d
+			y: 7.5d
 			subtitle: "This allows you to move things back and forth"
 			description: [
 				"The piston can be push connected contraptions forwards. The sticky version can push them back and forther. They resemble regular Minecraft pistons, although their range can be made longer than their redstone counterpart."
@@ -1894,20 +1932,30 @@
 			]
 		}
 		{
-			x: -8.0d
+			title: "Let's Set Up Fuel Production Line"
+			x: -7.0d
 			y: -4.5d
-			dependencies: ["07B10625859F1AF9"]
+			shape: "pentagon"
+			subtitle: "You can start production of rocket fuel early if you want!"
+			description: [
+				"Rocket biofuel is a difficult process, especially with the technology you have available to you. Automating it will test your factory-building skills, but the stars beckon you discover a new age within them."
+				""
+				"Although you can do this as you complete the chapter, you will need certain tools from both sides of the tree in order to complete this challenge."
+			]
+			hide_dependency_lines: true
+			dependencies: ["306D009F01634115"]
+			size: 1.5d
 			id: "4C59011F80601279"
 			tasks: [{
 				id: "62E96FF6DC6FD344"
 				type: "checkmark"
-				title: "Let's Set Up Fuel Production Line"
+				title: "Let's Go!"
 			}]
 		}
 		{
 			title: "The Fabled Desh Plate"
-			x: -5.5d
-			y: -0.5d
+			x: -4.5d
+			y: -1.0d
 			shape: "hexagon"
 			subtitle: "Desh makes a comeback"
 			description: ["The desh plate is needed in many manners of space utilities and crafts."]
@@ -1920,8 +1968,8 @@
 			}]
 		}
 		{
-			x: -8.0d
-			y: 0.0d
+			x: -7.5d
+			y: -0.5d
 			subtitle: "Will melt you and electrocute you!"
 			description: [
 				"Electrum has limited technical applications, mostly for finely controlling electric currents in circuity that specializes in waves."
@@ -1934,6 +1982,12 @@
 				id: "0276F73188BF69D0"
 				type: "item"
 				item: "tconstruct:molten_electrum_bucket"
+			}]
+			rewards: [{
+				id: "365574D8751A7E34"
+				type: "item"
+				item: "minecraft:experience_bottle"
+				count: 5
 			}]
 		}
 		{
@@ -1972,7 +2026,7 @@
 		}
 		{
 			x: -19.5d
-			y: 4.0d
+			y: 3.5d
 			subtitle: "Seared Brick 2 the Sequel"
 			description: [
 				"Much like how seared bricks are to melters, scorched bricks are the foundation of many foundary blocks."
@@ -1988,8 +2042,8 @@
 			}]
 		}
 		{
-			x: -20.5d
-			y: 4.0d
+			x: -22.0d
+			y: 3.5d
 			subtitle: "Cool new multiblock material!!"
 			description: ["Scorched Bricks form the walls of a foundry. Literally. You place them down in a hollow cube and place the controller in one of them to make a foundry."]
 			dependencies: ["11AF7F7CE0940C06"]
@@ -2003,8 +2057,8 @@
 		}
 		{
 			title: "Get Items into the Foundry"
-			x: -22.5d
-			y: 5.5d
+			x: -24.0d
+			y: 5.0d
 			subtitle: "For when chucking stuff into the top doesn't work"
 			description: [
 				"The scorched chute can have a funnel attached to it and be used to input items into the foundry. Useful if you have an ore processing setup."
@@ -2021,8 +2075,8 @@
 		}
 		{
 			title: "Get Fluids in and out the Foundry"
-			x: -22.5d
-			y: 4.5d
+			x: -24.0d
+			y: 4.0d
 			subtitle: "You stick it right into the side!"
 			description: [
 				"A scorched drain will let you pump fluids in and out of the foundry with Create pipes."
@@ -2038,8 +2092,9 @@
 			}]
 		}
 		{
-			x: -22.5d
-			y: 6.5d
+			title: "Power for the foundry"
+			x: -19.5d
+			y: 5.0d
 			subtitle: "The foundry has special power methods"
 			description: [
 				"These two items can store up to four buckets of any fluid. They can also be picked up and moved around. This has its own uses."
@@ -2047,7 +2102,10 @@
 				"However, their biggest purpose is to act as fuel input to the foundary. Foundaries powered by lava will melt the fastest with great fuel efficiency. You'll want one in your foundry."
 			]
 			min_required_dependencies: 1
-			dependencies: ["5355CA2F0BA74BF1"]
+			dependencies: [
+				"11AF7F7CE0940C06"
+				"705C815541DB89F8"
+			]
 			id: "0BCFF062FD1518BF"
 			tasks: [
 				{
@@ -2063,28 +2121,9 @@
 			]
 		}
 		{
-			title: "Foundry Deco #2"
-			x: -20.5d
-			y: 7.5d
-			subtitle: "Look in with awe"
-			description: [
-				"Scorched glass can be placed as valid foundry blocks, and let you look at your accumulated fluid."
-				""
-				"It can give you a great sense of power. Its recommended to incoporate a few of them into your build."
-			]
-			dependencies: ["5355CA2F0BA74BF1"]
-			optional: true
-			id: "1B4A5B4AE7DAAD73"
-			tasks: [{
-				id: "3E1B920F3489D449"
-				type: "item"
-				item: "tconstruct:scorched_glass"
-			}]
-		}
-		{
-			title: "Foundry Deco #1"
-			x: -21.5d
-			y: 7.5d
+			title: "Pratical-ish Foundry Deco"
+			x: -24.0d
+			y: 6.0d
 			subtitle: "Check what's in your foundry!"
 			description: [
 				"Foundries can be built pretty high. It may be handy to look into them - or even better, have a ladder out of them for when you fall in."
@@ -2094,16 +2133,23 @@
 			dependencies: ["5355CA2F0BA74BF1"]
 			optional: true
 			id: "29F408CC74D53405"
-			tasks: [{
-				id: "3444EFD7AE7D52F6"
-				type: "item"
-				item: "tconstruct:scorched_ladder"
-			}]
+			tasks: [
+				{
+					id: "3444EFD7AE7D52F6"
+					type: "item"
+					item: "tconstruct:scorched_ladder"
+				}
+				{
+					id: "461ED5FFA3E476E0"
+					type: "item"
+					item: "tconstruct:scorched_glass"
+				}
+			]
 		}
 		{
 			title: "Improved Yields"
-			x: -11.5d
-			y: -4.5d
+			x: -13.0d
+			y: -0.5d
 			subtitle: "For some items!"
 			description: [
 				"The grinder is superior at grinding items. Because of this, a few items - even if they can be milled or crushed - will have their greatest yield from this machine."
@@ -2138,6 +2184,11 @@
 					count: 32L
 				}
 			]
+			rewards: [{
+				id: "671B8D8451219BB3"
+				type: "xp"
+				xp: 50
+			}]
 		}
 		{
 			title: "Gather Souls"
@@ -2156,8 +2207,10 @@
 		}
 		{
 			title: "Very Very Haunting"
-			x: -22.0d
-			y: 1.5d
+			x: -23.0d
+			y: 1.0d
+			subtitle: "Access a new form of material processing"
+			description: ["The soul campfire has a unique property. When placed in front of a fan, it will begin to \"bulk haunt\" items, much like how bulk smelting and bulk washing works. Items that undergo haunting transform into an alternate or \"corrupted\" version of themselves. Its really handy for getting stuff that may be a bit hard to find, as well as unusual applications in automation!"]
 			dependencies: ["20BFF582275C31C8"]
 			id: "072FC342FAE44F38"
 			tasks: [{
@@ -2167,9 +2220,9 @@
 			}]
 		}
 		{
-			title: "Automate Blood"
-			x: -18.5d
-			y: 6.0d
+			title: "Automate Blood or Slime"
+			x: -22.5d
+			y: 6.5d
 			shape: "diamond"
 			subtitle: "This is a Children's Game, Obviously."
 			description: [
@@ -2177,27 +2230,35 @@
 				""
 				"You can't move spawners in this game, but setting up a foundry around one you discovered can make for a great slimeball automation alternative. You can even set up a train to periodically deliver blood to your base if the nearest spawner is far away!"
 				""
-				"Alternatively, slime can be automated by automating lime dye and dough, if this setup is too much for you."
+				"Alternatively, slime can be automated by automating lime dye and dough, if this setup is too much for you. This quest will accept either approach."
 			]
 			dependencies: ["5355CA2F0BA74BF1"]
 			optional: true
 			id: "78370C1AE832CBF1"
-			tasks: [{
-				id: "2D9E5085CC306B2A"
-				type: "item"
-				item: "tconstruct:blood_slime"
-				count: 64L
-			}]
+			tasks: [
+				{
+					id: "2D9E5085CC306B2A"
+					type: "item"
+					item: "tconstruct:blood_slime"
+					count: 64L
+				}
+				{
+					id: "0E99396127C10705"
+					type: "item"
+					item: "minecraft:slime_block"
+					count: 64L
+				}
+			]
 			rewards: [{
 				id: "2289F95267A44346"
 				type: "xp"
-				xp: 50
+				xp: 100
 			}]
 		}
 		{
 			title: "Automate Blaze Rods"
-			x: -18.5d
-			y: 5.0d
+			x: -21.5d
+			y: 6.5d
 			shape: "diamond"
 			subtitle: "This is hell"
 			description: [
@@ -2228,8 +2289,8 @@
 		}
 		{
 			title: "Automate Gold"
-			x: -23.0d
-			y: 2.5d
+			x: -24.0d
+			y: 2.0d
 			shape: "diamond"
 			subtitle: "Not as valuable as silver though"
 			description: ["Soul soil can be washed into nuggets and very rarely silver or quartz. Soul Soil can also be made by haunting sand, leading to a more abudent way to gather sand. You might have a way to automate sand later in this quest..."]
@@ -2256,14 +2317,10 @@
 		}
 		{
 			title: "Curious Conversions"
-			x: -23.5d
-			y: 1.5d
-			subtitle: "This is a scientific matter"
-			description: [
-				"With a soul campfire, you can \"haunt\" objects, turning them into a \"corrupted\", \"nether\", or otherwise \"alternative\" version of them. A few them have uses in automation, but this process is helpful for getting some odds and ends that may not be easy to find when you need one."
-				""
-				"The tasks listed here are such examples."
-			]
+			x: -24.5d
+			y: 1.0d
+			subtitle: "This isn't magic in a tech pack"
+			description: ["The tasks listed here are a few examples of what can be gained via haunted. Play around!"]
 			dependencies: ["072FC342FAE44F38"]
 			optional: true
 			id: "47130960FB5806A9"
@@ -2302,22 +2359,31 @@
 			}]
 		}
 		{
-			x: -23.0d
-			y: 0.5d
+			x: -24.0d
+			y: 0.0d
 			subtitle: "Want to see what areas aren't lit well enough?"
+			description: ["Craft a pecular bell with brass which is a little down the quest line the other way, and then haunt it for a haunted bell. This bell has a unique property - when rung, it will show spirits where mobs can spawn at night. This utility is perfect for mob-spawn-proofing your base!"]
 			dependencies: ["072FC342FAE44F38"]
 			optional: true
 			id: "1ABEB66BBE3FC979"
-			tasks: [{
-				id: "71D03AEAF112BA77"
-				type: "item"
-				item: "create:haunted_bell"
-			}]
+			tasks: [
+				{
+					id: "71D03AEAF112BA77"
+					type: "item"
+					item: "create:haunted_bell"
+				}
+				{
+					id: "633796A5071EFE91"
+					type: "item"
+					item: "create:peculiar_bell"
+				}
+			]
 		}
 		{
 			title: "Automate Lapis!"
-			x: -7.5d
-			y: 4.5d
+			icon: "minecraft:lapis_lazuli"
+			x: -7.0d
+			y: 5.0d
 			shape: "diamond"
 			subtitle: "The top path did tell you to automate this..."
 			description: [
@@ -2328,18 +2394,31 @@
 			dependencies: ["429D2340C2B20A60"]
 			optional: true
 			id: "3FA9591D6D79371F"
-			tasks: [{
-				id: "7760579AE96D168D"
+			tasks: [
+				{
+					id: "7760579AE96D168D"
+					type: "item"
+					title: "8x64 Lapis Lazuli"
+					item: "minecraft:lapis_lazuli"
+					count: 512L
+				}
+				{
+					id: "56ED83A39EB3063A"
+					type: "item"
+					item: "techreborn:lazurite_dust"
+				}
+			]
+			rewards: [{
+				id: "0EAA5F4610ACA831"
 				type: "item"
-				title: "8x64 Lapis Lazuli"
-				item: "minecraft:lapis_lazuli"
-				count: 512L
+				item: "create:integrated_circuit"
+				count: 16
 			}]
 		}
 		{
 			title: "Sand is now 100% Automatable"
-			x: -6.5d
-			y: 4.5d
+			x: -6.0d
+			y: 5.0d
 			shape: "diamond"
 			subtitle: "This blows automation wide open!"
 			description: [
@@ -2359,16 +2438,24 @@
 				item: "minecraft:sand"
 				count: 256L
 			}]
-			rewards: [{
-				id: "19D69140A45EB73C"
-				type: "xp"
-				xp: 50
-			}]
+			rewards: [
+				{
+					id: "19D69140A45EB73C"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "4245CFFA03C41B3A"
+					type: "item"
+					item: "tconstruct:clear_glass"
+					count: 512
+				}
+			]
 		}
 		{
 			title: "More Granite \\& Tin"
-			x: -6.0d
-			y: 4.0d
+			x: -5.5d
+			y: 4.5d
 			shape: "diamond"
 			subtitle: "We meant it when we said automation becomes complicated."
 			description: [
@@ -2388,8 +2475,8 @@
 		}
 		{
 			title: "Automate Silver!"
-			x: -7.0d
-			y: 5.0d
+			x: -6.5d
+			y: 5.5d
 			shape: "diamond"
 			subtitle: "Just how many uses does clay have?!?"
 			description: [
@@ -2399,12 +2486,19 @@
 			]
 			dependencies: ["429D2340C2B20A60"]
 			id: "7C29C95E2F7AAA62"
-			tasks: [{
-				id: "5EABFAE314360894"
-				type: "item"
-				item: "techreborn:silver_nugget"
-				count: 512L
-			}]
+			tasks: [
+				{
+					id: "5EABFAE314360894"
+					type: "item"
+					item: "techreborn:silver_nugget"
+					count: 512L
+				}
+				{
+					id: "7282273C58D348DB"
+					type: "item"
+					item: "createastral:lime"
+				}
+			]
 			rewards: [
 				{
 					id: "430C317CBA16B993"
@@ -2427,7 +2521,7 @@
 		}
 		{
 			title: "A Basalt Generator"
-			x: -21.0d
+			x: -21.5d
 			y: 2.0d
 			shape: "diamond"
 			description: [
@@ -2452,8 +2546,8 @@
 		}
 		{
 			title: "Keep Machines Running"
-			x: -8.0d
-			y: -1.0d
+			x: -7.5d
+			y: -1.5d
 			shape: "gear"
 			subtitle: "Want resources to flow even as you explore space?"
 			description: [
@@ -2474,7 +2568,7 @@
 		}
 		{
 			x: -11.0d
-			y: 4.5d
+			y: 5.0d
 			subtitle: "\"Say cheese\" is pretty fitting"
 			dependencies: ["3EA569DE4AC60CC2"]
 			id: "0E295989064E5992"
@@ -2485,26 +2579,58 @@
 			}]
 		}
 		{
-			x: -10.0d
-			y: 1.5d
+			title: "Too Many Items!"
+			x: -9.0d
+			y: 2.0d
+			subtitle: "Gotta Craft Them All!"
+			description: ["There are a LOT of new items you can craft with the mechanical crafter. This quest lists even more objects you can craft that aren't worth a special mention."]
 			dependencies: ["3EA569DE4AC60CC2"]
 			id: "0C82B8A57B80C9DE"
-			tasks: [{
-				id: "24849C9FB7372894"
-				type: "item"
-				item: {
-					id: "create:extendo_grip"
-					Count: 1b
-					tag: {
-						Damage: 0
+			tasks: [
+				{
+					id: "24849C9FB7372894"
+					type: "item"
+					item: {
+						id: "create:extendo_grip"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
 					}
 				}
-			}]
+				{
+					id: "11CF534EE925F0C2"
+					type: "item"
+					item: {
+						id: "minecraft:trident"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2FD7F684E0CC919F"
+					type: "item"
+					item: {
+						id: "create:potato_cannon"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "222B1A2D9BED790D"
+					type: "item"
+					item: "doodads:ender_goggles"
+				}
+			]
 		}
 		{
 			title: "Miner's Nightmare"
-			x: -5.0d
-			y: 2.5d
+			x: -4.5d
+			y: 3.0d
 			subtitle: "Don't ingest this, it ain't coke"
 			description: [
 				"Coal (carbon) can be mixed with iron to create very sturdy steel. Both the grinder from the silver path and the crushing wheel can produce an equal amount of coal dust."
@@ -2521,8 +2647,8 @@
 		}
 		{
 			title: "Strong Dust"
-			x: -4.0d
-			y: 2.5d
+			x: -3.5d
+			y: 3.0d
 			subtitle: "You might see this again in the future"
 			description: [
 				"Although you have the means to mix steel dust, you don't have the means to turn it into an ingot. Melting it won't work either."
@@ -2539,8 +2665,8 @@
 		}
 		{
 			title: "Blast-Resistant Cement"
-			x: -4.0d
-			y: 3.5d
+			x: -3.5d
+			y: 4.0d
 			subtitle: "This doesn't make the bucket blast resistant, just the cement in it"
 			description: [
 				"To make blast-resistant cement, steel and coal dust needs to be mixed together with concrete powder."
@@ -2559,10 +2685,9 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: 3.5d
-			shape: "gear"
-			subtitle: "Nore useful then you might realize!"
+			x: -2.0d
+			y: 4.0d
+			subtitle: "More useful then you might realize!"
 			description: [
 				"Lastly, all you need to do is pour the cement into a casting basin."
 				""
@@ -2576,12 +2701,27 @@
 				id: "2D8437605F091BEF"
 				type: "item"
 				item: "createastral:blast-resistant_concrete"
+				count: 16L
+			}]
+			rewards: [{
+				id: "498DCE4281AF6E58"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:blast_protection"
+							lvl: 3s
+						}]
+					}
+				}
 			}]
 		}
 		{
 			title: "Where Are My Alloys?"
-			x: -19.5d
-			y: 7.5d
+			x: -20.5d
+			y: 6.0d
 			subtitle: "Read this if your a Tinker's expert"
 			description: ["If you've played modded MC before, you probably know high-tier Tinker alloys are made with either the Smeltery, or the Alloy Mixer. Both of these have been removed. Instead, all Tinker Construct's alloys are now mixed with heated basins."]
 			dependencies: ["5355CA2F0BA74BF1"]
@@ -2594,10 +2734,10 @@
 		}
 		{
 			title: "Automate Circuits"
-			x: -15.0d
-			y: -0.5d
+			x: -14.5d
+			y: -1.0d
 			shape: "diamond"
-			subtitle: "You may need a few after all!"
+			subtitle: "They're kind of important to technology!"
 			description: [
 				"Not only are integrated circuits used in many machines in the near future, but much like tasing, they are a tiered object. You will create more advanced circuits from integrated circuits."
 				""
@@ -2621,7 +2761,6 @@
 			title: "The Third or Fourth Kinetic Source!"
 			x: -13.5d
 			y: -3.0d
-			shape: "gear"
 			subtitle: "Electricity can be turned back into kinetic energy"
 			description: ["Electric motors do the reverse of accumulators: they take electricity and turn them into rotational power. There's a conversion loss made when doing this - you'll only use 75% of energy that was made with the alternator. Despite that, wires solve all sorts of issues with gear shifts and axis transfering. Plus, later on you'll have access to powerful electrical generators that may replace traditional kinetic sources entirely."]
 			dependencies: ["5459F646B9A392C4"]
@@ -2634,8 +2773,8 @@
 		}
 		{
 			title: "I Hate Sand Paper"
-			x: -10.5d
-			y: -4.5d
+			x: -13.0d
+			y: 0.5d
 			subtitle: "I mean, what else would you use diamonds for?"
 			description: ["Diamond-grit sand paper is a sand paper far more efficient than regular sand paper. Although you will have to say good bye to one of your diamonds to get diamond dust, it's worth not having to replace your sand paper every five seconds."]
 			dependencies: ["2F7F41E1C9C7F7B3"]
@@ -2652,11 +2791,16 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "26686C23B03EEB7E"
+				type: "item"
+				item: "create:rose_quartz"
+			}]
 		}
 		{
 			title: "Easy Gunpowder"
-			x: -10.0d
-			y: -3.5d
+			x: -12.0d
+			y: 0.5d
 			subtitle: "Good grief"
 			description: ["One special resource the grinder can produce is gun powder from dried kelp. Although we're not expecting you to use a lot of TNT, gun powder may have a helpful role in creating a special blue rock..."]
 			dependencies: ["2F7F41E1C9C7F7B3"]
@@ -2675,14 +2819,178 @@
 			}]
 		}
 		{
-			x: -5.0d
-			y: 3.5d
+			title: "Goes great with lemons!"
+			x: -4.5d
+			y: 4.0d
+			description: [
+				"Crushing limestone will give you lime, a necessary ingredient for creating big boy concrete!"
+				""
+			]
 			dependencies: ["429D2340C2B20A60"]
 			id: "49BE333EAC6260C8"
 			tasks: [{
 				id: "71C443166BBF2710"
 				type: "item"
 				item: "createastral:lime"
+			}]
+		}
+		{
+			title: "Automate Sturdy Sheets"
+			x: -22.0d
+			y: 7.5d
+			shape: "diamond"
+			subtitle: "These have been popping up more and more"
+			description: [
+				"With a steady source of blaze powder and a source of slime (alternative or otherwise), you now have a path to make obsidian by colling magma blocks."
+				""
+				"Sturdy sheets become more and more relevant, and are pretty important to the silver path. You may want to consider automating this sheet."
+			]
+			dependencies: [
+				"78370C1AE832CBF1"
+				"221861F3A1C4C3B8"
+			]
+			id: "6FB5805264D88AC4"
+			tasks: [{
+				id: "1CB04A67ECFD96FD"
+				type: "item"
+				title: "4x64 Sturdy Sheets"
+				item: "create:sturdy_sheet"
+				count: 256L
+			}]
+			rewards: [
+				{
+					id: "3EC3C7977ABCFFF2"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "566ACB098CDAB7E3"
+					type: "item"
+					item: "create:railway_casing"
+					count: 24
+				}
+				{
+					id: "5E2C049F3E3A024F"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:fire_resistance"
+						}
+					}
+					count: 6
+				}
+			]
+		}
+		{
+			title: "Craft a Drill or Jackhammer"
+			x: -10.0d
+			y: -5.0d
+			subtitle: "Love me some Minin'"
+			description: [
+				"The drill acts like an all purpose pickaxe."
+				""
+				"The jackhammer work as an efficient pickaxe, except that its the lowest tier of tools. That is, it can only mine rocks, not ores."
+				""
+				"Crafter whichever looks the most interesting to you."
+			]
+			min_required_dependencies: 1
+			dependencies: ["64271E1245394C9A"]
+			id: "7E53F7BA6BCA166B"
+			tasks: [
+				{
+					id: "0E7A27C6A8635B9F"
+					type: "item"
+					item: "techreborn:basic_drill"
+				}
+				{
+					id: "6AF8CBAC89F66204"
+					type: "item"
+					item: "techreborn:basic_jackhammer"
+				}
+			]
+		}
+		{
+			title: "Craft a Chainsaw"
+			x: -12.0d
+			y: -4.0d
+			subtitle: "Love me some trees"
+			description: ["It cuts trees."]
+			dependencies: ["64271E1245394C9A"]
+			id: "54106852E46435FA"
+			tasks: [{
+				id: "657D5635D2A31BCC"
+				type: "item"
+				item: "techreborn:basic_chainsaw"
+			}]
+		}
+		{
+			title: "Electrify Your Rubber Collection"
+			x: -10.0d
+			y: -4.0d
+			subtitle: "Love me some sap"
+			description: ["It zapz saps"]
+			dependencies: ["64271E1245394C9A"]
+			id: "7E5C46C5D079B23D"
+			tasks: [{
+				id: "78AF5D1C2CAE6920"
+				type: "item"
+				item: "techreborn:electric_treetap"
+			}]
+		}
+		{
+			title: "Craft a Rockcutter"
+			x: -12.0d
+			y: -5.0d
+			subtitle: "Love me some rocks"
+			description: ["The rockcutter acts as a diamond pickaxe with silk touch."]
+			dependencies: ["64271E1245394C9A"]
+			id: "38AE3052E5BBBED7"
+			tasks: [{
+				id: "44CEA189E79D7B09"
+				type: "item"
+				item: {
+					id: "techreborn:rock_cutter"
+					Count: 1b
+					tag: {
+						Enchantments: [{
+							id: "minecraft:silk_touch"
+							lvl: 1s
+						}]
+					}
+				}
+			}]
+		}
+		{
+			title: "Save Your Power"
+			x: -10.0d
+			y: -0.5d
+			subtitle: "Eyooo its like a battery?!?"
+			description: ["The accumulator really does act like a giant battery. Its tooltip has more information about how it works."]
+			dependencies: [
+				"752215E611021472"
+				"3EA569DE4AC60CC2"
+			]
+			id: "6642B2F9BB8E20E6"
+			tasks: [{
+				id: "75A559502846E25E"
+				type: "item"
+				item: "createaddition:accumulator"
+			}]
+		}
+		{
+			title: "Charge your tools"
+			x: -11.0d
+			y: -5.5d
+			subtitle: "Tesla Coils won't work"
+			description: ["This handy box will charge batteries and power tools, thus making your tools truly reusable."]
+			dependencies: ["64271E1245394C9A"]
+			id: "7FF635D31674DBBA"
+			tasks: [{
+				id: "79DB2B717FA7CD02"
+				type: "item"
+				item: "techreborn:low_voltage_su"
 			}]
 		}
 	]
