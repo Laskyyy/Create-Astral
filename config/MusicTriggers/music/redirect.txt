@@ -1,7 +1,0 @@
-Format this like name = url
-If you are trying to redirect to an already registered resource location Format it like name == location instead
-Any lines with Format in the name or = not present will not be read in
-Make sure each new entry is on a new line
-Here are 2 examples:
-thx = https://youtu.be/z3Q4WBpCXhs
-title == minecraft:sounds/music/menu/menu1.ogg
