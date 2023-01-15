@@ -356,11 +356,6 @@ function lizardCH3Biofuel(event) {
     {fluid: 'createaddition:seed_oil', amount: FULL_BUCKET_AMMOUNT / 2},
   ]).heated().processingTime(1000)
 
-  event.recipes.createMixing('techreborn:plantball', [
-    '9x #minecraft:saplings',
-    {fluid: 'createaddition:seed_oil', amount: FULL_BUCKET_AMMOUNT / 2},
-  ]).heated().processingTime(1000)
-
   event.remove({output: 'techreborn:compressed_plantball'});
 
   var transitional_c_plantball = 'techreborn:plantball';
