@@ -38,9 +38,11 @@
 			title: "Welcome to Mars."
 			x: -8.0d
 			y: -4.0d
+			shape: "pentagon"
 			subtitle: "Make yourself at home, it only gets worse from here..."
-			description: ["The theming of Mars is Piglin related! Find large quantities of gold, lead and ostrum, along with new structures including the Forbidden castle and piglin bastions."]
+			description: ["A resilient civilisation inhabits Mars... They seem to worship gold. Find large quantities of it along with lead and ostrum in the underground. Buildings, old and new, can be found on the surface."]
 			dependencies: ["63DCF596AAA9A232"]
+			size: 2.0d
 			id: "253F29A00B4EA050"
 			tasks: [{
 				id: "136C0FE1977335AD"
@@ -55,7 +57,11 @@
 			y: 5.0d
 			shape: "square"
 			subtitle: "This stuff should be durable enough to make a phat new rocket."
-			description: ["A key component in later game recipes and survival on mercury!"]
+			description: [
+				"A key component in later game recipes and survival on mercury!"
+				""
+				"Reminder: Use fuel *buckets* to input into a blaze burner!"
+			]
 			dependencies: ["5729A883639B2EEF"]
 			size: 2.0d
 			id: "3A5D7E60EF1C3BC3"
@@ -63,25 +69,6 @@
 				id: "31C9A429FF4C66EA"
 				type: "item"
 				item: "ad_astra:steel_ingot"
-			}]
-		}
-		{
-			x: -10.5d
-			y: 5.0d
-			subtitle: "Better than diamonds~"
-			dependencies: ["3A5D7E60EF1C3BC3"]
-			optional: true
-			id: "78C43CAB30772606"
-			tasks: [{
-				id: "3930A2D25F371304"
-				type: "item"
-				item: {
-					id: "createastral:steel_chestplate"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
 			}]
 		}
 		{
@@ -176,6 +163,12 @@
 			x: -9.75d
 			y: 7.5d
 			shape: "square"
+			subtitle: "I look like a spartan now"
+			description: [
+				"Utilising steel and a set of sturdy armour, you can craft a higher tier of space suit which is immune to fire damage. This should ease the exploration into mercury."
+				""
+				"The oxygen tank capacity is twice as large. What a bonus."
+			]
 			dependencies: ["3A5D7E60EF1C3BC3"]
 			size: 1.5d
 			id: "7B5AE0A782DE8DF8"
@@ -251,7 +244,7 @@
 		}
 		{
 			x: -10.5d
-			y: 6.0d
+			y: 5.0d
 			subtitle: "Bouncy..."
 			dependencies: ["3A5D7E60EF1C3BC3"]
 			optional: true
@@ -290,6 +283,7 @@
 				"The blast furnace multiblock can unlock this capability."
 			]
 			dependencies: ["5729A883639B2EEF"]
+			optional: true
 			id: "30B554B51AEFEB0C"
 			tasks: [{
 				id: "68BB3658712A39A5"
@@ -392,23 +386,9 @@
 			]
 		}
 		{
-			x: -5.25d
-			y: 6.0d
-			subtitle: "Create drill without the create?"
-			dependencies: ["2A95205D3A52622F"]
-			size: 1.5d
-			optional: true
-			id: "55296900512F9ABE"
-			tasks: [{
-				id: "1F8B7DC6F13D6762"
-				type: "item"
-				item: "mtmechs:ta_whole_item"
-			}]
-		}
-		{
 			title: "Components for an upgraded circuit!"
 			x: -8.5d
-			y: -3.0d
+			y: -2.0d
 			description: [
 				"The next tier of circuit will require a new process assembly line."
 				""
@@ -436,7 +416,7 @@
 		}
 		{
 			title: "The incomplete mechanism..."
-			x: -7.5d
+			x: -8.0d
 			y: 0.5d
 			description: ["With the basic pins in position, clamp down an ostrum plate to finish the process."]
 			dependencies: ["0476231FB94F095A"]
@@ -445,17 +425,6 @@
 				id: "036E856A5BC3198E"
 				type: "item"
 				item: "createastral:incomplete_electronic_circuit"
-			}]
-		}
-		{
-			x: -8.5d
-			y: 0.5d
-			dependencies: ["0476231FB94F095A"]
-			id: "7FFAB99194EEE0FC"
-			tasks: [{
-				id: "5C01AC729BC07CFA"
-				type: "item"
-				item: "ad_astra:compressed_ostrum"
 			}]
 		}
 		{
@@ -469,10 +438,7 @@
 				""
 				"Inspect the branching quest lines to uncover more about them."
 			]
-			dependencies: [
-				"7FFAB99194EEE0FC"
-				"0DF20AB6978A93FE"
-			]
+			dependencies: ["0DF20AB6978A93FE"]
 			size: 1.5d
 			id: "5729A883639B2EEF"
 			tasks: [{
@@ -513,11 +479,13 @@
 			}]
 		}
 		{
-			title: "The necessary ingredients."
+			title: "More efficient steel dust."
 			x: -4.5d
 			y: 3.5d
 			description: ["Cells of molten iron can be poured from create spouts, ready to be processed with some carbon material to form steel."]
 			dependencies: ["30B554B51AEFEB0C"]
+			optional: true
+			secret: true
 			id: "33DBA03CF188DF0B"
 			tasks: [
 				{
@@ -530,13 +498,12 @@
 							fluid: "tconstruct:molten_iron"
 						}
 					}
-					count: 4L
 				}
 				{
 					id: "5C4466EA099805DA"
 					type: "item"
 					item: "techreborn:coal_dust"
-					count: 32L
+					count: 2L
 				}
 			]
 		}
@@ -545,18 +512,22 @@
 			y: 3.5d
 			description: ["Obtain a small stockpile to start with."]
 			dependencies: ["33DBA03CF188DF0B"]
+			optional: true
+			secret: true
 			id: "4AEC38BDC884A6C4"
 			tasks: [{
 				id: "544483DAD0120103"
 				type: "item"
 				item: "techreborn:steel_dust"
-				count: 16L
+				count: 64L
 			}]
 		}
 		{
+			title: "How Crude..."
 			x: -13.0d
 			y: 3.0d
-			description: ["Placeholder text."]
+			subtitle: "How Crood..."
+			description: ["Oil can be sourced renewably from a centrifuge, however spouts across the overworld also contain a fair few cells worth of the fluid too."]
 			dependencies: ["307933B04A6E7CA9"]
 			optional: true
 			id: "48F61CBC3AFDEEBD"
@@ -573,9 +544,11 @@
 			}]
 		}
 		{
+			title: "Hotter Stuff"
 			x: -11.5d
 			y: 3.5d
 			subtitle: "UNLOCK: Superheated Blaze Burners!"
+			description: ["Using Fuel Buckets on blaze burners, in the same fashion as a lava bucket, will superheat them for a short while. This is required to unlock future recipes, including the all-important steel!"]
 			dependencies: [
 				"0373FACF0AB8113E"
 				"48F61CBC3AFDEEBD"
@@ -598,6 +571,7 @@
 			x: -10.299999999999999d
 			y: -0.09999999999999998d
 			shape: "diamond"
+			subtitle: "Get a load of this stuff!"
 			description: ["Crushing Infernal Spire produces netherite scrap nuggets at a low rate."]
 			hide_dependency_lines: true
 			dependencies: ["253F29A00B4EA050"]
@@ -611,9 +585,12 @@
 			}]
 		}
 		{
+			title: "Automate debris!"
 			x: -11.0d
 			y: 0.5d
 			shape: "diamond"
+			subtitle: "Purely for high-rollers"
+			description: ["Semi-automatable debris! Wow! Along with its usual usages, netherite can be used to forge some devastating MC Dungeons weapons. If your rolling in the stuff, Create Deco provides some pricey decoration blocks. - Happy flexing"]
 			dependencies: ["520A09EF39A1BF5D"]
 			secret: true
 			id: "27B0EA62812564DD"
@@ -626,7 +603,7 @@
 		}
 		{
 			x: -8.0d
-			y: -2.0d
+			y: -1.0d
 			description: ["Begin the circuit upgrade by applying 64x of these electrified pins onto an integrated circuit."]
 			dependencies: [
 				"7B0BBD0E9F82939D"
@@ -641,20 +618,28 @@
 			}]
 		}
 		{
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "createdeco:textures/block/palettes/decal/yellow_decal.png"
+				}
+			}
 			x: -7.5d
-			y: -3.0d
+			y: -2.0d
 			description: ["this quest is kinda defunct due to it being a ch3 item, i'll replace it sometime"]
 			dependencies: ["253F29A00B4EA050"]
 			id: "069454E35DC9B5C7"
 			tasks: [{
-				id: "24724A3EB63D3AB1"
-				type: "item"
-				item: "createaddition:tesla_coil"
+				id: "2D82D29499634195"
+				type: "checkmark"
 			}]
 		}
 		{
+			title: "I can see clearly now."
 			x: -4.5d
 			y: 0.0d
+			description: ["N = Toggle Night Vision"]
 			dependencies: ["7B5DE5040FC24D21"]
 			id: "259E754B57C45C67"
 			tasks: [{
@@ -664,6 +649,7 @@
 			}]
 		}
 		{
+			title: "Inner Machinations."
 			x: -6.5d
 			y: 7.5d
 			dependencies: [
@@ -710,8 +696,10 @@
 			}]
 		}
 		{
+			title: "Sodium Reference?"
 			x: -14.0d
 			y: 8.0d
+			subtitle: "(electrolyse lazurite dust and create a sodium byproduct.)"
 			dependencies: ["6C43EB3CBD04AA17"]
 			id: "3110924697AB562C"
 			tasks: [{
@@ -727,8 +715,10 @@
 			}]
 		}
 		{
+			title: "Banana Dust"
 			x: -14.0d
 			y: 2.0d
+			subtitle: "-> filled with yummy potassium"
 			dependencies: ["307933B04A6E7CA9"]
 			id: "6D5A97122F765FE3"
 			tasks: [{
@@ -738,6 +728,7 @@
 			}]
 		}
 		{
+			title: "Banana Fluid"
 			x: -14.0d
 			y: 6.0d
 			dependencies: ["6D5A97122F765FE3"]
@@ -755,8 +746,10 @@
 			}]
 		}
 		{
+			title: "Lazurite?"
 			x: -14.0d
 			y: 7.0d
+			subtitle: "Yea i'm alright thanks."
 			hide_dependency_lines: true
 			dependencies: ["684E33C50BD55A8E"]
 			id: "6C43EB3CBD04AA17"
@@ -767,6 +760,7 @@
 			}]
 		}
 		{
+			title: "Do not drink the Listerine."
 			x: -12.0d
 			y: 8.0d
 			dependencies: [
@@ -791,6 +785,7 @@
 			}]
 		}
 		{
+			title: "Horsepower."
 			x: -11.0d
 			y: 9.0d
 			dependencies: [
@@ -816,14 +811,26 @@
 			}]
 		}
 		{
+			title: "Shake up that soul"
 			x: -11.5d
 			y: 2.0d
+			description: [
+				"Both soul soil and soul sand can produce raw oil when centrifuged, with some extra byproducts provided which may prove to be useful..."
+				""
+			]
 			dependencies: ["673DC1F22D2F790D"]
 			id: "307933B04A6E7CA9"
 			tasks: [{
 				id: "18B46A0D1C5F5E25"
 				type: "item"
-				item: "minecraft:soul_soil"
+				title: "Any #minecraft:soul_fire_base_blocks"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:soul_fire_base_blocks"
+					}
+				}
 			}]
 		}
 		{
@@ -843,6 +850,8 @@
 			y: 4.5d
 			subtitle: "Let's make some use out of this..."
 			dependencies: ["33DBA03CF188DF0B"]
+			optional: true
+			secret: true
 			id: "2E320829DF95EB8E"
 			tasks: [{
 				id: "1081B553AE56D482"
@@ -854,6 +863,8 @@
 			x: -2.5d
 			y: 4.5d
 			dependencies: ["2E320829DF95EB8E"]
+			optional: true
+			secret: true
 			id: "6FC315C473D123F8"
 			tasks: [{
 				id: "366385021857C6CD"
@@ -865,6 +876,113 @@
 						fluid: "tconstruct:molten_diamond"
 					}
 				}
+			}]
+		}
+		{
+			icon: "minecraft:gold_block"
+			x: -10.0d
+			y: -2.5d
+			subtitle: "Always believe in your gold..."
+			description: ["Gold can be found in high amounts here. Either get your best mining gear and head underground or equip your finest weapons and head to a bastion."]
+			dependencies: ["253F29A00B4EA050"]
+			id: "3303D84A3F6FBBBA"
+			tasks: [{
+				id: "1CA9416E1FBF478C"
+				type: "checkmark"
+				title: "Gold!"
+			}]
+		}
+		{
+			title: "When in Rome..."
+			x: -11.5d
+			y: -2.0d
+			subtitle: "(Just incase you didn't know)"
+			description: [
+				"{image:tconstruct:textures/block/storage/pig_iron/front.png width:100 height:100 align:1}"
+				"Respect the Piglin religion and they might not immediatly kill you. "
+			]
+			id: "1873D12083BC1697"
+			tasks: [
+				{
+					id: "3067D6994FC6F534"
+					type: "item"
+					item: {
+						id: "minecraft:golden_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "72977C97E8890284"
+					type: "item"
+					item: {
+						id: "minecraft:golden_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7DB0925F3E3786DF"
+					type: "item"
+					item: {
+						id: "minecraft:golden_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "12F1DEBD6F87F141"
+					type: "item"
+					item: {
+						id: "minecraft:golden_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "13393CF16F799EB6"
+				type: "item"
+				item: "libraryferret:fake_gold_block"
+			}]
+		}
+		{
+			x: -10.5d
+			y: 10.5d
+			dependencies: [
+				"2DEFDA584C5773FA"
+				"7D98B3EA84A46227"
+			]
+			id: "2ECC73EEC8AA3358"
+			tasks: [{
+				id: "374E944FEA3BB826"
+				type: "item"
+				item: "immersive_aircraft:biplane"
+			}]
+		}
+		{
+			title: "Automation of Lead/Ostrum"
+			icon: "ad_astra:ostrum_nugget"
+			x: -6.0d
+			y: -2.5d
+			description: [
+				"With access to mars stone, you are now able to use it below a cobblestone generator to form more mars stone, with a chance of conglomerate being formed too!"
+				""
+				"Mars stone can be crushed into mars sand, which washes into lead. Conglomerate can be crushed into ostrum nuggets."
+			]
+			dependencies: ["253F29A00B4EA050"]
+			id: "2B697AA42C48FC04"
+			tasks: [{
+				id: "3C7D9A10113C6167"
+				type: "checkmark"
 			}]
 		}
 	]
