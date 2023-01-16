@@ -1,9 +1,6 @@
 Andesite Chests Retexture by Mental
 https://www.curseforge.com/minecraft/texture-packs/andesite-chests-crafting-table/screenshots
 
-UI Tex
-https://www.curseforge.com/minecraft/texture-packs/faithless
-
 Computercraft x create
 https://www.curseforge.com/minecraft/texture-packs/computercreate
 
@@ -33,3 +30,6 @@ https://www.curseforge.com/minecraft/texture-packs/create-style-modded-compats
 
 Fresh animations CEM Fork
 https://github.com/YoungSoulluoS/Fresh-Animations-CEM-fork
+
+Beautiful Create Texture overhauls!
+https://www.curseforge.com/minecraft/texture-packs/created-updated
