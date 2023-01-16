@@ -3073,7 +3073,7 @@ event.custom({
 event.custom({
   "type": "techreborn:implosion_compressor",
   "power": 30,
-  "time": 2000,
+  "time": 500,
   "ingredients": [
 	{
 	  "count": 1,
@@ -3081,7 +3081,7 @@ event.custom({
 	},
     {
       "item": "minecraft:tnt",
-      "count": 4
+      "count": 1
     }
   ],
   "results": [
@@ -3090,15 +3090,15 @@ event.custom({
       "count": 1
     },
     {
-      "item": "techreborn:dark_ashes_dust",
-      "count": 1
+      "item": "techreborn:steel_nugget",
+      "count": 2
     }
   ]
 })
 
 event.recipes.createMixing('techreborn:steel_dust', [
-  '5x minecraft:iron_ingot',
-'2x techreborn:coal_dust'
+  '6x minecraft:iron_ingot',
+'4x techreborn:coal_dust'
 ]).heated().processingTime(400)
 
     event.shaped(Item.of('custommachinery:custom_machine_item', {machine:"createastral:electrolyser"}), [
