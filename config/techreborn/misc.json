@@ -32,7 +32,7 @@
     },
     "enabled": {
       "comment": "Should the nuke explode, set to false to prevent block damage",
-      "value": true
+      "value": false
     }
   },
   "resin_basin": {
