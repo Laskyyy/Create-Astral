@@ -1,0 +1,24 @@
+{
+  "type": "techreborn:blast_furnace",
+  "power": 128,
+  "time": 1000,
+  "heat": 1500,
+  "ingredients": [
+	{
+	   "fluid": "techreborn:carbon",
+	  "holder": "techreborn:cell",
+	  "count": 1
+	},
+	{
+	  "fluid": "tconstruct:molten_iron",
+	  "holder": "techreborn:cell",
+	  "count": 1
+	}
+  ],
+  "results": [
+	{
+	  "item": "techreborn:steel_dust",
+	  "count": 4
+	  }
+  ]
+}
