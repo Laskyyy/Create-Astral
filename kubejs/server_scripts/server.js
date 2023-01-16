@@ -1242,6 +1242,8 @@ onEvent('recipes', event => {
   event.remove({output: 'techreborn:industrial_machine_casing'})
   event.remove({output: 'techreborn:refined_iron_ingot'})
   event.remove({output: 'techreborn:fusion_coil'})
+  event.remove({output: 'techreborn:carbon_mesh'})
+  event.remove({output: 'techreborn:scrap_box'})
   event.remove({type: 'minecraft:shaped', output: 'techreborn:nak_coolant_cell_60k'})
 
 
@@ -1471,7 +1473,11 @@ event.recipes.createMixing('4x techreborn:machine_parts', [
   'ad_astra:compressed_steel',
   'techreborn:carbon_mesh',
   '8x #c:wires'
-]).processingTime(400)
+]).superheated().processingTime(400)
+
+event.recipes.createMixing('1x techreborn:carbon_mesh', [
+  '2x techreborn:carbon_fiber',
+]).superheated().processingTime(400)
 
 event.recipes.createMixing('techreborn:nuke', [
   'techreborn:industrial_machine_frame',

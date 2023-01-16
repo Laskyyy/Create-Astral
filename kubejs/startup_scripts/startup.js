@@ -1087,6 +1087,36 @@ onEvent('item.tooltip', e => {
       
     }
   })
+  e.addAdvanced('createastral:sturdy_sheet_block', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('Texture from Create: Things & Misc!').red(),])
+      
+    }
+  })
+  e.addAdvanced('createastral:copper_heating_coil', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('Texture courtesy of UUTex (Gregtech)!').red(),])
+      
+    }
+  })
+  e.addAdvanced('createastral:bronze_block', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('Texture courtesy of Create: Alloyed!').red(),])
+      
+    }
+  })
 })
   
 
