@@ -1182,9 +1182,9 @@
 				Count: 1b
 				tag: {
 					Automobile: {
-						engine: "automobility:stone"
-						frame: "automobility:yellow_tractor"
 						wheels: "automobility:standard"
+						frame: "automobility:yellow_tractor"
+						engine: "automobility:stone"
 					}
 				}
 			}
@@ -1272,9 +1272,9 @@
 						Count: 1b
 						tag: {
 							Automobile: {
-								engine: "automobility:stone"
-								frame: "automobility:yellow_tractor"
 								wheels: "automobility:standard"
+								frame: "automobility:yellow_tractor"
+								engine: "automobility:stone"
 							}
 						}
 					}
@@ -1803,8 +1803,8 @@
 								realCount: 0
 							}
 							PackageStyle: {
-								inner: "minecraft:oak_planks"
 								frame: "minecraft:oak_log"
+								inner: "minecraft:oak_planks"
 								color: 0
 							}
 						}
@@ -1973,6 +1973,31 @@
 				type: "item"
 				item: "vinery:grapevine_pot"
 			}]
+		}
+		{
+			title: "The winery kitchen"
+			x: -8.5d
+			y: 8.5d
+			subtitle: "Note: Vinery does not have inbuilt REI support!"
+			dependencies: ["2CE5BB6A7B30CA4C"]
+			id: "4D65B95D552D92BA"
+			tasks: [
+				{
+					id: "5051275100D1E1F0"
+					type: "item"
+					item: "vinery:wood_fired_oven"
+				}
+				{
+					id: "7CD55BBD425B31A4"
+					type: "item"
+					item: "vinery:stove"
+				}
+				{
+					id: "5D50E36D0CF39183"
+					type: "item"
+					item: "vinery:kitchen_sink"
+				}
+			]
 		}
 	]
 }

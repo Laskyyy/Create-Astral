@@ -692,8 +692,10 @@
 			}]
 		}
 		{
+			title: "*another* use for coal dust"
 			x: -3.0d
 			y: 7.5d
+			subtitle: "thought you could get away?"
 			dependencies: ["3A5D7E60EF1C3BC3"]
 			id: "156FCE6FDC8AD38D"
 			tasks: [{
@@ -868,6 +870,13 @@
 		}
 		{
 			title: "Automating Diamonds."
+			icon: {
+				id: "techreborn:cell"
+				Count: 1b
+				tag: {
+					fluid: "tconstruct:molten_diamond"
+				}
+			}
 			x: -2.5d
 			y: 4.5d
 			subtitle: "As a bonus for getting this far, here is a block of liquid diamond. A treat >.<"
