@@ -25,8 +25,11 @@ https://www.curseforge.com/minecraft/mc-mods/create-stuff-additions
 Moon Texture
 https://www.curseforge.com/minecraft/texture-packs/fractured-moon
 
-Sturdy sheet & copper block
+Sturdy sheet block
 https://www.curseforge.com/minecraft/mc-mods/create-misc-and-things
 
 Immersive aircraft item textures
 https://www.curseforge.com/minecraft/texture-packs/create-style-modded-compats
+
+Fresh animations CEM Fork
+https://github.com/YoungSoulluoS/Fresh-Animations-CEM-fork
