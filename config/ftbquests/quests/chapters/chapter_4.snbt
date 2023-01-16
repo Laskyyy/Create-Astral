@@ -116,6 +116,17 @@
 					count: 3L
 				}
 			]
+			rewards: [{
+				id: "5A89715DA67A0895"
+				type: "item"
+				item: {
+					id: "tconstruct:hammer_head"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:desh"
+					}
+				}
+			}]
 		}
 		{
 			x: -13.5d
@@ -664,6 +675,48 @@
 				type: "item"
 				item: "techreborn:basic_machine_frame"
 			}]
+			rewards: [{
+				id: "15300B2E9B30E27F"
+				type: "item"
+				item: {
+					id: "tconstruct:sword"
+					Count: 1b
+					tag: {
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.5f
+							"tconstruct:durability": 1.1f
+						}
+						tic_stats: {
+							"tconstruct:attack_damage": 6.6000004f
+							"tconstruct:harvest_tier": "minecraft:diamond"
+							"tconstruct:durability": 246.40001f
+							"tconstruct:mining_speed": 4.07f
+							"tconstruct:attack_speed": 1.7600001f
+						}
+						Damage: 0
+						tic_materials: [
+							"tconstruct:silver"
+							"tconstruct:silver"
+							"tconstruct:silver"
+						]
+						tic_modifiers: [
+							{
+								name: "tconstruct:smite"
+								level: 3s
+							}
+							{
+								name: "tconstruct:silky_shears"
+								level: 1s
+							}
+						]
+						tic_broken: 0b
+						tic_persistent_data: {
+							upgrades: 3
+							abilities: 1
+						}
+					}
+				}
+			}]
 		}
 		{
 			title: "The Basics of Energy Storage"
@@ -698,6 +751,30 @@
 				type: "item"
 				item: "techreborn:wire_mill"
 			}]
+			rewards: [
+				{
+					id: "4AFB9EADE2C8B21F"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_binding"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:desh"
+						}
+					}
+				}
+				{
+					id: "1F1706718FFF83E6"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_binding"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:silver"
+						}
+					}
+				}
+			]
 		}
 		{
 			title: "HUGE rubber gainz"
@@ -728,6 +805,17 @@
 				id: "22E87A1C837C13D8"
 				type: "item"
 				item: "techreborn:compressor"
+			}]
+			rewards: [{
+				id: "022D8D1430F0AEAD"
+				type: "item"
+				item: {
+					id: "tconstruct:tough_handle"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:desh"
+					}
+				}
 			}]
 		}
 		{
@@ -1519,6 +1607,12 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "43421D408922854C"
+				type: "item"
+				item: "create:brass_hand"
+				count: 6
+			}]
 		}
 		{
 			title: "Lunatic Traveller"

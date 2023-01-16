@@ -46,6 +46,17 @@
 				type: "item"
 				item: "create:refined_radiance"
 			}]
+			rewards: [{
+				id: "19F8F9A8C9D44884"
+				type: "item"
+				item: {
+					id: "tconstruct:pick_head"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:radiant"
+					}
+				}
+			}]
 		}
 		{
 			title: "This is an Astral matter."
@@ -70,6 +81,12 @@
 				type: "item"
 				item: "techreborn:uu_matter"
 				count: 10L
+			}]
+			rewards: [{
+				id: "3A62FF88ADB2691F"
+				type: "item"
+				item: "farmersdelight:glow_berry_custard"
+				count: 8
 			}]
 		}
 		{
@@ -96,6 +113,26 @@
 				type: "item"
 				item: "techreborn:industrial_circuit"
 			}]
+			rewards: [
+				{
+					id: "37466A8C746B3640"
+					type: "item"
+					item: "dustrial_decor:large_cursed_lantern"
+					count: 10
+				}
+				{
+					id: "620AC43123F9889C"
+					type: "item"
+					item: "dustrial_decor:large_redstone_lantern"
+					count: 10
+				}
+				{
+					id: "2F984D010D803A09"
+					type: "item"
+					item: "dustrial_decor:large_soul_lantern"
+					count: 10
+				}
+			]
 		}
 		{
 			title: "This amount of storage is just getting frankly silly..."
@@ -152,6 +189,12 @@
 				type: "dimension"
 				icon: "ad_astra:mercury_globe"
 				dimension: "ad_astra:mercury"
+			}]
+			rewards: [{
+				id: "3D48BAA2A9CB06DC"
+				type: "item"
+				item: "vinery:apple_cupcake"
+				count: 2
 			}]
 		}
 		{
@@ -260,6 +303,17 @@
 				type: "item"
 				item: "techreborn:data_storage_chip"
 			}]
+			rewards: [{
+				id: "1ECE2D478CABB09D"
+				type: "item"
+				item: {
+					id: "tconstruct:broad_blade"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:calorite"
+					}
+				}
+			}]
 		}
 		{
 			x: 6.5d
@@ -270,6 +324,63 @@
 				id: "25422A255709A092"
 				type: "item"
 				item: "techreborn:iridium_alloy_ingot"
+			}]
+			rewards: [{
+				id: "40C856F195C16815"
+				type: "item"
+				item: {
+					id: "tconstruct:dagger"
+					Count: 1b
+					tag: {
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.75f
+							"tconstruct:durability": 0.75f
+							"tconstruct:attack_damage": 0.65f
+						}
+						tic_stats: {
+							"tconstruct:attack_damage": 6.4674997f
+							"tconstruct:harvest_tier": "minecraft:netherite"
+							"tconstruct:durability": 1034.25f
+							"tconstruct:mining_speed": 7.0125003f
+							"tconstruct:attack_speed": 2.1f
+						}
+						Damage: 0
+						tic_materials: [
+							"tconstruct:calorite"
+							"tconstruct:calorite"
+						]
+						tic_modifiers: [
+							{
+								name: "tconstruct:looting"
+								level: 2s
+							}
+							{
+								name: "tconstruct:padded"
+								level: 1s
+							}
+							{
+								name: "tconstruct:sharpness"
+								level: 2s
+							}
+							{
+								name: "tconstruct:offhand_attack"
+								level: 1s
+							}
+							{
+								name: "tconstruct:silky_shears"
+								level: 1s
+							}
+						]
+						tic_broken: 0b
+						tic_volatile_data: {
+							"tconstruct:duel_wielding": 1b
+						}
+						tic_persistent_data: {
+							upgrades: 3
+							abilities: 1
+						}
+					}
+				}
 			}]
 		}
 		{
@@ -285,6 +396,26 @@
 				type: "item"
 				item: "techreborn:fusion_control_computer"
 			}]
+			rewards: [
+				{
+					id: "05740C0F17A9E43A"
+					type: "item"
+					item: "techreborn:fusion_coil"
+					count: 4
+				}
+				{
+					id: "1CA60AE8CA8D8B8C"
+					type: "item"
+					item: "techreborn:advanced_machine_casing"
+					count: 16
+				}
+				{
+					id: "3EF35CDB72456771"
+					type: "item"
+					item: "techreborn:industrial_machine_casing"
+					count: 16
+				}
+			]
 		}
 		{
 			title: "All coiled up."
@@ -420,6 +551,11 @@
 					item: "minecraft:water_bucket"
 				}
 			]
+			rewards: [{
+				id: "15356C99DB698FEE"
+				type: "item"
+				item: "compressor:quadruple_compressed_gravel"
+			}]
 		}
 		{
 			x: 4.5d
@@ -432,6 +568,17 @@
 				id: "62B6F76DEE9A1280"
 				type: "item"
 				item: "create:shadow_steel"
+			}]
+			rewards: [{
+				id: "43511E95E9B3CA35"
+				type: "item"
+				item: {
+					id: "tconstruct:tool_handle"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:shadow"
+					}
+				}
 			}]
 		}
 		{
@@ -759,6 +906,11 @@
 				type: "item"
 				item: "createastral:olivine_sheet"
 			}]
+			rewards: [{
+				id: "051D67B83BCC205C"
+				type: "item"
+				item: "vinery:apple_pie"
+			}]
 		}
 		{
 			x: 4.5d
@@ -779,6 +931,12 @@
 				id: "0EE894810AAD28C3"
 				type: "item"
 				item: "techreborn:nuke"
+			}]
+			rewards: [{
+				id: "0F8289C6C45815E6"
+				type: "item"
+				item: "minecraft:tnt"
+				count: 32
 			}]
 		}
 		{

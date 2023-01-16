@@ -50,6 +50,11 @@
 				icon: "ad_astra:mars_globe"
 				dimension: "ad_astra:mars"
 			}]
+			rewards: [{
+				id: "765072271F3D139D"
+				type: "item"
+				item: "vinery:crusty_bread"
+			}]
 		}
 		{
 			title: "Iron but slightly harder, I reckon"
@@ -69,7 +74,28 @@
 				id: "31C9A429FF4C66EA"
 				type: "item"
 				item: "ad_astra:steel_ingot"
+				count: 8L
 			}]
+			rewards: [
+				{
+					id: "668A4046FFBD54AB"
+					type: "item"
+					item: "createdeco:cast_iron_catwalk"
+					count: 32
+				}
+				{
+					id: "10E381DC726C8489"
+					type: "item"
+					item: "createdeco:andesite_catwalk"
+					count: 32
+				}
+				{
+					id: "6A5C655E11B63E6B"
+					type: "item"
+					item: "createdeco:copper_catwalk"
+					count: 32
+				}
+			]
 		}
 		{
 			title: "Produce some Lithium + Batteries"
@@ -105,6 +131,11 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "31F0CCE562AB9B0C"
+				type: "item"
+				item: "vinery:chocolate_bread"
+			}]
 		}
 		{
 			title: "Upgrade! Drill!"
@@ -162,6 +193,30 @@
 				type: "item"
 				item: "techreborn:industrial_electrolyzer"
 			}]
+			rewards: [
+				{
+					id: "6A9BB237A3F3860C"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:ostrum"
+						}
+					}
+				}
+				{
+					id: "272FDE2AFFC39406"
+					type: "item"
+					item: {
+						id: "tconstruct:tough_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:ostrum"
+						}
+					}
+				}
+			]
 		}
 		{
 			title: "Military-Grade Space Gear"
@@ -223,6 +278,12 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "0A150B7DBD98E783"
+				type: "item"
+				item: "create:metal_bracket"
+				count: 32
+			}]
 		}
 		{
 			title: "Rocket barrage, activated!"
@@ -246,11 +307,18 @@
 					tag: { }
 				}
 			}]
+			rewards: [{
+				id: "6F94AD86CBF1F65D"
+				type: "item"
+				item: "ad_astra:strophar_mushroom"
+				count: 32
+			}]
 		}
 		{
 			x: -10.5d
 			y: 5.0d
 			subtitle: "Bouncy..."
+			description: ["Negates fall damage entirely and enabled jumping up multiple blocks! You'll have to learn to control the bouncing however..."]
 			dependencies: ["3A5D7E60EF1C3BC3"]
 			optional: true
 			id: "08CEB76C11CCE833"
@@ -258,6 +326,18 @@
 				id: "551F104DC625712F"
 				type: "item"
 				item: "doodads:slimey_shoes"
+			}]
+			rewards: [{
+				id: "28F3BF080FAAB3DB"
+				type: "item"
+				item: {
+					id: "tconstruct:large_plate"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:manyullyn"
+					}
+				}
+				count: 2
 			}]
 		}
 		{
@@ -294,6 +374,17 @@
 				id: "68BB3658712A39A5"
 				type: "item"
 				item: "techreborn:industrial_blast_furnace"
+			}]
+			rewards: [{
+				id: "15AF530D5E400274"
+				type: "item"
+				item: {
+					id: "tconstruct:hammer_head"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:ostrum"
+					}
+				}
 			}]
 		}
 		{
@@ -360,6 +451,17 @@
 					biome: "incendium:infernal_dunes"
 				}
 			]
+			rewards: [{
+				id: "4BF3BE9BBB3F8726"
+				type: "item"
+				item: {
+					id: "mcdw:axe_firebrand"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
 		}
 		{
 			title: "Martian Explorer"
@@ -389,6 +491,17 @@
 					structure: "minecraft:bastion_remnant"
 				}
 			]
+			rewards: [{
+				id: "3D1C44FE3954271F"
+				type: "item"
+				item: {
+					id: "tconstruct:broad_blade"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:lead"
+					}
+				}
+			}]
 		}
 		{
 			title: "Components for an upgraded circuit!"
@@ -405,7 +518,8 @@
 				{
 					id: "462ECA657570F004"
 					type: "item"
-					item: "createastral:golden_pin"
+					item: "minecraft:gold_nugget"
+					count: 16L
 				}
 				{
 					id: "7D3A517B56E9930F"
@@ -413,11 +527,6 @@
 					item: "createaddition:rolling_mill"
 				}
 			]
-			rewards: [{
-				id: "7050ECC0194472C4"
-				type: "item"
-				item: "minecraft:gold_nugget"
-			}]
 		}
 		{
 			title: "The incomplete mechanism..."
@@ -430,6 +539,12 @@
 				id: "036E856A5BC3198E"
 				type: "item"
 				item: "createastral:incomplete_electronic_circuit"
+			}]
+			rewards: [{
+				id: "29C85DBB78534DDD"
+				type: "item"
+				item: "createastral:golden_pin"
+				count: 128
 			}]
 		}
 		{
@@ -452,6 +567,25 @@
 				item: "techreborn:electronic_circuit"
 				count: 4L
 			}]
+			rewards: [
+				{
+					id: "31DBA47B879AD749"
+					type: "item"
+					item: "minecraft:budding_amethyst"
+					count: 8
+				}
+				{
+					id: "5872BEFF535FBF46"
+					type: "item"
+					item: {
+						id: "tconstruct:tough_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:lead"
+						}
+					}
+				}
+			]
 		}
 		{
 			title: "You spin me right round..."
@@ -470,6 +604,17 @@
 				type: "item"
 				item: "techreborn:industrial_centrifuge"
 			}]
+			rewards: [{
+				id: "32D5F0149F97AD47"
+				type: "item"
+				item: {
+					id: "tconstruct:pick_head"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:ostrum"
+					}
+				}
+			}]
 		}
 		{
 			x: -6.0d
@@ -487,7 +632,7 @@
 			title: "More efficient steel dust."
 			x: -4.5d
 			y: 3.5d
-			description: ["Cells of molten iron can be poured from create spouts, ready to be processed with some carbon material to form steel."]
+			description: ["Cells of molten iron can be poured from create spouts, ready to be processed with some carbon material to form steel even more efficiently than the old recipe!"]
 			dependencies: ["30B554B51AEFEB0C"]
 			optional: true
 			secret: true
@@ -509,6 +654,17 @@
 					type: "item"
 					item: "techreborn:coal_dust"
 					count: 2L
+				}
+				{
+					id: "30B11C4314A81F5C"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "techreborn:carbon"
+						}
+					}
 				}
 			]
 		}
@@ -547,6 +703,12 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "4C6A6D25BF0994AB"
+				type: "item"
+				item: "farmersdelight:rich_soil"
+				count: 32
+			}]
 		}
 		{
 			title: "Hotter Stuff"
@@ -570,6 +732,18 @@
 					}
 				}
 			}]
+			rewards: [
+				{
+					id: "056177DCDF992B17"
+					type: "item"
+					item: "create:blaze_burner"
+				}
+				{
+					id: "208ABA5D2856D42D"
+					type: "item"
+					item: "ad_astra:fuel_bucket"
+				}
+			]
 		}
 		{
 			title: "Infernal Spire Processing."
@@ -605,6 +779,17 @@
 				item: "tconstruct:debris_nugget"
 				count: 64L
 			}]
+			rewards: [{
+				id: "637BCCC6223E87A9"
+				type: "item"
+				item: {
+					id: "tconstruct:broad_axe_head"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:hepatizon"
+					}
+				}
+			}]
 		}
 		{
 			x: -8.0d
@@ -620,6 +805,12 @@
 				id: "04BCF9DF55944974"
 				type: "item"
 				item: "createastral:electrified_pin"
+			}]
+			rewards: [{
+				id: "01E486EDBFBDD7FB"
+				type: "item"
+				item: "createastral:electrified_pin"
+				count: 16
 			}]
 		}
 		{
@@ -653,6 +844,17 @@
 				type: "item"
 				item: "gearreborn:nv_goggles"
 			}]
+			rewards: [{
+				id: "6CA657AA5EC0D9B2"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:long_night_vision"
+					}
+				}
+			}]
 		}
 		{
 			title: "Inner Machinations."
@@ -668,6 +870,20 @@
 				type: "item"
 				item: "techreborn:machine_parts"
 			}]
+			rewards: [
+				{
+					id: "0F079BC874B2709B"
+					type: "item"
+					item: "dustrial_decor:anchor"
+					count: 3
+				}
+				{
+					id: "1CBF14FBF7F4A25C"
+					type: "item"
+					item: "dustrial_decor:hook"
+					count: 3
+				}
+			]
 		}
 		{
 			x: -5.0d
@@ -678,6 +894,51 @@
 				id: "61845D592787A7BC"
 				type: "item"
 				item: "techreborn:carbon_mesh"
+			}]
+			rewards: [{
+				id: "59D4213869A63EB6"
+				type: "item"
+				item: {
+					id: "tconstruct:kama"
+					Count: 1b
+					tag: {
+						tic_multipliers: {
+							"tconstruct:attack_damage": 0.5f
+						}
+						tic_stats: {
+							"tconstruct:attack_damage": 1.5749999f
+							"tconstruct:harvest_tier": "minecraft:netherite"
+							"tconstruct:durability": 1072.0f
+							"tconstruct:mining_speed": 9.6f
+							"tconstruct:attack_speed": 1.6f
+						}
+						Damage: 0
+						tic_materials: [
+							"tconstruct:hepatizon"
+							"tconstruct:hepatizon"
+							"tconstruct:hepatizon"
+						]
+						tic_modifiers: [
+							{
+								name: "tconstruct:momentum"
+								level: 3s
+							}
+							{
+								name: "tconstruct:shears"
+								level: 1s
+							}
+							{
+								name: "tconstruct:harvest"
+								level: 1s
+							}
+						]
+						tic_broken: 0b
+						tic_persistent_data: {
+							upgrades: 3
+							abilities: 1
+						}
+					}
+				}
 			}]
 		}
 		{
@@ -721,6 +982,11 @@
 						fluid: "techreborn:sodium"
 					}
 				}
+			}]
+			rewards: [{
+				id: "3D96D1E80CBDA01B"
+				type: "item"
+				item: "createastral:uwaah"
 			}]
 		}
 		{
@@ -782,6 +1048,41 @@
 				type: "item"
 				item: "techreborn:nak_coolant_cell_60k"
 			}]
+			rewards: [
+				{
+					id: "582AA8225A240D07"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:strong_leaping"
+						}
+					}
+				}
+				{
+					id: "3060337FE332870C"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:strong_swiftness"
+						}
+					}
+				}
+				{
+					id: "31AD6626DE63EA9F"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:long_slow_falling"
+						}
+					}
+				}
+			]
 		}
 		{
 			x: -12.5d
@@ -806,6 +1107,12 @@
 				id: "23265F3754619462"
 				type: "item"
 				item: "immersive_aircraft:engine"
+			}]
+			rewards: [{
+				id: "12C7B49DA2F16318"
+				type: "item"
+				item: "ae2:tiny_tnt"
+				count: 16
 			}]
 		}
 		{
@@ -841,6 +1148,12 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "09DD7FCC72B1A6DC"
+				type: "item"
+				item: "farmersdelight:nether_salad"
+				count: 3
+			}]
 		}
 		{
 			x: -12.0d
@@ -866,6 +1179,11 @@
 				id: "1081B553AE56D482"
 				type: "item"
 				item: "techreborn:implosion_compressor"
+			}]
+			rewards: [{
+				id: "1839CF2AE0EBC4C0"
+				type: "item"
+				item: "reinfchest:diamond_chest"
 			}]
 		}
 		{
