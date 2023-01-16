@@ -1375,7 +1375,7 @@ onEvent('recipes', event => {
   'C',
   'B'
 ], {
-  A: 'techreborn:olivine_sheet',
+  A: 'createastral:olivine_sheet',
   B: 'techreborn:iridium_alloy_plate',
   C: 'techreborn:industrial_circuit',
 
