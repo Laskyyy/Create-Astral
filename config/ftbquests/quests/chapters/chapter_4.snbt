@@ -14,8 +14,8 @@
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	images: [{
-		x: -21.5d
-		y: -5.0d
+		x: -22.0d
+		y: -6.5d
 		width: 3.0d
 		height: 3.0d
 		rotation: 0.0d
@@ -2996,6 +2996,65 @@
 				type: "item"
 				item: "techreborn:low_voltage_su"
 			}]
+		}
+		{
+			title: "What a steel!"
+			x: -3.5d
+			y: 2.0d
+			subtitle: "Hope that pun doesn't weigh you down."
+			description: [
+				"Pressing steel dust in a heated basin will coat your sturdy armour in a layer of steel!"
+				""
+				"It is an equivalent to diamond, and worth making for the aesthetic alone..."
+			]
+			dependencies: ["70FE485B4505AC81"]
+			id: "5D07FD239AC21940"
+			tasks: [
+				{
+					id: "77E8F5077D380E75"
+					type: "item"
+					item: {
+						id: "createastral:steel_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7917855718595AAD"
+					type: "item"
+					item: {
+						id: "createastral:steel_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "43BA6F8D199AC2F0"
+					type: "item"
+					item: {
+						id: "createastral:steel_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "42920F161523C978"
+					type: "item"
+					item: {
+						id: "createastral:steel_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
 		}
 	]
 }

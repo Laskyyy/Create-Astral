@@ -646,14 +646,16 @@
 			x: -6.536394557823115d
 			y: 14.571088435374122d
 			shape: "gear"
-			subtitle: "uwaaaah"
+			subtitle: "Laky appreciates EVERYONE"
 			description: [
 				""
-				"Ethanicuss - Structure dev. flopdev, moral support and progression insight."
-				"Iris - Music, Menu!!! Greg Chapter 6"
-				"Choco - Structures"
-				"The Astral Discord - Showing appreciation for the pack."
-				"Lizard - Being a good reptile <3 Contributing hugely to quest progression."
+				"LizardLeliel - Hugely impactful in the quest progression of 1 through 3, and responsible for a WHOLE host of the recipes and automation you can find throughout the pack!"
+				""
+				"Ethanicuss - Datapack structure development (astralrails), music contribution, quest assistance, countless misc. input throughout development (A LOT)"
+				""
+				"Iris - Incredible contribution to music in the pack, including the official Create: Astral OST! Check it out on spotify to see it before the whole thing is implemented!"
+				""
+				"Choconeosome - Constructing most of the buildings you'll see in AstralRails!"
 			]
 			size: 1.25d
 			id: "1472D9CAB3B3A74D"
@@ -1180,9 +1182,9 @@
 				Count: 1b
 				tag: {
 					Automobile: {
-						wheels: "automobility:standard"
-						frame: "automobility:yellow_tractor"
 						engine: "automobility:stone"
+						frame: "automobility:yellow_tractor"
+						wheels: "automobility:standard"
 					}
 				}
 			}
@@ -1270,9 +1272,9 @@
 						Count: 1b
 						tag: {
 							Automobile: {
-								wheels: "automobility:standard"
-								frame: "automobility:yellow_tractor"
 								engine: "automobility:stone"
+								frame: "automobility:yellow_tractor"
+								wheels: "automobility:standard"
 							}
 						}
 					}
@@ -1801,8 +1803,8 @@
 								realCount: 0
 							}
 							PackageStyle: {
-								frame: "minecraft:oak_log"
 								inner: "minecraft:oak_planks"
+								frame: "minecraft:oak_log"
 								color: 0
 							}
 						}

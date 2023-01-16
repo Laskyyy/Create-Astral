@@ -9,46 +9,6 @@ file = "config/DisablePortals.json"
 hash = "7eeb6f3c8186eb0ecb9fda083985d71718790ffa974bd13a81041932fc9610ef"
 
 [[files]]
-file = "config/MusicTriggers/channels.toml"
-hash = "7d634c7a74ae6cc09ce19bd4abf5301aabbc53c3561b4c0847d98e77e87d65e5"
-
-[[files]]
-file = "config/MusicTriggers/debug.toml"
-hash = "1c41a651f5946dc26565f91dad7f13176ec13d1dfda17512ecb98d8d99db9655"
-
-[[files]]
-file = "config/MusicTriggers/music/commands.toml"
-hash = "a8d78b83e4eab530d6edad528d5b461853590d56e1223e7bc05badc5f733609a"
-
-[[files]]
-file = "config/MusicTriggers/music/jukebox.txt"
-hash = "9e6bccc01bcdfcc6f0c20f6a98c85c2b33c363c9be9c4134cc1277c17459eb70"
-
-[[files]]
-file = "config/MusicTriggers/music/main.toml"
-hash = "554dbf011a9e0dce58087b5feae1fc10593a2892ded1ee937cb3382727b4dc1c"
-
-[[files]]
-file = "config/MusicTriggers/music/redirect.txt"
-hash = "504b5e524addbc2270bd0ddfa36d40d131987871d8fce25e40f6f3cd8b0ad4de"
-
-[[files]]
-file = "config/MusicTriggers/music/toggles.toml"
-hash = "26893d60f6645518b1bf3ce8f638e9ee28ae3bf0045731198ad41886839ef71d"
-
-[[files]]
-file = "config/MusicTriggers/music/transitions.toml"
-hash = "bf3503c1c9d2bd3c9f25143fa1ad5b0b5e573572b8ca0b290a8cbf41bcc5099a"
-
-[[files]]
-file = "config/MusicTriggers/registration.toml"
-hash = "bfdba5907487122bebdad512a4b5f04d339ed8125e4000b363704bd33a35ed5d"
-
-[[files]]
-file = "config/MusicTriggers/songs/astrallakes.ogg"
-hash = "acb3c79766f02533116363bb3d39bf565cb33f6ce3cdea5b3a315d2b5106ba5a"
-
-[[files]]
 file = "config/SkipTransitions.properties"
 hash = "b461b46f0e7b5a1c945deb98deafea32332b5de90f1eaa9e35e2b9c6ee2c6440"
 
@@ -406,11 +366,11 @@ hash = "d8a5bec0589246693a5191291a8c465362d74874e4e50e13952cb380f9442197"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/6_raow.snbt"
-hash = "c17844058092eb309990b91e7bf07ce7f3f12e0137005313b6cce5c519bacfdf"
+hash = "fcac2fd4ddff995bbca66b0ea62c975ece956854a9b52479cf4e35580485e3ad"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/assorted_goals.snbt"
-hash = "7b56230aca82f45e32fc6340b859206fde5565ce3cf6777c5dcd7284a802f8cd"
+hash = "15c235470d68ad77828a533d259389d90810a45c1ff3aa2ae315b21fbb619cbc"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/astral_storage.snbt"
@@ -418,19 +378,19 @@ hash = "ba97ea70c90ea773582b310172bd927408ed17a74a49e1472b4586c8abd974a8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_2.snbt"
-hash = "eb2e73c73674fa3c83252fe9bd3bdfc1d4be6a7c071708b8f9bab934763e22fa"
+hash = "111d57bec6e0c783ada120f33c75eec0755424b4cb4c1386f6f687d90e1c5608"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_3.snbt"
-hash = "49732194015b66dd27f7c18d7c697890247d51f543688ea06b4c2f8bc2af1651"
+hash = "974b0075e879ccbc36604a4b1521b79583057933ebe5086d101857a78f72f8e1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_4.snbt"
-hash = "d0ce231140cd8e83de82ce0859feb7c9ca966d749d2bbc9fbbcb0f817b29c7c9"
+hash = "5b79f38573115a0a26d4b05b72c4cdd8f80ee1c636f57e79695531167fb48c0c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_5.snbt"
-hash = "3a94a7a009e7021108454a3ca9c7deafc4f124e3f3e8d2a6d5aaea79c65abd32"
+hash = "cd5355fe126880b88ea3fa64abcfdc7c5e8c99631759d1b8713bf46fca48d3f0"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -1962,7 +1922,7 @@ hash = "23a42e71ea36448ac34ee91d07f80b68ccac655d78566affa27515298f85f97a"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/recipes/nasa_workbench/tier_1_rocket.json"
-hash = "7dc9a305de243954277a1b17981cbbf6e7eab19adee027af16073ba52abc56c3"
+hash = "3d544b9dcdd20110eeb2e4b702dd7aaf62de8bf6cd1a24a1e0f6c7b871158e25"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/recipes/nasa_workbench/tier_2_rocket.json"
@@ -2010,7 +1970,7 @@ hash = "22694783624167f90199e90f83f6457199519d9aba728e1c8458e66f48ee3538"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/tags/entity_types/entities/lives_without_oxygen.json"
-hash = "cc508c55955755cdbc729382fb728a4e5cf55cb62d4e5a8203a7cdfab7d7cf31"
+hash = "a706ba7989a97b7059ce51e2b0dd1fa08762adc02cf72f49383f68dd20534e6f"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/tags/fluids/efficient_fuels.json"
@@ -2022,11 +1982,11 @@ hash = "cb3e353ce40734c3eacac41ee94bebbb721a5945eafb15005e4198d6caa2e3cd"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/worldgen/biome/glacio_ice_peaks.json"
-hash = "dbfcc95078f52220a441b64e72556ff387ea72c5b5dddc9c2be434b8edb66c53"
+hash = "b8ed00f31fa147582b3f95b71859546a979fcfa9bb8653f76bd1c8cf1f2ec492"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/worldgen/biome/glacio_snowy_barrens.json"
-hash = "dea884ef560326c45c8810b4e82c2ae211c3bfe9c6937a241dd4a94a45c80989"
+hash = "15f038c090c3b919cc1d0054738ab0cf1ac59bb2b8f8e9eeeb523e237e90eea5"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/worldgen/biome/infernal_venus_barrens.json"
@@ -2034,7 +1994,7 @@ hash = "c72f22cde1108389f6c99296809649515a9ae88dc921f11dff98f99fb7f8e979"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/worldgen/biome/lunar_wastelands.json"
-hash = "7705c7f803eb795c2d3f0074bc8e0e6bbba28d9acb362068e521f34e9190613d"
+hash = "8463f7e1d65ffec362986eb651b7cdcf9de05b91fd88cc8a8fb725261eee8aba"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/worldgen/biome/martian_canyon_creek.json"
@@ -2046,11 +2006,11 @@ hash = "da8c0c89c072b97f69bc04a17b01ea745b81f52a83784bc8cc6c7f891f67c1db"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/worldgen/biome/martian_wastelands.json"
-hash = "381275c599d432a584c0932e745373d46ba675dba7576cdc63440388059732ed"
+hash = "77232892cbb6421b29d2a56d9485d3e89e4d8ca5c047b409ccc058ea46fb9a80"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/worldgen/biome/mercury_deltas.json"
-hash = "2f38e1f268766c8768debc0449e81a3601db13349d40ba2ec659ed251a67159f"
+hash = "238311497da4fe035516214880a6dbf6df5fe6c3be69a7f1e77cec44af453a34"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/worldgen/biome/orbit.json"
@@ -2958,7 +2918,7 @@ hash = "dd64c8a77a179e72af901027fe3b91d8b984c6bf89187d302a7fa1e1f36daf83"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/create/tags/items/blaze_burner_fuel/special.json"
-hash = "690e90a59d52d576aec20f08a97854cf645553cee76b93495612bd685258da0a"
+hash = "a3aa3fa64c6e66048fa937e28404249025c30ff164696a861e53e160efa7ff41"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createaddition/tags/fluids/burnable_fuel_1200.json"
@@ -7193,46 +7153,6 @@ file = "global_packs/required_data/zLaky Core/data/minecraft/worldgen/noise_sett
 hash = "5cb5cbfde96faaf2fcb9a5ebb2e757b63dbfa7c4c8f41c8fb9b59659934647f6"
 
 [[files]]
-file = "global_packs/required_data/zLaky Core/data/mtmechs/recipes/iron_gear_item.json"
-hash = "bb262399c6ecb3247d3ac81e8c4d0a46980b11c20d7554c57a23bc5a9c8f83f1"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/mtmechs/recipes/magicite_item.json"
-hash = "5f8d407320deac4d4eedf163e2739122e8564ec7a8c30364afcc75db26509fb0"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/mtmechs/recipes/pa_chassis_item.json"
-hash = "37f83286aba2e08cf53e38b042c10853bbe9accc9e75079935f5cfc71eecbc62"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/mtmechs/recipes/pa_leg_item.json"
-hash = "68b3d19d6a97c66d9bae2e3516360e9e921f1dbf512f3e913eae7b705fb0ef4e"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/mtmechs/recipes/pa_whole_item.json"
-hash = "e98d6fd8d8b9679e88a87193ab1bcee50b946986c5aff297de10ceb31612fe5d"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/mtmechs/recipes/ta_arm_item.json"
-hash = "f9ecc30b232a023a62f13c2b7ff64c0bc3a88d75f06253fbd01550637dd72f4b"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/mtmechs/recipes/ta_chassis_item.json"
-hash = "f8a972ba5bb06ea9703cbdceaf0cdbe906e3c3dfedf7fc84812dbe7f0911c5cc"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/mtmechs/recipes/ta_stack_item.json"
-hash = "c32b097880762cc08c0f28e806bdb3e23e0365f40f44f2a1ad43e74bd834c7c1"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/mtmechs/recipes/ta_wheel_item.json"
-hash = "dd4ba835f80bdd3af0ec60a23c8808ba9c40a51106e989cf829572ffc7154eba"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/mtmechs/recipes/ta_whole_item.json"
-hash = "6faf10c43c36d5453f6ab71c335d2f8d6967b96bdbda95cb14f2219470033243"
-
-[[files]]
 file = "global_packs/required_data/zLaky Core/data/nullscape/structures/destroy1.nbt"
 hash = "764bf4be334511c98b53ae0a6daddaa0d85bfb633d9b78a1d408a394f358c774"
 
@@ -8265,150 +8185,6 @@ file = "global_packs/required_data/zLaky Core/data/nullscape/worldgen/processor_
 hash = "39bdb5ccace905607325ff9529af3c69b32510ea9f8b001b61c2a008ede00187"
 
 [[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/blocks/coral_chest.json"
-hash = "3930fe38b9e47ab006097e0a6737d43936dc050ebfae1728e85c80dde9c46925"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/blocks/gold_chest.json"
-hash = "a68e46b2e2af7f91a251db454018f553534c7adf7f3a5ca29ac47e789b8188b7"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/blocks/ice_chest.json"
-hash = "f59d6cbcfb07c6552c23a01752a7b9df888f0801491ce633bf33c699767e969b"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/blocks/lush_chest.json"
-hash = "67b54e036e4b9c0b6907af7ce699585a703140e55d1575bae18c928d471e5619"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/blocks/lush_pot.json"
-hash = "1c337bf25cacfba1c51a0c09c60673f14a313030dfba8315f30a441ff8c56285"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/blocks/nether_chest.json"
-hash = "26190c4750314c1204ab145b2c12c7b1c2dc244297373dc90a207e955eb37743"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/blocks/nether_pot.json"
-hash = "5aeb4964fa3bd237f9ed146b0c2bee6282bdf7e2120fc56159cf8aba050e4eaf"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/blocks/normal_chest.json"
-hash = "d2346fe6711815d47ea27ff5791b9dc82ff81792fbb78f833021de49699d9a31"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/blocks/normal_pot.json"
-hash = "784dc5e7e036a7787cfe522c7da124029b1e030ebdee0fd50da7ee47a267f8f4"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/blocks/pc_pot_lush.json"
-hash = "1734bec47498a033598232462d3287a3b674a155980e3f71a83e34b7f9e7e26c"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/blocks/pc_pot_nether.json"
-hash = "3a24d97d173cd01112084763b8a03e659bc654a9f8d045bbc2cbfb505f4c09c7"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/blocks/pc_pot_normal.json"
-hash = "ab1ec93a3dde82835f8532775f70d0ef9beed0a75391e1521d2a609216311b20"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/blocks/pc_pot_rocky.json"
-hash = "e2481c36153de2e4ea99a9c7e2b1b5418e477ac00c36198608a243eee3d160c8"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/blocks/rocky_chest.json"
-hash = "538ba93f78a81306c1e8c21e32b64a479cf3cfc11f8a5f27d4beee673d4825b8"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/blocks/rocky_pot.json"
-hash = "25a64a1422bc304b4331fcd609e28bb31bcc14e79130526b3bf0d51b4fdb5e14"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/blocks/shadow_chest.json"
-hash = "d2d95896f33cc77f20a03b0ba0a338861d6b304fdc9c95253c339d121fa10315"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/blocks/stone_chest.json"
-hash = "3c0ae02711a710fc5f58a34f974a8c67bba3594a563dbb34879b281b9e81328d"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/chests/coral_pc_chests.json"
-hash = "a70fe7e7e2797cd136e1a1f185245b32c6aa22836aed218cd9640907c177c1b1"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/chests/end_items.json"
-hash = "ae8cdb0756c7da450f9c7f76679735d251dd3f4003535a3a7c910d4acd9d7186"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/chests/gold_level_items.json"
-hash = "1fbf6880ac7edd64f0b9b3dfb8a73e31a94857a92e040996d28a090f6111d661"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/chests/gold_pc_chests.json"
-hash = "d5315bd98acc759f2159c43851b52501d6ea09a676b8dab7be8ad1e1a7e39f0d"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/chests/ice_items.json"
-hash = "aed8a03eb0810f20bfb2c3c5020e035d4cc323c95c1ee28f01bfea7bc32c0db1"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/chests/ice_pc_chests.json"
-hash = "3811131c59b8e9d55cb0342f21c1934f2f23f2018eee80dab4dc19fb486d3c45"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/chests/lush_items.json"
-hash = "312ed86dfa43c9d9d362df553bf1155b48cd709023296b61104097e97dec6345"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/chests/lush_pc_chests.json"
-hash = "ebaf2344f02a3a6e8618b84e77bfecdb53a5e8387fd22aa44596eeca71400639"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/chests/mining_items.json"
-hash = "f92c3dfc244601ad658d3855662d715b6a4adfa8fe8faa847746e1cdb0de560b"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/chests/mixed_items.json"
-hash = "969a62f30056240f94c0a1daa123b72fc70e6eb03535101d2eaf6bedb29261a0"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/chests/nether_items.json"
-hash = "f8be383f61c6d1d50ac32c88709dab55e1d5346f0a89214e498cae644c6ac15b"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/chests/nether_pc_chests.json"
-hash = "b5810a549d501a3a434ad7ccae2c9ba3bdcf7244420378d0b8b9fa63bf152ee3"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/chests/normal_items.json"
-hash = "566576a39efa1b2f08e4671a3ca55d652ee45b3a2db140ce74b73373bc3d6b2e"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/chests/normal_pc_chests.json"
-hash = "12363ff671cf2ad3633ba570fd92e185e4fe81f7537f63ad453e74bbe5a395db"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/chests/ocean_items.json"
-hash = "31f7f2ebccd8762c3f0384026622a4bad54a2b77397673eb454283d067ba38ce"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/chests/rare_items.json"
-hash = "f7321a8277084ccda851351905de72afa6d99d65f1e8d8c9ab65f4bb014216f0"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/chests/rocky_pc_chests.json"
-hash = "cfb8be4002611c7b91677ac73b9764a232a458de495a90ab2edcdff538ab2757"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/chests/shadow_pc_chests.json"
-hash = "f7507c62ec860f29ece0b0d76bf20af33a9f450ac1fed6360c474f1d1a42209d"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/probablychests/loot_tables/chests/stone_pc_chests.json"
-hash = "7cba64fe69660a813d853a27895cc83c724f237801949597924ed5d9bdd17c63"
-
-[[files]]
 file = "global_packs/required_data/zLaky Core/data/reinfchest/recipes/diamond_chest.json"
 hash = "c493afb1c2c6eb28ae174277a604de76822938241e3f704c70a19048f22577a0"
 
@@ -8434,7 +8210,7 @@ hash = "6124e9955374887a6f531f4f45fb24062c2802711e94cbbeec352376fb7374c9"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/techreborn/recipes/crafting_table/parts/nak.json"
-hash = "6f5db60ca45f7719ae034ca96f948f5f0585fe088bd56321959317921e90db84"
+hash = "8ad78115be0e98ae79a5019c4f40a3e494e482f818aead694f3e5f786223c6c6"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/techreborn/recipes/distillation_tower/diesel.json"
@@ -8454,7 +8230,7 @@ hash = "33a1907c4d5a0aa6d1ba0f87e115479d013fc500b31dacb3c747efef59ef9b6b"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/techreborn/recipes/implosion_compressor/diamondfromcoal.json"
-hash = "508d43499f866d6c423538150ebe9a619457bc3281ee4098238ed20bd88eed12"
+hash = "6f6a0cdfca44e9c68c3ae73e728d7c336d0a66a56da9cb42a60584af12845987"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/techreborn/recipes/recycler.json"
@@ -12266,7 +12042,7 @@ hash = "a3a7f2168df7504765276822a3be17da7bef25a284d62298c78ba598a23b0881"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/recipes/smeltery/entity_melting/blaze.json"
-hash = "ab59d470712111276d6597105ced5b099f84b1633e51328cc271a79487666070"
+hash = "ae57980ff33fe8a7403bc43c88dfb7463495a2597cc30044678d525e74ceba73"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/recipes/smeltery/entity_melting/heads/blaze.json"
@@ -16005,6 +15781,10 @@ file = "kubejs/assets/createastral/textures/item/incomplete_electronic_circuit.p
 hash = "a66687be40f9271b2a3edd8fe7dd1bab2abe9ed065d6a076956ab9d81818e1ee"
 
 [[files]]
+file = "kubejs/assets/createastral/textures/item/lime.png"
+hash = "87c2e78797baa593d8635fde595e3cb98fb1d3143bf8256d779bcdbcc6a318ed"
+
+[[files]]
 file = "kubejs/assets/createastral/textures/item/logos_binted.png"
 hash = "cc4a583f64b1e869a66bb5671fb09fe471e39345ecf9d1c5c99754785b550d89"
 
@@ -16538,11 +16318,11 @@ hash = "058c91a44f9f4c079069775e15aea88454aee80420815cf5af51dedf01187d24"
 
 [[files]]
 file = "kubejs/server_scripts/server.js"
-hash = "4965eebf9f208e9ef5a1ccfbbaa7328083c7ac71b10cad5fd20e159244983bd6"
+hash = "5904501f67c5c9b53994e39cf0e84e60f68420535d101ae28059b2abadfcfd4f"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
-hash = "a20cdbcbdd032f463eaf8e85c08a084d9a816f983305483fe50b791c33f7f87b"
+hash = "08e4d097ba9c32485ff34f03af911d238954e7454a02dbdc2290d2e1c4aff698"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
@@ -17032,11 +16812,6 @@ hash = "7fc0079b2aeafb6fb09c2a5a4a7deb4d839450d18c4d215ed3385e5c5307cf04"
 metafile = true
 
 [[files]]
-file = "mods/magitek-mechs.pw.toml"
-hash = "f7ba28904b4670e5b8e1e6ba9e4b388aa0b3b92ea5c55cca04ef010573e7d1e2"
-metafile = true
-
-[[files]]
 file = "mods/mcdw.pw.toml"
 hash = "597a199b92e37ba1e4992ba97605ace1112322a7187d53b0cecdb71aae9aab63"
 metafile = true
@@ -17044,6 +16819,11 @@ metafile = true
 [[files]]
 file = "mods/memoryleakfix.pw.toml"
 hash = "90663c79e9861607884f32cb5ec4d5af76fabbbf509451f6234dc34a86e6e15c"
+metafile = true
+
+[[files]]
+file = "mods/menumusic.pw.toml"
+hash = "fae41618bb9b75b41ae7bbdbc20d32f6d1faae9fdee8afda32fe6dcea8c555f1"
 metafile = true
 
 [[files]]
@@ -17064,11 +16844,6 @@ metafile = true
 [[files]]
 file = "mods/modmenu.pw.toml"
 hash = "4714c8691c3163417a6993d7645e80c6fb83f19b0468aeb3bd43a383b7474071"
-metafile = true
-
-[[files]]
-file = "mods/music-triggers.pw.toml"
-hash = "ded8b2f94caf1779f40e1883e9b2c212d6295e662150978ef821e978da94d051"
 metafile = true
 
 [[files]]
@@ -37405,6 +37180,14 @@ hash = "e3c3ffb7b8ced851c1dfbe6a88588d4f29e94a11fe4323f1d1db718337d374c6"
 [[files]]
 file = "resources/immersive_aircraft/textures/item/sail.png"
 hash = "e3628acf7ff93e5f292029088d447701f72722f0646f8ed1a8a8863c7e16ee6b"
+
+[[files]]
+file = "resources/menumusic/sounds.json"
+hash = "0967c847f7266f2cb9d3d16f7b14241312e8bb62b817b2e446be290155e6ef06"
+
+[[files]]
+file = "resources/menumusic/sounds/npc_theme.ogg"
+hash = "acb3c79766f02533116363bb3d39bf565cb33f6ce3cdea5b3a315d2b5106ba5a"
 
 [[files]]
 file = "resources/minecraft/lang/brb.json"

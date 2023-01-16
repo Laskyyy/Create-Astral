@@ -56,7 +56,7 @@
 			x: -8.0d
 			y: 5.0d
 			shape: "square"
-			subtitle: "This stuff should be durable enough to make a phat new rocket."
+			subtitle: "Mix steel dust in a superheated blaze burner!"
 			description: [
 				"A key component in later game recipes and survival on mercury!"
 				""
@@ -72,11 +72,15 @@
 			}]
 		}
 		{
-			title: "Automate Lithium + Batteries"
+			title: "Produce some Lithium + Batteries"
 			x: -3.5d
 			y: 1.5d
 			subtitle: "Pour Lithium into your red cell batteries for this component. "
-			description: ["Lithium can be processed from basic clay balls for a large amount, if you use one of the earlier clay farms."]
+			description: [
+				"Lithium can be processed from basic clay balls for a large amount, if you use one of the earlier clay farms."
+				""
+				"A reminder that batteries can be charged in any tech reborn machine! The tesla coil from create additions does not provide this."
+			]
 			dependencies: [
 				"42FDBAC4A8966F9D"
 				"684E33C50BD55A8E"
@@ -87,6 +91,7 @@
 					id: "63AB5A5A44B664D3"
 					type: "item"
 					item: "techreborn:lithium_ion_battery"
+					count: 4L
 				}
 				{
 					id: "0B4ADE9DAC75D9AF"
@@ -436,7 +441,7 @@
 			description: [
 				"With access to Advanced CPUs, new industrial tier machines are now able to be constructed, each with some unique uses."
 				""
-				"Inspect the branching quest lines to uncover more about them."
+				"Inspect the branching quest lines to uncover more about them. Steel isn't obtainable immediately from this quest, after all..."
 			]
 			dependencies: ["0DF20AB6978A93FE"]
 			size: 1.5d
@@ -618,6 +623,7 @@
 			}]
 		}
 		{
+			title: "Shock those pins."
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -627,7 +633,7 @@
 			}
 			x: -7.5d
 			y: -2.0d
-			description: ["this quest is kinda defunct due to it being a ch3 item, i'll replace it sometime"]
+			description: ["As you have used the tesla coil for previously, charging a golden pin with electricity will charge them, ready to be imprinted onto a new circuit."]
 			dependencies: ["253F29A00B4EA050"]
 			id: "069454E35DC9B5C7"
 			tasks: [{
@@ -688,6 +694,7 @@
 		{
 			x: -3.0d
 			y: 7.5d
+			dependencies: ["3A5D7E60EF1C3BC3"]
 			id: "156FCE6FDC8AD38D"
 			tasks: [{
 				id: "39A3E1362162AA2A"
@@ -860,14 +867,21 @@
 			}]
 		}
 		{
+			title: "Automating Diamonds."
 			x: -2.5d
 			y: 4.5d
+			subtitle: "As a bonus for getting this far, here is a block of liquid diamond. A treat >.<"
+			description: ["64 coal dust in an implosion compressor will create a diamond. Seems steep, but such is the price we pay for automation."]
 			dependencies: ["2E320829DF95EB8E"]
 			optional: true
 			secret: true
 			id: "6FC315C473D123F8"
 			tasks: [{
-				id: "366385021857C6CD"
+				id: "4588380C7A069FFA"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "3A3624C2349BF4A5"
 				type: "item"
 				item: {
 					id: "techreborn:cell"
@@ -901,6 +915,8 @@
 				"{image:tconstruct:textures/block/storage/pig_iron/front.png width:100 height:100 align:1}"
 				"Respect the Piglin religion and they might not immediatly kill you. "
 			]
+			hide_dependency_lines: true
+			dependencies: ["3303D84A3F6FBBBA"]
 			id: "1873D12083BC1697"
 			tasks: [
 				{
@@ -952,20 +968,6 @@
 				id: "13393CF16F799EB6"
 				type: "item"
 				item: "libraryferret:fake_gold_block"
-			}]
-		}
-		{
-			x: -10.5d
-			y: 10.5d
-			dependencies: [
-				"2DEFDA584C5773FA"
-				"7D98B3EA84A46227"
-			]
-			id: "2ECC73EEC8AA3358"
-			tasks: [{
-				id: "374E944FEA3BB826"
-				type: "item"
-				item: "immersive_aircraft:biplane"
 			}]
 		}
 		{

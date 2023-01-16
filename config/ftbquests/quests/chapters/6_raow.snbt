@@ -390,7 +390,10 @@
 			x: 2.25d
 			y: -3.75d
 			subtitle: "A fresh new multiblock can provide that very feature."
-			dependencies: ["7A4255522DA6FEB7"]
+			dependencies: [
+				"7A4255522DA6FEB7"
+				"160490A7E60FC575"
+			]
 			size: 1.5d
 			id: "39B529A749BEC970"
 			tasks: [
@@ -659,7 +662,7 @@
 			}]
 		}
 		{
-			title: "Calorite Pins, placeholder"
+			title: "Calorite Pins"
 			x: 7.5d
 			y: -1.0d
 			dependencies: ["4329020373E27B1F"]
@@ -667,11 +670,11 @@
 			tasks: [{
 				id: "6B1169BFB796200B"
 				type: "item"
-				item: "ad_astra:calorite_nugget"
+				item: "createastral:calorite_pin"
 			}]
 		}
 		{
-			title: "Lithium input placeholder."
+			title: "Lithium!"
 			x: 7.5d
 			y: 1.0d
 			hide_dependency_lines: true
@@ -797,6 +800,8 @@
 			x: 1.0d
 			y: 9.5d
 			subtitle: "You'll need one of these, minimum, to have the space for a singularity."
+			hide_dependency_lines: true
+			dependencies: ["3ED703EAA646A18A"]
 			id: "49C63ADC9B1FC721"
 			tasks: [{
 				id: "76554531F0767414"
