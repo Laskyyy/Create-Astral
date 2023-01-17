@@ -1,7 +1,7 @@
 {
 	id: "1A12E870F117B0D1"
 	group: ""
-	order_index: 3
+	order_index: 4
 	filename: "chapter_4"
 	title: "3) Remnants of a lost civilisation"
 	icon: {
@@ -27,6 +27,7 @@
 	}]
 	quests: [
 		{
+			title: "Living Breathing Furance"
 			x: -18.0d
 			y: 1.0d
 			subtitle: "Obtain a blaze from a lost pipeline on the moon!"
@@ -2197,6 +2198,7 @@
 			]
 			min_required_dependencies: 1
 			dependencies: ["11AF7F7CE0940C06"]
+			min_required_tasks: 1
 			id: "0BCFF062FD1518BF"
 			tasks: [
 				{
