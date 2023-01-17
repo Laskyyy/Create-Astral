@@ -1,0 +1,14 @@
+name = "Passive Piglins"
+filename = "passivepiglins-1.0.0.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "9cc266436019d698c25eb788ddb0bc4b6a62b91c"
+
+[update]
+[update.curseforge]
+file-id = 4346672
+project-id = 811529
