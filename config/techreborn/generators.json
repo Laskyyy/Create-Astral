@@ -94,7 +94,7 @@
     },
     "ThermalGeneratorEnergyPerTick": {
       "comment": "Thermal Generator Energy Per Tick",
-      "value": 10
+      "value": 6
     },
     "ThermalGeneratorMaxOutput": {
       "comment": "Thermal Generator Max Output (Energy per tick)",
@@ -142,7 +142,7 @@
     },
     "GeneratorEnergyOutput": {
       "comment": "Solid Fuel Generator Energy Per Tick",
-      "value": 8
+      "value": 4
     }
   },
   "semifluid_generator": {
