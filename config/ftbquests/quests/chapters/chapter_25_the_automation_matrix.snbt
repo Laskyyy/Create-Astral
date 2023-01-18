@@ -110,7 +110,7 @@
 		{
 			x: -21.5d
 			y: -11.0d
-			subtitle: "There may be a way to automate this"
+			subtitle: "There may be a way to automate this soon..."
 			min_required_dependencies: 1
 			dependencies: [
 				"17041A495A41EEFD"
