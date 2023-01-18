@@ -60,7 +60,7 @@
 		{
 			x: -14.0d
 			y: -18.0d
-			subtitle: "Crush cobblestone"
+			subtitle: "Mill or crush cobblestone"
 			dependencies: ["34F94423116413C9"]
 			id: "14E90DB150FD5F52"
 			tasks: [{
@@ -72,7 +72,7 @@
 		{
 			x: -14.0d
 			y: -14.5d
-			subtitle: "Crush gravel"
+			subtitle: "There may be a way to automate this later..."
 			min_required_dependencies: 1
 			dependencies: [
 				"429D2340C2B20A60"
@@ -110,7 +110,7 @@
 		{
 			x: -21.5d
 			y: -11.0d
-			subtitle: "Spout calcite with water"
+			subtitle: "There may be a way to automate this"
 			min_required_dependencies: 1
 			dependencies: [
 				"17041A495A41EEFD"
@@ -1882,9 +1882,17 @@
 			]
 		}
 		{
+			title: "What Is This?"
 			x: -39.0d
-			y: -9.5d
+			y: -16.0d
 			shape: "gear"
+			description: [
+				"This chapter is special. The quests here aren't to present you with progression challenges, but to give you a visualization of what it takes to automate specific resources, and how resources overlap. It is a giant flowchart."
+				""
+				"It will feel sparse at first, but as you continue playing and unlock new machines and new resources, this chapter will automatically update to reflect new automation paths. Check back regularly!"
+				""
+				"Important: just because a resource is in here, DOES NOT MEAN YOU NEED TO AUTOMATE IT. Again, this page is a visualization tool, not a guidebook."
+			]
 			dependencies: ["38814494AB07C2D8"]
 			hide: true
 			size: 5.0d
@@ -1892,13 +1900,14 @@
 			tasks: [{
 				id: "0C4A361DA556D37A"
 				type: "checkmark"
-				title: "The Automation Matrix"
+				title: "Understood."
 			}]
 		}
 		{
 			title: "Crushing Unlocked"
 			x: -14.0d
 			y: -16.0d
+			subtitle: "Crush gravel to get sand"
 			description: ["Now that you've unlocked crushing, you can automate sand directly."]
 			dependencies: [
 				"14E90DB150FD5F52"
@@ -1916,6 +1925,7 @@
 			title: "Grinder Unlocked"
 			x: -17.5d
 			y: -10.5d
+			subtitle: "Improved yields"
 			description: ["This improves the yields of clay over creating dripstone blocks and milling/crushing them."]
 			dependencies: [
 				"1BFA4FB40E2BB903"
@@ -1933,6 +1943,7 @@
 			title: "Spout Unlocked"
 			x: -21.5d
 			y: -14.5d
+			subtitle: "Spout water on calcite to create dripstone"
 			description: ["There is now a way to create pointed dripstone directly, if there wasn't a way already."]
 			dependencies: [
 				"43B007A5BAE5E02E"
@@ -1950,12 +1961,13 @@
 			title: "A slime option"
 			x: -29.0d
 			y: -13.0d
-			min_required_dependencies: 1
+			min_required_dependencies: 2
 			dependencies: [
 				"2950D3DA74E0D635"
 				"435FEF448EECB8A9"
 				"5355CA2F0BA74BF1"
 			]
+			hide: true
 			min_required_tasks: 2
 			id: "1570C65776B6B233"
 			tasks: [{
@@ -1969,6 +1981,54 @@
 						value: "c:slimeballs"
 					}
 				}
+			}]
+		}
+		{
+			title: "How to Read this Flowchart"
+			x: -39.0d
+			y: -11.0d
+			shape: "gear"
+			description: [
+				"The flow chart is pretty simple! Objects point to what can be made with them. How you convert one object to the other will be in the subtitle of the destination object."
+				""
+				"Some notes: Some quests are hidden until you complete a dependent quest. Even if you're deciding not to automate something, it might be worth completing the quest just to make sure you're not missing anything."
+				""
+				"Due to space constraints, we can't show every connection. Any quests marked (\"from elsewhere\") means the steps to automate the resource are described somewhere else in the flowchart. Also, the flowchart skips some steps that can be assumed easily, such as packing nuggets, melting metals, etc."
+			]
+			dependencies: ["75928E9A25B2EFFD"]
+			hide: true
+			size: 3.0d
+			id: "3CDA0DBF9C8CF228"
+			tasks: [{
+				id: "6A7245A59D6471C9"
+				type: "checkmark"
+				title: "Understood."
+			}]
+		}
+		{
+			title: "What do the shapes mean?"
+			x: -39.0d
+			y: -7.5d
+			shape: "gear"
+			description: [
+				"Square quests are a resource you can easily get an infinite amount of."
+				""
+				"Pentagon quests are the tools you use to get an infinite amount of starting resource."
+				""
+				"Diamond-shaped quests are resources a player is likely to consider automating."
+				""
+				"Circle quests are intermediate steps."
+				""
+				"Octagon quests means the material's automation steps is described somewhere else, OR the intermediate material is used somewhere else in the flowchart. You might need to unlock more to see where materials are re-used."
+			]
+			dependencies: ["3CDA0DBF9C8CF228"]
+			hide: true
+			size: 1.5d
+			id: "4E42B1B429EF3AFF"
+			tasks: [{
+				id: "01671A62BCC4E3F3"
+				type: "checkmark"
+				title: "Understood."
 			}]
 		}
 	]
