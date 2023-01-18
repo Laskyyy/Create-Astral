@@ -2062,8 +2062,8 @@ event.recipes.createPressing('techreborn:lead_plate', 'techreborn:lead_ingot')
 event.recipes.createPressing('techreborn:electrum_plate', 'techreborn:electrum_ingot')
 event.recipes.createPressing('create:lapis_sheet', 'minecraft:lapis_block')
 event.recipes.createCompacting('createastral:olivine_sheet', [
-  'techreborn:olivine_dust',
-]).superheated()
+  '16x techreborn:olivine_dust',
+]).superheated().processingTime(1500)
 
 
 
