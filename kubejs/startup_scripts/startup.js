@@ -98,7 +98,12 @@ onEvent('fluid.registry', event => {
 	.flowingTexture('tconstruct:block/fluid/molten/flowing')
 })
 
-
+///// MODIFY CHARACTERISTICS OF ITEMS /////
+onEvent('item.modification', event => {
+  event.modify('minecraft:piglin_banner_pattern', item => {
+    item.maxStackSize = 16
+  })
+})
 
 ///// MODIFY CHARACTERISTICS OF BLOCKS /////
 
@@ -254,7 +259,7 @@ onEvent("item.modification", event => {
   })
 
 
-  event.modify('ad_asta:fuel_bucket', item => {
+  event.modify('ad_astra:fuel_bucket', item => {
     item.burnTime = 50000
   })
 
@@ -430,6 +435,7 @@ event.create('createastral:astral_singularity').food(food => {
 })
 event.create('createastral:pure_biomatter')
 event.create('createastral:lime').displayName('Lime Dust');
+event.create('createastral:coin','create:sequenced_assembly').displayName('coin');
 
 
 

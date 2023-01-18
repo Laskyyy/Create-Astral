@@ -1687,12 +1687,12 @@ event.recipes.createFilling('techreborn:lithium_ion_battery', [
 	event.recipes.createMixing(Fluid.of('tconstruct:molten_pig_iron', 8100), [
     'minecraft:porkchop',
     'minecraft:iron_ingot',
-	'minecraft:emerald'
+		'minecraft:gold_ingot'
 ]).heated().processingTime(300)
 	event.recipes.createMixing(Fluid.of('tconstruct:molten_pig_iron', 9000), [
     'minecraft:porkchop',
     {fluid: 'tconstruct:molten_iron', amount: 9000},
-	{fluid: 'tconstruct:molten_emerald', amount: 9000}
+	{fluid: 'tconstruct:molten_gold', amount: 9000}
 ]).heated().processingTime(250)
 	//Tinker's Construct Reworking (New fluids and recipes)
 	//Tier 4 materials
@@ -2063,7 +2063,7 @@ event.recipes.createPressing('techreborn:electrum_plate', 'techreborn:electrum_i
 event.recipes.createPressing('create:lapis_sheet', 'minecraft:lapis_block')
 event.recipes.createCompacting('createastral:olivine_sheet', [
   '16x techreborn:olivine_dust',
-]).superheated().processingTime(1000)
+]).superheated().processingTime(1500)
 
 
 
@@ -3197,8 +3197,35 @@ event.recipes.createMixing(Fluid.of('kubejs:shimmer', 40500), [
 event.recipes.createMixing('minecraft:glow_ink_sac', [
   'minecraft:ink_sac',
   '2x minecraft:glowstone_dust'
-]).processingTime(50)
+]).processingTime(50);
 
+
+
+///// Passive Piglins snout banner recipe!!!! wowie!!!! /////
+
+event.recipes.createMixing('minecraft:piglin_banner_pattern', [
+	'1x minecraft:paper',
+	Item.of('tconstruct:large_plate', '{Material:"tconstruct:pig_iron"}')
+]).processingTime(100)
+
+
+event.remove({output: 'passivepiglins:piglin_coin'});
+event.shaped('passivepiglins:piglin_coin', [
+  'BA',
+  'AB'
+], {
+A: 'create:golden_sheet',
+B: 'minecraft:piglin_banner_pattern'
+})
+
+event.recipes.createSequencedAssembly([ // begin
+	'passivepiglins:piglin_coin', // output
+	], Item.of('create:golden_sheet'), [ // input
+		event.recipes.createCutting('create:golden_sheet', 'create:golden_sheet').processingTime(30), 
+		event.recipes.createDeploying('create:golden_sheet', ['minecraft:gold_nugget', 'minecraft:gold_nugget']), 
+		event.recipes.createDeploying('create:golden_sheet', ['minecraft:piglin_banner_pattern', 'minecraft:piglin_banner_pattern']), 
+    event.recipes.createPressing('create:golden_sheet', 'create:golden_sheet').processingTime(75),
+]).transitionalItem('createastral:coin').loops(1)
 
 //Dash panel
 event.recipes.createSequencedAssembly([ 
