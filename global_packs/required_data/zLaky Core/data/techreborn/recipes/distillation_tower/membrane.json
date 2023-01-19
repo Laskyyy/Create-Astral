@@ -1,0 +1,17 @@
+{
+  "type": "techreborn:distillation_tower",
+  "power": 70,
+  "time": 2000,
+  "ingredients": [
+    {
+      "tag": "tconstruct:slime_block",
+      "count": 1
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:phantom_membrane",
+      "count": 2
+      }
+  ]
+}
