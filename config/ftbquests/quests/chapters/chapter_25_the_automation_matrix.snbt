@@ -196,7 +196,7 @@
 			shape: "square"
 			subtitle: "Mine generated moon stone"
 			description: ["You won't be able to turn this into sand until later."]
-			dependencies: ["6063288E15DD7826"]
+			dependencies: ["52E33520545721C4"]
 			hide: false
 			size: 1.5d
 			id: "4048C7C6A85BD755"
@@ -207,16 +207,17 @@
 			}]
 		}
 		{
-			title: "Andesite (Tier IV)"
-			x: -9.5d
+			title: "Andesite (Tier III)"
+			x: -6.5d
 			y: -14.5d
 			shape: "diamond"
 			subtitle: "Compact gravel in lava w/ flint"
 			description: ["Andesite is important for crafting andesite alloy."]
+			min_required_dependencies: 2
 			dependencies: [
-				"14E90DB150FD5F52"
 				"6623524E68636273"
 				"51BD31261A5725E3"
+				"729D39BA51F3CA0E"
 			]
 			hide: true
 			size: 2.5d
@@ -289,6 +290,7 @@
 			}]
 		}
 		{
+			title: "Diorite (Improved)"
 			x: -0.5d
 			y: -11.0d
 			subtitle: "Pour liquid soul onto basalt"
@@ -296,7 +298,6 @@
 			dependencies: [
 				"1F46987F39D5BBDA"
 				"329E8ED078EF3BB4"
-				"38814494AB07C2D8"
 			]
 			hide: true
 			id: "62BC7A057C6192E7"
@@ -307,12 +308,16 @@
 			}]
 		}
 		{
-			x: 2.5d
+			x: 5.5d
 			y: -11.0d
 			shape: "diamond"
 			subtitle: "Mill or crush Diorite"
 			description: ["Quartz has some uncommon uses."]
-			dependencies: ["62BC7A057C6192E7"]
+			min_required_dependencies: 1
+			dependencies: [
+				"62BC7A057C6192E7"
+				"14D83C47DA4FAB3C"
+			]
 			size: 2.0d
 			id: "347BC30501D878D4"
 			tasks: [{
@@ -359,8 +364,8 @@
 			}]
 		}
 		{
-			title: "Andesite (Tier III)"
-			x: 2.5d
+			title: "Andesite (Tier II)"
+			x: 5.5d
 			y: -7.5d
 			shape: "diamond"
 			subtitle: "Pour molten quartz onto stone."
@@ -380,10 +385,11 @@
 			}]
 		}
 		{
-			title: "Granite"
+			title: "Granite (Improved)"
 			x: -0.5d
 			y: -7.5d
 			subtitle: "Compact diorite and netherrack dust in lava w/ flint"
+			description: ["Although the bedrock generator can give you multiple stones including granite, its more efficient to produce granite this way. Plus, you won't have to deal with transporting rocks from the bottom layer if you do things this way."]
 			dependencies: [
 				"62BC7A057C6192E7"
 				"5E3AA3740DDFA355"
@@ -679,7 +685,7 @@
 		}
 		{
 			title: "Flint (Used in Multiple Places - Read!)"
-			x: -8.0d
+			x: -9.5d
 			y: -18.0d
 			shape: "octagon"
 			subtitle: "Wash gravel"
@@ -759,7 +765,7 @@
 		}
 		{
 			x: 0.0d
-			y: -18.5d
+			y: -19.5d
 			shape: "pentagon"
 			dependencies: [
 				"38814494AB07C2D8"
@@ -775,7 +781,7 @@
 		}
 		{
 			x: -0.5d
-			y: -17.5d
+			y: -18.0d
 			shape: "pentagon"
 			dependencies: [
 				"54B3E14CD56E36C0"
@@ -783,6 +789,7 @@
 				"20BFF582275C31C8"
 			]
 			hide: true
+			size: 2.0d
 			id: "70D6E982A2BA7CB7"
 			tasks: [{
 				id: "191B863100553627"
@@ -792,7 +799,7 @@
 		}
 		{
 			x: -1.0d
-			y: -18.5d
+			y: -19.5d
 			shape: "pentagon"
 			dependencies: [
 				"38814494AB07C2D8"
@@ -807,7 +814,7 @@
 			}]
 		}
 		{
-			x: 5.5d
+			x: 8.5d
 			y: -11.0d
 			subtitle: "Shapless crafting with redstone and quartz"
 			dependencies: [
@@ -823,7 +830,7 @@
 			}]
 		}
 		{
-			x: 5.5d
+			x: 8.5d
 			y: -7.5d
 			subtitle: "Sand rose quartz"
 			dependencies: ["6B3AE660A641C114"]
@@ -836,7 +843,7 @@
 			}]
 		}
 		{
-			x: 5.5d
+			x: 8.5d
 			y: -4.0d
 			shape: "diamond"
 			subtitle: "Spout molten rose gold onto polished rose quartz"
@@ -1576,7 +1583,7 @@
 		}
 		{
 			title: "Redstone (From Elsewhere)"
-			x: 5.5d
+			x: 8.5d
 			y: -12.0d
 			shape: "octagon"
 			dependencies: ["32B9EAE28E1C5D7A"]
@@ -1601,7 +1608,7 @@
 			}]
 		}
 		{
-			x: 8.5d
+			x: 11.5d
 			y: -7.5d
 			subtitle: "Mix molten copper and molten gold"
 			min_required_dependencies: 1
@@ -1619,7 +1626,7 @@
 			}]
 		}
 		{
-			x: 8.0d
+			x: 11.0d
 			y: -9.0d
 			shape: "octagon"
 			hide_dependency_lines: false
@@ -1633,7 +1640,7 @@
 			}]
 		}
 		{
-			x: 9.0d
+			x: 12.0d
 			y: -9.0d
 			shape: "octagon"
 			hide_dependency_lines: false
@@ -1709,8 +1716,8 @@
 		}
 		{
 			title: "Moonstone generator explained here"
-			x: -24.5d
-			y: -18.0d
+			x: -24.0d
+			y: -19.0d
 			shape: "pentagon"
 			dependencies: [
 				"306D009F01634115"
@@ -1754,11 +1761,11 @@
 			}]
 		}
 		{
-			x: -6.5d
+			x: -9.5d
 			y: -14.5d
 			shape: "diamond"
 			subtitle: "Compact gravel and flint"
-			description: ["Cobbled Deepslate can be recycled for rare chances of various ores"]
+			description: ["Cobbled Deepslate can be recycled for rare chances of various ores later on."]
 			dependencies: [
 				"14E90DB150FD5F52"
 				"6623524E68636273"
@@ -1883,6 +1890,7 @@
 		}
 		{
 			title: "What Is This?"
+			icon: "create:empty_schematic"
 			x: -39.0d
 			y: -16.0d
 			shape: "gear"
@@ -1985,6 +1993,7 @@
 		}
 		{
 			title: "How to Read this Flowchart"
+			icon: "create:goggles"
 			x: -39.0d
 			y: -11.0d
 			shape: "gear"
@@ -2007,6 +2016,7 @@
 		}
 		{
 			title: "What do the shapes mean?"
+			icon: "create:wrench"
 			x: -39.0d
 			y: -7.5d
 			shape: "gear"
@@ -2029,6 +2039,280 @@
 				id: "01671A62BCC4E3F3"
 				type: "checkmark"
 				title: "Understood."
+			}]
+		}
+		{
+			x: 5.0d
+			y: -19.5d
+			shape: "pentagon"
+			dependencies: ["38814494AB07C2D8"]
+			hide: true
+			id: "611F2B19B29B4CC5"
+			tasks: [{
+				id: "5D346259636521EA"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -19.5d
+			shape: "pentagon"
+			dependencies: ["38814494AB07C2D8"]
+			hide: true
+			id: "2825485494EF37A5"
+			tasks: [{
+				id: "560930AD671D9467"
+				type: "item"
+				item: "minecraft:water_bucket"
+			}]
+		}
+		{
+			title: "Bedrock Stone Generator"
+			icon: "minecraft:bedrock"
+			x: 5.5d
+			y: -18.0d
+			shape: "pentagon"
+			description: ["Whenever flowing lava touches water ON TOP OF A BLOCK OF BEDROCK, there is a 20% chance of granite, diorite, and andesite - and a 40% of stone. You may have already built this. There will be more reliable ways to farm Andesite as you progress."]
+			dependencies: [
+				"611F2B19B29B4CC5"
+				"2825485494EF37A5"
+			]
+			size: 2.0d
+			id: "68D19E8C4B61D854"
+			tasks: [{
+				id: "2FF3DD56D74395BE"
+				type: "checkmark"
+				title: "Understood."
+			}]
+		}
+		{
+			title: "Andesite (Tier I)"
+			x: 2.5d
+			y: -14.5d
+			shape: "diamond"
+			min_required_dependencies: 1
+			dependencies: [
+				"68D19E8C4B61D854"
+				"1CAD9619DFDC9BE9"
+			]
+			size: 1.5d
+			id: "7F8CC515A17B0103"
+			tasks: [{
+				id: "392E20CC12386170"
+				type: "item"
+				item: "minecraft:andesite"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -14.5d
+			dependencies: ["68D19E8C4B61D854"]
+			id: "472D1D58B1B69D7F"
+			tasks: [{
+				id: "7F9A6195B55972F2"
+				type: "item"
+				item: "minecraft:granite"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -14.5d
+			subtitle: "Mine a bedrock stone generator"
+			dependencies: ["68D19E8C4B61D854"]
+			id: "14D83C47DA4FAB3C"
+			tasks: [{
+				id: "1773DB55C9F2E791"
+				type: "item"
+				item: "minecraft:diorite"
+			}]
+		}
+		{
+			title: "Andesite Generator"
+			x: 2.5d
+			y: -18.0d
+			shape: "pentagon"
+			description: [
+				"Flowing lava touching water over a double andesite block will produce andesite 1/6 of the time, and stone the other five times."
+				""
+				"Although the rate is about the same as bedrock, you won't need to retrieve the andesite from bedrock, and the stone can be used for dedicated uses."
+			]
+			dependencies: [
+				"248121061F335E67"
+				"7D483089B83B3F93"
+			]
+			size: 2.0d
+			id: "1CAD9619DFDC9BE9"
+			tasks: [{
+				id: "179FDB2DAC5CAD5D"
+				type: "item"
+				item: "compressor:double_compressed_andesite"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -19.5d
+			shape: "pentagon"
+			dependencies: ["38814494AB07C2D8"]
+			hide: true
+			id: "248121061F335E67"
+			tasks: [{
+				id: "670F78525B8B21C5"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -19.5d
+			shape: "pentagon"
+			dependencies: ["38814494AB07C2D8"]
+			hide: true
+			id: "7D483089B83B3F93"
+			tasks: [{
+				id: "6C7670BBFC69A088"
+				type: "item"
+				item: "minecraft:water_bucket"
+			}]
+		}
+		{
+			title: "Improved Andesite Generator"
+			x: -6.5d
+			y: -21.5d
+			shape: "pentagon"
+			description: [
+				"Flowing water touching lava over triple compressed andesite will always produce andesite."
+				""
+				"Although it will take you awhile to create enough andesite to make a triple compressed andesite, this method is incredibly simple."
+			]
+			dependencies: [
+				"16DACAE87B3C7699"
+				"1873E2A12D8F97B8"
+			]
+			hide: true
+			size: 2.0d
+			id: "729D39BA51F3CA0E"
+			tasks: [{
+				id: "2A670AE69C494078"
+				type: "item"
+				item: "compressor:triple_compressed_stone"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -23.0d
+			shape: "pentagon"
+			dependencies: ["51BD31261A5725E3"]
+			hide: true
+			id: "16DACAE87B3C7699"
+			tasks: [{
+				id: "2DAA49F9A550B40B"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -23.0d
+			shape: "pentagon"
+			dependencies: ["51BD31261A5725E3"]
+			hide: true
+			id: "1873E2A12D8F97B8"
+			tasks: [{
+				id: "4F6A4307F11C73AA"
+				type: "item"
+				item: "minecraft:water_bucket"
+			}]
+		}
+		{
+			title: "Andesite (Tier IV)"
+			x: 11.5d
+			y: -14.5d
+			shape: "diamond"
+			subtitle: "The ultimate andesite generator"
+			dependencies: ["3C2D4B41F4BE1AA6"]
+			size: 2.5d
+			id: "5114DC1BA07F8A2F"
+			tasks: [{
+				id: "5BB297FD696E74A5"
+				type: "item"
+				item: "minecraft:andesite"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -18.0d
+			shape: "pentagon"
+			dependencies: [
+				"00ABFA5052D1A913"
+				"0B985ACE882E6917"
+			]
+			size: 2.0d
+			id: "3C2D4B41F4BE1AA6"
+			tasks: [{
+				id: "0E7C0CD342614C63"
+				type: "item"
+				item: "compressor:quadruple_compressed_andesite"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -19.5d
+			shape: "pentagon"
+			hide_dependency_lines: true
+			dependencies: ["729D39BA51F3CA0E"]
+			hide: true
+			id: "00ABFA5052D1A913"
+			tasks: [{
+				id: "57F78D81E4D588D1"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+		}
+		{
+			x: 12.0d
+			y: -19.5d
+			shape: "pentagon"
+			hide_dependency_lines: true
+			dependencies: ["729D39BA51F3CA0E"]
+			hide: true
+			id: "0B985ACE882E6917"
+			tasks: [{
+				id: "7EAB7C4AF67027D5"
+				type: "item"
+				item: "minecraft:water_bucket"
+			}]
+		}
+		{
+			x: -25.0d
+			y: -19.0d
+			shape: "pentagon"
+			dependencies: [
+				"38814494AB07C2D8"
+				"306D009F01634115"
+			]
+			hide: true
+			id: "2B6A8E985E5BEBFD"
+			tasks: [{
+				id: "606B256F4799961F"
+				type: "item"
+				item: "minecraft:water_bucket"
+			}]
+		}
+		{
+			x: -24.5d
+			y: -18.0d
+			shape: "pentagon"
+			dependencies: [
+				"2B6A8E985E5BEBFD"
+				"6063288E15DD7826"
+			]
+			size: 1.5d
+			id: "52E33520545721C4"
+			tasks: [{
+				id: "4FD54CE07B9E86FC"
+				type: "item"
+				item: "ad_astra:moon_stone"
 			}]
 		}
 	]
