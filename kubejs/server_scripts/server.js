@@ -1376,6 +1376,8 @@ onEvent('recipes', event => {
   event.replaceInput({output: 'techreborn:nanosaber'}, 'create:precision_mechanism', 'create:refined_radiance')
   event.replaceInput({output: 'techreborn:industrial_grinder'}, 'techreborn:electronic_circuit', 'immersive_aircraft:engine')
   event.replaceInput({output: 'techreborn:digital_display'}, 'minecraft:black_dye', 'techreborn:machine_parts')
+  event.replaceInput({output: 'techreborn:digital_display'}, 'minecraft:glass_pane', '#computercraft:monitor')
+  event.replaceInput({output: 'techreborn:basic_display'}, 'minecraft:glass_pane', '#computercraft:monitor')
   event.replaceInput('techreborn:lapotronic_orb', 'immersive_aircraft:engine')
   event.replaceInput({mod: 'quarrymod'}, 'techreborn:iridium_ingot', 'passivepiglins:piglin_coin')
   event.replaceInput({mod: 'quarrymod'}, 'techreborn:advanced_alloy_plate', 'passivepiglins:piglin_coin')
