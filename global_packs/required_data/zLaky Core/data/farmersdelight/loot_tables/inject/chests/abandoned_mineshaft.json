@@ -99,6 +99,20 @@
           "name": "campanion:rope"
         },
         {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2.0,
+                "max": 4.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "create_shaft"
+        },
+        {
           "type": "minecraft:empty",
           "weight": 2
         },
