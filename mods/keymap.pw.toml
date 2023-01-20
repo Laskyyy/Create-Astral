@@ -1,14 +1,14 @@
-name = "Keymap"
-filename = "keymap-0.7.0-beta.0+1.18.2-fabric.jar"
+name = "keymap"
+filename = "keymap-0.7.0-beta.1+1.18.2-fabric.jar"
 side = "both"
 
 [download]
 mode = "metadata:curseforge"
 url = ""
 hash-format = "sha1"
-hash = "632283fd433396f4a325b14c7c02972104f2a0d5"
+hash = "c6739e78bd1e1ba41ce7b7038bc9e7271799f05e"
 
 [update]
 [update.curseforge]
-file-id = 4159302
+file-id = 4279254
 project-id = 597298

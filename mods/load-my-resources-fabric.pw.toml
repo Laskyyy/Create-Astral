@@ -1,14 +1,14 @@
-name = "Load My Resources [Fabric]"
-filename = "loadmyresources_fabric_1.0.1-1_MC_1.18.jar"
+name = "Load My Resources"
+filename = "loadmyresources_fabric_1.0.4_MC_1.18-1.18.2.jar"
 side = "both"
 
 [download]
 mode = "metadata:curseforge"
 url = ""
 hash-format = "sha1"
-hash = "8b55047f657d54aede0335db433ea5c12e045467"
+hash = "96e85ace409daa8e128f55b3dd8ee4d0e07bd516"
 
 [update]
 [update.curseforge]
-file-id = 3545317
+file-id = 4118344
 project-id = 534835
