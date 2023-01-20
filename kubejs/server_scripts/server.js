@@ -1193,16 +1193,6 @@ onEvent('recipes', event => {
   event.remove({output: 'techreborn:steel_hoe'})
   event.remove({output: 'techreborn:steel_shovel'})
 
-  event.remove({output: 'techreborn:tungsten_helmet'})
-  event.remove({output: 'techreborn:tungsten_chestplate'})
-  event.remove({output: 'techreborn:tungsten_leggings'})
-  event.remove({output: 'techreborn:tungsten_boots'})
-  event.remove({output: 'techreborn:tungsten_axe'})
-  event.remove({output: 'techreborn:tungsten_sword'})
-  event.remove({output: 'techreborn:tungsten_pickaxe'})
-  event.remove({output: 'techreborn:tungsten_hoe'})
-  event.remove({output: 'techreborn:tungsten_shovel'})
-
   event.remove({output: 'techreborn:bronze_helmet'})
   event.remove({output: 'techreborn:bronze_chestplate'})
   event.remove({output: 'techreborn:bronze_leggings'})
@@ -1253,6 +1243,15 @@ onEvent('recipes', event => {
   event.replaceInput({mod: 'techreborn'}, 'techreborn:refined_iron_ingot', 'techreborn:silver_plate')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:refined_iron_storage_block', 'techreborn:silver_storage_block')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:refined_iron_nugget', 'techreborn:silver_nugget')
+  event.remove({output: 'techreborn:refined_iron_plate'})
+  event.remove({output: 'techreborn:refined_iron_ingot'})
+  event.remove({output: 'techreborn:refined_iron_storage_block'})
+  event.remove({output: 'techreborn:refined_iron_storage_block_stairs'})
+  event.remove({output: 'techreborn:refined_iron_storage_block_slab'})
+  event.remove({output: 'techreborn:refined_iron_storage_block_wall'})
+  event.remove({output: 'techreborn:refined_iron_dust'})
+  event.remove({output: 'techreborn:refined_iron_small_dust'})
+  event.remove({output: 'techreborn:refined_iron_nugget'})
 
 
 
@@ -1264,6 +1263,11 @@ onEvent('recipes', event => {
   event.remove({output: 'techreborn:aluminum_plate'})
   event.remove({output: 'techreborn:aluminum_ingot'})
   event.remove({output: 'techreborn:aluminum_storage_block'})
+  event.remove({output: 'techreborn:aluminum_storage_block_stairs'})
+  event.remove({output: 'techreborn:aluminum_storage_block_slab'})
+  event.remove({output: 'techreborn:aluminum_storage_block_wall'})
+  event.remove({output: 'techreborn:aluminum_dust'})
+  event.remove({output: 'techreborn:aluminum_small_dust'})
   event.remove({output: 'techreborn:aluminum_nugget'})
 
 
@@ -1275,6 +1279,11 @@ onEvent('recipes', event => {
   event.remove({output: 'techreborn:tungsten_plate'})
   event.remove({output: 'techreborn:tungsten_ingot'})
   event.remove({output: 'techreborn:tungsten_storage_block'})
+  event.remove({output: 'techreborn:tungsten_storage_block_stairs'})
+  event.remove({output: 'techreborn:tungsten_storage_block_slab'})
+  event.remove({output: 'techreborn:tungsten_storage_block_wall'})
+  event.remove({output: 'techreborn:tungsten_dust'})
+  event.remove({output: 'techreborn:tungsten_small_dust'})
   event.remove({output: 'techreborn:tungsten_nugget'})
 
   event.replaceInput({mod: 'techreborn'}, 'techreborn:tungstensteel_plate', 'ad_astra:compressed_steel')
@@ -1284,6 +1293,11 @@ onEvent('recipes', event => {
   event.remove({output: 'techreborn:tungstensteel_plate'})
   event.remove({output: 'techreborn:tungstensteel_ingot'})
   event.remove({output: 'techreborn:tungstensteel_storage_block'})
+  event.remove({output: 'techreborn:tungstensteel_storage_block_stairs'})
+  event.remove({output: 'techreborn:tungstensteel_storage_block_slab'})
+  event.remove({output: 'techreborn:tungstensteel_storage_block_wall'})
+  event.remove({output: 'techreborn:tungstensteel_dust'})
+  event.remove({output: 'techreborn:tungstensteel_small_dust'})
   event.remove({output: 'techreborn:tungstensteel_nugget'})
 
   event.replaceInput({mod: 'techreborn'}, 'techreborn:chrome_plate', 'ad_astra:compressed_ostrum')
@@ -1293,6 +1307,11 @@ onEvent('recipes', event => {
   event.remove({output: 'techreborn:chrome_plate'})
   event.remove({output: 'techreborn:chrome_ingot'})
   event.remove({output: 'techreborn:chrome_storage_block'})
+  event.remove({output: 'techreborn:chrome_storage_block_stairs'})
+  event.remove({output: 'techreborn:chrome_storage_block_slab'})
+  event.remove({output: 'techreborn:chrome_storage_block_wall'})
+  event.remove({output: 'techreborn:chrome_dust'})
+  event.remove({output: 'techreborn:chrome_small_dust'})
   event.remove({output: 'techreborn:chrome_nugget'})
 
   event.replaceInput({mod: 'techreborn'}, 'techreborn:titanium_plate', 'ad_astra:compressed_calorite')
@@ -1302,6 +1321,11 @@ onEvent('recipes', event => {
   event.remove({output: 'techreborn:titanium_plate'})
   event.remove({output: 'techreborn:titanium_ingot'})
   event.remove({output: 'techreborn:titanium_storage_block'})
+  event.remove({output: 'techreborn:titanium_storage_block_stairs'})
+  event.remove({output: 'techreborn:titanium_storage_block_slab'})
+  event.remove({output: 'techreborn:titanium_storage_block_wall'})
+  event.remove({output: 'techreborn:titanium_dust'})
+  event.remove({output: 'techreborn:titanium_small_dust'})
   event.remove({output: 'techreborn:titanium_nugget'})
 
 
@@ -1316,6 +1340,11 @@ onEvent('recipes', event => {
   event.remove({output: 'techreborn:brass_plate'})
   event.remove({output: 'techreborn:brass_ingot'})
   event.remove({output: 'techreborn:brass_storage_block'})
+  event.remove({output: 'techreborn:brass_storage_block_stairs'})
+  event.remove({output: 'techreborn:brass_storage_block_slab'})
+  event.remove({output: 'techreborn:brass_storage_block_wall'})
+  event.remove({output: 'techreborn:brass_dust'})
+  event.remove({output: 'techreborn:brass_small_dust'})
   event.remove({output: 'techreborn:brass_nugget'})
 
   event.replaceInput({mod: 'techreborn'}, 'techreborn:electronic_circuit', 'create:integrated_circuit')
@@ -1327,6 +1356,11 @@ onEvent('recipes', event => {
   event.remove({output: 'techreborn:zinc_plate'})
   event.remove({output: 'techreborn:zinc_ingot'})
   event.remove({output: 'techreborn:zinc_storage_block'})
+  event.remove({output: 'techreborn:zinc_storage_block_stairs'})
+  event.remove({output: 'techreborn:zinc_storage_block_slab'})
+  event.remove({output: 'techreborn:zinc_storage_block_wall'})
+  event.remove({output: 'techreborn:zinc_dust'})
+  event.remove({output: 'techreborn:zinc_small_dust'})
   event.remove({output: 'techreborn:zinc_nugget'})
   
 
@@ -1546,7 +1580,8 @@ event.recipes.createSequencedAssembly([ // begin
 'immersive_aircraft:engine', // output
 ], 'create:precision_mechanism', [ // input
 event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'immersive_aircraft:boiler']), 
-event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'techreborn:nak_coolant_cell_60k']), 
+event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'techreborn:nak_coolant_cell_60k']),
+event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'createaddition:capacitor']),  
 ]).transitionalItem('create:incomplete_precision_mechanism').loops(1) 
 
 	event.recipes.createMechanicalCrafting('techreborn:fusion_control_computer', [
@@ -1745,7 +1780,7 @@ event.recipes.createFilling('techreborn:lithium_ion_battery', [
  
 	event.recipes.createMixing(Fluid.of('tconstruct:molten_queens_slime', 810), [
     {fluid: 'tconstruct:molten_cobalt', amount: 405},
-	{fluid: 'tconstruct:molten_tungsten', amount: 810},
+	{fluid: 'tconstruct:molten_slimesteel', amount: 810},
 ]).heated().processingTime(5)
 	event.recipes.createMixing(Fluid.of('tconstruct:molten_manyullyn', 12000), [
     {fluid: 'tconstruct:molten_cobalt', amount: 32400},
@@ -2091,7 +2126,7 @@ event.shaped(Item.of('computercraft:turtle_normal', {RightUpgrade:"minecraft:dia
 
 ///PRESS PLATES WITH CREATE
 
-event.recipes.createPressing('techreborn:tungsten_plate', 'techreborn:tungsten_ingot')
+
 event.recipes.createPressing('techreborn:silver_plate', 'techreborn:silver_ingot')
 event.recipes.createPressing('techreborn:tin_plate', 'techreborn:tin_ingot')
 event.recipes.createPressing('techreborn:lead_plate', 'techreborn:lead_ingot')
@@ -2837,7 +2872,6 @@ event.recipes.createMixing('8x tconstruct:grout', [
   event.smelting('techreborn:tin_ingot', 'create:crushed_tin_ore')
   event.smelting('techreborn:silver_ingot', 'create:crushed_silver_ore')
   event.smelting('techreborn:lead_ingot', 'create:crushed_lead_ore')
-  event.smelting('techreborn:tungsten_ingot', 'create:crushed_uranium_ore')
   event.smithing('farmersdelight:cooking_pot', 'farmersdelight:skillet', 'minecraft:water_bucket')
 
 
@@ -2859,10 +2893,7 @@ event.recipes.createMixing('8x tconstruct:grout', [
     'create:crushed_lead_ore',
     Item.of('minecraft:coal').withChance(0.2),
   ], 'techreborn:raw_lead')
-  event.recipes.createCrushing([
-    'create:crushed_uranium_ore',
-    Item.of('create:zinc_nugget').withChance(1),
-  ], 'techreborn:raw_tungsten')
+
 
   event.recipes.createCrushing([
     Item.of('minecraft:quartz').withChance(0.05),
