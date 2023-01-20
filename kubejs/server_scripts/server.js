@@ -1411,6 +1411,26 @@ event.recipes.createMechanicalCrafting('immersive_aircraft:boiler', [
   
 })
 
+event.remove({output: 'minecraft:elytra'})
+event.recipes.createMechanicalCrafting('minecraft:elytra', [
+  '  A  ',
+  ' B B ',
+  ' C C ',
+  'C   C',
+  'DE ED',
+  'F G F'
+], {
+  A: 'createastral:navigation_mechanism',
+  B: 'create:brass_sheet',
+  C: 'minecraft:phantom_membrane',
+  D: 'create:large_cogwheel',
+  E: 'ad_astra:compressed_ostrum',
+  F: 'ad_astra:ostrum_engine',
+  G: 'computercraft:computer_advanced',
+
+  
+})
+
 
 
   event.custom({
