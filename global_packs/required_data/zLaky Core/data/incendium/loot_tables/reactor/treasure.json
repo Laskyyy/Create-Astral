@@ -6,12 +6,12 @@
         {
           "type": "minecraft:item",
           "weight": 2,
-          "name": "minecraft:diamond"
+          "name": "techreborn:basic_machine_frame"
         },
         {
           "type": "minecraft:item",
           "weight": 3,
-          "name": "minecraft:glowstone",
+          "name": "minecraft:glowstone_dust",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -25,7 +25,7 @@
         {
           "type": "minecraft:item",
           "weight": 2,
-          "name": "minecraft:crying_obsidian",
+          "name": "ad_astra:raw_desh",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -39,7 +39,7 @@
         {
           "type": "minecraft:item",
           "weight": 3,
-          "name": "minecraft:gold_ingot",
+          "name": "create:large_cogwheel",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -53,7 +53,7 @@
         {
           "type": "minecraft:item",
           "weight": 2,
-          "name": "minecraft:iron_ingot",
+          "name": "create:copper_casing",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -72,7 +72,7 @@
         {
           "type": "minecraft:item",
           "weight": 4,
-          "name": "minecraft:magenta_stained_glass",
+          "name": "create:shaft",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -86,7 +86,7 @@
         {
           "type": "minecraft:item",
           "weight": 4,
-          "name": "minecraft:purple_stained_glass",
+          "name": "create:andesite_alloy",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -100,7 +100,7 @@
         {
           "type": "minecraft:item",
           "weight": 2,
-          "name": "minecraft:obsidian",
+          "name": "create:andesite_casing",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -110,15 +110,6 @@
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "incendium:artifact/shield/radiation_shield"
         }
       ]
     }

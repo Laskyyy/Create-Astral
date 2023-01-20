@@ -5,50 +5,55 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "diamond",
-          "weight": 4,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 2
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "gold_ingot",
-          "weight": 3,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 7
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "redstone_block",
           "weight": 2,
+          "name": "techreborn:basic_machine_frame"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:glowstone_dust",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1,
-                "max": 4
+                "min": 5,
+                "max": 16
               }
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "obsidian",
+          "weight": 2,
+          "name": "ad_astra:raw_desh",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "weight": 3,
+          "name": "create:large_cogwheel",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "create:copper_casing",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -66,8 +71,8 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "nether_bricks",
           "weight": 4,
+          "name": "create:shaft",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -80,8 +85,8 @@
         },
         {
           "type": "minecraft:item",
-          "name": "nether_brick",
-          "weight": 3,
+          "weight": 4,
+          "name": "create:andesite_alloy",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -94,125 +99,17 @@
         },
         {
           "type": "minecraft:item",
-          "name": "lava_bucket",
           "weight": 2,
+          "name": "create:andesite_casing",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 1
+                "max": 5
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "diamond_pickaxe",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "min": 0,
-                "max": 0.5
-              }
-            },
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 5,
-                "max": 25
-              },
-              "treasure": false
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "diamond_shovel",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "min": 0,
-                "max": 0.5
-              }
-            },
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 5,
-                "max": 25
-              },
-              "treasure": false
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "diamond_axe",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "min": 0,
-                "max": 0.5
-              }
-            },
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 5,
-                "max": 25
-              },
-              "treasure": false
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "diamond_sword",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "min": 0,
-                "max": 0.5
-              }
-            },
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 5,
-                "max": 25
-              },
-              "treasure": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "ancient_debris",
-          "weight": 4
-        },
-        {
-          "type": "minecraft:item",
-          "name": "netherite_scrap",
-          "weight": 4
         }
       ]
     }
