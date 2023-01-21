@@ -171,6 +171,10 @@ function lizardMiscChanges(event) {
       B: catwalkMaterial[0] == 'iron'? 'minecraft:iron_bars': 'createdeco:' + catwalkMaterial[0] + '_bars'
     });
   }
+
+  // One-item recipes are considered shaped, meaning you can't fully automate obsidian until crushing wheels despite
+  //  it being encouraged to do so at blaze burners. Add a blaze-powder mixing recipe as a work-around.
+  event.recipes.createMixing('2x minecraft:blaze_powder', 'minecraft:blaze_rod'); 
 }
 
 // Largely degating trains
