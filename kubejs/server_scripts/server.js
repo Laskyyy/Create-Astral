@@ -590,7 +590,7 @@ function lizardGrinderCrushingRework(event) {
     event.remove({type: 'techreborn:grinder', input: 'techreborn:' + ore + '_ore' });
     event.recipes.createCrushing([
       'techreborn:' + ore + '_dust',
-      Item.of('techreborn:' + ore + '_dust').withChance(.8)
+      Item.of('techreborn:' + ore + '_dust').withChance(.5)
     ], 'techreborn:' + ore + '_ore');
     
     // If it doesn't find the ore listed in "no deepslate" (Therefore it has a deepslate version),
@@ -599,7 +599,7 @@ function lizardGrinderCrushingRework(event) {
       event.remove({type: 'techreborn:grinder', input: 'techreborn:deepslate_' + ore + '_ore' });
       event.recipes.createCrushing([
         'techreborn:' + ore + '_dust',
-        Item.of('techreborn:' + ore + '_dust').withChance(.8)
+        Item.of('techreborn:' + ore + '_dust').withChance(.5)
       ], 'techreborn:deepslate_' + ore + '_ore');
     }
   }
@@ -719,19 +719,22 @@ function lizardGeologyAlchemyChanges(event) {
   // Diorite, Granite, and Andesite crushing
   event.recipes.createCrushing([
     'minecraft:quartz',
-    Item.of('2x techreborn:diorite_dust').withChance(.75),
+    'techreborn:diorite_dust',
+    Item.of('techreborn:diorite_dust').withChance(.5),
     Item.of('minecraft:quartz').withChance(.25),
   ], 'minecraft:diorite');
 
   event.recipes.createCrushing([
     'minecraft:red_sand',
-    Item.of('2x techreborn:granite_dust').withChance(.75),
+    'techreborn:granite_dust',
+    Item.of('techreborn:granite_dust').withChance(.5),
     Item.of('minecraft:red_sand').withChance(.25),
   ], 'minecraft:granite');
 
   event.recipes.createCrushing([
     'minecraft:cobblestone',
-    Item.of('2x techreborn:andesite_dust').withChance(.75)
+    'techreborn:andesite_dust',
+    Item.of('techreborn:andesite_dust').withChance(.5)
   ], 'minecraft:andesite');
 
   // Netherrack crushing rework
@@ -775,7 +778,8 @@ function lizardGeologyAlchemyChanges(event) {
 
   // Add lime
   event.recipes.createCrushing([
-    Item.of('2x createastral:lime').withChance(.75),
+    'createastral:lime',
+    Item.of('createastral:lime').withChance(.5),
     Item.of('minecraft:clay_ball').withChance(.2),
   ], 'create:limestone');
   
@@ -791,7 +795,8 @@ function lizardGeologyAlchemyChanges(event) {
 
   // Crushing Asurine bonus gains + lazurite (for lapis lazuli) - used to give zinc
   event.recipes.createCrushing([
-    Item.of('2x techreborn:lazurite_dust').withChance(.8),
+    'techreborn:lazurite_dust',
+    Item.of('techreborn:lazurite_dust').withChance(.5),
     Item.of('techreborn:raw_tin').withChance(.2),
     Item.of('techreborn:tin_nugget').withChance(.3),
     Item.of('minecraft:clay_ball').withChance(.2)
@@ -799,7 +804,8 @@ function lizardGeologyAlchemyChanges(event) {
 
   // Crushing Veridium bonus gains + peridot dust for ch 4+
   event.recipes.createCrushing([
-    Item.of('2x techreborn:olivine_dust').withChance(.8),
+    'techreborn:olivine_dust',
+    Item.of('techreborn:olivine_dust').withChance(.5),
     Item.of('minecraft:raw_copper').withChance(.6),
     Item.of('create:copper_nugget').withChance(.8),
     Item.of('minecraft:clay_ball').withChance(.2)
