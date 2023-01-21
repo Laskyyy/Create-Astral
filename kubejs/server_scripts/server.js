@@ -2792,18 +2792,19 @@ event.recipes.createMixing(Fluid.of('kubejs:hellfire', 81), [
 	
 	event.recipes.createSequencedAssembly([ 
         'createastral:navigation_mechanism', 
-		], 'phonos:redstone_chip', [ 
-		event.recipes.createPressing('create:incomplete_precision_mechanism', 'create:incomplete_precision_mechanism'),
-		event.recipes.createFilling('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', {fluid: 'tconstruct:molten_cobalt', amount: 1000}]), //fill bronze
-        event.recipes.createDeploying('create:incomplete_precision_mechanism', ['techreborn:electrum_nugget', 'techreborn:electrum_nugget']), //fill bronze
+      ], 'phonos:redstone_chip', [ 
+      event.recipes.createPressing('create:incomplete_precision_mechanism', 'create:incomplete_precision_mechanism'),
+      event.recipes.createFilling('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', {fluid: 'tconstruct:molten_cobalt', amount: 1000}]), //fill bronze
+      event.recipes.createDeploying('create:incomplete_precision_mechanism', ['techreborn:electrum_nugget', 'techreborn:electrum_nugget']), //fill bronze
     ]).transitionalItem('create:incomplete_precision_mechanism').loops(30)
 
     	
 	event.recipes.createSequencedAssembly([ 
   'create:integrated_circuit', 
 ], 'create:lapis_sheet', [ 
-event.recipes.createFilling('create:lapis_sheet', ['create:lapis_sheet', {fluid: 'tconstruct:molten_silver', amount: 1300}]), //fill bronze
-  event.recipes.createDeploying('create:lapis_sheet', ['create:lapis_sheet', 'techreborn:insulated_copper_cable']), //fill bronze
+  event.recipes.createFilling('create:lapis_sheet', ['create:lapis_sheet', {fluid: 'tconstruct:molten_silver', amount: 1300}]), //fill bronze
+  event.recipes.createDeploying('create:lapis_sheet', ['create:lapis_sheet', 'createaddition:copper_wire']), //fill bronze
+  event.recipes.createDeploying('create:lapis_sheet', ['create:lapis_sheet', 'createaddition:copper_wire']), //fill bronze
   event.recipes.createPressing('create:lapis_sheet', 'create:lapis_sheet'),
 ]).transitionalItem('create:lapis_sheet').loops(6)
 
@@ -3015,7 +3016,7 @@ event.recipes.createHaunting([
 
 	event.recipes.createMixing('phonos:redstone_chip', [
   'create:electron_tube',
-  'techreborn:insulated_copper_cable'
+  'techreborn:copper_cable'
 ])
 
 event.recipes.createMixing('tconstruct:seared_bricks', [
