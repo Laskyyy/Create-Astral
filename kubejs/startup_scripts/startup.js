@@ -1232,7 +1232,7 @@ onEvent('worldgen.add', event => {
 		ore.count([10, 40])
 			.squared()
 			.triangleHeight(0, 100)
-    ore.size = 9
+    ore.size = 15
 	})
 
   event.addOre((ore) => {
@@ -1248,20 +1248,6 @@ onEvent('worldgen.add', event => {
 			.squared()
 			.triangleHeight(-64, 64)
     ore.size = 15
-	})
-
-  event.addOre((ore) => {
-		ore.id = "kubejs:sodaliteoremars" // optional
-		ore.biomes = [{
-			not: {
-				category: "river"
-			}
-		}]
-		ore.addTarget('#ad_astra:mars_ore_replaceables', 'techreborn:deepslate_sodalite_ore')
-
-		ore.count([10, 20])
-			.squared()
-			.triangleHeight(-64, 64)
 	})
 
 
