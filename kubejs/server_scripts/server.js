@@ -7,6 +7,10 @@ settings.logErroringRecipes = false
 
 console.info('Welcome to white space.')
 
+// Some constants for easy configuration
+const CRUSHING_ORE_BONUS_ORE_YIELD = .33;
+const CRUSHING_ORE_BONUS_XP_CHUNKS = .33;
+
 ///// DIAMONDS REQUIRE DIAMOND TIER TO MINE (IT MAKES SENSE) /////
 
 // Change this constant to change the chance of bonus ore crushing provides
@@ -909,6 +913,41 @@ function lizardGeologyAlchemyChanges(event) {
   ], 'ad_astra:moon_sand');
 }
 
+// Increase yields in crushing ore
+function lizardCrushingOresYields(event) {
+
+  // Tech reborn ores
+  event.recipes.createCrushing([
+    'create:crushed_tin_ore',
+    Item.of('create:crushed_tin_ore').withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
+    Item.of('minecraft:iron_nugget').withChance(.2),
+    Item.of('create:experience_nugget').withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
+  ], 'techreborn:raw_tin');
+  event.recipes.createCrushing([
+    'create:crushed_silver_ore',
+    Item.of('create:crushed_silver_ore').withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
+    Item.of('create:experience_nugget').withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
+  ], 'techreborn:raw_silver');
+  event.recipes.createCrushing([
+    'create:crushed_lead_ore',
+    Item.of('create:crushed_lead_ore').withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
+    Item.of('minecraft:coal').withChance(0.2),
+    Item.of('create:experience_nugget').withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
+  ], 'techreborn:raw_lead');
+
+  const VANILLA_ORES_AND_ZINC = ['iron', 'gold', 'copper', 'zinc']; 
+  for (let ore of VANILLA_ORES_AND_ZINC) {
+    let raw_ore = ore != 'zinc'? 'minecraft:raw_' + ore: 'create:raw_zinc';
+    let crushed_ore = 'create:crushed_' + ore + '_ore';
+    event.remove({type: 'create:crushing', output: crushed_ore});
+    event.recipes.createCrushing([
+      crushed_ore,
+      Item.of(crushed_ore).withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
+      Item.of('create:experience_nugget').withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
+    ], raw_ore);
+  } 
+}
+
 // Some changes need to be made after all of Lasky's changes, lest their changes will override mine.
 function lizardPostLaskyChange(event) {
   // The first number is a number I found looking through the configs. The second number is
@@ -939,6 +978,7 @@ function lizardChanges(event) {
   lizardCH3Concrete(event);
   lizardGrinderCrushingRework(event);
   lizardGeologyAlchemyChanges(event);
+  lizardCrushingOresYields(event);
 }
 
 
@@ -2884,21 +2924,7 @@ event.recipes.createMixing('8x tconstruct:grout', [
   ///// ORE PROCESSING PATCHES /////
 
 
-  event.recipes.createCrushing([
-    'create:crushed_tin_ore',
-    Item.of('minecraft:iron_nugget').withChance(1),
-  ], 'techreborn:raw_tin')
-  // event.recipes.createCrushing([
-  //   'techreborn:clay_dust'
-  // ], 'minecraft:clay_ball')
-  event.recipes.createCrushing([
-    'create:crushed_silver_ore',
-    Item.of('create:experience_nugget').withChance(0.75),
-  ], 'techreborn:raw_silver')
-  event.recipes.createCrushing([
-    'create:crushed_lead_ore',
-    Item.of('minecraft:coal').withChance(0.2),
-  ], 'techreborn:raw_lead')
+
 
 
   event.recipes.createCrushing([
