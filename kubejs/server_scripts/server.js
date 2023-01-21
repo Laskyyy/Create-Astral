@@ -655,6 +655,7 @@ function lizardGrinderCrushingRework(event) {
       }]
     });
   }
+  event.remove({ type: 'create:milling', output: 'minecraft:gunpowder' });
 
   // Remove crushing recipes that already have a grinder recipe
   event.remove({ type: 'create:crushing', input: 'minecraft:blaze_rod' });
