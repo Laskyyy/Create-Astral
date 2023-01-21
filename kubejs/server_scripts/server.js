@@ -704,12 +704,12 @@ function lizardGeologyAlchemyChanges(event) {
 
   // Todo: add back in coral grinder calcite dust recipe that was removed due to replacing pointed dripstone recipe
 
-  // Pre-crushing copper and zinc generation
+  // Pre-crushing copper and tin generation (used to be copper and zinc)
   event.recipes.createMilling([
     Item.of('create:crushed_copper_ore').withChance(.4)
   ], 'create:veridium');
   event.recipes.createMilling([
-    Item.of('create:crushed_zinc_ore').withChance(.15)
+    Item.of('create:crushed_tin_ore').withChance(.15)
   ], 'create:asurine');
 
   // Diorite, Granite, and Andesite crushing
@@ -785,18 +785,18 @@ function lizardGeologyAlchemyChanges(event) {
   event.remove({type: 'create:crushing', input: 'create:asurine'});
   event.remove({type: 'create:crushing', input: 'create:veridium'});
 
-  // Crushing Asurine bonus gains + lazurite (for lapis lazuli)
+  // Crushing Asurine bonus gains + lazurite (for lapis lazuli) - used to give zinc
   event.recipes.createCrushing([
     Item.of('2x techreborn:lazurite_dust').withChance(.8),
-    Item.of('create:zinc_nugget').withChance(.3),
-    Item.of('create:raw_zinc').withChance(.3),
+    Item.of('techreborn:tin_nugget').withChance(.3),
+    Item.of('create:crushed_tin_ore').withChance(.3),
     Item.of('minecraft:clay_ball').withChance(.2)
   ], 'create:asurine');
 
   // Crushing Veridium bonus gains + peridot dust for ch 4+
   event.recipes.createCrushing([
     Item.of('2x techreborn:olivine_dust').withChance(.8),
-    Item.of('minecraft:raw_copper').withChance(.8),
+    Item.of('create:crushed_copper_ore').withChance(.8),
     Item.of('create:copper_nugget').withChance(.8),
     Item.of('minecraft:clay_ball').withChance(.2)
   ], 'create:veridium');
@@ -862,13 +862,13 @@ function lizardGeologyAlchemyChanges(event) {
     '4x minecraft:gravel'
   ]);;
 
-  // Remove vanilla red-sand so it can produce tin instead, and the red sand haunting infinite loop
+  // Remove vanilla red-sand so it can produce zinc instead, and the red sand haunting infinite loop
   event.remove({type: 'create:splashing', input: 'minecraft:red_sand' });
   event.remove({type: 'create:haunting', input: 'minecraft:red_sand' })
 
-  // New red sand washing for tin
+  // New red sand washing for zinc (used to be tin)
   event.recipes.createSplashing([
-    Item.of('techreborn:tin_nugget').withChance(.33),
+    Item.of('create:zinc_nugget').withChance(.33),
     Item.of('minecraft:dead_bush').withChance(.12)
   ], 'minecraft:red_sand');
 
