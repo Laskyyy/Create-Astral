@@ -192,8 +192,6 @@ function lizardCH1Changes(event) {
   event.recipes.createSequencedAssembly([
     Item.of('create:sturdy_sheet').withChance(12),
     Item.of('minecraft:gravel').withChance(8)
-  // ], 'create:powdered_obsidian', [
-  // Todo: should we just do an event.replaceInput so obsidian dust and powdered obsidian is interchangeable?
   ], '#c:dusts/obsidian', [
     event.recipes.createPressing(transitional_sturdy_sheet, transitional_sturdy_sheet),
     event.recipes.createPressing(transitional_sturdy_sheet, transitional_sturdy_sheet)
@@ -349,7 +347,7 @@ function lizardCH3Changes(event) {
   ]).heated().processingTime(700);
 
   // De-gating chunk-loader, but then give it more difficult materials to balance it out
-  // Todo: make it require plates that require special dust crafting.
+  // Todo V2.X: make it require plates that require special dust crafting. (emerald and diamond plates suffice for now)
   event.replaceInput({type: 'minecraft:crafting_shaped', output: 'techreborn:chunk_loader'}, 
     'techreborn:industrial_machine_frame', 'techreborn:basic_machine_frame');
   event.replaceInput({type: 'minecraft:crafting_shaped', output: 'techreborn:chunk_loader'}, 
@@ -487,7 +485,7 @@ function lizardCH3Biofuel(event) {
 function lizardCH3Concrete(event) {
 
   // Cement recipe
-  // Todo: be not lazy and make it so all concrete powders require lime
+  // Todo V2.X: be not lazy and make it so all concrete powders require lime
   event.recipes.createMixing(Fluid.of('kubejs:blast-resistant_cement', FULL_BUCKET_AMMOUNT), [
     '#c:concrete_powder',
     '2x createastral:lime',
@@ -538,7 +536,7 @@ function lizardCH3Concrete(event) {
   });
 }
 
-// Todo: various tech reborn "gem" ores should give gems when crushed
+// Todo (sometime but this is the lowest priority): various tech reborn "gem" ores should give gems when crushed
 function lizardGrinderCrushingRework(event) {
 
   // Remove all block techreborn grinding recipes
@@ -588,7 +586,6 @@ function lizardGrinderCrushingRework(event) {
   // Replace all techreborn ores to require the crushing wheel for dusts
   const TECHREBORN_RANDOM_ORE_NEED_CRUSHING = ['sapphire', 'bauxite', 'cinnabar', 'ruby', 'galena', 'peridot', 'sodalite', 'pyrite', 'cinnabar', 'sphalerite'];
   const TECHREBORN_RANDOM_ORE_NO_DEEPSLATE = ['pyrite', 'cinnabar', 'sphalerite'];
-  // Todo: use tags so there's no need for this second array?
 
   for (let ore of TECHREBORN_RANDOM_ORE_NEED_CRUSHING) {
     event.remove({type: 'techreborn:grinder', input: 'techreborn:' + ore + '_ore' });
@@ -710,8 +707,6 @@ function lizardGeologyAlchemyChanges(event) {
       count: 1,
     }]
   });
-
-  // Todo: add back in coral grinder calcite dust recipe that was removed due to replacing pointed dripstone recipe
 
   // Pre-crushing copper and tin generation (used to be copper and zinc)
   event.recipes.createMilling([
