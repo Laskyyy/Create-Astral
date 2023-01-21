@@ -35,19 +35,6 @@ function lizardMiscChanges(event) {
   event.replaceInput('techreborn:obsidian_dust', '#c:dusts/obsidian');
   event.replaceInput('createaddition:diamond_grit', 'techreborn:diamond_dust');
 
-
-
-  // Remove Tech reborn's coal grinding recipe, make the crushing wheel required.
-  // TODO: implement "ore dust" idea.
-  event.remove({type: 'techreborn:grinder', output: 'techreborn:coal_dust'});
-  event.remove({type: 'techreborn:grinder', output: 'techreborn:charcoal_dust'});
-  event.recipes.createCrushing([
-    'techreborn:coal_dust'
-  ], 'minecraft:coal');
-  event.recipes.createCrushing([
-    'techreborn:charcoal_dust'
-  ], 'minecraft:charcoal');
-
   // Create charcoal dust haunting recipe, parity with normal coal haunting.
   event.recipes.createHaunting([
     'techreborn:coal_dust'
@@ -3015,7 +3002,7 @@ event.recipes.createSplashing([
 ], 'ad_astra:raw_calorite')
 event.recipes.createHaunting([
   'minecraft:coal',
-], '2x minecraft:charcoal')
+], 'minecraft:charcoal')
 
 
 
