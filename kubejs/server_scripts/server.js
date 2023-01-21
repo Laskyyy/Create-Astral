@@ -3404,7 +3404,8 @@ event.recipes.createMixing({fluid: 'create:honey', amount: 40500}, [
 event.recipes.createMixing('createastral:astral_conduit', [
   {fluid: 'kubejs:shimmer', amount: 81000},
   'minecraft:diamond_block',
-  'phonos:redstone_chip'
+  'phonos:redstone_chip',
+  'minecraft:flint_and_steel'
 ]).processingTime(30)
 
   lizardPostLaskyChange(event);
