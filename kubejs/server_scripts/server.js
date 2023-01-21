@@ -952,6 +952,14 @@ function lizardCrushingOresYields(event) {
       Item.of('create:experience_nugget').withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
     ], raw_ore);
   } 
+
+  // Gate the regular andesite Create recipe behind blaze burners
+  event.remove({mod:'create', output: 'minecraft:andesite'});
+  event.recipes.createCompacting('minecraft:andesite', [
+    '2x minecraft:flint',
+    'minecraft:gravel',
+    { fluid: 'minecraft:lava', amount: FULL_BUCKET_AMMOUNT / 10 }
+  ]).heated();
 }
 
 // Some changes need to be made after all of Lasky's changes, lest their changes will override mine.
