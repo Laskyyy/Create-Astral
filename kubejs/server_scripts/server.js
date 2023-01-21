@@ -706,10 +706,10 @@ function lizardGeologyAlchemyChanges(event) {
 
   // Pre-crushing copper and tin generation (used to be copper and zinc)
   event.recipes.createMilling([
-    Item.of('create:crushed_copper_ore').withChance(.4)
+    Item.of('minecraft:raw_copper').withChance(.3)
   ], 'create:veridium');
   event.recipes.createMilling([
-    Item.of('create:crushed_tin_ore').withChance(.15)
+    Item.of('techreborn:raw_tin').withChance(.1)
   ], 'create:asurine');
 
   // Diorite, Granite, and Andesite crushing
@@ -788,15 +788,15 @@ function lizardGeologyAlchemyChanges(event) {
   // Crushing Asurine bonus gains + lazurite (for lapis lazuli) - used to give zinc
   event.recipes.createCrushing([
     Item.of('2x techreborn:lazurite_dust').withChance(.8),
+    Item.of('techreborn:raw_tin').withChance(.2),
     Item.of('techreborn:tin_nugget').withChance(.3),
-    Item.of('create:crushed_tin_ore').withChance(.3),
     Item.of('minecraft:clay_ball').withChance(.2)
   ], 'create:asurine');
 
   // Crushing Veridium bonus gains + peridot dust for ch 4+
   event.recipes.createCrushing([
     Item.of('2x techreborn:olivine_dust').withChance(.8),
-    Item.of('create:crushed_copper_ore').withChance(.8),
+    Item.of('minecraft:raw_copper').withChance(.6),
     Item.of('create:copper_nugget').withChance(.8),
     Item.of('minecraft:clay_ball').withChance(.2)
   ], 'create:veridium');
