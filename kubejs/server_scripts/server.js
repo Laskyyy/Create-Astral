@@ -777,7 +777,7 @@ function lizardGeologyAlchemyChanges(event) {
   
   // Wash lime for silver
   event.recipes.createSplashing([
-    Item.of('techreborn:silver_nugget').withChance(.15),
+    Item.of('techreborn:silver_nugget').withChance(.12),
     Item.of('techreborn:raw_silver').withChance(.02)
   ], 'createastral:lime');
 
@@ -901,6 +901,12 @@ function lizardGeologyAlchemyChanges(event) {
     '8x minecraft:flint',
     'minecraft:gravel'
   ]);
+
+  // Desh from moon sand
+  event.recipes.createSplashing([
+    Item.of('ad_astra:desh_nugget').withChance(.12),
+    Item.of('ad_astra:cheese').withChance(.04)
+  ], 'ad_astra:moon_sand');
 }
 
 // Some changes need to be made after all of Lasky's changes, lest their changes will override mine.
@@ -2903,9 +2909,9 @@ event.recipes.createMixing('8x tconstruct:grout', [
     'ad_astra:moon_sand'
   ], 'ad_astra:moon_stone')
 
-  event.recipes.createSplashing([
-    Item.of('techreborn:silver_nugget').withChance(0.25),
-  ], 'ad_astra:moon_sand')
+  // event.recipes.createSplashing([
+  //   Item.of('techreborn:silver_nugget').withChance(0.25),
+  // ], 'ad_astra:moon_sand')
 
   event.recipes.createCrushing([
     'ad_astra:mars_sand'
