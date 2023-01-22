@@ -7,6 +7,10 @@ settings.logErroringRecipes = false
 
 console.info('Welcome to white space.')
 
+// Some constants for easy configuration
+const CRUSHING_ORE_BONUS_ORE_YIELD = .33;
+const CRUSHING_ORE_BONUS_XP_CHUNKS = .33;
+
 ///// DIAMONDS REQUIRE DIAMOND TIER TO MINE (IT MAKES SENSE) /////
 
 // Change this constant to change the chance of bonus ore crushing provides
@@ -30,19 +34,6 @@ function lizardMiscChanges(event) {
   event.replaceInput('create:powdered_obsidian', '#c:dusts/obsidian');
   event.replaceInput('techreborn:obsidian_dust', '#c:dusts/obsidian');
   event.replaceInput('createaddition:diamond_grit', 'techreborn:diamond_dust');
-
-
-
-  // Remove Tech reborn's coal grinding recipe, make the crushing wheel required.
-  // TODO: implement "ore dust" idea.
-  event.remove({type: 'techreborn:grinder', output: 'techreborn:coal_dust'});
-  event.remove({type: 'techreborn:grinder', output: 'techreborn:charcoal_dust'});
-  event.recipes.createCrushing([
-    'techreborn:coal_dust'
-  ], 'minecraft:coal');
-  event.recipes.createCrushing([
-    'techreborn:charcoal_dust'
-  ], 'minecraft:charcoal');
 
   // Create charcoal dust haunting recipe, parity with normal coal haunting.
   event.recipes.createHaunting([
@@ -167,6 +158,29 @@ function lizardMiscChanges(event) {
       B: catwalkMaterial[0] == 'iron'? 'minecraft:iron_bars': 'createdeco:' + catwalkMaterial[0] + '_bars'
     });
   }
+
+  // One-item recipes are considered shaped, meaning you can't fully automate obsidian until crushing wheels despite
+  //  it being encouraged to do so at blaze burners. Add a blaze-powder mixing recipe as a work-around.
+  event.recipes.createMixing('2x minecraft:blaze_powder', 'minecraft:blaze_rod');
+
+  // Adding some Create compat with rubber wood
+  event.recipes.createCutting('techreborn:rubber_log_stripped', 'techreborn:rubber_log');
+  event.recipes.createCutting('techreborn:stripped_rubber_wood', 'techreborn:rubber_wood');
+  event.recipes.createCutting('6x techreborn:rubber_planks', 'techreborn:rubber_log_stripped');
+  event.custom({ 
+    "type":"create:item_application",
+    "ingredients": [{
+      "item": "techreborn:rubber_log_stripped"
+    }, {
+      "item": "create:andesite_alloy"
+    }],
+    
+    "results": [{
+      "item": "create:andesite_casing"
+    }]
+  });
+
+  // Todo: add in stripping recipe for Tech Reborn rubber wood
 }
 
 // Largely degating trains
@@ -184,8 +198,6 @@ function lizardCH1Changes(event) {
   event.recipes.createSequencedAssembly([
     Item.of('create:sturdy_sheet').withChance(12),
     Item.of('minecraft:gravel').withChance(8)
-  // ], 'create:powdered_obsidian', [
-  // Todo: should we just do an event.replaceInput so obsidian dust and powdered obsidian is interchangeable?
   ], '#c:dusts/obsidian', [
     event.recipes.createPressing(transitional_sturdy_sheet, transitional_sturdy_sheet),
     event.recipes.createPressing(transitional_sturdy_sheet, transitional_sturdy_sheet)
@@ -341,7 +353,7 @@ function lizardCH3Changes(event) {
   ]).heated().processingTime(700);
 
   // De-gating chunk-loader, but then give it more difficult materials to balance it out
-  // Todo: make it require plates that require special dust crafting.
+  // Todo V2.X: make it require plates that require special dust crafting. (emerald and diamond plates suffice for now)
   event.replaceInput({type: 'minecraft:crafting_shaped', output: 'techreborn:chunk_loader'}, 
     'techreborn:industrial_machine_frame', 'techreborn:basic_machine_frame');
   event.replaceInput({type: 'minecraft:crafting_shaped', output: 'techreborn:chunk_loader'}, 
@@ -479,7 +491,7 @@ function lizardCH3Biofuel(event) {
 function lizardCH3Concrete(event) {
 
   // Cement recipe
-  // Todo: be not lazy and make it so all concrete powders require lime
+  // Todo V2.X: be not lazy and make it so all concrete powders require lime
   event.recipes.createMixing(Fluid.of('kubejs:blast-resistant_cement', FULL_BUCKET_AMMOUNT), [
     '#c:concrete_powder',
     '2x createastral:lime',
@@ -530,7 +542,7 @@ function lizardCH3Concrete(event) {
   });
 }
 
-// Todo: various tech reborn "gem" ores should give gems when crushed
+// Todo (sometime but this is the lowest priority): various tech reborn "gem" ores should give gems when crushed
 function lizardGrinderCrushingRework(event) {
 
   // Remove all block techreborn grinding recipes
@@ -580,13 +592,12 @@ function lizardGrinderCrushingRework(event) {
   // Replace all techreborn ores to require the crushing wheel for dusts
   const TECHREBORN_RANDOM_ORE_NEED_CRUSHING = ['sapphire', 'bauxite', 'cinnabar', 'ruby', 'galena', 'peridot', 'sodalite', 'pyrite', 'cinnabar', 'sphalerite'];
   const TECHREBORN_RANDOM_ORE_NO_DEEPSLATE = ['pyrite', 'cinnabar', 'sphalerite'];
-  // Todo: use tags so there's no need for this second array?
 
   for (let ore of TECHREBORN_RANDOM_ORE_NEED_CRUSHING) {
     event.remove({type: 'techreborn:grinder', input: 'techreborn:' + ore + '_ore' });
     event.recipes.createCrushing([
       'techreborn:' + ore + '_dust',
-      Item.of('techreborn:' + ore + '_dust').withChance(.8)
+      Item.of('techreborn:' + ore + '_dust').withChance(.5)
     ], 'techreborn:' + ore + '_ore');
     
     // If it doesn't find the ore listed in "no deepslate" (Therefore it has a deepslate version),
@@ -595,7 +606,7 @@ function lizardGrinderCrushingRework(event) {
       event.remove({type: 'techreborn:grinder', input: 'techreborn:deepslate_' + ore + '_ore' });
       event.recipes.createCrushing([
         'techreborn:' + ore + '_dust',
-        Item.of('techreborn:' + ore + '_dust').withChance(.8)
+        Item.of('techreborn:' + ore + '_dust').withChance(.5)
       ], 'techreborn:deepslate_' + ore + '_ore');
     }
   }
@@ -651,6 +662,7 @@ function lizardGrinderCrushingRework(event) {
       }]
     });
   }
+  event.remove({ type: 'create:milling', output: 'minecraft:gunpowder' });
 
   // Remove crushing recipes that already have a grinder recipe
   event.remove({ type: 'create:crushing', input: 'minecraft:blaze_rod' });
@@ -702,32 +714,33 @@ function lizardGeologyAlchemyChanges(event) {
     }]
   });
 
-  // Todo: add back in coral grinder calcite dust recipe that was removed due to replacing pointed dripstone recipe
-
-  // Pre-crushing copper and zinc generation
+  // Pre-crushing copper and tin generation (used to be copper and zinc)
   event.recipes.createMilling([
-    Item.of('create:crushed_copper_ore').withChance(.4)
+    Item.of('minecraft:raw_copper').withChance(.3)
   ], 'create:veridium');
   event.recipes.createMilling([
-    Item.of('create:crushed_zinc_ore').withChance(.15)
+    Item.of('techreborn:raw_tin').withChance(.1)
   ], 'create:asurine');
 
   // Diorite, Granite, and Andesite crushing
   event.recipes.createCrushing([
     'minecraft:quartz',
-    Item.of('2x techreborn:diorite_dust').withChance(.75),
+    'techreborn:diorite_dust',
+    Item.of('techreborn:diorite_dust').withChance(.5),
     Item.of('minecraft:quartz').withChance(.25),
   ], 'minecraft:diorite');
 
   event.recipes.createCrushing([
     'minecraft:red_sand',
-    Item.of('2x techreborn:granite_dust').withChance(.75),
+    'techreborn:granite_dust',
+    Item.of('techreborn:granite_dust').withChance(.5),
     Item.of('minecraft:red_sand').withChance(.25),
   ], 'minecraft:granite');
 
   event.recipes.createCrushing([
     'minecraft:cobblestone',
-    Item.of('2x techreborn:andesite_dust').withChance(.75)
+    'techreborn:andesite_dust',
+    Item.of('techreborn:andesite_dust').withChance(.5)
   ], 'minecraft:andesite');
 
   // Netherrack crushing rework
@@ -771,13 +784,14 @@ function lizardGeologyAlchemyChanges(event) {
 
   // Add lime
   event.recipes.createCrushing([
-    Item.of('2x createastral:lime').withChance(.75),
+    'createastral:lime',
+    Item.of('createastral:lime').withChance(.5),
     Item.of('minecraft:clay_ball').withChance(.2),
   ], 'create:limestone');
   
   // Wash lime for silver
   event.recipes.createSplashing([
-    Item.of('techreborn:silver_nugget').withChance(.15),
+    Item.of('techreborn:silver_nugget').withChance(.12),
     Item.of('techreborn:raw_silver').withChance(.02)
   ], 'createastral:lime');
 
@@ -785,18 +799,20 @@ function lizardGeologyAlchemyChanges(event) {
   event.remove({type: 'create:crushing', input: 'create:asurine'});
   event.remove({type: 'create:crushing', input: 'create:veridium'});
 
-  // Crushing Asurine bonus gains + lazurite (for lapis lazuli)
+  // Crushing Asurine bonus gains + lazurite (for lapis lazuli) - used to give zinc
   event.recipes.createCrushing([
-    Item.of('2x techreborn:lazurite_dust').withChance(.8),
-    Item.of('create:zinc_nugget').withChance(.3),
-    Item.of('create:raw_zinc').withChance(.3),
+    'techreborn:lazurite_dust',
+    Item.of('techreborn:lazurite_dust').withChance(.5),
+    Item.of('techreborn:raw_tin').withChance(.2),
+    Item.of('techreborn:tin_nugget').withChance(.3),
     Item.of('minecraft:clay_ball').withChance(.2)
   ], 'create:asurine');
 
   // Crushing Veridium bonus gains + peridot dust for ch 4+
   event.recipes.createCrushing([
-    Item.of('2x techreborn:olivine_dust').withChance(.8),
-    Item.of('minecraft:raw_copper').withChance(.8),
+    'techreborn:olivine_dust',
+    Item.of('techreborn:olivine_dust').withChance(.5),
+    Item.of('minecraft:raw_copper').withChance(.6),
     Item.of('create:copper_nugget').withChance(.8),
     Item.of('minecraft:clay_ball').withChance(.2)
   ], 'create:veridium');
@@ -862,13 +878,13 @@ function lizardGeologyAlchemyChanges(event) {
     '4x minecraft:gravel'
   ]);;
 
-  // Remove vanilla red-sand so it can produce tin instead, and the red sand haunting infinite loop
+  // Remove vanilla red-sand so it can produce zinc instead, and the red sand haunting infinite loop
   event.remove({type: 'create:splashing', input: 'minecraft:red_sand' });
   event.remove({type: 'create:haunting', input: 'minecraft:red_sand' })
 
-  // New red sand washing for tin
+  // New red sand washing for zinc (used to be tin)
   event.recipes.createSplashing([
-    Item.of('techreborn:tin_nugget').withChance(.33),
+    Item.of('create:zinc_nugget').withChance(.33),
     Item.of('minecraft:dead_bush').withChance(.12)
   ], 'minecraft:red_sand');
 
@@ -901,6 +917,55 @@ function lizardGeologyAlchemyChanges(event) {
     '8x minecraft:flint',
     'minecraft:gravel'
   ]);
+
+  // Desh from moon sand
+  event.recipes.createSplashing([
+    Item.of('ad_astra:desh_nugget').withChance(.12),
+    Item.of('ad_astra:cheese').withChance(.04)
+  ], 'ad_astra:moon_sand');
+}
+
+// Increase yields in crushing ore
+function lizardCrushingOresYields(event) {
+
+  // Tech reborn ores
+  event.recipes.createCrushing([
+    'create:crushed_tin_ore',
+    Item.of('create:crushed_tin_ore').withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
+    Item.of('minecraft:iron_nugget').withChance(.2),
+    Item.of('create:experience_nugget').withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
+  ], 'techreborn:raw_tin');
+  event.recipes.createCrushing([
+    'create:crushed_silver_ore',
+    Item.of('create:crushed_silver_ore').withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
+    Item.of('create:experience_nugget').withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
+  ], 'techreborn:raw_silver');
+  event.recipes.createCrushing([
+    'create:crushed_lead_ore',
+    Item.of('create:crushed_lead_ore').withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
+    Item.of('minecraft:coal').withChance(0.2),
+    Item.of('create:experience_nugget').withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
+  ], 'techreborn:raw_lead');
+
+  const VANILLA_ORES_AND_ZINC = ['iron', 'gold', 'copper', 'zinc']; 
+  for (let ore of VANILLA_ORES_AND_ZINC) {
+    let raw_ore = ore != 'zinc'? 'minecraft:raw_' + ore: 'create:raw_zinc';
+    let crushed_ore = 'create:crushed_' + ore + '_ore';
+    event.remove({type: 'create:crushing', output: crushed_ore});
+    event.recipes.createCrushing([
+      crushed_ore,
+      Item.of(crushed_ore).withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
+      Item.of('create:experience_nugget').withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
+    ], raw_ore);
+  } 
+
+  // Gate the regular andesite Create recipe behind blaze burners
+  event.remove({mod:'create', output: 'minecraft:andesite'});
+  event.recipes.createCompacting('minecraft:andesite', [
+    '2x minecraft:flint',
+    'minecraft:gravel',
+    { fluid: 'minecraft:lava', amount: FULL_BUCKET_AMMOUNT / 10 }
+  ]).heated();
 }
 
 // Some changes need to be made after all of Lasky's changes, lest their changes will override mine.
@@ -933,6 +998,7 @@ function lizardChanges(event) {
   lizardCH3Concrete(event);
   lizardGrinderCrushingRework(event);
   lizardGeologyAlchemyChanges(event);
+  lizardCrushingOresYields(event);
 }
 
 
@@ -2740,18 +2806,19 @@ event.recipes.createMixing(Fluid.of('kubejs:hellfire', 81), [
 	
 	event.recipes.createSequencedAssembly([ 
         'createastral:navigation_mechanism', 
-		], 'phonos:redstone_chip', [ 
-		event.recipes.createPressing('create:incomplete_precision_mechanism', 'create:incomplete_precision_mechanism'),
-		event.recipes.createFilling('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', {fluid: 'tconstruct:molten_cobalt', amount: 1000}]), //fill bronze
-        event.recipes.createDeploying('create:incomplete_precision_mechanism', ['techreborn:electrum_nugget', 'techreborn:electrum_nugget']), //fill bronze
+      ], 'phonos:redstone_chip', [ 
+      event.recipes.createPressing('create:incomplete_precision_mechanism', 'create:incomplete_precision_mechanism'),
+      event.recipes.createFilling('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', {fluid: 'tconstruct:molten_cobalt', amount: 1000}]), //fill bronze
+      event.recipes.createDeploying('create:incomplete_precision_mechanism', ['techreborn:electrum_nugget', 'techreborn:electrum_nugget']), //fill bronze
     ]).transitionalItem('create:incomplete_precision_mechanism').loops(30)
 
     	
 	event.recipes.createSequencedAssembly([ 
   'create:integrated_circuit', 
 ], 'create:lapis_sheet', [ 
-event.recipes.createFilling('create:lapis_sheet', ['create:lapis_sheet', {fluid: 'tconstruct:molten_silver', amount: 1300}]), //fill bronze
-  event.recipes.createDeploying('create:lapis_sheet', ['create:lapis_sheet', 'techreborn:insulated_copper_cable']), //fill bronze
+  event.recipes.createFilling('create:lapis_sheet', ['create:lapis_sheet', {fluid: 'tconstruct:molten_silver', amount: 1300}]), //fill bronze
+  event.recipes.createDeploying('create:lapis_sheet', ['create:lapis_sheet', 'createaddition:copper_wire']), //fill bronze
+  event.recipes.createDeploying('create:lapis_sheet', ['create:lapis_sheet', 'createaddition:copper_wire']), //fill bronze
   event.recipes.createPressing('create:lapis_sheet', 'create:lapis_sheet'),
 ]).transitionalItem('create:lapis_sheet').loops(6)
 
@@ -2878,21 +2945,7 @@ event.recipes.createMixing('8x tconstruct:grout', [
   ///// ORE PROCESSING PATCHES /////
 
 
-  event.recipes.createCrushing([
-    'create:crushed_tin_ore',
-    Item.of('minecraft:iron_nugget').withChance(1),
-  ], 'techreborn:raw_tin')
-  // event.recipes.createCrushing([
-  //   'techreborn:clay_dust'
-  // ], 'minecraft:clay_ball')
-  event.recipes.createCrushing([
-    'create:crushed_silver_ore',
-    Item.of('create:experience_nugget').withChance(0.75),
-  ], 'techreborn:raw_silver')
-  event.recipes.createCrushing([
-    'create:crushed_lead_ore',
-    Item.of('minecraft:coal').withChance(0.2),
-  ], 'techreborn:raw_lead')
+
 
 
   event.recipes.createCrushing([
@@ -2903,9 +2956,9 @@ event.recipes.createMixing('8x tconstruct:grout', [
     'ad_astra:moon_sand'
   ], 'ad_astra:moon_stone')
 
-  event.recipes.createSplashing([
-    Item.of('techreborn:silver_nugget').withChance(0.25),
-  ], 'ad_astra:moon_sand')
+  // event.recipes.createSplashing([
+  //   Item.of('techreborn:silver_nugget').withChance(0.25),
+  // ], 'ad_astra:moon_sand')
 
   event.recipes.createCrushing([
     'ad_astra:mars_sand'
@@ -2968,7 +3021,7 @@ event.recipes.createSplashing([
 ], 'ad_astra:raw_calorite')
 event.recipes.createHaunting([
   'minecraft:coal',
-], '2x minecraft:charcoal')
+], 'minecraft:charcoal')
 
 
 
@@ -2977,7 +3030,7 @@ event.recipes.createHaunting([
 
 	event.recipes.createMixing('phonos:redstone_chip', [
   'create:electron_tube',
-  'techreborn:insulated_copper_cable'
+  'techreborn:copper_cable'
 ])
 
 event.recipes.createMixing('tconstruct:seared_bricks', [
@@ -3365,7 +3418,8 @@ event.recipes.createMixing({fluid: 'create:honey', amount: 40500}, [
 event.recipes.createMixing('createastral:astral_conduit', [
   {fluid: 'kubejs:shimmer', amount: 81000},
   'minecraft:diamond_block',
-  'phonos:redstone_chip'
+  'phonos:redstone_chip',
+  'minecraft:flint_and_steel'
 ]).processingTime(30)
 
   lizardPostLaskyChange(event);
