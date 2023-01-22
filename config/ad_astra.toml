@@ -71,13 +71,13 @@ maxEnergy = 0
 energyPerTick = 0
 tankBuckets = 5
 [oxygenDistributor]
-maxEnergy = 20000
+maxEnergy = 100000
 fluidConversionEnergyPerTick = 5
 tankBuckets = 5
 maxBlockChecks = 2000
 refreshTicks = 60
 oxygenMultiplier = 0.8
-energyMultiplier = 3.0
+energyMultiplier = 0
 [solarPanel]
 maxEnergy = 15000
 energyMultiplier = 1.05
