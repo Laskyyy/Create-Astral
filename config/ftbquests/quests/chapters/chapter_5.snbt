@@ -40,8 +40,13 @@
 			y: -4.0d
 			shape: "pentagon"
 			subtitle: "Make yourself at home, it only gets worse from here..."
-			description: ["A resilient civilisation inhabits Mars... They seem to worship gold. Find large quantities of it along with lead and ostrum in the underground. Buildings, old and new, can be found on the surface."]
+			description: [
+				"A resilient civilisation inhabits Mars... They seem to worship gold. Find large quantities of it along with lead and ostrum in the underground. Buildings, old and new, can be found on the surface."
+				""
+				"As you proven your resourcefulness up to now, the quests will be slightly less thorough, and may not tell you every new tool you gained when you craft a new machine. This totally has nothing to do with two different writers writing different halves of the pack. Nope. Not at all."
+			]
 			dependencies: ["63DCF596AAA9A232"]
+			hide_text_until_complete: false
 			size: 2.0d
 			id: "253F29A00B4EA050"
 			tasks: [{
@@ -50,14 +55,22 @@
 				icon: "ad_astra:mars_globe"
 				dimension: "ad_astra:mars"
 			}]
-			rewards: [{
-				id: "765072271F3D139D"
-				type: "item"
-				item: "vinery:crusty_bread"
-			}]
+			rewards: [
+				{
+					id: "765072271F3D139D"
+					type: "item"
+					item: "vinery:crusty_bread"
+				}
+				{
+					id: "3B142E5C732CA3B6"
+					type: "xp"
+					xp: 300
+				}
+			]
 		}
 		{
 			title: "Iron but slightly harder, I reckon"
+			icon: "ad_astra:compressed_steel"
 			x: -8.0d
 			y: 5.0d
 			shape: "square"
@@ -101,6 +114,7 @@
 			title: "Produce some Lithium + Batteries"
 			x: -3.5d
 			y: 1.5d
+			shape: "square"
 			subtitle: "Pour Lithium into your red cell batteries for this component. "
 			description: [
 				"Lithium can be processed from basic clay balls for a large amount, if you use one of the earlier clay farms."
@@ -229,7 +243,10 @@
 				""
 				"The oxygen tank capacity is twice as large. What a bonus."
 			]
-			dependencies: ["3A5D7E60EF1C3BC3"]
+			dependencies: [
+				"3A5D7E60EF1C3BC3"
+				"717A6825F23CC07F"
+			]
 			size: 1.5d
 			id: "7B5AE0A782DE8DF8"
 			tasks: [
@@ -292,9 +309,9 @@
 			shape: "hexagon"
 			subtitle: "We CAN get much higheerrr it seems..."
 			dependencies: [
-				"7D98B3EA84A46227"
 				"356CE973D7F17F3C"
 				"7B5AE0A782DE8DF8"
+				"63A96438AB2F9506"
 			]
 			size: 1.5d
 			id: "3CF2DB0B0ACE19B6"
@@ -315,8 +332,8 @@
 			}]
 		}
 		{
-			x: -10.5d
-			y: 5.0d
+			x: -10.0d
+			y: 6.0d
 			subtitle: "Bouncy..."
 			description: ["Negates fall damage entirely and enabled jumping up multiple blocks! You'll have to learn to control the bouncing however..."]
 			dependencies: ["3A5D7E60EF1C3BC3"]
@@ -390,7 +407,7 @@
 		{
 			title: "That's some good fuel, right there."
 			x: -10.0d
-			y: 3.5d
+			y: 1.5d
 			subtitle: "In conjunction with Ad Astra Oil, you can distill a fuel fluid which can burn hotter than anything you've seen."
 			description: [
 				"This fuel can be pumped into blaze burners to superheat them."
@@ -419,10 +436,9 @@
 		}
 		{
 			title: "Martian Traveller"
-			x: -6.0d
-			y: -4.0d
+			x: -5.5d
+			y: -5.0d
 			subtitle: "Discover the biomes of this treacherous climate."
-			hide_dependency_lines: true
 			dependencies: ["253F29A00B4EA050"]
 			id: "28B99F2B5CA82BF9"
 			tasks: [
@@ -465,10 +481,9 @@
 		}
 		{
 			title: "Martian Explorer"
-			x: -10.0d
-			y: -4.0d
+			x: -10.5d
+			y: -5.0d
 			subtitle: "Uncover the secrets of piglin civilisation..."
-			hide_dependency_lines: true
 			dependencies: ["253F29A00B4EA050"]
 			id: "16D7DDD842CB4797"
 			tasks: [
@@ -531,9 +546,12 @@
 		{
 			title: "The incomplete mechanism..."
 			x: -8.0d
-			y: 0.5d
+			y: 0.0d
 			description: ["With the basic pins in position, clamp down an ostrum plate to finish the process."]
-			dependencies: ["0476231FB94F095A"]
+			dependencies: [
+				"0476231FB94F095A"
+				"2993E04DCB7B4EC4"
+			]
 			id: "0DF20AB6978A93FE"
 			tasks: [{
 				id: "036E856A5BC3198E"
@@ -590,14 +608,13 @@
 		{
 			title: "You spin me right round..."
 			x: -10.0d
-			y: 2.0d
+			y: 2.5d
 			description: [
 				"Centrifuging dusts and various blocks provides further elements."
 				""
 				"For our purposes here, this optional process of centrifuging soul sand into oil can provide a renewable source of it, saving you the need to collect it manually from oil spouts."
 			]
 			dependencies: ["5729A883639B2EEF"]
-			optional: true
 			id: "673DC1F22D2F790D"
 			tasks: [{
 				id: "343A9BACCFB28B13"
@@ -635,7 +652,6 @@
 			description: ["Cells of molten iron can be poured from create spouts, ready to be processed with some carbon material to form steel even more efficiently than the old recipe!"]
 			dependencies: ["30B554B51AEFEB0C"]
 			optional: true
-			secret: true
 			id: "33DBA03CF188DF0B"
 			tasks: [
 				{
@@ -674,7 +690,6 @@
 			description: ["Obtain a small stockpile to start with."]
 			dependencies: ["33DBA03CF188DF0B"]
 			optional: true
-			secret: true
 			id: "4AEC38BDC884A6C4"
 			tasks: [{
 				id: "544483DAD0120103"
@@ -685,12 +700,11 @@
 		}
 		{
 			title: "How Crude..."
-			x: -13.0d
-			y: 3.0d
+			x: -14.0d
+			y: 2.5d
 			subtitle: "How Crood..."
 			description: ["Oil can be sourced renewably from a centrifuge, however spouts across the overworld also contain a fair few cells worth of the fluid too."]
 			dependencies: ["307933B04A6E7CA9"]
-			optional: true
 			id: "48F61CBC3AFDEEBD"
 			tasks: [{
 				id: "4D9EE9214394B475"
@@ -712,14 +726,16 @@
 		}
 		{
 			title: "Hotter Stuff"
-			x: -11.5d
-			y: 3.5d
+			x: -12.0d
+			y: 1.5d
+			shape: "gear"
 			subtitle: "UNLOCK: Superheated Blaze Burners!"
 			description: ["Using Fuel Buckets on blaze burners, in the same fashion as a lava bucket, will superheat them for a short while. This is required to unlock future recipes, including the all-important steel!"]
 			dependencies: [
 				"0373FACF0AB8113E"
 				"48F61CBC3AFDEEBD"
 			]
+			size: 1.5d
 			id: "62545906EFC80BCD"
 			tasks: [{
 				id: "7DA41241E16D509D"
@@ -747,13 +763,12 @@
 		}
 		{
 			title: "Infernal Spire Processing."
-			x: -10.299999999999999d
-			y: -0.09999999999999998d
+			x: -4.2d
+			y: -3.0d
 			shape: "diamond"
 			subtitle: "Get a load of this stuff!"
 			description: ["Crushing Infernal Spire produces netherite scrap nuggets at a low rate."]
-			hide_dependency_lines: true
-			dependencies: ["253F29A00B4EA050"]
+			dependencies: ["2B697AA42C48FC04"]
 			size: 1.2d
 			optional: true
 			id: "520A09EF39A1BF5D"
@@ -765,13 +780,13 @@
 		}
 		{
 			title: "Automate debris!"
-			x: -11.0d
-			y: 0.5d
+			x: -3.5d
+			y: -2.0d
 			shape: "diamond"
 			subtitle: "Purely for high-rollers"
 			description: ["Semi-automatable debris! Wow! Along with its usual usages, netherite can be used to forge some devastating MC Dungeons weapons. If your rolling in the stuff, Create Deco provides some pricey decoration blocks. - Happy flexing"]
 			dependencies: ["520A09EF39A1BF5D"]
-			secret: true
+			optional: true
 			id: "27B0EA62812564DD"
 			tasks: [{
 				id: "46A91B73816C6440"
@@ -792,14 +807,14 @@
 			}]
 		}
 		{
-			x: -8.0d
+			x: -8.5d
 			y: -1.0d
-			description: ["Begin the circuit upgrade by applying 64x of these electrified pins onto an integrated circuit."]
-			dependencies: [
-				"7B0BBD0E9F82939D"
-				"253F29A00B4EA050"
-				"069454E35DC9B5C7"
+			description: [
+				"As you have used the tesla coil for previously, charging a golden pin with electricity will charge them."
+				""
+				"Begin the circuit upgrade by applying 64x of these electrified pins onto an integrated circuit."
 			]
+			dependencies: ["7B0BBD0E9F82939D"]
 			id: "0476231FB94F095A"
 			tasks: [{
 				id: "04BCF9DF55944974"
@@ -811,25 +826,6 @@
 				type: "item"
 				item: "createastral:electrified_pin"
 				count: 16
-			}]
-		}
-		{
-			title: "Shock those pins."
-			icon: {
-				id: "ftbquests:custom_icon"
-				Count: 1b
-				tag: {
-					Icon: "createdeco:textures/block/palettes/decal/yellow_decal.png"
-				}
-			}
-			x: -7.5d
-			y: -2.0d
-			description: ["As you have used the tesla coil for previously, charging a golden pin with electricity will charge them, ready to be imprinted onto a new circuit."]
-			dependencies: ["253F29A00B4EA050"]
-			id: "069454E35DC9B5C7"
-			tasks: [{
-				id: "2D82D29499634195"
-				type: "checkmark"
 			}]
 		}
 		{
@@ -860,6 +856,11 @@
 			title: "Inner Machinations."
 			x: -6.5d
 			y: 7.5d
+			description: [
+				"Machine parts?? You are telling me we haven't been using parts in our machines so far?"
+				""
+				"...what's holding them together then?"
+			]
 			dependencies: [
 				"3A5D7E60EF1C3BC3"
 				"4F560FA8145329E8"
@@ -886,8 +887,10 @@
 			]
 		}
 		{
-			x: -5.0d
-			y: 7.5d
+			title: "Mix 'n' Mesh"
+			x: -5.5d
+			y: 8.0d
+			description: ["Carbon mesh is an integral component in machine parts, which will become highly prevalent in Chapter 5, in the production of new circuitry and machines."]
 			dependencies: ["28CF539AA1D6A92F"]
 			id: "4F560FA8145329E8"
 			tasks: [{
@@ -902,9 +905,7 @@
 					id: "tconstruct:kama"
 					Count: 1b
 					tag: {
-						tic_multipliers: {
-							"tconstruct:attack_damage": 0.5f
-						}
+						Damage: 0
 						tic_stats: {
 							"tconstruct:attack_damage": 1.5749999f
 							"tconstruct:harvest_tier": "minecraft:netherite"
@@ -912,12 +913,10 @@
 							"tconstruct:mining_speed": 9.6f
 							"tconstruct:attack_speed": 1.6f
 						}
-						Damage: 0
-						tic_materials: [
-							"tconstruct:hepatizon"
-							"tconstruct:hepatizon"
-							"tconstruct:hepatizon"
-						]
+						tic_multipliers: {
+							"tconstruct:attack_damage": 0.5f
+						}
+						tic_broken: 0b
 						tic_modifiers: [
 							{
 								name: "tconstruct:momentum"
@@ -932,7 +931,11 @@
 								level: 1s
 							}
 						]
-						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:hepatizon"
+							"tconstruct:hepatizon"
+							"tconstruct:hepatizon"
+						]
 						tic_persistent_data: {
 							upgrades: 3
 							abilities: 1
@@ -942,8 +945,10 @@
 			}]
 		}
 		{
-			x: -4.0d
+			title: "With every fibre of my body..."
+			x: -4.5d
 			y: 7.5d
+			subtitle: "I must know, what it tastes like."
 			dependencies: ["156FCE6FDC8AD38D"]
 			id: "28CF539AA1D6A92F"
 			tasks: [{
@@ -954,8 +959,8 @@
 		}
 		{
 			title: "*another* use for coal dust"
-			x: -3.0d
-			y: 7.5d
+			x: -5.0d
+			y: 6.5d
 			subtitle: "thought you could get away?"
 			dependencies: ["3A5D7E60EF1C3BC3"]
 			id: "156FCE6FDC8AD38D"
@@ -991,8 +996,8 @@
 		}
 		{
 			title: "Banana Dust"
-			x: -14.0d
-			y: 2.0d
+			x: -12.0d
+			y: 5.0d
 			subtitle: "-> filled with yummy potassium"
 			dependencies: ["307933B04A6E7CA9"]
 			id: "6D5A97122F765FE3"
@@ -1004,8 +1009,8 @@
 		}
 		{
 			title: "Banana Fluid"
-			x: -14.0d
-			y: 6.0d
+			x: -12.0d
+			y: 6.5d
 			dependencies: ["6D5A97122F765FE3"]
 			id: "0050671D67C2FC01"
 			tasks: [{
@@ -1022,8 +1027,8 @@
 		}
 		{
 			title: "Lazurite?"
-			x: -14.0d
-			y: 7.0d
+			x: -15.0d
+			y: 9.0d
 			subtitle: "Yea i'm alright thanks."
 			hide_dependency_lines: true
 			dependencies: ["684E33C50BD55A8E"]
@@ -1085,8 +1090,8 @@
 			]
 		}
 		{
-			x: -12.5d
-			y: 9.5d
+			x: -12.0d
+			y: 10.0d
 			id: "2DEFDA584C5773FA"
 			tasks: [{
 				id: "738D974CF5F9438E"
@@ -1116,8 +1121,10 @@
 			}]
 		}
 		{
-			x: -6.5d
-			y: 9.0d
+			title: "144hz, 4k Monitor"
+			x: -7.0d
+			y: 8.5d
+			subtitle: "Our rocket needs a GAMING MONITOR."
 			dependencies: ["2A95205D3A52622F"]
 			id: "356CE973D7F17F3C"
 			tasks: [{
@@ -1128,8 +1135,8 @@
 		}
 		{
 			title: "Shake up that soul"
-			x: -11.5d
-			y: 2.0d
+			x: -12.0d
+			y: 3.5d
 			description: [
 				"Both soul soil and soul sand can produce raw oil when centrifuged, with some extra byproducts provided which may prove to be useful..."
 				""
@@ -1156,8 +1163,8 @@
 			}]
 		}
 		{
-			x: -12.0d
-			y: 6.5d
+			x: -13.0d
+			y: 9.0d
 			dependencies: ["717A6825F23CC07F"]
 			id: "19E1C30DBB2B1AB2"
 			tasks: [{
@@ -1173,7 +1180,6 @@
 			subtitle: "Let's make some use out of this..."
 			dependencies: ["33DBA03CF188DF0B"]
 			optional: true
-			secret: true
 			id: "2E320829DF95EB8E"
 			tasks: [{
 				id: "1081B553AE56D482"
@@ -1201,7 +1207,6 @@
 			description: ["64 coal dust in an implosion compressor will create a diamond. Seems steep, but such is the price we pay for automation."]
 			dependencies: ["2E320829DF95EB8E"]
 			optional: true
-			secret: true
 			id: "6FC315C473D123F8"
 			tasks: [{
 				id: "4588380C7A069FFA"
@@ -1222,7 +1227,7 @@
 		{
 			icon: "minecraft:gold_block"
 			x: -10.0d
-			y: -2.5d
+			y: -3.5d
 			subtitle: "Always believe in your gold..."
 			description: ["Gold can be found in high amounts here. Either get your best mining gear and head underground or equip your finest weapons and head to a bastion."]
 			dependencies: ["253F29A00B4EA050"]
@@ -1236,61 +1241,21 @@
 		{
 			title: "When in Rome..."
 			x: -11.5d
-			y: -2.0d
-			subtitle: "(Just incase you didn't know)"
+			y: -3.0d
+			subtitle: "Respect the Piglin religion and they might not immediatly kill you. "
 			description: [
 				"{image:tconstruct:textures/block/storage/pig_iron/front.png width:100 height:100 align:1}"
-				"Respect the Piglin religion and they might not immediatly kill you. "
+				"The Piglins worship gold like a god. Show off your respect by holding a token of faith."
+				"A bar of gold as a body... nugget for a nose... two little pins for arms... sand it off and... yes, that should do it."
+				"Once you've established a common ground with your piggy kin, you may begin trading."
 			]
-			hide_dependency_lines: true
 			dependencies: ["3303D84A3F6FBBBA"]
 			id: "1873D12083BC1697"
-			tasks: [
-				{
-					id: "3067D6994FC6F534"
-					type: "item"
-					item: {
-						id: "minecraft:golden_helmet"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "72977C97E8890284"
-					type: "item"
-					item: {
-						id: "minecraft:golden_chestplate"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "7DB0925F3E3786DF"
-					type: "item"
-					item: {
-						id: "minecraft:golden_leggings"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "12F1DEBD6F87F141"
-					type: "item"
-					item: {
-						id: "minecraft:golden_boots"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "45E0F4CC4E15B053"
+				type: "item"
+				item: "passivepiglins:piglin_totem"
+			}]
 			rewards: [{
 				id: "13393CF16F799EB6"
 				type: "item"
@@ -1301,7 +1266,7 @@
 			title: "Automation of Lead/Ostrum"
 			icon: "ad_astra:ostrum_nugget"
 			x: -6.0d
-			y: -2.5d
+			y: -3.5d
 			description: [
 				"With access to mars stone, you are now able to use it below a cobblestone generator to form more mars stone, with a chance of conglomerate being formed too!"
 				""
@@ -1313,6 +1278,406 @@
 				id: "3C7D9A10113C6167"
 				type: "checkmark"
 			}]
+		}
+		{
+			title: "Counterfeit Coins"
+			x: -10.0d
+			y: -1.5d
+			subtitle: "They won't notice"
+			description: ["Toss a coin at a piglin, like a wish in a well. Piglins love themselves and gold. Expect big rewards."]
+			dependencies: ["1A99F6B849B12B09"]
+			id: "597DB82F2961DD9B"
+			tasks: [{
+				id: "3DC4A6F587D3B9A6"
+				type: "item"
+				item: "passivepiglins:piglin_coin"
+				count: 4L
+			}]
+			rewards: [{
+				id: "536F4C9ED2562C7B"
+				type: "item"
+				item: "tconstruct:piglin_head"
+			}]
+		}
+		{
+			title: "Artificial Inflation"
+			x: -13.0d
+			y: -1.5d
+			shape: "diamond"
+			subtitle: "You wolf, you-!!"
+			hide_dependency_lines: true
+			dependencies: ["597DB82F2961DD9B"]
+			hide: true
+			secret: true
+			id: "2E8C7043B3332651"
+			tasks: [{
+				id: "7883A02E68531B76"
+				type: "item"
+				item: "passivepiglins:piglin_coin"
+				count: 128L
+			}]
+			rewards: [{
+				id: "3D5DEBB4C99AF52D"
+				type: "item"
+				item: "passivepiglins:piglin_fortune"
+			}]
+		}
+		{
+			title: "Forged documents"
+			x: -11.5d
+			y: -2.0d
+			subtitle: "Google Piglin inflation to find out more!"
+			dependencies: ["1873D12083BC1697"]
+			id: "1A99F6B849B12B09"
+			tasks: [
+				{
+					id: "230347B1351B7F4D"
+					type: "item"
+					item: {
+						id: "tconstruct:large_plate"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:pig_iron"
+						}
+					}
+				}
+				{
+					id: "2FDEC18FDE1640D9"
+					type: "item"
+					item: "minecraft:piglin_banner_pattern"
+				}
+			]
+			rewards: [
+				{
+					id: "20E044E79A96E8F8"
+					type: "item"
+					item: "create:golden_sheet"
+				}
+				{
+					id: "4074359434685F6C"
+					type: "item"
+					item: "minecraft:gold_nugget"
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: 4.5d
+			dependencies: ["3A5D7E60EF1C3BC3"]
+			id: "646DB27B5FC10C71"
+			tasks: [{
+				id: "4F6EF5DCF73684C5"
+				type: "item"
+				item: "techreborn:vacuum_freezer"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 5.5d
+			dependencies: ["3A5D7E60EF1C3BC3"]
+			id: "102428C7923FD992"
+			tasks: [{
+				id: "5472F7BDF8DB830A"
+				type: "item"
+				item: "quarrymod:quarry"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 6.0d
+			dependencies: ["102428C7923FD992"]
+			id: "37E09C2412D9D971"
+			tasks: [{
+				id: "1417AF547C6665E3"
+				type: "item"
+				item: "quarrymod:drill_tube"
+			}]
+		}
+		{
+			title: "Societal Collapse"
+			x: -14.0d
+			y: 4.5d
+			shape: "diamond"
+			subtitle: "You... monster"
+			hide_dependency_lines: true
+			dependencies: ["2EC536106C5002D4"]
+			secret: true
+			id: "76676EF3CCB630EA"
+			tasks: [{
+				id: "2139D43A46B3AAD0"
+				type: "item"
+				item: "passivepiglins:piglin_fortune"
+				count: 64L
+			}]
+		}
+		{
+			x: -1.5d
+			y: 5.0d
+			dependencies: ["37E09C2412D9D971"]
+			id: "0BBB2FDEBB19AA3F"
+			tasks: [{
+				id: "44630E4CFE24FC18"
+				type: "item"
+				item: "quarrymod:range_extender_lvl1_upgrade"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 6.0d
+			dependencies: ["37E09C2412D9D971"]
+			id: "5F2CFE5D581F3D1F"
+			tasks: [{
+				id: "61B9E0F362AB8EB1"
+				type: "item"
+				item: "quarrymod:fortune_lvl1_upgrade"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 7.0d
+			dependencies: ["37E09C2412D9D971"]
+			id: "3B0E35CF9E78AD17"
+			tasks: [{
+				id: "0459F5CD55CEB991"
+				type: "item"
+				item: "quarrymod:silktouch_upgrade"
+			}]
+		}
+		{
+			title: "You spin my head right round..."
+			x: -10.0d
+			y: 3.5d
+			subtitle: "I don't like where this is going..."
+			description: [
+				"Methane has a strange effect on the mind and body. When inhaled, it fogs weak minds, making one suggestable to even the most preposterous of ideas."
+				"...I wonder if it has the same effect on Piglins?"
+				"It can be produced by placing lots of decomposable items in an Industrial Centrifuge, like 16 wood, as an example."
+			]
+			dependencies: ["673DC1F22D2F790D"]
+			id: "08920EA71AAD4519"
+			tasks: [{
+				id: "488BE1806C558808"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "techreborn:methane"
+					}
+				}
+			}]
+			rewards: [{
+				id: "14830FF635820F71"
+				type: "item"
+				item: "minecraft:oak_wood"
+				count: 16
+			}]
+		}
+		{
+			title: "Come heeeere, little piggy."
+			x: -13.0d
+			y: -2.5d
+			subtitle: "Observe a piglin in their natural habitat."
+			dependencies: ["1873D12083BC1697"]
+			id: "43D115AA6859432C"
+			tasks: [{
+				id: "245EF434B65DCD82"
+				type: "observation"
+				icon: "tconstruct:piglin_head"
+				timer: 0L
+				observe_type: 5
+				to_observe: "minecraft:piglin"
+			}]
+			rewards: [{
+				id: "1409016AFB3D0A43"
+				type: "item"
+				item: "tconstruct:piglin_head"
+			}]
+		}
+		{
+			x: -14.0d
+			y: 1.5d
+			dependencies: ["62545906EFC80BCD"]
+			id: "1059F7210729805D"
+			tasks: [{
+				id: "3ED65EA863181724"
+				type: "item"
+				item: "techreborn:gas_turbine"
+			}]
+		}
+		{
+			title: "Make CHANGES to this multiblock viability "
+			x: -8.0d
+			y: 8.0d
+			dependencies: ["0F0B9EF663EEC0C5"]
+			id: "0C46591AF37F2B16"
+			tasks: [{
+				id: "7BD424156CBC948A"
+				type: "item"
+				item: "techreborn:greenhouse_controller"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 6.5d
+			dependencies: ["3A5D7E60EF1C3BC3"]
+			id: "0F0B9EF663EEC0C5"
+			tasks: [{
+				id: "18304AE47A8B0843"
+				type: "item"
+				item: "techreborn:diamond_saw_blade"
+			}]
+		}
+		{
+			title: "Ultimate Andesite Generation"
+			x: -4.5d
+			y: -4.5d
+			description: [
+				"An andesite generator ontop of quadruple compressed Andesite will create a single compressed andesite, giving you 9x efficiency."
+				""
+				"Of course, you should have enough andesite for the rest of the pack if you're able to create quad compressed andesite. But I know some people will want to beat this challenge just for the satisfaction of it. What will you do?"
+			]
+			dependencies: ["253F29A00B4EA050"]
+			optional: true
+			id: "180A2D9D8EF9DC0A"
+			tasks: [{
+				id: "2CD743CBC9E54435"
+				type: "item"
+				item: "compressor:quadruple_compressed_andesite"
+			}]
+		}
+		{
+			title: "New Ingot!"
+			x: -7.5d
+			y: -2.0d
+			dependencies: ["253F29A00B4EA050"]
+			id: "08FBFF7A3465BF56"
+			tasks: [{
+				id: "71C8273AA9B3BBFC"
+				type: "item"
+				item: "ad_astra:ostrum_ingot"
+			}]
+		}
+		{
+			title: "This isn't like the rest..."
+			x: -7.5d
+			y: -1.0d
+			subtitle: "You don't use the press for this..."
+			description: [
+				""
+				"Do note ostrum plates involve using a compressor instead of a mechanical press. More and more plates will be created like this."
+			]
+			dependencies: ["08FBFF7A3465BF56"]
+			id: "2993E04DCB7B4EC4"
+			tasks: [{
+				id: "3C768C0BF038A29E"
+				type: "item"
+				item: "ad_astra:compressed_ostrum"
+			}]
+		}
+		{
+			title: "Trojan Horse"
+			x: -10.0d
+			y: 4.5d
+			subtitle: "They won't remember"
+			dependencies: [
+				"08920EA71AAD4519"
+				"5DE2E3396D1A4C7F"
+				"733A852EFCA7B36E"
+			]
+			id: "2EC536106C5002D4"
+			tasks: [{
+				id: "72A1CACD4E47FC8A"
+				type: "item"
+				item: "passivepiglins:piglin_fortune"
+			}]
+		}
+		{
+			x: -11.0d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["673DC1F22D2F790D"]
+			id: "5DE2E3396D1A4C7F"
+			tasks: [{
+				id: "6EDC765BD0E4CC63"
+				type: "item"
+				item: "createastral:golden_bowl"
+			}]
+		}
+		{
+			x: -11.0d
+			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["673DC1F22D2F790D"]
+			id: "733A852EFCA7B36E"
+			tasks: [{
+				id: "68640D2C5A470F2E"
+				type: "item"
+				item: "minecraft:crimson_fungus"
+			}]
+		}
+		{
+			x: -10.5d
+			y: 0.5d
+			dependencies: ["0373FACF0AB8113E"]
+			id: "17670EA862463524"
+			tasks: [{
+				id: "7DA4F9B550D8E8B6"
+				type: "item"
+				item: "minecraft:phantom_membrane"
+			}]
+		}
+		{
+			x: -9.5d
+			y: 9.5d
+			dependencies: ["7D98B3EA84A46227"]
+			id: "63A96438AB2F9506"
+			tasks: [{
+				id: "5F76C58E7AC52E4A"
+				type: "item"
+				item: "ad_astra:ostrum_engine"
+			}]
+		}
+		{
+			x: -10.5d
+			y: 11.5d
+			dependencies: ["22169902DA51D7A2"]
+			id: "482A444BAFDFC947"
+			tasks: [{
+				id: "0669418F0C2175E6"
+				type: "item"
+				item: {
+					id: "minecraft:elytra"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -9.5d
+			y: 10.5d
+			dependencies: ["63A96438AB2F9506"]
+			id: "22169902DA51D7A2"
+			tasks: [
+				{
+					id: "0AD9BE9531A47260"
+					type: "item"
+					item: "create:mechanical_crafter"
+				}
+				{
+					id: "79B22670326ABB55"
+					type: "item"
+					item: "computercraft:computer_advanced"
+				}
+				{
+					id: "676803260E70A0E6"
+					type: "item"
+					item: "minecraft:phantom_membrane"
+					count: 4L
+				}
+			]
 		}
 	]
 }

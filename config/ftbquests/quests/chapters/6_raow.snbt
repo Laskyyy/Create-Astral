@@ -38,7 +38,11 @@
 			x: 3.5d
 			y: 6.0d
 			subtitle: "A godly tinker material."
-			description: ["Extremely brittle, but so fast, and so upgradeable."]
+			description: [
+				"Extremely brittle, but so fast, and so upgradeable."
+				""
+				"Surround chromatic compounds with a LOT of light (you are going to need more than usual)"
+			]
 			dependencies: ["17794A6A366C8497"]
 			id: "1E93A90AEF614FA3"
 			tasks: [{
@@ -190,12 +194,19 @@
 				icon: "ad_astra:mercury_globe"
 				dimension: "ad_astra:mercury"
 			}]
-			rewards: [{
-				id: "3D48BAA2A9CB06DC"
-				type: "item"
-				item: "vinery:apple_cupcake"
-				count: 2
-			}]
+			rewards: [
+				{
+					id: "3D48BAA2A9CB06DC"
+					type: "item"
+					item: "vinery:apple_cupcake"
+					count: 2
+				}
+				{
+					id: "78F464E87101287C"
+					type: "xp"
+					xp: 300
+				}
+			]
 		}
 		{
 			title: "Ores of mercury"
@@ -288,10 +299,11 @@
 			}]
 		}
 		{
-			title: "Energy Flow Chips"
+			title: "Data floeee..."
 			x: 2.25d
 			y: 0.0d
 			shape: "square"
+			description: ["This chip is an in-between component used in multiple new recipes. Including storage and upgrades of your tech reborn tools."]
 			dependencies: [
 				"11F776AD4AEA326A"
 				"4347500C31C8D0DD"
@@ -332,11 +344,7 @@
 					id: "tconstruct:dagger"
 					Count: 1b
 					tag: {
-						tic_multipliers: {
-							"tconstruct:mining_speed": 0.75f
-							"tconstruct:durability": 0.75f
-							"tconstruct:attack_damage": 0.65f
-						}
+						Damage: 0
 						tic_stats: {
 							"tconstruct:attack_damage": 6.4674997f
 							"tconstruct:harvest_tier": "minecraft:netherite"
@@ -344,11 +352,12 @@
 							"tconstruct:mining_speed": 7.0125003f
 							"tconstruct:attack_speed": 2.1f
 						}
-						Damage: 0
-						tic_materials: [
-							"tconstruct:calorite"
-							"tconstruct:calorite"
-						]
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.75f
+							"tconstruct:durability": 0.75f
+							"tconstruct:attack_damage": 0.65f
+						}
+						tic_broken: 0b
 						tic_modifiers: [
 							{
 								name: "tconstruct:looting"
@@ -371,7 +380,10 @@
 								level: 1s
 							}
 						]
-						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:calorite"
+							"tconstruct:calorite"
+						]
 						tic_volatile_data: {
 							"tconstruct:duel_wielding": 1b
 						}
@@ -561,7 +573,13 @@
 			x: 4.5d
 			y: 6.0d
 			subtitle: "An unbreaking tinker material."
-			description: ["Marvelously strong, perfect for a tool binding or handle."]
+			description: [
+				"Marvelously strong, perfect for a tool binding or handle."
+				""
+				"Drop chromatic compound into the VOID."
+				""
+				"But wait, we haven't reached the end? I'm sure you can find an alternate way to access the deep abyss in other dimensions..."
+			]
 			dependencies: ["17794A6A366C8497"]
 			id: "69F63D2FA5384442"
 			tasks: [{
@@ -582,8 +600,15 @@
 			}]
 		}
 		{
+			title: "The Chromatic Compound"
 			x: 4.0d
 			y: 5.0d
+			subtitle: "A rather Create-ive material"
+			description: [
+				"This quirky little compound is used in the formation of  Refined Radiance and Shadow Steel."
+				""
+				"Mix some UwU matter with shimmer and watch the magic happen."
+			]
 			dependencies: ["00EB34849356498A"]
 			id: "17794A6A366C8497"
 			tasks: [{
@@ -812,18 +837,24 @@
 			title: "Calorite Pins"
 			x: 7.5d
 			y: -1.0d
-			dependencies: ["4329020373E27B1F"]
+			description: ["We've done this before. Roll some calorite nuggets into pins for application on our new circuit!"]
+			dependencies: [
+				"4329020373E27B1F"
+				"353DA088F5ABA8FE"
+			]
 			id: "3091F7AC37F848AD"
 			tasks: [{
 				id: "6B1169BFB796200B"
 				type: "item"
 				item: "createastral:calorite_pin"
+				count: 16L
 			}]
 		}
 		{
 			title: "Lithium!"
 			x: 7.5d
 			y: 1.0d
+			description: ["Finally, Lithium is used to add that last bit of power retention on the circuit."]
 			hide_dependency_lines: true
 			dependencies: ["7A4255522DA6FEB7"]
 			id: "77E9682ED4C5C74D"
@@ -840,8 +871,10 @@
 			}]
 		}
 		{
+			title: "Goofy ahhh machine parts."
 			x: 7.5d
 			y: 0.0d
+			description: ["Producing large amounts of machine parts should be an important goal to aim for, as many are required to create this tier of circuitry."]
 			hide_dependency_lines: true
 			dependencies: ["7A4255522DA6FEB7"]
 			id: "3F5054A2481E6F9C"
@@ -864,17 +897,21 @@
 			}]
 		}
 		{
+			title: "Remember this stuff?"
 			x: 1.0d
 			y: -3.0d
+			description: ["You've previously dealt with veridium processing before, however the alternate byproduct of this was Olivine dust."]
 			dependencies: ["39B529A749BEC970"]
 			id: "1FFE36A644FA5491"
 			tasks: [{
 				id: "644587A8C9C3587B"
 				type: "item"
 				item: "create:veridium"
+				count: 64L
 			}]
 		}
 		{
+			title: "Crush crush CRUSH!"
 			icon: "create:crushing_wheel"
 			x: 3.0d
 			y: -2.5d
@@ -886,19 +923,24 @@
 			}]
 		}
 		{
+			title: "Olive Doost"
 			x: 1.0d
 			y: -2.0d
+			description: ["16x of this dust can be processed into a new sheet, when compressed in a basin over a superheated blaze burner."]
 			dependencies: ["1B70BAF5B7B5ED0C"]
 			id: "0E0C76625B24032F"
 			tasks: [{
 				id: "0B734A87872139D8"
 				type: "item"
 				item: "techreborn:olivine_dust"
+				count: 16L
 			}]
 		}
 		{
+			title: "And plate 'em up"
 			x: 2.230952380952367d
 			y: -1.6107142857142804d
+			subtitle: "Squish that dust into a plate."
 			dependencies: ["0E0C76625B24032F"]
 			id: "4347500C31C8D0DD"
 			tasks: [{
@@ -915,7 +957,7 @@
 		{
 			x: 4.5d
 			y: 11.5d
-			subtitle: "The Warhead of Liberated Fabric"
+			subtitle: "The Warhead of Latent Fabricality"
 			description: [
 				"This nuclear weapons primer is DISABLED by default for your own sake, okay?"
 				""
@@ -966,6 +1008,215 @@
 				id: "76554531F0767414"
 				type: "item"
 				item: "ae2:cell_component_256k"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 2.0d
+			dependencies: ["3705B91C0D4EA2A0"]
+			id: "4D2FD7C206096DDE"
+			tasks: [{
+				id: "39EC4DCA50027009"
+				type: "item"
+				item: "techreborn:plasma_generator"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.5d
+			dependencies: ["3705B91C0D4EA2A0"]
+			id: "45B1D927E1ED0A14"
+			tasks: [{
+				id: "33BC38D3CE9B680B"
+				type: "item"
+				item: "techreborn:lightning_rod"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 4.0d
+			dependencies: ["797AC00CB4F6F9DC"]
+			id: "4684E4AEACEC9802"
+			tasks: [{
+				id: "52C11AF1F4E62D10"
+				type: "item"
+				item: "techreborn:fluid_replicator"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.0d
+			dependencies: ["00EB34849356498A"]
+			id: "797AC00CB4F6F9DC"
+			tasks: [{
+				id: "48A352E3EF4EDE21"
+				type: "item"
+				item: "techreborn:superconductor"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 3.5d
+			dependencies: ["4684E4AEACEC9802"]
+			id: "44C3E5DC30699807"
+			tasks: [{
+				id: "20607EEFA44779A4"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "techreborn:methane"
+					}
+				}
+				count: 16L
+			}]
+		}
+		{
+			x: 0.5d
+			y: 4.5d
+			dependencies: ["4684E4AEACEC9802"]
+			id: "759B2449831AA1B4"
+			tasks: [{
+				id: "4A114EFF034811C8"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "techreborn:mercury"
+					}
+				}
+				count: 16L
+			}]
+		}
+		{
+			title: "Shiny stuff."
+			x: 7.0d
+			y: 5.0d
+			dependencies: ["78932223283B0376"]
+			id: "1AFE0890A33EED11"
+			tasks: [{
+				id: "189F0E07F77D8B42"
+				type: "item"
+				item: "techreborn:platinum_dust"
+			}]
+		}
+		{
+			title: "Those are SOME MODIFIERS"
+			icon: {
+				id: "tconstruct:pickaxe"
+				Count: 1b
+				tag: {
+					tic_stats: {
+						"tconstruct:attack_damage": 1.5f
+						"tconstruct:harvest_tier": "minecraft:iron"
+						"tconstruct:durability": 419.0f
+						"tconstruct:mining_speed": 7.3499994f
+						"tconstruct:attack_speed": 1.14f
+					}
+					Damage: 0
+					tic_multipliers: { }
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:lustrous"
+							level: 3s
+						}
+						{
+							name: "tconstruct:piercing"
+							level: 1s
+						}
+					]
+					tic_materials: [
+						"tconstruct:platinum"
+						"tconstruct:platinum"
+						"tconstruct:platinum"
+					]
+					tic_persistent_data: {
+						upgrades: 3
+						abilities: 1
+					}
+				}
+			}
+			x: 8.0d
+			y: 5.0d
+			dependencies: ["1AFE0890A33EED11"]
+			id: "2AED9F2474279186"
+			tasks: [{
+				id: "73AFC0EAD6528117"
+				type: "item"
+				item: {
+					id: "tconstruct:tool_binding"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:platinum"
+					}
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: -2.5d
+			dependencies: ["4329020373E27B1F"]
+			id: "353DA088F5ABA8FE"
+			tasks: [{
+				id: "5FFA5443DC2B2BD4"
+				type: "item"
+				item: "ad_astra:calorite_ingot"
+			}]
+		}
+		{
+			title: "Standing here I realise."
+			icon: {
+				id: "techreborn:cell"
+				Count: 1b
+				tag: {
+					fluid: "kubejs:molten_calorite"
+				}
+			}
+			x: 8.0d
+			y: -3.5d
+			dependencies: ["353DA088F5ABA8FE"]
+			id: "57EBD8E7D0FD7B02"
+			tasks: [{
+				id: "269FE72C838E6864"
+				type: "checkmark"
+				title: "Cool!"
+			}]
+		}
+		{
+			title: "get out of my head."
+			x: 8.5d
+			y: -2.5d
+			subtitle: "GET OUT OF MY HEAD"
+			description: ["There is an impostor amogus."]
+			dependencies: ["353DA088F5ABA8FE"]
+			hide: true
+			id: "60838B72BF0FDFEE"
+			tasks: [{
+				id: "373DA66A9C5B9539"
+				type: "item"
+				item: "ad_astra:calorite_sliding_door"
+			}]
+		}
+		{
+			title: "Lizard idea"
+			x: 3.0d
+			y: -1.5d
+			shape: "gear"
+			description: [
+				"I suggested peridot cause it would be cool to use the fact both asurine and veridium can be crushed, but people are likely going to already be accumulating peridot due to copper farms. "
+				""
+				"I think what would be realy magic is if the plate itself (which can be renamed but can keep the texture) is made by mixing peridot dust with SOME other dust in a machine (I don't know Tech machines well enough to suggest one), and then super heated pressed."
+				""
+				"Heck, we're near the end game and it doesn't get much more complicated. It could involve mixing more than two dusts."
+			]
+			id: "66B8E55FFD261F0E"
+			tasks: [{
+				id: "6160C528738E3AE8"
+				type: "item"
+				item: "techreborn:uvarovite_dust"
 			}]
 		}
 	]

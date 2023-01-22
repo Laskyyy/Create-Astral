@@ -9,12 +9,12 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Beginning of The End"
-			x: 0.0d
+			title: "Becoming a God"
+			x: -3.0d
 			y: 0.0d
 			shape: "rsquare"
-			subtitle: "Content past this point is WIP!"
-			description: ["We plan to introduce more content in upcoming versions, keep updated on our discord to stay in the know :3"]
+			subtitle: "A densly condensed singularity, blooming with energy of a divine source."
+			description: ["This is what will allow you to start breaking off limits. Creating this is a tedious process, and involves a lot of materials. I hope your factory is ready for the task, good luck."]
 			dependencies: ["0CE73BAC9F3A9E03"]
 			size: 2.0d
 			id: "26F58F61AC2DD1B4"
@@ -25,11 +25,17 @@
 			}]
 		}
 		{
-			title: "Infinite Clockworks"
-			x: 3.0d
-			y: 7.5d
+			title: "You're Gonna Hate This"
+			x: 0.0d
+			y: 2.75d
 			shape: "gear"
-			subtitle: "Chapter 6 is a concept piece and is currently WIP"
+			subtitle: "Good luck."
+			description: [
+				""
+				"Complicated machinery beyond imagination."
+				"As if forged by gods themselves, this piece of technology allows you to break any and all limits, your imagination being the only limiting factor."
+				"Discover what is there to uncover about this, and you might find yourself trancending infinity soon."
+			]
 			dependencies: [
 				"26F58F61AC2DD1B4"
 				"676F4FAC0BC947B3"
@@ -47,8 +53,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 8.0d
+			x: 4.5d
+			y: 6.5d
 			dependencies: ["036A6EF5C44F8DBD"]
 			id: "4976C48661247CA4"
 			tasks: [{
@@ -58,8 +64,8 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: 6.0d
+			x: -3.5d
+			y: 4.5d
 			dependencies: ["036A6EF5C44F8DBD"]
 			id: "1F59AF68FD7090B6"
 			tasks: [{
@@ -69,8 +75,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 10.5d
+			x: -5.5d
+			y: 8.5d
 			dependencies: ["036A6EF5C44F8DBD"]
 			id: "7A5E7085AAA0BB0F"
 			tasks: [{
@@ -80,8 +86,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 7.0d
+			x: -4.0d
+			y: 5.5d
 			dependencies: ["036A6EF5C44F8DBD"]
 			id: "2888BB51B9CD0A10"
 			tasks: [{
@@ -91,30 +97,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 9.5d
-			dependencies: ["036A6EF5C44F8DBD"]
-			id: "487007CF93086307"
-			tasks: [{
-				id: "7BFBFF7A98EDA273"
-				type: "item"
-				item: "createaddition:creative_energy"
-			}]
-		}
-		{
-			x: 0.5d
-			y: 8.0d
-			dependencies: ["036A6EF5C44F8DBD"]
-			id: "75F940F55C032DF8"
-			tasks: [{
-				id: "1B4C22C25A1EBD31"
-				type: "item"
-				item: "powah:energy_cell_creative"
-			}]
-		}
-		{
-			x: 2.5d
-			y: 5.0d
+			x: -5.0d
+			y: 7.5d
 			dependencies: ["036A6EF5C44F8DBD"]
 			id: "57795BF3AD94A873"
 			tasks: [{
@@ -124,8 +108,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 5.5d
+			x: 3.5d
+			y: 4.5d
 			dependencies: ["036A6EF5C44F8DBD"]
 			id: "669D09B02C1FA9DB"
 			tasks: [{
@@ -135,19 +119,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 8.5d
-			dependencies: ["036A6EF5C44F8DBD"]
-			id: "1A82B0FC64A06700"
-			tasks: [{
-				id: "308D41DC2372DC8E"
-				type: "item"
-				item: "techreborn:creative_tank_unit"
-			}]
-		}
-		{
-			x: 4.0d
-			y: 9.5d
+			x: 5.0d
+			y: 7.5d
 			dependencies: ["036A6EF5C44F8DBD"]
 			id: "7C19FE2193AD94C8"
 			tasks: [{
@@ -163,8 +136,8 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 8.5d
+			x: -4.5d
+			y: 6.5d
 			dependencies: ["036A6EF5C44F8DBD"]
 			id: "4DE54BD7A93A1A1B"
 			tasks: [{
@@ -180,8 +153,8 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 10.5d
+			x: 5.5d
+			y: 8.5d
 			dependencies: ["036A6EF5C44F8DBD"]
 			id: "781CF5155D669521"
 			tasks: [{
@@ -197,8 +170,8 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 5.5d
+			x: -3.0d
+			y: 3.5d
 			dependencies: ["036A6EF5C44F8DBD"]
 			id: "5951B8AB838A51AF"
 			tasks: [{
@@ -214,8 +187,8 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 7.0d
+			x: 4.0d
+			y: 5.5d
 			dependencies: ["036A6EF5C44F8DBD"]
 			id: "5EB9D6A8B8CE8102"
 			tasks: [{
@@ -225,8 +198,8 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 5.0d
+			x: 3.0d
+			y: 3.5d
 			dependencies: ["036A6EF5C44F8DBD"]
 			id: "035A1BFD479C3A9D"
 			tasks: [{
@@ -236,10 +209,25 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 11.5d
-			subtitle: "Chapter 6 is a concept piece and is currently WIP"
-			dependencies: ["036A6EF5C44F8DBD"]
+			title: "Infinity"
+			x: 0.0d
+			y: 7.0d
+			subtitle: "Infinite Replication"
+			description: ["Your knowledge of the singularity has allowed you to transcend your knowledge, and your magnum opus has been created."]
+			dependencies: [
+				"7A5E7085AAA0BB0F"
+				"781CF5155D669521"
+				"4DE54BD7A93A1A1B"
+				"1F59AF68FD7090B6"
+				"035A1BFD479C3A9D"
+				"5EB9D6A8B8CE8102"
+				"4976C48661247CA4"
+				"57795BF3AD94A873"
+				"5951B8AB838A51AF"
+				"669D09B02C1FA9DB"
+				"7C19FE2193AD94C8"
+				"2888BB51B9CD0A10"
+			]
 			id: "7D483636DE2ED6A8"
 			tasks: [{
 				id: "2B2C2447ACEB5AA5"
@@ -248,101 +236,12 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 6.0d
-			dependencies: ["036A6EF5C44F8DBD"]
-			id: "3C4F610FB2E3CF3A"
-			tasks: [{
-				id: "2378C9AD2B8858CD"
-				type: "item"
-				item: {
-					id: "phonos:custom_music_disc"
-					Count: 1b
-					tag: {
-						MusicData: {
-							SoundId: "minecraft:empty"
-							ComparatorSignal: 1
-						}
-					}
-				}
-			}]
-		}
-		{
-			title: "Nanomachines, son."
-			x: 1.5d
-			y: -1.0d
-			subtitle: "Zero-Point Armor"
-			description: [
-				"Zero-Point armor offers"
-				"no defense just as it's"
-				"predeccessor, but instead"
-				"of flight it provides you"
-				"with massive regeneration."
-				"Hunger might be your weakness"
-				"though :))"
-			]
-			dependencies: ["26F58F61AC2DD1B4"]
-			id: "0C3A240BFDE3231F"
-			tasks: [{
-				id: "64004BC390004C8B"
-				type: "item"
-				title: "placeholder"
-				item: {
-					id: "tconstruct:plate_chestplate"
-					Count: 1b
-					tag: {
-						tic_modifiers: [ ]
-						tic_broken: 0b
-						tic_stats: {
-							"tconstruct:knockback_resistance": 0.1f
-							"tconstruct:armor": 7.0f
-							"tconstruct:durability": 480.0f
-							"tconstruct:armor_toughness": 2.0f
-						}
-						Damage: 0
-						tic_multipliers: { }
-						tic_persistent_data: {
-							upgrades: 1
-							abilities: 1
-							defense: 4
-						}
-					}
-				}
-			}]
-		}
-		{
-			title: "Galaxia"
-			x: -1.5d
-			y: -1.0d
-			subtitle: "The PTSD of a certain witch has just triggered."
-			description: [
-				"The Galaxia is a sword forged"
-				"to bring stability to the universe."
-				"It doesn't perform as well"
-				"as swords of the same tier,"
-				"however it deals monstrous"
-				"damage to hostile creatures."
-				""
-			]
-			dependencies: ["26F58F61AC2DD1B4"]
-			id: "0DADD3950895FC32"
-			tasks: [{
-				id: "5F57437169396FA2"
-				type: "item"
-				item: {
-					id: "ae2:certus_quartz_sword"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
-			}]
-		}
-		{
-			x: 7.0d
+			title: "Desolate Wasteland"
+			x: 3.0d
 			y: 0.0d
 			shape: "rsquare"
-			subtitle: "Chapter 6 is a concept piece and is currently WIP"
+			subtitle: "Imagine what could have been here before."
+			description: ["As you step into this land, your sensors fire off. There is breathable air here. As you take your helmet off, tall, black, and curious creatures you have seen before, seem to call this place home..."]
 			dependencies: [
 				"0CE73BAC9F3A9E03"
 				"6E93550DF0302208"
@@ -357,8 +256,14 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: 2.0d
+			title: "Otherwordly Shell"
+			x: 1.0d
+			y: 0.5d
+			subtitle: "This pink scale seems to have a strange aura around it."
+			description: [
+				""
+				"Gathering the shells of this strange creature gives you an idea. You've seen the creatures teleport before..."
+			]
 			dependencies: ["2DD0BFA67E116EEA"]
 			id: "699E6004AF2A9D0F"
 			tasks: [{
@@ -368,8 +273,14 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 3.0d
+			title: "Otherwordly Stone"
+			x: 1.5d
+			y: 1.5d
+			subtitle: "It's everywhere."
+			description: [
+				""
+				"The islands are made of this white rock with strange properties. Perhaps i can give it a use?"
+			]
 			dependencies: ["2DD0BFA67E116EEA"]
 			id: "0CB3F16B45888EC2"
 			tasks: [{
@@ -379,8 +290,11 @@
 			}]
 		}
 		{
-			x: 6.5d
-			y: 3.0d
+			title: "Cryptic Fruit"
+			x: 2.5d
+			y: 2.0d
+			subtitle: "Harness their power."
+			description: ["This fruit, when eaten, teleports you to a random place nearby. Can this be used in my research?"]
 			dependencies: ["2DD0BFA67E116EEA"]
 			id: "676F4FAC0BC947B3"
 			tasks: [{
@@ -390,10 +304,11 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: -4.0d
+			x: 0.0d
+			y: -3.0d
 			shape: "rsquare"
-			subtitle: "Chapter 6 is a concept piece and is currently WIP"
+			subtitle: "Transcending time."
+			description: ["This marvel of technology allows you to transcend time and space, and enter a new plane of existence. Be. Careful."]
 			dependencies: ["26F58F61AC2DD1B4"]
 			size: 2.0d
 			id: "6E93550DF0302208"
@@ -408,12 +323,14 @@
 			}]
 		}
 		{
+			title: "Infinity."
 			icon: "create:large_cogwheel"
-			x: 3.0d
-			y: 14.5d
+			x: 0.0d
+			y: 11.0d
 			shape: "heart"
 			description: ["laky this is your pack fill this"]
 			dependencies: ["7D483636DE2ED6A8"]
+			hide: true
 			size: 3.0d
 			id: "334C2F1D70DB1B79"
 			tasks: [{

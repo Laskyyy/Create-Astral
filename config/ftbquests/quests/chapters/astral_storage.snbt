@@ -127,6 +127,7 @@
 			}]
 		}
 		{
+			title: "Welcome to Applied Energistics 2!"
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -135,29 +136,26 @@
 				}
 			}
 			x: -5.0d
-			y: 1.0d
-			subtitle: "Locate a sky stone meteor on the Moon..."
+			y: 2.0d
+			shape: "pentagon"
+			subtitle: "That sky stone meteorite has rare circuits useful in inventory management!"
 			description: [
 				"Note, this tab is a vague guideline surrounding AE2. There are many guides online regarding this! "
 				""
 				"Future plans = establish an intricate guide into the mod"
 			]
-			dependencies: ["306D009F01634115"]
-			id: "326EB9A775B8D791"
-			tasks: [
-				{
-					id: "5FBB561F98D59504"
-					type: "structure"
-					title: "It fell from the sky,,,"
-					icon: "ae2:sky_stone_block"
-					structure: "ae2:meteorite"
-				}
-				{
-					id: "787E919EB1E067A0"
-					type: "item"
-					item: "ae2:sky_compass"
-				}
+			dependencies: [
+				"306D009F01634115"
+				"790B0567FF49110F"
 			]
+			hide: true
+			size: 2.0d
+			id: "326EB9A775B8D791"
+			tasks: [{
+				id: "50441F5A6EECD674"
+				type: "checkmark"
+				title: "Understood."
+			}]
 		}
 		{
 			title: "Basic Presses, Volume 3:"

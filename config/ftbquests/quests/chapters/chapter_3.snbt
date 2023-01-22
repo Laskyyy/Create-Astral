@@ -9,7 +9,7 @@
 	default_hide_dependency_lines: false
 	images: [
 		{
-			x: 10.5d
+			x: 11.0d
 			y: -2.5d
 			width: 1.0d
 			height: 1.0d
@@ -21,10 +21,10 @@
 			corner: false
 		}
 		{
-			x: 3.5d
-			y: -3.0d
-			width: 3.0d
-			height: 3.0d
+			x: 5.0d
+			y: -5.0d
+			width: 4.0d
+			height: 4.0d
 			rotation: 0.0d
 			image: "ad_astra:textures/painting/sun.png"
 			hover: [ ]
@@ -37,7 +37,7 @@
 		{
 			title: "Fluid Storage"
 			x: 0.0d
-			y: -1.0d
+			y: -2.0d
 			subtitle: "Tech Reborn tanks also exist later"
 			description: ["You won't be able to use Tinker's fluid tanks until owning a smeltery that comes later. However, Create tanks work just fine for storing liquids. They will require a pipe to input fluid, as buckets cannot be directly used on them."]
 			dependencies: ["70799237323247B7"]
@@ -56,8 +56,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 0.5d
+			x: -3.0d
+			y: -0.5d
 			shape: "rsquare"
 			subtitle: "The... fluid age?"
 			description: [
@@ -108,7 +108,7 @@
 		}
 		{
 			x: -3.0d
-			y: 1.5d
+			y: 1.0d
 			subtitle: "Don't eat this either"
 			description: [
 				"Bulk blast, or furnace smelt some grout to grab these bricks. These bricks are used in construction of most tinker's blocks."
@@ -141,7 +141,7 @@
 		}
 		{
 			x: 0.0d
-			y: 0.5d
+			y: -0.5d
 			shape: "rsquare"
 			subtitle: "Fluid movement"
 			description: [
@@ -176,7 +176,7 @@
 		{
 			title: "Things Heat Up"
 			icon: "minecraft:lava_bucket"
-			x: -4.0d
+			x: -4.5d
 			y: 3.0d
 			shape: "pentagon"
 			subtitle: "This is only the beginning"
@@ -189,7 +189,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["7354F2BFB2591ECF"]
-			size: 2.0d
+			size: 3.0d
 			id: "1F79F4D01B219D7E"
 			tasks: [{
 				id: "3209A6ED527120C7"
@@ -203,8 +203,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 0.5d
+			x: 4.0d
+			y: -0.5d
 			subtitle: "Compatible with tinkers fluids AND casting basin + table recipes instead of a faucet"
 			description: [
 				"The spout spits liquids onto stuff. Handy."
@@ -221,8 +221,8 @@
 		}
 		{
 			title: "New Water Toys"
-			x: 3.0d
-			y: 1.5d
+			x: 4.0d
+			y: 0.5d
 			subtitle: "Compatible with tinkers fluids"
 			description: [
 				"Item drains let you manually pour buckets, which can then be pumped into tanks or other fluid machines."
@@ -252,8 +252,8 @@
 			]
 		}
 		{
-			x: -3.5d
-			y: 0.0d
+			x: -4.5d
+			y: -1.0d
 			subtitle: "A note on tinkers integration"
 			description: [
 				"Tinkers faucets pour molten metals into casts and basins. They can operate from any create liquid holding block, such as Create's fluid tanks and filled Create basins!"
@@ -270,8 +270,8 @@
 		}
 		{
 			title: "Get Casting"
-			x: -4.0d
-			y: -1.0d
+			x: -5.5d
+			y: -2.0d
 			shape: "rsquare"
 			description: [
 				"Casting tables will allow you to cast fluids from a seared faucet into all sorts of shapes such as plates, ingots, tool heads, and more. Basins on the other hand, will let you cast fluids into blocks directly."
@@ -294,30 +294,23 @@
 					item: "tconstruct:seared_table"
 				}
 			]
-			rewards: [
-				{
-					id: "5FCAC2FEAE3BBD14"
-					type: "item"
-					item: "tconstruct:ingot_sand_cast"
-				}
-				{
-					id: "3F9FD4F760452A44"
-					type: "item"
-					item: "tconstruct:ingot_sand_cast"
-				}
-				{
-					id: "27B0718F511A03E3"
-					type: "item"
-					item: "tconstruct:ingot_sand_cast"
-				}
-			]
+			rewards: [{
+				id: "5FCAC2FEAE3BBD14"
+				type: "item"
+				item: "tconstruct:ingot_sand_cast"
+				count: 3
+			}]
 		}
 		{
 			title: "Find yourself some structures."
-			x: 4.0d
-			y: 1.5d
+			x: 5.0d
+			y: 0.5d
 			subtitle: "Will point the direction of the majority of structures."
-			description: ["Strongholds and some other structures with ingame ways to search are not valid targets."]
+			description: [
+				"Strongholds and some other structures with ingame ways to search are not valid targets."
+				""
+				"You can also find \"shimmer lakes\" with this, which may have some relevancy very soon..."
+			]
 			dependencies: ["17041A495A41EEFD"]
 			id: "33B14FCDB52879E4"
 			tasks: [{
@@ -332,8 +325,8 @@
 		}
 		{
 			title: "LETSGOOO"
-			x: 9.5d
-			y: 0.5d
+			x: 12.0d
+			y: -0.5d
 			shape: "hexagon"
 			subtitle: "Create is going ASTRAL"
 			description: ["Roll credits"]
@@ -406,8 +399,8 @@
 			}]
 		}
 		{
-			x: 9.5d
-			y: -2.5d
+			x: 12.0d
+			y: -3.5d
 			shape: "hexagon"
 			subtitle: "What is the nether?"
 			description: [
@@ -435,8 +428,8 @@
 		}
 		{
 			title: "An Astral Gemstone..."
-			x: 9.0d
-			y: -1.0d
+			x: 11.5d
+			y: -2.0d
 			shape: "hexagon"
 			subtitle: "Light the portal."
 			dependencies: ["00F3EA4A8FB5B11B"]
@@ -454,8 +447,8 @@
 			}]
 		}
 		{
-			x: 8.0d
-			y: 0.5d
+			x: 10.0d
+			y: -0.5d
 			subtitle: "To load oxygen into your suit however, some more specialised tools will be needed..."
 			dependencies: ["343B8B2BF76B1D3B"]
 			id: "4D7BFA8973D61425"
@@ -466,8 +459,8 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 0.5d
+			x: 9.0d
+			y: -0.5d
 			subtitle: "Custom Astral Multiblock!"
 			description: ["The electrolyser (not to be confused with the Tech Reborn one) can have water pumped into it and using only the power of redstone, extract oxygen at a very slow pace. This will assist in preparing youself to go to the moon"]
 			dependencies: [
@@ -488,8 +481,8 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: 0.5d
+			x: 5.0d
+			y: -0.5d
 			shape: "gear"
 			subtitle: "Electron Tube PTSD"
 			description: [
@@ -517,8 +510,8 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 0.5d
+			x: 8.0d
+			y: -0.5d
 			subtitle: "This will be terrible for the industrial revolution"
 			description: [
 				"Redstone Chips are at the bottom for circuitry, and are mostly specialized for audio equipment, such as those found in the phonos mod."
@@ -535,8 +528,8 @@
 		}
 		{
 			title: "Rose Gold"
-			x: 2.5d
-			y: -0.5d
+			x: 3.5d
+			y: -1.5d
 			subtitle: "What a nice alloy, I hope I dont need to make loads of it"
 			description: [
 				"Two seperate fluids - molten copper and molten gold - will need to be pumped into a mixing basin. A smart pipe may be necessary to extract the completed rose gold."
@@ -567,8 +560,8 @@
 		{
 			title: "Create: Astral"
 			icon: "ad_astra:moon_globe"
-			x: 11.5d
-			y: -1.0d
+			x: 14.0d
+			y: -2.0d
 			shape: "gear"
 			subtitle: "Chapter 3 unlock."
 			description: ["We can get much higher."]
@@ -620,13 +613,14 @@
 		}
 		{
 			title: "Shimmering Heights"
-			x: 6.0d
-			y: -1.0d
+			x: 8.0d
+			y: -2.0d
 			subtitle: "The Iconic Astral Branded Fluid"
 			description: [
 				"Shimmer can be produced using the recipes provided, and fully automated with glow ink sacs and amethyst."
 				"Shimmer can be found in underground shimmer lakes which can be detected with the structure compass, pumping a pool of that with a hose pulley will set you up for a long while."
 			]
+			min_required_dependencies: 1
 			dependencies: [
 				"267CD8D04921402E"
 				"586FA45ED205784F"
@@ -652,8 +646,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 0.5d
+			x: 3.0d
+			y: -0.5d
 			subtitle: "Ohoho, tiered casings"
 			description: [
 				"Copper casing is largely used for fluid machines, much like andesite casing for kinetic machines. Copper casing also have an easily overlooked practical application; check the ponder."
@@ -673,8 +667,8 @@
 		}
 		{
 			title: "Automate Copper!"
-			x: -5.5d
-			y: -1.0d
+			x: -7.5d
+			y: -2.0d
 			shape: "diamond"
 			subtitle: "I sure could use more copper"
 			description: [
@@ -687,8 +681,9 @@
 			tasks: [{
 				id: "749D797497A47853"
 				type: "item"
+				title: "4x64 Veridium"
 				item: "create:veridium"
-				count: 32L
+				count: 256L
 			}]
 			rewards: [
 				{
@@ -709,19 +704,20 @@
 			]
 		}
 		{
-			title: "Automate Zinc!"
-			x: -5.5d
-			y: 0.0d
+			title: "Automate Tin!"
+			x: -7.5d
+			y: -1.0d
 			shape: "diamond"
-			subtitle: "I want minerals for a healthy factory lifestyle"
+			subtitle: "its such an exciting material1111"
 			description: ["Asurine is a renewable source of zinc created by pouring water onto seared stone. Having a setup to turn excess clay into zinc can be nice."]
 			dependencies: ["1519A1EA2CFA6FB1"]
 			id: "67012541C365BA5A"
 			tasks: [{
 				id: "2DE68D06C55FDAA4"
 				type: "item"
+				title: "4x64 Asurine"
 				item: "create:asurine"
-				count: 32L
+				count: 256L
 			}]
 			rewards: [
 				{
@@ -744,7 +740,7 @@
 		{
 			title: "Efficient Alloy Production."
 			x: -1.0d
-			y: -3.0d
+			y: -4.0d
 			shape: "rsquare"
 			subtitle: "Andesite alloy can be produced at 1/3rd the cost if you opt to mix it into a liquid form and cast it into a solid!"
 			dependencies: ["6AEEE2B22E28945B"]
@@ -763,8 +759,8 @@
 		}
 		{
 			title: "Make some real tools now"
-			x: -3.5d
-			y: -2.0d
+			x: -4.5d
+			y: -3.5d
 			subtitle: "The good 3x3 stuff oh yeaaa"
 			description: [
 				"A tinker's anvil allows you to assemble tool parts into tools, much like the tinker's station. Unlike the tinker's table, you have access to fancier tools. 100% try crafting a mining hammer!"
@@ -790,8 +786,8 @@
 		}
 		{
 			title: "Advanced Tools"
-			x: -4.25d
-			y: -3.25d
+			x: -5.75d
+			y: -4.25d
 			subtitle: "Basic tools, bronze is pretty good all around"
 			dependencies: [
 				"5042E544D3181FAC"
@@ -845,8 +841,8 @@
 		{
 			title: "Get lucky"
 			icon: "minecraft:blue_dye"
-			x: -2.5d
-			y: -3.0d
+			x: -3.5d
+			y: -4.5d
 			dependencies: ["5042E544D3181FAC"]
 			optional: true
 			id: "1717E5063CC231DD"
@@ -866,8 +862,8 @@
 		{
 			title: "Get luckier"
 			icon: "minecraft:diamond"
-			x: -2.5d
-			y: -4.0d
+			x: -3.5d
+			y: -5.5d
 			dependencies: ["1717E5063CC231DD"]
 			optional: true
 			id: "1C10D7A2828DE436"
@@ -888,8 +884,8 @@
 		{
 			title: "Get real."
 			icon: "minecraft:deepslate_diamond_ore"
-			x: -2.5d
-			y: -5.0d
+			x: -3.5d
+			y: -6.5d
 			dependencies: ["1C10D7A2828DE436"]
 			optional: true
 			id: "25085C910155E06D"
@@ -910,8 +906,8 @@
 		}
 		{
 			title: "Shimmer Lakes..."
-			x: 5.0d
-			y: -1.0d
+			x: 7.0d
+			y: -2.0d
 			subtitle: "Spread across the overworld and moon, you might uncover a buried meteor filled with shimmer..."
 			description: ["Pumping this and shipping it off to your base might be wise, shimmer is a valuable resource to control."]
 			hide_dependency_lines: true
@@ -932,8 +928,8 @@
 		}
 		{
 			title: "HOW DO I MAKE THIS?!"
-			x: 7.5d
-			y: 1.5d
+			x: 9.5d
+			y: 0.5d
 			subtitle: "Multiblock Components"
 			description: [
 				"Bottom Layer, Front center electrolyser, 3x3 remaining copper casing"
@@ -942,7 +938,6 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["32B9EAE28E1C5D7A"]
-			hide: false
 			id: "3C26E1DEA0265C03"
 			tasks: [
 				{
@@ -967,7 +962,7 @@
 		}
 		{
 			x: 3.5d
-			y: -0.5d
+			y: -2.5d
 			subtitle: "Hey look it says gold chest but its pink!"
 			description: ["Yipee!!!"]
 			dependencies: ["0F4C452C9C9AB1B8"]
@@ -981,7 +976,7 @@
 		{
 			title: "Efficient Bronze Production"
 			x: 0.0d
-			y: -3.0d
+			y: -4.0d
 			shape: "rsquare"
 			subtitle: "Bronze can be produced at half the cost with the mixing recipe."
 			dependencies: ["6AEEE2B22E28945B"]
@@ -1001,7 +996,7 @@
 		{
 			icon: "tconstruct:gear_cast"
 			x: 0.0d
-			y: -4.0d
+			y: -5.0d
 			subtitle: "Transforming molten bronze into cogwheels requires casting into a gear or coin cast"
 			description: [
 				"As a reminder, you can supply a faucet with a redstone signal to have it continously poor, and a hopper will suffice for moving a cooled alloy into an inventory."
@@ -1132,7 +1127,7 @@
 			}]
 		}
 		{
-			x: 2.0d
+			x: 3.0d
 			y: 2.5d
 			subtitle: "Whaaaaat, sequenced assembly already?"
 			description: [
@@ -1204,32 +1199,18 @@
 				type: "item"
 				item: "create:goggles"
 			}]
-			rewards: [
-				{
-					id: "16AA8D003760C7CC"
-					type: "item"
-					item: "create:cogwheel"
-					count: 16
-				}
-				{
-					id: "3A3B21C6CDE08010"
-					type: "item"
-					item: "create:gearbox"
-					count: 12
-				}
-				{
-					id: "65E2D30DE201400C"
-					type: "item"
-					item: "create:stressometer"
-					count: 3
-				}
-			]
+			rewards: [{
+				id: "65E2D30DE201400C"
+				type: "item"
+				item: "create:stressometer"
+				count: 3
+			}]
 		}
 		{
 			title: "The World Revolving"
 			icon: "create:mechanical_bearing"
-			x: 3.5d
-			y: 6.0d
+			x: 4.0d
+			y: 7.0d
 			subtitle: "Automatic Farming"
 			description: [
 				"Mechanical Bearings can have a structure glued to their top. When activated, they will spin the structure around, and any buzzsaw, harvester, drill, etc., will interact with the environment (and free of SU cost, too!)"
@@ -1251,14 +1232,14 @@
 					id: "2F151B54216622AA"
 					type: "item"
 					item: "create:linear_chassis"
-					count: 8L
+					count: 9L
 				}
 			]
 		}
 		{
 			title: "Industrial Agriculture"
-			x: 4.5d
-			y: 5.5d
+			x: 5.0d
+			y: 6.5d
 			subtitle: "The days of manual harvesting are over."
 			description: ["The harvester is used to harvest crops automatically. Kelp is of particular concern to us here but they work on wheat, beetroots, farmer delight's foods, etc."]
 			dependencies: ["6C28C7FB221EA517"]
@@ -1278,8 +1259,8 @@
 			]
 		}
 		{
-			x: 5.5d
-			y: 5.5d
+			x: 6.0d
+			y: 6.5d
 			shape: "diamond"
 			subtitle: "I'm addicted to these belt things..."
 			description: ["Having wet kelp doesn't help you much. Before kelp goes to their final destination, it'd be best if you bulk blast it on the way."]
@@ -1300,8 +1281,8 @@
 		{
 			title: "Industrial Logging"
 			icon: "create:mechanical_saw"
-			x: 4.5d
-			y: 6.5d
+			x: 5.0d
+			y: 7.5d
 			subtitle: "Remember the mechanical saw from last chapter?"
 			description: [
 				"If you put them on a moving contraption and they should do exacrtly what you'd expect."
@@ -1339,8 +1320,8 @@
 		}
 		{
 			title: "Mass Wood Production"
-			x: 5.5d
-			y: 6.5d
+			x: 6.0d
+			y: 7.5d
 			shape: "diamond"
 			subtitle: "No more tedious tree-chopping excursions"
 			description: [
@@ -1370,12 +1351,12 @@
 			}]
 		}
 		{
-			title: "Automate Tin"
-			icon: "techreborn:tin_ingot"
-			x: -1.0d
-			y: 6.0d
+			title: "Automate Zinc"
+			icon: "create:zinc_ingot"
+			x: -1.5d
+			y: 7.0d
 			shape: "diamond"
-			subtitle: "its such an exciting material1111"
+			subtitle: "I want minerals for a healthy factory lifestyle"
 			description: ["Washing red sand rarely produces gold and dead bushes. There's no way to automate red sand production itself at this point, so all you can really do is use up the red sand you have lying around... If you have any..."]
 			dependencies: ["38814494AB07C2D8"]
 			id: "60906B723CCE6D10"
@@ -1388,8 +1369,8 @@
 				{
 					id: "56B00DC3D1BC24B5"
 					type: "item"
-					title: "8x64 Tin Nuggets"
-					item: "techreborn:tin_nugget"
+					title: "8x64 Zinc Nuggets"
+					item: "create:zinc_nugget"
 					count: 512L
 				}
 				{
@@ -1417,8 +1398,8 @@
 		{
 			title: "Automate Iron + Flint"
 			icon: "minecraft:iron_ingot"
-			x: -0.5d
-			y: 5.5d
+			x: -1.0d
+			y: 6.5d
 			shape: "diamond"
 			subtitle: "You may have built this dozens of times already"
 			description: ["Washing gravel produces the occasional iron nugget and flint. Gravel can be made by milling cobblestone, and cobblestone can be made from a cobblestone generator..."]
@@ -1462,8 +1443,8 @@
 		{
 			title: "I NEED CLAY"
 			icon: "minecraft:clay_ball"
-			x: -0.5d
-			y: 6.5d
+			x: -1.0d
+			y: 7.5d
 			shape: "diamond"
 			subtitle: "Based Greg"
 			description: [
@@ -1489,8 +1470,9 @@
 				{
 					id: "0E85B9A7C227F319"
 					type: "item"
+					title: "16x64 Clay Balls"
 					item: "minecraft:clay_ball"
-					count: 256L
+					count: 1028L
 				}
 			]
 			rewards: [
@@ -1549,9 +1531,9 @@
 			title: "The Basis of Automation"
 			icon: "create:mechanical_arm"
 			x: 1.5d
-			y: 6.0d
+			y: 7.0d
 			shape: "gear"
-			subtitle: "Dreams of large-scale production"
+			subtitle: "Chapter 2.5 Unlock"
 			description: [
 				"The true power of the Create mod isn't in the new crafting techniques it provides, but the ability to automate resources."
 				""
@@ -1579,7 +1561,7 @@
 		}
 		{
 			icon: "create:track"
-			x: 3.0d
+			x: 4.0d
 			y: 3.0d
 			shape: "diamond"
 			subtitle: "Automate Tracks"
@@ -1625,7 +1607,7 @@
 			title: "Automate Mining Itself"
 			icon: "create:mechanical_drill"
 			x: 1.5d
-			y: 9.0d
+			y: 10.5d
 			subtitle: "Build a tunnelbore!"
 			description: [
 				"Tunnelbores will mine tunnels for you. They're stupidly complicated, and its highly, highly recommended you watch a YouTube guide."
@@ -1718,7 +1700,7 @@
 		}
 		{
 			x: 1.5d
-			y: 8.0d
+			y: 9.5d
 			subtitle: "A more complicated alternative to mechanical bearings"
 			description: [
 				"The cart assembler is special: you can create a moving contraption that operates on minecart railway. They're clunkier to use than rotating farms, but hey, its still an option."
@@ -1739,7 +1721,7 @@
 		{
 			title: "Necessary Contraption Components"
 			x: 2.5d
-			y: 7.0d
+			y: 8.0d
 			subtitle: "I seen that glue before!"
 			description: [
 				"Certain auotmation process involve creating moving contraptions, such as resources like food and trees."
@@ -1773,8 +1755,8 @@
 		}
 		{
 			title: "Automate Fuel"
-			x: 6.5d
-			y: 6.0d
+			x: 7.0d
+			y: 7.0d
 			shape: "diamond"
 			subtitle: "Trust me. Automate any of these three and fuel will never be an issue again."
 			description: [
@@ -1846,8 +1828,8 @@
 		}
 		{
 			title: "Reusable Casts"
-			x: -5.0d
-			y: -2.0d
+			x: -7.0d
+			y: -3.5d
 			subtitle: "Sand is cool but it goes away"
 			description: ["Gold casts are reusable. To create one, place an item in the shape of the cast you want - say, a copper axe head made from a pattern - and pour molten gold over it. This will consume the item you're pouring over, but an infinitely reusable gold cast will be made in its place."]
 			dependencies: ["1519A1EA2CFA6FB1"]
@@ -1867,8 +1849,8 @@
 		}
 		{
 			title: "Collect Them All"
-			x: -6.0d
-			y: -2.0d
+			x: -8.0d
+			y: -3.5d
 			subtitle: "20 in total!"
 			dependencies: ["7856BCA1DB363174"]
 			id: "346D47B32354428D"
@@ -1991,8 +1973,8 @@
 		{
 			title: "Get Fake"
 			icon: "minecraft:diamond_block"
-			x: -2.5d
-			y: -6.0d
+			x: -3.5d
+			y: -7.5d
 			dependencies: ["25085C910155E06D"]
 			optional: true
 			id: "3F331B0DAE1062E8"
@@ -2019,7 +2001,7 @@
 		{
 			title: "Harness the Power of Wind"
 			icon: "create:sail_frame"
-			x: -5.0d
+			x: -7.0d
 			y: 2.0d
 			subtitle: "An Alternative to Watermills"
 			description: [
@@ -2079,7 +2061,7 @@
 			title: "Lava Generation"
 			icon: "minecraft:lava_bucket"
 			x: 1.0d
-			y: -3.0d
+			y: -4.0d
 			shape: "rsquare"
 			subtitle: "Carrying buckets from underground's annoying, isn't it?"
 			description: [
@@ -2115,11 +2097,11 @@
 		{
 			title: "Infinite Lava"
 			x: 1.0d
-			y: -4.0d
+			y: -5.0d
 			shape: "diamond"
 			subtitle: "You can invest into an even easier lava source..."
 			description: [
-				"Hose pulleys in Create have a special property: if they suck up fluid from a source of great than 10,000 blocks, it will consider the source infinite."
+				"Hose pulleys in Create have a special property: if they suck up lava, water, or chocolate from a source greater than 10,000 blocks, it will consider the source infinite."
 				""
 				"Such huge artificial lava lakes can be made from pumping generate lava into a large lake. It will take awhile - and may not even be necessary to do it - But the reward is literally infinite lava."
 				""
@@ -2150,7 +2132,7 @@
 		}
 		{
 			x: 1.0d
-			y: 1.5d
+			y: 0.5d
 			dependencies: ["70799237323247B7"]
 			id: "31E69CA962A58692"
 			tasks: [{
@@ -2160,8 +2142,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: 1.5d
+			x: 6.0d
+			y: 0.5d
 			subtitle: "Seeing how much stock your factories have produced is so satisfying"
 			description: [
 				"Display Boards will show text and numbers on a big screen. That's nothing fancy, but what's really special is that display links can attach to an inventory or some machines, and feed data live to the display board. This includes inventory information."
@@ -2201,8 +2183,8 @@
 		}
 		{
 			title: "Max Power Windmill"
-			x: -6.0d
-			y: 2.5d
+			x: -7.5d
+			y: 3.0d
 			subtitle: "Simple Excess Power"
 			description: [
 				"Operate a windmill with 128 attached sail blocks."
@@ -2234,8 +2216,8 @@
 		{
 			title: "A Note on Trains"
 			icon: "create:railway_casing"
-			x: 3.5d
-			y: 8.0d
+			x: 4.0d
+			y: 9.5d
 			subtitle: "What if we slapped buzzsaws on a train?"
 			description: [
 				"Remember in chapter 1 how you used glue to assemble trains? Isn't that similiar to what you do with a cart assembler and mechanical bearing?"
@@ -2255,7 +2237,7 @@
 		{
 			title: "Cast to Alloy"
 			x: -1.0d
-			y: -4.0d
+			y: -5.0d
 			subtitle: "Transforming mixtures into usable alloys require casting it into an ingot cast."
 			description: ["As a reminder, you can supply a faucet with a redstone signal to have it continously poor, and a hopper will suffice for moving a cooled alloy into an inventory."]
 			dependencies: ["5A1B85C3323DDBD1"]
@@ -2268,8 +2250,8 @@
 		}
 		{
 			title: "Gimme That Rubber"
-			x: 4.5d
-			y: 7.5d
+			x: 6.0d
+			y: 8.5d
 			shape: "diamond"
 			subtitle: "I barely have enough!"
 			description: [
@@ -2277,7 +2259,7 @@
 				""
 				"Alternatively, if you want to be naturalistic, it is possible to automate sap with deployers carrying treetaps. It's less likely to be more efficient and certainly not simpler, but its the eco-friendly way!"
 			]
-			dependencies: ["34F33F38F8BF2B22"]
+			dependencies: ["726EED16A080CFC4"]
 			id: "6C24E4B83E454EC5"
 			tasks: [{
 				id: "364A0657277272C9"
@@ -2294,8 +2276,8 @@
 		}
 		{
 			title: "The Possibilties of Automation"
-			x: 0.0d
-			y: 7.5d
+			x: -0.5d
+			y: 9.0d
 			subtitle: "Just to give you an idea...."
 			description: [
 				"The possibilities may be larger than you think. Here are some examples just to give you an idea of the possibilities, whether available now or later:"
@@ -2312,8 +2294,8 @@
 		}
 		{
 			title: "Better think fast!"
-			x: 6.0d
-			y: -2.0d
+			x: 8.0d
+			y: -3.0d
 			subtitle: "Speed up your pathing."
 			description: ["Andesite Paving grants a minor speed boost when travelling over it. "]
 			dependencies: ["00F3EA4A8FB5B11B"]
@@ -2323,6 +2305,26 @@
 				type: "item"
 				item: "doodads:asphalt"
 				count: 32L
+			}]
+		}
+		{
+			title: "Way Better Andesite Yields"
+			x: -6.0d
+			y: 1.0d
+			subtitle: "Just get andesite"
+			description: ["Doing a lava/water generator over TRIPLED compressed andesite increases your gains all the way to 100% andesite. That being said, triple compressed andesite might be more andesite than you realize..."]
+			dependencies: ["1F79F4D01B219D7E"]
+			id: "5098C35DB6D98FC9"
+			tasks: [{
+				id: "5351546C54699888"
+				type: "item"
+				item: "compressor:triple_compressed_andesite"
+			}]
+			rewards: [{
+				id: "2E5B99F20A7A3E4B"
+				type: "item"
+				item: "createastral:andesite_alloy_block"
+				count: 8
 			}]
 		}
 	]

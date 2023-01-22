@@ -7,18 +7,32 @@
 	icon: "minecraft:furnace"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	images: [{
-		x: -5.0d
-		y: 6.5d
-		width: 6.0d
-		height: 3.5d
-		rotation: 0.0d
-		image: "createastral:textures/item/logos_binted.png"
-		hover: [ ]
-		click: ""
-		dev: false
-		corner: false
-	}]
+	images: [
+		{
+			x: -5.0d
+			y: 6.5d
+			width: 6.0d
+			height: 3.5d
+			rotation: 0.0d
+			image: "createastral:textures/item/logos_binted.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -0.5d
+			y: 0.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/gui/presets/isles.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
 	quests: [
 		{
 			title: "A knight in shining copper."
@@ -168,9 +182,9 @@
 			y: 10.0d
 			subtitle: "Create your first tinker tool"
 			description: [
-				"Now that you have mining tools, nothing is stopping you from skipping ahead and making a smelter with seared bricks. For this truly curious, the rest of the tinker construct's guides are available. Good luck if you want to skip around!"
+				"Now that you have mining tools, nothing is stopping you from skipping ahead and making a smelter with seared bricks. Until then, this encyclopedia will update as you progress in Tinker's Construct, so keep it on hand. We've also thrown in an interesting book about gadgets for you to look around!"
 				""
-				"Another than that, time to start the other half of \"Minecraft\"!"
+				"Other than that, time to start the other half of \"Minecraft\"!"
 				""
 				"Oh, important: Pressing the (V) key (default binding) will switch better combat compatible tools between attacking mode and use mode. Perfect for combat situations."
 			]
@@ -188,16 +202,6 @@
 			}]
 			rewards: [
 				{
-					id: "0D49D0A6E2FEB974"
-					type: "item"
-					item: "tconstruct:puny_smelting"
-				}
-				{
-					id: "6F4D4CD528623798"
-					type: "item"
-					item: "tconstruct:mighty_smelting"
-				}
-				{
 					id: "660CC63F25D4B6C5"
 					type: "item"
 					item: "tconstruct:tinkers_gadgetry"
@@ -206,12 +210,6 @@
 					id: "540BF27B86E16E58"
 					type: "item"
 					item: "tconstruct:encyclopedia"
-				}
-				{
-					id: "1D4C6C09C4204360"
-					type: "item"
-					item: "tconstruct:pattern"
-					count: 16
 				}
 			]
 		}
@@ -451,7 +449,7 @@
 			x: -7.8078231292516875d
 			y: 13.244897959183653d
 			shape: "pentagon"
-			subtitle: "Take your pick of crafting station and begin the game."
+			subtitle: "Take your pick of crafting station and begin your journey."
 			size: 2.5d
 			min_required_tasks: 1
 			id: "0BCED0F8481E0C21"
@@ -483,23 +481,7 @@
 					id: "033BA9F7707381D5"
 					type: "item"
 					item: "minecraft:torch"
-					count: 16
-				}
-				{
-					id: "097517C279C0B8C0"
-					type: "item"
-					item: "minecraft:wheat_seeds"
-					count: 16
-				}
-				{
-					id: "323745EE2A4A8F67"
-					type: "item"
-					item: "minecraft:oak_sapling"
-				}
-				{
-					id: "74A0DFC4B5517744"
-					type: "item"
-					item: "minecraft:dirt"
+					count: 3
 				}
 			]
 		}
@@ -520,7 +502,7 @@
 				id: "0A56270F3A56875F"
 				type: "item"
 				item: "tconstruct:pattern"
-				count: 12L
+				count: 3L
 			}]
 			rewards: [{
 				id: "1D969A2DAF5418C8"
@@ -1070,7 +1052,7 @@
 			y: 8.0d
 			subtitle: "Give me mini shulker boxes for dedicated items"
 			description: [
-				"The packsage crafter will allow you to craft packsages with a copper ingot, a dye, and all manners of common decorative materials."
+				"The package crafter will allow you to craft packsages with a copper ingot, a dye, and all manners of common decorative materials."
 				""
 				"These packages can hold 8 stacks. However, they can be broken and moved around while keeping all their items, like a shulker box, and are cheap to produce."
 				""
@@ -1162,18 +1144,12 @@
 					}
 				}
 			]
-			rewards: [
-				{
-					id: "358BBCC53DC4B6AF"
-					type: "item"
-					item: "minecraft:nautilus_shell"
-				}
-				{
-					id: "546B41C75CBB7182"
-					type: "item"
-					item: "minecraft:heart_of_the_sea"
-				}
-			]
+			rewards: [{
+				id: "358BBCC53DC4B6AF"
+				type: "item"
+				item: "minecraft:nautilus_shell"
+				count: 5
+			}]
 		}
 		{
 			title: "I'd rather be tractor."
@@ -1182,9 +1158,9 @@
 				Count: 1b
 				tag: {
 					Automobile: {
-						engine: "automobility:stone"
-						frame: "automobility:yellow_tractor"
 						wheels: "automobility:standard"
+						frame: "automobility:yellow_tractor"
+						engine: "automobility:stone"
 					}
 				}
 			}
@@ -1272,9 +1248,9 @@
 						Count: 1b
 						tag: {
 							Automobile: {
-								engine: "automobility:stone"
-								frame: "automobility:yellow_tractor"
 								wheels: "automobility:standard"
+								frame: "automobility:yellow_tractor"
+								engine: "automobility:stone"
 							}
 						}
 					}
@@ -1803,8 +1779,8 @@
 								realCount: 0
 							}
 							PackageStyle: {
-								inner: "minecraft:oak_planks"
 								frame: "minecraft:oak_log"
+								inner: "minecraft:oak_planks"
 								color: 0
 							}
 						}
@@ -1996,6 +1972,54 @@
 					id: "5D50E36D0CF39183"
 					type: "item"
 					item: "vinery:kitchen_sink"
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			shape: "gear"
+			id: "015D335E4E1C03B9"
+			tasks: [
+				{
+					id: "6E4912B976967182"
+					type: "item"
+				}
+				{
+					id: "6537C0F28B10DF6D"
+					type: "item"
+					title: "Any #c:slimeballs"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "c:slimeballs"
+						}
+					}
+				}
+				{
+					id: "510335B826661DB1"
+					type: "item"
+					title: "Any #tconstruct:slime_block"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tconstruct:slime_block"
+						}
+					}
+				}
+				{
+					id: "425FA88642481400"
+					type: "item"
+					title: "Any #computercraft:monitor"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "computercraft:monitor"
+						}
+					}
 				}
 			]
 		}

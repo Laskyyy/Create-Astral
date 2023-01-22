@@ -22,7 +22,7 @@
 	quests: [
 		{
 			x: -2.5d
-			y: 10.5d
+			y: 10.0d
 			subtitle: "A new metal?"
 			description: [
 				"Combine copper and tin in a smithing table to get the most primitive of alloys."
@@ -63,7 +63,7 @@
 					id: "3CB54526940AEDD0"
 					type: "item"
 					item: "create:cogwheel"
-					count: 8L
+					count: 6L
 				}
 				{
 					id: "6FD1313A8AB88A3D"
@@ -77,26 +77,25 @@
 					id: "625B90CB642D9A4B"
 					type: "item"
 					item: "create:large_cogwheel"
-					count: 3
 				}
 				{
 					id: "6D1214A71440BF3E"
 					type: "item"
 					item: "create:cogwheel"
-					count: 16
+					count: 6
 				}
 				{
 					id: "3A868A8C6AF3B78A"
 					type: "item"
 					item: "create:shaft"
-					count: 16
+					count: 8
 				}
 			]
 		}
 		{
 			icon: "create:mechanical_press"
 			x: -2.0d
-			y: 4.5d
+			y: 3.0d
 			subtitle: "Watch your hands"
 			description: ["Slap a depot below a powered press, place some stuff on it, and watch the magic happen!"]
 			dependencies: [
@@ -126,7 +125,7 @@
 		}
 		{
 			x: -2.0d
-			y: 3.0d
+			y: 0.5d
 			description: ["Sheets! Yes! With these there are new options for create blocks. Machines like drills that will assist in mining the first few diamonds or mechanical saws to chop down huge amounts of logs instantaneously are now available."]
 			dependencies: ["6499CD689863283D"]
 			id: "4EB4838CCED125E2"
@@ -151,40 +150,26 @@
 			]
 		}
 		{
-			x: -3.0d
-			y: 3.0d
-			subtitle: "All that for a drop of iron."
-			description: [""]
+			title: "Like a Hopper but Super Vertical"
+			x: -3.5d
+			y: 0.5d
+			description: [
+				""
+				"Chutes can drops items in limited stacks from a high inventory to a lower inventory. It can be handy for getting one item to the next machine."
+			]
 			dependencies: ["4EB4838CCED125E2"]
 			optional: true
 			id: "122CDE9C00B5CA06"
 			tasks: [{
-				id: "36322B5F310191BE"
+				id: "7A09C3BFCA29B6B3"
 				type: "item"
-				item: {
-					id: "minecraft:iron_chestplate"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
-			}]
-			rewards: [{
-				id: "2CBC687393EAC648"
-				type: "item"
-				item: {
-					id: "mcdw:spear_spear"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
+				item: "create:chute"
 			}]
 		}
 		{
 			title: "Andesite alloy!"
 			x: -1.5d
-			y: 9.5d
+			y: 9.0d
 			subtitle: "More efficient with mixers!"
 			description: ["The quintessential create crafting component. You're better off building up a supply now."]
 			dependencies: ["76704C59FAFCD2E7"]
@@ -193,6 +178,7 @@
 				id: "6F6521AD31ABDEDB"
 				type: "item"
 				item: "create:andesite_alloy"
+				count: 3L
 			}]
 			rewards: [{
 				id: "15A8D721E715AA17"
@@ -208,7 +194,7 @@
 		}
 		{
 			x: -2.5d
-			y: 9.5d
+			y: 9.0d
 			subtitle: "Better than a copper sheet"
 			description: ["Slice a bronze ingot in two using a stonecutter. Two for one, what a steal!"]
 			dependencies: ["5268B7CCEDC48422"]
@@ -221,7 +207,7 @@
 		}
 		{
 			x: -3.0d
-			y: 1.5d
+			y: -1.0d
 			subtitle: "Drills go brrr"
 			description: [
 				"This'll be the most consistent method of grabbing diamonds before upgrading your first tinker tool with a diamond gem."
@@ -243,8 +229,8 @@
 			}]
 		}
 		{
-			x: -5.5d
-			y: 4.5d
+			x: -6.0d
+			y: 3.0d
 			shape: "rsquare"
 			subtitle: "Trains? Trains!!!"
 			description: [
@@ -274,16 +260,22 @@
 					count: 5
 				}
 				{
-					id: "5630FA2B5DB4EC30"
+					id: "72B7A5CE6D4F4827"
 					type: "item"
 					item: "dustrial_decor:industrial_iron_billet"
-					count: 64
+					count: 16
+				}
+				{
+					id: "16A97DA1DA562EFF"
+					type: "item"
+					item: "dustrial_decor:cast_iron_billet"
+					count: 16
 				}
 			]
 		}
 		{
-			x: -7.0d
-			y: 2.0d
+			x: -7.5d
+			y: 0.5d
 			subtitle: "TRAINS"
 			description: [
 				"There will be a cheaper way to produce tracks in the near future."
@@ -306,8 +298,8 @@
 			}]
 		}
 		{
-			x: -7.0d
-			y: 4.5d
+			x: -7.5d
+			y: 3.0d
 			description: ["Casing used in train creation, and some other misc. recipes. Once again, applies the same as other casings, this time using sturdy sheet and an andesite casing as a base."]
 			dependencies: ["0A5DC78719B9A244"]
 			id: "1579C73B735F06F8"
@@ -323,8 +315,8 @@
 			}]
 		}
 		{
-			x: -9.5d
-			y: 2.0d
+			x: -10.0d
+			y: 0.5d
 			shape: "rsquare"
 			subtitle: "TRAAAAAAAINS"
 			description: [
@@ -348,22 +340,16 @@
 			}]
 			rewards: [
 				{
-					id: "2732F8299290593F"
-					type: "item"
-					item: "dustrial_decor:cast_iron_billet"
-					count: 64
-				}
-				{
 					id: "190791854AEC801D"
 					type: "item"
 					item: "create:track"
-					count: 128
+					count: 100
 				}
 				{
 					id: "4375AC6679993CC0"
 					type: "item"
 					item: "create:metal_girder"
-					count: 64
+					count: 48
 				}
 				{
 					id: "7767CFF33CC1DABC"
@@ -393,7 +379,7 @@
 				}
 			}
 			x: -1.0d
-			y: 5.0d
+			y: 3.5d
 			subtitle: "Power a waterwheel"
 			description: [
 				"Constantly hand-cranking machines isn't sustainable. It'll be necessary to rely on power generators. This is the simplest one: it will provide power (\"stress units\") depending on many of its fins are in contact with flowing water."
@@ -425,7 +411,7 @@
 		}
 		{
 			x: -2.0d
-			y: 6.5d
+			y: 5.5d
 			shape: "rsquare"
 			description: [
 				"Strip any log with an axe and right click it with andesite alloy to create andesite casing. These can be automated later on with deployers, but for now it's manual labour."
@@ -450,7 +436,7 @@
 				}
 			}
 			x: -3.0d
-			y: 5.5d
+			y: 4.5d
 			subtitle: "Is that a gun?"
 			description: ["Surely this is overkill, right?"]
 			dependencies: ["604CF717881C323A"]
@@ -481,22 +467,28 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 12.0d
+			title: "Easy Andesite"
+			x: -4.0d
+			y: 12.5d
 			subtitle: "Hate finding andesite?"
-			description: ["So do I! Make a basalt generator with triple compressed andesite as the catalyst to ignore andesite production entirely. Lava has to touch both the andesite, and blue ice to form."]
+			description: ["So do I! When flowing lava touches water over double compressed andesite, it'll have a 1 in 6 chance to spawn an andesite, and stone rest of the time. Better than digging it out."]
 			dependencies: ["5BE7EBA598FD5EE0"]
 			id: "1B5245476A321C24"
 			tasks: [
 				{
 					id: "6CB5E797D027C3B7"
 					type: "item"
-					item: "compressor:triple_compressed_andesite"
+					item: "compressor:double_compressed_andesite"
 				}
 				{
-					id: "770A3298F1EAE3E2"
+					id: "09139529C4467EC3"
 					type: "item"
-					item: "minecraft:blue_ice"
+					item: "minecraft:water_bucket"
+				}
+				{
+					id: "6DD2580F695132B6"
+					type: "item"
+					item: "minecraft:lava_bucket"
 				}
 			]
 			rewards: [{
@@ -509,7 +501,7 @@
 		{
 			icon: "create:mechanical_mixer"
 			x: -2.0d
-			y: 1.5d
+			y: -1.0d
 			shape: "circle"
 			subtitle: "Mixing up progression much?"
 			description: [
@@ -535,7 +527,7 @@
 		{
 			x: 0.0d
 			y: 8.5d
-			subtitle: "Not associated wiith Terraria"
+			subtitle: "Not associated with Terraria"
 			dependencies: ["74E7B48237BED17D"]
 			optional: true
 			id: "638367CB9262248E"
@@ -554,8 +546,8 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: 8.0d
+			x: -6.5d
+			y: 7.0d
 			subtitle: "Pewtah' Craft"
 			description: ["This is technically discriminatory against people who can't code."]
 			dependencies: ["6B85CBE54B33C91F"]
@@ -573,8 +565,8 @@
 			}]
 		}
 		{
-			x: -7.0d
-			y: 8.0d
+			x: -7.5d
+			y: 7.0d
 			subtitle: "I like turtles."
 			description: [
 				"It's not forced labour if they're robots."
@@ -592,8 +584,8 @@
 		}
 		{
 			title: "The sturdiest of sturdy"
-			x: -5.5d
-			y: 3.0d
+			x: -6.0d
+			y: 1.5d
 			subtitle: "Armour maintenance doesn't exist"
 			description: ["Excellent all-around, yet will require enchanted books if you desire any kind of enchantments..."]
 			dependencies: ["0A5DC78719B9A244"]
@@ -658,8 +650,9 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 3.0d
+			x: -0.5d
+			y: 0.5d
+			subtitle: "All that for a drop of iron."
 			description: [
 				"Iron gear can be utilised the same as vanilla, with the exception of needing to process iron ingots to sheets before access."
 				""
@@ -668,11 +661,35 @@
 			dependencies: ["4EB4838CCED125E2"]
 			optional: true
 			id: "735D255FF23C8967"
-			tasks: [{
-				id: "063F105EAF2E1CD1"
+			tasks: [
+				{
+					id: "063F105EAF2E1CD1"
+					type: "item"
+					item: {
+						id: "minecraft:iron_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "03CA4106F7490978"
+					type: "item"
+					item: {
+						id: "minecraft:iron_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "2F3403F31AC55A14"
 				type: "item"
 				item: {
-					id: "minecraft:iron_pickaxe"
+					id: "campanion:iron_spear"
 					Count: 1b
 					tag: {
 						Damage: 0
@@ -706,8 +723,8 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: 6.5d
+			x: -5.0d
+			y: 5.5d
 			subtitle: "Millstones are more useful now."
 			description: [
 				"Millstones are used to grind materials into more powdery forms. Simply chuck stuff onto the opening and right click it after awhile."
@@ -725,7 +742,7 @@
 				{
 					id: "20738A978098D996"
 					type: "item"
-					item: "minecraft:quartz"
+					item: "minecraft:diorite"
 					count: 4
 				}
 				{
@@ -738,8 +755,8 @@
 		}
 		{
 			title: "Get Nether Quartz!"
-			x: -6.0d
-			y: 7.0d
+			x: -6.5d
+			y: 6.0d
 			shape: "diamond"
 			subtitle: "With a solid source of diorite, you can produce excess amounts of quartz."
 			description: [""]
@@ -754,8 +771,8 @@
 		}
 		{
 			title: "Get Rail"
-			x: -4.5d
-			y: 5.5d
+			x: -5.0d
+			y: 4.0d
 			subtitle: "Get rail"
 			description: ["The path to trains require obsidian dust. Unforunately, you won't be able to collect obsidian until you get a drill, so you might have to come back to this later."]
 			dependencies: ["1DEF161DE26F3587"]
@@ -776,7 +793,7 @@
 		{
 			title: "Come get yer grout."
 			x: -2.0d
-			y: -0.5d
+			y: -4.0d
 			shape: "gear"
 			subtitle: "Chapter 2 Unlock"
 			description: [
@@ -785,7 +802,7 @@
 				"Don't eat this."
 			]
 			dependencies: ["545BF28E82A07D19"]
-			size: 2.0d
+			size: 2.5d
 			id: "7354F2BFB2591ECF"
 			tasks: [{
 				id: "4F44B7121D6C4F8D"
@@ -840,7 +857,7 @@
 		{
 			title: "Ew it's stuck to my hands"
 			x: -1.5d
-			y: 10.5d
+			y: 10.0d
 			subtitle: "Mwahahahah"
 			description: [
 				"Forcing you to use *shudders* furnaces."
@@ -857,10 +874,10 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: 6.0d
-			subtitle: "Not a terraria reference."
-			description: [""]
+			x: -6.5d
+			y: 5.0d
+			subtitle: "Also not a Terraria Reference"
+			description: ["The extracinator takes very kinds of crumbly blocks like gravel and turn them into mob drops. No need for laggy mob farms!"]
 			dependencies: ["1DEF161DE26F3587"]
 			optional: true
 			id: "392516C890B749C8"
@@ -872,8 +889,8 @@
 		}
 		{
 			title: "Mob farms are soooo last year..."
-			x: -7.0d
-			y: 6.0d
+			x: -7.5d
+			y: 5.0d
 			shape: "diamond"
 			subtitle: "Extractinating sand will result in most overworld mob drops, negating the need to spend time on the same farms you've been building since 2012."
 			dependencies: ["392516C890B749C8"]
@@ -920,7 +937,7 @@
 		}
 		{
 			x: -4.0d
-			y: 1.5d
+			y: -1.0d
 			subtitle: "A new toy"
 			description: ["Used in wire and rod production, the rolling mill works just like the millstone!"]
 			dependencies: ["4EB4838CCED125E2"]
@@ -940,7 +957,7 @@
 		{
 			title: "Drill Diamonds"
 			x: -3.5d
-			y: 0.5d
+			y: -2.0d
 			subtitle: "The Minecraft Dream"
 			description: ["You'll be able to tip your tools with diamond later which will allow you to mine diamonds and all deepslate ore directly."]
 			dependencies: ["5D51B2F9F28ECE8A"]
@@ -959,7 +976,7 @@
 		}
 		{
 			x: -4.5d
-			y: 0.5d
+			y: -2.0d
 			subtitle: "Astral decoration"
 			description: ["A nice touch for your base."]
 			dependencies: ["4117DCE0FDD1C403"]
@@ -977,7 +994,7 @@
 		}
 		{
 			x: -1.0d
-			y: 1.5d
+			y: -1.0d
 			subtitle: "Bad for the environment"
 			description: ["Much like mechanical drill, the saw can be brought around and used to cut tree. One special advantage is that it will cut down the whole tree at once, provided it removes the final block touching the ground!"]
 			dependencies: ["4EB4838CCED125E2"]
@@ -991,7 +1008,7 @@
 		{
 			title: "Good for Business"
 			x: -0.5d
-			y: 0.5d
+			y: -2.0d
 			subtitle: "Don't forget to re-plant saplings!"
 			dependencies: ["0E7A9F741823BB1C"]
 			id: "4881D5FF815609C3"
@@ -1045,11 +1062,16 @@
 					item: "minecraft:dark_oak_sapling"
 					count: 5
 				}
+				{
+					id: "1E6CB5B640D83593"
+					type: "item"
+					item: "techreborn:rubber_sapling"
+				}
 			]
 		}
 		{
 			x: 0.0d
-			y: 1.5d
+			y: -1.0d
 			subtitle: "For unorthodox ore processing"
 			description: [
 				"Fans can blow you around, no surprise."
@@ -1068,12 +1090,12 @@
 			title: "Better Smelting"
 			icon: "minecraft:blast_furnace"
 			x: 0.5d
-			y: 0.5d
+			y: -2.0d
 			subtitle: "A helpful hint..."
 			description: [
-				"Putting an encased fan before lava will allow you to smelt many ores at once without using fuel by placing them in the fire stream."
+				"Placing lave in front of an encased fan will allow you to smelt many ores at once without using fuel by placing them in the fire stream."
 				""
-				"Putting an encased fan before water will allow you to get bonus resources from ores by putting them in front of the water stream. This will create 9 nuggets instead of ingots, but the free stuff is probably worth it."
+				"Placing water in front of an encased fan will allow you to get bonus resources from ores by putting them in front of the water stream. This will create 9 nuggets instead of ingots, but the free stuff is probably worth it."
 				""
 				"This is called \"bulk blasting\" and \"bulk washing\" respectively."
 			]
@@ -1092,7 +1114,7 @@
 		}
 		{
 			x: 0.5d
-			y: 5.5d
+			y: 4.5d
 			subtitle: "Useful Block #1"
 			description: ["Cogwheels reversing rotation can be annoying. Chain links are useful in that all sequential drives rotate the same way. They also have limited capacity to change axis, providing extra use."]
 			dependencies: ["604CF717881C323A"]
@@ -1111,7 +1133,7 @@
 		}
 		{
 			x: 0.5d
-			y: 7.5d
+			y: 6.5d
 			subtitle: "Useful Block #3"
 			description: ["Gearboxes are the ultimate solution for changing axis, as well as changing rotation direction. They're a bit expensive, but very worth it."]
 			dependencies: ["604CF717881C323A"]
@@ -1130,7 +1152,7 @@
 		}
 		{
 			x: 0.5d
-			y: 6.5d
+			y: 5.5d
 			subtitle: "Useful Block #2"
 			description: ["A clutch can turn on and off complicated contraption with a flick of a lever. This can save headaches for when you're testing something or developing a kinetic network."]
 			dependencies: ["604CF717881C323A"]
@@ -1156,8 +1178,8 @@
 			]
 		}
 		{
-			x: -9.5d
-			y: 4.5d
+			x: -10.0d
+			y: 3.0d
 			subtitle: "You'll need this for creating the train cars themselves"
 			description: [
 				"To glue stuff together, right click a block and move the cursor around. Use ponder for more information."
@@ -1188,8 +1210,8 @@
 		}
 		{
 			title: "ABSOLUTELY ESSENTIAL"
-			x: 0.5d
-			y: 3.0d
+			x: -0.5d
+			y: 2.0d
 			shape: "gear"
 			subtitle: "You'll use this forever"
 			description: ["The wrench will allow you to reorient create blocks with a right click. It'll also destroy Create blocks instantly and put them in your inventory with crouch+click."]
@@ -1220,7 +1242,7 @@
 			title: "Welcome to Create!"
 			icon: "create:wrench"
 			x: -2.0d
-			y: 12.0d
+			y: 12.5d
 			shape: "pentagon"
 			subtitle: "Going Beyond Above"
 			description: [
@@ -1233,7 +1255,7 @@
 				""
 			]
 			dependencies: ["1337920DA45E72AD"]
-			size: 2.0d
+			size: 2.5d
 			id: "5BE7EBA598FD5EE0"
 			tasks: [{
 				id: "032EAA934B34EED4"
@@ -1247,8 +1269,8 @@
 			}]
 		}
 		{
-			x: -7.5d
-			y: 3.0d
+			x: -8.0d
+			y: 1.5d
 			subtitle: "Pretty important"
 			dependencies: ["1579C73B735F06F8"]
 			id: "4E17A29F84247877"
@@ -1259,8 +1281,8 @@
 			}]
 		}
 		{
-			x: -8.5d
-			y: 4.0d
+			x: -9.0d
+			y: 2.5d
 			subtitle: "All aboard!!!"
 			description: ["Train stations are necessary for building trains themselves."]
 			dependencies: ["1579C73B735F06F8"]
@@ -1273,8 +1295,8 @@
 		}
 		{
 			title: "Misc. Train Utilities"
-			x: -9.5d
-			y: 0.5d
+			x: -10.0d
+			y: -1.0d
 			subtitle: "MORE TRAINS"
 			description: [
 				"Here are some extra, advanced stuff if you want to complicate things even more."
@@ -1299,6 +1321,33 @@
 					id: "5565F447E4F83BAC"
 					type: "item"
 					item: "create:track_observer"
+				}
+			]
+		}
+		{
+			title: "Various Stone Generator"
+			icon: "minecraft:bedrock"
+			x: 0.0d
+			y: 12.5d
+			subtitle: "For when you really do not want to find andesite."
+			description: ["Flowing lava touching water over a piece of bedrock will work like the double-andesite-based generator, but will have a 1/5 chance of producing andesite, and will produce other as side-effects. Of course, you'll have to then dig it out from deep underground. But at least it's an option."]
+			dependencies: ["5BE7EBA598FD5EE0"]
+			id: "2AF2E0A5DF16F5D9"
+			tasks: [
+				{
+					id: "35684AEA414C5246"
+					type: "checkmark"
+					title: "Understood."
+				}
+				{
+					id: "65DD979F7CE1FDE8"
+					type: "item"
+					item: "minecraft:water_bucket"
+				}
+				{
+					id: "19BAABDDC504962C"
+					type: "item"
+					item: "minecraft:lava_bucket"
 				}
 			]
 		}
