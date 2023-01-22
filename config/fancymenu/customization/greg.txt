@@ -31,16 +31,17 @@ customization {
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
-  orientation = mid-left
-  x = 12
+  orientation = top-left
+  x = 102
   action = movebutton
-  y = -49
+  y = 220
 }
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
-  width = 199
+  width = 50
   action = resizebutton
+  advanced_width = 197
   height = 23
 }
 
@@ -51,6 +52,11 @@ customization {
   action = setbuttontexture
   backgroundhovered = fancymenustuff\btn2.png
   backgroundnormal = fancymenustuff\btn1.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:modmenu_titlescreen_mods_button%
+  action = hidebutton
 }
 
 customization {
@@ -102,16 +108,17 @@ customization {
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
-  orientation = mid-left
-  x = 12
+  orientation = top-left
+  x = 102
   action = movebutton
-  y = -76
+  y = 190
 }
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
-  width = 199
+  width = 50
   action = resizebutton
+  advanced_width = 197
   height = 23
 }
 
@@ -131,15 +138,15 @@ customization {
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
-  orientation = mid-left
-  x = 12
+  orientation = top-left
+  x = 102
   action = movebutton
-  y = 5
+  y = 250
 }
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
-  width = 199
+  width = 196
   action = resizebutton
   height = 23
 }
@@ -155,16 +162,17 @@ customization {
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
-  orientation = mid-left
-  x = 12
+  orientation = top-left
+  x = 102
   action = movebutton
-  y = 32
+  y = 280
 }
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
-  width = 199
+  width = 50
   action = resizebutton
+  advanced_width = 197
   height = 23
 }
 
@@ -180,6 +188,22 @@ customization {
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
   action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  orientation = top-left
+  x = 417
+  action = movebutton
+  y = 343
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundnormal = kubejs/assets/createastral/textures/item/incomplete_electronic_circuit.png
 }
 
 customization {
@@ -231,12 +255,12 @@ customization {
 customization {
   path = fancymenustuff/uwu.png
   orientation = top-left
-  x = -17
-  width = 260
+  x = 108
+  width = 184
   action = addtexture
   actionid = 2a1cf9b0-032e-414f-8703-7f215d41ac3a1671052549036
-  y = -7
-  height = 655
+  y = -35
+  height = 669
 }
 
 customization {
@@ -249,7 +273,7 @@ customization {
   case_mode = normal
   source_mode = direct
   line_spacing = 1
-  x = 4
+  x = 111
   width = 81
   action = custom_layout_element:fancymenu_customization_item_text
   actionid = 2f5d676c-b14f-4869-96c8-28ad56590b061671053719297
@@ -272,12 +296,12 @@ customization {
 customization {
   path = kubejs/assets/createastral/textures/item/logos_binted.png
   orientation = top-left
-  x = 30
-  width = 170
+  x = 76
+  width = 252
   action = addtexture
   actionid = 6f1d5000-415c-4abe-9d17-cbdaf7b417721671209302913
-  y = 51
-  height = 100
+  y = 34
+  height = 148
 }
 
 customization {
@@ -289,45 +313,30 @@ customization {
   refresh = true
   bouncing = true
   vanilla-like = true
-  x = 89
+  x = 173
   actionid = aaf2bdfa-c2af-4837-910c-0f0e42bca1581671209338152
   action = addsplash
   y = 25
-  text = Laskers
+  text = Down B -> up taunt (Ridley mains unite)
 }
 
 customization {
   orientation = top-left
   restartbackgroundanimations = true
   buttonaction = openlink
-  backgroundhovered = fancymenustuff/btn2.png
-  label = Discord
+  backgroundhovered = kubejs/assets/createastral/textures/item/logocurse.png
+  description = Click to open our Curseforge page!
+  label = 
   loopbackgroundanimations = true
-  x = 15
-  width = 100
-  actionid = ef0bc7d3-be35-4fde-b731-45e25b4236401671211047420
-  action = addbutton
-  y = 349
-  backgroundnormal = fancymenustuff/btn1.png
-  value = https://discord.gg/mNeHyuZdqm
-  height = 20
-}
-
-customization {
-  orientation = top-left
-  restartbackgroundanimations = true
-  buttonaction = openlink
-  backgroundhovered = fancymenustuff/btn2.png
-  label = Curseforge
-  loopbackgroundanimations = true
-  x = 15
-  width = 100
+  hoverlabel = 
+  x = 202
+  width = 68
   actionid = 12eb66a8-e975-4373-a879-da4ceb9b48af1671211093680
   action = addbutton
-  y = 372
-  backgroundnormal = fancymenustuff/btn1.png
+  y = 385
+  backgroundnormal = kubejs/assets/createastral/textures/item/logocurse.png
   value = https://www.curseforge.com/minecraft/modpacks/create-astral
-  height = 20
+  height = 40
 }
 
 customization {
@@ -340,12 +349,30 @@ customization {
   case_mode = normal
   source_mode = direct
   line_spacing = 1
-  x = 5
+  x = 112
   width = 165
   action = custom_layout_element:fancymenu_customization_item_text
   actionid = 6c1c248f-5e0c-499a-a13d-4d699bbbbb7f1672495852535
-  y = -27
+  y = -30
   alignment = left
   height = 23
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = kubejs/assets/createastral/textures/item/logodiscord.png
+  description = Click to join the discord!
+  label = 
+  loopbackgroundanimations = true
+  x = 140
+  width = 40
+  actionid = 5adfed71-9b96-4b40-9881-a20f41c3a3c01674421038275
+  action = addbutton
+  y = 382
+  backgroundnormal = kubejs/assets/createastral/textures/item/logodiscord.png
+  value = https://discord.gg/mNeHyuZdqm
+  height = 47
 }
 
