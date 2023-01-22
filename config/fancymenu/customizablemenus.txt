@@ -1,8 +1,83 @@
 type = customizablemenus
 
+net.minecraft.class_442 {
+}
+
+net.minecraft.class_526 {
+}
+
 net.minecraft.class_3928 {
 }
 
-net.minecraft.class_442 {
+net.minecraft.class_424 {
+}
+
+net.minecraft.class_434 {
+}
+
+net.minecraft.class_412 {
+}
+
+net.minecraft.class_525 {
+}
+
+net.minecraft.class_5235 {
+}
+
+net.minecraft.class_500 {
+}
+
+net.minecraft.class_422 {
+}
+
+net.minecraft.class_420 {
+}
+
+com.terraformersmc.modmenu.gui.ModsScreen {
+}
+
+me.shedaniel.clothconfig2.gui.ClothConfigScreen {
+}
+
+net.minecraft.class_429 {
+}
+
+net.minecraft.class_6777 {
+}
+
+net.minecraft.class_440 {
+}
+
+me.flashyreese.mods.reeses_sodium_options.client.gui.SodiumVideoOptionsScreen {
+}
+
+net.coderbot.iris.gui.screen.ShaderPackScreen {
+}
+
+net.minecraft.class_458 {
+}
+
+com.github.einjerjar.mc.keymap.client.gui.screen.KeymapScreen {
+}
+
+net.minecraft.class_4288 {
+}
+
+net.minecraft.class_426 {
+}
+
+net.minecraft.class_404 {
+}
+
+net.minecraft.class_5375 {
+}
+
+net.minecraft.class_4189 {
+}
+
+net.minecraft.class_407 {
+}
+
+net.minecraft.class_443 {
 }
 

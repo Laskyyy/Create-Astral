@@ -14,15 +14,15 @@ customization {
 }
 
 customization {
-  audio_source:9cb93f64-f2ce-4db3-b666-e4cd49692b5f1669507105227 = resources/astrallakes.ogg;EXTERNAL_LOCAL;100;1
   orientation = top-left
+  audio_source:9078e26b-6987-4791-ab86-e5670b40ff171674352818384 = resources/menumusic/sounds/npc_theme.ogg;EXTERNAL_LOCAL;100;0
   loop = true
-  channel = master
-  x = 287
+  channel = music
+  x = 378
   width = 50
   action = custom_layout_element:fancymenu_extension:audio_item
-  actionid = fa3cd1ac-4442-4876-84d1-f2a34c226bba1669507099277
-  y = 144
+  actionid = d0f32f53-27bd-4544-89a5-68b90e95b0b01674352809313
+  y = 159
   once_per_session = false
   height = 50
 }
