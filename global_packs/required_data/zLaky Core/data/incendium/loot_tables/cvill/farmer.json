@@ -25,8 +25,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 15,
-                "max": 35
+                "min": 5,
+                "max": 10
               }
             }
           ]
@@ -39,8 +39,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 20,
-                "max": 30
+                "min": 5,
+                "max": 10
               }
             }
           ]
@@ -53,8 +53,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 10,
-                "max": 20
+                "min": 2,
+                "max": 4
               }
             }
           ]
@@ -67,8 +67,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 10,
-                "max": 15
+                "min": 3,
+                "max": 5
               }
             }
           ]
@@ -81,8 +81,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 10,
-                "max": 17
+                "min": 2,
+                "max": 3
               }
             }
           ]
@@ -95,8 +95,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 12,
-                "max": 16
+                "min": 2,
+                "max": 3
               }
             }
           ]
@@ -115,7 +115,7 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:binomial",
-                "n": 40,
+                "n": 20,
                 "p": 0.5
               }
             }
@@ -167,14 +167,14 @@
         },
         {
           "type": "minecraft:item",
-          "name": "slime_ball",
+          "name": "crimson_nylium",
           "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 4,
-                "max": 12
+                "max": 6
               }
             }
           ]

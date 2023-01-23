@@ -5,7 +5,21 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "iron_ingot",
+          "name": "minecraft:copper_ingot",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ]
+        },
+				{
+          "type": "minecraft:item",
+          "name": "minecraft:gold_ingot",
           "weight": 3,
           "functions": [
             {
@@ -24,7 +38,35 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "redstone_block",
+          "name": "ad_astra:infernal_spire_block",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+				{
+          "type": "minecraft:item",
+          "name": "passivepiglins:piglin_coin",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+				{
+          "type": "minecraft:item",
+          "name": "createastral:coin",
           "weight": 3,
           "functions": [
             {
@@ -44,22 +86,22 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 7,
-                "max": 12
+                "min": 2,
+                "max": 4
               }
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "coal",
-          "weight": 7,
+          "name": "blaze_powder",
+          "weight": 3,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 7,
-                "max": 16
+                "min": 1,
+                "max": 3
               }
             }
           ]
@@ -87,7 +129,7 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 6
+                "max": 5
               }
             }
           ]
@@ -101,7 +143,7 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 4,
-                "max": 9
+                "max": 7
               }
             }
           ]
@@ -127,7 +169,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "flint",
+          "name": "techreborn:dark_ashes_dust",
           "weight": 3,
           "functions": [
             {
@@ -161,8 +203,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 10,
-                "max": 25
+                "min": 7,
+                "max": 14
               }
             }
           ]
@@ -174,63 +216,33 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "chainmail_helmet",
+          "name": "mcdw:axe_firebrand",
+          "weight": 2
+        },
+				{
+          "type": "minecraft:item",
+          "name": "minecraft:golden_sword",
+          "weight": 2
+        },
+				{
+          "type": "minecraft:item",
+          "name": "mcdw:sickle_last_laugh_gold",
           "weight": 1
         },
-        {
+				{
           "type": "minecraft:item",
-          "name": "chainmail_leggings",
+          "name": "mcdw:gauntlet_soul_fists",
           "weight": 1
         },
-        {
+				{
           "type": "minecraft:item",
-          "name": "chainmail_chestplate",
+          "name": "mcdw:axe_encrusted_anchor",
           "weight": 1
         },
-        {
+				{
           "type": "minecraft:item",
-          "name": "chainmail_boots",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
-          "name": "golden_helmet",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
-          "name": "golden_leggings",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
-          "name": "golden_chestplate",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
-          "name": "golden_boots",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
-          "name": "iron_pickaxe",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
-          "name": "iron_shovel",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
-          "name": "iron_axe",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
-          "name": "iron_sword",
-          "weight": 1
+          "name": "mcdw:spear_grave_bane",
+          "weight": 2
         }
       ]
     }

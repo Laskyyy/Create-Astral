@@ -225,7 +225,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "iron_axe",
+          "name": "golden_axe",
           "weight": 2,
           "functions": [
             {
