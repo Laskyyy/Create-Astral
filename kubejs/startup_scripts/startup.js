@@ -435,17 +435,7 @@ event.create('createastral:astral_singularity').food(food => {
 })
 event.create('createastral:pure_biomatter')
 event.create('createastral:lime').displayName('Lime Dust');
-event.create('createastral:coin','create:sequenced_assembly').displayName('Golden Coin');
-event.create('createastral:golden_bowl').displayName('Golden Bowl');
-event.create('createastral:filled_golden_bowl','create:sequenced_assembly').displayName('Filled Golden Bowl').food(food => {
-  food
-      .hunger(0)
-      .saturation(00)//This value does not directly translate to saturation points gained
-        //The real value can be assumed to be:
-        //min(hunger * saturation * 2 + saturation, foodAmountAfterEating)
-        .effect('drinkbeer:drunk', 3000, 0, 1)
-        .alwaysEdible()//Like golden apples
-})
+event.create('createastral:coin','create:sequenced_assembly').displayName('coin');
 
 
 
@@ -1185,6 +1175,21 @@ onEvent('worldgen.add', event => {
 			.triangleHeight(0, 85)
 	})
 
+    event.addOre((ore) => {
+		ore.id = "kubejs:cobaltoremoon" // optional
+		ore.biomes = [{
+			not: {
+				category: "river"
+			}
+		}]
+		ore.addTarget('#ad_astra:moon_ore_replaceables', 'tconstruct:cobalt_ore')
+
+		ore.count([10, 20])
+			.squared()
+			.triangleHeight(0, 30)
+      
+	})
+
   event.addOre((ore) => {
 		ore.id = "kubejs:silveroremoon" // optional
 		ore.biomes = ['ad_astra:lunar_wastelands', 'minecraft:basalt_deltas', 'incendium:toxic_heap']
@@ -1227,7 +1232,7 @@ onEvent('worldgen.add', event => {
 		ore.count([10, 40])
 			.squared()
 			.triangleHeight(0, 100)
-    ore.size = 9
+    ore.size = 15
 	})
 
   event.addOre((ore) => {
@@ -1243,20 +1248,6 @@ onEvent('worldgen.add', event => {
 			.squared()
 			.triangleHeight(-64, 64)
     ore.size = 15
-	})
-
-  event.addOre((ore) => {
-		ore.id = "kubejs:sodaliteoremars" // optional
-		ore.biomes = [{
-			not: {
-				category: "river"
-			}
-		}]
-		ore.addTarget('#ad_astra:mars_ore_replaceables', 'techreborn:deepslate_sodalite_ore')
-
-		ore.count([10, 20])
-			.squared()
-			.triangleHeight(-64, 64)
 	})
 
 
