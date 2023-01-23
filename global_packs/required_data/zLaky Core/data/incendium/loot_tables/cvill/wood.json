@@ -4,12 +4,54 @@
         {
             "rolls": 1,
             "entries": [
-                {
-                    "type": "minecraft:tag",
-                    "name": "minecraft:non_flammable_wood",
-                    "weight": 1,
-                    "expand": true
-                }
+							{
+								"type": "minecraft:item",
+								"weight": 25,
+								"functions": [
+									{
+										"function": "minecraft:set_count",
+										"count": 1.0,
+										"add": false
+									}
+								],
+								"name": "minecraft:crimson_stem"
+							},
+							{
+								"type": "minecraft:item",
+								"weight": 25,
+								"functions": [
+									{
+										"function": "minecraft:set_count",
+										"count": 1.0,
+										"add": false
+									}
+								],
+								"name": "minecraft:warped_stem"
+							},
+							{
+								"type": "minecraft:item",
+								"weight": 25,
+								"functions": [
+									{
+										"function": "minecraft:set_count",
+										"count": 1.0,
+										"add": false
+									}
+								],
+								"name": "minecraft:warped_wart_block"
+							},
+							{
+								"type": "minecraft:item",
+								"weight": 25,
+								"functions": [
+									{
+										"function": "minecraft:set_count",
+										"count": 1.0,
+										"add": false
+									}
+								],
+								"name": "minecraft:nether_wart_block"
+							}
             ]
         }
     ],

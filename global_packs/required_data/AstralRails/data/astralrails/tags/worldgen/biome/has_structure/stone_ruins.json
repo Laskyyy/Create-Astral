@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "minecraft:taiga",
-		"minecraft:snowy_plains",
-		"minecraft:snowy_taiga",
-		"minecraft:stony_peaks"
-  ]
-}
