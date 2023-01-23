@@ -30,31 +30,6 @@ customization {
 }
 
 customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
-  orientation = top-left
-  x = 102
-  action = movebutton
-  y = 220
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
-  width = 50
-  action = resizebutton
-  advanced_width = 197
-  height = 23
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
-  loopbackgroundanimations = true
-  restartbackgroundanimations = true
-  action = setbuttontexture
-  backgroundhovered = fancymenustuff\btn2.png
-  backgroundnormal = fancymenustuff/btn1.png
-}
-
-customization {
   identifier = %id=button_compatibility_id:modmenu_titlescreen_mods_button%
   action = hidebutton
 }
@@ -101,6 +76,81 @@ customization {
 }
 
 customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = top-left
+  x = 102
+  action = movebutton
+  y = 250
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  width = 196
+  action = resizebutton
+  height = 23
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = fancymenustuff\btn2.png
+  backgroundnormal = fancymenustuff/btn1.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  orientation = top-left
+  x = 417
+  action = movebutton
+  y = 343
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundnormal = kubejs/assets/createastral/textures/item/incomplete_electronic_circuit.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = top-left
+  x = 102
+  action = movebutton
+  y = 220
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  width = 50
+  action = resizebutton
+  advanced_width = 197
+  height = 23
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = fancymenustuff\btn2.png
+  backgroundnormal = fancymenustuff/btn1.png
+}
+
+customization {
   identifier = %id=376310%
   action = hidebutton
 }
@@ -131,35 +181,6 @@ customization {
 }
 
 customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
-  action = hidebutton
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
-  orientation = top-left
-  x = 102
-  action = movebutton
-  y = 250
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
-  width = 196
-  action = resizebutton
-  height = 23
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
-  loopbackgroundanimations = true
-  restartbackgroundanimations = true
-  action = setbuttontexture
-  backgroundhovered = fancymenustuff\btn2.png
-  backgroundnormal = fancymenustuff/btn1.png
-}
-
-customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
   orientation = top-left
   x = 102
@@ -182,27 +203,6 @@ customization {
   action = setbuttontexture
   backgroundhovered = fancymenustuff\btn2.png
   backgroundnormal = fancymenustuff/btn1.png
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
-  action = hidebutton
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
-  orientation = top-left
-  x = 417
-  action = movebutton
-  y = 343
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
-  loopbackgroundanimations = true
-  restartbackgroundanimations = true
-  action = setbuttontexture
-  backgroundnormal = kubejs/assets/createastral/textures/item/incomplete_electronic_circuit.png
 }
 
 customization {
@@ -254,8 +254,8 @@ customization {
 customization {
   path = fancymenustuff/uwu.png
   orientation = top-left
-  x = 108
-  width = 184
+  x = 99
+  width = 201
   action = addtexture
   actionid = 2a1cf9b0-032e-414f-8703-7f215d41ac3a1671052549036
   y = -35
@@ -316,7 +316,7 @@ customization {
   actionid = aaf2bdfa-c2af-4837-910c-0f0e42bca1581671209338152
   action = addsplash
   y = 25
-  text = Excuse me for dropping in.
+  text = [[The Big One]]
 }
 
 customization {
