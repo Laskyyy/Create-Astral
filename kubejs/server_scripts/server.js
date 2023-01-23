@@ -3321,7 +3321,7 @@ event.recipes.createMixing('minecraft:glow_ink_sac', [
 
 
 
-///// Passive Piglins snout banner recipe!!!! wowie!!!! /////
+///// Passive Piglins recipes!!!! wowie!!!! /////
 
 event.recipes.createMixing('minecraft:piglin_banner_pattern', [
 	'1x minecraft:paper',
@@ -3346,6 +3346,38 @@ event.recipes.createSequencedAssembly([ // begin
 		event.recipes.createDeploying('create:golden_sheet', ['minecraft:piglin_banner_pattern', 'minecraft:piglin_banner_pattern']), 
     event.recipes.createPressing('create:golden_sheet', 'create:golden_sheet').processingTime(75),
 ]).transitionalItem('createastral:coin').loops(1)
+
+event.custom({
+    "type": "tconstruct:casting_table",
+    "cast": {
+      "tag": "tconstruct:casts/multi_use/round_plate"
+    },
+    "cast_consumed": false,
+    "fluid": {
+      "name": "tconstruct:molten_gold",
+      "amount": 45000
+    },
+    "result": "createastral:golden_bowl",
+    "cooling_time": 100
+  })
+
+event.remove({output: 'passivepiglins:piglin_fortune'});
+event.recipes.createSequencedAssembly([ // begin
+	'passivepiglins:piglin_fortune', // output
+	], Item.of('createastral:golden_bowl'), [ // input
+		event.recipes.createFilling('ad_astra:iron_plate', ['ad_astra:iron_plate', {fluid: 'techreborn:methane', amount: 3000}]).processingTime(75), //fill
+		event.recipes.createDeploying('create:golden_sheet', ['techreborn:netherrack_dust', 'techreborn:netherrack_dust']), 
+		event.recipes.createDeploying('create:golden_sheet', ['minecraft:crimson_fungus', 'minecraft:crimson_fungus']), 
+]).transitionalItem('createastral:filled_golden_bowl').loops(1)
+
+event.remove({output: 'passivepiglins:piglin_totem'});
+event.recipes.createSequencedAssembly([ // begin
+	'passivepiglins:piglin_totem', // output
+	], Item.of('minecraft:gold_ingot'), [ // input
+		event.recipes.createDeploying('minecraft:gold_ingot', ['minecraft:gold_nugget', 'minecraft:gold_nugget']), 
+		event.recipes.createDeploying('minecraft:gold_ingot', ['createastral:golden_pin', 'createastral:golden_pin']), 
+		event.recipes.createDeploying('minecraft:gold_ingot', ['createastral:golden_pin', 'createastral:golden_pin'])
+]).transitionalItem('minecraft:gold_ingot').loops(1)
 
 //Dash panel
 event.recipes.createSequencedAssembly([ 

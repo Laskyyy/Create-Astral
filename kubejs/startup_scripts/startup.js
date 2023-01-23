@@ -380,7 +380,16 @@ event.create('createastral:calorite_pin'),
 event.create('createastral:electrified_pin'),
 event.create('createastral:uwaah'),
 event.create('createastral:bronze_ingot'),
-event.create('createastral:navigation_mechanism')
+event.create('createastral:navigation_mechanism');
+event.create('createastral:coin','create:sequenced_assembly').displayName('Golden Coin');
+event.create('createastral:golden_bowl').displayName('Golden Bowl');
+event.create('createastral:filled_golden_bowl','create:sequenced_assembly').displayName('Filled Golden Bowl').food(food => {
+  food
+      .hunger(0)
+      .saturation(00)
+        .effect('drinkbeer:drunk', 3000, 0, 1)
+        .alwaysEdible()
+});
 event.create('createastral:radiant_helmet', 'helmet').tier('radiantarmor').glow(true).rarity('Epic'),
 event.create('createastral:radiant_chestplate', 'chestplate').tier('radiantarmor').glow(true).rarity('Epic'),
 event.create('createastral:radiant_leggings', 'leggings').tier('radiantarmor').glow(true).rarity('Epic'),
