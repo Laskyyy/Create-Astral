@@ -1,0 +1,48 @@
+{
+	"processors": [
+		{
+			"processor_type": "minecraft:rule",
+			"rules": [
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "minecraft:clay",
+						"probability": 0.4
+					},
+					"output_state": {
+						"Name": "minecraft:stone"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "minecraft:water",
+						"probability": 0.5
+					},
+					"output_state": {
+						"Name": "minecraft:clay"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "minecraft:andesite",
+						"probability": 0.2
+					},
+					"output_state": {
+						"Name": "minecraft:clay"
+					}
+				}
+			]
+		}
+	]
+}

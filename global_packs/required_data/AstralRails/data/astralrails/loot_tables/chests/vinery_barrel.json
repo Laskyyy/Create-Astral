@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 3,
+        "max": 5
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "createdeco:worn_brick"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "create:wheat_flour"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "createastral:andesite_compound"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:gunpowder"
+        }
+      ]
+    }
+  ]
+}

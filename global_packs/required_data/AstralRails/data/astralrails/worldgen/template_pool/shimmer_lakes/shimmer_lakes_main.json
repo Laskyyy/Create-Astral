@@ -1,0 +1,33 @@
+{
+  "name": "astralrails:paths/start_paths",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "astralrails:shimmer_lakes/shimmer_lake_1",
+        "processors": "astralrails:shimmer_lakes/main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+		{
+      "weight": 1,
+      "element": {
+        "location": "astralrails:shimmer_lakes/shimmer_lake_2",
+        "processors": "astralrails:shimmer_lakes/main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+		{
+      "weight": 1,
+      "element": {
+        "location": "astralrails:shimmer_lakes/shimmer_lake_3",
+        "processors": "astralrails:shimmer_lakes/main",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

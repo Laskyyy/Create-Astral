@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 3,
+        "max": 8
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:cobblestone"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "create:wheat_flour"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "createastral:andesite_compound"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:bread"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:stick"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:oak_log"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:coal"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "techreborn:raw_tin"
+        }
+      ]
+    }
+  ]
+}

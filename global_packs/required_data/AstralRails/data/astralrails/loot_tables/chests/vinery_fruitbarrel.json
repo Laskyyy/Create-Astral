@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "vinery:cherry"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "vinery:white_grape"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "vinery:red_grape"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "vinery:white_grape_seeds"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "vinery:red_grape_seeds"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:apple"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:leather_boots"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:leather_leggings"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:leather_chestplate"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:leather_helmet"
+        }
+      ]
+    },
+		{
+			"rolls": {
+				"min": 1,
+				"max": 2
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:cookie"
+				}
+			]
+		}
+  ]
+}

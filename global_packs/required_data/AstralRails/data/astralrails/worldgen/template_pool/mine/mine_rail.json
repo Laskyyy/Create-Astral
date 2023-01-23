@@ -1,0 +1,69 @@
+{
+  "name": "astralrails:paths/start_paths",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 2,
+      "element": {
+        "location": "astralrails:mine/mining_rail1",
+        "processors": "astralrails:mine/rail_fix",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "astralrails:mine/mining_rail2",
+        "processors": "astralrails:mine/rail_fix",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "astralrails:mine/mining_rail3",
+        "processors": "astralrails:mine/rail_fix",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:mine/mining_rail4",
+        "processors": "astralrails:mine/rail_fix",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+		{
+      "weight": 1,
+      "element": {
+        "location": "astralrails:mine/mining_rail_room1",
+        "processors": "astralrails:mine/rail_fix",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+		{
+      "weight": 1,
+      "element": {
+        "location": "astralrails:mine/mining_rail_room2",
+        "processors": "astralrails:mine/rail_fix",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+		{
+      "weight": 1,
+      "element": {
+        "location": "astralrails:mine/mining_rail_room3",
+        "processors": "astralrails:mine/rail_fix",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

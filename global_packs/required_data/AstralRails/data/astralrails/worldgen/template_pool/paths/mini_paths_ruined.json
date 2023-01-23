@@ -1,0 +1,289 @@
+{
+  "name": "astralrails:rails/rails",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 3,
+      "element": {
+        "location": "astralrails:paths/path_mini1_ruined",
+        "processors": [
+					{
+						"processor_type": "minecraft:rule",
+						"rules": [
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:dirt_path",
+									"probability": 0.4
+								},
+								"output_state": {
+									"Name": "minecraft:grass_block"
+								}
+							},
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:dirt_path",
+									"probability": 0.4
+								},
+								"output_state": {
+									"Name": "minecraft:coarse_dirt"
+								}
+							},
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:grass_block",
+									"probability": 0.1
+								},
+								"output_state": {
+									"Name": "minecraft:andesite"
+								}
+							}
+						]
+					}
+				],
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 3,
+      "element": {
+        "location": "astralrails:paths/path_mini2_ruined",
+        "processors": [
+					{
+						"processor_type": "minecraft:rule",
+						"rules": [
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:dirt_path",
+									"probability": 0.4
+								},
+								"output_state": {
+									"Name": "minecraft:grass_block"
+								}
+							},
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:dirt_path",
+									"probability": 0.4
+								},
+								"output_state": {
+									"Name": "minecraft:coarse_dirt"
+								}
+							},
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:grass_block",
+									"probability": 0.1
+								},
+								"output_state": {
+									"Name": "minecraft:polished_andesite"
+								}
+							}
+						]
+					}
+				],
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:buildings/well",
+        "processors": [
+					{
+						"processor_type": "minecraft:rule",
+						"rules": [
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:polished_andesite",
+									"probability": 0.4
+								},
+								"output_state": {
+									"Name": "minecraft:andesite"
+								}
+							}
+						]
+					}
+				],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:buildings/pillager_tent",
+        "processors": [
+					{
+						"processor_type": "minecraft:rule",
+						"rules": [
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:wool",
+									"probability": 0.2
+								},
+								"output_state": {
+									"Name": "minecraft:air"
+								}
+							},
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:dirt_path",
+									"probability": 0.4
+								},
+								"output_state": {
+									"Name": "minecraft:grass_block"
+								}
+							},
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:dirt_path",
+									"probability": 0.4
+								},
+								"output_state": {
+									"Name": "minecraft:coarse_dirt"
+								}
+							}
+						]
+					}
+				],
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 3,
+      "element": {
+        "location": "astralrails:buildings/empty_plot",
+        "processors": [
+					{
+						"processor_type": "minecraft:rule",
+						"rules": [
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:polished_andesite",
+									"probability": 0.5
+								},
+								"output_state": {
+									"Name": "minecraft:air"
+								}
+							},
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:polished_andesite",
+									"probability": 0.2
+								},
+								"output_state": {
+									"Name": "minecraft:andesite"
+								}
+							},
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:polished_andesite",
+									"probability": 0.3
+								},
+								"output_state": {
+									"Name": "minecraft:polished_andesite_slab"
+								}
+							},
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:dirt_path",
+									"probability": 0.2
+								},
+								"output_state": {
+									"Name": "minecraft:air"
+								}
+							},
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:dirt_path",
+									"probability": 0.2
+								},
+								"output_state": {
+									"Name": "minecraft:coarse_dirt"
+								}
+							},
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:dirt_path",
+									"probability": 0.3
+								},
+								"output_state": {
+									"Name": "minecraft:grass_block"
+								}
+							}
+						]
+					}
+				],
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

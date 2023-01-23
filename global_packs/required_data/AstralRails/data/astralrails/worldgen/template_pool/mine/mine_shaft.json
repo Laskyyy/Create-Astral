@@ -1,0 +1,60 @@
+{
+  "name": "astralrails:paths/start_paths",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "astralrails:mine/mine1",
+        "processors": [
+					{
+						"processor_type": "minecraft:rule",
+						"rules": [
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:lantern",
+									"probability": 0.45
+								},
+								"output_state": {
+									"Name": "minecraft:air"
+								}
+							},
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:structure_void",
+									"probability": 0.05
+								},
+								"output_state": {
+									"Name": "minecraft:coal_ore"
+								}
+							},
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "minecraft:rail",
+									"probability": 0.1
+								},
+								"output_state": {
+									"Name": "minecraft:air"
+								}
+							}
+						]
+					}
+				],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

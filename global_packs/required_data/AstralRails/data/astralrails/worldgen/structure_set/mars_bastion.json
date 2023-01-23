@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "astralrails:mars/mars_bastion",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"spacing": 32,
+		"separation": 16,
+		"salt": 1246789623
+	}
+}

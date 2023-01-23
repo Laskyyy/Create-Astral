@@ -1,0 +1,51 @@
+{
+  "name": "astralrails:paths/start_paths",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 2,
+      "element": {
+        "location": "astralrails:moon/earth_moon_rock_1",
+        "processors": "astralrails:moon_debris/earth_moon_rock_texture",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+		{
+      "weight": 3,
+      "element": {
+        "location": "astralrails:moon/earth_moon_rock_2",
+        "processors": "astralrails:moon_debris/earth_moon_rock_texture_cobbled",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+		{
+      "weight": 3,
+      "element": {
+        "location": "astralrails:moon/earth_moon_rock_3",
+        "processors": "astralrails:moon_debris/earth_moon_rock_texture_cobbled",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+		{
+      "weight": 1,
+      "element": {
+        "location": "astralrails:moon/earth_moon_rock_4",
+        "processors": "astralrails:moon_debris/earth_moon_rock_texture_cobbled",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+		{
+      "weight": 1,
+      "element": {
+        "location": "astralrails:moon/earth_moon_rock_5",
+        "processors": "astralrails:moon_debris/earth_moon_rock_texture",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

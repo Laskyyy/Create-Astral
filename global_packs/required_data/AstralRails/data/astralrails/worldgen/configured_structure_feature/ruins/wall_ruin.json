@@ -1,0 +1,11 @@
+{
+  "config": {
+    "start_pool": "astralrails:ruins/wall_ruins",
+    "size": 7
+  },
+  "biomes": "#astralrails:has_structure/railtowns",
+  "adapt_noise":true,
+  "spawn_overrides": {
+  },
+  "type": "minecraft:village"
+}
