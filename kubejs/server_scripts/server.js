@@ -1320,6 +1320,18 @@ onEvent('recipes', event => {
   event.remove({output: 'techreborn:refined_iron_nugget'})
 
 
+  event.remove({output: 'techreborn:bronze_plate'})
+  event.remove({output: 'techreborn:bronze_ingot'})
+  event.remove({output: 'techreborn:bronze_storage_block'})
+  event.remove({output: 'techreborn:bronze_storage_block_stairs'})
+  event.remove({output: 'techreborn:bronze_storage_block_slab'})
+  event.remove({output: 'techreborn:bronze_storage_block_wall'})
+  event.remove({output: 'techreborn:bronze_dust'})
+  event.remove({output: 'techreborn:bronze_small_dust'})
+  event.remove({output: 'techreborn:bronze_nugget'})
+
+
+
 
 
   event.replaceInput({mod: 'techreborn'}, 'techreborn:aluminum_plate', 'techreborn:lead_plate')
