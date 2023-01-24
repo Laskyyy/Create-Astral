@@ -306,7 +306,8 @@
               "type": "minecraft:biome",
               "biome_is": [
                 "ad_astra:martian_wastelands",
-                "ad_astra:martian_canyon_creek"
+                "ad_astra:martian_canyon_creek",
+                "incendium:infernal_dunes"
               ]
             },
             "then_run": {

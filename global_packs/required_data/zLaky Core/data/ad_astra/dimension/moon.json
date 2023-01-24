@@ -335,6 +335,42 @@
                 }
               }
             }
+          },
+          {
+            "type": "minecraft:condition",
+            "if_true": {
+              "type": "minecraft:biome",
+              "biome_is": [
+                "incendium:toxic_heap"
+              ]
+            },
+            "then_run": {
+              "type": "minecraft:condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "anchor": {
+                  "absolute": 87
+                },
+                "surface_depth_multiplier": 2,
+                "add_stone_depth": false
+              },
+              "then_run": {
+                "type": "minecraft:condition",
+                "if_true": {
+                  "type": "minecraft:stone_depth",
+                  "offset": 4,
+                  "surface_type": "floor",
+                  "add_surface_depth": false,
+                  "secondary_depth_range": 0
+                },
+                "then_run": {
+                  "type": "minecraft:block",
+                  "result_state": {
+                    "Name": "ad_astra:moon_sand"
+                  }
+                }
+              }
+            }
           }
         ]
       }
@@ -345,8 +381,8 @@
         {
           "biome": "incendium:toxic_heap",
           "parameters": {
-            "temperature": 1.2,
-            "humidity": -1,
+            "temperature": 1,
+            "humidity": -0.5,
             "continentalness": 1.5,
             "erosion": 0,
             "weirdness": -0.5,

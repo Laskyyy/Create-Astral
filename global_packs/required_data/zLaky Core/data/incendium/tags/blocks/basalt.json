@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "minecraft:basalt",
-    "minecraft:netherrack"
+    "minecraft:netherrack",
+		"ad_astra:mars_sand"
   ]
 }

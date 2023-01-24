@@ -4,6 +4,8 @@
     "minecraft:netherrack",
     "ad_astra:moon_stone",
 		"ad_astra:mars_stone",
-		"ad_astra:mercury_stone"
+		"ad_astra:mercury_stone",
+    "ad_astra:moon_sand",
+		"ad_astra:mars_sand"
   ]
 }
