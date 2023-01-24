@@ -8,6 +8,6 @@
     "tag": "tconstruct:molten_clay",
     "amount": 10125
   },
-  "result": "tconstruct:seared_brick",
+  "result": "minecraft:brick",
   "cooling_time": 51
 }

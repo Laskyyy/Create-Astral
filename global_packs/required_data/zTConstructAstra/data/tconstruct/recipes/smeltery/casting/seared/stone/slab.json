@@ -5,7 +5,7 @@
   },
   "cast_consumed": true,
   "fluid": {
-    "tag": "tconstruct:molten_clay",
+    "tag": "tconstruct:seared_stone",
     "amount": 20250
   },
   "result": "tconstruct:seared_stone_slab",

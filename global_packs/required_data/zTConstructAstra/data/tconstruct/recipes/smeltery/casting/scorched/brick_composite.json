@@ -8,6 +8,6 @@
     "tag": "c:magma",
     "amount": 10125
   },
-  "result": "tconstruct:scorched_brick",
+  "result": "tconstruct:brick",
   "cooling_time": 45
 }
