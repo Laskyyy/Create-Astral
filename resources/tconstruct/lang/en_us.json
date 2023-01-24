@@ -432,10 +432,10 @@
   "fluid.tconstruct.flowing_honey": "Flowing Honey",
   "item.tconstruct.honey_bucket": "Honey Bucket",
 
-  "block.tconstruct.beetroot_soup_fluid": "Beetroot Soup",
-  "fluid.tconstruct.beetroot_soup": "Beetroot Soup",
-  "fluid.tconstruct.flowing_beetroot_soup": "Flowing Beetroot Soup",
-  "item.tconstruct.beetroot_soup_bucket": "Beetroot Soup Bucket",
+  "block.tconstruct.beetroot_soup_fluid": "Corn Soup",
+  "fluid.tconstruct.beetroot_soup": "Corn Soup",
+  "fluid.tconstruct.flowing_beetroot_soup": "Flowing Corn Soup",
+  "item.tconstruct.beetroot_soup_bucket": "Corn Soup Bucket",
 
   "block.tconstruct.mushroom_stew_fluid": "Mushroom Stew",
   "fluid.tconstruct.mushroom_stew": "Mushroom Stew",
