@@ -3230,6 +3230,9 @@ event.recipes.createMixing('techreborn:steel_dust', [
         'E': 'phonos:redstone_chip',
         'C': 'create:copper_casing'
     })
+    
+  event.remove({output: 'camsbackpacks:white_backpack'}) 
+    
 	event.shaped('camsbackpacks:white_backpack', [
     'ABA',
     'CDE',
