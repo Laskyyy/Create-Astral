@@ -13,6 +13,6 @@
     "tag": "c:magma",
     "amount": 40500
   },
-  "result": "tconstruct:scorched_stone",
+  "result": "minecraft:stone",
   "cooling_time": 90
 }

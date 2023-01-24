@@ -1193,9 +1193,9 @@ onEvent('worldgen.add', event => {
 		}]
 		ore.addTarget('#ad_astra:moon_ore_replaceables', 'tconstruct:cobalt_ore')
 
-		ore.count([10, 20])
+		ore.count([10, 25])
 			.squared()
-			.triangleHeight(0, 30)
+			.triangleHeight(0, 60)
       
 	})
 
