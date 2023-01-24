@@ -1210,6 +1210,7 @@ onEvent('recipes', event => {
   event.remove({output: 'ad_astra:steel_cable'})
   event.remove({output: 'techreborn:steel_ingot'})
   event.remove({output: 'create:brass_casing', type: 'create:item_application'})
+  event.remove({input: 'minecraft:copper_block', type: 'minecraft:stonecutting'})
   event.replaceOutput({input: 'minecraft:beetroot'}, 'minecraft:red_dye', 'minecraft:yellow_dye')
 
 
