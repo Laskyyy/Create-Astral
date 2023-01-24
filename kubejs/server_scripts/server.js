@@ -1699,7 +1699,7 @@ event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:
     'BDB',
     'AAA'
   ], {
-    A: 'tconstruct:seared_brick',
+    A: 'tconstruct:seared_bricks',
     B: '#c:glass',
     C: 'create:brass_sheet',
     D: 'create:fluid_tank'
@@ -1710,7 +1710,7 @@ event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:
     'BDB',
     'ACA'
   ], {
-    A: 'tconstruct:seared_brick',
+    A: 'tconstruct:seared_bricks',
     B: '#c:glass',
     C: 'create:brass_sheet',
     D: 'create:fluid_tank'
@@ -1721,7 +1721,7 @@ event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:
     'ADA',
     'ACA'
   ], {
-    A: 'tconstruct:seared_brick',
+    A: 'tconstruct:seared_bricks',
     C: 'create:brass_sheet',
     D: 'create:fluid_tank'
     
@@ -1731,7 +1731,7 @@ event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:
     'CDC',
     'AAA'
   ], {
-    A: 'tconstruct:seared_brick',
+    A: 'tconstruct:seared_bricks',
     C: 'create:brass_sheet',
     D: 'create:fluid_tank'
     
@@ -1746,15 +1746,7 @@ event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:
 	W: 'create:fluid_tank',
   C: 'create:zinc_ingot'	 
 	 })
-	 	event.shaped('tconstruct:smeltery_controller', [
-    'DDD',
-    'SWS',
-	'SSS'
-  ], {
-    S: 'tconstruct:seared_brick',
-	W: 'createastral:blazing_mechanism',
-	D: 'minecraft:copper_ingot'
-	 })
+	 
 
 
 	
