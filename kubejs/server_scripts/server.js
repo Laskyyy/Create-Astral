@@ -1170,7 +1170,6 @@ onEvent('recipes', event => {
   event.replaceInput({output: 'ad_astra:space_helmet'}, 'minecraft:orange_stained_glass_pane', 'create:diving_helmet')
   event.replaceInput({output: 'ad_astra:space_pants'}, 'ad_astra:steel_ingot', 'create:sturdy_sheet')
   event.replaceInput({output: 'create:deployer'}, 'create:electron_tube', 'create:polished_rose_quartz')
-  event.replaceInput({mod: 'chipped'}, 'minecraft:wooden_axe', 'minecraft:flint')
   event.remove({output: 'ad_astra:space_boots'})
   event.replaceInput({output: 'ad_astra:space_suit'}, 'ad_astra:steel_ingot', 'create:sturdy_sheet')
   event.replaceInput({output: 'ad_astra:space_suit'}, 'ad_astra:oxygen_gear', 'create:copper_backtank')
@@ -2593,7 +2592,7 @@ event.recipes.createFilling('structures_compass:structures_compass', [
     'BBB'
   ], {
     S: 'minecraft:furnace',
-	A: 'techreborn:tin_plate',
+	A: 'minecraft:iron_ingot',
 	B: 'minecraft:stone'
 	})
 

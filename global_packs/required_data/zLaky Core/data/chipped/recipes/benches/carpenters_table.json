@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  y",
+    "axa",
+    "bca"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:crafting_table"
+    },
+    "y": {
+      "item": "minecraft:iron_ingot"
+    },
+    "a": {
+      "tag": "minecraft:logs"
+    },
+    "b": {
+      "item": "minecraft:flint"
+    },
+    "c": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "chipped:carpenters_table",
+    "count": 1
+  }
+}

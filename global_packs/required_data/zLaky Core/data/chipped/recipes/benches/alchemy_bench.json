@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " b ",
+    "axa",
+    "aya"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:crafting_table"
+    },
+    "b": {
+      "item": "drinkbeer:beer_barrel"
+    },
+    "a": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "y": {
+      "item": "vinery:fermentation_barrel"
+    }
+  },
+  "result": {
+    "item": "chipped:alchemy_bench",
+    "count": 1
+  }
+}

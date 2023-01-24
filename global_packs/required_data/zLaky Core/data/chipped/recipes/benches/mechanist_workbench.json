@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "P__",
+    "STS"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:redstone_torch"
+    },
+    "P": {
+      "item": "minecraft:piston"
+    },
+    "_": {
+      "item": "minecraft:oak_slab"
+    },
+    "S": {
+      "item": "minecraft:stripped_spruce_log"
+    },
+    "T": {
+      "item": "minecraft:tnt"
+    }
+  },
+  "result": {
+    "item": "chipped:mechanist_workbench",
+    "count": 1
+  }
+}
