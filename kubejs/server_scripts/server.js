@@ -2280,7 +2280,7 @@ event.recipes.createFilling('createastral:brass_hoe', ['createastral:brass_hoe',
 
 event.recipes.createFilling('structures_compass:structures_compass', [
   'minecraft:compass',
-  {fluid: 'tconstruct:molten_iron', amount: 40500},
+  {fluid: 'tconstruct:molten_iron', amount: 36000},
 ])
 
 
