@@ -1,4 +1,5 @@
 {
+  "replace": "true",
   "parts": [
     {
       "item": "tconstruct:pick_head"
@@ -20,12 +21,6 @@
     "upgrades": 3,
     "abilities": 1
   },
-  "traits": [
-    {
-      "name": "tconstruct:piercing",
-      "level": 1
-    }
-  ],
   "actions": [
     "pickaxe_dig"
   ],
