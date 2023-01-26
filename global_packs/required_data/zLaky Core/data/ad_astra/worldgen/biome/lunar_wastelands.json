@@ -59,6 +59,7 @@
   },
   "features": [
     [
+      "minecraft:lakydeltacave",
       "ad_astra:moon_cheese_ore",
       "ad_astra:moon_soul_soil",
       "ad_astra:moon_ice_shard_ore",
