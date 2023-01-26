@@ -1,7 +1,7 @@
 {
   "type": "minecraft:random_patch",
   "config": {
-    "tries": 40,
+    "tries": 30,
     "xz_spread": 4,
     "y_spread": 4,
     "feature": {
@@ -21,11 +21,8 @@
             "scale": 1,
             "states": [
               {
-                "Name": "minecraft:warped_roots"
-              },
-							{
-								"Name": "minecraft:nether_sprouts"
-							}
+                "Name": "minecraft:crimson_roots"
+              }
             ]
           }
         }

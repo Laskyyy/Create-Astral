@@ -1,0 +1,27 @@
+{
+	"feature": "astralrails:mars_dripstone_cluster",
+	"placement": [
+		{
+      "type": "minecraft:count",
+      "count": 12
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": -56
+        },
+        "max_inclusive": {
+          "absolute": 110
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+	]
+}
