@@ -4,17 +4,17 @@
     {
       "condition": "fabric:item_tags_populated",
       "values": [
-        "c:calorite_ingots"
+        "c:ingots/calorite"
       ]
     }
   ],
   "ingredient": {
-    "tag": "c:calorite_ingots"
+    "tag": "c:ingots/calorite"
   },
   "result": {
     "fluid": "kubejs:molten_calorite",
     "amount": 9000
   },
-  "temperature": 800,
-  "time": 65
+  "temperature": 425,
+  "time": 47
 }

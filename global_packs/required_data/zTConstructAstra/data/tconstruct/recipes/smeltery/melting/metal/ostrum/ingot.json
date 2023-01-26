@@ -4,17 +4,17 @@
     {
       "condition": "fabric:item_tags_populated",
       "values": [
-        "c:ostrum_ingots"
+        "c:ingots/ostrum"
       ]
     }
   ],
   "ingredient": {
-    "tag": "c:ostrum_ingots"
+    "tag": "c:ingots/ostrum"
   },
   "result": {
     "fluid": "kubejs:molten_ostrum",
     "amount": 9000
   },
-  "temperature": 800,
-  "time": 65
+  "temperature": 425,
+  "time": 47
 }

@@ -4,17 +4,17 @@
     {
       "condition": "fabric:item_tags_populated",
       "values": [
-        "c:ostrum_nuggets"
+        "c:nuggets/ostrum"
       ]
     }
   ],
   "ingredient": {
-    "tag": "c:ostrum_nuggets"
+    "tag": "c:nuggets/ostrum"
   },
   "result": {
     "fluid": "kubejs:molten_ostrum",
     "amount": 1000
   },
-  "temperature": 800,
-  "time": 22
+  "temperature": 425,
+  "time": 16
 }

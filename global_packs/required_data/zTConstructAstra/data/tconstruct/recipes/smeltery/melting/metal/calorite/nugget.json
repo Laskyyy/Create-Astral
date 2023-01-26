@@ -4,17 +4,17 @@
     {
       "condition": "fabric:item_tags_populated",
       "values": [
-        "c:calorite_nuggets"
+        "c:nuggets/calorite"
       ]
     }
   ],
   "ingredient": {
-    "tag": "c:calorite_nuggets"
+    "tag": "c:nuggets/calorite"
   },
   "result": {
     "fluid": "kubejs:molten_calorite",
     "amount": 1000
   },
-  "temperature": 800,
-  "time": 22
+  "temperature": 425,
+  "time": 16
 }

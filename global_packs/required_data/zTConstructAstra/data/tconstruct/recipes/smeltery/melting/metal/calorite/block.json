@@ -4,17 +4,17 @@
     {
       "condition": "fabric:item_tags_populated",
       "values": [
-        "c:calorite_blocks"
+        "c:storage_blocks/calorite"
       ]
     }
   ],
   "ingredient": {
-    "tag": "c:calorite_blocks"
+    "tag": "c:storage_blocks/calorite"
   },
   "result": {
     "fluid": "kubejs:molten_calorite",
     "amount": 81000
   },
-  "temperature": 800,
-  "time": 194
+  "temperature": 425,
+  "time": 141
 }

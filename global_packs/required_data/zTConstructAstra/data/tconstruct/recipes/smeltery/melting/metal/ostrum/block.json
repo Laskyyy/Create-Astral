@@ -4,17 +4,17 @@
     {
       "condition": "fabric:item_tags_populated",
       "values": [
-        "c:ostrum_blocks"
+        "c:storage_blocks/ostrum"
       ]
     }
   ],
   "ingredient": {
-    "tag": "c:ostrum_blocks"
+    "tag": "c:storage_blocks/ostrum"
   },
   "result": {
     "fluid": "kubejs:molten_ostrum",
     "amount": 81000
   },
-  "temperature": 800,
-  "time": 194
+  "temperature": 425,
+  "time": 141
 }
