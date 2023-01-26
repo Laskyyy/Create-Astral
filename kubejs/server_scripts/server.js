@@ -2502,34 +2502,6 @@ event.recipes.createFilling('structures_compass:structures_compass', [
 	 
 	 //STEEL ARMOUR and STURDY ARMOUR
 	 
-	 event.shaped('createastral:steel_chestplate', [
-    'S S',
-    'SSS',
-    'SSS'
-  ], {
-    S: 'ad_astra:steel_ingot'
-	})
-	event.shaped('createastral:steel_helmet', [
-    'SSS',
-    'S S',
-    '   '
-  ], {
-    S: 'ad_astra:steel_ingot'
-	})
-	event.shaped('createastral:steel_leggings', [
-    'SSS',
-    'S S',
-    'S S'
-  ], {
-    S: 'ad_astra:steel_ingot'
-	})
-	event.shaped('createastral:steel_boots', [
-    '   ',
-    'S S',
-    'S S'
-  ], {
-    S: 'ad_astra:steel_ingot'
-	})
 
   event.shaped('ad_astra:space_boots', [
     'S S',
@@ -2858,6 +2830,26 @@ event.recipes.createSequencedAssembly([
 	 
 	 event.recipes.createCompacting('ad_astra:iron_plate', [
   'create:iron_sheet',
+]).heated()
+
+event.recipes.createCompacting('createastral:steel_helmet', [
+  Item.of('createastral:sturdy_helmet').ignoreNBT(),
+  '6x techreborn:steel_dust'
+]).heated()
+
+event.recipes.createCompacting('createastral:steel_chestplate', [
+  Item.of('createastral:sturdy_chestplate').ignoreNBT(),
+  '12x techreborn:steel_dust'
+]).heated()
+
+event.recipes.createCompacting('createastral:steel_leggings', [
+  Item.of('createastral:sturdy_leggings').ignoreNBT(),
+  '8x techreborn:steel_dust'
+]).heated()
+
+event.recipes.createCompacting('createastral:steel_boots', [
+  Item.of('createastral:sturdy_boots').ignoreNBT(),
+  '5x techreborn:steel_dust'
 ]).heated()
 
 event.recipes.createPressing('createastral:bronze_sheet', 'createastral:bronze_ingot')
