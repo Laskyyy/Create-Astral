@@ -63,7 +63,7 @@
   },
   "features": [
     [
-      "minecraft:lakydelta",
+      "minecraft:delta",
       "minecraft:basalt_pillar",
       "minecraft:basalt_blobs",
       "minecraft:blackstone_blobs",
@@ -77,6 +77,9 @@
       "ad_astra:venus_gold_ore",
       "ad_astra:venus_diamond_ore",
       "ad_astra:venus_calorite_ore"
-    ]
+    ],
+		[
+			"astralrails:mars_blackstone_patch"
+		]
   ]
 }

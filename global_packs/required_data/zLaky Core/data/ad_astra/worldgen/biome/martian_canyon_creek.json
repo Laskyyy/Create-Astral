@@ -90,7 +90,9 @@
       "ad_astra:mars_ostrum_ore"
     ],
     [
-
+			"astralrails:mars_desert_veg",
+			"astralrails:mars_soul_sand_patch",
+			"astralrails:mars_bone_pillar"
     ]
   ]
 }
