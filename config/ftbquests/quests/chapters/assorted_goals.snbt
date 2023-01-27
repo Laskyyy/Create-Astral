@@ -7,32 +7,18 @@
 	icon: "minecraft:furnace"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	images: [
-		{
-			x: -5.0d
-			y: 6.5d
-			width: 6.0d
-			height: 3.5d
-			rotation: 0.0d
-			image: "createastral:textures/item/logos_binted.png"
-			hover: [ ]
-			click: ""
-			dev: false
-			corner: false
-		}
-		{
-			x: -0.5d
-			y: 0.0d
-			width: 1.0d
-			height: 1.0d
-			rotation: 0.0d
-			image: "minecraft:textures/gui/presets/isles.png"
-			hover: [ ]
-			click: ""
-			dev: false
-			corner: false
-		}
-	]
+	images: [{
+		x: -5.0d
+		y: 6.5d
+		width: 6.0d
+		height: 3.5d
+		rotation: 0.0d
+		image: "createastral:textures/item/logos_binted.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
 	quests: [
 		{
 			title: "A knight in shining copper."
@@ -127,7 +113,7 @@
 			y: 10.5d
 			subtitle: "Assemble your tools with this."
 			description: [
-				"The Tinker Station is where you assemble your tinker tools, which will be needed to grab stone, copper, and iron. Wooden and stone tools are the first goal, as the vanilla versions of these no longer exist."
+				"The Tinker Station is where you assemble your tinker tools, which will be needed to grab stone, copper, and iron. Wooden and stone tools are the first goal, as the vanilla recipes of these no longer exist."
 				""
 				"You can also repair tinker tools at this station by placing your tool and its materials in any slots. Its super convenient!"
 			]
@@ -155,7 +141,7 @@
 			}
 			x: -4.5d
 			y: 11.5d
-			subtitle: "Each tool consists of three (or more) components which can be combined into a full tool, give it a go."
+			subtitle: "Each tool usually consists of three or more components which can be combined into a full tool, give it a go."
 			dependencies: ["75B36BB7FE771333"]
 			id: "29AF19492CFCB2DB"
 			tasks: [{
@@ -284,7 +270,7 @@
 			title: "Let's get cooking"
 			x: -10.5d
 			y: 11.0d
-			description: ["Figured out how to make meals, eh? Now, here is a list of crops to automate >:D"]
+			description: ["Figured out how to make meals, eh? Now, here is a list of crops to automate when you complete the quest >:D"]
 			dependencies: ["2CE5BB6A7B30CA4C"]
 			optional: true
 			id: "4F4C278C3A8C0281"
@@ -403,7 +389,7 @@
 			y: 16.0d
 			shape: "diamond"
 			subtitle: "Alchoholics anonymous"
-			description: ["Beginning your brewing journey will allow access to potion effects before brewing is available!"]
+			description: ["Beginning your brewing journey will allow access to potion effects before potion brewing is available!"]
 			hide_dependency_lines: true
 			dependencies: ["0BCED0F8481E0C21"]
 			size: 1.5d
@@ -450,6 +436,7 @@
 			y: 13.244897959183653d
 			shape: "pentagon"
 			subtitle: "Take your pick of crafting station and begin your journey."
+			description: ["(Note: using a Tinker's Construct crafting table to craft items may result in quests not registering. If this happens, try dropping the item and picking up, or using the crafting table)"]
 			size: 2.5d
 			min_required_tasks: 1
 			id: "0BCED0F8481E0C21"
@@ -639,13 +626,41 @@
 				""
 				"Choconeosome - Constructing most of the buildings you'll see in AstralRails!"
 			]
+			dependency_requirement: "one_completed"
 			size: 1.25d
 			id: "1472D9CAB3B3A74D"
-			tasks: [{
-				id: "03400A6C3B703E48"
-				type: "checkmark"
-				title: "Things of note!"
-			}]
+			tasks: [
+				{
+					id: "03400A6C3B703E48"
+					type: "checkmark"
+					title: "Things of note!"
+				}
+				{
+					id: "0D7AFA953A839CE4"
+					type: "item"
+					item: {
+						id: "minecraft:player_head"
+						Count: 1b
+						tag: {
+							SkullOwner: {
+								Id: [I;
+									1325944819
+									1716012454
+									-1803202854
+									408989958
+								]
+								Properties: {
+									textures: [{
+										Value: "ewogICJ0aW1lc3RhbXAiIDogMTY3NDg2MzUyNzI3MSwKICAicHJvZmlsZUlkIiA6ICI0ZjA4NGZmMzY2NDg0NWE2OTQ4NTRlZGExODYwYjEwNiIsCiAgInByb2ZpbGVOYW1lIiA6ICJMYXNreXl5IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzZjMzBiZGEyYTdhOWY5NDU2NWIyN2JmOWVkMWNmMmQ4Y2I2NzM0NWJjYzRiYmJiMzVlYWJlNjYzYTY3NjA1MDUiCiAgICB9CiAgfQp9"
+										Signature: "f4suDAYZO5DJbfMf8dWosqTgiz8BaP78V+THOL2VGvAuFDr76okSBzUi7kGSkvn1YrzHnEzBMxZl7ZdlnYm7VX5BRHRmak342Qr7WINZaAEdYmMl2RxG3+mxj75owlS5o1g/q42AJYnjeyw2qw1dN+gbsD3R9+/lUqGLZMgHC7CjCJUQ62WYZye2WaMbM0AtOr2WlldMDLMEZaKLR2o4bz5s8+pUh3qagxqC5UcXXcWNPFXza2+0B8woprlwBu+rAMf/1/Ue5gHaRxiG71JG8U6FgWQYG78MzC7kkT3F9qgrLQju7W1MqTo40AJ6pr10tMvJpBg4kRNalq0TaB7ghBDuQmyEQAvqoh0FjlhWZ9FNlvj+Ga90u0q3TWmTCaubZyA8k9T4Jyn5/BoWY16sI+dGMsQ+a1WuT4SUSuJwRhyjx1ZyGUP0xjKgUCzauileKF8jL2vXeirDx/pe1e6UzrckdkZ3ddhdVpLfjgdw3A2ojvzpCaxNRv0cYvvA3mD4Yf/aJ4SvQ3zChySj7UABDk81XBnYhQOAdX5FEEvKq+oE/NXk/Gb1jyc29m9Ku237ZVwBeH3zWICzt+aKG0rjv/58uPGUutmeMnFINLT00cKt2nLqOkXZECTpr+Xuch989G2finByNtCM0tQl5ApM2OziR2/VYBRikvFCwa9OTkA="
+									}]
+								}
+								Name: "Laskyyy"
+							}
+						}
+					}
+				}
+			]
 			rewards: [{
 				id: "3041554AA6080450"
 				type: "item"
@@ -663,6 +678,7 @@
 				id: "072F87225B252EF0"
 				type: "item"
 				item: "minecraft:melon"
+				count: 64L
 			}]
 			rewards: [{
 				id: "70CEAFBC1ED06AAF"
@@ -702,6 +718,7 @@
 				id: "455B346FB9ADE2BB"
 				type: "item"
 				item: "minecraft:pumpkin"
+				count: 64L
 			}]
 			rewards: [{
 				id: "62BE7175BE9B0DED"
@@ -988,7 +1005,6 @@
 		}
 		{
 			title: "I LOVE BACKPACKS"
-			icon: "campanion:hiking_pack"
 			x: -11.5d
 			y: 10.0d
 			subtitle: "Porta-Storage? Excellent..."
@@ -1099,59 +1115,6 @@
 			]
 		}
 		{
-			title: "Ahoy!"
-			x: 0.5d
-			y: 13.0d
-			description: [
-				"Ye filthy landlubbers can't even walk 10 seconds on the ocean floor without spluttering for air."
-				""
-				"These will be used in a certain *astral* suit in the near future, you might want to make some now."
-			]
-			dependencies: ["327EA8E115211B55"]
-			id: "2C8290C44890E0B5"
-			tasks: [
-				{
-					id: "3717FB82A5D4CAC3"
-					type: "item"
-					item: {
-						id: "create:copper_backtank"
-						Count: 1b
-						tag: {
-							Air: 900
-						}
-					}
-				}
-				{
-					id: "36DE6D66639F9E37"
-					type: "item"
-					item: {
-						id: "create:diving_helmet"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "5EAC820A8EFDA5F2"
-					type: "item"
-					item: {
-						id: "create:diving_boots"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
-			rewards: [{
-				id: "358BBCC53DC4B6AF"
-				type: "item"
-				item: "minecraft:nautilus_shell"
-				count: 5
-			}]
-		}
-		{
 			title: "I'd rather be tractor."
 			icon: {
 				id: "automobility:automobile"
@@ -1168,7 +1131,7 @@
 			y: 12.847959183673467d
 			shape: "gear"
 			subtitle: "Look at this beauty, I'll let you have 'er, on one condition."
-			description: ["Show me yer' able to complete TWO of these stockpile quests, and i'll be convinced to let you buy her.  A feast for the ages will be enough to convince me... so get cooking!"]
+			description: ["Show me yer' able to complete TWO of these stockpile quests, and i'll be convinced to let you buy her. A feast for the ages will be enough to convince me... so get cooking!"]
 			hide_dependency_lines: true
 			min_required_dependencies: 2
 			dependencies: [
@@ -1248,9 +1211,9 @@
 						Count: 1b
 						tag: {
 							Automobile: {
-								wheels: "automobility:standard"
-								frame: "automobility:yellow_tractor"
 								engine: "automobility:stone"
+								frame: "automobility:yellow_tractor"
+								wheels: "automobility:standard"
 							}
 						}
 					}
@@ -1548,7 +1511,7 @@
 		{
 			x: -9.5d
 			y: 8.0d
-			subtitle: "Storage space for ingredients."
+			subtitle: "Storage space and water for ingredients."
 			dependencies: ["3522109BABC7E48B"]
 			optional: true
 			id: "18BA6A99120CF00D"
@@ -1768,7 +1731,7 @@
 				}
 			}]
 			rewards: [{
-				id: "224477A367A53727"
+				id: "6330A382A9654992"
 				type: "item"
 				item: {
 					id: "packages:package"
@@ -1794,7 +1757,7 @@
 			icon: "vinery:old_cherry_sapling"
 			x: -6.0d
 			y: 18.5d
-			subtitle: "it's more sophisticated to drink this, apparently..."
+			subtitle: "It's more sophisticated to drink this, apparently..."
 			description: [
 				"Vinery follows the same path as drinkbeer, with the brewing being performed through a unique block"
 				""
@@ -1975,53 +1938,6 @@
 				}
 			]
 		}
-		{
-			x: 1.5d
-			y: 0.0d
-			shape: "gear"
-			id: "015D335E4E1C03B9"
-			tasks: [
-				{
-					id: "6E4912B976967182"
-					type: "item"
-				}
-				{
-					id: "6537C0F28B10DF6D"
-					type: "item"
-					title: "Any #c:slimeballs"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "c:slimeballs"
-						}
-					}
-				}
-				{
-					id: "510335B826661DB1"
-					type: "item"
-					title: "Any #tconstruct:slime_block"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "tconstruct:slime_block"
-						}
-					}
-				}
-				{
-					id: "425FA88642481400"
-					type: "item"
-					title: "Any #computercraft:monitor"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "computercraft:monitor"
-						}
-					}
-				}
-			]
-		}
 	]
+	quest_links: [ ]
 }

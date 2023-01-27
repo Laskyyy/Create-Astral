@@ -182,11 +182,12 @@
 			title: "Welcome to the heat death of the universe."
 			x: 4.5d
 			y: -3.75d
-			shape: "gear"
+			shape: "pentagon"
 			subtitle: "Enjoy your stay."
 			description: ["Home to the most hazardous terrain of any planet you've seen so far, mercury holds lucrative returns for those brave enough to explore it."]
 			dependencies: ["5BD2D0F7F0D70180"]
-			size: 1.5d
+			hide: true
+			size: 3.0d
 			id: "7A4255522DA6FEB7"
 			tasks: [{
 				id: "5602FF437BAA6984"
@@ -210,8 +211,8 @@
 		}
 		{
 			title: "Ores of mercury"
-			x: 6.0d
-			y: -3.0d
+			x: 6.5d
+			y: -2.5d
 			dependencies: ["7A4255522DA6FEB7"]
 			id: "4329020373E27B1F"
 			tasks: [
@@ -323,74 +324,6 @@
 					Count: 1b
 					tag: {
 						Material: "tconstruct:calorite"
-					}
-				}
-			}]
-		}
-		{
-			x: 6.5d
-			y: -4.5d
-			dependencies: ["7A4255522DA6FEB7"]
-			id: "34611496C02ECF4E"
-			tasks: [{
-				id: "25422A255709A092"
-				type: "item"
-				item: "techreborn:iridium_alloy_ingot"
-			}]
-			rewards: [{
-				id: "40C856F195C16815"
-				type: "item"
-				item: {
-					id: "tconstruct:dagger"
-					Count: 1b
-					tag: {
-						Damage: 0
-						tic_stats: {
-							"tconstruct:attack_damage": 6.4674997f
-							"tconstruct:harvest_tier": "minecraft:netherite"
-							"tconstruct:durability": 1034.25f
-							"tconstruct:mining_speed": 7.0125003f
-							"tconstruct:attack_speed": 2.1f
-						}
-						tic_multipliers: {
-							"tconstruct:mining_speed": 0.75f
-							"tconstruct:durability": 0.75f
-							"tconstruct:attack_damage": 0.65f
-						}
-						tic_broken: 0b
-						tic_modifiers: [
-							{
-								name: "tconstruct:looting"
-								level: 2s
-							}
-							{
-								name: "tconstruct:padded"
-								level: 1s
-							}
-							{
-								name: "tconstruct:sharpness"
-								level: 2s
-							}
-							{
-								name: "tconstruct:offhand_attack"
-								level: 1s
-							}
-							{
-								name: "tconstruct:silky_shears"
-								level: 1s
-							}
-						]
-						tic_materials: [
-							"tconstruct:calorite"
-							"tconstruct:calorite"
-						]
-						tic_volatile_data: {
-							"tconstruct:duel_wielding": 1b
-						}
-						tic_persistent_data: {
-							upgrades: 3
-							abilities: 1
-						}
 					}
 				}
 			}]
@@ -787,6 +720,8 @@
 			title: "Become as gods."
 			x: 4.5d
 			y: 13.5d
+			subtitle: "A densly condensed singularity, blooming with energy of a divine source."
+			description: ["This is what will allow you to start breaking off limits. Creating this is a tedious process, and involves a lot of materials. I hope your factory is ready for the task, good luck."]
 			dependencies: [
 				"585CEEAE5CADECA0"
 				"16A2464A968635F7"
@@ -797,6 +732,24 @@
 				type: "item"
 				item: "createastral:astral_singularity"
 			}]
+			rewards: [
+				{
+					id: "7AF7A840B47D7B24"
+					type: "item"
+					item: "adoptafloppa:kitney_item"
+				}
+				{
+					id: "7A472DC2E8C2BC28"
+					type: "item"
+					item: "createastral:astral_conduit"
+				}
+				{
+					id: "5B732A38FDA7D18D"
+					type: "item"
+					item: "techreborn:uu_matter"
+					count: 64
+				}
+			]
 		}
 		{
 			title: "With the heat of sun."
@@ -823,15 +776,23 @@
 		}
 		{
 			title: "How do I process raw iridium?"
-			x: 3.5d
-			y: -5.0d
+			x: 2.5d
+			y: -5.5d
+			description: ["Iridium Raw ore can be obtained from placing your iridium ore blocks in an industrial grinder, to start with you are going to want to get one of these set up!"]
 			dependencies: ["7A4255522DA6FEB7"]
 			id: "160490A7E60FC575"
-			tasks: [{
-				id: "46009FCC4B2E7ACC"
-				type: "item"
-				item: "techreborn:raw_iridium"
-			}]
+			tasks: [
+				{
+					id: "46009FCC4B2E7ACC"
+					type: "item"
+					item: "techreborn:raw_iridium"
+				}
+				{
+					id: "29EFF79C0B29DCB7"
+					type: "checkmark"
+					title: "I see."
+				}
+			]
 		}
 		{
 			title: "Calorite Pins"
@@ -1091,71 +1052,6 @@
 			}]
 		}
 		{
-			title: "Shiny stuff."
-			x: 7.0d
-			y: 5.0d
-			dependencies: ["78932223283B0376"]
-			id: "1AFE0890A33EED11"
-			tasks: [{
-				id: "189F0E07F77D8B42"
-				type: "item"
-				item: "techreborn:platinum_dust"
-			}]
-		}
-		{
-			title: "Those are SOME MODIFIERS"
-			icon: {
-				id: "tconstruct:pickaxe"
-				Count: 1b
-				tag: {
-					tic_stats: {
-						"tconstruct:attack_damage": 1.5f
-						"tconstruct:harvest_tier": "minecraft:iron"
-						"tconstruct:durability": 419.0f
-						"tconstruct:mining_speed": 7.3499994f
-						"tconstruct:attack_speed": 1.14f
-					}
-					Damage: 0
-					tic_multipliers: { }
-					tic_broken: 0b
-					tic_modifiers: [
-						{
-							name: "tconstruct:lustrous"
-							level: 3s
-						}
-						{
-							name: "tconstruct:piercing"
-							level: 1s
-						}
-					]
-					tic_materials: [
-						"tconstruct:platinum"
-						"tconstruct:platinum"
-						"tconstruct:platinum"
-					]
-					tic_persistent_data: {
-						upgrades: 3
-						abilities: 1
-					}
-				}
-			}
-			x: 8.0d
-			y: 5.0d
-			dependencies: ["1AFE0890A33EED11"]
-			id: "2AED9F2474279186"
-			tasks: [{
-				id: "73AFC0EAD6528117"
-				type: "item"
-				item: {
-					id: "tconstruct:tool_binding"
-					Count: 1b
-					tag: {
-						Material: "tconstruct:platinum"
-					}
-				}
-			}]
-		}
-		{
 			x: 7.5d
 			y: -2.5d
 			dependencies: ["4329020373E27B1F"]
@@ -1164,25 +1060,6 @@
 				id: "5FFA5443DC2B2BD4"
 				type: "item"
 				item: "ad_astra:calorite_ingot"
-			}]
-		}
-		{
-			title: "Standing here I realise."
-			icon: {
-				id: "techreborn:cell"
-				Count: 1b
-				tag: {
-					fluid: "kubejs:molten_calorite"
-				}
-			}
-			x: 8.0d
-			y: -3.5d
-			dependencies: ["353DA088F5ABA8FE"]
-			id: "57EBD8E7D0FD7B02"
-			tasks: [{
-				id: "269FE72C838E6864"
-				type: "checkmark"
-				title: "Cool!"
 			}]
 		}
 		{
@@ -1201,23 +1078,59 @@
 			}]
 		}
 		{
-			title: "Lizard idea"
-			x: 3.0d
-			y: -1.5d
+			title: "Thank you for getting this far!"
+			x: 4.4761904761904745d
+			y: 16.52857142857141d
 			shape: "gear"
+			subtitle: "Modpack Complete!"
 			description: [
-				"I suggested peridot cause it would be cool to use the fact both asurine and veridium can be crushed, but people are likely going to already be accumulating peridot due to copper farms. "
+				"In V2.0 we have worked tirelessly to get a unique experience out to everyone! As of this point we plan to continue development, beyond this simple solar system and into dangerous unknowns..."
 				""
-				"I think what would be realy magic is if the plate itself (which can be renamed but can keep the texture) is made by mixing peridot dust with SOME other dust in a machine (I don't know Tech machines well enough to suggest one), and then super heated pressed."
+				"This will involve intricate rocket recipes for the Tier 4, MORE overhauled dimensions, and COUNTELSS other pieces of custom content for you to sink your teeth into."
 				""
-				"Heck, we're near the end game and it doesn't get much more complicated. It could involve mixing more than two dusts."
+				"THANK YOU!!!!"
 			]
-			id: "66B8E55FFD261F0E"
+			dependencies: ["0CE73BAC9F3A9E03"]
+			size: 5.0d
+			id: "69669C2A3E16E328"
 			tasks: [{
-				id: "6160C528738E3AE8"
+				id: "1718FFABE1DE0504"
 				type: "item"
-				item: "techreborn:uvarovite_dust"
+				item: {
+					id: "ad_astra:tier_4_rocket"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "338DB62A4C226423"
+				type: "xp"
+				xp: 1000
+			}]
+		}
+		{
+			title: "Iridium alloy?!"
+			x: 6.5d
+			y: -5.0d
+			description: [
+				"Iridium Alloy Plates can be pressed from this mixture of metals!"
+				""
+				"Follow the recipe chains branching off from the initial chapter 5 quest to discover more, let's see you navigate REI and uncover how to form this?"
+			]
+			dependencies: ["7A4255522DA6FEB7"]
+			id: "056D4E8FC090FBC7"
+			tasks: [{
+				id: "216181CE60CC1B1C"
+				type: "item"
+				item: "techreborn:iridium_alloy_ingot"
+			}]
+			rewards: [{
+				id: "3D2A23CD1106FFDD"
+				type: "item"
+				item: "techreborn:raw_iridium"
+				count: 16
 			}]
 		}
 	]
+	quest_links: [ ]
 }

@@ -150,6 +150,7 @@
 			dependencies: [
 				"306D009F01634115"
 				"2574530C2DBC8B11"
+				"38814494AB07C2D8"
 			]
 			hide: true
 			id: "5453AF2AAC0202B1"
@@ -327,7 +328,7 @@
 			}]
 		}
 		{
-			x: -0.5d
+			x: -3.5d
 			y: -4.0d
 			subtitle: "Crush granite"
 			min_required_dependencies: 1
@@ -344,11 +345,11 @@
 			}]
 		}
 		{
-			x: -0.5d
+			x: -3.5d
 			y: -0.5d
 			shape: "diamond"
 			subtitle: "Wash red sand"
-			description: ["Tin is used in various miscelaneous machines. It is also used in alloying."]
+			description: ["Zinc is primarily used in alloying, although a few machines require zinc."]
 			min_required_dependencies: 1
 			dependencies: [
 				"171F7C7F9622F718"
@@ -358,9 +359,9 @@
 			size: 2.5d
 			id: "288204172129E71B"
 			tasks: [{
-				id: "7B0033047F8008E9"
+				id: "57B3A758FB61DB26"
 				type: "item"
-				item: "techreborn:tin_nugget"
+				item: "create:zinc_nugget"
 			}]
 		}
 		{
@@ -470,7 +471,7 @@
 			}]
 		}
 		{
-			x: -9.5d
+			x: -6.5d
 			y: -4.0d
 			shape: "diamond"
 			subtitle: "Tesla coil charge synthetic redstone crystals"
@@ -490,7 +491,7 @@
 			}]
 		}
 		{
-			x: -14.0d
+			x: -12.5d
 			y: -7.5d
 			subtitle: "Basin pour molten clay onto stone"
 			dependencies: [
@@ -523,7 +524,7 @@
 			}]
 		}
 		{
-			x: -13.0d
+			x: -10.0d
 			y: -4.0d
 			subtitle: "Basin pour lava onto seared stone"
 			min_required_dependencies: 1
@@ -544,7 +545,7 @@
 			y: -0.5d
 			shape: "diamond"
 			subtitle: "Mill or crush asurine"
-			description: ["Zinc is primarily used in alloying, although a few machines require zinc."]
+			description: ["Tin is used in various miscelaneous machines. It is also used in alloying."]
 			min_required_dependencies: 1
 			dependencies: [
 				"7083DC2167188BCF"
@@ -557,11 +558,11 @@
 			tasks: [{
 				id: "254AC2230637213E"
 				type: "item"
-				item: "create:raw_zinc"
+				item: "techreborn:raw_tin"
 			}]
 		}
 		{
-			x: -12.5d
+			x: -9.5d
 			y: -0.5d
 			shape: "diamond"
 			subtitle: "Mill or crush veridium"
@@ -615,7 +616,7 @@
 			x: -21.5d
 			y: -4.0d
 			shape: "diamond"
-			subtitle: "Bulk blast kelp"
+			subtitle: "Bulk smoke kelp"
 			description: [
 				"Dried kelp is used for crafting tunnels, funnels, and belts, which are used a lot in item transportation during automation."
 				""
@@ -1061,7 +1062,7 @@
 			}]
 		}
 		{
-			x: -6.5d
+			x: -3.5d
 			y: 10.0d
 			shape: "diamond"
 			subtitle: "Bulk blast grout"
@@ -1076,13 +1077,13 @@
 			}]
 		}
 		{
-			x: -6.5d
+			x: -3.5d
 			y: 6.5d
 			subtitle: "Mix zinc ingots, andesite alloy, and gravel"
 			dependencies: [
 				"0368B30374467B41"
-				"2B8D64F5CD89A082"
 				"61DC7598AD1BF667"
+				"288204172129E71B"
 			]
 			id: "5A6FC129185EA65C"
 			tasks: [{
@@ -1092,7 +1093,7 @@
 			}]
 		}
 		{
-			x: -3.5d
+			x: -0.5d
 			y: 3.0d
 			shape: "diamond"
 			subtitle: "Cast compound mixture into a basin or ingot cast"
@@ -1113,8 +1114,8 @@
 			}]
 		}
 		{
-			x: -3.5d
-			y: -3.5d
+			x: 1.0d
+			y: 0.0d
 			subtitle: "Mix andesite alloy ingredients"
 			dependencies: [
 				"37EE2561931F2BEF"
@@ -1131,7 +1132,7 @@
 			}]
 		}
 		{
-			x: -3.5d
+			x: -0.5d
 			y: 10.0d
 			shape: "diamond"
 			subtitle: "Deploy andesite alloy onto logs"
@@ -1151,7 +1152,7 @@
 			}]
 		}
 		{
-			x: -3.5d
+			x: -0.5d
 			y: 13.5d
 			shape: "diamond"
 			subtitle: "Sequenced assembly"
@@ -1172,8 +1173,8 @@
 			}]
 		}
 		{
-			x: -6.5d
-			y: 17.0d
+			x: -3.5d
+			y: 16.5d
 			shape: "diamond"
 			subtitle: "Pour molten brass onto copper casing"
 			description: ["Brass casing is important for \"smart\" mechanical machines."]
@@ -1194,7 +1195,7 @@
 		}
 		{
 			title: "Any Tree"
-			x: 2.5d
+			x: 5.5d
 			y: -0.5d
 			shape: "square"
 			subtitle: "Farm any tree, preferably rubber trees"
@@ -1216,7 +1217,7 @@
 			}]
 		}
 		{
-			x: 2.5d
+			x: 5.5d
 			y: 3.0d
 			subtitle: "Farm trees"
 			dependencies: ["5B3FA87A71825852"]
@@ -1235,7 +1236,7 @@
 			}]
 		}
 		{
-			x: -0.5d
+			x: 2.5d
 			y: 6.5d
 			subtitle: "Mechanically saw logs"
 			dependencies: ["7FFED14DF7F210ED"]
@@ -1254,7 +1255,7 @@
 			}]
 		}
 		{
-			x: 5.5d
+			x: 8.5d
 			y: 6.5d
 			shape: "diamond"
 			subtitle: "Bulk blast logs"
@@ -1269,7 +1270,7 @@
 			}]
 		}
 		{
-			x: 2.5d
+			x: 5.5d
 			y: 6.5d
 			subtitle: "Mill or crush rubber logs"
 			dependencies: ["7FFED14DF7F210ED"]
@@ -1281,7 +1282,7 @@
 			}]
 		}
 		{
-			x: 2.5d
+			x: 5.5d
 			y: 10.0d
 			shape: "diamond"
 			subtitle: "Mix or extract sap"
@@ -1296,7 +1297,7 @@
 			}]
 		}
 		{
-			x: 5.5d
+			x: 8.5d
 			y: 10.0d
 			subtitle: "Haunt charcoal"
 			dependencies: [
@@ -1312,7 +1313,7 @@
 			}]
 		}
 		{
-			x: 5.5d
+			x: 8.5d
 			y: 13.5d
 			subtitle: "Grind coal"
 			dependencies: [
@@ -1328,7 +1329,7 @@
 			}]
 		}
 		{
-			x: 5.5d
+			x: 8.5d
 			y: 17.0d
 			shape: "diamond"
 			subtitle: "Implosion compress 64x coal dust"
@@ -1347,7 +1348,7 @@
 			}]
 		}
 		{
-			x: -3.5d
+			x: -0.5d
 			y: 20.5d
 			shape: "diamond"
 			subtitle: "Sequenced assembly"
@@ -1368,15 +1369,15 @@
 			}]
 		}
 		{
-			x: -12.5d
-			y: 10.0d
+			x: -6.5d
+			y: 3.0d
 			shape: "diamond"
 			subtitle: "Heated mix copper and molten, in molten form or ingot form"
 			description: ["Brass is important for creation of \"smart\" mechanical machines."]
 			dependencies: [
-				"2B8D64F5CD89A082"
 				"22BAAD8B7057DF80"
 				"705C815541DB89F8"
+				"288204172129E71B"
 			]
 			hide: true
 			size: 2.5d
@@ -1388,7 +1389,7 @@
 			}]
 		}
 		{
-			x: -12.5d
+			x: -6.5d
 			y: 13.5d
 			subtitle: "Melt brass"
 			dependencies: [
@@ -1433,13 +1434,13 @@
 			}]
 		}
 		{
-			x: -15.5d
-			y: 6.5d
-			subtitle: "Shaped crafting w/ copper rods, or wire mill copper rods."
+			x: -16.0d
+			y: 8.0d
+			subtitle: "rolling mill with copper sheets, or wire mill copper sheet."
 			min_required_dependencies: 2
 			dependencies: [
-				"60F4B7B41F0F242A"
 				"73973C5E6D2573B8"
+				"4FC60CABB568F168"
 			]
 			hide: true
 			id: "7DDCC50A985C6BCC"
@@ -1483,8 +1484,8 @@
 		}
 		{
 			title: "Andesite (From Elsewhere)"
-			x: -4.5d
-			y: -4.5d
+			x: 0.0d
+			y: -1.0d
 			shape: "octagon"
 			hide_dependency_lines: true
 			dependencies: [
@@ -1501,8 +1502,8 @@
 		}
 		{
 			title: "Clay Ball (From Elsewhere)"
-			x: -3.5d
-			y: -5.0d
+			x: 1.0d
+			y: -1.5d
 			shape: "octagon"
 			hide_dependency_lines: true
 			dependencies: [
@@ -1519,8 +1520,8 @@
 		}
 		{
 			title: "Andesite Alloy Nuggets (From Elsewhere)"
-			x: -2.5d
-			y: -4.5d
+			x: 2.0d
+			y: -1.0d
 			shape: "octagon"
 			hide_dependency_lines: false
 			dependencies: [
@@ -1537,26 +1538,26 @@
 					item: "techreborn:tin_nugget"
 				}
 				{
-					id: "32980B9FB44DA047"
-					type: "item"
-					item: "techreborn:zinc_nugget"
-				}
-				{
 					id: "72A753372BD7A5C1"
 					type: "item"
 					item: "minecraft:iron_nugget"
 				}
+				{
+					id: "20014C57F36CCA14"
+					type: "item"
+					item: "create:zinc_nugget"
+				}
 			]
 		}
 		{
-			x: -6.5d
-			y: -0.5d
+			x: -12.5d
+			y: 3.0d
 			shape: "diamond"
 			subtitle: "Shapeless crafting with tin and copper, OR mix molten copper and molten tin"
 			description: ["Bronze is used for the production of cogwheels."]
 			dependencies: [
+				"2B8D64F5CD89A082"
 				"22BAAD8B7057DF80"
-				"288204172129E71B"
 			]
 			size: 2.5d
 			id: "348315EADAE32CA8"
@@ -1568,12 +1569,11 @@
 		}
 		{
 			title: "Gravel (From Elsewhere)"
-			x: -6.5d
-			y: 3.0d
+			x: -4.5d
+			y: 5.5d
 			shape: "octagon"
 			hide_dependency_lines: true
 			dependencies: ["14E90DB150FD5F52"]
-			size: 1.5d
 			id: "61DC7598AD1BF667"
 			tasks: [{
 				id: "638088B046378280"
@@ -1733,7 +1733,7 @@
 		}
 		{
 			x: -9.5d
-			y: 10.0d
+			y: 8.0d
 			subtitle: "Press copper ingots"
 			dependencies: ["22BAAD8B7057DF80"]
 			hide: true
@@ -1742,22 +1742,6 @@
 				id: "0ADBA1FF7F733A32"
 				type: "item"
 				item: "create:copper_sheet"
-			}]
-		}
-		{
-			x: -15.5d
-			y: 3.0d
-			subtitle: "Rolling mill copper ingots"
-			dependencies: [
-				"22BAAD8B7057DF80"
-				"73973C5E6D2573B8"
-			]
-			hide: true
-			id: "60F4B7B41F0F242A"
-			tasks: [{
-				id: "616E77C64268DA82"
-				type: "item"
-				item: "createaddition:copper_rod"
 			}]
 		}
 		{
@@ -1900,6 +1884,8 @@
 				"It will feel sparse at first, but as you continue playing and unlock new machines and new resources, this chapter will automatically update to reflect new automation paths. Check back regularly!"
 				""
 				"Important: just because a resource is in here, DOES NOT MEAN YOU NEED TO AUTOMATE IT. Again, this page is a visualization tool, not a guidebook."
+				""
+				"It will also only go up to resources that can be automated at the end of chapter 3. That being said, following chapters will either introduce the next tier of circuits or casing, or will take advantage of a new stone generator."
 			]
 			dependencies: ["38814494AB07C2D8"]
 			hide: true
@@ -2195,7 +2181,7 @@
 			tasks: [{
 				id: "2A670AE69C494078"
 				type: "item"
-				item: "compressor:triple_compressed_stone"
+				item: "compressor:triple_compressed_andesite"
 			}]
 		}
 		{
@@ -2316,4 +2302,5 @@
 			}]
 		}
 	]
+	quest_links: [ ]
 }

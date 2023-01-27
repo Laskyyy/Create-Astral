@@ -16,6 +16,7 @@
 			subtitle: "A densly condensed singularity, blooming with energy of a divine source."
 			description: ["This is what will allow you to start breaking off limits. Creating this is a tedious process, and involves a lot of materials. I hope your factory is ready for the task, good luck."]
 			dependencies: ["0CE73BAC9F3A9E03"]
+			hide: false
 			size: 2.0d
 			id: "26F58F61AC2DD1B4"
 			tasks: [{
@@ -309,7 +310,6 @@
 			shape: "rsquare"
 			subtitle: "Transcending time."
 			description: ["This marvel of technology allows you to transcend time and space, and enter a new plane of existence. Be. Careful."]
-			dependencies: ["26F58F61AC2DD1B4"]
 			size: 2.0d
 			id: "6E93550DF0302208"
 			tasks: [{
@@ -347,13 +347,33 @@
 					Count: 1b
 					tag: {
 						pages: ["{\"underlined\":true,\"color\":\"blue\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.curseforge.com/minecraft/modpacks/gt-new-horizons\"},\"text\":\"Greg\"}"]
-						resolved: 1b
+						author: "Jorge Luis Borges"
 						display: { }
 						title: "Library Of Babel"
-						author: "Jorge Luis Borges"
+						resolved: 1b
 					}
 				}
 			}]
 		}
+		{
+			x: 5.0d
+			y: -3.0d
+			shape: "gear"
+			description: [
+				"The team behind this back still has big plans for this modpack. Development is not going to end at version 2.0!"
+				""
+				"Although we did have to drop some ideas lest 2.0 takes forever to come out, here's a preview of what's to come in future versions of this pack."
+				""
+				"(This quest chapter can't be completed currently)"
+			]
+			size: 3.0d
+			id: "2D95D41B23C1A644"
+			tasks: [{
+				id: "3F89A2EB629E3339"
+				type: "checkmark"
+				title: "What is This?"
+			}]
+		}
 	]
+	quest_links: [ ]
 }

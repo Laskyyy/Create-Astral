@@ -46,6 +46,7 @@
 				"As you proven your resourcefulness up to now, the quests will be slightly less thorough, and may not tell you every new tool you gained when you craft a new machine. This totally has nothing to do with two different writers writing different halves of the pack. Nope. Not at all."
 			]
 			dependencies: ["63DCF596AAA9A232"]
+			hide: true
 			hide_text_until_complete: false
 			size: 2.0d
 			id: "253F29A00B4EA050"
@@ -905,7 +906,9 @@
 					id: "tconstruct:kama"
 					Count: 1b
 					tag: {
-						Damage: 0
+						tic_multipliers: {
+							"tconstruct:attack_damage": 0.5f
+						}
 						tic_stats: {
 							"tconstruct:attack_damage": 1.5749999f
 							"tconstruct:harvest_tier": "minecraft:netherite"
@@ -913,10 +916,12 @@
 							"tconstruct:mining_speed": 9.6f
 							"tconstruct:attack_speed": 1.6f
 						}
-						tic_multipliers: {
-							"tconstruct:attack_damage": 0.5f
-						}
-						tic_broken: 0b
+						Damage: 0
+						tic_materials: [
+							"tconstruct:hepatizon"
+							"tconstruct:hepatizon"
+							"tconstruct:hepatizon"
+						]
 						tic_modifiers: [
 							{
 								name: "tconstruct:momentum"
@@ -931,11 +936,7 @@
 								level: 1s
 							}
 						]
-						tic_materials: [
-							"tconstruct:hepatizon"
-							"tconstruct:hepatizon"
-							"tconstruct:hepatizon"
-						]
+						tic_broken: 0b
 						tic_persistent_data: {
 							upgrades: 3
 							abilities: 1
@@ -1092,6 +1093,9 @@
 		{
 			x: -12.0d
 			y: 10.0d
+			hide_dependency_lines: true
+			dependencies: ["3A5D7E60EF1C3BC3"]
+			hide: false
 			id: "2DEFDA584C5773FA"
 			tasks: [{
 				id: "738D974CF5F9438E"
@@ -1680,4 +1684,5 @@
 			]
 		}
 	]
+	quest_links: [ ]
 }

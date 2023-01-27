@@ -30,10 +30,8 @@
 				"This material is used for creating cogwheels."
 			]
 			hide_dependency_lines: false
-			dependencies: [
-				"1337920DA45E72AD"
-				"5BE7EBA598FD5EE0"
-			]
+			dependencies: ["5BE7EBA598FD5EE0"]
+			hide: false
 			id: "5268B7CCEDC48422"
 			tasks: [{
 				id: "22254C04A4E1B471"
@@ -124,6 +122,7 @@
 			}]
 		}
 		{
+			title: "10x Iron Sheets"
 			x: -2.0d
 			y: 0.5d
 			description: ["Sheets! Yes! With these there are new options for create blocks. Machines like drills that will assist in mining the first few diamonds or mechanical saws to chop down huge amounts of logs instantaneously are now available."]
@@ -153,10 +152,7 @@
 			title: "Like a Hopper but Super Vertical"
 			x: -3.5d
 			y: 0.5d
-			description: [
-				""
-				"Chutes can drops items in limited stacks from a high inventory to a lower inventory. It can be handy for getting one item to the next machine."
-			]
+			description: ["Chutes can drops items in limited stacks from a high inventory to a lower inventory. It can be handy for getting one item to the next machine."]
 			dependencies: ["4EB4838CCED125E2"]
 			optional: true
 			id: "122CDE9C00B5CA06"
@@ -382,7 +378,7 @@
 			y: 3.5d
 			subtitle: "Power a waterwheel"
 			description: [
-				"Constantly hand-cranking machines isn't sustainable. It'll be necessary to rely on power generators. This is the simplest one: it will provide power (\"stress units\") depending on many of its fins are in contact with flowing water."
+				"Constantly hand-cranking machines isn't sustainable. It'll be necessary to rely on power generators. This is the simplest one: it will provide power (\"stress units\") depending on how many of its fins are in contact with flowing water."
 				""
 				"Water power can last you until the brass age!"
 			]
@@ -468,10 +464,10 @@
 		}
 		{
 			title: "Easy Andesite"
-			x: -4.0d
+			x: 0.0d
 			y: 12.5d
 			subtitle: "Hate finding andesite?"
-			description: ["So do I! When flowing lava touches water over double compressed andesite, it'll have a 1 in 6 chance to spawn an andesite, and stone rest of the time. Better than digging it out."]
+			description: ["So do I! When flowing lava touches water over double compressed andesite, it'll have a 1 in 6 chance to spawn an andesite, and cobblestone the rest of the time. Better than digging it out."]
 			dependencies: ["5BE7EBA598FD5EE0"]
 			id: "1B5245476A321C24"
 			tasks: [
@@ -756,7 +752,7 @@
 		{
 			title: "Get Nether Quartz!"
 			x: -6.5d
-			y: 6.0d
+			y: 5.5d
 			shape: "diamond"
 			subtitle: "With a solid source of diorite, you can produce excess amounts of quartz."
 			description: [""]
@@ -865,6 +861,7 @@
 				"If you're thinking, jeez this is expensive, do not fret! it becomes 1/3rd the cost later."
 			]
 			dependencies: ["5BE7EBA598FD5EE0"]
+			hide: false
 			id: "76704C59FAFCD2E7"
 			tasks: [{
 				id: "11F5577E4AC6319A"
@@ -874,11 +871,11 @@
 			}]
 		}
 		{
-			x: -6.5d
-			y: 5.0d
+			x: -2.0d
+			y: 15.0d
 			subtitle: "Also not a Terraria Reference"
-			description: ["The extracinator takes very kinds of crumbly blocks like gravel and turn them into mob drops. No need for laggy mob farms!"]
-			dependencies: ["1DEF161DE26F3587"]
+			description: ["The extracinator takes various kinds of crumbly blocks like gravel and turns them into mob drops. No need for laggy mob farms!"]
+			dependencies: ["5BE7EBA598FD5EE0"]
 			optional: true
 			id: "392516C890B749C8"
 			tasks: [{
@@ -889,8 +886,8 @@
 		}
 		{
 			title: "Mob farms are soooo last year..."
-			x: -7.5d
-			y: 5.0d
+			x: -3.0d
+			y: 15.0d
 			shape: "diamond"
 			subtitle: "Extractinating sand will result in most overworld mob drops, negating the need to spend time on the same farms you've been building since 2012."
 			dependencies: ["392516C890B749C8"]
@@ -959,7 +956,11 @@
 			x: -3.5d
 			y: -2.0d
 			subtitle: "The Minecraft Dream"
-			description: ["You'll be able to tip your tools with diamond later which will allow you to mine diamonds and all deepslate ore directly."]
+			description: [
+				"You'll be able to tip your tools at a tinker's station, giving your tinker's tool diamond properties."
+				""
+				"You will have the ability to craft vanilla diamond tools in chapter 3."
+			]
 			dependencies: ["5D51B2F9F28ECE8A"]
 			id: "605ECFFA4F1C2736"
 			tasks: [{
@@ -996,7 +997,7 @@
 			x: -1.0d
 			y: -1.0d
 			subtitle: "Bad for the environment"
-			description: ["Much like mechanical drill, the saw can be brought around and used to cut tree. One special advantage is that it will cut down the whole tree at once, provided it removes the final block touching the ground!"]
+			description: ["Much like mechanical drill, the saw can be brought around and used to cut trees. One special advantage is that it will cut down the whole tree at once, provided it removes the final block touching the ground!"]
 			dependencies: ["4EB4838CCED125E2"]
 			id: "0E7A9F741823BB1C"
 			tasks: [{
@@ -1093,11 +1094,13 @@
 			y: -2.0d
 			subtitle: "A helpful hint..."
 			description: [
-				"Placing lave in front of an encased fan will allow you to smelt many ores at once without using fuel by placing them in the fire stream."
+				"Placing lava in front of an encased fan will allow you to smelt many ores at once without using fuel by placing them in the fire stream. If the item can't be smelted, it will be destroyed - this includes items you'd normally put in a smoker."
 				""
 				"Placing water in front of an encased fan will allow you to get bonus resources from ores by putting them in front of the water stream. This will create 9 nuggets instead of ingots, but the free stuff is probably worth it."
 				""
 				"This is called \"bulk blasting\" and \"bulk washing\" respectively."
+				""
+				"And doing this with a campfire instead of water/lava will cook food like a smoker! \"Bulk smoking!\""
 			]
 			dependencies: ["5A0C01D3ED5C49D4"]
 			id: "1FFB7970C388204C"
@@ -1154,7 +1157,7 @@
 			x: 0.5d
 			y: 5.5d
 			subtitle: "Useful Block #2"
-			description: ["A clutch can turn on and off complicated contraption with a flick of a lever. This can save headaches for when you're testing something or developing a kinetic network."]
+			description: ["A clutch can turn on and off a complicated contraption with a flick of a lever. This can save headaches for when you're testing something or developing a kinetic network."]
 			dependencies: ["604CF717881C323A"]
 			id: "2091C55A386F75AB"
 			tasks: [{
@@ -1214,7 +1217,7 @@
 			y: 2.0d
 			shape: "gear"
 			subtitle: "You'll use this forever"
-			description: ["The wrench will allow you to reorient create blocks with a right click. It'll also destroy Create blocks instantly and put them in your inventory with crouch+click."]
+			description: ["The wrench will allow you to reorient create blocks with a right click. It'll also destroy Create blocks instantly and put them in your inventory with crouch+right click."]
 			dependencies: ["6499CD689863283D"]
 			size: 1.25d
 			id: "0C6D01057E4E29FC"
@@ -1255,6 +1258,7 @@
 				""
 			]
 			dependencies: ["1337920DA45E72AD"]
+			hide: true
 			size: 2.5d
 			id: "5BE7EBA598FD5EE0"
 			tasks: [{
@@ -1327,10 +1331,10 @@
 		{
 			title: "Various Stone Generator"
 			icon: "minecraft:bedrock"
-			x: 0.0d
+			x: -4.0d
 			y: 12.5d
 			subtitle: "For when you really do not want to find andesite."
-			description: ["Flowing lava touching water over a piece of bedrock will work like the double-andesite-based generator, but will have a 1/5 chance of producing andesite, and will produce other as side-effects. Of course, you'll have to then dig it out from deep underground. But at least it's an option."]
+			description: ["Flowing lava touching water over a piece of bedrock will work like the double-compressed-andesite-based generator, but will have a 1/5 chance of producing andesite, and will produce other rocks like granite and diorite as side-effects. Of course, you'll have to then dig it out from deep underground. But at least it's an option."]
 			dependencies: ["5BE7EBA598FD5EE0"]
 			id: "2AF2E0A5DF16F5D9"
 			tasks: [
@@ -1352,4 +1356,5 @@
 			]
 		}
 	]
+	quest_links: [ ]
 }

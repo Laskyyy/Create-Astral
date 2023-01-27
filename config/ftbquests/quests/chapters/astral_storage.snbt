@@ -138,16 +138,13 @@
 			x: -5.0d
 			y: 2.0d
 			shape: "pentagon"
-			subtitle: "That sky stone meteorite has rare circuits useful in inventory management!"
+			subtitle: "That lunar meteorites have rare circuits useful in inventory management!"
 			description: [
 				"Note, this tab is a vague guideline surrounding AE2. There are many guides online regarding this! "
 				""
 				"Future plans = establish an intricate guide into the mod"
 			]
-			dependencies: [
-				"306D009F01634115"
-				"790B0567FF49110F"
-			]
+			dependencies: ["790B0567FF49110F"]
 			hide: true
 			size: 2.0d
 			id: "326EB9A775B8D791"
@@ -211,7 +208,8 @@
 			x: -4.5d
 			y: 0.0d
 			subtitle: "Heat certus dust to a high breaking point and form unprocessed silicon."
-			dependencies: ["306D009F01634115"]
+			dependencies: ["790B0567FF49110F"]
+			hide: true
 			id: "227EF17194467491"
 			tasks: [
 				{
@@ -352,7 +350,7 @@
 		{
 			x: -7.0d
 			y: -0.5d
-			dependencies: ["306D009F01634115"]
+			dependencies: ["326EB9A775B8D791"]
 			id: "44A1430FFC4819D5"
 			tasks: [{
 				id: "20C52412573D6811"
@@ -408,5 +406,24 @@
 				item: "ae2:fluix_pearl"
 			}]
 		}
+		{
+			title: "An energetic stone type..."
+			x: -3.5d
+			y: 1.0d
+			description: [
+				"Sky Stone (AE2) Can no longer be obtained in meteors."
+				""
+				"It generates in large, rare pockets under the moon's surface. Take note, if you see any!"
+			]
+			dependencies: ["326EB9A775B8D791"]
+			id: "432AF29897E50CDC"
+			tasks: [{
+				id: "5A0FC85522C49C1B"
+				type: "item"
+				item: "ae2:sky_stone_block"
+				count: 64L
+			}]
+		}
 	]
+	quest_links: [ ]
 }
