@@ -1,0 +1,36 @@
+{
+  "type": "techreborn:industrial_electrolyzer",
+  "power": 100,
+  "time": 1100,
+  "ingredients": [
+    {
+      "item": "techreborn:clay_dust",
+      "count": 16
+    },
+    {
+      "item": "techreborn:cell",
+      "count": 3,
+      "nbt": "empty"
+    }
+  ],
+  "results": [
+    {
+      "item": "techreborn:cell",
+      "nbt": {
+        "fluid": "techreborn:lithium"
+      },
+      "count": 2
+    },
+    {
+      "item": "techreborn:cell",
+      "nbt": {
+        "fluid": "techreborn:sodium"
+      },
+      "count": 1
+    },
+    {
+      "item": "techreborn:lazurite_dust",
+      "count": 2
+    }
+  ]
+}
