@@ -1320,6 +1320,18 @@ onEvent('worldgen.add', event => {
 			.triangleHeight(60, 110)
     ore.size = 60
 	})
+
+  event.addOre((ore) => {
+		ore.id = "kubejs:basalt" // optional
+		ore.biomes = ['ad_astra:lunar_wastelands', 'minecraft:basalt_deltas', 'incendium:toxic_heap']
+		ore.addTarget('#ad_astra:moon_ore_replaceables', 'ae2:sky_stone_block')
+
+
+		ore.count([1, 2])
+			.squared()
+			.triangleHeight(60, 110)
+    ore.size = 25
+	})
   
 })
   
