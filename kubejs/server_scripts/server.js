@@ -1056,6 +1056,8 @@ onEvent('recipes', event => {
 	event.remove({output: 'minecraft:stone_hoe'})
 	event.remove({output: 'minecraft:stone_shovel'})
 	event.remove({output: 'minecraft:stone_axe'})
+  event.remove({output: 'mcdw:pick_diamond_pickaxe_var'})
+  event.remove({output: 'mcdw:sword_diamond_sword_var'})
 	
 	event.remove({output: 'minecraft:furnace'})
 	event.remove({output: 'minecraft:blast_furnace'})
