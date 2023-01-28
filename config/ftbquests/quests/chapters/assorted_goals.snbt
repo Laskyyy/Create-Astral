@@ -660,6 +660,106 @@
 						}
 					}
 				}
+				{
+					id: "609CF8463DB47D2B"
+					type: "item"
+					item: {
+						id: "minecraft:player_head"
+						Count: 1b
+						tag: {
+							SkullOwner: {
+								Id: [I;
+									-2124979794
+									-1623767791
+									-1716679678
+									86603787
+								]
+								Properties: {
+									textures: [{
+										Value: "ewogICJ0aW1lc3RhbXAiIDogMTY3NDg2MzUzNTcwMiwKICAicHJvZmlsZUlkIiA6ICI4MTU3NjFhZTlmMzc0NTExOTlhZDhjMDIwNTI5NzgwYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJMaXphcmRMZWxpZWwiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTBiY2I4Mzk2OTVmMmY4OWY3NTM4YWQwY2E2ZWMyN2RlMzFkN2FiMzU5YjczNTk0NDU3Y2U3YjQ2OWQ5OWI0NCIKICAgIH0KICB9Cn0="
+										Signature: "OD4iPLtIWSWy4um9omOwi/YewdlazvfM0iMS/IwUlfY59AybhHqEcZ6srl9Ij2XxjXLAJAYC/HovHQJBMFcNc92228FPtxB5Bj9Z4AyYJGhst9FYPPZn4KVIziMwFzBkcNXzt1Vcee5PPP8LWLW433S8Fl3039FoS/S8VIOAS69llywc6YJb1U5UXavpfV660vwbtfY5LU24ehd0+T822ZhA8ti7qYcJb02C3I/IXtpFrLbpv0Is84LKkomQ/laBFgVXYq4bTX/wbE1hJtocn3uluroPC3UmHZvUegYEyjbTDKx78Uwy58DfnAfd3gHY0uyFSfvKbw3FYIRL63ulPyfBfqoOwPds3iQ4qQ1+fW1cYC11Ji2wBqPzdlzE8jV3T8EnOuf5riKx2IQOTfA/6WnT9oJUSM1Huos5Rhw4BnBpnvvn7fZaTRL3hAdGhaT2d4ifBfPAxeINT9vD8DSxo26G02snSNtVPdFuKOuHjUmTtisNBgMgkssxmOkZngPkMPvXHY7/Rw+eZsOzCslhqTrm6WGs0P3hBn5FBRvBGAD83SVfRgE5QCR+LilBTtS90/62ZZsBr4s1yTe6glszEl16x7Sm+mmfA+wGlG6W2okAWxlXOqBbgzDh7ZC3s9YTFWtB1rU0hie00LBE6o5rtTfY4PjOnD+NdidjZ6hzEC4="
+									}]
+								}
+								Name: "LizardLeliel"
+							}
+						}
+					}
+				}
+				{
+					id: "394AE8ECA675E599"
+					type: "item"
+					item: {
+						id: "minecraft:player_head"
+						Count: 1b
+						tag: {
+							SkullOwner: {
+								Id: [I;
+									-1286523196
+									-715437022
+									-1434531122
+									-991854955
+								]
+								Properties: {
+									textures: [{
+										Value: "ewogICJ0aW1lc3RhbXAiIDogMTY3NDg2MzU0MTA4MSwKICAicHJvZmlsZUlkIiA6ICJiMzUxMzZjNGQ1NWI0YzIyYWE3ZWNhY2VjNGUxN2U5NSIsCiAgInByb2ZpbGVOYW1lIiA6ICJldGhhbmljdXNzIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzlmNDU2YTZlMTBmMGEyNDQ4ZjI4ODU5OWI4MDQ1NzQ5NTdmZDJiOTU0NTA5OTRmMzBmOGMyNDM4YmU3Zjc1NDUiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+										Signature: "cM67wNDvjZhJkQf6c85wJriG54+R/7MBsU8Wyzo6euT8HQl1bQieV5MaJ8LY8mDMG3Pn5PYu1MWTYIgU//p1ZyjbgNYONA1SHYYNxb6jfor3NiCzmaamWkxkDC2TmhBod8yHUCVp2nybvd/xplaldtIKb+26UqH4Kub5OSGeubyDKLnLOOtdJARHfOmEkLwCzk3v16ZQ8muk0oP3WV9A+ED/eyJAvA+HqjSRJ8kQLvX6kjg+Xipb51rf3NInx7B+q0Ia6d8NrdOjz/VLDQXWuZbvzF4HG8S216nb5khedznao5P3Y+nhzqe9V5QVESp9B8b1HKPYp7ilKl/L+OySZEGXlyg33dC3XYcsnlXyud81uzkajylk4yc1iOgggIzuHmTXh3wPF/ILNBqo2I0S1G8Blcsv58aJ0e2xgpztP86o5ku1icOE5R7bhbc54s2wTYgzc7mh/t43nGoIoDh+wU0QX9RWYXgGpSmj6clSD+qs9+JWuItGCgL6Wz5y1SnEv89QrsCTblWX8MLRO/k490vnysBWdZZ4ZjiS1/uZX368Zo2Pln9fKgVIccuy/YBvizEWMvaUd17iIzQeRmJZArExcctaLPWwZOV1bdUt1G9Nyxc5ob8IiHtgIuvRIbQ3SVYTEPfCJtzEeBcmTy4hd9D7scTEb3UPAD6AOBKYjJA="
+									}]
+								}
+								Name: "ethanicuss"
+							}
+						}
+					}
+				}
+				{
+					id: "19D937808B6B0A81"
+					type: "item"
+					item: {
+						id: "minecraft:player_head"
+						Count: 1b
+						tag: {
+							SkullOwner: {
+								Id: [I;
+									209808190
+									-1244902414
+									-1756542517
+									342281462
+								]
+								Properties: {
+									textures: [{
+										Value: "ewogICJ0aW1lc3RhbXAiIDogMTY3NDg2MzU0Njc4OCwKICAicHJvZmlsZUlkIiA6ICIwYzgxNmIzZWI1Y2M0YmYyOTc0ZDQ5Y2IxNDY2Y2NmNiIsCiAgInByb2ZpbGVOYW1lIiA6ICJpZWF0dXJrbmVlY2FwcyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS80N2QyMmE4Y2RkOGM1YzZjYmIwOGY4MGE0NmUwZDFhNGMyNjAwYjVmNDVmNTA5ZDY2ZDU3YzZmZmUxMGE5ODk4IgogICAgfQogIH0KfQ=="
+										Signature: "jcGzVKHNXeU4tFQLw/oLvPGMEiSB7uyTRkQbj7pDIllcVUqH8M3uhzBmukCGF0NAWJY+glFaOxpu72BiPnYNTisEpB9WgXk0XG0A4WXn5lrsMP0rQk1OjqxUYy6FIrzgYwQ+xuhGZzwdfDfZWnvmb6wkWN01jjW+OvmHPLYiDJ/qbtmomfNDr0xy9XgPUFk7v6M+wsrE9seAikw48XK7kg4vsWq0wdZeF88VL41PAGNPQWza65n8CA8E4TcEyYjUOGIwHXLkxHkrDezWXFnhHwvSinRY9PuVdMhC0mAWidAFytGCYjL16uUxBcYKcgqtAajyPREFggHwHLAQaKxsNIgsphbfLMqK29lR4EkMm8Gmb9LkfwrbU9GM4vO9kfdvXauMEnjD9GwqsrR6nx3l0R79OI7Lm48RJzF/T8CGZWoeLfhjIWfhf0UBnz/VyNn3EF1kt6zWfofpsMXVHmRsk3n8UL8vApAhDkxStsCD9R6g4iqdJSYyRiwRpqKby68cuHxo+ToLIcOv9PsbzWXf6OIn4er/eHHLNqrrlJjfDtDG5OigunUM+Oi+b7nr1tby0sEYbwPrENIKB0fgcNGG03HICNFyl0MSnC/hZvlZ8nU+etFx5Pqt7BC0+Ae6feJGkZt6Pab1jjA+BkCKnX4ycWe+NY3DKY9PMwrnwwOyh6U="
+									}]
+								}
+								Name: "ieaturkneecaps"
+							}
+						}
+					}
+				}
+				{
+					id: "7EA8F047CCE136B9"
+					type: "item"
+					item: {
+						id: "minecraft:player_head"
+						Count: 1b
+						tag: {
+							SkullOwner: {
+								Id: [I;
+									-1500031391
+									-2083962386
+									-1695679908
+									2049130246
+								]
+								Properties: {
+									textures: [{
+										Value: "ewogICJ0aW1lc3RhbXAiIDogMTY3NDg2MzY1Nzc1NiwKICAicHJvZmlsZUlkIiA6ICJhNjk3NTY2MTgzYzk0MWVlOWFlZGZhNWM3YTIzM2YwNiIsCiAgInByb2ZpbGVOYW1lIiA6ICJDaG9jb05lb3NvbWUiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWFhMzI3ODJiMDFmNjA0ZTIxYjIyZWI2MWU5MjAwNzNkOWExNGYwZWZhZTQ2ZjNlZWNiZTRhOWVkNTA3M2U1NiIKICAgIH0KICB9Cn0="
+										Signature: "e6AVGhXYQ36HUTlFiWt7yNEbsfNaT2sLEOtCcyMVu/GqF9iYAnNQ9JbX8UFoTO0ScnZjxiOw0sWwatHHkXacM0xyF0V6slIk5vWT5yQeMLsEqI4NZiiCFiw8eWVPzeJvwp0cjKHI2l5qe2RofN+yWbnux56Poo1Z/FAZUeYraHq4vF9mZXd7FpztO8bB3Jo06udyXGkb7Yd8Von0tmQY4KkPtRbhDds9J1Ma5IVpyBnajmACs2/JjR5Sjkmtjj7Rojb2uZcBTj3V+lHOM2kgmZMIuerGO5kraoSfJXYsAn+ZCfkvuju8Wmf03Z0Vu8GAubqJYCDbSzgxITpjMpy9p0sMo9JeLMlDx+2sqI0nmDJx+ayBGvGIr/ExWIkpzIFPFM7bDck69SWE21JMTO+BfDRwCH82Ab5skXrOUBYdcrPcYMa+djsehv3AkWD/3wqOFiJJarP40dX7xutHgQMomS5S2nZ+Fl6PWEvyRbQH7m+rD/ZMVrq3EjwV0zuNikBAttDD6dKFCJjW9VORT8D/hGzdmrfNCVTF4e1qtPe9GbgCQhhvkcYpkIq8SMVvYBwsaipi+bmmFoB9roLStOfQEjxwu6kY/Pah4LU/4bnRmGB2YZ6ZPOlO+KVMCE2OXKqKy20mOw7VSEfK3zT9PgTYK7xtudTxZv2r2I5iHH5RMlQ="
+									}]
+								}
+								Name: "ChocoNeosome"
+							}
+						}
+					}
+				}
 			]
 			rewards: [{
 				id: "3041554AA6080450"
