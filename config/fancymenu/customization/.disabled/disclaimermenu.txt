@@ -267,13 +267,13 @@ customization {
   enable_scrolling = false
   shadow = true
   scale = 1.0
-  source = Menu by iris & laky <3
+  source = Menu by iris <3
   text_border = 0
   case_mode = normal
   source_mode = direct
   line_spacing = 1
   x = 111
-  width = 112
+  width = 81
   action = custom_layout_element:fancymenu_customization_item_text
   actionid = 2f5d676c-b14f-4869-96c8-28ad56590b061671053719297
   y = -14
@@ -316,7 +316,7 @@ customization {
   actionid = aaf2bdfa-c2af-4837-910c-0f0e42bca1581671209338152
   action = addsplash
   y = 25
-  text = hello traveler
+  text = hello traveler, hello traveler, hello traveler
 }
 
 customization {
@@ -374,6 +374,44 @@ customization {
   backgroundnormal = kubejs/assets/createastral/textures/item/logodiscord.png
   value = https://discord.gg/mNeHyuZdqm
   height = 47
+}
+
+customization {
+  orientation = top-left
+  enable_scrolling = false
+  shadow = true
+  scale = 2.0
+  source = IN DEVELOPMENT VERSION:
+  text_border = 1
+  case_mode = upper
+  source_mode = direct
+  line_spacing = 1
+  x = 382
+  width = 286
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 3505e6b4-7c26-4ab2-acc5-c8ad4d88313b1674423268646
+  y = 194
+  alignment = centered
+  height = 38
+}
+
+customization {
+  orientation = top-left
+  enable_scrolling = false
+  shadow = true
+  scale = 2.0
+  source = Content is WIP
+  text_border = 1
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = 386
+  width = 286
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = b69dd0a0-92aa-4367-93c3-990fc7d5cff51674423352327
+  y = 220
+  alignment = centered
+  height = 40
 }
 
 customization {
