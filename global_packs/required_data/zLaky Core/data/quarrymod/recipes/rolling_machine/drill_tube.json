@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    " A ",
+    " S "
+  ],
+  "key": {
+    "A": {
+      "item": "techreborn:advanced_alloy_plate"
+    },
+    "S": {
+      "tag": "c:steel_plates"
+    }
+  },
+  "result": {
+    "item": "quarrymod:drill_tube",
+    "count": 6
+  }
+}

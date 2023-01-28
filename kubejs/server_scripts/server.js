@@ -1498,7 +1498,7 @@ onEvent('recipes', event => {
   event.replaceInput({mod: 'quarrymod'}, 'techreborn:peridot_plate', 'ad_astra:compressed_steel')
   event.replaceInput({mod: 'quarrymod'}, 'techreborn:silicon_plate', 'techreborn:carbon_mesh')
   event.replaceInput({mod: 'quarrymod'}, 'techreborn:lapis_plate', 'create:lapis_sheet')
-  event.replaceInput({mod: 'quarrymod'}, 'techreborn:peridot_storage_block', 'createastral:olivine_plate')
+  event.replaceInput({mod: 'quarrymod'}, 'techreborn:peridot_storage_block', 'createastral:olivine_sheet')
   event.replaceInput({mod: 'quarrymod'}, 'techreborn:titanium_plate', 'ad_astra:compressed_steel')
   event.replaceInput({mod: 'quarrymod'}, 'techreborn:tungstensteel_plate', 'create:shadow_steel')
 
