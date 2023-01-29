@@ -78,19 +78,19 @@
       "minecraft:bedrock": [
         {
           "id": "minecraft:stone",
-          "weight": 40.0
+          "weight": 100
         },
         {
           "id": "minecraft:granite",
-          "weight": 20.0
+          "weight": 3
         },
         {
           "id": "minecraft:diorite",
-          "weight": 20.0
+          "weight": 3
         },
         {
           "id": "minecraft:andesite",
-          "weight": 20.0
+          "weight": 3
         }
       ],
       "ad_astra:moon_stone": [
@@ -150,19 +150,19 @@
       "minecraft:bedrock": [
         {
           "id": "minecraft:stone",
-          "weight": 40.0
+          "weight": 100
         },
         {
           "id": "minecraft:diorite",
-          "weight": 20.0
+          "weight": 3
         },
         {
           "id": "minecraft:andesite",
-          "weight": 20.0
+          "weight": 3
         },
         {
           "id": "minecraft:granite",
-          "weight": 20.0
+          "weight": 3
         }
       ]
     },
