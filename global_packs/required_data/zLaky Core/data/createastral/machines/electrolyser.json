@@ -55,7 +55,7 @@
       "capacity": 810000,
       "id": "watertank",
       "maxInput": 666,
-      "maxOutput": 1000,
+      "maxOutput": 0,
       "filter": ["minecraft:water"],
       "whitelist": true
   },
@@ -63,7 +63,7 @@
       "type": "custommachinery:fluid",
       "capacity": 810000,
       "id": "oxygentank",
-      "maxInput": 666,
+      "maxInput": 0,
       "maxOutput": 1000,
       "filter": ["ad_astra:oxygen"],
       "whitelist": true
