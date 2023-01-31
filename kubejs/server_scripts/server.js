@@ -719,8 +719,14 @@ function lizardGeologyAlchemyChanges(event) {
     Item.of('minecraft:raw_copper').withChance(.3)
   ], 'create:veridium');
   event.recipes.createMilling([
-    Item.of('techreborn:raw_tin').withChance(.1)
+    Item.of('techreborn:raw_tin').withChance(.15)
   ], 'create:asurine');
+  event.recipes.createMilling([
+    Item.of('minecraft:raw_iron').withChance(.15)
+  ], 'create:crimsite');
+  event.recipes.createMilling([
+    Item.of('minecraft:raw_gold').withChance(.1)
+  ], 'create:ochrum');
 
   // Diorite, Granite, and Andesite crushing
   event.recipes.createCrushing([
@@ -807,6 +813,8 @@ function lizardGeologyAlchemyChanges(event) {
     Item.of('techreborn:tin_nugget').withChance(.3),
     Item.of('minecraft:clay_ball').withChance(.2)
   ], 'create:asurine');
+
+  
 
   // Crushing Veridium bonus gains + peridot dust for ch 4+
   event.recipes.createCrushing([
