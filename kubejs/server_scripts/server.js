@@ -469,7 +469,7 @@ function lizardCH3Biofuel(event) {
   event.recipes.createSplashing([
     'createastral:pure_biomatter',
     Item.of('minecraft:sugar').withChance(.2),
-    Item.of('minecraft:bonemeal').withChance(.2),
+    Item.of('minecraft:bone_meal').withChance(.2),
   ], 'createaddition:biomass')
   
 
