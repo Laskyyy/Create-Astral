@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 7
 	filename: "6_raow"
-	title: "5) Sub-Atomic"
+	title: "{chapter.8.title}"
 	icon: "createastral:subatomic_ingot"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -37,12 +37,8 @@
 		{
 			x: 3.5d
 			y: 6.0d
-			subtitle: "A godly tinker material."
-			description: [
-				"Extremely brittle, but so fast, and so upgradeable."
-				""
-				"Surround chromatic compounds with a LOT of light (you are going to need more than usual)"
-			]
+			subtitle: "{chapter.8.quest.1.subtitle}"
+			description: ["{chapter.8.quest.1.description.1}"]
 			dependencies: ["17794A6A366C8497"]
 			id: "1E93A90AEF614FA3"
 			tasks: [{
@@ -63,16 +59,12 @@
 			}]
 		}
 		{
-			title: "This is an Astral matter."
+			title: "{chapter.8.quest.2.title}"
 			x: 4.5d
 			y: 3.0d
 			shape: "square"
-			subtitle: "Heh, get it?"
-			description: [
-				"UU Matter is a substance which can be utilised in the synthesis of various items. However, it can be harnessed into something even more powerful..."
-				""
-				"Start with mixing this with a superheated burner and some shimmer to form a few chromatic compounds."
-			]
+			subtitle: "{chapter.8.quest.2.subtitle}"
+			description: ["{chapter.8.quest.2.description.1}"]
 			dependencies: [
 				"6F1D5D69B4E9266E"
 				"18B380AA3519AFCE"
@@ -94,17 +86,11 @@
 			}]
 		}
 		{
-			title: "Aw man, more of this circuit garbage?"
+			title: "{chapter.8.quest.3.title}"
 			x: 6.0d
 			y: 0.0d
 			shape: "square"
-			description: [
-				"Lithium and calorite will allow for the creation of cool new circuits with tasty capabilities..."
-				""
-				"The process for this one will be familiar with the ones you made in chapter 4. These utilise calorite pins and lithium,"
-				""
-				"As you are fairly adept at using REI at this point, I will spare the details on it's creation."
-			]
+			description: ["{chapter.8.quest.3.description.1}"]
 			dependencies: [
 				"3091F7AC37F848AD"
 				"77E9682ED4C5C74D"
@@ -139,7 +125,7 @@
 			]
 		}
 		{
-			title: "This amount of storage is just getting frankly silly..."
+			title: "{chapter.8.quest.4.title}"
 			x: 4.0d
 			y: 1.0d
 			dependencies: ["11F776AD4AEA326A"]
@@ -179,12 +165,12 @@
 			}]
 		}
 		{
-			title: "Welcome to the heat death of the universe."
+			title: "{chapter.8.quest.6.title}"
 			x: 4.5d
 			y: -3.75d
 			shape: "pentagon"
-			subtitle: "Enjoy your stay."
-			description: ["Home to the most hazardous terrain of any planet you've seen so far, mercury holds lucrative returns for those brave enough to explore it."]
+			subtitle: "{chapter.8.quest.6.subtitle}"
+			description: ["{chapter.8.quest.6.description.1}"]
 			dependencies: ["5BD2D0F7F0D70180"]
 			hide: true
 			size: 3.0d
@@ -210,7 +196,7 @@
 			]
 		}
 		{
-			title: "Ores of mercury"
+			title: "{chapter.8.quest.7.title}"
 			x: 6.5d
 			y: -2.5d
 			dependencies: ["7A4255522DA6FEB7"]
@@ -229,7 +215,7 @@
 			]
 		}
 		{
-			title: "Go! Mega Drill!"
+			title: "{chapter.8.quest.8.title}"
 			x: 0.0d
 			y: 1.0d
 			dependencies: ["3705B91C0D4EA2A0"]
@@ -248,7 +234,7 @@
 			}]
 		}
 		{
-			title: "Go! Mega Chainsaw!"
+			title: "{chapter.8.quest.9.title}"
 			x: -0.5d
 			y: 0.0d
 			dependencies: ["3705B91C0D4EA2A0"]
@@ -267,7 +253,7 @@
 			}]
 		}
 		{
-			title: "Go! Mega Jackhammer!"
+			title: "{chapter.8.quest.10.title}"
 			x: 0.0d
 			y: -1.0d
 			dependencies: ["3705B91C0D4EA2A0"]
@@ -286,11 +272,11 @@
 			}]
 		}
 		{
-			title: "With big power comes big responsibility."
+			title: "{chapter.8.quest.11.title}"
 			x: 2.5d
 			y: 1.5d
-			subtitle: "The matter fabricator uses 2000 units of power a tick."
-			description: ["Make sure your power generation  has been given ample time to adapt to this..."]
+			subtitle: "{chapter.8.quest.11.subtitle}"
+			description: ["{chapter.8.quest.11.description.1}"]
 			dependencies: ["3705B91C0D4EA2A0"]
 			id: "6F1D5D69B4E9266E"
 			tasks: [{
@@ -300,11 +286,11 @@
 			}]
 		}
 		{
-			title: "Data floeee..."
+			title: "{chapter.8.quest.12.title}"
 			x: 2.25d
 			y: 0.0d
 			shape: "square"
-			description: ["This chip is an in-between component used in multiple new recipes. Including storage and upgrades of your tech reborn tools."]
+			description: ["{chapter.8.quest.12.description.1}"]
 			dependencies: [
 				"11F776AD4AEA326A"
 				"4347500C31C8D0DD"
@@ -329,11 +315,11 @@
 			}]
 		}
 		{
-			title: "Where we're going, we going to need MOOOORE power...."
+			title: "{chapter.8.quest.13.title}"
 			x: 5.5d
 			y: 6.0d
-			subtitle: "Create a fusion control system."
-			description: ["Place the block and use the multiblock hologram to guide you where to go, any radius higher than default is unncecessary, and will likely drive you insane."]
+			subtitle: "{chapter.8.quest.13.subtitle}"
+			description: ["{chapter.8.quest.13.description.1}"]
 			dependencies: ["7A25FF7058F0C3CD"]
 			id: "78932223283B0376"
 			tasks: [{
@@ -363,11 +349,11 @@
 			]
 		}
 		{
-			title: "All coiled up."
+			title: "{chapter.8.quest.14.title}"
 			x: 5.0d
 			y: 5.0d
-			subtitle: "Don't lick, very electric."
-			description: ["These are required to satisfy the multiblock conditions for the fusion  controller."]
+			subtitle: "{chapter.8.quest.14.subtitle}"
+			description: ["{chapter.8.quest.14.description.1}"]
 			dependencies: ["00EB34849356498A"]
 			id: "7A25FF7058F0C3CD"
 			tasks: [{
@@ -377,10 +363,10 @@
 			}]
 		}
 		{
-			title: "Armour of *radiant* capability"
+			title: "{chapter.8.quest.15.title}"
 			x: 1.0d
 			y: 5.5d
-			subtitle: "Look it even shines"
+			subtitle: "{chapter.8.quest.15.subtitle}"
 			dependencies: ["1E93A90AEF614FA3"]
 			optional: true
 			id: "5E7A2EC55B6B1DF9"
@@ -432,11 +418,11 @@
 			]
 		}
 		{
-			title: "Scrap to diamonds"
+			title: "{chapter.8.quest.16.title}"
 			x: 6.5d
 			y: 3.5d
-			subtitle: "Scrap recyclers can produce anything from scrap, pretty much. "
-			description: ["But why do that when you can produce stacks upon stacks of it to only convert it into UU Matter..."]
+			subtitle: "{chapter.8.quest.16.subtitle}"
+			description: ["{chapter.8.quest.16.description.1}"]
 			hide_dependency_lines: true
 			dependencies: ["6F1D5D69B4E9266E"]
 			id: "2605212C0EC5C277"
@@ -448,10 +434,10 @@
 			}]
 		}
 		{
-			title: "Environmentally approved."
+			title: "{chapter.8.quest.17.title}"
 			x: 6.5d
 			y: 2.5d
-			subtitle: "Turn any random ol' garbage into useful scrap."
+			subtitle: "{chapter.8.quest.17.subtitle}"
 			hide_dependency_lines: true
 			dependencies: ["7A4255522DA6FEB7"]
 			id: "18B380AA3519AFCE"
@@ -462,10 +448,10 @@
 			}]
 		}
 		{
-			title: "Producing Iridium raw ore from the blocks."
+			title: "{chapter.8.quest.18.title}"
 			x: 2.25d
 			y: -3.75d
-			subtitle: "A fresh new multiblock can provide that very feature."
+			subtitle: "{chapter.8.quest.18.subtitle}"
 			dependencies: [
 				"7A4255522DA6FEB7"
 				"160490A7E60FC575"
@@ -505,14 +491,8 @@
 		{
 			x: 4.5d
 			y: 6.0d
-			subtitle: "An unbreaking tinker material."
-			description: [
-				"Marvelously strong, perfect for a tool binding or handle."
-				""
-				"Drop chromatic compound into the VOID."
-				""
-				"But wait, we haven't reached the end? I'm sure you can find an alternate way to access the deep abyss in other dimensions..."
-			]
+			subtitle: "{chapter.8.quest.19.subtitle}"
+			description: ["{chapter.8.quest.19.description.1}"]
 			dependencies: ["17794A6A366C8497"]
 			id: "69F63D2FA5384442"
 			tasks: [{
@@ -533,15 +513,11 @@
 			}]
 		}
 		{
-			title: "The Chromatic Compound"
+			title: "{chapter.8.quest.20.title}"
 			x: 4.0d
 			y: 5.0d
-			subtitle: "A rather Create-ive material"
-			description: [
-				"This quirky little compound is used in the formation of  Refined Radiance and Shadow Steel."
-				""
-				"Mix some UwU matter with shimmer and watch the magic happen."
-			]
+			subtitle: "{chapter.8.quest.20.subtitle}"
+			description: ["{chapter.8.quest.20.description.1}"]
 			dependencies: ["00EB34849356498A"]
 			id: "17794A6A366C8497"
 			tasks: [{
@@ -557,7 +533,7 @@
 		{
 			x: 1.5d
 			y: 12.0d
-			subtitle: "You did not need this much cobblestone."
+			subtitle: "{chapter.8.quest.21.subtitle}"
 			hide_dependency_lines: true
 			dependencies: ["3ED703EAA646A18A"]
 			optional: true
@@ -571,7 +547,7 @@
 		{
 			x: -1.0d
 			y: 8.5d
-			subtitle: "Funny box of lava."
+			subtitle: "{chapter.8.quest.22.subtitle}"
 			hide_dependency_lines: true
 			dependencies: ["3ED703EAA646A18A"]
 			optional: true
@@ -585,7 +561,7 @@
 		{
 			x: -0.5d
 			y: 10.5d
-			subtitle: "The power however, is gracefully welcomed."
+			subtitle: "{chapter.8.quest.23.subtitle}"
 			hide_dependency_lines: true
 			dependencies: ["3ED703EAA646A18A"]
 			optional: true
@@ -597,10 +573,10 @@
 			}]
 		}
 		{
-			title: "Let there be flight!"
+			title: "{chapter.8.quest.24.title}"
 			x: 3.0d
 			y: 7.5d
-			subtitle: "By charging this up, you obtain a limited but powerful flight ability that scales the lower gravity is! On earth it is pretty effective, but in space is where the real action is."
+			subtitle: "{chapter.8.quest.24.subtitle}"
 			hide_dependency_lines: false
 			dependencies: ["3ED703EAA646A18A"]
 			id: "0299295DF9D47181"
@@ -652,16 +628,12 @@
 			]
 		}
 		{
-			title: "the new bar or whatever it's called"
+			title: "{chapter.8.quest.25.title}"
 			x: 4.5d
 			y: 8.5d
 			shape: "hexagon"
-			subtitle: "fuckin uhhhh conglomerate ingot"
-			description: [
-				"Initiate Fusion between a piece of shadow steel, and a piece of refined radiance. "
-				""
-				"This super-energised alloy is capable of an insane amount of power transfer and durability, proving it as a useful material in powerful items and machines."
-			]
+			subtitle: "{chapter.8.quest.25.subtitle}"
+			description: ["{chapter.8.quest.25.description.1}"]
 			dependencies: [
 				"1E93A90AEF614FA3"
 				"69F63D2FA5384442"
@@ -682,10 +654,10 @@
 			}]
 		}
 		{
-			title: "Bucket of Quark-Gluon Plasma Fluid"
+			title: "{chapter.8.quest.26.title}"
 			x: 6.5d
 			y: 11.5d
-			subtitle: "FUUUUSE WITH SHIMMERRR"
+			subtitle: "{chapter.8.quest.26.subtitle}"
 			dependencies: [
 				"3ED703EAA646A18A"
 				"5779A205B598A69B"
@@ -704,10 +676,10 @@
 			}]
 		}
 		{
-			title: "The Singularity Framework"
+			title: "{chapter.8.quest.27.title}"
 			x: 2.5d
 			y: 11.5d
-			description: ["Compress 256k items into a singularity."]
+			description: ["{chapter.8.quest.27.description.1}"]
 			dependencies: ["0A6A678C1179157D"]
 			id: "16A2464A968635F7"
 			tasks: [{
@@ -717,11 +689,11 @@
 			}]
 		}
 		{
-			title: "Become as gods."
+			title: "{chapter.8.quest.28.title}"
 			x: 4.5d
 			y: 13.5d
-			subtitle: "A densly condensed singularity, blooming with energy of a divine source."
-			description: ["This is what will allow you to start breaking off limits. Creating this is a tedious process, and involves a lot of materials. I hope your factory is ready for the task, good luck."]
+			subtitle: "{chapter.8.quest.28.subtitle}"
+			description: ["{chapter.8.quest.28.description.1}"]
 			dependencies: [
 				"585CEEAE5CADECA0"
 				"16A2464A968635F7"
@@ -752,11 +724,11 @@
 			]
 		}
 		{
-			title: "With the heat of sun."
+			title: "{chapter.8.quest.29.title}"
 			x: 7.5d
 			y: 7.5d
-			subtitle: "We will conquer the universe."
-			description: ["An artificial recreation of the surface of the sun, convert lava using a superheated mixing basin."]
+			subtitle: "{chapter.8.quest.29.subtitle}"
+			description: ["{chapter.8.quest.29.description.1}"]
 			dependencies: [
 				"78932223283B0376"
 				"3ED703EAA646A18A"
@@ -775,10 +747,10 @@
 			}]
 		}
 		{
-			title: "How do I process raw iridium?"
+			title: "{chapter.8.quest.30.title}"
 			x: 2.5d
 			y: -5.5d
-			description: ["Iridium Raw ore can be obtained from placing your iridium ore blocks in an industrial grinder, to start with you are going to want to get one of these set up!"]
+			description: ["{chapter.8.quest.30.description.1}"]
 			dependencies: ["7A4255522DA6FEB7"]
 			id: "160490A7E60FC575"
 			tasks: [
@@ -790,15 +762,15 @@
 				{
 					id: "29EFF79C0B29DCB7"
 					type: "checkmark"
-					title: "I see."
+					title: "{chapter.8.quest.30.task.2.title}"
 				}
 			]
 		}
 		{
-			title: "Calorite Pins"
+			title: "{chapter.8.quest.31.title}"
 			x: 7.5d
 			y: -1.0d
-			description: ["We've done this before. Roll some calorite nuggets into pins for application on our new circuit!"]
+			description: ["{chapter.8.quest.31.description.1}"]
 			dependencies: [
 				"4329020373E27B1F"
 				"353DA088F5ABA8FE"
@@ -812,10 +784,10 @@
 			}]
 		}
 		{
-			title: "Lithium!"
+			title: "{chapter.8.quest.32.title}"
 			x: 7.5d
 			y: 1.0d
-			description: ["Finally, Lithium is used to add that last bit of power retention on the circuit."]
+			description: ["{chapter.8.quest.32.description.1}"]
 			hide_dependency_lines: true
 			dependencies: ["7A4255522DA6FEB7"]
 			id: "77E9682ED4C5C74D"
@@ -832,10 +804,10 @@
 			}]
 		}
 		{
-			title: "Goofy ahhh machine parts."
+			title: "{chapter.8.quest.33.title}"
 			x: 7.5d
 			y: 0.0d
-			description: ["Producing large amounts of machine parts should be an important goal to aim for, as many are required to create this tier of circuitry."]
+			description: ["{chapter.8.quest.33.description.1}"]
 			hide_dependency_lines: true
 			dependencies: ["7A4255522DA6FEB7"]
 			id: "3F5054A2481E6F9C"
@@ -848,7 +820,7 @@
 		{
 			x: 4.5d
 			y: -1.0d
-			subtitle: "Gotta go fast!"
+			subtitle: "{chapter.8.quest.34.subtitle}"
 			dependencies: ["11F776AD4AEA326A"]
 			id: "01FC63FCED872B8A"
 			tasks: [{
@@ -858,10 +830,10 @@
 			}]
 		}
 		{
-			title: "Remember this stuff?"
+			title: "{chapter.8.quest.35.title}"
 			x: 1.0d
 			y: -3.0d
-			description: ["You've previously dealt with veridium processing before, however the alternate byproduct of this was Olivine dust."]
+			description: ["{chapter.8.quest.35.description.1}"]
 			dependencies: ["39B529A749BEC970"]
 			id: "1FFE36A644FA5491"
 			tasks: [{
@@ -872,7 +844,7 @@
 			}]
 		}
 		{
-			title: "Crush crush CRUSH!"
+			title: "{chapter.8.quest.36.title}"
 			icon: "create:crushing_wheel"
 			x: 3.0d
 			y: -2.5d
@@ -884,10 +856,10 @@
 			}]
 		}
 		{
-			title: "Olive Doost"
+			title: "{chapter.8.quest.37.title}"
 			x: 1.0d
 			y: -2.0d
-			description: ["16x of this dust can be processed into a new sheet, when compressed in a basin over a superheated blaze burner."]
+			description: ["{chapter.8.quest.37.description.1}"]
 			dependencies: ["1B70BAF5B7B5ED0C"]
 			id: "0E0C76625B24032F"
 			tasks: [{
@@ -898,10 +870,10 @@
 			}]
 		}
 		{
-			title: "And plate 'em up"
+			title: "{chapter.8.quest.38.title}"
 			x: 2.230952380952367d
 			y: -1.6107142857142804d
-			subtitle: "Squish that dust into a plate."
+			subtitle: "{chapter.8.quest.38.subtitle}"
 			dependencies: ["0E0C76625B24032F"]
 			id: "4347500C31C8D0DD"
 			tasks: [{
@@ -918,13 +890,8 @@
 		{
 			x: 4.5d
 			y: 11.5d
-			subtitle: "The Warhead of Latent Fabricality"
-			description: [
-				"This nuclear weapons primer is DISABLED by default for your own sake, okay?"
-				""
-				""
-				"Hop over to the Tech Reborn config if you'd like to enable it. (It still functions as a recipe ingredient)"
-			]
+			subtitle: "{chapter.8.quest.39.subtitle}"
+			description: ["{chapter.8.quest.39.description.1}"]
 			dependencies: [
 				"3ED703EAA646A18A"
 				"46382C349512DBEE"
@@ -943,10 +910,10 @@
 			}]
 		}
 		{
-			title: "256k items isn't *that* much at this point."
+			title: "{chapter.8.quest.40.title}"
 			x: 2.5d
 			y: 9.5d
-			description: ["DO NOT use chutes to charge a singularity! It seems to fail if using it. Use other methods of item transport instead (AE2)"]
+			description: ["{chapter.8.quest.40.description.1}"]
 			dependencies: [
 				"3ED703EAA646A18A"
 				"49C63ADC9B1FC721"
@@ -961,7 +928,7 @@
 		{
 			x: 1.0d
 			y: 9.5d
-			subtitle: "You'll need one of these, minimum, to have the space for a singularity."
+			subtitle: "{chapter.8.quest.41.subtitle}"
 			hide_dependency_lines: true
 			dependencies: ["3ED703EAA646A18A"]
 			id: "49C63ADC9B1FC721"
@@ -1063,11 +1030,11 @@
 			}]
 		}
 		{
-			title: "get out of my head."
+			title: "{chapter.8.quest.49.title}"
 			x: 8.5d
 			y: -2.5d
-			subtitle: "GET OUT OF MY HEAD"
-			description: ["There is an impostor amogus."]
+			subtitle: "{chapter.8.quest.49.subtitle}"
+			description: ["{chapter.8.quest.49.description.1}"]
 			dependencies: ["353DA088F5ABA8FE"]
 			hide: true
 			id: "60838B72BF0FDFEE"
@@ -1078,18 +1045,12 @@
 			}]
 		}
 		{
-			title: "Thank you for getting this far!"
+			title: "{chapter.8.quest.50.title}"
 			x: 4.4761904761904745d
 			y: 16.52857142857141d
 			shape: "gear"
-			subtitle: "Modpack Complete!"
-			description: [
-				"In V2.0 we have worked tirelessly to get a unique experience out to everyone! As of this point we plan to continue development, beyond this simple solar system and into dangerous unknowns..."
-				""
-				"This will involve intricate rocket recipes for the Tier 4, MORE overhauled dimensions, and COUNTELSS other pieces of custom content for you to sink your teeth into."
-				""
-				"THANK YOU!!!!"
-			]
+			subtitle: "{chapter.8.quest.50.subtitle}"
+			description: ["{chapter.8.quest.50.description.1}"]
 			dependencies: ["0CE73BAC9F3A9E03"]
 			size: 5.0d
 			id: "69669C2A3E16E328"
@@ -1109,14 +1070,10 @@
 			}]
 		}
 		{
-			title: "Iridium alloy?!"
+			title: "{chapter.8.quest.51.title}"
 			x: 6.5d
 			y: -5.0d
-			description: [
-				"Iridium Alloy Plates can be pressed from this mixture of metals!"
-				""
-				"Follow the recipe chains branching off from the initial chapter 5 quest to discover more, let's see you navigate REI and uncover how to form this?"
-			]
+			description: ["{chapter.8.quest.51.description.1}"]
 			dependencies: ["7A4255522DA6FEB7"]
 			id: "056D4E8FC090FBC7"
 			tasks: [{
