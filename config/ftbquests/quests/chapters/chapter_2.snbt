@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 1
 	filename: "chapter_2"
-	title: "1) The andesite world."
+	title: "{chapter.2.title}"
 	icon: "create:andesite_alloy"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -23,12 +23,8 @@
 		{
 			x: -2.5d
 			y: 10.0d
-			subtitle: "A new metal?"
-			description: [
-				"Combine copper and tin in a smithing table to get the most primitive of alloys."
-				""
-				"This material is used for creating cogwheels."
-			]
+			subtitle: "{chapter.2.quest.1.subtitle}"
+			description: ["{chapter.2.quest.1.description.1}"]
 			hide_dependency_lines: false
 			dependencies: ["5BE7EBA598FD5EE0"]
 			hide: false
@@ -40,17 +36,13 @@
 			}]
 		}
 		{
-			title: "Tough Teeth"
+			title: "{chapter.2.quest.2.title}"
 			icon: "create:cogwheel"
 			x: -2.0d
 			y: 8.0d
 			shape: "gear"
-			subtitle: "Craft your first cogwheel"
-			description: [
-				"Cogwheels and shafts take rotating input - such as from a hand crank or water wheel - and transfer the power around. Large cogwheels in particular can be used to change the axis of rotation, or speed up/slow down the rotation speed when used in combination with small cogwheels."
-				""
-				"Definitely give them a [w] ponder. You'll want to stock up on these!"
-			]
+			subtitle: "{chapter.2.quest.2.subtitle}"
+			description: ["{chapter.2.quest.2.description.1}"]
 			dependencies: [
 				"4D1A55B136F62B3F"
 				"74E7B48237BED17D"
@@ -94,8 +86,8 @@
 			icon: "create:mechanical_press"
 			x: -2.0d
 			y: 3.0d
-			subtitle: "Watch your hands"
-			description: ["Slap a depot below a powered press, place some stuff on it, and watch the magic happen!"]
+			subtitle: "{chapter.2.quest.3.subtitle}"
+			description: ["{chapter.2.quest.3.description.1}"]
 			dependencies: [
 				"604CF717881C323A"
 				"35F1B635057746F0"
@@ -122,10 +114,10 @@
 			}]
 		}
 		{
-			title: "10x Iron Sheets"
+			title: "{chapter.2.quest.4.title}"
 			x: -2.0d
 			y: 0.5d
-			description: ["Sheets! Yes! With these there are new options for create blocks. Machines like drills that will assist in mining the first few diamonds or mechanical saws to chop down huge amounts of logs instantaneously are now available."]
+			description: ["{chapter.2.quest.4.description.1}"]
 			dependencies: ["6499CD689863283D"]
 			id: "4EB4838CCED125E2"
 			tasks: [{
@@ -149,10 +141,10 @@
 			]
 		}
 		{
-			title: "Like a Hopper but Super Vertical"
+			title: "{chapter.2.quest.5.title}"
 			x: -3.5d
 			y: 0.5d
-			description: ["Chutes can drops items in limited stacks from a high inventory to a lower inventory. It can be handy for getting one item to the next machine."]
+			description: ["{chapter.2.quest.5.description.1}"]
 			dependencies: ["4EB4838CCED125E2"]
 			optional: true
 			id: "122CDE9C00B5CA06"
@@ -163,11 +155,11 @@
 			}]
 		}
 		{
-			title: "Andesite alloy!"
+			title: "{chapter.2.quest.6.title}"
 			x: -1.5d
 			y: 9.0d
-			subtitle: "More efficient with mixers!"
-			description: ["The quintessential create crafting component. You're better off building up a supply now."]
+			subtitle: "{chapter.2.quest.6.subtitle}"
+			description: ["{chapter.2.quest.6.description.1}"]
 			dependencies: ["76704C59FAFCD2E7"]
 			id: "74E7B48237BED17D"
 			tasks: [{
@@ -191,8 +183,8 @@
 		{
 			x: -2.5d
 			y: 9.0d
-			subtitle: "Better than a copper sheet"
-			description: ["Slice a bronze ingot in two using a stonecutter. Two for one, what a steal!"]
+			subtitle: "{chapter.2.quest.7.subtitle}"
+			description: ["{chapter.2.quest.7.description.1}"]
 			dependencies: ["5268B7CCEDC48422"]
 			id: "4D1A55B136F62B3F"
 			tasks: [{
@@ -204,12 +196,8 @@
 		{
 			x: -3.0d
 			y: -1.0d
-			subtitle: "Drills go brrr"
-			description: [
-				"This'll be the most consistent method of grabbing diamonds before upgrading your first tinker tool with a diamond gem."
-				""
-				"Diamonds can otherwise be found in loot across the overworld."
-			]
+			subtitle: "{chapter.2.quest.8.subtitle}"
+			description: ["{chapter.2.quest.8.description.1}"]
 			dependencies: ["4EB4838CCED125E2"]
 			id: "5D51B2F9F28ECE8A"
 			tasks: [{
@@ -228,16 +216,8 @@
 			x: -6.0d
 			y: 3.0d
 			shape: "rsquare"
-			subtitle: "Trains? Trains!!!"
-			description: [
-				"Trains have specific uses. Not only can they transport players, they can also transport items and fluids in bulk. They can also be automatically scheduled and will travel through unloaded chunks, making them perfect for transporting resources from faraway production and resource sites."
-				""
-				"They're not necessary for progression, so feel free to ignore this section of the chapter. That being said, they're also darn cool."
-				""
-				"Normally trains come much later, but we're generous."
-				""
-				""
-			]
+			subtitle: "{chapter.2.quest.9.subtitle}"
+			description: ["{chapter.2.quest.9.description.1}"]
 			dependencies: [
 				"68108C8A6AC63A01"
 				"6499CD689863283D"
@@ -272,12 +252,8 @@
 		{
 			x: -7.5d
 			y: 0.5d
-			subtitle: "TRAINS"
-			description: [
-				"There will be a cheaper way to produce tracks in the near future."
-				""
-				"After placing down a track, right click with another track in your hand, and you'll be able to create tracks with smooth bends."
-			]
+			subtitle: "{chapter.2.quest.10.subtitle}"
+			description: ["{chapter.2.quest.10.description.1}"]
 			hide_dependency_lines: true
 			dependencies: ["0A5DC78719B9A244"]
 			id: "67AA35D9D18AD64B"
@@ -296,7 +272,7 @@
 		{
 			x: -7.5d
 			y: 3.0d
-			description: ["Casing used in train creation, and some other misc. recipes. Once again, applies the same as other casings, this time using sturdy sheet and an andesite casing as a base."]
+			description: ["{chapter.2.quest.11.description.1}"]
 			dependencies: ["0A5DC78719B9A244"]
 			id: "1579C73B735F06F8"
 			tasks: [{
@@ -314,12 +290,8 @@
 			x: -10.0d
 			y: 0.5d
 			shape: "rsquare"
-			subtitle: "TRAAAAAAAINS"
-			description: [
-				"Assemble a train to earn this advancement."
-				""
-				"Trains are pretty advanced compared to the rest of this chapter. It's highly recommend you probe around with the ponder feature!"
-			]
+			subtitle: "{chapter.2.quest.12.subtitle}"
+			description: ["{chapter.2.quest.12.description.1}"]
 			dependencies: [
 				"67AA35D9D18AD64B"
 				"0E28273A4D119B81"
@@ -376,12 +348,8 @@
 			}
 			x: -1.0d
 			y: 3.5d
-			subtitle: "Power a waterwheel"
-			description: [
-				"Constantly hand-cranking machines isn't sustainable. It'll be necessary to rely on power generators. This is the simplest one: it will provide power (\"stress units\") depending on how many of its fins are in contact with flowing water."
-				""
-				"Water power can last you until the brass age!"
-			]
+			subtitle: "{chapter.2.quest.13.subtitle}"
+			description: ["{chapter.2.quest.13.description.1}"]
 			hide_dependency_lines: true
 			dependencies: ["515FDE185E1FB782"]
 			id: "35F1B635057746F0"
@@ -409,11 +377,7 @@
 			x: -2.0d
 			y: 5.5d
 			shape: "rsquare"
-			description: [
-				"Strip any log with an axe and right click it with andesite alloy to create andesite casing. These can be automated later on with deployers, but for now it's manual labour."
-				""
-				"Andesite casing are essential components for a large variety of basic machines. They can also be used to decorate shafts, cogwheels, and belts."
-			]
+			description: ["{chapter.2.quest.14.description.1}"]
 			dependencies: ["515FDE185E1FB782"]
 			size: 1.5d
 			id: "604CF717881C323A"
@@ -433,8 +397,8 @@
 			}
 			x: -3.0d
 			y: 4.5d
-			subtitle: "Is that a gun?"
-			description: ["Surely this is overkill, right?"]
+			subtitle: "{chapter.2.quest.15.subtitle}"
+			description: ["{chapter.2.quest.15.description.1}"]
 			dependencies: ["604CF717881C323A"]
 			id: "07ED5ADF97F6F0D8"
 			tasks: [
@@ -463,11 +427,11 @@
 			}]
 		}
 		{
-			title: "Easy Andesite"
+			title: "{chapter.2.quest.16.title}"
 			x: 0.0d
 			y: 12.5d
-			subtitle: "Hate finding andesite?"
-			description: ["So do I! When flowing lava touches water over double compressed andesite, it'll have a 1 in 6 chance to spawn an andesite, and cobblestone the rest of the time. Better than digging it out."]
+			subtitle: "{chapter.2.quest.16.subtitle}"
+			description: ["{chapter.2.quest.16.description.1}"]
 			dependencies: ["5BE7EBA598FD5EE0"]
 			id: "1B5245476A321C24"
 			tasks: [
@@ -499,12 +463,8 @@
 			x: -2.0d
 			y: -1.0d
 			shape: "circle"
-			subtitle: "Mixing up progression much?"
-			description: [
-				"Mixer mixes things. There's not much to it."
-				""
-				"Some recipes required \"heated\" and \"super-heated\" mixing, but both won't be available for awhile."
-			]
+			subtitle: "{chapter.2.quest.17.subtitle}"
+			description: ["{chapter.2.quest.17.description.1}"]
 			dependencies: ["4EB4838CCED125E2"]
 			id: "545BF28E82A07D19"
 			tasks: [
@@ -523,7 +483,7 @@
 		{
 			x: 0.0d
 			y: 8.5d
-			subtitle: "Not associated with Terraria"
+			subtitle: "{chapter.2.quest.18.subtitle}"
 			dependencies: ["74E7B48237BED17D"]
 			optional: true
 			id: "638367CB9262248E"
@@ -544,8 +504,8 @@
 		{
 			x: -6.5d
 			y: 7.0d
-			subtitle: "Pewtah' Craft"
-			description: ["This is technically discriminatory against people who can't code."]
+			subtitle: "{chapter.2.quest.19.subtitle}"
+			description: ["{chapter.2.quest.19.description.1}"]
 			dependencies: ["6B85CBE54B33C91F"]
 			optional: true
 			id: "247AF9BF2D5EBF78"
@@ -563,12 +523,8 @@
 		{
 			x: -7.5d
 			y: 7.0d
-			subtitle: "I like turtles."
-			description: [
-				"It's not forced labour if they're robots."
-				""
-				"You can give these iron tools instead of diamond (unlike the advanced bots) and they will still hold a diamond pickaxe for you!"
-			]
+			subtitle: "{chapter.2.quest.20.subtitle}"
+			description: ["{chapter.2.quest.20.description.1}"]
 			dependencies: ["247AF9BF2D5EBF78"]
 			optional: true
 			id: "266B4D9BDF29BD12"
@@ -579,11 +535,11 @@
 			}]
 		}
 		{
-			title: "The sturdiest of sturdy"
+			title: "{chapter.2.quest.21.title}"
 			x: -6.0d
 			y: 1.5d
-			subtitle: "Armour maintenance doesn't exist"
-			description: ["Excellent all-around, yet will require enchanted books if you desire any kind of enchantments..."]
+			subtitle: "{chapter.2.quest.21.subtitle}"
+			description: ["{chapter.2.quest.21.description.1}"]
 			dependencies: ["0A5DC78719B9A244"]
 			optional: true
 			id: "2B458E50ED7705ED"
@@ -648,12 +604,8 @@
 		{
 			x: -0.5d
 			y: 0.5d
-			subtitle: "All that for a drop of iron."
-			description: [
-				"Iron gear can be utilised the same as vanilla, with the exception of needing to process iron ingots to sheets before access."
-				""
-				"Do note that iron tools will not mine diamond. You'll need a more industrial way to free diamonds from stone."
-			]
+			subtitle: "{chapter.2.quest.22.subtitle}"
+			description: ["{chapter.2.quest.22.description.1}"]
 			dependencies: ["4EB4838CCED125E2"]
 			optional: true
 			id: "735D255FF23C8967"
@@ -696,14 +648,8 @@
 		{
 			x: -1.0d
 			y: 8.0d
-			subtitle: "Ok, some of you like to use this thing."
-			description: [
-				"The hand crank is a primitive power source. right clicking it will move cogwheels, but this will use up your hunger bar."
-				""
-				"Pretty essential for testing contraptions."
-				""
-				"You are only delaying the inevitable... that sweet automated power generation."
-			]
+			subtitle: "{chapter.2.quest.23.subtitle}"
+			description: ["{chapter.2.quest.23.description.1}"]
 			dependencies: ["74E7B48237BED17D"]
 			id: "4AF3238551E346E1"
 			tasks: [{
@@ -721,12 +667,8 @@
 		{
 			x: -5.0d
 			y: 5.5d
-			subtitle: "Millstones are more useful now."
-			description: [
-				"Millstones are used to grind materials into more powdery forms. Simply chuck stuff onto the opening and right click it after awhile."
-				""
-				"You can produce quartz, obsidian dust, and gunpowder early in the game."
-			]
+			subtitle: "{chapter.2.quest.24.subtitle}"
+			description: ["{chapter.2.quest.24.description.1}"]
 			dependencies: ["604CF717881C323A"]
 			id: "1DEF161DE26F3587"
 			tasks: [{
@@ -750,12 +692,11 @@
 			]
 		}
 		{
-			title: "Get Nether Quartz!"
+			title: "{chapter.2.quest.25.title}"
 			x: -6.5d
 			y: 5.5d
 			shape: "diamond"
-			subtitle: "With a solid source of diorite, you can produce excess amounts of quartz."
-			description: [""]
+			subtitle: "{chapter.2.quest.25.subtitle}"
 			dependencies: ["1DEF161DE26F3587"]
 			id: "6B85CBE54B33C91F"
 			tasks: [{
@@ -766,11 +707,11 @@
 			}]
 		}
 		{
-			title: "Get Rail"
+			title: "{chapter.2.quest.26.title}"
 			x: -5.0d
 			y: 4.0d
-			subtitle: "Get rail"
-			description: ["The path to trains require obsidian dust. Unforunately, you won't be able to collect obsidian until you get a drill, so you might have to come back to this later."]
+			subtitle: "{chapter.2.quest.26.subtitle}"
+			description: ["{chapter.2.quest.26.description.1}"]
 			dependencies: ["1DEF161DE26F3587"]
 			id: "68108C8A6AC63A01"
 			tasks: [{
@@ -787,16 +728,12 @@
 			}]
 		}
 		{
-			title: "Come get yer grout."
+			title: "{chapter.2.quest.27.title}"
 			x: -2.0d
 			y: -4.0d
 			shape: "gear"
-			subtitle: "Chapter 2 Unlock"
-			description: [
-				"Use the mixer to create grout, which is used in tinkers-related blocks,"
-				""
-				"Don't eat this."
-			]
+			subtitle: "{chapter.2.quest.27.subtitle}"
+			description: ["{chapter.2.quest.27.description.1}"]
 			dependencies: ["545BF28E82A07D19"]
 			size: 2.5d
 			id: "7354F2BFB2591ECF"
@@ -851,15 +788,11 @@
 			]
 		}
 		{
-			title: "Ew it's stuck to my hands"
+			title: "{chapter.2.quest.28.title}"
 			x: -1.5d
 			y: 10.0d
-			subtitle: "Mwahahahah"
-			description: [
-				"Forcing you to use *shudders* furnaces."
-				""
-				"If you're thinking, jeez this is expensive, do not fret! it becomes 1/3rd the cost later."
-			]
+			subtitle: "{chapter.2.quest.28.subtitle}"
+			description: ["{chapter.2.quest.28.description.1}"]
 			dependencies: ["5BE7EBA598FD5EE0"]
 			hide: false
 			id: "76704C59FAFCD2E7"
@@ -873,8 +806,8 @@
 		{
 			x: -2.0d
 			y: 15.0d
-			subtitle: "Also not a Terraria Reference"
-			description: ["The extracinator takes various kinds of crumbly blocks like gravel and turns them into mob drops. No need for laggy mob farms!"]
+			subtitle: "{chapter.2.quest.29.subtitle}"
+			description: ["{chapter.2.quest.29.description.1}"]
 			dependencies: ["5BE7EBA598FD5EE0"]
 			optional: true
 			id: "392516C890B749C8"
@@ -885,11 +818,11 @@
 			}]
 		}
 		{
-			title: "Mob farms are soooo last year..."
+			title: "{chapter.2.quest.30.title}"
 			x: -3.0d
 			y: 15.0d
 			shape: "diamond"
-			subtitle: "Extractinating sand will result in most overworld mob drops, negating the need to spend time on the same farms you've been building since 2012."
+			subtitle: "{chapter.2.quest.30.subtitle}"
 			dependencies: ["392516C890B749C8"]
 			optional: true
 			id: "3DBD012732199053"
@@ -935,8 +868,8 @@
 		{
 			x: -4.0d
 			y: -1.0d
-			subtitle: "A new toy"
-			description: ["Used in wire and rod production, the rolling mill works just like the millstone!"]
+			subtitle: "{chapter.2.quest.31.subtitle}"
+			description: ["{chapter.2.quest.31.description.1}"]
 			dependencies: ["4EB4838CCED125E2"]
 			id: "4117DCE0FDD1C403"
 			tasks: [{
@@ -952,15 +885,11 @@
 			}]
 		}
 		{
-			title: "Drill Diamonds"
+			title: "{chapter.2.quest.32.title}"
 			x: -3.5d
 			y: -2.0d
-			subtitle: "The Minecraft Dream"
-			description: [
-				"You'll be able to tip your tools at a tinker's station, giving your tinker's tool diamond properties."
-				""
-				"You will have the ability to craft vanilla diamond tools in chapter 3."
-			]
+			subtitle: "{chapter.2.quest.32.subtitle}"
+			description: ["{chapter.2.quest.32.description.1}"]
 			dependencies: ["5D51B2F9F28ECE8A"]
 			id: "605ECFFA4F1C2736"
 			tasks: [{
@@ -978,8 +907,8 @@
 		{
 			x: -4.5d
 			y: -2.0d
-			subtitle: "Astral decoration"
-			description: ["A nice touch for your base."]
+			subtitle: "{chapter.2.quest.33.subtitle}"
+			description: ["{chapter.2.quest.33.description.1}"]
 			dependencies: ["4117DCE0FDD1C403"]
 			id: "0563257D5CE9C8A5"
 			tasks: [{
@@ -996,8 +925,8 @@
 		{
 			x: -1.0d
 			y: -1.0d
-			subtitle: "Bad for the environment"
-			description: ["Much like mechanical drill, the saw can be brought around and used to cut trees. One special advantage is that it will cut down the whole tree at once, provided it removes the final block touching the ground!"]
+			subtitle: "{chapter.2.quest.34.subtitle}"
+			description: ["{chapter.2.quest.34.description.1}"]
 			dependencies: ["4EB4838CCED125E2"]
 			id: "0E7A9F741823BB1C"
 			tasks: [{
@@ -1007,16 +936,16 @@
 			}]
 		}
 		{
-			title: "Good for Business"
+			title: "{chapter.2.quest.35.title}"
 			x: -0.5d
 			y: -2.0d
-			subtitle: "Don't forget to re-plant saplings!"
+			subtitle: "{chapter.2.quest.35.subtitle}"
 			dependencies: ["0E7A9F741823BB1C"]
 			id: "4881D5FF815609C3"
 			tasks: [{
 				id: "2F0FF11646ED9D1C"
 				type: "item"
-				title: "100x Logs"
+				title: "{chapter.2.quest.35.task.1.title}"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -1073,12 +1002,8 @@
 		{
 			x: 0.0d
 			y: -1.0d
-			subtitle: "For unorthodox ore processing"
-			description: [
-				"Fans can blow you around, no surprise."
-				""
-				"But far more usefully, new processing methods open up when fans are placed in front of lava, water, and campfires. "
-			]
+			subtitle: "{chapter.2.quest.36.subtitle}"
+			description: ["{chapter.2.quest.36.description.1}"]
 			dependencies: ["4EB4838CCED125E2"]
 			id: "5A0C01D3ED5C49D4"
 			tasks: [{
@@ -1088,26 +1013,18 @@
 			}]
 		}
 		{
-			title: "Better Smelting"
+			title: "{chapter.2.quest.37.title}"
 			icon: "minecraft:blast_furnace"
 			x: 0.5d
 			y: -2.0d
-			subtitle: "A helpful hint..."
-			description: [
-				"Placing lava in front of an encased fan will allow you to smelt many ores at once without using fuel by placing them in the fire stream. If the item can't be smelted, it will be destroyed - this includes items you'd normally put in a smoker."
-				""
-				"Placing water in front of an encased fan will allow you to get bonus resources from ores by putting them in front of the water stream. This will create 9 nuggets instead of ingots, but the free stuff is probably worth it."
-				""
-				"This is called \"bulk blasting\" and \"bulk washing\" respectively."
-				""
-				"And doing this with a campfire instead of water/lava will cook food like a smoker! \"Bulk smoking!\""
-			]
+			subtitle: "{chapter.2.quest.37.subtitle}"
+			description: ["{chapter.2.quest.37.description.1}"]
 			dependencies: ["5A0C01D3ED5C49D4"]
 			id: "1FFB7970C388204C"
 			tasks: [{
 				id: "1A528CDF4DA51B41"
 				type: "checkmark"
-				title: "Understood."
+				title: "{chapter.2.quest.37.task.1.title}"
 			}]
 			rewards: [{
 				id: "220200620D9BA6CF"
@@ -1118,8 +1035,8 @@
 		{
 			x: 0.5d
 			y: 4.5d
-			subtitle: "Useful Block #1"
-			description: ["Cogwheels reversing rotation can be annoying. Chain links are useful in that all sequential drives rotate the same way. They also have limited capacity to change axis, providing extra use."]
+			subtitle: "{chapter.2.quest.38.subtitle}"
+			description: ["{chapter.2.quest.38.description.1}"]
 			dependencies: ["604CF717881C323A"]
 			id: "3BC959B431460B3E"
 			tasks: [{
@@ -1137,8 +1054,8 @@
 		{
 			x: 0.5d
 			y: 6.5d
-			subtitle: "Useful Block #3"
-			description: ["Gearboxes are the ultimate solution for changing axis, as well as changing rotation direction. They're a bit expensive, but very worth it."]
+			subtitle: "{chapter.2.quest.39.subtitle}"
+			description: ["{chapter.2.quest.39.description.1}"]
 			dependencies: ["604CF717881C323A"]
 			id: "16B52EB613255A4E"
 			tasks: [{
@@ -1156,8 +1073,8 @@
 		{
 			x: 0.5d
 			y: 5.5d
-			subtitle: "Useful Block #2"
-			description: ["A clutch can turn on and off a complicated contraption with a flick of a lever. This can save headaches for when you're testing something or developing a kinetic network."]
+			subtitle: "{chapter.2.quest.40.subtitle}"
+			description: ["{chapter.2.quest.40.description.1}"]
 			dependencies: ["604CF717881C323A"]
 			id: "2091C55A386F75AB"
 			tasks: [{
@@ -1183,14 +1100,8 @@
 		{
 			x: -10.0d
 			y: 3.0d
-			subtitle: "You'll need this for creating the train cars themselves"
-			description: [
-				"To glue stuff together, right click a block and move the cursor around. Use ponder for more information."
-				""
-				"Gluing things together is a little finnicky especially when starting out, you might need to take a few tries to get things right."
-				""
-				"You'll also be using glue for things in later chapters."
-			]
+			subtitle: "{chapter.2.quest.41.subtitle}"
+			description: ["{chapter.2.quest.41.description.1}"]
 			hide_dependency_lines: true
 			dependencies: ["0A5DC78719B9A244"]
 			id: "0E28273A4D119B81"
@@ -1212,12 +1123,12 @@
 			}]
 		}
 		{
-			title: "ABSOLUTELY ESSENTIAL"
+			title: "{chapter.2.quest.42.title}"
 			x: -0.5d
 			y: 2.0d
 			shape: "gear"
-			subtitle: "You'll use this forever"
-			description: ["The wrench will allow you to reorient create blocks with a right click. It'll also destroy Create blocks instantly and put them in your inventory with crouch+right click."]
+			subtitle: "{chapter.2.quest.42.subtitle}"
+			description: ["{chapter.2.quest.42.description.1}"]
 			dependencies: ["6499CD689863283D"]
 			size: 1.25d
 			id: "0C6D01057E4E29FC"
@@ -1242,21 +1153,13 @@
 			]
 		}
 		{
-			title: "Welcome to Create!"
+			title: "{chapter.2.quest.43.title}"
 			icon: "create:wrench"
 			x: -2.0d
 			y: 12.5d
 			shape: "pentagon"
-			subtitle: "Going Beyond Above"
-			description: [
-				"The world of Create is one of machinery, industry, and automation, and is the backbone of this modpack."
-				""
-				"This chapter will introduce you to the basics of Create and what new blocks are available to you. Due to the scope of Create, this questbook can not cover the full extent of what's to know about Create. Thankfully, hover over any Create block - whether in your inventory or in the REI screen - and hold W for a detailed explanation of how its mechanics function. If this still isn't enough, feel free to look up videos - resourcefulness is a trait to be proud of!"
-				""
-				"Each successive chapter will introduce more complicated recipes and materials, challenging you to create bigger and more intricate manufacturing setups. The reward will be access to the cosmos above."
-				""
-				""
-			]
+			subtitle: "{chapter.2.quest.43.subtitle}"
+			description: ["{chapter.2.quest.43.description.1}"]
 			dependencies: ["1337920DA45E72AD"]
 			hide: true
 			size: 2.5d
@@ -1264,7 +1167,7 @@
 			tasks: [{
 				id: "032EAA934B34EED4"
 				type: "checkmark"
-				title: "Understood."
+				title: "{chapter.2.quest.43.task.1.title}"
 			}]
 			rewards: [{
 				id: "04356BEE19FBF2E4"
@@ -1275,7 +1178,7 @@
 		{
 			x: -8.0d
 			y: 1.5d
-			subtitle: "Pretty important"
+			subtitle: "{chapter.2.quest.44.subtitle}"
 			dependencies: ["1579C73B735F06F8"]
 			id: "4E17A29F84247877"
 			tasks: [{
@@ -1287,8 +1190,8 @@
 		{
 			x: -9.0d
 			y: 2.5d
-			subtitle: "All aboard!!!"
-			description: ["Train stations are necessary for building trains themselves."]
+			subtitle: "{chapter.2.quest.45.subtitle}"
+			description: ["{chapter.2.quest.45.description.1}"]
 			dependencies: ["1579C73B735F06F8"]
 			id: "31B9F34B69172C02"
 			tasks: [{
@@ -1298,15 +1201,11 @@
 			}]
 		}
 		{
-			title: "Misc. Train Utilities"
+			title: "{chapter.2.quest.46.title}"
 			x: -10.0d
 			y: -1.0d
-			subtitle: "MORE TRAINS"
-			description: [
-				"Here are some extra, advanced stuff if you want to complicate things even more."
-				""
-				"What they do and how they work is outside the scope of this guide, but feel free to take advantage of the ponder mechanic!"
-			]
+			subtitle: "{chapter.2.quest.46.subtitle}"
+			description: ["{chapter.2.quest.46.description.1}"]
 			dependencies: ["36129D7A46CC6F6D"]
 			optional: true
 			id: "4525F3F3177D72B8"
@@ -1329,19 +1228,19 @@
 			]
 		}
 		{
-			title: "Various Stone Generator"
+			title: "{chapter.2.quest.47.title}"
 			icon: "minecraft:bedrock"
 			x: -4.0d
 			y: 12.5d
-			subtitle: "For when you really do not want to find andesite."
-			description: ["Flowing lava touching water over a piece of bedrock will work like the double-compressed-andesite-based generator, but will have a 1/5 chance of producing andesite, and will produce other rocks like granite and diorite as side-effects. Of course, you'll have to then dig it out from deep underground. But at least it's an option."]
+			subtitle: "{chapter.2.quest.47.subtitle}"
+			description: ["{chapter.2.quest.47.description.1}"]
 			dependencies: ["5BE7EBA598FD5EE0"]
 			id: "2AF2E0A5DF16F5D9"
 			tasks: [
 				{
 					id: "35684AEA414C5246"
 					type: "checkmark"
-					title: "Understood."
+					title: "{chapter.2.quest.47.task.1.title}"
 				}
 				{
 					id: "65DD979F7CE1FDE8"

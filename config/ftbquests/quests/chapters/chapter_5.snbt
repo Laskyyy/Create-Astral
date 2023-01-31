@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 6
 	filename: "chapter_5"
-	title: "4) Piglin Peculiarities."
+	title: "{chapter.7.title}"
 	icon: "techreborn:electronic_circuit"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -35,16 +35,12 @@
 	]
 	quests: [
 		{
-			title: "Welcome to Mars."
+			title: "{chapter.7.quest.1.title}"
 			x: -8.0d
 			y: -4.0d
 			shape: "pentagon"
-			subtitle: "Make yourself at home, it only gets worse from here..."
-			description: [
-				"A resilient civilisation inhabits Mars... They seem to worship gold. Find large quantities of it along with lead and ostrum in the underground. Buildings, old and new, can be found on the surface."
-				""
-				"As you proven your resourcefulness up to now, the quests will be slightly less thorough, and may not tell you every new tool you gained when you craft a new machine. This totally has nothing to do with two different writers writing different halves of the pack. Nope. Not at all."
-			]
+			subtitle: "{chapter.7.quest.1.subtitle}"
+			description: ["{chapter.7.quest.1.description.1}"]
 			dependencies: ["63DCF596AAA9A232"]
 			hide: true
 			hide_text_until_complete: false
@@ -70,17 +66,13 @@
 			]
 		}
 		{
-			title: "Iron but slightly harder, I reckon"
+			title: "{chapter.7.quest.2.title}"
 			icon: "ad_astra:compressed_steel"
 			x: -8.0d
 			y: 5.0d
 			shape: "square"
-			subtitle: "Mix steel dust in a superheated blaze burner!"
-			description: [
-				"A key component in later game recipes and survival on mercury!"
-				""
-				"Reminder: Use fuel *buckets* to input into a blaze burner!"
-			]
+			subtitle: "{chapter.7.quest.2.subtitle}"
+			description: ["{chapter.7.quest.2.description.1}"]
 			dependencies: ["5729A883639B2EEF"]
 			size: 2.0d
 			id: "3A5D7E60EF1C3BC3"
@@ -112,16 +104,12 @@
 			]
 		}
 		{
-			title: "Produce some Lithium + Batteries"
+			title: "{chapter.7.quest.3.title}"
 			x: -3.5d
 			y: 1.5d
 			shape: "square"
-			subtitle: "Pour Lithium into your red cell batteries for this component. "
-			description: [
-				"Lithium can be processed from basic clay balls for a large amount, if you use one of the earlier clay farms."
-				""
-				"A reminder that batteries can be charged in any tech reborn machine! The tesla coil from create additions does not provide this."
-			]
+			subtitle: "{chapter.7.quest.3.subtitle}"
+			description: ["{chapter.7.quest.3.description.1}"]
 			dependencies: [
 				"42FDBAC4A8966F9D"
 				"684E33C50BD55A8E"
@@ -153,7 +141,7 @@
 			}]
 		}
 		{
-			title: "Upgrade! Drill!"
+			title: "{chapter.7.quest.4.title}"
 			x: -3.0d
 			y: 0.0d
 			dependencies: ["7B5DE5040FC24D21"]
@@ -166,7 +154,7 @@
 			}]
 		}
 		{
-			title: "Upgrade! Chainsaw!"
+			title: "{chapter.7.quest.5.title}"
 			x: -2.0d
 			y: 0.5d
 			dependencies: ["7B5DE5040FC24D21"]
@@ -179,7 +167,7 @@
 			}]
 		}
 		{
-			title: "Upgrade! Jackhammer!"
+			title: "{chapter.7.quest.6.title}"
 			x: -1.5d
 			y: 1.5d
 			dependencies: ["7B5DE5040FC24D21"]
@@ -192,15 +180,11 @@
 			}]
 		}
 		{
-			title: "REQUIRED: electrolysis (for real this time)"
+			title: "{chapter.7.quest.7.title}"
 			x: -6.0d
 			y: 1.5d
-			subtitle: "This isn't a dodgy Astral multiblock, its a fully fledged block."
-			description: [
-				"Electrolysing various dusts and minerals can produce a large array of new materials."
-				""
-				"As of currently, lithium is the main one to be worried about before further ones are implemented."
-			]
+			subtitle: "{chapter.7.quest.7.subtitle}"
+			description: ["{chapter.7.quest.7.description.1}"]
 			dependencies: ["5729A883639B2EEF"]
 			id: "684E33C50BD55A8E"
 			tasks: [{
@@ -234,16 +218,12 @@
 			]
 		}
 		{
-			title: "Military-Grade Space Gear"
+			title: "{chapter.7.quest.8.title}"
 			x: -9.75d
 			y: 7.5d
 			shape: "square"
-			subtitle: "I look like a spartan now"
-			description: [
-				"Utilising steel and a set of sturdy armour, you can craft a higher tier of space suit which is immune to fire damage. This should ease the exploration into mercury."
-				""
-				"The oxygen tank capacity is twice as large. What a bonus."
-			]
+			subtitle: "{chapter.7.quest.8.subtitle}"
+			description: ["{chapter.7.quest.8.description.1}"]
 			dependencies: [
 				"3A5D7E60EF1C3BC3"
 				"717A6825F23CC07F"
@@ -304,11 +284,11 @@
 			}]
 		}
 		{
-			title: "Rocket barrage, activated!"
+			title: "{chapter.7.quest.9.title}"
 			x: -8.047619047619065d
 			y: 9.666666666666671d
 			shape: "hexagon"
-			subtitle: "We CAN get much higheerrr it seems..."
+			subtitle: "{chapter.7.quest.9.subtitle}"
 			dependencies: [
 				"356CE973D7F17F3C"
 				"7B5AE0A782DE8DF8"
@@ -335,8 +315,8 @@
 		{
 			x: -10.0d
 			y: 6.0d
-			subtitle: "Bouncy..."
-			description: ["Negates fall damage entirely and enabled jumping up multiple blocks! You'll have to learn to control the bouncing however..."]
+			subtitle: "{chapter.7.quest.10.subtitle}"
+			description: ["{chapter.7.quest.10.description.1}"]
 			dependencies: ["3A5D7E60EF1C3BC3"]
 			optional: true
 			id: "08CEB76C11CCE833"
@@ -359,11 +339,11 @@
 			}]
 		}
 		{
-			title: "Hot hot hot HOT. Let me put some insulation on."
+			title: "{chapter.7.quest.11.title}"
 			x: -8.0d
 			y: 12.0d
 			shape: "gear"
-			description: ["To survive on mercury with it's super hot surface temperature, ensure you are wearing the netherite space suit at all times!"]
+			description: ["{chapter.7.quest.11.description.1}"]
 			dependencies: ["3CF2DB0B0ACE19B6"]
 			size: 2.0d
 			id: "5BD2D0F7F0D70180"
@@ -375,16 +355,10 @@
 			}]
 		}
 		{
-			title: "A blast furnace for forging steel alloy more efficiently."
+			title: "{chapter.7.quest.12.title}"
 			x: -6.0d
 			y: 3.5d
-			description: [
-				"Before obtaining steel, a few processes are required to set up."
-				""
-				"Steel dust is the baseline for alloying steel, but such a metal requires a high heat threshold to form."
-				""
-				"The blast furnace multiblock can unlock this capability."
-			]
+			description: ["{chapter.7.quest.12.description.1}"]
 			dependencies: ["5729A883639B2EEF"]
 			optional: true
 			id: "30B554B51AEFEB0C"
@@ -406,15 +380,11 @@
 			}]
 		}
 		{
-			title: "That's some good fuel, right there."
+			title: "{chapter.7.quest.13.title}"
 			x: -10.0d
 			y: 1.5d
-			subtitle: "In conjunction with Ad Astra Oil, you can distill a fuel fluid which can burn hotter than anything you've seen."
-			description: [
-				"This fuel can be pumped into blaze burners to superheat them."
-				""
-				"Try distilling some oil cells in the tower."
-			]
+			subtitle: "{chapter.7.quest.13.subtitle}"
+			description: ["{chapter.7.quest.13.description.1}"]
 			dependencies: ["5729A883639B2EEF"]
 			id: "0373FACF0AB8113E"
 			tasks: [
@@ -436,10 +406,10 @@
 			]
 		}
 		{
-			title: "Martian Traveller"
+			title: "{chapter.7.quest.14.title}"
 			x: -5.5d
 			y: -5.0d
-			subtitle: "Discover the biomes of this treacherous climate."
+			subtitle: "{chapter.7.quest.14.subtitle}"
 			dependencies: ["253F29A00B4EA050"]
 			id: "28B99F2B5CA82BF9"
 			tasks: [
@@ -481,10 +451,10 @@
 			}]
 		}
 		{
-			title: "Martian Explorer"
+			title: "{chapter.7.quest.15.title}"
 			x: -10.5d
 			y: -5.0d
-			subtitle: "Uncover the secrets of piglin civilisation..."
+			subtitle: "{chapter.7.quest.15.subtitle}"
 			dependencies: ["253F29A00B4EA050"]
 			id: "16D7DDD842CB4797"
 			tasks: [
@@ -520,14 +490,10 @@
 			}]
 		}
 		{
-			title: "Components for an upgraded circuit!"
+			title: "{chapter.7.quest.16.title}"
 			x: -8.5d
 			y: -2.0d
-			description: [
-				"The next tier of circuit will require a new process assembly line."
-				""
-				"Mill golden nuggets into pins and electrify them under a tesla coil + depot to obtain electrified pins."
-			]
+			description: ["{chapter.7.quest.16.description.1}"]
 			dependencies: ["253F29A00B4EA050"]
 			id: "7B0BBD0E9F82939D"
 			tasks: [
@@ -545,10 +511,10 @@
 			]
 		}
 		{
-			title: "The incomplete mechanism..."
+			title: "{chapter.7.quest.17.title}"
 			x: -8.0d
 			y: 0.0d
-			description: ["With the basic pins in position, clamp down an ostrum plate to finish the process."]
+			description: ["{chapter.7.quest.17.description.1}"]
 			dependencies: [
 				"0476231FB94F095A"
 				"2993E04DCB7B4EC4"
@@ -567,16 +533,12 @@
 			}]
 		}
 		{
-			title: "A new tier of circuit..."
+			title: "{chapter.7.quest.18.title}"
 			x: -7.964285714285715d
 			y: 2.7193877551020407d
 			shape: "rsquare"
-			subtitle: "This time it will be needed a LOT, like a lot."
-			description: [
-				"With access to Advanced CPUs, new industrial tier machines are now able to be constructed, each with some unique uses."
-				""
-				"Inspect the branching quest lines to uncover more about them. Steel isn't obtainable immediately from this quest, after all..."
-			]
+			subtitle: "{chapter.7.quest.18.subtitle}"
+			description: ["{chapter.7.quest.18.description.1}"]
 			dependencies: ["0DF20AB6978A93FE"]
 			size: 1.5d
 			id: "5729A883639B2EEF"
@@ -607,14 +569,10 @@
 			]
 		}
 		{
-			title: "You spin me right round..."
+			title: "{chapter.7.quest.19.title}"
 			x: -10.0d
 			y: 2.5d
-			description: [
-				"Centrifuging dusts and various blocks provides further elements."
-				""
-				"For our purposes here, this optional process of centrifuging soul sand into oil can provide a renewable source of it, saving you the need to collect it manually from oil spouts."
-			]
+			description: ["{chapter.7.quest.19.description.1}"]
 			dependencies: ["5729A883639B2EEF"]
 			id: "673DC1F22D2F790D"
 			tasks: [{
@@ -637,7 +595,7 @@
 		{
 			x: -6.0d
 			y: 2.5d
-			subtitle: "Electrolysing clay dust produces lithium liquid, which can be utilised to upgrade red cell batteries."
+			subtitle: "{chapter.7.quest.20.subtitle}"
 			dependencies: ["5729A883639B2EEF"]
 			id: "42FDBAC4A8966F9D"
 			tasks: [{
@@ -647,10 +605,10 @@
 			}]
 		}
 		{
-			title: "More efficient steel dust."
+			title: "{chapter.7.quest.21.title}"
 			x: -4.5d
 			y: 3.5d
-			description: ["Cells of molten iron can be poured from create spouts, ready to be processed with some carbon material to form steel even more efficiently than the old recipe!"]
+			description: ["{chapter.7.quest.21.description.1}"]
 			dependencies: ["30B554B51AEFEB0C"]
 			optional: true
 			id: "33DBA03CF188DF0B"
@@ -688,7 +646,7 @@
 		{
 			x: -3.5d
 			y: 3.5d
-			description: ["Obtain a small stockpile to start with."]
+			description: ["{chapter.7.quest.22.description.1}"]
 			dependencies: ["33DBA03CF188DF0B"]
 			optional: true
 			id: "4AEC38BDC884A6C4"
@@ -700,11 +658,11 @@
 			}]
 		}
 		{
-			title: "How Crude..."
+			title: "{chapter.7.quest.23.title}"
 			x: -14.0d
 			y: 2.5d
-			subtitle: "How Crood..."
-			description: ["Oil can be sourced renewably from a centrifuge, however spouts across the overworld also contain a fair few cells worth of the fluid too."]
+			subtitle: "{chapter.7.quest.23.subtitle}"
+			description: ["{chapter.7.quest.23.description.1}"]
 			dependencies: ["307933B04A6E7CA9"]
 			id: "48F61CBC3AFDEEBD"
 			tasks: [{
@@ -726,12 +684,12 @@
 			}]
 		}
 		{
-			title: "Hotter Stuff"
+			title: "{chapter.7.quest.24.title}"
 			x: -12.0d
 			y: 1.5d
 			shape: "gear"
-			subtitle: "UNLOCK: Superheated Blaze Burners!"
-			description: ["Using Fuel Buckets on blaze burners, in the same fashion as a lava bucket, will superheat them for a short while. This is required to unlock future recipes, including the all-important steel!"]
+			subtitle: "{chapter.7.quest.24.subtitle}"
+			description: ["{chapter.7.quest.24.description.1}"]
 			dependencies: [
 				"0373FACF0AB8113E"
 				"48F61CBC3AFDEEBD"
@@ -763,12 +721,12 @@
 			]
 		}
 		{
-			title: "Infernal Spire Processing."
+			title: "{chapter.7.quest.25.title}"
 			x: -4.2d
 			y: -3.0d
 			shape: "diamond"
-			subtitle: "Get a load of this stuff!"
-			description: ["Crushing Infernal Spire produces netherite scrap nuggets at a low rate."]
+			subtitle: "{chapter.7.quest.25.subtitle}"
+			description: ["{chapter.7.quest.25.description.1}"]
 			dependencies: ["2B697AA42C48FC04"]
 			size: 1.2d
 			optional: true
@@ -780,12 +738,12 @@
 			}]
 		}
 		{
-			title: "Automate debris!"
+			title: "{chapter.7.quest.26.title}"
 			x: -3.5d
 			y: -2.0d
 			shape: "diamond"
-			subtitle: "Purely for high-rollers"
-			description: ["Semi-automatable debris! Wow! Along with its usual usages, netherite can be used to forge some devastating MC Dungeons weapons. If your rolling in the stuff, Create Deco provides some pricey decoration blocks. - Happy flexing"]
+			subtitle: "{chapter.7.quest.26.subtitle}"
+			description: ["{chapter.7.quest.26.description.1}"]
 			dependencies: ["520A09EF39A1BF5D"]
 			optional: true
 			id: "27B0EA62812564DD"
@@ -810,11 +768,7 @@
 		{
 			x: -8.5d
 			y: -1.0d
-			description: [
-				"As you have used the tesla coil for previously, charging a golden pin with electricity will charge them."
-				""
-				"Begin the circuit upgrade by applying 64x of these electrified pins onto an integrated circuit."
-			]
+			description: ["{chapter.7.quest.27.description.1}"]
 			dependencies: ["7B0BBD0E9F82939D"]
 			id: "0476231FB94F095A"
 			tasks: [{
@@ -830,10 +784,10 @@
 			}]
 		}
 		{
-			title: "I can see clearly now."
+			title: "{chapter.7.quest.28.title}"
 			x: -4.5d
 			y: 0.0d
-			description: ["N = Toggle Night Vision"]
+			description: ["{chapter.7.quest.28.description.1}"]
 			dependencies: ["7B5DE5040FC24D21"]
 			id: "259E754B57C45C67"
 			tasks: [{
@@ -854,14 +808,10 @@
 			}]
 		}
 		{
-			title: "Inner Machinations."
+			title: "{chapter.7.quest.29.title}"
 			x: -6.5d
 			y: 7.5d
-			description: [
-				"Machine parts?? You are telling me we haven't been using parts in our machines so far?"
-				""
-				"...what's holding them together then?"
-			]
+			description: ["{chapter.7.quest.29.description.1}"]
 			dependencies: [
 				"3A5D7E60EF1C3BC3"
 				"4F560FA8145329E8"
@@ -888,10 +838,10 @@
 			]
 		}
 		{
-			title: "Mix 'n' Mesh"
+			title: "{chapter.7.quest.30.title}"
 			x: -5.5d
 			y: 8.0d
-			description: ["Carbon mesh is an integral component in machine parts, which will become highly prevalent in Chapter 5, in the production of new circuitry and machines."]
+			description: ["{chapter.7.quest.30.description.1}"]
 			dependencies: ["28CF539AA1D6A92F"]
 			id: "4F560FA8145329E8"
 			tasks: [{
@@ -946,10 +896,10 @@
 			}]
 		}
 		{
-			title: "With every fibre of my body..."
+			title: "{chapter.7.quest.31.title}"
 			x: -4.5d
 			y: 7.5d
-			subtitle: "I must know, what it tastes like."
+			subtitle: "{chapter.7.quest.31.subtitle}"
 			dependencies: ["156FCE6FDC8AD38D"]
 			id: "28CF539AA1D6A92F"
 			tasks: [{
@@ -959,10 +909,10 @@
 			}]
 		}
 		{
-			title: "*another* use for coal dust"
+			title: "{chapter.7.quest.32.title}"
 			x: -5.0d
 			y: 6.5d
-			subtitle: "thought you could get away?"
+			subtitle: "{chapter.7.quest.32.subtitle}"
 			dependencies: ["3A5D7E60EF1C3BC3"]
 			id: "156FCE6FDC8AD38D"
 			tasks: [{
@@ -972,10 +922,10 @@
 			}]
 		}
 		{
-			title: "Sodium Reference?"
+			title: "{chapter.7.quest.33.title}"
 			x: -14.0d
 			y: 8.0d
-			subtitle: "(electrolyse lazurite dust and create a sodium byproduct.)"
+			subtitle: "{chapter.7.quest.33.subtitle}"
 			dependencies: ["6C43EB3CBD04AA17"]
 			id: "3110924697AB562C"
 			tasks: [{
@@ -996,10 +946,10 @@
 			}]
 		}
 		{
-			title: "Banana Dust"
+			title: "{chapter.7.quest.34.title}"
 			x: -12.0d
 			y: 5.0d
-			subtitle: "-> filled with yummy potassium"
+			subtitle: "{chapter.7.quest.34.subtitle}"
 			dependencies: ["307933B04A6E7CA9"]
 			id: "6D5A97122F765FE3"
 			tasks: [{
@@ -1009,7 +959,7 @@
 			}]
 		}
 		{
-			title: "Banana Fluid"
+			title: "{chapter.7.quest.35.title}"
 			x: -12.0d
 			y: 6.5d
 			dependencies: ["6D5A97122F765FE3"]
@@ -1027,10 +977,10 @@
 			}]
 		}
 		{
-			title: "Lazurite?"
+			title: "{chapter.7.quest.36.title}"
 			x: -15.0d
 			y: 9.0d
-			subtitle: "Yea i'm alright thanks."
+			subtitle: "{chapter.7.quest.36.subtitle}"
 			hide_dependency_lines: true
 			dependencies: ["684E33C50BD55A8E"]
 			id: "6C43EB3CBD04AA17"
@@ -1041,7 +991,7 @@
 			}]
 		}
 		{
-			title: "Do not drink the Listerine."
+			title: "{chapter.7.quest.37.title}"
 			x: -12.0d
 			y: 8.0d
 			dependencies: [
@@ -1104,7 +1054,7 @@
 			}]
 		}
 		{
-			title: "Horsepower."
+			title: "{chapter.7.quest.39.title}"
 			x: -11.0d
 			y: 9.0d
 			dependencies: [
@@ -1125,10 +1075,10 @@
 			}]
 		}
 		{
-			title: "144hz, 4k Monitor"
+			title: "{chapter.7.quest.40.title}"
 			x: -7.0d
 			y: 8.5d
-			subtitle: "Our rocket needs a GAMING MONITOR."
+			subtitle: "{chapter.7.quest.40.subtitle}"
 			dependencies: ["2A95205D3A52622F"]
 			id: "356CE973D7F17F3C"
 			tasks: [{
@@ -1138,19 +1088,16 @@
 			}]
 		}
 		{
-			title: "Shake up that soul"
+			title: "{chapter.7.quest.41.title}"
 			x: -12.0d
 			y: 3.5d
-			description: [
-				"Both soul soil and soul sand can produce raw oil when centrifuged, with some extra byproducts provided which may prove to be useful..."
-				""
-			]
+			description: ["{chapter.7.quest.41.description.1}"]
 			dependencies: ["673DC1F22D2F790D"]
 			id: "307933B04A6E7CA9"
 			tasks: [{
 				id: "18B46A0D1C5F5E25"
 				type: "item"
-				title: "Any #minecraft:soul_fire_base_blocks"
+				title: "{chapter.7.quest.41.task.1.title}"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -1178,10 +1125,10 @@
 			}]
 		}
 		{
-			title: "Got coal lying around?"
+			title: "{chapter.7.quest.43.title}"
 			x: -3.5d
 			y: 4.5d
-			subtitle: "Let's make some use out of this..."
+			subtitle: "{chapter.7.quest.43.subtitle}"
 			dependencies: ["33DBA03CF188DF0B"]
 			optional: true
 			id: "2E320829DF95EB8E"
@@ -1197,7 +1144,7 @@
 			}]
 		}
 		{
-			title: "Automating Diamonds."
+			title: "{chapter.7.quest.44.title}"
 			icon: {
 				id: "techreborn:cell"
 				Count: 1b
@@ -1207,8 +1154,8 @@
 			}
 			x: -2.5d
 			y: 4.5d
-			subtitle: "As a bonus for getting this far, here is a block of liquid diamond. A treat >.<"
-			description: ["64 coal dust in an implosion compressor will create a diamond. Seems steep, but such is the price we pay for automation."]
+			subtitle: "{chapter.7.quest.44.subtitle}"
+			description: ["{chapter.7.quest.44.description.1}"]
 			dependencies: ["2E320829DF95EB8E"]
 			optional: true
 			id: "6FC315C473D123F8"
@@ -1232,26 +1179,24 @@
 			icon: "minecraft:gold_block"
 			x: -10.0d
 			y: -3.5d
-			subtitle: "Always believe in your gold..."
-			description: ["Gold can be found in high amounts here. Either get your best mining gear and head underground or equip your finest weapons and head to a bastion."]
+			subtitle: "{chapter.7.quest.45.subtitle}"
+			description: ["{chapter.7.quest.45.description.1}"]
 			dependencies: ["253F29A00B4EA050"]
 			id: "3303D84A3F6FBBBA"
 			tasks: [{
 				id: "1CA9416E1FBF478C"
 				type: "checkmark"
-				title: "Gold!"
+				title: "{chapter.7.quest.45.task.1.title}"
 			}]
 		}
 		{
-			title: "When in Rome..."
+			title: "{chapter.7.quest.46.title}"
 			x: -11.5d
 			y: -3.0d
-			subtitle: "Respect the Piglin religion and they might not immediatly kill you. "
+			subtitle: "{chapter.7.quest.46.subtitle}"
 			description: [
 				"{image:tconstruct:textures/block/storage/pig_iron/front.png width:100 height:100 align:1}"
-				"The Piglins worship gold like a god. Show off your respect by holding a token of faith."
-				"A bar of gold as a body... nugget for a nose... two little pins for arms... sand it off and... yes, that should do it."
-				"Once you've established a common ground with your piggy kin, you may begin trading."
+				"{chapter.7.quest.46.description.1}"
 			]
 			dependencies: ["3303D84A3F6FBBBA"]
 			id: "1873D12083BC1697"
@@ -1267,15 +1212,11 @@
 			}]
 		}
 		{
-			title: "Automation of Lead/Ostrum"
+			title: "{chapter.7.quest.47.title}"
 			icon: "ad_astra:ostrum_nugget"
 			x: -6.0d
 			y: -3.5d
-			description: [
-				"With access to mars stone, you are now able to use it below a cobblestone generator to form more mars stone, with a chance of conglomerate being formed too!"
-				""
-				"Mars stone can be crushed into mars sand, which washes into lead. Conglomerate can be crushed into ostrum nuggets."
-			]
+			description: ["{chapter.7.quest.47.description.1}"]
 			dependencies: ["253F29A00B4EA050"]
 			id: "2B697AA42C48FC04"
 			tasks: [{
@@ -1284,11 +1225,11 @@
 			}]
 		}
 		{
-			title: "Counterfeit Coins"
+			title: "{chapter.7.quest.48.title}"
 			x: -10.0d
 			y: -1.5d
-			subtitle: "They won't notice"
-			description: ["Toss a coin at a piglin, like a wish in a well. Piglins love themselves and gold. Expect big rewards."]
+			subtitle: "{chapter.7.quest.48.subtitle}"
+			description: ["{chapter.7.quest.48.description.1}"]
 			dependencies: ["1A99F6B849B12B09"]
 			id: "597DB82F2961DD9B"
 			tasks: [{
@@ -1304,11 +1245,11 @@
 			}]
 		}
 		{
-			title: "Artificial Inflation"
+			title: "{chapter.7.quest.49.title}"
 			x: -13.0d
 			y: -1.5d
 			shape: "diamond"
-			subtitle: "You wolf, you-!!"
+			subtitle: "{chapter.7.quest.49.subtitle}"
 			hide_dependency_lines: true
 			dependencies: ["597DB82F2961DD9B"]
 			hide: true
@@ -1327,10 +1268,10 @@
 			}]
 		}
 		{
-			title: "Forged documents"
+			title: "{chapter.7.quest.50.title}"
 			x: -11.5d
 			y: -2.0d
-			subtitle: "Google Piglin inflation to find out more!"
+			subtitle: "{chapter.7.quest.50.subtitle}"
 			dependencies: ["1873D12083BC1697"]
 			id: "1A99F6B849B12B09"
 			tasks: [
@@ -1398,11 +1339,11 @@
 			}]
 		}
 		{
-			title: "Societal Collapse"
+			title: "{chapter.7.quest.54.title}"
 			x: -14.0d
 			y: 4.5d
 			shape: "diamond"
-			subtitle: "You... monster"
+			subtitle: "{chapter.7.quest.54.subtitle}"
 			hide_dependency_lines: true
 			dependencies: ["2EC536106C5002D4"]
 			secret: true
@@ -1448,15 +1389,11 @@
 			}]
 		}
 		{
-			title: "You spin my head right round..."
+			title: "{chapter.7.quest.58.title}"
 			x: -10.0d
 			y: 3.5d
-			subtitle: "I don't like where this is going..."
-			description: [
-				"Methane has a strange effect on the mind and body. When inhaled, it fogs weak minds, making one suggestable to even the most preposterous of ideas."
-				"...I wonder if it has the same effect on Piglins?"
-				"It can be produced by placing lots of decomposable items in an Industrial Centrifuge, like 16 wood, as an example."
-			]
+			subtitle: "{chapter.7.quest.58.subtitle}"
+			description: ["{chapter.7.quest.58.description.1}"]
 			dependencies: ["673DC1F22D2F790D"]
 			id: "08920EA71AAD4519"
 			tasks: [{
@@ -1478,10 +1415,10 @@
 			}]
 		}
 		{
-			title: "Come heeeere, little piggy."
+			title: "{chapter.7.quest.59.title}"
 			x: -13.0d
 			y: -2.5d
-			subtitle: "Observe a piglin in their natural habitat."
+			subtitle: "{chapter.7.quest.59.subtitle}"
 			dependencies: ["1873D12083BC1697"]
 			id: "43D115AA6859432C"
 			tasks: [{
@@ -1510,7 +1447,7 @@
 			}]
 		}
 		{
-			title: "Make CHANGES to this multiblock viability "
+			title: "{chapter.7.quest.61.title}"
 			x: -8.0d
 			y: 8.0d
 			dependencies: ["0F0B9EF663EEC0C5"]
@@ -1533,14 +1470,10 @@
 			}]
 		}
 		{
-			title: "Ultimate Andesite Generation"
+			title: "{chapter.7.quest.63.title}"
 			x: -4.5d
 			y: -4.5d
-			description: [
-				"An andesite generator ontop of quadruple compressed Andesite will create a single compressed andesite, giving you 9x efficiency."
-				""
-				"Of course, you should have enough andesite for the rest of the pack if you're able to create quad compressed andesite. But I know some people will want to beat this challenge just for the satisfaction of it. What will you do?"
-			]
+			description: ["{chapter.7.quest.63.description.1}"]
 			dependencies: ["253F29A00B4EA050"]
 			optional: true
 			id: "180A2D9D8EF9DC0A"
@@ -1551,7 +1484,7 @@
 			}]
 		}
 		{
-			title: "New Ingot!"
+			title: "{chapter.7.quest.64.title}"
 			x: -7.5d
 			y: -2.0d
 			dependencies: ["253F29A00B4EA050"]
@@ -1563,14 +1496,11 @@
 			}]
 		}
 		{
-			title: "This isn't like the rest..."
+			title: "{chapter.7.quest.65.title}"
 			x: -7.5d
 			y: -1.0d
-			subtitle: "You don't use the press for this..."
-			description: [
-				""
-				"Do note ostrum plates involve using a compressor instead of a mechanical press. More and more plates will be created like this."
-			]
+			subtitle: "{chapter.7.quest.65.subtitle}"
+			description: ["{chapter.7.quest.65.description.1}"]
 			dependencies: ["08FBFF7A3465BF56"]
 			id: "2993E04DCB7B4EC4"
 			tasks: [{
@@ -1580,10 +1510,10 @@
 			}]
 		}
 		{
-			title: "Trojan Horse"
+			title: "{chapter.7.quest.66.title}"
 			x: -10.0d
 			y: 4.5d
-			subtitle: "They won't remember"
+			subtitle: "{chapter.7.quest.66.subtitle}"
 			dependencies: [
 				"08920EA71AAD4519"
 				"5DE2E3396D1A4C7F"
