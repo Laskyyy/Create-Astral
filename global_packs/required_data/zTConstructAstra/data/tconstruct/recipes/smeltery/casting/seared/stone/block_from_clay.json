@@ -5,8 +5,8 @@
   },
   "cast_consumed": true,
   "fluid": {
-    "tag": "tconstruct:seared_stone",
-    "amount": 72000
+    "tag": "tconstruct:molten_clay",
+    "amount": 40500
   },
   "result": "tconstruct:seared_stone",
   "cooling_time": 102
