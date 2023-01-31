@@ -1,6 +1,6 @@
 {
 	version: 13
-	title: "Create: Astral"
+	title: "{quest.main_title}"
 	icon: {
 		id: "ftbquests:custom_icon"
 		Count: 1b
