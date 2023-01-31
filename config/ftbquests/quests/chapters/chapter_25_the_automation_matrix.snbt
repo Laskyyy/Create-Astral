@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 3
 	filename: "chapter_25_the_automation_matrix"
-	title: "2.5) The Automation Matrix"
+	title: "{chapter.4.title}"
 	icon: "create:mechanical_arm"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -12,8 +12,8 @@
 			x: -21.5d
 			y: -21.5d
 			shape: "square"
-			subtitle: "Compost organics"
-			description: ["Bonemeal is used to speed the growth of crops."]
+			subtitle: "{chapter.4.quest.1.subtitle}"
+			description: ["{chapter.4.quest.1.description.1}"]
 			dependencies: ["7A552E564BED33A1"]
 			size: 2.0d
 			id: "447B85EDCD394BC6"
@@ -26,7 +26,7 @@
 		{
 			x: -21.5d
 			y: -18.0d
-			subtitle: "Compact bone meal and gravel in lava"
+			subtitle: "{chapter.4.quest.2.subtitle}"
 			dependencies: [
 				"447B85EDCD394BC6"
 				"14E90DB150FD5F52"
@@ -44,7 +44,7 @@
 			x: -14.0d
 			y: -21.5d
 			shape: "square"
-			subtitle: "Mine generated cobblestone"
+			subtitle: "{chapter.4.quest.3.subtitle}"
 			dependencies: [
 				"65BA0693A1503F3E"
 				"1238F770F13D7B85"
@@ -60,7 +60,7 @@
 		{
 			x: -14.0d
 			y: -18.0d
-			subtitle: "Mill or crush cobblestone"
+			subtitle: "{chapter.4.quest.4.subtitle}"
 			dependencies: ["34F94423116413C9"]
 			id: "14E90DB150FD5F52"
 			tasks: [{
@@ -72,7 +72,7 @@
 		{
 			x: -14.0d
 			y: -14.5d
-			subtitle: "There may be a way to automate this later..."
+			subtitle: "{chapter.4.quest.5.subtitle}"
 			min_required_dependencies: 1
 			dependencies: [
 				"429D2340C2B20A60"
@@ -91,8 +91,8 @@
 			x: -14.0d
 			y: -11.0d
 			shape: "diamond"
-			subtitle: "Grind pointed dripstone OR mill or crush dripstone OR wash sand"
-			description: ["Clay is in an important resource in the creation of other materials."]
+			subtitle: "{chapter.4.quest.6.subtitle}"
+			description: ["{chapter.4.quest.6.description.1}"]
 			min_required_dependencies: 1
 			dependencies: [
 				"0ECC3FAE2E840816"
@@ -110,7 +110,7 @@
 		{
 			x: -21.5d
 			y: -11.0d
-			subtitle: "There may be a way to automate this soon..."
+			subtitle: "{chapter.4.quest.7.subtitle}"
 			min_required_dependencies: 1
 			dependencies: [
 				"17041A495A41EEFD"
@@ -128,7 +128,7 @@
 		{
 			x: -24.5d
 			y: -4.0d
-			subtitle: "Pack moon sand and pointed dripstone w/ lava+flint"
+			subtitle: "{chapter.4.quest.8.subtitle}"
 			dependencies: [
 				"5453AF2AAC0202B1"
 				"1BFA4FB40E2BB903"
@@ -145,7 +145,7 @@
 		{
 			x: -24.5d
 			y: -7.5d
-			subtitle: "Crush Moon Stone"
+			subtitle: "{chapter.4.quest.9.subtitle}"
 			min_required_dependencies: 1
 			dependencies: [
 				"306D009F01634115"
@@ -164,8 +164,8 @@
 			x: -27.5d
 			y: -4.0d
 			shape: "diamond"
-			subtitle: "Wash moon sand"
-			description: ["Desh is used for various basic space-faring utilities."]
+			subtitle: "{chapter.4.quest.10.subtitle}"
+			description: ["{chapter.4.quest.10.description.1}"]
 			dependencies: ["5453AF2AAC0202B1"]
 			size: 2.5d
 			id: "6DE347D54C61BD33"
@@ -178,7 +178,7 @@
 		{
 			x: -24.5d
 			y: -11.0d
-			subtitle: "Bulk blast moon cobblestone"
+			subtitle: "{chapter.4.quest.11.subtitle}"
 			dependencies: [
 				"4048C7C6A85BD755"
 				"429D2340C2B20A60"
@@ -195,8 +195,8 @@
 			x: -24.5d
 			y: -14.5d
 			shape: "square"
-			subtitle: "Mine generated moon stone"
-			description: ["You won't be able to turn this into sand until later."]
+			subtitle: "{chapter.4.quest.12.subtitle}"
+			description: ["{chapter.4.quest.12.description.1}"]
 			dependencies: ["52E33520545721C4"]
 			hide: false
 			size: 1.5d
@@ -208,12 +208,12 @@
 			}]
 		}
 		{
-			title: "Andesite (Tier III)"
+			title: "{chapter.4.quest.13.title}"
 			x: -6.5d
 			y: -14.5d
 			shape: "diamond"
-			subtitle: "Compact gravel in lava w/ flint"
-			description: ["Andesite is important for crafting andesite alloy."]
+			subtitle: "{chapter.4.quest.13.subtitle}"
+			description: ["{chapter.4.quest.13.description.1}"]
 			min_required_dependencies: 2
 			dependencies: [
 				"6623524E68636273"
@@ -232,7 +232,7 @@
 		{
 			x: -6.5d
 			y: -11.0d
-			subtitle: "Haunt sand"
+			subtitle: "{chapter.4.quest.14.subtitle}"
 			dependencies: [
 				"0ECC3FAE2E840816"
 				"072FC342FAE44F38"
@@ -248,7 +248,7 @@
 		{
 			x: -3.5d
 			y: -9.5d
-			subtitle: "Haunt soul sand"
+			subtitle: "{chapter.4.quest.15.subtitle}"
 			dependencies: ["7B7930EE5AFA5EC0"]
 			hide: true
 			id: "665A937BDB1B23C2"
@@ -261,7 +261,7 @@
 		{
 			x: -3.5d
 			y: -8.5d
-			subtitle: "Crush netherrack"
+			subtitle: "{chapter.4.quest.16.subtitle}"
 			dependencies: [
 				"665A937BDB1B23C2"
 				"429D2340C2B20A60"
@@ -278,8 +278,8 @@
 			x: -0.5d
 			y: -14.5d
 			shape: "square"
-			subtitle: "Mine generated basalt"
-			description: ["You can make diorite out of basalt and one other thing..."]
+			subtitle: "{chapter.4.quest.17.subtitle}"
+			description: ["{chapter.4.quest.17.description.1}"]
 			dependencies: ["70D6E982A2BA7CB7"]
 			hide: true
 			size: 2.0d
@@ -291,10 +291,10 @@
 			}]
 		}
 		{
-			title: "Diorite (Improved)"
+			title: "{chapter.4.quest.18.title}"
 			x: -0.5d
 			y: -11.0d
-			subtitle: "Pour liquid soul onto basalt"
+			subtitle: "{chapter.4.quest.18.subtitle}"
 			min_required_dependencies: 1
 			dependencies: [
 				"1F46987F39D5BBDA"
@@ -312,8 +312,8 @@
 			x: 5.5d
 			y: -11.0d
 			shape: "diamond"
-			subtitle: "Mill or crush Diorite"
-			description: ["Quartz has some uncommon uses."]
+			subtitle: "{chapter.4.quest.19.subtitle}"
+			description: ["{chapter.4.quest.19.description.1}"]
 			min_required_dependencies: 1
 			dependencies: [
 				"62BC7A057C6192E7"
@@ -330,7 +330,7 @@
 		{
 			x: -3.5d
 			y: -4.0d
-			subtitle: "Crush granite"
+			subtitle: "{chapter.4.quest.20.subtitle}"
 			min_required_dependencies: 1
 			dependencies: [
 				"1511AEC329BBB627"
@@ -348,8 +348,8 @@
 			x: -3.5d
 			y: -0.5d
 			shape: "diamond"
-			subtitle: "Wash red sand"
-			description: ["Zinc is primarily used in alloying, although a few machines require zinc."]
+			subtitle: "{chapter.4.quest.21.subtitle}"
+			description: ["{chapter.4.quest.21.description.1}"]
 			min_required_dependencies: 1
 			dependencies: [
 				"171F7C7F9622F718"
@@ -365,12 +365,12 @@
 			}]
 		}
 		{
-			title: "Andesite (Tier II)"
+			title: "{chapter.4.quest.22.title}"
 			x: 5.5d
 			y: -7.5d
 			shape: "diamond"
-			subtitle: "Pour molten quartz onto stone."
-			description: ["Andesite is important for crafting andesite alloy."]
+			subtitle: "{chapter.4.quest.22.subtitle}"
+			description: ["{chapter.4.quest.22.description.1}"]
 			dependencies: [
 				"347BC30501D878D4"
 				"1519A1EA2CFA6FB1"
@@ -386,11 +386,11 @@
 			}]
 		}
 		{
-			title: "Granite (Improved)"
+			title: "{chapter.4.quest.23.title}"
 			x: -0.5d
 			y: -7.5d
-			subtitle: "Compact diorite and netherrack dust in lava w/ flint"
-			description: ["Although the bedrock generator can give you multiple stones including granite, its more efficient to produce granite this way. Plus, you won't have to deal with transporting rocks from the bottom layer if you do things this way."]
+			subtitle: "{chapter.4.quest.23.subtitle}"
+			description: ["{chapter.4.quest.23.description.1}"]
 			dependencies: [
 				"62BC7A057C6192E7"
 				"5E3AA3740DDFA355"
@@ -407,7 +407,7 @@
 		{
 			x: -24.5d
 			y: -0.5d
-			subtitle: "Crush limestone"
+			subtitle: "{chapter.4.quest.24.subtitle}"
 			dependencies: [
 				"31EEA6A71A76E09D"
 				"429D2340C2B20A60"
@@ -424,8 +424,8 @@
 			x: -24.5d
 			y: 3.0d
 			shape: "diamond"
-			subtitle: "Wash lime dust"
-			description: ["Silver is used in the production of electrical machines."]
+			subtitle: "{chapter.4.quest.25.subtitle}"
+			description: ["{chapter.4.quest.25.description.1}"]
 			min_required_dependencies: 1
 			dependencies: [
 				"282478462D746146"
@@ -444,7 +444,7 @@
 		{
 			x: -9.5d
 			y: -11.0d
-			subtitle: "Bulk blast sand"
+			subtitle: "{chapter.4.quest.26.subtitle}"
 			dependencies: ["0ECC3FAE2E840816"]
 			id: "3DF7824F849750C5"
 			tasks: [{
@@ -456,7 +456,7 @@
 		{
 			x: -9.5d
 			y: -7.5d
-			subtitle: "Shaped crafting with red dye and glass"
+			subtitle: "{chapter.4.quest.27.subtitle}"
 			dependencies: [
 				"3DF7824F849750C5"
 				"3EA569DE4AC60CC2"
@@ -474,8 +474,8 @@
 			x: -6.5d
 			y: -4.0d
 			shape: "diamond"
-			subtitle: "Tesla coil charge synthetic redstone crystals"
-			description: ["Redstone is not only used to craft primitive circuitry, but also to craft basic circuits and circuitry tools."]
+			subtitle: "{chapter.4.quest.28.subtitle}"
+			description: ["{chapter.4.quest.28.description.1}"]
 			dependencies: [
 				"0D2B2E4558DCB357"
 				"64A1C434EB7021E6"
@@ -493,7 +493,7 @@
 		{
 			x: -12.5d
 			y: -7.5d
-			subtitle: "Basin pour molten clay onto stone"
+			subtitle: "{chapter.4.quest.29.subtitle}"
 			dependencies: [
 				"09C0AD7F5D605F0C"
 				"1519A1EA2CFA6FB1"
@@ -509,7 +509,7 @@
 		{
 			x: -15.0d
 			y: -4.0d
-			subtitle: "Basin pour water onto seared stone"
+			subtitle: "{chapter.4.quest.30.subtitle}"
 			min_required_dependencies: 1
 			dependencies: [
 				"406D5C04583BD542"
@@ -526,7 +526,7 @@
 		{
 			x: -10.0d
 			y: -4.0d
-			subtitle: "Basin pour lava onto seared stone"
+			subtitle: "{chapter.4.quest.31.subtitle}"
 			min_required_dependencies: 1
 			dependencies: [
 				"406D5C04583BD542"
@@ -544,8 +544,8 @@
 			x: -15.5d
 			y: -0.5d
 			shape: "diamond"
-			subtitle: "Mill or crush asurine"
-			description: ["Tin is used in various miscelaneous machines. It is also used in alloying."]
+			subtitle: "{chapter.4.quest.32.subtitle}"
+			description: ["{chapter.4.quest.32.description.1}"]
 			min_required_dependencies: 1
 			dependencies: [
 				"7083DC2167188BCF"
@@ -565,8 +565,8 @@
 			x: -9.5d
 			y: -0.5d
 			shape: "diamond"
-			subtitle: "Mill or crush veridium"
-			description: ["Copper is used in fluid-related machines, and is common in alloying."]
+			subtitle: "{chapter.4.quest.33.subtitle}"
+			description: ["{chapter.4.quest.33.description.1}"]
 			min_required_dependencies: 1
 			dependencies: [
 				"1F7524655E4B58A0"
@@ -586,8 +586,8 @@
 			x: -6.5d
 			y: -7.5d
 			shape: "diamond"
-			subtitle: "Wash soul sand."
-			description: ["Gold's unique properties gives it unusual uses for crafting. It is also beloved by some mobs."]
+			subtitle: "{chapter.4.quest.34.subtitle}"
+			description: ["{chapter.4.quest.34.description.1}"]
 			dependencies: ["7B7930EE5AFA5EC0"]
 			size: 2.5d
 			id: "0A7ECB3D720093C0"
@@ -601,7 +601,7 @@
 			x: -21.5d
 			y: -7.5d
 			shape: "square"
-			subtitle: "Farm kelp"
+			subtitle: "{chapter.4.quest.35.subtitle}"
 			dependencies: ["38814494AB07C2D8"]
 			hide: true
 			size: 1.5d
@@ -616,12 +616,8 @@
 			x: -21.5d
 			y: -4.0d
 			shape: "diamond"
-			subtitle: "Bulk smoke kelp"
-			description: [
-				"Dried kelp is used for crafting tunnels, funnels, and belts, which are used a lot in item transportation during automation."
-				""
-				"It can also be used as a fuel source when crafted into blocks."
-			]
+			subtitle: "{chapter.4.quest.36.subtitle}"
+			description: ["{chapter.4.quest.36.description.1}"]
 			dependencies: ["707B59245747B112"]
 			size: 2.5d
 			id: "32C6826E01CB67F2"
@@ -634,7 +630,7 @@
 		{
 			x: -21.5d
 			y: -0.5d
-			subtitle: "Grind dried kelp"
+			subtitle: "{chapter.4.quest.37.subtitle}"
 			dependencies: [
 				"32C6826E01CB67F2"
 				"2F7F41E1C9C7F7B3"
@@ -651,8 +647,8 @@
 			x: -18.5d
 			y: -0.5d
 			shape: "diamond"
-			subtitle: "Pack gunpowder, lazurite dust, and iron nuggets in lava"
-			description: ["Lapis has a couple of mystical properties. Its block form is also used in circuitry production."]
+			subtitle: "{chapter.4.quest.38.subtitle}"
+			description: ["{chapter.4.quest.38.description.1}"]
 			dependencies: [
 				"274BA7205ECC4FEB"
 				"5389EB8711792F04"
@@ -671,7 +667,7 @@
 		{
 			x: -17.0d
 			y: -4.0d
-			subtitle: "Crush asurine"
+			subtitle: "{chapter.4.quest.39.subtitle}"
 			dependencies: [
 				"7083DC2167188BCF"
 				"429D2340C2B20A60"
@@ -685,16 +681,12 @@
 			}]
 		}
 		{
-			title: "Flint (Used in Multiple Places - Read!)"
+			title: "{chapter.4.quest.40.title}"
 			x: -9.5d
 			y: -18.0d
 			shape: "octagon"
-			subtitle: "Wash gravel"
-			description: [
-				"Flint is a very common ingredient for many rock chemistry recipes, often being compacted in lava."
-				""
-				"Recipes that use flint in lava are not connected to this quest, but be mindful that flint is quite as useless as one may think."
-			]
+			subtitle: "{chapter.4.quest.40.subtitle}"
+			description: ["{chapter.4.quest.40.description.1}"]
 			dependencies: ["14E90DB150FD5F52"]
 			id: "6623524E68636273"
 			tasks: [{
@@ -707,8 +699,8 @@
 			x: -18.5d
 			y: -14.5d
 			shape: "diamond"
-			subtitle: "Wash gravel"
-			description: ["Iron has many, many uses. "]
+			subtitle: "{chapter.4.quest.41.subtitle}"
+			description: ["{chapter.4.quest.41.description.1}"]
 			min_required_dependencies: 1
 			dependencies: [
 				"14E90DB150FD5F52"
@@ -753,7 +745,6 @@
 			x: -21.5d
 			y: -25.0d
 			shape: "pentagon"
-			description: [""]
 			dependencies: ["38814494AB07C2D8"]
 			hide: true
 			size: 1.5d
@@ -817,7 +808,7 @@
 		{
 			x: 8.5d
 			y: -11.0d
-			subtitle: "Shapless crafting with redstone and quartz"
+			subtitle: "{chapter.4.quest.48.subtitle}"
 			dependencies: [
 				"347BC30501D878D4"
 				"5D1A07E7D27FB96D"
@@ -833,7 +824,7 @@
 		{
 			x: 8.5d
 			y: -7.5d
-			subtitle: "Sand rose quartz"
+			subtitle: "{chapter.4.quest.49.subtitle}"
 			dependencies: ["6B3AE660A641C114"]
 			hide: true
 			id: "1CBDFF73BCBD9083"
@@ -847,8 +838,8 @@
 			x: 8.5d
 			y: -4.0d
 			shape: "diamond"
-			subtitle: "Spout molten rose gold onto polished rose quartz"
-			description: ["Electron tubes is essential for production of \"smart\" mechanical machines."]
+			subtitle: "{chapter.4.quest.50.subtitle}"
+			description: ["{chapter.4.quest.50.description.1}"]
 			dependencies: [
 				"1CBDFF73BCBD9083"
 				"244E5AA24082322C"
@@ -868,8 +859,8 @@
 			x: -33.5d
 			y: -21.5d
 			shape: "square"
-			subtitle: "Foundry smelt living blazes from spawner"
-			description: ["Blazing blood can be used as an alternative to lava for powering foundries. It will melt items faster."]
+			subtitle: "{chapter.4.quest.51.subtitle}"
+			description: ["{chapter.4.quest.51.description.1}"]
 			dependencies: ["3CB5D433A10C2040"]
 			size: 2.0d
 			id: "2E443EE8C2CC5DE9"
@@ -883,8 +874,8 @@
 			x: -30.5d
 			y: -21.5d
 			shape: "square"
-			subtitle: "Foundry smelt non-blazes from spawners"
-			description: ["Blood can be casted into coagulated blood, a substitute for slime."]
+			subtitle: "{chapter.4.quest.52.subtitle}"
+			description: ["{chapter.4.quest.52.description.1}"]
 			dependencies: ["3CB5D433A10C2040"]
 			size: 2.0d
 			id: "75DBB5D323C6761B"
@@ -897,7 +888,7 @@
 		{
 			x: -27.5d
 			y: -14.5d
-			subtitle: "Shapeless crafting w/ lime dye and dough"
+			subtitle: "{chapter.4.quest.53.subtitle}"
 			dependencies: [
 				"22466F075AF13097"
 				"09C4EF17B09DD54B"
@@ -912,7 +903,7 @@
 		{
 			x: -28.0d
 			y: -18.0d
-			subtitle: "Bulk wash wheat flour or mix wheat flour w/ water"
+			subtitle: "{chapter.4.quest.54.subtitle}"
 			dependencies: ["506F91A88F6A9960"]
 			id: "09C4EF17B09DD54B"
 			tasks: [{
@@ -924,7 +915,7 @@
 		{
 			x: -27.0d
 			y: -18.0d
-			subtitle: "Shapless crafting w/ green dye and white dye"
+			subtitle: "{chapter.4.quest.55.subtitle}"
 			dependencies: [
 				"538805A57FBC2DC8"
 				"09BA679DF8E30068"
@@ -940,7 +931,7 @@
 			x: -26.5d
 			y: -21.5d
 			shape: "square"
-			subtitle: "Mill or crush a green dye source"
+			subtitle: "{chapter.4.quest.56.subtitle}"
 			dependencies: ["3AF363AF0DF17B33"]
 			size: 2.0d
 			id: "538805A57FBC2DC8"
@@ -953,7 +944,7 @@
 		{
 			x: -33.5d
 			y: -18.0d
-			subtitle: "Cast blazing blood into rod cast"
+			subtitle: "{chapter.4.quest.57.subtitle}"
 			dependencies: ["2E443EE8C2CC5DE9"]
 			id: "234C22F2C08CFE9B"
 			tasks: [{
@@ -965,7 +956,7 @@
 		{
 			x: -33.5d
 			y: -14.5d
-			subtitle: "Shaped crafting w/ blaze rods OR grind blaze rods"
+			subtitle: "{chapter.4.quest.58.subtitle}"
 			dependencies: ["234C22F2C08CFE9B"]
 			id: "7E8A77B2BB8550B6"
 			tasks: [{
@@ -977,7 +968,7 @@
 		{
 			x: -30.5d
 			y: -11.0d
-			subtitle: "Shapless crafting w/ blaze powder and either coagulated blood OR slimeballs"
+			subtitle: "{chapter.4.quest.59.subtitle}"
 			min_required_dependencies: 1
 			dependencies: [
 				"7E8A77B2BB8550B6"
@@ -995,7 +986,7 @@
 		{
 			x: -30.5d
 			y: -4.0d
-			subtitle: "Bulk wash magma blocks"
+			subtitle: "{chapter.4.quest.60.subtitle}"
 			min_required_dependencies: 1
 			dependencies: ["61CBA59F2BC063AC"]
 			hide: false
@@ -1010,8 +1001,8 @@
 			x: -30.5d
 			y: 3.0d
 			shape: "diamond"
-			subtitle: "Sequenced assembly (optionally with lava)"
-			description: ["Sturdy sheets have many uses due to its sturdy properties. Utilities relating to trains also make use of them."]
+			subtitle: "{chapter.4.quest.61.subtitle}"
+			description: ["{chapter.4.quest.61.description.1}"]
 			dependencies: ["619CD1378381E86E"]
 			size: 2.5d
 			id: "6B75BA55CF212249"
@@ -1024,7 +1015,7 @@
 		{
 			x: -30.5d
 			y: -14.5d
-			subtitle: "Cast blood into casting table, no cast shape required."
+			subtitle: "{chapter.4.quest.62.subtitle}"
 			dependencies: ["75DBB5D323C6761B"]
 			id: "2950D3DA74E0D635"
 			tasks: [{
@@ -1037,7 +1028,7 @@
 			x: -32.0d
 			y: -25.0d
 			shape: "pentagon"
-			subtitle: "Place a fueled foundry under a spawner"
+			subtitle: "{chapter.4.quest.63.subtitle}"
 			dependencies: ["5355CA2F0BA74BF1"]
 			hide: true
 			size: 1.5d
@@ -1052,7 +1043,7 @@
 			x: -28.5d
 			y: -21.5d
 			shape: "circle"
-			subtitle: "Mill or crush wheat"
+			subtitle: "{chapter.4.quest.64.subtitle}"
 			dependencies: ["1A7E5A082C9C7BC8"]
 			id: "506F91A88F6A9960"
 			tasks: [{
@@ -1065,8 +1056,8 @@
 			x: -3.5d
 			y: 10.0d
 			shape: "diamond"
-			subtitle: "Bulk blast grout"
-			description: ["Seared bricks allow you to craft melters, necessary for converting metals into molten form."]
+			subtitle: "{chapter.4.quest.65.subtitle}"
+			description: ["{chapter.4.quest.65.description.1}"]
 			dependencies: ["5A6FC129185EA65C"]
 			size: 2.5d
 			id: "17C8208B96AF144C"
@@ -1079,7 +1070,7 @@
 		{
 			x: -3.5d
 			y: 6.5d
-			subtitle: "Mix zinc ingots, andesite alloy, and gravel"
+			subtitle: "{chapter.4.quest.66.subtitle}"
 			dependencies: [
 				"0368B30374467B41"
 				"61DC7598AD1BF667"
@@ -1096,8 +1087,8 @@
 			x: -0.5d
 			y: 3.0d
 			shape: "diamond"
-			subtitle: "Cast compound mixture into a basin or ingot cast"
-			description: ["Andesite is ubiquitous in the production of fundamental kinetic machines."]
+			subtitle: "{chapter.4.quest.67.subtitle}"
+			description: ["{chapter.4.quest.67.description.1}"]
 			hide_dependency_lines: false
 			min_required_dependencies: 1
 			dependencies: [
@@ -1116,7 +1107,7 @@
 		{
 			x: 1.0d
 			y: 0.0d
-			subtitle: "Mix andesite alloy ingredients"
+			subtitle: "{chapter.4.quest.68.subtitle}"
 			dependencies: [
 				"37EE2561931F2BEF"
 				"36FE917048C6B485"
@@ -1135,8 +1126,8 @@
 			x: -0.5d
 			y: 10.0d
 			shape: "diamond"
-			subtitle: "Deploy andesite alloy onto logs"
-			description: ["Andesite casing is used to craft basic mechanical machines."]
+			subtitle: "{chapter.4.quest.69.subtitle}"
+			description: ["{chapter.4.quest.69.description.1}"]
 			dependencies: [
 				"0368B30374467B41"
 				"3A632D8D9986D43A"
@@ -1155,8 +1146,8 @@
 			x: -0.5d
 			y: 13.5d
 			shape: "diamond"
-			subtitle: "Sequenced assembly"
-			description: ["Copper casing is important for crafting machines that act on fluids."]
+			subtitle: "{chapter.4.quest.70.subtitle}"
+			description: ["{chapter.4.quest.70.description.1}"]
 			dependencies: [
 				"0BF064389F9FFDC3"
 				"023225B51792489A"
@@ -1176,8 +1167,8 @@
 			x: -3.5d
 			y: 16.5d
 			shape: "diamond"
-			subtitle: "Pour molten brass onto copper casing"
-			description: ["Brass casing is important for \"smart\" mechanical machines."]
+			subtitle: "{chapter.4.quest.71.subtitle}"
+			description: ["{chapter.4.quest.71.description.1}"]
 			min_required_dependencies: 2
 			dependencies: [
 				"737625E7DFCB0382"
@@ -1194,11 +1185,11 @@
 			}]
 		}
 		{
-			title: "Any Tree"
+			title: "{chapter.4.quest.72.title}"
 			x: 5.5d
 			y: -0.5d
 			shape: "square"
-			subtitle: "Farm any tree, preferably rubber trees"
+			subtitle: "{chapter.4.quest.72.subtitle}"
 			dependencies: ["38814494AB07C2D8"]
 			hide: true
 			size: 2.0d
@@ -1206,7 +1197,7 @@
 			tasks: [{
 				id: "3AD1ED9336A597C6"
 				type: "item"
-				title: "Any #minecraft:saplings"
+				title: "{chapter.4.quest.72.task.1.title}"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -1219,13 +1210,13 @@
 		{
 			x: 5.5d
 			y: 3.0d
-			subtitle: "Farm trees"
+			subtitle: "{chapter.4.quest.73.subtitle}"
 			dependencies: ["5B3FA87A71825852"]
 			id: "7FFED14DF7F210ED"
 			tasks: [{
 				id: "3D07DB5BC2416123"
 				type: "item"
-				title: "Any #minecraft:logs_that_burn"
+				title: "{chapter.4.quest.73.task.1.title}"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -1238,13 +1229,13 @@
 		{
 			x: 2.5d
 			y: 6.5d
-			subtitle: "Mechanically saw logs"
+			subtitle: "{chapter.4.quest.74.subtitle}"
 			dependencies: ["7FFED14DF7F210ED"]
 			id: "3A632D8D9986D43A"
 			tasks: [{
 				id: "4B1B649AF50ECEA5"
 				type: "item"
-				title: "Any #c:stripped_logs"
+				title: "{chapter.4.quest.74.task.1.title}"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -1258,8 +1249,8 @@
 			x: 8.5d
 			y: 6.5d
 			shape: "diamond"
-			subtitle: "Bulk blast logs"
-			description: ["Charcoal is an efficient renewable fuel source."]
+			subtitle: "{chapter.4.quest.75.subtitle}"
+			description: ["{chapter.4.quest.75.description.1}"]
 			dependencies: ["7FFED14DF7F210ED"]
 			size: 2.5d
 			id: "558432AC3AABA477"
@@ -1272,7 +1263,7 @@
 		{
 			x: 5.5d
 			y: 6.5d
-			subtitle: "Mill or crush rubber logs"
+			subtitle: "{chapter.4.quest.76.subtitle}"
 			dependencies: ["7FFED14DF7F210ED"]
 			id: "153FAE86E32F306B"
 			tasks: [{
@@ -1285,8 +1276,8 @@
 			x: 5.5d
 			y: 10.0d
 			shape: "diamond"
-			subtitle: "Mix or extract sap"
-			description: ["Rubber is important for crafting a lot fluid machines and other machines, including item transportation mechanisms."]
+			subtitle: "{chapter.4.quest.77.subtitle}"
+			description: ["{chapter.4.quest.77.description.1}"]
 			dependencies: ["153FAE86E32F306B"]
 			size: 2.5d
 			id: "023225B51792489A"
@@ -1299,7 +1290,7 @@
 		{
 			x: 8.5d
 			y: 10.0d
-			subtitle: "Haunt charcoal"
+			subtitle: "{chapter.4.quest.78.subtitle}"
 			dependencies: [
 				"558432AC3AABA477"
 				"072FC342FAE44F38"
@@ -1315,7 +1306,7 @@
 		{
 			x: 8.5d
 			y: 13.5d
-			subtitle: "Grind coal"
+			subtitle: "{chapter.4.quest.79.subtitle}"
 			dependencies: [
 				"7F18819B46FAB017"
 				"2F7F41E1C9C7F7B3"
@@ -1332,8 +1323,8 @@
 			x: 8.5d
 			y: 17.0d
 			shape: "diamond"
-			subtitle: "Implosion compress 64x coal dust"
-			description: ["Diamond is primarily used for decoration."]
+			subtitle: "{chapter.4.quest.80.subtitle}"
+			description: ["{chapter.4.quest.80.description.1}"]
 			dependencies: [
 				"0702F6A12A0C5FBE"
 				"2E320829DF95EB8E"
@@ -1351,8 +1342,8 @@
 			x: -0.5d
 			y: 20.5d
 			shape: "diamond"
-			subtitle: "Sequenced assembly"
-			description: ["Machine frames are used for basic electrical machines."]
+			subtitle: "{chapter.4.quest.81.subtitle}"
+			description: ["{chapter.4.quest.81.description.1}"]
 			dependencies: [
 				"737625E7DFCB0382"
 				"023225B51792489A"
@@ -1372,8 +1363,8 @@
 			x: -6.5d
 			y: 3.0d
 			shape: "diamond"
-			subtitle: "Heated mix copper and molten, in molten form or ingot form"
-			description: ["Brass is important for creation of \"smart\" mechanical machines."]
+			subtitle: "{chapter.4.quest.82.subtitle}"
+			description: ["{chapter.4.quest.82.description.1}"]
 			dependencies: [
 				"22BAAD8B7057DF80"
 				"705C815541DB89F8"
@@ -1391,7 +1382,7 @@
 		{
 			x: -6.5d
 			y: 13.5d
-			subtitle: "Melt brass"
+			subtitle: "{chapter.4.quest.83.subtitle}"
 			dependencies: [
 				"5FD6A6FBF967C7D5"
 				"22B29B232EF2638F"
@@ -1407,7 +1398,7 @@
 		{
 			x: -18.5d
 			y: 3.0d
-			subtitle: "Automatic pack lapis lazuli"
+			subtitle: "{chapter.4.quest.84.subtitle}"
 			min_required_dependencies: 1
 			dependencies: [
 				"0C464BD01B2B52E0"
@@ -1424,7 +1415,7 @@
 		{
 			x: -18.5d
 			y: 6.5d
-			subtitle: "Press lapis lazuli block"
+			subtitle: "{chapter.4.quest.85.subtitle}"
 			dependencies: ["7F769452EFAD2E99"]
 			id: "3C90385C588F4630"
 			tasks: [{
@@ -1436,7 +1427,7 @@
 		{
 			x: -16.0d
 			y: 8.0d
-			subtitle: "rolling mill with copper sheets, or wire mill copper sheet."
+			subtitle: "{chapter.4.quest.86.subtitle}"
 			min_required_dependencies: 2
 			dependencies: [
 				"73973C5E6D2573B8"
@@ -1453,7 +1444,7 @@
 		{
 			x: -24.5d
 			y: 10.0d
-			subtitle: "Melt silver"
+			subtitle: "{chapter.4.quest.87.subtitle}"
 			dependencies: ["20B5957A02D96D8D"]
 			hide: true
 			id: "491505BB41BEF9DE"
@@ -1467,8 +1458,8 @@
 			x: -18.5d
 			y: 10.0d
 			shape: "diamond"
-			subtitle: "Sequenced assembly"
-			description: ["Circuits are used in basic electrical machines."]
+			subtitle: "{chapter.4.quest.88.subtitle}"
+			description: ["{chapter.4.quest.88.description.1}"]
 			dependencies: [
 				"491505BB41BEF9DE"
 				"3C90385C588F4630"
@@ -1483,7 +1474,7 @@
 			}]
 		}
 		{
-			title: "Andesite (From Elsewhere)"
+			title: "{chapter.4.quest.89.title}"
 			x: 0.0d
 			y: -1.0d
 			shape: "octagon"
@@ -1501,7 +1492,7 @@
 			}]
 		}
 		{
-			title: "Clay Ball (From Elsewhere)"
+			title: "{chapter.4.quest.90.title}"
 			x: 1.0d
 			y: -1.5d
 			shape: "octagon"
@@ -1519,7 +1510,7 @@
 			}]
 		}
 		{
-			title: "Andesite Alloy Nuggets (From Elsewhere)"
+			title: "{chapter.4.quest.91.title}"
 			x: 2.0d
 			y: -1.0d
 			shape: "octagon"
@@ -1553,8 +1544,8 @@
 			x: -12.5d
 			y: 3.0d
 			shape: "diamond"
-			subtitle: "Shapeless crafting with tin and copper, OR mix molten copper and molten tin"
-			description: ["Bronze is used for the production of cogwheels."]
+			subtitle: "{chapter.4.quest.92.subtitle}"
+			description: ["{chapter.4.quest.92.description.1}"]
 			dependencies: [
 				"2B8D64F5CD89A082"
 				"22BAAD8B7057DF80"
@@ -1568,7 +1559,7 @@
 			}]
 		}
 		{
-			title: "Gravel (From Elsewhere)"
+			title: "{chapter.4.quest.93.title}"
 			x: -4.5d
 			y: 5.5d
 			shape: "octagon"
@@ -1582,7 +1573,7 @@
 			}]
 		}
 		{
-			title: "Redstone (From Elsewhere)"
+			title: "{chapter.4.quest.94.title}"
 			x: 8.5d
 			y: -12.0d
 			shape: "octagon"
@@ -1598,7 +1589,7 @@
 		{
 			x: -24.5d
 			y: -21.5d
-			subtitle: "Mill or crush bone meal"
+			subtitle: "{chapter.4.quest.95.subtitle}"
 			dependencies: ["447B85EDCD394BC6"]
 			id: "09BA679DF8E30068"
 			tasks: [{
@@ -1610,7 +1601,7 @@
 		{
 			x: 11.5d
 			y: -7.5d
-			subtitle: "Mix molten copper and molten gold"
+			subtitle: "{chapter.4.quest.96.subtitle}"
 			min_required_dependencies: 1
 			dependencies: [
 				"60CE6A8505C14D69"
@@ -1657,7 +1648,7 @@
 			x: -36.5d
 			y: 3.0d
 			shape: "circle"
-			subtitle: "Heated mix powdered obsidian, scoria, soul sand, and magma cream"
+			subtitle: "{chapter.4.quest.99.subtitle}"
 			dependencies: [
 				"619CD1378381E86E"
 				"6A40405DDF192EE6"
@@ -1676,7 +1667,7 @@
 		{
 			x: -30.5d
 			y: -0.5d
-			subtitle: "Mill or crush obsidian"
+			subtitle: "{chapter.4.quest.100.subtitle}"
 			dependencies: ["32D551CE9F6A6B0A"]
 			id: "619CD1378381E86E"
 			tasks: [{
@@ -1688,7 +1679,7 @@
 		{
 			x: -39.5d
 			y: -0.5d
-			subtitle: "Bulk blast soul sand"
+			subtitle: "{chapter.4.quest.101.subtitle}"
 			dependencies: ["12588E50528E12E2"]
 			id: "4D9420C96F186CB1"
 			tasks: [{
@@ -1698,11 +1689,11 @@
 			}]
 		}
 		{
-			title: "Soul Sand (From Elsewhere)"
+			title: "{chapter.4.quest.102.title}"
 			x: -36.5d
 			y: -4.0d
 			shape: "octagon"
-			subtitle: "Haunt sand"
+			subtitle: "{chapter.4.quest.102.subtitle}"
 			hide_dependency_lines: true
 			dependencies: ["20BFF582275C31C8"]
 			hide: true
@@ -1715,7 +1706,7 @@
 			}]
 		}
 		{
-			title: "Moonstone generator explained here"
+			title: "{chapter.4.quest.103.title}"
 			x: -24.0d
 			y: -19.0d
 			shape: "pentagon"
@@ -1734,7 +1725,7 @@
 		{
 			x: -9.5d
 			y: 8.0d
-			subtitle: "Press copper ingots"
+			subtitle: "{chapter.4.quest.104.subtitle}"
 			dependencies: ["22BAAD8B7057DF80"]
 			hide: true
 			id: "4FC60CABB568F168"
@@ -1748,8 +1739,8 @@
 			x: -9.5d
 			y: -14.5d
 			shape: "diamond"
-			subtitle: "Compact gravel and flint"
-			description: ["Cobbled Deepslate can be recycled for rare chances of various ores later on."]
+			subtitle: "{chapter.4.quest.105.subtitle}"
+			description: ["{chapter.4.quest.105.description.1}"]
 			dependencies: [
 				"14E90DB150FD5F52"
 				"6623524E68636273"
@@ -1765,7 +1756,7 @@
 		{
 			x: -3.5d
 			y: -11.0d
-			subtitle: "Melt soul sand"
+			subtitle: "{chapter.4.quest.106.subtitle}"
 			dependencies: [
 				"7B7930EE5AFA5EC0"
 				"072FC342FAE44F38"
@@ -1781,7 +1772,7 @@
 		{
 			x: -30.5d
 			y: -7.5d
-			subtitle: "Automatic pack magma creams"
+			subtitle: "{chapter.4.quest.107.subtitle}"
 			min_required_dependencies: 1
 			dependencies: [
 				"6A40405DDF192EE6"
@@ -1799,8 +1790,8 @@
 			x: -36.5d
 			y: 6.5d
 			shape: "diamond"
-			subtitle: "Bulk blast nether grout"
-			description: ["Scorched Bricks are used to craft foundry-related blocks. Foundries are the best utility for smelting many objects at once, and produce the highest ore yields when melting ores. Foundries can also smelt entities."]
+			subtitle: "{chapter.4.quest.108.subtitle}"
+			description: ["{chapter.4.quest.108.description.1}"]
 			min_required_dependencies: 1
 			dependencies: [
 				"7CC71DB08315F7BE"
@@ -1818,8 +1809,8 @@
 		{
 			x: -17.5d
 			y: -11.5d
-			subtitle: "Automatic pack pointed dripstone"
-			description: ["If you don't have access to a grinder, you need mill or crush the full dripstone block instead."]
+			subtitle: "{chapter.4.quest.109.subtitle}"
+			description: ["{chapter.4.quest.109.description.1}"]
 			dependencies: ["1BFA4FB40E2BB903"]
 			id: "13BACEBAA46322DC"
 			tasks: [{
@@ -1832,7 +1823,7 @@
 			x: -28.5d
 			y: -25.0d
 			shape: "square"
-			subtitle: "Farm wheat"
+			subtitle: "{chapter.4.quest.110.subtitle}"
 			dependencies: ["38814494AB07C2D8"]
 			hide: true
 			size: 2.0d
@@ -1844,11 +1835,11 @@
 			}]
 		}
 		{
-			title: "Green Dye Source"
+			title: "{chapter.4.quest.111.title}"
 			x: -26.5d
 			y: -25.0d
 			shape: "pentagon"
-			subtitle: "Fram a source of green dye"
+			subtitle: "{chapter.4.quest.111.subtitle}"
 			dependencies: ["38814494AB07C2D8"]
 			hide: true
 			size: 1.5d
@@ -1873,20 +1864,12 @@
 			]
 		}
 		{
-			title: "What Is This?"
+			title: "{chapter.4.quest.112.title}"
 			icon: "create:empty_schematic"
 			x: -39.0d
 			y: -16.0d
 			shape: "gear"
-			description: [
-				"This chapter is special. The quests here aren't to present you with progression challenges, but to give you a visualization of what it takes to automate specific resources, and how resources overlap. It is a giant flowchart."
-				""
-				"It will feel sparse at first, but as you continue playing and unlock new machines and new resources, this chapter will automatically update to reflect new automation paths. Check back regularly!"
-				""
-				"Important: just because a resource is in here, DOES NOT MEAN YOU NEED TO AUTOMATE IT. Again, this page is a visualization tool, not a guidebook."
-				""
-				"It will also only go up to resources that can be automated at the end of chapter 3. That being said, following chapters will either introduce the next tier of circuits or casing, or will take advantage of a new stone generator."
-			]
+			description: ["{chapter.4.quest.112.description.1}"]
 			dependencies: ["38814494AB07C2D8"]
 			hide: true
 			size: 5.0d
@@ -1894,15 +1877,15 @@
 			tasks: [{
 				id: "0C4A361DA556D37A"
 				type: "checkmark"
-				title: "Understood."
+				title: "{chapter.4.quest.112.task.1.title}"
 			}]
 		}
 		{
-			title: "Crushing Unlocked"
+			title: "{chapter.4.quest.113.title}"
 			x: -14.0d
 			y: -16.0d
-			subtitle: "Crush gravel to get sand"
-			description: ["Now that you've unlocked crushing, you can automate sand directly."]
+			subtitle: "{chapter.4.quest.113.subtitle}"
+			description: ["{chapter.4.quest.113.description.1}"]
 			dependencies: [
 				"14E90DB150FD5F52"
 				"429D2340C2B20A60"
@@ -1916,11 +1899,11 @@
 			}]
 		}
 		{
-			title: "Grinder Unlocked"
+			title: "{chapter.4.quest.114.title}"
 			x: -17.5d
 			y: -10.5d
-			subtitle: "Improved yields"
-			description: ["This improves the yields of clay over creating dripstone blocks and milling/crushing them."]
+			subtitle: "{chapter.4.quest.114.subtitle}"
+			description: ["{chapter.4.quest.114.description.1}"]
 			dependencies: [
 				"1BFA4FB40E2BB903"
 				"2F7F41E1C9C7F7B3"
@@ -1934,11 +1917,11 @@
 			}]
 		}
 		{
-			title: "Spout Unlocked"
+			title: "{chapter.4.quest.115.title}"
 			x: -21.5d
 			y: -14.5d
-			subtitle: "Spout water on calcite to create dripstone"
-			description: ["There is now a way to create pointed dripstone directly, if there wasn't a way already."]
+			subtitle: "{chapter.4.quest.115.subtitle}"
+			description: ["{chapter.4.quest.115.description.1}"]
 			dependencies: [
 				"43B007A5BAE5E02E"
 				"17041A495A41EEFD"
@@ -1952,7 +1935,7 @@
 			}]
 		}
 		{
-			title: "A slime option"
+			title: "{chapter.4.quest.116.title}"
 			x: -29.0d
 			y: -13.0d
 			min_required_dependencies: 2
@@ -1967,7 +1950,7 @@
 			tasks: [{
 				id: "07E194DB658C304F"
 				type: "item"
-				title: "Any #c:slimeballs"
+				title: "{chapter.4.quest.116.task.1.title}"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -1978,18 +1961,12 @@
 			}]
 		}
 		{
-			title: "How to Read this Flowchart"
+			title: "{chapter.4.quest.117.title}"
 			icon: "create:goggles"
 			x: -39.0d
 			y: -11.0d
 			shape: "gear"
-			description: [
-				"The flow chart is pretty simple! Objects point to what can be made with them. How you convert one object to the other will be in the subtitle of the destination object."
-				""
-				"Some notes: Some quests are hidden until you complete a dependent quest. Even if you're deciding not to automate something, it might be worth completing the quest just to make sure you're not missing anything."
-				""
-				"Due to space constraints, we can't show every connection. Any quests marked (\"from elsewhere\") means the steps to automate the resource are described somewhere else in the flowchart. Also, the flowchart skips some steps that can be assumed easily, such as packing nuggets, melting metals, etc."
-			]
+			description: ["{chapter.4.quest.117.description.1}"]
 			dependencies: ["75928E9A25B2EFFD"]
 			hide: true
 			size: 3.0d
@@ -1997,26 +1974,16 @@
 			tasks: [{
 				id: "6A7245A59D6471C9"
 				type: "checkmark"
-				title: "Understood."
+				title: "{chapter.4.quest.117.task.1.title}"
 			}]
 		}
 		{
-			title: "What do the shapes mean?"
+			title: "{chapter.4.quest.118.title}"
 			icon: "create:wrench"
 			x: -39.0d
 			y: -7.5d
 			shape: "gear"
-			description: [
-				"Square quests are a resource you can easily get an infinite amount of."
-				""
-				"Pentagon quests are the tools you use to get an infinite amount of starting resource."
-				""
-				"Diamond-shaped quests are resources a player is likely to consider automating."
-				""
-				"Circle quests are intermediate steps."
-				""
-				"Octagon quests means the material's automation steps is described somewhere else, OR the intermediate material is used somewhere else in the flowchart. You might need to unlock more to see where materials are re-used."
-			]
+			description: ["{chapter.4.quest.118.description.1}"]
 			dependencies: ["3CDA0DBF9C8CF228"]
 			hide: true
 			size: 1.5d
@@ -2024,7 +1991,7 @@
 			tasks: [{
 				id: "01671A62BCC4E3F3"
 				type: "checkmark"
-				title: "Understood."
+				title: "{chapter.4.quest.118.task.1.title}"
 			}]
 		}
 		{
@@ -2054,12 +2021,12 @@
 			}]
 		}
 		{
-			title: "Bedrock Stone Generator"
+			title: "{chapter.4.quest.121.title}"
 			icon: "minecraft:bedrock"
 			x: 5.5d
 			y: -18.0d
 			shape: "pentagon"
-			description: ["Whenever flowing lava touches water ON TOP OF A BLOCK OF BEDROCK, there is a 20% chance of granite, diorite, and andesite - and a 40% of stone. You may have already built this. There will be more reliable ways to farm Andesite as you progress."]
+			description: ["{chapter.4.quest.121.description.1}"]
 			dependencies: [
 				"611F2B19B29B4CC5"
 				"2825485494EF37A5"
@@ -2069,11 +2036,11 @@
 			tasks: [{
 				id: "2FF3DD56D74395BE"
 				type: "checkmark"
-				title: "Understood."
+				title: "{chapter.4.quest.121.task.1.title}"
 			}]
 		}
 		{
-			title: "Andesite (Tier I)"
+			title: "{chapter.4.quest.122.title}"
 			x: 2.5d
 			y: -14.5d
 			shape: "diamond"
@@ -2104,7 +2071,7 @@
 		{
 			x: 5.5d
 			y: -14.5d
-			subtitle: "Mine a bedrock stone generator"
+			subtitle: "{chapter.4.quest.124.subtitle}"
 			dependencies: ["68D19E8C4B61D854"]
 			id: "14D83C47DA4FAB3C"
 			tasks: [{
@@ -2114,15 +2081,11 @@
 			}]
 		}
 		{
-			title: "Andesite Generator"
+			title: "{chapter.4.quest.125.title}"
 			x: 2.5d
 			y: -18.0d
 			shape: "pentagon"
-			description: [
-				"Flowing lava touching water over a double andesite block will produce andesite 1/6 of the time, and stone the other five times."
-				""
-				"Although the rate is about the same as bedrock, you won't need to retrieve the andesite from bedrock, and the stone can be used for dedicated uses."
-			]
+			description: ["{chapter.4.quest.125.description.1}"]
 			dependencies: [
 				"248121061F335E67"
 				"7D483089B83B3F93"
@@ -2162,15 +2125,11 @@
 			}]
 		}
 		{
-			title: "Improved Andesite Generator"
+			title: "{chapter.4.quest.128.title}"
 			x: -6.5d
 			y: -21.5d
 			shape: "pentagon"
-			description: [
-				"Flowing water touching lava over triple compressed andesite will always produce andesite."
-				""
-				"Although it will take you awhile to create enough andesite to make a triple compressed andesite, this method is incredibly simple."
-			]
+			description: ["{chapter.4.quest.128.description.1}"]
 			dependencies: [
 				"16DACAE87B3C7699"
 				"1873E2A12D8F97B8"
@@ -2211,11 +2170,11 @@
 			}]
 		}
 		{
-			title: "Andesite (Tier IV)"
+			title: "{chapter.4.quest.131.title}"
 			x: 11.5d
 			y: -14.5d
 			shape: "diamond"
-			subtitle: "The ultimate andesite generator"
+			subtitle: "{chapter.4.quest.131.subtitle}"
 			dependencies: ["3C2D4B41F4BE1AA6"]
 			size: 2.5d
 			id: "5114DC1BA07F8A2F"

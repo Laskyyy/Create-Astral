@@ -141,7 +141,7 @@
       ],
       "compressor:quadruple_compressed_andesite": [
         {
-          "id": "compressor:single_compressed_andesite",
+          "id": "compressor:compressed_andesite",
           "weight": 1.0
         }
       ]
