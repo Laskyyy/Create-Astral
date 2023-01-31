@@ -1064,7 +1064,7 @@ onEvent('recipes', event => {
 	event.remove({output: 'automobility:auto_mechanic_table'})
   event.remove({output: 'automobility:automobile_assembler'})
 	event.remove({output: 'campanion:grappling_hook'})
-  event.remove({output: 'structures_compass:structures_compass'})
+  event.remove({output: 'explorerscompass:explorerscompass'})
   event.remove({output: 'tconstruct:copper_nugget'})
   event.remove({output: 'techreborn:bronze_nugget'})
 
@@ -2280,7 +2280,7 @@ event.recipes.createSequencedAssembly([ // begin
 event.recipes.createFilling('createastral:brass_hoe', ['createastral:brass_hoe', {fluid: 'tconstruct:molten_diamond', amount: 20250}]), //fill 1/4 bucket
 ]).transitionalItem('createastral:brass_hoe').loops(1) 
 
-event.recipes.createFilling('structures_compass:structures_compass', [
+event.recipes.createFilling('explorerscompass:explorerscompass', [
   'minecraft:compass',
   {fluid: 'tconstruct:molten_iron', amount: 36000},
 ])
