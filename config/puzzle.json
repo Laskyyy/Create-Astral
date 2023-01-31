@@ -1,8 +1,8 @@
 {
   "disabledIntegrations": [],
-  "enablePuzzleButton": true,
+  "enablePuzzleButton": false,
   "debugMessages": false,
-  "checkUpdates": true,
+  "checkUpdates": false,
   "showPuzzleInfo": true,
   "resourcepackSplashScreen": false,
   "unlimitedRotations": true,
