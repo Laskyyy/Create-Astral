@@ -3046,6 +3046,11 @@ event.recipes.createMixing('tconstruct:seared_bricks', [
   '#c:slimeballs'
 ])
 
+event.recipes.createMixing('tconstruct:seared_bricks', [
+  '4x tconstruct:seared_brick',
+  'techreborn:sap'
+])
+
 
 
 //// ASSORTED CRAFTING BENCH RECIPES
