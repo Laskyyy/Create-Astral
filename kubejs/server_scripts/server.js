@@ -2950,6 +2950,12 @@ event.recipes.createMixing('8x tconstruct:grout', [
   event.smithing('farmersdelight:cooking_pot', 'farmersdelight:skillet', 'minecraft:water_bucket')
 
 
+  ///STRING AUTOMATION
+  event.recipes.createMilling([
+    Item.of('minecraft:string').withChance(.5)
+  ], 'farmersdelight:straw');
+
+
   ///// ORE PROCESSING PATCHES /////
 
 
