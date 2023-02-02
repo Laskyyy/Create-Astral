@@ -1419,6 +1419,17 @@ onEvent('recipes', event => {
   event.remove({output: 'techreborn:titanium_nugget'})
 
 
+  event.remove({output: 'techreborn:nickel_plate'})
+  event.remove({output: 'techreborn:nickel_ingot'})
+  event.remove({output: 'techreborn:nickel_storage_block'})
+  event.remove({output: 'techreborn:nickel_storage_block_stairs'})
+  event.remove({output: 'techreborn:nickel_storage_block_slab'})
+  event.remove({output: 'techreborn:nickel_storage_block_wall'})
+  event.remove({output: 'techreborn:nickel_dust'})
+  event.remove({output: 'techreborn:nickel_small_dust'})
+  event.remove({output: 'techreborn:nickel_nugget'})
+
+
   event.replaceInput({mod: 'techreborn'}, 'techreborn:platinum_plate', 'ad_astra:compressed_calorite')
   event.replaceInput({output: 'techreborn:implosion_compressor'}, 'techreborn:advanced_alloy_ingot', 'techreborn:advanced_alloy_plate')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:nickel_ingot', 'ad_astra:compressed_desh')
