@@ -49,7 +49,7 @@
                             "function": "minecraft:set_count"
                         }
                     ],
-                    "name": "ad_astra:raw_silver",
+                    "name": "techreborn:raw_silver",
                     "weight": 20
                 },
                 {

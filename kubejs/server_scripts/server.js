@@ -3261,7 +3261,7 @@ event.recipes.createMixing('techreborn:steel_dust', [
         'C': 'create:copper_casing'
     })
     
-  event.remove({output: 'camsbackpacks:white_backpack'}) 
+  event.remove({mod: 'camsbackpacks', input: 'minecraft:chest'}) 
     
 	event.shaped('camsbackpacks:white_backpack', [
     'ABA',
