@@ -1153,7 +1153,7 @@ onEvent('worldgen.add', event => {
 
 		ore.count([10, 40])
 			.squared()
-			.triangleHeight(0, 200)
+			.triangleHeight(0, 140)
 	})
   
 
@@ -1172,6 +1172,7 @@ onEvent('worldgen.add', event => {
 
   event.addOre((ore) => {
 		ore.id = "kubejs:rubyoremoon" // optional
+    ore.biomes = ['ad_astra:lunar_wastelands', 'minecraft:basalt_deltas', 'incendium:toxic_heap']
 		ore.biomes = [{
 			not: {
 				category: "river"
@@ -1186,6 +1187,7 @@ onEvent('worldgen.add', event => {
 
     event.addOre((ore) => {
 		ore.id = "kubejs:cobaltoremoon" // optional
+    ore.biomes = ['ad_astra:lunar_wastelands', 'minecraft:basalt_deltas', 'incendium:toxic_heap']
 		ore.biomes = [{
 			not: {
 				category: "river"
