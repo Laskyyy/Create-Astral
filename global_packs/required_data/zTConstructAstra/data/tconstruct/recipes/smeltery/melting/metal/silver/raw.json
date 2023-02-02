@@ -1,68 +1,24 @@
 {
-  "type": "forge:conditional",
-  "fabric:load_conditions": [
+  "type": "tconstruct:ore_melting",
+  "rate": "metal",
+  "ingredient": [
     {
-      "condition": "fabric:item_tags_populated",
-      "values": [
-        "c:raw_materials/silver"
-      ]
-    }
-  ],
-  "recipes": [
-    {
-      "fabric:load_conditions": [
-        {
-          "condition": "fabric:item_tags_populated",
-          "values": [
-            "c:ingots/lead"
-          ]
-        }
-      ],
-      "recipe": {
-        "type": "tconstruct:ore_melting",
-        "rate": "metal",
-        "ingredient": {
-          "tag": "c:raw_materials/silver"
-        },
-        "result": {
-          "fluid": "tconstruct:molten_silver",
-          "amount": 9000
-        },
-        "temperature": 790,
-        "time": 90,
-        "byproducts": [
-          {
-            "fluid": "tconstruct:molten_desh",
-            "amount": 9000
-          }
-        ]
-      }
+      "item": "techreborn:raw_silver"
     },
     {
-      "fabric:load_conditions": [
-        {
-          "condition": "porting_lib:true"
-        }
-      ],
-      "recipe": {
-        "type": "tconstruct:ore_melting",
-        "rate": "metal",
-        "ingredient": {
-          "tag": "c:raw_materials/silver"
-        },
-        "result": {
-          "fluid": "tconstruct:molten_silver",
-          "amount": 9000
-        },
-        "temperature": 790,
-        "time": 90,
-        "byproducts": [
-          {
-            "fluid": "tconstruct:molten_desh",
-            "amount": 9000
-          }
-        ]
-      }
+      "item": "create:crushed_silver_ore"
+    }
+  ],
+  "result": {
+    "fluid": "tconstruct:molten_silver",
+    "amount": 9000
+  },
+  "temperature": 500,
+  "time": 75,
+  "byproducts": [
+    {
+      "fluid": "kubejs:molten_desh",
+      "amount": 3000
     }
   ]
 }

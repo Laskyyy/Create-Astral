@@ -29,7 +29,7 @@
         "time": 90,
         "byproducts": [
           {
-            "fluid": "tconstruct:molten_nickel",
+            "fluid": "tconstruct:molten_copper",
             "amount": 9000
           }
         ]
