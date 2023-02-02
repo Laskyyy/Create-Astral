@@ -1031,26 +1031,7 @@ onEvent('item.tooltip', e => {
       
     }
   })
-   e.addAdvanced('compressor:triple_compressed_andesite', (item, advanced, text) => {
-    if (!e.isShift()) {
-      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-    }
-    if (e.isShift()) {
-      
-      text.add(1, [Text.of('Create a basalt generator with blue ice using this as a catalyst instead of soul soil for an andesite generator! ').gold(),])
-      
-    }
-  })
-   e.addAdvanced('compressor:triple_compressed_sand', (item, advanced, text) => {
-    if (!e.isShift()) {
-      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-    }
-    if (e.isShift()) {
-      
-      text.add(1, [Text.of('Place under a cobblestone generator to turn it into an sand generator!').gold(),])
-      
-    }
-  })
+
   e.addAdvanced('createastral:radiant_sword', (item, advanced, text) => {
     if (!e.isShift()) {
       text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
