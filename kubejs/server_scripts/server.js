@@ -3487,6 +3487,27 @@ event.recipes.createMixing('createastral:astral_conduit', [
   'minecraft:flint_and_steel'
 ]).processingTime(30)
 
+// IRIS SECTION
+
+// ochrum automation
+event.recipes.createMixing('create:ochrum', [
+  'minecraft:sandstone',
+  'compressor:compressed_cobblestone',
+  {fluid: 'minecraft:lava', amount: 4500},
+]).heated().processingTime(1500)
+// crimsite automation
+event.blasting('create:crimsite', 'minecraft:red_nether_bricks')
+// warped fungi crushing
+event.recipes.createCrushing([
+  'minecraft:warped_roots',
+  Item.of('minecraft:warped_fungus').withChance(.15),
+], 'minecraft:warped_wart_block');
+// get crimson fungi without visiting piglin village
+event.recipes.createFilling('minecraft:crimson_fungus', [
+  'minecraft:warped_fungus',
+  {fluid: 'minecraft:lava', amount: 2250},
+])
+
   lizardPostLaskyChange(event);
 })
 
