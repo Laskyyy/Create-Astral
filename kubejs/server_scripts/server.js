@@ -2969,6 +2969,11 @@ event.recipes.createMixing('8x tconstruct:grout', [
     Item.of('minecraft:string').withChance(.5)
   ], 'farmersdelight:straw');
 
+  /// SAND AUTOMATION PREMOON
+  event.recipes.createMilling([
+    Item.of('minecraft:sand').withChance(.25)
+  ], 'minecraft:gravel');
+
 
   ///// ORE PROCESSING PATCHES /////
 
