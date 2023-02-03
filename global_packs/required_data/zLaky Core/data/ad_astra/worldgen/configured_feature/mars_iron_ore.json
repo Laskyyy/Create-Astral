@@ -1,8 +1,8 @@
 {
   "type": "minecraft:ore",
   "config": {
-    "size": 20,
-    "discard_chance_on_air_exposure": 0,
+    "size": 10,
+    "discard_chance_on_air_exposure": 0.3,
     "targets": [
       {
         "target": {
