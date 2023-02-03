@@ -2785,11 +2785,6 @@ event.recipes.createFilling('explorerscompass:explorerscompass', [
 
 ///// SEQUENCED ASSEMBLY LINES /////
 
-	 event.recipes.createSequencedAssembly([ 
-        'createastral:pure_biomatter', 
-		], 'techreborn:compressed_plantball', [
-        event.recipes.createPressing('create:tree_fertilizer', 'create:tree_fertilizer').processingTime(50)
-    ]).transitionalItem('create:tree_fertilizer').loops(500)
 
     event.recipes.createSequencedAssembly([ 
         'automobility:launch_gel', 
