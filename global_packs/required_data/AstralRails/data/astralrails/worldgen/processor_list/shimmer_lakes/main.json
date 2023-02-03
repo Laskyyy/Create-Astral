@@ -9,11 +9,24 @@
 					},
 					"input_predicate": {
 						"predicate_type": "minecraft:random_block_match",
-						"block": "minecraft:calcite",
-						"probability": 0.8
+						"block": "minecraft:stone",
+						"probability": 0.2
 					},
 					"output_state": {
-						"Name": "minecraft:stone"
+						"Name": "minecraft:tuff"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "minecraft:tuff",
+						"probability": 0.4
+					},
+					"output_state": {
+						"Name": "minecraft:calcite"
 					}
 				},
 				{
@@ -35,8 +48,8 @@
 					},
 					"input_predicate": {
 						"predicate_type": "minecraft:random_block_match",
-						"block": "minecraft:tuff",
-						"probability": 0.4
+						"block": "minecraft:stone",
+						"probability": 0.2
 					},
 					"output_state": {
 						"Name": "minecraft:andesite"
@@ -48,11 +61,11 @@
 					},
 					"input_predicate": {
 						"predicate_type": "minecraft:random_block_match",
-						"block": "ad_astra:moon_sand",
-						"probability": 0.1
+						"block": "ad_astra:moon_stone",
+						"probability": 0.7
 					},
 					"output_state": {
-						"Name": "ad_astra:moon_stone"
+						"Name": "ad_astra:tuff"
 					}
 				},
 				{
@@ -62,7 +75,7 @@
 					"input_predicate": {
 						"predicate_type": "minecraft:random_block_match",
 						"block": "minecraft:medium_amethyst_bud",
-						"probability": 0.4
+						"probability": 0.2
 					},
 					"output_state": {
 						"Name": "minecraft:air"
