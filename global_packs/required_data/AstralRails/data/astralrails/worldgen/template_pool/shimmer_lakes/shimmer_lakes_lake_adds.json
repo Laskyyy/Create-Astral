@@ -33,26 +33,7 @@
       "weight": 1,
       "element": {
         "location": "astralrails:shimmer_lakes/shimmer_lake_lake_add_4",
-        "processors": [
-					{
-						"processor_type": "minecraft:rule",
-						"rules": [
-							{
-								"location_predicate": {
-									"predicate_type": "minecraft:always_true"
-								},
-								"input_predicate": {
-									"predicate_type": "minecraft:random_block_match",
-									"block": "minecraft:budding_amethyst",
-									"probability": 0.6
-								},
-								"output_state": {
-									"Name": "minecraft:amethyst_block"
-								}
-							}
-						]
-					}
-				],
+        "processors": "astralrails:shimmer_lakes/amethyst_remove_add_4",
         "projection": "rigid",
         "element_type": "minecraft:legacy_single_pool_element"
       }
