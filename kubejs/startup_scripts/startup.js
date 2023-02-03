@@ -1175,10 +1175,11 @@ onEvent('worldgen.add', event => {
 			}
 		}]
 		ore.addTarget('#ad_astra:moon_ore_replaceables', 'tconstruct:cobalt_ore')
-
+    ore.noSurface = 0.75   
 		ore.count([10, 25])
 			.squared()
 			.triangleHeight(0, 60)
+
       
 	})
 
@@ -1186,7 +1187,7 @@ onEvent('worldgen.add', event => {
 		ore.id = "kubejs:silveroremoon" // optional
 		ore.biomes = ['ad_astra:lunar_wastelands', 'minecraft:basalt_deltas', 'incendium:toxic_heap']
 		ore.addTarget('#ad_astra:moon_ore_replaceables', 'techreborn:deepslate_silver_ore')
-
+    ore.noSurface = 0.75    
 		ore.count([25, 40])
 			.squared()
 			.triangleHeight(0, 115)

@@ -1662,7 +1662,7 @@ event.recipes.createSequencedAssembly([ // begin
 ], 'create:andesite_casing', [ // input
 event.recipes.createDeploying('create:andesite_casing', ['techreborn:rubber', 'techreborn:rubber']), 
 event.recipes.createDeploying('create:andesite_casing', ['create:copper_sheet', 'create:copper_sheet']), 
-]).transitionalItem('create:andesite_casing').loops(1) 
+]).transitionalItem('create:andesite_casing').loops(3) 
 
 event.recipes.createSequencedAssembly([ // begin
 'createastral:incomplete_electronic_circuit', // output
