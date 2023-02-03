@@ -126,7 +126,7 @@ function lizardMiscChanges(event) {
       "ingredients": [
         {
           "item": 'create:' + material + '_sheet',
-          "count": 4
+          "count": 2
         }
       ],
       "results": [
@@ -2843,6 +2843,14 @@ event.recipes.createSequencedAssembly([
 		event.recipes.createDeploying('create:copper_casing', ['create:copper_casing', 'techreborn:rubber']), //fill obsid
         event.recipes.createPressing('create:copper_casing', 'create:copper_casing') //yeah
     ]).transitionalItem('create:copper_casing').loops(4)  
+
+    event.recipes.createSequencedAssembly([ // begin
+    'phonos:redstone_chip', // output
+], 'create:electron_tube', [ // input
+event.recipes.createFilling('create:electron_tube', ['create:electron_tube', {fluid: 'tconstruct:molten_copper', amount: 3000}]), //fill bronze
+event.recipes.createDeploying('create:electron_tube', ['create:electron_tube', '#c:wires']), //fill obsid
+    event.recipes.createPressing('create:electron_tube', '#c:wires') //yeah
+]).transitionalItem('create:electron_tube').loops(12)  
 	 
 	 event.recipes.createCompacting('ad_astra:iron_plate', [
   'create:iron_sheet',
@@ -3048,10 +3056,7 @@ event.recipes.createHaunting([
 ////CREATE MIXING RECIPES
 
 
-	event.recipes.createMixing('phonos:redstone_chip', [
-  'create:electron_tube',
-  'techreborn:copper_cable'
-])
+
 
 event.recipes.createMixing('tconstruct:seared_bricks', [
   '4x tconstruct:seared_brick',
