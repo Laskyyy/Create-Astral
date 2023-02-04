@@ -2570,7 +2570,7 @@ event.recipes.createFilling('explorerscompass:explorerscompass', [
     'A A',
     'SSS'
   ], {
-    S: 'techreborn:raw_tin',
+    S: '#c:raw_materials',
 	A: 'minecraft:cobblestone'
 	})
 	event.shaped('minecraft:blast_furnace', [
@@ -3497,8 +3497,8 @@ event.recipes.createMixing('createastral:astral_conduit', [
 
 // ochrum automation
 event.recipes.createMixing('create:ochrum', [
-  'minecraft:sandstone',
-  'compressor:compressed_cobblestone',
+  '4x minecraft:sandstone',
+  'minecraft:cobbled_deepslate',
   {fluid: 'minecraft:lava', amount: 4500},
 ]).heated().processingTime(1500)
 // crimsite automation
