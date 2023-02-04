@@ -7,7 +7,7 @@
   "drops": [
     {
       "drop": "#extractinator:rare_nether_drops",
-      "drop_chance": 0.15,
+      "drop_chance": 0.05,
       "min_drop_count": 1,
       "max_drop_count": 2
     },

@@ -1,0 +1,7 @@
+{
+  "replace": "true",
+  "values": [
+    "minecraft:iron_nugget",
+    "minecraft:flint"
+  ]
+}

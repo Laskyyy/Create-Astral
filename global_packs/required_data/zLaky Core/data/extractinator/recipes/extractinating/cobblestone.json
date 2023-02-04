@@ -6,8 +6,8 @@
   },
   "drops": [
     {
-      "drop": "#extractinator:common_drops",
-      "drop_chance": 0.06,
+      "drop": "#extractinator:common_drops_cobble",
+      "drop_chance": 0.02,
       "min_drop_count": 1,
       "max_drop_count": 2
     }

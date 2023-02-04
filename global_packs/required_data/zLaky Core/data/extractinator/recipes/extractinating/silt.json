@@ -6,21 +6,21 @@
   "drops": [
     {
       "drop": "#extractinator:common_drops",
-      "drop_chance": 0.60,
+      "drop_chance": 1,
       "min_drop_count": 1,
-      "max_drop_count": 2
+      "max_drop_count": 10
     },
     {
       "drop": "#extractinator:rare_drops",
-      "drop_chance": 0.10,
+      "drop_chance": 0.15,
       "min_drop_count": 1,
-      "max_drop_count": 2
+      "max_drop_count": 10
     },
     {
       "drop": "#extractinator:very_rare_drops",
-      "drop_chance": 0.02,
+      "drop_chance": 0.05,
       "min_drop_count": 1,
-      "max_drop_count": 2
+      "max_drop_count": 10
     }
   ]
 }
