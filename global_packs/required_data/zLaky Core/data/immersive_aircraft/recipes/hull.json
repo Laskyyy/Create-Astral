@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LIL",
+    "LIL"
+  ],
+  "key": {
+    "L": [
+      {
+        "item": "create:andesite_casing"
+      }
+    ],
+    "I": [
+      {
+        "item": "minecraft:iron_ingot"
+      }
+    ]
+  },
+  "result": {
+    "item": "immersive_aircraft:hull"
+  }
+}

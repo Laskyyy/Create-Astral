@@ -1,0 +1,41 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "   S ",
+    "S  S ",
+    "HH_EP",
+    "S  S ",
+    "   S "
+  ],
+  "key": {
+    "H": [
+      {
+        "item": "immersive_aircraft:hull"
+      }
+    ],
+    "E": [
+      {
+        "item": "immersive_aircraft:engine"
+      }
+    ],
+    "P": [
+      {
+        "item": "immersive_aircraft:propeller"
+      }
+    ],
+    "S": [
+      {
+        "item": "immersive_aircraft:sail"
+      }
+    ],
+    "_": [
+      {
+        "item": "create:red_seat"
+      }
+    ]
+  },
+  "result": {
+    "item": "immersive_aircraft:biplane"
+  },
+  "acceptMirrored": true
+}

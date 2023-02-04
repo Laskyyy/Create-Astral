@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " P ",
+    "SES",
+    "H_H"
+  ],
+  "key": {
+    "S": [
+      {
+        "item": "immersive_aircraft:sail"
+      }
+    ],
+    "H": [
+      {
+        "item": "immersive_aircraft:hull"
+      }
+    ],
+    "P": [
+      {
+        "item": "immersive_aircraft:propeller"
+      }
+    ],
+    "E": [
+      {
+        "item": "create:precision_mechanism"
+      }
+    ],
+    "_": [
+      {
+        "item": "create:red_seat"
+      }
+    ]
+  },
+  "result": {
+    "item": "immersive_aircraft:gyrodyne"
+  }
+}

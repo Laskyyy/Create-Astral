@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    "IPI",
+    " I "
+  ],
+  "key": {
+    "I": [
+      {
+        "item": "create:iron_sheet"
+      }
+    ],
+    "P": [
+      {
+        "item": "create:propeller"
+      }
+    ]
+  },
+  "result": {
+    "item": "immersive_aircraft:propeller"
+  }
+}

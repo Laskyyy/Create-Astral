@@ -1,0 +1,45 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "SSSSS",
+    " ~ ~ ",
+    " H_EP",
+    " HHH "
+  ],
+  "key": {
+    "H": [
+      {
+        "item": "immersive_aircraft:hull"
+      }
+    ],
+    "E": [
+      {
+        "item": "immersive_aircraft:engine"
+      }
+    ],
+    "P": [
+      {
+        "item": "create:propeller"
+      }
+    ],
+    "S": [
+      {
+        "item": "immersive_aircraft:sail"
+      }
+    ],
+    "~": [
+      {
+        "item": "minecraft:string"
+      }
+    ],
+    "_": [
+      {
+        "item": "create:red_seat"
+      }
+    ]
+  },
+  "result": {
+    "item": "immersive_aircraft:airship"
+  },
+  "acceptMirrored": true
+}

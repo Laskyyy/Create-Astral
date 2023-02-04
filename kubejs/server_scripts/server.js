@@ -1083,7 +1083,8 @@ onEvent('recipes', event => {
 	event.remove({output: 'minecraft:crossbow'})
 	event.remove({output: 'minecraft:arrow'})
 	event.remove({mod: 'lchunkloader'})
-	event.remove({mod: 'immersive_aircraft'})
+	event.remove({output: 'immersive_aircraft:boiler'})
+  event.remove({output: 'immersive_aircraft:engine'})
 	
 	
 
