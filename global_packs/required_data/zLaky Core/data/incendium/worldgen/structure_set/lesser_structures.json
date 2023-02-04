@@ -19,16 +19,12 @@
     {
       "structure": "incendium:infernal_altar",
       "weight": 1
-    },
-    {
-      "structure": "incendium:ruined_lab",
-      "weight": 1
     }
   ],
   "placement": {
     "salt": 399125,
-    "spacing": 19,
-    "separation": 8,
+    "spacing": 24,
+    "separation": 15,
     "type": "minecraft:random_spread"
   }
 }

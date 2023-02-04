@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "astralrails:moon/moon_lab",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"spacing": 24,
+		"separation": 16,
+		"salt": 74457544
+	}
+}
