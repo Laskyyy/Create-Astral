@@ -3497,10 +3497,10 @@ event.recipes.createMixing('createastral:astral_conduit', [
 
 // ochrum automation
 event.recipes.createMixing('create:ochrum', [
-  '4x minecraft:sandstone',
+  'compressor:compressed_sand',
   'minecraft:cobbled_deepslate',
   {fluid: 'minecraft:lava', amount: 4500},
-]).heated().processingTime(1500)
+]).processingTime(1500)
 // crimsite automation
 
 event.recipes.createSequencedAssembly([ 
