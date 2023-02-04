@@ -392,7 +392,7 @@ function lizardCH3Changes(event) {
   ], {
     A: 'createaddition:iron_rod',
     B: 'create:iron_sheet',
-    C: 'minecraft:netherrack'
+    C: 'ad_astra:moon_stone'
   });
 
   // Gag recipe
@@ -403,7 +403,7 @@ function lizardCH3Changes(event) {
   ], {
     A: 'createaddition:iron_rod',
     B: 'create:iron_sheet',
-    C: 'minecraft:netherrack',
+    C: 'ad_astra:moon_stone',
     D: 'tconstruct:blaze_head'
   });
 }
@@ -719,13 +719,13 @@ function lizardGeologyAlchemyChanges(event) {
     Item.of('minecraft:raw_copper').withChance(.3)
   ], 'create:veridium');
   event.recipes.createMilling([
-    Item.of('techreborn:raw_tin').withChance(.15)
+    Item.of('techreborn:raw_tin').withChance(.2)
   ], 'create:asurine');
   event.recipes.createMilling([
-    Item.of('minecraft:raw_iron').withChance(.15)
+    Item.of('minecraft:raw_iron').withChance(.2)
   ], 'create:crimsite');
   event.recipes.createMilling([
-    Item.of('minecraft:raw_gold').withChance(.1)
+    Item.of('minecraft:raw_gold').withChance(.2)
   ], 'create:ochrum');
 
   // Diorite, Granite, and Andesite crushing
@@ -1117,6 +1117,7 @@ onEvent('recipes', event => {
 	event.remove({output: 'minecraft:ender_eye'})
   event.remove({input: 'minecraft:crying_obsidian'})
 
+  event.remove({input: 'create:blaze_burner'})
 	
 
 
@@ -1513,7 +1514,6 @@ onEvent('recipes', event => {
   event.replaceInput({output: 'techreborn:industrial_grinder'}, 'techreborn:electronic_circuit', 'immersive_aircraft:engine')
   event.replaceInput({output: 'techreborn:digital_display'}, 'minecraft:black_dye', 'techreborn:machine_parts')
   event.replaceInput({output: 'techreborn:digital_display'}, 'minecraft:glass_pane', '#computercraft:monitor')
-  event.replaceInput({output: 'techreborn:basic_display'}, 'minecraft:glass_pane', '#computercraft:monitor')
   event.replaceInput('techreborn:lapotronic_orb', 'immersive_aircraft:engine')
   event.replaceInput({mod: 'quarrymod'}, 'techreborn:iridium_ingot', 'passivepiglins:piglin_coin')
   event.replaceInput({mod: 'quarrymod'}, 'techreborn:advanced_alloy_plate', 'passivepiglins:piglin_coin')
@@ -3502,7 +3502,16 @@ event.recipes.createMixing('create:ochrum', [
   {fluid: 'minecraft:lava', amount: 4500},
 ]).heated().processingTime(1500)
 // crimsite automation
-event.blasting('create:crimsite', 'minecraft:red_nether_bricks')
+
+event.recipes.createSequencedAssembly([ 
+  'create:crimsite', 
+], 'minecraft:cobbled_deepslate', [ 
+  event.recipes.createFilling('minecraft:cobbled_deepslate', ['minecraft:cobbled_deepslate', {fluid: 'minecraft:lava', amount: 3000}]), //fill bronze
+  event.recipes.createDeploying('minecraft:cobbled_deepslate', ['minecraft:cobbled_deepslate', 'minecraft:flint']), //fill bronze //fill bronze
+]).transitionalItem('minecraft:cobbled_deepslate').loops(3)
+
+
+
 // warped fungi crushing
 event.recipes.createCrushing([
   'minecraft:warped_roots',
