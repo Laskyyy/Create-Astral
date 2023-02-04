@@ -1,0 +1,427 @@
+{
+	id: "37926C9ECE25B63B"
+	group: ""
+	order_index: 5
+	filename: "astral_storage"
+	title: "{chapter.6.title}"
+	icon: "ae2:fluix_dust"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: 1.5d
+			y: -9.0d
+			width: 3.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "createdeco:textures/block/palettes/decal/yellow_decal.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -11.5d
+			y: -9.0d
+			width: 3.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "createdeco:textures/block/palettes/decal/yellow_decal.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -5.0d
+			y: -11.0d
+			width: 4.0d
+			height: 4.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/sky/phobos.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			title: "{chapter.6.quest.1.title}"
+			x: -9.0d
+			y: -5.5d
+			subtitle: "{chapter.6.quest.1.subtitle}"
+			dependencies: ["44A6872451EA1BB2"]
+			id: "502FB68205A0CA3B"
+			tasks: [
+				{
+					id: "36AC99F8AEC3E818"
+					type: "item"
+					item: "ae2:cell_component_1k"
+				}
+				{
+					id: "2D95B5A1EC13DE9C"
+					type: "item"
+					item: {
+						id: "ae2:item_storage_cell_1k"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: -7.0d
+			dependencies: ["44A6872451EA1BB2"]
+			id: "3099BE4134861052"
+			tasks: [
+				{
+					id: "4402148E5CE5890C"
+					type: "item"
+					item: "ae2:formation_core"
+				}
+				{
+					id: "0CBE3E3C191DA25C"
+					type: "item"
+					item: "ae2:annihilation_core"
+				}
+			]
+		}
+		{
+			title: "{chapter.6.quest.3.title}"
+			x: -7.5d
+			y: -8.5d
+			subtitle: "{chapter.6.quest.3.subtitle}"
+			dependencies: ["3099BE4134861052"]
+			id: "30CFD291B115DBC7"
+			tasks: [{
+				id: "2440EA03EEF99C7E"
+				type: "item"
+				item: "ae2:terminal"
+			}]
+		}
+		{
+			title: "{chapter.6.quest.4.title}"
+			x: -2.5d
+			y: -8.5d
+			description: ["{chapter.6.quest.4.description.1}"]
+			dependencies: ["5B795991C4A581FE"]
+			id: "7CB9EBED55932D9B"
+			tasks: [{
+				id: "35CC7569E8F7FEC7"
+				type: "item"
+				item: "ae2:controller"
+			}]
+		}
+		{
+			title: "{chapter.6.quest.5.title}"
+			x: -2.5d
+			y: -7.0d
+			dependencies: ["5E6E1A18D9727F1A"]
+			id: "5B795991C4A581FE"
+			tasks: [{
+				id: "2EA50BF312901D14"
+				type: "item"
+				item: "ae2:drive"
+			}]
+		}
+		{
+			title: "{chapter.6.quest.6.title}"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "ad_astra:textures/sky/phobos.png"
+				}
+			}
+			x: -5.0d
+			y: 2.0d
+			shape: "pentagon"
+			subtitle: "{chapter.6.quest.6.subtitle}"
+			description: ["{chapter.6.quest.6.description.1}"]
+			dependencies: ["790B0567FF49110F"]
+			hide: true
+			size: 2.0d
+			id: "326EB9A775B8D791"
+			tasks: [{
+				id: "50441F5A6EECD674"
+				type: "checkmark"
+				title: "{chapter.6.quest.6.task.1.title}"
+			}]
+		}
+		{
+			title: "{chapter.6.quest.7.title}"
+			x: -3.0d
+			y: -2.0d
+			dependencies: ["7A2E9BE533B92DC0"]
+			id: "396D08757F6B9CC2"
+			tasks: [{
+				id: "3D7BCAD49F189A8F"
+				type: "item"
+				item: "ae2:calculation_processor_press"
+			}]
+		}
+		{
+			title: "{chapter.6.quest.8.title}"
+			x: -7.0d
+			y: -2.0d
+			dependencies: ["7A2E9BE533B92DC0"]
+			id: "1BF34B94FC7DCC2A"
+			tasks: [{
+				id: "61951F37EB189176"
+				type: "item"
+				item: "ae2:engineering_processor_press"
+			}]
+		}
+		{
+			title: "{chapter.6.quest.9.title}"
+			x: -5.0d
+			y: -2.5d
+			dependencies: ["7A2E9BE533B92DC0"]
+			id: "2A2EAD3A06D7196D"
+			tasks: [{
+				id: "7B03E7692661F1C8"
+				type: "item"
+				item: "ae2:logic_processor_press"
+			}]
+		}
+		{
+			title: "{chapter.6.quest.10.title}"
+			x: -5.5d
+			y: 0.0d
+			subtitle: "{chapter.6.quest.10.subtitle}"
+			dependencies: ["326EB9A775B8D791"]
+			id: "43DF61335F1A3AD6"
+			tasks: [{
+				id: "6AF0153E0EEBA9AF"
+				type: "item"
+				item: "ae2:silicon_press"
+			}]
+		}
+		{
+			title: "{chapter.6.quest.11.title}"
+			x: -4.5d
+			y: 0.0d
+			subtitle: "{chapter.6.quest.11.subtitle}"
+			dependencies: ["790B0567FF49110F"]
+			hide: true
+			id: "227EF17194467491"
+			tasks: [
+				{
+					id: "18B63463F0275B5F"
+					type: "item"
+					item: "ae2:certus_quartz_dust"
+				}
+				{
+					id: "1CAC0D2F1E1E6D11"
+					type: "item"
+					item: "ae2:silicon"
+				}
+			]
+		}
+		{
+			title: "{chapter.6.quest.12.title}"
+			x: -5.0d
+			y: -1.0d
+			subtitle: "{chapter.6.quest.12.subtitle}"
+			dependencies: [
+				"43DF61335F1A3AD6"
+				"227EF17194467491"
+			]
+			id: "7A2E9BE533B92DC0"
+			tasks: [{
+				id: "3EB0AE528455D7C3"
+				type: "item"
+				item: "ae2:printed_silicon"
+			}]
+		}
+		{
+			title: "{chapter.6.quest.13.title}"
+			x: -5.0d
+			y: -4.0d
+			dependencies: [
+				"1BF34B94FC7DCC2A"
+				"2A2EAD3A06D7196D"
+				"396D08757F6B9CC2"
+			]
+			id: "7A9F59521C6A6B7E"
+			tasks: [
+				{
+					id: "31258B4E31DD644E"
+					type: "item"
+					item: "ae2:printed_calculation_processor"
+				}
+				{
+					id: "02BD6C4AEE14086C"
+					type: "item"
+					item: "ae2:printed_engineering_processor"
+				}
+				{
+					id: "5E8695121F0559FB"
+					type: "item"
+					item: "ae2:printed_logic_processor"
+				}
+			]
+		}
+		{
+			title: "{chapter.6.quest.14.title}"
+			x: -7.5d
+			y: -5.5d
+			dependencies: ["7A9F59521C6A6B7E"]
+			id: "44A6872451EA1BB2"
+			tasks: [{
+				id: "5806C9D0F2C463E2"
+				type: "item"
+				item: "ae2:logic_processor"
+			}]
+		}
+		{
+			title: "{chapter.6.quest.15.title}"
+			x: -5.0d
+			y: -5.5d
+			dependencies: ["7A9F59521C6A6B7E"]
+			id: "5F41361D7468CE41"
+			tasks: [{
+				id: "55BF49E1FA00AA72"
+				type: "item"
+				item: "ae2:calculation_processor"
+			}]
+		}
+		{
+			title: "{chapter.6.quest.16.title}"
+			x: -2.5d
+			y: -5.5d
+			subtitle: "{chapter.6.quest.16.subtitle}"
+			dependencies: ["7A9F59521C6A6B7E"]
+			id: "5E6E1A18D9727F1A"
+			tasks: [{
+				id: "5E747DC57397FC97"
+				type: "item"
+				item: "ae2:engineering_processor"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -8.5d
+			dependencies: ["4C1D23F3903614FC"]
+			min_required_tasks: 1
+			id: "6A6170E747B67BC4"
+			tasks: [
+				{
+					id: "2A5B359034AA9C5B"
+					type: "item"
+					item: {
+						id: "ae2:wireless_terminal"
+						Count: 1b
+						tag: {
+							internalCurrentPower: 1600000.0d
+						}
+					}
+				}
+				{
+					id: "575DCB095927FC3D"
+					type: "item"
+					item: {
+						id: "ae2:wireless_crafting_terminal"
+						Count: 1b
+						tag: {
+							internalCurrentPower: 1600000.0d
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: -7.0d
+			dependencies: ["5F41361D7468CE41"]
+			id: "4C1D23F3903614FC"
+			tasks: [{
+				id: "5165FA0CADBCEF87"
+				type: "item"
+				item: "ae2:crafting_unit"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -0.5d
+			dependencies: ["326EB9A775B8D791"]
+			id: "44A1430FFC4819D5"
+			tasks: [{
+				id: "20C52412573D6811"
+				type: "item"
+				item: "ae2:inscriber"
+			}]
+		}
+		{
+			title: "{chapter.6.quest.20.title}"
+			x: -3.0d
+			y: 0.0d
+			description: ["{chapter.6.quest.20.description.1}"]
+			dependencies: ["227EF17194467491"]
+			id: "3A8B72EC89451A93"
+			tasks: [{
+				id: "466AC5F6E9FAACB5"
+				type: "item"
+				item: "ae2:fluix_dust"
+			}]
+		}
+		{
+			title: "{chapter.6.quest.21.title}"
+			x: -2.0d
+			y: 0.0d
+			dependencies: ["3A8B72EC89451A93"]
+			id: "108D5BDA0D45AD73"
+			tasks: [
+				{
+					id: "4ACEDF6DB10FAD01"
+					type: "item"
+					item: {
+						id: "ae2:energy_cell"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "5D133DB2DF5C8D6F"
+					type: "item"
+					item: "createaddition:accumulator"
+				}
+			]
+		}
+		{
+			title: "{chapter.6.quest.22.title}"
+			x: -2.0d
+			y: -1.0d
+			dependencies: ["3A8B72EC89451A93"]
+			id: "180B5E0E0222208A"
+			tasks: [{
+				id: "3DF5108ADD4FD699"
+				type: "item"
+				item: "ae2:fluix_pearl"
+			}]
+		}
+		{
+			title: "{chapter.6.quest.23.title}"
+			x: -3.5d
+			y: 1.0d
+			description: ["{chapter.6.quest.23.description.1}"]
+			dependencies: ["326EB9A775B8D791"]
+			id: "432AF29897E50CDC"
+			tasks: [{
+				id: "5A0FC85522C49C1B"
+				type: "item"
+				item: "ae2:sky_stone_block"
+				count: 64L
+			}]
+			rewards: [{
+				id: "3A10A6E1DB7FD45E"
+				type: "item"
+				item: "ae2:quartz_glass"
+				count: 32
+			}]
+		}
+	]
+	quest_links: [ ]
+}

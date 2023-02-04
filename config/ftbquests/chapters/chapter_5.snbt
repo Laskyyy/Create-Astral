@@ -1,0 +1,1618 @@
+{
+	id: "33205DD87098DE65"
+	group: ""
+	order_index: 6
+	filename: "chapter_5"
+	title: "{chapter.7.title}"
+	icon: "techreborn:electronic_circuit"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: -8.0d
+			y: -6.0d
+			width: 3.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/painting/mars.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -8.0d
+			y: 14.0d
+			width: 2.0d
+			height: 2.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/painting/mercury.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			title: "{chapter.7.quest.1.title}"
+			x: -8.0d
+			y: -4.0d
+			shape: "pentagon"
+			subtitle: "{chapter.7.quest.1.subtitle}"
+			description: ["{chapter.7.quest.1.description.1}"]
+			dependencies: ["63DCF596AAA9A232"]
+			hide: true
+			hide_text_until_complete: false
+			size: 2.0d
+			id: "253F29A00B4EA050"
+			tasks: [{
+				id: "136C0FE1977335AD"
+				type: "dimension"
+				icon: "ad_astra:mars_globe"
+				dimension: "ad_astra:mars"
+			}]
+			rewards: [
+				{
+					id: "765072271F3D139D"
+					type: "item"
+					item: "vinery:crusty_bread"
+				}
+				{
+					id: "3B142E5C732CA3B6"
+					type: "xp"
+					xp: 300
+				}
+			]
+		}
+		{
+			title: "{chapter.7.quest.2.title}"
+			icon: "ad_astra:compressed_steel"
+			x: -8.0d
+			y: 5.0d
+			shape: "square"
+			subtitle: "{chapter.7.quest.2.subtitle}"
+			description: ["{chapter.7.quest.2.description.1}"]
+			dependencies: ["5729A883639B2EEF"]
+			size: 2.0d
+			id: "3A5D7E60EF1C3BC3"
+			tasks: [{
+				id: "31C9A429FF4C66EA"
+				type: "item"
+				item: "ad_astra:steel_ingot"
+				count: 8L
+			}]
+			rewards: [
+				{
+					id: "668A4046FFBD54AB"
+					type: "item"
+					item: "createdeco:cast_iron_catwalk"
+					count: 32
+				}
+				{
+					id: "10E381DC726C8489"
+					type: "item"
+					item: "createdeco:andesite_catwalk"
+					count: 32
+				}
+				{
+					id: "6A5C655E11B63E6B"
+					type: "item"
+					item: "createdeco:copper_catwalk"
+					count: 32
+				}
+			]
+		}
+		{
+			title: "{chapter.7.quest.3.title}"
+			x: -3.5d
+			y: 1.5d
+			shape: "square"
+			subtitle: "{chapter.7.quest.3.subtitle}"
+			description: ["{chapter.7.quest.3.description.1}"]
+			dependencies: [
+				"42FDBAC4A8966F9D"
+				"684E33C50BD55A8E"
+			]
+			id: "7B5DE5040FC24D21"
+			tasks: [
+				{
+					id: "63AB5A5A44B664D3"
+					type: "item"
+					item: "techreborn:lithium_ion_battery"
+					count: 4L
+				}
+				{
+					id: "0B4ADE9DAC75D9AF"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "techreborn:lithium"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "31F0CCE562AB9B0C"
+				type: "item"
+				item: "vinery:chocolate_bread"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.4.title}"
+			x: -3.0d
+			y: 0.0d
+			dependencies: ["7B5DE5040FC24D21"]
+			optional: true
+			id: "77F3D564A2AE72AE"
+			tasks: [{
+				id: "0E031E746AC39336"
+				type: "item"
+				item: "techreborn:advanced_drill"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.5.title}"
+			x: -2.0d
+			y: 0.5d
+			dependencies: ["7B5DE5040FC24D21"]
+			optional: true
+			id: "1D5DEE21F9178935"
+			tasks: [{
+				id: "19C512CEF9BECFDC"
+				type: "item"
+				item: "techreborn:advanced_chainsaw"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.6.title}"
+			x: -1.5d
+			y: 1.5d
+			dependencies: ["7B5DE5040FC24D21"]
+			optional: true
+			id: "575F106CD1827C99"
+			tasks: [{
+				id: "6BC916CE343DB9CA"
+				type: "item"
+				item: "techreborn:advanced_jackhammer"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.7.title}"
+			x: -6.0d
+			y: 1.5d
+			subtitle: "{chapter.7.quest.7.subtitle}"
+			description: ["{chapter.7.quest.7.description.1}"]
+			dependencies: ["5729A883639B2EEF"]
+			id: "684E33C50BD55A8E"
+			tasks: [{
+				id: "3688FB4578B78F23"
+				type: "item"
+				item: "techreborn:industrial_electrolyzer"
+			}]
+			rewards: [
+				{
+					id: "6A9BB237A3F3860C"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:ostrum"
+						}
+					}
+				}
+				{
+					id: "272FDE2AFFC39406"
+					type: "item"
+					item: {
+						id: "tconstruct:tough_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:ostrum"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "{chapter.7.quest.8.title}"
+			x: -9.75d
+			y: 7.5d
+			shape: "square"
+			subtitle: "{chapter.7.quest.8.subtitle}"
+			description: ["{chapter.7.quest.8.description.1}"]
+			dependencies: [
+				"3A5D7E60EF1C3BC3"
+				"717A6825F23CC07F"
+			]
+			size: 1.5d
+			id: "7B5AE0A782DE8DF8"
+			tasks: [
+				{
+					id: "25670D5E53F8126E"
+					type: "item"
+					item: {
+						id: "ad_astra:netherite_space_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6F72345D41E7D7AA"
+					type: "item"
+					item: {
+						id: "ad_astra:netherite_space_suit"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "52D7518F38975E04"
+					type: "item"
+					item: {
+						id: "ad_astra:netherite_space_pants"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4809FA89B6C48F41"
+					type: "item"
+					item: {
+						id: "ad_astra:netherite_space_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0A150B7DBD98E783"
+				type: "item"
+				item: "create:metal_bracket"
+				count: 32
+			}]
+		}
+		{
+			title: "{chapter.7.quest.9.title}"
+			x: -8.047619047619065d
+			y: 9.666666666666671d
+			shape: "hexagon"
+			subtitle: "{chapter.7.quest.9.subtitle}"
+			dependencies: [
+				"356CE973D7F17F3C"
+				"7B5AE0A782DE8DF8"
+				"63A96438AB2F9506"
+			]
+			size: 1.5d
+			id: "3CF2DB0B0ACE19B6"
+			tasks: [{
+				id: "2FC71B79D1D17B9D"
+				type: "item"
+				item: {
+					id: "ad_astra:tier_3_rocket"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "6F94AD86CBF1F65D"
+				type: "item"
+				item: "ad_astra:strophar_mushroom"
+				count: 32
+			}]
+		}
+		{
+			x: -10.0d
+			y: 6.0d
+			subtitle: "{chapter.7.quest.10.subtitle}"
+			description: ["{chapter.7.quest.10.description.1}"]
+			dependencies: ["3A5D7E60EF1C3BC3"]
+			optional: true
+			id: "08CEB76C11CCE833"
+			tasks: [{
+				id: "551F104DC625712F"
+				type: "item"
+				item: "doodads:slimey_shoes"
+			}]
+			rewards: [{
+				id: "28F3BF080FAAB3DB"
+				type: "item"
+				item: {
+					id: "tconstruct:large_plate"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:manyullyn"
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			title: "{chapter.7.quest.11.title}"
+			x: -8.0d
+			y: 12.0d
+			shape: "gear"
+			description: ["{chapter.7.quest.11.description.1}"]
+			dependencies: ["3CF2DB0B0ACE19B6"]
+			size: 2.0d
+			id: "5BD2D0F7F0D70180"
+			tasks: [{
+				id: "39BBDC85B1D5AAA7"
+				type: "dimension"
+				icon: "ad_astra:mercury_globe"
+				dimension: "ad_astra:mercury"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.12.title}"
+			x: -6.0d
+			y: 3.5d
+			description: ["{chapter.7.quest.12.description.1}"]
+			dependencies: ["5729A883639B2EEF"]
+			optional: true
+			id: "30B554B51AEFEB0C"
+			tasks: [{
+				id: "68BB3658712A39A5"
+				type: "item"
+				item: "techreborn:industrial_blast_furnace"
+			}]
+			rewards: [{
+				id: "15AF530D5E400274"
+				type: "item"
+				item: {
+					id: "tconstruct:hammer_head"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:ostrum"
+					}
+				}
+			}]
+		}
+		{
+			title: "{chapter.7.quest.13.title}"
+			x: -10.0d
+			y: 1.5d
+			subtitle: "{chapter.7.quest.13.subtitle}"
+			description: ["{chapter.7.quest.13.description.1}"]
+			dependencies: ["5729A883639B2EEF"]
+			id: "0373FACF0AB8113E"
+			tasks: [
+				{
+					id: "72C3D8AC73CB4646"
+					type: "item"
+					item: "techreborn:distillation_tower"
+				}
+				{
+					id: "124208C4C177673D"
+					type: "item"
+					item: "techreborn:basic_machine_casing"
+				}
+				{
+					id: "227F3FDEE34FC66B"
+					type: "item"
+					item: "techreborn:industrial_machine_casing"
+				}
+			]
+		}
+		{
+			title: "{chapter.7.quest.14.title}"
+			x: -5.5d
+			y: -5.0d
+			subtitle: "{chapter.7.quest.14.subtitle}"
+			dependencies: ["253F29A00B4EA050"]
+			id: "28B99F2B5CA82BF9"
+			tasks: [
+				{
+					id: "68293CB7A35DED12"
+					type: "biome"
+					icon: "ad_astra:mars_sand"
+					biome: "ad_astra:mars_wastelands"
+				}
+				{
+					id: "0EADEDD630D75A8E"
+					type: "biome"
+					icon: "ad_astra:conglomerate"
+					biome: "ad_astra:mars_canyon_creek"
+				}
+				{
+					id: "3A9B33851300612F"
+					type: "biome"
+					icon: "ad_astra:infernal_spire_block"
+					biome: "ad_astra:infernal_venus_barrens"
+				}
+				{
+					id: "73BBF21C30B00F13"
+					type: "biome"
+					icon: "minecraft:red_terracotta"
+					biome: "incendium:infernal_dunes"
+				}
+			]
+			rewards: [{
+				id: "4BF3BE9BBB3F8726"
+				type: "item"
+				item: {
+					id: "mcdw:axe_firebrand"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "{chapter.7.quest.15.title}"
+			x: -10.5d
+			y: -5.0d
+			subtitle: "{chapter.7.quest.15.subtitle}"
+			dependencies: ["253F29A00B4EA050"]
+			id: "16D7DDD842CB4797"
+			tasks: [
+				{
+					id: "3FEB50C48D701D63"
+					type: "structure"
+					icon: "minecraft:crimson_stem"
+					structure: "incendium:piglin_village"
+				}
+				{
+					id: "6ECBF3C4BDA6BB76"
+					type: "structure"
+					icon: "chipped:raw_gold_block_46"
+					structure: "incendium:forbidden_castle"
+				}
+				{
+					id: "066178CA6B2603B9"
+					type: "structure"
+					icon: "chipped:gilded_blackstone_38"
+					structure: "minecraft:bastion_remnant"
+				}
+			]
+			rewards: [{
+				id: "3D1C44FE3954271F"
+				type: "item"
+				item: {
+					id: "tconstruct:broad_blade"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:lead"
+					}
+				}
+			}]
+		}
+		{
+			title: "{chapter.7.quest.16.title}"
+			x: -8.5d
+			y: -2.0d
+			description: ["{chapter.7.quest.16.description.1}"]
+			dependencies: ["253F29A00B4EA050"]
+			id: "7B0BBD0E9F82939D"
+			tasks: [
+				{
+					id: "462ECA657570F004"
+					type: "item"
+					item: "minecraft:gold_nugget"
+					count: 16L
+				}
+				{
+					id: "7D3A517B56E9930F"
+					type: "item"
+					item: "createaddition:rolling_mill"
+				}
+			]
+		}
+		{
+			title: "{chapter.7.quest.17.title}"
+			x: -8.0d
+			y: 0.0d
+			description: ["{chapter.7.quest.17.description.1}"]
+			dependencies: [
+				"0476231FB94F095A"
+				"2993E04DCB7B4EC4"
+			]
+			id: "0DF20AB6978A93FE"
+			tasks: [{
+				id: "036E856A5BC3198E"
+				type: "item"
+				item: "createastral:incomplete_electronic_circuit"
+			}]
+			rewards: [{
+				id: "29C85DBB78534DDD"
+				type: "item"
+				item: "createastral:golden_pin"
+				count: 128
+			}]
+		}
+		{
+			title: "{chapter.7.quest.18.title}"
+			x: -7.964285714285715d
+			y: 2.7193877551020407d
+			shape: "rsquare"
+			subtitle: "{chapter.7.quest.18.subtitle}"
+			description: ["{chapter.7.quest.18.description.1}"]
+			dependencies: ["0DF20AB6978A93FE"]
+			size: 1.5d
+			id: "5729A883639B2EEF"
+			tasks: [{
+				id: "5F77DA249763A9A4"
+				type: "item"
+				item: "techreborn:electronic_circuit"
+				count: 4L
+			}]
+			rewards: [
+				{
+					id: "31DBA47B879AD749"
+					type: "item"
+					item: "minecraft:budding_amethyst"
+					count: 8
+				}
+				{
+					id: "5872BEFF535FBF46"
+					type: "item"
+					item: {
+						id: "tconstruct:tough_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:lead"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "{chapter.7.quest.19.title}"
+			x: -10.0d
+			y: 2.5d
+			description: ["{chapter.7.quest.19.description.1}"]
+			dependencies: ["5729A883639B2EEF"]
+			id: "673DC1F22D2F790D"
+			tasks: [{
+				id: "343A9BACCFB28B13"
+				type: "item"
+				item: "techreborn:industrial_centrifuge"
+			}]
+			rewards: [{
+				id: "32D5F0149F97AD47"
+				type: "item"
+				item: {
+					id: "tconstruct:pick_head"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:ostrum"
+					}
+				}
+			}]
+		}
+		{
+			x: -6.0d
+			y: 2.5d
+			subtitle: "{chapter.7.quest.20.subtitle}"
+			dependencies: ["5729A883639B2EEF"]
+			id: "42FDBAC4A8966F9D"
+			tasks: [{
+				id: "151F4608F7E77B3D"
+				type: "item"
+				item: "techreborn:clay_dust"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.21.title}"
+			x: -4.5d
+			y: 3.5d
+			description: ["{chapter.7.quest.21.description.1}"]
+			dependencies: ["30B554B51AEFEB0C"]
+			optional: true
+			id: "33DBA03CF188DF0B"
+			tasks: [
+				{
+					id: "4AD6A2F23A9FACEE"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "tconstruct:molten_iron"
+						}
+					}
+				}
+				{
+					id: "5C4466EA099805DA"
+					type: "item"
+					item: "techreborn:coal_dust"
+					count: 2L
+				}
+				{
+					id: "30B11C4314A81F5C"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "techreborn:carbon"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: 3.5d
+			description: ["{chapter.7.quest.22.description.1}"]
+			dependencies: ["33DBA03CF188DF0B"]
+			optional: true
+			id: "4AEC38BDC884A6C4"
+			tasks: [{
+				id: "544483DAD0120103"
+				type: "item"
+				item: "techreborn:steel_dust"
+				count: 64L
+			}]
+		}
+		{
+			title: "{chapter.7.quest.23.title}"
+			x: -14.0d
+			y: 2.5d
+			subtitle: "{chapter.7.quest.23.subtitle}"
+			description: ["{chapter.7.quest.23.description.1}"]
+			dependencies: ["307933B04A6E7CA9"]
+			id: "48F61CBC3AFDEEBD"
+			tasks: [{
+				id: "4D9EE9214394B475"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "ad_astra:oil"
+					}
+				}
+			}]
+			rewards: [{
+				id: "4C6A6D25BF0994AB"
+				type: "item"
+				item: "farmersdelight:rich_soil"
+				count: 32
+			}]
+		}
+		{
+			title: "{chapter.7.quest.24.title}"
+			x: -12.0d
+			y: 1.5d
+			shape: "gear"
+			subtitle: "{chapter.7.quest.24.subtitle}"
+			description: ["{chapter.7.quest.24.description.1}"]
+			dependencies: [
+				"0373FACF0AB8113E"
+				"48F61CBC3AFDEEBD"
+			]
+			size: 1.5d
+			id: "62545906EFC80BCD"
+			tasks: [{
+				id: "7DA41241E16D509D"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "ad_astra:fuel"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "056177DCDF992B17"
+					type: "item"
+					item: "create:blaze_burner"
+				}
+				{
+					id: "208ABA5D2856D42D"
+					type: "item"
+					item: "ad_astra:fuel_bucket"
+				}
+			]
+		}
+		{
+			title: "{chapter.7.quest.25.title}"
+			x: -4.2d
+			y: -3.0d
+			shape: "diamond"
+			subtitle: "{chapter.7.quest.25.subtitle}"
+			description: ["{chapter.7.quest.25.description.1}"]
+			dependencies: ["2B697AA42C48FC04"]
+			size: 1.2d
+			optional: true
+			id: "520A09EF39A1BF5D"
+			tasks: [{
+				id: "63F4A287D6A5B92F"
+				type: "item"
+				item: "ad_astra:infernal_spire_block"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.26.title}"
+			x: -3.5d
+			y: -2.0d
+			shape: "diamond"
+			subtitle: "{chapter.7.quest.26.subtitle}"
+			description: ["{chapter.7.quest.26.description.1}"]
+			dependencies: ["520A09EF39A1BF5D"]
+			optional: true
+			id: "27B0EA62812564DD"
+			tasks: [{
+				id: "46A91B73816C6440"
+				type: "item"
+				item: "tconstruct:debris_nugget"
+				count: 64L
+			}]
+			rewards: [{
+				id: "637BCCC6223E87A9"
+				type: "item"
+				item: {
+					id: "tconstruct:broad_axe_head"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:hepatizon"
+					}
+				}
+			}]
+		}
+		{
+			x: -8.5d
+			y: -1.0d
+			description: ["{chapter.7.quest.27.description.1}"]
+			dependencies: ["7B0BBD0E9F82939D"]
+			id: "0476231FB94F095A"
+			tasks: [{
+				id: "04BCF9DF55944974"
+				type: "item"
+				item: "createastral:electrified_pin"
+			}]
+			rewards: [{
+				id: "01E486EDBFBDD7FB"
+				type: "item"
+				item: "createastral:electrified_pin"
+				count: 16
+			}]
+		}
+		{
+			title: "{chapter.7.quest.28.title}"
+			x: -4.5d
+			y: 0.0d
+			description: ["{chapter.7.quest.28.description.1}"]
+			dependencies: ["7B5DE5040FC24D21"]
+			id: "259E754B57C45C67"
+			tasks: [{
+				id: "348F9CA589D63FB6"
+				type: "item"
+				item: "gearreborn:nv_goggles"
+			}]
+			rewards: [{
+				id: "6CA657AA5EC0D9B2"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:long_night_vision"
+					}
+				}
+			}]
+		}
+		{
+			title: "{chapter.7.quest.29.title}"
+			x: -6.5d
+			y: 7.5d
+			description: ["{chapter.7.quest.29.description.1}"]
+			dependencies: [
+				"3A5D7E60EF1C3BC3"
+				"4F560FA8145329E8"
+			]
+			id: "2A95205D3A52622F"
+			tasks: [{
+				id: "129F224F4BE2DF0B"
+				type: "item"
+				item: "techreborn:machine_parts"
+			}]
+			rewards: [
+				{
+					id: "0F079BC874B2709B"
+					type: "item"
+					item: "dustrial_decor:anchor"
+					count: 3
+				}
+				{
+					id: "1CBF14FBF7F4A25C"
+					type: "item"
+					item: "dustrial_decor:hook"
+					count: 3
+				}
+			]
+		}
+		{
+			title: "{chapter.7.quest.30.title}"
+			x: -5.5d
+			y: 8.0d
+			description: ["{chapter.7.quest.30.description.1}"]
+			dependencies: ["28CF539AA1D6A92F"]
+			id: "4F560FA8145329E8"
+			tasks: [{
+				id: "61845D592787A7BC"
+				type: "item"
+				item: "techreborn:carbon_mesh"
+			}]
+			rewards: [{
+				id: "59D4213869A63EB6"
+				type: "item"
+				item: {
+					id: "tconstruct:kama"
+					Count: 1b
+					tag: {
+						tic_multipliers: {
+							"tconstruct:attack_damage": 0.5f
+						}
+						tic_stats: {
+							"tconstruct:attack_damage": 1.5749999f
+							"tconstruct:harvest_tier": "minecraft:netherite"
+							"tconstruct:durability": 1072.0f
+							"tconstruct:mining_speed": 9.6f
+							"tconstruct:attack_speed": 1.6f
+						}
+						Damage: 0
+						tic_materials: [
+							"tconstruct:hepatizon"
+							"tconstruct:hepatizon"
+							"tconstruct:hepatizon"
+						]
+						tic_modifiers: [
+							{
+								name: "tconstruct:momentum"
+								level: 3s
+							}
+							{
+								name: "tconstruct:shears"
+								level: 1s
+							}
+							{
+								name: "tconstruct:harvest"
+								level: 1s
+							}
+						]
+						tic_broken: 0b
+						tic_persistent_data: {
+							upgrades: 3
+							abilities: 1
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "{chapter.7.quest.31.title}"
+			x: -4.5d
+			y: 7.5d
+			subtitle: "{chapter.7.quest.31.subtitle}"
+			dependencies: ["156FCE6FDC8AD38D"]
+			id: "28CF539AA1D6A92F"
+			tasks: [{
+				id: "0E23A3A3FC1614E2"
+				type: "item"
+				item: "techreborn:carbon_fiber"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.32.title}"
+			x: -5.0d
+			y: 6.5d
+			subtitle: "{chapter.7.quest.32.subtitle}"
+			dependencies: ["3A5D7E60EF1C3BC3"]
+			id: "156FCE6FDC8AD38D"
+			tasks: [{
+				id: "39A3E1362162AA2A"
+				type: "item"
+				item: "techreborn:coal_dust"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.33.title}"
+			x: -14.0d
+			y: 8.0d
+			subtitle: "{chapter.7.quest.33.subtitle}"
+			dependencies: ["6C43EB3CBD04AA17"]
+			id: "3110924697AB562C"
+			tasks: [{
+				id: "57E6AB2360AF8EE8"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "techreborn:sodium"
+					}
+				}
+			}]
+			rewards: [{
+				id: "3D96D1E80CBDA01B"
+				type: "item"
+				item: "createastral:uwaah"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.34.title}"
+			x: -12.0d
+			y: 5.0d
+			subtitle: "{chapter.7.quest.34.subtitle}"
+			dependencies: ["307933B04A6E7CA9"]
+			id: "6D5A97122F765FE3"
+			tasks: [{
+				id: "3F4604784AAACD8E"
+				type: "item"
+				item: "techreborn:saltpeter_dust"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.35.title}"
+			x: -12.0d
+			y: 6.5d
+			dependencies: ["6D5A97122F765FE3"]
+			id: "0050671D67C2FC01"
+			tasks: [{
+				id: "48A25495A77F213A"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "techreborn:potassium"
+					}
+				}
+			}]
+		}
+		{
+			title: "{chapter.7.quest.36.title}"
+			x: -15.0d
+			y: 9.0d
+			subtitle: "{chapter.7.quest.36.subtitle}"
+			hide_dependency_lines: true
+			dependencies: ["684E33C50BD55A8E"]
+			id: "6C43EB3CBD04AA17"
+			tasks: [{
+				id: "53092950FA54512A"
+				type: "item"
+				item: "techreborn:lazurite_dust"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.37.title}"
+			x: -12.0d
+			y: 8.0d
+			dependencies: [
+				"0050671D67C2FC01"
+				"3110924697AB562C"
+			]
+			id: "717A6825F23CC07F"
+			tasks: [{
+				id: "05B72CB01449965A"
+				type: "item"
+				item: "techreborn:nak_coolant_cell_60k"
+			}]
+			rewards: [
+				{
+					id: "582AA8225A240D07"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:strong_leaping"
+						}
+					}
+				}
+				{
+					id: "3060337FE332870C"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:strong_swiftness"
+						}
+					}
+				}
+				{
+					id: "31AD6626DE63EA9F"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:long_slow_falling"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -12.0d
+			y: 10.0d
+			hide_dependency_lines: true
+			dependencies: ["3A5D7E60EF1C3BC3"]
+			hide: false
+			id: "2DEFDA584C5773FA"
+			tasks: [{
+				id: "738D974CF5F9438E"
+				type: "item"
+				item: "immersive_aircraft:boiler"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.39.title}"
+			x: -11.0d
+			y: 9.0d
+			dependencies: [
+				"2DEFDA584C5773FA"
+				"717A6825F23CC07F"
+			]
+			id: "7D98B3EA84A46227"
+			tasks: [{
+				id: "23265F3754619462"
+				type: "item"
+				item: "immersive_aircraft:engine"
+			}]
+			rewards: [{
+				id: "12C7B49DA2F16318"
+				type: "item"
+				item: "ae2:tiny_tnt"
+				count: 16
+			}]
+		}
+		{
+			title: "{chapter.7.quest.40.title}"
+			x: -7.0d
+			y: 8.5d
+			subtitle: "{chapter.7.quest.40.subtitle}"
+			dependencies: ["2A95205D3A52622F"]
+			id: "356CE973D7F17F3C"
+			tasks: [{
+				id: "20C1F118B4A2D99E"
+				type: "item"
+				item: "techreborn:digital_display"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.41.title}"
+			x: -12.0d
+			y: 3.5d
+			description: ["{chapter.7.quest.41.description.1}"]
+			dependencies: ["673DC1F22D2F790D"]
+			id: "307933B04A6E7CA9"
+			tasks: [{
+				id: "18B46A0D1C5F5E25"
+				type: "item"
+				title: "{chapter.7.quest.41.task.1.title}"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:soul_fire_base_blocks"
+					}
+				}
+			}]
+			rewards: [{
+				id: "09DD7FCC72B1A6DC"
+				type: "item"
+				item: "farmersdelight:nether_salad"
+				count: 3
+			}]
+		}
+		{
+			x: -13.0d
+			y: 9.0d
+			dependencies: ["717A6825F23CC07F"]
+			id: "19E1C30DBB2B1AB2"
+			tasks: [{
+				id: "65AE540EDF7157E7"
+				type: "item"
+				item: "techreborn:overclocker_upgrade"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.43.title}"
+			x: -3.5d
+			y: 4.5d
+			subtitle: "{chapter.7.quest.43.subtitle}"
+			dependencies: ["33DBA03CF188DF0B"]
+			optional: true
+			id: "2E320829DF95EB8E"
+			tasks: [{
+				id: "1081B553AE56D482"
+				type: "item"
+				item: "techreborn:implosion_compressor"
+			}]
+			rewards: [{
+				id: "1839CF2AE0EBC4C0"
+				type: "item"
+				item: "reinfchest:diamond_chest"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.44.title}"
+			icon: {
+				id: "techreborn:cell"
+				Count: 1b
+				tag: {
+					fluid: "tconstruct:molten_diamond"
+				}
+			}
+			x: -2.5d
+			y: 4.5d
+			subtitle: "{chapter.7.quest.44.subtitle}"
+			description: ["{chapter.7.quest.44.description.1}"]
+			dependencies: ["2E320829DF95EB8E"]
+			optional: true
+			id: "6FC315C473D123F8"
+			tasks: [{
+				id: "4588380C7A069FFA"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "3A3624C2349BF4A5"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "tconstruct:molten_diamond"
+					}
+				}
+			}]
+		}
+		{
+			icon: "minecraft:gold_block"
+			x: -10.0d
+			y: -3.5d
+			subtitle: "{chapter.7.quest.45.subtitle}"
+			description: ["{chapter.7.quest.45.description.1}"]
+			dependencies: ["253F29A00B4EA050"]
+			id: "3303D84A3F6FBBBA"
+			tasks: [{
+				id: "1CA9416E1FBF478C"
+				type: "checkmark"
+				title: "{chapter.7.quest.45.task.1.title}"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.46.title}"
+			x: -11.5d
+			y: -3.0d
+			subtitle: "{chapter.7.quest.46.subtitle}"
+			description: [
+				"{image:tconstruct:textures/block/storage/pig_iron/front.png width:100 height:100 align:1}"
+				"{chapter.7.quest.46.description.1}"
+			]
+			dependencies: ["3303D84A3F6FBBBA"]
+			id: "1873D12083BC1697"
+			tasks: [{
+				id: "45E0F4CC4E15B053"
+				type: "item"
+				item: "passivepiglins:piglin_totem"
+			}]
+			rewards: [{
+				id: "13393CF16F799EB6"
+				type: "item"
+				item: "libraryferret:fake_gold_block"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.47.title}"
+			icon: "ad_astra:ostrum_nugget"
+			x: -6.0d
+			y: -3.5d
+			description: ["{chapter.7.quest.47.description.1}"]
+			dependencies: ["253F29A00B4EA050"]
+			id: "2B697AA42C48FC04"
+			tasks: [{
+				id: "3C7D9A10113C6167"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.48.title}"
+			x: -10.0d
+			y: -1.5d
+			subtitle: "{chapter.7.quest.48.subtitle}"
+			description: ["{chapter.7.quest.48.description.1}"]
+			dependencies: ["1A99F6B849B12B09"]
+			id: "597DB82F2961DD9B"
+			tasks: [{
+				id: "3DC4A6F587D3B9A6"
+				type: "item"
+				item: "passivepiglins:piglin_coin"
+				count: 4L
+			}]
+			rewards: [{
+				id: "536F4C9ED2562C7B"
+				type: "item"
+				item: "tconstruct:piglin_head"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.49.title}"
+			x: -13.0d
+			y: -1.5d
+			shape: "diamond"
+			subtitle: "{chapter.7.quest.49.subtitle}"
+			hide_dependency_lines: true
+			dependencies: ["597DB82F2961DD9B"]
+			hide: true
+			secret: true
+			id: "2E8C7043B3332651"
+			tasks: [{
+				id: "7883A02E68531B76"
+				type: "item"
+				item: "passivepiglins:piglin_coin"
+				count: 128L
+			}]
+			rewards: [{
+				id: "3D5DEBB4C99AF52D"
+				type: "item"
+				item: "passivepiglins:piglin_fortune"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.50.title}"
+			x: -11.5d
+			y: -2.0d
+			subtitle: "{chapter.7.quest.50.subtitle}"
+			dependencies: ["1873D12083BC1697"]
+			id: "1A99F6B849B12B09"
+			tasks: [
+				{
+					id: "230347B1351B7F4D"
+					type: "item"
+					item: {
+						id: "tconstruct:large_plate"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:pig_iron"
+						}
+					}
+				}
+				{
+					id: "2FDEC18FDE1640D9"
+					type: "item"
+					item: "minecraft:piglin_banner_pattern"
+				}
+			]
+			rewards: [
+				{
+					id: "20E044E79A96E8F8"
+					type: "item"
+					item: "create:golden_sheet"
+				}
+				{
+					id: "4074359434685F6C"
+					type: "item"
+					item: "minecraft:gold_nugget"
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: 4.5d
+			dependencies: ["3A5D7E60EF1C3BC3"]
+			id: "646DB27B5FC10C71"
+			tasks: [{
+				id: "4F6EF5DCF73684C5"
+				type: "item"
+				item: "techreborn:vacuum_freezer"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 5.5d
+			dependencies: ["3A5D7E60EF1C3BC3"]
+			id: "102428C7923FD992"
+			tasks: [{
+				id: "5472F7BDF8DB830A"
+				type: "item"
+				item: "quarrymod:quarry"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 6.0d
+			dependencies: ["102428C7923FD992"]
+			id: "37E09C2412D9D971"
+			tasks: [{
+				id: "1417AF547C6665E3"
+				type: "item"
+				item: "quarrymod:drill_tube"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.54.title}"
+			x: -14.0d
+			y: 4.5d
+			shape: "diamond"
+			subtitle: "{chapter.7.quest.54.subtitle}"
+			hide_dependency_lines: true
+			dependencies: ["2EC536106C5002D4"]
+			secret: true
+			id: "76676EF3CCB630EA"
+			tasks: [{
+				id: "2139D43A46B3AAD0"
+				type: "item"
+				item: "passivepiglins:piglin_fortune"
+				count: 64L
+			}]
+		}
+		{
+			x: -1.5d
+			y: 5.0d
+			dependencies: ["37E09C2412D9D971"]
+			id: "0BBB2FDEBB19AA3F"
+			tasks: [{
+				id: "44630E4CFE24FC18"
+				type: "item"
+				item: "quarrymod:range_extender_lvl1_upgrade"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 6.0d
+			dependencies: ["37E09C2412D9D971"]
+			id: "5F2CFE5D581F3D1F"
+			tasks: [{
+				id: "61B9E0F362AB8EB1"
+				type: "item"
+				item: "quarrymod:fortune_lvl1_upgrade"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 7.0d
+			dependencies: ["37E09C2412D9D971"]
+			id: "3B0E35CF9E78AD17"
+			tasks: [{
+				id: "0459F5CD55CEB991"
+				type: "item"
+				item: "quarrymod:silktouch_upgrade"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.58.title}"
+			x: -10.0d
+			y: 3.5d
+			subtitle: "{chapter.7.quest.58.subtitle}"
+			description: ["{chapter.7.quest.58.description.1}"]
+			dependencies: ["673DC1F22D2F790D"]
+			id: "08920EA71AAD4519"
+			tasks: [{
+				id: "488BE1806C558808"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "techreborn:methane"
+					}
+				}
+			}]
+			rewards: [{
+				id: "14830FF635820F71"
+				type: "item"
+				item: "minecraft:oak_wood"
+				count: 16
+			}]
+		}
+		{
+			title: "{chapter.7.quest.59.title}"
+			x: -13.0d
+			y: -2.5d
+			subtitle: "{chapter.7.quest.59.subtitle}"
+			dependencies: ["1873D12083BC1697"]
+			id: "43D115AA6859432C"
+			tasks: [{
+				id: "245EF434B65DCD82"
+				type: "observation"
+				icon: "tconstruct:piglin_head"
+				timer: 0L
+				observe_type: 5
+				to_observe: "minecraft:piglin"
+			}]
+			rewards: [{
+				id: "1409016AFB3D0A43"
+				type: "item"
+				item: "tconstruct:piglin_head"
+			}]
+		}
+		{
+			x: -14.0d
+			y: 1.5d
+			dependencies: ["62545906EFC80BCD"]
+			id: "1059F7210729805D"
+			tasks: [{
+				id: "3ED65EA863181724"
+				type: "item"
+				item: "techreborn:gas_turbine"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.61.title}"
+			x: -8.0d
+			y: 8.0d
+			dependencies: ["0F0B9EF663EEC0C5"]
+			id: "0C46591AF37F2B16"
+			tasks: [{
+				id: "7BD424156CBC948A"
+				type: "item"
+				item: "techreborn:greenhouse_controller"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 6.5d
+			dependencies: ["3A5D7E60EF1C3BC3"]
+			id: "0F0B9EF663EEC0C5"
+			tasks: [{
+				id: "18304AE47A8B0843"
+				type: "item"
+				item: "techreborn:diamond_saw_blade"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.63.title}"
+			x: -4.5d
+			y: -4.5d
+			description: ["{chapter.7.quest.63.description.1}"]
+			dependencies: ["253F29A00B4EA050"]
+			optional: true
+			id: "180A2D9D8EF9DC0A"
+			tasks: [{
+				id: "2CD743CBC9E54435"
+				type: "item"
+				item: "compressor:quadruple_compressed_andesite"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.64.title}"
+			x: -7.5d
+			y: -2.0d
+			dependencies: ["253F29A00B4EA050"]
+			id: "08FBFF7A3465BF56"
+			tasks: [{
+				id: "71C8273AA9B3BBFC"
+				type: "item"
+				item: "ad_astra:ostrum_ingot"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.65.title}"
+			x: -7.5d
+			y: -1.0d
+			subtitle: "{chapter.7.quest.65.subtitle}"
+			description: ["{chapter.7.quest.65.description.1}"]
+			dependencies: ["08FBFF7A3465BF56"]
+			id: "2993E04DCB7B4EC4"
+			tasks: [{
+				id: "3C768C0BF038A29E"
+				type: "item"
+				item: "ad_astra:compressed_ostrum"
+			}]
+		}
+		{
+			title: "{chapter.7.quest.66.title}"
+			x: -10.0d
+			y: 4.5d
+			subtitle: "{chapter.7.quest.66.subtitle}"
+			dependencies: [
+				"08920EA71AAD4519"
+				"5DE2E3396D1A4C7F"
+				"733A852EFCA7B36E"
+			]
+			id: "2EC536106C5002D4"
+			tasks: [{
+				id: "72A1CACD4E47FC8A"
+				type: "item"
+				item: "passivepiglins:piglin_fortune"
+			}]
+		}
+		{
+			x: -11.0d
+			y: 4.0d
+			hide_dependency_lines: true
+			dependencies: ["673DC1F22D2F790D"]
+			id: "5DE2E3396D1A4C7F"
+			tasks: [{
+				id: "6EDC765BD0E4CC63"
+				type: "item"
+				item: "createastral:golden_bowl"
+			}]
+		}
+		{
+			x: -11.0d
+			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["673DC1F22D2F790D"]
+			id: "733A852EFCA7B36E"
+			tasks: [{
+				id: "68640D2C5A470F2E"
+				type: "item"
+				item: "minecraft:crimson_fungus"
+			}]
+		}
+		{
+			x: -10.5d
+			y: 0.5d
+			dependencies: ["0373FACF0AB8113E"]
+			id: "17670EA862463524"
+			tasks: [{
+				id: "7DA4F9B550D8E8B6"
+				type: "item"
+				item: "minecraft:phantom_membrane"
+			}]
+		}
+		{
+			x: -9.5d
+			y: 9.5d
+			dependencies: ["7D98B3EA84A46227"]
+			id: "63A96438AB2F9506"
+			tasks: [{
+				id: "5F76C58E7AC52E4A"
+				type: "item"
+				item: "ad_astra:ostrum_engine"
+			}]
+		}
+		{
+			x: -10.5d
+			y: 11.5d
+			dependencies: ["22169902DA51D7A2"]
+			id: "482A444BAFDFC947"
+			tasks: [{
+				id: "0669418F0C2175E6"
+				type: "item"
+				item: {
+					id: "minecraft:elytra"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -9.5d
+			y: 10.5d
+			dependencies: ["63A96438AB2F9506"]
+			id: "22169902DA51D7A2"
+			tasks: [
+				{
+					id: "0AD9BE9531A47260"
+					type: "item"
+					item: "create:mechanical_crafter"
+				}
+				{
+					id: "79B22670326ABB55"
+					type: "item"
+					item: "computercraft:computer_advanced"
+				}
+				{
+					id: "676803260E70A0E6"
+					type: "item"
+					item: "minecraft:phantom_membrane"
+					count: 4L
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}

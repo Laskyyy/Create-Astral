@@ -1,0 +1,1970 @@
+{
+	id: "12D4862FD0A5F7F5"
+	group: ""
+	order_index: 0
+	filename: "assorted_goals"
+	title: "{chapter.1.title}"
+	icon: "minecraft:furnace"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: -5.0d
+		y: 6.5d
+		width: 6.0d
+		height: 3.5d
+		rotation: 0.0d
+		image: "createastral:textures/item/logos_binted.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			title: "{chapter.1.quest.1.title}"
+			x: 0.5d
+			y: 12.0d
+			subtitle: "{chapter.1.quest.1.subtitle}"
+			description: ["{chapter.1.quest.1.description.1}"]
+			dependencies: ["11ACD707D7284920"]
+			id: "327EA8E115211B55"
+			tasks: [
+				{
+					id: "6EB2296D77D552F4"
+					type: "item"
+					item: {
+						id: "createastral:copper_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2D17C236457E66C2"
+					type: "item"
+					item: {
+						id: "createastral:copper_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "416580D8D235A90C"
+					type: "item"
+					item: {
+						id: "createastral:copper_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2BC20E6F3A894E9B"
+					type: "item"
+					item: {
+						id: "createastral:copper_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "43F5FD04C1D31C33"
+				type: "item"
+				item: {
+					id: "mcdw:staff_battlestaff"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: 12.0d
+			subtitle: "{chapter.1.quest.2.subtitle}"
+			description: ["{chapter.1.quest.2.description.1}"]
+			dependencies: ["1AC4A5B8D86CAB0F"]
+			id: "75B36BB7FE771333"
+			tasks: [{
+				id: "0793DCFD2EA88A6B"
+				type: "item"
+				item: {
+					id: "tconstruct:part_builder"
+					Count: 1b
+					tag: {
+						texture: "minecraft:oak_planks"
+					}
+				}
+			}]
+		}
+		{
+			x: -6.0d
+			y: 10.5d
+			subtitle: "{chapter.1.quest.3.subtitle}"
+			description: ["{chapter.1.quest.3.description.1}"]
+			dependencies: ["1AC4A5B8D86CAB0F"]
+			id: "584489E0781D5C0C"
+			tasks: [{
+				id: "7E9FEA64819569DC"
+				type: "item"
+				item: {
+					id: "tconstruct:tinker_station"
+					Count: 1b
+					tag: {
+						texture: "minecraft:oak_planks"
+					}
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "minecraft:textures/painting/wasteland.png"
+				}
+			}
+			x: -4.5d
+			y: 11.5d
+			subtitle: "{chapter.1.quest.4.subtitle}"
+			description: ["{chapter.1.quest.4.description.1}"]
+			dependencies: ["75B36BB7FE771333"]
+			id: "29AF19492CFCB2DB"
+			tasks: [{
+				id: "0939A1A78118E737"
+				type: "advancement"
+				advancement: "tconstruct:tools/make_part"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "292903F1AB1DB1C2"
+				type: "item"
+				item: "farmersdelight:fruit_salad"
+			}]
+		}
+		{
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "createdeco:textures/block/palettes/decal/brown_decal.png"
+				}
+			}
+			x: -4.5d
+			y: 10.0d
+			subtitle: "{chapter.1.quest.5.subtitle}"
+			description: ["{chapter.1.quest.5.description.1}"]
+			dependencies: [
+				"29AF19492CFCB2DB"
+				"584489E0781D5C0C"
+			]
+			size: 1.25d
+			id: "0FC0B4E8EC58F791"
+			tasks: [{
+				id: "2722741D5C4A6C82"
+				type: "advancement"
+				advancement: "tconstruct:tools/tinker_tool"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "660CC63F25D4B6C5"
+					type: "item"
+					item: "tconstruct:tinkers_gadgetry"
+				}
+				{
+					id: "540BF27B86E16E58"
+					type: "item"
+					item: "tconstruct:encyclopedia"
+				}
+			]
+		}
+		{
+			title: "{chapter.1.quest.6.title}"
+			x: 1.5d
+			y: 11.0d
+			subtitle: "{chapter.1.quest.6.subtitle}"
+			description: ["{chapter.1.quest.6.description.1}"]
+			dependencies: ["11ACD707D7284920"]
+			optional: true
+			id: "01B4EDC69A4BDBBD"
+			tasks: [{
+				id: "462E8991B3305276"
+				type: "item"
+				item: {
+					id: "createastral:copper_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: 10.0d
+			shape: "rsquare"
+			subtitle: "{chapter.1.quest.7.subtitle}"
+			description: ["{chapter.1.quest.7.description.1}"]
+			dependencies: ["0FC0B4E8EC58F791"]
+			size: 1.25d
+			id: "601A619C6E96920A"
+			tasks: [{
+				id: "29288FDE98AD30BB"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+			rewards: [
+				{
+					id: "5D6FD8197D731E3E"
+					type: "item"
+					item: "farmersdelight:egg_sandwich"
+				}
+				{
+					id: "563798D5608355A7"
+					type: "item"
+					item: "minecraft:coal"
+					count: 32
+				}
+			]
+		}
+		{
+			title: "{chapter.1.quest.8.title}"
+			icon: "minecraft:copper_ingot"
+			x: 0.5d
+			y: 11.0d
+			description: ["{chapter.1.quest.8.description.1}"]
+			dependencies: ["601A619C6E96920A"]
+			id: "11ACD707D7284920"
+			tasks: [{
+				id: "091AFA0FDB6FB307"
+				type: "checkmark"
+				title: "{chapter.1.quest.8.task.1.title}"
+			}]
+		}
+		{
+			title: "{chapter.1.quest.9.title}"
+			x: -10.5d
+			y: 11.0d
+			description: ["{chapter.1.quest.9.description.1}"]
+			dependencies: ["2CE5BB6A7B30CA4C"]
+			optional: true
+			id: "4F4C278C3A8C0281"
+			tasks: [
+				{
+					id: "7CF09198104851C2"
+					type: "advancement"
+					advancement: "farmersdelight:main/place_cooking_pot"
+					criterion: ""
+				}
+				{
+					id: "52A55DABB4ACFF56"
+					type: "item"
+					item: "farmersdelight:cutting_board"
+				}
+				{
+					id: "26602780EFF4F47D"
+					type: "item"
+					item: {
+						id: "farmersdelight:skillet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "70A134C16BEE9213"
+				type: "item"
+				item: "farmersdelight:vegetable_noodles"
+			}]
+		}
+		{
+			title: "{chapter.1.quest.10.title}"
+			x: -1.5d
+			y: 11.5d
+			subtitle: "{chapter.1.quest.10.subtitle}"
+			description: ["{chapter.1.quest.10.description.1}"]
+			dependencies: ["601A619C6E96920A"]
+			optional: true
+			id: "5E6B48D6A4254759"
+			tasks: [
+				{
+					id: "2CF21C86BDEC17C9"
+					type: "item"
+					item: {
+						id: "minecraft:golden_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6147E82FBBFCE6C1"
+					type: "item"
+					item: {
+						id: "minecraft:golden_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7807C759C6353BD2"
+					type: "item"
+					item: {
+						id: "minecraft:golden_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "26B5E87291EAC402"
+					type: "item"
+					item: {
+						id: "minecraft:golden_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "3B8BEA1DD35933B7"
+					type: "item"
+					item: "minecraft:enchanted_golden_apple"
+				}
+				{
+					id: "64B9A4353C49300E"
+					type: "item"
+					item: "minecraft:golden_carrot"
+					count: 3
+				}
+				{
+					id: "4D7B25FD0B84E234"
+					type: "item"
+					item: {
+						id: "campanion:golden_spear"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "{chapter.1.quest.11.title}"
+			x: -10.0d
+			y: 16.0d
+			shape: "diamond"
+			subtitle: "{chapter.1.quest.11.subtitle}"
+			description: ["{chapter.1.quest.11.description.1}"]
+			hide_dependency_lines: true
+			dependencies: ["0BCED0F8481E0C21"]
+			size: 1.5d
+			optional: true
+			id: "05E45A7D1C9927E5"
+			tasks: [
+				{
+					id: "06BFB633FC06AF54"
+					type: "item"
+					item: "drinkbeer:beer_barrel"
+				}
+				{
+					id: "1CA938F3C387BA3E"
+					type: "item"
+					item: "drinkbeer:recipe_board_package"
+				}
+			]
+			rewards: [{
+				id: "2FB3A079A96DE590"
+				type: "item"
+				item: "create:dough"
+				count: 3
+			}]
+		}
+		{
+			title: "{chapter.1.quest.12.title}"
+			x: -9.0d
+			y: 17.0d
+			description: ["{chapter.1.quest.12.description.1}"]
+			dependencies: ["05E45A7D1C9927E5"]
+			optional: true
+			id: "3E499250F88E22DA"
+			tasks: [{
+				id: "4C08DE69B9F3B0D9"
+				type: "item"
+				item: "drinkbeer:trade_box_normal"
+			}]
+		}
+		{
+			title: "{chapter.1.quest.13.title}"
+			x: -7.8078231292516875d
+			y: 13.244897959183653d
+			shape: "pentagon"
+			subtitle: "{chapter.1.quest.13.subtitle}"
+			description: ["{chapter.1.quest.13.description.1}"]
+			dependency_requirement: "one_completed"
+			size: 2.5d
+			min_required_tasks: 1
+			id: "0BCED0F8481E0C21"
+			tasks: [
+				{
+					id: "7762F7FD3BD41EA6"
+					type: "item"
+					item: {
+						id: "tconstruct:crafting_station"
+						Count: 1b
+						tag: {
+							texture: "minecraft:oak_log"
+						}
+					}
+				}
+				{
+					id: "576B4EA932FC2E16"
+					type: "item"
+					item: "minecraft:crafting_table"
+				}
+			]
+			rewards: [
+				{
+					id: "10ED69DCCDA4E6C2"
+					type: "item"
+					item: "minecraft:white_bed"
+				}
+				{
+					id: "033BA9F7707381D5"
+					type: "item"
+					item: "minecraft:torch"
+					count: 3
+				}
+			]
+		}
+		{
+			x: -6.5d
+			y: 11.5d
+			subtitle: "{chapter.1.quest.14.subtitle}"
+			description: ["{chapter.1.quest.14.description.1}"]
+			dependencies: ["0BCED0F8481E0C21"]
+			id: "1AC4A5B8D86CAB0F"
+			tasks: [{
+				id: "0A56270F3A56875F"
+				type: "item"
+				item: "tconstruct:pattern"
+				count: 3L
+			}]
+			rewards: [{
+				id: "1D969A2DAF5418C8"
+				type: "item"
+				item: "tconstruct:materials_and_you"
+			}]
+		}
+		{
+			title: "{chapter.1.quest.15.title}"
+			x: -2.5d
+			y: 9.0d
+			subtitle: "{chapter.1.quest.15.subtitle}"
+			description: ["{chapter.1.quest.15.description.1}"]
+			dependencies: ["0FC0B4E8EC58F791"]
+			min_required_tasks: 1
+			id: "6698096C19C55333"
+			tasks: [
+				{
+					id: "45D6962D76FE0D81"
+					type: "item"
+					item: "minecraft:raw_iron"
+					count: 8L
+				}
+				{
+					id: "753722BA8991D63B"
+					type: "item"
+					item: "techreborn:raw_tin"
+					count: 8L
+				}
+				{
+					id: "0A51F489FEEE71F0"
+					type: "item"
+					item: "minecraft:raw_copper"
+					count: 8L
+				}
+			]
+		}
+		{
+			title: "{chapter.1.quest.16.title}"
+			x: -9.0d
+			y: 10.0d
+			shape: "diamond"
+			subtitle: "{chapter.1.quest.16.subtitle}"
+			description: ["{chapter.1.quest.16.description.1}"]
+			hide_dependency_lines: true
+			dependencies: ["0BCED0F8481E0C21"]
+			size: 1.5d
+			optional: true
+			id: "2CE5BB6A7B30CA4C"
+			tasks: [{
+				id: "5F1D78666FED176F"
+				type: "item"
+				item: "farmersdelight:stove"
+			}]
+			rewards: [{
+				id: "11032AC6D056CDC5"
+				type: "item"
+				item: "farmersdelight:rice"
+				count: 4
+			}]
+		}
+		{
+			title: "{chapter.1.quest.17.title}"
+			x: -10.5d
+			y: 10.0d
+			subtitle: "{chapter.1.quest.17.subtitle}"
+			description: ["{chapter.1.quest.17.description.1}"]
+			dependencies: ["2CE5BB6A7B30CA4C"]
+			optional: true
+			id: "504201C234C38437"
+			tasks: [{
+				id: "2F0EB60847E4ECF7"
+				type: "item"
+				item: "farmersdelight:straw"
+			}]
+			rewards: [{
+				id: "4BB9B1AC0821A6AD"
+				type: "item"
+				item: "farmersdelight:straw"
+				count: 3
+			}]
+		}
+		{
+			x: -5.5d
+			y: 9.0d
+			description: ["{chapter.1.quest.18.description.1}"]
+			dependencies: ["0FC0B4E8EC58F791"]
+			optional: true
+			id: "78E055160B11FC48"
+			tasks: [{
+				id: "100F661313FF3C14"
+				type: "advancement"
+				advancement: "tconstruct:tools/travelers_gear"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "4D442FD95DEBC09A"
+					type: "item"
+					item: "minecraft:gray_dye"
+					count: 12
+				}
+				{
+					id: "003476D34FD33AD5"
+					type: "item"
+					item: "reinfchest:iron_chest"
+				}
+			]
+		}
+		{
+			title: "{chapter.1.quest.19.title}"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "createastral:textures/item/uwaah.png"
+				}
+			}
+			x: -6.536394557823115d
+			y: 14.571088435374122d
+			shape: "gear"
+			subtitle: "{chapter.1.quest.19.subtitle}"
+			description: ["{chapter.1.quest.19.description.1}"]
+			dependency_requirement: "one_completed"
+			size: 1.25d
+			id: "1472D9CAB3B3A74D"
+			tasks: [
+				{
+					id: "03400A6C3B703E48"
+					type: "checkmark"
+					title: "{chapter.1.quest.19.task.1.title}"
+				}
+				{
+					id: "0D7AFA953A839CE4"
+					type: "item"
+					item: {
+						id: "minecraft:player_head"
+						Count: 1b
+						tag: {
+							SkullOwner: {
+								Id: [I;
+									1325944819
+									1716012454
+									-1803202854
+									408989958
+								]
+								Properties: {
+									textures: [{
+										Value: "ewogICJ0aW1lc3RhbXAiIDogMTY3NDg2MzUyNzI3MSwKICAicHJvZmlsZUlkIiA6ICI0ZjA4NGZmMzY2NDg0NWE2OTQ4NTRlZGExODYwYjEwNiIsCiAgInByb2ZpbGVOYW1lIiA6ICJMYXNreXl5IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzZjMzBiZGEyYTdhOWY5NDU2NWIyN2JmOWVkMWNmMmQ4Y2I2NzM0NWJjYzRiYmJiMzVlYWJlNjYzYTY3NjA1MDUiCiAgICB9CiAgfQp9"
+										Signature: "f4suDAYZO5DJbfMf8dWosqTgiz8BaP78V+THOL2VGvAuFDr76okSBzUi7kGSkvn1YrzHnEzBMxZl7ZdlnYm7VX5BRHRmak342Qr7WINZaAEdYmMl2RxG3+mxj75owlS5o1g/q42AJYnjeyw2qw1dN+gbsD3R9+/lUqGLZMgHC7CjCJUQ62WYZye2WaMbM0AtOr2WlldMDLMEZaKLR2o4bz5s8+pUh3qagxqC5UcXXcWNPFXza2+0B8woprlwBu+rAMf/1/Ue5gHaRxiG71JG8U6FgWQYG78MzC7kkT3F9qgrLQju7W1MqTo40AJ6pr10tMvJpBg4kRNalq0TaB7ghBDuQmyEQAvqoh0FjlhWZ9FNlvj+Ga90u0q3TWmTCaubZyA8k9T4Jyn5/BoWY16sI+dGMsQ+a1WuT4SUSuJwRhyjx1ZyGUP0xjKgUCzauileKF8jL2vXeirDx/pe1e6UzrckdkZ3ddhdVpLfjgdw3A2ojvzpCaxNRv0cYvvA3mD4Yf/aJ4SvQ3zChySj7UABDk81XBnYhQOAdX5FEEvKq+oE/NXk/Gb1jyc29m9Ku237ZVwBeH3zWICzt+aKG0rjv/58uPGUutmeMnFINLT00cKt2nLqOkXZECTpr+Xuch989G2finByNtCM0tQl5ApM2OziR2/VYBRikvFCwa9OTkA="
+									}]
+								}
+								Name: "Laskyyy"
+							}
+						}
+					}
+				}
+				{
+					id: "609CF8463DB47D2B"
+					type: "item"
+					item: {
+						id: "minecraft:player_head"
+						Count: 1b
+						tag: {
+							SkullOwner: {
+								Id: [I;
+									-2124979794
+									-1623767791
+									-1716679678
+									86603787
+								]
+								Properties: {
+									textures: [{
+										Value: "ewogICJ0aW1lc3RhbXAiIDogMTY3NDg2MzUzNTcwMiwKICAicHJvZmlsZUlkIiA6ICI4MTU3NjFhZTlmMzc0NTExOTlhZDhjMDIwNTI5NzgwYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJMaXphcmRMZWxpZWwiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTBiY2I4Mzk2OTVmMmY4OWY3NTM4YWQwY2E2ZWMyN2RlMzFkN2FiMzU5YjczNTk0NDU3Y2U3YjQ2OWQ5OWI0NCIKICAgIH0KICB9Cn0="
+										Signature: "OD4iPLtIWSWy4um9omOwi/YewdlazvfM0iMS/IwUlfY59AybhHqEcZ6srl9Ij2XxjXLAJAYC/HovHQJBMFcNc92228FPtxB5Bj9Z4AyYJGhst9FYPPZn4KVIziMwFzBkcNXzt1Vcee5PPP8LWLW433S8Fl3039FoS/S8VIOAS69llywc6YJb1U5UXavpfV660vwbtfY5LU24ehd0+T822ZhA8ti7qYcJb02C3I/IXtpFrLbpv0Is84LKkomQ/laBFgVXYq4bTX/wbE1hJtocn3uluroPC3UmHZvUegYEyjbTDKx78Uwy58DfnAfd3gHY0uyFSfvKbw3FYIRL63ulPyfBfqoOwPds3iQ4qQ1+fW1cYC11Ji2wBqPzdlzE8jV3T8EnOuf5riKx2IQOTfA/6WnT9oJUSM1Huos5Rhw4BnBpnvvn7fZaTRL3hAdGhaT2d4ifBfPAxeINT9vD8DSxo26G02snSNtVPdFuKOuHjUmTtisNBgMgkssxmOkZngPkMPvXHY7/Rw+eZsOzCslhqTrm6WGs0P3hBn5FBRvBGAD83SVfRgE5QCR+LilBTtS90/62ZZsBr4s1yTe6glszEl16x7Sm+mmfA+wGlG6W2okAWxlXOqBbgzDh7ZC3s9YTFWtB1rU0hie00LBE6o5rtTfY4PjOnD+NdidjZ6hzEC4="
+									}]
+								}
+								Name: "LizardLeliel"
+							}
+						}
+					}
+				}
+				{
+					id: "394AE8ECA675E599"
+					type: "item"
+					item: {
+						id: "minecraft:player_head"
+						Count: 1b
+						tag: {
+							SkullOwner: {
+								Id: [I;
+									-1286523196
+									-715437022
+									-1434531122
+									-991854955
+								]
+								Properties: {
+									textures: [{
+										Value: "ewogICJ0aW1lc3RhbXAiIDogMTY3NDg2MzU0MTA4MSwKICAicHJvZmlsZUlkIiA6ICJiMzUxMzZjNGQ1NWI0YzIyYWE3ZWNhY2VjNGUxN2U5NSIsCiAgInByb2ZpbGVOYW1lIiA6ICJldGhhbmljdXNzIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzlmNDU2YTZlMTBmMGEyNDQ4ZjI4ODU5OWI4MDQ1NzQ5NTdmZDJiOTU0NTA5OTRmMzBmOGMyNDM4YmU3Zjc1NDUiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+										Signature: "cM67wNDvjZhJkQf6c85wJriG54+R/7MBsU8Wyzo6euT8HQl1bQieV5MaJ8LY8mDMG3Pn5PYu1MWTYIgU//p1ZyjbgNYONA1SHYYNxb6jfor3NiCzmaamWkxkDC2TmhBod8yHUCVp2nybvd/xplaldtIKb+26UqH4Kub5OSGeubyDKLnLOOtdJARHfOmEkLwCzk3v16ZQ8muk0oP3WV9A+ED/eyJAvA+HqjSRJ8kQLvX6kjg+Xipb51rf3NInx7B+q0Ia6d8NrdOjz/VLDQXWuZbvzF4HG8S216nb5khedznao5P3Y+nhzqe9V5QVESp9B8b1HKPYp7ilKl/L+OySZEGXlyg33dC3XYcsnlXyud81uzkajylk4yc1iOgggIzuHmTXh3wPF/ILNBqo2I0S1G8Blcsv58aJ0e2xgpztP86o5ku1icOE5R7bhbc54s2wTYgzc7mh/t43nGoIoDh+wU0QX9RWYXgGpSmj6clSD+qs9+JWuItGCgL6Wz5y1SnEv89QrsCTblWX8MLRO/k490vnysBWdZZ4ZjiS1/uZX368Zo2Pln9fKgVIccuy/YBvizEWMvaUd17iIzQeRmJZArExcctaLPWwZOV1bdUt1G9Nyxc5ob8IiHtgIuvRIbQ3SVYTEPfCJtzEeBcmTy4hd9D7scTEb3UPAD6AOBKYjJA="
+									}]
+								}
+								Name: "ethanicuss"
+							}
+						}
+					}
+				}
+				{
+					id: "19D937808B6B0A81"
+					type: "item"
+					item: {
+						id: "minecraft:player_head"
+						Count: 1b
+						tag: {
+							SkullOwner: {
+								Id: [I;
+									209808190
+									-1244902414
+									-1756542517
+									342281462
+								]
+								Properties: {
+									textures: [{
+										Value: "ewogICJ0aW1lc3RhbXAiIDogMTY3NDg2MzU0Njc4OCwKICAicHJvZmlsZUlkIiA6ICIwYzgxNmIzZWI1Y2M0YmYyOTc0ZDQ5Y2IxNDY2Y2NmNiIsCiAgInByb2ZpbGVOYW1lIiA6ICJpZWF0dXJrbmVlY2FwcyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS80N2QyMmE4Y2RkOGM1YzZjYmIwOGY4MGE0NmUwZDFhNGMyNjAwYjVmNDVmNTA5ZDY2ZDU3YzZmZmUxMGE5ODk4IgogICAgfQogIH0KfQ=="
+										Signature: "jcGzVKHNXeU4tFQLw/oLvPGMEiSB7uyTRkQbj7pDIllcVUqH8M3uhzBmukCGF0NAWJY+glFaOxpu72BiPnYNTisEpB9WgXk0XG0A4WXn5lrsMP0rQk1OjqxUYy6FIrzgYwQ+xuhGZzwdfDfZWnvmb6wkWN01jjW+OvmHPLYiDJ/qbtmomfNDr0xy9XgPUFk7v6M+wsrE9seAikw48XK7kg4vsWq0wdZeF88VL41PAGNPQWza65n8CA8E4TcEyYjUOGIwHXLkxHkrDezWXFnhHwvSinRY9PuVdMhC0mAWidAFytGCYjL16uUxBcYKcgqtAajyPREFggHwHLAQaKxsNIgsphbfLMqK29lR4EkMm8Gmb9LkfwrbU9GM4vO9kfdvXauMEnjD9GwqsrR6nx3l0R79OI7Lm48RJzF/T8CGZWoeLfhjIWfhf0UBnz/VyNn3EF1kt6zWfofpsMXVHmRsk3n8UL8vApAhDkxStsCD9R6g4iqdJSYyRiwRpqKby68cuHxo+ToLIcOv9PsbzWXf6OIn4er/eHHLNqrrlJjfDtDG5OigunUM+Oi+b7nr1tby0sEYbwPrENIKB0fgcNGG03HICNFyl0MSnC/hZvlZ8nU+etFx5Pqt7BC0+Ae6feJGkZt6Pab1jjA+BkCKnX4ycWe+NY3DKY9PMwrnwwOyh6U="
+									}]
+								}
+								Name: "ieaturkneecaps"
+							}
+						}
+					}
+				}
+				{
+					id: "7EA8F047CCE136B9"
+					type: "item"
+					item: {
+						id: "minecraft:player_head"
+						Count: 1b
+						tag: {
+							SkullOwner: {
+								Id: [I;
+									-1500031391
+									-2083962386
+									-1695679908
+									2049130246
+								]
+								Properties: {
+									textures: [{
+										Value: "ewogICJ0aW1lc3RhbXAiIDogMTY3NDg2MzY1Nzc1NiwKICAicHJvZmlsZUlkIiA6ICJhNjk3NTY2MTgzYzk0MWVlOWFlZGZhNWM3YTIzM2YwNiIsCiAgInByb2ZpbGVOYW1lIiA6ICJDaG9jb05lb3NvbWUiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWFhMzI3ODJiMDFmNjA0ZTIxYjIyZWI2MWU5MjAwNzNkOWExNGYwZWZhZTQ2ZjNlZWNiZTRhOWVkNTA3M2U1NiIKICAgIH0KICB9Cn0="
+										Signature: "e6AVGhXYQ36HUTlFiWt7yNEbsfNaT2sLEOtCcyMVu/GqF9iYAnNQ9JbX8UFoTO0ScnZjxiOw0sWwatHHkXacM0xyF0V6slIk5vWT5yQeMLsEqI4NZiiCFiw8eWVPzeJvwp0cjKHI2l5qe2RofN+yWbnux56Poo1Z/FAZUeYraHq4vF9mZXd7FpztO8bB3Jo06udyXGkb7Yd8Von0tmQY4KkPtRbhDds9J1Ma5IVpyBnajmACs2/JjR5Sjkmtjj7Rojb2uZcBTj3V+lHOM2kgmZMIuerGO5kraoSfJXYsAn+ZCfkvuju8Wmf03Z0Vu8GAubqJYCDbSzgxITpjMpy9p0sMo9JeLMlDx+2sqI0nmDJx+ayBGvGIr/ExWIkpzIFPFM7bDck69SWE21JMTO+BfDRwCH82Ab5skXrOUBYdcrPcYMa+djsehv3AkWD/3wqOFiJJarP40dX7xutHgQMomS5S2nZ+Fl6PWEvyRbQH7m+rD/ZMVrq3EjwV0zuNikBAttDD6dKFCJjW9VORT8D/hGzdmrfNCVTF4e1qtPe9GbgCQhhvkcYpkIq8SMVvYBwsaipi+bmmFoB9roLStOfQEjxwu6kY/Pah4LU/4bnRmGB2YZ6ZPOlO+KVMCE2OXKqKy20mOw7VSEfK3zT9PgTYK7xtudTxZv2r2I5iHH5RMlQ="
+									}]
+								}
+								Name: "ChocoNeosome"
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "3041554AA6080450"
+				type: "item"
+				item: "createastral:orcane"
+			}]
+		}
+		{
+			title: "{chapter.1.quest.20.title}"
+			x: -11.5d
+			y: 11.0d
+			dependencies: ["4F4C278C3A8C0281"]
+			optional: true
+			id: "6D072F2027D8DFCE"
+			tasks: [{
+				id: "072F87225B252EF0"
+				type: "item"
+				item: "minecraft:melon"
+				count: 64L
+			}]
+			rewards: [{
+				id: "70CEAFBC1ED06AAF"
+				type: "item"
+				item: "minecraft:copper_ore"
+				count: 25
+			}]
+		}
+		{
+			title: "{chapter.1.quest.21.title}"
+			x: -10.5d
+			y: 12.0d
+			dependencies: ["4F4C278C3A8C0281"]
+			optional: true
+			id: "1645C544BEBC01EE"
+			tasks: [{
+				id: "1E76A2267860CAB1"
+				type: "item"
+				item: "minecraft:cactus"
+				count: 64L
+			}]
+			rewards: [{
+				id: "7EF1AFDAC31ED87C"
+				type: "item"
+				item: "minecraft:gold_ore"
+				count: 20
+			}]
+		}
+		{
+			title: "{chapter.1.quest.22.title}"
+			x: -11.5d
+			y: 12.0d
+			dependencies: ["4F4C278C3A8C0281"]
+			optional: true
+			id: "79886A5C435F29E0"
+			tasks: [{
+				id: "455B346FB9ADE2BB"
+				type: "item"
+				item: "minecraft:pumpkin"
+				count: 64L
+			}]
+			rewards: [{
+				id: "62BE7175BE9B0DED"
+				type: "item"
+				item: "minecraft:iron_ore"
+				count: 20
+			}]
+		}
+		{
+			title: "{chapter.1.quest.23.title}"
+			x: -11.5d
+			y: 14.0d
+			hide_dependency_lines: true
+			dependencies: ["4F4C278C3A8C0281"]
+			optional: true
+			id: "513E187ADFD4F2A4"
+			tasks: [{
+				id: "1CB5135CDE0FEAB3"
+				type: "item"
+				item: "farmersdelight:carrot_crate"
+				count: 64L
+			}]
+			rewards: [{
+				id: "64C5214D379321F1"
+				type: "item"
+				item: "minecraft:deepslate_copper_ore"
+				count: 30
+			}]
+		}
+		{
+			title: "{chapter.1.quest.24.title}"
+			x: -13.5d
+			y: 14.5d
+			hide_dependency_lines: true
+			dependencies: ["4F4C278C3A8C0281"]
+			optional: true
+			id: "09A4CEF0AF68A055"
+			tasks: [{
+				id: "107F3E609ABD62F6"
+				type: "item"
+				item: "farmersdelight:potato_crate"
+				count: 64L
+			}]
+			rewards: [
+				{
+					id: "3127F7CCD4E19F3F"
+					type: "item"
+					item: "minecraft:deepslate_gold_ore"
+					count: 25
+				}
+				{
+					id: "2AD4060B4904CB4D"
+					type: "item"
+					item: "create:zinc_ore"
+					count: 32
+				}
+			]
+		}
+		{
+			title: "{chapter.1.quest.25.title}"
+			x: -12.5d
+			y: 14.5d
+			hide_dependency_lines: true
+			dependencies: ["4F4C278C3A8C0281"]
+			optional: true
+			id: "6FF9501CDF19F0D5"
+			tasks: [{
+				id: "51D0686E879398CF"
+				type: "item"
+				item: "farmersdelight:beetroot_crate"
+				count: 64L
+			}]
+			rewards: [{
+				id: "52FC831AEA7F2A46"
+				type: "item"
+				item: "minecraft:deepslate_redstone_ore"
+				count: 25
+			}]
+		}
+		{
+			title: "{chapter.1.quest.26.title}"
+			x: -10.5d
+			y: 13.5d
+			hide_dependency_lines: true
+			dependencies: ["4F4C278C3A8C0281"]
+			optional: true
+			id: "1858F35E1B7128AA"
+			tasks: [{
+				id: "632EC9B47BD48D61"
+				type: "item"
+				item: "farmersdelight:rice_bag"
+				count: 64L
+			}]
+			rewards: [{
+				id: "19EF8ED55AE8ABED"
+				type: "item"
+				item: "minecraft:quartz"
+				count: 32
+			}]
+		}
+		{
+			title: "{chapter.1.quest.27.title}"
+			x: -13.0d
+			y: 11.5d
+			hide_dependency_lines: true
+			dependencies: ["4F4C278C3A8C0281"]
+			optional: true
+			id: "641D3099B18682CD"
+			tasks: [{
+				id: "371A5F8851677000"
+				type: "item"
+				item: "farmersdelight:onion_crate"
+				count: 64L
+			}]
+			rewards: [
+				{
+					id: "7DB7488CBDF70735"
+					type: "item"
+					item: "minecraft:deepslate_copper_ore"
+					count: 32
+				}
+				{
+					id: "02A45F4DBF2CD22C"
+					type: "item"
+					item: "naturalist:cooked_venison"
+					count: 32
+				}
+			]
+		}
+		{
+			title: "{chapter.1.quest.28.title}"
+			x: -13.5d
+			y: 12.5d
+			hide_dependency_lines: true
+			dependencies: ["4F4C278C3A8C0281"]
+			optional: true
+			id: "0C6D7B3DCF139FA9"
+			tasks: [{
+				id: "559246BCCF5EDD0A"
+				type: "item"
+				item: "farmersdelight:tomato_crate"
+				count: 64L
+			}]
+			rewards: [{
+				id: "504F364ED908935F"
+				type: "item"
+				item: "minecraft:redstone_ore"
+				count: 32
+			}]
+		}
+		{
+			title: "{chapter.1.quest.29.title}"
+			x: -13.5d
+			y: 13.5d
+			hide_dependency_lines: true
+			dependencies: ["4F4C278C3A8C0281"]
+			optional: true
+			id: "4E0B5BFE718A99CD"
+			tasks: [{
+				id: "01BAB43531550385"
+				type: "item"
+				item: "farmersdelight:cabbage_crate"
+				count: 64L
+			}]
+			rewards: [{
+				id: "15293C6F9430DA31"
+				type: "item"
+				item: "minecraft:emerald_ore"
+				count: 25
+			}]
+		}
+		{
+			title: "{chapter.1.quest.30.title}"
+			x: -8.0d
+			y: 17.5d
+			subtitle: "{chapter.1.quest.30.subtitle}"
+			description: ["{chapter.1.quest.30.description.1}"]
+			dependencies: ["3E499250F88E22DA"]
+			optional: true
+			id: "69C0C2601F6F79A7"
+			tasks: [
+				{
+					id: "6E1B4CE64F9E6A8F"
+					type: "item"
+					item: "drinkbeer:spice_blaze_paprika"
+					consume_items: false
+				}
+				{
+					id: "764CD4323F636BDF"
+					type: "item"
+					item: "drinkbeer:spice_dried_eglia_bud"
+					consume_items: false
+				}
+				{
+					id: "0D98C3FD843D2C07"
+					type: "item"
+					item: "drinkbeer:spice_smoked_eglia_bud"
+					consume_items: false
+				}
+				{
+					id: "0D087B8E65CA9C46"
+					type: "item"
+					item: "drinkbeer:spice_amethyst_nigella_seeds"
+					consume_items: false
+				}
+				{
+					id: "00B2396D3A8C1EE5"
+					type: "item"
+					item: "drinkbeer:spice_citrine_nigella_seeds"
+					consume_items: false
+				}
+				{
+					id: "1E78F09CA1D956AB"
+					type: "item"
+					item: "drinkbeer:spice_ice_mint"
+					consume_items: false
+				}
+				{
+					id: "2D2910BB2441F6E1"
+					type: "item"
+					item: "drinkbeer:spice_ice_patchouli"
+					consume_items: false
+				}
+				{
+					id: "1C2F140FF8B9BBF3"
+					type: "item"
+					item: "drinkbeer:spice_storm_shards"
+					consume_items: false
+				}
+				{
+					id: "1C7B42E48B5032C8"
+					type: "item"
+					item: "drinkbeer:spice_roasted_red_pine_nuts"
+					consume_items: false
+				}
+				{
+					id: "6922A26AAFAB484D"
+					type: "item"
+					item: "drinkbeer:spice_glace_goji_berries"
+					consume_items: false
+				}
+				{
+					id: "5CE763E3FD012D33"
+					type: "item"
+					item: "drinkbeer:spice_frozen_persimmon"
+					consume_items: false
+				}
+				{
+					id: "1B55F8D7A019169A"
+					type: "item"
+					item: "drinkbeer:spice_roasted_pecans"
+					consume_items: false
+				}
+				{
+					id: "4AABA452BC41B753"
+					type: "item"
+					item: "drinkbeer:spice_silver_needle_white_tea"
+					consume_items: false
+				}
+				{
+					id: "4CDF96F4E1232628"
+					type: "item"
+					item: "drinkbeer:spice_golden_cinnamon_powder"
+					consume_items: false
+				}
+				{
+					id: "1D3D2EAD17CF1B00"
+					type: "item"
+					item: "drinkbeer:spice_dried_selaginella"
+					consume_items: false
+				}
+			]
+			rewards: [{
+				id: "3415146CCA0548A2"
+				type: "item"
+				item: {
+					id: "mcdw:axe_encrusted_anchor"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "{chapter.1.quest.31.title}"
+			x: -11.5d
+			y: 10.0d
+			subtitle: "{chapter.1.quest.31.subtitle}"
+			description: ["{chapter.1.quest.31.description.1}"]
+			dependencies: ["504201C234C38437"]
+			optional: true
+			id: "501AD44D7875F4D9"
+			tasks: [{
+				id: "18650A6066610756"
+				type: "item"
+				item: "camsbackpacks:white_backpack"
+			}]
+			rewards: [{
+				id: "1E0A00A53BFB7196"
+				type: "item"
+				item: "reinfchest:copper_chest"
+				count: 4
+			}]
+		}
+		{
+			title: "{chapter.1.quest.32.title}"
+			icon: "minecraft:spyglass"
+			x: 1.5d
+			y: 12.0d
+			subtitle: "{chapter.1.quest.32.subtitle}"
+			description: ["{chapter.1.quest.32.description.1}"]
+			dependencies: ["11ACD707D7284920"]
+			id: "6B68AF2DE79A65A3"
+			tasks: [{
+				id: "36090F953BBA78B4"
+				type: "checkmark"
+				title: "{chapter.1.quest.32.task.1.title}"
+			}]
+			rewards: [
+				{
+					id: "62EBCF9C550E38E7"
+					type: "item"
+					item: "create:gray_toolbox"
+				}
+				{
+					id: "44E31D1175B6FDDF"
+					type: "item"
+					item: "minecraft:spyglass"
+				}
+			]
+		}
+		{
+			title: "{chapter.1.quest.33.title}"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "createdeco:textures/block/palettes/decal/cyan_decal.png"
+				}
+			}
+			x: 2.0d
+			y: 8.0d
+			subtitle: "{chapter.1.quest.33.subtitle}"
+			description: ["{chapter.1.quest.33.description.1}"]
+			dependencies: ["6433AD83545428C3"]
+			id: "5D69FB71CD8A1391"
+			tasks: [
+				{
+					id: "46475A543AEB495D"
+					type: "item"
+					item: "packages:package_maker"
+				}
+				{
+					id: "1548CF476FD5F8D3"
+					type: "item"
+					title: "{chapter.1.quest.33.task.2.title}"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "c:dyes"
+						}
+					}
+				}
+				{
+					id: "6E62E369EA9C1050"
+					type: "item"
+					title: "{chapter.1.quest.33.task.3.title}"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:planks"
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "5FC98BCF7897AF8C"
+					type: "item"
+					item: "minecraft:copper_ingot"
+				}
+			]
+		}
+		{
+			title: "{chapter.1.quest.34.title}"
+			icon: {
+				id: "automobility:automobile"
+				Count: 1b
+				tag: {
+					Automobile: {
+						wheels: "automobility:standard"
+						frame: "automobility:yellow_tractor"
+						engine: "automobility:stone"
+					}
+				}
+			}
+			x: -12.172448979591834d
+			y: 12.847959183673467d
+			shape: "gear"
+			subtitle: "{chapter.1.quest.34.subtitle}"
+			description: ["{chapter.1.quest.34.description.1}"]
+			hide_dependency_lines: true
+			min_required_dependencies: 2
+			dependencies: [
+				"641D3099B18682CD"
+				"0C6D7B3DCF139FA9"
+				"4E0B5BFE718A99CD"
+				"09A4CEF0AF68A055"
+				"6FF9501CDF19F0D5"
+				"513E187ADFD4F2A4"
+				"1858F35E1B7128AA"
+			]
+			hide: false
+			optional: true
+			id: "0F603C66B0DD9BFB"
+			tasks: [
+				{
+					id: "5B7767AF93468997"
+					type: "item"
+					item: "farmersdelight:roast_chicken_block"
+					consume_items: true
+				}
+				{
+					id: "5E5F647D4E1B8FA8"
+					type: "item"
+					item: "farmersdelight:apple_pie"
+					consume_items: true
+				}
+				{
+					id: "0F29879D9EF58B97"
+					type: "item"
+					item: "farmersdelight:honey_glazed_ham_block"
+					consume_items: true
+				}
+				{
+					id: "4DB6A8FA8649EFCB"
+					type: "item"
+					item: "farmersdelight:grilled_salmon"
+					consume_items: true
+				}
+				{
+					id: "4A755F7357DEB0E3"
+					type: "item"
+					item: "farmersdelight:shepherds_pie_block"
+					consume_items: true
+				}
+				{
+					id: "0049FAB8BA645AC9"
+					type: "item"
+					item: "farmersdelight:barbecue_stick"
+					consume_items: true
+				}
+				{
+					id: "4A6FBE14B11C4CDB"
+					type: "item"
+					item: "farmersdelight:hamburger"
+					consume_items: true
+				}
+				{
+					id: "0AD30A191611C436"
+					type: "item"
+					item: "farmersdelight:vegetable_noodles"
+					consume_items: true
+				}
+				{
+					id: "74309904F6073640"
+					type: "item"
+					item: "farmersdelight:dumplings"
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "232350F6BEEC2223"
+					type: "item"
+					item: {
+						id: "automobility:automobile"
+						Count: 1b
+						tag: {
+							Automobile: {
+								engine: "automobility:stone"
+								frame: "automobility:yellow_tractor"
+								wheels: "automobility:standard"
+							}
+						}
+					}
+				}
+				{
+					id: "0AF46BEC2356A087"
+					type: "item"
+					item: {
+						id: "automobility:front_attachment"
+						Count: 1b
+						tag: {
+							attachment: "automobility:crop_harvester"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "{chapter.1.quest.35.title}"
+			x: -1.5d
+			y: 8.0d
+			shape: "gear"
+			subtitle: "{chapter.1.quest.35.subtitle}"
+			description: ["{chapter.1.quest.35.description.1}"]
+			dependencies: [
+				"601A619C6E96920A"
+				"6698096C19C55333"
+			]
+			size: 2.0d
+			id: "1337920DA45E72AD"
+			tasks: [
+				{
+					id: "5ACD13D871B7909B"
+					type: "item"
+					item: "techreborn:tin_ingot"
+					count: 8L
+				}
+				{
+					id: "32032BEF96EE21E3"
+					type: "item"
+					item: "minecraft:copper_ingot"
+					count: 8L
+				}
+				{
+					id: "069C76715AC2E719"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 8L
+				}
+				{
+					id: "6B75A05B669468D5"
+					type: "item"
+					item: "minecraft:andesite"
+					count: 16L
+				}
+				{
+					id: "5F9D6891E391AC4E"
+					type: "item"
+					item: "minecraft:clay"
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "{chapter.1.quest.36.title}"
+			x: 0.5d
+			y: 8.0d
+			subtitle: "{chapter.1.quest.36.subtitle}"
+			description: ["{chapter.1.quest.36.description.1}"]
+			dependencies: ["6433AD83545428C3"]
+			id: "3147C3CCBC6856B6"
+			tasks: [
+				{
+					id: "4AD8D3B2156A38B8"
+					type: "item"
+					item: "techreborn:storage_buffer"
+				}
+				{
+					id: "6435D0B2DADB3D95"
+					type: "item"
+					item: "techreborn:crude_storage_unit"
+				}
+			]
+			rewards: [
+				{
+					id: "136E8C4D5C4A0054"
+					type: "item"
+					item: "techreborn:crude_storage_unit"
+					count: 4
+				}
+				{
+					id: "185D3119BF9DE681"
+					type: "item"
+					item: "techreborn:wrench"
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 13.5d
+			dependencies: ["30671A15990F39D8"]
+			optional: true
+			id: "791D3292F22706E6"
+			tasks: [{
+				id: "40EFAB1EA82C0179"
+				type: "item"
+				item: "chipped:botanist_workbench"
+			}]
+			rewards: [{
+				id: "37C1156AB1726C5E"
+				type: "item"
+				item: "minecraft:moss_block"
+				count: 8
+			}]
+		}
+		{
+			x: -3.5d
+			y: 15.0d
+			dependencies: ["30671A15990F39D8"]
+			optional: true
+			id: "61268E9695C2B0B0"
+			tasks: [{
+				id: "686BE4BE4E9EE3FB"
+				type: "item"
+				item: "chipped:glassblower"
+			}]
+			rewards: [{
+				id: "412393C0BD8AAFC9"
+				type: "item"
+				item: "minecraft:glass"
+				count: 16
+			}]
+		}
+		{
+			x: -0.5d
+			y: 15.0d
+			dependencies: ["30671A15990F39D8"]
+			optional: true
+			id: "441D6F369B7912E5"
+			tasks: [{
+				id: "4F02DF2E116D3E92"
+				type: "item"
+				item: "chipped:carpenters_table"
+			}]
+			rewards: [{
+				id: "2C267CF0C88E548F"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 32
+			}]
+		}
+		{
+			x: -0.5d
+			y: 14.0d
+			dependencies: ["30671A15990F39D8"]
+			optional: true
+			id: "5FFC7DFF4294C81A"
+			tasks: [{
+				id: "74EB7FF43AA93703"
+				type: "item"
+				item: "chipped:loom_table"
+			}]
+			rewards: [{
+				id: "1F16D277E7B3D5DD"
+				type: "item"
+				item: "minecraft:white_wool"
+				count: 16
+			}]
+		}
+		{
+			x: -3.5d
+			y: 14.0d
+			dependencies: ["30671A15990F39D8"]
+			optional: true
+			id: "65C0B4100CD88D77"
+			tasks: [{
+				id: "184486A840B467DE"
+				type: "item"
+				item: "chipped:mason_table"
+			}]
+			rewards: [{
+				id: "5B3D1DB7984B6EA4"
+				type: "item"
+				item: "minecraft:andesite"
+				count: 16
+			}]
+		}
+		{
+			x: -0.5d
+			y: 16.0d
+			dependencies: ["30671A15990F39D8"]
+			optional: true
+			id: "11B2E25F18AD9C35"
+			tasks: [{
+				id: "1077A31DBE0B61EF"
+				type: "item"
+				item: "chipped:alchemy_bench"
+			}]
+			rewards: [{
+				id: "302E910F93ECC032"
+				type: "item"
+				item: "minecraft:copper_block"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 16.0d
+			dependencies: ["30671A15990F39D8"]
+			optional: true
+			id: "30A8E779764AE865"
+			tasks: [{
+				id: "0F24228CDCEB910E"
+				type: "item"
+				item: "chipped:mechanist_workbench"
+			}]
+			rewards: [{
+				id: "21B1578A2172D29C"
+				type: "item"
+				item: "minecraft:redstone_block"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 10.0d
+			subtitle: "{chapter.1.quest.44.subtitle}"
+			description: ["{chapter.1.quest.44.description.1}"]
+			dependencies: [
+				"11ACD707D7284920"
+				"6433AD83545428C3"
+			]
+			id: "22EDB2C326C53A89"
+			tasks: [{
+				id: "247A190DDF6719BF"
+				type: "item"
+				item: "reinfchest:copper_chest"
+			}]
+			rewards: [{
+				id: "75AB59721C18FE4E"
+				type: "item"
+				item: "reinfchest:copper_chest"
+			}]
+		}
+		{
+			title: "{chapter.1.quest.45.title}"
+			x: -10.5d
+			y: 9.0d
+			description: ["{chapter.1.quest.45.description.1}"]
+			dependencies: ["2CE5BB6A7B30CA4C"]
+			optional: true
+			id: "3522109BABC7E48B"
+			tasks: [{
+				id: "34A0BAA9C0AE7A74"
+				type: "item"
+				item: "cookingforblockheads:white_kitchen_floor"
+			}]
+			rewards: [{
+				id: "3E69ED9AD85027DE"
+				type: "item"
+				item: "chipped:white_concrete_1"
+				count: 10
+			}]
+		}
+		{
+			title: "{chapter.1.quest.46.title}"
+			x: -10.5d
+			y: 8.0d
+			subtitle: "{chapter.1.quest.46.subtitle}"
+			dependencies: ["3522109BABC7E48B"]
+			optional: true
+			id: "337723130C80CD91"
+			tasks: [
+				{
+					id: "7D33C5F208328B37"
+					type: "item"
+					item: "cookingforblockheads:oven"
+				}
+				{
+					id: "5E02F460E91CA16F"
+					type: "item"
+					item: "cookingforblockheads:fridge"
+				}
+				{
+					id: "01F817CDA1FD1EB1"
+					type: "item"
+					item: "cookingforblockheads:cooking_table"
+				}
+			]
+		}
+		{
+			x: -9.5d
+			y: 8.0d
+			subtitle: "{chapter.1.quest.47.subtitle}"
+			dependencies: ["3522109BABC7E48B"]
+			optional: true
+			id: "18BA6A99120CF00D"
+			tasks: [
+				{
+					id: "46DDBA57E0E31ED4"
+					type: "item"
+					item: "cookingforblockheads:counter"
+				}
+				{
+					id: "5DAAA626786D2781"
+					type: "item"
+					item: "cookingforblockheads:sink"
+				}
+			]
+		}
+		{
+			title: "{chapter.1.quest.48.title}"
+			x: -11.5d
+			y: 8.0d
+			subtitle: "{chapter.1.quest.48.subtitle}"
+			dependencies: ["3522109BABC7E48B"]
+			optional: true
+			id: "3BACB90B72AE7623"
+			tasks: [
+				{
+					id: "5E8E12E883FDC595"
+					type: "item"
+					item: "cookingforblockheads:tool_rack"
+				}
+				{
+					id: "5AB7422E73C26E76"
+					type: "item"
+					item: "cookingforblockheads:spice_rack"
+				}
+				{
+					id: "591F6C488FB3F775"
+					type: "item"
+					item: "cookingforblockheads:fruit_basket"
+				}
+				{
+					id: "3D63E7309CEE69AA"
+					type: "item"
+					item: "cookingforblockheads:milk_jar"
+				}
+				{
+					id: "6372A49D46ED573E"
+					type: "item"
+					item: "cookingforblockheads:toaster"
+				}
+			]
+			rewards: [{
+				id: "2727129F435DDB21"
+				type: "item"
+				item: {
+					id: "minecraft:bread"
+					Count: 1b
+					tag: {
+						CookingForBlockheadsToasted: 1b
+						display: {
+							Name: "{\"translate\":\"tooltip.cookingforblockheads:toasted\",\"with\":[{\"translate\":\"item.minecraft.bread\"}]}"
+						}
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			title: "{chapter.1.quest.49.title}"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "chipped:textures/block/stripped_dark_oak_log/stripped_dark_oak_log_16.png"
+				}
+			}
+			x: -2.0d
+			y: 15.0d
+			shape: "diamond"
+			subtitle: "{chapter.1.quest.49.subtitle}"
+			hide_dependency_lines: true
+			dependencies: ["0BCED0F8481E0C21"]
+			size: 1.5d
+			optional: true
+			id: "30671A15990F39D8"
+			tasks: [{
+				id: "0156EF5B8B50BDB8"
+				type: "checkmark"
+				title: "{chapter.1.quest.49.task.1.title}"
+			}]
+		}
+		{
+			x: -8.5d
+			y: 16.0d
+			subtitle: "{chapter.1.quest.50.subtitle}"
+			dependencies: ["05E45A7D1C9927E5"]
+			optional: true
+			id: "7D768E5AA9EA358C"
+			tasks: [
+				{
+					id: "070C4B0598E4F104"
+					type: "item"
+					item: "drinkbeer:empty_beer_mug"
+				}
+				{
+					id: "479FFE3123D77A5A"
+					type: "item"
+					item: "minecraft:wheat"
+					count: 3L
+				}
+				{
+					id: "4D9FB657EA74050E"
+					type: "item"
+					item: "minecraft:water_bucket"
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: 16.5d
+			subtitle: "{chapter.1.quest.51.subtitle}"
+			dependencies: ["7D768E5AA9EA358C"]
+			optional: true
+			id: "52832D8DA239C017"
+			tasks: [{
+				id: "67BF890594998248"
+				type: "item"
+				item: "drinkbeer:beer_mug"
+			}]
+			rewards: [{
+				id: "004A64084DE31C6B"
+				type: "item"
+				item: "drinkbeer:empty_beer_mug"
+				count: 5
+			}]
+		}
+		{
+			x: -6.5d
+			y: 17.0d
+			subtitle: "{chapter.1.quest.52.subtitle}"
+			dependencies: ["52832D8DA239C017"]
+			optional: true
+			id: "154EF80FC9B8F0B0"
+			tasks: [{
+				id: "145A72A4C427E775"
+				type: "item"
+				item: "drinkbeer:bartending_table_normal"
+			}]
+			rewards: [{
+				id: "3093A76BEC813CA5"
+				type: "item"
+				item: "farmersdelight:hot_cocoa"
+			}]
+		}
+		{
+			x: -11.5d
+			y: 9.0d
+			subtitle: "{chapter.1.quest.53.subtitle}"
+			dependencies: ["3522109BABC7E48B"]
+			optional: true
+			id: "152FF1A843FFDDB5"
+			tasks: [
+				{
+					id: "17B4104F33DAE09C"
+					type: "item"
+					item: "cookingforblockheads:recipe_book"
+				}
+				{
+					id: "44ABB2A96EF3BC1D"
+					type: "item"
+					item: "cookingforblockheads:no_filter_edition"
+				}
+			]
+			rewards: [{
+				id: "424A77A5F66DAD47"
+				type: "item"
+				item: "minecraft:cooked_beef"
+			}]
+		}
+		{
+			title: "{chapter.1.quest.54.title}"
+			icon: "minecraft:barrel"
+			x: 0.5d
+			y: 9.0d
+			subtitle: "{chapter.1.quest.54.subtitle}"
+			description: ["{chapter.1.quest.54.description.1}"]
+			dependencies: ["601A619C6E96920A"]
+			id: "6433AD83545428C3"
+			tasks: [{
+				id: "162E460403877286"
+				type: "checkmark"
+				title: "{chapter.1.quest.54.task.1.title}"
+			}]
+		}
+		{
+			title: "{chapter.1.quest.55.title}"
+			x: 3.0d
+			y: 8.0d
+			subtitle: "{chapter.1.quest.55.subtitle}"
+			description: ["{chapter.1.quest.55.description.1}"]
+			dependencies: ["5D69FB71CD8A1391"]
+			id: "36A1589C564732B1"
+			tasks: [{
+				id: "56447C1ED629FE47"
+				type: "item"
+				title: "{chapter.1.quest.55.task.1.title}"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "packages:banned_from_package_maker"
+					}
+				}
+			}]
+			rewards: [{
+				id: "6330A382A9654992"
+				type: "item"
+				item: {
+					id: "packages:package"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							PackageContents: {
+								realCount: 0
+							}
+							PackageStyle: {
+								frame: "minecraft:oak_log"
+								inner: "minecraft:oak_planks"
+								color: 0
+							}
+						}
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "{chapter.1.quest.56.title}"
+			icon: "vinery:old_cherry_sapling"
+			x: -6.0d
+			y: 18.5d
+			subtitle: "{chapter.1.quest.56.subtitle}"
+			description: ["{chapter.1.quest.56.description.1}"]
+			hide_dependency_lines: true
+			dependencies: ["0BCED0F8481E0C21"]
+			id: "165C3C3DF1B9B4A3"
+			tasks: [{
+				id: "0B0B28657F7C6931"
+				type: "item"
+				item: "vinery:fermentation_barrel"
+			}]
+			rewards: [
+				{
+					id: "28323BFEABB17884"
+					type: "item"
+					item: "vinery:red_grape_seeds"
+				}
+				{
+					id: "75F06EEAB86BDAB7"
+					type: "item"
+					item: "vinery:white_grape_seeds"
+				}
+				{
+					id: "5B9905DBF04FDAF2"
+					type: "item"
+					item: "vinery:cherry_sapling"
+				}
+			]
+		}
+		{
+			title: "{chapter.1.quest.57.title}"
+			x: -5.0d
+			y: 20.0d
+			subtitle: "{chapter.1.quest.57.subtitle}"
+			description: ["{chapter.1.quest.57.description.1}"]
+			dependencies: ["4B565923D33B2CB8"]
+			id: "1D8FB0253FF41716"
+			tasks: [{
+				id: "47820AF8B45F9AEE"
+				type: "item"
+				item: {
+					id: "vinery:apple_juice"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "5136D615F0B99ABE"
+					type: "item"
+					item: "vinery:chair"
+				}
+				{
+					id: "06F6AB6335CF891E"
+					type: "item"
+					item: "vinery:table"
+					count: 8
+				}
+			]
+		}
+		{
+			title: "{chapter.1.quest.58.title}"
+			x: -3.5d
+			y: 18.0d
+			subtitle: "{chapter.1.quest.58.subtitle}"
+			description: ["{chapter.1.quest.58.description.1}"]
+			dependencies: ["6BECCB7FA4132517"]
+			id: "529CAD4508F33471"
+			tasks: [{
+				id: "0914332FB936AF32"
+				type: "item"
+				item: {
+					id: "vinery:red_grapejuice_wine_bottle"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "1097AB4611D7E57D"
+				type: "item"
+				item: "vinery:wine_box"
+			}]
+		}
+		{
+			title: "{chapter.1.quest.59.title}"
+			x: -3.5d
+			y: 19.0d
+			subtitle: "{chapter.1.quest.59.subtitle}"
+			description: ["{chapter.1.quest.59.description.1}"]
+			dependencies: ["6BECCB7FA4132517"]
+			id: "66AF3CCC6B74CC09"
+			tasks: [{
+				id: "297B32716629650B"
+				type: "item"
+				item: {
+					id: "vinery:white_grapejuice_wine_bottle"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "75E5A6B7988A3D1A"
+				type: "item"
+				item: "vinery:wine_rack_2"
+			}]
+		}
+		{
+			title: "{chapter.1.quest.60.title}"
+			x: -6.5d
+			y: 19.5d
+			subtitle: "{chapter.1.quest.60.subtitle}"
+			description: ["{chapter.1.quest.60.description.1}"]
+			dependencies: ["165C3C3DF1B9B4A3"]
+			id: "4B565923D33B2CB8"
+			tasks: [{
+				id: "46966651EFC64C4E"
+				type: "item"
+				item: "vinery:wine_press"
+			}]
+			rewards: [{
+				id: "1B24564A722FFBEC"
+				type: "item"
+				item: "vinery:apple_mash"
+			}]
+		}
+		{
+			title: "{chapter.1.quest.61.title}"
+			icon: "vinery:red_grape"
+			x: -5.0d
+			y: 18.5d
+			subtitle: "{chapter.1.quest.61.subtitle}"
+			dependencies: ["165C3C3DF1B9B4A3"]
+			id: "6BECCB7FA4132517"
+			tasks: [{
+				id: "4750F1C7CA412A27"
+				type: "item"
+				item: "vinery:grapevine_pot"
+			}]
+		}
+		{
+			title: "{chapter.1.quest.62.title}"
+			x: -8.5d
+			y: 8.5d
+			subtitle: "{chapter.1.quest.62.subtitle}"
+			dependencies: ["2CE5BB6A7B30CA4C"]
+			id: "4D65B95D552D92BA"
+			tasks: [
+				{
+					id: "5051275100D1E1F0"
+					type: "item"
+					item: "vinery:wood_fired_oven"
+				}
+				{
+					id: "7CD55BBD425B31A4"
+					type: "item"
+					item: "vinery:stove"
+				}
+				{
+					id: "5D50E36D0CF39183"
+					type: "item"
+					item: "vinery:kitchen_sink"
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}
