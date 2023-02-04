@@ -618,51 +618,9 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables. ').gold(),]),
-      text.add(2, [Text.of('Press (V) to toggle mining with weapons.').white(),])
+      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables. ').gold(),])
       
     }
-  })
-  e.addAdvanced('tconstruct:mattock', (item, advanced, text) => {
-    if (!e.isShift()) {
-      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-    }
-    if (e.isShift()) {
-
-      text.add(1, [Text.of('Press (V) to toggle mining with weapons.').white(),])
-      
-    }
-  })
-  e.addAdvanced('tconstruct:hammer', (item, advanced, text) => {
-    if (!e.isShift()) {
-      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-    }
-    if (e.isShift()) {
-
-      text.add(1, [Text.of('Press (V) to toggle mining with weapons.').white(),])
-      
-    }
-  })
-  e.addAdvanced('tconstruct:hand_axe', (item, advanced, text) => {
-    if (!e.isShift()) {
-      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-    }
-    if (e.isShift()) {
-
-      text.add(1, [Text.of('Press (V) to toggle mining with weapons.').white(),])
-      
-    }
-  })
-  e.addAdvanced('tconstruct:broad_axe', (item, advanced, text) => {
-    if (!e.isShift()) {
-      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-    }
-    if (e.isShift()) {
-
-      text.add(1, [Text.of('Press (V) to toggle mining with weapons.').white(),])
-      
-    }
-  })
   e.addAdvanced('createastral:brass_shovel', (item, advanced, text) => {
     if (!e.isShift()) {
       text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
@@ -759,8 +717,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Easy to craft and requires little processing.').gold(),]),
-      text.add(2, [Text.of('Press (V) to toggle mining with weapons.').white(),])
+      text.add(1, [Text.of('Easy to craft and requires little processing.').gold(),])
       
     }
   })
@@ -830,8 +787,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Reliable, will require a mechanical press to produce.').gold(),]),
-      text.add(2, [Text.of('Press (V) to toggle mining with weapons.').white(),])
+      text.add(1, [Text.of('Reliable, will require a mechanical press to produce.').gold(),])
       
     }
   })
@@ -841,8 +797,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Reliable, will require a mechanical press to produce.').gold(),]),
-      text.add(2, [Text.of('Press (V) to toggle mining with weapons.').white(),])
+      text.add(1, [Text.of('Reliable, will require a mechanical press to produce.').gold(),])
       
     }
   })
@@ -852,8 +807,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Reliable, will require a mechanical press to produce.').gold(),]),
-      text.add(2, [Text.of('Press (V) to toggle mining with weapons.').white(),])
+      text.add(1, [Text.of('Reliable, will require a mechanical press to produce.').gold(),])
       
     }
   })
@@ -863,8 +817,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Reliable, will require a mechanical press to produce.').gold(),]),
-      text.add(2, [Text.of('Press (V) to toggle mining with weapons.').white(),])
+      text.add(1, [Text.of('Reliable, will require a mechanical press to produce.').gold(),])
       
     }
   })
@@ -874,8 +827,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Reliable, will require a mechanical press to produce.').gold(),]),
-      text.add(2, [Text.of('Press (V) to toggle mining with weapons.').white(),])
+      text.add(1, [Text.of('Reliable, will require a mechanical press to produce.').gold(),])
       
     }
   })
@@ -885,8 +837,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Reliable, will require a mechanical press to produce.').gold(),]),
-      text.add(2, [Text.of('Press (V) to toggle mining with weapons.').white(),])
+      text.add(1, [Text.of('Reliable, will require a mechanical press to produce.').gold(),])
       
     }
   })
@@ -920,26 +871,6 @@ onEvent('item.tooltip', e => {
       
     }
   })
-  e.addAdvanced('ad_astra:solar_panel', (item, advanced, text) => {
-    if (!e.isShift()) {
-      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-    }
-    if (e.isShift()) {
-      
-      text.add(1, [Text.of('Disabled. Alternator produces electricity.').gold(),])
-      
-    }
-  })
-  e.addAdvanced('ad_astra:coal_generator', (item, advanced, text) => {
-    if (!e.isShift()) {
-      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-    }
-    if (e.isShift()) {
-      
-      text.add(1, [Text.of('Disabled. Alternator produces electricity.').gold(),])
-      
-    }
-  })
   e.addAdvanced('minecraft:rotten_flesh', (item, advanced, text) => {
     if (!e.isShift()) {
       text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
@@ -960,26 +891,6 @@ onEvent('item.tooltip', e => {
       
     }
   })
-  e.addAdvanced('campanion:hiking_pack', (item, advanced, text) => {
-    if (!e.isShift()) {
-      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-    }
-    if (e.isShift()) {
-      
-      text.add(1, [Text.of('Equip in chest slot. Items will drop upon unequipping!').gold(),])
-      
-    }
-  })
-  e.addAdvanced('bosses_of_mass_destruction:monolith_block', (item, advanced, text) => {
-    if (!e.isShift()) {
-      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-    }
-    if (e.isShift()) {
-      
-      text.add(1, [Text.of('Contains immense amounts of potential energy... (Drop from the Obsidian Monolith)').gold(),])
-      
-    }
-  })
   e.addAdvanced('createastral:orcane', (item, advanced, text) => {
     if (!e.isShift()) {
       text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
@@ -989,46 +900,6 @@ onEvent('item.tooltip', e => {
 	text.add(1, [Text.of('If you are new to create, use pondering or online guides. The pack is almost exclusively centered around it and Tech Reborn. The quest book has some items which gives a general idea of what has changed / what is included, in an order of when to take note of them, however the pack can be played without following it exactly, so do what you enjoy.').gold(),])
 	text.add(2, [Text.of('A major change you *might* want to be aware of. The nether does not exist. Do not even try to make the portal as it will not function. All nether related items are distributed throughout the pack (mostly planets)').white(),])
 
-    }
-  })
-  e.addAdvanced('createastral:radiant_chestplate', (item, advanced, text) => {
-    if (!e.isShift()) {
-      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-    }
-    if (e.isShift()) {
-      
-      text.add(1, [Text.of('Set Bonus: Res (I) Jump Boost (I) Haste (I); Highly Enchantable ').gold(),])
-      
-    }
-  })
-  e.addAdvanced('createastral:radiant_boots', (item, advanced, text) => {
-    if (!e.isShift()) {
-      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-    }
-    if (e.isShift()) {
-      
-      text.add(1, [Text.of('Set Bonus: Res (I) Jump Boost (I) Haste (I); Highly Enchantable ').gold(),])
-      
-    }
-  })
-  e.addAdvanced('createastral:radiant_helmet', (item, advanced, text) => {
-    if (!e.isShift()) {
-      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-    }
-    if (e.isShift()) {
-      
-      text.add(1, [Text.of('Set Bonus: Res (I) Jump Boost (I) Haste (I); Highly Enchantable ').gold(),])
-      
-    }
-  })
-  e.addAdvanced('createastral:radiant_leggings', (item, advanced, text) => {
-    if (!e.isShift()) {
-      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
-    }
-    if (e.isShift()) {
-      
-      text.add(1, [Text.of('Set Bonus: Res (I) Jump Boost (I) Haste (I); Highly Enchantable ').gold(),])
-      
     }
   })
 
@@ -1114,6 +985,7 @@ onEvent('item.tooltip', e => {
     }
   })
 })
+})
   
 
 
@@ -1194,6 +1066,29 @@ onEvent('worldgen.add', event => {
 	})
 
 
+  event.addOre((ore) => {
+		ore.id = "kubejs:basalt" // optional
+		ore.biomes = ['ad_astra:lunar_wastelands', 'minecraft:basalt_deltas', 'incendium:toxic_heap']
+		ore.addTarget('#ad_astra:moon_ore_replaceables', 'create:scoria')
+
+
+		ore.count([1, 2])
+			.squared()
+			.triangleHeight(60, 110)
+    ore.size = 60
+	})
+
+  event.addOre((ore) => {
+		ore.id = "kubejs:skystoneae2" // optional
+		ore.biomes = ['ad_astra:lunar_wastelands', 'minecraft:basalt_deltas', 'incendium:toxic_heap']
+		ore.addTarget('#ad_astra:moon_ore_replaceables', 'ae2:sky_stone_block')
+
+
+		ore.count([1, 2])
+			.squared()
+			.triangleHeight(60, 110)
+    ore.size = 60
+	})
 
 
   ///MARS
@@ -1292,22 +1187,4 @@ onEvent('worldgen.add', event => {
 			.squared()
 			.triangleHeight(0, 85)
 	})
-
-  event.addOre((ore) => {
-		ore.id = "kubejs:basalt" // optional
-		ore.biomes = ['ad_astra:lunar_wastelands', 'minecraft:basalt_deltas', 'incendium:toxic_heap']
-		ore.addTarget('#ad_astra:moon_ore_replaceables', 'create:scoria')
-
-
-		ore.count([1, 2])
-			.squared()
-			.triangleHeight(60, 110)
-    ore.size = 60
-	})
-
- 
-  
 })
-  
-
-////END SCRIPT
