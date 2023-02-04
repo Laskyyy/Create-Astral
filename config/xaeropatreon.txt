@@ -1,1 +1,1 @@
-showCapes:true
+showCapes:false
