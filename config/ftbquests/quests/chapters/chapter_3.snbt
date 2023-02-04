@@ -275,7 +275,7 @@
 				id: "6EB0DD4B64ED4C64"
 				type: "item"
 				item: {
-					id: "structures_compass:structures_compass"
+					id: "explorerscompass:explorerscompass"
 					Count: 1b
 					tag: { }
 				}
