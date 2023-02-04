@@ -1,0 +1,24 @@
+{
+  "name": "astralrails:paths/start_paths",
+  "fallback": "minecraft:empty",
+  "elements": [
+		{
+      "weight": 3,
+      "element": {
+        "location": "astralrails:moon/moon_ruin_1",
+        "processors": "astralrails:moon_debris/moon_ruin_texture",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 3,
+      "element": {
+        "location": "astralrails:moon/moon_ruin_2",
+        "processors": "astralrails:moon_debris/moon_ruin_texture",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}
