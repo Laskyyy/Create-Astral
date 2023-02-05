@@ -964,7 +964,7 @@
 				""
 				"Middle Layer: Copper Coils = Outside of multiblock in a 3x3 formation, but with the CENTRE HOLLOW."
 				""
-				"Top Layer: Copper Plating = 3x3 to roof to top layer."
+				"Top Layer: Copper Casing = 3x3 to roof to top layer."
 			]
 			hide_dependency_lines: true
 			dependencies: ["32B9EAE28E1C5D7A"]
