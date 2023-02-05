@@ -369,72 +369,8 @@ file = "config/ftbquests/chapter_groups.snbt"
 hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
 
 [[files]]
-file = "config/ftbquests/chapters/6_raow.snbt"
-hash = "76972bf39f412666b2117c3b8f67a4efd9ae772e2e049d27572a5d0be85d7060"
-
-[[files]]
-file = "config/ftbquests/chapters/assorted_goals.snbt"
-hash = "473f8f82aa81f88c0364f623b92b92c8f820d4606e67b88ad4e0f0d121499247"
-
-[[files]]
-file = "config/ftbquests/chapters/astral_storage.snbt"
-hash = "01809aee2ba28e61543e14214ac07f3cc7b8af73190f8936e4ef3a56a7416d27"
-
-[[files]]
-file = "config/ftbquests/chapters/chapter_2.snbt"
-hash = "9853008818e877c58ab89093a0d26300850f63d10b0c50ea8141902c79e44fff"
-
-[[files]]
-file = "config/ftbquests/chapters/chapter_25_the_automation_matrix.snbt"
-hash = "7e33d51138d47c03739ae9d747bc9cb9f68ecac50b8642bdd74dabb8d60542e6"
-
-[[files]]
-file = "config/ftbquests/chapters/chapter_3.snbt"
-hash = "cc5753d0b42f3e18e91c63cdf538784be8b1da0f28ab774b5115049833a14453"
-
-[[files]]
-file = "config/ftbquests/chapters/chapter_4.snbt"
-hash = "edea10cc1264da9631b7fd7852176ccd945417e3ca8e8842ac983986bfa2a1cd"
-
-[[files]]
-file = "config/ftbquests/chapters/chapter_5.snbt"
-hash = "1517a3b368fba825ac2b282e2beba775b286c1302655554b4d8d88abd61d539e"
-
-[[files]]
 file = "config/ftbquests/data.snbt"
 hash = "627d686629ce6c949746482c9d4402fd29da8dfd5214c85b5886336b7925c4b1"
-
-[[files]]
-file = "config/ftbquests/quests/Untranslated Chapters/6_raow.snbt"
-hash = "beefb2ef77ac3ad3c488b957d34fe8fdb72b79c24fcbb992b6722369619a6229"
-
-[[files]]
-file = "config/ftbquests/quests/Untranslated Chapters/assorted_goals.snbt"
-hash = "533c0a55dc1e7d38255c790aa31bfb62c5eed4176650a1293a3d5653687284d1"
-
-[[files]]
-file = "config/ftbquests/quests/Untranslated Chapters/astral_storage.snbt"
-hash = "c54f0565716cda952bd0a0a73e66ae6e8e8e4fb419df3c8dbd2f2c173b59b10a"
-
-[[files]]
-file = "config/ftbquests/quests/Untranslated Chapters/chapter_2.snbt"
-hash = "7a3ee24e51a2d9aefa4c1565b8bd758a86f85dd11d4e02004e6992b01406f555"
-
-[[files]]
-file = "config/ftbquests/quests/Untranslated Chapters/chapter_25_the_automation_matrix.snbt"
-hash = "1ffffcb8771e49427d72938b28d1c157e37a70adb73b14c03492ebbae573f480"
-
-[[files]]
-file = "config/ftbquests/quests/Untranslated Chapters/chapter_3.snbt"
-hash = "7c238541c9ecfb4d7056353f23f288d32c5dbb27faaabdefcf3d3e9e3116ce20"
-
-[[files]]
-file = "config/ftbquests/quests/Untranslated Chapters/chapter_4.snbt"
-hash = "f7eda145cb95798194047b048a8a8e6dfb5bccfb53429061732895be144914c7"
-
-[[files]]
-file = "config/ftbquests/quests/Untranslated Chapters/chapter_5.snbt"
-hash = "12d955fff761e2556d35bb33b4fbb6269f4f14efcb7da44bd22cf04e5d68e5bb"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
@@ -442,35 +378,35 @@ hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/6_raow.snbt"
-hash = "76972bf39f412666b2117c3b8f67a4efd9ae772e2e049d27572a5d0be85d7060"
+hash = "beefb2ef77ac3ad3c488b957d34fe8fdb72b79c24fcbb992b6722369619a6229"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/assorted_goals.snbt"
-hash = "c9b6e091d102dcc51770571fb39a3f66bc6f9e44e62983f29c193789e64744a4"
+hash = "533c0a55dc1e7d38255c790aa31bfb62c5eed4176650a1293a3d5653687284d1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/astral_storage.snbt"
-hash = "06db1dec5c1e1f17e2b709739c69143060b523c7093cece593d92fc4f76875b7"
+hash = "c54f0565716cda952bd0a0a73e66ae6e8e8e4fb419df3c8dbd2f2c173b59b10a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_2.snbt"
-hash = "71136ccca1fb5e5cbc7e4481930fc8c0f7b9b6f86aed33ad1435beafa4cb0e88"
+hash = "7a3ee24e51a2d9aefa4c1565b8bd758a86f85dd11d4e02004e6992b01406f555"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_25_the_automation_matrix.snbt"
-hash = "1f144fa4041c5e4067d7679b0d2da653f8ce0ed14c8c414ee370bf0b481a6113"
+hash = "1ffffcb8771e49427d72938b28d1c157e37a70adb73b14c03492ebbae573f480"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_3.snbt"
-hash = "ff8148e6921290fbe8f385d4eee5ec1656f37c0fdd7ee31404c1d65896c6d750"
+hash = "7c238541c9ecfb4d7056353f23f288d32c5dbb27faaabdefcf3d3e9e3116ce20"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_4.snbt"
-hash = "e3374e979ecbd91ca2491d5575409344e75f6ab8c4e2a92b416179bd19d57ac4"
+hash = "f7eda145cb95798194047b048a8a8e6dfb5bccfb53429061732895be144914c7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_5.snbt"
-hash = "1517a3b368fba825ac2b282e2beba775b286c1302655554b4d8d88abd61d539e"
+hash = "12d955fff761e2556d35bb33b4fbb6269f4f14efcb7da44bd22cf04e5d68e5bb"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
