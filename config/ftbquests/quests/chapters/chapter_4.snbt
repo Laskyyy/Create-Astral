@@ -488,33 +488,22 @@
 		}
 		{
 			title: "{chapter.5.quest.17.title}"
+			icon: "techreborn:deepslate_silver_ore"
 			x: -18.5d
 			y: -3.5d
 			subtitle: "{chapter.5.quest.17.subtitle}"
 			description: ["{chapter.5.quest.17.description.1}"]
 			dependencies: ["306D009F01634115"]
+			dependency_requirement: "one_completed"
 			size: 1.5d
 			min_required_tasks: 1
 			id: "1DFF76A494C9A586"
-			tasks: [
-				{
-					id: "6D9FBDDB83DBA298"
-					type: "questsadditions:break"
-					title: "{chapter.5.quest.17.task.1.title}"
-					block_type: 0
-					block: "techreborn:silver_ore"
-					value: 1L
-					checkItem: false
-				}
-				{
-					id: "0041BCC5356DAB9B"
-					type: "questsadditions:break"
-					block_type: 0
-					block: "techreborn:deepslate_silver_ore"
-					value: 1L
-					checkItem: false
-				}
-			]
+			tasks: [{
+				id: "58A49C6524D4217E"
+				type: "item"
+				item: "techreborn:raw_silver"
+				count: 8L
+			}]
 		}
 		{
 			title: "{chapter.5.quest.18.title}"
@@ -532,6 +521,18 @@
 				item: "ad_astra:desh_nugget"
 				count: 512L
 			}]
+			rewards: [
+				{
+					id: "368A95184CCC6B9A"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "2CB80513EC263D3E"
+					type: "item"
+					item: "ad_astra:desh_sliding_door"
+				}
+			]
 		}
 		{
 			x: -14.5d
@@ -936,20 +937,19 @@
 		}
 		{
 			title: "{chapter.5.quest.36.title}"
+			icon: "ad_astra:moon_desh_ore"
 			x: -23.5d
 			y: -5.5d
 			subtitle: "{chapter.5.quest.36.subtitle}"
 			description: ["{chapter.5.quest.36.description.1}"]
 			dependencies: ["306D009F01634115"]
+			dependency_requirement: "one_completed"
 			id: "59694D713430B333"
 			tasks: [{
-				id: "09CDB7F72120CC02"
-				type: "questsadditions:break"
-				title: "{chapter.5.quest.36.task.1.title}"
-				block_type: 0
-				block: "ad_astra:moon_desh_ore"
-				value: 1L
-				checkItem: false
+				id: "135C9606CF75069A"
+				type: "item"
+				item: "ad_astra:raw_desh"
+				count: 8L
 			}]
 		}
 		{
@@ -1034,6 +1034,11 @@
 				title: "{chapter.5.quest.41.task.1.title}"
 				icon: "chipped:yellow_concrete_19"
 				structure: "incendium:nether_reactor"
+			}]
+			rewards: [{
+				id: "7463814688428D28"
+				type: "item"
+				item: "ad_astra:space_painting"
 			}]
 		}
 		{
@@ -1253,6 +1258,11 @@
 					item: "ad_astra:desh_ingot"
 				}
 			]
+			rewards: [{
+				id: "2907DB37ADDB8AE2"
+				type: "xp"
+				xp: 200
+			}]
 		}
 		{
 			title: "{chapter.5.quest.51.title}"

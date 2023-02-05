@@ -33,7 +33,7 @@
 					id: "6EB2296D77D552F4"
 					type: "item"
 					item: {
-						id: "createastral:copper_chestplate"
+						id: "createastral:copper_helmet"
 						Count: 1b
 						tag: {
 							Damage: 0
@@ -44,7 +44,7 @@
 					id: "2D17C236457E66C2"
 					type: "item"
 					item: {
-						id: "createastral:copper_helmet"
+						id: "createastral:copper_chestplate"
 						Count: 1b
 						tag: {
 							Damage: 0
@@ -135,6 +135,7 @@
 			x: -4.5d
 			y: 11.5d
 			subtitle: "{chapter.1.quest.4.subtitle}"
+			description: ["{chapter.1.quest.4.description.1}"]
 			dependencies: ["75B36BB7FE771333"]
 			id: "29AF19492CFCB2DB"
 			tasks: [{
@@ -288,6 +289,7 @@
 			}]
 		}
 		{
+			title: "{chapter.1.quest.10.title}"
 			x: -1.5d
 			y: 11.5d
 			subtitle: "{chapter.1.quest.10.subtitle}"
@@ -412,11 +414,13 @@
 			}]
 		}
 		{
+			title: "{chapter.1.quest.13.title}"
 			x: -7.8078231292516875d
 			y: 13.244897959183653d
 			shape: "pentagon"
 			subtitle: "{chapter.1.quest.13.subtitle}"
 			description: ["{chapter.1.quest.13.description.1}"]
+			dependency_requirement: "one_completed"
 			size: 2.5d
 			min_required_tasks: 1
 			id: "0BCED0F8481E0C21"
@@ -1348,12 +1352,19 @@
 					item: "techreborn:crude_storage_unit"
 				}
 			]
-			rewards: [{
-				id: "136E8C4D5C4A0054"
-				type: "item"
-				item: "techreborn:crude_storage_unit"
-				count: 4
-			}]
+			rewards: [
+				{
+					id: "136E8C4D5C4A0054"
+					type: "item"
+					item: "techreborn:crude_storage_unit"
+					count: 4
+				}
+				{
+					id: "185D3119BF9DE681"
+					type: "item"
+					item: "techreborn:wrench"
+				}
+			]
 		}
 		{
 			x: -2.0d

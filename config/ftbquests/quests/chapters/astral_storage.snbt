@@ -415,6 +415,12 @@
 				item: "ae2:sky_stone_block"
 				count: 64L
 			}]
+			rewards: [{
+				id: "3A10A6E1DB7FD45E"
+				type: "item"
+				item: "ae2:quartz_glass"
+				count: 32
+			}]
 		}
 	]
 	quest_links: [ ]

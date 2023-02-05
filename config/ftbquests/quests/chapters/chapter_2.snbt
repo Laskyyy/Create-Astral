@@ -839,11 +839,6 @@
 					item: "minecraft:string"
 				}
 				{
-					id: "479C7EA81305E321"
-					type: "item"
-					item: "minecraft:spider_eye"
-				}
-				{
 					id: "7BA81C863A551473"
 					type: "item"
 					item: "minecraft:rotten_flesh"

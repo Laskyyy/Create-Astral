@@ -1710,6 +1710,7 @@
 			x: -24.0d
 			y: -19.0d
 			shape: "pentagon"
+			subtitle: "{chapter.4.quest.103.subtitle}"
 			dependencies: [
 				"306D009F01634115"
 				"38814494AB07C2D8"
