@@ -620,7 +620,9 @@ onEvent('item.tooltip', e => {
       
       text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables. ').gold(),])
       
+      
     }
+  })
   e.addAdvanced('createastral:brass_shovel', (item, advanced, text) => {
     if (!e.isShift()) {
       text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
@@ -985,7 +987,7 @@ onEvent('item.tooltip', e => {
     }
   })
 })
-})
+
   
 
 
