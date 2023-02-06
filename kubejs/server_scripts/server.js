@@ -3108,6 +3108,19 @@ event.recipes.createMixing('tconstruct:seared_bricks', [
     A: 'createastral:bronze_block',
 	})
 
+  event.shaped('ad_astra:steel_block', [
+    'AAA',
+    'AAA',
+    'AAA'
+  ], {
+    A: 'ad_astra:steel_ingot',
+	})
+  event.shaped('9x ad_astra:steel_ingot', [
+    'A'
+  ], {
+    A: 'ad_astra:steel_block',
+	})
+
 	 event.shaped('createastral:copper_plating', [
     'AA',
     'AA'

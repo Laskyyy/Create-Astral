@@ -1,29 +1,34 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "PAP",
-    " S ",
-    "PEP"
+    " P ",
+    "SES",
+    "H_H"
   ],
   "key": {
-    "E": [
-      {
-        "item": "immersive_aircraft:boiler"
-      }
-    ],
-    "A": [
-      {
-        "item": "create:andesite_casing"
-      }
-    ],
     "S": [
       {
-        "item": "minecraft:string"
+        "item": "immersive_aircraft:sail"
+      }
+    ],
+    "H": [
+      {
+        "item": "immersive_aircraft:hull"
       }
     ],
     "P": [
       {
-        "item": "create:propeller"
+        "item": "immersive_aircraft:propeller"
+      }
+    ],
+    "E": [
+      {
+        "item": "create:precision_mechanism"
+      }
+    ],
+    "_": [
+      {
+        "item": "create:red_seat"
       }
     ]
   },
