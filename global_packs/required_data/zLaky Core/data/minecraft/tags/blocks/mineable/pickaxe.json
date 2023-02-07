@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "createaddition:rolling_mill",
+    "createaddition:electric_motor",
+    "createaddition:alternator",
+    "createaddition:accumulator",
+    "createaddition:redstone_relay",
+    "createaddition:tesla_coil",
+    "createaddition:connector"
+  ]
+}
