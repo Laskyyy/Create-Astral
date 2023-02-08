@@ -1524,6 +1524,9 @@ onEvent('recipes', event => {
   event.replaceInput({mod: 'quarrymod'}, 'techreborn:peridot_storage_block', 'createastral:olivine_sheet')
   event.replaceInput({mod: 'quarrymod'}, 'techreborn:titanium_plate', 'ad_astra:compressed_steel')
   event.replaceInput({mod: 'quarrymod'}, 'techreborn:tungstensteel_plate', 'create:shadow_steel')
+  event.replaceInput({output: 'ae2:fluid_cell_housing'}, 'techreborn:silver_plate', 'create:copper_casing')
+
+
 
   	event.recipes.createMechanicalCrafting('techreborn:data_storage_chip', [
   'A',
