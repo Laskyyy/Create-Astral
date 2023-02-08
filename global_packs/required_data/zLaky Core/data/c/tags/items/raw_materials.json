@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "techreborn:raw_tin",
+    "create:crushed_tin_ore",
+    "create:crushed_zinc_ore"
+
+  ]
+}
