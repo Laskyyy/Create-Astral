@@ -2177,49 +2177,11 @@ event.recipes.createMechanicalCrafting('polaroidcamera:camera', [
 
 ///COMPUTERCRAFT FIXES
 
-
-
-event.shaped(Item.of('computercraft:turtle_normal', {RightUpgrade:"minecraft:diamond_pickaxe"}),
-  'BAC',
- {
-  A: 'computercraft:turtle_normal',
-  B: 'minecraft:iron_pickaxe',
-  C: 'minecraft:diamond'
-
-})
-event.shaped(Item.of('computercraft:turtle_normal', {RightUpgrade:"minecraft:diamond_axe"}),
-'BAC',
- {
-  A: 'computercraft:turtle_normal',
-  B: 'minecraft:iron_axe',
-  C: 'minecraft:diamond'
-
-})
-event.shaped(Item.of('computercraft:turtle_normal', {RightUpgrade:"minecraft:diamond_shovel"}),
-'BAC',
- {
-  A: 'computercraft:turtle_normal',
-  B: 'minecraft:iron_shovel',
-  C: 'minecraft:diamond'
-
-})
-event.shaped(Item.of('computercraft:turtle_normal', {RightUpgrade:"minecraft:diamond_sword"}),
-'BAC',
- {
-  A: 'computercraft:turtle_normal',
-  B: 'minecraft:iron_sword',
-  C: 'minecraft:diamond'
-})
-event.shaped(Item.of('computercraft:turtle_normal', {RightUpgrade:"minecraft:diamond_hoe"}),
-'BAC',
- {
-  A: 'computercraft:turtle_normal',
-  B: 'minecraft:iron_hoe',
-  C: 'minecraft:diamond'
-
-})
-
-
+event.shapeless(Item.of('computercraft:turtle_normal', {RightUpgrade:"minecraft:diamond_pickaxe"}), ['computercraft:turtle_normal', 'minecraft:iron_pickaxe', '3x minecraft:diamond']);
+event.shapeless(Item.of('computercraft:turtle_normal', {RightUpgrade:"minecraft:diamond_axe"}), ['computercraft:turtle_normal', 'minecraft:iron_axe', '3x minecraft:diamond']);
+event.shapeless(Item.of('computercraft:turtle_normal', {RightUpgrade:"minecraft:diamond_shovel"}), ['computercraft:turtle_normal', 'minecraft:iron_shovel', 'minecraft:diamond']);
+event.shapeless(Item.of('computercraft:turtle_normal', {RightUpgrade:"minecraft:diamond_sword"}), ['computercraft:turtle_normal', 'minecraft:iron_sword', '2x minecraft:diamond']);
+event.shapeless(Item.of('computercraft:turtle_normal', {RightUpgrade:"minecraft:diamond_hoe"}), ['computercraft:turtle_normal', 'minecraft:iron_hoe', '2x minecraft:diamond']);
 
 
 ///PRESS PLATES WITH CREATE
