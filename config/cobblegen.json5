@@ -77,7 +77,7 @@
     "cobbleGen": {
       "minecraft:bedrock": [
         {
-          "id": "minecraft:stone",
+          "id": "minecraft:cobblestone",
           "weight": 5
         },
         {
@@ -151,24 +151,28 @@
       ]
     },
     "stoneGen": {
-      "minecraft:bedrock": [
+     "minecraft:bedrock": [
         {
           "id": "minecraft:stone",
-          "weight": 100
-        },
-        {
-          "id": "minecraft:diorite",
-          "weight": 3
-        },
-        {
-          "id": "minecraft:andesite",
-          "weight": 3
+          "weight": 5
         },
         {
           "id": "minecraft:granite",
-          "weight": 3
+          "weight": 1
+        },
+        {
+          "id": "minecraft:diorite",
+          "weight": 1
+        },
+        {
+          "id": "minecraft:andesite",
+          "weight": 1
+        },
+        {
+          "id": "minecraft:tuff",
+          "weight: 1
         }
-      ]
+      ],
     },
     "basaltGen": {
       "minecraft:bedrock": [
