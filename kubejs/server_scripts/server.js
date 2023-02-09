@@ -720,7 +720,7 @@ function lizardGeologyAlchemyChanges(event) {
     Item.of('minecraft:raw_copper').withChance(.3)
   ], 'create:veridium');
   event.recipes.createMilling([
-    Item.of('techreborn:raw_tin').withChance(.2)
+    Item.of('techreborn:raw_zinc').withChance(.2)
   ], 'create:asurine');
   event.recipes.createMilling([
     Item.of('minecraft:raw_iron').withChance(.2)

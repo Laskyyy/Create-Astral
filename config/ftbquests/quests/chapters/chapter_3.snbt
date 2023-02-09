@@ -723,7 +723,7 @@
 			]
 		}
 		{
-			title: "Automate Tin!"
+			title: "Automate Zinc!"
 			x: -7.5d
 			y: -1.0d
 			shape: "diamond"
