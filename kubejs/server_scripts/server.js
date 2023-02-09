@@ -1436,6 +1436,7 @@ onEvent('recipes', event => {
   event.replaceInput({mod: 'techreborn'}, 'techreborn:platinum_plate', 'ad_astra:compressed_calorite')
   event.replaceInput({output: 'techreborn:implosion_compressor'}, 'techreborn:advanced_alloy_ingot', 'techreborn:advanced_alloy_plate')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:nickel_ingot', 'ad_astra:compressed_desh')
+  event.replaceInput({mod: 'techreborn'}, 'techreborn:nickel_plate', 'ad_astra:compressed_desh')
 
   event.replaceInput({mod: 'techreborn'}, 'techreborn:brass_plate', 'create:brass_sheet')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:brass_ingot', 'create:brass_ingot')
