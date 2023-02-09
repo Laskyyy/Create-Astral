@@ -3022,7 +3022,7 @@ event.recipes.createSplashing([
 ], 'ad_astra:raw_calorite')
 event.recipes.createHaunting([
   'minecraft:coal',
-], 'minecraft:charcoal')
+], '2x minecraft:charcoal')
 
 
 
