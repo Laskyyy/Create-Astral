@@ -65,7 +65,20 @@
 						"probability": 0.7
 					},
 					"output_state": {
-						"Name": "ad_astra:tuff"
+						"Name": "ad_astra:moon_sand"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "chipped:deepslate_40",
+						"probability": 0.1
+					},
+					"output_state": {
+						"Name": "ad_astra:moon_sand"
 					}
 				},
 				{
