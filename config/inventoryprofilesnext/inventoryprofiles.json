@@ -1,28 +1,63 @@
 {
     "ModSettings": {
-        "highlight_foused_items": false,
-        "enable_profiles": false,
-        "enable_lock_slots": false,
-        "enable_auto_refill": false,
+        "highlight_foused_items": {
+            "value": false
+        },
+        "enable_profiles": {
+            "value": false
+        },
+        "enable_lock_slots": {
+            "value": false
+        },
+        "enable_auto_refill": {
+            "value": false
+        },
         "enable_updates_check": false,
         "for_modpack_devs": true,
         "first_run": false
     },
     "GuiSettings": {
-        "enable_profiles_ui": false,
+        "enable_inventory_editor_button": {
+            "value": false
+        },
+        "enable_profiles_ui": {
+            "value": false
+        },
         "enable_profiles_announcement": false,
-        "enable_inventory_editor_button": false,
-        "treat_unknown_screens_as_containers": false,
-        "continuous_crafting_saved_value": false
+        "continuous_crafting_saved_value": false,
+        "show_regular_sort_button": {
+            "value": false
+        },
+        "show_sort_in_columns_button": {
+            "value": false
+        },
+        "show_sort_in_rows_button": {
+            "value": false
+        },
+        "show_move_all_button": {
+            "value": false
+        }
     },
     "LockedSlotsSettings": {
-        "lock_slots_disable_user_interaction": true,
-        "show_locked_slots_background": false,
-        "show_locked_slots_foreground": false
+        "lock_slots_disable_user_interaction": {
+            "value": true
+        },
+        "show_locked_slots_background": {
+            "value": false
+        },
+        "show_locked_slots_foreground": {
+            "value": false
+        }
     },
     "AutoRefillSettings": {
-        "disable_for_drop_item": true,
-        "visual_durability_notification": false,
-        "audio_durability_notification": false
+        "disable_for_drop_item": {
+            "value": true
+        },
+        "visual_durability_notification": {
+            "value": false
+        },
+        "audio_durability_notification": {
+            "value": false
+        }
     }
 }
