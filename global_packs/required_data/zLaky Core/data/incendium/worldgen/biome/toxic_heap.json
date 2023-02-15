@@ -29,10 +29,12 @@
       "probability": 0.01
     },
     "ambient_sound": "minecraft:ambient.warped_forest.loop",
-    "sky_color": 7254527,
-    "fog_color": 7303732,
+    "sky_color": 0,
+    "fog_color": 1447444,
     "water_color": 4159204,
-    "water_fog_color": 329011
+    "water_fog_color": 329011,
+    "grass_color": 9551193,
+    "foliage_color": 7842607
   },
   "carvers": {
     "air": [

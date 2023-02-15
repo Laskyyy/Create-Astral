@@ -93,10 +93,12 @@
       "max_delay": 24000,
       "replace_current_music": false
     },
-    "fog_color": 6184034,
-    "water_color": 4143428,
-    "water_fog_color": 4341314,
-    "sky_color": 7254527,
+    "sky_color": 0,
+    "fog_color": 1447444,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "grass_color": 9551193,
+    "foliage_color": 7842607,
     "particle": {
       "options": {
         "type": "minecraft:ash"
