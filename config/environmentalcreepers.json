@@ -37,7 +37,7 @@
     "_comment_disableOtherExplosionBlockDamage": "Completely disable other explosions than Creepers from damaging blocks",
     "disableOtherExplosionBlockDamage": false,
     "_comment_disableOtherExplosionEntityDamage": "Disable other explosions than Creepers from damaging any entities (including items)",
-    "disableOtherExplosionEntityDamage": true,
+    "disableOtherExplosionEntityDamage": false,
     "_comment_disableOtherExplosionItemDamage": "Disable other explosions than Creepers from damaging items on the ground",
     "disableOtherExplosionItemDamage": false,
     "_comment_creeperAltitudeCondition": "Enable setting a y range for Creepers to do block damage. Set the range in Generic -\u003e \u0027creeperAltitudeDamageMaxY\u0027 and \u0027creeperAltitudeDamageMinY\u0027.",
