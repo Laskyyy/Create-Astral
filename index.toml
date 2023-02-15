@@ -154,7 +154,7 @@ hash = "4018a74ee6804eaa305e64d7568d8390ef10ed726c39af4837b9d31647dc102e"
 
 [[files]]
 file = "config/createaddition-common.toml"
-hash = "bb7b92ecf072c155c20d910d832df72a0d50c94f507f7c0be701672113e9f4f6"
+hash = "8cb6b9e9f81f7b885c3be1e786d4ce09c18fd0b692f463fff5fe59cb6cbe080f"
 
 [[files]]
 file = "config/createdeco-client.toml"
@@ -398,7 +398,7 @@ hash = "1ffffcb8771e49427d72938b28d1c157e37a70adb73b14c03492ebbae573f480"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_3.snbt"
-hash = "7c238541c9ecfb4d7056353f23f288d32c5dbb27faaabdefcf3d3e9e3116ce20"
+hash = "ca8ef73a04efbf118991c9b080cd7ee086226b281a33d784d09178f4718f1afd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_4.snbt"
@@ -470,7 +470,7 @@ hash = "db4a3733dec056d3efe71885fa6344f703a887105da3e94a9da5d4966bff70c8"
 
 [[files]]
 file = "config/inventoryprofilesnext/inventoryprofiles.json"
-hash = "298463c670f660c6f7dae94ba9cb5fe814e79109002abda138c223c67e579d14"
+hash = "5fad73734bb5c7efafe1cacd896bd865a53c6b3f06dec0dff0f00fd2f1be2791"
 
 [[files]]
 file = "config/invmove.json"
@@ -726,7 +726,7 @@ hash = "a8910270021d41bf623623fb410417534042029ff906b97ca426be918bf09805"
 
 [[files]]
 file = "config/sodium-extra-options.json"
-hash = "08933666cf764ccc5a740a94b24dcfe3f485307155ce54146740cb7813389a04"
+hash = "6c6fc8f46730e1e4ae25099713ce047f1c2253fc167a99901545f8c0a343f3f2"
 
 [[files]]
 file = "config/sodium-extra.properties"
@@ -842,7 +842,7 @@ hash = "15f61c8e5daaa2a5a73efbca00c5927ea15ea974323a8a22c242557f4f286a6f"
 
 [[files]]
 file = "config/xaerominimap.txt"
-hash = "f6d4a1b7bba78953a9e9291220c62d205390b3754a233745b213dd0cff2b5394"
+hash = "6080fe288b541be29fd5034e0d27234dbd6cb8421699b79ac1c26cc4e5beced4"
 
 [[files]]
 file = "config/xaerominimap_entities.json"
@@ -1394,15 +1394,15 @@ hash = "eefc2cc05599e3ed2050e010327b1d999d0903d2d946ae0c5741a14835d224b8"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/structures/shimmer_lakes/shimmer_lake_1.nbt"
-hash = "41f0bcb777af2fa2d6f793a4e7646bd867fd3a32d9ee4a7a76f9cea7a4fa42a3"
+hash = "dae320344dd1e1f37b71aab3a081eaf34490ac9e52531935d1e20be4570bd354"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/structures/shimmer_lakes/shimmer_lake_2.nbt"
-hash = "f12fd40b30ac72163e60bf489a4d124cd06bdec00a71ffbde0138bde5c808255"
+hash = "fdef3de6252474f4d581eb3d9032633ea5631404c95daea8dd0ad6226a1cb953"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/structures/shimmer_lakes/shimmer_lake_3.nbt"
-hash = "5b239d244af5a07069c6072ef378d1472e0d9c26c273de109df29503899e7ac9"
+hash = "2e088ae2ecfb6065d95c2808c4bea11d45a0b083d975142a657b7a683d275689"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/structures/shimmer_lakes/shimmer_lake_depth.nbt"
@@ -1414,7 +1414,7 @@ hash = "eee5fa517faa0d192e6bb99f4c83a426f93458db1dd22480233fa67c8c37d94c"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/structures/shimmer_lakes/shimmer_lake_lake_add_2.nbt"
-hash = "fd7432331cdfdfaa2b41b6ee9f44418abd62f1555e0f71cf7c70a4e39c5bcd1e"
+hash = "ad80c679e7a0a0d09e6b5186fbdae257844323f90fac6c57526999cc5eb599c2"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/structures/shimmer_lakes/shimmer_lake_lake_add_3.nbt"
@@ -1422,7 +1422,7 @@ hash = "c399dafe10feac49095672634378b657c7e2580952db48654296db38854f7a8f"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/structures/shimmer_lakes/shimmer_lake_lake_add_4.nbt"
-hash = "9a1114249ddc864a0abebba3a52acafbee01509b2157ff2ce4f396252cf37c29"
+hash = "61ac6fc5d12ccdb5fe89f095c717e8e73fb78fb1f76855511e9fe1a5e2a58c43"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/structures/shimmer_lakes/shimmer_lake_start.nbt"
@@ -1722,7 +1722,7 @@ hash = "42fad196cf6e762b486d80e48aacbdfd1ddb19ccbb456f571936d610ef79cf03"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/processor_list/shimmer_lakes/main.json"
-hash = "2205d6dc0df7f0c7aa78396b0e6f1a3268a3b9c2acc5aaabe82216cbd45f0298"
+hash = "1e82e45252daa16d622d090f39bd814c4e4c8b189c7c0c4d13aaf2d9636278b8"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/structure_set/a_moon_statue.json"
@@ -2238,11 +2238,11 @@ hash = "a706ba7989a97b7059ce51e2b0dd1fa08762adc02cf72f49383f68dd20534e6f"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/tags/fluids/efficient_fuels.json"
-hash = "1ba84e1a7eee8368422e0e663a545d6cfc01db47cf4ba045220d3bbb1329bcd8"
+hash = "6edce6ed3e7267c6a81037b3b84509b20c9a16c0c8f1336ebd5caaffce4343f4"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/tags/fluids/fuels.json"
-hash = "cb3e353ce40734c3eacac41ee94bebbb721a5945eafb15005e4198d6caa2e3cd"
+hash = "2ae6e7c988f3817d82caee8d1b500b5350db4c0293b97b3ac19998fda5f17fa6"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/worldgen/biome/glacio_ice_peaks.json"
@@ -2573,6 +2573,10 @@ file = "global_packs/required_data/zLaky Core/data/c/tags/items/ingots/bronze.js
 hash = "eef07e94e33d665c83f59116760416d09d3cf17816bfff2aa2860d3ad82b00ad"
 
 [[files]]
+file = "global_packs/required_data/zLaky Core/data/c/tags/items/ingots/calorite.json"
+hash = "874e88f2bfb0412340f826e96fcaf1c17d705b295c2dd1b003f572f84a217bf1"
+
+[[files]]
 file = "global_packs/required_data/zLaky Core/data/c/tags/items/ingots/desh.json"
 hash = "c569692d2f81acb679e24dd859f362500077aecf7d595364eb8dc0b381c6260c"
 
@@ -2595,6 +2599,10 @@ hash = "55e5600353f40b33a87ccbc225baf5a057e247d145a2bda04e28395bf0e11b69"
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/c/tags/items/ingots/nickel.json"
 hash = "5b49d22360a29472a20aa841b474d352825dfbc189c9622322dc4a8493b3d860"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/c/tags/items/ingots/ostrum.json"
+hash = "1c982e14b99d0b11d4cdb551573f57720bd616b075313b1794e4fbb9711bcd25"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/c/tags/items/ingots/platinum.json"
@@ -2743,6 +2751,10 @@ hash = "87f49448892bfe11e477116add2a4c2f6da427bf680fc8d90c2ad67fda2b2513"
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/c/tags/items/plates/tungsten.json"
 hash = "5ffe12d44c37ba42ca74306453c35cd74942af00f63e341960a5cd27f083af30"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/c/tags/items/raw_materials.json"
+hash = "f1d37c4443964920e2143350627ad44cf889394e1a7c6dac99e631de7d08ac2b"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/c/tags/items/raw_materials/copper.json"
@@ -3106,15 +3118,15 @@ hash = "4256598ae29e01b374ef7b189e25d5fac5ba814f3edb5d8c5fccb0991b3f80ae"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/create/recipes/crafting/kinetics/fluid_pipe.json"
-hash = "dabc1352e5402fc58fcb1be8d8dc5543090dfcbec7d8e9e2f5402dd671798f38"
+hash = "76ea2935fe0ac4b166f38660d08c706046836eeab9c5e6b37295bd0ee65607db"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/create/recipes/crafting/kinetics/fluid_pipe_vertical.json"
-hash = "b1fd0b3b18ff63c93dd0509e7a48a7cfed1b50044048732dff017de7991fb492"
+hash = "e71b1aa25aed706edaf1fa57470a30451fd38459b6334b3c98646eee9aa431b1"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/create/recipes/crafting/kinetics/fluid_tank.json"
-hash = "fc43923e5bee16f5cb5e8593ccf5ca19ecc9dc313ee607ad73606fbd2655d754"
+hash = "b83c6714406a6be7ce89f5bf26579feedf2e3a0bd94f46c53582bb1bfd1488c1"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/create/recipes/crafting/kinetics/fluid_valve.json"
@@ -3510,7 +3522,7 @@ hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/immersive_aircraft/recipes/gyrodyne.json"
-hash = "3e2f37e284cca1ad6cc8e9c014b947bb47efc76bf059e8575561daf33d4b2144"
+hash = "051dd528092ed0e0ce2b1663b8b459b5f55354f24eb4b1e1492829bb678bac6f"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/immersive_aircraft/recipes/hull.json"
@@ -3522,7 +3534,7 @@ hash = "9c48623b8415c61147758d1f11ece531055ad6d1eedd8c7d42d1f9e4b4f40f30"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/immersive_aircraft/recipes/quadrocopter.json"
-hash = "18c910ad19e8e0ec044ceb9bb6185b2487dd3fe351f3ee1f094d63a170c9431d"
+hash = "b175adb0b02a71e90041d947064acacdb384d59fe65ac544e720f37dec8fb610"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/immersive_aircraft/recipes/sail.json"
@@ -7329,6 +7341,14 @@ file = "global_packs/required_data/zLaky Core/data/minecraft/tags/blocks/logs_th
 hash = "85f6c1788eeef2708c1400d4c60181ce21db20e4b74e4aae27ddc6c9f8972f9c"
 
 [[files]]
+file = "global_packs/required_data/zLaky Core/data/minecraft/tags/blocks/mineable/axe.json"
+hash = "8a6e10bf200e03fbb8bf4c1328aea0e8d51cfb6c759fa168af15c1588545944a"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/minecraft/tags/blocks/mineable/pickaxe.json"
+hash = "b5da3c93a3c2b3c9085db48761cc72de215ad1a8ccf2d419bfde1025627f35bd"
+
+[[files]]
 file = "global_packs/required_data/zLaky Core/data/minecraft/tags/blocks/mushroom_grow_block.json"
 hash = "178a87efcb6d710975aa0fbb9f3c310673dac35d3f25e36f9096f3eea5c2f521"
 
@@ -8649,6 +8669,14 @@ file = "global_packs/required_data/zLaky Core/data/techreborn/recipes/blast_furn
 hash = "eaaf080a93284d204d22713e2ed67d1c7d5b26d2cc700611af7eea0d636714df"
 
 [[files]]
+file = "global_packs/required_data/zLaky Core/data/techreborn/recipes/centrifuge/soul_sand.json"
+hash = "329c11ad30ff5c51084fd809a436cac8d32585e40273f2377a68f4b0b67ff5a3"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/techreborn/recipes/centrifuge/soul_soil.json"
+hash = "83a2b5184cbe274768df35025d1f0ea6f6520f6a49343a43ca4213a3104bc083"
+
+[[files]]
 file = "global_packs/required_data/zLaky Core/data/techreborn/recipes/crafting_table/machine/distillation_tower.json"
 hash = "6124e9955374887a6f531f4f45fb24062c2802711e94cbbeec352376fb7374c9"
 
@@ -8666,11 +8694,11 @@ hash = "b5d986b6cdb7a834323ad4e3c61ebfd13a182cb4c69997669c5ebeede6eba7ad"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/techreborn/recipes/fusion_reactor/particleingot.json"
-hash = "83961e00ecaef56ee6c817b5d0d747ca6111297da41705ff6a14a68cff7ecc6c"
+hash = "e7606ee4d268e17229ebb5014d3b0a2fef81c27fb0d9ed6ee878a7ad9329d191"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/techreborn/recipes/fusion_reactor/plasmafluid.json"
-hash = "0bb1c9c55ab8eb8d929d369ed7e4616c4ebb020977d8caa57f23242814e1540c"
+hash = "b1365e337a39f669735ffebb78392bd35cedc1da5cdfa445ed249c09e9a31a7f"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/techreborn/recipes/implosion_compressor/astralsingularity.json"
@@ -9469,6 +9497,10 @@ file = "global_packs/required_data/zTConstructAstra/data/c/tags/items/ingots/and
 hash = "6d1f28d739d40eb29ef660cb5e533cae2f4980bf9ee3c7f5d41026ab98aeae88"
 
 [[files]]
+file = "global_packs/required_data/zTConstructAstra/data/c/tags/items/ingots/calorite.json"
+hash = "1072f14ec897e23b3bce9d9a05f40ea67164666772a5854fbb915f52fb58c743"
+
+[[files]]
 file = "global_packs/required_data/zTConstructAstra/data/c/tags/items/ingots/cobalt.json"
 hash = "a2af8e411f8f5a3631e0b013592e31be35bc237cfe7b9453fbb187de4fd55a9a"
 
@@ -9491,6 +9523,10 @@ hash = "ef9e20404c69439ab08a876f1c5a2d8bb6d8fcf550151964b880b26dd1b479cb"
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/c/tags/items/ingots/netherite_scrap.json"
 hash = "f2f281f458765d9ec87dd25121f61c4e73c208310c4d70b9e49f8ead293e7b94"
+
+[[files]]
+file = "global_packs/required_data/zTConstructAstra/data/c/tags/items/ingots/ostrum.json"
+hash = "f06eba5a9a8b732579f0a1b5391e29141c2b9ccc5b222f29421332ff288972d2"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/c/tags/items/ingots/pig_iron.json"
@@ -9529,6 +9565,10 @@ file = "global_packs/required_data/zTConstructAstra/data/c/tags/items/nuggets/am
 hash = "ccf95a190dda08dff0265a5448ff4fc35160de2249d908fbc2b0e268f47c1ce4"
 
 [[files]]
+file = "global_packs/required_data/zTConstructAstra/data/c/tags/items/nuggets/calorite.json"
+hash = "4ac4707d3632fb263eafcfa9fdcd583d91b1c45d3eb6ada8aa19f9175470be0a"
+
+[[files]]
 file = "global_packs/required_data/zTConstructAstra/data/c/tags/items/nuggets/cobalt.json"
 hash = "59467eb572e2d9c6894e8b06549c1407a9acf0d91fb2b9107773fd38ff664af7"
 
@@ -9559,6 +9599,10 @@ hash = "05c701ebf50bf4aaaa7ac2df30f500b256ea1c624a22e925760320461e941768"
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/c/tags/items/nuggets/netherite_scrap.json"
 hash = "89a837a6f85b7359851bd4cc715e4b8d08f3ebfcab02bea7d37cddfda56afe52"
+
+[[files]]
+file = "global_packs/required_data/zTConstructAstra/data/c/tags/items/nuggets/ostrum.json"
+hash = "2a729b5703914cdce032fd703b5bd093d74fdbc0fc0f892ff17446dfd823e525"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/c/tags/items/nuggets/pig_iron.json"
@@ -9661,6 +9705,10 @@ file = "global_packs/required_data/zTConstructAstra/data/c/tags/items/storage_bl
 hash = "3f911c61294f53fdd5e4d4eb8454d9b8fcd4a1f22036dc2bcf26a1098382e16f"
 
 [[files]]
+file = "global_packs/required_data/zTConstructAstra/data/c/tags/items/storage_blocks/calorite.json"
+hash = "9894c4c62900032e989061793dc13dd49249871079731024cf031f1943703de6"
+
+[[files]]
 file = "global_packs/required_data/zTConstructAstra/data/c/tags/items/storage_blocks/cobalt.json"
 hash = "3b03b6e1b27afdfbff8e48a9580c7120f19a5e93e33689dd38d6d1e6b43b9f7c"
 
@@ -9679,6 +9727,10 @@ hash = "9f9624b4b0797b91b0c1de01f7848864a2c3fadb17480ccac42d6a6213646e46"
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/c/tags/items/storage_blocks/manyullyn.json"
 hash = "a784e45c46f2fcc4121c251ce820564696f78a511d6ec3e7c063c5619401b893"
+
+[[files]]
+file = "global_packs/required_data/zTConstructAstra/data/c/tags/items/storage_blocks/ostrum.json"
+hash = "b2bd7641284bee0976cdc48828a89a5e4d105c5edb76dba8e13f7f07c86ef9e0"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/c/tags/items/storage_blocks/pig_iron.json"
@@ -16261,16 +16313,16 @@ file = "kubejs/assets/createastral/textures/item/electrified_pin.png"
 hash = "3c2cbb27acda816265268d160f401988bc373f385e900385c2561bbc6a450314"
 
 [[files]]
+file = "kubejs/assets/createastral/textures/item/electrolyser_blueprint.png"
+hash = "2f49e1f70adea5c3bfbb7c168d026953c6a0a36fd567c1863b21dc629a7a6571"
+
+[[files]]
 file = "kubejs/assets/createastral/textures/item/example_item.png"
 hash = "45a5f56eba6066ad05c70988a32b72c50cfeb6e35857739bd582007011ea002b"
 
 [[files]]
 file = "kubejs/assets/createastral/textures/item/filled_golden_bowl.png"
 hash = "ece65314d6c5d35c9ab32a0a6f059f4b4165a66eec62c090ee42d9135217556d"
-
-[[files]]
-file = "kubejs/assets/createastral/textures/item/flowchart.png"
-hash = "a3e2d549f87f40cb9e07c8f964d5514acb4607bbc8915efe0f0c7a0b92a8b8f1"
 
 [[files]]
 file = "kubejs/assets/createastral/textures/item/golden_bowl.png"
@@ -16446,7 +16498,7 @@ hash = "8d91b571edd6aa6c237295a76321f980dcb5897e22799ade4a60621862321eb2"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
-hash = "0ea9991816c0b2f4c5d371931c831d5a193275f7dcbfedb5c6d587f7b9201b0e"
+hash = "2e5b8fd68caeeb4f949d0847eca5040b9ab68808c6eb774e77939c383a1507e8"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/models/armor/brassarmor_layer_1.png"
@@ -16495,6 +16547,10 @@ hash = "18890cc1dd74bd14f77db90b40aba437656d781ef22862355d7788d7508a3851"
 [[files]]
 file = "kubejs/assets/kubejs/textures/models/armor/sturdyarmor_layer_2.png"
 hash = "2baeb91a8befcef16ae2411939e81bf4799c7620ef7aa626ee054682cacb92cb"
+
+[[files]]
+file = "kubejs/assets/lang/en_us.json"
+hash = "68a4e04406d7e91946faa0d0ab1ab4ab625765595139a0ab234e50247a3eb4f6"
 
 [[files]]
 file = "kubejs/assets/minecraft/lang/en_us.json"
@@ -16866,15 +16922,15 @@ hash = "058c91a44f9f4c079069775e15aea88454aee80420815cf5af51dedf01187d24"
 
 [[files]]
 file = "kubejs/server_scripts/server.js"
-hash = "2509e1bcf3dd9f6f9b580f11ffcefeeb456000542a690b091d1ac23a8399b576"
+hash = "f4a9444127ba37cfb6e5cf0ed73f449f5177fbeb61ce44b42d8fc5d89106cc9f"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
-hash = "d87a2220bcfbf10f46a84f666eb4b1612f542583351dcdc7de79debd9600e828"
+hash = "eb02346afe487114dd9b332a79ffe0ed9dcd375cabc0fec0e3e169768e8723b7"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
-hash = "9aed3fc2ccbeec823eb5088c97730da0c55d5475216198374b64450b2314fd6d"
+hash = "ce404e2eabe6c29ef592dabdb35d8b01cda3ed0cc890cab33aefc88297fc52b8"
 metafile = true
 
 [[files]]
@@ -16954,7 +17010,7 @@ metafile = true
 
 [[files]]
 file = "mods/better-combat-by-daedelus.pw.toml"
-hash = "c00c2f0f52d3425c3722fabedebed777c7354b6ba1e03a3acadc76ce1cdf5256"
+hash = "b288342c3e0a7cb6234287f9a76b43b32e721f0cfdd8342a1754082556047726"
 metafile = true
 
 [[files]]
@@ -17068,12 +17124,12 @@ metafile = true
 
 [[files]]
 file = "mods/create-fabric.pw.toml"
-hash = "f418651504091d87ce5ab18b3455a62bff386ea88affc8b2d82e961e41a4679c"
+hash = "9aef1879ed4cb8427c7fb29e2cec6925e83c83c18e9951e790869a98f10a939b"
 metafile = true
 
 [[files]]
 file = "mods/createaddition.pw.toml"
-hash = "bc79cd355ee61287e57d29a92a9b670e0c2cfa4ded19a6b0dfa2718e29f051d8"
+hash = "7c0d3c0f3814f238a63a956953b537d9a04bc134b04d1088e64b6e1e7670e6c6"
 metafile = true
 
 [[files]]
@@ -17165,7 +17221,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-api.pw.toml"
-hash = "1bc1f4e96e707a6fc831baa3a49688ac22359f9e55f4362b991f2bc2529d5751"
+hash = "b275431c7becc6adba6f54390dd407a78c8960393f7243c752730c97c7199473"
 metafile = true
 
 [[files]]
@@ -17230,7 +17286,7 @@ metafile = true
 
 [[files]]
 file = "mods/ftb-teams-fabric.pw.toml"
-hash = "8a1ff1f591dec4c7f1a0ac1d173072eacb65c8e5e4618238ff90114d38fd7fc5"
+hash = "27dcc0a1474972ccebc204117dca3f75a64ac6c621f1392bed32f8bec4cfafb8"
 metafile = true
 
 [[files]]
@@ -17265,7 +17321,7 @@ metafile = true
 
 [[files]]
 file = "mods/immersive-aircraft.pw.toml"
-hash = "2b3deadbd4fe631dd79ecebdaaef5d2e8434b5112a44144586f06acae413c978"
+hash = "b856b48cf4656067299af273faf2ae9c096d5ca3ff6b5a7472aba23415994f2a"
 metafile = true
 
 [[files]]
@@ -17445,7 +17501,7 @@ metafile = true
 
 [[files]]
 file = "mods/playeranimator.pw.toml"
-hash = "757aac8206ab35df91a77fef430716416880cad325311c4a82c909ecf1cf25fc"
+hash = "beed470a193e1c5217d0b91ff949c812686fc34c28b7e49a9c22421d0a6737ea"
 metafile = true
 
 [[files]]
@@ -17495,7 +17551,7 @@ metafile = true
 
 [[files]]
 file = "mods/roughly-enough-items.pw.toml"
-hash = "75c7519970f3c4a0cd730596d48c0bc9f89dec6a2c5e08fd6223195646be0000"
+hash = "e58e70063eb1447a2235ad49e7c60169d1a1cb7a2902d9fc88038837f458365d"
 metafile = true
 
 [[files]]
@@ -17590,12 +17646,12 @@ metafile = true
 
 [[files]]
 file = "mods/xaeros-minimap.pw.toml"
-hash = "3d9012340615bf72380718f695dbe26f987c70e7bbb50b3859bbe40de3da95fa"
+hash = "0680844e686c8c09e9ad3a036a8a5c87d30dcdeed356a3d0401360335a2ba742"
 metafile = true
 
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
-hash = "47b16fce2a9549a0ee024e93090607665a9d257f903b1dcdc81eebdf6c74801b"
+hash = "bb2e458532569dd73292a1ce5def41d12b4804a4429a77d75f15f7a990105bb8"
 metafile = true
 
 [[files]]
@@ -37133,6 +37189,14 @@ file = "resources/cccbridge/textures/block/target_block_side.png"
 hash = "419e1a6f5f3a80205bfe5133cefb03e30b7d2a9edd0f00deb1e7a3a69cd6fb94"
 
 [[files]]
+file = "resources/chipped/textures/block/basalt/basalt_40.png"
+hash = "fb1781b0dd2b3b89f32c1aba7cc411e7c2498600f324c906afe47b1e6c39d7c9"
+
+[[files]]
+file = "resources/chipped/textures/block/deepslate/deepslate_40.png"
+hash = "6319e5fa032c3a96f2ddaf71d7e10e259214affd26e3e5d10d488b0e4b1f10ca"
+
+[[files]]
 file = "resources/computercraft/blockstates/wireless_modem_advanced.json"
 hash = "592dcdb80a2c585b25522d0c964d4abf24c102e44eee63fb62f16180ab6c8b14"
 
@@ -37883,14 +37947,6 @@ hash = "5e96a3272e475f99cbf5040d9910a547676160ab967f844bd566759122c709c6"
 [[files]]
 file = "resources/farmersdelight/textures/block/beetroot_crate_top.png"
 hash = "cb11e5b0eb0c8bcfd50bfbc24f2577775872b18ba077a01bb11c5dea5df689a5"
-
-[[files]]
-file = "resources/immersive_aircraft/lang/en_us.json"
-hash = "68a4e04406d7e91946faa0d0ab1ab4ab625765595139a0ab234e50247a3eb4f6"
-
-[[files]]
-file = "resources/immersive_aircraft/objects/biplane.obj"
-hash = "2660a9e54aea658c3070c0aadea080153881bfccdeec4d4dc2a528f96acb06a3"
 
 [[files]]
 file = "resources/immersive_aircraft/textures/entity/airship.png"

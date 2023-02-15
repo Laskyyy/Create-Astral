@@ -1493,9 +1493,9 @@
 				to_observe: "minecraft:piglin"
 			}]
 			rewards: [{
-				id: "1409016AFB3D0A43"
-				type: "item"
-				item: "tconstruct:piglin_head"
+				id: "082DA983D9F867D5"
+				type: "xp"
+				xp: 50
 			}]
 		}
 		{
@@ -1595,6 +1595,11 @@
 				type: "item"
 				item: "passivepiglins:piglin_fortune"
 			}]
+			rewards: [{
+				id: "1BAD78CA92B39137"
+				type: "item"
+				item: "tconstruct:zombified_piglin_head"
+			}]
 		}
 		{
 			x: -11.0d
@@ -1680,6 +1685,31 @@
 					type: "item"
 					item: "minecraft:phantom_membrane"
 					count: 4L
+				}
+			]
+		}
+		{
+			title: "Ores of Mars"
+			x: -11.5d
+			y: -4.5d
+			dependencies: ["253F29A00B4EA050"]
+			id: "45F455EC8BF84ADB"
+			tasks: [
+				{
+					id: "5730612B3D2750E8"
+					type: "questsadditions:break"
+					block_type: 0
+					block: "ad_astra:mars_ostrum_ore"
+					value: 32L
+					checkItem: false
+				}
+				{
+					id: "6ACA8E7FD8C268CE"
+					type: "questsadditions:break"
+					block_type: 0
+					block: "techreborn:deepslate_lead_ore"
+					value: 32L
+					checkItem: false
 				}
 			]
 		}

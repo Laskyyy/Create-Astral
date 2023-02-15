@@ -58,7 +58,6 @@
 			description: [
 				"Put brass production into OVERDRIVE as you'll want to use many of its unique tools. Even if you have automation going on, you may want to consider investing in a quarry or tunnelbore so quick injections of these can be made into your life."
 				""
-				"From this point, the most efficient way of producing cogwheels is going to be directly pouring them with a brass filled spout. Consider automating brass casing and cogwheels this way, as these are going to be needed in bulk!"
 			]
 			dependencies: ["51BD31261A5725E3"]
 			id: "705C815541DB89F8"
@@ -321,6 +320,11 @@
 				item: "create:steam_engine"
 				count: 9L
 			}]
+			rewards: [{
+				id: "064504FFFA76C63C"
+				type: "xp"
+				xp: 200
+			}]
 		}
 		{
 			x: -9.5d
@@ -566,7 +570,7 @@
 			shape: "diamond"
 			subtitle: "This process applies the same to each planet's primary sand+material"
 			description: [
-				"By washing moon sand in the same way you'd make an iron farm, you can obtain a renewable source of silver nuggets."
+				"By washing moon sand in the same way you'd make an iron farm, you can obtain a renewable source of desh nuggets."
 				""
 				"Moon sand itself can be semi-automated by crushing moon stone into sand, which you will be able to achieve soon with the crushing wheels."
 				""
@@ -1228,7 +1232,7 @@
 				""
 				"Not just that, but foundries operate as a fuild tank that can store multiple fuilds. They can work with smart pipes, too. It won't be the best way to organize fluids but this feature may be handy to you."
 				""
-				"For instructions on how to build one, read both these guides. Do note that this modpack skips over \"smelteries\" entirely, which the light gray book deals with. Bother smelteries and foundaries have a lot in common though, and both books will teach you of the best tool materials and upgrades available to you."
+				"For instructions on how to build one, read both these guides. Do note that this modpack skips over \"smelteries\" entirely, which the light gray book deals with. Both smelteries and foundaries have a lot in common though, and both books will teach you of the best tool materials and upgrades available to you."
 			]
 			dependencies: [
 				"1A7150A746855B4D"
@@ -1790,7 +1794,7 @@
 			y: 5.0d
 			subtitle: "It's the future of industry!!"
 			description: [
-				"Mechnical crafters can take items off of belts and depots and put them somewhere else, including other depots and belts, as well as funnels."
+				"Mechnical arms can take items off of belts and depots and put them somewhere else, including other depots and belts, as well as funnels."
 				""
 				"They're great if setting up belts is too complicated if you only need to move an item by six feet, or you need items to go onto diverging paths/converging end points."
 			]
@@ -2421,7 +2425,7 @@
 			y: 3.0d
 			shape: "diamond"
 			subtitle: "Not as valuable as silver though"
-			description: ["Soul soil can be washed into golden nuggets and very rarely quartz. Soul Soil can also be made by haunting sand, leading to a more abudent way to gather sand. You might have a way to automate sand later in this quest..."]
+			description: ["Soul soil can be washed into golden nuggets and very rarely quartz. Soul Soil can also be made by haunting sand, leading to a more abudant way to gather sand. You might have a way to automate sand later in this quest..."]
 			dependencies: ["072FC342FAE44F38"]
 			id: "0813FC54B6D7F235"
 			tasks: [{
@@ -2588,9 +2592,9 @@
 			subtitle: "We meant it when we said automation becomes complicated."
 			description: [
 				""
-				"Netherrack, obtained by haunting soul soil, can be crushed into netherrack dust. It can then be mixed with diorite to produce granite at a more efficient rate, without the need for quartz. Diorite can then be turned into tin."
+				"Netherrack, obtained by haunting soul soil, can be crushed into netherrack dust. It can then be mixed with diorite to produce granite at a more efficient rate, without the need for quartz. Granite can then be turned into zinc."
 				""
-				"Of course, not every optimization is necessary. Decide if you even need more tin or quartz."
+				"Of course, not every optimization is necessary. Decide if you even need more zinc or quartz."
 			]
 			dependencies: ["429D2340C2B20A60"]
 			optional: true
@@ -2655,7 +2659,7 @@
 			description: [
 				"Lava touching basalt and blue ice will create basalt. The basalt can then be mined, much like a cobblestone generator setup."
 				""
-				"Basalt has a unique property where it can turn into Diorite when pressed in lava with flint. Hey! Diorite can become quartz! You now have a use for all that flint left over from the iron generator!"
+				"Same as stone, basalt can be sifted through an extractinator to generate copper and redstone."
 			]
 			dependencies: ["20BFF582275C31C8"]
 			optional: true
@@ -2804,7 +2808,7 @@
 			y: 5.0d
 			subtitle: "This doesn't make the bucket blast resistant, just the cement in it"
 			description: [
-				"To make blast-resistant cement, steel and coal dust needs to be mixed together with concrete powder."
+				"To make blast-resistant cement, steel and lime dust needs to be mixed together with concrete powder."
 				""
 				"Clay dust for the concrete powder can be obtained by crushing limestone, or crushing clay. The material is too soft for the grinder to work."
 			]
@@ -3274,6 +3278,76 @@
 					only_one: true
 				}
 			]
+		}
+		{
+			title: "Ores of the Moon"
+			x: -24.5d
+			y: -2.0d
+			dependencies: ["306D009F01634115"]
+			id: "01BF21C02F97B378"
+			tasks: [
+				{
+					id: "1D825C50C2C5B58C"
+					type: "questsadditions:break"
+					block_type: 0
+					block: "ad_astra:moon_desh_ore"
+					value: 16L
+					checkItem: false
+				}
+				{
+					id: "257A64F93C34D386"
+					type: "questsadditions:break"
+					block_type: 0
+					block: "ad_astra:moon_cheese_ore"
+					value: 16L
+					checkItem: false
+				}
+				{
+					id: "56286EDB89499395"
+					type: "questsadditions:break"
+					block_type: 0
+					block: "ad_astra:moon_iron_ore"
+					value: 32L
+					checkItem: false
+				}
+				{
+					id: "5BE048ECE4AED124"
+					type: "questsadditions:break"
+					block_type: 0
+					block: "ad_astra:moon_ice_shard_ore"
+					value: 16L
+					checkItem: false
+				}
+				{
+					id: "5187B19909CA4773"
+					type: "questsadditions:break"
+					block_type: 0
+					block: "tconstruct:cobalt_ore"
+					value: 16L
+					checkItem: false
+				}
+				{
+					id: "76BBB9390B6CD775"
+					type: "questsadditions:break"
+					block_type: 0
+					block: "techreborn:deepslate_silver_ore"
+					value: 16L
+					checkItem: false
+				}
+				{
+					id: "24677D0A32D17AED"
+					type: "questsadditions:break"
+					block_type: 0
+					block: "ae2:deepslate_quartz_ore"
+					value: 16L
+					checkItem: false
+				}
+			]
+			rewards: [{
+				id: "7E497BC1C88A5603"
+				type: "item"
+				item: "createaddition:chocolate_cake"
+			}]
 		}
 	]
 	quest_links: [ ]
