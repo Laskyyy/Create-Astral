@@ -1208,6 +1208,7 @@ onEvent('recipes', event => {
   event.remove({output: 'ad_astra:jet_suit'})
   event.remove({output: 'ad_astra:jet_suit_pants'})
   event.remove({output: 'ad_astra:jet_suit_boots'})
+  event.remove({output: 'ad_astra:tier_1_rocket'})
   event.replaceInput({mod: 'techreborn'}, 'techreborn:bronze_plate', 'createastral:bronze_sheet')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:bronze_ingot', 'createastral:bronze_ingot')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:copper_plate', 'create:copper_sheet')
