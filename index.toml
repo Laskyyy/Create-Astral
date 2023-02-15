@@ -369,47 +369,39 @@ file = "config/ftbquests/chapter_groups.snbt"
 hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
 
 [[files]]
+file = "config/ftbquests/chapters/6_raow.snbt"
+hash = "76972bf39f412666b2117c3b8f67a4efd9ae772e2e049d27572a5d0be85d7060"
+
+[[files]]
+file = "config/ftbquests/chapters/assorted_goals.snbt"
+hash = "d98d32408bc8f7f76cdf648656288536e6c4866578c5b4688b36a7f2d61974cc"
+
+[[files]]
+file = "config/ftbquests/chapters/astral_storage.snbt"
+hash = "01809aee2ba28e61543e14214ac07f3cc7b8af73190f8936e4ef3a56a7416d27"
+
+[[files]]
+file = "config/ftbquests/chapters/chapter_2.snbt"
+hash = "9853008818e877c58ab89093a0d26300850f63d10b0c50ea8141902c79e44fff"
+
+[[files]]
+file = "config/ftbquests/chapters/chapter_25_the_automation_matrix.snbt"
+hash = "7e33d51138d47c03739ae9d747bc9cb9f68ecac50b8642bdd74dabb8d60542e6"
+
+[[files]]
+file = "config/ftbquests/chapters/chapter_3.snbt"
+hash = "8a1731a95f8c3fa8ec5bf297972d7215638265d3a1500f905500c9fcf7b5095a"
+
+[[files]]
+file = "config/ftbquests/chapters/chapter_4.snbt"
+hash = "2d1d092ee537bd0af925700324eb3880d66fa8e0d13897e20477c20ebba9904e"
+
+[[files]]
+file = "config/ftbquests/chapters/chapter_5.snbt"
+hash = "afdb1a1d333f75cce770e4f076878374b415e63b920f5613378146f1fbe78550"
+
+[[files]]
 file = "config/ftbquests/data.snbt"
-hash = "627d686629ce6c949746482c9d4402fd29da8dfd5214c85b5886336b7925c4b1"
-
-[[files]]
-file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/6_raow.snbt"
-hash = "beefb2ef77ac3ad3c488b957d34fe8fdb72b79c24fcbb992b6722369619a6229"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/assorted_goals.snbt"
-hash = "533c0a55dc1e7d38255c790aa31bfb62c5eed4176650a1293a3d5653687284d1"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/astral_storage.snbt"
-hash = "c54f0565716cda952bd0a0a73e66ae6e8e8e4fb419df3c8dbd2f2c173b59b10a"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/chapter_2.snbt"
-hash = "7a3ee24e51a2d9aefa4c1565b8bd758a86f85dd11d4e02004e6992b01406f555"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/chapter_25_the_automation_matrix.snbt"
-hash = "1ffffcb8771e49427d72938b28d1c157e37a70adb73b14c03492ebbae573f480"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/chapter_3.snbt"
-hash = "ca8ef73a04efbf118991c9b080cd7ee086226b281a33d784d09178f4718f1afd"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/chapter_4.snbt"
-hash = "f7eda145cb95798194047b048a8a8e6dfb5bccfb53429061732895be144914c7"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/chapter_5.snbt"
-hash = "12d955fff761e2556d35bb33b4fbb6269f4f14efcb7da44bd22cf04e5d68e5bb"
-
-[[files]]
-file = "config/ftbquests/quests/data.snbt"
 hash = "041467e81248a452607485b53e971ee42b8816539fa140ae8f54ef2226653aa2"
 
 [[files]]
@@ -16498,7 +16490,7 @@ hash = "8d91b571edd6aa6c237295a76321f980dcb5897e22799ade4a60621862321eb2"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
-hash = "2e5b8fd68caeeb4f949d0847eca5040b9ab68808c6eb774e77939c383a1507e8"
+hash = "265543cb55716ad55b920c69f532d8263c0973c5bf6c1e4a8420e2f75b1ba6de"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/models/armor/brassarmor_layer_1.png"
@@ -16555,10 +16547,6 @@ hash = "68a4e04406d7e91946faa0d0ab1ab4ab625765595139a0ab234e50247a3eb4f6"
 [[files]]
 file = "kubejs/assets/minecraft/lang/en_us.json"
 hash = "85508940758bcd1f487de03bc9c9d09b76ba47565962863e4e1d4e2340071414"
-
-[[files]]
-file = "kubejs/assets/quests/lang/en_us.json"
-hash = "354760afa84f4757dec48b5cbc8e9d52c770c65f6a671e98fca91321ee348fc0"
 
 [[files]]
 file = "kubejs/assets/reinfchest/lang/en_us.json"
@@ -16922,7 +16910,7 @@ hash = "058c91a44f9f4c079069775e15aea88454aee80420815cf5af51dedf01187d24"
 
 [[files]]
 file = "kubejs/server_scripts/server.js"
-hash = "f4a9444127ba37cfb6e5cf0ed73f449f5177fbeb61ce44b42d8fc5d89106cc9f"
+hash = "48c4c011edb192b9d10f3b8059c796a59c682f6113cce68f153bd9d53a26ddcc"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
@@ -38075,6 +38063,14 @@ hash = "5cf3be7a1cd14c7acbfd7981ffd37195e955a4646511adfadb6105857dcb2056"
 [[files]]
 file = "resources/minecraft/optifine/cem/wolf.jem"
 hash = "e839dcd8241238459ae6c4ea06cb3ed3f9003bd8b1c20db169242d23d5c53fc9"
+
+[[files]]
+file = "resources/minecraft/optifine/color.properties"
+hash = "05c0bcbc1a6012f3e74d6779eac7fdd5fb3fb16f8afa2f2ca14a714337f1f4b7"
+
+[[files]]
+file = "resources/minecraft/optifine/emissive.properties"
+hash = "400c2533d1f4d94ee1d1c747e98196b4769eda86c105ef8aef32b0f3eaab722e"
 
 [[files]]
 file = "resources/minecraft/sounds/item/crossbow/shoot1.ogg"

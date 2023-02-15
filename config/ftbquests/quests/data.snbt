@@ -1,13 +1,5 @@
 {
 	version: 13
-	title: "{quest.main_title}"
-	icon: {
-		id: "ftbquests:custom_icon"
-		Count: 1b
-		tag: {
-			Icon: "createastral:textures/item/logos_binted.png"
-		}
-	}
 	default_reward_team: false
 	default_consume_items: false
 	default_autoclaim_rewards: "disabled"

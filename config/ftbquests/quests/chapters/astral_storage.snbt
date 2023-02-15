@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 5
 	filename: "astral_storage"
-	title: "3.5) Astral Storage"
+	title: "{chapter.6.title}"
 	icon: "ae2:fluix_dust"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -47,10 +47,10 @@
 	]
 	quests: [
 		{
-			title: "Basic Item Storage"
+			title: "{chapter.6.quest.1.title}"
 			x: -9.0d
 			y: -5.5d
-			subtitle: "Utilised with ME Drives, an AE system can convert real matter into bytes!"
+			subtitle: "{chapter.6.quest.1.subtitle}"
 			dependencies: ["44A6872451EA1BB2"]
 			id: "502FB68205A0CA3B"
 			tasks: [
@@ -89,10 +89,10 @@
 			]
 		}
 		{
-			title: "Please, a user interface."
+			title: "{chapter.6.quest.3.title}"
 			x: -7.5d
 			y: -8.5d
-			subtitle: "The terminal access panel attached on an ME system provides the chest-like user interface you'll need to manage it,"
+			subtitle: "{chapter.6.quest.3.subtitle}"
 			dependencies: ["3099BE4134861052"]
 			id: "30CFD291B115DBC7"
 			tasks: [{
@@ -102,10 +102,10 @@
 			}]
 		}
 		{
-			title: "The Heart of Shimmer."
+			title: "{chapter.6.quest.4.title}"
 			x: -2.5d
 			y: -8.5d
-			description: ["The primary component requires to form an ME system."]
+			description: ["{chapter.6.quest.4.description.1}"]
 			dependencies: ["5B795991C4A581FE"]
 			id: "7CB9EBED55932D9B"
 			tasks: [{
@@ -115,7 +115,7 @@
 			}]
 		}
 		{
-			title: "Server Mainframe."
+			title: "{chapter.6.quest.5.title}"
 			x: -2.5d
 			y: -7.0d
 			dependencies: ["5E6E1A18D9727F1A"]
@@ -127,7 +127,7 @@
 			}]
 		}
 		{
-			title: "Welcome to Applied Energistics 2!"
+			title: "{chapter.6.quest.6.title}"
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -138,12 +138,8 @@
 			x: -5.0d
 			y: 2.0d
 			shape: "pentagon"
-			subtitle: "That lunar meteorites have rare circuits useful in inventory management!"
-			description: [
-				"Note, this tab is a vague guideline surrounding AE2. There are many guides online regarding this! "
-				""
-				"Future plans = establish an intricate guide into the mod"
-			]
+			subtitle: "{chapter.6.quest.6.subtitle}"
+			description: ["{chapter.6.quest.6.description.1}"]
 			dependencies: ["790B0567FF49110F"]
 			hide: true
 			size: 2.0d
@@ -151,11 +147,11 @@
 			tasks: [{
 				id: "50441F5A6EECD674"
 				type: "checkmark"
-				title: "Understood."
+				title: "{chapter.6.quest.6.task.1.title}"
 			}]
 		}
 		{
-			title: "Basic Presses, Volume 3:"
+			title: "{chapter.6.quest.7.title}"
 			x: -3.0d
 			y: -2.0d
 			dependencies: ["7A2E9BE533B92DC0"]
@@ -167,7 +163,7 @@
 			}]
 		}
 		{
-			title: "Basic Presses, Volume 1:"
+			title: "{chapter.6.quest.8.title}"
 			x: -7.0d
 			y: -2.0d
 			dependencies: ["7A2E9BE533B92DC0"]
@@ -179,7 +175,7 @@
 			}]
 		}
 		{
-			title: "Basic Presses, Volume 2:"
+			title: "{chapter.6.quest.9.title}"
 			x: -5.0d
 			y: -2.5d
 			dependencies: ["7A2E9BE533B92DC0"]
@@ -191,10 +187,10 @@
 			}]
 		}
 		{
-			title: "The fundamental tools."
+			title: "{chapter.6.quest.10.title}"
 			x: -5.5d
 			y: 0.0d
-			subtitle: "When harnessing shimmer technology, a new variation of circuits can be used."
+			subtitle: "{chapter.6.quest.10.subtitle}"
 			dependencies: ["326EB9A775B8D791"]
 			id: "43DF61335F1A3AD6"
 			tasks: [{
@@ -204,10 +200,10 @@
 			}]
 		}
 		{
-			title: "Sussy Silicon"
+			title: "{chapter.6.quest.11.title}"
 			x: -4.5d
 			y: 0.0d
-			subtitle: "Heat certus dust to a high breaking point and form unprocessed silicon."
+			subtitle: "{chapter.6.quest.11.subtitle}"
 			dependencies: ["790B0567FF49110F"]
 			hide: true
 			id: "227EF17194467491"
@@ -225,10 +221,10 @@
 			]
 		}
 		{
-			title: "Circuits for you..."
+			title: "{chapter.6.quest.12.title}"
 			x: -5.0d
 			y: -1.0d
-			subtitle: "Basic circuit frame for use in the inscriber."
+			subtitle: "{chapter.6.quest.12.subtitle}"
 			dependencies: [
 				"43DF61335F1A3AD6"
 				"227EF17194467491"
@@ -241,7 +237,7 @@
 			}]
 		}
 		{
-			title: "Pastel Pressing"
+			title: "{chapter.6.quest.13.title}"
 			x: -5.0d
 			y: -4.0d
 			dependencies: [
@@ -269,7 +265,7 @@
 			]
 		}
 		{
-			title: "This defies all logic,"
+			title: "{chapter.6.quest.14.title}"
 			x: -7.5d
 			y: -5.5d
 			dependencies: ["7A9F59521C6A6B7E"]
@@ -281,7 +277,7 @@
 			}]
 		}
 		{
-			title: "Calculation for one, please."
+			title: "{chapter.6.quest.15.title}"
 			x: -5.0d
 			y: -5.5d
 			dependencies: ["7A9F59521C6A6B7E"]
@@ -293,10 +289,10 @@
 			}]
 		}
 		{
-			title: "Complex Circuitry."
+			title: "{chapter.6.quest.16.title}"
 			x: -2.5d
 			y: -5.5d
-			subtitle: "People always underestimate the engineers,"
+			subtitle: "{chapter.6.quest.16.subtitle}"
 			dependencies: ["7A9F59521C6A6B7E"]
 			id: "5E6E1A18D9727F1A"
 			tasks: [{
@@ -359,10 +355,10 @@
 			}]
 		}
 		{
-			title: "Magical Powder."
+			title: "{chapter.6.quest.20.title}"
 			x: -3.0d
 			y: 0.0d
-			description: ["I tried sniffing it, I wouldn't recommend it. Was cathartic for days."]
+			description: ["{chapter.6.quest.20.description.1}"]
 			dependencies: ["227EF17194467491"]
 			id: "3A8B72EC89451A93"
 			tasks: [{
@@ -372,7 +368,7 @@
 			}]
 		}
 		{
-			title: "Energetic Storage."
+			title: "{chapter.6.quest.21.title}"
 			x: -2.0d
 			y: 0.0d
 			dependencies: ["3A8B72EC89451A93"]
@@ -395,7 +391,7 @@
 			]
 		}
 		{
-			title: "In the Eye of the Shimmer"
+			title: "{chapter.6.quest.22.title}"
 			x: -2.0d
 			y: -1.0d
 			dependencies: ["3A8B72EC89451A93"]
@@ -407,14 +403,10 @@
 			}]
 		}
 		{
-			title: "An energetic stone type..."
+			title: "{chapter.6.quest.23.title}"
 			x: -3.5d
 			y: 1.0d
-			description: [
-				"Sky Stone (AE2) Can no longer be obtained in meteors."
-				""
-				"It generates in large, rare pockets under the moon's surface. Take note, if you see any!"
-			]
+			description: ["{chapter.6.quest.23.description.1}"]
 			dependencies: ["326EB9A775B8D791"]
 			id: "432AF29897E50CDC"
 			tasks: [{
