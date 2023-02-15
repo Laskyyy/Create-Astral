@@ -1712,6 +1712,7 @@ event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:
 
   event.replaceInput({mod: 'phonos'}, 'minecraft:iron_ingot', 'techreborn:tin_ingot')
   event.replaceInput({mod: 'farmersdelight'}, 'minecraft:iron_ingot', 'techreborn:tin_ingot')
+  event.replaceInput({output: 'farmersdelight:iron_knife'}, 'minecraft:tin_ingot', 'techreborn:iron_ingot')
   event.replaceInput({mod: 'drinkbeer'}, 'minecraft:iron_ingot', 'techreborn:tin_ingot')
 
   //Tinker's Construct Reworking (New fluids and recipes)
@@ -2899,6 +2900,7 @@ event.shaped('createastral:andesite_compound', [
   C: 'minecraft:clay_ball'
 })
 event.smelting('create:andesite_alloy', 'createastral:andesite_compound')
+event.blasting('create:andesite_alloy', 'createastral:andesite_compound')
 
 event.recipes.createMixing('8x tconstruct:grout', [
   'create:andesite_alloy',
