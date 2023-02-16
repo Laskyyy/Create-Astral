@@ -1,0 +1,14 @@
+{
+  "replace": "true",
+  "values": [
+    "minecraft:bone",
+    "minecraft:gold_nugget",
+    "minecraft:rotten_flesh",
+    "minecraft:magma_cream",
+    "minecraft:string",
+    "minecraft:porkchop"
+        
+
+
+  ]
+}

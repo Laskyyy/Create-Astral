@@ -1,0 +1,7 @@
+{
+  "replace": "true",
+  "values": [
+    "#extractinator:common_drops",
+    "minecraft:snowball"
+  ]
+}

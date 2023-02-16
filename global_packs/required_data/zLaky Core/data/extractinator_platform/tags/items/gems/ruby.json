@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "required": false,
+      "id": "#c:rubies"
+    },
+    {
+      "required": false,
+      "id": "#forge:gems/ruby"
+    }
+  ]
+}

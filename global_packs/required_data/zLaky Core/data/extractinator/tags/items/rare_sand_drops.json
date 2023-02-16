@@ -1,0 +1,12 @@
+{
+  "replace": "true",
+  "values": [
+    "minecraft:bone",
+    "minecraft:string",
+    "minecraft:rotten_flesh",
+    "minecraft:feather",
+    "minecraft:ink_sac"
+
+
+  ]
+}
