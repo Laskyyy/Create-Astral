@@ -1080,6 +1080,9 @@ onEvent('recipes', event => {
 	
 	event.remove({output: 'phonos:redstone_chip'})
 	event.remove({mod: 'doodads'})
+  event.remove({mod: 'grapplemod'})
+  event.remove({mod: 'createsifter'})
+  event.remove({type: 'createsifter:sifting'})
 	event.remove({output: 'minecraft:bow'})
 	event.remove({output: 'minecraft:crossbow'})
 	event.remove({output: 'minecraft:arrow'})
@@ -2077,6 +2080,18 @@ event.recipes.createMechanicalCrafting('polaroidcamera:camera', [
   
 })
 
+event.shaped('grapplemod:grapplinghook', [
+  'A  ',
+  'BCB',
+  'BBB'
+], {
+  A: 'create:brass_hand',
+  B: 'campanion:rope',
+  C: 'minecraft:lead'
+
+  
+})
+
 
 	event.recipes.createMechanicalCrafting('ad_astra:energizer', [
   ' E ',
@@ -2934,7 +2949,7 @@ event.recipes.createMixing('8x tconstruct:grout', [
 
   ///STRING AUTOMATION
   event.recipes.createMilling([
-    Item.of('minecraft:string').withChance(.5)
+    Item.of('minecraft:string').withChance(1)
   ], 'farmersdelight:straw');
 
   /// SAND AUTOMATION PREMOON
@@ -2991,6 +3006,76 @@ event.shaped('minecraft:experience_bottle', [
   A: 'create:experience_nugget',
   B: 'minecraft:glass_bottle'
 })
+
+
+/// SIFTER STUFF
+
+event.shaped('createsifter:sifter', [
+  ' E ',
+  'CDC',
+  'BAB'
+], {
+  A: 'create:andesite_casing',
+  B: 'create:cogwheel',
+  C: 'create:shaft',
+  D: 'create:millstone',
+  E: Item.of('create:filter').ignoreNBT()
+})
+
+event.shaped('createsifter:andesite_mesh', [
+  'BAB',
+  'AAA',
+  'BAB'
+], {
+  
+A: 'createdeco:andesite_mesh_fence',
+  B: 'create:shaft'
+  
+})
+
+event.shaped('createsifter:brass_mesh', [
+  'BAB',
+  'AAA',
+  'BAB'
+], {
+  A: 'createdeco:brass_mesh_fence',
+  B: 'createaddition:brass_rod'
+  
+})
+
+
+event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:andesite_mesh" }, {  "item": "minecraft:gravel" } ], "results": [ { "item": "minecraft:iron_nugget", "chance": 0.15 }, { "item": "minecraft:flint", "chance": 0.35 } ], "processingTime": 200 }
+)
+event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:andesite_mesh" }, {  "tag": "minecraft:sand" } ], "results": [ { "item": "minecraft:bone", "chance": 0.01 },  { "item": "minecraft:string", "chance": 0.02 },  { "item": "minecraft:rotten_flesh", "chance": 0.01 },  { "item": "minecraft:feather", "chance": 0.01 },  { "item": "minecraft:ink_sac", "chance": 0.005 },], "processingTime": 200 }
+)
+event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:andesite_mesh" }, {  "tag": "c:cobblestone" } ], "results": [ { "item": "techreborn:tin_nugget", "chance": 0.05 }], "processingTime": 200 }
+)
+event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:andesite_mesh" }, {  "item": "minecraft:flint" } ], "results": [ { "item": "minecraft:music_disc_13", "chance": 0.0005 }], "processingTime": 200 }
+)
+event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:andesite_mesh" }, {  "tag": "c:deepslate" } ], "results": [ { "item": "minecraft:redstone", "chance": 0.05 }], "processingTime": 200 }
+)
+event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:andesite_mesh" }, {  "item": "ad_astra:moon_sand" } ], "results": [ { "item": "minecraft:gunpowder", "chance": 0.05 },{ "item": "minecraft:glowstone_dust", "chance": 0.1 }, { "item": "ae2:certus_quartz_dust", "chance": 0.03 },], "processingTime": 400 }
+)
+event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:andesite_mesh" }, {  "item": "ad_astra:mars_sand" } ], "results": [ { "item": "minecraft:gold_nugget", "chance": 0.05 }, { "item": "techreborn:lazurite_dust", "chance": 0.05 }], "processingTime": 600 }
+)
+event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:andesite_mesh" }, {  "item": "minecraft:coarse_dirt" } ], "results": [ { "item": "minecraft:dirt", "chance": 1 }, { "item": "minecraft:flint", "chance": 0.3 } ], "processingTime": 200 }
+)
+event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:brass_mesh" }, {  "tag": "c:basalt" } ], "results": [ { "item": "minecraft:magma_cream", "chance": 0.1 }, { "item": "minecraft:ghast_tear", "chance": 0.05 },  { "item": "minecraft:blaze_powder", "chance": 0.1 } ], "processingTime": 200 }
+)
+event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:andesite_mesh" }, {  "tag": "c:basalt" } ], "results": [ { "item": "minecraft:ender_pearl", "chance": 0.04 }], "processingTime": 200 }
+)
+
+event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:brass_mesh" }, {  "tag": "c:cobblestone" } ], "results": [ { "item": "techreborn:tin_nugget", "chance": 0.08 }], "processingTime": 200 }
+)
+event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:brass_mesh" }, {  "item": "minecraft:flint" } ], "results": [ { "item": "minecraft:music_disc_13", "chance": 0.001 }], "processingTime": 200 }
+)
+event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:brass_mesh" }, {  "tag": "c:deepslate" } ], "results": [ { "item": "minecraft:redstone", "chance": 0.07 }, { "item": "create:copper_nugget", "chance": 0.05 }], "processingTime": 200 }
+)
+
+
+/// end sifter
+
+
 
   event.recipes.createCrushing([
     Item.of('minecraft:raw_iron').withChance(0.002),
@@ -3142,6 +3227,50 @@ event.recipes.createMixing('tconstruct:seared_bricks', [
 // WHY THIS LINE
 event.custom(
   {"type":"create:sequenced_assembly","ingredient":{"tag":"c:plates/gold"},"transitionalItem":{"item":"create:incomplete_precision_mechanism"},"sequence":[{"type":"create:deploying","ingredients":[{"item":"create:incomplete_precision_mechanism"},{"item":"create:cogwheel"}],"results":[{"item":"create:incomplete_precision_mechanism"}]},{"type":"create:deploying","ingredients":[{"item":"create:incomplete_precision_mechanism"},{"item":"create:large_cogwheel"}],"results":[{"item":"create:incomplete_precision_mechanism"}]},{"type":"create:deploying","ingredients":[{"item":"create:incomplete_precision_mechanism"},{"tag":"c:nuggets/desh"}],"results":[{"item":"create:incomplete_precision_mechanism"}]}],"results":[{"item":"create:precision_mechanism","chance":120.0},{"item":"create:golden_sheet","chance":8.0},{"item":"create:andesite_alloy","chance":8.0},{"item":"create:cogwheel","chance":5.0},{"item":"minecraft:gold_nugget","chance":3.0},{"item":"create:shaft","chance":2.0},{"item":"create:crushed_gold_ore","chance":2.0},{"item":"minecraft:iron_ingot"},{"item":"minecraft:clock"}],"loops":6})
+
+  event.custom( {
+    "type": "farmersdelight:cutting",
+    "ingredients": [
+      {
+        "item": "vinery:cherry_log"
+      }
+    ],
+    "tool": {
+      "type": "farmersdelight:tool",
+      "tag": "c:tools/axes"
+    },
+    "result": [
+      {
+        "item": "vinery:stripped_cherry_log"
+      },
+      {
+        "item": "farmersdelight:tree_bark"
+      }
+    ],
+    "sound": "minecraft:item.axe.strip"
+  })
+
+  event.custom( {
+    "type": "farmersdelight:cutting",
+    "ingredients": [
+      {
+        "item": "vinery:old_cherry_log"
+      }
+    ],
+    "tool": {
+      "type": "farmersdelight:tool",
+      "tag": "c:tools/axes"
+    },
+    "result": [
+      {
+        "item": "vinery:stripped_old_cherry_log"
+      },
+      {
+        "item": "farmersdelight:tree_bark"
+      }
+    ],
+    "sound": "minecraft:item.axe.strip"
+  })
 
 event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:basic_machine_casing"},{"item":"ad_astra:compressed_steel"}],"results":[{"item":"techreborn:advanced_machine_casing"}]})
 event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:advanced_machine_frame"},{"item":"techreborn:machine_parts"}],"results":[{"item":"techreborn:industrial_machine_frame"}]})
