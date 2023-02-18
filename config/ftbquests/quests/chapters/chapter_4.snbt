@@ -626,10 +626,7 @@
 					id: "tconstruct:sword"
 					Count: 1b
 					tag: {
-						tic_multipliers: {
-							"tconstruct:mining_speed": 0.5f
-							"tconstruct:durability": 1.1f
-						}
+						Damage: 0
 						tic_stats: {
 							"tconstruct:attack_damage": 6.6000004f
 							"tconstruct:harvest_tier": "minecraft:diamond"
@@ -637,12 +634,11 @@
 							"tconstruct:mining_speed": 4.07f
 							"tconstruct:attack_speed": 1.7600001f
 						}
-						Damage: 0
-						tic_materials: [
-							"tconstruct:silver"
-							"tconstruct:silver"
-							"tconstruct:silver"
-						]
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.5f
+							"tconstruct:durability": 1.1f
+						}
+						tic_broken: 0b
 						tic_modifiers: [
 							{
 								name: "tconstruct:smite"
@@ -653,7 +649,11 @@
 								level: 1s
 							}
 						]
-						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:silver"
+							"tconstruct:silver"
+							"tconstruct:silver"
+						]
 						tic_persistent_data: {
 							upgrades: 3
 							abilities: 1

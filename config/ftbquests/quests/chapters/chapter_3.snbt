@@ -293,7 +293,11 @@
 			shape: "hexagon"
 			subtitle: "{chapter.3.quest.11.subtitle}"
 			description: ["{chapter.3.quest.11.description.1}"]
-			dependencies: ["4D7BFA8973D61425"]
+			dependencies: [
+				"4D7BFA8973D61425"
+				"343B8B2BF76B1D3B"
+			]
+			dependency_requirement: "one_completed"
 			size: 1.25d
 			id: "624026189BBACBB0"
 			tasks: [
@@ -408,11 +412,12 @@
 			}]
 		}
 		{
-			x: 10.0d
-			y: -0.5d
+			x: 10.5d
+			y: 0.5d
 			subtitle: "{chapter.3.quest.14.subtitle}"
 			description: ["{chapter.3.quest.14.description.1}"]
 			dependencies: ["343B8B2BF76B1D3B"]
+			optional: true
 			id: "4D7BFA8973D61425"
 			tasks: [{
 				id: "773F68FCB1D6F848"
@@ -2256,6 +2261,65 @@
 				id: "4F4AC8EE18D127B0"
 				type: "xp"
 				xp: 50
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: ["41926BDF2F7890F6"]
+			id: "37C25EAADC8B13F1"
+			tasks: [{
+				id: "7B94B2EFD24677D0"
+				type: "item"
+				item: {
+					id: "grapplemod:grapplinghook"
+					Count: 1b
+					tag: {
+						Damage: 0
+						custom: {
+							smartmotor: 0b
+							detachonkeyrelease: 0b
+							rocket_force: 1.0d
+							doublehook: 0b
+							angle: 20.0d
+							motorwhennotcrouching: 1b
+							playermovementmult: 1.0d
+							throwspeed: 2.0d
+							motordampener: 0b
+							rocket_vertical_angle: 0.0d
+							sticky: 0b
+							repelforce: 1.0d
+							attractradius: 3.0d
+							reelin: 1b
+							phaserope: 0b
+							attract: 0b
+							motoracceleration: 0.2d
+							verticalthrowangle: 0.0d
+							hookgravity: 1.0d
+							crc32: 2252267022L
+							maxlen: 30.0d
+							motormaxspeed: 4.0d
+							repel: 0b
+							sneakingangle: 10.0d
+							motorwhencrouching: 0b
+							pullbackwards: 1b
+							smartdoublemotor: 1b
+							sneakingverticalthrowangle: 0.0d
+							rocket_refuel_ratio: 15.0d
+							rocket_active_time: 0.5d
+							oneropepull: 0b
+							enderstaff: 0b
+							motor: 0b
+							rocket: 0b
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "4FBAE39D42CDA85F"
+				type: "item"
+				item: "another_furniture:service_bell"
 			}]
 		}
 	]

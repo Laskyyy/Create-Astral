@@ -856,9 +856,7 @@
 					id: "tconstruct:kama"
 					Count: 1b
 					tag: {
-						tic_multipliers: {
-							"tconstruct:attack_damage": 0.5f
-						}
+						Damage: 0
 						tic_stats: {
 							"tconstruct:attack_damage": 1.5749999f
 							"tconstruct:harvest_tier": "minecraft:netherite"
@@ -866,12 +864,10 @@
 							"tconstruct:mining_speed": 9.6f
 							"tconstruct:attack_speed": 1.6f
 						}
-						Damage: 0
-						tic_materials: [
-							"tconstruct:hepatizon"
-							"tconstruct:hepatizon"
-							"tconstruct:hepatizon"
-						]
+						tic_multipliers: {
+							"tconstruct:attack_damage": 0.5f
+						}
+						tic_broken: 0b
 						tic_modifiers: [
 							{
 								name: "tconstruct:momentum"
@@ -886,7 +882,11 @@
 								level: 1s
 							}
 						]
-						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:hepatizon"
+							"tconstruct:hepatizon"
+							"tconstruct:hepatizon"
+						]
 						tic_persistent_data: {
 							upgrades: 3
 							abilities: 1

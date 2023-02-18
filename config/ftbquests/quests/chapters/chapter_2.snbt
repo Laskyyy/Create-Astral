@@ -804,23 +804,23 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 15.0d
+			x: -5.0d
+			y: 6.5d
 			subtitle: "{chapter.2.quest.29.subtitle}"
 			description: ["{chapter.2.quest.29.description.1}"]
-			dependencies: ["5BE7EBA598FD5EE0"]
+			dependencies: ["1DEF161DE26F3587"]
 			optional: true
 			id: "392516C890B749C8"
 			tasks: [{
 				id: "4338CFB76306088F"
 				type: "item"
-				item: "extractinator:extractinator"
+				item: "createsifter:sifter"
 			}]
 		}
 		{
 			title: "{chapter.2.quest.30.title}"
-			x: -3.0d
-			y: 15.0d
+			x: -5.0d
+			y: 7.5d
 			shape: "diamond"
 			subtitle: "{chapter.2.quest.30.subtitle}"
 			dependencies: ["392516C890B749C8"]
