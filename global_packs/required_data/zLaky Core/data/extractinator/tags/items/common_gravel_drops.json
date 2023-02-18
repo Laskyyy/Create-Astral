@@ -1,8 +1,0 @@
-{
-  "replace": "true",
-  "values": [
-    "minecraft:gunpowder",
-    "minecraft:glowstone_dust",
-    "ae2:certus_quartz_dust"
-  ]
-}
