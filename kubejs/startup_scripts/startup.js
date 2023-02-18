@@ -986,6 +986,17 @@ onEvent('item.tooltip', e => {
       
     }
   })
+
+  e.addAdvanced('createastral:andesite_compound', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('Texture courtesy of Jamiscus!').white(),])
+      
+    }
+  })
 })
 
   
