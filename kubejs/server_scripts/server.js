@@ -3072,6 +3072,49 @@ event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "creat
 event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:brass_mesh" }, {  "tag": "c:deepslate" } ], "results": [ { "item": "minecraft:redstone", "chance": 0.07 }, { "item": "create:copper_nugget", "chance": 0.05 }], "processingTime": 200 }
 )
 
+event.custom({
+  "type": "createsifter:sifting",
+  "ingredients": [
+    {
+      "item": "minecraft:clay"
+    },
+    {
+      "item": "createsifter:andesite_mesh"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:kelp",
+      "chance": 0.2
+    },
+    {
+      "item": "minecraft:seagrass",
+      "chance": 0.3
+    },
+    {
+      "item": "minecraft:tube_coral",
+      "chance": 0.05
+    },
+    {
+      "item": "minecraft:brain_coral",
+      "chance": 0.05
+    },
+    {
+      "item": "minecraft:bubble_coral",
+      "chance": 0.05
+    },
+    {
+      "item": "minecraft:fire_coral",
+      "chance": 0.05
+    },
+    {
+      "item": "minecraft:horn_coral",
+      "chance": 0.05
+    }
+  ],
+  "processingTime": 500,
+  "waterlogged": true
+})
 
 /// end sifter
 
