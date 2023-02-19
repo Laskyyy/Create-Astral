@@ -3,7 +3,7 @@
 [general]
 	#Forge Energy conversion rate (in FE/t at 256 RPM).
 	#Range: > 0
-	fe_conversion = 20
+	fe_conversion = 15
 	#Max stress for the Alternator and Electric Motor (in SU at 256 RPM).
 	#Range: > 0
 	baseline_stress = 8192
@@ -27,7 +27,7 @@
 [alternator]
 	#Alternator efficiency relative to base conversion rate.
 	#Range: 0.01 ~ 1.0
-	generator_efficiency = 0.5
+	generator_efficiency = 1
 	#Alternator internal capacity in FE.
 	#Range: 0 ~ 2147483647
 	generator_capacity = 2048

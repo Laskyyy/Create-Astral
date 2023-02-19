@@ -28,7 +28,7 @@
     },
     "DragonEggSiphonerEnergyPerTick": {
       "comment": "Dragon Egg Siphoner Energy Per Tick",
-      "value": 4
+      "value": 15
     }
   },
   "water_mill": {
@@ -56,7 +56,7 @@
     },
     "WindMillEnergyPerTick": {
       "comment": "Wind Mill generation rate (Energy Per Tick)",
-      "value": 2
+      "value": 5
     },
     "WindMillThunderMultiplier": {
       "comment": "Wind Mill Thunder Multiplier",
@@ -80,11 +80,11 @@
   "solarPanelBasic": {
     "basicNightRate": {
       "comment": "Generation rate during night for Basic Solar Panel (Energy per tick)",
-      "value": 0
+      "value": 2
     },
     "basicDayRate": {
       "comment": "Generation rate during day for Basic Solar Panel (Energy per tick)",
-      "value": 5
+      "value": 6
     }
   },
   "thermal_generator": {
@@ -104,11 +104,11 @@
   "solarPanelAdvanced": {
     "advancedNightRate": {
       "comment": "Generation rate during night for Advanced Solar Panel (Energy per tick)",
-      "value": 0
+      "value": 4
     },
     "advancedDayRate": {
       "comment": "Generation rate during day for Advanced Solar Panel (Energy per tick)",
-      "value": 8
+      "value": 12
     }
   },
   "solarPanelQuantum": {
@@ -142,7 +142,7 @@
     },
     "GeneratorEnergyOutput": {
       "comment": "Solid Fuel Generator Energy Per Tick",
-      "value": 4
+      "value": 7
     }
   },
   "semifluid_generator": {
@@ -156,7 +156,7 @@
     },
     "SemifluidGeneratorEnergyPerTick": {
       "comment": "Semifluid Generator Energy Per Tick",
-      "value": 8
+      "value": 12
     }
   },
   "gas_generator": {
