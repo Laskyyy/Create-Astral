@@ -997,6 +997,17 @@ onEvent('item.tooltip', e => {
       
     }
   })
+
+  e.addAdvanced('extractinator:extractinator', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('Purely decorative. No functional use.').white(),])
+      
+    }
+  })
 })
 
   
