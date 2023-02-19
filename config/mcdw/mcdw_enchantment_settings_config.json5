@@ -1,11 +1,11 @@
 {
 	"ENABLE_ENCHANTMENT_SETTINGS": {
 		"EXTRA_XP_HEALING": false,
+		"SHARED_PAIN_CAN_DAMAGE_USER": false,
+		"ENABLE_OP_ENCHANTMENT_MIXING": false,
 		"AREA_OF_EFFECT_ENCHANTS_DONT_AFFECT_PLAYERS": true,
 		"LEECHING_CAN_BE_MIXED_WITH_HEALING": false,
-		"ENABLE_INNATE_ENCHANTMENTS": true,
-		"SHARED_PAIN_CAN_DAMAGE_USER": false,
-		"ENABLE_OP_ENCHANTMENT_MIXING": false
+		"ENABLE_INNATE_ENCHANTMENTS": true
 	},
 	// ENIGMA_RESONATOR_DIVISOR -> Higher number = lower damage. Default value = 3.25.
 	"ENIGMA_RESONATOR_DIVISOR": {
@@ -46,5 +46,5 @@
 		"WILD_RAGE": 10
 	},
 	// Overall Enchantment Strength Slider
-	"enchantmentStrength": 1.0
+	"enchantmentStrength": 0.4
 }
