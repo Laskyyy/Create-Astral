@@ -1080,7 +1080,6 @@ onEvent('recipes', event => {
 	
 	event.remove({output: 'phonos:redstone_chip'})
 	event.remove({mod: 'doodads'})
-  event.remove({mod: 'grapplemod'})
   event.remove({mod: 'createsifter'})
   event.remove({type: 'createsifter:sifting'})
 	event.remove({output: 'minecraft:bow'})
@@ -2080,17 +2079,6 @@ event.recipes.createMechanicalCrafting('polaroidcamera:camera', [
   
 })
 
-event.shaped('grapplemod:grapplinghook', [
-  'A  ',
-  'BCB',
-  'BBB'
-], {
-  A: 'create:brass_hand',
-  B: 'campanion:rope',
-  C: 'minecraft:lead'
-
-  
-})
 
 
 	event.recipes.createMechanicalCrafting('ad_astra:energizer', [
