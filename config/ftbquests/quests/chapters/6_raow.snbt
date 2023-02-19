@@ -197,9 +197,11 @@
 		}
 		{
 			title: "{chapter.8.quest.7.title}"
+			icon: "ad_astra:deepslate_calorite_ore"
 			x: 6.5d
 			y: -2.5d
 			dependencies: ["7A4255522DA6FEB7"]
+			min_required_tasks: 1
 			id: "4329020373E27B1F"
 			tasks: [
 				{
@@ -211,6 +213,11 @@
 					id: "0F3F6D863D96B439"
 					type: "item"
 					item: "ad_astra:deepslate_calorite_ore"
+				}
+				{
+					id: "2B411B45F9CDBE75"
+					type: "checkmark"
+					title: "I understand!"
 				}
 			]
 		}

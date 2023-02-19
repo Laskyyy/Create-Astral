@@ -1851,11 +1851,18 @@
 					count: 4L
 				}
 			]
-			rewards: [{
-				id: "67867CF7F86A799D"
-				type: "item"
-				item: "adoptafloppa:the_dog_item"
-			}]
+			rewards: [
+				{
+					id: "67867CF7F86A799D"
+					type: "item"
+					item: "adoptafloppa:the_dog_item"
+				}
+				{
+					id: "377F84C6D97AF79A"
+					type: "item"
+					item: "adoptafloppa:amazon_delivery"
+				}
+			]
 		}
 		{
 			title: "{chapter.3.quest.60.title}"
@@ -2283,29 +2290,29 @@
 							rocket_force: 1.0d
 							doublehook: 0b
 							angle: 20.0d
-							motorwhennotcrouching: 1b
 							playermovementmult: 1.0d
+							motorwhennotcrouching: 1b
 							throwspeed: 2.0d
 							motordampener: 0b
-							rocket_vertical_angle: 0.0d
 							sticky: 0b
-							repelforce: 1.0d
+							rocket_vertical_angle: 0.0d
 							attractradius: 3.0d
+							repelforce: 1.0d
 							reelin: 1b
 							phaserope: 0b
 							attract: 0b
 							motoracceleration: 0.2d
-							verticalthrowangle: 0.0d
 							hookgravity: 1.0d
+							verticalthrowangle: 0.0d
 							crc32: 2252267022L
 							maxlen: 30.0d
 							motormaxspeed: 4.0d
-							repel: 0b
 							sneakingangle: 10.0d
+							repel: 0b
 							motorwhencrouching: 0b
-							pullbackwards: 1b
-							smartdoublemotor: 1b
 							sneakingverticalthrowangle: 0.0d
+							smartdoublemotor: 1b
+							pullbackwards: 1b
 							rocket_refuel_ratio: 15.0d
 							rocket_active_time: 0.5d
 							oneropepull: 0b

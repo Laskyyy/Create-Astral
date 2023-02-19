@@ -382,9 +382,10 @@
 			size: 1.5d
 			id: "604CF717881C323A"
 			tasks: [{
-				id: "29F229B39989651C"
-				type: "item"
-				item: "create:andesite_casing"
+				id: "705806F9DF2C4D4E"
+				type: "advancement"
+				advancement: "create:andesite_casing"
+				criterion: ""
 			}]
 		}
 		{

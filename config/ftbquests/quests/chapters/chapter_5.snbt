@@ -856,7 +856,9 @@
 					id: "tconstruct:kama"
 					Count: 1b
 					tag: {
-						Damage: 0
+						tic_multipliers: {
+							"tconstruct:attack_damage": 0.5f
+						}
 						tic_stats: {
 							"tconstruct:attack_damage": 1.5749999f
 							"tconstruct:harvest_tier": "minecraft:netherite"
@@ -864,10 +866,12 @@
 							"tconstruct:mining_speed": 9.6f
 							"tconstruct:attack_speed": 1.6f
 						}
-						tic_multipliers: {
-							"tconstruct:attack_damage": 0.5f
-						}
-						tic_broken: 0b
+						Damage: 0
+						tic_materials: [
+							"tconstruct:hepatizon"
+							"tconstruct:hepatizon"
+							"tconstruct:hepatizon"
+						]
 						tic_modifiers: [
 							{
 								name: "tconstruct:momentum"
@@ -882,11 +886,7 @@
 								level: 1s
 							}
 						]
-						tic_materials: [
-							"tconstruct:hepatizon"
-							"tconstruct:hepatizon"
-							"tconstruct:hepatizon"
-						]
+						tic_broken: 0b
 						tic_persistent_data: {
 							upgrades: 3
 							abilities: 1
@@ -1620,9 +1620,11 @@
 		}
 		{
 			title: "{chapter.7.quest.73.title}"
+			icon: "ad_astra:mars_ostrum_ore"
 			x: -11.5d
 			y: -4.5d
 			dependencies: ["253F29A00B4EA050"]
+			min_required_tasks: 1
 			id: "45F455EC8BF84ADB"
 			tasks: [
 				{
@@ -1640,6 +1642,11 @@
 					block: "techreborn:deepslate_lead_ore"
 					value: 32L
 					checkItem: false
+				}
+				{
+					id: "306A86A91B8059A1"
+					type: "checkmark"
+					title: "I understand!"
 				}
 			]
 		}

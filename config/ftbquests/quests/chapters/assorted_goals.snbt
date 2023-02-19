@@ -1049,9 +1049,9 @@
 				Count: 1b
 				tag: {
 					Automobile: {
-						engine: "automobility:stone"
-						frame: "automobility:yellow_tractor"
 						wheels: "automobility:standard"
+						frame: "automobility:yellow_tractor"
+						engine: "automobility:stone"
 					}
 				}
 			}
@@ -1139,9 +1139,9 @@
 						Count: 1b
 						tag: {
 							Automobile: {
-								wheels: "automobility:standard"
-								frame: "automobility:yellow_tractor"
 								engine: "automobility:stone"
+								frame: "automobility:yellow_tractor"
+								wheels: "automobility:standard"
 							}
 						}
 					}
@@ -1660,8 +1660,8 @@
 								realCount: 0
 							}
 							PackageStyle: {
-								inner: "minecraft:oak_planks"
 								frame: "minecraft:oak_log"
+								inner: "minecraft:oak_planks"
 								color: 0
 							}
 						}
@@ -1840,9 +1840,11 @@
 		}
 		{
 			title: "{chapter.1.quest.63.title}"
+			icon: "minecraft:coal_ore"
 			x: -4.5d
 			y: 8.5d
 			dependencies: ["0FC0B4E8EC58F791"]
+			min_required_tasks: 1
 			id: "49202443C0D32255"
 			tasks: [
 				{
@@ -1916,6 +1918,11 @@
 					block: "minecraft:emerald_ore"
 					value: 1L
 					checkItem: false
+				}
+				{
+					id: "2CAB697E724073A6"
+					type: "checkmark"
+					title: "I understand!"
 				}
 			]
 			rewards: [{
