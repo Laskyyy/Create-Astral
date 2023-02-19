@@ -1,0 +1,23 @@
+{
+  "replace": "true",
+  "type": "extractinator:extractinating",
+  "input": {
+    "item": "minecraft:soul_sand"
+  },
+  "drops": [
+    {
+      "drop": "#extractinator:rare_nether_drops",
+      "drop_chance": 0.05,
+      "min_drop_count": 1,
+      "max_drop_count": 2
+    },
+    {
+      "drop": "#extractinator:very_rare_nether_drops",
+      "drop_chance": 0.002
+    },
+    {
+      "drop": "#extractinator:very_rare_rare_nether_drops",
+      "drop_chance": 0.0001
+    }
+  ]
+}

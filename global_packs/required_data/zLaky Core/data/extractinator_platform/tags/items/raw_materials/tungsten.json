@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "required": false,
+      "id": "#c:raw_tungsten_ores"
+    },
+    {
+      "required": false,
+      "id": "#forge:raw_materials/tungsten"
+    }
+  ]
+}

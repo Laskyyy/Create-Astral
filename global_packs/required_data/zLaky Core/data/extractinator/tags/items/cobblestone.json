@@ -1,0 +1,14 @@
+{
+  "values": [
+    {
+      "required": false,
+      "id": "#extractinator_platform:cobblestone"
+    },
+    {
+      "required": false,
+      "id": "#extractinator_platform:netherrack"
+    },
+    "minecraft:cobblestone",
+    "minecraft:netherrack"
+  ]
+}

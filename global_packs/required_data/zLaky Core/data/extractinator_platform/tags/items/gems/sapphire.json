@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "required": false,
+      "id": "#c:sapphires"
+    },
+    {
+      "required": false,
+      "id": "#c:sapphire"
+    },
+    {
+      "required": false,
+      "id": "#forge:gems/sapphire"
+    }
+  ]
+}

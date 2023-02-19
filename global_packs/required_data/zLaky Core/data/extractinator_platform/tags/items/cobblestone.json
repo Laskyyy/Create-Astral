@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "required": false,
+      "id": "#c:cobblestone"
+    },
+    {
+      "required": false,
+      "id": "#forge:cobblestone"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "required": false,
+      "id": "#c:bauxite_dusts"
+    },
+    {
+      "required": false,
+      "id": "#forge:dusts/bauxite"
+    }
+  ]
+}

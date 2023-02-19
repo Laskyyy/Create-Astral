@@ -1,0 +1,10 @@
+{
+  "replace": "true",
+  "values": [
+    "minecraft:iron_nugget",
+    "create:copper_nugget",
+    "minecraft:gold_nugget",
+    "techreborn:tin_nugget",
+    "minecraft:flint"
+  ]
+}

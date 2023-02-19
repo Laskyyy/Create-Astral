@@ -1,0 +1,19 @@
+{
+  "replace": "true",
+  "type": "extractinator:extractinating",
+  "input": {
+    "item": "ad_astra:moon_sand"
+  },
+  "drops": [
+    {
+      "drop": "#extractinator:common_gravel_drops",
+      "drop_chance": 0.05,
+      "min_drop_count": 1,
+      "max_drop_count": 2
+    },
+    {
+      "drop": "#extractinator:very_rare_drops_moon",
+      "drop_chance": 0.004
+    }
+  ]
+}

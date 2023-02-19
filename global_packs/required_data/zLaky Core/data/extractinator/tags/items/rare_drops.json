@@ -1,0 +1,8 @@
+{
+  "replace": "true",
+  "values": [
+    "minecraft:redstone",
+    "ae2:certus_quartz_dust",
+    "minecraft:quartz"
+  ]
+}
