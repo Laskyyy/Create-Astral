@@ -1,14 +1,14 @@
-name = "Create"
-filename = "create-fabric-0.5.0.i-963+1.18.2.jar"
+name = "Create Fabric"
+filename = "create-fabric-0.5.0.i-944+1.18.2.jar"
 side = "both"
 
 [download]
-mode = "metadata:curseforge"
-url = ""
-hash-format = "sha1"
-hash = "c5f4d3a29f714db742eb898553db02bde376a7f5"
+mode = "url"
+url = "https://cdn.modrinth.com/data/Xbc0uyRg/versions/eMmAlNIo/create-fabric-0.5.0.i-944%2B1.18.2.jar"
+hash-format = "sha512"
+hash = "f56c948f706ff1bed860e42997cdd195993745ac112bd7626d61180e89c0b684a883ef09e7115ed19127bb6d9ae7fceb46cdc7447dd12eb1c9ac7bddcd0d3ffd"
 
 [update]
-[update.curseforge]
-file-id = 4396646
-project-id = 624165
+[update.modrinth]
+mod-id = "Xbc0uyRg"
+version = "eMmAlNIo"
