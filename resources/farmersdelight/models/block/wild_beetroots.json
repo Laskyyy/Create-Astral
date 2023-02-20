@@ -1,0 +1,6 @@
+{
+    "parent": "block/croptall",
+    "textures": {
+        "croptall": "block/sea_corn_full"
+    }
+}
