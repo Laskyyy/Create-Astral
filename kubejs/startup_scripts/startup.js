@@ -263,6 +263,14 @@ onEvent("item.modification", event => {
     item.burnTime = 50000
   })
 
+  event.modify('ad_astra:oil_bucket', item => {
+    item.burnTime = 40000
+  })
+
+  event.modify('ad_astra:oilt', item => {
+    item.burnTime = 40000
+  })
+
 })		
 
 
