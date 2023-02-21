@@ -1779,58 +1779,58 @@ event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:
 
 
 	
-	event.recipes.createMixing(Fluid.of('tconstruct:molten_brass', 16200), [
+	event.recipes.createMixing(Fluid.of('tconstruct:molten_brass', 18000), [
     'minecraft:copper_ingot',
     'create:zinc_ingot'
 ]).heated().processingTime(300)
-	event.recipes.createMixing(Fluid.of('tconstruct:molten_brass', 810), [
-    {fluid: 'tconstruct:molten_copper', amount: 405},
-    {fluid: 'tconstruct:molten_zinc', amount: 405}
+	event.recipes.createMixing(Fluid.of('tconstruct:molten_brass', 1800), [
+    {fluid: 'tconstruct:molten_copper', amount: 900},
+    {fluid: 'tconstruct:molten_zinc', amount: 900}
 ]).heated().processingTime(5)
-	event.recipes.createMixing(Fluid.of('tconstruct:molten_amethyst_bronze', 8100), [
+	event.recipes.createMixing(Fluid.of('tconstruct:molten_amethyst_bronze', 9000), [
     'createastral:bronze_ingot',
     'minecraft:amethyst_shard'
 ]).heated().processingTime(300)
-	event.recipes.createMixing(Fluid.of('tconstruct:molten_amethyst_bronze', 405), [
-    {fluid: 'tconstruct:molten_bronze', amount: 405},
-    {fluid: 'tconstruct:molten_amethyst', amount: 405}
+	event.recipes.createMixing(Fluid.of('tconstruct:molten_amethyst_bronze', 900), [
+    {fluid: 'tconstruct:molten_bronze', amount: 900},
+    {fluid: 'tconstruct:molten_amethyst', amount: 900}
 ]).heated()
-event.recipes.createMixing(Fluid.of('tconstruct:molten_bronze', 810), [
-  {fluid: 'tconstruct:molten_tin', amount: 405},
-  {fluid: 'tconstruct:molten_copper', amount: 405}
+event.recipes.createMixing(Fluid.of('tconstruct:molten_bronze', 1800), [
+  {fluid: 'tconstruct:molten_tin', amount: 900},
+  {fluid: 'tconstruct:molten_copper', amount: 900}
 ]).heated()
 
-// 	event.recipes.createMixing(Fluid.of('tconstruct:molten_rose_gold', 8100), [
+// 	event.recipes.createMixing(Fluid.of('tconstruct:molten_rose_gold', 9000), [
 //     'minecraft:copper_ingot',
 //     'minecraft:gold_ingot'
 // ]).processingTime(300)
 
 //  Heated ingot version of above recipe
 // TODO: does the fluid amount output add up to an ammount that makes sense?
-	event.recipes.createMixing(Fluid.of('tconstruct:molten_rose_gold', 8100), [
+	event.recipes.createMixing(Fluid.of('tconstruct:molten_rose_gold', 9000), [
     'minecraft:copper_ingot',
     'minecraft:gold_ingot'
 ]).processingTime(300).heated()
 
-event.recipes.createMixing(Fluid.of('tconstruct:molten_bronze', 16200), [
+event.recipes.createMixing(Fluid.of('tconstruct:molten_bronze', 18000), [
   'minecraft:copper_ingot',
   'techreborn:tin_ingot'
 ]).processingTime(300)
 
-	event.recipes.createMixing(Fluid.of('tconstruct:molten_rose_gold', 405), [
-    {fluid: 'tconstruct:molten_copper', amount: 405},
-    {fluid: 'tconstruct:molten_gold', amount: 405}
+	event.recipes.createMixing(Fluid.of('tconstruct:molten_rose_gold', 900), [
+    {fluid: 'tconstruct:molten_copper', amount: 900},
+    {fluid: 'tconstruct:molten_gold', amount: 900}
 ]).processingTime(10)
-event.recipes.createMixing(Fluid.of('tconstruct:molten_electrum', 405), [
-  {fluid: 'tconstruct:molten_silver', amount: 405},
-  {fluid: 'tconstruct:molten_gold', amount: 405}
+event.recipes.createMixing(Fluid.of('tconstruct:molten_electrum', 900), [
+  {fluid: 'tconstruct:molten_silver', amount: 900},
+  {fluid: 'tconstruct:molten_gold', amount: 900}
 ]).heated()
 
-event.recipes.createMixing(Fluid.of('tconstruct:molten_steel', 8100), [
+event.recipes.createMixing(Fluid.of('tconstruct:molten_steel', 9000), [
 'techreborn:steel_dust'
 ]).superheated()
 
- 	event.recipes.createMixing(Fluid.of('tconstruct:molten_slimesteel', 8100), [
+ 	event.recipes.createMixing(Fluid.of('tconstruct:molten_slimesteel', 9000), [
     'minecraft:iron_ingot',
     'tconstruct:sky_slime_ball',
 	'#tconstruct:seared_blocks'
@@ -1855,7 +1855,7 @@ event.recipes.createFilling('techreborn:lithium_ion_battery', [
   {fluid: 'techreborn:lithium', amount: 81000},
 ])
 
-	event.recipes.createMixing(Fluid.of('tconstruct:molten_pig_iron', 8100), [
+	event.recipes.createMixing(Fluid.of('tconstruct:molten_pig_iron', 9000), [
     'minecraft:porkchop',
     'minecraft:iron_ingot',
 		'minecraft:gold_ingot'
@@ -1878,19 +1878,19 @@ event.recipes.createFilling('techreborn:lithium_ion_battery', [
 
 //  ]).heated().processingTime(700)
  
-	event.recipes.createMixing(Fluid.of('tconstruct:molten_queens_slime', 810), [
-    {fluid: 'tconstruct:molten_cobalt', amount: 405},
-	{fluid: 'tconstruct:molten_slimesteel', amount: 810},
+	event.recipes.createMixing(Fluid.of('tconstruct:molten_queens_slime', 1800), [
+    {fluid: 'tconstruct:molten_cobalt', amount: 900},
+	{fluid: 'tconstruct:molten_slimesteel', amount: 1800},
 ]).heated().processingTime(5)
-	event.recipes.createMixing(Fluid.of('tconstruct:molten_manyullyn', 12000), [
-    {fluid: 'tconstruct:molten_cobalt', amount: 32400},
-    '2x minecraft:netherite_scrap',
+	event.recipes.createMixing(Fluid.of('tconstruct:molten_manyullyn', 9000), [
+    {fluid: 'tconstruct:molten_cobalt', amount: 18000},
+    '1x minecraft:netherite_scrap',
 	{fluid: 'kubejs:molten_desh', amount: 9000},
 ]).heated().processingTime(1000)
 
-	event.recipes.createMixing(Fluid.of('tconstruct:molten_hepatizon', 810), [
-    {fluid: 'tconstruct:molten_cobalt', amount: 405},
-    {fluid: 'tconstruct:molten_lead', amount: 810},
+	event.recipes.createMixing(Fluid.of('tconstruct:molten_hepatizon', 1800), [
+    {fluid: 'tconstruct:molten_cobalt', amount: 900},
+    {fluid: 'tconstruct:molten_lead', amount: 1800},
 ]).heated().processingTime(5)
 	
 		event.recipes.createMixing(Fluid.of('tconstruct:molten_debris', 20250), [
@@ -2764,14 +2764,14 @@ event.recipes.createFilling('explorerscompass:explorerscompass', [
 
 
 event.recipes.createMixing(Fluid.of('kubejs:hellfire', 81), [
-  {fluid: 'minecraft:lava', amount: 8100},
+  {fluid: 'minecraft:lava', amount: 9000},
 ]).superheated()
 	
 	
 	event.recipes.createSequencedAssembly([ 
         'createastral:navigation_mechanism', 
       ], 'phonos:redstone_chip', [ 
-      event.recipes.createFilling('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', {fluid: 'tconstruct:molten_cobalt', amount: 1000}]), //fill bronze
+      event.recipes.createFilling('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', {fluid: 'tconstruct:molten_cobalt', amount: 1350}]), //fill bronze
       event.recipes.createDeploying('create:incomplete_precision_mechanism', ['techreborn:electrum_nugget', 'techreborn:electrum_nugget']), //fill bronze
       event.recipes.createPressing('create:incomplete_precision_mechanism', 'create:incomplete_precision_mechanism'),
     ]).transitionalItem('create:incomplete_precision_mechanism').loops(30)
@@ -2780,7 +2780,7 @@ event.recipes.createMixing(Fluid.of('kubejs:hellfire', 81), [
 	event.recipes.createSequencedAssembly([ 
   'create:integrated_circuit', 
 ], 'create:lapis_sheet', [ 
-  event.recipes.createFilling('create:lapis_sheet', ['create:lapis_sheet', {fluid: 'tconstruct:molten_silver', amount: 1300}]), //fill bronze
+  event.recipes.createFilling('create:lapis_sheet', ['create:lapis_sheet', {fluid: 'tconstruct:molten_silver', amount: 3375}]), //fill bronze
   event.recipes.createDeploying('create:lapis_sheet', ['create:lapis_sheet', 'createaddition:copper_wire']), //fill bronze
   event.recipes.createDeploying('create:lapis_sheet', ['create:lapis_sheet', 'createaddition:copper_wire']), //fill bronze
   event.recipes.createPressing('create:lapis_sheet', 'create:lapis_sheet'),
@@ -2790,7 +2790,7 @@ event.recipes.createMixing(Fluid.of('kubejs:hellfire', 81), [
 event.recipes.createSequencedAssembly([ 
   'techreborn:industrial_circuit',
   ], 'techreborn:electronic_circuit', [ 
-  event.recipes.createFilling('techreborn:electronic_circuit', ['techreborn:electronic_circuit', {fluid: 'techreborn:lithium', amount: 2500}]), //fill bronze
+  event.recipes.createFilling('techreborn:electronic_circuit', ['techreborn:electronic_circuit', {fluid: 'techreborn:lithium', amount: 4500}]), //fill bronze
   event.recipes.createPressing('techreborn:electronic_circuit', 'techreborn:electronic_circuit'),
   event.recipes.createDeploying('techreborn:electronic_circuit', ['techreborn:electronic_circuit', 'techreborn:machine_parts']),
   event.recipes.createDeploying('techreborn:electronic_circuit', ['techreborn:electronic_circuit', 'createastral:calorite_pin']), //fill bronze
@@ -2817,7 +2817,7 @@ event.recipes.createSequencedAssembly([
     event.recipes.createSequencedAssembly([ // begin
     'phonos:redstone_chip', // output
 ], 'create:electron_tube', [ // input
-event.recipes.createFilling('create:electron_tube', ['create:electron_tube', {fluid: 'tconstruct:molten_copper', amount: 3000}]), //fill bronze
+event.recipes.createFilling('create:electron_tube', ['create:electron_tube', {fluid: 'tconstruct:molten_copper', amount: 3375}]), //fill bronze
 event.recipes.createDeploying('create:electron_tube', ['create:electron_tube', '#c:wires']), //fill obsid
     event.recipes.createPressing('create:electron_tube', '#c:wires') //yeah
 ]).transitionalItem('create:electron_tube').loops(12)  
@@ -3489,7 +3489,7 @@ C: 'minecraft:light_weighted_pressure_plate'
 
 ///// MOST SHIMMER RELATED RECIPES (MANY OF THESE ARE ALSO DONE THRU THE DATAPACK INSTEAD) /////
 
-// event.recipes.createMixing(Fluid.of('kubejs:shimmer', 40500), [
+// event.recipes.createMixing(Fluid.of('kubejs:shimmer', 90000), [
 //   '5x minecraft:amethyst_shard',
 // '2x minecraft:glow_ink_sac'
 // ]).heated().processingTime(400)
@@ -3569,7 +3569,7 @@ event.recipes.createSequencedAssembly([ // begin
 event.recipes.createSequencedAssembly([ 
         'automobility:dash_panel', 
 		], 'ad_astra:iron_plate', [ 
-		event.recipes.createFilling('ad_astra:iron_plate', ['ad_astra:iron_plate', {fluid: 'kubejs:shimmer', amount: 8100}]).processingTime(75), //fill
+		event.recipes.createFilling('ad_astra:iron_plate', ['ad_astra:iron_plate', {fluid: 'kubejs:shimmer', amount: 9000}]).processingTime(75), //fill
     event.recipes.createPressing('ad_astra:iron_plate', 'ad_astra:iron_plate').processingTime(75),
     ]).transitionalItem('ad_astra:iron_plate').loops(3)
 
@@ -3589,12 +3589,12 @@ event.recipes.createSequencedAssembly([
 
   //Slime alternative
   event.recipes.createMixing('tconstruct:ichor_slime_ball', [
-    {fluid: 'kubejs:shimmer', amount: 8100},
+    {fluid: 'kubejs:shimmer', amount: 9000},
     '4x tconstruct:sky_slime_ball',
 ]).heated().processingTime(30)
 
 event.recipes.createMixing('tconstruct:ender_slime_ball', [
-  {fluid: 'kubejs:shimmer', amount: 8100},
+  {fluid: 'kubejs:shimmer', amount: 9000},
   '2x tconstruct:ichor_slime_ball',
 ]).heated().processingTime(30)
 
