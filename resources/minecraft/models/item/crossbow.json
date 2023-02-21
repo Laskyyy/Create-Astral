@@ -55,7 +55,7 @@
             "predicate": {
                 "charged": 1
             },
-            "model": "item/RifleModel"
+            "model": "item/RifleCharged"
         },
         {
             "predicate": {
