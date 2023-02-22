@@ -25,13 +25,13 @@ netheriteSpaceSuitTankSize = 162000
 netheriteSpaceSuitHasFireResistance = true
 jetSuitSpeed = 0.55
 jetSuitUpwardsSpeed = 0.2
-jetSuitEnergyPerTick = 250
-jetSuitTankSize = 324000
+jetSuitEnergyPerTick = 100
+jetSuitTankSize = 405000
 jetSuitMaxEnergy = 300000
 spawnJetSuitParticles = true
 enableJetSuitFlight = true
 jetSuitProtectionMultiplier = 1
-jetSuitArmorToughness = 5
+jetSuitArmorToughness = 4
 [vehicles]
 fallingExplosionThreshold = -1.2
 fallingExplosionMultiplier = 0.7
