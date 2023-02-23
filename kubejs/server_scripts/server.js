@@ -1119,9 +1119,22 @@ onEvent('recipes', event => {
 	event.remove({output: 'create:electron_tube'})
 	event.remove({output: 'minecraft:ender_eye'})
   event.remove({input: 'minecraft:crying_obsidian'})
-
   event.remove({input: 'create:blaze_burner'})
-	
+
+
+  event.remove({output: 'dbe:steel_ingot'})
+  event.remove({output: 'dbe:copper_coil'})
+  event.remove({output: 'dustrial_decor:cast_iron_billet'})
+  event.replaceInput('dbe:steel_ingot', 'dustrial_decor:cast_iron_billet')
+  event.replaceInput('dbe:basic_circuit', 'phonos:redstone_chip')
+  event.replaceInput({output: 'extendedflywheels:steelflywheel'}, 'create:andesite_alloy', 'ad_astra:steel_ingot')
+
+  event.recipes.createMixing('3x dustrial_decor:cast_iron_billet', [
+    'minecraft:iron_ingot',
+    '2x create:andesite_alloy',
+    'minecraft:coal'
+  ])
+   
 
 
 
@@ -2185,6 +2198,7 @@ event.shapeless(Item.of('computercraft:turtle_normal', {RightUpgrade:"minecraft:
 event.shapeless(Item.of('computercraft:turtle_normal', {RightUpgrade:"minecraft:diamond_shovel"}), ['computercraft:turtle_normal', 'minecraft:iron_shovel', 'minecraft:diamond']);
 event.shapeless(Item.of('computercraft:turtle_normal', {RightUpgrade:"minecraft:diamond_sword"}), ['computercraft:turtle_normal', 'minecraft:iron_sword', '2x minecraft:diamond']);
 event.shapeless(Item.of('computercraft:turtle_normal', {RightUpgrade:"minecraft:diamond_hoe"}), ['computercraft:turtle_normal', 'minecraft:iron_hoe', '2x minecraft:diamond']);
+event.shapeless(Item.of('dbe:track_end'), ['create:track']);
 
 
 ///PRESS PLATES WITH CREATE
