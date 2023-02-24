@@ -1,7 +1,7 @@
 {
   "name": "Electrolyser",
   "appearance": {
-    "block": "phonos:copper_speaker",    
+    "block": "createastral:electrolyser_dummy",    
     "running": {
       "lightlevel": 15
     }
