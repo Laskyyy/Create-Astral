@@ -1574,6 +1574,8 @@ event.recipes.createMechanicalCrafting('minecraft:elytra', [
   
 })
 
+event.shapeless(Item.of('techreborn:nitro_diesel_bucket'), ['ad_astra:fuel_bucket']);
+event.shapeless(Item.of('techreborn:oil_bucket'), ['ad_astra:oil_bucket']);
 
 
   event.custom({
@@ -2050,20 +2052,6 @@ event.recipes.createMechanicalCrafting('polaroidcamera:camera', [
   
 })
 
-
-	
-	event.recipes.createMechanicalCrafting('ad_astra:fuel_refinery', [
-  'BDCDB',
-  'BAEAB',
-  'BBEBB'
-], {
-  A: 'create:attribute_filter',
-  B: 'ad_astra:compressed_steel',
-  C: 'create:mechanical_mixer',
-  D: 'create:precision_mechanism',
-  E: 'create:fluid_tank'
-  
-})
 
 
 	event.shaped('ad_astra:oxygen_loader', [
