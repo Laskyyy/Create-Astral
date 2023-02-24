@@ -9,7 +9,7 @@
       "nbt": "empty"
     },
     {
-      "fluid": "ad_astra:oil",
+      "fluid": "techreborn:oil",
       "holder": "techreborn:cell",
       "count": 1
     }
@@ -19,7 +19,7 @@
       "item": "techreborn:cell",
       "count": 1,
       "nbt": {
-        "fluid": "ad_astra:fuel"
+        "fluid": "techreborn:nitro_diesel"
       }
     },
     {

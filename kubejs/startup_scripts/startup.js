@@ -259,17 +259,15 @@ onEvent("item.modification", event => {
   })
 
 
-  event.modify('ad_astra:fuel_bucket', item => {
+  event.modify('techreborn:fuel_bucket', item => {
     item.burnTime = 50000
   })
 
-  event.modify('ad_astra:oil_bucket', item => {
+  event.modify('techreborna:oil_bucket', item => {
     item.burnTime = 40000
   })
 
-  event.modify('ad_astra:oilt', item => {
-    item.burnTime = 40000
-  })
+
 
 })		
 

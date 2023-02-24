@@ -1,7 +1,6 @@
 {
   "replace": true,
   "values": [
-    "techreborn:nitro_diesel"
-
+    "minecraft:nether_wastes"
   ]
 }
