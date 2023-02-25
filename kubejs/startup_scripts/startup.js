@@ -49,8 +49,8 @@ onEvent('fluid.registry', event => {
 	.flowingTexture('tconstruct:block/fluid/molten/flowing')
 	
 	event.create('molten_ostrum')
-    .thickTexture(0x8d83a0)
-    .bucketColor(0x8d83a0)
+    .thickTexture(0x73515E)
+    .bucketColor(0x73515E)
     .displayName('Ostrum')
 	.stillTexture('tconstruct:block/fluid/molten/still')
 	.flowingTexture('tconstruct:block/fluid/molten/flowing')
@@ -373,6 +373,9 @@ onEvent('item.registry', event => {
 ///// REGISTER NEW ITEMS HERE /////
 
 
+event.create('createastral:crushed_desh_ore'),
+event.create('createastral:crushed_ostrum_ore'),
+event.create('createastral:crushed_calorite_ore'),
 event.create('createastral:subatomic_ingot'),
 event.create('createastral:astral_conduit'),
 event.create('createastral:andesite_compound'),

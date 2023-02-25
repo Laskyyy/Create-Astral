@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "ad_astra:raw_calorite"
+    "ad_astra:raw_calorite",
+    "createastral:crushed_calorite_ore"
   ]
 }
