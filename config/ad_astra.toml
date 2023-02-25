@@ -74,10 +74,10 @@ tankBuckets = 5
 maxEnergy = 100000
 fluidConversionEnergyPerTick = 5
 tankBuckets = 5
-maxBlockChecks = 2000
-refreshTicks = 60
-oxygenMultiplier = 0.8
-energyMultiplier = 0
+maxBlockChecks = 6000
+refreshTicks = 500
+oxygenMultiplier = 0.3
+energyMultiplier = 0.2
 [solarPanel]
 maxEnergy = 15000
 energyMultiplier = 1.05

@@ -36,7 +36,7 @@
 		{
 			"type": "custommachinery:fluid",
 			"fluid": "ad_astra:oxygen",
-			"amount": 405,
+			"amount": 860,
 			"mode": "output"
 		}
 	]
