@@ -955,7 +955,23 @@ function lizardCrushingOresYields(event) {
     Item.of('minecraft:coal').withChance(0.2),
     Item.of('create:experience_nugget').withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
   ], 'techreborn:raw_lead');
-
+  event.recipes.createCrushing([
+    'create:crushed_desh_ore',
+    Item.of('create:crushed_desh_ore').withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
+    Item.of('techreborn:silver_nugget').withChance(.2),
+    Item.of('create:experience_nugget').withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
+  ], 'ad_astra:raw_desh');
+  event.recipes.createCrushing([
+    'createastral:crushed_ostrum_ore',
+    Item.of('createastral:crushed_ostrum_ore').withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
+    Item.of('techreborn:lead_nugget').withChance(.2),
+    Item.of('create:experience_nugget').withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
+  ], 'ad_astra:raw_ostrum');
+  event.recipes.createCrushing([
+    'createastral:crushed_calorite_ore',
+    Item.of('createastral:crushed_calorite_ore').withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
+    Item.of('create:experience_nugget').withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
+  ], 'ad_astra:raw_calorite');
   const VANILLA_ORES_AND_ZINC = ['iron', 'gold', 'copper', 'zinc']; 
   for (let ore of VANILLA_ORES_AND_ZINC) {
     let raw_ore = ore != 'zinc'? 'minecraft:raw_' + ore: 'create:raw_zinc';
