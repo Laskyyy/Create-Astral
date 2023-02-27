@@ -62,6 +62,14 @@ onEvent('fluid.registry', event => {
 	.stillTexture('tconstruct:block/fluid/molten/still')
 	.flowingTexture('tconstruct:block/fluid/molten/flowing')
 
+  	
+	event.create('molten_yttrium')
+  .thickTexture(0x487d77)
+  .bucketColor(0x487d77)
+  .displayName('Yttrium')
+.stillTexture('tconstruct:block/fluid/molten/still')
+.flowingTexture('tconstruct:block/fluid/molten/flowing')
+
   event.create('plasma_fluid')
     .thickTexture(0x4cfbff)
     .bucketColor(0x4cfbff)
@@ -372,10 +380,19 @@ onEvent('item.registry', event => {
 
 ///// REGISTER NEW ITEMS HERE /////
 
+<<<<<<< Updated upstream
 
+<<<<<<< Updated upstream
 event.create('createastral:crushed_desh_ore'),
 event.create('createastral:crushed_ostrum_ore'),
 event.create('createastral:crushed_calorite_ore'),
+=======
+=======
+event.create('createastral:crushed_desh_ore'),
+event.create('createastral:crushed_ostrum_ore'),
+event.create('createastral:crushed_calorite_ore'),
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 event.create('createastral:subatomic_ingot'),
 event.create('createastral:astral_conduit'),
 event.create('createastral:andesite_compound'),
@@ -1180,32 +1197,20 @@ onEvent('worldgen.add', event => {
 
 
   event.addOre((ore) => {
-		ore.id = "kubejs:iridiumoremerc" // optional
+		ore.id = "kubejs:yttriumoremerc" // optional
 		ore.biomes = [{
 			not: {
 				category: "river"
 			}
 		}]
-		ore.addTarget('#ad_astra:mercury_ore_replaceables', 'techreborn:deepslate_iridium_ore')
+		ore.addTarget('#ad_astra:mercury_ore_replaceables', 'yttr:gadolinite')
 
-		ore.count([25, 40])
+		ore.count([25, 55])
 			.squared()
 			.triangleHeight(-64, 85)
 	})
 
-  event.addOre((ore) => {
-		ore.id = "kubejs:silveroremerc" // optional
-		ore.biomes = [{
-			not: {
-				category: "river"
-			}
-		}]
-		ore.addTarget('#ad_astra:mercury_ore_replaceables', 'techreborn:deepslate_silver_ore')
 
-		ore.count([25, 40])
-			.squared()
-			.triangleHeight(-64, 85)
-	})
 
   event.addOre((ore) => {
 		ore.id = "kubejs:caloriteore" // optional
