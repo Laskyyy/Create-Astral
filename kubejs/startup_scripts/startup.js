@@ -28,7 +28,7 @@ function lizardTooltipChanges(event) {
       // text.add(2, Text.green('16 '));
       // text.add(3, [Text.white('Iron, '), Text.aqua('Diamonds, '), Text.gold('Gold '), Text.white('or even '), Text.green('Emeralds '), Text.white('are valid base blocks!')])
       text.add(1, [Text.of('').white()]);
-      text.add(2, [Text.of('(It actually smelts ').darkGreen(), Text.of('16 items').green(), Text.of(", ignore what it says above)").darkGreen()]);
+      text.add(2, [Text.of('(It actually smelts ').darkGreen(), Text.of('16 items').green(), Text.of(', ignore what it says above)').darkGreen()]);
     }
   });
 }
@@ -246,7 +246,7 @@ onEvent('block.registry', event => {
     event.create('createastral:blast-resistant_concrete_slab', 'slab').hardness(4).resistance(1200).tagBlock('minecraft:mineable/pickaxe').textureAll('createastral:block/blast_side').texture('up','createastral:block/blast_top').texture('down','createastral:block/blast_top').material('stone')
     event.create('createastral:blast-resistant_concrete', 'basic').hardness(4).resistance(1200).tagBlock('minecraft:mineable/pickaxe').textureAll('createastral:block/blast_side').texture('up','createastral:block/blast_top').texture('down','createastral:block/blast_top').material('stone')
     event.create('createastral:blast-resistant_concrete_stairs', 'stairs').resistance(1200).hardness(4).tagBlock('minecraft:mineable/pickaxe').textureAll('createastral:block/blast_side').texture('up','createastral:block/blast_top').texture('down','createastral:block/blast_top').material('stone')
-
+    event.create('createastral:electrolyser_dummy', 'basic').hardness(4).resistance(1200).tagBlock('minecraft:mineable/pickaxe').textureAll('create:block/copper_casing').texture('down','createastral:block/electropipe').texture('north','createastral:block/electropipe')
     event.create('createastral:andesite_alloy_block', 'basic').hardness(4).tagBlock('minecraft:mineable/pickaxe').material('stone')
  })
 
@@ -503,7 +503,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Heavy and durable, a solid alternative to diamond. ').gold(),])
+      text.add(1, [Text.of('Heavy and durable, a solid alternative to diamond.').gold(),])
       
     }
   })
@@ -584,7 +584,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables. ').gold(),])
+      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables.').gold(),])
       
     }
   })
@@ -594,7 +594,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables. ').gold(),])
+      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables.').gold(),])
       
     }
   })
@@ -604,7 +604,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables. ').gold(),])
+      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables.').gold(),])
       
     }
   })
@@ -614,7 +614,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables. ').gold(),])
+      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables.').gold(),])
       
     }
   })
@@ -624,7 +624,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables. ').gold(),])
+      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables.').gold(),])
       
     }
   })
@@ -634,7 +634,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables. ').gold(),])
+      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables.').gold(),])
       
     }
   })
@@ -644,7 +644,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables. ').gold(),])
+      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables.').gold(),])
       
       
     }
@@ -655,7 +655,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables. ').gold(),])
+      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables.').gold(),])
       
     }
   })
@@ -665,7 +665,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables. ').gold(),])
+      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables.').gold(),])
       
     }
   })
@@ -947,8 +947,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('As durable as hard light can be. Extremely enchantable..').gold(),]),
-      text.add(2, [Text.of('Press (V) to toggle mining with weapons.').white(),])
+      text.add(1, [Text.of('As durable as hard light can be. Extremely enchantable.').gold(),])
       
     }
   })

@@ -1135,9 +1135,22 @@ onEvent('recipes', event => {
 	event.remove({output: 'create:electron_tube'})
 	event.remove({output: 'minecraft:ender_eye'})
   event.remove({input: 'minecraft:crying_obsidian'})
-
   event.remove({input: 'create:blaze_burner'})
-	
+
+
+  event.remove({output: 'dbe:steel_ingot'})
+  event.remove({output: 'dbe:copper_coil'})
+  event.remove({output: 'dustrial_decor:cast_iron_billet'})
+  event.replaceInput('dbe:steel_ingot', 'dustrial_decor:cast_iron_billet')
+  event.replaceInput('dbe:basic_circuit', 'phonos:redstone_chip')
+  event.replaceInput({output: 'extendedflywheels:steelflywheel'}, 'create:andesite_alloy', 'ad_astra:steel_ingot')
+
+  event.recipes.createMixing('3x dustrial_decor:cast_iron_billet', [
+    'minecraft:iron_ingot',
+    '2x create:andesite_alloy',
+    'minecraft:coal'
+  ])
+   
 
 
 
@@ -1515,8 +1528,8 @@ onEvent('recipes', event => {
   event.replaceOutput('techreborn:electronic_circuit', 'create:integrated_circuit')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:cupronickel_heating_coil', 'createastral:copper_heating_coil')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:nichrome_heating_coil', 'createastral:ender_heating_coil')
-  event.replaceInput({mod: 'techreborn'}, 'techreborn:energy_crystal', 'create:precision')
-  event.replaceInput({mod: 'techreborn'}, 'techreborn:lapotron_crystal', 'create:precision_mechanism')
+  event.replaceInput({mod: 'techreborn'}, 'techreborn:energy_crystal', 'techreborn:red_cell_battery')
+  event.replaceInput({mod: 'techreborn'}, 'techreborn:lapotron_crystal', 'techreborn:lithium_ion_battery')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:advanced_alloy_plate', 'techreborn:lead_plate')
   event.replaceInput({mod: 'techreborn', output: 'techreborn:advanced_drill'}, 'ad_astra:compressed_calorite', 'techreborn:lead_plate')
   event.replaceInput({mod: 'techreborn', output: 'techreborn:advanced_chainsaw'}, 'ad_astra:compressed_calorite', 'techreborn:lead_plate')
@@ -2192,6 +2205,7 @@ event.shapeless(Item.of('computercraft:turtle_normal', {RightUpgrade:"minecraft:
 event.shapeless(Item.of('computercraft:turtle_normal', {RightUpgrade:"minecraft:diamond_shovel"}), ['computercraft:turtle_normal', 'minecraft:iron_shovel', 'minecraft:diamond']);
 event.shapeless(Item.of('computercraft:turtle_normal', {RightUpgrade:"minecraft:diamond_sword"}), ['computercraft:turtle_normal', 'minecraft:iron_sword', '2x minecraft:diamond']);
 event.shapeless(Item.of('computercraft:turtle_normal', {RightUpgrade:"minecraft:diamond_hoe"}), ['computercraft:turtle_normal', 'minecraft:iron_hoe', '2x minecraft:diamond']);
+event.shapeless(Item.of('dbe:track_end'), ['create:track']);
 
 
 ///PRESS PLATES WITH CREATE
@@ -3691,3 +3705,9 @@ onEvent('player.logged_in', event => {
     event.player.give('ftbquests:book')
   }
 })
+
+
+onEvent("morejs.villager.trades", (event) => {
+  event.removeModdedTrades();
+  event.removeModdedTrades([...professions], level);
+});
