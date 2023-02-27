@@ -3698,3 +3698,9 @@ onEvent('player.logged_in', event => {
     event.player.give('ftbquests:book')
   }
 })
+
+
+onEvent("morejs.villager.trades", (event) => {
+  event.removeModdedTrades();
+  event.removeModdedTrades([...professions], level);
+});
