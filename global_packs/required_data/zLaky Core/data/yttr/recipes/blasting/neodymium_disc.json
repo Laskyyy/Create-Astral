@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:blasting",
+	"yttr:discovered_via": "yttr:neodymium_dust",
+	"ingredient": {
+		"item": "yttr:neodymium_dust"
+	},
+	"result": "yttr:neodymium_disc",
+	"cookingtime": 800
+}
