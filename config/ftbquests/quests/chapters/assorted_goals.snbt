@@ -1922,7 +1922,7 @@
 				{
 					id: "2CAB697E724073A6"
 					type: "checkmark"
-					title: "I understand!"
+					title: "{chapter.1.quest.63.task.10.title}"
 				}
 			]
 			rewards: [{
