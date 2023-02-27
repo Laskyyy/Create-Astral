@@ -1554,9 +1554,9 @@ onEvent('recipes', event => {
   event.replaceInput({mod: 'quarrymod'}, 'techreborn:peridot_storage_block', 'createastral:olivine_sheet')
   event.replaceInput({mod: 'quarrymod'}, 'techreborn:titanium_plate', 'ad_astra:compressed_steel')
   event.replaceInput({mod: 'quarrymod'}, 'techreborn:tungstensteel_plate', 'create:shadow_steel')
-  event.replaceInput('techreborn:iridium_ingot', 'yttr:yttrium_ingot')
-  event.replaceInput('techreborn:iridium_plate', 'yttr:yttrium_ingot')
-  event.replaceInput('techreborn:iridium_alloy_plate', 'yttr:yttrium_ingot')
+  event.replaceInput({mod: 'techreborn'},'techreborn:iridium_ingot', 'yttr:yttrium_ingot')
+  event.replaceInput({mod: 'techreborn'},'techreborn:iridium_plate', 'yttr:yttrium_ingot')
+  event.replaceInput({mod: 'techreborn'},'techreborn:iridium_alloy_plate', 'yttr:yttrium_ingot')
   event.replaceInput({output: 'ae2:fluid_cell_housing'}, 'techreborn:silver_plate', 'create:copper_casing')
 
 
@@ -1567,7 +1567,7 @@ onEvent('recipes', event => {
   'B'
 ], {
   A: 'createastral:olivine_sheet',
-  B: 'techreborn:iridium_alloy_plate',
+  B: 'yttr:yttrium_ingot',
   C: 'techreborn:industrial_circuit',
 
   
@@ -3692,6 +3692,24 @@ event.recipes.createFilling('minecraft:crimson_fungus', [
   {fluid: 'minecraft:lava', amount: 2250},
 ])
 
+
+//yttric rifle!!
+event.remove({output: 'yttr:rifle'});
+event.recipes.createMechanicalCrafting('yttr:rifle', [
+  'CCY  ',
+  'YMEIC',
+  ' CDYC',
+  '   C ',
+
+], {
+  Y: 'yttr:yttrium_ingot',
+  C: 'ad_astra:calorite_ingot',
+  I: 'techreborn:industrial_circuit',
+  E: 'techreborn:electronic_circuit',
+  D: 'techreborn:data_storage_chip',
+  M: 'minecraft:crossbow'
+})
+
   lizardPostLaskyChange(event);
 })
 
@@ -3705,9 +3723,3 @@ onEvent('player.logged_in', event => {
     event.player.give('ftbquests:book')
   }
 })
-
-
-onEvent("morejs.villager.trades", (event) => {
-  event.removeModdedTrades();
-  event.removeModdedTrades([...professions], level);
-});

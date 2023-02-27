@@ -70,6 +70,13 @@ onEvent('fluid.registry', event => {
 .stillTexture('tconstruct:block/fluid/molten/still')
 .flowingTexture('tconstruct:block/fluid/molten/flowing')
 
+event.create('molten_shadowsteel')
+.thickTexture(0x2e2742)
+.bucketColor(0x2e2742)
+.displayName('Yttrium')
+.stillTexture('tconstruct:block/fluid/molten/still')
+.flowingTexture('tconstruct:block/fluid/molten/flowing')
+
   event.create('plasma_fluid')
     .thickTexture(0x4cfbff)
     .bucketColor(0x4cfbff)
@@ -247,6 +254,8 @@ onEvent('block.registry', event => {
     event.create('createastral:blast-resistant_concrete', 'basic').hardness(4).resistance(1200).tagBlock('minecraft:mineable/pickaxe').textureAll('createastral:block/blast_side').texture('up','createastral:block/blast_top').texture('down','createastral:block/blast_top').material('stone')
     event.create('createastral:blast-resistant_concrete_stairs', 'stairs').resistance(1200).hardness(4).tagBlock('minecraft:mineable/pickaxe').textureAll('createastral:block/blast_side').texture('up','createastral:block/blast_top').texture('down','createastral:block/blast_top').material('stone')
     event.create('createastral:electrolyser_dummy', 'basic').hardness(4).resistance(1200).tagBlock('minecraft:mineable/pickaxe').textureAll('create:block/copper_casing').texture('down','createastral:block/electropipe').texture('north','createastral:block/electropipe')
+    event.create('createastral:voidtouched_compound', 'basic').hardness(4).resistance(1200).tagBlock('minecraft:mineable/pickaxe')
+
     event.create('createastral:andesite_alloy_block', 'basic').hardness(4).tagBlock('minecraft:mineable/pickaxe').material('stone')
  })
 
