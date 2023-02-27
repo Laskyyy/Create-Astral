@@ -217,7 +217,7 @@
 				{
 					id: "2B411B45F9CDBE75"
 					type: "checkmark"
-					title: "I understand!"
+					title: "{chapter.8.quest.7.task.3.title}"
 				}
 			]
 		}

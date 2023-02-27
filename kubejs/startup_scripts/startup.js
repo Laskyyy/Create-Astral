@@ -28,7 +28,7 @@ function lizardTooltipChanges(event) {
       // text.add(2, Text.green('16 '));
       // text.add(3, [Text.white('Iron, '), Text.aqua('Diamonds, '), Text.gold('Gold '), Text.white('or even '), Text.green('Emeralds '), Text.white('are valid base blocks!')])
       text.add(1, [Text.of('').white()]);
-      text.add(2, [Text.of('(It actually smelts ').darkGreen(), Text.of('16 items').green(), Text.of(", ignore what it says above)").darkGreen()]);
+      text.add(2, [Text.of('(It actually smelts ').darkGreen(), Text.of('16 items').green(), Text.of(', ignore what it says above)').darkGreen()]);
     }
   });
 }
@@ -485,7 +485,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Heavy and durable, a solid alternative to diamond. ').gold(),])
+      text.add(1, [Text.of('Heavy and durable, a solid alternative to diamond.').gold(),])
       
     }
   })
@@ -566,7 +566,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables. ').gold(),])
+      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables.').gold(),])
       
     }
   })
@@ -576,7 +576,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables. ').gold(),])
+      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables.').gold(),])
       
     }
   })
@@ -586,7 +586,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables. ').gold(),])
+      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables.').gold(),])
       
     }
   })
@@ -596,7 +596,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables. ').gold(),])
+      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables.').gold(),])
       
     }
   })
@@ -606,7 +606,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables. ').gold(),])
+      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables.').gold(),])
       
     }
   })
@@ -616,7 +616,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables. ').gold(),])
+      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables.').gold(),])
       
     }
   })
@@ -626,7 +626,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables. ').gold(),])
+      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables.').gold(),])
       
       
     }
@@ -637,7 +637,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables. ').gold(),])
+      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables.').gold(),])
       
     }
   })
@@ -647,7 +647,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables. ').gold(),])
+      text.add(1, [Text.of('Efficient to produce, particularly effective in enchanting tables.').gold(),])
       
     }
   })
@@ -929,8 +929,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('As durable as hard light can be. Extremely enchantable..').gold(),]),
-      text.add(2, [Text.of('Press (V) to toggle mining with weapons.').white(),])
+      text.add(1, [Text.of('As durable as hard light can be. Extremely enchantable.').gold(),])
       
     }
   })
