@@ -2990,7 +2990,7 @@
 				{
 					id: "3881AFE2E790DFCA"
 					type: "checkmark"
-					title: "I understand!"
+					title: "{chapter.5.quest.124.task.8.title}"
 				}
 			]
 			rewards: [{
