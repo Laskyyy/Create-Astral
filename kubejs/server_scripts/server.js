@@ -972,6 +972,11 @@ function lizardCrushingOresYields(event) {
     Item.of('createastral:crushed_calorite_ore').withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
     Item.of('create:experience_nugget').withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
   ], 'ad_astra:raw_calorite');
+  event.recipes.createCrushing([
+    'createastral:crushed_yttrium_ore',
+    Item.of('createastral:crushed_yttrium_ore').withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
+    Item.of('create:experience_nugget').withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
+  ], 'yttr:gadolinite');
   const VANILLA_ORES_AND_ZINC = ['iron', 'gold', 'copper', 'zinc']; 
   for (let ore of VANILLA_ORES_AND_ZINC) {
     let raw_ore = ore != 'zinc'? 'minecraft:raw_' + ore: 'create:raw_zinc';

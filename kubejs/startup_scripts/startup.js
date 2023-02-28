@@ -402,6 +402,7 @@ event.create('createastral:crushed_ostrum_ore'),
 event.create('createastral:crushed_calorite_ore'),
 >>>>>>> Stashed changes
 >>>>>>> Stashed changes
+event.create('createastral:crushed_yttrium_ore'),
 event.create('createastral:subatomic_ingot'),
 event.create('createastral:astral_conduit'),
 event.create('createastral:andesite_compound'),
