@@ -4,12 +4,12 @@
     {
       "condition": "fabric:item_tags_populated",
       "values": [
-        "c:steel_ingots"
+        "c:ingots/steel"
       ]
     }
   ],
   "ingredient": {
-    "tag": "c:steel_ingots"
+    "tag": "c:ingots/steel"
   },
   "result": {
     "fluid": "tconstruct:molten_steel",
