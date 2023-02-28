@@ -3067,13 +3067,11 @@ event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "creat
 event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:andesite_mesh" }, {  "item": "minecraft:basalt" } ], "results": [ { "item": "minecraft:ender_pearl", "chance": 0.04 }], "processingTime": 200 }
 )
 
-event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:brass_mesh" }, {  "item": "minecraft:cobblestone" } ], "results": [ { "item": "techreborn:tin_nugget", "chance": 0.08 }], "processingTime": 200,
-"waterlogged": true }
+event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:brass_mesh" }, {  "item": "minecraft:cobblestone" } ], "results": [ { "item": "techreborn:tin_nugget", "chance": 0.08 }], "processingTime": 200 }
 )
 event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:brass_mesh" }, {  "item": "minecraft:flint" } ], "results": [ { "item": "minecraft:music_disc_13", "chance": 0.001 }], "processingTime": 200 }
 )
-event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:brass_mesh" }, {  "item": "minecraft:cobbled_deepslate" } ], "results": [ { "item": "minecraft:redstone", "chance": 0.07 }, { "item": "create:copper_nugget", "chance": 0.05 }], "processingTime": 200,
-"waterlogged": true }
+event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:brass_mesh" }, {  "item": "minecraft:cobbled_deepslate" } ], "results": [ { "item": "minecraft:redstone", "chance": 0.07 }, { "item": "create:copper_nugget", "chance": 0.05 }], "processingTime": 200}
 )
 
 event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:brass_mesh" }, {  "item": "extractinator:silt" } ], "results": [ { "item": "minecraft:raw_iron", "chance": 0.2 }, { "item": "minecraft:raw_copper", "chance": 0.4 }, { "item": "minecraft:raw_gold", "chance": 0.2 }, { "item": "techreborn:raw_tin", "chance": 0.2 }, { "item": "create:raw_zinc", "chance": 0.2 }, { "item": "create:crushed_iron_ore", "chance": 0.2 }, { "item": "create:crushed_copper_ore", "chance": 0.4 }, { "item": "create:crushed_gold_ore", "chance": 0.2 }, { "item": "create:crushed_tin_ore", "chance": 0.2 }, { "item": "create:crushed_zinc_ore", "chance": 0.2 } ], "processingTime": 1000 }
@@ -3121,8 +3119,7 @@ event.custom({
       "chance": 0.05
     }
   ],
-  "processingTime": 500,
-  "waterlogged": true
+  "processingTime": 500
 })
 
 /// end sifter
