@@ -1487,7 +1487,7 @@ onEvent('recipes', event => {
   event.replaceInput({mod: 'techreborn'}, 'techreborn:zinc_plate', 'createaddition:zinc_sheet')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:zinc_ingot', 'create:zinc_ingot')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:zinc_nugget', 'create:zinc_nugget')
-  event.replaceInput('#c:steel_ingots', 'ad_astra:steel_ingot')
+  event.replaceInput('#c:ingots/steel', 'ad_astra:steel_ingot')
 
   event.remove({output: 'techreborn:zinc_plate'})
   event.remove({output: 'techreborn:zinc_ingot'})
