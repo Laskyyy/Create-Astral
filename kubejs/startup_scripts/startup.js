@@ -267,7 +267,7 @@ onEvent("item.modification", event => {
     item.burnTime = 40000
   })
 
-  event.modify('ad_astra:oilt', item => {
+  event.modify('ad_astra:oil', item => {
     item.burnTime = 40000
   })
 
