@@ -2965,7 +2965,7 @@ event.recipes.createMixing('8x tconstruct:grout', [
   event.smelting('techreborn:silver_ingot', 'create:crushed_silver_ore')
   event.smelting('techreborn:lead_ingot', 'create:crushed_lead_ore')
   event.smithing('farmersdelight:cooking_pot', 'farmersdelight:skillet', 'minecraft:water_bucket')
-
+  event.remove({output: 'techreborn:steel_plate'})
 
   ///STRING AUTOMATION
   event.recipes.createMilling([
