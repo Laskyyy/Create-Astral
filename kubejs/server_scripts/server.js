@@ -956,7 +956,7 @@ function lizardCrushingOresYields(event) {
     Item.of('create:experience_nugget').withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
   ], 'techreborn:raw_lead');
   event.recipes.createCrushing([
-    'create:crushed_desh_ore',
+    'createastral:crushed_desh_ore',
     Item.of('create:crushed_desh_ore').withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
     Item.of('techreborn:silver_nugget').withChance(.2),
     Item.of('create:experience_nugget').withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
