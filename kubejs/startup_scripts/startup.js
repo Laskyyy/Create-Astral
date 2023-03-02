@@ -108,10 +108,8 @@ onEvent('item.modification', event => {
 ///// MODIFY CHARACTERISTICS OF BLOCKS /////
 
 onEvent('block.modification', event => {
-  event.modify('lchunkloader:chunk_loader', block => {
-    block.destroySpeed = 999999
-    block.hasCollision = false
-	block.explosionResistance = 99999
+  event.modify('yigd:grave', block => {
+    block.destroySpeed = -1
   })
 	event.modify('create:large_cogwheel', block => {
 	block.material = "Lantern"
