@@ -3458,6 +3458,15 @@ event.recipes.createMixing('techreborn:steel_dust', [
 	F: 'campanion:rope'
 
 })
+event.shaped('campanion:tent_bag', [
+  ' A ',
+  'ABA',
+  ' A '
+], {
+A: 'campanion:rope',
+B: 'campanion:leather_pouch'
+
+})
 event.shaped('ad_astra:moon_globe', [
   'BBB',
   'BA ',
