@@ -1,0 +1,14 @@
+name = "Observable"
+filename = "observable-2.2.3-fabric.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "d5682dc84b2adc318b24e3a8026e76e94433b857"
+
+[update]
+[update.curseforge]
+file-id = 3745495
+project-id = 509575
