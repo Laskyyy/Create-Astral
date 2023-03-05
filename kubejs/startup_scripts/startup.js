@@ -1199,11 +1199,11 @@ onEvent('worldgen.add', event => {
 				category: "river"
 			}
 		}]
-		ore.addTarget('#ad_astra:mercury_ore_replaceables', 'techreborn:deepslate_silver_ore')
+		ore.addTarget('#ad_astra:mercury_ore_replaceables', 'techreborn:silver_ore')
 
 		ore.count([25, 40])
 			.squared()
-			.triangleHeight(-64, 85)
+			.triangleHeight(-30, 85)
 	})
 
   event.addOre((ore) => {
