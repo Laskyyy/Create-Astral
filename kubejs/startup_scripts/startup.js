@@ -1118,8 +1118,8 @@ onEvent('worldgen.add', event => {
 
 		ore.count([1, 2])
 			.squared()
-			.triangleHeight(60, 110)
-    ore.size = 60
+			.triangleHeight(0, 110)
+    ore.size = 30
 	})
 
 
