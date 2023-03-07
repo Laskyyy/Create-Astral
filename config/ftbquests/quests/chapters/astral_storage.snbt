@@ -34,7 +34,7 @@
 		}
 		{
 			x: -5.0d
-			y: -11.0d
+			y: -12.5d
 			width: 4.0d
 			height: 4.0d
 			rotation: 0.0d
@@ -46,86 +46,6 @@
 		}
 	]
 	quests: [
-		{
-			title: "{chapter.6.quest.1.title}"
-			x: -9.0d
-			y: -5.5d
-			subtitle: "{chapter.6.quest.1.subtitle}"
-			dependencies: ["44A6872451EA1BB2"]
-			id: "502FB68205A0CA3B"
-			tasks: [
-				{
-					id: "36AC99F8AEC3E818"
-					type: "item"
-					item: "ae2:cell_component_1k"
-				}
-				{
-					id: "2D95B5A1EC13DE9C"
-					type: "item"
-					item: {
-						id: "ae2:item_storage_cell_1k"
-						Count: 1b
-						tag: { }
-					}
-				}
-			]
-		}
-		{
-			x: -7.5d
-			y: -7.0d
-			dependencies: ["44A6872451EA1BB2"]
-			id: "3099BE4134861052"
-			tasks: [
-				{
-					id: "4402148E5CE5890C"
-					type: "item"
-					item: "ae2:formation_core"
-				}
-				{
-					id: "0CBE3E3C191DA25C"
-					type: "item"
-					item: "ae2:annihilation_core"
-				}
-			]
-		}
-		{
-			title: "{chapter.6.quest.3.title}"
-			x: -7.5d
-			y: -8.5d
-			subtitle: "{chapter.6.quest.3.subtitle}"
-			dependencies: ["3099BE4134861052"]
-			id: "30CFD291B115DBC7"
-			tasks: [{
-				id: "2440EA03EEF99C7E"
-				type: "item"
-				item: "ae2:terminal"
-			}]
-		}
-		{
-			title: "{chapter.6.quest.4.title}"
-			x: -2.5d
-			y: -8.5d
-			description: ["{chapter.6.quest.4.description.1}"]
-			dependencies: ["5B795991C4A581FE"]
-			id: "7CB9EBED55932D9B"
-			tasks: [{
-				id: "35CC7569E8F7FEC7"
-				type: "item"
-				item: "ae2:controller"
-			}]
-		}
-		{
-			title: "{chapter.6.quest.5.title}"
-			x: -2.5d
-			y: -7.0d
-			dependencies: ["5E6E1A18D9727F1A"]
-			id: "5B795991C4A581FE"
-			tasks: [{
-				id: "2EA50BF312901D14"
-				type: "item"
-				item: "ae2:drive"
-			}]
-		}
 		{
 			title: "{chapter.6.quest.6.title}"
 			icon: {
@@ -265,85 +185,6 @@
 			]
 		}
 		{
-			title: "{chapter.6.quest.14.title}"
-			x: -7.5d
-			y: -5.5d
-			dependencies: ["7A9F59521C6A6B7E"]
-			id: "44A6872451EA1BB2"
-			tasks: [{
-				id: "5806C9D0F2C463E2"
-				type: "item"
-				item: "ae2:logic_processor"
-			}]
-		}
-		{
-			title: "{chapter.6.quest.15.title}"
-			x: -5.0d
-			y: -5.5d
-			dependencies: ["7A9F59521C6A6B7E"]
-			id: "5F41361D7468CE41"
-			tasks: [{
-				id: "55BF49E1FA00AA72"
-				type: "item"
-				item: "ae2:calculation_processor"
-			}]
-		}
-		{
-			title: "{chapter.6.quest.16.title}"
-			x: -2.5d
-			y: -5.5d
-			subtitle: "{chapter.6.quest.16.subtitle}"
-			dependencies: ["7A9F59521C6A6B7E"]
-			id: "5E6E1A18D9727F1A"
-			tasks: [{
-				id: "5E747DC57397FC97"
-				type: "item"
-				item: "ae2:engineering_processor"
-			}]
-		}
-		{
-			x: -5.0d
-			y: -8.5d
-			dependencies: ["4C1D23F3903614FC"]
-			min_required_tasks: 1
-			id: "6A6170E747B67BC4"
-			tasks: [
-				{
-					id: "2A5B359034AA9C5B"
-					type: "item"
-					item: {
-						id: "ae2:wireless_terminal"
-						Count: 1b
-						tag: {
-							internalCurrentPower: 1600000.0d
-						}
-					}
-				}
-				{
-					id: "575DCB095927FC3D"
-					type: "item"
-					item: {
-						id: "ae2:wireless_crafting_terminal"
-						Count: 1b
-						tag: {
-							internalCurrentPower: 1600000.0d
-						}
-					}
-				}
-			]
-		}
-		{
-			x: -5.0d
-			y: -7.0d
-			dependencies: ["5F41361D7468CE41"]
-			id: "4C1D23F3903614FC"
-			tasks: [{
-				id: "5165FA0CADBCEF87"
-				type: "item"
-				item: "ae2:crafting_unit"
-			}]
-		}
-		{
 			x: -7.0d
 			y: -0.5d
 			dependencies: ["326EB9A775B8D791"]
@@ -352,54 +193,6 @@
 				id: "20C52412573D6811"
 				type: "item"
 				item: "ae2:inscriber"
-			}]
-		}
-		{
-			title: "{chapter.6.quest.20.title}"
-			x: -3.0d
-			y: 0.0d
-			description: ["{chapter.6.quest.20.description.1}"]
-			dependencies: ["227EF17194467491"]
-			id: "3A8B72EC89451A93"
-			tasks: [{
-				id: "466AC5F6E9FAACB5"
-				type: "item"
-				item: "ae2:fluix_dust"
-			}]
-		}
-		{
-			title: "{chapter.6.quest.21.title}"
-			x: -2.0d
-			y: 0.0d
-			dependencies: ["3A8B72EC89451A93"]
-			id: "108D5BDA0D45AD73"
-			tasks: [
-				{
-					id: "4ACEDF6DB10FAD01"
-					type: "item"
-					item: {
-						id: "ae2:energy_cell"
-						Count: 1b
-						tag: { }
-					}
-				}
-				{
-					id: "5D133DB2DF5C8D6F"
-					type: "item"
-					item: "createaddition:accumulator"
-				}
-			]
-		}
-		{
-			title: "{chapter.6.quest.22.title}"
-			x: -2.0d
-			y: -1.0d
-			dependencies: ["3A8B72EC89451A93"]
-			id: "180B5E0E0222208A"
-			tasks: [{
-				id: "3DF5108ADD4FD699"
-				type: "item"
-				item: "ae2:fluix_pearl"
 			}]
 		}
 		{
@@ -420,6 +213,408 @@
 				type: "item"
 				item: "ae2:quartz_glass"
 				count: 32
+			}]
+		}
+		{
+			title: "Certus quartz dust automation!"
+			x: -6.5d
+			y: -5.0d
+			subtitle: "Blue dust? hmmm..."
+			description: [
+				"You can automate this by putting sand next to it in a crafting table, and throwing the resulting seeds into water. They will grow into pure crystals, which can be ground down in an inscriber for doubled the dust."
+				"Crystal growth accelerators speed up this process significantly, where only two will cut 20 mins to only 1. They consume a bunch of power though!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["227EF17194467491"]
+			id: "47DD53AAA0680214"
+			tasks: [{
+				id: "4D52CABBB8594569"
+				type: "item"
+				item: "ae2:certus_quartz_dust"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -5.0d
+			subtitle: "You should have some now!"
+			description: ["Shimmer can be bottomless, like lava! Might be a bit overkill though."]
+			hide_dependency_lines: true
+			dependencies: ["227EF17194467491"]
+			id: "5B72AC99C3A727CE"
+			tasks: [{
+				id: "40E04826DCB04BAE"
+				type: "item"
+				item: "kubejs:shimmer_bucket"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -5.0d
+			description: ["This should be stockpiled when investing into larger AE2 setups."]
+			dependencies: [
+				"5B72AC99C3A727CE"
+				"47DD53AAA0680214"
+				"7A9F59521C6A6B7E"
+			]
+			id: "2D5C0605E1EB21AD"
+			tasks: [{
+				id: "69B7BA16EDCF980E"
+				type: "item"
+				item: "ae2:fluix_dust"
+			}]
+		}
+		{
+			title: "Processors"
+			icon: "ae2:calculation_processor"
+			x: -5.0d
+			y: -6.0d
+			subtitle: "We suggest stockpiling in sets of 10-20, it's a pain crafting them all one by one."
+			dependencies: ["2D5C0605E1EB21AD"]
+			id: "0F92EA9231F85D25"
+			tasks: [
+				{
+					id: "5187F319323F7DF6"
+					type: "item"
+					item: "ae2:logic_processor"
+				}
+				{
+					id: "4795BB166A2626BA"
+					type: "item"
+					item: "ae2:calculation_processor"
+				}
+				{
+					id: "456683F6D0422494"
+					type: "item"
+					item: "ae2:engineering_processor"
+				}
+			]
+		}
+		{
+			title: "The first cables"
+			icon: "ae2:fluix_glass_cable"
+			x: -7.0d
+			y: -7.5d
+			subtitle: "The first items you probably you will use"
+			description: [
+				"The shimmer glass cable can carry up to 8 channels, when you exceed the channel limit, that entire piece of network will go offline!"
+				"Smart cables display the amount of channels used, both on jade (your block viewer in top middle) and on the block itself, viewed as a line."
+				""
+			]
+			dependencies: ["0F92EA9231F85D25"]
+			min_required_tasks: 1
+			id: "29DB1FA90A9FEE9C"
+			tasks: [
+				{
+					id: "385213E0E6E13C3B"
+					type: "item"
+					title: "Any #ae2:glass_cable"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "ae2:glass_cable"
+						}
+					}
+				}
+				{
+					id: "24DC43C594E8D66F"
+					type: "item"
+					title: "Any #ae2:smart_cable"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "ae2:smart_cable"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "The jumpstart of the system"
+			icon: "ae2:singularity"
+			x: -5.5d
+			y: -7.5d
+			subtitle: "Time for engineering baby"
+			description: [
+				"Everything AE2 consumes a channel, which cables can transport. More on that later, but keep in mind each side of a CONTROLLER gives 32 channels, and an entire ACCEPTOR share 8 channels."
+				""
+				"(Only one item is needed to complete this quest)"
+			]
+			dependencies: ["0F92EA9231F85D25"]
+			min_required_tasks: 1
+			id: "0C8063DF02E52A47"
+			tasks: [
+				{
+					id: "1041033622B3DE18"
+					type: "item"
+					item: "ae2:energy_acceptor"
+				}
+				{
+					id: "263C6F9928FC3767"
+					type: "item"
+					item: "ae2:controller"
+				}
+			]
+		}
+		{
+			title: "Advanced cabling"
+			icon: "ae2:fluix_smart_dense_cable"
+			x: -7.0d
+			y: -8.5d
+			subtitle: "For the chads of engineering only!"
+			description: [
+				"The dense cable does exactly what you think it does - it can carry 32 channels instead of 8!"
+				"The glass fiber does something entirely different, it can carry AE power, but 0 channels, thus it will break systems. Commonly used to transfer power or create subnetworks, more on that later."
+			]
+			dependencies: ["29DB1FA90A9FEE9C"]
+			min_required_tasks: 1
+			id: "100EEA0D73CFFBE6"
+			tasks: [
+				{
+					id: "327BDCA382910B16"
+					type: "item"
+					item: "ae2:fluix_smart_dense_cable"
+				}
+				{
+					id: "3BF42FC113F42A2D"
+					type: "item"
+					item: "ae2:quartz_fiber"
+				}
+			]
+		}
+		{
+			title: "Viewing items"
+			x: -5.5d
+			y: -8.5d
+			subtitle: "This thing can store up to 10 cells simultaneously"
+			description: [
+				"ME drives store your storage cells, each cell has a specific amount of bytes, and can hold 63 item types. For items that you have a lot off, it is generally recommended to allocate the larger cells to them."
+				"ME drives also form a multiblock, allowing you to only hook up 1 cable to it, and they all get added to the ME system. They do consume one channel each though!"
+				"(channel info is on the left track)"
+			]
+			dependencies: ["0C8063DF02E52A47"]
+			id: "690FA10B8A532B16"
+			tasks: [{
+				id: "76F97AC9364E59F1"
+				type: "item"
+				item: "ae2:drive"
+			}]
+		}
+		{
+			title: "Subnetworks"
+			x: -7.0d
+			y: -10.0d
+			description: [
+				"Subnetworks are mainly used to get a certain chain to work, for example creating specific resources through a series of recipes."
+				""
+				"These are smaller networks normally powered via quartz fiber from the main network. They will act the same as if it was hooked up by an energy acceptor, thus able to execute 8 channels."
+				""
+				"When you export items into an ME interface, it will be INSTANTLY put into the respective ME system, thus you can export from a subnet into your main."
+			]
+			dependencies: ["100EEA0D73CFFBE6"]
+			optional: true
+			id: "000CC99296151B0A"
+			tasks: [{
+				id: "5821DA7521DE3643"
+				type: "item"
+				item: "ae2:controller"
+			}]
+		}
+		{
+			title: "Customising your storage cells"
+			x: -5.5d
+			y: -10.0d
+			subtitle: "You don't want to get all your cells to fill up with one item, do you?"
+			description: [
+				"The cell workbench is a very handy tool!"
+				""
+				"It has two functions: you can add filters to your cells, only accepting those fluids or items."
+				"Or you can upgrade your cells, with one especially important card: the overflow destruction card! It does exactly what you think it does: voids everything that goes above what it can hold."
+			]
+			dependencies: ["690FA10B8A532B16"]
+			id: "0C1BF4EAE2CC1729"
+			tasks: [{
+				id: "7342E1A9A92606C4"
+				type: "item"
+				item: "ae2:cell_workbench"
+			}]
+		}
+		{
+			title: "Moving BLOCKS like a pro"
+			icon: "ae2:spatial_cell_component_2"
+			x: -4.0d
+			y: -10.0d
+			subtitle: "Time for some useful stuff"
+			description: [
+				"Do you remember the blaze spawner you needed for magma cream? This thing got you covered."
+				""
+				"First, craft yourself the items listed in the quest, PLUS the desired size of spatial cell, each having their block capacity in the tooltip. The smallest one for example can carry a space of 2x2x2 blocks."
+				""
+				"Then, place down the spatial anchor, this will be one of the CORNERS. Then, place the IO port next to it on the OUTSIDE of the cube. This will carry your cell. Last, build out the pylons so that the ends form the second end of the cube. You got half a cube now. Anything that it inbetween the anchor end the edges of the anchors will be caught! Thus to fill the weakest cell you will need 6 anchors, two for height, two for length, and two for width."
+				""
+				"Last, give either the IO port or the anchor a redstone signal, and anything, even spawners or budding crystals, will be put into the cell. This of course can be reversed, with the exact same procedure."
+			]
+			dependencies: ["5B6C345D10546F73"]
+			id: "63160FC511E0DBC8"
+			tasks: [
+				{
+					id: "37F94FF67FA2A6E0"
+					type: "item"
+					item: "ae2:spatial_pylon"
+				}
+				{
+					id: "3BDB23CBC206F664"
+					type: "item"
+					item: "ae2:spatial_io_port"
+				}
+				{
+					id: "43FA933C30605BA4"
+					type: "item"
+					item: "ae2:spatial_anchor"
+				}
+			]
+		}
+		{
+			title: "'I hate cabling'"
+			icon: "ae2:quantum_entangled_singularity"
+			x: -4.0d
+			y: -8.5d
+			subtitle: "This is beefy for your power though; consuming 100 fe/t when operational!"
+			description: [
+				"What if your cabling became too long, or you need to go across dimensions?!"
+				""
+				"Well the quantum bridge got you covered."
+				"Each quantum bridge needs a multiblock: the quantum ring, make a donut from quantum rings, and put the chamber in the middle. This will only consume one channel! put one of your pair quantum entangled singularities into it, and the other in the chamber of your desired destination. The bridge has been established, and the network is now operational in multiple places."
+			]
+			dependencies: ["5B6C345D10546F73"]
+			id: "0EB3DE329825D112"
+			tasks: [
+				{
+					id: "79BBF32701A51574"
+					type: "item"
+					item: "ae2:quantum_ring"
+				}
+				{
+					id: "62507C72FA7E136A"
+					type: "item"
+					item: "ae2:quantum_link"
+				}
+				{
+					id: "5AC1042FE6CD9C54"
+					type: "item"
+					item: "ae2:quantum_entangled_singularity"
+				}
+			]
+		}
+		{
+			title: "Moving items like a pro"
+			x: -4.0d
+			y: -7.5d
+			subtitle: "Belts are soo 1880..."
+			description: [
+				"Ahh yes, the p2p tunnel, let's do this (point-to-point, for the uninitiated)"
+				""
+				"Each type of p2p tunnel can transport their respective type, under others items, fluids or ME channels!"
+				""
+				"You can only craft the ME p2p tunnel, and you have to right-click it with a specific item to define which task it is going to perform."
+				""
+				"Now that you got the right p2p tunnel for the job, you gotta have inputs and outputs. Each p2p network can ONLY have ONE input, but several outputs, which will be nicely split evenly."
+				""
+				"To set them, shift-rightclick the input p2p with a memory card, and proceed to right-click the same card to bind them together, there can be as many output tunnels as you'd like."
+				""
+				"Now input something in it, and it will be INSTANTLY send to all output channels. "
+				""
+				"Note: all p2p tunnels consume power, and one channel each, plan accordingly. When transfering channels trough p2p tunnels, you still need channels to transport the channels..."
+			]
+			dependencies: ["0F92EA9231F85D25"]
+			id: "5B6C345D10546F73"
+			tasks: [{
+				id: "7B8883E4CC1BDD9F"
+				type: "item"
+				item: "ae2:me_p2p_tunnel"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -7.5d
+			subtitle: "'I'm on a highway to hell!'"
+			description: [
+				"Each bus doesn't do a lot that exceeds the brain power of a normal individual, the import bus imports from the adjacent inventory, eating a channel, and inputting everything into the network."
+				""
+				"Export busses do the exact reverse, except the channel of course."
+				""
+				"Storage busses are a bit cooler, first, they treat any inventory connected as if it was part of the ME network, like the contents of a vault. Thus, items can be put in or extracted by busses. On the left, you can set priorities, the lower, the most important it finds to first fill up this, and then the rest."
+				""
+				"The im- and export busses can be upgraded with acceleration, (wonder what it does) redstone, and capacity cards, with capacity increasing the filtering capacity by four, with a cap on two installed at once."
+			]
+			dependencies: ["0F92EA9231F85D25"]
+			id: "4CCF69F7FB7BBDF4"
+			tasks: [
+				{
+					id: "0C6D3454BC201BA4"
+					type: "item"
+					item: "ae2:storage_bus"
+				}
+				{
+					id: "3E565788725233A8"
+					type: "item"
+					item: "ae2:import_bus"
+				}
+				{
+					id: "57A787D33989B49C"
+					type: "item"
+					item: "ae2:export_bus"
+				}
+			]
+		}
+		{
+			icon: "minecraft:redstone_torch"
+			x: -2.5d
+			y: -8.5d
+			description: [
+				"The last bit, thats is very handy!"
+				""
+				"The level emitters are your stockpile switches, they emit or stop emitting a redstone signal once the configured item reaches a certain threshold, which can of course be chosen."
+				""
+				"The redstone card enabled redstone control, allowing you to turn off the export bus once you got less than 4 stacks of iron!"
+			]
+			dependencies: ["4CCF69F7FB7BBDF4"]
+			min_required_tasks: 1
+			id: "1DCCC865A14BAC1E"
+			tasks: [
+				{
+					id: "7AA1609EE2EF9629"
+					type: "item"
+					item: "ae2:level_emitter"
+				}
+				{
+					id: "245C2808C7BF80FE"
+					type: "item"
+					item: "ae2:redstone_card"
+				}
+			]
+		}
+		{
+			title: "This is just an explanation!"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "ftbquests:textures/gui/info.png"
+				}
+			}
+			x: -7.5d
+			y: 1.0d
+			subtitle: "Stuff can be incomplete, missing or wrong, always refer to the wiki to stay with the crowd."
+			description: [""]
+			hide_dependency_lines: true
+			dependencies: ["326EB9A775B8D791"]
+			id: "07A6E8FD5F4961E0"
+			tasks: [{
+				id: "66FEC24EDD870128"
+				type: "checkmark"
+				title: "None of this is perfect!"
 			}]
 		}
 	]
