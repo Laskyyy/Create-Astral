@@ -480,6 +480,80 @@ onEvent('block.registry', event => {
 	 
 	 
 onEvent('item.tooltip', e => {
+  e.addAdvanced('tconstruct:smeltery_controller', (item, advanced, text) => {
+      text.add(Text.of('Disabled, use a foundry in chapter 3.').red())
+    }
+  })
+  e.addAdvanced('techreborn:lead_ingot', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('This metal is gated behind reaching Mars!').gold(),])
+      
+    }
+  })
+    e.addAdvanced('create:blaze_cake', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('No longer superheats! Use a fuel bucket in Chapter 4 to superheat blaze burners.').gold(),])
+      
+    }
+  })
+  e.addAdvanced('techreborn:iridium_ingot', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('Gated by reaching Mercury! (Chapter 5)').gold(),])
+      
+    }
+  })
+  e.addAdvanced('tconstruct:raw_cobalt', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('Gated by reaching the Moon!.').gold(),])
+      
+    }
+  })
+  e.addAdvanced('ae2:certus_quartz_dust', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('Gated by reaching the Moon!').gold(),])
+      
+    }
+  })
+  e.addAdvanced('techreborn:silver_ingot', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('Gated by reaching the Moon!').gold(),])
+      
+    }
+  })
+  e.addAdvanced('minecraft:blaze_rod', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('Blazes can be found in a certain structure on the Moon...').gold(),])
+      
+    }
+  })
   e.addAdvanced('createastral:steel_chestplate', (item, advanced, text) => {
     if (!e.isShift()) {
       text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
