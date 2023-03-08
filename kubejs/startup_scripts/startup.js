@@ -480,6 +480,66 @@ onEvent('block.registry', event => {
 	 
 	 
 onEvent('item.tooltip', e => {
+  e.addAdvanced('techreborn:lead_ingot', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('This stuff is gated behind reaching mars! (the planet)').gold(),])
+      
+    }
+  })
+  e.addAdvanced('techreborn:iridium_ingot', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('Gated by reaching mercury! (Chapter 4)').gold(),])
+      
+    }
+  })
+  e.addAdvanced('tconstruct:raw_cobalt', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('Gated by reaching the moon!.').gold(),])
+      
+    }
+  })
+  e.addAdvanced('ae2:certus_quartz_dust', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('Gated by reaching the moon!').gold(),])
+      
+    }
+  })
+  e.addAdvanced('techreborn:silver_ingot', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('Gated by reaching the moon!').gold(),])
+      
+    }
+  })
+  e.addAdvanced('minecraft:blaze_rod', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('Blazes can be find in a certain structure on the moon.').gold(),])
+      
+    }
+  })
   e.addAdvanced('createastral:steel_chestplate', (item, advanced, text) => {
     if (!e.isShift()) {
       text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
