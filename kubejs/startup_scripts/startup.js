@@ -481,7 +481,7 @@ onEvent('block.registry', event => {
 	 
 onEvent('item.tooltip', e => {
   e.addAdvanced('tconstruct:smeltery_controller', (item, advanced, text) => {
-      text.add(Text.of('disabled, use a foundry instead').red())
+      text.add(Text.of('Disabled, use a foundry in chapter 3.').red())
     }
   })
   e.addAdvanced('techreborn:lead_ingot', (item, advanced, text) => {
@@ -490,7 +490,17 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('This stuff is gated behind reaching mars! (the planet)').gold(),])
+      text.add(1, [Text.of('This metal is gated behind reaching Mars!').gold(),])
+      
+    }
+  })
+    e.addAdvanced('create:blaze_cake', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('No longer superheats! Use a fuel bucket in Chapter 4 to superheat blaze burners.').gold(),])
       
     }
   })
@@ -500,7 +510,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Gated by reaching mercury! (Chapter 4)').gold(),])
+      text.add(1, [Text.of('Gated by reaching Mercury! (Chapter 5)').gold(),])
       
     }
   })
@@ -510,7 +520,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Gated by reaching the moon!.').gold(),])
+      text.add(1, [Text.of('Gated by reaching the Moon!.').gold(),])
       
     }
   })
@@ -520,7 +530,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Gated by reaching the moon!').gold(),])
+      text.add(1, [Text.of('Gated by reaching the Moon!').gold(),])
       
     }
   })
@@ -530,7 +540,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Gated by reaching the moon!').gold(),])
+      text.add(1, [Text.of('Gated by reaching the Moon!').gold(),])
       
     }
   })
@@ -540,7 +550,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-      text.add(1, [Text.of('Blazes can be find in a certain structure on the moon.').gold(),])
+      text.add(1, [Text.of('Blazes can be found in a certain structure on the Moon...').gold(),])
       
     }
   })
