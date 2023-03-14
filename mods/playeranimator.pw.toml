@@ -1,14 +1,14 @@
 name = "Player Animator"
-filename = "player-animation-lib-fabric-0.4.2+1.18.jar"
+filename = "player-animation-lib-fabric-1.0.2+1.18.jar"
 side = "both"
 
 [download]
 mode = "metadata:curseforge"
 url = ""
 hash-format = "sha1"
-hash = "d025086d8546c7f55219104929371872d02480af"
+hash = "af84add8325986f212758d683d62fd6a155a4b2a"
 
 [update]
 [update.curseforge]
-file-id = 4357562
+file-id = 4418153
 project-id = 658587
