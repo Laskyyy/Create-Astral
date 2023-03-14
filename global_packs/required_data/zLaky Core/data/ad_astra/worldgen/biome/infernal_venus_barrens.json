@@ -1,4 +1,5 @@
 {
+  "replace": true,
   "temperature": 1.6,
   "downfall": 1,
   "precipitation": "rain",

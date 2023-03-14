@@ -1,4 +1,5 @@
 {
+  "replace": true,
 "effects": {
     "ambient_sound": "minecraft:ambient.crimson_forest.loop",
     "mood_sound": {
