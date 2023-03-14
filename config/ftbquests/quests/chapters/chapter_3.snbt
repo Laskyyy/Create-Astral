@@ -808,10 +808,6 @@
 			subtitle: "{chapter.3.quest.28.subtitle}"
 			dependencies: [
 				"1717E5063CC231DD"
-				"406D5C04583BD542"
-				"09C0AD7F5D605F0C"
-				"7083DC2167188BCF"
-				"1F7524655E4B58A0"
 			]
 			optional: true
 			id: "1C10D7A2828DE436"
