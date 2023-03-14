@@ -664,6 +664,8 @@ function lizardGrinderCrushingRework(event) {
   }
   event.remove({ type: 'create:milling', output: 'minecraft:gunpowder' });
   event.remove({ type: 'create:milling', output: 'minecraft:flint' });
+  event.remove({ type: 'create:milling', output: 'ae2:certus_quartz_dust' });
+  event.remove({ type: 'create:crushing', output: 'ae2:certus_quartz_dust' });
 
   // Remove crushing recipes that already have a grinder recipe
   event.remove({ type: 'create:crushing', input: 'minecraft:blaze_rod' });
