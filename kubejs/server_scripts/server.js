@@ -3651,9 +3651,9 @@ event.recipes.createMixing('32x doodads:brick_road', [
   '32x minecraft:bricks',
 ]).processingTime(1000)
 
-event.recipes.createMixing('32x doodads:asphalt', [
-  {fluid: 'kubejs:shimmer', amount: 40500},
-  '32x #c:concrete_powder',
+event.recipes.createMixing('doodads:asphalt', [
+  {fluid: 'kubejs:andesite_compound', amount: 3000},
+  '#c:concrete_powder',
 ]).processingTime(1000)
 
 event.recipes.createFilling('doodads:yellow_brick_road', [
