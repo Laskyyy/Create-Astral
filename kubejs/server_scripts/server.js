@@ -1831,7 +1831,7 @@ event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:
 event.recipes.createMixing(Fluid.of('tconstruct:molten_bronze', 1800), [
   {fluid: 'tconstruct:molten_tin', amount: 900},
   {fluid: 'tconstruct:molten_copper', amount: 900}
-]).heated()
+])
 
 // 	event.recipes.createMixing(Fluid.of('tconstruct:molten_rose_gold', 9000), [
 //     'minecraft:copper_ingot',
@@ -1843,7 +1843,7 @@ event.recipes.createMixing(Fluid.of('tconstruct:molten_bronze', 1800), [
 	event.recipes.createMixing(Fluid.of('tconstruct:molten_rose_gold', 9000), [
     'minecraft:copper_ingot',
     'minecraft:gold_ingot'
-]).processingTime(300).heated()
+]).processingTime(1500)
 
 event.recipes.createMixing(Fluid.of('tconstruct:molten_bronze', 18000), [
   'minecraft:copper_ingot',
