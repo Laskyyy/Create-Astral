@@ -1,0 +1,14 @@
+name = "Per Aspera"
+filename = "per_aspera-1.2.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+url = ""
+hash-format = "sha1"
+hash = "c87fdabf55fc5063f4564f34f85f39553e644e26"
+
+[update]
+[update.curseforge]
+file-id = 4437187
+project-id = 833210
