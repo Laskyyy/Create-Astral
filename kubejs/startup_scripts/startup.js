@@ -480,8 +480,15 @@ onEvent('block.registry', event => {
 	 
 	 
 onEvent('item.tooltip', e => {
+
   e.addAdvanced('tconstruct:smeltery_controller', (item, advanced, text) => {
-      text.add(Text.of('Disabled, use a foundry in chapter 3.').red())
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('Disabled, use a foundry in chapter 3.').red(),])
+      
     }
   })
   e.addAdvanced('techreborn:lead_ingot', (item, advanced, text) => {
