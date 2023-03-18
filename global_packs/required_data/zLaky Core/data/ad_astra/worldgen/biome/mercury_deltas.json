@@ -1,4 +1,5 @@
 {
+  "replace": true,
   "temperature": 1.6,
   "downfall": 0,
   "precipitation": "none",

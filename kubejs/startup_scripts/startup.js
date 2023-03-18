@@ -123,10 +123,8 @@ onEvent('item.modification', event => {
 ///// MODIFY CHARACTERISTICS OF BLOCKS /////
 
 onEvent('block.modification', event => {
-  event.modify('lchunkloader:chunk_loader', block => {
-    block.destroySpeed = 999999
-    block.hasCollision = false
-	block.explosionResistance = 99999
+  event.modify('yigd:grave', block => {
+    block.destroySpeed = -1
   })
 	event.modify('create:large_cogwheel', block => {
 	block.material = "Lantern"
@@ -285,7 +283,6 @@ onEvent("item.modification", event => {
   })
 
 
-
 })		
 
 
@@ -389,20 +386,10 @@ onEvent('item.registry', event => {
 
 ///// REGISTER NEW ITEMS HERE /////
 
-<<<<<<< Updated upstream
-
-<<<<<<< Updated upstream
-event.create('createastral:crushed_desh_ore'),
-event.create('createastral:crushed_ostrum_ore'),
-event.create('createastral:crushed_calorite_ore'),
-=======
-=======
-event.create('createastral:crushed_desh_ore'),
-event.create('createastral:crushed_ostrum_ore'),
-event.create('createastral:crushed_calorite_ore'),
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 event.create('createastral:crushed_yttrium_ore'),
+event.create('createastral:crushed_desh_ore'),
+event.create('createastral:crushed_ostrum_ore'),
+event.create('createastral:crushed_calorite_ore'),
 event.create('createastral:subatomic_ingot'),
 event.create('createastral:astral_conduit'),
 event.create('createastral:andesite_compound'),
@@ -507,6 +494,87 @@ onEvent('block.registry', event => {
 	 
 	 
 onEvent('item.tooltip', e => {
+
+  e.addAdvanced('tconstruct:smeltery_controller', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('Disabled, use a foundry in chapter 3.').red(),])
+      
+    }
+  })
+  e.addAdvanced('techreborn:lead_ingot', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('This metal is gated behind reaching Mars!').gold(),])
+      
+    }
+  })
+    e.addAdvanced('create:blaze_cake', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('No longer superheats! Use a fuel bucket in Chapter 4 to superheat blaze burners.').gold(),])
+      
+    }
+  })
+  e.addAdvanced('techreborn:iridium_ingot', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('Gated by reaching Mercury! (Chapter 5)').gold(),])
+      
+    }
+  })
+  e.addAdvanced('tconstruct:raw_cobalt', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('Gated by reaching the Moon!.').gold(),])
+      
+    }
+  })
+  e.addAdvanced('ae2:certus_quartz_dust', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('Gated by reaching the Moon!').gold(),])
+      
+    }
+  })
+  e.addAdvanced('techreborn:silver_ingot', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('Gated by reaching the Moon!').gold(),])
+      
+    }
+  })
+  e.addAdvanced('minecraft:blaze_rod', (item, advanced, text) => {
+    if (!e.isShift()) {
+      text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+    }
+    if (e.isShift()) {
+      
+      text.add(1, [Text.of('Blazes can be found in a certain structure on the Moon...').gold(),])
+      
+    }
+  })
   e.addAdvanced('createastral:steel_chestplate', (item, advanced, text) => {
     if (!e.isShift()) {
       text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
@@ -935,7 +1003,7 @@ onEvent('item.tooltip', e => {
     }
     if (e.isShift()) {
       
-	text.add(1, [Text.of('If you are new to create, use pondering or online guides. The pack is almost exclusively centered around it and Tech Reborn. The quest book has some items which gives a general idea of what has changed / what is included, in an order of when to take note of them, however the pack can be played without following it exactly, so do what you enjoy.').gold(),])
+	text.add(1, [Text.of('If you are new to create, use pondering or online guides. The pack is almost exclusively centered around it and Tech Reborn. The quest book has some items that give a general idea of what has changed / what is included, in the order of when to take note of them, however the pack can be played without following it exactly, so do what you enjoy.').gold(),])
 	text.add(2, [Text.of('A major change you *might* want to be aware of. The nether does not exist. Do not even try to make the portal as it will not function. All nether related items are distributed throughout the pack (mostly planets)').white(),])
 
     }
@@ -1145,8 +1213,8 @@ onEvent('worldgen.add', event => {
 
 		ore.count([1, 2])
 			.squared()
-			.triangleHeight(60, 110)
-    ore.size = 60
+			.triangleHeight(0, 110)
+    ore.size = 30
 	})
 
 
@@ -1219,7 +1287,19 @@ onEvent('worldgen.add', event => {
 			.triangleHeight(-64, 85)
 	})
 
+  event.addOre((ore) => {
+		ore.id = "kubejs:silveroremerc" // optional
+		ore.biomes = [{
+			not: {
+				category: "river"
+			}
+		}]
+		ore.addTarget('#ad_astra:mercury_ore_replaceables', 'techreborn:silver_ore')
 
+		ore.count([25, 40])
+			.squared()
+			.triangleHeight(-30, 85)
+	})
 
   event.addOre((ore) => {
 		ore.id = "kubejs:caloriteore" // optional

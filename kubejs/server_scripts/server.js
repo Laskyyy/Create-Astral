@@ -956,7 +956,7 @@ function lizardCrushingOresYields(event) {
     Item.of('create:experience_nugget').withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
   ], 'techreborn:raw_lead');
   event.recipes.createCrushing([
-    'create:crushed_desh_ore',
+    'createastral:crushed_desh_ore',
     Item.of('create:crushed_desh_ore').withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
     Item.of('techreborn:silver_nugget').withChance(.2),
     Item.of('create:experience_nugget').withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
@@ -1118,7 +1118,8 @@ onEvent('recipes', event => {
 	event.replaceInput('#c:iron_rods', 'createaddition:iron_rod')
 	event.replaceInput('ad_astra:iron_stick', 'createaddition:iron_rod')
     event.replaceInput('catwalksinc:iron_rod', 'createaddition:iron_rod')
-	event.remove({output: 'ad_astra:iron_stick'})
+	event.remove({output: 'createaddition:straw'})
+  event.remove({output: 'ad_astra:iron_stick'})
 	event.remove({output: 'catwalksinc:iron_rod'})
 	event.remove({output: 'polaroidcamera:camera'})
 	event.remove({output: 'phonos:radio_player_piano'})
@@ -1492,6 +1493,8 @@ onEvent('recipes', event => {
   event.replaceInput({mod: 'techreborn'}, 'techreborn:zinc_plate', 'createaddition:zinc_sheet')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:zinc_ingot', 'create:zinc_ingot')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:zinc_nugget', 'create:zinc_nugget')
+  event.replaceInput('#c:ingots/steel', 'ad_astra:steel_ingot')
+
   event.remove({output: 'techreborn:zinc_plate'})
   event.remove({output: 'techreborn:zinc_ingot'})
   event.remove({output: 'techreborn:zinc_storage_block'})
@@ -1837,7 +1840,7 @@ event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:
 event.recipes.createMixing(Fluid.of('tconstruct:molten_bronze', 1800), [
   {fluid: 'tconstruct:molten_tin', amount: 900},
   {fluid: 'tconstruct:molten_copper', amount: 900}
-]).heated()
+])
 
 // 	event.recipes.createMixing(Fluid.of('tconstruct:molten_rose_gold', 9000), [
 //     'minecraft:copper_ingot',
@@ -1849,7 +1852,7 @@ event.recipes.createMixing(Fluid.of('tconstruct:molten_bronze', 1800), [
 	event.recipes.createMixing(Fluid.of('tconstruct:molten_rose_gold', 9000), [
     'minecraft:copper_ingot',
     'minecraft:gold_ingot'
-]).processingTime(300).heated()
+]).processingTime(1500)
 
 event.recipes.createMixing(Fluid.of('tconstruct:molten_bronze', 18000), [
   'minecraft:copper_ingot',
@@ -2959,7 +2962,7 @@ event.recipes.createMixing('8x tconstruct:grout', [
   event.smelting('techreborn:silver_ingot', 'create:crushed_silver_ore')
   event.smelting('techreborn:lead_ingot', 'create:crushed_lead_ore')
   event.smithing('farmersdelight:cooking_pot', 'farmersdelight:skillet', 'minecraft:water_bucket')
-
+  event.remove({output: 'techreborn:steel_plate'})
 
   ///STRING AUTOMATION
   event.recipes.createMilling([
@@ -3079,13 +3082,11 @@ event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "creat
 event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:andesite_mesh" }, {  "item": "minecraft:basalt" } ], "results": [ { "item": "minecraft:ender_pearl", "chance": 0.04 }], "processingTime": 200 }
 )
 
-event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:brass_mesh" }, {  "item": "minecraft:cobblestone" } ], "results": [ { "item": "techreborn:tin_nugget", "chance": 0.08 }], "processingTime": 200,
-"waterlogged": true }
+event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:brass_mesh" }, {  "item": "minecraft:cobblestone" } ], "results": [ { "item": "techreborn:tin_nugget", "chance": 0.08 }], "processingTime": 200 }
 )
 event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:brass_mesh" }, {  "item": "minecraft:flint" } ], "results": [ { "item": "minecraft:music_disc_13", "chance": 0.001 }], "processingTime": 200 }
 )
-event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:brass_mesh" }, {  "item": "minecraft:cobbled_deepslate" } ], "results": [ { "item": "minecraft:redstone", "chance": 0.07 }, { "item": "create:copper_nugget", "chance": 0.05 }], "processingTime": 200,
-"waterlogged": true }
+event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:brass_mesh" }, {  "item": "minecraft:cobbled_deepslate" } ], "results": [ { "item": "minecraft:redstone", "chance": 0.07 }, { "item": "create:copper_nugget", "chance": 0.05 }], "processingTime": 200}
 )
 
 event.custom({ "type": "createsifter:sifting", "ingredients": [ { "item": "createsifter:brass_mesh" }, {  "item": "extractinator:silt" } ], "results": [ { "item": "minecraft:raw_iron", "chance": 0.2 }, { "item": "minecraft:raw_copper", "chance": 0.4 }, { "item": "minecraft:raw_gold", "chance": 0.2 }, { "item": "techreborn:raw_tin", "chance": 0.2 }, { "item": "create:raw_zinc", "chance": 0.2 }, { "item": "create:crushed_iron_ore", "chance": 0.2 }, { "item": "create:crushed_copper_ore", "chance": 0.4 }, { "item": "create:crushed_gold_ore", "chance": 0.2 }, { "item": "create:crushed_tin_ore", "chance": 0.2 }, { "item": "create:crushed_zinc_ore", "chance": 0.2 } ], "processingTime": 1000 }
@@ -3133,8 +3134,7 @@ event.custom({
       "chance": 0.05
     }
   ],
-  "processingTime": 500,
-  "waterlogged": true
+  "processingTime": 500
 })
 
 /// end sifter
@@ -3455,6 +3455,15 @@ event.recipes.createMixing('techreborn:steel_dust', [
 	F: 'campanion:rope'
 
 })
+event.shaped('campanion:tent_bag', [
+  ' A ',
+  'ABA',
+  ' A '
+], {
+A: 'campanion:rope',
+B: 'campanion:leather_pouch'
+
+})
 event.shaped('ad_astra:moon_globe', [
   'BBB',
   'BA ',
@@ -3639,9 +3648,9 @@ event.recipes.createMixing('32x doodads:brick_road', [
   '32x minecraft:bricks',
 ]).processingTime(1000)
 
-event.recipes.createMixing('32x doodads:asphalt', [
-  {fluid: 'kubejs:shimmer', amount: 40500},
-  '32x #c:concrete_powder',
+event.recipes.createMixing('doodads:asphalt', [
+  {fluid: 'kubejs:andesite_compound', amount: 3000},
+  '#c:concrete_powder',
 ]).processingTime(1000)
 
 event.recipes.createFilling('doodads:yellow_brick_road', [

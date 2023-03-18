@@ -53,15 +53,6 @@
     {
       "type": "custommachinery:fluid",
       "capacity": 810000,
-      "id": "watertank",
-      "maxInput": 666,
-      "maxOutput": 0,
-      "filter": ["minecraft:water"],
-      "whitelist": true
-  },
-    {
-      "type": "custommachinery:fluid",
-      "capacity": 810000,
       "id": "oxygentank",
       "maxInput": 0,
       "maxOutput": 1000,
@@ -69,8 +60,13 @@
       "whitelist": true
   },
     {
-    	"type": "custommachinery:redstone",
-    	"poweroutput": 15
-    }
+      "type": "custommachinery:fluid",
+      "capacity": 810000,
+      "id": "watertank",
+      "maxInput": 666,
+      "maxOutput": 0,
+      "filter": ["minecraft:water"],
+      "whitelist": true
+  }
   ]
 }

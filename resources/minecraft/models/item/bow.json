@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "item/machine_pistol",
-		"2": "item/machine_pistol",
-		"particle": "item/machine_pistol"
+		"1": "item/pistol",
+		"2": "item/pistol",
+		"particle": "item/pistol"
 	},
 	"elements": [
 		{
@@ -96,25 +96,30 @@
 	],
 	"gui_light": "front",
 	"overrides": [
+            {
+			"predicate": {
+			},
+			"model": "item/PistolModelStandby"
+		},
 		{
 			"predicate": {
 				"pulling": 1
 			},
-			"model": "item/bow_pulling_0"
+			"model": "item/PistolModelDrawm"
+		},
+		{
+			"predicate": {
+				"pulling": 1,
+				"pull": 0
+			},
+			"model": "item/PistolModelDrawn"
 		},
 		{
 			"predicate": {
 				"pulling": 1,
 				"pull": 0.3
 			},
-			"model": "item/bow_pulling_1"
-		},
-		{
-			"predicate": {
-				"pulling": 1,
-				"pull": 0.3
-			},
-			"model": "item/bow_pulling_2"
+			"model": "item/PistolModelDrawn"
 		}
 	],
 	"display": {
