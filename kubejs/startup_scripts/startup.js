@@ -1265,6 +1265,20 @@ onEvent('worldgen.add', event => {
     ore.size = 15
 	})
 
+  event.addOre((ore) => {
+		ore.id = "kubejs:galenaoremars" // optional
+		ore.biomes = [{
+			not: {
+				category: "river"
+			}
+		}]
+		ore.addTarget('#ad_astra:mars_ore_replaceables', 'ad_astra:mars_ostrum_ore')
+
+		ore.count([25, 40])
+			.squared()
+			.triangleHeight(-64, 64)
+	})
+
 
 
 
