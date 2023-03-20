@@ -3406,7 +3406,7 @@ event.custom({
 		"item": "createastral:electrified_pin",
 		"count": 1
 	},
-	"energy": 2500
+	"energy": 1200
 })
 
 event.custom({
