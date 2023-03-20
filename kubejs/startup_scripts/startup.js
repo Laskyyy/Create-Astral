@@ -1209,7 +1209,7 @@ onEvent('worldgen.add', event => {
   event.addOre((ore) => {
 		ore.id = "kubejs:skystoneae2" // optional
 		ore.biomes = ['ad_astra:lunar_wastelands', 'minecraft:basalt_deltas', 'incendium:toxic_heap']
-		ore.addTarget('#ad_astra:moon_ore_replaceables', 'ae2:sky_stone_block')
+		ore.addTarget('#ad_astra:moon_ore_replaceables', 'ad_astra:sky_stone')
 
 
 		ore.count([1, 2])

@@ -866,6 +866,9 @@ function lizardGeologyAlchemyChanges(event) {
     '1x minecraft:diorite',
     '3x minecraft:quartz'
   ]);
+  event.shapeless('ad_astra:sky_stone', [
+    'ae2:sky_stone_block'
+  ]);
   event.custom({
     type: 'tconstruct:casting_basin',
     cast: {
@@ -1575,8 +1578,10 @@ onEvent('recipes', event => {
   event.remove({input: 'minecraft:soul_sand', output: 'techreborn:coal_dust'})
   event.remove({input: 'minecraft:glowstone_dust', output: 'minecraft:redstone'})
   event.remove({input: 'techreborn:netherrack_dust', output: 'minecraft:redstone'})
+  event.replaceInput('ae2:sky_stone_block', 'ad_astra:sky_stone')
+  event.replaceInput('ae2:sky_stone_block', 'ad_astra:sky_stone')
 
-  event.recipes.createCompacting('ae2:sky_stone_block', [
+  event.recipes.createCompacting('ad_astra:sky_stone', [
     '5x ad_astra:moon_stone',
     'ae2:certus_quartz_dust'
   ]).heated().processingTime(200)
