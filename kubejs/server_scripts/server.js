@@ -1565,7 +1565,7 @@ onEvent('recipes', event => {
   event.replaceInput({mod: 'techreborn'},'techreborn:iridium_ingot', 'yttr:yttrium_ingot')
   event.replaceInput({mod: 'techreborn'},'techreborn:iridium_plate', 'yttr:yttrium_ingot')
   event.replaceInput({mod: 'techreborn'},'techreborn:iridium_alloy_plate', 'yttr:yttrium_ingot')
-  event.replaceInput({output: 'ae2:fluid_cell_housing'}, 'techreborn:silver_plate', 'create:copper_casing')
+  event.replaceInput({outputI: 'ae2:fluid_cell_housing'}, 'techreborn:silver_plate', 'create:copper_casing')
 
   //oil fuel process stuff
   event.remove({output: 'techreborn:sulfur_dust'})
@@ -1575,6 +1575,34 @@ onEvent('recipes', event => {
   event.remove({input: 'minecraft:soul_sand', output: 'techreborn:coal_dust'})
   event.remove({input: 'minecraft:glowstone_dust', output: 'minecraft:redstone'})
   event.remove({input: 'techreborn:netherrack_dust', output: 'minecraft:redstone'})
+
+  event.recipes.createCompacting('ae2:sky_stone_block', [
+    '5x ad_astra:moon_stone',
+    'ae2:certus_quartz_dust'
+  ]).heated().processingTime(200)
+
+  event.recipes.createMixing('techreborn:sulfur_dust', [
+    '3x minecraft:glowstone_dust',
+    'ae2:sky_dust',
+  ]).processingTime(50)
+
+	event.recipes.createMixing(Fluid.of('techreborn:oil', 22500), [
+    {fluid: 'techreborn:sulfur', amount: 45000},
+    '3x techreborn:coal_dust'
+  ]).processingTime(300)
+
+	event.recipes.createSequencedAssembly([ // begin
+        'createastral:refining_agent', // output
+		], 'ae2:fluix_dust', [ // input
+		event.recipes.createDeploying('ae2:fluix_dust', ['techreborn:diamond_small_dust', 'techreborn:diamond_small_dust']),
+    event.recipes.createDeploying('ae2:fluix_dust', ['minecraft:gold_nugget', 'minecraft:gold_nugget']),
+    event.recipes.createPressing('ae2:fluix_dust', 'ae2:fluix_dust'), //yeah
+		event.recipes.createFilling('ae2:fluix_dustl', ['ae2:fluix_dust', {fluid: 'techreborn:nitrogen', amount: 9000}]), //fill 1/4 bucket lava
+    event.recipes.createPressing('ae2:fluix_dust', 'ae2:fluix_dust')
+    ]).transitionalItem('ae2:fluix_dust').loops(3) 
+
+
+  /////
 
   	event.recipes.createMechanicalCrafting('techreborn:data_storage_chip', [
   'A',
