@@ -1608,6 +1608,28 @@ onEvent('recipes', event => {
     ]).transitionalItem('ae2:fluix_dust').loops(3) 
 
 
+    event.custom({
+      "type": "techreborn:centrifuge",
+      "power": 8,
+      "time": 500,
+      "ingredients": [
+        {
+          "item": "farmersdelight:rich_soil",
+          "count": 1
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:coarse_dirt",
+          "count": 2
+        },
+        {
+          "item": "techreborn:saltpeter_dust",
+          "count": 4
+        }
+      ]
+    })
+
   /////
 
   	event.recipes.createMechanicalCrafting('techreborn:data_storage_chip', [
