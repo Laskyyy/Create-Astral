@@ -1567,7 +1567,14 @@ onEvent('recipes', event => {
   event.replaceInput({mod: 'techreborn'},'techreborn:iridium_alloy_plate', 'yttr:yttrium_ingot')
   event.replaceInput({output: 'ae2:fluid_cell_housing'}, 'techreborn:silver_plate', 'create:copper_casing')
 
-
+  //oil fuel process stuff
+  event.remove({output: 'techreborn:sulfur_dust'})
+  event.remove({output: 'techreborn:sulfur_small_dust'})
+  event.remove({output: 'techreborn:sulfur'})
+  event.remove({input: 'minecraft:soul_soil', output: 'techreborn:coal_dust'})
+  event.remove({input: 'minecraft:soul_sand', output: 'techreborn:coal_dust'})
+  event.remove({input: 'minecraft:glowstone_dust', output: 'minecraft:redstone'})
+  event.remove({input: 'techreborn:netherrack_dust', output: 'minecraft:redstone'})
 
   	event.recipes.createMechanicalCrafting('techreborn:data_storage_chip', [
   'A',

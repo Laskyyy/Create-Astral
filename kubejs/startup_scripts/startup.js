@@ -386,6 +386,7 @@ onEvent('item.registry', event => {
 
 ///// REGISTER NEW ITEMS HERE /////
 
+event.create('createastral:refining_agent'),
 event.create('createastral:crushed_yttrium_ore'),
 event.create('createastral:crushed_desh_ore'),
 event.create('createastral:crushed_ostrum_ore'),
@@ -1263,20 +1264,6 @@ onEvent('worldgen.add', event => {
 			.squared()
 			.triangleHeight(-64, 64)
     ore.size = 15
-	})
-
-  event.addOre((ore) => {
-		ore.id = "kubejs:galenaoremars" // optional
-		ore.biomes = [{
-			not: {
-				category: "river"
-			}
-		}]
-		ore.addTarget('#ad_astra:mars_ore_replaceables', 'ad_astra:mars_ostrum_ore')
-
-		ore.count([25, 40])
-			.squared()
-			.triangleHeight(-64, 64)
 	})
 
 
