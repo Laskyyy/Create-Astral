@@ -1574,6 +1574,7 @@ onEvent('recipes', event => {
   event.remove({output: 'techreborn:sulfur_dust'})
   event.remove({output: 'techreborn:sulfur_small_dust'})
   event.remove({output: 'techreborn:sulfur'})
+  event.remove({output: 'techreborn:saltpeter_dust'})
   event.remove({input: 'minecraft:soul_soil', output: 'techreborn:coal_dust'})
   event.remove({input: 'minecraft:soul_sand', output: 'techreborn:coal_dust'})
   event.remove({input: 'minecraft:glowstone_dust', output: 'minecraft:redstone'})
