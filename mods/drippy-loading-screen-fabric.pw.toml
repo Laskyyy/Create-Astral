@@ -4,7 +4,6 @@ side = "both"
 
 [download]
 mode = "metadata:curseforge"
-url = ""
 hash-format = "sha1"
 hash = "3afb242e53b5a97e00fd4be827c83d37d3a3a22e"
 
