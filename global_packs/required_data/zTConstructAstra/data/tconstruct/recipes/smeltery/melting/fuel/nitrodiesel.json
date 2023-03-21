@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:melting_fuel",
   "fluid": {
-    "name": "tconstruct:blazing_blood",
+    "name": "techreborn:nitro_diesel",
     "amount": 1000
   },
   "duration": 150,
