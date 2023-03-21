@@ -4,17 +4,17 @@
     {
       "condition": "fabric:item_tags_populated",
       "values": [
-        "c:storage_blocks/shadow"
+        "c:ingots/radiant"
       ]
     }
   ],
   "ingredient": {
-    "tag": "c:storage_blocks/shadowh"
+    "tag": "c:ingots/radiant"
   },
   "result": {
-    "fluid": "kubejs:molten_shadowsteel",
+    "fluid": "kubejs:molten_radiance",
     "amount": 9000
   },
   "temperature": 425,
-  "time": 500
+  "time": 200
 }

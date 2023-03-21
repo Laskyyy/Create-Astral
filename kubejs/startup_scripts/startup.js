@@ -73,7 +73,14 @@ onEvent('fluid.registry', event => {
 event.create('molten_shadowsteel')
 .thickTexture(0x2e2742)
 .bucketColor(0x2e2742)
-.displayName('Yttrium')
+.displayName('Shadow Fluid')
+.stillTexture('tconstruct:block/fluid/molten/still')
+.flowingTexture('tconstruct:block/fluid/molten/flowing')
+
+event.create('molten_radiance')
+.thickTexture(0xf7f2ff)
+.bucketColor(0xf7f2ff)
+.displayName('Radiant Residue')
 .stillTexture('tconstruct:block/fluid/molten/still')
 .flowingTexture('tconstruct:block/fluid/molten/flowing')
 
