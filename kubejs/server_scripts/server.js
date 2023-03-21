@@ -1244,6 +1244,10 @@ onEvent('recipes', event => {
   event.replaceInput({output: 'ad_astra:netherite_space_suit'}, 'minecraft:netherite_chestplate', 'createastral:sturdy_chestplate')
   event.replaceInput({output: 'ad_astra:netherite_space_pants'}, 'minecraft:netherite_leggings', 'createastral:sturdy_leggings')
   event.replaceInput({output: 'ad_astra:netherite_space_boots'}, 'minecraft:netherite_leggings', 'createastral:sturdy_boots')
+  event.replaceInput({output: 'ad_astra:netherite_space_helmet'}, 'ad_astra:compressed_steel', 'ad_astra:compressed_ostrum')
+  event.replaceInput({output: 'ad_astra:netherite_space_suit'}, 'ad_astra:compressed_steel', 'ad_astra:compressed_ostrum')
+  event.replaceInput({output: 'ad_astra:netherite_space_pants'}, 'ad_astra:compressed_steel', 'techreborn:lead_plate')
+  event.replaceInput({output: 'ad_astra:netherite_space_boots'}, 'ad_astra:compressed_steel', 'techreborn:lead_plate')
   event.remove({output: 'ad_astra:jet_suit_helmet'})
   event.remove({output: 'ad_astra:jet_suit'})
   event.remove({output: 'ad_astra:jet_suit_pants'})
@@ -1403,8 +1407,8 @@ onEvent('recipes', event => {
 
 
 
-  event.replaceInput({mod: 'techreborn'}, 'techreborn:tungsten_plate', 'ad_astra:compressed_steel')
-  event.replaceInput({mod: 'techreborn'}, 'techreborn:tungsten_ingot', 'ad_astra:compressed_steel')
+  event.replaceInput({mod: 'techreborn'}, 'techreborn:tungsten_plate', 'ad_astra:compressed_ostrum')
+  event.replaceInput({mod: 'techreborn'}, 'techreborn:tungsten_ingot', 'ad_astra:compressed_ostrum')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:tungsten_storage_block', 'ad_astra:steel_block')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:tungsten_nugget', 'ad_astra:steel_nugget')
   event.remove({output: 'techreborn:tungsten_plate'})
@@ -1417,8 +1421,8 @@ onEvent('recipes', event => {
   event.remove({output: 'techreborn:tungsten_small_dust'})
   event.remove({output: 'techreborn:tungsten_nugget'})
 
-  event.replaceInput({mod: 'techreborn'}, 'techreborn:tungstensteel_plate', 'ad_astra:compressed_steel')
-  event.replaceInput({mod: 'techreborn'}, 'techreborn:tungstensteel_ingot', 'ad_astra:compressed_steel')
+  event.replaceInput({mod: 'techreborn'}, 'techreborn:tungstensteel_plate', 'ad_astra:compressed_ostrum')
+  event.replaceInput({mod: 'techreborn'}, 'techreborn:tungstensteel_ingot', 'ad_astra:compressed_ostrum')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:tungstensteel_storage_block', 'ad_astra:steel_block')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:tungstensteel_nugget', 'ad_astra:steel_nugget')
   event.remove({output: 'techreborn:tungstensteel_plate'})
@@ -1477,6 +1481,7 @@ onEvent('recipes', event => {
   event.replaceInput({mod: 'techreborn'}, 'techreborn:nickel_plate', 'ad_astra:compressed_desh')
 
   event.replaceInput({mod: 'techreborn'}, 'techreborn:brass_plate', 'create:brass_sheet')
+  event.replaceInput({mod: 'techreborn'}, 'ad_astra:compressed_steel', 'ad_astra:compressed_ostrum')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:brass_ingot', 'create:brass_ingot')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:brass_storage_block', 'create:brass_block')
   event.replaceInput({mod: 'techreborn'}, 'techreborn:brass_nugget', 'create:brass_nugget')
@@ -1553,17 +1558,17 @@ onEvent('recipes', event => {
   event.remove({output: 'techreborn:quantum_boots'})
   event.replaceInput('techreborn:energy_flow_chip', 'techreborn:data_storage_chip')
   event.replaceInput({output: 'techreborn:nanosaber'}, 'create:precision_mechanism', 'create:refined_radiance')
-  event.replaceInput({output: 'techreborn:industrial_grinder'}, 'techreborn:electronic_circuit', 'immersive_aircraft:engine')
+  event.replaceInput({output: 'techreborn:industrial_grinder'}, 'techreborn:electronic_circuit', 'ad_astra:compressed_calorite')
   event.replaceInput({output: 'techreborn:digital_display'}, 'minecraft:black_dye', 'techreborn:machine_parts')
   event.replaceInput({output: 'techreborn:digital_display'}, 'minecraft:glass_pane', '#computercraft:monitor')
-  event.replaceInput('techreborn:lapotronic_orb', 'immersive_aircraft:engine')
+  event.replaceInput('techreborn:lapotronic_orb', 'ad_astra:compressed_calorite')
   event.replaceInput({mod: 'quarrymod'}, 'techreborn:iridium_ingot', 'passivepiglins:piglin_coin')
   event.replaceInput({mod: 'quarrymod'}, 'techreborn:advanced_alloy_plate', 'passivepiglins:piglin_coin')
-  event.replaceInput({mod: 'quarrymod'}, 'techreborn:peridot_plate', 'ad_astra:compressed_steel')
+  event.replaceInput({mod: 'quarrymod'}, 'techreborn:peridot_plate', 'ad_astra:compressed_ostrum')
   event.replaceInput({mod: 'quarrymod'}, 'techreborn:silicon_plate', 'techreborn:carbon_mesh')
   event.replaceInput({mod: 'quarrymod'}, 'techreborn:lapis_plate', 'create:lapis_sheet')
   event.replaceInput({mod: 'quarrymod'}, 'techreborn:peridot_storage_block', 'createastral:olivine_sheet')
-  event.replaceInput({mod: 'quarrymod'}, 'techreborn:titanium_plate', 'ad_astra:compressed_steel')
+  event.replaceInput({mod: 'quarrymod'}, 'techreborn:titanium_plate', 'ad_astra:compressed_ostrum')
   event.replaceInput({mod: 'quarrymod'}, 'techreborn:tungstensteel_plate', 'create:shadow_steel')
   event.replaceInput({mod: 'techreborn'},'techreborn:iridium_ingot', 'yttr:yttrium_ingot')
   event.replaceInput({mod: 'techreborn'},'techreborn:iridium_plate', 'yttr:yttrium_ingot')
@@ -1752,7 +1757,7 @@ event.recipes.createMixing('techreborn:rubber', [
 ]).processingTime(50)
 
 event.recipes.createMixing('4x techreborn:machine_parts', [
-  'ad_astra:compressed_steel',
+  'ad_astra:compressed_ostrum',
   'techreborn:carbon_mesh',
   '8x #c:wires'
 ]).superheated().processingTime(400)
@@ -1784,18 +1789,24 @@ event.recipes.createDeploying('create:integrated_circuit', ['create:integrated_c
 event.recipes.createSequencedAssembly([ // begin
 'techreborn:electronic_circuit', // output
 ], 'createastral:incomplete_electronic_circuit', [ // input
-event.recipes.createDeploying('createastral:incomplete_electronic_circuit', ['createastral:incomplete_electronic_circuit', 'ad_astra:compressed_ostrum']), 
+event.recipes.createDeploying('createastral:incomplete_electronic_circuit', ['createastral:incomplete_electronic_circuit', 'techreborn:lead_plate']), 
 event.recipes.createPressing('createastral:incomplete_electronic_circuit', 'createastral:incomplete_electronic_circuit')
 ]).transitionalItem('createastral:incomplete_electronic_circuit').loops(1) 
 
-event.recipes.createSequencedAssembly([ // begin
-'immersive_aircraft:engine', // output
-], 'create:precision_mechanism', [ // input
-event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'immersive_aircraft:boiler']), 
-event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'techreborn:nak_coolant_cell_60k']),
-event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'createaddition:capacitor']),  
-]).transitionalItem('create:incomplete_precision_mechanism').loops(1) 
 
+event.recipes.createMechanicalCrafting('ad_astra:ostrum_engine', [
+  ' F ',
+  'FEF',
+  'FDF',
+  'ABA',
+
+], {
+  A: 'techreborn:nak_coolant_cell_60k',
+  B: 'createaddition:capacitor',
+  D: 'createaddition:tesla_coil',
+  E: 'ad_astra:ostrum_block',
+  F: 'ad_astra:compressed_ostrum',
+})
 	event.recipes.createMechanicalCrafting('techreborn:fusion_control_computer', [
   'DBCBD',
   'BDCDB',
@@ -1808,11 +1819,11 @@ event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:
   C: 'techreborn:fusion_coil',
   D: 'createaddition:tesla_coil',
   E: 'techreborn:digital_display'
-  
+})
   
  
 		/// /DOODADS MOD RECIPE CHANGES
-})
+
 
 
 
@@ -1933,7 +1944,7 @@ event.recipes.createMixing(Fluid.of('tconstruct:molten_electrum', 900), [
 
 event.recipes.createMixing(Fluid.of('tconstruct:molten_steel', 9000), [
 'techreborn:steel_dust'
-]).superheated()
+]).heated()
 
  	event.recipes.createMixing(Fluid.of('tconstruct:molten_slimesteel', 9000), [
     'minecraft:iron_ingot',
@@ -2098,15 +2109,6 @@ event.recipes.createMechanicalCrafting('ad_astra:nasa_workbench', [
   E: 'techreborn:insulated_hv_cable'
   })
 
-  event.recipes.createMechanicalCrafting('ad_astra:coal_generator', [
-    'ABCBA',
-    'AAEAA'
-  ], {
-    A: 'ad_astra:compressed_steel',
-    B: 'techreborn:lead_ingot',
-    C: 'create:precision_mechanism',
-    E: 'ad_astra:engine_fan'
-    })
 		 	event.recipes.createMechanicalCrafting('computercraft:computer_advanced', [
   'AAA',
   'BCB',
@@ -2133,12 +2135,10 @@ event.recipes.createMechanicalCrafting('ad_astra:nasa_workbench', [
 })
 event.recipes.createMechanicalCrafting('computercraft:turtle_advanced', [
   'ADA',
-  'ABA',
-  ' C '
+  'ABA'
 ], {
   A: 'create:brass_sheet',
   B: 'computercraft:turtle_normal',
-  C: 'ad_astra:steel_block',
   D: 'create:precision_mechanism'
   
 })
@@ -3399,7 +3399,7 @@ event.custom(
     "sound": "minecraft:item.axe.strip"
   })
 
-event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:basic_machine_casing"},{"item":"ad_astra:compressed_steel"}],"results":[{"item":"techreborn:advanced_machine_casing"}]})
+event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:basic_machine_casing"},{"item":"ad_astra:compressed_ostrum"}],"results":[{"item":"techreborn:advanced_machine_casing"}]})
 event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:advanced_machine_frame"},{"item":"techreborn:machine_parts"}],"results":[{"item":"techreborn:industrial_machine_frame"}]})
 event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:basic_machine_frame"},{"item":"techreborn:lead_plate"}],"results":[{"item":"techreborn:advanced_machine_frame"}]})
 event.custom({"type":"create:item_application","ingredients":[{"item":"techreborn:basic_machine_casing"},{"item":"create:sturdy_sheet"}],"results":[{"item":"techreborn:industrial_machine_casing"}]})
