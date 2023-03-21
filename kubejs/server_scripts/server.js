@@ -1495,6 +1495,12 @@ onEvent('recipes', event => {
   event.remove({output: 'techreborn:brass_small_dust'})
   event.remove({output: 'techreborn:brass_nugget'})
 
+  event.remove({output: 'ad_astra:ostrum_ingot', type: 'minecraft:smelting'})
+  event.remove({output: 'ad_astra:ostrum_ingot', type: 'minecraft:blasting'})
+  event.remove({output: 'ad_astra:calorite_ingot', type: 'minecraft:smelting'})
+  event.remove({output: 'ad_astra:calorite_ingot', type: 'minecraft:blasting'})
+  
+
   event.replaceInput({mod: 'techreborn'}, 'techreborn:electronic_circuit', 'create:integrated_circuit')
   event.replaceInput({mod: 'techreborn'}, 'minecraft:lapis_lazuli', 'techreborn:lead_plate')
   event.replaceInput({mod: 'techreborn', output: 'techreborn:red_cell_battery'}, 'techreborn:lead_ingot', 'techreborn:silver_plate')
