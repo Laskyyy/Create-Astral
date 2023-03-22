@@ -9,6 +9,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			icon: "minecraft:bone_meal"
 			x: -21.5d
 			y: -21.5d
 			shape: "square"
@@ -17,13 +18,20 @@
 			dependencies: ["7A552E564BED33A1"]
 			size: 2.0d
 			id: "447B85EDCD394BC6"
-			tasks: [{
-				id: "725FFF11D9979152"
-				type: "item"
-				item: "minecraft:bone_meal"
-			}]
+			tasks: [
+				{
+					id: "725FFF11D9979152"
+					type: "item"
+					item: "minecraft:bone_meal"
+				}
+				{
+					id: "054A7A2261497C6D"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:calcite"
 			x: -21.5d
 			y: -18.0d
 			subtitle: "{chapter.4.quest.2.subtitle}"
@@ -34,13 +42,20 @@
 			]
 			hide: true
 			id: "43B007A5BAE5E02E"
-			tasks: [{
-				id: "502F2F0F3225DCFE"
-				type: "item"
-				item: "minecraft:calcite"
-			}]
+			tasks: [
+				{
+					id: "502F2F0F3225DCFE"
+					type: "item"
+					item: "minecraft:calcite"
+				}
+				{
+					id: "1C22F5DE3CB59B0F"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:cobblestone"
 			x: -14.0d
 			y: -21.5d
 			shape: "square"
@@ -51,25 +66,39 @@
 			]
 			size: 2.0d
 			id: "34F94423116413C9"
-			tasks: [{
-				id: "56C2228298B47A45"
-				type: "item"
-				item: "minecraft:cobblestone"
-			}]
+			tasks: [
+				{
+					id: "56C2228298B47A45"
+					type: "item"
+					item: "minecraft:cobblestone"
+				}
+				{
+					id: "623DFD8AFAACF643"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:gravel"
 			x: -14.0d
 			y: -18.0d
 			subtitle: "{chapter.4.quest.4.subtitle}"
 			dependencies: ["34F94423116413C9"]
 			id: "14E90DB150FD5F52"
-			tasks: [{
-				id: "12C4FCA710583834"
-				type: "item"
-				item: "minecraft:gravel"
-			}]
+			tasks: [
+				{
+					id: "12C4FCA710583834"
+					type: "item"
+					item: "minecraft:gravel"
+				}
+				{
+					id: "3B1EFA6C96355640"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:sand"
 			x: -14.0d
 			y: -14.5d
 			subtitle: "{chapter.4.quest.5.subtitle}"
@@ -81,13 +110,20 @@
 			]
 			hide: true
 			id: "0ECC3FAE2E840816"
-			tasks: [{
-				id: "53646AC4D82963CF"
-				type: "item"
-				item: "minecraft:sand"
-			}]
+			tasks: [
+				{
+					id: "53646AC4D82963CF"
+					type: "item"
+					item: "minecraft:sand"
+				}
+				{
+					id: "7552C1AF2A3F31DC"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:clay_ball"
 			x: -14.0d
 			y: -11.0d
 			shape: "diamond"
@@ -101,13 +137,20 @@
 			]
 			size: 2.5d
 			id: "09C0AD7F5D605F0C"
-			tasks: [{
-				id: "41D1941166CC02A4"
-				type: "item"
-				item: "minecraft:clay_ball"
-			}]
+			tasks: [
+				{
+					id: "41D1941166CC02A4"
+					type: "item"
+					item: "minecraft:clay_ball"
+				}
+				{
+					id: "3469E8CF2FC7D877"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:pointed_dripstone"
 			x: -21.5d
 			y: -11.0d
 			subtitle: "{chapter.4.quest.7.subtitle}"
@@ -119,13 +162,20 @@
 			]
 			hide: true
 			id: "1BFA4FB40E2BB903"
-			tasks: [{
-				id: "630FF056E1411F7A"
-				type: "item"
-				item: "minecraft:pointed_dripstone"
-			}]
+			tasks: [
+				{
+					id: "630FF056E1411F7A"
+					type: "item"
+					item: "minecraft:pointed_dripstone"
+				}
+				{
+					id: "6D942EB753F617DD"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "create:limestone"
 			x: -24.5d
 			y: -4.0d
 			subtitle: "{chapter.4.quest.8.subtitle}"
@@ -136,13 +186,20 @@
 			]
 			hide: true
 			id: "31EEA6A71A76E09D"
-			tasks: [{
-				id: "3A37DCFA6EE385F0"
-				type: "item"
-				item: "create:limestone"
-			}]
+			tasks: [
+				{
+					id: "3A37DCFA6EE385F0"
+					type: "item"
+					item: "create:limestone"
+				}
+				{
+					id: "279354673D2E6A3B"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "ad_astra:moon_sand"
 			x: -24.5d
 			y: -7.5d
 			subtitle: "{chapter.4.quest.9.subtitle}"
@@ -154,13 +211,20 @@
 			]
 			hide: true
 			id: "5453AF2AAC0202B1"
-			tasks: [{
-				id: "30AE03004D63200D"
-				type: "item"
-				item: "ad_astra:moon_sand"
-			}]
+			tasks: [
+				{
+					id: "30AE03004D63200D"
+					type: "item"
+					item: "ad_astra:moon_sand"
+				}
+				{
+					id: "0F7DF13956F18A97"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "ad_astra:desh_nugget"
 			x: -27.5d
 			y: -4.0d
 			shape: "diamond"
@@ -169,13 +233,20 @@
 			dependencies: ["5453AF2AAC0202B1"]
 			size: 2.5d
 			id: "6DE347D54C61BD33"
-			tasks: [{
-				id: "503259377E607C2F"
-				type: "item"
-				item: "ad_astra:desh_nugget"
-			}]
+			tasks: [
+				{
+					id: "503259377E607C2F"
+					type: "item"
+					item: "ad_astra:desh_nugget"
+				}
+				{
+					id: "69FE14BB57FEB8F0"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "ad_astra:moon_stone"
 			x: -24.5d
 			y: -11.0d
 			subtitle: "{chapter.4.quest.11.subtitle}"
@@ -185,13 +256,20 @@
 			]
 			hide: true
 			id: "2574530C2DBC8B11"
-			tasks: [{
-				id: "41FE09FC4F0E7C86"
-				type: "item"
-				item: "ad_astra:moon_stone"
-			}]
+			tasks: [
+				{
+					id: "41FE09FC4F0E7C86"
+					type: "item"
+					item: "ad_astra:moon_stone"
+				}
+				{
+					id: "13F8B339FB5614F4"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "ad_astra:moon_cobblestone"
 			x: -24.5d
 			y: -14.5d
 			shape: "square"
@@ -201,14 +279,21 @@
 			hide: false
 			size: 1.5d
 			id: "4048C7C6A85BD755"
-			tasks: [{
-				id: "76242BE5980EEA47"
-				type: "item"
-				item: "ad_astra:moon_cobblestone"
-			}]
+			tasks: [
+				{
+					id: "76242BE5980EEA47"
+					type: "item"
+					item: "ad_astra:moon_cobblestone"
+				}
+				{
+					id: "2D6A2A8C5EA00574"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			title: "{chapter.4.quest.13.title}"
+			icon: "minecraft:andesite"
 			x: -6.5d
 			y: -14.5d
 			shape: "diamond"
@@ -223,13 +308,20 @@
 			hide: true
 			size: 2.5d
 			id: "4F3D488AAEB68810"
-			tasks: [{
-				id: "13BBBB11C35D765F"
-				type: "item"
-				item: "minecraft:andesite"
-			}]
+			tasks: [
+				{
+					id: "13BBBB11C35D765F"
+					type: "item"
+					item: "minecraft:andesite"
+				}
+				{
+					id: "66A4C290D63681A4"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:soul_sand"
 			x: -6.5d
 			y: -11.0d
 			subtitle: "{chapter.4.quest.14.subtitle}"
@@ -239,26 +331,40 @@
 			]
 			hide: true
 			id: "7B7930EE5AFA5EC0"
-			tasks: [{
-				id: "3F9EA96656E3B03B"
-				type: "item"
-				item: "minecraft:soul_sand"
-			}]
+			tasks: [
+				{
+					id: "3F9EA96656E3B03B"
+					type: "item"
+					item: "minecraft:soul_sand"
+				}
+				{
+					id: "2778A7DB725E8DB4"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:netherrack"
 			x: -3.5d
 			y: -9.5d
 			subtitle: "{chapter.4.quest.15.subtitle}"
 			dependencies: ["7B7930EE5AFA5EC0"]
 			hide: true
 			id: "665A937BDB1B23C2"
-			tasks: [{
-				id: "7037316CA844AA16"
-				type: "item"
-				item: "minecraft:netherrack"
-			}]
+			tasks: [
+				{
+					id: "7037316CA844AA16"
+					type: "item"
+					item: "minecraft:netherrack"
+				}
+				{
+					id: "7507DA201EE70C8F"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "techreborn:netherrack_dust"
 			x: -3.5d
 			y: -8.5d
 			subtitle: "{chapter.4.quest.16.subtitle}"
@@ -268,13 +374,20 @@
 			]
 			hide: true
 			id: "5E3AA3740DDFA355"
-			tasks: [{
-				id: "51BDDA330C45C10F"
-				type: "item"
-				item: "techreborn:netherrack_dust"
-			}]
+			tasks: [
+				{
+					id: "51BDDA330C45C10F"
+					type: "item"
+					item: "techreborn:netherrack_dust"
+				}
+				{
+					id: "41B777FB42C55011"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:basalt"
 			x: -0.5d
 			y: -14.5d
 			shape: "square"
@@ -284,14 +397,21 @@
 			hide: true
 			size: 2.0d
 			id: "1F46987F39D5BBDA"
-			tasks: [{
-				id: "73FBEC816138A151"
-				type: "item"
-				item: "minecraft:basalt"
-			}]
+			tasks: [
+				{
+					id: "73FBEC816138A151"
+					type: "item"
+					item: "minecraft:basalt"
+				}
+				{
+					id: "77E6BC7CF6F6B04F"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			title: "{chapter.4.quest.18.title}"
+			icon: "minecraft:diorite"
 			x: -0.5d
 			y: -11.0d
 			subtitle: "{chapter.4.quest.18.subtitle}"
@@ -302,13 +422,20 @@
 			]
 			hide: true
 			id: "62BC7A057C6192E7"
-			tasks: [{
-				id: "734834C0FFD0909A"
-				type: "item"
-				item: "minecraft:diorite"
-			}]
+			tasks: [
+				{
+					id: "734834C0FFD0909A"
+					type: "item"
+					item: "minecraft:diorite"
+				}
+				{
+					id: "0C446149BC26B3B2"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:quartz"
 			x: 5.5d
 			y: -11.0d
 			shape: "diamond"
@@ -321,13 +448,20 @@
 			]
 			size: 2.0d
 			id: "347BC30501D878D4"
-			tasks: [{
-				id: "291A449FE0164A45"
-				type: "item"
-				item: "minecraft:quartz"
-			}]
+			tasks: [
+				{
+					id: "291A449FE0164A45"
+					type: "item"
+					item: "minecraft:quartz"
+				}
+				{
+					id: "0F9921F74B9C2067"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:red_sand"
 			x: -3.5d
 			y: -4.0d
 			subtitle: "{chapter.4.quest.20.subtitle}"
@@ -338,13 +472,20 @@
 			]
 			hide: true
 			id: "171F7C7F9622F718"
-			tasks: [{
-				id: "2FD888EE2062C8DB"
-				type: "item"
-				item: "minecraft:red_sand"
-			}]
+			tasks: [
+				{
+					id: "2FD888EE2062C8DB"
+					type: "item"
+					item: "minecraft:red_sand"
+				}
+				{
+					id: "53D82C7BE678E2AD"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "create:zinc_nugget"
 			x: -3.5d
 			y: -0.5d
 			shape: "diamond"
@@ -358,14 +499,21 @@
 			hide: true
 			size: 2.5d
 			id: "288204172129E71B"
-			tasks: [{
-				id: "57B3A758FB61DB26"
-				type: "item"
-				item: "create:zinc_nugget"
-			}]
+			tasks: [
+				{
+					id: "57B3A758FB61DB26"
+					type: "item"
+					item: "create:zinc_nugget"
+				}
+				{
+					id: "267B957AB96FFB29"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			title: "{chapter.4.quest.22.title}"
+			icon: "minecraft:andesite"
 			x: 5.5d
 			y: -7.5d
 			shape: "diamond"
@@ -379,14 +527,21 @@
 			hide_text_until_complete: false
 			size: 1.5d
 			id: "732257A34FD8ED21"
-			tasks: [{
-				id: "70036A9ACF1F75AB"
-				type: "item"
-				item: "minecraft:andesite"
-			}]
+			tasks: [
+				{
+					id: "70036A9ACF1F75AB"
+					type: "item"
+					item: "minecraft:andesite"
+				}
+				{
+					id: "227D4DDAE71AC2B4"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			title: "{chapter.4.quest.23.title}"
+			icon: "minecraft:granite"
 			x: -0.5d
 			y: -7.5d
 			subtitle: "{chapter.4.quest.23.subtitle}"
@@ -398,13 +553,20 @@
 			]
 			hide: true
 			id: "1511AEC329BBB627"
-			tasks: [{
-				id: "13B613A77DFC2BAF"
-				type: "item"
-				item: "minecraft:granite"
-			}]
+			tasks: [
+				{
+					id: "13B613A77DFC2BAF"
+					type: "item"
+					item: "minecraft:granite"
+				}
+				{
+					id: "266C4B4EC35E402A"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "createastral:lime"
 			x: -24.5d
 			y: -0.5d
 			subtitle: "{chapter.4.quest.24.subtitle}"
@@ -414,13 +576,20 @@
 			]
 			hide: true
 			id: "282478462D746146"
-			tasks: [{
-				id: "1804C9BE9F2A29C6"
-				type: "item"
-				item: "createastral:lime"
-			}]
+			tasks: [
+				{
+					id: "1804C9BE9F2A29C6"
+					type: "item"
+					item: "createastral:lime"
+				}
+				{
+					id: "1FBE91605CACDC7A"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "techreborn:silver_nugget"
 			x: -24.5d
 			y: 3.0d
 			shape: "diamond"
@@ -435,25 +604,39 @@
 			hide: true
 			size: 2.5d
 			id: "20B5957A02D96D8D"
-			tasks: [{
-				id: "4D252726EC84BF13"
-				type: "item"
-				item: "techreborn:silver_nugget"
-			}]
+			tasks: [
+				{
+					id: "4D252726EC84BF13"
+					type: "item"
+					item: "techreborn:silver_nugget"
+				}
+				{
+					id: "620C2B7546EFE336"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:glass"
 			x: -9.5d
 			y: -11.0d
 			subtitle: "{chapter.4.quest.26.subtitle}"
 			dependencies: ["0ECC3FAE2E840816"]
 			id: "3DF7824F849750C5"
-			tasks: [{
-				id: "6D9F07BCBCC02C87"
-				type: "item"
-				item: "minecraft:glass"
-			}]
+			tasks: [
+				{
+					id: "6D9F07BCBCC02C87"
+					type: "item"
+					item: "minecraft:glass"
+				}
+				{
+					id: "5C0962DCCB2A9100"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "techreborn:synthetic_redstone_crystal"
 			x: -9.5d
 			y: -7.5d
 			subtitle: "{chapter.4.quest.27.subtitle}"
@@ -464,13 +647,20 @@
 			]
 			hide: true
 			id: "0D2B2E4558DCB357"
-			tasks: [{
-				id: "4685A4EF8FA17804"
-				type: "item"
-				item: "techreborn:synthetic_redstone_crystal"
-			}]
+			tasks: [
+				{
+					id: "4685A4EF8FA17804"
+					type: "item"
+					item: "techreborn:synthetic_redstone_crystal"
+				}
+				{
+					id: "2368350D88EDD088"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:redstone"
 			x: -6.5d
 			y: -4.0d
 			shape: "diamond"
@@ -484,13 +674,20 @@
 			hide: true
 			size: 2.5d
 			id: "7DFED69541E3B273"
-			tasks: [{
-				id: "2BA382AE0D28A524"
-				type: "item"
-				item: "minecraft:redstone"
-			}]
+			tasks: [
+				{
+					id: "2BA382AE0D28A524"
+					type: "item"
+					item: "minecraft:redstone"
+				}
+				{
+					id: "30B706E1B286A591"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "tconstruct:seared_stone"
 			x: -12.5d
 			y: -7.5d
 			subtitle: "{chapter.4.quest.29.subtitle}"
@@ -500,13 +697,20 @@
 			]
 			hide: true
 			id: "406D5C04583BD542"
-			tasks: [{
-				id: "1E1FCC3D5E8573DA"
-				type: "item"
-				item: "tconstruct:seared_stone"
-			}]
+			tasks: [
+				{
+					id: "1E1FCC3D5E8573DA"
+					type: "item"
+					item: "tconstruct:seared_stone"
+				}
+				{
+					id: "2F14826900468255"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "create:asurine"
 			x: -15.0d
 			y: -4.0d
 			subtitle: "{chapter.4.quest.30.subtitle}"
@@ -517,13 +721,20 @@
 			]
 			hide: true
 			id: "7083DC2167188BCF"
-			tasks: [{
-				id: "48BBD429AF4599A2"
-				type: "item"
-				item: "create:asurine"
-			}]
+			tasks: [
+				{
+					id: "48BBD429AF4599A2"
+					type: "item"
+					item: "create:asurine"
+				}
+				{
+					id: "56D18C75A08CCEBC"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "create:veridium"
 			x: -10.0d
 			y: -4.0d
 			subtitle: "{chapter.4.quest.31.subtitle}"
@@ -534,13 +745,20 @@
 			]
 			hide: true
 			id: "1F7524655E4B58A0"
-			tasks: [{
-				id: "3970007A5BE7AC5F"
-				type: "item"
-				item: "create:veridium"
-			}]
+			tasks: [
+				{
+					id: "3970007A5BE7AC5F"
+					type: "item"
+					item: "create:veridium"
+				}
+				{
+					id: "2388DC9FF12CBE98"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "techreborn:raw_tin"
 			x: -15.5d
 			y: -0.5d
 			shape: "diamond"
@@ -555,13 +773,20 @@
 			hide_text_until_complete: false
 			size: 2.5d
 			id: "2B8D64F5CD89A082"
-			tasks: [{
-				id: "254AC2230637213E"
-				type: "item"
-				item: "techreborn:raw_tin"
-			}]
+			tasks: [
+				{
+					id: "254AC2230637213E"
+					type: "item"
+					item: "techreborn:raw_tin"
+				}
+				{
+					id: "33C55E527E8CC39D"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:raw_copper"
 			x: -9.5d
 			y: -0.5d
 			shape: "diamond"
@@ -576,13 +801,20 @@
 			hide_text_until_complete: false
 			size: 2.5d
 			id: "22BAAD8B7057DF80"
-			tasks: [{
-				id: "75BFDA75DB06AEEF"
-				type: "item"
-				item: "minecraft:raw_copper"
-			}]
+			tasks: [
+				{
+					id: "75BFDA75DB06AEEF"
+					type: "item"
+					item: "minecraft:raw_copper"
+				}
+				{
+					id: "158604C0C77D6E7F"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:gold_nugget"
 			x: -6.5d
 			y: -7.5d
 			shape: "diamond"
@@ -591,13 +823,20 @@
 			dependencies: ["7B7930EE5AFA5EC0"]
 			size: 2.5d
 			id: "0A7ECB3D720093C0"
-			tasks: [{
-				id: "5D126AE5A2E89A5E"
-				type: "item"
-				item: "minecraft:gold_nugget"
-			}]
+			tasks: [
+				{
+					id: "5D126AE5A2E89A5E"
+					type: "item"
+					item: "minecraft:gold_nugget"
+				}
+				{
+					id: "54025A7481944DFE"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:kelp"
 			x: -21.5d
 			y: -7.5d
 			shape: "square"
@@ -606,13 +845,20 @@
 			hide: true
 			size: 1.5d
 			id: "707B59245747B112"
-			tasks: [{
-				id: "6969F0E705A7FAFE"
-				type: "item"
-				item: "minecraft:kelp"
-			}]
+			tasks: [
+				{
+					id: "6969F0E705A7FAFE"
+					type: "item"
+					item: "minecraft:kelp"
+				}
+				{
+					id: "4B0C1098F80FD645"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:dried_kelp"
 			x: -21.5d
 			y: -4.0d
 			shape: "diamond"
@@ -621,13 +867,20 @@
 			dependencies: ["707B59245747B112"]
 			size: 2.5d
 			id: "32C6826E01CB67F2"
-			tasks: [{
-				id: "544C749CDC09E419"
-				type: "item"
-				item: "minecraft:dried_kelp"
-			}]
+			tasks: [
+				{
+					id: "544C749CDC09E419"
+					type: "item"
+					item: "minecraft:dried_kelp"
+				}
+				{
+					id: "32E89E1A9CE7620F"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:gunpowder"
 			x: -21.5d
 			y: -0.5d
 			subtitle: "{chapter.4.quest.37.subtitle}"
@@ -637,13 +890,20 @@
 			]
 			hide: true
 			id: "5389EB8711792F04"
-			tasks: [{
-				id: "619E30E3E634B090"
-				type: "item"
-				item: "minecraft:gunpowder"
-			}]
+			tasks: [
+				{
+					id: "619E30E3E634B090"
+					type: "item"
+					item: "minecraft:gunpowder"
+				}
+				{
+					id: "11624139C7A8DE87"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:lapis_lazuli"
 			x: -18.5d
 			y: -0.5d
 			shape: "diamond"
@@ -658,13 +918,20 @@
 			hide: true
 			size: 2.5d
 			id: "0C464BD01B2B52E0"
-			tasks: [{
-				id: "353753310099B852"
-				type: "item"
-				item: "minecraft:lapis_lazuli"
-			}]
+			tasks: [
+				{
+					id: "353753310099B852"
+					type: "item"
+					item: "minecraft:lapis_lazuli"
+				}
+				{
+					id: "34653936B5C45CFD"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "techreborn:lazurite_dust"
 			x: -17.0d
 			y: -4.0d
 			subtitle: "{chapter.4.quest.39.subtitle}"
@@ -674,14 +941,21 @@
 			]
 			hide: true
 			id: "274BA7205ECC4FEB"
-			tasks: [{
-				id: "5628C6693E4D8EBF"
-				type: "item"
-				item: "techreborn:lazurite_dust"
-			}]
+			tasks: [
+				{
+					id: "5628C6693E4D8EBF"
+					type: "item"
+					item: "techreborn:lazurite_dust"
+				}
+				{
+					id: "6A597015D09AA53E"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			title: "{chapter.4.quest.40.title}"
+			icon: "minecraft:flint"
 			x: -9.5d
 			y: -18.0d
 			shape: "octagon"
@@ -689,13 +963,20 @@
 			description: ["{chapter.4.quest.40.description.1}"]
 			dependencies: ["14E90DB150FD5F52"]
 			id: "6623524E68636273"
-			tasks: [{
-				id: "657017DCE89F1209"
-				type: "item"
-				item: "minecraft:flint"
-			}]
+			tasks: [
+				{
+					id: "657017DCE89F1209"
+					type: "item"
+					item: "minecraft:flint"
+				}
+				{
+					id: "599ED8781C0116CD"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:iron_nugget"
 			x: -18.5d
 			y: -14.5d
 			shape: "diamond"
@@ -709,11 +990,17 @@
 			hide: true
 			size: 2.5d
 			id: "3EBC7889FEFF7A55"
-			tasks: [{
-				id: "05026B299C8FBDC7"
-				type: "item"
-				item: "minecraft:iron_nugget"
-			}]
+			tasks: [
+				{
+					id: "05026B299C8FBDC7"
+					type: "item"
+					item: "minecraft:iron_nugget"
+				}
+				{
+					id: "586B206960E77671"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			x: -14.5d
@@ -806,6 +1093,7 @@
 			}]
 		}
 		{
+			icon: "create:rose_quartz"
 			x: 8.5d
 			y: -11.0d
 			subtitle: "{chapter.4.quest.48.subtitle}"
@@ -815,26 +1103,40 @@
 			]
 			hide: true
 			id: "6B3AE660A641C114"
-			tasks: [{
-				id: "686A9D13861D1830"
-				type: "item"
-				item: "create:rose_quartz"
-			}]
+			tasks: [
+				{
+					id: "686A9D13861D1830"
+					type: "item"
+					item: "create:rose_quartz"
+				}
+				{
+					id: "2A02BB9165DD16F5"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "create:polished_rose_quartz"
 			x: 8.5d
 			y: -7.5d
 			subtitle: "{chapter.4.quest.49.subtitle}"
 			dependencies: ["6B3AE660A641C114"]
 			hide: true
 			id: "1CBDFF73BCBD9083"
-			tasks: [{
-				id: "1C60E20F1AF2652B"
-				type: "item"
-				item: "create:polished_rose_quartz"
-			}]
+			tasks: [
+				{
+					id: "1C60E20F1AF2652B"
+					type: "item"
+					item: "create:polished_rose_quartz"
+				}
+				{
+					id: "776CD97484099E1F"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "create:electron_tube"
 			x: 8.5d
 			y: -4.0d
 			shape: "diamond"
@@ -849,13 +1151,20 @@
 			size: 2.5d
 			min_width: 1
 			id: "79BE0CDB2541C4C2"
-			tasks: [{
-				id: "67126B48EE8EAEF7"
-				type: "item"
-				item: "create:electron_tube"
-			}]
+			tasks: [
+				{
+					id: "67126B48EE8EAEF7"
+					type: "item"
+					item: "create:electron_tube"
+				}
+				{
+					id: "3254BBE304F48451"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "tconstruct:blazing_blood_bucket"
 			x: -33.5d
 			y: -21.5d
 			shape: "square"
@@ -864,13 +1173,20 @@
 			dependencies: ["3CB5D433A10C2040"]
 			size: 2.0d
 			id: "2E443EE8C2CC5DE9"
-			tasks: [{
-				id: "3AE3FABC164A0A54"
-				type: "item"
-				item: "tconstruct:blazing_blood_bucket"
-			}]
+			tasks: [
+				{
+					id: "3AE3FABC164A0A54"
+					type: "item"
+					item: "tconstruct:blazing_blood_bucket"
+				}
+				{
+					id: "22BB76FA337B3B13"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "tconstruct:blood_bucket"
 			x: -30.5d
 			y: -21.5d
 			shape: "square"
@@ -879,13 +1195,20 @@
 			dependencies: ["3CB5D433A10C2040"]
 			size: 2.0d
 			id: "75DBB5D323C6761B"
-			tasks: [{
-				id: "5077E3D13D3FB1CF"
-				type: "item"
-				item: "tconstruct:blood_bucket"
-			}]
+			tasks: [
+				{
+					id: "5077E3D13D3FB1CF"
+					type: "item"
+					item: "tconstruct:blood_bucket"
+				}
+				{
+					id: "7FD2FFF67F0FC650"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:slime_ball"
 			x: -27.5d
 			y: -14.5d
 			subtitle: "{chapter.4.quest.53.subtitle}"
@@ -894,25 +1217,39 @@
 				"09C4EF17B09DD54B"
 			]
 			id: "435FEF448EECB8A9"
-			tasks: [{
-				id: "2E7BA205A33FAAB4"
-				type: "item"
-				item: "minecraft:slime_ball"
-			}]
+			tasks: [
+				{
+					id: "2E7BA205A33FAAB4"
+					type: "item"
+					item: "minecraft:slime_ball"
+				}
+				{
+					id: "2434E89D62197DCA"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "create:dough"
 			x: -28.0d
 			y: -18.0d
 			subtitle: "{chapter.4.quest.54.subtitle}"
 			dependencies: ["506F91A88F6A9960"]
 			id: "09C4EF17B09DD54B"
-			tasks: [{
-				id: "67D1E04081F6C2EB"
-				type: "item"
-				item: "create:dough"
-			}]
+			tasks: [
+				{
+					id: "67D1E04081F6C2EB"
+					type: "item"
+					item: "create:dough"
+				}
+				{
+					id: "2ED71D0594CE7E90"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:lime_dye"
 			x: -27.0d
 			y: -18.0d
 			subtitle: "{chapter.4.quest.55.subtitle}"
@@ -921,13 +1258,20 @@
 				"09BA679DF8E30068"
 			]
 			id: "22466F075AF13097"
-			tasks: [{
-				id: "008DBEC585A373FD"
-				type: "item"
-				item: "minecraft:lime_dye"
-			}]
+			tasks: [
+				{
+					id: "008DBEC585A373FD"
+					type: "item"
+					item: "minecraft:lime_dye"
+				}
+				{
+					id: "6E4D62BFA3651398"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:green_dye"
 			x: -26.5d
 			y: -21.5d
 			shape: "square"
@@ -935,37 +1279,58 @@
 			dependencies: ["3AF363AF0DF17B33"]
 			size: 2.0d
 			id: "538805A57FBC2DC8"
-			tasks: [{
-				id: "785570FA1A3C3501"
-				type: "item"
-				item: "minecraft:green_dye"
-			}]
+			tasks: [
+				{
+					id: "785570FA1A3C3501"
+					type: "item"
+					item: "minecraft:green_dye"
+				}
+				{
+					id: "587075D07EF3E187"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:blaze_rod"
 			x: -33.5d
 			y: -18.0d
 			subtitle: "{chapter.4.quest.57.subtitle}"
 			dependencies: ["2E443EE8C2CC5DE9"]
 			id: "234C22F2C08CFE9B"
-			tasks: [{
-				id: "596542A61DFB9212"
-				type: "item"
-				item: "minecraft:blaze_rod"
-			}]
+			tasks: [
+				{
+					id: "596542A61DFB9212"
+					type: "item"
+					item: "minecraft:blaze_rod"
+				}
+				{
+					id: "6A5BA689B4B2C592"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:blaze_powder"
 			x: -33.5d
 			y: -14.5d
 			subtitle: "{chapter.4.quest.58.subtitle}"
 			dependencies: ["234C22F2C08CFE9B"]
 			id: "7E8A77B2BB8550B6"
-			tasks: [{
-				id: "4312350F016A5223"
-				type: "item"
-				item: "minecraft:blaze_powder"
-			}]
+			tasks: [
+				{
+					id: "4312350F016A5223"
+					type: "item"
+					item: "minecraft:blaze_powder"
+				}
+				{
+					id: "2569181E61AAD4C0"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:magma_cream"
 			x: -30.5d
 			y: -11.0d
 			subtitle: "{chapter.4.quest.59.subtitle}"
@@ -977,13 +1342,20 @@
 			]
 			hide: true
 			id: "6A40405DDF192EE6"
-			tasks: [{
-				id: "2DCA186CBA1B5EEC"
-				type: "item"
-				item: "minecraft:magma_cream"
-			}]
+			tasks: [
+				{
+					id: "2DCA186CBA1B5EEC"
+					type: "item"
+					item: "minecraft:magma_cream"
+				}
+				{
+					id: "5DDEEA0083C64E0D"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:obsidian"
 			x: -30.5d
 			y: -4.0d
 			subtitle: "{chapter.4.quest.60.subtitle}"
@@ -991,13 +1363,20 @@
 			dependencies: ["61CBA59F2BC063AC"]
 			hide: false
 			id: "32D551CE9F6A6B0A"
-			tasks: [{
-				id: "6969CCDD1D95EBEF"
-				type: "item"
-				item: "minecraft:obsidian"
-			}]
+			tasks: [
+				{
+					id: "6969CCDD1D95EBEF"
+					type: "item"
+					item: "minecraft:obsidian"
+				}
+				{
+					id: "595FB2CF0B221E39"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "create:sturdy_sheet"
 			x: -30.5d
 			y: 3.0d
 			shape: "diamond"
@@ -1006,23 +1385,36 @@
 			dependencies: ["619CD1378381E86E"]
 			size: 2.5d
 			id: "6B75BA55CF212249"
-			tasks: [{
-				id: "7C589F71A51D28A8"
-				type: "item"
-				item: "create:sturdy_sheet"
-			}]
+			tasks: [
+				{
+					id: "7C589F71A51D28A8"
+					type: "item"
+					item: "create:sturdy_sheet"
+				}
+				{
+					id: "76D053AEB6945DB6"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "tconstruct:blood_slime_ball"
 			x: -30.5d
 			y: -14.5d
 			subtitle: "{chapter.4.quest.62.subtitle}"
 			dependencies: ["75DBB5D323C6761B"]
 			id: "2950D3DA74E0D635"
-			tasks: [{
-				id: "0F7409F178A3CB9F"
-				type: "item"
-				item: "tconstruct:blood_slime_ball"
-			}]
+			tasks: [
+				{
+					id: "0F7409F178A3CB9F"
+					type: "item"
+					item: "tconstruct:blood_slime_ball"
+				}
+				{
+					id: "51383B5DA9C7029C"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			x: -32.0d
@@ -1040,19 +1432,27 @@
 			}]
 		}
 		{
+			icon: "create:wheat_flour"
 			x: -28.5d
 			y: -21.5d
 			shape: "circle"
 			subtitle: "{chapter.4.quest.64.subtitle}"
 			dependencies: ["1A7E5A082C9C7BC8"]
 			id: "506F91A88F6A9960"
-			tasks: [{
-				id: "2ECC9A08D16E6EF3"
-				type: "item"
-				item: "create:wheat_flour"
-			}]
+			tasks: [
+				{
+					id: "2ECC9A08D16E6EF3"
+					type: "item"
+					item: "create:wheat_flour"
+				}
+				{
+					id: "147D5DCDA876FA70"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "tconstruct:seared_brick"
 			x: -3.5d
 			y: 10.0d
 			shape: "diamond"
@@ -1061,13 +1461,20 @@
 			dependencies: ["5A6FC129185EA65C"]
 			size: 2.5d
 			id: "17C8208B96AF144C"
-			tasks: [{
-				id: "49A84F58BCAEF822"
-				type: "item"
-				item: "tconstruct:seared_brick"
-			}]
+			tasks: [
+				{
+					id: "49A84F58BCAEF822"
+					type: "item"
+					item: "tconstruct:seared_brick"
+				}
+				{
+					id: "5BE15BB605C9B566"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "tconstruct:grout"
 			x: -3.5d
 			y: 6.5d
 			subtitle: "{chapter.4.quest.66.subtitle}"
@@ -1077,13 +1484,20 @@
 				"288204172129E71B"
 			]
 			id: "5A6FC129185EA65C"
-			tasks: [{
-				id: "74B3917059E631E3"
-				type: "item"
-				item: "tconstruct:grout"
-			}]
+			tasks: [
+				{
+					id: "74B3917059E631E3"
+					type: "item"
+					item: "tconstruct:grout"
+				}
+				{
+					id: "65B27B00E0154E36"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "create:andesite_alloy"
 			x: -0.5d
 			y: 3.0d
 			shape: "diamond"
@@ -1098,13 +1512,20 @@
 			hide: true
 			size: 2.5d
 			id: "0368B30374467B41"
-			tasks: [{
-				id: "22119F83E6D2E7E8"
-				type: "item"
-				item: "create:andesite_alloy"
-			}]
+			tasks: [
+				{
+					id: "22119F83E6D2E7E8"
+					type: "item"
+					item: "create:andesite_alloy"
+				}
+				{
+					id: "11C8B53B78B3A21E"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "kubejs:compound_mixture_bucket"
 			x: 1.0d
 			y: 0.0d
 			subtitle: "{chapter.4.quest.68.subtitle}"
@@ -1116,13 +1537,20 @@
 			]
 			hide: true
 			id: "18A6359D578BEF87"
-			tasks: [{
-				id: "3BFED453550C5CAB"
-				type: "item"
-				item: "kubejs:compound_mixture_bucket"
-			}]
+			tasks: [
+				{
+					id: "3BFED453550C5CAB"
+					type: "item"
+					item: "kubejs:compound_mixture_bucket"
+				}
+				{
+					id: "6B93D3E3FF049CCC"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "create:andesite_casing"
 			x: -0.5d
 			y: 10.0d
 			shape: "diamond"
@@ -1136,13 +1564,20 @@
 			hide: true
 			size: 2.5d
 			id: "0BF064389F9FFDC3"
-			tasks: [{
-				id: "66FA647204560D3A"
-				type: "item"
-				item: "create:andesite_casing"
-			}]
+			tasks: [
+				{
+					id: "66FA647204560D3A"
+					type: "item"
+					item: "create:andesite_casing"
+				}
+				{
+					id: "71A6A67F0E71146D"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "create:copper_casing"
 			x: -0.5d
 			y: 13.5d
 			shape: "diamond"
@@ -1157,13 +1592,20 @@
 			hide: true
 			size: 2.5d
 			id: "737625E7DFCB0382"
-			tasks: [{
-				id: "4F9DF35559A76531"
-				type: "item"
-				item: "create:copper_casing"
-			}]
+			tasks: [
+				{
+					id: "4F9DF35559A76531"
+					type: "item"
+					item: "create:copper_casing"
+				}
+				{
+					id: "1FF32E6CD2A3206C"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "create:brass_casing"
 			x: -3.5d
 			y: 16.5d
 			shape: "diamond"
@@ -1178,14 +1620,21 @@
 			hide: true
 			size: 2.5d
 			id: "1D0E2A46A37501CB"
-			tasks: [{
-				id: "54159F6A49F9603A"
-				type: "item"
-				item: "create:brass_casing"
-			}]
+			tasks: [
+				{
+					id: "54159F6A49F9603A"
+					type: "item"
+					item: "create:brass_casing"
+				}
+				{
+					id: "423F31C2434F4DF2"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			title: "{chapter.4.quest.72.title}"
+			icon: "techreborn:rubber_sapling"
 			x: 5.5d
 			y: -0.5d
 			shape: "square"
@@ -1194,58 +1643,79 @@
 			hide: true
 			size: 2.0d
 			id: "5B3FA87A71825852"
-			tasks: [{
-				id: "3AD1ED9336A597C6"
-				type: "item"
-				title: "{chapter.4.quest.72.task.1.title}"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "minecraft:saplings"
+			tasks: [
+				{
+					id: "3AD1ED9336A597C6"
+					type: "item"
+					title: "{chapter.4.quest.72.task.1.title}"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:saplings"
+						}
 					}
 				}
-			}]
+				{
+					id: "7ADFB29B713D8F20"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "techreborn:rubber_log"
 			x: 5.5d
 			y: 3.0d
 			subtitle: "{chapter.4.quest.73.subtitle}"
 			dependencies: ["5B3FA87A71825852"]
 			id: "7FFED14DF7F210ED"
-			tasks: [{
-				id: "3D07DB5BC2416123"
-				type: "item"
-				title: "{chapter.4.quest.73.task.1.title}"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "minecraft:logs_that_burn"
+			tasks: [
+				{
+					id: "3D07DB5BC2416123"
+					type: "item"
+					title: "{chapter.4.quest.73.task.1.title}"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:logs_that_burn"
+						}
 					}
 				}
-			}]
+				{
+					id: "71B84ACF3DF29521"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "techreborn:rubber_log_stripped"
 			x: 2.5d
 			y: 6.5d
 			subtitle: "{chapter.4.quest.74.subtitle}"
 			dependencies: ["7FFED14DF7F210ED"]
 			id: "3A632D8D9986D43A"
-			tasks: [{
-				id: "4B1B649AF50ECEA5"
-				type: "item"
-				title: "{chapter.4.quest.74.task.1.title}"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "c:stripped_logs"
+			tasks: [
+				{
+					id: "4B1B649AF50ECEA5"
+					type: "item"
+					title: "{chapter.4.quest.74.task.1.title}"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "c:stripped_logs"
+						}
 					}
 				}
-			}]
+				{
+					id: "2293BE6FCBC98A6F"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:charcoal"
 			x: 8.5d
 			y: 6.5d
 			shape: "diamond"
@@ -1254,25 +1724,39 @@
 			dependencies: ["7FFED14DF7F210ED"]
 			size: 2.5d
 			id: "558432AC3AABA477"
-			tasks: [{
-				id: "7576759C9EFBCFB3"
-				type: "item"
-				item: "minecraft:charcoal"
-			}]
+			tasks: [
+				{
+					id: "7576759C9EFBCFB3"
+					type: "item"
+					item: "minecraft:charcoal"
+				}
+				{
+					id: "2006FB4802FD0359"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "techreborn:sap"
 			x: 5.5d
 			y: 6.5d
 			subtitle: "{chapter.4.quest.76.subtitle}"
 			dependencies: ["7FFED14DF7F210ED"]
 			id: "153FAE86E32F306B"
-			tasks: [{
-				id: "3AE20AB50AA5EC15"
-				type: "item"
-				item: "techreborn:sap"
-			}]
+			tasks: [
+				{
+					id: "3AE20AB50AA5EC15"
+					type: "item"
+					item: "techreborn:sap"
+				}
+				{
+					id: "463770097F0F2C01"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "techreborn:rubber"
 			x: 5.5d
 			y: 10.0d
 			shape: "diamond"
@@ -1281,13 +1765,20 @@
 			dependencies: ["153FAE86E32F306B"]
 			size: 2.5d
 			id: "023225B51792489A"
-			tasks: [{
-				id: "009718C2DC7AAE91"
-				type: "item"
-				item: "techreborn:rubber"
-			}]
+			tasks: [
+				{
+					id: "009718C2DC7AAE91"
+					type: "item"
+					item: "techreborn:rubber"
+				}
+				{
+					id: "641483F9BB62B9C0"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:coal"
 			x: 8.5d
 			y: 10.0d
 			subtitle: "{chapter.4.quest.78.subtitle}"
@@ -1297,13 +1788,20 @@
 			]
 			hide: true
 			id: "7F18819B46FAB017"
-			tasks: [{
-				id: "6232A5326FD848AC"
-				type: "item"
-				item: "minecraft:coal"
-			}]
+			tasks: [
+				{
+					id: "6232A5326FD848AC"
+					type: "item"
+					item: "minecraft:coal"
+				}
+				{
+					id: "2B7A57BB9CD91518"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "techreborn:coal_dust"
 			x: 8.5d
 			y: 13.5d
 			subtitle: "{chapter.4.quest.79.subtitle}"
@@ -1313,13 +1811,20 @@
 			]
 			hide: true
 			id: "0702F6A12A0C5FBE"
-			tasks: [{
-				id: "291CAC378E34D202"
-				type: "item"
-				item: "techreborn:coal_dust"
-			}]
+			tasks: [
+				{
+					id: "291CAC378E34D202"
+					type: "item"
+					item: "techreborn:coal_dust"
+				}
+				{
+					id: "179C6ADD70FB4A2D"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:diamond"
 			x: 8.5d
 			y: 17.0d
 			shape: "diamond"
@@ -1332,13 +1837,20 @@
 			hide: true
 			size: 2.5d
 			id: "1DEA15EE78C47D02"
-			tasks: [{
-				id: "1739626F49A0F462"
-				type: "item"
-				item: "minecraft:diamond"
-			}]
+			tasks: [
+				{
+					id: "1739626F49A0F462"
+					type: "item"
+					item: "minecraft:diamond"
+				}
+				{
+					id: "5606CCCC893B1663"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "techreborn:basic_machine_frame"
 			x: -0.5d
 			y: 20.5d
 			shape: "diamond"
@@ -1353,13 +1865,20 @@
 			hide: true
 			size: 2.5d
 			id: "705D35F27DB6DDEF"
-			tasks: [{
-				id: "0C1E485B92104BD0"
-				type: "item"
-				item: "techreborn:basic_machine_frame"
-			}]
+			tasks: [
+				{
+					id: "0C1E485B92104BD0"
+					type: "item"
+					item: "techreborn:basic_machine_frame"
+				}
+				{
+					id: "700A0CF5A694D1DD"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "create:brass_ingot"
 			x: -6.5d
 			y: 3.0d
 			shape: "diamond"
@@ -1373,13 +1892,20 @@
 			hide: true
 			size: 2.5d
 			id: "5FD6A6FBF967C7D5"
-			tasks: [{
-				id: "7D94A5E8BA1F90F4"
-				type: "item"
-				item: "create:brass_ingot"
-			}]
+			tasks: [
+				{
+					id: "7D94A5E8BA1F90F4"
+					type: "item"
+					item: "create:brass_ingot"
+				}
+				{
+					id: "7099FD940390527C"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "tconstruct:molten_brass_bucket"
 			x: -6.5d
 			y: 13.5d
 			subtitle: "{chapter.4.quest.83.subtitle}"
@@ -1389,13 +1915,20 @@
 			]
 			hide: true
 			id: "6B1FF536B1441EB8"
-			tasks: [{
-				id: "465D8F2B5A4B60A2"
-				type: "item"
-				item: "tconstruct:molten_brass_bucket"
-			}]
+			tasks: [
+				{
+					id: "465D8F2B5A4B60A2"
+					type: "item"
+					item: "tconstruct:molten_brass_bucket"
+				}
+				{
+					id: "10F26E5A8E7DF9DE"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:lapis_block"
 			x: -18.5d
 			y: 3.0d
 			subtitle: "{chapter.4.quest.84.subtitle}"
@@ -1406,25 +1939,39 @@
 			]
 			hide: true
 			id: "7F769452EFAD2E99"
-			tasks: [{
-				id: "633991C61F929CE1"
-				type: "item"
-				item: "minecraft:lapis_block"
-			}]
+			tasks: [
+				{
+					id: "633991C61F929CE1"
+					type: "item"
+					item: "minecraft:lapis_block"
+				}
+				{
+					id: "433D4C0662BC6BAB"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "create:lapis_sheet"
 			x: -18.5d
 			y: 6.5d
 			subtitle: "{chapter.4.quest.85.subtitle}"
 			dependencies: ["7F769452EFAD2E99"]
 			id: "3C90385C588F4630"
-			tasks: [{
-				id: "7CCCAC19D6B772AD"
-				type: "item"
-				item: "create:lapis_sheet"
-			}]
+			tasks: [
+				{
+					id: "7CCCAC19D6B772AD"
+					type: "item"
+					item: "create:lapis_sheet"
+				}
+				{
+					id: "59726CD814BC60AC"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "techreborn:copper_cable"
 			x: -16.0d
 			y: 8.0d
 			subtitle: "{chapter.4.quest.86.subtitle}"
@@ -1435,26 +1982,40 @@
 			]
 			hide: true
 			id: "7DDCC50A985C6BCC"
-			tasks: [{
-				id: "54BA123554C478E7"
-				type: "item"
-				item: "techreborn:copper_cable"
-			}]
+			tasks: [
+				{
+					id: "54BA123554C478E7"
+					type: "item"
+					item: "techreborn:copper_cable"
+				}
+				{
+					id: "1E32857FED8DB10E"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "tconstruct:molten_silver_bucket"
 			x: -24.5d
 			y: 10.0d
 			subtitle: "{chapter.4.quest.87.subtitle}"
 			dependencies: ["20B5957A02D96D8D"]
 			hide: true
 			id: "491505BB41BEF9DE"
-			tasks: [{
-				id: "232B368658F87849"
-				type: "item"
-				item: "tconstruct:molten_silver_bucket"
-			}]
+			tasks: [
+				{
+					id: "232B368658F87849"
+					type: "item"
+					item: "tconstruct:molten_silver_bucket"
+				}
+				{
+					id: "77DC7197988C5288"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "create:integrated_circuit"
 			x: -18.5d
 			y: 10.0d
 			shape: "diamond"
@@ -1467,11 +2028,17 @@
 			]
 			size: 2.5d
 			id: "759E56BE7B6E2BB3"
-			tasks: [{
-				id: "45381CA917FDCF9E"
-				type: "item"
-				item: "create:integrated_circuit"
-			}]
+			tasks: [
+				{
+					id: "45381CA917FDCF9E"
+					type: "item"
+					item: "create:integrated_circuit"
+				}
+				{
+					id: "7FE77CEC2C6CE12F"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			title: "{chapter.4.quest.89.title}"
@@ -1541,6 +2108,7 @@
 			]
 		}
 		{
+			icon: "createastral:bronze_ingot"
 			x: -12.5d
 			y: 3.0d
 			shape: "diamond"
@@ -1552,11 +2120,17 @@
 			]
 			size: 2.5d
 			id: "348315EADAE32CA8"
-			tasks: [{
-				id: "2D629260A8ED2D8B"
-				type: "item"
-				item: "createastral:bronze_ingot"
-			}]
+			tasks: [
+				{
+					id: "2D629260A8ED2D8B"
+					type: "item"
+					item: "createastral:bronze_ingot"
+				}
+				{
+					id: "54D9E9000130CDF0"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			title: "{chapter.4.quest.93.title}"
@@ -1587,18 +2161,26 @@
 			}]
 		}
 		{
+			icon: "minecraft:white_dye"
 			x: -24.5d
 			y: -21.5d
 			subtitle: "{chapter.4.quest.95.subtitle}"
 			dependencies: ["447B85EDCD394BC6"]
 			id: "09BA679DF8E30068"
-			tasks: [{
-				id: "00C0F3834C5CA87C"
-				type: "item"
-				item: "minecraft:white_dye"
-			}]
+			tasks: [
+				{
+					id: "00C0F3834C5CA87C"
+					type: "item"
+					item: "minecraft:white_dye"
+				}
+				{
+					id: "029D8888E24EBC63"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "tconstruct:molten_rose_gold_bucket"
 			x: 11.5d
 			y: -7.5d
 			subtitle: "{chapter.4.quest.96.subtitle}"
@@ -1610,11 +2192,17 @@
 			]
 			hide: true
 			id: "244E5AA24082322C"
-			tasks: [{
-				id: "676FAC62EAC24B74"
-				type: "item"
-				item: "tconstruct:molten_rose_gold_bucket"
-			}]
+			tasks: [
+				{
+					id: "676FAC62EAC24B74"
+					type: "item"
+					item: "tconstruct:molten_rose_gold_bucket"
+				}
+				{
+					id: "633B8709E6E72D40"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			x: 11.0d
@@ -1645,6 +2233,7 @@
 			}]
 		}
 		{
+			icon: "tconstruct:nether_grout"
 			x: -36.5d
 			y: 3.0d
 			shape: "circle"
@@ -1658,35 +2247,55 @@
 			]
 			hide: true
 			id: "7CC71DB08315F7BE"
-			tasks: [{
-				id: "7E5D478AA091748C"
-				type: "item"
-				item: "tconstruct:nether_grout"
-			}]
+			tasks: [
+				{
+					id: "7E5D478AA091748C"
+					type: "item"
+					item: "tconstruct:nether_grout"
+				}
+				{
+					id: "06A79B650D578754"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "create:powdered_obsidian"
 			x: -30.5d
 			y: -0.5d
 			subtitle: "{chapter.4.quest.100.subtitle}"
 			dependencies: ["32D551CE9F6A6B0A"]
 			id: "619CD1378381E86E"
-			tasks: [{
-				id: "3B356FD0C210EFA4"
-				type: "item"
-				item: "create:powdered_obsidian"
-			}]
+			tasks: [
+				{
+					id: "3B356FD0C210EFA4"
+					type: "item"
+					item: "create:powdered_obsidian"
+				}
+				{
+					id: "0EF92F9F4DC68BDB"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "create:scoria"
 			x: -39.5d
 			y: -0.5d
 			subtitle: "{chapter.4.quest.101.subtitle}"
 			dependencies: ["12588E50528E12E2"]
 			id: "4D9420C96F186CB1"
-			tasks: [{
-				id: "65A8DA38BE0BC68D"
-				type: "item"
-				item: "create:scoria"
-			}]
+			tasks: [
+				{
+					id: "65A8DA38BE0BC68D"
+					type: "item"
+					item: "create:scoria"
+				}
+				{
+					id: "6B913B2A0CDA555C"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			title: "{chapter.4.quest.102.title}"
@@ -1724,19 +2333,27 @@
 			}]
 		}
 		{
+			icon: "create:copper_sheet"
 			x: -9.5d
 			y: 8.0d
 			subtitle: "{chapter.4.quest.104.subtitle}"
 			dependencies: ["22BAAD8B7057DF80"]
 			hide: true
 			id: "4FC60CABB568F168"
-			tasks: [{
-				id: "0ADBA1FF7F733A32"
-				type: "item"
-				item: "create:copper_sheet"
-			}]
+			tasks: [
+				{
+					id: "0ADBA1FF7F733A32"
+					type: "item"
+					item: "create:copper_sheet"
+				}
+				{
+					id: "6B8079A90CDBF0D6"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:cobbled_deepslate"
 			x: -9.5d
 			y: -14.5d
 			shape: "diamond"
@@ -1748,13 +2365,20 @@
 			]
 			size: 1.5d
 			id: "4EE0125C2D9227EF"
-			tasks: [{
-				id: "081AB9FA417E2D07"
-				type: "item"
-				item: "minecraft:cobbled_deepslate"
-			}]
+			tasks: [
+				{
+					id: "081AB9FA417E2D07"
+					type: "item"
+					item: "minecraft:cobbled_deepslate"
+				}
+				{
+					id: "35FB2FD1DDF31EF2"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "tconstruct:liquid_soul_bucket"
 			x: -3.5d
 			y: -11.0d
 			subtitle: "{chapter.4.quest.106.subtitle}"
@@ -1764,13 +2388,20 @@
 			]
 			hide: true
 			id: "329E8ED078EF3BB4"
-			tasks: [{
-				id: "2A543D50793EB6C7"
-				type: "item"
-				item: "tconstruct:liquid_soul_bucket"
-			}]
+			tasks: [
+				{
+					id: "2A543D50793EB6C7"
+					type: "item"
+					item: "tconstruct:liquid_soul_bucket"
+				}
+				{
+					id: "563D8DCBE0DC5D99"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:magma_block"
 			x: -30.5d
 			y: -7.5d
 			subtitle: "{chapter.4.quest.107.subtitle}"
@@ -1781,13 +2412,20 @@
 			]
 			hide: true
 			id: "61CBA59F2BC063AC"
-			tasks: [{
-				id: "095280D394CF277F"
-				type: "item"
-				item: "minecraft:magma_block"
-			}]
+			tasks: [
+				{
+					id: "095280D394CF277F"
+					type: "item"
+					item: "minecraft:magma_block"
+				}
+				{
+					id: "4C7C1E1195323585"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "tconstruct:scorched_brick"
 			x: -36.5d
 			y: 6.5d
 			shape: "diamond"
@@ -1801,26 +2439,40 @@
 			hide: true
 			size: 2.5d
 			id: "342FA1CA3902D64F"
-			tasks: [{
-				id: "3C3EEC218F49AE5C"
-				type: "item"
-				item: "tconstruct:scorched_brick"
-			}]
+			tasks: [
+				{
+					id: "3C3EEC218F49AE5C"
+					type: "item"
+					item: "tconstruct:scorched_brick"
+				}
+				{
+					id: "3F97246A2CF517C3"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:dripstone_block"
 			x: -17.5d
 			y: -11.5d
 			subtitle: "{chapter.4.quest.109.subtitle}"
 			description: ["{chapter.4.quest.109.description.1}"]
 			dependencies: ["1BFA4FB40E2BB903"]
 			id: "13BACEBAA46322DC"
-			tasks: [{
-				id: "54229EE0854B4B7C"
-				type: "item"
-				item: "minecraft:dripstone_block"
-			}]
+			tasks: [
+				{
+					id: "54229EE0854B4B7C"
+					type: "item"
+					item: "minecraft:dripstone_block"
+				}
+				{
+					id: "4B11D432D15847C6"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:wheat"
 			x: -28.5d
 			y: -25.0d
 			shape: "square"
@@ -1829,14 +2481,21 @@
 			hide: true
 			size: 2.0d
 			id: "1A7E5A082C9C7BC8"
-			tasks: [{
-				id: "0C00ADAAAF8E8759"
-				type: "item"
-				item: "minecraft:wheat"
-			}]
+			tasks: [
+				{
+					id: "0C00ADAAAF8E8759"
+					type: "item"
+					item: "minecraft:wheat"
+				}
+				{
+					id: "04CD7E0E2BA5EDD7"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			title: "{chapter.4.quest.111.title}"
+			icon: "minecraft:cactus"
 			x: -26.5d
 			y: -25.0d
 			shape: "pentagon"
@@ -1861,6 +2520,10 @@
 					id: "38C51291D2250672"
 					type: "item"
 					item: "minecraft:large_fern"
+				}
+				{
+					id: "715D2B3274B285F6"
+					type: "checkmark"
 				}
 			]
 		}
@@ -2042,6 +2705,7 @@
 		}
 		{
 			title: "{chapter.4.quest.122.title}"
+			icon: "minecraft:andesite"
 			x: 2.5d
 			y: -14.5d
 			shape: "diamond"
@@ -2052,34 +2716,54 @@
 			]
 			size: 1.5d
 			id: "7F8CC515A17B0103"
-			tasks: [{
-				id: "392E20CC12386170"
-				type: "item"
-				item: "minecraft:andesite"
-			}]
+			tasks: [
+				{
+					id: "392E20CC12386170"
+					type: "item"
+					item: "minecraft:andesite"
+				}
+				{
+					id: "13EEC3644826A050"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:granite"
 			x: 8.5d
 			y: -14.5d
 			dependencies: ["68D19E8C4B61D854"]
 			id: "472D1D58B1B69D7F"
-			tasks: [{
-				id: "7F9A6195B55972F2"
-				type: "item"
-				item: "minecraft:granite"
-			}]
+			tasks: [
+				{
+					id: "7F9A6195B55972F2"
+					type: "item"
+					item: "minecraft:granite"
+				}
+				{
+					id: "2D88125208B8D1AC"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "minecraft:diorite"
 			x: 5.5d
 			y: -14.5d
 			subtitle: "{chapter.4.quest.124.subtitle}"
 			dependencies: ["68D19E8C4B61D854"]
 			id: "14D83C47DA4FAB3C"
-			tasks: [{
-				id: "1773DB55C9F2E791"
-				type: "item"
-				item: "minecraft:diorite"
-			}]
+			tasks: [
+				{
+					id: "1773DB55C9F2E791"
+					type: "item"
+					item: "minecraft:diorite"
+				}
+				{
+					id: "1FDA387F3EE67C93"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			title: "{chapter.4.quest.125.title}"
@@ -2172,6 +2856,7 @@
 		}
 		{
 			title: "{chapter.4.quest.131.title}"
+			icon: "minecraft:andesite"
 			x: 11.5d
 			y: -14.5d
 			shape: "diamond"
@@ -2179,11 +2864,17 @@
 			dependencies: ["3C2D4B41F4BE1AA6"]
 			size: 2.5d
 			id: "5114DC1BA07F8A2F"
-			tasks: [{
-				id: "5BB297FD696E74A5"
-				type: "item"
-				item: "minecraft:andesite"
-			}]
+			tasks: [
+				{
+					id: "5BB297FD696E74A5"
+					type: "item"
+					item: "minecraft:andesite"
+				}
+				{
+					id: "7F76FC23440362DA"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			x: 11.5d
