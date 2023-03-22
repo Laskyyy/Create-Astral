@@ -858,7 +858,7 @@
 			]
 		}
 		{
-			icon: "minecraft:kelp"
+			icon: "minecraft:dried_kelp"
 			x: -21.5d
 			y: -4.0d
 			shape: "diamond"
