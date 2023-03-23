@@ -1,0 +1,1250 @@
+[19:45:47] [Render thread/INFO] [JMLogger] JourneyMap log initialized.
+[19:45:47] [Render thread/INFO] [JourneymapClient] initialize ENTER
+[19:45:47] [Render thread/INFO] [ClientAPI] [ClientAPI] built with JourneyMap API 1.9-SNAPSHOT
+[19:45:47] [Render thread/INFO] [PluginHelper] Initializing plugins with Client API: journeymap.client.api.impl.ClientAPI
+[19:45:47] [Render thread/INFO] [PluginHelper] Initialized IClientPlugin: frankv.jmi.JMIJourneyMapPlugin
+[19:45:47] [Render thread/ERROR] [FileHandler] Couldn't get resource set from null to null: java.lang.NullPointerException: Cannot invoke "java.net.URL.getProtocol()" because "fileLocation" is null
+[19:45:47] [Render thread/INFO] [PropertiesBase] core (FirstLoaded) Setting config file to version "5.9.4": journeymap.core.config
+[19:45:47] [Render thread/INFO] [PropertiesBase] core (Valid) Creating config file: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\config\5.9\journeymap.core.config
+[19:45:47] [Render thread/INFO] [PropertiesBase] fullmap (FirstLoaded) Setting config file to version "5.9.4": journeymap.fullmap.config
+[19:45:47] [Render thread/INFO] [PropertiesBase] fullmap (Valid) Creating config file: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\config\5.9\journeymap.fullmap.config
+[19:45:47] [Render thread/INFO] [PropertiesBase] minimap (Initialized) Setting config file to version "5.9.4": journeymap.minimap.config
+[19:45:47] [Render thread/INFO] [PropertiesBase] minimap (Valid) Creating config file: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\config\5.9\journeymap.minimap.config
+[19:45:47] [Render thread/INFO] [PropertiesBase] minimap2 (FirstLoaded) Setting config file to version "5.9.4": journeymap.minimap2.config
+[19:45:47] [Render thread/INFO] [PropertiesBase] minimap2 (Valid) Creating config file: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\config\5.9\journeymap.minimap2.config
+[19:45:47] [Render thread/INFO] [PropertiesBase] topo (FirstLoaded) Setting config file to version "5.9.4": journeymap.topo.config
+[19:45:47] [Render thread/INFO] [PropertiesBase] topo (Valid) Creating config file: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\config\5.9\journeymap.topo.config
+[19:45:47] [Render thread/INFO] [PropertiesBase] webmap (FirstLoaded) Setting config file to version "5.9.4": journeymap.webmap.config
+[19:45:47] [Render thread/INFO] [PropertiesBase] webmap (Valid) Creating config file: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\config\5.9\journeymap.webmap.config
+[19:45:47] [Render thread/INFO] [PropertiesBase] waypoint (FirstLoaded) Setting config file to version "5.9.4": journeymap.waypoint.config
+[19:45:47] [Render thread/INFO] [PropertiesBase] waypoint (Valid) Creating config file: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\config\5.9\journeymap.waypoint.config
+[19:45:47] [Render thread/ERROR] [FileHandler] Couldn't get resource set from null to null: java.lang.NullPointerException: Cannot invoke "java.net.URL.getProtocol()" because "fileLocation" is null
+[19:45:47] [Render thread/INFO] [ThemeLoader] Preloaded theme textures: 0
+[19:45:47] [Render thread/INFO] [?] Version: JourneyMap 1.18.2-5.9.4, built with fabric 0.66.0+1.18.2
+fabric: 0.14.10
+Environment: os.name, os.arch, java.version, user.country, user.language=null, game language=en_us, locale=en_us
+Features: 
+	RadarPlayers : singleplayer = true , multiplayer = true
+	RadarAnimals : singleplayer = true , multiplayer = true
+	RadarMobs : singleplayer = true , multiplayer = true
+	RadarVillagers : singleplayer = true , multiplayer = true
+	MapTopo : singleplayer = true , multiplayer = true
+	MapSurface : singleplayer = true , multiplayer = true
+	MapCaves : singleplayer = true , multiplayer = true
+	MapBiome : singleplayer = true , multiplayer = true
+MiniMapProperties{state=SavedOk, file=journeymap.minimap.config, configVersion=5.9.4, zoomLevel=0, compassFontScale=1.0, terrainAlpha=100, showEntityNames=true, positionX=0.9, positionY=0.25, effectVertical=false, showPlayerHeading=true, sizePercent=30, playerDisplayScale=1.0, showDayNight=true, showPets=true, preferredMapType=day, showCompass=true, mobDisplay=jm.common.entity_display.dots, systemTimeRealFormat=HH:mm:ss, shape=jm.minimap.shape_circle, showSelf=true, selfDisplayScale=1.0, showGrid=true, reticleOrientation=jm.minimap.orientation.compass, gameTimeRealFormat=HH:mm:ss, effectTranslateX=0, showWaypoints=true, minimapKeyMovementSpeed=0.001, showAnimals=true, infoSlotAlpha=0.7, effectTranslateY=0, showWaypointLabels=true, moveEffectIcons=true, position=jm.minimap.position_topright, fontScale=1.0, showPlayers=true, waypointIconScale=1.0, frameAlpha=100, effectReversed=false, backgroundAlpha=0.8, enabled=true, showVillagers=true, info2Label=jm.theme.labelsource.gametime, info3Label=jm.theme.labelsource.location, showMobs=true, waypointLabelScale=1.0, showReticle=true, orientation=jm.minimap.orientation.north, info4Label=jm.theme.labelsource.biome, locationFormat=xzyv, playerDisplay=jm.common.entity_display.dots, mobDisplayScale=1.0, showCaves=true, showMobHeading=true, locationFormatVerbose=true, info1Label=jm.theme.labelsource.blank}
+MiniMapProperties{state=SavedOk, file=journeymap.minimap2.config, configVersion=5.9.4, zoomLevel=0, compassFontScale=1.0, terrainAlpha=100, showEntityNames=true, positionX=0.9, positionY=0.25, effectVertical=false, showPlayerHeading=true, sizePercent=30, playerDisplayScale=1.0, showDayNight=true, showPets=true, preferredMapType=day, showCompass=true, mobDisplay=jm.common.entity_display.dots, systemTimeRealFormat=HH:mm:ss, shape=jm.minimap.shape_rectangle, showSelf=true, selfDisplayScale=1.0, showGrid=true, reticleOrientation=jm.minimap.orientation.compass, gameTimeRealFormat=HH:mm:ss, effectTranslateX=0, showWaypoints=true, minimapKeyMovementSpeed=0.001, showAnimals=true, infoSlotAlpha=0.7, effectTranslateY=0, showWaypointLabels=true, moveEffectIcons=true, position=jm.minimap.position_topright, fontScale=1.0, showPlayers=true, waypointIconScale=1.0, frameAlpha=100, effectReversed=false, backgroundAlpha=0.8, enabled=true, showVillagers=true, info2Label=jm.theme.labelsource.gametime, info3Label=jm.theme.labelsource.location, showMobs=true, waypointLabelScale=1.0, showReticle=true, orientation=jm.minimap.orientation.north, info4Label=jm.theme.labelsource.biome, locationFormat=xzyv, playerDisplay=jm.common.entity_display.dots, mobDisplayScale=1.0, showCaves=true, showMobHeading=true, locationFormatVerbose=true, info1Label=jm.theme.labelsource.blank}
+FullMapProperties{state=SavedOk, file=journeymap.fullmap.config, configVersion=5.9.4, zoomLevel=0, showPlayers=true, waypointIconScale=1.0, showEntityNames=true, showPlayerHeading=true, showVillagers=true, showPlayerLoc=true, showKeys=true, playerDisplayScale=1.0, showMobs=true, showPets=true, waypointLabelScale=1.0, preferredMapType=day, mobDisplay=jm.common.entity_display.dots, showSelf=true, locationFormat=xzyv, playerDisplay=jm.common.entity_display.dots, mobDisplayScale=1.0, selfDisplayScale=1.0, showGrid=true, showMouseLoc=true, showWaypoints=true, showCaves=true, showAnimals=true, dragScale=1, showMobHeading=true, showWaypointLabels=true, locationFormatVerbose=true, fontScale=1.0}
+WaypointProperties{state=SavedOk, file=journeymap.waypoint.config, configVersion=5.9.4, autoRemoveDeathpointDistance=2, dateFormat=MM-dd-yyyy, autoRemoveDeathpoints=false, fullscreenDoubleClickToCreate=true, managerDimensionFocus=false, minDistance=4, boldLabel=false, textureSmall=true, showDeathpointlabel=true, beaconEnabled=true, createDeathpoints=true, showName=true, disableStrikeThrough=false, maxDistance=0, autoHideLabel=true, autoRemoveTempWaypoints=2, teleportCommand=/tp {name} {x} {y} {z}, showStaticBeam=true, shaderBeacon=false, timeFormat=HH:mm:ss, showDeviationLabel=false, showDistance=true, showRotatingBeam=true, fontScale=2.0, showTexture=true, managerEnabled=true}
+WebMapProperties{state=SavedOk, file=journeymap.webmap.config, configVersion=5.9.4, port=8080, enabled=false}
+CoreProperties{state=SavedOk, file=journeymap.core.config, configVersion=5.9.4, verboseColorPalette=false, maxPlayersData=32, mapSurfaceAboveCaves=true, dataCachingEnabled=true, optionsManagerViewed=null, announceMod=true, colorPassive=#bbbbbb, mapBlendWater=false, renderDistanceSurfaceMax=0, seedId=false, radarVerticalDistance=16, mapBlendGrass=true, recordCacheStats=false, hideSneakingEntities=true, revealShape=jm.minimap.shape_circle, mapBiome=true, alwaysMapSurface=false, colorVillager=#88e188, mapPlants=false, colorPet=#0077ff, radarLateralDistance=64, mapBathymetry=false, mapCrops=true, maxMobsData=32, mapPlantShadows=false, alwaysMapCaves=false, checkUpdates=true, mapBlendFoliage=true, hideSpectators=false, mappingEnabled=true, colorPlayer=#ffffff, tileHighDisplayQuality=true, cacheVillagersData=2200, logLevel=INFO, maxVillagersData=32, mapWaterBiomeColors=false, maxAnimalsData=32, mapTransparency=true, caveBlackAsClear=false, tileRenderType=1, caveIgnoreGlass=true, mapTopography=true, renderDistanceCaveMax=0, mapAntialiasing=true, colorSelf=#0000ff, cachePlayersData=2000, cacheMobsData=3000, cachePlayerData=1000, splashViewed=null, colorHostile=#ff0000, cacheAnimalsData=3100, themeName=OceanMonument, mapCaveLighting=true, renderDelay=2, glErrorChecking=false, autoMapPoll=2000}
+[19:45:48] [Render thread/INFO] [JourneymapClient] initialize EXIT, elapsed count 1 avg 488.9ms
+[19:45:48] [Render thread/INFO] [JourneymapClient] postInitialize EXIT, elapsed count 1 avg 4.34ms
+[19:47:29] [Render thread/INFO] [ModBlockDelegate] Custom modded block handling enabled for create
+[19:47:29] [Render thread/INFO] [ColorPalette] Color palette file generated for 0 blockstates in 6ms for: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\colorpalette.json
+[19:47:29] [Render thread/INFO] [ColorManager] Updated color palette for 829 blockstates in 262ms: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\colorpalette.json
+[19:47:51] [Server thread/INFO] [PropertiesBase] global (FirstLoaded) Setting config file to version "5.9.4": journeymap.server.global.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] global (Valid) Creating config file: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\server\5.9\journeymap.server.global.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] default (FirstLoaded) Setting config file to version "5.9.4": journeymap.server.default.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] default (Valid) Creating config file: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\server\5.9\journeymap.server.default.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] minecraft~overworld (Initialized) Setting config file to version "5.9.4": journeymap.server.minecraft~overworld.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] minecraft~overworld (Valid) Creating config file: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\server\5.9\journeymap.server.minecraft~overworld.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] ae2~spatial_storage (Initialized) Setting config file to version "5.9.4": journeymap.server.ae2~spatial_storage.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] ae2~spatial_storage (Valid) Creating config file: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\server\5.9\journeymap.server.ae2~spatial_storage.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] minecraft~the_nether (Initialized) Setting config file to version "5.9.4": journeymap.server.minecraft~the_nether.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] minecraft~the_nether (Valid) Creating config file: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\server\5.9\journeymap.server.minecraft~the_nether.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] ad_astra~mars (Initialized) Setting config file to version "5.9.4": journeymap.server.ad_astra~mars.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] ad_astra~mars (Valid) Creating config file: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\server\5.9\journeymap.server.ad_astra~mars.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] ad_astra~moon (Initialized) Setting config file to version "5.9.4": journeymap.server.ad_astra~moon.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] ad_astra~moon (Valid) Creating config file: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\server\5.9\journeymap.server.ad_astra~moon.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] ad_astra~mercury (Initialized) Setting config file to version "5.9.4": journeymap.server.ad_astra~mercury.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] ad_astra~mercury (Valid) Creating config file: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\server\5.9\journeymap.server.ad_astra~mercury.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] ad_astra~moon_orbit (Initialized) Setting config file to version "5.9.4": journeymap.server.ad_astra~moon_orbit.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] ad_astra~moon_orbit (Valid) Creating config file: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\server\5.9\journeymap.server.ad_astra~moon_orbit.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] ad_astra~glacio_orbit (Initialized) Setting config file to version "5.9.4": journeymap.server.ad_astra~glacio_orbit.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] ad_astra~glacio_orbit (Valid) Creating config file: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\server\5.9\journeymap.server.ad_astra~glacio_orbit.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] ad_astra~venus (Initialized) Setting config file to version "5.9.4": journeymap.server.ad_astra~venus.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] ad_astra~venus (Valid) Creating config file: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\server\5.9\journeymap.server.ad_astra~venus.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] ad_astra~glacio (Initialized) Setting config file to version "5.9.4": journeymap.server.ad_astra~glacio.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] ad_astra~glacio (Valid) Creating config file: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\server\5.9\journeymap.server.ad_astra~glacio.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] ad_astra~venus_orbit (Initialized) Setting config file to version "5.9.4": journeymap.server.ad_astra~venus_orbit.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] ad_astra~venus_orbit (Valid) Creating config file: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\server\5.9\journeymap.server.ad_astra~venus_orbit.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] minecraft~the_end (Initialized) Setting config file to version "5.9.4": journeymap.server.minecraft~the_end.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] minecraft~the_end (Valid) Creating config file: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\server\5.9\journeymap.server.minecraft~the_end.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] ad_astra~mars_orbit (Initialized) Setting config file to version "5.9.4": journeymap.server.ad_astra~mars_orbit.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] ad_astra~mars_orbit (Valid) Creating config file: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\server\5.9\journeymap.server.ad_astra~mars_orbit.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] ad_astra~earth_orbit (Initialized) Setting config file to version "5.9.4": journeymap.server.ad_astra~earth_orbit.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] ad_astra~earth_orbit (Valid) Creating config file: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\server\5.9\journeymap.server.ad_astra~earth_orbit.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] ad_astra~mercury_orbit (Initialized) Setting config file to version "5.9.4": journeymap.server.ad_astra~mercury_orbit.config
+[19:47:51] [Server thread/INFO] [PropertiesBase] ad_astra~mercury_orbit (Valid) Creating config file: C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\server\5.9\journeymap.server.ad_astra~mercury_orbit.config
+[19:48:07] [Render thread/INFO] [ChatLog] 
+[19:48:07] [Render thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[19:48:07] [Render thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): splashViewed=null
+[19:48:08] [Render thread/INFO] [WaypointStore] Loaded 0 waypoints from C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\data\sp\New World (9)\waypoints
+[19:48:08] [Render thread/INFO] [JourneymapClient] Mapping started in C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\data\sp\New World (9)\overworld. Memory: 16848MB total, 11500MB free 
+[19:50:01] [JM-task-4/INFO] [MapRegionTask] Potential chunks to map in RegionCoord [0,0]: 394 of 1024
+[19:50:01] [Render thread/INFO] [ChatLog] 
+[19:50:02] [Render thread/INFO] [ChatLog] 
+[19:50:02] [JM-task-4/INFO] [MapRegionTask] Actual chunks mapped in RegionCoord [0,0]: 394 
+[19:50:02] [JM-task-4/INFO] [MapRegionTask] Memory usage at 58%
+[19:50:03] [JM-task-4/INFO] [MapRegionTask] Potential chunks to map in RegionCoord [-1,0]: 172 of 1024
+[19:50:03] [JM-task-4/INFO] [MapRegionTask] Actual chunks mapped in RegionCoord [-1,0]: 172 
+[19:50:03] [JM-task-4/INFO] [MapRegionTask] Memory usage at 62%
+[19:50:03] [JM-task-4/INFO] [MapRegionTask] Potential chunks to map in RegionCoord [0,-1]: 248 of 1024
+[19:50:03] [Render thread/INFO] [ChatLog] 
+[19:50:04] [JM-task-4/INFO] [MapRegionTask] Actual chunks mapped in RegionCoord [0,-1]: 248 
+[19:50:04] [JM-task-4/INFO] [MapRegionTask] Memory usage at 66%
+[19:50:04] [JM-task-4/INFO] [MapRegionTask] Skipping empty region: RegionCoord [1,0]
+[19:50:04] [Render thread/INFO] [ChatLog] 
+[19:50:05] [JM-task-4/INFO] [MapRegionTask] Potential chunks to map in RegionCoord [-1,-1]: 110 of 1024
+[19:50:05] [Render thread/INFO] [ChatLog] 
+[19:50:06] [JM-task-4/INFO] [MapRegionTask] Actual chunks mapped in RegionCoord [-1,-1]: 110 
+[19:50:06] [JM-task-4/INFO] [MapRegionTask] Memory usage at 69%
+[19:50:06] [JM-task-4/INFO] [MapRegionTask] Skipping empty region: RegionCoord [1,-1]
+[19:50:07] [Render thread/INFO] [ChatLog] 
+[19:50:08] [Render thread/INFO] [ChatLog] 
+[19:50:09] [Render thread/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:50:09] [Render thread/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:52:34] [Render thread/INFO] [JourneymapClient] Mapping halted in C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\data\mp\offline\minecraft:overworld
+[19:53:06] [Render thread/INFO] [WaypointStore] Loaded 0 waypoints from C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\data\sp\New World (8)\waypoints
+[19:53:06] [Render thread/INFO] [JourneymapClient] Mapping started in C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\data\sp\New World (8)\overworld. Memory: 16848MB total, 6899MB free 
+[19:53:08] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:08] [Worker-Main-12/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:08] [Worker-Main-10/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:08] [Worker-Main-11/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:08] [Worker-Main-4/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:08] [Worker-Main-10/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:08] [Worker-Main-5/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:08] [Worker-Main-4/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:08] [Worker-Main-10/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:08] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:08] [Worker-Main-4/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:08] [Worker-Main-5/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:08] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:08] [Worker-Main-12/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:08] [Worker-Main-7/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:08] [Worker-Main-4/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:08] [Worker-Main-4/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:08] [Worker-Main-5/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:08] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:08] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:09] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:09] [Worker-Main-4/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:09] [Worker-Main-12/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:09] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:09] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:09] [Worker-Main-12/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:09] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:09] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:09] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:09] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:09] [Worker-Main-5/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:09] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:09] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:09] [Worker-Main-5/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:09] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:09] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:09] [Worker-Main-5/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:09] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:10] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:10] [Worker-Main-5/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:10] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:10] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:10] [Worker-Main-10/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:10] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:10] [Worker-Main-5/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:10] [Worker-Main-10/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:13] [Render thread/INFO] [ChatLog] 
+[19:53:14] [JM-task-14/INFO] [MapRegionTask] Potential chunks to map in RegionCoord [-1,-4]: 1024 of 1024
+[19:53:14] [Render thread/INFO] [ChatLog] 
+[19:53:44] [Worker-Main-8/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:44] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:44] [Worker-Main-8/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:44] [Worker-Main-22/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:44] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:44] [Worker-Main-8/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:45] [Worker-Main-8/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:45] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:45] [Worker-Main-8/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:45] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:46] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:46] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:46] [Worker-Main-8/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:46] [Worker-Main-8/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:46] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:46] [Worker-Main-8/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:47] [Worker-Main-8/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:47] [Worker-Main-8/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:47] [Worker-Main-11/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:53:47] [Worker-Main-11/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:53:49] [JM-task-14/INFO] [MapRegionTask] Actual chunks mapped in RegionCoord [-1,-4]: 331 
+[19:53:49] [JM-task-14/INFO] [MapRegionTask] Memory usage at 39%
+[19:53:50] [JM-task-14/INFO] [MapRegionTask] Potential chunks to map in RegionCoord [-2,-4]: 1024 of 1024
+[19:53:53] [JM-task-14/INFO] [MapRegionTask] Actual chunks mapped in RegionCoord [-2,-4]: 1024 
+[19:53:53] [JM-task-14/INFO] [MapRegionTask] Memory usage at 56%
+[19:53:54] [JM-task-14/INFO] [MapRegionTask] Potential chunks to map in RegionCoord [-1,-5]: 1024 of 1024
+[19:53:59] [JM-task-14/INFO] [MapRegionTask] Actual chunks mapped in RegionCoord [-1,-5]: 1024 
+[19:53:59] [JM-task-14/INFO] [MapRegionTask] Memory usage at 81%
+[19:54:00] [JM-task-14/INFO] [MapRegionTask] Potential chunks to map in RegionCoord [-1,-3]: 1024 of 1024
+[19:54:03] [JM-task-14/INFO] [MapRegionTask] Actual chunks mapped in RegionCoord [-1,-3]: 1024 
+[19:54:03] [JM-task-14/INFO] [MapRegionTask] Memory usage at 39%
+[19:54:04] [JM-task-14/INFO] [MapRegionTask] Potential chunks to map in RegionCoord [0,-4]: 1024 of 1024
+[19:54:06] [Render thread/INFO] [ChatLog] 
+[19:54:06] [Render thread/INFO] [ChatLog] 
+[19:54:06] [Render thread/INFO] [ChatLog] 
+[19:54:06] [Render thread/INFO] [ChatLog] 
+[19:54:10] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:10] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:10] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:10] [Worker-Main-8/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:10] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:10] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:10] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:10] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:10] [Worker-Main-8/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:10] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:10] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:10] [Worker-Main-8/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:10] [Worker-Main-8/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:10] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:10] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:10] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:10] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:10] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:11] [JM-task-14/INFO] [MapRegionTask] Actual chunks mapped in RegionCoord [0,-4]: 1024 
+[19:54:11] [JM-task-14/INFO] [MapRegionTask] Memory usage at 69%
+[19:54:12] [JM-task-14/INFO] [MapRegionTask] Potential chunks to map in RegionCoord [-2,-5]: 1024 of 1024
+[19:54:14] [JM-task-14/INFO] [MapRegionTask] Actual chunks mapped in RegionCoord [-2,-5]: 1024 
+[19:54:14] [JM-task-14/INFO] [MapRegionTask] Memory usage at 29%
+[19:54:15] [JM-task-14/INFO] [MapRegionTask] Potential chunks to map in RegionCoord [-2,-3]: 1024 of 1024
+[19:54:18] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:18] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:18] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:18] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:18] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:18] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:19] [Render thread/INFO] [ChatLog] 
+[19:54:19] [Render thread/INFO] [ChatLog] 
+[19:54:19] [JM-task-14/INFO] [MapRegionTask] Actual chunks mapped in RegionCoord [-2,-3]: 1024 
+[19:54:19] [JM-task-14/INFO] [MapRegionTask] Memory usage at 48%
+[19:54:20] [Render thread/INFO] [ChatLog] 
+[19:54:20] [JM-task-14/INFO] [MapRegionTask] Potential chunks to map in RegionCoord [0,-5]: 1024 of 1024
+[19:54:22] [Render thread/WARN] [JMLogger] Can't get entityTexture for naturalist:textures/entity_icon/firefly/firefly.png
+[19:54:22] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:22] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:22] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:22] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:22] [Worker-Main-8/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:22] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:22] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:22] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:23] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:23] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:23] [Worker-Main-12/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:23] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:23] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:23] [Worker-Main-12/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:23] [Worker-Main-12/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:23] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:23] [Worker-Main-12/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:23] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:25] [JM-task-14/INFO] [MapRegionTask] Actual chunks mapped in RegionCoord [0,-5]: 1024 
+[19:54:25] [JM-task-14/INFO] [MapRegionTask] Memory usage at 77%
+[19:54:26] [JM-task-14/INFO] [MapRegionTask] Potential chunks to map in RegionCoord [0,-3]: 1024 of 1024
+[19:54:29] [JM-task-14/INFO] [MapRegionTask] Actual chunks mapped in RegionCoord [0,-3]: 1024 
+[19:54:29] [JM-task-14/INFO] [MapRegionTask] Memory usage at 36%
+[19:54:30] [JM-task-14/INFO] [MapRegionTask] Potential chunks to map in RegionCoord [-3,-4]: 1024 of 1024
+[19:54:32] [JM-task-14/INFO] [MapRegionTask] Actual chunks mapped in RegionCoord [-3,-4]: 1024 
+[19:54:32] [JM-task-14/INFO] [MapRegionTask] Memory usage at 51%
+[19:54:32] [Render thread/INFO] [ChatLog] 
+[19:54:32] [Render thread/INFO] [ChatLog] 
+[19:54:33] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:33] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:33] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:33] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:33] [JM-task-14/INFO] [MapRegionTask] Potential chunks to map in RegionCoord [-1,-6]: 1024 of 1024
+[19:54:34] [Render thread/INFO] [ChatLog] 
+[19:54:37] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:37] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:38] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:38] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:38] [JM-task-14/WARN] [StatTimer] SurfaceRenderer.renderSurface was slow: 1265.6663 (Warning limit reached)
+[19:54:38] [JM-task-14/WARN] [StatTimer] SurfaceRenderer.renderSurface: Avg:        7ms, Min:     0.49ms, Max:    8047.49ms, Total:         71 sec, Count:    10280, Canceled:        0, Slow:       10
+[19:54:38] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:38] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:39] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:39] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:39] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:39] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:39] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:39] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:39] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:39] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:39] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:39] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:39] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:39] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:39] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:39] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:40] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:40] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:40] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:40] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:40] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:40] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:40] [Worker-Main-6/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:40] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:40] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:40] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:41] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:41] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:41] [Worker-Main-9/WARN] [StatTimer] pluginClientEvent_jmi is already running, cancelling first
+[19:54:41] [Worker-Main-3/WARN] [StatTimer] pluginClientEvent_jmi is not running.
+[19:54:59] [JM-task-14/INFO] [MapRegionTask] Actual chunks mapped in RegionCoord [-1,-6]: 1024 
+[19:54:59] [JM-task-14/INFO] [MapRegionTask] Memory usage at 35%
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-30, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-30, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-30, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-30, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-30, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-30, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-30, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-30, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-30, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-30, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-30, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-30, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-30, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-30, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -56]
+[19:54:59] [Render thread/INFO] [JourneymapClient] Mapping halted in C:\Users\jacob\AppData\Roaming\PrismLauncher\instances\Dev Server Client\minecraft\journeymap\data\mp\offline\minecraft:overworld
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-29, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-28, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-27, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-26, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-25, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-24, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-23, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-22, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-21, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-20, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-19, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-18, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-17, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-16, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-15, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-14, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-13, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-12, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-11, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-10, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-9, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-8, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-7, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-6, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-5, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-4, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-3, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-2, -33]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -64]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -63]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -62]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -61]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -60]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -59]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -58]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -57]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -56]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -55]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -54]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -53]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -52]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -51]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -50]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -49]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -48]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -47]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -46]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -45]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -44]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -43]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -42]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -41]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -40]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -39]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -38]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -37]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -36]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -35]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -34]
+[19:54:59] [JM-task-14/WARN] [JMChunkLoader] Region doesn't exist for chunk: [-1, -33]
+[19:54:59] [JM-task-14/INFO] [MapRegionTask] Potential chunks to map in RegionCoord [-1,-2]: 82 of 1024
+[19:54:59] [JM-task-14/WARN] [MapRegionTask] MapRegionTask cancelled true hadError false}
+[19:54:59] [JM-task-14/INFO] [MapRegionTask] Memory usage at 36%
