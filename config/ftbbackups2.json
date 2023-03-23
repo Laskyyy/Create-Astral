@@ -12,7 +12,7 @@
 	/* This is done with Javas implementation of cron, More info here 
 	    (https://www.cronmaker.com)
 	*/
-	"backup_cron": "0 */30 * * * ?",
+	"backup_cron": "0 0 */6 * * ?",
 	// Time between manual backups using the command
 	"manual_backups_time": 0,
 	// Only run a backup if a player has been online since the last backup
