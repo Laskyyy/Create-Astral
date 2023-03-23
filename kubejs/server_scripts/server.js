@@ -3448,18 +3448,6 @@ event.custom({
 	"energy": 1200
 })
 
-event.custom({
-	"type":"createaddition:charging",
-	"input": {
-      	"item": "kubejs:shimmer_bucket",
-		"count": 1
-	},
-	"result": {
-		"item": "kubejs:molten_calorite_bucket",
-		"count": 1
-	},
-	"energy": 10000000
-})
 
 event.custom({
   "type": "techreborn:compressor",
