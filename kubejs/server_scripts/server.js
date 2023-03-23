@@ -1578,6 +1578,7 @@ onEvent('recipes', event => {
   event.replaceInput({mod: 'quarrymod'}, 'techreborn:tungstensteel_plate', 'create:shadow_steel')
   event.replaceInput({mod: 'techreborn'},'techreborn:iridium_ingot', 'yttr:yttrium_ingot')
   event.replaceInput({mod: 'techreborn'},'techreborn:iridium_plate', 'yttr:yttrium_ingot')
+  event.replaceInput({output: 'ad_astra:cryo_freezer'},'ad_astra:ostrum_tank', 'techreborn:lithium_ion_battery')
   event.replaceInput({mod: 'techreborn'},'techreborn:iridium_alloy_plate', 'yttr:yttrium_ingot')
   event.replaceInput({outputI: 'ae2:fluid_cell_housing'}, 'techreborn:silver_plate', 'create:copper_casing')
 
@@ -1592,6 +1593,16 @@ onEvent('recipes', event => {
   event.remove({input: 'techreborn:netherrack_dust', output: 'minecraft:redstone'})
   event.replaceInput('ae2:sky_stone_block', 'ad_astra:sky_stone')
   event.replaceInput('ae2:sky_stone_block', 'ad_astra:sky_stone')
+
+	event.recipes.createMixing(Fluid.of('ad_astra:cryo_fuel', 81000), [
+    {fluid: 'techreborn:nitrogen', amount: 81000},
+    {fluid: 'kubejs:aurorite', amount: 81000}
+  ]).processingTime(300)
+
+  event.recipes.createCompacting('yttr:continuous_platform', [
+    {fluid: 'kubejs:aurorite', amount: 8100},
+    {fluid: 'kubejs:shimmer', amount: 8100}
+  ]).heated().processingTime(200)
 
   event.recipes.createCompacting('ad_astra:sky_stone', [
     '5x ad_astra:moon_stone',

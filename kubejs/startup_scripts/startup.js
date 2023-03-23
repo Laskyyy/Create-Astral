@@ -84,6 +84,13 @@ event.create('molten_radiance')
 .stillTexture('tconstruct:block/fluid/molten/still')
 .flowingTexture('tconstruct:block/fluid/molten/flowing')
 
+event.create('aurorite')
+.thickTexture(0xC8E9E9)
+.bucketColor(0xC8E9E9)
+.displayName('Aurorite')
+.stillTexture('tconstruct:block/fluid/molten/still')
+.flowingTexture('tconstruct:block/fluid/molten/flowing')
+
   event.create('plasma_fluid')
     .thickTexture(0x4cfbff)
     .bucketColor(0x4cfbff)
