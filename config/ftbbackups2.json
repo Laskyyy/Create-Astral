@@ -1,0 +1,26 @@
+{
+	// Allow the creation of backups automatically
+	"enabled": true,
+	// Permission level to use the /backup command
+	"command_permission_level": 3,
+	// Only send backup status to server ops
+	"notify_op_only": true,
+	// Don't send backup status at all
+	"do_not_notify": false,
+	// Maximum number of backups to keep
+	"max_backups": 1,
+	/* This is done with Javas implementation of cron, More info here 
+	    (https://www.cronmaker.com)
+	*/
+	"backup_cron": "0 */30 * * * ?",
+	// Time between manual backups using the command
+	"manual_backups_time": 0,
+	// Only run a backup if a player has been online since the last backup
+	"only_if_players_been_online": true,
+	// Additional directories to include in backup
+	"additional_directories": [],
+	// Display file size in backup message
+	"display_file_size": false,
+	// backup location
+	"backup_location": "."
+}
