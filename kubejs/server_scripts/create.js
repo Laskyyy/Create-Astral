@@ -255,32 +255,99 @@ onEvent("recipes", event => {
 	});
 	// Replaces the ore blocks with crushing recipes to produce raw ore instead of grinder recipes
 
-	[
-		//TechReborn
-		["tin", "silver", "lead"],
-		//AdAstra
-		["desh", "ostrum"],
-		//Vanilla
-		["iron", "gold", "copper"],
-		//Create
-		["zinc"],
-	].forEach(mod => {
-		var names = ["techreborn", "ad_astra", "minecraft", "create"];
-		for (var i = 0; i < mod.length; i++) {
-			event.recipes.createCrushing(
-				[
-					`${names[i]}crushed_${mod[i]}`,
-					Item.of(`${names[i]}crushed_${mod[i]}`).withChance(
-						CRUSHING_ORE_BONUS_ORE_YIELD
-					),
-					Item.of("create:experience_nugget").withChance(
-						CRUSHING_ORE_BONUS_XP_CHUNKS
-					),
-				],
-				`${names[i]}:raw_${mod[i]}_ore`
-			);
-		}
-	});
+	// Tech reborn ores
+	event.recipes.createCrushing(
+		[
+			"create:crushed_tin_ore",
+			Item.of("create:crushed_tin_ore").withChance(
+				CRUSHING_ORE_BONUS_ORE_YIELD
+			),
+			Item.of("minecraft:iron_nugget").withChance(0.2),
+			Item.of("create:experience_nugget").withChance(
+				CRUSHING_ORE_BONUS_XP_CHUNKS
+			),
+		],
+		"techreborn:raw_tin"
+	);
+	event.recipes.createCrushing(
+		[
+			"create:crushed_silver_ore",
+			Item.of("create:crushed_silver_ore").withChance(
+				CRUSHING_ORE_BONUS_ORE_YIELD
+			),
+			Item.of("create:experience_nugget").withChance(
+				CRUSHING_ORE_BONUS_XP_CHUNKS
+			),
+		],
+		"techreborn:raw_silver"
+	);
+	event.recipes.createCrushing(
+		[
+			"create:crushed_lead_ore",
+			Item.of("create:crushed_lead_ore").withChance(
+				CRUSHING_ORE_BONUS_ORE_YIELD
+			),
+			Item.of("minecraft:coal").withChance(0.2),
+			Item.of("create:experience_nugget").withChance(
+				CRUSHING_ORE_BONUS_XP_CHUNKS
+			),
+		],
+		"techreborn:raw_lead"
+	);
+	event.recipes.createCrushing(
+		[
+			"createastral:crushed_desh_ore",
+			Item.of("create:crushed_desh_ore").withChance(
+				CRUSHING_ORE_BONUS_ORE_YIELD
+			),
+			Item.of("techreborn:silver_nugget").withChance(0.2),
+			Item.of("create:experience_nugget").withChance(
+				CRUSHING_ORE_BONUS_XP_CHUNKS
+			),
+		],
+		"ad_astra:raw_desh"
+	);
+	event.recipes.createCrushing(
+		[
+			"createastral:crushed_ostrum_ore",
+			Item.of("createastral:crushed_ostrum_ore").withChance(
+				CRUSHING_ORE_BONUS_ORE_YIELD
+			),
+			Item.of("techreborn:lead_nugget").withChance(0.2),
+			Item.of("create:experience_nugget").withChance(
+				CRUSHING_ORE_BONUS_XP_CHUNKS
+			),
+		],
+		"ad_astra:raw_ostrum"
+	);
+	event.recipes.createCrushing(
+		[
+			"createastral:crushed_calorite_ore",
+			Item.of("createastral:crushed_calorite_ore").withChance(
+				CRUSHING_ORE_BONUS_ORE_YIELD
+			),
+			Item.of("create:experience_nugget").withChance(
+				CRUSHING_ORE_BONUS_XP_CHUNKS
+			),
+		],
+		"ad_astra:raw_calorite"
+	);
+	const VANILLA_ORES_AND_ZINC = ["iron", "gold", "copper", "zinc"];
+	for (let ore of VANILLA_ORES_AND_ZINC) {
+		let raw_ore = ore != "zinc" ? "minecraft:raw_" + ore : "create:raw_zinc";
+		let crushed_ore = "create:crushed_" + ore + "_ore";
+		event.remove({ type: "create:crushing", output: crushed_ore });
+		event.recipes.createCrushing(
+			[
+				crushed_ore,
+				Item.of(crushed_ore).withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
+				Item.of("create:experience_nugget").withChance(
+					CRUSHING_ORE_BONUS_XP_CHUNKS
+				),
+			],
+			raw_ore
+		);
+	}
 	//Chapter 1
 
 	event.custom({
@@ -314,7 +381,7 @@ onEvent("recipes", event => {
 		)
 		.transitionalItem(transitional_sturdy_sheet)
 		.loops(5);
-	//Chapter 3
+	//Chapter 2
 
 	event.recipes.createFilling("create:electron_tube", [
 		"create:polished_rose_quartz",
