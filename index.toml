@@ -36923,6 +36923,11 @@ file = "resourcepacks/andesite-chests-crafting-table-1-19/pack.png"
 hash = "4dd3d00d175d71aac23674f58429329cdc6a3e1f334582df377efeb23da8149c"
 
 [[files]]
+file = "resourcepacks/bettervanillabuilding.pw.toml"
+hash = "9fc6c705164b6573e32c757ea72a4ddf7e52096ec233c9bd6df0e1deded4c3af"
+metafile = true
+
+[[files]]
 file = "resources/.mcassetsroot"
 hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
@@ -41797,3 +41802,8 @@ hash = "96c656bcb7c126813eacb7493c556eae0d23a6f6e1acf06537e1b02669b9225d"
 [[files]]
 file = "shaderpacks/ComplementaryReimagined_r2.0.2/shaders/world1/shadow.vsh"
 hash = "a6fc8439347f4a97103b4ed6c3171ee3f86600f33c4a4dcd9add71352a37b6e6"
+
+[[files]]
+file = "shaderpacks/complementary-reimagined.pw.toml"
+hash = "e7bd470918b908960a77db10cb7918c67e6c90ac5d97218d2f875dd6e4e3dda8"
+metafile = true
