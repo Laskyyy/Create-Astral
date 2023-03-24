@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".prettierrc"
+hash = "b0a9c55ac6b2897cadbd19167484e470b955a09ebc1244e31b28190439da60be"
+
+[[files]]
 file = "LICENSE.md"
 hash = "a7fdaed36e9e99e7de02fd7cc02f7b62ab4fecd8f59340673172ca8fcd835678"
 
@@ -16838,11 +16842,11 @@ hash = "058c91a44f9f4c079069775e15aea88454aee80420815cf5af51dedf01187d24"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
-hash = "d41052e3bc66463e5534480be74a986356891478d801b3682a55ee25b39fbc46"
+hash = "6572196b7b171941102a9d8b802bed67ecd89819c08d81bb786763beba46ce4c"
 
 [[files]]
 file = "kubejs/server_scripts/server.js"
-hash = "693fac3ce4ccf2b9f4e257991b04d199979dfa862e4e81a3275eb21a0fcdbe05"
+hash = "bcadf4e8d69921d5d231904623b3a7090369fa4e8bddbf4be94a79afed23ad12"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
