@@ -1274,69 +1274,34 @@ onEvent('recipes', event => {
 
 ///REMOVE ANNOYING ARMOUR AND TOOLS ////
 
-  event.remove({output: 'techreborn:steel_block'})
-  event.remove({output: 'techreborn:bronze_block'})
-  event.remove({output: 'techreborn:copper_helmet'})
-  event.remove({output: 'techreborn:copper_chestplate'})
-  event.remove({output: 'techreborn:copper_leggings'})
-  event.remove({output: 'techreborn:copper_boots'})
-  event.remove({output: 'techreborn:copper_nugget'})
-  event.remove({output: 'techreborn:copper_axe'})
-  event.remove({output: 'techreborn:copper_sword'})
-  event.remove({output: 'techreborn:copper_pickaxe'})
-  event.remove({output: 'techreborn:copper_hoe'})
-  event.remove({output: 'techreborn:copper_shovel'})
-  event.remove({output: 'techreborn:tin_helmet'})
-  event.remove({output: 'techreborn:tin_chestplate'})
-  event.remove({output: 'techreborn:tin_leggings'})
-  event.remove({output: 'techreborn:tin_boots'})
-  event.remove({output: 'techreborn:tin_axe'})
-  event.remove({output: 'techreborn:tin_sword'})
-  event.remove({output: 'techreborn:tin_pickaxe'})
-  event.remove({output: 'techreborn:tin_hoe'})
-  event.remove({output: 'techreborn:tin_shovel'})
 
-  event.remove({output: 'techreborn:lead_helmet'})
-  event.remove({output: 'techreborn:lead_chestplate'})
-  event.remove({output: 'techreborn:lead_leggings'})
-  event.remove({output: 'techreborn:lead_boots'})
-  event.remove({output: 'techreborn:lead_axe'})
-  event.remove({output: 'techreborn:lead_sword'})
-  event.remove({output: 'techreborn:lead_pickaxe'})
-  event.remove({output: 'techreborn:lead_hoe'})
-  event.remove({output: 'techreborn:lead_shovel'})
+// Define the array of materials
+const materials = [
+  'techreborn:lead',
+  'techreborn:bronze',
+  'techreborn:steel',
+  'techreborn:tin',
+  'techreborn:copper',
+  'techreborn:steel',
+  'techreborn:silver'
+];
 
-  event.remove({output: 'techreborn:steel_helmet'})
-  event.remove({output: 'techreborn:steel_chestplate'})
-  event.remove({output: 'techreborn:steel_leggings'})
-  event.remove({output: 'techreborn:steel_boots'})
-  event.remove({output: 'techreborn:steel_axe'})
-  event.remove({output: 'techreborn:steel_sword'})
-  event.remove({output: 'techreborn:steel_pickaxe'})
-  event.remove({output: 'techreborn:steel_hoe'})
-  event.remove({output: 'techreborn:steel_shovel'})
-
-  event.remove({output: 'techreborn:bronze_helmet'})
-  event.remove({output: 'techreborn:bronze_chestplate'})
-  event.remove({output: 'techreborn:bronze_leggings'})
-  event.remove({output: 'techreborn:bronze_boots'})
-  event.remove({output: 'techreborn:bronze_axe'})
-  event.remove({output: 'techreborn:bronze_sword'})
-  event.remove({output: 'techreborn:bronze_pickaxe'})
-  event.remove({output: 'techreborn:bronze_hoe'})
-  event.remove({output: 'techreborn:bronze_shovel'})
-
-  event.remove({output: 'techreborn:silver_helmet'})
-  event.remove({output: 'techreborn:silver_chestplate'})
-  event.remove({output: 'techreborn:silver_leggings'})
-  event.remove({output: 'techreborn:silver_boots'})
-  event.remove({output: 'techreborn:silver_axe'})
-  event.remove({output: 'techreborn:silver_sword'})
-  event.remove({output: 'techreborn:silver_pickaxe'})
-  event.remove({output: 'techreborn:silver_hoe'})
-  event.remove({output: 'techreborn:silver_shovel'})
+// Define a function to remove all recipes with a given material
+function removeRecipes(material) {
+  event.remove({output: material + '_helmet'});
+  event.remove({output: material + '_chestplate'});
+  event.remove({output: material + '_leggings'});
+  event.remove({output: material + '_boots'});
+  event.remove({output: material + '_axe'});
+  event.remove({output: material + '_sword'});
+  event.remove({output: material + '_pickaxe'});
+  event.remove({output: material + '_hoe'});
+  event.remove({output: material + '_shovel'});
+}
 
 
+
+ 
 
   /// REMOVE REPLACED RECIPES
 
