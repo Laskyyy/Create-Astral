@@ -16842,7 +16842,7 @@ hash = "058c91a44f9f4c079069775e15aea88454aee80420815cf5af51dedf01187d24"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
-hash = "91343c2da290cd5cdbe21e334d748d2491281499410130feae25f4f7f227b531"
+hash = "2cd86b002bfa2efff011b090e17c2ad083405c1da75758728f3ffa88b67db3d9"
 
 [[files]]
 file = "kubejs/server_scripts/server.js"
@@ -20576,7 +20576,7 @@ hash = "4dd3d00d175d71aac23674f58429329cdc6a3e1f334582df377efeb23da8149c"
 
 [[files]]
 file = "resourcepacks/bettervanillabuilding.pw.toml"
-hash = "9fc6c705164b6573e32c757ea72a4ddf7e52096ec233c9bd6df0e1deded4c3af"
+hash = "b6e3714e2b03fd739ba56d90010b85d52fcc1df7c85e98179d51a548e610a7ee"
 metafile = true
 
 [[files]]
@@ -24297,5 +24297,5 @@ hash = "f50cd021b055d07eceacc9c7693a51e03199516b1abf0c8c5f2fc6aedb52f5d2"
 
 [[files]]
 file = "shaderpacks/complementary-reimagined.pw.toml"
-hash = "e7bd470918b908960a77db10cb7918c67e6c90ac5d97218d2f875dd6e4e3dda8"
+hash = "1b3a65007516d0aa8db39e46a5e0d5c542610f5791e711c6b8a2204a54b4a635"
 metafile = true

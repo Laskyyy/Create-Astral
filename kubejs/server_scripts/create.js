@@ -6,10 +6,10 @@ onEvent("recipes", (event) => {
     millingRecipes(event);
     itemApplication(event);
     sequencedAssemblyRecipes(event);
-
     fillingRecipes(event);
     mixingRecipes(event);
     cuttingRecipes(event);
+
     hauntingRecipes(event);
     splashingRecipes(event);
     deployerRecipes(event);
@@ -394,6 +394,13 @@ function itemApplication(event) {
                 { item: "create:sturdy_sheet" },
             ],
             results: [{ item: "techreborn:industrial_machine_casing" }],
+        },
+        {
+            ingredients: [
+                { item: "techreborn:rubber_log_stripped" },
+                { item: "create:andesite_alloy" },
+            ],
+            results: [{ item: "create:andesite_casing" }],
         },
     ].forEach((recipe) => {
         event.custom({
@@ -1543,7 +1550,15 @@ function mixingRecipes(event) {
             .processingTime(recipe.time ?? 100);
     });
 }
-function cuttingRecipes(event) {}
+function cuttingRecipes(event) {
+    [
+        ["techreborn:rubber_log", "techreborn:rubber_log_stripped"],
+        ["techreborn:rubber_wood", "techreborn:stripped_rubber_wood"],
+        ["techreborn:rubber_log_stripped", "6x techreborn:rubber_planks"],
+    ].forEach((recipe) => {
+        event.recipes.createCutting(recipe[1], recipe[0]);
+    });
+}
 function hauntingRecipes(event) {}
 function splashingRecipes(event) {}
 function deployerRecipes(event) {}

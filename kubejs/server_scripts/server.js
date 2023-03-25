@@ -164,42 +164,6 @@ function lizardMiscChanges(event) {
             }
         );
     }
-
-    // One-item recipes are considered shaped, meaning you can't fully automate obsidian until crushing wheels despite
-    //  it being encouraged to do so at blaze burners. Add a blaze-powder mixing recipe as a work-around.
-
-    // Adding some Create compat with rubber wood
-    event.recipes.createCutting(
-        "techreborn:rubber_log_stripped",
-        "techreborn:rubber_log"
-    );
-    event.recipes.createCutting(
-        "techreborn:stripped_rubber_wood",
-        "techreborn:rubber_wood"
-    );
-    event.recipes.createCutting(
-        "6x techreborn:rubber_planks",
-        "techreborn:rubber_log_stripped"
-    );
-    event.custom({
-        type: "create:item_application",
-        ingredients: [
-            {
-                item: "techreborn:rubber_log_stripped",
-            },
-            {
-                item: "create:andesite_alloy",
-            },
-        ],
-
-        results: [
-            {
-                item: "create:andesite_casing",
-            },
-        ],
-    });
-
-    // Todo: add in stripping recipe for Tech Reborn rubber wood
 }
 
 // Largely degating trains
