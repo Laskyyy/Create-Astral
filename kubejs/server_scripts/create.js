@@ -1,6 +1,21 @@
 onEvent("recipes", (event) => {
-    //Misc
+    crushingRecipes(event);
+    millingRecipes(event);
+    itemApplication(event);
+    sequencedAssemblyRecipes(event);
 
+    fillingRecipes(event);
+    mixingRecipes(event);
+    cuttingRecipes(event);
+    hauntingRecipes(event);
+    splashingRecipes(event);
+    deployerRecipes(event);
+    mechanicalCraftingRecipes(event);
+    compactingRecipes(event);
+    pressingRecipes(event);
+});
+
+function millingRecipes(event) {
     //Input, Output, Chance
     [
         ["farmersdelight:straw", "minecraft:string", 1],
@@ -15,7 +30,8 @@ onEvent("recipes", (event) => {
             recipe[0]
         );
     });
-
+}
+function crushingRecipes(event) {
     //Replace with other netherrack inputs and outputs
     event.remove({ type: "create:crushing", input: "minecraft:netherrack" });
 
@@ -338,18 +354,64 @@ onEvent("recipes", (event) => {
         output: "create:crushed_zinc_ore",
     });
     event.remove({ output: "create:crushed_uranium_ore" });
-    //Chapter 1
-
-    event.custom({
-        type: "create:item_application",
-        ingredients: [
-            { item: "create:andesite_casing" },
-            { tag: "c:plates/obsidian" },
-        ],
-        results: [{ item: "create:railway_casing" }],
+}
+function itemApplication(event) {
+    [
+        {
+            ingredients: [
+                { item: "create:andesite_casing" },
+                { tag: "c:plates/obsidian" },
+            ],
+            results: [{ item: "create:railway_casing" }],
+        },
+        {
+            ingredients: [
+                { item: "techreborn:basic_machine_casing" },
+                { item: "ad_astra:compressed_steel" },
+            ],
+            results: [{ item: "techreborn:advanced_machine_casing" }],
+        },
+        {
+            ingredients: [
+                { item: "techreborn:advanced_machine_frame" },
+                { item: "techreborn:machine_parts" },
+            ],
+            results: [{ item: "techreborn:industrial_machine_frame" }],
+        },
+        {
+            ingredients: [
+                { item: "techreborn:basic_machine_frame" },
+                { item: "techreborn:lead_plate" },
+            ],
+            results: [{ item: "techreborn:advanced_machine_frame" }],
+        },
+        {
+            ingredients: [
+                { item: "techreborn:basic_machine_casing" },
+                { item: "create:sturdy_sheet" },
+            ],
+            results: [{ item: "techreborn:industrial_machine_casing" }],
+        },
+    ].forEach((recipe) => {
+        event.custom({
+            type: "create:item_application",
+            ingredients: recipe.ingredients,
+            results: recipe.results,
+        });
     });
 
-    // Pre-spout sturdy sheet
+    event.remove({
+        output: "create:brass_casing",
+        type: "create:item_application",
+    });
+}
+function sequencedAssemblyRecipes(event) {
+    biomassSequence(event);
+    circuitSequence(event);
+    diamondSequence(event);
+    casingSequence(event);
+    piglinSequence(event);
+
     let transitional_sturdy_sheet = "create:unprocessed_obsidian_sheet";
     event.recipes
         .createSequencedAssembly(
@@ -371,12 +433,579 @@ onEvent("recipes", (event) => {
         )
         .transitionalItem(transitional_sturdy_sheet)
         .loops(5);
-    //Chapter 2
 
+    function biomassSequence(event) {
+        event.remove({ output: "techreborn:compressed_plantball" });
+
+        var transitional_c_plantball = "techreborn:plantball";
+        event.recipes
+            .createSequencedAssembly(
+                [
+                    Item.of("techreborn:compressed_plantball").withChance(8),
+                    Item.of("minecraft:grass").withChance(1),
+                    Item.of("minecraft:green_dye").withChance(0.5),
+                    Item.of("farmersdelight:straw").withChance(0.5),
+                ],
+                "techreborn:plantball",
+                [
+                    event.recipes.createPressing(
+                        transitional_c_plantball,
+                        transitional_c_plantball
+                    ),
+                ]
+            )
+            .transitionalItem(transitional_c_plantball)
+            .loops(4);
+
+        event.remove({
+            output: "createaddition:biomass_pellet",
+        });
+
+        var transitional_bio_pellet = "createaddition:biomass";
+        event.recipes
+            .createSequencedAssembly(
+                [Item.of("4x createaddition:biomass_pellet").withChance(1)],
+                "createaddition:biomass",
+                [
+                    event.recipes.createCutting(
+                        transitional_bio_pellet,
+                        transitional_bio_pellet
+                    ),
+                    event.recipes.createCutting(
+                        transitional_bio_pellet,
+                        transitional_bio_pellet
+                    ),
+                    event.recipes.createPressing(
+                        transitional_bio_pellet,
+                        transitional_bio_pellet
+                    ),
+                ]
+            )
+            .transitionalItem(transitional_bio_pellet)
+            .loops(1);
+        event.remove({ output: "techreborn:compressed_plantball" });
+
+        event.recipes
+            .createSequencedAssembly(
+                [
+                    Item.of("techreborn:compressed_plantball").withChance(8),
+                    Item.of("minecraft:grass").withChance(1),
+                    Item.of("minecraft:green_dye").withChance(0.5),
+                    Item.of("farmersdelight:straw").withChance(0.5),
+                ],
+                "techreborn:plantball",
+                [
+                    event.recipes.createPressing(
+                        transitional_c_plantball,
+                        transitional_c_plantball
+                    ),
+                ]
+            )
+            .transitionalItem(transitional_c_plantball)
+            .loops(4);
+
+        event.remove({
+            output: "createaddition:biomass_pellet",
+        });
+
+        event.recipes
+            .createSequencedAssembly(
+                [Item.of("4x createaddition:biomass_pellet").withChance(1)],
+                "createaddition:biomass",
+                [
+                    event.recipes.createCutting(
+                        transitional_bio_pellet,
+                        transitional_bio_pellet
+                    ),
+                    event.recipes.createCutting(
+                        transitional_bio_pellet,
+                        transitional_bio_pellet
+                    ),
+                    event.recipes.createPressing(
+                        transitional_bio_pellet,
+                        transitional_bio_pellet
+                    ),
+                ]
+            )
+            .transitionalItem(transitional_bio_pellet)
+            .loops(1);
+    }
+    function circuitSequence(event) {
+        event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "createastral:incomplete_electronic_circuit", // output
+                ],
+                "create:integrated_circuit",
+                [
+                    // input
+                    event.recipes.createDeploying("create:integrated_circuit", [
+                        "create:integrated_circuit",
+                        "createastral:electrified_pin",
+                    ]),
+                ]
+            )
+            .transitionalItem("create:integrated_circuit")
+            .loops(64);
+
+        event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "techreborn:electronic_circuit", // output
+                ],
+                "createastral:incomplete_electronic_circuit",
+                [
+                    // input
+                    event.recipes.createDeploying(
+                        "createastral:incomplete_electronic_circuit",
+                        [
+                            "createastral:incomplete_electronic_circuit",
+                            "ad_astra:compressed_ostrum",
+                        ]
+                    ),
+                    event.recipes.createPressing(
+                        "createastral:incomplete_electronic_circuit",
+                        "createastral:incomplete_electronic_circuit"
+                    ),
+                ]
+            )
+            .transitionalItem("createastral:incomplete_electronic_circuit")
+            .loops(1);
+        event.recipes
+            .createSequencedAssembly(
+                ["create:integrated_circuit"],
+                "create:lapis_sheet",
+                [
+                    event.recipes.createFilling("create:lapis_sheet", [
+                        "create:lapis_sheet",
+                        { fluid: "tconstruct:molten_silver", amount: 3375 },
+                    ]), //fill bronze
+                    event.recipes.createDeploying("create:lapis_sheet", [
+                        "create:lapis_sheet",
+                        "createaddition:copper_wire",
+                    ]), //fill bronze
+                    event.recipes.createDeploying("create:lapis_sheet", [
+                        "create:lapis_sheet",
+                        "createaddition:copper_wire",
+                    ]), //fill bronze
+                    event.recipes.createPressing(
+                        "create:lapis_sheet",
+                        "create:lapis_sheet"
+                    ),
+                ]
+            )
+            .transitionalItem("create:lapis_sheet")
+            .loops(6);
+
+        event.recipes
+            .createSequencedAssembly(
+                ["techreborn:industrial_circuit"],
+                "techreborn:electronic_circuit",
+                [
+                    event.recipes.createFilling(
+                        "techreborn:electronic_circuit",
+                        [
+                            "techreborn:electronic_circuit",
+                            { fluid: "techreborn:lithium", amount: 4500 },
+                        ]
+                    ), //fill bronze
+                    event.recipes.createPressing(
+                        "techreborn:electronic_circuit",
+                        "techreborn:electronic_circuit"
+                    ),
+                    event.recipes.createDeploying(
+                        "techreborn:electronic_circuit",
+                        [
+                            "techreborn:electronic_circuit",
+                            "techreborn:machine_parts",
+                        ]
+                    ),
+                    event.recipes.createDeploying(
+                        "techreborn:electronic_circuit",
+                        [
+                            "techreborn:electronic_circuit",
+                            "createastral:calorite_pin",
+                        ]
+                    ), //fill bronze
+                ]
+            )
+            .transitionalItem("techreborn:electronic_circuit")
+            .loops(9);
+    }
+    function casingSequence(event) {
+        event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "create:copper_casing", // output
+                ],
+                "create:andesite_casing",
+                [
+                    // input
+                    event.recipes.createDeploying("create:andesite_casing", [
+                        "techreborn:rubber",
+                        "techreborn:rubber",
+                    ]),
+                    event.recipes.createDeploying("create:andesite_casing", [
+                        "create:copper_sheet",
+                        "create:copper_sheet",
+                    ]),
+                ]
+            )
+            .transitionalItem("create:andesite_casing")
+            .loops(3);
+
+        event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "techreborn:basic_machine_frame", // output
+                ],
+                "create:copper_casing",
+                [
+                    // input
+                    event.recipes.createFilling("create:copper_casing", [
+                        "create:copper_casing",
+                        { fluid: "tconstruct:molten_silver", amount: 9000 },
+                    ]),
+                    event.recipes.createDeploying("create:copper_casing", [
+                        "create:copper_casing",
+                        "techreborn:rubber",
+                    ]),
+                    event.recipes.createPressing(
+                        "create:copper_casing",
+                        "create:copper_casing"
+                    ), //yeah!
+                ]
+            )
+            .transitionalItem("create:copper_casing")
+            .loops(4);
+    }
+    function diamondSequence(event) {
+        // Item type , loop amount
+        [
+            ["helmet", 4],
+            ["chestplate", 8],
+            ["leggings", 6],
+            ["boots", 5],
+            ["pickaxe", 2],
+            ["axe", 2],
+            ["shovel", 1],
+            ["hoe", 1],
+            ["sword", 2],
+        ].forEach((item) => {
+            event.recipes
+                .createSequencedAssembly(
+                    [
+                        // begin
+                        "minecraft:diamond_" + item[0], // output
+                    ],
+                    Item.of("createastral:brass_" + item[0]).ignoreNBT(),
+                    [
+                        // input
+                        event.recipes.createFilling(
+                            "createastral:brass_" + item[0],
+                            [
+                                "createastral:brass_" + item[0],
+                                {
+                                    fluid: "tconstruct:molten_diamond",
+                                    amount: 20250,
+                                },
+                            ]
+                        ),
+                    ]
+                )
+                .transitionalItem("createastral:brass_" + item[0])
+                .loops(item[1]);
+        });
+    }
+
+    function piglinSequence(event) {
+        event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "passivepiglins:piglin_coin", // output
+                ],
+                Item.of("create:golden_sheet"),
+                [
+                    // input
+                    event.recipes
+                        .createCutting(
+                            "create:golden_sheet",
+                            "create:golden_sheet"
+                        )
+                        .processingTime(30),
+                    event.recipes.createDeploying("create:golden_sheet", [
+                        "minecraft:gold_nugget",
+                        "minecraft:gold_nugget",
+                    ]),
+                    event.recipes.createDeploying("create:golden_sheet", [
+                        "minecraft:piglin_banner_pattern",
+                        "minecraft:piglin_banner_pattern",
+                    ]),
+                    event.recipes
+                        .createPressing(
+                            "create:golden_sheet",
+                            "create:golden_sheet"
+                        )
+                        .processingTime(75),
+                ]
+            )
+            .transitionalItem("createastral:coin")
+            .loops(1);
+
+        event.remove({ output: "passivepiglins:piglin_fortune" });
+        event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "passivepiglins:piglin_fortune", // output
+                ],
+                Item.of("createastral:golden_bowl"),
+                [
+                    // input
+                    event.recipes
+                        .createFilling("ad_astra:iron_plate", [
+                            "ad_astra:iron_plate",
+                            { fluid: "techreborn:methane", amount: 3000 },
+                        ])
+                        .processingTime(75), //fill
+                    event.recipes.createDeploying("create:golden_sheet", [
+                        "techreborn:netherrack_dust",
+                        "techreborn:netherrack_dust",
+                    ]),
+                    event.recipes.createDeploying("create:golden_sheet", [
+                        "minecraft:crimson_fungus",
+                        "minecraft:crimson_fungus",
+                    ]),
+                ]
+            )
+            .transitionalItem("createastral:filled_golden_bowl")
+            .loops(1);
+
+        event.remove({ output: "passivepiglins:piglin_totem" });
+        event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "passivepiglins:piglin_totem", // output
+                ],
+                Item.of("minecraft:gold_ingot"),
+                [
+                    // input
+                    event.recipes.createDeploying("minecraft:gold_ingot", [
+                        "minecraft:gold_nugget",
+                        "minecraft:gold_nugget",
+                    ]),
+                    event.recipes.createDeploying("minecraft:gold_ingot", [
+                        "createastral:golden_pin",
+                        "createastral:golden_pin",
+                    ]),
+                    event.recipes.createDeploying("minecraft:gold_ingot", [
+                        "createastral:golden_pin",
+                        "createastral:golden_pin",
+                    ]),
+                ]
+            )
+            .transitionalItem("minecraft:gold_ingot")
+            .loops(1);
+    }
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "immersive_aircraft:engine", // output
+            ],
+            "create:precision_mechanism",
+            [
+                // input
+                event.recipes.createDeploying(
+                    "create:incomplete_precision_mechanism",
+                    [
+                        "create:incomplete_precision_mechanism",
+                        "immersive_aircraft:boiler",
+                    ]
+                ),
+                event.recipes.createDeploying(
+                    "create:incomplete_precision_mechanism",
+                    [
+                        "create:incomplete_precision_mechanism",
+                        "techreborn:nak_coolant_cell_60k",
+                    ]
+                ),
+                event.recipes.createDeploying(
+                    "create:incomplete_precision_mechanism",
+                    [
+                        "create:incomplete_precision_mechanism",
+                        "createaddition:capacitor",
+                    ]
+                ),
+            ]
+        )
+        .transitionalItem("create:incomplete_precision_mechanism")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            ["automobility:launch_gel"],
+            "tconstruct:slimesteel_nugget",
+            [
+                event.recipes.createPressing(
+                    "tconstruct:slimesteel_nugget",
+                    "tconstruct:slimesteel_nugget"
+                ),
+            ]
+        )
+        .transitionalItem("create:tree_fertilizer")
+        .loops(125);
+
+    event.recipes
+        .createSequencedAssembly(
+            ["createastral:navigation_mechanism"],
+            "phonos:redstone_chip",
+            [
+                event.recipes.createFilling(
+                    "create:incomplete_precision_mechanism",
+                    [
+                        "create:incomplete_precision_mechanism",
+                        {
+                            fluid: "tconstruct:molten_cobalt",
+                            amount: 1350,
+                        },
+                    ]
+                ), //fill bronze
+                event.recipes.createDeploying(
+                    "create:incomplete_precision_mechanism",
+                    ["techreborn:electrum_nugget", "techreborn:electrum_nugget"]
+                ), //fill bronze
+                event.recipes.createPressing(
+                    "create:incomplete_precision_mechanism",
+                    "create:incomplete_precision_mechanism"
+                ),
+            ]
+        )
+        .transitionalItem("create:incomplete_precision_mechanism")
+        .loops(30);
+
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "minecraft:ender_eye", // output
+            ],
+            "minecraft:ender_pearl",
+            [
+                // input
+                event.recipes.createDeploying("minecraft:ender_pearl", [
+                    "minecraft:blaze_powder",
+                    "minecraft:blaze_powder",
+                ]),
+                event.recipes.createDeploying("minecraft:ender_pearl", [
+                    "create:powdered_obsidian",
+                    "create:powdered_obsidian",
+                ]),
+                event.recipes.createPressing(
+                    "minecraft:ender_pearl",
+                    "minecraft:ender_pearl"
+                ), //yeah
+                event.recipes.createFilling("minecraft:ender_pearl", [
+                    "minecraft:ender_pearl",
+                    { fluid: "minecraft:lava", amount: 20250 },
+                ]), //fill 1/4 bucket lava
+                event.recipes.createPressing(
+                    "minecraft:ender_pearl",
+                    "minecraft:ender_pearl"
+                ),
+            ]
+        )
+        .transitionalItem("minecraft:ender_pearl")
+        .loops(3);
+
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "phonos:redstone_chip", // output
+            ],
+            "create:electron_tube",
+            [
+                // input
+                event.recipes.createFilling("create:electron_tube", [
+                    "create:electron_tube",
+                    { fluid: "tconstruct:molten_copper", amount: 3375 },
+                ]), //fill bronze
+                event.recipes.createDeploying("create:electron_tube", [
+                    "create:electron_tube",
+                    "#c:wires",
+                ]), //fill obsid
+                event.recipes.createPressing(
+                    "create:electron_tube",
+                    "#c:wires"
+                ), //yeah
+            ]
+        )
+        .transitionalItem("create:electron_tube")
+        .loops(12);
+
+    //Dash panel
+    event.recipes
+        .createSequencedAssembly(
+            ["automobility:dash_panel"],
+            "ad_astra:iron_plate",
+            [
+                event.recipes
+                    .createFilling("ad_astra:iron_plate", [
+                        "ad_astra:iron_plate",
+                        { fluid: "kubejs:shimmer", amount: 9000 },
+                    ])
+                    .processingTime(75), //fill
+                event.recipes
+                    .createPressing(
+                        "ad_astra:iron_plate",
+                        "ad_astra:iron_plate"
+                    )
+                    .processingTime(75),
+            ]
+        )
+        .transitionalItem("ad_astra:iron_plate")
+        .loops(3);
+
+    event.recipes
+        .createSequencedAssembly(
+            ["create:crimsite"],
+            "minecraft:cobbled_deepslate",
+            [
+                event.recipes.createFilling("minecraft:cobbled_deepslate", [
+                    "minecraft:cobbled_deepslate",
+                    {
+                        fluid: "minecraft:lava",
+                        amount: 3000,
+                    },
+                ]), //fill bronze
+                event.recipes.createDeploying("minecraft:cobbled_deepslate", [
+                    "minecraft:cobbled_deepslate",
+                    "minecraft:flint",
+                ]), //fill bronze //fill bronze
+            ]
+        )
+        .transitionalItem("minecraft:cobbled_deepslate")
+        .loops(3);
+}
+
+function fillingRecipes(event) {
     event.recipes.createFilling("create:electron_tube", [
         "create:polished_rose_quartz",
         { fluid: "tconstruct:molten_rose_gold", amount: 9000 },
     ]);
-
-    //Chapter 4
-});
+}
+function mixingRecipes(event) {}
+function cuttingRecipes(event) {}
+function hauntingRecipes(event) {}
+function splashingRecipes(event) {}
+function deployerRecipes(event) {}
+function mechanicalCraftingRecipes(event) {}
+function compactingRecipes(event) {}
+function pressingRecipes(event) {}
