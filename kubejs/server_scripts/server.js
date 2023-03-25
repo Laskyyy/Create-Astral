@@ -167,10 +167,6 @@ function lizardMiscChanges(event) {
 
     // One-item recipes are considered shaped, meaning you can't fully automate obsidian until crushing wheels despite
     //  it being encouraged to do so at blaze burners. Add a blaze-powder mixing recipe as a work-around.
-    event.recipes.createMixing(
-        "2x minecraft:blaze_powder",
-        "minecraft:blaze_rod"
-    );
 
     // Adding some Create compat with rubber wood
     event.recipes.createCutting(
@@ -321,21 +317,6 @@ function lizardCH3Changes(event) {
         energy: 4000,
     });
 
-    // I commented out the two lines replacing scroched brick input with scorched bricks
-    //  and the one line removing scorched bricks entirely. They made the foundry impossible.
-    // Also: I commented out the original nether grout recipe
-    event.recipes
-        .createMixing("3x tconstruct:nether_grout", [
-            "minecraft:magma_cream",
-            "minecraft:soul_sand",
-            "create:scoria",
-            "#c:dusts/obsidian",
-            "#c:dusts/obsidian",
-            "#c:dusts/obsidian",
-        ])
-        .heated()
-        .processingTime(700);
-
     // De-gating chunk-loader, but then give it more difficult materials to balance it out
     // Todo V2.X: make it require plates that require special dust crafting. (emerald and diamond plates suffice for now)
     event.replaceInput(
@@ -408,40 +389,6 @@ function lizardCH3Changes(event) {
 }
 
 function lizardCH3Biofuel(event) {
-    // Biofuel rework
-    event.remove({ output: "techreborn:plantball" });
-    event.remove({
-        type: "minecraft:crafting_shaped",
-        output: "techreborn:plantball",
-    });
-
-    event.remove({
-        type: "minecraft:crafting_shapeless",
-        output: "techreborn:plantball",
-    });
-
-    event.recipes
-        .createMixing("techreborn:plantball", [
-            "9x #minecraft:leaves",
-            {
-                fluid: "createaddition:seed_oil",
-                amount: FULL_BUCKET_AMMOUNT / 2,
-            },
-        ])
-        .heated()
-        .processingTime(1000);
-
-    event.recipes
-        .createMixing("techreborn:plantball", [
-            "9x #c:grass_variants",
-            {
-                fluid: "createaddition:seed_oil",
-                amount: FULL_BUCKET_AMMOUNT / 2,
-            },
-        ])
-        .heated()
-        .processingTime(1000);
-
     event.remove({
         output: "createaddition:biomass",
     });
@@ -476,21 +423,6 @@ function lizardCH3Biofuel(event) {
 
 // This includes the launch pad recipe
 function lizardCH3Concrete(event) {
-    // Cement recipe
-    // Todo V2.X: be not lazy and make it so all concrete powders require lime
-    event.recipes
-        .createMixing(
-            Fluid.of("kubejs:blast-resistant_cement", FULL_BUCKET_AMMOUNT),
-            [
-                "#c:concrete_powder",
-                "2x createastral:lime",
-                "3x techreborn:steel_dust",
-                { fluid: "minecraft:water", amount: FULL_BUCKET_AMMOUNT },
-            ]
-        )
-        .heated()
-        .processingTime(1000); // I don't know if heating it makes sense cause of water but it was screaming to be heated
-
     // Cement pouring recipe
     event.custom({
         type: "tconstruct:casting_basin",
@@ -1004,7 +936,7 @@ onEvent("recipes", (event) => {
 
     event.remove({ output: "dbe:steel_ingot" });
     event.remove({ output: "dbe:copper_coil" });
-    event.remove({ output: "dustrial_decor:cast_iron_billet" });
+
     event.replaceInput("dbe:steel_ingot", "dustrial_decor:cast_iron_billet");
     event.replaceInput("dbe:basic_circuit", "phonos:redstone_chip");
     event.replaceInput(
@@ -1012,12 +944,6 @@ onEvent("recipes", (event) => {
         "create:andesite_alloy",
         "ad_astra:steel_ingot"
     );
-
-    event.recipes.createMixing("3x dustrial_decor:cast_iron_billet", [
-        "minecraft:iron_ingot",
-        "2x create:andesite_alloy",
-        "minecraft:coal",
-    ]);
 
     ///// MAINLY TINKERS CONSTRUCT REWORKING /////
 
@@ -1959,36 +1885,6 @@ onEvent("recipes", (event) => {
     });
     /////// TECH REBORN ACTUAL RECIPES //////
 
-    event.recipes
-        .createMixing("techreborn:rubber", ["techreborn:sap"])
-        .processingTime(50);
-
-    event.recipes
-        .createMixing("4x techreborn:machine_parts", [
-            "ad_astra:compressed_steel",
-            "techreborn:carbon_mesh",
-            "8x #c:wires",
-        ])
-        .superheated()
-        .processingTime(400);
-
-    event.recipes
-        .createMixing("1x techreborn:carbon_mesh", [
-            "2x techreborn:carbon_fiber",
-        ])
-        .superheated()
-        .processingTime(400);
-
-    event.recipes
-        .createMixing("techreborn:nuke", [
-            "techreborn:industrial_machine_frame",
-            { fluid: "kubejs:plasma_fluid", amount: 81000 },
-            "3x createastral:subatomic_ingot",
-            "create:linked_controller",
-        ])
-        .superheated()
-        .processingTime(500);
-
     event.recipes.createMechanicalCrafting(
         "techreborn:fusion_control_computer",
         ["DBCBD", "BDCDB", "CCECC", "BDADB", "DABAD"],
@@ -2066,164 +1962,6 @@ onEvent("recipes", (event) => {
         W: "create:fluid_tank",
         C: "create:zinc_ingot",
     });
-
-    event.recipes
-        .createMixing(Fluid.of("tconstruct:molten_brass", 18000), [
-            "minecraft:copper_ingot",
-            "create:zinc_ingot",
-        ])
-        .heated()
-        .processingTime(300);
-    event.recipes
-        .createMixing(Fluid.of("tconstruct:molten_brass", 1800), [
-            { fluid: "tconstruct:molten_copper", amount: 900 },
-            { fluid: "tconstruct:molten_zinc", amount: 900 },
-        ])
-        .heated()
-        .processingTime(5);
-    event.recipes
-        .createMixing(Fluid.of("tconstruct:molten_amethyst_bronze", 9000), [
-            "createastral:bronze_ingot",
-            "minecraft:amethyst_shard",
-        ])
-        .heated()
-        .processingTime(300);
-    event.recipes
-        .createMixing(Fluid.of("tconstruct:molten_amethyst_bronze", 900), [
-            { fluid: "tconstruct:molten_bronze", amount: 900 },
-            { fluid: "tconstruct:molten_amethyst", amount: 900 },
-        ])
-        .heated();
-    event.recipes.createMixing(Fluid.of("tconstruct:molten_bronze", 1800), [
-        { fluid: "tconstruct:molten_tin", amount: 900 },
-        { fluid: "tconstruct:molten_copper", amount: 900 },
-    ]);
-
-    // 	event.recipes.createMixing(Fluid.of('tconstruct:molten_rose_gold', 9000), [
-    //     'minecraft:copper_ingot',
-    //     'minecraft:gold_ingot'
-    // ]).processingTime(300)
-
-    //  Heated ingot version of above recipe
-    // TODO: does the fluid amount output add up to an ammount that makes sense?
-    event.recipes
-        .createMixing(Fluid.of("tconstruct:molten_rose_gold", 9000), [
-            "minecraft:copper_ingot",
-            "minecraft:gold_ingot",
-        ])
-        .processingTime(1500);
-
-    event.recipes
-        .createMixing(Fluid.of("tconstruct:molten_bronze", 18000), [
-            "minecraft:copper_ingot",
-            "techreborn:tin_ingot",
-        ])
-        .processingTime(300);
-
-    event.recipes
-        .createMixing(Fluid.of("tconstruct:molten_rose_gold", 900), [
-            { fluid: "tconstruct:molten_copper", amount: 900 },
-            { fluid: "tconstruct:molten_gold", amount: 900 },
-        ])
-        .processingTime(10);
-    event.recipes
-        .createMixing(Fluid.of("tconstruct:molten_electrum", 900), [
-            { fluid: "tconstruct:molten_silver", amount: 900 },
-            { fluid: "tconstruct:molten_gold", amount: 900 },
-        ])
-        .heated();
-
-    event.recipes
-        .createMixing(Fluid.of("tconstruct:molten_steel", 9000), [
-            "techreborn:steel_dust",
-        ])
-        .superheated();
-
-    event.recipes
-        .createMixing(Fluid.of("tconstruct:molten_slimesteel", 9000), [
-            "minecraft:iron_ingot",
-            "tconstruct:sky_slime_ball",
-            "#tconstruct:seared_blocks",
-        ])
-        .heated()
-        .processingTime(300);
-    event.recipes
-        .createMixing(Fluid.of("tconstruct:molten_slimesteel", 9000), [
-            { fluid: "tconstruct:molten_iron", amount: 9000 },
-            { fluid: "tconstruct:sky_slime", amount: 20250 },
-            "#tconstruct:seared_blocks",
-        ])
-        .heated()
-        .processingTime(40);
-
-    event.recipes
-        .createMixing("3x create:blaze_cake_base", [
-            "tconstruct:ender_slime_ball",
-            "tconstruct:ichor_slime_ball",
-            "ad_astra:cheese",
-        ])
-        .heated()
-        .processingTime(300);
-
-    event.recipes
-        .createMixing(Fluid.of("tconstruct:molten_pig_iron", 9000), [
-            "minecraft:porkchop",
-            "minecraft:iron_ingot",
-            "minecraft:gold_ingot",
-        ])
-        .heated()
-        .processingTime(300);
-    event.recipes
-        .createMixing(Fluid.of("tconstruct:molten_pig_iron", 9000), [
-            "minecraft:porkchop",
-            { fluid: "tconstruct:molten_iron", amount: 9000 },
-            { fluid: "tconstruct:molten_gold", amount: 9000 },
-        ])
-        .heated()
-        .processingTime(250);
-    //Tinker's Construct Reworking (New fluids and recipes)
-    //Tier 4 materials
-
-    //  	event.recipes.createMixing('3x tconstruct:nether_grout', [
-    //    'minecraft:magma_cream',
-    //    'minecraft:soul_sand',
-    //    'minecraft:gravel',
-    //    'create:powdered_obsidian',
-    //    'create:powdered_obsidian',
-    //    'create:powdered_obsidian'
-
-    //  ]).heated().processingTime(700)
-
-    event.recipes
-        .createMixing(Fluid.of("tconstruct:molten_queens_slime", 1800), [
-            { fluid: "tconstruct:molten_cobalt", amount: 900 },
-            { fluid: "tconstruct:molten_slimesteel", amount: 1800 },
-        ])
-        .heated()
-        .processingTime(5);
-    event.recipes
-        .createMixing(Fluid.of("tconstruct:molten_manyullyn", 9000), [
-            { fluid: "tconstruct:molten_cobalt", amount: 18000 },
-            "1x minecraft:netherite_scrap",
-            { fluid: "kubejs:molten_desh", amount: 9000 },
-        ])
-        .heated()
-        .processingTime(1000);
-
-    event.recipes
-        .createMixing(Fluid.of("tconstruct:molten_hepatizon", 1800), [
-            { fluid: "tconstruct:molten_cobalt", amount: 900 },
-            { fluid: "tconstruct:molten_lead", amount: 1800 },
-        ])
-        .heated()
-        .processingTime(5);
-
-    event.recipes
-        .createMixing(Fluid.of("tconstruct:molten_debris", 20250), [
-            "minecraft:ancient_debris",
-        ])
-        .heated()
-        .processingTime(500);
 
     //BOW // CROSSBOW
     event.shaped("minecraft:bow", ["   ", "CCA", " BC"], {
@@ -2884,12 +2622,6 @@ onEvent("recipes", (event) => {
     ///// SEQUENCED ASSEMBLY LINES /////
 
     event.recipes
-        .createMixing(Fluid.of("kubejs:hellfire", 81), [
-            { fluid: "minecraft:lava", amount: 9000 },
-        ])
-        .superheated();
-
-    event.recipes
         .createCompacting("ad_astra:iron_plate", ["create:iron_sheet"])
         .heated();
 
@@ -2928,32 +2660,6 @@ onEvent("recipes", (event) => {
 
     ////////////////  EARLY GAME ANDESITE / GROUT RELATED STUFF
 
-    event.recipes
-        .createMixing("create:chromatic_compound", [
-            "5x techreborn:uu_matter",
-            { fluid: "kubejs:shimmer", amount: 81000 },
-        ])
-        .superheated()
-        .processingTime(2500);
-
-    event.recipes.createMixing(Fluid.of("kubejs:compound_mixture", 9000), [
-        "minecraft:andesite",
-        "techreborn:tin_nugget",
-        "minecraft:clay_ball",
-    ]);
-
-    event.recipes.createMixing(Fluid.of("kubejs:compound_mixture", 9000), [
-        "minecraft:andesite",
-        "create:zinc_nugget",
-        "minecraft:clay_ball",
-    ]);
-
-    event.recipes.createMixing(Fluid.of("kubejs:compound_mixture", 9000), [
-        "minecraft:andesite",
-        "minecraft:iron_nugget",
-        "minecraft:clay_ball",
-    ]);
-
     event.shaped("createastral:andesite_compound", ["BBB", "AAA", "CCC"], {
         A: "techreborn:tin_nugget",
         B: "minecraft:andesite",
@@ -2973,12 +2679,6 @@ onEvent("recipes", (event) => {
     });
     event.smelting("create:andesite_alloy", "createastral:andesite_compound");
     event.blasting("create:andesite_alloy", "createastral:andesite_compound");
-
-    event.recipes.createMixing("8x tconstruct:grout", [
-        "create:andesite_alloy",
-        "create:zinc_ingot",
-        "8x minecraft:gravel",
-    ]);
 
     //SMITHING RADIANT STUFF
 
@@ -3324,16 +3024,6 @@ onEvent("recipes", (event) => {
 
     ////CREATE MIXING RECIPES
 
-    event.recipes.createMixing("tconstruct:seared_bricks", [
-        "4x tconstruct:seared_brick",
-        "#c:slimeballs",
-    ]);
-
-    event.recipes.createMixing("tconstruct:seared_bricks", [
-        "4x tconstruct:seared_brick",
-        "techreborn:sap",
-    ]);
-
     //// ASSORTED CRAFTING BENCH RECIPES
 
     event.shaped("minecraft:bundle", [" S ", "A A", " A "], {
@@ -3558,14 +3248,6 @@ onEvent("recipes", (event) => {
         ],
     });
 
-    event.recipes
-        .createMixing("techreborn:steel_dust", [
-            "6x minecraft:iron_ingot",
-            "4x techreborn:coal_dust",
-        ])
-        .heated()
-        .processingTime(400);
-
     event.shaped(
         Item.of("custommachinery:custom_machine_item", {
             machine: "createastral:electrolyser",
@@ -3623,40 +3305,6 @@ onEvent("recipes", (event) => {
         C: "minecraft:light_weighted_pressure_plate",
     });
 
-    ///// MOST SHIMMER RELATED RECIPES (MANY OF THESE ARE ALSO DONE THRU THE DATAPACK INSTEAD) /////
-
-    // event.recipes.createMixing(Fluid.of('kubejs:shimmer', 90000), [
-    //   '5x minecraft:amethyst_shard',
-    // '2x minecraft:glow_ink_sac'
-    // ]).heated().processingTime(400)
-
-    // Make shimmer possible pre-moon
-    event.recipes
-        .createMixing(Fluid.of("kubejs:shimmer", 40500), [
-            "5x minecraft:amethyst_shard",
-            "2x minecraft:glow_ink_sac",
-        ])
-        .processingTime(400);
-
-    event.recipes
-        .createMixing("minecraft:glow_ink_sac", [
-            "minecraft:ink_sac",
-            "2x minecraft:glowstone_dust",
-        ])
-        .processingTime(50);
-
-    ///// Passive Piglins recipes!!!! wowie!!!! /////
-
-    event.recipes
-        .createMixing("minecraft:piglin_banner_pattern", [
-            "1x minecraft:paper",
-            Item.of(
-                "tconstruct:large_plate",
-                '{Material:"tconstruct:pig_iron"}'
-            ),
-        ])
-        .processingTime(100);
-
     event.remove({ output: "passivepiglins:piglin_coin" });
     event.shaped("passivepiglins:piglin_coin", ["BA", "AB"], {
         A: "create:golden_sheet",
@@ -3686,94 +3334,6 @@ onEvent("recipes", (event) => {
         "automobility:dash_panel"
     );
 
-    //Orca Item
-    event.recipes
-        .createMixing("minecraft:dolphin_spawn_egg", [
-            { fluid: "kubejs:shimmer", amount: 40500 },
-            "createastral:orcane",
-        ])
-        .processingTime(500);
-    event.recipes
-        .createMixing("adoptafloppa:kitney_item", [
-            { fluid: "kubejs:shimmer", amount: 40500 },
-            "3x minecraft:ghast_tear",
-        ])
-        .processingTime(500);
-
-    //Slime alternative
-    event.recipes
-        .createMixing("tconstruct:ichor_slime_ball", [
-            { fluid: "kubejs:shimmer", amount: 9000 },
-            "4x tconstruct:sky_slime_ball",
-        ])
-        .heated()
-        .processingTime(30);
-
-    event.recipes
-        .createMixing("tconstruct:ender_slime_ball", [
-            { fluid: "kubejs:shimmer", amount: 9000 },
-            "2x tconstruct:ichor_slime_ball",
-        ])
-        .heated()
-        .processingTime(30);
-
-    event.recipes
-        .createMixing("doodads:portable_nether", [
-            { fluid: "kubejs:shimmer", amount: 81000 },
-            "minecraft:lodestone",
-        ])
-        .heated()
-        .processingTime(500);
-
-    event.recipes
-        .createMixing("32x doodads:stone_brick_road", [
-            { fluid: "kubejs:shimmer", amount: 40500 },
-            "32x minecraft:stone_bricks",
-        ])
-        .processingTime(1000);
-
-    event.recipes
-        .createMixing("32x doodads:brick_road", [
-            { fluid: "kubejs:shimmer", amount: 40500 },
-            "32x minecraft:bricks",
-        ])
-        .processingTime(1000);
-
-    event.recipes
-        .createMixing("doodads:asphalt", [
-            { fluid: "kubejs:andesite_compound", amount: 3000 },
-            "#c:concrete_powder",
-        ])
-        .processingTime(1000);
-
-    event.recipes
-        .createMixing({ fluid: "create:honey", amount: 40500 }, [
-            { fluid: "minecraft:water", amount: 40500 },
-            { fluid: "kubejs:shimmer", amount: 40500 },
-        ])
-        .processingTime(3000);
-
-    // Broke impossible progression by removing heating requirement from astral
-    //  conduit
-    event.recipes
-        .createMixing("createastral:astral_conduit", [
-            { fluid: "kubejs:shimmer", amount: 81000 },
-            "minecraft:diamond_block",
-            "phonos:redstone_chip",
-            "minecraft:flint_and_steel",
-        ])
-        .processingTime(30);
-
-    // IRIS SECTION
-
-    // ochrum automation
-    event.recipes
-        .createMixing("create:ochrum", [
-            "compressor:compressed_sand",
-            "minecraft:cobbled_deepslate",
-            { fluid: "minecraft:lava", amount: 4500 },
-        ])
-        .processingTime(1500);
     // crimsite automation
 
     lizardPostLaskyChange(event);

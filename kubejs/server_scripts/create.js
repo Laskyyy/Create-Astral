@@ -1061,7 +1061,488 @@ function fillingRecipes(event) {
         ]);
     });
 }
-function mixingRecipes(event) {}
+function mixingRecipes(event) {
+    // Biofuel rework
+    event.remove({ output: "techreborn:plantball" });
+    event.remove({
+        type: "minecraft:crafting_shaped",
+        output: "techreborn:plantball",
+    });
+
+    event.remove({
+        type: "minecraft:crafting_shapeless",
+        output: "techreborn:plantball",
+    });
+    event.remove({ output: "dustrial_decor:cast_iron_billet" });
+
+    [
+        {
+            output: "2x minecraft:blaze_powder",
+            input: ["minecraft:blaze_rod"],
+            heat: "",
+            time: null,
+        },
+        {
+            output: "techreborn:plantball",
+            input: [
+                "9x #minecraft:leaves",
+                {
+                    fluid: "createaddition:seed_oil",
+                    amount: FULL_BUCKET_AMMOUNT / 2,
+                },
+            ],
+            heat: "heated",
+            time: 1000,
+        },
+        {
+            output: "techreborn:plantball",
+            input: [
+                "9x #c:grass_variants",
+                {
+                    fluid: "createaddition:seed_oil",
+                    amount: FULL_BUCKET_AMMOUNT / 2,
+                },
+            ],
+            heat: "heated",
+            time: 1000,
+        },
+        {
+            output: "3x tconstruct:nether_grout",
+            input: [
+                "minecraft:magma_cream",
+                "minecraft:soul_sand",
+                "create:scoria",
+                "#c:dusts/obsidian",
+                "#c:dusts/obsidian",
+                "#c:dusts/obsidian",
+            ],
+            heat: "heated",
+            time: 700,
+        },
+        {
+            output: Fluid.of(
+                "kubejs:blast-resistant_cement",
+                FULL_BUCKET_AMMOUNT
+            ),
+            input: [
+                "#c:concrete_powder",
+                "2x createastral:lime",
+                "3x techreborn:steel_dust",
+                { fluid: "minecraft:water", amount: FULL_BUCKET_AMMOUNT },
+            ],
+            heat: "heated",
+            time: 1000,
+        },
+        {
+            output: "3x dustrial_decor:cast_iron_billet",
+            input: [
+                "minecraft:iron_ingot",
+                "2x create:andesite_alloy",
+                "minecraft:coal",
+            ],
+            heat: "",
+            time: null,
+        },
+        {
+            output: "techreborn:rubber",
+            input: ["techreborn:sap"],
+            heat: "",
+            time: 50,
+        },
+        {
+            output: "4x techreborn:machine_parts",
+            input: [
+                "ad_astra:compressed_steel",
+                "techreborn:carbon_mesh",
+                "8x #c:wires",
+            ],
+            heat: "superheated",
+            time: 400,
+        },
+        {
+            output: "1x techreborn:carbon_mesh",
+            input: ["2x techreborn:carbon_fiber"],
+            heat: "superheated",
+            time: 400,
+        },
+        {
+            output: "techreborn:nuke",
+            input: [
+                "techreborn:industrial_machine_frame",
+                { fluid: "kubejs:plasma_fluid", amount: 81000 },
+                "3x createastral:subatomic_ingot",
+                "create:linked_controller",
+            ],
+            heat: "superheated",
+            time: 500,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_brass", 18000),
+            input: ["minecraft:copper_ingot", "create:zinc_ingot"],
+            heat: "heated",
+            time: 300,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_brass", 1800),
+            input: [
+                { fluid: "tconstruct:molten_copper", amount: 900 },
+                { fluid: "tconstruct:molten_zinc", amount: 900 },
+            ],
+            heat: "heated",
+            time: 5,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_amethyst_bronze", 9000),
+            input: ["createastral:bronze_ingot", "minecraft:amethyst_shard"],
+            heat: "heated",
+            time: 300,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_amethyst_bronze", 900),
+            input: [
+                { fluid: "tconstruct:molten_bronze", amount: 900 },
+                { fluid: "tconstruct:molten_amethyst", amount: 900 },
+            ],
+            heat: "heated",
+            time: 100,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_bronze", 1800),
+            input: [
+                { fluid: "tconstruct:molten_tin", amount: 900 },
+                { fluid: "tconstruct:molten_copper", amount: 900 },
+            ],
+            heat: "",
+            time: 100,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_rose_gold", 9000),
+            input: ["minecraft:copper_ingot", "minecraft:gold_ingot"],
+            heat: "",
+            time: 1500,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_bronze", 18000),
+            input: ["minecraft:copper_ingot", "techreborn:tin_ingot"],
+            heat: "",
+            time: 300,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_rose_gold", 900),
+            input: [
+                { fluid: "tconstruct:molten_copper", amount: 900 },
+                { fluid: "tconstruct:molten_gold", amount: 900 },
+            ],
+            heat: "",
+            time: 10,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_electrum", 900),
+            input: [
+                { fluid: "tconstruct:molten_silver", amount: 900 },
+                { fluid: "tconstruct:molten_gold", amount: 900 },
+            ],
+            heat: "heated",
+            time: 100,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_steel", 9000),
+            input: ["techreborn:steel_dust"],
+            heat: "superheated",
+            time: 100,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_slimesteel", 9000),
+            input: [
+                "minecraft:iron_ingot",
+                "tconstruct:sky_slime_ball",
+                "#tconstruct:seared_blocks",
+            ],
+            heat: "heated",
+            time: 300,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_slimesteel", 9000),
+            input: [
+                { fluid: "tconstruct:molten_iron", amount: 9000 },
+                { fluid: "tconstruct:sky_slime", amount: 20250 },
+                "#tconstruct:seared_blocks",
+            ],
+            heat: "heated",
+            time: 40,
+        },
+        {
+            output: "3x create:blaze_cake_base",
+            input: [
+                "tconstruct:ender_slime_ball",
+                "tconstruct:ichor_slime_ball",
+                "ad_astra:cheese",
+            ],
+            heat: "heated",
+            time: 300,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_pig_iron", 9000),
+            input: [
+                "minecraft:porkchop",
+                "minecraft:iron_ingot",
+                "minecraft:gold_ingot",
+            ],
+            heat: "heated",
+            time: 300,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_pig_iron", 9000),
+            input: [
+                "minecraft:porkchop",
+                { fluid: "tconstruct:molten_iron", amount: 9000 },
+                { fluid: "tconstruct:molten_gold", amount: 9000 },
+            ],
+            heat: "heated",
+            time: 250,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_queens_slime", 1800),
+            input: [
+                { fluid: "tconstruct:molten_cobalt", amount: 900 },
+                { fluid: "tconstruct:molten_slimesteel", amount: 1800 },
+            ],
+            heat: "heated",
+            time: 5,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_manyullyn", 9000),
+            input: [
+                { fluid: "tconstruct:molten_cobalt", amount: 18000 },
+                "1x minecraft:netherite_scrap",
+                { fluid: "kubejs:molten_desh", amount: 9000 },
+            ],
+            heat: "heated",
+            time: 1000,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_hepatizon", 1800),
+            input: [
+                { fluid: "tconstruct:molten_cobalt", amount: 900 },
+                { fluid: "tconstruct:molten_lead", amount: 1800 },
+            ],
+            heat: "heated",
+            time: 5,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_debris", 20250),
+            input: ["minecraft:ancient_debris"],
+            heat: "superheated",
+            time: 500,
+        },
+        {
+            output: Fluid.of("kubejs:hellfire", 81),
+            input: [{ fluid: "minecraft:lava", amount: 9000 }],
+            heat: "superheated",
+            time: 100,
+        },
+        {
+            output: "create:chromatic_compound",
+            input: [
+                "5x techreborn:uu_matter",
+                { fluid: "kubejs:shimmer", amount: 81000 },
+            ],
+            heat: "superheated",
+            time: 2500,
+        },
+        {
+            output: Fluid.of("kubejs:compound_mixture", 9000),
+            input: [
+                "minecraft:andesite",
+                "techreborn:tin_nugget",
+                "minecraft:clay_ball",
+            ],
+        },
+        {
+            output: Fluid.of("kubejs:compound_mixture", 9000),
+            input: [
+                "minecraft:andesite",
+                "create:zinc_nugget",
+                "minecraft:clay_ball",
+            ],
+        },
+        {
+            output: Fluid.of("kubejs:compound_mixture", 9000),
+            input: [
+                "minecraft:andesite",
+                "minecraft:iron_nugget",
+                "minecraft:clay_ball",
+            ],
+        },
+        {
+            output: "8x tconstruct:grout",
+            input: [
+                "create:andesite_alloy",
+                "create:zinc_ingot",
+                "8x minecraft:gravel",
+            ],
+        },
+        {
+            output: "8x tconstruct:grout",
+            input: [
+                "create:andesite_alloy",
+                "create:zinc_ingot",
+                "8x minecraft:gravel",
+            ],
+            heat: "",
+            time: 0,
+        },
+        {
+            output: "tconstruct:seared_bricks",
+            input: ["4x tconstruct:seared_brick", "#c:slimeballs"],
+            heat: "",
+            time: 0,
+        },
+        {
+            output: "tconstruct:seared_bricks",
+            input: ["4x tconstruct:seared_brick", "techreborn:sap"],
+            heat: "",
+            time: 0,
+        },
+        {
+            output: "techreborn:steel_dust",
+            input: ["6x minecraft:iron_ingot", "4x techreborn:coal_dust"],
+            heat: "heated",
+            time: 400,
+        },
+        {
+            output: Fluid.of("kubejs:shimmer", 40500),
+            input: ["5x minecraft:amethyst_shard", "2x minecraft:glow_ink_sac"],
+            heat: "",
+            time: 400,
+        },
+        {
+            output: "minecraft:glow_ink_sac",
+            input: ["minecraft:ink_sac", "2x minecraft:glowstone_dust"],
+            heat: "",
+            time: 50,
+        },
+        {
+            output: "minecraft:piglin_banner_pattern",
+            input: [
+                "1x minecraft:paper",
+                Item.of(
+                    "tconstruct:large_plate",
+                    '{Material:"tconstruct:pig_iron"}'
+                ),
+            ],
+            heat: "",
+            time: 100,
+        },
+        {
+            output: "minecraft:dolphin_spawn_egg",
+            input: [
+                { fluid: "kubejs:shimmer", amount: 40500 },
+                "createastral:orcane",
+            ],
+            heat: "",
+            time: 500,
+        },
+        {
+            output: "adoptafloppa:kitney_item",
+            input: [
+                { fluid: "kubejs:shimmer", amount: 40500 },
+                "3x minecraft:ghast_tear",
+            ],
+            heat: "",
+            time: 500,
+        },
+        {
+            output: "tconstruct:ichor_slime_ball",
+            input: [
+                { fluid: "kubejs:shimmer", amount: 9000 },
+                "4x tconstruct:sky_slime_ball",
+            ],
+            heat: "heated",
+            time: 30,
+        },
+        {
+            output: "tconstruct:ender_slime_ball",
+            input: [
+                { fluid: "kubejs:shimmer", amount: 9000 },
+                "2x tconstruct:ichor_slime_ball",
+            ],
+            heat: "heated",
+            time: 30,
+        },
+        {
+            output: "doodads:portable_nether",
+            input: [
+                { fluid: "kubejs:shimmer", amount: 81000 },
+                "minecraft:lodestone",
+            ],
+            heat: "heated",
+            time: 500,
+        },
+        {
+            output: "32x doodads:stone_brick_road",
+            input: [
+                { fluid: "kubejs:shimmer", amount: 40500 },
+                "32x minecraft:stone_bricks",
+            ],
+            heat: "",
+            time: 1000,
+        },
+        {
+            output: "32x doodads:brick_road",
+            input: [
+                { fluid: "kubejs:shimmer", amount: 40500 },
+                "32x minecraft:bricks",
+            ],
+            heat: "",
+            time: 1000,
+        },
+        {
+            output: "doodads:asphalt",
+            input: [
+                { fluid: "kubejs:andesite_compound", amount: 3000 },
+                "#c:concrete_powder",
+            ],
+            heat: "",
+            time: 1000,
+        },
+        {
+            output: { fluid: "create:honey", amount: 40500 },
+            input: [
+                { fluid: "minecraft:water", amount: 40500 },
+                { fluid: "kubejs:shimmer", amount: 40500 },
+            ],
+            heat: "",
+            time: 3000,
+        },
+        {
+            output: "createastral:astral_conduit",
+            input: [
+                { fluid: "kubejs:shimmer", amount: 81000 },
+                "minecraft:diamond_block",
+                "phonos:redstone_chip",
+                "minecraft:flint_and_steel",
+            ],
+            heat: "",
+            time: 30,
+        },
+        {
+            output: "create:ochrum",
+            input: [
+                "compressor:compressed_sand",
+                "minecraft:cobbled_deepslate",
+                { fluid: "minecraft:lava", amount: 4500 },
+            ],
+            heat: "heated",
+            time: 1500,
+        },
+    ].forEach((recipe) => {
+        event.recipes
+            .createMixing(recipe.output, recipe.input)
+            .heatRequirement(recipe.heat ?? "")
+            .processingTime(recipe.time ?? 100);
+    });
+}
 function cuttingRecipes(event) {}
 function hauntingRecipes(event) {}
 function splashingRecipes(event) {}

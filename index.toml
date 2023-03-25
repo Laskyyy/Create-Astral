@@ -16842,11 +16842,11 @@ hash = "058c91a44f9f4c079069775e15aea88454aee80420815cf5af51dedf01187d24"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
-hash = "35e8876dc7b01151d3a05e42ea32a2daadd697aad5b0378bb125951998d97ca7"
+hash = "91343c2da290cd5cdbe21e334d748d2491281499410130feae25f4f7f227b531"
 
 [[files]]
 file = "kubejs/server_scripts/server.js"
-hash = "ad1334488b398a0b572162a39a3d2fef931bf134ac9494d2fc3326bf2b8ee8f0"
+hash = "5f0efa1a8149cc33764f7f091f5d34485f38d77170c2402e1f3db8efbc32705d"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
