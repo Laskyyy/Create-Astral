@@ -660,12 +660,6 @@ function lizardGeologyAlchemyChanges(event) {
         "minecraft:dripstone_block"
     );
 
-    // More efficient pointed dripstone filling recipe
-    event.recipes.createFilling("3x minecraft:pointed_dripstone", [
-        "minecraft:calcite",
-        { fluid: "minecraft:water", amount: FULL_BUCKET_AMMOUNT / 2 },
-    ]);
-
     // Using the grinder on individual pointed dripstones give you the best yields
     // (1.33 for milling dripstone, ~2 per calcite for crushing dripstone, 3 per calcite if grinding pointed drip)
 
@@ -697,12 +691,6 @@ function lizardGeologyAlchemyChanges(event) {
     // Diorite, Granite, and Andesite crushing
 
     // Netherrack crushing rework
-
-    // Cheeky :)
-    event.recipes.createFilling("create:cinder_flour", [
-        "techreborn:netherrack_dust",
-        { fluid: "minecraft:water", amount: FULL_BUCKET_AMMOUNT / 4 },
-    ]);
 
     // Add Calcite recipe
     event.recipes.createCompacting("minecraft:calcite", [
@@ -2176,14 +2164,6 @@ onEvent("recipes", (event) => {
         ])
         .heated()
         .processingTime(300);
-    event.recipes.createFilling("create:blaze_cake", [
-        "create:blaze_cake_base",
-        { fluid: "tconstruct:blazing_blood", amount: 20250 },
-    ]);
-    event.recipes.createFilling("techreborn:lithium_ion_battery", [
-        "techreborn:red_cell_battery",
-        { fluid: "techreborn:lithium", amount: 81000 },
-    ]);
 
     event.recipes
         .createMixing(Fluid.of("tconstruct:molten_pig_iron", 9000), [
@@ -2614,11 +2594,6 @@ onEvent("recipes", (event) => {
         .processingTime(1500);
 
     // IRON TOOLS RECIPES / DIAMOND
-
-    event.recipes.createFilling("explorerscompass:explorerscompass", [
-        "minecraft:compass",
-        { fluid: "tconstruct:molten_iron", amount: 36000 },
-    ]);
 
     ///// THIS SHIT IS SO INNEFICIENT BUT IT WAS THE FIRST THING I CODED SO IM JUST GOING TO LEAVE IT /////
 
@@ -3771,14 +3746,6 @@ onEvent("recipes", (event) => {
         ])
         .processingTime(1000);
 
-    event.recipes.createFilling("doodads:yellow_brick_road", [
-        "doodads:brick_road",
-        { fluid: "tconstruct:molten_gold", amount: 4500 },
-    ]);
-    event.recipes.createFilling("doodads:yellow_brick_road", [
-        "doodads:stone_brick_road",
-        { fluid: "tconstruct:molten_gold", amount: 2250 },
-    ]);
     event.recipes
         .createMixing({ fluid: "create:honey", amount: 40500 }, [
             { fluid: "minecraft:water", amount: 40500 },
@@ -3808,12 +3775,6 @@ onEvent("recipes", (event) => {
         ])
         .processingTime(1500);
     // crimsite automation
-
-    // get crimson fungi without visiting piglin village
-    event.recipes.createFilling("minecraft:crimson_fungus", [
-        "minecraft:warped_fungus",
-        { fluid: "minecraft:lava", amount: 2250 },
-    ]);
 
     lizardPostLaskyChange(event);
 });

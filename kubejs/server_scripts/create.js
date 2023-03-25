@@ -1,3 +1,6 @@
+var FULL_BUCKET_AMMOUNT = 81000;
+var INGOT_FLUID_AMMOUNT = 9000;
+
 onEvent("recipes", (event) => {
     crushingRecipes(event);
     millingRecipes(event);
@@ -996,10 +999,67 @@ function sequencedAssemblyRecipes(event) {
 }
 
 function fillingRecipes(event) {
-    event.recipes.createFilling("create:electron_tube", [
-        "create:polished_rose_quartz",
-        { fluid: "tconstruct:molten_rose_gold", amount: 9000 },
-    ]);
+    [
+        {
+            input: "create:polished_rose_quartz",
+            output: "create:electron_tube",
+            fluid: "tconstruct:molten_rose_gold",
+            amount: 9000,
+        },
+        {
+            input: "minecraft:calcite",
+            output: "3x minecraft:pointed_dripstone",
+            fluid: "minecraft:water",
+            amount: FULL_BUCKET_AMMOUNT / 2,
+        },
+        {
+            input: "techreborn:netherrack_dust",
+            output: "create:cinder_flour",
+            fluid: "minecraft:water",
+            amount: FULL_BUCKET_AMMOUNT / 4,
+        },
+        {
+            input: "create:blaze_cake_base",
+            output: "create:blaze_cake",
+            fluid: "tconstruct:blazing_blood",
+            amount: 20250,
+        },
+        {
+            input: "techreborn:red_cell_battery",
+            output: "techreborn:lithium_ion_battery",
+            fluid: "techreborn:lithium",
+            amount: 81000,
+        },
+        {
+            input: "minecraft:compass",
+            output: "explorerscompass:explorerscompass",
+            fluid: "tconstruct:molten_iron",
+            amount: 36000,
+        },
+        {
+            input: "doodads:brick_road",
+            output: "doodads:yellow_brick_road",
+            fluid: "tconstruct:molten_gold",
+            amount: 4500,
+        },
+        {
+            input: "doodads:stone_brick_road",
+            output: "doodads:yellow_brick_road",
+            fluid: "tconstruct:molten_gold",
+            amount: 2250,
+        },
+        {
+            input: "minecraft:warped_fungus",
+            output: "minecraft:crimson_fungus",
+            fluid: "minecraft:lava",
+            amount: 2250,
+        },
+    ].forEach((recipe) => {
+        event.recipes.createFilling(recipe.output, [
+            recipe.input,
+            { fluid: recipe.fluid, amount: recipe.amount },
+        ]);
+    });
 }
 function mixingRecipes(event) {}
 function cuttingRecipes(event) {}
