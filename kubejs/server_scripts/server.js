@@ -3151,22 +3151,6 @@ event.custom({
   "processingTime": 500
 })
 
-/// end sifter
-
-
-
-  event.recipes.createCrushing([
-    Item.of('minecraft:raw_iron').withChance(0.002),
-    Item.of('minecraft:raw_gold').withChance(0.001),
-    Item.of('create:raw_zinc').withChance(0.001),
-    Item.of('minecraft:raw_copper').withChance(0.002),
-    Item.of('minecraft:coal').withChance(0.004),
-    Item.of('techreborn:raw_tin').withChance(0.002),
-    Item.of('minecraft:redstone').withChance(0.005),
-    Item.of('minecraft:lapis_lazuli').withChance(0.002),
-  ], 'minecraft:cobbled_deepslate')
-
-
 ////SPLASHING AND HAUNTING RECIPES
 
 
