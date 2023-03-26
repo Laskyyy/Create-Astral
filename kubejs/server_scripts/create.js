@@ -1969,7 +1969,7 @@ function mechanicalCraftingRecipes(event) {
     });
 }
 
-function compactingRecipes(event) {
+function pressingRecipes(event) {
     // [Input string, Output string]
     [
         ["techreborn:silver_ingot", "techreborn:silver_plate"],
@@ -1982,4 +1982,102 @@ function compactingRecipes(event) {
         event.recipes.createPressing(recipe[1], recipe[0]);
     });
 }
-function pressingRecipes(event) {}
+
+function compactingRecipes(event) {
+    event.remove({ mod: "create", output: "minecraft:andesite" });
+    [
+        {
+            output: "minecraft:calcite",
+            inputs: [
+                "3x minecraft:bone_meal",
+                "minecraft:gravel",
+                { fluid: "minecraft:lava", amount: FULL_BUCKET_AMMOUNT / 10 },
+            ],
+        },
+        {
+            output: "create:limestone",
+            inputs: [
+                "2x minecraft:pointed_dripstone",
+                "2x ad_astra:moon_sand",
+                "2x minecraft:flint",
+                { fluid: "minecraft:lava", amount: FULL_BUCKET_AMMOUNT / 10 },
+            ],
+        },
+        {
+            output: "minecraft:lapis_lazuli",
+            inputs: [
+                "3x techreborn:lazurite_dust",
+                "2x minecraft:gunpowder",
+                "2x minecraft:iron_nugget",
+                { fluid: "minecraft:lava", amount: FULL_BUCKET_AMMOUNT / 30 },
+            ],
+        },
+        {
+            output: "minecraft:granite",
+            inputs: [
+                "minecraft:diorite",
+                "minecraft:flint",
+                "techreborn:netherrack_dust",
+                { fluid: "minecraft:lava", amount: FULL_BUCKET_AMMOUNT / 10 },
+            ],
+        },
+        {
+            output: "minecraft:cobbled_deepslate",
+            inputs: ["8x minecraft:flint", "minecraft:gravel"],
+        },
+    ].forEach((recipe) => {
+        event.recipes.createCompacting(recipe.output, recipe.inputs);
+    });
+
+    [
+        {
+            output: "minecraft:andesite",
+            inputs: [
+                "2x minecraft:flint",
+                "minecraft:gravel",
+                { fluid: "minecraft:lava", amount: FULL_BUCKET_AMMOUNT / 10 },
+            ],
+        },
+        {
+            output: "ad_astra:iron_plate",
+            inputs: ["create:iron_sheet"],
+        },
+        {
+            output: "createastral:steel_helmet",
+            inputs: [
+                Item.of("createastral:sturdy_helmet").ignoreNBT(),
+                "6x techreborn:steel_dust",
+            ],
+        },
+        {
+            output: "createastral:steel_chestplate",
+            inputs: [
+                Item.of("createastral:sturdy_chestplate").ignoreNBT(),
+                "12x techreborn:steel_dust",
+            ],
+        },
+        {
+            output: "createastral:steel_leggings",
+            inputs: [
+                Item.of("createastral:sturdy_leggings").ignoreNBT(),
+                "8x techreborn:steel_dust",
+            ],
+        },
+        {
+            output: "createastral:steel_boots",
+            inputs: [
+                Item.of("createastral:sturdy_boots").ignoreNBT(),
+                "5x techreborn:steel_dust",
+            ],
+        },
+    ].forEach((recipe) => {
+        event.recipes.createCompacting(recipe.output, recipe.inputs).heated();
+    });
+
+    event.recipes
+        .createCompacting("createastral:olivine_sheet", [
+            "16x techreborn:olivine_dust",
+        ])
+        .superheated()
+        .processingTime(1500);
+}

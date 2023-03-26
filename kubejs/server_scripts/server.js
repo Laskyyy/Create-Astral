@@ -559,49 +559,9 @@ function lizardGeologyAlchemyChanges(event) {
         ],
     });
 
-    // Pre-crushing copper and tin generation (used to be copper and zinc)
-
-    // Diorite, Granite, and Andesite crushing
-
-    // Netherrack crushing rework
-
-    // Add Calcite recipe
-    event.recipes.createCompacting("minecraft:calcite", [
-        "3x minecraft:bone_meal",
-        "minecraft:gravel",
-        { fluid: "minecraft:lava", amount: FULL_BUCKET_AMMOUNT / 10 },
-    ]);
-
-    // Add limestone recipe
-    event.recipes.createCompacting("create:limestone", [
-        "2x minecraft:pointed_dripstone",
-        "2x ad_astra:moon_sand",
-        "2x minecraft:flint",
-        { fluid: "minecraft:lava", amount: FULL_BUCKET_AMMOUNT / 10 },
-    ]);
-
-    // Wash lime for silver
-
     // Remove Create's default crushing recipes for asurine and veridium (I thought we added them??)
     event.remove({ type: "create:crushing", input: "create:asurine" });
     event.remove({ type: "create:crushing", input: "create:veridium" });
-
-    // Lapis recipe
-    event.recipes.createCompacting("minecraft:lapis_lazuli", [
-        "3x techreborn:lazurite_dust",
-        "2x minecraft:gunpowder",
-        "2x minecraft:iron_nugget",
-        { fluid: "minecraft:lava", amount: FULL_BUCKET_AMMOUNT / 30 },
-    ]);
-
-    // New granite recipe that's more sustainable than shaping diorite with quartz
-    // Todo: lava press
-    event.recipes.createCompacting("minecraft:granite", [
-        "minecraft:diorite",
-        "minecraft:flint",
-        "techreborn:netherrack_dust",
-        { fluid: "minecraft:lava", amount: FULL_BUCKET_AMMOUNT / 10 },
-    ]);
 
     // Nerf vanilla granite recipe
     event.remove({ mod: "minecraft", output: "minecraft:granite" });
@@ -668,26 +628,10 @@ function lizardGeologyAlchemyChanges(event) {
         result: "minecraft:diorite",
         cooling_time: 80,
     });
-
-    // Deeplate flint garbage
-    event.recipes.createCompacting("minecraft:cobbled_deepslate", [
-        "8x minecraft:flint",
-        "minecraft:gravel",
-    ]);
 }
 
 // Increase yields in crushing ore
-function lizardCrushingOresYields(event) {
-    // Gate the regular andesite Create recipe behind blaze burners
-    event.remove({ mod: "create", output: "minecraft:andesite" });
-    event.recipes
-        .createCompacting("minecraft:andesite", [
-            "2x minecraft:flint",
-            "minecraft:gravel",
-            { fluid: "minecraft:lava", amount: FULL_BUCKET_AMMOUNT / 10 },
-        ])
-        .heated();
-}
+function lizardCrushingOresYields(event) {}
 
 // Some changes need to be made after all of Lasky's changes, lest their changes will override mine.
 function lizardPostLaskyChange(event) {
@@ -1953,15 +1897,6 @@ onEvent("recipes", (event) => {
     );
     event.shapeless(Item.of("dbe:track_end"), ["create:track"]);
 
-    ///PRESS PLATES WITH CREATE
-
-    event.recipes
-        .createCompacting("createastral:olivine_sheet", [
-            "16x techreborn:olivine_dust",
-        ])
-        .superheated()
-        .processingTime(1500);
-
     // IRON TOOLS RECIPES / DIAMOND
 
     ///// THIS SHIT IS SO INNEFICIENT BUT IT WAS THE FIRST THING I CODED SO IM JUST GOING TO LEAVE IT /////
@@ -2188,40 +2123,6 @@ onEvent("recipes", (event) => {
     event.stonecutting("ae2:inscriber", "techreborn:basic_machine_frame");
     event.stonecutting("tconstruct:gear_cast", "#c:plates/gold");
     event.stonecutting("tconstruct:coin_cast", "#c:plates/gold");
-
-    ///// SEQUENCED ASSEMBLY LINES /////
-
-    event.recipes
-        .createCompacting("ad_astra:iron_plate", ["create:iron_sheet"])
-        .heated();
-
-    event.recipes
-        .createCompacting("createastral:steel_helmet", [
-            Item.of("createastral:sturdy_helmet").ignoreNBT(),
-            "6x techreborn:steel_dust",
-        ])
-        .heated();
-
-    event.recipes
-        .createCompacting("createastral:steel_chestplate", [
-            Item.of("createastral:sturdy_chestplate").ignoreNBT(),
-            "12x techreborn:steel_dust",
-        ])
-        .heated();
-
-    event.recipes
-        .createCompacting("createastral:steel_leggings", [
-            Item.of("createastral:sturdy_leggings").ignoreNBT(),
-            "8x techreborn:steel_dust",
-        ])
-        .heated();
-
-    event.recipes
-        .createCompacting("createastral:steel_boots", [
-            Item.of("createastral:sturdy_boots").ignoreNBT(),
-            "5x techreborn:steel_dust",
-        ])
-        .heated();
 
     ////////////////  EARLY GAME ANDESITE / GROUT RELATED STUFF
 
