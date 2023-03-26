@@ -407,14 +407,6 @@ function lizardCH3Concrete(event) {
     );
 
     // Launch pad recipe
-    event.recipes.createMechanicalCrafting(
-        "ad_astra:launch_pad",
-        ["BAAAB", "ABABA", "AABAA", "ABABA", "BAAAB"],
-        {
-            A: "createastral:blast-resistant_concrete",
-            B: "create:sturdy_sheet",
-        }
-    );
 }
 
 // Todo (sometime but this is the lowest priority): various tech reborn "gem" ores should give gems when crushed
@@ -1684,41 +1676,6 @@ onEvent("recipes", (event) => {
         "create:copper_casing"
     );
 
-    event.recipes.createMechanicalCrafting(
-        "techreborn:data_storage_chip",
-        ["A", "C", "B"],
-        {
-            A: "createastral:olivine_sheet",
-            B: "techreborn:iridium_alloy_plate",
-            C: "techreborn:industrial_circuit",
-        }
-    );
-
-    event.recipes.createMechanicalCrafting(
-        "immersive_aircraft:boiler",
-        ["AB", "CB", "CB"],
-        {
-            A: "techreborn:machine_parts",
-            B: "create:copper_sheet",
-            C: "techreborn:rubber",
-        }
-    );
-
-    event.remove({ output: "minecraft:elytra" });
-    event.recipes.createMechanicalCrafting(
-        "minecraft:elytra",
-        ["  A  ", " B B ", " C C ", "C   C", "DE ED", "F G F"],
-        {
-            A: "createastral:navigation_mechanism",
-            B: "create:brass_sheet",
-            C: "minecraft:phantom_membrane",
-            D: "create:large_cogwheel",
-            E: "ad_astra:compressed_ostrum",
-            F: "ad_astra:ostrum_engine",
-            G: "computercraft:computer_advanced",
-        }
-    );
-
     event.custom({
         type: "createaddition:rolling",
         input: {
@@ -1783,20 +1740,6 @@ onEvent("recipes", (event) => {
         cooling_time: 100,
     });
     /////// TECH REBORN ACTUAL RECIPES //////
-
-    event.recipes.createMechanicalCrafting(
-        "techreborn:fusion_control_computer",
-        ["DBCBD", "BDCDB", "CCECC", "BDADB", "DABAD"],
-        {
-            A: "techreborn:industrial_circuit",
-            B: "techreborn:advanced_machine_casing",
-            C: "techreborn:fusion_coil",
-            D: "createaddition:tesla_coil",
-            E: "techreborn:digital_display",
-
-            /// /DOODADS MOD RECIPE CHANGES
-        }
-    );
 
     event.replaceInput(
         { mod: "phonos" },
@@ -1868,16 +1811,7 @@ onEvent("recipes", (event) => {
         B: "create:analog_lever",
         C: "minecraft:copper_ingot",
     });
-    event.recipes.createMechanicalCrafting(
-        "minecraft:crossbow",
-        [" CCA ", "AABDB"],
-        {
-            A: "create:iron_sheet",
-            B: "#minecraft:logs",
-            C: "minecraft:gunpowder",
-            D: "create:precision_mechanism",
-        }
-    );
+
     event.shaped("8x minecraft:arrow", [" B ", " B ", " A "], {
         A: "minecraft:gunpowder",
         B: "minecraft:copper_ingot",
@@ -1957,110 +1891,6 @@ onEvent("recipes", (event) => {
 
     /////  ASSORTED MECHANICAL CRAFTING  //////
 
-    event.recipes.createMechanicalCrafting(
-        "ad_astra:compressor",
-        ["ACCA", "B  D", "AEEA"],
-        {
-            A: "ad_astra:iron_plate",
-            B: "create:electron_tube",
-            C: "create:mechanical_press",
-            D: "create:precision_mechanism",
-            E: "techreborn:silver_block",
-        }
-    );
-
-    event.recipes.createMechanicalCrafting(
-        "ad_astra:nasa_workbench",
-        ["EFE", "CDC", "ABA"],
-        {
-            // A: minecraft:redstone_block,
-            A: "createaddition:capacitor",
-            B: "ad_astra:desh_block",
-            C: "ad_astra:compressed_desh",
-            D: "createastral:navigation_mechanism",
-            // F: 'create:integrated_circuit',
-            F: "create:display_board",
-            E: "create:mechanical_arm",
-        }
-    );
-
-    event.recipes.createMechanicalCrafting(
-        "ad_astra:solar_panel",
-        ["DDD", " B ", "ACA", "AEA"],
-        {
-            A: "ad_astra:compressed_desh",
-            B: "create:integrated_circuit",
-            C: "createastral:navigation_mechanism",
-            D: "minecraft:blue_stained_glass",
-            E: "techreborn:insulated_hv_cable",
-        }
-    );
-
-    event.recipes.createMechanicalCrafting(
-        "ad_astra:coal_generator",
-        ["ABCBA", "AAEAA"],
-        {
-            A: "ad_astra:compressed_steel",
-            B: "techreborn:lead_ingot",
-            C: "create:precision_mechanism",
-            E: "ad_astra:engine_fan",
-        }
-    );
-    event.recipes.createMechanicalCrafting(
-        "computercraft:computer_advanced",
-        ["AAA", "BCB", "ADA"],
-        {
-            A: "create:brass_sheet",
-            B: "create:electron_tube",
-            C: "create:display_board",
-            D: "create:precision_mechanism",
-        }
-    );
-    event.recipes.createMechanicalCrafting(
-        "computercraft:pocket_computer_advanced",
-        [" E ", "AAA", "CBC", "ADA"],
-        {
-            A: "create:brass_sheet",
-            B: "create:electron_tube",
-            C: "create:display_board",
-            D: "create:precision_mechanism",
-            E: "create:redstone_link",
-        }
-    );
-    event.recipes.createMechanicalCrafting(
-        "computercraft:turtle_advanced",
-        ["ADA", "ABA", " C "],
-        {
-            A: "create:brass_sheet",
-            B: "computercraft:turtle_normal",
-            C: "ad_astra:steel_block",
-            D: "create:precision_mechanism",
-        }
-    );
-
-    event.recipes.createMechanicalCrafting(
-        "polaroidcamera:camera",
-        ["AAA", "CBC", "CDC"],
-        {
-            A: "create:brass_sheet",
-            B: "create:electron_tube",
-            C: "techreborn:tin_ingot",
-            D: "create:precision_mechanism",
-        }
-    );
-
-    event.recipes.createMechanicalCrafting(
-        "ad_astra:fuel_refinery",
-        ["BDCDB", "BAEAB", "BBEBB"],
-        {
-            A: "create:attribute_filter",
-            B: "ad_astra:compressed_steel",
-            C: "create:mechanical_mixer",
-            D: "create:precision_mechanism",
-            E: "create:fluid_tank",
-        }
-    );
-
     event.shaped("ad_astra:oxygen_loader", ["BAB", "DED", "BCB"], {
         A: "ad_astra:oxygen_tank",
         B: "#c:iron_plates",
@@ -2068,87 +1898,6 @@ onEvent("recipes", (event) => {
         D: "create:smart_fluid_pipe",
         E: "create:fluid_tank",
     });
-
-    event.recipes.createMechanicalCrafting(
-        "ad_astra:energizer",
-        [" E ", "ADA", "ACA", "BAB"],
-        {
-            A: "ad_astra:compressed_ostrum",
-            B: "ad_astra:ostrum_block",
-            C: "tconstruct:cobalt_block",
-            D: "createastral:navigation_mechanism",
-            E: "createaddition:accumulator",
-        }
-    );
-
-    event.recipes.createMechanicalCrafting(
-        "ad_astra:jet_suit",
-        ["  F  ", "AAGAA", " BEB ", " CDC "],
-        {
-            A: "ad_astra:compressed_calorite",
-            B: "ad_astra:calorite_tank",
-            C: "ad_astra:calorite_block",
-            D: "ad_astra:calorite_engine",
-            E: Item.of("ad_astra:netherite_space_suit").ignoreNBT(),
-            F: "createastral:subatomic_ingot",
-            G: "createastral:navigation_mechanism",
-        }
-    );
-    event.recipes.createMechanicalCrafting(
-        "ad_astra:jet_suit_helmet",
-        [" F ", "AEA", "AGA"],
-        {
-            A: "ad_astra:compressed_calorite",
-            E: Item.of("ad_astra:netherite_space_helmet").ignoreNBT(),
-            F: "create:integrated_circuit",
-            G: "createastral:subatomic_ingot",
-        }
-    );
-    event.recipes.createMechanicalCrafting(
-        "ad_astra:jet_suit_pants",
-        ["CEC", "AFA", "A A", "A A"],
-        {
-            A: "ad_astra:compressed_calorite",
-            C: "ad_astra:calorite_block",
-            E: Item.of("ad_astra:netherite_space_pants").ignoreNBT(),
-            F: "createastral:subatomic_ingot",
-        }
-    );
-    event.recipes.createMechanicalCrafting(
-        "ad_astra:jet_suit_boots",
-        ["FEF", "A A", "C C"],
-        {
-            A: "ad_astra:compressed_calorite",
-            C: "ad_astra:calorite_block",
-            E: Item.of("ad_astra:netherite_space_boots").ignoreNBT(),
-            F: "dustrial_decor:padded_block",
-        }
-    );
-
-    // event.recipes.createMechanicalCrafting('ad_astra:launch_pad', [
-    //   'CCCCCC',
-    //   'CABABC',
-    //   'CBABAC',
-    //   'CABABC',
-    //   'CBABAC',
-    //   'CCCCCC',
-
-    // ], {
-    //   A: 'techreborn:silver_plate',
-    //   B: 'ad_astra:iron_plate',
-    //   C: 'create:sturdy_sheet'
-
-    // })
-
-    event.recipes.createMechanicalCrafting(
-        "2x techreborn:fusion_coil",
-        ["CCCCC", "CBBBC", "CBDBC", "CBBBC", "CCCCC"],
-        {
-            B: "techreborn:insulated_hv_cable",
-            C: "create:sturdy_sheet",
-            D: "techreborn:advanced_machine_casing",
-        }
-    );
 
     ///COMPUTERCRAFT FIXES
 
@@ -2370,67 +2119,6 @@ onEvent("recipes", (event) => {
 
     //DOODADS RECIPES
 
-    event.recipes.createMechanicalCrafting(
-        "doodads:slimey_shoes",
-        [" D ", "EFE", "ABA", "CGC"],
-        {
-            A: "ad_astra:compressed_steel",
-            B: "create:sticker",
-            C: "minecraft:slime_block",
-            D: "createastral:navigation_mechanism",
-            E: "tconstruct:slimesteel_block",
-            F: "dustrial_decor:padded_block",
-            G: "tconstruct:queens_slime_block",
-        }
-    );
-
-    event.recipes.createMechanicalCrafting(
-        "doodads:ender_goggles",
-        [" AAA ", "CBABC"],
-        {
-            A: "createdeco:cast_iron_sheet",
-            B: "minecraft:ender_eye",
-            C: "minecraft:string",
-        }
-    );
-
-    event.recipes.createMechanicalCrafting(
-        "doodads:midnights_eye",
-        ["DCCCD", "CBCAC", "DCCCD"],
-        {
-            A: "create:refined_radiance",
-            B: "create:shadow_steel",
-            C: "minecraft:glowstone",
-            D: "create:powdered_obsidian",
-        }
-    );
-
-    event.recipes.createMechanicalCrafting(
-        "doodads:speed_boots",
-        [" ADA ", " AEAC", "BBBB "],
-        {
-            A: "ad_astra:compressed_calorite",
-            B: "create:sturdy_sheet",
-            C: "ad_astra:steel_engine",
-            D: "createastral:navigation_mechanism",
-            E: "dustrial_decor:padded_block",
-
-            //AUTOMOBILITY RECIPE CHANGES
-        }
-    );
-    event.recipes.createMechanicalCrafting(
-        "automobility:auto_mechanic_table",
-        ["  D  ", "CAEAC", " BBB "],
-        {
-            A: "create:brass_ingot",
-            B: "create:railway_casing",
-            C: "create:brass_ingot",
-            D: "create:crafting_blueprint",
-            E: "create:brass_block",
-
-            /// /DOODADS MOD RECIPE CHANGES
-        }
-    );
     event.shaped("8x doodads:platform", [" A ", "BBB", " A "], {
         A: "create:andesite_alloy",
         B: "#minecraft:planks",
