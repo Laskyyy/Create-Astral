@@ -960,7 +960,7 @@ function lizardCrushingOresYields(event) {
   ], 'techreborn:raw_lead');
   event.recipes.createCrushing([
     'createastral:crushed_desh_ore',
-    Item.of('create:crushed_desh_ore').withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
+    Item.of('createastral:crushed_desh_ore').withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
     Item.of('techreborn:silver_nugget').withChance(.2),
     Item.of('create:experience_nugget').withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
   ], 'ad_astra:raw_desh');
@@ -979,7 +979,7 @@ function lizardCrushingOresYields(event) {
     'createastral:crushed_yttrium_ore',
     Item.of('createastral:crushed_yttrium_ore').withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
     Item.of('create:experience_nugget').withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
-  ], 'yttr:gadolinite');
+  ], 'yttr:raw_gadolinite');
   const VANILLA_ORES_AND_ZINC = ['iron', 'gold', 'copper', 'zinc']; 
   for (let ore of VANILLA_ORES_AND_ZINC) {
     let raw_ore = ore != 'zinc'? 'minecraft:raw_' + ore: 'create:raw_zinc';
@@ -1522,6 +1522,48 @@ metal.forEach(metal => {
     ]).transitionalItem('ae2:fluix_dust').loops(3) 
 
 
+    event.recipes.createSequencedAssembly([ // begin
+    'minecraft:paper', // output
+    ], 'createastral:separation_agent', [ // input
+    event.recipes.createDeploying('minecraft:paper', ['techreborn:charcoal_dust', 'techreborn:charcoal_dust']), 
+    event.recipes.createDeploying('minecraft:paper', ['techreborn:obsidian_dust', 'techreborn:obsidian_dust']), 
+    event.recipes.createDeploying('minecraft:paper', ['techreborn:sulfur_dust', 'techreborn:sulfur_dust']), 
+    ]).transitionalItem('minecraft:paper').loops(3) 
+
+    event.recipes.createMixing(Fluid.of('kubejs:molten_radiance', 81000), [
+      'minecraft:nether_star',
+      'minecraft:glowstone',
+      'minecraft:sea_lantern',
+      '3x createastral:separation_agent',
+      {fluid: 'kubejs:shimmer', amount: 81000}
+    ]).heated().processingTime(1000)
+
+    event.recipes.createMixing(Fluid.of('kubejs:molten_shadowsteel', 81000), [
+      'minecraft:ender_pearl',
+      '8x dbe:vanta_black',
+      'techreborn:lead_storage_block',
+      '3x createastral:separation_agent',
+      '9x create:chromatic_compound'
+    ]).heated().processingTime(1000)
+
+    event.recipes.createMixing( 'create:refined_radiance', [
+      'create:chromatic_compound',
+      {fluid: 'kubejs:molten_radiance', amount: 8100}
+    ]).superheated().processingTime(1000)
+
+    event.recipes.createCompacting('createastral:star_shard', [
+      {fluid: 'kubejs:molten_radiance', amount: 8100},
+    ]).heated().processingTime(500)
+
+    event.recipes.createSequencedAssembly([
+    'createastral:star_shard',t
+    ], 'createastral:pure_star_shard', [ 
+    event.recipes.createFilling('createastral:star_shard', ['createastral:star_shard', {fluid: 'tconstruct:ender_slime', amount: 22500}]), //fill 1/4 bucket lava
+    event.recipes.createPressing('createastral:star_shard', 'createastral:star_shard'), //yeah
+    event.recipes.createDeploying('createastral:star_shard', ['techreborn:uu_matter', 'techreborn:uu_matter']), 
+    event.recipes.createPressing('createastral:star_shard', 'createastral:star_shard'), //yeah
+    ]).transitionalItem('createastral:star_shard').loops(3) 
+
     event.custom({
       "type": "techreborn:centrifuge",
       "power": 8,
@@ -1529,7 +1571,7 @@ metal.forEach(metal => {
       "ingredients": [
         {
           "item": "farmersdelight:rich_soil",
-          "count": 1
+          "count": 2
         }
       ],
       "results": [

@@ -401,6 +401,9 @@ onEvent('item.registry', event => {
 ///// REGISTER NEW ITEMS HERE /////
 
 event.create('createastral:refining_agent'),
+event.create('createastral:separation_agent'),
+event.create('createastral:star_shard'),
+event.create('createastral:pure_star_shard').glow(true),
 event.create('createastral:crushed_yttrium_ore'),
 event.create('createastral:crushed_desh_ore'),
 event.create('createastral:crushed_ostrum_ore'),

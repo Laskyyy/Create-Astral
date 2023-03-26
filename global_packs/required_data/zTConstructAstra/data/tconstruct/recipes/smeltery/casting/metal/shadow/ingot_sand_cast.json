@@ -9,7 +9,7 @@
     }
   ],
   "cast": {
-    "tag": "tconstruct:casts/single_use/ingot"
+    "item": "ad_astra:steel_ingot"
   },
   "cast_consumed": true,
   "fluid": {
