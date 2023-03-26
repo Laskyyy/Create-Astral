@@ -9,9 +9,9 @@ onEvent("recipes", (event) => {
     fillingRecipes(event);
     mixingRecipes(event);
     cuttingRecipes(event);
-
     hauntingRecipes(event);
     splashingRecipes(event);
+
     deployerRecipes(event);
     mechanicalCraftingRecipes(event);
     compactingRecipes(event);
@@ -1559,8 +1559,104 @@ function cuttingRecipes(event) {
         event.recipes.createCutting(recipe[1], recipe[0]);
     });
 }
-function hauntingRecipes(event) {}
-function splashingRecipes(event) {}
+function hauntingRecipes(event) {
+    [
+        ["2x techreborn:charcoal_dust", "techreborn:coal_dust"],
+        ["2x minecraft:charcoal", "minecraft:coal"],
+        ["minecraft:sand", "minecraft:soul_sand"],
+        ["minecraft:soul_sand", "minecraft:netherrack"],
+    ].forEach((recipe) => {
+        event.recipes.createHaunting(recipe[1], recipe[0]);
+    });
+}
+function splashingRecipes(event) {
+    event.remove({ type: "create:splashing", input: "minecraft:soul_sand" });
+    // Remove vanilla red-sand so it can produce zinc instead, and the red sand haunting infinite loop
+    event.remove({ type: "create:splashing", input: "minecraft:red_sand" });
+    event.remove({ type: "create:haunting", input: "minecraft:red_sand" });
+    [
+        {
+            input: "createaddition:biomass",
+            outputs: [
+                ["createastral:pure_biomatter", 1],
+                ["minecraft:sugar", 0.2],
+                ["minecraft:bonemeal", 0.2],
+            ],
+        },
+        {
+            input: "createastral:lime",
+            outputs: [
+                ["techreborn:silver_nugget", 0.12],
+                ["techreborn:raw_silver", 0.02],
+            ],
+        },
+        {
+            input: "minecraft:soul_sand",
+            outputs: [
+                ["minecraft:gold_nugget", 0.12],
+                ["minecraft:quartz", 0.01],
+            ],
+        },
+        {
+            input: "minecraft:soul_soil",
+            outputs: [
+                ["minecraft:gold_nugget", 0.12],
+                ["minecraft:quartz", 0.01],
+            ],
+        },
+        {
+            input: "minecraft:red_sand",
+            outputs: [
+                ["create:zinc_nugget", 0.33],
+                ["minecraft:dead_bush", 0.12],
+            ],
+        },
+        {
+            input: "ad_astra:moon_sand",
+            outputs: [
+                ["ad_astra:desh_nugget", 0.12],
+                ["ad_astra:cheese", 0.04],
+            ],
+        },
+        {
+            input: "ad_astra:mars_sand",
+            outputs: [["techreborn:lead_nugget", 0.25]],
+        },
+        {
+            input: "ad_astra:raw_desh",
+            outputs: [
+                ["9x ad_astra:desh_nugget", 1],
+                ["minecraft:raw_iron", 1],
+            ],
+        },
+        {
+            input: "ad_astra:raw_ostrum",
+            outputs: [
+                ["9x ad_astra:ostrum_nugget", 1],
+                ["minecraft:raw_gold", 1],
+            ],
+        },
+        {
+            input: "ad_astra:raw_calorite",
+            outputs: [
+                ["9x ad_astra:calorite_nugget", 1],
+                ["minecraft:raw_copper", 1],
+            ],
+        },
+    ].forEach((recipe) => {
+        let cleanoutputs = [];
+        recipe.outputs.forEach((output) => {
+            console.info(output);
+            if (output[1] == 1) {
+                cleanoutputs.push(output[0]);
+            } else {
+                cleanoutputs.push(Item.of(output[0]).withChance(output[1]));
+            }
+        });
+        console.info(cleanoutputs);
+        event.recipes.createSplashing(cleanoutputs, recipe.input);
+    });
+}
 function deployerRecipes(event) {}
 function mechanicalCraftingRecipes(event) {}
 function compactingRecipes(event) {}

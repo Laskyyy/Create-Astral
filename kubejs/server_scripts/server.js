@@ -35,12 +35,6 @@ function lizardMiscChanges(event) {
         "techreborn:diamond_dust"
     );
 
-    // Create charcoal dust haunting recipe, parity with normal coal haunting.
-    event.recipes.createHaunting(
-        ["techreborn:coal_dust"],
-        "2x techreborn:charcoal_dust"
-    );
-
     // Implementing Andesite Alloy Block
     event.shaped("createastral:andesite_alloy_block", ["AAA", "AAA", "AAA"], {
         A: "create:andesite_alloy",
@@ -374,15 +368,6 @@ function lizardCH3Biofuel(event) {
             },
         ],
     });
-
-    event.recipes.createSplashing(
-        [
-            "createastral:pure_biomatter",
-            Item.of("minecraft:sugar").withChance(0.2),
-            Item.of("minecraft:bone_meal").withChance(0.2),
-        ],
-        "createaddition:biomass"
-    );
 }
 
 // This includes the launch pad recipe
@@ -604,13 +589,6 @@ function lizardGeologyAlchemyChanges(event) {
     ]);
 
     // Wash lime for silver
-    event.recipes.createSplashing(
-        [
-            Item.of("techreborn:silver_nugget").withChance(0.12),
-            Item.of("techreborn:raw_silver").withChance(0.02),
-        ],
-        "createastral:lime"
-    );
 
     // Remove Create's default crushing recipes for asurine and veridium (I thought we added them??)
     event.remove({ type: "create:crushing", input: "create:asurine" });
@@ -623,27 +601,6 @@ function lizardGeologyAlchemyChanges(event) {
         "2x minecraft:iron_nugget",
         { fluid: "minecraft:lava", amount: FULL_BUCKET_AMMOUNT / 30 },
     ]);
-
-    // Soul sand recipe
-    event.recipes.createHaunting("minecraft:soul_sand", "minecraft:sand");
-
-    // Replace Create's default washing recipes, encourage crushing diorite for quartz
-    // event.remove({type: 'create:fan_washing', input: 'minecraft:soul_soil'});
-    event.remove({ type: "create:splashing", input: "minecraft:soul_sand" });
-    event.recipes.createSplashing(
-        [
-            Item.of("minecraft:gold_nugget").withChance(0.12),
-            Item.of("minecraft:quartz").withChance(0.01),
-        ],
-        "minecraft:soul_sand"
-    );
-    event.recipes.createSplashing(
-        [
-            Item.of("minecraft:gold_nugget").withChance(0.12),
-            Item.of("minecraft:quartz").withChance(0.01),
-        ],
-        "minecraft:soul_soil"
-    );
 
     // New granite recipe that's more sustainable than shaping diorite with quartz
     // Todo: lava press
@@ -686,19 +643,6 @@ function lizardGeologyAlchemyChanges(event) {
         "4x minecraft:gravel",
     ]);
 
-    // Remove vanilla red-sand so it can produce zinc instead, and the red sand haunting infinite loop
-    event.remove({ type: "create:splashing", input: "minecraft:red_sand" });
-    event.remove({ type: "create:haunting", input: "minecraft:red_sand" });
-
-    // New red sand washing for zinc (used to be tin)
-    event.recipes.createSplashing(
-        [
-            Item.of("create:zinc_nugget").withChance(0.33),
-            Item.of("minecraft:dead_bush").withChance(0.12),
-        ],
-        "minecraft:red_sand"
-    );
-
     // Keep this, let people decide which path to produce diorite is
     // event.remove({type: 'create:compacting', output: 'minecraft:diorite' });
 
@@ -738,15 +682,6 @@ function lizardGeologyAlchemyChanges(event) {
         "8x minecraft:flint",
         "minecraft:gravel",
     ]);
-
-    // Desh from moon sand
-    event.recipes.createSplashing(
-        [
-            Item.of("ad_astra:desh_nugget").withChance(0.12),
-            Item.of("ad_astra:cheese").withChance(0.04),
-        ],
-        "ad_astra:moon_sand"
-    );
 }
 
 // Increase yields in crushing ore
@@ -2699,21 +2634,6 @@ onEvent("recipes", (event) => {
     );
     event.remove({ output: "techreborn:steel_plate" });
 
-    ///// ORE PROCESSING PATCHES /////
-    // event.recipes.createSplashing([
-    //   Item.of('techreborn:silver_nugget').withChance(0.25),
-    // ], 'ad_astra:moon_sand')
-
-    event.recipes.createSplashing(
-        [Item.of("techreborn:lead_nugget").withChance(0.25)],
-        "ad_astra:mars_sand"
-    );
-
-    event.recipes.createHaunting(
-        [Item.of("minecraft:netherrack").withChance(1)],
-        "minecraft:soul_sand"
-    );
-
     event.shaped("minecraft:experience_bottle", ["AAA", "ABA", "AAA"], {
         A: "create:experience_nugget",
         B: "minecraft:glass_bottle",
@@ -2969,24 +2889,6 @@ onEvent("recipes", (event) => {
     });
 
     /// end sifter
-
-    ////SPLASHING AND HAUNTING RECIPES
-
-    event.recipes.createSplashing(
-        ["9x ad_astra:desh_nugget", "minecraft:raw_iron"],
-        "ad_astra:raw_desh"
-    );
-    event.recipes.createSplashing(
-        ["9x ad_astra:ostrum_nugget", "minecraft:raw_gold"],
-        "ad_astra:raw_ostrum"
-    );
-    event.recipes.createSplashing(
-        ["9x ad_astra:calorite_nugget", "minecraft:raw_copper"],
-        "ad_astra:raw_calorite"
-    );
-    event.recipes.createHaunting(["minecraft:coal"], "2x minecraft:charcoal");
-
-    ////CREATE MIXING RECIPES
 
     //// ASSORTED CRAFTING BENCH RECIPES
 
