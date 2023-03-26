@@ -12,13 +12,13 @@ onEvent("recipes", (event) => {
     hauntingRecipes(event);
     splashingRecipes(event);
     mechanicalCraftingRecipes(event);
+    pressingRecipes(event);
 
     compactingRecipes(event);
-    pressingRecipes(event);
 });
 
 function millingRecipes(event) {
-    //Input, Output, Chance
+    //[Input, Output, Chance]
     [
         ["farmersdelight:straw", "minecraft:string", 1],
         ["minecraft:gravel", "minecraft:sand", 0.25],
@@ -51,7 +51,6 @@ function crushingRecipes(event) {
     //      ["Item", Chance],
     //      ["Item", Chance],
     //      ...
-    //   ]
     [
         {
             input: "minecraft:cobbled_deepslate",
@@ -358,6 +357,10 @@ function crushingRecipes(event) {
     event.remove({ output: "create:crushed_uranium_ore" });
 }
 function itemApplication(event) {
+    // Ingredients: Array of objects, may include:
+    // {item: "item name"}
+    // {tag: "tag name"} to allow any item of tag type
+    // Results: An array of one item object
     [
         {
             ingredients: [
@@ -421,6 +424,8 @@ function sequencedAssemblyRecipes(event) {
     casingSequence(event);
     piglinSequence(event);
 
+    //Honestly just good luck in figuring this out its too complex to
+    //document in an effective way
     let transitional_sturdy_sheet = "create:unprocessed_obsidian_sheet";
     event.recipes
         .createSequencedAssembly(
@@ -1080,7 +1085,10 @@ function mixingRecipes(event) {
         output: "techreborn:plantball",
     });
     event.remove({ output: "dustrial_decor:cast_iron_billet" });
-
+    // Output: string
+    // Input: Array of items, may include fluid objects or item strings
+    // Heat: "" = no heat, "heated", or "superheated"
+    // Time: Mixing time in ticks
     [
         {
             output: "2x minecraft:blaze_powder",
@@ -1550,6 +1558,7 @@ function mixingRecipes(event) {
     });
 }
 function cuttingRecipes(event) {
+    // [Input string, Output string]
     [
         ["techreborn:rubber_log", "techreborn:rubber_log_stripped"],
         ["techreborn:rubber_wood", "techreborn:stripped_rubber_wood"],
@@ -1559,6 +1568,7 @@ function cuttingRecipes(event) {
     });
 }
 function hauntingRecipes(event) {
+    // [Input string, Output string]
     [
         ["2x techreborn:charcoal_dust", "techreborn:coal_dust"],
         ["2x minecraft:charcoal", "minecraft:coal"],
@@ -1573,6 +1583,9 @@ function splashingRecipes(event) {
     // Remove vanilla red-sand so it can produce zinc instead, and the red sand haunting infinite loop
     event.remove({ type: "create:splashing", input: "minecraft:red_sand" });
     event.remove({ type: "create:haunting", input: "minecraft:red_sand" });
+    //Input: String
+    //Outputs: Array of outputs, which is each an array.
+    //    [Item string, float from 0.0 - 1.0 deciding chance]
     [
         {
             input: "createaddition:biomass",
@@ -1656,6 +1669,9 @@ function splashingRecipes(event) {
 }
 function mechanicalCraftingRecipes(event) {
     event.remove({ output: "minecraft:elytra" });
+    // Output: String
+    // Shape: Array of rows of inputs based on letters assigned
+    // Inputs: Object with letters assigned to input items, to be used in the shape
     [
         {
             output: "ad_astra:launch_pad",
@@ -1705,8 +1721,6 @@ function mechanicalCraftingRecipes(event) {
                 C: "techreborn:fusion_coil",
                 D: "createaddition:tesla_coil",
                 E: "techreborn:digital_display",
-
-                /// /DOODADS MOD RECIPE CHANGES
             },
         },
         {
@@ -1956,6 +1970,7 @@ function mechanicalCraftingRecipes(event) {
 }
 
 function compactingRecipes(event) {
+    // [Input string, Output string]
     [
         ["techreborn:silver_ingot", "techreborn:silver_plate"],
         ["techreborn:tin_ingot", "techreborn:tin_plate"],
