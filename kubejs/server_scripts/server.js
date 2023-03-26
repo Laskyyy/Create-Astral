@@ -1556,7 +1556,7 @@ metal.forEach(metal => {
     ]).heated().processingTime(500)
 
     event.recipes.createSequencedAssembly([
-    'createastral:star_shard',t
+    'createastral:star_shard',
     ], 'createastral:pure_star_shard', [ 
     event.recipes.createFilling('createastral:star_shard', ['createastral:star_shard', {fluid: 'tconstruct:ender_slime', amount: 22500}]), //fill 1/4 bucket lava
     event.recipes.createPressing('createastral:star_shard', 'createastral:star_shard'), //yeah

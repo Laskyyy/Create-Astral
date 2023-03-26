@@ -400,6 +400,12 @@ onEvent('item.registry', event => {
 
 ///// REGISTER NEW ITEMS HERE /////
 
+event.create('createastral:quadrocopter_blueprint').texture("create:item/schematic") ,
+event.create('createastral:gyrodyne_blueprint').texture("create:item/schematic") ,
+event.create('createastral:biplane_blueprint').texture("create:item/schematic") ,
+event.create('createastral:airship_blueprint').texture("create:item/schematic") ,
+
+
 event.create('createastral:refining_agent'),
 event.create('createastral:separation_agent'),
 event.create('createastral:star_shard'),
