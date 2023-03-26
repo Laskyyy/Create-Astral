@@ -1955,23 +1955,6 @@ onEvent("recipes", (event) => {
 
     ///PRESS PLATES WITH CREATE
 
-    event.recipes.createPressing(
-        "techreborn:silver_plate",
-        "techreborn:silver_ingot"
-    );
-    event.recipes.createPressing(
-        "techreborn:tin_plate",
-        "techreborn:tin_ingot"
-    );
-    event.recipes.createPressing(
-        "techreborn:lead_plate",
-        "techreborn:lead_ingot"
-    );
-    event.recipes.createPressing(
-        "techreborn:electrum_plate",
-        "techreborn:electrum_ingot"
-    );
-    event.recipes.createPressing("create:lapis_sheet", "minecraft:lapis_block");
     event.recipes
         .createCompacting("createastral:olivine_sheet", [
             "16x techreborn:olivine_dust",
@@ -2239,11 +2222,6 @@ onEvent("recipes", (event) => {
             "5x techreborn:steel_dust",
         ])
         .heated();
-
-    event.recipes.createPressing(
-        "createastral:bronze_sheet",
-        "createastral:bronze_ingot"
-    );
 
     ////////////////  EARLY GAME ANDESITE / GROUT RELATED STUFF
 

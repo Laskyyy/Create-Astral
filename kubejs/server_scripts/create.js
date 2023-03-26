@@ -1955,5 +1955,16 @@ function mechanicalCraftingRecipes(event) {
     });
 }
 
-function compactingRecipes(event) {}
+function compactingRecipes(event) {
+    [
+        ["techreborn:silver_ingot", "techreborn:silver_plate"],
+        ["techreborn:tin_ingot", "techreborn:tin_plate"],
+        ["techreborn:lead_ingot", "techreborn:lead_plate"],
+        ["techreborn:electrum_ingot", "techreborn:electrum_plate"],
+        ["createastral:bronze_ingot", "createastral:bronze_sheet"],
+        ["minecraft:lapis_block", "create:lapis_sheet"],
+    ].forEach((recipe) => {
+        event.recipes.createPressing(recipe[1], recipe[0]);
+    });
+}
 function pressingRecipes(event) {}
