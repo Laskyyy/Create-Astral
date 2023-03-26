@@ -3515,6 +3515,21 @@ C: 'minecraft:light_weighted_pressure_plate'
 // '2x minecraft:glow_ink_sac'
 // ]).heated().processingTime(400)
 
+event.replaceInput({output: 'minecraft:shulker_box'}, 'techreborn:endstone_small_dust', 'ae2:fluix_dust')
+
+event.shaped('ad_astra:strophar_cap', [
+  'AA',
+  'AA',
+
+], {
+  A: 'ad_astra:strophar_mushroom'
+})
+
+event.recipes.createCompacting('4x minecraft:purpur_block', [
+  '4x ad_astra:strophar_cap',
+  { fluid: 'minecraft:water', amount: FULL_BUCKET_AMMOUNT / 10 }
+]);
+
 // Make shimmer possible pre-moon
 event.recipes.createMixing(Fluid.of('kubejs:shimmer', 40500), [
   '5x minecraft:amethyst_shard',
