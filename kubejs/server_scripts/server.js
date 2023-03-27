@@ -504,17 +504,6 @@ function lizardGrinderCrushingRework(event) {
             ],
         });
     }
-    event.remove({ type: "create:milling", output: "minecraft:gunpowder" });
-    event.remove({ type: "create:milling", output: "minecraft:flint" });
-
-    // Remove crushing recipes that already have a grinder recipe
-    event.remove({ type: "create:crushing", input: "minecraft:blaze_rod" });
-    event.remove({ type: "create:crushing", input: "minecraft:bone" });
-    event.remove({ type: "create:crushing", input: "minecraft:lapis_lazuli" });
-    event.remove({ type: "create:crushing", input: "minecraft:diamond" });
-    event.remove({ type: "create:crushing", input: "minecraft:diorite" });
-    event.remove({ type: "create:crushing", input: "minecraft:granite" });
-    event.remove({ type: "create:crushing", input: "minecraft:andesite" });
 }
 
 function lizardGeologyAlchemyChanges(event) {
@@ -558,10 +547,6 @@ function lizardGeologyAlchemyChanges(event) {
             },
         ],
     });
-
-    // Remove Create's default crushing recipes for asurine and veridium (I thought we added them??)
-    event.remove({ type: "create:crushing", input: "create:asurine" });
-    event.remove({ type: "create:crushing", input: "create:veridium" });
 
     // Nerf vanilla granite recipe
     event.remove({ mod: "minecraft", output: "minecraft:granite" });
@@ -795,37 +780,7 @@ onEvent("recipes", (event) => {
     event.remove({ output: "tconstruct:seared_bricks" });
     event.remove({ output: "tconstruct:grout" });
     // event.remove({output: 'tconstruct:scorched_bricks'}) // ???
-    event.remove({ type: "create:mixing", output: "create:brass_ingot" });
-    event.remove({
-        type: "create:mixing",
-        output: "tconstruct:rose_gold_ingot",
-    });
-    event.remove({
-        type: "create:mixing",
-        output: "tconstruct:slimesteel_ingot",
-    });
-    event.remove({
-        type: "create:mixing",
-        output: "tconstruct:pig_iron_ingot",
-    });
-    event.remove({
-        type: "create:mixing",
-        output: "tconstruct:manyullyn_ingot",
-    });
-    event.remove({
-        type: "create:mixing",
-        output: "tconstruct:hepatizon_ingot",
-    });
-    event.remove({
-        type: "create:mixing",
-        output: "tconstruct:queens_slime_ingot",
-    });
-    event.remove({ output: "create:blaze_cake" });
-    // event.remove({output: 'tconstruct:blazing_blood'})
-    event.remove({
-        output: "create:andesite_alloy",
-        input: "minecraft:andesite",
-    });
+
     event.remove({ type: "tconstruct:entity_melting" });
     event.remove({ type: "tconstruct:alloy" });
 
@@ -834,16 +789,7 @@ onEvent("recipes", (event) => {
     event.remove({ output: "farmersdelight:cooking_pot" });
     event.remove({ output: "ad_astra:nasa_workbench" });
     event.remove({ output: "ad_astra:rocket_fin" });
-    event.replaceInput(
-        { type: "create:mechanical_crafting", mod: "createaddition" },
-        "create:andesite_alloy",
-        "techreborn:red_cell_battery"
-    );
-    event.replaceInput(
-        { type: "create:mechanical_crafting", mod: "createaddition" },
-        "createaddition:iron_rod",
-        "create:integrated_circuit"
-    );
+
     event.replaceInput(
         { mod: "createaddition" },
         "minecraft:redstone_torch",
@@ -2508,51 +2454,6 @@ onEvent("recipes", (event) => {
     });
 
     ////TECH REBORN CASINGS AND FRAMES ADJUSTMENTS + OTHER JSON FORMAT RECIPES////
-
-    // WHY THIS LINE
-    event.custom({
-        type: "create:sequenced_assembly",
-        ingredient: { tag: "c:plates/gold" },
-        transitionalItem: { item: "create:incomplete_precision_mechanism" },
-        sequence: [
-            {
-                type: "create:deploying",
-                ingredients: [
-                    { item: "create:incomplete_precision_mechanism" },
-                    { item: "create:cogwheel" },
-                ],
-                results: [{ item: "create:incomplete_precision_mechanism" }],
-            },
-            {
-                type: "create:deploying",
-                ingredients: [
-                    { item: "create:incomplete_precision_mechanism" },
-                    { item: "create:large_cogwheel" },
-                ],
-                results: [{ item: "create:incomplete_precision_mechanism" }],
-            },
-            {
-                type: "create:deploying",
-                ingredients: [
-                    { item: "create:incomplete_precision_mechanism" },
-                    { tag: "c:nuggets/desh" },
-                ],
-                results: [{ item: "create:incomplete_precision_mechanism" }],
-            },
-        ],
-        results: [
-            { item: "create:precision_mechanism", chance: 120.0 },
-            { item: "create:golden_sheet", chance: 8.0 },
-            { item: "create:andesite_alloy", chance: 8.0 },
-            { item: "create:cogwheel", chance: 5.0 },
-            { item: "minecraft:gold_nugget", chance: 3.0 },
-            { item: "create:shaft", chance: 2.0 },
-            { item: "create:crushed_gold_ore", chance: 2.0 },
-            { item: "minecraft:iron_ingot" },
-            { item: "minecraft:clock" },
-        ],
-        loops: 6,
-    });
 
     event.custom({
         type: "farmersdelight:cutting",
