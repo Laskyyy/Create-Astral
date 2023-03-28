@@ -16846,7 +16846,7 @@ hash = "984396d88f2c19debfc5c1a1bbb143cd29e68943cdb6c7b65636f07729c197bd"
 
 [[files]]
 file = "kubejs/server_scripts/createaddons.js"
-hash = "63ebd5a98f45df4d479f3170a808d90f484d1c32777486f96e40294eef5ea12a"
+hash = "6295b4437c950734a85c26ed5701f200eb06413aec993ff1e65e3d9f3f51df7d"
 
 [[files]]
 file = "kubejs/server_scripts/removals.js"
@@ -16858,7 +16858,7 @@ hash = "73d5ce267fe78f6140a0621ec940b4fe4538f895255f5a3c6a0ec3d6bf3c9bec"
 
 [[files]]
 file = "kubejs/server_scripts/server.js"
-hash = "87b3ff7f0364b4749b0749be163afd6c6d69f97f469966031ebd0494223abd5f"
+hash = "47f59d747276fac07cb80c1b70c909f3509e6d77f6790497ff55f7f03f753962"
 
 [[files]]
 file = "kubejs/server_scripts/tconstruct.js"
