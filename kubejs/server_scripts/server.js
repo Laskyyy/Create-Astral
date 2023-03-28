@@ -442,128 +442,50 @@ onEvent("recipes", (event) => {
 
     ///// THIS SHIT IS SO INNEFICIENT BUT IT WAS THE FIRST THING I CODED SO IM JUST GOING TO LEAVE IT /////
 
-    event.shaped("minecraft:iron_chestplate", ["S S", "SSS", "SSS"], {
-        S: "create:iron_sheet",
-    });
-    event.shaped("minecraft:iron_helmet", ["SSS", "S S", "   "], {
-        S: "create:iron_sheet",
-    });
-    event.shaped("minecraft:iron_leggings", ["SSS", "S S", "S S"], {
-        S: "create:iron_sheet",
-    });
-    event.shaped("minecraft:iron_boots", ["   ", "S S", "S S"], {
-        S: "create:iron_sheet",
-    });
-    event.shaped("minecraft:iron_sword", [" S ", " S ", " W "], {
-        S: "create:iron_sheet",
-        W: "minecraft:stick",
-    });
-    event.shaped("minecraft:iron_shovel", [" S ", " W ", " W "], {
-        S: "create:iron_sheet",
-        W: "minecraft:stick",
-    });
-    event.shaped("minecraft:iron_axe", [" SS", " WS", " W "], {
-        S: "create:iron_sheet",
-        W: "minecraft:stick",
-    });
-    event.shaped("minecraft:iron_hoe", ["SS ", " W ", " W "], {
-        S: "create:iron_sheet",
-        W: "minecraft:stick",
-    });
-    event.shaped("minecraft:iron_pickaxe", ["SSS", " W ", " W "], {
-        S: "create:iron_sheet",
-        W: "minecraft:stick",
+    const fullkit = {
+        hemlet: ["S S", "SSS", "   "],
+        chestplate: ["S S", "SSS", "SSS"],
+        leggings: ["SSS", "S S", "S S"],
+        boots: ["   ", "S S", "S S"],
+        sword: [" S ", " S ", " W "],
+        pickaxe: ["SSS", " W ", " W "],
+        shovel: [" S ", " W ", " W "],
+        axe: ["SS ", "SW ", " W "],
+        hoe: ["SS ", " W ", " W "],
+    };
+
+    Object.entries(fullkit).forEach((value, key) => {
+        event.shaped("minecraft:iron_" + key, value, {
+            S: "create:iron_sheet",
+            W: "minecraft:stick",
+        });
     });
 
-    // COPPER TOOLS RECIPES
-    event.shaped("createastral:copper_chestplate", ["S S", "SSS", "SSS"], {
-        S: "minecraft:copper_ingot",
-    });
-    event.shaped("createastral:copper_helmet", ["SSS", "S S", "   "], {
-        S: "minecraft:copper_ingot",
-    });
-    event.shaped("createastral:copper_leggings", ["SSS", "S S", "S S"], {
-        S: "minecraft:copper_ingot",
-    });
-    event.shaped("createastral:copper_boots", ["   ", "S S", "S S"], {
-        S: "minecraft:copper_ingot",
-    });
-    event.shaped("createastral:copper_sword", [" S ", " S ", " W "], {
-        S: "minecraft:copper_ingot",
-        W: "minecraft:stick",
-    });
-    event.shaped("createastral:copper_shovel", [" S ", " W ", " W "], {
-        S: "minecraft:copper_ingot",
-        W: "minecraft:stick",
-    });
-    event.shaped("createastral:copper_axe", [" SS", " WS", " W "], {
-        S: "minecraft:copper_ingot",
-        W: "minecraft:stick",
-    });
-    event.shaped("createastral:copper_hoe", ["SS ", " W ", " W "], {
-        S: "minecraft:copper_ingot",
-        W: "minecraft:stick",
-    });
-    event.shaped("createastral:copper_pickaxe", ["SSS", " W ", " W "], {
-        S: "minecraft:copper_ingot",
-        W: "minecraft:stick",
+    Object.entries(fullkit).forEach((value, key) => {
+        event.shaped("createastral:copper_" + key, value, {
+            S: "create:copper_ingot",
+            W: "minecraft:stick",
+        });
     });
 
-    // BRASS TOOLS RECIPES
-    event.shaped("createastral:brass_chestplate", ["S S", "SSS", "SSS"], {
-        S: "create:brass_sheet",
-    });
-    event.shaped("createastral:brass_helmet", ["SSS", "S S", "   "], {
-        S: "create:brass_sheet",
-    });
-    event.shaped("createastral:brass_leggings", ["SSS", "S S", "S S"], {
-        S: "create:brass_sheet",
-    });
-    event.shaped("createastral:brass_boots", ["   ", "S S", "S S"], {
-        S: "create:brass_sheet",
-    });
-    event.shaped("createastral:brass_sword", [" S ", " S ", " W "], {
-        S: "create:brass_sheet",
-        W: "minecraft:stick",
-    });
-    event.shaped("createastral:brass_shovel", [" S ", " W ", " W "], {
-        S: "create:brass_sheet",
-        W: "minecraft:stick",
-    });
-    event.shaped("createastral:brass_axe", [" SS", " WS", " W "], {
-        S: "create:brass_sheet",
-        W: "minecraft:stick",
-    });
-    event.shaped("createastral:brass_hoe", ["SS ", " W ", " W "], {
-        S: "create:brass_sheet",
-        W: "minecraft:stick",
-    });
-    event.shaped("createastral:brass_pickaxe", ["SSS", " W ", " W "], {
-        S: "create:brass_sheet",
-        W: "minecraft:stick",
+    Object.entries(fullkit).forEach((value, key) => {
+        event.shaped("createastral:brass_" + key, value, {
+            S: "create:brass_sheet",
+            W: "minecraft:stick",
+        });
     });
 
-    //STEEL ARMOUR and STURDY ARMOUR
+    [fullkit[0], fullkit[1], fullkit[2], fullkit[3]].forEach((value, key) => {
+        event.shaped("createastral:strudy_" + key, value, {
+            S: "create:sturdy_sheet_block",
+        });
+    });
 
     event.shaped("ad_astra:space_boots", ["S S", "BAB"], {
         S: "minecraft:white_wool",
         A: "create:diving_boots",
         B: "create:sturdy_sheet",
     });
-
-    event.shaped("createastral:sturdy_chestplate", ["S S", "SSS", "SSS"], {
-        S: "createastral:sturdy_sheet_block",
-    });
-    event.shaped("createastral:sturdy_helmet", ["SSS", "S S", "   "], {
-        S: "createastral:sturdy_sheet_block",
-    });
-    event.shaped("createastral:sturdy_leggings", ["SSS", "S S", "S S"], {
-        S: "createastral:sturdy_sheet_block",
-    });
-    event.shaped("createastral:sturdy_boots", ["   ", "S S", "S S"], {
-        S: "createastral:sturdy_sheet_block",
-    });
-
     ///// SMELTING BLOCK RECIPE CHANGES
 
     event.shaped("minecraft:furnace", ["AAA", "A A", "SSS"], {
@@ -664,6 +586,14 @@ onEvent("recipes", (event) => {
     event.stonecutting("ae2:inscriber", "techreborn:basic_machine_frame");
     event.stonecutting("tconstruct:gear_cast", "#c:plates/gold");
     event.stonecutting("tconstruct:coin_cast", "#c:plates/gold");
+    event.stonecutting(
+        "automobility:sloped_dash_panel",
+        "automobility:dash_panel"
+    );
+    event.stonecutting(
+        "automobility:steep_sloped_dash_panel",
+        "automobility:dash_panel"
+    );
 
     ////////////////  EARLY GAME ANDESITE / GROUT RELATED STUFF
 
@@ -817,8 +747,6 @@ onEvent("recipes", (event) => {
         B: "#c:glass",
     });
 
-    ////TECH REBORN CASINGS AND FRAMES ADJUSTMENTS + OTHER JSON FORMAT RECIPES////
-
     event.custom({
         type: "farmersdelight:cutting",
         ingredients: [
@@ -922,15 +850,6 @@ onEvent("recipes", (event) => {
         A: "create:golden_sheet",
         B: "minecraft:piglin_banner_pattern",
     });
-
-    event.stonecutting(
-        "automobility:sloped_dash_panel",
-        "automobility:dash_panel"
-    );
-    event.stonecutting(
-        "automobility:steep_sloped_dash_panel",
-        "automobility:dash_panel"
-    );
 });
 
 onEvent("player.logged_in", (event) => {
