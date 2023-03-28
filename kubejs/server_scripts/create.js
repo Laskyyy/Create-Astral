@@ -15,53 +15,9 @@ onEvent("recipes", (event) => {
     pressingRecipes(event);
     compactingRecipes(event);
 
-    event.remove({ type: "create:milling", output: "minecraft:gunpowder" });
-    event.remove({ type: "create:milling", output: "minecraft:flint" });
-
     // Remove crushing recipes that already have a grinder recipe
-    event.remove({ type: "create:crushing", input: "minecraft:blaze_rod" });
-    event.remove({ type: "create:crushing", input: "minecraft:bone" });
-    event.remove({ type: "create:crushing", input: "minecraft:lapis_lazuli" });
-    event.remove({ type: "create:crushing", input: "minecraft:diamond" });
-    event.remove({ type: "create:crushing", input: "minecraft:diorite" });
-    event.remove({ type: "create:crushing", input: "minecraft:granite" });
-    event.remove({ type: "create:crushing", input: "minecraft:andesite" });
 
     // Remove Create's default crushing recipes for asurine and veridium (I thought we added them??)
-    event.remove({ type: "create:crushing", input: "create:asurine" });
-    event.remove({ type: "create:crushing", input: "create:veridium" });
-
-    event.remove({ type: "create:mixing", output: "create:brass_ingot" });
-    event.remove({
-        type: "create:mixing",
-        output: "tconstruct:rose_gold_ingot",
-    });
-    event.remove({
-        type: "create:mixing",
-        output: "tconstruct:slimesteel_ingot",
-    });
-    event.remove({
-        type: "create:mixing",
-        output: "tconstruct:pig_iron_ingot",
-    });
-    event.remove({
-        type: "create:mixing",
-        output: "tconstruct:manyullyn_ingot",
-    });
-    event.remove({
-        type: "create:mixing",
-        output: "tconstruct:hepatizon_ingot",
-    });
-    event.remove({
-        type: "create:mixing",
-        output: "tconstruct:queens_slime_ingot",
-    });
-    event.remove({ output: "create:blaze_cake" });
-    // event.remove({output: 'tconstruct:blazing_blood'})
-    event.remove({
-        output: "create:andesite_alloy",
-        input: "minecraft:andesite",
-    });
 
     event.replaceInput(
         { type: "create:mechanical_crafting", mod: "createaddition" },
@@ -93,13 +49,8 @@ function millingRecipes(event) {
 }
 function crushingRecipes(event) {
     //Replace with other netherrack inputs and outputs
-    event.remove({ type: "create:crushing", input: "minecraft:netherrack" });
 
     // Remove grinder calcite dust
-    event.remove({
-        type: "techreborn:grinder",
-        input: "#techreborn:calcite_dust_material",
-    });
 
     const CRUSHING_ORE_BONUS_ORE_YIELD = 0.33;
     const CRUSHING_ORE_BONUS_XP_CHUNKS = 0.33;
@@ -392,27 +343,6 @@ function crushingRecipes(event) {
             event.recipes.createCrushing(outputs, raw_ore);
         });
     });
-
-    event.remove({ output: "create:crushed_tin_ore" });
-    event.remove({ output: "create:crushed_silver_ore" });
-    event.remove({ output: "create:crushed_lead_ore" });
-    event.remove({
-        input: "minecraft:raw_iron",
-        output: "create:crushed_iron_ore",
-    });
-    event.remove({
-        input: "minecraft:raw_gold",
-        output: "create:crushed_gold_ore",
-    });
-    event.remove({
-        input: "minecraft:raw_copper",
-        output: "create:crushed_copper_ore",
-    });
-    event.remove({
-        input: "create:raw_zinc",
-        output: "create:crushed_zinc_ore",
-    });
-    event.remove({ output: "create:crushed_uranium_ore" });
 }
 function itemApplication(event) {
     // Ingredients: Array of objects, may include:
@@ -468,11 +398,6 @@ function itemApplication(event) {
             ingredients: recipe.ingredients,
             results: recipe.results,
         });
-    });
-
-    event.remove({
-        output: "create:brass_casing",
-        type: "create:item_application",
     });
 }
 function sequencedAssemblyRecipes(event) {
@@ -551,8 +476,6 @@ function sequencedAssemblyRecipes(event) {
     });
 
     function biomassSequence(event) {
-        event.remove({ output: "techreborn:compressed_plantball" });
-
         var transitional_c_plantball = "techreborn:plantball";
         event.recipes
             .createSequencedAssembly(
@@ -572,10 +495,6 @@ function sequencedAssemblyRecipes(event) {
             )
             .transitionalItem(transitional_c_plantball)
             .loops(4);
-
-        event.remove({
-            output: "createaddition:biomass_pellet",
-        });
 
         var transitional_bio_pellet = "createaddition:biomass";
         event.recipes
@@ -599,7 +518,6 @@ function sequencedAssemblyRecipes(event) {
             )
             .transitionalItem(transitional_bio_pellet)
             .loops(1);
-        event.remove({ output: "techreborn:compressed_plantball" });
 
         event.recipes
             .createSequencedAssembly(
@@ -619,10 +537,6 @@ function sequencedAssemblyRecipes(event) {
             )
             .transitionalItem(transitional_c_plantball)
             .loops(4);
-
-        event.remove({
-            output: "createaddition:biomass_pellet",
-        });
 
         event.recipes
             .createSequencedAssembly(
@@ -873,7 +787,6 @@ function sequencedAssemblyRecipes(event) {
             .transitionalItem("createastral:coin")
             .loops(1);
 
-        event.remove({ output: "passivepiglins:piglin_fortune" });
         event.recipes
             .createSequencedAssembly(
                 [
@@ -902,7 +815,6 @@ function sequencedAssemblyRecipes(event) {
             .transitionalItem("createastral:filled_golden_bowl")
             .loops(1);
 
-        event.remove({ output: "passivepiglins:piglin_totem" });
         event.recipes
             .createSequencedAssembly(
                 [
@@ -1176,17 +1088,7 @@ function fillingRecipes(event) {
 }
 function mixingRecipes(event) {
     // Biofuel rework
-    event.remove({ output: "techreborn:plantball" });
-    event.remove({
-        type: "minecraft:crafting_shaped",
-        output: "techreborn:plantball",
-    });
 
-    event.remove({
-        type: "minecraft:crafting_shapeless",
-        output: "techreborn:plantball",
-    });
-    event.remove({ output: "dustrial_decor:cast_iron_billet" });
     // Output: string
     // Input: Array of items, may include fluid objects or item strings
     // Heat: "" = no heat, "heated", or "superheated"
@@ -1681,10 +1583,6 @@ function hauntingRecipes(event) {
     });
 }
 function splashingRecipes(event) {
-    event.remove({ type: "create:splashing", input: "minecraft:soul_sand" });
-    // Remove vanilla red-sand so it can produce zinc instead, and the red sand haunting infinite loop
-    event.remove({ type: "create:splashing", input: "minecraft:red_sand" });
-    event.remove({ type: "create:haunting", input: "minecraft:red_sand" });
     //Input: String
     //Outputs: Array of outputs, which is each an array.
     //    [Item string, float from 0.0 - 1.0 deciding chance]
@@ -1770,7 +1668,6 @@ function splashingRecipes(event) {
     });
 }
 function mechanicalCraftingRecipes(event) {
-    event.remove({ output: "minecraft:elytra" });
     // Output: String
     // Shape: Array of rows of inputs based on letters assigned
     // Inputs: Object with letters assigned to input items, to be used in the shape
@@ -2086,7 +1983,6 @@ function pressingRecipes(event) {
 }
 
 function compactingRecipes(event) {
-    event.remove({ mod: "create", output: "minecraft:andesite" });
     [
         {
             output: "minecraft:calcite",

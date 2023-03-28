@@ -16842,11 +16842,31 @@ hash = "058c91a44f9f4c079069775e15aea88454aee80420815cf5af51dedf01187d24"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
-hash = "f174b91451e364a2e6be85aef35ccc19c5effd3392aa44f2de7f57bd7125e2ce"
+hash = "984396d88f2c19debfc5c1a1bbb143cd29e68943cdb6c7b65636f07729c197bd"
+
+[[files]]
+file = "kubejs/server_scripts/createaddons.js"
+hash = "63ebd5a98f45df4d479f3170a808d90f484d1c32777486f96e40294eef5ea12a"
+
+[[files]]
+file = "kubejs/server_scripts/removals.js"
+hash = "df9fa64112a5856cdc337545824eac2b860d778afcf4593d57c86755b6edeed6"
+
+[[files]]
+file = "kubejs/server_scripts/replacements.js"
+hash = "73d5ce267fe78f6140a0621ec940b4fe4538f895255f5a3c6a0ec3d6bf3c9bec"
 
 [[files]]
 file = "kubejs/server_scripts/server.js"
-hash = "5b6d207e0f28855516f11e2d63c871f77da8adbd97f1907851d443abecbf5779"
+hash = "87b3ff7f0364b4749b0749be163afd6c6d69f97f469966031ebd0494223abd5f"
+
+[[files]]
+file = "kubejs/server_scripts/tconstruct.js"
+hash = "fdaf28336af50b216d7ac97dd880865194dba5f205402570c427e241546ceadd"
+
+[[files]]
+file = "kubejs/server_scripts/techreborn.js"
+hash = "4f9be69c0090d0a979d22ee58b1a457796b13d55202b588fa9ad113057049f90"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
