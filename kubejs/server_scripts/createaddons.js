@@ -232,10 +232,10 @@ onEvent("recipes", (event) => {
         {
             inputs: [
                 {
-                    item: "minecraft:clay",
+                    item: "createsifter:andesite_mesh",
                 },
                 {
-                    item: "createsifter:andesite_mesh",
+                    item: "minecraft:clay",
                 },
             ],
             outputs: [
