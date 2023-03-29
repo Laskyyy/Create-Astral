@@ -610,6 +610,16 @@ onEvent("recipes", (event) => {
             "create:electron_tube",
             "create:polished_rose_quartz",
         ],
+        [
+            { type: "create:mechanical_crafting", mod: "createaddition" },
+            "create:andesite_alloy",
+            "techreborn:red_cell_battery",
+        ],
+        [
+            { type: "create:mechanical_crafting", mod: "createaddition" },
+            "createaddition:iron_rod",
+            "create:integrated_circuit",
+        ],
     ].forEach((recipe) => {
         if (recipe.length === 2) {
             event.replaceInput(recipe[0], recipe[1]);

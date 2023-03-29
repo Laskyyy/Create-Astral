@@ -14,21 +14,6 @@ onEvent("recipes", (event) => {
     mechanicalCraftingRecipes(event);
     pressingRecipes(event);
     compactingRecipes(event);
-
-    // Remove crushing recipes that already have a grinder recipe
-
-    // Remove Create's default crushing recipes for asurine and veridium (I thought we added them??)
-
-    event.replaceInput(
-        { type: "create:mechanical_crafting", mod: "createaddition" },
-        "create:andesite_alloy",
-        "techreborn:red_cell_battery"
-    );
-    event.replaceInput(
-        { type: "create:mechanical_crafting", mod: "createaddition" },
-        "createaddition:iron_rod",
-        "create:integrated_circuit"
-    );
 });
 
 function millingRecipes(event) {

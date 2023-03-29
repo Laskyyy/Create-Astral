@@ -440,10 +440,8 @@ onEvent("recipes", (event) => {
 
     // IRON TOOLS RECIPES / DIAMOND
 
-    ///// THIS SHIT IS SO INNEFICIENT BUT IT WAS THE FIRST THING I CODED SO IM JUST GOING TO LEAVE IT /////
-
     const fullkit = {
-        hemlet: ["S S", "SSS", "   "],
+        helmet: ["SSS", "S S", "   "],
         chestplate: ["S S", "SSS", "SSS"],
         leggings: ["SSS", "S S", "S S"],
         boots: ["   ", "S S", "S S"],
@@ -453,31 +451,36 @@ onEvent("recipes", (event) => {
         axe: ["SS ", "SW ", " W "],
         hoe: ["SS ", " W ", " W "],
     };
+    const names = [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots",
+        "sword",
+        "pickaxe",
+        "shovel",
+        "axe",
+        "hoe",
+    ];
 
-    Object.entries(fullkit).forEach((value, key) => {
-        event.shaped("minecraft:iron_" + key, value, {
+    names.forEach((name) => {
+        event.shaped("minecraft:iron_" + name, fullkit[name], {
             S: "create:iron_sheet",
-            W: "minecraft:stick",
+            W: fullkit[name].join("").includes("W") ? "minecraft:stick" : null,
         });
-    });
-
-    Object.entries(fullkit).forEach((value, key) => {
-        event.shaped("createastral:copper_" + key, value, {
-            S: "create:copper_ingot",
-            W: "minecraft:stick",
+        event.shaped("createastral:copper_" + name, fullkit[name], {
+            S: "minecraft:copper_ingot",
+            W: fullkit[name].join("").includes("W") ? "minecraft:stick" : null,
         });
-    });
-
-    Object.entries(fullkit).forEach((value, key) => {
-        event.shaped("createastral:brass_" + key, value, {
+        event.shaped("createastral:brass_" + name, fullkit[name], {
             S: "create:brass_sheet",
-            W: "minecraft:stick",
+            W: fullkit[name].join("").includes("W") ? "minecraft:stick" : null,
         });
     });
 
-    [fullkit[0], fullkit[1], fullkit[2], fullkit[3]].forEach((value, key) => {
-        event.shaped("createastral:strudy_" + key, value, {
-            S: "create:sturdy_sheet_block",
+    ["helmet", "chestplate", "leggings", "boots"].forEach((name) => {
+        event.shaped("createastral:strudy_" + name, fullkit[name], {
+            S: "createastral:sturdy_sheet_block",
         });
     });
 

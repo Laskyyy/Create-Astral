@@ -1054,7 +1054,7 @@ hash = "9724ee65b751996090655004e2febecb3f394dc4164888c69e2993675c69146a"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/structures/mine/mining_building.nbt"
-hash = "b38c69677b22a0fc1d5b92ebef7a2cff2a93c707bfa5ef9091bfc2443a57d052"
+hash = "986a9c591ed26df0fa5bf7b0c709fabf34053524869eb06f4479fc6b185f0ae1"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/structures/mine/mining_building_basement.nbt"
@@ -16858,7 +16858,7 @@ hash = "73d5ce267fe78f6140a0621ec940b4fe4538f895255f5a3c6a0ec3d6bf3c9bec"
 
 [[files]]
 file = "kubejs/server_scripts/server.js"
-hash = "9b54d177b22e99d8d06049fe1f0c155969b35d0764f8241ee426ed9dcf2c6a05"
+hash = "e07c9d0fbed1b0dc4fb7c4283a0eae56709901dbd94ce147c03a0d9d88231a31"
 
 [[files]]
 file = "kubejs/server_scripts/tconstruct.js"
