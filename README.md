@@ -32,6 +32,9 @@ Go to Edit Instance -> Settings -> Custom commands, then check the Custom Comman
 "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://localhost:8080/pack.toml
 ```
 
+![image](https://user-images.githubusercontent.com/55003876/228606395-9cbdf5ac-c095-4f71-a639-3765dc906ad5.png)
+
+
 Now that all of that is ready, navigate to the repository in your terminal, and run `./packwiz.exe serve`
 
 This will host a copy of pack.toml that is updated every time it is queried, meaning that every time you start the minecraft instance, it will be able to get the most updated version of all your changes, and update the instance to match, meaning that all you need to do to reload all of your changes is to restart your minecraft instance.
