@@ -1,0 +1,12 @@
+ {
+  "variants": {
+    "": [
+	{
+      "model": "minecraft:block/ice", "weight": 5000
+    },
+	{
+      "model": "minecraft:block/iceskull", "weight": 1
+    }
+	]
+  }
+}
