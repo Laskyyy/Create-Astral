@@ -1,0 +1,22 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/glowstone" },
+            { "model": "block/glowstone", "x": 90 },
+            { "model": "block/glowstone", "x": 180 },
+            { "model": "block/glowstone", "x": 270 },
+            { "model": "block/glowstone", "y": 90 },
+            { "model": "block/glowstone", "y": 90, "x": 90 },
+            { "model": "block/glowstone", "y": 90, "x": 180 },
+            { "model": "block/glowstone", "y": 90, "x": 270 },
+            { "model": "block/glowstone", "y": 180 },
+            { "model": "block/glowstone", "y": 180, "x": 90 },
+            { "model": "block/glowstone", "y": 180, "x": 180 },
+            { "model": "block/glowstone", "y": 180, "x": 270 },
+            { "model": "block/glowstone", "y": 270 },
+            { "model": "block/glowstone", "y": 270, "x": 90 },
+            { "model": "block/glowstone", "y": 270, "x": 180 },
+            { "model": "block/glowstone", "y": 270, "x": 270 }
+        ]
+    }
+}
