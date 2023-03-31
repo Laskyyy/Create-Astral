@@ -3,5 +3,8 @@
     "item.ad_astra.netherite_space_boots": "Lead-lined Space Boots",
     "item.ad_astra.netherite_space_helmet": "Lead-lined Space Helmet",
     "item.ad_astra.netherite_space_pants": "Lead-lined Space Pants",
-    "item.ad_astra.netherite_space_suit": "Lead-lined Space Suit"
+    "item.ad_astra.netherite_space_suit": "Lead-lined Space Suit",
+    "item.ad_astra.tier_2_rocket": "Desh Rocket",
+    "item.ad_astra.tier_3_rocket": "Ostrum Rocket",
+    "item.ad_astra.tier_4_rocket": "Calorite Rocket"
 }
