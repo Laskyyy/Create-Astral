@@ -517,13 +517,12 @@ onEvent('block.registry', event => {
    onEvent('item.tooltip', e => {
     const tooltips = [
       { item: 'tconstruct:smeltery_controller', tooltip: 'Disabled, use a foundry in chapter 3.' },
-      { item: 'techreborn:lead_ingot', tooltip: 'This metal is gated behind reaching Mars!' },
-      { item: 'create:blaze_cake', tooltip: 'No longer superheats! Use a fuel bucket in Chapter 4 to superheat blaze burners.' },
+
+      { item: 'create:blaze_cake', tooltip: 'No longer superheats! Use processes in Chapter 4 to superheat blaze burners.' },
       { item: 'yttr:gadolinite', tooltip: 'Gated by reaching Mercury! (Chapter 5)' },
       { item: 'yttr:yttrium_ingot', tooltip: 'Gated by reaching Mercury! (Chapter 5)' },
       { item: 'tconstruct:raw_cobalt', tooltip: 'Gated by reaching the Moon!.' },
       { item: 'ae2:certus_quartz_dust', tooltip: 'Gated by reaching the Moon!' },
-      { item: 'techreborn:silver_ingot', tooltip: 'Gated by reaching the Moon!' },
       { item: 'minecraft:blaze_rod', tooltip: 'Blazes can be found in a certain structure on the Moon...' },
       { item: 'minecraft:rotten_flesh', tooltip: 'Chewy... might make a good source of leather?' },
       { item: 'computercraft:disk', tooltip: 'This recipe is wierd it actually uses redstone, not rose quartz.' },
@@ -537,8 +536,30 @@ onEvent('block.registry', event => {
       { item: 'minecraft:flint_and_steel', tooltip: 'Nether is Disabled. Nether content is distributed across planets. Follow the questbook for more info.' },
       { item: 'create:empty_blaze_burner', tooltip: 'Blazes are found on the moon.' },
       { item: 'create:blaze_burner', tooltip: 'Blazes are found on the moon.' },
-      { item: 'techreborn:basic_machine_casing', tooltip: 'Crafted with either silver OR lead!' }
+      { item: 'techreborn:basic_machine_casing', tooltip: 'Crafted with either silver OR lead!' },
+
+
+      { item: 'techreborn:silver_ingot', tooltip: 'This metal is found on the moon. Y=65' },
+      { item: 'techreborn:silver_nugget', tooltip: 'This metal is found on the moon. Y=65' },
+      { item: 'techreborn:silver_storage_block', tooltip: 'This metal is found on the moon. Y=65' },
+      { item: 'techreborn:raw_silver', tooltip: 'This metal is found on the moon. Y=65' },
+      { item: 'techreborn:silver_ingot', tooltip: 'This metal is found on the moon. Y=65' },
+      { item: 'techreborn:silver_ore', tooltip: 'This metal is found on the moon. Y=65' },
+      { item: 'techreborn:deepslate_silver_ore', tooltip: 'This metal is found on the moon. Y=65' },
+
+      { item: 'techreborn:lead_ingot', tooltip: 'This metal is found on mars. Y=50' },
+      { item: 'techreborn:lead_nugget', tooltip: 'This metal is found on mars. Y=50' },
+      { item: 'techreborn:lead_storage_block', tooltip: 'This metal is found on mars. Y=50' },
+      { item: 'techreborn:raw_lead', tooltip: 'This metal is found on mars. Y=50' },
+      { item: 'techreborn:lead_ingot', tooltip: 'This metal is found on mars. Y=50' },
+      { item: 'techreborn:lead_ore', tooltip: 'This metal is found on mars. Y=50' },
+      { item: 'techreborn:deepslate_lead_ore', tooltip: 'This metal is found on mars. Y=50' },
+
+      { item: 'yttr:yttrium_ingot', tooltip: 'This metal is found on mercury.' },
+
       
+
+
     ];
   
     tooltips.forEach(tooltip => {
