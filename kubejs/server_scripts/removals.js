@@ -16,61 +16,6 @@ onEvent("recipes", (event) => {
         { output: "techreborn:steel_ingot" },
         { output: "techreborn:steel_block" },
         { output: "techreborn:bronze_block" },
-        { output: "techreborn:copper_helmet" },
-        { output: "techreborn:copper_chestplate" },
-        { output: "techreborn:copper_leggings" },
-        { output: "techreborn:copper_boots" },
-        { output: "techreborn:copper_nugget" },
-        { output: "techreborn:copper_axe" },
-        { output: "techreborn:copper_sword" },
-        { output: "techreborn:copper_pickaxe" },
-        { output: "techreborn:copper_hoe" },
-        { output: "techreborn:copper_shovel" },
-        { output: "techreborn:tin_helmet" },
-        { output: "techreborn:tin_chestplate" },
-        { output: "techreborn:tin_leggings" },
-        { output: "techreborn:tin_boots" },
-        { output: "techreborn:tin_axe" },
-        { output: "techreborn:tin_sword" },
-        { output: "techreborn:tin_pickaxe" },
-        { output: "techreborn:tin_hoe" },
-        { output: "techreborn:tin_shovel" },
-        { output: "techreborn:lead_helmet" },
-        { output: "techreborn:lead_chestplate" },
-        { output: "techreborn:lead_leggings" },
-        { output: "techreborn:lead_boots" },
-        { output: "techreborn:lead_axe" },
-        { output: "techreborn:lead_sword" },
-        { output: "techreborn:lead_pickaxe" },
-        { output: "techreborn:lead_hoe" },
-        { output: "techreborn:lead_shovel" },
-        { output: "techreborn:steel_helmet" },
-        { output: "techreborn:steel_chestplate" },
-        { output: "techreborn:steel_leggings" },
-        { output: "techreborn:steel_boots" },
-        { output: "techreborn:steel_axe" },
-        { output: "techreborn:steel_sword" },
-        { output: "techreborn:steel_pickaxe" },
-        { output: "techreborn:steel_hoe" },
-        { output: "techreborn:steel_shovel" },
-        { output: "techreborn:bronze_helmet" },
-        { output: "techreborn:bronze_chestplate" },
-        { output: "techreborn:bronze_leggings" },
-        { output: "techreborn:bronze_boots" },
-        { output: "techreborn:bronze_axe" },
-        { output: "techreborn:bronze_sword" },
-        { output: "techreborn:bronze_pickaxe" },
-        { output: "techreborn:bronze_hoe" },
-        { output: "techreborn:bronze_shovel" },
-        { output: "techreborn:silver_helmet" },
-        { output: "techreborn:silver_chestplate" },
-        { output: "techreborn:silver_leggings" },
-        { output: "techreborn:silver_boots" },
-        { output: "techreborn:silver_axe" },
-        { output: "techreborn:silver_sword" },
-        { output: "techreborn:silver_pickaxe" },
-        { output: "techreborn:silver_hoe" },
-        { output: "techreborn:silver_shovel" },
         { output: "techreborn:electronic_circuit" },
         { output: "techreborn:industrial_circuit" },
         { output: "techreborn:energy_flow_chip" },
@@ -85,96 +30,6 @@ onEvent("recipes", (event) => {
         { output: "techreborn:fusion_coil" },
         { output: "techreborn:carbon_mesh" },
         { output: "techreborn:scrap_box" },
-        { output: "techreborn:refined_iron_plate" },
-        { output: "techreborn:refined_iron_ingot" },
-        { output: "techreborn:refined_iron_storage_block" },
-        { output: "techreborn:refined_iron_storage_block_stairs" },
-        { output: "techreborn:refined_iron_storage_block_slab" },
-        { output: "techreborn:refined_iron_storage_block_wall" },
-        { output: "techreborn:refined_iron_dust" },
-        { output: "techreborn:refined_iron_small_dust" },
-        { output: "techreborn:refined_iron_nugget" },
-        { output: "techreborn:bronze_plate" },
-        { output: "techreborn:bronze_ingot" },
-        { output: "techreborn:bronze_storage_block" },
-        { output: "techreborn:bronze_storage_block_stairs" },
-        { output: "techreborn:bronze_storage_block_slab" },
-        { output: "techreborn:bronze_storage_block_wall" },
-        { output: "techreborn:bronze_dust" },
-        { output: "techreborn:bronze_small_dust" },
-        { output: "techreborn:bronze_nugget" },
-        { output: "techreborn:aluminum_plate" },
-        { output: "techreborn:aluminum_ingot" },
-        { output: "techreborn:aluminum_storage_block" },
-        { output: "techreborn:aluminum_storage_block_stairs" },
-        { output: "techreborn:aluminum_storage_block_slab" },
-        { output: "techreborn:aluminum_storage_block_wall" },
-        { output: "techreborn:aluminum_dust" },
-        { output: "techreborn:aluminum_small_dust" },
-        { output: "techreborn:aluminum_nugget" },
-        { output: "techreborn:tungsten_plate" },
-        { output: "techreborn:tungsten_ingot" },
-        { output: "techreborn:tungsten_storage_block" },
-        { output: "techreborn:tungsten_storage_block_stairs" },
-        { output: "techreborn:tungsten_storage_block_slab" },
-        { output: "techreborn:tungsten_storage_block_wall" },
-        { output: "techreborn:tungsten_dust" },
-        { output: "techreborn:tungsten_small_dust" },
-        { output: "techreborn:tungsten_nugget" },
-        { output: "techreborn:tungstensteel_plate" },
-        { output: "techreborn:tungstensteel_ingot" },
-        { output: "techreborn:tungstensteel_storage_block" },
-        { output: "techreborn:tungstensteel_storage_block_stairs" },
-        { output: "techreborn:tungstensteel_storage_block_slab" },
-        { output: "techreborn:tungstensteel_storage_block_wall" },
-        { output: "techreborn:tungstensteel_dust" },
-        { output: "techreborn:tungstensteel_small_dust" },
-        { output: "techreborn:tungstensteel_nugget" },
-        { output: "techreborn:chrome_plate" },
-        { output: "techreborn:chrome_ingot" },
-        { output: "techreborn:chrome_storage_block" },
-        { output: "techreborn:chrome_storage_block_stairs" },
-        { output: "techreborn:chrome_storage_block_slab" },
-        { output: "techreborn:chrome_storage_block_wall" },
-        { output: "techreborn:chrome_dust" },
-        { output: "techreborn:chrome_small_dust" },
-        { output: "techreborn:chrome_nugget" },
-        { output: "techreborn:titanium_plate" },
-        { output: "techreborn:titanium_ingot" },
-        { output: "techreborn:titanium_storage_block" },
-        { output: "techreborn:titanium_storage_block_stairs" },
-        { output: "techreborn:titanium_storage_block_slab" },
-        { output: "techreborn:titanium_storage_block_wall" },
-        { output: "techreborn:titanium_dust" },
-        { output: "techreborn:titanium_small_dust" },
-        { output: "techreborn:titanium_nugget" },
-        { output: "techreborn:nickel_plate" },
-        { output: "techreborn:nickel_ingot" },
-        { output: "techreborn:nickel_storage_block" },
-        { output: "techreborn:nickel_storage_block_stairs" },
-        { output: "techreborn:nickel_storage_block_slab" },
-        { output: "techreborn:nickel_storage_block_wall" },
-        { output: "techreborn:nickel_dust" },
-        { output: "techreborn:nickel_small_dust" },
-        { output: "techreborn:nickel_nugget" },
-        { output: "techreborn:brass_plate" },
-        { output: "techreborn:brass_ingot" },
-        { output: "techreborn:brass_storage_block" },
-        { output: "techreborn:brass_storage_block_stairs" },
-        { output: "techreborn:brass_storage_block_slab" },
-        { output: "techreborn:brass_storage_block_wall" },
-        { output: "techreborn:brass_dust" },
-        { output: "techreborn:brass_small_dust" },
-        { output: "techreborn:brass_nugget" },
-        { output: "techreborn:zinc_plate" },
-        { output: "techreborn:zinc_ingot" },
-        { output: "techreborn:zinc_storage_block" },
-        { output: "techreborn:zinc_storage_block_stairs" },
-        { output: "techreborn:zinc_storage_block_slab" },
-        { output: "techreborn:zinc_storage_block_wall" },
-        { output: "techreborn:zinc_dust" },
-        { output: "techreborn:zinc_small_dust" },
-        { output: "techreborn:zinc_nugget" },
         { output: "techreborn:data_storage_core" },
         { output: "techreborn:data_storage_chip" },
         { output: "techreborn:player_detector" },
@@ -367,6 +222,14 @@ onEvent("recipes", (event) => {
         { output: "ad_astra:desh_cable" },
         { output: "ad_astra:steel_cable" },
         { output: "ad_astra:compressor" },
+        {output: 'ad_astra:ostrum_ingot',
+         type: 'minecraft:smelting'},
+        {output: 'ad_astra:ostrum_ingot',
+         type: 'minecraft:blasting'},
+        {output: 'ad_astra:calorite_ingot',
+         type: 'minecraft:smelting'},
+        {output: 'ad_astra:calorite_ingot',
+         type: 'minecraft:blasting'},
 
         // AE2
 
@@ -517,4 +380,43 @@ onEvent("recipes", (event) => {
     ].forEach((recipe) => {
         event.remove(recipe);
     });
+
+    // Define the array of materials
+const materials = [
+    'techreborn:lead',
+    'techreborn:bronze',
+    'techreborn:steel',
+    'techreborn:tin',
+    'techreborn:copper',
+    'techreborn:steel',
+    'techreborn:silver'
+  ];
+  
+  // Define a function to remove all recipes with a given material
+  function removeRecipes(material) {
+    event.remove({output: material + '_helmet'});
+    event.remove({output: material + '_chestplate'});
+    event.remove({output: material + '_leggings'});
+    event.remove({output: material + '_boots'});
+    event.remove({output: material + '_axe'});
+    event.remove({output: material + '_sword'});
+    event.remove({output: material + '_pickaxe'});
+    event.remove({output: material + '_hoe'});
+    event.remove({output: material + '_shovel'});
+  };
+
+  const metal = ['tungstensteel', 'chrome', 'titanium', 'nickel', 'refined_iron', 'bronze', 'aluminum', 'tungsten', 'platinum', 'brass', 'zinc' ];
+
+metal.forEach(metal => {
+  event.remove({output: `techreborn:${metal}_plate`});
+  event.remove({output: `techreborn:${metal}_ingot`});
+  event.remove({output: `techreborn:${metal}_storage_block`});
+  event.remove({output: `techreborn:${metal}_storage_block_stairs`});
+  event.remove({output: `techreborn:${metal}_storage_block_slab`});
+  event.remove({output: `techreborn:${metal}_storage_block_wall`});
+  event.remove({output: `techreborn:${metal}_dust`});
+  event.remove({output: `techreborn:${metal}_small_dust`});
+  event.remove({output: `techreborn:${metal}_nugget`});
+});
+
 });

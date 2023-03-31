@@ -437,6 +437,8 @@ onEvent("recipes", (event) => {
         ]
     );
     event.shapeless(Item.of("dbe:track_end"), ["create:track"]);
+    event.shapeless('ad_astra:sky_stone', [
+        'ae2:sky_stone_block'])
 
     // IRON TOOLS RECIPES / DIAMOND
 
@@ -853,6 +855,173 @@ onEvent("recipes", (event) => {
         A: "create:golden_sheet",
         B: "minecraft:piglin_banner_pattern",
     });
+
+    /// Stuff Laky CBA updating to new format from experimental yet
+
+  event.remove({output: 'techreborn:sulfur_dust'})
+  event.remove({output: 'techreborn:sulfur_small_dust'})
+  event.remove({output: 'techreborn:sulfur'})
+  event.remove({output: 'techreborn:saltpeter_dust'})
+  event.remove({input: 'minecraft:soul_soil', output: 'techreborn:coal_dust'})
+  event.remove({input: 'minecraft:soul_sand', output: 'techreborn:coal_dust'})
+  event.remove({input: 'minecraft:glowstone_dust', output: 'minecraft:redstone'})
+  event.remove({input: 'techreborn:netherrack_dust', output: 'minecraft:redstone'})
+  event.replaceInput('ae2:sky_stone_block', 'ad_astra:sky_stone')
+  event.replaceInput('ae2:sky_stone_block', 'ad_astra:sky_stone')
+
+	event.recipes.createMixing(Fluid.of('ad_astra:cryo_fuel', 81000), [
+    {fluid: 'techreborn:nitrogen', amount: 81000},
+    {fluid: 'kubejs:aurorite', amount: 81000}
+  ]).processingTime(300)
+
+  event.recipes.createCompacting('yttr:continuous_platform', [
+    {fluid: 'kubejs:aurorite', amount: 8100},
+    {fluid: 'kubejs:shimmer', amount: 8100}
+  ]).heated().processingTime(200)
+
+  event.recipes.createCompacting('ad_astra:sky_stone', [
+    '5x ad_astra:moon_stone',
+    'ae2:certus_quartz_dust'
+  ]).heated().processingTime(200)
+
+  event.recipes.createMixing('techreborn:sulfur_dust', [
+    '3x minecraft:glowstone_dust',
+    'ae2:sky_dust',
+  ]).processingTime(50)
+
+	event.recipes.createMixing(Fluid.of('techreborn:oil', 22500), [
+    {fluid: 'techreborn:sulfur', amount: 45000},
+    '3x techreborn:coal_dust'
+  ]).processingTime(300)
+
+	event.recipes.createSequencedAssembly([ 
+        'createastral:refining_agent', 
+		], 'ae2:fluix_dust', [ 
+		event.recipes.createDeploying('ae2:fluix_dust', ['techreborn:diamond_small_dust', 'techreborn:diamond_small_dust']),
+    event.recipes.createDeploying('ae2:fluix_dust', ['minecraft:gold_nugget', 'minecraft:gold_nugget']),
+    event.recipes.createPressing('ae2:fluix_dust', 'ae2:fluix_dust'), //yeah
+		event.recipes.createFilling('ae2:fluix_dustl', ['ae2:fluix_dust', {fluid: 'techreborn:nitrogen', amount: 9000}]),
+    event.recipes.createPressing('ae2:fluix_dust', 'ae2:fluix_dust')
+    ]).transitionalItem('ae2:fluix_dust').loops(3) 
+
+
+    event.recipes.createSequencedAssembly([ 
+    'minecraft:paper', 
+    ], 'createastral:separation_agent', [ 
+    event.recipes.createDeploying('minecraft:paper', ['techreborn:charcoal_dust', 'techreborn:charcoal_dust']), 
+    event.recipes.createDeploying('minecraft:paper', ['techreborn:obsidian_dust', 'techreborn:obsidian_dust']), 
+    event.recipes.createDeploying('minecraft:paper', ['techreborn:sulfur_dust', 'techreborn:sulfur_dust']), 
+    ]).transitionalItem('minecraft:paper').loops(3) 
+
+    event.recipes.createMixing(Fluid.of('kubejs:molten_radiance', 81000), [
+      'minecraft:nether_star',
+      'minecraft:glowstone',
+      'minecraft:sea_lantern',
+      '3x createastral:separation_agent',
+      {fluid: 'kubejs:shimmer', amount: 81000}
+    ]).heated().processingTime(1000)
+
+    event.recipes.createMixing(Fluid.of('kubejs:molten_shadowsteel', 81000), [
+      'minecraft:ender_pearl',
+      '8x dbe:vanta_black',
+      'techreborn:lead_storage_block',
+      '3x createastral:separation_agent',
+      '9x create:chromatic_compound'
+    ]).heated().processingTime(1000)
+
+    event.recipes.createMixing( 'create:refined_radiance', [
+      'create:chromatic_compound',
+      {fluid: 'kubejs:molten_radiance', amount: 8100}
+    ]).superheated().processingTime(1000)
+
+    event.recipes.createCompacting('createastral:star_shard', [
+      {fluid: 'kubejs:molten_radiance', amount: 8100},
+    ]).heated().processingTime(500)
+
+    event.recipes.createSequencedAssembly([
+    'createastral:star_shard',
+    ], 'createastral:pure_star_shard', [ 
+    event.recipes.createFilling('createastral:star_shard', ['createastral:star_shard', {fluid: 'tconstruct:ender_slime', amount: 22500}]), 
+    event.recipes.createPressing('createastral:star_shard', 'createastral:star_shard'), 
+    event.recipes.createDeploying('createastral:star_shard', ['techreborn:uu_matter', 'techreborn:uu_matter']), 
+    event.recipes.createPressing('createastral:star_shard', 'createastral:star_shard'), 
+    ]).transitionalItem('createastral:star_shard').loops(3) 
+
+    event.custom({
+      "type": "techreborn:centrifuge",
+      "power": 8,
+      "time": 500,
+      "ingredients": [
+        {
+          "item": "farmersdelight:rich_soil",
+          "count": 2
+        }
+      ],
+      "results": [
+        {
+          "item": "minecraft:coarse_dirt",
+          "count": 2
+        },
+        {
+          "item": "techreborn:saltpeter_dust",
+          "count": 4
+        }
+      ]
+    })
+
+event.shapeless(Item.of('techreborn:nitro_diesel_bucket'), ['ad_astra:fuel_bucket']);
+event.shapeless(Item.of('techreborn:oil_bucket'), ['ad_astra:oil_bucket']);
+
+event.recipes.createMechanicalCrafting('ad_astra:ostrum_engine', [
+  ' F ',
+  'FEF',
+  'FDF',
+  'ABA',
+
+], {
+  A: 'techreborn:nak_coolant_cell_60k',
+  B: 'createaddition:capacitor',
+  D: 'createaddition:tesla_coil',
+  E: 'ad_astra:ostrum_block',
+  F: 'ad_astra:compressed_ostrum',
+})
+
+
+event.shaped('ad_astra:strophar_cap', [
+    'AA',
+    'AA',
+  
+  ], {
+    A: 'ad_astra:strophar_mushroom'
+  })
+  
+  event.recipes.createCompacting('4x minecraft:purpur_block', [
+    '4x ad_astra:strophar_cap',
+    { fluid: 'minecraft:water', amount: FULL_BUCKET_AMMOUNT / 10 }
+  ]);
+  
+  
+  event.recipes.createMixing('doodads:asphalt', [
+    {fluid: 'kubejs:andesite_compound', amount: 3000},
+    '#c:concrete_powder',
+  ]).processingTime(1000)
+  
+  //yttric rifle!!
+  event.remove({output: 'yttr:rifle'});
+  event.recipes.createMechanicalCrafting('yttr:rifle', [
+    'CCY  ',
+    'YMEIC',
+    ' CDYC',
+    '   C ',
+  
+  ], {
+    Y: 'yttr:yttrium_ingot',
+    C: 'ad_astra:calorite_ingot',
+    I: 'techreborn:industrial_circuit',
+    E: 'techreborn:electronic_circuit',
+    D: 'techreborn:data_storage_chip',
+    M: 'minecraft:crossbow'
+  })
 });
 
 onEvent("player.logged_in", (event) => {

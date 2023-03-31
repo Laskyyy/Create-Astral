@@ -214,6 +214,31 @@ onEvent("recipes", (event) => {
             "minecraft:netherite_leggings",
             "createastral:sturdy_boots",
         ],
+
+        [{output: 'ad_astra:netherite_space_helmet'},
+         'ad_astra:compressed_steel',
+          'ad_astra:compressed_ostrum'
+        ],
+
+        [{output: 'ad_astra:netherite_space_suit'},
+         'ad_astra:compressed_steel',
+          'ad_astra:compressed_ostrum'
+        ],
+
+        [{output: 'ad_astra:netherite_space_pants'},
+         'ad_astra:compressed_steel',
+          'techreborn:lead_plate'
+        ],
+
+        [{output: 'ad_astra:netherite_space_boots'},
+         'ad_astra:compressed_steel',
+          'techreborn:lead_plate'
+        ],
+        [{output: "minecraft:shulker_box"},
+         "techreborn:endstone_small_dust",
+          "ae2:fluix_dust"
+        ],
+
         [
             { mod: "techreborn" },
             "techreborn:bronze_plate",
@@ -283,12 +308,12 @@ onEvent("recipes", (event) => {
         [
             { mod: "techreborn" },
             "techreborn:tungsten_plate",
-            "ad_astra:compressed_steel",
+            "ad_astra:compressed_ostrum",
         ],
         [
             { mod: "techreborn" },
             "techreborn:tungsten_ingot",
-            "ad_astra:compressed_steel",
+            "ad_astra:compressed_ostrum",
         ],
         [
             { mod: "techreborn" },
@@ -303,12 +328,12 @@ onEvent("recipes", (event) => {
         [
             { mod: "techreborn" },
             "techreborn:tungstensteel_plate",
-            "ad_astra:compressed_steel",
+            "ad_astra:compressed_ostrum",
         ],
         [
             { mod: "techreborn" },
             "techreborn:tungstensteel_ingot",
-            "ad_astra:compressed_steel",
+            "ad_astra:compressed_ostrum",
         ],
         [
             { mod: "techreborn" },
@@ -343,7 +368,7 @@ onEvent("recipes", (event) => {
         [
             { mod: "techreborn" },
             "techreborn:titanium_plate",
-            "ad_astra:compressed_calorite",
+            "ad_astra:compressed_ostrum",
         ],
         [
             { mod: "techreborn" },
@@ -500,10 +525,16 @@ onEvent("recipes", (event) => {
             "create:precision_mechanism",
             "create:refined_radiance",
         ],
+        [{mod: 'techreborn'},'techreborn:iridium_ingot', 'yttr:yttrium_ingot'],
+        [{mod: 'techreborn'},'techreborn:iridium_plate', 'yttr:yttrium_ingot'],
+        [{output: 'ad_astra:cryo_freezer'},'ad_astra:ostrum_tank', 'techreborn:lithium_ion_battery'],
+        [{mod: 'techreborn'},'techreborn:iridium_alloy_plate', 'yttr:yttrium_ingot'],
+        [{outputI: 'ae2:fluid_cell_housing'}, 'techreborn:silver_plate', 'create:copper_casing'],
+
         [
             { output: "techreborn:industrial_grinder" },
             "techreborn:electronic_circuit",
-            "immersive_aircraft:engine",
+            "ad_astra:compressed_calorite",
         ],
         [
             { output: "techreborn:digital_display" },
@@ -515,7 +546,7 @@ onEvent("recipes", (event) => {
             "minecraft:glass_pane",
             "#computercraft:monitor",
         ],
-        ["techreborn:lapotronic_orb", "immersive_aircraft:engine"],
+        ["techreborn:lapotronic_orb", "ad_astra:compressed_calorite"],
         [
             { mod: "quarrymod" },
             "techreborn:iridium_ingot",
@@ -529,7 +560,7 @@ onEvent("recipes", (event) => {
         [
             { mod: "quarrymod" },
             "techreborn:peridot_plate",
-            "ad_astra:compressed_steel",
+            "ad_astra:compressed_calorite",
         ],
         [
             { mod: "quarrymod" },
@@ -545,7 +576,7 @@ onEvent("recipes", (event) => {
         [
             { mod: "quarrymod" },
             "techreborn:titanium_plate",
-            "ad_astra:compressed_steel",
+            "ad_astra:compressed_ostrum",
         ],
         [
             { mod: "quarrymod" },
@@ -576,6 +607,7 @@ onEvent("recipes", (event) => {
         ],
         [{ mod: "cccbridge" }, "create:golden_sheet", "create:brass_sheet"],
         [{ mod: "computercraft" }, "#c:stones", "create:andesite_alloy"],
+
         [{ mod: "toms_storage" }, "#minecraft:planks", "create:andesite_alloy"],
         [{ mod: "toms_storage" }, "minecraft:stick", "createaddition:iron_rod"],
         [{ mod: "toms_storage" }, "minecraft:paper", "create:filter"],

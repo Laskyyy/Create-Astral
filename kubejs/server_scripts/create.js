@@ -297,6 +297,15 @@ function crushingRecipes(event) {
             ],
         },
         {
+            mod: "yttr",
+            ores: [
+                {
+                    name: "gadolinite",
+                    extra: Item.of("techreborn:silver_nugget").withChance(0.2)
+                }
+            ],
+        },
+        {
             mod: "create",
             ores: [{ name: "zinc", extra: "" }],
         },
@@ -345,7 +354,7 @@ function itemApplication(event) {
         {
             ingredients: [
                 { item: "techreborn:basic_machine_casing" },
-                { item: "ad_astra:compressed_steel" },
+                { item: "ad_astra:compressed_ostrum" },
             ],
             results: [{ item: "techreborn:advanced_machine_casing" }],
         },
@@ -577,7 +586,7 @@ function sequencedAssemblyRecipes(event) {
                         "createastral:incomplete_electronic_circuit",
                         [
                             "createastral:incomplete_electronic_circuit",
-                            "ad_astra:compressed_ostrum",
+                            "techreborn:lead_plate",
                         ]
                     ),
                     event.recipes.createPressing(
@@ -1155,7 +1164,7 @@ function mixingRecipes(event) {
         {
             output: "4x techreborn:machine_parts",
             input: [
-                "ad_astra:compressed_steel",
+                "ad_astra:compressed_ostrum",
                 "techreborn:carbon_mesh",
                 "8x #c:wires",
             ],
@@ -1251,7 +1260,7 @@ function mixingRecipes(event) {
         {
             output: Fluid.of("tconstruct:molten_steel", 9000),
             input: ["techreborn:steel_dust"],
-            heat: "superheated",
+            heat: "heated",
             time: 100,
         },
         {
@@ -1670,7 +1679,7 @@ function mechanicalCraftingRecipes(event) {
             shape: ["A", "C", "B"],
             inputs: {
                 A: "createastral:olivine_sheet",
-                B: "techreborn:iridium_alloy_plate",
+                B: "yttr:yttrium_ingot",
                 C: "techreborn:industrial_circuit",
             },
         },
@@ -1788,11 +1797,10 @@ function mechanicalCraftingRecipes(event) {
         },
         {
             output: "computercraft:turtle_advanced",
-            shape: ["ADA", "ABA", " C "],
+            shape: ["ADA", "ABA"],
             inputs: {
                 A: "create:brass_sheet",
                 B: "computercraft:turtle_normal",
-                C: "ad_astra:steel_block",
                 D: "create:precision_mechanism",
             },
         },

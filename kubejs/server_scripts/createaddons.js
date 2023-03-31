@@ -9,17 +9,12 @@ onEvent("recipes", (event) => {
         {
             input: ["techreborn:synthetic_redstone_crystal", 1],
             output: ["minecraft:redstone", 5],
-            energy: 10000,
+            energy: 5000,
         },
         {
             input: ["createastral:golden_pin", 1],
             output: ["createastral:electrified_pin", 1],
-            energy: 2500,
-        },
-        {
-            input: ["kubejs:shimmer_bucket", 1],
-            output: ["kubejs:molten_calorite_bucket", 1],
-            energy: 10000000,
+            energy: 800,
         },
     ].forEach((recipe) => {
         event.custom({
