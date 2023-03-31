@@ -146,7 +146,7 @@ key_key.musictriggers.gui:key.keyboard.unknown
 key_key.packed-inventory.interact_with_item:key.keyboard.equal
 key_key.packed-inventory.invert_tooltip_visibility:key.keyboard.left.shift
 key_key.packed-inventory.invert_tooltip_compact_mode:key.keyboard.c
-key_ping-wheel.key.mark-location:key.mouse.5
+
 key_ping-wheel.key.open-settings:key.keyboard.f6
 key_key.tconstruct.helmet_interact:key.keyboard.h
 key_key.tconstruct.leggings_interact:key.keyboard.i

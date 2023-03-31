@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "astralrails:moon/pocisk",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"spacing": 96,
+		"separation": 10,
+		"salt": 1122645234
+	}
+}

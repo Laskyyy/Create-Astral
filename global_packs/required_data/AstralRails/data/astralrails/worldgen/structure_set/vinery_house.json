@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "astralrails:vinery_house",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"spacing": 26,
+		"separation": 10,
+		"salt": 1142645234
+	}
+}

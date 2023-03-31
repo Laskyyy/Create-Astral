@@ -7,7 +7,7 @@
       "element": {
         "location": "astralrails:moon/rails/rail_platform",
         "processors": "minecraft:empty",
-        "projection": "rigid",
+        "projection": "terrain_matching",
         "element_type": "minecraft:single_pool_element"
       }
     },
@@ -16,7 +16,7 @@
       "element": {
         "location": "astralrails:moon/rails/rail1",
         "processors": "minecraft:empty",
-        "projection": "rigid",
+        "projection": "terrain_matching",
         "element_type": "minecraft:single_pool_element"
       }
     },
@@ -25,7 +25,7 @@
       "element": {
         "location": "astralrails:moon/rails/rail2",
         "processors": "minecraft:empty",
-        "projection": "rigid",
+        "projection": "terrain_matching",
         "element_type": "minecraft:single_pool_element"
       }
     },
@@ -34,7 +34,7 @@
       "element": {
         "location": "astralrails:moon/rails/rail3",
         "processors": "minecraft:empty",
-        "projection": "rigid",
+        "projection": "terrain_matching",
         "element_type": "minecraft:single_pool_element"
       }
     }
