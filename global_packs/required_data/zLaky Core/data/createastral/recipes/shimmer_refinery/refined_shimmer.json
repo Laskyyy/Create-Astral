@@ -10,7 +10,7 @@
 				"b": "techreborn:advanced_machine_casing",
 				"c": "techreborn:reinforced_glass",
 				"d": "createastral:shimmering_stone",
-				"e": "create:blaze_burner"
+				"e": "create:blaze_burner{fuelLevel:2}"
 			},
 			"pattern": [
 				[

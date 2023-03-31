@@ -10,7 +10,7 @@
 				"b": "techreborn:basic_machine_casing",
 				"c": "techreborn:basic_machine_frame",
 				"d": "techreborn:advanced_machine_frame",
-				"e": "create:blaze_burner"
+				"e": "create:blaze_burner{fuelLevel:1}"
 			},
 			"pattern": [
 				[
