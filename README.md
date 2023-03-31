@@ -27,7 +27,7 @@ Download the packwiz installer jar from [packwiz-installer-bootstrap](https://gi
 Go to Edit Instance -> Settings -> Custom commands, then check the Custom Commands box and paste the following command into the pre-launch command field:
 
 ```shell
-"$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://localhost:8080/pack.toml
+"$INST_JAVA" -jar packwiz-installer-bootstrap.jar http://localhost:8080/pack.toml
 ```
 
 ![image](https://user-images.githubusercontent.com/55003876/228606395-9cbdf5ac-c095-4f71-a639-3765dc906ad5.png)
