@@ -620,6 +620,78 @@ function sequencedAssemblyRecipes(event) {
                     ),
                 ]
             )
+            event.recipes
+            .createSequencedAssembly(
+                ["ae2:calculation_processor"],
+                "ae2:printed_silicon",
+                [
+                    event.recipes.createDeploying("ae2:printed_silicon", [
+                        "ae2:printed_silicon",
+                        "ae2:printed_calculation_processor",
+                    ]),
+                    event.recipes.createDeploying("ae2:printed_silicon", [
+                        "ae2:printed_silicon",
+                        "ae2:fluix_dust",
+                    ]),
+
+                    event.recipes.createFilling("create:lapis_sheet", [
+                        "create:lapis_sheet",
+                        { fluid: "kubejs:shimmer", amount: 8100 },
+                    ]), 
+                    event.recipes.createPressing(
+                        "ae2:printed_silicon",
+                        "ae2:printed_silicon"
+                    ),
+                ]
+            )
+            event.recipes
+            .createSequencedAssembly(
+                ["ae2:engineering_processor"],
+                "ae2:printed_silicon",
+                [
+                    event.recipes.createDeploying("ae2:printed_silicon", [
+                        "ae2:printed_silicon",
+                        "ae2:printed_engineering_processor",
+                    ]),
+                    event.recipes.createDeploying("ae2:printed_silicon", [
+                        "ae2:printed_silicon",
+                        "ae2:fluix_dust",
+                    ]),
+
+                    event.recipes.createFilling("create:lapis_sheet", [
+                        "create:lapis_sheet",
+                        { fluid: "kubejs:shimmer", amount: 8100 },
+                    ]), 
+                    event.recipes.createPressing(
+                        "ae2:printed_silicon",
+                        "ae2:printed_silicon"
+                    ),
+                ]
+            )
+            event.recipes
+            .createSequencedAssembly(
+                ["ae2:logic_processor"],
+                "ae2:printed_silicon",
+                [
+                    event.recipes.createDeploying("ae2:printed_silicon", [
+                        "ae2:printed_silicon",
+                        "ae2:printed_logic_processor",
+                    ]),
+                    event.recipes.createDeploying("ae2:printed_silicon", [
+                        "ae2:printed_silicon",
+                        "ae2:fluix_dust",
+                    ]),
+
+                    event.recipes.createFilling("create:lapis_sheet", [
+                        "create:lapis_sheet",
+                        { fluid: "kubejs:shimmer", amount: 8100 },
+                    ]), 
+                    event.recipes.createPressing(
+                        "ae2:printed_silicon",
+                        "ae2:printed_silicon"
+                    ),
+                ]
+            )
             .transitionalItem("create:lapis_sheet")
             .loops(6);
 
@@ -2061,6 +2133,113 @@ function compactingRecipes(event) {
                 "5x techreborn:steel_dust",
             ],
         },
+        {
+            output: [
+                "ae2:silicon_press",
+                "ae2:printed_silicon",
+                
+            ],
+            inputs: [
+                "ae2:silicon_press",
+                "2x ae2:silicon",
+            ],
+        },
+        {
+            output: [
+                "ae2:silicon_press",
+                "ae2:silicon_press",
+                
+            ],
+            inputs: [
+                "ae2:silicon_press",
+                "minecraft:iron_block",
+            ],
+        },
+        {
+            output: [
+                "ae2:logic_processor_press",
+                "ae2:printed_logic_processor",
+            ],
+            inputs: [
+                "ae2:logic_processor_press",
+                { fluid: "tconstruct:molten_gold", amount: FULL_BUCKET_AMMOUNT / 3 },
+            ],
+        },
+        {
+            output: [
+                "ae2:logic_processor_press",
+                "ae2:logic_processor_press",
+                
+            ],
+            inputs: [
+                "ae2:logic_processor_press",
+                "minecraft:iron_block",
+            ],
+        },
+        {
+            output: [
+                "ae2:engineering_processor_press",
+                "ae2:printed_engineering_processor",
+            ],
+            inputs: [
+                "ae2:engineering_processor_press",
+                { fluid: "tconstruct:molten_diamond", amount: FULL_BUCKET_AMMOUNT / 3 },
+            ],
+        },
+        {
+            output: [
+                "ae2:engineering_processor_press",
+                "ae2:engineering_processor_press",
+                
+            ],
+            inputs: [
+                "ae2:engineering_processor_press",
+                "minecraft:iron_block",
+            ],
+        },
+        {
+            output: [
+                "ae2:calculation_processor_press",
+                "ae2:printed_calculation_processor",
+            ],
+            inputs: [
+                "ae2:calculation_processor_press",
+                { fluid: "kubejs:molten_desh", amount: FULL_BUCKET_AMMOUNT / 3 },
+            ],
+        },
+        {
+            output: [
+                "ae2:calculation_processor_press",
+                "ae2:calculation_processor_press",
+                
+            ],
+            inputs: [
+                "ae2:calculation_processor_press",
+                "minecraft:iron_block",
+            ],
+        },
+        {
+            output: [
+                "ae2:ender_dust",
+                
+            ],
+            inputs: [
+                "minecraft:ender_pearl",
+            ],
+        },
+        {
+            output: [
+                "ae2:certus_quartz_dust",
+                
+            ],
+            inputs: [
+                "#c:certus_quartz",
+            ],
+        },
+
+
+
+
     ].forEach((recipe) => {
         event.recipes.createCompacting(recipe.output, recipe.inputs).heated();
     });

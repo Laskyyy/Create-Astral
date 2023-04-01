@@ -239,6 +239,7 @@ onEvent("recipes", (event) => {
         { output: "ae2:pattern_encoding_terminal" },
         { output: "ae2:cable_pattern_provider" },
         { output: "ae2:inscriber" },
+        { type: "ae2:inscriber" },
         { output: "ae2:controller", type: "crafting_shaped" },
 
         // Tconstruct
