@@ -6,6 +6,10 @@
   "multiplayer.title": "Discover whole new Astral Realms.",
   "item.minecraft.bow": "Makeshift Pistol",
   "item.minecraft.crossbow": "Rifle",
+  "item.minecraft.beetroot": "Corn",
+  "item.minecraft.beetroot_seeds": "Corn Seeds",
+  "item.minecraft.beetroot_soup": "Corn Soup",
+  "item.minecraft.phantom_membrane": "Soft Membrane",
 
   "item.minecraft.arrow": "Copper Bullet",
   "item.minecraft.spectral_arrow": "Spectral Bullet",
@@ -31,9 +35,17 @@
   "item.minecraft.tipped_arrow.effect.luck": "Bullet of Luck",
   "item.minecraft.tipped_arrow.effect.turtle_master": "Bullet of the Turtle Master",
   "item.minecraft.tipped_arrow.effect.slow_falling": "Bullet of Slow Falling",
-  
-  "item.minecraft.beetroot": "Corn",
-  "item.minecraft.beetroot_seeds": "Corn Seeds",
-  "item.minecraft.beetroot_soup": "Corn Soup",
-  "item.minecraft.phantom_membrane": "Soft Membrane"
+
+  "biome.incendium.ash_barrens": "Ash Barrens",
+  "biome.incendium.infernal_dunes": "Infernal Dunes",
+  "biome.incendium.inverted_forest": "Inverted Forest",
+  "biome.incendium.quartz_flats": "Quartz Flats",
+  "biome.incendium.toxic_heap": "Toxic Heap",
+  "biome.incendium.volcanic_deltas": "Volcanic Deltas",
+  "biome.incendium.weeping_valley": "Weeping Valley",
+  "biome.incendium.withered_forest": "Withered Forest",
+
+  "biome.nullscape.crystal_peaks": "Crystal Peaks",
+  "biome.nullscape.shadowlands": "Shadowlands",
+  "biome.nullscape.void_barrens": "Void Barrens"
 }
