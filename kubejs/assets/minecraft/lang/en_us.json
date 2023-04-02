@@ -8,12 +8,12 @@
   "item.minecraft.crossbow": "Rifle",
 
   "item.minecraft.arrow": "Copper Bullet",
-  "item.minecraft.spectral_arrow": "Spectral Bullet" , 
+  "item.minecraft.spectral_arrow": "Spectral Bullet",
   "item.minecraft.tipped_arrow": "Tipped Bullet",
   "item.minecraft.tipped_arrow.effect.water": "Bullet of Splashing",
-  "item.minecraft.tipped_arrow.effect.mundane": "Tipped Bullet (Mundane)",
-  "item.minecraft.tipped_arrow.effect.thick": "Tipped Bullet (Thick)",
-  "item.minecraft.tipped_arrow.effect.awkward": "Tipped Bullet (Awkward)",
+  "item.minecraft.tipped_arrow.effect.mundane": "Tipped Bullet",
+  "item.minecraft.tipped_arrow.effect.thick": "Tipped Bullet",
+  "item.minecraft.tipped_arrow.effect.awkward": "Tipped Bullet",
   "item.minecraft.tipped_arrow.effect.night_vision": "Bullet of Night Vision",
   "item.minecraft.tipped_arrow.effect.invisibility": "Bullet of Invisibility",
   "item.minecraft.tipped_arrow.effect.leaping": "Bullet of Leaping",
@@ -31,7 +31,7 @@
   "item.minecraft.tipped_arrow.effect.luck": "Bullet of Luck",
   "item.minecraft.tipped_arrow.effect.turtle_master": "Bullet of the Turtle Master",
   "item.minecraft.tipped_arrow.effect.slow_falling": "Bullet of Slow Falling",
-
+  
   "item.minecraft.beetroot": "Corn",
   "item.minecraft.beetroot_seeds": "Corn Seeds",
   "item.minecraft.beetroot_soup": "Corn Soup",
