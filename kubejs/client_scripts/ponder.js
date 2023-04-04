@@ -4,7 +4,22 @@ onEvent("ponder.tag", (event) => {
         "createastral:astral_singularity",
         "Create: Astral",
         "Some helpful tips",
-        ["createastral:electrolyser_dummy"]
+        [
+            Item.of("custommachinery:custom_machine_item", {
+                machine: "createastral:electrolyser",
+            }),
+        ]
+    );
+    event.createTag(
+        "kubejs:tconstruct",
+        "tconstruct:seared_table",
+        "Tinkers Construct",
+        "Tinkers Construct Basics",
+        [
+            "tconstruct:seared_melter",
+            "tconstruct:foundry_controller",
+            "tconstruct:seared_faucet",
+        ]
     );
 });
 
@@ -38,7 +53,6 @@ onEvent("ponder.registry", (event) => {
                     false
                 );
 
-                //Make a for loop that will loop through the range of the multiblockRange, and run scene.world.showSection for each of them, with the arguments being [x, y, z], Facing.DOWN. Make sure that only the multiblock is shown.
                 for (
                     let y = multiblockRange[0][1];
                     y <= multiblockRange[1][1];
@@ -101,6 +115,60 @@ onEvent("ponder.registry", (event) => {
                 scene.particles
                     .simple(1000, "ad_astra:oxygen_bubble", [3, 5, -0.5])
                     .gravity(-0.1);
+            }
+        );
+    event.printParticleNames();
+    event
+        .create("tconstruct:seared_melter")
+        // .scene(
+        //     "melter",
+        //     "How to use the seared melter",
+        //     "kubejs:melter2",
+        //     (scene, util) => {
+        //         scene.showBasePlate();
+        //         scene.idle(10);
+        //         scene.markAsFinished();
+        //     }
+        // )
+        .scene(
+            "melter3",
+            "How to use the seared melter",
+            "kubejs:melter3",
+            (scene, util) => {
+                scene.world.modifyBlock(
+                    [3, 1, 2],
+                    (block) => block.with("active", "true"),
+                    false
+                );
+                scene.world.modifyBlock(
+                    [3, 2, 2],
+                    (block) => block.with("active", "true"),
+                    false
+                );
+                scene.showStructure();
+                scene.idle(30);
+                scene.world.modifyTileNBT([2, 2, 2], (nbt) => {
+                    nbt.render_fluid = {};
+                });
+                for (let i = 9; i > 0; i--) {
+                    scene.world.modifyTileNBT([2, 1, 2], (nbt) => {
+                        nbt.timer = i * 20;
+                    });
+                    scene.idle(0.5);
+                }
+                scene.idle(100);
+                scene.particles
+                    .simple(3, "minecraft:smoke", [2, 2, 2])
+                    .scale(4);
+                scene.world.modifyTileNBT([2, 1, 2], (nbt) => {
+                    nbt.Items = [
+                        {
+                            Count: 1,
+                            Slot: 1,
+                            id: "minecraft:iron_block",
+                        },
+                    ];
+                });
             }
         );
 });
