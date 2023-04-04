@@ -480,7 +480,7 @@ onEvent('block.registry', event => {
     const tooltips = [
       { item: 'tconstruct:smeltery_controller', tooltip: 'Disabled, use a foundry in chapter 3.' },
 
-      { item: 'create:blaze_cake', tooltip: 'No longer superheats! Use processes in Chapter 4 to superheat blaze burners.' },
+      { item: 'create:blaze_cake', tooltip: 'No longer superheats! Use processes in Chapter 4 to superheat blaze burners. (Fuel Bucket, regular blaze burner)' },
       { item: 'tconstruct:raw_cobalt', tooltip: 'Gated by reaching the Moon!.' },
       { item: 'ae2:certus_quartz_dust', tooltip: 'Gated by reaching the Moon!' },
       { item: 'minecraft:blaze_rod', tooltip: 'Blazes can be found in a certain structure on the Moon...' },
@@ -529,10 +529,10 @@ onEvent('block.registry', event => {
     tooltips.forEach(tooltip => {
       e.addAdvanced(tooltip.item, (item, advanced, text) => {
         if (!e.isShift()) {
-          text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()]);
+          text.add(1, [Text.of('Hold ').darkGreen(), Text.of('Shift ').green(), Text.of('to see more info.').darkGreen()]);
         }
         if (e.isShift()) {
-          text.add(1, [Text.of(tooltip.tooltip).gold()]);
+          text.add(1, [Text.of(tooltip.tooltip).green()]);
         }
       });
     });
