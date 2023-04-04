@@ -2024,6 +2024,28 @@ function mechanicalCraftingRecipes(event) {
                 /// /DOODADS MOD RECIPE CHANGES
             },
         },
+				{
+						output: "buildinggadgets:gadget_building",
+						shape: [" I ", "SOS", "S8S", "SNS"],
+						inputs: {
+								S: 'techreborn:silver_plate',
+								8: 'ae2:spatial_cell_component_2',
+								O: 'techreborn:basic_display',
+								I: 'ae2:wireless_receiver',
+								N: 'createastral:navigation_mechanism',
+						},
+				},
+				{
+						output: "buildinggadgets:gadget_copy_paste",
+						shape: [" I ", "SOS", "SMS", "SNS"],
+						inputs: {
+								S: 'techreborn:silver_plate',
+								M: 'ae2:memory_card',
+								O: 'techreborn:basic_display',
+								I: 'ae2:wireless_receiver',
+								N: 'createastral:navigation_mechanism',
+						},
+				},
     ].forEach((recipe) => {
         event.recipes.create.mechanical_crafting(
             recipe.output,

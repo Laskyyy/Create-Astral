@@ -324,6 +324,9 @@ onEvent("recipes", (event) => {
         { output: "computercraft:pocket_computer_advanced" },
 
         { mod: "camsbackpacks", input: "minecraft:chest" },
+				
+				{ output: "buildinggadgets:gadget_building" },
+				{ output: "buildinggadgets:gadget_copy_paste" },
 
         // Minecraft
 
