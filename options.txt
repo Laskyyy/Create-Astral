@@ -13,7 +13,7 @@ realmsNotifications:true
 reducedDebugInfo:false
 showSubtitles:false
 touchscreen:false
-fullscreen:false
+fullscreen:true
 bobView:true
 toggleCrouch:false
 toggleSprint:false
@@ -108,9 +108,14 @@ key_key.hotbar.6:key.keyboard.6
 key_key.hotbar.7:key.keyboard.7
 key_key.hotbar.8:key.keyboard.8
 key_key.hotbar.9:key.keyboard.9
-key_Toggle Drippy Customization Overlay | CTRL + ALT + :key.keyboard.minus
-key_Reload Menu | CTRL + ALT + :key.keyboard.r
-key_Toggle Customization Overlay | CTRL + ALT + :key.keyboard.c
+key_Reload Menu | CTRL + ALT + :key.keyboard.unknown
+key_Toggle Customization Overlay | CTRL + ALT + :key.keyboard.unknown
+key_key.ftbchunks.map:key.keyboard.unknown
+key_key.ftbchunks.minimap.zoomIn:key.keyboard.unknown
+key_key.ftbchunks.minimap.zoomOut:key.keyboard.unknown
+key_key.ftbchunks.add_waypoint:key.keyboard.unknown
+key_key.ftbchunks.waypoint_manager:key.keyboard.unknown
+key_key.ftbteams.open_gui:key.keyboard.unknown
 key_key.wi_zoom.zoom:key.keyboard.z
 key_key.ae2.wireless_terminal:key.keyboard.unknown
 key_key.ae2.portable_item_cell:key.keyboard.unknown
@@ -118,7 +123,6 @@ key_key.ae2.portable_fluid_cell:key.keyboard.unknown
 key_key.ftbquests.quests:key.keyboard.j
 key_keybinds.bettercombat.feint:key.keyboard.unknown
 key_keybinds.bettercombat.toggle_mine_with_weapons:key.keyboard.unknown
-key_blanket-client-tweaks.keys.rotateMinecartKey:key.keyboard.unknown
 key_key.campanion.open_backpack:key.keyboard.b
 key_create.keyinfo.toolmenu:key.keyboard.left.alt
 key_create.keyinfo.toolbelt:key.keyboard.g
@@ -139,24 +143,34 @@ key_key.jade.toggle_liquid:key.keyboard.keypad.2
 key_key.jade.show_recipes:key.keyboard.keypad.3
 key_key.jade.show_uses:key.keyboard.keypad.4
 key_key.jade.narrate:key.keyboard.keypad.5
-key_keymap.keyOpenKeymap:key.keyboard.grave.accent
+key_key.journeymap.zoom_in:key.keyboard.equal
+key_key.journeymap.zoom_out:key.keyboard.minus
+key_key.journeymap.minimap_type:key.keyboard.unknown
+key_key.journeymap.minimap_preset:key.keyboard.unknown
+key_key.journeymap.create_waypoint:key.keyboard.unknown
+key_key.journeymap.toggle_waypoints:key.keyboard.unknown
+key_key.journeymap.fullscreen_create_waypoint:key.keyboard.b
+key_key.journeymap.fullscreen_chat_position:key.keyboard.c
+key_key.journeymap.map_toggle_alt:key.keyboard.m
+key_key.journeymap.fullscreen_waypoints:key.keyboard.unknown
+key_key.journeymap.minimap_toggle_alt:key.keyboard.unknown
+key_key.journeymap.fullscreen_options:key.keyboard.unknown
+key_key.journeymap.fullscreen.north:key.keyboard.up
+key_key.journeymap.fullscreen.south:key.keyboard.down
+key_key.journeymap.fullscreen.east:key.keyboard.right
+key_key.journeymap.fullscreen.west:key.keyboard.left
+key_key.journeymap.fullscreen.disable_buttons:key.keyboard.h
 key_key.modmenu.open_menu:key.keyboard.unknown
-key_key.mtmechs.primary:key.keyboard.v
-key_key.musictriggers.gui:key.keyboard.unknown
+key_key.observable.profile:key.keyboard.0
 key_key.packed-inventory.interact_with_item:key.keyboard.equal
 key_key.packed-inventory.invert_tooltip_visibility:key.keyboard.left.shift
 key_key.packed-inventory.invert_tooltip_compact_mode:key.keyboard.c
-
+key_per_aspera.key.toggle_jet_suit:key.keyboard.comma
+key_per_aspera.key.toggle_jet_suit_hover:key.keyboard.period
+key_ping-wheel.key.mark-location:key.keyboard.f4
 key_ping-wheel.key.open-settings:key.keyboard.f6
-key_key.tconstruct.helmet_interact:key.keyboard.h
+key_key.tconstruct.helmet_interact:key.keyboard.u
 key_key.tconstruct.leggings_interact:key.keyboard.i
-key_gui.xaero_open_map:key.keyboard.m
-key_gui.xaero_open_settings:key.keyboard.right.bracket
-key_gui.xaero_map_zoom_in:key.keyboard.unknown
-key_gui.xaero_map_zoom_out:key.keyboard.unknown
-key_gui.xaero_quick_confirm:key.keyboard.right.shift
-key_gui.xaero_toggle_pac_players:key.keyboard.unknown
-key_gui.xaero_toggle_pac_chunk_claims:key.keyboard.unknown
 key_iris.keybind.reload:key.keyboard.r
 key_iris.keybind.toggleShaders:key.keyboard.k
 key_iris.keybind.shaderPackSelection:key.keyboard.o
