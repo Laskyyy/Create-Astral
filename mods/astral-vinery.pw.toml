@@ -1,13 +1,14 @@
 name = "AstralVinery"
-filename = "astralvinery-1.0.1.jar"
+filename = "astralvinery-1.1.1.jar"
 side = "both"
 
 [download]
 mode = "metadata:curseforge"
+url = ""
 hash-format = "sha1"
-hash = "d43ec212ec660140a0b78621c8c10cb9cf78731e"
+hash = "20d26d0cff90eb5cf8a6a5054ca70130679e2c49"
 
 [update]
 [update.curseforge]
-file-id = 4432068
+file-id = 4447979
 project-id = 835485
