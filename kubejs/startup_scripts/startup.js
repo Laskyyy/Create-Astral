@@ -497,6 +497,12 @@ onEvent('block.registry', event => {
       { item: 'create:empty_blaze_burner', tooltip: 'Blazes are found on the moon.' },
       { item: 'create:blaze_burner', tooltip: 'Blazes are found on the moon.' },
       { item: 'techreborn:basic_machine_casing', tooltip: 'Crafted with either silver OR lead!' },
+      { item: 'minecraft:nether_wart', tooltip: 'Found underground on the moon.' },
+      { item: 'minecraft:soul_sand', tooltip: 'Found underground on the moon.' },
+      { item: 'ae2:certus_quartz', tooltip: 'Found underground on the moon.' },
+      { item: 'minecraft:ancient_debris', tooltip: 'Found underground on the moon and mars. Can be obtained from bastions and infernal spires on mars.' },
+      { item: 'techreborn:uu_matter', tooltip: 'Material forged in chapter 5.' }, 
+      { item: 'create:mechanical_arm', tooltip: 'Use a hopper to place this in a mechanical crafter.' } 
 
 
       { item: 'techreborn:silver_ingot', tooltip: 'This metal is found on the moon. Y=65' },

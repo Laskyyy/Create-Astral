@@ -1,11 +1,6 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
-    "minecraft:crimson_forest",
-    "minecraft:nether_wastes",
-    "minecraft:soul_sand_valley",
-    "minecraft:warped_forest",
-    "minecraft:basalt_deltas",
     "ad_astra:martian_canyon_creek",
     "incendium:infernal_dunes"
   ]
