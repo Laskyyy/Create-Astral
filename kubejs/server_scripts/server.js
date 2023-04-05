@@ -619,6 +619,8 @@ onEvent("recipes", (event) => {
     });
     event.smelting("create:andesite_alloy", "createastral:andesite_compound");
     event.blasting("create:andesite_alloy", "createastral:andesite_compound");
+    event.blasting("tconstruct:scorched_basin", "tconstruct:seared_basin");
+    event.blasting("tconstruct:scorched_table", "tconstruct:seared_table");
 
     //SMITHING RADIANT STUFF
 

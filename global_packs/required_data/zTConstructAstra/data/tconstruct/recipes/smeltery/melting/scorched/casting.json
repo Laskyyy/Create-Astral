@@ -9,7 +9,7 @@
     }
   ],
   "result": {
-    "fluid": "tconstruct:scorched_stone",
+    "fluid": "tconstruct:seared_stone",
     "amount": 141750
   },
   "temperature": 500,
