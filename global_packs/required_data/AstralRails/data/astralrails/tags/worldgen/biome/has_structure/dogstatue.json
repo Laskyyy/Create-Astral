@@ -8,6 +8,12 @@
 		"minecraft:flower_forest",
 		"minecraft:birch_forest",
 		"minecraft:meadow",
-		"minecraft:grove"
+		"minecraft:grove",
+		"#minecraft:is_hill",
+		"#minecraft:is_forest",
+		"#minecraft:is_badlands",
+		"#minecraft:is_taiga",
+		"#minecraft:is_jungle",
+		"#minecraft:is_mountain"
   ]
 }
