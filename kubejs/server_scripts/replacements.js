@@ -64,7 +64,7 @@ onEvent("recipes", (event) => {
             "techreborn:emerald_plate",
         ],
         ["#c:iron_rods", "createaddition:iron_rod"],
-        ["ad_astra:iron_stick", "createaddition:iron_rod"],
+        ["ad_astra:iron_rod", "createaddition:iron_rod"],
         ["catwalksinc:iron_rod", "createaddition:iron_rod"],
         [
             { type: "minecraft:crafting_shaped" },

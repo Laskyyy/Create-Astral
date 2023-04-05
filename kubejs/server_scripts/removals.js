@@ -351,7 +351,7 @@ onEvent("recipes", (event) => {
         { output: "ad_astra:fuel_refinery" },
         { output: "ad_astra:oxygen_loader" },
         { output: "ad_astra:energizer" },
-        { output: "ad_astra:iron_stick" },
+        { output: "ad_astra:iron_rod" },
         { output: "ad_astra:nasa_workbench" },
         { output: "ad_astra:rocket_fin" },
         { output: "ad_astra:launch_pad" },
