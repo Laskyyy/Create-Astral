@@ -114,7 +114,7 @@ graveKeySpecification = "PLAYER"
 receiveOnDeath = false
 tryDeleteOnClaim = true
 [commandToggles]
-coreCommandName = "yigd"
+coreCommandName = "grave"
 retrieveGrave = true
 robGrave = true
 selfView = true

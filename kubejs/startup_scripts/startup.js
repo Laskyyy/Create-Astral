@@ -502,7 +502,7 @@ onEvent('block.registry', event => {
       { item: 'ae2:certus_quartz', tooltip: 'Found underground on the moon.' },
       { item: 'minecraft:ancient_debris', tooltip: 'Found underground on the moon and mars. Can be obtained from bastions and infernal spires on mars.' },
       { item: 'techreborn:uu_matter', tooltip: 'Material forged in chapter 5.' }, 
-      { item: 'create:mechanical_arm', tooltip: 'Use a hopper to place this in a mechanical crafter.' } 
+      { item: 'create:mechanical_arm', tooltip: 'Use a hopper to place this in a mechanical crafter.' } ,
 
 
       { item: 'techreborn:silver_ingot', tooltip: 'This metal is found on the moon. Y=65' },
