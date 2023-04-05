@@ -1,12 +1,12 @@
 name = "Create Astral"
 author = "Laskyyy"
-version = "v2.0.3"
+version = "v2.0.4"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "fa6b23ed74476c43dec7873c0101b0a27565f6c3ce4c20a030ab2af0f8fa2975"
+hash = "aa27776647f87d58b8623903ec521550f0e54bf5eedf7fc1940519d15d8678b1"
 
 [versions]
 fabric = "0.14.14"
