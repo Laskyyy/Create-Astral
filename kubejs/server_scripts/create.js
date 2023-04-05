@@ -577,7 +577,7 @@ function sequencedAssemblyRecipes(event) {
                         "createastral:incomplete_electronic_circuit",
                         [
                             "createastral:incomplete_electronic_circuit",
-                            "ad_astra:compressed_ostrum",
+                            "ad_astra:ostrum_plate",
                         ]
                     ),
                     event.recipes.createPressing(
@@ -1691,7 +1691,7 @@ function mechanicalCraftingRecipes(event) {
                 B: "create:brass_sheet",
                 C: "minecraft:phantom_membrane",
                 D: "create:large_cogwheel",
-                E: "ad_astra:compressed_ostrum",
+                E: "ad_astra:ostrum_plate",
                 F: "ad_astra:ostrum_engine",
                 G: "computercraft:computer_advanced",
             },
@@ -1735,7 +1735,7 @@ function mechanicalCraftingRecipes(event) {
                 // A: minecraft:redstone_block,
                 A: "createaddition:capacitor",
                 B: "ad_astra:desh_block",
-                C: "ad_astra:compressed_desh",
+                C: "ad_astra:desh_plate",
                 D: "createastral:navigation_mechanism",
                 // F: 'create:integrated_circuit',
                 F: "create:display_board",
@@ -1747,7 +1747,7 @@ function mechanicalCraftingRecipes(event) {
             output: "ad_astra:solar_panel",
             shape: ["DDD", " B ", "ACA", "AEA"],
             inputs: {
-                A: "ad_astra:compressed_desh",
+                A: "ad_astra:desh_plate",
                 B: "create:integrated_circuit",
                 C: "createastral:navigation_mechanism",
                 D: "minecraft:blue_stained_glass",
@@ -1824,7 +1824,7 @@ function mechanicalCraftingRecipes(event) {
             output: "ad_astra:energizer",
             shape: [" E ", "ADA", "ACA", "BAB"],
             inputs: {
-                A: "ad_astra:compressed_ostrum",
+                A: "ad_astra:ostrum_plate",
                 B: "ad_astra:ostrum_block",
                 C: "tconstruct:cobalt_block",
                 D: "createastral:navigation_mechanism",
@@ -1836,7 +1836,7 @@ function mechanicalCraftingRecipes(event) {
             output: "ad_astra:jet_suit",
             shape: ["  F  ", "AAGAA", " BEB ", " CDC "],
             inputs: {
-                A: "ad_astra:compressed_calorite",
+                A: "ad_astra:calorite_plate",
                 B: "ad_astra:calorite_tank",
                 C: "ad_astra:calorite_block",
                 D: "ad_astra:calorite_engine",
@@ -1849,7 +1849,7 @@ function mechanicalCraftingRecipes(event) {
             output: "ad_astra:jet_suit_helmet",
             shape: [" F ", "AEA", "AGA"],
             inputs: {
-                A: "ad_astra:compressed_calorite",
+                A: "ad_astra:calorite_plate",
                 E: Item.of("ad_astra:netherite_space_helmet").ignoreNBT(),
                 F: "create:integrated_circuit",
                 G: "createastral:subatomic_ingot",
@@ -1859,7 +1859,7 @@ function mechanicalCraftingRecipes(event) {
             output: "ad_astra:jet_suit_pants",
             shape: ["CEC", "AFA", "A A", "A A"],
             inputs: {
-                A: "ad_astra:compressed_calorite",
+                A: "ad_astra:calorite_plate",
                 C: "ad_astra:calorite_block",
                 E: Item.of("ad_astra:netherite_space_pants").ignoreNBT(),
                 F: "createastral:subatomic_ingot",
@@ -1869,7 +1869,7 @@ function mechanicalCraftingRecipes(event) {
             output: "ad_astra:jet_suit_boots",
             shape: ["FEF", "A A", "C C"],
             inputs: {
-                A: "ad_astra:compressed_calorite",
+                A: "ad_astra:calorite_plate",
                 C: "ad_astra:calorite_block",
                 E: Item.of("ad_astra:netherite_space_boots").ignoreNBT(),
                 F: "dustrial_decor:padded_block",
@@ -1922,7 +1922,7 @@ function mechanicalCraftingRecipes(event) {
             output: "doodads:speed_boots",
             shape: [" ADA ", " AEAC", "BBBB "],
             inputs: {
-                A: "ad_astra:compressed_calorite",
+                A: "ad_astra:calorite_plate",
                 B: "create:sturdy_sheet",
                 C: "ad_astra:steel_engine",
                 D: "createastral:navigation_mechanism",

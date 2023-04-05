@@ -343,12 +343,12 @@ onEvent("recipes", (event) => {
         [
             { mod: "techreborn" },
             "techreborn:titanium_plate",
-            "ad_astra:compressed_calorite",
+            "ad_astra:calorite_plate",
         ],
         [
             { mod: "techreborn" },
             "techreborn:titanium_ingot",
-            "ad_astra:compressed_calorite",
+            "ad_astra:calorite_plate",
         ],
         [
             { mod: "techreborn" },
@@ -363,7 +363,7 @@ onEvent("recipes", (event) => {
         [
             { mod: "techreborn" },
             "techreborn:platinum_plate",
-            "ad_astra:compressed_calorite",
+            "ad_astra:calorite_plate",
         ],
         [
             { output: "techreborn:implosion_compressor" },
@@ -373,12 +373,12 @@ onEvent("recipes", (event) => {
         [
             { mod: "techreborn" },
             "techreborn:nickel_ingot",
-            "ad_astra:compressed_desh",
+            "ad_astra:desh_plate",
         ],
         [
             { mod: "techreborn" },
             "techreborn:nickel_plate",
-            "ad_astra:compressed_desh",
+            "ad_astra:desh_plate",
         ],
         [{ mod: "techreborn" }, "techreborn:brass_plate", "create:brass_sheet"],
         [{ mod: "techreborn" }, "techreborn:brass_ingot", "create:brass_ingot"],
@@ -481,17 +481,17 @@ onEvent("recipes", (event) => {
         ],
         [
             { mod: "techreborn", output: "techreborn:advanced_drill" },
-            "ad_astra:compressed_calorite",
+            "ad_astra:calorite_plate",
             "techreborn:lead_plate",
         ],
         [
             { mod: "techreborn", output: "techreborn:advanced_chainsaw" },
-            "ad_astra:compressed_calorite",
+            "ad_astra:calorite_plate",
             "techreborn:lead_plate",
         ],
         [
             { mod: "techreborn", output: "techreborn:advanced_jackhammer" },
-            "ad_astra:compressed_calorite",
+            "ad_astra:calorite_plate",
             "techreborn:lead_plate",
         ],
         ["techreborn:energy_flow_chip", "techreborn:data_storage_chip"],
