@@ -1300,7 +1300,7 @@
 				{
 					id: "50D956034D3D2FD4"
 					type: "item"
-					item: "ad_astra:compressed_desh"
+					item: "ad_astra:desh_plate"
 					count: 32L
 				}
 			]
@@ -1861,7 +1861,7 @@
 			tasks: [{
 				id: "2E20D62841A10DD6"
 				type: "item"
-				item: "ad_astra:compressed_desh"
+				item: "ad_astra:desh_plate"
 			}]
 		}
 		{

@@ -1123,6 +1123,15 @@ function mixingRecipes(event) {
             time: 700,
         },
         {
+            output: Item.of('minecraft:enchanted_book', '{StoredEnchantments:[{id:"minecraft:mending",lvl:1s}]}'),
+            input: [
+                "16x minecraft:book",
+                "64x create:experience_nugget",
+            ],
+            heat: "heated",
+            time: 700,
+        },
+        {
             output: Fluid.of(
                 "kubejs:blast-resistant_cement",
                 FULL_BUCKET_AMMOUNT
@@ -1536,7 +1545,7 @@ function mixingRecipes(event) {
                 "minecraft:cobbled_deepslate",
                 { fluid: "minecraft:lava", amount: 4500 },
             ],
-            heat: "heated",
+            heat: "",
             time: 1500,
         },
     ].forEach((recipe) => {
