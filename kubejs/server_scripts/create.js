@@ -345,7 +345,7 @@ function itemApplication(event) {
         {
             ingredients: [
                 { item: "techreborn:basic_machine_casing" },
-                { item: "ad_astra:compressed_steel" },
+                { item: "ad_astra:steel_plate" },
             ],
             results: [{ item: "techreborn:advanced_machine_casing" }],
         },
@@ -1155,7 +1155,7 @@ function mixingRecipes(event) {
         {
             output: "4x techreborn:machine_parts",
             input: [
-                "ad_astra:compressed_steel",
+                "ad_astra:steel_plate",
                 "techreborn:carbon_mesh",
                 "8x #c:wires",
             ],
@@ -1759,7 +1759,7 @@ function mechanicalCraftingRecipes(event) {
             output: "ad_astra:coal_generator",
             shape: ["ABCBA", "AAEAA"],
             inputs: {
-                A: "ad_astra:compressed_steel",
+                A: "ad_astra:steel_plate",
                 B: "techreborn:lead_ingot",
                 C: "create:precision_mechanism",
                 E: "ad_astra:engine_fan",
@@ -1813,7 +1813,7 @@ function mechanicalCraftingRecipes(event) {
             shape: ["BDCDB", "BAEAB", "BBEBB"],
             inputs: {
                 A: "create:attribute_filter",
-                B: "ad_astra:compressed_steel",
+                B: "ad_astra:steel_plate",
                 C: "create:mechanical_mixer",
                 D: "create:precision_mechanism",
                 E: "create:fluid_tank",
@@ -1889,7 +1889,7 @@ function mechanicalCraftingRecipes(event) {
             output: "doodads:slimey_shoes",
             shape: [" D ", "EFE", "ABA", "CGC"],
             inputs: {
-                A: "ad_astra:compressed_steel",
+                A: "ad_astra:steel_plate",
                 B: "create:sticker",
                 C: "minecraft:slime_block",
                 D: "createastral:navigation_mechanism",
