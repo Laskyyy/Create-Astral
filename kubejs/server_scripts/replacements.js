@@ -64,7 +64,7 @@ onEvent("recipes", (event) => {
             "techreborn:emerald_plate",
         ],
         ["#c:iron_rods", "createaddition:iron_rod"],
-        ["ad_astra:iron_stick", "createaddition:iron_rod"],
+        ["ad_astra:iron_rod", "createaddition:iron_rod"],
         ["catwalksinc:iron_rod", "createaddition:iron_rod"],
         [
             { type: "minecraft:crafting_shaped" },
@@ -91,12 +91,12 @@ onEvent("recipes", (event) => {
         ],
         [
             { output: "ad_astra:engine_fan" },
-            "ad_astra:compressed_steel",
+            "ad_astra:steel_plate",
             "ad_astra:iron_plate",
         ],
         [
             { output: "ad_astra:engine_frame" },
-            "ad_astra:compressed_steel",
+            "ad_astra:steel_plate",
             "ad_astra:iron_plate",
         ],
         [
@@ -171,22 +171,22 @@ onEvent("recipes", (event) => {
         ],
         [
             { output: "ad_astra:oxygen_tank" },
-            "ad_astra:compressed_steel",
+            "ad_astra:steel_plate",
             "createastral:bronze_sheet",
         ],
         [
             { output: "ad_astra:oxygen_gear" },
-            "ad_astra:compressed_steel",
+            "ad_astra:steel_plate",
             "createastral:bronze_sheet",
         ],
         [
             { output: "ad_astra:steel_tank" },
-            "ad_astra:compressed_steel",
+            "ad_astra:steel_plate",
             "ad_astra:iron_plate",
         ],
         [
             { output: "ad_astra:rocket_nose_cone" },
-            "ad_astra:compressed_steel",
+            "ad_astra:steel_plate",
             "ad_astra:iron_plate",
         ],
         [
@@ -283,12 +283,12 @@ onEvent("recipes", (event) => {
         [
             { mod: "techreborn" },
             "techreborn:tungsten_plate",
-            "ad_astra:compressed_steel",
+            "ad_astra:steel_plate",
         ],
         [
             { mod: "techreborn" },
             "techreborn:tungsten_ingot",
-            "ad_astra:compressed_steel",
+            "ad_astra:steel_plate",
         ],
         [
             { mod: "techreborn" },
@@ -303,12 +303,12 @@ onEvent("recipes", (event) => {
         [
             { mod: "techreborn" },
             "techreborn:tungstensteel_plate",
-            "ad_astra:compressed_steel",
+            "ad_astra:steel_plate",
         ],
         [
             { mod: "techreborn" },
             "techreborn:tungstensteel_ingot",
-            "ad_astra:compressed_steel",
+            "ad_astra:steel_plate",
         ],
         [
             { mod: "techreborn" },
@@ -343,12 +343,12 @@ onEvent("recipes", (event) => {
         [
             { mod: "techreborn" },
             "techreborn:titanium_plate",
-            "ad_astra:compressed_calorite",
+            "ad_astra:calorite_plate",
         ],
         [
             { mod: "techreborn" },
             "techreborn:titanium_ingot",
-            "ad_astra:compressed_calorite",
+            "ad_astra:calorite_plate",
         ],
         [
             { mod: "techreborn" },
@@ -363,7 +363,7 @@ onEvent("recipes", (event) => {
         [
             { mod: "techreborn" },
             "techreborn:platinum_plate",
-            "ad_astra:compressed_calorite",
+            "ad_astra:calorite_plate",
         ],
         [
             { output: "techreborn:implosion_compressor" },
@@ -373,12 +373,12 @@ onEvent("recipes", (event) => {
         [
             { mod: "techreborn" },
             "techreborn:nickel_ingot",
-            "ad_astra:compressed_desh",
+            "ad_astra:desh_plate",
         ],
         [
             { mod: "techreborn" },
             "techreborn:nickel_plate",
-            "ad_astra:compressed_desh",
+            "ad_astra:desh_plate",
         ],
         [{ mod: "techreborn" }, "techreborn:brass_plate", "create:brass_sheet"],
         [{ mod: "techreborn" }, "techreborn:brass_ingot", "create:brass_ingot"],
@@ -481,17 +481,17 @@ onEvent("recipes", (event) => {
         ],
         [
             { mod: "techreborn", output: "techreborn:advanced_drill" },
-            "ad_astra:compressed_calorite",
+            "ad_astra:calorite_plate",
             "techreborn:lead_plate",
         ],
         [
             { mod: "techreborn", output: "techreborn:advanced_chainsaw" },
-            "ad_astra:compressed_calorite",
+            "ad_astra:calorite_plate",
             "techreborn:lead_plate",
         ],
         [
             { mod: "techreborn", output: "techreborn:advanced_jackhammer" },
-            "ad_astra:compressed_calorite",
+            "ad_astra:calorite_plate",
             "techreborn:lead_plate",
         ],
         ["techreborn:energy_flow_chip", "techreborn:data_storage_chip"],
@@ -529,7 +529,7 @@ onEvent("recipes", (event) => {
         [
             { mod: "quarrymod" },
             "techreborn:peridot_plate",
-            "ad_astra:compressed_steel",
+            "ad_astra:steel_plate",
         ],
         [
             { mod: "quarrymod" },
@@ -545,7 +545,7 @@ onEvent("recipes", (event) => {
         [
             { mod: "quarrymod" },
             "techreborn:titanium_plate",
-            "ad_astra:compressed_steel",
+            "ad_astra:steel_plate",
         ],
         [
             { mod: "quarrymod" },

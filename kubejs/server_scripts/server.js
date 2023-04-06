@@ -479,7 +479,7 @@ onEvent("recipes", (event) => {
     });
 
     ["helmet", "chestplate", "leggings", "boots"].forEach((name) => {
-        event.shaped("createastral:strudy_" + name, fullkit[name], {
+        event.shaped("createastral:sturdy_" + name, fullkit[name], {
             S: "createastral:sturdy_sheet_block",
         });
     });
