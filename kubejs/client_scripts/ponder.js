@@ -90,6 +90,12 @@ onEvent("ponder.registry", (event) => {
                     }
                     scene.idle(30);
                     if (y == 3) {
+                        scene.overlay.showOutline(
+                            PonderPalette.GREEN,
+                            "test",
+                            util.select.position(2, 3, 2),
+                            30
+                        );
                         scene
                             .text(30, "Leave a gap in the center", [2, 4, 2])
                             .placeNearTarget()
@@ -146,58 +152,52 @@ onEvent("ponder.registry", (event) => {
                     .placeNearTarget();
             }
         );
-    event.printParticleNames();
-    event
-        .create("tconstruct:seared_melter")
-        // .scene(
-        //     "melter",
-        //     "How to use the seared melter",
-        //     "kubejs:melter2",
-        //     (scene, util) => {
-        //         scene.showBasePlate();
-        //         scene.idle(10);
-        //         scene.markAsFinished();
-        //     }
-        // )
-        .scene(
-            "melter3",
-            "How to use the seared melter",
-            "kubejs:melter3",
-            (scene, util) => {
-                scene.world.modifyBlock(
-                    [3, 1, 2],
-                    (block) => block.with("active", "true"),
-                    false
-                );
-                scene.world.modifyBlock(
-                    [3, 2, 2],
-                    (block) => block.with("active", "true"),
-                    false
-                );
-                scene.showStructure();
-                scene.idle(30);
-                scene.world.modifyTileNBT([2, 2, 2], (nbt) => {
-                    nbt.render_fluid = {};
-                });
-                for (let i = 9; i > 0; i--) {
-                    scene.world.modifyTileNBT([2, 1, 2], (nbt) => {
-                        nbt.timer = i * 20;
-                    });
-                    scene.idle(0.5);
-                }
-                scene.idle(100);
-                scene.particles
-                    .simple(3, "minecraft:smoke", [2, 2, 2])
-                    .scale(4);
-                scene.world.modifyTileNBT([2, 1, 2], (nbt) => {
-                    nbt.Items = [
-                        {
-                            Count: 1,
-                            Slot: 1,
-                            id: "minecraft:iron_block",
-                        },
-                    ];
-                });
-            }
-        );
+    // event.printParticleNames();
+    // event
+    //     .create("tconstruct:seared_melter")
+    //     .scene(
+    //         "melter3",
+    //         "How to use the seared melter",
+    //         "kubejs:melter3",
+    //         (scene, util) => {
+    //             scene.showStructure();
+    //             let storedNBT = {};
+    //             scene.world.modifyTileNBT([2, 2, 2], (nbt) => {
+    //                 storedNBT = nbt;
+    //             });
+    //             scene.world.modifyBlock(
+    //                 [3, 1, 2],
+    //                 (block) => block.with("active", "true"),
+    //                 false
+    //             );
+    //             scene.world.modifyBlock(
+    //                 [3, 2, 2],
+    //                 (block) => block.with("active", "true"),
+    //                 false
+    //             );
+    //             scene.idle(30);
+    //             scene.world.modifyTileNBT([2, 2, 2], (nbt) => {
+    //                 nbt.render_fluid = {};
+    //             });
+    //             for (let i = 9; i > 0; i--) {
+    //                 scene.world.modifyTileNBT([2, 1, 2], (nbt) => {
+    //                     nbt.timer = i * 20;
+    //                 });
+    //                 scene.idle(0.5);
+    //             }
+    //             scene.idle(100);
+    //             scene.particles
+    //                 .simple(3, "minecraft:smoke", [2, 2, 2])
+    //                 .scale(4);
+    //             scene.world.modifyTileNBT([2, 1, 2], (nbt) => {
+    //                 nbt.Items = [
+    //                     {
+    //                         Count: 1,
+    //                         Slot: 1,
+    //                         id: "minecraft:iron_block",
+    //                     },
+    //                 ];
+    //             });
+    //         }
+    //     );
 });
