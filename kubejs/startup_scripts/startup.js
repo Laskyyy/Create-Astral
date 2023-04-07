@@ -487,6 +487,7 @@ onEvent('block.registry', event => {
       { item: 'minecraft:rotten_flesh', tooltip: 'Chewy... might make a good source of leather?' },
       { item: 'computercraft:disk', tooltip: 'This recipe is wierd it actually uses redstone, not rose quartz.' },
       { item: 'createastral:bronze_block', tooltip: 'Texture courtesy of Create: Alloyed!' },
+      { item: 'createastral:bronze_ingot', tooltip: 'Texture courtesy of Create: Alloyed!' },
       { item: 'extractinator:extractinator', tooltip: 'Purely decorative. No functional use.' },
       { item: 'ad_astra:space_helmet', tooltip: 'Can be repaired using Sturdy Sheets.' },
       { item: 'ad_astra:space_suit', tooltip: 'Can be repaired using Sturdy Sheets.' },
