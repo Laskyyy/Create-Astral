@@ -16734,7 +16734,147 @@ hash = "8c686a5e7795d947d5098144b2ff8f0a7f8b1d408c67cda668010fd6b1f7b8b5"
 
 [[files]]
 file = "kubejs/assets/kubejs/ponder/electrolyser.nbt"
-hash = "2fadce25e0792d457b7270148297f2a7308d481f5190d256503755a810e54470"
+hash = "55c658051178897f280d141d74134508a0bc2f44aa0d0f1eed4a149762e279bc"
+
+[[files]]
+file = "kubejs/assets/kubejs/ponder/melter.nbt"
+hash = "7b6f875d633936f161e42d5e7b9ca05e3f3a81c847781566a002efc2e9c5838a"
+
+[[files]]
+file = "kubejs/assets/kubejs/ponder/melter2.nbt"
+hash = "d5c81f672580fb80839b82d9444589e76c2aa00bd5e3b37cbb81772272687db8"
+
+[[files]]
+file = "kubejs/assets/kubejs/ponder/melter3.nbt"
+hash = "856c345c00c36b3c7ec2bfcf0990c4060b96a0502c114f4e5c8ffcde6d69e8da"
+
+[[files]]
+file = "kubejs/assets/kubejs/ponder/portal.nbt"
+hash = "9bd37d8c274f6cb08a7e5474b826570107cdbd0d58e6d17fbe7df8c54ca3ca03"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/cache/cachedEvents.json"
+hash = "4f9f5efb7697559738d511413cc8bae44dae219ba297e11abccef7d022fa090b"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/cache/cachedForgedEvents.json"
+hash = "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/cache/cachedJava.json"
+hash = "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/cache/docs/ars_nouveau.json"
+hash = "99ffc6c5670ff91f34cf49acb1e96b45fd59911c576c6fe52bde3345cb46d3fe"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/cache/docs/artisanworktables.json"
+hash = "42015e52d55243697e0514c37869c86be7fb91dd63e370fbc06d6da3903646d7"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/cache/docs/botanypots.json"
+hash = "983a7f578dfb41cd5264099093862313a45cb128b178a1b50aaa88b4e068de03"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/cache/docs/create.json"
+hash = "ade8dbdd629ed461ff46f84c8a89f6837c99c5c83e06c238d99b1130ce0099bd"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/cache/docs/cucumber.json"
+hash = "219abe3a733944ae232e501ef19c18b00ae54f63a4a03bde140c9d48ff4bb0de"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/cache/docs/dankstorage.json"
+hash = "ce107805f6b993f62e849d3437da6ea6d8cc2da41e33acd74010f869e21e05a6"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/cache/docs/events.json"
+hash = "52af247de2f72d5431b4e3eab572f12a72213f48672e4e9ce60e2156fca917b8"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/cache/docs/extendedcrafting.json"
+hash = "6d30bd79c838a9a813d07d7c599ec0c439305219085cdbe55ff6f83a3a31aebd"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/cache/docs/immersiveengineering.json"
+hash = "54313ee3ad616259752c29c909b6a91f7cde5157445a7cbf0a610d3291110bc0"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/cache/docs/integrateddynamics.json"
+hash = "c773a9ec2ad407250acd517e67acb2d1c18d2ec47d3f5167f4fd2d0d915514c0"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/cache/docs/kubejs.json"
+hash = "f5ce1ec12ccd8d3d5695a70ace67d8f3087db304e469fac6b1667051ecc97a8e"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/cache/docs/mekanism.json"
+hash = "691b8a4cfe63150b33edde10c2e77ac102733cd9b1a21bf12ca1e15c758ee1fa"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/cache/docs/minecraft.json"
+hash = "2d9ba6cffc03eac76dabb6315f0f48e460c4a8018e2ec213626f81b4cd42031d"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/cache/docs/morejs.json"
+hash = "2c90a6e88d6fe53fcde985b235bfd74e28639c443c5a3bc238e92480d9d6aa9e"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/cache/docs/multiblocked.json"
+hash = "3ea8a35fb436368d4af160230802461b4b66239928a06a2b5196e85be5ed9d50"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/cache/docs/probe.json"
+hash = "eabf3964c5cf77d0f31b58cd091776631bf5800ffcca1be6c4c4cd8d14cfbf83"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/cache/docs/registry.json"
+hash = "c76e8fdae5ab850f764c8d069258a5b2a0611f4b691ac563829dd1af7157f2d8"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/cache/docs/thermal.json"
+hash = "22177a3a644d685920cf0e00eaa6a5641e6358e29e27fe0b3196e6e12ff32969"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/cache/docs/types.json"
+hash = "37e8c084c4ea2930b670d3d1022c99a8cf288148cae22ce5914c11e89fb9fba0"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/cache/javaClasses.json"
+hash = "a65daaa2bd92796f6703565ae9915a08d2cf6fbf625abcdc11740c008d62f668"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/cache/mergedClasses.json"
+hash = "878fa8b8199fd5ccd5d272091862f885e3bcf9e85116f108330b75a20ca33fee"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/generated/constants.d.ts"
+hash = "c2d3a3db89c8a089cbb9561c126e521f09d3839bf4249adda7a2cc0951d9661b"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/generated/events.d.ts"
+hash = "06ce600c8dbe82c4c791db8bd49b6393e9b36f513c0d7581b68114dfcefa04f1"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/generated/globals.d.ts"
+hash = "a1648687c84bf110d17504ca1a64cb45f8eb8848664cba24dfb66f60a7bfb0f8"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/generated/java.d.ts"
+hash = "60e595ea61c368d6146b69de1e2f3434919f7cdf93b0dee969136d84ca9b0ded"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/generated/names.d.ts"
+hash = "5df69e07e57726190c1585189a028a42420c20165258d3f5f82e2c5021571815"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/generated/raw.d.ts"
+hash = "59f0d77407f02b8dc4122eb49848e932c40ab32654d208f6bd331cafb75bf712"
+
+[[files]]
+file = "kubejs/assets/kubejs/probe/generated/registries.d.ts"
+hash = "4272b004b54193c3f9d21239306e7f2c9f9df448eae8d04e091afe0858e433bb"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/models/armor/brassarmor_layer_1.png"
@@ -16806,7 +16946,7 @@ hash = "c5b774fb90a3beceb70da1c0c17cab1ecf8e426de29ce56ec95d76e4d80fed6c"
 
 [[files]]
 file = "kubejs/client_scripts/ponder.js"
-hash = "0dd12df75e7ef3743cf5b5c3bef4e8ec925bb0f9238942b0293b8dec89d8a5ed"
+hash = "a89ea087be768c85abda1979c78228619dee31851e13712e06dfaeb0d6eee939"
 
 [[files]]
 file = "kubejs/client_scripts/script.js"
@@ -17988,6 +18128,14 @@ metafile = true
 [[files]]
 file = "options.txt"
 hash = "3fadd1ac5f9ec425949b40170c58556fc9fc1e9a360cb0687fa001634ecfd8e7"
+
+[[files]]
+file = "packwiz-installer.jar"
+hash = "c8268c1412d670299603f235d9c480fec544db660ce5b9004ea8c15c9618c6fa"
+
+[[files]]
+file = "reload.bat"
+hash = "4dd3c1411aaba9cb3b873d3e9d3a070ab9e596fa7397b561d810e632f66af57d"
 
 [[files]]
 file = "resourcepacks/BetterVanillaBuildingV2.83.1/assets/.mcassetsroot"

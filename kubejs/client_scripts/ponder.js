@@ -8,19 +8,20 @@ onEvent("ponder.tag", (event) => {
             Item.of("custommachinery:custom_machine_item", {
                 machine: "createastral:electrolyser",
             }),
+            "createastral:shimmering_stone",
         ]
     );
-    event.createTag(
-        "kubejs:tconstruct",
-        "tconstruct:seared_table",
-        "Tinkers Construct",
-        "Tinkers Construct Basics",
-        [
-            "tconstruct:seared_melter",
-            "tconstruct:foundry_controller",
-            "tconstruct:seared_faucet",
-        ]
-    );
+    // event.createTag(
+    //     "kubejs:tconstruct",
+    //     "tconstruct:seared_table",
+    //     "Tinkers Construct",
+    //     "Tinkers Construct Basics",
+    //     [
+    //         "tconstruct:seared_melter",
+    //         "tconstruct:foundry_controller",
+    //         "tconstruct:seared_faucet",
+    //     ]
+    // );
 });
 
 onEvent("ponder.registry", (event) => {
@@ -150,6 +151,40 @@ onEvent("ponder.registry", (event) => {
                         [3, 4.5, 0]
                     )
                     .placeNearTarget();
+            }
+        );
+    event
+        .create("createastral:shimmering_stone")
+        .scene(
+            "shimmering_stone",
+            "How to create the Moon Portal",
+            "kubejs:portal",
+            (scene, util) => {
+                scene.world.replaceBlocks(
+                    util.select.fromTo(2, 1, 2, 3, 1, 2),
+                    "minecraft:obsidian",
+                    false
+                );
+                scene.showStructure();
+                scene.idle(10);
+                scene.text(
+                    40,
+                    "In this pack, the nether is disabled. Instead, items are spread throughout the different planets.",
+                    [3, 3, 3]
+                );
+                scene.idle(40);
+                [
+                    util.select.fromTo(1, 1, 2, 4, 1, 2),
+                    util.select.fromTo(1, 2, 2, 1, 5, 2),
+                    util.select.fromTo(4, 2, 2, 4, 5, 2),
+                    util.select.fromTo(2, 5, 2, 3, 5, 2),
+                ].forEach((selection) => {
+                    scene.world.replaceBlocks(
+                        selection,
+                        "createastral:shimmering_stone",
+                        true
+                    );
+                });
             }
         );
     // event.printParticleNames();
