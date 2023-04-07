@@ -67,7 +67,7 @@
 		}
 		{
 			title: "{chapter.7.quest.2.title}"
-			icon: "ad_astra:compressed_steel"
+			icon: "ad_astra:steel_plate"
 			x: -8.0d
 			y: 5.0d
 			shape: "square"
@@ -1208,7 +1208,7 @@
 			rewards: [{
 				id: "13393CF16F799EB6"
 				type: "item"
-				item: "libraryferret:fake_gold_block"
+				item: "minecraft:gold_block"
 			}]
 		}
 		{
@@ -1506,7 +1506,7 @@
 			tasks: [{
 				id: "3C768C0BF038A29E"
 				type: "item"
-				item: "ad_astra:compressed_ostrum"
+				item: "ad_astra:ostrum_plate"
 			}]
 		}
 		{

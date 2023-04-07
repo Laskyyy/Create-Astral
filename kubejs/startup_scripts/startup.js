@@ -527,6 +527,7 @@ onEvent('block.registry', event => {
       { item: 'minecraft:rotten_flesh', tooltip: 'Chewy... might make a good source of leather?' },
       { item: 'computercraft:disk', tooltip: 'This recipe is wierd it actually uses redstone, not rose quartz.' },
       { item: 'createastral:bronze_block', tooltip: 'Texture courtesy of Create: Alloyed!' },
+      { item: 'createastral:bronze_ingot', tooltip: 'Texture courtesy of Create: Alloyed!' },
       { item: 'extractinator:extractinator', tooltip: 'Purely decorative. No functional use.' },
       { item: 'ad_astra:space_helmet', tooltip: 'Can be repaired using Sturdy Sheets.' },
       { item: 'ad_astra:space_suit', tooltip: 'Can be repaired using Sturdy Sheets.' },
@@ -537,6 +538,12 @@ onEvent('block.registry', event => {
       { item: 'create:empty_blaze_burner', tooltip: 'Blazes are found on the moon.' },
       { item: 'create:blaze_burner', tooltip: 'Blazes are found on the moon.' },
       { item: 'techreborn:basic_machine_casing', tooltip: 'Crafted with either silver OR lead!' },
+      { item: 'minecraft:nether_wart', tooltip: 'Found underground on the moon.' },
+      { item: 'minecraft:soul_sand', tooltip: 'Found underground on the moon.' },
+      { item: 'ae2:certus_quartz', tooltip: 'Found underground on the moon.' },
+      { item: 'minecraft:ancient_debris', tooltip: 'Found underground on the moon and mars. Can be obtained from bastions and infernal spires on mars.' },
+      { item: 'techreborn:uu_matter', tooltip: 'Material forged in chapter 5.' }, 
+      { item: 'create:mechanical_arm', tooltip: 'Use a hopper to place this in a mechanical crafter.' } ,
 
 
       { item: 'techreborn:silver_ingot', tooltip: 'This metal is found on the moon. Y=65' },
@@ -565,10 +572,10 @@ onEvent('block.registry', event => {
     tooltips.forEach(tooltip => {
       e.addAdvanced(tooltip.item, (item, advanced, text) => {
         if (!e.isShift()) {
-          text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()]);
+          text.add(1, [Text.of('Hold ').darkGreen(), Text.of('Shift ').green(), Text.of('to see more info.').darkGreen()]);
         }
         if (e.isShift()) {
-          text.add(1, [Text.of(tooltip.tooltip).gold()]);
+          text.add(1, [Text.of(tooltip.tooltip).green()]);
         }
       });
     });

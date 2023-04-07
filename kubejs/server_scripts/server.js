@@ -481,7 +481,7 @@ onEvent("recipes", (event) => {
     });
 
     ["helmet", "chestplate", "leggings", "boots"].forEach((name) => {
-        event.shaped("createastral:strudy_" + name, fullkit[name], {
+        event.shaped("createastral:sturdy_" + name, fullkit[name], {
             S: "createastral:sturdy_sheet_block",
         });
     });
@@ -621,6 +621,8 @@ onEvent("recipes", (event) => {
     });
     event.smelting("create:andesite_alloy", "createastral:andesite_compound");
     event.blasting("create:andesite_alloy", "createastral:andesite_compound");
+    event.blasting("tconstruct:scorched_basin", "tconstruct:seared_basin");
+    event.blasting("tconstruct:scorched_table", "tconstruct:seared_table");
 
     //SMITHING RADIANT STUFF
 

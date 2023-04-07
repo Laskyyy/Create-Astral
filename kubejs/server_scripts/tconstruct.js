@@ -70,19 +70,19 @@ onEvent("recipes", (event) => {
             fluid: ["tconstruct:molten_bronze", 4000],
             result: "create:cogwheel",
             cooling_time: 100,
-            cast: ["tconstruct:casts/multi_use/coin", false],
+            cast: ["tconstruct:coin_cast", false],
         },
         {
             fluid: ["tconstruct:molten_bronze", 12000],
             result: "create:large_cogwheel",
             cooling_time: 100,
-            cast: ["tconstruct:casts/multi_use/gear", false],
+            cast: ["tconstruct:gear_cast", false],
         },
         {
             fluid: ["tconstruct:molten_gold", 45000],
             result: "createastral:golden_bowl",
             cooling_time: 100,
-            cast: ["tconstruct:casts/multi_use/round_plate", false],
+            cast: ["tconstruct:round_plate_cast", false],
         },
     ].forEach((recipe) => {
         event.custom({

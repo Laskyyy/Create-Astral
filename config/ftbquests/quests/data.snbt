@@ -1,5 +1,6 @@
 {
 	version: 13
+	icon: "ftbquests:book"
 	default_reward_team: false
 	default_consume_items: false
 	default_autoclaim_rewards: "disabled"

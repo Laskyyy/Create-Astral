@@ -112,6 +112,7 @@ onEvent("recipes", (event) => {
         { output: "create:cogwheel" },
         { output: "create:large_cogwheel" },
         { output: "create:copper_casing" },
+        { output: "create:blaze_cake" },
         {
             output: "create:andesite_alloy",
             input: "minecraft:andesite",
@@ -185,7 +186,6 @@ onEvent("recipes", (event) => {
         { output: "createaddition:alternator" },
         { output: "createaddition:electric_motor" },
         { output: "createaddition:tesla_coil" },
-        { output: "createaddition:straw" },
         {
             output: "createaddition:biomass_pellet",
         },
@@ -206,7 +206,7 @@ onEvent("recipes", (event) => {
         { output: "ad_astra:fuel_refinery" },
         { output: "ad_astra:oxygen_loader" },
         { output: "ad_astra:energizer" },
-        { output: "ad_astra:iron_stick" },
+        { output: "ad_astra:iron_rod" },
         { output: "ad_astra:nasa_workbench" },
         { output: "ad_astra:rocket_fin" },
         { output: "ad_astra:launch_pad" },
