@@ -1,0 +1,166 @@
+{
+    "properties": [
+        {
+            "type": "property:mod",
+            "mod": "morejs"
+        }
+    ],
+    "classes": [
+        {
+            "type": "document:class",
+            "properties": [
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:union",
+                        "types": [
+                            {
+                                "type": "type:primitive",
+                                "name": "number"
+                            },
+                            {
+                                "type": "type:jsArray",
+                                "types": []
+                            },
+                            {
+                                "type": "type:jsArray",
+                                "types": [
+                                    {
+                                        "type": "type:primitive",
+                                        "name": "number"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "type:jsArray",
+                                "types": [
+                                    {
+                                        "type": "type:primitive",
+                                        "name": "number"
+                                    },
+                                    {
+                                        "type": "type:primitive",
+                                        "name": "number"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ],
+            "className": "com.almostreliable.morejs.features.villager.IntRange"
+        },
+        {
+            "type": "document:class",
+            "properties": [
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:class",
+                        "name": "com.almostreliable.morejs.util.WeightedList$Builder"
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:array",
+                        "component": {
+                            "type": "type:union",
+                            "types": [
+                                {
+                                    "type": "type:primitive",
+                                    "name": "any"
+                                },
+                                {
+                                    "type": "type:jsArray",
+                                    "types": [
+                                        {
+                                            "type": "type:primitive",
+                                            "name": "number"
+                                        },
+                                        {
+                                            "type": "type:primitive",
+                                            "name": "any"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "className": "com.almostreliable.morejs.util.WeightedList"
+        },
+        {
+            "type": "document:class",
+            "properties": [
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:object",
+                        "members": [
+                            {
+                                "key": "firstItem",
+                                "value": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                                }
+                            },
+                            {
+                                "key": "secondItem",
+                                "value": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                                }
+                            },
+                            {
+                                "key": "outputItem",
+                                "value": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                                }
+                            },
+                            {
+                                "key": {
+                                    "optional": true,
+                                    "key": "types"
+                                },
+                                "value": {
+                                    "type": "type:array",
+                                    "component": {
+                                        "type": "type:class",
+                                        "name": "com.almostreliable.morejs.features.villager.TradeTypes"
+                                    }
+                                }
+                            },
+                            {
+                                "key": {
+                                    "optional": true,
+                                    "key": "professions"
+                                },
+                                "value": {
+                                    "type": "type:array",
+                                    "component": {
+                                        "type": "type:class",
+                                        "name": "net.minecraft.world.entity.npc.VillagerProfession"
+                                    }
+                                }
+                            },
+                            {
+                                "key": {
+                                    "optional": true,
+                                    "key": "level"
+                                },
+                                "value": {
+                                    "type": "type:class",
+                                    "name": "com.almostreliable.morejs.features.villager.IntRange"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "className": "com.almostreliable.morejs.features.villager.TradeFilter"
+        }
+    ]
+}

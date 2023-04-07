@@ -1,0 +1,404 @@
+{
+    "classes": [
+        {
+            "type": "document:class",
+            "className": "dev.latvian.mods.kubejs.misc.MobEffectBuilder",
+            "methods": [
+                {
+                    "type": "document:method",
+                    "name": "modifyAttribute",
+                    "static": false,
+                    "abstract": false,
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "attribute",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "net.minecraft.resources.ResourceLocation"
+                            },
+                            "varArg": false
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "identifier",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "java.lang.String"
+                            },
+                            "varArg": false
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "d",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "double"
+                            },
+                            "varArg": false
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "operation",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation"
+                            },
+                            "varArg": false
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.misc.MobEffectBuilder"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:modify",
+                            "index": 0,
+                            "newType": {
+                                "type": "type:class",
+                                "name": "net.minecraft.world.entity.ai.attributes.Attribute"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "className": "dev.latvian.mods.kubejs.block.BlockBuilder",
+            "methods": [
+                {
+                    "type": "document:method",
+                    "name": "textureAll",
+                    "static": false,
+                    "abstract": false,
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "tex",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "java.lang.String"
+                            },
+                            "varArg": false
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.block.BlockBuilder"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:modify",
+                            "index": 0,
+                            "newType": {
+                                "type": "type:primitive",
+                                "name": "Special.Texture"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "document:method",
+                    "name": "textureSide",
+                    "static": false,
+                    "abstract": false,
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "direction",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "net.minecraft.core.Direction"
+                            },
+                            "varArg": false
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "tex",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "java.lang.String"
+                            },
+                            "varArg": false
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.block.BlockBuilder"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:modify",
+                            "index": 1,
+                            "newType": {
+                                "type": "type:primitive",
+                                "name": "Special.Texture"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "document:method",
+                    "name": "texture",
+                    "static": false,
+                    "abstract": false,
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "id",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "java.lang.String"
+                            },
+                            "varArg": false
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "tex",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "java.lang.String"
+                            },
+                            "varArg": false
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.block.BlockBuilder"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:modify",
+                            "index": 1,
+                            "newType": {
+                                "type": "type:primitive",
+                                "name": "Special.Texture"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "className": "dev.latvian.mods.kubejs.item.ItemBuilder",
+            "methods": [
+                {
+                    "type": "document:method",
+                    "name": "texture",
+                    "static": false,
+                    "abstract": false,
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "key",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "java.lang.String"
+                            },
+                            "varArg": false
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "tex",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "java.lang.String"
+                            },
+                            "varArg": false
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.item.ItemBuilder"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:modify",
+                            "index": 1,
+                            "newType": {
+                                "type": "type:class",
+                                "name": "net.minecraft.world.entity.ai.attributes.Attribute"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "document:method",
+                    "name": "texture",
+                    "static": false,
+                    "abstract": false,
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "tex",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "java.lang.String"
+                            },
+                            "varArg": false
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.item.ItemBuilder"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:modify",
+                            "index": 0,
+                            "newType": {
+                                "type": "type:class",
+                                "name": "net.minecraft.world.entity.ai.attributes.Attribute"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "document:method",
+                    "name": "modifyAttribute",
+                    "static": false,
+                    "abstract": false,
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "attribute",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "net.minecraft.resources.ResourceLocation"
+                            },
+                            "varArg": false
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "identifier",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "java.lang.String"
+                            },
+                            "varArg": false
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "d",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "double"
+                            },
+                            "varArg": false
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "operation",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation"
+                            },
+                            "varArg": false
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.item.ItemBuilder"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:modify",
+                            "index": 0,
+                            "newType": {
+                                "type": "type:class",
+                                "name": "net.minecraft.world.entity.ai.attributes.Attribute"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "className": "dev.latvian.mods.kubejs.item.custom.RecordItemJS$Builder",
+            "methods": [
+                {
+                    "type": "document:method",
+                    "name": "song",
+                    "static": false,
+                    "abstract": false,
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "s",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "net.minecraft.resources.ResourceLocation"
+                            },
+                            "varArg": false
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.item.custom.RecordItemJS$Builder"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:modify",
+                            "index": 0,
+                            "name": "song",
+                            "newType": {
+                                "type": "type:class",
+                                "name": "net.minecraft.sounds.SoundEvent"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "className": "dev.latvian.mods.kubejs.BuilderBase",
+            "methods": [
+                {
+                    "type": "document:method",
+                    "name": "translationKey",
+                    "static": false,
+                    "abstract": false,
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "key",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "java.lang.String"
+                            },
+                            "varArg": false
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:parameterized",
+                        "params": [
+                            {
+                                "type": "type:variable",
+                                "name": "T"
+                            }
+                        ],
+                        "base": {
+                            "type": "type:class",
+                            "name": "dev.latvian.mods.kubejs.BuilderBase"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "type": "property:modify",
+                            "index": 0,
+                            "newType": {
+                                "type": "type:primitive",
+                                "name": "Special.LangKey"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,679 @@
+{
+    "properties": [
+        {
+            "type": "property:mod",
+            "mod": "immersiveengineering"
+        },
+        {
+            "type": "property:mod",
+            "mod": "kubejs_immersive_engineering"
+        }
+    ],
+    "classes": [
+        {
+            "type": "document:class",
+            "className": "com.prunoideae.probejs.DocumentedRecipes",
+            "fields": [
+                {
+                    "type": "document:field",
+                    "name": "immersiveengineering",
+                    "fieldType": {
+                        "type": "type:class",
+                        "name": "com.prunoideae.probejs.ImmersiveEngineeringRecipes"
+                    },
+                    "final": true
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "className": "com.prunoideae.probejs.ImmersiveEngineeringRecipes",
+            "methods": [
+                {
+                    "type": "document:method",
+                    "name": "alloy",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input1",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input2",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.immersiveengineering.recipe.AlloyRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "blast_furnace",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "slag",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.immersiveengineering.recipe.BlastFurnaceRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "blast_furnace",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.immersiveengineering.recipe.BlastFurnaceRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "blast_furnace_fuel",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.immersiveengineering.recipe.BlastFurnaceFuelRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "coke_oven",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.immersiveengineering.recipe.CokeOvenRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "garden_clothe",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                                }
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "soil",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "render",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "com.prunoideae.probejs.immersiveengineering.CropRender"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.immersiveengineering.recipe.ClocheRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "garden_clothe",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                                }
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "soil",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.immersiveengineering.recipe.ClocheRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "fertilizer",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.immersiveengineering.recipe.ClocheFertilizerRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "metal_press",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "mold",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.immersiveengineering.recipe.MetalPressRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "arc_furnace",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                                }
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "additives",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                }
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "slag",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.immersiveengineering.recipe.ArcFurnaceRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "arc_furnace",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                                }
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "additives",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                }
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.immersiveengineering.recipe.ArcFurnaceRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "arc_furnace",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                                }
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.immersiveengineering.recipe.ArcFurnaceRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "crusher",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "secondaries",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                                }
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.immersiveengineering.recipe.CrusherRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "crusher",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.immersiveengineering.recipe.CrusherRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "sawmill",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "secondaries",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:object",
+                                    "members": [
+                                        {
+                                            "key": "stripping",
+                                            "value": {
+                                                "type": "type:primitive",
+                                                "name": "boolean"
+                                            }
+                                        },
+                                        {
+                                            "key": "output",
+                                            "value": {
+                                                "type": "type:class",
+                                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "stripped",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.immersiveengineering.recipe.SawmillRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "sawmill",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "secondaries",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:object",
+                                    "members": [
+                                        {
+                                            "key": "stripping",
+                                            "value": {
+                                                "type": "type:primitive",
+                                                "name": "boolean"
+                                            }
+                                        },
+                                        {
+                                            "key": "output",
+                                            "value": {
+                                                "type": "type:class",
+                                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.immersiveengineering.recipe.SawmillRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "sawmill",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.immersiveengineering.recipe.SawmillRecipeJS"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "className": "com.prunoideae.probejs.immersiveengineering.CropRender",
+            "properties": [
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:union",
+                        "types": [
+                            {
+                                "type": "type:object",
+                                "members": [
+                                    {
+                                        "key": "type",
+                                        "value": {
+                                            "type": "type:union",
+                                            "types": [
+                                                {
+                                                    "type": "type:primitive",
+                                                    "name": "\"crop\""
+                                                },
+                                                {
+                                                    "type": "type:primitive",
+                                                    "name": "\"stacking\""
+                                                },
+                                                {
+                                                    "type": "type:primitive",
+                                                    "name": "\"stem\""
+                                                },
+                                                {
+                                                    "type": "type:primitive",
+                                                    "name": "\"generic\""
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "key": "block",
+                                        "value": {
+                                            "type": "type:primitive",
+                                            "name": "Special.Block"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "type:primitive",
+                                "name": "Special.Block"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

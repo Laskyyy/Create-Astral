@@ -1,0 +1,493 @@
+{
+    "properties": [
+        {
+            "type": "property:mod",
+            "mod": "mekanism"
+        },
+        {
+            "type": "property:mod",
+            "mod": "kubejs_mekanism"
+        }
+    ],
+    "classes": [
+        {
+            "type": "document:class",
+            "className": "com.prunoideae.probejs.DocumentedRecipes",
+            "fields": [
+                {
+                    "type": "document:field",
+                    "name": "mekanism",
+                    "final": true,
+                    "fieldType": {
+                        "type": "type:class",
+                        "name": "com.prunoideae.probejs.MekanismRecipes"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "className": "com.prunoideae.probejs.MekanismRecipes",
+            "methods": [
+                {
+                    "type": "document:method",
+                    "name": "crushing",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.kubejs.mekanism.recipe.ItemToItemRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "enriching",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.kubejs.mekanism.recipe.ItemToItemRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "smelting",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.kubejs.mekanism.recipe.ItemToItemRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "compressing",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "gas",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "com.prunoideae.probejs.mekanism.GasStackJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.kubejs.mekanism.recipe.ItemAndGasToItemRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "purifying",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "gas",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "com.prunoideae.probejs.mekanism.GasStackJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.kubejs.mekanism.recipe.ItemAndGasToItemRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "injecting",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "gas",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "com.prunoideae.probejs.mekanism.GasStackJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.kubejs.mekanism.recipe.ItemAndGasToItemRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "chemical_infusing",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "com.prunoideae.probejs.mekanism.GasStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input1",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "com.prunoideae.probejs.mekanism.GasStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input2",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "com.prunoideae.probejs.mekanism.GasStackJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.kubejs.mekanism.recipe.ChemicalInfusingRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "combining",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input1",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input2",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.kubejs.mekanism.recipe.CombiningRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "dissolution",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "com.prunoideae.probejs.mekanism.GasStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "com.prunoideae.probejs.mekanism.GasStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "addition",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.kubejs.mekanism.recipe.CrystallizingRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "metallurgic_infusing",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "infusion",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "com.prunoideae.probejs.mekanism.InfusionStackJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.kubejs.mekanism.recipe.MetallurgicInfusingRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "metallurgic_infusing",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.kubejs.mekanism.recipe.MetallurgicInfusingRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "sawing",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "bonus",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.kubejs.mekanism.recipe.SawingRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "sawing",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.kubejs.mekanism.recipe.SawingRecipeJS"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "className": "com.prunoideae.probejs.mekanism.GasStackJS",
+            "properties": [
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:object",
+                        "members": [
+                            {
+                                "key": "gas",
+                                "value": {
+                                    "type": "type:primitive",
+                                    "name": "Special.InfuseType"
+                                }
+                            },
+                            {
+                                "key": "amount",
+                                "value": {
+                                    "type": "type:primitive",
+                                    "name": "number"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "className": "com.prunoideae.probejs.mekanism.InfusionStackJS",
+            "properties": [
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:object",
+                        "members": [
+                            {
+                                "key": "infuse_type",
+                                "value": {
+                                    "type": "type:primitive",
+                                    "name": "Special.InfuseType"
+                                }
+                            },
+                            {
+                                "key": "amount",
+                                "value": {
+                                    "type": "type:primitive",
+                                    "name": "number"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

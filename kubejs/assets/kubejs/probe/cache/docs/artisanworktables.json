@@ -1,0 +1,1186 @@
+{
+    "properties": [
+        {
+            "type": "property:mod",
+            "mod": "artisanworktables"
+        }
+    ],
+    "classes": [
+        {
+            "type": "document:class",
+            "className": "com.prunoideae.probejs.DocumentedRecipes",
+            "fields": [
+                {
+                    "final": true,
+                    "type": "document:field",
+                    "name": "artisanworktables",
+                    "fieldType": {
+                        "type": "type:class",
+                        "name": "com.prunoideae.probejs.ArtisanWorktablesRecipes"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "methods": [
+                {
+                    "type": "document:method",
+                    "name": "basic_shaped",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "pattern",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:primitive",
+                                    "name": "string"
+                                }
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "items",
+                            "paramType": {
+                                "type": "type:object",
+                                "members": [
+                                    {
+                                        "key": {
+                                            "type": "type:primitive",
+                                            "name": "string"
+                                        },
+                                        "value": {
+                                            "type": "type:class",
+                                            "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapedRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "basic_shapeless",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "inputs",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                }
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapelessRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "blacksmith_shaped",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "pattern",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:primitive",
+                                    "name": "string"
+                                }
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "items",
+                            "paramType": {
+                                "type": "type:object",
+                                "members": [
+                                    {
+                                        "key": {
+                                            "type": "type:primitive",
+                                            "name": "string"
+                                        },
+                                        "value": {
+                                            "type": "type:class",
+                                            "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapedRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "blacksmith_shapeless",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "inputs",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                }
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapelessRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "carpenter_shaped",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "pattern",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:primitive",
+                                    "name": "string"
+                                }
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "items",
+                            "paramType": {
+                                "type": "type:object",
+                                "members": [
+                                    {
+                                        "key": {
+                                            "type": "type:primitive",
+                                            "name": "string"
+                                        },
+                                        "value": {
+                                            "type": "type:class",
+                                            "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapedRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "carpenter_shapeless",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "inputs",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                }
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapelessRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "chef_shaped",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "pattern",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:primitive",
+                                    "name": "string"
+                                }
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "items",
+                            "paramType": {
+                                "type": "type:object",
+                                "members": [
+                                    {
+                                        "key": {
+                                            "type": "type:primitive",
+                                            "name": "string"
+                                        },
+                                        "value": {
+                                            "type": "type:class",
+                                            "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapedRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "chef_shapeless",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "inputs",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                }
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapelessRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "chemist_shaped",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "pattern",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:primitive",
+                                    "name": "string"
+                                }
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "items",
+                            "paramType": {
+                                "type": "type:object",
+                                "members": [
+                                    {
+                                        "key": {
+                                            "type": "type:primitive",
+                                            "name": "string"
+                                        },
+                                        "value": {
+                                            "type": "type:class",
+                                            "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapedRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "chemist_shapeless",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "inputs",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                }
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapelessRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "designer_shaped",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "pattern",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:primitive",
+                                    "name": "string"
+                                }
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "items",
+                            "paramType": {
+                                "type": "type:object",
+                                "members": [
+                                    {
+                                        "key": {
+                                            "type": "type:primitive",
+                                            "name": "string"
+                                        },
+                                        "value": {
+                                            "type": "type:class",
+                                            "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapedRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "designer_shapeless",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "inputs",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                }
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapelessRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "engineer_shaped",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "pattern",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:primitive",
+                                    "name": "string"
+                                }
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "items",
+                            "paramType": {
+                                "type": "type:object",
+                                "members": [
+                                    {
+                                        "key": {
+                                            "type": "type:primitive",
+                                            "name": "string"
+                                        },
+                                        "value": {
+                                            "type": "type:class",
+                                            "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapedRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "engineer_shapeless",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "inputs",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                }
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapelessRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "farmer_shaped",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "pattern",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:primitive",
+                                    "name": "string"
+                                }
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "items",
+                            "paramType": {
+                                "type": "type:object",
+                                "members": [
+                                    {
+                                        "key": {
+                                            "type": "type:primitive",
+                                            "name": "string"
+                                        },
+                                        "value": {
+                                            "type": "type:class",
+                                            "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapedRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "farmer_shapeless",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "inputs",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                }
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapelessRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "jeweler_shaped",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "pattern",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:primitive",
+                                    "name": "string"
+                                }
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "items",
+                            "paramType": {
+                                "type": "type:object",
+                                "members": [
+                                    {
+                                        "key": {
+                                            "type": "type:primitive",
+                                            "name": "string"
+                                        },
+                                        "value": {
+                                            "type": "type:class",
+                                            "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapedRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "jeweler_shapeless",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "inputs",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                }
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapelessRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "mage_shaped",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "pattern",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:primitive",
+                                    "name": "string"
+                                }
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "items",
+                            "paramType": {
+                                "type": "type:object",
+                                "members": [
+                                    {
+                                        "key": {
+                                            "type": "type:primitive",
+                                            "name": "string"
+                                        },
+                                        "value": {
+                                            "type": "type:class",
+                                            "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapedRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "mage_shapeless",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "inputs",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                }
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapelessRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "mason_shaped",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "pattern",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:primitive",
+                                    "name": "string"
+                                }
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "items",
+                            "paramType": {
+                                "type": "type:object",
+                                "members": [
+                                    {
+                                        "key": {
+                                            "type": "type:primitive",
+                                            "name": "string"
+                                        },
+                                        "value": {
+                                            "type": "type:class",
+                                            "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapedRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "mason_shapeless",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "inputs",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                }
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapelessRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "potter_shaped",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "pattern",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:primitive",
+                                    "name": "string"
+                                }
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "items",
+                            "paramType": {
+                                "type": "type:object",
+                                "members": [
+                                    {
+                                        "key": {
+                                            "type": "type:primitive",
+                                            "name": "string"
+                                        },
+                                        "value": {
+                                            "type": "type:class",
+                                            "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapedRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "potter_shapeless",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "inputs",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                }
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapelessRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "scribe_shaped",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "pattern",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:primitive",
+                                    "name": "string"
+                                }
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "items",
+                            "paramType": {
+                                "type": "type:object",
+                                "members": [
+                                    {
+                                        "key": {
+                                            "type": "type:primitive",
+                                            "name": "string"
+                                        },
+                                        "value": {
+                                            "type": "type:class",
+                                            "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapedRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "scribe_shapeless",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "inputs",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                }
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapelessRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "tailor_shaped",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "pattern",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:primitive",
+                                    "name": "string"
+                                }
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "items",
+                            "paramType": {
+                                "type": "type:object",
+                                "members": [
+                                    {
+                                        "key": {
+                                            "type": "type:primitive",
+                                            "name": "string"
+                                        },
+                                        "value": {
+                                            "type": "type:class",
+                                            "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapedRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "tailor_shapeless",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "inputs",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                }
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapelessRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "tanner_shaped",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "pattern",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:primitive",
+                                    "name": "string"
+                                }
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "items",
+                            "paramType": {
+                                "type": "type:object",
+                                "members": [
+                                    {
+                                        "key": {
+                                            "type": "type:primitive",
+                                            "name": "string"
+                                        },
+                                        "value": {
+                                            "type": "type:class",
+                                            "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapedRecipeJS"
+                    }
+                },
+                {
+                    "type": "document:method",
+                    "name": "tanner_shapeless",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "inputs",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                }
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapelessRecipeJS"
+                    }
+                }
+            ],
+            "className": "com.prunoideae.probejs.ArtisanWorktablesRecipes"
+        }
+    ]
+}

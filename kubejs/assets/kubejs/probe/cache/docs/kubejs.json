@@ -1,0 +1,622 @@
+{
+    "classes": [
+        {
+            "type": "document:class",
+            "className": "dev.latvian.mods.kubejs.bindings.ComponentWrapper",
+            "methods": [
+                {
+                    "type": "document:method",
+                    "name": "translate",
+                    "static": true,
+                    "abstract": false,
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "key",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "java.lang.String"
+                            },
+                            "varArg": false
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "objects",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:class",
+                                    "name": "java.lang.Object"
+                                }
+                            },
+                            "varArg": true
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "net.minecraft.network.chat.MutableComponent"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:modify",
+                            "index": 0,
+                            "newType": {
+                                "type": "type:primitive",
+                                "name": "Special.LangKey"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "document:method",
+                    "name": "translate",
+                    "static": true,
+                    "abstract": false,
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "key",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "java.lang.String"
+                            },
+                            "varArg": false
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "net.minecraft.network.chat.MutableComponent"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:modify",
+                            "index": 0,
+                            "newType": {
+                                "type": "type:primitive",
+                                "name": "Special.LangKey"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "className": "dev.latvian.mods.kubejs.level.BlockContainerJS",
+            "methods": [
+                {
+                    "type": "document:method",
+                    "name": "getId",
+                    "static": false,
+                    "abstract": false,
+                    "params": [],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "java.lang.String"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:returns",
+                            "returns": {
+                                "type": "type:intersection",
+                                "types": [
+                                    {
+                                        "type": "type:primitive",
+                                        "name": "Special.Block"
+                                    },
+                                    {
+                                        "type": "type:primitive",
+                                        "name": "`${string}:${string}`"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "document:method",
+                    "name": "set",
+                    "static": false,
+                    "abstract": false,
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "id",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "net.minecraft.resources.ResourceLocation"
+                            },
+                            "varArg": false
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "void"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:modify",
+                            "index": 0,
+                            "newType": {
+                                "type": "type:primitive",
+                                "name": "Special.Block"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "document:method",
+                    "name": "set",
+                    "static": false,
+                    "abstract": false,
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "id",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "net.minecraft.resources.ResourceLocation"
+                            },
+                            "varArg": false
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "properties",
+                            "paramType": {
+                                "type": "type:parameterized",
+                                "params": [
+                                    {
+                                        "type": "type:class",
+                                        "name": "java.lang.Object"
+                                    },
+                                    {
+                                        "type": "type:class",
+                                        "name": "java.lang.Object"
+                                    }
+                                ],
+                                "base": {
+                                    "type": "type:class",
+                                    "name": "java.util.Map"
+                                }
+                            },
+                            "varArg": false
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "void"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:modify",
+                            "index": 0,
+                            "newType": {
+                                "type": "type:primitive",
+                                "name": "Special.Block"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "document:method",
+                    "name": "set",
+                    "static": false,
+                    "abstract": false,
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "id",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "net.minecraft.resources.ResourceLocation"
+                            },
+                            "varArg": false
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "properties",
+                            "paramType": {
+                                "type": "type:parameterized",
+                                "params": [
+                                    {
+                                        "type": "type:class",
+                                        "name": "java.lang.Object"
+                                    },
+                                    {
+                                        "type": "type:class",
+                                        "name": "java.lang.Object"
+                                    }
+                                ],
+                                "base": {
+                                    "type": "type:class",
+                                    "name": "java.util.Map"
+                                }
+                            },
+                            "varArg": false
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "flags",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "int"
+                            },
+                            "varArg": false
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "void"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:modify",
+                            "index": 0,
+                            "newType": {
+                                "type": "type:primitive",
+                                "name": "Special.Block"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "className": "dev.latvian.mods.kubejs.item.FoodBuilder",
+            "methods": [
+                {
+                    "type": "document:method",
+                    "name": "effect",
+                    "static": false,
+                    "abstract": false,
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "mobEffectId",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "net.minecraft.resources.ResourceLocation"
+                            },
+                            "varArg": false
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "duration",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "int"
+                            },
+                            "varArg": false
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "amplifier",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "int"
+                            },
+                            "varArg": false
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "probability",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "float"
+                            },
+                            "varArg": false
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.item.FoodBuilder"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:modify",
+                            "index": 0,
+                            "newType": {
+                                "type": "type:primitive",
+                                "name": "Special.MobEffect"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "className": "dev.latvian.mods.kubejs.bindings.IngredientWrapper",
+            "methods": [
+                {
+                    "type": "document:method",
+                    "name": "of",
+                    "static": true,
+                    "abstract": false,
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "object",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "java.lang.Object"
+                            },
+                            "varArg": false
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:modify",
+                            "index": 0,
+                            "name": "ingredient",
+                            "newType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "document:method",
+                    "name": "of",
+                    "static": true,
+                    "abstract": false,
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "object",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "java.lang.Object"
+                            },
+                            "varArg": false
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "count",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "int"
+                            },
+                            "varArg": false
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:modify",
+                            "index": 0,
+                            "name": "ingredient",
+                            "newType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "properties": [],
+            "className": "dev.latvian.mods.kubejs.recipe.RecipeEventJS",
+            "methods": [
+                {
+                    "type": "document:method",
+                    "name": "getRecipes",
+                    "static": false,
+                    "abstract": false,
+                    "params": [],
+                    "returns": {
+                        "type": "type:parameterized",
+                        "params": [
+                            {
+                                "type": "type:class",
+                                "name": "java.lang.String"
+                            },
+                            {
+                                "type": "type:class",
+                                "name": "java.lang.Object"
+                            }
+                        ],
+                        "base": {
+                            "type": "type:class",
+                            "name": "java.util.Map"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "type": "property:returns",
+                            "returns": {
+                                "type": "type:class",
+                                "name": "com.prunoideae.probejs.DocumentedRecipes"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "document:method",
+                    "name": "custom",
+                    "static": false,
+                    "abstract": false,
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "o",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "java.lang.Object"
+                            },
+                            "varArg": false
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.RecipeJS"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:modify",
+                            "index": 0,
+                            "newType": {
+                                "type": "type:object",
+                                "members": [
+                                    {
+                                        "key": "type",
+                                        "value": {
+                                            "type": "type:primitive",
+                                            "name": "Special.RecipeType"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "fields": [
+                {
+                    "type": "document:field",
+                    "name": "smithing",
+                    "static": false,
+                    "final": true,
+                    "fieldType": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.RecipeFunction"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:hide"
+                        }
+                    ]
+                },
+                {
+                    "type": "document:field",
+                    "name": "smelting",
+                    "static": false,
+                    "final": true,
+                    "fieldType": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.RecipeFunction"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:hide"
+                        }
+                    ]
+                },
+                {
+                    "type": "document:field",
+                    "name": "blasting",
+                    "static": false,
+                    "final": true,
+                    "fieldType": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.RecipeFunction"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:hide"
+                        }
+                    ]
+                },
+                {
+                    "type": "document:field",
+                    "name": "shapeless",
+                    "static": false,
+                    "final": true,
+                    "fieldType": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.RecipeFunction"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:hide"
+                        }
+                    ]
+                },
+                {
+                    "type": "document:field",
+                    "name": "campfireCooking",
+                    "static": false,
+                    "final": true,
+                    "fieldType": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.RecipeFunction"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:hide"
+                        }
+                    ]
+                },
+                {
+                    "type": "document:field",
+                    "name": "smoking",
+                    "static": false,
+                    "final": true,
+                    "fieldType": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.RecipeFunction"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:hide"
+                        }
+                    ]
+                },
+                {
+                    "type": "document:field",
+                    "name": "stonecutting",
+                    "static": false,
+                    "final": true,
+                    "fieldType": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.RecipeFunction"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:hide"
+                        }
+                    ]
+                },
+                {
+                    "type": "document:field",
+                    "name": "shaped",
+                    "static": false,
+                    "final": true,
+                    "fieldType": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.RecipeFunction"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:hide"
+                        }
+                    ]
+                }
+            ],
+            "constructors": []
+        },
+        {
+            "type": "document:class",
+            "properties": [
+                {
+                    "type": "property:comment",
+                    "lines": [
+                        "This is a fabricated class to store all recipes!"
+                    ]
+                }
+            ],
+            "className": "com.prunoideae.probejs.DocumentedRecipes"
+        }
+    ]
+}

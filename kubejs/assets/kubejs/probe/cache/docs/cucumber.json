@@ -1,0 +1,79 @@
+{
+    "properties": [
+        {
+            "type": "property:mod",
+            "mod": "cucumber"
+        }
+    ],
+    "classes": [
+        {
+            "type": "document:class",
+            "className": "com.prunoideae.probejs.DocumentedRecipes",
+            "fields": [
+                {
+                    "final": true,
+                    "type": "document:field",
+                    "name": "cucumber",
+                    "fieldType": {
+                        "type": "type:class",
+                        "name": "com.prunoideae.probejs.CucumberRecipes"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "methods": [
+                {
+                    "type": "document:method",
+                    "name": "shaped_no_mirror",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "pattern",
+                            "paramType": {
+                                "type": "type:array",
+                                "component": {
+                                    "type": "type:primitive",
+                                    "name": "string"
+                                }
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "items",
+                            "paramType": {
+                                "type": "type:object",
+                                "members": [
+                                    {
+                                        "key": {
+                                            "type": "type:primitive",
+                                            "name": "string"
+                                        },
+                                        "value": {
+                                            "type": "type:class",
+                                            "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.minecraft.ShapedRecipeJS"
+                    }
+                }
+            ],
+            "className": "com.prunoideae.probejs.CucumberRecipes"
+        }
+    ]
+}

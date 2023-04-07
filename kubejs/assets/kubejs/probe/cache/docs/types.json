@@ -1,0 +1,818 @@
+{
+    "classes": [
+        {
+            "type": "document:class",
+            "className": "dev.latvian.mods.kubejs.level.gen.filter.biome.BiomeFilter",
+            "properties": [
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:class",
+                        "name": "net.minecraft.world.level.biome.Biome"
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:primitive",
+                        "name": "RegExp"
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:array",
+                        "component": {
+                            "type": "type:class",
+                            "name": "net.minecraft.world.level.biome.Biome"
+                        }
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:object",
+                        "members": [
+                            {
+                                "key": {
+                                    "optional": true,
+                                    "key": "or"
+                                },
+                                "value": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.level.gen.filter.biome.BiomeFilter"
+                                }
+                            },
+                            {
+                                "key": {
+                                    "optional": true,
+                                    "key": "not"
+                                },
+                                "value": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.level.gen.filter.biome.BiomeFilter"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "className": "dev.latvian.mods.kubejs.fluid.FluidStackJS",
+            "properties": [
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:class",
+                        "name": "dev.architectury.fluid.FluidStack"
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:class",
+                        "name": "net.minecraft.world.level.material.Fluid"
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:object",
+                        "members": [
+                            {
+                                "key": "fluid",
+                                "value": {
+                                    "type": "type:class",
+                                    "name": "net.minecraft.resources.ResourceLocation"
+                                }
+                            },
+                            {
+                                "key": {
+                                    "optional": true,
+                                    "key": "amount"
+                                },
+                                "value": {
+                                    "type": "type:primitive",
+                                    "name": "number"
+                                }
+                            },
+                            {
+                                "key": {
+                                    "optional": true,
+                                    "key": "nbt"
+                                },
+                                "value": {
+                                    "type": "type:class",
+                                    "name": "net.minecraft.nbt.CompoundTag"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:union",
+                        "types": [
+                            {
+                                "type": "type:primitive",
+                                "name": "\"\""
+                            },
+                            {
+                                "type": "type:primitive",
+                                "name": "\"-\""
+                            },
+                            {
+                                "type": "type:primitive",
+                                "name": "\"empty\""
+                            },
+                            {
+                                "type": "type:primitive",
+                                "name": "\"minecraft:empty\""
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "className": "dev.latvian.mods.kubejs.block.state.BlockStatePredicate",
+            "properties": [
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:array",
+                        "component": {
+                            "type": "type:class",
+                            "name": "dev.latvian.mods.kubejs.block.state.BlockStatePredicate"
+                        }
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:object",
+                        "members": [
+                            {
+                                "key": {
+                                    "key": "or",
+                                    "optional": true
+                                },
+                                "value": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.block.state.BlockStatePredicate"
+                                }
+                            },
+                            {
+                                "key": {
+                                    "key": "not",
+                                    "optional": true
+                                },
+                                "value": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.block.state.BlockStatePredicate"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:class",
+                        "name": "net.minecraft.world.level.block.Block"
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:class",
+                        "name": "net.minecraft.world.level.block.state.BlockState"
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:primitive",
+                        "name": "`#${Special.BlockTag}`"
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:primitive",
+                        "name": "RegExp"
+                    }
+                }
+            ],
+            "methods": [
+                {
+                    "type": "document:method",
+                    "name": "of",
+                    "static": false,
+                    "abstract": false,
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "o",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "java.lang.Object"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.block.state.BlockStatePredicate"
+                    },
+                    "properties": [
+                        {
+                            "type": "property:modify",
+                            "index": 0,
+                            "newType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.block.state.BlockStatePredicate"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "className": "net.minecraft.nbt.CompoundTag",
+            "properties": [
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:primitive",
+                        "name": "string"
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:object",
+                        "members": [
+                            {
+                                "key": {
+                                    "type": "type:primitive",
+                                    "name": "string"
+                                },
+                                "value": {
+                                    "type": "type:union",
+                                    "types": [
+                                        {
+                                            "type": "type:primitive",
+                                            "name": "string"
+                                        },
+                                        {
+                                            "type": "type:primitive",
+                                            "name": "number"
+                                        },
+                                        {
+                                            "type": "type:primitive",
+                                            "name": "boolean"
+                                        },
+                                        {
+                                            "type": "type:class",
+                                            "name": "net.minecraft.nbt.CompoundTag"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "className": "net.minecraft.world.item.ItemStack",
+            "properties": [
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "properties": [
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:primitive",
+                        "name": "string"
+                    }
+                }
+            ],
+            "className": "net.minecraft.resources.ResourceLocation"
+        },
+        {
+            "type": "document:class",
+            "className": "dev.latvian.mods.kubejs.recipe.ingredientaction.IngredientActionFilter",
+            "properties": [
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:primitive",
+                        "name": "number"
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:object",
+                        "members": [
+                            {
+                                "key": "item",
+                                "value": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                }
+                            },
+                            {
+                                "key": {
+                                    "key": "index",
+                                    "optional": true
+                                },
+                                "value": {
+                                    "type": "type:primitive",
+                                    "name": "number"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "className": "net.minecraft.world.item.Item",
+            "methods": [
+                {
+                    "properties": [
+                        {
+                            "type": "property:returns",
+                            "returns": {
+                                "type": "type:intersection",
+                                "types": [
+                                    {
+                                        "type": "type:primitive",
+                                        "name": "Special.Item"
+                                    },
+                                    {
+                                        "type": "type:primitive",
+                                        "name": "`${string}:${string}`"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "type": "document:method",
+                    "name": "getId",
+                    "static": false,
+                    "abstract": false,
+                    "params": [],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "java.lang.String"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "className": "dev.latvian.mods.kubejs.item.ItemStackJS",
+            "properties": [
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:class",
+                        "name": "net.minecraft.world.item.Item"
+                    }
+                }
+            ],
+            "methods": [
+                {
+                    "properties": [
+                        {
+                            "type": "property:returns",
+                            "returns": {
+                                "type": "type:intersection",
+                                "types": [
+                                    {
+                                        "type": "type:primitive",
+                                        "name": "Special.Item"
+                                    },
+                                    {
+                                        "type": "type:primitive",
+                                        "name": "`${string}:${string}`"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "type": "document:method",
+                    "name": "getId",
+                    "static": false,
+                    "abstract": false,
+                    "params": [],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "java.lang.String"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "className": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS",
+            "properties": [
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:primitive",
+                        "name": "`#${Special.ItemTag}`"
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.fluid.FluidStackJS"
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:primitive",
+                        "name": "\"*\""
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:primitive",
+                        "name": "`${Special.Mod}`"
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:primitive",
+                        "name": "`%${string}`"
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:primitive",
+                        "name": "RegExp"
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:class",
+                        "name": "net.minecraft.world.item.crafting.Ingredient"
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:array",
+                        "component": {
+                            "type": "type:class",
+                            "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                        }
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:object",
+                        "members": [
+                            {
+                                "key": "type",
+                                "value": {
+                                    "type": "type:primitive",
+                                    "name": "Special.Ingredient"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:object",
+                        "members": [
+                            {
+                                "key": "item",
+                                "value": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                                }
+                            },
+                            {
+                                "key": {
+                                    "key": "count",
+                                    "optional": true
+                                },
+                                "value": {
+                                    "type": "type:primitive",
+                                    "name": "number"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:object",
+                        "members": [
+                            {
+                                "key": "fluid",
+                                "value": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.fluid.FluidStackJS"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:object",
+                        "members": [
+                            {
+                                "key": "value",
+                                "value": {
+                                    "type": "type:primitive",
+                                    "name": "object"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:object",
+                        "members": [
+                            {
+                                "key": "ingredient",
+                                "value": {
+                                    "type": "type:primitive",
+                                    "name": "object"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "className": "dev.latvian.mods.kubejs.recipe.filter.RecipeFilter",
+            "properties": [
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:array",
+                        "component": {
+                            "type": "type:class",
+                            "name": "dev.latvian.mods.kubejs.recipe.filter.RecipeFilter"
+                        }
+                    }
+                },
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:object",
+                        "members": [
+                            {
+                                "key": {
+                                    "optional": true,
+                                    "key": "exact"
+                                },
+                                "value": {
+                                    "type": "type:primitive",
+                                    "name": "boolean"
+                                }
+                            },
+                            {
+                                "key": {
+                                    "optional": true,
+                                    "key": "not"
+                                },
+                                "value": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.recipe.filter.RecipeFilter"
+                                }
+                            },
+                            {
+                                "key": {
+                                    "optional": true,
+                                    "key": "or"
+                                },
+                                "value": {
+                                    "type": "type:array",
+                                    "component": {
+                                        "type": "type:class",
+                                        "name": "dev.latvian.mods.kubejs.recipe.filter.RecipeFilter"
+                                    }
+                                }
+                            },
+                            {
+                                "key": {
+                                    "optional": true,
+                                    "key": "id"
+                                },
+                                "value": {
+                                    "type": "type:union",
+                                    "types": [
+                                        {
+                                            "type": "type:primitive",
+                                            "name": "Special.RecipeId"
+                                        },
+                                        {
+                                            "type": "type:primitive",
+                                            "name": "RegExp"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "key": {
+                                    "key": "type",
+                                    "optional": true
+                                },
+                                "value": {
+                                    "type": "type:primitive",
+                                    "name": "Special.RecipeSerializer"
+                                }
+                            },
+                            {
+                                "key": {
+                                    "optional": true,
+                                    "key": "group"
+                                },
+                                "value": {
+                                    "type": "type:primitive",
+                                    "name": "string"
+                                }
+                            },
+                            {
+                                "key": {
+                                    "optional": true,
+                                    "key": "mod"
+                                },
+                                "value": {
+                                    "type": "type:primitive",
+                                    "name": "Special.Mod"
+                                }
+                            },
+                            {
+                                "key": {
+                                    "optional": true,
+                                    "key": "input"
+                                },
+                                "value": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                }
+                            },
+                            {
+                                "key": {
+                                    "optional": true,
+                                    "key": "output"
+                                },
+                                "value": {
+                                    "type": "type:class",
+                                    "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "className": "java.util.Map",
+            "properties": [
+                {
+                    "type": "property:assign",
+                    "assign": {
+                        "type": "type:object",
+                        "members": [
+                            {
+                                "key": {
+                                    "type": "type:variable",
+                                    "name": "K"
+                                },
+                                "value": {
+                                    "type": "type:variable",
+                                    "name": "V"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "className": "java.util.List",
+            "methods": [
+                {
+                    "type": "document:method",
+                    "name": "[Symbol.iterator]",
+                    "params": [],
+                    "returns": {
+                        "type": "type:parameterized",
+                        "base": {
+                            "type": "type:primitive",
+                            "name": "IterableIterator"
+                        },
+                        "params": [
+                            {
+                                "type": "type:variable",
+                                "name": "E"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "fields": [
+                {
+                    "type": "document:field",
+                    "name": "[key: number]",
+                    "fieldType": {
+                        "type": "type:variable",
+                        "name": "E"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "className": "java.util.AbstractList",
+            "methods": [
+                {
+                    "type": "document:method",
+                    "name": "[Symbol.iterator]",
+                    "params": [],
+                    "returns": {
+                        "type": "type:parameterized",
+                        "base": {
+                            "type": "type:primitive",
+                            "name": "IterableIterator"
+                        },
+                        "params": [
+                            {
+                                "type": "type:variable",
+                                "name": "E"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "fields": [
+                {
+                    "type": "document:field",
+                    "name": "[key: number]",
+                    "fieldType": {
+                        "type": "type:variable",
+                        "name": "E"
+                    }
+                }
+            ]
+        }
+    ]
+}

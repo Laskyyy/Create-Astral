@@ -1,0 +1,88 @@
+{
+    "properties": [
+        {
+            "type": "property:mod",
+            "mod": "botanypots"
+        }
+    ],
+    "classes": [
+        {
+            "type": "document:class",
+            "className": "com.prunoideae.probejs.DocumentedRecipes",
+            "fields": [
+                {
+                    "type": "document:field",
+                    "name": "botanypots",
+                    "final": true,
+                    "fieldType": {
+                        "type": "type:class",
+                            "name": "com.prunoideae.probejs.BotanyPotsRecipes"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "document:class",
+            "className": "com.prunoideae.probejs.BotanyPotsRecipes",
+            "methods": [
+                {
+                    "type": "document:method",
+                    "name": "crop",
+                    "params": [
+                        {
+                            "type": "property:param",
+                            "name": "output",
+                            "paramType": {
+                                "type": "type:union",
+                                "types": [
+                                    {
+                                        "type": "type:object",
+                                        "members": [
+                                            {
+                                                "key": "item",
+                                                "value": {
+                                                    "type": "type:class",
+                                                    "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                                                }
+                                            },
+                                            {
+                                                "key": "minRolls",
+                                                "value": {
+                                                    "type": "type:primitive",
+                                                    "name": "number"
+                                                }
+                                            },
+                                            {
+                                                "key": "maxRolls",
+                                                "value": {
+                                                    "type": "type:primitive",
+                                                    "name": "number"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "type:class",
+                                        "name": "dev.latvian.mods.kubejs.item.ItemStackJS"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "property:param",
+                            "name": "input",
+                            "paramType": {
+                                "type": "type:class",
+                                "name": "dev.latvian.mods.kubejs.item.ingredient.IngredientJS"
+                            }
+                        }
+                    ],
+                    "returns": {
+                        "type": "type:class",
+                        "name": "dev.latvian.mods.kubejs.recipe.mod.BotanyPotsCropRecipeJS"
+                    }
+                }
+            ]
+        }
+    ]
+}
