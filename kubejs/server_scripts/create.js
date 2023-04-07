@@ -1593,7 +1593,7 @@ function mixingRecipes(event) {
         {
             output: "doodads:asphalt",
             input: [
-                { fluid: "kubejs:andesite_compound", amount: 3000 },
+                { fluid: "kubejs:compound_mixture", amount: 3000 },
                 "#c:concrete_powder",
             ],
             heat: "",
