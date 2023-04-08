@@ -37,7 +37,181 @@ function lizardTooltipChanges(event) {
 ///// REGISTERING CUSTOM FLUIDS ////
 
 
+//LIQUID FOODS
+function liquidFoodGen(event) {
+  [
+    { 
+      container:'c:dough',
+      name:'dumplings_fluid',
+      displayName:'Dumpling Mix',
+      color:0xffff80
+    },
+    {
+      container:'minecraft:bowl',
+      name:'pumpkin_soup_fluid',
+      displayName:'Pumpkin Soup',
+      color:0xdddd00
+    },
+    {
+      container:'minecraft:bowl',
+      name:'vegetable_noodles_fluid',
+      displayName:'Guljalabala',
+      color:0x00eeee
+    },
+    {
+      container:'minecraft:bowl',
+      name:'mushroom_rice_fluid',
+      displayName:'Mushroom Rice',
+      color:0xddddee
+    },
+    {
+      container:'minecraft:bowl',
+      name:'beetroot_soup_fluid',
+      displayName:'Corn Soup',
+      color:0xffff80
+    },
+    {
+      container:'minecraft:glass_bottle',
+      name:'hot_cocoa_fluid',
+      displayName:'Hot Cocoa',
+      color:0x993d00
+    },
+    {
+      container:'minecraft:bowl',
+      name:'noodle_soup_fluid',
+      displayName:'Noodle Soup',
+      color:0xffdd80
+    },
+    {
+      container:'minecraft:pumpkin',
+      name:'stuffed_pumpkin_block_fluid',
+      displayName:'Pumpkin Stuffing',
+      color:0xdddddd
+    },
+    {
+      container:'minecraft:bowl',
+      name:'mushroom_stew_fluid',
+      displayName:'Mushroom Stew',
+      color:0xb35900
+    },
+    {
+      container:'minecraft:bowl',
+      name:'glow_berry_custard_fluid',
+      displayName:'Glow Berry Custard',
+      color:0xffff99
+    },
+    {
+      container:'minecraft:bowl',
+      name:'beef_stew_fluid',
+      displayName:'Beef Stew',
+      color:0x990000
+    },
+    {
+      container:'minecraft:bowl',
+      name:'cooked_rice_fluid',
+      displayName:'Rice',
+      color:0xffffe6
+    },
+    {
+      container:'minecraft:bowl',
+      name:'bone_broth_fluid',
+      displayName:'Bone Broth',
+      color:0xffffe6
+    },
+    {
+      container:'minecraft:bowl',
+      name:'rabbit_stew_fluid',
+      displayName:'Rabbit Stew',
+      color:0xb33c00
+    },
+    {
+      container:'minecraft:bowl',
+      name:'pasta_with_mutton_chop_fluid',
+      displayName:'Mutton Pasta',
+      color:0xe67300
+    },
+    {
+      container:'minecraft:bowl',
+      name:'baked_cod_stew_fluid',
+      displayName:'Cod Stew',
+      color:0xffff80
+    },
+    {
+      container:'minecraft:bowl',
+      name:'squid_ink_pasta_fluid',
+      displayName:'Squid Ink Pasta',
+      color:0xffff80
+    },
+    {
+      container:'minecraft:bowl',
+      name:'tomato_sauce_fluid',
+      displayName:'Tomato Sauce',
+      color:0xb32400
+    },
+    {
+      container:'minecraft:bowl',
+      name:'fish_stew_fluid',
+      displayName:'Fish Stew',
+      color:0xff5c33
+    },
+    {
+      container:'minecraft:bowl',
+      name:'pasta_with_meatballs_fluid',
+      displayName:'Spaghetti with Meatballs',
+      color:0xff0000
+    },
+    {
+      container:'minecraft:bowl',
+      name:'dog_food_fluid',
+      displayName:'Dog Food',
+      color:0x800000
+    },
+    {
+      container:'minecraft:bowl',
+      name:'ratatouille_fluid',
+      displayName:'Ratatouille',
+      color:0xe60000
+    },
+    {
+      container:'minecraft:bowl',
+      name:'fried_rice_fluid',
+      displayName:'Fried Rice',
+      color:0xffcc99
+    },
+    {
+      container:'minecraft:bowl',
+      name:'vegetable_soup_fluid',
+      displayName:'Vegetable Soup',
+      color:0x009900
+    },
+    {
+      container:'minecraft:glass_bottle',
+      name:'apple_cider_fluid',
+      displayName:'Apple Cider',
+      color:0xffad66
+    },
+    {
+      container:'minecraft:bowl',
+      name:'chicken_soup_fluid',
+      displayName:'Chicken Soup',
+      color:0xffdd99
+    },
+    {
+      container:'minecraft:glass_bottle',
+      name:'hamburger_fluid',
+      displayName:'Liquid Burger',
+      color:0x660000
+    }
 
+  ].forEach(f => {
+    let fluid = event.create(f.name)
+      .thinTexture(f.color)
+      .bucketColor(f.color)
+      .displayName(f.displayName)
+    .stillTexture('tconstruct:block/fluid/molten/still')
+    .flowingTexture('tconstruct:block/fluid/molten/flowing')
+  });
+}
 
 
 onEvent('fluid.registry', event => {
@@ -96,6 +270,8 @@ onEvent('fluid.registry', event => {
     .displayName('Blast-Resistant Cement')
   .stillTexture('tconstruct:block/fluid/molten/still')
 	.flowingTexture('tconstruct:block/fluid/molten/flowing')
+	
+  liquidFoodGen(event);
 })
 
 ///// MODIFY CHARACTERISTICS OF ITEMS /////
