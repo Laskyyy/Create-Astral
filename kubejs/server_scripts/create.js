@@ -1231,7 +1231,7 @@ function mixingRecipes(event) {
             output: Fluid.of("tconstruct:molten_rose_gold", 9000),
             input: ["minecraft:copper_ingot", "minecraft:gold_ingot"],
             heat: "",
-            time: 1500,
+            time: 300,
         },
         {
             output: Fluid.of("tconstruct:molten_bronze", 18000),
