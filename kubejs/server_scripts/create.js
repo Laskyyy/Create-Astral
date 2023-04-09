@@ -1123,11 +1123,11 @@ function mixingRecipes(event) {
             time: 700,
         },
         {
-            output: Item.of('minecraft:enchanted_book', '{StoredEnchantments:[{id:"minecraft:mending",lvl:1s}]}'),
-            input: [
-                "16x minecraft:book",
-                "64x create:experience_nugget",
-            ],
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:mending",lvl:1s}]}'
+            ),
+            input: ["16x minecraft:book", "64x create:experience_nugget"],
             heat: "heated",
             time: 700,
         },
@@ -1230,7 +1230,7 @@ function mixingRecipes(event) {
         {
             output: Fluid.of("tconstruct:molten_rose_gold", 9000),
             input: ["minecraft:copper_ingot", "minecraft:gold_ingot"],
-            heat: "",
+            heat: "heated",
             time: 300,
         },
         {
