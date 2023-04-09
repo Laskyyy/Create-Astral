@@ -135,7 +135,7 @@ function crushingRecipes(event) {
             ],
         },
         {
-            input: "#coral_blocks",
+            input: "#c:coral_blocks",
             outputs: [["techreborn:calcite_dust", 1]],
         },
         //Asurine, Veridiun Crushing
@@ -261,7 +261,11 @@ function crushingRecipes(event) {
             input: "techreborn:" + ore + "_ore",
         });
         event.recipes.createCrushing(
-            ["2x techreborn:raw_" + ore.split("_")[1]],
+            [
+                "2x techreborn:raw_" + ore.contains("_")
+                    ? ore.split("_")[1]
+                    : ore,
+            ],
             "techreborn:" + ore + "_ore"
         );
     });

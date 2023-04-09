@@ -273,6 +273,7 @@ onEvent("recipes", (event) => {
         { type: "create:crushing", input: "minecraft:granite" },
         { type: "create:crushing", input: "minecraft:andesite" },
         { type: "create:crushing", input: "create:asurine" },
+        { type: "create:crushing", input: "#create:stone_types/asurine" },
         { type: "create:crushing", input: "create:veridium" },
         { type: "create:mixing", output: "create:brass_ingot" },
         { type: "create:crushing", input: "minecraft:netherrack" },
