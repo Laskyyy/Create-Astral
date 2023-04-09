@@ -1738,7 +1738,7 @@ function mechanicalCraftingRecipes(event) {
                 B: "create:electron_tube",
                 C: "create:mechanical_press",
                 D: "create:precision_mechanism",
-                E: "techreborn:silver_block",
+                E: "techreborn:silver_storage_block",
             },
         },
         {
