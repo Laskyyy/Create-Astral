@@ -2254,7 +2254,7 @@ hash = "63453e6b4bcef75881316e89a8d292ab017835fd18caa3fc64dc884502b2c88b"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/structures/space_station.nbt"
-hash = "d32013f6c35994fc20b3403cd5682749fee467b2fe176b5093094120c3a3066a"
+hash = "4c663f0874402f2ddf28d77b1c553a649833aec2a1de950dc4aed522ece36597"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/structures/village/moon/lunarian_village/fluids.nbt"
@@ -16966,7 +16966,7 @@ hash = "058c91a44f9f4c079069775e15aea88454aee80420815cf5af51dedf01187d24"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
-hash = "db13bd0162d4c04f6314347b0561ab2a7507f0f80271e525d1d9e9439967ea74"
+hash = "7610d78d8f62fe1d48c707c769ee36e0ca06e57d99b9efe7e765560609414adb"
 
 [[files]]
 file = "kubejs/server_scripts/createaddons.js"
@@ -16982,7 +16982,7 @@ hash = "d69d7a927f839e4aef568d5e40627ffd22ebafc54a721376d5ae6bdea93a53f9"
 
 [[files]]
 file = "kubejs/server_scripts/server.js"
-hash = "0ac12c232a475aa565c17a4da64e461be0d5f935ecca808f6c74f2477f7ca4ed"
+hash = "1f1204ed7a28e5130c4e51d903cf47b48842a1741245a6eaaffdab3399b20d9b"
 
 [[files]]
 file = "kubejs/server_scripts/tconstruct.js"
@@ -37089,12 +37089,64 @@ file = "resources/ad_astra/lang/en_us.json"
 hash = "d2138ea461e7cb82e6977291ccc9813834543faaca20d0a7d7a84a0b50ec7cb0"
 
 [[files]]
+file = "resources/ad_astra/textures/block/chiseled_moon_stone_bricks.png"
+hash = "c83c56a54d1dd84275216d9b60e60a1c6e79aa2b8b65b1ffcf8cc9c90052b2b8"
+
+[[files]]
+file = "resources/ad_astra/textures/block/cracked_moon_stone_bricks.png"
+hash = "95537419f03328d475f4f4f5642c5e3d82116ff86fab4c4806b54da23ca03d50"
+
+[[files]]
 file = "resources/ad_astra/textures/block/deepslate_calorite_ore.png"
 hash = "504ec1d94a78e3cce068c4bf3f4b7a9713bb94a674e858807e9b3f537eaec51c"
 
 [[files]]
-file = "resources/ad_astra/textures/block/globes/moon_globe.png"
+file = "resources/ad_astra/textures/block/moon_cobblestone.png"
+hash = "34b8c736a9bb93d5a6330f135b8ed1b9919cda75cc09a2307053cf0cfa99fc48"
+
+[[files]]
+file = "resources/ad_astra/textures/block/moon_globe.png"
 hash = "d36de6cbdb87e3e5fc6f31ae4f2ffa3640d73730d3394a1695691da01f4a0be8"
+
+[[files]]
+file = "resources/ad_astra/textures/block/moon_ice_shard_ore.png"
+hash = "5ccc60b46f5fdb9b4ab1516254996915ac72a620ef33a7776554c32eecca2b71"
+
+[[files]]
+file = "resources/ad_astra/textures/block/moon_ore_cheese.png"
+hash = "af06472e65413a77a002ee4ca18a0e68a775095cfd6d0ec815c28fa709017ac2"
+
+[[files]]
+file = "resources/ad_astra/textures/block/moon_ore_desh.png"
+hash = "67abd167aca8e1806981a8af10dd5863dd9674a6ec84c87e01c0708cc5ffd8eb"
+
+[[files]]
+file = "resources/ad_astra/textures/block/moon_ore_iron.png"
+hash = "80914a4007b9e60e39d6854993d55ce9a1e281b8b2e10c12c4e19ee097e313f5"
+
+[[files]]
+file = "resources/ad_astra/textures/block/moon_pillar.png"
+hash = "b76e900577a851c5e630ce3633571ffd87ac2104c2ccfc9ff0f9539f8b40af4c"
+
+[[files]]
+file = "resources/ad_astra/textures/block/moon_pillar_top.png"
+hash = "27c0c26f1835097da2057c7211546c73c44dc33fcb9785dd750e4da114afdadd"
+
+[[files]]
+file = "resources/ad_astra/textures/block/moon_sand.png"
+hash = "312f1712bc031eaf48acd251043df138755a7c2645d4aff031d2ddb3221eada0"
+
+[[files]]
+file = "resources/ad_astra/textures/block/moon_stone.png"
+hash = "f9a917c6d4719014e8b7ed24f815acdef0b3cad140de504aec6cdeb69e84182b"
+
+[[files]]
+file = "resources/ad_astra/textures/block/moon_stone_bricks.png"
+hash = "e6bda8262823e452548edd347d7bf6e95088b0a596583a7357f4b1f59e4f3489"
+
+[[files]]
+file = "resources/ad_astra/textures/block/polished_moon_stone.png"
+hash = "720f000a1017639a594175140c695fea9ffb9c8a5871d3afda383bd7eea17d18"
 
 [[files]]
 file = "resources/ad_astra/textures/gui/planet_bar/earth_planet_bar.png"
