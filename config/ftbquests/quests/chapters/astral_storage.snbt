@@ -216,14 +216,11 @@
 			}]
 		}
 		{
-			title: "Certus quartz dust automation!"
+			title: "{chapter.6.quest.2.title}"
 			x: -6.5d
 			y: -5.0d
-			subtitle: "Blue dust? hmmm..."
-			description: [
-				"You can automate this by putting sand next to it in a crafting table, and throwing the resulting seeds into water. They will grow into pure crystals, which can be ground down in an inscriber for doubled the dust."
-				"Crystal growth accelerators speed up this process significantly, where only two will cut 20 mins to only 1. They consume a bunch of power though!"
-			]
+			subtitle: "{chapter.6.quest.2.subtitle}"
+			description: ["{chapter.6.quest.2.description}"]
 			hide_dependency_lines: true
 			dependencies: ["227EF17194467491"]
 			id: "47DD53AAA0680214"
@@ -236,8 +233,8 @@
 		{
 			x: -3.5d
 			y: -5.0d
-			subtitle: "You should have some now!"
-			description: ["Shimmer can be bottomless, like lava! Might be a bit overkill though."]
+			subtitle: "{chapter.6.quest.3.subtitle}"
+			description: ["{chapter.6.quest.3.description}"]
 			hide_dependency_lines: true
 			dependencies: ["227EF17194467491"]
 			id: "5B72AC99C3A727CE"
@@ -250,7 +247,7 @@
 		{
 			x: -5.0d
 			y: -5.0d
-			description: ["This should be stockpiled when investing into larger AE2 setups."]
+			description: ["{chapter.6.quest.1.description}"]
 			dependencies: [
 				"5B72AC99C3A727CE"
 				"47DD53AAA0680214"
@@ -264,11 +261,11 @@
 			}]
 		}
 		{
-			title: "Processors"
+			title: "{chapter.6.quest.4.title}"
 			icon: "ae2:calculation_processor"
 			x: -5.0d
 			y: -6.0d
-			subtitle: "We suggest stockpiling in sets of 10-20, it's a pain crafting them all one by one."
+			subtitle: "{chapter.6.quest.4.subtitle}"
 			dependencies: ["2D5C0605E1EB21AD"]
 			id: "0F92EA9231F85D25"
 			tasks: [
@@ -290,16 +287,12 @@
 			]
 		}
 		{
-			title: "The first cables"
+			title: "{chapter.6.quest.5.title}"
 			icon: "ae2:fluix_glass_cable"
 			x: -7.0d
 			y: -7.5d
-			subtitle: "The first items you probably you will use"
-			description: [
-				"The shimmer glass cable can carry up to 8 channels, when you exceed the channel limit, that entire piece of network will go offline!"
-				"Smart cables display the amount of channels used, both on jade (your block viewer in top middle) and on the block itself, viewed as a line."
-				""
-			]
+			subtitle: "{chapter.6.quest.5.subtitle}"
+			description: ["{chapter.6.quest.5.description}"]
 			dependencies: ["0F92EA9231F85D25"]
 			min_required_tasks: 1
 			id: "29DB1FA90A9FEE9C"
@@ -307,7 +300,7 @@
 				{
 					id: "385213E0E6E13C3B"
 					type: "item"
-					title: "Any #ae2:glass_cable"
+					title: "{chapter.6.quest.5.task.1.title}"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -319,7 +312,7 @@
 				{
 					id: "24DC43C594E8D66F"
 					type: "item"
-					title: "Any #ae2:smart_cable"
+					title: "{chapter.6.quest.5.task.2.title}"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -331,16 +324,12 @@
 			]
 		}
 		{
-			title: "The jumpstart of the system"
+			title: "{chapter.6.quest.14.title}"
 			icon: "ae2:singularity"
 			x: -5.5d
 			y: -7.5d
-			subtitle: "Time for engineering baby"
-			description: [
-				"Everything AE2 consumes a channel, which cables can transport. More on that later, but keep in mind each side of a CONTROLLER gives 32 channels, and an entire ACCEPTOR share 8 channels."
-				""
-				"(Only one item is needed to complete this quest)"
-			]
+			subtitle: "{chapter.6.quest.14.subtitle}"
+			description: ["{chapter.6.quest.14.description}"]
 			dependencies: ["0F92EA9231F85D25"]
 			min_required_tasks: 1
 			id: "0C8063DF02E52A47"
@@ -358,15 +347,12 @@
 			]
 		}
 		{
-			title: "Advanced cabling"
+			title: "{chapter.6.quest.15.title}"
 			icon: "ae2:fluix_smart_dense_cable"
 			x: -7.0d
 			y: -8.5d
-			subtitle: "For the chads of engineering only!"
-			description: [
-				"The dense cable does exactly what you think it does - it can carry 32 channels instead of 8!"
-				"The glass fiber does something entirely different, it can carry AE power, but 0 channels, thus it will break systems. Commonly used to transfer power or create subnetworks, more on that later."
-			]
+			subtitle: "{chapter.6.quest.15.subtitle}"
+			description: ["{chapter.6.quest.15.description}"]
 			dependencies: ["29DB1FA90A9FEE9C"]
 			min_required_tasks: 1
 			id: "100EEA0D73CFFBE6"
@@ -384,15 +370,11 @@
 			]
 		}
 		{
-			title: "Viewing items"
+			title: "{chapter.6.quest.16.title}"
 			x: -5.5d
 			y: -8.5d
-			subtitle: "This thing can store up to 10 cells simultaneously"
-			description: [
-				"ME drives store your storage cells, each cell has a specific amount of bytes, and can hold 63 item types. For items that you have a lot off, it is generally recommended to allocate the larger cells to them."
-				"ME drives also form a multiblock, allowing you to only hook up 1 cable to it, and they all get added to the ME system. They do consume one channel each though!"
-				"(channel info is on the left track)"
-			]
+			subtitle: "{chapter.6.quest.16.subtitle}"
+			description: ["{chapter.6.quest.16.description}"]
 			dependencies: ["0C8063DF02E52A47"]
 			id: "690FA10B8A532B16"
 			tasks: [{
@@ -402,16 +384,10 @@
 			}]
 		}
 		{
-			title: "Subnetworks"
+			title: "{chapter.6.quest.17.title}"
 			x: -7.0d
 			y: -10.0d
-			description: [
-				"Subnetworks are mainly used to get a certain chain to work, for example creating specific resources through a series of recipes."
-				""
-				"These are smaller networks normally powered via quartz fiber from the main network. They will act the same as if it was hooked up by an energy acceptor, thus able to execute 8 channels."
-				""
-				"When you export items into an ME interface, it will be INSTANTLY put into the respective ME system, thus you can export from a subnet into your main."
-			]
+			description: ["{chapter.6.quest.17.description}"]
 			dependencies: ["100EEA0D73CFFBE6"]
 			optional: true
 			id: "000CC99296151B0A"
@@ -422,16 +398,11 @@
 			}]
 		}
 		{
-			title: "Customising your storage cells"
+			title: "{chapter.6.quest.18.title}"
 			x: -5.5d
 			y: -10.0d
-			subtitle: "You don't want to get all your cells to fill up with one item, do you?"
-			description: [
-				"The cell workbench is a very handy tool!"
-				""
-				"It has two functions: you can add filters to your cells, only accepting those fluids or items."
-				"Or you can upgrade your cells, with one especially important card: the overflow destruction card! It does exactly what you think it does: voids everything that goes above what it can hold."
-			]
+			subtitle: "{chapter.6.quest.18.subtitle}"
+			description: ["{chapter.6.quest.18.description}"]
 			dependencies: ["690FA10B8A532B16"]
 			id: "0C1BF4EAE2CC1729"
 			tasks: [{
@@ -441,20 +412,12 @@
 			}]
 		}
 		{
-			title: "Moving BLOCKS like a pro"
+			title: "{chapter.6.quest.19.title}"
 			icon: "ae2:spatial_cell_component_2"
 			x: -4.0d
 			y: -10.0d
-			subtitle: "Time for some useful stuff"
-			description: [
-				"Do you remember the blaze spawner you needed for magma cream? This thing got you covered."
-				""
-				"First, craft yourself the items listed in the quest, PLUS the desired size of spatial cell, each having their block capacity in the tooltip. The smallest one for example can carry a space of 2x2x2 blocks."
-				""
-				"Then, place down the spatial anchor, this will be one of the CORNERS. Then, place the IO port next to it on the OUTSIDE of the cube. This will carry your cell. Last, build out the pylons so that the ends form the second end of the cube. You got half a cube now. Anything that it inbetween the anchor end the edges of the anchors will be caught! Thus to fill the weakest cell you will need 6 anchors, two for height, two for length, and two for width."
-				""
-				"Last, give either the IO port or the anchor a redstone signal, and anything, even spawners or budding crystals, will be put into the cell. This of course can be reversed, with the exact same procedure."
-			]
+			subtitle: "{chapter.6.quest.19.subtitle}"
+			description: ["{chapter.6.quest.19.description}"]
 			dependencies: ["5B6C345D10546F73"]
 			id: "63160FC511E0DBC8"
 			tasks: [
@@ -476,17 +439,12 @@
 			]
 		}
 		{
-			title: "'I hate cabling'"
+			title: "{chapter.6.quest.20.title}"
 			icon: "ae2:quantum_entangled_singularity"
 			x: -4.0d
 			y: -8.5d
-			subtitle: "This is beefy for your power though; consuming 100 fe/t when operational!"
-			description: [
-				"What if your cabling became too long, or you need to go across dimensions?!"
-				""
-				"Well the quantum bridge got you covered."
-				"Each quantum bridge needs a multiblock: the quantum ring, make a donut from quantum rings, and put the chamber in the middle. This will only consume one channel! put one of your pair quantum entangled singularities into it, and the other in the chamber of your desired destination. The bridge has been established, and the network is now operational in multiple places."
-			]
+			subtitle: "{chapter.6.quest.20.subtitle}"
+			description: ["{chapter.6.quest.20.description}"]
 			dependencies: ["5B6C345D10546F73"]
 			id: "0EB3DE329825D112"
 			tasks: [
@@ -508,25 +466,11 @@
 			]
 		}
 		{
-			title: "Moving items like a pro"
+			title: "{chapter.6.quest.21.title}"
 			x: -4.0d
 			y: -7.5d
-			subtitle: "Belts are soo 1880..."
-			description: [
-				"Ahh yes, the p2p tunnel, let's do this (point-to-point, for the uninitiated)"
-				""
-				"Each type of p2p tunnel can transport their respective type, under others items, fluids or ME channels!"
-				""
-				"You can only craft the ME p2p tunnel, and you have to right-click it with a specific item to define which task it is going to perform."
-				""
-				"Now that you got the right p2p tunnel for the job, you gotta have inputs and outputs. Each p2p network can ONLY have ONE input, but several outputs, which will be nicely split evenly."
-				""
-				"To set them, shift-rightclick the input p2p with a memory card, and proceed to right-click the same card to bind them together, there can be as many output tunnels as you'd like."
-				""
-				"Now input something in it, and it will be INSTANTLY send to all output channels. "
-				""
-				"Note: all p2p tunnels consume power, and one channel each, plan accordingly. When transfering channels trough p2p tunnels, you still need channels to transport the channels..."
-			]
+			subtitle: "{chapter.6.quest.21.subtitle}"
+			description: ["{chapter.6.quest.21.description}"]
 			dependencies: ["0F92EA9231F85D25"]
 			id: "5B6C345D10546F73"
 			tasks: [{
@@ -538,16 +482,8 @@
 		{
 			x: -2.5d
 			y: -7.5d
-			subtitle: "'I'm on a highway to hell!'"
-			description: [
-				"Each bus doesn't do a lot that exceeds the brain power of a normal individual, the import bus imports from the adjacent inventory, eating a channel, and inputting everything into the network."
-				""
-				"Export busses do the exact reverse, except the channel of course."
-				""
-				"Storage busses are a bit cooler, first, they treat any inventory connected as if it was part of the ME network, like the contents of a vault. Thus, items can be put in or extracted by busses. On the left, you can set priorities, the lower, the most important it finds to first fill up this, and then the rest."
-				""
-				"The im- and export busses can be upgraded with acceleration, (wonder what it does) redstone, and capacity cards, with capacity increasing the filtering capacity by four, with a cap on two installed at once."
-			]
+			subtitle: "{chapter.6.quest.22.subtitle}"
+			description: ["{chapter.6.quest.22.description}"]
 			dependencies: ["0F92EA9231F85D25"]
 			id: "4CCF69F7FB7BBDF4"
 			tasks: [
@@ -572,13 +508,7 @@
 			icon: "minecraft:redstone_torch"
 			x: -2.5d
 			y: -8.5d
-			description: [
-				"The last bit, thats is very handy!"
-				""
-				"The level emitters are your stockpile switches, they emit or stop emitting a redstone signal once the configured item reaches a certain threshold, which can of course be chosen."
-				""
-				"The redstone card enabled redstone control, allowing you to turn off the export bus once you got less than 4 stacks of iron!"
-			]
+			description: ["{chapter.6.quest.24.description}"]
 			dependencies: ["4CCF69F7FB7BBDF4"]
 			min_required_tasks: 1
 			id: "1DCCC865A14BAC1E"
@@ -596,7 +526,7 @@
 			]
 		}
 		{
-			title: "This is just an explanation!"
+			title: "{chapter.6.quest.25.title}"
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -606,15 +536,14 @@
 			}
 			x: -7.5d
 			y: 1.0d
-			subtitle: "Stuff can be incomplete, missing or wrong, always refer to the wiki to stay with the crowd."
-			description: [""]
+			subtitle: "{chapter.6.quest.25.subtitle}"
 			hide_dependency_lines: true
 			dependencies: ["326EB9A775B8D791"]
 			id: "07A6E8FD5F4961E0"
 			tasks: [{
 				id: "66FEC24EDD870128"
 				type: "checkmark"
-				title: "None of this is perfect!"
+				title: "{chapter.6.quest.25.task.1.title}"
 			}]
 		}
 	]
