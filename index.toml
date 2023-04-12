@@ -149,10 +149,6 @@ file = "config/create-common.toml"
 hash = "2732aa2dba8a9762b517665b9a67219647d81d4df93d9e1da3fbeaa7d0be2708"
 
 [[files]]
-file = "config/create-server.toml"
-hash = "89890615dec7109b7f966fb930809296aef437ca838a7ca4c702bfda69a6587b"
-
-[[files]]
 file = "config/createaddition-common-1.toml.bak"
 hash = "4018a74ee6804eaa305e64d7568d8390ef10ed726c39af4837b9d31647dc102e"
 
@@ -394,7 +390,7 @@ hash = "4e77bed5fa20f7d89f249c5cb75e10ed15c2930738f25c854f56087c02cbabce"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/astral_storage.snbt"
-hash = "70190c82013264e818316a26ef360f62178eda8cd6d4666ef37c62a7a99dde0d"
+hash = "ee12a942172e9b0a300adc7eb2cf39cac21c6d5f58aea4a41c240f732ccb579a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_2.snbt"
@@ -16141,12 +16137,28 @@ file = "kubejs/assets/ad_astra/lang/en_us.json"
 hash = "26a71380614bef64cefa2aed51424f0ef82e031826cb89f1fe196f6e7b83d881"
 
 [[files]]
+file = "kubejs/assets/ad_astra/lang/fr_fr.json"
+hash = "9a4e89e847f412301fd6c85ac5b68ccb9238068bf8de76ad55552ec033035b64"
+
+[[files]]
 file = "kubejs/assets/ae2/lang/en_us.json"
 hash = "420db11eb7b0714d5ec430bbd9c28dd15955541a020e08cd38504792bc2b4e27"
 
 [[files]]
+file = "kubejs/assets/ae2/lang/fr_fr.json"
+hash = "60842e66b0aa7fabb9edff3e30980412c9921e07a521049f413cfddeaa7ece5b"
+
+[[files]]
 file = "kubejs/assets/create/lang/en_us.json"
 hash = "ed4ef8a01fa2ab693093048b1c9b74a4333bb5f187333740c4904f8777e3d2b5"
+
+[[files]]
+file = "kubejs/assets/createastral/lang/en_us.json"
+hash = "3e74f020cb8a4c844068f7b1a8f710119106a527954c0672a92ad21b12e86ad6"
+
+[[files]]
+file = "kubejs/assets/createastral/lang/fr_fr.json"
+hash = "11d6a8c39913233e074321ca069decb808d5992bedd1d0124f40f6c594587b56"
 
 [[files]]
 file = "kubejs/assets/createastral/textures/block/andesite_alloy_block.png"
@@ -16537,20 +16549,40 @@ file = "kubejs/assets/doodads/lang/en_us.json"
 hash = "d1cfc04bf00a0cbec4593196163272e3cd31235301658d0265b234f91da5f21f"
 
 [[files]]
+file = "kubejs/assets/doodads/lang/fr_fr.json"
+hash = "2040b1671a4ae037762be42dfac366fe71aecc398005755140d35b98a94fb550"
+
+[[files]]
 file = "kubejs/assets/dustrial_decor/lang/en_us.json"
 hash = "5adcd5e4f82709620dab1e15f52cd5f2ea7f518fae9b78e3a2660a9715c0fc30"
+
+[[files]]
+file = "kubejs/assets/dustrial_decor/lang/fr_fr.json"
+hash = "57e9f59114cc3e381bae5d8f7611a35d717ce62b617ab1516b5c61f787d3d22c"
 
 [[files]]
 file = "kubejs/assets/farmersdelight/lang/en_us.json"
 hash = "cc5c8b878131debf0f7578da15a4b35afbf6fb3bda08ecba2b0a3a649ad8dbd8"
 
 [[files]]
+file = "kubejs/assets/farmersdelight/lang/fr_fr.json"
+hash = "2f0d8b4b11c11542e63e12df1dd31ba36bd344a634687f0e2d5cbc1dd6a19043"
+
+[[files]]
 file = "kubejs/assets/immersive_aircraft/lang/en_us.json"
 hash = "68a4e04406d7e91946faa0d0ab1ab4ab625765595139a0ab234e50247a3eb4f6"
 
 [[files]]
+file = "kubejs/assets/immersive_aircraft/lang/fr_fr.json"
+hash = "edae1fdfacfff761b72d5b5ff471f6d4b2db2188ac8e01a2b41836db68d2aabd"
+
+[[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
-hash = "728df20c5874b696a43e43b521cff4a67ad3488e912cf30773bd531c779cfca7"
+hash = "85f054f5857a0e6a623245cac8e740119ca6900aa58b6e0291e8120305f318d1"
+
+[[files]]
+file = "kubejs/assets/kubejs/lang/fr_fr.json"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/models/armor/brassarmor_layer_1.png"
@@ -16605,16 +16637,32 @@ file = "kubejs/assets/minecraft/lang/en_us.json"
 hash = "ebefb5ce5fa66b51b017489d8c0a6122186b87db862c85693186ece696647d4c"
 
 [[files]]
+file = "kubejs/assets/minecraft/lang/fr_fr.json"
+hash = "a0437ea41280d8678d34d0797a5de21e7be86ac84542715442387885e9d1a982"
+
+[[files]]
 file = "kubejs/assets/reinfchest/lang/en_us.json"
 hash = "9706bfe8fdf440c428a3c26af8302b9cb16f5c6ff17f1aa2c1c5aad00f0ae702"
+
+[[files]]
+file = "kubejs/assets/reinfchest/lang/fr_fr.json"
+hash = "2b1ef59008af421efe3d9e8a05fe804dab3486368c56d44f6ca8509ecfd804cd"
 
 [[files]]
 file = "kubejs/assets/tconstruct/lang/en_us.json"
 hash = "7d0e7d9e6475bff5fcd0ee42ae5f655d517323f8823e67d76d1e12550ff7cafa"
 
 [[files]]
+file = "kubejs/assets/tconstruct/lang/fr_fr.json"
+hash = "30599f76b1cd3283c4e4b5941d5be445435a7b01ea67ee5847d4b1bc27d71a14"
+
+[[files]]
 file = "kubejs/assets/techreborn/lang/en_us.json"
 hash = "8c4ee21d14a8054ed3a3baf54bc2bb41f6acdfef80071c6273109d1e9c32ee29"
+
+[[files]]
+file = "kubejs/assets/techreborn/lang/fr_fr.json"
+hash = "827d29559d20818944112875a5e45d893a336b73fcbc6f172e819f5e4863c21c"
 
 [[files]]
 file = "kubejs/client_scripts/script.js"
@@ -16966,7 +17014,7 @@ hash = "058c91a44f9f4c079069775e15aea88454aee80420815cf5af51dedf01187d24"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
-hash = "7610d78d8f62fe1d48c707c769ee36e0ca06e57d99b9efe7e765560609414adb"
+hash = "380c10023c953e82284e7e11cd054e1ee18672997ba1d748147a144d7f8aab8e"
 
 [[files]]
 file = "kubejs/server_scripts/createaddons.js"
@@ -16986,7 +17034,7 @@ hash = "1f1204ed7a28e5130c4e51d903cf47b48842a1741245a6eaaffdab3399b20d9b"
 
 [[files]]
 file = "kubejs/server_scripts/tconstruct.js"
-hash = "ad08641c91c93b7494f621593b29391c9d6151a81da1219d530ba8e36a633e3e"
+hash = "33f2beac33f5a0f280e771fe76b742989d0bbefe1668f0b0f57c29400c5eb30b"
 
 [[files]]
 file = "kubejs/server_scripts/techreborn.js"
@@ -16994,11 +17042,11 @@ hash = "4f9be69c0090d0a979d22ee58b1a457796b13d55202b588fa9ad113057049f90"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
-hash = "1360a705c7636f583deef2abfb6bd61cf25a25efe792853a4794675c1363923d"
+hash = "baaf44e60de200fdd927a35dda6be4c2afdaffd6a7d41c251ba992180e3828f0"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
-hash = "e11fb3780ff56d4b722c12b78045d7f8ab7b921eb1e695846fd9f3a027c87a92"
+hash = "61ad3509475357bdf231eae841dd1d36f4621c94eb4ab745ee5acfd118043220"
 metafile = true
 
 [[files]]
@@ -17033,7 +17081,7 @@ metafile = true
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
-hash = "3c9a0e8ab38a1ae99ea2a9b77ac30b3190c1700bfbb7c35a0775c15c807d3d15"
+hash = "d12516da377246d59e94b723282e69b1bd3e7a9eea961f3342cfd2bb5b76f077"
 metafile = true
 
 [[files]]
@@ -17043,7 +17091,7 @@ metafile = true
 
 [[files]]
 file = "mods/astral-vinery.pw.toml"
-hash = "6c959314147c2f5d4a900e7ccaffb77366561dff335ea80c1915f87595f1da48"
+hash = "5d19ace06ea987cb2869e64ce7c9ee4245ab7576a65fca99845de936398b091e"
 metafile = true
 
 [[files]]
@@ -17202,7 +17250,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-fabric.pw.toml"
-hash = "7edfd449e03c470371ba7d7bb68fbc10732b6752a44334b3154efa1e7c40e6ce"
+hash = "9f6142189adb758d50c8d10b11973128d449c000cf3c38aee1124b2a41391afc"
 metafile = true
 
 [[files]]
@@ -17310,7 +17358,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-api.pw.toml"
-hash = "69521da2557f368199e802111ecef618b2a46ef7031a4b72b21c389054897d1e"
+hash = "0b5d76bb54eb7dd664d6961a54d54be8756f673cc7a595a240fd5dabfc50a374"
 metafile = true
 
 [[files]]
@@ -17320,7 +17368,7 @@ metafile = true
 
 [[files]]
 file = "mods/fabric-language-kotlin.pw.toml"
-hash = "634ecf9eb12639e7734446b7c119a8f17cf478c678b3b21149860d4fd49565d4"
+hash = "0e947895e29a66639fe835f0bf1b20c59996a24e8471772a10f3e49792703326"
 metafile = true
 
 [[files]]
@@ -17360,12 +17408,12 @@ metafile = true
 
 [[files]]
 file = "mods/ftb-backups-2.pw.toml"
-hash = "a69733ecb58996fd22405014febd0cc0b01173605fba6d4ac3fd53a48b874d97"
+hash = "6f5acdd897ff163ee45e6f127933def90715d78137b1975dc2ba5937ed0a1c88"
 metafile = true
 
 [[files]]
 file = "mods/ftb-chunks-fabric.pw.toml"
-hash = "0c0740f109d9a157484941d7ee083d356614694072f353751a2221eaf1032231"
+hash = "f1fde1855b7b6481b98d962566c8df666f58c171184edb4f71c48cc66e0cdf59"
 metafile = true
 
 [[files]]
@@ -17415,7 +17463,7 @@ metafile = true
 
 [[files]]
 file = "mods/immediatelyfast.pw.toml"
-hash = "943fd4d6206b628782b2eb26aa23db49641db100127d30b1df5771a10d9850fd"
+hash = "baced3db2ea140693534d64dab8a81c2f2297b2d5822a5da36815f1dfc4cd5d5"
 metafile = true
 
 [[files]]
@@ -17460,12 +17508,12 @@ metafile = true
 
 [[files]]
 file = "mods/journeymap-integration.pw.toml"
-hash = "1702611a4daa88739c7fe067499db201df44237c133117e711f2f50b07f6f979"
+hash = "c77aad8ea869c48da699016156ae3f024e0f3c32eb644a0a5ae5a4e0829e7900"
 metafile = true
 
 [[files]]
 file = "mods/journeymap.pw.toml"
-hash = "5b872a456ed201edeff2a312d0d74231e2b2a7a2fbe71bbec191c65910f46e1d"
+hash = "02449d12af43d909ac60dd68c2226af136ff9ef2ff70c5bc8481738b3ee3ee5d"
 metafile = true
 
 [[files]]
@@ -17535,7 +17583,7 @@ metafile = true
 
 [[files]]
 file = "mods/memoryleakfix.pw.toml"
-hash = "3f9e0fc5b8bb34a133038565e18e7279255a0f776a1097b0db634f79e416a79b"
+hash = "166a504fed11fad4dc10b1b7f0fc4ee440b94b8411abd69f733fc61083bce142"
 metafile = true
 
 [[files]]
@@ -17595,7 +17643,7 @@ metafile = true
 
 [[files]]
 file = "mods/per-aspera.pw.toml"
-hash = "aaf5ca0e2d7fda8617a5f1b23f10d2704b95833ec3454a3cf0c5c46bfdf10e79"
+hash = "84f7c644c4251de6e054a7adb4c88b30fdcbd7ed48da447de03f3ece2ab1af7b"
 metafile = true
 
 [[files]]
@@ -17771,6 +17819,10 @@ metafile = true
 [[files]]
 file = "options.txt"
 hash = "d1ae6e2ea677f0c4cc15937bc1186def861a3d1cf0b92920e3013e0f29891061"
+
+[[files]]
+file = "reload.bat"
+hash = "13de9dbc886a67807c63b3ed4a4ff102f4c7197f6757034f9ed1d319903c3f02"
 
 [[files]]
 file = "resourcepacks/BetterVanillaBuildingV2.83.1/assets/.mcassetsroot"

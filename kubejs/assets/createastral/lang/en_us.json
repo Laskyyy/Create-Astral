@@ -1,0 +1,16 @@
+{
+    ///// ITEMS NAME HERE /////
+    "item.createastral.coin": "Golden Coin",
+    "item.createastral.golden_bowl": "Golden Bowl",
+    "item.createastral.filled_golden_bowl": "Filled Golden Bowl",
+    "item.createastral.orcane": "Information / General Progression",
+    "item.createastral.lime": "Lime Dust", // maybe use Limestone instead of Lime ?
+
+    ///// BLOCK NAME HERE /////
+    "block.createastral.sturdy_sheet_block": "Sturdy Sheet Block",
+    "block.createastral.shimmering_stone": "Shimmering Stone",
+    "block.createastral.copper_plating": "Copper Plating",
+    "block.createastral.refined_radiance_block": "Radiant Block",
+    "block.createastral.bronze_block": "Bronze Block",
+    "block.createastral.copper_heating_coil": "Copper Coil Block"
+}

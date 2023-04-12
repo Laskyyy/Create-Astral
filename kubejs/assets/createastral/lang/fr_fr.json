@@ -1,0 +1,16 @@
+{
+    ///// NOM DES OBJETS ICI /////
+    "item.createastral.coin": "Pièce d'or",
+    "item.createastral.golden_bowl": "Bol en or",
+    "item.createastral.filled_golden_bowl": "Bol en or rempli",
+    "item.createastral.orcane": "Information / Progression générale",
+    "item.createastral.lime": "Poussière de calcaire", // What ?? Lime the fruite ? // I changed it to limestone dust, because it's crafted using limestone.
+
+    ///// NOM DES BLOCS ICI /////
+    "block.createastral.sturdy_sheet_block": "Bloc de tôle solide",
+    "block.createastral.shimmering_stone": "Pierre de Shimmer",
+    "block.createastral.copper_plating": "Bloc de plaque de cuivre",
+    "block.createastral.refined_radiance_block": "Bloc de radiance raffiné",
+    "block.createastral.bronze_block": "Bloc de bronze",
+    "block.createastral.copper_heating_coil": "Bloc de bobine de cuivre."
+}

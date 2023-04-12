@@ -1,4 +1,16 @@
 {
+  ///// FLUIDS NAME HERE /////
+  "fluid.kubejs.molten_calorite" : "Calorite",
+  "fluid.kubejs.molten_ostrum" : "Ostrum",
+  "fluid.kubejs.molten_desh" : "Desh",
+  "fluid.kubejs.plasma_fluid" : "Quark-Gluon Plasma Fluid",
+  "fluid.kubejs.hellfire" : "Hellfire",
+  "fluid.kubejs.compound_mixture" : "Compound Mixture",
+  "fluid.kubejs.shimmer" : "Shimmer",
+  "fluid.kubejs.blast-resistant_cement" : "Blast-Resistant Cement",
+
+
+ //Quest
   "quest.main_title": "Create: Astral",
   "chapter.1.quest.1.description.1": "Don\u0027t get hit by lightning.",
   "chapter.1.quest.1.subtitle": "Cheap defense.",

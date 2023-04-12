@@ -44,56 +44,48 @@ onEvent('fluid.registry', event => {
 	event.create('molten_calorite')
     .thickTexture(0xc41a39)
     .bucketColor(0xc41a39)
-    .displayName('Calorite')
 	.stillTexture('tconstruct:block/fluid/molten/still')
 	.flowingTexture('tconstruct:block/fluid/molten/flowing')
 	
 	event.create('molten_ostrum')
     .thickTexture(0x73515E)
     .bucketColor(0x73515E)
-    .displayName('Ostrum')
 	.stillTexture('tconstruct:block/fluid/molten/still')
 	.flowingTexture('tconstruct:block/fluid/molten/flowing')
 	
 	event.create('molten_desh')
     .thickTexture(0xec8742)
     .bucketColor(0xec8742)
-    .displayName('Desh')
 	.stillTexture('tconstruct:block/fluid/molten/still')
 	.flowingTexture('tconstruct:block/fluid/molten/flowing')
 
   event.create('plasma_fluid')
     .thickTexture(0x4cfbff)
     .bucketColor(0x4cfbff)
-    .displayName('Quark-Gluon Plasma Fluid')
 	.stillTexture('tconstruct:block/fluid/molten/still')
 	.flowingTexture('tconstruct:block/fluid/molten/flowing')
 
   event.create('hellfire')
   .thickTexture(0xFFA500)
   .bucketColor(0xFFA500)
-  .displayName('Hellfire')
 .stillTexture('tconstruct:block/fluid/molten/still')
 .flowingTexture('tconstruct:block/fluid/molten/flowing')
 
   event.create('compound_mixture')
     .thickTexture(0x66786f)
     .bucketColor(0x66786f)
-    .displayName('Compound Mixture')
 	.stillTexture('tconstruct:block/fluid/molten/still')
 	.flowingTexture('tconstruct:block/fluid/molten/flowing')
 
   event.create('shimmer')
     .thickTexture(0xffd6fa)
     .bucketColor(0xffd6fa)
-    .displayName('Shimmer')
 	.stillTexture('tconstruct:block/fluid/molten/shimmer')
 	.flowingTexture('tconstruct:block/fluid/molten/shimmer')
 
   event.create('blast-resistant_cement')
     .thickTexture(0x959595)
     .bucketColor(0x959595)
-    .displayName('Blast-Resistant Cement')
   .stillTexture('tconstruct:block/fluid/molten/still')
 	.flowingTexture('tconstruct:block/fluid/molten/flowing')
 })
@@ -198,38 +190,32 @@ onEvent('block.registry', event => {
   event.create('createastral:sturdy_sheet_block')
   	   .material('lantern')
        .hardness(9)
-       .displayName('Sturdy Sheet Block')
        .tagBlock('minecraft:mineable/pickaxe') 
 
        event.create('createastral:shimmering_stone')
   	   .material('stone')
        .hardness(20)
-       .displayName('Shimmering Stone')
        .tagBlock('minecraft:mineable/pickaxe') 
 	   
 	   event.create('createastral:copper_plating')
   	   .material('lantern')
        .hardness(3)
-       .displayName('Copper Plating') 
        .tagBlock('minecraft:mineable/pickaxe')
 	   
 	   event.create('createastral:refined_radiance_block')
   	   .material('lantern')
        .hardness(4)
-       .displayName('Radiant Block')
        .tagBlock('minecraft:mineable/pickaxe') 
 	   .lightLevel(1)
 	
 		event.create('createastral:bronze_block')
   	   .material('lantern')
        .hardness(3)
-       .displayName('Bronze Block')
        .tagBlock('minecraft:mineable/pickaxe') 
 
     event.create('createastral:copper_heating_coil')
   	   .material('lantern')
        .hardness(3)
-       .displayName('Copper Coil Block')
        .tagBlock('minecraft:mineable/pickaxe') 
 
 
@@ -390,9 +376,9 @@ event.create('createastral:electrified_pin'),
 event.create('createastral:uwaah'),
 event.create('createastral:bronze_ingot'),
 event.create('createastral:navigation_mechanism');
-event.create('createastral:coin','create:sequenced_assembly').displayName('Golden Coin');
-event.create('createastral:golden_bowl').displayName('Golden Bowl');
-event.create('createastral:filled_golden_bowl','create:sequenced_assembly').displayName('Filled Golden Bowl').food(food => {
+event.create('createastral:coin','create:sequenced_assembly');
+event.create('createastral:golden_bowl');
+event.create('createastral:filled_golden_bowl','create:sequenced_assembly').food(food => {
   food
       .hunger(0)
       .saturation(00)
@@ -437,7 +423,7 @@ event.create('createastral:sturdy_helmet', 'helmet').tier('sturdyarmor'),
 event.create('createastral:sturdy_chestplate', 'chestplate').tier('sturdyarmor'),
 event.create('createastral:sturdy_leggings', 'leggings').tier('sturdyarmor'),
 event.create('createastral:sturdy_boots', 'boots').tier('sturdyarmor'),
-event.create('createastral:orcane').displayName('Information / General Progression').glow(true),
+event.create('createastral:orcane').glow(true),
 event.create('createastral:astral_singularity').food(food => {
   food
       .hunger(50)
@@ -452,8 +438,7 @@ event.create('createastral:astral_singularity').food(food => {
         .alwaysEdible()//Like golden apples
 })
 event.create('createastral:pure_biomatter')
-event.create('createastral:lime').displayName('Lime Dust');
-event.create('createastral:coin','create:sequenced_assembly').displayName('coin');
+event.create('createastral:lime');
 
 
 
