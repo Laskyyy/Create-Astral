@@ -43,22 +43,7 @@
 		},
 		{
 			"ingredient": {
-				"item": "immersive_aircraft:engine"
-			}
-		},
-		{
-			"ingredient": {
-				"item": "immersive_aircraft:engine"
-			}
-		},
-		{
-			"ingredient": {
-				"item": "ad_astra:steel_block"
-			}
-		},
-		{
-			"ingredient": {
-				"item": "immersive_aircraft:engine"
+				"item": "ad_astra:ostrum_engine"
 			}
 		},
 		{
@@ -68,7 +53,22 @@
 		},
 		{
 			"ingredient": {
-				"item": "immersive_aircraft:engine"
+				"item": "ad_astra:desh_block"
+			}
+		},
+		{
+			"ingredient": {
+				"item": "ad_astra:ostrum_engine"
+			}
+		},
+		{
+			"ingredient": {
+				"item": "ad_astra:ostrum_engine"
+			}
+		},
+		{
+			"ingredient": {
+				"item": "ad_astra:ostrum_engine"
 			}
 		}
 	],
