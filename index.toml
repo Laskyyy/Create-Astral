@@ -16153,12 +16153,16 @@ file = "kubejs/assets/create/lang/en_us.json"
 hash = "ed4ef8a01fa2ab693093048b1c9b74a4333bb5f187333740c4904f8777e3d2b5"
 
 [[files]]
+file = "kubejs/assets/create/lang/fr_fr.json"
+hash = "9e21b29401117b651a4952660b400ea55426b39f151eacacda0ec1a121ea20bd"
+
+[[files]]
 file = "kubejs/assets/createastral/lang/en_us.json"
-hash = "3e74f020cb8a4c844068f7b1a8f710119106a527954c0672a92ad21b12e86ad6"
+hash = "70490a66c709ae124757816a5455b40976e707c9fd3c83ec77d06669d0aba11e"
 
 [[files]]
 file = "kubejs/assets/createastral/lang/fr_fr.json"
-hash = "11d6a8c39913233e074321ca069decb808d5992bedd1d0124f40f6c594587b56"
+hash = "fedbd35c95f6c79b60c6d484fdbb6a83ca8a0afa39ce4a575ebe61a905a68041"
 
 [[files]]
 file = "kubejs/assets/createastral/textures/block/andesite_alloy_block.png"
@@ -16578,11 +16582,11 @@ hash = "edae1fdfacfff761b72d5b5ff471f6d4b2db2188ac8e01a2b41836db68d2aabd"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
-hash = "85f054f5857a0e6a623245cac8e740119ca6900aa58b6e0291e8120305f318d1"
+hash = "065619a4d81438a32d8e5dcef9fd68515757c395db9d9c3f2e2a00fb19de2f16"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/fr_fr.json"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+hash = "2396410b6e17f20b297a63a26dbfc9a44826b4ba5c14aece6edb4cfcae81ec6a"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/models/armor/brassarmor_layer_1.png"
@@ -17042,7 +17046,7 @@ hash = "4f9be69c0090d0a979d22ee58b1a457796b13d55202b588fa9ad113057049f90"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
-hash = "baaf44e60de200fdd927a35dda6be4c2afdaffd6a7d41c251ba992180e3828f0"
+hash = "a57a9d22b904665c6dc3d6755ff826054be14f7463176c4d4a12996acafa8bf2"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
@@ -37141,6 +37145,10 @@ file = "resources/ad_astra/lang/en_us.json"
 hash = "d2138ea461e7cb82e6977291ccc9813834543faaca20d0a7d7a84a0b50ec7cb0"
 
 [[files]]
+file = "resources/ad_astra/lang/fr_fr.json"
+hash = "6a3c657b0d6f965573d79e56bb627851b26fd1c70e961d5f25112155914333a2"
+
+[[files]]
 file = "resources/ad_astra/textures/block/chiseled_moon_stone_bricks.png"
 hash = "c83c56a54d1dd84275216d9b60e60a1c6e79aa2b8b65b1ffcf8cc9c90052b2b8"
 
@@ -37291,6 +37299,10 @@ hash = "62c448b3ea73fc3dadd46586bff364d9a476cd5ab488eede368f6dc0b72ee0c1"
 [[files]]
 file = "resources/ae2/lang/en_us.json"
 hash = "5133f4413017f6d20ad3eb7917e0a2bb53d75323388d1afddd3e608467c28823"
+
+[[files]]
+file = "resources/ae2/lang/fr_fr.json"
+hash = "2d60825b48753d65a79433564b915fe001d5197c9e9f81731ceba0a7fe66be81"
 
 [[files]]
 file = "resources/ae2/textures/block/deepslate_quartz_ore_0.png"
