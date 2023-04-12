@@ -8,6 +8,6 @@
     "item.techreborn.electronic_circuit": "Circuit intégré avancé",
     "item.techreborn.industrial_circuit": "Unité de calcul industriel",
     "item.techreborn.machine_parts": "Pièces de machine",
-    "item.techreborn.uu_matter": "Shimmer raffinée", //<- Check point 2
+    "item.techreborn.uu_matter": "Shimmer raffinée", // Check ae2\lang\fr_fr.json
     "item.techreborn.synthetic_redstone_crystal": "Cristal de redstone synthétique"
 }

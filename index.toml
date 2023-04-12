@@ -16158,11 +16158,11 @@ hash = "9e21b29401117b651a4952660b400ea55426b39f151eacacda0ec1a121ea20bd"
 
 [[files]]
 file = "kubejs/assets/createastral/lang/en_us.json"
-hash = "70490a66c709ae124757816a5455b40976e707c9fd3c83ec77d06669d0aba11e"
+hash = "df0c3d074b89cc84445200d6accf45f7f81bd0574b76d8dfc944c2003893b472"
 
 [[files]]
 file = "kubejs/assets/createastral/lang/fr_fr.json"
-hash = "fedbd35c95f6c79b60c6d484fdbb6a83ca8a0afa39ce4a575ebe61a905a68041"
+hash = "b13b07b1c02fd549b05da38fd9fbff89e04c61d7c7ad0c4f6856749067d62f97"
 
 [[files]]
 file = "kubejs/assets/createastral/textures/block/andesite_alloy_block.png"
@@ -16666,7 +16666,7 @@ hash = "8c4ee21d14a8054ed3a3baf54bc2bb41f6acdfef80071c6273109d1e9c32ee29"
 
 [[files]]
 file = "kubejs/assets/techreborn/lang/fr_fr.json"
-hash = "827d29559d20818944112875a5e45d893a336b73fcbc6f172e819f5e4863c21c"
+hash = "b48b7ec94ce99f15b91337da15bdee5c43759a32d8b94d8be0e4d43e5455809c"
 
 [[files]]
 file = "kubejs/client_scripts/script.js"
@@ -17046,7 +17046,7 @@ hash = "4f9be69c0090d0a979d22ee58b1a457796b13d55202b588fa9ad113057049f90"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
-hash = "a57a9d22b904665c6dc3d6755ff826054be14f7463176c4d4a12996acafa8bf2"
+hash = "ba6e430fce5de901a4a2afcd474ad85daae132596fa7cf8739643178b58c5375"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
