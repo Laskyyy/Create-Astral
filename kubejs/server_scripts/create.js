@@ -21,10 +21,22 @@ function millingRecipes(event) {
     [
         ["farmersdelight:straw", "minecraft:string", 1],
         ["minecraft:gravel", "minecraft:sand", 0.25],
-        ["create:veridium", "minecraft:raw_copper", 0.3],
-        ["create:asurine", "techreborn:raw_tin", 0.2],
-        ["create:crimsite", "minecraft:raw_iron", 0.2],
-        ["create:ochrum", "minecraft:raw_gold", 0.2],
+        ["create:veridium", "minecraft:raw_copper", 0.6],
+        ["create:asurine", "minecraft:lapis_lazuli", 1],
+        ["create:crimsite", "minecraft:raw_iron", 0.4],
+        ["create:ochrum", "minecraft:raw_gold", 0.4],
+        ["create:limestone", "techreborn:raw_tin", 0.5],
+        ["create:scorchia", "create:raw_zinc", 0.4],
+        ["create:scoria", "minecraft:magma_block", 1],
+        ["minecraft:tuff", "minecraft:charcoal", 0.33],
+        ["minecraft:blackstone", "create:powdered_obsidian", 0.2],
+        ["minecraft:basalt", "techreborn:andesite_dust", 0.4],
+        ["minecraft:tuff", "2x minecraft:iron_nugget", 1],
+        ["minecraft:dripstone_block", "2x minecraft:golden_nugget", 1],
+        ["minecraft:basalt", "create:copper_nugget", 0.4],
+        ["minecratf:blackstone", "create:zinc_nugget", 0.7],
+        ["minecraft:andesite", "techreborn:tin_nugget", 0.9],
+        ["minecraft:granite", "create:copper_nugget", 0.8],
     ].forEach((recipe) => {
         event.recipes.createMilling(
             [Item.of(recipe[1]).withChance(recipe[2])],
@@ -49,14 +61,8 @@ function crushingRecipes(event) {
         {
             input: "minecraft:cobbled_deepslate",
             outputs: [
-                ["minecraft:raw_iron", 0.002],
-                ["minecraft:raw_gold", 0.001],
-                ["create:raw_zinc", 0.001],
-                ["minecraft:raw_copper", 0.002],
-                ["minecraft:coal", 0.004],
-                ["techreborn:raw_tin", 0.002],
-                ["minecraft:redstone", 0.005],
-                ["minecraft:lapis_lazuli", 0.002],
+                ["create:zinc_nugget", 0.0015],
+                ["minecraft:coal", 0.004]
             ],
         },
         //Diorite,Granite,Andesite Crushing
@@ -192,19 +198,7 @@ function crushingRecipes(event) {
         event.recipes.createCrushing(cleanoutputs, recipe.input);
     });
 
-    // Replace grinder recipes with crushing recipes
-    [
-        ["minecraft:wet_sponge", "5x techreborn:sponge_piece"],
-        ["minecraft:prismarine_bricks", "7x minecraft:prismarine_shard"],
-        ["minecraft:prismarine", "3x minecraft:prismarine_shard"],
-        ["minecraft:sea_lantern", "4x prismarine_crystals"],
-        ["#c:basalt", "techreborn:basalt_dust"],
-        ["minecraft:end_stone", "techreborn:endstone_dust"],
-    ].forEach((recipe) => {
-        event.remove({ type: "techreborn:grinder", input: recipe[0] });
-        event.recipes.createCrushing([recipe[1]], recipe[0]);
-    });
-
+    
     // Replace all techreborn ores to require the crushing wheel for dusts
     [
         "sapphire",
@@ -1227,6 +1221,18 @@ function mixingRecipes(event) {
             time: 1000,
         },
         {
+            output: Fluid.of(
+                "create:honey",
+                FULL_BUCKET_AMMOUNT/9
+            ),
+            input: [
+                "techreborn:sap",
+                "minecraft:sugar",
+            ],
+            heat: "",
+            time: 100,
+        },
+        {
             output: "3x dustrial_decor:cast_iron_billet",
             input: [
                 "minecraft:iron_ingot",
@@ -1671,24 +1677,17 @@ function splashingRecipes(event) {
             ],
         },
         {
+            input: "ae2:certus_crystal_seed",
+            outputs: [
+                ["ae2:certus_quartz_crystal", 1],
+                ["minecraft:sugar", 0.1],
+            ],
+        },
+        {
             input: "createastral:lime",
             outputs: [
                 ["techreborn:silver_nugget", 0.12],
                 ["techreborn:raw_silver", 0.02],
-            ],
-        },
-        {
-            input: "minecraft:soul_sand",
-            outputs: [
-                ["minecraft:gold_nugget", 0.12],
-                ["minecraft:quartz", 0.01],
-            ],
-        },
-        {
-            input: "minecraft:soul_soil",
-            outputs: [
-                ["minecraft:gold_nugget", 0.12],
-                ["minecraft:quartz", 0.01],
             ],
         },
         {
@@ -2101,7 +2100,6 @@ function compactingRecipes(event) {
             output: "minecraft:lapis_lazuli",
             inputs: [
                 "3x techreborn:lazurite_dust",
-                "2x minecraft:gunpowder",
                 "2x minecraft:iron_nugget",
                 { fluid: "minecraft:lava", amount: FULL_BUCKET_AMMOUNT / 30 },
             ],
@@ -2111,14 +2109,34 @@ function compactingRecipes(event) {
             inputs: [
                 "minecraft:diorite",
                 "minecraft:flint",
-                "techreborn:netherrack_dust",
                 { fluid: "minecraft:lava", amount: FULL_BUCKET_AMMOUNT / 10 },
             ],
         },
         {
-            output: "minecraft:cobbled_deepslate",
-            inputs: ["8x minecraft:flint", "minecraft:gravel"],
+            output: "minecraft:prismarine_shard",
+            inputs: ["#c:coral_plants"],
         },
+        {
+            output: "techreborn:diamond_nugget",
+            inputs: [ "8x minecraft:prismarine_crystals"],
+        },
+        {
+            output: "minecraft:andesite",
+            inputs: ["4x techreborn:andesite_dust"],
+        },
+        {
+            output: "minecraft:andesite",
+            inputs: ["2x techreborn:andesite_dust", "2x minecraft:basalt"],
+        },
+        {
+            output: "minecraft:dripstone_block",
+            inputs: ["2x minecraft:granite", "2x minecraft:slime_ball"],
+        },
+        {
+            output: "minecraft:cobbled_deepslate",
+            inputs: ["3x minecraft:flint", "minecraft:gravel"],
+        },
+
     ].forEach((recipe) => {
         event.recipes.createCompacting(recipe.output, recipe.inputs);
     });

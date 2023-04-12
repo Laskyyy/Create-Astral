@@ -581,7 +581,7 @@ onEvent('block.registry', event => {
     });
     e.addAdvanced('createastral:orcane', (item, advanced, text) => {
       if (!e.isShift()) {
-        text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+        text.add(1, [Text.of('Hold ').darkGreen(), Text.of('Shift ').green(), Text.of('to see more info.').darkGreen()])
       }
       if (e.isShift()) {
         

@@ -38,7 +38,7 @@ onEvent("recipes", (event) => {
         { output: "techreborn:quantum_leggings" },
         { output: "techreborn:quantum_boots" },
         { output: "techreborn:copper_nugget" },
-        { output: "techreborn:steel_plate" },
+        { input: "techreborn:granite_dust", output: 'minecraft:gravel' },
 
         {
             type: "techreborn:grinder",
@@ -102,6 +102,13 @@ onEvent("recipes", (event) => {
         //Create
 
         { output: "create:blaze_cake" },
+        { output: "create:ochrum" },
+        { output: "create:crimsite" },
+        { output: "create:limestone" },
+        { output: "create:asurine" },
+        { output: "create:veridium" },
+        { output: "create:scoria" },
+        { output: "create:scorchia" },
         { output: "create:crushed_tin_ore" },
         { output: "create:crushed_silver_ore" },
         { output: "create:crushed_lead_ore" },
@@ -129,6 +136,11 @@ onEvent("recipes", (event) => {
         { type: "create:crushing", input: "minecraft:andesite" },
         { type: "create:crushing", input: "create:asurine" },
         { type: "create:crushing", input: "create:veridium" },
+        { type: "create:crushing", input: "create:limestone" },
+        { type: "create:crushing", input: "create:ochrum" },
+        { type: "create:crushing", input: "create:scoria" },
+        { type: "create:crushing", input: "create:scorchia" },
+        { type: "create:crushing", input: "minecraft:cobblestone" },
         { type: "create:mixing", output: "create:brass_ingot" },
         { type: "create:crushing", input: "minecraft:netherrack" },
         { type: "create:splashing", input: "minecraft:soul_sand" },
@@ -376,6 +388,8 @@ onEvent("recipes", (event) => {
         { output: "minecraft:crossbow" },
         { output: "minecraft:arrow" },
         { output: "minecraft:ender_eye" },
+        { output: "minecraft:gold_nugget",  output: "minecraft:soul_sand" },
+        { output: "minecraft:gold_nugget",  output: "minecraft:soul_soil" },
         { input: "minecraft:crying_obsidian" },
         {
             input: "minecraft:copper_block",

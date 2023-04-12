@@ -128,6 +128,15 @@ function lizardCH2Changes(event) {
         V: "create:fluid_valve",
     });
 
+    event.shaped("create:brass_funnel", ["FB", "CO", "VP"], {
+        B: "tconstruct:rose_gold_ingot",
+        O: "minecraft:observer",
+        F: "create:filter",
+        C: "minecraft:comparator",
+        P: "create:fluid_pipe",
+        V: "create:fluid_valve",
+    });
+
     // Pre-brass display links (we can get pre-brass display boards after all)
     event.shaped("create:display_link", [" R ", "BOB", " C "], {
         B: "createastral:bronze_sheet",
@@ -276,14 +285,14 @@ function lizardGeologyAlchemyChanges(event) {
 
     event.shapeless("minecraft:granite", [
         "1x minecraft:diorite",
-        "3x minecraft:quartz",
+        "3x minecraft:sand",
     ]);
 
     // Nerf vanilla andesite shapeless
 
     event.shapeless("minecraft:andesite", [
-        "2x minecraft:diorite",
-        "4x minecraft:gravel",
+        "1x minecraft:diorite",
+        "4x minecraft:flint",
     ]);
 
     // Keep this, let people decide which path to produce diorite is
@@ -293,7 +302,7 @@ function lizardGeologyAlchemyChanges(event) {
 
     event.shapeless("minecraft:diorite", [
         "minecraft:cobblestone",
-        "6x minecraft:quartz",
+        "3x minecraft:quartz",
     ]);
     // I'm too confused to replace the tconstruct recipe
 
@@ -985,7 +994,7 @@ event.recipes.createMechanicalCrafting('ad_astra:ostrum_engine', [
   B: 'createaddition:capacitor',
   D: 'createaddition:tesla_coil',
   E: 'ad_astra:ostrum_block',
-  F: 'ad_astra:compressed_ostrum',
+  F: 'ad_astra:ostrum_plate',
 })
 
 
