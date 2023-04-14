@@ -1185,6 +1185,30 @@ function mixingRecipes(event) {
             time: 1000,
         },
         {
+            output: "#c:living_coral_plants",
+            input: [
+                "4x minecraft:kelp",
+                {
+                    fluid: "minecraft:water",
+                    amount: FULL_BUCKET_AMMOUNT / 4,
+                },
+            ],
+            heat: "",
+            time: 50,
+        },
+        {
+            output: "#c:living_coral_fans",
+            input: [
+                "4x minecraft:dried_kelp",
+                {
+                    fluid: "minecraft:water",
+                    amount: FULL_BUCKET_AMMOUNT / 4,
+                },
+            ],
+            heat: "",
+            time: 50,
+        },
+        {
             output: "3x tconstruct:nether_grout",
             input: [
                 "minecraft:magma_cream",
@@ -2115,6 +2139,10 @@ function compactingRecipes(event) {
         {
             output: "minecraft:prismarine_shard",
             inputs: ["#c:coral_plants"],
+        },
+        {
+            output: "minecraft:prismarine_shard",
+            inputs: ["#c:coral_fans"],
         },
         {
             output: "techreborn:diamond_nugget",
