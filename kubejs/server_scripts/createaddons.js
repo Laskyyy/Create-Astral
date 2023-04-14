@@ -62,7 +62,7 @@ onEvent("recipes", (event) => {
                 { item: "minecraft:iron_nugget", chance: 0.15 },
                 { item: "minecraft:flint", chance: 0.35 },
             ],
-            processingTime: 200,
+            processingTime: 50,
         },
         {
             inputs: [
@@ -84,7 +84,7 @@ onEvent("recipes", (event) => {
                 { item: "minecraft:cobblestone" },
             ],
             outputs: [{ item: "techreborn:tin_nugget", chance: 0.05 }],
-            processingTime: 200,
+            processingTime: 50,
         },
         {
             inputs: [
@@ -92,7 +92,7 @@ onEvent("recipes", (event) => {
                 { item: "minecraft:flint" },
             ],
             outputs: [{ item: "minecraft:music_disc_13", chance: 0.0005 }],
-            processingTime: 200,
+            processingTime: 50,
         },
         {
             inputs: [
@@ -100,7 +100,7 @@ onEvent("recipes", (event) => {
                 { tag: "c:deepslate" },
             ],
             outputs: [{ item: "minecraft:redstone", chance: 0.05 }],
-            processingTime: 200,
+            processingTime: 50,
         },
         {
             inputs: [
@@ -134,7 +134,7 @@ onEvent("recipes", (event) => {
                 { item: "minecraft:dirt", chance: 1 },
                 { item: "minecraft:flint", chance: 0.3 },
             ],
-            processingTime: 200,
+            processingTime: 50,
         },
         {
             inputs: [
@@ -163,7 +163,7 @@ onEvent("recipes", (event) => {
                 { item: "minecraft:cobblestone" },
             ],
             outputs: [{ item: "techreborn:tin_nugget", chance: 0.08 }],
-            processingTime: 200,
+            processingTime: 50,
         },
         {
             inputs: [
@@ -171,7 +171,7 @@ onEvent("recipes", (event) => {
                 { item: "minecraft:flint" },
             ],
             outputs: [{ item: "minecraft:music_disc_13", chance: 0.001 }],
-            processingTime: 200,
+            processingTime: 20,
         },
         {
             inputs: [
@@ -179,10 +179,10 @@ onEvent("recipes", (event) => {
                 { item: "minecraft:cobbled_deepslate" },
             ],
             outputs: [
-                { item: "minecraft:redstone", chance: 0.07 },
+                { item: "minecraft:redstone", chance: 0.1 },
                 { item: "create:copper_nugget", chance: 0.05 },
             ],
-            processingTime: 200,
+            processingTime: 50,
         },
 
         {
@@ -226,6 +226,24 @@ onEvent("recipes", (event) => {
 
         {
             inputs: [
+                { item: "createsifter:brass_mesh" },
+                { item: "minecraft:prismarine" },
+            ],
+            outputs: [
+                { item: "minecraft:raw_cod", chance: 0.2 },
+                { item: "minecraft:raw_salmon", chance: 0.2 },
+                { item: "minecraft:tropical_fish", chance: 0.1 },
+                { item: "minecraft:pufferfishh", chance: 0.03 },
+                { item: "minecraft:nautilus_shell", chance: 0.02 },
+                { item: "minecraft:lily_pad", chance: 0.4 },
+                { item: "minecraft:glow_ink_sac", chance: 0.2 },
+
+            ],
+            processingTime: 100,
+        },
+
+        {
+            inputs: [
                 {
                     item: "createsifter:andesite_mesh",
                 },
@@ -263,7 +281,7 @@ onEvent("recipes", (event) => {
                     chance: 0.05,
                 },
             ],
-            processingTime: 500,
+            processingTime: 50,
         },
     ].forEach((recipe) => {
         event.custom({
