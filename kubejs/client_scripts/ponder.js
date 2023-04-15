@@ -165,8 +165,14 @@ onEvent("ponder.registry", (event) => {
                     "minecraft:obsidian",
                     false
                 );
+
                 scene.showStructure();
                 scene.idle(10);
+                scene.world.setBlock(
+                    [2, 2, 2],
+                    Block.getBlock("minecraft:fire").defaultBlockState(),
+                    false
+                );
                 scene.text(
                     40,
                     "In this pack, the nether is disabled. Instead, items are spread throughout the different planets.",
