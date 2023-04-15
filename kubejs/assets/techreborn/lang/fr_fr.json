@@ -1,0 +1,13 @@
+{
+    "block.techreborn.nuke": "W.O.L.F",
+    "block.techreborn.deepslate_silver_ore": "Minerai d'argent lunaire",
+    "block.techreborn.deepslate_lead_ore": "Minerai de plomb martien",
+    "block.techreborn.deepslate_iridium_ore": "Minerai d'iridium mercurien",
+    "block.techreborn.deepslate_galena_ore": "Minerai de galène mercurien",
+    "block.techreborn.deepslate_sodalite_ore": "Minerai de sodalite martien",
+    "item.techreborn.electronic_circuit": "Circuit intégré avancé",
+    "item.techreborn.industrial_circuit": "Unité de calcul industriel",
+    "item.techreborn.machine_parts": "Pièces de machine",
+    "item.techreborn.uu_matter": "Shimmer raffinée", // Check ae2\lang\fr_fr.json
+    "item.techreborn.synthetic_redstone_crystal": "Cristal de redstone synthétique"
+}
