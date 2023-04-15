@@ -1826,7 +1826,7 @@ function mechanicalCraftingRecipes(event) {
             shape: ["BDCDB", "BAEAB", "BBEBB"],
             inputs: {
                 A: "create:attribute_filter",
-                B: "ad_astra:steel_plate",
+                B: "ad_astra:ostrum_plate",
                 C: "create:mechanical_mixer",
                 D: "create:precision_mechanism",
                 E: "create:fluid_tank",
