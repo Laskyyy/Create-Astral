@@ -140,6 +140,8 @@
   "chapter.1.quest.9.description.1": "Figured out how to make meals, eh? Now, here is a list of crops to automate when you complete the quest \u003e:D",
   "chapter.1.quest.9.title": "Let\u0027s Get Cooking",
   "chapter.1.title": "0.5) Getting Started.",
+
+
   "chapter.2.quest.1.description.1": "Combine copper and tin in a smithing table to get the most primitive of alloys.\n\n\nThis material is used for creating cogwheels.",
   "chapter.2.quest.1.subtitle": "A new metal?",
   "chapter.2.quest.10.description.1": "There will be a cheaper way to produce tracks in the near future.\n\n\nAfter placing down a track, right click with another track in your hand, and you\u0027ll be able to create tracks with smooth bends.",
@@ -248,6 +250,8 @@
   "chapter.2.quest.9.description.1": "Trains have specific uses. Not only can they transport players, they can also transport items and fluids in bulk. They can also be automatically scheduled and will travel through unloaded chunks, making them perfect for transporting resources from faraway production and resource sites.\n\n\nThey\u0027re not necessary for progression, so feel free to ignore this section of the chapter. That being said, they\u0027re also darn cool.\n\n\nNormally trains come much later, but we\u0027re generous.\n\n\n\n",
   "chapter.2.quest.9.subtitle": "Trains? Trains!!!",
   "chapter.2.title": "1) The andesite world.",
+
+  
   "chapter.3.quest.1.description.1": "You won\u0027t be able to use Tinkers\u0027 fluid tanks until owning a smeltery that comes later. However, Create tanks work just fine for storing liquids. They will require a pipe to input fluid, as buckets cannot be directly used on them.",
   "chapter.3.quest.1.subtitle": "Tech Reborn tanks also exist later",
   "chapter.3.quest.1.title": "Fluid Storage",

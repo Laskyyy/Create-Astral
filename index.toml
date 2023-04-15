@@ -16162,7 +16162,7 @@ hash = "df0c3d074b89cc84445200d6accf45f7f81bd0574b76d8dfc944c2003893b472"
 
 [[files]]
 file = "kubejs/assets/createastral/lang/fr_fr.json"
-hash = "b13b07b1c02fd549b05da38fd9fbff89e04c61d7c7ad0c4f6856749067d62f97"
+hash = "d8c744c72813d512d17a392e2b1187265c379f0c675fd99ad727d4de6df42634"
 
 [[files]]
 file = "kubejs/assets/createastral/textures/block/andesite_alloy_block.png"
@@ -16573,6 +16573,10 @@ file = "kubejs/assets/farmersdelight/lang/fr_fr.json"
 hash = "2f0d8b4b11c11542e63e12df1dd31ba36bd344a634687f0e2d5cbc1dd6a19043"
 
 [[files]]
+file = "kubejs/assets/ftbquests/lang/fr_fr.json"
+hash = "38a2b44e9bcf55b3247762e308131cbb29ca1131aa5adbc316286f74da58c899"
+
+[[files]]
 file = "kubejs/assets/immersive_aircraft/lang/en_us.json"
 hash = "68a4e04406d7e91946faa0d0ab1ab4ab625765595139a0ab234e50247a3eb4f6"
 
@@ -16582,7 +16586,7 @@ hash = "edae1fdfacfff761b72d5b5ff471f6d4b2db2188ac8e01a2b41836db68d2aabd"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
-hash = "065619a4d81438a32d8e5dcef9fd68515757c395db9d9c3f2e2a00fb19de2f16"
+hash = "6231f71b636a32ec5074f8b7dbc4a37a0a79e145c61095f52a5866bb1c1b1cd6"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/fr_fr.json"
@@ -17046,7 +17050,7 @@ hash = "4f9be69c0090d0a979d22ee58b1a457796b13d55202b588fa9ad113057049f90"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
-hash = "ba6e430fce5de901a4a2afcd474ad85daae132596fa7cf8739643178b58c5375"
+hash = "a57a9d22b904665c6dc3d6755ff826054be14f7463176c4d4a12996acafa8bf2"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
