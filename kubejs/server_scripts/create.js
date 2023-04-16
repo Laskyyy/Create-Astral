@@ -1,5 +1,5 @@
-const FULL_BUCKET_AMOUNT = 81000;
-const INGOT_FLUID_AMOUNT = 9000;
+var FULL_BUCKET_AMMOUNT = 81000;
+var INGOT_FLUID_AMMOUNT = 9000;
 
 onEvent("recipes", (event) => {
     crushingRecipes(event);
@@ -1024,13 +1024,13 @@ function fillingRecipes(event) {
             input: "minecraft:calcite",
             output: "3x minecraft:pointed_dripstone",
             fluid: "minecraft:water",
-            amount: FULL_BUCKET_AMOUNT / 2,
+            amount: FULL_BUCKET_AMMOUNT / 2,
         },
         {
             input: "techreborn:netherrack_dust",
             output: "create:cinder_flour",
             fluid: "minecraft:water",
-            amount: FULL_BUCKET_AMOUNT / 4,
+            amount: FULL_BUCKET_AMMOUNT / 4,
         },
         {
             input: "create:blaze_cake_base",
@@ -1095,7 +1095,7 @@ function mixingRecipes(event) {
                 "9x #minecraft:leaves",
                 {
                     fluid: "createaddition:seed_oil",
-                    amount: FULL_BUCKET_AMOUNT / 2,
+                    amount: FULL_BUCKET_AMMOUNT / 2,
                 },
             ],
             heat: "heated",
@@ -1107,7 +1107,7 @@ function mixingRecipes(event) {
                 "9x #c:grass_variants",
                 {
                     fluid: "createaddition:seed_oil",
-                    amount: FULL_BUCKET_AMOUNT / 2,
+                    amount: FULL_BUCKET_AMMOUNT / 2,
                 },
             ],
             heat: "heated",
@@ -1138,13 +1138,13 @@ function mixingRecipes(event) {
         {
             output: Fluid.of(
                 "kubejs:blast-resistant_cement",
-                FULL_BUCKET_AMOUNT
+                FULL_BUCKET_AMMOUNT
             ),
             input: [
                 "#c:concrete_powder",
                 "2x createastral:lime",
                 "3x techreborn:steel_dust",
-                { fluid: "minecraft:water", amount: FULL_BUCKET_AMOUNT },
+                { fluid: "minecraft:water", amount: FULL_BUCKET_AMMOUNT },
             ],
             heat: "heated",
             time: 1000,
@@ -1987,7 +1987,7 @@ function compactingRecipes(event) {
             inputs: [
                 "3x minecraft:bone_meal",
                 "minecraft:gravel",
-                { fluid: "minecraft:lava", amount: FULL_BUCKET_AMOUNT / 10 },
+                { fluid: "minecraft:lava", amount: FULL_BUCKET_AMMOUNT / 10 },
             ],
         },
         {
@@ -1996,7 +1996,7 @@ function compactingRecipes(event) {
                 "2x minecraft:pointed_dripstone",
                 "2x ad_astra:moon_sand",
                 "2x minecraft:flint",
-                { fluid: "minecraft:lava", amount: FULL_BUCKET_AMOUNT / 10 },
+                { fluid: "minecraft:lava", amount: FULL_BUCKET_AMMOUNT / 10 },
             ],
         },
         {
@@ -2005,7 +2005,7 @@ function compactingRecipes(event) {
                 "3x techreborn:lazurite_dust",
                 "2x minecraft:gunpowder",
                 "2x minecraft:iron_nugget",
-                { fluid: "minecraft:lava", amount: FULL_BUCKET_AMOUNT / 30 },
+                { fluid: "minecraft:lava", amount: FULL_BUCKET_AMMOUNT / 30 },
             ],
         },
         {
@@ -2014,7 +2014,7 @@ function compactingRecipes(event) {
                 "minecraft:diorite",
                 "minecraft:flint",
                 "techreborn:netherrack_dust",
-                { fluid: "minecraft:lava", amount: FULL_BUCKET_AMOUNT / 10 },
+                { fluid: "minecraft:lava", amount: FULL_BUCKET_AMMOUNT / 10 },
             ],
         },
         {
@@ -2031,7 +2031,7 @@ function compactingRecipes(event) {
             inputs: [
                 "2x minecraft:flint",
                 "minecraft:gravel",
-                { fluid: "minecraft:lava", amount: FULL_BUCKET_AMOUNT / 10 },
+                { fluid: "minecraft:lava", amount: FULL_BUCKET_AMMOUNT / 10 },
             ],
         },
         {

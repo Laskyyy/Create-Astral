@@ -1,5 +1,5 @@
-const FULL_BUCKET_AMOUNT = 81000;
-const INGOT_FLUID_AMOUNT = 9000;
+var FULL_BUCKET_AMMOUNT = 81000;
+var INGOT_FLUID_AMMOUNT = 9000;
 
 onEvent("recipes", (event) => {
     // Fluid: [string Fluid Name, Fluid Amount]
@@ -8,25 +8,25 @@ onEvent("recipes", (event) => {
     // Cast: [string Item Name, bool Cast Consumed] or null if none
     [
         {
-            fluid: ["kubejs:compound_mixture", INGOT_FLUID_AMOUNT * 9],
+            fluid: ["kubejs:compound_mixture", INGOT_FLUID_AMMOUNT * 9],
             result: "createastral:andesite_alloy_block",
             cooling_time: 180,
             cast: null,
         },
         {
-            fluid: ["kubejs:blast-resistant_cement", FULL_BUCKET_AMOUNT],
+            fluid: ["kubejs:blast-resistant_cement", FULL_BUCKET_AMMOUNT],
             result: "createastral:blast-resistant_concrete",
             cooling_time: 400,
             cast: null,
         },
         {
-            fluid: ["tconstruct:molten_quartz", (3 * FULL_BUCKET_AMOUNT) / 10],
+            fluid: ["tconstruct:molten_quartz", (3 * FULL_BUCKET_AMMOUNT) / 10],
             result: "minecraft:granite",
             cooling_time: 140,
             cast: ["minecraft:diorite", true],
         },
         {
-            fluid: ["tconstruct:liquid_soul", FULL_BUCKET_AMOUNT],
+            fluid: ["tconstruct:liquid_soul", FULL_BUCKET_AMMOUNT],
             result: "minecraft:diorite",
             cooling_time: 80,
             cast: ["minecraft:basalt", true],
