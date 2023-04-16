@@ -1,4 +1,4 @@
 {
-    "item.create.lapis_sheet": "",
-    "item.create.integrated_circuit": ""
+    "item.create.blaze_cake":"Utilisez du carburant pour surchauffer les blazes !",
+    "item.create.blaze_cake.tooltip.summary":"Ne surchauffe plus ! Utilisez les processus du Chapitre 4 pour surchauffer les brûleurs de blaze. (Seau de carburant)"
 }
