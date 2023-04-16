@@ -261,11 +261,7 @@ function crushingRecipes(event) {
             input: "techreborn:" + ore + "_ore",
         });
         event.recipes.createCrushing(
-            [
-                "2x techreborn:raw_" + ore.contains("_")
-                    ? ore.split("_")[1]
-                    : ore,
-            ],
+            ["2x techreborn:raw_" + ore.split("_")[1]],
             "techreborn:" + ore + "_ore"
         );
     });
