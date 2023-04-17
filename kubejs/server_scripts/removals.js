@@ -402,6 +402,7 @@ onEvent("recipes", (event) => {
         { type: "tconstruct:alloy" },
         { output: "tconstruct:nether_grout" },
         { output: "tconstruct:efln_ball" },
+        { output: "tconstruct:piggy_backpack" },
 
         // Miscellaneous
 
