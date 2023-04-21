@@ -231,12 +231,12 @@ onEvent("recipes", (event) => {
             ],
             outputs: [
                 { item: "minecraft:raw_cod", chance: 0.2 },
-                { item: "minecraft:raw_salmon", chance: 0.2 },
-                { item: "minecraft:tropical_fish", chance: 0.1 },
+                { item: "minecraft:raw_salmon", chance: 0.1 },
+                { item: "minecraft:tropical_fish", chance: 0.05 },
                 { item: "minecraft:pufferfishh", chance: 0.03 },
                 { item: "minecraft:nautilus_shell", chance: 0.02 },
-                { item: "minecraft:lily_pad", chance: 0.4 },
-                { item: "minecraft:glow_ink_sac", chance: 0.2 },
+                { item: "minecraft:lily_pad", chance: 0.2 },
+                { item: "minecraft:glow_ink_sac", chance: 0.1 },
 
             ],
             processingTime: 100,

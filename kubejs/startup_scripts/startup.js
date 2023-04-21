@@ -408,6 +408,7 @@ event.create('createastral:airship_blueprint').texture("create:item/schematic") 
 
 event.create('createastral:refining_agent'),
 event.create('createastral:separation_agent'),
+event.create('createastral:shimmer_amplifier'),
 event.create('createastral:star_shard'),
 event.create('createastral:pure_star_shard').glow(true),
 event.create('createastral:crushed_yttrium_ore'),
