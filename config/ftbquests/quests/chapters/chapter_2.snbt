@@ -205,12 +205,20 @@
 				type: "item"
 				item: "create:mechanical_drill"
 			}]
-			rewards: [{
-				id: "66C7D5F72E20E263"
-				type: "item"
-				item: "farmersdelight:chocolate_pie_slice"
-				count: 5
-			}]
+			rewards: [
+				{
+					id: "66C7D5F72E20E263"
+					type: "item"
+					item: "farmersdelight:chocolate_pie_slice"
+					count: 5
+				}
+				{
+					id: "6AEAC49BF0694382"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5687404501397719867L
+				}
+			]
 		}
 		{
 			x: -6.0d
@@ -428,38 +436,6 @@
 			}]
 		}
 		{
-			title: "{chapter.2.quest.16.title}"
-			x: 0.0d
-			y: 12.5d
-			subtitle: "{chapter.2.quest.16.subtitle}"
-			description: ["{chapter.2.quest.16.description.1}"]
-			dependencies: ["5BE7EBA598FD5EE0"]
-			id: "1B5245476A321C24"
-			tasks: [
-				{
-					id: "6CB5E797D027C3B7"
-					type: "item"
-					item: "compressor:double_compressed_andesite"
-				}
-				{
-					id: "09139529C4467EC3"
-					type: "item"
-					item: "minecraft:water_bucket"
-				}
-				{
-					id: "6DD2580F695132B6"
-					type: "item"
-					item: "minecraft:lava_bucket"
-				}
-			]
-			rewards: [{
-				id: "4CD8DDB0266CAE21"
-				type: "item"
-				item: "catwalksinc:catwalk"
-				count: 64
-			}]
-		}
-		{
 			icon: "create:mechanical_mixer"
 			x: -2.0d
 			y: -1.0d
@@ -494,13 +470,21 @@
 				item: "doodads:platform"
 				count: 16L
 			}]
-			rewards: [{
-				id: "0DC3D0AAF6DD9929"
-				type: "item"
-				item: "doodads:platform"
-				count: 16
-				only_one: true
-			}]
+			rewards: [
+				{
+					id: "0DC3D0AAF6DD9929"
+					type: "item"
+					item: "doodads:platform"
+					count: 16
+					only_one: true
+				}
+				{
+					id: "1CED17D1B45F41AB"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5687404501397719867L
+				}
+			]
 		}
 		{
 			x: -6.5d
@@ -515,11 +499,19 @@
 				type: "item"
 				item: "computercraft:computer_normal"
 			}]
-			rewards: [{
-				id: "7E0B5E1A08BA855C"
-				type: "item"
-				item: "minecraft:note_block"
-			}]
+			rewards: [
+				{
+					id: "7E0B5E1A08BA855C"
+					type: "item"
+					item: "minecraft:note_block"
+				}
+				{
+					id: "4B3E85CA0BB23364"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5687404501397719867L
+				}
+			]
 		}
 		{
 			x: -7.5d
@@ -533,6 +525,12 @@
 				id: "3EF37A796B2984A4"
 				type: "item"
 				item: "computercraft:turtle_normal"
+			}]
+			rewards: [{
+				id: "4EBFBA3737B65C59"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5687404501397719867L
 			}]
 		}
 		{
@@ -817,6 +815,12 @@
 				type: "item"
 				item: "createsifter:sifter"
 			}]
+			rewards: [{
+				id: "286E2300C7CCAB18"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5687404501397719867L
+			}]
 		}
 		{
 			title: "{chapter.2.quest.30.title}"
@@ -873,12 +877,20 @@
 				type: "item"
 				item: "createaddition:rolling_mill"
 			}]
-			rewards: [{
-				id: "0658745608F58B97"
-				type: "item"
-				item: "minecraft:grass_block"
-				count: 8
-			}]
+			rewards: [
+				{
+					id: "0658745608F58B97"
+					type: "item"
+					item: "minecraft:grass_block"
+					count: 8
+				}
+				{
+					id: "169483D157F01D7F"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+			]
 		}
 		{
 			title: "{chapter.2.quest.32.title}"
@@ -893,12 +905,20 @@
 				type: "item"
 				item: "minecraft:diamond"
 			}]
-			rewards: [{
-				id: "1723B18152EFFBDB"
-				type: "item"
-				item: "minecraft:emerald"
-				count: 4
-			}]
+			rewards: [
+				{
+					id: "1723B18152EFFBDB"
+					type: "item"
+					item: "minecraft:emerald"
+					count: 4
+				}
+				{
+					id: "0D417837916661B3"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5687404501397719867L
+				}
+			]
 		}
 		{
 			x: -4.5d
@@ -912,11 +932,19 @@
 				type: "item"
 				item: "ad_astra:earth_globe"
 			}]
-			rewards: [{
-				id: "474F63CEE27D89D4"
-				type: "item"
-				item: "ad_astra:moon_globe"
-			}]
+			rewards: [
+				{
+					id: "474F63CEE27D89D4"
+					type: "item"
+					item: "ad_astra:moon_globe"
+				}
+				{
+					id: "69BA6A46FBD56AE5"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5687404501397719867L
+				}
+			]
 		}
 		{
 			x: -1.0d
@@ -929,6 +957,12 @@
 				id: "0AE62A2EB5C01889"
 				type: "item"
 				item: "create:mechanical_saw"
+			}]
+			rewards: [{
+				id: "7E1B221B8ED9F37C"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 7346754112178737004L
 			}]
 		}
 		{
@@ -1006,6 +1040,12 @@
 				id: "5E3F778EEE449FC5"
 				type: "item"
 				item: "create:encased_fan"
+			}]
+			rewards: [{
+				id: "2005AEC900CA6131"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5687404501397719867L
 			}]
 		}
 		{
@@ -1182,6 +1222,12 @@
 				type: "item"
 				item: "create:controls"
 			}]
+			rewards: [{
+				id: "404F103479A27FD1"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 7346754112178737004L
+			}]
 		}
 		{
 			x: -9.0d
@@ -1222,33 +1268,12 @@
 					item: "create:track_observer"
 				}
 			]
-		}
-		{
-			title: "{chapter.2.quest.47.title}"
-			icon: "minecraft:bedrock"
-			x: -4.0d
-			y: 12.5d
-			subtitle: "{chapter.2.quest.47.subtitle}"
-			description: ["{chapter.2.quest.47.description.1}"]
-			dependencies: ["5BE7EBA598FD5EE0"]
-			id: "2AF2E0A5DF16F5D9"
-			tasks: [
-				{
-					id: "35684AEA414C5246"
-					type: "checkmark"
-					title: "{chapter.2.quest.47.task.1.title}"
-				}
-				{
-					id: "65DD979F7CE1FDE8"
-					type: "item"
-					item: "minecraft:water_bucket"
-				}
-				{
-					id: "19BAABDDC504962C"
-					type: "item"
-					item: "minecraft:lava_bucket"
-				}
-			]
+			rewards: [{
+				id: "6675F3CECB7F54C8"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5687404501397719867L
+			}]
 		}
 	]
 	quest_links: [ ]

@@ -185,6 +185,12 @@
 					type: "item"
 					item: "tconstruct:encyclopedia"
 				}
+				{
+					id: "0D5584EBAF4D23BF"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
 			]
 		}
 		{
@@ -392,12 +398,20 @@
 					item: "drinkbeer:recipe_board_package"
 				}
 			]
-			rewards: [{
-				id: "2FB3A079A96DE590"
-				type: "item"
-				item: "create:dough"
-				count: 3
-			}]
+			rewards: [
+				{
+					id: "2FB3A079A96DE590"
+					type: "item"
+					item: "create:dough"
+					count: 3
+				}
+				{
+					id: "3EF8694D5FBE9C87"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+			]
 		}
 		{
 			title: "{chapter.1.quest.12.title}"
@@ -426,20 +440,14 @@
 			id: "0BCED0F8481E0C21"
 			tasks: [
 				{
-					id: "7762F7FD3BD41EA6"
-					type: "item"
-					item: {
-						id: "tconstruct:crafting_station"
-						Count: 1b
-						tag: {
-							texture: "minecraft:oak_log"
-						}
-					}
-				}
-				{
 					id: "576B4EA932FC2E16"
 					type: "item"
 					item: "minecraft:crafting_table"
+				}
+				{
+					id: "28EDCD4D94EA56BA"
+					type: "item"
+					item: "yttr:project_table"
 				}
 			]
 			rewards: [
@@ -511,7 +519,11 @@
 			y: 10.0d
 			shape: "diamond"
 			subtitle: "{chapter.1.quest.16.subtitle}"
-			description: ["{chapter.1.quest.16.description.1}"]
+			description: [
+				"{chapter.1.quest.16.description.1}"
+				""
+				"You can also harvest wheat and various other crops with a knife to collect straw, avoiding the need for rice!"
+			]
 			hide_dependency_lines: true
 			dependencies: ["0BCED0F8481E0C21"]
 			size: 1.5d
@@ -543,12 +555,20 @@
 				type: "item"
 				item: "farmersdelight:straw"
 			}]
-			rewards: [{
-				id: "4BB9B1AC0821A6AD"
-				type: "item"
-				item: "farmersdelight:straw"
-				count: 3
-			}]
+			rewards: [
+				{
+					id: "4BB9B1AC0821A6AD"
+					type: "item"
+					item: "farmersdelight:straw"
+					count: 3
+				}
+				{
+					id: "2D84A5017E93DF2E"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+			]
 		}
 		{
 			x: -6.0d
@@ -618,12 +638,20 @@
 				item: "minecraft:melon"
 				count: 64L
 			}]
-			rewards: [{
-				id: "70CEAFBC1ED06AAF"
-				type: "item"
-				item: "minecraft:copper_ore"
-				count: 25
-			}]
+			rewards: [
+				{
+					id: "70CEAFBC1ED06AAF"
+					type: "item"
+					item: "minecraft:copper_ore"
+					count: 25
+				}
+				{
+					id: "497BEC5E5B8C1FCF"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+			]
 		}
 		{
 			title: "{chapter.1.quest.21.title}"
@@ -638,12 +666,20 @@
 				item: "minecraft:cactus"
 				count: 64L
 			}]
-			rewards: [{
-				id: "7EF1AFDAC31ED87C"
-				type: "item"
-				item: "minecraft:gold_ore"
-				count: 20
-			}]
+			rewards: [
+				{
+					id: "7EF1AFDAC31ED87C"
+					type: "item"
+					item: "minecraft:gold_ore"
+					count: 20
+				}
+				{
+					id: "3431E5DC8F1262FA"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+			]
 		}
 		{
 			title: "{chapter.1.quest.22.title}"
@@ -658,12 +694,20 @@
 				item: "minecraft:pumpkin"
 				count: 64L
 			}]
-			rewards: [{
-				id: "62BE7175BE9B0DED"
-				type: "item"
-				item: "minecraft:iron_ore"
-				count: 20
-			}]
+			rewards: [
+				{
+					id: "62BE7175BE9B0DED"
+					type: "item"
+					item: "minecraft:iron_ore"
+					count: 20
+				}
+				{
+					id: "6991ED76680EEA17"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+			]
 		}
 		{
 			title: "{chapter.1.quest.23.title}"
@@ -679,12 +723,20 @@
 				item: "farmersdelight:carrot_crate"
 				count: 64L
 			}]
-			rewards: [{
-				id: "64C5214D379321F1"
-				type: "item"
-				item: "minecraft:deepslate_copper_ore"
-				count: 30
-			}]
+			rewards: [
+				{
+					id: "64C5214D379321F1"
+					type: "item"
+					item: "minecraft:deepslate_copper_ore"
+					count: 30
+				}
+				{
+					id: "3A63B36483A7E881"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+			]
 		}
 		{
 			title: "{chapter.1.quest.24.title}"
@@ -713,6 +765,12 @@
 					item: "create:zinc_ore"
 					count: 32
 				}
+				{
+					id: "1EFBA7A9225F1392"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
 			]
 		}
 		{
@@ -729,12 +787,20 @@
 				item: "farmersdelight:beetroot_crate"
 				count: 64L
 			}]
-			rewards: [{
-				id: "52FC831AEA7F2A46"
-				type: "item"
-				item: "minecraft:deepslate_redstone_ore"
-				count: 25
-			}]
+			rewards: [
+				{
+					id: "52FC831AEA7F2A46"
+					type: "item"
+					item: "minecraft:deepslate_redstone_ore"
+					count: 25
+				}
+				{
+					id: "2D7FFAF9BA42B1C2"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+			]
 		}
 		{
 			title: "{chapter.1.quest.26.title}"
@@ -750,12 +816,20 @@
 				item: "farmersdelight:rice_bag"
 				count: 64L
 			}]
-			rewards: [{
-				id: "19EF8ED55AE8ABED"
-				type: "item"
-				item: "minecraft:quartz"
-				count: 32
-			}]
+			rewards: [
+				{
+					id: "19EF8ED55AE8ABED"
+					type: "item"
+					item: "minecraft:quartz"
+					count: 32
+				}
+				{
+					id: "7FAD985EC635C988"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+			]
 		}
 		{
 			title: "{chapter.1.quest.27.title}"
@@ -784,6 +858,12 @@
 					item: "naturalist:cooked_venison"
 					count: 32
 				}
+				{
+					id: "5AE723A1E0304B28"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
 			]
 		}
 		{
@@ -800,12 +880,20 @@
 				item: "farmersdelight:tomato_crate"
 				count: 64L
 			}]
-			rewards: [{
-				id: "504F364ED908935F"
-				type: "item"
-				item: "minecraft:redstone_ore"
-				count: 32
-			}]
+			rewards: [
+				{
+					id: "504F364ED908935F"
+					type: "item"
+					item: "minecraft:redstone_ore"
+					count: 32
+				}
+				{
+					id: "6F2607CBBE874320"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+			]
 		}
 		{
 			title: "{chapter.1.quest.29.title}"
@@ -821,12 +909,20 @@
 				item: "farmersdelight:cabbage_crate"
 				count: 64L
 			}]
-			rewards: [{
-				id: "15293C6F9430DA31"
-				type: "item"
-				item: "minecraft:emerald_ore"
-				count: 25
-			}]
+			rewards: [
+				{
+					id: "15293C6F9430DA31"
+					type: "item"
+					item: "minecraft:emerald_ore"
+					count: 25
+				}
+				{
+					id: "65D04E934F5CB97A"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+			]
 		}
 		{
 			title: "{chapter.1.quest.30.title}"
@@ -929,17 +1025,43 @@
 					consume_items: false
 				}
 			]
-			rewards: [{
-				id: "3415146CCA0548A2"
-				type: "item"
-				item: {
-					id: "mcdw:axe_encrusted_anchor"
-					Count: 1b
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: "3415146CCA0548A2"
+					type: "item"
+					item: {
+						id: "mcdw:axe_encrusted_anchor"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
 					}
 				}
-			}]
+				{
+					id: "723921C68751887B"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+				{
+					id: "77152E4FD0C5B4E2"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+				{
+					id: "52F285BD3A075014"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+				{
+					id: "345566A37B4367BB"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+			]
 		}
 		{
 			title: "{chapter.1.quest.31.title}"
@@ -1041,6 +1163,12 @@
 					item: "minecraft:copper_ingot"
 				}
 			]
+			rewards: [{
+				id: "18848E20BC8C76DC"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 7346754112178737004L
+			}]
 		}
 		{
 			title: "{chapter.1.quest.34.title}"
@@ -1157,6 +1285,12 @@
 						}
 					}
 				}
+				{
+					id: "00EFF65109AAE6FE"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5687404501397719867L
+				}
 			]
 		}
 		{
@@ -1204,6 +1338,12 @@
 					count: 4L
 				}
 			]
+			rewards: [{
+				id: "49279D2DE3D066A1"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 7346754112178737004L
+			}]
 		}
 		{
 			title: "{chapter.1.quest.36.title}"
@@ -1250,12 +1390,20 @@
 				type: "item"
 				item: "chipped:botanist_workbench"
 			}]
-			rewards: [{
-				id: "37C1156AB1726C5E"
-				type: "item"
-				item: "minecraft:moss_block"
-				count: 8
-			}]
+			rewards: [
+				{
+					id: "37C1156AB1726C5E"
+					type: "item"
+					item: "minecraft:moss_block"
+					count: 8
+				}
+				{
+					id: "770CED448F4A7D50"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+			]
 		}
 		{
 			x: -3.5d
@@ -1268,12 +1416,20 @@
 				type: "item"
 				item: "chipped:glassblower"
 			}]
-			rewards: [{
-				id: "412393C0BD8AAFC9"
-				type: "item"
-				item: "minecraft:glass"
-				count: 16
-			}]
+			rewards: [
+				{
+					id: "412393C0BD8AAFC9"
+					type: "item"
+					item: "minecraft:glass"
+					count: 16
+				}
+				{
+					id: "17B308492ACE03FC"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+			]
 		}
 		{
 			x: -0.5d
@@ -1286,12 +1442,20 @@
 				type: "item"
 				item: "chipped:carpenters_table"
 			}]
-			rewards: [{
-				id: "2C267CF0C88E548F"
-				type: "item"
-				item: "minecraft:oak_log"
-				count: 32
-			}]
+			rewards: [
+				{
+					id: "2C267CF0C88E548F"
+					type: "item"
+					item: "minecraft:oak_log"
+					count: 32
+				}
+				{
+					id: "244EE10AD2875636"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+			]
 		}
 		{
 			x: -0.5d
@@ -1304,12 +1468,20 @@
 				type: "item"
 				item: "chipped:loom_table"
 			}]
-			rewards: [{
-				id: "1F16D277E7B3D5DD"
-				type: "item"
-				item: "minecraft:white_wool"
-				count: 16
-			}]
+			rewards: [
+				{
+					id: "1F16D277E7B3D5DD"
+					type: "item"
+					item: "minecraft:white_wool"
+					count: 16
+				}
+				{
+					id: "2D97B269923F8E2C"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+			]
 		}
 		{
 			x: -3.5d
@@ -1322,12 +1494,20 @@
 				type: "item"
 				item: "chipped:mason_table"
 			}]
-			rewards: [{
-				id: "5B3D1DB7984B6EA4"
-				type: "item"
-				item: "minecraft:andesite"
-				count: 16
-			}]
+			rewards: [
+				{
+					id: "5B3D1DB7984B6EA4"
+					type: "item"
+					item: "minecraft:andesite"
+					count: 16
+				}
+				{
+					id: "177AE4A0D8338BA8"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+			]
 		}
 		{
 			x: -0.5d
@@ -1340,11 +1520,19 @@
 				type: "item"
 				item: "chipped:alchemy_bench"
 			}]
-			rewards: [{
-				id: "302E910F93ECC032"
-				type: "item"
-				item: "minecraft:copper_block"
-			}]
+			rewards: [
+				{
+					id: "302E910F93ECC032"
+					type: "item"
+					item: "minecraft:copper_block"
+				}
+				{
+					id: "670F2D01A010E889"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+			]
 		}
 		{
 			x: -3.5d
@@ -1357,11 +1545,19 @@
 				type: "item"
 				item: "chipped:mechanist_workbench"
 			}]
-			rewards: [{
-				id: "21B1578A2172D29C"
-				type: "item"
-				item: "minecraft:redstone_block"
-			}]
+			rewards: [
+				{
+					id: "21B1578A2172D29C"
+					type: "item"
+					item: "minecraft:redstone_block"
+				}
+				{
+					id: "73F35BEFFE093F47"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+			]
 		}
 		{
 			x: 1.5d
@@ -1378,11 +1574,19 @@
 				type: "item"
 				item: "reinfchest:copper_chest"
 			}]
-			rewards: [{
-				id: "75AB59721C18FE4E"
-				type: "item"
-				item: "reinfchest:copper_chest"
-			}]
+			rewards: [
+				{
+					id: "75AB59721C18FE4E"
+					type: "item"
+					item: "reinfchest:copper_chest"
+				}
+				{
+					id: "11E6F921F63751E1"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+			]
 		}
 		{
 			title: "{chapter.1.quest.45.title}"
@@ -1429,6 +1633,12 @@
 					item: "cookingforblockheads:cooking_table"
 				}
 			]
+			rewards: [{
+				id: "172F1725D06AC8D7"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 7346754112178737004L
+			}]
 		}
 		{
 			x: -9.5d
@@ -1449,6 +1659,12 @@
 					item: "cookingforblockheads:sink"
 				}
 			]
+			rewards: [{
+				id: "528C8D344ABA4B1F"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 7346754112178737004L
+			}]
 		}
 		{
 			title: "{chapter.1.quest.48.title}"
@@ -1485,21 +1701,29 @@
 					item: "cookingforblockheads:toaster"
 				}
 			]
-			rewards: [{
-				id: "2727129F435DDB21"
-				type: "item"
-				item: {
-					id: "minecraft:bread"
-					Count: 1b
-					tag: {
-						CookingForBlockheadsToasted: 1b
-						display: {
-							Name: "{\"translate\":\"tooltip.cookingforblockheads:toasted\",\"with\":[{\"translate\":\"item.minecraft.bread\"}]}"
+			rewards: [
+				{
+					id: "2727129F435DDB21"
+					type: "item"
+					item: {
+						id: "minecraft:bread"
+						Count: 1b
+						tag: {
+							CookingForBlockheadsToasted: 1b
+							display: {
+								Name: "{\"translate\":\"tooltip.cookingforblockheads:toasted\",\"with\":[{\"translate\":\"item.minecraft.bread\"}]}"
+							}
 						}
 					}
+					count: 2
 				}
-				count: 2
-			}]
+				{
+					id: "50A76872C8C0343E"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+			]
 		}
 		{
 			title: "{chapter.1.quest.49.title}"
@@ -1563,12 +1787,20 @@
 				type: "item"
 				item: "drinkbeer:beer_mug"
 			}]
-			rewards: [{
-				id: "004A64084DE31C6B"
-				type: "item"
-				item: "drinkbeer:empty_beer_mug"
-				count: 5
-			}]
+			rewards: [
+				{
+					id: "004A64084DE31C6B"
+					type: "item"
+					item: "drinkbeer:empty_beer_mug"
+					count: 5
+				}
+				{
+					id: "0CF871E1D8DD8A0D"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+			]
 		}
 		{
 			x: -6.5d
@@ -1732,6 +1964,12 @@
 					item: "vinery:table"
 					count: 8
 				}
+				{
+					id: "367FE441A29227F0"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
 			]
 		}
 		{
@@ -1751,11 +1989,19 @@
 					tag: { }
 				}
 			}]
-			rewards: [{
-				id: "1097AB4611D7E57D"
-				type: "item"
-				item: "vinery:wine_box"
-			}]
+			rewards: [
+				{
+					id: "1097AB4611D7E57D"
+					type: "item"
+					item: "vinery:wine_box"
+				}
+				{
+					id: "771C2D75B06D1410"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+			]
 		}
 		{
 			title: "{chapter.1.quest.59.title}"
@@ -1774,11 +2020,19 @@
 					tag: { }
 				}
 			}]
-			rewards: [{
-				id: "75E5A6B7988A3D1A"
-				type: "item"
-				item: "vinery:wine_rack_2"
-			}]
+			rewards: [
+				{
+					id: "75E5A6B7988A3D1A"
+					type: "item"
+					item: "vinery:wine_rack_2"
+				}
+				{
+					id: "6CCB7CCA32B351B8"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+			]
 		}
 		{
 			title: "{chapter.1.quest.60.title}"
@@ -1793,11 +2047,19 @@
 				type: "item"
 				item: "vinery:wine_press"
 			}]
-			rewards: [{
-				id: "1B24564A722FFBEC"
-				type: "item"
-				item: "vinery:apple_mash"
-			}]
+			rewards: [
+				{
+					id: "1B24564A722FFBEC"
+					type: "item"
+					item: "vinery:apple_mash"
+				}
+				{
+					id: "1C76B602956ED9CC"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 7346754112178737004L
+				}
+			]
 		}
 		{
 			title: "{chapter.1.quest.61.title}"
@@ -1837,6 +2099,12 @@
 					item: "vinery:kitchen_sink"
 				}
 			]
+			rewards: [{
+				id: "11C5B870871C66D9"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 7346754112178737004L
+			}]
 		}
 		{
 			title: "{chapter.1.quest.63.title}"

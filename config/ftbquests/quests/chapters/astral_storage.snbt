@@ -155,6 +155,12 @@
 				type: "item"
 				item: "ae2:printed_silicon"
 			}]
+			rewards: [{
+				id: "21F1FC951D613A28"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1659707140697346501L
+			}]
 		}
 		{
 			title: "{chapter.6.quest.13.title}"
@@ -183,16 +189,11 @@
 					item: "ae2:printed_logic_processor"
 				}
 			]
-		}
-		{
-			x: -7.0d
-			y: -0.5d
-			dependencies: ["326EB9A775B8D791"]
-			id: "44A1430FFC4819D5"
-			tasks: [{
-				id: "20C52412573D6811"
-				type: "item"
-				item: "ae2:inscriber"
+			rewards: [{
+				id: "6E823DE890AE8737"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1659707140697346501L
 			}]
 		}
 		{
@@ -288,6 +289,12 @@
 					item: "ae2:engineering_processor"
 				}
 			]
+			rewards: [{
+				id: "1AB151B3D87D7F16"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1659707140697346501L
+			}]
 		}
 		{
 			title: "The first cables"
@@ -356,6 +363,12 @@
 					item: "ae2:controller"
 				}
 			]
+			rewards: [{
+				id: "318326E5895A9CE8"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1659707140697346501L
+			}]
 		}
 		{
 			title: "Advanced cabling"
@@ -400,6 +413,12 @@
 				type: "item"
 				item: "ae2:drive"
 			}]
+			rewards: [{
+				id: "6176B67F733BC87D"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1659707140697346501L
+			}]
 		}
 		{
 			title: "Subnetworks"
@@ -419,6 +438,12 @@
 				id: "5821DA7521DE3643"
 				type: "item"
 				item: "ae2:controller"
+			}]
+			rewards: [{
+				id: "3BF92FB03D799DBF"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1659707140697346501L
 			}]
 		}
 		{
@@ -474,6 +499,12 @@
 					item: "ae2:spatial_anchor"
 				}
 			]
+			rewards: [{
+				id: "6C1BB0EEB500FC77"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1659707140697346501L
+			}]
 		}
 		{
 			title: "'I hate cabling'"
@@ -567,6 +598,12 @@
 					item: "ae2:export_bus"
 				}
 			]
+			rewards: [{
+				id: "25283169F880A912"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1659707140697346501L
+			}]
 		}
 		{
 			icon: "minecraft:redstone_torch"

@@ -222,6 +222,12 @@
 					item: "create:portable_fluid_interface"
 				}
 			]
+			rewards: [{
+				id: "4E57D9CF415F3C86"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5687404501397719867L
+			}]
 		}
 		{
 			x: -4.5d
@@ -352,18 +358,26 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "2158B503350C965A"
-				type: "item"
-				item: {
-					id: "minecraft:potion"
-					Count: 1b
-					tag: {
-						Potion: "minecraft:night_vision"
+			rewards: [
+				{
+					id: "2158B503350C965A"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:night_vision"
+						}
 					}
+					count: 3
 				}
-				count: 3
-			}]
+				{
+					id: "3BBAB178558DEFD6"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2053519168689179764L
+				}
+			]
 		}
 		{
 			title: "{chapter.3.quest.12.title}"
@@ -384,12 +398,20 @@
 				item: "createastral:shimmering_stone"
 				count: 10L
 			}]
-			rewards: [{
-				id: "64CA01C1E20C102F"
-				type: "item"
-				item: "createastral:shimmering_stone"
-				count: 4
-			}]
+			rewards: [
+				{
+					id: "64CA01C1E20C102F"
+					type: "item"
+					item: "createastral:shimmering_stone"
+					count: 4
+				}
+				{
+					id: "355697A3D304C28F"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5687404501397719867L
+				}
+			]
 		}
 		{
 			title: "{chapter.3.quest.13.title}"
@@ -450,6 +472,20 @@
 					}
 				}
 			}]
+			rewards: [
+				{
+					id: "14B1F04D575BEA47"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5687404501397719867L
+				}
+				{
+					id: "35E6D992F31F03A1"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2053519168689179764L
+				}
+			]
 		}
 		{
 			x: 5.0d
@@ -616,74 +652,6 @@
 			}]
 		}
 		{
-			title: "{chapter.3.quest.22.title}"
-			x: -7.5d
-			y: -2.0d
-			shape: "diamond"
-			subtitle: "{chapter.3.quest.22.subtitle}"
-			description: ["{chapter.3.quest.22.description.1}"]
-			dependencies: ["1519A1EA2CFA6FB1"]
-			id: "3A6FBCB0C9C41439"
-			tasks: [{
-				id: "749D797497A47853"
-				type: "item"
-				title: "{chapter.3.quest.22.task.1.title}"
-				item: "create:veridium"
-				count: 256L
-			}]
-			rewards: [
-				{
-					id: "5B097113B5790541"
-					type: "item"
-					item: "create:millstone"
-				}
-				{
-					id: "5E60A390CD30E816"
-					type: "item"
-					item: "minecraft:hopper"
-				}
-				{
-					id: "5A4180E3CCD3FA31"
-					type: "xp"
-					xp: 100
-				}
-			]
-		}
-		{
-			title: "{chapter.3.quest.23.title}"
-			x: -7.5d
-			y: -1.0d
-			shape: "diamond"
-			subtitle: "{chapter.3.quest.23.subtitle}"
-			description: ["{chapter.3.quest.23.description.1}"]
-			dependencies: ["1519A1EA2CFA6FB1"]
-			id: "67012541C365BA5A"
-			tasks: [{
-				id: "2DE68D06C55FDAA4"
-				type: "item"
-				title: "{chapter.3.quest.23.task.1.title}"
-				item: "create:asurine"
-				count: 256L
-			}]
-			rewards: [
-				{
-					id: "364274E461DBA3B5"
-					type: "item"
-					item: "create:millstone"
-				}
-				{
-					id: "7DA533DBAA1FD703"
-					type: "item"
-					item: "minecraft:hopper"
-				}
-				{
-					id: "04FCB19D1CF09D39"
-					type: "xp"
-					xp: 100
-				}
-			]
-		}
-		{
 			title: "{chapter.3.quest.24.title}"
 			x: -1.0d
 			y: -4.0d
@@ -806,9 +774,7 @@
 			x: -3.5d
 			y: -5.5d
 			subtitle: "{chapter.3.quest.28.subtitle}"
-			dependencies: [
-				"1717E5063CC231DD"
-			]
+			dependencies: ["1717E5063CC231DD"]
 			optional: true
 			id: "1C10D7A2828DE436"
 			tasks: [
@@ -906,6 +872,12 @@
 				id: "363C22605DD3C4ED"
 				type: "item"
 				item: "reinfchest:gold_chest"
+			}]
+			rewards: [{
+				id: "3334E8B15B964A0B"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
 			}]
 		}
 		{
@@ -1047,6 +1019,12 @@
 				type: "item"
 				item: "reinfchest:iron_chest"
 				count: 2L
+			}]
+			rewards: [{
+				id: "1A5A790C80B3C933"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
 			}]
 		}
 		{
@@ -1346,7 +1324,7 @@
 			y: 7.5d
 			shape: "diamond"
 			subtitle: "{chapter.3.quest.49.subtitle}"
-			description: ["{chapter.3.quest.49.description.1}"]
+			description: ["Sand can be washed into clay, much like how gravel washes into flint+iron. Sand is produceable at low rates from milling gravel, so you may be interested in starting a stockpile."]
 			dependencies: ["38814494AB07C2D8"]
 			id: "3B80A4FBF7D2AB7B"
 			tasks: [
@@ -1563,6 +1541,12 @@
 					item: "minecraft:torch"
 					count: 128
 				}
+				{
+					id: "74537F8B7C76CAF9"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2053519168689179764L
+				}
 			]
 		}
 		{
@@ -1677,6 +1661,12 @@
 					type: "item"
 					item: "create:andesite_casing"
 					count: 16
+				}
+				{
+					id: "1B5BBA82397A90CB"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2053519168689179764L
 				}
 			]
 		}
@@ -1980,6 +1970,12 @@
 				type: "item"
 				item: "create:smart_fluid_pipe"
 			}]
+			rewards: [{
+				id: "419AB2F9D3A5D5D7"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5687404501397719867L
+			}]
 		}
 		{
 			x: 6.0d
@@ -2041,6 +2037,12 @@
 					item: "minecraft:white_wool"
 					count: 64
 				}
+				{
+					id: "7AC62AAA8D9F4B6B"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2053519168689179764L
+				}
 			]
 		}
 		{
@@ -2088,11 +2090,19 @@
 				item: "techreborn:rubber"
 				count: 256L
 			}]
-			rewards: [{
-				id: "2673DE427711FCD7"
-				type: "xp"
-				xp: 200
-			}]
+			rewards: [
+				{
+					id: "2673DE427711FCD7"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "79A7B477BBEB51CF"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2053519168689179764L
+				}
+			]
 		}
 		{
 			title: "{chapter.3.quest.70.title}"
@@ -2122,25 +2132,11 @@
 				item: "doodads:asphalt"
 				count: 32L
 			}]
-		}
-		{
-			title: "{chapter.3.quest.72.title}"
-			x: -6.0d
-			y: 1.0d
-			subtitle: "{chapter.3.quest.72.subtitle}"
-			description: ["{chapter.3.quest.72.description.1}"]
-			dependencies: ["1F79F4D01B219D7E"]
-			id: "5098C35DB6D98FC9"
-			tasks: [{
-				id: "5351546C54699888"
-				type: "item"
-				item: "compressor:triple_compressed_andesite"
-			}]
 			rewards: [{
-				id: "2E5B99F20A7A3E4B"
-				type: "item"
-				item: "createastral:andesite_alloy_block"
-				count: 8
+				id: "5A260EAD6AFF0BF7"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
 			}]
 		}
 		{
@@ -2190,52 +2186,6 @@
 				type: "item"
 				item: "minecraft:nautilus_shell"
 				count: 5
-			}]
-		}
-		{
-			title: "{chapter.3.quest.74.title}"
-			x: 5.0d
-			y: -1.5d
-			shape: "diamond"
-			subtitle: "{chapter.3.quest.74.subtitle}"
-			description: ["{chapter.3.quest.74.description.1}"]
-			hide_dependency_lines: true
-			dependencies: ["17041A495A41EEFD"]
-			id: "0A427E6582CA072F"
-			tasks: [{
-				id: "70B832BB8CC011DC"
-				type: "item"
-				item: "create:crimsite"
-				count: 256L
-			}]
-			rewards: [{
-				id: "3780ACA5F78DD832"
-				type: "item"
-				item: "tconstruct:iron_reinforcement"
-				count: 128
-			}]
-		}
-		{
-			title: "{chapter.3.quest.75.title}"
-			x: -1.0d
-			y: -1.5d
-			shape: "diamond"
-			subtitle: "{chapter.3.quest.75.subtitle}"
-			description: ["{chapter.3.quest.75.description.1}"]
-			hide_dependency_lines: false
-			dependencies: ["70799237323247B7"]
-			id: "1338FD7D41851914"
-			tasks: [{
-				id: "44D1A94AC2451152"
-				type: "item"
-				item: "create:ochrum"
-				count: 256L
-			}]
-			rewards: [{
-				id: "068C687C5C0D5F42"
-				type: "item"
-				item: "tconstruct:gold_reinforcement"
-				count: 64
 			}]
 		}
 		{

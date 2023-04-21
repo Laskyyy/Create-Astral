@@ -4,13 +4,7 @@
 	order_index: 4
 	filename: "chapter_4"
 	title: "{chapter.5.title}"
-	icon: {
-		id: "ftbquests:custom_icon"
-		Count: 1b
-		tag: {
-			Icon: "createastral:textures/item/questmoon.png"
-		}
-	}
+	icon: "createastral:astral_conduit"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	images: [{
@@ -45,6 +39,12 @@
 					item: "create:empty_blaze_burner"
 				}
 			]
+			rewards: [{
+				id: "0CC3B7BDC5729E23"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
+			}]
 		}
 		{
 			title: "{chapter.5.quest.2.title}"
@@ -67,11 +67,19 @@
 					item: "create:brass_ingot"
 				}
 			]
-			rewards: [{
-				id: "08DE0E85F643FAEA"
-				type: "item"
-				item: "farmersdelight:shepherds_pie"
-			}]
+			rewards: [
+				{
+					id: "08DE0E85F643FAEA"
+					type: "item"
+					item: "farmersdelight:shepherds_pie"
+				}
+				{
+					id: "3DC7AD7454003A38"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5253492355592689915L
+				}
+			]
 		}
 		{
 			title: "{chapter.5.quest.3.title}"
@@ -100,17 +108,25 @@
 					count: 3L
 				}
 			]
-			rewards: [{
-				id: "5A89715DA67A0895"
-				type: "item"
-				item: {
-					id: "tconstruct:hammer_head"
-					Count: 1b
-					tag: {
-						Material: "tconstruct:desh"
+			rewards: [
+				{
+					id: "5A89715DA67A0895"
+					type: "item"
+					item: {
+						id: "tconstruct:hammer_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:desh"
+						}
 					}
 				}
-			}]
+				{
+					id: "64CEFFBC0E8C1F0F"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5253492355592689915L
+				}
+			]
 		}
 		{
 			x: -14.5d
@@ -268,6 +284,12 @@
 				item: "ad_astra:launch_pad"
 				count: 2L
 			}]
+			rewards: [{
+				id: "649C941473A8881D"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
+			}]
 		}
 		{
 			title: "{chapter.5.quest.8.title}"
@@ -285,11 +307,19 @@
 				item: "create:steam_engine"
 				count: 9L
 			}]
-			rewards: [{
-				id: "064504FFFA76C63C"
-				type: "xp"
-				xp: 200
-			}]
+			rewards: [
+				{
+					id: "064504FFFA76C63C"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "4D520318E3D705E2"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2053519168689179764L
+				}
+			]
 		}
 		{
 			x: -9.5d
@@ -304,12 +334,20 @@
 				type: "item"
 				item: "computercraft:computer_advanced"
 			}]
-			rewards: [{
-				id: "5D20F0622359EE77"
-				type: "item"
-				item: "create:experience_nugget"
-				count: 15
-			}]
+			rewards: [
+				{
+					id: "5D20F0622359EE77"
+					type: "item"
+					item: "create:experience_nugget"
+					count: 15
+				}
+				{
+					id: "09DE8DF88FBBDD1E"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5253492355592689915L
+				}
+			]
 		}
 		{
 			x: -9.5d
@@ -324,12 +362,20 @@
 				type: "item"
 				item: "computercraft:monitor_advanced"
 			}]
-			rewards: [{
-				id: "606EB535C24A2BF2"
-				type: "item"
-				item: "create:experience_nugget"
-				count: 5
-			}]
+			rewards: [
+				{
+					id: "606EB535C24A2BF2"
+					type: "item"
+					item: "create:experience_nugget"
+					count: 5
+				}
+				{
+					id: "7BD931D4FAA3E719"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5253492355592689915L
+				}
+			]
 		}
 		{
 			x: -9.5d
@@ -344,12 +390,20 @@
 				type: "item"
 				item: "computercraft:turtle_advanced"
 			}]
-			rewards: [{
-				id: "3D015AE415FE2FDA"
-				type: "item"
-				item: "create:experience_nugget"
-				count: 5
-			}]
+			rewards: [
+				{
+					id: "3D015AE415FE2FDA"
+					type: "item"
+					item: "create:experience_nugget"
+					count: 5
+				}
+				{
+					id: "67FEE52D94443916"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5253492355592689915L
+				}
+			]
 		}
 		{
 			title: "{chapter.5.quest.12.title}"
@@ -430,6 +484,12 @@
 						}
 					}
 				}
+				{
+					id: "1F28B972B679E504"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5253492355592689915L
+				}
 			]
 		}
 		{
@@ -485,11 +545,23 @@
 				title: "{chapter.5.quest.16.task.1.title}"
 				icon: "ad_astra:moon_globe"
 			}]
-			rewards: [{
-				id: "6C0AC8AA4668A80A"
-				type: "xp"
-				xp: 300
-			}]
+			rewards: [
+				{
+					id: "6C0AC8AA4668A80A"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "256B30662B3F6B43"
+					type: "item"
+					item: "minecraft:gray_shulker_box"
+				}
+				{
+					id: "751DB6D08EDE4385"
+					type: "item"
+					item: "minecraft:light_gray_shulker_box"
+				}
+			]
 		}
 		{
 			title: "{chapter.5.quest.17.title}"
@@ -508,6 +580,12 @@
 				type: "item"
 				item: "techreborn:raw_silver"
 				count: 8L
+			}]
+			rewards: [{
+				id: "1B479B7148771628"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
 			}]
 		}
 		{
@@ -552,6 +630,12 @@
 				type: "item"
 				item: "create:brass_casing"
 			}]
+			rewards: [{
+				id: "5133BA5D0280F8F9"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
+			}]
 		}
 		{
 			title: "{chapter.5.quest.20.title}"
@@ -569,6 +653,12 @@
 				title: "{chapter.5.quest.20.task.1.title}"
 				icon: "ad_astra:iron_plating"
 				structure: "incendium:pipeline"
+			}]
+			rewards: [{
+				id: "3E4944FC57F47F13"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
 			}]
 		}
 		{
@@ -712,6 +802,12 @@
 						}
 					}
 				}
+				{
+					id: "1703AE89D81BEB70"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5253492355592689915L
+				}
 			]
 		}
 		{
@@ -726,6 +822,12 @@
 				id: "254AAF5B99A444A3"
 				type: "item"
 				item: "techreborn:extractor"
+			}]
+			rewards: [{
+				id: "7823FA55E09637B8"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
 			}]
 		}
 		{
@@ -777,6 +879,12 @@
 				}
 				count: 3L
 			}]
+			rewards: [{
+				id: "3D434E26EC91C3E3"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
+			}]
 		}
 		{
 			title: "{chapter.5.quest.29.title}"
@@ -798,6 +906,12 @@
 				id: "29034D96D8AAF58D"
 				type: "item"
 				item: "createaddition:alternator"
+			}]
+			rewards: [{
+				id: "56B2AAB30956853B"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
 			}]
 		}
 		{
@@ -893,6 +1007,12 @@
 				type: "item"
 				item: "ad_astra:nasa_workbench"
 			}]
+			rewards: [{
+				id: "3DC9D03B5D26899C"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
+			}]
 		}
 		{
 			title: "{chapter.5.quest.33.title}"
@@ -974,6 +1094,12 @@
 				title: "{chapter.5.quest.37.task.1.title}"
 				dimension: "ad_astra:mars"
 			}]
+			rewards: [{
+				id: "366D5D5C7D2ABA53"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
+			}]
 		}
 		{
 			title: "{chapter.5.quest.38.title}"
@@ -1024,6 +1150,12 @@
 				type: "item"
 				item: "techreborn:basic_storage_unit"
 			}]
+			rewards: [{
+				id: "03284E024A33A23B"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
+			}]
 		}
 		{
 			title: "{chapter.5.quest.41.title}"
@@ -1072,6 +1204,12 @@
 					item: "tconstruct:scorched_faucet"
 				}
 			]
+			rewards: [{
+				id: "2444A5675577B3EA"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
+			}]
 		}
 		{
 			title: "{chapter.5.quest.43.title}"
@@ -1169,6 +1307,12 @@
 					item: "automobility:launch_gel"
 				}
 			]
+			rewards: [{
+				id: "7CA4AA84E6C7BF4E"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
+			}]
 		}
 		{
 			title: "{chapter.5.quest.48.title}"
@@ -1263,11 +1407,19 @@
 					item: "ad_astra:desh_ingot"
 				}
 			]
-			rewards: [{
-				id: "2907DB37ADDB8AE2"
-				type: "xp"
-				xp: 200
-			}]
+			rewards: [
+				{
+					id: "2907DB37ADDB8AE2"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "1129EDC8B6A8A76A"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5253492355592689915L
+				}
+			]
 		}
 		{
 			title: "{chapter.5.quest.51.title}"
@@ -1314,6 +1466,12 @@
 					id: "4BC03F1BDD44508F"
 					type: "item"
 					item: "minecraft:emerald_block"
+				}
+				{
+					id: "6C29BB7D1D732E59"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5253492355592689915L
 				}
 			]
 		}
@@ -1423,6 +1581,12 @@
 				type: "item"
 				item: "createaddition:biomass"
 			}]
+			rewards: [{
+				id: "2A803048D7FC87BD"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
+			}]
 		}
 		{
 			title: "{chapter.5.quest.56.title}"
@@ -1519,6 +1683,12 @@
 					biome: "incendium:toxic_heap"
 				}
 			]
+			rewards: [{
+				id: "2E55D7C30850C291"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
+			}]
 		}
 		{
 			x: -6.5d
@@ -1597,18 +1767,26 @@
 				type: "item"
 				item: "create:smart_chute"
 			}]
-			rewards: [{
-				id: "3024BFA6335C05F8"
-				type: "item"
-				item: {
-					id: "create:filter"
-					Count: 1b
-					tag: {
-						Items: { }
+			rewards: [
+				{
+					id: "3024BFA6335C05F8"
+					type: "item"
+					item: {
+						id: "create:filter"
+						Count: 1b
+						tag: {
+							Items: { }
+						}
 					}
+					count: 2
 				}
-				count: 2
-			}]
+				{
+					id: "26913D0B6D304429"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2053519168689179764L
+				}
+			]
 		}
 		{
 			x: -15.0d
@@ -1625,12 +1803,20 @@
 				type: "item"
 				item: "create:mechanical_arm"
 			}]
-			rewards: [{
-				id: "6F404ECD3383B0B5"
-				type: "item"
-				item: "create:depot"
-				count: 3
-			}]
+			rewards: [
+				{
+					id: "6F404ECD3383B0B5"
+					type: "item"
+					item: "create:depot"
+					count: 3
+				}
+				{
+					id: "3BB2A9E3B37EADF7"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5253492355592689915L
+				}
+			]
 		}
 		{
 			title: "{chapter.5.quest.64.title}"
@@ -1647,6 +1833,12 @@
 				id: "438ECFB50910D913"
 				type: "item"
 				item: "create:rotation_speed_controller"
+			}]
+			rewards: [{
+				id: "64B4205ED5F7B052"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
 			}]
 		}
 		{
@@ -1711,6 +1903,12 @@
 				id: "247D868F3B1A8BD3"
 				type: "item"
 				item: "create:sequenced_gearshift"
+			}]
+			rewards: [{
+				id: "017CBDDF50D8DA58"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5687404501397719867L
 			}]
 		}
 		{
@@ -1863,6 +2061,12 @@
 				type: "item"
 				item: "ad_astra:desh_plate"
 			}]
+			rewards: [{
+				id: "0700AB7F45551184"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
+			}]
 		}
 		{
 			x: -5.5d
@@ -1876,12 +2080,20 @@
 				type: "item"
 				item: "tconstruct:molten_electrum_bucket"
 			}]
-			rewards: [{
-				id: "365574D8751A7E34"
-				type: "item"
-				item: "minecraft:experience_bottle"
-				count: 5
-			}]
+			rewards: [
+				{
+					id: "365574D8751A7E34"
+					type: "item"
+					item: "minecraft:experience_bottle"
+					count: 5
+				}
+				{
+					id: "035CE5B3AE1A330B"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5253492355592689915L
+				}
+			]
 		}
 		{
 			x: -22.5d
@@ -1940,6 +2152,12 @@
 				item: "tconstruct:scorched_bricks"
 				count: 24L
 			}]
+			rewards: [{
+				id: "45293067CB0594D3"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
+			}]
 		}
 		{
 			title: "{chapter.5.quest.83.title}"
@@ -1954,6 +2172,12 @@
 				type: "item"
 				item: "tconstruct:scorched_chute"
 			}]
+			rewards: [{
+				id: "42E58A9066A0A65F"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
+			}]
 		}
 		{
 			title: "{chapter.5.quest.84.title}"
@@ -1967,6 +2191,12 @@
 				id: "2EBA2303556ED7FF"
 				type: "item"
 				item: "tconstruct:scorched_drain"
+			}]
+			rewards: [{
+				id: "0E4BDEBF81FA652A"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
 			}]
 		}
 		{
@@ -1990,6 +2220,12 @@
 					item: "tconstruct:scorched_fuel_gauge"
 				}
 			]
+			rewards: [{
+				id: "1725B6D56E7EA1C3"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
+			}]
 		}
 		{
 			title: "{chapter.5.quest.86.title}"
@@ -2012,6 +2248,12 @@
 					item: "tconstruct:scorched_glass"
 				}
 			]
+			rewards: [{
+				id: "03E40ADF3D537711"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
+			}]
 		}
 		{
 			title: "{chapter.5.quest.87.title}"
@@ -2081,6 +2323,12 @@
 				id: "7D08C2F8EA085D3B"
 				type: "item"
 				item: "minecraft:soul_campfire"
+			}]
+			rewards: [{
+				id: "3D99B29D0BABB364"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
 			}]
 		}
 		{
@@ -2205,12 +2453,20 @@
 					item: "minecraft:prismarine_shard"
 				}
 			]
-			rewards: [{
-				id: "03625B5D50B2BD01"
-				type: "item"
-				item: "minecraft:soul_torch"
-				count: 8
-			}]
+			rewards: [
+				{
+					id: "03625B5D50B2BD01"
+					type: "item"
+					item: "minecraft:soul_torch"
+					count: 8
+				}
+				{
+					id: "4A4D94AAC2A23EC9"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2053519168689179764L
+				}
+			]
 		}
 		{
 			x: -28.5d
@@ -2374,11 +2630,19 @@
 					item: "minecraft:blue_ice"
 				}
 			]
-			rewards: [{
-				id: "14D072CD91245774"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "14D072CD91245774"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "7B574204A2B29D56"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2053519168689179764L
+				}
+			]
 		}
 		{
 			title: "{chapter.5.quest.100.title}"
@@ -2396,6 +2660,12 @@
 				id: "763C057A2FC69246"
 				type: "item"
 				item: "techreborn:chunk_loader"
+			}]
+			rewards: [{
+				id: "0C660FEF88D5DF59"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
 			}]
 		}
 		{
@@ -2458,6 +2728,12 @@
 					item: "doodads:ender_goggles"
 				}
 			]
+			rewards: [{
+				id: "1BD24E5929C25272"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
+			}]
 		}
 		{
 			title: "{chapter.5.quest.103.title}"
@@ -2561,11 +2837,19 @@
 				item: "create:integrated_circuit"
 				count: 128L
 			}]
-			rewards: [{
-				id: "68A76C9ADA4291BC"
-				type: "xp"
-				xp: 250
-			}]
+			rewards: [
+				{
+					id: "68A76C9ADA4291BC"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "36BC00CE40A3E0DB"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5253492355592689915L
+				}
+			]
 		}
 		{
 			title: "{chapter.5.quest.109.title}"
@@ -2789,6 +3073,12 @@
 				type: "item"
 				item: "techreborn:low_voltage_su"
 			}]
+			rewards: [{
+				id: "03D768C1A59B8A1F"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
+			}]
 		}
 		{
 			title: "{chapter.5.quest.120.title}"
@@ -2997,6 +3287,27 @@
 				id: "7E497BC1C88A5603"
 				type: "item"
 				item: "createaddition:chocolate_cake"
+			}]
+		}
+		{
+			title: "Taking to the skies."
+			x: -14.482142857142854d
+			y: 2.4285714285714235d
+			shape: "octagon"
+			subtitle: "Perhaps a blueprint from a lost civilisation might hold the mechanics to build this thing..."
+			dependencies: ["21DBCD51CC35B794"]
+			size: 1.5d
+			id: "70625FA5C1118180"
+			tasks: [{
+				id: "0F42DA73BDAC2152"
+				type: "item"
+				item: "immersive_aircraft:quadrocopter"
+			}]
+			rewards: [{
+				id: "5EA35EA84E383102"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
 			}]
 		}
 	]

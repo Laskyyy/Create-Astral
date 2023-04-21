@@ -1,0 +1,18 @@
+{
+	id: "184075C9E8247561"
+	order_index: 6
+	title: "Chapter 5"
+	loot_size: 1
+	rewards: [ ]
+	loot_crate: {
+		glow: 1b
+		color: 14817092
+		item_name: "Chapter 5 Loot Crate"
+		string_id: "chapter_5"
+		drops: {
+			passive: 0
+			boss: 0
+			monster: 0
+		}
+	}
+}

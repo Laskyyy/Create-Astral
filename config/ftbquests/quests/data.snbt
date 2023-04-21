@@ -1,9 +1,16 @@
 {
 	version: 13
-	icon: "ftbquests:book"
+	title: "Create: Astral"
+	icon: {
+		id: "ftbquests:custom_icon"
+		Count: 1b
+		tag: {
+			Icon: "createastral:textures/item/logos_binted.png"
+		}
+	}
 	default_reward_team: false
 	default_consume_items: false
-	default_autoclaim_rewards: "disabled"
+	default_autoclaim_rewards: "enabled"
 	default_quest_shape: "circle"
 	default_quest_disable_jei: false
 	emergency_items_cooldown: 300

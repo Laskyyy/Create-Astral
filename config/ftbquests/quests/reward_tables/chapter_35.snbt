@@ -1,0 +1,17 @@
+{
+	id: "170876D9D871D1C5"
+	order_index: 4
+	title: "Chapter 3.5"
+	loot_size: 1
+	rewards: [ ]
+	loot_crate: {
+		color: 13167081
+		item_name: "Chapter 3.5 Loot Crate"
+		string_id: "chapter_3_5"
+		drops: {
+			passive: 0
+			boss: 0
+			monster: 0
+		}
+	}
+}
