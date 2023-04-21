@@ -1,0 +1,80 @@
+{
+    ///// NOM DES OBJETS ICI /////
+
+    "item.createastral.crushed_desh_ore": "Minerai de desh concassé",
+    "item.createastral.crushed_ostrum_ore": "Minerai d'ostrum concassé",
+    "item.createastral.crushed_calorite_ore": "Minerai de calorite concassé",
+    "item.createastral.subatomic_ingot": "Lingot subatomique",
+    "item.createastral.astral_conduit": "Conduit astral",
+    "item.createastral.andesite_compound": "Composé d'andésite",
+    "item.createastral.bronze_sheet": "Feuille de bronze",
+    "item.createastral.olivine_sheet": "Feuille d'olivine",
+
+    "item.createastral.incomplete_electronic_circuit": "Circuit électronique incomplet",
+    "item.createastral.golden_pin": "Epingle dorée",
+    "item.createastral.calorite_pin": "Epingle de calorite",
+    "item.createastral.electrified_pin": "Epingle électrifiée",
+    "item.createastral.uwaah": "UWAAH",
+    "item.createastral.bronze_ingot": "Lingot de bronze",
+    "item.createastral.navigation_mechanism": "Mécanisme de navigation",
+    "item.createastral.coin": "Pièce d'or",
+    "item.createastral.golden_bowl": "Bol doré",
+    "item.createastral.filled_golden_bowl": "Bol doré rempli",
+
+    "item.createastral.radiant_helmet": "Casque radieux",
+    "item.createastral.radiant_chestplate": "Plastron radieux",
+    "item.createastral.radiant_leggings": "Jambières radieuses",
+    "item.createastral.radiant_boots": "Bottes radieuses",
+    "item.createastral.radiant_sword": "Épée radieuse",
+    "item.createastral.radiant_pickaxe": "Pioche radieuse",
+    "item.createastral.radiant_axe": "Hache radieuse",
+    "item.createastral.radiant_shovel": "Pelle radieuse",
+
+    "item.createastral.copper_sword": "Épée en cuivre",
+    "item.createastral.copper_pickaxe": "Pioche en cuivre",
+    "item.createastral.copper_axe": "Hache en cuivre",
+    "item.createastral.copper_shovel": "Pelle en cuivre",
+    "item.createastral.copper_hoe": "Houe en cuivre",
+    "item.createastral.copper_helmet": "Casque en cuivre",
+    "item.createastral.copper_chestplate": "Plastron en cuivre",
+    "item.createastral.copper_leggings": "Jambières en cuivre",
+    "item.createastral.copper_boots": "Bottes en cuivre",
+
+    "item.createastral.brass_sword": "Épée en laiton",
+    "item.createastral.brass_pickaxe": "Pioche en laiton",
+    "item.createastral.brass_axe": "Hache en laiton",
+    "item.createastral.brass_shovel": "Pelle en laiton",
+    "item.createastral.brass_hoe": "Houe en laiton",
+    "item.createastral.brass_helmet": "Casque en laiton",
+    "item.createastral.brass_chestplate": "Plastron en laiton",
+    "item.createastral.brass_leggings": "Jambières en laiton",
+    "item.createastral.brass_boots": "Bottes en laiton",
+
+    "item.createastral.steel_helmet": "Casque en acier",
+    "item.createastral.steel_chestplate": "Plastron en acier",
+    "item.createastral.steel_leggings": "Jambières en acier",
+    "item.createastral.steel_boots": "Bottes en acier",
+
+    "item.createastral.sturdy_helmet": "Casque robuste",
+    "item.createastral.sturdy_chestplate": "Plastron robuste",
+    "item.createastral.sturdy_leggings": "Jambières robuste",
+    "item.createastral.sturdy_boots": "Bottes robuste",
+
+    "item.createastral.orcane": "Information / Progression générale",
+    "item.createastral.astral_singularity": "Singularité astrale",
+    "item.createastral.pure_biomatter": "Biomatière pure",
+    "item.createastral.lime": "Poussière de calcaire", // What ?? Lime the fruite ? // I changed it to limestone dust, because it's crafted using limestone.
+
+    ///// NOM DES BLOCS ICI /////
+    "block.createastral.sturdy_sheet_block": "Bloc de plaque robuste",
+    "block.createastral.shimmering_stone": "Pierre de Shimmer",
+    "block.createastral.copper_plating": "Bloc de plaque de cuivre",
+    "block.createastral.refined_radiance_block": "Bloc de radiance raffiné",
+    "block.createastral.bronze_block": "Bloc de bronze",
+    "block.createastral.copper_heating_coil": "Bloc de bobine de cuivre.",
+    "block.createastral.blast-resistant_concrete_slab": "Dalle en béton résistant aux explosions",
+    "block.createastral.blast-resistant_concrete": "Béton résistant aux explosions",
+    "block.createastral.blast-resistant_concrete_stairs": "Escalier en béton résistant aux explosions",
+    "block.createastral.electrolyser_dummy": "Électrolyseur dummy",
+    "block.createastral.andesite_alloy_block": "Bloc d'alliage d'andésite"
+}

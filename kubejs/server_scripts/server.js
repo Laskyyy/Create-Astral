@@ -67,7 +67,7 @@ function lizardMiscChanges(event) {
         ["andesite", "create:andesite_alloy"],
         ["brass", "create:brass_sheet"],
         ["cast_iron", "createdeco:cast_iron_sheet"],
-        ["iron", "minecraft:iron_sheet"],
+        ["iron", "create:iron_sheet"],
         ["copper", "create:copper_sheet"],
         ["zinc", "#c:plates/zinc"],
     ];

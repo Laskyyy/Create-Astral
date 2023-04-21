@@ -343,7 +343,7 @@ customization {
   enable_scrolling = false
   shadow = true
   scale = 1.0
-  source = v2.0.4
+  source = v2.0.4c
   text_border = 0
   case_mode = normal
   source_mode = direct

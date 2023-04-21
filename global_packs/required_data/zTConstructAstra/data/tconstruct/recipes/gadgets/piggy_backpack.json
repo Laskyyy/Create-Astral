@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": "minecraft:saddle"
+  },
+  "cast_consumed": false,
+  "fluid": {
+    "name": "kubejs:shimmer",
+    "amount": 810000
+  },
+  "result": "minecraft:saddle",
+  "cooling_time": 400
+}

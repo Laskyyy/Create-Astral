@@ -9,13 +9,36 @@ onEvent('jei.hide.items', event => {
 	event.groupItems("kubejs:rei_groups/chipped", "chipped", [
 		Ingredient.of('@chipped').getItemIds(),
  ]);
+ 
 })
 
+
 onEvent("rei.group", (event) => {
-    // This event allows you to add custom entry groups to REI, which can be used to clean up the entry list significantly.
-    // As a simple example, we can add a "Swords" group which will contain all (vanilla) swords
-    // Note that each group will need an id (ResourceLocation) and a display name (Component / String)
     event.groupItems("kubejs:rei_groups/chipped", "Chipped Blocks", [
        	Ingredient.of('@chipped').getItemIds(),
-    ]);
+      ]);
+
+    event.groupItems("kubejs:rei_groups/tinker", "Tinkers", [
+        Ingredient.of('@tconstruct').getItemIds(),
+      ]);
+
+
+
+
+    const useNbt = ['potion', 'enchanted_book', 'splash_potion', 'tipped_arrow', 'lingering_potion']
+
+    useNbt.forEach(id => {
+        const item = Item.of(id)
+        const { namespace, path } = Utils.id(item.id)
+        event.groupSameItem(`kubejs:rei_groups/${namespace}/${path}`, item.name, item)
+      })
+
 });
+
+onEvent('rei.add.items', event => {
+    event.add(Item.of('create:crushed_tin_ore'));
+    event.add(Item.of('create:crushed_lead_ore'));
+    event.add(Item.of('create:refined_radiance'));
+    event.add(Item.of('create:shadow_steel'));
+    event.add(Item.of('create:chromatic_compound'));
+  })

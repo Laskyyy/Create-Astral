@@ -38,7 +38,6 @@ onEvent("recipes", (event) => {
         { output: "techreborn:quantum_leggings" },
         { output: "techreborn:quantum_boots" },
         { output: "techreborn:copper_nugget" },
-        { input: "techreborn:granite_dust", output: 'minecraft:gravel' },
 
         {
             type: "techreborn:grinder",
@@ -135,6 +134,7 @@ onEvent("recipes", (event) => {
         { type: "create:crushing", input: "minecraft:granite" },
         { type: "create:crushing", input: "minecraft:andesite" },
         { type: "create:crushing", input: "create:asurine" },
+        { type: "create:crushing", input: "#create:stone_types/asurine" },
         { type: "create:crushing", input: "create:veridium" },
         { type: "create:crushing", input: "create:limestone" },
         { type: "create:crushing", input: "create:ochrum" },
@@ -278,6 +278,7 @@ onEvent("recipes", (event) => {
         { type: "tconstruct:alloy" },
         { output: "tconstruct:nether_grout" },
         { output: "tconstruct:efln_ball" },
+        { output: "tconstruct:piggy_backpack" },
 
         // Miscellaneous
 

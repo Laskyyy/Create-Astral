@@ -1,13 +1,13 @@
 name = "Per Aspera"
-filename = "per_aspera-1.3.1.jar"
+filename = "per_aspera-1.3.2.jar"
 side = "both"
 
 [download]
 mode = "metadata:curseforge"
 hash-format = "sha1"
-hash = "cd0c65517cae85fd08e4a7ac6c075ae0b4183985"
+hash = "f1fdec687d5cb4eaf7584045cbd171c6e64a53dc"
 
 [update]
 [update.curseforge]
-file-id = 4476592
+file-id = 4493294
 project-id = 833210

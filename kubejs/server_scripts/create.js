@@ -141,7 +141,7 @@ function crushingRecipes(event) {
             ],
         },
         {
-            input: "#coral_blocks",
+            input: "#c:coral_blocks",
             outputs: [["techreborn:calcite_dust", 1]],
         },
         //Asurine, Veridiun Crushing
@@ -255,8 +255,20 @@ function crushingRecipes(event) {
             input: "techreborn:" + ore + "_ore",
         });
         event.recipes.createCrushing(
-            ["2x techreborn:raw_" + ore.split("_")[1]],
+            ["2x techreborn:raw_" + ore.replace("deepslate_", "")],
             "techreborn:" + ore + "_ore"
+        );
+    });
+
+     // Crushable raw techreborn storage blocks
+     [
+        "silver",
+        "tin",
+        "lead",
+    ].forEach((ore) => {
+        event.recipes.createCrushing(
+            ["9x create:crushed_" + ore.replace("deepslate_", "") + "_ore", "3x create:experience_nugget"],
+            "techreborn:raw_" + ore + "_storage_block"
         );
     });
 
@@ -1222,11 +1234,11 @@ function mixingRecipes(event) {
             time: 700,
         },
         {
-            output: Item.of('minecraft:enchanted_book', '{StoredEnchantments:[{id:"minecraft:mending",lvl:1s}]}'),
-            input: [
-                "16x minecraft:book",
-                "64x create:experience_nugget",
-            ],
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:mending",lvl:1s}]}'
+            ),
+            input: ["16x minecraft:book", "64x create:experience_nugget"],
             heat: "heated",
             time: 700,
         },
@@ -1341,8 +1353,8 @@ function mixingRecipes(event) {
         {
             output: Fluid.of("tconstruct:molten_rose_gold", 9000),
             input: ["minecraft:copper_ingot", "minecraft:gold_ingot"],
-            heat: "",
-            time: 1500,
+            heat: "heated",
+            time: 300,
         },
         {
             output: Fluid.of("tconstruct:molten_bronze", 18000),
@@ -1838,7 +1850,7 @@ function mechanicalCraftingRecipes(event) {
                 B: "create:electron_tube",
                 C: "create:mechanical_press",
                 D: "create:precision_mechanism",
-                E: "techreborn:silver_block",
+                E: "ad_astra:desh_block",
             },
         },
         {
@@ -1925,7 +1937,7 @@ function mechanicalCraftingRecipes(event) {
             shape: ["BDCDB", "BAEAB", "BBEBB"],
             inputs: {
                 A: "create:attribute_filter",
-                B: "ad_astra:steel_plate",
+                B: "ad_astra:ostrum_plate",
                 C: "create:mechanical_mixer",
                 D: "create:precision_mechanism",
                 E: "create:fluid_tank",
