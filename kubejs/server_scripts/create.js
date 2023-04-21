@@ -261,8 +261,20 @@ function crushingRecipes(event) {
             input: "techreborn:" + ore + "_ore",
         });
         event.recipes.createCrushing(
-            ["2x techreborn:raw_" + ore.split("_")[1]],
+            ["2x techreborn:raw_" + ore.replace("deepslate_", "")],
             "techreborn:" + ore + "_ore"
+        );
+    });
+
+     // Crushable raw techreborn storage blocks
+     [
+        "silver",
+        "tin",
+        "lead",
+    ].forEach((ore) => {
+        event.recipes.createCrushing(
+            ["9x create:crushed_" + ore.replace("deepslate_", "") + "_ore", "3x create:experience_nugget"],
+            "techreborn:raw_" + ore + "_storage_block"
         );
     });
 
