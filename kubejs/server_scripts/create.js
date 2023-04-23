@@ -1197,6 +1197,42 @@ function mixingRecipes(event) {
             time: 1000,
         },
         {
+            output: "techreborn:plantball",
+            input: [
+                "9x minecraft:kelp",
+                {
+                    fluid: "createaddition:seed_oil",
+                    amount: FULL_BUCKET_AMMOUNT / 2,
+                },
+            ],
+            heat: "heated",
+            time: 1000,
+        },
+        {
+            output: "techreborn:plantball",
+            input: [
+                "9x minecraft:sugar_cane",
+                {
+                    fluid: "createaddition:seed_oil",
+                    amount: FULL_BUCKET_AMMOUNT / 2,
+                },
+            ],
+            heat: "heated",
+            time: 1000,
+        },
+        {
+            output: "techreborn:plantball",
+            input: [
+                "3x farmersdelight:straw",
+                {
+                    fluid: "createaddition:seed_oil",
+                    amount: FULL_BUCKET_AMMOUNT / 2,
+                },
+            ],
+            heat: "heated",
+            time: 1000,
+        },
+        {
             output: "#c:living_coral_plants",
             input: [
                 "4x minecraft:kelp",
