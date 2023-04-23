@@ -746,7 +746,7 @@ hash = "b35b099a51f0cc1cfd94b1a1444de0d0d0c4e1b3399575504bbdcfaf02c359b0"
 
 [[files]]
 file = "config/sodium-options.json"
-hash = "e3cc64740fe9124747d079ac01af461c14b08d2d23cb4b45acda955fd0614484"
+hash = "caea40b2c29d87e4eef6335f632139d715655cc08a6f0a2a9385f45185d9a17c"
 
 [[files]]
 file = "config/starterkit-fabric.json5"
@@ -875,6 +875,10 @@ hash = "11dc9ee9fd00f1f6d649ac78896b407a419314e6676178a904b6838e66766da7"
 [[files]]
 file = "fancymenustuff/uwu.png"
 hash = "8d7ce46d8038ef37e526605538913133dba45657144c228080d1a8ba1e55436d"
+
+[[files]]
+file = "fork.code-workspace"
+hash = "13e277627c5bc1f83b02a039b55672bf00f15f819774c8b33654943a894ff8d7"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/loot_tables/chests/dungeon.json"
@@ -16730,7 +16734,7 @@ hash = "68a4e04406d7e91946faa0d0ab1ab4ab625765595139a0ab234e50247a3eb4f6"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
-hash = "aed2d60a57d772e29960b14dee86d1bd7f312d7f3de418a8974311ecf4fe209d"
+hash = "a7744d0d40bc5818f9adb54d248748afbb82a65ea1cc63e47b0ccaec458dc52b"
 
 [[files]]
 file = "kubejs/assets/kubejs/ponder/electrolyser.nbt"
@@ -16738,19 +16742,11 @@ hash = "55c658051178897f280d141d74134508a0bc2f44aa0d0f1eed4a149762e279bc"
 
 [[files]]
 file = "kubejs/assets/kubejs/ponder/melter.nbt"
-hash = "7b6f875d633936f161e42d5e7b9ca05e3f3a81c847781566a002efc2e9c5838a"
-
-[[files]]
-file = "kubejs/assets/kubejs/ponder/melter2.nbt"
-hash = "d5c81f672580fb80839b82d9444589e76c2aa00bd5e3b37cbb81772272687db8"
-
-[[files]]
-file = "kubejs/assets/kubejs/ponder/melter3.nbt"
-hash = "856c345c00c36b3c7ec2bfcf0990c4060b96a0502c114f4e5c8ffcde6d69e8da"
+hash = "7b39e406de174cbdf2a04c973ea4cd488ec0d28800902863bfd993eb81434ad3"
 
 [[files]]
 file = "kubejs/assets/kubejs/ponder/portal.nbt"
-hash = "28a76cf2964493a18ef9e7a397210b661d0c2fe56820afbf975e591cecc199d8"
+hash = "148cce81341c2a3f7f671785152f72df262412465ae8baca3f4fd3fa1ffee9a6"
 
 [[files]]
 file = "kubejs/assets/kubejs/probe/cache/cachedEvents.json"
@@ -16946,7 +16942,7 @@ hash = "c5b774fb90a3beceb70da1c0c17cab1ecf8e426de29ce56ec95d76e4d80fed6c"
 
 [[files]]
 file = "kubejs/client_scripts/ponder.js"
-hash = "0900e41bd80e7b8355d2eb2c44e8f912565dc1bdcd711486b331b846d9d6dede"
+hash = "0dce89b8db9c04f4d92a982a4e562709f17786e4bf26fdc38a00bca90a780380"
 
 [[files]]
 file = "kubejs/client_scripts/script.js"
@@ -18132,6 +18128,14 @@ hash = "3fadd1ac5f9ec425949b40170c58556fc9fc1e9a360cb0687fa001634ecfd8e7"
 [[files]]
 file = "packwiz-installer.jar"
 hash = "c8268c1412d670299603f235d9c480fec544db660ce5b9004ea8c15c9618c6fa"
+
+[[files]]
+file = "reload-example.bat"
+hash = "5f4581780b594aac688fa4cdb6a758b8beeaa61c5e16dde17307f5d46f084107"
+
+[[files]]
+file = "reload.bat"
+hash = "06b95ef1ccfc879502dda5b01f9f93e813bed93cb5fe76818aa103d06dd5bebb"
 
 [[files]]
 file = "resourcepacks/BetterVanillaBuildingV2.83.1/assets/.mcassetsroot"
