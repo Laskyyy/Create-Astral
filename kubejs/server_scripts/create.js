@@ -2055,19 +2055,7 @@ function mechanicalCraftingRecipes(event) {
                 //AUTOMOBILITY RECIPE CHANGES
             },
         },
-        {
-            output: "automobility:auto_mechanic_table",
-            shape: ["  D  ", "CAEAC", " BBB "],
-            inputs: {
-                A: "create:brass_ingot",
-                B: "create:railway_casing",
-                C: "create:brass_ingot",
-                D: "create:crafting_blueprint",
-                E: "create:brass_block",
-
-                /// /DOODADS MOD RECIPE CHANGES
-            },
-        },
+        
 				{
 						output: "buildinggadgets:gadget_building",
 						shape: [" I ", "SOS", "S8S", "SNS"],

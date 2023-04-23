@@ -383,7 +383,7 @@ onEvent("recipes", (event) => {
 
     // COMPUTERCRAFT
 
-    /////  ASSORTED MECHANICAL CRAFTING  //////
+    /////  ASSORTED CRAFTING  //////
 
     event.shaped("ad_astra:oxygen_loader", ["BAB", "DED", "BCB"], {
         A: "ad_astra:oxygen_tank",
@@ -392,6 +392,16 @@ onEvent("recipes", (event) => {
         D: "create:smart_fluid_pipe",
         E: "create:fluid_tank",
     });
+
+
+    event.shaped("automobility:auto_mechanic_table", ["DBD", "ACA", "AEA"], {
+        A: "create:railway_casing",
+        B: "create:crafting_blueprint",
+        C: "yttr:project_table",
+        D: "create:smart_fluid_pipe",
+        E: "create:electron_tube",
+    });
+
 
     ///COMPUTERCRAFT FIXES
 
@@ -449,6 +459,10 @@ onEvent("recipes", (event) => {
     event.shapeless('ad_astra:sky_stone', [
         'ae2:sky_stone_block'])
 
+
+
+
+        
     // IRON TOOLS RECIPES / DIAMOND
 
     const fullkit = {
