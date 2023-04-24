@@ -841,6 +841,14 @@ onEvent("recipes", (event) => {
         E: "campanion:sleeping_bag",
         F: "campanion:rope",
     });
+    event.shaped("travelersbackpack:standard", ["ABA", "CDE", "FAF"], {
+        A: "farmersdelight:canvas",
+        B: "minecraft:crafting_table",
+        C: "campanion:leather_pouch",
+        D: "minecraft:barrel",
+        E: "campanion:sleeping_bag",
+        F: "campanion:rope",
+    });
     event.shaped("campanion:tent_bag", [" A ", "ABA", " A "], {
         A: "campanion:rope",
         B: "campanion:leather_pouch",

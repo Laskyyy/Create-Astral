@@ -1,0 +1,13 @@
+name = "Traveler's Backpack [Fabric]"
+filename = "travelers-backpack-1.18.2-7.1.24.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+hash-format = "sha1"
+hash = "8512626dd07ff44a9b165ada1ecd52c79ef7e694"
+
+[update]
+[update.curseforge]
+file-id = 4500583
+project-id = 541171

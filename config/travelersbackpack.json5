@@ -1,0 +1,120 @@
+{
+	"backpackSettings": {
+		"disableCrafting": false,
+		// Enables wearing backpack directly from ground
+		"enableBackpackBlockQuickEquip": true,
+		// Backpack immune to any damage source (lava, fire), can't be destroyed, never disappears as floating item
+		"invulnerableBackpack": true,
+		// List of items that can be put in tool slots (Use registry names, for example: minecraft:apple)
+		"toolSlotsAcceptableItems": [],
+		// List of items that can't be put in backpack inventory (Use registry names, for example: minecraft:apple)
+		"blacklistedItems": [],
+		"tanksCapacity": 324000,
+		// Prevents backpack disappearing in void
+		"voidProtection": false,
+		// Places backpack at place where player died
+		"backpackDeathPlace": false,
+		// Places backpack at place where player died, replacing all blocks that are breakable and do not have inventory (backpackDeathPlace must be true in order to work)
+		"backpackForceDeathPlace": false,
+		"enableSleepingBagSpawnPoint": false,
+		/* If true, backpack can only be worn by placing it in curios 'Back' slot
+		   WARNING - Remember to TAKE OFF BACKPACK BEFORE enabling or disabling this integration!! - if not you'll lose your backpack
+		*/
+		"trinketsIntegration": true
+	},
+	"world": {
+		// Enables backpacks spawning in loot chests
+		"enableLoot": false,
+		// Enables chance to spawn Zombie, Skeleton, Wither Skeleton, Piglin or Enderman with random backpack equipped
+		"spawnEntitiesWithBackpack": false,
+		// List of overworld entity types that can spawn with equipped backpack. DO NOT ADD anything to this list, because the game will crash, remove entries if mob should not spawn with backpack
+		"possibleOverworldEntityTypes": [
+			"minecraft:zombie",
+			"minecraft:skeleton",
+			"minecraft:enderman"
+		],
+		// List of nether entity types that can spawn with equipped backpack. DO NOT ADD anything to this list, because the game will crash, remove entries if mob should not spawn with backpack
+		"possibleNetherEntityTypes": [
+			"minecraft:wither_skeleton",
+			"minecraft:piglin"
+		],
+		// Defines spawn chance of entity with backpack (1 in [selected value])
+		"spawnChance": 500,
+		// List of backpacks that can spawn on overworld mobs
+		"overworldBackpacks": [
+			"travelersbackpack:standard",
+			"travelersbackpack:diamond",
+			"travelersbackpack:gold",
+			"travelersbackpack:emerald",
+			"travelersbackpack:iron",
+			"travelersbackpack:lapis",
+			"travelersbackpack:redstone",
+			"travelersbackpack:coal",
+			"travelersbackpack:bookshelf",
+			"travelersbackpack:sandstone",
+			"travelersbackpack:snow",
+			"travelersbackpack:sponge",
+			"travelersbackpack:cake",
+			"travelersbackpack:cactus",
+			"travelersbackpack:hay",
+			"travelersbackpack:melon",
+			"travelersbackpack:pumpkin",
+			"travelersbackpack:creeper",
+			"travelersbackpack:enderman",
+			"travelersbackpack:skeleton",
+			"travelersbackpack:spider",
+			"travelersbackpack:bee",
+			"travelersbackpack:wolf",
+			"travelersbackpack:fox",
+			"travelersbackpack:ocelot",
+			"travelersbackpack:horse",
+			"travelersbackpack:cow",
+			"travelersbackpack:pig",
+			"travelersbackpack:sheep",
+			"travelersbackpack:chicken",
+			"travelersbackpack:squid"
+		],
+		// List of backpacks that can spawn on nether mobs
+		"netherBackpacks": [
+			"travelersbackpack:quartz",
+			"travelersbackpack:nether",
+			"travelersbackpack:blaze",
+			"travelersbackpack:ghast",
+			"travelersbackpack:magma_cube",
+			"travelersbackpack:wither"
+		],
+		// Enables trade for Villager Backpack in Librarian villager trades
+		"enableVillagerTrade": true
+	},
+	"backpackAbilities": {
+		"enableBackpackAbilities": false,
+		"forceAbilityEnabled": false
+	},
+	"slownessDebuff": {
+		// Player gets slowness effect, if carries too many backpacks in inventory
+		"tooManyBackpacksSlowness": true,
+		// Maximum number of backpacks, which can be carried in inventory, without slowness effect
+		"maxNumberOfBackpacks": 2,
+		"slownessPerExcessedBackpack": 1
+	},
+	"client": {
+		// Enables tool cycling via keybind (Default Z) + scroll combination, while backpack is worn
+		"enableToolCycling": true,
+		// Enables tip, how to obtain a backpack, if there's no crafting recipe for it
+		"obtainTips": false,
+		// Render tools in tool slots on the backpack, while worn
+		"renderTools": true,
+		// Render backpack if elytra is present
+		"renderBackpackWithElytra": true,
+		// Disable backpack rendering
+		"disableBackpackRender": false,
+		"overlay": {
+			// Enables tanks and tool slots overlay, while backpack is worn
+			"enableOverlay": false,
+			// Offsets to left side
+			"offsetX": 20,
+			// Offsets to up
+			"offsetY": 30
+		}
+	}
+}
