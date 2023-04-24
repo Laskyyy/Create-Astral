@@ -15,6 +15,7 @@ onEvent("recipes", (event) => {
         { output: "techreborn:iron_plate" },
         { output: "techreborn:steel_ingot" },
         { output: "techreborn:steel_block" },
+        { output: "techreborn:steel_plate" },
         { output: "techreborn:bronze_block" },
         { output: "techreborn:electronic_circuit" },
         { output: "techreborn:industrial_circuit" },

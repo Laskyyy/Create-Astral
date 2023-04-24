@@ -924,7 +924,7 @@ onEvent("recipes", (event) => {
 		], 'ae2:fluix_dust', [ 
 		event.recipes.createDeploying('ae2:fluix_dust', ['techreborn:diamond_small_dust', 'techreborn:diamond_small_dust']),
     event.recipes.createDeploying('ae2:fluix_dust', ['minecraft:gold_nugget', 'minecraft:gold_nugget']),
-    event.recipes.createPressing('ae2:fluix_dust', 'ae2:fluix_dust'), //yeah
+    event.recipes.createFilling('ae2:fluix_dustl', ['ae2:fluix_dust', {fluid: 'techreborn:biofuel', amount: 9000}]),
 		event.recipes.createFilling('ae2:fluix_dustl', ['ae2:fluix_dust', {fluid: 'techreborn:nitrogen', amount: 9000}]),
     event.recipes.createPressing('ae2:fluix_dust', 'ae2:fluix_dust')
     ]).transitionalItem('ae2:fluix_dust').loops(3) 
