@@ -1,0 +1,972 @@
+{
+	id: "58BE3D7A86394AEE"
+	group: ""
+	order_index: 9
+	filename: "test"
+	title: "Chromatic Matrix"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -2.5d
+			y: 1.25d
+			subtitle: "Still unsure on where the base starting point for mass producing materials should be, as if its all cobblegens then nothing changes and peeps are still making 100x tango cobblegens, just with more processing in between"
+			size: 2.5d
+			id: "7EEEA1139BA87F2D"
+			tasks: [{
+				id: "194151F76EAD53FF"
+				type: "custom"
+				title: "PRocessing yummy"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -3.0d
+			id: "638E587CFD9523F8"
+			tasks: [{
+				id: "3485EF0BCBF1F286"
+				type: "item"
+				item: "minecraft:granite"
+				count: 64L
+			}]
+		}
+		{
+			x: -3.5833333333333286d
+			y: -1.5238095238095326d
+			id: "6FD504DA2D54468B"
+			tasks: [{
+				id: "7355C2ADCDA9A744"
+				type: "item"
+				item: "minecraft:diorite"
+				count: 64L
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.0d
+			shape: "hexagon"
+			id: "5A1F58F23748C37C"
+			tasks: [{
+				id: "1BE50DA34F600F1D"
+				type: "item"
+				item: "minecraft:andesite"
+				count: 64L
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.0d
+			id: "0307114155DB3258"
+			tasks: [{
+				id: "16828747C6FC77D2"
+				type: "item"
+				item: "minecraft:cobblestone"
+				count: 64L
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.0d
+			id: "403A78EEE74B10BB"
+			tasks: [{
+				id: "4A67BC9B785F56DC"
+				type: "item"
+				item: "minecraft:cobbled_deepslate"
+				count: 64L
+			}]
+		}
+		{
+			x: -6.0d
+			y: -6.5d
+			id: "27E9DBABEE541BBB"
+			tasks: [{
+				id: "46879E0895D734A7"
+				type: "item"
+				item: "minecraft:sand"
+				count: 64L
+			}]
+		}
+		{
+			x: -4.0d
+			y: 1.5d
+			id: "5FABC0B303CB22BC"
+			tasks: [{
+				id: "3010CF4356666B14"
+				type: "item"
+				item: "minecraft:dripstone_block"
+				count: 64L
+			}]
+		}
+		{
+			x: -1.0d
+			y: -5.0d
+			id: "7FF63BE5F28D112F"
+			tasks: [{
+				id: "04C199045389651E"
+				type: "item"
+				item: "minecraft:calcite"
+				count: 64L
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.5d
+			id: "44F6E945B564314E"
+			tasks: [{
+				id: "34769A1E5A183287"
+				type: "item"
+				item: "minecraft:tuff"
+				count: 64L
+			}]
+		}
+		{
+			x: -5.5d
+			y: -2.0d
+			id: "54B7A0A069FBC233"
+			tasks: [{
+				id: "1C78C4DE38556079"
+				type: "item"
+				item: "minecraft:dirt"
+				count: 64L
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.5d
+			id: "421E77B579963D14"
+			tasks: [{
+				id: "033078C366236011"
+				type: "item"
+				item: "minecraft:gravel"
+				count: 64L
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.0d
+			id: "523CB7D81502E08B"
+			tasks: [{
+				id: "40261FECA0404C1A"
+				type: "item"
+				item: "minecraft:basalt"
+				count: 64L
+			}]
+		}
+		{
+			x: 6.0d
+			y: -2.5d
+			id: "72FE9EB63A19DAA1"
+			tasks: [{
+				id: "5141EB32253B6D6A"
+				type: "item"
+				item: "minecraft:blackstone"
+				count: 64L
+			}]
+		}
+		{
+			x: -3.0d
+			y: -6.5d
+			id: "694F9CEA72EA6F5B"
+			tasks: [{
+				id: "6E47BBB9B167CB19"
+				type: "item"
+				item: "minecraft:red_sand"
+				count: 64L
+			}]
+		}
+		{
+			x: 0.0d
+			y: -6.0d
+			id: "34DB70D26B533869"
+			tasks: [{
+				id: "0B97B798B49FAEFC"
+				type: "item"
+				item: "minecraft:clay"
+				count: 64L
+			}]
+		}
+		{
+			x: -4.0d
+			y: 0.5d
+			id: "55E84B1F8A3CA710"
+			tasks: [{
+				id: "7D91FADED786393B"
+				type: "item"
+				item: "minecraft:bedrock"
+				count: 64L
+			}]
+		}
+		{
+			x: 4.5d
+			y: -4.0d
+			id: "72806A4E26D82F3F"
+			tasks: [{
+				id: "446D51C20885F52B"
+				type: "item"
+				item: "minecraft:prismarine"
+				count: 64L
+			}]
+		}
+		{
+			x: 7.5d
+			y: -0.5d
+			id: "30D80A95DC06CA45"
+			tasks: [{
+				id: "50DA70AC343C15E9"
+				type: "item"
+				item: "minecraft:magma_block"
+				count: 64L
+			}]
+		}
+		{
+			x: -7.5d
+			y: -3.5d
+			id: "75DD9B476E0BC1C9"
+			tasks: [{
+				id: "0186E106C2D20206"
+				type: "item"
+				item: "farmersdelight:organic_compost"
+				count: 64L
+			}]
+		}
+		{
+			x: 4.5d
+			y: -5.0d
+			id: "3848102DC87DC4D0"
+			tasks: [{
+				id: "01786A8ECA0CECBC"
+				type: "item"
+				item: "create:asurine"
+				count: 64L
+			}]
+		}
+		{
+			x: -3.0d
+			y: -7.5d
+			id: "1ACB3A0438D74FA8"
+			tasks: [{
+				id: "79EA6ECA577F9AF9"
+				type: "item"
+				item: "create:crimsite"
+				count: 64L
+			}]
+		}
+		{
+			x: 0.0d
+			y: -7.0d
+			id: "60FEDA21DCE756B6"
+			tasks: [{
+				id: "66953EE20F4296E9"
+				type: "item"
+				item: "create:limestone"
+				count: 64L
+			}]
+		}
+		{
+			x: -6.0d
+			y: -7.5d
+			id: "54995020F2BB0E05"
+			tasks: [{
+				id: "6E19F0A08260902E"
+				type: "item"
+				item: "create:ochrum"
+				count: 64L
+			}]
+		}
+		{
+			x: 7.5d
+			y: -1.5d
+			id: "3930FFC230D67068"
+			tasks: [{
+				id: "454BB1ACF98E827B"
+				type: "item"
+				item: "create:scoria"
+				count: 64L
+			}]
+		}
+		{
+			x: 6.0d
+			y: -3.5d
+			id: "6D8ECB10B559D4C3"
+			tasks: [{
+				id: "7AB31D30C294CF2A"
+				type: "item"
+				item: "create:scorchia"
+				count: 64L
+			}]
+		}
+		{
+			x: 2.5d
+			y: -6.0d
+			id: "4C2C2C74FB0F242E"
+			tasks: [{
+				id: "0680CF24B03B8B17"
+				type: "item"
+				item: "create:veridium"
+				count: 64L
+			}]
+		}
+		{
+			x: -4.0d
+			y: -7.0d
+			id: "1EAA2FB8699F543B"
+			tasks: [{
+				id: "6625C3D982D0C4EF"
+				type: "item"
+				item: "tconstruct:blood_bucket"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -6.5d
+			id: "6EB629983858601E"
+			tasks: [{
+				id: "4F95079BC6B64939"
+				type: "item"
+				item: "minecraft:milk_bucket"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -5.5d
+			id: "432B82B19DFB1465"
+			tasks: [{
+				id: "33E3958DBC6305D5"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -4.5d
+			id: "795C15A264870B71"
+			tasks: [{
+				id: "585147CB07BFDB45"
+				type: "item"
+				item: "minecraft:water_bucket"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -2.5d
+			id: "7F9FA38071CD56E2"
+			tasks: [{
+				id: "33045E3DF11BC63D"
+				type: "item"
+				item: "tconstruct:molten_quartz_bucket"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -1.0d
+			id: "40458DEE478FDD85"
+			tasks: [{
+				id: "6C343860628F0850"
+				type: "item"
+				item: "create:chocolate_bucket"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -7.0d
+			id: "72D7864EBA8E3ABA"
+			tasks: [{
+				id: "0AD7B918785016FB"
+				type: "item"
+				item: "create:honey_bucket"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -2.0d
+			id: "24BE19FB21C9BB29"
+			tasks: [{
+				id: "31B31EFD5D3B4AEE"
+				type: "item"
+				item: "minecraft:charcoal"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -2.5d
+			id: "764DE4E892E55452"
+			tasks: [{
+				id: "549A4583EED4A16F"
+				type: "item"
+				item: "farmersdelight:tree_bark"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -5.0d
+			id: "3A016C8DA19E9134"
+			tasks: [{
+				id: "59C266F2F7D70E52"
+				type: "item"
+				item: "minecraft:dried_kelp_block"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -8.5d
+			id: "2701D8F047B48FAE"
+			tasks: [{
+				id: "4290C6AAF7E30D92"
+				type: "item"
+				item: "minecraft:raw_gold"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -8.5d
+			id: "2271F9417D97E64B"
+			tasks: [{
+				id: "0105357F4D5F4402"
+				type: "item"
+				item: "minecraft:raw_iron"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -3.0d
+			id: "2D90C8ED3DD34561"
+			tasks: [{
+				id: "0D1B7161AC46EEE4"
+				type: "item"
+				item: "create:raw_zinc"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -7.0d
+			id: "0DD9674E70C78DDA"
+			tasks: [{
+				id: "43E69D7FDD272DFB"
+				type: "item"
+				item: "minecraft:raw_copper"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -8.0d
+			id: "1CCDDCDAB8416CEA"
+			tasks: [{
+				id: "230E9CD369CEEFF6"
+				type: "item"
+				item: "techreborn:raw_tin"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -6.0d
+			id: "2D927A4C1199FD45"
+			tasks: [{
+				id: "2909A40E9F727C47"
+				type: "item"
+				item: "tconstruct:raw_cobalt"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -4.0d
+			id: "4800A805C0146DB8"
+			tasks: [{
+				id: "620E9886664CF42A"
+				type: "item"
+				item: "tconstruct:seared_brick"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -1.5d
+			id: "4C8AC6564D14DFDA"
+			tasks: [{
+				id: "572D95F5EBC69058"
+				type: "item"
+				item: "tconstruct:scorched_brick"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -6.0d
+			id: "7996608F2A1D1431"
+			tasks: [{
+				id: "23D329AEB7EF8E15"
+				type: "item"
+				item: "minecraft:lapis_lazuli"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -8.5d
+			id: "7C4F68D3590CC859"
+			tasks: [{
+				id: "5E4BA02BE399BFF2"
+				type: "item"
+				item: "techreborn:redstone_small_dust"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -8.5d
+			id: "7FE890D60328209D"
+			tasks: [{
+				id: "695C6A2F6C92F731"
+				type: "item"
+				item: "techreborn:glowstone_small_dust"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -7.5d
+			id: "13C45ED0B4BA3A9A"
+			tasks: [{
+				id: "72C3F69365E02FD8"
+				type: "item"
+				item: "techreborn:zinc_small_dust"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -7.0d
+			id: "67345836C4A4AA40"
+			tasks: [{
+				id: "10FEB2567404AA2E"
+				type: "item"
+				item: "techreborn:olivine_small_dust"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -5.0d
+			id: "30C5DBD18064988E"
+			tasks: [{
+				id: "76AC59DD500912E6"
+				type: "item"
+				item: "techreborn:lazurite_small_dust"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.0d
+			id: "6D651676D5F1ACE2"
+			tasks: [{
+				id: "4DC97A18E32926CF"
+				type: "item"
+				item: "ad_astra:moon_sand"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 3.0d
+			id: "46A1038A76F1471C"
+			tasks: [{
+				id: "6C763F2ED25609F7"
+				type: "item"
+				item: "ad_astra:mars_sand"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.0d
+			id: "5C8C4B568E142B93"
+			tasks: [{
+				id: "2C90F0E506453BF5"
+				type: "item"
+				item: "ad_astra:mercury_cobblestone"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.0d
+			id: "080DD466F080E531"
+			tasks: [{
+				id: "10DF92A1D9CBEAF7"
+				type: "item"
+				item: "techreborn:silver_nugget"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 4.0d
+			id: "02492AA9A5900AC2"
+			tasks: [{
+				id: "6669D556D87F307D"
+				type: "item"
+				item: "techreborn:lead_nugget"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 4.0d
+			id: "4D49AAE4D8F1C799"
+			tasks: [{
+				id: "2BBD89D871D8CAC0"
+				type: "item"
+				item: "ad_astra:calorite_nugget"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -9.5d
+			id: "38C2D9C14501FD7B"
+			tasks: [{
+				id: "2C8CC021149F1DC9"
+				type: "item"
+				item: "ad_astra:desh_nugget"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -0.5d
+			id: "2C0EED75F0BA7E6F"
+			tasks: [{
+				id: "2CFA067229FDF0C9"
+				type: "item"
+				item: "ad_astra:ostrum_nugget"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.5d
+			id: "204A54763CA8D865"
+			tasks: [{
+				id: "6227D289141D3C3E"
+				type: "item"
+				item: "ae2:certus_quartz_dust"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -7.5d
+			id: "0A433FA9A896A28F"
+			tasks: [{
+				id: "36EAA8D352873E73"
+				type: "item"
+				item: "createastral:lime"
+			}]
+		}
+		{
+			x: -11.0d
+			y: -1.5d
+			id: "0447B4E6FFFD3FC6"
+			tasks: [
+				{
+					id: "218D414C0AD54117"
+					type: "item"
+					item: "create:millstone"
+				}
+				{
+					id: "06F78BB4395547B2"
+					type: "item"
+					item: "create:encased_fan"
+				}
+				{
+					id: "57099DE73DF73E7C"
+					type: "item"
+					item: "createsifter:sifter"
+				}
+				{
+					id: "728E1AD5C5F73BB4"
+					type: "item"
+					item: "create:basin"
+				}
+			]
+		}
+		{
+			x: -11.0d
+			y: -7.0d
+			id: "1CAA842158BD6404"
+			tasks: [{
+				id: "3FD098E017B1A997"
+				type: "item"
+				item: "create:crushing_wheel"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 0.0d
+			id: "09107695CAFF1E83"
+			tasks: [{
+				id: "7BCA5554653ACA42"
+				type: "item"
+				item: "minecraft:soul_soil"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -3.5d
+			id: "0D7AA9C7809DEF74"
+			tasks: [{
+				id: "61DE59F8BC6E431D"
+				type: "item"
+				item: "create:powdered_obsidian"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -5.0d
+			id: "2A97D1CC6F54D0F4"
+			tasks: [{
+				id: "5501EC9AB1AF862C"
+				type: "item"
+				item: "create:wheat_flour"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -4.0d
+			id: "0298B69768154E82"
+			tasks: [{
+				id: "136EE8C576A1ADD8"
+				type: "item"
+				item: "minecraft:bone_meal"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -3.5d
+			id: "6CDD36ECE9107952"
+			tasks: [{
+				id: "1AF319CA13B68719"
+				type: "item"
+				item: "minecraft:green_dye"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.5d
+			id: "32BB63A4641D177D"
+			tasks: [{
+				id: "6F2BD90D2F9E3C93"
+				type: "item"
+				item: "minecraft:lime_dye"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -3.0d
+			id: "0B3B701C42334421"
+			tasks: [{
+				id: "2B028DED8439D4FA"
+				type: "item"
+				item: "minecraft:slime_ball"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -3.0d
+			id: "74175B603EE5E3AF"
+			tasks: [{
+				id: "4CD447D5F22D335F"
+				type: "item"
+				item: "tconstruct:blazing_blood_bucket"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -5.0d
+			id: "074A03A21ADD1082"
+			tasks: [{
+				id: "0B903D045C3E5105"
+				type: "item"
+				item: "minecraft:quartz"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -6.0d
+			id: "6BC8503A325BB37A"
+			tasks: [{
+				id: "4A07BB5453E37034"
+				type: "item"
+				item: "techreborn:sap"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -1.0d
+			id: "09309EEBED87E854"
+			tasks: [{
+				id: "261F026DC9AC7982"
+				type: "item"
+				item: "minecraft:magma_cream"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -0.5d
+			id: "4975BCA2F425B341"
+			tasks: [{
+				id: "5624AC656D908BF3"
+				type: "item"
+				item: "tconstruct:seared_stone"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.0d
+			id: "06B316EAF367E563"
+			tasks: [{
+				id: "14A41EC95E6BC70B"
+				type: "item"
+				title: "Any #minecraft:logs"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+			}]
+		}
+		{
+			x: -8.0d
+			y: 2.0d
+			id: "3BE6E4C8223F81C3"
+			tasks: [{
+				id: "5ACBCF997E2824AA"
+				type: "item"
+				item: "farmersdelight:cabbage"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 2.0d
+			id: "725631FBDEC16FF7"
+			tasks: [{
+				id: "76E2CD98A9FFB1A1"
+				type: "item"
+				item: "farmersdelight:tomato"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 3.0d
+			id: "6009963858A9765C"
+			tasks: [{
+				id: "54B0818EF10160EA"
+				type: "item"
+				item: "farmersdelight:onion"
+			}]
+		}
+		{
+			x: -8.5d
+			y: 3.0d
+			id: "6A368A5278209480"
+			tasks: [{
+				id: "7BBCD9890BFC06FF"
+				type: "item"
+				item: "farmersdelight:rice"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 3.0d
+			id: "3B028BC62D65E613"
+			tasks: [{
+				id: "0336357F7325FC49"
+				type: "item"
+				item: "vinery:red_grape"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 4.0d
+			id: "2BD44B5665734BA2"
+			tasks: [{
+				id: "2476211E8A223CB1"
+				type: "item"
+				item: "vinery:white_grape"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 4.0d
+			id: "7289AEA3B3460E8A"
+			tasks: [{
+				id: "3422CC4EE6399C21"
+				type: "item"
+				item: "vinery:cherry"
+			}]
+		}
+		{
+			x: -11.0d
+			y: -6.0d
+			id: "3BBBFB7BCFC54FEB"
+			tasks: [{
+				id: "61A8A86AFF580100"
+				type: "custom"
+				title: "Require more complex methods of processing as the rewards get higher?"
+			}]
+		}
+		{
+			x: -11.0d
+			y: -0.5d
+			id: "2017EFFB2155F735"
+			tasks: [{
+				id: "61E757FBEC9B1D37"
+				type: "custom"
+				title: "Most basic form of stones can be utilised for low-gain, specialised farm, using primitive create / modded blocks"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -3.0d
+			id: "6882BF17791D6C72"
+			tasks: [{
+				id: "46B91785AF059FBC"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.5d
+			id: "6AB189B3E250C81D"
+			tasks: [{
+				id: "2297FF97C2762156"
+				type: "item"
+				item: "minecraft:clay_ball"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -5.5d
+			id: "27C3A3F922A110E1"
+			tasks: [{
+				id: "302E1A25557DDC88"
+				type: "item"
+				item: "minecraft:coarse_dirt"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -4.0d
+			id: "1DAE10DE5D1EB16C"
+			tasks: [{
+				id: "78CD9B63A1132425"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -3.5d
+			id: "72D521B9C8642ADD"
+			tasks: [{
+				id: "06798F55DA4515F5"
+				type: "item"
+				title: "Any #c:coral_plants"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "c:coral_plants"
+					}
+				}
+			}]
+		}
+	]
+	quest_links: [ ]
+}
