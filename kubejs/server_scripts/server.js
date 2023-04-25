@@ -833,14 +833,6 @@ onEvent("recipes", (event) => {
         }
     );
 
-    event.shaped("camsbackpacks:white_backpack", ["ABA", "CDE", "FAF"], {
-        A: "farmersdelight:canvas",
-        B: "minecraft:crafting_table",
-        C: "campanion:leather_pouch",
-        D: "minecraft:barrel",
-        E: "campanion:sleeping_bag",
-        F: "campanion:rope",
-    });
     event.shaped("travelersbackpack:standard", ["ABA", "CDE", "FAF"], {
         A: "farmersdelight:canvas",
         B: "minecraft:crafting_table",

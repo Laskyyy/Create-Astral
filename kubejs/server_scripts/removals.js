@@ -102,6 +102,7 @@ onEvent("recipes", (event) => {
         //Create
 
         { output: "create:blaze_cake" },
+        { output: "create:blaze_burner" },
         { output: "create:ochrum" },
         { output: "create:crimsite" },
         { output: "create:limestone" },
