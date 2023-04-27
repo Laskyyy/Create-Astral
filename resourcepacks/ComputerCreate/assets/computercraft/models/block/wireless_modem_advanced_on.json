@@ -1,0 +1,9 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "computercraft:block/wireless_modem_base",
+	"textures": {
+		"0": "computercraft:block/wireless_modem_advanced",
+		"1": "computercraft:block/wireless_antenna_on",
+		"particle": "computercraft:block/wireless_modem_advanced"
+	}
+}
