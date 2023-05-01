@@ -9685,6 +9685,10 @@ file = "global_packs/required_data/zTConstructAstra/data/tconstruct/lang/en_us.j
 hash = "24e245f416b580d50060c1114e3eead936c7f13e645f4764a8b4c3f354c66f78"
 
 [[files]]
+file = "global_packs/required_data/zTConstructAstra/data/tconstruct/recipes/gadgets/piggy_backpack.json"
+hash = "797fddd42cf7e067f1e6c65ec5d1bf47dfbca6cfee340657424067cba497fae4"
+
+[[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/recipes/smeltery/casting/amethyst/block.json"
 hash = "c082dc558f3c3840d3b35ce09af8eac1fe3463edf37541f395622bef55ff3a74"
 
@@ -16166,7 +16170,7 @@ hash = "26a71380614bef64cefa2aed51424f0ef82e031826cb89f1fe196f6e7b83d881"
 
 [[files]]
 file = "kubejs/assets/ad_astra/lang/fr_fr.json"
-hash = "9a4e89e847f412301fd6c85ac5b68ccb9238068bf8de76ad55552ec033035b64"
+hash = "ac0d1c32dffeef6a8f2a26b2c5655e6b49b2074b99bd81ef354e831c60058a44"
 
 [[files]]
 file = "kubejs/assets/ae2/lang/en_us.json"
