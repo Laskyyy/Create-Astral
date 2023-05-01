@@ -1,0 +1,13 @@
+name = "SuperMartijn642's Core Lib"
+filename = "supermartijn642corelib-1.1.7-fabric-mc1.18.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+hash-format = "sha1"
+hash = "4d1712519ea74a81d19ed646b7d07c6a32eb69e0"
+
+[update]
+[update.curseforge]
+file-id = 4495087
+project-id = 454372
