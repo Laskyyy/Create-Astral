@@ -422,24 +422,13 @@ event.create('createastral:shimmer_amplifier'),
 event.create('createastral:star_shard'),
 event.create('createastral:pure_star_shard').glow(true),
 event.create('createastral:crushed_yttrium_ore'),
-event.create('createastral:crushed_desh_ore'),
-event.create('createastral:crushed_ostrum_ore'),
-event.create('createastral:crushed_calorite_ore'),
-event.create('createastral:subatomic_ingot'),
-event.create('createastral:astral_conduit'),
-event.create('createastral:andesite_compound'),
-event.create('createastral:bronze_sheet'),
-event.create('createastral:olivine_sheet'),
-event.create('create:lapis_sheet'),
-event.create('create:integrated_circuit'),
-event.create('createastral:incomplete_electronic_circuit'),
-event.create('createastral:golden_pin'),
-event.create('createastral:calorite_pin'),
-event.create('createastral:electrified_pin'),
-event.create('createastral:uwaah'),
-event.create('createastral:bronze_ingot'),
-event.create('createastral:navigation_mechanism');
-event.create('createastral:coin','create:sequenced_assembly').displayName('Golden Coin');
+
+
+
+
+
+
+
 event.create('createastral:golden_bowl').displayName('Golden Bowl');
 event.create('createastral:filled_golden_bowl','create:sequenced_assembly').displayName('Filled Golden Bowl').food(food => {
   food
