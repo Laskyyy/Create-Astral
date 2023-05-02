@@ -587,16 +587,16 @@ onEvent("recipes", (event) => {
         "2x createastral:bronze_sheet",
         "createastral:bronze_ingot"
     );
-    event.stonecutting("minecraft:wooden_hoe", "create:andesite_alloy");
-    event.stonecutting("minecraft:wooden_axe", "create:andesite_alloy");
-    event.stonecutting("minecraft:wooden_shovel", "create:andesite_alloy");
-    event.stonecutting("minecraft:wooden_pickaxe", "create:andesite_alloy");
-    event.stonecutting("minecraft:wooden_sword", "create:andesite_alloy");
-    event.stonecutting("minecraft:stone_hoe", "create:andesite_alloy");
-    event.stonecutting("minecraft:stone_axe", "create:andesite_alloy");
-    event.stonecutting("minecraft:stone_shovel", "create:andesite_alloy");
-    event.stonecutting("minecraft:stone_pickaxe", "create:andesite_alloy");
-    event.stonecutting("minecraft:stone_sword", "create:andesite_alloy");
+    event.stonecutting("minecraft:wooden_hoe", "createastral:andesite_compound");
+    event.stonecutting("minecraft:wooden_axe", "createastral:andesite_compound");
+    event.stonecutting("minecraft:wooden_shovel", "createastral:andesite_compound");
+    event.stonecutting("minecraft:wooden_pickaxe", "createastral:andesite_compound");
+    event.stonecutting("minecraft:wooden_sword", "createastral:andesite_compound");
+    event.stonecutting("minecraft:stone_hoe", "createastral:andesite_compound");
+    event.stonecutting("minecraft:stone_axe", "createastral:andesite_compound");
+    event.stonecutting("minecraft:stone_shovel", "createastral:andesite_compound");
+    event.stonecutting("minecraft:stone_pickaxe", "createastral:andesite_compound");
+    event.stonecutting("minecraft:stone_sword", "createastral:andesite_compound");
     event.stonecutting("8x automobility:dirt_off_road", "minecraft:dirt");
     event.stonecutting(
         "8x automobility:grass_off_road",
