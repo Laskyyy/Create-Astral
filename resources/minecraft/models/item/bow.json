@@ -99,27 +99,27 @@
             {
 			"predicate": {
 			},
-			"model": "item/PistolModelStandby"
+			"model": "item/pistol_model_standby"
 		},
 		{
 			"predicate": {
 				"pulling": 1
 			},
-			"model": "item/PistolModelDrawm"
+			"model": "item/pistol_model_drawn"
 		},
 		{
 			"predicate": {
 				"pulling": 1,
 				"pull": 0
 			},
-			"model": "item/PistolModelDrawn"
+			"model": "item/pistol_model_drawn"
 		},
 		{
 			"predicate": {
 				"pulling": 1,
 				"pull": 0.3
 			},
-			"model": "item/PistolModelDrawn"
+			"model": "item/pistol_model_drawn"
 		}
 	],
 	"display": {

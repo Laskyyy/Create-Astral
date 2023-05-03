@@ -29,40 +29,40 @@
        {
             "predicate": {
             },
-            "model": "item/RifleModel"
+            "model": "item/rifle_model"
         },
         {
             "predicate": {
                 "pulling": 1
             },
-            "model": "item/RifleModel"
+            "model": "item/rifle_model"
         },
         {
             "predicate": {
                 "pulling": 1,
                 "pull": 0.58
             },
-            "model": "item/RifleModel"
+            "model": "item/rifle_model"
         },
         {
             "predicate": {
                 "pulling": 1,
                 "pull": 1.0
             },
-            "model": "item/RifleModel"
+            "model": "item/rifle_model"
         },
         {
             "predicate": {
                 "charged": 1
             },
-            "model": "item/RifleCharged"
+            "model": "item/rifle_charged"
         },
         {
             "predicate": {
                 "charged": 1,
                 "firework": 1
             },
-            "model": "item/RifleModel"
+            "model": "item/rifle_charged"
         }
     ]
 }
