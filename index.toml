@@ -413,6 +413,10 @@ file = "config/ftbquests/quests/chapters/chapter_5.snbt"
 hash = "ad205e7359390d3091b972f40cf500ec0a8ff23800207909f8b2bbfee0832ca4"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/read_the_questbook.snbt"
+hash = "bb3c1fc9b437e336c2d5da55dee8c2a9218a61abe54352416c960bd22af28d73"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/test.snbt"
 hash = "9dd9d23f53dac828334930249482b08a3a83e201d294b1978f82e2e6cd909efe"
 
@@ -2366,7 +2370,7 @@ hash = "2bc6f53cfc4f91b5443859b892d31e6eac5cef46fcde7109b8c693f13b483504"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/worldgen/biome/lunar_wastelands.json"
-hash = "39cc64323479d10ecfa0b4bd7aee9a2e59c6864c16bc656480ae77b344a67921"
+hash = "a7f5225ec5c8207c62760d6179fc598ba4854beba673c678503db5aa58235ddb"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/worldgen/biome/martian_canyon_creek.json"
@@ -3358,7 +3362,7 @@ hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/create/tags/fluids/bottomless/allow.json"
-hash = "3cb912a8477b3a46fa66e5928cc1951c26d900179459a112c7cea80ed7190606"
+hash = "76eb84830b0b2a91468d9a5590d3f7c4cf3bc0ea55fd23f1404ce49997c5f3e8"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/create/tags/items/blaze_burner_fuel/regular.json"
@@ -3426,7 +3430,7 @@ hash = "6eb04b22ef9d75342f57ded3b5bf3bf02dd5b0630dd979b34ef7fb9f18311262"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/worldgen/configured_feature/crystal_pillar.json"
-hash = "932df773832ed1eac1699f3c71e71f7476edaa8680e57352bb24283392f73843"
+hash = "2f87262838a0862020a9854c2462afe2011dd9b8c7e76a76462a3376c89e77d9"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/worldgen/configured_feature/oil_lake.json"
@@ -3434,7 +3438,7 @@ hash = "92fd0ca314aea452fdd98ddef813819c36d80af233725a09d90f00e38eb6ef82"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/worldgen/placed_feature/crystal_pillar.json"
-hash = "4944e408a863e0402b814f33020e99bc8ff33eab05500509dbc4ea149409a235"
+hash = "1a47e37a71606953e693eee68e9b042a960a6411918e3165ebb0f41c37dad5d6"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/worldgen/placed_feature/oil_lake.json"
