@@ -1,8 +1,4 @@
 {
-	id: "65F4E9F0B48DCF6C"
-	order_index: 0
-	title: "Chapter 0.5"
-	loot_size: 1
 	rewards: [
 		{ item: "minecraft:oak_log", count: 32, weight: 2 }
 		{ item: "minecraft:stone", count: 32, weight: 2 }
@@ -54,14 +50,18 @@
 		{ item: "minecraft:white_wool", count: 16 }
 		{ item: "create:experience_nugget", count: 8, weight: 5 }
 	]
+	loot_size: 1
+	order_index: 0
+	id: "65F4E9F0B48DCF6C"
 	loot_crate: {
-		color: 9858867
-		item_name: "Chapter 0.5 Loot Crate"
 		string_id: "chapter_0_5"
+		item_name: "Chapter 0.5 Loot Crate"
+		color: 9858867
 		drops: {
 			passive: 0
-			boss: 0
 			monster: 0
+			boss: 0
 		}
 	}
+	title: "Chapter 0.5"
 }

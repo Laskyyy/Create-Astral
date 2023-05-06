@@ -1,9 +1,16 @@
 {
 	id: "2671EF8763519011"
-	order_index: 5
 	title: "Chapter 4"
 	icon: "ad_astra:mars_globe"
-	loot_size: 1
+	loot_crate: {
+		string_id: "chapter_4"
+		color: 16777215
+		drops: {
+			passive: 0
+			monster: 0
+			boss: 0
+		}
+	}
 	rewards: [
 		{ item: "compressor:quadruple_compressed_andesite", weight: 2 }
 		{ item: "farmersdelight:rich_soil", count: 8, weight: 2 }
@@ -77,13 +84,6 @@
 		{ item: "techreborn:basic_machine_casing", count: 8, weight: 2 }
 		{ item: "techreborn:advanced_machine_casing", count: 4 }
 	]
-	loot_crate: {
-		color: 16777215
-		string_id: "chapter_4"
-		drops: {
-			passive: 0
-			boss: 0
-			monster: 0
-		}
-	}
+	order_index: 5
+	loot_size: 1
 }

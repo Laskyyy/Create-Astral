@@ -1,8 +1,4 @@
 {
-	id: "48E82776955518FB"
-	order_index: 3
-	title: "Chapter 3"
-	loot_size: 1
 	rewards: [
 		{
 			item: {
@@ -50,14 +46,18 @@
 		{ item: "techreborn:silver_ingot", count: 8 }
 		{ item: "ad_astra:desh_ingot", count: 4 }
 	]
+	loot_size: 1
+	order_index: 3
+	id: "48E82776955518FB"
 	loot_crate: {
-		color: 14795118
-		item_name: "Chapter 3 Loot Crate"
 		string_id: "chapter_3"
+		item_name: "Chapter 3 Loot Crate"
+		color: 14795118
 		drops: {
 			passive: 0
-			boss: 0
 			monster: 0
+			boss: 0
 		}
 	}
+	title: "Chapter 3"
 }

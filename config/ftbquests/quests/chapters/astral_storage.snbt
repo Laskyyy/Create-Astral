@@ -1,53 +1,56 @@
 {
-	id: "37926C9ECE25B63B"
-	group: ""
-	order_index: 5
-	filename: "astral_storage"
-	title: "{chapter.6.title}"
-	icon: "ae2:fluix_dust"
-	default_quest_shape: ""
+	quest_links: [ ]
 	default_hide_dependency_lines: false
+	group: ""
+	id: "37926C9ECE25B63B"
+	filename: "astral_storage"
+	default_quest_shape: ""
+	icon: "ae2:fluix_dust"
+	title: "{chapter.6.title}"
 	images: [
 		{
+			rotation: 0.0d
+			image: "createdeco:textures/block/palettes/decal/yellow_decal.png"
+			width: 3.0d
+			click: ""
+			hover: [ ]
 			x: 1.5d
 			y: -9.0d
-			width: 3.0d
-			height: 3.0d
-			rotation: 0.0d
-			image: "createdeco:textures/block/palettes/decal/yellow_decal.png"
-			hover: [ ]
-			click: ""
-			dev: false
 			corner: false
+			dev: false
+			height: 3.0d
 		}
 		{
+			rotation: 0.0d
+			image: "createdeco:textures/block/palettes/decal/yellow_decal.png"
+			width: 3.0d
+			click: ""
+			hover: [ ]
 			x: -11.5d
 			y: -9.0d
-			width: 3.0d
-			height: 3.0d
-			rotation: 0.0d
-			image: "createdeco:textures/block/palettes/decal/yellow_decal.png"
-			hover: [ ]
-			click: ""
-			dev: false
 			corner: false
+			dev: false
+			height: 3.0d
 		}
 		{
-			x: -5.0d
-			y: -12.5d
-			width: 4.0d
-			height: 4.0d
 			rotation: 0.0d
 			image: "ad_astra:textures/sky/phobos.png"
-			hover: [ ]
+			width: 4.0d
 			click: ""
-			dev: false
+			hover: [ ]
+			x: -5.0d
+			y: -12.5d
 			corner: false
+			dev: false
+			height: 4.0d
 		}
 	]
+	order_index: 5
 	quests: [
 		{
-			title: "{chapter.6.quest.6.title}"
+			size: 2.0d
+			description: ["{chapter.6.quest.6.description.1}"]
+			id: "326EB9A775B8D791"
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -58,75 +61,66 @@
 			x: -5.0d
 			y: 2.0d
 			shape: "pentagon"
-			subtitle: "{chapter.6.quest.6.subtitle}"
-			description: ["{chapter.6.quest.6.description.1}"]
+			title: "{chapter.6.quest.6.title}"
 			dependencies: ["790B0567FF49110F"]
-			hide: true
-			size: 2.0d
-			id: "326EB9A775B8D791"
+			subtitle: "{chapter.6.quest.6.subtitle}"
 			tasks: [{
 				id: "50441F5A6EECD674"
 				type: "checkmark"
 				title: "{chapter.6.quest.6.task.1.title}"
 			}]
+			hide: true
 		}
 		{
-			title: "{chapter.6.quest.7.title}"
-			x: -3.0d
-			y: -2.0d
-			dependencies: ["7A2E9BE533B92DC0"]
-			id: "396D08757F6B9CC2"
 			tasks: [{
 				id: "3D7BCAD49F189A8F"
 				type: "item"
 				item: "ae2:calculation_processor_press"
 			}]
+			dependencies: ["7A2E9BE533B92DC0"]
+			id: "396D08757F6B9CC2"
+			y: -2.0d
+			x: -3.0d
+			title: "{chapter.6.quest.7.title}"
 		}
 		{
-			title: "{chapter.6.quest.8.title}"
-			x: -7.0d
-			y: -2.0d
-			dependencies: ["7A2E9BE533B92DC0"]
-			id: "1BF34B94FC7DCC2A"
 			tasks: [{
 				id: "61951F37EB189176"
 				type: "item"
 				item: "ae2:engineering_processor_press"
 			}]
+			dependencies: ["7A2E9BE533B92DC0"]
+			id: "1BF34B94FC7DCC2A"
+			y: -2.0d
+			x: -7.0d
+			title: "{chapter.6.quest.8.title}"
 		}
 		{
-			title: "{chapter.6.quest.9.title}"
-			x: -5.0d
-			y: -2.5d
-			dependencies: ["7A2E9BE533B92DC0"]
-			id: "2A2EAD3A06D7196D"
 			tasks: [{
 				id: "7B03E7692661F1C8"
 				type: "item"
 				item: "ae2:logic_processor_press"
 			}]
+			dependencies: ["7A2E9BE533B92DC0"]
+			id: "2A2EAD3A06D7196D"
+			y: -2.5d
+			x: -5.0d
+			title: "{chapter.6.quest.9.title}"
 		}
 		{
-			title: "{chapter.6.quest.10.title}"
-			x: -5.5d
-			y: 0.0d
-			subtitle: "{chapter.6.quest.10.subtitle}"
-			dependencies: ["326EB9A775B8D791"]
-			id: "43DF61335F1A3AD6"
 			tasks: [{
 				id: "6AF0153E0EEBA9AF"
 				type: "item"
 				item: "ae2:silicon_press"
 			}]
+			id: "43DF61335F1A3AD6"
+			x: -5.5d
+			y: 0.0d
+			title: "{chapter.6.quest.10.title}"
+			subtitle: "{chapter.6.quest.10.subtitle}"
+			dependencies: ["326EB9A775B8D791"]
 		}
 		{
-			title: "{chapter.6.quest.11.title}"
-			x: -4.5d
-			y: 0.0d
-			subtitle: "{chapter.6.quest.11.subtitle}"
-			dependencies: ["790B0567FF49110F"]
-			hide: true
-			id: "227EF17194467491"
 			tasks: [
 				{
 					id: "18B63463F0275B5F"
@@ -139,39 +133,37 @@
 					item: "ae2:silicon"
 				}
 			]
+			id: "227EF17194467491"
+			x: -4.5d
+			y: 0.0d
+			title: "{chapter.6.quest.11.title}"
+			subtitle: "{chapter.6.quest.11.subtitle}"
+			dependencies: ["790B0567FF49110F"]
+			hide: true
 		}
 		{
-			title: "{chapter.6.quest.12.title}"
-			x: -5.0d
-			y: -1.0d
-			subtitle: "{chapter.6.quest.12.subtitle}"
-			dependencies: [
-				"43DF61335F1A3AD6"
-				"227EF17194467491"
-			]
-			id: "7A2E9BE533B92DC0"
 			tasks: [{
 				id: "3EB0AE528455D7C3"
 				type: "item"
 				item: "ae2:printed_silicon"
 			}]
+			id: "7A2E9BE533B92DC0"
+			x: -5.0d
+			y: -1.0d
+			title: "{chapter.6.quest.12.title}"
 			rewards: [{
 				id: "21F1FC951D613A28"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 1659707140697346501L
 			}]
+			subtitle: "{chapter.6.quest.12.subtitle}"
+			dependencies: [
+				"43DF61335F1A3AD6"
+				"227EF17194467491"
+			]
 		}
 		{
-			title: "{chapter.6.quest.13.title}"
-			x: -5.0d
-			y: -4.0d
-			dependencies: [
-				"1BF34B94FC7DCC2A"
-				"2A2EAD3A06D7196D"
-				"396D08757F6B9CC2"
-			]
-			id: "7A9F59521C6A6B7E"
 			tasks: [
 				{
 					id: "31258B4E31DD644E"
@@ -189,65 +181,77 @@
 					item: "ae2:printed_logic_processor"
 				}
 			]
+			id: "7A9F59521C6A6B7E"
+			x: -5.0d
+			y: -4.0d
+			title: "{chapter.6.quest.13.title}"
 			rewards: [{
 				id: "6E823DE890AE8737"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 1659707140697346501L
 			}]
+			dependencies: [
+				"1BF34B94FC7DCC2A"
+				"2A2EAD3A06D7196D"
+				"396D08757F6B9CC2"
+			]
 		}
 		{
-			title: "{chapter.6.quest.23.title}"
-			x: -3.5d
-			y: 1.0d
-			description: ["{chapter.6.quest.23.description.1}"]
-			dependencies: ["326EB9A775B8D791"]
-			id: "432AF29897E50CDC"
 			tasks: [{
 				id: "5A0FC85522C49C1B"
 				type: "item"
 				item: "ae2:sky_stone_block"
 				count: 64L
 			}]
+			description: ["{chapter.6.quest.23.description.1}"]
+			id: "432AF29897E50CDC"
+			x: -3.5d
+			y: 1.0d
+			title: "{chapter.6.quest.23.title}"
 			rewards: [{
 				id: "3A10A6E1DB7FD45E"
 				type: "item"
 				item: "ae2:quartz_glass"
 				count: 32
 			}]
+			dependencies: ["326EB9A775B8D791"]
 		}
 		{
-			title: "{chapter.6.quest.2.title}"
-			x: -6.5d
-			y: -5.0d
-			subtitle: "{chapter.6.quest.2.subtitle}"
-			description: ["{chapter.6.quest.2.description}"]
-			hide_dependency_lines: true
-			dependencies: ["227EF17194467491"]
-			id: "47DD53AAA0680214"
 			tasks: [{
 				id: "4D52CABBB8594569"
 				type: "item"
 				item: "ae2:certus_quartz_dust"
 			}]
+			description: ["{chapter.6.quest.2.description}"]
+			id: "47DD53AAA0680214"
+			x: -6.5d
+			y: -5.0d
+			title: "{chapter.6.quest.2.title}"
+			subtitle: "{chapter.6.quest.2.subtitle}"
+			dependencies: ["227EF17194467491"]
+			hide_dependency_lines: true
 		}
 		{
-			x: -3.5d
-			y: -5.0d
-			subtitle: "{chapter.6.quest.3.subtitle}"
-			description: ["{chapter.6.quest.3.description}"]
-			hide_dependency_lines: true
-			dependencies: ["227EF17194467491"]
-			id: "5B72AC99C3A727CE"
 			tasks: [{
 				id: "40E04826DCB04BAE"
 				type: "item"
 				item: "kubejs:shimmer_bucket"
 			}]
+			description: ["{chapter.6.quest.3.description}"]
+			id: "5B72AC99C3A727CE"
+			x: -3.5d
+			y: -5.0d
+			subtitle: "{chapter.6.quest.3.subtitle}"
+			dependencies: ["227EF17194467491"]
+			hide_dependency_lines: true
 		}
 		{
-			x: -5.0d
-			y: -5.0d
+			tasks: [{
+				id: "69B7BA16EDCF980E"
+				type: "item"
+				item: "ae2:fluix_dust"
+			}]
 			description: ["{chapter.6.quest.1.description}"]
 			dependencies: [
 				"5B72AC99C3A727CE"
@@ -255,20 +259,10 @@
 				"7A9F59521C6A6B7E"
 			]
 			id: "2D5C0605E1EB21AD"
-			tasks: [{
-				id: "69B7BA16EDCF980E"
-				type: "item"
-				item: "ae2:fluix_dust"
-			}]
+			y: -5.0d
+			x: -5.0d
 		}
 		{
-			title: "{chapter.6.quest.4.title}"
-			icon: "ae2:calculation_processor"
-			x: -5.0d
-			y: -6.0d
-			subtitle: "{chapter.6.quest.4.subtitle}"
-			dependencies: ["2D5C0605E1EB21AD"]
-			id: "0F92EA9231F85D25"
 			tasks: [
 				{
 					id: "5187F319323F7DF6"
@@ -286,23 +280,21 @@
 					item: "ae2:engineering_processor"
 				}
 			]
+			icon: "ae2:calculation_processor"
+			id: "0F92EA9231F85D25"
+			x: -5.0d
+			y: -6.0d
+			title: "{chapter.6.quest.4.title}"
 			rewards: [{
 				id: "1AB151B3D87D7F16"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 1659707140697346501L
 			}]
+			subtitle: "{chapter.6.quest.4.subtitle}"
+			dependencies: ["2D5C0605E1EB21AD"]
 		}
 		{
-			title: "{chapter.6.quest.5.title}"
-			icon: "ae2:fluix_glass_cable"
-			x: -7.0d
-			y: -7.5d
-			subtitle: "{chapter.6.quest.5.subtitle}"
-			description: ["{chapter.6.quest.5.description}"]
-			dependencies: ["0F92EA9231F85D25"]
-			min_required_tasks: 1
-			id: "29DB1FA90A9FEE9C"
 			tasks: [
 				{
 					id: "385213E0E6E13C3B"
@@ -329,17 +321,17 @@
 					}
 				}
 			]
-		}
-		{
-			title: "{chapter.6.quest.14.title}"
-			icon: "ae2:singularity"
-			x: -5.5d
+			description: ["{chapter.6.quest.5.description}"]
+			id: "29DB1FA90A9FEE9C"
+			icon: "ae2:fluix_glass_cable"
+			x: -7.0d
 			y: -7.5d
-			subtitle: "{chapter.6.quest.14.subtitle}"
-			description: ["{chapter.6.quest.14.description}"]
+			title: "{chapter.6.quest.5.title}"
+			subtitle: "{chapter.6.quest.5.subtitle}"
 			dependencies: ["0F92EA9231F85D25"]
 			min_required_tasks: 1
-			id: "0C8063DF02E52A47"
+		}
+		{
 			tasks: [
 				{
 					id: "1041033622B3DE18"
@@ -352,23 +344,23 @@
 					item: "ae2:controller"
 				}
 			]
+			description: ["{chapter.6.quest.14.description}"]
+			id: "0C8063DF02E52A47"
+			icon: "ae2:singularity"
+			x: -5.5d
+			y: -7.5d
+			title: "{chapter.6.quest.14.title}"
 			rewards: [{
 				id: "318326E5895A9CE8"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 1659707140697346501L
 			}]
+			subtitle: "{chapter.6.quest.14.subtitle}"
+			dependencies: ["0F92EA9231F85D25"]
+			min_required_tasks: 1
 		}
 		{
-			title: "{chapter.6.quest.15.title}"
-			icon: "ae2:fluix_smart_dense_cable"
-			x: -7.0d
-			y: -8.5d
-			subtitle: "{chapter.6.quest.15.subtitle}"
-			description: ["{chapter.6.quest.15.description}"]
-			dependencies: ["29DB1FA90A9FEE9C"]
-			min_required_tasks: 1
-			id: "100EEA0D73CFFBE6"
 			tasks: [
 				{
 					id: "327BDCA382910B16"
@@ -381,70 +373,71 @@
 					item: "ae2:quartz_fiber"
 				}
 			]
+			description: ["{chapter.6.quest.15.description}"]
+			id: "100EEA0D73CFFBE6"
+			icon: "ae2:fluix_smart_dense_cable"
+			x: -7.0d
+			y: -8.5d
+			title: "{chapter.6.quest.15.title}"
+			subtitle: "{chapter.6.quest.15.subtitle}"
+			dependencies: ["29DB1FA90A9FEE9C"]
+			min_required_tasks: 1
 		}
 		{
-			title: "{chapter.6.quest.16.title}"
-			x: -5.5d
-			y: -8.5d
-			subtitle: "{chapter.6.quest.16.subtitle}"
-			description: ["{chapter.6.quest.16.description}"]
-			dependencies: ["0C8063DF02E52A47"]
-			id: "690FA10B8A532B16"
 			tasks: [{
 				id: "76F97AC9364E59F1"
 				type: "item"
 				item: "ae2:drive"
 			}]
+			description: ["{chapter.6.quest.16.description}"]
+			id: "690FA10B8A532B16"
+			x: -5.5d
+			y: -8.5d
+			title: "{chapter.6.quest.16.title}"
 			rewards: [{
 				id: "6176B67F733BC87D"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 1659707140697346501L
 			}]
+			subtitle: "{chapter.6.quest.16.subtitle}"
+			dependencies: ["0C8063DF02E52A47"]
 		}
 		{
-			title: "{chapter.6.quest.17.title}"
-			x: -7.0d
-			y: -10.0d
-			description: ["{chapter.6.quest.17.description}"]
-			dependencies: ["100EEA0D73CFFBE6"]
-			optional: true
-			id: "000CC99296151B0A"
 			tasks: [{
 				id: "5821DA7521DE3643"
 				type: "item"
 				item: "ae2:controller"
 			}]
+			description: ["{chapter.6.quest.17.description}"]
+			id: "000CC99296151B0A"
+			x: -7.0d
+			y: -10.0d
+			title: "{chapter.6.quest.17.title}"
 			rewards: [{
 				id: "3BF92FB03D799DBF"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 1659707140697346501L
 			}]
+			dependencies: ["100EEA0D73CFFBE6"]
+			optional: true
 		}
 		{
-			title: "{chapter.6.quest.18.title}"
-			x: -5.5d
-			y: -10.0d
-			subtitle: "{chapter.6.quest.18.subtitle}"
-			description: ["{chapter.6.quest.18.description}"]
-			dependencies: ["690FA10B8A532B16"]
-			id: "0C1BF4EAE2CC1729"
 			tasks: [{
 				id: "7342E1A9A92606C4"
 				type: "item"
 				item: "ae2:cell_workbench"
 			}]
+			description: ["{chapter.6.quest.18.description}"]
+			id: "0C1BF4EAE2CC1729"
+			x: -5.5d
+			y: -10.0d
+			title: "{chapter.6.quest.18.title}"
+			subtitle: "{chapter.6.quest.18.subtitle}"
+			dependencies: ["690FA10B8A532B16"]
 		}
 		{
-			title: "{chapter.6.quest.19.title}"
-			icon: "ae2:spatial_cell_component_2"
-			x: -4.0d
-			y: -10.0d
-			subtitle: "{chapter.6.quest.19.subtitle}"
-			description: ["{chapter.6.quest.19.description}"]
-			dependencies: ["5B6C345D10546F73"]
-			id: "63160FC511E0DBC8"
 			tasks: [
 				{
 					id: "37F94FF67FA2A6E0"
@@ -462,22 +455,22 @@
 					item: "ae2:spatial_anchor"
 				}
 			]
+			description: ["{chapter.6.quest.19.description}"]
+			id: "63160FC511E0DBC8"
+			icon: "ae2:spatial_cell_component_2"
+			x: -4.0d
+			y: -10.0d
+			title: "{chapter.6.quest.19.title}"
 			rewards: [{
 				id: "6C1BB0EEB500FC77"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 1659707140697346501L
 			}]
+			subtitle: "{chapter.6.quest.19.subtitle}"
+			dependencies: ["5B6C345D10546F73"]
 		}
 		{
-			title: "{chapter.6.quest.20.title}"
-			icon: "ae2:quantum_entangled_singularity"
-			x: -4.0d
-			y: -8.5d
-			subtitle: "{chapter.6.quest.20.subtitle}"
-			description: ["{chapter.6.quest.20.description}"]
-			dependencies: ["5B6C345D10546F73"]
-			id: "0EB3DE329825D112"
 			tasks: [
 				{
 					id: "79BBF32701A51574"
@@ -495,28 +488,30 @@
 					item: "ae2:quantum_entangled_singularity"
 				}
 			]
+			description: ["{chapter.6.quest.20.description}"]
+			id: "0EB3DE329825D112"
+			icon: "ae2:quantum_entangled_singularity"
+			x: -4.0d
+			y: -8.5d
+			title: "{chapter.6.quest.20.title}"
+			subtitle: "{chapter.6.quest.20.subtitle}"
+			dependencies: ["5B6C345D10546F73"]
 		}
 		{
-			title: "{chapter.6.quest.21.title}"
-			x: -4.0d
-			y: -7.5d
-			subtitle: "{chapter.6.quest.21.subtitle}"
-			description: ["{chapter.6.quest.21.description}"]
-			dependencies: ["0F92EA9231F85D25"]
-			id: "5B6C345D10546F73"
 			tasks: [{
 				id: "7B8883E4CC1BDD9F"
 				type: "item"
 				item: "ae2:me_p2p_tunnel"
 			}]
+			description: ["{chapter.6.quest.21.description}"]
+			id: "5B6C345D10546F73"
+			x: -4.0d
+			y: -7.5d
+			title: "{chapter.6.quest.21.title}"
+			subtitle: "{chapter.6.quest.21.subtitle}"
+			dependencies: ["0F92EA9231F85D25"]
 		}
 		{
-			x: -2.5d
-			y: -7.5d
-			subtitle: "{chapter.6.quest.22.subtitle}"
-			description: ["{chapter.6.quest.22.description}"]
-			dependencies: ["0F92EA9231F85D25"]
-			id: "4CCF69F7FB7BBDF4"
 			tasks: [
 				{
 					id: "0C6D3454BC201BA4"
@@ -534,21 +529,20 @@
 					item: "ae2:export_bus"
 				}
 			]
+			description: ["{chapter.6.quest.22.description}"]
+			id: "4CCF69F7FB7BBDF4"
+			x: -2.5d
+			y: -7.5d
 			rewards: [{
 				id: "25283169F880A912"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 1659707140697346501L
 			}]
+			subtitle: "{chapter.6.quest.22.subtitle}"
+			dependencies: ["0F92EA9231F85D25"]
 		}
 		{
-			icon: "minecraft:redstone_torch"
-			x: -2.5d
-			y: -8.5d
-			description: ["{chapter.6.quest.24.description}"]
-			dependencies: ["4CCF69F7FB7BBDF4"]
-			min_required_tasks: 1
-			id: "1DCCC865A14BAC1E"
 			tasks: [
 				{
 					id: "7AA1609EE2EF9629"
@@ -561,9 +555,21 @@
 					item: "ae2:redstone_card"
 				}
 			]
+			description: ["{chapter.6.quest.24.description}"]
+			icon: "minecraft:redstone_torch"
+			id: "1DCCC865A14BAC1E"
+			x: -2.5d
+			y: -8.5d
+			dependencies: ["4CCF69F7FB7BBDF4"]
+			min_required_tasks: 1
 		}
 		{
-			title: "{chapter.6.quest.25.title}"
+			tasks: [{
+				id: "66FEC24EDD870128"
+				type: "checkmark"
+				title: "{chapter.6.quest.25.task.1.title}"
+			}]
+			id: "07A6E8FD5F4961E0"
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -573,16 +579,10 @@
 			}
 			x: -7.5d
 			y: 1.0d
+			title: "{chapter.6.quest.25.title}"
 			subtitle: "{chapter.6.quest.25.subtitle}"
-			hide_dependency_lines: true
 			dependencies: ["326EB9A775B8D791"]
-			id: "07A6E8FD5F4961E0"
-			tasks: [{
-				id: "66FEC24EDD870128"
-				type: "checkmark"
-				title: "{chapter.6.quest.25.task.1.title}"
-			}]
+			hide_dependency_lines: true
 		}
 	]
-	quest_links: [ ]
 }

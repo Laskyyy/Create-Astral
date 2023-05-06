@@ -11,13 +11,13 @@ onEvent("recipes", (event) => {
 function CompactingRecipes(event) {
 
     const recipeList = [
-        ["create:ochrum", "minecraft:sandstone", "minecraft:dripstone_block", { fluid: "create:honey", amount: 8100 }],
-        ["create:crimsite", "minecraft:tuff", "minecraft:red_sand", { fluid: "tconstruct:blood", amount: 8100 }],
-        ["create:limestone", "minecraft:calcite", "minecraft:clay", { fluid: "milk:still_milk", amount: 8100 }],
-        ["create:veridium", "minecraft:basalt", "minecraft:slime_ball", { fluid: "minecraft:lava", amount: 8100 }],
-        ["create:asurine", "minecraft:prismarine", "minecraft:kelp", { fluid: "minecraft:water", amount: 8100 }],
-        ["create:scorchia", "minecraft:blackstone", "ad_astra:moon_sand", { fluid: "tconstruct:blazing_blood", amount: 8100 }],
-        ["create:scoria", "tconstruct:seared_stone", "minecraft:soul_soil", { fluid: "create:chocolate", amount: 8100 }],
+        ["create:ochrum", "minecraft:sandstone", "minecraft:dripstone_block", { fluid: "create:honey", amount: 8100 }, "minecraft:yellow_dye"],
+        ["create:crimsite", "minecraft:tuff", "minecraft:red_sand", { fluid: "tconstruct:blood", amount: 8100 }, "minecraft:red_dye"],
+        ["create:limestone", "minecraft:calcite", "minecraft:clay", { fluid: "milk:still_milk", amount: 8100 }, "minecraft:white_dye"],
+        ["create:veridium", "minecraft:basalt", "minecraft:slime_ball", { fluid: "minecraft:lava", amount: 8100 }, "minecraft:green_dye"],
+        ["create:asurine", "minecraft:prismarine", "minecraft:kelp", { fluid: "minecraft:water", amount: 8100 }, "minecraft:blue_dye"],
+        ["create:scorchia", "minecraft:blackstone", "ad_astra:moon_sand", { fluid: "tconstruct:blazing_blood", amount: 8100 }, "minecraft:black_dye"],
+        ["create:scoria", "tconstruct:seared_stone", "minecraft:soul_soil", { fluid: "create:chocolate", amount: 8100 }, "minecraft:brown_dye"],
 
         
     ];
@@ -29,7 +29,8 @@ function CompactingRecipes(event) {
                 entry[1],
                 entry[2],
                 entry[3],
-                "minecraft:flint"
+                entry[4]
+
             ],
             heat: "heated",
             time: 400,
@@ -56,7 +57,7 @@ function crushingRecipes(event) {
                 ["minecraft:raw_gold", 1],
                 ["techreborn:glowstone_small_dust", 0.9],
                 ["minecraft:sand", 0.5],
-                ["minecraft:yellow_dye", 0.25],
+                ["ad_astra:desh_nugget", 0.4],
             ],
         },
         {
@@ -72,6 +73,7 @@ function crushingRecipes(event) {
             input: "create:limestone",
             outputs: [
                 ["techreborn:raw_tin", 1],
+                ["createastral:lime", 1],
                 ["createastral:lime", 0.9],
                 ["minecraft:quartz", 0.5],
                 ["minecraft:andesite", 0.25],
@@ -94,7 +96,7 @@ function crushingRecipes(event) {
                 ["minecraft:lapis_lazuli", 0.5],
                 ["techreborn:lazurite_small_dust", 0.9],
                 ["minecraft:blue_dye", 0.25],
-                ["tconstruct:raw_cobalt", 0.15],
+                ["tconstruct:raw_cobalt", 0.1],
                 ["minecraft:prismarine_crystals", 0.2],
             ],
         },

@@ -1,18 +1,19 @@
 {
-	id: "58BE3D7A86394AEE"
+	quest_links: [ ]
 	group: ""
-	order_index: 9
+	id: "58BE3D7A86394AEE"
 	filename: "test"
-	title: "Chromatic Matrix"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	title: "Chromatic Matrix"
+	order_index: 8
 	quests: [
 		{
-			x: -2.5d
-			y: 1.25d
-			subtitle: "Still unsure on where the base starting point for mass producing materials should be, as if its all cobblegens then nothing changes and peeps are still making 100x tango cobblegens, just with more processing in between"
 			size: 2.5d
+			subtitle: "Still unsure on where the base starting point for mass producing materials should be, as if its all cobblegens then nothing changes and peeps are still making 100x tango cobblegens, just with more processing in between"
 			id: "7EEEA1139BA87F2D"
+			y: 1.25d
+			x: -2.5d
 			tasks: [{
 				id: "194151F76EAD53FF"
 				type: "custom"
@@ -42,16 +43,16 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: -2.0d
-			shape: "hexagon"
-			id: "5A1F58F23748C37C"
 			tasks: [{
 				id: "1BE50DA34F600F1D"
 				type: "item"
 				item: "minecraft:andesite"
 				count: 64L
 			}]
+			id: "5A1F58F23748C37C"
+			shape: "hexagon"
+			y: -2.0d
+			x: -1.0d
 		}
 		{
 			x: -2.0d
@@ -968,5 +969,4 @@
 			}]
 		}
 	]
-	quest_links: [ ]
 }

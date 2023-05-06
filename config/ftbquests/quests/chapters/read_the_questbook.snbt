@@ -1,26 +1,35 @@
 {
-	id: "6ADD71B3CD955A72"
-	group: ""
-	order_index: 10
-	filename: "read_the_questbook"
-	title: "Read the Questbook!"
-	icon: "ftbquests:book"
-	default_quest_shape: ""
+	quest_links: [ ]
 	default_hide_dependency_lines: false
+	group: ""
+	id: "6ADD71B3CD955A72"
+	filename: "read_the_questbook"
+	default_quest_shape: ""
+	icon: "ftbquests:book"
+	title: "Read the Questbook!"
+	order_index: 9
 	quests: [
 		{
-			title: "Where to find all the ores."
-			icon: "ad_astra:raw_desh"
-			x: -6.5d
-			y: -1.0d
-			id: "5B4CEB9AFD04F7F8"
 			tasks: [{
 				id: "1649F006714BA24F"
 				type: "checkmark"
 			}]
+			id: "5B4CEB9AFD04F7F8"
+			y: -1.0d
+			x: -6.5d
+			icon: "ad_astra:raw_desh"
+			title: "Where to find all the ores."
 		}
 		{
-			title: "Vanilla Tools"
+			tasks: [{
+				id: "00029B4CC32B7DCD"
+				type: "checkmark"
+			}]
+			description: [
+				"Regular stone/wooden tools can still be obtained through the fallback recipe by stonecutting andesite compound."
+				""
+				"These are still required in a few edge cases, such as the hardcoded loot tables for drinkbeer trading."
+			]
 			icon: {
 				id: "minecraft:wooden_axe"
 				Count: 1b
@@ -28,48 +37,35 @@
 					Damage: 0
 				}
 			}
+			id: "39FDFD195622958E"
 			x: -5.5d
 			y: -1.0d
-			description: [
-				"Regular stone/wooden tools can still be obtained through the fallback recipe by stonecutting andesite compound."
-				""
-				"These are still required in a few edge cases, such as the hardcoded loot tables for drinkbeer trading."
-			]
-			id: "39FDFD195622958E"
-			tasks: [{
-				id: "00029B4CC32B7DCD"
-				type: "checkmark"
-			}]
+			title: "Vanilla Tools"
 		}
 		{
-			title: "A solution to quests not triggering."
-			icon: "tconstruct:crafting_station"
-			x: -6.5d
-			y: 0.0d
-			id: "70731526C9551DD6"
 			tasks: [{
 				id: "0CA5BD5D363FE8BA"
 				type: "checkmark"
 			}]
+			id: "70731526C9551DD6"
+			y: 0.0d
+			x: -6.5d
+			icon: "tconstruct:crafting_station"
+			title: "A solution to quests not triggering."
 		}
 		{
-			title: "Hidden Chapters."
-			icon: "createastral:subatomic_ingot"
-			x: -5.5d
-			y: 0.0d
-			description: ["By default, the only chapters displayed in the quest book are those which have been unlocked."]
-			id: "604EEAD6E9E5D671"
 			tasks: [{
 				id: "4C1E4BD27BAAEDF0"
 				type: "checkmark"
 			}]
+			description: ["By default, the only chapters displayed in the quest book are those which have been unlocked."]
+			icon: "createastral:subatomic_ingot"
+			id: "604EEAD6E9E5D671"
+			x: -5.5d
+			y: 0.0d
+			title: "Hidden Chapters."
 		}
 		{
-			title: "Common Server Lag Causes"
-			icon: "create:brass_funnel"
-			x: -7.5d
-			y: -1.0d
-			id: "120F8BAE32A271B8"
 			tasks: [
 				{
 					id: "54D46298535515CD"
@@ -81,9 +77,20 @@
 					item: "create:item_vault"
 				}
 			]
+			id: "120F8BAE32A271B8"
+			y: -1.0d
+			x: -7.5d
+			icon: "create:brass_funnel"
+			title: "Common Server Lag Causes"
 		}
 		{
-			title: "Villager FAQ"
+			tasks: [{
+				id: "28660DD237438E78"
+				type: "checkmark"
+			}]
+			id: "01438CFAE0491B76"
+			y: 0.0d
+			x: -7.5d
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -91,113 +98,101 @@
 					Icon: "minecraft:textures/entity_icon/villager/cleric.png"
 				}
 			}
-			x: -7.5d
-			y: 0.0d
-			id: "01438CFAE0491B76"
-			tasks: [{
-				id: "28660DD237438E78"
-				type: "checkmark"
-			}]
+			title: "Villager FAQ"
 		}
 		{
-			title: "The smeltery is disabled!"
-			icon: "tconstruct:smeltery_controller"
-			x: -8.5d
-			y: -1.0d
-			id: "671B581118263B3A"
 			tasks: [{
 				id: "26274474BC591ECF"
 				type: "checkmark"
 			}]
+			id: "671B581118263B3A"
+			y: -1.0d
+			x: -8.5d
+			icon: "tconstruct:smeltery_controller"
+			title: "The smeltery is disabled!"
 		}
 		{
-			title: "Patterns?"
-			icon: "ae2:pattern_encoding_terminal"
-			x: -8.5d
-			y: 0.0d
-			id: "6C4B3D1FD0CA9903"
 			tasks: [{
 				id: "5687C491EEC25E38"
 				type: "checkmark"
 			}]
+			id: "6C4B3D1FD0CA9903"
+			y: 0.0d
+			x: -8.5d
+			icon: "ae2:pattern_encoding_terminal"
+			title: "Patterns?"
 		}
 		{
-			title: "Item Transport"
-			icon: "create:schedule"
-			x: -9.5d
-			y: -1.0d
-			id: "0AC8216D9E5F1131"
 			tasks: [{
 				id: "5CB0331F5A76150B"
 				type: "checkmark"
 			}]
+			id: "0AC8216D9E5F1131"
+			y: -1.0d
+			x: -9.5d
+			icon: "create:schedule"
+			title: "Item Transport"
 		}
 		{
-			title: "How do I input to storage units?"
-			icon: "techreborn:crude_storage_unit"
-			x: -9.5d
-			y: 0.0d
-			id: "620C9147A1AD808F"
 			tasks: [{
 				id: "6EBA920A8E37F431"
 				type: "checkmark"
 			}]
+			id: "620C9147A1AD808F"
+			y: 0.0d
+			x: -9.5d
+			icon: "techreborn:crude_storage_unit"
+			title: "How do I input to storage units?"
 		}
 		{
-			title: "Brass Info"
-			icon: "create:brass_ingot"
-			x: -12.0d
-			y: -1.0d
-			id: "441EA3A4F4DDC6A7"
 			tasks: [{
 				id: "5EF5138C4FFA1D40"
 				type: "checkmark"
 			}]
+			id: "441EA3A4F4DDC6A7"
+			y: -1.0d
+			x: -12.0d
+			icon: "create:brass_ingot"
+			title: "Brass Info"
 		}
 		{
-			title: "Superheating FAQ"
-			icon: "create:blaze_burner"
-			x: -13.0d
-			y: -1.0d
-			id: "6F757AA5D8206995"
 			tasks: [{
 				id: "3EF6EF90A1BA32E9"
 				type: "checkmark"
 			}]
+			id: "6F757AA5D8206995"
+			y: -1.0d
+			x: -13.0d
+			icon: "create:blaze_burner"
+			title: "Superheating FAQ"
 		}
 		{
-			title: "Where are my portals?"
-			x: -13.0d
-			y: 0.0d
-			id: "50A67A22E5C03589"
 			tasks: [{
 				id: "37CAB133CF6D08E5"
 				type: "dimension"
 				dimension: "minecraft:overworld"
 			}]
+			id: "50A67A22E5C03589"
+			y: 0.0d
+			x: -13.0d
+			title: "Where are my portals?"
 		}
 		{
-			title: "Why no moon rocket?"
+			tasks: [{
+				id: "338D8F2C593FE97E"
+				type: "checkmark"
+			}]
+			id: "2567CAC0A184AC8F"
+			y: 0.0d
+			x: -12.0d
 			icon: {
 				id: "ad_astra:tier_1_rocket"
 				Count: 1b
 				tag: { }
 			}
-			x: -12.0d
-			y: 0.0d
-			id: "2567CAC0A184AC8F"
-			tasks: [{
-				id: "338D8F2C593FE97E"
-				type: "checkmark"
-			}]
+			title: "Why no moon rocket?"
 		}
 		{
-			title: "Repairing your space suit."
-			icon: "create:sturdy_sheet"
-			x: -12.0d
-			y: 1.5d
-			min_required_tasks: 1
-			id: "2B6E9439A22D1AB2"
 			tasks: [
 				{
 					id: "5C980945D0A3BF50"
@@ -229,20 +224,32 @@
 					}
 				}
 			]
+			icon: "create:sturdy_sheet"
+			id: "2B6E9439A22D1AB2"
+			x: -12.0d
+			y: 1.5d
+			title: "Repairing your space suit."
+			min_required_tasks: 1
 		}
 		{
-			title: "Advice for the first Mars expedition!"
-			icon: "ad_astra:mars_globe"
-			x: -10.0d
-			y: 1.5d
-			id: "52D173C7742A4057"
 			tasks: [{
 				id: "1B6EFBEC2B3E6380"
 				type: "checkmark"
 			}]
+			id: "52D173C7742A4057"
+			y: 1.5d
+			x: -10.0d
+			icon: "ad_astra:mars_globe"
+			title: "Advice for the first Mars expedition!"
 		}
 		{
-			title: "Planets."
+			tasks: [{
+				id: "2EFCE5ED7007E771"
+				type: "checkmark"
+			}]
+			id: "7A00CE5071B7FA9C"
+			y: 1.5d
+			x: -11.0d
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -250,13 +257,7 @@
 					Icon: "ad_astra:textures/gui/space_station_icon.png"
 				}
 			}
-			x: -11.0d
-			y: 1.5d
-			id: "7A00CE5071B7FA9C"
-			tasks: [{
-				id: "2EFCE5ED7007E771"
-				type: "checkmark"
-			}]
+			title: "Planets."
 		}
 		{
 			x: -9.0d
@@ -277,12 +278,12 @@
 			}]
 		}
 		{
+			size: 3.0d
 			x: -9.5d
+			id: "70E54AE7E953CDB2"
 			y: -3.5d
 			shape: "gear"
 			subtitle: "Many recipes have been *heavily* changed from the regular game."
-			size: 3.0d
-			id: "70E54AE7E953CDB2"
 			tasks: [{
 				id: "0FFF0F95A45D6A56"
 				type: "item"
@@ -290,5 +291,4 @@
 			}]
 		}
 	]
-	quest_links: [ ]
 }

@@ -2982,11 +2982,11 @@ hash = "bf5ce1dbb09a11c1ce1b4cd6e0692662140c2c10888ad813199ce5a29043ff47"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/c/tags/items/tools/pickaxes.json"
-hash = "f21d2300dcaa612f52dee4243d1a94339297a4eac5b6524d34fa657a803407a0"
+hash = "0e7cea2cb9df90d06dfbfbd41797ce771fafc33e8ccd620de53aad2ef1f2d97b"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/c/tags/items/tools/shovels.json"
-hash = "bf651f498e7d276c85b38066b6f1fd0aa3d39f07d18fd5007c1c327a64e5a641"
+hash = "da245d34919406ee5ba5733ebdd34b0971dd820b224c38209aa9fc920b08251a"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/c/tags/items/zinc_blocks.json"
