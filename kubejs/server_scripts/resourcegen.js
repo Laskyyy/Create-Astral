@@ -32,7 +32,7 @@ function CompactingRecipes(event) {
                 entry[4]
 
             ],
-            heat: "heated",
+            heat: "",
             time: 400,
         };
     
