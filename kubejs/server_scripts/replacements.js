@@ -160,6 +160,16 @@ onEvent("recipes", (event) => {
             "create:polished_rose_quartz",
         ],
         [
+            { output: "create:content_observer" },
+            "create:electron_tube",
+            "minecraft:redstone_torch",
+        ],
+        [
+            { output: "create:content_observer" },
+            "create:brass_casing",
+            "create:railway_casing",
+        ],
+        [
             { output: "ad_astra:space_suit" },
             "ad_astra:steel_ingot",
             "create:sturdy_sheet",
