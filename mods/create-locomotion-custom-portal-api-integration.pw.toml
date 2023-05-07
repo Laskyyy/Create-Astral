@@ -1,0 +1,13 @@
+name = "Create Locomotion & Custom Portal API Integration"
+filename = "customportalapiintegrations-1.0.0+1.18.2.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+hash-format = "sha1"
+hash = "4cf1b4f42486f02cba9f2eac43f63b350ee55c35"
+
+[update]
+[update.curseforge]
+file-id = 4525214
+project-id = 858830
