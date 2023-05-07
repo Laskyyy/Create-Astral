@@ -24,6 +24,94 @@ onEvent("tags.blocks", (event) => {
 
 // constants
 
+// Farmer's Delight cutting board changes
+function farmersDelightCuttingChanges(event) {
+    // Tech Reborn Rubber Log
+    event.custom({
+        type: "farmersdelight:cutting",
+        ingredients: [
+            { item: "techreborn:rubber_log" }
+        ],
+        tool: {
+            type: "farmersdelight:tool",
+            tag: "c:tools/axes"
+        },
+        result: [
+            { item: "techreborn:rubber_log_stripped" },
+            { item: "farmersdelight:tree_bark" }
+        ],
+        sound: "minecraft:item.axe.strip"
+    });
+
+    // Ad Astra Glacian Log
+    event.custom({
+        type: "farmersdelight:cutting",
+        ingredients: [
+            { item: "ad_astra:glacian_log" }
+        ],
+        tool: {
+            type: "farmersdelight:tool",
+            tag: "c:tools/axes"
+        },
+        result: [
+            { item: "ad_astra:stripped_glacian_log" },
+            { item: "farmersdelight:tree_bark" }
+        ],
+        sound: "minecraft:item.axe.strip"
+    });
+
+    // Tinkers' Construct Bloodshroom Log
+    event.custom({
+        type: "farmersdelight:cutting",
+        ingredients: [
+            { item: "tconstruct:bloodshroom_log" }
+        ],
+        tool: {
+            type: "farmersdelight:tool",
+            tag: "c:tools/axes"
+        },
+        result: [
+            { item: "tconstruct:stripped_bloodshroom_log" },
+            { item: "farmersdelight:tree_bark" }
+        ],
+        sound: "minecraft:item.axe.strip"
+    });
+
+    // Tinkers' Construct Greenheart Log
+    event.custom({
+        type: "farmersdelight:cutting",
+        ingredients: [
+            { item: "tconstruct:greenheart_log" }
+        ],
+        tool: {
+            type: "farmersdelight:tool",
+            tag: "c:tools/axes"
+        },
+        result: [
+            { item: "tconstruct:stripped_greenheart_log" },
+            { item: "farmersdelight:tree_bark" }
+        ],
+        sound: "minecraft:item.axe.strip"
+    });
+
+    // Tinkers' Construct Skyroot Log
+    event.custom({
+        type: "farmersdelight:cutting",
+        ingredients: [
+            { item: "tconstruct:skyroot_log" }
+        ],
+        tool: {
+            type: "farmersdelight:tool",
+            tag: "c:tools/axes"
+        },
+        result: [
+            { item: "tconstruct:stripped_skyroot_log" },
+            { item: "farmersdelight:tree_bark" }
+        ],
+        sound: "minecraft:item.axe.strip"
+    });
+}
+
 // Includes some "ore alchemy" and other misc blocks like andeste alloy blocks
 function lizardMiscChanges(event) {
     // Implementing Andesite Alloy Block
@@ -314,6 +402,7 @@ function lizardChanges(event) {
 onEvent("recipes", (event) => {
     // Lizard's changes
     lizardChanges(event);
+    farmersDelightCuttingChanges(event);
 
     /////// TECH REBORN ACTUAL RECIPES //////
 
