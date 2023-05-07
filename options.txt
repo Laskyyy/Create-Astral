@@ -36,8 +36,8 @@ ao:2
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:true
-resourcePacks:["vanilla","compressor","Fabric Mods","loadmyresources.hiddenpack","file/BetterVanillaBuildingV2.83.1","file/andesite-chests-crafting-table-1-19","file/Reim GUI + Default Dark","file/Fresh-Animations-CEM-fork-main","file/Created--Updated"]
-incompatibleResourcePacks:["file/BetterVanillaBuildingV2.83.1","file/andesite-chests-crafting-table-1-19","file/Reim GUI + Default Dark","file/Fresh-Animations-CEM-fork-main","file/Created--Updated"]
+resourcePacks:["vanilla","compressor","file/BetterVanillaBuildingV2.86.1","Fabric Mods","loadmyresources.hiddenpack","file/andesite-chests-crafting-table-1-19","file/Reim GUI + Default Dark","file/Fresh-Animations-CEM-fork-main","file/ComputerCreate","Create Legacy Copper","file/Created--Updated"]
+incompatibleResourcePacks:["file/BetterVanillaBuildingV2.86.1","file/andesite-chests-crafting-table-1-19","file/Reim GUI + Default Dark","file/Fresh-Animations-CEM-fork-main","file/Created--Updated"]
 lastServer:
 lang:en_us
 soundDevice:
