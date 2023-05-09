@@ -284,6 +284,11 @@ onEvent('block.registry', event => {
       .hardness(4)
       .resistance(1200)
       .tagBlock('minecraft:mineable/pickaxe')
+
+  event.create('createastral:charcoal_block', 'basic')
+      .hardness(4)
+      .tagBlock('minecraft:mineable/pickaxe')
+      .material('stone')    
  })
 
  ///// ADD BURN TIME TO FUEL /////
@@ -291,6 +296,9 @@ onEvent("item.modification", event => {
 
 	event.modify('create:blaze_cake', item => {
     item.burnTime = 50000
+  })
+  event.modify('createastral:charcoal_block', item => {
+    item.burnTime = 2000
   })
 
 

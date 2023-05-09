@@ -35,6 +35,14 @@ function lizardMiscChanges(event) {
         A: "createastral:andesite_alloy_block",
     });
 
+    event.shaped("createastral:charcoal_block", ["AAA", "AAA", "AAA"], {
+        A: "minecraft:charcoal",
+    });
+
+    event.shaped("9x minecraft:charcoal", ["A"], {
+        A: "createastral:charcoal_block",
+    });
+
     // Make some machine recipes more interesting
 
     event.shaped("techreborn:grinder", ["ABA", "CDC", " E "], {
