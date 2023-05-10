@@ -42,3 +42,25 @@ onEvent('rei.add.items', event => {
     event.add(Item.of('create:shadow_steel'));
     event.add(Item.of('create:chromatic_compound'));
   })
+
+function getPlayerStepHeight(player) {
+  const leggingsTag = player.getLegsArmorItem().toNBT().tag;
+  if (leggingsTag === undefined) return 0.6;
+
+  const leggingsModifiers = leggingsTag.tic_modifiers;
+  if (leggingsModifiers === undefined) return 0.6;
+
+  const stepUp = leggingsModifiers.filter(mod => mod.name == "tconstruct:step_up")[0];
+  if (stepUp !== undefined && stepUp.level > 0) {
+    return 1.1;
+  } else {
+    return 0.6;
+  }
+}
+
+onEvent("client.tick", (event) => {
+  const player = event.getPlayer();
+  if (player === undefined) return;
+
+  player.stepHeight = getPlayerStepHeight(player);
+});
