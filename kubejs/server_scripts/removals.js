@@ -39,6 +39,7 @@ onEvent("recipes", (event) => {
         { output: "techreborn:quantum_leggings" },
         { output: "techreborn:quantum_boots" },
         { output: "techreborn:copper_nugget" },
+        { output: "techreborn:steel_plate" },
 
         {
             type: "techreborn:grinder",
