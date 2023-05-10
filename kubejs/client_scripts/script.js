@@ -18,12 +18,6 @@ onEvent("rei.group", (event) => {
        	Ingredient.of('@chipped').getItemIds(),
       ]);
 
-    event.groupItems("kubejs:rei_groups/tinker", "Tinkers", [
-        Ingredient.of('@tconstruct').getItemIds(),
-      ]);
-
-
-
 
     const useNbt = ['potion', 'enchanted_book', 'splash_potion', 'tipped_arrow', 'lingering_potion']
 

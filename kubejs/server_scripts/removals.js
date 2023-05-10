@@ -120,7 +120,6 @@ onEvent("recipes", (event) => {
         { output: "create:cogwheel" },
         { output: "create:large_cogwheel" },
         { output: "create:copper_casing" },
-        { output: "create:blaze_cake" },
         {
             output: "create:andesite_alloy",
             input: "minecraft:andesite",
@@ -130,6 +129,9 @@ onEvent("recipes", (event) => {
         { type: "create:milling", output: "minecraft:flint" },
         { type: "create:crushing", input: "minecraft:blaze_rod" },
         { type: "create:crushing", input: "minecraft:bone" },
+        { type: "create:crushing", input: "minecraft:tuff" },
+        { type: "create:milling", input: "minecraft:tuff" },
+        { type: "create:milling", input: "minecraft:basalt" },
         { type: "create:crushing", input: "minecraft:lapis_lazuli" },
         { type: "create:crushing", input: "minecraft:diamond" },
         { type: "create:crushing", input: "minecraft:diorite" },
@@ -340,6 +342,23 @@ onEvent("recipes", (event) => {
 				{ output: "buildinggadgets:gadget_building" },
 				{ output: "buildinggadgets:gadget_copy_paste" },
 
+        // Yttr
+        { output: "yttr:chute" },
+        { output: "yttr:rafter" },
+        { output: "yttr:centrifuge" },
+        { output: "yttr:dopper" },
+        { output: "yttr:aware_hopper" },
+        { output: "yttr:levitation_chamber" },
+        { output: "yttr:skeletal_sorter_right_handed" },
+        { output: "yttr:skeletal_sorter_left_handed" },
+        { output: "yttr:rifle_reinforced" },
+        { output: "yttr:rifle_overclocked" },
+        { output: "yttr:shifter" },
+        { output: "yttr:projector" },
+        { output: "yttr:spatula" },
+        { output: "yttr:bedrock_smasher" },
+        { output: "yttr:effector" },
+
         // Minecraft
 
         { mod: "minecraft", output: "minecraft:granite" },
@@ -388,8 +407,12 @@ onEvent("recipes", (event) => {
         { output: "minecraft:crossbow" },
         { output: "minecraft:arrow" },
         { output: "minecraft:ender_eye" },
-        { output: "minecraft:gold_nugget",  output: "minecraft:soul_sand" },
-        { output: "minecraft:gold_nugget",  output: "minecraft:soul_soil" },
+        { output: "minecraft:diamond_ore" },
+        { output: "minecraft:emerald_ore" },
+        { output: "minecraft:blackstone" },
+        { output: "minecraft:gold_nugget",  input: "minecraft:soul_sand" },
+        { output: "minecraft:gravel",  input: "techreborn:granite_dust" },
+        { output: "minecraft:gold_nugget",  input: "minecraft:soul_soil" },
         { input: "minecraft:crying_obsidian" },
         {
             input: "minecraft:copper_block",

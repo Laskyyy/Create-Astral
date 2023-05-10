@@ -28,15 +28,16 @@ function millingRecipes(event) {
         ["create:limestone", "techreborn:raw_tin", 0.5],
         ["create:scorchia", "create:raw_zinc", 0.4],
         ["create:scoria", "minecraft:magma_block", 1],
-        ["minecraft:tuff", "minecraft:charcoal", 0.33],
         ["minecraft:blackstone", "create:powdered_obsidian", 0.2],
         ["minecraft:basalt", "techreborn:andesite_dust", 0.4],
-        ["minecraft:tuff", "2x minecraft:iron_nugget", 1],
+        ["minecraft:tuff", "minecraft:iron_nugget", 1],
         ["minecraft:dripstone_block", "2x minecraft:golden_nugget", 1],
         ["minecraft:basalt", "create:copper_nugget", 0.4],
-        ["minecratf:blackstone", "create:zinc_nugget", 0.7],
-        ["minecraft:andesite", "techreborn:tin_nugget", 0.9],
-        ["minecraft:granite", "create:copper_nugget", 0.8],
+        ["minecratf:blackstone", "create:zinc_nugget", 0.5],
+        ["minecraft:andesite", "techreborn:tin_nugget", 0.5],
+        ["minecraft:granite", "create:copper_nugget", 0.5],
+        ["minecraft:flint", "techreborn:andesite_dust", 1],
+        ["minecraft:iron_nugget", "techreborn:andesite_dust", 0.75],
     ].forEach((recipe) => {
         event.recipes.createMilling(
             [Item.of(recipe[1]).withChance(recipe[2])],
@@ -62,7 +63,7 @@ function crushingRecipes(event) {
             input: "minecraft:cobbled_deepslate",
             outputs: [
                 ["create:zinc_nugget", 0.0015],
-                ["minecraft:coal", 0.004]
+                ["minecraft:coal", 0.004],
             ],
         },
         //Diorite,Granite,Andesite Crushing
@@ -71,8 +72,16 @@ function crushingRecipes(event) {
             outputs: [
                 ["minecraft:quartz", 1],
                 ["techreborn:diorite_dust", 1],
-                ["techreborn:diorite_dust", 0.5],
+                ["techreborn:andesite_dust", 1],
                 ["minecraft:quartz", 0.25],
+            ],
+        },
+        {
+            input: "minecraft:flint",
+            outputs: [
+                ["techreborn:andesite_dust", 1],
+                ["techreborn:flint_dust", 0.5],
+
             ],
         },
         {
@@ -1118,7 +1127,7 @@ function fillingRecipes(event) {
         {
             input: "create:blaze_cake_base",
             output: "create:blaze_cake",
-            fluid: "tconstruct:blazing_blood",
+            fluid: "kubejs:hellfire",
             amount: 20250,
         },
         {
@@ -1337,17 +1346,6 @@ function mixingRecipes(event) {
             time: 400,
         },
         {
-            output: "techreborn:nuke",
-            input: [
-                "techreborn:industrial_machine_frame",
-                { fluid: "kubejs:plasma_fluid", amount: 81000 },
-                "3x createastral:subatomic_ingot",
-                "create:linked_controller",
-            ],
-            heat: "superheated",
-            time: 500,
-        },
-        {
             output: Fluid.of("tconstruct:molten_brass", 18000),
             input: ["minecraft:copper_ingot", "create:zinc_ingot"],
             heat: "heated",
@@ -1441,16 +1439,6 @@ function mixingRecipes(event) {
             ],
             heat: "heated",
             time: 40,
-        },
-        {
-            output: "3x create:blaze_cake_base",
-            input: [
-                "tconstruct:ender_slime_ball",
-                "tconstruct:ichor_slime_ball",
-                "ad_astra:cheese",
-            ],
-            heat: "heated",
-            time: 300,
         },
         {
             output: Fluid.of("tconstruct:molten_pig_iron", 9000),
@@ -1551,6 +1539,13 @@ function mixingRecipes(event) {
                 "create:andesite_alloy",
                 "create:zinc_ingot",
                 "8x minecraft:gravel",
+            ],
+        },
+        {
+            output: "minecraft:tuff",
+            input: [
+                "minecraft:basalt",
+                "minecraft:cobblestone",
             ],
         },
         {

@@ -120,9 +120,9 @@ onEvent("recipes", (event) => {
             "create:sturdy_sheet",
         ],
         [
-            { output: "toms_storage:ts.adv_wireless_terminal" },
-            "minecraft:netherite_ingot",
-            "tconstruct:hepatizon_ingot",
+            { output: "yttr:giant_cobblestone" },
+            "minecraft:cobblestone",
+            "compressor:triple_compressed_cobblestone",
         ],
         [
             { output: "createaddition:accumulator" },
@@ -200,11 +200,6 @@ onEvent("recipes", (event) => {
             "ad_astra:iron_plate",
         ],
         [
-            { output: "ad_astra:ostrum_tank" },
-            "minecraft:bucket",
-            "tconstruct:blazing_blood_bucket",
-        ],
-        [
             { output: "ad_astra:netherite_space_helmet" },
             "minecraft:netherite_helmet",
             "createastral:sturdy_helmet",
@@ -227,12 +222,12 @@ onEvent("recipes", (event) => {
 
         [{output: 'ad_astra:netherite_space_helmet'},
          'ad_astra:compressed_steel',
-          'ad_astra:compressed_ostrum'
+          'ad_astra:ostrum_block'
         ],
 
         [{output: 'ad_astra:netherite_space_suit'},
          'ad_astra:compressed_steel',
-          'ad_astra:compressed_ostrum'
+          'ad_astra:ostrum_block'
         ],
 
         [{output: 'ad_astra:netherite_space_pants'},
