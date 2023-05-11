@@ -62,8 +62,8 @@ function crushingRecipes(event) {
         {
             input: "minecraft:cobbled_deepslate",
             outputs: [
-                ["create:zinc_nugget", 0.0015],
-                ["minecraft:coal", 0.004],
+                ["create:zinc_nugget", 0.13],
+                ["minecraft:coal", 0.05],
             ],
         },
         //Diorite,Granite,Andesite Crushing

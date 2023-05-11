@@ -3,12 +3,12 @@ var INGOT_FLUID_AMMOUNT = 9000;
 
 
 onEvent("recipes", (event) => {
-    CompactingRecipes(event);
-    crushingRecipes(event);
+    LakyCompactingRecipes(event);
+    LakyCrushingRecipes(event);
 
 });
 
-function CompactingRecipes(event) {
+function LakyCompactingRecipes(event) {
 
     const recipeList = [
         ["create:ochrum", "minecraft:sandstone", "minecraft:dripstone_block", { fluid: "create:honey", amount: 8100 }, "minecraft:yellow_dye"],
@@ -42,7 +42,7 @@ function CompactingRecipes(event) {
             .processingTime(recipe.time ?? 100);
     });
 }
-function crushingRecipes(event) {
+function LakyCrushingRecipes(event) {
 
 
     const CRUSHING_ORE_BONUS_ORE_YIELD = 0.33;
