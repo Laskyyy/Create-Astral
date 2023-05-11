@@ -196,6 +196,11 @@ function crushingRecipes(event) {
                 ["tconstruct:debris_nugget", 0.03],
             ],
         },
+        // AE2 Fluix/Shimmer Crystal Crushing
+        {
+            input: "ae2:fluix_crystal",
+            outputs: [["ae2:fluix_dust", 1]],
+        },
     ].forEach((recipe) => {
         let cleanoutputs = [];
         recipe.outputs.forEach((output) => {
