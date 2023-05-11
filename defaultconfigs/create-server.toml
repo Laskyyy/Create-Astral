@@ -59,7 +59,7 @@ limitAdventureMode = true
 	lightSourceCountForRefinedRadiance = 50
 	#.
 	#Allow the standard in-world Refined Radiance recipes.
-	enableRefinedRadianceRecipe = true
+	enableRefinedRadianceRecipe = false
 	#.
 	#Allow the standard in-world Shadow Steel recipe.
 	enableShadowSteelRecipe = true
@@ -246,9 +246,9 @@ limitAdventureMode = true
 				sequenced_gearshift = 0.1
 				weighted_ejector = 2.0
 				cogwheel = 0.025
-				andesite_encased_cogwheel = 0.05
+				andesite_encased_cogwheel = 0.025
 				belt = 0.05
-				brass_encased_cogwheel = 0.05
+				brass_encased_cogwheel = 0.025
 				gearbox = 0.1
 				hose_pulley = 4.0
 				mechanical_crafter = 2.0
