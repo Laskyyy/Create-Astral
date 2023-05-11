@@ -3,7 +3,7 @@
 [general]
 	#Forge Energy conversion rate (in FE/t at 256 RPM).
 	#Range: > 0
-	fe_conversion = 15
+	fe_conversion = 20
 	#Max stress for the Alternator and Electric Motor (in SU at 256 RPM).
 	#Range: > 0
 	baseline_stress = 8192
@@ -66,15 +66,15 @@
 	#Connector max input in FE/t (Energy transfer).
 	#Range: 0 ~ 9223372036854775807
 	connector_max_input = 1024
+	#Connector max output in FE/t (Energy transfer).
+	#Range: 0 ~ 9223372036854775807
+	connector_max_output = 1024
+	#Connector internal input buffer in FE.
+	#Range: 0 ~ 9223372036854775807
+	connector_input_capacity = 2048
 	#Max wire length in blocks.
 	#Range: 0 ~ 256
 	wire_length = 16
-	#Connector max output in FE/t (Energy transfer).
-	#Range: 0 ~ 9223372036854775807
-	connector_max_output = 32
-	#Connector internal input buffer in FE.
-	#Range: 0 ~ 9223372036854775807
-	connector_input_capacity = 128
 
 #Accumulator
 [accumulator]
