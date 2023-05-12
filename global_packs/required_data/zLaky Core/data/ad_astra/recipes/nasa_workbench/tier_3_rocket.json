@@ -18,17 +18,12 @@
 		},
 		{
 			"ingredient": {
-				"item": "techreborn:digital_display"
+				"item": "dbe:server_rack"
 			}
 		},
 		{
 			"ingredient": {
-				"item": "techreborn:digital_display"
-			}
-		},
-		{
-			"ingredient": {
-				"tag": "c:ostrum_blocks"
+				"item": "dbe:server_rack"
 			}
 		},
 		{
@@ -38,7 +33,12 @@
 		},
 		{
 			"ingredient": {
-				"item": "ad_astra:steel_block"
+				"tag": "c:ostrum_blocks"
+			}
+		},
+		{
+			"ingredient": {
+				"item": "dbe:server_rack"
 			}
 		},
 		{
@@ -53,7 +53,7 @@
 		},
 		{
 			"ingredient": {
-				"item": "ad_astra:desh_block"
+				"item": "dbe:server_rack"
 			}
 		},
 		{

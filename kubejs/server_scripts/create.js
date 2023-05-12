@@ -606,7 +606,7 @@ function sequencedAssemblyRecipes(event) {
                         "createastral:incomplete_electronic_circuit",
                         [
                             "createastral:incomplete_electronic_circuit",
-                            "ad_astra:ostrum_plate",
+                            "techreborn:lead_plate",
                         ]
                     ),
                     event.recipes.createPressing(
@@ -1063,6 +1063,32 @@ function sequencedAssemblyRecipes(event) {
         )
         .transitionalItem("create:electron_tube")
         .loops(12);
+
+        event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "dbe:server_rack", // output
+            ],
+            "#computercraft:monitor",
+            [
+                // input
+                event.recipes.createFilling("createastral:incomplete_electronic_circuit", [
+                    "createastral:incomplete_electronic_circuit",
+                    { fluid: "ad_astra:cryo_fuel", amount: 40500 },
+                ]), 
+                event.recipes.createDeploying("createastral:incomplete_electronic_circuit", [
+                    "createastral:incomplete_electronic_circuit",
+                    "techreborn:machine_parts",
+                ]), 
+                event.recipes.createDeploying("createastral:incomplete_electronic_circuit", [
+                    "createastral:incomplete_electronic_circuit",
+                    "createastral:navigation_mechanism",
+                ]), 
+            ]
+        )
+        .transitionalItem("createastral:incomplete_electronic_circuit")
+        .loops(10);
 
     //Dash panel
     event.recipes
@@ -1780,27 +1806,6 @@ function splashingRecipes(event) {
             input: "ad_astra:mars_sand",
             outputs: [["techreborn:lead_nugget", 0.25]],
         },
-        {
-            input: "ad_astra:raw_desh",
-            outputs: [
-                ["9x ad_astra:desh_nugget", 1],
-                ["minecraft:raw_iron", 1],
-            ],
-        },
-        {
-            input: "ad_astra:raw_ostrum",
-            outputs: [
-                ["9x ad_astra:ostrum_nugget", 1],
-                ["minecraft:raw_gold", 1],
-            ],
-        },
-        {
-            input: "ad_astra:raw_calorite",
-            outputs: [
-                ["9x ad_astra:calorite_nugget", 1],
-                ["minecraft:raw_copper", 1],
-            ],
-        },
     ].forEach((recipe) => {
         let cleanoutputs = [];
         recipe.outputs.forEach((output) => {
@@ -1965,18 +1970,6 @@ function mechanicalCraftingRecipes(event) {
                 B: "create:electron_tube",
                 C: "techreborn:tin_ingot",
                 D: "create:precision_mechanism",
-            },
-        },
-
-        {
-            output: "ad_astra:fuel_refinery",
-            shape: ["BDCDB", "BAEAB", "BBEBB"],
-            inputs: {
-                A: "create:attribute_filter",
-                B: "ad_astra:ostrum_plate",
-                C: "create:mechanical_mixer",
-                D: "create:precision_mechanism",
-                E: "create:fluid_tank",
             },
         },
 

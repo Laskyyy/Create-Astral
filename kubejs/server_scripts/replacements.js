@@ -475,7 +475,7 @@ onEvent("recipes", (event) => {
             "create:integrated_circuit",
         ],
         [
-            { output: "gearreborn:hazmat_chestpiece" },
+            { output: "gearreborn:hazmat_helmet" },
             "techreborn:reinforced_glass",
             "#c:glass",
         ],

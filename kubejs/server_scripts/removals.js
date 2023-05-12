@@ -282,12 +282,15 @@ onEvent("recipes", (event) => {
         { output: "tconstruct:efln_ball" },
         { output: "tconstruct:piggy_backpack" },
 
+
         // Miscellaneous
 
         { output: "passivepiglins:piglin_fortune" },
         { output: "passivepiglins:piglin_totem" },
         { output: "passivepiglins:piglin_coin" },
-
+        { output: "travellersbackpack:standard" },
+        { output: "ad_astra:ostrum_engine" },
+        { output: "dbe:server_rack" },
         { output: "dustrial_decor:cast_iron_billet" },
 
         { output: "mcdw:pick_diamond_pickaxe_var" },
@@ -296,6 +299,8 @@ onEvent("recipes", (event) => {
         { output: "automobility:auto_mechanic_table" },
         { output: "automobility:automobile_assembler" },
         { type: "automobility:automobile_assembler" },
+        { type: "ad_astra:fuel_conversion" },
+
 
         { output: "campanion:grappling_hook" },
         { output: "campanion:mre" },

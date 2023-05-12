@@ -930,6 +930,18 @@ onEvent("recipes", (event) => {
         }
     );
 
+    event.shaped(
+        Item.of("custommachinery:custom_machine_item", {
+            machine: "createastral:distillery",
+        }),
+        ["CCC", "DED", "CCC"],
+        {
+            D: "techreborn:electronic_circuit",
+            E: "create:blaze_burner",
+            C: "techreborn:lead_storage_block",
+        }
+    );
+
     event.shaped("travelersbackpack:standard", ["ABA", "CDE", "FAF"], {
         A: "farmersdelight:canvas",
         B: "minecraft:crafting_table",
@@ -1101,7 +1113,7 @@ event.recipes.createMechanicalCrafting('ad_astra:ostrum_engine', [
   'ABA',
 
 ], {
-  A: 'techreborn:nak_coolant_cell_60k',
+  A: 'createastral:shimmer_amplifier',
   B: 'createaddition:capacitor',
   D: 'createaddition:tesla_coil',
   E: 'ad_astra:ostrum_block',
