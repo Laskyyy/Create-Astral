@@ -1153,3 +1153,15 @@ onEvent("player.logged_in", (event) => {
         event.player.give("ftbquests:book");
     }
 });
+onEvent("morejs.villager.trades", (event) => { 
+    
+    event.removeVanillaTrades('minecraft:armorer', 4);
+    event.removeVanillaTrades('minecraft:armorer', 5);
+    event.removeVanillaTrades('minecraft:toolsmith', 3);
+    event.removeVanillaTrades('minecraft:toolsmith', 4);
+    event.removeVanillaTrades('minecraft:toolsmith', 5);
+    event.removeVanillaTrades('minecraft:weaponsmith', 4);
+    event.removeVanillaTrades('minecraft:weaponsmith', 5);
+    event.removeVanillaTrades('minecraft:cleric', 5);
+    event.removeModdedTrades();
+});
