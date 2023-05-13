@@ -1,6 +1,26 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".idea/Create-Astral-Bugfixes.iml"
+hash = "c96ea0b5b29abb7d5807671dd208fd63f63694dd236335d2fe8c074e89e94aa6"
+
+[[files]]
+file = ".idea/discord.xml"
+hash = "3b692549d528d6466935efa16e0a761f4bd5ee9e0bd44ee5f31cbfd3575dd5bf"
+
+[[files]]
+file = ".idea/libraries/mods.xml"
+hash = "d03ef2fa053828b6ef2babd8ffce7fb14714c841d3dfc6eab73d3ca869e5f1c8"
+
+[[files]]
+file = ".idea/modules.xml"
+hash = "a44e45e194cd7d3d70b65074ab17c5a5f36ef271faefd3f583107b0dd2462aa7"
+
+[[files]]
+file = ".idea/vcs.xml"
+hash = "62be7e0a7f84ab3c35b4d4bafb890a4951d061eadafde1a10aa3f5d0406db5df"
+
+[[files]]
 file = ".prettierrc"
 hash = "b0a9c55ac6b2897cadbd19167484e470b955a09ebc1244e31b28190439da60be"
 
