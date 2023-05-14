@@ -237,11 +237,6 @@ onEvent("recipes", (event) => {
         ],
         [
             { mod: "techreborn" },
-            "minecraft:redstone",
-            "ae2:certus_quartz_crystal",
-        ],
-        [
-            { mod: "techreborn" },
             "techreborn:refined_iron_plate",
             "techreborn:silver_plate",
         ],
@@ -416,15 +411,11 @@ onEvent("recipes", (event) => {
         [{ mod: "techreborn" }, "techreborn:zinc_nugget", "create:zinc_nugget"],
         ["#c:ingots/steel", "ad_astra:steel_ingot"],
         [{ mod: "ae2" }, "minecraft:iron_ingot", "techreborn:silver_plate"],
-        [{ mod: "techreborn" }, "minecraft:cobblestone", "create:sturdy_sheet"],
         [
             { mod: "techreborn" },
             "techreborn:data_storage_chip",
             "createastral:subatomic_ingot",
         ],
-        [{ mod: "techreborn" }, "minecraft:stone", "create:sturdy_sheet"],
-        [{ mod: "techreborn" }, "minecraft:cobblestone", "create:sturdy_sheet"],
-        [{ mod: "techreborn" }, "minecraft:flint", "create:sturdy_sheet"],
         [
             { mod: "techreborn" },
             "techreborn:magnalium_plate",
@@ -436,7 +427,6 @@ onEvent("recipes", (event) => {
             "createastral:olivine_sheet",
         ],
         [{ mod: "ae2" }, "minecraft:copper_ingot", "techreborn:silver_plate"],
-        [{ mod: "ae2" }, "minecraft:redstone", "ae2:fluix_dust"],
         [{ mod: "ae2" }, "ae2:fluix_crystal", "ae2:fluix_dust"],
         ["techreborn:advanced_circuit", "techreborn:electronic_circuit"],
         [
