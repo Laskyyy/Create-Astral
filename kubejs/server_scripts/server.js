@@ -958,6 +958,8 @@ onEvent('recipes', event => {
     });
 
     event.stonecutting("2x doodads:asphalt_slab", "doodads:asphalt")
+    
+    event.stonecutting("4x createdeco:copper_sheet_metal", "minecraft:copper_block")
 });
 
 onEvent("player.logged_in", (event) => {
