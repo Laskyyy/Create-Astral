@@ -250,6 +250,18 @@ onEvent('block.registry', event => {
        .material('stone')
        .hardness(4)
        .tagBlock('minecraft:mineable/pickaxe')
+	
+ event.create('doodads:asphalt_slab', 'slab')
+       .material('stone')
+       .hardness(4)
+       .tagBlock('minecraft:mineable/pickaxe')
+       .textureAll('doodads:block/asphalt')
+
+  event.create('doodads:asphalt_stair', 'stairs')
+       .material('stone')
+       .hardness(4)
+       .tagBlock('minecraft:mineable/pickaxe')
+       .textureAll('doodads:block/asphalt')
  })
 
  ///// ADD BURN TIME TO FUEL /////
