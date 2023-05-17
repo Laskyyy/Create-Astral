@@ -1198,21 +1198,21 @@ onEvent("morejs.villager.trades", (event) => {
         ['minecraft:cleric', 5, ['25x ad_astra:moon_sand'], 'kubejs:shimmer_bucket'],
         ['techreborn:metallurgist', 1, ['10x minecraft:flint'], 'createastral:bronze_sheet'],
         ['techreborn:metallurgist', 1, ['5x minecraft:gold_ingot'], 'create:wrench'],
-        ['techreborn:metallurgist', 2, ['21x minecraft:flint'], 'create:cogwheel'],
+        ['techreborn:metallurgist', 2, ['15x minecraft:flint'], 'create:cogwheel'],
         ['techreborn:metallurgist', 3, ['32x minecraft:flint'], 'createastral:bronze_sheet'],
         ['techreborn:metallurgist', 3, ['8x minecraft:emerald'], 'create:shaft'],
-        ['techreborn:metallurgist', 4, ['21x minecraft:emerald'], 'create:minecart_coupling'],
+        ['techreborn:metallurgist', 4, ['15x minecraft:flint'], 'create:minecart_coupling'],
         ['techreborn:metallurgist', 4, ['27x minecraft:flint'], 'create:whisk'],
         ['techreborn:metallurgist', 5, ['32x minecraft:emerald'], 'create:propeller'],
         ['techreborn:metallurgist', 5, ['35x minecraft:emerald'], 'create:brass_hand'],
         ['techreborn:electrician', 1, ['2x create:andesite_alloy'], 'createaddition:copper_wire'],
-        ['techreborn:electrician', 2, ['3x create:cogwheel'], 'wiredredstone:red_alloy_wire'],
+        ['techreborn:electrician', 2, ['4x minecraft:flint'], 'minecraft:redstone'],
         ['techreborn:electrician', 2, ['2x create:andesite_alloy'], 'createaddition:gold_wire'],
-        ['techreborn:electrician', 3, ['6x minecraft:flint'], 'wiredredstone:stone_plate'],
+        ['techreborn:electrician', 3, ['6x minecraft:flint'], 'minecraft:repeater'],
         ['techreborn:electrician', 4, ['43x create:andesite_alloy'], 'computercraft:computer_normal'],
         ['techreborn:electrician', 4, ['5x create:andesite_alloy'], 'computercraft:cable'],
-        ['techreborn:electrician', 5, ['15x create:andesite_alloy'], 'wiredredstone:gate_or'],
-        ['techreborn:electrician', 5, ['15x create:andesite_alloy'], 'wiredredstone:gate_and']
+        ['techreborn:electrician', 5, ['15x create:andesite_alloy'], 'minecraft:comparator'],
+        ['techreborn:electrician', 5, ['15x create:andesite_alloy'], 'minecraft:observer']
     ];
     
     vanillaTradesToRemove.forEach((trade) => {
