@@ -1,13 +1,13 @@
 name = "CC: Restitched"
-filename = "cc-restitched-1.100.6.jar"
+filename = "cc-restitched-1.100.8.jar"
 side = "both"
 
 [download]
 mode = "metadata:curseforge"
 hash-format = "sha1"
-hash = "f86e329e77c0a55bf162e80d216e8e40a078817c"
+hash = "3c2291e1b3b7bcc238a2c38522afc274c5f83525"
 
 [update]
 [update.curseforge]
-file-id = 3816592
+file-id = 3838648
 project-id = 462672
