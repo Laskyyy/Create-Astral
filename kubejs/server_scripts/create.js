@@ -664,6 +664,8 @@ function sequencedAssemblyRecipes(event) {
                     ),
                 ]
             )
+            .transitionalItem("ae2:printed_silicon")
+            .loops(1);
             event.recipes
             .createSequencedAssembly(
                 ["ae2:engineering_processor"],
@@ -688,6 +690,8 @@ function sequencedAssemblyRecipes(event) {
                     ),
                 ]
             )
+            .transitionalItem("ae2:printed_silicon")
+            .loops(1);
             event.recipes
             .createSequencedAssembly(
                 ["ae2:logic_processor"],
@@ -712,8 +716,8 @@ function sequencedAssemblyRecipes(event) {
                     ),
                 ]
             )
-            .transitionalItem("create:lapis_sheet")
-            .loops(6);
+            .transitionalItem("ae2:printed_silicon")
+            .loops(1);
 
         event.recipes
             .createSequencedAssembly(
