@@ -39,6 +39,12 @@ onEvent("recipes", (event) => {
         { output: "techreborn:quantum_leggings" },
         { output: "techreborn:quantum_boots" },
         { output: "techreborn:copper_nugget" },
+        { output: "techreborn:storage_buffer" },
+        { output: "techreborn:crude_storage_unit" },
+        { output: "techreborn:basic_storage_unit" },
+        { output: "techreborn:advanced_storage_unit" },
+        { output: "techreborn:industrial_storage_unit" },
+        { output: "techreborn:quantum_storage_unit" },
         { output: "techreborn:steel_plate" },
 
         {
