@@ -85,6 +85,11 @@ onEvent("recipes", (event) => {
             "ad_astra:steel_ingot",
         ],
         [
+            { output: "minecraft:shulker_box" },
+            "minecraft:chest",
+            "minecraft:ender_eye",
+        ],
+        [
             { mod: "createaddition" },
             "minecraft:redstone_torch",
             "create:electron_tube",
@@ -534,7 +539,10 @@ onEvent("recipes", (event) => {
         [{mod: 'techreborn'},'techreborn:iridium_plate', 'yttr:yttrium_ingot'],
         [{output: 'ad_astra:cryo_freezer'},'ad_astra:ostrum_tank', 'techreborn:lithium_ion_battery'],
         [{mod: 'techreborn'},'techreborn:iridium_alloy_plate', 'yttr:yttrium_ingot'],
-        [{outputI: 'ae2:fluid_cell_housing'}, 'techreborn:silver_plate', 'create:copper_casing'],
+        [{mod: 'dustrial_decor'},'minecraft:iron_ingot', 'create:iron_sheet'],
+        [{mod: 'computercraft'},'minecraft:iron_ingot', 'create:iron_sheet'],
+        [{output: 'ae2:fluid_cell_housing'}, 'techreborn:silver_plate', 'create:copper_casing'],
+        [{output: 'ae2:item_cell_housing'}, 'techreborn:silver_plate', 'create:andesite_casing'],
 
         [
             { output: "techreborn:industrial_grinder" },
@@ -587,11 +595,6 @@ onEvent("recipes", (event) => {
             { mod: "quarrymod" },
             "techreborn:tungstensteel_plate",
             "create:shadow_steel",
-        ],
-        [
-            { output: "ae2:fluid_cell_housing" },
-            "techreborn:silver_plate",
-            "create:copper_casing",
         ],
         [{ mod: "phonos" }, "minecraft:iron_ingot", "techreborn:tin_ingot"],
         [

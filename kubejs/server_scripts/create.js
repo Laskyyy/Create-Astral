@@ -2342,7 +2342,10 @@ function compactingRecipes(event) {
                 "#c:certus_quartz",
             ],
         },
-
+        {
+            output: "minecraft:shulker_shell",
+            inputs: ["ae2:ender_dust","8x minecraft:purple_dye" ],
+        },
 
 
 

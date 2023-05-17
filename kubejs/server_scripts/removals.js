@@ -17,6 +17,7 @@ onEvent("recipes", (event) => {
         { output: "techreborn:steel_block" },
         { output: "techreborn:steel_plate" },
         { output: "techreborn:bronze_block" },
+        { output: "techreborn:ender_pearl_dust" },
         { output: "techreborn:electronic_circuit" },
         { output: "techreborn:industrial_circuit" },
         { output: "techreborn:energy_flow_chip" },
@@ -30,7 +31,6 @@ onEvent("recipes", (event) => {
         { output: "techreborn:refined_iron_ingot" },
         { output: "techreborn:fusion_coil" },
         { output: "techreborn:carbon_mesh" },
-        { output: "techreborn:scrap_box" },
         { output: "techreborn:data_storage_core" },
         { output: "techreborn:data_storage_chip" },
         { output: "techreborn:player_detector" },
@@ -40,7 +40,7 @@ onEvent("recipes", (event) => {
         { output: "techreborn:quantum_boots" },
         { output: "techreborn:copper_nugget" },
         { output: "techreborn:steel_plate" },
-
+        {type: "techreborn:scrapbox"},
         {
             type: "techreborn:grinder",
             input: "#techreborn:calcite_dust_material",
@@ -412,6 +412,7 @@ onEvent("recipes", (event) => {
         { output: "minecraft:bow" },
         { output: "minecraft:crossbow" },
         { output: "minecraft:arrow" },
+        { output: "minecraft:shulker_shell" },
         { output: "minecraft:ender_eye" },
         { output: "minecraft:diamond_ore" },
         { output: "minecraft:emerald_ore" },
