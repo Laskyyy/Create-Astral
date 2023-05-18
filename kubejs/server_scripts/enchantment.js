@@ -5,8 +5,8 @@ onEvent("recipes", (event) => {
 
     event.recipes
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "minecraft:golden_sword",
@@ -31,8 +31,8 @@ onEvent("recipes", (event) => {
 
     event.recipes
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "tconstruct:gold_reinforcement",
@@ -57,8 +57,8 @@ onEvent("recipes", (event) => {
 
     event.recipes
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "tconstruct:iron_reinforcement",
@@ -83,8 +83,8 @@ onEvent("recipes", (event) => {
 
         event.recipes
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:mending",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "tconstruct:slimesteel_reinforcement",
@@ -109,8 +109,8 @@ onEvent("recipes", (event) => {
 
         event.recipes
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "tconstruct:seared_reinforcement",
@@ -135,8 +135,8 @@ onEvent("recipes", (event) => {
 
         event.recipes
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "tconstruct:emerald_reinforcement",
@@ -161,8 +161,8 @@ onEvent("recipes", (event) => {
 
         event.recipes
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "tconstruct:bronze_reinforcement",
@@ -187,8 +187,8 @@ onEvent("recipes", (event) => {
 
         event.recipes
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:thorns",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "tconstruct:cobalt_reinforcement",
@@ -213,8 +213,8 @@ onEvent("recipes", (event) => {
 
         event.recipes
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "dustrial_decor:wrapped_chains",
@@ -239,8 +239,8 @@ onEvent("recipes", (event) => {
 
         event.recipes
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "minecraft:soul_lantern",
@@ -265,8 +265,8 @@ onEvent("recipes", (event) => {
 
         event.recipes
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "techreborn:silver_plate",
@@ -291,8 +291,8 @@ onEvent("recipes", (event) => {
 
         event.recipes
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:silk_touch",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "tconstruct:silky_cloth",
@@ -317,8 +317,8 @@ onEvent("recipes", (event) => {
 
         event.recipes
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:silk_touch",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "tconstruct:silky_cloth",
@@ -343,8 +343,8 @@ onEvent("recipes", (event) => {
 
         event.recipes
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:respiration",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "create:diving_helmet",
@@ -369,8 +369,8 @@ onEvent("recipes", (event) => {
 
         event.recipes                                                                    
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "minecraft:lever",
@@ -395,8 +395,8 @@ onEvent("recipes", (event) => {
 
         event.recipes                                                                              
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:punch",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "create:brass_hand",
@@ -421,8 +421,8 @@ onEvent("recipes", (event) => {
 
         event.recipes                                                                      
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "minecraft:gunpowder",
@@ -447,8 +447,8 @@ onEvent("recipes", (event) => {
 
         event.recipes                                                      
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "minecraft:piston",
@@ -473,8 +473,8 @@ onEvent("recipes", (event) => {
 
         event.recipes
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:multishot",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "minecraft:crossbow",
@@ -499,8 +499,8 @@ onEvent("recipes", (event) => {
 
         event.recipes
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:looting",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "ad_astra:calorite_ingot",
@@ -525,8 +525,8 @@ onEvent("recipes", (event) => {
 
         event.recipes
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:knockback",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "minecraft:tnt",
@@ -551,8 +551,8 @@ onEvent("recipes", (event) => {
 
         event.recipes
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:infinity",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "minecraft:spectral_arrow",
@@ -581,8 +581,8 @@ onEvent("recipes", (event) => {
 
         event.recipes
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:frost_walker",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "minecraft:blue_ice",
@@ -607,8 +607,8 @@ onEvent("recipes", (event) => {
 
         event.recipes
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fortune",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "tconstruct:jeweled_apple",
@@ -633,8 +633,8 @@ onEvent("recipes", (event) => {
 
         event.recipes                                                                                                                                                                                        
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:flame",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "minecraft:blaze_powder",
@@ -659,8 +659,8 @@ onEvent("recipes", (event) => {
 
         event.recipes                                                                                                                                        
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_aspect",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "minecraft:blaze_rod",
@@ -685,8 +685,8 @@ onEvent("recipes", (event) => {
 
         event.recipes                                                                                                                                                  
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "minecraft:white_bed",
@@ -711,8 +711,8 @@ onEvent("recipes", (event) => {
 
         event.recipes                                                                                                                         
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     Item.of("minecraft:potion", '{Potion:"minecraft:swiftness"}' ,),
@@ -737,8 +737,8 @@ onEvent("recipes", (event) => {
 
         event.recipes                                             
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:depth_strider",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "create:diving_boots",
@@ -763,8 +763,8 @@ onEvent("recipes", (event) => {
 
         event.recipes                                           
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:aqua_affinity",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "create:copper_backtank",
@@ -789,8 +789,8 @@ onEvent("recipes", (event) => {
 
         event.recipes                                                                                                                                                                                     
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "minecraft:spider_eye",
@@ -815,8 +815,8 @@ onEvent("recipes", (event) => {
 
         event.recipes                                                                                                                                                                                                       
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:lure",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "farmersdelight:cod_slice",
@@ -841,8 +841,8 @@ onEvent("recipes", (event) => {
 
         event.recipes                                                                                                                                                                            
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "minecraft:golden_apple",
@@ -867,8 +867,8 @@ onEvent("recipes", (event) => {
 
         event.recipes                                                                                                                                                                                  
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "minecraft:sea_lantern",
@@ -893,8 +893,8 @@ onEvent("recipes", (event) => {
 
         event.recipes                                                                                                                                                                                             
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:riptide",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "minecraft:dark_prismarine",
@@ -919,8 +919,8 @@ onEvent("recipes", (event) => {
 
         event.recipes                                                                                                                                                        
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "minecraft:prismarine_shard",
@@ -945,8 +945,8 @@ onEvent("recipes", (event) => {
 
         event.recipes                                                                                                                                                                                          
         .createSequencedAssembly(
-            ["minecraft:book"],
             Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:channeling",lvl:1s}]}',),
+            ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "minecraft:lightning_rod",
