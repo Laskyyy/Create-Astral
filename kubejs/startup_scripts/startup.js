@@ -95,6 +95,16 @@ event.create('aurorite')
        .stillTexture('tconstruct:block/fluid/molten/still')
 	     .flowingTexture('tconstruct:block/fluid/molten/flowing')
 
+  event.create('red_grape_juice')
+       .thinTexture(0x864e97 )
+       .bucketColor(0x864e97 )
+       .displayName('Red Grape Juice')
+
+  event.create('white_grape_juice')
+       .thinTexture(0xEEEDC4)
+       .bucketColor(0xEEEDC4)
+       .displayName('White Grape Juice')
+
 })
 
 ///// MODIFY CHARACTERISTICS OF ITEMS /////

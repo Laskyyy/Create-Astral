@@ -2,6 +2,7 @@ var FULL_BUCKET_AMMOUNT = 81000;
 var INGOT_FLUID_AMMOUNT = 9000;
 
 onEvent("recipes", (event) => {
+
     crushingRecipes(event);
     millingRecipes(event);
     itemApplication(event);
