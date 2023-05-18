@@ -14,6 +14,7 @@ onEvent("recipes", (event) => {
     mechanicalCraftingRecipes(event);
     pressingRecipes(event);
     compactingRecipes(event);
+    farmersDelightIntegration(event);
 });
 
 function millingRecipes(event) {
@@ -2133,7 +2134,19 @@ function pressingRecipes(event) {
         event.recipes.createPressing(recipe[1], recipe[0]);
     });
 }
+function farmersDelightIntegration(event) {
 
+    let knivesTag = (Platform.isFabric) ? 'c:tools/knives' : 'forge:tools/knives'
+    event.forEachRecipe(
+      { type: 'farmersdelight:cutting', tool: { tag: knivesTag } },
+      recipe => {
+        let { originalRecipeIngredients, originalRecipeResult } = recipe
+        event.recipes.create.deploying(
+          [originalRecipeResult],
+          [originalRecipeIngredients, `#${knivesTag}`]
+        )
+      })
+}
 function compactingRecipes(event) {
     [
         {
