@@ -1197,6 +1197,18 @@ function fillingRecipes(event) {
             fluid: "minecraft:lava",
             amount: 2250,
         },
+        {
+            input: "vinery:wine_bottle",
+            output: "vinery:red_grapejuice_wine_bottle",
+            fluid: "kubejs:red_grape_juice",
+            amount: 20250,
+        },
+        {
+            input: "vinery:wine_bottle",
+            output: "vinery:white_grapejuice_wine_bottle",
+            fluid: "kubejs:white_grape_juice",
+            amount: 20250,
+        },
     ].forEach((recipe) => {
         event.recipes.createFilling(recipe.output, [
             recipe.input,
@@ -2210,6 +2222,14 @@ function compactingRecipes(event) {
         {
             output: "minecraft:cobbled_deepslate",
             inputs: ["3x minecraft:flint", "minecraft:gravel"],
+        },
+        {
+            output: { fluid: "kubejs:white_grape_juice", amount: 6750 },
+            inputs: ["vinery:white_grape"],
+        },
+        {
+            output: { fluid: "kubejs:red_grape_juice", amount: 6750 },
+            inputs: ["vinery:red_grape"],
         },
 
     ].forEach((recipe) => {
