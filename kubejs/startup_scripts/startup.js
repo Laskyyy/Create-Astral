@@ -104,7 +104,11 @@ event.create('aurorite')
        .thinTexture(0xEEEDC4)
        .bucketColor(0xEEEDC4)
        .displayName('White Grape Juice')
-
+	
+event.create('liquid_xp_nuggies')
+       .thinTexture(0x17ff45)
+       .bucketColor(0x17ff45)
+       .displayName('Liquified Experience Nuggets')
 })
 
 ///// MODIFY CHARACTERISTICS OF ITEMS /////
@@ -299,6 +303,11 @@ onEvent('block.registry', event => {
       .hardness(4)
       .tagBlock('minecraft:mineable/pickaxe')
       .material('stone')    
+
+  event.create('createastral:experience_block')
+      .tagBlock('minecraft:mineable/pickaxe')
+      .material('glass')    
+      .hardness(2)
  })
 
  ///// ADD BURN TIME TO FUEL /////
@@ -440,6 +449,7 @@ event.create('createastral:shimmer_amplifier'),
 event.create('createastral:star_shard'),
 event.create('createastral:pure_star_shard').glow(true),
 event.create('createastral:crushed_yttrium_ore'),
+event.create('createastral:experience_ingot'),
 
 
 
