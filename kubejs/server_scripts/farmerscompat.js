@@ -10,7 +10,7 @@ function mixingRecipeGen(event) {
     event.forEachRecipe({type:"farmersdelight:cooking"}, recipe => {
         let outputItem = recipe.getOriginalRecipeResult().getId().split(":")[1];
         let inputItems = recipe.getOriginalRecipeIngredients();
-        if(outputItem=="cabbage_rolls") return; //too troublesome to add recipe for
+        if(outputItem=="cabbage_rolls") return; //too few ingredients to add recipe for
 
         let containers = {
             "minecraft:glass_bottle": [ "hot_cocoa","apple_cider"],
