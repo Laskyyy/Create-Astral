@@ -9,14 +9,15 @@ const INGOT_FLUID_AMOUNT = 9000;
 function mixingRecipeGen(event) {
     event.forEachRecipe({type:"farmersdelight:cooking"}, recipe => {
         //Gets item name without namespace (e.g. "cooked_rice")
-        var outputItem = recipe.getOriginalRecipeResult().getId().split(":")[1]; 
-        var inputItems = recipe.getOriginalRecipeIngredients();
+        let outputItem = recipe.getOriginalRecipeResult().getId().split(":")[1]; 
+        let inputItems = recipe.getOriginalRecipeIngredients();
         let containers = {
-            "minecraft:glass_bottle": [ "hot_cocoa","apple_cider","hamburger"],
-            "minecraft:pumpkin": ["stuffed_pumpkin_block"]
-        }
+            "minecraft:glass_bottle": [ "hot_cocoa","apple_cider"],
+            "minecraft:pumpkin": ["stuffed_pumpkin_block"],
+            "#c:dough": ["dumplings"]
+        };
 
-        var container = Object.keys(containers).find(key => containers[key].includes(outputItem)) ?? "minecraft:bowl";
+        let container = Object.keys(containers).find(key => containers[key].includes(outputItem)) ?? "minecraft:bowl";
         
         //Replaces tomato sauce bowl with fluid in recipes and takes dough out of dumpling recipe
         for (let i = 0; i < inputItems.length; i++) {
