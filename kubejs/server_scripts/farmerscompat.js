@@ -1,5 +1,6 @@
 onEvent("recipes", (event) => {
     mixingRecipeGen(event);
+    cuttingRecipeGen(event);
 })
 
 const FULL_BUCKET_AMOUNT = 81000;
@@ -44,4 +45,17 @@ function mixingRecipeGen(event) {
         
     });  
     
+}
+
+function cuttingRecipeGen(event) {
+    event.forEachRecipe({type: 'farmersdelight:cutting'}, recipe => {
+        let newList = Utils.newList();
+        recipe.json.get('result').forEach(e => newList.push(e));
+        newList.reverse(); //prevents conflicts with existing cutting recipes (e.g. log stripping)
+        event.custom({
+            type: 'create:cutting',
+            ingredients: recipe.json.get('ingredients'),
+            results: newList,
+            processingItem : 50
+        });
 }
