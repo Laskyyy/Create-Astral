@@ -31,6 +31,12 @@ onEvent("recipes", (event) => {
             cooling_time: 80,
             cast: ["minecraft:basalt", true],
         },
+        {
+            fluid: ["liquid_xp_nuggies", INGOT_FLUID_AMMOUNT * 9],
+            result: "createastral:experience_block",
+            cooling_time: 180,
+            cast: null,
+        },
     ].forEach((recipe) => {
         event.custom({
             type: "tconstruct:casting_basin",
@@ -83,6 +89,18 @@ onEvent("recipes", (event) => {
             result: "createastral:golden_bowl",
             cooling_time: 100,
             cast: ["tconstruct:round_plate_cast", false],
+        },
+        {
+            fluid: ["kubejs:liquid_xp_nuggies", 9000],
+            result: "createastral:experience_ingot",
+            cooling_time: 100,
+            cast: ["tconstruct:ingot_cast", false],
+        },
+        {
+            fluid: ["kubejs:liquid_xp_nuggies", 1000],
+            result: "create:experience_nugget",
+            cooling_time: 10,
+            cast: ["tconstruct:nugget_cast", false],
         },
     ].forEach((recipe) => {
         event.custom({
