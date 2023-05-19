@@ -104,7 +104,7 @@ event.create('aurorite')
        .thinTexture(0xEEEDC4)
        .bucketColor(0xEEEDC4)
        .displayName('White Grape Juice')
-  liquidFoodGen(event)
+	liquidFoodGen(event)
 })
 
 //LIQUID FOODS
