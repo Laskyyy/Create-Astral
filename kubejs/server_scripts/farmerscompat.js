@@ -48,17 +48,14 @@ function mixingRecipeGen(event) {
 }
 
 function cuttingRecipeGen(event) {
-    event.forEachRecipe({type:"farmersdelight:cutting"}, recipe => {
-        var recipeJson = recipe.json;
-        //let item = recipe.getOriginalRecipeIngredients()[0].getFirst();
-        let item = recipeJson.get("ingredients").get(0);
-        console.log(item);
-        let reciperesults = recipeJson.get("result");
-        console.log(reciperesults);
-        
-        let r = event.recipes
-            .createSplashing(reciperesults,item);
-        console.log(r);
-        console.log(r.json);
-    })
+    event.forEachRecipe({type: 'farmersdelight:cutting'}, recipe => {
+        let newList = Utils.newList();
+        recipe.json.get('result').forEach(e => newList.push(e));
+        newList.reverse(); //prevents conflicts with existing cutting recipes (e.g. log stripping)
+        event.custom({
+            type: 'create:cutting',
+            ingredients: recipe.json.get('ingredients'),
+            results: newList,
+            processingItem : 50
+        });
 }
