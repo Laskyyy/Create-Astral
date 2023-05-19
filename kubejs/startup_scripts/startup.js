@@ -104,7 +104,11 @@ event.create('aurorite')
        .thinTexture(0xEEEDC4)
        .bucketColor(0xEEEDC4)
        .displayName('White Grape Juice')
-
+	
+event.create('liquid_xp_nuggies')
+       .thinTexture(0x17ff45)
+       .bucketColor(0x17ff45)
+       .displayName('Liquified Experience Nuggets')
 })
 
 ///// MODIFY CHARACTERISTICS OF ITEMS /////
