@@ -1751,6 +1751,17 @@ function mixingRecipes(event) {
             heat: "",
             time: 1500,
         },
+	{
+            output: [ { fluid: "kubejs:liquid_xp_nuggies", amount:81000}],
+            input: ["kubejs:experience_block"],
+            heat: "heated",
+            time: 1000,
+	},{
+            output: [ { fluid: "kubejs:liquid_xp_nuggies", amount:9000}],
+            input: ["kubejs:experience_ingot"],
+            heat: "heated",
+            time: 100,
+	},
     ].forEach((recipe) => {
         event.recipes
             .createMixing(recipe.output, recipe.input)
