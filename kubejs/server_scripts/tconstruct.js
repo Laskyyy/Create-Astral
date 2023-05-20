@@ -101,7 +101,13 @@ onEvent("recipes", (event) => {
             result: "create:experience_nugget",
             cooling_time: 10,
             cast: ["tconstruct:nugget_cast", false],
+        },{
+            fluid: ["kubejs:liquid_xp_nuggies", 8000],
+            result: "minecraft:experience_bottle",
+            cooling_time: 30,
+            cast: ["minecraft:glass_bottle", true],
         },
+        
     ].forEach((recipe) => {
         event.custom({
             type: "tconstruct:casting_table",
