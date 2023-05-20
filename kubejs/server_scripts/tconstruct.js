@@ -32,7 +32,7 @@ onEvent("recipes", (event) => {
             cast: ["minecraft:basalt", true],
         },
         {
-            fluid: ["liquid_xp_nuggies", INGOT_FLUID_AMMOUNT * 9],
+            fluid: ["kubejs:liquid_xp_nuggies", INGOT_FLUID_AMMOUNT * 9],
             result: "createastral:experience_block",
             cooling_time: 180,
             cast: null,
