@@ -109,6 +109,8 @@ event.create('liquid_xp_nuggies')
        .thinTexture(0x17ff45)
        .bucketColor(0x17ff45)
        .displayName('Liquified Experience Nuggets')
+       .stillTexture('tconstruct:block/fluid/molten/shimmer')
+       .flowingTexture('tconstruct:block/fluid/molten/shimmer')
 })
 
 ///// MODIFY CHARACTERISTICS OF ITEMS /////
