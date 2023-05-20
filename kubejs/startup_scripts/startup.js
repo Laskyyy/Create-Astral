@@ -310,6 +310,7 @@ onEvent('block.registry', event => {
       .tagBlock('minecraft:mineable/pickaxe')
       .material('glass')    
       .hardness(2)
+      .lightLevel(5)
  })
 
  ///// ADD BURN TIME TO FUEL /////
