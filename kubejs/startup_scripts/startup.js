@@ -123,7 +123,7 @@ function liquidFoodGen(event) {
     {
       name:'vegetable_noodles_fluid',
       displayName:'Guljalabala',
-      color:0x00eeee
+      color:0x6A4736
     },
     {
       name:'mushroom_rice_fluid',
@@ -246,8 +246,8 @@ function liquidFoodGen(event) {
       .thinTexture(f.color)
       .bucketColor(f.color)
       .displayName(f.displayName)
-    .stillTexture('tconstruct:block/fluid/molten/still')
-    .flowingTexture('tconstruct:block/fluid/molten/flowing')
+      .stillTexture('tconstruct:block/fluid/stew/still')
+      .flowingTexture('tconstruct:block/fluid/stew/flowing')
   });
 }
 
