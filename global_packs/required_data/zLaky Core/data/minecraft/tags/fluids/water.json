@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "kubejs:aurorite",
+    "kubejs:compound_mixture",
+    "kubejs:shimmer",
+    "kubejs:blast-resistant_cement",
+    "kubejs:red_grape_juice",
+    "kubejs:white_grape_juice"
+  ]
+}

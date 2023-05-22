@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "kubejs:molten_calorite",
+    "kubejs:molten_ostrum",
+    "kubejs:molten_desh",
+    "kubejs:molten_yttrium",
+    "kubejs:molten_shadowsteel",
+    "kubejs:molten_radiance",
+    "kubejs:plasma_fluid",
+    "kubejs:hellfire"
+  ]
+}
