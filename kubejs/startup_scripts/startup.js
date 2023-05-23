@@ -141,24 +141,12 @@ onEvent('block.modification', event => {
 	  block.material = "Lantern"
   })
 
-  event.modify('probablychests:normal_pot', block => {
-    block.destroySpeed = 1
-    block.hasCollision = true
+  event.modify('techreborn:crude_storage_unit', block => {
+	  block.material = "wood"
   })
 
-  event.modify('probablychests:nether_pot', block => {
-    block.destroySpeed = 1
-    block.hasCollision = true
-  })
-
-  event.modify('probablychests:lush_pot', block => {
-    block.destroySpeed = 1
-    block.hasCollision = true
-  })
-
-  event.modify('probablychests:rocky_pot', block => {
-    block.destroySpeed = 1
-    block.hasCollision = true
+  event.modify('techreborn:storage_buffer', block => {
+	  block.material = "wood"
   })
 
   event.modify('minecraft:diamond_ore', block => {
@@ -168,18 +156,6 @@ onEvent('block.modification', event => {
   })
 
   event.modify('minecraft:deepslate_diamond_ore', block => {
-    block.destroySpeed = 7
-    block.hasCollision = true
-	  block.explosionResistance = 99999
-  })
-
-  event.modify('techreborn:tungsten_ore', block => {
-    block.destroySpeed = 6
-    block.hasCollision = true
-	  block.explosionResistance = 99999
-  })
-
-  event.modify('techreborn:deepslate_tungsten_ore', block => {
     block.destroySpeed = 7
     block.hasCollision = true
 	  block.explosionResistance = 99999
