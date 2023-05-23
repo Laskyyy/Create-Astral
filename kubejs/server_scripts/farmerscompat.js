@@ -9,7 +9,7 @@ const INGOT_FLUID_AMOUNT = 9000;
 function mixingRecipeGen(event) {
     event.forEachRecipe({type:"farmersdelight:cooking"}, recipe => {
         let outputItem = recipe.getOriginalRecipeResult().getId().split(":")[1];
-        let inputItems = recipe.getOriginalRecipeIngredients();
+        let inputItems = recipe.json.get("ingredients");
         if(outputItem=="cabbage_rolls") return; //too few ingredients to add recipe for
 
         let containers = {
