@@ -401,13 +401,6 @@ function itemApplication(event) {
             ],
             results: [{ item: "techreborn:industrial_machine_casing" }],
         },
-        {
-            ingredients: [
-                { item: "techreborn:rubber_log_stripped" },
-                { item: "create:andesite_alloy" },
-            ],
-            results: [{ item: "create:andesite_casing" }],
-        },
     ].forEach((recipe) => {
         event.custom({
             type: "create:item_application",
@@ -1764,6 +1757,14 @@ function cuttingRecipes(event) {
         ["techreborn:rubber_log", "techreborn:rubber_log_stripped"],
         ["techreborn:rubber_wood", "techreborn:stripped_rubber_wood"],
         ["techreborn:rubber_log_stripped", "6x techreborn:rubber_planks"],
+        ["vinery:cherry_log", "vinery:stripped_cherry_log"],
+        ["vinery:stripped_cherry_log", "6x vinery:cherry_planks"],
+        ["vinery:old_cherry_log", "vinery:stripped_old_cherry_log"],
+        ["vinery:stripped_old_cherry_log", "6x vinery:cherry_planks"],
+        ["vinery:cherry_wood", "vinery:stripped_cherry_wood"],
+        ["vinery:old_cherry_wood", "vinery:stripped_old_cherry_wood"],
+        ["ad_astra:glacian_log","ad_astra:stripped_glacian_log"],
+        ["ad_astra:stripped_glacian_log", "6x ad_astra:glacian_planks"],
     ].forEach((recipe) => {
         event.recipes.createCutting(recipe[1], recipe[0]);
     });

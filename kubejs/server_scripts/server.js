@@ -7,8 +7,6 @@ settings.logErroringRecipes = false;
 
 console.info("Welcome to white space.");
 
-///// DIAMONDS REQUIRE DIAMOND TIER TO MINE (IT MAKES SENSE) /////
-
 onEvent("tags.blocks", (event) => {
     event.remove("minecraft:needs_iron_tool", "minecraft:diamond_ore");
     event.remove(
@@ -20,6 +18,13 @@ onEvent("tags.blocks", (event) => {
         "minecraft:needs_diamond_tool",
         "minecraft:deepslate_diamond_ore"
     );
+});
+
+onEvent('item.tags', event => {
+    event.add('c:stripped_logs', 'vinery:stripped_cherry_log');
+    event.add('c:stripped_logs', 'vinery:stripped_old_cherry_log');
+    event.add('c:stripped_logs', 'techreborn:rubber_log_stripped');
+    event.add('c:stripped_logs', 'ad_astra:stripped_glacian_log');
 });
 
 // constants
