@@ -1,13 +1,13 @@
 name = "Create Crafts & Additions"
-filename = "createaddition-fabric+1.18.2-20230211a.jar"
+filename = "createaddition-fabric+1.18.2-20230508b.jar"
 side = "both"
 
 [download]
 mode = "metadata:curseforge"
 hash-format = "sha1"
-hash = "bed5bc8662c24afbf3c22857e02b7e2aa4f9b1c2"
+hash = "d1e0b21adb3a54b92181ba0ab87b744f85675e12"
 
 [update]
 [update.curseforge]
-file-id = 4391445
+file-id = 4528912
 project-id = 439890
