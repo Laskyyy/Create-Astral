@@ -1,5 +1,5 @@
 {
-    ///// NOM DES FLUIDES ICI /////
+    "":"///// NOM DES FLUIDES ICI /////",
     "fluid.kubejs.molten_calorite" : "Calorite fondue",
     "fluid.kubejs.molten_ostrum" : "Ostrum fondu",
     "fluid.kubejs.molten_desh" : "Desh fondu",
