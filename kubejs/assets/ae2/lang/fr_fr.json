@@ -28,5 +28,7 @@ In my case, I use "Shimmer" like "Coal" or "Iron", as a material.
     "item.ae2.fluix_shovel": "Pelle en Shimmer",
     "item.ae2.fluix_smart_cable": "Câble intelligent ME en Shimmer",
     "item.ae2.fluix_smart_dense_cable": "Câble dense intelligent ME en Shimmer",
-    "item.ae2.fluix_sword": "Épée en Shimmer"
+    "item.ae2.fluix_sword": "Épée en Shimmer",
+    "block.ae2.deepslate_quartz_ore": "Minerai de Certus Quartz de pierre de lune"
+
 }
