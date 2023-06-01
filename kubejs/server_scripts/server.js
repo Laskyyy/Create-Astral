@@ -1036,10 +1036,10 @@ onEvent("recipes", (event) => {
 	event.recipes.createSequencedAssembly([ 
         'createastral:refining_agent', 
 		], 'ae2:fluix_dust', [ 
-		event.recipes.createDeploying('ae2:fluix_dust', ['techreborn:diamond_small_dust', 'techreborn:diamond_small_dust']),
-    event.recipes.createDeploying('ae2:fluix_dust', ['minecraft:gold_nugget', 'minecraft:gold_nugget']),
-    event.recipes.createFilling('ae2:fluix_dustl', ['ae2:fluix_dust', {fluid: 'techreborn:biofuel', amount: 9000}]),
-		event.recipes.createFilling('ae2:fluix_dustl', ['ae2:fluix_dust', {fluid: 'techreborn:nitrogen', amount: 9000}]),
+
+    event.recipes.createFilling('ae2:fluix_dust', ['ae2:fluix_dust', {fluid: 'tconstruct:blazing_blood', amount: 9000}]),
+    event.recipes.createFilling('ae2:fluix_dust', ['ae2:fluix_dust', {fluid: 'techreborn:biofuel', amount: 9000}]),
+	event.recipes.createFilling('ae2:fluix_dust', ['ae2:fluix_dust', {fluid: 'techreborn:nitrogen', amount: 9000}]),
     event.recipes.createPressing('ae2:fluix_dust', 'ae2:fluix_dust')
     ]).transitionalItem('ae2:fluix_dust').loops(3) 
 
@@ -1078,11 +1078,11 @@ onEvent("recipes", (event) => {
     ]).heated().processingTime(500)
 
     event.recipes.createSequencedAssembly([
-    'createastral:star_shard',
-    ], 'createastral:pure_star_shard', [ 
-    event.recipes.createFilling('createastral:star_shard', ['createastral:star_shard', {fluid: 'tconstruct:ender_slime', amount: 22500}]), 
+    'createastral:pure_star_shard',
+    ], 'createastral:star_shard', [ 
+    event.recipes.createFilling('createastral:star_shard', ['createastral:star_shard', {fluid: 'kubejs:molten_yttrium', amount: 4500}]), 
     event.recipes.createPressing('createastral:star_shard', 'createastral:star_shard'), 
-    event.recipes.createDeploying('createastral:star_shard', ['techreborn:uu_matter', 'techreborn:uu_matter']), 
+    event.recipes.createDeploying('createastral:star_shard', ['techreborn:scrapbox', 'techreborn:scrapbox']), 
     event.recipes.createPressing('createastral:star_shard', 'createastral:star_shard'), 
     ]).transitionalItem('createastral:star_shard').loops(3) 
 
