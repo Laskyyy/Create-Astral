@@ -104,8 +104,152 @@ event.create('aurorite')
        .thinTexture(0xEEEDC4)
        .bucketColor(0xEEEDC4)
        .displayName('White Grape Juice')
-
+	liquidFoodGen(event)
 })
+
+//LIQUID FOODS
+function liquidFoodGen(event) {
+  [
+    { 
+      name:'dumplings_fluid',
+      displayName:'Dumpling Mix',
+      color:0xffff80
+    },
+    {
+      name:'pumpkin_soup_fluid',
+      displayName:'Pumpkin Soup',
+      color:0xdddd00
+    },
+    {
+      name:'vegetable_noodles_fluid',
+      displayName:'Guljalabala',
+      color:0x6A4736
+    },
+    {
+      name:'mushroom_rice_fluid',
+      displayName:'Mushroom Rice',
+      color:0xddddee
+    },
+    {
+      name:'beetroot_soup_fluid',
+      displayName:'Corn Soup',
+      color:0xffff80
+    },
+    {
+      name:'hot_cocoa_fluid',
+      displayName:'Hot Cocoa',
+      color:0x993d00
+    },
+    {
+      name:'noodle_soup_fluid',
+      displayName:'Noodle Soup',
+      color:0xffdd80
+    },
+    {
+      name:'stuffed_pumpkin_block_fluid',
+      displayName:'Pumpkin Stuffing',
+      color:0xdddddd
+    },
+    {
+      name:'mushroom_stew_fluid',
+      displayName:'Mushroom Stew',
+      color:0xb35900
+    },
+    {
+      name:'glow_berry_custard_fluid',
+      displayName:'Glow Berry Custard',
+      color:0xffff99
+    },
+    {
+      name:'beef_stew_fluid',
+      displayName:'Beef Stew',
+      color:0x990000
+    },
+    {
+      name:'cooked_rice_fluid',
+      displayName:'Rice',
+      color:0xffffe6
+    },
+    {
+      name:'bone_broth_fluid',
+      displayName:'Bone Broth',
+      color:0xffffe6
+    },
+    {
+      name:'rabbit_stew_fluid',
+      displayName:'Rabbit Stew',
+      color:0xb33c00
+    },
+    {
+      name:'pasta_with_mutton_chop_fluid',
+      displayName:'Mutton Pasta',
+      color:0xe67300
+    },
+    {
+      name:'baked_cod_stew_fluid',
+      displayName:'Cod Stew',
+      color:0xffff80
+    },
+    {
+      name:'squid_ink_pasta_fluid',
+      displayName:'Squid Ink Pasta',
+      color:0xffff80
+    },
+    {
+      name:'tomato_sauce_fluid',
+      displayName:'Tomato Sauce',
+      color:0xb32400
+    },
+    {
+      name:'fish_stew_fluid',
+      displayName:'Fish Stew',
+      color:0xff5c33
+    },
+    {
+      name:'pasta_with_meatballs_fluid',
+      displayName:'Spaghetti with Meatballs',
+      color:0xff0000
+    },
+    {
+      name:'dog_food_fluid',
+      displayName:'Dog Food',
+      color:0x800000
+    },
+    {
+      name:'ratatouille_fluid',
+      displayName:'Ratatouille',
+      color:0xe60000
+    },
+    {
+      name:'fried_rice_fluid',
+      displayName:'Fried Rice',
+      color:0xffcc99
+    },
+    {
+      name:'vegetable_soup_fluid',
+      displayName:'Vegetable Soup',
+      color:0x009900
+    },
+    {
+      name:'apple_cider_fluid',
+      displayName:'Apple Cider',
+      color:0xffad66
+    },
+    {
+      name:'chicken_soup_fluid',
+      displayName:'Chicken Soup',
+      color:0xffdd99
+    }
+
+  ].forEach(f => {
+    let fluid = event.create(f.name)
+      .thinTexture(f.color)
+      .bucketColor(f.color)
+      .displayName(f.displayName)
+      .stillTexture('tconstruct:block/fluid/stew/still')
+      .flowingTexture('tconstruct:block/fluid/stew/flowing')
+  });
+}
 
 ///// MODIFY CHARACTERISTICS OF ITEMS /////
 onEvent('item.modification', event => {
