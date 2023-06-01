@@ -104,7 +104,15 @@ event.create('aurorite')
        .thinTexture(0xEEEDC4)
        .bucketColor(0xEEEDC4)
        .displayName('White Grape Juice')
-	liquidFoodGen(event)
+
+  event.create('liquid_xp_nuggies')
+    .thickTexture(0x17ff45)
+    .bucketColor(0x17ff45)
+    .displayName('Liquified Experience Nuggets')
+    .stillTexture('tconstruct:block/fluid/molten/shimmer')
+    .flowingTexture('tconstruct:block/fluid/molten/shimmer')
+
+  liquidFoodGen(event)
 })
 
 //LIQUID FOODS
@@ -264,97 +272,69 @@ onEvent('block.modification', event => {
   event.modify('yigd:grave', block => {
     block.destroySpeed = -1
   })
-  event.modify('create:large_cogwheel', block => {
-    block.material = "Lantern"
+	event.modify('create:large_cogwheel', block => {
+	  block.material = "Lantern"
 
   })
   event.modify('create:cogwheel', block => {
-    block.material = "Lantern"
+	  block.material = "Lantern"
 
   })
 
   event.modify('minecraft:furnace', block => {
-    block.material = "Lantern"
+	  block.material = "Lantern"
   })
 
   event.modify('minecraft:smoker', block => {
-    block.material = "Lantern"
+	  block.material = "Lantern"
   })
 
   event.modify('minecraft:blast_furnace', block => {
-    block.material = "Lantern"
+	  block.material = "Lantern"
   })
 
-  event.modify('probablychests:normal_pot', block => {
-    block.destroySpeed = 1
-    block.hasCollision = true
+  event.modify('techreborn:crude_storage_unit', block => {
+	  block.material = "wood"
   })
 
-
-  event.modify('probablychests:nether_pot', block => {
-    block.destroySpeed = 1
-    block.hasCollision = true
-  })
-
-  event.modify('probablychests:lush_pot', block => {
-    block.destroySpeed = 1
-    block.hasCollision = true
-  })
-
-  event.modify('probablychests:rocky_pot', block => {
-    block.destroySpeed = 1
-    block.hasCollision = true
-
+  event.modify('techreborn:storage_buffer', block => {
+	  block.material = "wood"
   })
 
   event.modify('minecraft:diamond_ore', block => {
     block.destroySpeed = 6
     block.hasCollision = true
-    block.explosionResistance = 99999
+	  block.explosionResistance = 99999
   })
 
   event.modify('minecraft:deepslate_diamond_ore', block => {
     block.destroySpeed = 7
     block.hasCollision = true
-    block.explosionResistance = 99999
+	  block.explosionResistance = 99999
   })
-
-
-  event.modify('techreborn:tungsten_ore', block => {
-    block.destroySpeed = 6
-    block.hasCollision = true
-    block.explosionResistance = 99999
-  })
-
-  event.modify('techreborn:deepslate_tungsten_ore', block => {
-    block.destroySpeed = 7
-    block.hasCollision = true
-    block.explosionResistance = 99999
-  })
-
 
   event.modify('techreborn:silver_ore', block => {
     block.destroySpeed = 6
     block.hasCollision = true
-    block.explosionResistance = 99999
+	  block.explosionResistance = 99999
   })
 
   event.modify('techreborn:deepslate_silver_ore', block => {
     block.destroySpeed = 7
     block.hasCollision = true
-    block.explosionResistance = 99999
+	  block.explosionResistance = 99999
   })
 
   event.modify('techreborn:lead_ore', block => {
     block.destroySpeed = 6
     block.hasCollision = true
-    block.explosionResistance = 99999
+	  block.explosionResistance = 99999
   })
 
   event.modify('techreborn:deepslate_lead_ore', block => {
     block.destroySpeed = 7
     block.hasCollision = true
-    block.explosionResistance = 99999
+	  block.explosionResistance = 99999
   })
 })
 
