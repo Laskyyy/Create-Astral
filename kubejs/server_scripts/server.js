@@ -1082,7 +1082,7 @@ onEvent("recipes", (event) => {
     ], 'createastral:star_shard', [ 
     event.recipes.createFilling('createastral:star_shard', ['createastral:star_shard', {fluid: 'kubejs:molten_yttrium', amount: 4500}]), 
     event.recipes.createPressing('createastral:star_shard', 'createastral:star_shard'), 
-    event.recipes.createDeploying('createastral:star_shard', ['techreborn:scrapbox', 'techreborn:scrapbox']), 
+    event.recipes.createDeploying('createastral:star_shard', ['techreborn:scrap_box', 'techreborn:scrap_box']), 
     event.recipes.createPressing('createastral:star_shard', 'createastral:star_shard'), 
     ]).transitionalItem('createastral:star_shard').loops(3) 
 
