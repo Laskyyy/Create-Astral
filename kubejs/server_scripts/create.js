@@ -16,6 +16,8 @@ onEvent("recipes", (event) => {
     pressingRecipes(event);
     compactingRecipes(event);
     farmersDelightIntegration(event);
+    superheatedMixingRecipes(event);
+    sandpaperRecipes(event);
 });
 
 function millingRecipes(event) {
@@ -2398,4 +2400,28 @@ function compactingRecipes(event) {
         ])
         .superheated()
         .processingTime(1500);
+}
+function superheatedMixingRecipes(event) {
+    //[input, output]
+    [
+        ['minecraft:cobblestone', 'minecraft:blackstone'],
+        ['minecraft:calcite', 'minecraft:tuff'],
+        ['minecraft:obsidian', 'minecraft:crying_obsidian'],
+        ['compressor:octuple_compressed_cobblestone', 'createastral:uwaah']
+    ].forEach((recipe) => {
+        event.recipes
+            .createMixing(recipe[1], recipe[0])
+            .superheated()
+            .processingTime(20);
+    });
+}
+function sandpaperRecipes(event) {
+    [
+        ['minecraft:blackstone', 'minecraft:netherrack'],
+        ['minecraft:nether_bricks', 'minecraft:red_nether_bricks'],
+        ['tconstruct:earth_slime_grass_seeds', 'tconstruct:blood_slime_grass_seeds']
+    ].forEach((recipe) => {
+        event.recipes
+            .createSandpaperPolishing(recipe[1], recipe[0]);
+    });
 }
