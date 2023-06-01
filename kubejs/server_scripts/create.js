@@ -16,6 +16,8 @@ onEvent("recipes", (event) => {
     pressingRecipes(event);
     compactingRecipes(event);
     farmersDelightIntegration(event);
+    superheatedMixingRecipes(event);
+    sandpaperRecipes(event);
 });
 
 function millingRecipes(event) {
@@ -400,13 +402,6 @@ function itemApplication(event) {
                 { item: "create:sturdy_sheet" },
             ],
             results: [{ item: "techreborn:industrial_machine_casing" }],
-        },
-        {
-            ingredients: [
-                { item: "techreborn:rubber_log_stripped" },
-                { item: "create:andesite_alloy" },
-            ],
-            results: [{ item: "create:andesite_casing" }],
         },
     ].forEach((recipe) => {
         event.custom({
@@ -1775,6 +1770,14 @@ function cuttingRecipes(event) {
         ["techreborn:rubber_log", "techreborn:rubber_log_stripped"],
         ["techreborn:rubber_wood", "techreborn:stripped_rubber_wood"],
         ["techreborn:rubber_log_stripped", "6x techreborn:rubber_planks"],
+        ["vinery:cherry_log", "vinery:stripped_cherry_log"],
+        ["vinery:stripped_cherry_log", "6x vinery:cherry_planks"],
+        ["vinery:old_cherry_log", "vinery:stripped_old_cherry_log"],
+        ["vinery:stripped_old_cherry_log", "6x vinery:cherry_planks"],
+        ["vinery:cherry_wood", "vinery:stripped_cherry_wood"],
+        ["vinery:old_cherry_wood", "vinery:stripped_old_cherry_wood"],
+        ["ad_astra:glacian_log","ad_astra:stripped_glacian_log"],
+        ["ad_astra:stripped_glacian_log", "6x ad_astra:glacian_planks"],
     ].forEach((recipe) => {
         event.recipes.createCutting(recipe[1], recipe[0]);
     });
@@ -2408,4 +2411,28 @@ function compactingRecipes(event) {
         ])
         .superheated()
         .processingTime(1500);
+}
+function superheatedMixingRecipes(event) {
+    //[input, output]
+    [
+        ['minecraft:cobblestone', 'minecraft:blackstone'],
+        ['minecraft:calcite', 'minecraft:tuff'],
+        ['minecraft:obsidian', 'minecraft:crying_obsidian'],
+        ['compressor:octuple_compressed_cobblestone', 'createastral:uwaah']
+    ].forEach((recipe) => {
+        event.recipes
+            .createMixing(recipe[1], recipe[0])
+            .superheated()
+            .processingTime(20);
+    });
+}
+function sandpaperRecipes(event) {
+    [
+        ['minecraft:blackstone', 'minecraft:netherrack'],
+        ['minecraft:nether_bricks', 'minecraft:red_nether_bricks'],
+        ['tconstruct:earth_slime_grass_seeds', 'tconstruct:blood_slime_grass_seeds']
+    ].forEach((recipe) => {
+        event.recipes
+            .createSandpaperPolishing(recipe[1], recipe[0]);
+    });
 }
