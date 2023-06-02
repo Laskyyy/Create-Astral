@@ -4,192 +4,150 @@ onEvent("recipes", (event) => {
         {
             input: ["kubejs:molten_desh_bucket", 1],
             output: ["tconstruct:molten_electrum_bucket", 1],
-            energy: 4000,
+            energy: 4000
         },
         {
             input: ["techreborn:synthetic_redstone_crystal", 1],
             output: ["minecraft:redstone", 5],
-            energy: 5000,
+            energy: 5000
         },
         {
             input: ["createastral:golden_pin", 1],
             output: ["createastral:electrified_pin", 1],
-            energy: 800,
-        },
+            energy: 800
+        }
     ].forEach((recipe) => {
         event.custom({
             type: "createaddition:charging",
             input: {
                 item: recipe.input[0],
-                count: recipe.input[1],
+                count: recipe.input[1]
             },
             result: {
                 item: recipe.output[0],
-                count: recipe.output[1],
+                count: recipe.output[1]
             },
-            energy: recipe.energy,
+            energy: recipe.energy
         });
     });
 
     event.custom({
         type: "createaddition:rolling",
         input: {
-            tag: "c:nuggets/gold",
+            tag: "c:nuggets/gold"
         },
         result: {
             item: "createastral:golden_pin",
-            count: 1,
-        },
+            count: 1
+        }
     });
     event.custom({
         type: "createaddition:rolling",
         input: {
-            item: "ad_astra:calorite_nugget",
+            item: "ad_astra:calorite_nugget"
         },
         result: {
             item: "createastral:calorite_pin",
-            count: 1,
-        },
+            count: 1
+        }
     });
     // CreateSifting
     [
         {
-            inputs: [
-                { item: "createsifter:andesite_mesh" },
-                { item: "minecraft:gravel" },
-            ],
+            inputs: [{ item: "createsifter:andesite_mesh" }, { item: "minecraft:gravel" }],
             outputs: [
                 { item: "minecraft:iron_nugget", chance: 0.15 },
-                { item: "minecraft:flint", chance: 0.35 },
+                { item: "minecraft:flint", chance: 0.35 }
             ],
-            processingTime: 50,
+            processingTime: 50
         },
         {
-            inputs: [
-                { item: "createsifter:andesite_mesh" },
-                { item: "minecraft:sand" },
-            ],
+            inputs: [{ item: "createsifter:andesite_mesh" }, { item: "minecraft:sand" }],
             outputs: [
                 { item: "minecraft:bone", chance: 0.01 },
                 { item: "minecraft:string", chance: 0.02 },
                 { item: "minecraft:rotten_flesh", chance: 0.01 },
                 { item: "minecraft:feather", chance: 0.01 },
-                { item: "minecraft:ink_sac", chance: 0.005 },
+                { item: "minecraft:ink_sac", chance: 0.005 }
             ],
-            processingTime: 200,
+            processingTime: 200
         },
         {
-            inputs: [
-                { item: "createsifter:andesite_mesh" },
-                { item: "minecraft:cobblestone" },
-            ],
+            inputs: [{ item: "createsifter:andesite_mesh" }, { item: "minecraft:cobblestone" }],
             outputs: [{ item: "techreborn:tin_nugget", chance: 0.05 }],
-            processingTime: 50,
+            processingTime: 50
         },
         {
-            inputs: [
-                { item: "createsifter:andesite_mesh" },
-                { item: "minecraft:flint" },
-            ],
+            inputs: [{ item: "createsifter:andesite_mesh" }, { item: "minecraft:flint" }],
             outputs: [{ item: "minecraft:music_disc_13", chance: 0.0005 }],
-            processingTime: 50,
+            processingTime: 50
         },
         {
-            inputs: [
-                { item: "createsifter:andesite_mesh" },
-                { tag: "c:deepslate" },
-            ],
+            inputs: [{ item: "createsifter:andesite_mesh" }, { tag: "c:deepslate" }],
             outputs: [{ item: "minecraft:redstone", chance: 0.05 }],
-            processingTime: 50,
+            processingTime: 50
         },
         {
-            inputs: [
-                { item: "createsifter:andesite_mesh" },
-                { item: "ad_astra:moon_sand" },
-            ],
+            inputs: [{ item: "createsifter:andesite_mesh" }, { item: "ad_astra:moon_sand" }],
             outputs: [
                 { item: "minecraft:gunpowder", chance: 0.05 },
                 { item: "minecraft:glowstone_dust", chance: 0.1 },
-                { item: "ae2:certus_quartz_dust", chance: 0.03 },
+                { item: "ae2:certus_quartz_dust", chance: 0.03 }
             ],
-            processingTime: 400,
+            processingTime: 400
         },
         {
-            inputs: [
-                { item: "createsifter:andesite_mesh" },
-                { item: "ad_astra:mars_sand" },
-            ],
+            inputs: [{ item: "createsifter:andesite_mesh" }, { item: "ad_astra:mars_sand" }],
             outputs: [
                 { item: "minecraft:gold_nugget", chance: 0.05 },
-                { item: "techreborn:lazurite_dust", chance: 0.05 },
+                { item: "techreborn:lazurite_dust", chance: 0.05 }
             ],
-            processingTime: 600,
+            processingTime: 600
         },
         {
-            inputs: [
-                { item: "createsifter:andesite_mesh" },
-                { item: "minecraft:coarse_dirt" },
-            ],
+            inputs: [{ item: "createsifter:andesite_mesh" }, { item: "minecraft:coarse_dirt" }],
             outputs: [
                 { item: "minecraft:dirt", chance: 1 },
-                { item: "minecraft:flint", chance: 0.3 },
+                { item: "minecraft:flint", chance: 0.3 }
             ],
-            processingTime: 50,
+            processingTime: 50
         },
         {
-            inputs: [
-                { item: "createsifter:brass_mesh" },
-                { item: "minecraft:basalt" },
-            ],
+            inputs: [{ item: "createsifter:brass_mesh" }, { item: "minecraft:basalt" }],
             outputs: [
                 { item: "minecraft:magma_cream", chance: 0.1 },
                 { item: "minecraft:ghast_tear", chance: 0.05 },
-                { item: "minecraft:blaze_powder", chance: 0.1 },
+                { item: "minecraft:blaze_powder", chance: 0.1 }
             ],
-            processingTime: 200,
+            processingTime: 200
         },
         {
-            inputs: [
-                { item: "createsifter:andesite_mesh" },
-                { item: "minecraft:basalt" },
-            ],
+            inputs: [{ item: "createsifter:andesite_mesh" }, { item: "minecraft:basalt" }],
             outputs: [{ item: "minecraft:ender_pearl", chance: 0.04 }],
-            processingTime: 200,
+            processingTime: 200
         },
 
         {
-            inputs: [
-                { item: "createsifter:brass_mesh" },
-                { item: "minecraft:cobblestone" },
-            ],
+            inputs: [{ item: "createsifter:brass_mesh" }, { item: "minecraft:cobblestone" }],
             outputs: [{ item: "techreborn:tin_nugget", chance: 0.08 }],
-            processingTime: 50,
+            processingTime: 50
         },
         {
-            inputs: [
-                { item: "createsifter:brass_mesh" },
-                { item: "minecraft:flint" },
-            ],
+            inputs: [{ item: "createsifter:brass_mesh" }, { item: "minecraft:flint" }],
             outputs: [{ item: "minecraft:music_disc_13", chance: 0.001 }],
-            processingTime: 20,
+            processingTime: 20
         },
         {
-            inputs: [
-                { item: "createsifter:brass_mesh" },
-                { item: "minecraft:cobbled_deepslate" },
-            ],
+            inputs: [{ item: "createsifter:brass_mesh" }, { item: "minecraft:cobbled_deepslate" }],
             outputs: [
                 { item: "minecraft:redstone", chance: 0.1 },
-                { item: "create:copper_nugget", chance: 0.05 },
+                { item: "create:copper_nugget", chance: 0.05 }
             ],
-            processingTime: 50,
+            processingTime: 50
         },
 
         {
-            inputs: [
-                { item: "createsifter:brass_mesh" },
-                { item: "extractinator:silt" },
-            ],
+            inputs: [{ item: "createsifter:brass_mesh" }, { item: "extractinator:silt" }],
             outputs: [
                 { item: "minecraft:raw_iron", chance: 0.2 },
                 { item: "minecraft:raw_copper", chance: 0.4 },
@@ -200,15 +158,12 @@ onEvent("recipes", (event) => {
                 { item: "create:crushed_copper_ore", chance: 0.4 },
                 { item: "create:crushed_gold_ore", chance: 0.2 },
                 { item: "create:crushed_tin_ore", chance: 0.2 },
-                { item: "create:crushed_zinc_ore", chance: 0.2 },
+                { item: "create:crushed_zinc_ore", chance: 0.2 }
             ],
-            processingTime: 1000,
+            processingTime: 1000
         },
         {
-            inputs: [
-                { item: "createsifter:brass_mesh" },
-                { item: "extractinator:slush" },
-            ],
+            inputs: [{ item: "createsifter:brass_mesh" }, { item: "extractinator:slush" }],
             outputs: [
                 { item: "minecraft:raw_iron", chance: 0.2 },
                 { item: "minecraft:raw_copper", chance: 0.4 },
@@ -219,16 +174,13 @@ onEvent("recipes", (event) => {
                 { item: "create:crushed_copper_ore", chance: 0.4 },
                 { item: "create:crushed_gold_ore", chance: 0.2 },
                 { item: "create:crushed_tin_ore", chance: 0.2 },
-                { item: "create:crushed_zinc_ore", chance: 0.2 },
+                { item: "create:crushed_zinc_ore", chance: 0.2 }
             ],
-            processingTime: 1000,
+            processingTime: 1000
         },
 
         {
-            inputs: [
-                { item: "createsifter:brass_mesh" },
-                { item: "minecraft:prismarine" },
-            ],
+            inputs: [{ item: "createsifter:brass_mesh" }, { item: "minecraft:prismarine" }],
             outputs: [
                 { item: "minecraft:raw_cod", chance: 0.2 },
                 { item: "minecraft:raw_salmon", chance: 0.1 },
@@ -236,59 +188,58 @@ onEvent("recipes", (event) => {
                 { item: "minecraft:pufferfishh", chance: 0.03 },
                 { item: "minecraft:nautilus_shell", chance: 0.02 },
                 { item: "minecraft:lily_pad", chance: 0.2 },
-                { item: "minecraft:glow_ink_sac", chance: 0.1 },
-
+                { item: "minecraft:glow_ink_sac", chance: 0.1 }
             ],
-            processingTime: 100,
+            processingTime: 100
         },
 
         {
             inputs: [
                 {
-                    item: "createsifter:andesite_mesh",
+                    item: "createsifter:andesite_mesh"
                 },
                 {
-                    item: "minecraft:clay",
-                },
+                    item: "minecraft:clay"
+                }
             ],
             outputs: [
                 {
                     item: "minecraft:kelp",
-                    chance: 0.2,
+                    chance: 0.2
                 },
                 {
                     item: "minecraft:seagrass",
-                    chance: 0.3,
+                    chance: 0.3
                 },
                 {
                     item: "minecraft:tube_coral",
-                    chance: 0.05,
+                    chance: 0.05
                 },
                 {
                     item: "minecraft:brain_coral",
-                    chance: 0.05,
+                    chance: 0.05
                 },
                 {
                     item: "minecraft:bubble_coral",
-                    chance: 0.05,
+                    chance: 0.05
                 },
                 {
                     item: "minecraft:fire_coral",
-                    chance: 0.05,
+                    chance: 0.05
                 },
                 {
                     item: "minecraft:horn_coral",
-                    chance: 0.05,
-                },
+                    chance: 0.05
+                }
             ],
-            processingTime: 50,
-        },
+            processingTime: 50
+        }
     ].forEach((recipe) => {
         event.custom({
             type: "createsifter:sifting",
             ingredients: recipe.inputs,
             results: recipe.outputs,
-            processingTime: recipe.processingTime,
+            processingTime: recipe.processingTime
         });
     });
 });

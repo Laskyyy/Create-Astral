@@ -16,15 +16,15 @@ onEvent("recipes", (event) => {
             ingredients: [
                 {
                     item: "create:" + material + "_sheet",
-                    count: 2,
-                },
+                    count: 2
+                }
             ],
             results: [
                 {
                     item: "createaddition:" + material + "_wire",
-                    count: 6,
-                },
-            ],
+                    count: 6
+                }
+            ]
         });
     }
     //Compressor
@@ -35,15 +35,15 @@ onEvent("recipes", (event) => {
         ingredients: [
             {
                 item: "techreborn:compressed_plantball",
-                count: 4,
-            },
+                count: 4
+            }
         ],
         results: [
             {
                 item: "createaddition:biomass",
-                count: 1,
-            },
-        ],
+                count: 1
+            }
+        ]
     });
     event.custom({
         type: "techreborn:compressor",
@@ -52,15 +52,15 @@ onEvent("recipes", (event) => {
         ingredients: [
             {
                 item: "create:sturdy_sheet",
-                count: 16,
-            },
+                count: 16
+            }
         ],
         results: [
             {
                 item: "ad_astra:rocket_fin",
-                count: 1,
-            },
-        ],
+                count: 1
+            }
+        ]
     });
 
     //Grinder
@@ -80,20 +80,14 @@ onEvent("recipes", (event) => {
     const DEFAULT_GRIND_TIME = 100; // five seconds
     const DEFAULT_GRIND_POWER = 5;
     const CRUSHING_RECIPES_TO_BECOME_GRINDING = [
-        [
-            "minecraft:clay_ball",
-            1,
-            "techreborn:clay_dust",
-            undefined,
-            undefined,
-        ], // showing the 4th and 5th for demonstration
+        ["minecraft:clay_ball", 1, "techreborn:clay_dust", undefined, undefined], // showing the 4th and 5th for demonstration
         ["minecraft:amethyst_cluster", 7, "minecraft:amethyst_shard"],
         ["minecraft:prismarine_crystals", 2, "minecraft:quartz"],
         ["minecraft:saddle", 3, "minecraft:leather"],
         ["minecraft:wheat", 3, "create:wheat_flour"],
         ["minecraft:ender_pearl", 2, "ae2:ender_dust"],
         ["tconstruct:necrotic_bone", 6, "minecraft:bone_meal"],
-        ["minecraft:dried_kelp", 1, "minecraft:gunpowder"],
+        ["minecraft:dried_kelp", 1, "minecraft:gunpowder"]
     ];
 
     for (let recipe of CRUSHING_RECIPES_TO_BECOME_GRINDING) {
@@ -106,15 +100,15 @@ onEvent("recipes", (event) => {
             ingredients: [
                 {
                     item: recipe[0],
-                    count: 1,
-                },
+                    count: 1
+                }
             ],
             results: [
                 {
                     item: recipe[2],
-                    count: recipe[1],
-                },
-            ],
+                    count: recipe[1]
+                }
+            ]
         });
     }
 
@@ -126,15 +120,15 @@ onEvent("recipes", (event) => {
         ingredients: [
             {
                 item: "minecraft:pointed_dripstone",
-                count: 1,
-            },
+                count: 1
+            }
         ],
         results: [
             {
                 item: "minecraft:clay_ball",
-                count: 1,
-            },
-        ],
+                count: 1
+            }
+        ]
     });
 
     //Implosion Compressor
@@ -146,22 +140,22 @@ onEvent("recipes", (event) => {
         ingredients: [
             {
                 count: 1,
-                item: "techreborn:steel_dust",
+                item: "techreborn:steel_dust"
             },
             {
                 item: "minecraft:tnt",
-                count: 1,
-            },
+                count: 1
+            }
         ],
         results: [
             {
                 item: "ad_astra:steel_ingot",
-                count: 1,
+                count: 1
             },
             {
                 item: "techreborn:steel_nugget",
-                count: 2,
-            },
-        ],
+                count: 2
+            }
+        ]
     });
 });

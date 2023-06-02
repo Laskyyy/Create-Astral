@@ -1,5 +1,5 @@
-var FULL_BUCKET_AMMOUNT = 81000;
-var INGOT_FLUID_AMMOUNT = 9000;
+const FULL_BUCKET_AMMOUNT = 81000;
+const INGOT_FLUID_AMMOUNT = 9000;
 
 onEvent("recipes", (event) => {
     // Fluid: [string Fluid Name, Fluid Amount]
@@ -11,26 +11,26 @@ onEvent("recipes", (event) => {
             fluid: ["kubejs:compound_mixture", INGOT_FLUID_AMMOUNT * 9],
             result: "createastral:andesite_alloy_block",
             cooling_time: 180,
-            cast: null,
+            cast: null
         },
         {
             fluid: ["kubejs:blast-resistant_cement", FULL_BUCKET_AMMOUNT],
             result: "createastral:blast-resistant_concrete",
             cooling_time: 400,
-            cast: null,
+            cast: null
         },
         {
             fluid: ["tconstruct:molten_quartz", (3 * FULL_BUCKET_AMMOUNT) / 10],
             result: "minecraft:granite",
             cooling_time: 140,
-            cast: ["minecraft:diorite", true],
+            cast: ["minecraft:diorite", true]
         },
         {
             fluid: ["tconstruct:liquid_soul", FULL_BUCKET_AMMOUNT],
             result: "minecraft:diorite",
             cooling_time: 80,
-            cast: ["minecraft:basalt", true],
-        },
+            cast: ["minecraft:basalt", true]
+        }
     ].forEach((recipe) => {
         event.custom({
             type: "tconstruct:casting_basin",
@@ -38,10 +38,10 @@ onEvent("recipes", (event) => {
             cast_consumed: recipe.cast ? recipe.cast[1] : false,
             fluid: {
                 name: recipe.fluid[0],
-                amount: recipe.fluid[1],
+                amount: recipe.fluid[1]
             },
             result: recipe.result,
-            cooling_time: recipe.cooling_time,
+            cooling_time: recipe.cooling_time
         });
     });
 
@@ -50,13 +50,13 @@ onEvent("recipes", (event) => {
     event.custom({
         type: "tconstruct:entity_melting",
         entity: {
-            type: "minecraft:blaze",
+            type: "minecraft:blaze"
         },
         result: {
             fluid: "tconstruct:blazing_blood",
-            amount: BLAZING_BLOOD_MADIC_AMOUNT,
+            amount: BLAZING_BLOOD_MADIC_AMOUNT
         },
-        damage: 2,
+        damage: 2
     });
 
     [
@@ -64,26 +64,26 @@ onEvent("recipes", (event) => {
             fluid: ["kubejs:shimmer", 4500],
             result: "ae2:fluix_dust",
             cooling_time: 40,
-            cast: ["ae2:certus_quartz_dust", true],
+            cast: ["ae2:certus_quartz_dust", true]
         },
         {
             fluid: ["tconstruct:molten_bronze", 4000],
             result: "create:cogwheel",
             cooling_time: 100,
-            cast: ["tconstruct:coin_cast", false],
+            cast: ["tconstruct:coin_cast", false]
         },
         {
             fluid: ["tconstruct:molten_bronze", 12000],
             result: "create:large_cogwheel",
             cooling_time: 100,
-            cast: ["tconstruct:gear_cast", false],
+            cast: ["tconstruct:gear_cast", false]
         },
         {
             fluid: ["tconstruct:molten_gold", 45000],
             result: "createastral:golden_bowl",
             cooling_time: 100,
-            cast: ["tconstruct:round_plate_cast", false],
-        },
+            cast: ["tconstruct:round_plate_cast", false]
+        }
     ].forEach((recipe) => {
         event.custom({
             type: "tconstruct:casting_table",
@@ -91,10 +91,10 @@ onEvent("recipes", (event) => {
             cast_consumed: recipe.cast ? recipe.cast[1] : false,
             fluid: {
                 name: recipe.fluid[0],
-                amount: recipe.fluid[1],
+                amount: recipe.fluid[1]
             },
             result: recipe.result,
-            cooling_time: recipe.cooling_time,
+            cooling_time: recipe.cooling_time
         });
     });
 });
