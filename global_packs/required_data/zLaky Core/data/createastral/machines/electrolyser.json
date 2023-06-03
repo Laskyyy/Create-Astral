@@ -19,14 +19,14 @@
       "type": "custommachinery:player_inventory"
     },
     {
-      "id": "watertank",
+      "id": "input_tank",
       "x": 90,
       "y": 30,
       "type": "custommachinery:fluid"
     },
     
     {
-      "id": "oxygentank",
+      "id": "output_tank",
       "x": 142,
       "y": 30,
       "type": "custommachinery:fluid"
@@ -53,20 +53,14 @@
     {
       "type": "custommachinery:fluid",
       "capacity": 810000,
-      "id": "oxygentank",
-      "maxInput": 0,
-      "maxOutput": 1000,
-      "filter": ["ad_astra:oxygen"],
-      "whitelist": true
-  },
+      "id": "output_tank",
+      "mode":"output"
+    },
     {
       "type": "custommachinery:fluid",
       "capacity": 810000,
-      "id": "watertank",
-      "maxInput": 666,
-      "maxOutput": 0,
-      "filter": ["minecraft:water"],
-      "whitelist": true
-  }
+      "id": "input_tank",
+      "mode":"input"
+    }
   ]
 }
