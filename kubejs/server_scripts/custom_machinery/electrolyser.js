@@ -6,7 +6,7 @@ onEvent("server.datapack.first", (event) => {
             time: 20,
             input: {
                 "type": "custommachinery:fluid",
-                "fluid": "minecraft:water",
+                "fluid": "minecraft:lava",
                 "amount": 8100,
             },
             output: {
