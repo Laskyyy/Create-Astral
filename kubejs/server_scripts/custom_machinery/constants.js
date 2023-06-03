@@ -1,5 +1,9 @@
 //priority: 101
 
+//This file is used for managing ALL the structures, and some other needed variables. 
+
+const AMOUNT_PER_MB=81
+
 const structureCustomElectrolyser = {
     "type": "custommachinery:structure",
     "keys": {
