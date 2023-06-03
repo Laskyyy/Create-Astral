@@ -1,6 +1,6 @@
 //priority: 101
 
-const structureCustomElectrolyser = `{
+const structureCustomElectrolyser = {
     "type": "custommachinery:structure",
     "keys": {
         "a": "create:copper_casing",
@@ -21,4 +21,4 @@ const structureCustomElectrolyser = `{
             "aaa"
         ]
     ]
-}`;
+};
