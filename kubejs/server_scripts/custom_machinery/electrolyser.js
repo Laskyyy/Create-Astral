@@ -1,4 +1,18 @@
+//for the structure of Elactrolyser, see 'constants.js'
+
 onEvent("recipes", (event) => {
+
+    /**
+     * time: the time required for a recipe to finish, in ticks. 
+     *  
+     * inputs: the input of a recipe. 
+     *     Currently, the 'inputs' only accepts a single entry, 
+     *     'type' should be fluid, and 'amount' should not be larger than 810000. 
+     *  
+     * outputs: the product of a recipe. 
+     *     Currently, the 'outputs' only accepts a single entry, 
+     *     'type' should be fluid, and 'amount' should not be larger than 810000. 
+     */
     const recipes = [
         {
             time: 20,
@@ -29,7 +43,7 @@ onEvent("recipes", (event) => {
                 recipe.outputs
             ]
         };
-        event.custom(jsn).id(`createastral:recipes/electrolyser/recipes_${recipeCounter}`);
+        event.custom(jsn).id(`createastral:electrolyser_recipe_${recipeCounter}`);
         recipeCounter += 1;
     });
 });
