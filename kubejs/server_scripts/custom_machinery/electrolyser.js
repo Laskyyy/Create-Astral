@@ -20,13 +20,13 @@ onEvent("recipes", (event) => {
                 type: "custommachinery:fluid",
                 mode: "input",
                 fluid: "minecraft:lava",
-                amount: 8100
+                amount: AMOUNT_PER_MB*100
             },
             outputs: {
                 type: "custommachinery:fluid",
                 mode: "output",
                 fluid: "ad_astra:oxygen",
-                amount: 860
+                amount: AMOUNT_PER_MB*10
             },
         },
     ];
