@@ -1788,7 +1788,6 @@ function hauntingRecipes(event) {
         ["2x techreborn:charcoal_dust", "techreborn:coal_dust"],
         ["2x minecraft:charcoal", "minecraft:coal"],
         ["minecraft:sand", "minecraft:soul_sand"],
-        ["minecraft:soul_sand", "minecraft:netherrack"],
     ].forEach((recipe) => {
         event.recipes.createHaunting(recipe[1], recipe[0]);
     });
