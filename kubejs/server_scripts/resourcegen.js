@@ -1,41 +1,69 @@
-var FULL_BUCKET_AMMOUNT = 81000;
-var INGOT_FLUID_AMMOUNT = 9000;
-
-
 onEvent("recipes", (event) => {
     LakyCompactingRecipes(event);
     LakyCrushingRecipes(event);
-
 });
 
 function LakyCompactingRecipes(event) {
-
     const recipeList = [
-        ["create:ochrum", "minecraft:sandstone", "minecraft:dripstone_block", { fluid: "create:honey", amount: 8100 }, "minecraft:yellow_dye"],
-        ["create:crimsite", "minecraft:tuff", "minecraft:red_sand", { fluid: "tconstruct:blood", amount: 8100 }, "minecraft:red_dye"],
-        ["create:limestone", "minecraft:calcite", "minecraft:clay", { fluid: "milk:still_milk", amount: 8100 }, "minecraft:white_dye"],
-        ["create:veridium", "minecraft:basalt", "minecraft:slime_ball", { fluid: "minecraft:lava", amount: 8100 }, "minecraft:green_dye"],
-        ["create:asurine", "minecraft:prismarine", "minecraft:kelp", { fluid: "minecraft:water", amount: 8100 }, "minecraft:blue_dye"],
-        ["create:scorchia", "minecraft:blackstone", "ad_astra:moon_sand", { fluid: "tconstruct:blazing_blood", amount: 8100 }, "minecraft:black_dye"],
-        ["create:scoria", "tconstruct:seared_stone", "minecraft:soul_soil", { fluid: "create:chocolate", amount: 8100 }, "minecraft:brown_dye"],
-
-        
+        [
+            "create:ochrum",
+            "minecraft:sandstone",
+            "minecraft:dripstone_block",
+            { fluid: "create:honey", amount: 8100 },
+            "minecraft:yellow_dye",
+        ],
+        [
+            "create:crimsite",
+            "minecraft:tuff",
+            "minecraft:red_sand",
+            { fluid: "tconstruct:blood", amount: 8100 },
+            "minecraft:red_dye",
+        ],
+        [
+            "create:limestone",
+            "minecraft:calcite",
+            "minecraft:clay",
+            { fluid: "milk:still_milk", amount: 8100 },
+            "minecraft:white_dye",
+        ],
+        [
+            "create:veridium",
+            "minecraft:basalt",
+            "minecraft:slime_ball",
+            { fluid: "minecraft:lava", amount: 8100 },
+            "minecraft:green_dye",
+        ],
+        [
+            "create:asurine",
+            "minecraft:prismarine",
+            "minecraft:kelp",
+            { fluid: "minecraft:water", amount: 8100 },
+            "minecraft:blue_dye",
+        ],
+        [
+            "create:scorchia",
+            "minecraft:blackstone",
+            "ad_astra:moon_sand",
+            { fluid: "tconstruct:blazing_blood", amount: 8100 },
+            "minecraft:black_dye",
+        ],
+        [
+            "create:scoria",
+            "tconstruct:seared_stone",
+            "minecraft:soul_soil",
+            { fluid: "create:chocolate", amount: 8100 },
+            "minecraft:brown_dye",
+        ],
     ];
-    
+
     recipeList.forEach((entry) => {
         const recipe = {
             output: entry[0],
-            input: [
-                entry[1],
-                entry[2],
-                entry[3],
-                entry[4]
-
-            ],
+            input: [entry[1], entry[2], entry[3], entry[4]],
             heat: "",
             time: 400,
         };
-    
+
         event.recipes
             .createCompacting(recipe.output, recipe.input)
             .heatRequirement(recipe.heat ?? "")
@@ -43,14 +71,10 @@ function LakyCompactingRecipes(event) {
     });
 }
 function LakyCrushingRecipes(event) {
-
-
     const CRUSHING_ORE_BONUS_ORE_YIELD = 0.33;
     const CRUSHING_ORE_BONUS_XP_CHUNKS = 0.33;
 
-
     [
-        
         {
             input: "create:ochrum",
             outputs: [
@@ -148,9 +172,7 @@ function LakyCrushingRecipes(event) {
         },
         {
             input: "dbe:vanta_black",
-            outputs: [
-                ["minecraft:black_dye", 1],
-            ],
+            outputs: [["minecraft:black_dye", 1]],
         },
     ].forEach((recipe) => {
         let cleanoutputs = [];

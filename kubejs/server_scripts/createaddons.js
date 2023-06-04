@@ -54,10 +54,7 @@ onEvent("recipes", (event) => {
     // CreateSifting
     [
         {
-            inputs: [
-                { item: "createsifter:andesite_mesh" },
-                { item: "minecraft:gravel" },
-            ],
+            inputs: [{ item: "createsifter:andesite_mesh" }, { item: "minecraft:gravel" }],
             outputs: [
                 { item: "minecraft:iron_nugget", chance: 0.15 },
                 { item: "minecraft:flint", chance: 0.35 },
@@ -65,10 +62,7 @@ onEvent("recipes", (event) => {
             processingTime: 50,
         },
         {
-            inputs: [
-                { item: "createsifter:andesite_mesh" },
-                { item: "minecraft:sand" },
-            ],
+            inputs: [{ item: "createsifter:andesite_mesh" }, { item: "minecraft:sand" }],
             outputs: [
                 { item: "minecraft:bone", chance: 0.01 },
                 { item: "minecraft:string", chance: 0.02 },
@@ -79,34 +73,22 @@ onEvent("recipes", (event) => {
             processingTime: 200,
         },
         {
-            inputs: [
-                { item: "createsifter:andesite_mesh" },
-                { item: "minecraft:cobblestone" },
-            ],
+            inputs: [{ item: "createsifter:andesite_mesh" }, { item: "minecraft:cobblestone" }],
             outputs: [{ item: "techreborn:tin_nugget", chance: 0.05 }],
             processingTime: 50,
         },
         {
-            inputs: [
-                { item: "createsifter:andesite_mesh" },
-                { item: "minecraft:flint" },
-            ],
+            inputs: [{ item: "createsifter:andesite_mesh" }, { item: "minecraft:flint" }],
             outputs: [{ item: "minecraft:music_disc_13", chance: 0.0005 }],
             processingTime: 50,
         },
         {
-            inputs: [
-                { item: "createsifter:andesite_mesh" },
-                { tag: "c:deepslate" },
-            ],
+            inputs: [{ item: "createsifter:andesite_mesh" }, { tag: "c:deepslate" }],
             outputs: [{ item: "minecraft:redstone", chance: 0.05 }],
             processingTime: 50,
         },
         {
-            inputs: [
-                { item: "createsifter:andesite_mesh" },
-                { item: "ad_astra:moon_sand" },
-            ],
+            inputs: [{ item: "createsifter:andesite_mesh" }, { item: "ad_astra:moon_sand" }],
             outputs: [
                 { item: "minecraft:gunpowder", chance: 0.05 },
                 { item: "minecraft:glowstone_dust", chance: 0.1 },
@@ -115,10 +97,7 @@ onEvent("recipes", (event) => {
             processingTime: 400,
         },
         {
-            inputs: [
-                { item: "createsifter:andesite_mesh" },
-                { item: "ad_astra:mars_sand" },
-            ],
+            inputs: [{ item: "createsifter:andesite_mesh" }, { item: "ad_astra:mars_sand" }],
             outputs: [
                 { item: "minecraft:gold_nugget", chance: 0.05 },
                 { item: "techreborn:lazurite_dust", chance: 0.05 },
@@ -126,10 +105,7 @@ onEvent("recipes", (event) => {
             processingTime: 600,
         },
         {
-            inputs: [
-                { item: "createsifter:andesite_mesh" },
-                { item: "minecraft:coarse_dirt" },
-            ],
+            inputs: [{ item: "createsifter:andesite_mesh" }, { item: "minecraft:coarse_dirt" }],
             outputs: [
                 { item: "minecraft:dirt", chance: 1 },
                 { item: "minecraft:flint", chance: 0.3 },
@@ -137,10 +113,7 @@ onEvent("recipes", (event) => {
             processingTime: 50,
         },
         {
-            inputs: [
-                { item: "createsifter:brass_mesh" },
-                { item: "minecraft:basalt" },
-            ],
+            inputs: [{ item: "createsifter:brass_mesh" }, { item: "minecraft:basalt" }],
             outputs: [
                 { item: "minecraft:magma_cream", chance: 0.1 },
                 { item: "minecraft:ghast_tear", chance: 0.05 },
@@ -149,35 +122,23 @@ onEvent("recipes", (event) => {
             processingTime: 200,
         },
         {
-            inputs: [
-                { item: "createsifter:andesite_mesh" },
-                { item: "minecraft:basalt" },
-            ],
+            inputs: [{ item: "createsifter:andesite_mesh" }, { item: "minecraft:basalt" }],
             outputs: [{ item: "minecraft:ender_pearl", chance: 0.04 }],
             processingTime: 200,
         },
 
         {
-            inputs: [
-                { item: "createsifter:brass_mesh" },
-                { item: "minecraft:cobblestone" },
-            ],
+            inputs: [{ item: "createsifter:brass_mesh" }, { item: "minecraft:cobblestone" }],
             outputs: [{ item: "techreborn:tin_nugget", chance: 0.08 }],
             processingTime: 50,
         },
         {
-            inputs: [
-                { item: "createsifter:brass_mesh" },
-                { item: "minecraft:flint" },
-            ],
+            inputs: [{ item: "createsifter:brass_mesh" }, { item: "minecraft:flint" }],
             outputs: [{ item: "minecraft:music_disc_13", chance: 0.001 }],
             processingTime: 20,
         },
         {
-            inputs: [
-                { item: "createsifter:brass_mesh" },
-                { item: "minecraft:cobbled_deepslate" },
-            ],
+            inputs: [{ item: "createsifter:brass_mesh" }, { item: "minecraft:cobbled_deepslate" }],
             outputs: [
                 { item: "minecraft:redstone", chance: 0.1 },
                 { item: "create:copper_nugget", chance: 0.05 },
@@ -186,10 +147,7 @@ onEvent("recipes", (event) => {
         },
 
         {
-            inputs: [
-                { item: "createsifter:brass_mesh" },
-                { item: "extractinator:silt" },
-            ],
+            inputs: [{ item: "createsifter:brass_mesh" }, { item: "extractinator:silt" }],
             outputs: [
                 { item: "minecraft:raw_iron", chance: 0.2 },
                 { item: "minecraft:raw_copper", chance: 0.4 },
@@ -205,10 +163,7 @@ onEvent("recipes", (event) => {
             processingTime: 1000,
         },
         {
-            inputs: [
-                { item: "createsifter:brass_mesh" },
-                { item: "extractinator:slush" },
-            ],
+            inputs: [{ item: "createsifter:brass_mesh" }, { item: "extractinator:slush" }],
             outputs: [
                 { item: "minecraft:raw_iron", chance: 0.2 },
                 { item: "minecraft:raw_copper", chance: 0.4 },
@@ -225,10 +180,7 @@ onEvent("recipes", (event) => {
         },
 
         {
-            inputs: [
-                { item: "createsifter:brass_mesh" },
-                { item: "minecraft:prismarine" },
-            ],
+            inputs: [{ item: "createsifter:brass_mesh" }, { item: "minecraft:prismarine" }],
             outputs: [
                 { item: "minecraft:raw_cod", chance: 0.2 },
                 { item: "minecraft:raw_salmon", chance: 0.1 },
@@ -237,7 +189,6 @@ onEvent("recipes", (event) => {
                 { item: "minecraft:nautilus_shell", chance: 0.02 },
                 { item: "minecraft:lily_pad", chance: 0.2 },
                 { item: "minecraft:glow_ink_sac", chance: 0.1 },
-
             ],
             processingTime: 100,
         },

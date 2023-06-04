@@ -1,0 +1,4 @@
+//priority: 101
+
+const FULL_BUCKET_AMOUNT = 81000;
+const INGOT_FLUID_AMOUNT = 9000;
