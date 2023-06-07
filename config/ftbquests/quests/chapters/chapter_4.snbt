@@ -2202,15 +2202,22 @@
 		}
 		{
 			tasks: [
-				{
-					id: "3967A624C03BA62B"
-					type: "item"
-					item: "tconstruct:scorched_fuel_tank"
-				}
-				{
-					id: "3F799EF56B42E640"
-					type: "item"
-					item: "tconstruct:scorched_fuel_gauge"
+				title: "Any Scorched Tank"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "tconstruct:scorched_fuel_tank"
+								Count: 1b
+							}
+							{
+								id: "tconstruct:scorched_fuel_gauge"
+								Count: 1b
+							}
+						]
+					}
 				}
 			]
 			description: ["{chapter.5.quest.85.description.1}"]
