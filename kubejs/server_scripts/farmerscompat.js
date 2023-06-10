@@ -3,14 +3,13 @@ onEvent("recipes", (event) => {
     cuttingRecipeGen(event);
 });
 
-const FULL_BUCKET_AMOUNT = 81000;
-const INGOT_FLUID_AMOUNT = 9000;
-
 function mixingRecipeGen(event) {
     event.forEachRecipe({ type: "farmersdelight:cooking" }, (recipe) => {
         let outputItem = recipe.getOriginalRecipeResult().getId().split(":")[1];
         let inputItems = recipe.json.get("ingredients");
-        if (outputItem == "cabbage_rolls") return; //too few ingredients to add recipe for
+        if (outputItem == "cabbage_rolls") {
+            return; //too few ingredients to add recipe for
+        }
 
         let containers = {
             "minecraft:glass_bottle": ["hot_cocoa", "apple_cider"],
@@ -18,9 +17,8 @@ function mixingRecipeGen(event) {
             "#c:dough": ["dumplings"],
         };
 
-        let container =
-            Object.keys(containers).find((key) => containers[key].includes(outputItem)) ??
-            "minecraft:bowl";
+        let container = Object.keys(containers).find((key) => 
+            containers[key].includes(outputItem)) ?? "minecraft:bowl";
 
         for (let i = 0; i < inputItems.length; i++) {
             if (inputItems[i].getFirst() == "farmersdelight:tomato_sauce") {
