@@ -202,7 +202,7 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundnormal = kubejs/assets/createastral/textures/item/incomplete_electronic_circuit.png
+  backgroundnormal = resources/createastral/textures/item/incomplete_electronic_circuit.png
 }
 
 customization {
@@ -293,7 +293,7 @@ customization {
 }
 
 customization {
-  path = kubejs/assets/createastral/textures/item/logos_binted.png
+  path = resources/createastral/textures/item/logos_binted.png
   orientation = top-left
   x = 76
   width = 252
@@ -323,7 +323,7 @@ customization {
   orientation = top-left
   restartbackgroundanimations = true
   buttonaction = openlink
-  backgroundhovered = kubejs/assets/createastral/textures/item/logocurse.png
+  backgroundhovered = resources/createastral/textures/item/logocurse.png
   description = Click to open our Curseforge page!
   label = 
   loopbackgroundanimations = true
@@ -333,7 +333,7 @@ customization {
   actionid = 12eb66a8-e975-4373-a879-da4ceb9b48af1671211093680
   action = addbutton
   y = 385
-  backgroundnormal = kubejs/assets/createastral/textures/item/logocurse.png
+  backgroundnormal = resources/createastral/textures/item/logocurse.png
   value = https://www.curseforge.com/minecraft/modpacks/create-astral
   height = 40
 }
@@ -361,7 +361,7 @@ customization {
   orientation = top-left
   restartbackgroundanimations = true
   buttonaction = openlink
-  backgroundhovered = kubejs/assets/createastral/textures/item/logodiscord.png
+  backgroundhovered = resources/createastral/textures/item/logodiscord.png
   description = Click to join the discord!
   label = 
   loopbackgroundanimations = true
@@ -371,7 +371,7 @@ customization {
   actionid = 5adfed71-9b96-4b40-9881-a20f41c3a3c01674421038275
   action = addbutton
   y = 382
-  backgroundnormal = kubejs/assets/createastral/textures/item/logodiscord.png
+  backgroundnormal = resources/createastral/textures/item/logodiscord.png
   value = https://discord.gg/mNeHyuZdqm
   height = 47
 }
@@ -418,7 +418,7 @@ customization {
   orientation = top-left
   restartbackgroundanimations = true
   buttonaction = openlink
-  backgroundhovered = kubejs/assets/createastral/textures/item/logomusic.png
+  backgroundhovered = resources/createastral/textures/item/logomusic.png
   description = Listen to our OST on Spotify!
   label = 
   loopbackgroundanimations = true
@@ -427,7 +427,7 @@ customization {
   actionid = e7565dd4-2a3f-426b-bbfd-5f9f3eebe8ae1674683651999
   action = addbutton
   y = 311
-  backgroundnormal = kubejs/assets/createastral/textures/item/logomusic.png
+  backgroundnormal = resources/createastral/textures/item/logomusic.png
   value = https://open.spotify.com/album/3Muz68e5zWnQCbwRpIartk?si=2_-h-BLSSLmHsyXm9ZcMBg
   height = 62
 }
