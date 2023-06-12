@@ -68,20 +68,25 @@
   "carvers": {},
   "features": [
     [
-    
+      "nullscape:asteroid_carver"
     ],
     [
       "minecraft:end_gateway_return"
     ],
     [],
     [
-    
+      "nullscape:shadow/shadow_cut"
     ],
     [
-    
+      "nullscape:shadow/blackstone",
+      "nullscape:shadow/basalt",
+      "nullscape:shadow/bone_trees1",
+      "nullscape:shadow/droop"
     ],
     [
-    
+      "nullscape:shadow/pillar",
+      "nullscape:shadow/vegetation",
+      "nullscape:shadow/pillars_coral"
     ]
   ]
 }

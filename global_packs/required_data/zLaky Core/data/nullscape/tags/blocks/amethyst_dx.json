@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "amethyst_block",
+    "budding_amethyst",
+    "basalt",
+    "blackstone",
+    "end_stone",
+    "dead_horn_coral_block",
+    "dead_bubble_coral_block",
+    "dead_fire_coral_block",
+    "dead_tube_coral_block"
+  ]
+}

@@ -1,0 +1,465 @@
+{
+  "feature": {
+    "type": "minecraft:random_selector",
+    "config": {
+      "features": [
+        {
+          "chance": 0.05,
+          "feature": {
+            "feature": {
+              "type": "minecraft:replace_single_block",
+              "config": {
+                "targets": [
+                  {
+                    "target": {
+                      "predicate_type": "minecraft:block_match",
+                      "block": "minecraft:blackstone"
+                    },
+                    "state": {
+                      "Name": "minecraft:glowstone"
+                    }
+                  }
+                ]
+              }
+            },
+            "placement": [
+              {
+                "type": "minecraft:random_offset",
+                "xz_spread": 0,
+                "y_spread": 1
+              }
+            ]
+          }
+        },
+        {
+          "chance": 0.95,
+          "feature": {
+            "feature": {
+              "type": "minecraft:random_patch",
+              "config": {
+                "tries": 4,
+                "xz_spread": 14,
+                "y_spread": 64,
+                "feature": {
+                  "feature": {
+                    "type": "minecraft:block_column",
+                    "config": {
+                      "direction": "down",
+                      "allowed_placement": {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": [
+                          "minecraft:air"
+                        ]
+                      },
+                      "prioritize_tip": false,
+                      "layers": [
+                        {
+                          "height": {
+                            "type": "minecraft:biased_to_bottom",
+                            "value": {
+                              "min_inclusive": 1,
+                              "max_inclusive": 5
+                            }
+                          },
+                          "provider": {
+                            "type": "minecraft:simple_state_provider",
+                            "state": {
+                              "Name": "minecraft:glowstone"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "placement": [
+                    {
+                      "type": "minecraft:environment_scan",
+                      "direction_of_search": "up",
+                      "max_steps": 32,
+                      "target_condition": {
+                        "type": "minecraft:any_of",
+                        "predicates": [
+                          {
+                            "type": "minecraft:all_of",
+                            "predicates": [
+                              {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                  0,
+                                  1,
+                                  0
+                                ],
+                                "blocks": [
+                                  "minecraft:glowstone"
+                                ]
+                              },
+                              {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                  "type": "minecraft:any_of",
+                                  "predicates": [
+                                    {
+                                      "type": "minecraft:matching_blocks",
+                                      "offset": [
+                                        1,
+                                        1,
+                                        0
+                                      ],
+                                      "blocks": [
+                                        "minecraft:glowstone"
+                                      ]
+                                    },
+                                    {
+                                      "type": "minecraft:matching_blocks",
+                                      "offset": [
+                                        0,
+                                        1,
+                                        1
+                                      ],
+                                      "blocks": [
+                                        "minecraft:glowstone"
+                                      ]
+                                    },
+                                    {
+                                      "type": "minecraft:matching_blocks",
+                                      "offset": [
+                                        -1,
+                                        1,
+                                        0
+                                      ],
+                                      "blocks": [
+                                        "minecraft:glowstone"
+                                      ]
+                                    },
+                                    {
+                                      "type": "minecraft:matching_blocks",
+                                      "offset": [
+                                        0,
+                                        1,
+                                        -1
+                                      ],
+                                      "blocks": [
+                                        "minecraft:glowstone"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "type": "minecraft:all_of",
+                            "predicates": [
+                              {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                  1,
+                                  1,
+                                  0
+                                ],
+                                "blocks": [
+                                  "minecraft:glowstone"
+                                ]
+                              },
+                              {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                  "type": "minecraft:any_of",
+                                  "predicates": [
+                                    {
+                                      "type": "minecraft:matching_blocks",
+                                      "offset": [
+                                        0,
+                                        1,
+                                        0
+                                      ],
+                                      "blocks": [
+                                        "minecraft:glowstone"
+                                      ]
+                                    },
+                                    {
+                                      "type": "minecraft:matching_blocks",
+                                      "offset": [
+                                        0,
+                                        1,
+                                        1
+                                      ],
+                                      "blocks": [
+                                        "minecraft:glowstone"
+                                      ]
+                                    },
+                                    {
+                                      "type": "minecraft:matching_blocks",
+                                      "offset": [
+                                        -1,
+                                        1,
+                                        0
+                                      ],
+                                      "blocks": [
+                                        "minecraft:glowstone"
+                                      ]
+                                    },
+                                    {
+                                      "type": "minecraft:matching_blocks",
+                                      "offset": [
+                                        0,
+                                        1,
+                                        -1
+                                      ],
+                                      "blocks": [
+                                        "minecraft:glowstone"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "type": "minecraft:all_of",
+                            "predicates": [
+                              {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                  0,
+                                  1,
+                                  1
+                                ],
+                                "blocks": [
+                                  "minecraft:glowstone"
+                                ]
+                              },
+                              {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                  "type": "minecraft:any_of",
+                                  "predicates": [
+                                    {
+                                      "type": "minecraft:matching_blocks",
+                                      "offset": [
+                                        1,
+                                        1,
+                                        0
+                                      ],
+                                      "blocks": [
+                                        "minecraft:glowstone"
+                                      ]
+                                    },
+                                    {
+                                      "type": "minecraft:matching_blocks",
+                                      "offset": [
+                                        0,
+                                        1,
+                                        0
+                                      ],
+                                      "blocks": [
+                                        "minecraft:glowstone"
+                                      ]
+                                    },
+                                    {
+                                      "type": "minecraft:matching_blocks",
+                                      "offset": [
+                                        -1,
+                                        1,
+                                        0
+                                      ],
+                                      "blocks": [
+                                        "minecraft:glowstone"
+                                      ]
+                                    },
+                                    {
+                                      "type": "minecraft:matching_blocks",
+                                      "offset": [
+                                        0,
+                                        1,
+                                        -1
+                                      ],
+                                      "blocks": [
+                                        "minecraft:glowstone"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "type": "minecraft:all_of",
+                            "predicates": [
+                              {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                  -1,
+                                  1,
+                                  0
+                                ],
+                                "blocks": [
+                                  "minecraft:glowstone"
+                                ]
+                              },
+                              {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                  "type": "minecraft:any_of",
+                                  "predicates": [
+                                    {
+                                      "type": "minecraft:matching_blocks",
+                                      "offset": [
+                                        1,
+                                        1,
+                                        0
+                                      ],
+                                      "blocks": [
+                                        "minecraft:glowstone"
+                                      ]
+                                    },
+                                    {
+                                      "type": "minecraft:matching_blocks",
+                                      "offset": [
+                                        0,
+                                        1,
+                                        1
+                                      ],
+                                      "blocks": [
+                                        "minecraft:glowstone"
+                                      ]
+                                    },
+                                    {
+                                      "type": "minecraft:matching_blocks",
+                                      "offset": [
+                                        0,
+                                        1,
+                                        0
+                                      ],
+                                      "blocks": [
+                                        "minecraft:glowstone"
+                                      ]
+                                    },
+                                    {
+                                      "type": "minecraft:matching_blocks",
+                                      "offset": [
+                                        0,
+                                        1,
+                                        -1
+                                      ],
+                                      "blocks": [
+                                        "minecraft:glowstone"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "type": "minecraft:all_of",
+                            "predicates": [
+                              {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                  0,
+                                  1,
+                                  -1
+                                ],
+                                "blocks": [
+                                  "minecraft:glowstone"
+                                ]
+                              },
+                              {
+                                "type": "minecraft:not",
+                                "predicate": {
+                                  "type": "minecraft:any_of",
+                                  "predicates": [
+                                    {
+                                      "type": "minecraft:matching_blocks",
+                                      "offset": [
+                                        1,
+                                        1,
+                                        0
+                                      ],
+                                      "blocks": [
+                                        "minecraft:glowstone"
+                                      ]
+                                    },
+                                    {
+                                      "type": "minecraft:matching_blocks",
+                                      "offset": [
+                                        0,
+                                        1,
+                                        1
+                                      ],
+                                      "blocks": [
+                                        "minecraft:glowstone"
+                                      ]
+                                    },
+                                    {
+                                      "type": "minecraft:matching_blocks",
+                                      "offset": [
+                                        -1,
+                                        1,
+                                        0
+                                      ],
+                                      "blocks": [
+                                        "minecraft:glowstone"
+                                      ]
+                                    },
+                                    {
+                                      "type": "minecraft:matching_blocks",
+                                      "offset": [
+                                        0,
+                                        1,
+                                        0
+                                      ],
+                                      "blocks": [
+                                        "minecraft:glowstone"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "placement": [
+              {
+                "type": "minecraft:random_offset",
+                "xz_spread": 0,
+                "y_spread": -16
+              },
+              {
+                "type": "minecraft:random_offset",
+                "xz_spread": 0,
+                "y_spread": -16
+              }
+            ]
+          }
+        }
+      ],
+      "default": {
+        "feature": {
+          "type": "minecraft:no_op",
+          "config": {}
+        },
+        "placement": []
+      }
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 1,
+      "noise_factor": 601,
+      "noise_offset": -0.1
+    },
+    {
+      "type": "minecraft:count",
+      "count": 160
+    }
+  ]
+}

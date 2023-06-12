@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "dead_fire_coral_block",
+    "dead_tube_coral_block",
+    "dead_horn_coral_block",
+    "dead_bubble_coral_block"
+  ]
+}

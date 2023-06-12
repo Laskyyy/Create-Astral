@@ -25,10 +25,16 @@
   "carvers": {},
   "features": [
     [
-     
+      "nullscape:crystal/crystal"
     ],
     [
-    
+      "nullscape:highland/glowstone_patch",
+      "nullscape:highland/patch_bottom",
+      "nullscape:glowstone/roots",
+      "nullscape:glowstone/tree",
+      "nullscape:glowstone/tree2",
+      "nullscape:chorus_quadratic",
+      "nullscape:chorus_variation"
     ],
     [],
     [

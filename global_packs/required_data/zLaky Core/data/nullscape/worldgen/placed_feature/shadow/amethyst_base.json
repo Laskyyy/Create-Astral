@@ -1,0 +1,19 @@
+{
+	"feature": "nullscape:shadow/amethyst_base",
+	"placement": [
+		{
+			"type": "minecraft:environment_scan",
+			"direction_of_search": "down",
+			"target_condition": {
+				"type": "minecraft:solid"
+			},
+			"allowed_search_condition": {
+				"type": "minecraft:matching_blocks",
+				"blocks": [
+					"minecraft:air"
+				]
+			},
+			"max_steps": 32
+		}
+	]
+}

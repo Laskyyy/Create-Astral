@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:netherrack_replace_blobs",
+  "config": {
+    "state": {
+      "Name": "minecraft:blackstone"
+    },
+    "target": {
+      "Name": "minecraft:end_stone"
+    },
+    "radius": 0
+  }
+}
