@@ -672,8 +672,79 @@ onEvent("recipes", (event) => {
         B: "create:brass_ingot",
     });
 
-    ///// BASIC COGWHEELS
+   ///// EXTENDED DRAWERS ////
 
+   event.shaped("extended_drawers:single_drawer", ["ABA", "BCB", "ABA"], {
+    A: "#c:stripped_logs",
+    B: "create:andesite_alloy",
+    C: "reinfchest:copper_chest",
+});
+
+event.shaped("extended_drawers:double_drawer", ["ACA", "BBB", "ACA"], {
+    A: "#c:stripped_logs",
+    B: "create:andesite_alloy",
+    C: "reinfchest:copper_chest",
+});
+
+event.shaped("extended_drawers:quad_drawer", ["ACA", "CBC", "ACA"], {
+    A: "#c:stripped_logs",
+    B: "create:andesite_alloy",
+    C: "reinfchest:copper_chest",
+});
+
+event.shaped("extended_drawers:upgrade_frame", ["AB", "BA"], {
+    A: "tconstruct:pattern",
+    B: "create:andesite_alloy",
+});
+
+event.shaped("extended_drawers:t1_upgrade", ["ABA", "DCD", "ABA"], {
+    A: "tconstruct:seared_brick",
+    B: "techreborn:rubber",
+    C: "reinfchest:iron_chest",
+    D: "extended_drawers:upgrade_frame",
+});
+
+event.shaped("extended_drawers:t2_upgrade", ["ABA", "DCD", "ABA"], {
+    A: "create:brass_sheet",
+    B: "ae2:fluix_dust",
+    C: "reinfchest:gold_chest",
+    D: "extended_drawers:t1_upgrade",
+});
+
+event.shaped("extended_drawers:t3_upgrade", ["ABA", "DCD", "ABA"], {
+    A: "techreborn:lead_plate",
+    B: "passivepiglins:piglin_fortune",
+    C: "reinfchest:diamond_chest",
+    D: "extended_drawers:t2_upgrade",
+});
+
+event.shaped("extended_drawers:t4_upgrade", ["ABA", "DCD", "ABA"], {
+    A: "yttr:continuous_platform",
+    B: "techreborn:uu_matter",
+    C: "reinfchest:netherite_chest",
+    D: "extended_drawers:t3_upgrade",
+});
+
+event.shaped("extended_drawers:downgrade", ["ABA", "DCD", "ABA"], {
+    A: "createaddition:copper_rod",
+    B: "tconstruct:grout",
+    C: "trashcans:item_trash_can",
+    D: "extended_drawers:upgrade_frame",
+});
+
+event.shaped("extended_drawers:lock", [" A ", "ABA", "CCC"], {
+    A: "create:andesite_alloy",
+    B: "create:iron_sheet",
+    C: "create:golden_sheet",
+});
+
+event.shaped("2x extended_drawers:connector", ["CBC", "BAB", "CBC"], {
+    A: "extended_drawers:upgrade_frame",
+    B: "minecraft:stick",
+    C: "createaddition:copper_rod",
+});
+
+ 
     event.shaped("3x create:cogwheel", ["AB"], {
         A: "create:andesite_alloy",
         B: "createastral:bronze_sheet",

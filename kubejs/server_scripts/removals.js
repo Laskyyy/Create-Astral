@@ -319,6 +319,7 @@ onEvent("recipes", (event) => {
         { output: "phonos:redstone_chip" },
 
         { mod: "doodads" },
+        { mod: "extended_drawers" },
         { output: "doodads:slimey_shoes" },
 
         { mod: "createsifter" },

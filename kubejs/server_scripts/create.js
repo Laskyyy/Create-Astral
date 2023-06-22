@@ -1663,6 +1663,15 @@ function mixingRecipes(event) {
             time: 500,
         },
         {
+            output: "blahaj:gray_shark",
+            input: [
+                { fluid: "kubejs:shimmer", amount: 81000 },
+                "blahaj:blue_shark",
+            ],
+            heat: "",
+            time: 2000,
+        },
+        {
             output: "tconstruct:ichor_slime_ball",
             input: [
                 { fluid: "kubejs:shimmer", amount: 9000 },
@@ -2062,6 +2071,18 @@ function mechanicalCraftingRecipes(event) {
         },
 
         {
+            output: "extended_drawers:controller",
+            shape: [" E ", "ACA", "BDB", "ACA", " E "],
+            inputs: {
+                A: "ad_astra:desh_block",
+                B: "createastral:astral_conduit",
+                C: "create:redstone_link",
+                D: "create:linked_controller",
+                E: "tconstruct:cobalt_block",
+            },
+        },
+
+        {
             output: "2x techreborn:fusion_coil",
             shape: ["CCCCC", "CBBBC", "CBDBC", "CBBBC", "CCCCC"],
             inputs: {
@@ -2113,7 +2134,7 @@ function mechanicalCraftingRecipes(event) {
                 D: "createastral:navigation_mechanism",
                 E: "dustrial_decor:padded_block",
 
-                //AUTOMOBILITY RECIPE CHANGES
+                
             },
         },
         
@@ -2244,6 +2265,26 @@ function compactingRecipes(event) {
         {
             output: { fluid: "kubejs:red_grape_juice", amount: 6750 },
             inputs: ["vinery:red_grape"],
+        },
+        {
+            output: "minecraft:porkchop",
+            inputs: ["3x #c:mushrooms", "minecraft:rotten_flesh", { fluid: "createaddition:seed_oil", amount: FULL_BUCKET_AMMOUNT / 9 }],
+        },
+        {
+            output: "minecraft:beef",
+            inputs: ["3x #c:mushrooms", "3x #c:grass_variants", { fluid: "createaddition:seed_oil", amount: FULL_BUCKET_AMMOUNT / 9 }],
+        },
+        {
+            output: "minecraft:chicken",
+            inputs: ["3x #c:mushrooms", "farmersdelight:rice", { fluid: "createaddition:seed_oil", amount: FULL_BUCKET_AMMOUNT / 9 }],
+        },
+        {
+            output: "minecraft:mutton",
+            inputs: ["3x #c:mushrooms", "#minecraft:wool", { fluid: "createaddition:seed_oil", amount: FULL_BUCKET_AMMOUNT / 9 }],
+        },
+        {
+            output: "minecraft:rabbit",
+            inputs: ["3x #c:mushrooms", "minecraft:carrot", { fluid: "createaddition:seed_oil", amount: FULL_BUCKET_AMMOUNT / 9 }],
         },
 
     ].forEach((recipe) => {
