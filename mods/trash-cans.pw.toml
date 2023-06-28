@@ -1,13 +1,13 @@
 name = "Trash Cans"
-filename = "trashcans-1.0.17-fabric-mc1.18.jar"
+filename = "trashcans-1.0.18-fabric-mc1.18.jar"
 side = "both"
 
 [download]
 mode = "metadata:curseforge"
 hash-format = "sha1"
-hash = "9b5b38276eb461537392afaaa36a118d16ff1391"
+hash = "f8c388dffd94625ad2e78cce982c38a6859b0859"
 
 [update]
 [update.curseforge]
-file-id = 4494775
+file-id = 4606897
 project-id = 394535
