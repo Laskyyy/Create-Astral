@@ -948,7 +948,7 @@ function sequencedAssemblyRecipes(event) {
                     "create:incomplete_precision_mechanism",
                     [
                         "create:incomplete_precision_mechanism",
-                        "techreborn:nak_coolant_cell_60k",
+                        "create:blaze_burner",
                     ]
                 ),
                 event.recipes.createDeploying(
@@ -961,7 +961,7 @@ function sequencedAssemblyRecipes(event) {
             ]
         )
         .transitionalItem("create:incomplete_precision_mechanism")
-        .loops(1);
+        .loops(2);
 
     event.recipes
         .createSequencedAssembly(
@@ -1865,6 +1865,56 @@ function mechanicalCraftingRecipes(event) {
     // Inputs: Object with letters assigned to input items, to be used in the shape
     [
         {
+            output: "immersive_aircraft:airship",
+            shape: ["AAAA ", "AAAAA", " GFG ", "BEDBC", " BBB "],
+            inputs: {
+                A: "immersive_aircraft:sail",
+                B: "immersive_aircraft:hull",
+                C: "create:propeller",
+                D: "immersive_aircraft:engine",
+                E: "#create:seats",
+                F: "createastral:airship_blueprint",
+                G: "campanion:rope",
+            },
+        },
+        {
+            output: "immersive_aircraft:quadrocopter",
+            shape: ["CCDCC ", "CCBCC ", "ABEBAF", "CCBCC ", "CCDCC "],
+            inputs: {
+                A: "create:precision_mechanism",
+                B: "immersive_aircraft:hull",
+                C: "create:propeller",
+                D: "createaddition:brass_rod",
+                E: "#create:seats",
+                F: "createastral:quadrocopter_blueprint",
+            },
+        },
+        {
+            output: "immersive_aircraft:gyrodyne",
+            shape: [" CCC ", "  DF ", "BGEBA", " BBB "],
+            inputs: {
+                A: "immersive_aircraft:sail",
+                B: "immersive_aircraft:hull",
+                C: "create:propeller",
+                D: "createaddition:brass_rod",
+                E: "#create:seats",
+                F: "createastral:gyrodyne_blueprint",
+                G: "create:hand_crank",
+            },
+        },
+        {
+            output: "immersive_aircraft:biplane",
+            shape: ["    AA   ", "    AA   ", " A   BBC ", "BBBBBEDCF", " A   BBC ", "    AA   ", "    AA   ", ],
+            inputs: {
+                A: "immersive_aircraft:sail",
+                B: "immersive_aircraft:hull",
+                C: "create:propeller",
+                D: "immersive_aircraft:engine",
+                E: "#create:seats",
+                F: "createastral:biplane_blueprint",
+            },
+        },
+        {
             output: "ad_astra:launch_pad",
             shape: ["BAAAB", "ABABA", "AABAA", "ABABA", "BAAAB"],
             inputs: {
@@ -1885,7 +1935,7 @@ function mechanicalCraftingRecipes(event) {
             output: "immersive_aircraft:boiler",
             shape: ["AB", "CB", "CB"],
             inputs: {
-                A: "techreborn:machine_parts",
+                A: "create:nozzle",
                 B: "create:copper_sheet",
                 C: "techreborn:rubber",
             },

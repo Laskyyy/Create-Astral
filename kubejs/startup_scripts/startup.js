@@ -494,7 +494,7 @@ onEvent('item.registry.armor_tiers', event => {
     tier.slotProtections = [2, 4, 4, 2]
     tier.enchantmentValue = 9
     tier.equipSound = 'minecraft:item.armor.equip_iron'
-    tier.repairIngredient = '#forge:ingots/copper'
+    tier.repairIngredient = 'minecraft:copper_ingot'
     tier.toughness = 0.0 // diamond has 2.0, netherite 3.0
     tier.knockbackResistance = 0.0
   })
@@ -504,7 +504,7 @@ onEvent('item.registry.armor_tiers', event => {
     tier.slotProtections = [3, 6, 6, 3]
     tier.enchantmentValue = 45
     tier.equipSound = 'minecraft:item.armor.equip_iron'
-    tier.repairIngredient = '#forge:ingots/brass'
+    tier.repairIngredient = 'create:brass:ingot'
     tier.toughness = 0.0 // diamond has 2.0, netherite 3.0
     tier.knockbackResistance = 0.0
   })

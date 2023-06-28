@@ -2,6 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "LIL",
+    "LIL",
     "LIL"
   ],
   "key": {
@@ -12,7 +13,7 @@
     ],
     "I": [
       {
-        "item": "minecraft:iron_ingot"
+        "item": "createaddition:iron_rod"
       }
     ]
   },
