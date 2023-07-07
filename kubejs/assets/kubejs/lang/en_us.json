@@ -866,7 +866,7 @@
   "chapter.5.quest.52.subtitle": "Automate a seed.",
   "chapter.5.quest.52.task.2.title": "Any seeds",
   "chapter.5.quest.52.title": "Fast Food Fuel",
-  "chapter.5.quest.53.description.1": "Seed oil will need to mix with plant matter in order to coalesce. Too many nutrients will intefere with the chemistry, so your options are limited.\n\n\nYou can take advantage of an existing tree farm to automate leaves. This will require a way to restock it with sheers however.\n\n\nA grass farm might be simpler, especially since you won\u0027t need to hotpatch your tree farm. However, you\u0027ll still need a deployer with sheers, and you will also need to find a way to deploy bone meal to grass as well.",
+  "chapter.5.quest.53.description.1": "Seed oil will need to mix with plant matter in order to coalesce. Too many nutrients will intefere with the chemistry, so your options are limited.\n\n\nYou can take advantage of an existing tree farm to automate leaves. Mechanical harvesters placed before the saws will gather the tree's leaves before it gets chopped down.\n\n\nAlternatively, a grass farm will allow you to produce materials faster, but will require a steady supply of bone meal and shears.",
   "chapter.5.quest.53.subtitle": "Automate one of these",
   "chapter.5.quest.53.task.1.title": "Any leaves",
   "chapter.5.quest.53.task.2.title": "Any type of grass",
