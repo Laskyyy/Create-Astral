@@ -571,7 +571,7 @@ event.create('createastral:airship_blueprint').texture("create:item/schematic") 
 event.create('createastral:refining_agent'),
 event.create('createastral:separation_agent'),
 event.create('createastral:shimmer_amplifier'),
-event.create('createastral:star_shard'),
+event.create('createastral:star_shard').glow(true),
 event.create('createastral:pure_star_shard').glow(true),
 event.create('createastral:crushed_yttrium_ore'),
 event.create('createastral:experience_ingot'),
@@ -586,7 +586,7 @@ event.create('createastral:golden_bowl').displayName('Golden Bowl');
 event.create('createastral:filled_golden_bowl','create:sequenced_assembly').displayName('Filled Golden Bowl').food(food => {
   food
       .hunger(0)
-      .saturation(00)
+      .saturation(0)
         .effect('drinkbeer:drunk', 3000, 0, 1)
         .alwaysEdible()
 });

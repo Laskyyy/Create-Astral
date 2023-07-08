@@ -864,9 +864,9 @@ event.shaped("2x extended_drawers:connector", ["CBC", "BAB", "CBC"], {
     );
 
     event.smelting("minecraft:leather", "minecraft:rotten_flesh").xp(2.0);
-    event.smelting("techreborn:tin_ingot", "create:crushed_tin_ore");
-    event.smelting("techreborn:silver_ingot", "create:crushed_silver_ore");
-    event.smelting("techreborn:lead_ingot", "create:crushed_lead_ore");
+    event.smelting("techreborn:tin_ingot", "create:crushed_raw_tin");
+    event.smelting("techreborn:silver_ingot", "create:crushed_raw_silver");
+    event.smelting("techreborn:lead_ingot", "create:crushed_raw_lead");
     event.smithing(
         "farmersdelight:cooking_pot",
         "farmersdelight:skillet",
@@ -1110,7 +1110,6 @@ event.shaped("2x extended_drawers:connector", ["CBC", "BAB", "CBC"], {
 
     event.recipes.createFilling('ae2:fluix_dust', ['ae2:fluix_dust', {fluid: 'tconstruct:blazing_blood', amount: 9000}]),
     event.recipes.createFilling('ae2:fluix_dust', ['ae2:fluix_dust', {fluid: 'techreborn:biofuel', amount: 9000}]),
-	event.recipes.createFilling('ae2:fluix_dust', ['ae2:fluix_dust', {fluid: 'techreborn:nitrogen', amount: 9000}]),
     event.recipes.createPressing('ae2:fluix_dust', 'ae2:fluix_dust')
     ]).transitionalItem('ae2:fluix_dust').loops(3) 
 
@@ -1225,7 +1224,7 @@ event.shaped('ad_astra:strophar_cap', [
     '   C ',
   
   ], {
-    Y: 'yttr:yttrium_ingot',
+    Y: 'yttr:yttrium_block',
     C: 'ad_astra:calorite_ingot',
     I: 'techreborn:industrial_circuit',
     E: 'techreborn:electronic_circuit',

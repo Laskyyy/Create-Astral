@@ -111,10 +111,10 @@ onEvent("recipes", (event) => {
         { output: "create:veridium" },
         { output: "create:scoria" },
         { output: "create:scorchia" },
-        { output: "create:crushed_tin_ore" },
-        { output: "create:crushed_silver_ore" },
-        { output: "create:crushed_lead_ore" },
-        { output: "create:crushed_uranium_ore" },
+        { output: "create:crushed_raw_tin" },
+        { output: "create:crushed_raw_silver" },
+        { output: "create:crushed_raw_lead" },
+        { output: "create:crushed_raw_uranium" },
         { output: "create:electron_tube" },
         { output: "create:cogwheel", type: "minecraft:shaped" },
         { output: "create:large_cogwheel", type: "minecraft:shaped" },
@@ -177,19 +177,19 @@ onEvent("recipes", (event) => {
         },
         {
             input: "minecraft:raw_iron",
-            output: "create:crushed_iron_ore",
+            output: "create:crushed_raw_iron",
         },
         {
             input: "minecraft:raw_gold",
-            output: "create:crushed_gold_ore",
+            output: "create:crushed_raw_gold",
         },
         {
             input: "minecraft:raw_copper",
-            output: "create:crushed_copper_ore",
+            output: "create:crushed_raw_copper",
         },
         {
             input: "create:raw_zinc",
-            output: "create:crushed_zinc_ore",
+            output: "create:crushed_raw_zinc",
         },
         {
             output: "create:brass_casing",
