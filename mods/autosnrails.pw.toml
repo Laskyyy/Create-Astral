@@ -1,0 +1,13 @@
+name = "Autos'n'Rails"
+filename = "autos_n_rails-2.0.0.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+hash-format = "sha1"
+hash = "f102e8dba4fcf553b2ec7c60271ae1a6a5a2b3c8"
+
+[update]
+[update.curseforge]
+file-id = 4542370
+project-id = 863328
