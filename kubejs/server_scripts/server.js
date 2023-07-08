@@ -613,7 +613,7 @@ onEvent("recipes", (event) => {
 
     event.shaped("ad_astra:space_boots", ["S S", "BAB"], {
         S: "minecraft:white_wool",
-        A: "create:diving_boots",
+        A: "create:copper_diving_boots",
         B: "create:sturdy_sheet",
     });
     ///// SMELTING BLOCK RECIPE CHANGES

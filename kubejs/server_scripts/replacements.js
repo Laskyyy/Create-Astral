@@ -152,7 +152,7 @@ onEvent("recipes", (event) => {
         [
             { output: "ad_astra:space_helmet" },
             "minecraft:orange_stained_glass_pane",
-            "create:diving_helmet",
+            "create:copper_diving_helmet",
         ],
         [
             { output: "ad_astra:space_pants" },
