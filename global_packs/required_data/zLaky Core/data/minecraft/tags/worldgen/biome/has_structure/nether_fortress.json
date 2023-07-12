@@ -1,9 +1,6 @@
 {
   "replace": true,
   "values": [
-    "minecraft:basalt_deltas",
-    "incendium:infernal_dunes",
-    "ad_astra:martian_canyon_creek",
     "ad_astra:mercury_deltas"
   ]
 }

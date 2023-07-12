@@ -187,3 +187,4 @@ O_O
 This is what my science degree has accomplished
 --. .-. . --. - . -.-. .... / -. . .-- / .... --- .-. .. --.. --- -. ...
 The splashes at the end of splashes.txt are more interesting!
+Fixed in 2.1

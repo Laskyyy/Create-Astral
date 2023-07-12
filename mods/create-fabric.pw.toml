@@ -1,13 +1,13 @@
 name = "Create"
-filename = "create-fabric-0.5.0.i-963+1.18.2.jar"
+filename = "create-fabric-0.5.1-b-build.1088+mc1.18.2.jar"
 side = "both"
 
 [download]
 mode = "metadata:curseforge"
 hash-format = "sha1"
-hash = "c5f4d3a29f714db742eb898553db02bde376a7f5"
+hash = "de790d26583a3c767aef804f0fecbdcf09c9f6f7"
 
 [update]
 [update.curseforge]
-file-id = 4396646
+file-id = 4622429
 project-id = 624165

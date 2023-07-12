@@ -1,7 +1,7 @@
 {
   "name": "Shimmer Refinery",
   "appearance": {
-    "block": "techreborn:grinder",    
+    "block": "yttr:void_filter",    
     "running": {
       "lightlevel": 15
     }

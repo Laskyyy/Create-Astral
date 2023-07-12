@@ -1,0 +1,23 @@
+{
+    "block.tconstruct.cobalt_ore": "Minerai de cobalt lunaire",
+
+    "material.tconstruct.desh": "Desh",
+    "material.tconstruct.desh.flavor": "Doux, rapide, fiable.",
+    "material.tconstruct.desh.encyclopedia": "Statistiques globales moyennes, contient une variété de modificateurs inhabituels pour l'exploitation minière et la commodité.",
+
+    "material.tconstruct.ostrum": "Ostrum",
+    "material.tconstruct.ostrum.flavor": "Cela pèse des tonnes! Vous fabriquez des outils à partir de cela?!.",
+    "material.tconstruct.ostrum.encyclopedia": "Durabilité divine, mais il est pénible de le manier en raison de sa lenteur d'exploitation minière. Incroyablement utile pour l'extraction minière.",
+
+    "material.tconstruct.calorite": "Calorite",
+    "material.tconstruct.calorite.flavor": "Le métal le plus tranchant des terres.",
+    "material.tconstruct.calorite.encyclopedia": "Rouge sang, tout comme vos ennemis après avoir senti le fil de votre hachoir.",
+
+    "material.tconstruct.shadow": "Ombre",
+    "material.tconstruct.shadow.flavor": "Aussi dense que la matière noire.",
+    "material.tconstruct.shadow.encyclopedia": "Durabilité ridicule. Fait des poignées et des liaisons presque parfaites pour les tiges d'outils.",
+
+    "material.tconstruct.radiant": "Radiant",
+    "material.tconstruct.radiant.flavor": "Dur. Léger.",
+    "material.tconstruct.radiant.encyclopedia": "La puissance de la lumière elle-même. Extrêmement cassant dans le processus de coulée, il offre des modificateurs, une vitesse et des emplacements inégalés pour jouer avec."
+}

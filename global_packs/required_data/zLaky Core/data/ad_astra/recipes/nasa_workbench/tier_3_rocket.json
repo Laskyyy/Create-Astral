@@ -18,17 +18,12 @@
 		},
 		{
 			"ingredient": {
-				"item": "techreborn:digital_display"
+				"item": "dbe:server_rack"
 			}
 		},
 		{
 			"ingredient": {
-				"item": "techreborn:digital_display"
-			}
-		},
-		{
-			"ingredient": {
-				"tag": "c:ostrum_blocks"
+				"item": "dbe:server_rack"
 			}
 		},
 		{
@@ -38,27 +33,12 @@
 		},
 		{
 			"ingredient": {
-				"item": "ad_astra:steel_block"
+				"tag": "c:ostrum_blocks"
 			}
 		},
 		{
 			"ingredient": {
-				"item": "immersive_aircraft:engine"
-			}
-		},
-		{
-			"ingredient": {
-				"item": "immersive_aircraft:engine"
-			}
-		},
-		{
-			"ingredient": {
-				"item": "ad_astra:steel_block"
-			}
-		},
-		{
-			"ingredient": {
-				"item": "immersive_aircraft:engine"
+				"item": "dbe:server_rack"
 			}
 		},
 		{
@@ -68,7 +48,27 @@
 		},
 		{
 			"ingredient": {
-				"item": "immersive_aircraft:engine"
+				"item": "ad_astra:ostrum_engine"
+			}
+		},
+		{
+			"ingredient": {
+				"item": "dbe:server_rack"
+			}
+		},
+		{
+			"ingredient": {
+				"item": "ad_astra:ostrum_engine"
+			}
+		},
+		{
+			"ingredient": {
+				"item": "ad_astra:ostrum_engine"
+			}
+		},
+		{
+			"ingredient": {
+				"item": "ad_astra:ostrum_engine"
 			}
 		}
 	],

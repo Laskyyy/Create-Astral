@@ -13,7 +13,7 @@
   },
   "cast_consumed": true,
   "fluid": {
-    "tag": "c:molten_shadowsteel",
+    "name": "kubejs:molten_shadowsteel",
     "amount": 9000
   },
   "result": {

@@ -21,7 +21,7 @@
     "stars": true,
     "rain_snow": true,
     "biome_colors": true,
-    "sky_colors": true
+    "sky_colors": false
   },
   "render_settings": {
     "fog_distance": 0,

@@ -1,6 +1,6 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
-    "tconstruct:copper_nugget"
+    "create:copper_nugget"
   ]
 }

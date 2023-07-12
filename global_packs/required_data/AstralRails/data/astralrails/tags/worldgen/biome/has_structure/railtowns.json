@@ -6,6 +6,9 @@
 		"minecraft:savanna",
 		"minecraft:sunflower_plains",
 		"minecraft:flower_forest",
-		"minecraft:birch_forest"
+		"minecraft:birch_forest",
+		"#minecraft:is_hill",
+		"#minecraft:is_forest",
+		"#minecraft:is_taiga"
   ]
 }

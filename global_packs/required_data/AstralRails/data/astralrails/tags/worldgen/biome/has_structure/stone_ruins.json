@@ -4,6 +4,8 @@
     "minecraft:taiga",
 		"minecraft:snowy_plains",
 		"minecraft:snowy_taiga",
-		"minecraft:stony_peaks"
+		"minecraft:stony_peaks",
+    "#minecraft:is_mountain",
+    "#minecraft:is_taiga"
   ]
 }

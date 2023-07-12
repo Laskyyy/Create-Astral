@@ -1,0 +1,9 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "computercraft:item/turtle_modem_base_right",
+	"textures": {
+		"0": "computercraft:block/turtle_advanced_modem_upgrade",
+		"1": "computercraft:block/wireless_antenna_on",
+		"particle": "computercraft:block/turtle_advanced_modem_upgrade"
+	}
+}

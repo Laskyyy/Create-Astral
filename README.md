@@ -27,7 +27,7 @@ Download the packwiz installer jar from [packwiz-installer-bootstrap](https://gi
 Go to Edit Instance -> Settings -> Custom commands, then check the Custom Commands box and paste the following command into the pre-launch command field:
 
 ```shell
-"$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://localhost:8080/pack.toml
+"$INST_JAVA" -jar packwiz-installer-bootstrap.jar http://localhost:8080/pack.toml
 ```
 
 ![image](https://user-images.githubusercontent.com/55003876/228606395-9cbdf5ac-c095-4f71-a639-3765dc906ad5.png)
@@ -44,16 +44,16 @@ If you want, you could also write a batch script that runs the jar file in a sim
 📦
 ┣ 📂config //Various configs for all sorts of mods
 ┃ ┣ 📂ftbquests //Configs for quests
+┣ 📂global_packs // Included required datapacks
 ┣ 📂kubejs
-┃ ┣ 📂assets
-┃ ┃ ┣ 📂\* mods // Renaming items for mods
-┃ ┃ ┣ 📂createastral
-┃ ┃ ┃ ┗ 📂textures // Textures for custom blocks
+┃ ┣ 📂assets // No longer used
 ┃ ┣ 📂client_scripts // Scripts that load for the client
 ┃ ┣ 📂server_scripts // All recipe changes
 ┃ ┣ 📂startup_scripts // Things that run on startup
 ┣ 📂mods // Mods
-┣ 📂resourcepacks // Textures, includes some mods
+┣ 📂resourcepacks // Toggleable Textures
+┣ 📂resources // All custom textures and translations
+┃ ┣ 📂createastral // Primary folder for original Astral textures
 ┗ 📜README.md // This file! Feel free to contribute
 and fix any erorrs that you see.
 ```

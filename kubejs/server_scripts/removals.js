@@ -15,7 +15,9 @@ onEvent("recipes", (event) => {
         { output: "techreborn:iron_plate" },
         { output: "techreborn:steel_ingot" },
         { output: "techreborn:steel_block" },
+        { output: "techreborn:steel_plate" },
         { output: "techreborn:bronze_block" },
+        { output: "techreborn:ender_pearl_dust" },
         { output: "techreborn:electronic_circuit" },
         { output: "techreborn:industrial_circuit" },
         { output: "techreborn:energy_flow_chip" },
@@ -29,7 +31,6 @@ onEvent("recipes", (event) => {
         { output: "techreborn:refined_iron_ingot" },
         { output: "techreborn:fusion_coil" },
         { output: "techreborn:carbon_mesh" },
-        { output: "techreborn:scrap_box" },
         { output: "techreborn:data_storage_core" },
         { output: "techreborn:data_storage_chip" },
         { output: "techreborn:player_detector" },
@@ -39,7 +40,7 @@ onEvent("recipes", (event) => {
         { output: "techreborn:quantum_boots" },
         { output: "techreborn:copper_nugget" },
         { output: "techreborn:steel_plate" },
-
+        {type: "techreborn:scrapbox"},
         {
             type: "techreborn:grinder",
             input: "#techreborn:calcite_dust_material",
@@ -102,10 +103,18 @@ onEvent("recipes", (event) => {
         //Create
 
         { output: "create:blaze_cake" },
-        { output: "create:crushed_tin_ore" },
-        { output: "create:crushed_silver_ore" },
-        { output: "create:crushed_lead_ore" },
-        { output: "create:crushed_uranium_ore" },
+        { output: "create:blaze_burner" },
+        { output: "create:ochrum" },
+        { output: "create:crimsite" },
+        { output: "create:limestone" },
+        { output: "create:asurine" },
+        { output: "create:veridium" },
+        { output: "create:scoria" },
+        { output: "create:scorchia" },
+        { output: "create:crushed_raw_tin" },
+        { output: "create:crushed_raw_silver" },
+        { output: "create:crushed_raw_lead" },
+        { output: "create:crushed_raw_uranium" },
         { output: "create:electron_tube" },
         { output: "create:cogwheel", type: "minecraft:shaped" },
         { output: "create:large_cogwheel", type: "minecraft:shaped" },
@@ -121,13 +130,22 @@ onEvent("recipes", (event) => {
         { type: "create:milling", output: "minecraft:flint" },
         { type: "create:crushing", input: "minecraft:blaze_rod" },
         { type: "create:crushing", input: "minecraft:bone" },
+        { type: "create:crushing", input: "minecraft:tuff" },
+        { type: "create:milling", input: "minecraft:tuff" },
+        { type: "create:milling", input: "minecraft:basalt" },
         { type: "create:crushing", input: "minecraft:lapis_lazuli" },
         { type: "create:crushing", input: "minecraft:diamond" },
         { type: "create:crushing", input: "minecraft:diorite" },
         { type: "create:crushing", input: "minecraft:granite" },
         { type: "create:crushing", input: "minecraft:andesite" },
         { type: "create:crushing", input: "create:asurine" },
+        { type: "create:crushing", input: "#create:stone_types/asurine" },
         { type: "create:crushing", input: "create:veridium" },
+        { type: "create:crushing", input: "create:limestone" },
+        { type: "create:crushing", input: "create:ochrum" },
+        { type: "create:crushing", input: "create:scoria" },
+        { type: "create:crushing", input: "create:scorchia" },
+        { type: "create:crushing", input: "minecraft:cobblestone" },
         { type: "create:mixing", output: "create:brass_ingot" },
         { type: "create:crushing", input: "minecraft:netherrack" },
         { type: "create:splashing", input: "minecraft:soul_sand" },
@@ -159,19 +177,19 @@ onEvent("recipes", (event) => {
         },
         {
             input: "minecraft:raw_iron",
-            output: "create:crushed_iron_ore",
+            output: "create:crushed_raw_iron",
         },
         {
             input: "minecraft:raw_gold",
-            output: "create:crushed_gold_ore",
+            output: "create:crushed_raw_gold",
         },
         {
             input: "minecraft:raw_copper",
-            output: "create:crushed_copper_ore",
+            output: "create:crushed_raw_copper",
         },
         {
             input: "create:raw_zinc",
-            output: "create:crushed_zinc_ore",
+            output: "create:crushed_raw_zinc",
         },
         {
             output: "create:brass_casing",
@@ -185,7 +203,6 @@ onEvent("recipes", (event) => {
         { output: "createaddition:alternator" },
         { output: "createaddition:electric_motor" },
         { output: "createaddition:tesla_coil" },
-        { output: "createaddition:straw" },
         {
             output: "createaddition:biomass_pellet",
         },
@@ -206,7 +223,7 @@ onEvent("recipes", (event) => {
         { output: "ad_astra:fuel_refinery" },
         { output: "ad_astra:oxygen_loader" },
         { output: "ad_astra:energizer" },
-        { output: "ad_astra:iron_stick" },
+        { output: "ad_astra:iron_rod" },
         { output: "ad_astra:nasa_workbench" },
         { output: "ad_astra:rocket_fin" },
         { output: "ad_astra:launch_pad" },
@@ -234,10 +251,7 @@ onEvent("recipes", (event) => {
         // AE2
 
         { output: "ae2:fluix_dust" },
-        { output: "ae2:pattern_provider" },
-        { output: "ae2:blank_pattern" },
-        { output: "ae2:pattern_encoding_terminal" },
-        { output: "ae2:cable_pattern_provider" },
+        { output: "ae2:molecular_assembler" },
         { output: "ae2:inscriber" },
         { type: "ae2:inscriber" },
         { output: "ae2:controller", type: "crafting_shaped" },
@@ -266,13 +280,17 @@ onEvent("recipes", (event) => {
         { type: "tconstruct:alloy" },
         { output: "tconstruct:nether_grout" },
         { output: "tconstruct:efln_ball" },
+        { output: "tconstruct:piggy_backpack" },
+
 
         // Miscellaneous
 
         { output: "passivepiglins:piglin_fortune" },
         { output: "passivepiglins:piglin_totem" },
         { output: "passivepiglins:piglin_coin" },
-
+        { output: "travellersbackpack:standard" },
+        { output: "ad_astra:ostrum_engine" },
+        { output: "dbe:server_rack" },
         { output: "dustrial_decor:cast_iron_billet" },
 
         { output: "mcdw:pick_diamond_pickaxe_var" },
@@ -281,6 +299,8 @@ onEvent("recipes", (event) => {
         { output: "automobility:auto_mechanic_table" },
         { output: "automobility:automobile_assembler" },
         { type: "automobility:automobile_assembler" },
+        { type: "ad_astra:fuel_conversion" },
+
 
         { output: "campanion:grappling_hook" },
         { output: "campanion:mre" },
@@ -299,6 +319,7 @@ onEvent("recipes", (event) => {
         { output: "phonos:redstone_chip" },
 
         { mod: "doodads" },
+        { mod: "extended_drawers" },
         { output: "doodads:slimey_shoes" },
 
         { mod: "createsifter" },
@@ -314,6 +335,16 @@ onEvent("recipes", (event) => {
 
         { output: "immersive_aircraft:boiler" },
         { output: "immersive_aircraft:engine" },
+        { output: "immersive_aircraft:nether_engine" },
+        { output: "immersive_aircraft:industrial_gears" },
+        { output: "immersive_aircraft:eco_engine" },
+        { output: "immersive_aircraft:large_propeller" },
+        { output: "immersive_aircraft:enhanced_propeller" },
+        { output: "immersive_aircraft:improved_landing_gear" },
+        { output: "immersive_aircraft:airship" },
+        { output: "immersive_aircraft:gyrodyne" },
+        { output: "immersive_aircraft:biplane" },
+        { output: "immersive_aircraft:quadrocopter" },
 
         { output: "catwalksinc:iron_rod" },
 
@@ -324,6 +355,26 @@ onEvent("recipes", (event) => {
         { output: "computercraft:pocket_computer_advanced" },
 
         { mod: "camsbackpacks", input: "minecraft:chest" },
+				
+				{ output: "buildinggadgets:gadget_building" },
+				{ output: "buildinggadgets:gadget_copy_paste" },
+
+        // Yttr
+        { output: "yttr:chute" },
+        { output: "yttr:rafter" },
+        { output: "yttr:centrifuge" },
+        { output: "yttr:dopper" },
+        { output: "yttr:aware_hopper" },
+        { output: "yttr:levitation_chamber" },
+        { output: "yttr:skeletal_sorter_right_handed" },
+        { output: "yttr:skeletal_sorter_left_handed" },
+        { output: "yttr:rifle_reinforced" },
+        { output: "yttr:rifle_overclocked" },
+        { output: "yttr:shifter" },
+        { output: "yttr:projector" },
+        { output: "yttr:spatula" },
+        { output: "yttr:bedrock_smasher" },
+        { output: "yttr:effector" },
 
         // Minecraft
 
@@ -372,7 +423,14 @@ onEvent("recipes", (event) => {
         { output: "minecraft:bow" },
         { output: "minecraft:crossbow" },
         { output: "minecraft:arrow" },
+        { output: "minecraft:shulker_shell" },
         { output: "minecraft:ender_eye" },
+        { output: "minecraft:diamond_ore" },
+        { output: "minecraft:emerald_ore" },
+        { output: "minecraft:blackstone" },
+        { output: "minecraft:gold_nugget",  input: "minecraft:soul_sand" },
+        { output: "minecraft:gravel",  input: "techreborn:granite_dust" },
+        { output: "minecraft:gold_nugget",  input: "minecraft:soul_soil" },
         { input: "minecraft:crying_obsidian" },
         {
             input: "minecraft:copper_block",
