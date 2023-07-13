@@ -1,0 +1,86 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "createastral:distillery",
+	"time": 500,
+	"requirements": [
+		{
+			"type": "custommachinery:structure",
+			"keys": {
+				"a": "dbe:steel_frame",
+				"b": "techreborn:advanced_machine_casing",
+				"c": "techreborn:reinforced_glass",
+				"d": "createastral:shimmering_stone",
+				"e": "create:blaze_burner{fuelLevel:2}"
+			},
+			"pattern": [
+				[
+					"eeeee",
+					"eeeee",
+					"eeeee",
+					"eeeee",
+					"eeeee"
+
+				  ],
+				  [
+					"bbbbb",
+					"bbbbb",
+					"bbbbb",
+					"bbbbb",
+					"bbmbb"
+				  ],
+				  [
+					"accca",
+					"cdddc",
+					"cdddc",
+					"cdddc",
+					"accca"
+				  ],
+				  [
+					"accca",
+					"cdddc",
+					"cdddc",
+					"cdddc",
+					"accca"
+				  ],
+				  [
+					"accca",
+					"cdddc",
+					"cdddc",
+					"cdddc",
+					"accca"
+				  ],
+				  [
+					"bbbbb",
+					"bbbbb",
+					"bbbbb",
+					"bbbbb",
+					"bbbbb"
+				  ]
+			]
+		  },
+		{
+			"type": "custommachinery:fluid",
+			"fluid": "kubejs:shimmer",
+			"amount": 81000,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:item",
+			"mode": "input",
+			"item": "minecraft:dirt",
+			"amount": 1
+		},
+		
+			{
+				"type": "custommachinery:energy",
+				"mode": "input",
+				"amount": 100000
+			},
+		{
+			"type": "custommachinery:item",
+			"item": "techreborn:uu_matter",
+			"amount": 1,
+			"mode": "output"
+		}
+	]
+}

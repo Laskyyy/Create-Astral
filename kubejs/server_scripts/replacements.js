@@ -85,6 +85,11 @@ onEvent("recipes", (event) => {
             "ad_astra:steel_ingot",
         ],
         [
+            { output: "minecraft:shulker_box" },
+            "minecraft:chest",
+            "minecraft:ender_eye",
+        ],
+        [
             { mod: "createaddition" },
             "minecraft:redstone_torch",
             "create:electron_tube",
@@ -120,9 +125,9 @@ onEvent("recipes", (event) => {
             "create:sturdy_sheet",
         ],
         [
-            { output: "toms_storage:ts.adv_wireless_terminal" },
-            "minecraft:netherite_ingot",
-            "tconstruct:hepatizon_ingot",
+            { output: "yttr:giant_cobblestone" },
+            "minecraft:cobblestone",
+            "compressor:triple_compressed_cobblestone",
         ],
         [
             { output: "createaddition:accumulator" },
@@ -147,7 +152,7 @@ onEvent("recipes", (event) => {
         [
             { output: "ad_astra:space_helmet" },
             "minecraft:orange_stained_glass_pane",
-            "create:diving_helmet",
+            "create:copper_diving_helmet",
         ],
         [
             { output: "ad_astra:space_pants" },
@@ -158,6 +163,16 @@ onEvent("recipes", (event) => {
             { output: "create:deployer" },
             "create:electron_tube",
             "create:polished_rose_quartz",
+        ],
+        [
+            { output: "create:content_observer" },
+            "create:electron_tube",
+            "minecraft:redstone_torch",
+        ],
+        [
+            { output: "create:content_observer" },
+            "create:brass_casing",
+            "create:railway_casing",
         ],
         [
             { output: "ad_astra:space_suit" },
@@ -190,11 +205,6 @@ onEvent("recipes", (event) => {
             "ad_astra:iron_plate",
         ],
         [
-            { output: "ad_astra:ostrum_tank" },
-            "minecraft:bucket",
-            "tconstruct:blazing_blood_bucket",
-        ],
-        [
             { output: "ad_astra:netherite_space_helmet" },
             "minecraft:netherite_helmet",
             "createastral:sturdy_helmet",
@@ -214,6 +224,31 @@ onEvent("recipes", (event) => {
             "minecraft:netherite_leggings",
             "createastral:sturdy_boots",
         ],
+
+        [{output: 'ad_astra:netherite_space_helmet'},
+         'ad_astra:compressed_steel',
+          'ad_astra:ostrum_block'
+        ],
+
+        [{output: 'ad_astra:netherite_space_suit'},
+         'ad_astra:compressed_steel',
+          'ad_astra:ostrum_block'
+        ],
+
+        [{output: 'ad_astra:netherite_space_pants'},
+         'ad_astra:compressed_steel',
+          'techreborn:lead_plate'
+        ],
+
+        [{output: 'ad_astra:netherite_space_boots'},
+         'ad_astra:compressed_steel',
+          'techreborn:lead_plate'
+        ],
+        [{output: "minecraft:shulker_box"},
+         "techreborn:endstone_small_dust",
+          "ae2:fluix_dust"
+        ],
+
         [
             { mod: "techreborn" },
             "techreborn:bronze_plate",
@@ -445,7 +480,7 @@ onEvent("recipes", (event) => {
             "create:integrated_circuit",
         ],
         [
-            { output: "gearreborn:hazmat_chestpiece" },
+            { output: "gearreborn:hazmat_helmet" },
             "techreborn:reinforced_glass",
             "#c:glass",
         ],
@@ -500,10 +535,19 @@ onEvent("recipes", (event) => {
             "create:precision_mechanism",
             "create:refined_radiance",
         ],
+        [{mod: 'techreborn'},'techreborn:iridium_ingot', 'yttr:yttrium_ingot'],
+        [{mod: 'techreborn'},'techreborn:iridium_plate', 'yttr:yttrium_ingot'],
+        [{output: 'ad_astra:cryo_freezer'},'ad_astra:ostrum_tank', 'techreborn:lithium_ion_battery'],
+        [{mod: 'techreborn'},'techreborn:iridium_alloy_plate', 'yttr:yttrium_ingot'],
+        [{mod: 'dustrial_decor'},'minecraft:iron_ingot', 'create:iron_sheet'],
+        [{mod: 'computercraft'},'minecraft:iron_ingot', 'create:iron_sheet'],
+        [{output: 'ae2:fluid_cell_housing'}, 'techreborn:silver_plate', 'create:copper_casing'],
+        [{output: 'ae2:item_cell_housing'}, 'techreborn:silver_plate', 'create:andesite_casing'],
+
         [
             { output: "techreborn:industrial_grinder" },
             "techreborn:electronic_circuit",
-            "immersive_aircraft:engine",
+            "ad_astra:compressed_calorite",
         ],
         [
             { output: "techreborn:digital_display" },
@@ -515,7 +559,7 @@ onEvent("recipes", (event) => {
             "minecraft:glass_pane",
             "#computercraft:monitor",
         ],
-        ["techreborn:lapotronic_orb", "immersive_aircraft:engine"],
+        ["techreborn:lapotronic_orb", "ad_astra:compressed_calorite"],
         [
             { mod: "quarrymod" },
             "techreborn:iridium_ingot",
@@ -552,11 +596,6 @@ onEvent("recipes", (event) => {
             "techreborn:tungstensteel_plate",
             "create:shadow_steel",
         ],
-        [
-            { output: "ae2:fluid_cell_housing" },
-            "techreborn:silver_plate",
-            "create:copper_casing",
-        ],
         [{ mod: "phonos" }, "minecraft:iron_ingot", "techreborn:tin_ingot"],
         [
             { mod: "farmersdelight" },
@@ -576,6 +615,7 @@ onEvent("recipes", (event) => {
         ],
         [{ mod: "cccbridge" }, "create:golden_sheet", "create:brass_sheet"],
         [{ mod: "computercraft" }, "#c:stones", "create:andesite_alloy"],
+
         [{ mod: "toms_storage" }, "#minecraft:planks", "create:andesite_alloy"],
         [{ mod: "toms_storage" }, "minecraft:stick", "createaddition:iron_rod"],
         [{ mod: "toms_storage" }, "minecraft:paper", "create:filter"],
@@ -620,6 +660,9 @@ onEvent("recipes", (event) => {
             "createaddition:iron_rod",
             "create:integrated_circuit",
         ],
+        [{mod: 'immersive_aircraft', output: 'immersive_aircraft:steel_boiler'},'minecraft:iron_ingot', 'ad_astra:steel_plate'],
+        [{mod: 'immersive_aircraft'},'minecraft:copper_ingot', 'create:fluid_pipe'],
+        [{mod: 'immersive_aircraft'},'minecraft:iron_ingot', 'minecraft:iron_block'],
     ].forEach((recipe) => {
         if (recipe.length === 2) {
             event.replaceInput(recipe[0], recipe[1]);

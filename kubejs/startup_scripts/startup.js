@@ -31,6 +31,35 @@ onEvent('fluid.registry', event => {
 	     .stillTexture('tconstruct:block/fluid/molten/still')
 	     .flowingTexture('tconstruct:block/fluid/molten/flowing')
 
+  	
+	event.create('molten_yttrium')
+  .thickTexture(0x487d77)
+  .bucketColor(0x487d77)
+  .displayName('Yttrium')
+.stillTexture('tconstruct:block/fluid/molten/still')
+.flowingTexture('tconstruct:block/fluid/molten/flowing')
+
+event.create('molten_shadowsteel')
+.thickTexture(0x2e2742)
+.bucketColor(0x2e2742)
+.displayName('Shadow Fluid')
+.stillTexture('tconstruct:block/fluid/molten/still')
+.flowingTexture('tconstruct:block/fluid/molten/flowing')
+
+event.create('molten_radiance')
+.thickTexture(0xf7f2ff)
+.bucketColor(0xf7f2ff)
+.displayName('Radiant Residue')
+.stillTexture('tconstruct:block/fluid/molten/still')
+.flowingTexture('tconstruct:block/fluid/molten/flowing')
+
+event.create('aurorite')
+.thickTexture(0xC8E9E9)
+.bucketColor(0xC8E9E9)
+.displayName('Aurorite')
+.stillTexture('tconstruct:block/fluid/molten/still')
+.flowingTexture('tconstruct:block/fluid/molten/flowing')
+
   event.create('plasma_fluid')
        .thickTexture(0x4cfbff)
        .bucketColor(0x4cfbff)
@@ -66,7 +95,169 @@ onEvent('fluid.registry', event => {
        .stillTexture('tconstruct:block/fluid/molten/still')
 	     .flowingTexture('tconstruct:block/fluid/molten/flowing')
 
+  event.create('red_grape_juice')
+       .thinTexture(0x864e97 )
+       .bucketColor(0x864e97 )
+       .displayName('Red Grape Juice')
+
+  event.create('white_grape_juice')
+       .thinTexture(0xEEEDC4)
+       .bucketColor(0xEEEDC4)
+       .displayName('White Grape Juice')
+	
+event.create('liquid_xp_nuggies')
+       .thickTexture(0x17ff45)
+       .bucketColor(0x17ff45)
+       .displayName('Liquified Experience Nuggets')
+       .stillTexture('tconstruct:block/fluid/molten/shimmer')
+       .flowingTexture('tconstruct:block/fluid/molten/shimmer')
+  
+liquidFoodGen(event)
 })
+
+//LIQUID FOODS
+function liquidFoodGen(event) {
+  [
+    { 
+      name:'dumplings_fluid',
+      displayName:'Dumpling Mix',
+      color:0xffff80
+    },
+    {
+      name:'pumpkin_soup_fluid',
+      displayName:'Pumpkin Soup',
+      color:0xdddd00
+    },
+    {
+      name:'vegetable_noodles_fluid',
+      displayName:'Guljalabala',
+      color:0x6A4736
+    },
+    {
+      name:'mushroom_rice_fluid',
+      displayName:'Mushroom Rice',
+      color:0xddddee
+    },
+    {
+      name:'beetroot_soup_fluid',
+      displayName:'Corn Soup',
+      color:0xffff80
+    },
+    {
+      name:'hot_cocoa_fluid',
+      displayName:'Hot Cocoa',
+      color:0x993d00
+    },
+    {
+      name:'noodle_soup_fluid',
+      displayName:'Noodle Soup',
+      color:0xffdd80
+    },
+    {
+      name:'stuffed_pumpkin_block_fluid',
+      displayName:'Pumpkin Stuffing',
+      color:0xdddddd
+    },
+    {
+      name:'mushroom_stew_fluid',
+      displayName:'Mushroom Stew',
+      color:0xb35900
+    },
+    {
+      name:'glow_berry_custard_fluid',
+      displayName:'Glow Berry Custard',
+      color:0xffff99
+    },
+    {
+      name:'beef_stew_fluid',
+      displayName:'Beef Stew',
+      color:0x990000
+    },
+    {
+      name:'cooked_rice_fluid',
+      displayName:'Rice',
+      color:0xffffe6
+    },
+    {
+      name:'bone_broth_fluid',
+      displayName:'Bone Broth',
+      color:0xffffe6
+    },
+    {
+      name:'rabbit_stew_fluid',
+      displayName:'Rabbit Stew',
+      color:0xb33c00
+    },
+    {
+      name:'pasta_with_mutton_chop_fluid',
+      displayName:'Mutton Pasta',
+      color:0xe67300
+    },
+    {
+      name:'baked_cod_stew_fluid',
+      displayName:'Cod Stew',
+      color:0xffff80
+    },
+    {
+      name:'squid_ink_pasta_fluid',
+      displayName:'Squid Ink Pasta',
+      color:0xffff80
+    },
+    {
+      name:'tomato_sauce_fluid',
+      displayName:'Tomato Sauce',
+      color:0xb32400
+    },
+    {
+      name:'fish_stew_fluid',
+      displayName:'Fish Stew',
+      color:0xff5c33
+    },
+    {
+      name:'pasta_with_meatballs_fluid',
+      displayName:'Spaghetti with Meatballs',
+      color:0xff0000
+    },
+    {
+      name:'dog_food_fluid',
+      displayName:'Dog Food',
+      color:0x800000
+    },
+    {
+      name:'ratatouille_fluid',
+      displayName:'Ratatouille',
+      color:0xe60000
+    },
+    {
+      name:'fried_rice_fluid',
+      displayName:'Fried Rice',
+      color:0xffcc99
+    },
+    {
+      name:'vegetable_soup_fluid',
+      displayName:'Vegetable Soup',
+      color:0x009900
+    },
+    {
+      name:'apple_cider_fluid',
+      displayName:'Apple Cider',
+      color:0xffad66
+    },
+    {
+      name:'chicken_soup_fluid',
+      displayName:'Chicken Soup',
+      color:0xffdd99
+    }
+
+  ].forEach(f => {
+    let fluid = event.create(f.name)
+      .thinTexture(f.color)
+      .bucketColor(f.color)
+      .displayName(f.displayName)
+      .stillTexture('tconstruct:block/fluid/stew/still')
+      .flowingTexture('tconstruct:block/fluid/stew/flowing')
+  });
+}
 
 ///// MODIFY CHARACTERISTICS OF ITEMS /////
 onEvent('item.modification', event => {
@@ -102,24 +293,12 @@ onEvent('block.modification', event => {
 	  block.material = "Lantern"
   })
 
-  event.modify('probablychests:normal_pot', block => {
-    block.destroySpeed = 1
-    block.hasCollision = true
+  event.modify('techreborn:crude_storage_unit', block => {
+	  block.material = "wood"
   })
 
-  event.modify('probablychests:nether_pot', block => {
-    block.destroySpeed = 1
-    block.hasCollision = true
-  })
-
-  event.modify('probablychests:lush_pot', block => {
-    block.destroySpeed = 1
-    block.hasCollision = true
-  })
-
-  event.modify('probablychests:rocky_pot', block => {
-    block.destroySpeed = 1
-    block.hasCollision = true
+  event.modify('techreborn:storage_buffer', block => {
+	  block.material = "wood"
   })
 
   event.modify('minecraft:diamond_ore', block => {
@@ -129,18 +308,6 @@ onEvent('block.modification', event => {
   })
 
   event.modify('minecraft:deepslate_diamond_ore', block => {
-    block.destroySpeed = 7
-    block.hasCollision = true
-	  block.explosionResistance = 99999
-  })
-
-  event.modify('techreborn:tungsten_ore', block => {
-    block.destroySpeed = 6
-    block.hasCollision = true
-	  block.explosionResistance = 99999
-  })
-
-  event.modify('techreborn:deepslate_tungsten_ore', block => {
     block.destroySpeed = 7
     block.hasCollision = true
 	  block.explosionResistance = 99999
@@ -250,6 +417,22 @@ onEvent('block.registry', event => {
        .material('stone')
        .hardness(4)
        .tagBlock('minecraft:mineable/pickaxe')
+
+  event.create('createastral:voidtouched_compound', 'basic')
+      .hardness(4)
+      .resistance(1200)
+      .tagBlock('minecraft:mineable/pickaxe')
+
+  event.create('createastral:charcoal_block', 'basic')
+      .hardness(4)
+      .tagBlock('minecraft:mineable/pickaxe')
+      .material('stone')    
+
+  event.create('createastral:experience_block')
+      .tagBlock('minecraft:mineable/pickaxe')
+      .material('glass')    
+      .hardness(2)
+      .lightLevel(5)
  })
 
  ///// ADD BURN TIME TO FUEL /////
@@ -258,18 +441,19 @@ onEvent("item.modification", event => {
 	event.modify('create:blaze_cake', item => {
     item.burnTime = 50000
   })
+  event.modify('createastral:charcoal_block', item => {
+    item.burnTime = 2000
+  })
 
-  event.modify('ad_astra:fuel_bucket', item => {
+
+  event.modify('techreborn:fuel_bucket', item => {
     item.burnTime = 50000
   })
 
-  event.modify('ad_astra:oil_bucket', item => {
+  event.modify('techreborna:oil_bucket', item => {
     item.burnTime = 40000
   })
 
-  event.modify('ad_astra:oil', item => {
-    item.burnTime = 40000
-  })
 
 })	
 
@@ -310,7 +494,7 @@ onEvent('item.registry.armor_tiers', event => {
     tier.slotProtections = [2, 4, 4, 2]
     tier.enchantmentValue = 9
     tier.equipSound = 'minecraft:item.armor.equip_iron'
-    tier.repairIngredient = '#forge:ingots/copper'
+    tier.repairIngredient = 'minecraft:copper_ingot'
     tier.toughness = 0.0 // diamond has 2.0, netherite 3.0
     tier.knockbackResistance = 0.0
   })
@@ -320,7 +504,7 @@ onEvent('item.registry.armor_tiers', event => {
     tier.slotProtections = [3, 6, 6, 3]
     tier.enchantmentValue = 45
     tier.equipSound = 'minecraft:item.armor.equip_iron'
-    tier.repairIngredient = '#forge:ingots/brass'
+    tier.repairIngredient = 'create:brass:ingot'
     tier.toughness = 0.0 // diamond has 2.0, netherite 3.0
     tier.knockbackResistance = 0.0
   })
@@ -380,17 +564,33 @@ onEvent('item.registry', event => {
   event.create('createastral:coin','create:sequenced_assembly')
        .displayName('Golden Coin');
 
-  event.create('createastral:golden_bowl')
-       .displayName('Golden Bowl');
+event.create('createastral:quadrocopter_blueprint').texture("create:item/schematic") ,
+event.create('createastral:gyrodyne_blueprint').texture("create:item/schematic") ,
+event.create('createastral:biplane_blueprint').texture("create:item/schematic") ,
+event.create('createastral:airship_blueprint').texture("create:item/schematic") ,
 
-  event.create('createastral:filled_golden_bowl','create:sequenced_assembly')
-       .displayName('Filled Golden Bowl')
-       .food(food => {
-          food
-          .hunger(0)
-          .saturation(00)
-          .effect('drinkbeer:drunk', 3000, 0, 1)
-          .alwaysEdible()
+
+event.create('createastral:refining_agent'),
+event.create('createastral:separation_agent'),
+event.create('createastral:shimmer_amplifier'),
+event.create('createastral:star_shard').glow(true),
+event.create('createastral:pure_star_shard').glow(true),
+event.create('createastral:crushed_yttrium_ore'),
+event.create('createastral:experience_ingot'),
+
+
+
+
+
+
+
+event.create('createastral:golden_bowl').displayName('Golden Bowl');
+event.create('createastral:filled_golden_bowl','create:sequenced_assembly').displayName('Filled Golden Bowl').food(food => {
+  food
+      .hunger(0)
+      .saturation(0)
+        .effect('drinkbeer:drunk', 3000, 0, 1)
+        .alwaysEdible()
 });
 
 
@@ -478,6 +678,19 @@ onEvent('block.registry', event => {
 
    onEvent('item.tooltip', e => {
     const tooltips = [
+      { item: 'tconstruct:smeltery_controller', tooltip: 'Disabled, use a foundry in chapter 3.' },
+
+      { item: 'create:blaze_cake', tooltip: 'No longer superheats! Use processes in Chapter 4 to superheat blaze burners.' },
+      { item: 'yttr:gadolinite', tooltip: 'Gated by reaching Mercury! (Chapter 5)' },
+      { item: 'yttr:yttrium_ingot', tooltip: 'Gated by reaching Mercury! (Chapter 5)' },
+      { item: 'tconstruct:raw_cobalt', tooltip: 'Gated by reaching the Moon!.' },
+      { item: 'ae2:certus_quartz_dust', tooltip: 'Gated by reaching the Moon!' },
+      { item: 'minecraft:blaze_rod', tooltip: 'Blazes can be found in a certain structure on the Moon...' },
+      { item: 'minecraft:rotten_flesh', tooltip: 'Chewy... might make a good source of leather?' },
+      { item: 'computercraft:disk', tooltip: 'This recipe is wierd it actually uses redstone, not rose quartz.' },
+      { item: 'createastral:bronze_block', tooltip: 'Texture courtesy of Create: Alloyed!' },
+      { item: 'createastral:bronze_ingot', tooltip: 'Texture courtesy of Create: Alloyed!' },
+      { item: 'extractinator:extractinator', tooltip: 'Purely decorative. No functional use.' },
       { item: 'ad_astra:space_helmet', tooltip: 'Can be repaired using Sturdy Sheets.' },
       { item: 'ad_astra:space_suit', tooltip: 'Can be repaired using Sturdy Sheets.' },
       { item: 'ad_astra:space_pants', tooltip: 'Can be repaired using Sturdy Sheets.' },
@@ -507,8 +720,10 @@ onEvent('block.registry', event => {
 
       { item: 'techreborn:lead_ore', tooltip: 'This metal is found on mars. Y=50' },
       { item: 'techreborn:deepslate_lead_ore', tooltip: 'This metal is found on mars. Y=50' },
-      { item: 'techreborn:raw_lead', tooltip: 'This metal is found on mars. Y=50' },
-      { item: 'techreborn:lead_nugget', tooltip: 'This metal is found on mars. Y=50' },
+
+      
+
+
     ];
   
     tooltips.forEach(tooltip => {
@@ -523,7 +738,7 @@ onEvent('block.registry', event => {
     });
     e.addAdvanced('createastral:orcane', (item, advanced, text) => {
       if (!e.isShift()) {
-        text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+        text.add(1, [Text.of('Hold ').darkGreen(), Text.of('Shift ').green(), Text.of('to see more info.').darkGreen()])
       }
       if (e.isShift()) {
         
@@ -628,7 +843,7 @@ onEvent('worldgen.add', event => {
   event.addOre((ore) => {
 		ore.id = "kubejs:skystoneae2" // optional
 		ore.biomes = ['ad_astra:lunar_wastelands', 'minecraft:basalt_deltas', 'incendium:toxic_heap']
-		ore.addTarget('#ad_astra:moon_ore_replaceables', 'ae2:sky_stone_block')
+		ore.addTarget('#ad_astra:moon_ore_replaceables', 'ad_astra:sky_stone')
 
 
 		ore.count([1, 2])
@@ -694,15 +909,15 @@ onEvent('worldgen.add', event => {
 
 
   event.addOre((ore) => {
-		ore.id = "kubejs:iridiumoremerc" // optional
+		ore.id = "kubejs:yttriumoremerc" // optional
 		ore.biomes = [{
 			not: {
 				category: "river"
 			}
 		}]
-		ore.addTarget('#ad_astra:mercury_ore_replaceables', 'techreborn:deepslate_iridium_ore')
+		ore.addTarget('#ad_astra:mercury_ore_replaceables', 'yttr:gadolinite')
 
-		ore.count([25, 40])
+		ore.count([25, 55])
 			.squared()
 			.triangleHeight(-64, 85)
 	})

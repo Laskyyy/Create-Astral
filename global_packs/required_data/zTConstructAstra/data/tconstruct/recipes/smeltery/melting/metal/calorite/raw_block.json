@@ -16,7 +16,7 @@
     "fluid": "kubejs:molten_calorite",
     "amount": 81000
   },
-  "temperature": 425,
+  "temperature": 1500,
   "time": 283,
   "byproducts": [
     {

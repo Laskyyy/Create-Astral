@@ -39,7 +39,16 @@
         "terrain_shaper": {
           "offset": 0.1,
           "factor": 4,
-          "jaggedness": 4
+          "jaggedness": {
+            "coordinate": "ridges",
+            "points": [
+              {
+                "location": 1,
+                "derivative": 6,
+                "value": 4
+              }
+            ]
+          }
         }
       },
       "noise_router": {
@@ -86,9 +95,9 @@
           "shift_z": "minecraft:shift_z"
         },
         "continents": "minecraft:overworld/continents",
-        "ridges": "minecraft:overworld/ridges",
         "erosion": "minecraft:overworld/erosion",
         "depth": "minecraft:overworld/depth",
+        "ridges": "minecraft:overworld/ridges",
         "initial_density_without_jaggedness": {
           "type": "minecraft:mul",
           "argument1": 4,
@@ -450,7 +459,8 @@
           }
         ]
       }
-    },
+    }
+    ,
     "biome_source": {
       "type": "minecraft:multi_noise",
       "biomes": [

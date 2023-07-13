@@ -1,13 +1,13 @@
-name = "Global Packs"
-filename = "global_packs-fabric-1.18.2-1.12.3_fabric.jar"
+name = "Global Data- & Resourcepacks"
+filename = "global_packs-fabric-1.18.2-1.12.4_fabric.jar"
 side = "both"
 
 [download]
 mode = "metadata:curseforge"
 hash-format = "sha1"
-hash = "600100f82a22ade4d7a2fdee055c45bea2a75d89"
+hash = "0fe4bb356c4176c6140006b62357396ac0f28fcf"
 
 [update]
 [update.curseforge]
-file-id = 3965519
+file-id = 4570520
 project-id = 317134

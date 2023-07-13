@@ -1,0 +1,63 @@
+{
+	rewards: [
+		{
+			item: {
+				id: "minecraft:potion"
+				Count: 1b
+				tag: {
+					Potion: "minecraft:fire_resistance"
+				}
+			}
+			weight: 2
+		}
+		{ item: "create:rose_quartz", count: 8, weight: 2 }
+		{ item: "create:railway_casing", count: 24, weight: 2 }
+		{ item: "minecraft:tnt", count: 8, weight: 2 }
+		{ item: "create:belt_connector", count: 8, weight: 2 }
+		{ item: "create:large_cogwheel", count: 5, weight: 2 }
+		{ item: "minecraft:enchanted_golden_apple", weight: 2 }
+		{
+			item: {
+				id: "create:filter"
+				Count: 1b
+				tag: {
+					Items: { }
+				}
+			}
+			count: 6
+			weight: 2
+		}
+		{ item: "create:crushed_iron_ore", count: 5, weight: 2 }
+		{ item: "minecraft:soul_torch", count: 8, weight: 2 }
+		{ item: "create:crushed_copper_ore", count: 5, weight: 2 }
+		{ item: "techreborn:basic_machine_frame", weight: 2 }
+		{ item: "create:crushed_gold_ore", count: 5, weight: 2 }
+		{ item: "create:crushed_zinc_ore", count: 5, weight: 2 }
+		{ item: "create:experience_nugget", count: 32, weight: 10 }
+		{ item: "farmersdelight:shepherds_pie", weight: 2 }
+		{ item: "create:depot", count: 3, weight: 2 }
+		{ item: "create:brass_hand", count: 6, weight: 2 }
+		{ item: "ad_astra:space_painting", weight: 2 }
+		{ item: "create:chute", weight: 2 }
+		{ item: "minecraft:emerald_block", weight: 2 }
+		{ item: "createaddition:chocolate_cake", weight: 2 }
+		{ item: "create:andesite_funnel", weight: 2 }
+		{ item: "minecraft:shulker_shell", count: 2 }
+		{ item: "techreborn:silver_ingot", count: 8 }
+		{ item: "ad_astra:desh_ingot", count: 4 }
+	]
+	loot_size: 1
+	order_index: 3
+	id: "48E82776955518FB"
+	loot_crate: {
+		string_id: "chapter_3"
+		item_name: "Chapter 3 Loot Crate"
+		color: 14795118
+		drops: {
+			passive: 0
+			monster: 0
+			boss: 0
+		}
+	}
+	title: "Chapter 3"
+}
