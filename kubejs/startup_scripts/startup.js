@@ -546,7 +546,9 @@ onEvent('item.registry', event => {
   event.create('createastral:crushed_ostrum_ore'),
   event.create('createastral:crushed_calorite_ore'),
   event.create('createastral:subatomic_ingot'),
-  event.create('createastral:astral_conduit'),
+  event.create('createastral:astral_conduit')
+       .maxStackSize(1)
+       .maxDamage(20);
   event.create('createastral:andesite_compound'),
   event.create('createastral:bronze_sheet'),
   event.create('createastral:olivine_sheet'),

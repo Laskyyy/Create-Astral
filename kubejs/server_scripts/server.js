@@ -27,6 +27,7 @@ onEvent('item.tags', event => {
     event.add('c:stripped_logs', 'ad_astra:stripped_glacian_log');
 });
 
+
 // constants
 
 // Farmer's Delight cutting board changes
@@ -1240,6 +1241,21 @@ onEvent("player.logged_in", (event) => {
         event.player.give("ftbquests:book");
     }
 });
+
+
+//TheOverlyCaffeinatedTrashPanda Astral Conduit Damage On Use
+//if you wish to increase the damge please goto startup scripts, line 385, then what ever value you set it, take 1 off and change the 19
+onEvent("block.right_click", event => {
+    if (event.block.id == "createastral:shimmering_stone" && event.item.id == "createastral:astral_conduit" && event.item.nbt['Damage'] <= 19) {
+        event.item.nbt['Damage']++
+        
+        if (event.item.nbt['Damage'] == 20 ) {
+            event.player.inventory.set(event.player.getSelectedSlot(), "air")
+        }
+    }
+})
+
+
 onEvent("morejs.villager.trades", (event) => { 
     
     const vanillaTradesToRemove = [
