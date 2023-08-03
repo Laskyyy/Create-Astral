@@ -6,7 +6,11 @@ pack-format = "packwiz:1.1.0"
 [index]
 file = "index.toml"
 hash-format = "sha256"
+<<<<<<< refs/remotes/origin/darkmode-gui-fixes
 hash = "10c0f4025b6ab5c83b6f8061c31d0266613b503ce4a3ff587bd9fba2401bd7a4"
+=======
+hash = "c4b130acad794765fdd0afa25ba45fc9640bd865b7efcf3808bb330c42e46745"
+>>>>>>> local
 
 [versions]
 fabric = "0.14.14"
