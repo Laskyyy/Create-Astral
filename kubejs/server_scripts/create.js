@@ -1745,7 +1745,7 @@ function mechanicalCraftingRecipes(event) {
             output: "immersive_aircraft:boiler",
             shape: ["AB", "CB", "CB"],
             inputs: {
-                A: "create:nozzle",
+                A: "techreborn:machine_parts",
                 B: "create:copper_sheet",
                 C: "techreborn:rubber",
             },
