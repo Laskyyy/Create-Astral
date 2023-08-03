@@ -1679,6 +1679,52 @@ function mechanicalCraftingRecipes(event) {
     // Inputs: Object with letters assigned to input items, to be used in the shape
     [
         {
+            output: "immersive_aircraft:airship",
+            shape: ["AAAA ", "AAAAA", " G G ", "BEDBC", " BBB "],
+            inputs: {
+                A: "immersive_aircraft:sail",
+                B: "immersive_aircraft:hull",
+                C: "create:propeller",
+                D: "immersive_aircraft:engine",
+                E: "#create:seats",
+                G: "campanion:rope",
+            },
+        },
+        {
+            output: "immersive_aircraft:quadrocopter",
+            shape: ["CCDCC ", "CCBCC ", "ABEBA ", "CCBCC ", "CCDCC "],
+            inputs: {
+                A: "create:precision_mechanism",
+                B: "immersive_aircraft:hull",
+                C: "create:propeller",
+                D: "createaddition:brass_rod",
+                E: "#create:seats",
+            },
+        },
+        {
+            output: "immersive_aircraft:gyrodyne",
+            shape: [" CCC ", "  D  ", "BGEBA", " BBB "],
+            inputs: {
+                A: "immersive_aircraft:sail",
+                B: "immersive_aircraft:hull",
+                C: "create:propeller",
+                D: "createaddition:brass_rod",
+                E: "#create:seats",
+                G: "create:hand_crank",
+            },
+        },
+        {
+            output: "immersive_aircraft:biplane",
+            shape: ["    AA   ", "    AA   ", " A   BBC ", "BBBBBEDC ", " A   BBC ", "    AA   ", "    AA   ", ],
+            inputs: {
+                A: "immersive_aircraft:sail",
+                B: "immersive_aircraft:hull",
+                C: "create:propeller",
+                D: "immersive_aircraft:engine",
+                E: "#create:seats",
+            },
+        },
+        {
             output: "ad_astra:launch_pad",
             shape: ["BAAAB", "ABABA", "AABAA", "ABABA", "BAAAB"],
             inputs: {
@@ -1699,7 +1745,7 @@ function mechanicalCraftingRecipes(event) {
             output: "immersive_aircraft:boiler",
             shape: ["AB", "CB", "CB"],
             inputs: {
-                A: "techreborn:machine_parts",
+                A: "create:nozzle",
                 B: "create:copper_sheet",
                 C: "techreborn:rubber",
             },
