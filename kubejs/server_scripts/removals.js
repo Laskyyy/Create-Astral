@@ -8,6 +8,7 @@ onEvent("recipes", (event) => {
         { output: "techreborn:compressed_plantball" },
         { output: "techreborn:plantball" },
         { output: "techreborn:grinder" },
+        { output: "techreborn:block_breaker" },
         { output: "techreborn:wire_mill" },
         { output: "techreborn:compressor" },
         { output: "techreborn:synthetic_redstone_crystal" },
