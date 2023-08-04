@@ -1,11 +1,11 @@
 {
-    "item.dustrial_decor.cast_iron_billet": "Lingot de fer d'andésite",
-    "block.dustrial_decor.cast_iron_block": "Bloc de fer d'andésite",
-    "block.dustrial_decor.cast_iron_pillar": "Pilier de fer d'andésite",
-    "block.dustrial_decor.cast_iron_bricks": "Briques de fer d'andésite",
-    "block.dustrial_decor.cast_iron_brick_slab": "Dalle de brique de fer d'andésite",
-    "block.dustrial_decor.cast_iron_brick_vertical_slab": "Dalle verticale de brique de fer d'andésite",
-    "block.dustrial_decor.cast_iron_brick_stairs": "Escalier de brique de fer d'andésite",
-    "block.dustrial_decor.engraved_cast_iron_block": "Bloc de fer d'andésite gravé",
-    "block.dustrial_decor.cast_iron_balustrade": "Balustrade de fer d'andésite"
+    "item.dustrial_decor.cast_iron_billet": "Lingot d'Andésite Ferreux",
+    "block.dustrial_decor.cast_iron_block": "Bloc d'Andésite Ferreux",
+    "block.dustrial_decor.cast_iron_pillar": "Pilier d'Andésite Ferreux",
+    "block.dustrial_decor.cast_iron_bricks": "Briques d'Andésite Ferreux",
+    "block.dustrial_decor.cast_iron_brick_slab": "Dalles de Briques d'Andésite Ferreux",
+    "block.dustrial_decor.cast_iron_brick_vertical_slab": "Dalles Verticales de Briques d'Andésite Ferreux",
+    "block.dustrial_decor.cast_iron_brick_stairs": "Escaliers de Briques d'Andésite Ferreux",
+    "block.dustrial_decor.engraved_cast_iron_block": "Bloc d'Andésite Ferreux Gravé",
+    "block.dustrial_decor.cast_iron_balustrade": "Balustrade d'Andésite Ferreux"
 }

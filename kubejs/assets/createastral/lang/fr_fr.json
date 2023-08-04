@@ -69,12 +69,12 @@
     "block.createastral.sturdy_sheet_block": "Bloc de plaque robuste",
     "block.createastral.shimmering_stone": "Pierre de Shimmer",
     "block.createastral.copper_plating": "Bloc de plaque de cuivre",
-    "block.createastral.refined_radiance_block": "Bloc de radiance raffiné",
+    "block.createastral.refined_radiance_block": "Bloc radieux",
     "block.createastral.bronze_block": "Bloc de bronze",
     "block.createastral.copper_heating_coil": "Bloc de bobine de cuivre.",
     "block.createastral.blast-resistant_concrete_slab": "Dalle en béton résistant aux explosions",
     "block.createastral.blast-resistant_concrete": "Béton résistant aux explosions",
     "block.createastral.blast-resistant_concrete_stairs": "Escalier en béton résistant aux explosions",
-    "block.createastral.electrolyser_dummy": "Électrolyseur dummy",
+    "block.createastral.electrolyser_dummy": "Électrolyseur à blanc",
     "block.createastral.andesite_alloy_block": "Bloc d'alliage d'andésite"
 }
