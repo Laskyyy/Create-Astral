@@ -3,3 +3,4 @@ packwiz-installer.jar
 completion.sh
 reload.bat
 *.code-workspace
+kubejs/assets/kubejs/probe
