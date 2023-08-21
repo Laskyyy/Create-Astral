@@ -827,6 +827,12 @@ onEvent("recipes", (event) => {
     event.shaped("createastral:refined_radiance_block", ["AAA", "AAA", "AAA"], {
         A: "create:refined_radiance",
     });
+
+    // I added this recipe to turn refined radiance blocks back into refined radiance
+    event.shapeless("9x create:refined_radiance",
+        ["createastral:refined_radiance_block"], {
+    });
+    
     event.shaped("16x create:refined_radiance_casing", ["BBB", "BAB", "BBB"], {
         A: "create:refined_radiance",
         B: "#minecraft:planks",
