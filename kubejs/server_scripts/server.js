@@ -832,11 +832,12 @@ onEvent("recipes", (event) => {
     event.shapeless("9x create:refined_radiance",
         ["createastral:refined_radiance_block"], {
     });
-    
+
     event.shaped("16x create:refined_radiance_casing", ["BBB", "BAB", "BBB"], {
         A: "create:refined_radiance",
         B: "#minecraft:planks",
     });
+    
     event.shaped("10x minecraft:torch", ["A", "B"], {
         A: "naturalist:glow_goop",
         B: "minecraft:stick",
