@@ -687,6 +687,17 @@ onEvent("recipes", (event) => {
         "automobility:dash_panel"
     );
 
+    // createdeco sheet metal blocks
+    event.stonecutting("2x createdeco:copper_sheet_metal", "create:copper_sheet");
+    event.stonecutting("2x createdeco:andesite_sheet_metal", "create:andesite_alloy");
+    event.stonecutting("2x createdeco:gold_sheet_metal", "create:golden_sheet");
+    event.stonecutting("2x createdeco:netherite_sheet_metal", "createdeco:netherite_sheet");
+    event.stonecutting("2x createdeco:brass_sheet_metal", "create:brass_sheet");
+    event.stonecutting("2x createdeco:cast_iron_sheet_metal", "createdeco:cast_iron_sheet");
+    event.stonecutting("2x createdeco:iron_sheet_metal", "create:iron_sheet");
+    event.stonecutting("2x createdeco:zinc_sheet_metal", "createdeco:zinc_sheet");
+    
+
     ////////////////  EARLY GAME ANDESITE / GROUT RELATED STUFF
 
     event.shaped("createastral:andesite_compound", ["BBB", "AAA", "CCC"], {
@@ -805,6 +816,7 @@ onEvent("recipes", (event) => {
     event.shaped("createastral:bronze_block", ["AAA", "AAA", "AAA"], {
         A: "createastral:bronze_ingot",
     });
+
     event.shaped("9x createastral:bronze_ingot", ["A"], {
         A: "createastral:bronze_block",
     });
@@ -812,6 +824,7 @@ onEvent("recipes", (event) => {
     event.shaped("ad_astra:steel_block", ["AAA", "AAA", "AAA"], {
         A: "ad_astra:steel_ingot",
     });
+
     event.shaped("9x ad_astra:steel_ingot", ["A"], {
         A: "ad_astra:steel_block",
     });
@@ -827,10 +840,12 @@ onEvent("recipes", (event) => {
     event.shaped("createastral:refined_radiance_block", ["AAA", "AAA", "AAA"], {
         A: "create:refined_radiance",
     });
+
     event.shaped("16x create:refined_radiance_casing", ["BBB", "BAB", "BBB"], {
         A: "create:refined_radiance",
         B: "#minecraft:planks",
     });
+
     event.shaped("10x minecraft:torch", ["A", "B"], {
         A: "naturalist:glow_goop",
         B: "minecraft:stick",
