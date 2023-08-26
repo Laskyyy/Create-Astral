@@ -1,0 +1,6 @@
+{
+   "pack": {
+      "pack_format": 8,
+      "description": "Revert vanilla fence item model to avoid breaking textures for modded fences. This should be above Vanilla Building Extended."
+   }
+}
