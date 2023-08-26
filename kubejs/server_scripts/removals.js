@@ -327,6 +327,13 @@ onEvent("recipes", (event) => {
         { mod: "create", output: "minecraft:andesite" },
         { input: "create:blaze_burner" },
 
+        // Create Deco
+
+        { output: "createdeco:andesite_door" },
+        { output: "createdeco:brass_door" },
+        { output: "createdeco:copper_door" },
+        { output: "createdeco:zinc_door" },
+
         //Create Additions
 
         { output: "createaddition:alternator" },

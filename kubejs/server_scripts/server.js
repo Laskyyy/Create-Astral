@@ -793,6 +793,27 @@ onEvent("recipes", (event) => {
 
     //// ASSORTED CRAFTING BENCH RECIPES
 
+
+    // createdeco door recipe rebalance
+
+    event.shaped("3x createdeco:andesite_door", ["AA", "AA", "AA"], {
+        A: "create:andesite_alloy",
+    });
+
+    event.shaped("3x createdeco:brass_door", ["AA", "AA", "AA"], {
+        A: "create:brass_ingot",
+    });
+
+    event.shaped("3x createdeco:copper_door", ["AA", "AA", "AA"], {
+        A: "minecraft:copper_ingot",
+    });
+
+    event.shaped("3x createdeco:zinc_door", ["AA", "AA", "AA"], {
+        A: "create:zinc_ingot",
+    });
+
+    // end createdeco door recipe rebalance
+
     event.shaped("minecraft:bundle", [" S ", "A A", " A "], {
         S: "minecraft:string",
         A: "minecraft:leather",
