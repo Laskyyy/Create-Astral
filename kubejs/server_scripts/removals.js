@@ -342,6 +342,13 @@ onEvent("recipes", (event) => {
             output: "createaddition:biomass",
         },
 
+
+        // dustrial decor sheetmetal rework
+
+        { output: "dustrial_decor:rusty_iron_door" },
+        { output: "dustrial_decor:rusty_sheet_metal_treading"},
+
+
         // Ad Astra
 
         { output: "ad_astra:oxygen_distributor" },
