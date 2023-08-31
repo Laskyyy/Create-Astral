@@ -1661,6 +1661,44 @@ function splashingRecipes(event) {
                 ["minecraft:raw_copper", 1],
             ],
         },
+
+        // dustrial decor sheetmetal rework
+
+        {
+            input: "minecraft:iron_ingot",
+            outputs: [
+                ["dustrial_decor:rusty_iron_ingot", 1],
+            ],
+        },
+
+        {
+            input: "minecraft:iron_nugget",
+            outputs: [
+                ["dustrial_decor:rusty_iron_nugget", 1],
+            ],
+        },
+
+        {
+            input: "minecraft:iron_block",
+            outputs: [
+                ["dustrial_decor:rusty_iron_block", 1],
+            ],
+        },
+
+        {
+            input: "dustrial_decor:sheet_metal",
+            outputs: [
+                ["dustrial_decor:rusty_sheet_metal", 1],
+            ],
+        },
+
+        
+
+
+
+
+
+
     ].forEach((recipe) => {
         let cleanoutputs = [];
         recipe.outputs.forEach((output) => {
