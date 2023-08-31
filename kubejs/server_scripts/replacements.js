@@ -620,6 +620,9 @@ onEvent("recipes", (event) => {
             "createaddition:iron_rod",
             "create:integrated_circuit",
         ],
+        [{mod: 'immersive_aircraft', output: 'immersive_aircraft:steel_boiler'},'minecraft:iron_ingot', 'ad_astra:steel_plate'],
+        [{mod: 'immersive_aircraft'},'minecraft:copper_ingot', 'create:fluid_pipe'],
+        [{mod: 'immersive_aircraft'},'minecraft:iron_ingot', 'minecraft:iron_block'],
     ].forEach((recipe) => {
         if (recipe.length === 2) {
             event.replaceInput(recipe[0], recipe[1]);

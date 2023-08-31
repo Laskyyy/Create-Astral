@@ -687,6 +687,50 @@ onEvent("recipes", (event) => {
         "automobility:dash_panel"
     );
 
+    // createdeco sheet metal blocks
+    event.stonecutting("2x createdeco:copper_sheet_metal", "create:copper_sheet");
+    event.stonecutting("2x createdeco:andesite_sheet_metal", "create:andesite_alloy");
+    event.stonecutting("2x createdeco:gold_sheet_metal", "create:golden_sheet");
+    event.stonecutting("2x createdeco:netherite_sheet_metal", "createdeco:netherite_sheet");
+    event.stonecutting("2x createdeco:brass_sheet_metal", "create:brass_sheet");
+    event.stonecutting("2x createdeco:cast_iron_sheet_metal", "createdeco:cast_iron_sheet");
+    event.stonecutting("2x createdeco:iron_sheet_metal", "create:iron_sheet");
+    event.stonecutting("2x createdeco:zinc_sheet_metal", "createdeco:zinc_sheet");
+    
+
+    // dustrial decor sheetmetal rework
+
+    event.stonecutting("dustrial_decor:sheet_metal", "minecraft:iron_ingot");
+    event.stonecutting("dustrial_decor:rusty_sheet_metal", "dustrial_decor:rusty_iron_ingot");
+
+    event.stonecutting("dustrial_decor:sheet_metal_paneling", "dustrial_decor:sheet_metal_plating");
+    event.stonecutting("dustrial_decor:sheet_metal_plating_stairs", "dustrial_decor:sheet_metal_plating");
+    event.stonecutting("2x dustrial_decor:sheet_metal_plating_slab", "dustrial_decor:sheet_metal_plating");
+   
+    event.stonecutting("dustrial_decor:rusty_sheet_metal_paneling", "dustrial_decor:rusty_sheet_metal_plating");
+    event.stonecutting("dustrial_decor:rusty_sheet_metal_plating_stairs", "dustrial_decor:rusty_sheet_metal_plating");
+    event.stonecutting("2x dustrial_decor:rusty_sheet_metal_plating_slab", "dustrial_decor:rusty_sheet_metal_plating");
+
+    event.stonecutting("dustrial_decor:sheet_metal_treading_stairs", "dustrial_decor:sheet_metal_treading");
+    event.stonecutting("2x dustrial_decor:sheet_metal_treading_slab", "dustrial_decor:sheet_metal_treading");
+
+    event.stonecutting("dustrial_decor:rusty_sheet_metal_treading_stairs", "dustrial_decor:rusty_sheet_metal_treading");
+    event.stonecutting("2x dustrial_decor:rusty_sheet_metal_treading_slab", "dustrial_decor:rusty_sheet_metal_treading");
+
+    event.shaped("3x dustrial_decor:sheet_metal_door", ["AA ", "AA ", "AA "], {
+        A: "dustrial_decor:sheet_metal",
+    });
+
+    event.shaped("3x dustrial_decor:rusty_iron_door", ["AA ", "AA ", "AA "], {
+        A: "dustrial_decor:rusty_iron_ingot",
+    });
+
+    event.shaped("6x dustrial_decor:rusty_sheet_metal_treading", ["AB ", "BA ", "   "], {
+        A: "dustrial_decor:rusty_sheet_metal",
+        B: "dustrial_decor:rusty_iron_nugget",
+    });
+
+    
     ////////////////  EARLY GAME ANDESITE / GROUT RELATED STUFF
 
     event.shaped("createastral:andesite_compound", ["BBB", "AAA", "CCC"], {
@@ -793,6 +837,27 @@ onEvent("recipes", (event) => {
 
     //// ASSORTED CRAFTING BENCH RECIPES
 
+
+    // createdeco door recipe rebalance
+
+    event.shaped("3x createdeco:andesite_door", ["AA", "AA", "AA"], {
+        A: "create:andesite_alloy",
+    });
+
+    event.shaped("3x createdeco:brass_door", ["AA", "AA", "AA"], {
+        A: "create:brass_ingot",
+    });
+
+    event.shaped("3x createdeco:copper_door", ["AA", "AA", "AA"], {
+        A: "minecraft:copper_ingot",
+    });
+
+    event.shaped("3x createdeco:zinc_door", ["AA", "AA", "AA"], {
+        A: "create:zinc_ingot",
+    });
+
+    // end createdeco door recipe rebalance
+
     event.shaped("minecraft:bundle", [" S ", "A A", " A "], {
         S: "minecraft:string",
         A: "minecraft:leather",
@@ -805,6 +870,7 @@ onEvent("recipes", (event) => {
     event.shaped("createastral:bronze_block", ["AAA", "AAA", "AAA"], {
         A: "createastral:bronze_ingot",
     });
+
     event.shaped("9x createastral:bronze_ingot", ["A"], {
         A: "createastral:bronze_block",
     });
@@ -812,6 +878,7 @@ onEvent("recipes", (event) => {
     event.shaped("ad_astra:steel_block", ["AAA", "AAA", "AAA"], {
         A: "ad_astra:steel_ingot",
     });
+
     event.shaped("9x ad_astra:steel_ingot", ["A"], {
         A: "ad_astra:steel_block",
     });
@@ -828,6 +895,7 @@ onEvent("recipes", (event) => {
         A: "create:refined_radiance",
     });
 
+
     // I added this recipe to turn refined radiance blocks back into refined radiance
     event.shapeless("9x create:refined_radiance",
         ["createastral:refined_radiance_block"], {
@@ -837,7 +905,7 @@ onEvent("recipes", (event) => {
         A: "create:refined_radiance",
         B: "#minecraft:planks",
     });
-    
+
     event.shaped("10x minecraft:torch", ["A", "B"], {
         A: "naturalist:glow_goop",
         B: "minecraft:stick",
