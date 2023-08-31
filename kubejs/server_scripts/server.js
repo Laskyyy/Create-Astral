@@ -698,6 +698,39 @@ onEvent("recipes", (event) => {
     event.stonecutting("2x createdeco:zinc_sheet_metal", "createdeco:zinc_sheet");
     
 
+    // dustrial decor sheetmetal rework
+
+    event.stonecutting("dustrial_decor:sheet_metal", "minecraft:iron_ingot");
+    event.stonecutting("dustrial_decor:rusty_sheet_metal", "dustrial_decor:rusty_iron_ingot");
+
+    event.stonecutting("dustrial_decor:sheet_metal_paneling", "dustrial_decor:sheet_metal_plating");
+    event.stonecutting("dustrial_decor:sheet_metal_plating_stairs", "dustrial_decor:sheet_metal_plating");
+    event.stonecutting("2x dustrial_decor:sheet_metal_plating_slab", "dustrial_decor:sheet_metal_plating");
+   
+    event.stonecutting("dustrial_decor:rusty_sheet_metal_paneling", "dustrial_decor:rusty_sheet_metal_plating");
+    event.stonecutting("dustrial_decor:rusty_sheet_metal_plating_stairs", "dustrial_decor:rusty_sheet_metal_plating");
+    event.stonecutting("2x dustrial_decor:rusty_sheet_metal_plating_slab", "dustrial_decor:rusty_sheet_metal_plating");
+
+    event.stonecutting("dustrial_decor:sheet_metal_treading_stairs", "dustrial_decor:sheet_metal_treading");
+    event.stonecutting("2x dustrial_decor:sheet_metal_treading_slab", "dustrial_decor:sheet_metal_treading");
+
+    event.stonecutting("dustrial_decor:rusty_sheet_metal_treading_stairs", "dustrial_decor:rusty_sheet_metal_treading");
+    event.stonecutting("2x dustrial_decor:rusty_sheet_metal_treading_slab", "dustrial_decor:rusty_sheet_metal_treading");
+
+    event.shaped("3x dustrial_decor:sheet_metal_door", ["AA ", "AA ", "AA "], {
+        A: "dustrial_decor:sheet_metal",
+    });
+
+    event.shaped("3x dustrial_decor:rusty_iron_door", ["AA ", "AA ", "AA "], {
+        A: "dustrial_decor:rusty_iron_ingot",
+    });
+
+    event.shaped("6x dustrial_decor:rusty_sheet_metal_treading", ["AB ", "BA ", "   "], {
+        A: "dustrial_decor:rusty_sheet_metal",
+        B: "dustrial_decor:rusty_iron_nugget",
+    });
+
+    
     ////////////////  EARLY GAME ANDESITE / GROUT RELATED STUFF
 
     event.shaped("createastral:andesite_compound", ["BBB", "AAA", "CCC"], {

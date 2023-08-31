@@ -8,6 +8,7 @@ onEvent("recipes", (event) => {
         { output: "techreborn:compressed_plantball" },
         { output: "techreborn:plantball" },
         { output: "techreborn:grinder" },
+        { output: "techreborn:block_breaker" },
         { output: "techreborn:wire_mill" },
         { output: "techreborn:compressor" },
         { output: "techreborn:synthetic_redstone_crystal" },
@@ -353,6 +354,12 @@ onEvent("recipes", (event) => {
         {output: "createdeco:iron_sheet_metal"},
         {output: "createdeco:zinc_sheet_metal"},
 
+        // dustrial decor sheetmetal rework
+
+        { output: "dustrial_decor:rusty_iron_door" },
+        { output: "dustrial_decor:rusty_sheet_metal_treading"},
+
+
         // Ad Astra
 
         { output: "ad_astra:oxygen_distributor" },
@@ -463,6 +470,16 @@ onEvent("recipes", (event) => {
 
         { output: "immersive_aircraft:boiler" },
         { output: "immersive_aircraft:engine" },
+        { output: "immersive_aircraft:nether_engine" },
+        { output: "immersive_aircraft:industrial_gears" },
+        { output: "immersive_aircraft:eco_engine" },
+        { output: "immersive_aircraft:large_propeller" },
+        { output: "immersive_aircraft:enhanced_propeller" },
+        { output: "immersive_aircraft:improved_landing_gear" },
+        { output: "immersive_aircraft:airship" },
+        { output: "immersive_aircraft:gyrodyne" },
+        { output: "immersive_aircraft:biplane" },
+        { output: "immersive_aircraft:quadrocopter" },
 
         { output: "catwalksinc:iron_rod" },
 

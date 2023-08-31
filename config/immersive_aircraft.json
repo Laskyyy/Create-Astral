@@ -1,6 +1,22 @@
 {
+  "separateCamera": true,
+  "useThirdPersonByDefault": true,
   "enableTrails": true,
   "enableAnimatedSails": true,
   "renderDistance": 192.0,
+  "fuelConsumption": 5.0,
+  "windClearWeather": 1.0,
+  "windRainWeather": 3.0,
+  "windThunderWeather": 3.0,
+  "collisionDamage": true,
+  "onlyPlayerCanDestroyAircraft": false,
+  "burnFuelInCreative": false,
+  "acceptVanillaFuel": true,
+  "useCustomKeybindSystem": true,
+  "crashDamage": 2.0,
+  "preventKillThroughCrash": true,
+  "fuelList": {
+    "minecraft:blaze_powder": 1200
+  },
   "version": 1
 }
