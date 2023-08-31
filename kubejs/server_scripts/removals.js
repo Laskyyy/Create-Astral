@@ -343,6 +343,16 @@ onEvent("recipes", (event) => {
             output: "createaddition:biomass",
         },
 
+        //Createdeco sheetmetal rebalance
+
+        {output: "createdeco:copper_sheet_metal"},
+        {output: "createdeco:andesite_sheet_metal"},
+        {output: "createdeco:gold_sheet_metal"},
+        {output: "createdeco:netherite_sheet_metal"},
+        {output: "createdeco:brass_sheet_metal"},
+        {output: "createdeco:cast_iron_sheet_metal"},
+        {output: "createdeco:iron_sheet_metal"},
+        {output: "createdeco:zinc_sheet_metal"},
 
         // dustrial decor sheetmetal rework
 
