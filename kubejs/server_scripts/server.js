@@ -867,6 +867,10 @@ onEvent("recipes", (event) => {
         A: "create:sturdy_sheet",
     });
 
+    // added this recipe to turn sturdy sheet blocks back into sturdy sheets
+    event.shapeless("4x create:sturdy_sheet", ["createastral:sturdy_sheet_block"],{
+    });
+
     event.shaped("createastral:bronze_block", ["AAA", "AAA", "AAA"], {
         A: "createastral:bronze_ingot",
     });
