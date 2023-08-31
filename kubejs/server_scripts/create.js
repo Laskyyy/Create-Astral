@@ -1593,7 +1593,7 @@ function splashingRecipes(event) {
     //Outputs: Array of outputs, which is each an array.
     //    [Item string, float from 0.0 - 1.0 deciding chance]
     [
-        {
+    {
             input: "createaddition:biomass",
             outputs: [
                 ["createastral:pure_biomatter", 1],
@@ -1660,8 +1660,240 @@ function splashingRecipes(event) {
                 ["9x ad_astra:calorite_nugget", 1],
                 ["minecraft:raw_copper", 1],
             ],
+        },    
+
+         /// Oxidization of copper blocks (start)
+         
+        //Vanilla copper blocks
+        {
+            input: "minecraft:copper_block",
+            outputs: [
+                ["minecraft:exposed_copper", 1]
+            ],
+        },
+        {
+            input: "minecraft:exposed_copper",
+            outputs: [
+                ["minecraft:weathered_copper", 1]
+            ],
+        },
+        {
+            input: "minecraft:weathered_copper",
+            outputs: [
+                ["minecraft:oxidized_copper", 1]
+            ],
         },
 
+        //Vanilla cut copper blocks
+
+        {
+            input: "minecraft:cut_copper",
+            outputs: [
+                ["minecraft:exposed_cut_copper", 1]
+            ],
+        },
+        {
+            input: "minecraft:exposed_cut_copper",
+            outputs: [
+                ["minecraft:weathered_cut_copper", 1]
+            ],
+        },
+        {
+            input: "minecraft:weathered_cut_copper",
+            outputs: [
+                ["minecraft:oxidized_cut_copper", 1]
+            ],
+        },
+
+        //Vanilla cut copper slabs
+
+        {
+            input: "minecraft:cut_copper_slab",
+            outputs: [
+                ["minecraft:exposed_cut_copper_slab", 1]
+            ],
+        },
+        {
+            input: "minecraft:exposed_cut_copper_slab",
+            outputs: [
+                ["minecraft:weathered_cut_copper_slab", 1]
+            ],
+        },
+        {
+            input: "minecraft:weathered_cut_copper_slab",
+            outputs: [
+                ["minecraft:oxidized_cut_copper_slab", 1]
+            ],
+        },
+
+        //Vanilla cut copper stairs
+
+        {
+            input: "minecraft:cut_copper_stairs",
+            outputs: [
+                ["minecraft:exposed_cut_copper_stairs", 1]
+            ],
+        },
+        {
+            input: "minecraft:exposed_cut_copper_stairs",
+            outputs: [
+                ["minecraft:weathered_cut_copper_stairs", 1]
+            ],
+        },
+        {
+            input: "minecraft:weathered_cut_copper_stairs",
+            outputs: [
+                ["minecraft:oxidized_cut_copper_stairs", 1]
+            ],
+        },
+
+        //create mod copper shingles
+	{
+        input: "create:copper_shingles",
+        outputs: [
+            ["create:exposed_copper_shingles", 1]
+        ],
+    },
+    {
+        input: "create:exposed_copper_shingles",
+        outputs: [
+            ["create:weathered_copper_shingles", 1]
+        ],
+    },
+    {
+        input: "create:weathered_copper_shingles",
+        outputs: [
+            ["create:oxidized_copper_shingles", 1]
+        ],
+    },
+
+    //create mod copper shingle slabs
+
+    {
+        input: "create:copper_shingle_slab",
+        outputs: [
+            ["create:exposed_copper_shingle_slab", 1]
+        ],
+    },
+    {
+        input: "create:exposed_copper_shingle_slab",
+        outputs: [
+            ["create:weathered_copper_shingle_slab", 1]
+        ],
+    },
+    {
+        input: "create:weathered_copper_shingle_slab",
+        outputs: [
+            ["create:oxidized_copper_shingle_slab", 1]
+        ],
+    },
+
+    //create copper shingle stairs
+
+    {
+        input: "create:copper_shingle_stairs",
+        outputs: [
+            ["create:exposed_copper_shingle_stairs", 1]
+        ],
+    },
+    {
+        input: "create:exposed_copper_shingle_stairs",
+        outputs: [
+            ["create:weathered_copper_shingle_stairs", 1]
+        ],
+    },
+    {
+        input: "create:weathered_copper_shingle_stairs",
+        outputs: [
+            ["create:oxidized_copper_shingle_stairs", 1]
+        ],
+    },
+
+    //create mod copper tiles
+
+    {
+        input: "create:copper_tiles",
+        outputs: [
+            ["create:exposed_copper_tiles", 1]
+        ],
+    },
+    {
+        input: "create:exposed_copper_tiles",
+        outputs: [
+            ["create:weathered_copper_tiles", 1]
+        ],
+    },
+    {
+        input: "create:weathered_copper_tiles",
+        outputs: [
+            ["create:oxidized_copper_tiles", 1]
+        ],
+    },
+
+    //create mod copper tile slabs
+
+    {
+        input: "create:copper_tile_slab",
+        outputs: [
+            ["create:exposed_copper_tile_slab", 1]
+        ],
+    },
+    {
+        input: "create:exposed_copper_tile_slab",
+        outputs: [
+            ["create:weathered_copper_tile_slab", 1]
+        ],
+    },
+    {
+        input: "create:weathered_copper_tile_slab",
+        outputs: [
+            ["create:oxidized_copper_tile_slab", 1]
+        ],
+    },
+
+    //create mod copper tile stairs
+
+    {
+        input: "create:copper_tile_stairs",
+        outputs: [
+            ["create:exposed_copper_tile_stairs", 1]
+        ],
+    },
+    {
+        input: "create:exposed_copper_tile_stairs",
+        outputs: [
+            ["create:weathered_copper_tile_stairs", 1]
+        ],
+    },
+    {
+        input: "create:weathered_copper_tile_stairs",
+        outputs: [
+            ["create:oxidized_copper_tile_stairs", 1]
+        ],
+    },
+
+    //phonos copper speakers
+
+    {
+        input: "phonos:copper_speaker",
+        outputs: [
+            ["phonos:exposed_copper_speaker", 1]
+        ],
+    },
+    {
+        input: "phonos:exposed_copper_speaker",
+        outputs: [
+            ["phonos:weathered_copper_speaker", 1]
+        ],
+    },
+    {
+        input: "phonos:weathered_copper_speaker",
+        outputs: [
+            ["phonos:oxidized_copper_speaker", 1]
+        ],
+    },
+
+    ///copper oxidization recipes (end)
         // dustrial decor sheetmetal rework
 
         {
@@ -1691,14 +1923,6 @@ function splashingRecipes(event) {
                 ["dustrial_decor:rusty_sheet_metal", 1],
             ],
         },
-
-        
-
-
-
-
-
-
     ].forEach((recipe) => {
         let cleanoutputs = [];
         recipe.outputs.forEach((output) => {
