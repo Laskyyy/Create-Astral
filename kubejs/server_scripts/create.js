@@ -1660,9 +1660,7 @@ function splashingRecipes(event) {
                 ["9x ad_astra:calorite_nugget", 1],
                 ["minecraft:raw_copper", 1],
             ],
-        },
-
-        
+        },    
 
          /// Oxidization of copper blocks (start)
          
@@ -1896,7 +1894,35 @@ function splashingRecipes(event) {
     },
 
     ///copper oxidization recipes (end)
+        // dustrial decor sheetmetal rework
 
+        {
+            input: "minecraft:iron_ingot",
+            outputs: [
+                ["dustrial_decor:rusty_iron_ingot", 1],
+            ],
+        },
+
+        {
+            input: "minecraft:iron_nugget",
+            outputs: [
+                ["dustrial_decor:rusty_iron_nugget", 1],
+            ],
+        },
+
+        {
+            input: "minecraft:iron_block",
+            outputs: [
+                ["dustrial_decor:rusty_iron_block", 1],
+            ],
+        },
+
+        {
+            input: "dustrial_decor:sheet_metal",
+            outputs: [
+                ["dustrial_decor:rusty_sheet_metal", 1],
+            ],
+        },
     ].forEach((recipe) => {
         let cleanoutputs = [];
         recipe.outputs.forEach((output) => {
@@ -1914,6 +1940,52 @@ function mechanicalCraftingRecipes(event) {
     // Shape: Array of rows of inputs based on letters assigned
     // Inputs: Object with letters assigned to input items, to be used in the shape
     [
+        {
+            output: "immersive_aircraft:airship",
+            shape: ["AAAA ", "AAAAA", " G G ", "BEDBC", " BBB "],
+            inputs: {
+                A: "immersive_aircraft:sail",
+                B: "immersive_aircraft:hull",
+                C: "create:propeller",
+                D: "create:precision_mechanism",
+                E: "#create:seats",
+                G: "campanion:rope",
+            },
+        },
+        {
+            output: "immersive_aircraft:quadrocopter",
+            shape: ["CCDCC ", "CCBCC ", "ABEBA ", "CCBCC ", "CCDCC "],
+            inputs: {
+                A: "create:precision_mechanism",
+                B: "immersive_aircraft:hull",
+                C: "create:propeller",
+                D: "createaddition:brass_rod",
+                E: "#create:seats",
+            },
+        },
+        {
+            output: "immersive_aircraft:gyrodyne",
+            shape: [" CCC ", "  D  ", "BGEBA", " BBB "],
+            inputs: {
+                A: "immersive_aircraft:sail",
+                B: "immersive_aircraft:hull",
+                C: "create:propeller",
+                D: "createaddition:brass_rod",
+                E: "#create:seats",
+                G: "create:hand_crank",
+            },
+        },
+        {
+            output: "immersive_aircraft:biplane",
+            shape: ["    AA   ", "    AA   ", " A   BBC ", "BBBBBEDC ", " A   BBC ", "    AA   ", "    AA   ", ],
+            inputs: {
+                A: "immersive_aircraft:sail",
+                B: "immersive_aircraft:hull",
+                C: "create:propeller",
+                D: "create:precision_mechanism",
+                E: "#create:seats",
+            },
+        },
         {
             output: "ad_astra:launch_pad",
             shape: ["BAAAB", "ABABA", "AABAA", "ABABA", "BAAAB"],
