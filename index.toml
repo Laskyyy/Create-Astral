@@ -273,12 +273,12 @@ file = "config/fancymenu/customization/.disabled/MainMenu.txt"
 hash = "e07782be59021cabfe5a09320add9bdb9aee43fdb72982274aba01d14f04b6ff"
 
 [[files]]
-file = "config/fancymenu/customization/.disabled/greg.txt"
-hash = "f612e9df09903e9a7e289d1761d0f38380be91a24e756abd669b5edf0cdb442d"
+file = "config/fancymenu/customization/.disabled/disclaimermenu.txt"
+hash = "8f6b81ff8c0ccf92fad0a2907b177c803c49b07178f3225ae011df56855d1b03"
 
 [[files]]
-file = "config/fancymenu/customization/disclaimermenu.txt"
-hash = "8f6b81ff8c0ccf92fad0a2907b177c803c49b07178f3225ae011df56855d1b03"
+file = "config/fancymenu/customization/greg.txt"
+hash = "f612e9df09903e9a7e289d1761d0f38380be91a24e756abd669b5edf0cdb442d"
 
 [[files]]
 file = "config/fancymenu/customization/music.txt"
@@ -1102,7 +1102,7 @@ hash = "7eaf0380193f0a5df53c6521e1fef06b7fad4ac436f84cb85e0a0a9d63a219b5"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/miningfacility.nbt"
-hash = "25e9d56b111f18b63d195f5cff18ce548ac228534f0217db5405d85cf38472a9"
+hash = "40630683af7865e43dc5d1c96e348f4e87571b3fd99481425f17452476194051"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/moon_rock_1.nbt"
@@ -1146,11 +1146,11 @@ hash = "6dcb92d580240cce1a442ff612a7ca9a179060efc9a2907fd56d01eaabdf59cd"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/moon_ruin_1.nbt"
-hash = "1fcc9f2a21b2fca75c82f0802d1287191d802e3ba2859bd30d732bbc935c5eb3"
+hash = "949ab3f2ff440efb7a891fefe9af8857b50ce7a44a7cd3686c91abaef89d85d7"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/moon_ruin_2.nbt"
-hash = "98c95f46d61e9f5e7bc3b475983cc937811d317bac181673366ebdf9d8ee3754"
+hash = "f19cc17aa30619175e4b39bab9aec3f7b332d5017b75c88733064bdafce530d4"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/pocisk/ruined_pocisk_1.nbt"
@@ -2462,7 +2462,7 @@ hash = "f911ccdf1c4d7205f28a025f44415153a1b4ece8122b489b8c8edd58dbf2464c"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/worldgen/placed_feature/mars_ostrum_ore.json"
-hash = "8dd0dcd218ae533150bd9498375eebc9845827b8b86c21be6979aee42c3c9870"
+hash = "942444ab4e06685a160cca677303c811f14c93e26b44ee773394932e3d94c435"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/worldgen/structure_set/meteor.json"
@@ -5238,15 +5238,15 @@ hash = "28a2e2c8b75e8e3c4005b0412f2c73d54b6747796ac0ccae23484d7a258a0820"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/incendium/structures/reactor.nbt"
-hash = "a707f59c265799e6249c3a953f9bcf487f271ca51ad97160914a3d95a1e3e7e0"
+hash = "a27441f40054d24280b9498c31b53548370df957a1db12b875d1e3edda1541c4"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/incendium/structures/reactor_bottom.nbt"
-hash = "59b7e455925514d4a27a61a08a9e61835ec6061f00bf5097d2045278f8e06ed7"
+hash = "4ecc729924a61100df466a4c7671f053913ddf9d268867b34d8cb164a73baea7"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/incendium/structures/reactor_east.nbt"
-hash = "c67e8cb86601a7d257153d7fb52f0f35831fe7375b420b7899ee69c1d0af9c7f"
+hash = "ae71ab5484623d3ad96a04359d56277324af7fc701a4123328b2144f6156a85d"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/incendium/structures/reactor_last.nbt"
@@ -5254,15 +5254,15 @@ hash = "7dd38a1f6541165a8b1a32456dedef0afa75ead30b5ca58ae881f8d7e4e6e956"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/incendium/structures/reactor_south.nbt"
-hash = "2db027369dc3e04be6f79b06d9bf65ae204b9224f179838a6cbee94db685c184"
+hash = "c01cb66311e5d5822884eae960bb51be118b1d9ba5cd7846a55c66f42a22e9b1"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/incendium/structures/reactor_top.nbt"
-hash = "93be0fbf6a264159cc00f4723732063112debd8ac780fae104f2af9aea37976d"
+hash = "4d9c0db63c4dbc8d892d1ac8cd92aeeafa1e65a63fd544c2dc0f370e11cb36c4"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/incendium/structures/reactor_top1.nbt"
-hash = "93be0fbf6a264159cc00f4723732063112debd8ac780fae104f2af9aea37976d"
+hash = "4d9c0db63c4dbc8d892d1ac8cd92aeeafa1e65a63fd544c2dc0f370e11cb36c4"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/incendium/structures/steam/large_h.nbt"
@@ -7219,6 +7219,14 @@ hash = "e1198122be9500f9bdb85faca41fcf93eae469c6efc5f9a3831ffc3552078e08"
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/minecraft/tags/entity_types/entities/IsImmuneToZombification.json"
 hash = "f38825fff01f4f454965d9fa20c44872e91449713332f6b0d52f6c0779524fa1"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/minecraft/tags/fluids/lava.json"
+hash = "46188599ac1ec4dc6be58f77b9fb04180e818ecf0744b81bcff2897db518fabe"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/minecraft/tags/fluids/water.json"
+hash = "7afbaeac2c9ac1699c1db9386a88f8a1174ae5df1a3f618b382b0d79f5192eef"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/minecraft/tags/worldgen/biome/has_structure/bastion_remnant.json"
@@ -16610,7 +16618,7 @@ hash = "edae1fdfacfff761b72d5b5ff471f6d4b2db2188ac8e01a2b41836db68d2aabd"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
-hash = "6231f71b636a32ec5074f8b7dbc4a37a0a79e145c61095f52a5866bb1c1b1cd6"
+hash = "9f382a720c55df247f488902f8258d676a5d52f6622da4b28688323f6cb180f3"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/fr_fr.json"
@@ -17074,7 +17082,7 @@ hash = "4f9be69c0090d0a979d22ee58b1a457796b13d55202b588fa9ad113057049f90"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
-hash = "830825740b9857c1de414b1677c5e7391ec03898a213e47b23edba68776c49c4"
+hash = "f4ca68ceb641d74cbd04b7d00799116b45f87142ce94f5620009a29cd62b45e2"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
@@ -17350,7 +17358,7 @@ metafile = true
 
 [[files]]
 file = "mods/drp-global-datapack.pw.toml"
-hash = "420df711514cc07a0e6689f4a900c69ab8b6394b5f6320ac922746e9fae1a4b7"
+hash = "b2033e6fc854822a54986d9fb3db7d931c478dd6661d0dda0477982c47ab6e9c"
 metafile = true
 
 [[files]]
@@ -17510,12 +17518,13 @@ metafile = true
 
 [[files]]
 file = "mods/iris-flywheel-compat.pw.toml"
-hash = "34fc669d5080a4850ddbd62c9ff3078265bc76f76d27e9d17fabd77479055a1c"
+hash = "65d4bf1d5dffed94eca4d61e33774d5d90afb19974109bb437363a1f9bafc378"
 metafile = true
 
 [[files]]
-file = "mods/iris-mc1.18.2-1.5.2.jar"
-hash = "45038f5272442df74fee72efae2bc67576d68dc9ff7d722be5e63fe5e12a8d11"
+file = "mods/iris.pw.toml"
+hash = "48bc6293d9e4edc0a9b16e3069c5b092a4f8acb405bc9d29369098d7d3d7fd08"
+metafile = true
 
 [[files]]
 file = "mods/item-filters.pw.toml"
@@ -17608,9 +17617,8 @@ hash = "6185f7193e5be3ad3ee162adecedf134efca4fafdd2468e800354abf6e28fe23"
 metafile = true
 
 [[files]]
-file = "mods/memoryleakfix.pw.toml"
-hash = "166a504fed11fad4dc10b1b7f0fc4ee440b94b8411abd69f733fc61083bce142"
-metafile = true
+file = "mods/memoryleakfix-fabric-1.17+-1.1.1.jar"
+hash = "d3295b2a0c593dd69bca8910fd9ad954274623f9d09be1a351ff769ec797e823"
 
 [[files]]
 file = "mods/midnightlib.pw.toml"
@@ -41228,13 +41236,12 @@ hash = "77d84534cc3796ad7e5e79609e795b5789ab4b8b5dfe91f8c091b47ed0ca5bb4"
 
 [[files]]
 file = "servers.dat"
-hash = "93b0050295e8023db22956f94f42c76a406b683de3a377ab0689971ee9f60354"
+hash = "4e8689c61104dcb1bd9972902dfe9f7ae217ad487ca4b13073303984e046045b"
 
 [[files]]
-file = "shaderpacks/ComplementaryReimagined_r2.0.3.zip.txt"
-hash = "c5ae48a3433e4e4fe870852be9654649de1f1ab22c8db865d30b162e0603c0e4"
+file = "shaderpacks/ComplementaryReimagined_r2.3.zip"
+hash = "bace8079cb2b3209ea17d785bdd7bda0d34ac45ceb5fbfef18d4d61deb39b7c0"
 
 [[files]]
-file = "shaderpacks/complementary-reimagined.pw.toml"
-hash = "1b3a65007516d0aa8db39e46a5e0d5c542610f5791e711c6b8a2204a54b4a635"
-metafile = true
+file = "shaderpacks/ComplementaryReimagined_r2.3.zip.txt"
+hash = "55388cd2da1a3855aae2e229337e3eb8f24ea08f60cf4ea37e4c506f5d93e635"
