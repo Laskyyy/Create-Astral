@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "astralrails:contest/moon",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"spacing": 30,
+		"separation": 18,
+		"salt": 25252525
+	}
+}
