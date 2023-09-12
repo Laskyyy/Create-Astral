@@ -1031,6 +1031,22 @@ onEvent("recipes", (event) => {
     });
 });
 
+onEvent('recipes', event => {
+    event.shaped("4x doodads:asphalt_stair", ["A  ", "AA ", "AAA"], {
+        A: "doodads:asphalt",
+    });
+
+    event.stonecutting("doodads:asphalt_stair", "doodads:asphalt")
+
+    event.shaped("6x doodads:asphalt_slab", ["AAA"], {
+        A: "doodads:asphalt",
+    });
+
+    event.stonecutting("2x doodads:asphalt_slab", "doodads:asphalt")
+    
+    event.stonecutting("4x createdeco:copper_sheet_metal", "minecraft:copper_block")
+});
+
 onEvent("player.logged_in", (event) => {
     if (!event.player.stages.has("starting_items")) {
         event.player.stages.add("starting_items");
