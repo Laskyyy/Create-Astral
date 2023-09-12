@@ -551,6 +551,10 @@ onEvent("recipes", (event) => {
             input: "minecraft:copper_block",
             type: "minecraft:stonecutting",
         },
+
+        //dispenser recipe
+        {output: "minecraft:dispenser" },
+
     ].forEach((recipe) => {
         event.remove(recipe);
     });

@@ -837,6 +837,12 @@ onEvent("recipes", (event) => {
 
     //// ASSORTED CRAFTING BENCH RECIPES
 
+    //dispenser recipe
+    event.shaped("minecraft:dispenser", ["AB ", "ACB", "AB "], {
+        A: "minecraft:string",
+        B: "minecraft:stick",
+        C: "minecraft:dropper",
+    });
 
     // createdeco door recipe rebalance
 
