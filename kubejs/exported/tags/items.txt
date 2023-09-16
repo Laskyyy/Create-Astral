@@ -5595,15 +5595,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:netherite_ingot
 
 #create:crushed_ores
-- create:crushed_iron_ore
-- create:crushed_gold_ore
-- create:crushed_copper_ore
-- create:crushed_zinc_ore
+- create:crushed_raw_iron
+- create:crushed_raw_gold
+- create:crushed_raw_copper
+- create:crushed_raw_zinc
 - create:crushed_osmium_ore
 - create:crushed_platinum_ore
-- create:crushed_silver_ore
-- create:crushed_tin_ore
-- create:crushed_lead_ore
+- create:crushed_raw_silver
+- create:crushed_raw_tin
+- create:crushed_raw_lead
 - create:crushed_quicksilver_ore
 - create:crushed_aluminum_ore
 - create:crushed_uranium_ore
@@ -12605,7 +12605,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - computercraft:pocket_computer_advanced
 - computercraft:monitor_advanced
 - create:golden_sheet
-- create:crushed_gold_ore
+- create:crushed_raw_gold
 - farmersdelight:golden_knife
 - tconstruct:gold_reinforcement
 - tconstruct:gold_item_frame
@@ -12630,7 +12630,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 #c:raw_materials/tin
 - indrev:raw_tin
 - indrev:tin_dust
-- create:crushed_tin_ore
+- create:crushed_raw_tin
 
 #chipped:packed_ice
 - minecraft:packed_ice
@@ -14124,7 +14124,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 #c:raw_materials/silver
 - indrev:raw_silver
 - indrev:silver_dust
-- create:crushed_silver_ore
+- create:crushed_raw_silver
 
 #chipped:magenta_stained_glass
 - minecraft:magenta_stained_glass
@@ -14454,7 +14454,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 #c:raw_materials/lead
 - indrev:raw_lead
 - indrev:lead_dust
-- create:crushed_lead_ore
+- create:crushed_raw_lead
 
 #c:bows
 - minecraft:crossbow

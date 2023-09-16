@@ -27,12 +27,12 @@
 			count: 6
 			weight: 2
 		}
-		{ item: "create:crushed_iron_ore", count: 5, weight: 2 }
+		{ item: "create:crushed_raw_iron", count: 5, weight: 2 }
 		{ item: "minecraft:soul_torch", count: 8, weight: 2 }
-		{ item: "create:crushed_copper_ore", count: 5, weight: 2 }
+		{ item: "create:crushed_raw_copper", count: 5, weight: 2 }
 		{ item: "techreborn:basic_machine_frame", weight: 2 }
-		{ item: "create:crushed_gold_ore", count: 5, weight: 2 }
-		{ item: "create:crushed_zinc_ore", count: 5, weight: 2 }
+		{ item: "create:crushed_raw_gold", count: 5, weight: 2 }
+		{ item: "create:crushed_raw_zinc", count: 5, weight: 2 }
 		{ item: "create:experience_nugget", count: 32, weight: 10 }
 		{ item: "farmersdelight:shepherds_pie", weight: 2 }
 		{ item: "create:depot", count: 3, weight: 2 }

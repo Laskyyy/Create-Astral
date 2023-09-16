@@ -30,8 +30,8 @@ onEvent("rei.group", (event) => {
 });
 
 onEvent('rei.add.items', event => {
-    event.add(Item.of('create:crushed_tin_ore'));
-    event.add(Item.of('create:crushed_lead_ore'));
+    event.add(Item.of('create:crushed_raw_tin'));
+    event.add(Item.of('create:crushed_raw_lead'));
     event.add(Item.of('create:refined_radiance'));
     event.add(Item.of('create:shadow_steel'));
     event.add(Item.of('create:chromatic_compound'));
