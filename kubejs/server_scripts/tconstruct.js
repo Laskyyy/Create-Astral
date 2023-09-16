@@ -85,6 +85,12 @@ onEvent("recipes", (event) => {
             cast: ["tconstruct:gear_cast", false],
         },
         {
+            fluid: ["tconstruct:molten_gold", 12000],
+            result: "tconstruct:gear_cast",
+            cooling_time: 100,
+            cast: ["create:large_cogwheel", true],
+        },
+        {
             fluid: ["tconstruct:molten_gold", 45000],
             result: "createastral:golden_bowl",
             cooling_time: 100,
