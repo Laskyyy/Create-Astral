@@ -74,8 +74,8 @@ function LakyCrushingRecipes(event) {
             outputs: [
                 ["techreborn:raw_tin", 1],
                 ["createastral:lime", 1],
-                ["createastral:lime", 0.9],
-                ["minecraft:quartz", 0.5],
+                ["createastral:lime", 0.5],
+                ["minecraft:clay", 0.5],
                 ["minecraft:andesite", 0.25],
             ],
         },

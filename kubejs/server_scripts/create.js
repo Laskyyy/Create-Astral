@@ -137,15 +137,6 @@ function crushingRecipes(event) {
                 ["minecraft:warped_fungus", 0.15],
             ],
         },
-        //Add Lime
-        {
-            input: "create:limestone",
-            outputs: [
-                ["createastral:lime", 1],
-                ["createastral:lime", 0.5],
-                ["minecraft:clay_ball", 0.2],
-            ],
-        },
         {
             input: "minecraft:dripstone_block",
             outputs: [
