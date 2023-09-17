@@ -1,0 +1,11 @@
+{
+  "config": {
+    "start_pool": "astralrails:contest/beach",
+    "size": 7
+  },
+  "biomes": "minecraft:beach",
+  "adapt_noise":true,
+  "spawn_overrides": {
+  },
+  "type": "minecraft:shipwreck"
+}

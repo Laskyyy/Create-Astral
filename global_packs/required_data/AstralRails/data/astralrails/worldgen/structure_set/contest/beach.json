@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "astralrails:contest/beach",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"spacing": 30,
+		"separation": 11,
+		"salt": 83693695
+	}
+}

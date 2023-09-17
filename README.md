@@ -55,5 +55,5 @@ If you want, you could also write a batch script that runs the jar file in a sim
 ┣ 📂resources // All custom textures and translations
 ┃ ┣ 📂createastral // Primary folder for original Astral textures
 ┗ 📜README.md // This file! Feel free to contribute
-and fix any erorrs that you see.
+and fix any errors that you see.
 ```

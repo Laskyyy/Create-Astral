@@ -196,6 +196,108 @@ function crushingRecipes(event) {
             input: "ae2:fluix_crystal",
             outputs: [["ae2:fluix_dust", 1]],
         },
+
+
+    // concrete crushing into concrete powder
+
+        {
+            input: "minecraft:white_concrete",
+            outputs: [
+                ["minecraft:white_concrete_powder", 1],
+            ],
+        },
+        {
+            input: "minecraft:orange_concrete",
+            outputs: [
+                ["minecraft:orange_concrete_powder", 1],
+            ],
+        },
+        {
+            input: "minecraft:magenta_concrete",
+            outputs: [
+                ["minecraft:magenta_concrete_powder", 1],
+            ],
+        },
+        {
+            input: "minecraft:light_blue_concrete",
+            outputs: [
+                ["minecraft:light_blue_concrete_powder", 1],
+            ],
+        },
+        {
+            input: "minecraft:yellow_concrete",
+            outputs: [
+                ["minecraft:yellow_concrete_powder", 1],
+            ],
+        },
+        {
+            input: "minecraft:lime_concrete",
+            outputs: [
+                ["minecraft:lime_concrete_powder", 1],
+            ],
+        },
+        {
+            input: "minecraft:pink_concrete",
+            outputs: [
+                ["minecraft:pink_concrete_powder", 1],
+            ],
+        },
+        {
+            input: "minecraft:gray_concrete",
+            outputs: [
+                ["minecraft:gray_concrete_powder", 1],
+            ],
+        },
+        {
+            input: "minecraft:light_gray_concrete",
+            outputs: [
+                ["minecraft:light_gray_concrete_powder", 1],
+            ],
+        },
+        {
+            input: "minecraft:cyan_concrete",
+            outputs: [
+                ["minecraft:cyan_concrete_powder", 1],
+            ],
+        },
+        {
+            input: "minecraft:purple_concrete",
+            outputs: [
+                ["minecraft:purple_concrete_powder", 1],
+            ],
+        },
+        {
+            input: "minecraft:blue_concrete",
+            outputs: [
+                ["minecraft:blue_concrete_powder", 1],
+            ],
+        },
+        {
+            input: "minecraft:brown_concrete",
+            outputs: [
+                ["minecraft:brown_concrete_powder", 1],
+            ],
+        },
+        {
+            input: "minecraft:green_concrete",
+            outputs: [
+                ["minecraft:green_concrete_powder", 1],
+            ],
+        },
+        {
+            input: "minecraft:red_concrete",
+            outputs: [
+                ["minecraft:red_concrete_powder", 1],
+            ],
+        },
+        {
+            input: "minecraft:black_concrete",
+            outputs: [
+                ["minecraft:black_concrete_powder", 1],
+            ],
+        },
+
+
     ].forEach((recipe) => {
         let cleanoutputs = [];
         recipe.outputs.forEach((output) => {
@@ -1811,7 +1913,7 @@ function splashingRecipes(event) {
     //Outputs: Array of outputs, which is each an array.
     //    [Item string, float from 0.0 - 1.0 deciding chance]
     [
-        {
+    {
             input: "createaddition:biomass",
             outputs: [
                 ["createastral:pure_biomatter", 1],
