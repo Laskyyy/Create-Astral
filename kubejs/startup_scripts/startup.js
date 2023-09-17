@@ -564,6 +564,7 @@ onEvent('block.registry', event => {
       //Other tooltips
       { item: 'computercraft:disk', tooltip: 'This recipe is not correct, use redstone instead of rose quartz.' },
       { item: 'extractinator:extractinator', tooltip: 'Purely decorative. No functional use. Not a Terraria reference.' },
+      { item: 'adoptafloppa:amazon_delivery', tooltip: 'A note is attached: "Feed this thing fish once a day or else it will explode. Good luck.".' },
     ];
   
     tooltips.forEach(tooltip => {
