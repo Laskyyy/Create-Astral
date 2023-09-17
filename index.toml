@@ -5,6 +5,10 @@ file = ".prettierrc"
 hash = "ba646e964adc3ef8af4e52d97c7c165a6d1ba37e2afe107c29c387daa1c3742e"
 
 [[files]]
+file = ".vscode/settings.json"
+hash = "5651dae8000bf26d3d027927b11f9a9c436ab83cd0c7ed15ec311a0f1059c667"
+
+[[files]]
 file = "LICENSE.md"
 hash = "3c03d28601eb9fbb44aaba2882ccaa4cdddec45041b591b3febc9ef4b0f472c0"
 
@@ -522,7 +526,7 @@ hash = "f07273670fb6fbd2012d7a63e2453826f00e42dd82efb3ea82a4d81894f3b410"
 
 [[files]]
 file = "config/iris.properties"
-hash = "7974c188eb3ab23087c2fcce4893924d928b03711d2ae7538b1fc0db88585cbd"
+hash = "64720e70c3eb90f69a11e3d401a457296e3cc24517d5f52fec2378ca3643db1e"
 
 [[files]]
 file = "config/jade/jade.json"
@@ -16646,7 +16650,7 @@ hash = "02d6feb3afe1d9c96e137f8baaa71de982f1af0a2b37fbcba73f34ee59ebbd4d"
 
 [[files]]
 file = "kubejs/client_scripts/script.js"
-hash = "9312d605dbb121929a630bc8da9ec128cf54892efd6b0c6454ba8cdfce91bd7f"
+hash = "45bce9a398ca049636a397b826bc8c8566ba4413cf37cd61dc971b99abeabc18"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -16994,43 +16998,43 @@ hash = "70f26cbe24e0349047f8824b478a1aa94167048bd4dc85af86e84d85e649c535"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
-hash = "d07d2167c50b53e3da973356e9d0ee4e0a82259c8cd2262e42eb57c708eab05b"
+hash = "260033da2351bb69f7e57dde2e6d98f271231bf7d539c41206fbc6af13c1f802"
 
 [[files]]
 file = "kubejs/server_scripts/createaddons.js"
-hash = "ce079dafae8e11d28dc4cf6c127a05773e66a01385047b04f137ceb8518a91dd"
+hash = "7436e8515c54588076cbacffcef4ab83c46049b2c66b0dca3c17d3d0f9519f63"
 
 [[files]]
 file = "kubejs/server_scripts/enchantment.js"
-hash = "e97177a7142c3944a3a695326eb24ae29b44fef4f3e4ebec4bb6c62cc6547e21"
+hash = "da0c258e5cc98bb94a66ec270f94ce3aa132e0da68e773cf9d12c141af0134d8"
 
 [[files]]
 file = "kubejs/server_scripts/farmerscompat.js"
-hash = "7ca4c2aeb68d59bd46b4735e90100d4eff83da2b27d61b23aae081656388efe6"
+hash = "df6986836953fb130d0254bf7145a02939981d499538c8060578a8190904ee0f"
 
 [[files]]
 file = "kubejs/server_scripts/removals.js"
-hash = "5ceb02d2b2e9070e2da1e7eca3116da2257f419588c4babc2dac6e7e930c53c8"
+hash = "f55ad14d74aa54339cb21ae6b3d53fc9dff0926cc3a8e7fb188070c8dfded1b9"
 
 [[files]]
 file = "kubejs/server_scripts/replacements.js"
-hash = "8d3a44c6abe59393e09b0c419d2b4366caf201caf19564cdb11ab29018aa3d34"
+hash = "95b33d156bebe2e6769445c9c0d3f0d46af8d6c178b36dcba25b87e5de810ed1"
 
 [[files]]
 file = "kubejs/server_scripts/resourcegen.js"
-hash = "6c49f525f520d4615e3b3673fa63baef7700a721e57aa9b3785a174580fc903f"
+hash = "1621b29f94535085daabf46bf21bf52f3240ab27a42a99b6f3877112624f4026"
 
 [[files]]
 file = "kubejs/server_scripts/server.js"
-hash = "4b67a2acd63cda6f1f75d7086659272d5bf47d7332bdb2b3b2c63e3756d9005b"
+hash = "b4b15a207a307e5778dcded49285a89024996b48f451ee32c35764991f3e98b8"
 
 [[files]]
 file = "kubejs/server_scripts/tags/graveReplaceBlacklist.js"
-hash = "b45003ca47580cf18158ea515a8e254d79467b6f00841069319e8e387dfccd1a"
+hash = "07676553fd185f36751e60f165ca6d480d0de01e6c27c6935338152cfc85669c"
 
 [[files]]
 file = "kubejs/server_scripts/tconstruct.js"
-hash = "331b85effaef62a91e88f85b753d5535f690ce442f5277d8adc54821a0a99da6"
+hash = "e42dea35eaa73776c0ccc0553ba8992f33a4240d2a2de97a311f31c43f953d82"
 
 [[files]]
 file = "kubejs/server_scripts/techreborn.js"
@@ -17038,11 +17042,11 @@ hash = "6dd22db3f5c85befcd9cf676da52c7cd0005d5ceee182fa110262d04426d8c69"
 
 [[files]]
 file = "kubejs/server_scripts/vinery.js"
-hash = "f0b300c22a9720f77bb9bd3cace61a83312efb85b8f25cbfb0bd3a5f402962f1"
+hash = "250a99e5b7bbe32d095ff746c1ea1c9e7d0577788c79c48c65f83fe634481b58"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
-hash = "1d9da098306e1c54cc204866f056cb1af20dae66160dd86beed812425e05edcb"
+hash = "89a8da387a3f8603846d3735c9edfa1822c516e8290d596aaed14603d461e8d9"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
@@ -17881,7 +17885,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "f7ac61987f5756ee567ed07c4eb1618ea062eb5b68ea33e90411ad32a013cc5e"
+hash = "e42ee163760db84e9acdee3a9e727dfa61acf7a81fd46adf84edf2d955e07735"
 
 [[files]]
 file = "quests_structures/distillation.nbt"
