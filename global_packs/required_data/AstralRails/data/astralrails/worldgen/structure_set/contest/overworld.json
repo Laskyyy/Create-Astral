@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "astralrails:contest/overworld",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"spacing": 30,
+		"separation": 13,
+		"salt": 12398765
+	}
+}

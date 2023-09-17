@@ -1,0 +1,11 @@
+{
+  "config": {
+    "start_pool": "astralrails:contest/moon",
+    "size": 7
+  },
+  "biomes": "#astralrails:has_structure/moon_debris",
+  "adapt_noise":true,
+  "spawn_overrides": {
+  },
+  "type": "minecraft:village"
+}

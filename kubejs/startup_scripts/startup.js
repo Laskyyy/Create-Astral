@@ -433,6 +433,18 @@ onEvent('block.registry', event => {
       .material('glass')    
       .hardness(2)
       .lightLevel(5)
+	
+ event.create('doodads:asphalt_slab', 'slab')
+       .material('stone')
+       .hardness(4)
+       .tagBlock('minecraft:mineable/pickaxe')
+       .textureAll('doodads:block/asphalt')
+
+  event.create('doodads:asphalt_stair', 'stairs')
+       .material('stone')
+       .hardness(4)
+       .tagBlock('minecraft:mineable/pickaxe')
+       .textureAll('doodads:block/asphalt')
  })
 
  ///// ADD BURN TIME TO FUEL /////
@@ -504,7 +516,7 @@ onEvent('item.registry.armor_tiers', event => {
     tier.slotProtections = [3, 6, 6, 3]
     tier.enchantmentValue = 45
     tier.equipSound = 'minecraft:item.armor.equip_iron'
-    tier.repairIngredient = 'create:brass:ingot'
+    tier.repairIngredient = 'create:brass_ingot'
     tier.toughness = 0.0 // diamond has 2.0, netherite 3.0
     tier.knockbackResistance = 0.0
   })
@@ -679,51 +691,87 @@ onEvent('block.registry', event => {
    onEvent('item.tooltip', e => {
     const tooltips = [
       { item: 'tconstruct:smeltery_controller', tooltip: 'Disabled, use a foundry in chapter 3.' },
-
-      { item: 'create:blaze_cake', tooltip: 'No longer superheats! Use processes in Chapter 4 to superheat blaze burners.' },
+      { item: 'create:blaze_cake', tooltip: 'Use processes in Chapter 4 to superheat blaze burners.' },
       { item: 'yttr:gadolinite', tooltip: 'Gated by reaching Mercury! (Chapter 5)' },
       { item: 'yttr:yttrium_ingot', tooltip: 'Gated by reaching Mercury! (Chapter 5)' },
       { item: 'tconstruct:raw_cobalt', tooltip: 'Gated by reaching the Moon!.' },
-      { item: 'ae2:certus_quartz_dust', tooltip: 'Gated by reaching the Moon!' },
-      { item: 'minecraft:blaze_rod', tooltip: 'Blazes can be found in a certain structure on the Moon...' },
-      { item: 'minecraft:rotten_flesh', tooltip: 'Chewy... might make a good source of leather?' },
-      { item: 'computercraft:disk', tooltip: 'This recipe is wierd it actually uses redstone, not rose quartz.' },
-      { item: 'createastral:bronze_block', tooltip: 'Texture courtesy of Create: Alloyed!' },
-      { item: 'createastral:bronze_ingot', tooltip: 'Texture courtesy of Create: Alloyed!' },
-      { item: 'extractinator:extractinator', tooltip: 'Purely decorative. No functional use.' },
-      { item: 'ad_astra:space_helmet', tooltip: 'Can be repaired using Sturdy Sheets.' },
-      { item: 'ad_astra:space_suit', tooltip: 'Can be repaired using Sturdy Sheets.' },
-      { item: 'ad_astra:space_pants', tooltip: 'Can be repaired using Sturdy Sheets.' },
-      { item: 'ad_astra:space_boots', tooltip: 'Can be repaired using Sturdy Sheets.' },
-      { item: 'ae2:certus_quartz_dust', tooltip: 'Gated by reaching the Moon!' },
-      { item: 'ae2:certus_quartz', tooltip: 'Found underground on the moon.' },
-      { item: 'computercraft:disk', tooltip: 'This recipe is weird it actually uses redstone, not rose quartz.' },
-      { item: 'create:blaze_burner', tooltip: 'Blazes are found on the moon.' },
-      { item: 'create:empty_blaze_burner', tooltip: 'Blazes are found on the moon.' },
+
+      //Ad Astra tooltips
+      { item: 'ad_astra:space_helmet', tooltip: 'Can be repaired using Sturdy Sheets or Steel Ingots.' },
+      { item: 'ad_astra:space_suit', tooltip: 'Can be repaired using Sturdy Sheets or Steel Ingots.' },
+      { item: 'ad_astra:space_pants', tooltip: 'Can be repaired using Sturdy Sheets or Steel Ingots.' },
+      { item: 'ad_astra:space_boots', tooltip: 'Can be repaired using Sturdy Sheets or Steel Ingots.' },
+      { item: 'ad_astra:netherite_space_helmet', tooltip: 'Can be repaired with Netherite ingots.' },
+      { item: 'ad_astra:netherite_space_suit', tooltip: 'Can be repaired with Netherite Ingots.' },
+      { item: 'ad_astra:netherite_space_pants', tooltip: 'Can be repaired with Netherite Ingots.' },
+      { item: 'ad_astra:netherite_space_boots', tooltip: 'Can be repaired with Netherite Ingots.' },
+      { item: 'ad_astra:jet_suit_helmet', tooltip: 'Can be repaired with Calorite Ingots.' },
+      { item: 'ad_astra:jet_suit', tooltip: 'Can be repaired with Calorite Ingots.' },
+      { item: 'ad_astra:jet_suit_pants', tooltip: 'Can be repaired with Calorite Ingots.' },
+      { item: 'ad_astra:jet_suit_boots', tooltip: 'Can be repaired with Calorite Ingots.' },
+      { item: 'ad_astra:tier_1_rocket', tooltip: 'Disabled, use the custom portal instead.' },
+
+      //KubeJS tooltips
+      { item: 'kubejs:shimmer', tooltip: 'Use the Explorers Compass to look for underground "Shimmer Lakes"' }, //not done yet, need to find height of shimmer lakes
+      { item: 'kubejs:shimmer_bucket', tooltip: 'Use the Explorers Compass to look for underground "Shimmer Lakes"' }, //not done yet, need to find height of shimmer lakes
+      
+      //Create tooltips
+      { item: 'create:blaze_burner', tooltip: 'Blazes are found on the moon inside of the "Lunar Pipeline" structure.' },
+      { item: 'create:empty_blaze_burner', tooltip: 'Blazes are found on the moon inside of the "Lunar Pipeline" structure.' },
       { item: 'create:mechanical_arm', tooltip: 'Use a hopper to place this in a mechanical crafter.' } ,
-      { item: 'createastral:bronze_block', tooltip: 'Texture courtesy of Create: Alloyed!' },
-      { item: 'extractinator:extractinator', tooltip: 'Purely decorative. No functional use.' },
+
+      //Create Astral tooltips
+      { item: 'createastral:bronze_block', tooltip: 'Texture courtesy of Create: Alloyed.' },
+      
+      //vanilla minecraft tooltips (information on ores goes down below)
       { item: 'minecraft:ancient_debris', tooltip: 'Found underground on the moon and mars. Can be obtained from bastions and infernal spires on mars.' },
-      { item: 'minecraft:blaze_rod', tooltip: 'Blazes can be found in a certain structure on the Moon...' },
-      { item: 'minecraft:flint_and_steel', tooltip: 'Nether is Disabled. Nether content is distributed across planets. Follow the questbook for more info.' },
+      { item: 'minecraft:blaze_rod', tooltip: 'Blazes are found on the moon inside of the "Lunar Pipeline" structure.' },
+      { item: 'minecraft:flint_and_steel', tooltip: 'The Nether is Disabled. Nether content is distributed across planets. Follow the questbook for more information.' },
       { item: 'minecraft:nether_wart', tooltip: 'Found underground on the moon.' },
-      { item: 'minecraft:obsidian', tooltip: 'Nether is Disabled. Nether content is distributed across planets. Follow the questbook for more info.' },
-      { item: 'minecraft:rotten_flesh', tooltip: 'Chewy... might make a good source of leather?' },
-      { item: 'minecraft:soul_sand', tooltip: 'Found underground on the moon.' },
-      { item: 'techreborn:basic_machine_casing', tooltip: 'Crafted with either silver OR lead!' },
-      { item: 'techreborn:uu_matter', tooltip: 'Material forged in chapter 5.' },
+      { item: 'minecraft:obsidian', tooltip: 'Nether is Disabled. Nether content is distributed across planets. Follow the questbook for more information.' },
+      { item: 'minecraft:rotten_flesh', tooltip: 'Can be smelted into leather.' },
+      { item: 'minecraft:soul_sand', tooltip: 'Found underground on the moon or by bulk haunting sand (lighting moon sand on fire makes soul flame).' },
+      { item: 'minecraft:leather', tooltip: 'Can be made by smelting rotten flesh.'},
 
-      { item: 'techreborn:silver_ore', tooltip: 'This metal is found on the moon. Y=65' },
-      { item: 'techreborn:deepslate_silver_ore', tooltip: 'This metal is found on the moon. Y=65' },
-      { item: 'techreborn:raw_silver', tooltip: 'This metal is found on the moon. Y=65' },
-      { item: 'techreborn:silver_nugget', tooltip: 'This metal is found on the moon. Y=65' },
+      //Tech Reborn tooltips
+      { item: 'techreborn:uu_matter', tooltip: 'Material made in chapter 5 by putting scrap into the Matter Fabricator.' }, //not done yet, need to find out rates
+      { item: 'techreborn:scrap', tooltip: 'Made by putting any item into a recycler.' }, //not done yet, need to find out rates
+      { item: 'techreborn:basic_machine_casing', tooltip: 'Crafted with either Lead plates, Silver Plates, or Iron Sheets.' },
 
-      { item: 'techreborn:lead_ore', tooltip: 'This metal is found on mars. Y=50' },
-      { item: 'techreborn:deepslate_lead_ore', tooltip: 'This metal is found on mars. Y=50' },
+      //Ores Tooltips
+      { item: 'ae2:quartz_ore', tooltip: 'Found underground on the moon' },
+      { item: 'ae2:deepslate_quartz_ore', tooltip: 'Found underground on the moon' },
+      { item: 'ae2:certus_quartz', tooltip: 'Found underground on the moon.' },
+      { item: 'ae2:certus_quartz_dust', tooltip: 'Found underground on the moon' },
 
+      { item: 'techreborn:silver_ore', tooltip: 'This metal is found on the moon, most commonly at Y=65' },
+      { item: 'techreborn:deepslate_silver_ore', tooltip: 'This metal is found on the moon, most commonly at Y=65' },
+      { item: 'techreborn:raw_silver', tooltip: 'This metal is found on the moon, most commonly at Y=65' },
+      { item: 'techreborn:silver_ingot', tooltip: 'This metal is found on the moon, most commonly at Y=65' },
+      { item: 'techreborn:silver_nugget', tooltip: 'This metal is found on the moon, most commonly at Y=65' },
       
 
+      { item: 'techreborn:lead_ore', tooltip: 'This metal is found on mars, most commonly at Y=50' },
+      { item: 'techreborn:deepslate_lead_ore', tooltip: 'This metal is found on mars, most commonly at Y=50' },
+      { item: 'techreborn:raw_lead', tooltip: 'This metal is found on mars, most commonly at Y=50' },
+      { item: 'techreborn:lead_ingot', tooltip: 'This metal is found on mars, most commonly at Y=50'},
+      { item: 'techreborn:lead_nugget', tooltip: 'This metal is found on mars, most commonly at Y=50' },
+      
 
+      { item: 'techreborn:tin_ore', tooltip: 'This metal is found in the overworld, most commonly at Y=70 '},
+      { item: 'techreborn:deepslate_tin_ore', tooltip: 'This metal is found in the overworld, most commonly at Y=70 '},
+      { item: 'techreborn:raw_tin', tooltip: 'This metal is found in the overworld, most commonly at Y=70 '},
+      { item: 'techreborn:tin_ingot', tooltip: 'This metal is found in the overworld, most commonly at Y=70 '},
+      { item: 'techreborn:tin_nugget', tooltip: 'This metal is found in the overworld, most commonly at Y=70 '},
+
+
+     
+      //all ores coming soon
+
+      //Other tooltips
+      { item: 'computercraft:disk', tooltip: 'This recipe is not correct, use redstone instead of rose quartz.' },
+      { item: 'extractinator:extractinator', tooltip: 'Purely decorative. No functional use. Not a Terraria reference.' },
+      { item: 'adoptafloppa:amazon_delivery', tooltip: 'A note is attached: "Feed this thing fish once a day or else it will explode. Good luck.".' },
     ];
   
     tooltips.forEach(tooltip => {
@@ -748,6 +796,7 @@ onEvent('block.registry', event => {
     });
 
 });
+  
   
 
 
@@ -885,20 +934,6 @@ onEvent('worldgen.add', event => {
     ore.size = 15
 	})
 
-  event.addOre((ore) => {
-		ore.id = "kubejs:galenaoremars" // optional
-		ore.biomes = [{
-			not: {
-				category: "river"
-			}
-		}]
-		ore.addTarget('#ad_astra:mars_ore_replaceables', 'techreborn:deepslate_galena_ore')
-
-		ore.count([3, 5])
-			.squared()
-			.triangleHeight(-64, 64)
-    ore.size = 15
-	})
 
 
 

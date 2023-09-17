@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "astralrails:contest/special",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"spacing": 60,
+		"separation": 10,
+		"salt": 94926483
+	}
+}

@@ -8,6 +8,7 @@ onEvent("recipes", (event) => {
         { output: "techreborn:compressed_plantball" },
         { output: "techreborn:plantball" },
         { output: "techreborn:grinder" },
+        { output: "techreborn:block_breaker" },
         { output: "techreborn:wire_mill" },
         { output: "techreborn:compressor" },
         { output: "techreborn:synthetic_redstone_crystal" },
@@ -198,6 +199,13 @@ onEvent("recipes", (event) => {
         { mod: "create", output: "minecraft:andesite" },
         { input: "create:blaze_burner" },
 
+        // Create Deco
+
+        { output: "createdeco:andesite_door" },
+        { output: "createdeco:brass_door" },
+        { output: "createdeco:copper_door" },
+        { output: "createdeco:zinc_door" },
+
         //Create Additions
 
         { output: "createaddition:alternator" },
@@ -212,6 +220,23 @@ onEvent("recipes", (event) => {
         {
             output: "createaddition:biomass",
         },
+
+        //Createdeco sheetmetal rebalance
+
+        {output: "createdeco:copper_sheet_metal"},
+        {output: "createdeco:andesite_sheet_metal"},
+        {output: "createdeco:gold_sheet_metal"},
+        {output: "createdeco:netherite_sheet_metal"},
+        {output: "createdeco:brass_sheet_metal"},
+        {output: "createdeco:cast_iron_sheet_metal"},
+        {output: "createdeco:iron_sheet_metal"},
+        {output: "createdeco:zinc_sheet_metal"},
+
+        // dustrial decor sheetmetal rework
+
+        { output: "dustrial_decor:rusty_iron_door" },
+        { output: "dustrial_decor:rusty_sheet_metal_treading"},
+
 
         // Ad Astra
 
@@ -436,6 +461,10 @@ onEvent("recipes", (event) => {
             input: "minecraft:copper_block",
             type: "minecraft:stonecutting",
         },
+
+        //dispenser recipe
+        {output: "minecraft:dispenser" },
+
     ].forEach((recipe) => {
         event.remove(recipe);
     });

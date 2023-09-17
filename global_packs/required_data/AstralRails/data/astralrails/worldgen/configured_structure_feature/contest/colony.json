@@ -1,0 +1,11 @@
+{
+  "config": {
+    "start_pool": "astralrails:contest/colony",
+    "size": 7
+  },
+  "biomes": "#astralrails:has_structure/mars_moon_debris",
+  "adapt_noise":true,
+  "spawn_overrides": {
+  },
+  "type": "minecraft:village"
+}
