@@ -40,7 +40,7 @@ onEvent("recipes", (event) => {
         { output: "techreborn:quantum_boots" },
         { output: "techreborn:copper_nugget" },
         { output: "techreborn:steel_plate" },
-        {type: "techreborn:scrapbox"},
+        { type: "techreborn:scrapbox" },
         {
             type: "techreborn:grinder",
             input: "#techreborn:calcite_dust_material",
@@ -239,14 +239,10 @@ onEvent("recipes", (event) => {
         { output: "ad_astra:desh_cable" },
         { output: "ad_astra:steel_cable" },
         { output: "ad_astra:compressor" },
-        {output: 'ad_astra:ostrum_ingot',
-         type: 'minecraft:smelting'},
-        {output: 'ad_astra:ostrum_ingot',
-         type: 'minecraft:blasting'},
-        {output: 'ad_astra:calorite_ingot',
-         type: 'minecraft:smelting'},
-        {output: 'ad_astra:calorite_ingot',
-         type: 'minecraft:blasting'},
+        { output: "ad_astra:ostrum_ingot", type: "minecraft:smelting" },
+        { output: "ad_astra:ostrum_ingot", type: "minecraft:blasting" },
+        { output: "ad_astra:calorite_ingot", type: "minecraft:smelting" },
+        { output: "ad_astra:calorite_ingot", type: "minecraft:blasting" },
 
         // AE2
 
@@ -282,7 +278,6 @@ onEvent("recipes", (event) => {
         { output: "tconstruct:efln_ball" },
         { output: "tconstruct:piggy_backpack" },
 
-
         // Miscellaneous
 
         { output: "passivepiglins:piglin_fortune" },
@@ -300,7 +295,6 @@ onEvent("recipes", (event) => {
         { output: "automobility:automobile_assembler" },
         { type: "automobility:automobile_assembler" },
         { type: "ad_astra:fuel_conversion" },
-
 
         { output: "campanion:grappling_hook" },
         { output: "campanion:mre" },
@@ -355,9 +349,9 @@ onEvent("recipes", (event) => {
         { output: "computercraft:pocket_computer_advanced" },
 
         { mod: "camsbackpacks", input: "minecraft:chest" },
-				
-				{ output: "buildinggadgets:gadget_building" },
-				{ output: "buildinggadgets:gadget_copy_paste" },
+
+        { output: "buildinggadgets:gadget_building" },
+        { output: "buildinggadgets:gadget_copy_paste" },
 
         // Yttr
         { output: "yttr:chute" },
@@ -428,9 +422,9 @@ onEvent("recipes", (event) => {
         { output: "minecraft:diamond_ore" },
         { output: "minecraft:emerald_ore" },
         { output: "minecraft:blackstone" },
-        { output: "minecraft:gold_nugget",  input: "minecraft:soul_sand" },
-        { output: "minecraft:gravel",  input: "techreborn:granite_dust" },
-        { output: "minecraft:gold_nugget",  input: "minecraft:soul_soil" },
+        { output: "minecraft:gold_nugget", input: "minecraft:soul_sand" },
+        { output: "minecraft:gravel", input: "techreborn:granite_dust" },
+        { output: "minecraft:gold_nugget", input: "minecraft:soul_soil" },
         { input: "minecraft:crying_obsidian" },
         {
             input: "minecraft:copper_block",
@@ -441,41 +435,52 @@ onEvent("recipes", (event) => {
     });
 
     // Define the array of materials
-const materials = [
-    'techreborn:lead',
-    'techreborn:bronze',
-    'techreborn:steel',
-    'techreborn:tin',
-    'techreborn:copper',
-    'techreborn:steel',
-    'techreborn:silver'
-  ];
-  
-  // Define a function to remove all recipes with a given material
-  function removeRecipes(material) {
-    event.remove({output: material + '_helmet'});
-    event.remove({output: material + '_chestplate'});
-    event.remove({output: material + '_leggings'});
-    event.remove({output: material + '_boots'});
-    event.remove({output: material + '_axe'});
-    event.remove({output: material + '_sword'});
-    event.remove({output: material + '_pickaxe'});
-    event.remove({output: material + '_hoe'});
-    event.remove({output: material + '_shovel'});
-  };
+    const materials = [
+        "techreborn:lead",
+        "techreborn:bronze",
+        "techreborn:steel",
+        "techreborn:tin",
+        "techreborn:copper",
+        "techreborn:steel",
+        "techreborn:silver",
+    ];
 
-  const metal = ['tungstensteel', 'chrome', 'titanium', 'nickel', 'refined_iron', 'bronze', 'aluminum', 'tungsten', 'platinum', 'brass', 'zinc' ];
+    // Define a function to remove all recipes with a given material
+    function removeRecipes(material) {
+        event.remove({ output: material + "_helmet" });
+        event.remove({ output: material + "_chestplate" });
+        event.remove({ output: material + "_leggings" });
+        event.remove({ output: material + "_boots" });
+        event.remove({ output: material + "_axe" });
+        event.remove({ output: material + "_sword" });
+        event.remove({ output: material + "_pickaxe" });
+        event.remove({ output: material + "_hoe" });
+        event.remove({ output: material + "_shovel" });
+    }
 
-metal.forEach(metal => {
-  event.remove({output: `techreborn:${metal}_plate`});
-  event.remove({output: `techreborn:${metal}_ingot`});
-  event.remove({output: `techreborn:${metal}_storage_block`});
-  event.remove({output: `techreborn:${metal}_storage_block_stairs`});
-  event.remove({output: `techreborn:${metal}_storage_block_slab`});
-  event.remove({output: `techreborn:${metal}_storage_block_wall`});
-  event.remove({output: `techreborn:${metal}_dust`});
-  event.remove({output: `techreborn:${metal}_small_dust`});
-  event.remove({output: `techreborn:${metal}_nugget`});
-});
+    const metal = [
+        "tungstensteel",
+        "chrome",
+        "titanium",
+        "nickel",
+        "refined_iron",
+        "bronze",
+        "aluminum",
+        "tungsten",
+        "platinum",
+        "brass",
+        "zinc",
+    ];
 
+    metal.forEach((metal) => {
+        event.remove({ output: `techreborn:${metal}_plate` });
+        event.remove({ output: `techreborn:${metal}_ingot` });
+        event.remove({ output: `techreborn:${metal}_storage_block` });
+        event.remove({ output: `techreborn:${metal}_storage_block_stairs` });
+        event.remove({ output: `techreborn:${metal}_storage_block_slab` });
+        event.remove({ output: `techreborn:${metal}_storage_block_wall` });
+        event.remove({ output: `techreborn:${metal}_dust` });
+        event.remove({ output: `techreborn:${metal}_small_dust` });
+        event.remove({ output: `techreborn:${metal}_nugget` });
+    });
 });
