@@ -16766,7 +16766,7 @@ hash = "7ca4c2aeb68d59bd46b4735e90100d4eff83da2b27d61b23aae081656388efe6"
 
 [[files]]
 file = "kubejs/server_scripts/removals.js"
-hash = "47594ba9a6c716b9ab9fa7daa3f8d6519c016e721b4763d71daade0b3c0055a8"
+hash = "8313e65b4d2e5d760ddade5ee0a387d31513eafcc70c94bb0ebabca11713dec9"
 
 [[files]]
 file = "kubejs/server_scripts/replacements.js"
