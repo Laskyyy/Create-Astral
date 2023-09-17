@@ -223,20 +223,19 @@ onEvent("recipes", (event) => {
 
         //Createdeco sheetmetal rebalance
 
-        {output: "createdeco:copper_sheet_metal"},
-        {output: "createdeco:andesite_sheet_metal"},
-        {output: "createdeco:gold_sheet_metal"},
-        {output: "createdeco:netherite_sheet_metal"},
-        {output: "createdeco:brass_sheet_metal"},
-        {output: "createdeco:cast_iron_sheet_metal"},
-        {output: "createdeco:iron_sheet_metal"},
-        {output: "createdeco:zinc_sheet_metal"},
+        { output: "createdeco:copper_sheet_metal" },
+        { output: "createdeco:andesite_sheet_metal" },
+        { output: "createdeco:gold_sheet_metal" },
+        { output: "createdeco:netherite_sheet_metal" },
+        { output: "createdeco:brass_sheet_metal" },
+        { output: "createdeco:cast_iron_sheet_metal" },
+        { output: "createdeco:iron_sheet_metal" },
+        { output: "createdeco:zinc_sheet_metal" },
 
         // dustrial decor sheetmetal rework
 
         { output: "dustrial_decor:rusty_iron_door" },
-        { output: "dustrial_decor:rusty_sheet_metal_treading"},
-
+        { output: "dustrial_decor:rusty_sheet_metal_treading" },
 
         // Ad Astra
 
@@ -457,14 +456,13 @@ onEvent("recipes", (event) => {
         },
 
         //dispenser recipe
-        {output: "minecraft:dispenser" },
-
+        { output: "minecraft:dispenser" },
     ].forEach((recipe) => {
         event.remove(recipe);
     });
 
     // YTTR Project Table
-    event.remove({output: "yttr:project_table"})
+    event.remove({ output: "yttr:project_table" });
     const colors = [
         "white",
         "orange",
@@ -482,8 +480,10 @@ onEvent("recipes", (event) => {
         "green",
         "red",
         "black",
-    ]
-    colors.forEach((color) => event.remove({output: `yttr:${color}_project_table`}))
+    ];
+    colors.forEach((color) =>
+        event.remove({ output: `yttr:${color}_project_table` })
+    );
 
     // Define the array of materials
     const materials = [

@@ -225,28 +225,33 @@ onEvent("recipes", (event) => {
             "createastral:sturdy_boots",
         ],
 
-        [{output: 'ad_astra:netherite_space_helmet'},
-         'ad_astra:compressed_steel',
-          'ad_astra:ostrum_block'
+        [
+            { output: "ad_astra:netherite_space_helmet" },
+            "ad_astra:compressed_steel",
+            "ad_astra:ostrum_block",
         ],
 
-        [{output: 'ad_astra:netherite_space_suit'},
-         'ad_astra:compressed_steel',
-          'ad_astra:ostrum_block'
+        [
+            { output: "ad_astra:netherite_space_suit" },
+            "ad_astra:compressed_steel",
+            "ad_astra:ostrum_block",
         ],
 
-        [{output: 'ad_astra:netherite_space_pants'},
-         'ad_astra:compressed_steel',
-          'techreborn:lead_plate'
+        [
+            { output: "ad_astra:netherite_space_pants" },
+            "ad_astra:compressed_steel",
+            "techreborn:lead_plate",
         ],
 
-        [{output: 'ad_astra:netherite_space_boots'},
-         'ad_astra:compressed_steel',
-          'techreborn:lead_plate'
+        [
+            { output: "ad_astra:netherite_space_boots" },
+            "ad_astra:compressed_steel",
+            "techreborn:lead_plate",
         ],
-        [{output: "minecraft:shulker_box"},
-         "techreborn:endstone_small_dust",
-          "ae2:fluix_dust"
+        [
+            { output: "minecraft:shulker_box" },
+            "techreborn:endstone_small_dust",
+            "ae2:fluix_dust",
         ],
 
         [
@@ -535,14 +540,42 @@ onEvent("recipes", (event) => {
             "create:precision_mechanism",
             "create:refined_radiance",
         ],
-        [{mod: 'techreborn'},'techreborn:iridium_ingot', 'yttr:yttrium_ingot'],
-        [{mod: 'techreborn'},'techreborn:iridium_plate', 'yttr:yttrium_ingot'],
-        [{output: 'ad_astra:cryo_freezer'},'ad_astra:ostrum_tank', 'techreborn:lithium_ion_battery'],
-        [{mod: 'techreborn'},'techreborn:iridium_alloy_plate', 'yttr:yttrium_ingot'],
-        [{mod: 'dustrial_decor'},'minecraft:iron_ingot', 'create:iron_sheet'],
-        [{mod: 'computercraft'},'minecraft:iron_ingot', 'create:iron_sheet'],
-        [{output: 'ae2:fluid_cell_housing'}, 'techreborn:silver_plate', 'create:copper_casing'],
-        [{output: 'ae2:item_cell_housing'}, 'techreborn:silver_plate', 'create:andesite_casing'],
+        [
+            { mod: "techreborn" },
+            "techreborn:iridium_ingot",
+            "yttr:yttrium_ingot",
+        ],
+        [
+            { mod: "techreborn" },
+            "techreborn:iridium_plate",
+            "yttr:yttrium_ingot",
+        ],
+        [
+            { output: "ad_astra:cryo_freezer" },
+            "ad_astra:ostrum_tank",
+            "techreborn:lithium_ion_battery",
+        ],
+        [
+            { mod: "techreborn" },
+            "techreborn:iridium_alloy_plate",
+            "yttr:yttrium_ingot",
+        ],
+        [
+            { mod: "dustrial_decor" },
+            "minecraft:iron_ingot",
+            "create:iron_sheet",
+        ],
+        [{ mod: "computercraft" }, "minecraft:iron_ingot", "create:iron_sheet"],
+        [
+            { output: "ae2:fluid_cell_housing" },
+            "techreborn:silver_plate",
+            "create:copper_casing",
+        ],
+        [
+            { output: "ae2:item_cell_housing" },
+            "techreborn:silver_plate",
+            "create:andesite_casing",
+        ],
 
         [
             { output: "techreborn:industrial_grinder" },
@@ -660,9 +693,24 @@ onEvent("recipes", (event) => {
             "createaddition:iron_rod",
             "create:integrated_circuit",
         ],
-        [{mod: 'immersive_aircraft', output: 'immersive_aircraft:steel_boiler'},'minecraft:iron_ingot', 'ad_astra:steel_plate'],
-        [{mod: 'immersive_aircraft'},'minecraft:copper_ingot', 'create:fluid_pipe'],
-        [{mod: 'immersive_aircraft'},'minecraft:iron_ingot', 'minecraft:iron_block'],
+        [
+            {
+                mod: "immersive_aircraft",
+                output: "immersive_aircraft:steel_boiler",
+            },
+            "minecraft:iron_ingot",
+            "ad_astra:steel_plate",
+        ],
+        [
+            { mod: "immersive_aircraft" },
+            "minecraft:copper_ingot",
+            "create:fluid_pipe",
+        ],
+        [
+            { mod: "immersive_aircraft" },
+            "minecraft:iron_ingot",
+            "minecraft:iron_block",
+        ],
     ].forEach((recipe) => {
         if (recipe.length === 2) {
             event.replaceInput(recipe[0], recipe[1]);
