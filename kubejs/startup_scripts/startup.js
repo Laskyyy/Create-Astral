@@ -554,9 +554,9 @@ onEvent('item.registry.armor_tiers', event => {
 
 ///// REGISTER NEW ITEMS HERE /////
 onEvent('item.registry', event => { 
-  event.create('createastral:crushed_desh_ore'),
-  event.create('createastral:crushed_ostrum_ore'),
-  event.create('createastral:crushed_calorite_ore'),
+  event.create('createastral:crushed_raw_desh'),
+  event.create('createastral:crushed_raw_ostrum'),
+  event.create('createastral:crushed_raw_calorite'),
   event.create('createastral:subatomic_ingot'),
   event.create('createastral:astral_conduit')
        .maxStackSize(1)
@@ -587,7 +587,7 @@ event.create('createastral:separation_agent'),
 event.create('createastral:shimmer_amplifier'),
 event.create('createastral:star_shard').glow(true),
 event.create('createastral:pure_star_shard').glow(true),
-event.create('createastral:crushed_yttrium_ore'),
+event.create('createastral:crushed_raw_gadolinite'),
 event.create('createastral:experience_ingot'),
 
 

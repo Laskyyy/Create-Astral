@@ -1,9 +1,9 @@
 {
     "":"///// NOM DES OBJETS ICI /////",
 
-    "item.createastral.crushed_desh_ore": "Minerai de desh concassé",
-    "item.createastral.crushed_ostrum_ore": "Minerai d'ostrum concassé",
-    "item.createastral.crushed_calorite_ore": "Minerai de calorite concassé",
+    "item.createastral.crushed_raw_desh": "Minerai de desh concassé",
+    "item.createastral.crushed_raw_ostrum": "Minerai d'ostrum concassé",
+    "item.createastral.crushed_raw_calorite": "Minerai de calorite concassé",
     "item.createastral.subatomic_ingot": "Lingot subatomique",
     "item.createastral.astral_conduit": "Conduit astral",
     "item.createastral.andesite_compound": "Composé d'andésite",

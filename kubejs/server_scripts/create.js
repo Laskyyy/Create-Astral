@@ -439,10 +439,9 @@ function crushingRecipes(event) {
             let raw_ore = mod.mod + ":raw_" + ore.name;
             let crushed_ore =
                 "create" +
-                (mod.mod == "ad_astra" ? "astral" : "") +
-                ":crushed_" +
-                ore.name +
-                "_ore";
+                ((mod.mod === "ad_astra" || mod.mod === "yttr") ? "astral" : "") +
+                ":crushed_raw_" +
+                ore.name;
             let outputs = [
                 crushed_ore,
                 Item.of(crushed_ore).withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
