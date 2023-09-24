@@ -44,7 +44,8 @@
   "features": [
     ["incendium:toxic_heap/spike",
       "incendium:toxic_heap/junk_pile"],
-    [],
+    [
+			"xpcrystals:xp_geode"],
     [
     ],
     [],
@@ -67,7 +68,10 @@
       "minecraft:ore_gold_nether",
       "minecraft:ore_quartz_nether",
       "minecraft:ore_ancient_debris_large",
-      "minecraft:ore_debris_small"
+      "minecraft:ore_debris_small",
+			"xpcrystals:xp_geode_ore",
+			"astralrails:xp_geode_filler",
+			"astralrails:xp_geode_filler_two"
     ],
     [],
     [

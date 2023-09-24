@@ -1,0 +1,39 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "createastral:stone_growth_chamber",
+	"time": 10,
+	"requirements": [
+		{
+			"type": "custommachinery:structure",
+			"keys": {
+				"a": "create:andesite_casing",
+				"l": "minecraft:lava",
+				"c": "compressor:double_compressed_cobblestone",
+				"t": "minecraft:tinted_glass"
+			},
+			"pattern": [
+				[
+					"aaa",
+					"aca",
+					"ama"
+				],
+				[
+					"aca",
+					"clc",
+					"ata"
+				],
+				[
+					"aaa",
+					"aca",
+					"aaa"
+				]
+			]
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:cobblestone",
+			"amount": 1,
+			"mode": "output"
+		}
+	]
+}

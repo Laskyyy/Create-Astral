@@ -13,12 +13,12 @@ onEvent("recipes", (event) => {
                     "minecraft:golden_sword",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -39,12 +39,12 @@ onEvent("recipes", (event) => {
                     "tconstruct:gold_reinforcement",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -65,12 +65,12 @@ onEvent("recipes", (event) => {
                     "tconstruct:iron_reinforcement",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -91,12 +91,12 @@ onEvent("recipes", (event) => {
                     "tconstruct:slimesteel_reinforcement",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -117,12 +117,12 @@ onEvent("recipes", (event) => {
                     "tconstruct:seared_reinforcement",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -143,12 +143,12 @@ onEvent("recipes", (event) => {
                     "tconstruct:emerald_reinforcement",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -169,12 +169,12 @@ onEvent("recipes", (event) => {
                     "tconstruct:bronze_reinforcement",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -195,12 +195,12 @@ onEvent("recipes", (event) => {
                     "tconstruct:cobalt_reinforcement",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -221,12 +221,12 @@ onEvent("recipes", (event) => {
                     "dustrial_decor:wrapped_chains",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -247,12 +247,12 @@ onEvent("recipes", (event) => {
                     "minecraft:soul_lantern",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -273,12 +273,12 @@ onEvent("recipes", (event) => {
                     "techreborn:silver_plate",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -299,12 +299,12 @@ onEvent("recipes", (event) => {
                     "tconstruct:silky_cloth",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -321,16 +321,16 @@ onEvent("recipes", (event) => {
             ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "create:copper_diving_helmet",
-                    "create:copper_diving_helmet",
+                    "create:diving_helmet",
+                    "create:diving_helmet",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -351,12 +351,12 @@ onEvent("recipes", (event) => {
                     "minecraft:lever",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -377,12 +377,12 @@ onEvent("recipes", (event) => {
                     "create:brass_hand",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -403,12 +403,12 @@ onEvent("recipes", (event) => {
                     "minecraft:gunpowder",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -429,12 +429,12 @@ onEvent("recipes", (event) => {
                     "minecraft:piston",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -455,12 +455,12 @@ onEvent("recipes", (event) => {
                     "minecraft:crossbow",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -481,12 +481,12 @@ onEvent("recipes", (event) => {
                     "ad_astra:calorite_ingot",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -507,12 +507,12 @@ onEvent("recipes", (event) => {
                     "minecraft:tnt",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -537,12 +537,12 @@ onEvent("recipes", (event) => {
                     "minecraft:spectral_arrow",
                 ]), // Why? Just to fug wit ppl
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -563,12 +563,12 @@ onEvent("recipes", (event) => {
                     "minecraft:blue_ice",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -589,12 +589,12 @@ onEvent("recipes", (event) => {
                     "tconstruct:jeweled_apple",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -615,12 +615,12 @@ onEvent("recipes", (event) => {
                     "minecraft:blaze_powder",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -641,12 +641,12 @@ onEvent("recipes", (event) => {
                     "minecraft:blaze_rod",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -667,12 +667,12 @@ onEvent("recipes", (event) => {
                     "minecraft:white_bed",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -693,12 +693,12 @@ onEvent("recipes", (event) => {
                     Item.of("minecraft:potion", '{Potion:"minecraft:swiftness"}',),
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -715,16 +715,16 @@ onEvent("recipes", (event) => {
             ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "create:copper_diving_boots",
-                    "create:copper_diving_boots",
+                    "create:diving_boots",
+                    "create:diving_boots",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -745,12 +745,12 @@ onEvent("recipes", (event) => {
                     "create:copper_backtank",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -771,12 +771,12 @@ onEvent("recipes", (event) => {
                     "minecraft:spider_eye",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -797,12 +797,12 @@ onEvent("recipes", (event) => {
                     "farmersdelight:cod_slice",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -823,12 +823,12 @@ onEvent("recipes", (event) => {
                     "minecraft:golden_apple",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -849,12 +849,12 @@ onEvent("recipes", (event) => {
                     "minecraft:sea_lantern",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -875,12 +875,12 @@ onEvent("recipes", (event) => {
                     "minecraft:dark_prismarine",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -901,12 +901,12 @@ onEvent("recipes", (event) => {
                     "minecraft:prismarine_shard",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -927,12 +927,12 @@ onEvent("recipes", (event) => {
                     "minecraft:lightning_rod",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -951,12 +951,12 @@ onEvent("recipes", (event) => {
                     "farmersdelight:iron_knife",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -977,12 +977,12 @@ onEvent("recipes", (event) => {
                     "ad_astra:oxygen_bucket",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -1003,12 +1003,12 @@ onEvent("recipes", (event) => {
                     "ad_astra:oxygen_bucket",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "minecraft:experience_bottle",
-                    "minecraft:experience_bottle",
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -2957,6 +2957,16 @@ onEvent("recipes", (event) => {
             input: ["create:experience_nugget"],
             superheated: false,
             time: 10
+        }, {
+            output: { fluid: "kubejs:liquid_xp_nuggies", amount: 2000 },
+            input: ["xpcrystals:xp_crystal"],
+            superheated: false,
+            time: 12
+        }, {
+            output: { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT/4 },
+            input: ["xpcrystals:soul_compound"],
+            superheated: false,
+            time: 30
         }
     ]
     for (const mixing of mixings) {
@@ -2965,4 +2975,44 @@ onEvent("recipes", (event) => {
             .heatRequirement(mixing.superheated ? "superheated" : "heated")
             .processingTime(mixing.time ?? 100)
     }
+		event.remove({ output: "xpcrystals:crystal_broth" });
+		event.remove({ output: "xpcrystals:sticky_crystal_pudding" });
+		event.remove({ output: "xpcrystals:soul_bucket" });
+		event.remove({ output: "xpcrystals:soul_compound" });
+		event.remove({ output: "xpcrystals:xp_boost_potion" });
+		event.recipes
+			.createMixing({fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT/4 }, ["xpcrystals:soul_compound", {fluid: "minecraft:water", amount: FULL_BUCKET_AMMOUNT/8}])
+			.processingTime(25)
+		event.recipes
+			.createMixing({fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT/4 }, {fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT/4 })
+			.processingTime(25)
+		event.recipes
+			.createCrushing(["3x xpcrystals:soul_compound", Item.of("xpcrystals:soul_compound").withChance(0.5)], ["minecraft:soul_sand"])
+		event.recipes
+			.createMilling(["1x xpcrystals:soul_compound", Item.of("xpcrystals:soul_compound").withChance(0.5), Item.of("minecraft:soul_sand").withChance(0.25)], ["minecraft:soul_sand"])
+		event.recipes
+			.createFilling("xpcrystals:sticky_crystal_pudding", [{fluid: "kubejs:liquid_xp_nuggies", amount: FULL_BUCKET_AMMOUNT }, "createaddition:cake_base_baked"])
+		event.recipes
+			.createFilling("xpcrystals:crystal_broth", [{fluid: "kubejs:liquid_xp_nuggies", amount: FULL_BUCKET_AMMOUNT/2 }, "minecraft:bowl"])
+		event.recipes
+			.createSequencedAssembly(
+				Item.of("xpcrystals:xp_boost_potion"),
+				["minecraft:glass_bottle"],
+				[
+					event.recipes.createFilling("minecraft:glass_bottle", [
+						"minecraft:glass_bottle",
+						{ fluid: "kubejs:liquid_xp_nuggies", amount: FULL_BUCKET_AMMOUNT/3 },
+					]),
+					event.recipes.createFilling("minecraft:glass_bottle", [
+						"minecraft:glass_bottle",
+						{ fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT/3 },
+					]),
+					event.recipes.createFilling("minecraft:glass_bottle", [
+						"minecraft:glass_bottle",
+						{ fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT/3 },
+					])
+				]
+			)
+      .transitionalItem("minecraft:enchanted_book")
+      .loops(1);
 });
