@@ -54,9 +54,7 @@ onEvent("recipes", (event) => {
     // CreateSifting
     [
         {
-            inputs: [
-                { item: "minecraft:sand" },
-            ],
+            inputs: [{ item: "minecraft:sand" }],
             outputs: [
                 { item: "minecraft:bone", chance: 0.01 },
                 { item: "minecraft:string", chance: 0.02 },
@@ -67,9 +65,7 @@ onEvent("recipes", (event) => {
             processingTime: 200,
         },
         {
-            inputs: [
-                { item: "ad_astra:moon_sand" },
-            ],
+            inputs: [{ item: "ad_astra:moon_sand" }],
             outputs: [
                 { item: "minecraft:gunpowder", chance: 0.05 },
                 { item: "minecraft:glowstone_dust", chance: 0.1 },
@@ -78,9 +74,7 @@ onEvent("recipes", (event) => {
             processingTime: 400,
         },
         {
-            inputs: [
-                { item: "ad_astra:mars_sand" },
-            ],
+            inputs: [{ item: "ad_astra:mars_sand" }],
             outputs: [
                 { item: "minecraft:gold_nugget", chance: 0.05 },
                 { item: "techreborn:lazurite_dust", chance: 0.05 },
@@ -88,9 +82,7 @@ onEvent("recipes", (event) => {
             processingTime: 600,
         },
         {
-            inputs: [
-                { item: "minecraft:coarse_dirt" },
-            ],
+            inputs: [{ item: "minecraft:coarse_dirt" }],
             outputs: [
                 { item: "minecraft:dirt", chance: 1 },
                 { item: "minecraft:flint", chance: 0.3 },
@@ -98,9 +90,7 @@ onEvent("recipes", (event) => {
             processingTime: 50,
         },
         {
-            inputs: [
-                { item: "minecraft:basalt" },
-            ],
+            inputs: [{ item: "minecraft:basalt" }],
             outputs: [
                 { item: "minecraft:magma_cream", chance: 0.1 },
                 { item: "minecraft:ghast_tear", chance: 0.05 },
@@ -109,16 +99,12 @@ onEvent("recipes", (event) => {
             processingTime: 200,
         },
         {
-            inputs: [
-                { item: "minecraft:flint" },
-            ],
+            inputs: [{ item: "minecraft:flint" }],
             outputs: [{ item: "minecraft:music_disc_13", chance: 0.001 }],
             processingTime: 20,
         },
         {
-            inputs: [
-                { item: "minecraft:cobbled_deepslate" },
-            ],
+            inputs: [{ item: "minecraft:cobbled_deepslate" }],
             outputs: [
                 { item: "minecraft:redstone", chance: 0.1 },
                 { item: "create:copper_nugget", chance: 0.05 },
@@ -127,9 +113,7 @@ onEvent("recipes", (event) => {
         },
 
         {
-            inputs: [
-                { item: "extractinator:silt" },
-            ],
+            inputs: [{ item: "extractinator:silt" }],
             outputs: [
                 { item: "minecraft:raw_iron", chance: 0.2 },
                 { item: "minecraft:raw_copper", chance: 0.4 },
@@ -145,9 +129,7 @@ onEvent("recipes", (event) => {
             processingTime: 1000,
         },
         {
-            inputs: [
-                { item: "extractinator:slush" },
-            ],
+            inputs: [{ item: "extractinator:slush" }],
             outputs: [
                 { item: "minecraft:raw_iron", chance: 0.2 },
                 { item: "minecraft:raw_copper", chance: 0.4 },
@@ -164,9 +146,7 @@ onEvent("recipes", (event) => {
         },
 
         {
-            inputs: [
-                { item: "minecraft:prismarine" },
-            ],
+            inputs: [{ item: "minecraft:prismarine" }],
             outputs: [
                 { item: "minecraft:cod", chance: 0.2 },
                 { item: "minecraft:salmon", chance: 0.1 },
@@ -175,7 +155,6 @@ onEvent("recipes", (event) => {
                 { item: "minecraft:nautilus_shell", chance: 0.02 },
                 { item: "minecraft:lily_pad", chance: 0.2 },
                 { item: "minecraft:glow_ink_sac", chance: 0.1 },
-
             ],
             processingTime: 100,
         },
