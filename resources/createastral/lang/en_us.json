@@ -1,8 +1,8 @@
 {
     ///// ITEMS NAME HERE /////
-    "item.createastral.crushed_raw_desh": "Crushed desh ore",
-    "item.createastral.crushed_raw_ostrum": "Crushed ostrum ore",
-    "item.createastral.crushed_raw_calorite": "Crushed calorite ore",
+    "item.createastral.crushed_desh_ore": "Crushed desh ore",
+    "item.createastral.crushed_ostrum_ore": "Crushed ostrum ore",
+    "item.createastral.crushed_calorite_ore": "Crushed calorite ore",
     "item.createastral.subatomic_ingot": "Subatomic ingot",
     "item.createastral.astral_conduit": "Astral conduit",
     "item.createastral.andesite_compound": "Andesite compound",

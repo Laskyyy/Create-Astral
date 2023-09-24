@@ -13,7 +13,7 @@ realmsNotifications:true
 reducedDebugInfo:false
 showSubtitles:false
 touchscreen:false
-fullscreen:true
+fullscreen:false
 bobView:true
 toggleCrouch:false
 toggleSprint:false
@@ -36,8 +36,8 @@ ao:2
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:true
-resourcePacks:["vanilla","compressor","Fabric Mods","loadmyresources.hiddenpack","file/andesite-chests-crafting-table-1-19","file/BetterVanillaBuildingV2.86.1","file/BetterVanillaBuildingFenceFixes","file/Reim GUI + Default Dark","file/rgui-astral","file/Fresh-Animations-CEM-fork-main","file/Created--Updated","file/ComputerCreate"]
-incompatibleResourcePacks:["file/andesite-chests-crafting-table-1-19","file/BetterVanillaBuildingV2.86.1","file/Reim GUI + Default Dark","file/Fresh-Animations-CEM-fork-main","file/Created--Updated"]
+resourcePacks:["vanilla","compressor","Fabric Mods","loadmyresources.hiddenpack","file/andesite-chests-crafting-table-1-19","file/BetterVanillaBuildingV2.86.1","file/BetterVanillaBuildingFenceFixes","file/rgui-astral","file/Fresh-Animations-CEM-fork-main","file/Created--Updated","file/ComputerCreate"]
+incompatibleResourcePacks:["file/andesite-chests-crafting-table-1-19","file/BetterVanillaBuildingV2.86.1","file/Fresh-Animations-CEM-fork-main","file/Created--Updated"]
 lastServer:
 lang:en_us
 soundDevice:
@@ -134,8 +134,6 @@ key_key.buildinggadgets.material_list:key.keyboard.m
 key_key.campanion.open_backpack:key.keyboard.b
 key_create.keyinfo.toolmenu:key.keyboard.left.alt
 key_create.keyinfo.toolbelt:key.keyboard.g
-key_key.createbigcannons.pitch_mode:key.keyboard.c
-key_key.createbigcannons.fire_controlled_cannon:key.mouse.left
 key_key.gearreborn.toggle_nv:key.keyboard.n
 key_key.immersive_aircraft.multi_control_left:key.keyboard.a
 key_key.immersive_aircraft.multi_control_right:key.keyboard.d
