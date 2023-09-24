@@ -269,7 +269,7 @@ function crushingRecipes(event) {
                 cleanoutputs.push(Item.of(output[0]).withChance(output[1]));
             }
         });
-        event.recipes.createCrushing(cleanoutputs, recipe.input);
+        event.recipes.createCrushing(cleanoutputs, recipe.input).processingTime(recipe.time ?? 200);
     });
 
     // Replace all techreborn ores to require the crushing wheel for dusts
@@ -400,10 +400,9 @@ function crushingRecipes(event) {
             let raw_ore = mod.mod + ":raw_" + ore.name;
             let crushed_ore =
                 "create" +
-                (mod.mod == "ad_astra" ? "astral" : "") +
-                ":crushed_" +
-                ore.name +
-                "_ore";
+                ((mod.mod === "ad_astra" || mod.mod === "yttr") ? "astral" : "") +
+                ":crushed_raw_" +
+                ore.name;
             let outputs = [
                 crushed_ore,
                 Item.of(crushed_ore).withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
@@ -2566,8 +2565,24 @@ function compactingRecipes(event) {
             output: "minecraft:shulker_shell",
             inputs: ["ae2:ender_dust", "8x minecraft:purple_dye"],
         },
+        ///This is for b0b, but the chance doesnt apply in compacting recipes.
+        {
+            output: [
+            { item: "minecraft:sponge", chance: 1 },
+            { item: "minecraft:cod", chance: 0.1 },
+            { item: "minecraft:salmon", chance: 0.1 },
+            { item: "minecraft:tropical_fish", chance: 0.05 },
+            { item: "minecraft:pufferfish", chance: 0.025 },
+            { item: "minecraft:ink_sac", chance: 0.025 },
+        ],
+            inputs: "minecraft:wet_sponge",
+            time: 1500,
+            heat: "",
+            
+        },
+      
     ].forEach((recipe) => {
-        event.recipes.createCompacting(recipe.output, recipe.inputs).heated();
+        event.recipes.createCompacting(recipe.output, recipe.inputs).heatRequirement(recipe.heat ?? "heated").processingTime(recipe.time ?? 200);
     });
 
     event.recipes
