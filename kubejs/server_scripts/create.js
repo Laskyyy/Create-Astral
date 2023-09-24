@@ -306,7 +306,7 @@ function crushingRecipes(event) {
                 cleanoutputs.push(Item.of(output[0]).withChance(output[1]));
             }
         });
-        event.recipes.createCrushing(cleanoutputs, recipe.input);
+        event.recipes.createCrushing(cleanoutputs, recipe.input).processingTime(recipe.time ?? 200);
     });
 
     
@@ -2594,11 +2594,26 @@ function compactingRecipes(event) {
             output: "minecraft:shulker_shell",
             inputs: ["ae2:ender_dust","8x minecraft:purple_dye" ],
         },
+        ///This is for b0b, but the chance doesnt apply in compacting recipes.
+        {
+            output: [
+            { item: "minecraft:sponge", chance: 1 },
+            { item: "minecraft:cod", chance: 0.1 },
+            { item: "minecraft:salmon", chance: 0.1 },
+            { item: "minecraft:tropical_fish", chance: 0.05 },
+            { item: "minecraft:pufferfish", chance: 0.025 },
+            { item: "minecraft:ink_sac", chance: 0.025 },
+        ],
+            inputs: "minecraft:wet_sponge",
+            time: 1500,
+            heat: "",
+            
+        },
 
 
 
     ].forEach((recipe) => {
-        event.recipes.createCompacting(recipe.output, recipe.inputs).heated();
+        event.recipes.createCompacting(recipe.output, recipe.inputs).heatRequirement(recipe.heat ?? "heated").processingTime(recipe.time ?? 200);
     });
 
     event.recipes
