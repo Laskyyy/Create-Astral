@@ -445,7 +445,6 @@ onEvent("block.registry", (event) => {
 			.textureAll('createastral:block/stone_growth_chamber_side')
       .texture('down','createastral:block/stone_growth_chamber')
       .texture('north','createastral:block/stone_growth_chamber')
- })
 
     event
         .create("createastral:andesite_alloy_block", "basic")
