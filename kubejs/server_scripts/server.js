@@ -1054,3 +1054,17 @@ onEvent("player.logged_in", (event) => {
         event.player.give("ftbquests:book");
     }
 });
+
+
+
+onEvent("player.logged_in", event => {
+  if(!event.player.stages.has("read_quest")) {
+   event.player.tell(Text.aqua('Please Read The Quest Book (Hover Over Me!)').underlined().hover("The quest book contains most of all the information needed to progress in this mod pack. Its your friend!, Use the item to remove this message"))
+  }
+})
+
+onEvent("item.right_click", (event) => {
+  if (event.item.id == "ftbquests:book") {
+    event.player.stages.add('read_quest')
+  }
+});
