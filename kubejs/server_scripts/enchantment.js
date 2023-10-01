@@ -321,8 +321,8 @@ onEvent("recipes", (event) => {
             ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "create:diving_helmet",
-                    "create:diving_helmet",
+                    "create:copper_diving_helmet",
+                    "create:copper_diving_helmet",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "xpcrystals:xp_crystal",
@@ -715,8 +715,8 @@ onEvent("recipes", (event) => {
             ["minecraft:book"],
             [
                 event.recipes.createDeploying("minecraft:enchanted_book", [
-                    "create:diving_boots",
-                    "create:diving_boots",
+                    "create:copper_diving_boots",
+                    "create:copper_diving_boots",
                 ]),
                 event.recipes.createDeploying("minecraft:enchanted_book", [
                     "xpcrystals:xp_crystal",

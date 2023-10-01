@@ -4,6 +4,44 @@ onEvent("recipes", (event) => {
         ["create:powdered_obsidian", "#c:dusts/obsidian"],
         ["techreborn:obsidian_dust", "#c:dusts/obsidian"],
         ["createaddition:diamond_grit", "techreborn:diamond_dust"],
+        
+        [
+            { mod: "createbigcannons" },
+            "create:iron_sheet",
+            "dustrial_decor:cast_iron_billet",
+        ],
+        [
+            { mod: "createbigcannons" },
+            "minecraft:iron_ingot",
+            "dustrial_decor:cast_iron_billet",
+        ],
+        [
+            { mod: "createbigcannons" },
+            "minecraft:iron_nugget",
+            "create:zinc_nugget",
+        ],
+        [
+            { mod: "createbigcannons" },
+            "minecraft:quartz",
+            "create:integrated_circuit",
+        ],
+        [
+            { mod: "createbigcannons" },
+            "minecraft:redstone",
+            "create:electron_tube",
+        ],
+        [
+            { mod: "createbigcannons" },
+            "minecraft:iron_bars",
+            "createaddition:iron_wire",
+        ],
+        [
+            { mod: "createbigcannons" },
+            "minecraft:string",
+            "create:sand_paper",
+        ],
+        
+        
         [
             { output: "techreborn:copper_cable" },
             "minecraft:copper_ingot",
