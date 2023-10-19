@@ -263,13 +263,11 @@ function lizardCH3Changes(event) {
     // Remove mechanical crafter requirement from alternator+electric motor,
     //  Making it fully unique to the silver path.
 
-    event.shaped("createaddition:alternator", ["ABA", "CDC", "EFE"], {
+    event.shaped("createaddition:alternator", ["AAA", "CDC", "EAE"], {
         A: "create:iron_sheet",
-        B: "techreborn:red_cell_battery",
         C: "createaddition:copper_spool",
         D: "create:integrated_circuit",
         E: "createaddition:capacitor",
-        F: "techreborn:basic_machine_casing",
     });
 
     event.shaped("createaddition:electric_motor", ["ABA", "CDC", "EFE"], {

@@ -3,7 +3,7 @@
 [general]
 	#Forge Energy conversion rate (in FE/t at 256 RPM).
 	#Range: > 0
-	fe_conversion = 20
+	fe_conversion = 30
 	#Max stress for the Alternator and Electric Motor (in SU at 256 RPM).
 	#Range: > 0
 	baseline_stress = 8192
@@ -42,7 +42,7 @@
 	rolling_mill_processing_duration = 100
 	#Rolling Mill base stress impact.
 	#Range: 0 ~ 1024
-	rolling_mill_stress = 4
+	rolling_mill_stress = 1
 
 #Heater
 [heater]
@@ -65,13 +65,13 @@
 [wires]
 	#Connector max input in FE/t (Energy transfer).
 	#Range: 0 ~ 9223372036854775807
-	connector_max_input = 1024
+	connector_max_input = 2048
 	#Connector max output in FE/t (Energy transfer).
 	#Range: 0 ~ 9223372036854775807
-	connector_max_output = 1024
+	connector_max_output = 2048
 	#Connector internal input buffer in FE.
 	#Range: 0 ~ 9223372036854775807
-	connector_input_capacity = 2048
+	connector_input_capacity = 8096
 	#Max wire length in blocks.
 	#Range: 0 ~ 256
 	wire_length = 16
@@ -83,10 +83,10 @@
 	accumulator_capacity = 400000
 	#Accumulator max output in FE/t (Energy transfer).
 	#Range: 0 ~ 2147483647
-	accumulator_max_output = 512
+	accumulator_max_output = 2048
 	#Accumulator max input in FE/t (Energy transfer).
 	#Range: 0 ~ 2147483647
-	accumulator_max_input = 512
+	accumulator_max_input = 2048
 
 #Tesla Coil
 [tesla_coil]

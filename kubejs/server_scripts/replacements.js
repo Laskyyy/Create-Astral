@@ -2,9 +2,10 @@ onEvent("recipes", (event) => {
     // [?optional object specifying a mod/type, original item, replacement item]
     [
         ["create:powdered_obsidian", "#c:dusts/obsidian"],
+        ["createastral:experience_block", "create:experience_block"],
         ["techreborn:obsidian_dust", "#c:dusts/obsidian"],
         ["createaddition:diamond_grit", "techreborn:diamond_dust"],
-        
+
         [
             { mod: "createbigcannons" },
             "create:iron_sheet",
@@ -36,12 +37,17 @@ onEvent("recipes", (event) => {
             "createaddition:iron_wire",
         ],
         [
+            { output: "createaddition:connector" },
+            "#c:slimeballs",
+            "createaddition:copper_wire",
+        ],
+        [
             { mod: "createbigcannons" },
             "minecraft:string",
             "create:sand_paper",
         ],
-        
-        
+
+
         [
             { output: "techreborn:copper_cable" },
             "minecraft:copper_ingot",
@@ -748,6 +754,20 @@ onEvent("recipes", (event) => {
             { mod: "immersive_aircraft" },
             "minecraft:iron_ingot",
             "minecraft:iron_block",
+        ],
+        [
+            { mod: "createendertransmission" },
+            "minecraft:obsidian",
+            "create:shadow_steel",
+        ],
+        [
+            { mod: "createendertransmission" },
+            "minecraft:ender_eye",
+            "createastral:subatomic_ingot",
+        ],        [
+            { mod: "createendertransmission" },
+            "minecraft:ender_pearl",
+            "minecraft:ender_eye",
         ],
     ].forEach((recipe) => {
         if (recipe.length === 2) {

@@ -4,7 +4,9 @@ onEvent("recipes", (event) => {
 
     //Tech Reborn
     [
-        { output: "techreborn:compressed_plantball" },
+        { output: "techreborn:chunk_loader" },
+        { output: "ae2:spatial_anchor" },
+        { output: "createendertransmission:chunk_loader" },
         { output: "techreborn:compressed_plantball" },
         { output: "techreborn:plantball" },
         { output: "techreborn:grinder" },
@@ -355,10 +357,7 @@ onEvent("recipes", (event) => {
         { output: "immersive_aircraft:engine" },
         { output: "immersive_aircraft:nether_engine" },
         { output: "immersive_aircraft:industrial_gears" },
-        { output: "immersive_aircraft:eco_engine" },
         { output: "immersive_aircraft:large_propeller" },
-        { output: "immersive_aircraft:enhanced_propeller" },
-        { output: "immersive_aircraft:improved_landing_gear" },
         { output: "immersive_aircraft:airship" },
         { output: "immersive_aircraft:gyrodyne" },
         { output: "immersive_aircraft:biplane" },
