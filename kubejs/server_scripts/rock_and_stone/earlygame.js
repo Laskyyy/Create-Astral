@@ -84,4 +84,50 @@ onEvent("recipes", event => {
         Item.of("techreborn:raw_tin").withChance(0.1),
         Item.of("minecraft:clay_ball").withChance(0.2)
     ], "create:asurine")
+    //crimsite - base
+    let inter = "createastral:incomplete_crimsite" //feel free to change this
+    event.recipes.createSequencedAssembly([
+        Item.of("create:crimsite").withChance(16.0),
+        Item.of("minecraft:flint").withChance(4.0)//this results in 80% success chance
+    ], "minecraft:flint", [ //input
+        event.recipes.createFilling(inter, [inter, Fluid.of("minecraft:lava", FULL_BUCKET_AMMOUNT / 10)]),
+        event.recipes.createDeploying(inter, [inter, Item.of("minecraft:flint")]),
+        event.recipes.createPressing(inter, inter) //smol changes to default crimsite
+    ]).transitionalItem(inter).loops(2)
+    //crimsite + netherrack - upgraded
+    event.recipes.createMixing([
+        Item.of("minecraft:netherrack"),
+        Item.of("techreborn:small_pile_of_sulfur_dust").withChance(0.4)
+    ], [
+        Item.of("create:scoria"),
+        Item.of("minecraft:red_sand"),
+        Fluid.of("minecraft:lava", FULL_BUCKET_AMMOUNT / 10)
+    ])
+    event.recipes.createMixing([
+        Item.of("minecraft:netherrack"),
+        Item.of("techreborn:small_pile_of_cinnabar_dust").withChance(0.75)
+    ], [
+        Item.of("create:scoria"),
+        Item.of("minecraft:red_dye"),
+        Fluid.of("minecraft:lava", FULL_BUCKET_AMMOUNT / 20)
+    ]).heated()
+    event.recipes.createCrushing([
+        Item.of("techreborn:netherrack_dust"),
+        Item.of("techreborn:netherrack_dust").withChance(0.75),
+        Item.of("techreborn:granite_dust").withChance(0.4)
+    ], [
+        Item.of("minecraft:netherrack")
+    ])
+    event.recipes.createMilling([
+        Item.of("techreborn:netherrack_dust"),
+        Item.of("techreborn:netherrack_dust").withChance(0.3)
+    ])
+    event.recipes.createCompacting([
+        Item.of("2x create:crimsite"),
+        Fluid.of("minecraft:lava", FULL_BUCKET_AMMOUNT / 2)
+    ], [
+        Item.of("2x minecraft:basalt"),
+        Item.of("techreborn:netherrack_dust"),
+        Item.of("2x minecraft:flint")
+    ])
 })
