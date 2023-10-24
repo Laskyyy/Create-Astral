@@ -1,3 +1,5 @@
+var FULL_BUCKET_AMMOUNT = 81000;
+var INGOT_FLUID_AMMOUNT = 9000;
 onEvent("recipes", event => {
     //base method
     event.custom({
@@ -8,7 +10,7 @@ onEvent("recipes", event => {
         "cast_consumed": true,
         "fluid": {
           "tag": "minecraft:lava",
-          "amount": 1000
+          "amount": FULL_BUCKET_AMMOUNT
         },
         "result": "create:veridium",
         "cooling_time": 60
@@ -33,7 +35,7 @@ onEvent("recipes", event => {
         "techreborn:olivine_dust",
         "techreborn:olivine_dust",
         "techreborn:olivine_dust",
-        Fluid.of("minecraft:lava", 200)
+        Fluid.of("minecraft:lava", FULL_BUCKET_AMMOUNT / 5)
     ])
     //ochrum - base method
     event.recipes.createCompacting(Item.of("create:ochrum"), [
@@ -55,7 +57,7 @@ onEvent("recipes", event => {
     event.recipes.createCompacting(Item.of("2x create:ochrum"), [
         Item.of("2x create:limestone"),
         Item.of("6x minecraft:pyrite_dust"),
-        Fluid.of("kubejs:shimmer", 100)
+        Fluid.of("kubejs:shimmer", FULL_BUCKET_AMMOUNT / 10)
     ])
     //asurine - base method
     //time is intentional - gotta deal with logistics in this one (100 secs btw)
@@ -67,7 +69,7 @@ onEvent("recipes", event => {
         "cast_consumed": true,
         "fluid": {
           "tag": "minecraft:water",
-          "amount": 1000
+          "amount": FULL_BUCKET_AMMOUNT
         },
         "result": "tconstruct:seared_brick",
         "cooling_time": 2000
