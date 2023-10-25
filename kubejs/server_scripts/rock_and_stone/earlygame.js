@@ -130,4 +130,100 @@ onEvent("recipes", event => {
         Item.of("techreborn:netherrack_dust"),
         Item.of("2x minecraft:flint")
     ])
+    //red sandstone - base
+    //sand
+    event.recipes.createCrushing([
+        Item.of("minecraft:gravel"),
+        Item.of("techreborn:andesite_dust").withChance(0.2),
+        Item.of("techreborn:granite_dust").withChance(0.15),
+        Item.of("techreborn:diorite_dust").withChance(0.15)
+    ], [
+        Item.of("minecraft:cobblestone")
+    ])
+    event.recipes.createMilling("minecraft:gravel", "minecraft:cobblestone")
+    //cant find the grinder json rq, so I'll treat it as midgame and not bother
+    //sand
+    event.recipes.createMixing([
+        Item.of("minecraft:sand"),
+        Item.of("minecraft:clay_ball").withChance(0.2)
+    ], [
+        Item.of("2x minecraft:gravel"),
+        Fluid.of("minecraft:water", FULL_BUCKET_AMMOUNT)  
+    ])
+    event.recipes.createMilling([
+        Item.of("minecraft:sand").withChance(0.33),
+        Item.of("techreborn:flint_dust").withChance(0.2),
+        Item.of("techreborn:small_pile_of_yellow_garnet_dust").withChance(0.4)
+    ], [
+        Item.of("minecraft:gravel")
+    ])
+    event.recipes.createCrushing([
+        Item.of("minecraft:sand"),
+        Item.of("minecraft:sand").withChance(0.25),
+        Item.of("minecraft:clay_ball").withChance(0.1)
+    ])
+    //red sand
+    event.recipes.createCompacting([
+        Item.of("minecraft:red_sand"),
+    ], [
+        Item.of("minecraft:sand"),
+        Item.of("techreborn:granite_dust")
+    ])
+    event.recipes.createCompacting([
+        Item.of("minecraft:red_sand"),
+        Item.of("minecraft:red_sand").withChance(0.5)
+    ], [
+        Item.of("minecraft:sand"),
+        Item.of("minecraft:red_dye"),
+        Item.of("techreborn:granite_dust")
+    ])
+    //red sandstone
+    event.recipes.createCompacting([
+        Item.of("minecraft:red_sandstone")
+    ], [
+        Item.of("4x minecraft:red_sand")
+    ])
+    event.custom({
+        "type": "tconstruct:casting_basin",
+        "cast": {
+          "item": "minecraft:red_sand"
+        },
+        "cast_consumed": true,
+        "fluid": {
+          "tag": "tconstruct:molten_clay",
+          "amount": FULL_BUCKET_AMMOUNT / 10
+        },
+        "result": "minecraft:red_sandstone",
+        "cooling_time": 100
+      })
+    //outputs of our sandstone - base
+    event.recipes.createCrushing([
+        Item.of("create:raw_zinc").withChance(0.33),
+        Item.of("techreborn:yellow_garnet").withChance(0.25)
+    ], [
+        Item.of("minecraft:chiseled_red_sandstone")
+    ]),
+    event.recipes.createMilling([
+        Item.of("create:raw_zinc").withChance(0.2)
+    ], [
+        Item.of("minecraft:chiseled_red_sandstone")
+    ])
+    event.recipes.createMixing([
+        Item.of("create:raw_zinc").withChance(0.5),
+        Item.of("techreborn:grossular_dust").withChance(0.25),
+        Item.of("techreborn:yellow_garnet").withChance(0.4)
+    ], [
+        Item.of("minecraft:chiseled_red_sandstone"),
+        Item.of("techreborn:stone_dust"),
+        Fluid.of("minecraft:lava", FULL_BUCKET_AMMOUNT / 10)
+    ])
+    event.recipes.createMixing([
+        Item.of("create:raw_zinc"),
+        Item.of("techreborn:yellow_garnet").withChance(0.5),
+        Item.of("techreborn:red_garnet").withChance(0.3)
+    ], [
+        Item.of("minecraft:chiseled_red_sandstone"),
+        Item.of("techreborn:sodalite_dust"),
+        Fluid.of("kubejs:shimmer", FULL_BUCKET_AMMOUNT / 10)
+    ]).heated()
 })
