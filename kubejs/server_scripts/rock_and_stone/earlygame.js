@@ -226,4 +226,5 @@ onEvent("recipes", event => {
         Item.of("techreborn:sodalite_dust"),
         Fluid.of("kubejs:shimmer", FULL_BUCKET_AMMOUNT / 10)
     ]).heated()
+    event.recipes.createSplashing(Item.of("create:zinc_nugget").withChance(0.6), "minecraft:red_sand")
 })
