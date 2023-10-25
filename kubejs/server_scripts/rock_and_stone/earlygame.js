@@ -111,6 +111,15 @@ onEvent("recipes", event => {
         Item.of("minecraft:red_dye"),
         Fluid.of("minecraft:lava", FULL_BUCKET_AMMOUNT / 20)
     ]).heated()
+    event.recipes.createMixing([
+        Item.of("minecraft:netherrack"),
+        Item.of("minecraft:netherrack").withChance(0.5),
+        Item.of("techreborn:sulfur_dust").withChance(0.3)
+    ], [
+        Item.of("create:scoria"),
+        Item.of("minecraft:red_sand"),
+        Fluid.of("minecraft:lava", FULL_BUCKET_AMMOUNT / 20)
+    ]).heated()
     event.recipes.createCrushing([
         Item.of("techreborn:netherrack_dust"),
         Item.of("techreborn:netherrack_dust").withChance(0.75),
