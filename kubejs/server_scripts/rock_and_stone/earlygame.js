@@ -227,4 +227,42 @@ onEvent("recipes", event => {
         Fluid.of("kubejs:shimmer", FULL_BUCKET_AMMOUNT / 10)
     ]).heated()
     event.recipes.createSplashing(Item.of("create:zinc_nugget").withChance(0.6), "minecraft:red_sand")
+    //diorite time - a la Bob
+    event.recipes.createCompacting([
+        Item.of("minecraft:diorite")
+    ], [
+        Item.of("minecraft:cobblestone"),
+        Item.of("techreborn:diorite_dust"),
+        Fluid.of("tconstruct:molten_quartz", FULL_BUCKET_AMMOUNT / 40) //=25 mb
+    ])
+    event.recipes.createCompacting([
+        Item.of("2x minecraft:diorite")
+    ], [
+        Item.of("techreborn:diorite_dust"),
+        Item.of("minecraft:cobblestone"),
+        Fluid.of("tconstruct:molten_quartz", FULL_BUCKET_AMMOUNT / 25) //=40 mb
+    ]).heated()
+    //making the diorite loop whole
+    event.recipes.createMilling([
+        Item.of("techreborn:diorite_dust")
+    ], [
+        Item.of("minecraft:diorite")
+    ])
+    event.recipes.createCrushing([
+        Item.of("techreborn:diorite_dust"),
+        Item.of("techreborn:diorite_dust").withChance(0.25),
+        Item.of("techreborn:marble_dust").withChance(0.2)
+    ], [
+        Item.of("minecraft:diorite")
+    ])
+    //insert grinding for a guaranteed 2 diorite dust here
+    let downloadbattlecats = "kubejs:incomplete_quartz"
+    event.recipes.createSequencedAssembly([
+        Item.of("minecraft:nether_quartz").withChance(16.0),
+        Item.of("2x minecraft:nether_quartz").withChance(4.0) //20% chance for double quartz, for fun 
+    ], "minecraft:diorite", [ //input
+        event.recipes.createPressing(downloadbattlecats, downloadbattlecats),
+        event.recipes.createSawing(downloadbattlecats, downloadbattlecats),
+        event.recipes.createDeploying(downloadbattlecats, [downloadbattlecats, "create:sandpaper"])
+    ]).transitionalItem(downloadbattlecats).loops(1)
 })
