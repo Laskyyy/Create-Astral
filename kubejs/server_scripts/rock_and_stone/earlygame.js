@@ -239,7 +239,7 @@ onEvent("recipes", event => {
         Item.of("2x minecraft:diorite")
     ], [
         Item.of("techreborn:diorite_dust"),
-        Item.of("minecraft:cobblestone"),
+        Item.of("2x minecraft:cobblestone"),
         Fluid.of("tconstruct:molten_quartz", FULL_BUCKET_AMMOUNT / 25) //=40 mb
     ]).heated()
     //making the diorite loop whole
@@ -250,7 +250,7 @@ onEvent("recipes", event => {
     ])
     event.recipes.createCrushing([
         Item.of("techreborn:diorite_dust"),
-        Item.of("techreborn:diorite_dust").withChance(0.25),
+        Item.of("techreborn:diorite_dust").withChance(0.5),
         Item.of("techreborn:marble_dust").withChance(0.2)
     ], [
         Item.of("minecraft:diorite")
@@ -265,4 +265,101 @@ onEvent("recipes", event => {
         event.recipes.createSawing(downloadbattlecats, downloadbattlecats),
         event.recipes.createDeploying(downloadbattlecats, [downloadbattlecats, "create:sandpaper"])
     ]).transitionalItem(downloadbattlecats).loops(1)
+    //tuff a la bob
+    let fortniteshit = "kubejs:incomplete_tuff"
+    event.recipes.createSequencedAssembly([
+        Item.of("minecraft:tuff")
+    ], "minecraft:cobblestone", [
+        event.recipes.createDeploying(fortniteshit, [fortniteshit, "techreborn:small_pile_of_granite_dust"]),
+        event.recipes.createDeploying(fortniteshit, [fortniteshit, "techreborn:small_pile_of_andesite_dust"]),
+        event.recipes.createDeploying(fortniteshit, [fortniteshit, "techreborn:small_pile_of_diorite_dust"])
+    ]).transitionalItem(fortniteshit).loops(1)
+    event.custom({
+        "type":"createaddition:charging",
+        "input": {
+            "item": "minecraft:tuff",
+            "count": 1
+        },
+        "result": {
+            "item": "techreborn:ashes",
+            "count": 2
+        },
+        "energy": 10000
+    })
+    event.recipes.createSplashing([
+        Item.of("minecraft:gold_nugget").withChance(0.2),
+        Item.of("create:zinc_nugget").withChance(0.225),
+        Item.of("create:copper_nugget").withChance(0.3),
+        Item.of("techreborn:tin_nugget").withChance(0.25)
+    ], [
+        "techreborn:ashes"
+    ])
+    //granite a la bob
+    event.recipes.createCompacting([
+        Item.of("minecraft:granite"),
+        Fluid.of("techreborn:sodium_persulfate", FULL_BUCKET_AMMOUNT / 100).withChance(0.35)
+    ], [
+        Item.of("minecraft:cobblestone"),
+        Fluid.of("minecraft:lava", FULL_BUCKET_AMMOUNT / 40),
+        Item.of("minecraft:red_sand")
+    ]) //sodium persulfate increases yields in industrial grinder in vanilla TR
+    event.recipes.createCompacting([
+        Item.of("2x minecraft:granite"),
+        Fluid.of("techreborn:sodium_persulfate", FULL_BUCKET_AMMOUNT / 50).withChance(0.6)
+    ], [
+        Item.of("2x minecraft:cobblestone"),
+        Fluid.of("minecraft:lava", FULL_BUCKET_AMMOUNT / 25), //=40 mb
+        Item.of("minecraft:red_sand")
+    ])
+    let intermediate = "kubejs:incomplete_granite"
+    event.recipes.createSequencedAssembly([
+        Item.of("techreborn:ruby").withChance(6.0),
+        Item.of("minecraft:raw_gold").withChance(2.0),
+        Item.of("createastral:cinnabar").withChance(4.0) //50% ruby, 36% cinnabar, 14% gold
+    ], "minecraft:granite", [
+        event.recipes.createPressing(intermediate, intermediate),
+        event.recipes.createSawing(intermediate, intermediate),
+        event.recipes.createDeploying(intermediate, [intermediate, "create:sandpaper"])
+    ]).transitionalItem(intermediate).loops(2)
+    //drip
+    event.recipes.createMixing([
+        Item.of("10x minecraft:clay_ball")
+    ], [
+        Fluid.of("minecraft:water", FULL_BUCKET_AMMOUNT / 2),
+        Item.of("minecraft:sand"),
+        Item.of("minecraft:gravel"),
+        Item.of("minecraft:dripstone_spike") //this id is probably wrong
+    ])
+    event.recipes.createMixing([
+        Item.of("6x techreborn:clay_dust") //since water takes up mass it would give more wet clay than dry
+    ], [
+        Item.of("minecraft:gravel"),
+        Item.of("minecraft:sand"),
+        Item.of("minecraft:dripstone_spike")
+    ])
+    //stone dusts need an extra recipe lol
+    event.custom({
+        "type": "createaddition:charging",
+        "input": {
+            "item": "minecraft:stone",
+            "count": 1
+        },
+        "result": {
+            "item": "techreborn:stone_dust",
+            "count": 10
+        },
+        "energy": 5000
+    })
+    event.custom({
+        type: "techreborn:grinder",
+        power: 10, //in E/tick
+        time: 10, //in seconds I believe
+        input: {
+            item: "minecraft:smooth_stone"
+        },
+        result: {
+            item: "techreborn:stone_dust",
+            count: 2
+        }
+    }) //this recipe should use 2000 E
 })
