@@ -95,42 +95,7 @@ onEvent("recipes", event => {
         event.recipes.createPressing(inter, inter) //smol changes to default crimsite
     ]).transitionalItem(inter).loops(2)
     //crimsite + netherrack - upgraded
-    event.recipes.createMixing([
-        Item.of("minecraft:netherrack"),
-        Item.of("techreborn:small_pile_of_sulfur_dust").withChance(0.4)
-    ], [
-        Item.of("create:scoria"),
-        Item.of("minecraft:red_sand"),
-        Fluid.of("minecraft:lava", FULL_BUCKET_AMMOUNT / 10)
-    ])
-    event.recipes.createMixing([
-        Item.of("minecraft:netherrack"),
-        Item.of("techreborn:small_pile_of_cinnabar_dust").withChance(0.75)
-    ], [
-        Item.of("create:scoria"),
-        Item.of("minecraft:red_dye"),
-        Fluid.of("minecraft:lava", FULL_BUCKET_AMMOUNT / 20)
-    ]).heated()
-    event.recipes.createMixing([
-        Item.of("minecraft:netherrack"),
-        Item.of("minecraft:netherrack").withChance(0.5),
-        Item.of("techreborn:sulfur_dust").withChance(0.3)
-    ], [
-        Item.of("create:scoria"),
-        Item.of("minecraft:red_sand"),
-        Fluid.of("minecraft:lava", FULL_BUCKET_AMMOUNT / 20)
-    ]).heated()
-    event.recipes.createCrushing([
-        Item.of("techreborn:netherrack_dust"),
-        Item.of("techreborn:netherrack_dust").withChance(0.75),
-        Item.of("techreborn:granite_dust").withChance(0.4)
-    ], [
-        Item.of("minecraft:netherrack")
-    ])
-    event.recipes.createMilling([
-        Item.of("techreborn:netherrack_dust"),
-        Item.of("techreborn:netherrack_dust").withChance(0.3)
-    ])
+
     event.recipes.createCompacting([
         Item.of("2x create:crimsite"),
         Fluid.of("minecraft:lava", FULL_BUCKET_AMMOUNT / 2)
@@ -371,4 +336,80 @@ onEvent("recipes", event => {
             count: 2
         }
     }) //this recipe should use 2000 E
+    //nether blocks time
+    function nethershit(event) {
+        //netherrack
+        event.recipes.createMixing([
+            Item.of("minecraft:netherrack"),
+            Item.of("techreborn:small_pile_of_sulfur_dust").withChance(0.4)
+        ], [
+            Item.of("create:scoria"),
+            Item.of("minecraft:red_sand"),
+            Fluid.of("minecraft:lava", FULL_BUCKET_AMMOUNT / 10)
+        ])
+        event.recipes.createMixing([
+            Item.of("minecraft:netherrack"),
+            Item.of("techreborn:small_pile_of_cinnabar_dust").withChance(0.75)
+        ], [
+            Item.of("create:scoria"),
+            Item.of("minecraft:red_dye"),
+            Fluid.of("minecraft:lava", FULL_BUCKET_AMMOUNT / 20)
+        ]).heated()
+        event.recipes.createMixing([
+            Item.of("minecraft:netherrack"),
+            Item.of("minecraft:netherrack").withChance(0.5),
+            Item.of("techreborn:sulfur_dust").withChance(0.3)
+        ], [
+            Item.of("create:scoria"),
+            Item.of("minecraft:red_sand"),
+            Fluid.of("minecraft:lava", FULL_BUCKET_AMMOUNT / 20)
+        ]).heated()
+        event.recipes.createCrushing([
+            Item.of("techreborn:netherrack_dust"),
+            Item.of("techreborn:netherrack_dust").withChance(0.75),
+            Item.of("techreborn:granite_dust").withChance(0.4)
+        ], [
+            Item.of("minecraft:netherrack")
+        ])
+        event.recipes.createMilling([
+            Item.of("techreborn:netherrack_dust"),
+            Item.of("techreborn:netherrack_dust").withChance(0.3)
+        ], "minecraft:netherrack")
+    //crimson nylium
+    let i = "kubejs:incomplete_crimson_nylium"
+    event.recipes.createSequencedAssembly([
+        Item.of("minecraft:crimson_nylium")
+    ], "minecraft:netherrack", [
+        event.recipes.createDeploying(i, [i, "minecraft:crimson_fungus"]),
+        event.recipes.createFilling(i, [i, Fluid.of("kubejs:shimmer", FULL_BUCKET_AMMOUNT / 40)]),
+        event.recipes.createDeploying(i, [i, "minecraft:nether_wart"])
+    ]).transitionalItem(i).loops(1)
+    event.recipes.createCompacting([
+        Item.of("2x minecraft:crimson_nylium"),
+        Fluid.of("techreborn:methane", FULL_BUCKET_AMMOUNT / 50).withChance(0.5)
+    ], [
+        Item.of("minecraft:crimson_fungus"),
+        Item.of("2x minecraft:netherrack"),
+        Item.of("minecraft:nether_wart"),
+        Fluid.of("kubejs:shimmer", FULL_BUCKET_AMMOUNT / 20)
+    ]).heated()
+    //warped nylium
+    let jeoma = "kubejs:incomplete_warped_nylium"
+    event.recipes.createSequencedAssembly([
+        Item.of("minecraft:warped_nylium")
+    ], "minecraft:netherrack", [
+        event.recipes.createDeploying(jeoma, [jeoma, "minecraft:warped_fungus"]),
+        event.recipes.createFilling(jeoma, [jeoma, Fluid.of("kubejs:shimmer", FULL_BUCKET_AMMOUNT / 40)]),
+        event.recipes.createDeploying(jeoma, [jeoma, "minecraft:nether_wart"])
+    ]).transitionalItem(jeoma).loops(1)
+    event.recipes.createCompacting([
+        Item.of("2x minecraft:warped_nylium"),
+        Fluid.of("techreborn:methane", FULL_BUCKET_AMMOUNT / 50).withChance(0.5)
+    ], [
+        Item.of("minecraft:warped_fungus"),
+        Item.of("2x minecraft:netherrack"),
+        Item.of("minecraft:nether_wart"),
+        Fluid.of("kubejs:shimmer", FULL_BUCKET_AMMOUNT / 20)
+    ]).heated()
+    }
 })
