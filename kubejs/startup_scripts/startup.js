@@ -398,7 +398,7 @@ onEvent('item.registry', event => {
        .food(food => {
           food
           .hunger(0)
-          .saturation(00)
+          .saturation(0)
           .effect('drinkbeer:drunk', 3000, 0, 1)
           .alwaysEdible()
 });

@@ -837,6 +837,19 @@ onEvent("recipes", (event) => {
 
     //// ASSORTED CRAFTING BENCH RECIPES
 
+    //sponge recipes
+    event.shaped("minecraft:heart_of_the_sea", ["ABA", "CDC", "ABA"], {
+        A: "minecraft:glowstone",
+        B: "minecraft:lapis_block",
+        C: "techreborn:silver_ingot",
+        D: "minecraft:diamond_block",
+    });
+
+    event.shaped("minecraft:sponge", ["ABA", "BBB", "ABA"], {
+        A: "techreborn:sponge_piece",
+        B: "#c:slimeballs",
+    });
+
     //dispenser recipe
     event.shaped("minecraft:dispenser", ["AB ", "ACB", "AB "], {
         A: "minecraft:string",
@@ -1054,3 +1067,49 @@ onEvent("player.logged_in", (event) => {
         event.player.give("ftbquests:book");
     }
 });
+
+// Listen to server recipe event
+onEvent('recipes', event => {
+    event.custom({
+      type: 'create:compacting',
+      ingredients: [
+        Ingredient.of('minecraft:wet_sponge').toJson()
+      ],
+      results: [
+        Item.of('minecraft:sponge').toResultJson(),
+        Item.of('minecraft:cod').withChance(0.25).toResultJson(),
+        Item.of('minecraft:salmon').withChance(0.25).toResultJson(),
+        Item.of('minecraft:tropical_fish').withChance(0.2).toResultJson(),
+        Item.of('minecraft:pufferfish').withChance(0.15).toResultJson(),
+        Item.of('minecraft:ink_sac').withChance(0.15).toResultJson(),
+      ],
+      processingTime: 10
+    })
+
+    //adding composting recipes for coral variants
+    onEvent('recipes.compostables', event => {
+  
+        const coral = [
+          {type: "tube"},
+          {type: "brain"},
+          {type: "bubble"},
+          {type: "fire"},
+          {type: "horn"}
+        ].forEach(coral => {
+            //normal coral
+            event.add("minecraft:"+ coral.type + "_coral", 0.30)
+            event.add("minecraft:dead_"+ coral.type + "_coral", 0.50)
+        
+            //coral fans
+            event.add("minecraft:"+ coral.type + "_coral_fan", 0.30)
+            event.add("minecraft:dead_"+ coral.type + "_coral_fan", 0.50)
+        
+            //coral blocks
+            event.add("minecraft:"+ coral.type + "_coral_block", 0.30)
+            event.add("minecraft:dead_"+ coral.type + "_coral_block", 0.50)
+          })
+          //if it breaks, blame b0b, (nah blame me :) )
+          //blame b0b :0Blush:
+        })
+
+})

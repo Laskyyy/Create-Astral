@@ -27,7 +27,9 @@ onEvent("recipes", (event) => {
             ],
         });
     }
+    
     //Compressor
+
     event.custom({
         type: "techreborn:compressor",
         power: 10,
@@ -41,23 +43,6 @@ onEvent("recipes", (event) => {
         results: [
             {
                 item: "createaddition:biomass",
-                count: 1,
-            },
-        ],
-    });
-    event.custom({
-        type: "techreborn:compressor",
-        power: 10,
-        time: 600,
-        ingredients: [
-            {
-                item: "create:sturdy_sheet",
-                count: 16,
-            },
-        ],
-        results: [
-            {
-                item: "ad_astra:rocket_fin",
                 count: 1,
             },
         ],

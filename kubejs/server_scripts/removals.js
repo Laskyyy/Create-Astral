@@ -4,6 +4,8 @@ onEvent("recipes", (event) => {
 
     //Tech Reborn
     [
+        { input: "techreborn:sponge_piece" },
+        { output: "techreborn:sponge_piece" },
         { output: "techreborn:compressed_plantball" },
         { output: "techreborn:compressed_plantball" },
         { output: "techreborn:plantball" },
