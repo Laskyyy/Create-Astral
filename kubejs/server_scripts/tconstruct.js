@@ -37,6 +37,18 @@ onEvent("recipes", (event) => {
             cooling_time: 180,
             cast: null,
         },
+        {
+            fluid: ["tconstruct:ender_slime", FULL_BUCKET_AMMOUNT],
+            result: "tconstruct:ender_slime_vine",
+            cooling_time: 80,
+            cast: ["minecraft:vine", true],
+        },
+        {
+            fluid: ["tconstruct:sky_slime", FULL_BUCKET_AMMOUNT],
+            result: "tconstruct:sky_slime_vine",
+            cooling_time: 80,
+            cast: ["minecraft:vine", true],
+        }
     ].forEach((recipe) => {
         event.custom({
             type: "tconstruct:casting_basin",
