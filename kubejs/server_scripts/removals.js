@@ -7,6 +7,8 @@ onEvent("recipes", (event) => {
         { output: "techreborn:chunk_loader" },
         { output: "ae2:spatial_anchor" },
         { output: "createendertransmission:chunk_loader" },
+        { input: "techreborn:sponge_piece" },
+        { output: "techreborn:sponge_piece" },
         { output: "techreborn:compressed_plantball" },
         { output: "techreborn:plantball" },
         { output: "techreborn:grinder" },
