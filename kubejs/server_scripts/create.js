@@ -41,6 +41,11 @@ function millingRecipes(event) {
         ["minecraft:granite", "create:copper_nugget", 0.5],
         ["minecraft:flint", "techreborn:andesite_dust", 1],
         ["minecraft:iron_nugget", "techreborn:andesite_dust", 0.75],
+        ["minecraft:tube_coral_block", "2x minecraft:blue_dye", 1],
+        ["minecraft:brain_coral_block", "2x minecraft:pink_dye", 1],
+        ["minecraft:bubble_coral_block", "2x minecraft:purple_dye", 1],
+        ["minecraft:fire_coral_block", "2x minecraft:red_dye", 1],
+        ["minecraft:horn_coral_block", "2x minecraft:yellow_dye", 1],
     ].forEach((recipe) => {
         event.recipes.createMilling(
             [Item.of(recipe[1]).withChance(recipe[2])],
@@ -62,6 +67,97 @@ function crushingRecipes(event) {
     //      ["Item", Chance],
     //      ...
     [
+        {
+            input: "minecraft:dead_tube_coral_block",
+            outputs: [
+                ["1x techreborn:calcite_dust", 1],
+            ]
+        },
+        {
+            input: "minecraft:dead_brain_coral_block",
+            outputs: [
+                ["1x techreborn:calcite_dust", 1],
+            ]
+        },
+        {
+            input: "minecraft:dead_bubble_coral_block",
+            outputs: [
+                ["1x techreborn:calcite_dust", 1],
+            ]
+        },
+        {
+            input: "minecraft:dead_fire_coral_block",
+            outputs: [
+                ["1x techreborn:calcite_dust", 1],
+            ]
+        },
+        {
+            input: "minecraft:dead_horn_coral_block",
+            outputs: [
+                ["1x techreborn:calcite_dust", 1],
+            ]
+        },
+        {
+            input: "minecraft:tube_coral_block",
+            outputs: [
+                ["1x minecraft:blue_dye", 1],
+                ["2x minecraft:blue_dye", 0.5],
+                ["1x minecraft:prismarine_shard", 0.1],
+                ["1x minecraft:lapis_lazuli", 0.02],
+                ["1x techreborn:calcite_dust", 0.1],
+                ["1x minecraft:tube_coral", 0.25],
+                ["1x minecraft:tube_coral_fan", 0.25],
+            ],
+        },
+        {
+            input: "minecraft:brain_coral_block",
+            outputs: [
+                ["1x minecraft:pink_dye", 1],
+                ["2x minecraft:pink_dye", 0.5],
+                ["1x tconstruct:pig_iron_nugget", 0.1],
+                ["1x farmersdelight:ham", 0.02],
+                ["1x techreborn:calcite_dust", 0.1],
+                ["1x minecraft:brain_coral", 0.25],
+                ["1x minecraft:brain_coral_fan", 0.25],
+            ],
+        },
+        {
+            input: "minecraft:bubble_coral_block",
+            outputs: [
+                ["1x minecraft:purple_dye", 1],
+                ["2x minecraft:purple_dye", 0.5],
+                ["1x minecraft:popped_chorus_fruit", 0.1],
+                ["1x techreborn:ender_pearl_small_dust", 0.1],
+                ["1x techreborn:calcite_dust", 0.1],
+                ["1x minecraft:bubble_coral", 0.25],
+                ["1x minecraft:bubble_coral_fan", 0.25],
+            ],
+        },
+        {
+            input: "minecraft:fire_coral_block",
+            outputs: [
+                ["1x minecraft:red_dye", 1],
+                ["2x minecraft:red_dye", 0.5],
+                ["1x minecraft:blaze_powder", 0.05],
+                ["1x tconstruct:blood_slime_ball", 0.05],
+                ["1x techreborn:calcite_dust", 0.1],
+                ["1x minecraft:fire_coral", 0.25],
+                ["1x minecraft:fire_coral_fan", 0.25],
+            ],
+        },
+        {
+            input: "minecraft:horn_coral_block",
+            outputs: [
+                ["1x minecraft:yellow_dye", 1],
+                ["2x minecraft:yellow_dye", 0.5],
+                ["1x techreborn:sponge_piece", 0.15],
+                ["1x minecraft:sea_pickle", 0.1],
+                ["1x techreborn:calcite_dust", 0.1],
+                ["1x minecraft:horn_coral", 0.25],
+                ["1x minecraft:horn_coral_fan", 0.25],
+            ],
+        },
+        
         {
             input: "minecraft:cobbled_deepslate",
             outputs: [
@@ -1280,6 +1376,77 @@ function mixingRecipes(event) {
     // Heat: "" = no heat, "heated", or "superheated"
     // Time: Mixing time in ticks
     [
+        //mixing recipes for coral
+        {
+            output: "minecraft:tube_coral_block",
+            input: [
+                [ "minecraft:tropical_fish", "minecraft:pufferfish"],
+                "3x minecraft:kelp",
+                "minecraft:blue_dye",
+                {
+                    fluid: "kubejs:shimmer",
+                    amount: FULL_BUCKET_AMMOUNT / 10,
+                },
+            ],
+            heat: "",
+            time: 100,
+        },
+        {
+            output: "minecraft:brain_coral_block",
+            input: [
+                [ "minecraft:tropical_fish", "minecraft:pufferfish"],
+                "3x minecraft:kelp",
+                "minecraft:pink_dye",
+                {
+                    fluid: "kubejs:shimmer",
+                    amount: FULL_BUCKET_AMMOUNT / 10,
+                },
+            ],
+            heat: "",
+            time: 100,
+        },
+        {
+            output: "minecraft:bubble_coral_block",
+            input: [
+                [ "minecraft:tropical_fish", "minecraft:pufferfish"],
+                "3x minecraft:kelp",
+                "minecraft:purple_dye",
+                {
+                    fluid: "kubejs:shimmer",
+                    amount: FULL_BUCKET_AMMOUNT / 10,
+                },
+            ],
+            heat: "",
+            time: 100,
+        },
+        {
+            output: "minecraft:fire_coral_block",
+            input: [
+                [ "minecraft:tropical_fish", "minecraft:pufferfish"],
+                "3x minecraft:kelp",
+                "minecraft:red_dye",
+                {
+                    fluid: "kubejs:shimmer",
+                    amount: FULL_BUCKET_AMMOUNT / 10,
+                },
+            ],
+            heat: "",
+            time: 100,
+        },
+        {
+            output: "minecraft:horn_coral_block",
+            input: [
+                [ "minecraft:tropical_fish", "minecraft:pufferfish"],
+                "3x minecraft:kelp",
+                "minecraft:yellow_dye",
+                {
+                    fluid: "kubejs:shimmer",
+                    amount: FULL_BUCKET_AMMOUNT / 10,
+                },
+            ],
+            heat: "",
+            time: 100,
+        },    
         {
             output: "2x minecraft:blaze_powder",
             input: ["minecraft:blaze_rod"],
@@ -1831,7 +1998,18 @@ function mixingRecipes(event) {
             input: ["kubejs:experience_ingot"],
             heat: "heated",
             time: 100,
-        },
+	},
+    {
+        output: "8x minecraft:wet_sponge",
+        input: [
+            "8x minecraft:yellow_dye",
+            "2x minecraft:black_dye",
+            "1x minecraft:heart_of_the_sea",
+            { fluid: "minecraft:water", amount: FULL_BUCKET_AMMOUNT / 1 },
+        ],
+        heat: "",
+        time: 500,
+    },
     ].forEach((recipe) => {
         event.recipes
             .createMixing(recipe.output, recipe.input)
@@ -1851,7 +2029,7 @@ function cuttingRecipes(event) {
         ["vinery:stripped_old_cherry_log", "6x vinery:cherry_planks"],
         ["vinery:cherry_wood", "vinery:stripped_cherry_wood"],
         ["vinery:old_cherry_wood", "vinery:stripped_old_cherry_wood"],
-        ["ad_astra:glacian_log", "ad_astra:stripped_glacian_log"],
+        ["ad_astra:glacian_log","ad_astra:stripped_glacian_log"],
         ["ad_astra:stripped_glacian_log", "6x ad_astra:glacian_planks"],
     ].forEach((recipe) => {
         event.recipes.createCutting(recipe[1], recipe[0]);
@@ -1864,6 +2042,20 @@ function hauntingRecipes(event) {
         ["2x minecraft:charcoal", "minecraft:coal"],
         ["minecraft:sand", "minecraft:soul_sand"],
         ["minecraft:soul_sand", "minecraft:netherrack"],
+
+        //dead coral blocks
+        ["minecraft:tube_coral_block", "minecraft:dead_tube_coral_block"],
+        ["minecraft:brain_coral_block", "minecraft:dead_brain_coral_block"],
+        ["minecraft:bubble_coral_block", "minecraft:dead_bubble_coral_block"],
+        ["minecraft:fire_coral_block", "minecraft:dead_fire_coral_block"],
+        ["minecraft:horn_coral_block", "minecraft:dead_horn_coral_block"],
+
+        //dead coral
+        ["minecraft:brain_coral_fan", "minecraft:dead_brain_coral_fan"],
+        ["minecraft:bubble_coral_fan", "minecraft:dead_bubble_coral_fan"],
+        ["minecraft:fire_coral_fan", "minecraft:dead_fire_coral_fan"],
+        ["minecraft:horn_coral_fan", "minecraft:dead_horn_coral_fan"],
+
     ].forEach((recipe) => {
         event.recipes.createHaunting(recipe[1], recipe[0]);
     });
