@@ -63,5 +63,114 @@ function skystoneshit (event) {
         Item.of("2x ae2:skystone_dust"),
         Fluid.of("kubejs:shimmer", FULL_BUCKET_AMMOUNT / 10) //=100 mb
       ])
-}
+    }
+    function moonstone (event) {
+        event.custom({
+            "type": "lychee:item_inside",
+            "contextual": [
+              {
+                "type": "location",
+                "predicate": {
+                  "dimension": "ad_astra:moon"
+                }
+              }
+            ],
+            "post": [
+              {
+                "type": "drop_item",
+                "contextual": [
+                  {
+                    "type": "chance",
+                    "chance": 0.7
+                  }
+                ],
+                "item": "ad_astra:desh_nugget",
+                "count": 4
+              },
+              {
+                "type": "drop_item",
+                "contextual": [
+                  {
+                    "type": "chance",
+                    "chance": 0.3
+                  }
+                ],
+                "item": "ad_astra:moon_cheese",
+                "count": 2
+              }
+            ],
+            "item_in": [
+              {
+                "item": "ad_astra:moon_sand"
+              }
+            ],
+            "block_in": "minecraft:water"
+          })
+    event.custom({
+        "type": "lychee:item_inside",
+        "post": [
+          {
+            "type": "drop_item",
+            "contextual": [
+              {
+                "type": "chance",
+                "chance": 0.5
+              }
+            ],
+            "item": "ad_astra:desh_nugget",
+            "count": 1
+          },
+        ],
+        "item_in": [
+          {
+            "item": "ad_astra:moon_sand"
+          }
+        ],
+        "block_in": "minecraft:water"
+      })
+        event.custom({
+            "type": "lychee:item_inside",
+            "contextual": [
+              {
+                "type": "location",
+                "predicate": {
+                  "dimension": "ad_astra:moon"
+                }
+              }
+            ],
+            "post": [
+              {
+                "type": "drop_item",
+                "contextual": [
+                  {
+                    "type": "chance",
+                    "chance": 0.7
+                  }
+                ],
+                "item": "ad_astra:desh_nugget",
+                "count": 4
+              },
+              {
+                "type": "drop_item",
+                "contextual": [
+                  {
+                    "type": "chance",
+                    "chance": 0.3
+                  }
+                ],
+                "item": "ad_astra:moon_cheese",
+                "count": 2
+              }
+            ],
+            "item_in": [
+              {
+                "item": "ad_astra:moon_sand"
+              },
+              {
+                "item": "ae2:skystone_dust"
+              }
+            ],
+            "block_in": "minecraft:water"
+          })
+    }
 })
