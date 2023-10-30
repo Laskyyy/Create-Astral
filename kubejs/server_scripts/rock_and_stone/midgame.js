@@ -1,6 +1,7 @@
 var FULL_BUCKET_AMMOUNT = 81000;
 var INGOT_FLUID_AMMOUNT = 9000;
 onEvent("recipes", event => {
+    function goldshit(event) {
     //ochrum - outputs - advanced
     event.recipes.createMixing([
         Fluid.of("techreborn:mercury", FULL_BUCKET_AMMOUNT / 10),
@@ -31,4 +32,36 @@ onEvent("recipes", event => {
     ], [
         Fluid.of("createastral:gold-mercury_solution", FULL_BUCKET_AMMOUNT / 10)
     ]).heated()
+}
+function skystoneshit (event) {
+    event.custom({
+        "type": "lychee:block_exploding",
+        "post": [
+          {
+            "type": "drop_item",
+            "item": "ae2:skystone_dust",
+            "count": 2
+          },
+          {
+            "type": "place",
+            "block": "ae2:skystone"
+          }
+        ],
+        "block_in": "ae2:skystone"
+      })
+      event.recipes.createCompacting(
+        "ae2:skystone", [
+            Item.of("2x ae2:skystone_dust"),
+            Fluid.of("kubejs:shimmer", FULL_BUCKET_AMMOUNT / 20)  //=50 mb
+        ]
+      )
+      event.recipes.createCompacting([
+        Item.of("ae2:skystone").withChance(0.5),
+        Item.of("ae2:skystone")
+      ], [
+        Item.of("minecraft:basalt"),
+        Item.of("2x ae2:skystone_dust"),
+        Fluid.of("kubejs:shimmer", FULL_BUCKET_AMMOUNT / 10) //=100 mb
+      ])
+}
 })
