@@ -106,28 +106,6 @@ function skystoneshit (event) {
             ],
             "block_in": "minecraft:water"
           })
-    event.custom({
-        "type": "lychee:item_inside",
-        "post": [
-          {
-            "type": "drop_item",
-            "contextual": [
-              {
-                "type": "chance",
-                "chance": 0.5
-              }
-            ],
-            "item": "ad_astra:desh_nugget",
-            "count": 1
-          },
-        ],
-        "item_in": [
-          {
-            "item": "ad_astra:moon_sand"
-          }
-        ],
-        "block_in": "minecraft:water"
-      })
         event.custom({
             "type": "lychee:item_inside",
             "contextual": [
