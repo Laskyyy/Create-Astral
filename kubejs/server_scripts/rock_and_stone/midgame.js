@@ -179,6 +179,12 @@ function skystoneshit (event) {
           }
           )
         event.recipes.createCompacting([
+            Item.of("ad_astra:mars_stone")
+        ], [
+            Item.of("ad_astra:mars_sand"),
+            Item.of("ad_astra:mars_sand")
+        ]).heated()
+        event.recipes.createCompacting([
             Item.of("ad_astra:conglomerate").withChance(0.4),
             Item.of("minecraft:gold_nugget").withChance(0.2)
         ], [
@@ -224,5 +230,61 @@ function skystoneshit (event) {
                 Item: "powah:uraninite"
             }]
         })
+        //infernal spire - netherite
+        let inter = "kubejs:incomplete_infernal_spire"
+        event.recipes.createSequencedAssembly([
+            Item.of("ad_astra:infernal_spire_block").withChance(4),
+            Item.of("techreborn:scrap").withChance(1)
+        ], "minecraft:basalt", [
+            event.recipes.createDeploying(inter, [inter, "ad_astra:mars_sand"]),
+            event.recipes.createFilling(inter, [inter, Fluid.of("kubejs:hellfire", FULL_BUCKET_AMMOUNT / 20)]), //is 50 mb
+            event.recipes.createCutting(inter, inter)
+        ]).transitionalItem(inter).loops(2)
+        event.recipes.createCrushing([
+            Item.of("tconstruct:debris_nugget").withChance(0.1),
+            Item.of("powah:uraninite").withChance(0.25)
+        ], [
+            Item.of("ad_astra:infernal_spire_block")
+        ])
+        event.custom({
+            type: "techreborn:grinder",
+            power: 15,
+            time: 10, //is 10*15*20 = 3000 E
+            input: {
+                item: "ad_astra:infernal_spire_block",
+                count: 4
+            },
+            result: {
+                item: "tconstruct:debris_nugget"
+            }
+        })
+        event.custom({
+            type: "techreborn:industrial_grinder",
+            power: 30,
+            time: 20, //is 30*20*20 = 12000 E
+            tank: {
+                fluid: "techreborn:mercury",
+                amount: 500
+            },
+            ingredients: [{
+                item: "ad_astra:infernal_spire_block",
+                count: 2
+            }],
+            results: [{
+                item: "kubejs:ground_debris"
+            }, {
+                fluid: "techreborn:sodium_persulfate",
+                amount: 100
+            }]
+        })
+        event.recipes.createCutting("kubejs:cut_debris", "kubejs:ground_debris")
+        event.recipes.createCompacting([
+            Item.of("minecraft:ancient_debris").withChance(0.7),
+            Item.of("techreborn:sulfur_dust"),
+            Fluid.of("kubejs:hellfire", FULL_BUCKET_AMMOUNT / 10)
+        ], [
+            Item.of("kubejs:cut_debris"),
+            Fluid.of("techreborn:sodium_persulfate", FULL_BUCKET_AMMOUNT / 10)
+        ]).heated()
     }
 })
