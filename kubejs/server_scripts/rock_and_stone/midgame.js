@@ -151,4 +151,78 @@ function skystoneshit (event) {
             "block_in": "minecraft:water"
           })
     }
+    function marsshit (event) {
+        event.custom({
+            "type": "lychee:block_crushing",
+            "post": [
+              {
+                "type": "prevent_default"
+              },
+              {
+                "type": "drop_item",
+                "contextual": [
+                  {
+                    "type": "chance",
+                    "chance": 0.4
+                  }
+                ],
+                "item": "ad_astra:mars:sand"
+              },
+              {
+                "type": "place",
+                "block": "ad_astra:mars_stone"
+              }
+            ],
+            "max_repeats": 1,
+            "falling_block": "minecraft:anvil",
+            "landing_block": "ad_astra:mars_stone"
+          }
+          )
+        event.recipes.createCompacting([
+            Item.of("ad_astra:conglomerate").withChance(0.4),
+            Item.of("minecraft:gold_nugget").withChance(0.2)
+        ], [
+            Item.of("ad_astra:mars_sand"),
+            Fluid,of("minecraft:lava", FULL_BUCKET_AMMOUNT / 10),
+            Item.of("create:limestone")
+        ])
+        event.recipes.createCrushing([
+            Item.of("techreborn:raw_lead").withChance(0.3),
+            Item.of("techreborn:sulfur_dust").withChance(0.6),
+            Item.of("powah:uraninite").withChance(0.2)
+        ], [
+            Item.of("ad_astra:conglomerate")
+        ])
+        event.custom({
+            type: "techreborn:grinder",
+            power: 20,
+            time: 5, //is 5*20*20 = 2000 E
+            input: {
+                Item: "ad_astra:conglomerate",
+                count: 1
+            },
+            result: {
+                Item: "techreborn:lead_dust"
+            }
+        })
+        event.custom({
+            type: "techreborn:industrial_grinder",
+            power: 50,
+            time: 10, //is 50*10*20 = 20000 E
+            tank: {
+                fluid: "techreborn:mercury",
+                amount: 200
+            },
+            ingredients: {
+                Item: "ad_astra:conglomerate",
+                count: 4
+            },
+            results: [{
+                Item: "techreborn:lead_dust",
+                count: 2
+            }, {
+                Item: "powah:uraninite"
+            }]
+        })
+    }
 })
