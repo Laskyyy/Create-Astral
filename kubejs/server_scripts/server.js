@@ -1741,31 +1741,42 @@ onEvent('recipes', event => {
       ],
       processingTime: 10
     })
-
-    //adding composting recipes for coral variants
-    onEvent('recipes.compostables', event => {
-  
-        const coral = [
-          {type: "tube"},
-          {type: "brain"},
-          {type: "bubble"},
-          {type: "fire"},
-          {type: "horn"}
-        ].forEach(coral => {
-            //normal coral
-            event.add("minecraft:"+ coral.type + "_coral", 0.30)
-            event.add("minecraft:dead_"+ coral.type + "_coral", 0.50)
-        
-            //coral fans
-            event.add("minecraft:"+ coral.type + "_coral_fan", 0.30)
-            event.add("minecraft:dead_"+ coral.type + "_coral_fan", 0.50)
-        
-            //coral blocks
-            event.add("minecraft:"+ coral.type + "_coral_block", 0.30)
-            event.add("minecraft:dead_"+ coral.type + "_coral_block", 0.50)
-          })
-          //if it breaks, blame b0b, (nah blame me :) )
-          //blame b0b :0Blush:
-        })
-
 })
+
+//adding composting recipes for coral variants
+onEvent('recipes.compostables', event => {
+
+    const coral = [
+      {type: "tube"},
+      {type: "brain"},
+      {type: "bubble"},
+      {type: "fire"},
+      {type: "horn"}
+    ].forEach(coral => {
+        //normal coral
+        event.add("minecraft:"+ coral.type + "_coral", 0.30)
+        event.add("minecraft:dead_"+ coral.type + "_coral", 0.50)
+    
+        //coral fans
+        event.add("minecraft:"+ coral.type + "_coral_fan", 0.30)
+        event.add("minecraft:dead_"+ coral.type + "_coral_fan", 0.50)
+    
+        //coral blocks
+        event.add("minecraft:"+ coral.type + "_coral_block", 0.30)
+        event.add("minecraft:dead_"+ coral.type + "_coral_block", 0.50)
+      })
+      //if it breaks, blame b0b, (nah blame me :) )
+      //blame b0b :0Blush:
+})
+
+onEvent("player.logged_in", event => {
+  if(!event.player.stages.has("read_quest")) {
+   event.player.tell(Text.aqua('Please Read The Quest Book (Hover Over Me!)').underlined().hover("The quest book contains most of all the information needed to progress in this mod pack. Its your friend!, Use the item to remove this message"))
+  }
+})
+
+onEvent("item.right_click", (event) => {
+  if (event.item.id == "ftbquests:book") {
+    event.player.stages.add('read_quest')
+  }
+});
