@@ -417,13 +417,13 @@
 					id: "68293CB7A35DED12"
 					type: "biome"
 					icon: "ad_astra:mars_sand"
-					biome: "ad_astra:mars_wastelands"
+					biome: "ad_astra:martian_wastelands"
 				}
 				{
 					id: "0EADEDD630D75A8E"
 					type: "biome"
 					icon: "ad_astra:conglomerate"
-					biome: "ad_astra:mars_canyon_creek"
+					biome: "ad_astra:martian_canyon_creek"
 				}
 				{
 					id: "3A9B33851300612F"
