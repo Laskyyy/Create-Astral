@@ -2448,6 +2448,14 @@ function compactingRecipes(event) {
             output: "minecraft:cobbled_deepslate",
             inputs: ["8x minecraft:flint", "minecraft:gravel"],
         },
+        { //nametag recipe
+            output: "minecraft:name_tag",
+            inputs: [
+                "farmersdelight:canvas",
+                "minecraft:ink_sac",
+                "createaddition:iron_wire"
+            ],
+        },
     ].forEach((recipe) => {
         event.recipes.createCompacting(recipe.output, recipe.inputs);
     });
