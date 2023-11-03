@@ -17577,8 +17577,16 @@ file = "kubejs/jsconfig.json"
 hash = "058c91a44f9f4c079069775e15aea88454aee80420815cf5af51dedf01187d24"
 
 [[files]]
+file = "kubejs/server_scripts/alloys/Base_alloying.js"
+hash = "840b0e0182f0e7ed564fabfc0f081cc0d36058fbf765a24d25e31f75ec1e352d"
+
+[[files]]
+file = "kubejs/server_scripts/alloys/efficient_recipes.js"
+hash = "840b0e0182f0e7ed564fabfc0f081cc0d36058fbf765a24d25e31f75ec1e352d"
+
+[[files]]
 file = "kubejs/server_scripts/create.js"
-hash = "7c27aabdafca0ecfbcf63039ae8848256ea17a979158fccbd25a8d769b09320b"
+hash = "345d1af3dff87712af72ab467ed589657edc36f8fbd6e23b82b0061ccc8503f4"
 
 [[files]]
 file = "kubejs/server_scripts/createaddons.js"
@@ -17605,8 +17613,20 @@ file = "kubejs/server_scripts/resourcegen.js"
 hash = "4fd67e88659e33e0ec468b3198c509a5c9f89196f0e0eb2df91d9562a3d710dc"
 
 [[files]]
+file = "kubejs/server_scripts/rock_and_stone/earlygame.js"
+hash = "6c6e41211beac96fb55c339ea69fdfeb296fe18ee29bbba3f9da49dfde6fc317"
+
+[[files]]
+file = "kubejs/server_scripts/rock_and_stone/endgame.js"
+hash = "840b0e0182f0e7ed564fabfc0f081cc0d36058fbf765a24d25e31f75ec1e352d"
+
+[[files]]
+file = "kubejs/server_scripts/rock_and_stone/midgame.js"
+hash = "330e9884661fff2e9250fae33062b0647432ff5d4ad76c9c1e872fbfa5d73b66"
+
+[[files]]
 file = "kubejs/server_scripts/server.js"
-hash = "73b72f9d22f54a62896a9a6f72092adb787d8382cdcd71428ee4abde8e94b928"
+hash = "66e645c05a7b66be98dcada02704d02fbe33fb4409b7e06e65fe5b1008440ddb"
 
 [[files]]
 file = "kubejs/server_scripts/tags/graveReplaceBlacklist.js"
@@ -18257,7 +18277,7 @@ metafile = true
 
 [[files]]
 file = "mods/per-aspera.pw.toml"
-hash = "4b8b637937336f2975a0d0dc46e5a38f1da1432892020e90a2e92f6d8d58f8ff"
+hash = "755da7ef04b316feabfee8f3b3f80c55c76eb9ea99ddf13353dc11dc36baee33"
 metafile = true
 
 [[files]]
