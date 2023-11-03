@@ -432,6 +432,8 @@ onEvent("recipes", (event) => {
 
         // Miscellaneous
 
+        { output: "chipped:mechanist_workbench" },
+
         { output: "passivepiglins:piglin_fortune" },
         { output: "passivepiglins:piglin_totem" },
         { output: "passivepiglins:piglin_coin" },
