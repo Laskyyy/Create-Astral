@@ -85,7 +85,7 @@ onEvent("recipes", event => {
         Item.of("minecraft:clay_ball").withChance(0.2)
     ], "create:asurine")
     //crimsite - base
-    let inter = "createastral:incomplete_crimsite" //feel free to change this
+    let inter = "kubejs:incomplete_crimsite" //feel free to change this
     event.recipes.createSequencedAssembly([
         Item.of("create:crimsite").withChance(16.0),
         Item.of("minecraft:flint").withChance(4.0)//this results in 80% success chance
