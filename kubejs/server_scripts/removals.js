@@ -432,6 +432,8 @@ onEvent("recipes", (event) => {
 
         // Miscellaneous
 
+        { output: "minecraft:shroomlight" },
+
         { output: "passivepiglins:piglin_fortune" },
         { output: "passivepiglins:piglin_totem" },
         { output: "passivepiglins:piglin_coin" },
