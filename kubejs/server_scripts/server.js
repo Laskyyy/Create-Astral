@@ -835,6 +835,30 @@ onEvent("recipes", (event) => {
 
     /// end sifter
 
+    // horse armor recipes
+
+    event.shaped("minecraft:leather_horse_armor", ["  A", "AAA", "ABA"], {
+        A: "minecraft:leather",
+        B: "minecraft:string",
+    });
+    event.shaped("minecraft:iron_horse_armor", ["  A", "ABA", "ACA"], {
+        A: "create:iron_sheet",
+        B: "minecraft:leather_horse_armor",
+        C: "minecraft:string",
+    });
+    event.shaped("minecraft:golden_horse_armor", ["  A", "ABA", "ACA"], {
+        A: "create:golden_sheet",
+        B: "minecraft:iron_horse_armor",
+        C: "minecraft:string",
+    });
+    event.shaped("minecraft:diamond_horse_armor", ["  A", "ABA", "ACA"], {
+        A: "minecraft:diamond",
+        B: "minecraft:golden_horse_armor",
+        C: "minecraft:string",
+    });
+
+    
+
     //// ASSORTED CRAFTING BENCH RECIPES
 
     //dispenser recipe
