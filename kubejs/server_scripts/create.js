@@ -2448,6 +2448,16 @@ function compactingRecipes(event) {
             output: "minecraft:cobbled_deepslate",
             inputs: ["8x minecraft:flint", "minecraft:gravel"],
         },
+
+        //mushroom block recipes
+        {
+            output: "minecraft:brown_mushroom_block",
+            inputs: ["4x minecraft:brown_mushroom"],
+        },
+        {
+            output: "minecraft:red_mushroom_block",
+            inputs: ["4x minecraft:red_mushroom"],
+        },
     ].forEach((recipe) => {
         event.recipes.createCompacting(recipe.output, recipe.inputs);
     });
