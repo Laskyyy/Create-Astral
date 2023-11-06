@@ -868,6 +868,14 @@ onEvent("recipes", (event) => {
         C: "minecraft:dropper",
     });
 
+    event.shaped("chipped:mechanist_workbench", ["A  ", "BCC", "DED"], {
+        A: "minecraft:redstone_torch",
+        B: "minecraft:piston",
+        C: "#minecraft:wooden_slabs",
+        D: "#minecraft:logs",
+        E: "minecraft:tnt",
+    });
+
     // createdeco door recipe rebalance
 
     event.shaped("3x createdeco:andesite_door", ["AA", "AA", "AA"], {
