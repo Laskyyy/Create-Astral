@@ -195,7 +195,7 @@ function skystoneshit (event) {
         event.recipes.createCrushing([
             Item.of("techreborn:raw_lead").withChance(0.3),
             Item.of("techreborn:sulfur_dust").withChance(0.6),
-            Item.of("powah:uraninite").withChance(0.2)
+            Item.of("powah:uraninite_raw").withChance(0.2)
         ], [
             Item.of("ad_astra:conglomerate")
         ])
@@ -227,7 +227,7 @@ function skystoneshit (event) {
                 Item: "techreborn:lead_dust",
                 count: 2
             }, {
-                Item: "powah:uraninite"
+                Item: "powah:uraninite_raw"
             }]
         })
         //infernal spire - netherite
@@ -242,7 +242,7 @@ function skystoneshit (event) {
         ]).transitionalItem(inter).loops(2)
         event.recipes.createCrushing([
             Item.of("tconstruct:debris_nugget").withChance(0.1),
-            Item.of("powah:uraninite").withChance(0.25)
+            Item.of("powah:uraninite_raw").withChance(0.25)
         ], [
             Item.of("ad_astra:infernal_spire_block")
         ])
