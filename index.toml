@@ -261,6 +261,14 @@ file = "config/expanded_trident_enchanting.json"
 hash = "7ac9623dee0e5068169662aa8cd2f19e34d3e91beb59591c2292271a560d6864"
 
 [[files]]
+file = "config/extended_drawers/client.properties"
+hash = "021d7794e212a6360a10bf7e2d7da5d88a08c55783bdfe2767eb5c698ae95807"
+
+[[files]]
+file = "config/extended_drawers/common.properties"
+hash = "971292803d87dbb2ab4aa1d56fe5ba1861a0ff8f1ffb04e2d26dacc29bd2eadb"
+
+[[files]]
 file = "config/fabric/indigo-renderer.properties"
 hash = "b8350863f3a7b08cfc2953f902a4e5419e72c7780e9dfb93810f7909415e7f34"
 
@@ -18257,7 +18265,7 @@ metafile = true
 
 [[files]]
 file = "mods/per-aspera.pw.toml"
-hash = "4b8b637937336f2975a0d0dc46e5a38f1da1432892020e90a2e92f6d8d58f8ff"
+hash = "755da7ef04b316feabfee8f3b3f80c55c76eb9ea99ddf13353dc11dc36baee33"
 metafile = true
 
 [[files]]
@@ -18677,10 +18685,6 @@ hash = "4b24aab0b8283da6115fb4e66ee232734aeb91379209bdab6613858a33498d22"
 [[files]]
 file = "resourcepacks/BetterVanillaBuildingV2.86.1/assets/minecraft/blockstates/end_stone.json"
 hash = "9ca538d1310d74257b09023282745b72b54394db6b63777d3a2400e39f086d2f"
-
-[[files]]
-file = "resourcepacks/BetterVanillaBuildingV2.86.1/assets/minecraft/blockstates/glow_item_frame.json"
-hash = "ca838e5bc0057c1db2ccf48400795171865b7d49fa1d06a5828043411d9ce798"
 
 [[files]]
 file = "resourcepacks/BetterVanillaBuildingV2.86.1/assets/minecraft/blockstates/glowstone.json"
@@ -19563,10 +19567,6 @@ file = "resourcepacks/BetterVanillaBuildingV2.86.1/assets/minecraft/models/block
 hash = "44ab4ade6f67e17ace0220de27c4de50668e904cf818cf11a4cb08ae1280a626"
 
 [[files]]
-file = "resourcepacks/BetterVanillaBuildingV2.86.1/assets/minecraft/models/block/glow_item_frame.json"
-hash = "4489f9e3e454748b3521eb214e0a5694d562cff3d9ff511cb456953c8f534c00"
-
-[[files]]
 file = "resourcepacks/BetterVanillaBuildingV2.86.1/assets/minecraft/models/block/granite.json"
 hash = "a1d41318204d12718d00cc7b6ddf936bad2fc6670b963c23a5a538b28c020ada"
 
@@ -19665,14 +19665,6 @@ hash = "8607f63b023d94b156489efa3d9e820e4eaa34b41992e360ef2888158c296945"
 [[files]]
 file = "resourcepacks/BetterVanillaBuildingV2.86.1/assets/minecraft/models/block/iron_trapdoor_top.json"
 hash = "ad779d9a24c3114446865f633f3514dd56b834be2b9b119e188cd30fa48f12e0"
-
-[[files]]
-file = "resourcepacks/BetterVanillaBuildingV2.86.1/assets/minecraft/models/block/item_frame.json"
-hash = "4489f9e3e454748b3521eb214e0a5694d562cff3d9ff511cb456953c8f534c00"
-
-[[files]]
-file = "resourcepacks/BetterVanillaBuildingV2.86.1/assets/minecraft/models/block/item_frame_map.json"
-hash = "8c4585939b691244472fc4bb8e08c5fd19429bea09f0aff5cc83153d8e325e92"
 
 [[files]]
 file = "resourcepacks/BetterVanillaBuildingV2.86.1/assets/minecraft/models/block/jungle_button.json"
@@ -26573,10 +26565,6 @@ hash = "92bac894f4083bc97c6cbf859c2bf3260cbc968a6903aecbfbb52ddcbab26233"
 [[files]]
 file = "resourcepacks/BetterVanillaBuildingV2.86.1/assets/minecraft/textures/item/iron_sword.png"
 hash = "1c3e15304da2f4af940f7a9bf441a4b91f4b7f993c6066b462bd5ade7b1e376e"
-
-[[files]]
-file = "resourcepacks/BetterVanillaBuildingV2.86.1/assets/minecraft/textures/item/item_frame.png"
-hash = "77199c4ec60c54b5fecb8f0dd9efb403d3b4f04ca53eeaffe2bd04879005cb91"
 
 [[files]]
 file = "resourcepacks/BetterVanillaBuildingV2.86.1/assets/minecraft/textures/item/jungle_boat.png"
