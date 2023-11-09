@@ -220,7 +220,7 @@ function lizardCH2Changes(event) {
     });
 
     event.shaped("create:brass_funnel", ["FB", "CO", "VP"], {
-        B: "create:gold_sheet",
+        B: "create:golden_sheet",
         O: "minecraft:observer",
         F: "create:filter",
         C: "minecraft:comparator",
@@ -229,7 +229,7 @@ function lizardCH2Changes(event) {
     });
 
     event.shaped("create:smart_chute", ["FB", "CO", "PP"], {
-        B: "create:gold_sheet",
+        B: "create:golden_sheet",
         O: "minecraft:observer",
         F: "create:filter",
         C: "minecraft:comparator",
@@ -240,7 +240,6 @@ function lizardCH2Changes(event) {
         B: "create:copper_sheet",
         O: "minecraft:observer",
         F: "create:railway_casing",
-        C: "minecraft:comparator",
     });
 
     // Pre-brass display links (we can get pre-brass display boards after all)
