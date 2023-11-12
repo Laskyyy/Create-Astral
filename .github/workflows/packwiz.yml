@@ -74,9 +74,13 @@ jobs:
                       ./server/mods
                   key: cached-mods-${{ hashFiles('/home/runner/.cache/packwiz/cache/**/*') }}-${{ hashFiles('./server/mods') }}
 
-            - name: Upload artifacts
+            - name: Upload Client pack
               uses: actions/upload-artifact@v3
               with:
-                  path: |
-                      create_astral-gh_${{github.run_number}}.zip
-                  #   create_astral_server-gh_${{github.run_number}}.zip
+                  path: create_astral-gh_${{github.run_number}}.zip
+
+            - name: Upload Server pack
+              uses: actions/upload-artifact@v3
+              with:
+                  name: create_astral_server-gh_${{github.run_number}}.zip
+                  path: ./server
