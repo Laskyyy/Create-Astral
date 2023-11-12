@@ -41,12 +41,14 @@ jobs:
                       cached-mods-
 
             - name: Create CurseForge Client zip
-              run: ./packwiz curseforge export -o create_astral-gh_${{github.run_number}}.zip
+              run: |
+                  ./packwiz refresh
+                  ./packwiz curseforge export -o create_astral-gh_${{github.run_number}}.zip
 
             - name: Prepare for Serverpack creation
               run: |
                   cat server.packwizignore >> .packwizignore
-                  cat .packwizignore
+                  ./packwiz refresh
                   mkdir server
 
             - name: Download packwiz-installer-bootstrap
