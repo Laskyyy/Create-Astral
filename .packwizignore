@@ -3,3 +3,7 @@
 
 # Exclude README
 /README.md
+LICENSE*.md
+.prettierrc
+packwiz
+packwiz.exe
