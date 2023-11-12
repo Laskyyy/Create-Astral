@@ -24,7 +24,7 @@ jobs:
 
             - name: Create CurseForge Zip
               run: |
-                  packwiz curseforge export
+                  ./packwiz curseforge export
 
             - name: Upload artifacts
               uses: actions/upload-artifact@v3
