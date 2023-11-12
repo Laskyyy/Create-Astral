@@ -1,6 +1,12 @@
 name: Build with packwiz
 
 on:
+    workflow_dispatch:
+        inputs:
+            serverpack:
+                description: Create and upload Server Pack
+                required: true
+                default: "false"
     pull_request:
         branches: ["main", "Astral-Experimental"]
     push:
@@ -42,16 +48,17 @@ jobs:
 
             - name: Create CurseForge Client zip
               run: |
-                  ./packwiz refresh
                   ./packwiz curseforge export -o create_astral-gh_${{github.run_number}}.zip
 
             - name: Prepare for Serverpack creation
+              if: ${{ github.event.inputs.serverpack }}
               run: |
                   cat server.packwizignore >> .packwizignore
                   ./packwiz refresh
                   mkdir server
 
             - name: Download packwiz-installer-bootstrap
+              if: ${{ github.event.inputs.serverpack }}
               uses: robinraju/release-downloader@v1.8
               with:
                   repository: packwiz/packwiz-installer-bootstrap
@@ -59,6 +66,7 @@ jobs:
                   fileName: packwiz-installer-bootstrap.jar
 
             - name: Create Serverpack
+              if: ${{ github.event.inputs.serverpack }}
               run: |
                   cd server
                   java -jar ../packwiz-installer-bootstrap.jar -g -s server ../pack.toml
@@ -80,6 +88,7 @@ jobs:
                   path: create_astral-gh_${{github.run_number}}.zip
 
             - name: Upload Server pack
+              if: ${{ github.event.inputs.serverpack }}
               uses: actions/upload-artifact@v3
               with:
                   name: create_astral_server-gh_${{github.run_number}}.zip
