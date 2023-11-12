@@ -51,7 +51,7 @@ jobs:
             - name: Download packwiz-installer-bootstrap
               uses: robinraju/release-downloader@v1.8
               with:
-                  repsitory: packwiz/packwiz-installer-bootstrap
+                  repository: packwiz/packwiz-installer-bootstrap
                   latest: true
                   fileName: packwiz-installer-bootstrap.jar
 
