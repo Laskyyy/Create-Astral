@@ -6,6 +6,7 @@
         "editor.defaultFormatter": null
     },
     "files.associations": {
-        "*.mcmeta": "json"
+        "*.mcmeta": "json",
+        ".packwizignore": "ignore"
     }
 }
