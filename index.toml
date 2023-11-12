@@ -5,10 +5,6 @@ file = ".github/workflows/packwiz.yml"
 hash = "b8461da98d0df7266cc18c6bc9bc1e69920e29e4b628cc4757da4c2fedbb921c"
 
 [[files]]
-file = ".prettierrc"
-hash = "238510728f79b3a68ede8e4cbee8184082dbd3079adf76a9874648b0b8e633b5"
-
-[[files]]
 file = ".vscode/extensions.json"
 hash = "c4f0fb2d228fab6d6a634c708394ff60ce5292adde75b5cca0e47ac1e65a7ba3"
 
@@ -23,14 +19,6 @@ hash = "bef06eff2dd0f88cf0477e3b21306767e1257e57fc59f8f7374b31ed9587fb0e"
 [[files]]
 file = ".vscode/settings.json"
 hash = "3df22a4c661d36fe134faaa034c299b634dbd05fa77278e4f24d7ef0b42a9770"
-
-[[files]]
-file = "LICENSE.md"
-hash = "3c03d28601eb9fbb44aaba2882ccaa4cdddec45041b591b3febc9ef4b0f472c0"
-
-[[files]]
-file = "LICENSE_packwiz.md"
-hash = "9d4132ed751e497e7fd3a7654a17f5e92605a3a4bf5fb157c14ec419a229bf99"
 
 [[files]]
 file = "config/DisablePortals.json"
@@ -17604,7 +17592,7 @@ metafile = true
 
 [[files]]
 file = "mods/alternate-current.pw.toml"
-hash = "5ef8fa873a76b89ff7b80e34bd3807b8a96ad83bd3c37fff8febb2fee57724a2"
+hash = "d732fc9747ed10bbb1073ef7b8ed7688dac860c5f6995ed009a8a7bd64ef7b4a"
 metafile = true
 
 [[files]]
@@ -17768,12 +17756,12 @@ metafile = true
 
 [[files]]
 file = "mods/cobblegen.pw.toml"
-hash = "67d8820935b0c421391a7a9ab816832577b7bc1df2a38b863a22271115bd0542"
+hash = "fe4c35291b411f921e92573324543a63ad83c95741e7947395d0f345949409a9"
 metafile = true
 
 [[files]]
 file = "mods/companion-fabric.pw.toml"
-hash = "7fa988b5fcf70e53b8771449a0fe2ef613ffdb96087eb061e566dc9ba72772e7"
+hash = "ed4ba0e16335a186ff3b2f2a4a19ba48c28c73ee5fbeb747d31b6bcfdf235520"
 metafile = true
 
 [[files]]
@@ -17952,7 +17940,7 @@ metafile = true
 
 [[files]]
 file = "mods/fast-furnace-for-fabric.pw.toml"
-hash = "7c0d12af1ffb61a58f86e45e8dc9281376e0e106dd1d588c97503cb4e5cad881"
+hash = "05cd70e8c17f591494e544134dd863f7d93dc8febf382a14e41cf1aceb582c49"
 metafile = true
 
 [[files]]
@@ -17967,7 +17955,7 @@ metafile = true
 
 [[files]]
 file = "mods/ftb-backups-2.pw.toml"
-hash = "7c615997ba2b38d460fb78074cc376597ee450770dac39e833917a13d389f9ec"
+hash = "b688e29eb259b7ab229a6878ff108955ca8b6944f4df70b56e09e93f7f84409e"
 metafile = true
 
 [[files]]
@@ -18102,12 +18090,12 @@ metafile = true
 
 [[files]]
 file = "mods/leaves-us-in-peace.pw.toml"
-hash = "82b69b2794bf7dc599458e14410ac3a9f8b75fe61b141ca09d627d03619b3366"
+hash = "c5ac1387e3b465852e8af2750eae793e0d83e22b261d4e225c1f3cab9f05dcf2"
 metafile = true
 
 [[files]]
 file = "mods/let-me-despawn.pw.toml"
-hash = "ce4f384fa5e02fe9a54f5777b89c1a6b5ad8429835077dd3a2f350f130014ee8"
+hash = "5b9275f6c1ccfebe010a2ae99c6806df83f3b427f0f401fcbd83f4d14218e36f"
 metafile = true
 
 [[files]]
@@ -18122,7 +18110,7 @@ metafile = true
 
 [[files]]
 file = "mods/limited-chunkloading.pw.toml"
-hash = "9247e9cb3d215af621b2361d83ef4d0602ec717c6790db59bde7436d9906724d"
+hash = "c669393647d2105aa302b8cf78468b4707d4118bbe4aa9a43068627f08c35184"
 metafile = true
 
 [[files]]
@@ -18191,7 +18179,7 @@ metafile = true
 
 [[files]]
 file = "mods/neruina.pw.toml"
-hash = "4fc32bb1c837331dc1abd30094f76686fe54fceece2e281719fa6e1448841b77"
+hash = "cc1bb1196e1eecbfeead2f7da80387830bba4f888ecc679c32704cb9e5150843"
 metafile = true
 
 [[files]]
@@ -18315,17 +18303,17 @@ metafile = true
 
 [[files]]
 file = "mods/servercore.pw.toml"
-hash = "420c3d31d150ddbe01abe811af195c1126860ee72f82592333b004a54f3daed2"
+hash = "384fe34210798ecd3ac10d749152ae6c7f3f1d4cb86b9387b29fc99d203f31eb"
 metafile = true
 
 [[files]]
 file = "mods/servertick.pw.toml"
-hash = "c91d24816237eb96803ee62ce34c5a95dd74c88826493207d4b9a65350fa2fa4"
+hash = "187aa54c7be7a597bb2daf9bd313773b7806d1eae3f631e92c79cd3021393929"
 metafile = true
 
 [[files]]
 file = "mods/show-me-what-you-got.pw.toml"
-hash = "db6174e4b22ac3854f8bad6cf20851866b6ea69d8a37298e1c57bd9206368e1b"
+hash = "3374e004ff0813ab078cd4134d16b5dce58e9f8b6600d2a7951a60409354a225"
 metafile = true
 
 [[files]]
@@ -18335,7 +18323,7 @@ metafile = true
 
 [[files]]
 file = "mods/smooth-chunk-save.pw.toml"
-hash = "08aa3d167786fac398e5dbbc676f78e06fc9a7b9bb6d3c753c561cd40d94b24f"
+hash = "43dfd36695cabbdf2f1134ff1fb8c7ca0c25da87ea106dacce1b2c74aa97b56a"
 metafile = true
 
 [[files]]
@@ -29495,10 +29483,6 @@ file = "resourcepacks/Reim GUI + Default Dark/assets/ae2wtlib/README.md"
 hash = "b5f4048dae90bf2facdbda6463b1d805140526fcee9e077cc99d5ea3ecc363c4"
 
 [[files]]
-file = "resourcepacks/Reim GUI + Default Dark/assets/betteradvancements/LICENSE.md"
-hash = "5629128d1f6d0eeec510074078e63a5478f3460dca879bd56d44e41e02da29be"
-
-[[files]]
 file = "resourcepacks/Reim GUI + Default Dark/assets/betteradvancements/README.md"
 hash = "062f037196a185f2ccf4c3ed316476b9bc794a19f0d68f313ce3ba5aea225b92"
 
@@ -29589,10 +29573,6 @@ hash = "b62d69eb5589dca073aae67d0d2536b05f6bb83b74c84a44eb11846f52167c9f"
 [[files]]
 file = "resourcepacks/Reim GUI + Default Dark/assets/charm/textures/gui/inventory_buttons.png"
 hash = "ee2f142e7875d8a3db07bd66a6e0618e7d2aab25a47ca2828b05943f2a80e970"
-
-[[files]]
-file = "resourcepacks/Reim GUI + Default Dark/assets/cloth-config2/LICENSE.md"
-hash = "c084d3d0560c3731716fc2f2d7993647953810bba5d880e2aa2290d1c66d18d6"
 
 [[files]]
 file = "resourcepacks/Reim GUI + Default Dark/assets/cloth-config2/README.md"
@@ -30903,10 +30883,6 @@ file = "resourcepacks/Reim GUI + Default Dark/assets/owo/textures/gui/tabs.png"
 hash = "a1f5feb21efcff387a34d721efba8f2f2ab560662dc3a3339d59960f93a08ed7"
 
 [[files]]
-file = "resourcepacks/Reim GUI + Default Dark/assets/paradise_lost/LICENSE.md"
-hash = "e25e8e24a656fd64bdc0fc46e2dac0df79d4d15e3e25438cb2bf205dcfe48763"
-
-[[files]]
 file = "resourcepacks/Reim GUI + Default Dark/assets/paradise_lost/README.md"
 hash = "b79d62e0fcdc30528cc5988b3c5170bb2ba7232686b99daa1b9e18a87ce5f88d"
 
@@ -31105,10 +31081,6 @@ hash = "6c9af2f764690239ff97f3a00d6a4b93134a796c3619088efa845046824c96e4"
 [[files]]
 file = "resourcepacks/Reim GUI + Default Dark/assets/travelersbackpack/textures/gui/travelers_backpack.png"
 hash = "89678de2555664585d1f6cafbaf3565d2efb8fc0d2e1e9e7f27b024d06d46710"
-
-[[files]]
-file = "resourcepacks/Reim GUI + Default Dark/assets/trinkets/LICENSE.md"
-hash = "a4c2961aadbf1ab74febe2598815da5dc0687a987490d610ea3a2af0ecc3ebfa"
 
 [[files]]
 file = "resourcepacks/Reim GUI + Default Dark/assets/trinkets/README.md"
