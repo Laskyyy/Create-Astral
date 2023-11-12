@@ -85,6 +85,7 @@ jobs:
             - name: Upload Client pack
               uses: actions/upload-artifact@v3
               with:
+                  name: UNZIP_ME-create_astral-gh_${{github.run_number}}.zip
                   path: create_astral-gh_${{github.run_number}}.zip
 
             - name: Upload Server pack
