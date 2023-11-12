@@ -4,5 +4,8 @@
     "[json5]": {
         "editor.formatOnSave": false,
         "editor.defaultFormatter": null
+    },
+    "files.associations": {
+        "*.mcmeta": "json"
     }
 }
