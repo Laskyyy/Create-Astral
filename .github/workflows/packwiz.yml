@@ -27,10 +27,12 @@ jobs:
 
             - name: Create CurseForge Zip
               run: |
-                  ./packwiz curseforge export
+                  ./packwiz curseforge export -o create_astral-gh_${{github.run_number}}.zip
+              #   ./packwiz curseforge export -s server create_astral_server-gh_${{github.run_number}}.zip
 
             - name: Upload artifacts
               uses: actions/upload-artifact@v3
               with:
-                  name: Create Astral (GH ${{github.run_id}})
-                  path: ./*.zip
+                  path: |
+                      create_astral-gh_${{github.run_number}}.zip
+                  #   create_astral_server-gh_${{github.run_number}}.zip

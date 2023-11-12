@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = ".github/workflows/packwiz.yml"
-hash = "eaf46fc200ff0b51c7c43905526b81d9dc7b361dec0ccee355157b86d6d14a67"
+hash = "8fbefc2e0129da17438cfd3ab812f835176c8393d4d37b9f5642caf4d875ca57"
 
 [[files]]
 file = ".prettierrc"
@@ -22,7 +22,7 @@ hash = "bef06eff2dd0f88cf0477e3b21306767e1257e57fc59f8f7374b31ed9587fb0e"
 
 [[files]]
 file = ".vscode/settings.json"
-hash = "f53eedbee712a5b2db705c150803495b5f5bc13d579e569dbc2cdbab3829296d"
+hash = "3df22a4c661d36fe134faaa034c299b634dbd05fa77278e4f24d7ef0b42a9770"
 
 [[files]]
 file = "LICENSE.md"
@@ -31,10 +31,6 @@ hash = "3c03d28601eb9fbb44aaba2882ccaa4cdddec45041b591b3febc9ef4b0f472c0"
 [[files]]
 file = "LICENSE_packwiz.md"
 hash = "9d4132ed751e497e7fd3a7654a17f5e92605a3a4bf5fb157c14ec419a229bf99"
-
-[[files]]
-file = "README.md"
-hash = "61fc453a849495c3da43e86ab00400a25d0c5c6d6fefdb6df70456cc8e1c6fb2"
 
 [[files]]
 file = "config/DisablePortals.json"
