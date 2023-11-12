@@ -25,10 +25,26 @@ jobs:
             - name: Make packwiz binary executable
               run: chmod +x ./packwiz
 
+            - name: Restore cached mod downloads
+              id: cache-mods-restore
+              uses: actions/cache/restore@v3
+              with:
+                  path: /home/runner/.cache/packwiz/cache
+                  key: cached-mods
+                  restore-keys: |
+                      cached-mods-
+
             - name: Create CurseForge Zip
               run: |
                   ./packwiz curseforge export -o create_astral-gh_${{github.run_number}}.zip
               #   ./packwiz curseforge export -s server create_astral_server-gh_${{github.run_number}}.zip
+
+            - name: Cache mod downloads
+              id: cache-mods-save
+              uses: actions/cache/save@v3
+              with:
+                  path: /home/runner/.cache/packwiz/cache
+                  key: cached-packages-${{ hashFiles('/home/runner/.cache/packwiz/cache/**/*') }}
 
             - name: Upload artifacts
               uses: actions/upload-artifact@v3
