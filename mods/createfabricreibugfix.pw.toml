@@ -1,6 +1,6 @@
 name = "CreateFabric&REIBugFix"
 filename = "CreateFabricREIBugFix-0.1.5-create0.5.1-mc1.18.x.jar"
-side = "both"
+side = "client"
 
 [download]
 mode = "metadata:curseforge"

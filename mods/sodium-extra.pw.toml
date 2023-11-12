@@ -1,6 +1,6 @@
 name = "Sodium Extra"
 filename = "sodium-extra-0.4.18+mc1.18.2-build.98.jar"
-side = "both"
+side = "client"
 
 [download]
 mode = "metadata:curseforge"

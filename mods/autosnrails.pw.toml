@@ -1,6 +1,6 @@
 name = "Autos'n'Rails"
 filename = "autos_n_rails-2.0.0.jar"
-side = "both"
+side = "client"
 
 [download]
 mode = "metadata:curseforge"

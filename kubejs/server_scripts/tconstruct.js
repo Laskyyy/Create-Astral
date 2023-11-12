@@ -48,7 +48,7 @@ onEvent("recipes", (event) => {
             result: "tconstruct:sky_slime_vine",
             cooling_time: 80,
             cast: ["minecraft:vine", true],
-        }
+        },
     ].forEach((recipe) => {
         event.custom({
             type: "tconstruct:casting_basin",

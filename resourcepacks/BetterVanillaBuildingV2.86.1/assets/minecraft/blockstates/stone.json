@@ -7,9 +7,8 @@
             { "model": "block/stone2", "y": 180 },
             { "model": "block/stone3" },
             { "model": "block/stone3", "y": 180 },
-			{ "model": "block/stone4" },
+            { "model": "block/stone4" },
             { "model": "block/stone4", "y": 180 }
         ]
     }
 }
-

@@ -1,6 +1,6 @@
 name = "Inventory Profiles Next"
 filename = "InventoryProfilesNext-fabric-1.18.2-1.10.5.jar"
-side = "both"
+side = "client"
 
 [download]
 mode = "metadata:curseforge"

@@ -235,7 +235,7 @@ function lizardCH2Changes(event) {
         C: "minecraft:comparator",
         P: "create:chute",
     });
-    
+
     event.shaped("create:stockpile_switch", ["FB", "BO"], {
         B: "create:copper_sheet",
         O: "minecraft:observer",
@@ -1739,47 +1739,43 @@ onEvent("morejs.villager.trades", (event) => {
     });
 });
 // Listen to server recipe event
-onEvent('recipes', event => {
+onEvent("recipes", (event) => {
     event.custom({
-      type: 'create:compacting',
-      ingredients: [
-        Ingredient.of('minecraft:wet_sponge').toJson()
-      ],
-      results: [
-        Item.of('minecraft:sponge').toResultJson(),
-        Item.of('minecraft:cod').withChance(0.25).toResultJson(),
-        Item.of('minecraft:salmon').withChance(0.25).toResultJson(),
-        Item.of('minecraft:tropical_fish').withChance(0.2).toResultJson(),
-        Item.of('minecraft:pufferfish').withChance(0.15).toResultJson(),
-        Item.of('minecraft:ink_sac').withChance(0.15).toResultJson(),
-      ],
-      processingTime: 10
-    })
+        type: "create:compacting",
+        ingredients: [Ingredient.of("minecraft:wet_sponge").toJson()],
+        results: [
+            Item.of("minecraft:sponge").toResultJson(),
+            Item.of("minecraft:cod").withChance(0.25).toResultJson(),
+            Item.of("minecraft:salmon").withChance(0.25).toResultJson(),
+            Item.of("minecraft:tropical_fish").withChance(0.2).toResultJson(),
+            Item.of("minecraft:pufferfish").withChance(0.15).toResultJson(),
+            Item.of("minecraft:ink_sac").withChance(0.15).toResultJson(),
+        ],
+        processingTime: 10,
+    });
 
     //adding composting recipes for coral variants
-    onEvent('recipes.compostables', event => {
-  
+    onEvent("recipes.compostables", (event) => {
         const coral = [
-          {type: "tube"},
-          {type: "brain"},
-          {type: "bubble"},
-          {type: "fire"},
-          {type: "horn"}
-        ].forEach(coral => {
+            { type: "tube" },
+            { type: "brain" },
+            { type: "bubble" },
+            { type: "fire" },
+            { type: "horn" },
+        ].forEach((coral) => {
             //normal coral
-            event.add("minecraft:"+ coral.type + "_coral", 0.30)
-            event.add("minecraft:dead_"+ coral.type + "_coral", 0.50)
-        
-            //coral fans
-            event.add("minecraft:"+ coral.type + "_coral_fan", 0.30)
-            event.add("minecraft:dead_"+ coral.type + "_coral_fan", 0.50)
-        
-            //coral blocks
-            event.add("minecraft:"+ coral.type + "_coral_block", 0.30)
-            event.add("minecraft:dead_"+ coral.type + "_coral_block", 0.50)
-          })
-          //if it breaks, blame b0b, (nah blame me :) )
-          //blame b0b :0Blush:
-        })
+            event.add("minecraft:" + coral.type + "_coral", 0.3);
+            event.add("minecraft:dead_" + coral.type + "_coral", 0.5);
 
-})
+            //coral fans
+            event.add("minecraft:" + coral.type + "_coral_fan", 0.3);
+            event.add("minecraft:dead_" + coral.type + "_coral_fan", 0.5);
+
+            //coral blocks
+            event.add("minecraft:" + coral.type + "_coral_block", 0.3);
+            event.add("minecraft:dead_" + coral.type + "_coral_block", 0.5);
+        });
+        //if it breaks, blame b0b, (nah blame me :) )
+        //blame b0b :0Blush:
+    });
+});

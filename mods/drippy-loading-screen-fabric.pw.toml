@@ -1,6 +1,6 @@
 name = "Drippy Loading Screen [Fabric]"
 filename = "drippyloadingscreen_fabric_1.6.6_MC_1.18-1.18.2.jar"
-side = "both"
+side = "client"
 
 [download]
 mode = "metadata:curseforge"
