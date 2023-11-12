@@ -9,6 +9,8 @@
         // Even better git integration
         "eamodio.gitlens",
         // Syntax highlighting etc. for .json5 files (used by some mods for configuration)
-        "mrmlnc.vscode-json5"
+        "mrmlnc.vscode-json5",
+        // for viewing nbt files
+        "misodee.vscode-nbt"
     ]
 }
