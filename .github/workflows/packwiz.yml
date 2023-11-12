@@ -44,7 +44,7 @@ jobs:
               uses: actions/cache/save@v3
               with:
                   path: /home/runner/.cache/packwiz/cache
-                  key: cached-packages-${{ hashFiles('/home/runner/.cache/packwiz/cache/**/*') }}
+                  key: cached-mods-${{ hashFiles('/home/runner/.cache/packwiz/cache/**/*') }}
 
             - name: Upload artifacts
               uses: actions/upload-artifact@v3
