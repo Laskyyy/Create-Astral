@@ -22,6 +22,9 @@ jobs:
                   name: Linux 64-bit x86
                   repo: packwiz/packwiz
 
+            - name: Make packwiz binary executable
+              run: chmod +x ./packwiz
+
             - name: Create CurseForge Zip
               run: |
                   ./packwiz curseforge export
