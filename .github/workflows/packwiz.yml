@@ -13,6 +13,12 @@ jobs:
             - name: Checkout Repository
               uses: actions/checkout@v3
 
+            - name: setup jdk 17
+              uses: actions/setup-java@v3
+              with:
+                  java-version: 17
+                  distribution: "temurin"
+
             - name: Get latest packwiz binary
               id: download-packwiz
               uses: dawidd6/action-download-artifact@v2
@@ -34,17 +40,36 @@ jobs:
                   restore-keys: |
                       cached-mods-
 
-            - name: Create CurseForge Zip
+            - name: Create CurseForge Client zip
+              run: ./packwiz curseforge export -o create_astral-gh_${{github.run_number}}.zip
+
+            - name: Prepare for Serverpack creation
               run: |
-                  ./packwiz curseforge export -o create_astral-gh_${{github.run_number}}.zip
-              #   ./packwiz curseforge export -s server create_astral_server-gh_${{github.run_number}}.zip
+                  cat server.packwizignore >> .packwizignore
+                  mkdir server
+
+            - name: Download packwiz-installer-bootstrap
+              uses: robinraju/release-downloader@v1.8
+              with:
+                  repsitory: packwiz/packwiz-installer-bootstrap
+                  latest: true
+                  fileName: packwiz-installer-bootstrap.jar
+
+            - name: Create Serverpack
+              run: |
+                  cd server
+                  java -jar ../packwiz-installer-bootstrap.jar -g -s server ../pack.toml
+                  ls -l
+                  cd ../
 
             - name: Cache mod downloads
               id: cache-mods-save
               uses: actions/cache/save@v3
               with:
-                  path: /home/runner/.cache/packwiz/cache
-                  key: cached-mods-${{ hashFiles('/home/runner/.cache/packwiz/cache/**/*') }}
+                  path: |
+                      /home/runner/.cache/packwiz/cache
+                      ./server/mods
+                  key: cached-mods-${{ hashFiles('/home/runner/.cache/packwiz/cache/**/*') }}-${{ hashFiles('./server/mods') }}
 
             - name: Upload artifacts
               uses: actions/upload-artifact@v3
