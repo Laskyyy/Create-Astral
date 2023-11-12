@@ -1,6 +1,6 @@
 name = "Leaves Us In Peace"
 filename = "leaves-us-in-peace-1.0.11+MC1.18.2.jar"
-side = "server"
+side = "both"
 
 [download]
 mode = "metadata:curseforge"

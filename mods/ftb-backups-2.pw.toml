@@ -1,6 +1,6 @@
 name = "FTB Backups 2"
 filename = "ftbbackups2-fabric-1.18.2-1.0.18.jar"
-side = "server"
+side = "both"
 
 [download]
 mode = "metadata:curseforge"
