@@ -46,6 +46,7 @@ jobs:
             - name: Prepare for Serverpack creation
               run: |
                   cat server.packwizignore >> .packwizignore
+                  cat .packwizignore
                   mkdir server
 
             - name: Download packwiz-installer-bootstrap
