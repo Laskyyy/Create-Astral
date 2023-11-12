@@ -1,6 +1,6 @@
 name = "Let Me Despawn"
 filename = "letmedespawn-1.18.x-1.19.x-fabric-1.0.2.jar"
-side = "both"
+side = "server"
 
 [download]
 mode = "metadata:curseforge"

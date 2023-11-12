@@ -1,6 +1,6 @@
 name = "Server Tick"
 filename = "servertick-mc1.18-1.6.jar"
-side = "both"
+side = "server"
 
 [download]
 mode = "metadata:curseforge"

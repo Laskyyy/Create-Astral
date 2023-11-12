@@ -1,6 +1,6 @@
 name = "Audio Extension for FancyMenu [Fabric]"
 filename = "fm_audio_extension_fabric_1.1.1_MC_1.18-1.18.2.jar"
-side = "both"
+side = "client"
 
 [download]
 mode = "metadata:curseforge"

@@ -1,6 +1,6 @@
 name = "FancyMenu"
 filename = "fancymenu_fabric_2.13.3_MC_1.18.2.jar"
-side = "both"
+side = "client"
 
 [download]
 mode = "metadata:curseforge"

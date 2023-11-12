@@ -1,6 +1,6 @@
 name = "CIT Resewn"
 filename = "CITResewn-1.1.1+1.18.2.jar"
-side = "both"
+side = "client"
 
 [download]
 mode = "metadata:curseforge"

@@ -1,6 +1,6 @@
 name = "Show Me What You Got"
 filename = "ShowMeWhatYouGot-1.18-1.0.1.jar"
-side = "both"
+side = "server"
 
 [download]
 mode = "metadata:curseforge"

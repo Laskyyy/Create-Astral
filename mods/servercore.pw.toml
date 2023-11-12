@@ -1,6 +1,6 @@
 name = "ServerCore"
 filename = "servercore-fabric-1.3.5+1.18.2.jar"
-side = "both"
+side = "server"
 
 [download]
 mode = "metadata:curseforge"

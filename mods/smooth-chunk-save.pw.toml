@@ -1,6 +1,6 @@
 name = "Server Performance - Smooth Chunk Save[Forge/Fabric]"
 filename = "smoothchunk-fabric-1.18.2-1.9.jar"
-side = "both"
+side = "server"
 
 [download]
 mode = "metadata:curseforge"

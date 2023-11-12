@@ -1,6 +1,6 @@
 name = "Alternate Current"
 filename = "alternate-current-mc1.18-1.7.0.jar"
-side = "both"
+side = "server"
 
 [download]
 mode = "metadata:curseforge"

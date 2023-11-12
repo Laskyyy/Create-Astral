@@ -1,6 +1,6 @@
 name = "Fast Furnace for Fabric"
 filename = "fastfurnace-1.18.2-4.1.jar"
-side = "both"
+side = "server"
 
 [download]
 mode = "metadata:curseforge"
