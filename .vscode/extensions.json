@@ -1,0 +1,6 @@
+{
+    "recommendations": [
+        // Grammar checking in Markdown files
+        "valentjn.vscode-ltex"
+    ]
+}
