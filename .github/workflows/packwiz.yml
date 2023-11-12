@@ -3,6 +3,10 @@ name: Build with packwiz
 on:
     workflow_dispatch:
         inputs:
+            artifacts:
+                description: Upload artifacts
+                required: true
+                default: "true"
             serverpack:
                 description: Create and upload Server Pack
                 required: true
@@ -83,13 +87,14 @@ jobs:
                   key: cached-mods-${{ hashFiles('/home/runner/.cache/packwiz/cache/**/*') }}-${{ hashFiles('./server/mods') }}
 
             - name: Upload Client pack
+              if: ${{ github.event.inputs.artifacts }}
               uses: actions/upload-artifact@v3
               with:
                   name: UNZIP_ME-create_astral-gh_${{github.run_number}}.zip
                   path: create_astral-gh_${{github.run_number}}.zip
 
             - name: Upload Server pack
-              if: ${{ github.event.inputs.serverpack }}
+              if: ${{ github.event.inputs.serverpack && github.event.inputs.artifacts }}
               uses: actions/upload-artifact@v3
               with:
                   name: create_astral_server-gh_${{github.run_number}}.zip
