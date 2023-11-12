@@ -41,12 +41,7 @@ onEvent("recipes", (event) => {
             "#c:slimeballs",
             "createaddition:copper_wire",
         ],
-        [
-            { mod: "createbigcannons" },
-            "minecraft:string",
-            "create:sand_paper",
-        ],
-
+        [{ mod: "createbigcannons" }, "minecraft:string", "create:sand_paper"],
 
         [
             { output: "techreborn:copper_cable" },
@@ -764,7 +759,8 @@ onEvent("recipes", (event) => {
             { mod: "createendertransmission" },
             "minecraft:ender_eye",
             "createastral:subatomic_ingot",
-        ],        [
+        ],
+        [
             { mod: "createendertransmission" },
             "minecraft:ender_pearl",
             "minecraft:ender_eye",

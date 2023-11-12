@@ -4,10 +4,10 @@ Essential hooks for modding with Fabric.
 
 Fabric API is the library for essential hooks and interoperability mechanisms for Fabric mods. Examples include:
 
-- Exposing functionality that is useful but difficult to access for many mods such as particles, biomes and dimensions
-- Adding events, hooks and APIs to improve interopability between mods.
-- Essential features such as registry synchronization and adding information to crash reports.
-- An advanced rendering API designed for compatibility with optimization mods and graphics overhaul mods.
+-   Exposing functionality that is useful but difficult to access for many mods such as particles, biomes and dimensions
+-   Adding events, hooks and APIs to improve interopability between mods.
+-   Essential features such as registry synchronization and adding information to crash reports.
+-   An advanced rendering API designed for compatibility with optimization mods and graphics overhaul mods.
 
 Also check out [Fabric Loader](https://github.com/FabricMC/fabric-loader), the (mostly) version-independent mod loader that powers Fabric. Fabric API is a mod like any other Fabric mod which requires Fabric Loader to be installed.
 
@@ -74,13 +74,14 @@ setOf(
 ```
 
 <!--Linked to gradle documentation on properties-->
+
 Instead of hardcoding version constants all over the build script, Gradle properties may be used to replace these constants. Properties are defined in the `gradle.properties` file at the root of a project. More information is available [here](https://docs.gradle.org/current/userguide/organizing_gradle_projects.html#declare_properties_in_gradle_properties_file).
 
 ## Contributing
 
 See something Fabric API doesn't support, a bug or something that may be useful? We welcome contributions to improve Fabric API.
 
-Check out [the Contributing guidelines](../CONTRIBUTING.md)*.
+Check out [the Contributing guidelines](../CONTRIBUTING.md)\*.
 
 \* The contributing guidelines are work in progress
 
@@ -88,6 +89,6 @@ Check out [the Contributing guidelines](../CONTRIBUTING.md)*.
 
 Fabric API is designed to be modular for ease of updating. This also has the advantage of splitting up the codebase into smaller chunks.
 
-Each module contains its own `README.md`* explaining the module's purpose and additional info on using the module.
+Each module contains its own `README.md`\* explaining the module's purpose and additional info on using the module.
 
 \* The README for each module is being worked on; not every module has a README at the moment

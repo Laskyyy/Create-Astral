@@ -1,11 +1,11 @@
 {
-    "":"---README---",
+    "": "---README---",
     "": "This translation was a bit complicated, because for us 'Shimmer' translates to 'scintillement', which for you means 'twinkle, sparkle, glitter, scintillate, shimmer, glint'.",
     "": "I must admit that having a 'Pioche de scintillement' (scintillate pickaxe or sparkle pickaxe) sounds a bit weird in French.",
     "": "Therefore, I recommend not translating 'Shimmer' to make it seem like an unknown material to French speakers and make it seem less weird to them.",
     "": "To do that, replace all the words 'scintillement' with 'Shimmer', or replace 'Shimmer' by 'scintillement' to have a real French translation.",
     "": "In my case, I use 'Shimmer' like 'Coal' or 'Iron', as a material.",
-    
+
     "achievement.ae2.Charger": "Production de Shimmer",
     "achievement.ae2.Fluix.desc": "Créez de la poussière de Shimmer",
     "achievement.ae2.GlassCable": "Connexion énergétique de Shimmer",

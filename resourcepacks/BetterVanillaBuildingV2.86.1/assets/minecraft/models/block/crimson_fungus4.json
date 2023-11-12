@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "minecraft:block/crimson_fungus4"
-  }
+    "parent": "minecraft:block/cross",
+    "textures": {
+        "cross": "minecraft:block/crimson_fungus4"
+    }
 }
