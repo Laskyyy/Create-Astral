@@ -14,12 +14,24 @@ onEvent('jei.hide.items', event => {
 
 
 onEvent("rei.group", (event) => {
-    event.groupItems("kubejs:rei_groups/chipped", "Chipped Blocks", [
-       	Ingredient.of('@chipped').getItemIds(),
-      ]);
+  event.groupItems("kubejs:rei_groups/chipped", "Chipped Blocks", [
+		Ingredient.of("@chipped")
+			.getItemIds()
+			.filter(
+				(item) =>
+					item !== "chipped:mason_table" &&
+					item !== "chipped:botanist_workbench" &&
+					item !== "chipped:loom_table" &&
+					item !== "chipped:glassblower" &&
+					item !== "chipped:alchemy_bench" &&
+					item !== "chipped:tinkering_table" && 
+					item !== "chipped:carpenters_table" &&
+					item !== "chipped:mechanist_workbench"
+			),
+	]);
 
     event.groupItems("kubejs:rei_groups/tinker", "Tinkers", [
-        Ingredient.of('@tconstruct').getItemIds(),
+        Ingredient.of('@tconstruct').getItemIds()
       ]);
 
 
