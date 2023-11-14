@@ -1,0 +1,13 @@
+name = "Lychee (Fabric)"
+filename = "Lychee-1.18.2-fabric-2.8.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d711563405f4dd7fd2387205cabeb66170c6556e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4264490
+project-id = 574650

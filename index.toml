@@ -18141,6 +18141,11 @@ hash = "2ec9c0dfea10b2de97bcc6a1ec1bf71177e9150050c35b022a1a6258bad08209"
 metafile = true
 
 [[files]]
+file = "mods/lychee-fabric.pw.toml"
+hash = "156dff9f2154c9b8f5fcf326fc1f99e7f15835a8fb3d5fb3af1f8442b0e98ebe"
+metafile = true
+
+[[files]]
 file = "mods/mcdw.pw.toml"
 hash = "6185f7193e5be3ad3ee162adecedf134efca4fafdd2468e800354abf6e28fe23"
 metafile = true
