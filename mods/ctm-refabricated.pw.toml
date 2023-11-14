@@ -1,6 +1,6 @@
 name = "CTM Refabricated"
 filename = "ctm-fabric-1.0.0+1.18.jar"
-side = "both"
+side = "client"
 
 [download]
 mode = "metadata:curseforge"

@@ -220,12 +220,26 @@ function lizardCH2Changes(event) {
     });
 
     event.shaped("create:brass_funnel", ["FB", "CO", "VP"], {
-        B: "tconstruct:rose_gold_ingot",
+        B: "create:golden_sheet",
         O: "minecraft:observer",
         F: "create:filter",
         C: "minecraft:comparator",
-        P: "create:fluid_pipe",
-        V: "create:fluid_valve",
+        P: "create:andesite_funnel",
+        V: "create:andesite_tunnel",
+    });
+
+    event.shaped("create:smart_chute", ["FB", "CO", "PP"], {
+        B: "create:golden_sheet",
+        O: "minecraft:observer",
+        F: "create:filter",
+        C: "minecraft:comparator",
+        P: "create:chute",
+    });
+
+    event.shaped("create:stockpile_switch", ["FB", "BO"], {
+        B: "create:copper_sheet",
+        O: "minecraft:observer",
+        F: "create:railway_casing",
     });
 
     // Pre-brass display links (we can get pre-brass display boards after all)
@@ -1725,58 +1739,61 @@ onEvent("morejs.villager.trades", (event) => {
     });
 });
 // Listen to server recipe event
-onEvent('recipes', event => {
+onEvent("recipes", (event) => {
     event.custom({
-      type: 'create:compacting',
-      ingredients: [
-        Ingredient.of('minecraft:wet_sponge').toJson()
-      ],
-      results: [
-        Item.of('minecraft:sponge').toResultJson(),
-        Item.of('minecraft:cod').withChance(0.25).toResultJson(),
-        Item.of('minecraft:salmon').withChance(0.25).toResultJson(),
-        Item.of('minecraft:tropical_fish').withChance(0.2).toResultJson(),
-        Item.of('minecraft:pufferfish').withChance(0.15).toResultJson(),
-        Item.of('minecraft:ink_sac').withChance(0.15).toResultJson(),
-      ],
-      processingTime: 10
-    })
-})
+        type: "create:compacting",
+        ingredients: [Ingredient.of("minecraft:wet_sponge").toJson()],
+        results: [
+            Item.of("minecraft:sponge").toResultJson(),
+            Item.of("minecraft:cod").withChance(0.25).toResultJson(),
+            Item.of("minecraft:salmon").withChance(0.25).toResultJson(),
+            Item.of("minecraft:tropical_fish").withChance(0.2).toResultJson(),
+            Item.of("minecraft:pufferfish").withChance(0.15).toResultJson(),
+            Item.of("minecraft:ink_sac").withChance(0.15).toResultJson(),
+        ],
+        processingTime: 10,
+    });
+});
 
 //adding composting recipes for coral variants
-onEvent('recipes.compostables', event => {
-
-    const coral = [
-      {type: "tube"},
-      {type: "brain"},
-      {type: "bubble"},
-      {type: "fire"},
-      {type: "horn"}
-    ].forEach(coral => {
+onEvent("recipes.compostables", (event) => {
+    [
+        { type: "tube" },
+        { type: "brain" },
+        { type: "bubble" },
+        { type: "fire" },
+        { type: "horn" },
+    ].forEach((coral) => {
         //normal coral
-        event.add("minecraft:"+ coral.type + "_coral", 0.30)
-        event.add("minecraft:dead_"+ coral.type + "_coral", 0.50)
-    
-        //coral fans
-        event.add("minecraft:"+ coral.type + "_coral_fan", 0.30)
-        event.add("minecraft:dead_"+ coral.type + "_coral_fan", 0.50)
-    
-        //coral blocks
-        event.add("minecraft:"+ coral.type + "_coral_block", 0.30)
-        event.add("minecraft:dead_"+ coral.type + "_coral_block", 0.50)
-      })
-      //if it breaks, blame b0b, (nah blame me :) )
-      //blame b0b :0Blush:
-})
+        event.add("minecraft:" + coral.type + "_coral", 0.3);
+        event.add("minecraft:dead_" + coral.type + "_coral", 0.5);
 
-onEvent("player.logged_in", event => {
-  if(!event.player.stages.has("read_quest")) {
-   event.player.tell(Text.aqua('Please Read The Quest Book (Hover Over Me!)').underlined().hover("The quest book contains most of all the information needed to progress in this mod pack. Its your friend!, Use the item to remove this message"))
-  }
-})
+        //coral fans
+        event.add("minecraft:" + coral.type + "_coral_fan", 0.3);
+        event.add("minecraft:dead_" + coral.type + "_coral_fan", 0.5);
+
+        //coral blocks
+        event.add("minecraft:" + coral.type + "_coral_block", 0.3);
+        event.add("minecraft:dead_" + coral.type + "_coral_block", 0.5);
+    });
+    //if it breaks, blame b0b, (nah blame me :) )
+    //blame b0b :0Blush:
+});
+
+onEvent("player.logged_in", (event) => {
+    if (!event.player.stages.has("read_quest")) {
+        event.player.tell(
+            Text.aqua("Please Read The Quest Book (Hover Over Me!)")
+                .underlined()
+                .hover(
+                    "The quest book contains most of all the information needed to progress in this mod pack. Its your friend!, Use the item to remove this message"
+                )
+        );
+    }
+});
 
 onEvent("item.right_click", (event) => {
-  if (event.item.id == "ftbquests:book") {
-    event.player.stages.add('read_quest')
-  }
+    if (event.item.id == "ftbquests:book") {
+        event.player.stages.add("read_quest");
+    }
 });
