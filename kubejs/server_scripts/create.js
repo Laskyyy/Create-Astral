@@ -2580,6 +2580,10 @@ function compactingRecipes(event) {
             inputs: ["3x minecraft:flint", "minecraft:gravel"],
         },
         {
+            output: "createastral:compressed_experience_block",
+            inputs: ["9x create:experience_block"],
+        },
+        {
             output: { fluid: "kubejs:white_grape_juice", amount: 6750 },
             inputs: ["vinery:white_grape"],
         },
