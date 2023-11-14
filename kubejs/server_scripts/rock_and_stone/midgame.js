@@ -12,15 +12,15 @@ onEvent("recipes", event => {
     event.recipes.createCrushing([
         Item.of("techreborn:cinnabar_dust")
     ], [
-        Item.of("createastral:cinnabar") //add a custom crystal thingy here
+        Item.of("kubejs:cinnabar") //add a custom crystal thingy here
     ])
     event.recipes.createMilling([
         Item.of("techreborn:cinnabar_dust").withChance(0.7)
     ], [
-        Item.of("createastral:cinnabar")
+        Item.of("kubejs:cinnabar")
     ])
     event.recipes.createMixing([
-        Fluid.of("createastral:gold-mercury_solution", FULL_BUCKET_AMMOUNT / 10), //add a custom fluid here
+        Fluid.of("kubejs:gold-mercury_solution", FULL_BUCKET_AMMOUNT / 10), //add a custom fluid here
         Item.of("techreborn:andradite_dust").withChance(0.6)
     ], [
         Fluid.of("techreborn:mercury", FULL_BUCKET_AMMOUNT / 10),
@@ -30,7 +30,7 @@ onEvent("recipes", event => {
         Fluid.of("techreborn:mercury", FULL_BUCKET_AMMOUNT / 20),
         Fluid.of("tconstruct:molten_gold", INGOT_FLUID_AMMOUNT * 3)
     ], [
-        Fluid.of("createastral:gold-mercury_solution", FULL_BUCKET_AMMOUNT / 10)
+        Fluid.of("kubejs:gold-mercury_solution", FULL_BUCKET_AMMOUNT / 10)
     ]).heated()
 }
 function skystoneshit (event) {
@@ -195,7 +195,7 @@ function skystoneshit (event) {
         event.recipes.createCrushing([
             Item.of("techreborn:raw_lead").withChance(0.3),
             Item.of("techreborn:sulfur_dust").withChance(0.6),
-            Item.of("powah:uraninite").withChance(0.2)
+            Item.of("powah:uraninite_raw").withChance(0.2)
         ], [
             Item.of("ad_astra:conglomerate")
         ])
@@ -227,7 +227,7 @@ function skystoneshit (event) {
                 Item: "techreborn:lead_dust",
                 count: 2
             }, {
-                Item: "powah:uraninite"
+                Item: "powah:uraninite_raw"
             }]
         })
         //infernal spire - netherite
@@ -242,7 +242,7 @@ function skystoneshit (event) {
         ]).transitionalItem(inter).loops(2)
         event.recipes.createCrushing([
             Item.of("tconstruct:debris_nugget").withChance(0.1),
-            Item.of("powah:uraninite").withChance(0.25)
+            Item.of("powah:uraninite_raw").withChance(0.25)
         ], [
             Item.of("ad_astra:infernal_spire_block")
         ])
