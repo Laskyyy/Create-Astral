@@ -125,6 +125,8 @@ onEvent("recipes", (event) => {
         { output: "create:large_cogwheel", type: "minecraft:shaped" },
         { output: "create:cogwheel" },
         { output: "create:large_cogwheel" },
+        { output: "create:experience_block" },
+        { output: "create:stockpile_switch" },
         { output: "create:copper_casing" },
         {
             output: "create:andesite_alloy",
