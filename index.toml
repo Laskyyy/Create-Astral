@@ -17614,7 +17614,7 @@ hash = "4fd67e88659e33e0ec468b3198c509a5c9f89196f0e0eb2df91d9562a3d710dc"
 
 [[files]]
 file = "kubejs/server_scripts/rock_and_stone/earlygame.js"
-hash = "6c6e41211beac96fb55c339ea69fdfeb296fe18ee29bbba3f9da49dfde6fc317"
+hash = "aaf8bd7127b1f7f597e3a4647503585e7ceee41fe40805167337e0bbfbbc2abd"
 
 [[files]]
 file = "kubejs/server_scripts/rock_and_stone/endgame.js"
@@ -17864,7 +17864,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-ender-transmission.pw.toml"
-hash = "02c563f8592905e2f861669af2a44988666039d279900f1f73a7702d2a0f9345"
+hash = "b6453b125aefddd5471a02590dc61a9613c7046e6025776f1ee296d0c2778b8b"
 metafile = true
 
 [[files]]
@@ -18312,6 +18312,11 @@ metafile = true
 [[files]]
 file = "mods/polymorph-fabric.pw.toml"
 hash = "9545cf76a0eac3002c7f339554b77ffacec16251b8c2f13403e764cff6e7b097"
+metafile = true
+
+[[files]]
+file = "mods/powah.pw.toml"
+hash = "7c5ac9f0c548211b546c505ad0c2733aa70c80fa4b6e57cf2aeddacb420435f7"
 metafile = true
 
 [[files]]
