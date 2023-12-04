@@ -1101,11 +1101,7 @@ onEvent("worldgen.add", (event) => {
 
     event.addOre((ore) => {
         ore.id = "kubejs:glowstonemoon"; // optional
-        ore.biomes = [
-            "ad_astra:lunar_wastelands",
-            "minecraft:basalt_deltas",
-            "incendium:toxic_heap",
-        ];
+        ore.biomes = ["ad_astra:lunar_wastelands", "minecraft:basalt_deltas"];
         ore.addTarget("#ad_astra:moon_ore_replaceables", "minecraft:glowstone");
 
         ore.count([10, 40]).squared().triangleHeight(0, 85);
@@ -1113,11 +1109,7 @@ onEvent("worldgen.add", (event) => {
 
     event.addOre((ore) => {
         ore.id = "kubejs:rubyoremoon"; // optional
-        ore.biomes = [
-            "ad_astra:lunar_wastelands",
-            "minecraft:basalt_deltas",
-            "incendium:toxic_heap",
-        ];
+        ore.biomes = ["ad_astra:lunar_wastelands", "minecraft:basalt_deltas"];
         ore.biomes = [
             {
                 not: {
@@ -1135,11 +1127,7 @@ onEvent("worldgen.add", (event) => {
 
     event.addOre((ore) => {
         ore.id = "kubejs:cobaltoremoon"; // optional
-        ore.biomes = [
-            "ad_astra:lunar_wastelands",
-            "minecraft:basalt_deltas",
-            "incendium:toxic_heap",
-        ];
+        ore.biomes = ["ad_astra:lunar_wastelands", "minecraft:basalt_deltas"];
         ore.biomes = [
             {
                 not: {
@@ -1157,11 +1145,7 @@ onEvent("worldgen.add", (event) => {
 
     event.addOre((ore) => {
         ore.id = "kubejs:silveroremoon"; // optional
-        ore.biomes = [
-            "ad_astra:lunar_wastelands",
-            "minecraft:basalt_deltas",
-            "incendium:toxic_heap",
-        ];
+        ore.biomes = ["ad_astra:lunar_wastelands", "minecraft:basalt_deltas"];
         ore.addTarget(
             "#ad_astra:moon_ore_replaceables",
             "techreborn:deepslate_silver_ore"
@@ -1172,11 +1156,7 @@ onEvent("worldgen.add", (event) => {
 
     event.addOre((ore) => {
         ore.id = "kubejs:basalt"; // optional
-        ore.biomes = [
-            "ad_astra:lunar_wastelands",
-            "minecraft:basalt_deltas",
-            "incendium:toxic_heap",
-        ];
+        ore.biomes = ["ad_astra:lunar_wastelands", "minecraft:basalt_deltas"];
         ore.addTarget("#ad_astra:moon_ore_replaceables", "create:scoria");
 
         ore.count([1, 2]).squared().triangleHeight(60, 110);
@@ -1185,11 +1165,7 @@ onEvent("worldgen.add", (event) => {
 
     event.addOre((ore) => {
         ore.id = "kubejs:skystoneae2"; // optional
-        ore.biomes = [
-            "ad_astra:lunar_wastelands",
-            "minecraft:basalt_deltas",
-            "incendium:toxic_heap",
-        ];
+        ore.biomes = ["ad_astra:lunar_wastelands", "minecraft:basalt_deltas"];
         ore.addTarget("#ad_astra:moon_ore_replaceables", "ad_astra:sky_stone");
 
         ore.count([1, 2]).squared().triangleHeight(0, 110);
