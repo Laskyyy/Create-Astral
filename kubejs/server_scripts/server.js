@@ -1105,11 +1105,6 @@ onEvent("recipes", (event) => {
         {}
     );
 
-    event.shaped("16x create:refined_radiance_casing", ["BBB", "BAB", "BBB"], {
-        A: "create:refined_radiance",
-        B: "#minecraft:planks",
-    });
-
     event.shaped("10x minecraft:torch", ["A", "B"], {
         A: "naturalist:glow_goop",
         B: "minecraft:stick",

@@ -395,6 +395,13 @@ onEvent("block.registry", (event) => {
         .tagBlock("minecraft:mineable/pickaxe");
 
     event
+        .create("createastral:wired_panelling")
+        .material("lantern")
+        .hardness(3)
+        .displayName("Wired Panelling")
+        .tagBlock("minecraft:mineable/pickaxe");
+
+    event
         .create("createastral:blast-resistant_concrete", "basic")
         .material("stone")
         .hardness(4)

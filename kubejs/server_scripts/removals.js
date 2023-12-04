@@ -273,6 +273,8 @@ onEvent("recipes", (event) => {
         { output: "ad_astra:ostrum_ingot", type: "minecraft:blasting" },
         { output: "ad_astra:calorite_ingot", type: "minecraft:smelting" },
         { output: "ad_astra:calorite_ingot", type: "minecraft:blasting" },
+        { output: "ad_astra:calorite_engine" },
+        { output: "ad_astra:calorite_tank" },
 
         // AE2
 
