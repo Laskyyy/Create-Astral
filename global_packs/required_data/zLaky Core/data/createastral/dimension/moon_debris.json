@@ -3,7 +3,7 @@
     "generator": {
         "type": "minecraft:noise",
         "seed": 0,
-        "settings": "createastral:end",
+        "settings": "minecraft:end",
         "biome_source": {
             "type": "minecraft:multi_noise",
             "biomes": [
