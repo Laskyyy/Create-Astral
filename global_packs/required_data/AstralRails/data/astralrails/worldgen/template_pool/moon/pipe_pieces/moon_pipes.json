@@ -23,7 +23,16 @@
 		{
       "weight": 1,
       "element": {
-        "location": "astralrails:moon/pipes/pipe_2",
+        "location": "astralrails:moon/pipes/pipe_3",
+        "processors": [],
+        "projection": "terrain_matching",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 1,
+      "element": {
+        "location": "astralrails:moon/pipes/pipe_4",
         "processors": [],
         "projection": "terrain_matching",
         "element_type": "minecraft:legacy_single_pool_element"
@@ -42,6 +51,33 @@
       "weight": 1,
       "element": {
         "location": "astralrails:moon/pipes/cogwheel",
+        "processors": [],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+		{
+      "weight": 1,
+      "element": {
+        "location": "astralrails:moon/nuclear/tank_1",
+        "processors": [],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+		{
+      "weight": 1,
+      "element": {
+        "location": "astralrails:moon/nuclear/house_1",
+        "processors": [],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+		{
+      "weight": 1,
+      "element": {
+        "location": "astralrails:moon/nuclear/house_2",
         "processors": [],
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
