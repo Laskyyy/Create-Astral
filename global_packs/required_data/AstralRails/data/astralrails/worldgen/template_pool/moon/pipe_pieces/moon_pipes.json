@@ -53,7 +53,7 @@
         "location": "astralrails:moon/pipes/cogwheel",
         "processors": [],
         "projection": "rigid",
-        "element_type": "minecraft:single_pool_element"
+        "element_type": "minecraft:legacy_single_pool_element"
       }
     },
 		{
