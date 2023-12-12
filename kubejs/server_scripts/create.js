@@ -2043,6 +2043,34 @@ function splashingRecipes(event) {
                 ["ae2:fluix_glass_cable", 1],
             ],
         },
+        
+        {
+            input: "#ae2:covered_cable",
+            outputs: [
+                ["ae2:fluix_covered_cable", 1],
+            ],
+        },
+
+        {
+            input: "#ae2:dense_cable",
+            outputs: [
+                ["ae2:fluix_covered_dense_cable", 1],
+            ],
+        },
+
+        {
+            input: "#ae2:smart_cable",
+            outputs: [
+                ["ae2:fluix_smart_cable", 1],
+            ],
+        },
+
+        {
+            input: "#ae2:smart_dense_cable",
+            outputs: [
+                ["ae2:fluix_smart_dense_cable", 1],
+            ],
+        },
 
 
     ].forEach((recipe) => {
