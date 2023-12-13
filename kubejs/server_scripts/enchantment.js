@@ -3312,38 +3312,6 @@ onEvent("recipes", (event) => {
             time: null,
         },
         {
-            output: Item.of(
-                "minecraft:enchanted_book",
-                '{StoredEnchantments:[{id:"create:capacity"",lvl:2s}]}'
-            ),
-            input: [
-                Item.of(
-                    "minecraft:enchanted_book",
-                    '{StoredEnchantments:[{id:"create:capacity"",lvl:1s}]}'
-                ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
-            ],
-            superheated: false,
-            time: null,
-        },
-        {
-            output: Item.of(
-                "minecraft:enchanted_book",
-                '{StoredEnchantments:[{id:"create:capacity"",lvl:3s}]}'
-            ),
-            input: [
-                Item.of(
-                    "minecraft:enchanted_book",
-                    '{StoredEnchantments:[{id:"create:capacity"",lvl:2s}]}'
-                ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
-            ],
-            superheated: false,
-            time: null,
-        },
-        {
             output: { fluid: "kubejs:liquid_xp_nuggies", amount: 1000 },
             input: ["create:experience_nugget"],
             superheated: false,
