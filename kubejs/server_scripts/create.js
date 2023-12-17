@@ -2052,7 +2052,7 @@ function splashingRecipes(event) {
         },
 
         {
-            input: "#ae2:dense_cable",
+            input: "#ae2:covered_dense_cable",
             outputs: [
                 ["ae2:fluix_covered_dense_cable", 1],
             ],
