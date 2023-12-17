@@ -2034,6 +2034,45 @@ function splashingRecipes(event) {
                 ["dustrial_decor:rusty_sheet_metal", 1],
             ],
         },
+
+        // ae2 cable washing made easy !!!
+
+        {
+            input: "#ae2:glass_cable",
+            outputs: [
+                ["ae2:fluix_glass_cable", 1],
+            ],
+        },
+        
+        {
+            input: "#ae2:covered_cable",
+            outputs: [
+                ["ae2:fluix_covered_cable", 1],
+            ],
+        },
+
+        {
+            input: "#ae2:covered_dense_cable",
+            outputs: [
+                ["ae2:fluix_covered_dense_cable", 1],
+            ],
+        },
+
+        {
+            input: "#ae2:smart_cable",
+            outputs: [
+                ["ae2:fluix_smart_cable", 1],
+            ],
+        },
+
+        {
+            input: "#ae2:smart_dense_cable",
+            outputs: [
+                ["ae2:fluix_smart_dense_cable", 1],
+            ],
+        },
+
+
     ].forEach((recipe) => {
         let cleanoutputs = [];
         recipe.outputs.forEach((output) => {
