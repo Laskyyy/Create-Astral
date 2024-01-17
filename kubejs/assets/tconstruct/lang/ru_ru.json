@@ -1,0 +1,23 @@
+{
+    "block.tconstruct.cobalt_ore": "Руда лунного кобальта",
+    
+    "material.tconstruct.desh": "Деш",
+    "material.tconstruct.desh.flavor": "Мягкий, быстрый, надежный.",
+    "material.tconstruct.desh.encyclopedia": "Средние характеристики в целом, содержит различные необычные модификаторы для добычи и удобства.",
+    
+    "material.tconstruct.ostrum": "Острум",
+    "material.tconstruct.ostrum.flavor": "Оно весит тонны! Из этого ты делаешь инструменты?!",
+    "material.tconstruct.ostrum.encyclopedia": "Божественная прочность, но медленная скорость добычи. Невероятно полезно для добычи руды.",
+    
+    "material.tconstruct.calorite": "Калорит",
+    "material.tconstruct.calorite.flavor": "Самый острый металл в землях.",
+    "material.tconstruct.calorite.encyclopedia": "Кроваво-красный, как ваши враги после ощущения клинка вашего кинжала.",
+    
+    "material.tconstruct.shadow": "Тень",
+    "material.tconstruct.shadow.flavor": "Плотный, как тёмная материя.",
+    "material.tconstruct.shadow.encyclopedia": "Невероятная прочность. Идеальный материал для рукоятей и связок инструментов.",
+    
+    "material.tconstruct.radiant": "Сияющий",
+    "material.tconstruct.radiant.flavor": "Твёрдый. Лёгкий.",
+    "material.tconstruct.radiant.encyclopedia": "Сила самого света. Крайне хрупкий при изготовлении, обладает непревзойдёнными модификаторами, скоростью и слотами для экспериментов."
+}

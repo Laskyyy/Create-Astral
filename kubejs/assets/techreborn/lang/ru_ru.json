@@ -1,0 +1,13 @@
+{
+    "block.techreborn.nuke": "W.O.L.F",
+    "block.techreborn.deepslate_silver_ore": "Лунная серебряная руда",
+    "block.techreborn.deepslate_lead_ore": "Марсианская свинцовая руда",
+    "block.techreborn.deepslate_iridium_ore": "Меркурианская иридиевая руда",
+    "block.techreborn.deepslate_galena_ore": "Меркурианская галенитовая руда",
+    "block.techreborn.deepslate_sodalite_ore": "Марсианская содалитовая руда",
+    "item.techreborn.electronic_circuit": "Продвинутая интегральная схема",
+    "item.techreborn.industrial_circuit": "Промышленный вычислительный блок",
+    "item.techreborn.machine_parts": "Детали машины",
+    "item.techreborn.uu_matter": "Очищенный мерцающий",
+    "item.techreborn.synthetic_redstone_crystal": "Синтетический красный камень"
+    }
