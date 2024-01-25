@@ -1,6 +1,6 @@
 {
   "config": {
-    "start_pool": "astralrails:moon/nuclear/powerplant_origin",
+    "start_pool": "astralrails:moon/nuclear/powerplant",
     "size": 7
   },
   "biomes": "#astralrails:has_structure/moon_debris",
