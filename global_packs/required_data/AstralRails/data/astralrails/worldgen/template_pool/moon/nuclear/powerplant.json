@@ -5,11 +5,11 @@
     {
       "weight": 1,
       "element": {
-        "location": "astralrails:moon/nuclear/powerplant_origin_pipe",
+        "location": "astralrails:moon/nuclear/powerplant_origin",
         "processors": [],
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
-    }
+    }		
   ]
 }
