@@ -10,6 +10,15 @@
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
-    }		
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "astralrails:moon/nuclear/tank_2",
+        "processors": [],
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
   ]
 }

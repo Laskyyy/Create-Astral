@@ -106,8 +106,8 @@ onEvent("recipes", (event) => {
         ["catwalksinc:iron_rod", "createaddition:iron_rod"],
         [
             { type: "minecraft:crafting_shaped" },
-            "farmersdelight:rope",
             "campanion:rope",
+            "farmersdelight:rope",
         ],
         // ['tconstruct:scorched_brick', 'tconstruct:scorched_bricks') // ???
         [

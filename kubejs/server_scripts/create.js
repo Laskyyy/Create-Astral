@@ -2004,6 +2004,24 @@ function mixingRecipes(event) {
             time: 2000,
         },
         {
+            output: "createastral:separation_agent",
+            input: [
+                { fluid: "yttr:void", amount: 81000 },
+                "createastral:refining_agent",
+            ],
+            heat: "superheated",
+            time: 2000,
+        },
+        {
+            output: Fluid.of("kubejs:molten_radiance", 40500),
+            input: [
+                { fluid: "kubejs:shimmer", amount: 81000 },
+                "createastral:pure_star_shard",
+            ],
+            heat: "superheated",
+            time: 2000,
+        },
+        {
             output: "tconstruct:ichor_slime_ball",
             input: [
                 { fluid: "kubejs:shimmer", amount: 9000 },
@@ -2244,7 +2262,7 @@ function mechanicalCraftingRecipes(event) {
                 D: "immersive_aircraft:engine",
                 E: "#create:seats",
                 F: "createastral:airship_blueprint",
-                G: "campanion:rope",
+                G: "farmersdelight:rope",
             },
         },
         {
@@ -2629,6 +2647,7 @@ function pressingRecipes(event) {
         ["techreborn:electrum_ingot", "techreborn:electrum_plate"],
         ["createastral:bronze_ingot", "createastral:bronze_sheet"],
         ["minecraft:lapis_block", "create:lapis_sheet"],
+        ["createastral:pure_star_shard", "minecraft:nether_star"],
     ].forEach((recipe) => {
         event.recipes.createPressing(recipe[1], recipe[0]);
     });
