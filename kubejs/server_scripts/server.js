@@ -669,22 +669,22 @@ onEvent("recipes", (event) => {
 
     ///// EXTENDED DRAWERS ////
 
-    event.shaped("extended_drawers:single_drawer", ["ABA", "BCB", "ABA"], {
-        A: "#c:stripped_logs",
-        B: "create:andesite_alloy",
-        C: "reinfchest:copper_chest",
+    event.shaped("extended_drawers:single_drawer", ["AAA", "ABA", "ACA"], {
+        A: "#minecraft:planks",
+        B: "minecraft:barrel",
+        C: "minecraft:paper",
     });
 
-    event.shaped("extended_drawers:double_drawer", ["ACA", "BBB", "ACA"], {
-        A: "#c:stripped_logs",
-        B: "create:andesite_alloy",
-        C: "reinfchest:copper_chest",
+    event.shaped("extended_drawers:double_drawer", ["AAA", "CBC", "AAA"], {
+        A: "#minecraft:planks",
+        B: "minecraft:barrel",
+        C: "minecraft:paper",
     });
 
     event.shaped("extended_drawers:quad_drawer", ["ACA", "CBC", "ACA"], {
-        A: "#c:stripped_logs",
-        B: "create:andesite_alloy",
-        C: "reinfchest:copper_chest",
+        A: "#minecraft:planks",
+        B: "minecraft:barrel",
+        C: "minecraft:paper",
     });
 
     event.shaped("extended_drawers:upgrade_frame", ["AB", "BA"], {
@@ -692,25 +692,22 @@ onEvent("recipes", (event) => {
         B: "create:andesite_alloy",
     });
 
-    event.shaped("extended_drawers:t1_upgrade", ["ABA", "DCD", "ABA"], {
+    event.shaped("extended_drawers:t1_upgrade", ["ABA", "BCB", "ABA"], {
+        A: "techreborn:rubber",
+        B: "create:sturdy_sheet",
+        C: "extended_drawers:upgrade_frame",
+    });
+
+    event.shaped("extended_drawers:t2_upgrade", ["ABA", "BCB", "ABA"], {
         A: "tconstruct:seared_brick",
-        B: "techreborn:rubber",
-        C: "reinfchest:iron_chest",
-        D: "extended_drawers:upgrade_frame",
+        B: "tconstruct:rose_gold_ingot",
+        C: "extended_drawers:t1_upgrade",
     });
 
-    event.shaped("extended_drawers:t2_upgrade", ["ABA", "DCD", "ABA"], {
+    event.shaped("extended_drawers:t3_upgrade", ["ABA", "BCB", "ABA"], {
         A: "create:brass_sheet",
-        B: "ae2:fluix_dust",
-        C: "reinfchest:gold_chest",
-        D: "extended_drawers:t1_upgrade",
-    });
-
-    event.shaped("extended_drawers:t3_upgrade", ["ABA", "DCD", "ABA"], {
-        A: "techreborn:lead_plate",
-        B: "passivepiglins:piglin_fortune",
-        C: "reinfchest:diamond_chest",
-        D: "extended_drawers:t2_upgrade",
+        B: "ae2:fluix_block",
+        C: "extended_drawers:t2_upgrade",
     });
 
     event.shaped("extended_drawers:t4_upgrade", ["ABA", "DCD", "ABA"], {
@@ -720,10 +717,9 @@ onEvent("recipes", (event) => {
         D: "extended_drawers:t3_upgrade",
     });
 
-    event.shaped("extended_drawers:downgrade", ["ABA", "DCD", "ABA"], {
+    event.shaped("extended_drawers:downgrade", ["ABA", "BDB", "ABA"], {
         A: "createaddition:copper_rod",
-        B: "tconstruct:grout",
-        C: "trashcans:item_trash_can",
+        B: "minecraft:flint",
         D: "extended_drawers:upgrade_frame",
     });
 
@@ -1183,16 +1179,32 @@ onEvent("recipes", (event) => {
         }
     );
 
-    event.shaped("travelersbackpack:standard", ["ABA", "CDE", "FAF"], {
-        A: "farmersdelight:canvas",
-        B: "minecraft:crafting_table",
-        C: "campanion:leather_pouch",
-        D: "minecraft:barrel",
-        E: "campanion:sleeping_bag",
-        F: "campanion:rope",
+    event.shaped("travelersbackpack:standard", ["ABC", "DED", "FBF"], {
+        A: "#c:workbenches",
+        B: "campanion:leather_pouch",
+        C: "campanion:sleeping_bag",
+        D: "create:fluid_tank",
+        E: "tconstruct:travellers_chestplate",
+        F: "farmersdelight:rope",
+    });
+    event.shaped("campanion:sleeping_bag", ["AAA", "BCB"], {
+        A: "campanion:wool_tarp",
+        B: "farmersdelight:canvas_rug",
+        C: "minecraft:string",
+    });
+    event.shaped("travelersbackpack:hose", ["ABB", " CB", "  B"], {
+        A: "travellersbackpack:hose_nozzle",
+        B: "techreborn:rubber",
+        C: "minecraft:green_dye",
+    });
+    event.shaped("travelersbackpack:hose_nozzle", [" A ", "BCB", "DDD"], {
+        A: "create:iron_sheet",
+        B: "create:golden_sheet",
+        C: "create:cogwheel",
+        D: "create:andesite_alloy",
     });
     event.shaped("campanion:tent_bag", [" A ", "ABA", " A "], {
-        A: "campanion:rope",
+        A: "farmersdelight:rope",
         B: "campanion:leather_pouch",
     });
     event.shaped("ad_astra:moon_globe", ["BBB", "BA ", "BC "], {
