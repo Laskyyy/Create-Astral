@@ -371,16 +371,7 @@ onEvent("block.registry", (event) => {
         .hardness(3)
         .displayName("Copper Plating")
         .tagBlock("minecraft:mineable/pickaxe");
-
     event
-        .create("createastral:experience_block")
-        .material("lantern")
-        .hardness(4)
-        .displayName("Dummy Block")
-        .tagBlock("minecraft:mineable/pickaxe")
-        .lightLevel(1);
-    
-        event
         .create("createastral:refined_radiance_block")
         .material("lantern")
         .hardness(4)

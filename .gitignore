@@ -2,15 +2,11 @@ packwiz-installer-bootstrap.jar
 packwiz-installer.jar
 completion.sh
 reload.bat
-config/sodium*
-config/iris*
-.fabric
+
 backups
 coremods
 crash-reports
 ESM
-fancymenu*
-!fancymenustuff
 item_renderer
 local
 logs
@@ -19,21 +15,16 @@ screenshots
 ModTranslations
 observable_profiles
 rei_exports
-shaderpacks
-shaderpacks/*
-texturepacks
 hs_err_pid*
 o_prof
 imgui.log
 ears_debug.log
 hotbar.nbt
 rhino.local.properties
-servers.dat*
 usercache.json
 journeymap
 !journeymap/defaultconfig.json
-mods
-servers.dat*
+kubejs/exported/*
 
 # Exclude exported CurseForge zip files
 *.zip
