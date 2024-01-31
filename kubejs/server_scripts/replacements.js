@@ -2,7 +2,6 @@ onEvent("recipes", (event) => {
     // [?optional object specifying a mod/type, original item, replacement item]
     [
         ["create:powdered_obsidian", "#c:dusts/obsidian"],
-        ["createastral:experience_block", "create:experience_block"],
         ["techreborn:obsidian_dust", "#c:dusts/obsidian"],
         ["createaddition:diamond_grit", "techreborn:diamond_dust"],
 
@@ -107,8 +106,8 @@ onEvent("recipes", (event) => {
         ["catwalksinc:iron_rod", "createaddition:iron_rod"],
         [
             { type: "minecraft:crafting_shaped" },
-            "farmersdelight:rope",
             "campanion:rope",
+            "farmersdelight:rope",
         ],
         // ['tconstruct:scorched_brick', 'tconstruct:scorched_bricks') // ???
         [

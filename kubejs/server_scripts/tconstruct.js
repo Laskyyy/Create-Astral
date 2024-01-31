@@ -33,7 +33,7 @@ onEvent("recipes", (event) => {
         },
         {
             fluid: ["kubejs:liquid_xp_nuggies", INGOT_FLUID_AMMOUNT * 9],
-            result: "createastral:experience_block",
+            result: "create:experience_block",
             cooling_time: 180,
             cast: null,
         },

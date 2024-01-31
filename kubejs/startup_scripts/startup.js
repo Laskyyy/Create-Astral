@@ -395,6 +395,13 @@ onEvent("block.registry", (event) => {
         .tagBlock("minecraft:mineable/pickaxe");
 
     event
+        .create("createastral:wired_panelling")
+        .material("lantern")
+        .hardness(3)
+        .displayName("Wired Panelling")
+        .tagBlock("minecraft:mineable/pickaxe");
+
+    event
         .create("createastral:blast-resistant_concrete", "basic")
         .material("stone")
         .hardness(4)
@@ -467,7 +474,7 @@ onEvent("block.registry", (event) => {
         .material("stone");
 
     event
-        .create("createastral:experience_block")
+        .create("createastral:compressed_experience_block")
         .tagBlock("minecraft:mineable/pickaxe")
         .material("glass")
         .hardness(2)
@@ -631,7 +638,7 @@ onEvent("item.registry", (event) => {
         event.create("createastral:star_shard").glow(true),
         event.create("createastral:pure_star_shard").glow(true),
         event.create("createastral:crushed_raw_gadolinite"),
-        event.create("createastral:experience_ingot"),
+        event.create("createastral:experience_ingot").glow(true),
         event.create("createastral:stone_dust").displayName("Stone Dust");
     event
         .create("createastral:stone_small_dust")
@@ -1034,41 +1041,26 @@ onEvent("item.tooltip", (e) => {
         },
     ];
 
-    tooltips.forEach((tooltip) => {
+    tooltips.forEach(tooltip => {
         e.addAdvanced(tooltip.item, (item, advanced, text) => {
-            if (!e.isShift()) {
-                text.add(1, [
-                    Text.of("Hold ").darkGreen(),
-                    Text.of("Shift ").green(),
-                    Text.of("to see more info.").darkGreen(),
-                ]);
-            }
-            if (e.isShift()) {
-                text.add(1, [Text.of(tooltip.tooltip).green()]);
-            }
+          if (!e.isShift()) {
+            text.add(1, [Text.of('Hold ').darkGreen(), Text.of('Shift ').green(), Text.of('to see more info.').darkGreen()]);
+          }
+          if (e.isShift()) {
+            text.add(1, [Text.of(tooltip.tooltip).green()]);
+          }
         });
-    });
-    e.addAdvanced("createastral:orcane", (item, advanced, text) => {
+      });
+      e.addAdvanced('createastral:orcane', (item, advanced, text) => {
         if (!e.isShift()) {
-            text.add(1, [
-                Text.of("Hold ").darkGreen(),
-                Text.of("Shift ").green(),
-                Text.of("to see more info.").darkGreen(),
-            ]);
+          text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
         }
         if (e.isShift()) {
-            text.add(1, [
-                Text.of(
-                    "If you are new to create, use pondering or online guides. The pack is almost exclusively centered around it and Tech Reborn. The quest book has some items that give a general idea of what has changed / what is included, in the order of when to take note of them, however the pack can be played without following it exactly, so do what you enjoy."
-                ).gold(),
-            ]);
-            text.add(2, [
-                Text.of(
-                    "A major change you *might* want to be aware of. The nether does not exist. Do not even try to make the portal as it will not function. All nether related items are distributed throughout the pack (mostly planets)"
-                ).white(),
-            ]);
+          
+      text.add(1, [Text.of('If you are new to create, use pondering or online guides. The pack is almost exclusively centered around it and Tech Reborn. The quest book has some items that give a general idea of what has changed / what is included, in the order of when to take note of them, however the pack can be played without following it exactly, so do what you enjoy.').gold(),])
+      text.add(2, [Text.of('A major change you *might* want to be aware of. The nether does not exist. Do not even try to make the portal as it will not function. All nether related items are distributed throughout the pack (mostly planets)').white(),])
         }
-    });
+      });
 });
 
 ///// CUSTOM ASTRAL WORLDGEN /////
@@ -1094,11 +1086,7 @@ onEvent("worldgen.add", (event) => {
 
     event.addOre((ore) => {
         ore.id = "kubejs:glowstonemoon"; // optional
-        ore.biomes = [
-            "ad_astra:lunar_wastelands",
-            "minecraft:basalt_deltas",
-            "incendium:toxic_heap",
-        ];
+        ore.biomes = ["ad_astra:lunar_wastelands", "minecraft:basalt_deltas"];
         ore.addTarget("#ad_astra:moon_ore_replaceables", "minecraft:glowstone");
 
         ore.count([10, 40]).squared().triangleHeight(0, 85);
@@ -1106,11 +1094,7 @@ onEvent("worldgen.add", (event) => {
 
     event.addOre((ore) => {
         ore.id = "kubejs:rubyoremoon"; // optional
-        ore.biomes = [
-            "ad_astra:lunar_wastelands",
-            "minecraft:basalt_deltas",
-            "incendium:toxic_heap",
-        ];
+        ore.biomes = ["ad_astra:lunar_wastelands", "minecraft:basalt_deltas"];
         ore.biomes = [
             {
                 not: {
@@ -1128,11 +1112,7 @@ onEvent("worldgen.add", (event) => {
 
     event.addOre((ore) => {
         ore.id = "kubejs:cobaltoremoon"; // optional
-        ore.biomes = [
-            "ad_astra:lunar_wastelands",
-            "minecraft:basalt_deltas",
-            "incendium:toxic_heap",
-        ];
+        ore.biomes = ["ad_astra:lunar_wastelands", "minecraft:basalt_deltas"];
         ore.biomes = [
             {
                 not: {
@@ -1150,11 +1130,7 @@ onEvent("worldgen.add", (event) => {
 
     event.addOre((ore) => {
         ore.id = "kubejs:silveroremoon"; // optional
-        ore.biomes = [
-            "ad_astra:lunar_wastelands",
-            "minecraft:basalt_deltas",
-            "incendium:toxic_heap",
-        ];
+        ore.biomes = ["ad_astra:lunar_wastelands", "minecraft:basalt_deltas"];
         ore.addTarget(
             "#ad_astra:moon_ore_replaceables",
             "techreborn:deepslate_silver_ore"
@@ -1165,11 +1141,7 @@ onEvent("worldgen.add", (event) => {
 
     event.addOre((ore) => {
         ore.id = "kubejs:basalt"; // optional
-        ore.biomes = [
-            "ad_astra:lunar_wastelands",
-            "minecraft:basalt_deltas",
-            "incendium:toxic_heap",
-        ];
+        ore.biomes = ["ad_astra:lunar_wastelands", "minecraft:basalt_deltas"];
         ore.addTarget("#ad_astra:moon_ore_replaceables", "create:scoria");
 
         ore.count([1, 2]).squared().triangleHeight(60, 110);
@@ -1178,11 +1150,7 @@ onEvent("worldgen.add", (event) => {
 
     event.addOre((ore) => {
         ore.id = "kubejs:skystoneae2"; // optional
-        ore.biomes = [
-            "ad_astra:lunar_wastelands",
-            "minecraft:basalt_deltas",
-            "incendium:toxic_heap",
-        ];
+        ore.biomes = ["ad_astra:lunar_wastelands", "minecraft:basalt_deltas"];
         ore.addTarget("#ad_astra:moon_ore_replaceables", "ad_astra:sky_stone");
 
         ore.count([1, 2]).squared().triangleHeight(0, 110);

@@ -35,18 +35,5 @@
     "item.minecraft.tipped_arrow.effect.levitation": "Bullet of Levitation",
     "item.minecraft.tipped_arrow.effect.luck": "Bullet of Luck",
     "item.minecraft.tipped_arrow.effect.turtle_master": "Bullet of the Turtle Master",
-    "item.minecraft.tipped_arrow.effect.slow_falling": "Bullet of Slow Falling",
-
-    "biome.incendium.ash_barrens": "Ash Barrens",
-    "biome.incendium.infernal_dunes": "Infernal Dunes",
-    "biome.incendium.inverted_forest": "Inverted Forest",
-    "biome.incendium.quartz_flats": "Quartz Flats",
-    "biome.incendium.toxic_heap": "Toxic Heap",
-    "biome.incendium.volcanic_deltas": "Volcanic Deltas",
-    "biome.incendium.weeping_valley": "Weeping Valley",
-    "biome.incendium.withered_forest": "Withered Forest",
-
-    "biome.nullscape.crystal_peaks": "Crystal Peaks",
-    "biome.nullscape.shadowlands": "Shadowlands",
-    "biome.nullscape.void_barrens": "Void Barrens"
+    "item.minecraft.tipped_arrow.effect.slow_falling": "Bullet of Slow Falling"
 }
