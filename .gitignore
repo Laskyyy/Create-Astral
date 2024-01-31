@@ -2,29 +2,8 @@ packwiz-installer-bootstrap.jar
 packwiz-installer.jar
 completion.sh
 reload.bat
-
-backups
-coremods
-crash-reports
-ESM
-item_renderer
-local
-logs
-saves
-screenshots
-ModTranslations
-observable_profiles
-rei_exports
-hs_err_pid*
-o_prof
-imgui.log
-ears_debug.log
-hotbar.nbt
-rhino.local.properties
-usercache.json
-journeymap
-!journeymap/defaultconfig.json
-kubejs/exported/*
-
 # Exclude exported CurseForge zip files
 *.zip
+
+# Exclude exported Modrinth modpacks
+*.mrpack
