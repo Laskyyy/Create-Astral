@@ -1,0 +1,53 @@
+
+fancymenu.fmaudio.back = Back
+fancymenu.fmaudio.done = Done
+fancymenu.fmaudio.cancel = Cancel
+
+fancymenu.fmaudio.audio.channel = Audio Channel: §6{}
+fancymenu.fmaudio.audio.loop.on = Loop: §aOn
+fancymenu.fmaudio.audio.loop.off = Loop: §cOff
+fancymenu.fmaudio.audio.once_per_session.on = Once Per Session: §aOn
+fancymenu.fmaudio.audio.once_per_session.off = Once Per Session: §cOff
+fancymenu.fmaudio.audio.once_per_session.desc = If the element should play its%n%audios only once per session.
+fancymenu.fmaudio.audio.manage = Manage Audios
+fancymenu.fmaudio.audio.manage.desc = Add, edit or remove audios.
+fancymenu.fmaudio.audio.choose = Choose Audio
+fancymenu.fmaudio.audio.choose.info = §lAudio Info%n%%n%{}%n%Index: §6{}%n%Volume: §6{}
+fancymenu.fmaudio.audio.add = Add Audio
+fancymenu.fmaudio.audio.remove = Remove Audio
+fancymenu.fmaudio.audio.remove.confirm = §c§lAre you sure?%n%%n%Do you really want to §cdelete §rthis audio?%n% %n% %n% %n%
+fancymenu.fmaudio.audio.edit = Edit Audio
+fancymenu.fmaudio.audio.add_or_edit = Add/Edit Audio
+fancymenu.fmaudio.audio.sourcetype.external_local = Source Type: §6Local
+fancymenu.fmaudio.audio.sourcetype.external_web = Source Type: §6Web
+fancymenu.fmaudio.audio.choosesource = Choose Source
+fancymenu.fmaudio.audio.choosesource.file.invalid = §c§lInvalid File!%n%%n%The chosen file is not a valid OGG file!%n% %n% %n% %n%
+fancymenu.fmaudio.audio.choosesource.url = Input Audio URL
+fancymenu.fmaudio.audio.choosesource.url.invalid = §c§lInvalid URL!%n%%n%This is not a valid URL!%n%Please make sure you have a working internet connection%n%and didn't make any typos.%n% %n% %n% %n%
+fancymenu.fmaudio.audio.index = Index
+fancymenu.fmaudio.audio.index.desc = The audio index is used to order%n%the audio entries of the element.%n%It can be used to control%n%in what order audios are played.%n%%n%Audios with the same index%n%get §lshuffled§r.
+fancymenu.fmaudio.audio.volume = Volume
+fancymenu.fmaudio.audio.volume.desc = The volume of this audio.
+
+fancymenu.fmaudio.item = Audio
+fancymenu.fmaudio.item.desc = Add an audio handler to your layout.%n%%n%Can be used to play background sounds.%n%Can hold multiple sounds at once.%n%%n%§cThis element is only visible%n%§cin the editor!%n%§cIt will be invisible in the actual menu.
+
+fancymenu.fmaudio.buttonaction.togglemute.action.desc = Toggle mute audio elements by its element ID.
+fancymenu.fmaudio.buttonaction.togglemute.value.desc = Audio Element ID
+
+fancymenu.fmaudio.visibilityrequirement.is_muted = Is Audio Element Muted
+fancymenu.fmaudio.visibilityrequirement.is_muted.desc = Check if an audio element is muted.%n%%n%You can get the element ID%n%of an element by%n%right-clicking it.
+fancymenu.fmaudio.visibilityrequirement.is_muted.value = Audio Element ID
+
+fancymenu.fmaudio.config = Audio Extension Settings
+
+fancymenu.fmaudio.config.categories.world = World
+
+fancymenu.fmaudio.config.stop_world_music_in_menu = Stop Music In MP Menus
+fancymenu.fmaudio.config.stop_world_music_in_menu.desc = Only for Multiplayer worlds!%n%%n%If the world music should%n%stop in menus that normally%n%stop it, even if it's a%n%multiplayer world.
+
+fancymenu.fmaudio.config.only_play_out_of_world = Only Play Out Of World
+fancymenu.fmaudio.config.only_play_out_of_world.desc = If audios should only play when%n%you're not in a world or%n%on a server.
+
+
+

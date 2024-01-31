@@ -3,3 +3,9 @@ type = custom_gui_screens
 overridden_screens {
 }
 
+custom_gui {
+  identifier = main_menu_image_credits
+  title = "Mainmenu image credits"
+  allow_esc = true
+}
+

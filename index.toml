@@ -281,6 +281,14 @@ file = "config/fancymenu/assets/exittwinkle.gif"
 hash = "f3cfeb5266511006f8170112e2d7336fe9a05bcbf70b74ca7218ae6072c5f2cf"
 
 [[files]]
+file = "config/fancymenu/assets/icons/icon16x16.png"
+hash = "3bb846b8ec179d2d880758f1e736353fe8ce2894c594878bd6611199293ca1fa"
+
+[[files]]
+file = "config/fancymenu/assets/icons/icon32x32.png"
+hash = "927585aee51718bfc314baf5da3c5c69c9b2a2f7ecd94db56d32839be5961da7"
+
+[[files]]
 file = "config/fancymenu/assets/multiplayer.png"
 hash = "07c49072f2554daefefc2e01ed7a3c49a5dd1fb4172baf82642f74d523a0e49c"
 
@@ -325,24 +333,36 @@ file = "config/fancymenu/assets/uwu.png"
 hash = "8d7ce46d8038ef37e526605538913133dba45657144c228080d1a8ba1e55436d"
 
 [[files]]
-file = "config/fancymenu/config.txt"
-hash = "ee5748a649e386c1bfe30c7efd5c5b6b6c8716356695ee46d081fbc115e64c67"
-
-[[files]]
 file = "config/fancymenu/custom_gui_screens.txt"
-hash = "ff492043eaf454c46e949d5eef32ece90cc5a19feb50a161dd29a43b5732c880"
+hash = "f5dac7eaab844d27ab28601f5269b167693ba95bce8f86971b68bff4416e5bf0"
 
 [[files]]
 file = "config/fancymenu/customizablemenus.txt"
-hash = "a271634d74b6747115ccffbb5fc00907e150e9b9b005ea1f825215c695e003c0"
+hash = "0480e4942f455fa46a8201d97064e4ed822005c0d0ae8520b12957a359c08bb6"
+
+[[files]]
+file = "config/fancymenu/customization/loading_screen_layout.txt"
+hash = "27c9d9f5f08558881edf688eeb74365ea5e42f2af75cbbdb053aa1da71db0ae6"
+
+[[files]]
+file = "config/fancymenu/customization/main_menu_image_credits_layout.txt"
+hash = "084e06c7832fa4f80aa2229ed74434a5922b2331ec69ee78020adb375051686e"
 
 [[files]]
 file = "config/fancymenu/customization/music.txt"
-hash = "e76190e5b0f3e871dd150b5c512d4f2a4508b6a5665000b4e2df55cb980b9db0"
+hash = "ad6dea1615a03e6e846e91c04c4419c2edab4729e8371150d8a29023e4bff57d"
 
 [[files]]
 file = "config/fancymenu/customization/title_screen_layout.txt"
-hash = "dc10b58bfc98cc45925790a69cf5ba1087fd1744e654b6db2c807c91ea4207aa"
+hash = "7c0fecee3756719f0507133f64929daea961c7ba87941f64948d353c57d423e3"
+
+[[files]]
+file = "config/fancymenu/extensions/fmaudio/config.cfg"
+hash = "f3e260206c13bf58788b0572f453f95a3b7c67066dbf85f1a1118c1126d11d62"
+
+[[files]]
+file = "config/fancymenu/extensions/fmaudio/locals/en_us.local"
+hash = "d1a39200e583c953b6f56d972ffa0361fc5740e4f69809c22cf2e76486100396"
 
 [[files]]
 file = "config/fancymenu/layout_editor/widgets/element_layer_control.lewidget"
@@ -353,8 +373,32 @@ file = "config/fancymenu/legacy_checklist.txt"
 hash = "9a25d3dc708e43eabafce5479a13c02dae15bc7f673afb2745b8b2ba48a97dc0"
 
 [[files]]
+file = "config/fancymenu/locals/de_de.local"
+hash = "13485f1d678322a328e798c34f1ff9f7f9c690464d1050e2e7c1ea02b0f49b61"
+
+[[files]]
+file = "config/fancymenu/locals/en_us.local"
+hash = "6e5f6a7fce57921106335d54801ca78557bfb7db45bb10122240ec9fb6503b34"
+
+[[files]]
+file = "config/fancymenu/locals/pl_pl.local"
+hash = "66d4e9b270d4d92bffd85b13255def475d3ff6c865965deaa700be2ed1b08bc0"
+
+[[files]]
+file = "config/fancymenu/locals/pt_br.local"
+hash = "0b19fc1d8bd8c86435eb39886116aceb3b4554fa749561fc87be2df0157a134c"
+
+[[files]]
+file = "config/fancymenu/locals/zh_cn.local"
+hash = "50cf30919fd2c7b11f6ce246425d657e3b93dfb919a0b6fe4730dc5d9fee0d2a"
+
+[[files]]
+file = "config/fancymenu/menu_identifiers.db"
+hash = "003a1c89846741e0eb9475089d4ed653896fd08e0b994667fae452b4ad894a72"
+
+[[files]]
 file = "config/fancymenu/options.txt"
-hash = "1976a538841c97e98087741b5e539706f6e905a63e03ecf66ee61d8dda1d733a"
+hash = "ef01baa3eca05827983b0e13408910bbe336a49bcb2badde399e23a517a0e09a"
 
 [[files]]
 file = "config/fancymenu/slideshows/greg/images/3_dishrainback.png"

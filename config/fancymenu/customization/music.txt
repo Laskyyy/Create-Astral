@@ -1,29 +1,26 @@
-type = menu
+type = fancymenu_layout
 
-customization-meta {
+layout-meta {
   identifier = %fancymenu:universal_layout%
-  randomgroup = 1
-  renderorder = foreground
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1706706767096
+  is_enabled = true
   randommode = false
+  randomgroup = 1
   randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:bef0f604-0bae-453f-b133-869233076435-1706717376644] = [groups:][instances:]
 }
 
 customization {
-  keepaspectratio = false
   action = backgroundoptions
+  keepaspectratio = false
 }
 
-customization {
-  orientation = top-left
-  audio_source:9078e26b-6987-4791-ab86-e5670b40ff171674352818384 = resources/menumusic/sounds/npc_theme.ogg;EXTERNAL_LOCAL;100;0
-  loop = true
-  channel = music
-  x = 378
-  width = 50
-  action = custom_layout_element:fancymenu_extension:audio_item
-  actionid = d0f32f53-27bd-4544-89a5-68b90e95b0b01674352809313
-  y = 159
-  once_per_session = false
-  height = 50
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
 }
 
