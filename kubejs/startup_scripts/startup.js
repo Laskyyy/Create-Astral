@@ -474,6 +474,13 @@ onEvent("block.registry", (event) => {
         .material("stone");
 
     event
+        .create("createastral:experience_block", "basic")
+        .hardness(4)
+        .displayName("Ignore this block whilst it's a placeholder")
+        .tagBlock("minecraft:mineable/pickaxe")
+        .material("stone");
+
+    event
         .create("createastral:compressed_experience_block")
         .tagBlock("minecraft:mineable/pickaxe")
         .material("glass")
