@@ -2244,7 +2244,7 @@ function mechanicalCraftingRecipes(event) {
                 D: "immersive_aircraft:engine",
                 E: "#create:seats",
                 F: "createastral:airship_blueprint",
-                G: "campanion:rope",
+                G: "farmersdelight:rope",
             },
         },
         {

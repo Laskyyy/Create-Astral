@@ -1183,16 +1183,32 @@ onEvent("recipes", (event) => {
         }
     );
 
-    event.shaped("travelersbackpack:standard", ["ABA", "CDE", "FAF"], {
-        A: "farmersdelight:canvas",
-        B: "minecraft:crafting_table",
-        C: "campanion:leather_pouch",
-        D: "minecraft:barrel",
-        E: "campanion:sleeping_bag",
-        F: "campanion:rope",
+    event.shaped("travelersbackpack:standard", ["ABC", "DED", "FBF"], {
+        A: "#c:workbenches",
+        B: "campanion:leather_pouch",
+        C: "campanion:sleeping_bag",
+        D: "create:fluid_tank",
+        E: "tconstruct:travellers_chestplate",
+        F: "farmersdelight:rope",
+    });
+    event.shaped("campanion:sleeping_bag", ["AAA", "BCB"], {
+        A: "campanion:wool_tarp",
+        B: "farmersdelight:canvas_rug",
+        C: "minecraft:string",
+    });
+    event.shaped("travelersbackpack:hose", ["ABB", " CB", "  B"], {
+        A: "travellersbackpack:hose_nozzle",
+        B: "techreborn:rubber",
+        C: "minecraft:green_dye",
+    });
+    event.shaped("travelersbackpack:hose_nozzle", [" A ", "BCB", "DDD"], {
+        A: "create:iron_sheet",
+        B: "create:golden_sheet",
+        C: "create:cogwheel",
+        D: "create:andesite_alloy",
     });
     event.shaped("campanion:tent_bag", [" A ", "ABA", " A "], {
-        A: "campanion:rope",
+        A: "farmersdelight:rope",
         B: "campanion:leather_pouch",
     });
     event.shaped("ad_astra:moon_globe", ["BBB", "BA ", "BC "], {
