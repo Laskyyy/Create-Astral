@@ -815,7 +815,7 @@ onEvent("item.tooltip", (e) => {
         },
         {
             item: "create:blaze_cake",
-            tooltip: "Use processes in Chapter 4 to superheat blaze burners.",
+            tooltip: "Obtained in Chapter 4!",
         },
         {
             item: "yttr:gadolinite",

@@ -1395,7 +1395,7 @@ function fillingRecipes(event) {
         {
             input: "create:blaze_cake_base",
             output: "create:blaze_cake",
-            fluid: "kubejs:hellfire",
+            fluid: "techreborn:nitro_diesel",
             amount: 20250,
         },
         {

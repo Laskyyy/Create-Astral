@@ -71,14 +71,14 @@
         },
         {
             "type": "custommachinery:fluid",
-            "fluid": "techreborn:oil",
+            "fluid": "minecraft:water",
             "amount": 81000,
             "mode": "input"
         },
         {
             "type": "custommachinery:item",
             "mode": "input",
-            "item": "createastral:refining_agent",
+            "item": "createastral:pure_biomatter",
             "amount": 1
         },
 
@@ -89,8 +89,8 @@
         },
         {
             "type": "custommachinery:fluid",
-            "fluid": "techreborn:nitro_diesel",
-            "amount": 40500,
+            "fluid": "techreborn:biofuel",
+            "amount": 324000,
             "mode": "output"
         }
     ]
