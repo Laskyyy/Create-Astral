@@ -354,7 +354,7 @@ hash = "084e06c7832fa4f80aa2229ed74434a5922b2331ec69ee78020adb375051686e"
 
 [[files]]
 file = "config/fancymenu/customization/music.txt"
-hash = "7b18e01bcd5f490cbf960d49a0a2c0d7d78b37e222337fe234fd6ffcad37b547"
+hash = "1e1467db1de67c935c2b1e1abedb74b563001d767391522ccc9f53e0ccc587c2"
 
 [[files]]
 file = "config/fancymenu/customization/title_screen_layout.txt"
@@ -402,7 +402,7 @@ hash = "003a1c89846741e0eb9475089d4ed653896fd08e0b994667fae452b4ad894a72"
 
 [[files]]
 file = "config/fancymenu/options.txt"
-hash = "ca4b52ac40436863f858da004db4f2ad89688a687fd617a6b283acf01f5ee53f"
+hash = "bc99e4ded26bfbd0558c8cd54716e7ae114fd1b4c040adab862253a1a19f828d"
 
 [[files]]
 file = "config/fancymenu/slideshows/greg/images/3_dishrainback.png"

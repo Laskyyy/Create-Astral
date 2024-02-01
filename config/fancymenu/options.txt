@@ -14,7 +14,7 @@ B:advanced_customization_mode = 'true';
 ##[loading]
 
 B:preload_animations = 'true';
-S:preload_resources = '';
+S:preload_resources = '[source:local]config/fancymenu/assets/npc_theme.ogg%!source_end!%';
 S:custom_game_intro_skip_text = '';
 B:allow_game_intro_skip = 'true';
 S:game_intro_animation_name = '';
