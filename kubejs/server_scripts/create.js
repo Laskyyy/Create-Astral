@@ -1370,27 +1370,6 @@ function sequencedAssemblyRecipes(event) {
         )
         .transitionalItem("ad_astra:iron_plate")
         .loops(3);
-
-    event.recipes
-        .createSequencedAssembly(
-            ["create:crimsite"],
-            "minecraft:cobbled_deepslate",
-            [
-                event.recipes.createFilling("minecraft:cobbled_deepslate", [
-                    "minecraft:cobbled_deepslate",
-                    {
-                        fluid: "minecraft:lava",
-                        amount: 3000,
-                    },
-                ]),
-                event.recipes.createDeploying("minecraft:cobbled_deepslate", [
-                    "minecraft:cobbled_deepslate",
-                    "minecraft:flint",
-                ]),
-            ]
-        )
-        .transitionalItem("minecraft:cobbled_deepslate")
-        .loops(3);
 }
 
 function fillingRecipes(event) {
@@ -2096,16 +2075,6 @@ function mixingRecipes(event) {
             time: 30,
         },
         {
-            output: "create:ochrum",
-            input: [
-                "compressor:compressed_sand",
-                "minecraft:cobbled_deepslate",
-                { fluid: "minecraft:lava", amount: 4500 },
-            ],
-            heat: "",
-            time: 1500,
-        },
-        {
             output: [{ fluid: "kubejs:liquid_xp_nuggies", amount: 81000 }],
             input: ["kubejs:experience_block"],
             heat: "heated",
@@ -2673,15 +2642,6 @@ function compactingRecipes(event) {
             inputs: [
                 "3x minecraft:bone_meal",
                 "minecraft:gravel",
-                { fluid: "minecraft:lava", amount: FULL_BUCKET_AMMOUNT / 10 },
-            ],
-        },
-        {
-            output: "create:limestone",
-            inputs: [
-                "2x minecraft:pointed_dripstone",
-                "2x ad_astra:moon_sand",
-                "2x minecraft:flint",
                 { fluid: "minecraft:lava", amount: FULL_BUCKET_AMMOUNT / 10 },
             ],
         },
