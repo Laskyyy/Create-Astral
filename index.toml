@@ -3953,14 +3953,6 @@ file = "global_packs/required_data/zLaky Core/data/create/tags/fluids/bottomless
 hash = "76eb84830b0b2a91468d9a5590d3f7c4cf3bc0ea55fd23f1404ce49997c5f3e8"
 
 [[files]]
-file = "global_packs/required_data/zLaky Core/data/create/tags/items/blaze_burner_fuel/regular.json"
-hash = "dd64c8a77a179e72af901027fe3b91d8b984c6bf89187d302a7fa1e1f36daf83"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/create/tags/items/blaze_burner_fuel/special.json"
-hash = "c95322d3fde6d0bcf5bc2a8ec7c4cc8a74d23e6382461f7b972f019ddd7972ee"
-
-[[files]]
 file = "global_packs/required_data/zLaky Core/data/create_recipes/recipes/mechanical_crafting/airship.json"
 hash = "1017449e08d3eab977bb39c6e14fa657705403d9dc061db6112a28e7f2f96aef"
 
@@ -3986,7 +3978,7 @@ hash = "aaf05b2d81552dacaca7f3e9d7fe48d95536d8524647c61d573ae9b0068e583e"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/machines/distillery.json"
-hash = "76d216a3b8bdb8d5e8f4e6c43480bd9b1265cfe362e7ea2aff1726092653bdcd"
+hash = "abac6a65a5a269bd358cb196959b81ca3ff82b284fbe65c56cfcbcb5fa5cff68"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/machines/electrolyser.json"
@@ -3994,15 +3986,19 @@ hash = "c8017458f0de1d9c8f1b86c818ee3fbd9337e968915bbc014dabeb6cd1365c93"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/machines/shimmer_refinery.json"
-hash = "86b534d545bb91fd397660d381249d3107d035957bd3ee17e3c0f6828f42467d"
+hash = "4dc3d30c821eebe2c956f2b15c92ca79edb77586e670c6afcef2e8ca9c2dd0ed"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/machines/stone_growth_chamber.json"
 hash = "881bb139cad75b5895b11a0cb9f099ea86b3b9d5e559e2d6a5a730b2fb35f9a2"
 
 [[files]]
+file = "global_packs/required_data/zLaky Core/data/createastral/recipes/distillery/biofuel.json"
+hash = "c8480172a06efcfd331587078434a6ab231cb82e21b719ff2ff7c64156c5772e"
+
+[[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/recipes/distillery/fuel.json"
-hash = "16c69fadebfcff1b4120c0c69678e6a082f1a7cec6bf92757ec0a112cf3c00a9"
+hash = "f06a185d6c5e744416a9eac3be866b6dbe735abe13265c8a8f4fe40c39ad2951"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/recipes/electrolyser/oxygen.json"
@@ -4014,7 +4010,7 @@ hash = "b2d273e9efd62e15ccfec9c286615e955a2b1de0b0ced46e527df8ed3a865e40"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/recipes/shimmer_refinery/refined_shimmer.json"
-hash = "399d79dbccb0954ad95f4d14b944b8b5fad2d9ded04843f35553940bd0d53815"
+hash = "1198b071a538bfcc532dd6f841c2777a1530db7a481c4cc387d99e382003a53e"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/recipes/stone_growth_chamber/cobblestone.json"
@@ -12810,7 +12806,7 @@ hash = "82dbdb416bc14a9ac3e577579f13298b7fa563efb3c0118ff8e35d179e780f6d"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
-hash = "15a2f43b69e9b19648e9c33d06b84baf7c310e8bf2005eb5f8f84dd940662549"
+hash = "00003c1cb99d11571ba5b6ceebdfbb340ff1b21b2c1cb1b538aa922b434852e9"
 
 [[files]]
 file = "kubejs/server_scripts/createaddons.js"
@@ -12858,7 +12854,7 @@ hash = "250a99e5b7bbe32d095ff746c1ea1c9e7d0577788c79c48c65f83fe634481b58"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
-hash = "d9be0664551a12ad7377fe8b404fcaa2ee8218a2d52545beb087469c3e28a9b1"
+hash = "67537e84933788e109f10d29ed402fa573a2e8fdb107aa4aef0c2fa74d2772f9"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
@@ -27104,7 +27100,7 @@ hash = "5da3399c37b4a00f37cb7651cef65814213001adb1079df4a61075e66e642e41"
 
 [[files]]
 file = "resources/create/lang/en_us.json"
-hash = "62a2227fc0c8eaf54c58e341c3b81c1742df0a47590851d4c798a22eedf7df29"
+hash = "8b51e6c5a27486320367bdc54586a5649bca9d014bf2917899987d237c2693cf"
 
 [[files]]
 file = "resources/create/lang/fr_fr.json"
