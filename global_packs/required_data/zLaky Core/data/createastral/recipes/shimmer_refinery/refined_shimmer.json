@@ -1,6 +1,6 @@
 {
     "type": "custommachinery:custom_machine",
-    "machine": "createastral:distillery",
+    "machine": "createastral:shimmer_refinery",
     "time": 500,
     "requirements": [
         {
@@ -36,7 +36,7 @@
         {
             "type": "custommachinery:energy",
             "mode": "input",
-            "amount": 0
+            "amount": 20000
         },
         {
             "type": "custommachinery:item",
