@@ -374,7 +374,7 @@ hash = "0480e4942f455fa46a8201d97064e4ed822005c0d0ae8520b12957a359c08bb6"
 
 [[files]]
 file = "config/fancymenu/customization/loading_screen_layout.txt"
-hash = "85fe2a4ec4207a95d886860038b99f64f3ea041d0a49effc65affc63fe66897f"
+hash = "c19979758517d773c864d4728d61210349effa46891d50d84dc1bc6a0447e05e"
 
 [[files]]
 file = "config/fancymenu/customization/main_menu_image_credits_layout.txt"
@@ -386,7 +386,7 @@ hash = "1e1467db1de67c935c2b1e1abedb74b563001d767391522ccc9f53e0ccc587c2"
 
 [[files]]
 file = "config/fancymenu/customization/title_screen_layout.txt"
-hash = "23a27e56307410416a0c85c19ba27e3cae272f24cbe3f47879cc12a7d741478d"
+hash = "b8db667dc948e341846bdf48ca7e3955255cdc302ba1a0b8fedd7345d3855e38"
 
 [[files]]
 file = "config/fancymenu/extensions/fmaudio/config.cfg"
@@ -430,7 +430,7 @@ hash = "003a1c89846741e0eb9475089d4ed653896fd08e0b994667fae452b4ad894a72"
 
 [[files]]
 file = "config/fancymenu/options.txt"
-hash = "bc99e4ded26bfbd0558c8cd54716e7ae114fd1b4c040adab862253a1a19f828d"
+hash = "6d7aa53c372ff4eca904551384f45057e8e055af2146a1e8f32ff74b8dddc79d"
 
 [[files]]
 file = "config/fancymenu/slideshows/greg/images/3_dishrainback.png"
@@ -486,7 +486,7 @@ hash = "6954379d658fdf496f162792a3244f0f08635858ed4b0553a718a7ef63b8a620"
 
 [[files]]
 file = "config/fancymenu/user_variables.db"
-hash = "3d7d4cda73d6bde134a568ccbe4e8d2e7fbe701570012b71fa45acdb2258c823"
+hash = "07aa5e103920caba259422a42af0356c09ee27ad305383f5c09afe719abbee6d"
 
 [[files]]
 file = "config/farmersdelight.json"
