@@ -1173,11 +1173,113 @@ onEvent("recipes", (event) => {
         }),
         ["CCC", "DED", "CCC"],
         {
-            D: "techreborn:electronic_circuit",
-            E: "create:blaze_burner",
-            C: "techreborn:lead_storage_block",
+            A: "techreborn:electronic_circuit",
+            B: "create:blaze_burner",
+            C: "create:fluid_tank",
+            C: "techreborn:lead_plate",
+            D: "techreborn:industrial_centrifuge",
+            E: "techreborn:advanced_machine_frame",
+            F: "techreborn:extractor",
         }
     );
+
+    event.shaped("techreborn:industrial_electrolyzer", ["ABA", "CDC", "ABA"], {
+        A: "createastral:copper_heating_coil",
+        B: "techreborn:electronic_circuit",
+        C: "techreborn:hv_cable",
+        D: "techreborn:advanced_machine_frame",
+    });
+
+    event.shaped("techreborn:industrial_sawmill", ["ABA", "CDC", "EFG"], {
+        A: "techreborn:lead_plate",
+        B: "techreborn:diamond_saw_blade",
+        C: "create:belt_connector",
+        D: "create:mechanical_saw",
+        E: "techreborn:electronic_circuit",
+        F: "techreborn:advanced_machine_frame",
+        G: "create:rotation_speed_controller",
+    });
+
+    event.shaped("techreborn:vacuum_freezer", ["AAA", "BCB", "DED"], {
+        A: "techreborn:lead_plate",
+        B: "techreborn:electronic_circuit",
+        C: "techreborn:advanced_machine_frame",
+        D: "minecraft:blue_ice",
+        E: "tconstruct:seared_basin",
+    });
+
+    event.shaped("techreborn:solid_canning_machine", ["ABA", "CDC", "FBF"], {
+        A: "create:sturdy_sheet",
+        B: "create:deployer",
+        C: "create:belt_connector",
+        D: "techreborn:basic_machine_frame",
+        E: "create:integrated_circuit",
+    });
+
+    event.shaped("techreborn:greenhouse_controller", ["ABA", "CDC", "AEA"], {
+        A: "create:sturdy_sheet",
+        B: "create:deployer",
+        C: "create:mechanical_harvester",
+        D: "create:mechanical_bearing",
+        E: "techreborn:basic_machine_frame",
+    });
+
+    event.shaped("techreborn:industrial_centrifuge", ["ABC", "DED", "FBF"], {
+        A: "techreborn:lead_plate",
+        B: "techreborn:extractor",
+        C: "techreborn:electronic_circuit",
+        D: "techreborn:advanced_machine_frame",
+        E: "create:mechanical_bearing",
+        F: "create:rotation_speed_controller",
+    });
+
+    event.shaped("techreborn:electric_furnace", ["ABA", "CDC", "AEA"], {
+        A: "create:sturdy_sheet",
+        B: "create:integrated_circuit",
+        C: "create:encased_fan",
+        D: "minecraft:furnace",
+        E: "techreborn:basic_machine_frame",
+    });
+
+    event.shaped("techreborn:chemical_reactor", ["ABA", "CDC", "AEA"], {
+        A: "create:sturdy_sheet",
+        B: "create:mechanical_mixer",
+        C: "create:fluid_tank",
+        D: "techreborn:basic_machine_frame",
+        E: "create:integrated_circuit",
+    });
+
+    event.shaped("techreborn:auto_crafting_table", ["ABA", "ACA", "ADA"], {
+        A: "create:mechanical_crafter",
+        B: "minecraft:barrel",
+        C: "techreborn:basic_machine_frame",
+        D: "techreborn:electronic_circuit",
+    });
+
+    event.shaped("techreborn:alloy_smelter", ["ABA", "CDC", "EFE"], {
+        A: "create:sturdy_sheet",
+        B: "create:mechanical_mixer",
+        C: "create:basin",
+        D: "techreborn:basic_machine_frame",
+        E: "create:integrated_circuit",
+        F: "create:blaze_burner",
+    });
+
+    event.shaped("techreborn:extractor", ["AAA", "BCB", "ADA"], {
+        A: "create:sturdy_sheet",
+        B: "create:mechanical_pump",
+        C: "techreborn:basic_machine_frame",
+        D: "create:integrated_circuit",
+    });
+
+    event.shaped("travelersbackpack:standard", ["ABC", "DED", "FBF"], {
+        A: "#c:workbenches",
+        B: "campanion:leather_pouch",
+        C: "campanion:sleeping_bag",
+        D: "create:fluid_tank",
+        E: "tconstruct:travellers_chestplate",
+        F: "farmersdelight:rope",
+    });
 
     event.shaped("travelersbackpack:standard", ["ABC", "DED", "FBF"], {
         A: "#c:workbenches",
