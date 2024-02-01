@@ -7,7 +7,7 @@ B:force_fullscreen = 'true';
 
 ##[customization]
 
-B:show_customization_overlay = 'true';
+B:show_customization_overlay = 'false';
 B:advanced_customization_mode = 'true';
 
 
