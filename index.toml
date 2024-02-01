@@ -289,6 +289,10 @@ file = "config/fancymenu/assets/icons/icon32x32.png"
 hash = "927585aee51718bfc314baf5da3c5c69c9b2a2f7ecd94db56d32839be5961da7"
 
 [[files]]
+file = "config/fancymenu/assets/icons/icon_macos.icns"
+hash = "65d28bb58df5c75f023dbf069d58ce67042e8008afe08f24ff5dc233232679bb"
+
+[[files]]
 file = "config/fancymenu/assets/multiplayer.png"
 hash = "07c49072f2554daefefc2e01ed7a3c49a5dd1fb4172baf82642f74d523a0e49c"
 
@@ -342,7 +346,7 @@ hash = "0480e4942f455fa46a8201d97064e4ed822005c0d0ae8520b12957a359c08bb6"
 
 [[files]]
 file = "config/fancymenu/customization/loading_screen_layout.txt"
-hash = "27c9d9f5f08558881edf688eeb74365ea5e42f2af75cbbdb053aa1da71db0ae6"
+hash = "7b077f80d82b413fda98baa3534a56e2a1a4f6d119e3d47bb8ba3c10bc749737"
 
 [[files]]
 file = "config/fancymenu/customization/main_menu_image_credits_layout.txt"
@@ -350,11 +354,11 @@ hash = "084e06c7832fa4f80aa2229ed74434a5922b2331ec69ee78020adb375051686e"
 
 [[files]]
 file = "config/fancymenu/customization/music.txt"
-hash = "ad6dea1615a03e6e846e91c04c4419c2edab4729e8371150d8a29023e4bff57d"
+hash = "7b18e01bcd5f490cbf960d49a0a2c0d7d78b37e222337fe234fd6ffcad37b547"
 
 [[files]]
 file = "config/fancymenu/customization/title_screen_layout.txt"
-hash = "7c0fecee3756719f0507133f64929daea961c7ba87941f64948d353c57d423e3"
+hash = "bcb7f880daf4d9698e9e2facca797ba0c5add3ceef7a7779c5a631752249f0c3"
 
 [[files]]
 file = "config/fancymenu/extensions/fmaudio/config.cfg"
@@ -398,7 +402,7 @@ hash = "003a1c89846741e0eb9475089d4ed653896fd08e0b994667fae452b4ad894a72"
 
 [[files]]
 file = "config/fancymenu/options.txt"
-hash = "44451ad3ce1e16357e3096acb5c7cff6b51dc24c00441b33c4ccaeb5ebd997c8"
+hash = "ca4b52ac40436863f858da004db4f2ad89688a687fd617a6b283acf01f5ee53f"
 
 [[files]]
 file = "config/fancymenu/slideshows/greg/images/3_dishrainback.png"
@@ -1601,6 +1605,10 @@ file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/
 hash = "f8c565277b2b9be0e78fe86739ac667c97ef960d7af5f4dfa6a32212cc5edbb8"
 
 [[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/nuclear/tank_2.nbt"
+hash = "d575914bd10ac4b088d455c7323b8532c14410c076a4de9dea21320a18fff885"
+
+[[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/pipes/cogwheel.nbt"
 hash = "36c2e16444ccae4e0d2c399088b526d8b4fdb35251b2b394a425817495d6fcca"
 
@@ -2530,7 +2538,7 @@ hash = "3b035fb7a685419bf707411dc8477e2263518b3d9ebfc03737deab0ba2f36af4"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/moon/nuclear/powerplant.json"
-hash = "60ace89676fe31a0470b95bc5f84ab56b4693f5dfcaed8af56324e1a75cca6b7"
+hash = "1dc07fcb35933279412a510bbef93d1fd195e0bb661409062d861e12f22fed59"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/moon/nuclear/powerplant_alt_pipe.json"
@@ -2682,7 +2690,7 @@ hash = "eae0497d8544e6f250cb7d8f752cde77bf16b524ce82779e854e0029e0484e59"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/pack.mcmeta"
-hash = "85c4b83374da5c4d8ee7129697a591e99760c10d0195d1d3a7709b8c898fb9b1"
+hash = "d8a722a51574fd109c97c29131bcb4138975c01ab07cd81fdf136497d2eab883"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/pack.png"
@@ -3978,7 +3986,7 @@ hash = "b2d273e9efd62e15ccfec9c286615e955a2b1de0b0ced46e527df8ed3a865e40"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/recipes/shimmer_refinery/refined_shimmer.json"
-hash = "465d6b301d5ad8b87a7e37f8aee81dc7d97b8e1bbf146b381799f00339ae7386"
+hash = "399d79dbccb0954ad95f4d14b944b8b5fad2d9ded04843f35553940bd0d53815"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/recipes/stone_growth_chamber/cobblestone.json"
@@ -4570,39 +4578,39 @@ hash = "3104aefa0d4202a82b4fe54f769adb2f8daeb0915a741a6d62a1b4d97d7c32d6"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/farmersdelight/loot_tables/inject/chests/abandoned_mineshaft.json"
-hash = "f1cc0ff042ef9979736487e2460b849fa672370f9ff2603e8b4161fe79d2d66e"
+hash = "200f4d57250be0c82e1fada3fe1bd357e39c89b7e8317eaa246dd60a0d174b91"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/farmersdelight/loot_tables/inject/chests/buried_treasure.json"
-hash = "9fc1e8573eb8b1c9dd4702d74861d0ad5a3f7634d44c070d2070d8670dc392f9"
+hash = "c71399021795532698cabadb2f67459aa531bb0487c7d6680622c1ffad66bd52"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/farmersdelight/loot_tables/inject/chests/desert_pyramid.json"
-hash = "9fc1e8573eb8b1c9dd4702d74861d0ad5a3f7634d44c070d2070d8670dc392f9"
+hash = "c71399021795532698cabadb2f67459aa531bb0487c7d6680622c1ffad66bd52"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/farmersdelight/loot_tables/inject/chests/jungle_temple.json"
-hash = "9fc1e8573eb8b1c9dd4702d74861d0ad5a3f7634d44c070d2070d8670dc392f9"
+hash = "c71399021795532698cabadb2f67459aa531bb0487c7d6680622c1ffad66bd52"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/farmersdelight/loot_tables/inject/chests/shipwreck_supply.json"
-hash = "9fc1e8573eb8b1c9dd4702d74861d0ad5a3f7634d44c070d2070d8670dc392f9"
+hash = "c71399021795532698cabadb2f67459aa531bb0487c7d6680622c1ffad66bd52"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/farmersdelight/loot_tables/inject/chests/simple_dungeon.json"
-hash = "9fc1e8573eb8b1c9dd4702d74861d0ad5a3f7634d44c070d2070d8670dc392f9"
+hash = "c71399021795532698cabadb2f67459aa531bb0487c7d6680622c1ffad66bd52"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/farmersdelight/loot_tables/inject/chests/stronghold_corridor.json"
-hash = "9fc1e8573eb8b1c9dd4702d74861d0ad5a3f7634d44c070d2070d8670dc392f9"
+hash = "c71399021795532698cabadb2f67459aa531bb0487c7d6680622c1ffad66bd52"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/farmersdelight/loot_tables/inject/chests/underwater_ruin_big.json"
-hash = "9fc1e8573eb8b1c9dd4702d74861d0ad5a3f7634d44c070d2070d8670dc392f9"
+hash = "c71399021795532698cabadb2f67459aa531bb0487c7d6680622c1ffad66bd52"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/farmersdelight/loot_tables/inject/chests/woodland_mansion.json"
-hash = "9fc1e8573eb8b1c9dd4702d74861d0ad5a3f7634d44c070d2070d8670dc392f9"
+hash = "c71399021795532698cabadb2f67459aa531bb0487c7d6680622c1ffad66bd52"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/immersive_aircraft/recipes/hull.json"
@@ -12753,6 +12761,10 @@ file = "kubejs/README.txt"
 hash = "9c2e224068560b5942f4a0a9fe8a54fe7382dbc37c36043ab402a0ceecc259f6"
 
 [[files]]
+file = "kubejs/client_scripts/hide_from_rei.js"
+hash = "2b6ae9d0b9181c2cc6bbee46b474de9c400b85e4c8ab891433a21556f4e70f2e"
+
+[[files]]
 file = "kubejs/client_scripts/script.js"
 hash = "eacbaec567845768ac95faddae57b17ea4e31ef2f4ccd455e4e395bbedf1c419"
 
@@ -12762,7 +12774,7 @@ hash = "5e0ca5a9d9e6586ca5a67dd60953a9f4e20efb5704d06499fa4859f67fdc9474"
 
 [[files]]
 file = "kubejs/config/common.properties"
-hash = "5e42525e9cd49524e45f39762e56c575106eb50f1885672b650aee28a8c0ce50"
+hash = "4869ea0c45f560ff504433e0873edc13be683a4dec98d58bb09e24aa7a388355"
 
 [[files]]
 file = "kubejs/jsconfig.json"
@@ -12770,7 +12782,7 @@ hash = "82dbdb416bc14a9ac3e577579f13298b7fa563efb3c0118ff8e35d179e780f6d"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
-hash = "9ba07c415c14f2ee69fd2b7f820b89452bfc71e8da1c7bd2e6e40eedbbb7f186"
+hash = "15a2f43b69e9b19648e9c33d06b84baf7c310e8bf2005eb5f8f84dd940662549"
 
 [[files]]
 file = "kubejs/server_scripts/createaddons.js"
@@ -12786,11 +12798,11 @@ hash = "df6986836953fb130d0254bf7145a02939981d499538c8060578a8190904ee0f"
 
 [[files]]
 file = "kubejs/server_scripts/removals.js"
-hash = "37c9e9d69198afba9bcb5ab54699691ea885baed298b29453f8deb8c05e7165c"
+hash = "c1c8e81421c86bde8e411269a52c77e3c0a26e4d904984ecbd736be6184dff45"
 
 [[files]]
 file = "kubejs/server_scripts/replacements.js"
-hash = "540c1eeff895fb71500443ecd343a9ad0aa1ea20a823c5f8f748b72226cace43"
+hash = "7f8c62bb46c4d5ab074736af8c4fe8ba4717188876ce5b7ba48e949124880d52"
 
 [[files]]
 file = "kubejs/server_scripts/resourcegen.js"
@@ -12798,7 +12810,7 @@ hash = "4fd67e88659e33e0ec468b3198c509a5c9f89196f0e0eb2df91d9562a3d710dc"
 
 [[files]]
 file = "kubejs/server_scripts/server.js"
-hash = "6a887450820f90cfd401b6af65c2370ed52df0ae8c05f978e84894f02d84ccf7"
+hash = "d705bd29b4de946448eaf34c35b6f1318d2062b8f33ad7c86df92674d6b965d4"
 
 [[files]]
 file = "kubejs/server_scripts/tags/graveReplaceBlacklist.js"
@@ -12818,7 +12830,7 @@ hash = "250a99e5b7bbe32d095ff746c1ea1c9e7d0577788c79c48c65f83fe634481b58"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
-hash = "2edd0ae6a2d594be3fb9868472416c96779db92f33fd2cd3f627f59bc1a801eb"
+hash = "d9be0664551a12ad7377fe8b404fcaa2ee8218a2d52545beb087469c3e28a9b1"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
@@ -13031,7 +13043,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-ender-transmission.pw.toml"
-hash = "02c563f8592905e2f861669af2a44988666039d279900f1f73a7702d2a0f9345"
+hash = "8707994c86527ca0f59ee1ce73dee420f46caf85eb53d1a15727c01cb8363b17"
 metafile = true
 
 [[files]]
@@ -13680,7 +13692,7 @@ hash = "57ea6013e1a7ca5546e33873156b81be406a6a947632b1417349ea886b1736dc"
 
 [[files]]
 file = "quests_structures/shimmerrefinery.nbt"
-hash = "084e9b78c45c47c3bda7b2fe85b05a5a9fd407f621af4b1f849539b9b7cd4a8b"
+hash = "5bd44777431ad8f707dc8bb913db85c1dcff1e502e4abc0937c8214988611483"
 
 [[files]]
 file = "resourcepacks/BetterVanillaBuildingFenceFixes/assets/bettervanillabuilding/models/block/fence_inventory.json"
@@ -27609,6 +27621,10 @@ hash = "105b4efac15b86b9263ef3b257476d96997280a51803bf87508b0b39252a87d9"
 [[files]]
 file = "resources/createastral/textures/item/refining_agent.png"
 hash = "e68f3f4d2464f5b5d19360aeb7cd33669f2cebc2eefce43ebcccf3754a2168f1"
+
+[[files]]
+file = "resources/createastral/textures/item/separation_agent.png"
+hash = "bc476d1be7960930cd30c89c00c276e25dadfd1fafd54114e6ce280f357dfd9d"
 
 [[files]]
 file = "resources/createastral/textures/item/shimmer_amplifier.png"

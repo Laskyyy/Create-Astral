@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = %fancymenu:universal_layout%
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1706706767096
+  last_edited_time = 1706779974786
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:bef0f604-0bae-453f-b133-869233076435-1706717376644] = [groups:][instances:]
+  [loading_requirement_container_meta:48654490-3902-4e9d-a845-fdeb7d77f3b3-1706779904269] = [groups:][instances:]
 }
 
 customization {
@@ -22,5 +22,29 @@ scroll_list_customization {
   render_scroll_list_header_shadow = true
   render_scroll_list_footer_shadow = true
   show_scroll_list_header_footer_preview_in_editor = false
+}
+
+element {
+  audio_instance_0 = [source:local]/config/fancymenu/assets/npc_theme.ogg
+  play_mode = normal
+  looping = true
+  volume = 1.0
+  sound_source = music
+  element_type = audio_v2
+  instance_identifier = 05fa31b7-c11a-4972-ac96-01a682c0e8c2-1706779921785
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = -95
+  y = -24
+  width = 100
+  height = 100
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 8931fa6c-722f-48fe-a969-6680b6550485-1706779921785
+  [loading_requirement_container_meta:8931fa6c-722f-48fe-a969-6680b6550485-1706779921785] = [groups:][instances:]
 }
 
