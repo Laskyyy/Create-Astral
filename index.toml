@@ -358,7 +358,7 @@ hash = "1e1467db1de67c935c2b1e1abedb74b563001d767391522ccc9f53e0ccc587c2"
 
 [[files]]
 file = "config/fancymenu/customization/title_screen_layout.txt"
-hash = "bcb7f880daf4d9698e9e2facca797ba0c5add3ceef7a7779c5a631752249f0c3"
+hash = "6f2b7e33da6324cf707cbad3085f1c732569295bcfb7f6c199743be9c1adf7f5"
 
 [[files]]
 file = "config/fancymenu/extensions/fmaudio/config.cfg"
