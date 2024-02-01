@@ -346,7 +346,7 @@ hash = "0480e4942f455fa46a8201d97064e4ed822005c0d0ae8520b12957a359c08bb6"
 
 [[files]]
 file = "config/fancymenu/customization/loading_screen_layout.txt"
-hash = "7b077f80d82b413fda98baa3534a56e2a1a4f6d119e3d47bb8ba3c10bc749737"
+hash = "85fe2a4ec4207a95d886860038b99f64f3ea041d0a49effc65affc63fe66897f"
 
 [[files]]
 file = "config/fancymenu/customization/main_menu_image_credits_layout.txt"
