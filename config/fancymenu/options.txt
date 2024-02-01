@@ -42,7 +42,7 @@ B:enable_ui_text_shadow = 'false';
 
 ##[window]
 
-B:show_custom_window_icon = 'false';
+B:show_custom_window_icon = 'true';
 S:custom_window_icon_macos = '/config/fancymenu/assets/icons/icon_macos.icns';
 S:custom_window_icon_32 = '/config/fancymenu/assets/icons/icon32x32.png';
 S:custom_window_title = 'Create: Astral 2.1';
