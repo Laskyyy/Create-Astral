@@ -258,27 +258,39 @@ hash = "f4165a898af4e1e798e9c11565db84a1310251e4d7d598155de19a4e47da2ddc"
 
 [[files]]
 file = "config/fancymenu/assets/accessibility.png"
-hash = "6bfa97554734be7ec1ffa521fd8a996125c86f36a261df0db98c4ef3401acdce"
+hash = "a241f504b4ae88d6bd8e9857e84b35e7d47806ae02a7b60cf18398ed3fbb9ca4"
 
 [[files]]
-file = "config/fancymenu/assets/accessibilitytwinkle.png"
-hash = "40fddc23a2ae8054916578d2c879565892155022395879636d60dd400f4fbaf2"
+file = "config/fancymenu/assets/accessibilityhover.png"
+hash = "059d308ea7202f4693be953f2b37480ecea97b4c423d7bcc5f6109025631adc9"
 
 [[files]]
 file = "config/fancymenu/assets/create_astral.png"
 hash = "48233368a2ddbf6105d1051ec82278acc2408db8bf9cffe49035c0d043adc4b9"
 
 [[files]]
+file = "config/fancymenu/assets/createconfig.png"
+hash = "03823d16406bdd8a11a960932101a9729d3c6003336a4aa45e2dee9e3892cdab"
+
+[[files]]
+file = "config/fancymenu/assets/createconfighover.png"
+hash = "ff9aace945cda0bc98dbbee6def027f725cb419b5032b66dd3dc23564f69d4ca"
+
+[[files]]
 file = "config/fancymenu/assets/credits.png"
-hash = "4004107fba5b8d7a1c2a1dd8548dd48c802a6cea62421b43f0253a8e0db2a65b"
+hash = "ae885f746bef11ff6f6849440b297bc2e62e1f1e30619142300d699482f36172"
 
 [[files]]
-file = "config/fancymenu/assets/exit.png"
-hash = "a93005d54fa60b35c6b04a020149d59853273b44a965e2f43952aeb9dd673813"
+file = "config/fancymenu/assets/creditshover.png"
+hash = "fc34fcefbbd09a925b318f825db85024a8f47680458bad7c420590e24aaaf0dc"
 
 [[files]]
-file = "config/fancymenu/assets/exittwinkle.gif"
-hash = "f3cfeb5266511006f8170112e2d7336fe9a05bcbf70b74ca7218ae6072c5f2cf"
+file = "config/fancymenu/assets/discord.png"
+hash = "38360beb9d6a593808f77e6abfd7d0c8417d70ac2537e194070b887eb33251fb"
+
+[[files]]
+file = "config/fancymenu/assets/discordhover.png"
+hash = "3cd8665bc9e8046b46c3de384e190d5afd25639f17bc1269e143c259858393a2"
 
 [[files]]
 file = "config/fancymenu/assets/icons/icon16x16.png"
@@ -293,20 +305,28 @@ file = "config/fancymenu/assets/icons/icon_macos.icns"
 hash = "65d28bb58df5c75f023dbf069d58ce67042e8008afe08f24ff5dc233232679bb"
 
 [[files]]
-file = "config/fancymenu/assets/multiplayer.png"
-hash = "07c49072f2554daefefc2e01ed7a3c49a5dd1fb4172baf82642f74d523a0e49c"
+file = "config/fancymenu/assets/modlist.png"
+hash = "3f95cc2bb628146954a7bc2124076d4aeca9b752f69ffe67244860125d7613c3"
 
 [[files]]
-file = "config/fancymenu/assets/multiplayertwinkle.gif"
-hash = "464d08a789c9cfd7dcc162c750dda3751123a02086eb4d95acd1ebccf5f4286d"
+file = "config/fancymenu/assets/modlisthover.png"
+hash = "76089ba61943e1a237cc0a31af117357078a644c8ef6d06415b7df66981cfb5d"
+
+[[files]]
+file = "config/fancymenu/assets/multiplayer.png"
+hash = "0fedccec44605a7f4ebb5d8320ae901e3dc1945bb3267320e99e797d0ca79254"
+
+[[files]]
+file = "config/fancymenu/assets/multiplayerhover.gif"
+hash = "53b57ee045b81f0c61161ea20d208ccd3e029fd54b404f3a0edb6448a6eed992"
 
 [[files]]
 file = "config/fancymenu/assets/music.png"
-hash = "6bc805a78761d4a4420f09241271a3f478dcf04d4a8933b9e4ae32ec8d90dcfa"
+hash = "bf748b0cc7c9b55694dc235acd641961f82d18068040b46d8b22bbb5c22c44c1"
 
 [[files]]
-file = "config/fancymenu/assets/musictwinkle.png"
-hash = "4758a8b5fb23f420da967dafc06f212e2dfc1f326c4bca4c409936c9d5f3b919"
+file = "config/fancymenu/assets/musichover.png"
+hash = "caeacb53edc2ff75d89852d1586c738e33c345db38987d7580badaefc9ddf6ee"
 
 [[files]]
 file = "config/fancymenu/assets/npc_theme.ogg"
@@ -314,19 +334,27 @@ hash = "acb3c79766f02533116363bb3d39bf565cb33f6ce3cdea5b3a315d2b5106ba5a"
 
 [[files]]
 file = "config/fancymenu/assets/options.png"
-hash = "a663c09954636be76a35a4c11651fe1d576b4a01496a3d24a6cb48e365a7880f"
+hash = "fda8ad1c5f7c7a9ad322f92576f9b981bd08cda91b63cf1aaf1966f72ef07cfa"
 
 [[files]]
-file = "config/fancymenu/assets/optionstwinkle.gif"
-hash = "4b9a3ed83b4447cf9424e2ae6b9dc4023be5516f62a7c3c11a9873af13b8fe87"
+file = "config/fancymenu/assets/optionshover.gif"
+hash = "fb8f1bb3458cfadd4cd9398f335ae32e30919a7720a1973b0c2fce11c9f9255b"
+
+[[files]]
+file = "config/fancymenu/assets/quitgame.png"
+hash = "a862c8884fb69575a74c623d7704512fe16362328af53634f0777631dbc95b8f"
+
+[[files]]
+file = "config/fancymenu/assets/quitgamehover.gif"
+hash = "587a49ae59edb6ca0e0e362ab3a815c04dc311f95aa32be25cf1a8ebe74457aa"
 
 [[files]]
 file = "config/fancymenu/assets/singleplayer.png"
-hash = "b4c453ef7749bbb61f14a46ce69d325b04b0cb2e087a130a84062c24d18fe63c"
+hash = "aaa5fb0bd070809c960132dd0ca9f80b5da6834eaf5a171bb4cbdc0462ba051c"
 
 [[files]]
-file = "config/fancymenu/assets/singleplayertwinkle.gif"
-hash = "23133d8ed5d05387fac40c9de2f123d867c495b64847e9c2916b04d08a63a932"
+file = "config/fancymenu/assets/singleplayerhover.gif"
+hash = "ff2ce174d3457abfb444171fb1bf5c9233c44fcd17facccf6be08b23ba9b9d28"
 
 [[files]]
 file = "config/fancymenu/assets/splashes.txt"
@@ -358,7 +386,7 @@ hash = "1e1467db1de67c935c2b1e1abedb74b563001d767391522ccc9f53e0ccc587c2"
 
 [[files]]
 file = "config/fancymenu/customization/title_screen_layout.txt"
-hash = "6f2b7e33da6324cf707cbad3085f1c732569295bcfb7f6c199743be9c1adf7f5"
+hash = "23a27e56307410416a0c85c19ba27e3cae272f24cbe3f47879cc12a7d741478d"
 
 [[files]]
 file = "config/fancymenu/extensions/fmaudio/config.cfg"
