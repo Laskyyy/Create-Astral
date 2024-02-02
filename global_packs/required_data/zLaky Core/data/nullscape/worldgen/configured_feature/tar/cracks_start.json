@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:random_boolean_selector",
-  "config": {
-    "feature_false": "nullscape:tar/base",
-    "feature_true": "nullscape:tar/base"
-  }
-}

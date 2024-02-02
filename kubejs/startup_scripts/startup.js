@@ -371,7 +371,6 @@ onEvent("block.registry", (event) => {
         .hardness(3)
         .displayName("Copper Plating")
         .tagBlock("minecraft:mineable/pickaxe");
-
     event
         .create("createastral:refined_radiance_block")
         .material("lantern")
@@ -392,6 +391,13 @@ onEvent("block.registry", (event) => {
         .material("lantern")
         .hardness(3)
         .displayName("Copper Coil Block")
+        .tagBlock("minecraft:mineable/pickaxe");
+
+    event
+        .create("createastral:wired_panelling")
+        .material("lantern")
+        .hardness(3)
+        .displayName("Wired Panelling")
         .tagBlock("minecraft:mineable/pickaxe");
 
     event
@@ -432,19 +438,21 @@ onEvent("block.registry", (event) => {
         .texture("down", "createastral:block/electropipe")
         .texture("north", "createastral:block/electropipe")
         .tagBlock("minecraft:mineable/pickaxe");
-  event.create('doodads:asphalt_stair', 'stairs')
-       .material('stone')
-       .hardness(4)
-       .tagBlock('minecraft:mineable/pickaxe')
-       .textureAll('doodads:block/asphalt')
-			
-	event.create('createastral:stone_growth_chamber_dummy')
-      .tagBlock('minecraft:mineable/pickaxe')
-      .material('stone')
-      .hardness(3)
-			.textureAll('createastral:block/stone_growth_chamber_side')
-      .texture('down','createastral:block/stone_growth_chamber')
-      .texture('north','createastral:block/stone_growth_chamber')
+    event
+        .create("doodads:asphalt_stair", "stairs")
+        .material("stone")
+        .hardness(4)
+        .tagBlock("minecraft:mineable/pickaxe")
+        .textureAll("doodads:block/asphalt");
+
+    event
+        .create("createastral:stone_growth_chamber_dummy")
+        .tagBlock("minecraft:mineable/pickaxe")
+        .material("stone")
+        .hardness(3)
+        .textureAll("createastral:block/stone_growth_chamber_side")
+        .texture("down", "createastral:block/stone_growth_chamber")
+        .texture("north", "createastral:block/stone_growth_chamber");
 
     event
         .create("createastral:andesite_alloy_block", "basic")
@@ -465,7 +473,14 @@ onEvent("block.registry", (event) => {
         .material("stone");
 
     event
-        .create("createastral:experience_block")
+        .create("createastral:experience_block", "basic")
+        .hardness(4)
+        .displayName("Ignore this block whilst it's a placeholder")
+        .tagBlock("minecraft:mineable/pickaxe")
+        .material("stone");
+
+    event
+        .create("createastral:compressed_experience_block")
         .tagBlock("minecraft:mineable/pickaxe")
         .material("glass")
         .hardness(2)
@@ -586,126 +601,209 @@ onEvent("item.registry.armor_tiers", (event) => {
 });
 
 ///// REGISTER NEW ITEMS HERE /////
-onEvent('item.registry', event => { 
-    event.create('createastral:crushed_raw_desh'),
-    event.create('createastral:crushed_raw_ostrum'),
-    event.create('createastral:crushed_raw_calorite'),
-    event.create('createastral:subatomic_ingot'),
-    event.create('createastral:astral_conduit')
-         .maxStackSize(1)
-         .maxDamage(20);
-    event.create('createastral:andesite_compound'),
-    event.create('createastral:bronze_sheet'),
-    event.create('createastral:olivine_sheet'),
-    event.create('create:lapis_sheet'),
-    event.create('create:integrated_circuit'),
-    event.create('createastral:incomplete_electronic_circuit'),
-    event.create('createastral:golden_pin'),
-    event.create('createastral:calorite_pin'),
-    event.create('createastral:electrified_pin'),
-    event.create('createastral:uwaah'),
-    event.create('createastral:bronze_ingot'),
-    event.create('createastral:navigation_mechanism');
-    event.create('createastral:coin','create:sequenced_assembly')
-         .displayName('Golden Coin');
-  
-  event.create('createastral:quadrocopter_blueprint').texture("create:item/schematic") ,
-  event.create('createastral:gyrodyne_blueprint').texture("create:item/schematic") ,
-  event.create('createastral:biplane_blueprint').texture("create:item/schematic") ,
-  event.create('createastral:airship_blueprint').texture("create:item/schematic") ,
-  
-  
-  event.create('createastral:refining_agent'),
-  event.create('createastral:separation_agent'),
-  event.create('createastral:shimmer_amplifier'),
-  event.create('createastral:star_shard').glow(true),
-  event.create('createastral:pure_star_shard').glow(true),
-  event.create('createastral:crushed_raw_gadolinite'),
-  event.create('createastral:experience_ingot'),
-  
-  
-  
-  
-  
-  
-  
-  event.create('createastral:golden_bowl').displayName('Golden Bowl');
-  event.create('createastral:filled_golden_bowl','create:sequenced_assembly').displayName('Filled Golden Bowl').food(food => {
-    food
-        .hunger(0)
-        .saturation(0)
-          .effect('drinkbeer:drunk', 3000, 0, 1)
-          .alwaysEdible()
-  });
-  
-  
-  //Radiant Armor And Tools//
-  event.create('createastral:radiant_helmet', 'helmet').tier('radiantarmor').glow(true).rarity('Epic'),
-  event.create('createastral:radiant_chestplate', 'chestplate').tier('radiantarmor').glow(true).rarity('Epic'),
-  event.create('createastral:radiant_leggings', 'leggings').tier('radiantarmor').glow(true).rarity('Epic'),
-  event.create('createastral:radiant_boots', 'boots').tier('radiantarmor').glow(true).rarity('Epic'),
-  
-  event.create('createastral:radiant_sword', 'sword').tier('radiant').glow(true).rarity('Epic'),
-  event.create('createastral:radiant_pickaxe', 'pickaxe').tier('radiant').glow(true).rarity('Epic'),
-  event.create('createastral:radiant_axe', 'axe').tier('radiant').glow(true).rarity('Epic'),
-  event.create('createastral:radiant_shovel', 'shovel').tier('radiant').glow(true).rarity('Epic'),
-  
-  //Copper Armor And Tools//
-  event.create('createastral:copper_helmet', 'helmet').tier('copperarmor'),
-  event.create('createastral:copper_chestplate', 'chestplate').tier('copperarmor'),
-  event.create('createastral:copper_leggings', 'leggings').tier('copperarmor'),
-  event.create('createastral:copper_boots', 'boots').tier('copperarmor'),
-  
-  event.create('createastral:copper_sword', 'sword').tier('copper'),
-  event.create('createastral:copper_pickaxe', 'pickaxe').tier('copper'),
-  event.create('createastral:copper_axe', 'axe').tier('copper'),
-  event.create('createastral:copper_shovel', 'shovel').tier('copper'),
-  event.create('createastral:copper_hoe', 'hoe').tier('copper'),
-  
-  //Brass Armor And Tools//
-  event.create('createastral:brass_helmet', 'helmet').tier('brassarmor'),
-  event.create('createastral:brass_chestplate', 'chestplate').tier('brassarmor'),
-  event.create('createastral:brass_leggings', 'leggings').tier('brassarmor'),
-  event.create('createastral:brass_boots', 'boots').tier('brassarmor'),
-  
-  event.create('createastral:brass_sword', 'sword').tier('brass'),
-  event.create('createastral:brass_pickaxe', 'pickaxe').tier('brass'),
-  event.create('createastral:brass_axe', 'axe').tier('brass'),
-  event.create('createastral:brass_shovel', 'shovel').tier('brass'),
-  event.create('createastral:brass_hoe', 'hoe').tier('brass'),
-  
-  //Steel Armor//
-  event.create('createastral:steel_helmet', 'helmet').tier('steelarmor'),
-  event.create('createastral:steel_chestplate', 'chestplate').tier('steelarmor'),
-  event.create('createastral:steel_leggings', 'leggings').tier('steelarmor'),
-  event.create('createastral:steel_boots', 'boots').tier('steelarmor'),
-  
-  //Sturdy Armor//
-  event.create('createastral:sturdy_helmet', 'helmet').tier('sturdyarmor'),
-  event.create('createastral:sturdy_chestplate', 'chestplate').tier('sturdyarmor'),
-  event.create('createastral:sturdy_leggings', 'leggings').tier('sturdyarmor'),
-  event.create('createastral:sturdy_boots', 'boots').tier('sturdyarmor'),
-  
-  //Other Items//
-  event.create('createastral:orcane').displayName('Information / General Progression').glow(true),
-  event.create('createastral:astral_singularity').food(food => {
-    food
-        .hunger(50)
-        .saturation(50)//This value does not directly translate to saturation points gained
-          //The real value can be assumed to be:
-          //min(hunger * saturation * 2 + saturation, foodAmountAfterEating)
-          .effect('regeneration', 3000, 0, 1)
-          .effect('speed', 3000, 0, 1)
-          .effect('saturation', 3000, 0, 1)
-          .effect('glowing', 6000, 0, 1)
-          .removeEffect('poison')
-          .alwaysEdible()//Like golden apples
+onEvent("item.registry", (event) => {
+    event.create("createastral:crushed_raw_desh"),
+        event.create("createastral:crushed_raw_ostrum"),
+        event.create("createastral:crushed_raw_calorite"),
+        event.create("createastral:subatomic_ingot"),
+        event
+            .create("createastral:astral_conduit")
+            .maxStackSize(1)
+            .maxDamage(20);
+    event.create("createastral:andesite_compound"),
+        event.create("createastral:bronze_sheet"),
+        event.create("createastral:olivine_sheet"),
+        event.create("create:lapis_sheet"),
+        event.create("create:integrated_circuit"),
+        event.create("createastral:incomplete_electronic_circuit"),
+        event.create("createastral:golden_pin"),
+        event.create("createastral:calorite_pin"),
+        event.create("createastral:electrified_pin"),
+        event.create("createastral:uwaah"),
+        event.create("createastral:bronze_ingot"),
+        event.create("createastral:navigation_mechanism");
+    event
+        .create("createastral:coin", "create:sequenced_assembly")
+        .displayName("Golden Coin");
+
+    event
+        .create("createastral:quadrocopter_blueprint")
+        .texture("create:item/schematic"),
+        event
+            .create("createastral:gyrodyne_blueprint")
+            .texture("create:item/schematic"),
+        event
+            .create("createastral:biplane_blueprint")
+            .texture("create:item/schematic"),
+        event
+            .create("createastral:airship_blueprint")
+            .texture("create:item/schematic"),
+        event.create("createastral:refining_agent"),
+        event.create("createastral:separation_agent"),
+        event.create("createastral:shimmer_amplifier"),
+        event.create("createastral:star_shard").glow(true),
+        event.create("createastral:pure_star_shard").glow(true),
+        event.create("createastral:crushed_raw_gadolinite"),
+        event.create("createastral:experience_ingot").glow(true),
+        event.create("createastral:stone_dust").displayName("Stone Dust");
+    event
+        .create("createastral:stone_small_dust")
+        .displayName("Small Pile of Stone Dust");
+
+    event.create("createastral:golden_bowl").displayName("Golden Bowl");
+    event
+        .create("createastral:filled_golden_bowl", "create:sequenced_assembly")
+        .displayName("Filled Golden Bowl")
+        .food((food) => {
+            food.hunger(0)
+                .saturation(0)
+                .effect("drinkbeer:drunk", 3000, 0, 1)
+                .alwaysEdible();
+        });
+
+    //Radiant Armor And Tools//
+    event
+        .create("createastral:radiant_helmet", "helmet")
+        .tier("radiantarmor")
+        .glow(true)
+        .rarity("Epic"),
+        event
+            .create("createastral:radiant_chestplate", "chestplate")
+            .tier("radiantarmor")
+            .glow(true)
+            .rarity("Epic"),
+        event
+            .create("createastral:radiant_leggings", "leggings")
+            .tier("radiantarmor")
+            .glow(true)
+            .rarity("Epic"),
+        event
+            .create("createastral:radiant_boots", "boots")
+            .tier("radiantarmor")
+            .glow(true)
+            .rarity("Epic"),
+        event
+            .create("createastral:radiant_sword", "sword")
+            .tier("radiant")
+            .glow(true)
+            .rarity("Epic"),
+        event
+            .create("createastral:radiant_pickaxe", "pickaxe")
+            .tier("radiant")
+            .glow(true)
+            .rarity("Epic"),
+        event
+            .create("createastral:radiant_axe", "axe")
+            .tier("radiant")
+            .glow(true)
+            .rarity("Epic"),
+        event
+            .create("createastral:radiant_shovel", "shovel")
+            .tier("radiant")
+            .glow(true)
+            .rarity("Epic"),
+        //Copper Armor And Tools//
+        event
+            .create("createastral:copper_helmet", "helmet")
+            .tier("copperarmor"),
+        event
+            .create("createastral:copper_chestplate", "chestplate")
+            .tier("copperarmor"),
+        event
+            .create("createastral:copper_leggings", "leggings")
+            .tier("copperarmor"),
+        event.create("createastral:copper_boots", "boots").tier("copperarmor"),
+        event.create("createastral:copper_sword", "sword").tier("copper"),
+        event.create("createastral:copper_pickaxe", "pickaxe").tier("copper"),
+        event.create("createastral:copper_axe", "axe").tier("copper"),
+        event.create("createastral:copper_shovel", "shovel").tier("copper"),
+        event.create("createastral:copper_hoe", "hoe").tier("copper"),
+        //Brass Armor And Tools//
+        event.create("createastral:brass_helmet", "helmet").tier("brassarmor"),
+        event
+            .create("createastral:brass_chestplate", "chestplate")
+            .tier("brassarmor"),
+        event
+            .create("createastral:brass_leggings", "leggings")
+            .tier("brassarmor"),
+        event.create("createastral:brass_boots", "boots").tier("brassarmor"),
+        event.create("createastral:brass_sword", "sword").tier("brass"),
+        event.create("createastral:brass_pickaxe", "pickaxe").tier("brass"),
+        event.create("createastral:brass_axe", "axe").tier("brass"),
+        event.create("createastral:brass_shovel", "shovel").tier("brass"),
+        event.create("createastral:brass_hoe", "hoe").tier("brass"),
+        //Steel Armor//
+        event.create("createastral:steel_helmet", "helmet").tier("steelarmor"),
+        event
+            .create("createastral:steel_chestplate", "chestplate")
+            .tier("steelarmor"),
+        event
+            .create("createastral:steel_leggings", "leggings")
+            .tier("steelarmor"),
+        event.create("createastral:steel_boots", "boots").tier("steelarmor"),
+        //Sturdy Armor//
+        event
+            .create("createastral:sturdy_helmet", "helmet")
+            .tier("sturdyarmor"),
+        event
+            .create("createastral:sturdy_chestplate", "chestplate")
+            .tier("sturdyarmor"),
+        event
+            .create("createastral:sturdy_leggings", "leggings")
+            .tier("sturdyarmor"),
+        event.create("createastral:sturdy_boots", "boots").tier("sturdyarmor"),
+        //Other Items//
+        event
+            .create("createastral:orcane")
+            .displayName("Information / General Progression")
+            .glow(true),
+        event.create("createastral:astral_singularity").food((food) => {
+            food.hunger(50)
+                .saturation(50) //This value does not directly translate to saturation points gained
+                //The real value can be assumed to be:
+                //min(hunger * saturation * 2 + saturation, foodAmountAfterEating)
+                .effect("regeneration", 3000, 0, 1)
+                .effect("speed", 3000, 0, 1)
+                .effect("saturation", 3000, 0, 1)
+                .effect("glowing", 6000, 0, 1)
+                .removeEffect("poison")
+                .alwaysEdible(); //Like golden apples
+        });
+    event.create("createastral:pure_biomatter");
+    event.create("createastral:lime").displayName("Lime Dust");
+    event
+        .create("createastral:coin", "create:sequenced_assembly")
+        .displayName("coin");
+});
+
+// Java reflection stuff //
+// Custom drawer upgrades
+
+const $DeferredRegister = java('dev.architectury.registry.registries.DeferredRegister')
+const $Tiers = java('net.minecraft.world.item.Tiers')
+const $Item = java('net.minecraft.world.item.Item')
+const $Registry = java('net.minecraft.core.Registry')
+const $UpgradeItem = java('io.github.mattidragon.extendeddrawers.item.UpgradeItem')
+const $ResourceLocation = java('net.minecraft.class_2960')
+const $FabricItemSettings = java('net.fabricmc.fabric.api.item.v1.FabricItemSettings')
+
+let ITEMS = $DeferredRegister.create('createastral', $Registry.ITEM_REGISTRY)
+let drawer_multipliers = {} // This will be used later for adding tooltips.
+
+function registerUpgrade(mod_id, name, multiplier) {
+    drawer_multipliers[`${mod_id}:${name}`] = multiplier;
+    ITEMS['register(net.minecraft.class_2960,java.util.function.Supplier)'](`${mod_id}:${name}`, () => {
+        return new $UpgradeItem(new $FabricItemSettings(), $ResourceLocation(mod_id, `item/${name}`), multiplier)
     })
-  event.create('createastral:pure_biomatter')
-  event.create('createastral:lime').displayName('Lime Dust');
-  event.create('createastral:coin','create:sequenced_assembly').displayName('coin');
-  
-  }) 
+}
+
+registerUpgrade('createastral', 't1_upgrade', 2)
+registerUpgrade('createastral', 't2_upgrade', 4)
+registerUpgrade('createastral', 't3_upgrade', 16)
+registerUpgrade('createastral', 't4_upgrade', 64)
+registerUpgrade('createastral', 't5_upgrade', 256)
+registerUpgrade('createastral', 't6_upgrade', 1048576) // 2^20x, this makes the regular drawer store 2^31 items
+ITEMS.register()
 
 ///// ITEM TOOLTIPS REGISTRY /////
 
@@ -717,7 +815,7 @@ onEvent("item.tooltip", (e) => {
         },
         {
             item: "create:blaze_cake",
-            tooltip: "Use processes in Chapter 4 to superheat blaze burners.",
+            tooltip: "Obtained in Chapter 4!",
         },
         {
             item: "yttr:gadolinite",
@@ -975,44 +1073,34 @@ onEvent("item.tooltip", (e) => {
             item: "adoptafloppa:amazon_delivery",
             tooltip:
                 'A note is attached: "Feed this thing fish once a day or else it will explode. Good luck.".',
-        },
+        }
+        
     ];
 
-    tooltips.forEach((tooltip) => {
+    tooltips.forEach(tooltip => {
         e.addAdvanced(tooltip.item, (item, advanced, text) => {
-            if (!e.isShift()) {
-                text.add(1, [
-                    Text.of("Hold ").darkGreen(),
-                    Text.of("Shift ").green(),
-                    Text.of("to see more info.").darkGreen(),
-                ]);
-            }
-            if (e.isShift()) {
-                text.add(1, [Text.of(tooltip.tooltip).green()]);
-            }
+          if (!e.isShift()) {
+            text.add(1, [Text.of('Hold ').darkGreen(), Text.of('Shift ').green(), Text.of('to see more info.').darkGreen()]);
+          }
+          if (e.isShift()) {
+            text.add(1, [Text.of(tooltip.tooltip).green()]);
+          }
         });
-    });
-    e.addAdvanced("createastral:orcane", (item, advanced, text) => {
+      });
+      e.addAdvanced('createastral:orcane', (item, advanced, text) => {
         if (!e.isShift()) {
-            text.add(1, [
-                Text.of("Hold ").darkGreen(),
-                Text.of("Shift ").green(),
-                Text.of("to see more info.").darkGreen(),
-            ]);
+          text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
         }
         if (e.isShift()) {
-            text.add(1, [
-                Text.of(
-                    "If you are new to create, use pondering or online guides. The pack is almost exclusively centered around it and Tech Reborn. The quest book has some items that give a general idea of what has changed / what is included, in the order of when to take note of them, however the pack can be played without following it exactly, so do what you enjoy."
-                ).gold(),
-            ]);
-            text.add(2, [
-                Text.of(
-                    "A major change you *might* want to be aware of. The nether does not exist. Do not even try to make the portal as it will not function. All nether related items are distributed throughout the pack (mostly planets)"
-                ).white(),
-            ]);
+          
+      text.add(1, [Text.of('If you are new to create, use pondering or online guides. The pack is almost exclusively centered around it and Tech Reborn. The quest book has some items that give a general idea of what has changed / what is included, in the order of when to take note of them, however the pack can be played without following it exactly, so do what you enjoy.').gold(),])
+      text.add(2, [Text.of('A major change you *might* want to be aware of. The nether does not exist. Do not even try to make the portal as it will not function. All nether related items are distributed throughout the pack (mostly planets)').white(),])
         }
-    });
+      });
+      // Custom drawer upgrades
+      for (const [item, mutliplier] of Object.entries(drawer_multipliers)) {
+        e.add([item], Text.gray('Drawer Slot capacity: ').append(Text.green(`${mutliplier}x`)))
+      }
 });
 
 ///// CUSTOM ASTRAL WORLDGEN /////
@@ -1038,11 +1126,7 @@ onEvent("worldgen.add", (event) => {
 
     event.addOre((ore) => {
         ore.id = "kubejs:glowstonemoon"; // optional
-        ore.biomes = [
-            "ad_astra:lunar_wastelands",
-            "minecraft:basalt_deltas",
-            "incendium:toxic_heap",
-        ];
+        ore.biomes = ["ad_astra:lunar_wastelands", "minecraft:basalt_deltas"];
         ore.addTarget("#ad_astra:moon_ore_replaceables", "minecraft:glowstone");
 
         ore.count([10, 40]).squared().triangleHeight(0, 85);
@@ -1050,11 +1134,7 @@ onEvent("worldgen.add", (event) => {
 
     event.addOre((ore) => {
         ore.id = "kubejs:rubyoremoon"; // optional
-        ore.biomes = [
-            "ad_astra:lunar_wastelands",
-            "minecraft:basalt_deltas",
-            "incendium:toxic_heap",
-        ];
+        ore.biomes = ["ad_astra:lunar_wastelands", "minecraft:basalt_deltas"];
         ore.biomes = [
             {
                 not: {
@@ -1072,11 +1152,7 @@ onEvent("worldgen.add", (event) => {
 
     event.addOre((ore) => {
         ore.id = "kubejs:cobaltoremoon"; // optional
-        ore.biomes = [
-            "ad_astra:lunar_wastelands",
-            "minecraft:basalt_deltas",
-            "incendium:toxic_heap",
-        ];
+        ore.biomes = ["ad_astra:lunar_wastelands", "minecraft:basalt_deltas"];
         ore.biomes = [
             {
                 not: {
@@ -1094,11 +1170,7 @@ onEvent("worldgen.add", (event) => {
 
     event.addOre((ore) => {
         ore.id = "kubejs:silveroremoon"; // optional
-        ore.biomes = [
-            "ad_astra:lunar_wastelands",
-            "minecraft:basalt_deltas",
-            "incendium:toxic_heap",
-        ];
+        ore.biomes = ["ad_astra:lunar_wastelands", "minecraft:basalt_deltas"];
         ore.addTarget(
             "#ad_astra:moon_ore_replaceables",
             "techreborn:deepslate_silver_ore"
@@ -1109,11 +1181,7 @@ onEvent("worldgen.add", (event) => {
 
     event.addOre((ore) => {
         ore.id = "kubejs:basalt"; // optional
-        ore.biomes = [
-            "ad_astra:lunar_wastelands",
-            "minecraft:basalt_deltas",
-            "incendium:toxic_heap",
-        ];
+        ore.biomes = ["ad_astra:lunar_wastelands", "minecraft:basalt_deltas"];
         ore.addTarget("#ad_astra:moon_ore_replaceables", "create:scoria");
 
         ore.count([1, 2]).squared().triangleHeight(60, 110);
@@ -1122,11 +1190,7 @@ onEvent("worldgen.add", (event) => {
 
     event.addOre((ore) => {
         ore.id = "kubejs:skystoneae2"; // optional
-        ore.biomes = [
-            "ad_astra:lunar_wastelands",
-            "minecraft:basalt_deltas",
-            "incendium:toxic_heap",
-        ];
+        ore.biomes = ["ad_astra:lunar_wastelands", "minecraft:basalt_deltas"];
         ore.addTarget("#ad_astra:moon_ore_replaceables", "ad_astra:sky_stone");
 
         ore.count([1, 2]).squared().triangleHeight(0, 110);

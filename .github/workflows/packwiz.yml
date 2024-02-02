@@ -1,0 +1,101 @@
+name: Build with packwiz
+
+on:
+    workflow_dispatch:
+        inputs:
+            artifacts:
+                description: Upload artifacts
+                required: true
+                default: "true"
+            serverpack:
+                description: Create and upload Server Pack
+                required: true
+                default: "false"
+    pull_request:
+        branches: ["main", "Astral-Experimental"]
+    push:
+        branches: ["main", "Astral-Experimental"]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Repository
+              uses: actions/checkout@v3
+
+            - name: setup jdk 17
+              uses: actions/setup-java@v3
+              with:
+                  java-version: 17
+                  distribution: "temurin"
+
+            - name: Get latest packwiz binary
+              id: download-packwiz
+              uses: dawidd6/action-download-artifact@v2
+              with:
+                  workflow: go.yml
+                  branch: main
+                  name: Linux 64-bit x86
+                  repo: packwiz/packwiz
+
+            - name: Make packwiz binary executable
+              run: chmod +x ./packwiz
+
+            - name: Restore cached mod downloads
+              id: cache-mods-restore
+              uses: actions/cache/restore@v3
+              with:
+                  path: /home/runner/.cache/packwiz/cache
+                  key: cached-mods
+                  restore-keys: |
+                      cached-mods-
+
+            - name: Create CurseForge Client zip
+              run: |
+                  ./packwiz curseforge export -o create_astral-gh_${{github.run_number}}.zip
+
+            - name: Prepare for Serverpack creation
+              if: ${{ github.event.inputs.serverpack }}
+              run: |
+                  cat server.packwizignore >> .packwizignore
+                  ./packwiz refresh
+                  mkdir server
+
+            - name: Download packwiz-installer-bootstrap
+              if: ${{ github.event.inputs.serverpack }}
+              uses: robinraju/release-downloader@v1.8
+              with:
+                  repository: packwiz/packwiz-installer-bootstrap
+                  latest: true
+                  fileName: packwiz-installer-bootstrap.jar
+
+            - name: Create Serverpack
+              if: ${{ github.event.inputs.serverpack }}
+              run: |
+                  cd server
+                  java -jar ../packwiz-installer-bootstrap.jar -g -s server ../pack.toml
+                  ls -l
+                  cd ../
+
+            - name: Cache mod downloads
+              id: cache-mods-save
+              uses: actions/cache/save@v3
+              with:
+                  path: |
+                      /home/runner/.cache/packwiz/cache
+                      ./server/mods
+                  key: cached-mods-${{ hashFiles('/home/runner/.cache/packwiz/cache/**/*') }}-${{ hashFiles('./server/mods') }}
+
+            - name: Upload Client pack
+              if: ${{ github.event.inputs.artifacts }}
+              uses: actions/upload-artifact@v3
+              with:
+                  name: UNZIP_ME-create_astral-gh_${{github.run_number}}.zip
+                  path: create_astral-gh_${{github.run_number}}.zip
+
+            - name: Upload Server pack
+              if: ${{ github.event.inputs.serverpack && github.event.inputs.artifacts }}
+              uses: actions/upload-artifact@v3
+              with:
+                  name: create_astral_server-gh_${{github.run_number}}.zip
+                  path: ./server

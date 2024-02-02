@@ -2,6 +2,6 @@
     "parent": "block/leaves_bushy_spruce",
     "textures": {
         "all": "block/spruce_leaves",
-		"bushy": "block/spruce_leaves_bushy"
+        "bushy": "block/spruce_leaves_bushy"
     }
 }

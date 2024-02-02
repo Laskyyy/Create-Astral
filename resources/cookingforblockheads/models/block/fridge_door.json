@@ -1,43 +1,71 @@
 {
-	"credit": "Designed by Xelo with Blockbench",
-	"textures": {
-		"fridge_side": "cookingforblockheads:block/fridge_side",
-		"fridge_top": "cookingforblockheads:block/fridge_top"
-	},
-	"elements": [
-		{
-			"name": "Door_Main",
-			"from": [1, 0, 1],
-			"to": [15, 15, 2],
-			"faces": {
-				"north": {"uv": [1, 1, 15, 16], "texture": "#fridge_side", "tintindex": 0},
-				"east": {"uv": [1, 1, 2, 16], "texture": "#fridge_side", "tintindex": 0},
-				"south": {"uv": [1, 1, 15, 16], "texture": "#fridge_side", "tintindex": 0},
-				"west": {"uv": [1, 1, 2, 16], "texture": "#fridge_side", "tintindex": 0},
-				"up": {"uv": [1, 1, 15, 2], "texture": "#fridge_side", "tintindex": 0},
-				"down": {"uv": [1, 1, 15, 2], "texture": "#fridge_side", "tintindex": 0}
-			}
-		},
-		{
-			"name": "Door_Handle",
-			"from": [2, 4, 0],
-			"to": [4, 8, 1],
-			"faces": {
-				"north": {"uv": [6, 1, 10, 3], "rotation": 90, "texture": "#fridge_top"},
-				"east": {"uv": [14, 5, 15, 9], "texture": "#fridge_top"},
-				"west": {"uv": [1, 5, 2, 9], "texture": "#fridge_top"},
-				"up": {"uv": [4, 1, 5, 3], "texture": "#fridge_top"},
-				"down": {"uv": [3, 1, 4, 3], "texture": "#fridge_top"}
-			}
-		}
-	],
-	"display": {},
-	"groups": [
-		{
-			"name": "fridge_door",
-			"origin": [8, 8, 8],
-			"color": 0,
-			"children": [0, 1]
-		}
-	]
+    "credit": "Designed by Xelo with Blockbench",
+    "textures": {
+        "fridge_side": "cookingforblockheads:block/fridge_side",
+        "fridge_top": "cookingforblockheads:block/fridge_top"
+    },
+    "elements": [
+        {
+            "name": "Door_Main",
+            "from": [1, 0, 1],
+            "to": [15, 15, 2],
+            "faces": {
+                "north": {
+                    "uv": [1, 1, 15, 16],
+                    "texture": "#fridge_side",
+                    "tintindex": 0
+                },
+                "east": {
+                    "uv": [1, 1, 2, 16],
+                    "texture": "#fridge_side",
+                    "tintindex": 0
+                },
+                "south": {
+                    "uv": [1, 1, 15, 16],
+                    "texture": "#fridge_side",
+                    "tintindex": 0
+                },
+                "west": {
+                    "uv": [1, 1, 2, 16],
+                    "texture": "#fridge_side",
+                    "tintindex": 0
+                },
+                "up": {
+                    "uv": [1, 1, 15, 2],
+                    "texture": "#fridge_side",
+                    "tintindex": 0
+                },
+                "down": {
+                    "uv": [1, 1, 15, 2],
+                    "texture": "#fridge_side",
+                    "tintindex": 0
+                }
+            }
+        },
+        {
+            "name": "Door_Handle",
+            "from": [2, 4, 0],
+            "to": [4, 8, 1],
+            "faces": {
+                "north": {
+                    "uv": [6, 1, 10, 3],
+                    "rotation": 90,
+                    "texture": "#fridge_top"
+                },
+                "east": { "uv": [14, 5, 15, 9], "texture": "#fridge_top" },
+                "west": { "uv": [1, 5, 2, 9], "texture": "#fridge_top" },
+                "up": { "uv": [4, 1, 5, 3], "texture": "#fridge_top" },
+                "down": { "uv": [3, 1, 4, 3], "texture": "#fridge_top" }
+            }
+        }
+    ],
+    "display": {},
+    "groups": [
+        {
+            "name": "fridge_door",
+            "origin": [8, 8, 8],
+            "color": 0,
+            "children": [0, 1]
+        }
+    ]
 }

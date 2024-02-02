@@ -220,12 +220,26 @@ function lizardCH2Changes(event) {
     });
 
     event.shaped("create:brass_funnel", ["FB", "CO", "VP"], {
-        B: "tconstruct:rose_gold_ingot",
+        B: "create:golden_sheet",
         O: "minecraft:observer",
         F: "create:filter",
         C: "minecraft:comparator",
-        P: "create:fluid_pipe",
-        V: "create:fluid_valve",
+        P: "create:andesite_funnel",
+        V: "create:andesite_tunnel",
+    });
+
+    event.shaped("create:smart_chute", ["FB", "CO", "PP"], {
+        B: "create:golden_sheet",
+        O: "minecraft:observer",
+        F: "create:filter",
+        C: "minecraft:comparator",
+        P: "create:chute",
+    });
+
+    event.shaped("create:stockpile_switch", ["FB", "BO"], {
+        B: "create:copper_sheet",
+        O: "minecraft:observer",
+        F: "create:railway_casing",
     });
 
     // Pre-brass display links (we can get pre-brass display boards after all)
@@ -263,13 +277,11 @@ function lizardCH3Changes(event) {
     // Remove mechanical crafter requirement from alternator+electric motor,
     //  Making it fully unique to the silver path.
 
-    event.shaped("createaddition:alternator", ["ABA", "CDC", "EFE"], {
+    event.shaped("createaddition:alternator", ["AAA", "CDC", "EAE"], {
         A: "create:iron_sheet",
-        B: "techreborn:red_cell_battery",
         C: "createaddition:copper_spool",
         D: "create:integrated_circuit",
         E: "createaddition:capacitor",
-        F: "techreborn:basic_machine_casing",
     });
 
     event.shaped("createaddition:electric_motor", ["ABA", "CDC", "EFE"], {
@@ -657,22 +669,22 @@ onEvent("recipes", (event) => {
 
     ///// EXTENDED DRAWERS ////
 
-    event.shaped("extended_drawers:single_drawer", ["ABA", "BCB", "ABA"], {
-        A: "#c:stripped_logs",
-        B: "create:andesite_alloy",
-        C: "reinfchest:copper_chest",
+    event.shaped("extended_drawers:single_drawer", ["AAA", "ABA", "ACA"], {
+        A: "#minecraft:planks",
+        B: "minecraft:barrel",
+        C: "minecraft:paper",
     });
 
-    event.shaped("extended_drawers:double_drawer", ["ACA", "BBB", "ACA"], {
-        A: "#c:stripped_logs",
-        B: "create:andesite_alloy",
-        C: "reinfchest:copper_chest",
+    event.shaped("extended_drawers:double_drawer", ["AAA", "CBC", "AAA"], {
+        A: "#minecraft:planks",
+        B: "minecraft:barrel",
+        C: "minecraft:paper",
     });
 
     event.shaped("extended_drawers:quad_drawer", ["ACA", "CBC", "ACA"], {
-        A: "#c:stripped_logs",
-        B: "create:andesite_alloy",
-        C: "reinfchest:copper_chest",
+        A: "#minecraft:planks",
+        B: "minecraft:barrel",
+        C: "minecraft:paper",
     });
 
     event.shaped("extended_drawers:upgrade_frame", ["AB", "BA"], {
@@ -680,25 +692,22 @@ onEvent("recipes", (event) => {
         B: "create:andesite_alloy",
     });
 
-    event.shaped("extended_drawers:t1_upgrade", ["ABA", "DCD", "ABA"], {
+    event.shaped("extended_drawers:t1_upgrade", ["ABA", "BCB", "ABA"], {
+        A: "techreborn:rubber",
+        B: "create:sturdy_sheet",
+        C: "extended_drawers:upgrade_frame",
+    });
+
+    event.shaped("extended_drawers:t2_upgrade", ["ABA", "BCB", "ABA"], {
         A: "tconstruct:seared_brick",
-        B: "techreborn:rubber",
-        C: "reinfchest:iron_chest",
-        D: "extended_drawers:upgrade_frame",
+        B: "tconstruct:rose_gold_ingot",
+        C: "extended_drawers:t1_upgrade",
     });
 
-    event.shaped("extended_drawers:t2_upgrade", ["ABA", "DCD", "ABA"], {
+    event.shaped("extended_drawers:t3_upgrade", ["ABA", "BCB", "ABA"], {
         A: "create:brass_sheet",
-        B: "ae2:fluix_dust",
-        C: "reinfchest:gold_chest",
-        D: "extended_drawers:t1_upgrade",
-    });
-
-    event.shaped("extended_drawers:t3_upgrade", ["ABA", "DCD", "ABA"], {
-        A: "techreborn:lead_plate",
-        B: "passivepiglins:piglin_fortune",
-        C: "reinfchest:diamond_chest",
-        D: "extended_drawers:t2_upgrade",
+        B: "ae2:fluix_block",
+        C: "extended_drawers:t2_upgrade",
     });
 
     event.shaped("extended_drawers:t4_upgrade", ["ABA", "DCD", "ABA"], {
@@ -708,10 +717,9 @@ onEvent("recipes", (event) => {
         D: "extended_drawers:t3_upgrade",
     });
 
-    event.shaped("extended_drawers:downgrade", ["ABA", "DCD", "ABA"], {
+    event.shaped("extended_drawers:downgrade", ["ABA", "BDB", "ABA"], {
         A: "createaddition:copper_rod",
-        B: "tconstruct:grout",
-        C: "trashcans:item_trash_can",
+        B: "minecraft:flint",
         D: "extended_drawers:upgrade_frame",
     });
 
@@ -1002,6 +1010,19 @@ onEvent("recipes", (event) => {
 
     //// ASSORTED CRAFTING BENCH RECIPES
 
+    //sponge recipes
+    event.shaped("minecraft:heart_of_the_sea", ["ABA", "CDC", "ABA"], {
+        A: "minecraft:glowstone",
+        B: "minecraft:lapis_block",
+        C: "techreborn:silver_ingot",
+        D: "minecraft:diamond_block",
+    });
+
+    event.shaped("minecraft:sponge", ["ABA", "BBB", "ABA"], {
+        A: "techreborn:sponge_piece",
+        B: "#c:slimeballs",
+    });
+
     //dispenser recipe
     event.shaped("minecraft:dispenser", ["AB ", "ACB", "AB "], {
         A: "minecraft:string",
@@ -1080,11 +1101,6 @@ onEvent("recipes", (event) => {
         {}
     );
 
-    event.shaped("16x create:refined_radiance_casing", ["BBB", "BAB", "BBB"], {
-        A: "create:refined_radiance",
-        B: "#minecraft:planks",
-    });
-
     event.shaped("10x minecraft:torch", ["A", "B"], {
         A: "naturalist:glow_goop",
         B: "minecraft:stick",
@@ -1157,22 +1173,140 @@ onEvent("recipes", (event) => {
         }),
         ["CCC", "DED", "CCC"],
         {
-            D: "techreborn:electronic_circuit",
-            E: "create:blaze_burner",
-            C: "techreborn:lead_storage_block",
+            A: "techreborn:electronic_circuit",
+            B: "create:blaze_burner",
+            C: "create:fluid_tank",
+            C: "techreborn:lead_plate",
+            D: "techreborn:industrial_centrifuge",
+            E: "techreborn:advanced_machine_frame",
+            F: "techreborn:extractor",
         }
     );
 
-    event.shaped("travelersbackpack:standard", ["ABA", "CDE", "FAF"], {
-        A: "farmersdelight:canvas",
-        B: "minecraft:crafting_table",
-        C: "campanion:leather_pouch",
-        D: "minecraft:barrel",
-        E: "campanion:sleeping_bag",
-        F: "campanion:rope",
+    event.shaped("techreborn:industrial_electrolyzer", ["ABA", "CDC", "ABA"], {
+        A: "createastral:copper_heating_coil",
+        B: "techreborn:electronic_circuit",
+        C: "techreborn:hv_cable",
+        D: "techreborn:advanced_machine_frame",
+    });
+
+    event.shaped("techreborn:industrial_sawmill", ["ABA", "CDC", "EFG"], {
+        A: "techreborn:lead_plate",
+        B: "techreborn:diamond_saw_blade",
+        C: "create:belt_connector",
+        D: "create:mechanical_saw",
+        E: "techreborn:electronic_circuit",
+        F: "techreborn:advanced_machine_frame",
+        G: "create:rotation_speed_controller",
+    });
+
+    event.shaped("techreborn:vacuum_freezer", ["AAA", "BCB", "DED"], {
+        A: "techreborn:lead_plate",
+        B: "techreborn:electronic_circuit",
+        C: "techreborn:advanced_machine_frame",
+        D: "minecraft:blue_ice",
+        E: "tconstruct:seared_basin",
+    });
+
+    event.shaped("techreborn:solid_canning_machine", ["ABA", "CDC", "FBF"], {
+        A: "create:sturdy_sheet",
+        B: "create:deployer",
+        C: "create:belt_connector",
+        D: "techreborn:basic_machine_frame",
+        E: "create:integrated_circuit",
+    });
+
+    event.shaped("techreborn:greenhouse_controller", ["ABA", "CDC", "AEA"], {
+        A: "create:sturdy_sheet",
+        B: "create:deployer",
+        C: "create:mechanical_harvester",
+        D: "create:mechanical_bearing",
+        E: "techreborn:basic_machine_frame",
+    });
+
+    event.shaped("techreborn:industrial_centrifuge", ["ABC", "DED", "FBF"], {
+        A: "techreborn:lead_plate",
+        B: "techreborn:extractor",
+        C: "techreborn:electronic_circuit",
+        D: "techreborn:advanced_machine_frame",
+        E: "create:mechanical_bearing",
+        F: "create:rotation_speed_controller",
+    });
+
+    event.shaped("techreborn:electric_furnace", ["ABA", "CDC", "AEA"], {
+        A: "create:sturdy_sheet",
+        B: "create:integrated_circuit",
+        C: "create:encased_fan",
+        D: "minecraft:furnace",
+        E: "techreborn:basic_machine_frame",
+    });
+
+    event.shaped("techreborn:chemical_reactor", ["ABA", "CDC", "AEA"], {
+        A: "create:sturdy_sheet",
+        B: "create:mechanical_mixer",
+        C: "create:fluid_tank",
+        D: "techreborn:basic_machine_frame",
+        E: "create:integrated_circuit",
+    });
+
+    event.shaped("techreborn:auto_crafting_table", ["ABA", "ACA", "ADA"], {
+        A: "create:mechanical_crafter",
+        B: "minecraft:barrel",
+        C: "techreborn:basic_machine_frame",
+        D: "techreborn:electronic_circuit",
+    });
+
+    event.shaped("techreborn:alloy_smelter", ["ABA", "CDC", "EFE"], {
+        A: "create:sturdy_sheet",
+        B: "create:mechanical_mixer",
+        C: "create:basin",
+        D: "techreborn:basic_machine_frame",
+        E: "create:integrated_circuit",
+        F: "create:blaze_burner",
+    });
+
+    event.shaped("techreborn:extractor", ["AAA", "BCB", "ADA"], {
+        A: "create:sturdy_sheet",
+        B: "create:mechanical_pump",
+        C: "techreborn:basic_machine_frame",
+        D: "create:integrated_circuit",
+    });
+
+    event.shaped("travelersbackpack:standard", ["ABC", "DED", "FBF"], {
+        A: "#c:workbenches",
+        B: "campanion:leather_pouch",
+        C: "campanion:sleeping_bag",
+        D: "create:fluid_tank",
+        E: "tconstruct:travellers_chestplate",
+        F: "farmersdelight:rope",
+    });
+
+    event.shaped("travelersbackpack:standard", ["ABC", "DED", "FBF"], {
+        A: "#c:workbenches",
+        B: "campanion:leather_pouch",
+        C: "campanion:sleeping_bag",
+        D: "create:fluid_tank",
+        E: "tconstruct:travellers_chestplate",
+        F: "farmersdelight:rope",
+    });
+    event.shaped("campanion:sleeping_bag", ["AAA", "BCB"], {
+        A: "campanion:wool_tarp",
+        B: "farmersdelight:canvas_rug",
+        C: "minecraft:string",
+    });
+    event.shaped("travelersbackpack:hose", ["ABB", " CB", "  B"], {
+        A: "travellersbackpack:hose_nozzle",
+        B: "techreborn:rubber",
+        C: "minecraft:green_dye",
+    });
+    event.shaped("travelersbackpack:hose_nozzle", [" A ", "BCB", "DDD"], {
+        A: "create:iron_sheet",
+        B: "create:golden_sheet",
+        C: "create:cogwheel",
+        D: "create:andesite_alloy",
     });
     event.shaped("campanion:tent_bag", [" A ", "ABA", " A "], {
-        A: "campanion:rope",
+        A: "farmersdelight:rope",
         B: "campanion:leather_pouch",
     });
     event.shaped("ad_astra:moon_globe", ["BBB", "BA ", "BC "], {
@@ -1711,5 +1845,46 @@ onEvent("morejs.villager.trades", (event) => {
 
     customTradesToAdd.forEach((trade) => {
         event.addTrade(trade[0], trade[1], trade[2], trade[3]);
+    });
+});
+// Listen to server recipe event
+onEvent("recipes", (event) => {
+    event.custom({
+        type: "create:compacting",
+        ingredients: [Ingredient.of("minecraft:wet_sponge").toJson()],
+        results: [
+            Item.of("minecraft:sponge").toResultJson(),
+            Item.of("minecraft:cod").withChance(0.25).toResultJson(),
+            Item.of("minecraft:salmon").withChance(0.25).toResultJson(),
+            Item.of("minecraft:tropical_fish").withChance(0.2).toResultJson(),
+            Item.of("minecraft:pufferfish").withChance(0.15).toResultJson(),
+            Item.of("minecraft:ink_sac").withChance(0.15).toResultJson(),
+        ],
+        processingTime: 10,
+    });
+
+    //adding composting recipes for coral variants
+    onEvent("recipes.compostables", (event) => {
+        const coral = [
+            { type: "tube" },
+            { type: "brain" },
+            { type: "bubble" },
+            { type: "fire" },
+            { type: "horn" },
+        ].forEach((coral) => {
+            //normal coral
+            event.add("minecraft:" + coral.type + "_coral", 0.3);
+            event.add("minecraft:dead_" + coral.type + "_coral", 0.5);
+
+            //coral fans
+            event.add("minecraft:" + coral.type + "_coral_fan", 0.3);
+            event.add("minecraft:dead_" + coral.type + "_coral_fan", 0.5);
+
+            //coral blocks
+            event.add("minecraft:" + coral.type + "_coral_block", 0.3);
+            event.add("minecraft:dead_" + coral.type + "_coral_block", 0.5);
+        });
+        //if it breaks, blame b0b, (nah blame me :) )
+        //blame b0b :0Blush:
     });
 });

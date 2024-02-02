@@ -1,6 +1,6 @@
 {
-    "language.name": "French", 
-    "language.region": "France", 
+    "language.name": "French",
+    "language.region": "France",
     "language.code": "fr_fr",
     "addServer.enterIp": "Découvrez de nouveaux royaumes astraux.",
     "multiplayer.title": "Découvrez de nouveaux royaumes astraux.",
@@ -34,18 +34,5 @@
     "item.minecraft.tipped_arrow.effect.levitation": "Balle de lévitation",
     "item.minecraft.tipped_arrow.effect.luck": "Balle de chance",
     "item.minecraft.tipped_arrow.effect.turtle_master": "Balle du maître des tortues",
-    "item.minecraft.tipped_arrow.effect.slow_falling": "Balle de chute lente",
-
-    "biome.incendium.ash_barrens": "Landes de cendres",
-    "biome.incendium.infernal_dunes": "Dunes infernales",
-    "biome.incendium.inverted_forest": "Forêt renversée",
-    "biome.incendium.quartz_flats": "Plaines de quartz",
-    "biome.incendium.toxic_heap": "Tas toxique",
-    "biome.incendium.volcanic_deltas": "Delta volcanique",
-    "biome.incendium.weeping_valley": "Vallée pleurante",
-    "biome.incendium.withered_forest": "Forêt fanée",
-
-    "biome.nullscape.crystal_peaks": "Cimes de Cristal",
-    "biome.nullscape.shadowlands": "Terres de l'Ombre",
-    "biome.nullscape.void_barrens": "Terres Stériles du Vide"
+    "item.minecraft.tipped_arrow.effect.slow_falling": "Balle de chute lente"
 }

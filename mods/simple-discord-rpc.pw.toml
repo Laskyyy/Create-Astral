@@ -1,6 +1,6 @@
 name = "Simple Discord RPC [Forge/Fabric/Quilt]"
 filename = "SimpleRPC-fabric-1.18.2-3.2.2.jar"
-side = "both"
+side = "client"
 
 [download]
 mode = "metadata:curseforge"

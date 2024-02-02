@@ -3055,7 +3055,7 @@
 			tasks: [{
 				id: "75A559502846E25E"
 				type: "item"
-				item: "createaddition:accumulator"
+				item: "createaddition:modular_accumulator"
 			}]
 			description: ["{chapter.5.quest.118.description.1}"]
 			id: "6642B2F9BB8E20E6"

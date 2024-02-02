@@ -1,6 +1,6 @@
 name = "Entity Texture Features"
 filename = "entity_texture_features_fabric_1.18.2-4.4.4.jar"
-side = "both"
+side = "client"
 
 [download]
 mode = "metadata:curseforge"
