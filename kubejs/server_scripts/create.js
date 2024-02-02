@@ -2898,7 +2898,7 @@ function superheatedMixingRecipes(event) {
         ["minecraft:cobblestone", "minecraft:blackstone"],
         ["minecraft:calcite", "minecraft:tuff"],
         ["minecraft:obsidian", "minecraft:crying_obsidian"],
-        ["compressor:octuple_compressed_cobblestone", "createastral:uwaah"],
+        ["compressor:octuple_compressed_cobblestone", "createastral:logo"],
     ].forEach((recipe) => {
         event.recipes
             .createMixing(recipe[1], recipe[0])
