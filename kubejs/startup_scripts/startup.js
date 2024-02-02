@@ -153,8 +153,8 @@ function liquidFoodGen(event) {
         },
         {
             name: "beetroot_soup_fluid",
-            displayName: "Corn Soup",
-            color: 0xffff80,
+            displayName: "Beetroot Soup",
+            color: 0x741b47,
         },
         {
             name: "hot_cocoa_fluid",
