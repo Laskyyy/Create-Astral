@@ -1,4 +1,3 @@
-
 onEvent("recipes", (event) => {
     crushingRecipes(event);
     millingRecipes(event);
@@ -2615,11 +2614,6 @@ function mechanicalCraftingRecipes(event) {
 function pressingRecipes(event) {
     // [Input string, Output string]
     [
-        //["techreborn:silver_ingot", "techreborn:silver_plate"],
-        //["techreborn:tin_ingot", "techreborn:tin_plate"],
-        //["techreborn:lead_ingot", "techreborn:lead_plate"],
-        //["techreborn:electrum_ingot", "techreborn:electrum_plate"],
-        //["createastral:bronze_ingot", "createastral:bronze_sheet"], // Moved to plates.js
         ["minecraft:lapis_block", "create:lapis_sheet"],
         ["createastral:pure_star_shard", "minecraft:nether_star"],
     ].forEach((recipe) => {
@@ -2627,7 +2621,7 @@ function pressingRecipes(event) {
     });
 }
 function farmersDelightIntegration(event) {
-    let knivesTag = "c:tools/knives"; // We are on Fabric, so why the check is here?
+    let knivesTag = "c:tools/knives";
     event.forEachRecipe(
         { type: "farmersdelight:cutting", tool: { tag: knivesTag } },
         (recipe) => {
