@@ -23,6 +23,7 @@ function millingRecipes(event) {
     //[Input, Output, Chance]
     [
         ["farmersdelight:straw", "minecraft:string", 1],
+        ["ae2:certus_quartz_dust", "ae2:certus_crystal_seed", 2],
         ["minecraft:gravel", "minecraft:sand", 0.25],
         ["create:veridium", "minecraft:raw_copper", 0.6],
         ["create:asurine", "minecraft:lapis_lazuli", 1],
@@ -1799,6 +1800,15 @@ function mixingRecipes(event) {
             time: 40,
         },
         {
+            output: "1x ae2:certus_quartz",
+            input: [
+                { fluid: "minecraft:water", amount: 20250 },
+                "1x ae2:certus_quartz_dust",
+            ],
+            heat: "heated",
+            time: 40,
+        },
+        {
             output: Fluid.of("tconstruct:molten_pig_iron", 9000),
             input: [
                 "minecraft:porkchop",
@@ -2873,6 +2883,7 @@ function compactingRecipes(event) {
         {
             output: ["ae2:certus_quartz_dust"],
             inputs: ["#c:certus_quartz"],
+            heat: "",
         },
         {
             output: "minecraft:shulker_shell",
@@ -2898,7 +2909,7 @@ function superheatedMixingRecipes(event) {
         ["minecraft:cobblestone", "minecraft:blackstone"],
         ["minecraft:calcite", "minecraft:tuff"],
         ["minecraft:obsidian", "minecraft:crying_obsidian"],
-        ["compressor:octuple_compressed_cobblestone", "createastral:uwaah"],
+        ["compressor:octuple_compressed_cobblestone", "createastral:logo"],
     ].forEach((recipe) => {
         event.recipes
             .createMixing(recipe[1], recipe[0])

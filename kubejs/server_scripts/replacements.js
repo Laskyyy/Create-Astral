@@ -776,9 +776,4 @@ onEvent("recipes", (event) => {
         "techreborn:electronic_circuit",
         "create:integrated_circuit"
     );
-    event.replaceOutput(
-        { input: "minecraft:beetroot" },
-        "minecraft:red_dye",
-        "minecraft:yellow_dye"
-    );
 });

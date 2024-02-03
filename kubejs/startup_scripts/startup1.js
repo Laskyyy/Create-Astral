@@ -153,8 +153,8 @@ function liquidFoodGen(event) {
         },
         {
             name: "beetroot_soup_fluid",
-            displayName: "Beetroot Soup",
-            color: 0x741b47,
+            displayName: "Corn Soup",
+            color: 0xffff80,
         },
         {
             name: "hot_cocoa_fluid",
@@ -619,7 +619,7 @@ onEvent("item.registry", (event) => {
         event.create("createastral:golden_pin"),
         event.create("createastral:calorite_pin"),
         event.create("createastral:electrified_pin"),
-        event.create("createastral:logo"),
+        event.create("createastral:uwaah"),
         event.create("createastral:bronze_ingot"),
         event.create("createastral:navigation_mechanism");
     event
@@ -786,44 +786,31 @@ onEvent("item.registry", (event) => {
 // Java reflection stuff //
 // Custom drawer upgrades
 
-const $DeferredRegister = java(
-    "dev.architectury.registry.registries.DeferredRegister"
-);
-const $Tiers = java("net.minecraft.world.item.Tiers");
-const $Item = java("net.minecraft.world.item.Item");
-const $Registry = java("net.minecraft.core.Registry");
-const $UpgradeItem = java(
-    "io.github.mattidragon.extendeddrawers.item.UpgradeItem"
-);
-const $ResourceLocation = java("net.minecraft.class_2960");
-const $FabricItemSettings = java(
-    "net.fabricmc.fabric.api.item.v1.FabricItemSettings"
-);
+const $DeferredRegister = java('dev.architectury.registry.registries.DeferredRegister')
+const $Tiers = java('net.minecraft.world.item.Tiers')
+const $Item = java('net.minecraft.world.item.Item')
+const $Registry = java('net.minecraft.core.Registry')
+const $UpgradeItem = java('io.github.mattidragon.extendeddrawers.item.UpgradeItem')
+const $ResourceLocation = java('net.minecraft.class_2960')
+const $FabricItemSettings = java('net.fabricmc.fabric.api.item.v1.FabricItemSettings')
 
-let ITEMS = $DeferredRegister.create("createastral", $Registry.ITEM_REGISTRY);
-let drawer_multipliers = {}; // This will be used later for adding tooltips.
+let ITEMS = $DeferredRegister.create('createastral', $Registry.ITEM_REGISTRY)
+let drawer_multipliers = {} // This will be used later for adding tooltips.
 
 function registerUpgrade(mod_id, name, multiplier) {
     drawer_multipliers[`${mod_id}:${name}`] = multiplier;
-    ITEMS["register(net.minecraft.class_2960,java.util.function.Supplier)"](
-        `${mod_id}:${name}`,
-        () => {
-            return new $UpgradeItem(
-                new $FabricItemSettings(),
-                $ResourceLocation(mod_id, `item/${name}`),
-                multiplier
-            );
-        }
-    );
+    ITEMS['register(net.minecraft.class_2960,java.util.function.Supplier)'](`${mod_id}:${name}`, () => {
+        return new $UpgradeItem(new $FabricItemSettings(), $ResourceLocation(mod_id, `item/${name}`), multiplier)
+    })
 }
 
-registerUpgrade("createastral", "t1_upgrade", 2);
-registerUpgrade("createastral", "t2_upgrade", 4);
-registerUpgrade("createastral", "t3_upgrade", 16);
-registerUpgrade("createastral", "t4_upgrade", 64);
-registerUpgrade("createastral", "t5_upgrade", 256);
-registerUpgrade("createastral", "t6_upgrade", 1048576); // 2^20x, this makes the regular drawer store 2^31 items
-ITEMS.register();
+registerUpgrade('createastral', 't1_upgrade', 2)
+registerUpgrade('createastral', 't2_upgrade', 4)
+registerUpgrade('createastral', 't3_upgrade', 16)
+registerUpgrade('createastral', 't4_upgrade', 64)
+registerUpgrade('createastral', 't5_upgrade', 256)
+registerUpgrade('createastral', 't6_upgrade', 1048576) // 2^20x, this makes the regular drawer store 2^31 items
+ITEMS.register()
 
 ///// ITEM TOOLTIPS REGISTRY /////
 
@@ -1097,53 +1084,34 @@ onEvent("item.tooltip", (e) => {
             item: "adoptafloppa:amazon_delivery",
             tooltip:
                 'A note is attached: "Feed this thing fish once a day or else it will explode. Good luck.".',
-        },
+        }
+        
     ];
 
-    tooltips.forEach((tooltip) => {
+    tooltips.forEach(tooltip => {
         e.addAdvanced(tooltip.item, (item, advanced, text) => {
-            if (!e.isShift()) {
-                text.add(1, [
-                    Text.of("Hold ").darkGreen(),
-                    Text.of("Shift ").green(),
-                    Text.of("to see more info.").darkGreen(),
-                ]);
-            }
-            if (e.isShift()) {
-                text.add(1, [Text.of(tooltip.tooltip).green()]);
-            }
+          if (!e.isShift()) {
+            text.add(1, [Text.of('Hold ').darkGreen(), Text.of('Shift ').green(), Text.of('to see more info.').darkGreen()]);
+          }
+          if (e.isShift()) {
+            text.add(1, [Text.of(tooltip.tooltip).green()]);
+          }
         });
-    });
-    e.addAdvanced("createastral:orcane", (item, advanced, text) => {
+      });
+      e.addAdvanced('createastral:orcane', (item, advanced, text) => {
         if (!e.isShift()) {
-            text.add(1, [
-                Text.of("Hold ").gold(),
-                Text.of("Shift ").yellow(),
-                Text.of("to see more info.").gold(),
-            ]);
+          text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
         }
         if (e.isShift()) {
-            text.add(1, [
-                Text.of(
-                    "If you are new to create, use pondering or online guides. The pack is almost exclusively centered around it and Tech Reborn. The quest book has some items that give a general idea of what has changed / what is included, in the order of when to take note of them, however the pack can be played without following it exactly, so do what you enjoy."
-                ).gold(),
-            ]);
-            text.add(2, [
-                Text.of(
-                    "A major change you *might* want to be aware of. The nether does not exist. Do not even try to make the portal as it will not function. All nether related items are distributed throughout the pack (mostly planets)"
-                ).white(),
-            ]);
+          
+      text.add(1, [Text.of('If you are new to create, use pondering or online guides. The pack is almost exclusively centered around it and Tech Reborn. The quest book has some items that give a general idea of what has changed / what is included, in the order of when to take note of them, however the pack can be played without following it exactly, so do what you enjoy.').gold(),])
+      text.add(2, [Text.of('A major change you *might* want to be aware of. The nether does not exist. Do not even try to make the portal as it will not function. All nether related items are distributed throughout the pack (mostly planets)').white(),])
         }
-    });
-    // Custom drawer upgrades
-    for (const [item, mutliplier] of Object.entries(drawer_multipliers)) {
-        e.add(
-            [item],
-            Text.gray("Drawer Slot capacity: ").append(
-                Text.green(`${mutliplier}x`)
-            )
-        );
-    }
+      });
+      // Custom drawer upgrades
+      for (const [item, mutliplier] of Object.entries(drawer_multipliers)) {
+        e.add([item], Text.gray('Drawer Slot capacity: ').append(Text.green(`${mutliplier}x`)))
+      }
 });
 
 ///// CUSTOM ASTRAL WORLDGEN /////
