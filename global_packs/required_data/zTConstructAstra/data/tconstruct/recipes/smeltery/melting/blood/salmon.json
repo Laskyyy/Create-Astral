@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "minecraft:salmon"
+  },
+  "result": {
+    "fluid": "tconstruct:blood",
+    "amount": 8100
+  },
+  "temperature": 32,
+  "time": 14
+}

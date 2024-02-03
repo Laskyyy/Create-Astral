@@ -660,6 +660,13 @@ onEvent("item.registry", (event) => {
                 .effect("drinkbeer:drunk", 3000, 0, 1)
                 .alwaysEdible();
         });
+    event.create("createastral:seitan")
+         .displayName("Seitan")
+         .food((food) => {
+            food.hunger(2)
+                .saturation(0.5)
+                .alwaysEdible();
+        });
 
     //Radiant Armor And Tools//
     event
@@ -929,6 +936,10 @@ onEvent("item.tooltip", (e) => {
         {
             item: "createastral:bronze_block",
             tooltip: "Texture courtesy of Create: Alloyed.",
+        },
+        {
+            item: "createastral:seitan",
+            tooltip: "MEAT - Multipurpose, Ethical And True",
         },
 
         //vanilla minecraft tooltips (information on ores goes down below)
