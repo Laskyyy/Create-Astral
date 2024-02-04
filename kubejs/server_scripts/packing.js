@@ -66,7 +66,7 @@ function unpack(event, input, output, amount) {
     - notUnpackable: Do not create unpacking recipes for this material,
     - hasNugget: If the material has a nugget,
     - nuggetMod: If a nugget comes from a different mod, usually the case with Minecraft materials,
-    - append: What to append to the "base" material,
+    - append: What to append to the "base" material.
 */
 const PACK_MATERIALS = [
     {
@@ -350,10 +350,40 @@ const PACK_MATERIALS = [
         append: "_ingot",
     },
 ];
+
+const COMPRESSION_DEGREES = [
+    "",
+    "double_",
+    "triple_",
+    "quadruple_",
+    "quintuple_",
+    "sextuple_",
+    "septuple_",
+    "octuple_",
+];
+
+const COMPRESSABLE_MATERIALS = [
+    "stone",
+    "granite",
+    "diorite",
+    "andesite",
+    "cobblestone",
+    "gravel",
+    "sand",
+    "dirt",
+    "netherrack",
+    "basalt",
+    "deepslate",
+    "cobbled_deepslate",
+    "blackstone",
+    "end_stone",
+];
+
 onEvent("recipes", (event) => {
     event.remove({ type: "techreborn:assembling_machine" });
     event.remove({ type: "techreborn:rolling_machine" });
 
+    // Resources, resource blocks and resource nuggets
     PACK_MATERIALS.forEach((material) => {
         let ingotID = `${material.mod}:${material.type}${material.append ?? ""}`;
         let blockID = `${material.mod}:${material.type}${material.mod == "techreborn" ? "_storage" : ""}_block`; // Tech Reborn moment
@@ -374,6 +404,17 @@ onEvent("recipes", (event) => {
                     unpack(event, ingotID, nuggetID, 9);
                 }
             }
+        }
+    });
+
+    //Compressed mass-produced blocks
+    COMPRESSABLE_MATERIALS.forEach((material) => {
+        for (let i = 0; i < 8; i++) {
+            let compressDown =
+                i == 0 ? `minecraft:${material}` : `compressor:${COMPRESSION_DEGREES[i - 1]}compressed_${material}`;
+            let compressUp = `compressor:${COMPRESSION_DEGREES[i]}compressed_${material}`;
+            pack9(event, compressDown, compressUp);
+            unpack(event, compressUp, compressDown, 9);
         }
     });
 });
