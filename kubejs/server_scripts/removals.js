@@ -117,6 +117,7 @@ onEvent("recipes", (event) => {
             type: "minecraft:shaped",
             output: "techreborn:nak_coolant_cell_60k",
         },
+        { id: "techreborn:crafting_table/paper" },
         //Create
 
         { output: "create:blaze_cake" },
@@ -517,9 +518,7 @@ onEvent("recipes", (event) => {
         "red",
         "black",
     ];
-    colors.forEach((color) =>
-        event.remove({ output: `yttr:${color}_project_table` })
-    );
+    colors.forEach((color) => event.remove({ output: `yttr:${color}_project_table` }));
 
     // Define the array of materials
     const materials = [

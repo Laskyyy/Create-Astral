@@ -105,17 +105,9 @@ onEvent("fluid.registry", (event) => {
         .stillTexture("tconstruct:block/fluid/molten/still")
         .flowingTexture("tconstruct:block/fluid/molten/flowing");
 
-    event
-        .create("red_grape_juice")
-        .thinTexture(0x864e97)
-        .bucketColor(0x864e97)
-        .displayName("Red Grape Juice");
+    event.create("red_grape_juice").thinTexture(0x864e97).bucketColor(0x864e97).displayName("Red Grape Juice");
 
-    event
-        .create("white_grape_juice")
-        .thinTexture(0xeeedc4)
-        .bucketColor(0xeeedc4)
-        .displayName("White Grape Juice");
+    event.create("white_grape_juice").thinTexture(0xeeedc4).bucketColor(0xeeedc4).displayName("White Grape Juice");
 
     event
         .create("liquid_xp_nuggies")
@@ -124,6 +116,8 @@ onEvent("fluid.registry", (event) => {
         .displayName("Liquified Experience Nuggets")
         .stillTexture("tconstruct:block/fluid/molten/shimmer")
         .flowingTexture("tconstruct:block/fluid/molten/shimmer");
+
+    event.create("supercooled_water").thinTexture(0x4afff0).bucketColor(0x4afff0).displayName("Supercooled Water");
 
     liquidFoodGen(event);
 });
@@ -606,10 +600,7 @@ onEvent("item.registry", (event) => {
         event.create("createastral:crushed_raw_ostrum"),
         event.create("createastral:crushed_raw_calorite"),
         event.create("createastral:subatomic_ingot"),
-        event
-            .create("createastral:astral_conduit")
-            .maxStackSize(1)
-            .maxDamage(20);
+        event.create("createastral:astral_conduit").maxStackSize(1).maxDamage(20);
     event.create("createastral:andesite_compound"),
         event.create("createastral:bronze_sheet"),
         event.create("createastral:olivine_sheet"),
@@ -622,22 +613,12 @@ onEvent("item.registry", (event) => {
         event.create("createastral:logo"),
         event.create("createastral:bronze_ingot"),
         event.create("createastral:navigation_mechanism");
-    event
-        .create("createastral:coin", "create:sequenced_assembly")
-        .displayName("Golden Coin");
+    event.create("createastral:coin", "create:sequenced_assembly").displayName("Golden Coin");
 
-    event
-        .create("createastral:quadrocopter_blueprint")
-        .texture("create:item/schematic"),
-        event
-            .create("createastral:gyrodyne_blueprint")
-            .texture("create:item/schematic"),
-        event
-            .create("createastral:biplane_blueprint")
-            .texture("create:item/schematic"),
-        event
-            .create("createastral:airship_blueprint")
-            .texture("create:item/schematic"),
+    event.create("createastral:quadrocopter_blueprint").texture("create:item/schematic"),
+        event.create("createastral:gyrodyne_blueprint").texture("create:item/schematic"),
+        event.create("createastral:biplane_blueprint").texture("create:item/schematic"),
+        event.create("createastral:airship_blueprint").texture("create:item/schematic"),
         event.create("createastral:refining_agent"),
         event.create("createastral:separation_agent"),
         event.create("createastral:shimmer_amplifier"),
@@ -646,79 +627,35 @@ onEvent("item.registry", (event) => {
         event.create("createastral:crushed_raw_gadolinite"),
         event.create("createastral:experience_ingot").glow(true),
         event.create("createastral:stone_dust").displayName("Stone Dust");
-    event
-        .create("createastral:stone_small_dust")
-        .displayName("Small Pile of Stone Dust");
+    event.create("createastral:stone_small_dust").displayName("Small Pile of Stone Dust");
 
     event.create("createastral:golden_bowl").displayName("Golden Bowl");
     event
         .create("createastral:filled_golden_bowl", "create:sequenced_assembly")
         .displayName("Filled Golden Bowl")
         .food((food) => {
-            food.hunger(0)
-                .saturation(0)
-                .effect("drinkbeer:drunk", 3000, 0, 1)
-                .alwaysEdible();
+            food.hunger(0).saturation(0).effect("drinkbeer:drunk", 3000, 0, 1).alwaysEdible();
         });
-    event.create("createastral:seitan")
-         .displayName("Seitan")
-         .food((food) => {
-            food.hunger(2)
-                .saturation(0.5)
-                .alwaysEdible();
+    event
+        .create("createastral:seitan")
+        .displayName("Seitan")
+        .food((food) => {
+            food.hunger(2).saturation(0.5).alwaysEdible();
         });
 
     //Radiant Armor And Tools//
-    event
-        .create("createastral:radiant_helmet", "helmet")
-        .tier("radiantarmor")
-        .glow(true)
-        .rarity("Epic"),
-        event
-            .create("createastral:radiant_chestplate", "chestplate")
-            .tier("radiantarmor")
-            .glow(true)
-            .rarity("Epic"),
-        event
-            .create("createastral:radiant_leggings", "leggings")
-            .tier("radiantarmor")
-            .glow(true)
-            .rarity("Epic"),
-        event
-            .create("createastral:radiant_boots", "boots")
-            .tier("radiantarmor")
-            .glow(true)
-            .rarity("Epic"),
-        event
-            .create("createastral:radiant_sword", "sword")
-            .tier("radiant")
-            .glow(true)
-            .rarity("Epic"),
-        event
-            .create("createastral:radiant_pickaxe", "pickaxe")
-            .tier("radiant")
-            .glow(true)
-            .rarity("Epic"),
-        event
-            .create("createastral:radiant_axe", "axe")
-            .tier("radiant")
-            .glow(true)
-            .rarity("Epic"),
-        event
-            .create("createastral:radiant_shovel", "shovel")
-            .tier("radiant")
-            .glow(true)
-            .rarity("Epic"),
+    event.create("createastral:radiant_helmet", "helmet").tier("radiantarmor").glow(true).rarity("Epic"),
+        event.create("createastral:radiant_chestplate", "chestplate").tier("radiantarmor").glow(true).rarity("Epic"),
+        event.create("createastral:radiant_leggings", "leggings").tier("radiantarmor").glow(true).rarity("Epic"),
+        event.create("createastral:radiant_boots", "boots").tier("radiantarmor").glow(true).rarity("Epic"),
+        event.create("createastral:radiant_sword", "sword").tier("radiant").glow(true).rarity("Epic"),
+        event.create("createastral:radiant_pickaxe", "pickaxe").tier("radiant").glow(true).rarity("Epic"),
+        event.create("createastral:radiant_axe", "axe").tier("radiant").glow(true).rarity("Epic"),
+        event.create("createastral:radiant_shovel", "shovel").tier("radiant").glow(true).rarity("Epic"),
         //Copper Armor And Tools//
-        event
-            .create("createastral:copper_helmet", "helmet")
-            .tier("copperarmor"),
-        event
-            .create("createastral:copper_chestplate", "chestplate")
-            .tier("copperarmor"),
-        event
-            .create("createastral:copper_leggings", "leggings")
-            .tier("copperarmor"),
+        event.create("createastral:copper_helmet", "helmet").tier("copperarmor"),
+        event.create("createastral:copper_chestplate", "chestplate").tier("copperarmor"),
+        event.create("createastral:copper_leggings", "leggings").tier("copperarmor"),
         event.create("createastral:copper_boots", "boots").tier("copperarmor"),
         event.create("createastral:copper_sword", "sword").tier("copper"),
         event.create("createastral:copper_pickaxe", "pickaxe").tier("copper"),
@@ -727,12 +664,8 @@ onEvent("item.registry", (event) => {
         event.create("createastral:copper_hoe", "hoe").tier("copper"),
         //Brass Armor And Tools//
         event.create("createastral:brass_helmet", "helmet").tier("brassarmor"),
-        event
-            .create("createastral:brass_chestplate", "chestplate")
-            .tier("brassarmor"),
-        event
-            .create("createastral:brass_leggings", "leggings")
-            .tier("brassarmor"),
+        event.create("createastral:brass_chestplate", "chestplate").tier("brassarmor"),
+        event.create("createastral:brass_leggings", "leggings").tier("brassarmor"),
         event.create("createastral:brass_boots", "boots").tier("brassarmor"),
         event.create("createastral:brass_sword", "sword").tier("brass"),
         event.create("createastral:brass_pickaxe", "pickaxe").tier("brass"),
@@ -741,29 +674,16 @@ onEvent("item.registry", (event) => {
         event.create("createastral:brass_hoe", "hoe").tier("brass"),
         //Steel Armor//
         event.create("createastral:steel_helmet", "helmet").tier("steelarmor"),
-        event
-            .create("createastral:steel_chestplate", "chestplate")
-            .tier("steelarmor"),
-        event
-            .create("createastral:steel_leggings", "leggings")
-            .tier("steelarmor"),
+        event.create("createastral:steel_chestplate", "chestplate").tier("steelarmor"),
+        event.create("createastral:steel_leggings", "leggings").tier("steelarmor"),
         event.create("createastral:steel_boots", "boots").tier("steelarmor"),
         //Sturdy Armor//
-        event
-            .create("createastral:sturdy_helmet", "helmet")
-            .tier("sturdyarmor"),
-        event
-            .create("createastral:sturdy_chestplate", "chestplate")
-            .tier("sturdyarmor"),
-        event
-            .create("createastral:sturdy_leggings", "leggings")
-            .tier("sturdyarmor"),
+        event.create("createastral:sturdy_helmet", "helmet").tier("sturdyarmor"),
+        event.create("createastral:sturdy_chestplate", "chestplate").tier("sturdyarmor"),
+        event.create("createastral:sturdy_leggings", "leggings").tier("sturdyarmor"),
         event.create("createastral:sturdy_boots", "boots").tier("sturdyarmor"),
         //Other Items//
-        event
-            .create("createastral:orcane")
-            .displayName("Information / General Progression")
-            .glow(true),
+        event.create("createastral:orcane").displayName("Information / General Progression").glow(true),
         event.create("createastral:astral_singularity").food((food) => {
             food.hunger(50)
                 .saturation(50) //This value does not directly translate to saturation points gained
@@ -778,43 +698,28 @@ onEvent("item.registry", (event) => {
         });
     event.create("createastral:pure_biomatter");
     event.create("createastral:lime").displayName("Lime Dust");
-    event
-        .create("createastral:coin", "create:sequenced_assembly")
-        .displayName("coin");
+    event.create("createastral:coin", "create:sequenced_assembly").displayName("coin");
 });
 
 // Java reflection stuff //
 // Custom drawer upgrades
 
-const $DeferredRegister = java(
-    "dev.architectury.registry.registries.DeferredRegister"
-);
+const $DeferredRegister = java("dev.architectury.registry.registries.DeferredRegister");
 const $Tiers = java("net.minecraft.world.item.Tiers");
 const $Item = java("net.minecraft.world.item.Item");
 const $Registry = java("net.minecraft.core.Registry");
-const $UpgradeItem = java(
-    "io.github.mattidragon.extendeddrawers.item.UpgradeItem"
-);
+const $UpgradeItem = java("io.github.mattidragon.extendeddrawers.item.UpgradeItem");
 const $ResourceLocation = java("net.minecraft.class_2960");
-const $FabricItemSettings = java(
-    "net.fabricmc.fabric.api.item.v1.FabricItemSettings"
-);
+const $FabricItemSettings = java("net.fabricmc.fabric.api.item.v1.FabricItemSettings");
 
 let ITEMS = $DeferredRegister.create("createastral", $Registry.ITEM_REGISTRY);
 let drawer_multipliers = {}; // This will be used later for adding tooltips.
 
 function registerUpgrade(mod_id, name, multiplier) {
     drawer_multipliers[`${mod_id}:${name}`] = multiplier;
-    ITEMS["register(net.minecraft.class_2960,java.util.function.Supplier)"](
-        `${mod_id}:${name}`,
-        () => {
-            return new $UpgradeItem(
-                new $FabricItemSettings(),
-                $ResourceLocation(mod_id, `item/${name}`),
-                multiplier
-            );
-        }
-    );
+    ITEMS["register(net.minecraft.class_2960,java.util.function.Supplier)"](`${mod_id}:${name}`, () => {
+        return new $UpgradeItem(new $FabricItemSettings(), $ResourceLocation(mod_id, `item/${name}`), multiplier);
+    });
 }
 
 registerUpgrade("createastral", "t1_upgrade", 2);
@@ -907,25 +812,21 @@ onEvent("item.tooltip", (e) => {
         //KubeJS tooltips
         {
             item: "kubejs:shimmer",
-            tooltip:
-                'Use the Explorers Compass to look for underground "Shimmer Lakes"',
+            tooltip: 'Use the Explorers Compass to look for underground "Shimmer Lakes"',
         }, //not done yet, need to find height of shimmer lakes
         {
             item: "kubejs:shimmer_bucket",
-            tooltip:
-                'Use the Explorers Compass to look for underground "Shimmer Lakes"',
+            tooltip: 'Use the Explorers Compass to look for underground "Shimmer Lakes"',
         }, //not done yet, need to find height of shimmer lakes
 
         //Create tooltips
         {
             item: "create:blaze_burner",
-            tooltip:
-                'Blazes are found on the moon inside of the "Lunar Pipeline" structure.',
+            tooltip: 'Blazes are found on the moon inside of the "Lunar Pipeline" structure.',
         },
         {
             item: "create:empty_blaze_burner",
-            tooltip:
-                'Blazes are found on the moon inside of the "Lunar Pipeline" structure.',
+            tooltip: 'Blazes are found on the moon inside of the "Lunar Pipeline" structure.',
         },
         {
             item: "create:mechanical_arm",
@@ -950,8 +851,7 @@ onEvent("item.tooltip", (e) => {
         },
         {
             item: "minecraft:blaze_rod",
-            tooltip:
-                'Blazes are found on the moon inside of the "Lunar Pipeline" structure.',
+            tooltip: 'Blazes are found on the moon inside of the "Lunar Pipeline" structure.',
         },
         {
             item: "minecraft:flint_and_steel",
@@ -984,8 +884,7 @@ onEvent("item.tooltip", (e) => {
         //Tech Reborn tooltips
         {
             item: "techreborn:uu_matter",
-            tooltip:
-                "Material made in chapter 5 by putting scrap into the Matter Fabricator.",
+            tooltip: "Material made in chapter 5 by putting scrap into the Matter Fabricator.",
         }, //not done yet, need to find out rates
         {
             item: "techreborn:scrap",
@@ -993,8 +892,7 @@ onEvent("item.tooltip", (e) => {
         }, //not done yet, need to find out rates
         {
             item: "techreborn:basic_machine_casing",
-            tooltip:
-                "Crafted with either Lead plates, Silver Plates, or Iron Sheets.",
+            tooltip: "Crafted with either Lead plates, Silver Plates, or Iron Sheets.",
         },
 
         //Ores Tooltips
@@ -1056,28 +954,23 @@ onEvent("item.tooltip", (e) => {
 
         {
             item: "techreborn:tin_ore",
-            tooltip:
-                "This metal is found in the overworld, most commonly at Y=70 ",
+            tooltip: "This metal is found in the overworld, most commonly at Y=70 ",
         },
         {
             item: "techreborn:deepslate_tin_ore",
-            tooltip:
-                "This metal is found in the overworld, most commonly at Y=70 ",
+            tooltip: "This metal is found in the overworld, most commonly at Y=70 ",
         },
         {
             item: "techreborn:raw_tin",
-            tooltip:
-                "This metal is found in the overworld, most commonly at Y=70 ",
+            tooltip: "This metal is found in the overworld, most commonly at Y=70 ",
         },
         {
             item: "techreborn:tin_ingot",
-            tooltip:
-                "This metal is found in the overworld, most commonly at Y=70 ",
+            tooltip: "This metal is found in the overworld, most commonly at Y=70 ",
         },
         {
             item: "techreborn:tin_nugget",
-            tooltip:
-                "This metal is found in the overworld, most commonly at Y=70 ",
+            tooltip: "This metal is found in the overworld, most commonly at Y=70 ",
         },
 
         //all ores coming soon
@@ -1085,18 +978,15 @@ onEvent("item.tooltip", (e) => {
         //Other tooltips
         {
             item: "computercraft:disk",
-            tooltip:
-                "This recipe is not correct, use redstone instead of rose quartz.",
+            tooltip: "This recipe is not correct, use redstone instead of rose quartz.",
         },
         {
             item: "extractinator:extractinator",
-            tooltip:
-                "Purely decorative. No functional use. Not a Terraria reference.",
+            tooltip: "Purely decorative. No functional use. Not a Terraria reference.",
         },
         {
             item: "adoptafloppa:amazon_delivery",
-            tooltip:
-                'A note is attached: "Feed this thing fish once a day or else it will explode. Good luck.".',
+            tooltip: 'A note is attached: "Feed this thing fish once a day or else it will explode. Good luck.".',
         },
     ];
 
@@ -1116,11 +1006,7 @@ onEvent("item.tooltip", (e) => {
     });
     e.addAdvanced("createastral:orcane", (item, advanced, text) => {
         if (!e.isShift()) {
-            text.add(1, [
-                Text.of("Hold ").gold(),
-                Text.of("Shift ").yellow(),
-                Text.of("to see more info.").gold(),
-            ]);
+            text.add(1, [Text.of("Hold ").gold(), Text.of("Shift ").yellow(), Text.of("to see more info.").gold()]);
         }
         if (e.isShift()) {
             text.add(1, [
@@ -1137,12 +1023,7 @@ onEvent("item.tooltip", (e) => {
     });
     // Custom drawer upgrades
     for (const [item, mutliplier] of Object.entries(drawer_multipliers)) {
-        e.add(
-            [item],
-            Text.gray("Drawer Slot capacity: ").append(
-                Text.green(`${mutliplier}x`)
-            )
-        );
+        e.add([item], Text.gray("Drawer Slot capacity: ").append(Text.green(`${mutliplier}x`)));
     }
 });
 
@@ -1185,10 +1066,7 @@ onEvent("worldgen.add", (event) => {
                 },
             },
         ];
-        ore.addTarget(
-            "#ad_astra:moon_ore_replaceables",
-            "ae2:deepslate_quartz_ore"
-        );
+        ore.addTarget("#ad_astra:moon_ore_replaceables", "ae2:deepslate_quartz_ore");
 
         ore.count([10, 20]).squared().triangleHeight(0, 85);
     });
@@ -1203,10 +1081,7 @@ onEvent("worldgen.add", (event) => {
                 },
             },
         ];
-        ore.addTarget(
-            "#ad_astra:moon_ore_replaceables",
-            "tconstruct:cobalt_ore"
-        );
+        ore.addTarget("#ad_astra:moon_ore_replaceables", "tconstruct:cobalt_ore");
         ore.noSurface = 0.75;
         ore.count([10, 25]).squared().triangleHeight(0, 60);
     });
@@ -1214,10 +1089,7 @@ onEvent("worldgen.add", (event) => {
     event.addOre((ore) => {
         ore.id = "kubejs:silveroremoon"; // optional
         ore.biomes = ["ad_astra:lunar_wastelands", "minecraft:basalt_deltas"];
-        ore.addTarget(
-            "#ad_astra:moon_ore_replaceables",
-            "techreborn:deepslate_silver_ore"
-        );
+        ore.addTarget("#ad_astra:moon_ore_replaceables", "techreborn:deepslate_silver_ore");
         ore.noSurface = 0.75;
         ore.count([25, 40]).squared().triangleHeight(0, 115);
     });
@@ -1251,10 +1123,7 @@ onEvent("worldgen.add", (event) => {
                 },
             },
         ];
-        ore.addTarget(
-            "#ad_astra:mars_ore_replaceables",
-            "techreborn:deepslate_lead_ore"
-        );
+        ore.addTarget("#ad_astra:mars_ore_replaceables", "techreborn:deepslate_lead_ore");
 
         ore.count([10, 40]).squared().triangleHeight(0, 100);
     });
@@ -1268,10 +1137,7 @@ onEvent("worldgen.add", (event) => {
                 },
             },
         ];
-        ore.addTarget(
-            "#ad_astra:mars_ore_replaceables",
-            "ad_astra:deepslate_gold_ore"
-        );
+        ore.addTarget("#ad_astra:mars_ore_replaceables", "ad_astra:deepslate_gold_ore");
 
         ore.count([10, 40]).squared().triangleHeight(0, 100);
         ore.size = 15;
@@ -1302,10 +1168,7 @@ onEvent("worldgen.add", (event) => {
                 },
             },
         ];
-        ore.addTarget(
-            "#ad_astra:mercury_ore_replaceables",
-            "techreborn:silver_ore"
-        );
+        ore.addTarget("#ad_astra:mercury_ore_replaceables", "techreborn:silver_ore");
 
         ore.count([25, 40]).squared().triangleHeight(-30, 85);
     });
@@ -1319,10 +1182,7 @@ onEvent("worldgen.add", (event) => {
                 },
             },
         ];
-        ore.addTarget(
-            "#ad_astra:mercury_ore_replaceables",
-            "ad_astra:deepslate_calorite_ore"
-        );
+        ore.addTarget("#ad_astra:mercury_ore_replaceables", "ad_astra:deepslate_calorite_ore");
 
         ore.count([10, 20]).squared().triangleHeight(0, 85);
     });
