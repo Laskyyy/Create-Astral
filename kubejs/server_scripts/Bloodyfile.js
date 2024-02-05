@@ -137,6 +137,34 @@ onEvent("recipes", (event) => {
         .transitionalItem("createastral:seitan")
         .loops(1);
 
+        event.recipes
+        .createSequencedAssembly( // Inksack for inky fun
+            ["minecraft:ink_sack"],
+            ["createastral:seitan"],
+            [
+                event.recipes.createDeploying("createastral:seitan", [
+                    "createastral:seitan",
+                    "minecraft:black_dye",
+                ]),
+
+                event.recipes.createFilling("createastral:seitan",
+                ["createastral:seitan",{ fluid: "minecraft:water", amount: 500 * mB }]),
+
+                event.recipes.createDeploying("createastral:seitan", [
+                    "createastral:seitan",
+                    "minecraft:black_dye",
+                ]),
+                
+                event.recipes.createFilling("createastral:seitan",
+                ["createastral:seitan",{ fluid: "minecraft:water", amount: 500 * mB }]),
+                
+                event.recipes.createPressing("createastral:seitan",
+                "createastral:seitan"),
+            ]
+        )
+        .transitionalItem("createastral:seitan")
+        .loops(1);
+
 const mixings = [
             {
                 output: {fluid: "tconstruct:blood", amount: 81000 },
@@ -172,6 +200,6 @@ const mixings = [
             
 
                     event.recipes.createSplashing("minecraft:mossy_cobblestone", 'minecraft:cobblestone') //easy mossy cobble for moss
-
+                    event.recipes.createSplashing("minecraft:mossy_stone_bricks", 'minecraft:stone_bricks') 
                 };
 })
