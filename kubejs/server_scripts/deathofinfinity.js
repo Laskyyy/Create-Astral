@@ -51,7 +51,7 @@ onEvent("recipes", (event) => {
 
 const mixings = [
     {
-        output: {fluid: "minecraft:lava", amount: 125 * mb },
+        output: {fluid: "minecraft:lava", amount: 125 * mB },
         input: [
             "1x createastral:stone_dust",
             "1x minecraft:cobblestone",
@@ -60,7 +60,7 @@ const mixings = [
         heat: "",
         time: null,
     },{
-    output: {fluid: "minecraft:lava", amount: 250 * mb },
+    output: {fluid: "minecraft:lava", amount: 250 * mB },
     input: [
         "4x createastral:stone_dust",
         "2x minecraft:cobblestone",
@@ -77,7 +77,7 @@ const mixings = [
         heat: "superheated",
         time: null,
     },{
-        output: {fluid: "kubejs:shimmer", amount: 250 * mb },
+        output: {fluid: "kubejs:shimmer", amount: 250 * mB },
         input: [
             "5x minecraft:amethyst_shard",
             "2x minecraft:glow_ink_sac",
@@ -85,7 +85,7 @@ const mixings = [
         heat: "",
         time: null,
     },{
-    output: {fluid: "kubejs:shimmer", amount: 500 * mb },
+    output: {fluid: "kubejs:shimmer", amount: 500 * mB },
     input: [
         "5x techreborn:amethyst_dust",
         "2x minecraft:glow_ink_sac",

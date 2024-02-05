@@ -12814,11 +12814,11 @@ hash = "82dbdb416bc14a9ac3e577579f13298b7fa563efb3c0118ff8e35d179e780f6d"
 
 [[files]]
 file = "kubejs/server_scripts/Bloodyfile.js"
-hash = "2d724543b830da6ee8634e760faf96d7c161fc19c0b93c1ca786689426be921c"
+hash = "91a4b1b4d2c326f5ee850ae9a297c1d61288d6f9c9912aec04e39dd8af352ab7"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
-hash = "93564e9ff819d3dbb627e60d06f8cf678262677f3eb381cd8b67b38ef5ac258d"
+hash = "5476a6b64c91f6693568b86e757081d17828f563f6d71b9c27d9a05924e552ff"
 
 [[files]]
 file = "kubejs/server_scripts/createaddons.js"
@@ -12826,15 +12826,19 @@ hash = "301c91ff6abfd65386f59c83271fcdc84f5c497707ff186c0088c83a1e05fdaa"
 
 [[files]]
 file = "kubejs/server_scripts/deathofinfinity.js"
-hash = "c36df114bbff9489a055df6022992c5ed4bbb82d41a1549838797d527e869991"
+hash = "577c34ffd7b74e851ad8a68c4e3b6a5d5fb1d39793d2ea94daa95284be870735"
 
 [[files]]
 file = "kubejs/server_scripts/enchantment.js"
-hash = "e56380404471d65f5f8bff3d2dfb3beafd6e7ec09ac5b6ae702e04f5ab8d1ddb"
+hash = "1f27c2a266fdf2ed87218a8415e3549d01e2b191868201679380aeb6aa759d49"
 
 [[files]]
 file = "kubejs/server_scripts/farmerscompat.js"
 hash = "df6986836953fb130d0254bf7145a02939981d499538c8060578a8190904ee0f"
+
+[[files]]
+file = "kubejs/server_scripts/plates.js"
+hash = "c11c7f396d112862b5564592d20d5620c29140756af682de3a2630261d20edea"
 
 [[files]]
 file = "kubejs/server_scripts/removals.js"
@@ -12846,11 +12850,11 @@ hash = "05424a04c7386cba4795793de8d7fbfeeb9cddbf274f63d2e76f57a725626c85"
 
 [[files]]
 file = "kubejs/server_scripts/resourcegen.js"
-hash = "4fd67e88659e33e0ec468b3198c509a5c9f89196f0e0eb2df91d9562a3d710dc"
+hash = "ecf602f323b44660a58d96c73515796617724ac4d5d93ddd5aa3b3db5b9f28da"
 
 [[files]]
 file = "kubejs/server_scripts/server.js"
-hash = "297bfb6eb4c872d31cc90dc192275beaecfca9cad07341c1b946178f30bc1359"
+hash = "f03a52b585a7f5a73b4f7c25f20d70c6399c850ac108865b3c59d5d6ae6a8c29"
 
 [[files]]
 file = "kubejs/server_scripts/tags/graveReplaceBlacklist.js"
@@ -12858,7 +12862,7 @@ hash = "cf62281e94dc68f02839155daa63e3856a1477e23cc4e9a0e86dfa0d707f2f53"
 
 [[files]]
 file = "kubejs/server_scripts/tconstruct.js"
-hash = "8bff92bb71d9fa4c7aa3f2cb05645fbf7fc2338d4fc1cc309fc4f1d3f4a25e4d"
+hash = "ab902fed95e4bee98c5e58e1689fe47ebe90930e4e0cca1544bcf66250bfdadf"
 
 [[files]]
 file = "kubejs/server_scripts/techreborn.js"
@@ -12870,7 +12874,7 @@ hash = "250a99e5b7bbe32d095ff746c1ea1c9e7d0577788c79c48c65f83fe634481b58"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
-hash = "7ca539aa68e70747fb925581eb69cd43770e8dc9e511cadef776e01a6dee2d29"
+hash = "5fb2e74de6fe54430de02a066c0cf6be0777058ddd55f562bedd211a408459ae"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"

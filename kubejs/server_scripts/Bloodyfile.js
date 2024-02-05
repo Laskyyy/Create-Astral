@@ -4,7 +4,7 @@ onEvent("recipes", (event) => {
         .createSequencedAssembly(
             ["createastral:seitan"],
             ["create:dough"],
-            [event.recipes.createFilling("create:dough", ["create:dough",{ fluid: "minecraft:water", amount: 100 * mb }]),
+            [event.recipes.createFilling("create:dough", ["create:dough",{ fluid: "minecraft:water", amount: 100 * mB }]),
             event.recipes.createPressing("create:dough","create:dough"),
             event.recipes.createCutting("create:dough","create:dough"),]
         )
@@ -18,7 +18,7 @@ onEvent("recipes", (event) => {
             [event.recipes.createDeploying("createastral:seitan", ["createastral:seitan","minecraft:rotten_flesh"]),
             
             event.recipes.createFilling("createastral:seitan",
-                ["createastral:seitan",{ fluid: "tconstruct:blood", amount: 100 * mb }]),
+                ["createastral:seitan",{ fluid: "tconstruct:blood", amount: 100 * mB }]),
             
             event.recipes.createPressing("createastral:seitan",
                                              "createastral:seitan"),
@@ -39,7 +39,7 @@ onEvent("recipes", (event) => {
                     "minecraft:string",
                 ]),
                 event.recipes.createFilling("createastral:seitan",
-                ["createastral:seitan",{ fluid: "tconstruct:blood", amount: 100 * mb }]),
+                ["createastral:seitan",{ fluid: "tconstruct:blood", amount: 100 * mB }]),
                 event.recipes.createPressing("createastral:seitan",
                                              "createastral:seitan"),
                 event.recipes.createCutting("createastral:seitan",
@@ -59,7 +59,7 @@ onEvent("recipes", (event) => {
                     "minecraft:moss_carpet",
                 ]),
                 event.recipes.createFilling("createastral:seitan",
-                ["createastral:seitan",{ fluid: "tconstruct:blood", amount: 100 * mb }]),
+                ["createastral:seitan",{ fluid: "tconstruct:blood", amount: 100 * mB }]),
                 event.recipes.createPressing("createastral:seitan",
                                              "createastral:seitan"),
                 event.recipes.createCutting("createastral:seitan",
@@ -79,7 +79,7 @@ onEvent("recipes", (event) => {
                     "minecraft:wheat_seeds",
                 ]),
                 event.recipes.createFilling("createastral:seitan",
-                ["createastral:seitan",{ fluid: "tconstruct:blood", amount: 100 * mb }]),
+                ["createastral:seitan",{ fluid: "tconstruct:blood", amount: 100 * mB }]),
                 event.recipes.createPressing("createastral:seitan",
                                              "createastral:seitan"),
                 event.recipes.createCutting("createastral:seitan",
@@ -99,7 +99,7 @@ onEvent("recipes", (event) => {
                     "minecraft:carrot",
                 ]),
                 event.recipes.createFilling("createastral:seitan",
-                ["createastral:seitan",{ fluid: "tconstruct:blood", amount: 100 * mb }]),
+                ["createastral:seitan",{ fluid: "tconstruct:blood", amount: 100 * mB }]),
                 event.recipes.createPressing("createastral:seitan",
                                              "createastral:seitan"),
                 event.recipes.createCutting("createastral:seitan",
@@ -125,7 +125,7 @@ onEvent("recipes", (event) => {
                 ]),
                 
                 event.recipes.createFilling("minecraft:porkchop",
-                ["minecraft:porkchop",{ fluid: "tconstruct:blood", amount: 100 * mb }]),
+                ["minecraft:porkchop",{ fluid: "tconstruct:blood", amount: 100 * mB }]),
                 
                 event.recipes.createPressing("minecraft:porkchop",
                 "minecraft:porkchop"),
@@ -164,11 +164,11 @@ onEvent("recipes", (event) => {
 
 const mixings = [
             {
-                output: {fluid: "tconstruct:blood", amount: 81000 },
+                output: {fluid: "tconstruct:blood", amount: BUCKET },
                 input: [
                     "2x minecraft:beetroot",
-                    { fluid: "kubejs:tomato_sauce_fluid", amount: FULL_BUCKET_AMMOUNT / 2 },
-                    { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT / 2 },
+                    { fluid: "kubejs:tomato_sauce_fluid", amount: 500 * mB },
+                    { fluid: "kubejs:shimmer", amount: 500 * mB },
                 ],
                 heat: "heated",
                 time: null,  //Vegan BLOOD
@@ -176,7 +176,7 @@ const mixings = [
                 output: "createastral:seitan",
                 input: [
                     "3x minecraft:brown_mushroom",
-                    { fluid: "createaddition:seed_oil", amount: FULL_BUCKET_AMMOUNT / 10 },
+                    { fluid: "createaddition:seed_oil", amount: 100 * mB },
                 ],
                 heat: "",
                 time: null,
@@ -184,7 +184,7 @@ const mixings = [
                 output: "16x minecraft:moss_block", //Yea Moss is automatable now without breaking contraptions
                 input: [
                     "16x minecraft:mossy_cobblestone","minecraft:moss_block","1x minecraft:bone_meal",
-                    { fluid: "minecraft:water", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "minecraft:water", amount: BUCKET },
                 ],
                 heat: "",
                 time: null,
@@ -197,6 +197,7 @@ const mixings = [
             
 
                     event.recipes.createSplashing("minecraft:mossy_cobblestone", 'minecraft:cobblestone') //easy mossy cobble for moss
-                    event.recipes.createSplashing("minecraft:mossy_stone_bricks", 'minecraft:stone_bricks') 
+                    event.recipes.createSplashing("minecraft:mossy_stone_bricks", 'minecraft:stone_bricks')
+                    
                 };
 })
