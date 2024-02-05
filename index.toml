@@ -12814,7 +12814,7 @@ hash = "82dbdb416bc14a9ac3e577579f13298b7fa563efb3c0118ff8e35d179e780f6d"
 
 [[files]]
 file = "kubejs/server_scripts/Bloodyfile.js"
-hash = "91a4b1b4d2c326f5ee850ae9a297c1d61288d6f9c9912aec04e39dd8af352ab7"
+hash = "7936a3fb149726799bcf20425fe3d66e71feb3287e77f9e7a8148f61db7389b7"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
@@ -12826,7 +12826,7 @@ hash = "301c91ff6abfd65386f59c83271fcdc84f5c497707ff186c0088c83a1e05fdaa"
 
 [[files]]
 file = "kubejs/server_scripts/deathofinfinity.js"
-hash = "577c34ffd7b74e851ad8a68c4e3b6a5d5fb1d39793d2ea94daa95284be870735"
+hash = "b2bd32bdf230f5ae293dd0e5c21f69c8e36fd75d153f3912f12242695fcb301e"
 
 [[files]]
 file = "kubejs/server_scripts/enchantment.js"
