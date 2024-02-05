@@ -112,4 +112,6 @@ const mixings = [
             .processingTime(mixing.time ?? 100);
     
         };
+
+        event.recipes.createMilling("techreborn:amethyst_dust","minecraft:amethyst_shard") //Finally a use for this item!
 })
