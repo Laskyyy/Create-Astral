@@ -1145,6 +1145,31 @@ onEvent("item.tooltip", (e) => {
             )
         );
     }
+    // Standard drawer up/downgrades
+    e.add(
+        "extended_drawers:downgrade",
+        Text.gray("Reduces the Drawer Slot capacity to ")
+            .append(Text.red("64"))
+            .append(Text.gray("."))
+    );
+    e.add(
+        "minecraft:lava_bucket",
+        Text.gray("Shift-Right-click the Drawer Slot to make that slot ")
+            .append(Text.red("void excess items"))
+            .append(Text.gray("."))
+    );
+    e.add(
+        "minecraft:black_dye",
+        Text.gray("Shift-Right-click the Drawer Slot to ")
+            .append(Text.white("hide the label"))
+            .append(Text.gray("."))
+    );
+    e.add(
+        "extended_drawers:lock",
+        Text.gray("Shift-Right-click the Drawer Slot to ")
+            .append(Text.yellow("lock it"))
+            .append(Text.gray(" to the item inside."))
+    );
 });
 
 ///// CUSTOM ASTRAL WORLDGEN /////

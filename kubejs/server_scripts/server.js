@@ -1377,16 +1377,16 @@ onEvent("recipes", (event) => {
     event.replaceInput("ae2:sky_stone_block", "ad_astra:sky_stone");
 
     event.recipes
-        .createMixing(Fluid.of("ad_astra:cryo_fuel", 81000), [
-            { fluid: "techreborn:nitrogen", amount: 81000 },
-            { fluid: "kubejs:aurorite", amount: 81000 },
+        .createMixing(Fluid.of("ad_astra:cryo_fuel", BUCKET), [
+            { fluid: "techreborn:nitrogen", amount: BUCKET },
+            { fluid: "kubejs:aurorite", amount: BUCKET },
         ])
         .processingTime(300);
 
     event.recipes
         .createCompacting("yttr:continuous_platform", [
-            { fluid: "kubejs:aurorite", amount: 8100 },
-            { fluid: "kubejs:shimmer", amount: 8100 },
+            { fluid: "kubejs:aurorite", amount: 100 * mB },
+            { fluid: "kubejs:shimmer", amount: 100 * mB },
         ])
         .heated()
         .processingTime(200);
@@ -1407,8 +1407,8 @@ onEvent("recipes", (event) => {
         .processingTime(50);
 
     event.recipes
-        .createMixing(Fluid.of("techreborn:oil", 22500), [
-            { fluid: "techreborn:sulfur", amount: 45000 },
+        .createMixing(Fluid.of("techreborn:oil", 250 * mB), [
+            { fluid: "techreborn:sulfur", amount: 500 * mB },
             "3x techreborn:coal_dust",
         ])
         .processingTime(300);
@@ -1458,18 +1458,18 @@ onEvent("recipes", (event) => {
         .loops(3);
 
     event.recipes
-        .createMixing(Fluid.of("kubejs:molten_radiance", 81000), [
+        .createMixing(Fluid.of("kubejs:molten_radiance", BUCKET), [
             "minecraft:nether_star",
             "minecraft:glowstone",
             "minecraft:sea_lantern",
             "3x createastral:separation_agent",
-            { fluid: "kubejs:shimmer", amount: 81000 },
+            { fluid: "kubejs:shimmer", amount: BUCKET },
         ])
         .heated()
         .processingTime(1000);
 
     event.recipes
-        .createMixing(Fluid.of("kubejs:molten_shadowsteel", 81000), [
+        .createMixing(Fluid.of("kubejs:molten_shadowsteel", BUCKET), [
             "minecraft:ender_pearl",
             "8x dbe:vanta_black",
             "techreborn:lead_storage_block",
@@ -1482,14 +1482,14 @@ onEvent("recipes", (event) => {
     event.recipes
         .createMixing("create:refined_radiance", [
             "create:chromatic_compound",
-            { fluid: "kubejs:molten_radiance", amount: 8100 },
+            { fluid: "kubejs:molten_radiance", amount: 100 * mB },
         ])
         .superheated()
         .processingTime(1000);
 
     event.recipes
         .createCompacting("createastral:star_shard", [
-            { fluid: "kubejs:molten_radiance", amount: 8100 },
+            { fluid: "kubejs:molten_radiance", amount: 100 * mB },
         ])
         .heated()
         .processingTime(500);
@@ -1501,7 +1501,7 @@ onEvent("recipes", (event) => {
             [
                 event.recipes.createFilling("createastral:star_shard", [
                     "createastral:star_shard",
-                    { fluid: "kubejs:molten_yttrium", amount: 4500 },
+                    { fluid: "kubejs:molten_yttrium", amount: INGOT / 2 },
                 ]),
                 event.recipes.createPressing(
                     "createastral:star_shard",
@@ -1570,7 +1570,7 @@ onEvent("recipes", (event) => {
 
     event.recipes
         .createMixing("doodads:asphalt", [
-            { fluid: "kubejs:andesite_compound", amount: 3000 },
+            { fluid: "kubejs:andesite_compound", amount: INGOT / 3 },
             "#c:concrete_powder",
         ])
         .processingTime(1000);
