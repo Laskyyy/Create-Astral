@@ -1,13 +1,10 @@
-var FULL_BUCKET_AMMOUNT = 81000;
-var INGOT_FLUID_AMMOUNT = 9000;
-
 onEvent("recipes", (event) => {
 
     event.recipes // Dough to MEAT
         .createSequencedAssembly(
             ["createastral:seitan"],
             ["create:dough"],
-            [event.recipes.createFilling("create:dough", ["create:dough",{ fluid: "minecraft:water", amount: FULL_BUCKET_AMMOUNT / 10 }]),
+            [event.recipes.createFilling("create:dough", ["create:dough",{ fluid: "minecraft:water", amount: 100 * mb }]),
             event.recipes.createPressing("create:dough","create:dough"),
             event.recipes.createCutting("create:dough","create:dough"),]
         )
@@ -21,7 +18,7 @@ onEvent("recipes", (event) => {
             [event.recipes.createDeploying("createastral:seitan", ["createastral:seitan","minecraft:rotten_flesh"]),
             
             event.recipes.createFilling("createastral:seitan",
-                ["createastral:seitan",{ fluid: "tconstruct:blood", amount: FULL_BUCKET_AMMOUNT / 10 }]),
+                ["createastral:seitan",{ fluid: "tconstruct:blood", amount: 100 * mb }]),
             
             event.recipes.createPressing("createastral:seitan",
                                              "createastral:seitan"),
@@ -42,7 +39,7 @@ onEvent("recipes", (event) => {
                     "minecraft:string",
                 ]),
                 event.recipes.createFilling("createastral:seitan",
-                ["createastral:seitan",{ fluid: "tconstruct:blood", amount: FULL_BUCKET_AMMOUNT / 10 }]),
+                ["createastral:seitan",{ fluid: "tconstruct:blood", amount: 100 * mb }]),
                 event.recipes.createPressing("createastral:seitan",
                                              "createastral:seitan"),
                 event.recipes.createCutting("createastral:seitan",
@@ -62,7 +59,7 @@ onEvent("recipes", (event) => {
                     "minecraft:moss_carpet",
                 ]),
                 event.recipes.createFilling("createastral:seitan",
-                ["createastral:seitan",{ fluid: "tconstruct:blood", amount: FULL_BUCKET_AMMOUNT / 10 }]),
+                ["createastral:seitan",{ fluid: "tconstruct:blood", amount: 100 * mb }]),
                 event.recipes.createPressing("createastral:seitan",
                                              "createastral:seitan"),
                 event.recipes.createCutting("createastral:seitan",
@@ -82,7 +79,7 @@ onEvent("recipes", (event) => {
                     "minecraft:wheat_seeds",
                 ]),
                 event.recipes.createFilling("createastral:seitan",
-                ["createastral:seitan",{ fluid: "tconstruct:blood", amount: FULL_BUCKET_AMMOUNT / 10 }]),
+                ["createastral:seitan",{ fluid: "tconstruct:blood", amount: 100 * mb }]),
                 event.recipes.createPressing("createastral:seitan",
                                              "createastral:seitan"),
                 event.recipes.createCutting("createastral:seitan",
@@ -102,7 +99,7 @@ onEvent("recipes", (event) => {
                     "minecraft:carrot",
                 ]),
                 event.recipes.createFilling("createastral:seitan",
-                ["createastral:seitan",{ fluid: "tconstruct:blood", amount: FULL_BUCKET_AMMOUNT / 10 }]),
+                ["createastral:seitan",{ fluid: "tconstruct:blood", amount: 100 * mb }]),
                 event.recipes.createPressing("createastral:seitan",
                                              "createastral:seitan"),
                 event.recipes.createCutting("createastral:seitan",
@@ -128,7 +125,7 @@ onEvent("recipes", (event) => {
                 ]),
                 
                 event.recipes.createFilling("minecraft:porkchop",
-                ["minecraft:porkchop",{ fluid: "tconstruct:blood", amount: FULL_BUCKET_AMMOUNT / 10 }]),
+                ["minecraft:porkchop",{ fluid: "tconstruct:blood", amount: 100 * mb }]),
                 
                 event.recipes.createPressing("minecraft:porkchop",
                 "minecraft:porkchop"),
@@ -139,7 +136,7 @@ onEvent("recipes", (event) => {
 
         event.recipes
         .createSequencedAssembly( // Inksack for inky fun
-            ["minecraft:ink_sack"],
+            ["minecraft:ink_sac"],
             ["createastral:seitan"],
             [
                 event.recipes.createDeploying("createastral:seitan", [
