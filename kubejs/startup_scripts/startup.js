@@ -660,12 +660,11 @@ onEvent("item.registry", (event) => {
                 .effect("drinkbeer:drunk", 3000, 0, 1)
                 .alwaysEdible();
         });
-    event.create("createastral:seitan")
-         .displayName("Seitan")
-         .food((food) => {
-            food.hunger(2)
-                .saturation(0.5)
-                .alwaysEdible();
+    event
+        .create("createastral:seitan")
+        .displayName("Seitan")
+        .food((food) => {
+            food.hunger(2).saturation(0.5).alwaysEdible();
         });
 
     //Radiant Armor And Tools//
@@ -826,8 +825,10 @@ registerUpgrade("createastral", "t6_upgrade", 1048576); // 2^20x, this makes the
 ITEMS.register();
 
 ///// ITEM TOOLTIPS REGISTRY /////
-
+let hasFired = false;
 onEvent("item.tooltip", (e) => {
+    if (hasFired) return;
+    hasFired = true;
     const tooltips = [
         {
             item: "tconstruct:smeltery_controller",

@@ -1,3 +1,9 @@
+const BUCKET = 81000;
+const INGOT = 9000;
+const NUGGET = 1000;
+const GEM = 8100;
+const mB = 81;
+
 // priority: 0
 
 settings.logAddedRecipes = false;
@@ -1559,7 +1565,7 @@ onEvent("recipes", (event) => {
 
     event.recipes.createCompacting("4x minecraft:purpur_block", [
         "4x ad_astra:strophar_cap",
-        { fluid: "minecraft:water", amount: FULL_BUCKET_AMMOUNT / 10 },
+        { fluid: "minecraft:water", amount: 100 * mB },
     ]);
 
     event.recipes

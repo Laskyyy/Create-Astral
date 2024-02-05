@@ -1,5 +1,3 @@
-var FULL_BUCKET_AMMOUNT = 81000;
-var INGOT_FLUID_AMMOUNT = 9000;
 
 onEvent("recipes", (event) => {
     event.recipes
@@ -20,7 +18,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -49,7 +47,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -78,7 +76,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -107,7 +105,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -136,7 +134,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -165,7 +163,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -194,7 +192,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -223,7 +221,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -252,7 +250,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -281,7 +279,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -310,7 +308,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -339,7 +337,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -368,7 +366,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -397,7 +395,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -426,7 +424,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -455,7 +453,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -484,7 +482,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -513,7 +511,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -542,7 +540,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -571,7 +569,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -604,7 +602,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -633,7 +631,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -662,7 +660,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -691,7 +689,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -720,7 +718,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -749,7 +747,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -784,7 +782,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -813,7 +811,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -842,7 +840,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -871,7 +869,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -900,7 +898,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -929,7 +927,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -958,7 +956,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -987,7 +985,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -1016,7 +1014,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -1044,7 +1042,7 @@ onEvent("recipes", (event) => {
             ]), // insert crystal here / def something that could be changed
             event.recipes.createFilling("minecraft:enchanted_book", [
                 "minecraft:enchanted_book",
-                { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "xpcrystals:soul", amount: BUCKET },
             ]), //gathering the souls / def something that could be changed
             event.recipes.createPressing(
                 "minecraft:enchanted_book",
@@ -1071,7 +1069,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -1100,7 +1098,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -1129,7 +1127,7 @@ onEvent("recipes", (event) => {
                 ]), // insert crystal here / def something that could be changed
                 event.recipes.createFilling("minecraft:enchanted_book", [
                     "minecraft:enchanted_book",
-                    { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT },
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
                 ]), //gathering the souls / def something that could be changed
                 event.recipes.createPressing(
                     "minecraft:enchanted_book",
@@ -1151,8 +1149,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -1167,7 +1165,7 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -1182,8 +1180,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -1199,8 +1197,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:4s}]}'
                 ),
                 "createastral:experience_ingot",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -1216,8 +1214,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:5s}]}'
                 ),
                 "create:experience_block",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 40500 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET / 2 },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -1233,8 +1231,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:6s}]}'
                 ),
                 "create:experience_block",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 81000 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -1249,8 +1247,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -1265,8 +1263,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -1281,8 +1279,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -1298,8 +1296,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:4s}]}'
                 ),
                 "createastral:experience_ingot",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -1314,8 +1312,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:protection",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -1330,8 +1328,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:protection",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -1346,8 +1344,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:protection",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -1363,8 +1361,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:protection",lvl:4s}]}'
                 ),
                 "createastral:experience_ingot",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -1380,8 +1378,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:protection",lvl:5s}]}'
                 ),
                 "create:experience_block",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 40500 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET / 2 },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -1397,8 +1395,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:protection",lvl:6s}]}'
                 ),
                 "create:experience_block",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 81000 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -1413,8 +1411,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -1429,8 +1427,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -1445,8 +1443,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -1462,8 +1460,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:4s}]}'
                 ),
                 "createastral:experience_ingot",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -1479,8 +1477,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:5s}]}'
                 ),
                 "create:experience_block",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 40500 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET / 2 },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -1495,8 +1493,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -1511,8 +1509,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -1527,8 +1525,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -1544,8 +1542,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:4s}]}'
                 ),
                 "createastral:experience_ingot",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -1561,8 +1559,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:5s}]}'
                 ),
                 "create:experience_block",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 40500 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET / 2 },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -1577,8 +1575,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -1593,8 +1591,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -1609,8 +1607,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -1626,8 +1624,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:4s}]}'
                 ),
                 "createastral:experience_ingot",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -1643,8 +1641,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:5s}]}'
                 ),
                 "create:experience_block",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 40500 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET / 2 },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -1659,8 +1657,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:thorns",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -1675,8 +1673,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:thorns",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -1691,8 +1689,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:thorns",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -1708,8 +1706,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:thorns",lvl:4s}]}'
                 ),
                 "createastral:experience_ingot",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -1724,8 +1722,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -1740,8 +1738,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -1756,8 +1754,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -1773,8 +1771,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:4s}]}'
                 ),
                 "createastral:experience_ingot",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -1789,8 +1787,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -1805,8 +1803,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -1821,8 +1819,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -1838,8 +1836,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:4s}]}'
                 ),
                 "createastral:experience_ingot",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -1854,8 +1852,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:smite",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -1870,8 +1868,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:smite",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -1886,8 +1884,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:smite",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -1903,8 +1901,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:smite",lvl:4s}]}'
                 ),
                 "createastral:experience_ingot",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -1920,8 +1918,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:smite",lvl:5s}]}'
                 ),
                 "create:experience_block",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 40500 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET / 2 },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -1937,8 +1935,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:smite",lvl:6s}]}'
                 ),
                 "create:experience_block",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 81000 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -1953,8 +1951,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:respiration",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -1969,8 +1967,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:respiration",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -1985,8 +1983,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:respiration",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -2002,8 +2000,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:respiration",lvl:4s}]}'
                 ),
                 "createastral:experience_ingot",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -2018,8 +2016,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -2034,8 +2032,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -2050,8 +2048,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -2067,8 +2065,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:4s}]}'
                 ),
                 "createastral:experience_ingot",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -2083,8 +2081,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:punch",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -2099,8 +2097,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:punch",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -2115,8 +2113,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:punch",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -2131,8 +2129,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:power",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -2147,8 +2145,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:power",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -2163,8 +2161,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:power",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -2180,8 +2178,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:power",lvl:4s}]}'
                 ),
                 "createastral:experience_ingot",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -2197,8 +2195,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:power",lvl:5s}]}'
                 ),
                 "create:experience_block",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 40500 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET / 2 },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -2214,8 +2212,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:power",lvl:6s}]}'
                 ),
                 "create:experience_block",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 81000 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -2230,8 +2228,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:piercing",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -2246,8 +2244,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:piercing",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -2262,8 +2260,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:piercing",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -2279,8 +2277,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:piercing",lvl:4s}]}'
                 ),
                 "createastral:experience_ingot",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -2296,8 +2294,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:piercing",lvl:5s}]}'
                 ),
                 "create:experience_block",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 40500 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET / 2 },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -2312,8 +2310,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:looting",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -2328,8 +2326,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:looting",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -2344,8 +2342,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:looting",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -2361,8 +2359,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:looting",lvl:4s}]}'
                 ),
                 "createastral:experience_ingot",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -2377,8 +2375,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:knockback",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -2393,8 +2391,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:knockback",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -2409,8 +2407,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:knockback",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -2425,8 +2423,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:frost_walker",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -2441,8 +2439,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:frost_walker",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -2457,7 +2455,7 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:frost_walker",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -2472,8 +2470,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:fortune",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -2488,8 +2486,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:fortune",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -2504,8 +2502,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:fortune",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -2521,8 +2519,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:fortune",lvl:4s}]}'
                 ),
                 "createastral:experience_ingot",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -2537,8 +2535,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:fire_aspect",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -2553,8 +2551,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:fire_aspect",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -2569,8 +2567,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:fire_aspect",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -2585,8 +2583,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -2601,8 +2599,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -2617,8 +2615,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -2634,8 +2632,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:4s}]}'
                 ),
                 "createastral:experience_ingot",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -2651,8 +2649,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:5s}]}'
                 ),
                 "create:experience_block",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 40500 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET / 2 },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -2667,8 +2665,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -2683,8 +2681,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -2699,8 +2697,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -2716,8 +2714,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:4s}]}'
                 ),
                 "createastral:experience_ingot",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -2733,8 +2731,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:5s}]}'
                 ),
                 "create:experience_block",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 40500 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET / 2 },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -2750,8 +2748,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:6s}]}'
                 ),
                 "create:experience_block",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 81000 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -2766,8 +2764,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:depth_strider",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -2782,8 +2780,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:depth_strider",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -2798,8 +2796,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -2814,8 +2812,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -2830,8 +2828,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -2847,8 +2845,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:4s}]}'
                 ),
                 "createastral:experience_ingot",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -2864,8 +2862,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:5s}]}'
                 ),
                 "create:experience_block",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 40500 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET / 2 },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -2881,8 +2879,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:6s}]}'
                 ),
                 "create:experience_block",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 81000 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -2897,8 +2895,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:lure",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -2913,8 +2911,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:lure",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -2929,8 +2927,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:lure",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -2946,8 +2944,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:lure",lvl:4s}]}'
                 ),
                 "createastral:experience_ingot",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -2962,8 +2960,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -2978,8 +2976,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -2994,8 +2992,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -3011,8 +3009,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:4s}]}'
                 ),
                 "createastral:experience_ingot",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -3027,8 +3025,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -3043,8 +3041,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -3059,8 +3057,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -3076,8 +3074,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:4s}]}'
                 ),
                 "createastral:experience_ingot",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -3092,8 +3090,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:riptide",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -3108,8 +3106,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:riptide",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -3124,8 +3122,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:riptide",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -3141,8 +3139,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:riptide",lvl:4s}]}'
                 ),
                 "createastral:experience_ingot",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -3157,8 +3155,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:impaling",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -3173,8 +3171,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:impaling",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -3189,8 +3187,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"minecraft:impaling",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -3206,8 +3204,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:impaling",lvl:4s}]}'
                 ),
                 "createastral:experience_ingot",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -3223,8 +3221,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:impaling",lvl:5s}]}'
                 ),
                 "create:experience_block",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 40500 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET / 2 },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -3240,8 +3238,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"minecraft:impaling",lvl:6s}]}'
                 ),
                 "create:experience_block",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 81000 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -3256,8 +3254,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:1s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 3000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: false,
             time: null,
@@ -3272,8 +3270,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:2s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
-                { fluid: "kubejs:shimmer", amount: FULL_BUCKET_AMMOUNT },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
             ],
             superheated: true,
             time: null,
@@ -3288,8 +3286,8 @@ onEvent("recipes", (event) => {
                     "minecraft:enchanted_book",
                     '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:3s}]}'
                 ),
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 10125 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
             ],
             superheated: true,
             time: null,
@@ -3305,8 +3303,8 @@ onEvent("recipes", (event) => {
                     '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:4s}]}'
                 ),
                 "createastral:experience_ingot",
-                { fluid: "kubejs:liquid_xp_nuggies", amount: 18000 },
-                { fluid: "kubejs:hellfire", amount: 20250 },
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
             ],
             superheated: true,
             time: null,
@@ -3318,13 +3316,13 @@ onEvent("recipes", (event) => {
             time: 10,
         },
         {
-            output: { fluid: "kubejs:liquid_xp_nuggies", amount: 9000 },
+            output: { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
             input: ["createastral:experience_ingot"],
             superheated: false,
             time: 100,
         },
         {
-            output: { fluid: "kubejs:liquid_xp_nuggies", amount: 81000 },
+            output: { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
             input: ["create:experience_block"],
             superheated: false,
             time: 1000,
@@ -3338,7 +3336,7 @@ onEvent("recipes", (event) => {
         {
             output: {
                 fluid: "tconstruct:liquid_soul",
-                amount: FULL_BUCKET_AMMOUNT / 4,
+                amount: 250 * mB,
             },
             input: ["xpcrystals:soul_compound"],
             superheated: false,
@@ -3360,18 +3358,18 @@ onEvent("recipes", (event) => {
         .createMixing(
             {
                 fluid: "tconstruct:liquid_soul",
-                amount: FULL_BUCKET_AMMOUNT / 4,
+                amount: 250 * mB,
             },
             [
                 "xpcrystals:soul_compound",
-                { fluid: "minecraft:water", amount: FULL_BUCKET_AMMOUNT / 8 },
+                { fluid: "minecraft:water", amount: 125 * mB },
             ]
         )
         .processingTime(25);
     event.recipes
         .createMixing(
-            { fluid: "xpcrystals:soul", amount: FULL_BUCKET_AMMOUNT / 4 },
-            { fluid: "tconstruct:liquid_soul", amount: FULL_BUCKET_AMMOUNT / 4 }
+            { fluid: "xpcrystals:soul", amount: 250 * mB },
+            { fluid: "tconstruct:liquid_soul", amount: 250 * mB }
         )
         .processingTime(25);
     event.recipes.createCrushing(
@@ -3390,11 +3388,11 @@ onEvent("recipes", (event) => {
         ["minecraft:soul_sand"]
     );
     event.recipes.createFilling("xpcrystals:sticky_crystal_pudding", [
-        { fluid: "kubejs:liquid_xp_nuggies", amount: FULL_BUCKET_AMMOUNT },
+        { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
         "createaddition:cake_base_baked",
     ]);
     event.recipes.createFilling("xpcrystals:crystal_broth", [
-        { fluid: "kubejs:liquid_xp_nuggies", amount: FULL_BUCKET_AMMOUNT / 2 },
+        { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET / 2 },
         "minecraft:bowl",
     ]);
     event.recipes
@@ -3406,21 +3404,21 @@ onEvent("recipes", (event) => {
                     "minecraft:glass_bottle",
                     {
                         fluid: "kubejs:liquid_xp_nuggies",
-                        amount: FULL_BUCKET_AMMOUNT / 3,
+                        amount: BUCKET / 3,
                     },
                 ]),
                 event.recipes.createFilling("minecraft:glass_bottle", [
                     "minecraft:glass_bottle",
                     {
                         fluid: "xpcrystals:soul",
-                        amount: FULL_BUCKET_AMMOUNT / 3,
+                        amount: BUCKET / 3,
                     },
                 ]),
                 event.recipes.createFilling("minecraft:glass_bottle", [
                     "minecraft:glass_bottle",
                     {
                         fluid: "kubejs:shimmer",
-                        amount: FULL_BUCKET_AMMOUNT / 3,
+                        amount: BUCKET / 3,
                     },
                 ]),
             ]
