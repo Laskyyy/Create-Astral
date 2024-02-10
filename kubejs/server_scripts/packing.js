@@ -1,5 +1,11 @@
 // Repurposes the TR (t)Rolling Machine as a Packer, and TR Assembling Machine as an Unpacker.
 
+/**
+ * Creates a 3x3 packing recipe.
+ * @param {event} event - The recipe event. Make sure that the function is called from within the event!
+ * @param {string} input - Input item (ex. "minecraft:iron_ingot").
+ * @param {string} output - Output item (ex. "minecraft:iron_block").
+ */
 function pack9(event, input, output) {
     event.custom({
         type: "techreborn:rolling_machine",
@@ -19,6 +25,12 @@ function pack9(event, input, output) {
     });
 }
 
+/**
+ * Creates a 2x2 packing recipe.
+ * @param {event} event - The recipe event. Make sure that the function is called from within the event!
+ * @param {string} input - Input item (ex. "minecraft:quartz").
+ * @param {string} output - Output item (ex. "minecraft:quartz_block").
+ */
 function pack4(event, input, output) {
     event.custom({
         type: "techreborn:rolling_machine",
@@ -38,6 +50,13 @@ function pack4(event, input, output) {
     });
 }
 
+/**
+ * Creates an unpacking recipe.
+ * @param {event} event - The recipe event. Make sure that the function is called from within the event!
+ * @param {string} input - Input item (ex. "minecraft:iron_block").
+ * @param {string} output - Output item (ex. "minecraft:iron_ingot").
+ * @param {number} amount - The amount of item returned.
+ */
 function unpack(event, input, output, amount) {
     event.custom({
         type: "techreborn:assembling_machine",
@@ -88,6 +107,7 @@ const PACK_MATERIALS = [
     {
         mod: "minecraft",
         type: "amethyst",
+        append: "_shard",
         smallRecipe: true,
         notUnpackable: true,
     },
@@ -137,7 +157,6 @@ const PACK_MATERIALS = [
     {
         mod: "minecraft",
         type: "quartz",
-        hasNugget: true,
         smallRecipe: true,
         notUnpackable: true,
     },
@@ -334,6 +353,10 @@ const PACK_MATERIALS = [
     },
     {
         mod: "yttr",
+        type: "raw_gadolinite", // Actually Raw Yttrium
+    },
+    {
+        mod: "yttr",
         type: "ultrapure_carbon",
     },
     {
@@ -349,6 +372,57 @@ const PACK_MATERIALS = [
         type: "cuprosteel",
         append: "_ingot",
     },
+];
+
+const SMALL_PILES = [
+    // All from Tech Reborn
+    { type: "almandine" },
+    { type: "andesite" },
+    { type: "andradite" },
+    { type: "ashes" },
+    { type: "basalt" },
+    { type: "bauxite" },
+    { type: "calcite" },
+    { type: "charcoal" },
+    { type: "cinnabar" },
+    { type: "clay" },
+    { type: "coal" },
+    { type: "dark_ashes" },
+    { type: "diamond" },
+    { type: "diorite" },
+    { type: "electrum" },
+    { type: "emerald" },
+    { type: "ender_eye" },
+    { type: "ender_pearl" },
+    { type: "endstone" },
+    { type: "flint" },
+    { type: "galena" },
+    { type: "glowstone", dust: "minecraft:glowstone_dust" },
+    { type: "granite" },
+    { type: "grossular" },
+    { type: "lazurite" },
+    { type: "magnesium" },
+    { type: "manganese" },
+    { type: "marble" },
+    { type: "netherrack" },
+    { type: "obsidian" },
+    { type: "olivine" },
+    { type: "peridot" },
+    { type: "phosphorous" },
+    { type: "pyrite" },
+    { type: "pyrope" },
+    { type: "quartz" },
+    { type: "redstone", dust: "minecraft:redstone" },
+    { type: "red_garnet" },
+    { type: "ruby" },
+    { type: "sapphire" },
+    { type: "saw" },
+    { type: "sodalite" },
+    { type: "spessartine" },
+    { type: "sphalerite" },
+    { type: "steel" },
+    { type: "uvarovite" },
+    { type: "yellow_garnet" },
 ];
 
 const COMPRESSION_DEGREES = [
@@ -405,6 +479,18 @@ onEvent("recipes", (event) => {
                 }
             }
         }
+    });
+
+    // Special case for Glowstone, since its block doesn't end with "_block"
+    pack4(event, "minecraft:glowstone_dust", "minecraft:glowstone");
+
+    // Small Dusts -> Dusts and vice versa
+    SMALL_PILES.forEach((dust) => {
+        let smallDustID = `techreborn:${dust.type}_small_dust`;
+        let largeDustID = dust.dust ?? `techreborn:${dust.type}_dust`;
+
+        pack4(event, smallDustID, largeDustID);
+        unpack(event, largeDustID, smallDustID, 4);
     });
 
     //Compressed mass-produced blocks
