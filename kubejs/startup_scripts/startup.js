@@ -153,8 +153,8 @@ function liquidFoodGen(event) {
         },
         {
             name: "beetroot_soup_fluid",
-            displayName: "Corn Soup",
-            color: 0xffff80,
+            displayName: "Beetroot Soup",
+            color: 0x741b47,
         },
         {
             name: "hot_cocoa_fluid",
@@ -371,7 +371,6 @@ onEvent("block.registry", (event) => {
         .hardness(3)
         .displayName("Copper Plating")
         .tagBlock("minecraft:mineable/pickaxe");
-
     event
         .create("createastral:refined_radiance_block")
         .material("lantern")
@@ -470,6 +469,13 @@ onEvent("block.registry", (event) => {
     event
         .create("createastral:charcoal_block", "basic")
         .hardness(4)
+        .tagBlock("minecraft:mineable/pickaxe")
+        .material("stone");
+
+    event
+        .create("createastral:experience_block", "basic")
+        .hardness(4)
+        .displayName("Ignore this block whilst it's a placeholder")
         .tagBlock("minecraft:mineable/pickaxe")
         .material("stone");
 
@@ -613,7 +619,7 @@ onEvent("item.registry", (event) => {
         event.create("createastral:golden_pin"),
         event.create("createastral:calorite_pin"),
         event.create("createastral:electrified_pin"),
-        event.create("createastral:uwaah"),
+        event.create("createastral:logo"),
         event.create("createastral:bronze_ingot"),
         event.create("createastral:navigation_mechanism");
     event
@@ -653,6 +659,12 @@ onEvent("item.registry", (event) => {
                 .saturation(0)
                 .effect("drinkbeer:drunk", 3000, 0, 1)
                 .alwaysEdible();
+        });
+    event
+        .create("createastral:seitan")
+        .displayName("Seitan")
+        .food((food) => {
+            food.hunger(2).saturation(0.5).alwaysEdible();
         });
 
     //Radiant Armor And Tools//
@@ -770,9 +782,53 @@ onEvent("item.registry", (event) => {
         .displayName("coin");
 });
 
-///// ITEM TOOLTIPS REGISTRY /////
+// Java reflection stuff //
+// Custom drawer upgrades
 
+const $DeferredRegister = java(
+    "dev.architectury.registry.registries.DeferredRegister"
+);
+const $Tiers = java("net.minecraft.world.item.Tiers");
+const $Item = java("net.minecraft.world.item.Item");
+const $Registry = java("net.minecraft.core.Registry");
+const $UpgradeItem = java(
+    "io.github.mattidragon.extendeddrawers.item.UpgradeItem"
+);
+const $ResourceLocation = java("net.minecraft.class_2960");
+const $FabricItemSettings = java(
+    "net.fabricmc.fabric.api.item.v1.FabricItemSettings"
+);
+
+let ITEMS = $DeferredRegister.create("createastral", $Registry.ITEM_REGISTRY);
+let drawer_multipliers = {}; // This will be used later for adding tooltips.
+
+function registerUpgrade(mod_id, name, multiplier) {
+    drawer_multipliers[`${mod_id}:${name}`] = multiplier;
+    ITEMS["register(net.minecraft.class_2960,java.util.function.Supplier)"](
+        `${mod_id}:${name}`,
+        () => {
+            return new $UpgradeItem(
+                new $FabricItemSettings(),
+                $ResourceLocation(mod_id, `item/${name}`),
+                multiplier
+            );
+        }
+    );
+}
+
+registerUpgrade("createastral", "t1_upgrade", 2);
+registerUpgrade("createastral", "t2_upgrade", 4);
+registerUpgrade("createastral", "t3_upgrade", 16);
+registerUpgrade("createastral", "t4_upgrade", 64);
+registerUpgrade("createastral", "t5_upgrade", 256);
+registerUpgrade("createastral", "t6_upgrade", 1048576); // 2^20x, this makes the regular drawer store 2^31 items
+ITEMS.register();
+
+///// ITEM TOOLTIPS REGISTRY /////
+let hasFired = false;
 onEvent("item.tooltip", (e) => {
+    if (hasFired) return;
+    hasFired = true;
     const tooltips = [
         {
             item: "tconstruct:smeltery_controller",
@@ -780,7 +836,7 @@ onEvent("item.tooltip", (e) => {
         },
         {
             item: "create:blaze_cake",
-            tooltip: "Use processes in Chapter 4 to superheat blaze burners.",
+            tooltip: "Obtained in Chapter 4!",
         },
         {
             item: "yttr:gadolinite",
@@ -881,6 +937,10 @@ onEvent("item.tooltip", (e) => {
         {
             item: "createastral:bronze_block",
             tooltip: "Texture courtesy of Create: Alloyed.",
+        },
+        {
+            item: "createastral:seitan",
+            tooltip: "MEAT - Multipurpose, Ethical And True",
         },
 
         //vanilla minecraft tooltips (information on ores goes down below)
@@ -1041,26 +1101,75 @@ onEvent("item.tooltip", (e) => {
         },
     ];
 
-    tooltips.forEach(tooltip => {
+    tooltips.forEach((tooltip) => {
         e.addAdvanced(tooltip.item, (item, advanced, text) => {
-          if (!e.isShift()) {
-            text.add(1, [Text.of('Hold ').darkGreen(), Text.of('Shift ').green(), Text.of('to see more info.').darkGreen()]);
-          }
-          if (e.isShift()) {
-            text.add(1, [Text.of(tooltip.tooltip).green()]);
-          }
+            if (!e.isShift()) {
+                text.add(1, [
+                    Text.of("Hold ").darkGreen(),
+                    Text.of("Shift ").green(),
+                    Text.of("to see more info.").darkGreen(),
+                ]);
+            }
+            if (e.isShift()) {
+                text.add(1, [Text.of(tooltip.tooltip).green()]);
+            }
         });
-      });
-      e.addAdvanced('createastral:orcane', (item, advanced, text) => {
+    });
+    e.addAdvanced("createastral:orcane", (item, advanced, text) => {
         if (!e.isShift()) {
-          text.add(1, [Text.of('Hold ').gold(), Text.of('Shift ').yellow(), Text.of('to see more info.').gold()])
+            text.add(1, [
+                Text.of("Hold ").gold(),
+                Text.of("Shift ").yellow(),
+                Text.of("to see more info.").gold(),
+            ]);
         }
         if (e.isShift()) {
-          
-      text.add(1, [Text.of('If you are new to create, use pondering or online guides. The pack is almost exclusively centered around it and Tech Reborn. The quest book has some items that give a general idea of what has changed / what is included, in the order of when to take note of them, however the pack can be played without following it exactly, so do what you enjoy.').gold(),])
-      text.add(2, [Text.of('A major change you *might* want to be aware of. The nether does not exist. Do not even try to make the portal as it will not function. All nether related items are distributed throughout the pack (mostly planets)').white(),])
+            text.add(1, [
+                Text.of(
+                    "If you are new to create, use pondering or online guides. The pack is almost exclusively centered around it and Tech Reborn. The quest book has some items that give a general idea of what has changed / what is included, in the order of when to take note of them, however the pack can be played without following it exactly, so do what you enjoy."
+                ).gold(),
+            ]);
+            text.add(2, [
+                Text.of(
+                    "A major change you *might* want to be aware of. The nether does not exist. Do not even try to make the portal as it will not function. All nether related items are distributed throughout the pack (mostly planets)"
+                ).white(),
+            ]);
         }
-      });
+    });
+    // Custom drawer upgrades
+    for (const [item, mutliplier] of Object.entries(drawer_multipliers)) {
+        e.add(
+            [item],
+            Text.gray("Drawer Slot capacity: ").append(
+                Text.green(`${mutliplier}x`)
+            )
+        );
+    }
+    // Standard drawer up/downgrades
+    e.add(
+        "extended_drawers:downgrade",
+        Text.gray("Reduces the Drawer Slot capacity to ")
+            .append(Text.red("64"))
+            .append(Text.gray("."))
+    );
+    e.add(
+        "minecraft:lava_bucket",
+        Text.gray("Shift-Right-click the Drawer Slot to make that slot ")
+            .append(Text.red("void excess items"))
+            .append(Text.gray("."))
+    );
+    e.add(
+        "minecraft:black_dye",
+        Text.gray("Shift-Right-click the Drawer Slot to ")
+            .append(Text.white("hide the label"))
+            .append(Text.gray("."))
+    );
+    e.add(
+        "extended_drawers:lock",
+        Text.gray("Shift-Right-click the Drawer Slot to ")
+            .append(Text.yellow("lock it"))
+            .append(Text.gray(" to the item inside."))
+    );
 });
 
 ///// CUSTOM ASTRAL WORLDGEN /////

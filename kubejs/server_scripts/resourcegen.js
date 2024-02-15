@@ -1,6 +1,3 @@
-var FULL_BUCKET_AMMOUNT = 81000;
-var INGOT_FLUID_AMMOUNT = 9000;
-
 onEvent("recipes", (event) => {
     LakyCompactingRecipes(event);
     LakyCrushingRecipes(event);
@@ -12,49 +9,49 @@ function LakyCompactingRecipes(event) {
             "create:ochrum",
             "minecraft:sandstone",
             "minecraft:dripstone_block",
-            { fluid: "create:honey", amount: 8100 },
+            { fluid: "create:honey", amount: 100 * mB },
             "minecraft:yellow_dye",
         ],
         [
             "create:crimsite",
             "minecraft:tuff",
             "minecraft:red_sand",
-            { fluid: "tconstruct:blood", amount: 8100 },
+            { fluid: "tconstruct:blood", amount: 100 * mB },
             "minecraft:red_dye",
         ],
         [
             "create:limestone",
             "minecraft:calcite",
             "minecraft:clay",
-            { fluid: "milk:still_milk", amount: 8100 },
+            { fluid: "milk:still_milk", amount: 100 * mB },
             "minecraft:white_dye",
         ],
         [
             "create:veridium",
             "minecraft:basalt",
             "minecraft:slime_ball",
-            { fluid: "minecraft:lava", amount: 8100 },
+            { fluid: "minecraft:lava", amount: 100 * mB },
             "minecraft:green_dye",
         ],
         [
             "create:asurine",
             "minecraft:prismarine",
             "minecraft:kelp",
-            { fluid: "minecraft:water", amount: 8100 },
+            { fluid: "minecraft:water", amount: 100 * mB },
             "minecraft:blue_dye",
         ],
         [
             "create:scorchia",
             "minecraft:blackstone",
             "ad_astra:moon_sand",
-            { fluid: "tconstruct:blazing_blood", amount: 8100 },
+            { fluid: "tconstruct:blazing_blood", amount: 100 * mB },
             "minecraft:black_dye",
         ],
         [
             "create:scoria",
             "tconstruct:seared_stone",
             "minecraft:soul_soil",
-            { fluid: "create:chocolate", amount: 8100 },
+            { fluid: "create:chocolate", amount: 100 * mB },
             "minecraft:brown_dye",
         ],
     ];
