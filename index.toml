@@ -12829,6 +12829,54 @@ file = "kubejs/jsconfig.json"
 hash = "82dbdb416bc14a9ac3e577579f13298b7fa563efb3c0118ff8e35d179e780f6d"
 
 [[files]]
+file = "kubejs/probe/cache/cachedEvents.json"
+hash = "5805fff3af11c6ce33976f5a714e5533370b34a3660c7bdd9386e554ac713c69"
+
+[[files]]
+file = "kubejs/probe/cache/cachedForgedEvents.json"
+hash = "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+
+[[files]]
+file = "kubejs/probe/cache/cachedJava.json"
+hash = "89f49e5c10c1d8f9fa0f061e2ef848ee34c177fcd5293ad89bcbca8376ab7187"
+
+[[files]]
+file = "kubejs/probe/cache/javaClasses.json"
+hash = "419f7e37cb4b34cb1a65744db4a541c0f0ca355c061050d4f9124756d3172e83"
+
+[[files]]
+file = "kubejs/probe/cache/mergedClasses.json"
+hash = "386a8ea17bd93919055cfa82b4dddd2e85e22318119801fe796d4a50f487a207"
+
+[[files]]
+file = "kubejs/probe/generated/constants.d.ts"
+hash = "c2d3a3db89c8a089cbb9561c126e521f09d3839bf4249adda7a2cc0951d9661b"
+
+[[files]]
+file = "kubejs/probe/generated/events.d.ts"
+hash = "7797fa9ed0ec885974980316012eccad2b1de7137af23596fcd671f01a2c9337"
+
+[[files]]
+file = "kubejs/probe/generated/globals.d.ts"
+hash = "e5f0fc3743721398efd9b45d1f4b557b27230eebf862addc92b6690aedc23589"
+
+[[files]]
+file = "kubejs/probe/generated/java.d.ts"
+hash = "52ef6be4490c4b5c4c9487c1aff40c8804f8fcb3b0754437fdd3e13500f3b117"
+
+[[files]]
+file = "kubejs/probe/generated/names.d.ts"
+hash = "5df69e07e57726190c1585189a028a42420c20165258d3f5f82e2c5021571815"
+
+[[files]]
+file = "kubejs/probe/generated/raw.d.ts"
+hash = "59f0d77407f02b8dc4122eb49848e932c40ab32654d208f6bd331cafb75bf712"
+
+[[files]]
+file = "kubejs/probe/generated/registries.d.ts"
+hash = "600e9487bf0c2fc2e812ae99b9145363720cb9fc53e4d9356eb4ccf902eb1749"
+
+[[files]]
 file = "kubejs/server_scripts/Bloodyfile.js"
 hash = "2d724543b830da6ee8634e760faf96d7c161fc19c0b93c1ca786689426be921c"
 
@@ -13560,6 +13608,11 @@ metafile = true
 [[files]]
 file = "mods/ponder.pw.toml"
 hash = "f192b19241ef95fb905a0145be3f5f1074efbd7861485bd58f7626bb0f40a476"
+metafile = true
+
+[[files]]
+file = "mods/probejs.pw.toml"
+hash = "8b5a1ee5ce55accd2b51a9bdb08c0f401d69dbaa7f5113668804aa477dfb9c9e"
 metafile = true
 
 [[files]]
