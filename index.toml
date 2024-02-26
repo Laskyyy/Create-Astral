@@ -12810,7 +12810,7 @@ hash = "29ec09ae2638dd2a69ede8cb31ddb1858b4eb0f91b999d208cd9a99d4c93e1ab"
 
 [[files]]
 file = "kubejs/client_scripts/ponder.js"
-hash = "b299ceeb215f25d88a368f64db63447d17a68ee62adf10be6e41169ac5059b0a"
+hash = "f98ae55d9890abd7c5460ec85c0f65d05b382a6bfcf034cd70bdaaed9a8c4e97"
 
 [[files]]
 file = "kubejs/client_scripts/script.js"
@@ -12830,7 +12830,7 @@ hash = "82dbdb416bc14a9ac3e577579f13298b7fa563efb3c0118ff8e35d179e780f6d"
 
 [[files]]
 file = "kubejs/probe/cache/cachedEvents.json"
-hash = "5805fff3af11c6ce33976f5a714e5533370b34a3660c7bdd9386e554ac713c69"
+hash = "4b121d45756d77f4b46f49194e7f816a28217a4e8366737dcf1986a3ea5ea7d3"
 
 [[files]]
 file = "kubejs/probe/cache/cachedForgedEvents.json"
@@ -12838,15 +12838,15 @@ hash = "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
 
 [[files]]
 file = "kubejs/probe/cache/cachedJava.json"
-hash = "89f49e5c10c1d8f9fa0f061e2ef848ee34c177fcd5293ad89bcbca8376ab7187"
+hash = "186f9bfa444d0f89752ef6a8a342d32ba147e706855024866208a052054db26d"
 
 [[files]]
 file = "kubejs/probe/cache/javaClasses.json"
-hash = "419f7e37cb4b34cb1a65744db4a541c0f0ca355c061050d4f9124756d3172e83"
+hash = "6d0756612f99b636e70fa46649818033ac9bb2acb8247ca3f6aa1927a42cd92e"
 
 [[files]]
 file = "kubejs/probe/cache/mergedClasses.json"
-hash = "386a8ea17bd93919055cfa82b4dddd2e85e22318119801fe796d4a50f487a207"
+hash = "872e58a2dac1ae748464fd034067d5f513125746b7dbea31bc535ca5f0e5555f"
 
 [[files]]
 file = "kubejs/probe/generated/constants.d.ts"
@@ -12854,15 +12854,15 @@ hash = "c2d3a3db89c8a089cbb9561c126e521f09d3839bf4249adda7a2cc0951d9661b"
 
 [[files]]
 file = "kubejs/probe/generated/events.d.ts"
-hash = "7797fa9ed0ec885974980316012eccad2b1de7137af23596fcd671f01a2c9337"
+hash = "0cd64ba857292057e580159489e21cad26699afe6f225897bc51353d1ae106ff"
 
 [[files]]
 file = "kubejs/probe/generated/globals.d.ts"
-hash = "e5f0fc3743721398efd9b45d1f4b557b27230eebf862addc92b6690aedc23589"
+hash = "f0e947c36a4a29a65be7859e15c43f53b2a2bcb7bd0ebddfa29bc571647c407c"
 
 [[files]]
 file = "kubejs/probe/generated/java.d.ts"
-hash = "52ef6be4490c4b5c4c9487c1aff40c8804f8fcb3b0754437fdd3e13500f3b117"
+hash = "d6e0dd81d1cc1be42c4def590b2973e232272ef0b138813723fa480f6be9d963"
 
 [[files]]
 file = "kubejs/probe/generated/names.d.ts"
@@ -13533,10 +13533,6 @@ hash = "38f1a162b1bcafdd3121f813da718002feb1109d3938b7342aea24388b2e84fb"
 metafile = true
 
 [[files]]
-file = "mods/nbt_ponders-0.0.1+1.18.2.jar"
-hash = "5d6166185d185a4aa519bc70c0ddaa436e4df5e1381471a8e84d52cc590db930"
-
-[[files]]
 file = "mods/neruina.pw.toml"
 hash = "cc1bb1196e1eecbfeead2f7da80387830bba4f888ecc679c32704cb9e5150843"
 metafile = true
@@ -13609,6 +13605,10 @@ metafile = true
 file = "mods/ponder.pw.toml"
 hash = "f192b19241ef95fb905a0145be3f5f1074efbd7861485bd58f7626bb0f40a476"
 metafile = true
+
+[[files]]
+file = "mods/ponder_overrides-0.0.1+1.18.2.jar"
+hash = "b3800fb7b82bf5aacc9557586c7f35864e68da7625dfdfdf93da4c39db491149"
 
 [[files]]
 file = "mods/probejs.pw.toml"

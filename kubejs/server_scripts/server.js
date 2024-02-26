@@ -1164,7 +1164,6 @@ onEvent("recipes", (event) => {
     event.shaped(
         Item.of("custommachinery:custom_machine_item", {
             machine: "createastral:electrolyser",
-            nbt_ponders_ponder_id: "createastral:electrolyser_dummy",
         }),
         ["CCC", "DED", "CCC"],
         {

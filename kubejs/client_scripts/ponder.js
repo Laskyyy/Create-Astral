@@ -301,3 +301,16 @@ onEvent("ponder.registry", (event) => {
             }
         );
 });
+
+// Registers overrides to show correct ponders
+onEvent("ponder.override", (event) => {
+    /** @type {ItemStackJS} */
+    const item = event.getItem();
+
+    // Custom machines are based on _dummy blocks, where the actual ponders are registered
+    /** @type {`createastral:${string}`} */
+    const machineId = item.nbt.machine;
+    if (machineId) {
+        event.override(`${machineId}_dummy`);
+    }
+});

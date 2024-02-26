@@ -30,6 +30,13 @@ declare function onEvent(name: "tags.height_provider_type", handler: (event: Int
 declare function onEvent(name: "tags.worldgen.material_condition", handler: (event: Internal.TagEventJS<any>) => void);
 /**
  * 
+ * The event fires on: **startup**, **server**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "entity.spawned", handler: (event: Internal.EntitySpawnedEventJS) => void);
+/**
+ * 
  * The event fires on: **server**.
  * 
  * The event is cancellable.
@@ -84,6 +91,13 @@ declare function onEvent(name: "client.tick", handler: (event: Internal.ClientTi
  * The event is cancellable.
 */
 declare function onEvent(name: "ftbquests.custom_task.61A8A86AFF580100", handler: (event: Internal.CustomTaskEventJS) => void);
+/**
+ * 
+ * The event fires on: **startup**, **server**, **client**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "entity.death", handler: (event: Internal.LivingEntityDeathEventJS) => void);
 /**
  * 
  * The event fires on: **startup**.
@@ -391,6 +405,13 @@ declare function onEvent(name: "block.modification", handler: (event: Internal.B
  * 
  * The event is **not** cancellable.
 */
+declare function onEvent(name: "player.inventory.changed", handler: (event: Internal.InventoryChangedEventJS) => void);
+/**
+ * 
+ * The event fires on: **startup**, **server**.
+ * 
+ * The event is **not** cancellable.
+*/
 declare function onEvent(name: "gift.loot_tables", handler: (event: Internal.GiftLootEventJS) => void);
 /**
  * 
@@ -497,6 +518,13 @@ declare function onEvent(name: "tags.processor_type", handler: (event: Internal.
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "tags.ingredient_deserializers", handler: (event: Internal.TagEventJS<any>) => void);
+/**
+ * 
+ * The event fires on: **startup**, **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "ponder.override", handler: (event: Internal.PonderOverrideEventJS) => void);
 /**
  * 
  * The event fires on: **startup**, **client**.
@@ -665,6 +693,13 @@ declare function onEvent(name: "tags.worldgen.configured_structure_feature", han
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "tags.block_predicate_type", handler: (event: Internal.TagEventJS<any>) => void);
+/**
+ * 
+ * The event fires on: **startup**, **server**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "entity.hurt", handler: (event: Internal.LivingEntityHurtEventJS) => void);
 /**
  * 
  * The event fires on: **startup**.
@@ -910,6 +945,13 @@ declare function onEvent(name: "tags.worldgen.structure_set", handler: (event: I
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "tags.worldgen.tree_decorator_type", handler: (event: Internal.TagEventJS<any>) => void);
+/**
+ * 
+ * The event fires on: **startup**, **server**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "entity.check_spawn", handler: (event: Internal.CheckLivingEntitySpawnEventJS) => void);
 /**
  * 
  * The event fires on: **startup**, **server**.
