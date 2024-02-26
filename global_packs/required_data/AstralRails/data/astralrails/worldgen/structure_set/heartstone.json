@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "astralrails:heartstone_start",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"spacing": 25,
+		"separation": 12,
+		"salt": 352562764
+	}
+}
