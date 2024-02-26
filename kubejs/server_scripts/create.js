@@ -1936,12 +1936,6 @@ function mixingRecipes(event) {
             time: 400,
         },
         {
-            output: Fluid.of("kubejs:shimmer", 500 * mB),
-            input: ["5x minecraft:amethyst_shard", "2x minecraft:glow_ink_sac"],
-            heat: "",
-            time: 400,
-        },
-        {
             output: "minecraft:glow_ink_sac",
             input: ["minecraft:ink_sac", "2x minecraft:glowstone_dust"],
             heat: "",
