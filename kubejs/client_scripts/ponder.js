@@ -4,12 +4,7 @@ onEvent("ponder.tag", (event) => {
         "createastral:astral_singularity",
         "Create: Astral",
         "Some helpful tips",
-        [
-            Item.of("custommachinery:custom_machine_item", {
-                machine: "createastral:electrolyser",
-            }),
-            "createastral:shimmering_stone",
-        ]
+        ["createastral:electrolyser_dummy", "createastral:shimmering_stone"]
     );
     event.createTag(
         "kubejs:tconstruct",
@@ -26,11 +21,7 @@ onEvent("ponder.tag", (event) => {
 
 onEvent("ponder.registry", (event) => {
     event
-        .create(
-            Item.of("custommachinery:custom_machine_item", {
-                machine: "createastral:electrolyser",
-            })
-        )
+        .create("createastral:electrolyser_dummy")
         .scene(
             "electrolyser",
             "How to create the electrolyser multiblock",
