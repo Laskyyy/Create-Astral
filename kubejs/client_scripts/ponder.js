@@ -20,6 +20,19 @@ onEvent("ponder.tag", (event) => {
 });
 
 onEvent("ponder.registry", (event) => {
+    // Registers a ponder to the custom machine block, so create offers to ponder
+    // This should never actually be played, as the ponder should be overwritten
+    // using NBT Ponders
+    event
+        .create("custommachinery:custom_machine_item")
+        .scene(
+            "custom_machine_item",
+            "You shouldn't see this ponder, it's a debug thing.",
+            "kubejs:electrolyser",
+            (scene, util) => {}
+        );
+
+    // The following are the actually relevant ponders
     event
         .create("createastral:electrolyser_dummy")
         .scene(
@@ -27,9 +40,9 @@ onEvent("ponder.registry", (event) => {
             "How to create the electrolyser multiblock",
             "kubejs:electrolyser",
             (scene, util) => {
-                let electrolyserPos = [2, 2, 1];
-                let electrolyserPos2 = [2, 3, 1];
-                let multiblockRange = [
+                const electrolyserPos = [2, 2, 1];
+                const electrolyserPos2 = [2, 3, 1];
+                const multiblockRange = [
                     [1, 2, 1],
                     [3, 4, 3],
                 ];
