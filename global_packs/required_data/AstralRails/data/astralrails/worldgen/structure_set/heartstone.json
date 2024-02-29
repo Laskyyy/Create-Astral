@@ -1,7 +1,7 @@
 {
 	"structures": [
 		{
-			"structure": "astralrails:heartstone_start",
+			"structure": "astralrails:heartstone",
 			"weight": 1
 		}
 	],
