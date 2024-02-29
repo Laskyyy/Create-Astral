@@ -9,3 +9,4 @@ reload.bat
 *.mrpack
 *.code-workspace
 kubejs/assets/kubejs/probe
+kubejs/probe
