@@ -30,7 +30,7 @@ hash = "f29918f5310fcda05a880cc0f9b8a05f14eb66cabee5708cdd13109313878143"
 
 [[files]]
 file = "config/appliedenergistics2/common.json"
-hash = "d233bc8dda94635e4cf0d67b4619a87044cd9e423174739a064c4358682fc2b4"
+hash = "bb9b3ebe919016b38554f78bc8796a158d7f3f36a81cbb3108c11edf5d06a44f"
 
 [[files]]
 file = "config/bettercombat/client.conf"
@@ -1369,6 +1369,26 @@ file = "global_packs/required_data/AstralRails/data/astralrails/structures/dogst
 hash = "f73004bd62887e908573cb900a39d66a1d98798652e136cff8e9e841a414555b"
 
 [[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/heartstone/drill.nbt"
+hash = "d29cb34734510f4aa0cc53824d42f2b25bafd5d275145ab1c93faa696a1eeb93"
+
+[[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/heartstone/heartstone_depth.nbt"
+hash = "86a728b04b9180236b9b22ff74ab87d7db6a932b8a57557ee56ac85710c8723c"
+
+[[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/heartstone/heartstone_start.nbt"
+hash = "e847aa1d4229c1228dbc2de87a04bea1ea34f870ff30a8326f51ab556bc4d137"
+
+[[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/heartstone/parent.nbt"
+hash = "1dee77e668865075e947a9954be8ced761007ffc3d431b1ec3a461e47146f83f"
+
+[[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/heartstone/sub.nbt"
+hash = "1d39fed06f2bff98017c612a93b34d678d785cdb81e85dbffbd072eafeef7878"
+
+[[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/structures/mine/dungeon/dungeon_prop1.nbt"
 hash = "64b0a4814618f3dda97fe725ea36c781a9a15f0ca492bf0556ff081c28284dcd"
 
@@ -2101,6 +2121,10 @@ file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/configu
 hash = "be498d89c7896af8f8e0a475c19754b0fae6234c6cea7d6e113c024b4bd427e8"
 
 [[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/configured_structure_feature/heartstone.json"
+hash = "9660e666faf50ee86f64af589623e74f64843439c4c295b868b075696b418394"
+
+[[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/configured_structure_feature/mars/mars_bastion.json"
 hash = "a158bca78695ff6de9a75562b12ab7abc0326f6006b27981b9cb8f69663662da"
 
@@ -2345,6 +2369,10 @@ file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/structu
 hash = "53e25936888a1c26711049318d7fdca3c6ee40685666bbfa5c39008992b330d7"
 
 [[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/structure_set/heartstone.json"
+hash = "980578438a7ebf58d99b9529b1e8649b9d5d154dc54821124dec8e65a0db6617"
+
+[[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/structure_set/mars_bastion.json"
 hash = "438988bacc4cf3b1bb9c3f5a6e4a70256e33fd5786ec0d9b5fb432f244b5f1c9"
 
@@ -2435,6 +2463,30 @@ hash = "1f0fb69e07cfd5054dc84bf122a28c073572fe88c8843cf7cf52fc86072a2e5c"
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/dogstatues/dogstatues.json"
 hash = "a2db50f9fc8c60d4b435a6a1256041a1ca683a73989f36b5145ba76e9116cdd5"
+
+[[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/heartstone/heartstone_depth.json"
+hash = "92f69080efba7275e806d951f05a198bcfad42946d4982bacfc36064bad98a49"
+
+[[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/heartstone/heartstone_drill.json"
+hash = "b8301bfa4ba04fcaac946f371fdcc1e68d3d16e074485c3b2393fbd0f030f131"
+
+[[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/heartstone/heartstone_main.json"
+hash = "9e0c16e99cca7336c94999ee88cce23efe119111948cb4349dda7cdb810b6237"
+
+[[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/heartstone/heartstone_start.json"
+hash = "36d9c0e12bf19e51f1793c5e92474046451c35b5d43c63b8ade74ab908d10605"
+
+[[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/heartstone/heartstone_step_2.json"
+hash = "a6ae43de346083a74acda5cb98e22145e21be97fb378b8119cd35549102d8559"
+
+[[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/heartstone/heartstone_sub.json"
+hash = "a6ae43de346083a74acda5cb98e22145e21be97fb378b8119cd35549102d8559"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/mars/bastion.json"
@@ -2702,7 +2754,7 @@ hash = "8eaac8a8712e7d23637291000edb8cf03b5dcc98bc94d48913f48f3d074067f6"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/shimmer_lakes/shimmer_lakes_start.json"
-hash = "a5972994a5e7613d96e1766b81b7eb0c1157595a17ed8f1ba60ed47e37eaf66a"
+hash = "54c9c731ad52324af7a534bd755b530346a3e107e6f0fde4b3a01a5bd5d0b654"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/unique/well.json"
@@ -12829,64 +12881,20 @@ file = "kubejs/jsconfig.json"
 hash = "82dbdb416bc14a9ac3e577579f13298b7fa563efb3c0118ff8e35d179e780f6d"
 
 [[files]]
-file = "kubejs/probe/cache/cachedEvents.json"
-hash = "4b121d45756d77f4b46f49194e7f816a28217a4e8366737dcf1986a3ea5ea7d3"
-
-[[files]]
-file = "kubejs/probe/cache/cachedForgedEvents.json"
-hash = "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
-
-[[files]]
-file = "kubejs/probe/cache/cachedJava.json"
-hash = "186f9bfa444d0f89752ef6a8a342d32ba147e706855024866208a052054db26d"
-
-[[files]]
-file = "kubejs/probe/cache/javaClasses.json"
-hash = "6d0756612f99b636e70fa46649818033ac9bb2acb8247ca3f6aa1927a42cd92e"
-
-[[files]]
-file = "kubejs/probe/cache/mergedClasses.json"
-hash = "872e58a2dac1ae748464fd034067d5f513125746b7dbea31bc535ca5f0e5555f"
-
-[[files]]
-file = "kubejs/probe/generated/constants.d.ts"
-hash = "c2d3a3db89c8a089cbb9561c126e521f09d3839bf4249adda7a2cc0951d9661b"
-
-[[files]]
-file = "kubejs/probe/generated/events.d.ts"
-hash = "0cd64ba857292057e580159489e21cad26699afe6f225897bc51353d1ae106ff"
-
-[[files]]
-file = "kubejs/probe/generated/globals.d.ts"
-hash = "f0e947c36a4a29a65be7859e15c43f53b2a2bcb7bd0ebddfa29bc571647c407c"
-
-[[files]]
-file = "kubejs/probe/generated/java.d.ts"
-hash = "d6e0dd81d1cc1be42c4def590b2973e232272ef0b138813723fa480f6be9d963"
-
-[[files]]
-file = "kubejs/probe/generated/names.d.ts"
-hash = "5df69e07e57726190c1585189a028a42420c20165258d3f5f82e2c5021571815"
-
-[[files]]
-file = "kubejs/probe/generated/raw.d.ts"
-hash = "59f0d77407f02b8dc4122eb49848e932c40ab32654d208f6bd331cafb75bf712"
-
-[[files]]
-file = "kubejs/probe/generated/registries.d.ts"
-hash = "600e9487bf0c2fc2e812ae99b9145363720cb9fc53e4d9356eb4ccf902eb1749"
-
-[[files]]
 file = "kubejs/server_scripts/Bloodyfile.js"
-hash = "2d724543b830da6ee8634e760faf96d7c161fc19c0b93c1ca786689426be921c"
+hash = "7936a3fb149726799bcf20425fe3d66e71feb3287e77f9e7a8148f61db7389b7"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
-hash = "5476a6b64c91f6693568b86e757081d17828f563f6d71b9c27d9a05924e552ff"
+hash = "359cc6d2c35857676080e173f8786e247f188e649f68aeb31f0df4eb9a711b55"
 
 [[files]]
 file = "kubejs/server_scripts/createaddons.js"
 hash = "7436e8515c54588076cbacffcef4ab83c46049b2c66b0dca3c17d3d0f9519f63"
+
+[[files]]
+file = "kubejs/server_scripts/deathofinfinity.js"
+hash = "b2bd32bdf230f5ae293dd0e5c21f69c8e36fd75d153f3912f12242695fcb301e"
 
 [[files]]
 file = "kubejs/server_scripts/enchantment.js"
@@ -12897,12 +12905,20 @@ file = "kubejs/server_scripts/farmerscompat.js"
 hash = "df6986836953fb130d0254bf7145a02939981d499538c8060578a8190904ee0f"
 
 [[files]]
+file = "kubejs/server_scripts/industrial_grinder.js"
+hash = "9f4b3bfeaace374727e95b85244d15436933fde0a6eec876484546a2f34895a0"
+
+[[files]]
+file = "kubejs/server_scripts/packing.js"
+hash = "1becce5642c6ca74f664127d62e3039cec9ac69a95b0e0f650113cd6fb56d393"
+
+[[files]]
 file = "kubejs/server_scripts/plates.js"
 hash = "c11c7f396d112862b5564592d20d5620c29140756af682de3a2630261d20edea"
 
 [[files]]
 file = "kubejs/server_scripts/removals.js"
-hash = "422d550dc71d4b1152d1fbe1991ca5cd685dcc4dee61b5f6c863a64a5771cb21"
+hash = "07286c53758ed6d793480897b319776e257e512b2d5da3b2c581c90b90ec8278"
 
 [[files]]
 file = "kubejs/server_scripts/replacements.js"
@@ -12913,6 +12929,10 @@ file = "kubejs/server_scripts/resourcegen.js"
 hash = "ecf602f323b44660a58d96c73515796617724ac4d5d93ddd5aa3b3db5b9f28da"
 
 [[files]]
+file = "kubejs/server_scripts/sawing.js"
+hash = "b14d492175c12c237a35159c6621010426d5249fd9720b100ac2e73d8d35fb7b"
+
+[[files]]
 file = "kubejs/server_scripts/server.js"
 hash = "e5bcc56fcb0095cb4c631395ba5f9d1cf54f4bafd41ea4118ec5f5356735feab"
 
@@ -12921,12 +12941,16 @@ file = "kubejs/server_scripts/tags/graveReplaceBlacklist.js"
 hash = "07676553fd185f36751e60f165ca6d480d0de01e6c27c6935338152cfc85669c"
 
 [[files]]
+file = "kubejs/server_scripts/tags/logs.js"
+hash = "3d0d14d9f4dc930b87c4a49be8411c63b9a6e871acef359b8d5aec0098bb310a"
+
+[[files]]
 file = "kubejs/server_scripts/tconstruct.js"
-hash = "ab902fed95e4bee98c5e58e1689fe47ebe90930e4e0cca1544bcf66250bfdadf"
+hash = "26f232f1e48ea63ba6aa33307c17ef7303078dbc1b73a8464c3d8730afb2c74c"
 
 [[files]]
 file = "kubejs/server_scripts/techreborn.js"
-hash = "6dd22db3f5c85befcd9cf676da52c7cd0005d5ceee182fa110262d04426d8c69"
+hash = "5ef31fab19861f2ca7a2bf1aadb773b8a0564b03f90da373d770d324aabdb65b"
 
 [[files]]
 file = "kubejs/server_scripts/vinery.js"
@@ -12934,7 +12958,7 @@ hash = "250a99e5b7bbe32d095ff746c1ea1c9e7d0577788c79c48c65f83fe634481b58"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
-hash = "02b019228698aab6ca9095113afdbd95572581d0e1977454b5d2495ad3881b65"
+hash = "c0442583b14994eaf97fb423480bab4a45433d98d2a5186a732cbe95a0ac153e"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
@@ -30453,7 +30477,7 @@ hash = "9bbef49cbe4eb132552b2f1d5347a66a824178c5b21d018eb0e2813a672ac54f"
 
 [[files]]
 file = "resources/techreborn/lang/en_us.json"
-hash = "09d2e9155b5b3c18652bcad2177db405be1e25662105b1f01fbb02ce2dde8bbc"
+hash = "82315943d7ec78f724f3418882aa958ccd40780774fe3da87ca2e500c7e50a91"
 
 [[files]]
 file = "resources/techreborn/lang/fr_fr.json"

@@ -46,6 +46,12 @@ onEvent("recipes", (event) => {
             cooling_time: 80,
             cast: ["minecraft:vine", true],
         },
+        {
+            fluid: ["kubejs:supercooled_water", BUCKET],
+            result: "minecraft:ice",
+            cooling_time: 10,
+            cast: null,
+        },
     ].forEach((recipe) => {
         event.custom({
             type: "tconstruct:casting_basin",
