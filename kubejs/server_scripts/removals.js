@@ -430,7 +430,19 @@ onEvent("recipes", (event) => {
         { output: "tconstruct:efln_ball" },
         { output: "tconstruct:piggy_backpack" },
 
+
+        //horse armor
+
+        { output: "minecraft:leather_horse_armor"},
+        { type: "tconstruct:melting", input: "minecraft:iron_horse_armor"},
+        { type: "tconstruct:melting", input: "minecraft:golden_horse_armor"},
+        { type: "tconstruct:melting", input: "minecraft:diamond_horse_armor"},
+
+
         // Miscellaneous
+        { output: "minecraft:shroomlight" },
+
+        { output: "chipped:mechanist_workbench" },
 
         { output: "passivepiglins:piglin_fortune" },
         { output: "passivepiglins:piglin_totem" },

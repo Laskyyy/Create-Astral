@@ -1,0 +1,10 @@
+{
+    "type": "tconstruct:casting_basin",
+
+    "fluid": {
+      "name": "tconstruct:mushroom_stew",
+      "amount": 54000
+    },
+    "result": "minecraft:mushroom_stem",
+    "cooling_time": 25
+  }
