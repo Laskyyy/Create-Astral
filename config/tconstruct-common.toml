@@ -122,7 +122,7 @@
 		#If true, ichor geodes generate high in the nether. Strongly encouraged to keep enabled even if you disable the other geodes, as ichor crystals have some unique recipes and the fallbacks kinda suck for gameplay.
 		ichor = false
 		#If true, enderslime geodes generate as additional islands in the end
-		ender = true
+		ender = false
 
 #Features to use in debugging gameplay and mechanics, generally should not be enabled in packs
 [debug]

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "astralrails:moon/powerplant",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 10298350,
+    "spacing": 60,
+    "separation": 10,
+    "type": "minecraft:random_spread"
+  }
+}

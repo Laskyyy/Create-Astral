@@ -1,6 +1,0 @@
-{
-  "parent": "computercraft:block/full_modem",
-  "textures": {
-    "side": "computercraft:block/full_wired_modem_face"
-  }
-}

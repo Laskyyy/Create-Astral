@@ -1,6 +1,6 @@
 name = "Better Advancements"
 filename = "BetterAdvancements-Fabric-1.18.2-0.2.0.146.jar"
-side = "both"
+side = "client"
 
 [download]
 mode = "metadata:curseforge"

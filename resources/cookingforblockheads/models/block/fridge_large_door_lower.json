@@ -1,0 +1,112 @@
+{
+    "credit": "Made with Blockbench",
+    "textures": {
+        "fridge_side": "cookingforblockheads:block/fridge_side",
+        "particle": "cookingforblockheads:block/fridge_side"
+    },
+    "elements": [
+        {
+            "name": "Door_Main",
+            "from": [1, 4, 1],
+            "to": [15, 16, 2],
+            "faces": {
+                "north": {
+                    "uv": [1, 5, 15, 16],
+                    "texture": "#fridge_side",
+                    "tintindex": 0
+                },
+                "east": {
+                    "uv": [1, 5, 2, 16],
+                    "texture": "#fridge_side",
+                    "tintindex": 0
+                },
+                "south": {
+                    "uv": [1, 5, 15, 16],
+                    "texture": "#fridge_side",
+                    "tintindex": 0
+                },
+                "west": {
+                    "uv": [1, 5, 2, 16],
+                    "texture": "#fridge_side",
+                    "tintindex": 0
+                },
+                "up": {
+                    "uv": [1, 1, 15, 2],
+                    "texture": "#fridge_side",
+                    "tintindex": 0
+                },
+                "down": {
+                    "uv": [1, 1, 15, 2],
+                    "texture": "#fridge_side",
+                    "tintindex": 0
+                }
+            }
+        },
+        {
+            "name": "Door_Main",
+            "from": [1, 0, 1],
+            "to": [15, 4, 2],
+            "faces": {
+                "north": {
+                    "uv": [1, 1, 15, 5],
+                    "rotation": 180,
+                    "texture": "#fridge_side",
+                    "tintindex": 0
+                },
+                "east": {
+                    "uv": [14, 1, 15, 5],
+                    "rotation": 180,
+                    "texture": "#fridge_side",
+                    "tintindex": 0
+                },
+                "south": {
+                    "uv": [1, 1, 15, 5],
+                    "rotation": 180,
+                    "texture": "#fridge_side",
+                    "tintindex": 0
+                },
+                "west": {
+                    "uv": [1, 1, 2, 5],
+                    "rotation": 180,
+                    "texture": "#fridge_side",
+                    "tintindex": 0
+                },
+                "up": {
+                    "uv": [1, 1, 15, 2],
+                    "texture": "#fridge_side",
+                    "tintindex": 0
+                },
+                "down": {
+                    "uv": [1, 1, 15, 2],
+                    "texture": "#fridge_side",
+                    "tintindex": 0
+                }
+            }
+        },
+        {
+            "name": "Door_Handle",
+            "from": [2, 9, 0],
+            "to": [4, 16, 1],
+            "faces": {
+                "north": {
+                    "uv": [7, 1, 15, 3],
+                    "rotation": 90,
+                    "texture": "#fridge_side"
+                },
+                "east": { "uv": [3, 1, 4, 3], "texture": "#fridge_side" },
+                "west": { "uv": [3, 1, 4, 3], "texture": "#fridge_side" },
+                "up": { "uv": [3, 1, 4, 2], "texture": "#fridge_side" },
+                "down": { "uv": [3, 1, 4, 2], "texture": "#fridge_side" }
+            }
+        }
+    ],
+    "display": {},
+    "groups": [
+        {
+            "name": "fridge_large_door_lower",
+            "origin": [8, 8, 8],
+            "color": 0,
+            "children": [0, 1, 2]
+        }
+    ]
+}

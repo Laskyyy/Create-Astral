@@ -1,13 +1,13 @@
 name = "Roughly Enough Items"
-filename = "RoughlyEnoughItems-8.3.588.jar"
+filename = "RoughlyEnoughItems-8.3.618.jar"
 side = "both"
 
 [download]
 mode = "metadata:curseforge"
 hash-format = "sha1"
-hash = "299bcc4a9fe9e0d13586fbba2e3171bfd5f94bc3"
+hash = "d29edfcc3b77459fd19aa006168171b351e6b6ea"
 
 [update]
 [update.curseforge]
-file-id = 4369033
+file-id = 4573171
 project-id = 310111
