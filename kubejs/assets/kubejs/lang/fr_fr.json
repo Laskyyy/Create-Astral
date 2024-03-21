@@ -1,0 +1,11 @@
+{
+    ///// NOM DES FLUIDES ICI /////
+    "fluid.kubejs.molten_calorite" : "Calorite fondue",
+    "fluid.kubejs.molten_ostrum" : "Ostrum fondu",
+    "fluid.kubejs.molten_desh" : "Desh fondu",
+    "fluid.kubejs.plasma_fluid" : "Fluide plasma quark-gluon",
+    "fluid.kubejs.hellfire" : "Feu de l'enfer",
+    "fluid.kubejs.compound_mixture" : "Mélange de composés",
+    "fluid.kubejs.shimmer" : "Shimmer",
+    "fluid.kubejs.blast-resistant_cement" : "Ciment résistant aux explosions"
+}

@@ -4,23 +4,7 @@ onEvent("recipes", (event) => {
 
     //Tech Reborn
     [
-        { output: "techreborn:chunk_loader" },
-        { output: "ae2:spatial_anchor" },
-        { output: "techreborn:industrial_electrolyzer" },
-        { output: "techreborn:industrial_sawmill" },
-        { output: "techreborn:vacuum_freezer" },
-        { output: "techreborn:solid_canning_machine" },
-        { output: "techreborn:greenhouse_controller" },
-        { output: "techreborn:industrial_centrifuge" },
-        { output: "techreborn:electric_furnace" },
-        { output: "techreborn:distillation_tower" },
-        { output: "techreborn:chemical_reactor" },
-        { output: "techreborn:auto_crafting_table" },
-        { output: "techreborn:alloy_smelter" },
-        { output: "techreborn:extractor" },
-        { output: "createendertransmission:chunk_loader" },
-        { input: "techreborn:sponge_piece" },
-        { output: "techreborn:sponge_piece" },
+        { output: "techreborn:compressed_plantball" },
         { output: "techreborn:compressed_plantball" },
         { output: "techreborn:plantball" },
         { output: "techreborn:grinder" },
@@ -32,9 +16,62 @@ onEvent("recipes", (event) => {
         { output: "techreborn:iron_plate" },
         { output: "techreborn:steel_ingot" },
         { output: "techreborn:steel_block" },
-        { output: "techreborn:steel_plate" },
         { output: "techreborn:bronze_block" },
-        { output: "techreborn:ender_pearl_dust" },
+        { output: "techreborn:copper_helmet" },
+        { output: "techreborn:copper_chestplate" },
+        { output: "techreborn:copper_leggings" },
+        { output: "techreborn:copper_boots" },
+        { output: "techreborn:copper_nugget" },
+        { output: "techreborn:copper_axe" },
+        { output: "techreborn:copper_sword" },
+        { output: "techreborn:copper_pickaxe" },
+        { output: "techreborn:copper_hoe" },
+        { output: "techreborn:copper_shovel" },
+        { output: "techreborn:tin_helmet" },
+        { output: "techreborn:tin_chestplate" },
+        { output: "techreborn:tin_leggings" },
+        { output: "techreborn:tin_boots" },
+        { output: "techreborn:tin_axe" },
+        { output: "techreborn:tin_sword" },
+        { output: "techreborn:tin_pickaxe" },
+        { output: "techreborn:tin_hoe" },
+        { output: "techreborn:tin_shovel" },
+        { output: "techreborn:lead_helmet" },
+        { output: "techreborn:lead_chestplate" },
+        { output: "techreborn:lead_leggings" },
+        { output: "techreborn:lead_boots" },
+        { output: "techreborn:lead_axe" },
+        { output: "techreborn:lead_sword" },
+        { output: "techreborn:lead_pickaxe" },
+        { output: "techreborn:lead_hoe" },
+        { output: "techreborn:lead_shovel" },
+        { output: "techreborn:steel_helmet" },
+        { output: "techreborn:steel_chestplate" },
+        { output: "techreborn:steel_leggings" },
+        { output: "techreborn:steel_boots" },
+        { output: "techreborn:steel_axe" },
+        { output: "techreborn:steel_sword" },
+        { output: "techreborn:steel_pickaxe" },
+        { output: "techreborn:steel_hoe" },
+        { output: "techreborn:steel_shovel" },
+        { output: "techreborn:bronze_helmet" },
+        { output: "techreborn:bronze_chestplate" },
+        { output: "techreborn:bronze_leggings" },
+        { output: "techreborn:bronze_boots" },
+        { output: "techreborn:bronze_axe" },
+        { output: "techreborn:bronze_sword" },
+        { output: "techreborn:bronze_pickaxe" },
+        { output: "techreborn:bronze_hoe" },
+        { output: "techreborn:bronze_shovel" },
+        { output: "techreborn:silver_helmet" },
+        { output: "techreborn:silver_chestplate" },
+        { output: "techreborn:silver_leggings" },
+        { output: "techreborn:silver_boots" },
+        { output: "techreborn:silver_axe" },
+        { output: "techreborn:silver_sword" },
+        { output: "techreborn:silver_pickaxe" },
+        { output: "techreborn:silver_hoe" },
+        { output: "techreborn:silver_shovel" },
         { output: "techreborn:electronic_circuit" },
         { output: "techreborn:industrial_circuit" },
         { output: "techreborn:energy_flow_chip" },
@@ -48,6 +85,97 @@ onEvent("recipes", (event) => {
         { output: "techreborn:refined_iron_ingot" },
         { output: "techreborn:fusion_coil" },
         { output: "techreborn:carbon_mesh" },
+        { output: "techreborn:scrap_box" },
+        { output: "techreborn:refined_iron_plate" },
+        { output: "techreborn:refined_iron_ingot" },
+        { output: "techreborn:refined_iron_storage_block" },
+        { output: "techreborn:refined_iron_storage_block_stairs" },
+        { output: "techreborn:refined_iron_storage_block_slab" },
+        { output: "techreborn:refined_iron_storage_block_wall" },
+        { output: "techreborn:refined_iron_dust" },
+        { output: "techreborn:refined_iron_small_dust" },
+        { output: "techreborn:refined_iron_nugget" },
+        { output: "techreborn:bronze_plate" },
+        { output: "techreborn:bronze_ingot" },
+        { output: "techreborn:bronze_storage_block" },
+        { output: "techreborn:bronze_storage_block_stairs" },
+        { output: "techreborn:bronze_storage_block_slab" },
+        { output: "techreborn:bronze_storage_block_wall" },
+        { output: "techreborn:bronze_dust" },
+        { output: "techreborn:bronze_small_dust" },
+        { output: "techreborn:bronze_nugget" },
+        { output: "techreborn:aluminum_plate" },
+        { output: "techreborn:aluminum_ingot" },
+        { output: "techreborn:aluminum_storage_block" },
+        { output: "techreborn:aluminum_storage_block_stairs" },
+        { output: "techreborn:aluminum_storage_block_slab" },
+        { output: "techreborn:aluminum_storage_block_wall" },
+        { output: "techreborn:aluminum_dust" },
+        { output: "techreborn:aluminum_small_dust" },
+        { output: "techreborn:aluminum_nugget" },
+        { output: "techreborn:tungsten_plate" },
+        { output: "techreborn:tungsten_ingot" },
+        { output: "techreborn:tungsten_storage_block" },
+        { output: "techreborn:tungsten_storage_block_stairs" },
+        { output: "techreborn:tungsten_storage_block_slab" },
+        { output: "techreborn:tungsten_storage_block_wall" },
+        { output: "techreborn:tungsten_dust" },
+        { output: "techreborn:tungsten_small_dust" },
+        { output: "techreborn:tungsten_nugget" },
+        { output: "techreborn:tungstensteel_plate" },
+        { output: "techreborn:tungstensteel_ingot" },
+        { output: "techreborn:tungstensteel_storage_block" },
+        { output: "techreborn:tungstensteel_storage_block_stairs" },
+        { output: "techreborn:tungstensteel_storage_block_slab" },
+        { output: "techreborn:tungstensteel_storage_block_wall" },
+        { output: "techreborn:tungstensteel_dust" },
+        { output: "techreborn:tungstensteel_small_dust" },
+        { output: "techreborn:tungstensteel_nugget" },
+        { output: "techreborn:chrome_plate" },
+        { output: "techreborn:chrome_ingot" },
+        { output: "techreborn:chrome_storage_block" },
+        { output: "techreborn:chrome_storage_block_stairs" },
+        { output: "techreborn:chrome_storage_block_slab" },
+        { output: "techreborn:chrome_storage_block_wall" },
+        { output: "techreborn:chrome_dust" },
+        { output: "techreborn:chrome_small_dust" },
+        { output: "techreborn:chrome_nugget" },
+        { output: "techreborn:titanium_plate" },
+        { output: "techreborn:titanium_ingot" },
+        { output: "techreborn:titanium_storage_block" },
+        { output: "techreborn:titanium_storage_block_stairs" },
+        { output: "techreborn:titanium_storage_block_slab" },
+        { output: "techreborn:titanium_storage_block_wall" },
+        { output: "techreborn:titanium_dust" },
+        { output: "techreborn:titanium_small_dust" },
+        { output: "techreborn:titanium_nugget" },
+        { output: "techreborn:nickel_plate" },
+        { output: "techreborn:nickel_ingot" },
+        { output: "techreborn:nickel_storage_block" },
+        { output: "techreborn:nickel_storage_block_stairs" },
+        { output: "techreborn:nickel_storage_block_slab" },
+        { output: "techreborn:nickel_storage_block_wall" },
+        { output: "techreborn:nickel_dust" },
+        { output: "techreborn:nickel_small_dust" },
+        { output: "techreborn:nickel_nugget" },
+        { output: "techreborn:brass_plate" },
+        { output: "techreborn:brass_ingot" },
+        { output: "techreborn:brass_storage_block" },
+        { output: "techreborn:brass_storage_block_stairs" },
+        { output: "techreborn:brass_storage_block_slab" },
+        { output: "techreborn:brass_storage_block_wall" },
+        { output: "techreborn:brass_dust" },
+        { output: "techreborn:brass_small_dust" },
+        { output: "techreborn:brass_nugget" },
+        { output: "techreborn:zinc_plate" },
+        { output: "techreborn:zinc_ingot" },
+        { output: "techreborn:zinc_storage_block" },
+        { output: "techreborn:zinc_storage_block_stairs" },
+        { output: "techreborn:zinc_storage_block_slab" },
+        { output: "techreborn:zinc_storage_block_wall" },
+        { output: "techreborn:zinc_dust" },
+        { output: "techreborn:zinc_small_dust" },
+        { output: "techreborn:zinc_nugget" },
         { output: "techreborn:data_storage_core" },
         { output: "techreborn:data_storage_chip" },
         { output: "techreborn:player_detector" },
@@ -57,7 +185,7 @@ onEvent("recipes", (event) => {
         { output: "techreborn:quantum_boots" },
         { output: "techreborn:copper_nugget" },
         { output: "techreborn:steel_plate" },
-        { type: "techreborn:scrapbox" },
+
         {
             type: "techreborn:grinder",
             input: "#techreborn:calcite_dust_material",
@@ -117,30 +245,20 @@ onEvent("recipes", (event) => {
             type: "minecraft:shaped",
             output: "techreborn:nak_coolant_cell_60k",
         },
-        { id: "techreborn:crafting_table/paper" },
         //Create
 
         { output: "create:blaze_cake" },
-        { output: "create:blaze_burner" },
-        { output: "create:ochrum" },
-        { output: "create:crimsite" },
-        { output: "create:limestone" },
-        { output: "create:asurine" },
-        { output: "create:veridium" },
-        { output: "create:scoria" },
-        { output: "create:scorchia" },
-        { output: "create:crushed_raw_tin" },
-        { output: "create:crushed_raw_silver" },
-        { output: "create:crushed_raw_lead" },
-        { output: "create:crushed_raw_uranium" },
+        { output: "create:crushed_tin_ore" },
+        { output: "create:crushed_silver_ore" },
+        { output: "create:crushed_lead_ore" },
+        { output: "create:crushed_uranium_ore" },
         { output: "create:electron_tube" },
         { output: "create:cogwheel", type: "minecraft:shaped" },
         { output: "create:large_cogwheel", type: "minecraft:shaped" },
         { output: "create:cogwheel" },
         { output: "create:large_cogwheel" },
-        { output: "create:experience_block" },
-        { output: "create:stockpile_switch" },
         { output: "create:copper_casing" },
+        { output: "create:blaze_cake" },
         {
             output: "create:andesite_alloy",
             input: "minecraft:andesite",
@@ -150,9 +268,6 @@ onEvent("recipes", (event) => {
         { type: "create:milling", output: "minecraft:flint" },
         { type: "create:crushing", input: "minecraft:blaze_rod" },
         { type: "create:crushing", input: "minecraft:bone" },
-        { type: "create:crushing", input: "minecraft:tuff" },
-        { type: "create:milling", input: "minecraft:tuff" },
-        { type: "create:milling", input: "minecraft:basalt" },
         { type: "create:crushing", input: "minecraft:lapis_lazuli" },
         { type: "create:crushing", input: "minecraft:diamond" },
         { type: "create:crushing", input: "minecraft:diorite" },
@@ -161,11 +276,6 @@ onEvent("recipes", (event) => {
         { type: "create:crushing", input: "create:asurine" },
         { type: "create:crushing", input: "#create:stone_types/asurine" },
         { type: "create:crushing", input: "create:veridium" },
-        { type: "create:crushing", input: "create:limestone" },
-        { type: "create:crushing", input: "create:ochrum" },
-        { type: "create:crushing", input: "create:scoria" },
-        { type: "create:crushing", input: "create:scorchia" },
-        { type: "create:crushing", input: "minecraft:cobblestone" },
         { type: "create:mixing", output: "create:brass_ingot" },
         { type: "create:crushing", input: "minecraft:netherrack" },
         { type: "create:splashing", input: "minecraft:soul_sand" },
@@ -197,19 +307,19 @@ onEvent("recipes", (event) => {
         },
         {
             input: "minecraft:raw_iron",
-            output: "create:crushed_raw_iron",
+            output: "create:crushed_iron_ore",
         },
         {
             input: "minecraft:raw_gold",
-            output: "create:crushed_raw_gold",
+            output: "create:crushed_gold_ore",
         },
         {
             input: "minecraft:raw_copper",
-            output: "create:crushed_raw_copper",
+            output: "create:crushed_copper_ore",
         },
         {
             input: "create:raw_zinc",
-            output: "create:crushed_raw_zinc",
+            output: "create:crushed_zinc_ore",
         },
         {
             output: "create:brass_casing",
@@ -242,19 +352,20 @@ onEvent("recipes", (event) => {
 
         //Createdeco sheetmetal rebalance
 
-        { output: "createdeco:copper_sheet_metal" },
-        { output: "createdeco:andesite_sheet_metal" },
-        { output: "createdeco:gold_sheet_metal" },
-        { output: "createdeco:netherite_sheet_metal" },
-        { output: "createdeco:brass_sheet_metal" },
-        { output: "createdeco:cast_iron_sheet_metal" },
-        { output: "createdeco:iron_sheet_metal" },
-        { output: "createdeco:zinc_sheet_metal" },
+        {output: "createdeco:copper_sheet_metal"},
+        {output: "createdeco:andesite_sheet_metal"},
+        {output: "createdeco:gold_sheet_metal"},
+        {output: "createdeco:netherite_sheet_metal"},
+        {output: "createdeco:brass_sheet_metal"},
+        {output: "createdeco:cast_iron_sheet_metal"},
+        {output: "createdeco:iron_sheet_metal"},
+        {output: "createdeco:zinc_sheet_metal"},
 
         // dustrial decor sheetmetal rework
 
         { output: "dustrial_decor:rusty_iron_door" },
-        { output: "dustrial_decor:rusty_sheet_metal_treading" },
+        { output: "dustrial_decor:rusty_sheet_metal_treading"},
+
 
         // Ad Astra
 
@@ -282,19 +393,15 @@ onEvent("recipes", (event) => {
         { output: "ad_astra:desh_cable" },
         { output: "ad_astra:steel_cable" },
         { output: "ad_astra:compressor" },
-        { output: "ad_astra:ostrum_ingot", type: "minecraft:smelting" },
-        { output: "ad_astra:ostrum_ingot", type: "minecraft:blasting" },
-        { output: "ad_astra:calorite_ingot", type: "minecraft:smelting" },
-        { output: "ad_astra:calorite_ingot", type: "minecraft:blasting" },
-        { output: "ad_astra:calorite_engine" },
-        { output: "ad_astra:calorite_tank" },
 
         // AE2
 
         { output: "ae2:fluix_dust" },
-        { output: "ae2:molecular_assembler" },
+        { output: "ae2:pattern_provider" },
+        { output: "ae2:blank_pattern" },
+        { output: "ae2:pattern_encoding_terminal" },
+        { output: "ae2:cable_pattern_provider" },
         { output: "ae2:inscriber" },
-        { type: "ae2:inscriber" },
         { output: "ae2:controller", type: "crafting_shaped" },
 
         // Tconstruct
@@ -340,28 +447,7 @@ onEvent("recipes", (event) => {
         { output: "passivepiglins:piglin_fortune" },
         { output: "passivepiglins:piglin_totem" },
         { output: "passivepiglins:piglin_coin" },
-        { output: "travellersbackpack:standard" },
-        { output: "campanion:sleeping_bag" },
-        { output: "travellersbackpack:white_sleeping_bag" },
-        { output: "travellersbackpack:orange_sleeping_bag" },
-        { output: "travellersbackpack:magenta_sleeping_bag" },
-        { output: "travellersbackpack:light_blue_sleeping_bag" },
-        { output: "travellersbackpack:yellow_sleeping_bag" },
-        { output: "travellersbackpack:lime_sleeping_bag" },
-        { output: "travellersbackpack:pink_sleeping_bag" },
-        { output: "travellersbackpack:gray_sleeping_bag" },
-        { output: "travellersbackpack:light_gray_sleeping_bag" },
-        { output: "travellersbackpack:cyan_sleeping_bag" },
-        { output: "travellersbackpack:purple_sleeping_bag" },
-        { output: "travellersbackpack:blue_sleeping_bag" },
-        { output: "travellersbackpack:brown_sleeping_bag" },
-        { output: "travellersbackpack:green_sleeping_bag" },
-        { output: "travellersbackpack:red_sleeping_bag" },
-        { output: "travellersbackpack:black_sleeping_bag" },
-        { output: "travellersbackpack:hose" },
-        { output: "travellersbackpack:hose_nozzle" },
-        { output: "ad_astra:ostrum_engine" },
-        { output: "dbe:server_rack" },
+
         { output: "dustrial_decor:cast_iron_billet" },
 
         { output: "mcdw:pick_diamond_pickaxe_var" },
@@ -370,7 +456,6 @@ onEvent("recipes", (event) => {
         { output: "automobility:auto_mechanic_table" },
         { output: "automobility:automobile_assembler" },
         { type: "automobility:automobile_assembler" },
-        { type: "ad_astra:fuel_conversion" },
 
         { output: "campanion:grappling_hook" },
         { output: "campanion:mre" },
@@ -389,7 +474,6 @@ onEvent("recipes", (event) => {
         { output: "phonos:redstone_chip" },
 
         { mod: "doodads" },
-        { mod: "extended_drawers" },
         { output: "doodads:slimey_shoes" },
 
         { mod: "createsifter" },
@@ -407,7 +491,10 @@ onEvent("recipes", (event) => {
         { output: "immersive_aircraft:engine" },
         { output: "immersive_aircraft:nether_engine" },
         { output: "immersive_aircraft:industrial_gears" },
+        { output: "immersive_aircraft:eco_engine" },
         { output: "immersive_aircraft:large_propeller" },
+        { output: "immersive_aircraft:enhanced_propeller" },
+        { output: "immersive_aircraft:improved_landing_gear" },
         { output: "immersive_aircraft:airship" },
         { output: "immersive_aircraft:gyrodyne" },
         { output: "immersive_aircraft:biplane" },
@@ -422,26 +509,6 @@ onEvent("recipes", (event) => {
         { output: "computercraft:pocket_computer_advanced" },
 
         { mod: "camsbackpacks", input: "minecraft:chest" },
-
-        { output: "buildinggadgets:gadget_building" },
-        { output: "buildinggadgets:gadget_copy_paste" },
-
-        // Yttr
-        { output: "yttr:chute" },
-        { output: "yttr:rafter" },
-        { output: "yttr:centrifuge" },
-        { output: "yttr:dopper" },
-        { output: "yttr:aware_hopper" },
-        { output: "yttr:levitation_chamber" },
-        { output: "yttr:skeletal_sorter_right_handed" },
-        { output: "yttr:skeletal_sorter_left_handed" },
-        { output: "yttr:rifle_reinforced" },
-        { output: "yttr:rifle_overclocked" },
-        { output: "yttr:shifter" },
-        { output: "yttr:projector" },
-        { output: "yttr:spatula" },
-        { output: "yttr:bedrock_smasher" },
-        { output: "yttr:effector" },
 
         // Minecraft
 
@@ -490,14 +557,7 @@ onEvent("recipes", (event) => {
         { output: "minecraft:bow" },
         { output: "minecraft:crossbow" },
         { output: "minecraft:arrow" },
-        { output: "minecraft:shulker_shell" },
         { output: "minecraft:ender_eye" },
-        { output: "minecraft:diamond_ore" },
-        { output: "minecraft:emerald_ore" },
-        { output: "minecraft:blackstone" },
-        { output: "minecraft:gold_nugget", input: "minecraft:soul_sand" },
-        { output: "minecraft:gravel", input: "techreborn:granite_dust" },
-        { output: "minecraft:gold_nugget", input: "minecraft:soul_soil" },
         { input: "minecraft:crying_obsidian" },
         {
             input: "minecraft:copper_block",
@@ -505,80 +565,9 @@ onEvent("recipes", (event) => {
         },
 
         //dispenser recipe
-        { output: "minecraft:dispenser" },
+        {output: "minecraft:dispenser" },
+
     ].forEach((recipe) => {
         event.remove(recipe);
-    });
-
-    // YTTR Project Table
-    event.remove({ output: "yttr:project_table" });
-    const colors = [
-        "white",
-        "orange",
-        "magenta",
-        "light_blue",
-        "yellow",
-        "lime",
-        "pink",
-        "gray",
-        "light_gray",
-        "cyan",
-        "purple",
-        "blue",
-        "brown",
-        "green",
-        "red",
-        "black",
-    ];
-    colors.forEach((color) => event.remove({ output: `yttr:${color}_project_table` }));
-
-    // Define the array of materials
-    const materials = [
-        "techreborn:lead",
-        "techreborn:bronze",
-        "techreborn:steel",
-        "techreborn:tin",
-        "techreborn:copper",
-        "techreborn:steel",
-        "techreborn:silver",
-    ];
-
-    // Define a function to remove all recipes with a given material
-    function removeRecipes(material) {
-        event.remove({ output: material + "_helmet" });
-        event.remove({ output: material + "_chestplate" });
-        event.remove({ output: material + "_leggings" });
-        event.remove({ output: material + "_boots" });
-        event.remove({ output: material + "_axe" });
-        event.remove({ output: material + "_sword" });
-        event.remove({ output: material + "_pickaxe" });
-        event.remove({ output: material + "_hoe" });
-        event.remove({ output: material + "_shovel" });
-    }
-
-    const metal = [
-        "tungstensteel",
-        "chrome",
-        "titanium",
-        "nickel",
-        "refined_iron",
-        "bronze",
-        "aluminum",
-        "tungsten",
-        "platinum",
-        "brass",
-        "zinc",
-    ];
-
-    metal.forEach((metal) => {
-        event.remove({ output: `techreborn:${metal}_plate` });
-        event.remove({ output: `techreborn:${metal}_ingot` });
-        event.remove({ output: `techreborn:${metal}_storage_block` });
-        event.remove({ output: `techreborn:${metal}_storage_block_stairs` });
-        event.remove({ output: `techreborn:${metal}_storage_block_slab` });
-        event.remove({ output: `techreborn:${metal}_storage_block_wall` });
-        event.remove({ output: `techreborn:${metal}_dust` });
-        event.remove({ output: `techreborn:${metal}_small_dust` });
-        event.remove({ output: `techreborn:${metal}_nugget` });
     });
 });

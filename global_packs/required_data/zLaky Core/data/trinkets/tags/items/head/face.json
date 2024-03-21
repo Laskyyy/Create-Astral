@@ -1,0 +1,21 @@
+{
+  "replace": true,
+  "values": [
+      "doodads:ender_goggles",
+      "doodads:beaver_teeth",
+      "doodads:bendy_straw",
+      "doodads:midnights_eye",
+      "doodads:glare_plushie",
+      "doodads:blossom_belt",
+      "doodads:soggy_glove",
+      "doodads:loggers_glove",
+      "doodads:sun_ring",
+      "doodads:moon_ring",
+      "doodads:celestial_ring",
+      "doodads:cactus_ring",
+      "doodads:speed_boots",
+      "doodads:slimey_shoes",
+      "doodads:shulker_aglet",
+      "create:goggles"
+  ]
+}

@@ -58,8 +58,7 @@
       "ad_astra:mars_ice_shard_ore",
       "ad_astra:mars_iron_ore",
       "ad_astra:mars_diamond_ore",
-      "ad_astra:mars_ostrum_ore",
-      "createastral:oil_lake"
+      "ad_astra:mars_ostrum_ore"
     ],
     [
       "minecraft:large_dripstone",
@@ -68,7 +67,6 @@
 			"astralrails:mars_crimson_nylium_patch",
 			"astralrails:mars_crimson_veg",
 			"astralrails:mars_dripstone_cluster"
-      
     ]
   ]
 }

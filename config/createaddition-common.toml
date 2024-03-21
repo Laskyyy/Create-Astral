@@ -3,7 +3,7 @@
 [general]
 	#Forge Energy conversion rate (in FE/t at 256 RPM).
 	#Range: > 0
-	fe_conversion = 30
+	fe_conversion = 15
 	#Max stress for the Alternator and Electric Motor (in SU at 256 RPM).
 	#Range: > 0
 	baseline_stress = 8192
@@ -42,7 +42,7 @@
 	rolling_mill_processing_duration = 100
 	#Rolling Mill base stress impact.
 	#Range: 0 ~ 1024
-	rolling_mill_stress = 1
+	rolling_mill_stress = 16
 
 #Heater
 [heater]
@@ -65,16 +65,16 @@
 [wires]
 	#Connector max input in FE/t (Energy transfer).
 	#Range: 0 ~ 9223372036854775807
-	connector_max_input = 2048
-	#Connector max output in FE/t (Energy transfer).
-	#Range: 0 ~ 9223372036854775807
-	connector_max_output = 2048
-	#Connector internal input buffer in FE.
-	#Range: 0 ~ 9223372036854775807
-	connector_input_capacity = 8096
+	connector_max_input = 1024
 	#Max wire length in blocks.
 	#Range: 0 ~ 256
 	wire_length = 16
+	#Connector max output in FE/t (Energy transfer).
+	#Range: 0 ~ 9223372036854775807
+	connector_max_output = 32
+	#Connector internal input buffer in FE.
+	#Range: 0 ~ 9223372036854775807
+	connector_input_capacity = 128
 
 #Accumulator
 [accumulator]
@@ -83,10 +83,10 @@
 	accumulator_capacity = 400000
 	#Accumulator max output in FE/t (Energy transfer).
 	#Range: 0 ~ 2147483647
-	accumulator_max_output = 2048
+	accumulator_max_output = 512
 	#Accumulator max input in FE/t (Energy transfer).
 	#Range: 0 ~ 2147483647
-	accumulator_max_input = 2048
+	accumulator_max_input = 512
 
 #Tesla Coil
 [tesla_coil]
@@ -104,7 +104,7 @@
 	tesla_coil_capacity = 32000
 	#Energy consumed when Tesla Coil is fired (in FE).
 	#Range: > 0
-	tesla_coil_hurt_energy_required = 256
+	tesla_coil_hurt_energy_required = 1024
 	#The duration of the Shocked effect for mobs (in ticks).
 	#Range: > 0
 	tesla_coil_effect_time_mob = 20
@@ -116,7 +116,7 @@
 	tesla_coil_max_input = 8192
 	#Tesla Coil charge rate in FE/t for recipes.
 	#Range: 0 ~ 9223372036854775807
-	tesla_coil_recipe_charge_rate = 4096
+	tesla_coil_recipe_charge_rate = 1024
 	#Damaged dealt to mobs when Tesla Coil is fired (in half hearts).
 	#Range: > 0
 	tesla_coil_hurt_mob = 3
@@ -128,7 +128,7 @@
 [misc]
 	#Diamond Grit Sandpaper durability (number of uses).
 	#Range: > 3
-	diamond_grit_sandpaper_uses = 512
+	diamond_grit_sandpaper_uses = 1024
 	#The relative speed of the Furnace Engine when powered by a Crude Burner.
 	#Range: 0.0 ~ 100.0
 	crude_burner_engine_speed = 2.0

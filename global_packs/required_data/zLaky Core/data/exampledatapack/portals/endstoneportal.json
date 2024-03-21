@@ -1,0 +1,10 @@
+{
+  "block": "createastral:shimmering_stone",
+  "dim": "ad_astra:moon",
+  "ignitionType": "ITEM",
+  "ignitionSource": "createastral:astral_conduit",
+  "r": 255,
+  "g": 192,
+  "b": 255
+}
+

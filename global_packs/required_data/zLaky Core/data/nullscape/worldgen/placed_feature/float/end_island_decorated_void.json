@@ -1,0 +1,40 @@
+{
+	"feature": "nullscape:float/end_island_decorated_void",
+	"placement": [
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 25
+		},
+		{
+			"type": "minecraft:count",
+			"count": {
+				"type": "minecraft:weighted_list",
+				"distribution": [
+					{
+						"weight": 75,
+						"data": 1
+					},
+					{
+						"weight": 25,
+						"data": 2
+					}
+				]
+			}
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"min_inclusive": {
+					"above_bottom": 7
+				},
+				"max_inclusive": {
+					"below_top": 64
+				},
+				"type": "minecraft:uniform"
+			}
+		}
+	]
+}

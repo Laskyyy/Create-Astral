@@ -1,0 +1,111 @@
+{
+  "replace": true,
+"effects": {
+    "ambient_sound": "minecraft:ambient.crimson_forest.loop",
+    "mood_sound": {
+      "sound": "minecraft:ambient.crimson_forest.mood",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    },
+    "additions_sound": {
+      "sound": "minecraft:ambient.nether_wastes.additions",
+      "tick_chance": 0.0111
+    },
+    "music": {
+      "sound": "minecraft:music.nether.nether_wastes",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": false
+    },
+    "fog_color": 6835787,
+    "water_color": 4159204,
+    "water_fog_color": 4341314,
+    "sky_color": 13590016,
+    "particle": {
+      "options": {
+        "type": "minecraft:dust",
+        "r": 0.9,
+        "g": 0.6,
+        "b": 0.4,
+        "scale": 1
+      },
+      "probability": 0.004
+    }
+  },
+  "carvers": {
+    "air": [
+      "minecraft:nether_cave",
+      "incendium:big_cave"
+    ]
+  },
+  "features": [
+    [
+      "incendium:infernal_dunes/dune",
+      "minecraft:basalt_blobs",
+      "minecraft:blackstone_blobs",
+      "minecraft:patch_soul_fire",
+      "minecraft:ore_magma"
+    ],
+    [],
+    [],
+    [],
+    [
+    ],
+    [],
+    [],
+    [
+      "incendium:infernal_dunes/delta",
+      "incendium:infernal_dunes/bush",
+      "incendium:infernal_dunes/blood_vines",
+      "incendium:infernal_dunes/blood_vines_long",
+      "minecraft:spring_delta",
+      "minecraft:patch_fire",
+      "minecraft:patch_soul_fire",
+      "minecraft:glowstone_extra",
+      "minecraft:glowstone",
+      "minecraft:brown_mushroom_nether",
+      "minecraft:red_mushroom_nether",
+      "minecraft:ore_magma",
+      "minecraft:spring_closed_double",
+      "minecraft:ore_gold_nether",
+      "minecraft:ore_quartz_nether",
+      "minecraft:ore_ancient_debris_large",
+      "minecraft:ore_debris_small"
+    ]
+  ],
+  "spawners": {
+    "water_ambient": [],
+    "ambient": [],
+    "misc": [],
+    "water_creature": [],
+    "creature": [
+      {
+        "type": "minecraft:strider",
+        "weight": 60,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ],
+    "monster": [
+      {
+        "type": "minecraft:blaze",
+        "weight": 3,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "minecraft:magma_cube",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 3
+      }
+    ]
+  },
+
+  "spawn_costs": {},
+  "precipitation": "none",
+  "temperature": 2.0,
+  "downfall": 0.0,
+  "category": "nether"
+}

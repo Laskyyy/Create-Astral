@@ -1,0 +1,67 @@
+{
+	"feature": "nullscape:shadow/bone_trees1",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": {
+				"type": "minecraft:weighted_list",
+				"distribution": [
+					{
+						"weight": 100,
+						"data": 250
+					},
+					{
+						"weight": 0,
+						"data": 250
+					}
+				]
+			}
+		},
+		{
+			"type": "minecraft:count",
+			"count": 2
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"min_inclusive": {
+					"above_bottom": 0
+				},
+				"max_inclusive": {
+					"below_top": 0
+				}
+			}
+		},
+		{
+			"type": "minecraft:environment_scan",
+			"direction_of_search": "down",
+			"target_condition": {
+				"type": "minecraft:solid"
+			},
+			"allowed_search_condition": {
+				"type": "minecraft:matching_blocks",
+				"blocks": [
+					"minecraft:air"
+				]
+			},
+			"max_steps": 32
+		},
+		{
+			"type": "minecraft:noise_based_count",
+			"noise_to_count_ratio": 10,
+			"noise_factor": 226,
+			"noise_offset": 0.25
+		},
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 100
+		},
+		{
+			"type": "biome"
+		}
+	]
+}

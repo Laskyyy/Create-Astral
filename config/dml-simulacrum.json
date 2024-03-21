@@ -1,0 +1,24 @@
+{
+  "Matter_XP": {
+    "OverworldMatterXP": 10,
+    "HellishMatterXP": 14,
+    "ExtraMatterXP": 20
+  },
+  "Pristine_Chance": {
+    "BASIC": 5,
+    "ADVANCED": 11,
+    "SUPERIOR": 24,
+    "SELF_AWARE": 42
+  },
+  "Energy_Cost": {
+    "NETHER": 300,
+    "SLIMY": 160,
+    "OVERWORLD": 100,
+    "ZOMBIE": 300,
+    "SKELETON": 80,
+    "END": 512,
+    "GHOST": 372,
+    "ILLAGER": 412,
+    "OCEAN": 160
+  }
+}

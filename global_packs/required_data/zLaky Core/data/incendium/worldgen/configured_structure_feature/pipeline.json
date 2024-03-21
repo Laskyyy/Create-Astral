@@ -1,0 +1,11 @@
+{
+  "config": {
+    "start_pool": "incendium:steam/starts",
+    "size": 7
+  },
+  "biomes": "#incendium:structure/has_pipeline",
+  "adapt_noise":false,
+  "spawn_overrides": {
+  },
+  "type": "ad_astra:mars_temple"
+}

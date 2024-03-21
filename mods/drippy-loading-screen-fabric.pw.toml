@@ -1,0 +1,13 @@
+name = "Drippy Loading Screen [Fabric]"
+filename = "drippyloadingscreen_fabric_1.6.6_MC_1.18-1.18.2.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+hash-format = "sha1"
+hash = "3afb242e53b5a97e00fd4be827c83d37d3a3a22e"
+
+[update]
+[update.curseforge]
+file-id = 4125619
+project-id = 515172

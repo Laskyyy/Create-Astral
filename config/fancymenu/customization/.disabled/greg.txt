@@ -1,0 +1,396 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.class_442
+  randomgroup = 1
+  renderorder = background
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  name = greg
+  action = setbackgroundslideshow
+}
+
+customization {
+  action = setscale
+  scale = 3
+}
+
+customization {
+  baseheight = 1417
+  action = autoscale
+  basewidth = 2560
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = top-left
+  x = 102
+  action = movebutton
+  y = 220
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  width = 50
+  action = resizebutton
+  advanced_width = 197
+  height = 23
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = fancymenustuff\btn2.png
+  backgroundnormal = fancymenustuff/btn1.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:modmenu_titlescreen_mods_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:modmenu_titlescreen_mods_button%
+  orientation = mid-left
+  x = 12
+  action = movebutton
+  y = -22
+}
+
+customization {
+  identifier = %id=button_compatibility_id:modmenu_titlescreen_mods_button%
+  width = 199
+  action = resizebutton
+  height = 23
+}
+
+customization {
+  identifier = %id=button_compatibility_id:modmenu_titlescreen_mods_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = fancymenustuff\btn2.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_copyright_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_copyright_button%
+  orientation = bottom-right
+  x = -196
+  action = movebutton
+  y = -9
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_accessibility_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=376310%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = top-left
+  x = 102
+  action = movebutton
+  y = 190
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  width = 50
+  action = resizebutton
+  advanced_width = 197
+  height = 23
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = fancymenustuff\btn2.png
+  backgroundnormal = fancymenustuff/btn1.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = top-left
+  x = 102
+  action = movebutton
+  y = 250
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  width = 196
+  action = resizebutton
+  height = 23
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = fancymenustuff\btn2.png
+  backgroundnormal = fancymenustuff/btn1.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  orientation = top-left
+  x = 102
+  action = movebutton
+  y = 280
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  width = 50
+  action = resizebutton
+  advanced_width = 197
+  height = 23
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = fancymenustuff\btn2.png
+  backgroundnormal = fancymenustuff/btn1.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  orientation = top-left
+  x = 417
+  action = movebutton
+  y = 343
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundnormal = kubejs/assets/createastral/textures/item/incomplete_electronic_circuit.png
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 2
+  width = 165
+  action = deep_customization_element:title_screen_branding
+  actionid = 7017bc03-bdf0-4591-944f-81a283d41f6f1671052381852
+  y = 460
+  height = 10
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 530
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = 4f6927c0-92f5-43bb-b215-0743883fd4771671052381852
+  y = 218
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 290
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = df446cb7-de4e-44b3-9a49-c9588e3045111671052381852
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = true
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = 18eeddec-e459-45b9-b9c5-505127e4a8aa1671052381852
+  y = 0
+  height = 30
+}
+
+customization {
+  path = fancymenustuff/uwu.png
+  orientation = top-left
+  x = 99
+  width = 201
+  action = addtexture
+  actionid = 2a1cf9b0-032e-414f-8703-7f215d41ac3a1671052549036
+  y = -35
+  height = 669
+}
+
+customization {
+  orientation = bottom-left
+  enable_scrolling = false
+  shadow = true
+  scale = 1.0
+  source = Menu by iris & laky <3
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = 111
+  width = 112
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 2f5d676c-b14f-4869-96c8-28ad56590b061671053719297
+  y = -14
+  alignment = left
+  height = 14
+}
+
+customization {
+  path = 
+  orientation = top-left
+  x = 0
+  width = 0
+  action = addtexture
+  actionid = 5959024b-401f-4350-a612-b9431744ed0b1671209270930
+  y = 9
+  height = 100
+}
+
+customization {
+  path = kubejs/assets/createastral/textures/item/logos_binted.png
+  orientation = top-left
+  x = 76
+  width = 252
+  action = addtexture
+  actionid = 6f1d5000-415c-4abe-9d17-cbdaf7b417721671209302913
+  y = 34
+  height = 148
+}
+
+customization {
+  orientation = top-left
+  basecolor = c382f0
+  shadow = true
+  rotation = 0.0
+  scale = 1.0
+  refresh = true
+  bouncing = true
+  vanilla-like = true
+  x = 173
+  actionid = aaf2bdfa-c2af-4837-910c-0f0e42bca1581671209338152
+  action = addsplash
+  y = 25
+  text = hello traveler
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = kubejs/assets/createastral/textures/item/logocurse.png
+  description = Click to open our Curseforge page!
+  label = 
+  loopbackgroundanimations = true
+  hoverlabel = 
+  x = 202
+  width = 68
+  actionid = 12eb66a8-e975-4373-a879-da4ceb9b48af1671211093680
+  action = addbutton
+  y = 385
+  backgroundnormal = kubejs/assets/createastral/textures/item/logocurse.png
+  value = https://www.curseforge.com/minecraft/modpacks/create-astral
+  height = 40
+}
+
+customization {
+  orientation = bottom-left
+  enable_scrolling = false
+  shadow = true
+  scale = 1.0
+  source = v2.0.5
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = 112
+  width = 165
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 6c1c248f-5e0c-499a-a13d-4d699bbbbb7f1672495852535
+  y = -30
+  alignment = left
+  height = 23
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = kubejs/assets/createastral/textures/item/logodiscord.png
+  description = Click to join the discord!
+  label = 
+  loopbackgroundanimations = true
+  hoverlabel = 
+  x = 140
+  width = 40
+  actionid = 5adfed71-9b96-4b40-9881-a20f41c3a3c01674421038275
+  action = addbutton
+  y = 382
+  backgroundnormal = kubejs/assets/createastral/textures/item/logodiscord.png
+  value = https://discord.gg/mNeHyuZdqm
+  height = 47
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = kubejs/assets/createastral/textures/item/logomusic.png
+  description = Listen to our OST on Spotify!
+  label = 
+  loopbackgroundanimations = true
+  x = 164
+  width = 62
+  actionid = e7565dd4-2a3f-426b-bbfd-5f9f3eebe8ae1674683651999
+  action = addbutton
+  y = 311
+  backgroundnormal = kubejs/assets/createastral/textures/item/logomusic.png
+  value = https://open.spotify.com/album/3Muz68e5zWnQCbwRpIartk?si=2_-h-BLSSLmHsyXm9ZcMBg
+  height = 62
+}
+

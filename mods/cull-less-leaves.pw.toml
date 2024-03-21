@@ -1,6 +1,6 @@
 name = "Cull Less Leaves"
 filename = "CullLessLeaves-1.0.1.jar"
-side = "client"
+side = "both"
 
 [download]
 mode = "metadata:curseforge"

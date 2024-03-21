@@ -1,0 +1,75 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.class_442
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 2
+  width = 165
+  action = deep_customization_element:title_screen_branding
+  actionid = 19e94af1-9820-42f6-ba06-30a0b6c56f151669506937824
+  y = 528
+  height = 10
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 583
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = c72143f6-4c90-406c-a7ba-4e543ce2eff51669506937831
+  y = 235
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 343
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = 845652c6-c53d-48ad-8ef1-bf4655c331401669506937832
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = false
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = e34e233a-bfaf-485a-8048-0a3db472687e1669506937832
+  y = 0
+  height = 30
+}
+
+customization {
+  orientation = top-left
+  loop = true
+  audio_source:c91d628d-441c-4d28-a7a7-7e3a0d2c09201669506975439 = resources/astrallakes.ogg;EXTERNAL_LOCAL;100;1
+  channel = master
+  x = 110
+  width = 56
+  action = custom_layout_element:fancymenu_extension:audio_item
+  actionid = dc7f13cc-5f48-4f68-9c46-4b6cb7f7b3c61669506953018
+  y = 54
+  once_per_session = false
+  height = 56
+}
+

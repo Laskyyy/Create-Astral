@@ -1,0 +1,8 @@
+{
+  "replace": true,
+  "values": [
+    "ad_astra:lunar_wastelands",
+    "minecraft:basalt_deltas",
+    "incendium:toxic_heap"
+  ]
+}

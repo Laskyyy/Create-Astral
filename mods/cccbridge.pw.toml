@@ -1,13 +1,13 @@
 name = "CC:C Bridge"
-filename = "cccbridge-mc1.18.2-fabric-v1.5.0.jar"
+filename = "cccbridge-1.3.1-fabric.jar"
 side = "both"
 
 [download]
 mode = "metadata:curseforge"
 hash-format = "sha1"
-hash = "a4baae90dc0ecf09d3c31fb4956883b5250f8ec9"
+hash = "2baf5ed9dc4d6fc64b99d0554ee1222f80b7dbbf"
 
 [update]
 [update.curseforge]
-file-id = 4631726
+file-id = 4072922
 project-id = 656214

@@ -4,7 +4,7 @@
        "item": "ad_astra:ice_shard"
     },
     "output": {
-       "name": "kubejs:aurorite"
+       "name": "ad_astra:cryo_fuel"
     },
     "conversion_ratio": 0.025
  }

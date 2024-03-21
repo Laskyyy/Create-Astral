@@ -1,4 +1,9 @@
 {
-    "replace": false,
-    "values": ["minecraft:end_highlands", "minecraft:end_midlands"]
+  "replace": false,
+  "values": [
+    "minecraft:end_highlands",
+    "minecraft:end_midlands",
+    "nullscape:shadowlands",
+    "nullscape:crystal_peaks"
+  ]
 }

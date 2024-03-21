@@ -1,0 +1,61 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:piercing": 5,
+                "minecraft:quick_charge": 2,
+                "minecraft:mending": 1
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "translate": "Turns spectral arrows into",
+                  "color": "#eb783f",
+                  "italic": true
+                },
+                {
+                  "translate": "a powerful lightning attack",
+                  "color": "#eb783f",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "Incendium",
+                  "color": "#FF8000",
+                  "italic": true
+                }
+              ],
+              "replace": true
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": [
+                {
+                  "translate": "Firestorm",
+                  "color": "#ff4400",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:1450101,incendium:{item:'firestorm'},RepairCost:1000}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

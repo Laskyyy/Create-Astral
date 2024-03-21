@@ -163,7 +163,7 @@
               "add": false
             }
           ],
-          "name": "create:crushed_raw_copper"
+          "name": "create:crushed_copper_ore"
         },
         {
           "type": "minecraft:item",

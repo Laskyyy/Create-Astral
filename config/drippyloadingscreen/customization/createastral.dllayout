@@ -25,7 +25,7 @@ customization {
 }
 
 customization {
-  path = resources/createastral/textures/item/logos_binted.png
+  path = kubejs/assets/createastral/textures/item/logos_binted.png
   orientation = mid-centered
   x = 6
   width = 348

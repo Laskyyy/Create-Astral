@@ -1,0 +1,34 @@
+{
+	"feature": "nullscape:rift/cracks_start",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": 172
+		},
+		{
+			"type": "minecraft:count",
+			"count": 7
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:noise_based_count",
+			"noise_to_count_ratio": 40,
+			"noise_factor": 284,
+			"noise_offset": -0.5
+		},
+		{
+			"type": "minecraft:noise_based_count",
+			"noise_to_count_ratio": 1,
+			"noise_factor": 46,
+			"noise_offset": 0.34
+		},
+		{
+			"type": "minecraft:noise_based_count",
+			"noise_to_count_ratio": -1,
+			"noise_factor": 46,
+			"noise_offset": -0.34
+		}
+	]
+}

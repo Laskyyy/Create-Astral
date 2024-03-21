@@ -1,6 +1,6 @@
 name = "Puzzle"
 filename = "puzzle-1.4.1-1.18.jar"
-side = "client"
+side = "both"
 
 [download]
 mode = "metadata:curseforge"

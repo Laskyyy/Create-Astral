@@ -1,0 +1,68 @@
+{
+  "feature": {
+    "type": "minecraft:block_pile",
+    "config": {
+      "state_provider": {
+        "type": "minecraft:noise_provider",
+        "seed": 0,
+        "noise": {
+          "firstOctave": -4,
+          "amplitudes": [
+            1,
+            0.5,
+            1.75
+          ]
+        },
+        "scale": 1,
+        "states": [
+          {
+            "Name": "minecraft:soul_sand"
+          },
+          {
+            "Name": "minecraft:soul_soil"
+          },
+          {
+            "Name": "minecraft:slime_block"
+          },
+          {
+            "Name": "minecraft:slime_block"
+          },
+          {
+            "Name": "minecraft:slime_block"
+          },
+          {
+            "Name": "minecraft:soul_soil"
+          },
+          {
+            "Name": "minecraft:soul_sand"
+          }
+        ]
+      }
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 30
+    },
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 6,
+      "noise_factor": 100,
+      "noise_offset": 0.15
+    },
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 5,
+      "noise_factor": 25,
+      "noise_offset": 0.15
+    },
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 350
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

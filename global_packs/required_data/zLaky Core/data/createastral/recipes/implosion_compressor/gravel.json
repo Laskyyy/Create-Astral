@@ -1,0 +1,61 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "custommachinery:implosion_compressor",
+	"time": 500,
+	"requirements": [
+		{
+			"type": "custommachinery:dimension",
+			"filter": "minecraft:overworld",
+			"blacklist": true
+		},
+		{
+			"keys": {
+				"a": "indrev:frame",
+				"b": "createastral:electrum_heating_coil",
+				"c": "createastral:sturdy_sheet_block",
+				"d": "indrev:controller",
+				"e": "indrev:intake"
+			  },
+			  "pattern": [
+				[
+				  "aaa",
+				  "aaa",
+				  "ama"
+				],
+				[
+				  "bcb",
+				  "cbc",
+				  "bdb"
+				],
+				[
+				  "ccc",
+				  "cec",
+				  "ccc"
+				]
+			  ]
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "indrev:coal_dust",
+			"amount": 8,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "indrev:iron_dust",
+			"amount": 5,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:energy_per_tick",
+			"amount": 0,
+			"mode": "input"
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "ad_astra:steel_dust",
+			"amount": 1,
+			"mode": "output"
+		}
+	]
+}

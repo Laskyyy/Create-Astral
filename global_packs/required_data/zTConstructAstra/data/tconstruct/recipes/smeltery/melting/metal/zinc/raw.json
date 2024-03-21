@@ -26,7 +26,7 @@
       "tag": "c:raw_materials/zinc"
     },
     {
-      "item": "create:crushed_raw_zinc"
+      "item": "create:crushed_zinc_ore"
     }
   ],
         "result": {
@@ -57,7 +57,7 @@
       "tag": "c:raw_materials/zinc"
     },
     {
-      "item": "create:crushed_raw_zinc"
+      "item": "create:crushed_zinc_ore"
     }
   ],
         "result": {

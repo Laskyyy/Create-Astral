@@ -1,0 +1,33 @@
+{
+  "name": "incendium:generic_name",
+  "fallback": "incendium:testing/castle/castle_wall",
+  "elements": [
+    {
+      "weight": 3,
+      "element": {
+        "location": "incendium:testing/castle/3x3x3",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:testing/castle/6x3x3",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:testing/castle/6x3x6",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

@@ -2,6 +2,6 @@
     "parent": "bettervanillabuilding:block/fence_inventory",
     "textures": {
         "texture": "block/warped_fence",
-        "1": "block/warped_planks"
+		"1": "block/warped_planks"
     }
 }

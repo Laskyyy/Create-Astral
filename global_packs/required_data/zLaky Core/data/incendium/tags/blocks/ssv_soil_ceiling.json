@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:netherrack",
+    "minecraft:blackstone",
+    "soul_sand",
+    "ad_astra:moon_stone",
+		"ad_astra:mars_stone",
+		"ad_astra:mercury_stone"
+  ]
+}

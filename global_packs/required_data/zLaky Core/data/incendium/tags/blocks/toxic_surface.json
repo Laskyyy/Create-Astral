@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:green_terracotta","lime_terracotta","yellow_terracotta",
+    "netherrack","blackstone","ad_astra:moon_stone",
+		"ad_astra:mars_stone",
+		"ad_astra:mercury_stone",
+    "ad_astra:moon_sand"
+  ]
+}

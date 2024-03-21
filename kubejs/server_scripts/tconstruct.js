@@ -1,3 +1,6 @@
+var FULL_BUCKET_AMMOUNT = 81000;
+var INGOT_FLUID_AMMOUNT = 9000;
+
 onEvent("recipes", (event) => {
     // Fluid: [string Fluid Name, Fluid Amount]
     // Result: string Item Name
@@ -5,52 +8,28 @@ onEvent("recipes", (event) => {
     // Cast: [string Item Name, bool Cast Consumed] or null if none
     [
         {
-            fluid: ["kubejs:compound_mixture", INGOT * 9],
+            fluid: ["kubejs:compound_mixture", INGOT_FLUID_AMMOUNT * 9],
             result: "createastral:andesite_alloy_block",
             cooling_time: 180,
             cast: null,
         },
         {
-            fluid: ["kubejs:blast-resistant_cement", BUCKET],
+            fluid: ["kubejs:blast-resistant_cement", FULL_BUCKET_AMMOUNT],
             result: "createastral:blast-resistant_concrete",
             cooling_time: 400,
             cast: null,
         },
         {
-            fluid: ["tconstruct:molten_quartz", GEM * 3],
+            fluid: ["tconstruct:molten_quartz", (3 * FULL_BUCKET_AMMOUNT) / 10],
             result: "minecraft:granite",
             cooling_time: 140,
             cast: ["minecraft:diorite", true],
         },
         {
-            fluid: ["tconstruct:liquid_soul", BUCKET],
+            fluid: ["tconstruct:liquid_soul", FULL_BUCKET_AMMOUNT],
             result: "minecraft:diorite",
             cooling_time: 80,
             cast: ["minecraft:basalt", true],
-        },
-        {
-            fluid: ["kubejs:liquid_xp_nuggies", INGOT * 9],
-            result: "create:experience_block",
-            cooling_time: 180,
-            cast: null,
-        },
-        {
-            fluid: ["tconstruct:ender_slime", BUCKET],
-            result: "tconstruct:ender_slime_vine",
-            cooling_time: 80,
-            cast: ["minecraft:vine", true],
-        },
-        {
-            fluid: ["tconstruct:sky_slime", BUCKET],
-            result: "tconstruct:sky_slime_vine",
-            cooling_time: 80,
-            cast: ["minecraft:vine", true],
-        },
-        {
-            fluid: ["kubejs:supercooled_water", BUCKET],
-            result: "minecraft:ice",
-            cooling_time: 10,
-            cast: null,
         },
     ].forEach((recipe) => {
         event.custom({
@@ -82,52 +61,28 @@ onEvent("recipes", (event) => {
 
     [
         {
-            fluid: ["kubejs:shimmer", BUCKET / 20],
+            fluid: ["kubejs:shimmer", 4500],
             result: "ae2:fluix_dust",
             cooling_time: 40,
             cast: ["ae2:certus_quartz_dust", true],
         },
         {
-            fluid: ["tconstruct:molten_bronze", 4 * NUGGET],
+            fluid: ["tconstruct:molten_bronze", 4000],
             result: "create:cogwheel",
             cooling_time: 100,
             cast: ["tconstruct:coin_cast", false],
         },
         {
-            fluid: ["tconstruct:molten_bronze", 12 * NUGGET],
+            fluid: ["tconstruct:molten_bronze", 12000],
             result: "create:large_cogwheel",
             cooling_time: 100,
             cast: ["tconstruct:gear_cast", false],
         },
         {
-            fluid: ["tconstruct:molten_gold", 12 * NUGGET],
-            result: "tconstruct:gear_cast",
-            cooling_time: 100,
-            cast: ["create:large_cogwheel", true],
-        },
-        {
-            fluid: ["tconstruct:molten_gold", BUCKET / 2],
+            fluid: ["tconstruct:molten_gold", 45000],
             result: "createastral:golden_bowl",
             cooling_time: 100,
             cast: ["tconstruct:round_plate_cast", false],
-        },
-        {
-            fluid: ["kubejs:liquid_xp_nuggies", INGOT],
-            result: "createastral:experience_ingot",
-            cooling_time: 100,
-            cast: ["tconstruct:ingot_cast", false],
-        },
-        {
-            fluid: ["kubejs:liquid_xp_nuggies", NUGGET],
-            result: "create:experience_nugget",
-            cooling_time: 10,
-            cast: ["tconstruct:nugget_cast", false],
-        },
-        {
-            fluid: ["kubejs:liquid_xp_nuggies", 8 * NUGGET],
-            result: "minecraft:experience_bottle",
-            cooling_time: 30,
-            cast: ["minecraft:glass_bottle", true],
         },
     ].forEach((recipe) => {
         event.custom({

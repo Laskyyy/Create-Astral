@@ -61,7 +61,7 @@
   "worldGen": {
     "spawnPressesInMeteorites": true,
     "generateQuartzOre": false,
-    "generateMeteorites": false,
+    "generateMeteorites": true,
     "quartzOresPerCluster": 7,
     "quartzOresClusterAmount": 20,
     "quartzOresBiomeBlacklist_comment": "Biome IDs in which quartz ores should NOT be generated (i.e. minecraft:plains).",

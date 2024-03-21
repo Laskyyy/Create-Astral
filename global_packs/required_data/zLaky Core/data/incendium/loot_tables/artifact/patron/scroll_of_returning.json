@@ -1,0 +1,62 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:map",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "translate": "A long forgotten technique",
+                  "color": "#D393F5",
+                  "italic": true
+                },
+                {
+                  "translate": "to transport back",
+                  "color": "#D393F5",
+                  "italic": true
+                },
+                {
+                  "translate": "to the overworld",
+                  "color": "#D393F5",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "Patron Item",
+                  "color": "#333333",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "Incendium",
+                  "color": "#FF8000",
+                  "italic": true
+                }
+              ],
+              "replace": true
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "translate": "Scroll of Returning",
+                "color": "#7F32A9",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:1450403,incendium:{item:'scroll_of_returning'}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

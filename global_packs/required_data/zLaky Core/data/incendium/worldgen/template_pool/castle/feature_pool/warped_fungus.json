@@ -1,0 +1,20 @@
+{
+  "name": "incendium:generic",
+  "fallback": "incendium:castle/feature_pool/warped_fungus",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "feature": "incendium:feature_pool/warped_fungus",
+        "projection": "rigid",
+        "element_type": "minecraft:feature_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "element_type": "minecraft:empty_pool_element"
+      }
+    }
+  ]
+}

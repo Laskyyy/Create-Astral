@@ -1,0 +1,1488 @@
+To refresh this file, delete it and run /reload command again! Last updated: Dec 1, 2022, 5:57:57 PM
+
+#c:climate_wet
+- #c:aquatic?
+- #c:swamp?
+- minecraft:lush_caves
+- #c:jungle?
+
+#towns_and_towers:has_structure/pillager_outpost_taiga
+- minecraft:taiga
+- biomesoplenty:coniferous_forest?
+- biomesoplenty:crag?
+- biomesoplenty:fir_clearing?
+- byg:autumnal_taiga?
+- byg:black_forest?
+- byg:canadian_shield?
+- byg:coniferous_forest?
+- byg:dacite_ridges?
+- terralith:alpine_highlands?
+- terralith:lush_valley?
+- terralith:shield_clearing?
+- terralith:shield?
+- terralith:yosemite_lowlands?
+- wythers:forested_highlands?
+- wythers:larch_taiga?
+- wythers:pine_barrens?
+- traverse:coniferious_forest?
+- terrestria:snowy_hemlock_forest?
+- terrestria:hemlock_rainforest?
+
+#minecraft:has_structure/nether_fortress
+- minecraft:basalt_deltas
+- incendium:infernal_dunes
+- ad_astra:martian_canyon_creek
+- ad_astra:mercury_deltas
+
+#towns_and_towers:has_structure/village_meadow_swiss
+- minecraft:meadow
+- terralith:blooming_plateau?
+- biomesoplenty:clover_patch?
+- biomesoplenty:field?
+- wythers:highland_plains?
+- wythers:highlands?
+- tectonic:alpine_meadow?
+
+#minecraft:is_river
+- minecraft:river
+- minecraft:frozen_river
+
+#doom:has_structure/code_structure_icon_fight_biomes
+- #minecraft:is_mountain
+- ad_astra:mercury_deltas
+
+#c:nether_forests
+- minecraft:warped_forest
+- minecraft:crimson_forest
+
+#minecraft:has_structure/mineshaft
+- #minecraft:is_ocean
+- #minecraft:is_river
+- #minecraft:is_beach
+- #minecraft:is_mountain
+- #minecraft:is_hill
+- #minecraft:is_taiga
+- #minecraft:is_jungle
+- #minecraft:is_forest
+- minecraft:stony_shore
+- minecraft:mushroom_fields
+- minecraft:ice_spikes
+- minecraft:windswept_savanna
+- minecraft:desert
+- minecraft:savanna
+- minecraft:snowy_plains
+- minecraft:plains
+- minecraft:sunflower_plains
+- minecraft:swamp
+- minecraft:savanna_plateau
+- minecraft:dripstone_caves
+- minecraft:lush_caves
+- #minecraft:is_ocean
+- #minecraft:is_river
+- #minecraft:is_beach
+- #minecraft:is_mountain
+- #minecraft:is_hill
+- #minecraft:is_taiga
+- #minecraft:is_jungle
+- #minecraft:is_forest
+- minecraft:stony_shore
+- minecraft:mushroom_fields
+- minecraft:ice_spikes
+- minecraft:windswept_savanna
+- minecraft:desert
+- minecraft:savanna
+- minecraft:snowy_plains
+- minecraft:plains
+- minecraft:sunflower_plains
+- minecraft:swamp
+- minecraft:savanna_plateau
+- minecraft:dripstone_caves
+- minecraft:lush_caves
+
+#tconstruct:islands/earthslime
+- #minecraft:is_deep_ocean
+- #minecraft:is_ocean
+
+#towns_and_towers:has_structure/pillager_outpost_meadow
+- minecraft:meadow
+- terralith:blooming_plateau?
+- biomesoplenty:clover_patch?
+- biomesoplenty:field?
+- wythers:highland_plains?
+- wythers:highlands?
+- tectonic:alpine_meadow?
+
+#minecraft:has_structure/jungle_temple
+- minecraft:bamboo_jungle
+- minecraft:jungle
+- minecraft:bamboo_jungle
+- minecraft:jungle
+
+#c:mushroom
+- minecraft:mushroom_fields
+
+#towns_and_towers:has_structure/pillager_outpost_jungle
+- minecraft:jungle
+- terralith:amethyst_rainforest?
+- terralith:rocky_jungle?
+- byg:tropical_rainforest?
+- biomesoplenty:rainforest?
+- biomesoplenty:rocky_rainforest?
+- wythers:eucalyptus_deanei_forest?
+- wythers:eucalyptus_jungle?
+- wythers:highland_tropical_rainforest?
+- wythers:jungle_island?
+- wythers:tropical_rainforest?
+- jermsy:rainforest?
+
+#c:in_nether
+- #minecraft:is_nether?
+- minecraft:crimson_forest
+- minecraft:warped_forest
+- minecraft:nether_wastes
+- minecraft:soul_sand_valley
+- minecraft:basalt_deltas
+
+#towns_and_towers:has_structure/village_sunflower_plains_farm
+- minecraft:sunflower_plains
+- terralith:steppe?
+- biomesoplenty:pasture?
+- byg:prairie?
+- byg:autumnal_valley?
+- biomesoplenty:pumpkin_patch?
+
+#c:tree_coniferous
+- minecraft:grove
+- #c:taiga?
+
+#c:mountain
+- #minecraft:is_mountain?
+
+#c:savanna
+- minecraft:savanna_plateau
+- minecraft:windswept_savanna
+- minecraft:savanna
+
+#minecraft:is_jungle
+- minecraft:bamboo_jungle
+- minecraft:jungle
+- minecraft:sparse_jungle
+
+#minecraft:is_ocean
+- #minecraft:is_deep_ocean
+- minecraft:frozen_ocean
+- minecraft:ocean
+- minecraft:cold_ocean
+- minecraft:lukewarm_ocean
+- minecraft:warm_ocean
+
+#ad_astra:has_structure/pygro_village_biomes
+- ad_astra:venus_wastelands
+
+#towns_and_towers:has_structure/pillager_outpost_sunflower_plains
+- minecraft:sunflower_plains
+- terralith:steppe?
+- biomesoplenty:pasture?
+- byg:prairie?
+- byg:autumnal_valley?
+- biomesoplenty:pumpkin_patch?
+
+#towns_and_towers:has_structure/exclusives/pillager_outpost_oriental
+- terralith:desert_oasis?
+- terralith:warped_mesa?
+- biomesoplenty:lush_desert?
+- byg:windswept_desert?
+- byg:windswept_dunes?
+- wythers:desert_lakes?
+- wythers:desert_island?
+- terrestria:lush_desert?
+- jermsy:desert_hills?
+
+#ad_astra:has_structure/moon_dungeon_biomes
+- ad_astra:lunar_wastelands
+
+#ad_astra:has_structure/pygro_tower_biomes
+- ad_astra:venus_wastelands
+
+#c:caves
+- minecraft:dripstone_caves
+- minecraft:lush_caves
+
+#towns_and_towers:has_structure/village_swamp_boat
+- minecraft:swamp
+- terralith:ice_marsh?
+- terralith:orchid_swamp?
+- biomesoplenty:wetland?
+- byg:cypress_swamplands?
+- wythers:ancient_mossy_swamp?
+- wythers:ancient_oak_swamp?
+- wythers:marsh?
+- wythers:waterlilly_swamp?
+
+#towns_and_towers:has_structure/exclusives/pillager_outpost_tudor
+- terralith:highlands?
+- biomesoplenty:highland?
+- biomesoplenty:highland_moor?
+- wythers:cold_plains?
+- wythers:temperate_island?
+- tectonic:cold_plains?
+
+#c:floral
+- minecraft:sunflower_plains
+- minecraft:flower_forest
+
+#towns_and_towers:has_structure/pillager_outpost_old_growth_taiga
+- minecraft:old_growth_pine_taiga
+- minecraft:old_growth_spruce_taiga
+- terralith:siberian_taiga?
+- terralith:valley_clearing?
+- byg:black_forest?
+- byg:dacite_ridges?
+- wythers:ancient_taiga?
+- wythers:old_growth_taiga_swamp?
+- wythers:temperate_rainforest?
+- tectonic:old_growth_snowy_taiga?
+
+#towns_and_towers:has_structure/exclusives/village_oriental
+- terralith:desert_oasis?
+- terralith:warped_mesa?
+- biomesoplenty:lush_desert?
+- byg:windswept_desert?
+- byg:windswept_dunes?
+- wythers:desert_lakes?
+- wythers:desert_island?
+- terrestria:volcanic_island?
+- terrestria:lush_desert?
+- terrestria:oasis?
+
+#doom:has_structure/code_structure_motherdemon1a_biomes
+- minecraft:nether_wastes
+- ad_astra:mercury_deltas
+
+#minecraft:has_structure/buried_treasure
+- #minecraft:is_beach
+- #minecraft:is_beach
+
+#bosses_of_mass_destruction:collections/raow
+- ad_astra:glacio_ice_peaks
+- ad_astra:glacio_snowy_barrens
+
+#towns_and_towers:has_structure/pillager_outpost_mushroom_fields
+- minecraft:mushroom_fields
+- biomesoplenty:mystic_forest?
+- biomesoplenty:raimbow_hills?
+
+#minecraft:has_structure/ocean_ruin_cold
+- minecraft:frozen_ocean
+- minecraft:cold_ocean
+- minecraft:ocean
+- minecraft:deep_frozen_ocean
+- minecraft:deep_cold_ocean
+- minecraft:deep_ocean
+- minecraft:frozen_ocean
+- minecraft:cold_ocean
+- minecraft:ocean
+- minecraft:deep_frozen_ocean
+- minecraft:deep_cold_ocean
+- minecraft:deep_ocean
+
+#c:badlands
+- #c:mesa?
+- #minecraft:is_badlands?
+
+#minecraft:has_structure/stronghold
+- minecraft:plains
+- minecraft:sunflower_plains
+- minecraft:snowy_plains
+- minecraft:ice_spikes
+- minecraft:desert
+- minecraft:forest
+- minecraft:flower_forest
+- minecraft:birch_forest
+- minecraft:dark_forest
+- minecraft:old_growth_birch_forest
+- minecraft:old_growth_pine_taiga
+- minecraft:old_growth_spruce_taiga
+- minecraft:taiga
+- minecraft:snowy_taiga
+- minecraft:savanna
+- minecraft:savanna_plateau
+- minecraft:windswept_hills
+- minecraft:windswept_gravelly_hills
+- minecraft:windswept_forest
+- minecraft:windswept_savanna
+- minecraft:jungle
+- minecraft:sparse_jungle
+- minecraft:bamboo_jungle
+- minecraft:badlands
+- minecraft:eroded_badlands
+- minecraft:wooded_badlands
+- minecraft:meadow
+- minecraft:grove
+- minecraft:snowy_slopes
+- minecraft:frozen_peaks
+- minecraft:jagged_peaks
+- minecraft:stony_peaks
+- minecraft:mushroom_fields
+- minecraft:dripstone_caves
+- minecraft:lush_caves
+- minecraft:plains
+- minecraft:sunflower_plains
+- minecraft:snowy_plains
+- minecraft:ice_spikes
+- minecraft:desert
+- minecraft:forest
+- minecraft:flower_forest
+- minecraft:birch_forest
+- minecraft:dark_forest
+- minecraft:old_growth_birch_forest
+- minecraft:old_growth_pine_taiga
+- minecraft:old_growth_spruce_taiga
+- minecraft:taiga
+- minecraft:snowy_taiga
+- minecraft:savanna
+- minecraft:savanna_plateau
+- minecraft:windswept_hills
+- minecraft:windswept_gravelly_hills
+- minecraft:windswept_forest
+- minecraft:windswept_savanna
+- minecraft:jungle
+- minecraft:sparse_jungle
+- minecraft:bamboo_jungle
+- minecraft:badlands
+- minecraft:eroded_badlands
+- minecraft:wooded_badlands
+- minecraft:meadow
+- minecraft:grove
+- minecraft:snowy_slopes
+- minecraft:frozen_peaks
+- minecraft:jagged_peaks
+- minecraft:stony_peaks
+- minecraft:mushroom_fields
+- minecraft:dripstone_caves
+- minecraft:lush_caves
+
+#minecraft:has_structure/mineshaft_mesa
+- #minecraft:is_badlands
+- #minecraft:is_badlands
+
+#c:underground
+- #c:caves?
+
+#minecraft:has_structure/shipwreck
+- #minecraft:is_ocean
+- #minecraft:is_ocean
+
+#bosses_of_mass_destruction:has_structure/obsidilith_arena
+- nullscape:crystal_peaks
+- nullscape:shadowlands
+
+#c:snowy_plains
+- minecraft:snowy_plains
+
+#c:vegetation_dense
+- #c:jungle?
+- minecraft:sunflower_plains
+
+#c:jungle
+- #minecraft:is_jungle?
+
+#tconstruct:islands/skyslime
+- #minecraft:is_deep_ocean
+- #minecraft:is_ocean
+- #minecraft:is_beach
+- #minecraft:is_river
+- #minecraft:is_mountain
+- #minecraft:is_badlands
+- #minecraft:is_hill
+- #minecraft:is_taiga
+- #minecraft:is_forest
+
+#towns_and_towers:has_structure/village_jungle_tribal
+- minecraft:jungle
+- terralith:amethyst_rainforest?
+- terralith:rocky_jungle?
+- byg:tropical_rainforest?
+- biomesoplenty:rainforest?
+- biomesoplenty:rocky_rainforest?
+- wythers:eucalyptus_deanei_forest?
+- wythers:eucalyptus_jungle?
+- wythers:highland_tropical_rainforest?
+- wythers:jungle_island?
+- wythers:tropical_rainforest?
+- jermsy:rainforest?
+
+#towns_and_towers:has_structure/shallow_oceans_wreckage
+- minecraft:cold_ocean
+- minecraft:ocean
+- minecraft:lukewarm_ocean
+- minecraft:warm_ocean
+- tectonic:lagoon?
+
+#minecraft:has_structure/igloo
+- minecraft:snowy_taiga
+- minecraft:snowy_plains
+- minecraft:snowy_slopes
+- minecraft:snowy_taiga
+- minecraft:snowy_plains
+- minecraft:snowy_slopes
+
+#towns_and_towers:has_structure/exclusives/village_nilotic
+- wythers:dripleaf_swamp?
+- wythers:flooded_jungle?
+- wythers:flooded_rainforest?
+- wythers:flooded_savanna?
+- wythers:flooded_temperate_rainforest?
+- wythers:pantanal?
+
+#c:wasteland
+
+#minecraft:has_structure/shipwreck_beached
+- #minecraft:is_beach
+- #minecraft:is_beach
+
+#minecraft:is_hill
+- minecraft:windswept_hills
+- minecraft:windswept_forest
+- minecraft:windswept_gravelly_hills
+
+#c:forest
+- #minecraft:is_forest?
+
+#c:end_islands
+
+#incendium:structure/has_sanctum
+- incendium:quartz_flats
+
+#towns_and_towers:has_structure/pillager_outpost_deep_oceans
+- minecraft:deep_cold_ocean
+- minecraft:deep_ocean
+- minecraft:deep_lukewarm_ocean
+
+#c:dead
+
+#bosses_of_mass_destruction:has_structure/lich_tower
+- #bosses_of_mass_destruction:collections/cold
+- #bosses_of_mass_destruction:collections/raow
+
+#c:deep_ocean
+- minecraft:deep_frozen_ocean
+- minecraft:deep_lukewarm_ocean
+- minecraft:deep_cold_ocean
+- minecraft:deep_ocean
+
+#towns_and_towers:has_structure/village_deep_oceans_ships
+- minecraft:deep_cold_ocean
+- minecraft:deep_ocean
+- minecraft:deep_lukewarm_ocean
+
+#c:swamp
+- minecraft:swamp
+
+#towns_and_towers:has_structure/exclusives/village_tudor
+- terralith:highlands?
+- biomesoplenty:highland?
+- biomesoplenty:highland_moor?
+- wythers:temperate_island?
+- wythers:cold_plains?
+- wythers:temperate_island?
+- tectonic:cold_plains?
+
+#towns_and_towers:has_structure/exclusives/pillager_outpost_iberian
+- byg:rose_fields?
+- biomesoplenty:lush_savanna?
+- wythers:flowering_pantanal?
+- wythers:humid_tropical_grassland?
+- wythers:jacaranda_savanna?
+- wythers:lapacho_plains?
+- wythers:subtropical_forest?
+- wythers:subtropical_forest_edge?
+- wythers:subtropical_grassland?
+- wythers:tropical_grassland?
+- traverse:grasslands?
+- jermsy:shrubland?
+
+#c:in_overworld
+- minecraft:river
+- minecraft:frozen_river
+- minecraft:cold_ocean
+- minecraft:deep_cold_ocean
+- minecraft:deep_frozen_ocean
+- minecraft:deep_ocean
+- minecraft:deep_lukewarm_ocean
+- minecraft:warm_ocean
+- minecraft:lukewarm_ocean
+- minecraft:frozen_ocean
+- minecraft:ocean
+- minecraft:beach
+- minecraft:plains
+- minecraft:sunflower_plains
+- minecraft:snowy_plains
+- minecraft:ice_spikes
+- minecraft:desert
+- minecraft:forest
+- minecraft:flower_forest
+- minecraft:birch_forest
+- minecraft:dark_forest
+- minecraft:old_growth_birch_forest
+- minecraft:old_growth_pine_taiga
+- minecraft:old_growth_spruce_taiga
+- minecraft:taiga
+- minecraft:snowy_taiga
+- minecraft:savanna
+- minecraft:savanna_plateau
+- minecraft:windswept_hills
+- minecraft:windswept_gravelly_hills
+- minecraft:windswept_forest
+- minecraft:windswept_savanna
+- minecraft:jungle
+- minecraft:sparse_jungle
+- minecraft:bamboo_jungle
+- minecraft:badlands
+- minecraft:eroded_badlands
+- minecraft:wooded_badlands
+- minecraft:meadow
+- minecraft:grove
+- minecraft:snowy_slopes
+- minecraft:frozen_peaks
+- minecraft:jagged_peaks
+- minecraft:stony_peaks
+- minecraft:mushroom_fields
+- minecraft:dripstone_caves
+- minecraft:lush_caves
+- minecraft:snowy_beach
+- minecraft:swamp
+- minecraft:stony_shore
+
+#c:tree_jungle
+- #c:jungle?
+
+#incendium:structure/has_pipeline
+- incendium:infernal_dunes
+- minecraft:basalt_deltas
+- incendium:toxic_heap
+- ad_astra:lunar_wastelands
+
+#minecraft:has_structure/ocean_monument
+- #minecraft:is_deep_ocean
+- #minecraft:is_deep_ocean
+
+#bosses_of_mass_destruction:collections/in_overworld
+- #minecraft:is_badlands
+- #minecraft:is_deep_ocean
+- #minecraft:is_ocean
+- #minecraft:is_ocean
+- #minecraft:is_river
+- #minecraft:is_beach
+- #minecraft:is_mountain
+- #minecraft:is_hill
+- #minecraft:is_taiga
+- #minecraft:is_jungle
+- #minecraft:is_forest
+- minecraft:stony_shore
+- minecraft:mushroom_fields
+- minecraft:ice_spikes
+- minecraft:windswept_savanna
+- minecraft:desert
+- minecraft:savanna
+- minecraft:snowy_plains
+- minecraft:plains
+- minecraft:sunflower_plains
+- minecraft:swamp
+- minecraft:savanna_plateau
+- minecraft:dripstone_caves
+- minecraft:lush_caves
+- #minecraft:is_badlands
+- #minecraft:is_deep_ocean
+- #minecraft:is_ocean
+- #minecraft:is_ocean
+- #minecraft:is_river
+- #minecraft:is_beach
+- #minecraft:is_mountain
+- #minecraft:is_hill
+- #minecraft:is_taiga
+- #minecraft:is_jungle
+- #minecraft:is_forest
+- minecraft:stony_shore
+- minecraft:mushroom_fields
+- minecraft:ice_spikes
+- minecraft:windswept_savanna
+- minecraft:desert
+- minecraft:savanna
+- minecraft:snowy_plains
+- minecraft:plains
+- minecraft:sunflower_plains
+- minecraft:swamp
+- minecraft:savanna_plateau
+- minecraft:dripstone_caves
+- minecraft:lush_caves
+
+#towns_and_towers:has_structure/pillager_outpost_sparse_jungle
+- minecraft:sparse_jungle
+- terralith:tropical_jungle?
+- biomesoplenty:floodplain?
+- biomesoplenty:tropics?
+- byg:jacaranda_forest?
+- wythers:snady_jungle?
+- wythers:sparse_bamboo_jungle?
+- wythers:sparse_eucalyptus_jungle?
+- wythers:tropical_forest?
+- wythers:tropical_island?
+- traverse:flatlands?
+- terrestria:volcanic_island?
+- terrestria:volcanic_island?
+
+#minecraft:has_structure/ruined_portal_jungle
+- #minecraft:is_jungle
+- #minecraft:is_jungle
+
+#towns_and_towers:has_structure/exclusives/pillager_outpost_classic
+- terralith:alpha_islands?
+- biomesoplenty:origin_valley?
+
+#c:climate_cold
+- minecraft:grove
+- minecraft:jagged_peaks
+- #c:icy?
+
+#towns_and_towers:has_structure/village_beach_lighthouse
+- minecraft:beach
+- biomesoplenty:dune_beach?
+- byg:rainbow_beach?
+- byg:windswept_beach?
+- terralith:gravel_beach?
+- wythers:black_beach?
+- wythers:desert_beach?
+- wythers:gravelly_beach?
+- wythers:sand_dunes?
+- wythers:tropical_beach?
+- tectonic:cold_beach?
+- tectonic:lukewarm_beach?
+- jermsy:gravelly_beach?
+
+#minecraft:has_structure/desert_pyramid
+- minecraft:desert
+- byg:mojave_desert?
+- terralith:desert_oasis?
+- minecraft:desert
+
+#towns_and_towers:has_structure/pillager_outpost_savanna
+- minecraft:savanna
+- terralith:shrubland?
+- terralith:savanna_slopes?
+- biomesoplenty:wooded_scrubland?
+- byg:araucaria_savanna?
+- byg:baobab_savanna?
+- byg:firecracker_shrubland?
+- wythers:eucalyptus_salubris_woodland?
+- wythers:eucalyptus_woodland?
+- wythers:sparse_eucalyptus_woodland?
+- wythers:wooded_savanna?
+
+#minecraft:has_structure/ruined_portal_ocean
+- #minecraft:is_ocean
+- #minecraft:is_ocean
+
+#c:in_the_end
+- minecraft:end_barrens
+- minecraft:end_midlands
+- minecraft:end_highlands
+- minecraft:the_end
+- minecraft:small_end_islands
+
+#c:river
+- #minecraft:is_river?
+
+#minecraft:is_deep_ocean
+- minecraft:deep_frozen_ocean
+- minecraft:deep_cold_ocean
+- minecraft:deep_ocean
+- minecraft:deep_lukewarm_ocean
+
+#towns_and_towers:has_structure/exclusives/village_mediterranean
+- terralith:hot_shrubland?
+- terralith:brushland?
+- terralith:shrubland?
+- biomesoplenty:mediterranean_forest?
+- biomesoplenty:rocky_shrubland?
+- biomesoplenty:scrubland?
+- biomesoplenty:shrubland?
+- biomesoplenty:wooded_scrubland?
+- wythers:mediterranean_island?
+
+#minecraft:is_nether
+- minecraft:nether_wastes
+- minecraft:basalt_deltas
+- minecraft:soul_sand_valley
+- minecraft:crimson_forest
+- minecraft:warped_forest
+
+#towns_and_towers:has_structure/pillager_outpost_beach
+- minecraft:beach
+- biomesoplenty:dune_beach?
+- byg:rainbow_beach?
+- terralith:gravel_beach?
+- wythers:black_beach?
+- wythers:desert_beach?
+- wythers:gravelly_beach?
+- wythers:sand_dunes?
+- wythers:tropical_beach?
+- tectonic:cold_beach?
+- tectonic:lukewarm_beach?
+- jermsy:gravelly_beach?
+
+#towns_and_towers:has_structure/exclusives/village_swedish
+- terralith:snowy_maple_forest?
+- terralith:forested_highlands?
+- terralith:shield?
+- biomesoplenty:fir_clearing?
+- byg:maple_taiga?
+- byg:zelkova_forest?
+- biomesoplenty:snowy_fir_clearing?
+- biomesoplenty:snowy_maple_forest?
+- wythers:boreal_forest_red?
+- wythers:boreal_forest_yellow?
+- wythers:cold_island?
+- wythers:maple_mountains?
+
+#c:climate_hot
+- #c:jungle?
+- #c:savanna?
+- #c:desert?
+- #c:badlands?
+- minecraft:stony_peaks
+- #c:mushroom?
+- #c:in_nether?
+
+#c:desert
+- minecraft:desert
+
+#minecraft:has_structure/woodland_mansion
+- minecraft:dark_forest
+- minecraft:dark_forest
+
+#incendium:structure/has_reactor
+- ad_astra:lunar_wastelands
+
+#towns_and_towers:has_structure/pillager_outpost_snowy_slopes
+- minecraft:snowy_slopes
+- byg:zelkova_forest?
+- terralith:rocky_shrubland?
+
+#towns_and_towers:has_structure/exclusives/village_rustic
+- byg:autumnal_forest?
+- byg:autumnal_taiga?
+- biomesoplenty:boreal_forest?
+- biomesoplenty:seasonal_forest?
+- promenade:pumpkin_pastures?
+- wythers:autumnal_flower_forest?
+- wythers:autumnal_forest?
+- wythers:autumnal_forest_edge?
+- wythers:autumnal_plains?
+- wythers:harvest_fields?
+- tectonic:autumn_forest?
+- tectonic:autumn_birch_forest?
+- traverse:autumnal_woods?
+- jermsy:seasonal_forest?
+
+#c:mountain_peak
+- minecraft:frozen_peaks
+- minecraft:jagged_peaks
+- minecraft:stony_peaks
+
+#minecraft:has_structure/ocean_ruin_warm
+- minecraft:lukewarm_ocean
+- minecraft:warm_ocean
+- minecraft:deep_lukewarm_ocean
+- minecraft:lukewarm_ocean
+- minecraft:warm_ocean
+- minecraft:deep_lukewarm_ocean
+
+#c:shallow_ocean
+- minecraft:ocean
+- minecraft:lukewarm_ocean
+- minecraft:frozen_ocean
+- minecraft:cold_ocean
+- minecraft:warm_ocean
+
+#towns_and_towers:has_structure/village_mushroom_fields_fantasy
+- minecraft:mushroom_fields
+
+#towns_and_towers:has_structure/pillager_outpost_desert
+- minecraft:desert
+- byg:mojave_desert?
+- wythers:cactus_desert?
+- wythers:deep_desert?
+- wythers:temperate_rainforest?
+- wythers:wooded_desert?
+- tectonic:desert_dunes?
+
+#tconstruct:islands/enderslime
+- minecraft:end_highlands
+- minecraft:end_midlands
+- minecraft:small_end_islands
+- minecraft:end_barrens
+
+#towns_and_towers:has_structure/exclusives/village_iberian
+- byg:rose_fields?
+- biomesoplenty:lush_savanna?
+- wythers:flowering_pantanal?
+- wythers:humid_tropical_grassland?
+- wythers:jacaranda_savanna?
+- wythers:lapacho_plains?
+- wythers:subtropical_forest?
+- wythers:subtropical_forest_edge?
+- wythers:subtropical_grassland?
+- wythers:tropical_grassland?
+- traverse:grasslands?
+- jermsy:shrubland?
+
+#bosses_of_mass_destruction:has_structure/none
+
+#towns_and_towers:has_structure/pillager_outpost_swamp
+- minecraft:swamp
+- terralith:ice_marsh?
+- terralith:orchid_swamp?
+- biomesoplenty:wetland?
+- byg:cypress_swamplands?
+- wythers:ancient_mossy_swamp?
+- wythers:ancient_oak_swamp?
+- wythers:marsh?
+- wythers:waterlilly_swamp?
+
+#bosses_of_mass_destruction:has_structure/void_blossom
+- #bosses_of_mass_destruction:collections/in_overworld
+- #bosses_of_mass_destruction:collections/in_overworld
+
+#c:flower_forests
+- minecraft:flower_forest
+
+#c:tree_deciduous
+- minecraft:forest
+- minecraft:windswept_forest
+- minecraft:flower_forest
+- minecraft:birch_forest
+- minecraft:dark_forest
+- minecraft:old_growth_birch_forest
+
+#minecraft:has_structure/village_desert
+- minecraft:desert
+- biomesoplenty:lush_desert?
+- byg:mojave_desert?
+- byg:windswept_desert?
+- terralith:sandstone_valley?
+- terralith:desert_oasis?
+- wythers:deep_desert?
+- wythers:wooded_desert?
+- minecraft:desert
+
+#c:tree_savanna
+- #c:savanna?
+
+#towns_and_towers:has_structure/exclusives/village_classic
+- terralith:alpha_islands?
+- biomesoplenty:origin_valley?
+
+#minecraft:is_forest
+- minecraft:forest
+- minecraft:flower_forest
+- minecraft:birch_forest
+- minecraft:old_growth_birch_forest
+- minecraft:dark_forest
+- minecraft:grove
+
+#ad_astra:has_structure/lunarian_village_biomes
+- ad_astra:lunar_wastelands
+
+#c:icy
+- minecraft:frozen_river
+- minecraft:frozen_peaks
+- minecraft:deep_frozen_ocean
+- minecraft:ice_spikes
+- minecraft:frozen_ocean
+
+#minecraft:has_structure/village_savanna
+- minecraft:savanna
+- biomesoplenty:dryland?
+- byg:araucaria_savanna?
+- byg:baobab_savanna?
+- byg:firecracker_shrubland?
+- terralith:savanna_slopes?
+- wythers:eucalyptus_salubris_woodland?
+- wythers:eucalyptus_woodland?
+- wythers:sparse_eucalyptus_woodland?
+- wythers:wooded_savanna?
+- minecraft:savanna
+
+#doom:has_structure/code_structure_gladiator_fight_biomes
+- minecraft:soul_sand_valley
+- ad_astra:mercury_deltas
+
+#c:stony_shores
+- minecraft:stony_shore
+
+#c:mountain_slope
+- minecraft:snowy_slopes
+
+#minecraft:has_structure/village_taiga
+- minecraft:taiga
+- biomesoplenty:coniferous_forest?
+- biomesoplenty:dead_forest?
+- biomesoplenty:maple_woods?
+- byg:borealis_grove?
+- byg:canadian_shield?
+- byg:cika_woods?
+- byg:coniferous_forest?
+- terralith:alpine_highlands?
+- terralith:lush_valley?
+- terralith:rocky_shrubland?
+- terralith:shield?
+- wythers:forested_highlands?
+- wythers:larch_taiga?
+- wythers:pine_barrens?
+- traverse:coniferious_forest?
+- terrestria:snowy_hemlock_forest?
+- terrestria:hemlock_rainforest?
+- minecraft:taiga
+
+#towns_and_towers:has_structure/pillager_outpost_badlands
+- minecraft:badlands
+- byg:autacama_desert?
+- terralith:arid_highlands?
+- terralith:red_oasis?
+- terralith:snowy_badlands?
+- wythers:badlands_desert?
+- wythers:kwongan_heath?
+- wythers:outback_desert?
+- wythers:red_desert?
+- tectonic:red_desert?
+- tectonic:red_desert_dunes?
+- jermsy:red_desert?
+
+#c:void
+- minecraft:the_void
+
+#minecraft:has_structure/village_plains
+- minecraft:plains
+- biomesoplenty:grassland?
+- biomesoplenty:prairie?
+- byg:allium_fields?
+- byg:temperate_rainforest?
+- wythers:cool_plains?
+- minecraft:plains
+- minecraft:meadow
+
+#towns_and_towers:has_structure/village_badlands_pueblo
+- minecraft:badlands
+- byg:autacama_desert?
+- terralith:arid_highlands?
+- terralith:red_oasis?
+- terralith:snowy_badlands?
+- wythers:badlands_desert?
+- wythers:kwongan_heath?
+- wythers:outback_desert?
+- wythers:red_desert?
+- tectonic:red_desert?
+- tectonic:red_desert_dunes?
+- jermsy:red_desert?
+
+#ad_astra:has_structure/mars_temple_biomes
+- ad_astra:martian_wastelands
+- ad_astra:martian_canyon_creek
+
+#c:ocean
+- #c:deep_ocean?
+- #c:shallow_ocean?
+- #minecraft:is_ocean?
+
+#towns_and_towers:has_structure/village_birch_forest_romanian
+- minecraft:birch_forest
+- minecraft:old_growth_birch_forest
+- terralith:birch_taiga?
+- terralith:temperate_highlands?
+- byg:aspen_forest?
+- byg:temperate_grove?
+- wythers:autumnal_birch_forest?
+- wythers:birch_taiga?
+- wythers:warm_birch_forest?
+- tectonic:autumn_birch_forest?
+
+#towns_and_towers:has_structure/exclusives/pillager_outpost_mediterranean
+- terralith:hot_shrubland?
+- terralith:brushland?
+- terralith:shrubland?
+- biomesoplenty:mediterranean_forest?
+- biomesoplenty:rocky_shrubland?
+- biomesoplenty:scrubland?
+- biomesoplenty:shrubland?
+- biomesoplenty:wooded_scrubland?
+- wythers:mediterranean_island?
+
+#minecraft:has_structure/ruined_portal_desert
+- minecraft:desert
+- minecraft:desert
+
+#minecraft:has_structure/ruined_portal_swamp
+- minecraft:swamp
+- minecraft:swamp
+
+#bosses_of_mass_destruction:collections/cold
+- minecraft:snowy_taiga
+- minecraft:snowy_plains
+- minecraft:snowy_slopes
+- minecraft:ice_spikes
+- minecraft:snowy_plains
+- minecraft:frozen_peaks
+- minecraft:snowy_beach
+- minecraft:frozen_ocean
+
+#towns_and_towers:has_structure/pillager_outpost_flower_forest
+- minecraft:flower_forest
+- terralith:cloud_forest?
+- terralith:sakura_grove?
+- promenade:white_cherry_oak_forest?
+- promenade:pink_cherry_oak_forest?
+- biomesoplenty:bamboo_grove?
+- biomesoplenty:cherry_blossom_grove?
+- byg:cherry_blossom_forest?
+- wythers:jade_highlands?
+- wythers:sakura_forest?
+- terrestria:japanese_maple_forest?
+- terrestria:sakura_forest?
+- jermsy:flower_fields?
+
+#incendium:structure/has_castle
+- ad_astra:infernal_venus_barrens
+
+#towns_and_towers:has_structure/village_snowy_slopes_inn
+- minecraft:snowy_slopes
+- byg:howling_peaks?
+- terralith:alpine_grove?
+
+#ad_astra:has_structure/venus_bullet_biomes
+- ad_astra:venus_wastelands
+
+#minecraft:has_structure/swamp_hut
+- minecraft:swamp
+- minecraft:swamp
+
+#towns_and_towers:has_structure/exclusives/pillager_outpost_rustic
+- byg:autumnal_forest?
+- byg:autumnal_taiga?
+- biomesoplenty:boreal_forest?
+- biomesoplenty:seasonal_forest?
+- promenade:pumpkin_pastures?
+- wythers:autumnal_flower_forest?
+- wythers:autumnal_forest?
+- wythers:autumnal_forest_edge?
+- wythers:autumnal_plains?
+- wythers:harvest_fields?
+- tectonic:autumn_forest?
+- tectonic:autumn_birch_forest?
+- traverse:autumnal_woods?
+- jermsy:seasonal_forest?
+
+#towns_and_towers:has_structure/village_snowy_taiga_viking
+- minecraft:snowy_taiga
+- terralith:forested_highlands?
+- terralith:shield?
+- terralith:shield_clearing?
+- terralith:snowy_maple_forest?
+- terralith:snowy_shield?
+- wythers:berry_bog?
+- wythers:crimson_tundra?
+- wythers:frigid_island?
+- wythers:frozen_island?
+- wythers:tundra?
+- minecraft:snowy_coniferious_forest?
+- jermsy:tundra?
+
+#towns_and_towers:has_structure/village_grove_villager_outpost
+- minecraft:grove
+- terralith:siberian_grove?
+
+#minecraft:has_structure/ruined_portal_nether
+- #minecraft:is_nether
+- #minecraft:is_nether
+
+#c:climate_dry
+- #c:in_nether?
+- #c:badlands?
+- #c:desert?
+- #c:savanna?
+
+#tconstruct:islands/clay
+- #minecraft:is_deep_ocean
+- #minecraft:is_ocean
+- #minecraft:is_beach
+- #minecraft:is_river
+- #minecraft:is_mountain
+- #minecraft:is_badlands
+- #minecraft:is_hill
+
+#ad_astra:has_structure/meteor_biomes
+- #minecraft:is_jungle
+- #minecraft:is_forest
+- #minecraft:is_taiga
+- minecraft:desert
+- minecraft:plains
+- minecraft:snowy_plains
+- minecraft:sunflower_plains
+- minecraft:savanna
+- minecraft:savanna_plateau
+- minecraft:windswept_savanna
+
+#minecraft:is_beach
+- minecraft:beach
+- minecraft:snowy_beach
+
+#towns_and_towers:has_structure/pillager_outpost_snowy_taiga
+- minecraft:snowy_taiga
+- terralith:forested_highlands?
+- terralith:shield?
+- terralith:shield_clearing?
+- terralith:snowy_maple_forest?
+- terralith:snowy_shield?
+- wythers:berry_bog?
+- wythers:crimson_tundra?
+- wythers:frigid_island?
+- wythers:frozen_island?
+- wythers:tundra?
+- tectonic:old_growth_snowy_taiga?
+- minecraft:snowy_coniferious_forest?
+- jermsy:tundra?
+
+#incendium:entity/has_spirit
+- incendium:withered_forest
+- minecraft:soul_sand_valley
+- incendium:withered_forest
+- minecraft:soul_sand_valley
+
+#minecraft:has_structure/ruined_portal_standard
+- #minecraft:is_beach
+- #minecraft:is_river
+- #minecraft:is_taiga
+- #minecraft:is_forest
+- minecraft:mushroom_fields
+- minecraft:ice_spikes
+- minecraft:dripstone_caves
+- minecraft:lush_caves
+- minecraft:savanna
+- minecraft:snowy_plains
+- minecraft:plains
+- minecraft:sunflower_plains
+- #minecraft:is_beach
+- #minecraft:is_river
+- #minecraft:is_taiga
+- #minecraft:is_forest
+- minecraft:mushroom_fields
+- minecraft:ice_spikes
+- minecraft:dripstone_caves
+- minecraft:lush_caves
+- minecraft:savanna
+- minecraft:snowy_plains
+- minecraft:plains
+- minecraft:sunflower_plains
+
+#minecraft:has_structure/pillager_outpost
+- minecraft:plains
+- minecraft:desert
+- minecraft:plains
+- minecraft:savanna
+- minecraft:snowy_plains
+- minecraft:taiga
+- #minecraft:is_mountain
+- minecraft:grove
+
+#c:mesa
+- minecraft:wooded_badlands
+- minecraft:eroded_badlands
+- minecraft:badlands
+
+#minecraft:is_taiga
+- minecraft:taiga
+- minecraft:snowy_taiga
+- minecraft:old_growth_pine_taiga
+- minecraft:old_growth_spruce_taiga
+
+#towns_and_towers:has_structure/pillager_outpost_snowy_beach
+- minecraft:snowy_beach
+- byg:shattered_glacier?
+- byg:glacial_chasm?
+
+#towns_and_towers:has_structure/pillager_outpost_snowy_plains
+- minecraft:snowy_plains
+- biomesoplenty:cold_desert?
+- biomesoplenty:muskeg?
+- byg:frosted_coniferous_forest?
+- wythers:deep_snowy_taiga?
+- wythers:snowy_bog?
+- wythers:snowy_fen?
+- wythers:snowy_tundra?
+
+#minecraft:is_mountain
+- minecraft:meadow
+- minecraft:frozen_peaks
+- minecraft:jagged_peaks
+- minecraft:stony_peaks
+- minecraft:snowy_slopes
+
+#bosses_of_mass_destruction:collections/in_nether
+- #minecraft:is_nether
+- ad_astra:infernal_venus_barrens
+
+#c:plains
+- minecraft:sunflower_plains
+- minecraft:plains
+
+#towns_and_towers:has_structure/village_old_growth_taiga_polish
+- minecraft:old_growth_pine_taiga
+- minecraft:old_growth_spruce_taiga
+- terralith:siberian_taiga?
+- terralith:valley_clearing?
+- byg:black_forest?
+- byg:dacite_ridges?
+- wythers:ancient_taiga?
+- wythers:old_growth_taiga_swamp?
+- wythers:temperate_rainforest?
+- tectonic:old_growth_snowy_taiga?
+
+#minecraft:has_structure/village_snowy
+- minecraft:snowy_plains
+- biomesoplenty:cold_desert?
+- biomesoplenty:snowy_coniferous_forest?
+- byg:frosted_coniferous_forest?
+- byg:shattered_glacier?
+- wythers:deep_snowy_taiga?
+- wythers:snowy_bog?
+- wythers:snowy_fen?
+- wythers:snowy_tundra?
+- minecraft:snowy_plains
+
+#c:snowy
+- minecraft:snowy_beach
+- minecraft:snowy_plains
+- minecraft:snowy_slopes
+- minecraft:snowy_taiga
+
+#towns_and_towers:has_structure/pillager_outpost_birch_forest
+- minecraft:birch_forest
+- minecraft:old_growth_birch_forest
+- terralith:birch_taiga?
+- terralith:temperate_highlands?
+- byg:aspen_forest?
+- byg:temperate_grove?
+- wythers:autumnal_birch_forest?
+- wythers:birch_taiga?
+- wythers:warm_birch_forest?
+- tectonic:autumn_birch_forest?
+
+#towns_and_towers:has_structure/village_sparse_jungle_polynesian
+- minecraft:sparse_jungle
+- terralith:tropical_jungle?
+- biomesoplenty:floodplain?
+- biomesoplenty:tropics?
+- byg:jacaranda_forest?
+- wythers:snady_jungle?
+- wythers:sparse_bamboo_jungle?
+- wythers:sparse_eucalyptus_jungle?
+- wythers:tropical_forest?
+- wythers:tropical_island?
+
+#doom:has_structure/code_structure_archmakyr_biomes
+- minecraft:end_barrens
+- minecraft:end_highlands
+- minecraft:end_barrens
+- minecraft:end_highlands
+- nullscape:crystal_peaks
+- nullscape:shadowlands
+
+#minecraft:is_badlands
+- minecraft:badlands
+- minecraft:eroded_badlands
+- minecraft:wooded_badlands
+
+#towns_and_towers:has_structure/village_wooded_badlands_tipi
+- minecraft:wooded_badlands
+- terralith:bryce_canyon?
+- terralith:painted_mountains?
+- byg:sierra_badlands?
+
+#c:climate_temperate
+- minecraft:forest
+- minecraft:sunflower_plains
+- minecraft:swamp
+- minecraft:stony_shore
+- minecraft:dark_forest
+- minecraft:windswept_forest
+- minecraft:birch_forest
+- minecraft:old_growth_birch_forest
+- minecraft:meadow
+- minecraft:plains
+
+#towns_and_towers:has_structure/pillager_outpost_wooded_badlands
+- minecraft:wooded_badlands
+- terralith:bryce_canyon?
+- terralith:painted_mountains?
+- byg:sierra_badlands?
+- wythers:chaparral?
+- terrestria:outback?
+
+#c:aquatic
+- #c:ocean?
+- #c:river?
+
+#c:taiga
+- #minecraft:is_taiga?
+
+#doom:has_structure/code_structure_hell_church_biomes
+- minecraft:eroded_badlands
+- ad_astra:mercury_deltas
+
+#towns_and_towers:has_structure/village_forest_ruins
+- minecraft:forest
+- biomesoplenty:old_growth_woodland?
+- biomesoplenty:woodland?
+- byg:ebony_woods?
+- byg:red_oak_forest?
+- wythers:ancient_copper_beech_forest?
+- wythers:ancient_emerald_beech_forest?
+- wythers:ancient_golden_beech_forest?
+- wythers:ancient_moss_forest?
+- wythers:forest_edge?
+- terrestria:cypress_forest?
+- terrestria:dense_woodlands?
+- jermsy:sparse_forest?
+
+#tconstruct:islands/blood
+- #minecraft:is_nether
+
+#minecraft:has_structure/nether_fossil
+- minecraft:soul_sand_valley
+- incendium:weeping_valley
+- incendium:quartz_flats
+- minecraft:soul_sand_valley
+
+#bosses_of_mass_destruction:has_structure/gauntlet_arena
+- #bosses_of_mass_destruction:collections/in_nether
+- #bosses_of_mass_destruction:collections/in_nether
+
+#towns_and_towers:has_structure/pillager_outpost_forest
+- minecraft:forest
+- biomesoplenty:old_growth_woodland?
+- biomesoplenty:woodland?
+- byg:ebony_woods?
+- byg:red_oak_forest?
+- wythers:ancient_copper_beech_forest?
+- wythers:ancient_emerald_beech_forest?
+- wythers:ancient_golden_beech_forest?
+- wythers:ancient_moss_forest?
+- wythers:forest_edge?
+- terrestria:dense_woodlands?
+- jermsy:sparse_forest?
+
+#c:vegetation_sparse
+- #c:savanna?
+- #c:desert?
+- #c:dead?
+- minecraft:lush_caves
+- #c:wasteland?
+
+#minecraft:has_structure/end_city
+- minecraft:end_highlands
+- minecraft:end_midlands
+- minecraft:end_highlands
+- minecraft:end_midlands
+- nullscape:shadowlands
+- nullscape:crystal_peaks
+
+#towns_and_towers:has_structure/exclusives/pillager_outpost_swedish
+- terralith:snowy_maple_forest?
+- terralith:forested_highlands?
+- terralith:shield?
+- biomesoplenty:fir_clearing?
+- byg:maple_taiga?
+- byg:zelkova_forest?
+- biomesoplenty:snowy_fir_clearing?
+- biomesoplenty:snowy_maple_forest?
+- wythers:boreal_forest_red?
+- wythers:boreal_forest_yellow?
+- wythers:cold_island?
+- wythers:maple_mountains?
+
+#towns_and_towers:has_structure/pillager_outpost_grove
+- minecraft:grove
+- byg:holing_peaks?
+- terralith:alpine_grove?
+- terralith:siberian_grove?
+
+#ad_astra:has_structure/oil_well_biomes
+- #minecraft:is_ocean
+- #minecraft:is_deep_ocean
+- minecraft:swamp
+
+#c:beach
+- #minecraft:is_beach?
+- minecraft:stony_shore
+
+#c:extreme_hills
+- minecraft:windswept_gravelly_hills
+- minecraft:windswept_hills
+
+#bosses_of_mass_destruction:collections/in_end
+- minecraft:end_highlands
+- minecraft:end_midlands
+- minecraft:small_end_islands
+- minecraft:end_barrens
+- byg:ivis_fields?
+- byg:nightshade_forest?
+- byg:ethereal_islands?
+- byg:viscal_isles?
+- byg:bulbis_gardens?
+- byg:shulkren_forest?
+- byg:cryptic_wastes?
+- byg:imparius_grove?
+
+#minecraft:has_structure/bastion_remnant
+- minecraft:crimson_forest
+- minecraft:nether_wastes
+- minecraft:soul_sand_valley
+- minecraft:warped_forest
+- incendium:inverted_forest
+- incendium:weeping_valley
+- minecraft:crimson_forest
+- minecraft:nether_wastes
+- minecraft:soul_sand_valley
+- minecraft:warped_forest
+- minecraft:basalt_deltas
+- ad_astra:martian_canyon_creek
+- incendium:infernal_dunes
+
+#towns_and_towers:has_structure/village_flower_forest_japanese
+- minecraft:flower_forest
+- terralith:cloud_forest?
+- terralith:sakura_grove?
+- promenade:white_cherry_oak_forest?
+- promenade:pink_cherry_oak_forest?
+- biomesoplenty:bamboo_grove?
+- biomesoplenty:cherry_blossom_grove?
+- byg:cherry_blossom_forest?
+- wythers:jade_highlands?
+- wythers:sakura_forest?
+- terrestria:japanese_maple_forest?
+- terrestria:sakura_forest?
+- jermsy:flower_fields?
+
+#minecraft:has_structure/ruined_portal_mountain
+- #minecraft:is_badlands
+- #minecraft:is_hill
+- minecraft:savanna_plateau
+- minecraft:windswept_savanna
+- minecraft:stony_shore
+- #minecraft:is_mountain
+- #minecraft:is_badlands
+- #minecraft:is_hill
+- minecraft:savanna_plateau
+- minecraft:windswept_savanna
+- minecraft:stony_shore
+- #minecraft:is_mountain

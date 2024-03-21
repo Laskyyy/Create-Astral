@@ -80,7 +80,13 @@ onEvent("recipes", (event) => {
     const DEFAULT_GRIND_TIME = 100; // five seconds
     const DEFAULT_GRIND_POWER = 5;
     const CRUSHING_RECIPES_TO_BECOME_GRINDING = [
-        ["minecraft:clay_ball", 1, "techreborn:clay_dust", undefined, undefined], // showing the 4th and 5th for demonstration
+        [
+            "minecraft:clay_ball",
+            1,
+            "techreborn:clay_dust",
+            undefined,
+            undefined,
+        ], // showing the 4th and 5th for demonstration
         ["minecraft:amethyst_cluster", 7, "minecraft:amethyst_shard"],
         ["minecraft:prismarine_crystals", 2, "minecraft:quartz"],
         ["minecraft:saddle", 3, "minecraft:leather"],
@@ -158,37 +164,4 @@ onEvent("recipes", (event) => {
             },
         ],
     });
-
-    // Vacuum Freezer
-
-    event.custom({
-        type: "techreborn:vacuum_freezer",
-        power: 25,
-        time: 100,
-        ingredients: [
-            {
-                fluid: "minecraft:water",
-                holder: "techreborn:cell",
-            },
-        ],
-        results: [
-            {
-                item: "techreborn:cell",
-                nbt: {
-                    fluid: "kubejs:supercooled_water",
-                },
-            },
-        ],
-    });
-
-    // Crafting Table recipes
-    event
-        .shapeless("3x minecraft:paper", [
-            "techreborn:saw_dust",
-            "techreborn:saw_dust",
-            "techreborn:saw_dust",
-            "minecraft:water_bucket",
-        ])
-        .replaceIngredient("minecraft:water_bucket", "minecraft:bucket")
-        .id("techreborn:crafting_table/paper_manual_only");
 });

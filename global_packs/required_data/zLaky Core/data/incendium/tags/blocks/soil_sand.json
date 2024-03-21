@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:soul_soil",
+    "minecraft:soul_sand",
+    "ad_astra:moon_stone",
+		"ad_astra:mars_stone",
+		"ad_astra:mercury_stone"
+  ]
+}

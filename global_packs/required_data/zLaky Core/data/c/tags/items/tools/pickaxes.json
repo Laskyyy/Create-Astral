@@ -6,8 +6,6 @@
     "minecraft:iron_pickaxe",
     "minecraft:diamond_pickaxe",
     "minecraft:golden_pickaxe",
-    "minecraft:netherite_pickaxe",
-    "tconstruct:pickaxe",
-    "tconstruct:pickadze"
+    "minecraft:netherite_pickaxe"
   ]
 }

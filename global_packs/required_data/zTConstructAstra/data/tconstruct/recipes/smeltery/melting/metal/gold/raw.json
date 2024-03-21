@@ -6,7 +6,7 @@
       "tag": "c:raw_materials/gold"
     },
     {
-      "item": "create:crushed_raw_gold"
+      "item": "create:crushed_gold_ore"
     }
   ],
   "result": {

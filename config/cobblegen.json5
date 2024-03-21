@@ -24,46 +24,6 @@
       "id": "minecraft:cobbled_deepslate",
       "weight": 100.0,
       "maxY": 0
-    },
-    {
-      "id": "ad_astra:moon_stone",
-      "weight": 100.0,
-      "dimensions": [
-      "ad_astra:moon",
-      "ad_astra:moon_orbit"
-       ],
-    },
-    {
-      "id": "ad_astra:mars_stone",
-      "weight": 100.0,
-      "dimensions": [
-      "ad_astra:mars",
-      "ad_astra:mars_orbit"
-       ],
-    },
-    {
-      "id": "ad_astra:venus_stone",
-      "weight": 100.0,
-      "dimensions": [
-      "ad_astra:venus",
-      "ad_astra:venus_orbit"
-       ],
-    },
-    {
-      "id": "ad_astra:mercury_stone",
-      "weight": 100.0,
-      "dimensions": [
-      "ad_astra:mercury",
-      "ad_astra:mercury_orbit"
-       ],
-    },
-    {
-      "id": "ad_astra:glacio_stone",
-      "weight": 100.0,
-      "dimensions": [
-      "ad_astra:glacio",
-      "ad_astra:glacio_orbit"
-       ],
     }
   ],
   "stoneGen": [
@@ -132,6 +92,58 @@
           "id": "minecraft:andesite",
           "weight": 3
         }
+      ],
+      "ad_astra:moon_stone": [
+        {
+          "id": "ad_astra:moon_stone",
+          "weight": 5.0
+        },
+        {
+          "id": "minecraft:basalt",
+          "weight": 1.0
+        }
+      ],
+      "ad_astra:mars_stone": [
+        {
+          "id": "ad_astra:mars_stone",
+          "weight": 9.0
+        },
+        {
+          "id": "ad_astra:conglomerate",
+          "weight": 1.0
+        }
+      ],
+      "ad_astra:mercury_stone": [
+        {
+          "id": "ad_astra:mercury_stone",
+          "weight": 5.0
+        },
+        {
+          "id": "minecraft:blackstone",
+          "weight": 1.0
+        }
+      ],
+      "compressor:double_compressed_andesite": [
+        {
+          "id": "minecraft:andesite",
+          "weight": 1.0
+        },
+        {
+          "id": "minecraft:cobblestone",
+          "weight": 5.0
+        }
+      ],
+      "compressor:triple_compressed_andesite": [
+        {
+          "id": "minecraft:andesite",
+          "weight": 1.0
+        }
+      ],
+      "compressor:quadruple_compressed_andesite": [
+        {
+          "id": "compressor:compressed_andesite",
+          "weight": 1.0
+        }
       ]
     },
     "stoneGen": {
@@ -151,6 +163,58 @@
         {
           "id": "minecraft:andesite",
           "weight": 3
+        }
+      ],
+      "ad_astra:moon_stone": [
+        {
+          "id": "ad_astra:moon_stone",
+          "weight": 5.0
+        },
+        {
+          "id": "minecraft:basalt",
+          "weight": 1.0
+        }
+      ],
+      "ad_astra:mars_stone": [
+        {
+          "id": "ad_astra:mars_stone",
+          "weight": 9.0
+        },
+        {
+          "id": "ad_astra:conglomerate",
+          "weight": 1.0
+        }
+      ],
+      "ad_astra:mercury_stone": [
+        {
+          "id": "ad_astra:mercury_stone",
+          "weight": 5.0
+        },
+        {
+          "id": "minecraft:blackstone",
+          "weight": 1.0
+        }
+      ],
+      "compressor:double_compressed_andesite": [
+        {
+          "id": "minecraft:andesite",
+          "weight": 1.0
+        },
+        {
+          "id": "minecraft:cobblestone",
+          "weight": 5.0
+        }
+      ],
+      "compressor:triple_compressed_andesite": [
+        {
+          "id": "minecraft:andesite",
+          "weight": 1.0
+        }
+      ],
+      "compressor:quadruple_compressed_andesite": [
+        {
+          "id": "compressor:compressed_andesite",
+          "weight": 1.0
         }
       ]
     }
