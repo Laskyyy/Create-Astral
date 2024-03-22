@@ -13,10 +13,6 @@ file = "config/ad_astra.toml"
 hash = "04da3fb6145613d8ec15db23f8c8247e723bd443e061bc938370f11f0eb721a5"
 
 [[files]]
-file = "config/alloygery.json"
-hash = "e94e638f47b3413ac388ca0a3e686785846a371d5be8407dd10d0e0ba30e70aa"
-
-[[files]]
 file = "config/animatica.properties"
 hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
@@ -173,10 +169,6 @@ file = "config/custommachinery.toml"
 hash = "d447d2769ab75866cda7fd9cb7131bf3ab43134e25530423d0752d07f6c5889c"
 
 [[files]]
-file = "config/de/mari_023/ae2wtlib.json5"
-hash = "7e11a218f0d09f7c0a0d8c52b17abf7c0614173efa69adc17576f5b60ead7853"
-
-[[files]]
 file = "config/debugify-descriptions.json"
 hash = "981f18c0cffb0ab5894724985f1de7e6b36435677ae8ae82497644e6cc099ba3"
 
@@ -185,12 +177,36 @@ file = "config/debugify.json"
 hash = "39abdafbddef1f987ab62faf2dc5960a619d46121b4b51e5f89e64edcff51dd5"
 
 [[files]]
-file = "config/dml-refabricated.json"
-hash = "85d6af1ada3a5e19bde9b2e5a1fcc6b83717fa8c4818c04117eaf37f72bb9ac7"
+file = "config/defaultsettings/Default/iris.properties"
+hash = "64720e70c3eb90f69a11e3d401a457296e3cc24517d5f52fec2378ca3643db1e"
 
 [[files]]
-file = "config/dml-simulacrum.json"
-hash = "af90c49f8df3fcf867a42828e20f4d6e72a6c26740e0ee42aa19e227778fc757"
+file = "config/defaultsettings/Default/keys.txt"
+hash = "08244d9ad419589ca5f3ddfb3751901bbe5b4da39e70aaeee731d9caf50f5d8c"
+
+[[files]]
+file = "config/defaultsettings/Default/options.txt"
+hash = "d97b735bf9d0a6d4648d444f370b5398d05bb47585f39861422aea3e16d46c1d"
+
+[[files]]
+file = "config/defaultsettings/Default/servers.dat"
+hash = "4e8689c61104dcb1bd9972902dfe9f7ae217ad487ca4b13073303984e046045b"
+
+[[files]]
+file = "config/defaultsettings/Default/sodium-extra-options.json"
+hash = "da9131aa732f0f7ec2743ee234deb7a76c5a599df8760ffa84c851b1a5f3381a"
+
+[[files]]
+file = "config/defaultsettings/Default/sodium-extra.properties"
+hash = "a2f1b47c1eaa119ab34727f1d43c2506cb3d7f17ba8fb4efb49e20c8e0b58e70"
+
+[[files]]
+file = "config/defaultsettings/Default/sodium-mixins.properties"
+hash = "051558518a6f3350fadb1546346d937e7f78f69834a075bf91b59921f151cc26"
+
+[[files]]
+file = "config/defaultsettings/Default/sodium-options.json"
+hash = "b0eed2e5aeef52603caf856e86c3b9b2a281a13ab2f7e6c3ef0bfb80003b4962"
 
 [[files]]
 file = "config/doodads.toml"
@@ -669,10 +685,6 @@ file = "config/invmove.json"
 hash = "f07273670fb6fbd2012d7a63e2453826f00e42dd82efb3ea82a4d81894f3b410"
 
 [[files]]
-file = "config/iris.properties"
-hash = "64720e70c3eb90f69a11e3d401a457296e3cc24517d5f52fec2378ca3643db1e"
-
-[[files]]
 file = "config/jade/jade.json"
 hash = "9890d61c1b8651cfa8f1edc7aceb7302e73c1a2c7487752077025748a3c0d8c0"
 
@@ -737,10 +749,6 @@ file = "config/loadmyresources/config.cfg"
 hash = "549a26b9b8ab9e2df0a427732a737c5dbcdb0b6790ad7ea9a387dea789abcad5"
 
 [[files]]
-file = "config/magna.json"
-hash = "6749b1d63e487d30f5ef70f945edbd36643353bf5c38081443593d8e702d66ed"
-
-[[files]]
 file = "config/malilib.json"
 hash = "a4976d6a5206a02939ee0ad164b06eb0bd0530dc5ffff42c9372327d1f5e5b64"
 
@@ -775,10 +783,6 @@ hash = "6b52769b3358f87b591871a4444f3cef8124a9dced0da1755f18db2f47adf4f3"
 [[files]]
 file = "config/modmenu.json"
 hash = "768cfcdddc8d3b7fab711e8af0ff50abbb328030358c672e77a1e2879bbd7029"
-
-[[files]]
-file = "config/mtr.json"
-hash = "2883380da1f6fded87039b34d7bb8f191189621314103816efca45ca5d94b2be"
 
 [[files]]
 file = "config/naturalist.json"
@@ -861,26 +865,6 @@ file = "config/reinfcore.json"
 hash = "8741b4717e0703f309e846ff34e79e59658634989808c44387c69fdfa6326453"
 
 [[files]]
-file = "config/roughlyenoughitems/changelog.txt"
-hash = "8d3828692497be68d54e98820db28df65ef79b28f16ec4ebeef0e0916588dd8e"
-
-[[files]]
-file = "config/roughlyenoughitems/config.json5"
-hash = "26c5a1f1f7a20abcbc026b1001a406e387d3cf49ba0f0a575b6e3c026f284795"
-
-[[files]]
-file = "config/roughlyenoughitems/hints.json"
-hash = "60e4b2c61fa4822ff0700b45377515fa5ae905a8541841c6a3ef6ada2deabd72"
-
-[[files]]
-file = "config/roughlyenoughitems/pinyin.properties"
-hash = "79a8464e90d0eec5cb1a3699816d0fc0bc9c65eef7a217922b244b4ed5f8e329"
-
-[[files]]
-file = "config/roughlyenoughitems/pinyin_double.properties"
-hash = "1d76a93e87de5615245a503f55f4f0a62becad4d1f8e566187890c3b32d611ef"
-
-[[files]]
 file = "config/rrp.properties"
 hash = "0cb553542d801655ca8993fd0a3b0808fccd3712f2c9fa029be0fef49a9ffabd"
 
@@ -923,22 +907,6 @@ hash = "228d16ac3ebb3efe67596f25498f97eb4a626ac108bdc0deb2ddf0bb5c32cde9"
 [[files]]
 file = "config/snifferconfig.properties"
 hash = "1bb1975c963b34b8dcfab7d22226158d7fb35aac6008a40d66e2423172d19868"
-
-[[files]]
-file = "config/sodium-extra-options.json"
-hash = "da9131aa732f0f7ec2743ee234deb7a76c5a599df8760ffa84c851b1a5f3381a"
-
-[[files]]
-file = "config/sodium-extra.properties"
-hash = "a2f1b47c1eaa119ab34727f1d43c2506cb3d7f17ba8fb4efb49e20c8e0b58e70"
-
-[[files]]
-file = "config/sodium-mixins.properties"
-hash = "051558518a6f3350fadb1546346d937e7f78f69834a075bf91b59921f151cc26"
-
-[[files]]
-file = "config/sodium-options.json"
-hash = "b0eed2e5aeef52603caf856e86c3b9b2a281a13ab2f7e6c3ef0bfb80003b4962"
 
 [[files]]
 file = "config/starterkit-fabric.json5"
@@ -13225,6 +13193,11 @@ hash = "ed245958a858e8a3903a98a58924772fcbbb4ee29f9171dc9b4be61f71f86dff"
 metafile = true
 
 [[files]]
+file = "mods/defaultsettings-fabric.pw.toml"
+hash = "b1aeded25dacd8aa1e7aaafac2616fbffa8e58a96de69f0ec81c9d8206dbc65d"
+metafile = true
+
+[[files]]
 file = "mods/disableportals-0.2.0-1.18-github-fork.jar"
 hash = "8804f035e6adbe28a04804959976c58922ce44a967590835cbc52927eb7768af"
 
@@ -13425,6 +13398,11 @@ metafile = true
 [[files]]
 file = "mods/jade.pw.toml"
 hash = "d9c33268318f30f8ea93d5b3d26ad77bcdf2530936b061f7ff800768c6402410"
+metafile = true
+
+[[files]]
+file = "mods/jcplugin.pw.toml"
+hash = "80a30ef8c5cc10aff5df67dff90183021571dbd2213a2cb34fd8ce016e98570a"
 metafile = true
 
 [[files]]
@@ -13822,10 +13800,6 @@ metafile = true
 file = "mods/yttr.pw.toml"
 hash = "e1c18b00c91c6b5a8193566f4a5316ff7ea03b49d0f7a31479cfe187d1bc53fa"
 metafile = true
-
-[[files]]
-file = "options.txt"
-hash = "dcecee57765ebfe5553d690a8b1c26079c0cf6e05ea2151b90f529846c66216e"
 
 [[files]]
 file = "quests_structures/distillation.nbt"
@@ -27729,7 +27703,7 @@ hash = "9c940b21da97c429cf1674123f5c803575da2cb5b19f12a8c02a574739aa5cee"
 
 [[files]]
 file = "resources/createastral/textures/item/separation_agent.png"
-hash = "bc476d1be7960930cd30c89c00c276e25dadfd1fafd54114e6ce280f357dfd9d"
+hash = "b6e0bfe57a03447dc239bc85eda3af44930b9e3f119a2e8190e3211cd6bea9ec"
 
 [[files]]
 file = "resources/createastral/textures/item/shimmer_amplifier.png"
@@ -30640,6 +30614,14 @@ file = "resources/yttr/lang/en_us.json"
 hash = "94d2c2c24f61212d7038b9c8e4f84313f51d4604d81e31df00f7b7f96419ae33"
 
 [[files]]
+file = "resources/yttr/models/block/bedrock_smasher.json"
+hash = "69214e6ed502fa09871b61d39ec710881822390baa867db97aef85b208017dbb"
+
+[[files]]
+file = "resources/yttr/models/block/ruined_bedrock.json"
+hash = "cc166d588e5f3c6c64370c865e363e54a4ac2a8eca3085f974c31e25cf84c1ec"
+
+[[files]]
 file = "resources/yttr/textures/block/gadolinite.png"
 hash = "1ec361b0ee7014ef405e432593c71bd31e8debcd3b728a3a49ee0ec6ebc119ac"
 
@@ -30650,10 +30632,6 @@ hash = "dfc236ad333a94d4b3b56cdcac9feeeb9b63c701321dc1c31e48ae10418951a4"
 [[files]]
 file = "server.packwizignore"
 hash = "b49702946920c178a9b1d0004f19ff05904a4f76ea92a5820206eb140c57ba08"
-
-[[files]]
-file = "servers.dat"
-hash = "4e8689c61104dcb1bd9972902dfe9f7ae217ad487ca4b13073303984e046045b"
 
 [[files]]
 file = "shaderpacks/ComplementaryReimagined_r2.3.zip"
