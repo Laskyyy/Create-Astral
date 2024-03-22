@@ -181,6 +181,18 @@ file = "config/defaultsettings/Default/iris.properties"
 hash = "64720e70c3eb90f69a11e3d401a457296e3cc24517d5f52fec2378ca3643db1e"
 
 [[files]]
+file = "config/defaultsettings/Default/keys.txt"
+hash = "08244d9ad419589ca5f3ddfb3751901bbe5b4da39e70aaeee731d9caf50f5d8c"
+
+[[files]]
+file = "config/defaultsettings/Default/options.txt"
+hash = "d97b735bf9d0a6d4648d444f370b5398d05bb47585f39861422aea3e16d46c1d"
+
+[[files]]
+file = "config/defaultsettings/Default/servers.dat"
+hash = "4e8689c61104dcb1bd9972902dfe9f7ae217ad487ca4b13073303984e046045b"
+
+[[files]]
 file = "config/defaultsettings/Default/sodium-extra-options.json"
 hash = "da9131aa732f0f7ec2743ee234deb7a76c5a599df8760ffa84c851b1a5f3381a"
 
@@ -194,7 +206,7 @@ hash = "051558518a6f3350fadb1546346d937e7f78f69834a075bf91b59921f151cc26"
 
 [[files]]
 file = "config/defaultsettings/Default/sodium-options.json"
-hash = "8b755b8ea265e4368343bf49d2978d8a3288a78b635f2402042795519b70b156"
+hash = "b0eed2e5aeef52603caf856e86c3b9b2a281a13ab2f7e6c3ef0bfb80003b4962"
 
 [[files]]
 file = "config/doodads.toml"
@@ -2326,7 +2338,7 @@ hash = "53e25936888a1c26711049318d7fdca3c6ee40685666bbfa5c39008992b330d7"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/structure_set/heartstone.json"
-hash = "4df7cb93c052b21eaa7ae6ca69780c5e6b36d38f985cc6e924dcb4d2afa02464"
+hash = "980578438a7ebf58d99b9529b1e8649b9d5d154dc54821124dec8e65a0db6617"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/structure_set/mars_bastion.json"
@@ -12801,8 +12813,24 @@ file = "kubejs/README.txt"
 hash = "02d6feb3afe1d9c96e137f8baaa71de982f1af0a2b37fbcba73f34ee59ebbd4d"
 
 [[files]]
+file = "kubejs/assets/kubejs/ponder/electrolyser.nbt"
+hash = "55c658051178897f280d141d74134508a0bc2f44aa0d0f1eed4a149762e279bc"
+
+[[files]]
+file = "kubejs/assets/kubejs/ponder/melter.nbt"
+hash = "7b39e406de174cbdf2a04c973ea4cd488ec0d28800902863bfd993eb81434ad3"
+
+[[files]]
+file = "kubejs/assets/kubejs/ponder/portal.nbt"
+hash = "148cce81341c2a3f7f671785152f72df262412465ae8baca3f4fd3fa1ffee9a6"
+
+[[files]]
 file = "kubejs/client_scripts/hide_from_rei.js"
 hash = "29ec09ae2638dd2a69ede8cb31ddb1858b4eb0f91b999d208cd9a99d4c93e1ab"
+
+[[files]]
+file = "kubejs/client_scripts/ponder.js"
+hash = "f98ae55d9890abd7c5460ec85c0f65d05b382a6bfcf034cd70bdaaed9a8c4e97"
 
 [[files]]
 file = "kubejs/client_scripts/script.js"
@@ -13116,7 +13144,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-fabric.pw.toml"
-hash = "ad70eedad0f2bdbdb5612c78bab6c3076afdbabd881d44f46ede432ed4d0bb4b"
+hash = "cc3e99c2dac6d48d96fa0b17b598e57f5ac6e8cf16ad06fdd9b116651895f478"
 metafile = true
 
 [[files]]
@@ -13349,9 +13377,8 @@ hash = "defe6aa9e3a2fc684c657bfa60ddf07f7cd1df5fe388ec34fdc7151bdfc1c4ee"
 metafile = true
 
 [[files]]
-file = "mods/iris-flywheel-compat.pw.toml"
-hash = "43d157d9df5bf5643e3c237e98afaee065cbe242674827e59d1c078206ce5e1d"
-metafile = true
+file = "mods/iris-flywheel-compat-1.18.2-0.2.0.jar"
+hash = "4057074e5de7f3b7ff0e537f5a59e768e88320b2b932a6329794cf59400f501d"
 
 [[files]]
 file = "mods/iris.pw.toml"
@@ -13577,6 +13604,20 @@ hash = "0146eb69adbb146ed4594424408201f49118cd947e6720c89fcbac4e09b49bd3"
 metafile = true
 
 [[files]]
+file = "mods/ponder.pw.toml"
+hash = "f192b19241ef95fb905a0145be3f5f1074efbd7861485bd58f7626bb0f40a476"
+metafile = true
+
+[[files]]
+file = "mods/ponder_overrides-0.0.1+1.18.2.jar"
+hash = "b3800fb7b82bf5aacc9557586c7f35864e68da7625dfdfdf93da4c39db491149"
+
+[[files]]
+file = "mods/probejs.pw.toml"
+hash = "8b5a1ee5ce55accd2b51a9bdb08c0f401d69dbaa7f5113668804aa477dfb9c9e"
+metafile = true
+
+[[files]]
 file = "mods/project-table-refabricated.pw.toml"
 hash = "0d45af1f7195d066be6f17614a52540b4e52474303b30d5e205fac73b2ffae39"
 metafile = true
@@ -13761,16 +13802,16 @@ hash = "e1c18b00c91c6b5a8193566f4a5316ff7ea03b49d0f7a31479cfe187d1bc53fa"
 metafile = true
 
 [[files]]
-file = "options.txt"
-hash = "dcecee57765ebfe5553d690a8b1c26079c0cf6e05ea2151b90f529846c66216e"
-
-[[files]]
 file = "quests_structures/distillation.nbt"
 hash = "57ea6013e1a7ca5546e33873156b81be406a6a947632b1417349ea886b1736dc"
 
 [[files]]
 file = "quests_structures/shimmerrefinery.nbt"
 hash = "5bd44777431ad8f707dc8bb913db85c1dcff1e502e4abc0937c8214988611483"
+
+[[files]]
+file = "reload-example.bat"
+hash = "a872880c9e5a1f76feb05ca73ec912477edb008120508a63ab1f2244b2b24607"
 
 [[files]]
 file = "resourcepacks/BetterVanillaBuildingFenceFixes/assets/bettervanillabuilding/models/block/fence_inventory.json"
@@ -27662,7 +27703,7 @@ hash = "9c940b21da97c429cf1674123f5c803575da2cb5b19f12a8c02a574739aa5cee"
 
 [[files]]
 file = "resources/createastral/textures/item/separation_agent.png"
-hash = "bc476d1be7960930cd30c89c00c276e25dadfd1fafd54114e6ce280f357dfd9d"
+hash = "b6e0bfe57a03447dc239bc85eda3af44930b9e3f119a2e8190e3211cd6bea9ec"
 
 [[files]]
 file = "resources/createastral/textures/item/shimmer_amplifier.png"
@@ -30573,6 +30614,14 @@ file = "resources/yttr/lang/en_us.json"
 hash = "94d2c2c24f61212d7038b9c8e4f84313f51d4604d81e31df00f7b7f96419ae33"
 
 [[files]]
+file = "resources/yttr/models/block/bedrock_smasher.json"
+hash = "69214e6ed502fa09871b61d39ec710881822390baa867db97aef85b208017dbb"
+
+[[files]]
+file = "resources/yttr/models/block/ruined_bedrock.json"
+hash = "cc166d588e5f3c6c64370c865e363e54a4ac2a8eca3085f974c31e25cf84c1ec"
+
+[[files]]
 file = "resources/yttr/textures/block/gadolinite.png"
 hash = "1ec361b0ee7014ef405e432593c71bd31e8debcd3b728a3a49ee0ec6ebc119ac"
 
@@ -30583,10 +30632,6 @@ hash = "dfc236ad333a94d4b3b56cdcac9feeeb9b63c701321dc1c31e48ae10418951a4"
 [[files]]
 file = "server.packwizignore"
 hash = "b49702946920c178a9b1d0004f19ff05904a4f76ea92a5820206eb140c57ba08"
-
-[[files]]
-file = "servers.dat"
-hash = "4e8689c61104dcb1bd9972902dfe9f7ae217ad487ca4b13073303984e046045b"
 
 [[files]]
 file = "shaderpacks/ComplementaryReimagined_r2.3.zip"
