@@ -29,14 +29,15 @@ jobs:
                   java-version: 17
                   distribution: "temurin"
 
-            - name: Get latest packwiz binary
-              id: download-packwiz
-              uses: dawidd6/action-download-artifact@v2
-              with:
-                  workflow: go.yml
-                  branch: main
-                  name: Linux 64-bit x86
-                  repo: packwiz/packwiz
+# The following command *would* work if there were artifacts, but we'll use the locally cached version
+#            - name: Get latest packwiz binary
+#              id: download-packwiz
+#              uses: dawidd6/action-download-artifact@v2
+#              with:
+#                  workflow: go.yml
+#                  branch: main
+#                  name: Linux 64-bit x86
+#                  repo: packwiz/packwiz
 
             - name: Make packwiz binary executable
               run: chmod +x ./packwiz
