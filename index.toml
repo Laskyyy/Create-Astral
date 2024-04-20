@@ -12968,9 +12968,8 @@ hash = "1b4d333af405a9f2b1efe24be61b1bc3ac277c15574845b7d8d9623e4cd6dbde"
 metafile = true
 
 [[files]]
-file = "mods/automobility.pw.toml"
-hash = "96fd4cfd832d4ce4be62a8999f93cbba591ed51902bfaf9f473795239c6356bc"
-metafile = true
+file = "mods/automobility-0.3+1.18.2.jar"
+hash = "4218910eff0a38676a3941f559f812dc4dc756daed2ef3177864d24e213edd55"
 
 [[files]]
 file = "mods/autosnrails.pw.toml"
@@ -13147,7 +13146,7 @@ metafile = true
 
 [[files]]
 file = "mods/ctm-refabricated.pw.toml"
-hash = "5f14558ac6ba4bbe04bc24be85d93d54e193f3d1c62ec5bb681c1548715b941c"
+hash = "62ded82bb3d72667ba403525e73c587c73a757929622094bb7fec7bd521cc62d"
 metafile = true
 
 [[files]]
@@ -13573,7 +13572,7 @@ hash = "ddf51bb0a38783af1e84e4987cb29a19164cb7f7891886d04cf7730f8d67f22f"
 
 [[files]]
 file = "mods/playeranimator.pw.toml"
-hash = "982b5f30de4ef420d5fd368600c6fd23ab0fc155c90f6819475cfb6a8fba8bf3"
+hash = "d116a63f0fe2a285642c79e592b4999aa8595b8fa7ffdcbe99b802642862ad53"
 metafile = true
 
 [[files]]
