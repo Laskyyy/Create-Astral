@@ -7,3 +7,6 @@ reload.bat
 
 # Exclude exported Modrinth modpacks
 *.mrpack
+
+# IntelliJ project files
+.idea
