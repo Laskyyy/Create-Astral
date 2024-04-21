@@ -1068,7 +1068,7 @@
 			tasks: [{
 				id: "18650A6066610756"
 				type: "item"
-				item: "camsbackpacks:white_backpack"
+				item: "travelersbackpack:standard"
 			}]
 			description: ["{chapter.1.quest.31.description.1}"]
 			id: "501AD44D7875F4D9"
