@@ -1,0 +1,26 @@
+{
+
+
+  "block.tconstruct.cobalt_ore": "Księżycowa Ruda Kobaltu",
+
+
+  "material.tconstruct.desh": "Desh",
+  "material.tconstruct.desh.flavor": "Miękke, Szybkie, Niezawodne.",
+  "material.tconstruct.desh.encyclopedia": "Średnie ogólne statystyki, zawiera wiele nietypowych modyfikatorów dla kopania i wygody.",
+
+  "material.tconstruct.ostrum": "Ostrum",
+  "material.tconstruct.ostrum.flavor": "To waży tony! Robisz z tego narzędzia?!.",
+  "material.tconstruct.ostrum.encyclopedia": "Boska trwałość, ale jest uciążliwy w użyciu ze względu na niską prędkość kopania. Niezwykle przydatny do kopania rud.",
+
+  "material.tconstruct.calorite": "Kaloryt",
+  "material.tconstruct.calorite.flavor": "Najostrzejszy metal w krainie.",
+  "material.tconstruct.calorite.encyclopedia": "Krwistoczerwony, tak jak twoi wrogowie po dotknięciu ostrza twojej broni.",
+
+  "material.tconstruct.shadow": "Cień",
+  "material.tconstruct.shadow.flavor": "Tak gęsty jak ciemna materia.",
+  "material.tconstruct.shadow.encyclopedia": "Absurdalna wytrzymałość. Tworzy niemal idealne uchwyty i wiązania do narzędzi.",
+
+  "material.tconstruct.radiant": "Promień",
+  "material.tconstruct.radiant.flavor": "Twarde. Światło.",
+  "material.tconstruct.radiant.encyclopedia": "Moc samego światła. Niezwykle kruchy w procesie odlewania, ma niezrównane modyfikatory, szybkość i slotami do zabawy. "
+}

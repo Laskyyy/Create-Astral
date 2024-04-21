@@ -1,0 +1,11 @@
+{
+  ///// FLUIDS NAME HERE /////
+  "fluid.kubejs.molten_calorite" : "Kaloryt",
+  "fluid.kubejs.molten_ostrum" : "Ostrum",
+  "fluid.kubejs.molten_desh" : "Desh",
+  "fluid.kubejs.plasma_fluid" : "Płyn Plazmy Kwarkowo-Gluonowej",
+  "fluid.kubejs.hellfire" : "Piekielnyogień",
+  "fluid.kubejs.compound_mixture" : "Mieszanka Związków",
+  "fluid.kubejs.shimmer" : "Połysk",
+  "fluid.kubejs.blast-resistant_cement" : "Wybucho-Chronny Beton",
+}
