@@ -22,7 +22,7 @@ onEvent("ponder.tag", (event) => {
 onEvent("ponder.registry", (event) => {
     // Registers a ponder to the custom machine block, so create offers to ponder
     // This should never actually be played, as the ponder should be overwritten
-    // using NBT Ponders
+    // using Ponder Overrides in the event handler below
     event
         .create("custommachinery:custom_machine_item")
         .scene(
