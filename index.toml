@@ -12830,7 +12830,7 @@ hash = "29ec09ae2638dd2a69ede8cb31ddb1858b4eb0f91b999d208cd9a99d4c93e1ab"
 
 [[files]]
 file = "kubejs/client_scripts/ponder.js"
-hash = "f98ae55d9890abd7c5460ec85c0f65d05b382a6bfcf034cd70bdaaed9a8c4e97"
+hash = "a36f8936b2e8db8155f59adce7042ddbb54ec8a88b9f9126b886b4bb735e0783"
 
 [[files]]
 file = "kubejs/client_scripts/script.js"
