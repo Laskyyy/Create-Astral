@@ -1,13 +1,13 @@
 name = "Peripheralium"
-filename = "Peripheralium-0.4.20-1.18.2.jar"
+filename = "peripheralium-0.4.22-1.18.2.jar"
 side = "both"
 
 [download]
-mode = "metadata:curseforge"
 hash-format = "sha1"
-hash = "841d6b07a640663288083ce8b98896a79ea70407"
+hash = "ab5ea8686259bc935a52da55f9eff7a0725b6416"
+mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 4509492
+file-id = 4665907
 project-id = 621088

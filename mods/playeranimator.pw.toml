@@ -1,6 +1,6 @@
 name = "Player Animator"
 filename = "player-animation-lib-fabric-1.0.2+1.18.jar"
-side = "client"
+side = "both"
 
 [download]
 mode = "metadata:curseforge"
