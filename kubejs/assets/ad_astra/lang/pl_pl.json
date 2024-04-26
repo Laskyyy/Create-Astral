@@ -1,10 +1,10 @@
 {
-    "entity.ad_astra.glacian_ram": "Księżycowy Baran",
-    "item.ad_astra.netherite_space_boots": "Wyłożone-ołowiem Kosmiczne buty",
-    "item.ad_astra.netherite_space_helmet": "Wyłożony-ołowiem Kosmiczny Hełm",
-    "item.ad_astra.netherite_space_pants": "Wyłożone-ołowiem Kosmiczne Spodnie",
-    "item.ad_astra.netherite_space_suit": "Wyłożony-ołowiem Kosmiczny Strój",
-    "item.ad_astra.tier_2_rocket": "Rakieta Deshowa",
-    "item.ad_astra.tier_3_rocket": "Rakieta Otrumowa",
-    "item.ad_astra.tier_4_rocket": "Rakieta Kalorytowa"
+    "entity.ad_astra.glacian_ram": "Księżycowy baran",
+    "item.ad_astra.netherite_space_boots": "kosmiczne buty wyłożone ołowiem",
+    "item.ad_astra.netherite_space_helmet": "Hełm kosmiczny wyłożony ołowiem",
+    "item.ad_astra.netherite_space_pants": "Spodnie kosmiczne wyłożone ołowiem",
+    "item.ad_astra.netherite_space_suit": "Skafander kosmiczny wyłożony ołowiem",
+    "item.ad_astra.tier_2_rocket": "Rakieta deszowa",
+    "item.ad_astra.tier_3_rocket": "Rakieta otrumowa",
+    "item.ad_astra.tier_4_rocket": "Rakieta kalorytowa"
 }

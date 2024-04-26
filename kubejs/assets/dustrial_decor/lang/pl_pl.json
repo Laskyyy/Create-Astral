@@ -1,11 +1,11 @@
 {
-  "item.dustrial_decor.cast_iron_billet": "Kęs Żelaza Andezytowego",
-  "block.dustrial_decor.cast_iron_block": "Blok Żelaza Andezytowego",
-  "block.dustrial_decor.cast_iron_pillar": "Filar Żelaza Andezytowego",
-  "block.dustrial_decor.cast_iron_bricks": "Cegły Żelaza Andezytowego",
-  "block.dustrial_decor.cast_iron_brick_slab": "Ceglana Płyta Żelaza Andezytowego",
-  "block.dustrial_decor.cast_iron_brick_vertical_slab": "Ceglana Pionowa Płyta Żelaza Andezytowego",
-  "block.dustrial_decor.cast_iron_brick_stairs": "Ceglane Schody Żelaza Andezytowego",
-  "block.dustrial_decor.engraved_cast_iron_block": "Grawerowany Blok Żelaza Andezytowego",
-  "block.dustrial_decor.cast_iron_balustrade": "Balustrada Żelaza Andezytowego"
+  "item.dustrial_decor.cast_iron_billet": "Kęs z żelaza andezytowego",
+  "block.dustrial_decor.cast_iron_block": "Blok żelaza andezytowego",
+  "block.dustrial_decor.cast_iron_pillar": "Filar z żelaza andezytowego",
+  "block.dustrial_decor.cast_iron_bricks": "Cegły z żelaza andezytowego",
+  "block.dustrial_decor.cast_iron_brick_slab": "Ceglana płyta z żelaza andezytowego",
+  "block.dustrial_decor.cast_iron_brick_vertical_slab": "Ceglana pionowa płyta z żelaza andezytowego",
+  "block.dustrial_decor.cast_iron_brick_stairs": "Ceglane schody z żelaza andezytowego",
+  "block.dustrial_decor.engraved_cast_iron_block": "Grawerowany blok z żelaza andezytowego",
+  "block.dustrial_decor.cast_iron_balustrade": "Balustrada z żelaza andezytowego"
 }
