@@ -1,5 +1,5 @@
 {
     "item.create.brass_hand":"Gumowa dłoń",
-    "item.create.blaze_cake":"Użyj paliwa, żeby supergrzać płomyków!",
-    "item.create.blaze_cake.tooltip.summary":"Już nie supergrzewa! Użyj procesów opisanych w rozdziale 4 do supergrzania palników płomykowych. (Wiadro paliwa)"
+    "item.create.blaze_cake":"Użyj paliwa, by silnie podgrzać płomienne palniki!",
+    "item.create.blaze_cake.tooltip.summary":"Nie podgrzewa silnie! Użyj procesów opisanych w rozdziale 4, by silnie podgrzać płomienne palniki. (Wiadro paliwa)"
 }
