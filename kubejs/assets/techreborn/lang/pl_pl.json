@@ -1,0 +1,14 @@
+{
+
+  "block.techreborn.nuke": "W.O.L.F",
+  "block.techreborn.deepslate_silver_ore": "Księżycowa złoże srebra",
+  "block.techreborn.deepslate_lead_ore": "Marsowe złoże ołowiu",
+  "block.techreborn.deepslate_iridium_ore": "Merkurowe złoże irydu",
+  "block.techreborn.deepslate_galena_ore": "Merkurowe złoże galeny",
+  "block.techreborn.deepslate_sodalite_ore": "Merkurowe złoże sodalitu",
+  "item.techreborn.electronic_circuit": "Zaawansowany układ zintegrowany",
+  "item.techreborn.industrial_circuit": "Przemysłowy moduł obliczeniowy",
+  "item.techreborn.machine_parts": "Części maszyn",
+  "item.techreborn.uu_matter": "Rafinowany połysk",
+  "item.techreborn.synthetic_redstone_crystal": "Syntetyczny kryształ redstone'u"
+}
