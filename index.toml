@@ -12829,6 +12829,14 @@ file = "kubejs/config/common.properties"
 hash = "4869ea0c45f560ff504433e0873edc13be683a4dec98d58bb09e24aa7a388355"
 
 [[files]]
+file = "kubejs/exported/KubeJS Virtual Data Pack [high priority].zip"
+hash = "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85"
+
+[[files]]
+file = "kubejs/exported/KubeJS Virtual Data Pack [low priority].zip"
+hash = "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85"
+
+[[files]]
 file = "kubejs/jsconfig.json"
 hash = "82dbdb416bc14a9ac3e577579f13298b7fa563efb3c0118ff8e35d179e780f6d"
 
@@ -13138,11 +13146,6 @@ metafile = true
 [[files]]
 file = "mods/createbigcannons-fabric-1.18.2-0.5.4-nightly-13f4b5f.jar"
 hash = "624da42e718df537f0d8dced699022281c342287f47c3d698c9db91e7a2cdfb5"
-
-[[files]]
-file = "mods/createfabricreibugfix.pw.toml"
-hash = "8e2e7c409ba40e6963bfa649ab51718c0059abed3cf4790fd9c2fcd0e6369f5b"
-metafile = true
 
 [[files]]
 file = "mods/ctm-refabricated.pw.toml"
@@ -13632,7 +13635,7 @@ metafile = true
 
 [[files]]
 file = "mods/roughly-enough-items.pw.toml"
-hash = "00fbda5f4b751ba675f2c5f37639ccd8cb01575435d57b397c480932e98b469e"
+hash = "b518d8c6c92ebe8ed1ee86c69211453dace7a77a48f688546bf0e688f93e8287"
 metafile = true
 
 [[files]]
