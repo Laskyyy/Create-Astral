@@ -12830,7 +12830,19 @@ hash = "29ec09ae2638dd2a69ede8cb31ddb1858b4eb0f91b999d208cd9a99d4c93e1ab"
 
 [[files]]
 file = "kubejs/client_scripts/ponder.js"
-hash = "a36f8936b2e8db8155f59adce7042ddbb54ec8a88b9f9126b886b4bb735e0783"
+hash = "3482a9e0f035295e1e680baa38afab8e0f265e8d0e48d0e1ad1a571ab55d555e"
+
+[[files]]
+file = "kubejs/client_scripts/ponders/electrolyser.js"
+hash = "aefc08f21b574516d4051b29ee7d8020a4ef5dc480507ee1a79e591372c62edd"
+
+[[files]]
+file = "kubejs/client_scripts/ponders/moon_portal.js"
+hash = "84329bdb7d6bfb258c5279283bbe063ec1c94c0f79a11fdd9a7babcbe2c004ce"
+
+[[files]]
+file = "kubejs/client_scripts/ponders/seared_melter.js"
+hash = "6a59ad520f16495d04d14580b9047d57417165704f3292cd0ce30109c1277920"
 
 [[files]]
 file = "kubejs/client_scripts/script.js"
