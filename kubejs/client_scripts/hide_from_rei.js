@@ -340,57 +340,180 @@ var HIDDEN_ITEMS = [
     Item.of("tconstruct:crafting_station", '{texture:"minecraft:acacia_wood"}'),
     Item.of("tconstruct:crafting_station", '{texture:"minecraft:birch_log"}'),
     Item.of("tconstruct:crafting_station", '{texture:"minecraft:birch_wood"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"minecraft:crimson_hyphae"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"minecraft:crimson_stem"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"minecraft:dark_oak_log"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"minecraft:dark_oak_wood"}'),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"minecraft:crimson_hyphae"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"minecraft:crimson_stem"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"minecraft:dark_oak_log"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"minecraft:dark_oak_wood"}'
+    ),
     Item.of("tconstruct:crafting_station", '{texture:"minecraft:jungle_log"}'),
     Item.of("tconstruct:crafting_station", '{texture:"minecraft:jungle_wood"}'),
     Item.of("tconstruct:crafting_station", '{texture:"minecraft:oak_wood"}'),
     Item.of("tconstruct:crafting_station", '{texture:"minecraft:spruce_log"}'),
     Item.of("tconstruct:crafting_station", '{texture:"minecraft:spruce_wood"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"minecraft:stripped_acacia_log"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"minecraft:stripped_acacia_wood"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"minecraft:stripped_birch_log"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"minecraft:stripped_birch_wood"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"minecraft:stripped_crimson_hyphae"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"minecraft:stripped_crimson_stem"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"minecraft:stripped_dark_oak_log"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"minecraft:stripped_dark_oak_wood"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"minecraft:stripped_jungle_log"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"minecraft:stripped_jungle_wood"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"minecraft:stripped_oak_log"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"minecraft:stripped_oak_wood"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"minecraft:stripped_spruce_log"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"minecraft:stripped_spruce_wood"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"minecraft:stripped_warped_hyphae"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"minecraft:stripped_warped_stem"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"minecraft:warped_hyphae"}'),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"minecraft:stripped_acacia_log"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"minecraft:stripped_acacia_wood"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"minecraft:stripped_birch_log"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"minecraft:stripped_birch_wood"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"minecraft:stripped_crimson_hyphae"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"minecraft:stripped_crimson_stem"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"minecraft:stripped_dark_oak_log"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"minecraft:stripped_dark_oak_wood"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"minecraft:stripped_jungle_log"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"minecraft:stripped_jungle_wood"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"minecraft:stripped_oak_log"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"minecraft:stripped_oak_wood"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"minecraft:stripped_spruce_log"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"minecraft:stripped_spruce_wood"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"minecraft:stripped_warped_hyphae"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"minecraft:stripped_warped_stem"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"minecraft:warped_hyphae"}'
+    ),
     Item.of("tconstruct:crafting_station", '{texture:"minecraft:warped_stem"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"tconstruct:bloodshroom_log"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"tconstruct:bloodshroom_wood"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"tconstruct:greenheart_log"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"tconstruct:greenheart_wood"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"tconstruct:skyroot_log"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"tconstruct:skyroot_wood"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"tconstruct:stripped_bloodshroom_log"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"tconstruct:stripped_bloodshroom_wood"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"tconstruct:stripped_greenheart_log"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"tconstruct:stripped_greenheart_wood"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"tconstruct:stripped_skyroot_log"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"tconstruct:stripped_skyroot_wood"}'),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"tconstruct:bloodshroom_log"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"tconstruct:bloodshroom_wood"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"tconstruct:greenheart_log"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"tconstruct:greenheart_wood"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"tconstruct:skyroot_log"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"tconstruct:skyroot_wood"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"tconstruct:stripped_bloodshroom_log"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"tconstruct:stripped_bloodshroom_wood"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"tconstruct:stripped_greenheart_log"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"tconstruct:stripped_greenheart_wood"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"tconstruct:stripped_skyroot_log"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"tconstruct:stripped_skyroot_wood"}'
+    ),
     Item.of("tconstruct:crafting_station", '{texture:"techreborn:rubber_log"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"techreborn:rubber_log_stripped"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"techreborn:rubber_wood"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"techreborn:stripped_rubber_wood"}'),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"techreborn:rubber_log_stripped"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"techreborn:rubber_wood"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"techreborn:stripped_rubber_wood"}'
+    ),
     Item.of("tconstruct:crafting_station", '{texture:"vinery:cherry_log"}'),
     Item.of("tconstruct:crafting_station", '{texture:"vinery:cherry_wood"}'),
     Item.of("tconstruct:crafting_station", '{texture:"vinery:old_cherry_log"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"vinery:old_cherry_wood"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"vinery:stripped_cherry_log"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"vinery:stripped_cherry_wood"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"vinery:stripped_old_cherry_log"}'),
-    Item.of("tconstruct:crafting_station", '{texture:"vinery:stripped_old_cherry_wood"}'),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"vinery:old_cherry_wood"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"vinery:stripped_cherry_log"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"vinery:stripped_cherry_wood"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"vinery:stripped_old_cherry_log"}'
+    ),
+    Item.of(
+        "tconstruct:crafting_station",
+        '{texture:"vinery:stripped_old_cherry_wood"}'
+    ),
     Item.of("tconstruct:part_builder", '{texture:"ad_astra:glacian_planks"}'),
     Item.of("tconstruct:part_builder", '{texture:"minecraft:acacia_planks"}'),
     Item.of("tconstruct:part_builder", '{texture:"minecraft:birch_planks"}'),
@@ -399,8 +522,14 @@ var HIDDEN_ITEMS = [
     Item.of("tconstruct:part_builder", '{texture:"minecraft:jungle_planks"}'),
     Item.of("tconstruct:part_builder", '{texture:"minecraft:spruce_planks"}'),
     Item.of("tconstruct:part_builder", '{texture:"minecraft:warped_planks"}'),
-    Item.of("tconstruct:part_builder", '{texture:"tconstruct:bloodshroom_planks"}'),
-    Item.of("tconstruct:part_builder", '{texture:"tconstruct:greenheart_planks"}'),
+    Item.of(
+        "tconstruct:part_builder",
+        '{texture:"tconstruct:bloodshroom_planks"}'
+    ),
+    Item.of(
+        "tconstruct:part_builder",
+        '{texture:"tconstruct:greenheart_planks"}'
+    ),
     Item.of("tconstruct:part_builder", '{texture:"tconstruct:skyroot_planks"}'),
     Item.of("tconstruct:part_builder", '{texture:"techreborn:rubber_planks"}'),
     Item.of("tconstruct:part_builder", '{texture:"vinery:cherry_planks"}'),
@@ -410,18 +539,39 @@ var HIDDEN_ITEMS = [
     Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:healing"}'),
     Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:invisibility"}'),
     Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:leaping"}'),
-    Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:long_fire_resistance"}'),
-    Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:long_invisibility"}'),
+    Item.of(
+        "tconstruct:potion_bucket",
+        '{Potion:"minecraft:long_fire_resistance"}'
+    ),
+    Item.of(
+        "tconstruct:potion_bucket",
+        '{Potion:"minecraft:long_invisibility"}'
+    ),
     Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:long_leaping"}'),
-    Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:long_night_vision"}'),
+    Item.of(
+        "tconstruct:potion_bucket",
+        '{Potion:"minecraft:long_night_vision"}'
+    ),
     Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:long_poison"}'),
-    Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:long_regeneration"}'),
-    Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:long_slow_falling"}'),
+    Item.of(
+        "tconstruct:potion_bucket",
+        '{Potion:"minecraft:long_regeneration"}'
+    ),
+    Item.of(
+        "tconstruct:potion_bucket",
+        '{Potion:"minecraft:long_slow_falling"}'
+    ),
     Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:long_slowness"}'),
     Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:long_strength"}'),
     Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:long_swiftness"}'),
-    Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:long_turtle_master"}'),
-    Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:long_water_breathing"}'),
+    Item.of(
+        "tconstruct:potion_bucket",
+        '{Potion:"minecraft:long_turtle_master"}'
+    ),
+    Item.of(
+        "tconstruct:potion_bucket",
+        '{Potion:"minecraft:long_water_breathing"}'
+    ),
     Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:long_weakness"}'),
     Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:luck"}'),
     Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:mundane"}'),
@@ -435,11 +585,20 @@ var HIDDEN_ITEMS = [
     Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:strong_healing"}'),
     Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:strong_leaping"}'),
     Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:strong_poison"}'),
-    Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:strong_regeneration"}'),
+    Item.of(
+        "tconstruct:potion_bucket",
+        '{Potion:"minecraft:strong_regeneration"}'
+    ),
     Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:strong_slowness"}'),
     Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:strong_strength"}'),
-    Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:strong_swiftness"}'),
-    Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:strong_turtle_master"}'),
+    Item.of(
+        "tconstruct:potion_bucket",
+        '{Potion:"minecraft:strong_swiftness"}'
+    ),
+    Item.of(
+        "tconstruct:potion_bucket",
+        '{Potion:"minecraft:strong_turtle_master"}'
+    ),
     Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:swiftness"}'),
     Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:thick"}'),
     Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:turtle_master"}'),
@@ -448,21 +607,45 @@ var HIDDEN_ITEMS = [
     Item.of("tconstruct:potion_bucket", '{Potion:"minecraft:weakness"}'),
     Item.of("tconstruct:potion_bucket", '{Potion:"naturalist:forest_dasher"}'),
     Item.of("tconstruct:potion_bucket", '{Potion:"naturalist:glowing"}'),
-    Item.of("tconstruct:potion_bucket", '{Potion:"naturalist:long_forest_dasher"}'),
+    Item.of(
+        "tconstruct:potion_bucket",
+        '{Potion:"naturalist:long_forest_dasher"}'
+    ),
     Item.of("tconstruct:potion_bucket", '{Potion:"naturalist:long_glowing"}'),
-    Item.of("tconstruct:potion_bucket", '{Potion:"naturalist:strong_forest_dasher"}'),
+    Item.of(
+        "tconstruct:potion_bucket",
+        '{Potion:"naturalist:strong_forest_dasher"}'
+    ),
     Item.of("tconstruct:tinker_station", '{texture:"ad_astra:glacian_planks"}'),
     Item.of("tconstruct:tinker_station", '{texture:"minecraft:acacia_planks"}'),
     Item.of("tconstruct:tinker_station", '{texture:"minecraft:birch_planks"}'),
-    Item.of("tconstruct:tinker_station", '{texture:"minecraft:crimson_planks"}'),
-    Item.of("tconstruct:tinker_station", '{texture:"minecraft:dark_oak_planks"}'),
+    Item.of(
+        "tconstruct:tinker_station",
+        '{texture:"minecraft:crimson_planks"}'
+    ),
+    Item.of(
+        "tconstruct:tinker_station",
+        '{texture:"minecraft:dark_oak_planks"}'
+    ),
     Item.of("tconstruct:tinker_station", '{texture:"minecraft:jungle_planks"}'),
     Item.of("tconstruct:tinker_station", '{texture:"minecraft:spruce_planks"}'),
     Item.of("tconstruct:tinker_station", '{texture:"minecraft:warped_planks"}'),
-    Item.of("tconstruct:tinker_station", '{texture:"tconstruct:bloodshroom_planks"}'),
-    Item.of("tconstruct:tinker_station", '{texture:"tconstruct:greenheart_planks"}'),
-    Item.of("tconstruct:tinker_station", '{texture:"tconstruct:skyroot_planks"}'),
-    Item.of("tconstruct:tinker_station", '{texture:"techreborn:rubber_planks"}'),
+    Item.of(
+        "tconstruct:tinker_station",
+        '{texture:"tconstruct:bloodshroom_planks"}'
+    ),
+    Item.of(
+        "tconstruct:tinker_station",
+        '{texture:"tconstruct:greenheart_planks"}'
+    ),
+    Item.of(
+        "tconstruct:tinker_station",
+        '{texture:"tconstruct:skyroot_planks"}'
+    ),
+    Item.of(
+        "tconstruct:tinker_station",
+        '{texture:"techreborn:rubber_planks"}'
+    ),
     Item.of("tconstruct:tinker_station", '{texture:"vinery:cherry_planks"}'),
     "techreborn:advanced_alloy_plate",
     "techreborn:advanced_alloy_storage_block",
@@ -624,23 +807,123 @@ var HIDDEN_ITEMS = [
     "techreborn:zinc_storage_block_slab",
     "techreborn:zinc_storage_block_stairs",
     "techreborn:zinc_storage_block_wall",
+    // YTTR
+    "yttr:void_filter",
+    "yttr:encased_void_filter",
+    "yttr:project_table",
+    "yttr:white_project_table",
+    "yttr:orange_project_table",
+    "yttr:magenta_project_table",
+    "yttr:light_blue_project_table",
+    "yttr:yellow_project_table",
+    "yttr:lime_project_table",
+    "yttr:pink_project_table",
+    "yttr:gray_project_table",
+    "yttr:light_gray_project_table",
+    "yttr:cyan_project_table",
+    "yttr:purple_project_table",
+    "yttr:blue_project_table",
+    "yttr:brown_project_table",
+    "yttr:green_project_table",
+    "yttr:red_project_table",
+    "yttr:black_project_table",
 ];
-addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:part_builder", "oak_planks", 41);
-addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:part_builder", "birch_planks", 41);
-addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:part_builder", "spruce_planks", 41);
-addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:part_builder", "jungle_planks", 41);
-addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:part_builder", "acacia_planks", 41);
-addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:part_builder", "dark_oak_planks", 41);
-addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:part_builder", "crimson_planks", 41);
-addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:part_builder", "warped_planks", 41);
-addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:tinker_station", "oak_planks", 41);
-addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:tinker_station", "birch_planks", 41);
-addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:tinker_station", "spruce_planks", 41);
-addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:tinker_station", "jungle_planks", 41);
-addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:tinker_station", "acacia_planks", 41);
-addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:tinker_station", "dark_oak_planks", 41);
-addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:tinker_station", "crimson_planks", 41);
-addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:tinker_station", "warped_planks", 41);
+addTinkerTableVariants(
+    HIDDEN_ITEMS,
+    "tconstruct:part_builder",
+    "oak_planks",
+    41
+);
+addTinkerTableVariants(
+    HIDDEN_ITEMS,
+    "tconstruct:part_builder",
+    "birch_planks",
+    41
+);
+addTinkerTableVariants(
+    HIDDEN_ITEMS,
+    "tconstruct:part_builder",
+    "spruce_planks",
+    41
+);
+addTinkerTableVariants(
+    HIDDEN_ITEMS,
+    "tconstruct:part_builder",
+    "jungle_planks",
+    41
+);
+addTinkerTableVariants(
+    HIDDEN_ITEMS,
+    "tconstruct:part_builder",
+    "acacia_planks",
+    41
+);
+addTinkerTableVariants(
+    HIDDEN_ITEMS,
+    "tconstruct:part_builder",
+    "dark_oak_planks",
+    41
+);
+addTinkerTableVariants(
+    HIDDEN_ITEMS,
+    "tconstruct:part_builder",
+    "crimson_planks",
+    41
+);
+addTinkerTableVariants(
+    HIDDEN_ITEMS,
+    "tconstruct:part_builder",
+    "warped_planks",
+    41
+);
+addTinkerTableVariants(
+    HIDDEN_ITEMS,
+    "tconstruct:tinker_station",
+    "oak_planks",
+    41
+);
+addTinkerTableVariants(
+    HIDDEN_ITEMS,
+    "tconstruct:tinker_station",
+    "birch_planks",
+    41
+);
+addTinkerTableVariants(
+    HIDDEN_ITEMS,
+    "tconstruct:tinker_station",
+    "spruce_planks",
+    41
+);
+addTinkerTableVariants(
+    HIDDEN_ITEMS,
+    "tconstruct:tinker_station",
+    "jungle_planks",
+    41
+);
+addTinkerTableVariants(
+    HIDDEN_ITEMS,
+    "tconstruct:tinker_station",
+    "acacia_planks",
+    41
+);
+addTinkerTableVariants(
+    HIDDEN_ITEMS,
+    "tconstruct:tinker_station",
+    "dark_oak_planks",
+    41
+);
+addTinkerTableVariants(
+    HIDDEN_ITEMS,
+    "tconstruct:tinker_station",
+    "crimson_planks",
+    41
+);
+addTinkerTableVariants(
+    HIDDEN_ITEMS,
+    "tconstruct:tinker_station",
+    "warped_planks",
+    41
+);
 
 onEvent("rei.hide.items", (event) => {
     HIDDEN_ITEMS.forEach((id) => event.hide(id));
