@@ -1,4 +1,7 @@
-onEvent("ponder.tag", (event) => {
+onEvent("ponder.tag", (
+    /** @type {TagEvent} */
+    event
+) => {
     event.createTag(
         "kubejs:createastral",
         "createastral:astral_singularity",
@@ -13,13 +16,15 @@ onEvent("ponder.tag", (event) => {
         "Tinkers Construct Basics",
         [
             "tconstruct:seared_melter",
-            // "tconstruct:foundry_controller",
-            // "tconstruct:seared_faucet",
+            "tconstruct:foundry_controller",
+            "tconstruct:seared_faucet",
         ]
     );
 });
 
-onEvent("ponder.registry", (event) => {
+onEvent("ponder.registry", (
+    event
+) => {
     // Registers a ponder to the custom machine block, so create offers to ponder
     // This should never actually be played, as the ponder should be overwritten
     // using Ponder Overrides in the event handlers in the `ponders` directory

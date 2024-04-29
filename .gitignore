@@ -10,6 +10,7 @@ reload.bat
 *.code-workspace
 kubejs/assets/kubejs/probe
 kubejs/probe
+kubejs/exported
 
 # IntelliJ project files
 .idea
