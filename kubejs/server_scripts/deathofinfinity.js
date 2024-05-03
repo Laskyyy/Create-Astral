@@ -74,7 +74,7 @@ const mixings = [
             "4x createastral:stone_dust",
             "2x minecraft:netherack",
         ],
-        heat: "superheated",
+        heat: "heated",
         time: null,
     },{
         output: {fluid: "kubejs:shimmer", amount: 250 * mB },
