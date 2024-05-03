@@ -240,6 +240,22 @@ onEvent("recipes", (event) => {
             output: "createaddition:biomass",
         },
 
+        // Create Railways
+        { output: "railways:track_acacia" },
+        { output: "railways:track_birch" },
+        { output: "railways:track_crimson" },
+        { output: "railways:track_dark_oak" },
+        { output: "railways:track_jungle" },
+        { output: "railways:track_oak" },
+        { output: "railways:track_spruce" },
+        { output: "railways:track_warped" },
+        { output: "railways:track_blackstone" },
+        { output: "railways:track_ender" },
+        { output: "railways:track_tieless" },
+        { output: "railways:track_phantom" },
+        { output: "railways:track_monorail" },
+
+
         //Createdeco sheetmetal rebalance
 
         { output: "createdeco:copper_sheet_metal" },

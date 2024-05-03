@@ -841,6 +841,22 @@ onEvent("recipes", (event) => {
         "createdeco:zinc_sheet"
     );
 
+    // Create Railways
+
+    event.stonecutting("railways:track_acacia", "create:track");
+    event.stonecutting("railways:track_birch", "create:track");
+    event.stonecutting("railways:track_crimson", "create:track");
+    event.stonecutting("railways:track_dark_oak", "create:track");
+    event.stonecutting("railways:track_jungle", "create:track");
+    event.stonecutting("railways:track_oak", "create:track");
+    event.stonecutting("railways:track_spruce", "create:track");
+    event.stonecutting("railways:track_warped", "create:track");
+    event.stonecutting("railways:track_blackstone", "create:track");
+    event.stonecutting("railways:track_ender", "create:track");
+    event.stonecutting("railways:track_tieless", "create:track");
+    event.stonecutting("railways:track_phantom", "create:track");
+    event.stonecutting("railways:track_monorail", "create:track");
+
     // dustrial decor sheetmetal rework
 
     event.stonecutting("dustrial_decor:sheet_metal", "minecraft:iron_ingot");

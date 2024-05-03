@@ -1778,6 +1778,19 @@ function cuttingRecipes(event) {
         ["vinery:old_cherry_wood", "vinery:stripped_old_cherry_wood"],
         ["ad_astra:glacian_log", "ad_astra:stripped_glacian_log"],
         ["ad_astra:stripped_glacian_log", "6x ad_astra:glacian_planks"],
+        ["create:track", "railways:track_acacia"],
+        ["create:track", "railways:track_birch"],
+        ["create:track", "railways:track_crimson"],
+        ["create:track", "railways:track_dark_oak"],
+        ["create:track", "railways:track_jungle"],
+        ["create:track", "railways:track_oak"],
+        ["create:track", "railways:track_spruce"],
+        ["create:track", "railways:track_warped"],
+        ["create:track", "railways:track_blackstone"],
+        ["create:track", "railways:track_ender"],
+        ["create:track", "railways:track_tieless"],
+        ["create:track", "railways:track_phantom"],
+        ["create:track", "railways:track_monorail"],
     ].forEach((recipe) => {
         event.recipes.createCutting(recipe[1], recipe[0]);
     });
