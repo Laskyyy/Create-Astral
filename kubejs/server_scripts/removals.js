@@ -267,6 +267,12 @@ onEvent("recipes", (event) => {
         { output: "createdeco:iron_sheet_metal" },
         { output: "createdeco:zinc_sheet_metal" },
 
+        // Big cannon removals
+
+        { output: "createbigcannons:nethersteel_nugget" },
+        { output: "createbigcannons:nethersteel_ingot" },
+        { output: "createbigcannons:nethersteel_block" },
+
         // dustrial decor sheetmetal rework
 
         { output: "dustrial_decor:rusty_iron_door" },
