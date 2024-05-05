@@ -229,25 +229,7 @@ function crushingRecipes(event) {
             outputs: [["techreborn:calcite_dust", 1]],
         },
         */
-        //Asurine, Veridiun Crushing
-        {
-            input: "create:asurine",
-            outputs: [
-                ["techreborn:lazurite_dust", 0.5],
-                ["techreborn:raw_tin", 0.2],
-                ["techreborn:tin_nugget", 0.3],
-                ["minecraft:clay_ball", 0.2],
-            ],
-        },
-        {
-            input: "create:veridium",
-            outputs: [
-                ["techreborn:olivine_dust", 0.5],
-                ["minecraft:raw_copper", 0.6],
-                ["create:copper_nugget", 0.8],
-                ["minecraft:clay_ball", 0.2],
-            ],
-        },
+       
         // Ad Astra Crushing
         {
             input: "ad_astra:moon_stone",

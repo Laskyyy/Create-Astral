@@ -565,6 +565,8 @@ onEvent("recipes", (event) => {
     );
     event.shapeless(Item.of("dbe:track_end"), ["create:track"]);
     event.shapeless("ad_astra:sky_stone", ["ae2:sky_stone_block"]);
+    event.shapeless("2x techreborn:andesite_dust", ["minecraft:gravel"]);
+    event.shapeless("1x techreborn:andesite_dust", ["minecraft:cobblestone"]);
 
     // IRON TOOLS RECIPES / DIAMOND
 
