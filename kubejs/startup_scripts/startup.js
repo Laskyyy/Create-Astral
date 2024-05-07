@@ -90,14 +90,6 @@ onEvent("fluid.registry", (event) => {
         .flowingTexture("tconstruct:block/fluid/molten/flowing");
 
     event
-        .create("shimmer")
-        .thickTexture(0xffd6fa)
-        .bucketColor(0xffd6fa)
-        .displayName("Shimmer")
-        .stillTexture("tconstruct:block/fluid/molten/shimmer")
-        .flowingTexture("tconstruct:block/fluid/molten/shimmer");
-
-    event
         .create("blast-resistant_cement")
         .thickTexture(0x959595)
         .bucketColor(0x959595)
