@@ -6,7 +6,6 @@ side = 'both'
 hash = '8f515fce26193ceb43c607f2a3a9ab911e7ed5ec'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
-url = ''
 
 [update.curseforge]
 file-id = 5323634
