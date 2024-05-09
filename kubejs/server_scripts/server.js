@@ -1628,29 +1628,8 @@ onEvent("recipes", (event) => {
     );
 });
 
-onEvent("player.logged_in", (event) => {
-    if (!event.player.stages.has("starting_items")) {
-        event.player.stages.add("starting_items");
 
-        event.player.give("ftbquests:book");
-    }
-});
 
-//TheOverlyCaffeinatedTrashPanda Astral Conduit Damage On Use
-//if you wish to increase the damge please goto startup scripts, line 385, then what ever value you set it, take 1 off and change the 19
-onEvent("block.right_click", (event) => {
-    if (
-        event.block.id == "createastral:shimmering_stone" &&
-        event.item.id == "createastral:astral_conduit" &&
-        event.item.nbt["Damage"] <= 19
-    ) {
-        event.item.nbt["Damage"]++;
-
-        if (event.item.nbt["Damage"] == 20) {
-            event.player.inventory.set(event.player.getSelectedSlot(), "air");
-        }
-    }
-});
 
 onEvent("morejs.villager.trades", (event) => {
     const vanillaTradesToRemove = [
@@ -1871,35 +1850,7 @@ onEvent("morejs.villager.trades", (event) => {
         event.addTrade(trade[0], trade[1], trade[2], trade[3]);
     });
 });
-// *add code to make different potato projectiles go bang 
-const projectileItem         = "createastral:astral_singularity" //? The Item to change
-const particleSpread         = 2.5 
-const particleSize           = 10 
-const particleSpeed          = 5
-const particleCount          = 100
-const explosionStrength      = 10
-const explosionDamageTerrain = true
 
-onEvent('entity.spawned', event => {
-    const { entity, server} = event
-    if (entity.type === "create:potato_projectile" && entity.fullNBT.Item.id === projectileItem) {
-        server.scheduleInTicks(5, event => {
-            if(entity.removed || entity.deadOrDying || !entity.alive) {
-                let x = entity.fullNBT.Pos[0] 
-                let y = entity.fullNBT.Pos[1]
-                let z = entity.fullNBT.Pos[2]
-                let explosion =    entity.block.offset(0,0,0).createExplosion()
-                explosion.strength(explosionStrength)
-                explosion.damagesTerrain(explosionDamageTerrain)
-                //? This is the line to comment out if you do not want particles
-                server.runCommandSilent(`particle dust 0.31 0 0.78 ${particleSize} ${x} ${y} ${z} ${particleSpread} ${particleSpread} ${particleSpread} ${particleSpeed} ${particleCount}`)
-                explosion.explode()
-                return
-            }
-            event.reschedule()
-        })
-    }   //! Made by TheOverlyCaffeinatedTrashPanda 
-})
 
 
 // Listen to server recipe event
