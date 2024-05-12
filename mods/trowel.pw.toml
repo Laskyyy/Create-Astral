@@ -1,13 +1,13 @@
-filename = 'Trowel-1.1.0.jar'
-name = 'Trowel'
-side = 'both'
+name = "Trowel"
+filename = "Trowel-1.1.0.jar"
+side = "both"
 
 [download]
-hash = 'cf233c67f5fe22657201469f04b5d63ae5d98b25229360e8ce686f569dfe6ebde1fc522d702aee9933f773daf47ef65d489e2e045cfaa5800f3b5b26c1fa5c39'
-hash-format = 'sha512'
-mode = 'url'
-url = 'https://cdn.modrinth.com/data/o8YrbYfv/versions/zJGJI6Jn/Trowel-1.1.0.jar'
+mode = "metadata:curseforge"
+hash-format = "sha1"
+hash = "36d59d8ca878b447c4e6d4c91e813905ad92f321"
 
-[update.modrinth]
-mod-id = 'o8YrbYfv'
-version = 'zJGJI6Jn'
+[update]
+[update.curseforge]
+file-id = 4578600
+project-id = 868403
