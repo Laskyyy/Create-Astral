@@ -416,7 +416,6 @@ onEvent("recipes", (event) => {
         { output: "immersive_aircraft:boiler" },
         { output: "immersive_aircraft:engine" },
         { output: "immersive_aircraft:nether_engine" },
-        { output: "immersive_aircraft:industrial_gears" },
         { output: "immersive_aircraft:large_propeller" },
         { output: "immersive_aircraft:airship" },
         { output: "immersive_aircraft:gyrodyne" },

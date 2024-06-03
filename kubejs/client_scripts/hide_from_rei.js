@@ -624,6 +624,9 @@ var HIDDEN_ITEMS = [
     "techreborn:zinc_storage_block_slab",
     "techreborn:zinc_storage_block_stairs",
     "techreborn:zinc_storage_block_wall",
+    "createbigcannons:molten_bronze_bucket",
+    "createbigcannons:molten_steel_bucket",
+    "createbigcannons:molten_nethersteel_bucket",
 ];
 addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:part_builder", "oak_planks", 41);
 addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:part_builder", "birch_planks", 41);
@@ -650,3 +653,9 @@ onEvent("rei.add.items", (event) => {
     event.add(Item.of("ae2:facade", '{item:"minecraft:stone"}'));
     //event.add("tconstruct:crafting_station");
 });
+
+onEvent('rei.hide.fluids', event => {
+    event.hide('createbigcannons:molten_steel')
+    event.hide('createbigcannons:molten_bronze')
+    event.hide('createbigcannons:molten_nethersteel')
+  })

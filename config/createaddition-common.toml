@@ -65,16 +65,16 @@
 [wires]
 	#Connector max input in FE/t (Energy transfer).
 	#Range: 0 ~ 9223372036854775807
-	connector_max_input = 2048
+	connector_max_input = 4096
 	#Connector max output in FE/t (Energy transfer).
 	#Range: 0 ~ 9223372036854775807
-	connector_max_output = 2048
+	connector_max_output = 4096
 	#Connector internal input buffer in FE.
 	#Range: 0 ~ 9223372036854775807
 	connector_input_capacity = 8096
 	#Max wire length in blocks.
 	#Range: 0 ~ 256
-	wire_length = 16
+	wire_length = 24
 
 #Accumulator
 [accumulator]
