@@ -37,6 +37,12 @@ onEvent("player.logged_in", (event) => {
               event.player.inventory.set(event.player.getSelectedSlot(), "air");
           }
       }
+
+      //? tp the player to their spawn point if they in the end and crouch right click bedrock
+      if (event.block.id == "minecraft:bedrock" && event.player.level.dimension.toString() === "minecraft:the_end" && event.player.isCrouching()) {
+		let spawnPoint = event.player.getSpawnLocation()
+		event.player.teleportTo("minecraft:overworld", spawnPoint.x, spawnPoint.y, spawnPoint.z, 0 ,0)
+	}
   });
   
   
