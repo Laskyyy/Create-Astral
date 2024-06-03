@@ -7,8 +7,7 @@
 			"type": "custommachinery:structure",
 			"keys": {
 				"a": "create:andesite_casing",
-				"l": "minecraft:lava",
-				"c": "compressor:double_compressed_cobblestone"
+				"l": "minecraft:lava"
 			},
 			"pattern": [
 				[
@@ -30,9 +29,14 @@
 		},
 		{
 			"type": "custommachinery:item",
-			"item": "minecraft:cobblestone",
+			"item": "ad_astra:mars_cobblestone",
 			"amount": 1,
 			"mode": "output"
+		},
+		{
+			"type": "custommachinery:dimension",
+			"filter": "ad_astra:mars_orbit",
+			"blacklist": false
 		}
 	]
 }

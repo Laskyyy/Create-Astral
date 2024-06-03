@@ -2245,6 +2245,7 @@ function pressingRecipes(event) {
     [
         ["minecraft:lapis_block", "create:lapis_sheet"],
         ["createastral:pure_star_shard", "minecraft:nether_star"],
+        ["minecraft:cobblestone", "techreborn:andesite_dust"],
     ].forEach((recipe) => {
         event.recipes.createPressing(recipe[1], recipe[0]);
     });
