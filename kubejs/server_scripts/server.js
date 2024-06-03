@@ -700,33 +700,48 @@ onEvent("recipes", (event) => {
         B: "create:andesite_alloy",
     });
 
-    event.shaped("extended_drawers:t1_upgrade", ["ABA", "BCB", "ABA"], {
+    event.shaped("createastral:t1_upgrade", ["ABA", "BCB", "ABA"], {
         A: "techreborn:rubber",
         B: "create:sturdy_sheet",
         C: "extended_drawers:upgrade_frame",
     });
 
-    event.shaped("extended_drawers:t2_upgrade", ["ABA", "BCB", "ABA"], {
+    event.shaped("createastral:t2_upgrade", ["ABA", "BCB", "ABA"], {
         A: "tconstruct:seared_brick",
-        B: "tconstruct:rose_gold_ingot",
-        C: "extended_drawers:t1_upgrade",
+        B: "create:iron_sheet",
+        C: "createastral:t1_upgrade",
     });
 
-    event.shaped("extended_drawers:t3_upgrade", ["ABA", "BCB", "ABA"], {
+    event.shaped("createastral:t3_upgrade", ["ABA", "BCB", "ABA"], {
         A: "create:brass_sheet",
         B: "ae2:fluix_block",
-        C: "extended_drawers:t2_upgrade",
+        C: "createastral:t2_upgrade",
     });
 
-    event.shaped("extended_drawers:t4_upgrade", ["ABA", "DCD", "ABA"], {
-        A: "yttr:continuous_platform",
-        B: "techreborn:uu_matter",
-        C: "reinfchest:netherite_chest",
-        D: "extended_drawers:t3_upgrade",
+    event.shaped("createastral:t4_upgrade", ["ABA", "DCD", "ABA"], {
+        A: "techreborn:lead_plate",
+        B: "create:integrated_circuit",
+        C: "minecraft:gold_block",
+        D: "createastral:t3_upgrade",
+    });
+
+    event.shaped("createastral:t5_upgrade", ["ABA", "DCD", "ABA"], {
+        A: "yttr:yttrium_ingot",
+        B: "techreborn:electronic_circuit",
+        C: "ad_astra:calorite_block",
+        D: "createastral:t4_upgrade",
+    });
+
+    event.shaped("createastral:t6_upgrade", ["ABA", "CED", "ABA"], {
+        A: "createastral:t5_upgrade",
+        B: "techreborn:industrial_circuit",
+        C: "create:shadow_steel",
+        D: "create:refined_radiance",
+        E: "createastral:subatomic_ingot",
     });
 
     event.shaped("extended_drawers:downgrade", ["ABA", "BDB", "ABA"], {
-        A: "createaddition:copper_rod",
+        A: "#minecraft:planks",
         B: "minecraft:flint",
         D: "extended_drawers:upgrade_frame",
     });
@@ -1592,6 +1607,7 @@ onEvent("recipes", (event) => {
             "#c:concrete_powder",
         ])
         .processingTime(1000);
+
 
     //yttric rifle!!
     event.remove({ output: "yttr:rifle" });
