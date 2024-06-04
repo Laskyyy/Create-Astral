@@ -37,7 +37,20 @@ onEvent("player.logged_in", (event) => {
               event.player.inventory.set(event.player.getSelectedSlot(), "air");
           }
       }
-  });
+
+//? Tp play back to their spawn point, or world spawn if no spawn point was set
+//! Please note it will still send the player to their bed if the bed was broke. A fix is planned
+onEvent("block.right_click", (event) => {
+    if (event.block.id == "minecraft:bedrock" && event.player.level.dimension.toString() === "minecraft:the_end" && event.player.isCrouching()) {
+        let spawnPoint = event.player.getSpawnLocation()
+        let worldSpawn = event.level.minecraftLevel.getSharedSpawnPos()
+    
+        if (spawnPoint == null) {
+            event.player.teleportTo("minecraft:overworld", worldSpawn.x, worldSpawn.y, worldSpawn.z, 0, 0)
+        } else {
+            event.player.teleportTo("minecraft:overworld", spawnPoint.x, spawnPoint.y, spawnPoint.z, 0, 0)
+        }
+}})});
   
   
   //? Add code to make different potato projectiles go bang
