@@ -123,7 +123,7 @@ server.scheduleInTicks(5, event => {
             }
         }
 
-        if (ammoType.explosionEnable === true) {
+        if (ammoType.explosionEnable) {
             explosion.strength(ammoType.explosionStrength)
             explosion.damagesTerrain(ammoType.explosionDamageTerrain)
             explosion.explode()
