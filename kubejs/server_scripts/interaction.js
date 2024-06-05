@@ -63,21 +63,23 @@ onEvent("block.right_click", (event) => {
 //* Use the cog as an example.
 
 //? Possable Fields:
-
-//? projectileItem - Required - String
-//? particlesEnable - Required - Bool
-//? particleSpread - Required if particlesEnable is true - Float
-//? particleSize - Required if particlesEnable is true - Float
-//? particleSpeed - Required if particlesEnable is true - Float
-//? particleCount - Required if particlesEnable is true - Float
-//? particleType - Required if particlesEnable is true - String
-//? particleHasColour - Required if particlesEnable is true - Bool
-//? particleColourR - Required if particleHasColour is true - Float
-//? particleColourG - Required if particleHasColour is true - Float
-//? particleColourB - Required if particleHasColour is true - Float
-//? explosionEnable - Required - Bool
-//? explosionStrength - Required if explosionEnable is true - Float
-//? explosionDamageTerrain - Required if explosionEnable is true - Bool
+/**
+ * @typedef {object} ProjectileConfig
+ * @property {string} projectileItem - Required - String
+ * @property {boolean} particlesEnable - Required - Bool
+ * @property {number} [particleSpread] - Required if particlesEnable is true - Float
+ * @property {number} [particleSize] - Required if particlesEnable is true - Float
+ * @property {number} [particleSpeed] - Required if particlesEnable is true - Float
+ * @property {number} [particleCount] - Required if particlesEnable is true - Float
+ * @property {string} [particleType] - Required if particlesEnable is true - String
+ * @property {boolean} [particleHasColour] - Required if particlesEnable is true - Bool
+ * @property {number} [particleColourR] - Required if particleHasColour is true - Float
+ * @property {number} [particleColourG] - Required if particleHasColour is true - Float
+ * @property {number} [particleColourB] - Required if particleHasColour is true - Float
+ * @property {boolean} explosionEnable - Required - Bool
+ * @property {number} [explosionStrength] Required if explosionEnable is true - Float
+ * @property {boolean} [explosionDamageTerrain] Required if explosionEnable is true - Bool
+ */
 
 const ammos = [
     {
@@ -92,10 +94,9 @@ const ammos = [
     explosionStrength: 10, explosionDamageTerrain: true,                            //? How strong it go boom and if it hurt the land
     },
 
-
     {
     projectileItem: "createbigcannons:flak_autocannon_round",
-    particlesEnable: false, 
+    particlesEnable: false,
 
     explosionEnable: true,
     explosionStrength: 5, explosionDamageTerrain: true,
@@ -131,5 +132,7 @@ server.scheduleInTicks(5, event => {
         return
     }
     event.reschedule()
-})}})})
+})}
+})
 //! Made by TheOverlyCaffeinatedTrashPanda 
+})
