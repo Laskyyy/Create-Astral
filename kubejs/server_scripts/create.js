@@ -44,6 +44,7 @@ function millingRecipes(event) {
         ["minecraft:bubble_coral_block", "2x minecraft:purple_dye", 1],
         ["minecraft:fire_coral_block", "2x minecraft:red_dye", 1],
         ["minecraft:horn_coral_block", "2x minecraft:yellow_dye", 1],
+        ["createastral:crushed_raw_gadolinite", "yttr:yttrium_dust", 1],
     ].forEach((recipe) => {
         event.recipes.createMilling([Item.of(recipe[1]).withChance(recipe[2])], recipe[0]);
     });
@@ -1738,6 +1739,87 @@ function mixingRecipes(event) {
             input: ["3x techreborn:saw_dust", { fluid: "minecraft:water", amount: BUCKET }],
             heat: "",
             time: 100,
+        },
+        {
+            output: "yttr:yttrium_ingot",
+            input: [
+                {
+                    fluid: "kubejs:molten_desh",
+                    amount: INGOT / 2,
+                },
+                {
+                    fluid: "kubejs:molten_yttrium",
+                    amount: INGOT,
+                },
+            ],
+            heat: "superheated",
+            time: 1000,
+        },
+        {
+            output: "yttr:yttrium_ingot",
+            input: [
+                {
+                    fluid: "kubejs:molten_ostrum",
+                    amount: INGOT / 2,
+                },
+                {
+                    fluid: "kubejs:molten_yttrium",
+                    amount: INGOT,
+                },
+            ],
+            heat: "superheated",
+            time: 1000,
+        },
+        {
+            output: "yttr:yttrium_ingot",
+            input: [
+                {
+                    fluid: "kubejs:molten_calorite",
+                    amount: INGOT / 2,
+                },
+                {
+                    fluid: "kubejs:molten_yttrium",
+                    amount: INGOT,
+                },
+            ],
+            heat: "superheated",
+            time: 1000,
+        },
+        {
+            output: "yttr:yttrium_ingot",
+            input: [
+                "4x ad_astra:desh_ingot",
+                {
+                    fluid: "kubejs:molten_yttrium",
+                    amount: INGOT,
+                },
+            ],
+            heat: "superheated",
+            time: 1000,
+        },
+        {
+            output: "yttr:yttrium_ingot",
+            input: [
+                "2x ad_astra:ostrum_ingot",
+                {
+                    fluid: "kubejs:molten_yttrium",
+                    amount: INGOT,
+                },
+            ],
+            heat: "superheated",
+            time: 1000,
+        },
+        {
+            output: "yttr:yttrium_ingot",
+            input: [
+                "ad_astra:calorite_ingot",
+                {
+                    fluid: "kubejs:molten_yttrium",
+                    amount: 2 * INGOT,
+                },
+            ],
+            heat: "superheated",
+            time: 1000,
         },
     ].forEach((recipe) => {
         event.recipes

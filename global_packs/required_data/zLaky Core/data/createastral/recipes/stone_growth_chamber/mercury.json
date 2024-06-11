@@ -7,18 +7,19 @@
 			"type": "custommachinery:structure",
 			"keys": {
 				"a": "create:andesite_casing",
-				"l": "minecraft:lava"
+				"l": "minecraft:lava",
+				"g": "#c:glass"
 			},
 			"pattern": [
 				[
 					"aaa",
 					"aaa",
-					"ama"
+					"aaa"
 				],
 				[
-					"aaa",
-					"ala",
-					"aaa"
+					"ggg",
+					"glg",
+					"gmg"
 				],
 				[
 					"aaa",
