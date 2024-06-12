@@ -8,7 +8,7 @@
 			"keys": {
 				"a": "create:andesite_casing",
 				"l": "minecraft:lava",
-				"g": "#c:glass"
+				"g": "minecraft:glass"
 			},
 			"pattern": [
 				[

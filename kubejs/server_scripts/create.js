@@ -2453,6 +2453,38 @@ function compactingRecipes(event) {
                 },
             ],
         },
+        {
+            output: "2x createastral:gyrodyne_blueprint",
+            inputs: [
+                "createastral:gyrodyne_blueprint",
+                "create:empty_schematic",
+                "32x minecraft:black_dye",
+            ],
+        },
+        {
+            output: "2x createastral:biplane_blueprint",
+            inputs: [
+                "createastral:biplane_blueprint",
+                "create:empty_schematic",
+                "32x minecraft:black_dye",
+            ],
+        },
+        {
+            output: "2x createastral:airship_blueprint",
+            inputs: [
+                "createastral:airship_blueprint",
+                "create:empty_schematic",
+                "32x minecraft:black_dye",
+            ],
+        },
+        {
+            output: "2x createastral:quadrocopter_blueprint",
+            inputs: [
+                "createastral:quadrocopter_blueprint",
+                "create:empty_schematic",
+                "32x minecraft:black_dye",
+            ],
+        },
     ].forEach((recipe) => {
         event.recipes.createCompacting(recipe.output, recipe.inputs);
     });

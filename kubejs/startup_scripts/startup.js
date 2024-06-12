@@ -985,6 +985,22 @@ onEvent("item.tooltip", (e) => {
             item: "adoptafloppa:amazon_delivery",
             tooltip: 'A note is attached: "Feed this thing fish once a day or else it will explode. Good luck.".',
         },
+        {
+            item: "createastral:gyrodyne_blueprint",
+            tooltip: 'An ancient schematic from a lost civilisation. Perhaps it can be found in old facilities?',
+        },
+        {
+            item: "createastral:quadrocopter_blueprint",
+            tooltip: 'An ancient schematic from a lost civilisation. Perhaps it can be found in old facilities?',
+        },
+        {
+            item: "createastral:airship_blueprint",
+            tooltip: 'An ancient schematic from a lost civilisation. Perhaps it can be found in old facilities?',
+        },
+        {
+            item: "createastral:biplane_blueprint",
+            tooltip: 'An ancient schematic from a lost civilisation. Perhaps it can be found in old facilities?',
+        },
     ];
 
     tooltips.forEach((tooltip) => {
