@@ -1,0 +1,97 @@
+{
+    "type": "custommachinery:custom_machine",
+    "machine": "createastral:distillery",
+    "time": 100,
+    "requirements": [
+        {
+            "type": "custommachinery:structure",
+            "keys": {
+                "a": "dbe:steel_frame",
+                "b": "techreborn:basic_machine_casing",
+                "c": "techreborn:basic_machine_frame",
+                "d": "techreborn:advanced_machine_frame",
+                "e": "create:blaze_burner{fuelLevel:1}"
+            },
+            "pattern": [
+                [
+                    "       ",
+                    "       ",
+                    "  eee  ",
+                    "  eee  ",
+                    "  eee  ",
+                    "       ",
+                    "       "
+                ],
+                [
+                    "   a   ",
+                    "   a   ",
+                    "  bbb  ",
+                    "aabbbaa",
+                    "  bbb  ",
+                    "   a   ",
+                    "   a   "
+                ],
+                [
+                    "       ",
+                    "   a   ",
+                    "  ada  ",
+                    " ad da ",
+                    "  ada  ",
+                    "   a   ",
+                    "       "
+                ],
+                [
+                    "       ",
+                    "       ",
+                    "   c   ",
+                    "  c c  ",
+                    "   m   ",
+                    "       ",
+                    "       "
+                ],
+                [
+                    "       ",
+                    "       ",
+                    "   c   ",
+                    "  c c  ",
+                    "   c   ",
+                    "       ",
+                    "       "
+                ],
+                [
+                    "       ",
+                    "       ",
+                    "       ",
+                    "   c   ",
+                    "       ",
+                    "       ",
+                    "       "
+                ]
+            ]
+        },
+        {
+            "type": "custommachinery:fluid",
+            "fluid": "techreborn:oil",
+            "amount": 81000,
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "mode": "input",
+            "item": "createastral:refining_agent",
+            "amount": 1
+        },
+
+        {
+            "type": "custommachinery:energy",
+            "mode": "input",
+            "amount": 10000
+        },
+        {
+            "type": "custommachinery:fluid",
+            "fluid": "techreborn:nitro_diesel",
+            "amount": 40500,
+            "mode": "output"
+        }
+    ]
+}

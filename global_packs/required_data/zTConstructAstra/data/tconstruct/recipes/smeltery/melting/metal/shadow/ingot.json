@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:ingots/shadow"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "c:ingots/shadow"
+  },
+  "result": {
+    "fluid": "kubejs:molten_shadowsteel",
+    "amount": 9000
+  },
+  "temperature": 425,
+  "time": 200
+}

@@ -4,7 +4,7 @@
        "item": "minecraft:blue_ice"
     },
     "output": {
-       "name": "ad_astra:cryo_fuel"
+       "name": "kubejs:aurorite"
     },
     "conversion_ratio": 0.005
  }
