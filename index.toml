@@ -12870,7 +12870,7 @@ hash = "b14d492175c12c237a35159c6621010426d5249fd9720b100ac2e73d8d35fb7b"
 
 [[files]]
 file = "kubejs/server_scripts/server.js"
-hash = "95a4ab31fab06026a5f589068bebd22deb77621c1cc6ff7ece454a3d08e80aa9"
+hash = "dccc0e831ec3106745e704327ef78f783ec41537eef9701011604e7776355d7a"
 
 [[files]]
 file = "kubejs/server_scripts/tags/graveReplaceBlacklist.js"
