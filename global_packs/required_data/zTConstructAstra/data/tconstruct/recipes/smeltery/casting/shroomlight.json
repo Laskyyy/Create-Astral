@@ -1,0 +1,13 @@
+{
+    "type": "tconstruct:casting_basin",
+    "cast": {
+      "item": "minecraft:glowstone"
+    },
+    "cast_consumed": true,
+    "fluid": {
+      "name": "tconstruct:mushroom_stew",
+      "amount": 13500
+    },
+    "result": "minecraft:shroomlight",
+    "cooling_time": 100
+  }

@@ -230,7 +230,7 @@ function crushingRecipes(event) {
             outputs: [["techreborn:calcite_dust", 1]],
         },
         */
-       
+
         // Ad Astra Crushing
         {
             input: "ad_astra:moon_stone",
@@ -2455,35 +2455,29 @@ function compactingRecipes(event) {
         },
         {
             output: "2x createastral:gyrodyne_blueprint",
-            inputs: [
-                "createastral:gyrodyne_blueprint",
-                "create:empty_schematic",
-                "32x minecraft:black_dye",
-            ],
+            inputs: ["createastral:gyrodyne_blueprint", "create:empty_schematic", "32x minecraft:black_dye"],
         },
         {
             output: "2x createastral:biplane_blueprint",
-            inputs: [
-                "createastral:biplane_blueprint",
-                "create:empty_schematic",
-                "32x minecraft:black_dye",
-            ],
+            inputs: ["createastral:biplane_blueprint", "create:empty_schematic", "32x minecraft:black_dye"],
         },
         {
             output: "2x createastral:airship_blueprint",
-            inputs: [
-                "createastral:airship_blueprint",
-                "create:empty_schematic",
-                "32x minecraft:black_dye",
-            ],
+            inputs: ["createastral:airship_blueprint", "create:empty_schematic", "32x minecraft:black_dye"],
         },
         {
             output: "2x createastral:quadrocopter_blueprint",
-            inputs: [
-                "createastral:quadrocopter_blueprint",
-                "create:empty_schematic",
-                "32x minecraft:black_dye",
-            ],
+            inputs: ["createastral:quadrocopter_blueprint", "create:empty_schematic", "32x minecraft:black_dye"],
+        },
+
+        //mushroom block recipes
+        {
+            output: "minecraft:brown_mushroom_block",
+            inputs: ["4x minecraft:brown_mushroom"],
+        },
+        {
+            output: "minecraft:red_mushroom_block",
+            inputs: ["4x minecraft:red_mushroom"],
         },
     ].forEach((recipe) => {
         event.recipes.createCompacting(recipe.output, recipe.inputs);
