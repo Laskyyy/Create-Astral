@@ -12901,6 +12901,10 @@ file = "kubejs/startup_scripts/startup.js"
 hash = "76b64f5c8a4fd25092a1de3f0a441cd8e9d45604a848ffb6d33251062eb278c5"
 
 [[files]]
+file = "mods/SpoutingFix-1.jar"
+hash = "b300dfb7b377293c5056be468091f18c9bf9f29aaba3f0f0d7252e24349f6424"
+
+[[files]]
 file = "mods/ad-astra.pw.toml"
 hash = "27e4e6741ce59a7224fb5ecb5b3772de3ac374d6082309ecc27c83e58f8985eb"
 metafile = true
