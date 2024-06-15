@@ -12818,7 +12818,7 @@ hash = "7936a3fb149726799bcf20425fe3d66e71feb3287e77f9e7a8148f61db7389b7"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
-hash = "ff11b673cac20215ff92546ae404e1c67446596d4e31a33d60bf30f736b36945"
+hash = "92a953d84f18b0ce22ca46ff88aa7794d59378edf896d66c6c2bb61141018bac"
 
 [[files]]
 file = "kubejs/server_scripts/createaddons.js"
@@ -26973,6 +26973,10 @@ file = "resources/buildinggadgets/textures/items/gadget_copy_paste.png"
 hash = "fcf2562e2ac134d95171e0ceaa01dead51659ced3ebb4681ed872837d7fda5d9"
 
 [[files]]
+file = "resources/campanion/lang/en_us.json"
+hash = "aad19753e24c9e2913b5b29982bf7d248fccb7d17c09bba471f1634092ae28e8"
+
+[[files]]
 file = "resources/camsbackpacks/textures/gui/backpack.png"
 hash = "a748f50aec62789175a19ff365445f5191a87e2f0aa0fd6d92549a221ddc107a"
 
@@ -28362,7 +28366,7 @@ hash = "048d7c2396a95dd5958681125aedef76e777b125678d662e0a8ddbd5444c88e3"
 
 [[files]]
 file = "resources/tconstruct/lang/en_us.json"
-hash = "b226afd12544ba3e6495ef1ce5dbea518db6bbdf0a0f8b7083e195bef364cafa"
+hash = "a64a242d7715c56201e3c1e6ba86e918b1ffee598e985f189602323bb6ad2f13"
 
 [[files]]
 file = "resources/tconstruct/lang/fr_fr.json"

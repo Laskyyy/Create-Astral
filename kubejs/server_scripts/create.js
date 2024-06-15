@@ -1941,6 +1941,33 @@ function splashingRecipes(event) {
             input: "ad_astra:mars_sand",
             outputs: [["techreborn:lead_nugget", 0.25]],
         },
+
+        // ae2 cable washing made easy !!!
+
+        {
+            input: "#ae2:glass_cable",
+            outputs: [["ae2:fluix_glass_cable", 1]],
+        },
+
+        {
+            input: "#ae2:covered_cable",
+            outputs: [["ae2:fluix_covered_cable", 1]],
+        },
+
+        {
+            input: "#ae2:covered_dense_cable",
+            outputs: [["ae2:fluix_covered_dense_cable", 1]],
+        },
+
+        {
+            input: "#ae2:smart_cable",
+            outputs: [["ae2:fluix_smart_cable", 1]],
+        },
+
+        {
+            input: "#ae2:smart_dense_cable",
+            outputs: [["ae2:fluix_smart_dense_cable", 1]],
+        },
     ].forEach((recipe) => {
         let cleanoutputs = [];
         recipe.outputs.forEach((output) => {
@@ -2479,13 +2506,10 @@ function compactingRecipes(event) {
             output: "minecraft:red_mushroom_block",
             inputs: ["4x minecraft:red_mushroom"],
         },
-        { //nametag recipe
+        {
+            //nametag recipe
             output: "minecraft:name_tag",
-            inputs: [
-                "farmersdelight:canvas",
-                "minecraft:ink_sac",
-                "createaddition:iron_wire"
-            ],
+            inputs: ["farmersdelight:canvas", "minecraft:ink_sac", "createaddition:iron_wire"],
         },
     ].forEach((recipe) => {
         event.recipes.createCompacting(recipe.output, recipe.inputs);
