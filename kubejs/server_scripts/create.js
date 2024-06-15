@@ -2479,6 +2479,14 @@ function compactingRecipes(event) {
             output: "minecraft:red_mushroom_block",
             inputs: ["4x minecraft:red_mushroom"],
         },
+        { //nametag recipe
+            output: "minecraft:name_tag",
+            inputs: [
+                "farmersdelight:canvas",
+                "minecraft:ink_sac",
+                "createaddition:iron_wire"
+            ],
+        },
     ].forEach((recipe) => {
         event.recipes.createCompacting(recipe.output, recipe.inputs);
     });
