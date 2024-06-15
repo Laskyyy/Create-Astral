@@ -117,6 +117,7 @@ const ammos = [
     },
 ];
 
+// TODO: Test this with multiple people shooting at once
 onEvent("entity.spawned", (event) => {
     const { entity, server } = event;
     ammos.forEach((ammoType) => {
