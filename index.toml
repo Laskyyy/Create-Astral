@@ -13138,6 +13138,11 @@ hash = "40884b28a7669fbb1c74491e5d8b62cf26484266f2f68cc1beb6467451a14724"
 metafile = true
 
 [[files]]
+file = "mods/create-trains-and-custom-portal-api-integration.pw.toml"
+hash = "95ad8f0153f2bf34ad0f0b33d3f64e77edf0bc0c052a381acd2fc5abf355a49c"
+metafile = true
+
+[[files]]
 file = "mods/createaddition.pw.toml"
 hash = "04df15f0d3a20800ec0c44ecbdf415011bdc897b2d4a83292e22d4053fdeab37"
 metafile = true
