@@ -114,7 +114,7 @@ jobs:
               if: ${{ github.event.inputs.serverpack && github.event.inputs.artifacts }}
               uses: actions/upload-artifact@v4
               with:
-                  name: ${{steps.construct-base-name.outputs.ASTRAL_BASE_NAME}}-server.zip
+                  name: ${{steps.construct-base-name.outputs.ASTRAL_BASE_NAME}}-server
                   path: ./server
 
     # This job publishes the modpack to CurseForge
