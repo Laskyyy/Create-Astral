@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "tconstruct:radiant",
+  "temperature": 950,
+  "result": {
+    "fluid": "kubejs:molten_radiance",
+    "amount": 9000
+  }
+}

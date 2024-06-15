@@ -3,7 +3,7 @@
   "values": [
     "minecraft:lava",
     "minecraft:flowing_lava",
-    "ad_astra:fuel",
-    "ad_astra:flowing_fuel"
+    "techreborn:nitro_diesel",
+    "techreborn:flowing_nitro_diesel"
   ]
 }

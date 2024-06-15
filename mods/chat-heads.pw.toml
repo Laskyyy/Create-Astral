@@ -1,6 +1,6 @@
 name = "Chat Heads"
 filename = "chat_heads-0.6.0-fabric-1.18.1.jar"
-side = "both"
+side = "client"
 
 [download]
 mode = "metadata:curseforge"

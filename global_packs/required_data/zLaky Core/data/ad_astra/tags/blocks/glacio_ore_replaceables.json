@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "ad_astra:glacio_stone",
-	"minecraft:deepslate"
+	"minecraft:deepslate",
+  "minecraft:end_stone"
   ]
 }
