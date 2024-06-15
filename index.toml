@@ -26317,12 +26317,24 @@ file = "resourcepacks/Reim GUI + Default Dark/assets/trashslot/textures/gui/tras
 hash = "8aca5e0d7d99bd3f0564c5c28cdb628aa30fb0a9853cffa9d818fc4604f7367d"
 
 [[files]]
-file = "resourcepacks/Reim GUI + Default Dark/assets/travelersbackpack/README.md"
-hash = "6c9af2f764690239ff97f3a00d6a4b93134a796c3619088efa845046824c96e4"
+file = "resourcepacks/Reim GUI + Default Dark/assets/travelersbackpack/textures/gui/travelers_backpack_background.png"
+hash = "babaa1a266b4061d24fda7798e1afb8a90a40e7e4a21f936854378ca1f63a6a3"
 
 [[files]]
-file = "resourcepacks/Reim GUI + Default Dark/assets/travelersbackpack/textures/gui/travelers_backpack.png"
-hash = "89678de2555664585d1f6cafbaf3565d2efb8fc0d2e1e9e7f27b024d06d46710"
+file = "resourcepacks/Reim GUI + Default Dark/assets/travelersbackpack/textures/gui/travelers_backpack_extras.png"
+hash = "69ef21a21e3ded74f45cd75f450eb4af7abcd9b2595b2367b977195129bf55e8"
+
+[[files]]
+file = "resourcepacks/Reim GUI + Default Dark/assets/travelersbackpack/textures/gui/travelers_backpack_overlay.png"
+hash = "0f76bfdce5b043ffb645734defe0e7920f0952ed60d9033e58a1461f24e4ec02"
+
+[[files]]
+file = "resourcepacks/Reim GUI + Default Dark/assets/travelersbackpack/textures/gui/travelers_backpack_settings.png"
+hash = "686d074e95bc8ac2397ae229ccd21f6086ee826d8f3f7e9e0aa7211f923b2652"
+
+[[files]]
+file = "resourcepacks/Reim GUI + Default Dark/assets/travelersbackpack/textures/gui/travelers_backpack_slots.png"
+hash = "1efde7104d360ac6bd2fa28a50251666d2df88936ce960c44591c1a50d0869e5"
 
 [[files]]
 file = "resourcepacks/Reim GUI + Default Dark/assets/trinkets/README.md"
@@ -30631,58 +30643,6 @@ hash = "3889f0a777f9cc0f0dd8c2dab33a3053ecf778d2938c30d432509484f02579d1"
 [[files]]
 file = "resources/techreborn/textures/item/smalldust/steel_small_dust.png"
 hash = "77d84534cc3796ad7e5e79609e795b5789ab4b8b5dfe91f8c091b47ed0ca5bb4"
-
-[[files]]
-file = "resources/travelersbackpack/textures/gui/diamond_travelers_backpack.png"
-hash = "0fc092e5f8a0d54542ff717dabc4b72916cb39dd4f3fc09294c911fed2649519"
-
-[[files]]
-file = "resources/travelersbackpack/textures/gui/gold_travelers_backpack.png"
-hash = "c7b0a42166c574b8c69bed4377210883289690a842ecd999715525d68e90a1ae"
-
-[[files]]
-file = "resources/travelersbackpack/textures/gui/iron_travelers_backpack.png"
-hash = "665d6343e3377fe66ccf3d72beb8bcf3e2f41d9db497f783d68cc36e0bc32fea"
-
-[[files]]
-file = "resources/travelersbackpack/textures/gui/leather_travelers_backpack.png"
-hash = "3c88241dd46919ae160534a3aa151ba28e635686331510c819473aeeaabc00f0"
-
-[[files]]
-file = "resources/travelersbackpack/textures/gui/netherite_travelers_backpack.png"
-hash = "0900dd33bdd34c8bd5fbd0d40d443db81e4db7a2656aaf7692a9369b64118e2f"
-
-[[files]]
-file = "resources/travelersbackpack/textures/gui/tooltip/diamond_travelers_backpack_tooltip.png"
-hash = "e91c244d6c995526f87f5b6664c6cf6c7eb2b3cdff199aff2c63b0be4d4fd1e3"
-
-[[files]]
-file = "resources/travelersbackpack/textures/gui/tooltip/gold_travelers_backpack_tooltip.png"
-hash = "7e692c33295a6ca353b96b460eeb288f9909909bec39a0158115a8b6fa573777"
-
-[[files]]
-file = "resources/travelersbackpack/textures/gui/tooltip/iron_travelers_backpack_tooltip.png"
-hash = "adfce903215fd186b6a4db2233f5e390290f07f5f95eee559e5570a5f679b9e4"
-
-[[files]]
-file = "resources/travelersbackpack/textures/gui/tooltip/leather_travelers_backpack_tooltip.png"
-hash = "ccab51011a8f96e5441121a41a79e41907073eb1d6689f7fa7bf3254bbd15682"
-
-[[files]]
-file = "resources/travelersbackpack/textures/gui/tooltip/netherite_travelers_backpack_tooltip.png"
-hash = "ad6eb6bce7b577d4165ba428e6e581001a7ba6b86819a83f7c8dd0014488e25a"
-
-[[files]]
-file = "resources/travelersbackpack/textures/gui/travelers_backpack_extras.png"
-hash = "73a7c18f986ce3b1117cd924188b3d97142bc1c92d603f836b4042259ac99f81"
-
-[[files]]
-file = "resources/travelersbackpack/textures/gui/travelers_backpack_overlay.png"
-hash = "0f76bfdce5b043ffb645734defe0e7920f0952ed60d9033e58a1461f24e4ec02"
-
-[[files]]
-file = "resources/travelersbackpack/textures/gui/travelers_backpack_settings.png"
-hash = "ff2478cc414467f96708be27eaa5d04d4f4267449a01a2ed746f97f0d96902a5"
 
 [[files]]
 file = "resources/vinery/models/block/coarse_dirt_slab.json"
