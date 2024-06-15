@@ -1487,9 +1487,3 @@ onEvent("recipes", (event) => {
         //blame b0b :0Blush:
     });
 });
-
-onEvent("item.right_click", (event) => {
-    if (event.item.id == "ftbquests:book") {
-        event.player.stages.add("read_quest");
-    }
-});
