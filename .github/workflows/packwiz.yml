@@ -8,8 +8,12 @@ on:
                 required: true
                 default: "true"
             serverpack:
-                description: Create and upload Server Pack
+                description: Create serverpack
                 required: true
+                default: "true"
+            publish:
+                description: Publish version to CurseForge
+                required: false
                 default: "false"
     pull_request:
         branches: ["main", "Astral-Experimental"]
@@ -50,11 +54,16 @@ jobs:
                   restore-keys: |
                       cached-mods-
 
-            - name: Create CurseForge Client zip
+            - name: Construct version string
+              id: construct-base-name
               run: |
-                  ./packwiz curseforge export -o create_astral-gh_${{github.run_number}}.zip
+                  echo "ASTRAL_BASE_NAME=create_astral-${{github.run_number}}" >> "$GITHUB_OUTPUT"
 
-            - name: Prepare for Serverpack creation
+            - name: Create CurseForge client zip
+              run: |
+                  ./packwiz curseforge export -o ${{steps.construct-base-name.outputs.ASTRAL_BASE_NAME}}-client.zip
+
+            - name: Prepare for serverpack creation
               if: ${{ github.event.inputs.serverpack }}
               run: |
                   cat server.packwizignore >> .packwizignore
@@ -70,7 +79,7 @@ jobs:
                   latest: true
                   fileName: packwiz-installer-bootstrap.jar
 
-            - name: Create Serverpack
+            - name: Create serverpack
               if: ${{ github.event.inputs.serverpack }}
               run: |
                   cd server
@@ -88,16 +97,33 @@ jobs:
                       ./server/mods
                   key: cached-mods-${{ hashFiles('/home/runner/.cache/packwiz/cache/**/*') }}-${{ hashFiles('./server/mods') }}
 
-            - name: Upload Client pack
+            # Otherwise the artifact would be a zip in a zip, which can't be automatically installed in launchers
+            - name: Unpack client pack for nicer artifact
+              if: ${{github.event.inputs.artifacts}}
+              run: |
+                  unzip ${{steps.construct-base-name.outputs.ASTRAL_BASE_NAME}}-client.zip -d ./client
+
+            - name: Upload client pack to GitHub
               if: ${{ github.event.inputs.artifacts }}
               uses: actions/upload-artifact@v4
               with:
-                  name: UNZIP_ME-create_astral-gh_${{github.run_number}}.zip
-                  path: create_astral-gh_${{github.run_number}}.zip
+                  name: ${{steps.construct-base-name.outputs.ASTRAL_BASE_NAME}}-client
+                  path: ./client
 
-            - name: Upload Server pack
+            - name: Upload serverpack to GitHub
               if: ${{ github.event.inputs.serverpack && github.event.inputs.artifacts }}
               uses: actions/upload-artifact@v4
               with:
-                  name: create_astral_server-gh_${{github.run_number}}.zip
+                  name: ${{steps.construct-base-name.outputs.ASTRAL_BASE_NAME}}-server.zip
                   path: ./server
+
+    # This job publishes the modpack to CurseForge
+    publish:
+        runs-on: ubuntu-latest
+        needs: build
+        if: ${{github.event.inputs.publish}}
+        steps:
+            - name: Prepare files
+              uses: actions/download-artifact@v4
+            - name: List files
+              run: ls -l
