@@ -12842,7 +12842,7 @@ hash = "9f4b3bfeaace374727e95b85244d15436933fde0a6eec876484546a2f34895a0"
 
 [[files]]
 file = "kubejs/server_scripts/interaction.js"
-hash = "d3727dff914045b0209866a78863d74a1420dc2cfe09a686339d4a1eacf24fc7"
+hash = "94e58dad21eac47670deb91ed767bafee2d94603a1203352e35cd05a32ecbf00"
 
 [[files]]
 file = "kubejs/server_scripts/packing.js"
@@ -12870,7 +12870,7 @@ hash = "b14d492175c12c237a35159c6621010426d5249fd9720b100ac2e73d8d35fb7b"
 
 [[files]]
 file = "kubejs/server_scripts/server.js"
-hash = "dccc0e831ec3106745e704327ef78f783ec41537eef9701011604e7776355d7a"
+hash = "076d01cc911343a5d1727215ab942f23ac0f3f4277160fd3eed1fe647c73e953"
 
 [[files]]
 file = "kubejs/server_scripts/tags/graveReplaceBlacklist.js"

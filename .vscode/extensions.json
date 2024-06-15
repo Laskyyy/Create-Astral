@@ -11,6 +11,8 @@
         // Syntax highlighting etc. for .json5 files (used by some mods for configuration)
         "mrmlnc.vscode-json5",
         // for viewing nbt files
-        "misodee.vscode-nbt"
+        "misodee.vscode-nbt",
+        // for special comment highlighting
+        "aaron-bond.better-comments"
     ]
 }
