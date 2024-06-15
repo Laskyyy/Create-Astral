@@ -345,16 +345,12 @@ file = "config/fancymenu/assets/singleplayerhover.gif"
 hash = "ff2ce174d3457abfb444171fb1bf5c9233c44fcd17facccf6be08b23ba9b9d28"
 
 [[files]]
-file = "config/fancymenu/assets/splashes.txt"
-hash = "5d521e44627333121c9eaa43a7de5354d9a690f4945750dbb2ae75c571996c8d"
-
-[[files]]
 file = "config/fancymenu/assets/uwu.png"
 hash = "8d7ce46d8038ef37e526605538913133dba45657144c228080d1a8ba1e55436d"
 
 [[files]]
 file = "config/fancymenu/custom_gui_screens.txt"
-hash = "e3877856090d724f5febe2daea1c8c09ae2960a6dc8001b8aa1a0c13b1c50783"
+hash = "148e5809cb3cd5b857b51cc550a8a3bd44a5a5bfc8803a393540ab46dca36818"
 
 [[files]]
 file = "config/fancymenu/customizablemenus.txt"
@@ -362,19 +358,19 @@ hash = "0480e4942f455fa46a8201d97064e4ed822005c0d0ae8520b12957a359c08bb6"
 
 [[files]]
 file = "config/fancymenu/customization/loading_screen_layout.txt"
-hash = "c19979758517d773c864d4728d61210349effa46891d50d84dc1bc6a0447e05e"
+hash = "626c0d9124b9834dd7fcf5d2a68379802ffbcabb659456586f5ac111c17ef889"
 
 [[files]]
 file = "config/fancymenu/customization/main_menu_image_credits_layout.txt"
 hash = "9cde6fd14282eafb9f1c7ec4402c4089e396cc1d47a2db12eb3356bd532fa791"
 
 [[files]]
-file = "config/fancymenu/customization/music.txt"
-hash = "1e1467db1de67c935c2b1e1abedb74b563001d767391522ccc9f53e0ccc587c2"
+file = "config/fancymenu/customization/title_screen_layout.txt"
+hash = "7a151d49d62e956d48ca44302dd55a6cc12205bf4d3e4e8e65f914791da15e64"
 
 [[files]]
-file = "config/fancymenu/customization/title_screen_layout.txt"
-hash = "5a0e1542fac337b166d19064621e21de25359ccf869ccf549759bdb2378989a4"
+file = "config/fancymenu/customization/universal_astral_lakes.txt"
+hash = "fec66419a1d5e43a7d19f53383e837ee18da6838db7b4bf44bd4ca04160ff898"
 
 [[files]]
 file = "config/fancymenu/extensions/fmaudio/config.cfg"
@@ -418,7 +414,7 @@ hash = "003a1c89846741e0eb9475089d4ed653896fd08e0b994667fae452b4ad894a72"
 
 [[files]]
 file = "config/fancymenu/options.txt"
-hash = "1d4c7c45652706a63ad907c094e42d50e2cc0f5738c9143f94a842ad05bafcb6"
+hash = "8dff4b701fb8ad14e471461691fcd4d17cab4dd8a8025a801f28aceb21d6340e"
 
 [[files]]
 file = "config/fancymenu/slideshows/greg/images/3_dishrainback.jpg"
@@ -12818,7 +12814,7 @@ hash = "7936a3fb149726799bcf20425fe3d66e71feb3287e77f9e7a8148f61db7389b7"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
-hash = "ff11b673cac20215ff92546ae404e1c67446596d4e31a33d60bf30f736b36945"
+hash = "755f0accfb98911d9686be75fef572d2e5270b437eebcc145205b46b7dac9ace"
 
 [[files]]
 file = "kubejs/server_scripts/createaddons.js"
@@ -13262,7 +13258,7 @@ metafile = true
 
 [[files]]
 file = "mods/fancymenu.pw.toml"
-hash = "0b30688d73782a2a2825e7fd7d64ad8c2cfd4b0db774fc2f9e51204bc7d68b47"
+hash = "33259e1d54e6db2774a4e6ce03179d7510a0282dc2f7d3b1888fc71602301cb4"
 metafile = true
 
 [[files]]
@@ -26973,6 +26969,10 @@ file = "resources/buildinggadgets/textures/items/gadget_copy_paste.png"
 hash = "fcf2562e2ac134d95171e0ceaa01dead51659ced3ebb4681ed872837d7fda5d9"
 
 [[files]]
+file = "resources/campanion/lang/en_us.json"
+hash = "aad19753e24c9e2913b5b29982bf7d248fccb7d17c09bba471f1634092ae28e8"
+
+[[files]]
 file = "resources/camsbackpacks/textures/gui/backpack.png"
 hash = "a748f50aec62789175a19ff365445f5191a87e2f0aa0fd6d92549a221ddc107a"
 
@@ -28362,7 +28362,7 @@ hash = "048d7c2396a95dd5958681125aedef76e777b125678d662e0a8ddbd5444c88e3"
 
 [[files]]
 file = "resources/tconstruct/lang/en_us.json"
-hash = "b226afd12544ba3e6495ef1ce5dbea518db6bbdf0a0f8b7083e195bef364cafa"
+hash = "a64a242d7715c56201e3c1e6ba86e918b1ffee598e985f189602323bb6ad2f13"
 
 [[files]]
 file = "resources/tconstruct/lang/fr_fr.json"
