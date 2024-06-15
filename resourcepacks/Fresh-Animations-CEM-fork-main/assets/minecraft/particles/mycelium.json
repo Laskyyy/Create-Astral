@@ -1,5 +1,3 @@
 {
-  "textures": [
-    "minecraft:empty"
-  ]
+    "textures": ["minecraft:empty"]
 }

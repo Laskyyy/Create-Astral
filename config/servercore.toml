@@ -1,31 +1,22 @@
 
 # Lets you enable / disable certain features and modify them.
 [features]
-	# (Default = true) Optimizes vanilla's per-player mobspawning by using PaperMC's PlayerMobDistanceMap.
-	use_distance_map = true
+	# (Default = true) Fixes MC-162253, preventing long freezes on the client when crossing chunkborders.
+	# Performing this workaround does require a tiny bit more CPU on the server than it would without it.
+	# Incompatible with Immersive Portals.
+	fix_client_lag_on_chunkborders = false
 	# (Default = false) Stops the server from loading spawn chunks.
 	disable_spawn_chunks = false
-	# (Default = false) Allows more xp orbs to merge with one another, to reduce xp orb lag.
-	fast_xp_merging = false
-	# (Default = false) Prevents players from moving into unloaded chunks.
-	prevent_moving_into_unloaded_chunks = false
-	# (Default = 128) The radius at which the game will look for other portals. Lower values can reduce lagspikes.
-	# Does not work if lithium is installed.
-	portal_search_radius = 128
-	# (Default = 16) The radius at which the game will try to create new portals.
-	# It is recommended to make this smaller than the search radius.
-	portal_create_radius = 16
-	# (Default = true) Whether the custom portal radius will use the vanilla dimension scale.
-	portal_search_vanilla_scaling = true
+	# (Default = false) Prevents lagspikes caused by players moving into unloaded chunks.
+	prevent_moving_into_unloaded_chunks = true
 	# (Default = false) Makes villagers tick less often if they are stuck in a 1x1 space.
 	lobotomize_villagers = true
 	# (Default = 20) Decides the interval in between villager ticks when lobotomized.
 	lobotomized_tick_interval = 20
-	# (Default = -1) The threshold MSPT that the server is allowed to run mid-tick chunk saves at.
-	# Setting this value to negative will disable this threshold.
-	chunk_save_threshold = -1
-	# (Default = 5) The amount of minutes in between auto-save intervals when /save-on is active.
-	auto_save_interval = 5
+	# (Default = 6000) The amount of ticks between auto-saves when /save-on is active.
+	autosave_interval = 6000
+	# (Default = 40) Decides the chance of XP orbs being able to merge together (1 in X).
+	xp_merge_chance = 40
 	# (Default = 0.5) Decides the radius in blocks that items / xp will merge at.
 	item_merge_radius = 0.5
 	xp_merge_radius = 0.5
@@ -33,7 +24,7 @@
 # Modifies mobcaps, no-chunk-tick, simulation and view-distance depending on the MSPT.
 [dynamic]
 	# (Default = false) Enables this feature.
-	enabled = false
+	enabled = true
 	# (Default = 35) The average MSPT to target.
 	target_mspt = 35
 	# (Default = 15) The amount of seconds between dynamic performance updates.
@@ -41,23 +32,31 @@
 	# (Default = 150) The amount of seconds between dynamic viewdistance updates.
 	# This value is separate from the other checks because it makes all clients reload their chunks.
 	view_distance_update_rate = 150
-	# (Default = [Max: 10, Min: 2]) Distance in which random ticks and mobspawning can happen.
+	# (Default = [Max: 10, Min: 2, Increment: 1]) Distance in which random ticks and mobspawning can happen.
 	max_chunk_tick_distance = 10
 	min_chunk_tick_distance = 2
-	# (Default = [Max: 10, Min: 2]) Distance in which the world will tick, similar to no-tick-vd.
+	chunk_tick_distance_increment = 1
+	# (Default = [Max: 10, Min: 2, Increment: 1]) Distance in which the world will tick, similar to no-tick-vd.
 	max_simulation_distance = 10
 	min_simulation_distance = 2
-	# (Default = [Max: 10, Min: 2]) Distance in which the world will render.
+	simulation_distance_increment = 1
+	# (Default = [Max: 10, Min: 2, Increment: 1]) Distance in which the world will render.
 	max_view_distance = 10
 	min_view_distance = 2
-	# (Default = [Max: 1.0, Min: 0.3]) Global multiplier that decides the percentage of the mobcap to be used.
+	view_distance_increment = 1
+	# (Default = [Max: 1.0, Min: 0.3, Increment: 0.1]) Global multiplier that decides the percentage of the mobcap to be used.
 	max_mobcap = 1.0
 	min_mobcap = 0.3
+	mobcap_increment = 0.1
+	# (Default = ["chunk_tick_distance", "mobcap_multiplier", "simulation_distance", "view_distance"])
+	# The order in which the settings will be decreased when the server is overloaded.
+	# Removing a setting from the list will disable it.
+	setting_order = ["chunk_tick_distance", "mobcap_multiplier", "simulation_distance", "view_distance"]
 
 # Stops animals / villagers from breeding if there are too many of the same type nearby.
 [entity_limits]
 	# (Default = false) Enables this feature.
-	enabled = false
+	enabled = true
 	# (Default = [Villager: 24, Animals: 32]) Maximum count before stopping entities of the same type from breeding.
 	villager_count = 24
 	animal_count = 32
@@ -70,7 +69,6 @@
 	# Enables / disables the /servercore status command.
 	command_status = true
 	# Enables / disables the /mobcaps command.
-	# Forcefully set to false by: VMP
 	command_mobcaps = true
 	# The title for the /mobcaps command.
 	mobcap_title = "<dark_aqua>%LINE% <aqua>Mobcaps</aqua> (<aqua>%MODIFIER%</aqua>) %LINE%</dark_aqua>"
@@ -99,6 +97,9 @@
 	# (Default = false) Enables vertical range checks. By default, activation ranges only work horizontally.
 	# This can greatly improve performance on taller worlds, but might break a few very specific ai-based mobfarms.
 	use_vertical_range = true
+	# (Default = false) Skips 1/4th of entity ticks whilst not immune.
+	# This affects entities that are within the activation range, but not immune (for example by falling or being in water).
+	skip_non_immune = false
 	# (Default = true) Allows villagers to tick regardless of the activation range when panicking.
 	villager_tick_panic = true
 	# (Default = false) Allows villagers to tick regardless of the activation range.
@@ -112,17 +113,17 @@
 	# Wakeup Max = The maximum amount of entities in the same group and world that are allowed to be awakened at the same time.
 	# Wakeup Interval = The interval between inactive entity wake ups in seconds.
 	# Activation range settings for villagers.
-	villager_activation_range = 64
+	villager_activation_range = 32
 	villager_tick_inactive = true
 	villager_wakeup_max = 4
 	villager_wakeup_interval = 30
 	# Activation range settings for monsters.
-	monster_activation_range = 64
+	monster_activation_range = 32
 	monster_tick_inactive = true
 	monster_wakeup_max = 8
 	monster_wakeup_interval = 20
 	# Activation range settings for animals.
-	animal_activation_range = 64
+	animal_activation_range = 32
 	animal_tick_inactive = true
 	animal_wakeup_max = 4
 	animal_wakeup_interval = 60
@@ -135,15 +136,40 @@
 	water_activation_range = 32
 	water_tick_inactive = true
 	# Activation range settings for neutral mobs.
-	neutral_activation_range = 64
+	neutral_activation_range = 32
 	neutral_tick_inactive = true
 	# Activation range settings for zombies.
-	zombie_activation_range = 64
+	zombie_activation_range = 20
 	zombie_tick_inactive = true
 	# Activation range settings for raider mobs.
-	raider_activation_range = 64
+	raider_activation_range = 32
 	raider_tick_inactive = true
 	# Activation range settings for miscellaneous entities.
-	misc_activation_range = 64
+	misc_activation_range = 32
 	misc_tick_inactive = true
+
+# Stops animals / villagers from breeding if there are too many of the same type nearby.
+[breeding_cap]
+	# (Default = false) Enables this feature.
+	enabled = true
+	# (Default = [Villager: 24, Animals: 32]) Maximum count before stopping entities of the same type from breeding.
+	villager_count = 24
+	animal_count = 32
+	# (Default = [Villager: 64, Animals: 64]) The range it will check for entities of the same type.
+	villager_range = 64
+	animal_range = 64
+
+# Allows you to toggle specific optimizations that don't have full vanilla parity.
+# These settings will only take effect after server restarts.
+[optimizations]
+	# (Default = true) Prevents many different lagspikes caused by loading chunks synchronously.
+	# This for example causes maps to only update loaded chunks, which depending on the viewdistance can be a smaller radius than vanilla.
+	reduce_sync_loads = true
+	# (Default = true) Can significantly reduce the time spent on chunk iteration by caching ticking chunks every second.
+	# This is especially useful for servers with a high playercount and / or viewdistance.
+	# Note: The list of ticking chunks is only updated every second, rather than every tick (but that is very unlikely to matter).
+	cache_ticking_chunks = true
+	# (Default = false) Can significantly reduce time spent on mobspawning, but isn't as accurate as vanilla on biome borders.
+	# This may cause mobs from another biome to spawn a few blocks across a biome border (this does not affect structure spawning!).
+	fast_biome_lookups = true
 

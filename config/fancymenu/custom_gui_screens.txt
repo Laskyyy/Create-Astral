@@ -1,0 +1,11 @@
+type = custom_gui_screens
+
+overridden_screens {
+}
+
+custom_gui {
+  identifier = main_menu_image_credits
+  title = main_menu_image_credits
+  allow_esc = true
+}
+
