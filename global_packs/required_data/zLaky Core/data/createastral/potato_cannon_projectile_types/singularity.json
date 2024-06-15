@@ -1,0 +1,13 @@
+{
+    "items": [
+      "createastral:astral_singularity"
+    ],
+    "reload_ticks": 90,
+    "damage": 30,
+    "knockback": 8,
+    "drag": 1,
+    "velocity_multiplier": 0.1,
+    "gravity_multiplier": 0,
+    "sticky": true,
+    "sound_pitch": 0
+  }

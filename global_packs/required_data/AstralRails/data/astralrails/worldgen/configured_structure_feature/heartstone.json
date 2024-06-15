@@ -1,0 +1,11 @@
+{
+  "config": {
+    "start_pool": "astralrails:heartstone/heartstone_start",
+    "size": 7
+  },
+  "biomes": "#astralrails:has_structure/shimmerlakes",
+  "adapt_noise":false,
+  "spawn_overrides": {
+  },
+  "type": "minecraft:bastion_remnant"
+}

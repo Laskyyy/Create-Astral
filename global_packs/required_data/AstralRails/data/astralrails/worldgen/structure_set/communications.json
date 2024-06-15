@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "astralrails:moon/communications",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"spacing": 40,
+		"separation": 5,
+		"salt": 345675
+	}
+}

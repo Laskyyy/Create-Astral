@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "astralrails:moon/transformer",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"spacing": 55,
+		"separation": 8,
+		"salt": 345634637775
+	}
+}

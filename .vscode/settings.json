@@ -1,0 +1,12 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "[json5]": {
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": null
+    },
+    "files.associations": {
+        "*.mcmeta": "json",
+        ".packwizignore": "ignore"
+    }
+}

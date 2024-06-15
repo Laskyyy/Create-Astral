@@ -1,7 +1,0 @@
-{
-  "replace": true,
-  "entities": ["player"],
-  "slots": [
-    "head/face"
-  ]
-}
