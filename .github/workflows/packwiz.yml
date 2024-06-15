@@ -75,6 +75,7 @@ jobs:
               run: |
                   cd server
                   java -jar ../packwiz-installer-bootstrap.jar -g -s server ../pack.toml
+                  rm -f packwiz-installer.jar
                   ls -l
                   cd ../
 
