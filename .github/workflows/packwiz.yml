@@ -58,6 +58,7 @@ jobs:
               if: ${{ github.event.inputs.serverpack }}
               run: |
                   cat server.packwizignore >> .packwizignore
+                  mv serverpack/* ./
                   ./packwiz refresh
                   mkdir server
 
