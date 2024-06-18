@@ -609,6 +609,8 @@ function sequencedAssemblyRecipes(event) {
             .loops(1);
     }
     function circuitSequence(event) {
+
+        let incomplete_transitional_circuit = "createastral:incomplete_transitional_electronic_circuit";
         event.recipes
             .createSequencedAssembly(
                 [
@@ -618,13 +620,13 @@ function sequencedAssemblyRecipes(event) {
                 "create:integrated_circuit",
                 [
                     // input
-                    event.recipes.createDeploying("create:integrated_circuit", [
-                        "create:integrated_circuit",
+                    event.recipes.createDeploying(incomplete_transitional_circuit, [
+                        incomplete_transitional_circuit,
                         "createastral:electrified_pin",
                     ]),
                 ]
             )
-            .transitionalItem("create:integrated_circuit")
+            .transitionalItem(incomplete_transitional_circuit)
             .loops(64);
 
         event.recipes
@@ -648,15 +650,17 @@ function sequencedAssemblyRecipes(event) {
             )
             .transitionalItem("createastral:incomplete_electronic_circuit")
             .loops(1);
+
+        let transitional_lapis_sheet = "createastral:transitional_lapis_sheet";
         event.recipes.createSequencedAssembly(["create:integrated_circuit"], "create:lapis_sheet", [
-            event.recipes.createFilling("create:lapis_sheet", [
-                "create:lapis_sheet",
+            event.recipes.createFilling(transitional_lapis_sheet, [
+                transitional_lapis_sheet,
                 { fluid: "tconstruct:molten_silver", amount: 3375 },
             ]),
-            event.recipes.createDeploying("create:lapis_sheet", ["create:lapis_sheet", "createaddition:copper_wire"]),
-            event.recipes.createDeploying("create:lapis_sheet", ["create:lapis_sheet", "createaddition:copper_wire"]),
-            event.recipes.createPressing("create:lapis_sheet", "create:lapis_sheet"),
-        ]);
+            event.recipes.createDeploying(transitional_lapis_sheet, [transitional_lapis_sheet, "createaddition:copper_wire"]),
+            event.recipes.createDeploying(transitional_lapis_sheet, [transitional_lapis_sheet, "createaddition:copper_wire"]),
+            event.recipes.createPressing(transitional_lapis_sheet, transitional_lapis_sheet),
+        ]).transitionalItem(transitional_lapis_sheet);
 
         event.recipes.createSequencedAssembly(["createastral:wired_panelling"], "ad_astra:steel_block", [
             event.recipes.createDeploying("ad_astra:steel_block", [
@@ -986,25 +990,26 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem("create:tree_fertilizer")
         .loops(125);
 
+    let incomplete_navigation_mechanism = "createastral:incomplete_navigation_mechanism"
     event.recipes
-        .createSequencedAssembly(["createastral:navigation_mechanism"], "phonos:redstone_chip", [
-            event.recipes.createFilling("create:incomplete_precision_mechanism", [
+        .createSequencedAssembly([incomplete_navigation_mechanism], "phonos:redstone_chip", [
+            event.recipes.createFilling(incomplete_navigation_mechanism, [
                 "create:incomplete_precision_mechanism",
                 {
                     fluid: "tconstruct:molten_cobalt",
                     amount: 1350,
                 },
             ]),
-            event.recipes.createDeploying("create:incomplete_precision_mechanism", [
-                "techreborn:electrum_nugget",
+            event.recipes.createDeploying(incomplete_navigation_mechanism, [
+                incomplete_navigation_mechanism,
                 "techreborn:electrum_nugget",
             ]),
             event.recipes.createPressing(
-                "create:incomplete_precision_mechanism",
-                "create:incomplete_precision_mechanism"
+                incomplete_navigation_mechanism,
+                incomplete_navigation_mechanism
             ),
         ])
-        .transitionalItem("create:incomplete_precision_mechanism")
+        .transitionalItem(incomplete_navigation_mechanism)
         .loops(30);
 
     event.recipes
@@ -1035,6 +1040,7 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem("minecraft:ender_pearl")
         .loops(3);
 
+    let transitional_redstone_chip = "createastral:incomplete_redstone_chip";
     event.recipes
         .createSequencedAssembly(
             [
@@ -1045,14 +1051,14 @@ function sequencedAssemblyRecipes(event) {
             [
                 // input
                 event.recipes.createFilling("create:electron_tube", [
-                    "create:electron_tube",
+                    transitional_redstone_chip,
                     { fluid: "tconstruct:molten_copper", amount: 3375 },
                 ]),
-                event.recipes.createDeploying("create:electron_tube", ["create:electron_tube", "#c:wires"]), //fill obsid
-                event.recipes.createPressing("create:electron_tube", "#c:wires"), //yeah
+                event.recipes.createDeploying(transitional_redstone_chip, [transitional_redstone_chip, "#c:wires"]), //fill obsid
+                event.recipes.createPressing(transitional_redstone_chip, "#c:wires"), //yeah
             ]
         )
-        .transitionalItem("create:electron_tube")
+        .transitionalItem(transitional_redstone_chip)
         .loops(12);
 
     event.recipes

@@ -694,6 +694,16 @@ onEvent("item.registry", (event) => {
     event.create("createastral:pure_biomatter");
     event.create("createastral:lime").displayName("Lime Dust");
     event.create("createastral:coin", "create:sequenced_assembly").displayName("coin");
+
+    // Transitional Items
+    event.create("createastral:incomplete_transitional_electronic_circuit", "create:sequenced_assembly").displayName("Incomplete Electronic Circuit");
+    event.create("createastral:transitional_lapis_sheet", "create:sequenced_assembly").displayName("Incomplete Integrated Circuit");
+    event.create("createastral:incomplete_navigation_mechanism", "create:sequenced_assembly").displayName("Incomplete Navigation Mechanism");
+    event.create("createastral:incomplete_redstone_chip", "create:sequenced_assembly").displayName("Incomplete Redstone Chip");
+    event.create("createastral:incomplete_refining_agent", "create:sequenced_assembly").displayName("Incomplete Refining Agent");
+    event.create("createastral:incomplete_separation_agent", "create:sequenced_assembly").displayName("Incomplete Separation Agent");
+    event.create("createastral:incomplete_pure_star_shard", "create:sequenced_assembly").displayName("Incomplete Pure Star Shard");
+
 });
 
 // Java reflection stuff //

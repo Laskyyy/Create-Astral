@@ -1237,28 +1237,30 @@ onEvent("recipes", (event) => {
         ])
         .processingTime(300);
 
+    let incomplete_refining_agent = "createastral:incomplete_refining_agent"
     event.recipes
         .createSequencedAssembly(["createastral:refining_agent"], "ae2:fluix_dust", [
-            event.recipes.createFilling("ae2:fluix_dust", [
-                "ae2:fluix_dust",
+            event.recipes.createFilling(incomplete_refining_agent, [
+                incomplete_refining_agent,
                 { fluid: "tconstruct:blazing_blood", amount: 9000 },
             ]),
-            event.recipes.createFilling("ae2:fluix_dust", [
-                "ae2:fluix_dust",
+            event.recipes.createFilling(incomplete_refining_agent, [
+                incomplete_refining_agent,
                 { fluid: "techreborn:biofuel", amount: 9000 },
             ]),
-            event.recipes.createPressing("ae2:fluix_dust", "ae2:fluix_dust"),
+            event.recipes.createPressing(incomplete_refining_agent, "ae2:fluix_dust"),
         ])
-        .transitionalItem("ae2:fluix_dust")
+        .transitionalItem(incomplete_refining_agent)
         .loops(3);
 
+    let incomplete_separation_agent = "createastral:incomplete_separation_agent"
     event.recipes
         .createSequencedAssembly(["minecraft:paper"], "createastral:separation_agent", [
-            event.recipes.createDeploying("minecraft:paper", ["techreborn:charcoal_dust", "techreborn:charcoal_dust"]),
-            event.recipes.createDeploying("minecraft:paper", ["techreborn:obsidian_dust", "techreborn:obsidian_dust"]),
-            event.recipes.createDeploying("minecraft:paper", ["techreborn:sulfur_dust", "techreborn:sulfur_dust"]),
+            event.recipes.createDeploying(incomplete_separation_agent, [incomplete_separation_agent, "techreborn:charcoal_dust"]),
+            event.recipes.createDeploying(incomplete_separation_agent, [incomplete_separation_agent, "techreborn:obsidian_dust"]),
+            event.recipes.createDeploying(incomplete_separation_agent, [incomplete_separation_agent, "techreborn:sulfur_dust"]),
         ])
-        .transitionalItem("minecraft:paper")
+        .transitionalItem(incomplete_separation_agent)
         .loops(3);
 
     event.recipes
@@ -1296,17 +1298,18 @@ onEvent("recipes", (event) => {
         .heated()
         .processingTime(500);
 
+    let incomplete_star = "createastral:incomplete_pure_star_shard"
     event.recipes
         .createSequencedAssembly(["createastral:pure_star_shard"], "createastral:star_shard", [
-            event.recipes.createFilling("createastral:star_shard", [
-                "createastral:star_shard",
+            event.recipes.createFilling(incomplete_star, [
+                incomplete_star,
                 { fluid: "kubejs:molten_yttrium", amount: INGOT / 2 },
             ]),
-            event.recipes.createPressing("createastral:star_shard", "createastral:star_shard"),
-            event.recipes.createDeploying("createastral:star_shard", ["techreborn:scrap_box", "techreborn:scrap_box"]),
-            event.recipes.createPressing("createastral:star_shard", "createastral:star_shard"),
+            event.recipes.createPressing(incomplete_star, incomplete_star),
+            event.recipes.createDeploying(incomplete_star, [incomplete_star, "techreborn:scrap_box"]),
+            event.recipes.createPressing(incomplete_star, incomplete_star),
         ])
-        .transitionalItem("createastral:star_shard")
+        .transitionalItem(incomplete_star)
         .loops(3);
 
     event.custom({
