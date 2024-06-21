@@ -731,53 +731,56 @@ function sequencedAssemblyRecipes(event) {
             event.recipes.createPressing("ad_astra:ostrum_engine", "ad_astra:ostrum_engine"),
         ]);
 
-        event.recipes
-            .createSequencedAssembly(["ae2:calculation_processor"], "ae2:printed_silicon", [
-                event.recipes.createDeploying("ae2:printed_silicon", [
-                    "ae2:printed_silicon",
+
+        const inc_cal = "createastral:incomplete_calculation_processor"
+        event.recipes.createSequencedAssembly(["ae2:calculation_processor"], "ae2:printed_silicon", [
+                event.recipes.createDeploying(inc_cal, [
+                    inc_cal,
                     "ae2:printed_calculation_processor",
                 ]),
-                event.recipes.createDeploying("ae2:printed_silicon", ["ae2:printed_silicon", "ae2:fluix_dust"]),
+                event.recipes.createDeploying(inc_cal, [inc_cal, "ae2:fluix_dust"]),
 
-                event.recipes.createFilling("create:lapis_sheet", [
-                    "create:lapis_sheet",
+                event.recipes.createFilling(inc_cal, [
+                    inc_cal,
                     { fluid: "kubejs:shimmer", amount: 8100 },
                 ]),
-                event.recipes.createPressing("ae2:printed_silicon", "ae2:printed_silicon"),
+                event.recipes.createPressing(inc_cal, inc_cal),
             ])
-            .transitionalItem("ae2:printed_silicon")
+            .transitionalItem(inc_cal)
             .loops(1);
-        event.recipes
-            .createSequencedAssembly(["ae2:engineering_processor"], "ae2:printed_silicon", [
-                event.recipes.createDeploying("ae2:printed_silicon", [
-                    "ae2:printed_silicon",
+
+        const inc_eng = "createastral:incomplete_engineering_processor"
+        event.recipes.createSequencedAssembly(["ae2:engineering_processor"], "ae2:printed_silicon", [
+                event.recipes.createDeploying(inc_eng, [
+                    inc_eng,
                     "ae2:printed_engineering_processor",
                 ]),
-                event.recipes.createDeploying("ae2:printed_silicon", ["ae2:printed_silicon", "ae2:fluix_dust"]),
+                event.recipes.createDeploying(inc_eng, [inc_eng, "ae2:fluix_dust"]),
 
-                event.recipes.createFilling("create:lapis_sheet", [
-                    "create:lapis_sheet",
+                event.recipes.createFilling(inc_eng, [
+                    inc_eng,
                     { fluid: "kubejs:shimmer", amount: 8100 },
                 ]),
-                event.recipes.createPressing("ae2:printed_silicon", "ae2:printed_silicon"),
+                event.recipes.createPressing(inc_eng, inc_eng),
             ])
-            .transitionalItem("ae2:printed_silicon")
+            .transitionalItem(inc_eng)
             .loops(1);
-        event.recipes
-            .createSequencedAssembly(["ae2:logic_processor"], "ae2:printed_silicon", [
-                event.recipes.createDeploying("ae2:printed_silicon", [
-                    "ae2:printed_silicon",
+
+        let inc_log = "createastral:incomplete_logic_processor"
+        event.recipes.createSequencedAssembly(["ae2:logic_processor"], "ae2:printed_silicon", [
+                event.recipes.createDeploying(inc_log, [
+                    inc_log,
                     "ae2:printed_logic_processor",
                 ]),
-                event.recipes.createDeploying("ae2:printed_silicon", ["ae2:printed_silicon", "ae2:fluix_dust"]),
+                event.recipes.createDeploying(inc_log, [inc_log, "ae2:fluix_dust"]),
 
-                event.recipes.createFilling("create:lapis_sheet", [
-                    "create:lapis_sheet",
+                event.recipes.createFilling(inc_log, [
+                    inc_log,
                     { fluid: "kubejs:shimmer", amount: 8100 },
                 ]),
-                event.recipes.createPressing("ae2:printed_silicon", "ae2:printed_silicon"),
+                event.recipes.createPressing(inc_log, inc_log),
             ])
-            .transitionalItem("ae2:printed_silicon")
+            .transitionalItem(inc_log)
             .loops(1);
 
         event.recipes
@@ -992,7 +995,7 @@ function sequencedAssemblyRecipes(event) {
 
     let incomplete_navigation_mechanism = "createastral:incomplete_navigation_mechanism"
     event.recipes
-        .createSequencedAssembly([incomplete_navigation_mechanism], "phonos:redstone_chip", [
+        .createSequencedAssembly(["createastral:navigation_mechanism"], "phonos:redstone_chip", [
             event.recipes.createFilling(incomplete_navigation_mechanism, [
                 "create:incomplete_precision_mechanism",
                 {

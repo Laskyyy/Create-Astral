@@ -569,7 +569,7 @@ onEvent("recipes", (event) => {
     });
     event.shaped("doodads:paintbrush", [" B ", " A ", " A "], {
         A: "minecraft:stick",
-        B: "toms_storage:ts.paint_kit",
+        B: "catwalksinc:paint_roller",
     });
 
     event.shaped("automobility:automobile_assembler", ["AAA", " B ", "BBB"], {
@@ -615,8 +615,8 @@ onEvent("recipes", (event) => {
     });
 
     event.shaped("createastral:t3_upgrade", ["ABA", "BCB", "ABA"], {
-        A: "create:brass_sheet",
-        B: "ae2:fluix_block",
+        A: "ae2:fluix_block",
+        B: "create:brass_sheet",
         C: "createastral:t2_upgrade",
     });
 
@@ -810,7 +810,8 @@ onEvent("recipes", (event) => {
         E: Item.of("create:filter").ignoreNBT(),
     });
 
-    event.shaped("createsifter:andesite_mesh", ["BAB", "AAA", "BAB"], {
+    // sifter removed
+/*    event.shaped("createsifter:andesite_mesh", ["BAB", "AAA", "BAB"], {
         A: "createdeco:andesite_mesh_fence",
         B: "create:shaft",
     });
@@ -818,7 +819,7 @@ onEvent("recipes", (event) => {
     event.shaped("createsifter:brass_mesh", ["BAB", "AAA", "BAB"], {
         A: "createdeco:brass_mesh_fence",
         B: "createaddition:brass_rod",
-    });
+    });*/
 
     /// end sifter
 
@@ -1007,15 +1008,15 @@ onEvent("recipes", (event) => {
         Item.of("custommachinery:custom_machine_item", {
             machine: "createastral:distillery",
         }),
-        ["CCC", "DED", "CCC"],
+        ["CCC", "DED", "BBB"],
         {
-            A: "techreborn:electronic_circuit",
-            B: "create:blaze_burner",
-            C: "create:fluid_tank",
+            // A: "techreborn:electronic_circuit",
+            // B: "create:blaze_burner",
+            B: "create:fluid_tank",
             C: "techreborn:lead_plate",
             D: "techreborn:industrial_centrifuge",
             E: "techreborn:advanced_machine_frame",
-            F: "techreborn:extractor",
+            // F: "techreborn:extractor",
         }
     );
 
@@ -1044,7 +1045,7 @@ onEvent("recipes", (event) => {
         E: "tconstruct:seared_basin",
     });
 
-    event.shaped("techreborn:solid_canning_machine", ["ABA", "CDC", "FBF"], {
+    event.shaped("techreborn:solid_canning_machine", ["ABA", "CDC", "EBE"], {
         A: "create:sturdy_sheet",
         B: "create:deployer",
         C: "create:belt_connector",
@@ -1113,25 +1114,17 @@ onEvent("recipes", (event) => {
         B: "campanion:leather_pouch",
         C: "campanion:sleeping_bag",
         D: "create:fluid_tank",
-        E: "tconstruct:travellers_chestplate",
+        E: "tconstruct:travelers_chestplate",
         F: "farmersdelight:rope",
     });
 
-    event.shaped("travelersbackpack:standard", ["ABC", "DED", "FBF"], {
-        A: "#c:workbenches",
-        B: "campanion:leather_pouch",
-        C: "campanion:sleeping_bag",
-        D: "create:fluid_tank",
-        E: "tconstruct:travellers_chestplate",
-        F: "farmersdelight:rope",
-    });
     event.shaped("campanion:sleeping_bag", ["AAA", "BCB"], {
         A: "campanion:wool_tarp",
         B: "farmersdelight:canvas_rug",
         C: "minecraft:string",
     });
     event.shaped("travelersbackpack:hose", ["ABB", " CB", "  B"], {
-        A: "travellersbackpack:hose_nozzle",
+        A: "travelersbackpack:hose_nozzle",
         B: "techreborn:rubber",
         C: "minecraft:green_dye",
     });
