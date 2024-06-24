@@ -97,9 +97,11 @@ onEvent("fluid.registry", (event) => {
         .stillTexture("tconstruct:block/fluid/molten/still")
         .flowingTexture("tconstruct:block/fluid/molten/flowing");
 
-    event.create("red_grape_juice").thinTexture(0x864e97).bucketColor(0x864e97).displayName("Red Grape Juice");
+    event.create("red_grape_juice").thinTexture(0x864e97).bucketColor(0x864e97).displayName("Red Grape Juice").stillTexture("tconstruct:block/fluid/stew/still")
+    .flowingTexture("tconstruct:block/fluid/stew/flowing");
 
-    event.create("white_grape_juice").thinTexture(0xeeedc4).bucketColor(0xeeedc4).displayName("White Grape Juice");
+    event.create("white_grape_juice").thinTexture(0xeeedc4).bucketColor(0xeeedc4).displayName("White Grape Juice").stillTexture("tconstruct:block/fluid/stew/still")
+    .flowingTexture("tconstruct:block/fluid/stew/flowing");
 
     event
         .create("liquid_xp_nuggies")
@@ -516,11 +518,11 @@ onEvent("item.registry.tool_tiers", (event) => {
     });
 
     event.add("brass", (tier) => {
-        tier.uses = 550;
-        tier.speed = 8.0;
+        tier.uses = 640;
+        tier.speed = 9.0;
         tier.attackDamageBonus = 3.0;
         tier.level = 4;
-        tier.enchantmentValue = 45;
+        tier.enchantmentValue = 50;
     });
 
     event.add("radiant", (tier) => {
@@ -541,18 +543,18 @@ onEvent("item.registry.armor_tiers", (event) => {
         tier.enchantmentValue = 9;
         tier.equipSound = "minecraft:item.armor.equip_iron";
         tier.repairIngredient = "minecraft:copper_ingot";
-        tier.toughness = 0.0; // diamond has 2.0, netherite 3.0
+        tier.toughness = 1.0; // diamond has 2.0, netherite 3.0
         tier.knockbackResistance = 0.0;
     });
 
     event.add("brassarmor", (tier) => {
         tier.durabilityMultiplier = 25; // Each slot will be multiplied with [13, 15, 16, 11]
-        tier.slotProtections = [3, 6, 6, 3];
+        tier.slotProtections = [3, 6, 6, 4];
         tier.enchantmentValue = 45;
         tier.equipSound = "minecraft:item.armor.equip_iron";
         tier.repairIngredient = "create:brass_ingot";
-        tier.toughness = 0.0; // diamond has 2.0, netherite 3.0
-        tier.knockbackResistance = 0.0;
+        tier.toughness = 1.0; // diamond has 2.0, netherite 3.0
+        tier.knockbackResistance = 0.1;
     });
 
     event.add("steelarmor", (tier) => {
@@ -562,7 +564,7 @@ onEvent("item.registry.armor_tiers", (event) => {
         tier.equipSound = "minecraft:item.armor.equip_iron";
         tier.repairIngredient = "#c:steel_ingots";
         tier.toughness = 2.0; // diamond has 2.0, netherite 3.0
-        tier.knockbackResistance = 0.1;
+        tier.knockbackResistance = 0.2;
     });
 
     event.add("sturdyarmor", (tier) => {
@@ -581,7 +583,7 @@ onEvent("item.registry.armor_tiers", (event) => {
         tier.enchantmentValue = 99;
         tier.equipSound = "minecraft:item.armor.equip_iron";
         tier.repairIngredient = "create:refined_radiance";
-        tier.toughness = 3.0; // diamond has 2.0, netherite 3.0
+        tier.toughness = 4.0; // diamond has 2.0, netherite 3.0
         tier.knockbackResistance = 0.2;
     });
 });
@@ -592,6 +594,7 @@ onEvent("item.registry", (event) => {
         event.create("createastral:crushed_raw_ostrum"),
         event.create("createastral:crushed_raw_calorite"),
         event.create("createastral:subatomic_ingot"),
+        event.create("createastral:prismatic_crystal"),
         event.create("createastral:astral_conduit").maxStackSize(1).maxDamage(20);
     event.create("createastral:andesite_compound"),
         event.create("createastral:bronze_sheet"),
@@ -982,6 +985,22 @@ onEvent("item.tooltip", (e) => {
             item: "adoptafloppa:amazon_delivery",
             tooltip: 'A note is attached: "Feed this thing fish once a day or else it will explode. Good luck.".',
         },
+        {
+            item: "createastral:gyrodyne_blueprint",
+            tooltip: 'An ancient schematic from a lost civilisation. Perhaps it can be found in old facilities?',
+        },
+        {
+            item: "createastral:quadrocopter_blueprint",
+            tooltip: 'An ancient schematic from a lost civilisation. Perhaps it can be found in old facilities?',
+        },
+        {
+            item: "createastral:airship_blueprint",
+            tooltip: 'An ancient schematic from a lost civilisation. Perhaps it can be found in old facilities?',
+        },
+        {
+            item: "createastral:biplane_blueprint",
+            tooltip: 'An ancient schematic from a lost civilisation. Perhaps it can be found in old facilities?',
+        },
     ];
 
     tooltips.forEach((tooltip) => {
@@ -1204,5 +1223,13 @@ onEvent("worldgen.add", (event) => {
         ore.addTarget("#ad_astra:mercury_ore_replaceables", "ad_astra:deepslate_calorite_ore");
 
         ore.count([10, 20]).squared().triangleHeight(0, 85);
+    });
+
+    event.addOre((ore) => {
+        ore.id = "kubejs:endyttrium"; // optional
+        ore.biomes = ["createastral:devoured_moon_debris"];
+        ore.addTarget("#ad_astra:glacio_ore_replaceables", "yttr:deepslate_gadolinite");
+
+        ore.count([10, 35]).squared().triangleHeight(50, 85);
     });
 });
