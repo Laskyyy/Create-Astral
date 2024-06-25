@@ -1832,7 +1832,6 @@ function mixingRecipes(event) {
 function cuttingRecipes(event) {
     // [Input string, Output string]
     [
-        ["#minecraft:planks", "techreborn:wood_plate"],
         ["techreborn:rubber_log", "techreborn:rubber_log_stripped"],
         ["techreborn:rubber_wood", "techreborn:stripped_rubber_wood"],
         ["techreborn:rubber_log_stripped", "6x techreborn:rubber_planks"],
@@ -2346,7 +2345,6 @@ function pressingRecipes(event) {
         ["minecraft:lapis_block", "create:lapis_sheet"],
         ["createastral:pure_star_shard", "minecraft:nether_star"],
         ["minecraft:cobblestone", "techreborn:andesite_dust"],
-        ["#minecraft:planks", "techreborn:wood_plate"]
     ].forEach((recipe) => {
         event.recipes.createPressing(recipe[1], recipe[0]);
     });

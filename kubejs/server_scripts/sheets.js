@@ -1,4 +1,4 @@
-// All plates are equal!
+// All sheets are equal!
 
 const MATERIALS = [
     {
@@ -86,12 +86,6 @@ const MATERIALS = [
         useMechPress: true,
     },
     {
-        ingot: "techreborn:iridium_ingot",
-        block: "techreborn:iridium_storage_block",
-        plate: "techreborn:iridium_plate",
-        useMechPress: false,
-    },
-    {
         ingot: "techreborn:lead_ingot",
         block: "techreborn:lead_storage_block",
         plate: "techreborn:lead_plate",
@@ -104,15 +98,25 @@ const MATERIALS = [
         useMechPress: true,
     },
     {
+        ingot: "techreborn:tin_ingot",
+        block: "techreborn:tin_storage_block",
+        plate: "techreborn:tin_plate",
+        useMechPress: true,
+    },
+    {
         ingot: "techreborn:diamond_dust",
         block: "minecraft:diamond_block",
         plate: "techreborn:diamond_plate",
         useMechPress: false,
-    },
+    }
 ];
 
 onEvent("recipes", (event) => {
     MATERIALS.forEach((material) => {
+        // wood plates are special
+        event.recipes.createPressing("techreborn:wood_plate", "#minecraft:planks");
+        event.recipes.createCutting("techreborn:wood_plate", "#minecraft:planks");
+
         event.remove({ not: { mod: "tconstruct" }, output: material.plate });
         if (material.useMechPress) {
             event.recipes.createPressing(material.plate, material.ingot);
