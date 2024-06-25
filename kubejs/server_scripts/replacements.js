@@ -139,16 +139,6 @@ onEvent("recipes", (event) => {
             "create:electron_tube",
         ],
         [
-            { output: "ad_astra:engine_fan" },
-            "ad_astra:steel_plate",
-            "ad_astra:iron_plate",
-        ],
-        [
-            { output: "ad_astra:engine_frame" },
-            "ad_astra:steel_plate",
-            "ad_astra:iron_plate",
-        ],
-        [
             { output: "create:mechanical_drill" },
             "minecraft:iron_ingot",
             "create:iron_sheet",
@@ -165,6 +155,11 @@ onEvent("recipes", (event) => {
         ],
         [
             { output: "ad_astra:engine_frame" },
+            "ad_astra:steel_plate",
+            "create:sturdy_sheet",
+        ],
+        [
+            { output: "ad_astra:engine_fan" },
             "ad_astra:steel_plate",
             "create:sturdy_sheet",
         ],
@@ -309,11 +304,11 @@ onEvent("recipes", (event) => {
             "createastral:bronze_ingot",
         ],
         [
-            { mod: "techreborn" },
+
             "techreborn:copper_plate",
             "create:copper_sheet",
         ],
-        [{ mod: "techreborn" }, "techreborn:gold_plate", "create:gold_sheet"],
+        [ "techreborn:gold_plate", "create:gold_sheet"],
         [
             { mod: "techreborn" },
             "techreborn:steel_plate",
@@ -496,6 +491,10 @@ onEvent("recipes", (event) => {
             "techreborn:zinc_plate",
             "createaddition:zinc_sheet",
         ],
+        [
+            "createdeco:zinc_sheet",
+            "createaddition:zinc_sheet",
+        ],
         [{ mod: "techreborn" }, "techreborn:zinc_ingot", "create:zinc_ingot"],
         [{ mod: "techreborn" }, "techreborn:zinc_nugget", "create:zinc_nugget"],
         ["#c:ingots/steel", "ad_astra:steel_ingot"],
@@ -600,7 +599,6 @@ onEvent("recipes", (event) => {
             "techreborn:lithium_ion_battery",
         ],
         [
-            { mod: "techreborn" },
             "techreborn:iridium_alloy_plate",
             "yttr:yttrium_ingot",
         ],
@@ -770,6 +768,8 @@ onEvent("recipes", (event) => {
             "minecraft:ender_pearl",
             "minecraft:ender_eye",
         ],
+        ["techreborn:carbon_plate", "techreborn:carbon_mesh"],
+        ["techreborn:lazurite_plate", "create:lapis_sheet"],
     ].forEach((recipe) => {
         if (recipe.length === 2) {
             event.replaceInput(recipe[0], recipe[1]);

@@ -15,6 +15,7 @@ onEvent("rei.hide.items", (event) => {
         "ad_astra:desh_fluid_pipe",
         "ad_astra:ostrum_fluid_pipe",
         "ad_astra:steel_cable",
+        "ad_astra:iron_sheet",
         "automobility:acacia_planks_slope",
         "automobility:ancient_debris_slope",
         "automobility:andesite_slope",
@@ -625,9 +626,14 @@ onEvent("rei.hide.items", (event) => {
         "techreborn:zinc_storage_block_slab",
         "techreborn:zinc_storage_block_stairs",
         "techreborn:zinc_storage_block_wall",
+        "techreborn:neutron_reflector",
+        "techreborn:thick_neturon_reflector",
+        "techreborn:iridium_neutron_reflector",
+        "techreborn:mixed_metal_ingot",
         "createbigcannons:molten_bronze_bucket",
         "createbigcannons:molten_steel_bucket",
         "createbigcannons:molten_nethersteel_bucket",
+        "createdeco:zinc_sheet"
     ];
     addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:part_builder", "oak_planks", 41);
     addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:part_builder", "birch_planks", 41);
@@ -645,6 +651,34 @@ onEvent("rei.hide.items", (event) => {
     addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:tinker_station", "dark_oak_planks", 41);
     addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:tinker_station", "crimson_planks", 41);
     addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:tinker_station", "warped_planks", 41);
+
+
+    const plates = [
+        "carbon",
+        "coal",
+        "copper",
+        "emerald",
+        "gold",
+        "iridium",
+        "iridium_alloy",
+        "iron",
+        "lapis",
+        "lazurite",
+        "magnalium",
+        "nickel",
+        "obsidian",
+        "peridot",
+        "platinum",
+        "quartz",
+        "red_garnet",
+        "redstone",
+        "ruby",
+        "sapphire",
+        "silicon",
+        "yellow_garnet",
+    ];
+    plates.forEach((id) => HIDDEN_ITEMS.push("techreborn:" + id + "_plate"));
+
 
     HIDDEN_ITEMS.forEach((id) => event.hide(id));
 });

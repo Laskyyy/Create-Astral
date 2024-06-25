@@ -1081,18 +1081,19 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem("createastral:incomplete_electronic_circuit")
         .loops(10);
 
+    const inc_dash_panel = "createastral:incomplete_dash_panel"
     //Dash panel
     event.recipes
-        .createSequencedAssembly(["automobility:dash_panel"], "ad_astra:iron_plate", [
+        .createSequencedAssembly(["automobility:dash_panel"], "create:iron_sheet", [
             event.recipes
-                .createFilling("ad_astra:iron_plate", [
-                    "ad_astra:iron_plate",
+                .createFilling(inc_dash_panel, [
+                    inc_dash_panel,
                     { fluid: "kubejs:shimmer", amount: INGOT },
                 ])
                 .processingTime(75), //fill
-            event.recipes.createPressing("ad_astra:iron_plate", "ad_astra:iron_plate").processingTime(75),
+            event.recipes.createPressing(inc_dash_panel, inc_dash_panel).processingTime(75),
         ])
-        .transitionalItem("ad_astra:iron_plate")
+        .transitionalItem(inc_dash_panel)
         .loops(3);
 }
 
@@ -1831,6 +1832,7 @@ function mixingRecipes(event) {
 function cuttingRecipes(event) {
     // [Input string, Output string]
     [
+        ["#minecraft:planks", "techreborn:wood_plate"],
         ["techreborn:rubber_log", "techreborn:rubber_log_stripped"],
         ["techreborn:rubber_wood", "techreborn:stripped_rubber_wood"],
         ["techreborn:rubber_log_stripped", "6x techreborn:rubber_planks"],
@@ -2111,17 +2113,6 @@ function mechanicalCraftingRecipes(event) {
             },
         },
         {
-            output: "ad_astra:compressor",
-            shape: ["ACCA", "B  D", "AEEA"],
-            inputs: {
-                A: "ad_astra:iron_plate",
-                B: "create:electron_tube",
-                C: "create:mechanical_press",
-                D: "create:precision_mechanism",
-                E: "ad_astra:desh_block",
-            },
-        },
-        {
             output: "ad_astra:nasa_workbench",
             shape: ["EFE", "CDC", "ABA"],
             inputs: {
@@ -2355,6 +2346,7 @@ function pressingRecipes(event) {
         ["minecraft:lapis_block", "create:lapis_sheet"],
         ["createastral:pure_star_shard", "minecraft:nether_star"],
         ["minecraft:cobblestone", "techreborn:andesite_dust"],
+        ["#minecraft:planks", "techreborn:wood_plate"]
     ].forEach((recipe) => {
         event.recipes.createPressing(recipe[1], recipe[0]);
     });
@@ -2519,10 +2511,6 @@ function compactingRecipes(event) {
         {
             output: "minecraft:andesite",
             inputs: ["2x minecraft:flint", "minecraft:gravel", { fluid: "minecraft:lava", amount: 100 * mB }],
-        },
-        {
-            output: "ad_astra:iron_plate",
-            inputs: ["create:iron_sheet"],
         },
         {
             output: "createastral:steel_helmet",

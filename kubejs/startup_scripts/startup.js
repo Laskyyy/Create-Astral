@@ -591,6 +591,7 @@ onEvent("item.registry.armor_tiers", (event) => {
 ///// REGISTER NEW ITEMS HERE /////
 onEvent("item.registry", (event) => {
     event.create("createastral:crushed_raw_desh"),
+    event.create("createastral:crushed_raw_cobalt");
         event.create("createastral:crushed_raw_ostrum"),
         event.create("createastral:crushed_raw_calorite"),
         event.create("createastral:subatomic_ingot"),
@@ -693,7 +694,19 @@ onEvent("item.registry", (event) => {
         });
     event.create("createastral:pure_biomatter");
     event.create("createastral:lime").displayName("Lime Dust");
-    event.create("createastral:coin", "create:sequenced_assembly").displayName("coin");
+
+    // Transitional Items
+    event.create("createastral:incomplete_transitional_electronic_circuit", "create:sequenced_assembly").displayName("Incomplete Electronic Circuit");
+    event.create("createastral:transitional_lapis_sheet", "create:sequenced_assembly").displayName("Incomplete Integrated Circuit");
+    event.create("createastral:incomplete_navigation_mechanism", "create:sequenced_assembly").displayName("Incomplete Navigation Mechanism");
+    event.create("createastral:incomplete_redstone_chip", "create:sequenced_assembly").displayName("Incomplete Redstone Chip");
+    event.create("createastral:incomplete_refining_agent", "create:sequenced_assembly").displayName("Incomplete Refining Agent");
+    event.create("createastral:incomplete_separation_agent", "create:sequenced_assembly").displayName("Incomplete Separation Agent");
+    event.create("createastral:incomplete_pure_star_shard", "create:sequenced_assembly").displayName("Incomplete Pure Star Shard");
+    event.create("createastral:incomplete_calculation_processor", "create:sequenced_assembly");
+    event.create("createastral:incomplete_logic_processor", "create:sequenced_assembly");
+    event.create("createastral:incomplete_engineering_processor", "create:sequenced_assembly");
+    event.create("createastral:incomplete_dash_panel", "create:sequenced_assembly");
 });
 
 // Java reflection stuff //
