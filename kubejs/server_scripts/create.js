@@ -503,17 +503,17 @@ function sequencedAssemblyRecipes(event) {
 
     //Honestly just good luck in figuring this out its too complex to
     //document in an effective way
-    let transitional_sturdy_sheet = "create:unprocessed_obsidian_sheet";
+    const inc_sturdy_sheet = "create:unprocessed_obsidian_sheet";
     event.recipes
         .createSequencedAssembly(
             [Item.of("create:sturdy_sheet").withChance(12), Item.of("minecraft:gravel").withChance(8)],
             "#c:dusts/obsidian",
             [
-                event.recipes.createPressing(transitional_sturdy_sheet, transitional_sturdy_sheet),
-                event.recipes.createPressing(transitional_sturdy_sheet, transitional_sturdy_sheet),
+                event.recipes.createPressing(inc_sturdy_sheet, inc_sturdy_sheet),
+                event.recipes.createPressing(inc_sturdy_sheet, inc_sturdy_sheet),
             ]
         )
-        .transitionalItem(transitional_sturdy_sheet)
+        .transitionalItem(inc_sturdy_sheet)
         .loops(5);
 
     event.custom({
@@ -609,6 +609,7 @@ function sequencedAssemblyRecipes(event) {
             .loops(1);
     }
     function circuitSequence(event) {
+        let incomplete_transitional_circuit = "createastral:incomplete_transitional_electronic_circuit";
         event.recipes
             .createSequencedAssembly(
                 [
@@ -618,13 +619,13 @@ function sequencedAssemblyRecipes(event) {
                 "create:integrated_circuit",
                 [
                     // input
-                    event.recipes.createDeploying("create:integrated_circuit", [
-                        "create:integrated_circuit",
+                    event.recipes.createDeploying(incomplete_transitional_circuit, [
+                        incomplete_transitional_circuit,
                         "createastral:electrified_pin",
                     ]),
                 ]
             )
-            .transitionalItem("create:integrated_circuit")
+            .transitionalItem(incomplete_transitional_circuit)
             .loops(64);
 
         event.recipes
@@ -648,15 +649,25 @@ function sequencedAssemblyRecipes(event) {
             )
             .transitionalItem("createastral:incomplete_electronic_circuit")
             .loops(1);
-        event.recipes.createSequencedAssembly(["create:integrated_circuit"], "create:lapis_sheet", [
-            event.recipes.createFilling("create:lapis_sheet", [
-                "create:lapis_sheet",
-                { fluid: "tconstruct:molten_silver", amount: 3375 },
-            ]),
-            event.recipes.createDeploying("create:lapis_sheet", ["create:lapis_sheet", "createaddition:copper_wire"]),
-            event.recipes.createDeploying("create:lapis_sheet", ["create:lapis_sheet", "createaddition:copper_wire"]),
-            event.recipes.createPressing("create:lapis_sheet", "create:lapis_sheet"),
-        ]);
+
+        let transitional_lapis_sheet = "createastral:transitional_lapis_sheet";
+        event.recipes
+            .createSequencedAssembly(["create:integrated_circuit"], "create:lapis_sheet", [
+                event.recipes.createFilling(transitional_lapis_sheet, [
+                    transitional_lapis_sheet,
+                    { fluid: "tconstruct:molten_silver", amount: 3375 },
+                ]),
+                event.recipes.createDeploying(transitional_lapis_sheet, [
+                    transitional_lapis_sheet,
+                    "createaddition:copper_wire",
+                ]),
+                event.recipes.createDeploying(transitional_lapis_sheet, [
+                    transitional_lapis_sheet,
+                    "createaddition:copper_wire",
+                ]),
+                event.recipes.createPressing(transitional_lapis_sheet, transitional_lapis_sheet),
+            ])
+            .transitionalItem(transitional_lapis_sheet);
 
         event.recipes.createSequencedAssembly(["createastral:wired_panelling"], "ad_astra:steel_block", [
             event.recipes.createDeploying("ad_astra:steel_block", [
@@ -727,53 +738,40 @@ function sequencedAssemblyRecipes(event) {
             event.recipes.createPressing("ad_astra:ostrum_engine", "ad_astra:ostrum_engine"),
         ]);
 
+        const inc_calc = "createastral:incomplete_calculation_processor";
         event.recipes
             .createSequencedAssembly(["ae2:calculation_processor"], "ae2:printed_silicon", [
-                event.recipes.createDeploying("ae2:printed_silicon", [
-                    "ae2:printed_silicon",
-                    "ae2:printed_calculation_processor",
-                ]),
-                event.recipes.createDeploying("ae2:printed_silicon", ["ae2:printed_silicon", "ae2:fluix_dust"]),
+                event.recipes.createDeploying(inc_calc, [inc_calc, "ae2:printed_calculation_processor"]),
+                event.recipes.createDeploying(inc_calc, [inc_calc, "ae2:fluix_dust"]),
 
-                event.recipes.createFilling("create:lapis_sheet", [
-                    "create:lapis_sheet",
-                    { fluid: "kubejs:shimmer", amount: 8100 },
-                ]),
-                event.recipes.createPressing("ae2:printed_silicon", "ae2:printed_silicon"),
+                event.recipes.createFilling(inc_calc, [inc_calc, { fluid: "kubejs:shimmer", amount: 8100 }]),
+                event.recipes.createPressing(inc_calc, inc_calc),
             ])
-            .transitionalItem("ae2:printed_silicon")
+            .transitionalItem(inc_calc)
             .loops(1);
+
+        const inc_eng = "createastral:incomplete_engineering_processor";
         event.recipes
             .createSequencedAssembly(["ae2:engineering_processor"], "ae2:printed_silicon", [
-                event.recipes.createDeploying("ae2:printed_silicon", [
-                    "ae2:printed_silicon",
-                    "ae2:printed_engineering_processor",
-                ]),
-                event.recipes.createDeploying("ae2:printed_silicon", ["ae2:printed_silicon", "ae2:fluix_dust"]),
+                event.recipes.createDeploying(inc_eng, [inc_eng, "ae2:printed_engineering_processor"]),
+                event.recipes.createDeploying(inc_eng, [inc_eng, "ae2:fluix_dust"]),
 
-                event.recipes.createFilling("create:lapis_sheet", [
-                    "create:lapis_sheet",
-                    { fluid: "kubejs:shimmer", amount: 8100 },
-                ]),
-                event.recipes.createPressing("ae2:printed_silicon", "ae2:printed_silicon"),
+                event.recipes.createFilling(inc_eng, [inc_eng, { fluid: "kubejs:shimmer", amount: 8100 }]),
+                event.recipes.createPressing(inc_eng, inc_eng),
             ])
-            .transitionalItem("ae2:printed_silicon")
+            .transitionalItem(inc_eng)
             .loops(1);
+
+        const inc_log = "createastral:incomplete_logic_processor";
         event.recipes
             .createSequencedAssembly(["ae2:logic_processor"], "ae2:printed_silicon", [
-                event.recipes.createDeploying("ae2:printed_silicon", [
-                    "ae2:printed_silicon",
-                    "ae2:printed_logic_processor",
-                ]),
-                event.recipes.createDeploying("ae2:printed_silicon", ["ae2:printed_silicon", "ae2:fluix_dust"]),
+                event.recipes.createDeploying(inc_log, [inc_log, "ae2:printed_logic_processor"]),
+                event.recipes.createDeploying(inc_log, [inc_log, "ae2:fluix_dust"]),
 
-                event.recipes.createFilling("create:lapis_sheet", [
-                    "create:lapis_sheet",
-                    { fluid: "kubejs:shimmer", amount: 8100 },
-                ]),
-                event.recipes.createPressing("ae2:printed_silicon", "ae2:printed_silicon"),
+                event.recipes.createFilling(inc_log, [inc_log, { fluid: "kubejs:shimmer", amount: 8100 }]),
+                event.recipes.createPressing(inc_log, inc_log),
             ])
-            .transitionalItem("ae2:printed_silicon")
+            .transitionalItem(inc_log)
             .loops(1);
 
         event.recipes
@@ -794,6 +792,20 @@ function sequencedAssemblyRecipes(event) {
             ])
             .transitionalItem("techreborn:electronic_circuit")
             .loops(9);
+
+        const inc_starshard = "createastral:incomplete_pure_star_shard";
+        event.recipes
+            .createSequencedAssembly(["createastral:pure_star_shard"], "createastral:star_shard", [
+                event.recipes.createFilling(inc_starshard, [
+                    inc_starshard,
+                    { fluid: "kubejs:molten_yttrium", amount: INGOT / 2 },
+                ]),
+                event.recipes.createPressing(inc_starshard, inc_starshard),
+                event.recipes.createDeploying(inc_starshard, [inc_starshard, "techreborn:scrap_box"]),
+                event.recipes.createPressing(inc_starshard, inc_starshard),
+            ])
+            .transitionalItem(inc_starshard)
+            .loops(3);
     }
     function casingSequence(event) {
         event.recipes
@@ -986,25 +998,20 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem("create:tree_fertilizer")
         .loops(125);
 
+    const inc_navmechanism = "createastral:incomplete_navigation_mechanism";
     event.recipes
         .createSequencedAssembly(["createastral:navigation_mechanism"], "phonos:redstone_chip", [
-            event.recipes.createFilling("create:incomplete_precision_mechanism", [
+            event.recipes.createFilling(inc_navmechanism, [
                 "create:incomplete_precision_mechanism",
                 {
                     fluid: "tconstruct:molten_cobalt",
                     amount: 1350,
                 },
             ]),
-            event.recipes.createDeploying("create:incomplete_precision_mechanism", [
-                "techreborn:electrum_nugget",
-                "techreborn:electrum_nugget",
-            ]),
-            event.recipes.createPressing(
-                "create:incomplete_precision_mechanism",
-                "create:incomplete_precision_mechanism"
-            ),
+            event.recipes.createDeploying(inc_navmechanism, [inc_navmechanism, "techreborn:electrum_nugget"]),
+            event.recipes.createPressing(inc_navmechanism, inc_navmechanism),
         ])
-        .transitionalItem("create:incomplete_precision_mechanism")
+        .transitionalItem(inc_navmechanism)
         .loops(30);
 
     event.recipes
@@ -1035,6 +1042,7 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem("minecraft:ender_pearl")
         .loops(3);
 
+    const inc_redstone_chip = "createastral:incomplete_redstone_chip";
     event.recipes
         .createSequencedAssembly(
             [
@@ -1045,14 +1053,14 @@ function sequencedAssemblyRecipes(event) {
             [
                 // input
                 event.recipes.createFilling("create:electron_tube", [
-                    "create:electron_tube",
+                    inc_redstone_chip,
                     { fluid: "tconstruct:molten_copper", amount: 3375 },
                 ]),
-                event.recipes.createDeploying("create:electron_tube", ["create:electron_tube", "#c:wires"]), //fill obsid
-                event.recipes.createPressing("create:electron_tube", "#c:wires"), //yeah
+                event.recipes.createDeploying(inc_redstone_chip, [inc_redstone_chip, "#c:wires"]), //fill obsid
+                event.recipes.createPressing(inc_redstone_chip, "#c:wires"), //yeah
             ]
         )
-        .transitionalItem("create:electron_tube")
+        .transitionalItem(inc_redstone_chip)
         .loops(12);
 
     event.recipes
@@ -1094,6 +1102,32 @@ function sequencedAssemblyRecipes(event) {
             event.recipes.createPressing(inc_dash_panel, inc_dash_panel).processingTime(75),
         ])
         .transitionalItem(inc_dash_panel)
+        .loops(3);
+
+    const inc_refining_agent = "createastral:incomplete_refining_agent";
+    event.recipes
+        .createSequencedAssembly(["createastral:refining_agent"], "ae2:fluix_dust", [
+            event.recipes.createFilling(inc_refining_agent, [
+                inc_refining_agent,
+                { fluid: "tconstruct:blazing_blood", amount: 9000 },
+            ]),
+            event.recipes.createFilling(inc_refining_agent, [
+                inc_refining_agent,
+                { fluid: "techreborn:biofuel", amount: 9000 },
+            ]),
+            event.recipes.createPressing(inc_refining_agent, "ae2:fluix_dust"),
+        ])
+        .transitionalItem(inc_refining_agent)
+        .loops(3);
+
+    const inc_separation_agent = "createastral:incomplete_separation_agent";
+    event.recipes
+        .createSequencedAssembly(["minecraft:paper"], "createastral:separation_agent", [
+            event.recipes.createDeploying(inc_separation_agent, [inc_separation_agent, "techreborn:charcoal_dust"]),
+            event.recipes.createDeploying(inc_separation_agent, [inc_separation_agent, "techreborn:obsidian_dust"]),
+            event.recipes.createDeploying(inc_separation_agent, [inc_separation_agent, "techreborn:sulfur_dust"]),
+        ])
+        .transitionalItem(inc_separation_agent)
         .loops(3);
 }
 
@@ -1828,6 +1862,61 @@ function mixingRecipes(event) {
             .heatRequirement(recipe.heat ?? "")
             .processingTime(recipe.time ?? 100);
     });
+
+    event.recipes
+        .createMixing(Fluid.of("ad_astra:cryo_fuel", BUCKET), [
+            { fluid: "techreborn:nitrogen", amount: BUCKET },
+            { fluid: "kubejs:aurorite", amount: BUCKET },
+        ])
+        .processingTime(300);
+
+    event.recipes
+        .createMixing("techreborn:sulfur_dust", ["3x minecraft:glowstone_dust", "ae2:sky_dust"])
+        .processingTime(50);
+
+    event.recipes
+        .createMixing(Fluid.of("techreborn:oil", 250 * mB), [
+            { fluid: "techreborn:sulfur", amount: 500 * mB },
+            "3x techreborn:coal_dust",
+        ])
+        .processingTime(300);
+
+    event.recipes
+        .createMixing(Fluid.of("kubejs:molten_radiance", BUCKET), [
+            "minecraft:nether_star",
+            "minecraft:glowstone",
+            "minecraft:sea_lantern",
+            "3x createastral:separation_agent",
+            { fluid: "kubejs:shimmer", amount: BUCKET },
+        ])
+        .heated()
+        .processingTime(1000);
+
+    event.recipes
+        .createMixing(Fluid.of("kubejs:molten_shadowsteel", BUCKET), [
+            "minecraft:ender_pearl",
+            "8x dbe:vanta_black",
+            "techreborn:lead_storage_block",
+            "3x createastral:separation_agent",
+            "9x create:chromatic_compound",
+        ])
+        .heated()
+        .processingTime(1000);
+
+    event.recipes
+        .createMixing("create:refined_radiance", [
+            "create:chromatic_compound",
+            { fluid: "kubejs:molten_radiance", amount: 100 * mB },
+        ])
+        .superheated()
+        .processingTime(1000);
+
+    event.recipes
+        .createMixing("doodads:asphalt", [
+            { fluid: "kubejs:andesite_compound", amount: INGOT / 3 },
+            "#c:concrete_powder",
+        ])
+        .processingTime(1000);
 }
 function cuttingRecipes(event) {
     // [Input string, Output string]
@@ -2334,8 +2423,30 @@ function mechanicalCraftingRecipes(event) {
                 N: "createastral:navigation_mechanism",
             },
         },
+        {
+            output: "ad_astra:ostrum_engine",
+            shape: [" F ", "FEF", "FDF", "ABA"],
+            inputs: {
+                A: "createastral:shimmer_amplifier",
+                B: "createaddition:capacitor",
+                D: "createaddition:tesla_coil",
+                E: "ad_astra:ostrum_block",
+                F: "ad_astra:ostrum_plate",
+            },
+        },
     ].forEach((recipe) => {
         event.recipes.create.mechanical_crafting(recipe.output, recipe.shape, recipe.inputs);
+    });
+
+    //yttric rifle!!
+    event.remove({ output: "yttr:rifle" });
+    event.recipes.createMechanicalCrafting("yttr:rifle", ["CCY  ", "YMEIC", " CDYC", "   C "], {
+        Y: "yttr:yttrium_block",
+        C: "ad_astra:calorite_ingot",
+        I: "techreborn:industrial_circuit",
+        E: "techreborn:electronic_circuit",
+        D: "techreborn:data_storage_chip",
+        M: "minecraft:crossbow",
     });
 }
 
@@ -2600,6 +2711,29 @@ function compactingRecipes(event) {
         .createCompacting("createastral:olivine_sheet", ["16x techreborn:olivine_dust"])
         .superheated()
         .processingTime(1500);
+
+    event.recipes
+        .createCompacting("yttr:continuous_platform", [
+            { fluid: "kubejs:aurorite", amount: 100 * mB },
+            { fluid: "kubejs:shimmer", amount: 100 * mB },
+        ])
+        .heated()
+        .processingTime(200);
+
+    event.recipes
+        .createCompacting("ad_astra:sky_stone", ["5x ad_astra:moon_stone", "ae2:certus_quartz_dust"])
+        .heated()
+        .processingTime(200);
+
+    event.recipes
+        .createCompacting("createastral:star_shard", [{ fluid: "kubejs:molten_radiance", amount: 100 * mB }])
+        .heated()
+        .processingTime(500);
+
+    event.recipes.createCompacting("4x minecraft:purpur_block", [
+        "4x ad_astra:strophar_cap",
+        { fluid: "minecraft:water", amount: 100 * mB },
+    ]);
 }
 function superheatedMixingRecipes(event) {
     //[input, output]

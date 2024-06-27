@@ -255,7 +255,6 @@ onEvent("recipes", (event) => {
         { output: "railways:track_phantom" },
         { output: "railways:track_monorail" },
 
-
         //Createdeco sheetmetal rebalance
 
         { output: "createdeco:copper_sheet_metal" },
@@ -349,14 +348,12 @@ onEvent("recipes", (event) => {
         { output: "tconstruct:efln_ball" },
         { output: "tconstruct:piggy_backpack" },
 
-
         //horse armor
 
-        { output: "minecraft:leather_horse_armor"},
-        { type: "tconstruct:melting", input: "minecraft:iron_horse_armor"},
-        { type: "tconstruct:melting", input: "minecraft:golden_horse_armor"},
-        { type: "tconstruct:melting", input: "minecraft:diamond_horse_armor"},
-
+        { output: "minecraft:leather_horse_armor" },
+        { type: "tconstruct:melting", input: "minecraft:iron_horse_armor" },
+        { type: "tconstruct:melting", input: "minecraft:golden_horse_armor" },
+        { type: "tconstruct:melting", input: "minecraft:diamond_horse_armor" },
 
         // Miscellaneous
         { output: "minecraft:shroomlight" },
@@ -417,9 +414,6 @@ onEvent("recipes", (event) => {
         { mod: "doodads" },
         { mod: "extended_drawers" },
         { output: "doodads:slimey_shoes" },
-
-        { mod: "createsifter" },
-        { type: "createsifter:sifting" },
 
         { output: "dbe:steel_ingot" },
         { output: "dbe:copper_coil" },

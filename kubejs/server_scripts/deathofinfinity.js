@@ -72,7 +72,7 @@ const mixings = [
         output: {fluid: "minecraft:lava", amount: 500 * mB },
         input: [
             "4x createastral:stone_dust",
-            "2x minecraft:netherack",
+            "2x minecraft:netherrack",
         ],
         heat: "heated",
         time: null,
