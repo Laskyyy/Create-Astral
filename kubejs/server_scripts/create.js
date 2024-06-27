@@ -44,6 +44,7 @@ function millingRecipes(event) {
         ["minecraft:bubble_coral_block", "2x minecraft:purple_dye", 1],
         ["minecraft:fire_coral_block", "2x minecraft:red_dye", 1],
         ["minecraft:horn_coral_block", "2x minecraft:yellow_dye", 1],
+        ["minecraft:glow_berries", "naturalist:glow_goop", 1]
         ["createastral:crushed_raw_gadolinite", "yttr:yttrium_dust", 1],
     ].forEach((recipe) => {
         event.recipes.createMilling([Item.of(recipe[1]).withChance(recipe[2])], recipe[0]);
@@ -184,6 +185,10 @@ function crushingRecipes(event) {
                 ["techreborn:andesite_dust", 1],
                 ["techreborn:andesite_dust", 0.5],
             ],
+        },
+        {
+            input: "minecraft:glow_berries",
+            outputs: [["naturalist:glow_goop", 1], ["naturalist:glow_goop", 0.5]],
         },
         //Netherack Crushing
         {
@@ -1205,6 +1210,11 @@ function fillingRecipes(event) {
     ].forEach((recipe) => {
         event.recipes.createFilling(recipe.output, [recipe.input, { fluid: recipe.fluid, amount: recipe.amount }]);
     });
+
+    event.recipes.createFilling("minecraft:glowstone_dust",
+        ["create:cinder_flour",
+            {fluid:"create:potion", amount:25 * mB, nbt:{Bottle: "REGULAR", Potion:"naturalist:glowing"}}
+        ])
 }
 function mixingRecipes(event) {
     // Biofuel rework
