@@ -311,7 +311,6 @@ onEvent("recipes", (event) => {
         { output: "ad_astra:calorite_tank" },
         { output: "ad_astra:steel_tank"},
         { output: "ad_astra:rocket_nose_cone"},
-        { output: "ad_astra:engine_frame"},
 
 
         // AE2

@@ -808,6 +808,8 @@ function sequencedAssemblyRecipes(event) {
             .loops(3);
     }
     function casingSequence(event) {
+
+        const inc_casing = "createastral:incomplete_copper_casing";
         event.recipes
             .createSequencedAssembly(
                 [
@@ -817,16 +819,17 @@ function sequencedAssemblyRecipes(event) {
                 "create:andesite_casing",
                 [
                     // input
-                    event.recipes.createDeploying("create:andesite_casing", ["techreborn:rubber", "techreborn:rubber"]),
-                    event.recipes.createDeploying("create:andesite_casing", [
-                        "create:copper_sheet",
+                    event.recipes.createDeploying(inc_casing, [inc_casing, "techreborn:rubber"]),
+                    event.recipes.createDeploying(inc_casing, [
+                        inc_casing,
                         "create:copper_sheet",
                     ]),
                 ]
             )
-            .transitionalItem("create:andesite_casing")
+            .transitionalItem(inc_casing)
             .loops(3);
 
+        const inc_mf = "createastral:incomplete_basic_machine_frame"
         event.recipes
             .createSequencedAssembly(
                 [
@@ -836,18 +839,18 @@ function sequencedAssemblyRecipes(event) {
                 "create:copper_casing",
                 [
                     // input
-                    event.recipes.createFilling("create:copper_casing", [
-                        "create:copper_casing",
+                    event.recipes.createFilling(inc_mf, [
+                        inc_mf,
                         { fluid: "tconstruct:molten_silver", amount: INGOT },
                     ]),
-                    event.recipes.createDeploying("create:copper_casing", [
-                        "create:copper_casing",
+                    event.recipes.createDeploying(inc_mf, [
+                        inc_mf,
                         "techreborn:rubber",
                     ]),
-                    event.recipes.createPressing("create:copper_casing", "create:copper_casing"), //yeah!
+                    event.recipes.createPressing(inc_mf, inc_mf), //yeah!
                 ]
             )
-            .transitionalItem("create:copper_casing")
+            .transitionalItem(inc_mf)
             .loops(4);
     }
     function diamondSequence(event) {
