@@ -12826,7 +12826,7 @@ hash = "7936a3fb149726799bcf20425fe3d66e71feb3287e77f9e7a8148f61db7389b7"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
-hash = "92a953d84f18b0ce22ca46ff88aa7794d59378edf896d66c6c2bb61141018bac"
+hash = "96b3956fdf6e7dd5a37684830f15b245c7eb8b9141cc7e7737e17839bb6c6c5b"
 
 [[files]]
 file = "kubejs/server_scripts/createaddons.js"
@@ -12834,7 +12834,7 @@ hash = "7436e8515c54588076cbacffcef4ab83c46049b2c66b0dca3c17d3d0f9519f63"
 
 [[files]]
 file = "kubejs/server_scripts/deathofinfinity.js"
-hash = "e63a82c72a6738ea58c6686ca4fee4549e1b76560b51d72ea32d17fc980aded9"
+hash = "0af79fe958f431de474ad6efd5fd08e5f59c16f7032a844cc527daf8595790a1"
 
 [[files]]
 file = "kubejs/server_scripts/enchantment.js"
@@ -12878,7 +12878,7 @@ hash = "b14d492175c12c237a35159c6621010426d5249fd9720b100ac2e73d8d35fb7b"
 
 [[files]]
 file = "kubejs/server_scripts/server.js"
-hash = "076d01cc911343a5d1727215ab942f23ac0f3f4277160fd3eed1fe647c73e953"
+hash = "c4e1df0581503ad59dca6f73139cb148f311693abeed34bc63c3bd4c8a211adc"
 
 [[files]]
 file = "kubejs/server_scripts/tags/graveReplaceBlacklist.js"
@@ -12914,7 +12914,7 @@ hash = "ba8e8f0e78facea11b6e203c3f26013b4ad2622028817263fa19cabf3e380449"
 
 [[files]]
 file = "kubejs/startup_scripts/item_registry.js"
-hash = "4e1ddec5153f3dd0da06bd6dd25a41a33ec40724b097ce866b4f47c388d54cd5"
+hash = "02acfdc4232d89613a0e1fec9c75f962fce12892607a772e672de09cc6eb8b44"
 
 [[files]]
 file = "kubejs/startup_scripts/item_tooltip.js"
@@ -12922,7 +12922,7 @@ hash = "0423e475d250e7c0a2e4b590f6c2fb189b8283672ba1a3a9fc488d7dcb6f91f9"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
-hash = "b67b003fee47fa96f4d426e7afe5cfbbfc3a590e8e90408b53c416e4f6030e2c"
+hash = "35f784bc33012683f54ecab15017d1cf6b1b266ee7487b1ccadb5463b991e73c"
 
 [[files]]
 file = "kubejs/startup_scripts/worldgen.js"
@@ -26971,7 +26971,7 @@ hash = "7f2d0e2d7eee6dd6dddd0c19f8773f6ad8d16061abfdd8386caec393444fc533"
 
 [[files]]
 file = "resources/ae2/textures/item/calculation_processor.png"
-hash = "48cb810b658b77f9ae22471fc3e2977272010679701db27d6b248d9497d17d3b"
+hash = "be689331f3a01bc3ab9385a077de540dec3fd51917cc1169abc5338465980877"
 
 [[files]]
 file = "resources/ae2/textures/item/printed_calculation_processor.png"
@@ -27354,6 +27354,30 @@ file = "resources/createastral/lang/fr_fr.json"
 hash = "cb5eaac36df5e46897fbd09f3ced9a589a63801b3e4440a64694fbdf4f753ec6"
 
 [[files]]
+file = "resources/createastral/models/item/t1_upgrade.json"
+hash = "b07eb55cd50718c31ce2a4642697a80275682721d5cb10e9b4dc13f5235b8621"
+
+[[files]]
+file = "resources/createastral/models/item/t2_upgrade.json"
+hash = "96df8b6090cae3e836377ea547b5ec2f177c31a942e05c827acd207ccc958e27"
+
+[[files]]
+file = "resources/createastral/models/item/t3_upgrade.json"
+hash = "539b6248ff5547558039004aa28e8a458f47552abdfead9d62e78fb754fd620e"
+
+[[files]]
+file = "resources/createastral/models/item/t4_upgrade.json"
+hash = "de7ba4cdfef8b5bd29b5dc1401d33504e7bb2d817044ae33d57862b5a7f555cb"
+
+[[files]]
+file = "resources/createastral/models/item/t5_upgrade.json"
+hash = "aa99e5e3ed74e2963608bf08e34ddb62936c2d23cb01a36cb224606314c7f8d4"
+
+[[files]]
+file = "resources/createastral/models/item/t6_upgrade.json"
+hash = "bd257d664dbfd4bc6caf9b4e3f6275732ef5a14ee609e528eadf553972f5329e"
+
+[[files]]
 file = "resources/createastral/textures/block/andesite_alloy_block.png"
 hash = "eeffe4d36960281231515ef6be16d6d309429b1f8dd0189401c99c506f9b56b6"
 
@@ -27547,19 +27571,23 @@ hash = "6f45f2bff4bb0f3e62754c111897d9eb4f809a7e8ea88a82fc9a1c305e547613"
 
 [[files]]
 file = "resources/createastral/textures/item/crushed_raw_calorite.png"
-hash = "1278cd8c818db2e78c50d08a34a66519d4fa9ce92dff2ffcb1cffcb3db22ea67"
+hash = "05594e9c0fc2acb7c818454e3085acc3227b7c5e49ce2a41afdb3a10cde9a306"
+
+[[files]]
+file = "resources/createastral/textures/item/crushed_raw_cobalt.png"
+hash = "6b3f9bd1dfb6047d4e4105c2bbb2020db6cccf003b46b5ba4da0f23e27b5a0d2"
 
 [[files]]
 file = "resources/createastral/textures/item/crushed_raw_desh.png"
-hash = "b1f65324b42c7485a8ee7eae32b501e4096fbc082692c2c1bf95930cb629a1fb"
+hash = "fd16e5a2c30f2e3cf92b9acd7b50fec3e01c92c76b69c88c13d33b145ce8c629"
 
 [[files]]
 file = "resources/createastral/textures/item/crushed_raw_gadolinite.png"
-hash = "e88ac2c0ebca12c9957fda56ab981d11c2923322b6352fc1f8882f2628b4b068"
+hash = "af9ccc3bb7a548fcb163fde38205522448301b2fa63e6bf4a92da3bb46987b7a"
 
 [[files]]
 file = "resources/createastral/textures/item/crushed_raw_ostrum.png"
-hash = "be504781ca44fb42e1362e80a2bd799f5247b34f29f746cef8f691a524110dd0"
+hash = "841cab0cf1b4ae6aa9a0af315d5fb9d3f56fffba3e0750a893fa40f3440ef99c"
 
 [[files]]
 file = "resources/createastral/textures/item/electrified_pin.png"
@@ -27594,8 +27622,44 @@ file = "resources/createastral/textures/item/golden_pin.png"
 hash = "3c2cbb27acda816265268d160f401988bc373f385e900385c2561bbc6a450314"
 
 [[files]]
+file = "resources/createastral/textures/item/incomplete_calculation_processor.png"
+hash = "ff84e685554fe648de1eda3fb277e657a6b062f7759ed4366f451b01ce05ddc3"
+
+[[files]]
 file = "resources/createastral/textures/item/incomplete_electronic_circuit.png"
 hash = "a66687be40f9271b2a3edd8fe7dd1bab2abe9ed065d6a076956ab9d81818e1ee"
+
+[[files]]
+file = "resources/createastral/textures/item/incomplete_engineering_processor.png"
+hash = "fb390b6986b48ab3cb8b25eff093baff6ac1f9ed98d736d9ec1f67ea0691869f"
+
+[[files]]
+file = "resources/createastral/textures/item/incomplete_logic_processor.png"
+hash = "00b55ac4b2469ef557a4f7240b463f2509616c3a75a84e4b2e0e9934c78a0535"
+
+[[files]]
+file = "resources/createastral/textures/item/incomplete_navigation_mechanism.png"
+hash = "69b27e1611c492b48c6429cca1e153fcbc8ed0398a2f9d7589fe1487e9445002"
+
+[[files]]
+file = "resources/createastral/textures/item/incomplete_pure_star_shard.png"
+hash = "1f1153c5626f113a457968fe36e43a71d9a959a7a7f56650954f48c23f619620"
+
+[[files]]
+file = "resources/createastral/textures/item/incomplete_redstone_chip.png"
+hash = "52e3444faaac5a1c9da6d5da54d48a60372ed7ab1313b1171e03d5108c7ca078"
+
+[[files]]
+file = "resources/createastral/textures/item/incomplete_refining_agent.png"
+hash = "5ba08b9e83cc5773ed9cd71d21bc0015a4c2ad8391631c790938b4ddc7ed0551"
+
+[[files]]
+file = "resources/createastral/textures/item/incomplete_separation_agent.png"
+hash = "a37cff0997ff2613c8e4fcadcc6706f918ae73bd4771c2be5059c2ae041fbb85"
+
+[[files]]
+file = "resources/createastral/textures/item/incomplete_transitional_electronic_circuit.png"
+hash = "7136ab7fa748bfbad67646c7005fad863b06eed15a8fbb4d8d641a9ca15a748c"
 
 [[files]]
 file = "resources/createastral/textures/item/lime.png"
@@ -27792,6 +27856,30 @@ hash = "b3d70c165cc7f9f0b8b0419180202953f7df60fa71927a6b45aabdbc26d22b7c"
 [[files]]
 file = "resources/createastral/textures/item/subatomic_ingot.png.mcmeta"
 hash = "e55c0d3d744b13dae3c4cb62336f27167ee3234f006b19d192d6f1eecd6a195a"
+
+[[files]]
+file = "resources/createastral/textures/item/t1_upgrade.png"
+hash = "da666e870251d3a97c702bcdcaf7dbed20790e564d71289b4cc793895f0fe6a7"
+
+[[files]]
+file = "resources/createastral/textures/item/t2_upgrade.png"
+hash = "8f51ca43744ceed61f579d8f1503b8896c588ce0667302aa62c293e76f8942c6"
+
+[[files]]
+file = "resources/createastral/textures/item/t3_upgrade.png"
+hash = "1e7f5814ddee870b65d230d1f0b378a8941144880421dfdcff26077c902b376c"
+
+[[files]]
+file = "resources/createastral/textures/item/t4_upgrade.png"
+hash = "88a17669ad3d8ef58991e5519eb611a57f02eae949418e7d0bd82c30095afa70"
+
+[[files]]
+file = "resources/createastral/textures/item/t6_upgrade.png"
+hash = "52786f785760d1fe19eef11b251663cf525a43fff8f29f552668c9a97471191f"
+
+[[files]]
+file = "resources/createastral/textures/item/transitional_lapis_sheet.png"
+hash = "0c19b7e90ff4b2fe8f7c8f6e70b38bec299b1458ecf05b43109f39e564dff22b"
 
 [[files]]
 file = "resources/createbigcannons/lang/en_us.json"
