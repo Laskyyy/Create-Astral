@@ -803,6 +803,8 @@ function sequencedAssemblyRecipes(event) {
             .loops(9);
     }
     function casingSequence(event) {
+
+        const inc_casing = "createastral:incomplete_copper_casing";
         event.recipes
             .createSequencedAssembly(
                 [
@@ -812,16 +814,17 @@ function sequencedAssemblyRecipes(event) {
                 "create:andesite_casing",
                 [
                     // input
-                    event.recipes.createDeploying("create:andesite_casing", ["techreborn:rubber", "techreborn:rubber"]),
-                    event.recipes.createDeploying("create:andesite_casing", [
-                        "create:copper_sheet",
+                    event.recipes.createDeploying(inc_casing, [inc_casing, "techreborn:rubber"]),
+                    event.recipes.createDeploying(inc_casing, [
+                        inc_casing,
                         "create:copper_sheet",
                     ]),
                 ]
             )
-            .transitionalItem("create:andesite_casing")
+            .transitionalItem(inc_casing)
             .loops(3);
 
+        const inc_mf = "createastral:incomplete_basic_machine_frame"
         event.recipes
             .createSequencedAssembly(
                 [
@@ -831,18 +834,18 @@ function sequencedAssemblyRecipes(event) {
                 "create:copper_casing",
                 [
                     // input
-                    event.recipes.createFilling("create:copper_casing", [
-                        "create:copper_casing",
+                    event.recipes.createFilling(inc_mf, [
+                        inc_mf,
                         { fluid: "tconstruct:molten_silver", amount: INGOT },
                     ]),
-                    event.recipes.createDeploying("create:copper_casing", [
-                        "create:copper_casing",
+                    event.recipes.createDeploying(inc_mf, [
+                        inc_mf,
                         "techreborn:rubber",
                     ]),
-                    event.recipes.createPressing("create:copper_casing", "create:copper_casing"), //yeah!
+                    event.recipes.createPressing(inc_mf, inc_mf), //yeah!
                 ]
             )
-            .transitionalItem("create:copper_casing")
+            .transitionalItem(inc_mf)
             .loops(4);
     }
     function diamondSequence(event) {
@@ -993,26 +996,26 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem("create:tree_fertilizer")
         .loops(125);
 
-    let incomplete_navigation_mechanism = "createastral:incomplete_navigation_mechanism"
+    let inc_nav_mech = "createastral:incomplete_navigation_mechanism"
     event.recipes
         .createSequencedAssembly(["createastral:navigation_mechanism"], "phonos:redstone_chip", [
-            event.recipes.createFilling(incomplete_navigation_mechanism, [
+            event.recipes.createFilling(inc_nav_mech, [
                 "create:incomplete_precision_mechanism",
                 {
                     fluid: "tconstruct:molten_cobalt",
                     amount: 1350,
                 },
             ]),
-            event.recipes.createDeploying(incomplete_navigation_mechanism, [
-                incomplete_navigation_mechanism,
+            event.recipes.createDeploying(inc_nav_mech, [
+                inc_nav_mech,
                 "techreborn:electrum_nugget",
             ]),
             event.recipes.createPressing(
-                incomplete_navigation_mechanism,
-                incomplete_navigation_mechanism
+                inc_nav_mech,
+                inc_nav_mech
             ),
         ])
-        .transitionalItem(incomplete_navigation_mechanism)
+        .transitionalItem(inc_nav_mech)
         .loops(30);
 
     event.recipes

@@ -427,13 +427,6 @@ onEvent("block.registry", (event) => {
         .texture("north", "createastral:block/electropipe")
         .tagBlock("minecraft:mineable/pickaxe");
     event
-        .create("doodads:asphalt_stair", "stairs")
-        .material("stone")
-        .hardness(4)
-        .tagBlock("minecraft:mineable/pickaxe")
-        .textureAll("doodads:block/asphalt");
-
-    event
         .create("createastral:stone_growth_chamber_dummy")
         .tagBlock("minecraft:mineable/pickaxe")
         .material("stone")
@@ -706,7 +699,29 @@ onEvent("item.registry", (event) => {
     event.create("createastral:incomplete_calculation_processor", "create:sequenced_assembly");
     event.create("createastral:incomplete_logic_processor", "create:sequenced_assembly");
     event.create("createastral:incomplete_engineering_processor", "create:sequenced_assembly");
-
+    event.create("createastral:incomplete_dash_panel", "create:sequenced_assembly");
+    event.create("createastral:incomplete_copper_casing", "create:sequenced_assembly").modelJson({
+        "parent": "minecraft:block/cube",
+        "textures": {
+            "up": "createastral:item/incomplete_copper_casing0",
+            "down": "createastral:item/incomplete_copper_casing0",
+            "north": "createastral:item/incomplete_copper_casing1",
+            "south": "createastral:item/incomplete_copper_casing1",
+            "west": "createastral:item/incomplete_copper_casing2",
+            "east": "createastral:item/incomplete_copper_casing2"
+        }
+    });
+    event.create("createastral:incomplete_basic_machine_frame", "create:sequenced_assembly").modelJson({
+        "parent": "minecraft:block/cube",
+        "textures": {
+            "up": "techreborn:block/machines/structure/tier1_machine_block",
+            "down": "create:block/copper_casing",
+            "north": "createastral:item/incomplete_basic_machine_frame0",
+            "south": "createastral:item/incomplete_basic_machine_frame0",
+            "west": "createastral:item/incomplete_basic_machine_frame1",
+            "east": "createastral:item/incomplete_basic_machine_frame1"
+        }
+    });
 });
 
 // Java reflection stuff //
