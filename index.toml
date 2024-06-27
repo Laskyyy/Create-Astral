@@ -12809,6 +12809,14 @@ file = "kubejs/config/common.properties"
 hash = "4869ea0c45f560ff504433e0873edc13be683a4dec98d58bb09e24aa7a388355"
 
 [[files]]
+file = "kubejs/exported/KubeJS Virtual Data Pack [high priority].zip"
+hash = "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85"
+
+[[files]]
+file = "kubejs/exported/KubeJS Virtual Data Pack [low priority].zip"
+hash = "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85"
+
+[[files]]
 file = "kubejs/jsconfig.json"
 hash = "82dbdb416bc14a9ac3e577579f13298b7fa563efb3c0118ff8e35d179e780f6d"
 
@@ -13135,6 +13143,11 @@ metafile = true
 [[files]]
 file = "mods/create-steam-n-rails.pw.toml"
 hash = "40884b28a7669fbb1c74491e5d8b62cf26484266f2f68cc1beb6467451a14724"
+metafile = true
+
+[[files]]
+file = "mods/create-trains-and-custom-portal-api-integration.pw.toml"
+hash = "95ad8f0153f2bf34ad0f0b33d3f64e77edf0bc0c052a381acd2fc5abf355a49c"
 metafile = true
 
 [[files]]

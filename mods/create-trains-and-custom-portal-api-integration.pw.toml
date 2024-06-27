@@ -1,0 +1,13 @@
+name = "Create Trains and Custom Portal API Integration"
+filename = "customportalapiintegrations-1.1.0+1.18.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0cbb5534434ba358786e288c354db7d93e5299ae"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5377821
+project-id = 1026360
