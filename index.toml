@@ -12897,8 +12897,28 @@ file = "kubejs/server_scripts/yttr_block_fix.js"
 hash = "549d73b4a709fe237a79fc99966e78c95d40e7613d0e10aca74183c65d8c6262"
 
 [[files]]
+file = "kubejs/startup_scripts/block_registry.js"
+hash = "f3846f928c17056196812853bce8cdc26023ee2e498ddf123d265706e1c36fba"
+
+[[files]]
+file = "kubejs/startup_scripts/fluid_registry.js"
+hash = "ba8e8f0e78facea11b6e203c3f26013b4ad2622028817263fa19cabf3e380449"
+
+[[files]]
+file = "kubejs/startup_scripts/item_registry.js"
+hash = "5f2fa072ca7c13c68a5d72e95c2a0f75e2b8b598f1354dbc4849a0040e4ee6f6"
+
+[[files]]
+file = "kubejs/startup_scripts/item_tooltip.js"
+hash = "0423e475d250e7c0a2e4b590f6c2fb189b8283672ba1a3a9fc488d7dcb6f91f9"
+
+[[files]]
 file = "kubejs/startup_scripts/startup.js"
-hash = "76b64f5c8a4fd25092a1de3f0a441cd8e9d45604a848ffb6d33251062eb278c5"
+hash = "3e74a605ac27c68ac31d6963301ea43e92e1c15226618a5a0f142bacbae4acdc"
+
+[[files]]
+file = "kubejs/startup_scripts/worldgen.js"
+hash = "286bde2897ddb335fee4373c04f2e0f36062a339ddd9815b33f0118f3b6b3068"
 
 [[files]]
 file = "mods/SpoutingFix-1.jar"
