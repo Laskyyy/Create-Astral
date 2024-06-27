@@ -12809,6 +12809,14 @@ file = "kubejs/config/common.properties"
 hash = "4869ea0c45f560ff504433e0873edc13be683a4dec98d58bb09e24aa7a388355"
 
 [[files]]
+file = "kubejs/exported/KubeJS Virtual Data Pack [high priority].zip"
+hash = "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85"
+
+[[files]]
+file = "kubejs/exported/KubeJS Virtual Data Pack [low priority].zip"
+hash = "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85"
+
+[[files]]
 file = "kubejs/jsconfig.json"
 hash = "82dbdb416bc14a9ac3e577579f13298b7fa563efb3c0118ff8e35d179e780f6d"
 
@@ -12946,7 +12954,7 @@ metafile = true
 
 [[files]]
 file = "mods/astral-additions-for-create-astral.pw.toml"
-hash = "ee7c078661d3ede4c028fdab2cb2868ef8fac289f75487866c83aa373f57f422"
+hash = "56a210b299f3025d6c88956a1da7773f00a1eb356a4b52407bef16807c0de70f"
 metafile = true
 
 [[files]]
@@ -13099,7 +13107,7 @@ metafile = true
 
 [[files]]
 file = "mods/configured-defaults.pw.toml"
-hash = "45d3337cb1dd3f64c6ad95a8b77cc94a7844277bdfc71ec8bd370d147d1d958b"
+hash = "41c7125cd170c38cf3817647640b1c1a3edf80bf6f3752bb8c7ca43c78478dfc"
 metafile = true
 
 [[files]]
@@ -30719,7 +30727,7 @@ hash = "dfc236ad333a94d4b3b56cdcac9feeeb9b63c701321dc1c31e48ae10418951a4"
 
 [[files]]
 file = "server.packwizignore"
-hash = "7c93569c4bd29e756a22713113caf113eb5c5057409fff832781a8f5fec5a1d8"
+hash = "68f643eeb88b4b8c48635603d55272e1f552163e3287b2b7731f105ed662f286"
 
 [[files]]
 file = "shaderpacks/ComplementaryReimagined_r5.1.1.zip"

@@ -56,3 +56,9 @@ If you want, you could also write a batch script that runs the jar file similarl
 ┗ 📜README.md // This file! Feel free to contribute
 and fix any errors that you see.
 ```
+
+## Automatic Builds
+
+This repository is configured to automatically build the client and server pack via GitHub actions.
+The [serverpack](serverpack) folder gets special treatment in this, as its contents get lifted to the
+root directory during this build phase
