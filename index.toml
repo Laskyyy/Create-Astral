@@ -12826,7 +12826,7 @@ hash = "7936a3fb149726799bcf20425fe3d66e71feb3287e77f9e7a8148f61db7389b7"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
-hash = "96b3956fdf6e7dd5a37684830f15b245c7eb8b9141cc7e7737e17839bb6c6c5b"
+hash = "176da682b9f0cf5eb7bf465d2522d03cc9255edfe5223264d711158a6c254049"
 
 [[files]]
 file = "kubejs/server_scripts/createaddons.js"
@@ -12862,7 +12862,7 @@ hash = "c11c7f396d112862b5564592d20d5620c29140756af682de3a2630261d20edea"
 
 [[files]]
 file = "kubejs/server_scripts/removals.js"
-hash = "3168407d92e92264b7956a2b25aa5d35da2be52e20eb91fad5d05a26b5566548"
+hash = "f35c77b935e376e6dee97a5c44fd2cfcf51116538adf7acd3f68abb15e7b7365"
 
 [[files]]
 file = "kubejs/server_scripts/replacements.js"
@@ -12878,7 +12878,7 @@ hash = "b14d492175c12c237a35159c6621010426d5249fd9720b100ac2e73d8d35fb7b"
 
 [[files]]
 file = "kubejs/server_scripts/server.js"
-hash = "c4e1df0581503ad59dca6f73139cb148f311693abeed34bc63c3bd4c8a211adc"
+hash = "ece378a610c3122ce2026130c1490b745d9459da3d2dcab581111c99bea07dcb"
 
 [[files]]
 file = "kubejs/server_scripts/tags/graveReplaceBlacklist.js"
