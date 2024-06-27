@@ -800,29 +800,6 @@ onEvent("recipes", (event) => {
         B: "minecraft:glass_bottle",
     });
 
-    /// SIFTER STUFF
-
-    event.shaped("createsifter:sifter", [" E ", "CDC", "BAB"], {
-        A: "create:andesite_casing",
-        B: "create:cogwheel",
-        C: "create:shaft",
-        D: "create:millstone",
-        E: Item.of("create:filter").ignoreNBT(),
-    });
-
-    // sifter removed
-    /*    event.shaped("createsifter:andesite_mesh", ["BAB", "AAA", "BAB"], {
-        A: "createdeco:andesite_mesh_fence",
-        B: "create:shaft",
-    });
-
-    event.shaped("createsifter:brass_mesh", ["BAB", "AAA", "BAB"], {
-        A: "createdeco:brass_mesh_fence",
-        B: "createaddition:brass_rod",
-    });*/
-
-    /// end sifter
-
     // horse armor recipes
 
     event.shaped("minecraft:leather_horse_armor", ["  A", "AAA", "ABA"], {
@@ -1010,13 +987,10 @@ onEvent("recipes", (event) => {
         }),
         ["CCC", "DED", "BBB"],
         {
-            // A: "techreborn:electronic_circuit",
-            // B: "create:blaze_burner",
             B: "create:fluid_tank",
             C: "techreborn:lead_plate",
             D: "techreborn:industrial_centrifuge",
             E: "techreborn:advanced_machine_frame",
-            // F: "techreborn:extractor",
         }
     );
 
