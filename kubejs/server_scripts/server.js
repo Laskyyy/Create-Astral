@@ -569,7 +569,7 @@ onEvent("recipes", (event) => {
     });
     event.shaped("doodads:paintbrush", [" B ", " A ", " A "], {
         A: "minecraft:stick",
-        B: "toms_storage:ts.paint_kit",
+        B: "catwalksinc:paint_roller",
     });
 
     event.shaped("automobility:automobile_assembler", ["AAA", " B ", "BBB"], {
@@ -615,8 +615,8 @@ onEvent("recipes", (event) => {
     });
 
     event.shaped("createastral:t3_upgrade", ["ABA", "BCB", "ABA"], {
-        A: "create:brass_sheet",
-        B: "ae2:fluix_block",
+        A: "ae2:fluix_block",
+        B: "create:brass_sheet",
         C: "createastral:t2_upgrade",
     });
 
@@ -799,28 +799,6 @@ onEvent("recipes", (event) => {
         A: "create:experience_nugget",
         B: "minecraft:glass_bottle",
     });
-
-    /// SIFTER STUFF
-
-    event.shaped("createsifter:sifter", [" E ", "CDC", "BAB"], {
-        A: "create:andesite_casing",
-        B: "create:cogwheel",
-        C: "create:shaft",
-        D: "create:millstone",
-        E: Item.of("create:filter").ignoreNBT(),
-    });
-
-    event.shaped("createsifter:andesite_mesh", ["BAB", "AAA", "BAB"], {
-        A: "createdeco:andesite_mesh_fence",
-        B: "create:shaft",
-    });
-
-    event.shaped("createsifter:brass_mesh", ["BAB", "AAA", "BAB"], {
-        A: "createdeco:brass_mesh_fence",
-        B: "createaddition:brass_rod",
-    });
-
-    /// end sifter
 
     // horse armor recipes
 
@@ -1007,15 +985,12 @@ onEvent("recipes", (event) => {
         Item.of("custommachinery:custom_machine_item", {
             machine: "createastral:distillery",
         }),
-        ["CCC", "DED", "CCC"],
+        ["CCC", "DED", "BBB"],
         {
-            A: "techreborn:electronic_circuit",
-            B: "create:blaze_burner",
-            C: "create:fluid_tank",
+            B: "create:fluid_tank",
             C: "techreborn:lead_plate",
             D: "techreborn:industrial_centrifuge",
             E: "techreborn:advanced_machine_frame",
-            F: "techreborn:extractor",
         }
     );
 
@@ -1044,7 +1019,7 @@ onEvent("recipes", (event) => {
         E: "tconstruct:seared_basin",
     });
 
-    event.shaped("techreborn:solid_canning_machine", ["ABA", "CDC", "FBF"], {
+    event.shaped("techreborn:solid_canning_machine", ["ABA", "CDC", "EBE"], {
         A: "create:sturdy_sheet",
         B: "create:deployer",
         C: "create:belt_connector",
@@ -1113,25 +1088,17 @@ onEvent("recipes", (event) => {
         B: "campanion:leather_pouch",
         C: "campanion:sleeping_bag",
         D: "create:fluid_tank",
-        E: "tconstruct:travellers_chestplate",
+        E: "tconstruct:travelers_chestplate",
         F: "farmersdelight:rope",
     });
 
-    event.shaped("travelersbackpack:standard", ["ABC", "DED", "FBF"], {
-        A: "#c:workbenches",
-        B: "campanion:leather_pouch",
-        C: "campanion:sleeping_bag",
-        D: "create:fluid_tank",
-        E: "tconstruct:travellers_chestplate",
-        F: "farmersdelight:rope",
-    });
     event.shaped("campanion:sleeping_bag", ["AAA", "BCB"], {
         A: "campanion:wool_tarp",
         B: "farmersdelight:canvas_rug",
         C: "minecraft:string",
     });
     event.shaped("travelersbackpack:hose", ["ABB", " CB", "  B"], {
-        A: "travellersbackpack:hose_nozzle",
+        A: "travelersbackpack:hose_nozzle",
         B: "techreborn:rubber",
         C: "minecraft:green_dye",
     });
@@ -1206,109 +1173,6 @@ onEvent("recipes", (event) => {
     event.replaceInput("ae2:sky_stone_block", "ad_astra:sky_stone");
     event.replaceInput("ae2:sky_stone_block", "ad_astra:sky_stone");
 
-    event.recipes
-        .createMixing(Fluid.of("ad_astra:cryo_fuel", BUCKET), [
-            { fluid: "techreborn:nitrogen", amount: BUCKET },
-            { fluid: "kubejs:aurorite", amount: BUCKET },
-        ])
-        .processingTime(300);
-
-    event.recipes
-        .createCompacting("yttr:continuous_platform", [
-            { fluid: "kubejs:aurorite", amount: 100 * mB },
-            { fluid: "kubejs:shimmer", amount: 100 * mB },
-        ])
-        .heated()
-        .processingTime(200);
-
-    event.recipes
-        .createCompacting("ad_astra:sky_stone", ["5x ad_astra:moon_stone", "ae2:certus_quartz_dust"])
-        .heated()
-        .processingTime(200);
-
-    event.recipes
-        .createMixing("techreborn:sulfur_dust", ["3x minecraft:glowstone_dust", "ae2:sky_dust"])
-        .processingTime(50);
-
-    event.recipes
-        .createMixing(Fluid.of("techreborn:oil", 250 * mB), [
-            { fluid: "techreborn:sulfur", amount: 500 * mB },
-            "3x techreborn:coal_dust",
-        ])
-        .processingTime(300);
-
-    event.recipes
-        .createSequencedAssembly(["createastral:refining_agent"], "ae2:fluix_dust", [
-            event.recipes.createFilling("ae2:fluix_dust", [
-                "ae2:fluix_dust",
-                { fluid: "tconstruct:blazing_blood", amount: 9000 },
-            ]),
-            event.recipes.createFilling("ae2:fluix_dust", [
-                "ae2:fluix_dust",
-                { fluid: "techreborn:biofuel", amount: 9000 },
-            ]),
-            event.recipes.createPressing("ae2:fluix_dust", "ae2:fluix_dust"),
-        ])
-        .transitionalItem("ae2:fluix_dust")
-        .loops(3);
-
-    event.recipes
-        .createSequencedAssembly(["minecraft:paper"], "createastral:separation_agent", [
-            event.recipes.createDeploying("minecraft:paper", ["techreborn:charcoal_dust", "techreborn:charcoal_dust"]),
-            event.recipes.createDeploying("minecraft:paper", ["techreborn:obsidian_dust", "techreborn:obsidian_dust"]),
-            event.recipes.createDeploying("minecraft:paper", ["techreborn:sulfur_dust", "techreborn:sulfur_dust"]),
-        ])
-        .transitionalItem("minecraft:paper")
-        .loops(3);
-
-    event.recipes
-        .createMixing(Fluid.of("kubejs:molten_radiance", BUCKET), [
-            "minecraft:nether_star",
-            "minecraft:glowstone",
-            "minecraft:sea_lantern",
-            "3x createastral:separation_agent",
-            { fluid: "kubejs:shimmer", amount: BUCKET },
-        ])
-        .heated()
-        .processingTime(1000);
-
-    event.recipes
-        .createMixing(Fluid.of("kubejs:molten_shadowsteel", BUCKET), [
-            "minecraft:ender_pearl",
-            "8x dbe:vanta_black",
-            "techreborn:lead_storage_block",
-            "3x createastral:separation_agent",
-            "9x create:chromatic_compound",
-        ])
-        .heated()
-        .processingTime(1000);
-
-    event.recipes
-        .createMixing("create:refined_radiance", [
-            "create:chromatic_compound",
-            { fluid: "kubejs:molten_radiance", amount: 100 * mB },
-        ])
-        .superheated()
-        .processingTime(1000);
-
-    event.recipes
-        .createCompacting("createastral:star_shard", [{ fluid: "kubejs:molten_radiance", amount: 100 * mB }])
-        .heated()
-        .processingTime(500);
-
-    event.recipes
-        .createSequencedAssembly(["createastral:pure_star_shard"], "createastral:star_shard", [
-            event.recipes.createFilling("createastral:star_shard", [
-                "createastral:star_shard",
-                { fluid: "kubejs:molten_yttrium", amount: INGOT / 2 },
-            ]),
-            event.recipes.createPressing("createastral:star_shard", "createastral:star_shard"),
-            event.recipes.createDeploying("createastral:star_shard", ["techreborn:scrap_box", "techreborn:scrap_box"]),
-            event.recipes.createPressing("createastral:star_shard", "createastral:star_shard"),
-        ])
-        .transitionalItem("createastral:star_shard")
-        .loops(3);
-
     event.custom({
         type: "techreborn:centrifuge",
         power: 8,
@@ -1334,39 +1198,8 @@ onEvent("recipes", (event) => {
     event.shapeless(Item.of("techreborn:nitro_diesel_bucket"), ["ad_astra:fuel_bucket"]);
     event.shapeless(Item.of("techreborn:oil_bucket"), ["ad_astra:oil_bucket"]);
 
-    event.recipes.createMechanicalCrafting("ad_astra:ostrum_engine", [" F ", "FEF", "FDF", "ABA"], {
-        A: "createastral:shimmer_amplifier",
-        B: "createaddition:capacitor",
-        D: "createaddition:tesla_coil",
-        E: "ad_astra:ostrum_block",
-        F: "ad_astra:ostrum_plate",
-    });
-
     event.shaped("ad_astra:strophar_cap", ["AA", "AA"], {
         A: "ad_astra:strophar_mushroom",
-    });
-
-    event.recipes.createCompacting("4x minecraft:purpur_block", [
-        "4x ad_astra:strophar_cap",
-        { fluid: "minecraft:water", amount: 100 * mB },
-    ]);
-
-    event.recipes
-        .createMixing("doodads:asphalt", [
-            { fluid: "kubejs:andesite_compound", amount: INGOT / 3 },
-            "#c:concrete_powder",
-        ])
-        .processingTime(1000);
-
-    //yttric rifle!!
-    event.remove({ output: "yttr:rifle" });
-    event.recipes.createMechanicalCrafting("yttr:rifle", ["CCY  ", "YMEIC", " CDYC", "   C "], {
-        Y: "yttr:yttrium_block",
-        C: "ad_astra:calorite_ingot",
-        I: "techreborn:industrial_circuit",
-        E: "techreborn:electronic_circuit",
-        D: "techreborn:data_storage_chip",
-        M: "minecraft:crossbow",
     });
 });
 

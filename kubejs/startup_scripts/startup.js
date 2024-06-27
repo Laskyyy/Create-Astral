@@ -6,8 +6,6 @@ function lizardBurnModificationChanges(event) {
     });
 }
 
-
-
 ///// MODIFY CHARACTERISTICS OF ITEMS /////
 onEvent("item.modification", (event) => {
     event.modify("minecraft:piglin_banner_pattern", (item) => {
@@ -84,8 +82,6 @@ onEvent("block.modification", (event) => {
         block.explosionResistance = 99999;
     });
 });
-
-
 
 ///// ADD BURN TIME TO FUEL /////
 onEvent("item.modification", (event) => {
