@@ -1092,18 +1092,19 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem("createastral:incomplete_electronic_circuit")
         .loops(10);
 
+    const inc_dash_panel = "createastral:incomplete_dash_panel"
     //Dash panel
     event.recipes
-        .createSequencedAssembly(["automobility:dash_panel"], "ad_astra:iron_plate", [
+        .createSequencedAssembly(["automobility:dash_panel"], "create:iron_sheet", [
             event.recipes
-                .createFilling("ad_astra:iron_plate", [
-                    "ad_astra:iron_plate",
+                .createFilling(inc_dash_panel, [
+                    inc_dash_panel,
                     { fluid: "kubejs:shimmer", amount: INGOT },
                 ])
                 .processingTime(75), //fill
-            event.recipes.createPressing("ad_astra:iron_plate", "ad_astra:iron_plate").processingTime(75),
+            event.recipes.createPressing(inc_dash_panel, inc_dash_panel).processingTime(75),
         ])
-        .transitionalItem("ad_astra:iron_plate")
+        .transitionalItem(inc_dash_panel)
         .loops(3);
 
     const inc_refining_agent = "createastral:incomplete_refining_agent";
@@ -2203,17 +2204,6 @@ function mechanicalCraftingRecipes(event) {
             },
         },
         {
-            output: "ad_astra:compressor",
-            shape: ["ACCA", "B  D", "AEEA"],
-            inputs: {
-                A: "ad_astra:iron_plate",
-                B: "create:electron_tube",
-                C: "create:mechanical_press",
-                D: "create:precision_mechanism",
-                E: "ad_astra:desh_block",
-            },
-        },
-        {
             output: "ad_astra:nasa_workbench",
             shape: ["EFE", "CDC", "ABA"],
             inputs: {
@@ -2633,10 +2623,6 @@ function compactingRecipes(event) {
         {
             output: "minecraft:andesite",
             inputs: ["2x minecraft:flint", "minecraft:gravel", { fluid: "minecraft:lava", amount: 100 * mB }],
-        },
-        {
-            output: "ad_astra:iron_plate",
-            inputs: ["create:iron_sheet"],
         },
         {
             output: "createastral:steel_helmet",
