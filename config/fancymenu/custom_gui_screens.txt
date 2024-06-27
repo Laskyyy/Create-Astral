@@ -5,7 +5,7 @@ overridden_screens {
 
 custom_gui {
   identifier = main_menu_image_credits
-  title = "Mainmenu image credits"
+  title = main_menu_image_credits
   allow_esc = true
 }
 

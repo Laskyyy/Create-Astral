@@ -8,32 +8,36 @@
 			"keys": {
 				"a": "create:andesite_casing",
 				"l": "minecraft:lava",
-				"c": "compressor:double_compressed_cobblestone",
-				"t": "minecraft:tinted_glass"
+				"g": "minecraft:glass"
 			},
 			"pattern": [
 				[
 					"aaa",
-					"aca",
-					"ama"
+					"aaa",
+					"aaa"
 				],
 				[
-					"aca",
-					"clc",
-					"ata"
+					"ggg",
+					"glg",
+					"gmg"
 				],
 				[
 					"aaa",
-					"aca",
+					"aaa",
 					"aaa"
 				]
 			]
 		},
 		{
 			"type": "custommachinery:item",
-			"item": "minecraft:cobblestone",
+			"item": "ad_astra:moon_cobblestone",
 			"amount": 1,
 			"mode": "output"
+		},
+		{
+			"type": "custommachinery:dimension",
+			"filter": ["ad_astra:moon_orbit", "ad_astra:mars_orbit", "ad_astra:venus_orbit", "ad_astra:glacio_orbit", "ad_astra:mercury_orbit"],
+			"blacklist": true
 		}
 	]
 }

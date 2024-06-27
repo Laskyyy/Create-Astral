@@ -17,14 +17,14 @@
 			maxHeight = 70
 			#.
 			#Range: > 0
-			clusterSize = 32
+			clusterSize = 24
 			#.
 			#Amount of clusters generated per Chunk.
 			#  >1 to spawn multiple.
 			#  <1 to make it a chance.
 			#  0 to disable.
 			#Range: 0.0 ~ 512.0
-			frequency = 0.0833333358168602
+			frequency = 0.0633333358168602
 
 		[worldgen.v2.zinc_ore]
 			#.

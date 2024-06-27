@@ -1,4 +1,3 @@
-
 # This file is used by the github action to exclude resourcepacks and shaders from the server pack
 # it gets appended to the original .packwizignore
 resourcepacks
@@ -6,3 +5,8 @@ shaderpacks
 resources/**/textures
 fancymenustuff
 config/**/*-client.toml
+configureddefaults
+packwiz-installer.jar
+server.packwizignore
+
+kubejs/client_scripts

@@ -44,6 +44,7 @@ function millingRecipes(event) {
         ["minecraft:bubble_coral_block", "2x minecraft:purple_dye", 1],
         ["minecraft:fire_coral_block", "2x minecraft:red_dye", 1],
         ["minecraft:horn_coral_block", "2x minecraft:yellow_dye", 1],
+        ["createastral:crushed_raw_gadolinite", "yttr:yttrium_dust", 1],
     ].forEach((recipe) => {
         event.recipes.createMilling([Item.of(recipe[1]).withChance(recipe[2])], recipe[0]);
     });
@@ -229,25 +230,7 @@ function crushingRecipes(event) {
             outputs: [["techreborn:calcite_dust", 1]],
         },
         */
-        //Asurine, Veridiun Crushing
-        {
-            input: "create:asurine",
-            outputs: [
-                ["techreborn:lazurite_dust", 0.5],
-                ["techreborn:raw_tin", 0.2],
-                ["techreborn:tin_nugget", 0.3],
-                ["minecraft:clay_ball", 0.2],
-            ],
-        },
-        {
-            input: "create:veridium",
-            outputs: [
-                ["techreborn:olivine_dust", 0.5],
-                ["minecraft:raw_copper", 0.6],
-                ["create:copper_nugget", 0.8],
-                ["minecraft:clay_ball", 0.2],
-            ],
-        },
+
         // Ad Astra Crushing
         {
             input: "ad_astra:moon_stone",
@@ -1757,6 +1740,87 @@ function mixingRecipes(event) {
             heat: "",
             time: 100,
         },
+        {
+            output: "yttr:yttrium_ingot",
+            input: [
+                {
+                    fluid: "kubejs:molten_desh",
+                    amount: INGOT / 2,
+                },
+                {
+                    fluid: "kubejs:molten_yttrium",
+                    amount: INGOT,
+                },
+            ],
+            heat: "superheated",
+            time: 1000,
+        },
+        {
+            output: "yttr:yttrium_ingot",
+            input: [
+                {
+                    fluid: "kubejs:molten_ostrum",
+                    amount: INGOT / 2,
+                },
+                {
+                    fluid: "kubejs:molten_yttrium",
+                    amount: INGOT,
+                },
+            ],
+            heat: "superheated",
+            time: 1000,
+        },
+        {
+            output: "yttr:yttrium_ingot",
+            input: [
+                {
+                    fluid: "kubejs:molten_calorite",
+                    amount: INGOT / 2,
+                },
+                {
+                    fluid: "kubejs:molten_yttrium",
+                    amount: INGOT,
+                },
+            ],
+            heat: "superheated",
+            time: 1000,
+        },
+        {
+            output: "yttr:yttrium_ingot",
+            input: [
+                "4x ad_astra:desh_ingot",
+                {
+                    fluid: "kubejs:molten_yttrium",
+                    amount: INGOT,
+                },
+            ],
+            heat: "superheated",
+            time: 1000,
+        },
+        {
+            output: "yttr:yttrium_ingot",
+            input: [
+                "2x ad_astra:ostrum_ingot",
+                {
+                    fluid: "kubejs:molten_yttrium",
+                    amount: INGOT,
+                },
+            ],
+            heat: "superheated",
+            time: 1000,
+        },
+        {
+            output: "yttr:yttrium_ingot",
+            input: [
+                "ad_astra:calorite_ingot",
+                {
+                    fluid: "kubejs:molten_yttrium",
+                    amount: 2 * INGOT,
+                },
+            ],
+            heat: "superheated",
+            time: 1000,
+        },
     ].forEach((recipe) => {
         event.recipes
             .createMixing(recipe.output, recipe.input)
@@ -1778,6 +1842,19 @@ function cuttingRecipes(event) {
         ["vinery:old_cherry_wood", "vinery:stripped_old_cherry_wood"],
         ["ad_astra:glacian_log", "ad_astra:stripped_glacian_log"],
         ["ad_astra:stripped_glacian_log", "6x ad_astra:glacian_planks"],
+        ["create:track", "railways:track_acacia"],
+        ["create:track", "railways:track_birch"],
+        ["create:track", "railways:track_crimson"],
+        ["create:track", "railways:track_dark_oak"],
+        ["create:track", "railways:track_jungle"],
+        ["create:track", "railways:track_oak"],
+        ["create:track", "railways:track_spruce"],
+        ["create:track", "railways:track_warped"],
+        ["create:track", "railways:track_blackstone"],
+        ["create:track", "railways:track_ender"],
+        ["create:track", "railways:track_tieless"],
+        ["create:track", "railways:track_phantom"],
+        ["create:track", "railways:track_monorail"],
     ].forEach((recipe) => {
         event.recipes.createCutting(recipe[1], recipe[0]);
     });
@@ -1863,6 +1940,33 @@ function splashingRecipes(event) {
         {
             input: "ad_astra:mars_sand",
             outputs: [["techreborn:lead_nugget", 0.25]],
+        },
+
+        // ae2 cable washing made easy !!!
+
+        {
+            input: "#ae2:glass_cable",
+            outputs: [["ae2:fluix_glass_cable", 1]],
+        },
+
+        {
+            input: "#ae2:covered_cable",
+            outputs: [["ae2:fluix_covered_cable", 1]],
+        },
+
+        {
+            input: "#ae2:covered_dense_cable",
+            outputs: [["ae2:fluix_covered_dense_cable", 1]],
+        },
+
+        {
+            input: "#ae2:smart_cable",
+            outputs: [["ae2:fluix_smart_cable", 1]],
+        },
+
+        {
+            input: "#ae2:smart_dense_cable",
+            outputs: [["ae2:fluix_smart_dense_cable", 1]],
         },
     ].forEach((recipe) => {
         let cleanoutputs = [];
@@ -2250,6 +2354,7 @@ function pressingRecipes(event) {
     [
         ["minecraft:lapis_block", "create:lapis_sheet"],
         ["createastral:pure_star_shard", "minecraft:nether_star"],
+        ["minecraft:cobblestone", "techreborn:andesite_dust"],
     ].forEach((recipe) => {
         event.recipes.createPressing(recipe[1], recipe[0]);
     });
@@ -2374,6 +2479,37 @@ function compactingRecipes(event) {
                     amount: BUCKET / 9,
                 },
             ],
+        },
+        {
+            output: "2x createastral:gyrodyne_blueprint",
+            inputs: ["createastral:gyrodyne_blueprint", "create:empty_schematic", "32x minecraft:black_dye"],
+        },
+        {
+            output: "2x createastral:biplane_blueprint",
+            inputs: ["createastral:biplane_blueprint", "create:empty_schematic", "32x minecraft:black_dye"],
+        },
+        {
+            output: "2x createastral:airship_blueprint",
+            inputs: ["createastral:airship_blueprint", "create:empty_schematic", "32x minecraft:black_dye"],
+        },
+        {
+            output: "2x createastral:quadrocopter_blueprint",
+            inputs: ["createastral:quadrocopter_blueprint", "create:empty_schematic", "32x minecraft:black_dye"],
+        },
+
+        //mushroom block recipes
+        {
+            output: "minecraft:brown_mushroom_block",
+            inputs: ["4x minecraft:brown_mushroom"],
+        },
+        {
+            output: "minecraft:red_mushroom_block",
+            inputs: ["4x minecraft:red_mushroom"],
+        },
+        {
+            //nametag recipe
+            output: "minecraft:name_tag",
+            inputs: ["farmersdelight:canvas", "minecraft:ink_sac", "createaddition:iron_wire"],
         },
     ].forEach((recipe) => {
         event.recipes.createCompacting(recipe.output, recipe.inputs);

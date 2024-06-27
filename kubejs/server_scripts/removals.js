@@ -240,6 +240,22 @@ onEvent("recipes", (event) => {
             output: "createaddition:biomass",
         },
 
+        // Create Railways
+        { output: "railways:track_acacia" },
+        { output: "railways:track_birch" },
+        { output: "railways:track_crimson" },
+        { output: "railways:track_dark_oak" },
+        { output: "railways:track_jungle" },
+        { output: "railways:track_oak" },
+        { output: "railways:track_spruce" },
+        { output: "railways:track_warped" },
+        { output: "railways:track_blackstone" },
+        { output: "railways:track_ender" },
+        { output: "railways:track_tieless" },
+        { output: "railways:track_phantom" },
+        { output: "railways:track_monorail" },
+
+
         //Createdeco sheetmetal rebalance
 
         { output: "createdeco:copper_sheet_metal" },
@@ -250,6 +266,12 @@ onEvent("recipes", (event) => {
         { output: "createdeco:cast_iron_sheet_metal" },
         { output: "createdeco:iron_sheet_metal" },
         { output: "createdeco:zinc_sheet_metal" },
+
+        // Big cannon removals
+
+        { output: "createbigcannons:nethersteel_nugget" },
+        { output: "createbigcannons:nethersteel_ingot" },
+        { output: "createbigcannons:nethersteel_block" },
 
         // dustrial decor sheetmetal rework
 
@@ -323,7 +345,19 @@ onEvent("recipes", (event) => {
         { output: "tconstruct:efln_ball" },
         { output: "tconstruct:piggy_backpack" },
 
+
+        //horse armor
+
+        { output: "minecraft:leather_horse_armor"},
+        { type: "tconstruct:melting", input: "minecraft:iron_horse_armor"},
+        { type: "tconstruct:melting", input: "minecraft:golden_horse_armor"},
+        { type: "tconstruct:melting", input: "minecraft:diamond_horse_armor"},
+
+
         // Miscellaneous
+        { output: "minecraft:shroomlight" },
+
+        { output: "chipped:mechanist_workbench" },
 
         { output: "passivepiglins:piglin_fortune" },
         { output: "passivepiglins:piglin_totem" },
@@ -394,7 +428,6 @@ onEvent("recipes", (event) => {
         { output: "immersive_aircraft:boiler" },
         { output: "immersive_aircraft:engine" },
         { output: "immersive_aircraft:nether_engine" },
-        { output: "immersive_aircraft:industrial_gears" },
         { output: "immersive_aircraft:large_propeller" },
         { output: "immersive_aircraft:airship" },
         { output: "immersive_aircraft:gyrodyne" },

@@ -2,7 +2,7 @@
   "type": "create:compacting",
   "ingredients": [
     {
-      "fluid": "createbigcannons:molten_nethersteel",
+      "fluid": "createbigcannons:molten_ostrum",
       "nbt": {},
       "amount": 810
     }

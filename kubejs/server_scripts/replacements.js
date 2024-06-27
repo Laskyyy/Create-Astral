@@ -1,6 +1,7 @@
 onEvent("recipes", (event) => {
     // [?optional object specifying a mod/type, original item, replacement item]
     [
+        ["tconstruct:molten_bronze", "createbigcannons:molten_bronze"],
         ["create:powdered_obsidian", "#c:dusts/obsidian"],
         ["techreborn:obsidian_dust", "#c:dusts/obsidian"],
         ["createaddition:diamond_grit", "techreborn:diamond_dust"],
@@ -39,6 +40,11 @@ onEvent("recipes", (event) => {
             { output: "createaddition:connector" },
             "#c:slimeballs",
             "createaddition:copper_wire",
+        ],
+        [
+            { output: "createbigcannons:nethersteel_screw_lock" },
+            "createbigcannons:nethersteel_ingot",
+            "ad_astra:ostrum_ingot",
         ],
         [{ mod: "createbigcannons" }, "minecraft:string", "create:sand_paper"],
 
