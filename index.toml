@@ -12809,6 +12809,14 @@ file = "kubejs/config/common.properties"
 hash = "4869ea0c45f560ff504433e0873edc13be683a4dec98d58bb09e24aa7a388355"
 
 [[files]]
+file = "kubejs/exported/KubeJS Virtual Data Pack [high priority].zip"
+hash = "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85"
+
+[[files]]
+file = "kubejs/exported/KubeJS Virtual Data Pack [low priority].zip"
+hash = "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85"
+
+[[files]]
 file = "kubejs/jsconfig.json"
 hash = "82dbdb416bc14a9ac3e577579f13298b7fa563efb3c0118ff8e35d179e780f6d"
 
@@ -12897,8 +12905,28 @@ file = "kubejs/server_scripts/yttr_block_fix.js"
 hash = "549d73b4a709fe237a79fc99966e78c95d40e7613d0e10aca74183c65d8c6262"
 
 [[files]]
+file = "kubejs/startup_scripts/block_registry.js"
+hash = "f3846f928c17056196812853bce8cdc26023ee2e498ddf123d265706e1c36fba"
+
+[[files]]
+file = "kubejs/startup_scripts/fluid_registry.js"
+hash = "ba8e8f0e78facea11b6e203c3f26013b4ad2622028817263fa19cabf3e380449"
+
+[[files]]
+file = "kubejs/startup_scripts/item_registry.js"
+hash = "4e1ddec5153f3dd0da06bd6dd25a41a33ec40724b097ce866b4f47c388d54cd5"
+
+[[files]]
+file = "kubejs/startup_scripts/item_tooltip.js"
+hash = "0423e475d250e7c0a2e4b590f6c2fb189b8283672ba1a3a9fc488d7dcb6f91f9"
+
+[[files]]
 file = "kubejs/startup_scripts/startup.js"
-hash = "76b64f5c8a4fd25092a1de3f0a441cd8e9d45604a848ffb6d33251062eb278c5"
+hash = "b67b003fee47fa96f4d426e7afe5cfbbfc3a590e8e90408b53c416e4f6030e2c"
+
+[[files]]
+file = "kubejs/startup_scripts/worldgen.js"
+hash = "286bde2897ddb335fee4373c04f2e0f36062a339ddd9815b33f0118f3b6b3068"
 
 [[files]]
 file = "mods/SpoutingFix-1.jar"
@@ -13135,6 +13163,11 @@ metafile = true
 [[files]]
 file = "mods/create-steam-n-rails.pw.toml"
 hash = "40884b28a7669fbb1c74491e5d8b62cf26484266f2f68cc1beb6467451a14724"
+metafile = true
+
+[[files]]
+file = "mods/create-trains-and-custom-portal-api-integration.pw.toml"
+hash = "95ad8f0153f2bf34ad0f0b33d3f64e77edf0bc0c052a381acd2fc5abf355a49c"
 metafile = true
 
 [[files]]
