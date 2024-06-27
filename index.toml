@@ -12794,7 +12794,7 @@ hash = "02d6feb3afe1d9c96e137f8baaa71de982f1af0a2b37fbcba73f34ee59ebbd4d"
 
 [[files]]
 file = "kubejs/client_scripts/hide_from_rei.js"
-hash = "cf728042b75040b44246d10f3f9f84ea4c599d62ed46fcc82200e3e0fe8fc78b"
+hash = "afddaf3509af2eb51f918558517d6495779c7cd410f999e8926aee2006ac0405"
 
 [[files]]
 file = "kubejs/client_scripts/script.js"
@@ -12809,14 +12809,6 @@ file = "kubejs/config/common.properties"
 hash = "4869ea0c45f560ff504433e0873edc13be683a4dec98d58bb09e24aa7a388355"
 
 [[files]]
-file = "kubejs/exported/KubeJS Virtual Data Pack [high priority].zip"
-hash = "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85"
-
-[[files]]
-file = "kubejs/exported/KubeJS Virtual Data Pack [low priority].zip"
-hash = "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85"
-
-[[files]]
 file = "kubejs/jsconfig.json"
 hash = "82dbdb416bc14a9ac3e577579f13298b7fa563efb3c0118ff8e35d179e780f6d"
 
@@ -12826,7 +12818,7 @@ hash = "7936a3fb149726799bcf20425fe3d66e71feb3287e77f9e7a8148f61db7389b7"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
-hash = "8f27445b67d2e4a408570017172d926abb8d86437c5a7a979e4a0942a9eb82b0"
+hash = "7983dcc05781e106f2e3a661bc59dc8502fc82bacfebb3a68f7eac9928497fce"
 
 [[files]]
 file = "kubejs/server_scripts/createaddons.js"
@@ -12858,7 +12850,7 @@ hash = "1becce5642c6ca74f664127d62e3039cec9ac69a95b0e0f650113cd6fb56d393"
 
 [[files]]
 file = "kubejs/server_scripts/removals.js"
-hash = "cce205d40a8a93c31fb11d7f2ba2ab06e2f3982de360bf6c0b0cb332fe5ebf51"
+hash = "3fe35746f5648e76fa3d3d6af1a1e1c3f82b65b6e2a828933c6c47a75ee89029"
 
 [[files]]
 file = "kubejs/server_scripts/replacements.js"
@@ -12914,7 +12906,7 @@ hash = "ba8e8f0e78facea11b6e203c3f26013b4ad2622028817263fa19cabf3e380449"
 
 [[files]]
 file = "kubejs/startup_scripts/item_registry.js"
-hash = "84edb056552c1acc441d8ed3d1866601fd97c4cfa9bd1b4d65095914a843b23d"
+hash = "9717b86edbfe46fcf94191868b203fb3dd0882e770e48b46b1b4e82523038026"
 
 [[files]]
 file = "kubejs/startup_scripts/item_tooltip.js"
@@ -26863,15 +26855,15 @@ hash = "9bc249cdb2c2449a80bbc78f2c872e453c7427b5d0058bc5899947fcfe476fe4"
 
 [[files]]
 file = "resources/ad_astra/textures/item/calorite_plate.png"
-hash = "e43ed7cd9cfbe5030425ec7ceb99ac3abc632d9eac9e91f431636742d1bf6e23"
+hash = "a61a226ff841c54f68398d4feb0a057d32a1b814555dc55605925f3b79d0f411"
 
 [[files]]
 file = "resources/ad_astra/textures/item/desh_plate.png"
-hash = "c14bd690ebe728af0ba9ff11be65f06035370e5a344a0d97d4aebbf945150335"
+hash = "2d64aca26b28397cc8524d3fb3e0f1a88c0bb8d21c598808a18ca999aa1d41b5"
 
 [[files]]
 file = "resources/ad_astra/textures/item/ostrum_plate.png"
-hash = "1369ed233c3a5b5413417585cda1b057cb8bbcab8456d1d8f756d445d0bc8aae"
+hash = "2cec3a1310646a95cb863c07454531f9f633109f53ab036515e34e9980f7ab48"
 
 [[files]]
 file = "resources/ad_astra/textures/item/oxygen_gear.png"
@@ -27638,8 +27630,28 @@ file = "resources/createastral/textures/item/golden_pin.png"
 hash = "3c2cbb27acda816265268d160f401988bc373f385e900385c2561bbc6a450314"
 
 [[files]]
+file = "resources/createastral/textures/item/incomplete_basic_machine_frame0.png"
+hash = "c0254289b4dc70d984fe39d9a046cedad5bd8c3fbb08d7039d8551eec053c5fc"
+
+[[files]]
+file = "resources/createastral/textures/item/incomplete_basic_machine_frame1.png"
+hash = "07044bc288a3bb57d166420e0220f2f29e99a7d7a36444f2e9bf3b58abc6a89f"
+
+[[files]]
 file = "resources/createastral/textures/item/incomplete_calculation_processor.png"
 hash = "ff84e685554fe648de1eda3fb277e657a6b062f7759ed4366f451b01ce05ddc3"
+
+[[files]]
+file = "resources/createastral/textures/item/incomplete_copper_casing0.png"
+hash = "7e4d5394186de6c3689dffc095a3073626ea36244ca162ffab291d32efc1c80e"
+
+[[files]]
+file = "resources/createastral/textures/item/incomplete_copper_casing1.png"
+hash = "afe52c896077fa850a359f96961395d0f681feae6af8c970251c5791a3909d23"
+
+[[files]]
+file = "resources/createastral/textures/item/incomplete_copper_casing2.png"
+hash = "50fda1081a81de4553ec8203d6a54288a47ba27ab7d7466e2f2e2766436b0d1c"
 
 [[files]]
 file = "resources/createastral/textures/item/incomplete_dash_panel.png"
@@ -27894,8 +27906,12 @@ file = "resources/createastral/textures/item/t4_upgrade.png"
 hash = "88a17669ad3d8ef58991e5519eb611a57f02eae949418e7d0bd82c30095afa70"
 
 [[files]]
+file = "resources/createastral/textures/item/t5_upgrade.png"
+hash = "02d2fc13e7e8518b5e67b62a77ee46bf217f1e10872d720db6025603925018b0"
+
+[[files]]
 file = "resources/createastral/textures/item/t6_upgrade.png"
-hash = "52786f785760d1fe19eef11b251663cf525a43fff8f29f552668c9a97471191f"
+hash = "c004bb318c8edbb0c3dff26a51a1a02542aaa21b5128238656080b67a7038f76"
 
 [[files]]
 file = "resources/createastral/textures/item/transitional_lapis_sheet.png"
@@ -30755,7 +30771,7 @@ hash = "6d4086e6696259389cc1e0b8ce68a16f2814d52802a83b971658d5a1f4bcf5c8"
 
 [[files]]
 file = "resources/techreborn/textures/item/part/electronic_circuit.png"
-hash = "3447e6828f5842f2b484060d02a1a99bb2de8a561ba3a20f64b968660c73750b"
+hash = "6089aa7eacbef0ac43c5a008dd47d9a8106f8d95c1d56189556c82251b9c74fa"
 
 [[files]]
 file = "resources/techreborn/textures/item/part/electronic_circuit.png.mcmeta"
