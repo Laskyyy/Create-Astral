@@ -103,5 +103,4 @@ onEvent("item.registry", (event) => {
     });
     event.create("createastral:pure_biomatter");
     event.create("createastral:lime").displayName("Lime Dust");
-    event.create("createastral:coin", "create:sequenced_assembly").displayName("coin");
 });
