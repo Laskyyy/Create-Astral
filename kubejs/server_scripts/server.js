@@ -25,6 +25,9 @@ onEvent("item.tags", (event) => {
     event.add("c:stripped_logs", "vinery:stripped_old_cherry_log");
     event.add("c:stripped_logs", "techreborn:rubber_log_stripped");
     event.add("c:stripped_logs", "ad_astra:stripped_glacian_log");
+
+    event.add("c:plates/tin", "techreborn:tin_plate");
+    console.log("tagged plates!")
 });
 
 // constants
@@ -777,6 +780,8 @@ onEvent("recipes", (event) => {
     event.blasting("create:andesite_alloy", "createastral:andesite_compound");
     event.blasting("tconstruct:scorched_basin", "tconstruct:seared_basin");
     event.blasting("tconstruct:scorched_table", "tconstruct:seared_table");
+    event.smoking("campanion:cooked_marshmallow", "campanion:marshmallow");
+    event.smoking("campanion:blackened_marshmallow", "campanion:cooked_marshmallow");
 
     //SMITHING RADIANT STUFF
 

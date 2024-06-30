@@ -778,6 +778,29 @@ onEvent("recipes", (event) => {
         }
     });
 
+    // Replace all cells crafting recipes to use tin sheets instead of
+    // tin ingots
+    [
+        "water_coolant_cell_60k", // may want to remove this from modpack -- no uses
+        "water_coolant_cell_30k", // and this
+        "water_coolant_cell_10k",
+        "nak_coolant_cell_60k",
+        "nak_coolant_cell_360k", // and this
+        "nak_coolant_cell_180k", // and this
+        "helium_coolant_cell_60k",
+        "helium_coolant_cell_360k", // and this
+        "helium_coolant_cell_180k",
+        "cell"
+    ].forEach((cell) =>{
+        event.replaceInput(
+            {type: "minecraft:crafting_shaped", output: "techreborn:" + cell},
+            "techreborn:tin_ingot", "techreborn:tin_plate");
+        event.replaceInput(
+            {type: "minecraft:crafting_shaped", output: "techreborn:" + cell},
+            "minecraft:copper_ingot", "create:copper_sheet");
+    });
+    event.replaceInput({type: "techreborn:solid_canning_machine"}, "techreborn:tin_ingot", "techreborn:tin_plate");
+
     event.replaceOutput(
         "techreborn:electronic_circuit",
         "create:integrated_circuit"

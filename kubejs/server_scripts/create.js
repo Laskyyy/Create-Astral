@@ -34,7 +34,7 @@ function millingRecipes(event) {
         ["minecraft:tuff", "minecraft:iron_nugget", 1],
         ["minecraft:dripstone_block", "2x minecraft:golden_nugget", 1],
         ["minecraft:basalt", "create:copper_nugget", 0.4],
-        ["minecratf:blackstone", "create:zinc_nugget", 0.5],
+        ["minecraft:blackstone", "create:zinc_nugget", 0.5],
         ["minecraft:andesite", "techreborn:tin_nugget", 0.5],
         ["minecraft:granite", "create:copper_nugget", 0.5],
         ["minecraft:flint", "techreborn:andesite_dust", 1],
@@ -44,7 +44,8 @@ function millingRecipes(event) {
         ["minecraft:bubble_coral_block", "2x minecraft:purple_dye", 1],
         ["minecraft:fire_coral_block", "2x minecraft:red_dye", 1],
         ["minecraft:horn_coral_block", "2x minecraft:yellow_dye", 1],
-        ["minecraft:glow_berries", "naturalist:glow_goop", 1]
+        ["minecraft:glow_berries", "naturalist:glow_goop", 1],
+        ["minecraft:snow_block", "2x minecraft:snowball", 1],
         ["createastral:crushed_raw_gadolinite", "yttr:yttrium_dust", 1],
     ].forEach((recipe) => {
         event.recipes.createMilling([Item.of(recipe[1]).withChance(recipe[2])], recipe[0]);
@@ -189,6 +190,10 @@ function crushingRecipes(event) {
         {
             input: "minecraft:glow_berries",
             outputs: [["naturalist:glow_goop", 1], ["naturalist:glow_goop", 0.5]],
+        },
+        {
+            input: "minecraft:snow_block",
+            outputs: [["2x minecraft:snowball", 1], ["minecraft:snowball", 0.5]],
         },
         //Netherack Crushing
         {
@@ -1196,6 +1201,24 @@ function fillingRecipes(event) {
             amount: 25 * mB,
         },
         {
+            input: "techreborn:sponge_piece",
+            output: "minecraft:honeycomb",
+            fluid: "create:honey",
+            amount: 250 * mB,
+        },
+        {
+            input: "minecraft:beehive",
+            output: "minecraft:bee_nest",
+            fluid: "create:honey",
+            amount: BUCKET,
+        },
+        {
+            input: "minecraft:blackstone",
+            output: "minecraft:gilded_blackstone",
+            fluid: "tconstruct:molten_gold",
+            amount: INGOT,
+        },
+        {
             input: "vinery:wine_bottle",
             output: "vinery:red_grapejuice_wine_bottle",
             fluid: "kubejs:red_grape_juice",
@@ -1214,7 +1237,12 @@ function fillingRecipes(event) {
     event.recipes.createFilling("minecraft:glowstone_dust",
         ["create:cinder_flour",
             {fluid:"create:potion", amount:25 * mB, nbt:{Bottle: "REGULAR", Potion:"naturalist:glowing"}}
-        ])
+        ]);
+
+    event.recipes.createFilling("createastral:swift_andesite",
+        ["doodads:asphalt",
+            {fluid:"create:potion", amount:37 * mB, nbt:{Bottle: "REGULAR", Potion:"minecraft:swiftness"}}
+        ]);
 }
 function mixingRecipes(event) {
     // Biofuel rework
@@ -1224,6 +1252,46 @@ function mixingRecipes(event) {
     // Heat: "" = no heat, "heated", or "superheated"
     // Time: Mixing time in ticks
     [
+        {
+            output: "minecraft:shroomlight",
+            input: [
+                ["minecraft:brown_mushroom_block", "minecraft:red_mushroom_block", "minecraft:mushroom_stem",
+                "minecraft:nether_wart_block", "minecraft:warped_wart_block"],
+                "naturalist:glow_goop",
+                {
+                    fluid: "create:honey",
+                    amount: 25 * mB,
+                },
+            ],
+            heat: "",
+            time: 100,
+        },
+        {
+            output: "minecraft:shroomlight",
+            input: [
+                ["minecraft:brown_mushroom_block", "minecraft:red_mushroom_block", "minecraft:mushroom_stem",
+                    "minecraft:nether_wart_block", "minecraft:warped_wart_block"],
+                "2x minecraft:glowstone_dust",
+                {
+                    fluid: "create:honey",
+                    amount: 25 * mB,
+                },
+            ],
+            heat: "",
+            time: 100,
+        },
+        {
+            output: "minecraft:ice",
+            input: [
+                "2x minecraft:snowball",
+                {
+                    fluid: "minecraft:water",
+                    amount: BUCKET * 0.5,
+                },
+            ],
+            heat: "",
+            time: 100,
+        },
         //mixing recipes for coral
         {
             output: "minecraft:tube_coral_block",
@@ -1761,13 +1829,13 @@ function mixingRecipes(event) {
         },
         {
             output: [{ fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET }],
-            input: ["kubejs:experience_block"],
+            input: ["create:experience_block"],
             heat: "heated",
             time: 1000,
         },
         {
             output: [{ fluid: "kubejs:liquid_xp_nuggies", amount: INGOT }],
-            input: ["kubejs:experience_ingot"],
+            input: ["createastral:experience_ingot"],
             heat: "heated",
             time: 100,
         },
@@ -1958,6 +2026,7 @@ function cuttingRecipes(event) {
         ["create:track", "railways:track_tieless"],
         ["create:track", "railways:track_phantom"],
         ["create:track", "railways:track_monorail"],
+        ["minecraft:rabbit", "minecraft:rabbit_foot"]
     ].forEach((recipe) => {
         event.recipes.createCutting(recipe[1], recipe[0]);
     });
@@ -1965,6 +2034,7 @@ function cuttingRecipes(event) {
 function hauntingRecipes(event) {
     // [Input string, Output string]
     [
+        ["naturalist:snail_shell", "minecraft:nautilus_shell"],
         ["2x techreborn:charcoal_dust", "techreborn:coal_dust"],
         ["2x minecraft:charcoal", "minecraft:coal"],
         ["minecraft:sand", "minecraft:soul_sand"],
@@ -2723,6 +2793,11 @@ function compactingRecipes(event) {
     event.recipes
         .createCompacting("createastral:olivine_sheet", ["16x techreborn:olivine_dust"])
         .superheated()
+        .processingTime(1500);
+
+    event.recipes
+        .createCompacting("create:lapis_sheet", ["16x techreborn:lazurite_dust"])
+        .heated()
         .processingTime(1500);
 
     event.recipes
