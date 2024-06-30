@@ -2337,19 +2337,6 @@ function mechanicalCraftingRecipes(event) {
                 F: "dustrial_decor:padded_block",
             },
         },
-
-        {
-            output: "extended_drawers:controller",
-            shape: [" E ", "ACA", "BDB", "ACA", " E "],
-            inputs: {
-                A: "ad_astra:desh_block",
-                B: "createastral:astral_conduit",
-                C: "create:redstone_link",
-                D: "create:linked_controller",
-                E: "tconstruct:cobalt_block",
-            },
-        },
-
         {
             output: "2x techreborn:fusion_coil",
             shape: ["CCCCC", "CBBBC", "CBDBC", "CBBBC", "CCCCC"],
