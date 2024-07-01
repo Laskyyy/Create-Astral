@@ -12830,7 +12830,7 @@ hash = "7436e8515c54588076cbacffcef4ab83c46049b2c66b0dca3c17d3d0f9519f63"
 
 [[files]]
 file = "kubejs/server_scripts/deathofinfinity.js"
-hash = "0af79fe958f431de474ad6efd5fd08e5f59c16f7032a844cc527daf8595790a1"
+hash = "f0670768a0713f488fffbbadddf712744a737cdc657390fd32ab2c75ed80e0cb"
 
 [[files]]
 file = "kubejs/server_scripts/enchantment.js"
