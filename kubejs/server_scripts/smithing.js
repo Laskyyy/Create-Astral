@@ -23,8 +23,7 @@ onEvent("recipes", (event) => {
         ["basic", 2],
         ["advanced", 3],
         ["industrial", 4],
-        ["quantum", 5],
-        ["creative", 6],
+        ["quantum", 6],
     ].forEach((arr) => {
         const prefix = arr[0];
         const tier = arr[1];
