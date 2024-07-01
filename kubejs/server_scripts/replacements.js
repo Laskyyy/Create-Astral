@@ -131,7 +131,7 @@ onEvent("recipes", (event) => {
         [
             { output: "minecraft:shulker_box" },
             "minecraft:chest",
-            "minecraft:ender_eye",
+            ["minecraft:barrel", "minecraft:chest"],
         ],
         [
             { mod: "createaddition" },

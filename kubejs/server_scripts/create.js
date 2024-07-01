@@ -2034,6 +2034,11 @@ function splashingRecipes(event) {
             input: "ad_astra:mars_sand",
             outputs: [["techreborn:lead_nugget", 0.25]],
         },
+        {
+            // wash shulker box to remove the color
+            input: "#c:shulker_boxes",
+            outputs: [["minecraft:shulker_box", 1]]
+        },
 
         // ae2 cable washing made easy !!!
 

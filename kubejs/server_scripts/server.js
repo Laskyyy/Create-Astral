@@ -657,6 +657,11 @@ onEvent("recipes", (event) => {
         B: "techreborn:wood_plate",
     });
 
+    event.shaped("minecraft:shulker_shell", ["BBB", "BAB", "BBB"], {
+        A: "minecraft:nautilus_shell",
+        B: "minecraft:popped_chorus_fruit",
+    });
+
     event.shaped("3x create:cogwheel", ["AB"], {
         A: "create:andesite_alloy",
         B: "createastral:bronze_sheet",
