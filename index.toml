@@ -12809,6 +12809,14 @@ file = "kubejs/config/common.properties"
 hash = "4869ea0c45f560ff504433e0873edc13be683a4dec98d58bb09e24aa7a388355"
 
 [[files]]
+file = "kubejs/exported/KubeJS Virtual Data Pack [high priority].zip"
+hash = "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85"
+
+[[files]]
+file = "kubejs/exported/KubeJS Virtual Data Pack [low priority].zip"
+hash = "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85"
+
+[[files]]
 file = "kubejs/jsconfig.json"
 hash = "82dbdb416bc14a9ac3e577579f13298b7fa563efb3c0118ff8e35d179e780f6d"
 
@@ -12826,7 +12834,7 @@ hash = "7436e8515c54588076cbacffcef4ab83c46049b2c66b0dca3c17d3d0f9519f63"
 
 [[files]]
 file = "kubejs/server_scripts/deathofinfinity.js"
-hash = "0af79fe958f431de474ad6efd5fd08e5f59c16f7032a844cc527daf8595790a1"
+hash = "f0670768a0713f488fffbbadddf712744a737cdc657390fd32ab2c75ed80e0cb"
 
 [[files]]
 file = "kubejs/server_scripts/enchantment.js"
