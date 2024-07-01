@@ -5,6 +5,10 @@ onEvent("item.tooltip", (e) => {
     hasFired = true;
     const tooltips = [
         {
+            item: "createastral:swift_andesite",
+            tooltip: "Place below a block to grant it a speed boost similar to andesite pavement.",
+        },
+        {
             item: "tconstruct:smeltery_controller",
             tooltip: "Disabled, use a foundry in chapter 3.",
         },

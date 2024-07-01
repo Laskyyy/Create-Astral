@@ -7,7 +7,7 @@ onEvent("recipes", (event) => {
     //  to use both machines for an item they may not craft often, outside of circuit automation.
     // Still, I'll let the wire mill produce wires.
     //
-    const WIRE_MATERIALS = ["iron", "gold", "copper", "brass"];
+    const WIRE_MATERIALS = ["iron", "gold", "copper"];
     for (let material of WIRE_MATERIALS) {
         event.custom({
             type: "techreborn:wire_mill",
@@ -15,7 +15,9 @@ onEvent("recipes", (event) => {
             time: 300,
             ingredients: [
                 {
-                    item: "create:" + material + "_sheet",
+                    // create calls it golden sheet, otherwise material + _sheet
+                    item: (material === "gold") ? "create:golden_sheet" :
+                        "create:" + material + "_sheet",
                     count: 2,
                 },
             ],
