@@ -1,3 +1,5 @@
+// constants
+
 const BUCKET = 81000;
 const INGOT = 9000;
 const NUGGET = 1000;
@@ -10,8 +12,6 @@ settings.logAddedRecipes = false;
 settings.logRemovedRecipes = false;
 settings.logSkippedRecipes = false;
 settings.logErroringRecipes = false;
-
-console.info("Welcome to white space.");
 
 onEvent("tags.blocks", (event) => {
     event.remove("minecraft:needs_iron_tool", "minecraft:diamond_ore");
@@ -27,10 +27,7 @@ onEvent("item.tags", (event) => {
     event.add("c:stripped_logs", "ad_astra:stripped_glacian_log");
 
     event.add("c:plates/tin", "techreborn:tin_plate");
-    console.log("tagged plates!")
 });
-
-// constants
 
 // Farmer's Delight cutting board changes
 function farmersDelightCuttingChanges(event) {
