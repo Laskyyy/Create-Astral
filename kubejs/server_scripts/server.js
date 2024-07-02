@@ -1173,29 +1173,6 @@ onEvent("recipes", (event) => {
         output: "minecraft:redstone",
     });
     event.replaceInput("ae2:sky_stone_block", "ad_astra:sky_stone");
-    event.replaceInput("ae2:sky_stone_block", "ad_astra:sky_stone");
-
-    event.custom({
-        type: "techreborn:centrifuge",
-        power: 8,
-        time: 500,
-        ingredients: [
-            {
-                item: "farmersdelight:rich_soil",
-                count: 2,
-            },
-        ],
-        results: [
-            {
-                item: "minecraft:coarse_dirt",
-                count: 2,
-            },
-            {
-                item: "techreborn:saltpeter_dust",
-                count: 4,
-            },
-        ],
-    });
 
     event.shapeless(Item.of("techreborn:nitro_diesel_bucket"), ["ad_astra:fuel_bucket"]);
     event.shapeless(Item.of("techreborn:oil_bucket"), ["ad_astra:oil_bucket"]);

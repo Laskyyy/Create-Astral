@@ -93,7 +93,7 @@ onEvent("recipes", (event) => {
     ];
 
     for (let recipe of CRUSHING_RECIPES_TO_BECOME_GRINDING) {
-        event.remove({ type: "create:crushing", input: recipe[0] });
+        event.remove({type: "create:crushing", input: recipe[0]});
         event.custom({
             type: "techreborn:grinder",
             time: recipe[3] || DEFAULT_GRIND_TIME,
@@ -133,33 +133,61 @@ onEvent("recipes", (event) => {
         ],
     });
 
-    //Implosion Compressor
-
+    // centrifuge
     event.custom({
-        type: "techreborn:implosion_compressor",
-        power: 30,
+        type: "techreborn:centrifuge",
+        power: 8,
         time: 500,
         ingredients: [
             {
-                count: 1,
-                item: "techreborn:steel_dust",
-            },
-            {
-                item: "minecraft:tnt",
-                count: 1,
+                item: "farmersdelight:rich_soil",
+                count: 2,
             },
         ],
         results: [
             {
-                item: "ad_astra:steel_ingot",
-                count: 1,
+                item: "minecraft:coarse_dirt",
+                count: 2,
             },
             {
-                item: "techreborn:steel_nugget",
-                count: 2,
+                item: "techreborn:saltpeter_dust",
+                count: 4,
             },
         ],
     });
+
+    event.custom({
+        type: "techreborn:centrifuge",
+        power: 8,
+        time: 500,
+        ingredients: [
+            {
+                item: "ae2:certus_quartz_crystal",
+                count: 32,
+            },
+            {
+                item: "techreborn:cell",
+                count: 13
+            }
+        ],
+        results: [
+            {
+                item: "techreborn:cell",
+                nbt: {
+                    fluid: "techreborn:mercury",
+                },
+                count: 10,
+            },
+            {
+                item: "techreborn:cell",
+                nbt: {
+                    fluid: "techreborn:silicon",
+                },
+                count: 3,
+            },
+        ],
+    });
+
 
     // Vacuum Freezer
 

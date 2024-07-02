@@ -174,8 +174,8 @@ onEvent("recipes", (event) => {
                     count: 36,
                 },
                 {
-                    item: "techreborn:ender_eye_small_dust",
-                    count: 1,
+                    item: "techreborn:dark_ashes_dust",
+                    count: 4,
                 },
             ],
         });

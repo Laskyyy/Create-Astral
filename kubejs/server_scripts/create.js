@@ -115,7 +115,7 @@ function crushingRecipes(event) {
                 ["1x minecraft:purple_dye", 1],
                 ["2x minecraft:purple_dye", 0.5],
                 ["1x minecraft:popped_chorus_fruit", 0.1],
-                ["1x techreborn:ender_pearl_small_dust", 0.1],
+                ["1x ae2:ender_dust", 0.2],
                 ["1x techreborn:calcite_dust", 0.1],
                 ["1x minecraft:bubble_coral", 0.25],
                 ["1x minecraft:bubble_coral_fan", 0.25],
@@ -2722,7 +2722,12 @@ function compactingRecipes(event) {
         },
         {
             output: ["ae2:silicon_press", "ae2:printed_silicon"],
-            inputs: ["ae2:silicon_press", "2x ae2:silicon"],
+            inputs: ["ae2:silicon_press",
+                {
+                    fluid: "techreborn:silicon",
+                    amount: INGOT,
+                },
+            ],
         },
         {
             output: ["ae2:silicon_press", "ae2:silicon_press"],
