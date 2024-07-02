@@ -5,7 +5,7 @@ onEvent("recipes", (event) => {
         ["create:powdered_obsidian", "#c:dusts/obsidian"],
         ["techreborn:obsidian_dust", "#c:dusts/obsidian"],
         ["createaddition:diamond_grit", "techreborn:diamond_dust"],
-
+        ["ae2:ender_dust", "techreborn:ender_pearl_dust"],
         [
             { mod: "createbigcannons" },
             "create:iron_sheet",
@@ -47,7 +47,18 @@ onEvent("recipes", (event) => {
             "ad_astra:ostrum_ingot",
         ],
         [{ mod: "createbigcannons" }, "minecraft:string", "create:sand_paper"],
-
+        [
+            {output: "minecraft:pointed_dripstone"},
+            "techreborn:calcite_small_dust", "techreborn:calcite_dust"
+        ],
+        [
+            {output: "minecraft:calcite"},
+            "techreborn:calcite_small_dust", "techreborn:calcite_dust"
+        ],
+        [
+            {output: "techreborn:nanosaber"},
+            "techreborn:glowstone_small_dust", "minecraft:glowstone_dust"
+        ],
         [
             { output: "techreborn:copper_cable" },
             "minecraft:copper_ingot",

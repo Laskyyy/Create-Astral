@@ -5,6 +5,7 @@ onEvent("recipes", (event) => {
     //Tech Reborn
     [
         { output: "techreborn:chunk_loader" },
+        {output: "techreborn:pyrite_dust"},
         { output: "ae2:spatial_anchor" },
         { output: "techreborn:industrial_electrolyzer" },
         { output: "techreborn:industrial_sawmill" },
@@ -586,6 +587,8 @@ onEvent("recipes", (event) => {
         "platinum",
         "brass",
         "zinc",
+        "nickel",
+        "platinum"
     ];
 
     metal.forEach((metal) => {
