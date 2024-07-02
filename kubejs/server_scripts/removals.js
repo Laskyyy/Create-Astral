@@ -516,8 +516,9 @@ onEvent("recipes", (event) => {
         { output: "minecraft:blackstone" },
         { output: "minecraft:gold_nugget", input: "minecraft:soul_sand" },
         { output: "minecraft:gravel", input: "techreborn:granite_dust" },
-        { output: "minecraft:gold_nugget", input: "minecraft:soul_soil" }
+        { output: "minecraft:gold_nugget", input: "minecraft:soul_soil" },
         {output: "ae2:silicon"},
+        {id: "techreborn:centrifuge/redstone" }, // remove other version of centrifuging certus quartz
         { input: "minecraft:crying_obsidian" },
         {
             input: "minecraft:copper_block",
