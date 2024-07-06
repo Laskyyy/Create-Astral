@@ -127,7 +127,7 @@ const ammos = [
 
 // TODO: Test this with multiple people shooting at once
 onEvent("entity.spawned", (event) => {
-    const { entity, server } = event;
+    const {entity, server} = event;
     ammos.forEach((ammoType) => {
         if (entity.type === "create:potato_projectile" && entity.fullNBT.Item.id === ammoType.projectileItem) {
             server.scheduleInTicks(5, (event) => {
@@ -158,7 +158,18 @@ onEvent("entity.spawned", (event) => {
                 }
                 event.reschedule();
             });
+            //! Made by TheOverlyCaffeinatedTrashPanda
         }
     });
-    //! Made by TheOverlyCaffeinatedTrashPanda
+    if (entity.type === "minecraft:item") {
+        if (entity.item === "createastral:fragile_sheet") {
+            entity.item = "createastral:broken_fragile_sheet"
+            Utils.server.runCommandSilent(`particle minecraft:block minecraft:magenta_concrete_powder ${entity.x} ${entity.y} ${entity.z} 0.0 0.1 0.0 0 5`)
+            Utils.server.runCommandSilent(`playsound create:crushing_1 block @a ${entity.x} ${entity.y} ${entity.z}`)
+        } else if (entity.item === "createastral:fragile_rocket_fin"){
+            entity.item = "createastral:broken_fragile_rocket_fin"
+            Utils.server.runCommandSilent(`particle minecraft:block createastral:sturdy_sheet_block ${entity.x} ${entity.y} ${entity.z} 0.0 0.1 0.0 0 5`)
+            Utils.server.runCommandSilent(`playsound create:crushing_1 block @a ${entity.x} ${entity.y} ${entity.z}`)
+        }
+    }
 });

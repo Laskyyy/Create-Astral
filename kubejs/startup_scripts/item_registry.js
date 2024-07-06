@@ -20,19 +20,23 @@ onEvent("item.registry", (event) => {
         event.create("createastral:navigation_mechanism");
     event.create("createastral:coin", "create:sequenced_assembly").displayName("Golden Coin");
 
-    event.create("createastral:quadrocopter_blueprint").texture("create:item/schematic"),
-        event.create("createastral:gyrodyne_blueprint").texture("create:item/schematic"),
-        event.create("createastral:biplane_blueprint").texture("create:item/schematic"),
-        event.create("createastral:airship_blueprint").texture("create:item/schematic"),
-        event.create("createastral:refining_agent"),
-        event.create("createastral:separation_agent"),
-        event.create("createastral:shimmer_amplifier"),
-        event.create("createastral:star_shard").glow(true),
-        event.create("createastral:pure_star_shard").glow(true),
-        event.create("createastral:crushed_raw_gadolinite"),
-        event.create("createastral:experience_ingot").glow(true),
-        event.create("createastral:stone_dust").displayName("Stone Dust");
+    event.create("createastral:quadrocopter_blueprint").texture("create:item/schematic");
+    event.create("createastral:gyrodyne_blueprint").texture("create:item/schematic");
+    event.create("createastral:biplane_blueprint").texture("create:item/schematic");
+    event.create("createastral:airship_blueprint").texture("create:item/schematic");
+    event.create("createastral:refining_agent");
+    event.create("createastral:separation_agent");
+    event.create("createastral:shimmer_amplifier");
+    event.create("createastral:star_shard").glow(true);
+    event.create("createastral:pure_star_shard").glow(true);
+    event.create("createastral:crushed_raw_gadolinite");
+    event.create("createastral:experience_ingot").glow(true);
+    event.create("createastral:stone_dust").displayName("Stone Dust");
     event.create("createastral:stone_small_dust").displayName("Small Pile of Stone Dust");
+    event.create("createastral:fragile_sheet");
+    event.create("createastral:broken_fragile_sheet");
+    event.create("createastral:fragile_rocket_fin");
+    event.create("createastral:broken_fragile_rocket_fin");
 
     event.create("createastral:golden_bowl").displayName("Golden Bowl");
     event
