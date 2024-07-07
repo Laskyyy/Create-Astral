@@ -16,7 +16,7 @@ onEvent("recipes", (event) => {
     event.smithing("farmersdelight:cooking_pot", "farmersdelight:skillet", "minecraft:water_bucket");
 
     // TR units
-    event.smithing("techreborn:crude_storage_unit", "#createastral:storage_unit", "createastral:t1_upgrade");
+    event.smithing("techreborn:crude_storage_unit", "techreborn:storage_buffer", "createastral:t1_upgrade");
 
     // prefix, tier
     [
@@ -24,10 +24,10 @@ onEvent("recipes", (event) => {
         ["advanced", 3],
         ["industrial", 4],
         ["quantum", 6],
-    ].forEach((arr) => {
+    ].forEach((arr, index) => {
         const prefix = arr[0];
         const tier = arr[1];
-        event.smithing(`techreborn:${prefix}_storage_unit`, "#createastral:storage_unit", `createastral:t${tier}_upgrade`);
-        event.smithing(`techreborn:${prefix}_tank_unit`, "#createastral:tank_unit", `createastral:t${tier}_upgrade`);
+        event.smithing(`techreborn:${prefix}_storage_unit`, "#createastral:storage_unit_" + index, `createastral:t${tier}_upgrade`);
+        event.smithing(`techreborn:${prefix}_tank_unit`, "#createastral:tank_unit_" + index, `createastral:t${tier}_upgrade`);
     });
 });

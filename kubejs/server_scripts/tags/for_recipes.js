@@ -6,8 +6,9 @@ onEvent("item.tags", (event) => {
         "techreborn:advanced_storage_unit",
         "techreborn:industrial_storage_unit",
         "techreborn:quantum_storage_unit"
-    ].forEach((item) => {
-        event.add("createastral:storage_unit", item);
+    ].forEach((item, index) => {
+        for (let i = 5; i >= index; i--)
+            event.add("createastral:storage_unit_" + i, item);
     });
 
     [
@@ -16,7 +17,8 @@ onEvent("item.tags", (event) => {
         "techreborn:advanced_tank_unit",
         "techreborn:industrial_tank_unit",
         "techreborn:quantum_tank_unit"
-    ].forEach((item) => {
-        event.add("createastral:tank_unit", item);
+    ].forEach((item, index) => {
+        for (let i = 5; i >= index; i--)
+            event.add("createastral:tank_unit_" + i, item);
     });
 });
