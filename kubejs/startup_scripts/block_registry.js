@@ -140,6 +140,9 @@ onEvent("block.registry", (event) => {
         .hardness(4)
         .tagBlock("minecraft:mineable/pickaxe");
 
+    event.create("createastral:slime_furnace", "custommachinery").machine("custommachinery:slime_furnace")
+        .material("stone");
+
     event
         .create("doodads:asphalt_slab", "slab")
         .material("stone")
@@ -153,4 +156,5 @@ onEvent("block.registry", (event) => {
         .hardness(4)
         .tagBlock("minecraft:mineable/pickaxe")
         .textureAll("doodads:block/asphalt");
+
 });

@@ -1,0 +1,26 @@
+{
+  "name": "Slime Furnace",
+  "appearance": {
+    "block": "techreborn:grinder",
+    "running": {
+      "block": "minecraft:stone",
+      "lightlevel": 15
+    }
+  },
+  "components" : [
+    {
+      "type": "custommachinery:item",
+      "id": "fuel",
+      "filter": ["#c:slimeballs"],
+      "whitelist": true,
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:contraption",
+      "config": {
+        "default": "none",
+        "top": "output"
+      }
+    }
+  ]
+}
