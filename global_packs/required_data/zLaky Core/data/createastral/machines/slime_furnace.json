@@ -1,9 +1,9 @@
 {
   "name": "Slime Furnace",
   "appearance": {
-    "block": "techreborn:grinder",
+    "block": "createastral:slime_furnace_dummy",
     "running": {
-      "block": "minecraft:stone",
+      "block": "createastral:slime_furnace_on_dummy",
       "lightlevel": 15
     }
   },
@@ -11,7 +11,7 @@
     {
       "type": "custommachinery:item",
       "id": "fuel",
-      "filter": ["#c:slimeballs"],
+      "filter": ["#c:slimeballs", "#tconstruct:slime_block"],
       "whitelist": true,
       "mode": "input"
     },

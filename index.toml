@@ -4010,11 +4010,15 @@ hash = "4dc3d30c821eebe2c956f2b15c92ca79edb77586e670c6afcef2e8ca9c2dd0ed"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/machines/slime_furnace.json"
-hash = "e8e79e5a5cb8fa09629a3dda06d12ae32b5c6fbf9d0602564bf0119cee104705"
+hash = "e57563ad51876cbc7082e2b9ba8db53e0301ddf3afac316064877380f70fe49d"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/machines/stone_growth_chamber.json"
 hash = "56616d6b7fa3cbc3be14817f69ac2f77e8b5eba225534aeec1728316ed4ef56d"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/createastral/machines/washer.json"
+hash = "66ec6942ac69cbe1f4b8c39faedb26b67d80e63525c86b39c85a5f0b57180e82"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/potato_cannon_projectile_types/bebe.json"
@@ -12858,7 +12862,7 @@ hash = "b817eff5858866c2e459a6d02dd1fb4ac9d4d57fc96b9a4fb000c8522b7aedf0"
 
 [[files]]
 file = "kubejs/server_scripts/machines.js"
-hash = "34569baf9d6a68fe215af62814f34d2574b705abca063a3ba6ec3d01588e2ed7"
+hash = "5c95f6a17ec4770579044ead268848c96dbc804b35bb76840c0303563c362566"
 
 [[files]]
 file = "kubejs/server_scripts/packing.js"
@@ -12914,7 +12918,7 @@ hash = "549d73b4a709fe237a79fc99966e78c95d40e7613d0e10aca74183c65d8c6262"
 
 [[files]]
 file = "kubejs/startup_scripts/block_registry.js"
-hash = "01b7ce71278954ee73603dd46138c05e4bc681ccc5209e8af440d6a8253b0ca1"
+hash = "1d3945f8479977ded301b0d69f2b25d3fb22a4f2454ba2c3b2c973d62bbaec4f"
 
 [[files]]
 file = "kubejs/startup_scripts/fluid_registry.js"
@@ -13195,6 +13199,11 @@ metafile = true
 [[files]]
 file = "mods/cull-less-leaves.pw.toml"
 hash = "96d8c172e1c00b5526bc5cacc6a63a1847b118fafbaa2d580e12177d08803086"
+metafile = true
+
+[[files]]
+file = "mods/custom-machinery-create.pw.toml"
+hash = "8eeebfaf701d6190798861dd18d190b9df1f6a8486e4b5fcac801fec57746fd3"
 metafile = true
 
 [[files]]
@@ -27402,10 +27411,6 @@ file = "resources/createastral/models/item/t6_upgrade.json"
 hash = "bd257d664dbfd4bc6caf9b4e3f6275732ef5a14ee609e528eadf553972f5329e"
 
 [[files]]
-file = "resources/createastral/models/machine/slime_furnace.json"
-hash = "63ec681554250fd0ca460f53a6947a78e228f43db36674c5091c999e057174e2"
-
-[[files]]
 file = "resources/createastral/textures/block/andesite_alloy_block.png"
 hash = "eeffe4d36960281231515ef6be16d6d309429b1f8dd0189401c99c506f9b56b6"
 
@@ -27462,8 +27467,40 @@ file = "resources/createastral/textures/block/shimmering_stone_e.png"
 hash = "15695df10a565ab79c3e62feb24d89afd2c2ebbadd2e1f99f068b64839c2979b"
 
 [[files]]
+file = "resources/createastral/textures/block/slime_furnace_bottom.png"
+hash = "7b1ef188eb818d7398b995a91c7826f764975eae0467c417b6abde2045bb9c5d"
+
+[[files]]
 file = "resources/createastral/textures/block/slime_furnace_front.png"
-hash = "977cb85ae04c6cde3b28fa9a4aac74fcdf79f824f88c3c74394723a2e399c307"
+hash = "2052f0f3cfc58e6e05fac8802b2b1b49b64e28c00e4d6c8560ee3c2e327143cb"
+
+[[files]]
+file = "resources/createastral/textures/block/slime_furnace_front_on.png"
+hash = "da09735a266a5e551942da0e12c81bd13f9fb32e75ef8ba2f511f62b7d8e8d0d"
+
+[[files]]
+file = "resources/createastral/textures/block/slime_furnace_on_bottom.png"
+hash = "93209b5dd26cb90b794abcc0f517cc817d8ecdede0fcc150ce2e49bf3e5ce666"
+
+[[files]]
+file = "resources/createastral/textures/block/slime_furnace_on_bottom.png.mcmeta"
+hash = "54bfbbf9feea426a6f12c64e0cdce9e911a9c9b8e157a2ab401a6036523c5fed"
+
+[[files]]
+file = "resources/createastral/textures/block/slime_furnace_on_side.png"
+hash = "5398fe73b5eb280151ff5eb5f6c337950f99ab1382cbb452e8fdf7cbafabbb85"
+
+[[files]]
+file = "resources/createastral/textures/block/slime_furnace_on_side.png.mcmeta"
+hash = "54bfbbf9feea426a6f12c64e0cdce9e911a9c9b8e157a2ab401a6036523c5fed"
+
+[[files]]
+file = "resources/createastral/textures/block/slime_furnace_on_top.png"
+hash = "857b71fa03667e33912d71926b8eeaf5e06ca9cc528b44fed09796b97ee3c86f"
+
+[[files]]
+file = "resources/createastral/textures/block/slime_furnace_on_top.png.mcmeta"
+hash = "54bfbbf9feea426a6f12c64e0cdce9e911a9c9b8e157a2ab401a6036523c5fed"
 
 [[files]]
 file = "resources/createastral/textures/block/slime_furnace_side.png"
@@ -27471,7 +27508,7 @@ hash = "2b4444a5b2ea365cf3e5cc186fcc738cb8f9f0a31dd743a7578ad653bf4d0d6c"
 
 [[files]]
 file = "resources/createastral/textures/block/slime_furnace_top.png"
-hash = "19c2f59eb40bc88e2484d17f09b9f985ba8d930941b6392378f2f05790dce40f"
+hash = "d44dd5067ccfd91a07d43334e38487f61e93f88dde863909f83823de5caa1b13"
 
 [[files]]
 file = "resources/createastral/textures/block/stone_growth_chamber.png"
@@ -27492,6 +27529,14 @@ hash = "06b2ef1755a095e5a5f139c15b6782f90c64f4032719b94d409ba71a570bb254"
 [[files]]
 file = "resources/createastral/textures/block/voidtouched_compound.png"
 hash = "d32c910abe4813e1c9a0a106696df6a4ef876e273325a375e89113b0076ea508"
+
+[[files]]
+file = "resources/createastral/textures/block/washer.png"
+hash = "ed48d321e8797713e2cf9270de5388e33ad518063f0ac34247a474b4751e52b7"
+
+[[files]]
+file = "resources/createastral/textures/block/washer_shaft.png"
+hash = "9ca0c24db6e399e6c8cb0ed8cff501c4587b51607d6d42c45b7c124c49ee9202"
 
 [[files]]
 file = "resources/createastral/textures/item/HESPERYD (WHITE).png"

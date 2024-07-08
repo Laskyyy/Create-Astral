@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/orientable",
-  "textures": {
-    "front": "createastral:block/slime_furnace_front",
-    "side": "createastral:block/slime_furnace_side",
-    "top": "createastral:block/slime_furnace_top"
-  }
-}

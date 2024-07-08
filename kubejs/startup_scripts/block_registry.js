@@ -140,8 +140,23 @@ onEvent("block.registry", (event) => {
         .hardness(4)
         .tagBlock("minecraft:mineable/pickaxe");
 
-    event.create("createastral:slime_furnace", "custommachinery").machine("custommachinery:slime_furnace")
-        .material("stone");
+    event.create("createastral:slime_furnace_dummy")
+        .textureAll("createastral:block/slime_furnace_side")
+        .texture("up", "createastral:block/slime_furnace_top")
+        .texture("down", "createastral:block/slime_furnace_bottom")
+
+    event.create("createastral:slime_furnace_on_dummy")
+        .textureAll("createastral:block/slime_furnace_on_side")
+        .texture("up", "createastral:block/slime_furnace_on_top")
+        .texture("down", "createastral:block/slime_furnace_on_bottom")
+
+
+    event.create("createastral:washer_dummy")
+        .textureAll("createastral:block/washer")
+        .texture("up", "create:block/railway_casing")
+        .texture("down", "create:block/railway_casing")
+        .texture("north", "createastral:block/washer_shaft")
+
 
     event
         .create("doodads:asphalt_slab", "slab")
