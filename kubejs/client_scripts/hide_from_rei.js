@@ -6,6 +6,7 @@ function addTinkerTableVariants(list, item, chipped_block, max_num) {
 
 onEvent("rei.hide.items", (event) => {
     var HIDDEN_ITEMS = [
+        "ae2:silicon",
         "extended_drawers:t1_upgrade",
         "extended_drawers:t2_upgrade",
         "extended_drawers:t3_upgrade",
@@ -472,22 +473,6 @@ onEvent("rei.hide.items", (event) => {
         "techreborn:advanced_alloy_storage_block_stairs",
         "techreborn:advanced_alloy_storage_block_wall",
         "techreborn:advanced_circuit",
-        "techreborn:aluminum_dust",
-        "techreborn:aluminum_ingot",
-        "techreborn:aluminum_nugget",
-        "techreborn:aluminum_plate",
-        "techreborn:aluminum_storage_block",
-        "techreborn:aluminum_storage_block_slab",
-        "techreborn:aluminum_storage_block_stairs",
-        "techreborn:aluminum_storage_block_wall",
-        "techreborn:brass_dust",
-        "techreborn:brass_ingot",
-        "techreborn:brass_nugget",
-        "techreborn:brass_plate",
-        "techreborn:brass_storage_block",
-        "techreborn:brass_storage_block_slab",
-        "techreborn:brass_storage_block_stairs",
-        "techreborn:brass_storage_block_wall",
         Item.of("techreborn:bronze_axe", "{Damage:0}"),
         Item.of("techreborn:bronze_boots", "{Damage:0}"),
         Item.of("techreborn:bronze_chestplate", "{Damage:0}"),
@@ -513,15 +498,6 @@ onEvent("rei.hide.items", (event) => {
         Item.of("techreborn:cell", '{fluid:"tconstruct:molten_refined_obsidian"}'),
         Item.of("techreborn:cell", '{fluid:"tconstruct:molten_signalum"}'),
         Item.of("techreborn:cell", '{fluid:"tconstruct:molten_soulsteel"}'),
-        "techreborn:chrome_dust",
-        "techreborn:chrome_ingot",
-        "techreborn:chrome_nugget",
-        "techreborn:chrome_plate",
-        "techreborn:chrome_small_dust",
-        "techreborn:chrome_storage_block",
-        "techreborn:chrome_storage_block_slab",
-        "techreborn:chrome_storage_block_stairs",
-        "techreborn:chrome_storage_block_wall",
         "techreborn:copper_nugget",
         "techreborn:data_storage_core",
         "techreborn:energy_crystal",
@@ -553,7 +529,6 @@ onEvent("rei.hide.items", (event) => {
         Item.of("techreborn:peridot_pickaxe", "{Damage:0}"),
         Item.of("techreborn:peridot_spade", "{Damage:0}"),
         Item.of("techreborn:peridot_sword", "{Damage:0}"),
-        "techreborn:platinum_small_dust",
         "techreborn:raw_tungsten",
         "techreborn:refined_iron_ingot",
         "techreborn:refined_iron_nugget",
@@ -595,41 +570,28 @@ onEvent("rei.hide.items", (event) => {
         "techreborn:steel_storage_block_slab",
         "techreborn:steel_storage_block_stairs",
         "techreborn:steel_storage_block_wall",
-        "techreborn:titanium_dust",
-        "techreborn:titanium_ingot",
-        "techreborn:titanium_nugget",
-        "techreborn:titanium_plate",
-        "techreborn:titanium_small_dust",
-        "techreborn:titanium_storage_block",
-        "techreborn:titanium_storage_block_slab",
-        "techreborn:titanium_storage_block_stairs",
-        "techreborn:titanium_storage_block_wall",
-        "techreborn:tungsten_ingot",
-        "techreborn:tungsten_nugget",
-        "techreborn:tungsten_plate",
-        "techreborn:tungsten_small_dust",
-        "techreborn:tungsten_storage_block",
-        "techreborn:tungsten_storage_block_slab",
-        "techreborn:tungsten_storage_block_stairs",
-        "techreborn:tungsten_storage_block_wall",
-        "techreborn:tungstensteel_ingot",
-        "techreborn:tungstensteel_nugget",
-        "techreborn:tungstensteel_plate",
-        "techreborn:tungstensteel_storage_block",
-        "techreborn:tungstensteel_storage_block_slab",
-        "techreborn:tungstensteel_storage_block_stairs",
-        "techreborn:tungstensteel_storage_block_wall",
-        "techreborn:zinc_ingot",
-        "techreborn:zinc_nugget",
-        "techreborn:zinc_plate",
-        "techreborn:zinc_storage_block",
-        "techreborn:zinc_storage_block_slab",
-        "techreborn:zinc_storage_block_stairs",
-        "techreborn:zinc_storage_block_wall",
         "techreborn:neutron_reflector",
         "techreborn:thick_neturon_reflector",
         "techreborn:iridium_neutron_reflector",
         "techreborn:mixed_metal_ingot",
+        "techreborn:glowstone_small_dust",
+        "techreborn:redstone_small_dust",
+        "techreborn:bauxite_ore",
+        "techreborn:cinnabar_ore",
+        "techreborn:galena_ore",
+        "techreborn:pyrite_ore",
+        "techreborn:sheldonite_ore",
+        "techreborn:sodalite_ore",
+        "techreborn:sphalerite_ore",
+        "techreborn:tungsten_ore",
+        "techreborn:deepslate_bauxite_ore",
+        "techreborn:deepslate_sheldonite_ore",
+        "techreborn:deepslate_sodalite_ore",
+        "techreborn:deepslate_tungsten_ore",
+        "techreborn:raw_tungsten_storage_block",
+        "techreborn:raw_tungsten_storage_block_stairs",
+        "techreborn:raw_tungsten_storage_block_slab",
+        "techreborn:raw_tungsten_storage_block_wall",
         "createbigcannons:molten_bronze_bucket",
         "createbigcannons:molten_steel_bucket",
         "createbigcannons:molten_nethersteel_bucket",
@@ -652,6 +614,106 @@ onEvent("rei.hide.items", (event) => {
     addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:tinker_station", "crimson_planks", 41);
     addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:tinker_station", "warped_planks", 41);
 
+    const gems = [
+        "peridot",
+        "red_garnet",
+        "ruby",
+        "sapphire",
+        "yellow_garnet"
+    ]
+    gems.forEach((gem) => {
+        HIDDEN_ITEMS.push(`techreborn:${gem}_ore`);
+        HIDDEN_ITEMS.push(`techreborn:deepslate_${gem}_ore`);
+        HIDDEN_ITEMS.push(`techreborn:${gem}_storage_block`);
+        HIDDEN_ITEMS.push(`techreborn:${gem}_storage_block_stairs`);
+        HIDDEN_ITEMS.push(`techreborn:${gem}_storage_block_slab`);
+        HIDDEN_ITEMS.push(`techreborn:${gem}_storage_block_wall`);
+        HIDDEN_ITEMS.push(`techreborn:${gem}_gem`);
+        HIDDEN_ITEMS.push(`techreborn:${gem}_dust`);
+        HIDDEN_ITEMS.push(`techreborn:${gem}_small_dust`);
+    });
+
+    const ingots = [
+        "tungstensteel",
+        "chrome",
+        "titanium",
+        "nickel",
+        "refined_iron",
+        "aluminum",
+        "tungsten",
+        "platinum",
+        "brass",
+        "zinc"
+    ]
+    ingots.forEach((ingot) => {
+        HIDDEN_ITEMS.push(`techreborn:${ingot}_tiny_dust`);
+        HIDDEN_ITEMS.push(`techreborn:${ingot}_dust`);
+        HIDDEN_ITEMS.push(`techreborn:${ingot}_ingot`);
+        HIDDEN_ITEMS.push(`techreborn:${ingot}_nugget`);
+        HIDDEN_ITEMS.push(`techreborn:${ingot}_plate`);
+        HIDDEN_ITEMS.push(`techreborn:${ingot}_small_dust`);
+        HIDDEN_ITEMS.push(`techreborn:${ingot}_storage_block`);
+        HIDDEN_ITEMS.push(`techreborn:${ingot}_storage_block_slab`);
+        HIDDEN_ITEMS.push(`techreborn:${ingot}_storage_block_stairs`);
+        HIDDEN_ITEMS.push(`techreborn:${ingot}_storage_block_wall`);
+    });
+
+    // format, dust name, true if used for anything (keep dust, but not tiny dust)
+    const dusts = [
+        ["almandine", false],
+        ["amethyst", true],
+        ["andesite", true],
+        ["andradite", false],
+        ["ashes", true],
+        ["basalt", true],
+        ["bauxite", false],
+        ["bronze", false],
+        ["calcite", true],
+        ["charcoal", true],
+        ["cinnabar", false],
+        ["clay", true],
+        ["coal", true],
+        ["dark_ashes", true],
+        ["diamond", true],
+        ["diorite", true],
+        ["electrum", true],
+        ["emerald", false],
+        ["ender_eye", false],
+        ["ender_pearl", false], // ae2 ender dust replaces it
+        ["endstone", false],
+        ["flint", true],
+        ["galena", true],
+        ["granite", true],
+        ["grossular", false],
+        ["invar", false],
+        ["lazurite", true],
+        ["magnesium", false],
+        ["manganese", false],
+        ["marble", false],
+        ["netherrack", true],
+        ["nickel", false],
+        ["obsidian", false], // replaced by create obsidian dust
+        ["olivine", true],
+        ["phosphorous", false],
+        ["pyrite", false],
+        ["pyrope", false],
+        ["quartz", false],
+        ["saltpeter", true],
+        ["saw", true],
+        ["sodalite", false],
+        ["spessartine", false],
+        ["sphalerite", false],
+        ["steel", true],
+        ["sulfur", true],
+        ["uvarovite", false],
+    ]
+    dusts.forEach((dust) => {
+        if (!dust[1]){
+            HIDDEN_ITEMS.push(`techreborn:${dust[0]}_dust`);
+        }
+        HIDDEN_ITEMS.push(`techreborn:${dust[0]}_small_dust`);
+    });
+
 
     const plates = [
         "carbon",
@@ -665,10 +727,8 @@ onEvent("rei.hide.items", (event) => {
         "lapis",
         "lazurite",
         "magnalium",
-        "nickel",
         "obsidian",
         "peridot",
-        "platinum",
         "quartz",
         "red_garnet",
         "redstone",

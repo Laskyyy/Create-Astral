@@ -1,3 +1,5 @@
+// constants
+
 const BUCKET = 81000;
 const INGOT = 9000;
 const NUGGET = 1000;
@@ -11,8 +13,6 @@ settings.logRemovedRecipes = false;
 settings.logSkippedRecipes = false;
 settings.logErroringRecipes = false;
 
-console.info("Welcome to white space.");
-
 onEvent("tags.blocks", (event) => {
     event.remove("minecraft:needs_iron_tool", "minecraft:diamond_ore");
     event.remove("minecraft:needs_iron_tool", "minecraft:deepslate_diamond_ore");
@@ -25,9 +25,9 @@ onEvent("item.tags", (event) => {
     event.add("c:stripped_logs", "vinery:stripped_old_cherry_log");
     event.add("c:stripped_logs", "techreborn:rubber_log_stripped");
     event.add("c:stripped_logs", "ad_astra:stripped_glacian_log");
-});
 
-// constants
+    event.add("c:plates/tin", "techreborn:tin_plate");
+});
 
 // Farmer's Delight cutting board changes
 function farmersDelightCuttingChanges(event) {
@@ -779,6 +779,8 @@ onEvent("recipes", (event) => {
     event.blasting("create:andesite_alloy", "createastral:andesite_compound");
     event.blasting("tconstruct:scorched_basin", "tconstruct:seared_basin");
     event.blasting("tconstruct:scorched_table", "tconstruct:seared_table");
+    event.smoking("campanion:cooked_marshmallow", "campanion:marshmallow");
+    event.smoking("campanion:blackened_marshmallow", "campanion:cooked_marshmallow");
 
 
 
@@ -1164,29 +1166,6 @@ onEvent("recipes", (event) => {
         output: "minecraft:redstone",
     });
     event.replaceInput("ae2:sky_stone_block", "ad_astra:sky_stone");
-    event.replaceInput("ae2:sky_stone_block", "ad_astra:sky_stone");
-
-    event.custom({
-        type: "techreborn:centrifuge",
-        power: 8,
-        time: 500,
-        ingredients: [
-            {
-                item: "farmersdelight:rich_soil",
-                count: 2,
-            },
-        ],
-        results: [
-            {
-                item: "minecraft:coarse_dirt",
-                count: 2,
-            },
-            {
-                item: "techreborn:saltpeter_dust",
-                count: 4,
-            },
-        ],
-    });
 
     event.shapeless(Item.of("techreborn:nitro_diesel_bucket"), ["ad_astra:fuel_bucket"]);
     event.shapeless(Item.of("techreborn:oil_bucket"), ["ad_astra:oil_bucket"]);

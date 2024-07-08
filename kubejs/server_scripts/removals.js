@@ -17,6 +17,7 @@ onEvent("recipes", (event) => {
         { output: "techreborn:quantum_tank_unit"},
 
         { output: "techreborn:chunk_loader" },
+        {output: "techreborn:pyrite_dust"},
         { output: "ae2:spatial_anchor" },
         { output: "techreborn:industrial_electrolyzer" },
         { output: "techreborn:industrial_sawmill" },
@@ -528,6 +529,8 @@ onEvent("recipes", (event) => {
         { output: "minecraft:gold_nugget", input: "minecraft:soul_sand" },
         { output: "minecraft:gravel", input: "techreborn:granite_dust" },
         { output: "minecraft:gold_nugget", input: "minecraft:soul_soil" },
+        {output: "ae2:silicon"},
+        {id: "techreborn:centrifuge/redstone" }, // remove other version of centrifuging certus quartz
         { input: "minecraft:crying_obsidian" },
         {
             input: "minecraft:copper_block",
@@ -598,6 +601,8 @@ onEvent("recipes", (event) => {
         "platinum",
         "brass",
         "zinc",
+        "nickel",
+        "platinum"
     ];
 
     metal.forEach((metal) => {
@@ -610,5 +615,62 @@ onEvent("recipes", (event) => {
         event.remove({ output: `techreborn:${metal}_dust` });
         event.remove({ output: `techreborn:${metal}_small_dust` });
         event.remove({ output: `techreborn:${metal}_nugget` });
+    });
+
+    const dusts = [
+        ["almandine", false],
+        ["amethyst", true],
+        ["andesite", true],
+        ["andradite", false],
+        ["ashes", true],
+        ["basalt", true],
+        ["bauxite", false],
+        ["bronze", false],
+        ["calcite", true],
+        ["charcoal", true],
+        ["cinnabar", false],
+        ["clay", true],
+        ["coal", true],
+        ["dark_ashes", true],
+        ["diamond", true],
+        ["diorite", true],
+        ["electrum", true],
+        ["emerald", false],
+        ["ender_eye", false],
+        ["ender_pearl", false], // ae2 ender dust replaces it
+        ["endstone", false],
+        ["flint", true],
+        ["galena", true],
+        ["granite", true],
+        ["grossular", false],
+        ["invar", false],
+        ["lazurite", true],
+        ["magnesium", false],
+        ["manganese", false],
+        ["marble", false],
+        ["netherrack", true],
+        ["nickel", false],
+        ["obsidian", false],
+        ["olivine", true],
+        ["phosphorous", false],
+        ["pyrite", false],
+        ["pyrope", false],
+        ["quartz", false],
+        ["saltpeter", true],
+        ["saw", true],
+        ["sodalite", false],
+        ["spessartine", false],
+        ["sphalerite", false],
+        ["steel", true],
+        ["sulfur", true],
+        ["uvarovite", false],
+        ["glowstone", true],
+        ["redstone", true]
+    ]
+    dusts.forEach((dust) => {
+        if (!dust[1]) {
+            event.remove({output: `techreborn:${dust[0]}_dust`});
+        }
+        event.remove({output: `techreborn:${dust[0]}_small_dust`});
     });
 });
