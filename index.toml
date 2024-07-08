@@ -914,7 +914,7 @@ hash = "a0c5f14ef5df4608779ab368154bb8dbc64a03a3b145e3a5853b23708206d217"
 
 [[files]]
 file = "config/techreborn/machines.json"
-hash = "07922635addffb53175656b3456a584b1923312f64cbd68a53c39631d04f448a"
+hash = "eebcbc795601e339fbed35622e4926c24cedfd21bab553883b20c13636dbb626"
 
 [[files]]
 file = "config/techreborn/misc.json"
@@ -938,7 +938,7 @@ hash = "52cf62798fcdeb73fb5a4ec6fe6013e9ba8e23221516f8f83b7204fcf159ed07"
 
 [[files]]
 file = "config/travelersbackpack.json5"
-hash = "c2951c977bffa8f99fa444a798f48fd0c855368f5bc4fc295fac64cea859dd1b"
+hash = "8295717e8ac0dffff4b6e3745268a2abc8ff6a4084953655690b11bdb2b24ec6"
 
 [[files]]
 file = "config/utilities.json"
@@ -12790,7 +12790,7 @@ hash = "02d6feb3afe1d9c96e137f8baaa71de982f1af0a2b37fbcba73f34ee59ebbd4d"
 
 [[files]]
 file = "kubejs/client_scripts/hide_from_rei.js"
-hash = "afddaf3509af2eb51f918558517d6495779c7cd410f999e8926aee2006ac0405"
+hash = "d23e2f9b5a481e31a05c769038ec02d4569b3b9ef42d81fe48f5f6f2519b8c04"
 
 [[files]]
 file = "kubejs/client_scripts/script.js"
@@ -12822,7 +12822,7 @@ hash = "7936a3fb149726799bcf20425fe3d66e71feb3287e77f9e7a8148f61db7389b7"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
-hash = "27f1c550a26211637c9f41139520d9322dead9c380249ba733d7908c25e826f6"
+hash = "ddc17ad0880d0dae35304341094c03d5e5ffa2bb83ab8a004f7d8132a37c0732"
 
 [[files]]
 file = "kubejs/server_scripts/createaddons.js"
@@ -12858,15 +12858,15 @@ hash = "1becce5642c6ca74f664127d62e3039cec9ac69a95b0e0f650113cd6fb56d393"
 
 [[files]]
 file = "kubejs/server_scripts/removals.js"
-hash = "3fe35746f5648e76fa3d3d6af1a1e1c3f82b65b6e2a828933c6c47a75ee89029"
+hash = "1c292ae98c4ca2011b5ac5b26f1ec841c75ff6fd792411cb2e3e9356005011b6"
 
 [[files]]
 file = "kubejs/server_scripts/replacements.js"
-hash = "21cbb015643eaa8c2575b36815dde0dfc21c947da4c7fb9c7b9cbc6aeb200edd"
+hash = "f30b524bf159f687d84e8a00712a9a33678feb83f5e563701efcd3fbdc4120b7"
 
 [[files]]
 file = "kubejs/server_scripts/resourcegen.js"
-hash = "3c58039c68f31d95bef9aa7edd667eb509848fc3ba397c124b6513597a15f2a4"
+hash = "6971490558ae544cef1d958c59b11c4fddcc14daead2df07b7a72e9a39619185"
 
 [[files]]
 file = "kubejs/server_scripts/sawing.js"
@@ -12874,11 +12874,23 @@ hash = "b14d492175c12c237a35159c6621010426d5249fd9720b100ac2e73d8d35fb7b"
 
 [[files]]
 file = "kubejs/server_scripts/server.js"
-hash = "9765bbbf2ceb1a0278fd53a8c4290526c28c484358a3cf876c7f0a2779b5ea6e"
+hash = "84dca8f46dbded97e498e658e6c9af43c1dac6ebdcec3022c4771e2b83a4ce06"
 
 [[files]]
 file = "kubejs/server_scripts/sheets.js"
-hash = "a35dfa127d0c0f47ff1c923d2293c19b619a1953476d64b4f01c637f1b850399"
+hash = "377cbd329e3fe1f40edd29293b12efb379f0e1027d7482b04c54b93c8b0657c7"
+
+[[files]]
+file = "kubejs/server_scripts/smithing.js"
+hash = "5240a76f5aeb7e51e0ecbbc98a404be5cc5228d69be5f07cc05b789efc2bd0c5"
+
+[[files]]
+file = "kubejs/server_scripts/tags/backpack.js"
+hash = "c6ac962dcbe0df6b629108be12d9b0ef5c7ec7d2fcfccdf7c53a30e89c8ac266"
+
+[[files]]
+file = "kubejs/server_scripts/tags/for_recipes.js"
+hash = "75551ae9dc01ec86fdd48cc74a7b4e2d4e0fe3365bc183e2d57115f4a975247a"
 
 [[files]]
 file = "kubejs/server_scripts/tags/graveReplaceBlacklist.js"
@@ -12889,12 +12901,16 @@ file = "kubejs/server_scripts/tags/logs.js"
 hash = "3d0d14d9f4dc930b87c4a49be8411c63b9a6e871acef359b8d5aec0098bb310a"
 
 [[files]]
+file = "kubejs/server_scripts/tags/wrench.js"
+hash = "393073dffdcfaa332d714a804f636cd5bc5e1725228f7f7c580097b305896bf4"
+
+[[files]]
 file = "kubejs/server_scripts/tconstruct.js"
-hash = "26f232f1e48ea63ba6aa33307c17ef7303078dbc1b73a8464c3d8730afb2c74c"
+hash = "23888385d851378f95a2770de7f0f9b69f903ee1b2790e592d0e2f771dc0212a"
 
 [[files]]
 file = "kubejs/server_scripts/techreborn.js"
-hash = "d877cf3fbb877c392e2c73f992d9304a94d0d709c5ff36d195d40e8b2ecfb346"
+hash = "c7910d5532ce25fa76117d5044556fb1b321b4a41b75d47f089e0165db937d98"
 
 [[files]]
 file = "kubejs/server_scripts/vinery.js"
@@ -12922,7 +12938,7 @@ hash = "abe1196ba286849f979b23de8060172236deb50a0378ac659082a795595121fd"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
-hash = "35f784bc33012683f54ecab15017d1cf6b1b266ee7487b1ccadb5463b991e73c"
+hash = "d370c4ee46f077c413fdcc8c50546a1c9d5a966a0ba12c4061c036158c534bc0"
 
 [[files]]
 file = "kubejs/startup_scripts/worldgen.js"
@@ -27974,6 +27990,30 @@ file = "resources/dustrial_decor/lang/fr_fr.json"
 hash = "24c4df8d42c2eef4d29d1fd7cb64ad2508a5892dd105b4014a3eb15110d31ca1"
 
 [[files]]
+file = "resources/extended_drawers/models/block/connector.json"
+hash = "b47c7e96b6021b20528814eaa5a917e26eaadeacf84bf598e31f023c257e87d2"
+
+[[files]]
+file = "resources/extended_drawers/textures/block/connector.png"
+hash = "ad3fe2225fbe33b4f63615d52d8ab75a912bcc52418e0a5549207f8ad6147c7f"
+
+[[files]]
+file = "resources/extended_drawers/textures/block/controller.png"
+hash = "14a49028327c57c027da81bd2ef1bcbb6c14497a8d013c94faecd3202b45bdc2"
+
+[[files]]
+file = "resources/extended_drawers/textures/block/drawer_side.png"
+hash = "24bc05651df188a8a93458e599c2b6b130f728ed3313d179bbfd6a5afead6e2c"
+
+[[files]]
+file = "resources/extended_drawers/textures/block/shadow_drawer.png"
+hash = "409644c0d489211ec994d2d4dfdbeeb5c646a6eaad1c6b15c3835d316b8d348b"
+
+[[files]]
+file = "resources/extended_drawers/textures/block/shadow_drawer_side.png"
+hash = "02ff5c31f764d84af1b6544ab1f64f3cba2ef86f590b577649e60626617ae117"
+
+[[files]]
 file = "resources/farmersdelight/lang/en_us.json"
 hash = "fc7c5f14c3566b45a7f93c9670462c259f04b0ef949ce9180a7b8a7e3b808882"
 
@@ -28383,7 +28423,7 @@ hash = "4c4c77bd4024ab8acc9bd457985dda8c6728a697e9859264577b0fc446ca7533"
 
 [[files]]
 file = "resources/minecraft/textures/gui/widgets.png"
-hash = "0de4497d372b4ada90eaca2969a21b93fd719686ccd577396d9c44fd2854c94e"
+hash = "9a5840cbd045a5258ca28131d6d8a02f01f61659f217b22782fd062d861e3298"
 
 [[files]]
 file = "resources/minecraft/textures/item/arrow.png"

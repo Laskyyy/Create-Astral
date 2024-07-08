@@ -210,3 +210,10 @@ registerUpgrade("createastral", "t4_upgrade", 64);
 registerUpgrade("createastral", "t5_upgrade", 256);
 registerUpgrade("createastral", "t6_upgrade", 1048576); // 2^20x, this makes the regular drawer store 2^31 items
 ITEMS.register();
+
+// make create wrench work as tech reborn wrench
+
+const $ToolManager = java("reborncore.api.ToolManager");
+const $GenericWrenchHelper = java("reborncore.common.util.GenericWrenchHelper");
+
+$ToolManager.INSTANCE.customToolHandlerList.add(new $GenericWrenchHelper(new $ResourceLocation("create:wrench"), true));

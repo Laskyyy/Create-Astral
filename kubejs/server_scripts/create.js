@@ -2114,6 +2114,11 @@ function splashingRecipes(event) {
             input: "ad_astra:mars_sand",
             outputs: [["techreborn:lead_nugget", 0.25]],
         },
+        {
+            // wash shulker box to remove the color
+            input: "#c:shulker_boxes",
+            outputs: [["minecraft:shulker_box", 1]]
+        },
 
         // ae2 cable washing made easy !!!
 
@@ -2417,19 +2422,6 @@ function mechanicalCraftingRecipes(event) {
                 F: "dustrial_decor:padded_block",
             },
         },
-
-        {
-            output: "extended_drawers:controller",
-            shape: [" E ", "ACA", "BDB", "ACA", " E "],
-            inputs: {
-                A: "ad_astra:desh_block",
-                B: "createastral:astral_conduit",
-                C: "create:redstone_link",
-                D: "create:linked_controller",
-                E: "tconstruct:cobalt_block",
-            },
-        },
-
         {
             output: "2x techreborn:fusion_coil",
             shape: ["CCCCC", "CBBBC", "CBDBC", "CBBBC", "CCCCC"],

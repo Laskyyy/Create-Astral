@@ -379,8 +379,6 @@ onEvent("recipes", (event) => {
     //Tinker's Construct Reworking (New fluids and recipes)
     //Tier 2 and 3 materials
 
-    event.smithing("createastral:bronze_ingot", "techreborn:tin_ingot", "minecraft:copper_ingot");
-    event.smithing("createastral:bronze_ingot", "minecraft:copper_ingot", "techreborn:tin_ingot");
 
     event.shaped("tconstruct:seared_fuel_tank", ["CCC", "BDB", "AAA"], {
         A: "tconstruct:seared_bricks",
@@ -598,7 +596,7 @@ onEvent("recipes", (event) => {
     });
 
     event.shaped("extended_drawers:upgrade_frame", ["AB", "BA"], {
-        A: "tconstruct:pattern",
+        A: ["tconstruct:pattern", "techreborn:wood_plate"],
         B: "create:andesite_alloy",
     });
 
@@ -654,10 +652,14 @@ onEvent("recipes", (event) => {
         C: "create:golden_sheet",
     });
 
-    event.shaped("2x extended_drawers:connector", ["CBC", "BAB", "CBC"], {
-        A: "extended_drawers:upgrade_frame",
-        B: "minecraft:stick",
-        C: "createaddition:copper_rod",
+    event.shaped("4x extended_drawers:connector", ["BBB", "BAB", "BBB"], {
+        A: "techreborn:tin_plate",
+        B: "techreborn:wood_plate",
+    });
+
+    event.shaped("minecraft:shulker_shell", ["BBB", "BAB", "BBB"], {
+        A: "minecraft:nautilus_shell",
+        B: "minecraft:popped_chorus_fruit",
     });
 
     event.shaped("3x create:cogwheel", ["AB"], {
@@ -780,22 +782,13 @@ onEvent("recipes", (event) => {
     event.smoking("campanion:cooked_marshmallow", "campanion:marshmallow");
     event.smoking("campanion:blackened_marshmallow", "campanion:cooked_marshmallow");
 
-    //SMITHING RADIANT STUFF
 
-    event.smithing("createastral:radiant_helmet", "createastral:steel_helmet", "create:refined_radiance");
-    event.smithing("createastral:radiant_chestplate", "createastral:steel_chestplate", "create:refined_radiance");
-    event.smithing("createastral:radiant_leggings", "createastral:steel_leggings", "create:refined_radiance");
-    event.smithing("createastral:radiant_boots", "createastral:steel_boots", "create:refined_radiance");
-    event.smithing("createastral:radiant_sword", "minecraft:netherite_sword", "create:refined_radiance");
-    event.smithing("createastral:radiant_axe", "minecraft:netherite_axe", "create:refined_radiance");
-    event.smithing("createastral:radiant_shovel", "minecraft:netherite_shovel", "create:refined_radiance");
-    event.smithing("createastral:radiant_pickaxe", "minecraft:netherite_pickaxe", "create:refined_radiance");
+
 
     event.smelting("minecraft:leather", "minecraft:rotten_flesh").xp(2.0);
     event.smelting("techreborn:tin_ingot", "create:crushed_raw_tin");
     event.smelting("techreborn:silver_ingot", "create:crushed_raw_silver");
     event.smelting("techreborn:lead_ingot", "create:crushed_raw_lead");
-    event.smithing("farmersdelight:cooking_pot", "farmersdelight:skillet", "minecraft:water_bucket");
 
     event.shaped("minecraft:experience_bottle", ["AAA", "ABA", "AAA"], {
         A: "create:experience_nugget",
