@@ -56,8 +56,6 @@ function crushingRecipes(event) {
 
     // Remove grinder calcite dust
 
-    const CRUSHING_ORE_BONUS_ORE_YIELD = 0.33;
-    const CRUSHING_ORE_BONUS_XP_CHUNKS = 0.33;
 
     // input: "Item"
     // outputs: [
@@ -346,128 +344,6 @@ function crushingRecipes(event) {
             }
         });
         event.recipes.createCrushing(cleanoutputs, recipe.input).processingTime(recipe.time ?? 200);
-    });
-
-    // Replace all techreborn ores to require the crushing wheel for dusts
-    [
-        "sapphire",
-        "bauxite",
-        "cinnabar",
-        "ruby",
-        "galena",
-        "peridot",
-        "sodalite",
-        "pyrite",
-        "cinnabar",
-        "sphalerite",
-    ].forEach((ore) => {
-        const nodeepslate = ["pyrite", "cinnabar", "sphalerite"];
-        event.remove({
-            type: "techreborn:grinder",
-            input: "techreborn:" + ore + "_ore",
-        });
-        if (!nodeepslate.includes(ore)) {
-            event.remove({
-                type: "techreborn:grinder",
-                input: "techreborn:deepslate_" + ore + "_ore",
-            });
-        }
-        event.recipes.createCrushing(
-            ["techreborn:" + ore + "_dust", Item.of("techreborn:" + ore + "_dust").withChance(0.5)],
-            "techreborn:" + ore + "_ore"
-        );
-        if (!nodeepslate.includes(ore)) {
-            event.recipes.createCrushing(
-                ["techreborn:" + ore + "_dust", Item.of("techreborn:" + ore + "_dust").withChance(0.5)],
-                "techreborn:deepslate_" + ore + "_ore"
-            );
-        }
-    });
-
-    // Replaces the ore blocks with crushing recipes to produce raw ore instead of grinder recipes
-    ["silver", "deepslate_silver", "tin", "deepslate_tin", "lead", "deepslate_lead"].forEach((ore) => {
-        event.remove({
-            type: "techreborn:grinder",
-            input: "techreborn:" + ore + "_ore",
-        });
-        event.recipes.createCrushing(
-            ["2x techreborn:raw_" + ore.replace("deepslate_", "")],
-            "techreborn:" + ore + "_ore"
-        );
-    });
-
-    // Crushable raw techreborn storage blocks
-    ["silver", "tin", "lead"].forEach((ore) => {
-        event.recipes.createCrushing(
-            ["9x create:crushed_" + ore.replace("deepslate_", "") + "_ore", "3x create:experience_nugget"],
-            "techreborn:raw_" + ore + "_storage_block"
-        );
-    });
-
-    // Crushed Ore Items
-    [
-        {
-            mod: "techreborn",
-            ores: [
-                {
-                    name: "tin",
-                    extra: Item.of("minecraft:iron_nugget").withChance(0.2),
-                },
-                { name: "silver", extra: "" },
-                {
-                    name: "lead",
-                    extra: Item.of("minecraft:coal").withChance(0.2),
-                },
-            ],
-        },
-        {
-            mod: "ad_astra",
-            ores: [
-                {
-                    name: "desh",
-                    extra: Item.of("techreborn:silver_nugget").withChance(0.2),
-                },
-                {
-                    name: "ostrum",
-                    extra: Item.of("techreborn:lead_nugget").withChance(0.2),
-                },
-                { name: "calorite", extra: "" },
-            ],
-        },
-        {
-            mod: "yttr",
-            ores: [
-                {
-                    name: "gadolinite",
-                    extra: Item.of("techreborn:silver_nugget").withChance(0.2),
-                },
-            ],
-        },
-        {
-            mod: "create",
-            ores: [{ name: "zinc", extra: "" }],
-        },
-        {
-            mod: "minecraft",
-            ores: [
-                { name: "iron", extra: "" },
-                { name: "gold", extra: "" },
-                { name: "copper", extra: "" },
-            ],
-        },
-    ].forEach((mod) => {
-        mod.ores.forEach((ore) => {
-            let raw_ore = mod.mod + ":raw_" + ore.name;
-            let crushed_ore =
-                "create" + (mod.mod === "ad_astra" || mod.mod === "yttr" ? "astral" : "") + ":crushed_raw_" + ore.name;
-            let outputs = [
-                crushed_ore,
-                Item.of(crushed_ore).withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
-                Item.of("create:experience_nugget").withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
-            ];
-            if (ore.extra != "") outputs.push(ore.extra);
-            event.recipes.createCrushing(outputs, raw_ore);
-        });
     });
 }
 function itemApplication(event) {
