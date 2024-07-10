@@ -22,5 +22,30 @@
         "top": "output"
       }
     }
+  ],
+  "gui": [
+    {
+      "texture": "custommachinery:textures/gui/base_background.png",
+      "x": 0,
+      "y": 0,
+      "type": "custommachinery:texture"
+    },
+    {
+      "x": 47,
+      "y": 80,
+      "type": "custommachinery:player_inventory"
+    },
+    {
+      "id": "fuel",
+      "x": 119,
+      "y": 38,
+      "type": "custommachinery:slot"
+    },
+    {
+      "text": "Slime Furnace",
+      "x": 7,
+      "y": 5,
+      "type": "custommachinery:text"
+    }
   ]
 }

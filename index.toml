@@ -1026,7 +1026,7 @@ hash = "8bdf892e2f55ed81d62f2b263e2d01ef0bc87492e47beb90dc211b5629c5cd82"
 
 [[files]]
 file = "dummy.txt"
-hash = "f208e01678d407423724f4b250783244cf05e5d2e6d2c8f42744633888bac2ef"
+hash = "54ca0aa229f597ef904995c2291b6da833479f2c2075d22dbc3531537d682ba8"
 
 [[files]]
 file = "fancymenustuff/btn1.png"
@@ -4005,12 +4005,16 @@ file = "global_packs/required_data/zLaky Core/data/createastral/machines/electro
 hash = "c8017458f0de1d9c8f1b86c818ee3fbd9337e968915bbc014dabeb6cd1365c93"
 
 [[files]]
+file = "global_packs/required_data/zLaky Core/data/createastral/machines/gas_mixer.json"
+hash = "267bdd81e267bc88d394420b8ab4a3d7dc24fc6aa0094ff860ab3cd1ff3b32b9"
+
+[[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/machines/shimmer_refinery.json"
 hash = "4dc3d30c821eebe2c956f2b15c92ca79edb77586e670c6afcef2e8ca9c2dd0ed"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/machines/slime_furnace.json"
-hash = "e57563ad51876cbc7082e2b9ba8db53e0301ddf3afac316064877380f70fe49d"
+hash = "f38054eaa07a390128546df94d51889f6543d8da15ab1cf8d18ccf804d66025f"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/machines/stone_growth_chamber.json"
@@ -4086,11 +4090,11 @@ hash = "f06a185d6c5e744416a9eac3be866b6dbe735abe13265c8a8f4fe40c39ad2951"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/recipes/electrolyser/oxygen.json"
-hash = "e72f2f3cc13d0294c5f83965c512b4adfa230bff6e69ab5023c45f0308c50c18"
+hash = "0751ceeafa89defa59a8de37c2274933e67dbcc844b4d0bb55720e102e3bbc1e"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/recipes/electrolyser/oxygenfallback.json"
-hash = "b2d273e9efd62e15ccfec9c286615e955a2b1de0b0ced46e527df8ed3a865e40"
+hash = "3bcecb1bdfdeb9b079d81a65a62df261ef0af05ed91a0e1e051fa5bc66981985"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/recipes/shimmer_refinery/refined_shimmer.json"
@@ -12862,7 +12866,7 @@ hash = "b817eff5858866c2e459a6d02dd1fb4ac9d4d57fc96b9a4fb000c8522b7aedf0"
 
 [[files]]
 file = "kubejs/server_scripts/machines.js"
-hash = "5c95f6a17ec4770579044ead268848c96dbc804b35bb76840c0303563c362566"
+hash = "a12d900e087de28814a679b130796f7d1f55643cfaf57245fafe73142e0a17b3"
 
 [[files]]
 file = "kubejs/server_scripts/packing.js"
@@ -12918,7 +12922,7 @@ hash = "549d73b4a709fe237a79fc99966e78c95d40e7613d0e10aca74183c65d8c6262"
 
 [[files]]
 file = "kubejs/startup_scripts/block_registry.js"
-hash = "1d3945f8479977ded301b0d69f2b25d3fb22a4f2454ba2c3b2c973d62bbaec4f"
+hash = "b58df08a9e4516253e79764ce0064187129d16b12b505866d7564279fa6a8ef4"
 
 [[files]]
 file = "kubejs/startup_scripts/fluid_registry.js"
@@ -27387,6 +27391,10 @@ file = "resources/createastral/lang/fr_fr.json"
 hash = "cb5eaac36df5e46897fbd09f3ced9a589a63801b3e4440a64694fbdf4f753ec6"
 
 [[files]]
+file = "resources/createastral/models/block/custom_model.json"
+hash = "27095b51e1b2fbb858771aaa27ec01a482ee942900d78bbca2f017cb0ee8c6ba"
+
+[[files]]
 file = "resources/createastral/models/item/t1_upgrade.json"
 hash = "b07eb55cd50718c31ce2a4642697a80275682721d5cb10e9b4dc13f5235b8621"
 
@@ -27453,6 +27461,14 @@ hash = "e0ae56a151c19625dc2c74d1029b4956082af6d8244be8818e17ca5dc588d24f"
 [[files]]
 file = "resources/createastral/textures/block/example_block.png"
 hash = "783d78bd1ee61d3b32273670dff9d82c34cd74c5ae899a10f104f473828d5bbc"
+
+[[files]]
+file = "resources/createastral/textures/block/gas_mixer.png"
+hash = "301ac1e32e035ca788912d36d35a2a665c08492461bd499adcc2161e1bd8a1cb"
+
+[[files]]
+file = "resources/createastral/textures/block/gas_mixer_shaft.png"
+hash = "20ee5b7ac90f276ac79f5ec68112b55beb6b09c25c93315148f015e51d1374cc"
 
 [[files]]
 file = "resources/createastral/textures/block/refined_radiance_block.png"

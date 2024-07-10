@@ -157,6 +157,11 @@ onEvent("block.registry", (event) => {
         .texture("down", "create:block/railway_casing")
         .texture("north", "createastral:block/washer_shaft")
 
+    event.create("createastral:gas_mixer_dummy")
+        .textureAll("createastral:block/gas_mixer")
+        .texture("down", "createastral:block/gas_mixer_shaft")
+
+    event.create("createastral:model_block").model("createastral:block/model")
 
     event
         .create("doodads:asphalt_slab", "slab")

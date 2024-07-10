@@ -1,0 +1,133 @@
+{
+  "name": "Gas Mixer",
+  "appearance": {
+    "block": "createastral:gas_mixer_dummy",
+    "running": {
+      "block": "createastral:gas_mixer_dummy",
+      "lightlevel": 15
+    }
+  },
+  "gui": [
+    {
+      "texture": "custommachinery:textures/gui/base_background.png",
+      "x": 0,
+      "y": 0,
+      "type": "custommachinery:texture"
+    },
+    {
+      "x": 50,
+      "y": 80,
+      "type": "custommachinery:player_inventory"
+    },
+    {
+      "id": "in_fluid",
+      "x": 68,
+      "y": 30,
+      "type": "custommachinery:fluid"
+    },
+    {
+      "id": "out_fluid",
+      "x": 149,
+      "y": 30,
+      "type": "custommachinery:fluid"
+    },
+    {
+      "id": "in_slot_1",
+      "x": 95,
+      "y": 20,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "in_slot_2",
+      "x": 95,
+      "y": 40,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "in_slot_3",
+      "x": 95,
+      "y": 60,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "out_slot_1",
+      "x": 176,
+      "y": 20,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "out_slot_2",
+      "x": 176,
+      "y": 40,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "out_slot_3",
+      "x": 176,
+      "y": 60,
+      "type": "custommachinery:slot"
+    },
+    {
+      "x": 116,
+      "y": 40,
+      "type": "custommachinery:progress"
+    },
+    {
+      "x": 236,
+      "y": 5,
+      "type": "custommachinery:status"
+    },
+    {
+      "text": "Gas Mixer",
+      "x": 7,
+      "y": 5,
+      "type": "custommachinery:text"
+    }
+  ],
+  "components": [
+    {
+      "type": "custommachinery:fluid",
+      "capacity": 81000,
+      "id": "in_fluid",
+      "maxInput": 81000,
+      "maxOutput": 0
+    },
+    {
+      "type": "custommachinery:fluid",
+      "capacity": 81000,
+      "id": "out_fluid",
+      "maxInput": 0,
+      "maxOutput": 81000
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "in_slot_1",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "in_slot_2",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "in_slot_3",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "out_slot_1",
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "out_slot_2",
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "out_slot_3",
+      "mode": "output"
+    }
+  ]
+}
