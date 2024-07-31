@@ -131,25 +131,111 @@ onEvent("item.registry", (event) => {
     event.create("createastral:incomplete_engineering_processor", "create:sequenced_assembly");
     event.create("createastral:incomplete_dash_panel", "create:sequenced_assembly");
     event.create("createastral:incomplete_copper_casing", "create:sequenced_assembly").modelJson({
-        "parent": "minecraft:block/cube",
-        "textures": {
-            "up": "createastral:item/incomplete_copper_casing0",
-            "down": "createastral:item/incomplete_copper_casing0",
-            "north": "createastral:item/incomplete_copper_casing1",
-            "south": "createastral:item/incomplete_copper_casing1",
-            "west": "createastral:item/incomplete_copper_casing2",
-            "east": "createastral:item/incomplete_copper_casing2"
-        }
+        parent: "minecraft:block/cube",
+        textures: {
+            up: "createastral:item/incomplete_copper_casing0",
+            down: "createastral:item/incomplete_copper_casing0",
+            north: "createastral:item/incomplete_copper_casing1",
+            south: "createastral:item/incomplete_copper_casing1",
+            west: "createastral:item/incomplete_copper_casing2",
+            east: "createastral:item/incomplete_copper_casing2",
+        },
     });
     event.create("createastral:incomplete_basic_machine_frame", "create:sequenced_assembly").modelJson({
-        "parent": "minecraft:block/cube",
-        "textures": {
-            "up": "techreborn:block/machines/structure/tier1_machine_block",
-            "down": "create:block/copper_casing",
-            "north": "createastral:item/incomplete_basic_machine_frame0",
-            "south": "createastral:item/incomplete_basic_machine_frame0",
-            "west": "createastral:item/incomplete_basic_machine_frame1",
-            "east": "createastral:item/incomplete_basic_machine_frame1"
-        }
+        parent: "minecraft:block/cube",
+        textures: {
+            up: "techreborn:block/machines/structure/tier1_machine_block",
+            down: "create:block/copper_casing",
+            north: "createastral:item/incomplete_basic_machine_frame0",
+            south: "createastral:item/incomplete_basic_machine_frame0",
+            west: "createastral:item/incomplete_basic_machine_frame1",
+            east: "createastral:item/incomplete_basic_machine_frame1",
+        },
+    });
+
+    // VotV Reference??!!
+
+    event.create("createastral:ancient_receiver").rarity("Uncommon"),
+        event.create("createastral:dormant_signal_beacon"),
+        event.create("createastral:homing_signal_beacon"),
+        event.create("createastral:data_drive_blank"),
+        event.create("createastral:data_drive_garbled"),
+        event.create("createastral:polyvinyl_sheet"),
+        event.create("createastral:shimmer_polyvinyl_sheet"),
+        event.create("createastral:yttric_polyvinyl_sheet");
+
+    [
+        {
+            id: "createastral:data_drive_decrypted_13",
+            name: "Analogously Decrypted Data Drive - 13",
+        },
+        {
+            id: "createastral:data_drive_decrypted_cat",
+            name: "Analogously Decrypted Data Drive - cat",
+        },
+        {
+            id: "createastral:data_drive_decrypted_blocks",
+            name: "Analogously Decrypted Data Drive - blocks",
+        },
+        {
+            id: "createastral:data_drive_decrypted_chirp",
+            name: "Analogously Decrypted Data Drive - chirp",
+        },
+        {
+            id: "createastral:data_drive_decrypted_far",
+            name: "Analogously Decrypted Data Drive - far",
+        },
+        {
+            id: "createastral:data_drive_decrypted_mall",
+            name: "Analogously Decrypted Data Drive - mall",
+        },
+        {
+            id: "createastral:data_drive_decrypted_mellohi",
+            name: "Analogously Decrypted Data Drive - mellohi",
+        },
+        {
+            id: "createastral:data_drive_decrypted_stal",
+            name: "Analogously Decrypted Data Drive - stal",
+        },
+        {
+            id: "createastral:data_drive_decrypted_strad",
+            name: "Analogously Decrypted Data Drive - strad",
+        },
+        {
+            id: "createastral:data_drive_decrypted_ward",
+            name: "Analogously Decrypted Data Drive - ward",
+        },
+        {
+            id: "createastral:data_drive_decrypted_11",
+            name: "Analogously Decrypted Data Drive - 11",
+        },
+        {
+            id: "createastral:data_drive_decrypted_wait",
+            name: "Analogously Decrypted Data Drive - wait",
+        },
+        {
+            id: "createastral:data_drive_decrypted_otherside",
+            name: "Analogously Decrypted Data Drive - otherside",
+        },
+    ].forEach((item) => {
+        event.create(item.id).displayName(item.name).texture("createastral:data_drive_decrypted_t1");
+    });
+
+    [
+        {
+            id: "createastral:data_drive_decrypted_purpleprison",
+            name: "Parallel Decrypted Data Drive - Purple Prison",
+        },
+    ].forEach((item) => {
+        event.create(item.id).displayName(item.name).texture("createastral:data_drive_decrypted_t2").rarity("Uncommon");
+    });
+
+    [
+        {
+            id: "createastral:data_drive_decrypted_wolfgif",
+            name: "Microphysically Decrypted Data Drive - Astral Lakes WolfGif Remix",
+        },
+    ].forEach((item) => {
+        event.create(item.id).displayName(item.name).texture("createastral:data_drive_decrypted_t3").rarity("Rare");
     });
 });
