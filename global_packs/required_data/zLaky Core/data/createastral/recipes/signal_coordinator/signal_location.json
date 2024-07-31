@@ -1,0 +1,31 @@
+{
+    "type": "custommachinery:custom_machine",
+    "machine": "createastral:signal_coordinator",
+    "time": 4800,
+    "requirements": [
+        {
+            "type": "custommachinery:sky"
+        },
+        {
+            "type": "custommachinery:item",
+            "mode": "input",
+            "item": "createastral:dormant_signal_beacon",
+            "amount": 1,
+            "slot": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "mode": "output",
+            "item": "createastral:homing_signal_beacon",
+            "chance": 0.4,
+            "slot": "output"
+        },
+        {
+            "type": "custommachinery:item",
+            "mode": "output",
+            "item": "createastral:dormant_signal_beacon",
+            "chance": 0.6,
+            "slot": "output"
+        }
+    ]
+}

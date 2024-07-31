@@ -156,6 +156,8 @@ onEvent("item.registry", (event) => {
     // VotV Reference??!!
 
     event.create("createastral:ancient_receiver").rarity("Uncommon"),
+        event.create("createastral:parallel_processor"),
+        event.create("createastral:microphysical_probe"),
         event.create("createastral:dormant_signal_beacon"),
         event.create("createastral:homing_signal_beacon"),
         event.create("createastral:data_drive_blank"),
@@ -218,7 +220,7 @@ onEvent("item.registry", (event) => {
             name: "Analogously Decrypted Data Drive - otherside",
         },
     ].forEach((item) => {
-        event.create(item.id).displayName(item.name).texture("createastral:data_drive_decrypted_t1");
+        event.create(item.id).displayName(item.name).texture("createastral:item/data_drive_decrypted_t1");
     });
 
     [
@@ -227,7 +229,11 @@ onEvent("item.registry", (event) => {
             name: "Parallel Decrypted Data Drive - Purple Prison",
         },
     ].forEach((item) => {
-        event.create(item.id).displayName(item.name).texture("createastral:data_drive_decrypted_t2").rarity("Uncommon");
+        event
+            .create(item.id)
+            .displayName(item.name)
+            .texture("createastral:item/data_drive_decrypted_t2")
+            .rarity("Uncommon");
     });
 
     [
@@ -236,6 +242,10 @@ onEvent("item.registry", (event) => {
             name: "Microphysically Decrypted Data Drive - Astral Lakes WolfGif Remix",
         },
     ].forEach((item) => {
-        event.create(item.id).displayName(item.name).texture("createastral:data_drive_decrypted_t3").rarity("Rare");
+        event
+            .create(item.id)
+            .displayName(item.name)
+            .texture("createastral:item/data_drive_decrypted_t3")
+            .rarity("Rare");
     });
 });

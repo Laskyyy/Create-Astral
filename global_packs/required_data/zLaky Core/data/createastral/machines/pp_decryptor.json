@@ -1,0 +1,85 @@
+{
+    "name": "Parallel Processing Decryptor",
+    "appearance": {
+        "block": "createastral:pp_decryptor_dummy"
+    },
+    "gui": [
+        {
+            "texture": "custommachinery:textures/gui/base_background.png",
+            "x": 0,
+            "y": 0,
+            "type": "custommachinery:texture"
+        },
+        {
+            "x": 47,
+            "y": 80,
+            "type": "custommachinery:player_inventory"
+        },
+        {
+            "id": "input",
+            "x": 70,
+            "y": 30,
+            "type": "custommachinery:slot"
+        },
+        {
+            "id": "output",
+            "x": 142,
+            "y": 30,
+            "type": "custommachinery:slot"
+        },
+        {
+            "type": "custommachinery:energy",
+            "x": 20,
+            "y": 20
+        },
+        {
+            "x": 116,
+            "y": 30,
+            "type": "custommachinery:progress"
+        },
+        {
+            "x": 236,
+            "y": 5,
+            "type": "custommachinery:status"
+        },
+        {
+            "text": "Parallel Processing Decryptor",
+            "x": 7,
+            "y": 5,
+            "type": "custommachinery:text"
+        }
+    ],
+    "components": [
+        {
+            "type": "custommachinery:item",
+            "id": "input",
+            "mode": "input",
+            "filter": [
+                "createastral:data_drive_decrypted_13",
+                "createastral:data_drive_decrypted_cat",
+                "createastral:data_drive_decrypted_blocks",
+                "createastral:data_drive_decrypted_chirp",
+                "createastral:data_drive_decrypted_far",
+                "createastral:data_drive_decrypted_mall",
+                "createastral:data_drive_decrypted_mellohi",
+                "createastral:data_drive_decrypted_stal",
+                "createastral:data_drive_decrypted_strad",
+                "createastral:data_drive_decrypted_ward",
+                "createastral:data_drive_decrypted_11",
+                "createastral:data_drive_decrypted_wait",
+                "createastral:data_drive_decrypted_otherside"
+            ]
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "output",
+            "mode": "output"
+        },
+        {
+            "type": "custommachinery:energy",
+            "capacity": 1000,
+            "maxInput": 500,
+            "maxOutput": 0
+        }
+    ]
+}

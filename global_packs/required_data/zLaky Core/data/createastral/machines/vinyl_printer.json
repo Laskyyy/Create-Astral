@@ -1,0 +1,103 @@
+{
+    "name": "VInyl Printer",
+    "appearance": {
+        "block": "createastral:vinyl_printer_dummy"
+    },
+    "gui": [
+        {
+            "texture": "custommachinery:textures/gui/base_background.png",
+            "x": 0,
+            "y": 0,
+            "type": "custommachinery:texture"
+        },
+        {
+            "x": 47,
+            "y": 80,
+            "type": "custommachinery:player_inventory"
+        },
+        {
+            "id": "driveinput",
+            "x": 70,
+            "y": 15,
+            "type": "custommachinery:slot"
+        },
+        {
+            "id": "discinput",
+            "x": 70,
+            "y": 45,
+            "type": "custommachinery:slot"
+        },
+        {
+            "id": "driveoutput",
+            "x": 142,
+            "y": 15,
+            "type": "custommachinery:slot"
+        },
+        {
+            "id": "discoutput",
+            "x": 142,
+            "y": 45,
+            "type": "custommachinery:slot"
+        },
+        {
+            "x": 116,
+            "y": 30,
+            "type": "custommachinery:progress"
+        },
+        {
+            "x": 236,
+            "y": 5,
+            "type": "custommachinery:status"
+        },
+        {
+            "text": "Vinyl Printer",
+            "x": 7,
+            "y": 5,
+            "type": "custommachinery:text"
+        }
+    ],
+    "components": [
+        {
+            "type": "custommachinery:item",
+            "id": "driveinput",
+            "mode": "input",
+            "filter": [
+                "createastral:data_drive_decrypted_13",
+                "createastral:data_drive_decrypted_cat",
+                "createastral:data_drive_decrypted_blocks",
+                "createastral:data_drive_decrypted_chirp",
+                "createastral:data_drive_decrypted_far",
+                "createastral:data_drive_decrypted_mall",
+                "createastral:data_drive_decrypted_mellohi",
+                "createastral:data_drive_decrypted_stal",
+                "createastral:data_drive_decrypted_strad",
+                "createastral:data_drive_decrypted_ward",
+                "createastral:data_drive_decrypted_11",
+                "createastral:data_drive_decrypted_wait",
+                "createastral:data_drive_decrypted_otherside",
+                "createastral:data_drive_decrypted_purpleprison",
+                "createastral:data_drive_decrypted_wolfgif"
+            ]
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "discinput",
+            "mode": "input",
+            "filter": [
+                "createastral:polyvinyl_sheet",
+                "createastral:shimmer_polyvinyl_sheet",
+                "createastral:yttric_polyvinyl_sheet"
+            ]
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "driveoutput",
+            "mode": "output"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "discoutput",
+            "mode": "output"
+        }
+    ]
+}

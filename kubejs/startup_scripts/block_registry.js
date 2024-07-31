@@ -135,7 +135,8 @@ onEvent("block.registry", (event) => {
         .hardness(2)
         .lightLevel(5);
 
-    event.create("createastral:swift_andesite", "basic")
+    event
+        .create("createastral:swift_andesite", "basic")
         .material("stone")
         .hardness(4)
         .tagBlock("minecraft:mineable/pickaxe");
@@ -153,4 +154,32 @@ onEvent("block.registry", (event) => {
         .hardness(4)
         .tagBlock("minecraft:mineable/pickaxe")
         .textureAll("doodads:block/asphalt");
+
+    // VotV Reference??!!
+
+    event
+        .create("createastral:signal_coordinator_dummy")
+        .material("wood")
+        .hardness(3)
+        .tagBlock("minecraft:mineable/axe");
+    event
+        .create("createastral:radio_telescope_dummy")
+        .material("lantern")
+        .hardness(3)
+        .tagBlock("minecraft:mineable/pickaxe");
+    event.create("createastral:analog_decryptor_dummy").material("wood").hardness(3).tagBlock("minecraft:mineable/axe");
+    event
+        .create("createastral:pp_decryptor_dummy")
+        .displayName("PPD Dummy")
+        .material("lantern")
+        .hardness(3)
+        .tagBlock("minecraft:mineable/pickaxe");
+    event
+        .create("createastral:mp_decryptor_dummy")
+        .displayName("MPD Dummy")
+        .material("lantern")
+        .hardness(3)
+        .tagBlock("minecraft:mineable/pickaxe");
+    event.create("createastral:drive_eraser_dummy").material("wood").hardness(3).tagBlock("minecraft:mineable/axe");
+    event.create("createastral:vinyl_printer_dummy").material("wood").hardness(3).tagBlock("minecraft:mineable/axe");
 });
