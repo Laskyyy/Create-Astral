@@ -1,7 +1,7 @@
 {
-    "name": "Analog Decryptor",
+    "name": "Drive Eraser",
     "appearance": {
-        "block": "createastral:analog_decryptor_dummy"
+        "block": "astralsignals:drive_eraser_dummy"
     },
     "gui": [
         {
@@ -38,7 +38,7 @@
             "type": "custommachinery:status"
         },
         {
-            "text": "Analog Decryptor",
+            "text": "Drive Eraser",
             "x": 7,
             "y": 5,
             "type": "custommachinery:text"
@@ -49,7 +49,25 @@
             "type": "custommachinery:item",
             "id": "input",
             "mode": "input",
-            "filter": "createastral:data_drive_garbled"
+            "filter": [
+                "astralsignals:data_drive_garbled",
+                "astralsignals:data_drive_decrypted_13",
+                "astralsignals:data_drive_decrypted_cat",
+                "astralsignals:data_drive_decrypted_blocks",
+                "astralsignals:data_drive_decrypted_chirp",
+                "astralsignals:data_drive_decrypted_far",
+                "astralsignals:data_drive_decrypted_mall",
+                "astralsignals:data_drive_decrypted_mellohi",
+                "astralsignals:data_drive_decrypted_stal",
+                "astralsignals:data_drive_decrypted_strad",
+                "astralsignals:data_drive_decrypted_ward",
+                "astralsignals:data_drive_decrypted_11",
+                "astralsignals:data_drive_decrypted_wait",
+                "astralsignals:data_drive_decrypted_otherside",
+                "astralsignals:data_drive_decrypted_purpleprison",
+                "astralsignals:data_drive_decrypted_wolfgif"
+            ],
+            "whitelist": true
         },
         {
             "type": "custommachinery:item",

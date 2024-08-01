@@ -1,7 +1,7 @@
 {
     "name": "Microphysical Decryptor",
     "appearance": {
-        "block": "createastral:mp_decryptor_dummy"
+        "block": "astralsignals:mp_decryptor_dummy"
     },
     "gui": [
         {
@@ -60,7 +60,8 @@
             "type": "custommachinery:item",
             "id": "input",
             "mode": "input",
-            "filter": ["createastral:data_drive_decrypted_purpleprison"]
+            "filter": "astralsignals:data_drive_dormant_t1",
+            "whitelist": true
         },
         {
             "type": "custommachinery:item",
@@ -69,15 +70,15 @@
         },
         {
             "type": "custommachinery:energy",
-            "capacity": 1000,
-            "maxInput": 500,
+            "capacity": 100000,
+            "maxInput": 5000,
             "maxOutput": 0
         },
         {
             "type": "custommachinery:item",
             "id": "fuel",
             "filter": "createastral:subatomic_ingot",
-            "variant": "custommachinery:fuel"
+            "whitelist": true
         }
     ]
 }

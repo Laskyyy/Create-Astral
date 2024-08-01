@@ -1,7 +1,7 @@
 {
-    "name": "Signal Coordinator",
+    "name": "Parallel Processing Decryptor",
     "appearance": {
-        "block": "createastral:signal_coordinator_dummy"
+        "block": "astralsignals:pp_decryptor_dummy"
     },
     "gui": [
         {
@@ -28,6 +28,11 @@
             "type": "custommachinery:slot"
         },
         {
+            "type": "custommachinery:energy",
+            "x": 20,
+            "y": 20
+        },
+        {
             "x": 116,
             "y": 30,
             "type": "custommachinery:progress"
@@ -38,7 +43,7 @@
             "type": "custommachinery:status"
         },
         {
-            "text": "Signal Coordinator",
+            "text": "Parallel Processing Decryptor",
             "x": 7,
             "y": 5,
             "type": "custommachinery:text"
@@ -49,12 +54,19 @@
             "type": "custommachinery:item",
             "id": "input",
             "mode": "input",
-            "filter": "createastral:dormant_signal_beacon"
+            "filter": "astralsignals:data_drive_dormant_t2",
+            "whitelist": true
         },
         {
             "type": "custommachinery:item",
             "id": "output",
             "mode": "output"
+        },
+        {
+            "type": "custommachinery:energy",
+            "capacity": 1000,
+            "maxInput": 500,
+            "maxOutput": 0
         }
     ]
 }

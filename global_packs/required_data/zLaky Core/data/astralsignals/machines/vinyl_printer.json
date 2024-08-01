@@ -1,7 +1,7 @@
 {
-    "name": "VInyl Printer",
+    "name": "Vinyl Printer",
     "appearance": {
-        "block": "createastral:vinyl_printer_dummy"
+        "block": "astralsignals:vinyl_printer_dummy"
     },
     "gui": [
         {
@@ -62,32 +62,34 @@
             "id": "driveinput",
             "mode": "input",
             "filter": [
-                "createastral:data_drive_decrypted_13",
-                "createastral:data_drive_decrypted_cat",
-                "createastral:data_drive_decrypted_blocks",
-                "createastral:data_drive_decrypted_chirp",
-                "createastral:data_drive_decrypted_far",
-                "createastral:data_drive_decrypted_mall",
-                "createastral:data_drive_decrypted_mellohi",
-                "createastral:data_drive_decrypted_stal",
-                "createastral:data_drive_decrypted_strad",
-                "createastral:data_drive_decrypted_ward",
-                "createastral:data_drive_decrypted_11",
-                "createastral:data_drive_decrypted_wait",
-                "createastral:data_drive_decrypted_otherside",
-                "createastral:data_drive_decrypted_purpleprison",
-                "createastral:data_drive_decrypted_wolfgif"
-            ]
+                "astralsignals:data_drive_decrypted_13",
+                "astralsignals:data_drive_decrypted_cat",
+                "astralsignals:data_drive_decrypted_blocks",
+                "astralsignals:data_drive_decrypted_chirp",
+                "astralsignals:data_drive_decrypted_far",
+                "astralsignals:data_drive_decrypted_mall",
+                "astralsignals:data_drive_decrypted_mellohi",
+                "astralsignals:data_drive_decrypted_stal",
+                "astralsignals:data_drive_decrypted_strad",
+                "astralsignals:data_drive_decrypted_ward",
+                "astralsignals:data_drive_decrypted_11",
+                "astralsignals:data_drive_decrypted_wait",
+                "astralsignals:data_drive_decrypted_otherside",
+                "astralsignals:data_drive_decrypted_purpleprison",
+                "astralsignals:data_drive_decrypted_wolfgif"
+            ],
+            "whitelist": true
         },
         {
             "type": "custommachinery:item",
             "id": "discinput",
             "mode": "input",
             "filter": [
-                "createastral:polyvinyl_sheet",
-                "createastral:shimmer_polyvinyl_sheet",
-                "createastral:yttric_polyvinyl_sheet"
-            ]
+                "astralsignals:polyvinyl_sheet",
+                "astralsignals:shimmer_polyvinyl_sheet",
+                "astralsignals:yttric_polyvinyl_sheet"
+            ],
+            "whitelist": true
         },
         {
             "type": "custommachinery:item",

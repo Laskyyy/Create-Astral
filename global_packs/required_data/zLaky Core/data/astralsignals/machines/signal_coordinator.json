@@ -1,7 +1,7 @@
 {
-    "name": "Radio Telescope",
+    "name": "Signal Coordinator",
     "appearance": {
-        "block": "createastral:radio_telescope_dummy"
+        "block": "astralsignals:signal_coordinator_dummy"
     },
     "gui": [
         {
@@ -16,27 +16,15 @@
             "type": "custommachinery:player_inventory"
         },
         {
-            "id": "driveinput",
+            "id": "input",
             "x": 70,
-            "y": 15,
+            "y": 30,
             "type": "custommachinery:slot"
         },
         {
-            "id": "beaconinput",
-            "x": 70,
-            "y": 45,
-            "type": "custommachinery:slot"
-        },
-        {
-            "id": "driveoutput",
+            "id": "output",
             "x": 142,
-            "y": 15,
-            "type": "custommachinery:slot"
-        },
-        {
-            "id": "beaconoutput",
-            "x": 142,
-            "y": 45,
+            "y": 30,
             "type": "custommachinery:slot"
         },
         {
@@ -50,7 +38,7 @@
             "type": "custommachinery:status"
         },
         {
-            "text": "Radio Telescope",
+            "text": "Signal Coordinator",
             "x": 7,
             "y": 5,
             "type": "custommachinery:text"
@@ -59,24 +47,14 @@
     "components": [
         {
             "type": "custommachinery:item",
-            "id": "driveinput",
+            "id": "input",
             "mode": "input",
-            "filter": "createastral:data_drive_blank"
+            "filter": "astralsignals:dormant_signal_beacon",
+            "whitelist": true
         },
         {
             "type": "custommachinery:item",
-            "id": "beaconinput",
-            "mode": "input",
-            "filter": "createastral:dormant_signal_beacon"
-        },
-        {
-            "type": "custommachinery:item",
-            "id": "driveoutput",
-            "mode": "output"
-        },
-        {
-            "type": "custommachinery:item",
-            "id": "beaconoutput",
+            "id": "output",
             "mode": "output"
         }
     ]
