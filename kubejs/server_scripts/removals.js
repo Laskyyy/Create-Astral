@@ -17,8 +17,9 @@ onEvent("recipes", (event) => {
         { output: "techreborn:quantum_tank_unit"},
 
         { output: "techreborn:chunk_loader" },
-        {output: "techreborn:pyrite_dust"},
+        { output: "techreborn:pyrite_dust"},
         { output: "ae2:spatial_anchor" },
+        { output: "techreborn:scrap_box" },
         { output: "techreborn:industrial_electrolyzer" },
         { output: "techreborn:industrial_sawmill" },
         { output: "techreborn:vacuum_freezer" },
@@ -530,6 +531,7 @@ onEvent("recipes", (event) => {
         { output: "minecraft:gravel", input: "techreborn:granite_dust" },
         { output: "minecraft:gold_nugget", input: "minecraft:soul_soil" },
         {output: "ae2:silicon"},
+        {output: "blahaj:bread"},
         {id: "techreborn:centrifuge/redstone" }, // remove other version of centrifuging certus quartz
         { input: "minecraft:crying_obsidian" },
         {

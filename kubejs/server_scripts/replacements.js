@@ -52,6 +52,10 @@ onEvent("recipes", (event) => {
             "techreborn:calcite_small_dust", "techreborn:calcite_dust"
         ],
         [
+            {output: "minecraft:hopper"},
+            "minecraft:iron_ingot", "create:iron_sheet"
+        ],
+        [
             {output: "minecraft:calcite"},
             "techreborn:calcite_small_dust", "techreborn:calcite_dust"
         ],
@@ -273,6 +277,31 @@ onEvent("recipes", (event) => {
             { output: "ad_astra:netherite_space_boots" },
             "minecraft:netherite_leggings",
             "createastral:sturdy_boots",
+        ],
+        [
+            { output: "ad_astra:netherite_space_helmet" },
+            "ad_astra:steel_plate",
+            "ad_astra:ostrum_plate",
+        ],
+        [
+            { output: "ad_astra:netherite_space_suit" },
+            "ad_astra:steel_plate",
+            "ad_astra:ostrum_plate",
+        ],
+        [
+            { output: "ad_astra:netherite_space_suit" },
+            "ad_astra:oxygen_tank",
+            "createastral:shimmer_amplifier",
+        ],
+        [
+            { output: "ad_astra:netherite_space_pants" },
+            "ad_astra:steel_plate",
+            "ad_astra:ostrum_plate",
+        ],
+        [
+            { output: "ad_astra:netherite_space_boots" },
+            "ad_astra:steel_plate",
+            "ad_astra:ostrum_plate",
         ],
 
         [

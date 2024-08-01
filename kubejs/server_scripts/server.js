@@ -691,6 +691,7 @@ onEvent("recipes", (event) => {
     event.stonecutting("8x automobility:sand_off_road", "minecraft:sand");
     event.stonecutting("ae2:inscriber", "techreborn:basic_machine_frame");
     event.stonecutting("tconstruct:gear_cast", "#c:plates/gold");
+    event.stonecutting("astraladditions:ring_gold_cast", "#c:plates/gold");
     event.stonecutting("tconstruct:coin_cast", "#c:plates/gold");
     event.stonecutting("automobility:sloped_dash_panel", "automobility:dash_panel");
     event.stonecutting("automobility:steep_sloped_dash_panel", "automobility:dash_panel");
@@ -1141,6 +1142,18 @@ onEvent("recipes", (event) => {
     event.shaped("passivepiglins:piglin_coin", ["BA", "AB"], {
         A: "create:golden_sheet",
         B: "minecraft:piglin_banner_pattern",
+    });
+    event.shaped("yttr:flopper", ["AA ", " BA", "AA "], {
+        A: "create:iron_sheet",
+        B: "minecraft:chest",
+    });
+    event.shaped("yttr:chute", ["A A", "A A", "A A"], {
+        A: "create:iron_sheet",
+    });
+    event.shaped("yttr:bedrock_smasher", ["AAA", " B ", " C "], {
+        A: "ad_astra:calorite_plate",
+        B: "ad_astra:calorite_ingot",
+        C: "techreborn:diamond_plate",
     });
 
     /// Stuff Laky CBA updating to new format from experimental yet
