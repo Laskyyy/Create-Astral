@@ -3,7 +3,7 @@
     "start_pool": "astralrails:contest/moon",
     "size": 7
   },
-  "biomes": "#astralrails:has_structure/moon_debris",
+  "biomes": "ad_astra:lunar_wastelands",
   "adapt_noise":true,
   "spawn_overrides": {
   },
