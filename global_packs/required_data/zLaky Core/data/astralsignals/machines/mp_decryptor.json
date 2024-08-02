@@ -60,7 +60,7 @@
             "type": "custommachinery:item",
             "id": "input",
             "mode": "input",
-            "filter": "astralsignals:data_drive_dormant_t1",
+            "filter": "astralsignals:data_drive_dormant_t3",
             "whitelist": true
         },
         {

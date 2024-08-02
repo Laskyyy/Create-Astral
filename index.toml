@@ -3222,11 +3222,11 @@ hash = "f353042c4b4a27adae2201d2265b6e975a6f9f4ddac3824dc24d988950f6564e"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/astralsignals/machines/mp_decryptor.json"
-hash = "e3923d8577ed6af26f7fd606d2311493f5ac3c4c5eb93466b7069e2a0f42f215"
+hash = "32838dd198e0301973e8d7a3909c4340c67ded478b3fb58f2a6cd124538471a1"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/astralsignals/machines/pp_decryptor.json"
-hash = "7dc2d296da5b9d32125c77078dfacffd76cbddd1bf78cefb6458c4bef9ad3fea"
+hash = "2a81d942ceb699cccf8b53847a7c22c6b7560cf3fa456ee8cc7956b23d32650a"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/astralsignals/machines/radio_telescope.json"
@@ -3239,18 +3239,6 @@ hash = "74fe23b6a58d263cc8c2d516394b02e91897edd40eac2214f09d9d951ac9b05e"
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/astralsignals/machines/vinyl_printer.json"
 hash = "214e69ff488d72b69fe66d6472f696a1ff2a231ef198dc3bc13b514ae124b914"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/astralsignals/tags/item/t1_disc_drives.json"
-hash = "5942d0470e4b3c014c79026a1a194b8cf89ac3c9b086d4afd5645b95d225a550"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/astralsignals/tags/item/t2_disc_drives.json"
-hash = "2c1cc9564097e3582e4b71adfc9b0ad53798f01f599d44f55ea01254b094e7a6"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/astralsignals/tags/item/t3_disc_drives.json"
-hash = "d63870b138b2bfa917f006d1c058f8bf064ce317fbcf51393f467010e053c8ff"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/automobility/recipes/engine/copper_engine.json"
