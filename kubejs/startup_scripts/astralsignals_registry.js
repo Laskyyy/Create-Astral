@@ -76,14 +76,22 @@ onEvent("item.registry", (event) => {
         event.create("astralsignals:shimmer_polyvinyl_sheet"),
         event.create("astralsignals:yttric_polyvinyl_sheet");
 
-    event.create("astralsignals:data_drive_dormant_t1"),
-        event.create("astralsignals:data_drive_dormant_t2"),
-        event.create("astralsignals:data_drive_dormant_t3");
+    event.create("astralsignals:data_drive_dormant_t1").displayName("Dormant Analagous Data Drive"),
+        event.create("astralsignals:data_drive_dormant_t2").displayName("Dormant Parallel Data Drive"),
+        event.create("astralsignals:data_drive_dormant_t3").displayName("Dormant Microphysical Data Drive");
 
-    event.create("astralsignals:inter_stirring_signal_beacon", "create:sequenced_assembly"),
-        event.create("astralsignals:inter_data_drive_dormant_t1", "create:sequenced_assembly"),
-        event.create("astralsignals:inter_data_drive_dormant_t2", "create:sequenced_assembly"),
-        event.create("astralsignals:inter_data_drive_dormant_t3", "create:sequenced_assembly");
+    event
+        .create("astralsignals:inter_stirring_signal_beacon", "create:sequenced_assembly")
+        .displayName("Shimmered Stirring Signal Beacon"),
+        event
+            .create("astralsignals:inter_data_drive_dormant_t1", "create:sequenced_assembly")
+            .displayName("Shimmered Dormant Analogous Data Drive"),
+        event
+            .create("astralsignals:inter_data_drive_dormant_t2", "create:sequenced_assembly")
+            .displayName("Shimmered Dormant Parallel Data Drive"),
+        event
+            .create("astralsignals:inter_data_drive_dormant_t3", "create:sequenced_assembly")
+            .displayName("Shimmered Dormant Microphysical Data Drive");
 
     [
         {
