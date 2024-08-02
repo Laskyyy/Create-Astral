@@ -42,6 +42,12 @@
             "x": 7,
             "y": 5,
             "type": "custommachinery:text"
+        },
+        {
+            "text": "Will wipe ANY drive and turn it into a Blank Data Drive!",
+            "x": 7,
+            "y": 10,
+            "type": "custommachinery:text"
         }
     ],
     "components": [
@@ -51,6 +57,9 @@
             "mode": "input",
             "filter": [
                 "astralsignals:data_drive_garbled",
+                "astralsignals:data_drive_dormant_t1",
+                "astralsignals:data_drive_dormant_t2",
+                "astralsignals:data_drive_dormant_t3",
                 "astralsignals:data_drive_decrypted_13",
                 "astralsignals:data_drive_decrypted_cat",
                 "astralsignals:data_drive_decrypted_blocks",

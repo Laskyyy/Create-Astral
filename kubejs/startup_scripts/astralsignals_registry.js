@@ -76,16 +76,16 @@ onEvent("item.registry", (event) => {
         event.create("astralsignals:shimmer_polyvinyl_sheet"),
         event.create("astralsignals:yttric_polyvinyl_sheet");
 
-    event.create("astralsignals:inter_stirring_signal_beacon"),
-        event.create("astralsignals:inter_data_drive_dormant_t1"),
-        event.create("astralsignals:inter_data_drive_dormant_t2"),
-        event.create("astralsignals:inter_data_drive_dormant_t3");
+    event.create("astralsignals:data_drive_dormant_t1"),
+        event.create("astralsignals:data_drive_dormant_t2"),
+        event.create("astralsignals:data_drive_dormant_t3");
+
+    event.create("astralsignals:inter_stirring_signal_beacon", "create:sequenced_assembly"),
+        event.create("astralsignals:inter_data_drive_dormant_t1", "create:sequenced_assembly"),
+        event.create("astralsignals:inter_data_drive_dormant_t2", "create:sequenced_assembly"),
+        event.create("astralsignals:inter_data_drive_dormant_t3", "create:sequenced_assembly");
 
     [
-        {
-            id: "astralsignals:data_drive_dormant_t1",
-            name: "Analogously Decrypted Dormant Data Drive",
-        },
         {
             id: "astralsignals:data_drive_decrypted_13",
             name: "Analogously Decrypted Data Drive - 13",
@@ -144,10 +144,6 @@ onEvent("item.registry", (event) => {
 
     [
         {
-            id: "astralsignals:data_drive_dormant_t2",
-            name: "Parallel Decrypted Dormant Data Drive",
-        },
-        {
             id: "astralsignals:data_drive_decrypted_purpleprison",
             name: "Parallel Decrypted Data Drive - Purple Prison",
         },
@@ -160,10 +156,6 @@ onEvent("item.registry", (event) => {
     });
 
     [
-        {
-            id: "astralsignals:data_drive_dormant_t3",
-            name: "Microphysically Decrypted Dormant Data Drive",
-        },
         {
             id: "astralsignals:data_drive_decrypted_wolfgif",
             name: "Microphysically Decrypted Data Drive - Astral Lakes WolfGif Remix",
