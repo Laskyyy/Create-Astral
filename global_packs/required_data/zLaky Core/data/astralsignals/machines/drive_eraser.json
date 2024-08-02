@@ -46,7 +46,7 @@
         {
             "text": "Will wipe ANY drive and make it a Blank!",
             "x": 7,
-            "y": 150,
+            "y": 55,
             "type": "custommachinery:text"
         }
     ],
