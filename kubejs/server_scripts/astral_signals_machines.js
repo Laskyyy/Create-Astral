@@ -174,6 +174,9 @@ onEvent("recipes", (event) => {
     // Drive Eraser
     [
         ["astralsignals:data_drive_garbled"],
+        ["astralsignals:data_drive_dormant_t1"],
+        ["astralsignals:data_drive_dormant_t2"],
+        ["astralsignals:data_drive_dormant_t3"],
         ["astralsignals:data_drive_decrypted_13"],
         ["astralsignals:data_drive_decrypted_cat"],
         ["astralsignals:data_drive_decrypted_blocks"],

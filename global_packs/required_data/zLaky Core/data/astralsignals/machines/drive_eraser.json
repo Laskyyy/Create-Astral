@@ -44,9 +44,9 @@
             "type": "custommachinery:text"
         },
         {
-            "text": "Will wipe ANY drive and turn it into a Blank Data Drive!",
+            "text": "Will wipe ANY drive and make it a Blank!",
             "x": 7,
-            "y": 10,
+            "y": 150,
             "type": "custommachinery:text"
         }
     ],
