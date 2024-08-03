@@ -4,6 +4,18 @@ onEvent("recipes", (event) => {
 
     //Tech Reborn
     [
+        // storage units
+        { output: "techreborn:crude_storage_unit"},
+        { output: "techreborn:basic_storage_unit"},
+        { output: "techreborn:advanced_storage_unit"},
+        { output: "techreborn:industrial_storage_unit"},
+        { output: "techreborn:quantumr_storage_unit"},
+        // tanks units
+        { output: "techreborn:basic_tank_unit"},
+        { output: "techreborn:advanced_tank_unit"},
+        { output: "techreborn:industrial_tank_unit"},
+        { output: "techreborn:quantum_tank_unit"},
+
         { output: "techreborn:chunk_loader" },
         {output: "techreborn:pyrite_dust"},
         { output: "ae2:spatial_anchor" },

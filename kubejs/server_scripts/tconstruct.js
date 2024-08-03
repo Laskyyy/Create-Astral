@@ -23,6 +23,12 @@ onEvent("recipes", (event) => {
             cast: ["minecraft:diorite", true],
         },
         {
+            fluid: ["tconstruct:molten_cobalt", BUCKET],
+            result: "extended_drawers:controller",
+            cooling_time: 194, // same as cooling cobalt block
+            cast: ["extended_drawers:shadow_drawer", true],
+        },
+        {
             fluid: ["tconstruct:liquid_soul", BUCKET],
             result: "minecraft:diorite",
             cooling_time: 80,
@@ -64,6 +70,19 @@ onEvent("recipes", (event) => {
             result: recipe.result,
             cooling_time: recipe.cooling_time,
         });
+    });
+
+    // any drawer
+    event.custom({
+        type: "tconstruct:casting_basin",
+        cast: {tag:"extended_drawers:drawers"},
+        cast_consumed: true,
+        fluid: {
+            name: "tconstruct:molten_tin",
+            amount: BUCKET,
+        },
+        result: "extended_drawers:shadow_drawer",
+        cooling_time: 117 // same as cooling tin block
     });
 
     const BLAZING_BLOOD_MADIC_AMOUNT = 1620;
