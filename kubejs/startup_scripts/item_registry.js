@@ -152,4 +152,48 @@ onEvent("item.registry", (event) => {
             "east": "createastral:item/incomplete_basic_machine_frame1"
         }
     });
+    event.create("createastral:incomplete_brass_casing", "create:sequenced_assembly").modelJson({
+        "parent": "minecraft:block/cube",
+        "textures": {
+            "up": "createastral:item/incomplete_brass_casing",
+            "down": "createastral:item/incomplete_brass_casing",
+            "north": "createastral:item/incomplete_brass_casing",
+            "south": "createastral:item/incomplete_brass_casing",
+            "west": "createastral:item/incomplete_brass_casing",
+            "east": "createastral:item/incomplete_brass_casing"
+        }
+    });
+    event.create("createastral:incomplete_industrial_machine_frame", "create:sequenced_assembly").modelJson({
+        "parent": "minecraft:block/cube",
+        "textures": {
+            "up": "createastral:item/incomplete_industrial_machine_frame",
+            "down": "createastral:item/incomplete_industrial_machine_frame",
+            "north": "createastral:item/incomplete_industrial_machine_frame",
+            "south": "createastral:item/incomplete_industrial_machine_frame",
+            "west": "createastral:item/incomplete_industrial_machine_frame",
+            "east": "createastral:item/incomplete_industrial_machine_frame"
+        }
+    });
+    event.create("createastral:incomplete_refined_radiance_casing", "create:sequenced_assembly").modelJson({
+        "parent": "minecraft:block/cube",
+        "textures": {
+            "up": "createastral:item/incomplete_refined_radiance_casing",
+            "down": "createastral:item/incomplete_refined_radiance_casing",
+            "north": "createastral:item/incomplete_refined_radiance_casing",
+            "south": "createastral:item/incomplete_refined_radiance_casing",
+            "west": "createastral:item/incomplete_refined_radiance_casing",
+            "east": "createastral:item/incomplete_refined_radiance_casing"
+        }
+    });
+    event.create("createastral:incomplete_shadow_steel_casing", "create:sequenced_assembly").modelJson({
+        "parent": "minecraft:block/cube",
+        "textures": {
+            "up": "createastral:item/incomplete_shadow_steel_casing",
+            "down": "createastral:item/incomplete_shadow_steel_casing",
+            "north": "createastral:item/incomplete_shadow_steel_casing",
+            "south": "createastral:item/incomplete_shadow_steel_casing",
+            "west": "createastral:item/incomplete_shadow_steel_casing",
+            "east": "createastral:item/incomplete_shadow_steel_casing"
+        }
+    });
 });
