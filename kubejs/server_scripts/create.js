@@ -672,26 +672,26 @@ function sequencedAssemblyRecipes(event) {
             event.recipes.createPressing("ad_astra:ostrum_engine", "ad_astra:ostrum_engine"),
         ]);
 
-        event.recipes.createSequencedAssembly(["ad_astra:calorite_engine"], "createastral:navigation_mechanism", [
-            event.recipes.createFilling("createastral:navigation_mechanism", [
-                "createastral:navigation_mechanism",
-                { fluid: "kubejs:molten_yttrium", amount: BUCKET },
+        event.recipes.createSequencedAssembly(["ad_astra:calorite_engine"], "astraladditions:fragile_item", [
+            event.recipes.createFilling("astraladditions:fragile_item", [
+                "astraladditions:fragile_item",
+                { fluid: "kubejs:molten_calorite", amount: BUCKET },
             ]),
-            event.recipes.createFilling("createastral:navigation_mechanism", [
-                "createastral:navigation_mechanism",
+            event.recipes.createFilling("astraladditions:fragile_item", [
+                "astraladditions:fragile_item",
                 { fluid: "yttr:void", amount: BUCKET },
             ]),
-            event.recipes.createDeploying("createastral:navigation_mechanism", [
-                "createastral:navigation_mechanism",
+            event.recipes.createDeploying("astraladditions:fragile_item", [
+                "astraladditions:fragile_item",
                 "techreborn:industrial_circuit",
             ]),
-            event.recipes.createDeploying("createastral:navigation_mechanism", [
-                "createastral:navigation_mechanism",
+            event.recipes.createDeploying("astraladditions:fragile_item", [
+                "astraladditions:fragile_item",
                 "createastral:subatomic_ingot",
             ]),
             event.recipes.createPressing("ad_astra:ostrum_engine", "ad_astra:ostrum_engine"),
         ]);
-
+        
         const inc_calc = "createastral:incomplete_calculation_processor";
         event.recipes
             .createSequencedAssembly(["ae2:calculation_processor"], "ae2:printed_silicon", [
