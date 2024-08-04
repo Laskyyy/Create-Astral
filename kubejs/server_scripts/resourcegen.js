@@ -90,7 +90,7 @@ function LakyCrushingRecipes(event) {
             outputs: [
                 ["minecraft:raw_iron", 1],
                 ["minecraft:raw_iron", 0.5],
-                ["minecraft:redstone_dust", 0.1],
+                ["minecraft:redstone", 0.1],
                 ["minecraft:granite", 0.5],
                 ["minecraft:red_dye", 0.25],
             ],
@@ -99,7 +99,7 @@ function LakyCrushingRecipes(event) {
             input: "create:limestone",
             outputs: [
                 ["techreborn:raw_tin", 1],
-                ["minecraft:raw_tin", 0.5],
+                ["techreborn:raw_tin", 0.5],
                 ["createastral:lime", 1],
                 ["createastral:lime", 0.5],
                 ["minecraft:clay", 0.5],
@@ -140,7 +140,7 @@ function LakyCrushingRecipes(event) {
             input: "minecraft:blackstone",
             outputs: [
                 ["create:powdered_obsidian", 0.3],
-                ["tconstruct:seared_cobblestone", 0.3],
+                ["tconstruct:seared_cobble", 0.3],
             ],
         },
         {

@@ -1,0 +1,68 @@
+{
+	"type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 10,
+        "max": 12
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "techreborn:basic_machine_frame"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "create:electron_tube"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:comparator"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:repeater"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "phonos:redstone_chip"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "createaddition:spool"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "createaddition:copper_spool"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "createaddition:copper_wire"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:redstone_block"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:redstone_torch"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:redstone"
+        }
+      ]
+    }
+  ]
+}

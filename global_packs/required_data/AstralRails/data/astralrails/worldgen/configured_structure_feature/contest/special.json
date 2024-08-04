@@ -3,7 +3,7 @@
     "start_pool": "astralrails:contest/special",
     "size": 7
   },
-  "biomes": "#astralrails:has_structure/dogstatue",
+  "biomes": "#astralrails:has_structure/special",
   "adapt_noise":true,
   "spawn_overrides": {
   },

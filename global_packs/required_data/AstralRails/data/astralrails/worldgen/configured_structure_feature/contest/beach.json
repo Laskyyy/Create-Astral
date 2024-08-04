@@ -3,9 +3,9 @@
     "start_pool": "astralrails:contest/beach",
     "size": 7
   },
-  "biomes": "minecraft:beach",
+  "biomes": "#minecraft:is_beach",
   "adapt_noise":true,
   "spawn_overrides": {
   },
-  "type": "minecraft:shipwreck"
+  "type": "minecraft:village"
 }

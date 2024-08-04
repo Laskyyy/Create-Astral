@@ -17,8 +17,9 @@ onEvent("recipes", (event) => {
         { output: "techreborn:quantum_tank_unit"},
 
         { output: "techreborn:chunk_loader" },
-        {output: "techreborn:pyrite_dust"},
+        { output: "techreborn:pyrite_dust"},
         { output: "ae2:spatial_anchor" },
+        { output: "techreborn:scrap_box" },
         { output: "techreborn:industrial_electrolyzer" },
         { output: "techreborn:industrial_sawmill" },
         { output: "techreborn:vacuum_freezer" },
@@ -142,9 +143,6 @@ onEvent("recipes", (event) => {
         { output: "create:veridium" },
         { output: "create:scoria" },
         { output: "create:scorchia" },
-        { output: "create:crushed_raw_tin" },
-        { output: "create:crushed_raw_silver" },
-        { output: "create:crushed_raw_lead" },
         { output: "create:crushed_raw_uranium" },
         { output: "create:electron_tube" },
         { output: "create:cogwheel", type: "minecraft:shaped" },
@@ -207,22 +205,6 @@ onEvent("recipes", (event) => {
         {
             type: "create:mixing",
             output: "tconstruct:queens_slime_ingot",
-        },
-        {
-            input: "minecraft:raw_iron",
-            output: "create:crushed_raw_iron",
-        },
-        {
-            input: "minecraft:raw_gold",
-            output: "create:crushed_raw_gold",
-        },
-        {
-            input: "minecraft:raw_copper",
-            output: "create:crushed_raw_copper",
-        },
-        {
-            input: "create:raw_zinc",
-            output: "create:crushed_raw_zinc",
         },
         {
             output: "create:brass_casing",
@@ -530,6 +512,7 @@ onEvent("recipes", (event) => {
         { output: "minecraft:gravel", input: "techreborn:granite_dust" },
         { output: "minecraft:gold_nugget", input: "minecraft:soul_soil" },
         {output: "ae2:silicon"},
+        {output: "blahaj:bread"},
         {id: "techreborn:centrifuge/redstone" }, // remove other version of centrifuging certus quartz
         { input: "minecraft:crying_obsidian" },
         {
