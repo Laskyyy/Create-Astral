@@ -311,6 +311,42 @@ onEvent("item.tooltip", (e) => {
             ]);
         }
     });
+    e.addAdvanced("astraladditions:fragile_item", (item, advanced, text) => {
+        if (!e.isShift()) {
+            text.add(1, [Text.of("WARNING: Hold ").red(), Text.of("Shift ").red(), Text.of("to see more info.").red()]);
+        }
+        if (e.isShift()) {
+            text.add(1, [
+                Text.of(
+                    "The intricate nature of this item causes it to shatter when mishandled! Do not hold in player inventories, it must be moved with logistical methods!"
+                ).red(),
+            ]);
+        }
+    });
+    e.addAdvanced("astraladditions:fragile_item_2", (item, advanced, text) => {
+        if (!e.isShift()) {
+            text.add(1, [Text.of("WARNING: Hold ").red(), Text.of("Shift ").red(), Text.of("to see more info.").red()]);
+        }
+        if (e.isShift()) {
+            text.add(1, [
+                Text.of(
+                    "The intricate nature of this item causes it to shatter when mishandled! Do not hold in player inventories, it must be moved with logistical methods!"
+                ).red(),
+            ]);
+        }
+    });
+    e.addAdvanced("astraladditions:fragile_item_3", (item, advanced, text) => {
+        if (!e.isShift()) {
+            text.add(1, [Text.of("WARNING: Hold ").red(), Text.of("Shift ").red(), Text.of("to see more info.").red()]);
+        }
+        if (e.isShift()) {
+            text.add(1, [
+                Text.of(
+                    "The intricate nature of this item causes it to shatter when mishandled! Do not hold in player inventories, it must be moved with logistical methods!"
+                ).red(),
+            ]);
+        }
+    });
     // Custom drawer upgrades
     for (const [item, mutliplier] of Object.entries(drawer_multipliers)) {
         e.add([item], Text.gray("Drawer Slot capacity: ").append(Text.green(`${mutliplier}x`)));

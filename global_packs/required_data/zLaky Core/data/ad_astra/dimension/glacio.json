@@ -4,7 +4,7 @@
     "type": "ad_astra:planet_noise",
     "seed": 3,
     "settings": {
-      "sea_level": 63,
+      "sea_level": 11,
       "disable_mob_generation": true,
       "aquifers_enabled": false,
       "ore_veins_enabled": false,
@@ -13,7 +13,7 @@
         "Name": "ad_astra:glacio_stone"
       },
       "default_fluid": {
-        "Name": "minecraft:air"
+        "Name": "minecraft:ice"
       },
       "noise": {
         "min_y": 0,
@@ -44,7 +44,7 @@
             "points": [
               {
                 "location": 0,
-                "derivative": -1.0,
+                "derivative": -1,
                 "value": {
                   "coordinate": "erosion",
                   "points": [
@@ -145,9 +145,9 @@
           "shift_z": "minecraft:shift_z"
         },
         "continents": "minecraft:overworld/continents",
-        "ridges": "minecraft:overworld/ridges",
         "erosion": "minecraft:overworld/erosion",
         "depth": "minecraft:overworld/depth",
+        "ridges": "minecraft:overworld/ridges",
         "initial_density_without_jaggedness": {
           "type": "minecraft:mul",
           "argument1": 4,
@@ -455,7 +455,9 @@
           }
         ]
       }
-    },
+    }
+,    
+    
     "biome_source": {
       "type": "minecraft:multi_noise",
       "biomes": [

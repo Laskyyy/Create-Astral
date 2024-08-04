@@ -56,8 +56,6 @@ function crushingRecipes(event) {
 
     // Remove grinder calcite dust
 
-    const CRUSHING_ORE_BONUS_ORE_YIELD = 0.33;
-    const CRUSHING_ORE_BONUS_XP_CHUNKS = 0.33;
 
     // input: "Item"
     // outputs: [
@@ -347,128 +345,6 @@ function crushingRecipes(event) {
         });
         event.recipes.createCrushing(cleanoutputs, recipe.input).processingTime(recipe.time ?? 200);
     });
-
-    // Replace all techreborn ores to require the crushing wheel for dusts
-    [
-        "sapphire",
-        "bauxite",
-        "cinnabar",
-        "ruby",
-        "galena",
-        "peridot",
-        "sodalite",
-        "pyrite",
-        "cinnabar",
-        "sphalerite",
-    ].forEach((ore) => {
-        const nodeepslate = ["pyrite", "cinnabar", "sphalerite"];
-        event.remove({
-            type: "techreborn:grinder",
-            input: "techreborn:" + ore + "_ore",
-        });
-        if (!nodeepslate.includes(ore)) {
-            event.remove({
-                type: "techreborn:grinder",
-                input: "techreborn:deepslate_" + ore + "_ore",
-            });
-        }
-        event.recipes.createCrushing(
-            ["techreborn:" + ore + "_dust", Item.of("techreborn:" + ore + "_dust").withChance(0.5)],
-            "techreborn:" + ore + "_ore"
-        );
-        if (!nodeepslate.includes(ore)) {
-            event.recipes.createCrushing(
-                ["techreborn:" + ore + "_dust", Item.of("techreborn:" + ore + "_dust").withChance(0.5)],
-                "techreborn:deepslate_" + ore + "_ore"
-            );
-        }
-    });
-
-    // Replaces the ore blocks with crushing recipes to produce raw ore instead of grinder recipes
-    ["silver", "deepslate_silver", "tin", "deepslate_tin", "lead", "deepslate_lead"].forEach((ore) => {
-        event.remove({
-            type: "techreborn:grinder",
-            input: "techreborn:" + ore + "_ore",
-        });
-        event.recipes.createCrushing(
-            ["2x techreborn:raw_" + ore.replace("deepslate_", "")],
-            "techreborn:" + ore + "_ore"
-        );
-    });
-
-    // Crushable raw techreborn storage blocks
-    ["silver", "tin", "lead"].forEach((ore) => {
-        event.recipes.createCrushing(
-            ["9x create:crushed_" + ore.replace("deepslate_", "") + "_ore", "3x create:experience_nugget"],
-            "techreborn:raw_" + ore + "_storage_block"
-        );
-    });
-
-    // Crushed Ore Items
-    [
-        {
-            mod: "techreborn",
-            ores: [
-                {
-                    name: "tin",
-                    extra: Item.of("minecraft:iron_nugget").withChance(0.2),
-                },
-                { name: "silver", extra: "" },
-                {
-                    name: "lead",
-                    extra: Item.of("minecraft:coal").withChance(0.2),
-                },
-            ],
-        },
-        {
-            mod: "ad_astra",
-            ores: [
-                {
-                    name: "desh",
-                    extra: Item.of("techreborn:silver_nugget").withChance(0.2),
-                },
-                {
-                    name: "ostrum",
-                    extra: Item.of("techreborn:lead_nugget").withChance(0.2),
-                },
-                { name: "calorite", extra: "" },
-            ],
-        },
-        {
-            mod: "yttr",
-            ores: [
-                {
-                    name: "gadolinite",
-                    extra: Item.of("techreborn:silver_nugget").withChance(0.2),
-                },
-            ],
-        },
-        {
-            mod: "create",
-            ores: [{ name: "zinc", extra: "" }],
-        },
-        {
-            mod: "minecraft",
-            ores: [
-                { name: "iron", extra: "" },
-                { name: "gold", extra: "" },
-                { name: "copper", extra: "" },
-            ],
-        },
-    ].forEach((mod) => {
-        mod.ores.forEach((ore) => {
-            let raw_ore = mod.mod + ":raw_" + ore.name;
-            let crushed_ore =
-                "create" + (mod.mod === "ad_astra" || mod.mod === "yttr" ? "astral" : "") + ":crushed_raw_" + ore.name;
-            let outputs = [
-                crushed_ore,
-                Item.of(crushed_ore).withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
-                Item.of("create:experience_nugget").withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
-            ];
-            if (ore.extra != "") outputs.push(ore.extra);
-            event.recipes.createCrushing(outputs, raw_ore);
-        });
-    });
 }
 function itemApplication(event) {
     // Ingredients: Array of objects, may include:
@@ -660,6 +536,156 @@ function sequencedAssemblyRecipes(event) {
             .transitionalItem("createastral:incomplete_electronic_circuit")
             .loops(1);
 
+            event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "astraladditions:fragile_item_3", // output
+                ],
+                "ad_astra:calorite_engine",
+                [
+                    // input
+                    event.recipes.createDeploying("ad_astra:calorite_engine", [
+                        "ad_astra:calorite_engine",
+                        "createastral:prismatic_crystal",
+                    ]),
+                    event.recipes.createDeploying("ad_astra:calorite_engine", [
+                        "ad_astra:calorite_engine",
+                        "createastral:prismatic_crystal",
+                    ]),
+                    event.recipes.createDeploying("ad_astra:calorite_engine", [
+                        "ad_astra:calorite_engine",
+                        "createastral:prismatic_crystal",
+                    ]),
+                    event.recipes.createFilling("ad_astra:ostrum_engine", [
+                        "ad_astra:ostrum_engine",
+                        { fluid: "kubejs:molten_radiance", amount: BUCKET },
+                    ]),
+                    event.recipes.createPressing(
+                        "ad_astra:calorite_engine",
+                        "ad_astra:calorite_engine"
+                    ),
+                ]
+            )
+            .transitionalItem("ad_astra:calorite_engine")
+            .loops(5);
+
+            event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "astraladditions:fragile_item", // output
+                ],
+                "createastral:navigation_mechanism",
+                [
+                    // input
+                    event.recipes.createDeploying("createastral:incomplete_navigation_mechanism", [
+                        "createastral:incomplete_navigation_mechanism",
+                        "techreborn:electronic_circuit",
+                    ]),
+                    event.recipes.createPressing(
+                        "createastral:incomplete_navigation_mechanism",
+                        "createastral:incomplete_navigation_mechanism"
+                    ),
+                    event.recipes.createPressing(
+                        "createastral:incomplete_navigation_mechanism",
+                        "createastral:incomplete_navigation_mechanism"
+                    ),
+                    event.recipes.createFilling("createastral:incomplete_navigation_mechanism", [
+                        "createastral:incomplete_navigation_mechanism",
+                        { fluid: "ad_astra:cryo_fuel", amount: BUCKET },
+                    ]),
+                    event.recipes.createPressing(
+                        "createastral:incomplete_navigation_mechanism",
+                        "createastral:incomplete_navigation_mechanism"
+                    ),
+                ]
+            )
+            .transitionalItem("createastral:incomplete_navigation_mechanism")
+            .loops(4);
+
+            event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "create:brass_casing", // output
+                ],
+                "create:copper_casing",
+                [
+                    // input
+                    event.recipes.createDeploying("createastral:incomplete_brass_casing", [
+                        "createastral:incomplete_brass_casing",
+                        "createaddition:brass_rod",
+                    ]),
+                    event.recipes.createFilling("createastral:incomplete_brass_casing", [
+                        "createastral:incomplete_brass_casing",
+                        { fluid: "tconstruct:molten_brass", amount: NUGGET },
+                    ]),
+                    event.recipes.createDeploying("createastral:incomplete_brass_casing", [
+                        "createastral:incomplete_brass_casing",
+                        "create:brass_sheet",
+                    ]),
+                    event.recipes.createPressing(
+                        "createastral:incomplete_brass_casing",
+                        "createastral:incomplete_brass_casing"
+                    ),
+                ]
+            )
+            .transitionalItem("createastral:incomplete_brass_casing")
+            .loops(3);
+
+            event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "techreborn:advanced_machine_frame", // output
+                ],
+                "techreborn:basic_machine_frame",
+                [
+                    // input
+                    event.recipes.createDeploying("createastral:incomplete_advanced_machine_frame", [
+                        "createastral:incomplete_advanced_machine_frame",
+                        "techreborn:lead_plate",
+                    ]),
+                    event.recipes.createFilling("createastral:incomplete_advanced_machine_frame", [
+                        "createastral:incomplete_advanced_machine_frame",
+                        { fluid: "kubejs:blast-resistant_cement", amount: BUCKET },
+                    ]),
+                    event.recipes.createDeploying("createastral:incomplete_advanced_machine_frame", [
+                        "createastral:incomplete_advanced_machine_frame",
+                        "techreborn:lead_plate",
+                    ]),
+                ]
+            )
+            .transitionalItem("createastral:incomplete_advanced_machine_frame")
+            .loops(1);
+
+            event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "techreborn:industrial_machine_frame", // output
+                ],
+                "techreborn:advanced_machine_frame",
+                [
+                    // input
+                    event.recipes.createDeploying("createastral:incomplete_industrial_machine_frame", [
+                        "createastral:incomplete_industrial_machine_frame",
+                        "ad_astra:ostrum_plate",
+                    ]),
+                    event.recipes.createDeploying("createastral:incomplete_industrial_machine_frame", [
+                        "createastral:incomplete_industrial_machine_frame",
+                        "techreborn:machine_parts",
+                    ]),
+                    event.recipes.createDeploying("createastral:incomplete_industrial_machine_frame", [
+                        "createastral:incomplete_industrial_machine_frame",
+                        "ad_astra:ostrum_plate",
+                    ]),
+                ]
+            )
+            .transitionalItem("createastral:incomplete_industrial_machine_frame")
+            .loops(1);
+
         let transitional_lapis_sheet = "createastral:transitional_lapis_sheet";
         event.recipes
             .createSequencedAssembly(["create:integrated_circuit"], "create:lapis_sheet", [
@@ -711,7 +737,7 @@ function sequencedAssemblyRecipes(event) {
         event.recipes.createSequencedAssembly(["ad_astra:calorite_engine"], "ad_astra:ostrum_engine", [
             event.recipes.createFilling("ad_astra:ostrum_engine", [
                 "ad_astra:ostrum_engine",
-                { fluid: "kubejs:molten_calorite", amount: BUCKET },
+                { fluid: "kubejs:molten_yttrium", amount: BUCKET },
             ]),
             event.recipes.createFilling("ad_astra:ostrum_engine", [
                 "ad_astra:ostrum_engine",
@@ -728,26 +754,26 @@ function sequencedAssemblyRecipes(event) {
             event.recipes.createPressing("ad_astra:ostrum_engine", "ad_astra:ostrum_engine"),
         ]);
 
-        event.recipes.createSequencedAssembly(["ad_astra:calorite_engine"], "createastral:navigation_mechanism", [
-            event.recipes.createFilling("createastral:navigation_mechanism", [
-                "createastral:navigation_mechanism",
+        event.recipes.createSequencedAssembly(["ad_astra:calorite_engine"], "astraladditions:fragile_item", [
+            event.recipes.createFilling("astraladditions:fragile_item", [
+                "astraladditions:fragile_item",
                 { fluid: "kubejs:molten_calorite", amount: BUCKET },
             ]),
-            event.recipes.createFilling("createastral:navigation_mechanism", [
-                "createastral:navigation_mechanism",
+            event.recipes.createFilling("astraladditions:fragile_item", [
+                "astraladditions:fragile_item",
                 { fluid: "yttr:void", amount: BUCKET },
             ]),
-            event.recipes.createDeploying("createastral:navigation_mechanism", [
-                "createastral:navigation_mechanism",
+            event.recipes.createDeploying("astraladditions:fragile_item", [
+                "astraladditions:fragile_item",
                 "techreborn:industrial_circuit",
             ]),
-            event.recipes.createDeploying("createastral:navigation_mechanism", [
-                "createastral:navigation_mechanism",
+            event.recipes.createDeploying("astraladditions:fragile_item", [
+                "astraladditions:fragile_item",
                 "createastral:subatomic_ingot",
             ]),
             event.recipes.createPressing("ad_astra:ostrum_engine", "ad_astra:ostrum_engine"),
         ]);
-
+        
         const inc_calc = "createastral:incomplete_calculation_processor";
         event.recipes
             .createSequencedAssembly(["ae2:calculation_processor"], "ae2:printed_silicon", [
@@ -1076,31 +1102,33 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem(inc_redstone_chip)
         .loops(12);
 
-    event.recipes
+        event.recipes
         .createSequencedAssembly(
             [
                 // begin
-                "dbe:server_rack", // output
+                "createastral:shimmer_amplifier", // output
             ],
-            "#computercraft:monitor",
+            "createbigcannons:nethersteel_screw_breech",
             [
                 // input
-                event.recipes.createFilling("createastral:incomplete_electronic_circuit", [
-                    "createastral:incomplete_electronic_circuit",
-                    { fluid: "ad_astra:cryo_fuel", amount: 500 * mB },
+                event.recipes.createFilling("createbigcannons:nethersteel_screw_breech", [
+                    "createbigcannons:nethersteel_screw_breech",
+                    { fluid: "kubejs:shimmer", amount: 9000 * mB },
                 ]),
-                event.recipes.createDeploying("createastral:incomplete_electronic_circuit", [
-                    "createastral:incomplete_electronic_circuit",
-                    "techreborn:machine_parts",
+                event.recipes.createFilling("createbigcannons:nethersteel_screw_breech", [
+                    "createbigcannons:nethersteel_screw_breech",
+                    { fluid: "techreborn:lithium", amount: 3000 * mB },
                 ]),
-                event.recipes.createDeploying("createastral:incomplete_electronic_circuit", [
-                    "createastral:incomplete_electronic_circuit",
-                    "createastral:navigation_mechanism",
+                event.recipes.createFilling("createbigcannons:nethersteel_screw_breech", [
+                    "createbigcannons:nethersteel_screw_breech",
+                    { fluid: "techreborn:potassium", amount: 3000 * mB },
                 ]),
+
             ]
         )
         .transitionalItem("createastral:incomplete_electronic_circuit")
-        .loops(10);
+        .loops(9);
+
 
     const inc_dash_panel = "createastral:incomplete_dash_panel"
     //Dash panel
@@ -1167,7 +1195,7 @@ function fillingRecipes(event) {
         {
             input: "create:blaze_cake_base",
             output: "create:blaze_cake",
-            fluid: "techreborn:nitro_diesel",
+            fluid: "kubejs:hellfire",
             amount: 250 * mB,
         },
         {
@@ -1618,7 +1646,7 @@ function mixingRecipes(event) {
             time: 40,
         },
         {
-            output: "1x ae2:certus_quartz",
+            output: "2x ae2:certus_quartz_crystal",
             input: [{ fluid: "minecraft:water", amount: 250 * mB }, "1x ae2:certus_quartz_dust"],
             heat: "heated",
             time: 40,
@@ -1826,6 +1854,18 @@ function mixingRecipes(event) {
             ],
             heat: "",
             time: 30,
+        },
+        {
+            output: [
+                "minecraft:sponge",
+                "minecraft:clay"
+         ],
+            input: [
+                "minecraft:wet_sponge",
+                "minecraft:sand",
+            ],
+            heat: "",
+            time: 50,
         },
         {
             output: [{ fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET }],
@@ -2184,9 +2224,9 @@ function mechanicalCraftingRecipes(event) {
                 B: "create:shadow_steel_casing",
                 C: "create:refined_radiance_casing",
                 D: "createastral:subatomic_ingot",
-                E: "createastral:navigation_mechanism",
+                E: "astraladditions:fragile_item_2",
                 F: "techreborn:fusion_control_computer",
-                G: "ad_astra:calorite_tank",
+                G: "astraladditions:fragile_item_3",
                 H: "ad_astra:calorite_engine",
                 I: "ad_astra:rocket_fin",
             },
@@ -2592,6 +2632,10 @@ function compactingRecipes(event) {
         {
             output: "createastral:compressed_experience_block",
             inputs: ["9x create:experience_block"],
+        },
+        {
+            output: ["minecraft:sponge", "minecraft:clay"],
+            inputs: ["minecraft:wet_sponge", "minecraft:sand"],
         },
         {
             output: { fluid: "kubejs:white_grape_juice", amount: 6750 },

@@ -29,6 +29,10 @@ onEvent("block.modification", (event) => {
     event.modify("minecraft:furnace", (block) => {
         block.material = "Lantern";
     });
+    event.modify("yttr:continuous_platform", (block) => {
+        block.destroySpeed = 3;
+        block.explosionResistance = 99999;
+    });
 
     event.modify("minecraft:smoker", (block) => {
         block.material = "Lantern";

@@ -38,8 +38,8 @@
     },
     {
       "rolls": {
-        "min": 1,
-        "max": 2
+        "min": 2,
+        "max": 3
       },
       "bonus_rolls": 1,
       "entries": [
@@ -68,6 +68,10 @@
               "count": 2
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "create:track_signal"
         }
       ]
     }
