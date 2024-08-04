@@ -3218,7 +3218,7 @@ hash = "c01fc1a19f3f5cbd4081e0192334ec916a96174f95049b32672602ec29b7a191"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/astralsignals/machines/drive_eraser.json"
-hash = "28cc0b8113bad0788cb7e6947cba30424fd2f6b8d2a77de9a0a9858a39b7fe91"
+hash = "41186ea4950c1d15476de84912545026846ecc0f8b226c2a5425314bb84f42f1"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/astralsignals/machines/mp_decryptor.json"
@@ -12817,24 +12817,56 @@ file = "kubejs/README.txt"
 hash = "9c2e224068560b5942f4a0a9fe8a54fe7382dbc37c36043ab402a0ceecc259f6"
 
 [[files]]
+file = "kubejs/assets/astralsignals/models/block/analog_decryptor_dummy.json"
+hash = "98b00a56d32c7c10f94ddff90c7f842c6489c9b00068a063286416dc2096c172"
+
+[[files]]
 file = "kubejs/assets/astralsignals/models/block/drive_eraser_dummy.json"
-hash = "6b24253eb82bd734d3eacd02e3865b0f387e7dd31527de17476ce92fb8190788"
+hash = "5984d31a0844ee275295fd403a232702d94c06489c5130eb775d303ce22a1db8"
+
+[[files]]
+file = "kubejs/assets/astralsignals/models/block/pp_decryptor_dummy.json"
+hash = "e94903bf0d1f597acb46cc0200947e6bd1e176d4d0be9a5cb2f4129751c05b69"
 
 [[files]]
 file = "kubejs/assets/astralsignals/models/block/radio_telescope_dummy.json"
-hash = "e72cac927234b0baf127c2f85a34da74f1154545275cac42ec84dee7557020ef"
+hash = "11d323705f352a7dea8fbfb6ba3ca98788ce7e1e6f8c8ebdaae9643f29b5b59a"
 
 [[files]]
 file = "kubejs/assets/astralsignals/models/block/signal_coordinator_dummy.json"
 hash = "b484d6c5f1e99acd5dcefe73981d03c1f4dc80653fa50d3a4104d057e2194005"
 
 [[files]]
+file = "kubejs/assets/astralsignals/models/block/vinyl_printer_dummy.json"
+hash = "5d1d32120bfc4992c4f69b964b40ef981647bfcd7bc5cba36601ae8badb74b1d"
+
+[[files]]
+file = "kubejs/assets/astralsignals/textures/block/analog_decryptor_dummy_body.png"
+hash = "6bf965fd20ae0517f6479003e30e3ef740422ac43ffab30043c87d816112ea7a"
+
+[[files]]
+file = "kubejs/assets/astralsignals/textures/block/analog_decryptor_dummy_cogwheel.png"
+hash = "62d211b4cadda3bcfbad823f3cdc20ee14571863ce1cc66d9d2e827da8a2b9d9"
+
+[[files]]
 file = "kubejs/assets/astralsignals/textures/block/drive_eraser_dummy.png"
 hash = "0ce8edd2a694aeea7f6843ae90ba4315017afbda277356b782fd3ca14b5aa84e"
 
 [[files]]
+file = "kubejs/assets/astralsignals/textures/block/pp_decryptor_dummy.png"
+hash = "91529e1ddff33cdea93fb61d10bf72702088d8a1e9b249dc1b773a8e5b7ac931"
+
+[[files]]
+file = "kubejs/assets/astralsignals/textures/block/radio_telescope_dummy.png"
+hash = "d99a419e7d93bcdacb2c7ebf96f51add04e3a241bc1707e0f25e94de43c6d738"
+
+[[files]]
 file = "kubejs/assets/astralsignals/textures/block/signal_coordinator_dummy.png"
 hash = "cdbc552699d67697d1e88911400dd0651ee891d73feefc80f7dd2e11e14c2d03"
+
+[[files]]
+file = "kubejs/assets/astralsignals/textures/block/vinyl_printer_dummy.png"
+hash = "81a5532cc7f8ec1c49f073fadfbfa1d77f89a18cbffa4cd44408847018795573"
 
 [[files]]
 file = "kubejs/assets/astralsignals/textures/item/ancient_receiver.png"
@@ -12846,14 +12878,26 @@ hash = "4487a007342197d22fa742302b6ca3dda7bf8b06856b3d879b7092f446524b71"
 
 [[files]]
 file = "kubejs/assets/astralsignals/textures/item/data_drive_decrypted_t1.png"
-hash = "5d4f1a6eb0821179660c900a010b6b9f4681783e5dcbdde0cacda9942a9271fd"
+hash = "02afb59157c288bf3a0d265cff9eebcf98f362811b1ece9f06f865d4b9ad95d5"
 
 [[files]]
 file = "kubejs/assets/astralsignals/textures/item/data_drive_decrypted_t2.png"
-hash = "fb7de97a2d839f0d77f73d75bdba08405f17e3e143c7967f7637c944f4147463"
+hash = "ef4ae4979d18f3ce8fd42980e79ce6816515fbd949a4e3f8885b98d032380da0"
 
 [[files]]
 file = "kubejs/assets/astralsignals/textures/item/data_drive_decrypted_t3.png"
+hash = "a71f70691c013a0a8d5011c4332188651b23eb322c50aede56fd497a8b9c5ac3"
+
+[[files]]
+file = "kubejs/assets/astralsignals/textures/item/data_drive_dormant_t1.png"
+hash = "5d4f1a6eb0821179660c900a010b6b9f4681783e5dcbdde0cacda9942a9271fd"
+
+[[files]]
+file = "kubejs/assets/astralsignals/textures/item/data_drive_dormant_t2.png"
+hash = "fb7de97a2d839f0d77f73d75bdba08405f17e3e143c7967f7637c944f4147463"
+
+[[files]]
+file = "kubejs/assets/astralsignals/textures/item/data_drive_dormant_t3.png"
 hash = "8f45b2405f65ee7668ee620944b2ec287dd2a0b66440aeac335d0b83d3529d9a"
 
 [[files]]

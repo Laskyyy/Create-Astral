@@ -2,7 +2,7 @@
     "credit": "Made with Blockbench",
     "parent": "create:block/large_wheels",
     "textures": {
-        "1": "astralsignals:block/pp_decryptor",
+        "1": "astralsignals:block/pp_decryptor_dummy",
         "particle": "create:copper_casing"
     },
     "elements": [
