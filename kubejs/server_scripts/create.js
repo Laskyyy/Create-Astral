@@ -604,6 +604,88 @@ function sequencedAssemblyRecipes(event) {
             .transitionalItem("createastral:incomplete_navigation_mechanism")
             .loops(4);
 
+            event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "create:brass_casing", // output
+                ],
+                "create:copper_casing",
+                [
+                    // input
+                    event.recipes.createDeploying("createastral:incomplete_brass_casing", [
+                        "createastral:incomplete_brass_casing",
+                        "createaddition:brass_rod",
+                    ]),
+                    event.recipes.createFilling("createastral:incomplete_brass_casing", [
+                        "createastral:incomplete_brass_casing",
+                        { fluid: "tconstruct:molten_brass", amount: NUGGET },
+                    ]),
+                    event.recipes.createDeploying("createastral:incomplete_brass_casing", [
+                        "createastral:incomplete_brass_casing",
+                        "create:brass_sheet",
+                    ]),
+                    event.recipes.createPressing(
+                        "createastral:incomplete_brass_casing",
+                        "createastral:incomplete_brass_casing"
+                    ),
+                ]
+            )
+            .transitionalItem("createastral:incomplete_brass_casing")
+            .loops(3);
+
+            event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "techreborn:advanced_machine_frame", // output
+                ],
+                "techreborn:basic_machine_frame",
+                [
+                    // input
+                    event.recipes.createDeploying("createastral:incomplete_advanced_machine_frame", [
+                        "createastral:incomplete_advanced_machine_frame",
+                        "techreborn:lead_plate",
+                    ]),
+                    event.recipes.createFilling("createastral:incomplete_advanced_machine_frame", [
+                        "createastral:incomplete_advanced_machine_frame",
+                        { fluid: "kubejs:blast-resistant_cement", amount: BUCKET },
+                    ]),
+                    event.recipes.createDeploying("createastral:incomplete_advanced_machine_frame", [
+                        "createastral:incomplete_advanced_machine_frame",
+                        "techreborn:lead_plate",
+                    ]),
+                ]
+            )
+            .transitionalItem("createastral:incomplete_advanced_machine_frame")
+            .loops(1);
+
+            event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "techreborn:industrial_machine_frame", // output
+                ],
+                "techreborn:advanced_machine_frame",
+                [
+                    // input
+                    event.recipes.createDeploying("createastral:incomplete_industrial_machine_frame", [
+                        "createastral:incomplete_industrial_machine_frame",
+                        "ad_astra:ostrum_plate",
+                    ]),
+                    event.recipes.createDeploying("createastral:incomplete_industrial_machine_frame", [
+                        "createastral:incomplete_industrial_machine_frame",
+                        "techreborn:machine_parts",
+                    ]),
+                    event.recipes.createDeploying("createastral:incomplete_industrial_machine_frame", [
+                        "createastral:incomplete_industrial_machine_frame",
+                        "ad_astra:ostrum_plate",
+                    ]),
+                ]
+            )
+            .transitionalItem("createastral:incomplete_industrial_machine_frame")
+            .loops(1);
+
         let transitional_lapis_sheet = "createastral:transitional_lapis_sheet";
         event.recipes
             .createSequencedAssembly(["create:integrated_circuit"], "create:lapis_sheet", [

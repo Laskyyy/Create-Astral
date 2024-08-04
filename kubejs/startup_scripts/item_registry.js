@@ -163,6 +163,17 @@ onEvent("item.registry", (event) => {
             "east": "createastral:item/incomplete_brass_casing"
         }
     });
+    event.create("createastral:incomplete_advanced_machine_frame", "create:sequenced_assembly").modelJson({
+        "parent": "minecraft:block/cube",
+        "textures": {
+            "up": "createastral:item/incomplete_advanced_machine_frame",
+            "down": "createastral:item/incomplete_advanced_machine_frame",
+            "north": "createastral:item/incomplete_advanced_machine_frame",
+            "south": "createastral:item/incomplete_advanced_machine_frame",
+            "west": "createastral:item/incomplete_advanced_machine_frame",
+            "east": "createastral:item/incomplete_advanced_machine_frame"
+        }
+    });
     event.create("createastral:incomplete_industrial_machine_frame", "create:sequenced_assembly").modelJson({
         "parent": "minecraft:block/cube",
         "textures": {
