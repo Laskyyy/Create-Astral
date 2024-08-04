@@ -12825,6 +12825,10 @@ file = "kubejs/assets/astralsignals/models/block/drive_eraser_dummy.json"
 hash = "5984d31a0844ee275295fd403a232702d94c06489c5130eb775d303ce22a1db8"
 
 [[files]]
+file = "kubejs/assets/astralsignals/models/block/mp_decryptor_dummy.json"
+hash = "87ab83de6115d34e5a3ba7eeb606c47ec15455839024c0a6c534f85122ad633a"
+
+[[files]]
 file = "kubejs/assets/astralsignals/models/block/pp_decryptor_dummy.json"
 hash = "e94903bf0d1f597acb46cc0200947e6bd1e176d4d0be9a5cb2f4129751c05b69"
 
@@ -12851,6 +12855,14 @@ hash = "62d211b4cadda3bcfbad823f3cdc20ee14571863ce1cc66d9d2e827da8a2b9d9"
 [[files]]
 file = "kubejs/assets/astralsignals/textures/block/drive_eraser_dummy.png"
 hash = "0ce8edd2a694aeea7f6843ae90ba4315017afbda277356b782fd3ca14b5aa84e"
+
+[[files]]
+file = "kubejs/assets/astralsignals/textures/block/mp_decryptor_dummy_body.png"
+hash = "0ab3cb8351f500935daf689b87439e4cb5ea34e892fb32489c3c5024db432c78"
+
+[[files]]
+file = "kubejs/assets/astralsignals/textures/block/mp_decryptor_dummy_probe.png"
+hash = "12300cb7b3e9cf747ab27d360854db5484dc784fc507e5ffa8847c619bc56efb"
 
 [[files]]
 file = "kubejs/assets/astralsignals/textures/block/pp_decryptor_dummy.png"
