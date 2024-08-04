@@ -31,7 +31,7 @@ onEvent("recipes", (event) => {
         {
             inputs: {
                 A: "create:cut_tuff",
-                B: "create:display_link",
+                B: "create:display_board",
                 C: "create:electron_tube",
                 D: "computercraft:disk_drive",
             },
@@ -65,7 +65,7 @@ onEvent("recipes", (event) => {
                 A: "create:cut_tuff",
                 B: "astralsignals:microphysical_probe",
                 C: "techreborn:industrial_circuit",
-                D: "create:train_casing",
+                D: "create:railway_casing",
                 E: "computercraft:disk_drive",
             },
             shape: ["ABA", "CDC", "AEA"],

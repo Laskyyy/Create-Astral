@@ -12990,7 +12990,7 @@ hash = "7936a3fb149726799bcf20425fe3d66e71feb3287e77f9e7a8148f61db7389b7"
 
 [[files]]
 file = "kubejs/server_scripts/astral_signals_crafting.js"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+hash = "4104bfed707e7558996e68a2d0a1e4d868de21e103c61fc804c758afa80f0891"
 
 [[files]]
 file = "kubejs/server_scripts/astral_signals_machines.js"
