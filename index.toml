@@ -914,7 +914,7 @@ hash = "23bf8c2d9333715eef8485252377836a6e8658872d75591deade5d9f286dd322"
 
 [[files]]
 file = "config/techreborn/machines.json"
-hash = "07922635addffb53175656b3456a584b1923312f64cbd68a53c39631d04f448a"
+hash = "eebcbc795601e339fbed35622e4926c24cedfd21bab553883b20c13636dbb626"
 
 [[files]]
 file = "config/techreborn/misc.json"
@@ -938,7 +938,7 @@ hash = "bf6a59b6619e082b22479a0d88776e4a9ae595346e8ee1c4ce757714e56fcd16"
 
 [[files]]
 file = "config/travelersbackpack.json5"
-hash = "c2951c977bffa8f99fa444a798f48fd0c855368f5bc4fc295fac64cea859dd1b"
+hash = "8295717e8ac0dffff4b6e3745268a2abc8ff6a4084953655690b11bdb2b24ec6"
 
 [[files]]
 file = "config/utilities.json"
@@ -1026,7 +1026,7 @@ hash = "8bdf892e2f55ed81d62f2b263e2d01ef0bc87492e47beb90dc211b5629c5cd82"
 
 [[files]]
 file = "dummy.txt"
-hash = "f208e01678d407423724f4b250783244cf05e5d2e6d2c8f42744633888bac2ef"
+hash = "54ca0aa229f597ef904995c2291b6da833479f2c2075d22dbc3531537d682ba8"
 
 [[files]]
 file = "fancymenustuff/btn1.png"
@@ -4002,7 +4002,7 @@ hash = "abac6a65a5a269bd358cb196959b81ca3ff82b284fbe65c56cfcbcb5fa5cff68"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/machines/electrolyser.json"
-hash = "c8017458f0de1d9c8f1b86c818ee3fbd9337e968915bbc014dabeb6cd1365c93"
+hash = "cb6b8a9874cb271a0cd30cfd20e08abd6ae1d219a011470539d42d90f9440067"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/machines/shimmer_refinery.json"
@@ -4078,11 +4078,11 @@ hash = "f06a185d6c5e744416a9eac3be866b6dbe735abe13265c8a8f4fe40c39ad2951"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/recipes/electrolyser/oxygen.json"
-hash = "e72f2f3cc13d0294c5f83965c512b4adfa230bff6e69ab5023c45f0308c50c18"
+hash = "8e5cbcc42d8b4204e94cad22b72fb34082a089aa920c36ffc864e51dff195ce8"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/recipes/electrolyser/oxygenfallback.json"
-hash = "b2d273e9efd62e15ccfec9c286615e955a2b1de0b0ced46e527df8ed3a865e40"
+hash = "0b1f2b9a320e7f75064f45ed54e67214801dd2dd43e53fbc1e0d0a831425e76c"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/recipes/shimmer_refinery/refined_shimmer.json"
@@ -12822,7 +12822,7 @@ hash = "7936a3fb149726799bcf20425fe3d66e71feb3287e77f9e7a8148f61db7389b7"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
-hash = "d1e53542390eabcec27e46021929ebb57f20d04ce094d560e4c4564765520bcd"
+hash = "700b43e56d123b70ac4605638da3fb3a440abf13f7593cc2aac32aafacefd96a"
 
 [[files]]
 file = "kubejs/server_scripts/createaddons.js"
@@ -12850,7 +12850,7 @@ hash = "9f4b3bfeaace374727e95b85244d15436933fde0a6eec876484546a2f34895a0"
 
 [[files]]
 file = "kubejs/server_scripts/interaction.js"
-hash = "a90171933edc9d6fb6bbc91d70796c797a05d8ff7f02006f617d0ca37be6c075"
+hash = "83d1fde164e983cd96894f6ea22e47e34bb2ea49f61f6bc22df001aee9e36eea"
 
 [[files]]
 file = "kubejs/server_scripts/packing.js"
@@ -12858,11 +12858,11 @@ hash = "1becce5642c6ca74f664127d62e3039cec9ac69a95b0e0f650113cd6fb56d393"
 
 [[files]]
 file = "kubejs/server_scripts/removals.js"
-hash = "c5ea17e1e5cb3ec83231f5207dd324c9d1ba7f16350e41c7b779d32c3fdad5ae"
+hash = "1c292ae98c4ca2011b5ac5b26f1ec841c75ff6fd792411cb2e3e9356005011b6"
 
 [[files]]
 file = "kubejs/server_scripts/replacements.js"
-hash = "ea8e7c7ce1762c6c08c9221fc136b64e51cba5ef4db5a37f46fff3f54920f20a"
+hash = "f30b524bf159f687d84e8a00712a9a33678feb83f5e563701efcd3fbdc4120b7"
 
 [[files]]
 file = "kubejs/server_scripts/resourcegen.js"
@@ -12874,11 +12874,23 @@ hash = "b14d492175c12c237a35159c6621010426d5249fd9720b100ac2e73d8d35fb7b"
 
 [[files]]
 file = "kubejs/server_scripts/server.js"
-hash = "e09069abcd0ac431cebcc918d9ddd83aeb54bba53fd72f7217e22248d407d078"
+hash = "84dca8f46dbded97e498e658e6c9af43c1dac6ebdcec3022c4771e2b83a4ce06"
 
 [[files]]
 file = "kubejs/server_scripts/sheets.js"
 hash = "377cbd329e3fe1f40edd29293b12efb379f0e1027d7482b04c54b93c8b0657c7"
+
+[[files]]
+file = "kubejs/server_scripts/smithing.js"
+hash = "5240a76f5aeb7e51e0ecbbc98a404be5cc5228d69be5f07cc05b789efc2bd0c5"
+
+[[files]]
+file = "kubejs/server_scripts/tags/backpack.js"
+hash = "c6ac962dcbe0df6b629108be12d9b0ef5c7ec7d2fcfccdf7c53a30e89c8ac266"
+
+[[files]]
+file = "kubejs/server_scripts/tags/for_recipes.js"
+hash = "75551ae9dc01ec86fdd48cc74a7b4e2d4e0fe3365bc183e2d57115f4a975247a"
 
 [[files]]
 file = "kubejs/server_scripts/tags/graveReplaceBlacklist.js"
@@ -12889,12 +12901,16 @@ file = "kubejs/server_scripts/tags/logs.js"
 hash = "3d0d14d9f4dc930b87c4a49be8411c63b9a6e871acef359b8d5aec0098bb310a"
 
 [[files]]
+file = "kubejs/server_scripts/tags/wrench.js"
+hash = "393073dffdcfaa332d714a804f636cd5bc5e1725228f7f7c580097b305896bf4"
+
+[[files]]
 file = "kubejs/server_scripts/tconstruct.js"
-hash = "26f232f1e48ea63ba6aa33307c17ef7303078dbc1b73a8464c3d8730afb2c74c"
+hash = "c6029e24c7125bfd53b1b7cde15a5c4fa7e8da76546fcd36b0dc328a28f85223"
 
 [[files]]
 file = "kubejs/server_scripts/techreborn.js"
-hash = "c7910d5532ce25fa76117d5044556fb1b321b4a41b75d47f089e0165db937d98"
+hash = "83b6533a33f5b803ce7d9f70bacc5ac28ffd1f4916ce7fceb9f4f1784a568549"
 
 [[files]]
 file = "kubejs/server_scripts/vinery.js"
@@ -12906,7 +12922,7 @@ hash = "549d73b4a709fe237a79fc99966e78c95d40e7613d0e10aca74183c65d8c6262"
 
 [[files]]
 file = "kubejs/startup_scripts/block_registry.js"
-hash = "e509eb4b8366f80b0af1a144b7b4d92ab6639c957be0500ef09b2d88669e181c"
+hash = "dfa9743c2dd93ff8b9824381f899d857640728214e294eb45410ef2c9b36a22f"
 
 [[files]]
 file = "kubejs/startup_scripts/fluid_registry.js"
@@ -12914,7 +12930,7 @@ hash = "ba8e8f0e78facea11b6e203c3f26013b4ad2622028817263fa19cabf3e380449"
 
 [[files]]
 file = "kubejs/startup_scripts/item_registry.js"
-hash = "fcf13eee1394f79cb45172349a91b8a98bab472aed91d8e36a31efe8823c4a30"
+hash = "f993cd0a1c10d63dca9c4a2e94d591b6b41705bdcbb04db03dd1fa569306e138"
 
 [[files]]
 file = "kubejs/startup_scripts/item_tooltip.js"
@@ -12922,7 +12938,7 @@ hash = "abe1196ba286849f979b23de8060172236deb50a0378ac659082a795595121fd"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
-hash = "35f784bc33012683f54ecab15017d1cf6b1b266ee7487b1ccadb5463b991e73c"
+hash = "d370c4ee46f077c413fdcc8c50546a1c9d5a966a0ba12c4061c036158c534bc0"
 
 [[files]]
 file = "kubejs/startup_scripts/worldgen.js"
@@ -13718,6 +13734,10 @@ hash = "21caf42aee36ccdd72c0437e7ed6587769630afa49267f59647e75f1274fa8b8"
 file = "mods/spark.pw.toml"
 hash = "667ebd3f08555049b81829991564c655e5adb4346d0f019084dd343d3f75c8c7"
 metafile = true
+
+[[files]]
+file = "mods/starei-1.0.0.jar"
+hash = "339cf73aac5c581570ff5fba960d9627595109c6121a5324e2d3c3b4d3509f82"
 
 [[files]]
 file = "mods/starlight.pw.toml"
@@ -27406,6 +27426,10 @@ file = "resources/createastral/textures/block/blast_top.png"
 hash = "b9c9e51dd13aa89691a59ec0083a3cc936828f7390f841ec132e20ae62d777d1"
 
 [[files]]
+file = "resources/createastral/textures/block/broken_sturdy_sheet_block.png"
+hash = "9af6f634fbdc406a57746933e215146b0a1f78df1344cf8cb13dffecb1e9d029"
+
+[[files]]
 file = "resources/createastral/textures/block/bronze_block.png"
 hash = "643bda4f22e4296ba9dcd786401610ce691480a26f9f1751fadb8031796c50f0"
 
@@ -27436,6 +27460,18 @@ hash = "e0ae56a151c19625dc2c74d1029b4956082af6d8244be8818e17ca5dc588d24f"
 [[files]]
 file = "resources/createastral/textures/block/example_block.png"
 hash = "783d78bd1ee61d3b32273670dff9d82c34cd74c5ae899a10f104f473828d5bbc"
+
+[[files]]
+file = "resources/createastral/textures/block/fragile_sheet_block.png"
+hash = "7aeb0d97021c991d416100c256ea5fa4df9ae553d3e9024714527891415fd903"
+
+[[files]]
+file = "resources/createastral/textures/block/gas_mixer.png"
+hash = "301ac1e32e035ca788912d36d35a2a665c08492461bd499adcc2161e1bd8a1cb"
+
+[[files]]
+file = "resources/createastral/textures/block/gas_mixer_shaft.png"
+hash = "20ee5b7ac90f276ac79f5ec68112b55beb6b09c25c93315148f015e51d1374cc"
 
 [[files]]
 file = "resources/createastral/textures/block/refined_radiance_block.png"
@@ -27531,7 +27567,7 @@ hash = "bcf526c7583a2fcb6c8baa378253541992a770ba0267b401dc81543f38f01b8a"
 
 [[files]]
 file = "resources/createastral/textures/item/broken_fragile_rocket_fin.png"
-hash = "27c5cc64b0aa98c2c63004a536dc2c4a57999e3d08208f94c51154dd92b2631b"
+hash = "88579c9f2af4020b64e16d6492f075974667c570351e2294314cd8d0f118684f"
 
 [[files]]
 file = "resources/createastral/textures/item/broken_fragile_sheet.png"
@@ -27643,11 +27679,15 @@ hash = "ece65314d6c5d35c9ab32a0a6f059f4b4165a66eec62c090ee42d9135217556d"
 
 [[files]]
 file = "resources/createastral/textures/item/fragile_rocket_fin.png"
-hash = "e1386da41e8206d35755f767ce60fad50b1c003713fc9525781a71956834aabd"
+hash = "0db9855c6f4e596c612fe184631969f5affd082142e555b40c1c34bccdd365ae"
 
 [[files]]
 file = "resources/createastral/textures/item/fragile_sheet.png"
 hash = "ac55e26a82e71fa889781070420a6bdc995bb2ad2b95c7c4db362e6743a9fba9"
+
+[[files]]
+file = "resources/createastral/textures/item/gold_casted_rocket_fin.png"
+hash = "d232f13ea2eca495e627103b9ff464062d73b1705397bf2b19862f5ef4ce1b72"
 
 [[files]]
 file = "resources/createastral/textures/item/golden_bowl.png"
@@ -27996,6 +28036,30 @@ hash = "87fda0663ad17c28f52732bf82c259a9a9ad4dcf5d06801b66d0901b4cd9b3f3"
 [[files]]
 file = "resources/dustrial_decor/lang/fr_fr.json"
 hash = "24c4df8d42c2eef4d29d1fd7cb64ad2508a5892dd105b4014a3eb15110d31ca1"
+
+[[files]]
+file = "resources/extended_drawers/models/block/connector.json"
+hash = "b47c7e96b6021b20528814eaa5a917e26eaadeacf84bf598e31f023c257e87d2"
+
+[[files]]
+file = "resources/extended_drawers/textures/block/connector.png"
+hash = "ad3fe2225fbe33b4f63615d52d8ab75a912bcc52418e0a5549207f8ad6147c7f"
+
+[[files]]
+file = "resources/extended_drawers/textures/block/controller.png"
+hash = "14a49028327c57c027da81bd2ef1bcbb6c14497a8d013c94faecd3202b45bdc2"
+
+[[files]]
+file = "resources/extended_drawers/textures/block/drawer_side.png"
+hash = "24bc05651df188a8a93458e599c2b6b130f728ed3313d179bbfd6a5afead6e2c"
+
+[[files]]
+file = "resources/extended_drawers/textures/block/shadow_drawer.png"
+hash = "409644c0d489211ec994d2d4dfdbeeb5c646a6eaad1c6b15c3835d316b8d348b"
+
+[[files]]
+file = "resources/extended_drawers/textures/block/shadow_drawer_side.png"
+hash = "02ff5c31f764d84af1b6544ab1f64f3cba2ef86f590b577649e60626617ae117"
 
 [[files]]
 file = "resources/farmersdelight/lang/en_us.json"

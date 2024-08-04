@@ -171,5 +171,10 @@ onEvent("entity.spawned", (event) => {
             Utils.server.runCommandSilent(`particle minecraft:block createastral:sturdy_sheet_block ${entity.x} ${entity.y} ${entity.z} 0.0 0.1 0.0 0 5`)
             Utils.server.runCommandSilent(`playsound create:crushing_1 block @a ${entity.x} ${entity.y} ${entity.z}`)
         }
+    } else if (entity.type === "minecraft:area_effect_cloud"){
+        console.log("cloud!")
+        if (entity.fullNBT.potion === "minecraft:regeneration"){
+            console.log("REGEN!")
+        }
     }
 });

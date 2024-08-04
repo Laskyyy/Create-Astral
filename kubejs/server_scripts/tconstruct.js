@@ -148,6 +148,12 @@ onEvent("recipes", (event) => {
             cooling_time: 30,
             cast: ["minecraft:glass_bottle", true],
         },
+        {
+            fluid: ["tconstruct:molten_gold", INGOT],
+            result: "createastral:gold_casted_rocket_fin",
+            cooling_time: 30,
+            cast: ["createastral:fragile_rocket_fin", true],
+        }
     ].forEach((recipe) => {
         event.custom({
             type: "tconstruct:casting_table",
