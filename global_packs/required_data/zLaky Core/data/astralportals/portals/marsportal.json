@@ -1,0 +1,10 @@
+{
+    "block": "ad_astra:mars_stone",
+    "dim": "ad_astra:mars",
+    "ignitionType": "FLUID",
+    "ignitionSource": "minecraft:lava",
+	"returnDim": "ad_astra:moon",
+    "r": 148,
+    "g": 71,
+    "b": 38
+}
