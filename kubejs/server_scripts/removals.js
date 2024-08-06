@@ -295,6 +295,8 @@ onEvent("recipes", (event) => {
         { output: "ad_astra:jet_suit_pants" },
         { output: "ad_astra:jet_suit_boots" },
         { output: "ad_astra:tier_1_rocket" },
+        { output: "ad_astra:tier_3_rocket" },
+        { output: "ad_astra:tier_4_rocket" },
         { output: "ad_astra:desh_cable" },
         { output: "ad_astra:steel_cable" },
         { output: "ad_astra:compressor" },
