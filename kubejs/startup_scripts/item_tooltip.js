@@ -5,6 +5,10 @@ onEvent("item.tooltip", (e) => {
     hasFired = true;
     const tooltips = [
         {
+            item: "createastral:laskinium_pill",
+            tooltip: "makes you go zoom but make you high",
+        },
+        {
             item: "createastral:swift_andesite",
             tooltip: "Place below a block to grant it a speed boost similar to andesite pavement.",
         },

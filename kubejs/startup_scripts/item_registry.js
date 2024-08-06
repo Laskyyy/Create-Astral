@@ -89,6 +89,17 @@ onEvent("item.registry", (event) => {
         event.create("createastral:sturdy_boots", "boots").tier("sturdyarmor"),
         //Other Items//
         event.create("createastral:orcane").displayName("Information / General Progression").glow(true),
+        
+        event.create("createastral:laskinium").glow(true).rarity('epic')
+        event.create("createastral:laskinium_pill").glow(true).rarity('epic').food((food) => {
+            food.hunger(30)
+                .saturation(0.5)
+                .effect("drinkbeer:drunk", 1000, 3, 5)
+                .effect("speed", 1000, 10, 5)
+                .effect("estrogen:estrogen", 1000, 6, 6)
+                .removeEffect("poison")
+                .alwaysEdible(); //Like golden apples
+        });
         event.create("createastral:astral_singularity").food((food) => {
             food.hunger(50)
                 .saturation(50) //This value does not directly translate to saturation points gained

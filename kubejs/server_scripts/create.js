@@ -391,6 +391,22 @@ function sequencedAssemblyRecipes(event) {
     //document in an effective way
     const inc_sturdy_sheet = "create:unprocessed_obsidian_sheet";
     event.recipes
+    .createSequencedAssembly(
+        [Item.of("createastral:laskinium_pill").withChance(1)],
+        "estrogen:estrogen_pill",
+        [
+            event.recipes.createFilling("estrogen:estrogen_pill", [
+                "estrogen:estrogen_pill",
+                { fluid: "kubejs:shimmer", amount: BUCKET }
+            ]),
+            event.recipes.createPressing("estrogen:estrogen_pill", "estrogen:estrogen_pill"),
+            event.recipes.createDeploying("estrogen:estrogen_pill", [
+                "estrogen:estrogen_pill","createastral:laskinium"])
+        ]
+    )
+    .transitionalItem("estrogen:estrogen_pill")
+    .loops(1);
+    event.recipes
         .createSequencedAssembly(
             [Item.of("create:sturdy_sheet").withChance(12), Item.of("minecraft:gravel").withChance(8)],
             "#c:dusts/obsidian",
@@ -401,7 +417,6 @@ function sequencedAssemblyRecipes(event) {
         )
         .transitionalItem(inc_sturdy_sheet)
         .loops(5);
-
     event.custom({
         type: "create:sequenced_assembly",
         ingredient: { tag: "c:plates/gold" },
@@ -1895,6 +1910,21 @@ function mixingRecipes(event) {
             input: ["3x techreborn:saw_dust", { fluid: "minecraft:water", amount: BUCKET }],
             heat: "",
             time: 100,
+        },
+        {
+            output: "createastral:laskinium",
+            input: [
+                {
+                    item: "createastral:subatomic_ingot",
+                    amount: 2
+                },
+                {
+                    fluid: "kubejs:molten_calorite",
+                    amount: INGOT,
+                },
+            ],
+            heat: "superheated",
+            time: 1000,
         },
         {
             output: "yttr:yttrium_ingot",
