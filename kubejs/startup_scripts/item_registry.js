@@ -131,26 +131,26 @@ onEvent("item.registry", (event) => {
     event.create("createastral:incomplete_engineering_processor", "create:sequenced_assembly");
     event.create("createastral:incomplete_dash_panel", "create:sequenced_assembly");
     event.create("createastral:incomplete_copper_casing", "create:sequenced_assembly").modelJson({
-        "parent": "minecraft:block/cube",
-        "textures": {
-            "up": "createastral:item/incomplete_copper_casing0",
-            "down": "createastral:item/incomplete_copper_casing0",
-            "north": "createastral:item/incomplete_copper_casing1",
-            "south": "createastral:item/incomplete_copper_casing1",
-            "west": "createastral:item/incomplete_copper_casing2",
-            "east": "createastral:item/incomplete_copper_casing2"
-        }
+        parent: "minecraft:block/cube",
+        textures: {
+            up: "createastral:item/incomplete_copper_casing0",
+            down: "createastral:item/incomplete_copper_casing0",
+            north: "createastral:item/incomplete_copper_casing1",
+            south: "createastral:item/incomplete_copper_casing1",
+            west: "createastral:item/incomplete_copper_casing2",
+            east: "createastral:item/incomplete_copper_casing2",
+        },
     });
     event.create("createastral:incomplete_basic_machine_frame", "create:sequenced_assembly").modelJson({
-        "parent": "minecraft:block/cube",
-        "textures": {
-            "up": "techreborn:block/machines/structure/tier1_machine_block",
-            "down": "create:block/copper_casing",
-            "north": "createastral:item/incomplete_basic_machine_frame0",
-            "south": "createastral:item/incomplete_basic_machine_frame0",
-            "west": "createastral:item/incomplete_basic_machine_frame1",
-            "east": "createastral:item/incomplete_basic_machine_frame1"
-        }
+        parent: "minecraft:block/cube",
+        textures: {
+            up: "techreborn:block/machines/structure/tier1_machine_block",
+            down: "create:block/copper_casing",
+            north: "createastral:item/incomplete_basic_machine_frame0",
+            south: "createastral:item/incomplete_basic_machine_frame0",
+            west: "createastral:item/incomplete_basic_machine_frame1",
+            east: "createastral:item/incomplete_basic_machine_frame1",
+        },
     });
     event.create("createastral:incomplete_brass_casing", "create:sequenced_assembly").modelJson({
         "parent": "minecraft:block/cube",
