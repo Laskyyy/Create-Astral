@@ -14,11 +14,18 @@ onEvent("block.registry", (event) => {
         .displayName("Shimmering Stone")
         .tagBlock("minecraft:mineable/pickaxe");
 				
-		event
+    event
         .create("createastral:martian_veilstone")
         .material("stone")
         .hardness(22)
         .displayName("Martian Veilstone")
+        .tagBlock("minecraft:mineable/pickaxe");
+	
+    event
+        .create("createastral:mercurian_waystone")
+        .material("stone")
+        .hardness(24)
+        .displayName("Mercurian Keystone")
         .tagBlock("minecraft:mineable/pickaxe");
 
     event
