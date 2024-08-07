@@ -13,6 +13,20 @@ onEvent("block.registry", (event) => {
         .hardness(20)
         .displayName("Shimmering Stone")
         .tagBlock("minecraft:mineable/pickaxe");
+				
+    event
+        .create("createastral:martian_veilstone")
+        .material("stone")
+        .hardness(22)
+        .displayName("Martian Veilstone")
+        .tagBlock("minecraft:mineable/pickaxe");
+	
+    event
+        .create("createastral:mercurian_waystone")
+        .material("stone")
+        .hardness(24)
+        .displayName("Mercurian Keystone")
+        .tagBlock("minecraft:mineable/pickaxe");
 
     event
         .create("createastral:copper_plating")
@@ -135,7 +149,8 @@ onEvent("block.registry", (event) => {
         .hardness(2)
         .lightLevel(5);
 
-    event.create("createastral:swift_andesite", "basic")
+    event
+        .create("createastral:swift_andesite", "basic")
         .material("stone")
         .hardness(4)
         .tagBlock("minecraft:mineable/pickaxe");

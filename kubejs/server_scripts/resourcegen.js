@@ -177,6 +177,10 @@ function LakyCrushingRecipes(event) {
             input: "dbe:vanta_black",
             outputs: [["minecraft:black_dye", 1]],
         },
+        {
+            input: "astraladditions:lune_shroom",
+            outputs: [["minecraft:lapis_lazuli", 1]],
+        },
     ].forEach((recipe) => {
         let cleanoutputs = [];
         recipe.outputs.forEach((output) => {

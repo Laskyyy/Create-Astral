@@ -5,16 +5,16 @@ onEvent("recipes", (event) => {
     //Tech Reborn
     [
         // storage units
-        { output: "techreborn:crude_storage_unit"},
-        { output: "techreborn:basic_storage_unit"},
-        { output: "techreborn:advanced_storage_unit"},
-        { output: "techreborn:industrial_storage_unit"},
-        { output: "techreborn:quantumr_storage_unit"},
+        { output: "techreborn:crude_storage_unit" },
+        { output: "techreborn:basic_storage_unit" },
+        { output: "techreborn:advanced_storage_unit" },
+        { output: "techreborn:industrial_storage_unit" },
+        { output: "techreborn:quantumr_storage_unit" },
         // tanks units
-        { output: "techreborn:basic_tank_unit"},
-        { output: "techreborn:advanced_tank_unit"},
-        { output: "techreborn:industrial_tank_unit"},
-        { output: "techreborn:quantum_tank_unit"},
+        { output: "techreborn:basic_tank_unit" },
+        { output: "techreborn:advanced_tank_unit" },
+        { output: "techreborn:industrial_tank_unit" },
+        { output: "techreborn:quantum_tank_unit" },
 
         { output: "techreborn:chunk_loader" },
         { output: "techreborn:pyrite_dust"},
@@ -295,6 +295,8 @@ onEvent("recipes", (event) => {
         { output: "ad_astra:jet_suit_pants" },
         { output: "ad_astra:jet_suit_boots" },
         { output: "ad_astra:tier_1_rocket" },
+        { output: "ad_astra:tier_3_rocket" },
+        { output: "ad_astra:tier_4_rocket" },
         { output: "ad_astra:desh_cable" },
         { output: "ad_astra:steel_cable" },
         { output: "ad_astra:compressor" },
@@ -304,9 +306,8 @@ onEvent("recipes", (event) => {
         { output: "ad_astra:calorite_ingot", type: "minecraft:blasting" },
         { output: "ad_astra:calorite_engine" },
         { output: "ad_astra:calorite_tank" },
-        { output: "ad_astra:steel_tank"},
-        { output: "ad_astra:rocket_nose_cone"},
-
+        { output: "ad_astra:steel_tank" },
+        { output: "ad_astra:rocket_nose_cone" },
 
         // AE2
 
@@ -455,6 +456,7 @@ onEvent("recipes", (event) => {
         { output: "yttr:spatula" },
         { output: "yttr:bedrock_smasher" },
         { output: "yttr:effector" },
+        { output: "yttr:music_disc_papillons" },
 
         // Minecraft
 
@@ -585,7 +587,7 @@ onEvent("recipes", (event) => {
         "brass",
         "zinc",
         "nickel",
-        "platinum"
+        "platinum",
     ];
 
     metal.forEach((metal) => {
@@ -648,12 +650,12 @@ onEvent("recipes", (event) => {
         ["sulfur", true],
         ["uvarovite", false],
         ["glowstone", true],
-        ["redstone", true]
-    ]
+        ["redstone", true],
+    ];
     dusts.forEach((dust) => {
         if (!dust[1]) {
-            event.remove({output: `techreborn:${dust[0]}_dust`});
+            event.remove({ output: `techreborn:${dust[0]}_dust` });
         }
-        event.remove({output: `techreborn:${dust[0]}_small_dust`});
+        event.remove({ output: `techreborn:${dust[0]}_small_dust` });
     });
 });
