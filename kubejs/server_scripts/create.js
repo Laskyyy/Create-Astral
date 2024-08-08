@@ -547,19 +547,23 @@ function sequencedAssemblyRecipes(event) {
                     // input
                     event.recipes.createDeploying("ad_astra:calorite_engine", [
                         "ad_astra:calorite_engine",
-                        "createastral:prismatic_crystal",
+                        "yttr:armor_plating",
                     ]),
                     event.recipes.createDeploying("ad_astra:calorite_engine", [
                         "ad_astra:calorite_engine",
-                        "createastral:prismatic_crystal",
+                        "create:refined_radiance_casing",
                     ]),
                     event.recipes.createDeploying("ad_astra:calorite_engine", [
                         "ad_astra:calorite_engine",
-                        "createastral:prismatic_crystal",
+                        "yttr:armor_plating",
                     ]),
                     event.recipes.createFilling("ad_astra:ostrum_engine", [
                         "ad_astra:ostrum_engine",
-                        { fluid: "kubejs:molten_radiance", amount: BUCKET },
+                        { fluid: "kubejs:molten_radiance", amount: BUCKET/2 },
+                    ]),
+                    event.recipes.createFilling("ad_astra:ostrum_engine", [
+                        "ad_astra:ostrum_engine",
+                        { fluid: "kubejs:molten_radiance", amount: BUCKET/2 },
                     ]),
                     event.recipes.createPressing(
                         "ad_astra:calorite_engine",
@@ -581,12 +585,12 @@ function sequencedAssemblyRecipes(event) {
                     // input
                     event.recipes.createDeploying("createastral:incomplete_navigation_mechanism", [
                         "createastral:incomplete_navigation_mechanism",
-                        "techreborn:electronic_circuit",
+                        "techreborn:machine_parts",
                     ]),
-                    event.recipes.createPressing(
+                    event.recipes.createDeploying("createastral:incomplete_navigation_mechanism", [
                         "createastral:incomplete_navigation_mechanism",
-                        "createastral:incomplete_navigation_mechanism"
-                    ),
+                        "ad_astra:ostrum_plate",
+                    ]),
                     event.recipes.createPressing(
                         "createastral:incomplete_navigation_mechanism",
                         "createastral:incomplete_navigation_mechanism"
@@ -2217,6 +2221,21 @@ function mechanicalCraftingRecipes(event) {
             },
         },
         {
+            output: "ad_astra:tier_3_rocket",
+            shape: ["   A   ", "  EEE  ", "  EFE  ", "  GDG  ", " ICHCI ", "IIBDBII", "I     I"],
+            inputs: {
+                A: "createbigcannons:nethersteel_screw_breech",
+                B: "ad_astra:ostrum_engine",
+                C: "astraladditions:fragile_item",
+                D: "techreborn:electronic_circuit",
+                E: "ad_astra:ostrum_block",
+                F: "createastral:navigation_mechanism",
+                G: "ad_astra:ostrum_plate",
+                H: "createastral:shimmer_amplifier",
+                I: "ad_astra:rocket_fin",
+            },
+        },
+        {
             output: "ad_astra:tier_4_rocket",
             shape: ["   A   ", "  AAA  ", "  BEB  ", "  BDB  ", "  BDB  ", " CDFDC ", "IGDGDGI", "IGHGHGI", "IH H HI"],
             inputs: {
@@ -2871,6 +2890,7 @@ function superheatedMixingRecipes(event) {
         ["minecraft:calcite", "minecraft:tuff"],
         ["minecraft:obsidian", "minecraft:crying_obsidian"],
         ["compressor:octuple_compressed_cobblestone", "createastral:logo"],
+        [["8x create:refined_radiance_casing", "8x create:shadow_steel_casing", "4x createastral:subatomic_ingot", "16x createastral:separation_agent"], ["astraladditions:fragile_item_2"]],
     ].forEach((recipe) => {
         event.recipes.createMixing(recipe[1], recipe[0]).superheated().processingTime(20);
     });
