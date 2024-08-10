@@ -15,17 +15,17 @@ onEvent("block.registry", (event) => {
         .tagBlock("minecraft:mineable/pickaxe");
 				
     event
-        .create("createastral:martian_veilstone")
+        .create("createastral:ancient_stone")
         .material("stone")
         .hardness(22)
-        .displayName("Martian Veilstone")
+        .displayName("Ancient Stone")
         .tagBlock("minecraft:mineable/pickaxe");
 	
     event
-        .create("createastral:mercurian_waystone")
+        .create("createastral:mercurian_stone")
         .material("stone")
         .hardness(24)
-        .displayName("Mercurian Keystone")
+        .displayName("Mercurian Stone")
         .tagBlock("minecraft:mineable/pickaxe");
 
     event
