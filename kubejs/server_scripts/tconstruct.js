@@ -58,6 +58,12 @@ onEvent("recipes", (event) => {
             cooling_time: 10,
             cast: null,
         },
+        {
+            fluid: ["kubejs:blast-resistant_cement", BUCKET / 2],
+            result: "createastral:rocket_casing",
+            cooling_time: 40,
+            cast: ["kubejs:fire_resistant_fragile_sheet_block", true],
+        },
     ].forEach((recipe) => {
         event.custom({
             type: "tconstruct:casting_basin",

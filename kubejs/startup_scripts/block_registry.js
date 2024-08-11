@@ -87,12 +87,7 @@ onEvent("block.registry", (event) => {
         .texture("down", "createastral:block/electropipe")
         .texture("north", "createastral:block/electropipe")
         .tagBlock("minecraft:mineable/pickaxe");
-    event
-        .create("doodads:asphalt_stair", "stairs")
-        .material("stone")
-        .hardness(4)
-        .tagBlock("minecraft:mineable/pickaxe")
-        .textureAll("doodads:block/asphalt");
+
 
     event
         .create("createastral:stone_growth_chamber_dummy")
@@ -140,95 +135,36 @@ onEvent("block.registry", (event) => {
         .hardness(4)
         .tagBlock("minecraft:mineable/pickaxe");
 
-    event.create("createastral:fragile_sheet_block", "basic")
+    event.create("kubejs:fragile_sheet_block", "basic")
+        .material("stone")
+        .defaultTranslucent()
+        .hardness(1);
+
+    event.create("kubejs:broken_fragile_sheet_block", "basic")
+        .material("stone")
+        .defaultTranslucent()
+        .hardness(1)
+        .box(0, 0, 0, 16, 8, 16, true)
+        .box(2, 8, 2, 14, 12, 14, true)
+
+    event.create("kubejs:fire_resistant_fragile_sheet_block", "basic")
         .material("stone")
         .defaultTranslucent()
         .hardness(1)
 
-    event.create("createastral:broken_fragile_sheet_block", "basic")
+    event.create("kubejs:broken_fire_resistant_fragile_sheet_block", "basic")
         .material("stone")
         .defaultTranslucent()
         .hardness(1)
-        .modelJson({
-            "textures": {
-                "0": "createastral:block/fragile_sheet_block",
-                "1": "createastral:block/broken_sturdy_sheet_block",
-                "particle": "createastral:block/fragile_sheet_block"
-            },
-            "elements": [
-                {
-                    "from": [0, 0, 0],
-                    "to": [16, 7, 16],
-                    "faces": {
-                        "north": {"uv": [0, 9, 16, 16], "texture": "#0"},
-                        "east": {"uv": [0, 9, 16, 16], "texture": "#0"},
-                        "south": {"uv": [0, 9, 16, 16], "texture": "#0"},
-                        "west": {"uv": [0, 9, 16, 16], "texture": "#0"},
-                        "up": {"uv": [0, 0, 16, 16], "texture": "#0"},
-                        "down": {"uv": [0, 0, 16, 16], "texture": "#0"}
-                    }
-                },
-                {
-                    "from": [1, 6, 5],
-                    "to": [12, 9, 15],
-                    "rotation": {"angle": 22.5, "axis": "y", "origin": [1, 10, 5]},
-                    "faces": {
-                        "north": {"uv": [0, 0, 11, 3], "texture": "#1"},
-                        "east": {"uv": [0, 0, 10, 3], "texture": "#1"},
-                        "south": {"uv": [0, 0, 11, 3], "texture": "#1"},
-                        "west": {"uv": [0, 0, 10, 3], "texture": "#1"},
-                        "up": {"uv": [0, 0, 11, 10], "texture": "#1"},
-                        "down": {"uv": [0, 0, 11, 10], "texture": "#1"}
-                    }
-                },
-                {
-                    "from": [3, 7, 5],
-                    "to": [11, 12, 11],
-                    "rotation": {"angle": 22.5, "axis": "x", "origin": [1, 9, 6]},
-                    "faces": {
-                        "north": {"uv": [0, 0, 8, 5], "texture": "#1"},
-                        "east": {"uv": [0, 0, 8, 5], "texture": "#1"},
-                        "south": {"uv": [0, 0, 8, 5], "texture": "#1"},
-                        "west": {"uv": [0, 0, 8, 5], "texture": "#1"},
-                        "up": {"uv": [0, 0, 8, 5], "texture": "#1"},
-                        "down": {"uv": [0, 0, 8, 5], "texture": "#1"}
-                    }
-                },
-                {
-                    "from": [3, 2, 2],
-                    "to": [6, 8, 11],
-                    "rotation": {"angle": 22.5, "axis": "z", "origin": [0, 7, 0]},
-                    "faces": {
-                        "north": {"uv": [0, 0, 3, 6], "texture": "#1"},
-                        "east": {"uv": [0, 0, 3, 6], "texture": "#1"},
-                        "south": {"uv": [0, 0, 3, 6], "texture": "#1"},
-                        "west": {"uv": [0, 0, 3, 6], "texture": "#1"},
-                        "up": {"uv": [0, 0, 3, 6], "texture": "#1"},
-                        "down": {"uv": [0, 0, 3, 6], "texture": "#1"}
-                    }
-                },
-                {
-                    "from": [6, 7, 7],
-                    "to": [14, 8, 11],
-                    "rotation": {"angle": 22.5, "axis": "x", "origin": [3, 0, 10]},
-                    "faces": {
-                        "north": {"uv": [0, 0, 8, 1], "texture": "#1"},
-                        "east": {"uv": [0, 0, 8, 1], "texture": "#1"},
-                        "south": {"uv": [0, 0, 8, 1], "texture": "#1"},
-                        "west": {"uv": [0, 0, 8, 1], "texture": "#1"},
-                        "up": {"uv": [5, 4, 13, 12], "texture": "#1"},
-                        "down": {"uv": [0, 0, 8, 8], "texture": "#1"}
-                    }
-                }
-            ],
-            "display": {
-                "thirdperson_righthand": {
-                    "rotation": [75, 45, 0],
-                    "translation": [0, 2.5, 0],
-                    "scale": [0.375, 0.375, 0.375]
-                }
-            }
-        });
+        .box(0, 0, 0, 16, 8, 16, true)
+        .box(2, 8, 2, 14, 12, 14, true)
+
+    event.create("createastral:rocket_casing", "basic")
+        .material("stone")
+        .hardness(4)
+        .defaultTranslucent()
+        .tagBlock("minecraft:mineable/pickaxe")
+
 
     event
         .create("doodads:asphalt_slab", "slab")

@@ -542,7 +542,7 @@ function sequencedAssemblyRecipes(event) {
             .transitionalItem("createastral:incomplete_electronic_circuit")
             .loops(1);
 
-            event.recipes
+        event.recipes
             .createSequencedAssembly(
                 [
                     // begin
@@ -565,7 +565,7 @@ function sequencedAssemblyRecipes(event) {
                     ]),
                     event.recipes.createFilling("ad_astra:ostrum_engine", [
                         "ad_astra:ostrum_engine",
-                        { fluid: "kubejs:molten_radiance", amount: BUCKET },
+                        {fluid: "kubejs:molten_radiance", amount: BUCKET},
                     ]),
                     event.recipes.createPressing(
                         "ad_astra:calorite_engine",
@@ -576,7 +576,7 @@ function sequencedAssemblyRecipes(event) {
             .transitionalItem("ad_astra:calorite_engine")
             .loops(5);
 
-            event.recipes
+        event.recipes
             .createSequencedAssembly(
                 [
                     // begin
@@ -599,7 +599,7 @@ function sequencedAssemblyRecipes(event) {
                     ),
                     event.recipes.createFilling("createastral:incomplete_navigation_mechanism", [
                         "createastral:incomplete_navigation_mechanism",
-                        { fluid: "ad_astra:cryo_fuel", amount: BUCKET },
+                        {fluid: "ad_astra:cryo_fuel", amount: BUCKET},
                     ]),
                     event.recipes.createPressing(
                         "createastral:incomplete_navigation_mechanism",
@@ -661,7 +661,7 @@ function sequencedAssemblyRecipes(event) {
         event.recipes.createSequencedAssembly(["ad_astra:calorite_engine"], "ad_astra:ostrum_engine", [
             event.recipes.createFilling("ad_astra:ostrum_engine", [
                 "ad_astra:ostrum_engine",
-                { fluid: "kubejs:molten_yttrium", amount: BUCKET },
+                {fluid: "kubejs:molten_yttrium", amount: BUCKET},
             ]),
             event.recipes.createFilling("ad_astra:ostrum_engine", [
                 "ad_astra:ostrum_engine",
@@ -681,7 +681,7 @@ function sequencedAssemblyRecipes(event) {
         event.recipes.createSequencedAssembly(["ad_astra:calorite_engine"], "createastral:navigation_mechanism", [
             event.recipes.createFilling("createastral:navigation_mechanism", [
                 "createastral:navigation_mechanism",
-                { fluid: "kubejs:molten_yttrium", amount: BUCKET },
+                {fluid: "kubejs:molten_yttrium", amount: BUCKET},
             ]),
             event.recipes.createFilling("createastral:navigation_mechanism", [
                 "createastral:navigation_mechanism",
@@ -1029,7 +1029,7 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem(inc_redstone_chip)
         .loops(12);
 
-        event.recipes
+    event.recipes
         .createSequencedAssembly(
             [
                 // begin
@@ -1040,15 +1040,15 @@ function sequencedAssemblyRecipes(event) {
                 // input
                 event.recipes.createFilling("createbigcannons:nethersteel_screw_breech", [
                     "createbigcannons:nethersteel_screw_breech",
-                    { fluid: "kubejs:shimmer", amount: 9000 * mB },
+                    {fluid: "kubejs:shimmer", amount: 9000 * mB},
                 ]),
                 event.recipes.createFilling("createbigcannons:nethersteel_screw_breech", [
                     "createbigcannons:nethersteel_screw_breech",
-                    { fluid: "techreborn:lithium", amount: 3000 * mB },
+                    {fluid: "techreborn:lithium", amount: 3000 * mB},
                 ]),
                 event.recipes.createFilling("createbigcannons:nethersteel_screw_breech", [
                     "createbigcannons:nethersteel_screw_breech",
-                    { fluid: "techreborn:potassium", amount: 3000 * mB },
+                    {fluid: "techreborn:potassium", amount: 3000 * mB},
                 ]),
 
             ]
@@ -1575,7 +1575,7 @@ function mixingRecipes(event) {
         },
         {
             output: "2x ae2:certus_quartz_crystal",
-            input: [{ fluid: "minecraft:water", amount: 250 * mB }, "1x ae2:certus_quartz_dust"],
+            input: [{fluid: "minecraft:water", amount: 250 * mB}, "1x ae2:certus_quartz_dust"],
             heat: "heated",
             time: 40,
         },
@@ -1787,7 +1787,7 @@ function mixingRecipes(event) {
             output: [
                 "minecraft:sponge",
                 "minecraft:clay"
-         ],
+            ],
             input: [
                 "minecraft:wet_sponge",
                 "minecraft:sand",
@@ -1796,7 +1796,7 @@ function mixingRecipes(event) {
             time: 50,
         },
         {
-            output: [{ fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET }],
+            output: [{fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET}],
             input: ["create:experience_block"],
             heat: "heated",
             time: 1000,
@@ -2481,6 +2481,13 @@ function mechanicalCraftingRecipes(event) {
                 F: "ad_astra:ostrum_plate",
             },
         },
+        {
+            output: "kubejs:fragile_sheet_block",
+            shape: ["FFFF", "FFFF", "FFFF", "FFFF"],
+            inputs: {
+                F: "createastral:fragile_sheet"
+            }
+        }
     ].forEach((recipe) => {
         event.recipes.create.mechanical_crafting(recipe.output, recipe.shape, recipe.inputs);
     });
@@ -2574,7 +2581,7 @@ function compactingRecipes(event) {
             inputs: ["minecraft:wet_sponge", "minecraft:sand"],
         },
         {
-            output: { fluid: "kubejs:white_grape_juice", amount: 6750 },
+            output: {fluid: "kubejs:white_grape_juice", amount: 6750},
             inputs: ["vinery:white_grape"],
         },
         {

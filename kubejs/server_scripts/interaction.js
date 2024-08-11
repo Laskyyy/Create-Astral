@@ -44,7 +44,7 @@ onEvent("block.right_click", (event) => {
             event.player.inventory.set(event.player.getSelectedSlot(), "air");
         }
     }
-    //? Tp player back to their spawn point, or world spawn if no spawn point was set
+        //? Tp player back to their spawn point, or world spawn if no spawn point was set
     //! Please note it will still send the player to their bed if the bed was broke. A fix is planned
     else if (
         event.block.id == "minecraft:bedrock" &&
@@ -65,8 +65,21 @@ onEvent("block.right_click", (event) => {
 /// swift andesite by max
 onEvent("player.tick", (event) => {
     const player = event.getPlayer();
-    if (event.level.getBlock(player.x, player.y - 2, player.z) == "createastral:swift_andesite") {
+    const x = Math.floor(player.x);
+    const y = Math.floor(player.y);
+    const z = Math.floor(player.z);
+    if (event.level.getBlock(x, y - 2, z) == "kubejs:swift_andesite") {
         player.potionEffects.add("minecraft:speed", 20, 0, false, false);
+    }
+    if (event.level.getBlock(x, y - 1, z) == "kubejs:fragile_sheet_block") {
+        Utils.server.runCommandSilent(`particle minecraft:block minecraft:magenta_concrete_powder ${player.x} ${player.y - 1} ${player.z} 0.0 0.1 0.0 0 5`)
+        Utils.server.runCommandSilent(`playsound create:crushing_1 block @a ${player.x} ${player.y} ${player.z}`)
+        Utils.server.runCommandSilent(`setblock ${x} ${y - 1} ${z} kubejs:broken_fragile_sheet_block`)
+    }
+    if (event.level.getBlock(x, y - 1, z) == "kubejs:fire_resistant_fragile_sheet_block") {
+        Utils.server.runCommandSilent(`particle minecraft:block kubejs:fire_resistant_fragile_sheet_block ${player.x} ${player.y - 1} ${player.z} 0.0 0.1 0.0 0 5`)
+        Utils.server.runCommandSilent(`playsound create:crushing_1 block @a ${player.x} ${player.y} ${player.z}`)
+        Utils.server.runCommandSilent(`setblock ${x} ${y - 1} ${z} kubejs:broken_fire_resistant_fragile_sheet_block`)
     }
 });
 
@@ -166,15 +179,27 @@ onEvent("entity.spawned", (event) => {
             entity.item = "createastral:broken_fragile_sheet"
             Utils.server.runCommandSilent(`particle minecraft:block minecraft:magenta_concrete_powder ${entity.x} ${entity.y} ${entity.z} 0.0 0.1 0.0 0 5`)
             Utils.server.runCommandSilent(`playsound create:crushing_1 block @a ${entity.x} ${entity.y} ${entity.z}`)
-        } else if (entity.item === "createastral:fragile_rocket_fin"){
+        } else if (entity.item === "createastral:fragile_rocket_fin") {
             entity.item = "createastral:broken_fragile_rocket_fin"
             Utils.server.runCommandSilent(`particle minecraft:block createastral:sturdy_sheet_block ${entity.x} ${entity.y} ${entity.z} 0.0 0.1 0.0 0 5`)
             Utils.server.runCommandSilent(`playsound create:crushing_1 block @a ${entity.x} ${entity.y} ${entity.z}`)
+        } else if (entity.item === "kubejs:fragile_sheet_block") {
+            entity.item = "kubejs:broken_fragile_sheet_block"
+            Utils.server.runCommandSilent(`particle minecraft:block kubejs:fragile_sheet_block ${entity.x} ${entity.y} ${entity.z} 0.0 0.1 0.0 0 5`)
+            Utils.server.runCommandSilent(`playsound create:crushing_1 block @a ${entity.x} ${entity.y} ${entity.z}`)
+        } else if (entity.item === "kubejs:fire_resistant_fragile_sheet_block") {
+            entity.item = "kubejs:broken_fire_resistant_fragile_sheet_block"
+            Utils.server.runCommandSilent(`particle minecraft:block kubejs:broken_fire_resistant_fragile_sheet_block ${entity.x} ${entity.y} ${entity.z} 0.0 0.1 0.0 0 5`)
+            Utils.server.runCommandSilent(`playsound create:crushing_1 block @a ${entity.x} ${entity.y} ${entity.z}`)
         }
-    } else if (entity.type === "minecraft:area_effect_cloud"){
-        console.log("cloud!")
-        if (entity.fullNBT.potion === "minecraft:regeneration"){
-            console.log("REGEN!")
+    } else if (entity.type === "minecraft:area_effect_cloud") {
+        console.log(entity.fullNBT)
+        if (entity.fullNBT.Potion === "minecraft:fire_resistance") {
+            let x_f = Math.floor(entity.fullNBT.Pos[0]);
+            let y_f = Math.floor(entity.fullNBT.Pos[1]);
+            let z_f = Math.floor(entity.fullNBT.Pos[2]);
+            Utils.server.runCommandSilent(`fill ${x_f - 1} ${y_f - 1} ${z_f - 1} ${x_f + 1} ${y_f + 1} ${z_f + 1} kubejs:fire_resistant_fragile_sheet_block replace kubejs:fragile_sheet_block`);
+            Utils.server.runCommandSilent(`fill ${x_f - 1} ${y_f - 1} ${z_f - 1} ${x_f + 1} ${y_f + 1} ${z_f + 1} kubejs:broken_fire_resistant_fragile_sheet_block replace kubejs:broken_fragile_sheet_block`);
         }
     }
 });
