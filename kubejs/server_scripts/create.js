@@ -565,11 +565,11 @@ function sequencedAssemblyRecipes(event) {
                     ]),
                     event.recipes.createFilling("ad_astra:ostrum_engine", [
                         "ad_astra:ostrum_engine",
-                        { fluid: "kubejs:molten_radiance", amount: BUCKET/2 },
+                        {fluid: "kubejs:molten_radiance", amount: BUCKET / 2},
                     ]),
                     event.recipes.createFilling("ad_astra:ostrum_engine", [
                         "ad_astra:ostrum_engine",
-                        { fluid: "kubejs:molten_radiance", amount: BUCKET/2 },
+                        {fluid: "kubejs:molten_radiance", amount: BUCKET / 2},
                     ]),
                     event.recipes.createPressing(
                         "ad_astra:calorite_engine",
@@ -614,7 +614,7 @@ function sequencedAssemblyRecipes(event) {
             .transitionalItem("createastral:incomplete_navigation_mechanism")
             .loops(4);
 
-            event.recipes
+        event.recipes
             .createSequencedAssembly(
                 [
                     // begin
@@ -629,7 +629,7 @@ function sequencedAssemblyRecipes(event) {
                     ]),
                     event.recipes.createFilling("createastral:incomplete_brass_casing", [
                         "createastral:incomplete_brass_casing",
-                        { fluid: "tconstruct:molten_brass", amount: NUGGET },
+                        {fluid: "tconstruct:molten_brass", amount: NUGGET},
                     ]),
                     event.recipes.createDeploying("createastral:incomplete_brass_casing", [
                         "createastral:incomplete_brass_casing",
@@ -644,7 +644,7 @@ function sequencedAssemblyRecipes(event) {
             .transitionalItem("createastral:incomplete_brass_casing")
             .loops(3);
 
-            event.recipes
+        event.recipes
             .createSequencedAssembly(
                 [
                     // begin
@@ -659,7 +659,7 @@ function sequencedAssemblyRecipes(event) {
                     ]),
                     event.recipes.createFilling("createastral:incomplete_advanced_machine_frame", [
                         "createastral:incomplete_advanced_machine_frame",
-                        { fluid: "kubejs:blast-resistant_cement", amount: BUCKET },
+                        {fluid: "kubejs:blast-resistant_cement", amount: BUCKET},
                     ]),
                     event.recipes.createDeploying("createastral:incomplete_advanced_machine_frame", [
                         "createastral:incomplete_advanced_machine_frame",
@@ -670,7 +670,7 @@ function sequencedAssemblyRecipes(event) {
             .transitionalItem("createastral:incomplete_advanced_machine_frame")
             .loops(1);
 
-            event.recipes
+        event.recipes
             .createSequencedAssembly(
                 [
                     // begin
@@ -767,11 +767,11 @@ function sequencedAssemblyRecipes(event) {
         event.recipes.createSequencedAssembly(["ad_astra:calorite_engine"], "astraladditions:fragile_item", [
             event.recipes.createFilling("astraladditions:fragile_item", [
                 "astraladditions:fragile_item",
-                { fluid: "kubejs:molten_calorite", amount: BUCKET },
+                {fluid: "kubejs:molten_calorite", amount: BUCKET},
             ]),
             event.recipes.createFilling("astraladditions:fragile_item", [
                 "astraladditions:fragile_item",
-                { fluid: "yttr:void", amount: BUCKET },
+                {fluid: "yttr:void", amount: BUCKET},
             ]),
             event.recipes.createDeploying("astraladditions:fragile_item", [
                 "astraladditions:fragile_item",
@@ -2236,7 +2236,7 @@ function mechanicalCraftingRecipes(event) {
         },
         {
             output: "ad_astra:tier_3_rocket",
-            shape: ["   A   ", "  EEE  ", "  EFE  ", "  GDG  ", " ICHCI ", "IIBDBII", "I     I"],
+            shape: ["   A   ", "  PEP  ", "  EFE  ", "  ECE  ", " IRDRI ", "IBRHRBI", "I PRP I"],
             inputs: {
                 A: "createbigcannons:nethersteel_screw_breech",
                 B: "ad_astra:ostrum_engine",
@@ -2244,9 +2244,10 @@ function mechanicalCraftingRecipes(event) {
                 D: "techreborn:electronic_circuit",
                 E: "ad_astra:ostrum_block",
                 F: "createastral:navigation_mechanism",
-                G: "ad_astra:ostrum_plate",
                 H: "createastral:shimmer_amplifier",
                 I: "ad_astra:rocket_fin",
+                P: "ad_astra:ostrum_plate",
+                R: "createastral:rocket_casing"
             },
         },
         {

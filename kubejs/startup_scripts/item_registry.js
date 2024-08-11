@@ -1,24 +1,5 @@
 ///// REGISTER NEW ITEMS HERE /////
 onEvent("item.registry", (event) => {
-    event.create("createastral:crushed_raw_desh"),
-        event.create("createastral:crushed_raw_ostrum"),
-        event.create("createastral:crushed_raw_calorite"),
-        event.create("createastral:subatomic_ingot"),
-        event.create("createastral:prismatic_crystal"),
-        event.create("createastral:astral_conduit").maxStackSize(1).maxDamage(20);
-    event.create("createastral:andesite_compound"),
-        event.create("createastral:bronze_sheet"),
-        event.create("createastral:olivine_sheet"),
-        event.create("create:lapis_sheet"),
-        event.create("create:integrated_circuit"),
-        event.create("createastral:incomplete_electronic_circuit"),
-        event.create("createastral:golden_pin"),
-        event.create("createastral:martian_clump"),
-        event.create("createastral:calorite_pin"),
-        event.create("createastral:electrified_pin"),
-        event.create("createastral:logo"),
-        event.create("createastral:bronze_ingot"),
-        event.create("createastral:navigation_mechanism");
     event.create("createastral:crushed_raw_desh");
     event.create("createastral:crushed_raw_ostrum");
     event.create("createastral:crushed_raw_calorite");
@@ -33,6 +14,7 @@ onEvent("item.registry", (event) => {
     event.create("createastral:incomplete_electronic_circuit");
     event.create("createastral:golden_pin");
     event.create("createastral:calorite_pin");
+    event.create("createastral:martian_clump");
     event.create("createastral:electrified_pin");
     event.create("createastral:logo");
     event.create("createastral:bronze_ingot");
@@ -112,19 +94,19 @@ onEvent("item.registry", (event) => {
     event.create("createastral:sturdy_leggings", "leggings").tier("sturdyarmor");
     event.create("createastral:sturdy_boots", "boots").tier("sturdyarmor");
     //Other Items//
-    event.create("createastral:orcane").displayName("Information / General Progression").glow(true),
-        event.create("createastral:astral_singularity").food((food) => {
-            food.hunger(50)
-                .saturation(50) //This value does not directly translate to saturation points gained
-                //The real value can be assumed to be:
-                //min(hunger * saturation * 2 + saturation, foodAmountAfterEating)
-                .effect("regeneration", 3000, 0, 1)
-                .effect("speed", 3000, 0, 1)
-                .effect("saturation", 3000, 0, 1)
-                .effect("glowing", 6000, 0, 1)
-                .removeEffect("poison")
-                .alwaysEdible(); //Like golden apples
-        });
+    event.create("createastral:orcane").displayName("Information / General Progression").glow(true);
+    event.create("createastral:astral_singularity").food((food) => {
+        food.hunger(50)
+            .saturation(50) //This value does not directly translate to saturation points gained
+            //The real value can be assumed to be:
+            //min(hunger * saturation * 2 + saturation, foodAmountAfterEating)
+            .effect("regeneration", 3000, 0, 1)
+            .effect("speed", 3000, 0, 1)
+            .effect("saturation", 3000, 0, 1)
+            .effect("glowing", 6000, 0, 1)
+            .removeEffect("poison")
+            .alwaysEdible(); //Like golden apples
+    });
     event.create("createastral:pure_biomatter");
     event.create("createastral:lime").displayName("Lime Dust");
 
