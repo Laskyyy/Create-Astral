@@ -1,0 +1,40 @@
+{
+  "temperature": 0.7,
+  "downfall": 0.1,
+  "precipitation": "none",
+  "category": "none",
+  "effects": {
+    "sky_color": 458760,
+    "fog_color": 458760,
+    "water_color": 458791,
+    "water_fog_color": 458791,
+    "grass_color": 1517351,
+    "foliage_color": 1517351
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": [
+		[],
+		[],
+		[],
+		[],
+		[
+			"astralrails:orbit/asteroids_large",
+			"astralrails:orbit/asteroids_small"
+		],
+		[
+			"astralrails:orbit/asteroids_large_replace_snow"
+		],
+		[
+			"astralrails:orbit/asteroids_desh_ore",
+			"astralrails:orbit/asteroids_ice_shard_ore",
+			"astralrails:orbit/asteroids_cheese_ore"
+		],
+		[
+			"astralrails:orbit/meteor_cobalt",
+			"astralrails:orbit/meteor_silver",
+			"astralrails:orbit/meteor_sky"
+		]
+	]
+}

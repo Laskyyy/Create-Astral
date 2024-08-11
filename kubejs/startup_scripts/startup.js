@@ -30,8 +30,7 @@ onEvent("block.modification", (event) => {
         block.material = "Lantern";
     });
     event.modify("yttr:continuous_platform", (block) => {
-        block.destroySpeed = 2;
-        block.hasCollision = true;
+        block.destroySpeed = 3;
         block.explosionResistance = 99999;
     });
 
