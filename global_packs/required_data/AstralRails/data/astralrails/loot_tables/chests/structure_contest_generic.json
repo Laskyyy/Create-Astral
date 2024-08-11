@@ -176,6 +176,21 @@
           "weight": 1,
           "name": "vinery:red_grape_seeds"
         },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "vinery:red_grape_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "create:large_cogwheel"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "create:gearbox"
+        },
 				{
           "type": "minecraft:item",
           "weight": 2,
@@ -238,6 +253,21 @@
           "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:book"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "astralsignals:polyvinyl_sheet",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.02
+            }
+          ]
         }
       ]
     }

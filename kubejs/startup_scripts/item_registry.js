@@ -13,6 +13,7 @@ onEvent("item.registry", (event) => {
         event.create("create:integrated_circuit"),
         event.create("createastral:incomplete_electronic_circuit"),
         event.create("createastral:golden_pin"),
+        event.create("createastral:martian_clump"),
         event.create("createastral:calorite_pin"),
         event.create("createastral:electrified_pin"),
         event.create("createastral:logo"),

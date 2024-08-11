@@ -60,7 +60,7 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "create_fluid_valve"
+          "name": "create:fluid_valve"
         },
         {
           "type": "minecraft:item",
@@ -71,6 +71,21 @@
           "type": "minecraft:item",
           "weight": 1,
           "name": "create:mechanical_pump"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "astralsignals:polyvinyl_sheet",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.02
+            }
+          ]
         }
       ]
     }

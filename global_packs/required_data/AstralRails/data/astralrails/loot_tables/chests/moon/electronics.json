@@ -63,6 +63,36 @@
           "name": "minecraft:redstone"
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "astralsignals:polyvinyl_sheet",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.02
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "astralsignals:parallel_processor",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.02
+            }
+          ]
+        }
+      ]
     }
   ]
 }

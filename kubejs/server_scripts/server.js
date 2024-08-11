@@ -369,9 +369,33 @@ function lizardChanges(event) {
     lizardGeologyAlchemyChanges(event);
 }
 
+function portalBlocks(event) {// ethanicuss' portal blockies
+		event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "createastral:ancient_stone", // output
+                ],
+                "ad_astra:mars_sand",
+                [
+										event.recipes.createDeploying("createastral:martian_clump", [
+												"createastral:martian_clump",
+												"tconstruct:debris_nugget",
+										]),
+										event.recipes.createFilling("createastral:martian_clump", [
+                        "createastral:martian_clump",
+                        { fluid: "kubejs:shimmer", amount: BUCKET/2 },
+                    ]),
+								]
+            )
+            .transitionalItem("createastral:martian_clump")
+            .loops(1);
+}
+
 onEvent("recipes", (event) => {
     // Lizard's changes
     lizardChanges(event);
+		portalBlocks(event);
     farmersDelightCuttingChanges(event);
 
     /////// TECH REBORN ACTUAL RECIPES //////
