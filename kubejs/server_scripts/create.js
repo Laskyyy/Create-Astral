@@ -49,6 +49,8 @@ function millingRecipes(event) {
         ["createastral:crushed_raw_gadolinite", "yttr:yttrium_dust", 1],
         ["createastral:broken_fragile_sheet", "create:powdered_obsidian", 1],
         ["createastral:broken_fragile_rocket_fin", "16x create:powdered_obsidian", 1],
+        ["kubejs:broken_fragile_sheet_block", "16x create:powdered_obsidian", 1],
+        ["kubejs:broken_fire_resistant_fragile_sheet_block", "16x create:powdered_obsidian", 1],
     ].forEach((recipe) => {
         event.recipes.createMilling([Item.of(recipe[1]).withChance(recipe[2])], recipe[0]);
     });

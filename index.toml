@@ -13318,7 +13318,7 @@ hash = "ad233e52d7994c5ea1d5c2f3bda96fe5a20c706095724dae0e3027f8f1ff8d01"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
-hash = "dbc3a3c5f311d1b6a776f89fcb8ce04b6a5c1a35227754bcfd900fac6d8bb124"
+hash = "acc6405d5a900070adf15bdd82fb2c191093931065a7919900c74e88c057e3b0"
 
 [[files]]
 file = "kubejs/server_scripts/createaddons.js"
@@ -13350,7 +13350,7 @@ hash = "9f4b3bfeaace374727e95b85244d15436933fde0a6eec876484546a2f34895a0"
 
 [[files]]
 file = "kubejs/server_scripts/interaction.js"
-hash = "768f4ed317c43ebb791311af8bf9c77c3dbf0121ca3d646dbe0df7b27f211753"
+hash = "094d0636af7509c6848080511eea8528ead08bbb98eb60f3810baae48f1fcd31"
 
 [[files]]
 file = "kubejs/server_scripts/packing.js"
@@ -13434,7 +13434,7 @@ hash = "ba8e8f0e78facea11b6e203c3f26013b4ad2622028817263fa19cabf3e380449"
 
 [[files]]
 file = "kubejs/startup_scripts/item_registry.js"
-hash = "b7f507b608b445e77c39b86f17bbafc0a78cf3f0704c3435252088e627699d27"
+hash = "8417d187bfbae32153efdd8eadf762a58a702188f647b3fef1ba875650fe4cf0"
 
 [[files]]
 file = "kubejs/startup_scripts/item_tooltip.js"

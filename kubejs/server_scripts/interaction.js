@@ -68,7 +68,7 @@ onEvent("player.tick", (event) => {
     const x = Math.floor(player.x);
     const y = Math.floor(player.y);
     const z = Math.floor(player.z);
-    if (event.level.getBlock(x, y - 2, z) == "kubejs:swift_andesite") {
+    if (event.level.getBlock(x, y - 2, z) == "createastral:swift_andesite") {
         player.potionEffects.add("minecraft:speed", 20, 0, false, false);
     }
     if (event.level.getBlock(x, y - 1, z) == "kubejs:fragile_sheet_block") {
