@@ -18,6 +18,30 @@
         },
         {
           "type": "minecraft:item",
+          "name": "minecraft:blaze_powder",
+          "weight": 200,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 8,
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:blaze_rod",
+          "weight": 150,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 4,
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "ad_astra:moon_stone",
           "weight": 100,
           "functions": [
