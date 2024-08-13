@@ -65,11 +65,11 @@ onEvent("block.registry", (event) => {
 
 onEvent("item.registry", (event) => {
     event.create("astralsignals:ancient_receiver").rarity("Uncommon"),
-        event.create("astralsignals:parallel_processor"),
-        event.create("astralsignals:microphysical_probe"),
+        event.create("astralsignals:parallel_processor").rarity("Rare"),
+        event.create("astralsignals:microphysical_probe").rarity("Epic"),
         event.create("astralsignals:dormant_signal_beacon"),
         event.create("astralsignals:stirring_signal_beacon"),
-        event.create("astralsignals:homing_signal_beacon"),
+        event.create("astralsignals:homing_signal_beacon").glow(true),
         event.create("astralsignals:data_drive_blank").displayName("Blank Data Drive"),
         event.create("astralsignals:data_drive_garbled").displayName("Garbled Data Drive"),
         event.create("astralsignals:polyvinyl_sheet"),
@@ -147,7 +147,7 @@ onEvent("item.registry", (event) => {
             name: "Analogously Decrypted Data Drive - otherside",
         },
     ].forEach((item) => {
-        event.create(item.id).displayName(item.name).texture("astralsignals:item/data_drive_decrypted_t1");
+        event.create(item.id).displayName(item.name).glow(true);
     });
 
     [
@@ -156,11 +156,7 @@ onEvent("item.registry", (event) => {
             name: "Parallel Decrypted Data Drive - Purple Prison",
         },
     ].forEach((item) => {
-        event
-            .create(item.id)
-            .displayName(item.name)
-            .texture("astralsignals:item/data_drive_decrypted_t2")
-            .rarity("Uncommon");
+        event.create(item.id).displayName(item.name).rarity("Uncommon").glow(true);
     });
 
     [
@@ -169,10 +165,6 @@ onEvent("item.registry", (event) => {
             name: "Microphysically Decrypted Data Drive - Astral Lakes WolfGif Remix",
         },
     ].forEach((item) => {
-        event
-            .create(item.id)
-            .displayName(item.name)
-            .texture("astralsignals:item/data_drive_decrypted_t3")
-            .rarity("Rare");
+        event.create(item.id).displayName(item.name).rarity("Rare").glow(true);
     });
 });
