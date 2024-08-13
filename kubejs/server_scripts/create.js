@@ -2517,6 +2517,22 @@ function mechanicalCraftingRecipes(event) {
                 F: "ad_astra:ostrum_plate",
             },
         },
+        {
+            output: Item.of("custommachinery:custom_machine_item", {
+                machine: "createastral:channeling_transformer",
+            }),
+            shape: ["NSN","PBP","PGP","NTN"],
+            input: {
+                B: Item.of(
+                    "minecraft:enchanted_book",
+                    '{StoredEnchantments:[{id:"minecraft:channeling",lvl:1s}]}'
+                ),
+                N: "#c:nuggets/netherite",
+                S: "#c:plates/netherite",
+                P: "createdeco:netherite_support",
+                T: "createadditions:tesla_coil"
+            }
+        },
     ].forEach((recipe) => {
         event.recipes.create.mechanical_crafting(recipe.output, recipe.shape, recipe.inputs);
     });

@@ -135,6 +135,10 @@ onEvent("block.registry", (event) => {
         .hardness(2)
         .lightLevel(5);
 
+    event.create("createastral:synthetic_slime_block")
+        .material("lantern")
+        .hardness(0);
+
     event.create("createastral:swift_andesite", "basic")
         .material("stone")
         .hardness(4)
@@ -161,7 +165,8 @@ onEvent("block.registry", (event) => {
         .textureAll("createastral:block/gas_mixer")
         .texture("down", "createastral:block/gas_mixer_shaft")
 
-    event.create("createastral:model_block").model("createastral:block/model")
+    event.create("createastral:channeling_transformer_dummy")
+        .textureAll("createastral:block/channeling_transformer");
 
     event
         .create("doodads:asphalt_slab", "slab")

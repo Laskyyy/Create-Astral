@@ -72,6 +72,20 @@ onEvent("fluid.registry", (event) => {
         .stillTexture("tconstruct:block/fluid/molten/still")
         .flowingTexture("tconstruct:block/fluid/molten/flowing");
 
+    event.create("smite")
+        .thickTexture(0xffff00)
+        .bucketColor(0xffff00)
+        .displayName("Smite")
+        .stillTexture("tconstruct:block/fluid/molten/still")
+        .flowingTexture("tconstruct:block/fluid/molten/flowing");
+
+    event.create("electrified_lava")
+        .thickTexture(0xffff00)
+        .bucketColor(0xffff00)
+        .displayName("Smite")
+        .stillTexture("tconstruct:block/fluid/molten/still")
+        .flowingTexture("tconstruct:block/fluid/molten/flowing");
+
     event
         .create("compound_mixture")
         .thickTexture(0x66786f)

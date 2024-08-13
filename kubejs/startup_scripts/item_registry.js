@@ -104,6 +104,8 @@ onEvent("item.registry", (event) => {
     event.create("createastral:pure_biomatter");
     event.create("createastral:lime").displayName("Lime Dust");
 
+    event.create("createastral:synthetic_slime")
+
     // Transitional Items
     event
         .create("createastral:incomplete_transitional_electronic_circuit", "create:sequenced_assembly")

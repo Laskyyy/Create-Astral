@@ -28,4 +28,17 @@ onEvent('recipes', event => {
             .requireItem(Item.of("minecraft:oxeye_daisy"))
             .produceItem(Item.of("minecraft:ghast_tear"))
     }
+
+    event.recipes.custommachinery.custom_machine("createastral:channeling_transformer", 1800)
+        .requireStructure([[" a ", "ama", " a "], [" b ", "bcb", " b "], ["   ", " d ", "   "], ["   ", " e ", "   "], ["   ", " f ", "   "]], {
+            "a": "createdeco:netherite_sheet_metal",
+            "b": "createdeco:netherite_support[facing=up]",
+            "c": "createdeco:netherite_hull[facing=down]",
+            "d": "dbe:black_guilded_boiler[axis=y]",
+            "e": "techreborn:lightning_rod",
+            "f": "techreborn:refined_iron_fence"
+        }).requireFluid(Fluid.of("kubejs:methane", BUCKET))
+        .runCommandOnEnd("/summon minecraft:lightning_bolt")
+        .runCommandOnEnd("/data modify block ~ ~4 ~ PowerAcceptor.energy set value 1000000")
+
 });
