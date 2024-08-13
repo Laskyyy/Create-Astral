@@ -1054,7 +1054,7 @@ hash = "a365ba5f4570e79b58a87d45cee6ecdab0492872ce0af2f219c0d04834f4a57a"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/loot_tables/chests/generic/c_brass_age.json"
-hash = "8e247c0ab5963e4af3cadc24bb810eb64442bd81c2b84b2be978f396c64b7dba"
+hash = "7881183560be8bdabe3cdc859fc543f5ec3bcb90b8a84aedcf09e1cd1d0a70e9"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/loot_tables/chests/generic/c_copper_age.json"
@@ -1067,6 +1067,10 @@ hash = "9ac703e59be3e6554431f61b23901baa7e9d0945a0da2dfc510e70c6121e9938"
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/loot_tables/chests/moon/electronics.json"
 hash = "84513dcc1ab06c32eb609c73649f3fa54e33d7422d966b7664caa631a5d3f75d"
+
+[[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/loot_tables/chests/moon/only_shimmer_heart.json"
+hash = "b1a7fb5f3b3bb14ad0a1a5e49fd6e0837f9576f9359466ab62de1f967d6ce8b7"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/loot_tables/chests/moon/pipes.json"
@@ -9038,7 +9042,7 @@ hash = "015f2176b09e4bf1aaf29c7de3676598d3fddf904475b5f8280ef8762922b8ef"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/recipes/smeltery/casting/shimmerstone.json"
-hash = "3a18ddcca7d1b487c764ece0dab27842faf2dccbf722d04297eb16815d07a6ce"
+hash = "360cdf8d27e0ff0e65c99992f2a384ef2e2ceeaf31bde32ad9e92b3bc6470634"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/recipes/smeltery/casting/shroomlight.json"
@@ -12649,6 +12653,26 @@ file = "global_packs/required_data/zTConstructAstra/data/tconstruct/recipes/tool
 hash = "64a0d08d789b9753d5dabb67a470ce469c5f0a17e299587def5ff43dadd196d9"
 
 [[files]]
+file = "global_packs/required_data/zTConstructAstra/data/tconstruct/structures/slime_islands/blood/0x1x0.nbt"
+hash = "82ed9cdacaa6762a96bee565522e24a4a0b51342caafb80c2a8a59fc6590b9ae"
+
+[[files]]
+file = "global_packs/required_data/zTConstructAstra/data/tconstruct/structures/slime_islands/blood/11x1x11.nbt"
+hash = "82ed9cdacaa6762a96bee565522e24a4a0b51342caafb80c2a8a59fc6590b9ae"
+
+[[files]]
+file = "global_packs/required_data/zTConstructAstra/data/tconstruct/structures/slime_islands/blood/2x2x4.nbt"
+hash = "82ed9cdacaa6762a96bee565522e24a4a0b51342caafb80c2a8a59fc6590b9ae"
+
+[[files]]
+file = "global_packs/required_data/zTConstructAstra/data/tconstruct/structures/slime_islands/blood/4x1x6.nbt"
+hash = "82ed9cdacaa6762a96bee565522e24a4a0b51342caafb80c2a8a59fc6590b9ae"
+
+[[files]]
+file = "global_packs/required_data/zTConstructAstra/data/tconstruct/structures/slime_islands/blood/8x1x11.nbt"
+hash = "82ed9cdacaa6762a96bee565522e24a4a0b51342caafb80c2a8a59fc6590b9ae"
+
+[[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/structures/slime_islands/earth/earth_0x1x0.nbt"
 hash = "82ed9cdacaa6762a96bee565522e24a4a0b51342caafb80c2a8a59fc6590b9ae"
 
@@ -12710,63 +12734,63 @@ hash = "82ed9cdacaa6762a96bee565522e24a4a0b51342caafb80c2a8a59fc6590b9ae"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/structures/slime_islands/sky/earth_0x1x0.nbt"
-hash = "82ed9cdacaa6762a96bee565522e24a4a0b51342caafb80c2a8a59fc6590b9ae"
+hash = "3c90b1ce6624838470828f72d6e9ccea4eead6331a319f83774a7548732a6cc1"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/structures/slime_islands/sky/earth_11x1x11.nbt"
-hash = "82ed9cdacaa6762a96bee565522e24a4a0b51342caafb80c2a8a59fc6590b9ae"
+hash = "2b2bb6b1f6e10e77eafad374512835e184224ed9702202793daaf2341449c93a"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/structures/slime_islands/sky/earth_2x2x4.nbt"
-hash = "82ed9cdacaa6762a96bee565522e24a4a0b51342caafb80c2a8a59fc6590b9ae"
+hash = "3c90b1ce6624838470828f72d6e9ccea4eead6331a319f83774a7548732a6cc1"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/structures/slime_islands/sky/earth_4x1x6.nbt"
-hash = "82ed9cdacaa6762a96bee565522e24a4a0b51342caafb80c2a8a59fc6590b9ae"
+hash = "3658e10c75e46ed8ba2477ca8cf3d6f1501775efe780281822250235bdbd2401"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/structures/slime_islands/sky/earth_8x1x11.nbt"
-hash = "82ed9cdacaa6762a96bee565522e24a4a0b51342caafb80c2a8a59fc6590b9ae"
+hash = "3658e10c75e46ed8ba2477ca8cf3d6f1501775efe780281822250235bdbd2401"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/structures/slime_islands/sky/sky_0x1x0.nbt"
-hash = "82ed9cdacaa6762a96bee565522e24a4a0b51342caafb80c2a8a59fc6590b9ae"
+hash = "a1c709d01c3466ff577049b22f362595061fbec5b069b9487aa41bbf8bc2b602"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/structures/slime_islands/sky/sky_11x1x11.nbt"
-hash = "82ed9cdacaa6762a96bee565522e24a4a0b51342caafb80c2a8a59fc6590b9ae"
+hash = "003f9fb09e9f02e95ab3c8b73549d289c48a914010c8e293337a427adf0bfaf3"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/structures/slime_islands/sky/sky_2x2x4.nbt"
-hash = "82ed9cdacaa6762a96bee565522e24a4a0b51342caafb80c2a8a59fc6590b9ae"
+hash = "003f9fb09e9f02e95ab3c8b73549d289c48a914010c8e293337a427adf0bfaf3"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/structures/slime_islands/sky/sky_4x1x6.nbt"
-hash = "82ed9cdacaa6762a96bee565522e24a4a0b51342caafb80c2a8a59fc6590b9ae"
+hash = "1c3c06476cb07a88648a49b71eaefbe99ace2e8c25698910dbcb569d40e87ff7"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/structures/slime_islands/sky/sky_8x1x11.nbt"
-hash = "82ed9cdacaa6762a96bee565522e24a4a0b51342caafb80c2a8a59fc6590b9ae"
+hash = "a1c709d01c3466ff577049b22f362595061fbec5b069b9487aa41bbf8bc2b602"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/structures/slime_islands/vanilla/0x1x0.nbt"
-hash = "82ed9cdacaa6762a96bee565522e24a4a0b51342caafb80c2a8a59fc6590b9ae"
+hash = "928200922241a5b44c3192ddbab70951a41c1797f53da1536e8ea365886f3b09"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/structures/slime_islands/vanilla/11x1x11.nbt"
-hash = "82ed9cdacaa6762a96bee565522e24a4a0b51342caafb80c2a8a59fc6590b9ae"
+hash = "928200922241a5b44c3192ddbab70951a41c1797f53da1536e8ea365886f3b09"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/structures/slime_islands/vanilla/2x2x4.nbt"
-hash = "82ed9cdacaa6762a96bee565522e24a4a0b51342caafb80c2a8a59fc6590b9ae"
+hash = "8fa7292d1d626a5f8dc65b0fb8f5a185853c2130f071da368d08c38f2616d794"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/structures/slime_islands/vanilla/4x1x6.nbt"
-hash = "82ed9cdacaa6762a96bee565522e24a4a0b51342caafb80c2a8a59fc6590b9ae"
+hash = "8fa7292d1d626a5f8dc65b0fb8f5a185853c2130f071da368d08c38f2616d794"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/structures/slime_islands/vanilla/8x1x11.nbt"
-hash = "82ed9cdacaa6762a96bee565522e24a4a0b51342caafb80c2a8a59fc6590b9ae"
+hash = "928200922241a5b44c3192ddbab70951a41c1797f53da1536e8ea365886f3b09"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/tags/fluids/desh.json"
@@ -13350,7 +13374,7 @@ hash = "ad233e52d7994c5ea1d5c2f3bda96fe5a20c706095724dae0e3027f8f1ff8d01"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
-hash = "ad39ba23b39ff53d29922e0024740a9b56d386fe7c432cb822424add0d8392ce"
+hash = "d0abda8af850f4a8820cbb8e5e5020d754eaaa412d28eed76723087ad1978b28"
 
 [[files]]
 file = "kubejs/server_scripts/createaddons.js"
@@ -13438,7 +13462,7 @@ hash = "393073dffdcfaa332d714a804f636cd5bc5e1725228f7f7c580097b305896bf4"
 
 [[files]]
 file = "kubejs/server_scripts/tconstruct.js"
-hash = "23888385d851378f95a2770de7f0f9b69f903ee1b2790e592d0e2f771dc0212a"
+hash = "3ef72c7bd1b49bb0475ea29526258e4dd06f457edd4b8df1f5e699a630758491"
 
 [[files]]
 file = "kubejs/server_scripts/techreborn.js"
@@ -13470,7 +13494,7 @@ hash = "67b1da7da9def015a2119198d52076abc7287b1b13584c9964bccfd4560eab30"
 
 [[files]]
 file = "kubejs/startup_scripts/item_tooltip.js"
-hash = "acccc7ac2ab921f4f6154750c40e125a524da7e7368e6ed5916c96e327defa3f"
+hash = "1f6657b35581acfb593b0223f66b90d9899ce350b4902034bb9da7ca0c59d9ea"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
@@ -29102,6 +29126,10 @@ file = "resources/minecraft/textures/item/machine_pistol.png"
 hash = "48b305bf6fdc05ae288c606416dea9040022d4a06c737ccfc0d10286b9c8b0ac"
 
 [[files]]
+file = "resources/minecraft/textures/item/music_disc_pigstep.png"
+hash = "42e822757f63695b43052ffddc52f88f5e3543b18ad88591d0657babc9e48bd5"
+
+[[files]]
 file = "resources/minecraft/textures/item/pistol.png"
 hash = "69074584131c3795a8dcc1334df89ddb48ac6188ec12e9ff65656edbecbdde90"
 
@@ -31608,6 +31636,26 @@ hash = "1ec361b0ee7014ef405e432593c71bd31e8debcd3b728a3a49ee0ec6ebc119ac"
 [[files]]
 file = "resources/yttr/textures/item/bedrock_smasher.png"
 hash = "201abbe68a7ca16c7fbc7bc3da3d50ee0eb08bee81f1a49eec3057a04cb886c4"
+
+[[files]]
+file = "resources/yttr/textures/item/music_disc_desert_heat.png"
+hash = "1eac147d76064eca101812aa3b7b3611d58c5a4bf4322a7241a9e8f410fca6fa"
+
+[[files]]
+file = "resources/yttr/textures/item/music_disc_memorandum.png"
+hash = "b33d413b4f3e38b71117993d9d7ce59bf034219b9bf45f852a2de1d4359d539e"
+
+[[files]]
+file = "resources/yttr/textures/item/music_disc_papillons.png"
+hash = "813921a50680fc46af9cb9a84b570e4a38e838d3cbe5f3443d6366c10ffa940c"
+
+[[files]]
+file = "resources/yttr/textures/item/music_disc_torus.png"
+hash = "9a5144ce47af8a0d88736e3be74838bebc4dc24aa71f9153b628e58f6a31dc4d"
+
+[[files]]
+file = "resources/yttr/textures/item/music_disc_void.png"
+hash = "8c8351498cd9b90964982c2967e591606bced0d7c5740f8a144ef1b1aaced69e"
 
 [[files]]
 file = "resources/yttr/textures/item/raw_gadolinite.png"
