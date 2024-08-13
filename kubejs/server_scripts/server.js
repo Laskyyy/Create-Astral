@@ -369,9 +369,33 @@ function lizardChanges(event) {
     lizardGeologyAlchemyChanges(event);
 }
 
+function portalBlocks(event) {// ethanicuss' portal blockies
+		event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "createastral:ancient_stone", // output
+                ],
+                "ad_astra:mars_sand",
+                [
+										event.recipes.createDeploying("createastral:martian_clump", [
+												"createastral:martian_clump",
+												"tconstruct:debris_nugget",
+										]),
+										event.recipes.createFilling("createastral:martian_clump", [
+                        "createastral:martian_clump",
+                        { fluid: "kubejs:shimmer", amount: BUCKET/2 },
+                    ]),
+								]
+            )
+            .transitionalItem("createastral:martian_clump")
+            .loops(1);
+}
+
 onEvent("recipes", (event) => {
     // Lizard's changes
     lizardChanges(event);
+		portalBlocks(event);
     farmersDelightCuttingChanges(event);
 
     /////// TECH REBORN ACTUAL RECIPES //////
@@ -379,8 +403,6 @@ onEvent("recipes", (event) => {
     //Tinker's Construct Reworking (New fluids and recipes)
     //Tier 2 and 3 materials
 
-    event.smithing("createastral:bronze_ingot", "techreborn:tin_ingot", "minecraft:copper_ingot");
-    event.smithing("createastral:bronze_ingot", "minecraft:copper_ingot", "techreborn:tin_ingot");
 
     event.shaped("tconstruct:seared_fuel_tank", ["CCC", "BDB", "AAA"], {
         A: "tconstruct:seared_bricks",
@@ -598,7 +620,7 @@ onEvent("recipes", (event) => {
     });
 
     event.shaped("extended_drawers:upgrade_frame", ["AB", "BA"], {
-        A: "tconstruct:pattern",
+        A: ["tconstruct:pattern", "techreborn:wood_plate"],
         B: "create:andesite_alloy",
     });
 
@@ -654,10 +676,14 @@ onEvent("recipes", (event) => {
         C: "create:golden_sheet",
     });
 
-    event.shaped("2x extended_drawers:connector", ["CBC", "BAB", "CBC"], {
-        A: "extended_drawers:upgrade_frame",
-        B: "minecraft:stick",
-        C: "createaddition:copper_rod",
+    event.shaped("4x extended_drawers:connector", ["BBB", "BAB", "BBB"], {
+        A: "techreborn:tin_plate",
+        B: "techreborn:wood_plate",
+    });
+
+    event.shaped("minecraft:shulker_shell", ["BBB", "BAB", "BBB"], {
+        A: "minecraft:nautilus_shell",
+        B: "minecraft:popped_chorus_fruit",
     });
 
     event.shaped("3x create:cogwheel", ["AB"], {
@@ -689,6 +715,7 @@ onEvent("recipes", (event) => {
     event.stonecutting("8x automobility:sand_off_road", "minecraft:sand");
     event.stonecutting("ae2:inscriber", "techreborn:basic_machine_frame");
     event.stonecutting("tconstruct:gear_cast", "#c:plates/gold");
+    event.stonecutting("astraladditions:ring_gold_cast", "#c:plates/gold");
     event.stonecutting("tconstruct:coin_cast", "#c:plates/gold");
     event.stonecutting("automobility:sloped_dash_panel", "automobility:dash_panel");
     event.stonecutting("automobility:steep_sloped_dash_panel", "automobility:dash_panel");
@@ -780,22 +807,13 @@ onEvent("recipes", (event) => {
     event.smoking("campanion:cooked_marshmallow", "campanion:marshmallow");
     event.smoking("campanion:blackened_marshmallow", "campanion:cooked_marshmallow");
 
-    //SMITHING RADIANT STUFF
 
-    event.smithing("createastral:radiant_helmet", "createastral:steel_helmet", "create:refined_radiance");
-    event.smithing("createastral:radiant_chestplate", "createastral:steel_chestplate", "create:refined_radiance");
-    event.smithing("createastral:radiant_leggings", "createastral:steel_leggings", "create:refined_radiance");
-    event.smithing("createastral:radiant_boots", "createastral:steel_boots", "create:refined_radiance");
-    event.smithing("createastral:radiant_sword", "minecraft:netherite_sword", "create:refined_radiance");
-    event.smithing("createastral:radiant_axe", "minecraft:netherite_axe", "create:refined_radiance");
-    event.smithing("createastral:radiant_shovel", "minecraft:netherite_shovel", "create:refined_radiance");
-    event.smithing("createastral:radiant_pickaxe", "minecraft:netherite_pickaxe", "create:refined_radiance");
+
 
     event.smelting("minecraft:leather", "minecraft:rotten_flesh").xp(2.0);
     event.smelting("techreborn:tin_ingot", "create:crushed_raw_tin");
     event.smelting("techreborn:silver_ingot", "create:crushed_raw_silver");
     event.smelting("techreborn:lead_ingot", "create:crushed_raw_lead");
-    event.smithing("farmersdelight:cooking_pot", "farmersdelight:skillet", "minecraft:water_bucket");
 
     event.shaped("minecraft:experience_bottle", ["AAA", "ABA", "AAA"], {
         A: "create:experience_nugget",
@@ -1183,6 +1201,18 @@ onEvent("recipes", (event) => {
     event.shaped("passivepiglins:piglin_coin", ["BA", "AB"], {
         A: "create:golden_sheet",
         B: "minecraft:piglin_banner_pattern",
+    });
+    event.shaped("yttr:flopper", ["AA ", " BA", "AA "], {
+        A: "create:iron_sheet",
+        B: "minecraft:chest",
+    });
+    event.shaped("yttr:chute", ["A A", "A A", "A A"], {
+        A: "create:iron_sheet",
+    });
+    event.shaped("yttr:bedrock_smasher", ["AAA", " B ", " C "], {
+        A: "ad_astra:calorite_plate",
+        B: "ad_astra:calorite_ingot",
+        C: "techreborn:diamond_plate",
     });
 
     /// Stuff Laky CBA updating to new format from experimental yet

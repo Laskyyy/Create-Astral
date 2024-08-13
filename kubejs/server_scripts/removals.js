@@ -4,9 +4,22 @@ onEvent("recipes", (event) => {
 
     //Tech Reborn
     [
+        // storage units
+        { output: "techreborn:crude_storage_unit" },
+        { output: "techreborn:basic_storage_unit" },
+        { output: "techreborn:advanced_storage_unit" },
+        { output: "techreborn:industrial_storage_unit" },
+        { output: "techreborn:quantumr_storage_unit" },
+        // tanks units
+        { output: "techreborn:basic_tank_unit" },
+        { output: "techreborn:advanced_tank_unit" },
+        { output: "techreborn:industrial_tank_unit" },
+        { output: "techreborn:quantum_tank_unit" },
+
         { output: "techreborn:chunk_loader" },
-        {output: "techreborn:pyrite_dust"},
+        { output: "techreborn:pyrite_dust"},
         { output: "ae2:spatial_anchor" },
+        { output: "techreborn:scrap_box" },
         { output: "techreborn:industrial_electrolyzer" },
         { output: "techreborn:industrial_sawmill" },
         { output: "techreborn:vacuum_freezer" },
@@ -130,9 +143,6 @@ onEvent("recipes", (event) => {
         { output: "create:veridium" },
         { output: "create:scoria" },
         { output: "create:scorchia" },
-        { output: "create:crushed_raw_tin" },
-        { output: "create:crushed_raw_silver" },
-        { output: "create:crushed_raw_lead" },
         { output: "create:crushed_raw_uranium" },
         { output: "create:electron_tube" },
         { output: "create:cogwheel", type: "minecraft:shaped" },
@@ -195,22 +205,6 @@ onEvent("recipes", (event) => {
         {
             type: "create:mixing",
             output: "tconstruct:queens_slime_ingot",
-        },
-        {
-            input: "minecraft:raw_iron",
-            output: "create:crushed_raw_iron",
-        },
-        {
-            input: "minecraft:raw_gold",
-            output: "create:crushed_raw_gold",
-        },
-        {
-            input: "minecraft:raw_copper",
-            output: "create:crushed_raw_copper",
-        },
-        {
-            input: "create:raw_zinc",
-            output: "create:crushed_raw_zinc",
         },
         {
             output: "create:brass_casing",
@@ -301,6 +295,8 @@ onEvent("recipes", (event) => {
         { output: "ad_astra:jet_suit_pants" },
         { output: "ad_astra:jet_suit_boots" },
         { output: "ad_astra:tier_1_rocket" },
+        { output: "ad_astra:tier_3_rocket" },
+        { output: "ad_astra:tier_4_rocket" },
         { output: "ad_astra:desh_cable" },
         { output: "ad_astra:steel_cable" },
         { output: "ad_astra:compressor" },
@@ -310,9 +306,8 @@ onEvent("recipes", (event) => {
         { output: "ad_astra:calorite_ingot", type: "minecraft:blasting" },
         { output: "ad_astra:calorite_engine" },
         { output: "ad_astra:calorite_tank" },
-        { output: "ad_astra:steel_tank"},
-        { output: "ad_astra:rocket_nose_cone"},
-
+        { output: "ad_astra:steel_tank" },
+        { output: "ad_astra:rocket_nose_cone" },
 
         // AE2
 
@@ -461,6 +456,7 @@ onEvent("recipes", (event) => {
         { output: "yttr:spatula" },
         { output: "yttr:bedrock_smasher" },
         { output: "yttr:effector" },
+        { output: "yttr:music_disc_papillons" },
 
         // Minecraft
 
@@ -518,6 +514,7 @@ onEvent("recipes", (event) => {
         { output: "minecraft:gravel", input: "techreborn:granite_dust" },
         { output: "minecraft:gold_nugget", input: "minecraft:soul_soil" },
         {output: "ae2:silicon"},
+        {output: "blahaj:bread"},
         {id: "techreborn:centrifuge/redstone" }, // remove other version of centrifuging certus quartz
         { input: "minecraft:crying_obsidian" },
         {
@@ -590,7 +587,7 @@ onEvent("recipes", (event) => {
         "brass",
         "zinc",
         "nickel",
-        "platinum"
+        "platinum",
     ];
 
     metal.forEach((metal) => {
@@ -653,12 +650,12 @@ onEvent("recipes", (event) => {
         ["sulfur", true],
         ["uvarovite", false],
         ["glowstone", true],
-        ["redstone", true]
-    ]
+        ["redstone", true],
+    ];
     dusts.forEach((dust) => {
         if (!dust[1]) {
-            event.remove({output: `techreborn:${dust[0]}_dust`});
+            event.remove({ output: `techreborn:${dust[0]}_dust` });
         }
-        event.remove({output: `techreborn:${dust[0]}_small_dust`});
+        event.remove({ output: `techreborn:${dust[0]}_small_dust` });
     });
 });

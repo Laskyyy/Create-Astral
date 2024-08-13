@@ -100,7 +100,7 @@
 	},
 	"slownessDebuff": {
 		// Player gets slowness effect, if carries too many backpacks in inventory
-		"tooManyBackpacksSlowness": true,
+		"tooManyBackpacksSlowness": false,
 		// Maximum number of backpacks, which can be carried in inventory, without slowness effect
 		"maxNumberOfBackpacks": 2,
 		"slownessPerExcessedBackpack": 1
@@ -118,7 +118,7 @@
 		"disableBackpackRender": false,
 		"overlay": {
 			// Enables tanks and tool slots overlay, while backpack is worn
-			"enableOverlay": false,
+			"enableOverlay": true,
 			// Offsets to left side
 			"offsetX": 20,
 			// Offsets to up

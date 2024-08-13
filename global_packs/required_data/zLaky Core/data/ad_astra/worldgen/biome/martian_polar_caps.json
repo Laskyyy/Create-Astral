@@ -37,7 +37,8 @@
     [
       "minecraft:large_dripstone",
       "minecraft:dripstone_cluster",
-      "minecraft:pointed_dripstone"
+      "minecraft:pointed_dripstone",
+       "astralrails:mars_blackstone_patch"
     ]
   ]
 }
