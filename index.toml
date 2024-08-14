@@ -3486,7 +3486,7 @@ hash = "c01fc1a19f3f5cbd4081e0192334ec916a96174f95049b32672602ec29b7a191"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/astralsignals/machines/drive_eraser.json"
-hash = "41186ea4950c1d15476de84912545026846ecc0f8b226c2a5425314bb84f42f1"
+hash = "3a4fd68299502bb9514fc9a1d21cb4da7fd91719a87183b20be99e67a90d39db"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/astralsignals/machines/mp_decryptor.json"
@@ -3506,7 +3506,7 @@ hash = "74fe23b6a58d263cc8c2d516394b02e91897edd40eac2214f09d9d951ac9b05e"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/astralsignals/machines/vinyl_printer.json"
-hash = "214e69ff488d72b69fe66d6472f696a1ff2a231ef198dc3bc13b514ae124b914"
+hash = "be6284eb059d23b319688075f53e142251b9579eebc4bc227a4febe04902491e"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/automobility/recipes/engine/copper_engine.json"
@@ -13177,6 +13177,10 @@ file = "kubejs/assets/astralsignals/models/item/data_drive_decrypted_chirp.json"
 hash = "ee74e863d3a73278b1a3f54002eadb252009644a03e3caf7fd9a4ae4a3f9d82d"
 
 [[files]]
+file = "kubejs/assets/astralsignals/models/item/data_drive_decrypted_desertheat.json"
+hash = "3ef54f8a0a61d3a3aace729f5f9713d213bbe716a21d5095f5aaa490d6b21ff5"
+
+[[files]]
 file = "kubejs/assets/astralsignals/models/item/data_drive_decrypted_far.json"
 hash = "ee74e863d3a73278b1a3f54002eadb252009644a03e3caf7fd9a4ae4a3f9d82d"
 
@@ -13189,8 +13193,20 @@ file = "kubejs/assets/astralsignals/models/item/data_drive_decrypted_mellohi.jso
 hash = "ee74e863d3a73278b1a3f54002eadb252009644a03e3caf7fd9a4ae4a3f9d82d"
 
 [[files]]
+file = "kubejs/assets/astralsignals/models/item/data_drive_decrypted_memorandum.json"
+hash = "3ef54f8a0a61d3a3aace729f5f9713d213bbe716a21d5095f5aaa490d6b21ff5"
+
+[[files]]
 file = "kubejs/assets/astralsignals/models/item/data_drive_decrypted_otherside.json"
 hash = "ee74e863d3a73278b1a3f54002eadb252009644a03e3caf7fd9a4ae4a3f9d82d"
+
+[[files]]
+file = "kubejs/assets/astralsignals/models/item/data_drive_decrypted_papillons.json"
+hash = "21cde391099f1982fde2132d3bb5796759795e26a0891e3b9c4a42c627a6054c"
+
+[[files]]
+file = "kubejs/assets/astralsignals/models/item/data_drive_decrypted_pigstep.json"
+hash = "3ef54f8a0a61d3a3aace729f5f9713d213bbe716a21d5095f5aaa490d6b21ff5"
 
 [[files]]
 file = "kubejs/assets/astralsignals/models/item/data_drive_decrypted_purpleprison.json"
@@ -13203,6 +13219,14 @@ hash = "ee74e863d3a73278b1a3f54002eadb252009644a03e3caf7fd9a4ae4a3f9d82d"
 [[files]]
 file = "kubejs/assets/astralsignals/models/item/data_drive_decrypted_strad.json"
 hash = "ee74e863d3a73278b1a3f54002eadb252009644a03e3caf7fd9a4ae4a3f9d82d"
+
+[[files]]
+file = "kubejs/assets/astralsignals/models/item/data_drive_decrypted_torus.json"
+hash = "21cde391099f1982fde2132d3bb5796759795e26a0891e3b9c4a42c627a6054c"
+
+[[files]]
+file = "kubejs/assets/astralsignals/models/item/data_drive_decrypted_void.json"
+hash = "21cde391099f1982fde2132d3bb5796759795e26a0891e3b9c4a42c627a6054c"
 
 [[files]]
 file = "kubejs/assets/astralsignals/models/item/data_drive_decrypted_wait.json"
@@ -13366,11 +13390,11 @@ hash = "7936a3fb149726799bcf20425fe3d66e71feb3287e77f9e7a8148f61db7389b7"
 
 [[files]]
 file = "kubejs/server_scripts/astral_signals_crafting.js"
-hash = "5ed3620550fab4a904fa92b9f87fb2c6573e6592ddda6a2cb9bf8ebac5fe6a7b"
+hash = "11167f7f1d25dfbdf40b4c9e789fe3b50fa88dc5d82a63bdd809c45b660134e2"
 
 [[files]]
 file = "kubejs/server_scripts/astral_signals_machines.js"
-hash = "ad233e52d7994c5ea1d5c2f3bda96fe5a20c706095724dae0e3027f8f1ff8d01"
+hash = "08380403a0eb89d72bc97dc93b8afe7a92dc149db975400edea84009a3f3c42b"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
@@ -13478,7 +13502,7 @@ hash = "549d73b4a709fe237a79fc99966e78c95d40e7613d0e10aca74183c65d8c6262"
 
 [[files]]
 file = "kubejs/startup_scripts/astralsignals_registry.js"
-hash = "6d2054fa80d6f794276a63654c3d7bb6ed5bae9bfbe55425c02712b95fa7a149"
+hash = "fc606d2957141a4e017e0d7706e5bb4d6f47028ad5fc3f6c7926ba534c24d51a"
 
 [[files]]
 file = "kubejs/startup_scripts/block_registry.js"
@@ -22535,7 +22559,7 @@ hash = "44f2067aa25e0c096fe2a93de489876fdbcd7d6f64d1f60313afd5b09f339aba"
 
 [[files]]
 file = "resourcepacks/BetterVanillaBuildingV2.86.1/assets/minecraft/textures/item/music_disc_pigstep.png"
-hash = "c9315d2b9c072ef783eb57acee650acca4aba847623dfccbedf2dbab3cd1164b"
+hash = "f1a451b647bfd999d39dfd7217e51784a5006240ff839d66cb777072df18551d"
 
 [[files]]
 file = "resourcepacks/BetterVanillaBuildingV2.86.1/assets/minecraft/textures/item/music_disc_stal.png"
@@ -29126,10 +29150,6 @@ file = "resources/minecraft/textures/item/machine_pistol.png"
 hash = "48b305bf6fdc05ae288c606416dea9040022d4a06c737ccfc0d10286b9c8b0ac"
 
 [[files]]
-file = "resources/minecraft/textures/item/music_disc_pigstep.png"
-hash = "42e822757f63695b43052ffddc52f88f5e3543b18ad88591d0657babc9e48bd5"
-
-[[files]]
 file = "resources/minecraft/textures/item/pistol.png"
 hash = "69074584131c3795a8dcc1334df89ddb48ac6188ec12e9ff65656edbecbdde90"
 
@@ -31638,16 +31658,16 @@ file = "resources/yttr/textures/item/bedrock_smasher.png"
 hash = "201abbe68a7ca16c7fbc7bc3da3d50ee0eb08bee81f1a49eec3057a04cb886c4"
 
 [[files]]
+file = "resources/yttr/textures/item/music_disc.png"
+hash = "813921a50680fc46af9cb9a84b570e4a38e838d3cbe5f3443d6366c10ffa940c"
+
+[[files]]
 file = "resources/yttr/textures/item/music_disc_desert_heat.png"
 hash = "1eac147d76064eca101812aa3b7b3611d58c5a4bf4322a7241a9e8f410fca6fa"
 
 [[files]]
 file = "resources/yttr/textures/item/music_disc_memorandum.png"
 hash = "b33d413b4f3e38b71117993d9d7ce59bf034219b9bf45f852a2de1d4359d539e"
-
-[[files]]
-file = "resources/yttr/textures/item/music_disc_papillons.png"
-hash = "813921a50680fc46af9cb9a84b570e4a38e838d3cbe5f3443d6366c10ffa940c"
 
 [[files]]
 file = "resources/yttr/textures/item/music_disc_torus.png"
