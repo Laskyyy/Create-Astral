@@ -2,7 +2,7 @@ onEvent("recipes", (event) => {
     [
         {
             inputs: {
-                A: "create:cut_tuff",
+                A: "minecraft:copper_ingot",
                 B: "create:electron_tube",
                 C: "phonos:redstone_chip",
             },

@@ -155,6 +155,18 @@ onEvent("item.registry", (event) => {
             id: "astralsignals:data_drive_decrypted_purpleprison",
             name: "Parallel Decrypted Data Drive - Purple Prison",
         },
+        {
+            id: "astralsignals:data_drive_decrypted_pigstep",
+            name: "Parallel Decrypted Data Drive - Pigstep",
+        },
+        {
+            id: "astralsignals:data_drive_decrypted_desertheat",
+            name: "Parallel Decrypted Data Drive - Desert Heat",
+        },
+        {
+            id: "astralsignals:data_drive_decrypted_memorandum",
+            name: "Parallel Decrypted Data Drive - memorandum",
+        },
     ].forEach((item) => {
         event.create(item.id).displayName(item.name).rarity("Uncommon").glow(true);
     });
@@ -163,6 +175,18 @@ onEvent("item.registry", (event) => {
         {
             id: "astralsignals:data_drive_decrypted_wolfgif",
             name: "Microphysically Decrypted Data Drive - Astral Lakes WolfGif Remix",
+        },
+        {
+            id: "astralsignals:data_drive_decrypted_papillons",
+            name: "Microphysically Decrypted Data Drive - papillons",
+        },
+        {
+            id: "astralsignals:data_drive_decrypted_void",
+            name: "Microphysically Decrypted Data Drive - void",
+        },
+        {
+            id: "astralsignals:data_drive_decrypted_torus",
+            name: "Microphysically Decrypted Data Drive - torus",
         },
     ].forEach((item) => {
         event.create(item.id).displayName(item.name).rarity("Rare").glow(true);
