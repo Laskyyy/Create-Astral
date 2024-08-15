@@ -3509,6 +3509,34 @@ file = "global_packs/required_data/zLaky Core/data/astralsignals/machines/vinyl_
 hash = "be6284eb059d23b319688075f53e142251b9579eebc4bc227a4febe04902491e"
 
 [[files]]
+file = "global_packs/required_data/zLaky Core/data/astralsignals/tags/items/discs_t1.json"
+hash = "3ad81893c2e520cdd61f57ca441d3232ed78dd8fa77f1d5be660c74603efd909"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/astralsignals/tags/items/discs_t2.json"
+hash = "aa2b549da10b17749c5d9bc827ecb306d5d666fa5d88e4cb1443ebc477c12468"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/astralsignals/tags/items/discs_t3.json"
+hash = "d0bfe2e9701aa90ecb1b275b9cab0a384bb4712ba7c22b7f9b64578b37b997db"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/astralsignals/tags/items/drives.json"
+hash = "8be5d53ef18963c8430f70708cdf31682051e3b73e39d1261328962e27a90c85"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/astralsignals/tags/items/drives_decrypted_t1.json"
+hash = "8b58bcccf5a80a1e74ff3506fced47839fc260cd5fd733e880953ada29ee252e"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/astralsignals/tags/items/drives_decrypted_t2.json"
+hash = "2a002a9ec35bed810b8e5143e22bf9117f430652a93f570c43f99f2cc0abf603"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/astralsignals/tags/items/drives_decrypted_t3.json"
+hash = "7b07989371d9b5306ff39fea1ed1f8f8c2eb75c295900314b6c3fcc48c8281fa"
+
+[[files]]
 file = "global_packs/required_data/zLaky Core/data/automobility/recipes/engine/copper_engine.json"
 hash = "454d03fec017a683e84ff45688c5df2756989866750a8619411d8a4cdc107187"
 
@@ -4867,6 +4895,10 @@ hash = "6e2fc4a20ade80da75d0c16e7b0662bddcb257d36bbde95610c26591a4b10084"
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/minecraft/loot_tables/blocks/amethyst_block.json"
 hash = "5be9931d0d0d6e898d1e1e342c297f1b81f670d0493e2f9c3f390034236c2f9d"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/minecraft/loot_tables/entities/creeper.json"
+hash = "65a25c221530f4a293b8971a5c3c63dced1ab61e57f9802062fcbac03a66f927"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/minecraft/loot_tables/entities/wither_skeleton.json"
@@ -13402,7 +13434,7 @@ hash = "d0abda8af850f4a8820cbb8e5e5020d754eaaa412d28eed76723087ad1978b28"
 
 [[files]]
 file = "kubejs/server_scripts/createaddons.js"
-hash = "7436e8515c54588076cbacffcef4ab83c46049b2c66b0dca3c17d3d0f9519f63"
+hash = "16bd469ff999a0ad4270c525d08365bbaa1ee96aa58b56ee645aa7531cf5f33f"
 
 [[files]]
 file = "kubejs/server_scripts/crushing.js"
@@ -13498,7 +13530,7 @@ hash = "250a99e5b7bbe32d095ff746c1ea1c9e7d0577788c79c48c65f83fe634481b58"
 
 [[files]]
 file = "kubejs/server_scripts/yttr_block_fix.js"
-hash = "549d73b4a709fe237a79fc99966e78c95d40e7613d0e10aca74183c65d8c6262"
+hash = "2c9329b472d1d889d5995a5ae57dbb7e94da0d12850c3dbb52ce6d5645047c4e"
 
 [[files]]
 file = "kubejs/startup_scripts/astralsignals_registry.js"
