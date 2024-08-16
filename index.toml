@@ -13326,7 +13326,7 @@ hash = "81a5532cc7f8ec1c49f073fadfbfa1d77f89a18cbffa4cd44408847018795573"
 
 [[files]]
 file = "kubejs/assets/astralsignals/textures/item/ancient_receiver.png"
-hash = "75cbe0660861e1a8fb01adfd4b9904eec95fb8dd5847c60270da989c816d285f"
+hash = "b36122937de8328d304f24dc8c2953e530313c871bc4b2425fed14a8517fda27"
 
 [[files]]
 file = "kubejs/assets/astralsignals/textures/item/data_drive_blank.png"
@@ -13374,11 +13374,11 @@ hash = "5da930f8c2d4cac2e2430ae151b9c0e028decee504e9a70ff289e9b8dff6ab72"
 
 [[files]]
 file = "kubejs/assets/astralsignals/textures/item/microphysical_probe.png"
-hash = "e6dcf9ff651df3932be9ed616fbc20470ab24102832663098acfb635d23f56d1"
+hash = "d3ad9f387246c990386d74042481fbfeb4a6a6c10c1bfcd8b089a0d92e96b4e5"
 
 [[files]]
 file = "kubejs/assets/astralsignals/textures/item/parallel_processor.png"
-hash = "5370ae86b882549b4dcea2c280e6a7af764a18f8fc44269a97db40c172bdba1d"
+hash = "5ba0f5839fef59b78ad87d7837283e637628e1191596ac2d6a7481e1d3f690d3"
 
 [[files]]
 file = "kubejs/assets/astralsignals/textures/item/polyvinyl_sheet.png"
