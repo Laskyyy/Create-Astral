@@ -11,11 +11,12 @@ onEvent("recipes", (event) => {
         },
         {
             inputs: {
-                A: "create:cut_tuff",
+                A: "minecraft:copper_ingot",
                 B: "create:electron_tube",
                 C: "phonos:redstone_chip",
+                D: "minecraft:gold_nugget",
             },
-            shape: ["BAB", "ACA", " A "],
+            shape: ["BAB", "ACA", " D "],
             output: "astralsignals:dormant_signal_beacon",
         },
         {
