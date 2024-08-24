@@ -1,7 +1,18 @@
 {
     "name": "Analog Decryptor",
     "appearance": {
-        "block": "astralsignals:analog_decryptor_dummy"
+        "idle": {
+            "block": "planetsandportals:machine/analog_decryptor_inactive"
+        },
+        "running": {
+            "block": "planetsandportals:machine/analog_decryptor_active"
+        },
+        "errored": {
+            "block": "planetsandportals:machine/analog_decryptor_inactive"
+        },
+        "paused": {
+            "block": "planetsandportals:machine/analog_decryptor_inactive"
+        }
     },
     "gui": [
         {
