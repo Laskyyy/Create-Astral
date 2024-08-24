@@ -76,7 +76,13 @@
                 "astralsignals:data_drive_decrypted_wait",
                 "astralsignals:data_drive_decrypted_otherside",
                 "astralsignals:data_drive_decrypted_purpleprison",
-                "astralsignals:data_drive_decrypted_wolfgif"
+                "astralsignals:data_drive_decrypted_wolfgif",
+                "astralsignals:data_drive_decrypted_desertheat",
+                "astralsignals:data_drive_decrypted_memorandum",
+                "astralsignals:data_drive_decrypted_papillons",
+                "astralsignals:data_drive_decrypted_pigstep",
+                "astralsignals:data_drive_decrypted_torus",
+                "astralsignals:data_drive_decrypted_void"
             ],
             "whitelist": true
         },
