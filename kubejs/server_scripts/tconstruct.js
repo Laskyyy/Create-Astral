@@ -149,6 +149,12 @@ onEvent("recipes", (event) => {
             cast: ["tconstruct:nugget_cast", false],
         },
         {
+            fluid: ["kubejs:compound_mixture", mB*11],
+            result: "create:shaft",
+            cooling_time: 10,
+            cast: ["tconstruct:rod_cast", false],
+        },
+        {
             fluid: ["kubejs:liquid_xp_nuggies", 8 * NUGGET],
             result: "minecraft:experience_bottle",
             cooling_time: 30,
