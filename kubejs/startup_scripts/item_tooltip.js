@@ -322,7 +322,7 @@ onEvent("item.tooltip", (e) => {
         if (e.isShift()) {
             text.add(1, [
                 Text.of(
-                    "The intricate nature of this item causes it to shatter when mishandled! Do not hold in player inventories, it must be moved with logistical methods!"
+                    "Breaks when held in player inventories, it must be moved with logistical methods!"
                 ).red(),
             ]);
         }
@@ -334,7 +334,7 @@ onEvent("item.tooltip", (e) => {
         if (e.isShift()) {
             text.add(1, [
                 Text.of(
-                    "The intricate nature of this item causes it to shatter when mishandled! Do not hold in player inventories, it must be moved with logistical methods!"
+                    "Breaks when held in player inventories, it must be moved with logistical methods!"
                 ).red(),
             ]);
         }
@@ -346,7 +346,7 @@ onEvent("item.tooltip", (e) => {
         if (e.isShift()) {
             text.add(1, [
                 Text.of(
-                    "The intricate nature of this item causes it to shatter when mishandled! Do not hold in player inventories, it must be moved with logistical methods!"
+                    "Breaks when held in player inventories, it must be moved with logistical methods!"
                 ).red(),
             ]);
         }
