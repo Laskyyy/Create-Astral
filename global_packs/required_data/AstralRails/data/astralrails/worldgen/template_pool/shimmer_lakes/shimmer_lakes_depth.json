@@ -5,7 +5,7 @@
     {
       "weight": 1,
       "element": {
-        "location": "astralrails:shimmer_lakes/shimmer_lake_depth",
+        "location": "astralrails:overworld/shimmer_lakes/shimmer_lake_depth",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"

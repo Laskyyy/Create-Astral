@@ -3,6 +3,7 @@
     "block.yttr.gadolinite": "Yttrium",
     "block.yttr.raw_gadolinite_block": "Raw Yttrium Block",
     "block.yttr.deepslate_gadolinite": "Deepslate Yttrium",
+    "block.yttr.continuous_platform": "Structured Prismatic Crystals",
     "advancements.yttr.obtain_xl_iron_ingot.desc": "Obtain Big Iron by smelting Raw Yttrium",
     "advancements.yttr.obtain_yttrium_ingot.desc": "Obtain an Yttrium Ingot by blasting Raw Yttrium"
 }

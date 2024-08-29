@@ -72,7 +72,7 @@ const mixings = [
         output: {fluid: "minecraft:lava", amount: 500 * mB },
         input: [
             "4x createastral:stone_dust",
-            "2x minecraft:netherack",
+            "2x minecraft:netherrack",
         ],
         heat: "heated",
         time: null,
@@ -95,11 +95,11 @@ const mixings = [
     },{
         output: {fluid: "kubejs:shimmer", amount: 1000 * mB },
         input: [
-            "5x techreborn:amethyst_dust",
-            "2x minecraft:glow_ink_sac",
-            "ad_astra:moon_sand"
+            "2x techreborn:amethyst_dust",
+            "1x minecraft:glow_ink_sac",
+            "astraladditions:lune_shroom"
         ],
-        heat: "superheated",
+        heat: "heated",
         time: null,
     }
 

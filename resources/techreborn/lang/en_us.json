@@ -20,5 +20,13 @@
     "techreborn.message.info.block.techreborn.assembly_machine": "Unpacks compacted materials",
     
     "advancements.techreborn.rollingmachine": "Pack",
-    "advancements.techreborn.rollingmachine.desc": "Craft a packer"
+    "advancements.techreborn.rollingmachine.desc": "Craft a packer",
+
+    "item.techreborn.diamond_plate": "Diamond Sheet",
+    "item.techreborn.electrum_plate": "Electrum Sheet",
+    "item.techreborn.invar_plate": "Invar Sheet",
+    "item.techreborn.lead_plate": "Lead Sheet",
+    "item.techreborn.silver_plate": "Silver Sheet",
+    "item.techreborn.tin_plate": "Tin Sheet",
+    "item.techreborn.wood_plate": "Wood Sheet"
 }

@@ -62,6 +62,14 @@ onEvent("block.right_click", (event) => {
     }
 });
 
+/// swift andesite by max
+onEvent("player.tick", (event) => {
+    const player = event.getPlayer();
+    if (event.level.getBlock(player.x, player.y - 2, player.z) == "createastral:swift_andesite") {
+        player.potionEffects.add("minecraft:speed", 20, 0, false, false);
+    }
+});
+
 //? Add code to make different potato projectiles go bang
 
 //! READ ME:
@@ -103,7 +111,7 @@ const ammos = [
         particleColourB: 0.7, //? Colour settings
 
         explosionEnable: true, //? Does it go boom
-        explosionStrength: 10,
+        explosionStrength: 8,
         explosionDamageTerrain: true, //? How strong it go boom and if it hurt the land
     },
 
@@ -112,8 +120,8 @@ const ammos = [
         particlesEnable: false,
 
         explosionEnable: true,
-        explosionStrength: 5,
-        explosionDamageTerrain: true,
+        explosionStrength: 3,
+        explosionDamageTerrain: false,
     },
 ];
 

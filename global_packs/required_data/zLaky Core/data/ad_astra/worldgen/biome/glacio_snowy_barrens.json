@@ -63,7 +63,8 @@
       "ad_astra:glacio_deepslate_copper_ore",
       "ad_astra:glacio_deepslate_iron_ore",
       "ad_astra:glacio_deepslate_lapis_ore",
-      "createastral:crystal_pillar"
+      "createastral:crystal_pillar",
+      "astralrails:glacio_amethyst_cluster"
     ]
   ]
 }
