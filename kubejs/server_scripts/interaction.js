@@ -111,7 +111,7 @@ const ammos = [
         particleColourB: 0.7, //? Colour settings
 
         explosionEnable: true, //? Does it go boom
-        explosionStrength: 10,
+        explosionStrength: 8,
         explosionDamageTerrain: true, //? How strong it go boom and if it hurt the land
     },
 
@@ -120,8 +120,8 @@ const ammos = [
         particlesEnable: false,
 
         explosionEnable: true,
-        explosionStrength: 5,
-        explosionDamageTerrain: true,
+        explosionStrength: 3,
+        explosionDamageTerrain: false,
     },
 ];
 
