@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = %fancymenu:universal_layout%
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1706807511083
+  last_edited_time = 1718463461165
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:2ad8a4d5-5494-4341-861b-e6d0aba50135-1706807279119] = [groups:][instances:]
+  [loading_requirement_container_meta:f93b1412-7d5a-4fd0-9220-021cd0cf66df-1718463445645] = [groups:][instances:]
 }
 
 customization {
@@ -22,6 +22,8 @@ scroll_list_customization {
   render_scroll_list_header_shadow = true
   render_scroll_list_footer_shadow = true
   show_scroll_list_header_footer_preview_in_editor = false
+  repeat_scroll_list_header_texture = false
+  repeat_scroll_list_footer_texture = false
 }
 
 element {
@@ -31,7 +33,7 @@ element {
   volume = 1.0
   sound_source = music
   element_type = audio_v2
-  instance_identifier = 05fa31b7-c11a-4972-ac96-01a682c0e8c2-1706779921785
+  instance_identifier = 34c4daa9-11f8-498b-97f7-bada52b7c325-1718463447538
   appearance_delay = no_delay
   appearance_delay_seconds = 1.0
   fade_in = false
