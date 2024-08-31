@@ -13334,7 +13334,7 @@ hash = "ad233e52d7994c5ea1d5c2f3bda96fe5a20c706095724dae0e3027f8f1ff8d01"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
-hash = "cac98f2ee1ede2b9077346f1becc8266a2fa5574518cc8be1ae8c8ed8ee5f025"
+hash = "9d2fd1d09ba151be3e885bd7189e0ef23ff7f0e2ade8da773bab8d96cb1147ba"
 
 [[files]]
 file = "kubejs/server_scripts/createaddons.js"

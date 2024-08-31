@@ -14,7 +14,7 @@
     },
     "LightningRodBaseStrikeEnergy": {
       "comment": "Base amount of Energy per strike",
-      "value": 16384
+      "value": 1000000
     }
   },
   "dragon_egg_siphoner": {
