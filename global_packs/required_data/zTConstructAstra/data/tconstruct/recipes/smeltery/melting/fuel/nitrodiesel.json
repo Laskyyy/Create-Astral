@@ -1,9 +1,9 @@
 {
   "type": "tconstruct:melting_fuel",
   "fluid": {
-    "name": "techreborn:nitro_diesel",
+    "name": "kubejs:hellfire",
     "amount": 1000
   },
   "duration": 150,
-  "temperature": 1500
+  "temperature": 3000
 }

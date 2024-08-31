@@ -9,4 +9,8 @@ packwiz
 packwiz.exe
 .vscode
 .github
+kubejs/probe
 .idea
+
+# The contents of the serverpack folder will automatically get lifted to the root directory on build
+serverpack

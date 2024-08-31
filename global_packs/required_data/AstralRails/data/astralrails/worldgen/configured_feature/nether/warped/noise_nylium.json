@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:netherrack_replace_blobs",
+  "config": {
+    "state": {
+      "Name": "astraladditions:twisted_nylium"
+    },
+    "target": {
+      "Name": "minecraft:warped_nylium"
+    },
+    "radius": 8
+  }
+}

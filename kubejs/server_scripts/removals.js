@@ -4,8 +4,22 @@ onEvent("recipes", (event) => {
 
     //Tech Reborn
     [
+        // storage units
+        { output: "techreborn:crude_storage_unit" },
+        { output: "techreborn:basic_storage_unit" },
+        { output: "techreborn:advanced_storage_unit" },
+        { output: "techreborn:industrial_storage_unit" },
+        { output: "techreborn:quantumr_storage_unit" },
+        // tanks units
+        { output: "techreborn:basic_tank_unit" },
+        { output: "techreborn:advanced_tank_unit" },
+        { output: "techreborn:industrial_tank_unit" },
+        { output: "techreborn:quantum_tank_unit" },
+
         { output: "techreborn:chunk_loader" },
+        { output: "techreborn:pyrite_dust"},
         { output: "ae2:spatial_anchor" },
+        { output: "techreborn:scrap_box" },
         { output: "techreborn:industrial_electrolyzer" },
         { output: "techreborn:industrial_sawmill" },
         { output: "techreborn:vacuum_freezer" },
@@ -129,9 +143,6 @@ onEvent("recipes", (event) => {
         { output: "create:veridium" },
         { output: "create:scoria" },
         { output: "create:scorchia" },
-        { output: "create:crushed_raw_tin" },
-        { output: "create:crushed_raw_silver" },
-        { output: "create:crushed_raw_lead" },
         { output: "create:crushed_raw_uranium" },
         { output: "create:electron_tube" },
         { output: "create:cogwheel", type: "minecraft:shaped" },
@@ -196,22 +207,6 @@ onEvent("recipes", (event) => {
             output: "tconstruct:queens_slime_ingot",
         },
         {
-            input: "minecraft:raw_iron",
-            output: "create:crushed_raw_iron",
-        },
-        {
-            input: "minecraft:raw_gold",
-            output: "create:crushed_raw_gold",
-        },
-        {
-            input: "minecraft:raw_copper",
-            output: "create:crushed_raw_copper",
-        },
-        {
-            input: "create:raw_zinc",
-            output: "create:crushed_raw_zinc",
-        },
-        {
             output: "create:brass_casing",
             type: "create:item_application",
         },
@@ -254,7 +249,6 @@ onEvent("recipes", (event) => {
         { output: "railways:track_tieless" },
         { output: "railways:track_phantom" },
         { output: "railways:track_monorail" },
-
 
         //Createdeco sheetmetal rebalance
 
@@ -301,6 +295,8 @@ onEvent("recipes", (event) => {
         { output: "ad_astra:jet_suit_pants" },
         { output: "ad_astra:jet_suit_boots" },
         { output: "ad_astra:tier_1_rocket" },
+        { output: "ad_astra:tier_3_rocket" },
+        { output: "ad_astra:tier_4_rocket" },
         { output: "ad_astra:desh_cable" },
         { output: "ad_astra:steel_cable" },
         { output: "ad_astra:compressor" },
@@ -310,6 +306,8 @@ onEvent("recipes", (event) => {
         { output: "ad_astra:calorite_ingot", type: "minecraft:blasting" },
         { output: "ad_astra:calorite_engine" },
         { output: "ad_astra:calorite_tank" },
+        { output: "ad_astra:steel_tank" },
+        { output: "ad_astra:rocket_nose_cone" },
 
         // AE2
 
@@ -345,14 +343,12 @@ onEvent("recipes", (event) => {
         { output: "tconstruct:efln_ball" },
         { output: "tconstruct:piggy_backpack" },
 
-
         //horse armor
 
-        { output: "minecraft:leather_horse_armor"},
-        { type: "tconstruct:melting", input: "minecraft:iron_horse_armor"},
-        { type: "tconstruct:melting", input: "minecraft:golden_horse_armor"},
-        { type: "tconstruct:melting", input: "minecraft:diamond_horse_armor"},
-
+        { output: "minecraft:leather_horse_armor" },
+        { type: "tconstruct:melting", input: "minecraft:iron_horse_armor" },
+        { type: "tconstruct:melting", input: "minecraft:golden_horse_armor" },
+        { type: "tconstruct:melting", input: "minecraft:diamond_horse_armor" },
 
         // Miscellaneous
         { output: "minecraft:shroomlight" },
@@ -414,9 +410,6 @@ onEvent("recipes", (event) => {
         { mod: "extended_drawers" },
         { output: "doodads:slimey_shoes" },
 
-        { mod: "createsifter" },
-        { type: "createsifter:sifting" },
-
         { output: "dbe:steel_ingot" },
         { output: "dbe:copper_coil" },
 
@@ -463,6 +456,7 @@ onEvent("recipes", (event) => {
         { output: "yttr:spatula" },
         { output: "yttr:bedrock_smasher" },
         { output: "yttr:effector" },
+        { output: "yttr:music_disc_papillons" },
 
         // Minecraft
 
@@ -519,6 +513,9 @@ onEvent("recipes", (event) => {
         { output: "minecraft:gold_nugget", input: "minecraft:soul_sand" },
         { output: "minecraft:gravel", input: "techreborn:granite_dust" },
         { output: "minecraft:gold_nugget", input: "minecraft:soul_soil" },
+        {output: "ae2:silicon"},
+        {output: "blahaj:bread"},
+        {id: "techreborn:centrifuge/redstone" }, // remove other version of centrifuging certus quartz
         { input: "minecraft:crying_obsidian" },
         {
             input: "minecraft:copper_block",
@@ -589,6 +586,8 @@ onEvent("recipes", (event) => {
         "platinum",
         "brass",
         "zinc",
+        "nickel",
+        "platinum",
     ];
 
     metal.forEach((metal) => {
@@ -601,5 +600,62 @@ onEvent("recipes", (event) => {
         event.remove({ output: `techreborn:${metal}_dust` });
         event.remove({ output: `techreborn:${metal}_small_dust` });
         event.remove({ output: `techreborn:${metal}_nugget` });
+    });
+
+    const dusts = [
+        ["almandine", false],
+        ["amethyst", true],
+        ["andesite", true],
+        ["andradite", false],
+        ["ashes", true],
+        ["basalt", true],
+        ["bauxite", false],
+        ["bronze", false],
+        ["calcite", true],
+        ["charcoal", true],
+        ["cinnabar", false],
+        ["clay", true],
+        ["coal", true],
+        ["dark_ashes", true],
+        ["diamond", true],
+        ["diorite", true],
+        ["electrum", true],
+        ["emerald", false],
+        ["ender_eye", false],
+        ["ender_pearl", false], // ae2 ender dust replaces it
+        ["endstone", false],
+        ["flint", true],
+        ["galena", true],
+        ["granite", true],
+        ["grossular", false],
+        ["invar", false],
+        ["lazurite", true],
+        ["magnesium", false],
+        ["manganese", false],
+        ["marble", false],
+        ["netherrack", true],
+        ["nickel", false],
+        ["obsidian", false],
+        ["olivine", true],
+        ["phosphorous", false],
+        ["pyrite", false],
+        ["pyrope", false],
+        ["quartz", false],
+        ["saltpeter", true],
+        ["saw", true],
+        ["sodalite", false],
+        ["spessartine", false],
+        ["sphalerite", false],
+        ["steel", true],
+        ["sulfur", true],
+        ["uvarovite", false],
+        ["glowstone", true],
+        ["redstone", true],
+    ];
+    dusts.forEach((dust) => {
+        if (!dust[1]) {
+            event.remove({ output: `techreborn:${dust[0]}_dust` });
+        }
+        event.remove({ output: `techreborn:${dust[0]}_small_dust` });
     });
 });
