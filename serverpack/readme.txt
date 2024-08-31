@@ -1,6 +1,6 @@
 After you've extracted the serverpack, follow these steps to fully set up the server:
 
-1. Download download the fabric server .jar version 0.15.11 at https://meta.fabricmc.net/v2/versions/loader/1.18.2/0.15.11/0.11.1/server/jar
+1. Download download the fabric server .jar version 0.16.3 at https://meta.fabricmc.net/v2/versions/loader/1.18.2/0.16.3/0.11.1/server/jar
 2. Drag into main folder of server (with mods folder, config folder etc.), rename to exactly "server.jar"
    (ensure it isn't named server.jar.jar when file extensions are hidden)
 3. Download the client pack through a modded Minecraft launcher of your choice (i.e. PrismLauncher or the CurseForge app)

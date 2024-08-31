@@ -14479,8 +14479,8 @@ hash = "f192b19241ef95fb905a0145be3f5f1074efbd7861485bd58f7626bb0f40a476"
 metafile = true
 
 [[files]]
-file = "mods/ponder_overrides-0.0.1+1.18.2.jar"
-hash = "b3800fb7b82bf5aacc9557586c7f35864e68da7625dfdfdf93da4c39db491149"
+file = "mods/ponder_overrides-0.0.2+1.18.2.jar"
+hash = "5b6a1941b78cfed5880ec990df35046d408e5b1081ecc3e790deaebc57ba5503"
 
 [[files]]
 file = "mods/probejs.pw.toml"
