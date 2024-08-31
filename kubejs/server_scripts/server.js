@@ -989,11 +989,25 @@ onEvent("recipes", (event) => {
         sound: "minecraft:item.axe.strip",
     });
 
-    event.shapeless("3x createastral:synthetic_slime", ["2x minecraft:slime_ball", "2x techreborn:sponge_piece"]);
+    event.shapeless("3x createastral:synthetic_slime", ["2x #c:slimeballs", "2x techreborn:sponge_piece"]);
 
     event.shaped("createastral:synthetic_slime_block", ["SSS", "SSS", "SSS"], {
         S: "createastral:synthetic_slime",
     });
+
+    event.shaped("techreborn:lightning_rod",
+        ["SRS","DBD","CCC"],{
+            S: "techreborn:silver_plate",
+            R: "minecraft:lightning_rod",
+            D: "techreborn:diamond_plate",
+            B: "techreborn:red_cell_battery",
+            C: "techreborn:basic_machine_casing"
+        })
+
+    event.shaped("techreborn:refined_iron_fence",
+        ["BSB","BSB"],
+        {B: "minecraft:iron_block",
+        S: "createaddition:iron_rod"})
 
     event.shaped(
         Item.of("custommachinery:custom_machine_item", {
@@ -1045,7 +1059,7 @@ onEvent("recipes", (event) => {
             S: "create:shaft",
             B: "#c:slimeballs",
             F: "techreborn:iron_furnace",
-            C: "tconstruct:earth_congealed_slime",
+            C: "#tconstruct:congealed_slime",
         }
     );
 

@@ -153,7 +153,6 @@ onEvent("block.registry", (event) => {
         .material("lantern")
         .hardness(0);
 
-    event.create("createastral:swift_andesite", "basic")
     event
         .create("createastral:swift_andesite", "basic")
         .material("stone")
