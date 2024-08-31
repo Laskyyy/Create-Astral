@@ -30,13 +30,13 @@
 		{
 			"type": "custommachinery:fluid",
 			"fluid": "kubejs:hellfire",
-			"amount": 8100,
+			"amount": 810,
 			"mode": "input"
 		},
 		{
 			"type": "custommachinery:fluid",
 			"fluid": "kubejs:smite",
-			"amount": 810,
+			"amount": 8100,
 			"mode": "output"
 		}
 	]

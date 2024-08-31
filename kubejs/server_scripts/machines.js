@@ -60,5 +60,5 @@ onEvent('recipes', event => {
             "f": "techreborn:refined_iron_fence"
         }).requireFluid(Fluid.of("kubejs:smite", BUCKET))
         .runCommandOnEnd("/summon minecraft:lightning_bolt")
-        .runCommandOnEnd("/data modify block ~ ~3 ~ PowerAcceptor.energy set value 1000000");
+        .runCommandOnEnd("/data modify block ~ ~3 ~ PowerAcceptor.energy set value 720000");
 });
