@@ -13593,6 +13593,10 @@ file = "kubejs/client_scripts/ponder.js"
 hash = "e9a890ae293c7d726cb9707921d8a9304efb9adb8150974b0f388455e6801ea9"
 
 [[files]]
+file = "kubejs/client_scripts/ponders/desizer.js"
+hash = "04da1fc0c4382abaf65322c5b7453e2d600501bc9e347989189b41d7f403349d"
+
+[[files]]
 file = "kubejs/client_scripts/ponders/distillation.js"
 hash = "ec52d0dc32101efeb07a255339b89417e1e244305a95f8b7c5d51cf8b3c3c27a"
 
@@ -14678,6 +14682,10 @@ metafile = true
 file = "mods/yttr.pw.toml"
 hash = "e1c18b00c91c6b5a8193566f4a5316ff7ea03b49d0f7a31479cfe187d1bc53fa"
 metafile = true
+
+[[files]]
+file = "packwiz-installer.jar"
+hash = "c9f646908d340d84773948a9a7d98bc1dae250d35e1016dc6e2b8459760b5598"
 
 [[files]]
 file = "quests_structures/distillation.nbt"
