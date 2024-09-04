@@ -13586,7 +13586,11 @@ hash = "d23e2f9b5a481e31a05c769038ec02d4569b3b9ef42d81fe48f5f6f2519b8c04"
 
 [[files]]
 file = "kubejs/client_scripts/ponder.js"
-hash = "e9a890ae293c7d726cb9707921d8a9304efb9adb8150974b0f388455e6801ea9"
+hash = "695309bb3d20bf272002320cbb9c524940abc781facfb00bf5d54a907be9731a"
+
+[[files]]
+file = "kubejs/client_scripts/ponders/desizer.js"
+hash = "04da1fc0c4382abaf65322c5b7453e2d600501bc9e347989189b41d7f403349d"
 
 [[files]]
 file = "kubejs/client_scripts/ponders/distillation.js"

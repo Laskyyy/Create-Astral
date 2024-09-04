@@ -8,19 +8,15 @@ onEvent(
             "kubejs:createastral",
             "createastral:astral_singularity",
             "Create: Astral",
-            "Some helpful tips",
-            ["createastral:electrolyser_dummy", "createastral:shimmering_stone"]
+            "Tips and Tricks specific to this modpack",
+            ["createastral:electrolyser_dummy", "createastral:shimmering_stone", "astraladditions:desizer_8"]
         );
         event.createTag(
             "kubejs:tconstruct",
             "tconstruct:seared_table",
             "Tinkers Construct",
             "Tinkers Construct Basics",
-            [
-                "tconstruct:seared_melter",
-                "tconstruct:foundry_controller",
-                "tconstruct:seared_faucet",
-            ]
+            ["tconstruct:seared_melter", "tconstruct:foundry_controller", "tconstruct:seared_faucet"]
         );
     }
 );
