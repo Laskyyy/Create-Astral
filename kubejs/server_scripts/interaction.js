@@ -116,7 +116,7 @@ const ammos = [
     },
 
     {
-        projectileItem: "createbigcannons:flak_autocannon_round",
+        projectileItem: "createbigcannons:autocannon_cartridge",
         particlesEnable: false,
 
         explosionEnable: true,
