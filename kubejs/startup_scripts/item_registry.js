@@ -107,6 +107,16 @@ onEvent("item.registry", (event) => {
             .removeEffect("poison")
             .alwaysEdible(); //Like golden apples
     });
+    event.create("createastral:laskinium").glow(true).rarity('epic')
+    event.create("createastral:laskinium_pill").glow(true).rarity('epic').food((food) => {
+        food.hunger(30)
+            .saturation(0.5)
+            .effect("drinkbeer:drunk", 1000, 3, 5)
+            .effect("speed", 1000, 10, 5)
+            .effect("estrogen:estrogen", 1000, 6, 6)
+            .removeEffect("poison")
+            .alwaysEdible(); //Like golden apples
+    });
     event.create("createastral:pure_biomatter");
     event.create("createastral:lime").displayName("Lime Dust");
 

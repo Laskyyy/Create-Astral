@@ -16,6 +16,17 @@ onEvent("recipes", (event) => {
         { output: "techreborn:industrial_tank_unit" },
         { output: "techreborn:quantum_tank_unit" },
 
+        //cables
+        {output: "techreborn:gold_cable"},
+        {output: "techreborn:copper_cable"},
+        {output: "techreborn:tin_cable"},
+        {output: "techreborn:hv_cable"},
+        {output: "techreborn:glassfiber_cable"},
+        {output: "techreborn:insulated_hv_cable"},
+        {output: "techreborn:insulated_gold_cable"},
+        {output: "techreborn:insulated_copper_cable"},
+
+        { output: "techreborn:hv_transformer"},
         {output: "techreborn:lightning_rod"},
         {output: "techreborn:refined_iron_fence"},
         { output: "techreborn:chunk_loader" },
@@ -526,7 +537,6 @@ onEvent("recipes", (event) => {
             input: "minecraft:copper_block",
             type: "minecraft:stonecutting",
         },
-
         //dispenser recipe
         { output: "minecraft:dispenser" },
     ].forEach((recipe) => {

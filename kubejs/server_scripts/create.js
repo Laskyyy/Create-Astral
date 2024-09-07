@@ -398,6 +398,22 @@ function sequencedAssemblyRecipes(event) {
     //document in an effective way
     const inc_sturdy_sheet = "create:unprocessed_obsidian_sheet";
     event.recipes
+    .createSequencedAssembly(
+        [Item.of("createastral:laskinium_pill").withChance(1)],
+        "estrogen:estrogen_pill",
+        [
+            event.recipes.createFilling("estrogen:estrogen_pill", [
+                "estrogen:estrogen_pill",
+                { fluid: "kubejs:shimmer", amount: BUCKET }
+            ]),
+            event.recipes.createPressing("estrogen:estrogen_pill", "estrogen:estrogen_pill"),
+            event.recipes.createDeploying("estrogen:estrogen_pill", [
+                "estrogen:estrogen_pill","createastral:laskinium"])
+        ]
+    )
+    .transitionalItem("estrogen:estrogen_pill")
+    .loops(1);
+    event.recipes
         .createSequencedAssembly(
             [Item.of("create:sturdy_sheet").withChance(12), Item.of("minecraft:gravel").withChance(8)],
             "#c:dusts/obsidian",
@@ -408,7 +424,6 @@ function sequencedAssemblyRecipes(event) {
         )
         .transitionalItem(inc_sturdy_sheet)
         .loops(5);
-
     event.custom({
         type: "create:sequenced_assembly",
         ingredient: {tag: "c:plates/gold"},
@@ -2109,6 +2124,21 @@ function mixingRecipes(event) {
             time: 100,
         },
         {
+            output: "createastral:laskinium",
+            input: [
+                {
+                    item: "createastral:subatomic_ingot",
+                    amount: 2
+                },
+                {
+                    fluid: "kubejs:molten_calorite",
+                    amount: INGOT,
+                },
+            ],
+            heat: "superheated",
+            time: 1000,
+        },
+        {
             output: "yttr:yttrium_ingot",
             input: [
                 {
@@ -2583,7 +2613,7 @@ function mechanicalCraftingRecipes(event) {
                 B: "create:integrated_circuit",
                 C: "createastral:navigation_mechanism",
                 D: "minecraft:blue_stained_glass",
-                E: "techreborn:insulated_hv_cable",
+                E: "ae2:fluix_glass_cable",
             },
         },
 
@@ -2698,7 +2728,7 @@ function mechanicalCraftingRecipes(event) {
             output: "2x techreborn:fusion_coil",
             shape: ["CCCCC", "CBBBC", "CBDBC", "CBBBC", "CCCCC"],
             inputs: {
-                B: "techreborn:insulated_hv_cable",
+                B: "ae2:fluix_glass_cable",
                 C: "create:sturdy_sheet",
                 D: "techreborn:advanced_machine_casing",
             },
