@@ -2548,7 +2548,7 @@ function mechanicalCraftingRecipes(event) {
                 B: "create:integrated_circuit",
                 C: "createastral:navigation_mechanism",
                 D: "minecraft:blue_stained_glass",
-                E: "techreborn:insulated_hv_cable",
+                E: "ae2:fluix_glass_cable",
             },
         },
 
@@ -2663,7 +2663,7 @@ function mechanicalCraftingRecipes(event) {
             output: "2x techreborn:fusion_coil",
             shape: ["CCCCC", "CBBBC", "CBDBC", "CBBBC", "CCCCC"],
             inputs: {
-                B: "techreborn:insulated_hv_cable",
+                B: "ae2:fluix_glass_cable",
                 C: "create:sturdy_sheet",
                 D: "techreborn:advanced_machine_casing",
             },
