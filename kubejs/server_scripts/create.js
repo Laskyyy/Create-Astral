@@ -47,6 +47,10 @@ function millingRecipes(event) {
         ["minecraft:glow_berries", "naturalist:glow_goop", 1],
         ["minecraft:snow_block", "2x minecraft:snowball", 1],
         ["createastral:crushed_raw_gadolinite", "yttr:yttrium_dust", 1],
+        ["createastral:broken_fragile_sheet", "create:powdered_obsidian", 1],
+        ["createastral:broken_fragile_rocket_fin", "16x create:powdered_obsidian", 1],
+        ["kubejs:broken_fragile_sheet_block", "16x create:powdered_obsidian", 1],
+        ["kubejs:broken_fire_resistant_fragile_sheet_block", "16x create:powdered_obsidian", 1],
     ].forEach((recipe) => {
         event.recipes.createMilling([Item.of(recipe[1]).withChance(recipe[2])], recipe[0]);
     });
@@ -2430,7 +2434,7 @@ function mechanicalCraftingRecipes(event) {
         },
         {
             output: "ad_astra:tier_3_rocket",
-            shape: ["   A   ", "  EEE  ", "  EFE  ", "  GDG  ", " ICHCI ", "IIBDBII", "I     I"],
+            shape: ["   A   ", "  PEP  ", "  EFE  ", "  ECE  ", " IRDRI ", "IBRHRBI", "I PRP I"],
             inputs: {
                 A: "createbigcannons:nethersteel_screw_breech",
                 B: "ad_astra:ostrum_engine",
@@ -2438,9 +2442,10 @@ function mechanicalCraftingRecipes(event) {
                 D: "techreborn:electronic_circuit",
                 E: "ad_astra:ostrum_block",
                 F: "createastral:navigation_mechanism",
-                G: "ad_astra:ostrum_plate",
                 H: "createastral:shimmer_amplifier",
                 I: "ad_astra:rocket_fin",
+                P: "ad_astra:ostrum_plate",
+                R: "createastral:rocket_casing"
             },
         },
         {
@@ -2776,6 +2781,13 @@ function mechanicalCraftingRecipes(event) {
                 F: "ad_astra:ostrum_plate",
             },
         },
+        {
+            output: "kubejs:fragile_sheet_block",
+            shape: ["FFFF", "FFFF", "FFFF", "FFFF"],
+            inputs: {
+                F: "createastral:fragile_sheet"
+            }
+        }
     ].forEach((recipe) => {
         event.recipes.create.mechanical_crafting(recipe.output, recipe.shape, recipe.inputs);
     });
@@ -2801,6 +2813,9 @@ function pressingRecipes(event) {
     ].forEach((recipe) => {
         event.recipes.createPressing(recipe[1], recipe[0]);
     });
+    event.recipes.createPressing(["ad_astra:rocket_fin", "create:golden_sheet"],
+        ["createastral:gold_casted_rocket_fin"]
+    );
 }
 
 function farmersDelightIntegration(event) {

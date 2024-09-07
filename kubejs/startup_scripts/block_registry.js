@@ -101,12 +101,7 @@ onEvent("block.registry", (event) => {
         .texture("down", "createastral:block/electropipe")
         .texture("north", "createastral:block/electropipe")
         .tagBlock("minecraft:mineable/pickaxe");
-    event
-        .create("doodads:asphalt_stair", "stairs")
-        .material("stone")
-        .hardness(4)
-        .tagBlock("minecraft:mineable/pickaxe")
-        .textureAll("doodads:block/asphalt");
+
 
     event
         .create("createastral:stone_growth_chamber_dummy")
@@ -158,6 +153,36 @@ onEvent("block.registry", (event) => {
         .material("stone")
         .hardness(4)
         .tagBlock("minecraft:mineable/pickaxe");
+
+    event.create("kubejs:fragile_sheet_block", "basic")
+        .material("stone")
+        .defaultTranslucent()
+        .hardness(1);
+
+    event.create("kubejs:broken_fragile_sheet_block", "basic")
+        .material("stone")
+        .defaultTranslucent()
+        .hardness(1)
+        .box(0, 0, 0, 16, 8, 16, true)
+        .box(2, 8, 2, 14, 12, 14, true)
+
+    event.create("kubejs:fire_resistant_fragile_sheet_block", "basic")
+        .material("stone")
+        .defaultTranslucent()
+        .hardness(1)
+
+    event.create("kubejs:broken_fire_resistant_fragile_sheet_block", "basic")
+        .material("stone")
+        .defaultTranslucent()
+        .hardness(1)
+        .box(0, 0, 0, 16, 8, 16, true)
+        .box(2, 8, 2, 14, 12, 14, true)
+
+    event.create("createastral:rocket_casing", "basic")
+        .material("stone")
+        .hardness(4)
+        .defaultTranslucent()
+        .tagBlock("minecraft:mineable/pickaxe")
 
     event.create("createastral:slime_furnace_dummy")
         .textureAll("createastral:block/slime_furnace_side")

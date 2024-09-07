@@ -53,13 +53,13 @@ onEvent("recipes", (event) => {
         time: 600,
         ingredients: [
             {
-                item: "create:sturdy_sheet",
+                item: "createastral:fragile_sheet",
                 count: 16,
             },
         ],
         results: [
             {
-                item: "ad_astra:rocket_fin",
+                item: "createastral:fragile_rocket_fin",
                 count: 1,
             },
         ],
@@ -90,6 +90,7 @@ onEvent("recipes", (event) => {
         ["minecraft:ender_pearl", 2, "ae2:ender_dust"],
         ["tconstruct:necrotic_bone", 6, "minecraft:bone_meal"],
         ["minecraft:dried_kelp", 1, "minecraft:gunpowder"],
+        ["create:sturdy_sheet", 1, "createastral:fragile_sheet"]
     ];
 
     for (let recipe of CRUSHING_RECIPES_TO_BECOME_GRINDING) {
