@@ -16,6 +16,8 @@ onEvent("recipes", (event) => {
         { output: "techreborn:industrial_tank_unit" },
         { output: "techreborn:quantum_tank_unit" },
 
+        {output: "techreborn:lightning_rod"},
+        {output: "techreborn:refined_iron_fence"},
         { output: "techreborn:chunk_loader" },
         { output: "techreborn:pyrite_dust"},
         { output: "ae2:spatial_anchor" },

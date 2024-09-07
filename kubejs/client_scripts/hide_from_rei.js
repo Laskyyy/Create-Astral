@@ -17,6 +17,7 @@ onEvent("rei.hide.items", (event) => {
         "ad_astra:ostrum_fluid_pipe",
         "ad_astra:steel_cable",
         "ad_astra:iron_plate",
+        "ad_astra:iron_rod",
         "automobility:acacia_planks_slope",
         "automobility:ancient_debris_slope",
         "automobility:andesite_slope",

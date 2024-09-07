@@ -1,0 +1,47 @@
+{
+  "name": "Channeling Transformer",
+  "appearance": {
+    "block": "createastral:channeling_transformer_dummy"
+  },
+  "components": [
+    {
+      "type": "custommachinery:fluid",
+      "capacity": 810000,
+      "id": "fuel",
+      "maxInput": 8100,
+      "maxOutput": 0,
+      "filter": ["kubejs:lava", "kubejs:smite"],
+      "whitelist": true
+    }
+  ],
+  "gui": [
+    {
+      "texture": "custommachinery:textures/gui/base_background.png",
+      "x": 0,
+      "y": 0,
+      "type": "custommachinery:texture"
+    },
+    {
+      "x": 47,
+      "y": 80,
+      "type": "custommachinery:player_inventory"
+    },
+    {
+      "id": "fuel",
+      "x": 119,
+      "y": 28,
+      "type": "custommachinery:fluid"
+    },
+    {
+      "text": "Channeling Transformer",
+      "x": 7,
+      "y": 5,
+      "type": "custommachinery:text"
+    },
+    {
+      "x": 236,
+      "y": 5,
+      "type": "custommachinery:status"
+    }
+  ]
+}

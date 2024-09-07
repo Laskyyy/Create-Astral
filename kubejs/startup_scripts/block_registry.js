@@ -13,14 +13,14 @@ onEvent("block.registry", (event) => {
         .hardness(20)
         .displayName("Shimmering Stone")
         .tagBlock("minecraft:mineable/pickaxe");
-				
+
     event
         .create("createastral:ancient_stone")
         .material("stone")
         .hardness(22)
         .displayName("Ancient Stone")
         .tagBlock("minecraft:mineable/pickaxe");
-	
+
     event
         .create("createastral:mercurian_stone")
         .material("stone")
@@ -149,11 +149,39 @@ onEvent("block.registry", (event) => {
         .hardness(2)
         .lightLevel(5);
 
+    event.create("createastral:synthetic_slime_block")
+        .material("lantern")
+        .hardness(0);
+
     event
         .create("createastral:swift_andesite", "basic")
         .material("stone")
         .hardness(4)
         .tagBlock("minecraft:mineable/pickaxe");
+
+    event.create("createastral:slime_furnace_dummy")
+        .textureAll("createastral:block/slime_furnace_side")
+        .texture("up", "createastral:block/slime_furnace_top")
+        .texture("down", "createastral:block/slime_furnace_bottom")
+
+    event.create("createastral:slime_furnace_on_dummy")
+        .textureAll("createastral:block/slime_furnace_on_side")
+        .texture("up", "createastral:block/slime_furnace_on_top")
+        .texture("down", "createastral:block/slime_furnace_on_bottom")
+
+
+    event.create("createastral:washer_dummy")
+        .textureAll("createastral:block/washer")
+        .texture("up", "create:block/railway_casing")
+        .texture("down", "create:block/railway_casing")
+        .texture("north", "createastral:block/washer_shaft")
+
+    event.create("createastral:gas_mixer_dummy")
+        .textureAll("createastral:block/gas_mixer")
+        .texture("down", "createastral:block/gas_mixer_shaft")
+
+    event.create("createastral:channeling_transformer_dummy")
+        .textureAll("createastral:block/channeling_transformer");
 
     event
         .create("doodads:asphalt_slab", "slab")
@@ -168,4 +196,5 @@ onEvent("block.registry", (event) => {
         .hardness(4)
         .tagBlock("minecraft:mineable/pickaxe")
         .textureAll("doodads:block/asphalt");
+
 });
