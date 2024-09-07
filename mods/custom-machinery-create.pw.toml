@@ -1,0 +1,13 @@
+name = "Custom Machinery Create"
+filename = "CustomMachineryCreate-fabric-1.18.2-1.0.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c0a992c4b1687d1ba36be7493e1120c16de34adb"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4626803
+project-id = 860747

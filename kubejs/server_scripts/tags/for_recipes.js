@@ -21,4 +21,7 @@ onEvent("item.tags", (event) => {
         for (let i = 5; i >= index; i--)
             event.add("createastral:tank_unit_" + i, item);
     });
+
+    event.add("c:slimeballs", "createastral:synthetic_slime");
+    event.add("tconstruct:slime_block", "createastral:synthetic_slime_block");
 });
