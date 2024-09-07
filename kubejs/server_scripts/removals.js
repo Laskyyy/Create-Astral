@@ -137,6 +137,7 @@ onEvent("recipes", (event) => {
         //Create
 
         { output: "create:blaze_cake" },
+        { output: "create:blaze_cake_base" },
         { output: "create:blaze_burner" },
         { output: "create:ochrum" },
         { output: "create:crimsite" },
@@ -149,6 +150,8 @@ onEvent("recipes", (event) => {
         { output: "create:electron_tube" },
         { output: "create:cogwheel", type: "minecraft:shaped" },
         { output: "create:large_cogwheel", type: "minecraft:shaped" },
+        { output: "travelersbackpack:standard", type: "minecraft:shaped" },
+        { output: "travelersbackpack:standard", type: "minecraft:crafting_shaped" },
         { output: "create:cogwheel" },
         { output: "create:large_cogwheel" },
         { output: "create:experience_block" },

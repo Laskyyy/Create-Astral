@@ -516,7 +516,7 @@ function sequencedAssemblyRecipes(event) {
                 ]
             )
             .transitionalItem(incomplete_transitional_circuit)
-            .loops(64);
+            .loops(32);
 
         event.recipes
             .createSequencedAssembly(
@@ -1204,7 +1204,7 @@ function sequencedAssemblyRecipes(event) {
         .createSequencedAssembly(["createastral:refining_agent"], "ae2:fluix_dust", [
             event.recipes.createFilling(inc_refining_agent, [
                 inc_refining_agent,
-                {fluid: "tconstruct:blazing_blood", amount: 9000},
+                { fluid: "techreborn:nitrogen", amount: 9000 },
             ]),
             event.recipes.createFilling(inc_refining_agent, [
                 inc_refining_agent,
@@ -1628,7 +1628,7 @@ function mixingRecipes(event) {
             time: 1000,
         },
         {
-            output: Fluid.of("create:honey", BUCKET / 9),
+            output: Fluid.of("create:honey", 100 * mB),
             input: ["techreborn:sap", "minecraft:sugar"],
             heat: "",
             time: 100,
@@ -1899,12 +1899,6 @@ function mixingRecipes(event) {
             input: ["minecraft:ancient_debris"],
             heat: "superheated",
             time: 500,
-        },
-        {
-            output: Fluid.of("kubejs:hellfire", 1 * mB),
-            input: [{fluid: "minecraft:lava", amount: 100 * mB}],
-            heat: "superheated",
-            time: 100,
         },
         {
             output: "create:chromatic_compound",
@@ -2824,6 +2818,18 @@ function compactingRecipes(event) {
             inputs: ["3x minecraft:bone_meal", "minecraft:gravel", {fluid: "minecraft:lava", amount: 100 * mB}],
         },
         {
+            output: "create:blaze_cake_base",
+            inputs: ["2x ad_astra:mars_sand", "minecraft:sugar"],
+        },
+        {
+            output: "create:blaze_cake_base",
+            inputs: ["ad_astra:mercury_cobblestone", "minecraft:sugar"],
+        },
+        {
+            output: "create:blaze_cake_base",
+            inputs: ["3x create:cinder_flour", "minecraft:sugar"],
+        },
+        {
             output: "minecraft:lapis_lazuli",
             inputs: [
                 "3x techreborn:lazurite_dust",
@@ -2837,7 +2843,7 @@ function compactingRecipes(event) {
         },
         {
             output: "create:andesite_casing",
-            inputs: ["#c:stripped_logs", {fluid: "kubejs:compound_mixture", amount: INGOT / 2}],
+            inputs: ["#c:stripped_logs", { fluid: "kubejs:compound_mixture", amount: INGOT }],
         },
         {
             output: "2x create:railway_casing",
@@ -2897,7 +2903,7 @@ function compactingRecipes(event) {
                 "minecraft:rotten_flesh",
                 {
                     fluid: "createaddition:seed_oil",
-                    amount: BUCKET / 9,
+                    amount: 100 * mB,
                 },
             ],
         },
@@ -2908,7 +2914,7 @@ function compactingRecipes(event) {
                 "3x #c:grass_variants",
                 {
                     fluid: "createaddition:seed_oil",
-                    amount: BUCKET / 9,
+                    amount: 100 * mB,
                 },
             ],
         },
@@ -2919,7 +2925,7 @@ function compactingRecipes(event) {
                 "farmersdelight:rice",
                 {
                     fluid: "createaddition:seed_oil",
-                    amount: BUCKET / 9,
+                    amount: 100 * mB,
                 },
             ],
         },
@@ -2930,7 +2936,7 @@ function compactingRecipes(event) {
                 "#minecraft:wool",
                 {
                     fluid: "createaddition:seed_oil",
-                    amount: BUCKET / 9,
+                    amount: 100 * mB,
                 },
             ],
         },
@@ -2941,7 +2947,7 @@ function compactingRecipes(event) {
                 "minecraft:carrot",
                 {
                     fluid: "createaddition:seed_oil",
-                    amount: BUCKET / 9,
+                    amount: 100 * mB,
                 },
             ],
         },

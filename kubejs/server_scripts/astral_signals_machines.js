@@ -37,12 +37,22 @@ onEvent("recipes", (event) => {
         },
         {
             input: "astralsignals:data_drive_dormant_t2",
-            outputs: [Item.of("astralsignals:data_drive_decrypted_purpleprison").withChance(1)],
+            outputs: [
+                Item.of("astralsignals:data_drive_decrypted_purpleprison").withChance(1),
+                Item.of("astralsignals:data_drive_decrypted_pigstep").withChance(1),
+                Item.of("astralsignals:data_drive_decrypted_desertheat").withChance(1),
+                Item.of("astralsignals:data_drive_decrypted_memorandum").withChance(1),
+            ],
             inter: "astralsignals:inter_data_drive_dormant_t2",
         },
         {
             input: "astralsignals:data_drive_dormant_t3",
-            outputs: [Item.of("astralsignals:data_drive_decrypted_wolfgif").withChance(1)],
+            outputs: [
+                Item.of("astralsignals:data_drive_decrypted_wolfgif").withChance(1),
+                Item.of("astralsignals:data_drive_decrypted_papillons").withChance(1),
+                Item.of("astralsignals:data_drive_decrypted_torus").withChance(1),
+                Item.of("astralsignals:data_drive_decrypted_void").withChance(1),
+            ],
             inter: "astralsignals:inter_data_drive_dormant_t3",
         },
     ].forEach((inst) => {
@@ -153,6 +163,21 @@ onEvent("recipes", (event) => {
             output: "minecraft:music_disc_otherside",
         },
         {
+            drive: "astralsignals:data_drive_decrypted_pigstep",
+            disc: "astralsignals:shimmer_polyvinyl_sheet",
+            output: "minecraft:music_disc_pigstep",
+        },
+        {
+            drive: "astralsignals:data_drive_decrypted_desertheat",
+            disc: "astralsignals:shimmer_polyvinyl_sheet",
+            output: "yttr:music_disc_desert_heat",
+        },
+        {
+            drive: "astralsignals:data_drive_decrypted_memorandum",
+            disc: "astralsignals:shimmer_polyvinyl_sheet",
+            output: "yttr:music_disc_memorandum",
+        },
+        {
             drive: "astralsignals:data_drive_decrypted_purpleprison",
             disc: "astralsignals:shimmer_polyvinyl_sheet",
             output: "astraladditions:disc_purple_prison",
@@ -161,6 +186,21 @@ onEvent("recipes", (event) => {
             drive: "astralsignals:data_drive_decrypted_wolfgif",
             disc: "astralsignals:yttric_polyvinyl_sheet",
             output: "astraladditions:disc_astral_lakes_remix",
+        },
+        {
+            drive: "astralsignals:data_drive_decrypted_papillons",
+            disc: "astralsignals:yttric_polyvinyl_sheet",
+            output: "yttr:music_disc_papillons",
+        },
+        {
+            drive: "astralsignals:data_drive_decrypted_void",
+            disc: "astralsignals:yttric_polyvinyl_sheet",
+            output: "yttr:music_disc_void",
+        },
+        {
+            drive: "astralsignals:data_drive_decrypted_torus",
+            disc: "astralsignals:yttric_polyvinyl_sheet",
+            output: "yttr:music_disc_torus",
         },
     ].forEach((print) => {
         event.recipes.custommachinery
@@ -192,6 +232,12 @@ onEvent("recipes", (event) => {
         ["astralsignals:data_drive_decrypted_otherside"],
         ["astralsignals:data_drive_decrypted_purpleprison"],
         ["astralsignals:data_drive_decrypted_wolfgif"],
+        ["astralsignals:data_drive_decrypted_desertheat"],
+        ["astralsignals:data_drive_decrypted_memorandum"],
+        ["astralsignals:data_drive_decrypted_papillons"],
+        ["astralsignals:data_drive_decrypted_pigstep"],
+        ["astralsignals:data_drive_decrypted_torus"],
+        ["astralsignals:data_drive_decrypted_void"],
     ].forEach((drive) => {
         event.recipes.custommachinery
             .custom_machine("astralsignals:drive_eraser", 40)

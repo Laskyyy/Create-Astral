@@ -67,7 +67,16 @@ onEvent("recipes", (event) => {
             processingTime: 20,
         },
         {
-            inputs: [{item: "minecraft:cobbled_deepslate"}],
+            inputs: [{ item: "minecraft:basalt" }],
+            outputs: [
+                { item: "minecraft:magma_cream", chance: 0.1 },
+                { item: "minecraft:ghast_tear", chance: 0.05 },
+                { item: "minecraft:blaze_powder", chance: 0.1 },
+            ],
+            processingTime: 200,
+        },
+        {
+            inputs: [{ item: "minecraft:cobbled_deepslate" }],
             outputs: [
                 {item: "minecraft:redstone", chance: 0.1},
                 {item: "create:copper_nugget", chance: 0.05},
@@ -162,9 +171,7 @@ onEvent("recipes", (event) => {
         },
     ].forEach((recipe) => {
         const inputs = recipe.inputs.map((input) => input.item);
-        const outputs = recipe.outputs.map((output) =>
-            Item.of(output.item).withChance(output.chance)
-        );
+        const outputs = recipe.outputs.map((output) => Item.of(output.item).withChance(output.chance));
         event.recipes.createMilling(outputs, inputs);
     });
 });
