@@ -99,11 +99,6 @@ onEvent("recipes", (event) => {
             processingTime: 200,
         },
         {
-            inputs: [{ item: "minecraft:flint" }],
-            outputs: [{ item: "minecraft:music_disc_13", chance: 0.001 }],
-            processingTime: 20,
-        },
-        {
             inputs: [{ item: "minecraft:cobbled_deepslate" }],
             outputs: [
                 { item: "minecraft:redstone", chance: 0.1 },
@@ -199,9 +194,7 @@ onEvent("recipes", (event) => {
         },
     ].forEach((recipe) => {
         const inputs = recipe.inputs.map((input) => input.item);
-        const outputs = recipe.outputs.map((output) =>
-            Item.of(output.item).withChance(output.chance)
-        );
+        const outputs = recipe.outputs.map((output) => Item.of(output.item).withChance(output.chance));
         event.recipes.createMilling(outputs, inputs);
     });
 });

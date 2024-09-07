@@ -1,5 +1,5 @@
 {
-    "block": "createastral:martian_veilstone",
+    "block": "createastral:ancient_stone",
     "dim": "ad_astra:mars",
     "ignitionType": "FLUID",
     "ignitionSource": "minecraft:lava",

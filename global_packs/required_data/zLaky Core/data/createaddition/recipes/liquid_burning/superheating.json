@@ -1,0 +1,9 @@
+{
+	"type":"createaddition:liquid_burning",
+	"input": {
+      	"fluidTag": "createastral:superheatedfluids",
+      	"amount": 20250
+	},
+	"burnTime": 3300,
+	"superheated": true
+}

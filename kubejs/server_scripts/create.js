@@ -527,7 +527,7 @@ function sequencedAssemblyRecipes(event) {
                 ]
             )
             .transitionalItem(incomplete_transitional_circuit)
-            .loops(64);
+            .loops(32);
 
         event.recipes
             .createSequencedAssembly(
@@ -752,6 +752,49 @@ function sequencedAssemblyRecipes(event) {
             ]),
             event.recipes.createPressing("ad_astra:steel_block", "ad_astra:steel_block"),
         ]);
+
+        event.recipes.createSequencedAssembly(["2x create:sturdy_sheet"], "tconstruct:obsidian_pane", [
+            event.recipes.createDeploying("tconstruct:obsidian_pane", [
+                "tconstruct:obsidian_pane",
+                "minecraft:magma_cream",
+            ]),
+            event.recipes.createPressing("tconstruct:obsidian_pane", "tconstruct:obsidian_pane"),
+            event.recipes.createFilling("tconstruct:obsidian_pane", [
+                "tconstruct:obsidian_pane",
+                { fluid: "minecraft:lava", amount: mB*100 },
+            ]),
+            
+        ]).loops(2);
+
+        event.recipes.createSequencedAssembly(["6x create:belt_connector"], "minecraft:dried_kelp", [
+            event.recipes.createDeploying("minecraft:dried_kelp", [
+                "minecraft:dried_kelp",
+                "techreborn:rubber",
+            ]),
+            event.recipes.createPressing("minecraft:dried_kelp", "minecraft:dried_kelp"),
+            event.recipes.createDeploying("minecraft:dried_kelp", [
+                "minecraft:dried_kelp",
+                "minecraft:dried_kelp",
+            ]),
+            event.recipes.createPressing("minecraft:dried_kelp", "minecraft:dried_kelp"),
+            
+        ]).loops(3);
+
+        event.recipes.createSequencedAssembly(["6x create:display_board"], "create:electron_tube", [
+            event.recipes.createDeploying("create:electron_tube", [
+                "create:electron_tube",
+                "create:belt_connector",
+            ]),
+            event.recipes.createDeploying("create:electron_tube", [
+                "create:electron_tube",
+                "create:cogwheel",
+            ]),
+            event.recipes.createDeploying("create:electron_tube", [
+                "create:electron_tube",
+                "#c:dyes",
+            ]),
+            
+        ]).loops(2);
 
         event.recipes.createSequencedAssembly(["ad_astra:calorite_engine"], "ad_astra:ostrum_engine", [
             event.recipes.createFilling("ad_astra:ostrum_engine", [
@@ -1169,7 +1212,7 @@ function sequencedAssemblyRecipes(event) {
         .createSequencedAssembly(["createastral:refining_agent"], "ae2:fluix_dust", [
             event.recipes.createFilling(inc_refining_agent, [
                 inc_refining_agent,
-                { fluid: "tconstruct:blazing_blood", amount: 9000 },
+                { fluid: "techreborn:nitrogen", amount: 9000 },
             ]),
             event.recipes.createFilling(inc_refining_agent, [
                 inc_refining_agent,
@@ -1226,7 +1269,7 @@ function fillingRecipes(event) {
         {
             input: "minecraft:compass",
             output: "explorerscompass:explorerscompass",
-            fluid: "tconstruct:molten_iron",
+            fluid: "kubejs:shimmer",
             amount: 4 * INGOT,
         },
         {
@@ -1544,7 +1587,7 @@ function mixingRecipes(event) {
             time: 1000,
         },
         {
-            output: Fluid.of("create:honey", BUCKET / 9),
+            output: Fluid.of("create:honey", 100 * mB),
             input: ["techreborn:sap", "minecraft:sugar"],
             heat: "",
             time: 100,
@@ -1580,6 +1623,12 @@ function mixingRecipes(event) {
             time: 300,
         },
         {
+            output: Fluid.of("tconstruct:molten_brass", INGOT * 4),
+            input: ["minecraft:copper_ingot", "create:zinc_ingot"],
+            heat: "superheated",
+            time: 300,
+        },
+        {
             output: Fluid.of("tconstruct:molten_brass", INGOT / 5),
             input: [
                 { fluid: "tconstruct:molten_copper", amount: INGOT / 10 },
@@ -1604,6 +1653,21 @@ function mixingRecipes(event) {
             time: 100,
         },
         {
+            output: Fluid.of("tconstruct:molten_amethyst_bronze", INGOT*2),
+            input: ["createastral:bronze_ingot", "minecraft:amethyst_shard"],
+            heat: "superheated",
+            time: 300,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_amethyst_bronze", INGOT / 5),
+            input: [
+                { fluid: "tconstruct:molten_bronze", amount: INGOT / 10 },
+                { fluid: "tconstruct:molten_amethyst", amount: INGOT / 10 },
+            ],
+            heat: "superheated",
+            time: 100,
+        },
+        {
             output: Fluid.of("tconstruct:molten_bronze", INGOT / 5),
             input: [
                 { fluid: "tconstruct:molten_tin", amount: INGOT / 10 },
@@ -1625,6 +1689,12 @@ function mixingRecipes(event) {
             time: 300,
         },
         {
+            output: Fluid.of("tconstruct:molten_rose_gold", INGOT * 2),
+            input: ["minecraft:copper_ingot", "minecraft:gold_ingot"],
+            heat: "superheated",
+            time: 300,
+        },
+        {
             output: Fluid.of("tconstruct:molten_rose_gold", INGOT / 10),
             input: [
                 { fluid: "tconstruct:molten_copper", amount: INGOT / 10 },
@@ -1640,6 +1710,15 @@ function mixingRecipes(event) {
                 { fluid: "tconstruct:molten_gold", amount: INGOT / 10 },
             ],
             heat: "heated",
+            time: 100,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_electrum", INGOT / 5),
+            input: [
+                { fluid: "tconstruct:molten_silver", amount: INGOT / 10 },
+                { fluid: "tconstruct:molten_gold", amount: INGOT / 10 },
+            ],
+            heat: "superheated",
             time: 100,
         },
         {
@@ -1665,6 +1744,22 @@ function mixingRecipes(event) {
             time: 40,
         },
         {
+            output: Fluid.of("tconstruct:molten_slimesteel", INGOT*2),
+            input: ["minecraft:iron_ingot", "tconstruct:sky_slime_ball", "#tconstruct:seared_blocks"],
+            heat: "superheated",
+            time: 300,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_slimesteel", INGOT*2),
+            input: [
+                { fluid: "tconstruct:molten_iron", amount: INGOT },
+                { fluid: "tconstruct:sky_slime", amount: 250 * mB },
+                "#tconstruct:seared_blocks",
+            ],
+            heat: "superheated",
+            time: 40,
+        },
+        {
             output: "2x ae2:certus_quartz_crystal",
             input: [{ fluid: "minecraft:water", amount: 250 * mB }, "1x ae2:certus_quartz_dust"],
             heat: "heated",
@@ -1687,12 +1782,37 @@ function mixingRecipes(event) {
             time: 250,
         },
         {
+            output: Fluid.of("tconstruct:molten_pig_iron", INGOT*2),
+            input: ["minecraft:porkchop", "minecraft:iron_ingot", "minecraft:gold_ingot"],
+            heat: "superheated",
+            time: 300,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_pig_iron", INGOT*2),
+            input: [
+                "minecraft:porkchop",
+                { fluid: "tconstruct:molten_iron", amount: INGOT },
+                { fluid: "tconstruct:molten_gold", amount: INGOT },
+            ],
+            heat: "superheated",
+            time: 250,
+        },
+        {
             output: Fluid.of("tconstruct:molten_queens_slime", INGOT / 5),
             input: [
                 { fluid: "tconstruct:molten_cobalt", amount: INGOT / 10 },
                 { fluid: "tconstruct:molten_slimesteel", amount: INGOT / 5 },
             ],
             heat: "heated",
+            time: 5,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_queens_slime", INGOT / 2),
+            input: [
+                { fluid: "tconstruct:molten_cobalt", amount: INGOT / 10 },
+                { fluid: "tconstruct:molten_slimesteel", amount: INGOT / 5 },
+            ],
+            heat: "superheated",
             time: 5,
         },
         {
@@ -1706,6 +1826,16 @@ function mixingRecipes(event) {
             time: 1000,
         },
         {
+            output: Fluid.of("tconstruct:molten_manyullyn", INGOT*2),
+            input: [
+                { fluid: "tconstruct:molten_cobalt", amount: INGOT * 2 },
+                "1x minecraft:netherite_scrap",
+                { fluid: "kubejs:molten_desh", amount: INGOT },
+            ],
+            heat: "superheated",
+            time: 1000,
+        },
+        {
             output: Fluid.of("tconstruct:molten_hepatizon", INGOT / 5),
             input: [
                 { fluid: "tconstruct:molten_cobalt", amount: INGOT / 10 },
@@ -1715,16 +1845,19 @@ function mixingRecipes(event) {
             time: 5,
         },
         {
+            output: Fluid.of("tconstruct:molten_hepatizon", INGOT / 2),
+            input: [
+                { fluid: "tconstruct:molten_cobalt", amount: INGOT / 10 },
+                { fluid: "tconstruct:molten_lead", amount: INGOT / 5 },
+            ],
+            heat: "superheated",
+            time: 5,
+        },
+        {
             output: Fluid.of("tconstruct:molten_debris", 250 * mB),
             input: ["minecraft:ancient_debris"],
             heat: "superheated",
             time: 500,
-        },
-        {
-            output: Fluid.of("kubejs:hellfire", 1 * mB),
-            input: [{ fluid: "minecraft:lava", amount: 100 * mB }],
-            heat: "superheated",
-            time: 100,
         },
         {
             output: "create:chromatic_compound",
@@ -1743,6 +1876,21 @@ function mixingRecipes(event) {
         {
             output: Fluid.of("kubejs:compound_mixture", INGOT),
             input: ["minecraft:andesite", "minecraft:iron_nugget", "minecraft:clay_ball"],
+        },
+        {
+            output: Fluid.of("kubejs:compound_mixture", INGOT*12),
+            input: ["compressor:compressed_andesite", "minecraft:iron_ingot", "minecraft:clay"],
+            heat: "heated",
+        },
+        {
+            output: Fluid.of("kubejs:compound_mixture", INGOT*12),
+            input: ["compressor:compressed_andesite", "create:zinc_ingot", "minecraft:clay"],
+            heat: "heated",
+        },
+        {
+            output: Fluid.of("kubejs:compound_mixture", INGOT*12),
+            input: ["compressor:compressed_andesite", "techreborn:tin_ingot", "minecraft:clay"],
+            heat: "heated",
         },
         {
             output: "8x tconstruct:grout",
@@ -2639,6 +2787,18 @@ function compactingRecipes(event) {
             inputs: ["3x minecraft:bone_meal", "minecraft:gravel", { fluid: "minecraft:lava", amount: 100 * mB }],
         },
         {
+            output: "create:blaze_cake_base",
+            inputs: ["2x ad_astra:mars_sand", "minecraft:sugar"],
+        },
+        {
+            output: "create:blaze_cake_base",
+            inputs: ["ad_astra:mercury_cobblestone", "minecraft:sugar"],
+        },
+        {
+            output: "create:blaze_cake_base",
+            inputs: ["3x create:cinder_flour", "minecraft:sugar"],
+        },
+        {
             output: "minecraft:lapis_lazuli",
             inputs: [
                 "3x techreborn:lazurite_dust",
@@ -2649,6 +2809,14 @@ function compactingRecipes(event) {
         {
             output: "minecraft:granite",
             inputs: ["minecraft:diorite", "minecraft:flint", { fluid: "minecraft:lava", amount: 100 * mB }],
+        },
+        {
+            output: "create:andesite_casing",
+            inputs: ["#c:stripped_logs", { fluid: "kubejs:compound_mixture", amount: INGOT }],
+        },
+        {
+            output: "2x create:railway_casing",
+            inputs: ["create:sturdy_sheet", "create:andesite_casing", { fluid: "tconstruct:molten_obsidian", amount: mB*50 }],
         },
         {
             output: "minecraft:prismarine_shard",
@@ -2701,7 +2869,7 @@ function compactingRecipes(event) {
                 "minecraft:rotten_flesh",
                 {
                     fluid: "createaddition:seed_oil",
-                    amount: BUCKET / 9,
+                    amount: 100 * mB,
                 },
             ],
         },
@@ -2712,7 +2880,7 @@ function compactingRecipes(event) {
                 "3x #c:grass_variants",
                 {
                     fluid: "createaddition:seed_oil",
-                    amount: BUCKET / 9,
+                    amount: 100 * mB,
                 },
             ],
         },
@@ -2723,7 +2891,7 @@ function compactingRecipes(event) {
                 "farmersdelight:rice",
                 {
                     fluid: "createaddition:seed_oil",
-                    amount: BUCKET / 9,
+                    amount: 100 * mB,
                 },
             ],
         },
@@ -2734,7 +2902,7 @@ function compactingRecipes(event) {
                 "#minecraft:wool",
                 {
                     fluid: "createaddition:seed_oil",
-                    amount: BUCKET / 9,
+                    amount: 100 * mB,
                 },
             ],
         },
@@ -2745,7 +2913,7 @@ function compactingRecipes(event) {
                 "minecraft:carrot",
                 {
                     fluid: "createaddition:seed_oil",
-                    amount: BUCKET / 9,
+                    amount: 100 * mB,
                 },
             ],
         },
@@ -2921,6 +3089,7 @@ function superheatedMixingRecipes(event) {
         ["minecraft:obsidian", "minecraft:crying_obsidian"],
         ["compressor:octuple_compressed_cobblestone", "createastral:logo"],
         [["8x create:refined_radiance_casing", "8x create:shadow_steel_casing", "4x createastral:subatomic_ingot", "16x createastral:separation_agent"], ["astraladditions:fragile_item_2"]],
+        [[{ fluid: "tconstruct:molten_tin", amount: INGOT * 2 },{ fluid: "tconstruct:molten_copper", amount: INGOT * 4 },], [Fluid.of("tconstruct:molten_bronze", INGOT*9)]],
     ].forEach((recipe) => {
         event.recipes.createMixing(recipe[1], recipe[0]).superheated().processingTime(20);
     });

@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "astralsignals:data_drive_decrypted_purpleprison",
+        "astralsignals:data_drive_decrypted_desertheat",
+        "astralsignals:data_drive_decrypted_memorandum",
+        "astralsignals:data_drive_decrypted_pigstep"
+    ]
+}

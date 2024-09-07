@@ -15,17 +15,17 @@ onEvent("block.registry", (event) => {
         .tagBlock("minecraft:mineable/pickaxe");
 				
     event
-        .create("createastral:martian_veilstone")
+        .create("createastral:ancient_stone")
         .material("stone")
         .hardness(22)
-        .displayName("Martian Veilstone")
+        .displayName("Ancient Stone")
         .tagBlock("minecraft:mineable/pickaxe");
 	
     event
-        .create("createastral:mercurian_waystone")
+        .create("createastral:mercurian_stone")
         .material("stone")
         .hardness(24)
-        .displayName("Mercurian Keystone")
+        .displayName("Mercurian Stone")
         .tagBlock("minecraft:mineable/pickaxe");
 
     event
@@ -149,7 +149,8 @@ onEvent("block.registry", (event) => {
         .hardness(2)
         .lightLevel(5);
 
-    event.create("createastral:swift_andesite", "basic")
+    event
+        .create("createastral:swift_andesite", "basic")
         .material("stone")
         .hardness(4)
         .tagBlock("minecraft:mineable/pickaxe");

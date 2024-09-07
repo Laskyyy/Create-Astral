@@ -1,5 +1,5 @@
 {
-    "block": "createastral:mercurian_waystone",
+    "block": "createastral:mercurian_stone",
     "dim": "ad_astra:mercury",
     "ignitionType": "ITEM",
     "ignitionSource": "createastral:subatomic_ingot",
