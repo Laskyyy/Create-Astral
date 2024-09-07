@@ -1,0 +1,49 @@
+{
+  "name": "Washer",
+  "appearance": {
+    "block": "createastral:washer_dummy",
+    "running": {
+      "block": "createastral:slime_furnace_on_dummy",
+      "lightlevel": 15
+    }
+  },
+  "components" : [
+    {
+      "type": "custommachinery:item",
+      "id": "in_slot",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "out_slot1",
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "out_slot2",
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "out_slot3",
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "out_slot4",
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "out_slot5",
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:contraption",
+      "config": {
+        "default": "none",
+        "left": "input"
+      }
+    }
+  ]
+}

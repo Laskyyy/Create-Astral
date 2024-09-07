@@ -27,6 +27,8 @@ onEvent("recipes", (event) => {
         {output: "techreborn:insulated_copper_cable"},
 
         { output: "techreborn:hv_transformer"},
+        {output: "techreborn:lightning_rod"},
+        {output: "techreborn:refined_iron_fence"},
         { output: "techreborn:chunk_loader" },
         { output: "techreborn:pyrite_dust"},
         { output: "ae2:spatial_anchor" },
