@@ -17,6 +17,7 @@ onEvent("rei.hide.items", (event) => {
         "ad_astra:ostrum_fluid_pipe",
         "ad_astra:steel_cable",
         "ad_astra:iron_plate",
+        "ad_astra:iron_rod",
         "automobility:acacia_planks_slope",
         "automobility:ancient_debris_slope",
         "automobility:andesite_slope",
@@ -752,4 +753,6 @@ onEvent("rei.hide.fluids", (event) => {
     event.hide("createbigcannons:molten_steel");
     event.hide("createbigcannons:molten_bronze");
     event.hide("createbigcannons:molten_nethersteel");
+    event.hide("estrogen:molten_amethyst");
+    event.hide("estrogen:molten_slime");
 });

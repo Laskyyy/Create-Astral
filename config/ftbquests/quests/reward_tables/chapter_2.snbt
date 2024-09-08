@@ -1,4 +1,8 @@
 {
+	id: "1C7F90CDCD2C8C74"
+	order_index: 2
+	title: "Chapter 2"
+	loot_size: 1
 	rewards: [
 		{ item: "create:belt_connector", count: 8 }
 		{ item: "minecraft:dried_kelp", count: 6 }
@@ -78,18 +82,14 @@
 		{ item: "create:mechanical_mixer" }
 		{ item: "create:experience_nugget", count: 32, weight: 5 }
 	]
-	loot_size: 1
-	order_index: 2
-	id: "1C7F90CDCD2C8C74"
 	loot_crate: {
-		string_id: "chapter_2"
-		item_name: "Chapter 2 Loot Crate"
-		color: 16146482
 		drops: {
+			boss: 0
 			passive: 0
 			monster: 0
-			boss: 0
 		}
+		color: 16146482
+		item_name: "Chapter 2 Loot Crate"
+		string_id: "chapter_2"
 	}
-	title: "Chapter 2"
 }

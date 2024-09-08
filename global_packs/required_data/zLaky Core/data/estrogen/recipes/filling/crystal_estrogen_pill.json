@@ -1,0 +1,23 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "estrogen:estrogen_pill"
+    },
+    {
+      "amount": 81000,
+      "fluid": "kubejs:shimmer",
+      "nbt": {}
+    },
+    {
+      "item": "yttr:delicace",
+      "count": 4
+    }
+    
+  ],
+  "results": [
+    {
+      "item": "estrogen:crystal_estrogen_pill"
+    }
+  ]
+}
