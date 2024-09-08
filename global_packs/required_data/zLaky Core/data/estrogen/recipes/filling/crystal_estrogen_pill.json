@@ -10,7 +10,8 @@
       "nbt": {}
     },
     {
-      "item": "4x yttr:delicace"
+      "item": "yttr:delicace",
+      "count": 4
     }
     
   ],
