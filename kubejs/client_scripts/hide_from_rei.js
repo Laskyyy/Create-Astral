@@ -753,4 +753,6 @@ onEvent("rei.hide.fluids", (event) => {
     event.hide("createbigcannons:molten_steel");
     event.hide("createbigcannons:molten_bronze");
     event.hide("createbigcannons:molten_nethersteel");
+    event.hide("estrogen:molten_amethyst");
+    event.hide("estrogen:molten_slime");
 });
