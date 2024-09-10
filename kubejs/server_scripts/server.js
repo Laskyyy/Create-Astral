@@ -90,7 +90,125 @@ function farmersDelightCuttingChanges(event) {
         result: [{ item: "tconstruct:stripped_skyroot_log" }, { item: "farmersdelight:tree_bark" }],
         sound: "minecraft:item.axe.strip",
     });
-}
+	
+	
+	
+// Astral Foods section
+
+event.custom({
+    type: "farmersdelight:cutting",
+    ingredients: [{ item: "ae2:singularity" }],
+    tool: {
+      type: "farmersdelight:tool",
+      tag: "c:tools/knives",
+    },
+    result: [{ item: "astralfoods:quantum_bites" }],
+  });
+  
+  event.custom({
+    type: "farmersdelight:cooking",
+    ingredients: [{ item: "createastral:astral_singularity" }],
+    result: [{ item: "astralfoods:astral_sauce" }],
+    container: [{ item: "minecraft:bowl" }],
+    experience: 10.0,
+    cookingtime: 360,
+  });
+  //if this doesn't work bug me (Miko) about it
+  
+  event.custom({
+    type: "farmersdelight:cooking",
+    ingredients: [
+      { item: "astralfoods:astral_sauce" },
+      { item: "astralfoods:quantum_bites" },
+      { farmersdelight: raw_pasta },
+    ],
+    result: [{ item: "astralfoods:quantum_pasta" }],
+    experience: 8.0,
+    cookingtime: 300,
+  });
+  
+  event.recipes
+    .createSequencedAssembly(
+      [
+        // begin
+        "minecraft:bowl", // output
+      ],
+      "astralfoods:shimmered_rabbit_stew",
+      [
+        event.recipes.createDeploying("minecraft:bowl", [
+          "minecraft:bowl",
+          "astralfoods:seared_potato",
+        ]),
+        event.recipes.createDeploying("minecraft:bowl", [
+          "minecraft:bowl",
+          "minecraft:cooked_rabbit",
+        ]),
+        event.recipes.createFilling("minecraft:bowl", [
+          "minecraft:bowl",
+          { fluid: "kubejs:shimmer", amount: BUCKET / 1 },
+        ]),
+      ]
+    )
+    .transitionalItem("minecraft:bowl")
+    .loops(1);
+
+  event.custom({
+    type: "custommachinery:custom_machine",
+    machine: "astralgenerators:amalgamation_matrix",
+    time: 10,
+    requirements: [
+      {
+        type: "custommachinery:item",
+        item: "astralfoods:quantum_pasta",
+        amount: 1,
+        mode: "input",
+      },
+      {
+        type: "custommachinery:item",
+        item: "astralfoods:shimmered_apple",
+        amount: 1,
+        mode: "input",
+      },
+      {
+        type: "custommachinery:item",
+        item: "astralfoods:compressed_onion",
+        amount: 1,
+        mode: "input",
+      },
+      {
+        type: "custommachinery:item",
+        item: "astralfoods:shimmered_rabbit_stew",
+        amount: 1,
+        mode: "input",
+      },
+      {
+        type: "custommachinery:item",
+        item: "astralfoods:food_amalgamation",
+        amount: 1,
+        mode: "output",
+      },
+      {
+        type: "custommachinery:structure",
+        keys: {
+          a: "techreborn:basic_machine_frame",
+          b: "astralgenerators:superconducting_coil",
+          c: "techreborn:advanced_machine_casing",
+          d: "astralgenerators:astral_pylon",
+        },
+        pattern: [
+          ["aaaaa", "aaaaa", "aaaaa", "aaaaa", "aamaa"],
+          ["aaaaa", "abbba", "abbba", "abbba", "aaaaa"],
+          ["     ", " ccc ", " ccc ", " ccc ", "     "],
+          ["     ", "     ", "  c  ", "     ", "     "],
+          ["     ", "     ", "  d  ", "     ", "     "],
+          ["     ", "     ", "  c  ", "     ", "     "],
+          ["     ", " ccc ", " ccc ", " ccc ", "     "],
+          ["     ", " bbb ", " bbb ", " bbb ", "     "],
+          ["aaaaa", "aaaaa", "aaaaa", "aaaaa", "aaaaa"],
+        ],
+      },
+    ],
+  });
 
 // Includes some "ore alchemy" and other misc blocks like andeste alloy blocks
 function lizardMiscChanges(event) {
@@ -1328,4 +1446,4 @@ onEvent("recipes", (event) => {
         //if it breaks, blame b0b, (nah blame me :) )
         //blame b0b :0Blush:
     });
-});
+})}

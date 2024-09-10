@@ -1305,6 +1305,12 @@ function fillingRecipes(event) {
             fluid: "kubejs:white_grape_juice",
             amount: 250 * mB,
         },
+		{
+            input: "minecraft:apple",
+            output: "astralfoods:shimmered_apple",
+            fluid: "kubejs:shimmer",
+            amount: BUCKET,
+        },
     ].forEach((recipe) => {
         event.recipes.createFilling(recipe.output, [recipe.input, { fluid: recipe.fluid, amount: recipe.amount }]);
     });

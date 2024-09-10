@@ -58,6 +58,12 @@ onEvent("recipes", (event) => {
             cooling_time: 10,
             cast: null,
         },
+		{
+            fluid: ["tconstruct:seared_stone", INGOT],
+            result: "astralfoods:seared_potato",
+            cooling_time: 20,
+            cast: ["minecraft:potato", true],
+        },
     ].forEach((recipe) => {
         event.custom({
             type: "tconstruct:casting_basin",
