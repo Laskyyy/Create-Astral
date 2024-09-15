@@ -1,7 +1,6 @@
 onEvent("recipes", (event) => {
     // [?optional object specifying a mod/type, original item, replacement item]
     [
-        ["tconstruct:molten_bronze", "createbigcannons:molten_bronze"],
         ["create:powdered_obsidian", "#c:dusts/obsidian"],
         ["techreborn:obsidian_dust", "#c:dusts/obsidian"],
         ["createaddition:diamond_grit", "techreborn:diamond_dust"],

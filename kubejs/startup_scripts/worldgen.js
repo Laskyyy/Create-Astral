@@ -157,12 +157,4 @@ onEvent("worldgen.add", (event) => {
 
         ore.count([10, 20]).squared().triangleHeight(0, 85);
     });
-
-    event.addOre((ore) => {
-        ore.id = "kubejs:endyttrium"; // optional
-        ore.biomes = ["createastral:devoured_moon_debris"];
-        ore.addTarget("#ad_astra:glacio_ore_replaceables", "yttr:deepslate_gadolinite");
-
-        ore.count([10, 35]).squared().triangleHeight(50, 85);
-    });
 });

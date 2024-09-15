@@ -10,7 +10,7 @@
                 "b": "techreborn:basic_machine_casing",
                 "c": "techreborn:basic_machine_frame",
                 "d": "techreborn:advanced_machine_frame",
-                "e": "create:blaze_burner{fuelLevel:1}"
+                "e": "create:blaze_burner{fuelLevel:2}"
             },
             "pattern": [
                 [
@@ -85,7 +85,7 @@
         {
             "type": "custommachinery:energy",
             "mode": "input",
-            "amount": 10000
+            "amount": 2500
         },
         {
             "type": "custommachinery:fluid",
