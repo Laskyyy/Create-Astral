@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:casting_table",
-  "fluid": {
-    "tag": "tconstruct:sky_slime",
-    "amount": 20250
-  },
-  "result": "tconstruct:sky_slime_ball",
-  "cooling_time": 43
-}

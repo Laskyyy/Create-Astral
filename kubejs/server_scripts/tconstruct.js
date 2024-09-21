@@ -58,12 +58,7 @@ onEvent("recipes", (event) => {
             cooling_time: 10,
             cast: null,
         },
-		{
-            fluid: ["tconstruct:seared_stone", INGOT],
-            result: "astralfoods:seared_potato",
-            cooling_time: 20,
-            cast: ["minecraft:potato", true],
-        },
+		
     ].forEach((recipe) => {
         event.custom({
             type: "tconstruct:casting_basin",
@@ -159,6 +154,12 @@ onEvent("recipes", (event) => {
             result: "minecraft:experience_bottle",
             cooling_time: 30,
             cast: ["minecraft:glass_bottle", true],
+        },
+        {
+            fluid: ["tconstruct:seared_stone", INGOT],
+            result: "astralfoods:seared_potato",
+            cooling_time: 40,
+            cast: ["minecraft:potato", true],
         },
     ].forEach((recipe) => {
         event.custom({

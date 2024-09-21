@@ -101,12 +101,6 @@ onEvent("block.registry", (event) => {
         .texture("down", "createastral:block/electropipe")
         .texture("north", "createastral:block/electropipe")
         .tagBlock("minecraft:mineable/pickaxe");
-    event
-        .create("doodads:asphalt_stair", "stairs")
-        .material("stone")
-        .hardness(4)
-        .tagBlock("minecraft:mineable/pickaxe")
-        .textureAll("doodads:block/asphalt");
 
     event
         .create("createastral:stone_growth_chamber_dummy")

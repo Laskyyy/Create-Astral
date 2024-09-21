@@ -1309,7 +1309,7 @@ function fillingRecipes(event) {
             input: "minecraft:apple",
             output: "astralfoods:shimmered_apple",
             fluid: "kubejs:shimmer",
-            amount: BUCKET,
+            amount: 250 * mB,
         },
     ].forEach((recipe) => {
         event.recipes.createFilling(recipe.output, [recipe.input, { fluid: recipe.fluid, amount: recipe.amount }]);
@@ -2141,6 +2141,18 @@ function mixingRecipes(event) {
             heat: "superheated",
             time: 1000,
         },
+        {
+            output: ["astralfoods:astral_sauce"],
+            input: ["createastral:astral_singularity"],
+            heat: "superheated",
+            time: 80,
+        },
+        {
+            output: ["astralfoods:quantum_pasta"],
+            input: ["astralfoods:astral_sauce","2x astralfoods:quantum_bites","farmersdelight:raw_pasta"],
+            heat: "heated",
+            time: 200,
+        },
     ].forEach((recipe) => {
         event.recipes
             .createMixing(recipe.output, recipe.input)
@@ -2202,6 +2214,7 @@ function mixingRecipes(event) {
             "#c:concrete_powder",
         ])
         .processingTime(1000);
+        
 }
 function cuttingRecipes(event) {
     // [Input string, Output string]

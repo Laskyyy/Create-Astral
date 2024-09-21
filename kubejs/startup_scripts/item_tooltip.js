@@ -278,6 +278,14 @@ onEvent("item.tooltip", (e) => {
             item: "createastral:biplane_blueprint",
             tooltip: 'An ancient schematic from a lost civilisation. Perhaps it can be found in old facilities?',
         },
+        {
+            item: "astralfoods:shimmered_rabbit_stew",
+            tooltip: 'Suggested by NikWas!',
+        },
+        {
+            item: "astralfoods:astral_sauce",
+            tooltip: 'Where did the bowl come? The singularity can fabricate them of course!',
+        },
     ];
 
     tooltips.forEach((tooltip) => {

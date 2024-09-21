@@ -1,7 +1,0 @@
-CurseForge
-modpack
-packwiz
-Modrinth
-VSCodium
-MultiMC
-toml
