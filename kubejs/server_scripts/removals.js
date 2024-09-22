@@ -16,6 +16,19 @@ onEvent("recipes", (event) => {
         { output: "techreborn:industrial_tank_unit" },
         { output: "techreborn:quantum_tank_unit" },
 
+        //cables
+        {output: "techreborn:gold_cable"},
+        {output: "techreborn:copper_cable"},
+        {output: "techreborn:tin_cable"},
+        {output: "techreborn:hv_cable"},
+        {output: "techreborn:glassfiber_cable"},
+        {output: "techreborn:insulated_hv_cable"},
+        {output: "techreborn:insulated_gold_cable"},
+        {output: "techreborn:insulated_copper_cable"},
+
+        { output: "techreborn:hv_transformer"},
+        {output: "techreborn:lightning_rod"},
+        {output: "techreborn:refined_iron_fence"},
         { output: "techreborn:chunk_loader" },
         { output: "techreborn:pyrite_dust"},
         { output: "ae2:spatial_anchor" },
@@ -135,6 +148,7 @@ onEvent("recipes", (event) => {
         //Create
 
         { output: "create:blaze_cake" },
+        { output: "create:blaze_cake_base" },
         { output: "create:blaze_burner" },
         { output: "create:ochrum" },
         { output: "create:crimsite" },
@@ -147,6 +161,8 @@ onEvent("recipes", (event) => {
         { output: "create:electron_tube" },
         { output: "create:cogwheel", type: "minecraft:shaped" },
         { output: "create:large_cogwheel", type: "minecraft:shaped" },
+        { output: "travelersbackpack:standard", type: "minecraft:shaped" },
+        { output: "travelersbackpack:standard", type: "minecraft:crafting_shaped" },
         { output: "create:cogwheel" },
         { output: "create:large_cogwheel" },
         { output: "create:experience_block" },
@@ -521,7 +537,6 @@ onEvent("recipes", (event) => {
             input: "minecraft:copper_block",
             type: "minecraft:stonecutting",
         },
-
         //dispenser recipe
         { output: "minecraft:dispenser" },
     ].forEach((recipe) => {

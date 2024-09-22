@@ -72,6 +72,19 @@ onEvent("fluid.registry", (event) => {
         .stillTexture("tconstruct:block/fluid/molten/still")
         .flowingTexture("tconstruct:block/fluid/molten/flowing");
 
+    event.create("smite")
+        .thickTexture(0xffff00)
+        .bucketColor(0xffff00)
+        .displayName("Smite")
+        .stillTexture("tconstruct:block/fluid/molten/still")
+        .flowingTexture("tconstruct:block/fluid/molten/flowing")
+        .gaseous();
+
+    event.create("released_water_coolant")
+        .thickTexture(0x63b1ed)
+        .bucketColor(0x63b1ed)
+        .displayName("Released Coolant")
+
     event
         .create("compound_mixture")
         .thickTexture(0x66786f)

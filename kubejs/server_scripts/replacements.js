@@ -130,6 +130,36 @@ onEvent("recipes", (event) => {
             "campanion:rope",
             "farmersdelight:rope",
         ],
+        // Tech reborn cables
+        [
+            {
+                input:"techreborn:insulated_gold_cable",
+            },
+            "techreborn:insulated_gold_cable",
+            "createaddition:gold_spool",
+        ],
+        [
+            {
+                input:"techreborn:insulated_copper_cable",
+            },
+            "techreborn:insulated_copper_cable",
+            "createaddition:copper_spool",
+        ],
+        [
+            {
+                input:"techreborn:copper_cable",
+            },
+            "techreborn:copper_cable",
+            "createaddition:copper_spool",
+        ],
+        [
+            {
+                input: "techreborn:tin_cable",
+            },
+            "techreborn:tin_cable",
+            "createaddition:iron_rod",
+        ],
+
         // ['tconstruct:scorched_brick', 'tconstruct:scorched_bricks') // ???
         ["dbe:steel_ingot", "dustrial_decor:cast_iron_billet"],
         ["dbe:basic_circuit", "phonos:redstone_chip"],

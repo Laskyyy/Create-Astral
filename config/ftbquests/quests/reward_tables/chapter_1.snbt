@@ -1,4 +1,8 @@
 {
+	id: "4EEDB842C7C4CB3B"
+	order_index: 1
+	title: "Chapter 1"
+	loot_size: 1
 	rewards: [
 		{ item: "createdeco:white_decal" }
 		{ item: "createdeco:orange_decal" }
@@ -32,12 +36,12 @@
 					symmetry: {
 						type: "empty"
 						direction: 0
-						enable: 1b
 						pos: [
 							0.0f
 							0.0f
 							0.0f
 						]
+						enable: 1b
 					}
 				}
 			}
@@ -102,18 +106,14 @@
 		{ item: "minecraft:dark_oak_log", count: 32 }
 		{ item: "create:experience_nugget", count: 16, weight: 5 }
 	]
-	loot_size: 1
-	order_index: 1
-	id: "4EEDB842C7C4CB3B"
 	loot_crate: {
-		string_id: "chapter_1"
-		item_name: "Chapter 1 Loot Crate"
-		color: 7633016
 		drops: {
+			boss: 0
 			passive: 0
 			monster: 0
-			boss: 0
 		}
+		color: 7633016
+		item_name: "Chapter 1 Loot Crate"
+		string_id: "chapter_1"
 	}
-	title: "Chapter 1"
 }

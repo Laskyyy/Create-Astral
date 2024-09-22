@@ -1,7 +1,7 @@
 {
     "name": "Distillation Tower",
     "appearance": {
-        "block": "techreborn:grinder",
+        "block": "createastral:distillery_dummy",
         "running": {
             "lightlevel": 15
         }
