@@ -5,10 +5,6 @@ onEvent("item.tooltip", (e) => {
     hasFired = true;
     const tooltips = [
         {
-            item: "createastral:laskinium_pill",
-            tooltip: "makes you go zoom but make you high",
-        },
-        {
             item: "createastral:swift_andesite",
             tooltip: "Place below a block to grant it a speed boost similar to andesite pavement.",
         },
@@ -281,6 +277,14 @@ onEvent("item.tooltip", (e) => {
         {
             item: "createastral:biplane_blueprint",
             tooltip: 'An ancient schematic from a lost civilisation. Perhaps it can be found in old facilities?',
+        },
+        {
+            item: "astralfoods:shimmered_rabbit_stew",
+            tooltip: 'Suggested by NikWas!',
+        },
+        {
+            item: "astralfoods:astral_sauce",
+            tooltip: 'Where did the bowl come? The singularity can fabricate them of course!',
         },
     ];
 

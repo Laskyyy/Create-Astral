@@ -58,12 +58,7 @@ onEvent("recipes", (event) => {
             cooling_time: 10,
             cast: null,
         },
-        {
-            fluid: ["kubejs:blast-resistant_cement", BUCKET / 2],
-            result: "createastral:rocket_casing",
-            cooling_time: 40,
-            cast: ["kubejs:fire_resistant_fragile_sheet_block", true],
-        },
+		
     ].forEach((recipe) => {
         event.custom({
             type: "tconstruct:casting_basin",
@@ -161,11 +156,11 @@ onEvent("recipes", (event) => {
             cast: ["minecraft:glass_bottle", true],
         },
         {
-            fluid: ["tconstruct:molten_gold", INGOT],
-            result: "createastral:gold_casted_rocket_fin",
-            cooling_time: 30,
-            cast: ["createastral:fragile_rocket_fin", true],
-        }
+            fluid: ["tconstruct:seared_stone", INGOT],
+            result: "astralfoods:seared_potato",
+            cooling_time: 40,
+            cast: ["minecraft:potato", true],
+        },
     ].forEach((recipe) => {
         event.custom({
             type: "tconstruct:casting_table",
