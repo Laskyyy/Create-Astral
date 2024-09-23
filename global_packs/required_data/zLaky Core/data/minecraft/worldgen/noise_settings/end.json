@@ -78,7 +78,7 @@
     "surface_rule": {
         "type": "minecraft:block",
         "result_state": {
-            "Name": "dbe:vanta_black"
+            "Name": "minecraft:black_concrete"
         }
     }
 }
