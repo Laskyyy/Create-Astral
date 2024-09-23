@@ -164,7 +164,7 @@ onEvent("recipes", (event) => {
         ingredients: [
             {
                 item: "ae2:certus_quartz_crystal",
-                count: 32,
+                count: 1,
             },
             {
                 item: "techreborn:cell",
@@ -175,7 +175,7 @@ onEvent("recipes", (event) => {
             {
                 item: "techreborn:cell",
                 nbt: {
-                    fluid: "techreborn:mercury",
+                    fluid: "techreborn:oxygen",
                 },
                 count: 10,
             },

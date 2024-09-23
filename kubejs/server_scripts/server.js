@@ -719,7 +719,36 @@ onEvent("recipes", (event) => {
     event.stonecutting("tconstruct:coin_cast", "#c:plates/gold");
     event.stonecutting("automobility:sloped_dash_panel", "automobility:dash_panel");
     event.stonecutting("automobility:steep_sloped_dash_panel", "automobility:dash_panel");
-
+    event.stonecutting("yttr:ruined_cobblestone", "yttr:wasteland_stone");
+    event.stonecutting("yttr:ruined_device_gt_1", "yttr:wasteland_stone");
+    event.stonecutting("yttr:ruined_device_bc_1", "yttr:wasteland_stone");
+    event.stonecutting("yttr:ruined_device_fo_1", "yttr:wasteland_stone");
+    event.stonecutting("yttr:ruined_bricks", "yttr:wasteland_dirt");
+    event.stonecutting("yttr:ruined_construct_rc_1", "yttr:wasteland_dirt");
+    event.stonecutting("yttr:ruined_construct_rc_2", "yttr:wasteland_dirt");
+    event.stonecutting("yttr:ruined_tank", "yttr:wasteland_dirt");
+    event.stonecutting("yttr:ruined_pipe", "yttr:wasteland_dirt");
+    event.stonecutting("yttr:ruined_tube", "yttr:wasteland_dirt");
+    event.stonecutting("yttr:wasteland_grass", "yttr:wasteland_dirt");
+    event.stonecutting("yttr:ruined_container", "yttr:wasteland_log");
+    event.stonecutting("yttr:ruined_device_bc_2", "yttr:wasteland_log");
+    event.stonecutting("yttr:ruined_device_rp_1", "yttr:wasteland_log");
+    event.stonecutting("yttr:ruined_frame", "yttr:wasteland_log");
+    event.stonecutting("yttr:ruined_lever", "yttr:wasteland_log");
+    event.stonecutting("yttr:ruined_torch", "yttr:wasteland_log");
+    event.shaped("yttr:wasteland_dirt", ["ABA"], {
+        A: "yttr:rubble",
+        B: "minecraft:sand",
+    });
+    event.shaped("yttr:wasteland_log", ["ABA"], {
+        A: "yttr:rubble",
+        B: "minecraft:oak_log",
+    });
+    event.shaped("yttr:wasteland_stone", ["ABA"], {
+        A: "yttr:rubble",
+        B: "minecraft:stone",
+    });
+		
     // createdeco sheet metal blocks
     event.stonecutting("2x createdeco:copper_sheet_metal", "create:copper_sheet");
     event.stonecutting("2x createdeco:andesite_sheet_metal", "create:andesite_alloy");

@@ -15,6 +15,11 @@ onEvent("recipes", (event) => {
             loot: "minecraft:netherrack",
             result: "minecraft:tuff",
         },
+				{
+            block: "createastral:charcoal_block",
+            loot: "techreborn:charcoal_dust",
+            result: "minecraft:coal_block",
+        },
         
     ].forEach((recipe) => {
         event.custom({

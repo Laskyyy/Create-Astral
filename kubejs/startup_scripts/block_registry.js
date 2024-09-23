@@ -94,6 +94,16 @@ onEvent("block.registry", (event) => {
         .tagBlock("minecraft:mineable/pickaxe");
 
     event
+        .create("createastral:distillery_dummy", "basic")
+        .hardness(4)
+        .resistance(1200)
+        .textureAll("techreborn:block/machines/tier1_machines/machine_side")
+        .texture("down", "techreborn:block/machines/tier1_machines/machine_bottom")
+        .texture("up", "techreborn:block/machines/tier1_machines/machine_top")
+        .texture("north", "createastral:block/distillation_tower_on")
+        .tagBlock("minecraft:mineable/pickaxe");
+    
+    event
         .create("createastral:electrolyser_dummy", "basic")
         .hardness(4)
         .resistance(1200)
@@ -101,6 +111,7 @@ onEvent("block.registry", (event) => {
         .texture("down", "createastral:block/electropipe")
         .texture("north", "createastral:block/electropipe")
         .tagBlock("minecraft:mineable/pickaxe");
+
 
 
     event

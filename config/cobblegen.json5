@@ -19,4 +19,30 @@
 		},
 	],
 	"customGen": {},
+ "advanced": {
+    "minecraft:lava": {
+      "create:honey": {
+        "results": {
+          "*": [ 
+            {
+              "id": "minecraft:cobblestone",
+              "weight": 100.0,
+            }
+          ]
+        }
+      },
+    },
+	 "minecraft:lava": {
+      "create:chocolate": {
+        "results": {
+          "*": [ 
+            {
+              "id": "minecraft:cobblestone",
+              "weight": 100.0,
+            }
+          ]
+        }
+      },
+    }
+  }
 }

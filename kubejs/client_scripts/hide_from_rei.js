@@ -18,6 +18,9 @@ onEvent("rei.hide.items", (event) => {
         "ad_astra:steel_cable",
         "ad_astra:iron_plate",
         "ad_astra:iron_rod",
+        "techreborn:scrap_box",
+        "techreborn:scrapboxinator",
+        "techreborn:recycler",
         "automobility:acacia_planks_slope",
         "automobility:ancient_debris_slope",
         "automobility:andesite_slope",
@@ -596,7 +599,7 @@ onEvent("rei.hide.items", (event) => {
         "createbigcannons:molten_bronze_bucket",
         "createbigcannons:molten_steel_bucket",
         "createbigcannons:molten_nethersteel_bucket",
-        "createdeco:zinc_sheet"
+        "createdeco:zinc_sheet",
     ];
     addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:part_builder", "oak_planks", 41);
     addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:part_builder", "birch_planks", 41);
@@ -615,13 +618,7 @@ onEvent("rei.hide.items", (event) => {
     addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:tinker_station", "crimson_planks", 41);
     addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:tinker_station", "warped_planks", 41);
 
-    const gems = [
-        "peridot",
-        "red_garnet",
-        "ruby",
-        "sapphire",
-        "yellow_garnet"
-    ]
+    const gems = ["peridot", "red_garnet", "ruby", "sapphire", "yellow_garnet"];
     gems.forEach((gem) => {
         HIDDEN_ITEMS.push(`techreborn:${gem}_ore`);
         HIDDEN_ITEMS.push(`techreborn:deepslate_${gem}_ore`);
@@ -644,8 +641,8 @@ onEvent("rei.hide.items", (event) => {
         "tungsten",
         "platinum",
         "brass",
-        "zinc"
-    ]
+        "zinc",
+    ];
     ingots.forEach((ingot) => {
         HIDDEN_ITEMS.push(`techreborn:${ingot}_tiny_dust`);
         HIDDEN_ITEMS.push(`techreborn:${ingot}_dust`);
@@ -707,14 +704,13 @@ onEvent("rei.hide.items", (event) => {
         ["steel", true],
         ["sulfur", true],
         ["uvarovite", false],
-    ]
+    ];
     dusts.forEach((dust) => {
-        if (!dust[1]){
+        if (!dust[1]) {
             HIDDEN_ITEMS.push(`techreborn:${dust[0]}_dust`);
         }
         HIDDEN_ITEMS.push(`techreborn:${dust[0]}_small_dust`);
     });
-
 
     const plates = [
         "carbon",
@@ -740,7 +736,6 @@ onEvent("rei.hide.items", (event) => {
     ];
     plates.forEach((id) => HIDDEN_ITEMS.push("techreborn:" + id + "_plate"));
 
-
     HIDDEN_ITEMS.forEach((id) => event.hide(id));
 });
 
@@ -755,4 +750,5 @@ onEvent("rei.hide.fluids", (event) => {
     event.hide("createbigcannons:molten_nethersteel");
     event.hide("estrogen:molten_amethyst");
     event.hide("estrogen:molten_slime");
+    event.hide("tconstruct:honey");
 });

@@ -3,10 +3,10 @@
 [general]
 	#Forge Energy conversion rate (in FE/t at 256 RPM).
 	#Range: > 0
-	fe_conversion = 30
+	fe_conversion = 32
 	#Max stress for the Alternator and Electric Motor (in SU at 256 RPM).
 	#Range: > 0
-	baseline_stress = 8192
+	baseline_stress = 4096
 
 #Electric Motor
 [electric_motor]
@@ -65,10 +65,10 @@
 [wires]
 	#Connector max input in FE/t (Energy transfer).
 	#Range: 0 ~ 9223372036854775807
-	connector_max_input = 4096
+	connector_max_input = 10000
 	#Connector max output in FE/t (Energy transfer).
 	#Range: 0 ~ 9223372036854775807
-	connector_max_output = 4096
+	connector_max_output = 10000
 	#Connector internal input buffer in FE.
 	#Range: 0 ~ 9223372036854775807
 	connector_input_capacity = 8096
