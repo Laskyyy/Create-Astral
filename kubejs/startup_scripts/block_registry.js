@@ -232,5 +232,11 @@ onEvent("block.registry", (event) => {
         .hardness(4)
         .tagBlock("minecraft:mineable/pickaxe")
         .textureAll("doodads:block/asphalt");
+    
+    event
+        .create("yttr:polished_scorched_obsidian_holster_alive", "basic")
+        .textureAll("yttr:block/polished_scorched_obsidian_holster_alive")
+        .texture("up", "yttr:block/polished_scorched_obsidian_capstone")
+        .texture("down", "yttr:block/polished_scorched_obsidian")
 
 });
