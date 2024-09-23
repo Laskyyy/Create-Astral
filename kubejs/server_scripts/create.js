@@ -232,9 +232,18 @@ function crushingRecipes(event) {
             input: "minecraft:warped_wart_block",
             outputs: [
                 ["minecraft:warped_roots", 1],
-                ["minecraft:warped_fungus", 0.15],
+                ["minecraft:nether_sprouts", 0.25],
+                ["minecraft:warped_fungus", 0.25],
             ],
         },
+				{
+            input: "minecraft:nether_wart_block",
+            outputs: [
+                ["minecraft:crimson_roots", 1],
+                ["minecraft:nether_wart", 0.25],
+                ["minecraft:crimson_fungus", 0.25],
+            ],
+				},
         {
             input: "minecraft:dripstone_block",
             outputs: [
@@ -2280,6 +2289,15 @@ function mixingRecipes(event) {
                 "minecraft:oak_log",
                 "yttr:rubble",
                 "yttr:rubble"
+            ],
+            heat: "",
+            time: 200,
+        },
+        {
+            output: "2x minecraft:piglin_banner_pattern",
+            input: [
+                "minecraft:piglin_banner_pattern",
+                "minecraft:paper"
             ],
             heat: "",
             time: 200,

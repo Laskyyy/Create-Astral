@@ -131,7 +131,7 @@ onEvent("recipes", (event) => {
             cast: ["create:large_cogwheel", true],
         },
         {
-            fluid: ["tconstruct:molten_gold", BUCKET / 2],
+            fluid: ["tconstruct:molten_gold", INGOT * 4],
             result: "createastral:golden_bowl",
             cooling_time: 100,
             cast: ["tconstruct:round_plate_cast", false],
