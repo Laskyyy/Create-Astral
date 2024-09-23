@@ -232,9 +232,18 @@ function crushingRecipes(event) {
             input: "minecraft:warped_wart_block",
             outputs: [
                 ["minecraft:warped_roots", 1],
-                ["minecraft:warped_fungus", 0.15],
+                ["minecraft:nether_sprouts", 0.25],
+                ["minecraft:warped_fungus", 0.25],
             ],
         },
+				{
+            input: "minecraft:nether_wart_block",
+            outputs: [
+                ["minecraft:crimson_roots", 1],
+                ["minecraft:nether_wart", 0.25],
+                ["minecraft:crimson_fungus", 0.25],
+            ],
+				},
         {
             input: "minecraft:dripstone_block",
             outputs: [
@@ -359,6 +368,15 @@ function crushingRecipes(event) {
 								["minecraft:netherite_scrap", 0.25],
 								["createbigcannons:steel_scrap", 0.1],
 								["createbigcannons:bronze_scrap", 0.1],
+						],
+        },
+        {
+            input: "createastral:monazite_crystal",
+            outputs: [["yttr:neodymium_dust", 1],
+								["createastral:crushed_raw_gadolinite", 1],
+								["yttr:neodymium_dust", 0.75],
+								["createastral:crushed_raw_gadolinite", 0.5],
+                                ["create:crushed_raw_iron", 0.5],
 						],
         },
     ].forEach((recipe) => {
@@ -1399,6 +1417,14 @@ function mixingRecipes(event) {
     // Time: Mixing time in ticks
     [
         {
+            output: "16x create:blaze_cake",
+            input: ["create:blaze_cake_base",
+                "yttr:delicace",
+                { fluid: "kubejs:metabolic_broth", amount: BUCKET / 2 }],
+            heat: "superheated",
+            time: 100,
+        },
+        {
             output: "minecraft:feather",
             input: ["minecraft:stick", "minecraft:string"],
             heat: "",
@@ -1614,6 +1640,31 @@ function mixingRecipes(event) {
                 },
             ],
             heat: "heated",
+            time: 1000,
+        },
+        {
+            output: "createastral:ender_mush",
+            input: [
+                "2x tconstruct:ender_slime_crystal",
+                {
+                    fluid: "astraladditions:sputum",
+                    amount: 500 * mB,
+                },
+            ],
+            heat: "superheated",
+            time: 1000,
+        },
+        {
+            output: "createastral:ender_mush",
+            input: [
+                "8x tconstruct:ender_slime_crystal",
+                "estrogen:estrogen_pill",
+                {
+                    fluid: "kubejs:shimmer",
+                    amount: 1000 * mB,
+                },
+            ],
+            heat: "superheated",
             time: 1000,
         },
         {
@@ -2319,6 +2370,15 @@ function mixingRecipes(event) {
             heat: "",
             time: 200,
         },
+        {
+            output: "2x minecraft:piglin_banner_pattern",
+            input: [
+                "minecraft:piglin_banner_pattern",
+                "minecraft:paper"
+            ],
+            heat: "",
+            time: 200,
+        },
     ].forEach((recipe) => {
         event.recipes
             .createMixing(recipe.output, recipe.input)
@@ -2556,6 +2616,19 @@ function mechanicalCraftingRecipes(event) {
                 A: "techreborn:rubber",
                 B: "minecraft:hopper",
                 C: "create:integrated_circuit",
+            },
+        },
+        {
+            output: "yttr:rafter",
+            shape: ["AEBDA", "AFCFA", "AFGFA", "AAAAA"],
+            inputs: {
+                A: "yttr:armor_plating",
+                B: "projecttable:projecttable",
+                C: "createastral:promethium_atomic_battery",
+                D: "create:shadow_steel_casing",
+                E: "create:refined_radiance_casing",
+                G: "createastral:subatomic_core",
+                F: "yttr:yttrium_block",
             },
         },
         {
@@ -3253,6 +3326,16 @@ function compactingRecipes(event) {
         .superheated()
         .processingTime(1500);
 
+        event.recipes
+        .createCompacting("yttr:promethium_lump", ["4x yttr:promethium_speck", "yttr:neodymium_dust", { fluid: "kubejs:hellfire", amount: 500 * mB }])
+        .superheated()
+        .processingTime(1000);
+
+        event.recipes
+        .createCompacting("yttr:promethium_glob", ["2x yttr:promethium_lump", "yttr:neodymium_disc", { fluid: "kubejs:hellfire", amount: 1000 * mB }])
+        .superheated()
+        .processingTime(1000);
+
     event.recipes
         .createCompacting("create:lapis_sheet", ["16x techreborn:lazurite_dust"])
         .heated()
@@ -3297,6 +3380,29 @@ function superheatedMixingRecipes(event) {
                 "16x createastral:separation_agent",
             ],
             ["astraladditions:fragile_item_2"],
+        ],
+        [
+            [
+                "tconstruct:ender_slime_crystal",
+                "4x yttr:rubble",
+            ],
+            ["yttr:promethium_speck"],
+        ],
+        [
+            [
+                "4x tconstruct:ender_slime_crystal",
+                "minecraft:golden_apple",
+            ],
+            ["doodads:magic_plum"],
+        ],
+       
+        [
+            [
+                "tconstruct:ichor_slime_sling",
+                "yttr:delicace",
+                { fluid: "kubejs:metabolic_broth", amount: BUCKET / 2 },
+            ],
+            ["tconstruct:ender_slime_sling"],
         ],
         [
             [
