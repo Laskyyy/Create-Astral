@@ -15,6 +15,13 @@ onEvent("block.registry", (event) => {
         .tagBlock("minecraft:mineable/pickaxe");
 
     event
+        .create("createastral:monazite_crystal")
+        .material("amethyst")
+        .hardness(20)
+        .displayName("Monazite Crystal")
+        .tagBlock("minecraft:mineable/pickaxe");
+
+    event
         .create("createastral:ancient_stone")
         .material("stone")
         .hardness(22)
