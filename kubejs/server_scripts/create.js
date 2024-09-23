@@ -345,6 +345,22 @@ function crushingRecipes(event) {
             input: "minecraft:black_concrete",
             outputs: [["minecraft:black_concrete_powder", 1]],
         },
+        {
+            input: "yttr:ruined_cobblestone",
+            outputs: [["yttr:rubble", 1],
+								["yttr:rubble", 0.75],
+								["tconstruct:debris_nugget", 0.1]
+						],
+        },
+        {
+            input: "yttr:rubble",
+            outputs: [["tconstruct:debris_nugget", 1],
+								["createastral:stone_dust", 1],
+								["minecraft:netherite_scrap", 0.25],
+								["createbigcannons:steel_scrap", 0.1],
+								["createbigcannons:bronze_scrap", 0.1],
+						],
+        },
     ].forEach((recipe) => {
         let cleanoutputs = [];
         recipe.outputs.forEach((output) => {
@@ -2228,6 +2244,45 @@ function mixingRecipes(event) {
             ],
             heat: "superheated",
             time: 1000,
+        },
+        {
+            output: "yttr:ruined_cobblestone",
+            input: [
+                "minecraft:cobblestone",
+                "yttr:rubble"
+            ],
+            heat: "",
+            time: 250,
+        },
+        {
+            output: "yttr:wasteland_stone",
+            input: [
+                "minecraft:stone",
+                "yttr:rubble",
+                "yttr:rubble"
+            ],
+            heat: "",
+            time: 200,
+        },
+        {
+            output: "yttr:wasteland_dirt",
+            input: [
+                "minecraft:sand",
+                "yttr:rubble",
+                "yttr:rubble"
+            ],
+            heat: "",
+            time: 200,
+        },
+        {
+            output: "yttr:wasteland_log",
+            input: [
+                "minecraft:oak_log",
+                "yttr:rubble",
+                "yttr:rubble"
+            ],
+            heat: "",
+            time: 200,
         },
     ].forEach((recipe) => {
         event.recipes
