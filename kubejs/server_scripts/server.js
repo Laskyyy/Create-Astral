@@ -465,6 +465,17 @@ onEvent("recipes", (event) => {
         E: "create:electron_tube",
     });
 
+    event.shaped("automobility:auto_mechanic_table", ["ABBBBA", "BCDDCB", "BD  EB","BD  EB", "BCEECB","ABBBBA"], {
+        A: "yttr:yttrium_block",
+        B: "yttr:yttrium_plating",
+        C: "createastral:promethium_atomic_battery",
+        D: "create:shadow_steel_casing",
+        E: "create:refined_radiance_casing",
+        F: "yttr:neodymium_block",
+        G: "techreborn:industrial_centrifuge",
+        H: "createastral:separation_agent",
+    });
+
     ///COMPUTERCRAFT FIXES
 
     event.shapeless(
@@ -747,6 +758,13 @@ onEvent("recipes", (event) => {
     event.shaped("yttr:wasteland_stone", ["ABA"], {
         A: "yttr:rubble",
         B: "minecraft:stone",
+    });
+    event.shaped("createastral:promethium_atomic_battery", ["CAC","BDB","CEC"], {
+        A: "techreborn:lithium_ion_battery",
+        B: "techreborn:machine_parts",
+        C: "yttr:armor_plating",
+        D: "createastral:subatomic_ingot",
+        E: "yttr:promethium_glob",
     });
 		
     // createdeco sheet metal blocks

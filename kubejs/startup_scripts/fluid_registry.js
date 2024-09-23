@@ -57,17 +57,25 @@ onEvent("fluid.registry", (event) => {
         .flowingTexture("tconstruct:block/fluid/molten/flowing");
 
     event
+        .create("metabolic_broth")
+        .thickTexture(0xC3B1E1)
+        .bucketColor(0xC3B1E1)
+        .displayName("Metabolic Broth")
+        .stillTexture("tconstruct:block/fluid/molten/still")
+        .flowingTexture("tconstruct:block/fluid/molten/flowing");
+
+        event
         .create("plasma_fluid")
         .thickTexture(0x4cfbff)
         .bucketColor(0x4cfbff)
-        .displayName("Quark-Gluon Plasma Fluid")
+        .displayName("Metabolic Broth")
         .stillTexture("tconstruct:block/fluid/molten/still")
         .flowingTexture("tconstruct:block/fluid/molten/flowing");
 
     event
         .create("hellfire")
-        .thickTexture(0xffa500)
-        .bucketColor(0xffa500)
+        .thickTexture(0x9fddfc)
+        .bucketColor(0x9fddfc)
         .displayName("Hellfire")
         .stillTexture("tconstruct:block/fluid/molten/still")
         .flowingTexture("tconstruct:block/fluid/molten/flowing");

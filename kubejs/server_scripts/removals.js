@@ -478,6 +478,7 @@ onEvent("recipes", (event) => {
         { output: "yttr:music_disc_papillons" },
         { output: "yttr:yttrium_dust" },
         { output: "yttr:magtank" },
+        { output: "yttr:neodymium_disc" },
         { output: "yttr:yttrium_ingot", type: "minecraft:smelting"},
         { output: "yttr:yttrium_ingot", type: "minecraft:blasting"},
 

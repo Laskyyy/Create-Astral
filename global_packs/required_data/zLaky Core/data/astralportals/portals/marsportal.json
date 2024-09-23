@@ -1,8 +1,8 @@
 {
     "block": "createastral:ancient_stone",
     "dim": "ad_astra:mars",
-    "ignitionType": "FLUID",
-    "ignitionSource": "minecraft:lava",
+    "ignitionType": "ITEM",
+    "ignitionSource": "createastral:astral_conduit",
 	"returnDim": "ad_astra:moon",
     "r": 148,
     "g": 71,
