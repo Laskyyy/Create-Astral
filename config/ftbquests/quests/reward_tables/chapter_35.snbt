@@ -1,17 +1,51 @@
 {
-	rewards: [ ]
-	loot_size: 1
-	order_index: 4
 	id: "170876D9D871D1C5"
+	order_index: 4
+	title: "Loot Crate: AE2"
+	loot_size: 1
+	use_title: true
+	rewards: [
+ { "item": "ae2:charged_certus_quartz_crystal", count: 2, weight: 1 }
+        { "item": "ae2:name_press", weight: 2 }
+        { "item": "ae2:fluix_pearl", weight: 1 }
+        { "item": "ae2:engineering_processor_press", weight: 2 }
+        { "item": "ae2:basic_card", weight: 1 }
+        { "item": "ae2:item_cell_housing", weight: 1 }
+        { "item": "ae2:sky_dust", count: 7, weight: 1 }
+        { "item": "ae2:portable_item_cell_1k", weight: 1 }
+        { "item": "ae2:portable_fluid_cell_1k", weight: 1 }
+        { "item": "ae2:fluix_crystal", weight: 1 }
+        { "item": "ae2:printed_engineering_processor", weight: 1 }
+        { "item": "ae2:fluid_cell_housing", weight: 1 }
+        { "item": "ae2:white_paint_ball", count: 6, weight: 1 }
+        { "item": "ae2:calculation_processor_press", weight: 2 }
+        { "item": "ae2:printed_logic_processor", weight: 1 }
+        { "item": "ae2:white_covered_cable", count: 4, weight: 1 }
+        { "item": "ae2:white_covered_dense_cable", count: 4, weight: 1 }
+        { "item": "ae2:monitor", weight: 1 }
+        { "item": "ae2:crafting_terminal", weight: 1 }
+        { "item": "ae2:blank_pattern", weight: 1 }
+        { "item": "ae2:white_smart_cable", count: 8, weight: 1 }
+        { "item": "ae2:biometric_card", weight: 1 }
+        { "item": "ae2:certus_quartz_crystal", count: 6, weight: 1 }
+        { "item": "ae2:fluix_dust", count: 2, weight: 1 }
+        { "item": "ae2:logic_processor_press", weight: 2 }
+        { "item": "ae2:printed_calculation_processor", weight: 1 }
+        { "item": "ae2:silicon_press", weight: 2 }
+        { "item": "ae2:printed_silicon", weight: 1 }
+        { "item": "ae2:white_glass_cable", count: 4, weight: 1 }
+        { "item": "ae2:quartz_fiber", count: 4, weight: 1 }
+        { "item": "ae2:certus_quartz_dust", count: 4, weight: 1 }
+
+	 ]
 	loot_crate: {
-		string_id: "chapter_3_5"
-		item_name: "Chapter 3.5 Loot Crate"
-		color: 13167081
 		drops: {
+			boss: 0
 			passive: 0
 			monster: 0
-			boss: 0
 		}
+		color: 13167081
+		item_name: "Chapter 3.5 Loot Crate"
+		string_id: "chapter_3_5"
 	}
-	title: "Chapter 3.5"
 }

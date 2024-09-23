@@ -1,0 +1,12 @@
+{
+  "feature": "astralrails:nether/warped/ender_sprouts",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 4
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

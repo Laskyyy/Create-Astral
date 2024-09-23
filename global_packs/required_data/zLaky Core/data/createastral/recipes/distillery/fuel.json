@@ -89,8 +89,8 @@
         },
         {
             "type": "custommachinery:fluid",
-            "fluid": "techreborn:nitro_diesel",
-            "amount": 40500,
+            "fluid": "kubejs:hellfire",
+            "amount": 81000,
             "mode": "output"
         }
     ]

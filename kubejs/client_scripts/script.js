@@ -1,30 +1,30 @@
 // priority: 0
 
-console.info(
-    "Hello, World! (You will see this line every time client resources reload)"
-);
+console.info("Hello, World! (You will see this line every time client resources reload)");
 
 onEvent("rei.group", (event) => {
     event.groupItems("kubejs:rei_groups/chipped", "Chipped Blocks", [
-        Ingredient.of("@chipped").getItemIds(),
+        Ingredient.of("@chipped")
+            .getItemIds()
+            .filter(
+                (item) =>
+                    item !== "chipped:mason_table" &&
+                    item !== "chipped:botanist_workbench" &&
+                    item !== "chipped:loom_table" &&
+                    item !== "chipped:glassblower" &&
+                    item !== "chipped:alchemy_bench" &&
+                    item !== "chipped:tinkering_table" &&
+                    item !== "chipped:carpenters_table" &&
+                    item !== "chipped:mechanist_workbench"
+            ),
     ]);
 
-    const useNbt = [
-        "potion",
-        "enchanted_book",
-        "splash_potion",
-        "tipped_arrow",
-        "lingering_potion",
-    ];
+    const useNbt = ["potion", "enchanted_book", "splash_potion", "tipped_arrow", "lingering_potion"];
 
     useNbt.forEach((id) => {
         const item = Item.of(id);
         const { namespace, path } = Utils.id(item.id);
-        event.groupSameItem(
-            `kubejs:rei_groups/${namespace}/${path}`,
-            item.name,
-            item
-        );
+        event.groupSameItem(`kubejs:rei_groups/${namespace}/${path}`, item.name, item);
     });
 });
 
@@ -45,9 +45,7 @@ function getPlayerStepHeight(player) {
     const leggingsModifiers = leggingsTag.tic_modifiers;
     if (leggingsModifiers === undefined) return DEFAULT_STEP_HEIGHT;
 
-    const stepUp = leggingsModifiers.filter(
-        (mod) => mod.name == "tconstruct:step_up"
-    )[0];
+    const stepUp = leggingsModifiers.filter((mod) => mod.name == "tconstruct:step_up")[0];
     if (stepUp === undefined) return DEFAULT_STEP_HEIGHT;
 
     if (stepUp.level == 2) {

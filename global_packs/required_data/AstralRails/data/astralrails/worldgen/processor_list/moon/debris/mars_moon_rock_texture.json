@@ -1,0 +1,74 @@
+{
+	"processors": [
+		{
+			"processor_type": "minecraft:rule",
+			"rules": [
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "ad_astra:moon_stone",
+						"probability": 0.06
+					},
+					"output_state": {
+						"Name": "ad_astra:moon_desh_ore"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "ad_astra:moon_stone",
+						"probability": 0.04
+					},
+					"output_state": {
+						"Name": "ad_astra:moon_iron_ore"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "ad_astra:moon_stone",
+						"probability": 0.04
+					},
+					"output_state": {
+						"Name": "ad_astra:moon_cheese_ore"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "minecraft:dirt",
+						"probability": 0.1
+					},
+					"output_state": {
+						"Name": "ad_astra:conglomerate"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "minecraft:dirt",
+						"probability": 1.0
+					},
+					"output_state": {
+						"Name": "ad_astra:mars_sand"
+					}
+				}
+			]
+		}
+	]
+}

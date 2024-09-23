@@ -23,6 +23,12 @@ onEvent("recipes", (event) => {
             cast: ["minecraft:diorite", true],
         },
         {
+            fluid: ["tconstruct:molten_cobalt", BUCKET],
+            result: "extended_drawers:controller",
+            cooling_time: 194, // same as cooling cobalt block
+            cast: ["extended_drawers:shadow_drawer", true],
+        },
+        {
             fluid: ["tconstruct:liquid_soul", BUCKET],
             result: "minecraft:diorite",
             cooling_time: 80,
@@ -52,6 +58,12 @@ onEvent("recipes", (event) => {
             cooling_time: 10,
             cast: null,
         },
+        {
+            fluid: ["kubejs:blast-resistant_cement", BUCKET / 2],
+            result: "createastral:rocket_casing",
+            cooling_time: 40,
+            cast: ["kubejs:fire_resistant_fragile_sheet_block", true],
+        },
     ].forEach((recipe) => {
         event.custom({
             type: "tconstruct:casting_basin",
@@ -64,6 +76,19 @@ onEvent("recipes", (event) => {
             result: recipe.result,
             cooling_time: recipe.cooling_time,
         });
+    });
+
+    // any drawer
+    event.custom({
+        type: "tconstruct:casting_basin",
+        cast: {tag:"extended_drawers:drawers"},
+        cast_consumed: true,
+        fluid: {
+            name: "tconstruct:molten_tin",
+            amount: BUCKET,
+        },
+        result: "extended_drawers:shadow_drawer",
+        cooling_time: 117 // same as cooling tin block
     });
 
     const BLAZING_BLOOD_MADIC_AMOUNT = 1620;
@@ -124,11 +149,23 @@ onEvent("recipes", (event) => {
             cast: ["tconstruct:nugget_cast", false],
         },
         {
+            fluid: ["kubejs:compound_mixture", mB*11],
+            result: "create:shaft",
+            cooling_time: 10,
+            cast: ["tconstruct:rod_cast", false],
+        },
+        {
             fluid: ["kubejs:liquid_xp_nuggies", 8 * NUGGET],
             result: "minecraft:experience_bottle",
             cooling_time: 30,
             cast: ["minecraft:glass_bottle", true],
         },
+        {
+            fluid: ["tconstruct:molten_gold", INGOT],
+            result: "createastral:gold_casted_rocket_fin",
+            cooling_time: 30,
+            cast: ["createastral:fragile_rocket_fin", true],
+        }
     ].forEach((recipe) => {
         event.custom({
             type: "tconstruct:casting_table",

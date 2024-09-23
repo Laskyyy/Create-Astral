@@ -1,0 +1,11 @@
+{
+  "config": {
+    "start_pool": "astralrails:nether/chunk_error/chunks",
+    "size": 7
+  },
+  "biomes": "minecraft:nether_wastes",
+  "adapt_noise":false,
+  "spawn_overrides": {
+  },
+  "type": "minecraft:bastion_remnant"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:netherrack_replace_blobs",
+  "config": {
+    "state": {
+      "Name": "tconstruct:blood_congealed_slime"
+    },
+    "target": {
+      "Name": "minecraft:netherrack"
+    },
+    "radius": 6
+  }
+}

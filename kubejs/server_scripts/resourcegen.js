@@ -80,7 +80,7 @@ function LakyCrushingRecipes(event) {
             outputs: [
                 ["minecraft:raw_gold", 1],
                 ["minecraft:raw_gold", 0.5],
-                ["techreborn:glowstone_small_dust", 0.9],
+                ["minecraft:glowstone_dust", 0.1],
                 ["minecraft:sand", 0.5],
                 ["ad_astra:desh_nugget", 0.4],
             ],
@@ -90,7 +90,7 @@ function LakyCrushingRecipes(event) {
             outputs: [
                 ["minecraft:raw_iron", 1],
                 ["minecraft:raw_iron", 0.5],
-                ["techreborn:redstone_small_dust", 0.9],
+                ["minecraft:redstone", 0.1],
                 ["minecraft:granite", 0.5],
                 ["minecraft:red_dye", 0.25],
             ],
@@ -99,7 +99,7 @@ function LakyCrushingRecipes(event) {
             input: "create:limestone",
             outputs: [
                 ["techreborn:raw_tin", 1],
-                ["minecraft:raw_tin", 0.5],
+                ["techreborn:raw_tin", 0.5],
                 ["createastral:lime", 1],
                 ["createastral:lime", 0.5],
                 ["minecraft:clay", 0.5],
@@ -111,7 +111,7 @@ function LakyCrushingRecipes(event) {
             outputs: [
                 ["minecraft:raw_copper", 1],
                 ["minecraft:raw_copper", 0.9],
-                ["techreborn:olivine_small_dust", 0.9],
+                ["techreborn:olivine_dust", 0.1],
                 ["minecraft:sand", 0.5],
                 ["minecraft:green_dye", 0.25],
             ],
@@ -122,7 +122,7 @@ function LakyCrushingRecipes(event) {
                 ["techreborn:raw_tin", 1],
                 ["techreborn:raw_tin", 0.2],
                 ["minecraft:lapis_lazuli", 0.5],
-                ["techreborn:lazurite_small_dust", 0.9],
+                ["techreborn:lazurite_dust", 0.1],
                 ["minecraft:blue_dye", 0.25],
                 ["minecraft:prismarine_crystals", 0.2],
             ],
@@ -140,7 +140,7 @@ function LakyCrushingRecipes(event) {
             input: "minecraft:blackstone",
             outputs: [
                 ["create:powdered_obsidian", 0.3],
-                ["tconstruct:seared_cobblestone", 0.3],
+                ["tconstruct:seared_cobble", 0.3],
             ],
         },
         {
@@ -176,6 +176,10 @@ function LakyCrushingRecipes(event) {
         {
             input: "dbe:vanta_black",
             outputs: [["minecraft:black_dye", 1]],
+        },
+        {
+            input: "astraladditions:lune_shroom",
+            outputs: [["minecraft:lapis_lazuli", 1]],
         },
     ].forEach((recipe) => {
         let cleanoutputs = [];

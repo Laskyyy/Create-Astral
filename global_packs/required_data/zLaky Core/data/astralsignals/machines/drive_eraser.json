@@ -1,0 +1,93 @@
+{
+    "name": "Drive Eraser",
+    "appearance": {
+        "block": "astralsignals:drive_eraser_dummy"
+    },
+    "gui": [
+        {
+            "texture": "custommachinery:textures/gui/base_background.png",
+            "x": 0,
+            "y": 0,
+            "type": "custommachinery:texture"
+        },
+        {
+            "x": 47,
+            "y": 80,
+            "type": "custommachinery:player_inventory"
+        },
+        {
+            "id": "input",
+            "x": 70,
+            "y": 30,
+            "type": "custommachinery:slot"
+        },
+        {
+            "id": "output",
+            "x": 142,
+            "y": 30,
+            "type": "custommachinery:slot"
+        },
+        {
+            "x": 116,
+            "y": 30,
+            "type": "custommachinery:progress"
+        },
+        {
+            "x": 236,
+            "y": 5,
+            "type": "custommachinery:status"
+        },
+        {
+            "text": "Drive Eraser",
+            "x": 7,
+            "y": 5,
+            "type": "custommachinery:text"
+        },
+        {
+            "text": "Will wipe ANY drive and make it a Blank!",
+            "x": 7,
+            "y": 55,
+            "type": "custommachinery:text"
+        }
+    ],
+    "components": [
+        {
+            "type": "custommachinery:item",
+            "id": "input",
+            "mode": "input",
+            "filter": [
+                "astralsignals:data_drive_garbled",
+                "astralsignals:data_drive_dormant_t1",
+                "astralsignals:data_drive_dormant_t2",
+                "astralsignals:data_drive_dormant_t3",
+                "astralsignals:data_drive_decrypted_13",
+                "astralsignals:data_drive_decrypted_cat",
+                "astralsignals:data_drive_decrypted_blocks",
+                "astralsignals:data_drive_decrypted_chirp",
+                "astralsignals:data_drive_decrypted_far",
+                "astralsignals:data_drive_decrypted_mall",
+                "astralsignals:data_drive_decrypted_mellohi",
+                "astralsignals:data_drive_decrypted_stal",
+                "astralsignals:data_drive_decrypted_strad",
+                "astralsignals:data_drive_decrypted_ward",
+                "astralsignals:data_drive_decrypted_11",
+                "astralsignals:data_drive_decrypted_wait",
+                "astralsignals:data_drive_decrypted_otherside",
+                "astralsignals:data_drive_decrypted_purpleprison",
+                "astralsignals:data_drive_decrypted_wolfgif",
+                "astralsignals:data_drive_decrypted_desertheat",
+                "astralsignals:data_drive_decrypted_memorandum",
+                "astralsignals:data_drive_decrypted_papillons",
+                "astralsignals:data_drive_decrypted_pigstep",
+                "astralsignals:data_drive_decrypted_torus",
+                "astralsignals:data_drive_decrypted_void"
+            ],
+            "whitelist": true
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "output",
+            "mode": "output"
+        }
+    ]
+}
