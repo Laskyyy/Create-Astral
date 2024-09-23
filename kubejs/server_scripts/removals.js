@@ -32,6 +32,7 @@ onEvent("recipes", (event) => {
         { output: "techreborn:chunk_loader" },
         { output: "techreborn:pyrite_dust"},
         { output: "ae2:spatial_anchor" },
+        { output: "techreborn:carbon_fiber" },
         { output: "techreborn:scrap_box" },
         { output: "techreborn:industrial_electrolyzer" },
         { output: "techreborn:industrial_sawmill" },
@@ -51,6 +52,8 @@ onEvent("recipes", (event) => {
         { output: "techreborn:compressed_plantball" },
         { output: "techreborn:plantball" },
         { output: "techreborn:grinder" },
+        { output: "techreborn:scrapboxinator" },
+        { output: "techreborn:recycler" },
         { output: "techreborn:block_breaker" },
         { output: "techreborn:wire_mill" },
         { output: "techreborn:compressor" },
@@ -473,6 +476,11 @@ onEvent("recipes", (event) => {
         { output: "yttr:bedrock_smasher" },
         { output: "yttr:effector" },
         { output: "yttr:music_disc_papillons" },
+        { output: "yttr:yttrium_dust" },
+        { output: "yttr:magtank" },
+        { output: "yttr:yttrium_ingot", type: "minecraft:smelting"},
+        { output: "yttr:yttrium_ingot", type: "minecraft:blasting"},
+
 
         // Minecraft
 

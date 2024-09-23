@@ -335,6 +335,22 @@ function crushingRecipes(event) {
             input: "minecraft:black_concrete",
             outputs: [["minecraft:black_concrete_powder", 1]],
         },
+        {
+            input: "yttr:ruined_cobblestone",
+            outputs: [["yttr:rubble", 1],
+								["yttr:rubble", 0.75],
+								["tconstruct:debris_nugget", 0.1]
+						],
+        },
+        {
+            input: "yttr:rubble",
+            outputs: [["tconstruct:debris_nugget", 1],
+								["createastral:stone_dust", 1],
+								["minecraft:netherite_scrap", 0.25],
+								["createbigcannons:steel_scrap", 0.1],
+								["createbigcannons:bronze_scrap", 0.1],
+						],
+        },
     ].forEach((recipe) => {
         let cleanoutputs = [];
         recipe.outputs.forEach((output) => {
@@ -557,13 +573,13 @@ function sequencedAssemblyRecipes(event) {
                         "ad_astra:calorite_engine",
                         "yttr:armor_plating",
                     ]),
-                    event.recipes.createFilling("ad_astra:ostrum_engine", [
-                        "ad_astra:ostrum_engine",
-                        { fluid: "kubejs:molten_radiance", amount: BUCKET/2 },
+                    event.recipes.createFilling("ad_astra:calorite_engine", [
+                        "ad_astra:calorite_engine",
+                        { fluid: "kubejs:molten_radiance", amount: BUCKET / 2 },
                     ]),
-                    event.recipes.createFilling("ad_astra:ostrum_engine", [
-                        "ad_astra:ostrum_engine",
-                        { fluid: "kubejs:molten_radiance", amount: BUCKET/2 },
+                    event.recipes.createFilling("ad_astra:calorite_engine", [
+                        "ad_astra:calorite_engine",
+                        { fluid: "kubejs:molten_radiance", amount: BUCKET / 2 },
                     ]),
                     event.recipes.createPressing(
                         "ad_astra:calorite_engine",
@@ -575,6 +591,37 @@ function sequencedAssemblyRecipes(event) {
             .loops(5);
 
             event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "createastral:mercurian_stone", // output
+                ],
+                "ad_astra:mercury_stone",
+                [
+                    // input
+                    event.recipes.createFilling("ad_astra:ostrum_engine", [
+                        "ad_astra:ostrum_engine",
+                        { fluid: "yttr:void", amount: BUCKET / 2 },
+                    ]),
+                    event.recipes.createFilling("ad_astra:ostrum_engine", [
+                        "ad_astra:ostrum_engine",
+                        { fluid: "kubejs:molten_radiance", amount: BUCKET / 2 },
+                    ]),
+                    event.recipes.createFilling("ad_astra:ostrum_engine", [
+                        "ad_astra:ostrum_engine",
+                        { fluid: "kubejs:molten_shadowsteel", amount: BUCKET / 2 },
+                    ]),
+                    event.recipes.createFilling("ad_astra:ostrum_engine", [
+                        "ad_astra:ostrum_engine",
+                        { fluid: "kubejs:molten_calorite", amount: BUCKET / 2 },
+                    ]),
+                    event.recipes.createPressing("ad_astra:mercury_stone", "ad_astra:mercury_stone"),
+                ]
+            )
+            .transitionalItem("ad_astra:mercury_stone")
+            .loops(5);
+
+        event.recipes
             .createSequencedAssembly(
                 [
                     // begin
@@ -872,6 +919,10 @@ function sequencedAssemblyRecipes(event) {
                     "techreborn:electronic_circuit",
                     "createastral:calorite_pin",
                 ]),
+                event.recipes.createDeploying("techreborn:electronic_circuit", [
+                    "techreborn:electronic_circuit",
+                    "createastral:calorite_pin",
+                ]),
             ])
             .transitionalItem("techreborn:electronic_circuit")
             .loops(9);
@@ -884,7 +935,7 @@ function sequencedAssemblyRecipes(event) {
                     { fluid: "kubejs:molten_yttrium", amount: INGOT / 2 },
                 ]),
                 event.recipes.createPressing(inc_starshard, inc_starshard),
-                event.recipes.createDeploying(inc_starshard, [inc_starshard, "techreborn:scrap_box"]),
+                event.recipes.createDeploying(inc_starshard, [inc_starshard, "create:chromatic_compound"]),
                 event.recipes.createPressing(inc_starshard, inc_starshard),
             ])
             .transitionalItem(inc_starshard)
@@ -1552,7 +1603,6 @@ function mixingRecipes(event) {
             input: [
                 "minecraft:magma_cream",
                 "minecraft:soul_sand",
-                "techreborn:scrap",
                 "#c:dusts/obsidian",
                 "#c:dusts/obsidian",
                 "#c:dusts/obsidian",
@@ -2151,6 +2201,42 @@ function mixingRecipes(event) {
             output: ["astralfoods:quantum_pasta"],
             input: ["astralfoods:astral_sauce","2x astralfoods:quantum_bites","farmersdelight:raw_pasta"],
             heat: "heated",
+            output: "yttr:ruined_cobblestone",
+            input: [
+                "minecraft:cobblestone",
+                "yttr:rubble"
+            ],
+            heat: "",
+            time: 250,
+        },
+        {
+            output: "yttr:wasteland_stone",
+            input: [
+                "minecraft:stone",
+                "yttr:rubble",
+                "yttr:rubble"
+            ],
+            heat: "",
+            time: 200,
+        },
+        {
+            output: "yttr:wasteland_dirt",
+            input: [
+                "minecraft:sand",
+                "yttr:rubble",
+                "yttr:rubble"
+            ],
+            heat: "",
+            time: 200,
+        },
+        {
+            output: "yttr:wasteland_log",
+            input: [
+                "minecraft:oak_log",
+                "yttr:rubble",
+                "yttr:rubble"
+            ],
+            heat: "",
             time: 200,
         },
     ].forEach((recipe) => {
@@ -2380,6 +2466,15 @@ function mechanicalCraftingRecipes(event) {
     // Shape: Array of rows of inputs based on letters assigned
     // Inputs: Object with letters assigned to input items, to be used in the shape
     [
+        {
+            output: "astraladditions:chromatic_vacuum",
+            shape: [" B ", "ACA", "AAA"],
+            inputs: {
+                A: "techreborn:rubber",
+                B: "minecraft:hopper",
+                C: "create:integrated_circuit",
+            },
+        },
         {
             output: "immersive_aircraft:airship",
             shape: ["AAAA ", "AAAAA", " GFG ", "BEDBC", " BBB "],
@@ -3005,6 +3100,12 @@ function compactingRecipes(event) {
                     fluid: "kubejs:molten_desh",
                     amount: INGOT,
                 },
+            ],
+        },
+        {
+            output: "techreborn:carbon_fiber",
+            inputs: [
+                { fluid: "techreborn:carbon", amount: 10125 },
             ],
         },
         {
