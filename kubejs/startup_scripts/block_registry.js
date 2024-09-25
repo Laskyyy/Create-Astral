@@ -245,5 +245,9 @@ onEvent("block.registry", (event) => {
         .textureAll("yttr:block/polished_scorched_obsidian_holster_alive")
         .texture("up", "yttr:block/polished_scorched_obsidian_capstone")
         .texture("down", "yttr:block/polished_scorched_obsidian")
+        .luminance(4)
+        .hardness(50)
+        .material("stone")
+        .requiresTool(true)
 
 });
