@@ -6,8 +6,8 @@
 		{
 			"type": "custommachinery:structure",
 			"keys": {
-				"a": "create:andesite_casing",
-				"l": "minecraft:lava",
+				"a": "techreborn:basic_machine_frame",
+				"l": "create:blaze_burner{fuelLevel:1}",
 				"g": "minecraft:glass"
 			},
 			"pattern": [
@@ -30,13 +30,13 @@
 		},
 		{
 			"type": "custommachinery:item",
-			"item": "ad_astra:venus_cobblestone",
+			"item": "ad_astra:glacio_stone",
 			"amount": 1,
 			"mode": "output"
 		},
 		{
 			"type": "custommachinery:dimension",
-			"filter": "ad_astra:venus_orbit",
+			"filter": "ad_astra:glacio_orbit",
 			"blacklist": false
 		}
 	]

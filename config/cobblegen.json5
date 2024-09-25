@@ -18,7 +18,27 @@
 			"weight": 100.0,
 		},
 	],
-	"customGen": {},
+	"customGen": { 
+    "stoneGen": {
+      "minecraft:bedrock": [
+        {
+          "id": "minecraft:stone",
+          "weight": 40.0
+        },
+        {
+          "id": "minecraft:diorite",
+          "weight": 20.0
+        },
+        {
+          "id": "minecraft:andesite",
+          "weight": 20.0
+        },
+        {
+          "id": "minecraft:granite",
+          "weight": 20.0
+        }
+      ]
+    }},
  "advanced": {
     "minecraft:lava": {
       "create:honey": {

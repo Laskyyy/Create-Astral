@@ -33,22 +33,13 @@ com.terraformersmc.modmenu.gui.ModsScreen {
 me.shedaniel.clothconfig2.gui.ClothConfigScreen {
 }
 
-net.minecraft.class_429 {
-}
-
 net.minecraft.class_6777 {
-}
-
-net.minecraft.class_440 {
 }
 
 me.flashyreese.mods.reeses_sodium_options.client.gui.SodiumVideoOptionsScreen {
 }
 
 net.coderbot.iris.gui.screen.ShaderPackScreen {
-}
-
-net.minecraft.class_458 {
 }
 
 net.minecraft.class_4288 {
@@ -78,6 +69,18 @@ net.minecraft.class_6599 {
 de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen {
 }
 
+net.minecraft.class_433 {
+}
+
 net.minecraft.class_442 {
+}
+
+net.minecraft.class_429 {
+}
+
+net.minecraft.class_440 {
+}
+
+net.minecraft.class_458 {
 }
 

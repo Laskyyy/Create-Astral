@@ -3,14 +3,14 @@ type = fancymenu_layout
 layout-meta {
   identifier = main_menu_image_credits
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1715277381779
+  last_edited_time = 1727300295850
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  custom_menu_title = Mainmenu background image credits
-  [loading_requirement_container_meta:b9e3afa3-0b34-4ba7-b89b-0ff05248d459-1715277147790] = [groups:][instances:]
+  custom_menu_title = Create: Astral Credits
+  [loading_requirement_container_meta:ddcbd160-d83e-47d0-83ad-8f23cf591b0b-1727299964454] = [groups:][instances:]
 }
 
 customization {
@@ -23,11 +23,13 @@ scroll_list_customization {
   render_scroll_list_header_shadow = true
   render_scroll_list_footer_shadow = true
   show_scroll_list_header_footer_preview_in_editor = false
+  repeat_scroll_list_header_texture = false
+  repeat_scroll_list_footer_texture = false
 }
 
 element {
   interactable = true
-  source = Background image credit (discord usernames):%n%%n%@captainbigfoot214 - Bar on Sister Server%n%@jamiscus - Moon Lander%n%@vilkki8 - Rusted Satellite Dish%n%@zordlistair - Underground Lava Operation%n%@steveyang137 - Ruined Guard Monument%n%@impact_null - New Zeno Manor on Official Server%n%@master_cmk_83180 - Lava Tanks%n%@kayra5138 - Train Station on Official Server%n%@kilo - Mountainside Base
+  source = Create Astral Significant Contribution:%n%@laskyyy - Laskyyy%n%@ethanicuss - Ethanicuss%n%@erdragh - Erdragh%n%@best_lizard - LizardLeliel%n%@ieaturkneecaps - Winter%n%@konsola5 - KonSola5%n%@greenoxygen - GreenOxygen%n%@infern0_b0b - Infern0_b0b%n%@thespokesman - The Spokesman%n%@arc25275 - Arc25275%n%@sarixinthehouse_ - Sarixinthehouse_%n%@theshortman_ - THE Shortman%n%@jamiscus - Jamiscus%n%@theoverlycaffeinatedtrashpanda - Local Pet Raccoon%n%@_xetroo - DAMEK234%n%@the_pinsey - Pins3y%n%@xeloboyo - Xelo%n%@koncz314 - Koncz%n%@shai1n - ShaiN%n%@thebcwonder - TheBCWonder%n%@miko_boi - Miko%n%@definedentity - DefinedEntity a.k.a Astralopedia:tm:%n%@apepper - A Pepper%n%@dugmans - Tiptopper
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -56,10 +58,10 @@ element {
   fade_in = false
   fade_in_speed = 1.0
   anchor_point = mid-centered
-  x = -132
-  y = -63
-  width = 264
-  height = 127
+  x = -290
+  y = -138
+  width = 298
+  height = 287
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -73,7 +75,11 @@ element {
   [executable_block:059d60fe-f637-472d-8181-0c50edf16d9b-1706720794956][type:generic] = [executables:9969d8d3-b682-4532-881a-7cea0b0f1233-1706720887122;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
   label = Close Credits
+  navigatable = true
   element_type = custom_button
   instance_identifier = 86d04acd-c718-4ad2-9177-e970a6eb8875-1706720794956
   appearance_delay = no_delay
@@ -90,5 +96,47 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = 86b6aba7-8541-47a5-8561-59f7eaf6bab1-1706720794956
   [loading_requirement_container_meta:86b6aba7-8541-47a5-8561-59f7eaf6bab1-1706720794956] = [groups:][instances:]
+}
+
+element {
+  interactable = true
+  source = Structure Contest Contributors:%n%Alpvla, Ari_1, DoktorPills, Gamefather, Ghostlyplays, Justin, JustPhm_, KonSola5, Lina, Lizard, Lost_Lorf, Nikolaos1811, Rshtg7776, Sadden, Scaelux, Tangerine, Teno, Vilkki8, 三百块的痛%n%%n%Menu Background Image Credit:%n%@captainbigfoot214 - Bar on Sister Server%n%@jamiscus - Moon Lander%n%@vilkki8 - Rusted Satellite Dish%n%@zordlistair - Underground Lava Operation%n%@steveyang137 - Ruined Guard Monument%n%@impact_null - New Zeno Manor on Official Server%n%@master_cmk_83180 - Lava Tanks%n%@kayra5138 - Train Station on Official Server%n%@kilo - Mountainside Base
+  source_mode = direct
+  shadow = true
+  scale = 1.0
+  base_color = #FFFFFFFF
+  text_border = 2
+  line_spacing = 2
+  enable_scrolling = true
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  code_block_single_color = #737373FF
+  code_block_multi_color = #565656FF
+  headline_line_color = #A9A9A9FF
+  separation_line_color = #A9A9A9FF
+  hyperlink_color = #0771FCFF
+  quote_color = #818181FF
+  quote_indent = 8.0
+  quote_italic = false
+  bullet_list_dot_color = #A9A9A9FF
+  bullet_list_indent = 8.0
+  bullet_list_spacing = 3.0
+  parse_markdown = false
+  element_type = text_v2
+  instance_identifier = c474a0c7-39e7-4347-9d42-968846b9f4b0-1727298410703
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = 234
+  y = -136
+  width = 295
+  height = 252
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 653c5bc1-d6fa-4e03-9d65-802b6c4ebb0e-1706720753917
+  [loading_requirement_container_meta:653c5bc1-d6fa-4e03-9d65-802b6c4ebb0e-1706720753917] = [groups:][instances:]
 }
 
