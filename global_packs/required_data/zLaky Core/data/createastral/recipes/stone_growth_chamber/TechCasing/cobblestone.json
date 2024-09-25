@@ -6,8 +6,8 @@
 		{
 			"type": "custommachinery:structure",
 			"keys": {
-				"a": "create:andesite_casing",
-				"l": "minecraft:lava",
+				"a": "techreborn:basic_machine_frame",
+				"l": "create:blaze_burner{fuelLevel:1}",
 				"g": "minecraft:glass"
 			},
 			"pattern": [
@@ -30,14 +30,14 @@
 		},
 		{
 			"type": "custommachinery:item",
-			"item": "ad_astra:mercury_cobblestone",
+			"item": "minecraft:andesite",
 			"amount": 1,
 			"mode": "output"
 		},
 		{
 			"type": "custommachinery:dimension",
-			"filter": "ad_astra:mercury_orbit",
-			"blacklist": false
+			"filter": ["ad_astra:moon_orbit", "ad_astra:mars_orbit", "ad_astra:venus_orbit", "ad_astra:glacio_orbit", "ad_astra:mercury_orbit"],
+			"blacklist": true
 		}
 	]
 }

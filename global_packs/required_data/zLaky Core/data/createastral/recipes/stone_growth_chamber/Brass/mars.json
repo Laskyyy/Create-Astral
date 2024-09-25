@@ -1,12 +1,12 @@
 {
 	"type": "custommachinery:custom_machine",
 	"machine": "createastral:stone_growth_chamber",
-	"time": 10,
+	"time": 5,
 	"requirements": [
 		{
 			"type": "custommachinery:structure",
 			"keys": {
-				"a": "create:andesite_casing",
+				"a": "create:brass_casing",
 				"l": "minecraft:lava",
 				"g": "minecraft:glass"
 			},

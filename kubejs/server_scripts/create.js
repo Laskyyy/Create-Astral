@@ -36,7 +36,6 @@ function millingRecipes(event) {
         ["minecraft:basalt", "create:copper_nugget", 0.4],
         ["minecraft:blackstone", "create:zinc_nugget", 0.5],
         ["minecraft:andesite", "techreborn:tin_nugget", 0.5],
-        ["minecraft:granite", "create:copper_nugget", 0.5],
         ["minecraft:flint", "techreborn:andesite_dust", 1],
         ["minecraft:iron_nugget", "techreborn:andesite_dust", 0.75],
         ["minecraft:tube_coral_block", "2x minecraft:blue_dye", 1],
@@ -236,14 +235,14 @@ function crushingRecipes(event) {
                 ["minecraft:warped_fungus", 0.25],
             ],
         },
-				{
+        {
             input: "minecraft:nether_wart_block",
             outputs: [
                 ["minecraft:crimson_roots", 1],
                 ["minecraft:nether_wart", 0.25],
                 ["minecraft:crimson_fungus", 0.25],
             ],
-				},
+        },
         {
             input: "minecraft:dripstone_block",
             outputs: [
@@ -356,28 +355,31 @@ function crushingRecipes(event) {
         },
         {
             input: "yttr:ruined_cobblestone",
-            outputs: [["yttr:rubble", 1],
-								["yttr:rubble", 0.75],
-								["tconstruct:debris_nugget", 0.1]
-						],
+            outputs: [
+                ["yttr:rubble", 1],
+                ["yttr:rubble", 0.75],
+                ["tconstruct:debris_nugget", 0.1],
+            ],
         },
         {
             input: "yttr:rubble",
-            outputs: [["tconstruct:debris_nugget", 1],
-								["createastral:stone_dust", 1],
-								["minecraft:netherite_scrap", 0.25],
-								["createbigcannons:steel_scrap", 0.1],
-								["createbigcannons:bronze_scrap", 0.1],
-						],
+            outputs: [
+                ["tconstruct:debris_nugget", 1],
+                ["techreborn:andesite_dust", 1],
+                ["minecraft:netherite_scrap", 0.25],
+                ["createbigcannons:steel_scrap", 0.1],
+                ["createbigcannons:bronze_scrap", 0.1],
+            ],
         },
         {
             input: "createastral:monazite_crystal",
-            outputs: [["yttr:neodymium_dust", 1],
-								["createastral:crushed_raw_gadolinite", 1],
-								["yttr:neodymium_dust", 0.75],
-								["createastral:crushed_raw_gadolinite", 0.5],
-                                ["create:crushed_raw_iron", 0.5],
-						],
+            outputs: [
+                ["yttr:neodymium_dust", 1],
+                ["createastral:crushed_raw_gadolinite", 1],
+                ["yttr:neodymium_dust", 0.75],
+                ["createastral:crushed_raw_gadolinite", 0.5],
+                ["create:crushed_raw_iron", 0.5],
+            ],
         },
     ].forEach((recipe) => {
         let cleanoutputs = [];
@@ -404,14 +406,6 @@ function itemApplication(event) {
         {
             ingredients: [{ item: "techreborn:basic_machine_casing" }, { item: "ad_astra:steel_plate" }],
             results: [{ item: "techreborn:advanced_machine_casing" }],
-        },
-        {
-            ingredients: [{ item: "techreborn:advanced_machine_frame" }, { item: "techreborn:machine_parts" }],
-            results: [{ item: "techreborn:industrial_machine_frame" }],
-        },
-        {
-            ingredients: [{ item: "techreborn:basic_machine_frame" }, { item: "techreborn:lead_plate" }],
-            results: [{ item: "techreborn:advanced_machine_frame" }],
         },
         {
             ingredients: [{ item: "techreborn:basic_machine_casing" }, { item: "create:sturdy_sheet" }],
@@ -631,7 +625,7 @@ function sequencedAssemblyRecipes(event) {
             .transitionalItem("ad_astra:calorite_engine")
             .loops(5);
 
-            event.recipes
+        event.recipes
             .createSequencedAssembly(
                 [
                     // begin
@@ -754,7 +748,7 @@ function sequencedAssemblyRecipes(event) {
                     ]),
                     event.recipes.createFilling("createastral:incomplete_advanced_machine_frame", [
                         "createastral:incomplete_advanced_machine_frame",
-                        { fluid: "kubejs:blast-resistant_cement", amount: BUCKET },
+                        { fluid: "kubejs:blast-resistant_cement", amount: 200 * mB },
                     ]),
                     event.recipes.createDeploying("createastral:incomplete_advanced_machine_frame", [
                         "createastral:incomplete_advanced_machine_frame",
@@ -1418,9 +1412,7 @@ function mixingRecipes(event) {
     [
         {
             output: "16x create:blaze_cake",
-            input: ["create:blaze_cake_base",
-                "yttr:delicace",
-                { fluid: "kubejs:metabolic_broth", amount: BUCKET / 2 }],
+            input: ["create:blaze_cake_base", "yttr:delicace", { fluid: "kubejs:metabolic_broth", amount: BUCKET / 2 }],
             heat: "superheated",
             time: 100,
         },
@@ -2333,49 +2325,31 @@ function mixingRecipes(event) {
         },
         {
             output: "yttr:ruined_cobblestone",
-            input: [
-                "minecraft:cobblestone",
-                "yttr:rubble"
-            ],
+            input: ["minecraft:cobblestone", "yttr:rubble"],
             heat: "",
             time: 250,
         },
         {
             output: "yttr:wasteland_stone",
-            input: [
-                "minecraft:stone",
-                "yttr:rubble",
-                "yttr:rubble"
-            ],
+            input: ["minecraft:stone", "yttr:rubble", "yttr:rubble"],
             heat: "",
             time: 200,
         },
         {
             output: "yttr:wasteland_dirt",
-            input: [
-                "minecraft:sand",
-                "yttr:rubble",
-                "yttr:rubble"
-            ],
+            input: ["minecraft:sand", "yttr:rubble", "yttr:rubble"],
             heat: "",
             time: 200,
         },
         {
             output: "yttr:wasteland_log",
-            input: [
-                "minecraft:oak_log",
-                "yttr:rubble",
-                "yttr:rubble"
-            ],
+            input: ["minecraft:oak_log", "yttr:rubble", "yttr:rubble"],
             heat: "",
             time: 200,
         },
         {
             output: "2x minecraft:piglin_banner_pattern",
-            input: [
-                "minecraft:piglin_banner_pattern",
-                "minecraft:paper"
-            ],
+            input: ["minecraft:piglin_banner_pattern", "minecraft:paper"],
             heat: "",
             time: 200,
         },
@@ -2669,7 +2643,7 @@ function mechanicalCraftingRecipes(event) {
                 C: "create:refined_radiance_casing",
                 D: "createastral:subatomic_ingot",
                 E: "astraladditions:fragile_item_2",
-                F: "techreborn:fusion_control_computer",
+                F: "createastral:subatomic_ingot",
                 G: "astraladditions:fragile_item_3",
                 H: "ad_astra:calorite_engine",
                 I: "ad_astra:rocket_fin",
@@ -2751,17 +2725,17 @@ function mechanicalCraftingRecipes(event) {
                 G: "computercraft:computer_advanced",
             },
         },
-        {
-            output: "techreborn:fusion_control_computer",
-            shape: ["DBCBD", "BDCDB", "CCECC", "BDADB", "DABAD"],
-            inputs: {
-                A: "techreborn:industrial_circuit",
-                B: "techreborn:advanced_machine_casing",
-                C: "techreborn:fusion_coil",
-                D: "createaddition:tesla_coil",
-                E: "techreborn:digital_display",
-            },
-        },
+        ///  {
+        ///      output: "techreborn:fusion_control_computer",
+        ///      shape: ["DBCBD", "BDCDB", "CCECC", "BDADB", "DABAD"],
+        ///      inputs: {
+        ///          A: "techreborn:industrial_circuit",
+        ///          B: "techreborn:advanced_machine_casing",
+        ///          C: "techreborn:fusion_coil",
+        ///          D: "createaddition:tesla_coil",
+        ///          E: "techreborn:digital_display",
+        ///      },
+        ///  },
         {
             output: "minecraft:crossbow",
             shape: [" CCA ", "AABDB"],
@@ -2906,15 +2880,15 @@ function mechanicalCraftingRecipes(event) {
                 F: "dustrial_decor:padded_block",
             },
         },
-        {
-            output: "2x techreborn:fusion_coil",
-            shape: ["CCCCC", "CBBBC", "CBDBC", "CBBBC", "CCCCC"],
-            inputs: {
-                B: "ae2:fluix_glass_cable",
-                C: "create:sturdy_sheet",
-                D: "techreborn:advanced_machine_casing",
-            },
-        },
+        ///    {
+        ///        output: "2x techreborn:fusion_coil",
+        ///        shape: ["CCCCC", "CBBBC", "CBDBC", "CBBBC", "CCCCC"],
+        ///        inputs: {
+        ///            B: "ae2:fluix_glass_cable",
+        ///            C: "create:sturdy_sheet",
+        ///            D: "techreborn:advanced_machine_casing",
+        ///        },
+        ///    },
         {
             output: "doodads:slimey_shoes",
             shape: [" D ", "EFE", "ABA", "CGC"],
@@ -3044,6 +3018,10 @@ function compactingRecipes(event) {
         {
             output: "minecraft:calcite",
             inputs: ["3x minecraft:bone_meal", "minecraft:gravel", { fluid: "minecraft:lava", amount: 100 * mB }],
+        },
+        {
+            output: "minecraft:tuff",
+            inputs: ["1x minecraft:iron_nugget", "minecraft:cobblestone", "techreborn:andesite_dust"],
         },
         {
             output: "create:blaze_cake_base",
@@ -3293,9 +3271,7 @@ function compactingRecipes(event) {
         },
         {
             output: "techreborn:carbon_fiber",
-            inputs: [
-                { fluid: "techreborn:carbon", amount: 10125 },
-            ],
+            inputs: [{ fluid: "techreborn:carbon", amount: 10125 }],
         },
         {
             output: ["ae2:calculation_processor_press", "ae2:calculation_processor_press"],
@@ -3326,13 +3302,21 @@ function compactingRecipes(event) {
         .superheated()
         .processingTime(1500);
 
-        event.recipes
-        .createCompacting("yttr:promethium_lump", ["4x yttr:promethium_speck", "yttr:neodymium_dust", { fluid: "kubejs:hellfire", amount: 500 * mB }])
+    event.recipes
+        .createCompacting("yttr:promethium_lump", [
+            "4x yttr:promethium_speck",
+            "yttr:neodymium_dust",
+            { fluid: "kubejs:hellfire", amount: 500 * mB },
+        ])
         .superheated()
         .processingTime(1000);
 
-        event.recipes
-        .createCompacting("yttr:promethium_glob", ["2x yttr:promethium_lump", "yttr:neodymium_disc", { fluid: "kubejs:hellfire", amount: 1000 * mB }])
+    event.recipes
+        .createCompacting("yttr:promethium_glob", [
+            "2x yttr:promethium_lump",
+            "yttr:neodymium_disc",
+            { fluid: "kubejs:hellfire", amount: 1000 * mB },
+        ])
         .superheated()
         .processingTime(1000);
 
@@ -3381,27 +3365,11 @@ function superheatedMixingRecipes(event) {
             ],
             ["astraladditions:fragile_item_2"],
         ],
+        [["tconstruct:ender_slime_crystal", "4x yttr:rubble"], ["yttr:promethium_speck"]],
+        [["4x tconstruct:ender_slime_crystal", "minecraft:golden_apple"], ["doodads:magic_plum"]],
+
         [
-            [
-                "tconstruct:ender_slime_crystal",
-                "4x yttr:rubble",
-            ],
-            ["yttr:promethium_speck"],
-        ],
-        [
-            [
-                "4x tconstruct:ender_slime_crystal",
-                "minecraft:golden_apple",
-            ],
-            ["doodads:magic_plum"],
-        ],
-       
-        [
-            [
-                "tconstruct:ichor_slime_sling",
-                "yttr:delicace",
-                { fluid: "kubejs:metabolic_broth", amount: BUCKET / 2 },
-            ],
+            ["tconstruct:ichor_slime_sling", "yttr:delicace", { fluid: "kubejs:metabolic_broth", amount: BUCKET / 2 }],
             ["tconstruct:ender_slime_sling"],
         ],
         [

@@ -34,60 +34,60 @@ function farmersDelightCuttingChanges(event) {
     // Tech Reborn Rubber Log
     event.custom({
         type: "farmersdelight:cutting",
-        ingredients: [{item: "techreborn:rubber_log"}],
+        ingredients: [{ item: "techreborn:rubber_log" }],
         tool: {
             type: "farmersdelight:tool",
             tag: "c:tools/axes",
         },
-        result: [{item: "techreborn:rubber_log_stripped"}, {item: "farmersdelight:tree_bark"}],
+        result: [{ item: "techreborn:rubber_log_stripped" }, { item: "farmersdelight:tree_bark" }],
         sound: "minecraft:item.axe.strip",
     });
 
     // Ad Astra Glacian Log
     event.custom({
         type: "farmersdelight:cutting",
-        ingredients: [{item: "ad_astra:glacian_log"}],
+        ingredients: [{ item: "ad_astra:glacian_log" }],
         tool: {
             type: "farmersdelight:tool",
             tag: "c:tools/axes",
         },
-        result: [{item: "ad_astra:stripped_glacian_log"}, {item: "farmersdelight:tree_bark"}],
+        result: [{ item: "ad_astra:stripped_glacian_log" }, { item: "farmersdelight:tree_bark" }],
         sound: "minecraft:item.axe.strip",
     });
 
     // Tinkers' Construct Bloodshroom Log
     event.custom({
         type: "farmersdelight:cutting",
-        ingredients: [{item: "tconstruct:bloodshroom_log"}],
+        ingredients: [{ item: "tconstruct:bloodshroom_log" }],
         tool: {
             type: "farmersdelight:tool",
             tag: "c:tools/axes",
         },
-        result: [{item: "tconstruct:stripped_bloodshroom_log"}, {item: "farmersdelight:tree_bark"}],
+        result: [{ item: "tconstruct:stripped_bloodshroom_log" }, { item: "farmersdelight:tree_bark" }],
         sound: "minecraft:item.axe.strip",
     });
 
     // Tinkers' Construct Greenheart Log
     event.custom({
         type: "farmersdelight:cutting",
-        ingredients: [{item: "tconstruct:greenheart_log"}],
+        ingredients: [{ item: "tconstruct:greenheart_log" }],
         tool: {
             type: "farmersdelight:tool",
             tag: "c:tools/axes",
         },
-        result: [{item: "tconstruct:stripped_greenheart_log"}, {item: "farmersdelight:tree_bark"}],
+        result: [{ item: "tconstruct:stripped_greenheart_log" }, { item: "farmersdelight:tree_bark" }],
         sound: "minecraft:item.axe.strip",
     });
 
     // Tinkers' Construct Skyroot Log
     event.custom({
         type: "farmersdelight:cutting",
-        ingredients: [{item: "tconstruct:skyroot_log"}],
+        ingredients: [{ item: "tconstruct:skyroot_log" }],
         tool: {
             type: "farmersdelight:tool",
             tag: "c:tools/axes",
         },
-        result: [{item: "tconstruct:stripped_skyroot_log"}, {item: "farmersdelight:tree_bark"}],
+        result: [{ item: "tconstruct:stripped_skyroot_log" }, { item: "farmersdelight:tree_bark" }],
         sound: "minecraft:item.axe.strip",
     });
 }
@@ -270,9 +270,9 @@ function lizardCH3Changes(event) {
     event.shaped("createaddition:tesla_coil", ["DSD", "USU", "CMC"], {
         D: "ad_astra:desh_ingot",
         S: "createaddition:copper_spool",
-        U: "techreborn:copper_cable",
+        U: "createaddition:copper_wire",
         C: "createaddition:capacitor",
-        M: "techreborn:basic_machine_casing",
+        M: "create:brass_block",
     });
 
     // New Electrum recipe
@@ -369,40 +369,40 @@ function lizardChanges(event) {
     lizardGeologyAlchemyChanges(event);
 }
 
-function portalBlocks(event) {// ethanicuss' portal blockies
-		event.recipes
-            .createSequencedAssembly(
-                [
-                    // begin
-                    "createastral:ancient_stone", // output
-                ],
-                "ad_astra:mars_sand",
-                [
-										event.recipes.createDeploying("createastral:martian_clump", [
-												"createastral:martian_clump",
-												"tconstruct:debris_nugget",
-										]),
-										event.recipes.createFilling("createastral:martian_clump", [
-                        "createastral:martian_clump",
-                        { fluid: "kubejs:shimmer", amount: BUCKET/2 },
-                    ]),
-								]
-            )
-            .transitionalItem("createastral:martian_clump")
-            .loops(1);
+function portalBlocks(event) {
+    // ethanicuss' portal blockies
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "createastral:ancient_stone", // output
+            ],
+            "ad_astra:mars_sand",
+            [
+                event.recipes.createDeploying("createastral:martian_clump", [
+                    "createastral:martian_clump",
+                    "tconstruct:debris_nugget",
+                ]),
+                event.recipes.createFilling("createastral:martian_clump", [
+                    "createastral:martian_clump",
+                    { fluid: "kubejs:shimmer", amount: BUCKET / 2 },
+                ]),
+            ]
+        )
+        .transitionalItem("createastral:martian_clump")
+        .loops(1);
 }
 
 onEvent("recipes", (event) => {
     // Lizard's changes
     lizardChanges(event);
-		portalBlocks(event);
+    portalBlocks(event);
     farmersDelightCuttingChanges(event);
 
     /////// TECH REBORN ACTUAL RECIPES //////
 
     //Tinker's Construct Reworking (New fluids and recipes)
     //Tier 2 and 3 materials
-
 
     event.shaped("tconstruct:seared_fuel_tank", ["CCC", "BDB", "AAA"], {
         A: "tconstruct:seared_bricks",
@@ -465,7 +465,7 @@ onEvent("recipes", (event) => {
         E: "create:electron_tube",
     });
 
-    event.shaped("automobility:auto_mechanic_table", ["ABBBBA", "BCDDCB", "BD  EB","BD  EB", "BCEECB","ABBBBA"], {
+    event.shaped("automobility:auto_mechanic_table", ["ABBBBA", "BCDDCB", "BD  EB", "BD  EB", "BCEECB", "ABBBBA"], {
         A: "yttr:yttrium_block",
         B: "yttr:yttrium_plating",
         C: "createastral:promethium_atomic_battery",
@@ -759,14 +759,14 @@ onEvent("recipes", (event) => {
         A: "yttr:rubble",
         B: "minecraft:stone",
     });
-    event.shaped("createastral:promethium_atomic_battery", ["CAC","BDB","CEC"], {
+    event.shaped("createastral:promethium_atomic_battery", ["CAC", "BDB", "CEC"], {
         A: "techreborn:lithium_ion_battery",
         B: "techreborn:machine_parts",
         C: "yttr:armor_plating",
         D: "createastral:subatomic_ingot",
         E: "yttr:promethium_glob",
     });
-		
+
     // createdeco sheet metal blocks
     event.stonecutting("2x createdeco:copper_sheet_metal", "create:copper_sheet");
     event.stonecutting("2x createdeco:andesite_sheet_metal", "create:andesite_alloy");
@@ -853,9 +853,6 @@ onEvent("recipes", (event) => {
     event.blasting("tconstruct:scorched_table", "tconstruct:seared_table");
     event.smoking("campanion:cooked_marshmallow", "campanion:marshmallow");
     event.smoking("campanion:blackened_marshmallow", "campanion:cooked_marshmallow");
-
-
-
 
     event.smelting("minecraft:leather", "minecraft:rotten_flesh").xp(2.0);
     event.smelting("techreborn:tin_ingot", "create:crushed_raw_tin");
@@ -1042,19 +1039,18 @@ onEvent("recipes", (event) => {
         S: "createastral:synthetic_slime",
     });
 
-    event.shaped("techreborn:lightning_rod",
-        ["SRS","DBD","CCC"],{
-            S: "techreborn:silver_plate",
-            R: "minecraft:lightning_rod",
-            D: "techreborn:diamond_plate",
-            B: "techreborn:red_cell_battery",
-            C: "techreborn:basic_machine_casing"
-        })
+    event.shaped("techreborn:lightning_rod", ["SRS", "DBD", "CCC"], {
+        S: "techreborn:silver_plate",
+        R: "minecraft:lightning_rod",
+        D: "techreborn:diamond_plate",
+        B: "techreborn:red_cell_battery",
+        C: "techreborn:basic_machine_casing",
+    });
 
-    event.shaped("techreborn:refined_iron_fence",
-        ["BSB","BSB"],
-        {B: "minecraft:iron_block",
-        S: "createaddition:iron_rod"})
+    event.shaped("techreborn:refined_iron_fence", ["BSB", "BSB"], {
+        B: "minecraft:iron_block",
+        S: "createaddition:iron_rod",
+    });
 
     event.shaped(
         Item.of("custommachinery:custom_machine_item", {
@@ -1062,9 +1058,21 @@ onEvent("recipes", (event) => {
         }),
         ["CCC", "DED", "CCC"],
         {
-            D: "techreborn:insulated_copper_cable",
+            D: "createaddition:copper_wire",
             E: "phonos:redstone_chip",
             C: "create:copper_casing",
+        }
+    );
+
+    event.shaped(
+        Item.of("custommachinery:custom_machine_item", {
+            machine: "createastral:stone_growth_chamber",
+        }),
+        ["CCC", "DED", "CCC"],
+        {
+            D: "minecraft:copper_sheet",
+            E: "minecraft:water_bucket",
+            C: "create:andesite_casing",
         }
     );
 
@@ -1278,10 +1286,10 @@ onEvent("recipes", (event) => {
 
     /// Stuff Laky CBA updating to new format from experimental yet
 
-    event.remove({output: "techreborn:sulfur_dust"});
-    event.remove({output: "techreborn:sulfur_small_dust"});
-    event.remove({output: "techreborn:sulfur"});
-    event.remove({output: "techreborn:saltpeter_dust"});
+    event.remove({ output: "techreborn:sulfur_dust" });
+    event.remove({ output: "techreborn:sulfur_small_dust" });
+    event.remove({ output: "techreborn:sulfur" });
+    event.remove({ output: "techreborn:saltpeter_dust" });
     event.remove({
         input: "minecraft:soul_soil",
         output: "techreborn:coal_dust",
@@ -1367,14 +1375,14 @@ onEvent("morejs.villager.trades", (event) => {
         ["techreborn:metallurgist", 4, ["9x minecraft:emerald"], "create:sturdy_sheet"],
         ["techreborn:metallurgist", 5, ["12x minecraft:emerald"], "create:propeller"],
         ["techreborn:metallurgist", 5, ["14x minecraft:emerald"], "create:brass_hand"],
-        ["techreborn:electrician", 1, ["2x create:andesite_alloy"], "createaddition:copper_wire"], 
-        ["techreborn:electrician", 2, ["3x minecraft:flint"], "minecraft:redstone"], 
-        ["techreborn:electrician", 2, ["2x create:andesite_alloy"], "createaddition:gold_wire"], 
-        ["techreborn:electrician", 3, ["6x minecraft:flint"], "minecraft:repeater"], 
+        ["techreborn:electrician", 1, ["2x create:andesite_alloy"], "createaddition:copper_wire"],
+        ["techreborn:electrician", 2, ["3x minecraft:flint"], "minecraft:redstone"],
+        ["techreborn:electrician", 2, ["2x create:andesite_alloy"], "createaddition:gold_wire"],
+        ["techreborn:electrician", 3, ["6x minecraft:flint"], "minecraft:repeater"],
         ["techreborn:electrician", 4, ["32x create:andesite_alloy"], "computercraft:computer_normal"],
-        ["techreborn:electrician", 4, ["5x create:andesite_alloy"], "computercraft:cable"], 
+        ["techreborn:electrician", 4, ["5x create:andesite_alloy"], "computercraft:cable"],
         ["techreborn:electrician", 5, ["10x create:andesite_alloy"], "minecraft:comparator"],
-        ["techreborn:electrician", 5, ["10x create:andesite_alloy"], "minecraft:observer"]
+        ["techreborn:electrician", 5, ["10x create:andesite_alloy"], "minecraft:observer"],
     ];
 
     vanillaTradesToRemove.forEach((trade) => {
@@ -1407,11 +1415,11 @@ onEvent("recipes", (event) => {
     //adding composting recipes for coral variants
     onEvent("recipes.compostables", (event) => {
         const coral = [
-            {type: "tube"},
-            {type: "brain"},
-            {type: "bubble"},
-            {type: "fire"},
-            {type: "horn"},
+            { type: "tube" },
+            { type: "brain" },
+            { type: "bubble" },
+            { type: "fire" },
+            { type: "horn" },
         ].forEach((coral) => {
             //normal coral
             event.add("minecraft:" + coral.type + "_coral", 0.3);
