@@ -3,8 +3,8 @@
     "start_pool": "astralrails:contest/orbit",
     "size": 7
   },
-  "biomes": "ad_astra:orbit",
-  "adapt_noise":true,
+  "biomes": "#astralrails:has_structure/orbit",
+  "adapt_noise":false,
   "spawn_overrides": {
   },
   "type": "minecraft:bastion_remnant"

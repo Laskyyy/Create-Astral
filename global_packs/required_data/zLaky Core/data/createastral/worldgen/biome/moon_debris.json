@@ -29,12 +29,18 @@
       },
       {
       	"type": "astraladditions:phast",
-      	"weight": 1,
+      	"weight": 2,
       	"minCount": 1,
       	"maxCount": 2
       },
       {
       	"type": "astraladditions:moonman",
+      	"weight": 1,
+      	"minCount": 1,
+      	"maxCount": 1
+      },
+      {
+      	"type": "astraladditions:hemogiant",
       	"weight": 1,
       	"minCount": 1,
       	"maxCount": 1
@@ -62,7 +68,8 @@
       
     ],
     [
-      "createastral:debris_pillar"
+      "createastral:debris_pillar",
+			"createastral:moonset_crystal"
     ]
   ]
 }
