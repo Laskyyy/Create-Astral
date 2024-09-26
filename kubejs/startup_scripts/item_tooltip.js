@@ -5,6 +5,10 @@ onEvent("item.tooltip", (e) => {
     hasFired = true;
     const tooltips = [
         {
+            item: "createastral:laskinium_pill",
+            tooltip: "makes you go zoom but make you high",
+        },
+        {
             item: "createastral:swift_andesite",
             tooltip: "Place below a block to grant it a speed boost similar to andesite pavement.",
         },
@@ -264,27 +268,27 @@ onEvent("item.tooltip", (e) => {
         },
         {
             item: "createastral:gyrodyne_blueprint",
-            tooltip: 'An ancient schematic from a lost civilisation. Perhaps it can be found in old facilities?',
+            tooltip: "An ancient schematic from a lost civilisation. Perhaps it can be found in old facilities?",
         },
         {
             item: "createastral:quadrocopter_blueprint",
-            tooltip: 'An ancient schematic from a lost civilisation. Perhaps it can be found in old facilities?',
+            tooltip: "An ancient schematic from a lost civilisation. Perhaps it can be found in old facilities?",
         },
         {
             item: "createastral:airship_blueprint",
-            tooltip: 'An ancient schematic from a lost civilisation. Perhaps it can be found in old facilities?',
+            tooltip: "An ancient schematic from a lost civilisation. Perhaps it can be found in old facilities?",
         },
         {
             item: "createastral:biplane_blueprint",
-            tooltip: 'An ancient schematic from a lost civilisation. Perhaps it can be found in old facilities?',
+            tooltip: "An ancient schematic from a lost civilisation. Perhaps it can be found in old facilities?",
         },
         {
             item: "astralfoods:shimmered_rabbit_stew",
-            tooltip: 'Suggested by NikWas!',
+            tooltip: "Suggested by NikWas!",
         },
         {
             item: "astralfoods:astral_sauce",
-            tooltip: 'Where did the bowl come? The singularity can fabricate them of course!',
+            tooltip: "Where did the bowl come? The singularity can fabricate them of course!",
         },
     ];
 
@@ -325,9 +329,7 @@ onEvent("item.tooltip", (e) => {
         }
         if (e.isShift()) {
             text.add(1, [
-                Text.of(
-                    "Breaks when held in player inventories, it must be moved with logistical methods!"
-                ).red(),
+                Text.of("Breaks when held in player inventories, it must be moved with logistical methods!").red(),
             ]);
         }
     });
@@ -337,9 +339,7 @@ onEvent("item.tooltip", (e) => {
         }
         if (e.isShift()) {
             text.add(1, [
-                Text.of(
-                    "Breaks when held in player inventories, it must be moved with logistical methods!"
-                ).red(),
+                Text.of("Breaks when held in player inventories, it must be moved with logistical methods!").red(),
             ]);
         }
     });
@@ -349,9 +349,7 @@ onEvent("item.tooltip", (e) => {
         }
         if (e.isShift()) {
             text.add(1, [
-                Text.of(
-                    "Breaks when held in player inventories, it must be moved with logistical methods!"
-                ).red(),
+                Text.of("Breaks when held in player inventories, it must be moved with logistical methods!").red(),
             ]);
         }
     });
@@ -362,9 +360,7 @@ onEvent("item.tooltip", (e) => {
     // Standard drawer up/downgrades
     e.add(
         "extended_drawers:downgrade",
-        Text.gray("Reduces the Drawer Slot capacity to ")
-            .append(Text.red("64"))
-            .append(Text.gray("."))
+        Text.gray("Reduces the Drawer Slot capacity to ").append(Text.red("64")).append(Text.gray("."))
     );
     e.add(
         "minecraft:lava_bucket",
@@ -374,9 +370,7 @@ onEvent("item.tooltip", (e) => {
     );
     e.add(
         "minecraft:black_dye",
-        Text.gray("Shift-Right-click the Drawer Slot to ")
-            .append(Text.white("hide the label"))
-            .append(Text.gray("."))
+        Text.gray("Shift-Right-click the Drawer Slot to ").append(Text.white("hide the label")).append(Text.gray("."))
     );
     e.add(
         "extended_drawers:lock",
