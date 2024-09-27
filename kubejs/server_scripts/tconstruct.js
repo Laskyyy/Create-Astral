@@ -165,6 +165,18 @@ onEvent("recipes", (event) => {
             result: "createastral:gold_casted_rocket_fin",
             cooling_time: 30,
             cast: ["createastral:fragile_rocket_fin", true],
+        },
+        {
+            fluid: ["tconstruct:molten_steel", INGOT],
+            result: "astraladditions:steel_ring",
+            cooling_time: 100,
+            cast: ["astraladditions:ring_gold_cast", false],
+        },
+        {
+            fluid: ["kubejs:shimmer", NUGGET*3],
+            result: "astraladditions:shimmer_lily",
+            cooling_time: 20,
+            cast: ["minecraft:lily_of_the_valley", true],
         }
     ].forEach((recipe) => {
         event.custom({
