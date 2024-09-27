@@ -14,6 +14,7 @@ onEvent("recipes", (event) => {
     farmersDelightIntegration(event);
     superheatedMixingRecipes(event);
     sandpaperRecipes(event);
+    deployingRecipes(event);
 });
 
 function millingRecipes(event) {
@@ -50,6 +51,7 @@ function millingRecipes(event) {
         ["createastral:broken_fragile_rocket_fin", "16x create:powdered_obsidian", 1],
         ["kubejs:broken_fragile_sheet_block", "16x create:powdered_obsidian", 1],
         ["kubejs:broken_fire_resistant_fragile_sheet_block", "16x create:powdered_obsidian", 1],
+        ["astraladditions:shimmer_blaze_rod", "2x astraladditions:shimmer_blaze_powder", 1],
     ].forEach((recipe) => {
         event.recipes.createMilling([Item.of(recipe[1]).withChance(recipe[2])], recipe[0]);
     });
@@ -430,6 +432,23 @@ function sequencedAssemblyRecipes(event) {
     //Honestly just good luck in figuring this out its too complex to
     //document in an effective way
     const inc_sturdy_sheet = "create:unprocessed_obsidian_sheet";
+		event.recipes
+        .createSequencedAssembly([Item.of("astraladditions:orbital_navigation_ring").withChance(1)], "astraladditions:blazed_steel_ring", [
+            event.recipes.createFilling("createastral:blazed_steel_ring", [
+                "astraladditions:blazed_steel_ring",
+                { fluid: "tconstruct:molten_steel", amount: NUGGET },
+            ]),
+            event.recipes.createDeploying("astraladditions:blazed_steel_ring", [
+                "astraladditions:blazed_steel_ring",
+                "createastral:navigation_mechanism",
+            ]),
+            event.recipes.createDeploying("astraladditions:blazed_steel_ring", [
+                "astraladditions:blazed_steel_ring",
+                "createastral:astral_conduit",
+            ]),
+        ])
+        .transitionalItem("astraladditions:blazed_steel_ring")
+        .loops(1);
     event.recipes
         .createSequencedAssembly([Item.of("createastral:laskinium_pill").withChance(1)], "estrogen:estrogen_pill", [
             event.recipes.createFilling("estrogen:estrogen_pill", [
@@ -1402,6 +1421,23 @@ function fillingRecipes(event) {
     ]);
 }
 
+function deployingRecipes(event) {
+		[
+				{
+            output: "astraladditions:oh-no",
+            basin_input: "astraladditions:moonblazed_orb",
+            deployer_input: "astraladditions:orbital_navigation_ring"
+        },
+		].forEach((recipe) => {
+			event.recipes
+        .createSequencedAssembly([Item.of(recipe.output).withChance(1)], recipe.basin_input, [
+						event.recipes.createDeploying(recipe.basin_input, [recipe.basin_input, recipe.deployer_input])
+        ])
+        .transitionalItem(recipe.basin_input)
+        .loops(1);
+		});
+}
+
 function mixingRecipes(event) {
     // Biofuel rework
 
@@ -2351,7 +2387,46 @@ function mixingRecipes(event) {
             output: "2x minecraft:piglin_banner_pattern",
             input: ["minecraft:piglin_banner_pattern", "minecraft:paper"],
             heat: "",
-            time: 200,
+            time: 150,
+        },
+        {
+            output: "4x astraladditions:cometball",
+            input: ["3x astraladditions:moonset_crystal"],
+            heat: "",
+            time: 150,
+        },
+        {
+            output: "astraladditions:blazed_steel_ring",
+            input: ["astraladditions:steel_ring", "astraladditions:shimmer_blaze_powder", 
+								{
+                    fluid: "tconstruct:blazing_blood",
+                    amount: INGOT,
+                },
+						],
+            heat: "heated",
+            time: 400,
+        },
+        {
+            output: "astraladditions:moonblazed_orb",
+            input: ["astraladditions:cometball", "minecraft:ender_eye", "astraladditions:shimmer_blaze_powder", 
+								{
+                    fluid: "tconstruct:blazing_blood",
+                    amount: BUCKET,
+                },
+						],
+            heat: "",
+            time: 500,
+        },
+        {
+            output: "astraladditions:oh-no",
+            input: ["astraladditions:oh-no_broken", "createastral:astral_conduit", 
+								{
+                    fluid: "tconstruct:blazing_blood",
+                    amount: BUCKET,
+                },
+						],
+            heat: "heated",
+            time: 500,
         },
     ].forEach((recipe) => {
         event.recipes
@@ -2583,6 +2658,18 @@ function mechanicalCraftingRecipes(event) {
     // Shape: Array of rows of inputs based on letters assigned
     // Inputs: Object with letters assigned to input items, to be used in the shape
     [
+				{
+            output: "astraladditions:e_guitar",
+            shape: ["PCC  ", "PWIWT", "PCC A"],
+            inputs: {
+                A: "createastral:radiant_axe",
+                P: "createastral:calorite_pin",
+                C: "ad_astra:calorite_plate",
+								W: "createaddition:iron_wire",
+								I: "techreborn:industrial_circuit",
+								T: "createaddition:tesla_coil"
+            },
+        },
         {
             output: "astraladditions:chromatic_vacuum",
             shape: [" B ", "ACA", "AAA"],
@@ -2972,6 +3059,15 @@ function mechanicalCraftingRecipes(event) {
             shape: ["FFFF", "FFFF", "FFFF", "FFFF"],
             inputs: {
                 F: "createastral:fragile_sheet",
+            },
+        },
+				{
+            output: "astraladditions:pylon",
+            shape: [" C ", "CEC", "CNC", " C "],
+            inputs: {
+                C: "astraladditions:moonset_crystal_block",
+                E: "minecraft:ender_eye",
+                N: "createastral:navigation_mechanism",
             },
         },
     ].forEach((recipe) => {

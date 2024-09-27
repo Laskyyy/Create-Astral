@@ -22,15 +22,15 @@
       },
       {
         "type": "astraladditions:voidtouched_skeleton",
-        "weight": 25,
+        "weight": 1,
         "minCount": 1,
-        "maxCount": 3
+        "maxCount": 1
       },
       {
       	"type": "astraladditions:voidtouched_zombie",
-      	"weight": 35,
+      	"weight": 1,
       	"minCount": 1,
-      	"maxCount": 10
+      	"maxCount": 1
       },
       {
         "type": "ad_astra:star_crawler",
