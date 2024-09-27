@@ -28,7 +28,7 @@ scroll_list_customization {
 
 element {
   interactable = true
-  source = ^^^%n%If you're getting an error when joining a multiplayer server, try rejoining before reporting it as a bug!%n%If you still can't join, please join the Discord (link can be found on the left hand side of the main menu) and report it in the #bug-reports channel!%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"astralmenu.multiplayer_error_message.line1"}}%n%{"placeholder":"local","values":{"key":"astralmenu.multiplayer_error_message.line1"}}%n%^^^
   source_mode = direct
   shadow = true
   scale = 1.0

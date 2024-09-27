@@ -3,14 +3,14 @@ type = fancymenu_layout
 layout-meta {
   identifier = main_menu_image_credits
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1727456229413
+  last_edited_time = 1727468019544
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
   custom_menu_title = Create: Astral Credits
-  [loading_requirement_container_meta:21cb4277-8d8a-48ab-9056-5b3d707a3e18-1727456224253] = [groups:][instances:]
+  [loading_requirement_container_meta:6419e738-d767-43aa-abb6-cc92421d053a-1727467788781] = [groups:][instances:]
 }
 
 customization {
@@ -47,7 +47,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = Close Credits
+  label = {"placeholder":"local","values":{"key":"astralmenu.creditsmenu.close"}}
   navigatable = true
   element_type = custom_button
   instance_identifier = 86d04acd-c718-4ad2-9177-e970a6eb8875-1706720794956
@@ -119,7 +119,7 @@ element {
 
 element {
   interactable = true
-  source = Pack Developers
+  source = {"placeholder":"local","values":{"key":"astralmenu.creditsmenu.packdevs.header"}}
   source_mode = direct
   shadow = true
   case_mode = upper
@@ -153,8 +153,8 @@ element {
   advanced_posy = 75
   advanced_width = 220
   advanced_height = 20
-  x = -300
-  y = -158
+  x = -110
+  y = -10
   width = 50
   height = 50
   stretch_x = false
@@ -166,7 +166,7 @@ element {
 
 element {
   interactable = true
-  source = |||%n%Significant Contributors%n%|||
+  source = |||%n%{"placeholder":"local","values":{"key":"astralmenu.creditsmenu.contributors.header"}}%n%|||
   source_mode = direct
   shadow = true
   case_mode = upper
@@ -303,7 +303,7 @@ element {
 
 element {
   interactable = true
-  source = Main Menu Screenshots
+  source = {"placeholder":"local","values":{"key":"astralmenu.creditsmenu.screenshots.header"}}
   source_mode = direct
   shadow = true
   case_mode = upper
@@ -485,7 +485,7 @@ element {
 
 element {
   interactable = true
-  source = |||%n%N.Z. Manor (Official Server)%n%Bar (Sister Server)%n%Moon Lander%n%Train Station (Official Server)%n%Mountainside Base%n%Lava Tanks%n%Ruined Guard Monument%n%Rusted Satellite Dish%n%Underground Lava Operation%n%|||
+  source = |||%n%{"placeholder":"local","values":{"key":"astralmenu.creditsmenu.screenshots.nzmanor"}}%n%{"placeholder":"local","values":{"key":"astralmenu.creditsmenu.screenshots.bar"}}%n%{"placeholder":"local","values":{"key":"astralmenu.creditsmenu.screenshots.lander"}}%n%{"placeholder":"local","values":{"key":"astralmenu.creditsmenu.screenshots.station"}}%n%{"placeholder":"local","values":{"key":"astralmenu.creditsmenu.screenshots.mountain"}}%n%{"placeholder":"local","values":{"key":"astralmenu.creditsmenu.screenshots.tanks"}}%n%{"placeholder":"local","values":{"key":"astralmenu.creditsmenu.screenshots.guard"}}%n%{"placeholder":"local","values":{"key":"astralmenu.creditsmenu.screenshots.satellite"}}%n%{"placeholder":"local","values":{"key":"astralmenu.creditsmenu.screenshots.underground"}}%n%|||
   source_mode = direct
   shadow = true
   scale = 0.8
@@ -530,7 +530,7 @@ element {
 
 element {
   interactable = true
-  source = Structure Designers
+  source = {"placeholder":"local","values":{"key":"astralmenu.creditsmenu.structures.header"}}
   source_mode = direct
   shadow = true
   case_mode = upper
