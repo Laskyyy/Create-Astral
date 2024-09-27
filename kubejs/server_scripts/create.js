@@ -2658,6 +2658,18 @@ function mechanicalCraftingRecipes(event) {
     // Shape: Array of rows of inputs based on letters assigned
     // Inputs: Object with letters assigned to input items, to be used in the shape
     [
+				{
+            output: "astraladditions:e_guitar",
+            shape: ["PCC  ", "PWIWT", "PCC A"],
+            inputs: {
+                A: "createastral:radiant_axe",
+                P: "createastral:calorite_pin",
+                C: "ad_astra:calorite_plate",
+								W: "createaddition:iron_wire",
+								I: "techreborn:industrial_circuit",
+								T: "createaddition:tesla_coil"
+            },
+        },
         {
             output: "astraladditions:chromatic_vacuum",
             shape: [" B ", "ACA", "AAA"],
