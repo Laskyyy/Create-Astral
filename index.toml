@@ -254,7 +254,7 @@ hash = "a241f504b4ae88d6bd8e9857e84b35e7d47806ae02a7b60cf18398ed3fbb9ca4"
 
 [[files]]
 file = "config/fancymenu/assets/accessibilityhover.png"
-hash = "059d308ea7202f4693be953f2b37480ecea97b4c423d7bcc5f6109025631adc9"
+hash = "38f95c4d025814530198d8f16b06985e7a952ee2c8a5137b6a01d79f89bd1701"
 
 [[files]]
 file = "config/fancymenu/assets/create_astral.png"
@@ -266,7 +266,7 @@ hash = "03823d16406bdd8a11a960932101a9729d3c6003336a4aa45e2dee9e3892cdab"
 
 [[files]]
 file = "config/fancymenu/assets/createconfighover.png"
-hash = "ff9aace945cda0bc98dbbee6def027f725cb419b5032b66dd3dc23564f69d4ca"
+hash = "bac8fb3be5adc89fc32e0a7649de68fbff4bc7f618693127b63b06f5eefe1653"
 
 [[files]]
 file = "config/fancymenu/assets/credits.png"
@@ -274,7 +274,7 @@ hash = "ae885f746bef11ff6f6849440b297bc2e62e1f1e30619142300d699482f36172"
 
 [[files]]
 file = "config/fancymenu/assets/creditshover.png"
-hash = "fc34fcefbbd09a925b318f825db85024a8f47680458bad7c420590e24aaaf0dc"
+hash = "2302d3b4ef46f4373c2b431e2046463b5a0bc280b3aa79874b3554e85d1e0fa1"
 
 [[files]]
 file = "config/fancymenu/assets/discord.png"
@@ -282,7 +282,7 @@ hash = "38360beb9d6a593808f77e6abfd7d0c8417d70ac2537e194070b887eb33251fb"
 
 [[files]]
 file = "config/fancymenu/assets/discordhover.png"
-hash = "3cd8665bc9e8046b46c3de384e190d5afd25639f17bc1269e143c259858393a2"
+hash = "e44e0b4867f53c817c0fa282cd516fef48d011b0aa7e47bc97dfb4376175048d"
 
 [[files]]
 file = "config/fancymenu/assets/icons/icon16x16.png"
@@ -302,7 +302,11 @@ hash = "3f95cc2bb628146954a7bc2124076d4aeca9b752f69ffe67244860125d7613c3"
 
 [[files]]
 file = "config/fancymenu/assets/modlisthover.png"
-hash = "76089ba61943e1a237cc0a31af117357078a644c8ef6d06415b7df66981cfb5d"
+hash = "a192383417aaaf4a2b16330e4b7c0e3fd9c24fef44697cf32208d091f0c2955d"
+
+[[files]]
+file = "config/fancymenu/assets/mouse_over.ogg"
+hash = "1b71beae3531d1782a83610b7611a199953e78b7443f815ef74c510ada3b0caf"
 
 [[files]]
 file = "config/fancymenu/assets/multiplayer.png"
@@ -310,7 +314,7 @@ hash = "0fedccec44605a7f4ebb5d8320ae901e3dc1945bb3267320e99e797d0ca79254"
 
 [[files]]
 file = "config/fancymenu/assets/multiplayerhover.gif"
-hash = "53b57ee045b81f0c61161ea20d208ccd3e029fd54b404f3a0edb6448a6eed992"
+hash = "8af6f664c8e505ec62bed62a08ba3ade0dee9d94aa129f69764d8322fc1e0c27"
 
 [[files]]
 file = "config/fancymenu/assets/music.png"
@@ -318,7 +322,11 @@ hash = "bf748b0cc7c9b55694dc235acd641961f82d18068040b46d8b22bbb5c22c44c1"
 
 [[files]]
 file = "config/fancymenu/assets/musichover.png"
-hash = "caeacb53edc2ff75d89852d1586c738e33c345db38987d7580badaefc9ddf6ee"
+hash = "ed6b4112472299d268c68e290ae15f9c10cdbc966fc82c3a81abe3bb048b2531"
+
+[[files]]
+file = "config/fancymenu/assets/notification.gif"
+hash = "9ee82348406822b406100d2be4ddbfee1adbe67103decb10bcff50e0628d2b0c"
 
 [[files]]
 file = "config/fancymenu/assets/npc_theme.ogg"
@@ -330,7 +338,7 @@ hash = "fda8ad1c5f7c7a9ad322f92576f9b981bd08cda91b63cf1aaf1966f72ef07cfa"
 
 [[files]]
 file = "config/fancymenu/assets/optionshover.gif"
-hash = "fb8f1bb3458cfadd4cd9398f335ae32e30919a7720a1973b0c2fce11c9f9255b"
+hash = "76f414bb983047729259fd36d6f1a732bce29fbc3571100e634614a169467eb4"
 
 [[files]]
 file = "config/fancymenu/assets/quitgame.png"
@@ -338,7 +346,7 @@ hash = "a862c8884fb69575a74c623d7704512fe16362328af53634f0777631dbc95b8f"
 
 [[files]]
 file = "config/fancymenu/assets/quitgamehover.gif"
-hash = "587a49ae59edb6ca0e0e362ab3a815c04dc311f95aa32be25cf1a8ebe74457aa"
+hash = "3b5dbf3a4e8939b86c76c5e6d75034e08c6e07e41d1e20bbfdf419adf6c71e7c"
 
 [[files]]
 file = "config/fancymenu/assets/singleplayer.png"
@@ -346,7 +354,7 @@ hash = "aaa5fb0bd070809c960132dd0ca9f80b5da6834eaf5a171bb4cbdc0462ba051c"
 
 [[files]]
 file = "config/fancymenu/assets/singleplayerhover.gif"
-hash = "ff2ce174d3457abfb444171fb1bf5c9233c44fcd17facccf6be08b23ba9b9d28"
+hash = "c7b9542f04485b21a671a87402bfd358005bcea54baa13281c5c6c840f5bc8b6"
 
 [[files]]
 file = "config/fancymenu/assets/uwu.png"
@@ -354,11 +362,19 @@ hash = "8d7ce46d8038ef37e526605538913133dba45657144c228080d1a8ba1e55436d"
 
 [[files]]
 file = "config/fancymenu/custom_gui_screens.txt"
-hash = "2061807f81d92f813d6fdeda7a411826146251f5c2baa887079e2c202dbfa78b"
+hash = "91cfe713fcf681218b388da90282c142a4a4bc06203ae2170556bbe537510bab"
+
+[[files]]
+file = "config/fancymenu/custom_locals/astralmenu/en_us.local"
+hash = "7171b0907640dba1ecfc9cc0d4226f92db357903c0d050bc381021dcf8834cf3"
 
 [[files]]
 file = "config/fancymenu/customizablemenus.txt"
-hash = "ca07c1f44913d2644957b76812e3eab6c6db7d9fd0e6109c0d9c0be57ffc622d"
+hash = "82345259c75fa165daeac4670393f7d30e08c21c011acaf1887976384964e641"
+
+[[files]]
+file = "config/fancymenu/customization/disconnected_screen_layout.txt"
+hash = "6d1ace76d630b0a2bb2484f104e610169e95e452411e25ceb8b975b5f9362729"
 
 [[files]]
 file = "config/fancymenu/customization/loading_screen_layout.txt"
@@ -366,11 +382,15 @@ hash = "626c0d9124b9834dd7fcf5d2a68379802ffbcabb659456586f5ac111c17ef889"
 
 [[files]]
 file = "config/fancymenu/customization/main_menu_image_credits_layout.txt"
-hash = "c087e38fc90abf5350c2d79364376bdbbc9ee93272defbae5f9773ce4c0f95cf"
+hash = "558972c8e1d891888feecf6d377230374b72b5a8f881436fc2bf9df5d4b4cdcd"
+
+[[files]]
+file = "config/fancymenu/customization/modpack_changelog_2.1_layout.txt"
+hash = "0f7eb907935f0889a7383504ad91d19fcb0697f0e4a2fdf085d4433a1b616e8c"
 
 [[files]]
 file = "config/fancymenu/customization/title_screen_layout.txt"
-hash = "5f59d1defa93fbfd427fb322bbfc01ba50d3d639df6bcd50cfcbe98311d34ed5"
+hash = "c9e56d4fea33f7d10f71e4c79f2cd110b45fd95d2689d083a4f9579444bb8dda"
 
 [[files]]
 file = "config/fancymenu/customization/universal_astral_lakes.txt"
@@ -418,7 +438,7 @@ hash = "003a1c89846741e0eb9475089d4ed653896fd08e0b994667fae452b4ad894a72"
 
 [[files]]
 file = "config/fancymenu/options.txt"
-hash = "64d54da78e4dbdc0e9077e3ea9f5066e6ba17f65b879f2ca5443355c9163c6dd"
+hash = "532fbbae287cb1d2454a7f231dfb7bcf0bf4cecd4ddc88005cda8daa722148e5"
 
 [[files]]
 file = "config/fancymenu/slideshows/greg/images/3_dishrainback.jpg"
@@ -474,7 +494,7 @@ hash = "6954379d658fdf496f162792a3244f0f08635858ed4b0553a718a7ef63b8a620"
 
 [[files]]
 file = "config/fancymenu/user_variables.db"
-hash = "07aa5e103920caba259422a42af0356c09ee27ad305383f5c09afe719abbee6d"
+hash = "bd0616dbd61e601519cb98f4394f7dbcdf0f68dcae0a747f11c084ccc7af0130"
 
 [[files]]
 file = "config/farmersdelight.json"
@@ -2229,6 +2249,10 @@ file = "global_packs/required_data/AstralRails/data/astralrails/tags/worldgen/bi
 hash = "ca2f508c067eee0053bc09675eb772afa845541177b47a9dfec03c1b5677cf29"
 
 [[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/tags/worldgen/biome/has_structure/orbit.json"
+hash = "d04afbfe77de341e55ba51c56f178d7a95f1da92d9006e2a5f0a3530a5f43ac0"
+
+[[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/tags/worldgen/biome/has_structure/overworld.json"
 hash = "1fbaf2034b423c3db602e0579cdfe749d2101f1980400d2bb6a11fe87dd23686"
 
@@ -2450,7 +2474,7 @@ hash = "d0e2e382d1f9734ef81c16f24a7dcaffb1dca4a5fda2d537e83525545023f178"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/configured_structure_feature/contest/orbit.json"
-hash = "c8649355bfc340846872fd81d2cfc358edbc94ce6c6006cc48d65c84ff5449d2"
+hash = "f1bf0d6bfcc0cb2c38542899f7efa335e3df43cb14fc232d1675377f5a83f479"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/configured_structure_feature/contest/overworld.json"
@@ -3470,7 +3494,7 @@ hash = "2bc6f53cfc4f91b5443859b892d31e6eac5cef46fcde7109b8c693f13b483504"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/worldgen/biome/lunar_wastelands.json"
-hash = "b52c76ae360ab5d3f4c31b9acb068a8aecb08f99c071cc573e39bb274238b430"
+hash = "bce6ec9d6824f1c290c6832f5340186f9fe5edd421391b2e906a57657eeda997"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/worldgen/biome/martian_canyon_creek.json"
@@ -3695,6 +3719,10 @@ hash = "cc043ec2bbebd63675ccbec13a0e9a07b8d32632d690bf58cf3e5d50c81c902f"
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ae2/tags/worldgen/biome/has_meteorites.json"
 hash = "4c2230a2f252ea1067b6a7e41c1d5cf69d786bfc649d4cd6eaa13ff310a2298f"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/astraladditions/loot_tables/blocks/shimmer_lily.json"
+hash = "bb782e946e9862d0e08e266cc55033e582a01eb6a7f153e5f9c7ad968d7173e7"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/astraladditions/loot_tables/gameplay/fragile_items/fragile_item.json"
@@ -4802,11 +4830,11 @@ hash = "469ae3195bca95f255143eb5885c08027155830adf28fda57755f4147b00f8b5"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/worldgen/biome/devoured_moon_debris.json"
-hash = "3a5f0b0da3ef1a77b500c15a25cc38a7beb937ac066709159a7beea63181e6b6"
+hash = "46056f8f30cf4a64fb514bb581a68042280cc441f5e39659d293f473b575dfb7"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/worldgen/biome/moon_debris.json"
-hash = "333678370ca012955bed04984f2e521ef9b038ab7269c217aec8a0c6db68097c"
+hash = "f66fb2858ae50cde483288f8acffcaac588563b2f11bedcb66f9214d6c16cd66"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/worldgen/configured_feature/crystal_pillar.json"
@@ -4823,6 +4851,10 @@ hash = "b679544b2700f81ec8817f4f8902d6d27b029966b1cd7347b9a54220b63157d5"
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/worldgen/configured_feature/glacio_packed_ice_pockets.json"
 hash = "d16524be1544af73e46af1d6306fb3ef56b9a35386ec3b5de6a0e4ee1de8fcec"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/createastral/worldgen/configured_feature/moonset_crystal.json"
+hash = "bc9d87bb954fdb41f783e4922b09bc913b4bbd577a57b8f7d24e20f924e9dd4a"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/worldgen/configured_feature/oil_lake.json"
@@ -4843,6 +4875,10 @@ hash = "a9624fb1551442cf7aea291f997da9c4511342cbcad375601e139190a0b06aab"
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/worldgen/placed_feature/glacio_packed_ice_pockets.json"
 hash = "a51e74d5cfc7b69af56d48c76e2a13fb121bcc026b053e9ecaf1603497b06ab0"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/createastral/worldgen/placed_feature/moonset_crystal.json"
+hash = "3f3aef49eb6c70a77307a7ebf83f62e00397f86e7a045834ed6ad9f1232046f6"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/worldgen/placed_feature/oil_lake.json"
@@ -14050,11 +14086,11 @@ hash = "cd5c8ccbcbb6fac0913c504b2241f361f6b4b8f422111c934636d101732604d4"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
-hash = "cd70203274ce612cfbea7e081a9a9080be8811f867ffd30cae95fa5feb5d7783"
+hash = "ea0d3cb411db3250bd21ba2bb5c8d52030c2a5a20e935b8fa3a77c1553c9809a"
 
 [[files]]
 file = "kubejs/server_scripts/createaddons.js"
-hash = "632d1ccef91c2c80fa61d75e6153b729ca36620ac4519506531d409881066a23"
+hash = "097297187063d895902c96737a27b0ecbb99b1365ec94777173d74c9080c0f48"
 
 [[files]]
 file = "kubejs/server_scripts/crushing.js"
@@ -14150,7 +14186,7 @@ hash = "393073dffdcfaa332d714a804f636cd5bc5e1725228f7f7c580097b305896bf4"
 
 [[files]]
 file = "kubejs/server_scripts/tconstruct.js"
-hash = "8bd0439b2dbdd387ae3821cb9c17e00baf4df41551933de73012440e7eb4320b"
+hash = "c8cfb58ddccf9cbed395caf928ea77cd5efbf78ada65f3d05a31e2decf143316"
 
 [[files]]
 file = "kubejs/server_scripts/techreborn.js"
@@ -28950,11 +28986,11 @@ hash = "d44dd5067ccfd91a07d43334e38487f61e93f88dde863909f83823de5caa1b13"
 
 [[files]]
 file = "resources/createastral/textures/block/stone_growth_chamber.png"
-hash = "d4a2ef345dd3b4e6fb04a0e6723584ce526a399d8a8a558be4d28983ce89b22f"
+hash = "8f82c97b347dcbe421764c8392eb361e29ecb7bbd1017ed547c535d3d3d2c63e"
 
 [[files]]
 file = "resources/createastral/textures/block/stone_growth_chamber_side.png"
-hash = "eddd1353f2b26c0ffdc40f498186a38892668387757ac4e84c4c8d9b6aecb77f"
+hash = "affd891c9f73fa0b5d06acf86088eddf625035433fb176582f73bd098fe11bcc"
 
 [[files]]
 file = "resources/createastral/textures/block/sturdy_sheet_block.png"
