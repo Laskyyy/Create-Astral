@@ -1,0 +1,103 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = disconnected_screen
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1727377684166
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:c56040fa-d8a6-4e49-9043-b9124aa83fcd-1727377668100] = [groups:][instances:]
+}
+
+customization {
+  action = backgroundoptions
+  keepaspectratio = false
+}
+
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
+  repeat_scroll_list_header_texture = false
+  repeat_scroll_list_footer_texture = false
+}
+
+element {
+  interactable = true
+  source = ^^^%n%If you're getting an error when joining a multiplayer server, try rejoining before reporting it as a bug!%n%If you still can't join, please join the Discord (link can be found on the left hand side of the main menu) and report it in the #bug-reports channel!%n%^^^
+  source_mode = direct
+  shadow = true
+  scale = 1.0
+  base_color = #AAAAAA
+  text_border = 2
+  line_spacing = 2
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  code_block_single_color = #737373FF
+  code_block_multi_color = #565656FF
+  headline_line_color = #A9A9A9FF
+  separation_line_color = #A9A9A9FF
+  hyperlink_color = #0771FCFF
+  quote_color = #818181FF
+  quote_indent = 8.0
+  quote_italic = false
+  bullet_list_dot_color = #A9A9A9FF
+  bullet_list_indent = 8.0
+  bullet_list_spacing = 3.0
+  parse_markdown = true
+  element_type = text_v2
+  instance_identifier = 17e8c353-e3fb-48ad-b791-afe112f8762e-1727377343082
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = element
+  anchor_point_element = 400513
+  x = -1
+  y = 47
+  width = 200
+  height = 40
+  stretch_x = true
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = c0927044-605d-4a3c-ba36-2c7747aed82b-1727377343082
+  [loading_requirement_container_meta:c0927044-605d-4a3c-ba36-2c7747aed82b-1727377343082] = [groups:][instances:]
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = 97493c74-a1a4-45ef-8444-e0e11d358384-1727377293680
+  [executable_block:97493c74-a1a4-45ef-8444-e0e11d358384-1727377293680][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  navigatable = true
+  element_type = vanilla_button
+  instance_identifier = 400513
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = vanilla
+  x = 327
+  y = 253
+  width = 200
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = bc150b50-cc2f-4ac8-b790-fc0d77969eb5-1727377293680
+  [loading_requirement_container_meta:bc150b50-cc2f-4ac8-b790-fc0d77969eb5-1727377293680] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
+  nine_slice_slider_handle = false
+  nine_slice_slider_handle_border_x = 5
+  nine_slice_slider_handle_border_y = 5
+}
+
