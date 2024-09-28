@@ -108,8 +108,8 @@ function farmersdelight(event) {
     event.custom({
         type: "farmersdelight:cooking",
         ingredients: [{ item: "createastral:astral_singularity" }],
-        result: [{ item: "astralfoods:astral_sauce" }],
-        container: [{ item: "minecraft:bowl" }],
+        result: { item: "astralfoods:astral_sauce" },
+        container: { item: "minecraft:bowl" },
         experience: 10.0,
         cookingtime: 360,
     });
@@ -121,19 +121,19 @@ function farmersdelight(event) {
             { item: "astralfoods:quantum_bites" },
             { item: "farmersdelight:raw_pasta" },
         ],
-        result: [{ item: "astralfoods:quantum_pasta" }],
+        result: { item: "astralfoods:quantum_pasta" },
         experience: 8.0,
         cookingtime: 300,
     });
     //yes, these recipes don't work. Please use the temp ones
 }
 
-function sequencedAssemblyRecipes(event) {
+function sequencedAssemblyCooking(event) {
     event.recipes
         .createSequencedAssembly(
             [
                 // output
-                "astralfoods:shimmered_rabbit_stew", // begin
+                Item.of("astralfoods:shimmered_rabbit_stew").withChance(1) // begin
             ],
             "minecraft:bowl",
             [
@@ -144,113 +144,114 @@ function sequencedAssemblyRecipes(event) {
                 event.recipes.createFilling("minecraft:bowl", [
                     "minecraft:bowl",
                     { fluid: "kubejs:shimmer", amount: BUCKET },
-                ]),
+                ])
             ]
         )
         .transitionalItem("minecraft:bowl")
         .loops(1);
 }
-
-event.custom({
-    type: "custommachinery:custom_machine",
-    machine: "astralgenerators:amalgamation_matrix",
-    time: 10,
-    requirements: [
-        {
-            type: "custommachinery:item",
-            item: "astralfoods:quantum_pasta",
-            mode: "input",
-            amount: 1,
-        },
-        {
-            type: "custommachinery:item",
-            item: "astralfoods:shimmered_apple",
-            mode: "input",
-            amount: 1,
-        },
-        {
-            type: "custommachinery:item",
-            item: "astralfoods:compressed_onion",
-            mode: "input",
-            amount: 1,
-        },
-        {
-            type: "custommachinery:item",
-            item: "astralfoods:shimmered_rabbit_stew",
-            mode: "input",
-            amount: 1,
-        },
-        {
-            type: "custommachinery:item",
-            item: "astralfoods:food_amalgamation",
-            mode: "output",
-            amount: 1,
-        },
-        {
-            type: "custommachinery:energy",
-            mode: "input",
-            amount: 20000,
-        },
-        {
-            type: "custommachinery:structure",
-            keys: {
-                a: "techreborn:basic_machine_frame",
-                b: "astralgenerators:superconducting_coil",
-                c: "techreborn:advanced_machine_casing",
-                d: "astralgenerators:convergence_core",
+function astralAdditionsFood(event) {
+    event.custom({
+        type: "custommachinery:custom_machine",
+        machine: "astralgenerators:amalgamation_matrix",
+        time: 10,
+        requirements: [
+            {
+                type: "custommachinery:item",
+                item: "astralfoods:quantum_pasta",
+                mode: "input",
+                amount: 1,
             },
-            pattern: [
-                ["aaaaa", "aaaaa", "aaaaa", "aaaaa", "aamaa"],
-                ["aaaaa", "abbba", "abbba", "abbba", "aaaaa"],
-                ["     ", " ccc ", " ccc ", " ccc ", "     "],
-                ["     ", "     ", "  c  ", "     ", "     "],
-                ["     ", "     ", "  d  ", "     ", "     "],
-                ["     ", "     ", "  c  ", "     ", "     "],
-                ["     ", " ccc ", " ccc ", " ccc ", "     "],
-                ["     ", " bbb ", " bbb ", " bbb ", "     "],
-                ["aaaaa", "aaaaa", "aaaaa", "aaaaa", "aaaaa"],
-            ],
+            {
+                type: "custommachinery:item",
+                item: "astralfoods:shimmered_apple",
+                mode: "input",
+                amount: 1,
+            },
+            {
+                type: "custommachinery:item",
+                item: "astralfoods:compressed_onion",
+                mode: "input",
+                amount: 1,
+            },
+            {
+                type: "custommachinery:item",
+                item: "astralfoods:shimmered_rabbit_stew",
+                mode: "input",
+                amount: 1,
+            },
+            {
+                type: "custommachinery:item",
+                item: "astralfoods:food_amalgamation",
+                mode: "output",
+                amount: 1,
+            },
+            {
+                type: "custommachinery:energy",
+                mode: "input",
+                amount: 20000,
+            },
+            {
+                type: "custommachinery:structure",
+                keys: {
+                    a: "techreborn:basic_machine_frame",
+                    b: "astralgenerators:superconducting_coil",
+                    c: "techreborn:advanced_machine_casing",
+                    d: "astralgenerators:convergence_core",
+                },
+                pattern: [
+                    ["aaaaa", "aaaaa", "aaaaa", "aaaaa", "aamaa"],
+                    ["aaaaa", "abbba", "abbba", "abbba", "aaaaa"],
+                    ["     ", " ccc ", " ccc ", " ccc ", "     "],
+                    ["     ", "     ", "  c  ", "     ", "     "],
+                    ["     ", "     ", "  d  ", "     ", "     "],
+                    ["     ", "     ", "  c  ", "     ", "     "],
+                    ["     ", " ccc ", " ccc ", " ccc ", "     "],
+                    ["     ", " bbb ", " bbb ", " bbb ", "     "],
+                    ["aaaaa", "aaaaa", "aaaaa", "aaaaa", "aaaaa"],
+                ],
+            },
+        ],
+    });
+
+    event.custom({
+        type: "astraladditions:desizer",
+        ingredients: [
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+        ],
+        output: {
+            item: "astralfoods:compressed_onion",
         },
-    ],
-});
-
-event.custom({
-    type: "astraladditions:desizer",
-    ingredients: [
-        { item: "farmersdelight:onion_crate" },
-        { item: "farmersdelight:onion_crate" },
-        { item: "farmersdelight:onion_crate" },
-        { item: "farmersdelight:onion_crate" },
-        { item: "farmersdelight:onion_crate" },
-        { item: "farmersdelight:onion_crate" },
-        { item: "farmersdelight:onion_crate" },
-        { item: "farmersdelight:onion_crate" },
-        { item: "farmersdelight:onion_crate" },
-
-        { item: "farmersdelight:onion_crate" },
-        { item: "farmersdelight:onion_crate" },
-        { item: "farmersdelight:onion_crate" },
-        { item: "farmersdelight:onion_crate" },
-        { item: "farmersdelight:onion_crate" },
-        { item: "farmersdelight:onion_crate" },
-        { item: "farmersdelight:onion_crate" },
-        { item: "farmersdelight:onion_crate" },
-        { item: "farmersdelight:onion_crate" },
-
-        { item: "farmersdelight:onion_crate" },
-        { item: "farmersdelight:onion_crate" },
-        { item: "farmersdelight:onion_crate" },
-        { item: "farmersdelight:onion_crate" },
-        { item: "farmersdelight:onion_crate" },
-        { item: "farmersdelight:onion_crate" },
-        { item: "farmersdelight:onion_crate" },
-        { item: "farmersdelight:onion_crate" },
-        { item: "farmersdelight:onion_crate" },
-    ],
-    output: {
-        item: "astralfoods:compressed_onion",
-    },
-});
+    });
+}
 
 // Includes some "ore alchemy" and other misc blocks like andeste alloy blocks
 function lizardMiscChanges(event) {
@@ -558,6 +559,10 @@ onEvent("recipes", (event) => {
     lizardChanges(event);
     portalBlocks(event);
     farmersDelightCuttingChanges(event);
+    farmersdelight(event);
+    sequencedAssemblyCooking(event);
+    astralAdditionsFood(event);
+    
 
     /////// TECH REBORN ACTUAL RECIPES //////
 
