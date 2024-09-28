@@ -1,0 +1,74 @@
+{
+  "name": "Steam Turbine",
+  "appearance": {
+    "block": "astralgenerators:steam_turbine",
+    "running": {
+      "block": "astralgenerators:steam_turbine[active=true]",
+      "lightlevel": 15
+    }
+  },
+  "gui": [
+    {
+      "texture": "custommachinery:textures/gui/base_background.png",
+      "x": 0,
+      "y": 0,
+      "type": "custommachinery:texture"
+    },
+    {
+      "x": 47,
+      "y": 80,
+      "type": "custommachinery:player_inventory"
+    },
+    {
+      "type": "custommachinery:fluid",
+      "x": 120,
+      "y": 20,
+      "id": "steam"
+    },
+    {
+      "type": "custommachinery:progress",
+      "x": 138,
+      "y": 35
+    },
+    {
+      "type": "custommachinery:energy",
+      "x": 162,
+      "y": 20,
+      "id": "energy"
+    },
+    {
+      "text": "Steam Generator",
+      "x": 7,
+      "y": 5,
+      "type": "custommachinery:text"
+    },
+    {
+      "x": 236,
+      "y": 5,
+      "type": "custommachinery:status"
+    }
+  ],
+  "components": [
+    {
+      "type": "custommachinery:fluid",
+      "capacity": "81000000",
+      "id": "steam",
+      "mode": "input",
+      "maxInput": "81000000",
+      "maxOutput": "0",
+      "whitelist": true,
+      "filter": ["#c:steam"]
+    },
+    {
+      "type": "custommachinery:energy",
+      "capacity": "1000000000",
+      "maxInput": "0",
+      "maxOutput": "1000000000000",
+      "id": "energy",
+      "config": {
+        "input": false,
+        "output": true
+      }
+    }
+  ]
+}

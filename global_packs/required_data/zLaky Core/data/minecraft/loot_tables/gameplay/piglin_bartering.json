@@ -35,7 +35,7 @@
               "add": false
             }
           ],
-          "name": "create:copper_nugget"
+          "name": "minecraft:copper_ingot"
         },
         {
           "type": "minecraft:item",
@@ -61,8 +61,8 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 2.0,
-                "max": 4.0
+                "min": 3.0,
+                "max": 6.0
               },
               "add": false
             }
@@ -77,8 +77,8 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 4.0,
-                "max": 8.0
+                "min": 8.0,
+                "max": 16.0
               },
               "add": false
             }
@@ -87,7 +87,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 25,
+          "weight": 30,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -99,23 +99,7 @@
               "add": false
             }
           ],
-          "name": "techreborn:galena_small_dust"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 25,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 2.0,
-                "max": 5.0
-              },
-              "add": false
-            }
-          ],
-          "name": "techreborn:sodalite_small_dust"
+          "name": "tconstruct:debris_nugget"
         },
         {
           "type": "minecraft:item",
@@ -141,13 +125,13 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 1.0,
-                "max": 2.0
+                "min": 5.0,
+                "max": 10.0
               },
               "add": false
             }
           ],
-          "name": "tconstruct:debris_nugget"
+          "name": "create:experience_nugget"
         },
         {
           "type": "minecraft:item",
@@ -157,8 +141,8 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 3.0,
-                "max": 5.0
+                "min": 5.0,
+                "max": 10.0
               },
               "add": false
             }
@@ -173,77 +157,13 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 1.0,
-                "max": 2.0
+                "min": 2.0,
+                "max": 4.0
               },
               "add": false
             }
           ],
           "name": "minecraft:blaze_powder"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 30,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 6.0,
-                "max": 8.0
-              },
-              "add": false
-            }
-          ],
-          "name": "ad_astra:ostrum_nugget"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 30,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 5.0,
-                "max": 7.0
-              },
-              "add": false
-            }
-          ],
-          "name": "techreborn:lead_nugget"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 30,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1.0,
-                "max": 2.0
-              },
-              "add": false
-            }
-          ],
-          "name": "techreborn:galena_dust"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 30,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1.0,
-                "max": 2.0
-              },
-              "add": false
-            }
-          ],
-          "name": "techreborn:sodalite_dust"
         },
         {
           "type": "minecraft:item",
@@ -263,7 +183,11 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": 1.0,
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1.0,
+                "max": 3.0
+              },
               "add": false
             }
           ],
@@ -275,10 +199,14 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": 1.0,
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3.0,
+                "max": 6.0
+              },
               "add": false
             }
-          ],
+					],
           "name": "minecraft:ender_pearl"
         },
         {
@@ -319,7 +247,11 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": 1.0,
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1.0,
+                "max": 3.0
+              },
               "add": false
             }
           ],
@@ -343,7 +275,11 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": 1.0,
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 8.0,
+                "max": 16.0
+              },
               "add": false
             }
           ],
@@ -357,8 +293,8 @@
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 3.0,
-                "max": 5.0
+                "min": 4.0,
+                "max": 6.0
               },
               "add": false
             }
@@ -374,7 +310,7 @@
               "count": {
                 "type": "minecraft:uniform",
                 "min": 3.0,
-                "max": 4.0
+                "max": 5.0
               },
               "add": false
             }

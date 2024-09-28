@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = title_screen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1718463935904
+  last_edited_time = 1727299252991
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:5bc7d815-45de-480b-91a9-5ba91e6a91d5-1718463886913] = [groups:][instances:]
+  [loading_requirement_container_meta:9199ead8-c15b-4d73-82fe-dafed19b6a9c-1727299222970] = [groups:][instances:]
 }
 
 menu_background {
@@ -535,7 +535,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  description = Open the credits for the%n%main menu backgrounds
+  description = Open the credits for %n%Create: Astral
   navigatable = true
   element_type = custom_button
   instance_identifier = 9c78332e-6ff3-4aa4-968b-7759e77fcf5d-1706655249611

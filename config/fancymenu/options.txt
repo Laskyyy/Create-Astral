@@ -1,7 +1,7 @@
 ##[general]
 
 I:default_gui_scale = '3';
-B:play_vanilla_menu_music = 'false';
+B:play_vanilla_menu_music = 'true';
 B:force_fullscreen = 'false';
 
 
@@ -15,7 +15,7 @@ B:advanced_customization_mode = 'true';
 ##[loading]
 
 B:preload_animations = 'true';
-S:preload_resources = '[source:local]config/fancymenu/assets/npc_theme.ogg%!source_end!%';
+S:preload_resources = '';
 S:custom_game_intro_skip_text = '';
 B:allow_game_intro_skip = 'true';
 S:game_intro_animation_name = '';

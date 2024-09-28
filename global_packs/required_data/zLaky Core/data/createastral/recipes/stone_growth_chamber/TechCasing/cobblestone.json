@@ -1,0 +1,43 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "createastral:stone_growth_chamber",
+	"time": 10,
+	"requirements": [
+		{
+			"type": "custommachinery:structure",
+			"keys": {
+				"a": "techreborn:basic_machine_frame",
+				"l": "create:blaze_burner{fuelLevel:1}",
+				"g": "minecraft:glass"
+			},
+			"pattern": [
+				[
+					"aaa",
+					"aaa",
+					"aaa"
+				],
+				[
+					"ggg",
+					"glg",
+					"gmg"
+				],
+				[
+					"aaa",
+					"aaa",
+					"aaa"
+				]
+			]
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:andesite",
+			"amount": 1,
+			"mode": "output"
+		},
+		{
+			"type": "custommachinery:dimension",
+			"filter": ["ad_astra:moon_orbit", "ad_astra:mars_orbit", "ad_astra:venus_orbit", "ad_astra:glacio_orbit", "ad_astra:mercury_orbit"],
+			"blacklist": true
+		}
+	]
+}

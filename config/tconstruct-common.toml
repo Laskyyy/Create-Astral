@@ -123,10 +123,12 @@
 		ichor = false
 		#If true, enderslime geodes generate as additional islands in the end
 		ender = false
+		#If true, recipes using slime crystals will ignore the other geode configs, useful if you add other ways to get the slime crystals. When false (default), recipes using slime crystals will be substituted for an alternative if the geode is disabled.
+		forceRecipes = false
 
 #Features to use in debugging gameplay and mechanics, generally should not be enabled in packs
 [debug]
 	#If true, forces integration materials to be enabled, even if the relevant metal is missing. Useful for testing material balance.
 	#Does not provide recipes for any of them, they will only be available to cheat in creative.
-	forceIntegrationMaterials = true
+	forceIntegrationMaterials = false
 
