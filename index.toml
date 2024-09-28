@@ -390,7 +390,7 @@ hash = "0f7eb907935f0889a7383504ad91d19fcb0697f0e4a2fdf085d4433a1b616e8c"
 
 [[files]]
 file = "config/fancymenu/customization/title_screen_layout.txt"
-hash = "c9e56d4fea33f7d10f71e4c79f2cd110b45fd95d2689d083a4f9579444bb8dda"
+hash = "05bdd582117d15d10d4d4795d16a3e9578b066d8de41c22cae740309817919fd"
 
 [[files]]
 file = "config/fancymenu/customization/universal_astral_lakes.txt"
@@ -438,7 +438,7 @@ hash = "003a1c89846741e0eb9475089d4ed653896fd08e0b994667fae452b4ad894a72"
 
 [[files]]
 file = "config/fancymenu/options.txt"
-hash = "532fbbae287cb1d2454a7f231dfb7bcf0bf4cecd4ddc88005cda8daa722148e5"
+hash = "89b2004478ed9af5702806953182ba9fcb415ae9a0db3def6f6678ded30256a7"
 
 [[files]]
 file = "config/fancymenu/slideshows/greg/images/3_dishrainback.jpg"
