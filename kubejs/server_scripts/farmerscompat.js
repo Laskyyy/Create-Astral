@@ -9,12 +9,11 @@ const INGOT_FLUID_AMOUNT = 9000;
 function mixingRecipeGen(event) {
     event.forEachRecipe({ type: "farmersdelight:cooking" }, (recipe) => {
         let outputItem = recipe.getOriginalRecipeResult().getId().split(":")[1];
-        let inputItems = recipe.json.get("ingredients");
-        console.log(inputItems);
+        let inputItems = recipe.json.get("ingredients").deepCopy();
         if (outputItem == "cabbage_rolls") return; //too few ingredients to add recipe for
 
         let containers = {
-            "minecraft:glass_bottle": ["hot_cocoa", "apple_cider"],
+            "minecraft:glass_bottle": ["hot_cocoa", "apple_cider", "glow_berry_custard"],
             "minecraft:pumpkin": ["stuffed_pumpkin_block"],
             "#c:dough": ["dumplings"],
         };
@@ -25,7 +24,6 @@ function mixingRecipeGen(event) {
             ) ?? "minecraft:bowl";
 
         for (let i = 0; i < inputItems.size(); i++) {
-            console.log(inputItems.get(i));
             if((inputItems.get(i).getClass() == "class com.google.gson.JsonObject")) {
                 if (inputItems.get(i).has("item")) {
                     if (inputItems.get(i).get("item").toString().replaceAll("\"","") == "farmersdelight:tomato_sauce") {
@@ -37,23 +35,19 @@ function mixingRecipeGen(event) {
                     }
                 } else {
                     if (inputItems.get(i).has("tag")) {
-                        console.log(inputItems.get(i).get("tag").toString().replaceAll("\"",""));
-                        console.log((inputItems.get(i).get("tag").toString()).replaceAll("\"","") == ("c:dough"));
                         if(inputItems.get(i).get("tag").toString().replaceAll("\"","") == ("c:dough")) {
                             inputItems.remove(inputItems.get(i)); //removes dough from dumpling recipe
-                        }
-                            
-                    } else if (inputItems.get(i).get("tag").toString().replaceAll("\"","") == "c:milk") {
-                        let JsonObject = java('com.google.gson.JsonObject');
-                        let milk = new JsonObject();
-                        milk.add("fluid", "milk:still_milk");
-                        milk.add("amount", FULL_BUCKET_AMOUNT/4);
-                        inputItems.set(i,milk);
+                        } else if (inputItems.get(i).get("tag").toString().replaceAll("\"","") == "c:milk") {
+                            let JsonObject = java('com.google.gson.JsonObject');
+                            let milk = new JsonObject();
+                            milk.add("fluid", "milk:still_milk");
+                            milk.add("amount", FULL_BUCKET_AMOUNT/4);
+                            inputItems.set(i,milk);
+                        }    
                     }
                 }
             }
         }
-        console.log(inputItems);
         event.recipes
             .createMixing(
                 {
