@@ -7,6 +7,10 @@
     "item.ad_astra.netherite_space_suit": "Lead-lined Space Suit",
     "item.ad_astra.tier_2_rocket": "Desh Rocket",
     "item.ad_astra.tier_3_rocket": "Ostrum Rocket",
-    "item.ad_astra.tier_4_rocket": "Calorite Rocket"
+    "item.ad_astra.tier_4_rocket": "Calorite Rocket",
 
+    "item.ad_astra.steel_plate": "Steel Sheet",
+    "item.ad_astra.desh_plate": "Desh Sheet",
+    "item.ad_astra.ostrum_plate": "Ostrum Sheet",
+    "item.ad_astra.calorite_plate": "Calorite Sheet"
 }

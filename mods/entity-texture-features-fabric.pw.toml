@@ -1,13 +1,13 @@
-name = "Entity Texture Features"
-filename = "entity_texture_features_fabric_1.18.2-4.4.4.jar"
-side = "both"
+name = "[ETF] Entity Texture Features - [Fabric & Forge]"
+filename = "entity_texture_features_fabric_1.18.2-6.0.jar"
+side = "client"
 
 [download]
-mode = "metadata:curseforge"
 hash-format = "sha1"
-hash = "5232e6cb340f19e6aae18cee469d67ffd8a9efae"
+hash = "3d318ccd416ab2e6238c23408b770e4d59cd47ad"
+mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 4592404
+file-id = 5275080
 project-id = 568563

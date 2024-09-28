@@ -1,0 +1,43 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "createastral:stone_growth_chamber",
+	"time": 20,
+	"requirements": [
+		{
+			"type": "custommachinery:structure",
+			"keys": {
+				"a": "create:andesite_casing",
+				"l": "minecraft:lava",
+				"g": "minecraft:glass"
+			},
+			"pattern": [
+				[
+					"aaa",
+					"aaa",
+					"aaa"
+				],
+				[
+					"ggg",
+					"glg",
+					"gmg"
+				],
+				[
+					"aaa",
+					"aaa",
+					"aaa"
+				]
+			]
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "ad_astra:mercury_cobblestone",
+			"amount": 1,
+			"mode": "output"
+		},
+		{
+			"type": "custommachinery:dimension",
+			"filter": "ad_astra:mercury_orbit",
+			"blacklist": false
+		}
+	]
+}

@@ -4,14 +4,56 @@ onEvent("recipes", (event) => {
 
     //Tech Reborn
     [
+        // storage units
+        { output: "techreborn:crude_storage_unit" },
+        { output: "techreborn:basic_storage_unit" },
+        { output: "techreborn:advanced_storage_unit" },
+        { output: "techreborn:industrial_storage_unit" },
+        { output: "techreborn:quantumr_storage_unit" },
+        // tanks units
+        { output: "techreborn:basic_tank_unit" },
+        { output: "techreborn:advanced_tank_unit" },
+        { output: "techreborn:industrial_tank_unit" },
+        { output: "techreborn:quantum_tank_unit" },
+
+        //cables
+        {output: "techreborn:gold_cable"},
+        {output: "techreborn:copper_cable"},
+        {output: "techreborn:tin_cable"},
+        {output: "techreborn:hv_cable"},
+        {output: "techreborn:glassfiber_cable"},
+        {output: "techreborn:insulated_hv_cable"},
+        {output: "techreborn:insulated_gold_cable"},
+        {output: "techreborn:insulated_copper_cable"},
+
+        { output: "techreborn:hv_transformer"},
+        {output: "techreborn:lightning_rod"},
+        {output: "techreborn:refined_iron_fence"},
         { output: "techreborn:chunk_loader" },
+        { output: "techreborn:pyrite_dust"},
         { output: "ae2:spatial_anchor" },
+        { output: "techreborn:carbon_fiber" },
+        { output: "techreborn:scrap_box" },
+        { output: "techreborn:industrial_electrolyzer" },
+        { output: "techreborn:industrial_sawmill" },
+        { output: "techreborn:vacuum_freezer" },
+        { output: "techreborn:solid_canning_machine" },
+        { output: "techreborn:greenhouse_controller" },
+        { output: "techreborn:industrial_centrifuge" },
+        { output: "techreborn:electric_furnace" },
+        { output: "techreborn:distillation_tower" },
+        { output: "techreborn:chemical_reactor" },
+        { output: "techreborn:auto_crafting_table" },
+        { output: "techreborn:alloy_smelter" },
+        { output: "techreborn:extractor" },
         { output: "createendertransmission:chunk_loader" },
         { input: "techreborn:sponge_piece" },
         { output: "techreborn:sponge_piece" },
         { output: "techreborn:compressed_plantball" },
         { output: "techreborn:plantball" },
         { output: "techreborn:grinder" },
+        { output: "techreborn:scrapboxinator" },
+        { output: "techreborn:recycler" },
         { output: "techreborn:block_breaker" },
         { output: "techreborn:wire_mill" },
         { output: "techreborn:compressor" },
@@ -105,9 +147,11 @@ onEvent("recipes", (event) => {
             type: "minecraft:shaped",
             output: "techreborn:nak_coolant_cell_60k",
         },
+        { id: "techreborn:crafting_table/paper" },
         //Create
 
         { output: "create:blaze_cake" },
+        { output: "create:blaze_cake_base" },
         { output: "create:blaze_burner" },
         { output: "create:ochrum" },
         { output: "create:crimsite" },
@@ -116,15 +160,16 @@ onEvent("recipes", (event) => {
         { output: "create:veridium" },
         { output: "create:scoria" },
         { output: "create:scorchia" },
-        { output: "create:crushed_raw_tin" },
-        { output: "create:crushed_raw_silver" },
-        { output: "create:crushed_raw_lead" },
         { output: "create:crushed_raw_uranium" },
         { output: "create:electron_tube" },
         { output: "create:cogwheel", type: "minecraft:shaped" },
         { output: "create:large_cogwheel", type: "minecraft:shaped" },
+        { output: "travelersbackpack:standard", type: "minecraft:shaped" },
+        { output: "travelersbackpack:standard", type: "minecraft:crafting_shaped" },
         { output: "create:cogwheel" },
         { output: "create:large_cogwheel" },
+        { output: "create:experience_block" },
+        { output: "create:stockpile_switch" },
         { output: "create:copper_casing" },
         {
             output: "create:andesite_alloy",
@@ -181,22 +226,6 @@ onEvent("recipes", (event) => {
             output: "tconstruct:queens_slime_ingot",
         },
         {
-            input: "minecraft:raw_iron",
-            output: "create:crushed_raw_iron",
-        },
-        {
-            input: "minecraft:raw_gold",
-            output: "create:crushed_raw_gold",
-        },
-        {
-            input: "minecraft:raw_copper",
-            output: "create:crushed_raw_copper",
-        },
-        {
-            input: "create:raw_zinc",
-            output: "create:crushed_raw_zinc",
-        },
-        {
             output: "create:brass_casing",
             type: "create:item_application",
         },
@@ -225,6 +254,21 @@ onEvent("recipes", (event) => {
             output: "createaddition:biomass",
         },
 
+        // Create Railways
+        { output: "railways:track_acacia" },
+        { output: "railways:track_birch" },
+        { output: "railways:track_crimson" },
+        { output: "railways:track_dark_oak" },
+        { output: "railways:track_jungle" },
+        { output: "railways:track_oak" },
+        { output: "railways:track_spruce" },
+        { output: "railways:track_warped" },
+        { output: "railways:track_blackstone" },
+        { output: "railways:track_ender" },
+        { output: "railways:track_tieless" },
+        { output: "railways:track_phantom" },
+        { output: "railways:track_monorail" },
+
         //Createdeco sheetmetal rebalance
 
         { output: "createdeco:copper_sheet_metal" },
@@ -235,6 +279,12 @@ onEvent("recipes", (event) => {
         { output: "createdeco:cast_iron_sheet_metal" },
         { output: "createdeco:iron_sheet_metal" },
         { output: "createdeco:zinc_sheet_metal" },
+
+        // Big cannon removals
+
+        { output: "createbigcannons:nethersteel_nugget" },
+        { output: "createbigcannons:nethersteel_ingot" },
+        { output: "createbigcannons:nethersteel_block" },
 
         // dustrial decor sheetmetal rework
 
@@ -264,6 +314,8 @@ onEvent("recipes", (event) => {
         { output: "ad_astra:jet_suit_pants" },
         { output: "ad_astra:jet_suit_boots" },
         { output: "ad_astra:tier_1_rocket" },
+        { output: "ad_astra:tier_3_rocket" },
+        { output: "ad_astra:tier_4_rocket" },
         { output: "ad_astra:desh_cable" },
         { output: "ad_astra:steel_cable" },
         { output: "ad_astra:compressor" },
@@ -271,6 +323,10 @@ onEvent("recipes", (event) => {
         { output: "ad_astra:ostrum_ingot", type: "minecraft:blasting" },
         { output: "ad_astra:calorite_ingot", type: "minecraft:smelting" },
         { output: "ad_astra:calorite_ingot", type: "minecraft:blasting" },
+        { output: "ad_astra:calorite_engine" },
+        { output: "ad_astra:calorite_tank" },
+        { output: "ad_astra:steel_tank" },
+        { output: "ad_astra:rocket_nose_cone" },
 
         // AE2
 
@@ -306,12 +362,41 @@ onEvent("recipes", (event) => {
         { output: "tconstruct:efln_ball" },
         { output: "tconstruct:piggy_backpack" },
 
+        //horse armor
+
+        { output: "minecraft:leather_horse_armor" },
+        { type: "tconstruct:melting", input: "minecraft:iron_horse_armor" },
+        { type: "tconstruct:melting", input: "minecraft:golden_horse_armor" },
+        { type: "tconstruct:melting", input: "minecraft:diamond_horse_armor" },
+
         // Miscellaneous
+        { output: "minecraft:shroomlight" },
+
+        { output: "chipped:mechanist_workbench" },
 
         { output: "passivepiglins:piglin_fortune" },
         { output: "passivepiglins:piglin_totem" },
         { output: "passivepiglins:piglin_coin" },
         { output: "travellersbackpack:standard" },
+        { output: "campanion:sleeping_bag" },
+        { output: "travellersbackpack:white_sleeping_bag" },
+        { output: "travellersbackpack:orange_sleeping_bag" },
+        { output: "travellersbackpack:magenta_sleeping_bag" },
+        { output: "travellersbackpack:light_blue_sleeping_bag" },
+        { output: "travellersbackpack:yellow_sleeping_bag" },
+        { output: "travellersbackpack:lime_sleeping_bag" },
+        { output: "travellersbackpack:pink_sleeping_bag" },
+        { output: "travellersbackpack:gray_sleeping_bag" },
+        { output: "travellersbackpack:light_gray_sleeping_bag" },
+        { output: "travellersbackpack:cyan_sleeping_bag" },
+        { output: "travellersbackpack:purple_sleeping_bag" },
+        { output: "travellersbackpack:blue_sleeping_bag" },
+        { output: "travellersbackpack:brown_sleeping_bag" },
+        { output: "travellersbackpack:green_sleeping_bag" },
+        { output: "travellersbackpack:red_sleeping_bag" },
+        { output: "travellersbackpack:black_sleeping_bag" },
+        { output: "travellersbackpack:hose" },
+        { output: "travellersbackpack:hose_nozzle" },
         { output: "ad_astra:ostrum_engine" },
         { output: "dbe:server_rack" },
         { output: "dustrial_decor:cast_iron_billet" },
@@ -344,9 +429,6 @@ onEvent("recipes", (event) => {
         { mod: "extended_drawers" },
         { output: "doodads:slimey_shoes" },
 
-        { mod: "createsifter" },
-        { type: "createsifter:sifting" },
-
         { output: "dbe:steel_ingot" },
         { output: "dbe:copper_coil" },
 
@@ -358,7 +440,6 @@ onEvent("recipes", (event) => {
         { output: "immersive_aircraft:boiler" },
         { output: "immersive_aircraft:engine" },
         { output: "immersive_aircraft:nether_engine" },
-        { output: "immersive_aircraft:industrial_gears" },
         { output: "immersive_aircraft:large_propeller" },
         { output: "immersive_aircraft:airship" },
         { output: "immersive_aircraft:gyrodyne" },
@@ -394,6 +475,13 @@ onEvent("recipes", (event) => {
         { output: "yttr:spatula" },
         { output: "yttr:bedrock_smasher" },
         { output: "yttr:effector" },
+        { output: "yttr:music_disc_papillons" },
+        { output: "yttr:yttrium_dust" },
+        { output: "yttr:magtank" },
+        { output: "yttr:neodymium_disc" },
+        { output: "yttr:yttrium_ingot", type: "minecraft:smelting"},
+        { output: "yttr:yttrium_ingot", type: "minecraft:blasting"},
+
 
         // Minecraft
 
@@ -450,12 +538,14 @@ onEvent("recipes", (event) => {
         { output: "minecraft:gold_nugget", input: "minecraft:soul_sand" },
         { output: "minecraft:gravel", input: "techreborn:granite_dust" },
         { output: "minecraft:gold_nugget", input: "minecraft:soul_soil" },
+        {output: "ae2:silicon"},
+        {output: "blahaj:bread"},
+        {id: "techreborn:centrifuge/redstone" }, // remove other version of centrifuging certus quartz
         { input: "minecraft:crying_obsidian" },
         {
             input: "minecraft:copper_block",
             type: "minecraft:stonecutting",
         },
-
         //dispenser recipe
         { output: "minecraft:dispenser" },
     ].forEach((recipe) => {
@@ -482,9 +572,7 @@ onEvent("recipes", (event) => {
         "red",
         "black",
     ];
-    colors.forEach((color) =>
-        event.remove({ output: `yttr:${color}_project_table` })
-    );
+    colors.forEach((color) => event.remove({ output: `yttr:${color}_project_table` }));
 
     // Define the array of materials
     const materials = [
@@ -522,6 +610,8 @@ onEvent("recipes", (event) => {
         "platinum",
         "brass",
         "zinc",
+        "nickel",
+        "platinum",
     ];
 
     metal.forEach((metal) => {
@@ -534,5 +624,62 @@ onEvent("recipes", (event) => {
         event.remove({ output: `techreborn:${metal}_dust` });
         event.remove({ output: `techreborn:${metal}_small_dust` });
         event.remove({ output: `techreborn:${metal}_nugget` });
+    });
+
+    const dusts = [
+        ["almandine", false],
+        ["amethyst", true],
+        ["andesite", true],
+        ["andradite", false],
+        ["ashes", true],
+        ["basalt", true],
+        ["bauxite", false],
+        ["bronze", false],
+        ["calcite", true],
+        ["charcoal", true],
+        ["cinnabar", false],
+        ["clay", true],
+        ["coal", true],
+        ["dark_ashes", true],
+        ["diamond", true],
+        ["diorite", true],
+        ["electrum", true],
+        ["emerald", false],
+        ["ender_eye", false],
+        ["ender_pearl", false], // ae2 ender dust replaces it
+        ["endstone", false],
+        ["flint", true],
+        ["galena", true],
+        ["granite", true],
+        ["grossular", false],
+        ["invar", false],
+        ["lazurite", true],
+        ["magnesium", false],
+        ["manganese", false],
+        ["marble", false],
+        ["netherrack", true],
+        ["nickel", false],
+        ["obsidian", false],
+        ["olivine", true],
+        ["phosphorous", false],
+        ["pyrite", false],
+        ["pyrope", false],
+        ["quartz", false],
+        ["saltpeter", true],
+        ["saw", true],
+        ["sodalite", false],
+        ["spessartine", false],
+        ["sphalerite", false],
+        ["steel", true],
+        ["sulfur", true],
+        ["uvarovite", false],
+        ["glowstone", true],
+        ["redstone", true],
+    ];
+    dusts.forEach((dust) => {
+        if (!dust[1]) {
+            event.remove({ output: `techreborn:${dust[0]}_dust` });
+        }
+        event.remove({ output: `techreborn:${dust[0]}_small_dust` });
     });
 });

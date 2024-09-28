@@ -1,0 +1,40 @@
+{
+	"name": "astralrails:contest/orbit/spacecontainers/girders",
+	"fallback": "minecraft:empty",
+	"elements": [{
+		"weight": 2,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/girder/girderm",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},
+	{
+		"weight": 2,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/girder/girderb",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},
+	{
+		"weight": 2,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/girder/girdert",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},
+	{
+		"weight": 1,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/girder/lone",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	}]
+}

@@ -1,13 +1,13 @@
 name = "Item Filters"
-filename = "item-filters-fabric-1802.2.8-build.47.jar"
+filename = "item-filters-fabric-1802.2.8-build.50.jar"
 side = "both"
 
 [download]
-mode = "metadata:curseforge"
 hash-format = "sha1"
-hash = "34b1be83b1877a7420f60fb746dcbb53f2196e13"
+hash = "646175d4efcf0068ad852ba3291cbbaa9d6fdb93"
+mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 4055444
+file-id = 4553321
 project-id = 309674

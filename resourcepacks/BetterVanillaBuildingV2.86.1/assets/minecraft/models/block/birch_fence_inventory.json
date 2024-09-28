@@ -2,6 +2,6 @@
     "parent": "block/fence_inventory",
     "textures": {
         "texture": "block/birch_fence",
-		"1": "block/birch_planks"
+        "1": "block/birch_planks"
     }
 }

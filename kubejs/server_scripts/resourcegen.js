@@ -1,6 +1,3 @@
-var FULL_BUCKET_AMMOUNT = 81000;
-var INGOT_FLUID_AMMOUNT = 9000;
-
 onEvent("recipes", (event) => {
     LakyCompactingRecipes(event);
     LakyCrushingRecipes(event);
@@ -12,49 +9,49 @@ function LakyCompactingRecipes(event) {
             "create:ochrum",
             "minecraft:sandstone",
             "minecraft:dripstone_block",
-            { fluid: "create:honey", amount: 8100 },
+            { fluid: "create:honey", amount: 100 * mB },
             "minecraft:yellow_dye",
         ],
         [
             "create:crimsite",
             "minecraft:tuff",
             "minecraft:red_sand",
-            { fluid: "tconstruct:blood", amount: 8100 },
+            { fluid: "tconstruct:blood", amount: 100 * mB },
             "minecraft:red_dye",
         ],
         [
             "create:limestone",
             "minecraft:calcite",
             "minecraft:clay",
-            { fluid: "milk:still_milk", amount: 8100 },
+            { fluid: "milk:still_milk", amount: 100 * mB },
             "minecraft:white_dye",
         ],
         [
             "create:veridium",
-            "minecraft:basalt",
+            "minecraft:cobblestone",
             "minecraft:slime_ball",
-            { fluid: "minecraft:lava", amount: 8100 },
+            { fluid: "minecraft:lava", amount: 100 * mB },
             "minecraft:green_dye",
         ],
         [
             "create:asurine",
             "minecraft:prismarine",
             "minecraft:kelp",
-            { fluid: "minecraft:water", amount: 8100 },
+            { fluid: "minecraft:water", amount: 100 * mB },
             "minecraft:blue_dye",
         ],
         [
             "create:scorchia",
             "minecraft:blackstone",
             "ad_astra:moon_sand",
-            { fluid: "tconstruct:blazing_blood", amount: 8100 },
+            { fluid: "tconstruct:blazing_blood", amount: 100 * mB },
             "minecraft:black_dye",
         ],
         [
             "create:scoria",
             "tconstruct:seared_stone",
             "minecraft:soul_soil",
-            { fluid: "create:chocolate", amount: 8100 },
+            { fluid: "create:chocolate", amount: 100 * mB },
             "minecraft:brown_dye",
         ],
     ];
@@ -82,7 +79,8 @@ function LakyCrushingRecipes(event) {
             input: "create:ochrum",
             outputs: [
                 ["minecraft:raw_gold", 1],
-                ["techreborn:glowstone_small_dust", 0.9],
+                ["minecraft:raw_gold", 0.5],
+                ["minecraft:glowstone_dust", 0.1],
                 ["minecraft:sand", 0.5],
                 ["ad_astra:desh_nugget", 0.4],
             ],
@@ -91,7 +89,8 @@ function LakyCrushingRecipes(event) {
             input: "create:crimsite",
             outputs: [
                 ["minecraft:raw_iron", 1],
-                ["techreborn:redstone_small_dust", 0.9],
+                ["minecraft:raw_iron", 0.5],
+                ["minecraft:redstone", 0.1],
                 ["minecraft:granite", 0.5],
                 ["minecraft:red_dye", 0.25],
             ],
@@ -100,6 +99,7 @@ function LakyCrushingRecipes(event) {
             input: "create:limestone",
             outputs: [
                 ["techreborn:raw_tin", 1],
+                ["techreborn:raw_tin", 0.5],
                 ["createastral:lime", 1],
                 ["createastral:lime", 0.5],
                 ["minecraft:clay", 0.5],
@@ -110,8 +110,8 @@ function LakyCrushingRecipes(event) {
             input: "create:veridium",
             outputs: [
                 ["minecraft:raw_copper", 1],
-                ["minecraft:raw_copper", 0.5],
-                ["techreborn:olivine_small_dust", 0.9],
+                ["minecraft:raw_copper", 0.9],
+                ["techreborn:olivine_dust", 0.1],
                 ["minecraft:sand", 0.5],
                 ["minecraft:green_dye", 0.25],
             ],
@@ -119,11 +119,11 @@ function LakyCrushingRecipes(event) {
         {
             input: "create:asurine",
             outputs: [
-                ["minecraft:lapis_lazuli", 1],
+                ["techreborn:raw_tin", 1],
+                ["techreborn:raw_tin", 0.2],
                 ["minecraft:lapis_lazuli", 0.5],
-                ["techreborn:lazurite_small_dust", 0.9],
+                ["techreborn:lazurite_dust", 0.1],
                 ["minecraft:blue_dye", 0.25],
-                ["tconstruct:raw_cobalt", 0.1],
                 ["minecraft:prismarine_crystals", 0.2],
             ],
         },
@@ -140,7 +140,7 @@ function LakyCrushingRecipes(event) {
             input: "minecraft:blackstone",
             outputs: [
                 ["create:powdered_obsidian", 0.3],
-                ["tconstruct:seared_cobblestone", 0.3],
+                ["tconstruct:seared_cobble", 0.3],
             ],
         },
         {
@@ -176,6 +176,10 @@ function LakyCrushingRecipes(event) {
         {
             input: "dbe:vanta_black",
             outputs: [["minecraft:black_dye", 1]],
+        },
+        {
+            input: "astraladditions:lune_shroom",
+            outputs: [["minecraft:lapis_lazuli", 1]],
         },
     ].forEach((recipe) => {
         let cleanoutputs = [];

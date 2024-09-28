@@ -1,0 +1,75 @@
+{
+  "temperature": 0.7,
+  "downfall": 0,
+  "precipitation": "none",
+  "category": "none",
+  "effects": {
+    "sky_color": 0,
+    "fog_color": 1447444,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "grass_color": 9551193,
+    "foliage_color": 7842607
+  },
+  "creature_spawn_probability": 0.2,
+  "spawners": {
+    "monster": [
+
+      {
+      	"type": "astraladditions:voidtouched_skeleton",
+      	"weight": 15,
+      	"minCount": 1,
+      	"maxCount": 5
+      },
+      {
+      	"type": "astraladditions:voidtouched_zombie",
+      	"weight": 15,
+      	"minCount": 1,
+      	"maxCount": 10
+      },
+      {
+      	"type": "astraladditions:phast",
+      	"weight": 2,
+      	"minCount": 1,
+      	"maxCount": 2
+      },
+      {
+      	"type": "astraladditions:moonman",
+      	"weight": 1,
+      	"minCount": 1,
+      	"maxCount": 1
+      },
+      {
+      	"type": "astraladditions:hemogiant",
+      	"weight": 1,
+      	"minCount": 1,
+      	"maxCount": 1
+      }
+    ]
+  },
+  "spawn_costs": {
+
+  },
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
+  "features": [
+    [
+      "ad_astra:moon_cheese_ore",
+      "ad_astra:moon_soul_soil",
+      "ad_astra:moon_ice_shard_ore",
+      "ad_astra:moon_iron_ore",
+      "ad_astra:moon_desh_ore",
+			"astralrails:moon_soul_sand_patch"
+      
+    ],
+    [
+      "createastral:debris_pillar",
+			"createastral:moonset_crystal"
+    ]
+  ]
+}

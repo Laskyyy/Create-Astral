@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "createastral:item/t4_upgrade"
+  }
+}

@@ -1,17 +1,6 @@
 {
-  "replace": false,
+  "replace": true,
   "values": [
-    {
-      "id": "#forge:ingots/steel",
-      "required": false
-    },
-    {
-      "id": "#c:ingots/steel",
-      "required": false
-    },
-    {
-      "id": "#c:steel_ingots",
-      "required": false
-    }
+    "ad_astra:steel_ingot"
   ]
 }

@@ -1,5 +1,5 @@
 {
-    "":"///// NOM DES OBJETS ICI /////",
+    "": "///// NOM DES OBJETS ICI /////",
 
     "item.createastral.crushed_raw_desh": "Minerai de desh concassé",
     "item.createastral.crushed_raw_ostrum": "Minerai d'ostrum concassé",
@@ -14,7 +14,7 @@
     "item.createastral.golden_pin": "Epingle dorée",
     "item.createastral.calorite_pin": "Epingle de calorite",
     "item.createastral.electrified_pin": "Epingle électrifiée",
-    "item.createastral.uwaah": "UWAAH",
+    "item.createastral.logo": "Logo",
     "item.createastral.bronze_ingot": "Lingot de bronze",
     "item.createastral.navigation_mechanism": "Mécanisme de navigation",
     "item.createastral.coin": "Pièce d'or",
@@ -63,9 +63,10 @@
     "item.createastral.orcane": "Information / Progression générale",
     "item.createastral.astral_singularity": "Singularité astrale",
     "item.createastral.pure_biomatter": "Biomatière pure",
-    "item.createastral.lime": "Poussière de calcaire", "\\":"// What ?? Lime the fruite ? // I changed it to limestone dust, because it's crafted using limestone.",
+    "item.createastral.lime": "Poussière de calcaire",
+    "\\": "// What ?? Lime the fruite ? // I changed it to limestone dust, because it's crafted using limestone.",
 
-    "":"///// NOM DES BLOCS ICI /////",
+    "": "///// NOM DES BLOCS ICI /////",
     "block.createastral.sturdy_sheet_block": "Bloc de plaque robuste",
     "block.createastral.shimmering_stone": "Pierre de Shimmer",
     "block.createastral.copper_plating": "Bloc de plaque de cuivre",

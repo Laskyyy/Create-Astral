@@ -6,7 +6,8 @@
         ],
         "typeRoots": [
             "./probe/generated",
-            "./probe/user"
+            "./probe/user",
+            "./custom_types"
         ],
         "target": "ES2015"
     }

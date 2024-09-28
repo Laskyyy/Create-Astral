@@ -1,158 +1,68 @@
 {
-  //Default Generators
-  //{
-  //  "id": "mod_id:block_id",
-  //  "weight": 95.5,
-  //  "dimensions": [
-  //    "mod_id:dimension_id",
-  //    "mod_id:dimension_id"
-  //  ],
-  //  "excludedDimensions": [
-  //    "mod_id:dimension_id",
-  //    "mod_id:dimension_id"
-  //  ],
-  //  "minY": 0,
-  //  "maxY": 69
-  //}
-  "cobbleGen": [
-    {
-      "id": "minecraft:cobblestone",
-      "weight": 100.0,
-      "minY": 0
-    },
-    {
-      "id": "minecraft:cobbled_deepslate",
-      "weight": 100.0,
-      "maxY": 0
-    },
-    {
-      "id": "ad_astra:moon_stone",
-      "weight": 100.0,
-      "dimensions": [
-      "ad_astra:moon",
-      "ad_astra:moon_orbit"
-       ],
-    },
-    {
-      "id": "ad_astra:mars_stone",
-      "weight": 100.0,
-      "dimensions": [
-      "ad_astra:mars",
-      "ad_astra:mars_orbit"
-       ],
-    },
-    {
-      "id": "ad_astra:venus_stone",
-      "weight": 100.0,
-      "dimensions": [
-      "ad_astra:venus",
-      "ad_astra:venus_orbit"
-       ],
-    },
-    {
-      "id": "ad_astra:mercury_stone",
-      "weight": 100.0,
-      "dimensions": [
-      "ad_astra:mercury",
-      "ad_astra:mercury_orbit"
-       ],
-    },
-    {
-      "id": "ad_astra:glacio_stone",
-      "weight": 100.0,
-      "dimensions": [
-      "ad_astra:glacio",
-      "ad_astra:glacio_orbit"
-       ],
-    }
-  ],
-  "stoneGen": [
-    {
-      "id": "minecraft:stone",
-      "weight": 100.0
-    }
-  ],
-  "basaltGen": [
-    {
-      "id": "minecraft:basalt",
-      "weight": 100.0
-    }
-  ],
-  //Custom Generators
-  //<stoneGen|cobbleGen|basaltGen>: {
-  //  "mod_id:modifier_block_id": [
-  //    {
-  //      "id": "mod_id:block_id",
-  //      "weight": 95.5,
-  //      "dimensions": [
-  //        "mod_id:dimension_id",
-  //        "mod_id:dimension_id"
-  //      ],
-  //      "excludedDimensions": [
-  //        "mod_id:dimension_id",
-  //        "mod_id:dimension_id"
-  //      ],
-  //      "minY": 0,
-  //      "maxY": 69
-  //    },
-  //    ...
-  //  ]
-  //}
-  "customGen": {
-    //Default Generators
-    //{
-    //  "id": "mod_id:block_id",
-    //  "weight": 95.5,
-    //  "dimensions": [
-    //    "mod_id:dimension_id",
-    //    "mod_id:dimension_id"
-    //  ],
-    //  "excludedDimensions": [
-    //    "mod_id:dimension_id",
-    //    "mod_id:dimension_id"
-    //  ],
-    //  "minY": 0,
-    //  "maxY": 69
-    //}
-    "cobbleGen": {
-      "minecraft:bedrock": [
-        {
-          "id": "minecraft:stone",
-          "weight": 25
-        },
-        {
-          "id": "minecraft:granite",
-          "weight": 3
-        },
-        {
-          "id": "minecraft:diorite",
-          "weight": 3
-        },
-        {
-          "id": "minecraft:andesite",
-          "weight": 3
-        }
-      ]
-    },
+	"formatVersion": "1.0",
+	"cobbleGen": [
+		{
+			"id": "minecraft:cobblestone",
+			"weight": 100.0,
+		}
+	],
+	"stoneGen": [
+		{
+			"id": "minecraft:stone",
+			"weight": 100.0,
+		},
+	],
+	"basaltGen": [
+		{
+			"id": "minecraft:basalt",
+			"weight": 100.0,
+		},
+	],
+	"customGen": { 
     "stoneGen": {
       "minecraft:bedrock": [
         {
           "id": "minecraft:stone",
-          "weight": 25
-        },
-        {
-          "id": "minecraft:granite",
-          "weight": 3
+          "weight": 40.0
         },
         {
           "id": "minecraft:diorite",
-          "weight": 3
+          "weight": 20.0
         },
         {
           "id": "minecraft:andesite",
-          "weight": 3
+          "weight": 20.0
+        },
+        {
+          "id": "minecraft:granite",
+          "weight": 20.0
         }
       ]
+    }},
+ "advanced": {
+    "minecraft:lava": {
+      "create:honey": {
+        "results": {
+          "*": [ 
+            {
+              "id": "minecraft:cobblestone",
+              "weight": 100.0,
+            }
+          ]
+        }
+      },
+    },
+	 "minecraft:lava": {
+      "create:chocolate": {
+        "results": {
+          "*": [ 
+            {
+              "id": "minecraft:cobblestone",
+              "weight": 100.0,
+            }
+          ]
+        }
+      },
     }
   }
 }
