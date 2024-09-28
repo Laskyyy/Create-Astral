@@ -1208,11 +1208,11 @@ onEvent("recipes", (event) => {
     });
 
     event.shaped("travelersbackpack:standard", ["ABC", "DED", "FBF"], {
-        A: "#c:workbenches",
+        A: "projecttable:projecttable",
         B: "campanion:leather_pouch",
         C: "campanion:sleeping_bag",
         D: "create:fluid_tank",
-        E: "tconstruct:travelers_chestplate",
+        E: "minecraft:leather_chestplate",
         F: "farmersdelight:rope",
     });
 

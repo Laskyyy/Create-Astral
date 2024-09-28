@@ -22,7 +22,7 @@ function millingRecipes(event) {
     [
         ["farmersdelight:straw", "minecraft:string", 1],
         ["ae2:certus_quartz_dust", "ae2:certus_crystal_seed", 2],
-        ["minecraft:gravel", "minecraft:sand", 0.25],
+        ["minecraft:gravel", "minecraft:sand", 0.5],
         ["create:veridium", "minecraft:raw_copper", 0.6],
         ["create:asurine", "minecraft:lapis_lazuli", 1],
         ["create:crimsite", "minecraft:raw_iron", 0.4],
@@ -630,9 +630,9 @@ function sequencedAssemblyRecipes(event) {
                         "ad_astra:calorite_engine",
                         "yttr:armor_plating",
                     ]),
-                    event.recipes.createFilling("ad_astra:calorite_engine", [
+                    event.recipes.createDeploying("ad_astra:calorite_engine", [
                         "ad_astra:calorite_engine",
-                        { fluid: "kubejs:molten_radiance", amount: BUCKET / 2 },
+                        "techreborn:data_storage_chip",
                     ]),
                     event.recipes.createFilling("ad_astra:calorite_engine", [
                         "ad_astra:calorite_engine",
@@ -1281,6 +1281,18 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem("createastral:incomplete_electronic_circuit")
         .loops(6);
 
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "minecraft:ink_sac", // output
+            ],
+            "minecraft:black_dye",
+            [event.recipes.createDeploying("minecraft:black_dye", ["minecraft:black_dye", "minecraft:paper"])]
+        )
+        .transitionalItem("minecraft:black_dye")
+        .loops(2);
+
     const inc_dash_panel = "createastral:incomplete_dash_panel";
     //Dash panel
     event.recipes
@@ -1457,6 +1469,12 @@ function mixingRecipes(event) {
             input: ["minecraft:stick", "minecraft:string"],
             heat: "",
             time: 100,
+        },
+        {
+            output: "minecraft:small_amethyst_bud",
+            input: ["techreborn:amethyst_dust", "ae2:certus_crystal_seed"],
+            heat: "",
+            time: 200,
         },
         {
             output: "minecraft:rotten_flesh",
@@ -3076,12 +3094,11 @@ function mechanicalCraftingRecipes(event) {
 
     //yttric rifle!!
     event.remove({ output: "yttr:rifle" });
-    event.recipes.createMechanicalCrafting("yttr:rifle", ["CCY  ", "YMEIC", " CDYC", "   C "], {
+    event.recipes.createMechanicalCrafting("yttr:rifle", ["CCY  ", "YMEIC", " CIYC", "   C "], {
         Y: "yttr:yttrium_block",
         C: "ad_astra:calorite_ingot",
         I: "techreborn:industrial_circuit",
         E: "techreborn:electronic_circuit",
-        D: "techreborn:data_storage_chip",
         M: "minecraft:crossbow",
     });
 }
@@ -3406,6 +3423,15 @@ function compactingRecipes(event) {
         ])
         .superheated()
         .processingTime(1000);
+
+    event.recipes
+        .createCompacting(["yttr:armor_plating", "yttr:bedrock_shard"], [
+            "8x yttr:yttrium_ingot",
+            "yttr:bedrock_shard",
+            { fluid: "kubejs:hellfire", amount: 100 * mB },
+        ])
+        .superheated()
+        .processingTime(200);
 
     event.recipes
         .createCompacting("yttr:promethium_glob", [
