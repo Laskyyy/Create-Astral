@@ -3,14 +3,14 @@ type = fancymenu_layout
 layout-meta {
   identifier = main_menu_image_credits
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1727468019544
+  last_edited_time = 1727527210110
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
   custom_menu_title = Create: Astral Credits
-  [loading_requirement_container_meta:6419e738-d767-43aa-abb6-cc92421d053a-1727467788781] = [groups:][instances:]
+  [loading_requirement_container_meta:9d512cfa-c9d2-4490-90c4-9c8a9488540b-1727526712555] = [groups:][instances:]
 }
 
 customization {
@@ -607,6 +607,98 @@ element {
   fade_in_speed = 1.0
   anchor_point = mid-centered
   advanced_posx = 200
+  advanced_posy = 320
+  advanced_width = 220
+  x = -233
+  y = -144
+  width = 50
+  height = 60
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 9bf37c8c-99e7-4ff5-9ef7-1780b0275b3d-1727306704069
+  [loading_requirement_container_meta:9bf37c8c-99e7-4ff5-9ef7-1780b0275b3d-1727306704069] = [groups:][instances:]
+}
+
+element {
+  interactable = true
+  source = {"placeholder":"local","values":{"key":"astralmenu.creditsmenu.testers.header"}}
+  source_mode = direct
+  shadow = true
+  case_mode = upper
+  scale = 1.5
+  base_color = #7B6BAF
+  text_border = 2
+  line_spacing = 2
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  code_block_single_color = #737373FF
+  code_block_multi_color = #565656FF
+  headline_line_color = #A9A9A9FF
+  separation_line_color = #A9A9A9FF
+  hyperlink_color = #0771FCFF
+  quote_color = #818181FF
+  quote_indent = 8.0
+  quote_italic = false
+  bullet_list_dot_color = #A9A9A9FF
+  bullet_list_indent = 8.0
+  bullet_list_spacing = 3.0
+  parse_markdown = true
+  element_type = text_v2
+  instance_identifier = 98cf7af6-590b-490e-b99c-d37315f99412-1727526753753
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  advanced_posx = 434
+  advanced_posy = 295
+  advanced_width = 220
+  advanced_height = 20
+  x = -328
+  y = -162
+  width = 50
+  height = 50
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 10968955-aaea-4dc3-871f-a3bb5ebbbd84-1727306161303
+  [loading_requirement_container_meta:10968955-aaea-4dc3-871f-a3bb5ebbbd84-1727306161303] = [groups:][instances:]
+}
+
+element {
+  interactable = true
+  source = |||%n%Alpvia, Crystal, Dzsonzi, GayGirl_Violet, HanetRee, Lúthien, MrRumblz89, Neijr, NikWas, Proga, Red9433, RaKonski, Shortman, SkullBoy987, Teddo, ThEmeralDuke, TheOverlyCaffienatedTrashPanda, TheRobbie72, WhoPlaysTheFool, YourAverageNoob%n%|||
+  source_mode = direct
+  shadow = true
+  scale = 0.8
+  base_color = #FFFFFFFF
+  text_border = 2
+  line_spacing = 2
+  enable_scrolling = false
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  code_block_single_color = #737373FF
+  code_block_multi_color = #565656FF
+  headline_line_color = #A9A9A9FF
+  separation_line_color = #A9A9A9FF
+  hyperlink_color = #0771FCFF
+  quote_color = #818181FF
+  quote_indent = 8.0
+  quote_italic = false
+  bullet_list_dot_color = #A9A9A9FF
+  bullet_list_indent = 8.0
+  bullet_list_spacing = 3.0
+  parse_markdown = true
+  element_type = text_v2
+  instance_identifier = f707ff60-afee-4589-841e-e962c30c9d12-1727526798279
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  advanced_posx = 434
   advanced_posy = 320
   advanced_width = 220
   x = -233
