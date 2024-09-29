@@ -7,7 +7,6 @@ function LakyCompactingRecipes(event) {
     const recipeList = [
         [
             "create:ochrum",
-            "minecraft:sandstone",
             "minecraft:dripstone_block",
             { fluid: "create:honey", amount: 100 * mB },
             "minecraft:yellow_dye",
@@ -15,13 +14,11 @@ function LakyCompactingRecipes(event) {
         [
             "create:crimsite",
             "minecraft:tuff",
-            "minecraft:red_sand",
             { fluid: "tconstruct:blood", amount: 100 * mB },
             "minecraft:red_dye",
         ],
         [
             "create:limestone",
-            "minecraft:calcite",
             "minecraft:clay",
             { fluid: "milk:still_milk", amount: 100 * mB },
             "minecraft:white_dye",
@@ -44,7 +41,7 @@ function LakyCompactingRecipes(event) {
             "create:scorchia",
             "minecraft:blackstone",
             "ad_astra:moon_sand",
-            { fluid: "tconstruct:blazing_blood", amount: 100 * mB },
+            { fluid: "tconstruct:blazing_blood", amount: 50 * mB },
             "minecraft:black_dye",
         ],
         [
@@ -133,6 +130,31 @@ function LakyCrushingRecipes(event) {
                 ["create:raw_zinc", 1],
                 ["create:powdered_obsidian", 0.9],
                 ["minecraft:black_dye", 0.4],
+                ["minecraft:tuff", 0.25],
+            ],
+        },
+        {
+            input: "ad_astra:mars_cobblestone",
+            outputs: [
+                ["ad_astra:raw_ostrum", 0.04],
+                ["ad_astra:infernal_spire_block", 0.02],
+                ["ad_astra:mars_sand", 1],
+            ],
+        },
+        {
+            input: "ad_astra:mercury_cobblestone",
+            outputs: [
+                ["ad_astra:raw_calorite", 0.04],
+                ["minecraft:basalt", 0.2],
+                ["minecraft:blackstone", 0.2],
+                ["minecraft:magma_block", 0.08],
+            ],
+        },
+        {
+            input: "ad_astra:moon_cobblestone",
+            outputs: [
+                ["ad_astra:raw_desh", 0.03],
+                ["ad_astra:mars_sand", 1],
                 ["minecraft:tuff", 0.25],
             ],
         },

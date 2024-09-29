@@ -5,7 +5,7 @@ overridden_screens {
 
 custom_gui {
   identifier = main_menu_image_credits
-  title = Main Menu Image Credits
+  title = Create: Astral Credits
   allow_esc = true
   transparent_world_background = true
   transparent_world_background_overlay = true

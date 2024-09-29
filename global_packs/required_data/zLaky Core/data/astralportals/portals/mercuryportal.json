@@ -2,7 +2,7 @@
     "block": "createastral:mercurian_stone",
     "dim": "ad_astra:mercury",
     "ignitionType": "ITEM",
-    "ignitionSource": "createastral:subatomic_ingot",
+    "ignitionSource": "createastral:astral_conduit",
 	"returnDim": "ad_astra:mars",
     "r": 189,
     "g": 38,

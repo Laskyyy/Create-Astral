@@ -23,6 +23,12 @@ onEvent("recipes", (event) => {
             cast: ["minecraft:diorite", true],
         },
         {
+            fluid: ["yttr:void", BUCKET],
+            result: "yttr:raw_gadolinite_block",
+            cooling_time: 140,
+            cast: ["ad_astra:raw_calorite_block", true],
+        },
+        {
             fluid: ["tconstruct:molten_cobalt", BUCKET],
             result: "extended_drawers:controller",
             cooling_time: 194, // same as cooling cobalt block
@@ -131,7 +137,7 @@ onEvent("recipes", (event) => {
             cast: ["create:large_cogwheel", true],
         },
         {
-            fluid: ["tconstruct:molten_gold", BUCKET / 2],
+            fluid: ["tconstruct:molten_gold", INGOT * 4],
             result: "createastral:golden_bowl",
             cooling_time: 100,
             cast: ["tconstruct:round_plate_cast", false],
@@ -155,6 +161,12 @@ onEvent("recipes", (event) => {
             cast: ["tconstruct:rod_cast", false],
         },
         {
+            fluid: ["tconstruct:molten_uranium", mB*500],
+            result: "techreborn:data_storage_chip",
+            cooling_time: 300,
+            cast: ["tconstruct:rod_cast", false],
+        },
+        {
             fluid: ["kubejs:liquid_xp_nuggies", 8 * NUGGET],
             result: "minecraft:experience_bottle",
             cooling_time: 30,
@@ -167,11 +179,17 @@ onEvent("recipes", (event) => {
             cast: ["createastral:fragile_rocket_fin", true],
         },
         {
-            fluid: ["tconstruct:seared_stone", INGOT],
-            result: "astralfoods:seared_potato",
-            cooling_time: 40,
-            cast: ["minecraft:potato", true],
+            fluid: ["tconstruct:molten_steel", INGOT],
+            result: "astraladditions:steel_ring",
+            cooling_time: 100,
+            cast: ["astraladditions:ring_gold_cast", false],
         },
+        {
+            fluid: ["kubejs:shimmer", NUGGET*3],
+            result: "astraladditions:shimmer_lily",
+            cooling_time: 20,
+            cast: ["minecraft:lily_of_the_valley", true],
+        }
     ].forEach((recipe) => {
         event.custom({
             type: "tconstruct:casting_table",

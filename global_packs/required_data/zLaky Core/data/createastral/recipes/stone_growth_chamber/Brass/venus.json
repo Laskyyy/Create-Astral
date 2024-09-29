@@ -1,0 +1,43 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "createastral:stone_growth_chamber",
+	"time": 5,
+	"requirements": [
+		{
+			"type": "custommachinery:structure",
+			"keys": {
+				"a": "create:brass_casing",
+				"l": "minecraft:lava",
+				"g": "minecraft:glass"
+			},
+			"pattern": [
+				[
+					"aaa",
+					"aaa",
+					"aaa"
+				],
+				[
+					"ggg",
+					"glg",
+					"gmg"
+				],
+				[
+					"aaa",
+					"aaa",
+					"aaa"
+				]
+			]
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "ad_astra:venus_cobblestone",
+			"amount": 1,
+			"mode": "output"
+		},
+		{
+			"type": "custommachinery:dimension",
+			"filter": "ad_astra:venus_orbit",
+			"blacklist": false
+		}
+	]
+}

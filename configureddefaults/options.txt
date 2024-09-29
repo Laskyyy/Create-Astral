@@ -36,7 +36,7 @@ ao:2
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:true
-resourcePacks:["vanilla","compressor","Fabric Mods","loadmyresources.hiddenpack","file/BetterVanillaBuildingV2.86.1","Create Legacy Copper","Steam \u0027n Rails Green Signals","file/BetterVanillaBuildingFenceFixes","file/ComputerCreate","file/Created--Updated","file/andesite-chests-crafting-table-1-19","file/Fresh-Animations-CEM-fork-main","file/Reim GUI + Default Dark","file/rgui-astral"]
+resourcePacks:["vanilla","compressor","Fabric Mods","loadmyresources.hiddenpack","file/BetterVanillaBuildingV2.86.1","Create Legacy Copper","Steam \u0027n Rails Green Signals","file/BetterVanillaBuildingFenceFixes","file/ComputerCreate","file/Created--Updated","file/andesite-chests-crafting-table-1-19","file/Fresh-Animations-CEM-fork-main","file/Reim GUI + Default Dark","file/rgui-astral","file/§5§o§l§nre§9§lBlasted Moon§r","file/§5§l§9§lAstral Community Paintings§r"]
 incompatibleResourcePacks:["file/BetterVanillaBuildingV2.86.1","file/Created--Updated","file/andesite-chests-crafting-table-1-19","file/Fresh-Animations-CEM-fork-main","file/Reim GUI + Default Dark"]
 lastServer:
 lang:en_us

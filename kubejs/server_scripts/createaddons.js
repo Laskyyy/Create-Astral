@@ -16,6 +16,16 @@ onEvent("recipes", (event) => {
             output: ["createastral:electrified_pin", 1],
             energy: 800,
         },
+				{
+            input: ["astraladditions:shimmer_heart", 1],
+            output: ["astraladditions:awakened_shimmer_heart", 1],
+            energy: 800,
+        },
+        {
+            input: ["yttr:neodymium_dust", 1],
+            output: ["yttr:neodymium_disc", 1],
+            energy: 5000,
+        },
     ].forEach((recipe) => {
         event.custom({
             type: "createaddition:charging",

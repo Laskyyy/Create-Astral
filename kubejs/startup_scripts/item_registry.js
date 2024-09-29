@@ -3,7 +3,8 @@ onEvent("item.registry", (event) => {
     event.create("createastral:crushed_raw_desh");
     event.create("createastral:crushed_raw_ostrum");
     event.create("createastral:crushed_raw_calorite");
-    event.create("createastral:subatomic_ingot");
+    event.create("createastral:subatomic_ingot").rarity("Epic");
+    event.create("createastral:ender_plating").rarity("Epic");
     event.create("createastral:prismatic_crystal");
     event.create("createastral:astral_conduit").maxStackSize(1).maxDamage(20);
     event.create("createastral:andesite_compound");
@@ -16,20 +17,24 @@ onEvent("item.registry", (event) => {
     event.create("createastral:calorite_pin");
     event.create("createastral:martian_clump");
     event.create("createastral:electrified_pin");
+    event.create("createastral:ender_mush");
+    event.create("createastral:promethium_atomic_battery").glow(true).rarity("Epic");
     event.create("createastral:logo");
     event.create("createastral:bronze_ingot");
+    event.create("createastral:uranium_residue").rarity("Uncommon");
     event.create("createastral:navigation_mechanism");
+    event.create("createastral:living_mechanism");
     event.create("createastral:coin", "create:sequenced_assembly").displayName("Golden Coin");
 
     event.create("createastral:quadrocopter_blueprint").texture("create:item/schematic");
     event.create("createastral:gyrodyne_blueprint").texture("create:item/schematic");
     event.create("createastral:biplane_blueprint").texture("create:item/schematic");
     event.create("createastral:airship_blueprint").texture("create:item/schematic");
-    event.create("createastral:refining_agent");
-    event.create("createastral:separation_agent");
-    event.create("createastral:shimmer_amplifier");
+    event.create("createastral:refining_agent").rarity("Epic");
+    event.create("createastral:separation_agent").rarity("Rare");
+    event.create("createastral:shimmer_amplifier").rarity("Epic");
     event.create("createastral:star_shard").glow(true);
-    event.create("createastral:pure_star_shard").glow(true);
+    event.create("createastral:pure_star_shard").glow(true).rarity("Epic");
     event.create("createastral:crushed_raw_gadolinite");
     event.create("createastral:experience_ingot").glow(true);
     event.create("createastral:stone_dust").displayName("Stone Dust");
@@ -195,6 +200,7 @@ onEvent("item.registry", (event) => {
         });
     event.create("createastral:pure_biomatter");
     event.create("createastral:lime").displayName("Lime Dust");
+
     event.create("createastral:synthetic_slime");
 
     // Transitional Items

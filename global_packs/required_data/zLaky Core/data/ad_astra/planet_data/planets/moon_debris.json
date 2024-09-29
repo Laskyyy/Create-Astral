@@ -5,7 +5,7 @@
     "world": "createastral:moon_debris",
     "orbit_world": "ad_astra:moon_debris_orbit",
     "parent_world": "minecraft:overworld",
-    "rocket_tier": 4,
+    "rocket_tier": 2,
     "gravity": 1.3,
     "has_atmosphere": false,
     "days_in_year": 27,
