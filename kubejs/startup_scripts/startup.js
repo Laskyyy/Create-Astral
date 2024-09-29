@@ -16,6 +16,14 @@ onEvent("item.modification", (event) => {
 ///// MODIFY CHARACTERISTICS OF BLOCKS /////
 
 onEvent("block.modification", (event) => {
+    event.modify("yttr:polished_scorched_obsidian_holster", (block) => {
+        block.destroySpeed = -1;
+        block.explosionResistance = 99999;
+    });
+    event.modify("yttr:polished_scorched_obsidian_holster_alive", (block) => {
+        block.destroySpeed = -1;
+        block.explosionResistance = 99999;
+    });
     event.modify("yigd:grave", (block) => {
         block.destroySpeed = -1;
     });

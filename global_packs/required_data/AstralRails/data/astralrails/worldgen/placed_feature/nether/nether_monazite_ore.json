@@ -1,0 +1,44 @@
+{
+  "feature": "astralrails:nether/nether_monazite_ore",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 16
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+		{
+			"type": "minecraft:biome"
+		},
+		{
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 32
+        },
+        "max_inclusive": {
+          "absolute": 96
+        }
+      }
+    },
+		{
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              0,
+              0
+            ],
+            "blocks": "astraladditions:enderrack"
+          }
+				]
+      }
+    }
+  ]
+}

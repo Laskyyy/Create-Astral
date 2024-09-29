@@ -1,0 +1,19 @@
+{
+    "type": "astraladditions:desizer",
+    "ingredients": [
+        {"item":"createastral:ultramatter"}, {"item":"createastral:ultramatter"}, {"item":"createastral:ultramatter"},
+        {"item":"createastral:ultramatter"}, {"item":"minecraft:bedrock"}, {"item":"createastral:ultramatter"},
+        {"item":"createastral:ultramatter"}, {"item":"createastral:ultramatter"}, {"item":"createastral:ultramatter"},
+
+        {"item":"createastral:ultramatter"}, {"item":"minecraft:bedrock"}, {"item":"createastral:ultramatter"},
+        {"item":"minecraft:bedrock"}, {"item":"createastral:contained_end"}, {"item":"minecraft:bedrock"},
+        {"item":"createastral:ultramatter"}, {"item":"minecraft:bedrock"}, {"item":"createastral:ultramatter"},
+
+        {"item":"createastral:ultramatter"}, {"item":"createastral:ultramatter"}, {"item":"createastral:ultramatter"},
+        {"item":"createastral:ultramatter"}, {"item":"minecraft:bedrock"}, {"item":"createastral:ultramatter"},
+        {"item":"createastral:ultramatter"}, {"item":"createastral:ultramatter"}, {"item":"createastral:ultramatter"}
+    ],
+    "output": {
+        "item": "yttr:root_of_continuity"
+    }
+} 

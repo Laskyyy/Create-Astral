@@ -108,6 +108,12 @@ const MATERIALS = [
         block: "minecraft:diamond_block",
         plate: "techreborn:diamond_plate",
         useMechPress: false,
+    },
+    {
+        ingot: "yttr:delicace",
+        block: "minecraft:barrier",
+        plate: "createastral:ender_plating",
+        useMechPress: false,
     }
 ];
 
