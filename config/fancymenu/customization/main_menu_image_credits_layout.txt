@@ -622,7 +622,7 @@ element {
 
 element {
   interactable = true
-  source = {"placeholder":"local","values":{"key":"astralmenu.creditsmenu.testers.header"}}
+  source = |||%n%{"placeholder":"local","values":{"key":"astralmenu.creditsmenu.testers.header"}}%n%|||
   source_mode = direct
   shadow = true
   case_mode = upper
