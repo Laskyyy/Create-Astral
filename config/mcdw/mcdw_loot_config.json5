@@ -17,7 +17,8 @@
 			"minecraft:chests/igloo_chest",
 			"minecraft:chests/village/village_toolsmith",
 			"kaisyn:village/exclusives/village_classic_blacksmith",
-			"kaisyn:outpost/common/armory"
+			"kaisyn:outpost/common/armory",
+			"astralrails:chests/generic/c_andesite_age"
 		]
 	},
 	"UNCOMMON_LOOT_TABLES": {
@@ -26,7 +27,8 @@
 			"minecraft:chests/woodland_mansion",
 			"minecraft:chests/bastion_bridge",
 			"minecraft:chests/bastion_other",
-			"minecraft:chests/ruined_portal"
+			"minecraft:chests/ruined_portal",
+			"astralrails:chests/generic/c_copper_age"
 		]
 	},
 	"RARE_LOOT_TABLES": {
@@ -35,7 +37,8 @@
 			"minecraft:chests/underwater_ruin_big",
 			"minecraft:chests/simple_dungeon",
 			"minecraft:chests/pillager_outpost",
-			"minecraft:chests/nether_bridge"
+			"minecraft:chests/nether_bridge",
+			"astralrails:chests/generic/c_brass_age"
 		]
 	},
 	"EPIC_LOOT_TABLES": {

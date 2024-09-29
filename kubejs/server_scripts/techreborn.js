@@ -159,6 +159,28 @@ onEvent("recipes", (event) => {
 
     event.custom({
         type: "techreborn:centrifuge",
+        power: 100,
+        time: 500,
+        ingredients: [
+            {
+                item: "yttr:yttrium_dust",
+                count: 4,
+            },
+        ],
+        results: [
+            {
+                item: "createastral:crushed_raw_calorite",
+                count: 3,
+            },
+            {
+                item: "createastral:uranium_residue",
+                count: 1,
+            },
+        ],
+    });
+
+    event.custom({
+        type: "techreborn:centrifuge",
         power: 8,
         time: 500,
         ingredients: [

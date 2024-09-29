@@ -9,11 +9,11 @@ const INGOT_FLUID_AMOUNT = 9000;
 function mixingRecipeGen(event) {
     event.forEachRecipe({ type: "farmersdelight:cooking" }, (recipe) => {
         let outputItem = recipe.getOriginalRecipeResult().getId().split(":")[1];
-        let inputItems = recipe.json.get("ingredients");
+        let inputItems = recipe.json.get("ingredients").deepCopy();
         if (outputItem == "cabbage_rolls") return; //too few ingredients to add recipe for
 
         let containers = {
-            "minecraft:glass_bottle": ["hot_cocoa", "apple_cider"],
+            "minecraft:glass_bottle": ["hot_cocoa", "apple_cider", "glow_berry_custard"],
             "minecraft:pumpkin": ["stuffed_pumpkin_block"],
             "#c:dough": ["dumplings"],
         };
@@ -23,21 +23,29 @@ function mixingRecipeGen(event) {
                 containers[key].includes(outputItem)
             ) ?? "minecraft:bowl";
 
-        for (let i = 0; i < inputItems.length; i++) {
-            if (inputItems[i].getFirst() == "farmersdelight:tomato_sauce") {
-                inputItems.remove(i);
-                inputItems.push({
-                    fluid: "kubejs:tomato_sauce_fluid",
-                    amount: FULL_BUCKET_AMOUNT / 4,
-                });
-                break;
-            } else {
-                inputItems[i]
-                    .getFirst()
-                    .getTags()
-                    .forEach((tag) => {
-                        if (tag == "c:dough") inputItems.remove(i); //removes dough from dumpling recipe
-                    });
+        for (let i = 0; i < inputItems.size(); i++) {
+            if((inputItems.get(i).getClass() == "class com.google.gson.JsonObject")) {
+                if (inputItems.get(i).has("item")) {
+                    if (inputItems.get(i).get("item").toString().replaceAll("\"","") == "farmersdelight:tomato_sauce") {
+                        let JsonObject = java('com.google.gson.JsonObject');
+                        let tomato_sauce_fluid_ingredient = new JsonObject();
+                        tomato_sauce_fluid_ingredient.add("fluid", "kubejs:tomato_sauce_fluid");
+                        tomato_sauce_fluid_ingredient.add("amount", FULL_BUCKET_AMOUNT/4);
+                        inputItems.set(i,tomato_sauce_fluid_ingredient);
+                    }
+                } else {
+                    if (inputItems.get(i).has("tag")) {
+                        if(inputItems.get(i).get("tag").toString().replaceAll("\"","") == ("c:dough")) {
+                            inputItems.remove(inputItems.get(i)); //removes dough from dumpling recipe
+                        } else if (inputItems.get(i).get("tag").toString().replaceAll("\"","") == "c:milk") {
+                            let JsonObject = java('com.google.gson.JsonObject');
+                            let milk = new JsonObject();
+                            milk.add("fluid", "milk:still_milk");
+                            milk.add("amount", FULL_BUCKET_AMOUNT/4);
+                            inputItems.set(i,milk);
+                        }    
+                    }
+                }
             }
         }
         event.recipes

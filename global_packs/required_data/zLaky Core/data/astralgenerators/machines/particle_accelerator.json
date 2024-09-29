@@ -1,0 +1,89 @@
+{
+  "name": "Particle Accelerator Controller",
+  "appearance": {
+    "block": "techreborn:computer_cube",
+    "running": {
+      "lightlevel": 15
+    }
+  },
+  "gui": [
+    {
+      "texture": "custommachinery:textures/gui/base_background.png",
+      "x": 0,
+      "y": 0,
+      "type": "custommachinery:texture"
+    },
+    {
+      "x": 47,
+      "y": 80,
+      "type": "custommachinery:player_inventory"
+    },
+    {
+      "type": "custommachinery:fluid",
+      "x": 40,
+      "y": 20,
+      "id": "coolingtank"
+    },
+    {
+      "id": "input",
+      "x": 121,
+      "y": 38,
+      "type": "custommachinery:slot"
+    },
+    {
+      "type": "custommachinery:progress",
+      "x": 140,
+      "y": 39
+    },
+    {
+      "id": "output",
+      "x": 165,
+      "y": 38,
+      "type": "custommachinery:slot"
+    },
+    {
+      "text": "Particle Accelerator",
+      "x": 7,
+      "y": 5,
+      "type": "custommachinery:text"
+    },
+    {
+      "type": "custommachinery:energy",
+      "x": 20,
+      "y": 20
+    },
+
+    {
+      "x": 236,
+      "y": 5,
+      "type": "custommachinery:status"
+    }
+  ],
+  "components": [
+    {
+      "type": "custommachinery:item",
+      "capacity": 64,
+      "id": "input",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "capacity": 64,
+      "id": "output",
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:energy",
+      "capacity": "1000000000000",
+      "maxInput": "1000000000000",
+      "maxOutput": "1000000000000"
+    },
+    {
+      "type": "custommachinery:fluid",
+      "capacity": "81000000",
+      "maxInput": "81000000",
+      "maxOutput": "0",
+      "id": "coolingtank"
+    }
+  ]
+}

@@ -433,7 +433,7 @@ onEvent("recipes", (event) => {
         { output: "dbe:copper_coil" },
 
         { output: "farmersdelight:cooking_pot" },
-        { output: "farmersdelight:rope" },
+        { output: "campanion:rope" },
 
         { mod: "lchunkloader" },
 
@@ -481,6 +481,10 @@ onEvent("recipes", (event) => {
         { output: "yttr:neodymium_disc" },
         { output: "yttr:yttrium_ingot", type: "minecraft:smelting"},
         { output: "yttr:yttrium_ingot", type: "minecraft:blasting"},
+        { output: "yttr:xl_iron_ingot" },
+        { output: "yttr:spatula" },
+        { output: "yttr:giant_cobblestone" },
+        { output: "yttr:armor_plating" },
 
 
         // Minecraft

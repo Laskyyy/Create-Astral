@@ -23,6 +23,12 @@ onEvent("recipes", (event) => {
             cast: ["minecraft:diorite", true],
         },
         {
+            fluid: ["yttr:void", BUCKET],
+            result: "yttr:raw_gadolinite_block",
+            cooling_time: 140,
+            cast: ["ad_astra:raw_calorite_block", true],
+        },
+        {
             fluid: ["tconstruct:molten_cobalt", BUCKET],
             result: "extended_drawers:controller",
             cooling_time: 194, // same as cooling cobalt block
@@ -152,6 +158,12 @@ onEvent("recipes", (event) => {
             fluid: ["kubejs:compound_mixture", mB*11],
             result: "create:shaft",
             cooling_time: 10,
+            cast: ["tconstruct:rod_cast", false],
+        },
+        {
+            fluid: ["tconstruct:molten_uranium", mB*500],
+            result: "techreborn:data_storage_chip",
+            cooling_time: 300,
             cast: ["tconstruct:rod_cast", false],
         },
         {
