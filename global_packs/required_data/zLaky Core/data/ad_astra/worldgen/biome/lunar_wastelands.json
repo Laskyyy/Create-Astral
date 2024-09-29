@@ -86,7 +86,9 @@
 			"astralrails:moon_soul_sand_patch",
 			"astralrails:moon_shroom_veg",
 			"astralrails:moon_nether_wart_patch",
-			"astralrails:moon_twisting_vines"
+			"astralrails:moon_twisting_vines",
+			"astralrails:moon_lune_shroom_patch",
+			"astralrails:moon_bulba_patch"
     ]
   ]
 }

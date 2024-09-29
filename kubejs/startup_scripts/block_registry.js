@@ -40,7 +40,7 @@ onEvent("block.registry", (event) => {
         .material("lantern")
         .defaultTranslucent()
         .hardness(26)
-        .displayName("Strudy Cage")
+        .displayName("Sturdy Cage")
         .tagBlock("minecraft:mineable/pickaxe");
 				
 		event

@@ -70,6 +70,12 @@ onEvent("recipes", (event) => {
             cooling_time: 40,
             cast: ["kubejs:fire_resistant_fragile_sheet_block", true],
         },
+        {
+            fluid: ["kubejs:shimmer", BUCKET * 4],
+            result: "createastral:ultramatter",
+            cooling_time: 40,
+            cast: ["kubejs:compressed_ultrapure_carbon_block", true],
+        },
     ].forEach((recipe) => {
         event.custom({
             type: "tconstruct:casting_basin",

@@ -93,7 +93,8 @@
 			"astralrails:mars_desert_veg",
 			"astralrails:mars_soul_sand_patch",
 			"astralrails:mars_bone_pillar",
-       "astralrails:mars_blackstone_patch"
+      "astralrails:mars_blackstone_patch",
+      "astralrails:mars_bramblebone_veg"
     ]
   ]
 }

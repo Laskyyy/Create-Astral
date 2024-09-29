@@ -3488,7 +3488,7 @@ function superheatedMixingRecipes(event) {
             ["astraladditions:fragile_item_2"],
         ],
         [["tconstruct:ender_slime_crystal", "4x yttr:rubble"], ["yttr:promethium_speck"]],
-        [["4x tconstruct:ender_slime_crystal", "minecraft:golden_apple"], ["doodads:magic_plum"]],
+        //[["4x tconstruct:ender_slime_crystal", "minecraft:golden_apple"], ["doodads:magic_plum"]], PLUM IS OP!
 
         [
             ["tconstruct:ichor_slime_sling", "yttr:delicace", { fluid: "kubejs:metabolic_broth", amount: BUCKET / 2 }],
