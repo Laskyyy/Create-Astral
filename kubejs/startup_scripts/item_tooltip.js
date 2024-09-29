@@ -174,7 +174,7 @@ onEvent("item.tooltip", (e) => {
         //Tech Reborn tooltips
         {
             item: "techreborn:uu_matter",
-            tooltip: "Material made in chapter 5 by putting scrap into the Matter Fabricator.",
+            tooltip: "Material made in Chapter 5 using the Shimmer Refinery multiblock.",
         }, //not done yet, need to find out rates
         {
             item: "techreborn:scrap",
