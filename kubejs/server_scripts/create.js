@@ -273,7 +273,7 @@ function crushingRecipes(event) {
         },
         {
             input: "ad_astra:conglomerate",
-            outputs: [["ad_astra:ostrum_nugget", 0.3]],
+            outputs: [["ad_astra:raw_ostrum", 0.07]],
         },
         {
             input: "ad_astra:infernal_spire_block",
@@ -411,6 +411,14 @@ function itemApplication(event) {
         {
             ingredients: [{ item: "techreborn:basic_machine_casing" }, { item: "create:sturdy_sheet" }],
             results: [{ item: "techreborn:industrial_machine_casing" }],
+        },
+        {
+            ingredients: [{ item: "techreborn:advanced_machine_frame" }, { item: "create:shadow_steel" }],
+            results: [{ item: "create:shadow_steel_casing" }],
+        },
+        {
+            ingredients: [{ item: "techreborn:advanced_machine_frame" }, { item: "create:refined_radiance" }],
+            results: [{ item: "create:refined_radiance_casing" }],
         },
     ].forEach((recipe) => {
         event.custom({
@@ -2339,7 +2347,7 @@ function mixingRecipes(event) {
             input: [
                 {
                     fluid: "kubejs:molten_desh",
-                    amount: INGOT / 2,
+                    amount: INGOT *4 ,
                 },
                 {
                     fluid: "kubejs:molten_yttrium",
@@ -2354,7 +2362,7 @@ function mixingRecipes(event) {
             input: [
                 {
                     fluid: "kubejs:molten_ostrum",
-                    amount: INGOT / 2,
+                    amount: INGOT * 2 ,
                 },
                 {
                     fluid: "kubejs:molten_yttrium",
@@ -2369,7 +2377,7 @@ function mixingRecipes(event) {
             input: [
                 {
                     fluid: "kubejs:molten_calorite",
-                    amount: INGOT / 2,
+                    amount: INGOT,
                 },
                 {
                     fluid: "kubejs:molten_yttrium",
@@ -2409,7 +2417,7 @@ function mixingRecipes(event) {
                 "ad_astra:calorite_ingot",
                 {
                     fluid: "kubejs:molten_yttrium",
-                    amount: 2 * INGOT,
+                    amount: INGOT,
                 },
             ],
             heat: "superheated",
@@ -2774,6 +2782,15 @@ function mechanicalCraftingRecipes(event) {
                 E: "#create:seats",
                 F: "createastral:airship_blueprint",
                 G: "farmersdelight:rope",
+            },
+        },
+        {
+            output: "yttr:magtank",
+            shape: ["CAC", "ABA", "ABA", "CAC"],
+            inputs: {
+                A: "yttr:armor_plating",
+                B: "techreborn:data_storage_chip",
+                C: "ad_astra:calorite_plate"
             },
         },
         {
@@ -3534,6 +3551,11 @@ function compactingRecipes(event) {
         .createCompacting("createastral:star_shard", [{ fluid: "kubejs:molten_radiance", amount: 100 * mB }])
         .heated()
         .processingTime(500);
+
+    event.recipes
+        .createCompacting("ad_astra:permafrost", ["9x ad_astra:glacio_stone"])
+        .superheated()
+        .processingTime(200);
 
     event.recipes.createCompacting("4x minecraft:purpur_block", [
         "4x ad_astra:strophar_cap",

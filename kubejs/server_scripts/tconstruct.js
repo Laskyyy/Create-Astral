@@ -67,7 +67,7 @@ onEvent("recipes", (event) => {
         {
             fluid: ["kubejs:blast-resistant_cement", BUCKET / 2],
             result: "createastral:rocket_casing",
-            cooling_time: 40,
+            cooling_time: 500,
             cast: ["kubejs:fire_resistant_fragile_sheet_block", true],
         },
         {

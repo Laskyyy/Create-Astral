@@ -1246,6 +1246,19 @@ onEvent("recipes", (event) => {
 
     event.shaped(
         Item.of("custommachinery:custom_machine_item", {
+            machine: "createastral:shimmer_refinery",
+        }),
+        ["BDB", "CEC", "BDB"],
+        {
+            B: "yttr:armor_plating",
+            C: "techreborn:industrial_circuit",
+            D: "techreborn:machine_parts",
+            E: "createastral:shimmer_amplifier",
+        }
+    );
+
+    event.shaped(
+        Item.of("custommachinery:custom_machine_item", {
             machine: "createastral:gas_mixer",
         }),
         ["PCP", "WTW", "ESE"],

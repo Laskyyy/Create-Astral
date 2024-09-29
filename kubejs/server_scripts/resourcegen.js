@@ -154,6 +154,15 @@ function LakyCrushingRecipes(event) {
             ],
         },
         {
+            input: "ad_astra:glacio_cobblestone",
+            outputs: [
+                ["minecraft:blue_ice", 0.3],
+                ["minecraft:packed_ice", 0.5],
+                ["minecraft:snow_block", 0.3],
+                ["createastral:prismatic_crystal", 0.05],
+            ],
+        },
+        {
             input: "ad_astra:moon_cobblestone",
             outputs: [
                 ["ad_astra:raw_desh", 0.03],

@@ -82,6 +82,20 @@ onEvent("worldgen.add", (event) => {
         ore.count([1, 2]).squared().triangleHeight(0, 110);
         ore.size = 30;
     });
+    event.addOre((ore) => {
+        ore.id = "kubejs:wastelandrubble"; // optional
+        ore.biomes = [
+            "minecraft:nether_wastes",
+            "minecraft:warped_forest",
+            "minecraft:crimson_forest",
+            "minecraft:small_end_islands",
+        ];
+        ore.addTarget("#createastral:nether_ore_replaceables", "yttr:ruined_cobblestone");
+
+        ore.count([1, 4]).squared().triangleHeight(0, 135);
+        ore.size = 40;
+    });
+
 
     ///MARS
 
