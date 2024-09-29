@@ -74,7 +74,7 @@ onEvent("recipes", (event) => {
             fluid: ["kubejs:shimmer", BUCKET * 4],
             result: "createastral:ultramatter",
             cooling_time: 40,
-            cast: ["kubejs:compressed_ultrapure_carbon_block", true],
+            cast: ["yttr:compressed_ultrapure_carbon_block", true],
         },
     ].forEach((recipe) => {
         event.custom({
