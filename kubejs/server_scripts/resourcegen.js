@@ -8,18 +8,21 @@ function LakyCompactingRecipes(event) {
         [
             "create:ochrum",
             "minecraft:dripstone_block",
+            "minecraft:cobblestone",
             { fluid: "create:honey", amount: 100 * mB },
             "minecraft:yellow_dye",
         ],
         [
             "create:crimsite",
             "minecraft:tuff",
+            "minecraft:cobblestone",
             { fluid: "tconstruct:blood", amount: 100 * mB },
             "minecraft:red_dye",
         ],
         [
             "create:limestone",
             "minecraft:clay",
+            "minecraft:cobblestone",
             { fluid: "milk:still_milk", amount: 100 * mB },
             "minecraft:white_dye",
         ],

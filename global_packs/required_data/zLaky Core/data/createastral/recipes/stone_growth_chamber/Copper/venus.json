@@ -36,7 +36,7 @@
 		},
 		{
 			"type": "custommachinery:dimension",
-			"filter": "ad_astra:venus_orbit",
+			"filter": ["ad_astra:venus_orbit", "ad_astra:venus"],
 			"blacklist": false
 		}
 	]

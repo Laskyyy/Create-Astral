@@ -9,6 +9,13 @@
     "item.createastral.bronze_sheet": "Bronze sheet",
     "item.createastral.olivine_sheet": "Olivine Sheet",
 
+    "item.createastral.t1_upgrade": "Tier 1 Upgrade",
+    "item.createastral.t2_upgrade": "Tier 2 Upgrade",
+    "item.createastral.t3_upgrade": "Tier 3 Upgrade",
+    "item.createastral.t4_upgrade": "Tier 4 Upgrade",
+    "item.createastral.t5_upgrade": "Tier 5 Upgrade",
+    "item.createastral.t6_upgrade": "Tier 6 Upgrade",
+
     "item.createastral.incomplete_electronic_circuit": "Incomplete electronic circuit",
     "item.createastral.golden_pin": "Golden pin",
     "item.createastral.calorite_pin": "Calorite pin",

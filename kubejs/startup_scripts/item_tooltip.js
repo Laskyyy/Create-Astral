@@ -5,12 +5,24 @@ onEvent("item.tooltip", (e) => {
     hasFired = true;
     const tooltips = [
         {
-            item: "createastral:laskinium_pill",
-            tooltip: "makes you go zoom but make you high",
-        },
-        {
             item: "createastral:swift_andesite",
             tooltip: "Place below a block to grant it a speed boost similar to andesite pavement.",
+        },
+        {
+            item: "createastral:voidtouched_compound",
+            tooltip: "Throw chromatic compound into void fluid to obtain.",
+        },
+        {
+            item: "kubejs:broken_fire_resistant_fragile_sheet_block",
+            tooltip: "Throw lingering fire resistance onto fragile sheet blocks to create.",
+        },
+        {
+            item: "kubejs:fire_resistant_fragile_sheet_block",
+            tooltip: "Throw lingering fire resistance onto fragile sheet blocks to create.",
+        },
+        {
+            item: "createastral:uranium_residue",
+            tooltip: "Use in a distillation tower mixed with mercury for molten uranium.",
         },
         {
             item: "tconstruct:smeltery_controller",

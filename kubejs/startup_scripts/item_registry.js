@@ -5,7 +5,7 @@ onEvent("item.registry", (event) => {
     event.create("createastral:crushed_raw_calorite");
     event.create("createastral:subatomic_ingot").rarity("Epic");
     event.create("createastral:ender_plating").rarity("Epic");
-    event.create("createastral:prismatic_crystal");
+    event.create("createastral:prismatic_crystal").displayName("Prismatic Crystal");
     event.create("createastral:astral_conduit").maxStackSize(1).maxDamage(20);
     event.create("createastral:andesite_compound");
     event.create("createastral:bronze_sheet");

@@ -1,0 +1,16 @@
+{
+    "type": "estrogen:centrifuging",
+    "ingredients": [
+        {
+            "amount": 81,
+            "fluid": "kubejs:metabolic_broth",
+            "nbt": {}
+        }
+    ],
+    "results": [
+        {
+            "amount": 81,
+            "fluid": "astraladditions:sputum"
+        }
+    ]
+}

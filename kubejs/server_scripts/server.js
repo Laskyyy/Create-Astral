@@ -916,7 +916,7 @@ onEvent("recipes", (event) => {
 
     event.shaped("createastral:promethium_atomic_battery", ["CAC", "BDB", "CEC"], {
         A: "techreborn:lithium_ion_battery",
-        B: "techreborn:machine_parts",
+        B: "techreborn:data_storage_chip",
         C: "yttr:armor_plating",
         D: "createastral:subatomic_ingot",
         E: "yttr:promethium_glob",
@@ -1215,6 +1215,18 @@ onEvent("recipes", (event) => {
         {
             D: "techreborn:insulated_copper_cable",
             E: "phonos:redstone_chip",
+            C: "create:copper_casing",
+        }
+    );
+
+    event.shaped(
+        Item.of("custommachinery:custom_machine_item", {
+            machine: "createastral:stone_growth_chamber",
+        }),
+        ["CCC", "DED", "CCC"],
+        {
+            D: "create:copper_sheet",
+            E: "minecraft:water_bucket",
             C: "create:copper_casing",
         }
     );
