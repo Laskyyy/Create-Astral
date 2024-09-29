@@ -431,6 +431,29 @@ function sequencedAssemblyRecipes(event) {
     //Honestly just good luck in figuring this out its too complex to
     //document in an effective way
     const inc_sturdy_sheet = "create:unprocessed_obsidian_sheet";
+		event.recipes
+				.createSequencedAssembly([Item.of("createastral:living_mechanism").withChance(1)], "yttr:ultrapure_carbon", [
+            event.recipes.createFilling("yttr:ultrapure_carbon", [
+                "yttr:ultrapure_carbon",
+                { fluid: "tconstruct:ender_slime", amount: INGOT },
+            ]),
+            event.recipes.createPressing("yttr:ultrapure_carbon", "yttr:ultrapure_carbon"),
+            event.recipes.createFilling("yttr:ultrapure_carbon", [
+                "yttr:ultrapure_carbon",
+                { fluid: "tconstruct:ender_slime", amount: INGOT },
+            ]),
+            event.recipes.createPressing("yttr:ultrapure_carbon", "yttr:ultrapure_carbon"),
+            event.recipes.createDeploying("yttr:ultrapure_carbon", [
+                "yttr:ultrapure_carbon",
+                "minecraft:ender_eye",
+            ]),
+            event.recipes.createFilling("yttr:ultrapure_carbon", [
+                "yttr:ultrapure_carbon",
+                { fluid: "kubejs:shimmer", amount: BUCKET/3 },
+            ]),
+        ])
+        .transitionalItem("yttr:ultrapure_carbon")
+        .loops(1);
     event.recipes
         .createSequencedAssembly(
             [Item.of("astraladditions:orbital_navigation_ring").withChance(1)],
@@ -1450,6 +1473,11 @@ function deployingRecipes(event) {
             output: "astraladditions:oh-no",
             basin_input: "astraladditions:moonblazed_orb",
             deployer_input: "astraladditions:orbital_navigation_ring",
+        },
+				{
+            output: "createastral:contained_end",
+            basin_input: "createastral:sturdy_cage",
+            deployer_input: "yttr:haemopal",
         },
     ].forEach((recipe) => {
         event.recipes
@@ -2731,7 +2759,7 @@ function mechanicalCraftingRecipes(event) {
                 C: "createastral:promethium_atomic_battery",
                 D: "create:shadow_steel_casing",
                 E: "create:refined_radiance_casing",
-                G: "createastral:subatomic_core",
+                G: "astraladditions:fragile_item_2",
                 F: "yttr:yttrium_block",
             },
         },
@@ -3145,6 +3173,7 @@ function mechanicalCraftingRecipes(event) {
 function pressingRecipes(event) {
     // [Input string, Output string]
     [
+        ["yttr:haemopal", "5x createastral:ultramatter"],
         ["minecraft:lapis_block", "create:lapis_sheet"],
         ["tconstruct:greenheart_log", "2x minecraft:green_dye"],
         ["tconstruct:skyroot_log", "2x minecraft:blue_dye"],

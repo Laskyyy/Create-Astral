@@ -1,9 +1,9 @@
 {
-  "feature": "astralrails:nether/crimson/blood_clot",
+  "feature": "astralrails:nether/warped/end_clot",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 16
+      "count": 4
     },
     {
       "type": "minecraft:height_range",
@@ -43,7 +43,7 @@
               -1,
               0
             ],
-            "blocks": "#minecraft:nylium"
+            "blocks": "astraladditions:twisted_nylium"
           }
         ]
       }

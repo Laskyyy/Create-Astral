@@ -36,13 +36,31 @@
     "monster": [
       {
         "type": "minecraft:zombified_piglin",
-        "weight": 1,
+        "weight": 5,
         "minCount": 2,
         "maxCount": 4
       },
       {
-        "type": "minecraft:hoglin",
+        "type": "minecraft:zoglin",
         "weight": 9,
+        "minCount": 3,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:piglin",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "astraladditions:voidtouched_skeleton",
+        "weight": 5,
+        "minCount": 3,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:wither_skeleton",
+        "weight": 5,
         "minCount": 3,
         "maxCount": 4
       },
@@ -94,7 +112,8 @@
       "minecraft:ore_gold_nether",
       "minecraft:ore_quartz_nether",
       "minecraft:ore_ancient_debris_large",
-      "minecraft:ore_debris_small"
+      "minecraft:ore_debris_small",
+			"astralrails:nether/nether_enderslime_geode"
     ],
     [],
     [

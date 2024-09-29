@@ -2,7 +2,7 @@
   "type": "minecraft:netherrack_replace_blobs",
   "config": {
     "state": {
-      "Name": "tconstruct:blood_slime",
+      "Name": "tconstruct:ender_slime_crystal_block",
       "Properties": {
         "axis": "y"
       }

@@ -2,13 +2,13 @@
   "type": "minecraft:netherrack_replace_blobs",
   "config": {
     "state": {
-      "Name": "createastral:monazite",
+      "Name": "createastral:monazite_crystal",
       "Properties": {
         "axis": "y"
       }
     },
     "target": {
-      "Name": "ad_astra:moon_stone"
+      "Name": "astraladditions:enderrack"
     },
     "radius": {
       "type": "minecraft:uniform",
