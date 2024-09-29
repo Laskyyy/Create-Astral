@@ -29,7 +29,7 @@
       "options": {
         "type": "minecraft:dragon_breath"
       },
-      "probability": 0.01
+      "probability": 0.005
     }
   },
   "spawners": {
