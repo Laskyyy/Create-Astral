@@ -84,3 +84,6 @@ net.minecraft.class_440 {
 net.minecraft.class_458 {
 }
 
+net.minecraft.class_419 {
+}
+

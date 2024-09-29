@@ -6,3 +6,9 @@ variable {
   reset_on_launch = false
 }
 
+variable {
+  name = has_checked_changelog
+  value = false
+  reset_on_launch = false
+}
+
