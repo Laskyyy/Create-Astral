@@ -93,14 +93,14 @@ onEvent("recipes", (event) => {
     // any drawer
     event.custom({
         type: "tconstruct:casting_basin",
-        cast: {tag:"extended_drawers:drawers"},
+        cast: { tag: "extended_drawers:drawers" },
         cast_consumed: true,
         fluid: {
             name: "tconstruct:molten_tin",
             amount: BUCKET,
         },
         result: "extended_drawers:shadow_drawer",
-        cooling_time: 117 // same as cooling tin block
+        cooling_time: 117, // same as cooling tin block
     });
 
     const BLAZING_BLOOD_MADIC_AMOUNT = 1620;
@@ -161,7 +161,7 @@ onEvent("recipes", (event) => {
             cast: ["tconstruct:nugget_cast", false],
         },
         {
-            fluid: ["kubejs:compound_mixture", mB*11],
+            fluid: ["kubejs:compound_mixture", mB * 11],
             result: "create:shaft",
             cooling_time: 10,
             cast: ["tconstruct:rod_cast", false],

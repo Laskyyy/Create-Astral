@@ -56,7 +56,6 @@ function millingRecipes(event) {
         event.recipes.createMilling([Item.of(recipe[1]).withChance(recipe[2])], recipe[0]);
     });
 }
-
 function crushingRecipes(event) {
     //Replace with other netherrack inputs and outputs
 
@@ -463,6 +462,7 @@ function sequencedAssemblyRecipes(event) {
         ])
         .transitionalItem("estrogen:estrogen_pill")
         .loops(1);
+
     event.recipes
         .createSequencedAssembly(
             [Item.of("create:sturdy_sheet").withChance(12), Item.of("minecraft:gravel").withChance(8)],
@@ -474,6 +474,7 @@ function sequencedAssemblyRecipes(event) {
         )
         .transitionalItem(inc_sturdy_sheet)
         .loops(5);
+
     event.custom({
         type: "create:sequenced_assembly",
         ingredient: { tag: "c:plates/gold" },
@@ -1418,6 +1419,12 @@ function fillingRecipes(event) {
             fluid: "kubejs:white_grape_juice",
             amount: 250 * mB,
         },
+        {
+            input: "minecraft:apple",
+            output: "astralfoods:shimmered_apple",
+            fluid: "kubejs:shimmer",
+            amount: 250 * mB,
+        },
     ].forEach((recipe) => {
         event.recipes.createFilling(recipe.output, [recipe.input, { fluid: recipe.fluid, amount: recipe.amount }]);
     });
@@ -1767,7 +1774,6 @@ function mixingRecipes(event) {
             input: [
                 "minecraft:magma_cream",
                 "minecraft:soul_sand",
-                "techreborn:scrap",
                 "#c:dusts/obsidian",
                 "#c:dusts/obsidian",
                 "#c:dusts/obsidian",
@@ -1829,6 +1835,12 @@ function mixingRecipes(event) {
             time: 300,
         },
         {
+            output: Fluid.of("tconstruct:molten_brass", INGOT * 4),
+            input: ["minecraft:copper_ingot", "create:zinc_ingot"],
+            heat: "superheated",
+            time: 300,
+        },
+        {
             output: Fluid.of("techreborn:silicon", mB * 25),
             input: ["#c:sand"],
             heat: "heated",
@@ -1845,12 +1857,6 @@ function mixingRecipes(event) {
             input: ["ae2:certus_quartz_crystal"],
             heat: "superheated",
             time: 200,
-        },
-        {
-            output: Fluid.of("tconstruct:molten_brass", INGOT * 4),
-            input: ["minecraft:copper_ingot", "create:zinc_ingot"],
-            heat: "superheated",
-            time: 300,
         },
         {
             output: Fluid.of("tconstruct:molten_brass", INGOT / 5),
@@ -2378,6 +2384,15 @@ function mixingRecipes(event) {
             time: 1000,
         },
         {
+            output: ["astralfoods:astral_sauce"],
+            input: ["createastral:astral_singularity"],
+            heat: "superheated",
+            time: 80,
+        },
+        {
+            output: ["astralfoods:quantum_pasta"],
+            input: ["astralfoods:astral_sauce", "2x astralfoods:quantum_bites", "farmersdelight:raw_pasta"],
+            heat: "heated",
             output: "yttr:ruined_cobblestone",
             input: ["minecraft:cobblestone", "yttr:rubble"],
             heat: "",
