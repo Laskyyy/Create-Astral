@@ -1,0 +1,19 @@
+{
+    "type": "astraladditions:desizer",
+    "ingredients": [
+        {"item":"minecraft:coal_block"}, {"item":"minecraft:coal_block"}, {"item":"minecraft:coal_block"},
+        {"item":"minecraft:coal_block"}, {"item":"minecraft:coal_block"}, {"item":"minecraft:coal_block"},
+        {"item":"minecraft:coal_block"}, {"item":"minecraft:coal_block"}, {"item":"minecraft:coal_block"},
+
+        {"item":"minecraft:coal_block"}, {"item":"minecraft:coal_block"}, {"item":"minecraft:coal_block"},
+        {"item":"minecraft:coal_block"}, {"item":"minecraft:coal_block"}, {"item":"minecraft:coal_block"},
+        {"item":"minecraft:coal_block"}, {"item":"minecraft:coal_block"}, {"item":"minecraft:coal_block"},
+
+        {"item":"minecraft:coal_block"}, {"item":"minecraft:coal_block"}, {"item":"minecraft:coal_block"},
+        {"item":"minecraft:coal_block"}, {"item":"minecraft:coal_block"}, {"item":"minecraft:coal_block"},
+        {"item":"minecraft:coal_block"}, {"item":"minecraft:coal_block"}, {"item":"minecraft:coal_block"}
+    ],
+    "output": {
+        "item": "minecraft:diamond_block"
+    }
+}

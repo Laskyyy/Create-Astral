@@ -1,0 +1,19 @@
+{
+    "type": "astraladditions:desizer",
+    "ingredients": [
+        {"item":"minecraft:soul_soil"}, {"item":"minecraft:soul_soil"}, {"item":"minecraft:soul_soil"},
+        {"item":"minecraft:soul_soil"}, {"item":"minecraft:soul_soil"}, {"item":"minecraft:soul_soil"},
+        {"item":"minecraft:soul_soil"}, {"item":"minecraft:soul_soil"}, {"item":"minecraft:soul_soil"},
+
+        {"item":"minecraft:soul_soil"}, {"item":"minecraft:soul_soil"}, {"item":"minecraft:soul_soil"},
+        {"item":"minecraft:soul_soil"}, {"item":"minecraft:soul_soil"}, {"item":"minecraft:soul_soil"},
+        {"item":"minecraft:soul_soil"}, {"item":"minecraft:soul_soil"}, {"item":"minecraft:soul_soil"},
+
+        {"item":"minecraft:soul_soil"}, {"item":"minecraft:soul_soil"}, {"item":"minecraft:soul_soil"},
+        {"item":"minecraft:soul_soil"}, {"item":"minecraft:soul_soil"}, {"item":"minecraft:soul_soil"},
+        {"item":"minecraft:soul_soil"}, {"item":"minecraft:soul_soil"}, {"item":"minecraft:soul_soil"}
+    ],
+    "output": {
+        "item": "minecraft:coal_block"
+    }
+}
