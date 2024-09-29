@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = modpack_changelog_2.1
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1727468464522
+  last_edited_time = 1727602173120
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:d2637481-1525-42b7-8c04-2759c6d05d86-1727468395528] = [groups:][instances:]
+  [loading_requirement_container_meta:85b94bc8-adcc-436c-8fa8-99204c03d546-1727602090539] = [groups:][instances:]
 }
 
 customization {
@@ -63,15 +63,15 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%Brief description%n%^^^
+  source = ^^^%n%2.1 is the next major content update for Astral, giving love to the whole pack, but particularly focusing on revamping Chapters 4 and 5, and introducing the new, final, Chapter 6.%n%%n%We've also taken the time to address many of the issues from the previous version, with QoL changes, such as build tools and proper backpacks. Weapon changes are also featured, with some fresh combat encounters!%n%^^^
   source_mode = direct
   shadow = true
-  scale = 1.5
+  scale = 0.7
   base_color = #FFFFFFFF
   text_border = 2
   line_spacing = 2
   enable_scrolling = false
-  auto_line_wrapping = false
+  auto_line_wrapping = true
   remove_html_breaks = true
   code_block_single_color = #737373FF
   code_block_multi_color = #565656FF
@@ -95,7 +95,7 @@ element {
   x = -175
   y = -125
   width = 350
-  height = 40
+  height = 55
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -105,13 +105,15 @@ element {
 
 element {
   interactable = true
-  source = Changelog (supports markdown of sorts, refer to the fancymenu wiki for formatting)
+  source = **Major Mod Changes**%n%- Updated to Create 0.5.1%n%- Introduced Astral Additions 1.3.1 (In-house Astral mod)%n%- XpCrystals (In-house Astral mod)%n%- Cam’s Backpack → Travellers’ Backpack%n%- Yttr Mod%n%- Create Big Cannons%n%- Create Copycats%n%- Create Additions%n%- ProjectTable%n%- Create Ender Transmission%n%- Create Estrogen%n%- Storage Drawers%n%- Discord Rich Presence%n%- TrashCans%n%- Buildings Gadgets & Trowels%n%%n%**Reworks and Additions**%n%_All javascript code got refractored in this update for ease of reading and better organisation. We split the code into multiple files based on purpose. The code should now be pretty useful, if you want to learn some KubeJS._%n%%n%- Gave some love to the entire quest book to include clearer descriptions, new automation explanations & in later chapters, almost entirely re-made progression.%n%- Introduced CH6 & and a tangible "End" to the pack.%n%- Edited all structures placed around the world to strengthen Create: Astral’s 'unique' atmosphere (especially thanks to our structure contest submitters!). Structures are now vastly more varied, and even inhabit orbit dimensions!%n%- Courtesy of Astral Additions, include new mobs, items with unique gameplay mechanics, varieties of fixes, and more.%n%- Reworked the primary UI, and re-made almost all of the existing textures for Create: Astral that weren't directly created by us to be in-house.%n%- In addition to the above, a community paintings optional resource packs is included, made from content posted to the #fan-art channel!%n%- In addition in addition to the above, create-Style sheet textures replace all types of metal plates, and transitional textures for a number of create sequenced assemblies should further differentiate items in active assembly lines.%n%- Introduced an entirely new create-related enchantmant chain,  for automation of enchantments (In the late game, this extends above maximum level caps for certain enchantments.)%n%- Reworked the resource generation in its totality. (Goodbye, deepslate gen :lakysalute: ). Cobblestone generators still kick off many production chains, and all lunar cobble varieties can be generated in the Stone Growth Chamber multiblock in different planet orbits. All metals can be obtained in much greater varieties AND quantities from alternative sources, and those sources (e.g. create orestones) can be automated more easily.%n%- Removed the Reliance on 10k infinite pools of fluids, added tiered automation recipes for Shimmer and Lava, and further recipes for most other fluid types. (10k pools are now disabled by default, but can be re-enabled in the create settings widget on the pause menu!)%n%- Reworked and added a plethora of new Create-ified food recipes for all food mods. (Inc. Liquid Food processing PR)%n%- Included in the above: Methods of obtaining meats and mob drops without directly harming an animal at all.%n%- Multiple new multiblocks spread across all tiers of progression have been created. (REI support for some may be limited or non-existent, but recipes will be explained within the questbook!)%n%- Added Ponder support for some custom multiblocks, including the electrolyzer.%n%- Reworked Villagers to work in Create: Astral by changing the trades to not break progression, and changed some trader varieties to be more thematic to a create-pack.%n%- Added a Create: Astral multiblock to lessen the reliance on normal cobblestone gens to ease the strain item entities sometimes have on the game.%n%- Portals for Mars & Mercury now exist, but are less simple to obtain than the Shimmer Portal, and will be obtained later in chapters where you have already explored that planet. (Reducing reliance on rockets for when the 'gimmick' of them has faded)%n%- A brand new flashy main menu, credits screen, and this very in-game changelog! (All designed by Shortman)%n%- A unique revamp of obtaining music discs in your playthrough (also developed by Shortman) - discs can no longer be found in loot chests or dropped by creepers; you must instead progress through a side questline unlocked in Chapter 1. Discs aren't required to complete the game, but they make for a great collection and bragging point.%n%- On top of this, 7 new music discs have been added to the game! Two by our very own Ethanicuss, and five added by the Yttr mod. Happy listening!%n%%n%**Minor Additions**%n%- Added Discord Rich Presence%n%- Adjusted the power generation curve by adding new options and reworking/buffing the lesser used ones.%n%- Removed sifting as a process, distributed the recipes between vanilla create processes.%n%- Introduced many extra tooltips for more informational content regarding less-clear item usages.%n%- Fixed the default settings configuration setup (Will now keep your settings every time you update the pack)%n%- Reworked Tinker tool balance. (Buffed sledgehammer back to it's true strength. Additionally, adjusted lesser used tools to be more relevant).%n%- Added Immersive Aircraft "Blueprints", which can be found in generated structure loot tables. These can be duplicated infinitely once the first of each is obtained.%n%- Changed inventory management, by making shulker boxes and the newly added Travelers Backpack (Compatible with spacesuits!) be accessible more conveniently. Alongside these, "Extended Drawers" will provide a smarter solution to storage than packages and CSU’s. These come with custom-implemented storage drawer upgrades for smoother progression.%n%- Reworked AE2 Recipes to work with Create instead of the Vanilla AE2 methods, adjusted the questline for it.%n%- Adjusted Ad Astra planet generation (Mercury is now flatter, but retains patches of extreme spikes and mars terrain is now more rough). Ore should now generate more commonly / evenly to incentivise exploring on your first visit.%n%- Two more dimensions are now relevant in Ch4 (one being entirely new), and another dimension is introduced in Ch6.%n%- Superheating through blaze cakes are back, liquid superheating still exists and is even smoother, accepting the actual fluids rather than buckets when using a straw.%n%- Easier access to Brass Create components early-on, including the regular suite of funnels/tunnels, alongside stockpile switches and content observers.%n%- Train support for custom Astral Portals%n%- Log stripping support for all wood types%n%- Reworked a large amount of stonecutting & mechanical saw recipes so they integrate with Create sawing smoothly.%n%- Added secret plushies :3%n%- Fluid player behaviour applied to most custom fluids (collision/floating/lava burning)%n%- Added too many splash texts, to hopefully make you smile, because we love you. <3%n%- Fixed common duplication bugs through updating to Create 0.5.1%n%- Fixed loot table behaviour (Example: Loot tables were sometimes not generating properly, when a player visits another structure of the same type)%n%- Re-added trinket slots to allow as many trinkets as you can fit…%n%- Added new Potato cannon projectiles, some useful, some less than useful, some… explosive…%n%- Added prompt to rEaD tHe QuEsTbOoK%n%- Easy access home from the end by shift clicking any bedrock at y=0
   source_mode = direct
   shadow = true
   scale = 1.0
   base_color = #FFFFFFFF
   text_border = 2
   line_spacing = 2
+  grabber_color_normal = #4A2BAF
+  grabber_color_hover = #634B92
   enable_scrolling = true
   auto_line_wrapping = true
   remove_html_breaks = true
@@ -135,9 +137,9 @@ element {
   fade_in_speed = 1.0
   anchor_point = mid-centered
   x = -175
-  y = -70
+  y = -51
   width = 350
-  height = 278
+  height = 259
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -156,7 +158,7 @@ element {
   fade_in_speed = 1.0
   anchor_point = mid-centered
   x = -175
-  y = -82
+  y = -65
   width = 350
   height = 9
   stretch_x = false
@@ -175,9 +177,10 @@ element {
   appearance_delay_seconds = 1.0
   fade_in = false
   fade_in_speed = 1.0
-  anchor_point = mid-centered
-  x = -173
-  y = -80
+  anchor_point = element
+  anchor_point_element = e1e1a231-4e3b-4ee7-85e6-e0d5d9772c54-1727455987584
+  x = 2
+  y = 2
   width = 346
   height = 5
   stretch_x = false

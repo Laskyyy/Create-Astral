@@ -3,14 +3,14 @@ type = fancymenu_layout
 layout-meta {
   identifier = main_menu_image_credits
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1727527210110
+  last_edited_time = 1727600938516
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
   custom_menu_title = Create: Astral Credits
-  [loading_requirement_container_meta:9d512cfa-c9d2-4490-90c4-9c8a9488540b-1727526712555] = [groups:][instances:]
+  [loading_requirement_container_meta:0a232eb5-a5ec-474b-a4e8-26f0b4ae9635-1727600864786] = [groups:][instances:]
 }
 
 customization {
@@ -577,7 +577,7 @@ element {
 
 element {
   interactable = true
-  source = Alpvia, Ari_8449, A_Tangerine, Best_Lizard, DoktorPills, Gamefather, Ghostlyplays, Itslexa, Justinzs, JustPhm_, KonSola5, Lina666, Lost_Lorf, Michael0f, Nikolaos1811, Rshtg7776, Scaeluxultima, Sleepysadden, .Tamanomae, Thatkerbal, Teno_6068, Vilkki8
+  source = Alpvia, Ari_8449, A_Tangerine, Best_Lizard, DoktorPills, Gamefather, Ghostlyplays, Itslexa, Justinzs, JustPhm, KonSola5, Lina666, Lost_Lorf, Michael0f, Nikolaos1811, Rshtg7776, Scaeluxultima, Sleepysadden, Tamanomae, Thatkerbal, Teno_6068, Vilkki8
   source_mode = direct
   shadow = true
   scale = 0.8
