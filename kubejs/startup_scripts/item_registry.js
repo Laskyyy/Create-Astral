@@ -5,7 +5,7 @@ onEvent("item.registry", (event) => {
     event.create("createastral:crushed_raw_calorite");
     event.create("createastral:subatomic_ingot").rarity("Epic");
     event.create("createastral:ender_plating").rarity("Epic");
-    event.create("createastral:prismatic_crystal");
+    event.create("createastral:prismatic_crystal").displayName("Prismatic Crystal");
     event.create("createastral:astral_conduit").maxStackSize(1).maxDamage(20);
     event.create("createastral:andesite_compound");
     event.create("createastral:bronze_sheet");
@@ -44,6 +44,78 @@ onEvent("item.registry", (event) => {
     event.create("createastral:fragile_rocket_fin");
     event.create("createastral:broken_fragile_rocket_fin");
     event.create("createastral:gold_casted_rocket_fin");
+
+    //Astral Foods
+    event
+        .create("astralfoods:quantum_bites")
+        .displayName("Quantum Bites")
+        .food((food) => {
+            food.hunger(17).saturation(1.2).effect("regeneration", 700, 2, 1).alwaysEdible();
+        });
+
+    event
+        .create("astralfoods:astral_sauce")
+        .displayName("Astral Sauce")
+        .food((food) => {
+            food.hunger(7).saturation(0.6).effect("wither", 440, 1, 1).effect("hunger", 440, 2, 1).alwaysEdible();
+        });
+
+    event
+        .create("astralfoods:quantum_pasta")
+        .displayName("Quantum Pasta")
+        .food((food) => {
+            food.hunger(75)
+                .saturation(1.1)
+                .effect("haste", 1000, 2, 1)
+                .effect("regeneration", 1000, 2, 1)
+                .alwaysEdible();
+        });
+
+    event
+        .create("astralfoods:seared_potato")
+        .displayName("Seared Potato")
+        .food((food) => {
+            food.hunger(14).saturation(1).effect("resistance", 440, 1, 1).alwaysEdible();
+        });
+
+    event
+        .create("astralfoods:shimmered_rabbit_stew")
+        .displayName("Shimmered Rabbit Stew")
+        .food((food) => {
+            food.hunger(18)
+                .saturation(1)
+                .effect("resistance", 500, 2, 1)
+                .effect("saturation", 500, 1, 1)
+                .alwaysEdible();
+        });
+
+    event
+        .create("astralfoods:shimmered_apple")
+        .displayName("Shimmered Apple")
+        .food((food) => {
+            food.hunger(8).saturation(0.6).effect("instant_health", 60, 1, 1);
+        });
+
+    event
+        .create("astralfoods:compressed_onion")
+        .displayName("Compressed Onion")
+        .food((food) => {
+            food.hunger(54).saturation(0.6).effect("slowness", 200, 1, 1).effect("nausea", 200, 2, 1).alwaysEdible();
+        });
+
+    event
+        .create("astralfoods:food_amalgamation")
+        .displayName("Food Amalgamation")
+        .food((food) => {
+            food.hunger(200)
+                .saturation(1)
+                .effect("regeneration", 400, 4, 1)
+                .effect("resistance", 1000, 3, 1)
+                .effect("haste", 1100, 4, 1)
+                .effect("health_boost", 1000, 3, 1)
+                .effect("saturation", 760, 2, 1)
+                .alwaysEdible();
+        });
 
     event.create("createastral:golden_bowl").displayName("Golden Bowl");
     event

@@ -163,46 +163,46 @@ onEvent("block.registry", (event) => {
     event
         .create("createastral:voidtouched_compound", "basic")
         .hardness(4)
+        .displayName("Voidtouched Compound")
         .resistance(1200)
         .tagBlock("minecraft:mineable/pickaxe");
 
     event
         .create("createastral:charcoal_block", "basic")
         .hardness(4)
-        .tagBlock("minecraft:mineable/pickaxe")
-        .material("stone");
-
-    event
-        .create("createastral:experience_block", "basic")
-        .hardness(4)
-        .displayName("Ignore this block whilst it's a placeholder")
+        .displayName("Charcoal Block")
         .tagBlock("minecraft:mineable/pickaxe")
         .material("stone");
 
     event
         .create("createastral:compressed_experience_block")
+        .displayName("Compressed Experience Block")
         .tagBlock("minecraft:mineable/pickaxe")
         .material("glass")
         .hardness(2)
         .lightLevel(5);
 
     event.create("createastral:synthetic_slime_block")
+    .displayName("Synthetic Slime Block")
         .material("lantern")
         .hardness(0);
 
     event
         .create("createastral:swift_andesite", "basic")
+        .displayName("Swift Andesite")
         .material("stone")
         .hardness(4)
         .tagBlock("minecraft:mineable/pickaxe");
 
     event.create("kubejs:fragile_sheet_block", "basic")
         .material("stone")
+        .displayName("Fragile Sheet Block")
         .defaultTranslucent()
         .hardness(1);
 
     event.create("kubejs:broken_fragile_sheet_block", "basic")
         .material("stone")
+        .displayName("Broken Fragile Sheet Block")
         .defaultTranslucent()
         .hardness(1)
         .box(0, 0, 0, 16, 8, 16, true)
@@ -210,11 +210,13 @@ onEvent("block.registry", (event) => {
 
     event.create("kubejs:fire_resistant_fragile_sheet_block", "basic")
         .material("stone")
+        .displayName("Fire Resistant Fragile Sheet Block")
         .defaultTranslucent()
         .hardness(1)
 
     event.create("kubejs:broken_fire_resistant_fragile_sheet_block", "basic")
         .material("stone")
+        .displayName("Broken Fire Resistant Fragile Sheet Block")
         .defaultTranslucent()
         .hardness(1)
         .box(0, 0, 0, 16, 8, 16, true)
@@ -222,6 +224,7 @@ onEvent("block.registry", (event) => {
 
     event.create("createastral:rocket_casing", "basic")
         .material("stone")
+        .displayName("Rocket Casing")
         .hardness(4)
         .defaultTranslucent()
         .tagBlock("minecraft:mineable/pickaxe")
@@ -253,6 +256,7 @@ onEvent("block.registry", (event) => {
     event
         .create("doodads:asphalt_slab", "slab")
         .material("stone")
+        .displayName("Asphalt Slab")
         .hardness(4)
         .tagBlock("minecraft:mineable/pickaxe")
         .textureAll("doodads:block/asphalt");
@@ -260,6 +264,7 @@ onEvent("block.registry", (event) => {
     event
         .create("doodads:asphalt_stair", "stairs")
         .material("stone")
+        .displayName("Asphalt Stair")
         .hardness(4)
         .tagBlock("minecraft:mineable/pickaxe")
         .textureAll("doodads:block/asphalt");

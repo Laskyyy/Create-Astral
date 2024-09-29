@@ -27,6 +27,7 @@ onEvent("recipes", (event) => {
         {output: "techreborn:insulated_copper_cable"},
 
         { output: "techreborn:hv_transformer"},
+        { output: "techreborn:nanosaber"},
         {output: "techreborn:lightning_rod"},
         {output: "techreborn:refined_iron_fence"},
         { output: "techreborn:chunk_loader" },
@@ -454,8 +455,6 @@ onEvent("recipes", (event) => {
         { output: "computercraft:turtle_advanced" },
         { output: "computercraft:computer_advanced" },
         { output: "computercraft:pocket_computer_advanced" },
-
-        { mod: "camsbackpacks", input: "minecraft:chest" },
 
         { output: "buildinggadgets:gadget_building" },
         { output: "buildinggadgets:gadget_copy_paste" },

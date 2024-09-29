@@ -34,61 +34,222 @@ function farmersDelightCuttingChanges(event) {
     // Tech Reborn Rubber Log
     event.custom({
         type: "farmersdelight:cutting",
-        ingredients: [{ item: "techreborn:rubber_log" }],
+        ingredients: [{  item: "techreborn:rubber_log"  }],
         tool: {
             type: "farmersdelight:tool",
             tag: "c:tools/axes",
         },
-        result: [{ item: "techreborn:rubber_log_stripped" }, { item: "farmersdelight:tree_bark" }],
+        result: [{  item: "techreborn:rubber_log_stripped"  }, {  item: "farmersdelight:tree_bark"  }],
         sound: "minecraft:item.axe.strip",
     });
 
     // Ad Astra Glacian Log
     event.custom({
         type: "farmersdelight:cutting",
-        ingredients: [{ item: "ad_astra:glacian_log" }],
+        ingredients: [{  item: "ad_astra:glacian_log"  }],
         tool: {
             type: "farmersdelight:tool",
             tag: "c:tools/axes",
         },
-        result: [{ item: "ad_astra:stripped_glacian_log" }, { item: "farmersdelight:tree_bark" }],
+        result: [{  item: "ad_astra:stripped_glacian_log"  }, {  item: "farmersdelight:tree_bark"  }],
         sound: "minecraft:item.axe.strip",
     });
 
     // Tinkers' Construct Bloodshroom Log
     event.custom({
         type: "farmersdelight:cutting",
-        ingredients: [{ item: "tconstruct:bloodshroom_log" }],
+        ingredients: [{  item: "tconstruct:bloodshroom_log"  }],
         tool: {
             type: "farmersdelight:tool",
             tag: "c:tools/axes",
         },
-        result: [{ item: "tconstruct:stripped_bloodshroom_log" }, { item: "farmersdelight:tree_bark" }],
+        result: [{  item: "tconstruct:stripped_bloodshroom_log"  }, {  item: "farmersdelight:tree_bark"  }],
         sound: "minecraft:item.axe.strip",
     });
 
     // Tinkers' Construct Greenheart Log
     event.custom({
         type: "farmersdelight:cutting",
-        ingredients: [{ item: "tconstruct:greenheart_log" }],
+        ingredients: [{  item: "tconstruct:greenheart_log"  }],
         tool: {
             type: "farmersdelight:tool",
             tag: "c:tools/axes",
         },
-        result: [{ item: "tconstruct:stripped_greenheart_log" }, { item: "farmersdelight:tree_bark" }],
+        result: [{  item: "tconstruct:stripped_greenheart_log"  }, {  item: "farmersdelight:tree_bark"  }],
         sound: "minecraft:item.axe.strip",
     });
 
     // Tinkers' Construct Skyroot Log
     event.custom({
         type: "farmersdelight:cutting",
-        ingredients: [{ item: "tconstruct:skyroot_log" }],
+        ingredients: [{  item: "tconstruct:skyroot_log"  }],
         tool: {
             type: "farmersdelight:tool",
             tag: "c:tools/axes",
         },
-        result: [{ item: "tconstruct:stripped_skyroot_log" }, { item: "farmersdelight:tree_bark" }],
+        result: [{  item: "tconstruct:stripped_skyroot_log"  }, {  item: "farmersdelight:tree_bark"  }],
         sound: "minecraft:item.axe.strip",
+    });
+
+    // Astral Foods section
+
+    event.custom({
+        type: "farmersdelight:cutting",
+        ingredients: [{ item: "ae2:singularity" }],
+        tool: {
+            type: "farmersdelight:tool",
+            tag: "c:tools/knives",
+        },
+        result: [{ item: "astralfoods:quantum_bites", count: 3 }],
+    });
+}
+
+function farmersdelight(event) {
+    event.custom({
+        type: "farmersdelight:cooking",
+        ingredients: [{ item: "createastral:astral_singularity" }],
+        result: { item: "astralfoods:astral_sauce" },
+        container: { item: "minecraft:bowl" },
+        experience: 10.0,
+        cookingtime: 360,
+    });
+
+    event.custom({
+        type: "farmersdelight:cooking",
+        ingredients: [
+            { item: "astralfoods:astral_sauce" },
+            { item: "astralfoods:quantum_bites" },
+            { item: "farmersdelight:raw_pasta" },
+        ],
+        result: { item: "astralfoods:quantum_pasta" },
+        experience: 8.0,
+        cookingtime: 300,
+    });
+    //yes, these recipes don't work. Please use the temp ones
+}
+
+function sequencedAssemblyCooking(event) {
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // output
+                Item.of("astralfoods:shimmered_rabbit_stew").withChance(1) // begin
+            ],
+            "minecraft:bowl",
+            [
+                // input
+                event.recipes.createDeploying("minecraft:bowl", ["minecraft:bowl", "astralfoods:seared_potato"]),
+                event.recipes.createDeploying("minecraft:bowl", ["minecraft:bowl", "minecraft:cooked_rabbit"]),
+
+                event.recipes.createFilling("minecraft:bowl", [
+                    "minecraft:bowl",
+                    { fluid: "kubejs:shimmer", amount: BUCKET },
+                ])
+            ]
+        )
+        .transitionalItem("minecraft:bowl")
+        .loops(1);
+}
+function astralAdditionsFood(event) {
+    event.custom({
+        type: "custommachinery:custom_machine",
+        machine: "astralgenerators:amalgamation_matrix",
+        time: 10,
+        requirements: [
+            {
+                type: "custommachinery:item",
+                item: "astralfoods:quantum_pasta",
+                mode: "input",
+                amount: 1,
+            },
+            {
+                type: "custommachinery:item",
+                item: "astralfoods:shimmered_apple",
+                mode: "input",
+                amount: 1,
+            },
+            {
+                type: "custommachinery:item",
+                item: "astralfoods:compressed_onion",
+                mode: "input",
+                amount: 1,
+            },
+            {
+                type: "custommachinery:item",
+                item: "astralfoods:shimmered_rabbit_stew",
+                mode: "input",
+                amount: 1,
+            },
+            {
+                type: "custommachinery:item",
+                item: "astralfoods:food_amalgamation",
+                mode: "output",
+                amount: 1,
+            },
+            {
+                type: "custommachinery:energy",
+                mode: "input",
+                amount: 20000,
+            },
+            {
+                type: "custommachinery:structure",
+                keys: {
+                    a: "techreborn:basic_machine_frame",
+                    b: "astralgenerators:superconducting_coil",
+                    c: "techreborn:advanced_machine_casing",
+                    d: "astralgenerators:convergence_core",
+                },
+                pattern: [
+                    ["aaaaa", "aaaaa", "aaaaa", "aaaaa", "aamaa"],
+                    ["aaaaa", "abbba", "abbba", "abbba", "aaaaa"],
+                    ["     ", " ccc ", " ccc ", " ccc ", "     "],
+                    ["     ", "     ", "  c  ", "     ", "     "],
+                    ["     ", "     ", "  d  ", "     ", "     "],
+                    ["     ", "     ", "  c  ", "     ", "     "],
+                    ["     ", " ccc ", " ccc ", " ccc ", "     "],
+                    ["     ", " bbb ", " bbb ", " bbb ", "     "],
+                    ["aaaaa", "aaaaa", "aaaaa", "aaaaa", "aaaaa"],
+                ],
+            },
+        ],
+    });
+
+    event.custom({
+        type: "astraladditions:desizer",
+        ingredients: [
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+            { item: "farmersdelight:onion_crate" },
+        ],
+        output: {
+            item: "astralfoods:compressed_onion",
+        },
     });
 }
 
@@ -270,9 +431,9 @@ function lizardCH3Changes(event) {
     event.shaped("createaddition:tesla_coil", ["DSD", "USU", "CMC"], {
         D: "ad_astra:desh_ingot",
         S: "createaddition:copper_spool",
-        U: "createaddition:copper_wire",
+        U: "techreborn:copper_cable",
         C: "createaddition:capacitor",
-        M: "create:brass_block",
+        M: "techreborn:basic_machine_casing",
     });
 
     // New Electrum recipe
@@ -398,6 +559,10 @@ onEvent("recipes", (event) => {
     lizardChanges(event);
     portalBlocks(event);
     farmersDelightCuttingChanges(event);
+    farmersdelight(event);
+    sequencedAssemblyCooking(event);
+    astralAdditionsFood(event);
+    
 
     /////// TECH REBORN ACTUAL RECIPES //////
 
@@ -463,17 +628,6 @@ onEvent("recipes", (event) => {
         C: "yttr:project_table",
         D: "create:smart_fluid_pipe",
         E: "create:electron_tube",
-    });
-
-    event.shaped("automobility:auto_mechanic_table", ["ABBBBA", "BCDDCB", "BD  EB", "BD  EB", "BCEECB", "ABBBBA"], {
-        A: "yttr:yttrium_block",
-        B: "yttr:yttrium_plating",
-        C: "createastral:promethium_atomic_battery",
-        D: "create:shadow_steel_casing",
-        E: "create:refined_radiance_casing",
-        F: "yttr:neodymium_block",
-        G: "techreborn:industrial_centrifuge",
-        H: "createastral:separation_agent",
     });
 
     ///COMPUTERCRAFT FIXES
@@ -759,9 +913,10 @@ onEvent("recipes", (event) => {
         A: "yttr:rubble",
         B: "minecraft:stone",
     });
+
     event.shaped("createastral:promethium_atomic_battery", ["CAC", "BDB", "CEC"], {
         A: "techreborn:lithium_ion_battery",
-        B: "techreborn:machine_parts",
+        B: "techreborn:data_storage_chip",
         C: "yttr:armor_plating",
         D: "createastral:subatomic_ingot",
         E: "yttr:promethium_glob",
@@ -1058,7 +1213,7 @@ onEvent("recipes", (event) => {
         }),
         ["CCC", "DED", "CCC"],
         {
-            D: "createaddition:copper_wire",
+            D: "techreborn:insulated_copper_cable",
             E: "phonos:redstone_chip",
             C: "create:copper_casing",
         }
@@ -1070,9 +1225,9 @@ onEvent("recipes", (event) => {
         }),
         ["CCC", "DED", "CCC"],
         {
-            D: "minecraft:copper_sheet",
+            D: "create:copper_sheet",
             E: "minecraft:water_bucket",
-            C: "create:andesite_casing",
+            C: "create:copper_casing",
         }
     );
 
@@ -1208,11 +1363,11 @@ onEvent("recipes", (event) => {
     });
 
     event.shaped("travelersbackpack:standard", ["ABC", "DED", "FBF"], {
-        A: "projecttable:projecttable",
+        A: "#c:workbenches",
         B: "campanion:leather_pouch",
         C: "campanion:sleeping_bag",
         D: "create:fluid_tank",
-        E: "minecraft:leather_chestplate",
+        E: "tconstruct:travelers_chestplate",
         F: "farmersdelight:rope",
     });
 

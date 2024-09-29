@@ -30,13 +30,13 @@
 		},
 		{
 			"type": "custommachinery:item",
-			"item": "minecraft:cobblestone",
+			"item": "minecraft:andesite",
 			"amount": 1,
 			"mode": "output"
 		},
 		{
 			"type": "custommachinery:dimension",
-			"filter": ["ad_astra:moon_orbit", "ad_astra:mars_orbit", "ad_astra:venus_orbit", "ad_astra:glacio_orbit", "ad_astra:mercury_orbit"],
+			"filter": ["ad_astra:moon_orbit", "ad_astra:mars_orbit", "ad_astra:venus_orbit", "ad_astra:glacio_orbit", "ad_astra:mercury_orbit", "ad_astra:moon", "ad_astra:mars", "ad_astra:venus", "ad_astra:glacio", "ad_astra:mercury"],
 			"blacklist": true
 		}
 	]
