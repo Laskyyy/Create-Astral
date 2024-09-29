@@ -859,34 +859,6 @@ function sequencedAssemblyRecipes(event) {
             ])
             .transitionalItem(transitional_lapis_sheet);
 
-        event.recipes.createSequencedAssembly(["createastral:wired_panelling"], "ad_astra:steel_block", [
-            event.recipes.createDeploying("ad_astra:steel_block", [
-                "ad_astra:steel_block",
-                "create:integrated_circuit",
-            ]),
-            event.recipes.createDeploying("ad_astra:steel_block", [
-                "ad_astra:steel_block",
-                "techreborn:electronic_circuit",
-            ]),
-            event.recipes.createDeploying("ad_astra:steel_block", [
-                "ad_astra:steel_block",
-                "techreborn:industrial_circuit",
-            ]),
-            event.recipes.createPressing("ad_astra:steel_block", "ad_astra:steel_block"),
-            event.recipes.createDeploying("ad_astra:steel_block", [
-                "ad_astra:steel_block",
-                "create:refined_radiance_casing",
-            ]),
-            event.recipes.createDeploying("ad_astra:steel_block", [
-                "ad_astra:steel_block",
-                "create:shadow_steel_casing",
-            ]),
-            event.recipes.createDeploying("ad_astra:steel_block", [
-                "ad_astra:steel_block",
-                "createastral:subatomic_ingot",
-            ]),
-            event.recipes.createPressing("ad_astra:steel_block", "ad_astra:steel_block"),
-        ]);
 
         event.recipes
             .createSequencedAssembly(["2x create:sturdy_sheet"], "tconstruct:obsidian_pane", [
