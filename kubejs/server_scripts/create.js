@@ -439,6 +439,19 @@ function sequencedAssemblyRecipes(event) {
     //Honestly just good luck in figuring this out its too complex to
     //document in an effective way
     const inc_sturdy_sheet = "create:unprocessed_obsidian_sheet";
+		event.recipes
+                .createSequencedAssembly([Item.of("astralfoods:shimmered_apple").withChance(1)], "minecraft:apple", [
+            event.recipes.createDeploying("minecraft:apple", [
+                "minecraft:apple",
+                "tconstruct:ender_slime_crystal",
+            ]),
+            event.recipes.createFilling("minecraft:apple", [
+                "minecraft:apple",
+                { fluid: "kubejs:shimmer", amount: BUCKET/3 },
+            ]),
+        ])
+        .transitionalItem("minecraft:apple")
+        .loops(1);
     event.recipes
         .createSequencedAssembly([Item.of("createastral:living_mechanism").withChance(1)], "yttr:ultrapure_carbon", [
             event.recipes.createFilling("yttr:ultrapure_carbon", [
@@ -1424,12 +1437,6 @@ function fillingRecipes(event) {
             input: "vinery:wine_bottle",
             output: "vinery:white_grapejuice_wine_bottle",
             fluid: "kubejs:white_grape_juice",
-            amount: 250 * mB,
-        },
-        {
-            input: "minecraft:apple",
-            output: "astralfoods:shimmered_apple",
-            fluid: "kubejs:shimmer",
             amount: 250 * mB,
         },
     ].forEach((recipe) => {
@@ -2706,6 +2713,58 @@ function mechanicalCraftingRecipes(event) {
     // Shape: Array of rows of inputs based on letters assigned
     // Inputs: Object with letters assigned to input items, to be used in the shape
     [
+				{
+            output: "astraladditions:desizer_8",
+            shape: ["YLY", "YBY", "YPY"],
+            inputs: {
+                Y: "createastral:ender_plating",
+                P: "yttr:ultrapure_netherite",
+                B: "createastral:promethium_atomic_battery",
+                L: "createastral:living_mechanism"
+            },
+        },
+                {
+            output: "astraladditions:desizer_controller",
+            shape: ["YYYYYY", "YBLLBY", "YLSRLY", "YLSRLY", "YBLLBY", "YYYYYY"],
+            inputs: {
+                Y: "createastral:ender_plating",
+                S: "create:shadow_steel_casing",
+                R: "create:refined_radiance_casing",
+                B: "createastral:promethium_atomic_battery",
+                L: "createastral:living_mechanism"
+            },
+        },
+                {
+            output: "yttr:reinforced_cleaver",
+            shape: ["    VV", "   VV ", "  VV  ", " VN   ", " P    ", "P     "],
+            inputs: {
+                N: "yttr:neodymium_block",
+                V: "yttr:glassy_void",
+                P: "yttr:ultrapure_netherite"
+            },
+        },
+                {
+            output: "yttr:effector",
+            shape: ["VVV   ", "VVY   ", "VYNY  ", "  YBY ", "   YPY", "    YY"],
+            inputs: {
+                Y: "yttr:yttrium_plating",
+                N: "yttr:neodymium_block",
+                V: "yttr:glassy_void",
+                P: "yttr:ultrapure_netherite",
+                B: "createastral:promethium_atomic_battery"
+            },
+        },
+                {
+            output: "yttr:centrifuge",
+            shape: ["YYYYYY", "YBSSBY", "YSNNRY", "YSNNRY", "YBRRBY", "YYYYYY"],
+            inputs: {
+                Y: "yttr:yttrium_plating",
+                N: "yttr:neodymium_block",
+                S: "create:shadow_steel_casing",
+                R: "create:refined_radiance_casing",
+                B: "createastral:promethium_atomic_battery"
+            },
+        },
         {
             output: "astraladditions:e_guitar",
             shape: ["PCC  ", "PWIWT", "PCC A"],
