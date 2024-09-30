@@ -28,7 +28,7 @@ scroll_list_customization {
 
 element {
   interactable = true
-  source = ^^^%n%{"placeholder":"local","values":{"key":"astralmenu.multiplayer_error_message.line1"}}%n%{"placeholder":"local","values":{"key":"astralmenu.multiplayer_error_message.line1"}}%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"astralmenu.multiplayer_error_message.line1"}}%n%{"placeholder":"local","values":{"key":"astralmenu.multiplayer_error_message.line2"}}%n%^^^
   source_mode = direct
   shadow = true
   scale = 1.0
