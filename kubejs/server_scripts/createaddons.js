@@ -16,7 +16,7 @@ onEvent("recipes", (event) => {
             output: ["createastral:electrified_pin", 1],
             energy: 800,
         },
-				{
+        {
             input: ["astraladditions:shimmer_heart", 1],
             output: ["astraladditions:awakened_shimmer_heart", 1],
             energy: 800,
@@ -64,16 +64,16 @@ onEvent("recipes", (event) => {
     // CreateSifting
     [
         {
-            inputs: [{item: "minecraft:coarse_dirt"}],
+            inputs: [{ item: "minecraft:coarse_dirt" }],
             outputs: [
-                {item: "minecraft:dirt", chance: 1},
-                {item: "minecraft:flint", chance: 0.3},
+                { item: "minecraft:dirt", chance: 1 },
+                { item: "minecraft:flint", chance: 0.3 },
             ],
             processingTime: 50,
         },
         {
-            inputs: [{item: "minecraft:flint"}],
-            outputs: [{item: "minecraft:music_disc_13", chance: 0.001}],
+            inputs: [{ item: "minecraft:flint" }],
+            outputs: [{ item: "minecraft:music_disc_13", chance: 0.001 }],
             processingTime: 20,
         },
         {
@@ -88,55 +88,45 @@ onEvent("recipes", (event) => {
         {
             inputs: [{ item: "minecraft:cobbled_deepslate" }],
             outputs: [
-                {item: "minecraft:redstone", chance: 0.1},
-                {item: "create:copper_nugget", chance: 0.05},
+                { item: "minecraft:redstone", chance: 0.1 },
+                { item: "create:copper_nugget", chance: 0.05 },
             ],
             processingTime: 50,
         },
 
         {
-            inputs: [{item: "extractinator:silt"}],
+            inputs: [{ item: "extractinator:silt" }],
             outputs: [
-                {item: "minecraft:raw_iron", chance: 0.2},
-                {item: "minecraft:raw_copper", chance: 0.4},
-                {item: "minecraft:raw_gold", chance: 0.2},
-                {item: "techreborn:raw_tin", chance: 0.2},
-                {item: "create:raw_zinc", chance: 0.2},
-                {item: "create:crushed_raw_iron", chance: 0.2},
-                {item: "create:crushed_raw_copper", chance: 0.4},
-                {item: "create:crushed_raw_gold", chance: 0.2},
-                {item: "create:crushed_raw_tin", chance: 0.2},
-                {item: "create:crushed_raw_zinc", chance: 0.2},
+                { item: "minecraft:raw_iron", chance: 0.2 },
+                { item: "minecraft:raw_copper", chance: 0.4 },
+                { item: "minecraft:raw_gold", chance: 0.2 },
+                { item: "techreborn:raw_tin", chance: 0.2 },
+                { item: "create:raw_zinc", chance: 0.2 },
             ],
             processingTime: 1000,
         },
         {
-            inputs: [{item: "extractinator:slush"}],
+            inputs: [{ item: "extractinator:slush" }],
             outputs: [
-                {item: "minecraft:raw_iron", chance: 0.2},
-                {item: "minecraft:raw_copper", chance: 0.4},
-                {item: "minecraft:raw_gold", chance: 0.2},
-                {item: "techreborn:raw_tin", chance: 0.2},
-                {item: "create:raw_zinc", chance: 0.2},
-                {item: "create:crushed_raw_iron", chance: 0.2},
-                {item: "create:crushed_raw_copper", chance: 0.4},
-                {item: "create:crushed_raw_gold", chance: 0.2},
-                {item: "create:crushed_raw_tin", chance: 0.2},
-                {item: "create:crushed_raw_zinc", chance: 0.2},
+                { item: "minecraft:raw_iron", chance: 0.2 },
+                { item: "minecraft:raw_copper", chance: 0.4 },
+                { item: "minecraft:raw_gold", chance: 0.2 },
+                { item: "techreborn:raw_tin", chance: 0.2 },
+                { item: "create:raw_zinc", chance: 0.2 },
             ],
             processingTime: 1000,
         },
 
         {
-            inputs: [{item: "minecraft:prismarine"}],
+            inputs: [{ item: "minecraft:prismarine" }],
             outputs: [
-                {item: "minecraft:cod", chance: 0.2},
-                {item: "minecraft:salmon", chance: 0.1},
-                {item: "minecraft:tropical_fish", chance: 0.05},
-                {item: "minecraft:pufferfish", chance: 0.03},
-                {item: "minecraft:nautilus_shell", chance: 0.02},
-                {item: "minecraft:lily_pad", chance: 0.2},
-                {item: "minecraft:glow_ink_sac", chance: 0.1},
+                { item: "minecraft:cod", chance: 0.2 },
+                { item: "minecraft:salmon", chance: 0.1 },
+                { item: "minecraft:tropical_fish", chance: 0.05 },
+                { item: "minecraft:pufferfish", chance: 0.03 },
+                { item: "minecraft:nautilus_shell", chance: 0.02 },
+                { item: "minecraft:lily_pad", chance: 0.2 },
+                { item: "minecraft:glow_ink_sac", chance: 0.1 },
             ],
             processingTime: 100,
         },

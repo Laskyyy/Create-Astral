@@ -155,6 +155,10 @@ function crushingRecipes(event) {
                 ["minecraft:coal", 0.05],
             ],
         },
+        {
+            input: "tconstruct:ender_slime_crystal_block",
+            outputs: [["4x tconstruct:ender_slime_crystal", 1]],
+        },
         //Diorite,Granite,Andesite Crushing
         {
             input: "minecraft:diorite",
@@ -3621,6 +3625,9 @@ function superheatedMixingRecipes(event) {
         ["minecraft:calcite", "minecraft:tuff"],
         ["minecraft:obsidian", "minecraft:crying_obsidian"],
         ["compressor:octuple_compressed_cobblestone", "createastral:logo"],
+        ["16x minecraft:poppy", "minecraft:wither_rose"],
+        ["16x minecraft:bone", "tconstruct:necrotic_bone"],
+        [["estrogen:estrogen_pill", "tconstruct:ender_slime_crystal"], "estrogen:crystal_estrogen_pill"],
         [
             [
                 "8x create:refined_radiance_casing",

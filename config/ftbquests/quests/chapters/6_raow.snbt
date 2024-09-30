@@ -1,147 +1,238 @@
 {
-	quest_links: [ ]
-	default_hide_dependency_lines: false
-	group: ""
 	id: "5CC09F97DD5CD4CA"
+	group: ""
+	order_index: 8
 	filename: "6_raow"
-	default_quest_shape: ""
-	icon: "createastral:subatomic_ingot"
 	title: "{chapter.8.title}"
+	icon: "createastral:subatomic_ingot"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	images: [
 		{
+			x: 16.0d
+			y: -2.5d
+			width: 7.0d
+			height: 7.0d
 			rotation: 0.0d
 			image: "ad_astra:textures/sky/mercury.png"
-			width: 4.0d
-			click: ""
 			hover: [ ]
-			x: -5.0d
-			y: -9.5d
-			corner: false
+			click: ""
 			dev: false
-			height: 4.0d
+			corner: false
 		}
 		{
+			x: 5.0d
+			y: -0.5d
+			width: 3.0d
+			height: 3.0d
 			rotation: 0.0d
 			image: "ad_astra:textures/painting/mercury.png"
-			width: 3.0d
-			click: ""
 			hover: [ ]
-			x: -0.5d
-			y: -9.5d
-			corner: false
+			click: ""
 			dev: false
+			corner: false
+		}
+		{
+			x: 15.0d
+			y: -6.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/item/desh_ingot.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 14.0d
+			y: -5.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/item/ostrum_ingot.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 16.0d
+			y: -5.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/item/calorite_ingot.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 12.0d
+			y: -2.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "farmersdelight:textures/particle/star.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 17.5d
+			y: 2.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "farmersdelight:textures/particle/star.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 14.0d
+			y: 2.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "farmersdelight:textures/particle/star.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 22.0d
+			y: 14.5d
+			width: 20.0d
+			height: 15.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/painting/the_milky_way.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 26.5d
+			y: 8.0d
+			width: 30.5d
 			height: 3.0d
+			rotation: 0.0d
+			image: "minecraft:textures/entity/banner/gradient_up.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
 		}
 	]
-	order_index: 7
 	quests: [
 		{
+			x: 21.0d
+			y: 5.0d
+			subtitle: "{chapter.8.quest.1.subtitle}"
+			description: [
+				"Extremely brittle, but as fast as light, and with plenty of opportunity for upgrades. This material will have no competition by any other utility tool if utilised well..."
+				""
+				"Mix radiant residue with a chromatic compound to absorb the pure light into it. This produces Refined Radiance."
+			]
+			dependencies: ["65F77462CD1DFFDB"]
+			id: "1E93A90AEF614FA3"
 			tasks: [{
 				id: "49D7814698B13860"
 				type: "item"
 				item: "create:refined_radiance"
 			}]
-			description: ["{chapter.8.quest.1.description.1}"]
-			id: "1E93A90AEF614FA3"
-			x: 5.0d
-			y: 6.5d
-			rewards: [{
-				id: "19F8F9A8C9D44884"
-				type: "item"
-				item: {
-					id: "tconstruct:pick_head"
-					Count: 1b
-					tag: {
-						Material: "tconstruct:radiant"
+			rewards: [
+				{
+					id: "19F8F9A8C9D44884"
+					type: "item"
+					item: {
+						id: "tconstruct:pick_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:radiant"
+						}
 					}
 				}
-			}]
-			subtitle: "{chapter.8.quest.1.subtitle}"
-			dependencies: ["67337DF3DCEAC3DE"]
+				{
+					id: "198D71F7616C3B2F"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1747526165463332193L
+				}
+			]
 		}
 		{
-			size: 1.5d
-			description: ["{chapter.8.quest.2.description.1}"]
-			id: "00EB34849356498A"
-			x: 6.0d
-			y: 2.25d
-			shape: "square"
 			title: "{chapter.8.quest.2.title}"
-			rewards: [{
-				id: "3A62FF88ADB2691F"
-				type: "item"
-				item: "farmersdelight:glow_berry_custard"
-				count: 8
-			}]
+			x: 21.75d
+			y: -1.5d
+			shape: "square"
 			subtitle: "{chapter.8.quest.2.subtitle}"
+			description: [
+				"&6Refined Shimmer&r is a substance holding immense chromatic potential, but it is not quite there yet."
+				""
+				"By superheating all 16 blaze burners under the shimmer refinery, and pumping shimmer + refining agents into it's slots you will begin to process Refined Shimmer."
+				""
+				"A blaze cake stockpile is recommended to obtain, as 16 blaze cakes is likely to fund ~30 Refined Shimmer if lit at once!"
+			]
+			dependencies: ["6E9849C1B2A2AA15"]
+			size: 1.5d
+			id: "00EB34849356498A"
 			tasks: [{
 				id: "0CD2F946292C0C82"
 				type: "item"
 				item: "techreborn:uu_matter"
 				count: 10L
 			}]
+			rewards: [{
+				id: "3A62FF88ADB2691F"
+				type: "item"
+				item: "farmersdelight:glow_berry_custard"
+				count: 8
+			}]
 		}
 		{
-			size: 2.0d
-			description: ["{chapter.8.quest.3.description.1}"]
-			x: 6.0d
-			id: "11F776AD4AEA326A"
-			y: -1.0d
-			shape: "square"
 			title: "{chapter.8.quest.3.title}"
-			rewards: [
-				{
-					id: "37466A8C746B3640"
-					type: "item"
-					item: "dustrial_decor:large_cursed_lantern"
-					count: 10
-				}
-				{
-					id: "620AC43123F9889C"
-					type: "item"
-					item: "dustrial_decor:large_redstone_lantern"
-					count: 10
-				}
-				{
-					id: "2F984D010D803A09"
-					type: "item"
-					item: "dustrial_decor:large_soul_lantern"
-					count: 10
-				}
-			]
+			x: 11.0d
+			y: -7.0d
+			shape: "square"
+			description: ["{chapter.8.quest.3.description.1}"]
+			dependencies: ["3091F7AC37F848AD"]
+			size: 2.0d
+			id: "11F776AD4AEA326A"
 			tasks: [{
 				id: "6B36647F19D4A0E4"
 				type: "item"
 				item: "techreborn:industrial_circuit"
 			}]
+			rewards: [{
+				id: "704C52E8417151D8"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1747526165463332193L
+			}]
 		}
 		{
-			tasks: [
-				{
-					id: "245C147012EC7D57"
-					type: "item"
-					item: "techreborn:industrial_storage_unit"
-				}
-				{
-					id: "0AE1E24146E0A0AF"
-					type: "item"
-					item: "techreborn:industrial_tank_unit"
-				}
-			]
-			id: "21A0BECE0BA8537F"
-			optional: true
-			y: 1.5d
-			x: 1.5d
-			title: "{chapter.8.quest.4.title}"
-		}
-		{
-			size: 3.0d
-			description: ["{chapter.8.quest.6.description.1}"]
-			id: "7A4255522DA6FEB7"
-			x: 6.0d
-			y: -6.0d
-			shape: "pentagon"
 			title: "{chapter.8.quest.6.title}"
+			x: 4.5d
+			y: -4.5d
+			shape: "pentagon"
+			subtitle: "{chapter.8.quest.6.subtitle}"
+			description: ["{chapter.8.quest.6.description.1}"]
+			dependencies: ["5BD2D0F7F0D70180"]
+			hide: true
+			size: 3.0d
+			id: "7A4255522DA6FEB7"
+			tasks: [{
+				id: "5602FF437BAA6984"
+				type: "dimension"
+				icon: "ad_astra:mercury_globe"
+				dimension: "ad_astra:mercury"
+			}]
 			rewards: [
 				{
 					id: "3D48BAA2A9CB06DC"
@@ -155,173 +246,119 @@
 					xp: 300
 				}
 			]
-			subtitle: "{chapter.8.quest.6.subtitle}"
-			dependencies: ["5BD2D0F7F0D70180"]
-			tasks: [{
-				id: "5602FF437BAA6984"
-				type: "dimension"
-				icon: "ad_astra:mercury_globe"
-				dimension: "ad_astra:mercury"
-			}]
-			hide: true
 		}
 		{
-			tasks: [{
-				id: "42893148C0486F38"
-				type: "item"
-				item: {
-					id: "techreborn:industrial_drill"
-					Count: 1b
-					tag: {
-						energy: 1000000L
-					}
+			title: "Techreborn Tools+ Turbo"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "techreborn:textures/item/tool/industrial_drill.png"
 				}
-			}]
-			id: "145DB2939CA23578"
-			x: -1.0d
-			y: 0.5d
-			title: "{chapter.8.quest.8.title}"
+			}
+			x: 18.0d
+			y: -1.0d
+			description: ["Another round of upgrades for the Tech Reborn crew. "]
 			dependencies: ["3705B91C0D4EA2A0"]
 			optional: true
-		}
-		{
-			tasks: [{
-				id: "439FAA31282FA86E"
-				type: "item"
-				item: {
-					id: "techreborn:industrial_chainsaw"
-					Count: 1b
-					tag: {
-						energy: 1000000L
-					}
-				}
-			}]
 			id: "15D4CF543BB0B94F"
-			x: -1.5d
-			y: -0.5d
-			title: "{chapter.8.quest.9.title}"
-			dependencies: ["3705B91C0D4EA2A0"]
-			optional: true
-		}
-		{
-			tasks: [{
-				id: "41D73AB875366823"
-				type: "item"
-				item: {
-					id: "techreborn:industrial_jackhammer"
-					Count: 1b
-					tag: {
-						energy: 1000000L
-					}
+			tasks: [
+				{
+					id: "02775878F7EE70CE"
+					type: "item"
+					item: "techreborn:industrial_drill"
 				}
-			}]
-			id: "596186F7A06DD4D1"
-			x: -1.0d
-			y: -1.5d
-			title: "{chapter.8.quest.10.title}"
-			dependencies: ["3705B91C0D4EA2A0"]
-			optional: true
+				{
+					id: "5E74DFA413AE56A7"
+					type: "item"
+					item: "techreborn:industrial_jackhammer"
+				}
+				{
+					id: "51FFB1C6CA44CF4A"
+					type: "item"
+					item: "techreborn:industrial_chainsaw"
+				}
+			]
 		}
 		{
-			size: 1.5d
-			description: ["{chapter.8.quest.12.description.1}"]
-			id: "3705B91C0D4EA2A0"
-			x: 1.0d
-			y: -0.25d
+			title: "In fact, you can hold these bare handed!"
+			x: 19.5d
+			y: 0.75d
 			shape: "square"
-			title: "OPTIONAL COMPONENT FOR VARIOUS CH5 GOODIES?"
-			rewards: [{
-				id: "1ECE2D478CABB09D"
-				type: "item"
-				item: {
-					id: "tconstruct:broad_blade"
-					Count: 1b
-					tag: {
-						Material: "tconstruct:calorite"
-					}
-				}
-			}]
-			dependencies: ["4347500C31C8D0DD"]
+			description: ["Any machine fitted with &6Uranium Rods&r will function at incredible potential, which is worth the side-effects of the ambient radiation likely lowering lifespans of those nearby."]
+			dependencies: ["4E9CF88D314F6843"]
+			size: 1.5d
+			id: "3705B91C0D4EA2A0"
 			tasks: [{
 				id: "7C490195DEDC649C"
 				type: "item"
 				item: "techreborn:data_storage_chip"
 			}]
-		}
-		{
-			tasks: [{
-				id: "6E5E7D2A1C158814"
-				type: "item"
-				item: "techreborn:fusion_control_computer"
-			}]
-			description: ["{chapter.8.quest.13.description.1}"]
-			id: "78932223283B0376"
-			x: 4.0d
-			y: 8.5d
-			title: "{chapter.8.quest.13.title}"
 			rewards: [
 				{
-					id: "05740C0F17A9E43A"
+					id: "1ECE2D478CABB09D"
 					type: "item"
-					item: "techreborn:fusion_coil"
-					count: 4
+					item: {
+						id: "tconstruct:broad_blade"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:calorite"
+						}
+					}
 				}
 				{
-					id: "1CA60AE8CA8D8B8C"
-					type: "item"
-					item: "techreborn:advanced_machine_casing"
-					count: 16
-				}
-				{
-					id: "3EF35CDB72456771"
-					type: "item"
-					item: "techreborn:industrial_machine_casing"
-					count: 16
+					id: "53B0E326C09A5C44"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1747526165463332193L
 				}
 			]
-			subtitle: "{chapter.8.quest.13.subtitle}"
-			dependencies: ["7A25FF7058F0C3CD"]
 		}
 		{
-			tasks: [{
-				id: "52D1D476DE48D2DD"
-				type: "item"
-				item: "techreborn:fusion_coil"
-			}]
-			description: ["{chapter.8.quest.14.description.1}"]
-			id: "7A25FF7058F0C3CD"
-			x: 4.0d
-			y: 7.5d
-			title: "{chapter.8.quest.14.title}"
-			subtitle: "{chapter.8.quest.14.subtitle}"
-			dependencies: ["17794A6A366C8497"]
-			hide_dependency_lines: true
-		}
-		{
+			x: 23.0d
+			y: 5.0d
+			subtitle: "{chapter.8.quest.19.subtitle}"
+			description: [
+				"Strengthening our steel by pouring the newly created &6Shadow Steel Fluid&r over it will create one of the strongest metals in the known galaxy."
+				""
+				"Utilise this power well, as a Tinker Tool shadow steel serves as an un-matched weapon for combat focused weaponry."
+				""
+			]
+			dependencies: ["6328B6E2C86D8834"]
+			id: "69F63D2FA5384442"
 			tasks: [{
 				id: "62B6F76DEE9A1280"
 				type: "item"
 				item: "create:shadow_steel"
 			}]
-			description: ["{chapter.8.quest.19.description.1}"]
-			id: "69F63D2FA5384442"
-			x: 8.0d
-			y: 4.5d
-			rewards: [{
-				id: "43511E95E9B3CA35"
-				type: "item"
-				item: {
-					id: "tconstruct:tool_handle"
-					Count: 1b
-					tag: {
-						Material: "tconstruct:shadow"
+			rewards: [
+				{
+					id: "43511E95E9B3CA35"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:shadow"
+						}
 					}
 				}
-			}]
-			subtitle: "{chapter.8.quest.19.subtitle}"
-			dependencies: ["0DA873C30C320AD9"]
+				{
+					id: "78E59946ECFCCD2C"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1747526165463332193L
+				}
+			]
 		}
 		{
+			title: "{chapter.8.quest.20.title}"
+			x: 21.759523809523827d
+			y: 1.0345238095238187d
+			subtitle: "{chapter.8.quest.20.subtitle}"
+			description: ["This quirky little compound is the purest form of colour. It is practically begging to be turned into Refined Radiance or Shadow Steel."]
+			dependencies: ["00EB34849356498A"]
+			id: "17794A6A366C8497"
 			tasks: [{
 				id: "196283706CF2C8F5"
 				type: "item"
@@ -331,57 +368,26 @@
 					tag: { }
 				}
 			}]
-			description: ["{chapter.8.quest.20.description.1}"]
-			id: "17794A6A366C8497"
-			x: 6.0d
-			y: 3.5d
-			title: "{chapter.8.quest.20.title}"
-			subtitle: "{chapter.8.quest.20.subtitle}"
-			dependencies: ["00EB34849356498A"]
-		}
-		{
-			tasks: [{
-				id: "4B842021068A83C2"
-				type: "item"
-				item: "techreborn:quantum_storage_unit"
+			rewards: [{
+				id: "1A29B5BE39F28223"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1747526165463332193L
 			}]
-			id: "2B4F4694ED5364CB"
-			x: 2.5833333333333215d
-			y: 11.315476190476197d
-			subtitle: "{chapter.8.quest.21.subtitle}"
-			dependencies: ["3ED703EAA646A18A"]
-			hide_dependency_lines: true
-			optional: true
 		}
 		{
-			tasks: [{
-				id: "532401BAA4135F35"
-				type: "item"
-				item: "techreborn:quantum_tank_unit"
-			}]
-			id: "5EE3491BADD5E62D"
-			x: 2.0d
-			y: 9.5d
-			subtitle: "{chapter.8.quest.22.subtitle}"
+			title: "{chapter.8.quest.24.title}"
+			x: 22.0d
+			y: 5.5d
+			shape: "square"
+			description: [
+				"Thanks to rapid accelerations in technology, the jet suit will provide an unbeatable defense, alongside flight capability."
+				""
+				"Utilise the &6Jet Suit Flash Card&r from Per Aspera to control your flight more delicately, allowing for movement akin to creative flight, at the cost of it's fuel..."
+			]
+			hide_dependency_lines: false
 			dependencies: ["3ED703EAA646A18A"]
-			hide_dependency_lines: true
-			optional: true
-		}
-		{
-			tasks: [{
-				id: "01806CFF98D8B3B9"
-				type: "item"
-				item: "techreborn:quantum_solar_panel"
-			}]
-			id: "42EA88741D1C43C3"
-			x: 2.0d
-			y: 10.5d
-			subtitle: "{chapter.8.quest.23.subtitle}"
-			dependencies: ["3ED703EAA646A18A"]
-			hide_dependency_lines: true
-			optional: true
-		}
-		{
+			id: "0299295DF9D47181"
 			tasks: [
 				{
 					id: "196BAF5B3A8729EF"
@@ -427,218 +433,90 @@
 						}
 					}
 				}
+				{
+					id: "28DE14659DDE6FC6"
+					type: "item"
+					item: "per_aspera:jet_suit_flash_card"
+				}
 			]
-			id: "0299295DF9D47181"
-			x: 8.0d
-			y: 7.5d
-			title: "{chapter.8.quest.24.title}"
-			subtitle: "{chapter.8.quest.24.subtitle}"
-			dependencies: ["3ED703EAA646A18A"]
-			hide_dependency_lines: true
+			rewards: [{
+				id: "57B93FBC8CB04D7A"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1747526165463332193L
+			}]
 		}
 		{
-			size: 2.0d
-			description: ["{chapter.8.quest.25.description.1}"]
-			id: "3ED703EAA646A18A"
-			x: 6.0d
-			y: 8.0d
+			title: "The connection of Dark and Light."
+			x: 22.0d
+			y: 7.5d
 			shape: "hexagon"
-			title: "{chapter.8.quest.25.title}"
-			rewards: [{
-				id: "4F5C903B3EB2C00D"
-				type: "item"
-				item: "createastral:subatomic_ingot"
-				count: 3
-			}]
-			subtitle: "{chapter.8.quest.25.subtitle}"
+			description: ["This Super-Energised alloy will crumble under no known force."]
 			dependencies: [
 				"1E93A90AEF614FA3"
-				"1A3925C20FDC3876"
-				"17794A6A366C8497"
+				"69F63D2FA5384442"
 			]
+			size: 2.0d
+			id: "3ED703EAA646A18A"
 			tasks: [{
 				id: "62B66772EBD3B7F0"
 				type: "item"
 				item: "createastral:subatomic_ingot"
 			}]
-		}
-		{
-			tasks: [{
-				id: "477984AE67E8C8B1"
-				type: "item"
-				item: {
-					id: "techreborn:cell"
-					Count: 1b
-					tag: {
-						fluid: "kubejs:plasma_fluid"
-					}
+			rewards: [
+				{
+					id: "4F5C903B3EB2C00D"
+					type: "item"
+					item: "createastral:subatomic_ingot"
+					count: 3
 				}
-			}]
-			subtitle: "{chapter.8.quest.26.subtitle}"
-			id: "46382C349512DBEE"
-			y: 9.5d
-			x: -1.0d
-			title: "{chapter.8.quest.26.title}"
-		}
-		{
-			tasks: [{
-				id: "445F1481313A0962"
-				type: "item"
-				item: {
-					id: "techreborn:cell"
-					Count: 1b
-					tag: {
-						fluid: "kubejs:hellfire"
-					}
+				{
+					id: "0AE99F9A8A26B64A"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1747526165463332193L
 				}
-			}]
-			description: ["{chapter.8.quest.29.description.1}"]
-			id: "5779A205B598A69B"
-			x: -2.0d
-			y: 9.0d
-			title: "{chapter.8.quest.29.title}"
-			subtitle: "{chapter.8.quest.29.subtitle}"
+			]
 		}
 		{
+			title: "{chapter.8.quest.31.title}"
+			x: 9.0d
+			y: -8.5d
+			description: ["{chapter.8.quest.31.description.1}"]
+			dependencies: ["2291F6259C65D8F6"]
+			id: "3091F7AC37F848AD"
 			tasks: [{
 				id: "6B1169BFB796200B"
 				type: "item"
 				item: "createastral:calorite_pin"
 				count: 16L
 			}]
-			description: ["{chapter.8.quest.31.description.1}"]
-			id: "3091F7AC37F848AD"
-			y: -3.0d
-			x: 7.5d
-			title: "{chapter.8.quest.31.title}"
 		}
 		{
-			tasks: [{
-				id: "1AD7099B7EF44311"
-				type: "item"
-				item: {
-					id: "techreborn:cell"
-					Count: 1b
-					tag: {
-						fluid: "techreborn:lithium"
-					}
-				}
-			}]
-			description: ["{chapter.8.quest.32.description.1}"]
-			id: "77E9682ED4C5C74D"
-			x: 8.5d
-			y: -0.5d
-			title: "{chapter.8.quest.32.title}"
-			dependencies: ["7A4255522DA6FEB7"]
-			hide_dependency_lines: true
-		}
-		{
-			tasks: [{
-				id: "1D4622C61B62087D"
-				type: "item"
-				item: "techreborn:machine_parts"
-			}]
-			description: ["{chapter.8.quest.33.description.1}"]
-			id: "3F5054A2481E6F9C"
-			x: 8.5d
-			y: -1.5d
-			title: "{chapter.8.quest.33.title}"
-			dependencies: ["7A4255522DA6FEB7"]
-			hide_dependency_lines: true
-		}
-		{
-			tasks: [{
-				id: "644587A8C9C3587B"
-				type: "item"
-				item: "create:veridium"
-				count: 64L
-			}]
-			description: ["{chapter.8.quest.35.description.1}"]
-			id: "1FFE36A644FA5491"
-			y: -3.5d
-			x: 0.0d
-			title: "{chapter.8.quest.35.title}"
-		}
-		{
-			tasks: [{
-				id: "79CDE6A5FA151389"
-				type: "checkmark"
-			}]
-			icon: "create:crushing_wheel"
-			id: "1B70BAF5B7B5ED0C"
-			x: 2.0d
-			y: -3.0d
-			title: "{chapter.8.quest.36.title}"
-			dependencies: ["1FFE36A644FA5491"]
-		}
-		{
-			tasks: [{
-				id: "0B734A87872139D8"
-				type: "item"
-				item: "techreborn:olivine_dust"
-				count: 16L
-			}]
-			description: ["{chapter.8.quest.37.description.1}"]
-			id: "0E0C76625B24032F"
-			x: 0.0d
-			y: -2.5d
-			title: "{chapter.8.quest.37.title}"
-			dependencies: ["1B70BAF5B7B5ED0C"]
-		}
-		{
-			tasks: [{
-				id: "09FA75F9B9A51AD9"
-				type: "item"
-				item: "createastral:olivine_sheet"
-			}]
-			id: "4347500C31C8D0DD"
-			x: 1.2309523809523668d
-			y: -2.1107142857142804d
-			title: "{chapter.8.quest.38.title}"
-			rewards: [{
-				id: "051D67B83BCC205C"
-				type: "item"
-				item: "vinery:apple_pie"
-			}]
-			subtitle: "{chapter.8.quest.38.subtitle}"
-			dependencies: ["0E0C76625B24032F"]
-		}
-		{
-			tasks: [{
-				id: "39EC4DCA50027009"
-				type: "item"
-				item: "techreborn:plasma_generator"
-			}]
-			dependencies: ["3705B91C0D4EA2A0"]
-			id: "4D2FD7C206096DDE"
-			y: 1.5d
-			x: -0.5d
-		}
-		{
-			tasks: [{
-				id: "33BC38D3CE9B680B"
-				type: "item"
-				item: "techreborn:lightning_rod"
-			}]
-			dependencies: ["3705B91C0D4EA2A0"]
-			id: "45B1D927E1ED0A14"
-			y: 2.0d
-			x: 0.5d
-		}
-		{
-			size: 5.0d
-			description: ["{chapter.8.quest.50.description.1}"]
-			id: "69669C2A3E16E328"
-			x: 6.0d
-			y: 17.5d
+			title: "A rocket to break the barrier between realities."
+			x: 21.928571428571445d
+			y: 14.250000000000036d
 			shape: "gear"
-			title: "{chapter.8.quest.50.title}"
-			rewards: [{
-				id: "338DB62A4C226423"
-				type: "xp"
-				xp: 1000
-			}]
-			subtitle: "{chapter.8.quest.50.subtitle}"
+			subtitle: "Are you prepared for what comes next?"
+			description: [
+				""
+				"This rocket is &bnot limited by the bounds of spacetime&r."
+				""
+				"Where we are about to go trascends all understanding. "
+				""
+				"It cannot be possible."
+				""
+				"This is the source of it all. This destruction of the solar system."
+				""
+				"What's a &cN&ka&r&ceth&ka&r&cer?"
+			]
+			dependencies: [
+				"638DBED9ED0BD4CB"
+				"739D93CC57AA8BF2"
+				"16A408D4C0DAD08D"
+			]
+			size: 5.0d
+			id: "69669C2A3E16E328"
 			tasks: [{
 				id: "1718FFABE1DE0504"
 				type: "item"
@@ -648,29 +526,87 @@
 					tag: { }
 				}
 			}]
+			rewards: [
+				{
+					id: "338DB62A4C226423"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "54C3101904DC7BDC"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1747526165463332193L
+				}
+			]
 		}
 		{
+			title: "Out of Bounds"
+			x: 23.5d
+			y: -2.0d
+			subtitle: "You've gone too far..."
+			description: [
+				"Grab yourself another Bedrock Smasher. We're going deeper."
+				""
+				"Breaking Bedrock with the Yttric Rifle above Y=-64 will give you bedrock shards, but we can go deeper than that."
+				""
+				"Break through the lowest level of Bedrock (Y=-64) and unleash the Void beneath."
+			]
+			dependencies: ["185518EF87BFDBCC"]
+			id: "0DA873C30C320AD9"
 			tasks: [{
 				id: "63E9A67A654D5B55"
 				type: "item"
 				item: "yttr:bedrock_smasher"
 			}]
-			dependencies: ["00EB34849356498A"]
-			id: "0DA873C30C320AD9"
-			y: 3.5d
-			x: 8.5d
+			rewards: [{
+				id: "12574995BA34B3CF"
+				type: "item"
+				item: "chipped:black_concrete_9"
+				count: 32
+			}]
 		}
 		{
-			x: 10.5d
-			y: 4.0d
+			title: "&6Aim&r for the stars."
+			x: 16.5d
+			y: -7.0d
+			shape: "hexagon"
+			subtitle: "A multipurpose rifle with incredible potential."
+			description: [
+				"&6Press R&r to cycle between firing modes on the rifle."
+				""
+				"For progression you will want to become familiar with the &6explosive shot&r, but feel free to become acquainted with the modes at your disposal!"
+			]
+			dependencies: [
+				"11F776AD4AEA326A"
+				"7001A75C47B1DA1A"
+			]
+			size: 2.0d
 			id: "07A143B6DCF06587"
 			tasks: [{
 				id: "156E0FBC07E0A278"
 				type: "item"
 				item: "yttr:rifle"
 			}]
+			rewards: [{
+				id: "66C76993F8BE8831"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1747526165463332193L
+			}]
 		}
 		{
+			title: "The Void"
+			x: 23.5d
+			y: 1.0d
+			subtitle: "The World... is Leaking..."
+			description: [
+				"Stand well clear, this stuff is not to swim in... not yet..."
+				""
+				"The Void calls you. Use a Bucket, or Copper Pipes, to pick it up. We will be using this."
+			]
+			dependencies: ["0DA873C30C320AD9"]
+			id: "471D3DCAFD9710EC"
 			tasks: [{
 				id: "4F4F59A87FE43DAB"
 				type: "item"
@@ -683,31 +619,18 @@
 				}
 				match_nbt: true
 			}]
-			dependencies: ["69F63D2FA5384442"]
-			id: "471D3DCAFD9710EC"
-			y: 5.5d
-			x: 7.5d
 		}
 		{
-			x: 12.5d
-			y: 5.0d
-			id: "06E0C5C1645ABE00"
-			tasks: [
-				{
-					id: "12B82D3778AB4CE6"
-					type: "item"
-					item: "yttr:suit_station"
-				}
-				{
-					id: "27D5CE49C8CBB52B"
-					type: "item"
-					item: "yttr:diving_plate"
-				}
+			title: "Void Diving Gear"
+			x: 26.5d
+			y: 2.0d
+			subtitle: "Into the Void..."
+			description: [
+				"All Void is connected. With this diving gear, we can safely enter a Void Geyser to fast travel to other locations where the Void has been exposed."
+				""
+				"You will need a Suit Station and a Diving Plate also, so don't go splashing around in your Void Geyser just yet."
 			]
-		}
-		{
-			x: 13.5d
-			y: 5.0d
+			dependencies: ["4C8291E72A5757F9"]
 			id: "637D5C1C0C789F9E"
 			tasks: [
 				{
@@ -757,30 +680,39 @@
 			]
 		}
 		{
+			title: "BOO!"
+			x: 17.0d
+			y: -4.5d
+			subtitle: "Did I Snare You?"
+			description: [
+				"A Snare can capture mobs with a simple right click BUT-"
+				"Captured mobs are on a timer. The higher the HP of the mob, the lower the timer will be. Battle a mob down to low HP to keep it captured for a longer amount of time."
+				""
+				"If the timer runs out, the mob will be destroyed. Be careful!"
+			]
+			dependencies: ["7001A75C47B1DA1A"]
+			id: "5F4AD4D6BA9BD7BA"
 			tasks: [{
 				id: "5F8EB803180D85C6"
 				type: "item"
 				item: "yttr:snare"
 			}]
-			id: "5F4AD4D6BA9BD7BA"
-			y: 10.0d
-			x: -2.0d
-			title: "MOVE THESE TO EARLY GAME?"
-		}
-		{
-			tasks: [{
-				id: "323463977EB0C150"
+			rewards: [{
+				id: "1A2BC69CDB5C9911"
 				type: "item"
-				item: "yttr:ultrapure_yttrium"
+				item: "tconstruct:jeweled_apple"
 			}]
-			id: "56CAF2836EDD5E33"
-			y: 3.0d
-			x: 11.5d
-			title: "Only meltable into this stuff?"
 		}
 		{
-			x: 10.5d
-			y: 2.5d
+			title: "Beginning a yttrium processing line."
+			x: 6.5d
+			y: -3.5d
+			description: [
+				"Yttrium cannot be automated from the get-go, so get mining!"
+				""
+				"I'm sure there will be a method soon to produce it... "
+			]
+			dependencies: ["7A4255522DA6FEB7"]
 			id: "1CF74DAA63DCF682"
 			tasks: [{
 				id: "698929C301002FCE"
@@ -789,18 +721,20 @@
 			}]
 		}
 		{
-			x: 11.5d
-			y: 2.0d
-			id: "23BE9A2CA19FBC32"
-			tasks: [{
-				id: "0761E8901329B3F0"
-				type: "item"
-				item: "kubejs:molten_shadowsteel_bucket"
-			}]
-		}
-		{
-			x: 7.5d
-			y: -4.0d
+			title: "Chromatic Ores are the new trend."
+			x: 4.5d
+			y: -7.0d
+			subtitle: "Es Muy Calor"
+			description: [
+				"Unlike it's bretheren, yttrium, calorite does not require as much special processing."
+				""
+				"Simply melt down raw, or crushed ore into fluid using a hellfire heated foundry or smelter, and cast it into ingots."
+			]
+			dependencies: [
+				"7A4255522DA6FEB7"
+				"5AE829C4B70FCF74"
+			]
+			dependency_requirement: "one_completed"
 			id: "7959BC3A659C88D5"
 			tasks: [{
 				id: "569AC03E026D1FB2"
@@ -809,8 +743,16 @@
 			}]
 		}
 		{
-			x: 8.5d
-			y: -3.5d
+			x: 6.5d
+			y: -8.5d
+			description: [
+				"Calorite production can split in a few ways."
+				""
+				"For now, you are likely only going to want to produce cinnabar and calorite pins."
+				""
+				"Yttrium however, will be automatable through calorite later on, so prepare a source of raw calorite for when this happens..."
+			]
+			dependencies: ["7959BC3A659C88D5"]
 			id: "2291F6259C65D8F6"
 			tasks: [{
 				id: "5F908FE049E296F6"
@@ -819,108 +761,28 @@
 			}]
 		}
 		{
-			tasks: [
-				{
-					id: "1E8EE7B30C05B570"
-					type: "item"
-					item: "createastral:voidtouched_compound"
-				}
-				{
-					id: "25EA24503F923E85"
-					type: "item"
-					item: "tconstruct:seared_melter"
-				}
+			title: "Creation of a dark compound."
+			x: 23.5d
+			y: 2.5d
+			description: [
+				"&lTo create it, throw a &6Chromatic Compound&r &linto Void fluid.&r"
+				""
+				"The Void will embrace your gift, and return the favour."
 			]
 			dependencies: ["471D3DCAFD9710EC"]
 			id: "1A3925C20FDC3876"
-			y: 6.5d
-			x: 7.0d
-		}
-		{
-			size: 2.0d
 			tasks: [{
-				id: "602804C539B8A8A5"
-				type: "custom"
-			}]
-			id: "5B1C616DD81CC3D8"
-			y: -3.5d
-			x: 5.5d
-			title: "MAKE CALORITE MAYBE TAKE A NEW FOUNDRY FUEL TO COOK?"
-		}
-		{
-			size: 2.0d
-			id: "22E013C7DB0B6842"
-			y: 1.0d
-			x: 4.5d
-			tasks: [{
-				id: "08731249547DF441"
-				type: "custom"
-				title: "PROCESSING LINE FOR SHIMMER INTO REFINED SHIMMER"
-			}]
-		}
-		{
-			size: 2.0d
-			id: "5ED867865AA5DE3F"
-			y: 11.0d
-			x: 8.0d
-			tasks: [{
-				id: "56EAB49E5B91915B"
-				type: "custom"
-				title: "THE BIG ROCKET PROCESS WE SCRAPPED FROM 2.0"
-			}]
-		}
-		{
-			x: 1.5d
-			y: 4.5d
-			id: "381BAB90E8FF9E17"
-			tasks: [{
-				id: "19DF8D7F83ED09A6"
-				type: "custom"
-				title: "How should refined radiance be formed?"
-			}]
-		}
-		{
-			tasks: [{
-				id: "4BCBB1D3040A8DB4"
+				id: "1E8EE7B30C05B570"
 				type: "item"
-				item: "minecraft:paper"
+				item: "createastral:voidtouched_compound"
 			}]
-			id: "478912719F425EE3"
-			x: 3.5d
-			y: 3.5d
-			title: "sequenced ass"
-			rewards: [
-				{
-					id: "6A6FE2126B4B63C9"
-					type: "item"
-					item: "techreborn:charcoal_dust"
-				}
-				{
-					id: "6E46CF83BD9D8EC9"
-					type: "item"
-					item: "techreborn:obsidian_dust"
-				}
-				{
-					id: "5CA31EF151BFD6A2"
-					type: "item"
-					item: "techreborn:sulfur_dust"
-				}
-			]
-			dependencies: ["00EB34849356498A"]
 		}
 		{
-			tasks: [{
-				id: "7A8C8D2751445B82"
-				type: "item"
-				item: "techreborn:saw_dust"
-			}]
-			dependencies: ["478912719F425EE3"]
-			id: "78AC6DE01385F2BB"
-			y: 4.5d
-			x: 4.0d
-			title: "Separation agent"
-		}
-		{
+			title: "Mix for liquid light"
+			x: 21.0d
+			y: 2.0d
+			dependencies: ["17794A6A366C8497"]
+			id: "67337DF3DCEAC3DE"
 			tasks: [
 				{
 					id: "327670E133012AAE"
@@ -930,7 +792,7 @@
 				{
 					id: "4F862994A695AE2A"
 					type: "item"
-					item: "techreborn:saw_dust"
+					item: "createastral:separation_agent"
 				}
 				{
 					id: "2337556CF97FFD02"
@@ -986,205 +848,974 @@
 					item: "kubejs:shimmer_bucket"
 				}
 			]
-			id: "67337DF3DCEAC3DE"
-			x: 4.5d
-			y: 5.5d
-			title: "mix for liquid light"
-			rewards: [{
-				id: "2BC10DDFAA1A06F9"
-				type: "item"
-				item: "createastral:refined_radiance_block"
-			}]
-			dependencies: ["78AC6DE01385F2BB"]
 		}
 		{
-			tasks: [
-				{
-					id: "2BBA7CBA21DF3EA8"
-					type: "item"
-					item: "minecraft:nether_star"
-				}
-				{
-					id: "091FE19145E5A6A4"
-					type: "item"
-					item: "techreborn:saw_dust"
-				}
+			x: 20.0d
+			y: 7.5d
+			subtitle: "An extremely light casing."
+			description: [
+				"Used for it's properties of being incredibly lightweight, radiant casing in unmatched as both an ingredient..."
+				""
+				"...and decoration block. "
+				""
+				"Apply Refined Radiance to advanced casings to obtain."
 			]
-			rewards: [{
-				id: "7370B8813D14E3DD"
-				type: "item"
-				item: "createastral:refined_radiance_block"
-			}]
-			id: "2206A2D1CB7332D3"
-			y: 4.5d
-			x: -2.0d
-			title: "1 star to 1000mb"
-		}
-		{
-			x: -2.0d
-			y: 5.0d
-			id: "399244148AE10F35"
-			tasks: [
-				{
-					id: "295717568D1EE084"
-					type: "item"
-					item: {
-						id: "tconstruct:round_plate"
-						Count: 1b
-						tag: {
-							Material: "tconstruct:radiant"
-						}
-					}
-				}
-				{
-					id: "3412A30F1855C418"
-					type: "item"
-					item: {
-						id: "techreborn:cell"
-						Count: 1b
-						tag: {
-							fluid: "tconstruct:ender_slime"
-						}
-					}
-				}
-				{
-					id: "35693906F70B4913"
-					type: "item"
-					item: "techreborn:uu_matter"
-				}
-			]
-		}
-		{
+			dependencies: ["1E93A90AEF614FA3"]
+			id: "704AEB416AA5A953"
 			tasks: [{
-				id: "04EE7F3E369CF26E"
+				id: "305D53E422BBD5E6"
+				type: "item"
+				item: "create:refined_radiance_casing"
+			}]
+		}
+		{
+			x: 24.0d
+			y: 7.5d
+			subtitle: "An extremely durable casing."
+			description: ["Boasting toughness beyond known constraints, shadowsteel is obtained through applying shadow steel to advanced casings."]
+			dependencies: ["69F63D2FA5384442"]
+			id: "0931E20B74EB2D8A"
+			tasks: [{
+				id: "739A2A7682DE28F2"
+				type: "item"
+				item: "create:shadow_steel_casing"
+			}]
+		}
+		{
+			title: "Crushing to crushed yttrium."
+			x: 8.5d
+			y: -3.0d
+			subtitle: "The first round of crushing begins!"
+			dependencies: ["1CF74DAA63DCF682"]
+			id: "20FCAE136788543A"
+			tasks: [{
+				id: "2344F45CE2D696EE"
+				type: "item"
+				item: "createastral:crushed_raw_gadolinite"
+			}]
+		}
+		{
+			title: "Forming Yttrium Ingots"
+			x: 15.0d
+			y: -5.0d
+			description: [
+				"Once you have combined your choice of Ad Astra Ingot with molten yttrium, an ingot will form."
+				""
+				"It's not quick, it's not easy, but it's a powerful metal."
+			]
+			dependencies: ["2E70D7A586F92E7A"]
+			id: "7001A75C47B1DA1A"
+			tasks: [{
+				id: "7CF51EC610A1C6D0"
+				type: "item"
+				item: "yttr:yttrium_ingot"
+			}]
+		}
+		{
+			title: "Converting to powder."
+			x: 10.5d
+			y: -3.0d
+			subtitle: "Millstones or crushing wheels will get the job done!"
+			dependencies: ["20FCAE136788543A"]
+			id: "27E46FB10D9F214B"
+			tasks: [{
+				id: "40240E962DD86A7F"
+				type: "item"
+				item: "yttr:yttrium_dust"
+			}]
+		}
+		{
+			icon: {
+				id: "techreborn:cell"
+				Count: 1b
+				tag: {
+					fluid: "kubejs:molten_yttrium"
+				}
+			}
+			x: 12.5d
+			y: -3.5d
+			subtitle: "Melting to yttrium fluid, and mixing with chromatic metals."
+			dependencies: ["27E46FB10D9F214B"]
+			id: "2E70D7A586F92E7A"
+			tasks: [
+				{
+					id: "2BCF817CE40CC8AB"
+					type: "item"
+					item: "kubejs:molten_yttrium_bucket"
+				}
+				{
+					id: "3B197126E1044826"
+					type: "item"
+					item: "ad_astra:desh_ingot"
+				}
+				{
+					id: "554C413EAEC4C59E"
+					type: "item"
+					item: "ad_astra:ostrum_ingot"
+				}
+				{
+					id: "6CB0A692AB9D6C73"
+					type: "item"
+					item: "ad_astra:calorite_ingot"
+				}
+				{
+					id: "4F173F2EBB46F3FE"
+					type: "checkmark"
+					title: "&6I'm ready!&r"
+				}
+			]
+		}
+		{
+			title: "Diving Board for Void?"
+			x: 27.5d
+			y: 1.5d
+			description: [
+				"Before hopping into a void spout and being obliterated, consider equipping a suit of diving gear, filling it up at a diving station and standing on a diving plate to initiate a deep dive."
+				""
+				"Checkpoints between all void spouts in the overworld with diving plates will be created, which the diver can instantly fast travel between at little cost. Perfect for setting up huge cross-overworld transport networks."
+				""
+			]
+			dependencies: ["637D5C1C0C789F9E"]
+			id: "32CD4BE3B7B7CF46"
+			tasks: [{
+				id: "71103BF2B9585BCF"
+				type: "item"
+				item: "yttr:diving_plate"
+			}]
+		}
+		{
+			x: 26.0d
+			y: 3.0d
+			subtitle: "Getting Fueled Up"
+			description: [
+				"You need to manage three resources to Dive safely: Fuel, Oxygen and Hull Integrity."
+				""
+				"Fuel will aid movement under a bulky Diving Suit and the immense pressure of the Void. Oxygen will keep you breathing. Hull Integrity will counteract the hostile nature of the Void, preventing your Diving Suit from imploding with you in it."
+				""
+			]
+			dependencies: ["637D5C1C0C789F9E"]
+			id: "6F5C9A0CC0CAC7A8"
+			tasks: [{
+				id: "5C63E8CF79F15691"
+				type: "item"
+				item: "yttr:suit_station"
+			}]
+		}
+		{
+			title: "Smashing!"
+			x: 23.5d
+			y: -7.0d
+			subtitle: "Crackers, Gromit!"
+			description: [
+				"The first (productive) thing to do with this rifle will be to split open a block of bedrock."
+				""
+				"When placing a bedrock smasher on a piece of bedrock above Y=-64 (Not touching the void), the device will penetrate straight through it's unbreakable core."
+			]
+			dependencies: ["07A143B6DCF06587"]
+			id: "185518EF87BFDBCC"
+			tasks: [{
+				id: "4AE0F030409752C6"
+				type: "item"
+				item: "yttr:bedrock_smasher"
+			}]
+		}
+		{
+			title: "Little chip of destiny."
+			x: 22.5d
+			y: -5.5d
+			subtitle: "You'll only need one of these for full plating automation!"
+			description: [
+				"After that brutal display, against the specific piece of bedrock you chose in particular, you may mine the fruit of your labour."
+				""
+				"From the remnants will drop a bedrock shard. With this you may infuse yttrium with bedrock, creating a new variant of plate."
+			]
+			dependencies: ["185518EF87BFDBCC"]
+			id: "0947CB03046F64B5"
+			tasks: [{
+				id: "76B53879CFFAFF6D"
+				type: "item"
+				item: "yttr:bedrock_shard"
+			}]
+		}
+		{
+			title: "The Blaze-Cake Eater 9000"
+			x: 21.744047619047606d
+			y: -3.7619047619047663d
+			shape: "square"
+			subtitle: "Refined Shimmer in a bottle, or four."
+			description: [
+				"Complementary Schematic included to assist with building. "
+				"(Refunds cannot be processed at this time)"
+				""
+				"The &6Shimmer Refinery&r will be your &6only method of obtaining refined shimmer&r, a substance with some of the purest raw energy in the universe."
+				""
+				"16 Blaze Burners must be superheated during processing to allow the shimmer filling the tanks to be heated enough to be purified,"
+			]
+			dependencies: [
+				"62E2DB401A1BBC8D"
+				"4CC6AB06056BC35C"
+			]
+			size: 2.0d
+			id: "6E9849C1B2A2AA15"
+			tasks: [{
+				id: "72FC2479FF71EEFD"
 				type: "item"
 				item: {
-					id: "tconstruct:round_plate"
+					id: "custommachinery:custom_machine_item"
 					Count: 1b
 					tag: {
-						Material: "tconstruct:radiant"
+						machine: "createastral:shimmer_refinery"
 					}
 				}
-				count: 9L
 			}]
-			id: "4CDAED60CF2679BE"
-			y: 5.5d
-			x: -2.0d
 			rewards: [{
-				id: "20988F4761D1B79B"
+				id: "63B65F7B750EA1C8"
 				type: "item"
-				item: "createastral:refined_radiance_block"
+				auto: "disabled"
+				item: {
+					id: "create:schematic"
+					Count: 1b
+					tag: {
+						Anchor: {
+							Z: 0
+							X: 0
+							Y: 0
+						}
+						Owner: "Laskyyy"
+						Deployed: 0b
+						Rotation: "NONE"
+						File: "[AstralExamples] Shimmer Refinery.nbt"
+						Mirror: "NONE"
+						Bounds: [
+							5
+							5
+							5
+						]
+					}
+				}
 			}]
 		}
 		{
+			title: "Densely Packed Yttrium!"
+			x: 20.5d
+			y: -5.5d
+			dependencies: ["0947CB03046F64B5"]
+			id: "62E2DB401A1BBC8D"
+			tasks: [{
+				id: "5AA9B9580836CFF4"
+				type: "item"
+				item: "yttr:armor_plating"
+			}]
+		}
+		{
+			title: "Infinitely Renewing Light Itself"
+			x: 19.5d
+			y: 3.5d
+			subtitle: "...and Automatable Nether Stars"
+			description: [
+				"Compressing a small amount of Radiant Residue will cause Star Shards to crystallise."
+				""
+				"Process these Shards into a Pure Star Shard. This can then be converted into a Nether Star, or melted down into a greater yield of Radiant Residue."
+			]
+			dependencies: ["65F77462CD1DFFDB"]
+			id: "56FBBD9207565ED6"
+			tasks: [{
+				id: "032F95D0B26EA163"
+				type: "item"
+				item: "createastral:pure_star_shard"
+			}]
+			rewards: [{
+				id: "50A5CABFECEA9173"
+				type: "item"
+				item: "createastral:star_shard"
+			}]
+		}
+		{
+			x: 24.0d
+			y: 10.0d
+			shape: "hexagon"
+			subtitle: "&cWarning: FRAGILE!&r"
+			description: [
+				"&6Challenge 3:&r"
+				""
+				"The Sub-atomic Core."
+			]
+			dependencies: ["0931E20B74EB2D8A"]
+			size: 2.0d
+			id: "739D93CC57AA8BF2"
+			tasks: [{
+				id: "28ABE24C52D47141"
+				type: "item"
+				item: "astraladditions:fragile_item_2"
+			}]
+		}
+		{
+			x: 20.0d
+			y: 10.0d
+			shape: "hexagon"
+			subtitle: "&cWarning: FRAGILE!&r"
+			description: [
+				"&6Challenge 1:&r"
+				""
+				"Six Radiant Thrusters."
+			]
+			dependencies: ["704AEB416AA5A953"]
+			size: 2.0d
+			id: "638DBED9ED0BD4CB"
+			tasks: [{
+				id: "586B49EB963667B8"
+				type: "item"
+				item: "astraladditions:fragile_item_3"
+			}]
+		}
+		{
+			title: "&bSeparation Agent&r"
+			x: 22.0d
+			y: 2.5d
+			subtitle: "Clashing Forces"
+			description: ["Shimmer and The Void. Two opposite forces clashing to produce a powder we can use to split compounds"]
+			dependencies: ["471D3DCAFD9710EC"]
+			id: "1CCB3210417B55B6"
+			tasks: [{
+				id: "3AFF35DB8C4DC33B"
+				type: "item"
+				item: "createastral:separation_agent"
+			}]
+		}
+		{
+			x: 21.0d
+			y: 8.5d
+			dependencies: ["3ED703EAA646A18A"]
+			id: "4BD75128B2B5E343"
+			tasks: [{
+				id: "44E5216528B0571E"
+				type: "item"
+				item: "createastral:t6_upgrade"
+			}]
+		}
+		{
+			title: "The ever durable Magtank."
+			x: 19.5d
+			y: -3.75d
+			subtitle: "Tanks to withhold the temperature of the sun."
+			description: [
+				"Whilst not serving a purpose of their own, these magtanks act as part of the structure for the &6Shimmer Refinery&r."
+				""
+				"Rather than pumping into them, pump shimmer directly into the refinery machine block instead!"
+				""
+				"&6NOTICE:&r It is known that attempting to shift click an item into the UI will crash the users client. I have received exclusive commentary from the Pack Developer to \"Please don't do that\", and, \"We warned them in advance\"."
+			]
+			dependencies: [
+				"3705B91C0D4EA2A0"
+				"62E2DB401A1BBC8D"
+			]
+			size: 1.5d
+			id: "4CC6AB06056BC35C"
+			tasks: [{
+				id: "149EDE621EBD708B"
+				type: "item"
+				item: "yttr:magtank"
+			}]
+		}
+		{
+			x: 22.0d
+			y: 10.5d
+			shape: "hexagon"
+			description: [
+				"&6Challenge 2:&r"
+				""
+				"Five Calorite Engines."
+			]
+			dependencies: ["3ED703EAA646A18A"]
+			size: 2.0d
+			id: "16A408D4C0DAD08D"
+			tasks: [{
+				id: "0E306D967731CE1B"
+				type: "item"
+				item: "ad_astra:calorite_engine"
+			}]
+		}
+		{
+			x: 23.0d
+			y: 8.5d
+			description: ["A slower Yttric Rifle, but much more stable."]
+			dependencies: ["3ED703EAA646A18A"]
+			id: "7E3960A7DECF8C25"
+			tasks: [{
+				id: "2D7E6BC6EC19F64C"
+				type: "item"
+				item: "yttr:rifle_reinforced"
+			}]
+		}
+		{
+			title: "Turns out, it's safer than you think!"
+			x: 13.485714285714302d
+			y: 0.7785714285714391d
+			description: [
+				"&6Molten Uranium&r does not possess properties in it's current form to be useful to us,"
+				""
+				"By casting it into a rod, we may soon use it's energy potential within machines to maximise their potential..."
+			]
+			dependencies: [
+				"5BCACF82FA7D1B80"
+				"06431C6B11CBD4D1"
+				"77217A6E21B6D3B3"
+			]
+			id: "4E9CF88D314F6843"
+			tasks: [{
+				id: "45E0814BA1D565D0"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "tconstruct:molten_uranium"
+					}
+				}
+			}]
+		}
+		{
+			title: "Is this safe to touch?"
+			x: 11.0d
+			y: -0.5d
+			description: [
+				"&6Uranium Residue&r can be extracted from yttrium powder using an industrial centrifuge. "
+				""
+				"It is unknown the exact chemical makeup of yttrium, but the presence of this material within it sparks a greater question of why we are so comfortable holding it in our hands."
+			]
+			dependencies: ["27E46FB10D9F214B"]
+			id: "5BCACF82FA7D1B80"
+			tasks: [{
+				id: "421929BF70E37ADE"
+				type: "item"
+				item: "createastral:uranium_residue"
+			}]
+		}
+		{
+			title: "Distillation Tower on Overdrive"
+			x: 12.708333333333329d
+			y: -0.6130952380952408d
+			description: ["The Distillation Tower Multiblock from Ch4 supports superheating as a condition of recipes. By lighting it up with 9 blaze cakes, the heat will be enough to process this uranium residue into a purer form."]
+			dependencies: ["5BCACF82FA7D1B80"]
+			id: "77217A6E21B6D3B3"
+			tasks: [{
+				id: "10931ACB8B9DD4DD"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
+		}
+		{
+			title: "Radiant Arsenal"
+			x: 19.5d
+			y: 5.0d
+			description: [
+				"A selection of gear, traditionally used more for it's ceremonial potential, rather than it's combat capability."
+				""
+				"There will be no other player on the battleground as royal as those who wear gear made with light itself."
+			]
+			dependencies: ["1E93A90AEF614FA3"]
+			dependency_requirement: "one_completed"
+			min_required_tasks: 1
+			id: "4DAA2612F8E1E043"
+			tasks: [
+				{
+					id: "027F0E7128647ECA"
+					type: "item"
+					item: {
+						id: "createastral:radiant_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "36C4288AA6D25F69"
+					type: "item"
+					item: {
+						id: "createastral:radiant_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5CF9478F5F38E76E"
+					type: "item"
+					item: {
+						id: "createastral:radiant_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "51E0ACE711BBA50F"
+					type: "item"
+					item: {
+						id: "createastral:radiant_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2E8D07FE77A8D2CF"
+					type: "item"
+					item: {
+						id: "createastral:radiant_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "A source of Mercury."
+			x: 12.089285714285708d
+			y: 0.7440476190476346d
+			description: ["By completing a chain of calorite to mercury, a solid source of this element can be procured, ready to process."]
+			hide_dependency_lines: true
+			dependencies: ["5BCACF82FA7D1B80"]
+			id: "06431C6B11CBD4D1"
+			tasks: [{
+				id: "2AD9F7D6CA6CC058"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "techreborn:mercury"
+					}
+				}
+			}]
+		}
+		{
+			x: 18.0d
+			y: 6.0d
+			shape: "heart"
+			subtitle: "...and his music was electric."
+			description: [
+				"An Electric Guitar, the ultimate weapon of mass destruction."
+				""
+				"Hit enemies with melee attacks to charge up the E Guitar to a maximum of 5 notes. After at least 3 hits, Right Click to unleash the stored energy as a piercing bolt of lightning."
+				""
+				"If we're slaying beasts, why not make a song of it?"
+			]
+			dependencies: ["4DAA2612F8E1E043"]
+			size: 1.5d
+			id: "11943F36C544F8E6"
+			tasks: [{
+				id: "0F738A7D82DD8A9C"
+				type: "item"
+				item: {
+					id: "astraladditions:e_guitar"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "668123BD8BDBF5B8"
+				type: "item"
+				item: "astralsignals:polyvinyl_sheet"
+			}]
+		}
+		{
+			x: 25.5d
+			y: 1.0d
+			subtitle: "Classy Glassy"
+			description: [
+				"Glassy Void is a classier variant of Tinted Glass, blocking light while allowing you to see through."
+				""
+				"&lTo create it, throw a Bedrock Shard into Void fluid.&r"
+			]
+			dependencies: ["471D3DCAFD9710EC"]
+			id: "4C8291E72A5757F9"
+			tasks: [{
+				id: "74BCC4BD6D7EB3B8"
+				type: "item"
+				item: "yttr:glassy_void"
+			}]
+		}
+		{
+			title: "Illumination Shot"
+			x: 18.0d
+			y: -8.5d
+			subtitle: "Light sources with no block."
+			dependencies: ["07A143B6DCF06587"]
+			id: "205E46FC4E6AD8A1"
+			tasks: [{
+				id: "6E87CB0D8B2EC2B4"
+				type: "item"
+				item: "minecraft:glowstone_dust"
+				count: 64L
+			}]
+		}
+		{
+			title: "Teleport Shot"
+			x: 17.5d
+			y: -9.5d
+			subtitle: "Teleportation at will."
+			dependencies: ["07A143B6DCF06587"]
+			id: "660B16FBBBA83A18"
+			tasks: [{
+				id: "3939A03477F73F2A"
+				type: "item"
+				item: "minecraft:chorus_fruit"
+				count: 64L
+			}]
+		}
+		{
+			title: "Explosive Shot"
+			x: 15.5d
+			y: -9.5d
+			subtitle: "Destructive, that's what you like, right?"
+			dependencies: ["07A143B6DCF06587"]
+			id: "7EA3E1022B635878"
+			tasks: [{
+				id: "198D622AB3AB676D"
+				type: "item"
+				item: "minecraft:gunpowder"
+				count: 64L
+			}]
+		}
+		{
+			title: "Beam Shot"
+			x: 15.0d
+			y: -8.5d
+			subtitle: "Damaging, but non-destructive."
+			dependencies: ["07A143B6DCF06587"]
+			id: "14634473513AEB59"
+			tasks: [{
+				id: "04DF7E476EA08C5B"
+				type: "item"
+				item: "minecraft:redstone"
+				count: 64L
+			}]
+		}
+		{
+			x: 16.5d
+			y: -10.0d
+			subtitle: "Biggy Mags"
+			description: [
+				"For 50% more effecient ammo usage, fill up Rifle Canisters at the Canister Filler."
+				""
+				"The Canister filler takes a single Empty Rifle Canister, one of the four ammo ingredients, and a bottle of Glow Damp"
+			]
+			dependencies: ["07A143B6DCF06587"]
+			id: "0A27F3A10DE2E425"
+			tasks: [
+				{
+					id: "3945829555AC3DE9"
+					type: "item"
+					item: "yttr:can_filler"
+				}
+				{
+					id: "42395941CD2DC9D4"
+					type: "item"
+					item: "yttr:empty_ammo_can"
+				}
+			]
+		}
+		{
+			title: "Glowdamp"
+			x: 14.5d
+			y: -3.0d
+			subtitle: "Bright and Soggy"
+			description: [
+				"Glowdamp is the glowing gas that illuminates Shroomlight blocks."
+				""
+				"It can be extracted by placing a Shroomlight block inbetween two Yttrium Blocks, and pushing the two Yttrium Blocks together using a piston. This will crush the Shroomlight inbetween, and release the gas into the air. Collect the Glowdamp gas using a Glass Bottle."
+				""
+				"The Glowdamp can then be used to create Lamps and Lazers, and will be used to fill Rifle Canisters later on."
+			]
+			dependencies: ["7001A75C47B1DA1A"]
+			id: "49A28F867CC1CF2C"
+			tasks: [
+				{
+					id: "287057AE4F348F8A"
+					type: "item"
+					item: "minecraft:shroomlight"
+				}
+				{
+					id: "14EE5620777DB6BF"
+					type: "item"
+					item: "yttr:yttrium_block"
+					count: 2L
+				}
+				{
+					id: "540E2AA2E20B73A7"
+					type: "item"
+					item: "minecraft:piston"
+				}
+				{
+					id: "380686E2642EEC9A"
+					type: "item"
+					item: "yttr:glowing_gas"
+				}
+			]
+		}
+		{
+			x: 15.5d
+			y: -2.0d
+			subtitle: "Light It Up"
+			description: [
+				"Utilise Glowdamp to light up your world with a rainbow of new Redstone-powered lamps."
+				""
+				"Use REI to see how the Lamp can be Inverted, dyed, and used to create Lazors!"
+			]
+			dependencies: ["49A28F867CC1CF2C"]
+			id: "6EB3981BE33C0E9B"
+			tasks: [
+				{
+					id: "506D4A0FBD615788"
+					type: "item"
+					item: {
+						id: "yttr:lamp"
+						Count: 1b
+						tag: {
+							Inverted: 0b
+							LampColor: "colorless"
+						}
+					}
+				}
+				{
+					id: "6B5BF86B0CDA6F24"
+					type: "item"
+					item: {
+						id: "yttr:lamp"
+						Count: 1b
+						tag: {
+							Inverted: 1b
+							LampColor: "colorless"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "7ABF362E85F560A9"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 32
+			}]
+		}
+		{
+			title: "Imma firin mah lazor!"
+			x: 14.0d
+			y: -1.0d
+			description: ["Whilst bearing no practical use, these beams can be used as decoration, light shows, or even a fun way to (temporarily) blind someone!"]
+			dependencies: ["6EB3981BE33C0E9B"]
+			id: "7F192850D46B32E6"
+			tasks: [
+				{
+					id: "158600B74561CE14"
+					type: "item"
+					item: {
+						id: "yttr:lazor_emitter"
+						Count: 1b
+						tag: {
+							LampColor: "colorless"
+						}
+					}
+				}
+				{
+					id: "4B9429B112E4A717"
+					type: "item"
+					item: "yttr:ir_lazor_emitter"
+				}
+			]
+		}
+		{
+			title: "&6The stone growth chamber returns.&r"
+			x: 6.5d
+			y: -7.0d
+			subtitle: "Crush mercury cobblestone for calorite automation (and others)."
+			dependencies: ["7A4255522DA6FEB7"]
+			id: "5AE829C4B70FCF74"
+			tasks: [{
+				id: "4BDDC0F85D3C89B0"
+				type: "item"
+				item: "ad_astra:mercury_cobblestone"
+				count: 64L
+			}]
+		}
+		{
+			title: "&6Automating Yttrium.&r"
+			x: 24.5d
+			y: 0.0d
+			subtitle: "Calorite -> Yttrium"
+			description: [
+				"Pouring &6Void&r over a block of raw calorite (automated from mercury cobblestone) will form a block of yttrium."
+				""
+				"From here, break it down into individual pieces and continue the processing chain as usual. Automatable Uranium and Yttrium!"
+			]
+			dependencies: ["471D3DCAFD9710EC"]
+			id: "59CDE73E177D6750"
+			tasks: [{
+				id: "0878FF9002FA7C89"
+				type: "item"
+				item: "yttr:raw_gadolinite_block"
+			}]
+		}
+		{
+			x: 21.0d
+			y: 3.5d
+			description: [
+				"Superheated mix the brightest substances known to you:"
+				""
+				"&6Nether Stars&r"
+				"&6Glowstone&r"
+				"&6Sea Lanterns&r"
+				"&6Shimmer&r"
+				""
+				"All under the molecule splitting power of a separation agent, crafted with the purest of void..."
+				""
+				"You may find that radiance fluid is particularly simple to automate once you have overcome the initial amount... by manufacturing your own artifical nether stars."
+			]
+			dependencies: [
+				"67337DF3DCEAC3DE"
+				"1CCB3210417B55B6"
+			]
+			id: "65F77462CD1DFFDB"
+			tasks: [{
+				id: "38E2FE16957BF2CC"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "kubejs:molten_radiance"
+					}
+				}
+			}]
+		}
+		{
+			x: 23.0d
+			y: 3.5d
+			description: [
+				"Superheated mix the darkest substances known to you:"
+				""
+				"&bVantablack&r"
+				"&bVoidtouched-Compound&r"
+				"&bEnder Pearls&r"
+				""
+				"All under the molecule splitting power of a separation agent, crafted with the purest of void..."
+			]
+			dependencies: [
+				"1A3925C20FDC3876"
+				"1CCB3210417B55B6"
+			]
+			id: "6328B6E2C86D8834"
+			tasks: [{
+				id: "20C665E85CBE42FD"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "kubejs:molten_shadowsteel"
+					}
+				}
+			}]
+		}
+		{
+			title: "&6A Portal From Mars to Mercury?&r"
+			x: 25.5d
+			y: 4.5d
+			shape: "square"
+			description: [
+				"Upon creating &6Radiant Residue&r and &6Shadow Fluid&r, the process for &cMercurian Stone&r becomes available."
+				""
+				"Designed as an extension to the Moon Portal -> Mars Portal Chain, the mercury portal must be created on mars and is once again lit with an Astral Conduit."
+				""
+				"&6WARNING:&r It is advised you be careful, as the portal will always send you back from Mercury to Mars, meaning if you built the portal in the overworld you may not have a way back anymore! Make sure to always chain Moon portals -> Mars portals -> Mercury portals."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"6328B6E2C86D8834"
+				"65F77462CD1DFFDB"
+			]
+			size: 1.5d
+			id: "239D3C8315C472C4"
+			tasks: [{
+				id: "600CC46FB00BACF2"
+				type: "item"
+				item: "createastral:mercurian_stone"
+				count: 10L
+			}]
+		}
+		{
+			title: "Electrolysing Calorite into Pure Cinnabar."
 			x: 8.0d
-			y: 14.0d
-			id: "6CBBEDDBB0AEBF87"
+			y: -7.0d
+			description: ["Separation of calorite into cinnabar is the beginning step to understanding the chemical roots of this element."]
+			dependencies: ["2291F6259C65D8F6"]
+			id: "4273DD2FD9527284"
 			tasks: [{
-				id: "77165EF49AC8AA5E"
-				type: "custom"
-				title: "Fragile rocket parts"
-			}]
-		}
-		{
-			x: 4.0d
-			y: 14.0d
-			id: "39B2EF8278E97FD4"
-			tasks: [{
-				id: "2AE10BC16BE388C3"
-				type: "custom"
-				title: "Harness void for fuel or somethin?"
-			}]
-		}
-		{
-			x: 12.5d
-			y: 10.0d
-			id: "287B478971B94379"
-			tasks: [{
-				id: "13663C12CDFC2B6E"
+				id: "44A2E6633B500900"
 				type: "item"
-				item: "yttr:root_of_continuity"
+				item: "yttr:ultrapure_cinnabar"
 			}]
 		}
 		{
-			x: 12.5d
-			y: 9.0d
-			id: "6850BDBF07F6AEA8"
+			title: "First step to mercury."
+			x: 8.0d
+			y: -5.5d
+			description: [
+				"Cinnabar can be &6Bulk Blasted&r into quicksilver."
+				""
+				"This can in turn be melted down into &6Mercury&r"
+			]
+			dependencies: ["4273DD2FD9527284"]
+			id: "09B37242E2CCAE8E"
 			tasks: [{
-				id: "7867764A1D364A14"
+				id: "713CF3FEAA2BE265"
 				type: "item"
-				item: "minecraft:cobbled_deepslate"
+				item: "yttr:quicksilver"
+			}]
+			rewards: [{
+				id: "592909B5382CB537"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "techreborn:mercury"
+					}
+				}
 			}]
 		}
 		{
-			x: 13.5d
-			y: 9.0d
-			id: "4DE7F9412CDA60EA"
+			x: 16.0d
+			y: -3.5d
+			subtitle: "The Warrior's Build Wand"
+			description: ["The Void Cleaver can slice blocks along a flat plane, allowing you to turn any solid block into a flexible slope block. Decorative and functional - Use this to build ramps with any block!"]
+			dependencies: ["7001A75C47B1DA1A"]
+			id: "4F50E37BACB25892"
 			tasks: [{
-				id: "6794460CCC616E5C"
+				id: "28D9D9B6B45AE060"
 				type: "item"
-				item: "ad_astra:glacio_cobblestone"
+				item: {
+					id: "yttr:cleaver"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
 			}]
-		}
-		{
-			x: 13.5d
-			y: 10.0d
-			id: "02E9543E441D1D38"
-			tasks: [{
-				id: "5DEBE924FD757F93"
+			rewards: [{
+				id: "21D6FC083CB0F3FC"
 				type: "item"
-				item: "minecraft:stone"
-			}]
-		}
-		{
-			x: 11.5d
-			y: 9.0d
-			id: "3BCB5FCB269337EF"
-			tasks: [{
-				id: "306A31AC89FFC485"
-				type: "item"
-				item: "ad_astra:mars_stone"
-			}]
-		}
-		{
-			x: 11.5d
-			y: 10.0d
-			id: "0A0A84E4B22466E7"
-			tasks: [{
-				id: "30E9918841AAC3C7"
-				type: "item"
-				item: "ad_astra:mercury_stone"
-			}]
-		}
-		{
-			x: 11.5d
-			y: 11.0d
-			id: "4533EEE4ECE99DC7"
-			tasks: [{
-				id: "1CE2C9A0B45CD221"
-				type: "item"
-				item: "ad_astra:moon_stone"
-			}]
-		}
-		{
-			x: 12.5d
-			y: 11.0d
-			id: "76B2E34ADEEBA811"
-			tasks: [{
-				id: "3FB23A662C11FA27"
-				type: "item"
-				item: "ad_astra:venus_stone"
-			}]
-		}
-		{
-			x: 13.5d
-			y: 11.0d
-			id: "3128E1645EE43ED3"
-			tasks: [{
-				id: "083A961CBB332DCF"
-				type: "item"
-				item: "minecraft:andesite"
+				item: "astralfoods:shimmered_apple"
 			}]
 		}
 	]
+	quest_links: [ ]
 }

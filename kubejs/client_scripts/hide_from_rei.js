@@ -600,6 +600,8 @@ onEvent("rei.hide.items", (event) => {
         "createbigcannons:molten_steel_bucket",
         "createbigcannons:molten_nethersteel_bucket",
         "createdeco:zinc_sheet",
+        "createastral:laskinium",
+        "createastral:laskinium_pill",
     ];
     addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:part_builder", "oak_planks", 41);
     addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:part_builder", "birch_planks", 41);
