@@ -439,8 +439,8 @@ function sequencedAssemblyRecipes(event) {
     //Honestly just good luck in figuring this out its too complex to
     //document in an effective way
     const inc_sturdy_sheet = "create:unprocessed_obsidian_sheet";
-		event.recipes
-				.createSequencedAssembly([Item.of("createastral:living_mechanism").withChance(1)], "yttr:ultrapure_carbon", [
+    event.recipes
+        .createSequencedAssembly([Item.of("createastral:living_mechanism").withChance(1)], "yttr:ultrapure_carbon", [
             event.recipes.createFilling("yttr:ultrapure_carbon", [
                 "yttr:ultrapure_carbon",
                 { fluid: "tconstruct:ender_slime", amount: INGOT },
@@ -451,13 +451,10 @@ function sequencedAssemblyRecipes(event) {
                 { fluid: "tconstruct:ender_slime", amount: INGOT },
             ]),
             event.recipes.createPressing("yttr:ultrapure_carbon", "yttr:ultrapure_carbon"),
-            event.recipes.createDeploying("yttr:ultrapure_carbon", [
-                "yttr:ultrapure_carbon",
-                "minecraft:ender_eye",
-            ]),
+            event.recipes.createDeploying("yttr:ultrapure_carbon", ["yttr:ultrapure_carbon", "minecraft:ender_eye"]),
             event.recipes.createFilling("yttr:ultrapure_carbon", [
                 "yttr:ultrapure_carbon",
-                { fluid: "kubejs:shimmer", amount: BUCKET/3 },
+                { fluid: "kubejs:shimmer", amount: BUCKET / 3 },
             ]),
         ])
         .transitionalItem("yttr:ultrapure_carbon")
@@ -493,6 +490,10 @@ function sequencedAssemblyRecipes(event) {
             event.recipes.createDeploying("estrogen:estrogen_pill", [
                 "estrogen:estrogen_pill",
                 "createastral:laskinium",
+            ]),
+            event.recipes.createDeploying("estrogen:estrogen_pill", [
+                "estrogen:estrogen_pill",
+                "createastral:astral_singularity",
             ]),
         ])
         .transitionalItem("estrogen:estrogen_pill")
@@ -858,7 +859,6 @@ function sequencedAssemblyRecipes(event) {
                 event.recipes.createPressing(transitional_lapis_sheet, transitional_lapis_sheet),
             ])
             .transitionalItem(transitional_lapis_sheet);
-
 
         event.recipes
             .createSequencedAssembly(["2x create:sturdy_sheet"], "tconstruct:obsidian_pane", [
@@ -1454,7 +1454,7 @@ function deployingRecipes(event) {
             basin_input: "astraladditions:moonblazed_orb",
             deployer_input: "astraladditions:orbital_navigation_ring",
         },
-				{
+        {
             output: "createastral:contained_end",
             basin_input: "createastral:sturdy_cage",
             deployer_input: "yttr:haemopal",
@@ -2242,7 +2242,7 @@ function mixingRecipes(event) {
             output: "doodads:asphalt",
             input: [{ fluid: "kubejs:compound_mixture", amount: 3000 }, "#c:concrete_powder"],
             heat: "",
-            time: 1000,
+            time: 50,
         },
         {
             output: { fluid: "create:honey", amount: 500 * mB },
@@ -2307,6 +2307,10 @@ function mixingRecipes(event) {
                     amount: 2,
                 },
                 {
+                    item: "createastral:astral_singularity",
+                    amount: 2,
+                },
+                {
                     fluid: "kubejs:molten_calorite",
                     amount: INGOT,
                 },
@@ -2319,7 +2323,7 @@ function mixingRecipes(event) {
             input: [
                 {
                     fluid: "kubejs:molten_desh",
-                    amount: INGOT *4 ,
+                    amount: INGOT * 4,
                 },
                 {
                     fluid: "kubejs:molten_yttrium",
@@ -2334,7 +2338,7 @@ function mixingRecipes(event) {
             input: [
                 {
                     fluid: "kubejs:molten_ostrum",
-                    amount: INGOT * 2 ,
+                    amount: INGOT * 2,
                 },
                 {
                     fluid: "kubejs:molten_yttrium",
@@ -2532,13 +2536,6 @@ function mixingRecipes(event) {
             { fluid: "kubejs:molten_radiance", amount: 100 * mB },
         ])
         .superheated()
-        .processingTime(1000);
-
-    event.recipes
-        .createMixing("doodads:asphalt", [
-            { fluid: "kubejs:andesite_compound", amount: INGOT / 3 },
-            "#c:concrete_powder",
-        ])
         .processingTime(1000);
 }
 
@@ -2762,7 +2759,7 @@ function mechanicalCraftingRecipes(event) {
             inputs: {
                 A: "yttr:armor_plating",
                 B: "techreborn:data_storage_chip",
-                C: "ad_astra:calorite_plate"
+                C: "ad_astra:calorite_plate",
             },
         },
         {
@@ -3552,7 +3549,7 @@ function superheatedMixingRecipes(event) {
             ["astraladditions:fragile_item_2"],
         ],
         [
-            ["create:shadow_steel", "create:refined_radiance", "techreborn:data_storage_chip"],
+            ["4x create:shadow_steel", "4x create:refined_radiance", "techreborn:data_storage_chip"],
             ["createastral:subatomic_ingot"],
         ],
         [["tconstruct:ender_slime_crystal", "4x yttr:rubble"], ["yttr:promethium_speck"]],
@@ -3572,6 +3569,7 @@ function superheatedMixingRecipes(event) {
             ],
             [Fluid.of("tconstruct:molten_bronze", INGOT * 9)],
         ],
+        [["yttr:quicksilver"], [Fluid.of("techreborn:mercury", mB * 500)]],
     ].forEach((recipe) => {
         event.recipes.createMixing(recipe[1], recipe[0]).superheated().processingTime(20);
     });

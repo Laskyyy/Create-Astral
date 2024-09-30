@@ -192,9 +192,9 @@ onEvent("item.registry", (event) => {
         .food((food) => {
             food.hunger(30)
                 .saturation(0.5)
-                .effect("drinkbeer:drunk", 1000, 3, 5)
+                .effect("jump_boost", 1000, 3, 5)
                 .effect("speed", 1000, 10, 5)
-                .effect("estrogen:estrogen", 1000, 6, 6)
+                .effect("saturation", 1000, 6, 6)
                 .removeEffect("poison")
                 .alwaysEdible(); //Like golden apples
         });
