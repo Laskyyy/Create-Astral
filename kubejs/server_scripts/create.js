@@ -56,7 +56,6 @@ function millingRecipes(event) {
         event.recipes.createMilling([Item.of(recipe[1]).withChance(recipe[2])], recipe[0]);
     });
 }
-
 function crushingRecipes(event) {
     //Replace with other netherrack inputs and outputs
 
@@ -274,7 +273,7 @@ function crushingRecipes(event) {
         },
         {
             input: "ad_astra:conglomerate",
-            outputs: [["ad_astra:ostrum_nugget", 0.3]],
+            outputs: [["ad_astra:raw_ostrum", 0.07]],
         },
         {
             input: "ad_astra:infernal_spire_block",
@@ -413,6 +412,14 @@ function itemApplication(event) {
             ingredients: [{ item: "techreborn:basic_machine_casing" }, { item: "create:sturdy_sheet" }],
             results: [{ item: "techreborn:industrial_machine_casing" }],
         },
+        {
+            ingredients: [{ item: "techreborn:advanced_machine_frame" }, { item: "create:shadow_steel" }],
+            results: [{ item: "create:shadow_steel_casing" }],
+        },
+        {
+            ingredients: [{ item: "techreborn:advanced_machine_frame" }, { item: "create:refined_radiance" }],
+            results: [{ item: "create:refined_radiance_casing" }],
+        },
     ].forEach((recipe) => {
         event.custom({
             type: "create:item_application",
@@ -433,20 +440,57 @@ function sequencedAssemblyRecipes(event) {
     //document in an effective way
     const inc_sturdy_sheet = "create:unprocessed_obsidian_sheet";
 		event.recipes
-        .createSequencedAssembly([Item.of("astraladditions:orbital_navigation_ring").withChance(1)], "astraladditions:blazed_steel_ring", [
-            event.recipes.createFilling("createastral:blazed_steel_ring", [
-                "astraladditions:blazed_steel_ring",
-                { fluid: "tconstruct:molten_steel", amount: NUGGET },
+                .createSequencedAssembly([Item.of("astralfoods:shimmered_apple").withChance(1)], "minecraft:apple", [
+            event.recipes.createDeploying("minecraft:apple", [
+                "minecraft:apple",
+                "tconstruct:ender_slime_crystal",
             ]),
-            event.recipes.createDeploying("astraladditions:blazed_steel_ring", [
-                "astraladditions:blazed_steel_ring",
-                "createastral:navigation_mechanism",
-            ]),
-            event.recipes.createDeploying("astraladditions:blazed_steel_ring", [
-                "astraladditions:blazed_steel_ring",
-                "createastral:astral_conduit",
+            event.recipes.createFilling("minecraft:apple", [
+                "minecraft:apple",
+                { fluid: "kubejs:shimmer", amount: BUCKET/3 },
             ]),
         ])
+        .transitionalItem("minecraft:apple")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly([Item.of("createastral:living_mechanism").withChance(1)], "yttr:ultrapure_carbon", [
+            event.recipes.createFilling("yttr:ultrapure_carbon", [
+                "yttr:ultrapure_carbon",
+                { fluid: "tconstruct:ender_slime", amount: INGOT },
+            ]),
+            event.recipes.createPressing("yttr:ultrapure_carbon", "yttr:ultrapure_carbon"),
+            event.recipes.createFilling("yttr:ultrapure_carbon", [
+                "yttr:ultrapure_carbon",
+                { fluid: "tconstruct:ender_slime", amount: INGOT },
+            ]),
+            event.recipes.createPressing("yttr:ultrapure_carbon", "yttr:ultrapure_carbon"),
+            event.recipes.createDeploying("yttr:ultrapure_carbon", ["yttr:ultrapure_carbon", "minecraft:ender_eye"]),
+            event.recipes.createFilling("yttr:ultrapure_carbon", [
+                "yttr:ultrapure_carbon",
+                { fluid: "kubejs:shimmer", amount: BUCKET / 3 },
+            ]),
+        ])
+        .transitionalItem("yttr:ultrapure_carbon")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            [Item.of("astraladditions:orbital_navigation_ring").withChance(1)],
+            "astraladditions:blazed_steel_ring",
+            [
+                event.recipes.createFilling("createastral:blazed_steel_ring", [
+                    "astraladditions:blazed_steel_ring",
+                    { fluid: "tconstruct:molten_steel", amount: NUGGET },
+                ]),
+                event.recipes.createDeploying("astraladditions:blazed_steel_ring", [
+                    "astraladditions:blazed_steel_ring",
+                    "createastral:navigation_mechanism",
+                ]),
+                event.recipes.createDeploying("astraladditions:blazed_steel_ring", [
+                    "astraladditions:blazed_steel_ring",
+                    "createastral:astral_conduit",
+                ]),
+            ]
+        )
         .transitionalItem("astraladditions:blazed_steel_ring")
         .loops(1);
     event.recipes
@@ -460,9 +504,14 @@ function sequencedAssemblyRecipes(event) {
                 "estrogen:estrogen_pill",
                 "createastral:laskinium",
             ]),
+            event.recipes.createDeploying("estrogen:estrogen_pill", [
+                "estrogen:estrogen_pill",
+                "createastral:astral_singularity",
+            ]),
         ])
         .transitionalItem("estrogen:estrogen_pill")
         .loops(1);
+
     event.recipes
         .createSequencedAssembly(
             [Item.of("create:sturdy_sheet").withChance(12), Item.of("minecraft:gravel").withChance(8)],
@@ -474,6 +523,7 @@ function sequencedAssemblyRecipes(event) {
         )
         .transitionalItem(inc_sturdy_sheet)
         .loops(5);
+
     event.custom({
         type: "create:sequenced_assembly",
         ingredient: { tag: "c:plates/gold" },
@@ -822,35 +872,6 @@ function sequencedAssemblyRecipes(event) {
                 event.recipes.createPressing(transitional_lapis_sheet, transitional_lapis_sheet),
             ])
             .transitionalItem(transitional_lapis_sheet);
-
-        event.recipes.createSequencedAssembly(["createastral:wired_panelling"], "ad_astra:steel_block", [
-            event.recipes.createDeploying("ad_astra:steel_block", [
-                "ad_astra:steel_block",
-                "create:integrated_circuit",
-            ]),
-            event.recipes.createDeploying("ad_astra:steel_block", [
-                "ad_astra:steel_block",
-                "techreborn:electronic_circuit",
-            ]),
-            event.recipes.createDeploying("ad_astra:steel_block", [
-                "ad_astra:steel_block",
-                "techreborn:industrial_circuit",
-            ]),
-            event.recipes.createPressing("ad_astra:steel_block", "ad_astra:steel_block"),
-            event.recipes.createDeploying("ad_astra:steel_block", [
-                "ad_astra:steel_block",
-                "create:refined_radiance_casing",
-            ]),
-            event.recipes.createDeploying("ad_astra:steel_block", [
-                "ad_astra:steel_block",
-                "create:shadow_steel_casing",
-            ]),
-            event.recipes.createDeploying("ad_astra:steel_block", [
-                "ad_astra:steel_block",
-                "createastral:subatomic_ingot",
-            ]),
-            event.recipes.createPressing("ad_astra:steel_block", "ad_astra:steel_block"),
-        ]);
 
         event.recipes
             .createSequencedAssembly(["2x create:sturdy_sheet"], "tconstruct:obsidian_pane", [
@@ -1434,20 +1455,25 @@ function fillingRecipes(event) {
 }
 
 function deployingRecipes(event) {
-		[
-				{
+    [
+        {
             output: "astraladditions:oh-no",
             basin_input: "astraladditions:moonblazed_orb",
-            deployer_input: "astraladditions:orbital_navigation_ring"
+            deployer_input: "astraladditions:orbital_navigation_ring",
         },
-		].forEach((recipe) => {
-			event.recipes
-        .createSequencedAssembly([Item.of(recipe.output).withChance(1)], recipe.basin_input, [
-						event.recipes.createDeploying(recipe.basin_input, [recipe.basin_input, recipe.deployer_input])
-        ])
-        .transitionalItem(recipe.basin_input)
-        .loops(1);
-		});
+        {
+            output: "createastral:contained_end",
+            basin_input: "createastral:sturdy_cage",
+            deployer_input: "yttr:haemopal",
+        },
+    ].forEach((recipe) => {
+        event.recipes
+            .createSequencedAssembly([Item.of(recipe.output).withChance(1)], recipe.basin_input, [
+                event.recipes.createDeploying(recipe.basin_input, [recipe.basin_input, recipe.deployer_input]),
+            ])
+            .transitionalItem(recipe.basin_input)
+            .loops(1);
+    });
 }
 
 function mixingRecipes(event) {
@@ -1459,8 +1485,8 @@ function mixingRecipes(event) {
     // Time: Mixing time in ticks
     [
         {
-            output: "16x create:blaze_cake",
-            input: ["create:blaze_cake_base", "yttr:delicace", { fluid: "kubejs:metabolic_broth", amount: BUCKET / 2 }],
+            output: "8x create:blaze_cake",
+            input: ["yttr:delicace", { fluid: "kubejs:metabolic_broth", amount: BUCKET / 4 }],
             heat: "superheated",
             time: 100,
         },
@@ -1767,7 +1793,6 @@ function mixingRecipes(event) {
             input: [
                 "minecraft:magma_cream",
                 "minecraft:soul_sand",
-                "techreborn:scrap",
                 "#c:dusts/obsidian",
                 "#c:dusts/obsidian",
                 "#c:dusts/obsidian",
@@ -1829,6 +1854,12 @@ function mixingRecipes(event) {
             time: 300,
         },
         {
+            output: Fluid.of("tconstruct:molten_brass", INGOT * 4),
+            input: ["minecraft:copper_ingot", "create:zinc_ingot"],
+            heat: "superheated",
+            time: 300,
+        },
+        {
             output: Fluid.of("techreborn:silicon", mB * 25),
             input: ["#c:sand"],
             heat: "heated",
@@ -1845,12 +1876,6 @@ function mixingRecipes(event) {
             input: ["ae2:certus_quartz_crystal"],
             heat: "superheated",
             time: 200,
-        },
-        {
-            output: Fluid.of("tconstruct:molten_brass", INGOT * 4),
-            input: ["minecraft:copper_ingot", "create:zinc_ingot"],
-            heat: "superheated",
-            time: 300,
         },
         {
             output: Fluid.of("tconstruct:molten_brass", INGOT / 5),
@@ -2224,7 +2249,7 @@ function mixingRecipes(event) {
             output: "doodads:asphalt",
             input: [{ fluid: "kubejs:compound_mixture", amount: 3000 }, "#c:concrete_powder"],
             heat: "",
-            time: 1000,
+            time: 50,
         },
         {
             output: { fluid: "create:honey", amount: 500 * mB },
@@ -2289,6 +2314,10 @@ function mixingRecipes(event) {
                     amount: 2,
                 },
                 {
+                    item: "createastral:astral_singularity",
+                    amount: 2,
+                },
+                {
                     fluid: "kubejs:molten_calorite",
                     amount: INGOT,
                 },
@@ -2301,7 +2330,7 @@ function mixingRecipes(event) {
             input: [
                 {
                     fluid: "kubejs:molten_desh",
-                    amount: INGOT / 2,
+                    amount: INGOT * 4,
                 },
                 {
                     fluid: "kubejs:molten_yttrium",
@@ -2316,7 +2345,7 @@ function mixingRecipes(event) {
             input: [
                 {
                     fluid: "kubejs:molten_ostrum",
-                    amount: INGOT / 2,
+                    amount: INGOT * 2,
                 },
                 {
                     fluid: "kubejs:molten_yttrium",
@@ -2331,7 +2360,7 @@ function mixingRecipes(event) {
             input: [
                 {
                     fluid: "kubejs:molten_calorite",
-                    amount: INGOT / 2,
+                    amount: INGOT,
                 },
                 {
                     fluid: "kubejs:molten_yttrium",
@@ -2371,13 +2400,22 @@ function mixingRecipes(event) {
                 "ad_astra:calorite_ingot",
                 {
                     fluid: "kubejs:molten_yttrium",
-                    amount: 2 * INGOT,
+                    amount: INGOT,
                 },
             ],
             heat: "superheated",
             time: 1000,
         },
         {
+            output: ["astralfoods:astral_sauce"],
+            input: ["createastral:astral_singularity"],
+            heat: "superheated",
+            time: 80,
+        },
+        {
+            output: ["astralfoods:quantum_pasta"],
+            input: ["astralfoods:astral_sauce", "2x astralfoods:quantum_bites", "farmersdelight:raw_pasta"],
+            heat: "heated",
             output: "yttr:ruined_cobblestone",
             input: ["minecraft:cobblestone", "yttr:rubble"],
             heat: "",
@@ -2415,34 +2453,41 @@ function mixingRecipes(event) {
         },
         {
             output: "astraladditions:blazed_steel_ring",
-            input: ["astraladditions:steel_ring", "astraladditions:shimmer_blaze_powder", 
-								{
+            input: [
+                "astraladditions:steel_ring",
+                "astraladditions:shimmer_blaze_powder",
+                {
                     fluid: "tconstruct:blazing_blood",
                     amount: INGOT,
                 },
-						],
+            ],
             heat: "heated",
             time: 400,
         },
         {
             output: "astraladditions:moonblazed_orb",
-            input: ["astraladditions:cometball", "minecraft:ender_eye", "astraladditions:shimmer_blaze_powder", 
-								{
+            input: [
+                "astraladditions:cometball",
+                "minecraft:ender_eye",
+                "astraladditions:shimmer_blaze_powder",
+                {
                     fluid: "tconstruct:blazing_blood",
                     amount: BUCKET,
                 },
-						],
+            ],
             heat: "",
             time: 500,
         },
         {
             output: "astraladditions:oh-no",
-            input: ["astraladditions:oh-no_broken", "createastral:astral_conduit", 
-								{
+            input: [
+                "astraladditions:oh-no_broken",
+                "createastral:astral_conduit",
+                {
                     fluid: "tconstruct:blazing_blood",
                     amount: BUCKET,
                 },
-						],
+            ],
             heat: "heated",
             time: 500,
         },
@@ -2486,9 +2531,8 @@ function mixingRecipes(event) {
         .createMixing(Fluid.of("kubejs:molten_shadowsteel", BUCKET), [
             "minecraft:ender_pearl",
             "8x dbe:vanta_black",
-            "techreborn:lead_storage_block",
             "3x createastral:separation_agent",
-            "9x create:chromatic_compound",
+            "9x createastral:voidtouched_compound",
         ])
         .heated()
         .processingTime(1000);
@@ -2499,13 +2543,6 @@ function mixingRecipes(event) {
             { fluid: "kubejs:molten_radiance", amount: 100 * mB },
         ])
         .superheated()
-        .processingTime(1000);
-
-    event.recipes
-        .createMixing("doodads:asphalt", [
-            { fluid: "kubejs:andesite_compound", amount: INGOT / 3 },
-            "#c:concrete_powder",
-        ])
         .processingTime(1000);
 }
 
@@ -2677,15 +2714,67 @@ function mechanicalCraftingRecipes(event) {
     // Inputs: Object with letters assigned to input items, to be used in the shape
     [
 				{
+            output: "astraladditions:desizer_8",
+            shape: ["YLY", "YBY", "YPY"],
+            inputs: {
+                Y: "createastral:ender_plating",
+                P: "yttr:ultrapure_netherite",
+                B: "createastral:promethium_atomic_battery",
+                L: "createastral:living_mechanism"
+            },
+        },
+                {
+            output: "astraladditions:desizer_controller",
+            shape: ["YYYYYY", "YBLLBY", "YLSRLY", "YLSRLY", "YBLLBY", "YYYYYY"],
+            inputs: {
+                Y: "createastral:ender_plating",
+                S: "create:shadow_steel_casing",
+                R: "create:refined_radiance_casing",
+                B: "createastral:promethium_atomic_battery",
+                L: "createastral:living_mechanism"
+            },
+        },
+                {
+            output: "yttr:reinforced_cleaver",
+            shape: ["    VV", "   VV ", "  VV  ", " VN   ", " P    ", "P     "],
+            inputs: {
+                N: "yttr:neodymium_block",
+                V: "yttr:glassy_void",
+                P: "yttr:ultrapure_netherite"
+            },
+        },
+                {
+            output: "yttr:effector",
+            shape: ["VVV   ", "VVY   ", "VYNY  ", "  YBY ", "   YPY", "    YY"],
+            inputs: {
+                Y: "yttr:yttrium_plating",
+                N: "yttr:neodymium_block",
+                V: "yttr:glassy_void",
+                P: "yttr:ultrapure_netherite",
+                B: "createastral:promethium_atomic_battery"
+            },
+        },
+                {
+            output: "yttr:centrifuge",
+            shape: ["YYYYYY", "YBSSBY", "YSNNRY", "YSNNRY", "YBRRBY", "YYYYYY"],
+            inputs: {
+                Y: "yttr:yttrium_plating",
+                N: "yttr:neodymium_block",
+                S: "create:shadow_steel_casing",
+                R: "create:refined_radiance_casing",
+                B: "createastral:promethium_atomic_battery"
+            },
+        },
+        {
             output: "astraladditions:e_guitar",
             shape: ["PCC  ", "PWIWT", "PCC A"],
             inputs: {
                 A: "createastral:radiant_axe",
                 P: "createastral:calorite_pin",
                 C: "ad_astra:calorite_plate",
-								W: "createaddition:iron_wire",
-								I: "techreborn:industrial_circuit",
-								T: "createaddition:tesla_coil"
+                W: "createaddition:iron_wire",
+                I: "techreborn:industrial_circuit",
+                T: "createaddition:tesla_coil",
             },
         },
         {
@@ -2706,7 +2795,7 @@ function mechanicalCraftingRecipes(event) {
                 C: "createastral:promethium_atomic_battery",
                 D: "create:shadow_steel_casing",
                 E: "create:refined_radiance_casing",
-                G: "createastral:subatomic_core",
+                G: "astraladditions:fragile_item_2",
                 F: "yttr:yttrium_block",
             },
         },
@@ -2721,6 +2810,15 @@ function mechanicalCraftingRecipes(event) {
                 E: "#create:seats",
                 F: "createastral:airship_blueprint",
                 G: "farmersdelight:rope",
+            },
+        },
+        {
+            output: "yttr:magtank",
+            shape: ["CAC", "ABA", "ABA", "CAC"],
+            inputs: {
+                A: "yttr:armor_plating",
+                B: "techreborn:data_storage_chip",
+                C: "ad_astra:calorite_plate",
             },
         },
         {
@@ -3079,7 +3177,7 @@ function mechanicalCraftingRecipes(event) {
                 F: "createastral:fragile_sheet",
             },
         },
-				{
+        {
             output: "astraladditions:pylon",
             shape: [" C ", "CEC", "CNC", " C "],
             inputs: {
@@ -3101,14 +3199,32 @@ function mechanicalCraftingRecipes(event) {
         E: "techreborn:electronic_circuit",
         M: "minecraft:crossbow",
     });
+    event.recipes.createMechanicalCrafting("yttr:rifle_reinforced", ["CCY  ", "YMEIC", " CIYC", "   C "], {
+        Y: "create:refined_radiance_casing",
+        C: "createastral:subatomic_ingot",
+        I: "techreborn:industrial_circuit",
+        E: "techreborn:data_storage_chip",
+        M: "yttr:rifle",
+    });
+    event.recipes.createMechanicalCrafting("yttr:rifle_overclocked", ["CCY  ", "YMEIC", " CIYC", "   C "], {
+        Y: "create:refined_radiance_casing",
+        C: "createastral:ender_plating",
+        I: "createastral:astral_singularity",
+        E: "createastral:promethium_atomic_battery",
+        M: "yttr:rifle_reinforced",
+    });
 }
 
 function pressingRecipes(event) {
     // [Input string, Output string]
     [
+        ["yttr:haemopal", "5x createastral:ultramatter"],
         ["minecraft:lapis_block", "create:lapis_sheet"],
+        ["tconstruct:greenheart_log", "2x minecraft:green_dye"],
+        ["tconstruct:skyroot_log", "2x minecraft:blue_dye"],
         ["createastral:pure_star_shard", "minecraft:nether_star"],
         ["minecraft:cobblestone", "techreborn:andesite_dust"],
+        ["yttr:delicace", "createastral:ender_plating"],
     ].forEach((recipe) => {
         event.recipes.createPressing(recipe[1], recipe[0]);
     });
@@ -3425,11 +3541,10 @@ function compactingRecipes(event) {
         .processingTime(1000);
 
     event.recipes
-        .createCompacting(["yttr:armor_plating", "yttr:bedrock_shard"], [
-            "8x yttr:yttrium_ingot",
-            "yttr:bedrock_shard",
-            { fluid: "kubejs:hellfire", amount: 100 * mB },
-        ])
+        .createCompacting(
+            ["yttr:armor_plating", "yttr:bedrock_shard"],
+            ["8x yttr:yttrium_ingot", "yttr:bedrock_shard", { fluid: "kubejs:hellfire", amount: 100 * mB }]
+        )
         .superheated()
         .processingTime(200);
 
@@ -3465,6 +3580,11 @@ function compactingRecipes(event) {
         .heated()
         .processingTime(500);
 
+    event.recipes
+        .createCompacting("ad_astra:permafrost", ["9x ad_astra:glacio_stone"])
+        .superheated()
+        .processingTime(200);
+
     event.recipes.createCompacting("4x minecraft:purpur_block", [
         "4x ad_astra:strophar_cap",
         { fluid: "minecraft:water", amount: 100 * mB },
@@ -3487,8 +3607,12 @@ function superheatedMixingRecipes(event) {
             ],
             ["astraladditions:fragile_item_2"],
         ],
+        [
+            ["4x create:shadow_steel", "4x create:refined_radiance", "techreborn:data_storage_chip"],
+            ["createastral:subatomic_ingot"],
+        ],
         [["tconstruct:ender_slime_crystal", "4x yttr:rubble"], ["yttr:promethium_speck"]],
-        [["4x tconstruct:ender_slime_crystal", "minecraft:golden_apple"], ["doodads:magic_plum"]],
+        //[["4x tconstruct:ender_slime_crystal", "minecraft:golden_apple"], ["doodads:magic_plum"]], PLUM IS OP!
 
         [
             ["tconstruct:ichor_slime_sling", "yttr:delicace", { fluid: "kubejs:metabolic_broth", amount: BUCKET / 2 }],
@@ -3504,6 +3628,7 @@ function superheatedMixingRecipes(event) {
             ],
             [Fluid.of("tconstruct:molten_bronze", INGOT * 9)],
         ],
+        [["yttr:quicksilver"], [Fluid.of("techreborn:mercury", mB * 500)]],
     ].forEach((recipe) => {
         event.recipes.createMixing(recipe[1], recipe[0]).superheated().processingTime(20);
     });

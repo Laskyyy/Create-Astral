@@ -8,18 +8,21 @@ function LakyCompactingRecipes(event) {
         [
             "create:ochrum",
             "minecraft:dripstone_block",
+            "minecraft:cobblestone",
             { fluid: "create:honey", amount: 100 * mB },
             "minecraft:yellow_dye",
         ],
         [
             "create:crimsite",
             "minecraft:tuff",
+            "minecraft:cobblestone",
             { fluid: "tconstruct:blood", amount: 100 * mB },
             "minecraft:red_dye",
         ],
         [
             "create:limestone",
             "minecraft:clay",
+            "minecraft:cobblestone",
             { fluid: "milk:still_milk", amount: 100 * mB },
             "minecraft:white_dye",
         ],
@@ -148,6 +151,15 @@ function LakyCrushingRecipes(event) {
                 ["minecraft:basalt", 0.2],
                 ["minecraft:blackstone", 0.2],
                 ["minecraft:magma_block", 0.08],
+            ],
+        },
+        {
+            input: "ad_astra:glacio_cobblestone",
+            outputs: [
+                ["minecraft:blue_ice", 0.3],
+                ["minecraft:packed_ice", 0.5],
+                ["minecraft:snow_block", 0.3],
+                ["createastral:prismatic_crystal", 0.05],
             ],
         },
         {

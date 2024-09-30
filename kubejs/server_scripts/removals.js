@@ -27,6 +27,7 @@ onEvent("recipes", (event) => {
         {output: "techreborn:insulated_copper_cable"},
 
         { output: "techreborn:hv_transformer"},
+        { output: "techreborn:nanosaber"},
         {output: "techreborn:lightning_rod"},
         {output: "techreborn:refined_iron_fence"},
         { output: "techreborn:chunk_loader" },
@@ -87,6 +88,11 @@ onEvent("recipes", (event) => {
         { output: "techreborn:quantum_boots" },
         { output: "techreborn:copper_nugget" },
         { output: "techreborn:steel_plate" },
+        { output: "techreborn:nanosaber" },
+        { output: "yttr:promethium_speck" },
+        { output: "yttr:promethium_lump" },
+        { output: "yttr:promethium_glob" },
+        { output: "yttr:reinforced_cleaver" },
         { type: "techreborn:scrapbox" },
         {
             type: "techreborn:grinder",
@@ -453,8 +459,6 @@ onEvent("recipes", (event) => {
         { output: "computercraft:turtle_advanced" },
         { output: "computercraft:computer_advanced" },
         { output: "computercraft:pocket_computer_advanced" },
-
-        { mod: "camsbackpacks", input: "minecraft:chest" },
 
         { output: "buildinggadgets:gadget_building" },
         { output: "buildinggadgets:gadget_copy_paste" },

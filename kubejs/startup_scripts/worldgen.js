@@ -82,6 +82,42 @@ onEvent("worldgen.add", (event) => {
         ore.count([1, 2]).squared().triangleHeight(0, 110);
         ore.size = 30;
     });
+    event.addOre((ore) => {
+        ore.id = "kubejs:wastelandrubble"; // optional
+        ore.biomes = [
+            "minecraft:nether_wastes",
+            "minecraft:warped_forest",
+            "minecraft:crimson_forest",
+            "minecraft:small_end_islands",
+        ];
+        ore.addTarget("#createastral:nether_ore_replaceables", "yttr:ruined_cobblestone");
+
+        ore.count([1, 4]).squared().triangleHeight(0, 135);
+        ore.size = 40;
+    });
+		event.addOre((ore) => {
+        ore.id = "kubejs:wastelandendstone"; // optional
+        ore.biomes = [
+            "minecraft:nether_wastes",
+            "minecraft:small_end_islands",
+        ];
+        ore.addTarget("#createastral:nether_ore_replaceables", "minecraft:end_stone");
+
+        ore.count([4, 16]).squared().triangleHeight(0, 135);
+        ore.size = 60;
+    });
+		event.addOre((ore) => {
+        ore.id = "kubejs:wastelandyttr"; // optional
+        ore.biomes = [
+            "minecraft:nether_wastes",
+            "minecraft:small_end_islands",
+        ];
+        ore.addTarget("minecraft:end_stone", "yttr:deepslate_gadolinite");
+
+        ore.count([20, 30]).squared().triangleHeight(0, 135);
+        ore.size = 6;
+    });
+
 
     ///MARS
 

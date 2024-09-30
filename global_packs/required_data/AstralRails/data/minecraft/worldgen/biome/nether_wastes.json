@@ -43,6 +43,12 @@
         "maxCount": 4
       },
 			{
+        "type": "astraladditions:whast",
+        "weight": 50,
+        "minCount": 4,
+        "maxCount": 4
+      },
+			{
         "type": "astraladditions:voidtouched_zombie",
         "weight": 50,
         "minCount": 4,
@@ -56,9 +62,9 @@
       },
 			{
         "type": "astraladditions:hemogiant",
-        "weight": 50,
-        "minCount": 4,
-        "maxCount": 4
+        "weight": 25,
+        "minCount": 1,
+        "maxCount": 2
       },
       {
         "type": "minecraft:zombified_piglin",
@@ -137,7 +143,8 @@
       "minecraft:ore_gold_nether",
       "minecraft:ore_quartz_nether",
       "minecraft:ore_ancient_debris_large",
-      "minecraft:ore_debris_small"
+      "minecraft:ore_debris_small",
+			"astralrails:nether/nether_enderslime_geode"
     ],
     [],
     [

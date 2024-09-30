@@ -75,7 +75,7 @@
       }
     },
     {
-      "weight": 2,
+      "weight": 8,
       "element": {
         "location": "astralrails:contest/overworld/satellitedish",
         "processors": "minecraft:empty",

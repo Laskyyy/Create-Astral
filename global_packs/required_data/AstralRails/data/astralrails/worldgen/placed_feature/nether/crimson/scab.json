@@ -17,6 +17,9 @@
         }
       }
     },
+		{
+      "type": "minecraft:in_square"
+    },
     {
       "type": "minecraft:environment_scan",
       "direction_of_search": "up",

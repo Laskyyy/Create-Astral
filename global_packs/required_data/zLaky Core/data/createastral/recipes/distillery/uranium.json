@@ -23,7 +23,7 @@
         },
         {
             "type": "custommachinery:fluid",
-            "fluid": "kubejs:liquid_xp_nuggies",
+            "fluid": "techreborn:mercury",
             "amount": 81000,
             "mode": "input"
         },

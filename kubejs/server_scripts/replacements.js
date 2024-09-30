@@ -87,6 +87,10 @@ onEvent("recipes", (event) => {
                 output: "techreborn:chunk_loader",
             },
             "techreborn:industrial_machine_frame",
+            "create:shadow_steel_casing",
+        ],
+        [
+            "techreborn:industrial_machine_frame",
             "techreborn:basic_machine_frame",
         ],
         [

@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "O####O",
+    "#BSSB#",
+    "#SNNR#",
+    "#SNNR#",
+    "#BRRB#",
+    "O####O"
+  ],
+  "key": {
+    "#": {
+      "item": "yttr:yttrium_plating"
+    },
+    "B": {
+      "item": "minecraft:dirt"
+    },
+    "S": {
+      "item": "minecraft:dirt"
+    },
+    "R": {
+      "item": "minecraft:dirt"
+    },
+    "N": {
+      "item": "minecraft:dirt"
+    },
+    "O": {
+      "item": "yttr:yttrium_block"
+    }
+  },
+  "result": {
+    "item": "yttr:centrifuge"
+  }
+}

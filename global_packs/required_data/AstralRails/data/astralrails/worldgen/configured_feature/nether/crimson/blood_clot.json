@@ -1,8 +1,21 @@
 {
-  "type": "minecraft:forest_rock",
+  "type": "minecraft:netherrack_replace_blobs",
   "config": {
     "state": {
-      "Name": "tconstruct:blood_slime"
+      "Name": "tconstruct:blood_slime",
+      "Properties": {
+        "axis": "y"
+      }
+    },
+    "target": {
+      "Name": "minecraft:air"
+    },
+    "radius": {
+      "type": "minecraft:uniform",
+      "value": {
+        "min_inclusive": 1,
+        "max_inclusive": 2
+      }
     }
   }
 }
