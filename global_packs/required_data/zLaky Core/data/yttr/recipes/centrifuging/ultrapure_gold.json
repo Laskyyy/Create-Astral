@@ -1,0 +1,15 @@
+{
+	"type": "yttr:centrifuging",
+	"time": 1200,
+	"ingredient": {
+		"item": "minecraft:gold_ingot",
+		"count": 8,
+		"yttr:no_substitution": true
+	},
+	"results": [
+		{
+			"item": "yttr:ultrapure_gold",
+			"count": 2
+		}
+	]
+}

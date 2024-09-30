@@ -74,20 +74,7 @@
     "water_ambient": [],
     "misc": []
   },
-  "spawn_costs": {
-    "minecraft:enderman": {
-      "energy_budget": 0.12,
-      "charge": 1
-    },
-    "astraladditions:hemogiant": {
-      "energy_budget": 0.12,
-      "charge": 1
-    },
-    "astraladditions:ender_watcher": {
-      "energy_budget": 0.12,
-      "charge": 1
-    }
-  },
+  "spawn_costs": {  },
   "carvers": {
     "air": "minecraft:nether_cave"
   },
@@ -116,6 +103,8 @@
 			
 			"astralrails:nether/warped/noise_nylium",
 			"astralrails:nether/warped/noise_enderrack",
+			"astralrails:nether/warped/sputum_pools",
+			"astralrails:nether/warped/sputum_puddles",
 			"astralrails:nether/warped/end_clot",
 			"astralrails:nether/warped/enderslime_crystal",
 			"astralrails:nether/warped/ender_sprouts",

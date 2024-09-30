@@ -1,7 +1,7 @@
 {
 	"type": "yttr:centrifuging",
 	"ingredient": {
-		"item": "yttr:raw_gadolinite"
+		"item": "createastral:crushed_raw_gadolinite"
 	},
 	"results": [
 		{

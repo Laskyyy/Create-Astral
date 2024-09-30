@@ -89,6 +89,10 @@ onEvent("recipes", (event) => {
         { output: "techreborn:copper_nugget" },
         { output: "techreborn:steel_plate" },
         { output: "techreborn:nanosaber" },
+        { output: "yttr:promethium_speck" },
+        { output: "yttr:promethium_lump" },
+        { output: "yttr:promethium_glob" },
+        { output: "yttr:reinforced_cleaver" },
         { type: "techreborn:scrapbox" },
         {
             type: "techreborn:grinder",
