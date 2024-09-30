@@ -59,9 +59,20 @@
   "spawn_costs": {},
   "carvers": {},
   "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
     [
       "minecraft:end_island_decorated",
+			"astralrails:nether/nether_enderslime_geode"
+    ],
+		[
 			"minecraft:chorus_plant"
-    ]
+		],
+		[	]
   ]
 }

@@ -901,6 +901,13 @@ onEvent("recipes", (event) => {
     event.stonecutting("yttr:ruined_frame", "yttr:wasteland_log");
     event.stonecutting("yttr:ruined_lever", "yttr:wasteland_log");
     event.stonecutting("yttr:ruined_torch", "yttr:wasteland_log");
+    event.stonecutting("astraladditions:desizer_1", "astraladditions:desizer_8");
+    event.stonecutting("astraladditions:desizer_2", "astraladditions:desizer_8");
+    event.stonecutting("astraladditions:desizer_3", "astraladditions:desizer_8");
+    event.stonecutting("astraladditions:desizer_4", "astraladditions:desizer_8");
+    event.stonecutting("astraladditions:desizer_6", "astraladditions:desizer_8");
+    event.stonecutting("astraladditions:desizer_7", "astraladditions:desizer_8");
+    event.stonecutting("astraladditions:desizer_9", "astraladditions:desizer_8");
     event.shaped("yttr:wasteland_dirt", ["ABA"], {
         A: "yttr:rubble",
         B: "minecraft:sand",

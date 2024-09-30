@@ -50,7 +50,7 @@ onEvent("item.registry", (event) => {
         .create("astralfoods:quantum_bites")
         .displayName("Quantum Bites")
         .food((food) => {
-            food.hunger(17).saturation(1.2).effect("regeneration", 700, 2, 1).alwaysEdible();
+            food.hunger(15).saturation(1.2).effect("regeneration", 300, 2, 1).alwaysEdible();
         });
 
     event
@@ -66,8 +66,8 @@ onEvent("item.registry", (event) => {
         .food((food) => {
             food.hunger(75)
                 .saturation(1.1)
-                .effect("haste", 1000, 2, 1)
-                .effect("regeneration", 1000, 2, 1)
+                .effect("haste", 5000, 2, 1)
+                .effect("regeneration", 5000, 2, 1)
                 .alwaysEdible();
         });
 
@@ -83,9 +83,9 @@ onEvent("item.registry", (event) => {
         .displayName("Shimmered Rabbit Stew")
         .food((food) => {
             food.hunger(18)
-                .saturation(1)
-                .effect("resistance", 500, 2, 1)
-                .effect("saturation", 500, 1, 1)
+                .saturation(0.9)
+                .effect("resistance", 500, 1, 1)
+                .effect("saturation", 500, 0, 1)
                 .alwaysEdible();
         });
 
@@ -93,7 +93,7 @@ onEvent("item.registry", (event) => {
         .create("astralfoods:shimmered_apple")
         .displayName("Shimmered Apple")
         .food((food) => {
-            food.hunger(8).saturation(0.6).effect("instant_health", 60, 1, 1);
+            food.hunger(4).saturation(2.5).effect("instant_health", 60, 1, 1);
         });
 
     event
