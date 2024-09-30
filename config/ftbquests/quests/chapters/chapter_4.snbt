@@ -1,27 +1,38 @@
 {
-	quest_links: [ ]
-	default_hide_dependency_lines: false
-	group: ""
 	id: "1A12E870F117B0D1"
+	group: ""
+	order_index: 5
 	filename: "chapter_4"
-	default_quest_shape: ""
-	icon: "createastral:astral_conduit"
 	title: "{chapter.5.title}"
+	icon: {
+		id: "createastral:astral_conduit"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	images: [{
-		rotation: 0.0d
-		image: "ad_astra:textures/painting/moon.png"
-		width: 3.0d
-		click: ""
-		hover: [ ]
 		x: -20.5d
 		y: -1.0d
-		corner: false
-		dev: false
+		width: 3.0d
 		height: 3.0d
+		rotation: 0.0d
+		image: "ad_astra:textures/painting/moon.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
 	}]
-	order_index: 4
 	quests: [
 		{
+			x: -21.5d
+			y: 2.0d
+			subtitle: "{chapter.5.quest.1.subtitle}"
+			description: ["{chapter.5.quest.1.description.1}"]
+			dependencies: ["6027602617EC9F1F"]
+			id: "51BD31261A5725E3"
 			tasks: [
 				{
 					id: "0D02301437FE6A13"
@@ -34,20 +45,21 @@
 					item: "create:empty_blaze_burner"
 				}
 			]
-			description: ["{chapter.5.quest.1.description.1}"]
-			id: "51BD31261A5725E3"
-			x: -21.5d
-			y: 2.0d
 			rewards: [{
 				id: "0CC3B7BDC5729E23"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 2053519168689179764L
 			}]
-			subtitle: "{chapter.5.quest.1.subtitle}"
-			dependencies: ["6027602617EC9F1F"]
 		}
 		{
+			title: "{chapter.5.quest.2.title}"
+			x: -19.0d
+			y: 5.0d
+			subtitle: "{chapter.5.quest.2.subtitle}"
+			description: ["{chapter.5.quest.2.description.1}"]
+			dependencies: ["51BD31261A5725E3"]
+			id: "705C815541DB89F8"
 			tasks: [
 				{
 					id: "4F445E77DE25C93E"
@@ -61,11 +73,6 @@
 					item: "create:brass_ingot"
 				}
 			]
-			description: ["{chapter.5.quest.2.description.1}"]
-			id: "705C815541DB89F8"
-			x: -19.0d
-			y: 5.0d
-			title: "{chapter.5.quest.2.title}"
 			rewards: [
 				{
 					id: "08DE0E85F643FAEA"
@@ -79,17 +86,34 @@
 					table_id: 5253492355592689915L
 				}
 			]
-			subtitle: "{chapter.5.quest.2.subtitle}"
-			dependencies: ["51BD31261A5725E3"]
 		}
 		{
-			size: 1.75d
-			description: ["{chapter.5.quest.3.description.1}"]
-			id: "3EA569DE4AC60CC2"
+			title: "{chapter.5.quest.3.title}"
 			x: -9.5d
 			y: 5.0d
 			shape: "rsquare"
-			title: "{chapter.5.quest.3.title}"
+			subtitle: "{chapter.5.quest.3.subtitle}"
+			description: ["{chapter.5.quest.3.description.1}"]
+			dependencies: [
+				"21DBCD51CC35B794"
+				"22B29B232EF2638F"
+			]
+			size: 1.75d
+			id: "3EA569DE4AC60CC2"
+			tasks: [
+				{
+					id: "49D02CD04B8DB0A7"
+					type: "advancement"
+					advancement: "create:mechanical_crafter"
+					criterion: ""
+				}
+				{
+					id: "6EAE88F48D36F0ED"
+					type: "item"
+					item: "create:mechanical_crafter"
+					count: 3L
+				}
+			]
 			rewards: [
 				{
 					id: "5A89715DA67A0895"
@@ -109,91 +133,80 @@
 					table_id: 5253492355592689915L
 				}
 			]
-			subtitle: "{chapter.5.quest.3.subtitle}"
-			dependencies: [
-				"21DBCD51CC35B794"
-				"22B29B232EF2638F"
-			]
-			tasks: [
-				{
-					id: "49D02CD04B8DB0A7"
-					type: "advancement"
-					advancement: "create:mechanical_crafter"
-					criterion: ""
-				}
-				{
-					id: "6EAE88F48D36F0ED"
-					type: "item"
-					item: "create:mechanical_crafter"
-					count: 3L
-				}
-			]
 		}
 		{
+			x: -14.5d
+			y: 4.0d
+			subtitle: "{chapter.5.quest.4.subtitle}"
+			description: ["{chapter.5.quest.4.description.1}"]
+			dependencies: ["705C815541DB89F8"]
+			id: "21DBCD51CC35B794"
 			tasks: [{
 				id: "6CD840BFC30ED0B4"
 				type: "item"
 				item: "create:precision_mechanism"
 				count: 5L
 			}]
-			description: ["{chapter.5.quest.4.description.1}"]
-			id: "21DBCD51CC35B794"
-			x: -14.5d
-			y: 4.0d
 			rewards: [{
 				id: "1A841E22B421B286"
 				type: "item"
 				item: "create:large_cogwheel"
 				count: 5
 			}]
-			subtitle: "{chapter.5.quest.4.subtitle}"
-			dependencies: ["705C815541DB89F8"]
 		}
 		{
-			size: 1.25d
-			description: ["{chapter.5.quest.5.description.1}"]
-			id: "429D2340C2B20A60"
-			min_required_dependencies: 1
+			title: "{chapter.5.quest.5.title}"
 			x: -4.5d
 			y: 5.0d
 			shape: "rsquare"
-			title: "{chapter.5.quest.5.title}"
-			rewards: [
-				{
-					id: "22FB9564D8489F57"
-					type: "item"
-					item: "create:crushed_raw_iron"
-					count: 5
-				}
-				{
-					id: "2C3A9DF5C7850621"
-					type: "item"
-					item: "create:crushed_raw_gold"
-					count: 5
-				}
-				{
-					id: "35AEE17AA1541902"
-					type: "item"
-					item: "create:crushed_raw_copper"
-					count: 5
-				}
-				{
-					id: "0BE9FB2ACC5AE776"
-					type: "item"
-					item: "create:crushed_raw_zinc"
-					count: 5
-				}
-			]
-			dependencies: ["3EA569DE4AC60CC2"]
 			subtitle: "{chapter.5.quest.5.subtitle}"
+			description: ["{chapter.5.quest.5.description.1}"]
+			min_required_dependencies: 1
+			dependencies: ["3EA569DE4AC60CC2"]
+			size: 1.25d
+			id: "429D2340C2B20A60"
 			tasks: [{
 				id: "1301133C5F159842"
 				type: "item"
 				item: "create:crushing_wheel"
 				count: 2L
 			}]
+			rewards: [
+				{
+					id: "22FB9564D8489F57"
+					type: "item"
+					item: "create:crushed_iron_ore"
+					count: 5
+				}
+				{
+					id: "2C3A9DF5C7850621"
+					type: "item"
+					item: "create:crushed_gold_ore"
+					count: 5
+				}
+				{
+					id: "35AEE17AA1541902"
+					type: "item"
+					item: "create:crushed_copper_ore"
+					count: 5
+				}
+				{
+					id: "0BE9FB2ACC5AE776"
+					type: "item"
+					item: "create:crushed_zinc_ore"
+					count: 5
+				}
+			]
 		}
 		{
+			title: "{chapter.5.quest.6.title}"
+			x: -18.5d
+			y: 4.0d
+			subtitle: "{chapter.5.quest.6.subtitle}"
+			description: ["{chapter.5.quest.6.description.1}"]
+			dependencies: ["705C815541DB89F8"]
+			optional: true
+			id: "156E58E3BD65E3A0"
 			tasks: [
 				{
 					id: "6585A2231EB47FE1"
@@ -240,11 +253,6 @@
 					}
 				}
 			]
-			description: ["{chapter.5.quest.6.description.1}"]
-			id: "156E58E3BD65E3A0"
-			x: -18.5d
-			y: 4.0d
-			title: "{chapter.5.quest.6.title}"
 			rewards: [
 				{
 					id: "02CA4F4215074213"
@@ -264,42 +272,47 @@
 					}
 				}
 			]
-			subtitle: "{chapter.5.quest.6.subtitle}"
-			dependencies: ["705C815541DB89F8"]
-			optional: true
 		}
 		{
-			size: 1.75d
-			description: ["{chapter.5.quest.7.description.1}"]
-			id: "44D51F142E9E8902"
-			x: 2.0d
+			title: "{chapter.5.quest.7.title}"
+			x: 3.0d
 			y: 5.0d
 			shape: "hexagon"
-			title: "{chapter.5.quest.7.title}"
-			rewards: [{
-				id: "649C941473A8881D"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 5253492355592689915L
-			}]
-			dependencies: ["62C959AC63DD2A89"]
 			subtitle: "{chapter.5.quest.7.subtitle}"
+			description: ["{chapter.5.quest.7.description.1}"]
 			hide_dependency_lines: false
+			dependencies: ["62C959AC63DD2A89"]
+			size: 1.75d
+			id: "44D51F142E9E8902"
 			tasks: [{
 				id: "734050A549967E71"
 				type: "item"
 				item: "ad_astra:launch_pad"
 				count: 2L
 			}]
+			rewards: [{
+				id: "649C941473A8881D"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
+			}]
 		}
 		{
-			size: 1.5d
-			description: ["{chapter.5.quest.8.description.1}"]
-			id: "186E8426BD7CE343"
+			title: "{chapter.5.quest.8.title}"
 			x: -19.5d
 			y: 2.0d
 			shape: "gear"
-			title: "{chapter.5.quest.8.title}"
+			subtitle: "{chapter.5.quest.8.subtitle}"
+			description: ["{chapter.5.quest.8.description.1}"]
+			dependencies: ["51BD31261A5725E3"]
+			size: 1.5d
+			id: "186E8426BD7CE343"
+			tasks: [{
+				id: "14D6DAEC2B1BB1C9"
+				type: "item"
+				item: "create:steam_engine"
+				count: 9L
+			}]
 			rewards: [
 				{
 					id: "064504FFFA76C63C"
@@ -313,25 +326,20 @@
 					table_id: 2053519168689179764L
 				}
 			]
-			subtitle: "{chapter.5.quest.8.subtitle}"
-			dependencies: ["51BD31261A5725E3"]
-			tasks: [{
-				id: "14D6DAEC2B1BB1C9"
-				type: "item"
-				item: "create:steam_engine"
-				count: 9L
-			}]
 		}
 		{
+			x: -9.5d
+			y: 6.5d
+			subtitle: "{chapter.5.quest.9.subtitle}"
+			description: ["{chapter.5.quest.9.description.1}"]
+			dependencies: ["3EA569DE4AC60CC2"]
+			optional: true
+			id: "1142742E67E7F493"
 			tasks: [{
 				id: "34E2A2F81176C47A"
 				type: "item"
 				item: "computercraft:computer_advanced"
 			}]
-			description: ["{chapter.5.quest.9.description.1}"]
-			id: "1142742E67E7F493"
-			x: -9.5d
-			y: 6.5d
 			rewards: [
 				{
 					id: "5D20F0622359EE77"
@@ -346,20 +354,20 @@
 					table_id: 5253492355592689915L
 				}
 			]
-			subtitle: "{chapter.5.quest.9.subtitle}"
-			dependencies: ["3EA569DE4AC60CC2"]
-			optional: true
 		}
 		{
+			x: -9.5d
+			y: 7.5d
+			subtitle: "{chapter.5.quest.10.subtitle}"
+			description: ["{chapter.5.quest.10.description.1}"]
+			dependencies: ["1142742E67E7F493"]
+			optional: true
+			id: "75E964418F7E94F0"
 			tasks: [{
 				id: "581714BC88B65CFE"
 				type: "item"
 				item: "computercraft:monitor_advanced"
 			}]
-			description: ["{chapter.5.quest.10.description.1}"]
-			id: "75E964418F7E94F0"
-			x: -9.5d
-			y: 7.5d
 			rewards: [
 				{
 					id: "606EB535C24A2BF2"
@@ -374,20 +382,20 @@
 					table_id: 5253492355592689915L
 				}
 			]
-			subtitle: "{chapter.5.quest.10.subtitle}"
-			dependencies: ["1142742E67E7F493"]
-			optional: true
 		}
 		{
+			x: -9.5d
+			y: 8.5d
+			subtitle: "{chapter.5.quest.11.subtitle}"
+			description: ["{chapter.5.quest.11.description.1}"]
+			dependencies: ["75E964418F7E94F0"]
+			optional: true
+			id: "02AE40C72FE1744E"
 			tasks: [{
 				id: "1BDADD385B8DE7B9"
 				type: "item"
 				item: "computercraft:turtle_advanced"
 			}]
-			description: ["{chapter.5.quest.11.description.1}"]
-			id: "02AE40C72FE1744E"
-			x: -9.5d
-			y: 8.5d
 			rewards: [
 				{
 					id: "3D015AE415FE2FDA"
@@ -402,61 +410,23 @@
 					table_id: 5253492355592689915L
 				}
 			]
-			subtitle: "{chapter.5.quest.11.subtitle}"
-			dependencies: ["75E964418F7E94F0"]
-			optional: true
 		}
 		{
-			tasks: [{
-				id: "573CC2D0A646E934"
-				type: "item"
-				item: {
-					id: "minecraft:crossbow"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
-			}]
-			description: ["{chapter.5.quest.12.description.1}"]
-			id: "5175CCC25B53E288"
-			x: -11.0d
-			y: 3.5d
-			shape: "heart"
-			title: "{chapter.5.quest.12.title}"
-			rewards: [{
-				id: "18E604508CF969CC"
-				type: "item"
-				item: {
-					id: "minecraft:enchanted_book"
-					Count: 1b
-					tag: {
-						StoredEnchantments: [{
-							id: "minecraft:quick_charge"
-							lvl: 2s
-						}]
-					}
-				}
-			}]
-			subtitle: "{chapter.5.quest.12.subtitle}"
-			dependencies: ["3EA569DE4AC60CC2"]
-			optional: true
-			hide: false
-		}
-		{
-			tasks: [{
-				type: "item"
-				count: 2048L
-				id: "6DF91EC85EA51BE5"
-				item: "minecraft:cobbled_deepslate"
-				title: "{chapter.5.quest.13.task.1.title}"
-			}]
-			description: ["{chapter.5.quest.13.description.1}"]
-			id: "014B450CC8D472A4"
+			title: "{chapter.5.quest.13.title}"
 			x: -5.5d
 			y: 6.0d
 			shape: "diamond"
-			title: "{chapter.5.quest.13.title}"
+			subtitle: "{chapter.5.quest.13.subtitle}"
+			description: ["{chapter.5.quest.13.description.1}"]
+			dependencies: ["429D2340C2B20A60"]
+			id: "014B450CC8D472A4"
+			tasks: [{
+				id: "6DF91EC85EA51BE5"
+				type: "item"
+				title: "{chapter.5.quest.13.task.1.title}"
+				item: "minecraft:cobbled_deepslate"
+				count: 2048L
+			}]
 			rewards: [
 				{
 					id: "5B0EF06B40399E55"
@@ -490,60 +460,60 @@
 					table_id: 5253492355592689915L
 				}
 			]
-			subtitle: "{chapter.5.quest.13.subtitle}"
-			dependencies: ["429D2340C2B20A60"]
 		}
 		{
+			title: "{chapter.5.quest.14.title}"
+			x: -1.5d
+			y: -5.0d
+			description: ["{chapter.5.quest.14.description.1}"]
+			dependencies: ["5CD6C6CA30CA50F0"]
+			dependency_requirement: "one_completed"
+			min_required_tasks: 1
+			id: "59C1BBC3C57A277A"
 			tasks: [{
 				id: "4517FCB4B211BE97"
 				type: "item"
 				item: "techreborn:compressed_plantball"
 			}]
-			description: ["{chapter.5.quest.14.description.1}"]
-			id: "59C1BBC3C57A277A"
-			x: -1.5d
-			y: -5.0d
-			title: "{chapter.5.quest.14.title}"
-			dependencies: ["5CD6C6CA30CA50F0"]
-			dependency_requirement: "one_completed"
-			min_required_tasks: 1
 		}
 		{
+			title: "{chapter.5.quest.15.title}"
+			x: 0.5d
+			y: -5.0d
+			subtitle: "{chapter.5.quest.15.subtitle}"
+			description: ["{chapter.5.quest.15.description.1}"]
+			dependencies: ["232F25F6D9BFC2F5"]
+			id: "1533B14714529386"
 			tasks: [{
 				id: "6C67D64488400F03"
 				type: "item"
 				item: "createastral:pure_biomatter"
 			}]
-			description: ["{chapter.5.quest.15.description.1}"]
-			id: "1533B14714529386"
-			x: 0.5d
-			y: -5.0d
-			title: "{chapter.5.quest.15.title}"
 			rewards: [{
 				id: "405706BF3F2C038F"
 				type: "item"
 				item: "farmersdelight:organic_compost"
 				count: 16
 			}]
-			subtitle: "{chapter.5.quest.15.subtitle}"
-			dependencies: ["232F25F6D9BFC2F5"]
 		}
 		{
-			size: 3.0d
-			x: -23.0d
+			title: "{chapter.5.quest.16.title}"
 			icon: "ad_astra:moon_globe"
+			x: -23.0d
+			y: -3.5d
+			shape: "pentagon"
 			subtitle: "{chapter.5.quest.16.subtitle}"
+			description: ["{chapter.5.quest.16.description.1}"]
+			dependencies: ["15B9947ABCCB882F"]
+			hide: true
+			size: 3.0d
+			id: "306D009F01634115"
 			tasks: [{
 				id: "59023CFBD7DC7228"
 				type: "checkmark"
 				title: "{chapter.5.quest.16.task.1.title}"
 				icon: "ad_astra:moon_globe"
 			}]
-			description: ["{chapter.5.quest.16.description.1}"]
-			id: "306D009F01634115"
-			shape: "pentagon"
-			y: -3.5d
-			title: "{chapter.5.quest.16.title}"
 			rewards: [
 				{
 					id: "6C0AC8AA4668A80A"
@@ -561,48 +531,48 @@
 					item: "minecraft:light_gray_shulker_box"
 				}
 			]
-			dependencies: ["15B9947ABCCB882F"]
-			hide: true
 		}
 		{
-			size: 1.5d
-			x: -18.5d
+			title: "{chapter.5.quest.17.title}"
 			icon: "techreborn:deepslate_silver_ore"
+			x: -18.5d
+			y: -3.5d
 			subtitle: "{chapter.5.quest.17.subtitle}"
+			description: ["{chapter.5.quest.17.description.1}"]
+			dependencies: ["306D009F01634115"]
+			dependency_requirement: "one_completed"
+			size: 1.5d
 			min_required_tasks: 1
+			id: "1DFF76A494C9A586"
 			tasks: [{
 				id: "58A49C6524D4217E"
 				type: "item"
 				item: "techreborn:raw_silver"
 				count: 8L
 			}]
-			description: ["{chapter.5.quest.17.description.1}"]
-			id: "1DFF76A494C9A586"
-			y: -3.5d
-			title: "{chapter.5.quest.17.title}"
 			rewards: [{
 				id: "1B479B7148771628"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 5253492355592689915L
 			}]
-			dependencies: ["306D009F01634115"]
-			dependency_requirement: "one_completed"
 		}
 		{
-			tasks: [{
-				type: "item"
-				count: 512L
-				id: "415C272D0390AAFA"
-				item: "ad_astra:desh_nugget"
-				title: "{chapter.5.quest.18.task.1.title}"
-			}]
-			description: ["{chapter.5.quest.18.description.1}"]
-			id: "7909A5A0E194C800"
+			title: "{chapter.5.quest.18.title}"
 			x: -25.0d
 			y: -3.0d
 			shape: "diamond"
-			title: "{chapter.5.quest.18.title}"
+			subtitle: "{chapter.5.quest.18.subtitle}"
+			description: ["{chapter.5.quest.18.description.1}"]
+			dependencies: ["306D009F01634115"]
+			id: "7909A5A0E194C800"
+			tasks: [{
+				id: "415C272D0390AAFA"
+				type: "item"
+				title: "{chapter.5.quest.18.task.1.title}"
+				item: "ad_astra:desh_nugget"
+				count: 512L
+			}]
 			rewards: [
 				{
 					id: "368A95184CCC6B9A"
@@ -615,99 +585,99 @@
 					item: "ad_astra:desh_sliding_door"
 				}
 			]
-			subtitle: "{chapter.5.quest.18.subtitle}"
-			dependencies: ["306D009F01634115"]
 		}
 		{
+			x: -14.5d
+			y: 6.0d
+			shape: "rsquare"
+			subtitle: "{chapter.5.quest.19.subtitle}"
+			description: ["{chapter.5.quest.19.description.1}"]
+			dependencies: ["705C815541DB89F8"]
+			id: "22B29B232EF2638F"
 			tasks: [{
 				id: "0CB617B942B4D296"
 				type: "item"
 				item: "create:brass_casing"
 			}]
-			description: ["{chapter.5.quest.19.description.1}"]
-			x: -14.5d
-			id: "22B29B232EF2638F"
-			y: 6.0d
-			shape: "rsquare"
 			rewards: [{
 				id: "5133BA5D0280F8F9"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 2053519168689179764L
 			}]
-			subtitle: "{chapter.5.quest.19.subtitle}"
-			dependencies: ["705C815541DB89F8"]
 		}
 		{
-			size: 1.5d
-			description: ["{chapter.5.quest.20.description.1}"]
-			id: "6027602617EC9F1F"
+			title: "{chapter.5.quest.20.title}"
 			icon: "createdeco:black_decal"
 			x: -23.0d
 			y: 0.0d
-			title: "{chapter.5.quest.20.title}"
+			subtitle: "{chapter.5.quest.20.subtitle}"
+			description: ["{chapter.5.quest.20.description.1}"]
+			dependencies: ["306D009F01634115"]
+			size: 1.5d
+			id: "6027602617EC9F1F"
+			tasks: [{
+				id: "369624A3BE4061DF"
+				type: "structure"
+				title: "{chapter.5.quest.20.task.1.title}"
+				icon: "ad_astra:iron_plating"
+				structure: "incendium:pipeline"
+			}]
 			rewards: [{
 				id: "3E4944FC57F47F13"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 5253492355592689915L
 			}]
-			subtitle: "{chapter.5.quest.20.subtitle}"
-			dependencies: ["306D009F01634115"]
-			tasks: [{
-				type: "structure"
-				structure: "incendium:pipeline"
-				id: "369624A3BE4061DF"
-				icon: "ad_astra:iron_plating"
-				title: "{chapter.5.quest.20.task.1.title}"
-			}]
 		}
 		{
+			title: "{chapter.5.quest.21.title}"
+			x: -18.5d
+			y: -2.0d
+			subtitle: "{chapter.5.quest.21.subtitle}"
+			description: ["{chapter.5.quest.21.description.1}"]
+			hide_dependency_lines: true
+			dependencies: [
+				"306D009F01634115"
+				"1DFF76A494C9A586"
+			]
+			id: "1A08EE7C76242947"
 			tasks: [{
 				id: "3E55E8714C51E60E"
 				type: "item"
 				item: "create:lapis_sheet"
 			}]
-			description: ["{chapter.5.quest.21.description.1}"]
-			id: "1A08EE7C76242947"
-			x: -19.0d
-			y: -2.5d
-			title: "{chapter.5.quest.21.title}"
-			subtitle: "{chapter.5.quest.21.subtitle}"
-			dependencies: [
-				"306D009F01634115"
-				"1DFF76A494C9A586"
-			]
-			hide_dependency_lines: true
 		}
 		{
+			title: "{chapter.5.quest.22.title}"
+			x: -17.0d
+			y: -2.5d
+			subtitle: "{chapter.5.quest.22.subtitle}"
+			description: ["{chapter.5.quest.22.description.1}"]
+			dependencies: [
+				"1A08EE7C76242947"
+				"1DFF76A494C9A586"
+			]
+			id: "73973C5E6D2573B8"
 			tasks: [{
 				id: "05C23BCCCFD166F1"
 				type: "item"
 				item: "create:integrated_circuit"
 			}]
-			description: ["{chapter.5.quest.22.description.1}"]
-			id: "73973C5E6D2573B8"
-			x: -17.0d
-			y: -2.5d
-			title: "{chapter.5.quest.22.title}"
-			subtitle: "{chapter.5.quest.22.subtitle}"
-			dependencies: [
-				"1A08EE7C76242947"
-				"1DFF76A494C9A586"
-			]
 		}
 		{
+			title: "{chapter.5.quest.23.title}"
+			x: -17.0d
+			y: -3.5d
+			subtitle: "{chapter.5.quest.23.subtitle}"
+			description: ["{chapter.5.quest.23.description.1}"]
+			dependencies: ["1DFF76A494C9A586"]
+			id: "2E7D02CA77627EF5"
 			tasks: [{
 				id: "157F079AAECD588C"
 				type: "item"
 				item: "techreborn:basic_machine_frame"
 			}]
-			description: ["{chapter.5.quest.23.description.1}"]
-			id: "2E7D02CA77627EF5"
-			x: -17.0d
-			y: -3.5d
-			title: "{chapter.5.quest.23.title}"
 			rewards: [{
 				id: "15300B2E9B30E27F"
 				type: "item"
@@ -717,11 +687,11 @@
 					tag: {
 						Damage: 0
 						tic_stats: {
+							"tconstruct:attack_speed": 1.7600001f
+							"tconstruct:mining_speed": 4.07f
 							"tconstruct:attack_damage": 6.6000004f
 							"tconstruct:harvest_tier": "minecraft:diamond"
 							"tconstruct:durability": 246.40001f
-							"tconstruct:mining_speed": 4.07f
-							"tconstruct:attack_speed": 1.7600001f
 						}
 						tic_multipliers: {
 							"tconstruct:mining_speed": 0.5f
@@ -750,34 +720,34 @@
 					}
 				}
 			}]
-			subtitle: "{chapter.5.quest.23.subtitle}"
-			dependencies: ["1DFF76A494C9A586"]
 		}
 		{
+			title: "{chapter.5.quest.24.title}"
+			x: -15.5d
+			y: -4.5d
+			subtitle: "{chapter.5.quest.24.subtitle}"
+			description: ["{chapter.5.quest.24.description.1}"]
+			dependencies: ["229495414D7B7D5E"]
+			id: "19CCFE1A90B73F44"
 			tasks: [{
 				id: "5D4E64E2939D6A58"
 				type: "item"
 				item: "techreborn:red_cell_battery"
 			}]
-			description: ["{chapter.5.quest.24.description.1}"]
-			id: "19CCFE1A90B73F44"
-			x: -15.5d
-			y: -4.5d
-			title: "{chapter.5.quest.24.title}"
-			subtitle: "{chapter.5.quest.24.subtitle}"
-			dependencies: ["229495414D7B7D5E"]
 		}
 		{
+			title: "{chapter.5.quest.25.title}"
+			x: -12.0d
+			y: 0.5d
+			subtitle: "{chapter.5.quest.25.subtitle}"
+			description: ["{chapter.5.quest.25.description.1}"]
+			dependencies: ["61878C8DC870AC6A"]
+			id: "52EC8406E928BDB3"
 			tasks: [{
 				id: "7B8CE51F9D9A0633"
 				type: "item"
 				item: "techreborn:wire_mill"
 			}]
-			description: ["{chapter.5.quest.25.description.1}"]
-			id: "52EC8406E928BDB3"
-			x: -12.0d
-			y: 0.5d
-			title: "{chapter.5.quest.25.title}"
 			rewards: [
 				{
 					id: "4AFB9EADE2C8B21F"
@@ -808,40 +778,39 @@
 					table_id: 5253492355592689915L
 				}
 			]
-			subtitle: "{chapter.5.quest.25.subtitle}"
-			dependencies: ["61878C8DC870AC6A"]
 		}
 		{
+			title: "{chapter.5.quest.26.title}"
+			x: -12.0d
+			y: -0.5d
+			subtitle: "{chapter.5.quest.26.subtitle}"
+			description: ["{chapter.5.quest.26.description.1}"]
+			dependencies: ["752215E611021472"]
+			id: "61878C8DC870AC6A"
 			tasks: [{
 				id: "254AAF5B99A444A3"
 				type: "item"
 				item: "techreborn:extractor"
 			}]
-			description: ["{chapter.5.quest.26.description.1}"]
-			id: "61878C8DC870AC6A"
-			x: -12.0d
-			y: -0.5d
-			title: "{chapter.5.quest.26.title}"
 			rewards: [{
 				id: "7823FA55E09637B8"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 5253492355592689915L
 			}]
-			subtitle: "{chapter.5.quest.26.subtitle}"
-			dependencies: ["752215E611021472"]
 		}
 		{
+			title: "{chapter.5.quest.27.title}"
+			x: -5.5d
+			y: -2.5d
+			description: ["{chapter.5.quest.27.description.1}"]
+			dependencies: ["752215E611021472"]
+			id: "07B10625859F1AF9"
 			tasks: [{
 				id: "22E87A1C837C13D8"
 				type: "item"
 				item: "techreborn:compressor"
 			}]
-			description: ["{chapter.5.quest.27.description.1}"]
-			id: "07B10625859F1AF9"
-			x: -5.5d
-			y: -2.5d
-			title: "{chapter.5.quest.27.title}"
 			rewards: [{
 				id: "022D8D1430F0AEAD"
 				type: "item"
@@ -853,27 +822,20 @@
 					}
 				}
 			}]
-			dependencies: ["752215E611021472"]
 		}
 		{
-			size: 1.75d
-			description: ["{chapter.5.quest.28.description.1}"]
-			id: "57724BFDF0A78FAF"
-			x: 2.0d
+			title: "{chapter.5.quest.28.title}"
+			x: 3.0d
 			y: -4.5d
 			shape: "diamond"
-			title: "{chapter.5.quest.28.title}"
-			rewards: [{
-				id: "3D434E26EC91C3E3"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 5253492355592689915L
-			}]
 			subtitle: "{chapter.5.quest.28.subtitle}"
+			description: ["{chapter.5.quest.28.description.1}"]
 			dependencies: [
 				"1533B14714529386"
 				"22C043704EB6527C"
 			]
+			size: 1.75d
+			id: "57724BFDF0A78FAF"
 			tasks: [{
 				id: "6FDEEB9ACA45AA73"
 				type: "item"
@@ -886,50 +848,51 @@
 				}
 				count: 3L
 			}]
+			rewards: [{
+				id: "3D434E26EC91C3E3"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
+			}]
 		}
 		{
-			size: 1.5d
-			x: -15.5d
+			title: "{chapter.5.quest.29.title}"
 			icon: "createdeco:yellow_decal"
+			x: -15.5d
+			y: -2.5d
+			shape: "gear"
 			subtitle: "{chapter.5.quest.29.subtitle}"
+			description: ["{chapter.5.quest.29.description.1}"]
+			dependencies: [
+				"73973C5E6D2573B8"
+				"19CCFE1A90B73F44"
+				"2E7D02CA77627EF5"
+			]
+			size: 1.5d
 			min_required_tasks: 1
+			id: "5459F646B9A392C4"
 			tasks: [{
 				id: "29034D96D8AAF58D"
 				type: "item"
 				item: "createaddition:alternator"
 			}]
-			description: ["{chapter.5.quest.29.description.1}"]
-			id: "5459F646B9A392C4"
-			shape: "gear"
-			y: -2.5d
-			title: "{chapter.5.quest.29.title}"
 			rewards: [{
 				id: "56B2AAB30956853B"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 5253492355592689915L
 			}]
-			dependencies: [
-				"73973C5E6D2573B8"
-				"19CCFE1A90B73F44"
-				"2E7D02CA77627EF5"
-			]
 		}
 		{
-			size: 1.75d
-			description: ["{chapter.5.quest.30.description.1}"]
-			id: "752215E611021472"
+			title: "{chapter.5.quest.30.title}"
 			x: -10.5d
 			y: -2.5d
 			shape: "rsquare"
-			title: "{chapter.5.quest.30.title}"
-			rewards: [{
-				id: "1D210D89E1A57307"
-				type: "item"
-				item: "techreborn:manual"
-			}]
 			subtitle: "{chapter.5.quest.30.subtitle}"
+			description: ["{chapter.5.quest.30.description.1}"]
 			dependencies: ["5459F646B9A392C4"]
+			size: 1.75d
+			id: "752215E611021472"
 			tasks: [
 				{
 					id: "7EE6369103C1E25B"
@@ -942,16 +905,44 @@
 					type: "item"
 					item: "createaddition:copper_spool"
 				}
+				{
+					id: "1FE4FD6804CFFA00"
+					type: "item"
+					item: "createaddition:gold_spool"
+				}
 			]
+			rewards: [{
+				id: "1D210D89E1A57307"
+				type: "item"
+				item: "techreborn:manual"
+			}]
 		}
 		{
-			size: 5.0d
-			description: ["{chapter.5.quest.31.description.1}"]
-			id: "6E20B194F5CA8F22"
-			x: 2.0d
+			title: "{chapter.5.quest.31.title}"
+			x: 3.0d
 			y: 0.0d
 			shape: "circle"
-			title: "{chapter.5.quest.31.title}"
+			subtitle: "{chapter.5.quest.31.subtitle}"
+			description: ["{chapter.5.quest.31.description.1}"]
+			dependencies: [
+				"57724BFDF0A78FAF"
+				"44D51F142E9E8902"
+				"463D366C0BF340BF"
+				"74C57EAD8DD6C215"
+				"2B461CB27269D9CD"
+				"75CE520F392CC1E1"
+			]
+			size: 5.0d
+			id: "6E20B194F5CA8F22"
+			tasks: [{
+				id: "5125BCD5170B4867"
+				type: "item"
+				item: {
+					id: "ad_astra:tier_2_rocket"
+					Count: 1b
+					tag: { }
+				}
+			}]
 			rewards: [
 				{
 					id: "0BFEDA7609F5DF19"
@@ -972,151 +963,125 @@
 					count: 5
 				}
 			]
-			subtitle: "{chapter.5.quest.31.subtitle}"
-			dependencies: [
-				"1BF9656E9FBB2364"
-				"57724BFDF0A78FAF"
-				"44D51F142E9E8902"
-				"463D366C0BF340BF"
-			]
-			tasks: [{
-				id: "5125BCD5170B4867"
-				type: "item"
-				item: {
-					id: "ad_astra:tier_2_rocket"
-					Count: 1b
-					tag: { }
-				}
-			}]
 		}
 		{
-			size: 1.75d
-			description: ["{chapter.5.quest.32.description.1}"]
-			id: "1BF9656E9FBB2364"
+			title: "Rocket Fin Casting"
 			x: -2.5d
 			y: 1.5d
 			shape: "hexagon"
-			title: "{chapter.5.quest.32.title}"
+			subtitle: "Pour molten gold over a fragile fin to create a cast shape."
+			description: ["By casting the fragile fin, it will be ready to further process into a more stable material."]
+			dependencies: [
+				"0B6A23E35BDA5D6F"
+				"463D366C0BF340BF"
+			]
+			size: 1.75d
+			id: "1BF9656E9FBB2364"
+			tasks: [{
+				id: "716B541D6213E2E2"
+				type: "item"
+				item: "createastral:gold_casted_rocket_fin"
+			}]
 			rewards: [{
 				id: "3DC9D03B5D26899C"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 5253492355592689915L
 			}]
-			subtitle: "{chapter.5.quest.32.subtitle}"
-			dependencies: [
-				"75CE520F392CC1E1"
-				"3EA569DE4AC60CC2"
-				"463D366C0BF340BF"
-			]
-			tasks: [{
-				id: "21511A94B9A5AD53"
-				type: "item"
-				item: "ad_astra:nasa_workbench"
-			}]
 		}
 		{
-			tasks: [{
-				id: "3F18393BE5E50474"
-				type: "item"
-				item: "ad_astra:solar_panel"
-			}]
-			description: ["{chapter.5.quest.33.description.1}"]
-			id: "03F74AD3D7F6650E"
-			x: -3.5d
-			y: -1.0d
-			title: "{chapter.5.quest.33.title}"
-			subtitle: "{chapter.5.quest.33.subtitle}"
-			dependencies: [
-				"75CE520F392CC1E1"
-				"463D366C0BF340BF"
-			]
-		}
-		{
+			title: "{chapter.5.quest.34.title}"
+			x: -10.5d
+			y: -4.5d
+			subtitle: "{chapter.5.quest.34.subtitle}"
+			description: ["{chapter.5.quest.34.description.1}"]
+			dependencies: ["752215E611021472"]
+			optional: true
+			id: "64271E1245394C9A"
 			tasks: [{
 				id: "7B272C5C7E0B9420"
 				type: "checkmark"
 				title: "{chapter.5.quest.34.task.1.title}"
 			}]
-			description: ["{chapter.5.quest.34.description.1}"]
-			id: "64271E1245394C9A"
-			x: -10.5d
-			y: -4.5d
-			title: "{chapter.5.quest.34.title}"
-			subtitle: "{chapter.5.quest.34.subtitle}"
-			dependencies: ["752215E611021472"]
-			optional: true
 		}
 		{
+			title: "{chapter.5.quest.35.title}"
+			x: -1.5d
+			y: -1.0d
+			subtitle: "{chapter.5.quest.35.subtitle}"
+			description: ["{chapter.5.quest.35.description.1}"]
+			dependencies: ["55214095FAF22F42"]
+			id: "75CE520F392CC1E1"
 			tasks: [{
 				id: "6D255A3F6549F8EC"
 				type: "item"
 				item: "createastral:navigation_mechanism"
 			}]
-			description: ["{chapter.5.quest.35.description.1}"]
-			id: "75CE520F392CC1E1"
-			x: -4.5d
-			y: 0.0d
-			title: "{chapter.5.quest.35.title}"
-			subtitle: "{chapter.5.quest.35.subtitle}"
-			dependencies: ["55214095FAF22F42"]
 		}
 		{
+			title: "{chapter.5.quest.36.title}"
+			icon: "ad_astra:moon_desh_ore"
+			x: -23.5d
+			y: -5.5d
+			subtitle: "{chapter.5.quest.36.subtitle}"
+			description: ["{chapter.5.quest.36.description.1}"]
+			dependencies: ["306D009F01634115"]
+			dependency_requirement: "one_completed"
+			id: "59694D713430B333"
 			tasks: [{
 				id: "135C9606CF75069A"
 				type: "item"
 				item: "ad_astra:raw_desh"
 				count: 8L
 			}]
-			description: ["{chapter.5.quest.36.description.1}"]
-			id: "59694D713430B333"
-			icon: "ad_astra:moon_desh_ore"
-			x: -23.5d
-			y: -5.5d
-			title: "{chapter.5.quest.36.title}"
-			dependency_requirement: "one_completed"
-			subtitle: "{chapter.5.quest.36.subtitle}"
-			dependencies: ["306D009F01634115"]
 		}
 		{
-			size: 1.5d
-			description: ["{chapter.5.quest.37.description.1}"]
-			id: "63DCF596AAA9A232"
+			title: "{chapter.5.quest.37.title}"
 			icon: "ad_astra:mars_globe"
-			x: 5.5d
+			x: 6.5d
 			y: 0.0d
 			shape: "gear"
-			title: "{chapter.5.quest.37.title}"
-			rewards: [{
-				id: "366D5D5C7D2ABA53"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 5253492355592689915L
-			}]
-			dependencies: ["6E20B194F5CA8F22"]
 			subtitle: "{chapter.5.quest.37.subtitle}"
+			description: ["{chapter.5.quest.37.description.1}"]
+			dependencies: ["6E20B194F5CA8F22"]
+			size: 1.5d
+			id: "63DCF596AAA9A232"
 			tasks: [{
 				id: "16182598B074073D"
 				type: "dimension"
 				title: "{chapter.5.quest.37.task.1.title}"
 				dimension: "ad_astra:mars"
 			}]
+			rewards: [{
+				id: "366D5D5C7D2ABA53"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
+			}]
 		}
 		{
+			title: "{chapter.5.quest.38.title}"
+			x: -24.0d
+			y: -6.5d
+			subtitle: "{chapter.5.quest.38.subtitle}"
+			description: ["{chapter.5.quest.38.description.1}"]
+			dependencies: ["59694D713430B333"]
+			id: "5A8CB0CAB6E98321"
 			tasks: [{
 				id: "008BAD5CE1A2185E"
 				type: "item"
 				item: "ad_astra:oxygen_distributor"
 			}]
-			description: ["{chapter.5.quest.38.description.1}"]
-			id: "5A8CB0CAB6E98321"
-			x: -23.5d
-			y: -6.5d
-			title: "{chapter.5.quest.38.title}"
-			subtitle: "{chapter.5.quest.38.subtitle}"
-			dependencies: ["59694D713430B333"]
 		}
 		{
+			title: "{chapter.5.quest.39.title}"
+			x: -1.5d
+			y: 3.0d
+			subtitle: "{chapter.5.quest.39.subtitle}"
+			description: ["{chapter.5.quest.39.description.1}"]
+			dependencies: ["609BD6A99E34BB17"]
+			optional: true
+			id: "6AC13A0D339D57F4"
 			tasks: [
 				{
 					id: "18D1656A6C466458"
@@ -1129,57 +1094,57 @@
 					item: "techreborn:lamp_incandescent"
 				}
 			]
-			description: ["{chapter.5.quest.39.description.1}"]
-			id: "6AC13A0D339D57F4"
-			x: -1.5d
-			y: 3.0d
-			title: "{chapter.5.quest.39.title}"
-			subtitle: "{chapter.5.quest.39.subtitle}"
-			dependencies: ["609BD6A99E34BB17"]
-			optional: true
 		}
 		{
+			title: "{chapter.5.quest.40.title}"
+			x: -17.0d
+			y: -1.0d
+			subtitle: "{chapter.5.quest.40.subtitle}"
+			description: ["{chapter.5.quest.40.description.1}"]
+			dependencies: ["73973C5E6D2573B8"]
+			id: "0ADFE1D87DB51856"
 			tasks: [{
 				id: "75F20E3FC26D6824"
 				type: "item"
 				item: "techreborn:basic_storage_unit"
 			}]
-			description: ["{chapter.5.quest.40.description.1}"]
-			id: "0ADFE1D87DB51856"
-			x: -17.0d
-			y: -1.0d
-			title: "{chapter.5.quest.40.title}"
 			rewards: [{
 				id: "03284E024A33A23B"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 5253492355592689915L
 			}]
-			subtitle: "{chapter.5.quest.40.subtitle}"
-			dependencies: ["73973C5E6D2573B8"]
 		}
 		{
-			tasks: [{
-				type: "structure"
-				structure: "incendium:nether_reactor"
-				id: "7AA332BD2DA6428E"
-				icon: "chipped:yellow_concrete_19"
-				title: "{chapter.5.quest.41.task.1.title}"
-			}]
-			description: ["{chapter.5.quest.41.description.1}"]
-			id: "63C197DE5231155D"
+			title: "{chapter.5.quest.41.title}"
 			x: -24.5d
 			y: -5.0d
-			title: "{chapter.5.quest.41.title}"
+			subtitle: "{chapter.5.quest.41.subtitle}"
+			description: ["{chapter.5.quest.41.description.1}"]
+			dependencies: ["306D009F01634115"]
+			id: "63C197DE5231155D"
+			tasks: [{
+				id: "7AA332BD2DA6428E"
+				type: "structure"
+				title: "Find a Lunar Power Plant."
+				icon: "chipped:yellow_concrete_19"
+				structure: "astralrails:moon/powerplant"
+			}]
 			rewards: [{
 				id: "7463814688428D28"
 				type: "item"
 				item: "ad_astra:space_painting"
 			}]
-			subtitle: "{chapter.5.quest.41.subtitle}"
-			dependencies: ["306D009F01634115"]
 		}
 		{
+			title: "{chapter.5.quest.42.title}"
+			x: -27.5d
+			y: 8.5d
+			subtitle: "{chapter.5.quest.42.subtitle}"
+			description: ["{chapter.5.quest.42.description.1}"]
+			dependencies: ["5355CA2F0BA74BF1"]
+			optional: true
+			id: "1E83F62D325A44F2"
 			tasks: [
 				{
 					id: "485C131D88348C81"
@@ -1197,45 +1162,47 @@
 					item: "tconstruct:scorched_faucet"
 				}
 			]
-			description: ["{chapter.5.quest.42.description.1}"]
-			id: "1E83F62D325A44F2"
-			x: -27.5d
-			y: 8.5d
-			title: "{chapter.5.quest.42.title}"
 			rewards: [{
 				id: "2444A5675577B3EA"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 2053519168689179764L
 			}]
-			subtitle: "{chapter.5.quest.42.subtitle}"
-			dependencies: ["5355CA2F0BA74BF1"]
-			optional: true
 		}
 		{
-			tasks: [{
-				type: "item"
-				count: 16L
-				consume_items: false
-				id: "04FCFDAB24FECF45"
-				item: "create:scoria"
-			}]
-			description: ["{chapter.5.quest.43.description.1}"]
-			id: "0E59475F511DBCC7"
+			title: "{chapter.5.quest.43.title}"
 			x: -23.5d
 			y: 2.0d
-			title: "{chapter.5.quest.43.title}"
 			subtitle: "{chapter.5.quest.43.subtitle}"
+			description: ["{chapter.5.quest.43.description.1}"]
 			dependencies: ["6027602617EC9F1F"]
+			id: "0E59475F511DBCC7"
+			tasks: [{
+				id: "04FCFDAB24FECF45"
+				type: "item"
+				item: "create:scoria"
+				count: 16L
+				consume_items: false
+			}]
 		}
 		{
-			size: 1.5d
-			description: ["{chapter.5.quest.44.description.1}"]
-			id: "5355CA2F0BA74BF1"
+			title: "{chapter.5.quest.44.title}"
 			x: -25.0d
 			y: 7.0d
 			shape: "rsquare"
-			title: "{chapter.5.quest.44.title}"
+			subtitle: "{chapter.5.quest.44.subtitle}"
+			description: ["{chapter.5.quest.44.description.1}"]
+			dependencies: [
+				"1A7150A746855B4D"
+				"0BCFF062FD1518BF"
+			]
+			size: 1.5d
+			id: "5355CA2F0BA74BF1"
+			tasks: [{
+				id: "197ABEE39D155F79"
+				type: "item"
+				item: "tconstruct:foundry_controller"
+			}]
 			rewards: [
 				{
 					id: "12F30F55D695251B"
@@ -1248,30 +1215,25 @@
 					item: "tconstruct:fantastic_foundry"
 				}
 			]
-			subtitle: "{chapter.5.quest.44.subtitle}"
-			dependencies: [
-				"1A7150A746855B4D"
-				"0BCFF062FD1518BF"
-			]
-			tasks: [{
-				id: "197ABEE39D155F79"
-				type: "item"
-				item: "tconstruct:foundry_controller"
-			}]
 		}
 		{
+			x: -8.0d
+			y: 6.5d
+			dependencies: ["3EA569DE4AC60CC2"]
+			optional: true
+			id: "3B27F482BC8939A6"
 			tasks: [{
 				id: "551EF4577CB1944E"
 				type: "item"
 				item: "automobility:auto_mechanic_table"
 			}]
-			dependencies: ["3EA569DE4AC60CC2"]
-			id: "3B27F482BC8939A6"
-			y: 6.5d
-			x: -8.0d
-			optional: true
 		}
 		{
+			x: -8.0d
+			y: 7.5d
+			dependencies: ["3B27F482BC8939A6"]
+			optional: true
+			id: "12DFDA396C44D93D"
 			tasks: [
 				{
 					id: "43CFCA7DAA542B16"
@@ -1284,13 +1246,13 @@
 					item: "automobility:crowbar"
 				}
 			]
-			dependencies: ["3B27F482BC8939A6"]
-			id: "12DFDA396C44D93D"
-			y: 7.5d
-			x: -8.0d
-			optional: true
 		}
 		{
+			x: -7.0d
+			y: 7.5d
+			dependencies: ["3B27F482BC8939A6"]
+			optional: true
+			id: "5D0287CE6D3481CC"
 			tasks: [
 				{
 					id: "7C715B49FBC93970"
@@ -1303,26 +1265,30 @@
 					item: "automobility:launch_gel"
 				}
 			]
-			id: "5D0287CE6D3481CC"
-			x: -7.0d
-			y: 7.5d
 			rewards: [{
 				id: "7CA4AA84E6C7BF4E"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 5253492355592689915L
 			}]
-			dependencies: ["3B27F482BC8939A6"]
-			optional: true
 		}
 		{
+			title: "{chapter.5.quest.48.title}"
+			icon: "minecraft:redstone"
+			x: -6.5d
+			y: -2.0d
+			shape: "diamond"
+			subtitle: "{chapter.5.quest.48.subtitle}"
+			description: ["{chapter.5.quest.48.description.1}"]
+			dependencies: ["64A1C434EB7021E6"]
+			id: "512B5F1349E34457"
 			tasks: [
 				{
-					type: "item"
-					count: 512L
 					id: "2115F7EC251337A0"
-					item: "minecraft:redstone"
+					type: "item"
 					title: "{chapter.5.quest.48.task.1.title}"
+					item: "minecraft:redstone"
+					count: 512L
 				}
 				{
 					id: "6011B7411A8E3902"
@@ -1330,36 +1296,33 @@
 					item: "techreborn:synthetic_redstone_crystal"
 				}
 			]
-			description: ["{chapter.5.quest.48.description.1}"]
-			id: "512B5F1349E34457"
-			icon: "minecraft:redstone"
-			x: -6.5d
-			y: -2.0d
-			shape: "diamond"
-			title: "{chapter.5.quest.48.title}"
 			rewards: [{
 				id: "7421CB981E61C59C"
 				type: "xp"
 				xp: 100
 			}]
-			dependencies: ["64A1C434EB7021E6"]
-			subtitle: "{chapter.5.quest.48.subtitle}"
 		}
 		{
+			title: "{chapter.5.quest.49.title}"
+			x: -5.5d
+			y: -3.5d
+			subtitle: "{chapter.5.quest.49.subtitle}"
+			description: ["{chapter.5.quest.49.description.1}"]
+			dependencies: ["07B10625859F1AF9"]
+			id: "39DE2EF14165FB0A"
 			tasks: [{
 				id: "02F6BEA1478B6059"
 				type: "item"
 				item: "reinfchest:diamond_chest"
 			}]
-			description: ["{chapter.5.quest.49.description.1}"]
-			id: "39DE2EF14165FB0A"
-			x: -4.5d
-			y: -1.0d
-			title: "{chapter.5.quest.49.title}"
-			subtitle: "{chapter.5.quest.49.subtitle}"
-			dependencies: ["07B10625859F1AF9"]
 		}
 		{
+			title: "{chapter.5.quest.50.title}"
+			x: -25.0d
+			y: -4.0d
+			subtitle: "{chapter.5.quest.50.subtitle}"
+			dependencies: ["306D009F01634115"]
+			id: "661A93F58DBEFB8F"
 			tasks: [
 				{
 					id: "5F58EC85A04C70F4"
@@ -1402,10 +1365,6 @@
 					item: "ad_astra:desh_ingot"
 				}
 			]
-			id: "661A93F58DBEFB8F"
-			x: -25.0d
-			y: -4.0d
-			title: "{chapter.5.quest.50.title}"
 			rewards: [
 				{
 					id: "2907DB37ADDB8AE2"
@@ -1419,10 +1378,19 @@
 					table_id: 5253492355592689915L
 				}
 			]
-			subtitle: "{chapter.5.quest.50.subtitle}"
-			dependencies: ["306D009F01634115"]
 		}
 		{
+			title: "{chapter.5.quest.51.title}"
+			x: 5.5d
+			y: -2.5d
+			shape: "circle"
+			subtitle: "{chapter.5.quest.51.subtitle}"
+			description: [
+				"{chapter.5.quest.51.description.1}"
+				"&6You might be even able to find some structures from a time before us...&r"
+			]
+			dependencies: ["6E20B194F5CA8F22"]
+			id: "47A155F9CAD19710"
 			tasks: [
 				{
 					id: "5B9178A6D6E78EDC"
@@ -1449,12 +1417,6 @@
 					count: 32L
 				}
 			]
-			description: ["{chapter.5.quest.51.description.1}"]
-			id: "47A155F9CAD19710"
-			x: 4.5d
-			y: -2.5d
-			shape: "circle"
-			title: "{chapter.5.quest.51.title}"
 			rewards: [
 				{
 					id: "1B8C730BF479F42F"
@@ -1473,10 +1435,17 @@
 					table_id: 5253492355592689915L
 				}
 			]
-			subtitle: "{chapter.5.quest.51.subtitle}"
-			dependencies: ["6E20B194F5CA8F22"]
 		}
 		{
+			title: "{chapter.5.quest.52.title}"
+			icon: "createaddition:seed_oil_bucket"
+			x: -4.0d
+			y: -6.0d
+			shape: "diamond"
+			subtitle: "{chapter.5.quest.52.subtitle}"
+			description: ["{chapter.5.quest.52.description.1}"]
+			dependencies: ["4C59011F80601279"]
+			id: "494F84A10D6934E7"
 			tasks: [
 				{
 					id: "428441742E5CD542"
@@ -1496,22 +1465,23 @@
 					}
 				}
 			]
-			description: ["{chapter.5.quest.52.description.1}"]
-			id: "494F84A10D6934E7"
-			icon: "createaddition:seed_oil_bucket"
-			x: -4.0d
-			y: -6.0d
-			shape: "diamond"
-			title: "{chapter.5.quest.52.title}"
 			rewards: [{
 				id: "4BBAEC49C8261FFC"
 				type: "item"
 				item: "farmersdelight:hamburger"
 			}]
-			dependencies: ["4C59011F80601279"]
-			subtitle: "{chapter.5.quest.52.subtitle}"
 		}
 		{
+			title: "{chapter.5.quest.53.title}"
+			x: -4.0d
+			y: -5.0d
+			shape: "diamond"
+			subtitle: "{chapter.5.quest.53.subtitle}"
+			description: ["{chapter.5.quest.53.description.1}"]
+			min_required_dependencies: 1
+			dependencies: ["4C59011F80601279"]
+			min_required_tasks: 1
+			id: "5B11C7CE6EF9FB2E"
 			tasks: [
 				{
 					id: "624F8EE22AB2B55B"
@@ -1538,183 +1508,125 @@
 					}
 				}
 			]
-			description: ["{chapter.5.quest.53.description.1}"]
-			id: "5B11C7CE6EF9FB2E"
-			min_required_dependencies: 1
-			x: -4.0d
-			y: -5.0d
-			shape: "diamond"
-			title: "{chapter.5.quest.53.title}"
-			dependencies: ["4C59011F80601279"]
-			subtitle: "{chapter.5.quest.53.subtitle}"
-			min_required_tasks: 1
 		}
 		{
+			title: "{chapter.5.quest.54.title}"
+			x: -2.5d
+			y: -5.5d
+			subtitle: "{chapter.5.quest.54.subtitle}"
+			description: ["{chapter.5.quest.54.description.1}"]
+			dependencies: [
+				"5B11C7CE6EF9FB2E"
+				"494F84A10D6934E7"
+			]
+			id: "5CD6C6CA30CA50F0"
 			tasks: [{
 				id: "61FAD1BFF5CC15A5"
 				type: "item"
 				item: "techreborn:plantball"
 			}]
-			description: ["{chapter.5.quest.54.description.1}"]
-			id: "5CD6C6CA30CA50F0"
-			x: -2.5d
-			y: -5.5d
-			title: "{chapter.5.quest.54.title}"
-			subtitle: "{chapter.5.quest.54.subtitle}"
-			dependencies: [
-				"5B11C7CE6EF9FB2E"
-				"494F84A10D6934E7"
-			]
 		}
 		{
+			title: "{chapter.5.quest.55.title}"
+			x: -0.5d
+			y: -4.5d
+			subtitle: "{chapter.5.quest.55.subtitle}"
+			description: ["{chapter.5.quest.55.description.1}"]
+			dependencies: [
+				"59C1BBC3C57A277A"
+				"07B10625859F1AF9"
+			]
+			id: "232F25F6D9BFC2F5"
 			tasks: [{
 				id: "387350F56B1AE2E9"
 				type: "item"
 				item: "createaddition:biomass"
 			}]
-			description: ["{chapter.5.quest.55.description.1}"]
-			id: "232F25F6D9BFC2F5"
-			x: -0.5d
-			y: -4.5d
-			title: "{chapter.5.quest.55.title}"
 			rewards: [{
 				id: "2A803048D7FC87BD"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 5253492355592689915L
 			}]
-			subtitle: "{chapter.5.quest.55.subtitle}"
-			dependencies: [
-				"59C1BBC3C57A277A"
-				"07B10625859F1AF9"
-			]
 		}
 		{
+			title: "{chapter.5.quest.56.title}"
+			x: -0.5d
+			y: -5.875d
+			shape: "diamond"
+			subtitle: "{chapter.5.quest.56.subtitle}"
+			description: ["{chapter.5.quest.56.description.1}"]
+			dependencies: ["232F25F6D9BFC2F5"]
+			optional: true
+			id: "0AF6740D30DD0D65"
 			tasks: [{
 				id: "4A594487727583A6"
 				type: "item"
 				item: "createaddition:biomass_pellet"
 				count: 16L
 			}]
-			description: ["{chapter.5.quest.56.description.1}"]
-			id: "0AF6740D30DD0D65"
-			x: -0.5d
-			y: -5.875d
-			shape: "diamond"
-			title: "{chapter.5.quest.56.title}"
 			rewards: [{
 				id: "6B2D5BE81396A8C9"
 				type: "item"
 				item: "createaddition:biomass_pellet"
 				count: 32
 			}]
-			subtitle: "{chapter.5.quest.56.subtitle}"
-			dependencies: ["232F25F6D9BFC2F5"]
-			optional: true
 		}
 		{
-			tasks: [
-				{
-					id: "0B7212B1ECE573DA"
-					type: "item"
-					item: "gearreborn:hazmat_helmet"
-				}
-				{
-					id: "1389D891058D9693"
-					type: "item"
-					item: "gearreborn:hazmat_chestpiece"
-				}
-				{
-					id: "4AFB367A8FA3323B"
-					type: "item"
-					item: "gearreborn:hazmat_leggings"
-				}
-				{
-					id: "41BA3389E338B21A"
-					type: "item"
-					item: {
-						id: "gearreborn:rubber_boots"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
-			description: ["{chapter.5.quest.57.description.1}"]
-			id: "6B07593DD5128CAD"
-			x: -15.5d
-			y: -5.5d
-			title: "{chapter.5.quest.57.title}"
-			rewards: [{
-				id: "43421D408922854C"
-				type: "item"
-				item: "create:brass_hand"
-				count: 6
-			}]
-			subtitle: "{chapter.5.quest.57.subtitle}"
-			dependencies: ["19CCFE1A90B73F44"]
-		}
-		{
-			tasks: [
-				{
-					type: "biome"
-					biome: "ad_astra:lunar_wastelands"
-					id: "380B63DBA28F27EA"
-					icon: "ad_astra:moon_sand"
-					title: "{chapter.5.quest.58.task.1.title}"
-				}
-				{
-					type: "biome"
-					biome: "minecraft:basalt_deltas"
-					id: "24A51F3747706B79"
-					icon: "minecraft:basalt"
-					title: "{chapter.5.quest.58.task.2.title}"
-				}
-				{
-					type: "biome"
-					biome: "incendium:toxic_heap"
-					id: "48A492F6EF687D38"
-					icon: "createdeco:black_decal"
-					title: "{chapter.5.quest.58.task.3.title}"
-				}
-			]
-			id: "582C723B2F261D68"
+			title: "{chapter.5.quest.58.title}"
 			x: -22.5d
 			y: -5.5d
-			title: "{chapter.5.quest.58.title}"
+			dependencies: ["306D009F01634115"]
+			id: "582C723B2F261D68"
+			tasks: [
+				{
+					id: "380B63DBA28F27EA"
+					type: "biome"
+					title: "{chapter.5.quest.58.task.1.title}"
+					icon: "ad_astra:moon_sand"
+					biome: "ad_astra:lunar_wastelands"
+				}
+				{
+					id: "24A51F3747706B79"
+					type: "biome"
+					title: "{chapter.5.quest.58.task.2.title}"
+					icon: "minecraft:basalt"
+					biome: "minecraft:basalt_deltas"
+				}
+			]
 			rewards: [{
 				id: "2E55D7C30850C291"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 5253492355592689915L
 			}]
-			dependencies: ["306D009F01634115"]
 		}
 		{
+			x: -6.5d
+			y: -1.0d
+			subtitle: "{chapter.5.quest.59.subtitle}"
+			description: ["{chapter.5.quest.59.description.1}"]
+			dependencies: ["752215E611021472"]
+			id: "64A1C434EB7021E6"
 			tasks: [{
 				id: "737900DAE146D8DB"
 				type: "item"
 				item: "createaddition:tesla_coil"
 			}]
-			description: ["{chapter.5.quest.59.description.1}"]
-			id: "64A1C434EB7021E6"
-			x: -6.5d
-			y: -1.0d
-			subtitle: "{chapter.5.quest.59.subtitle}"
-			dependencies: ["752215E611021472"]
 		}
 		{
+			title: "{chapter.5.quest.60.title}"
+			x: -19.0d
+			y: 6.0d
+			subtitle: "{chapter.5.quest.60.subtitle}"
+			description: ["{chapter.5.quest.60.description.1}"]
+			dependencies: ["705C815541DB89F8"]
+			id: "042CE6F6D7A67F42"
 			tasks: [{
 				id: "061ED1DE7269F77A"
 				type: "item"
 				item: "create:brass_funnel"
 			}]
-			description: ["{chapter.5.quest.60.description.1}"]
-			id: "042CE6F6D7A67F42"
-			x: -19.0d
-			y: 6.0d
-			title: "{chapter.5.quest.60.title}"
 			rewards: [{
 				id: "4AC9D7F012D6BCB5"
 				type: "item"
@@ -1727,20 +1639,20 @@
 				}
 				count: 2
 			}]
-			subtitle: "{chapter.5.quest.60.subtitle}"
-			dependencies: ["705C815541DB89F8"]
 		}
 		{
+			title: "{chapter.5.quest.61.title}"
+			x: -20.0d
+			y: 6.0d
+			subtitle: "{chapter.5.quest.61.subtitle}"
+			description: ["{chapter.5.quest.61.description.1}"]
+			dependencies: ["705C815541DB89F8"]
+			id: "0A29C0657D13CD49"
 			tasks: [{
 				id: "74E982CE65ABDD13"
 				type: "item"
 				item: "create:brass_tunnel"
 			}]
-			description: ["{chapter.5.quest.61.description.1}"]
-			id: "0A29C0657D13CD49"
-			x: -20.0d
-			y: 6.0d
-			title: "{chapter.5.quest.61.title}"
 			rewards: [{
 				id: "371393C1B82BA930"
 				type: "item"
@@ -1753,19 +1665,19 @@
 				}
 				count: 2
 			}]
-			subtitle: "{chapter.5.quest.61.subtitle}"
-			dependencies: ["705C815541DB89F8"]
 		}
 		{
+			x: -20.0d
+			y: 5.0d
+			subtitle: "{chapter.5.quest.62.subtitle}"
+			description: ["{chapter.5.quest.62.description.1}"]
+			dependencies: ["705C815541DB89F8"]
+			id: "50200A5256D99A82"
 			tasks: [{
 				id: "2286C02D047702E3"
 				type: "item"
 				item: "create:smart_chute"
 			}]
-			description: ["{chapter.5.quest.62.description.1}"]
-			id: "50200A5256D99A82"
-			x: -20.0d
-			y: 5.0d
 			rewards: [
 				{
 					id: "3024BFA6335C05F8"
@@ -1786,19 +1698,22 @@
 					table_id: 2053519168689179764L
 				}
 			]
-			subtitle: "{chapter.5.quest.62.subtitle}"
-			dependencies: ["705C815541DB89F8"]
 		}
 		{
+			x: -15.0d
+			y: 5.0d
+			subtitle: "{chapter.5.quest.63.subtitle}"
+			description: ["{chapter.5.quest.63.description.1}"]
+			dependencies: [
+				"22B29B232EF2638F"
+				"21DBCD51CC35B794"
+			]
+			id: "7A4AA66066CF8EF7"
 			tasks: [{
 				id: "521594861390E17F"
 				type: "item"
 				item: "create:mechanical_arm"
 			}]
-			description: ["{chapter.5.quest.63.description.1}"]
-			id: "7A4AA66066CF8EF7"
-			x: -15.0d
-			y: 5.0d
 			rewards: [
 				{
 					id: "6F404ECD3383B0B5"
@@ -1813,65 +1728,67 @@
 					table_id: 5253492355592689915L
 				}
 			]
-			subtitle: "{chapter.5.quest.63.subtitle}"
+		}
+		{
+			title: "{chapter.5.quest.64.title}"
+			x: -14.0d
+			y: 5.0d
+			subtitle: "{chapter.5.quest.64.subtitle}"
+			description: ["{chapter.5.quest.64.description.1}"]
 			dependencies: [
 				"22B29B232EF2638F"
 				"21DBCD51CC35B794"
 			]
-		}
-		{
+			id: "098E962DEAE94DFC"
 			tasks: [{
 				id: "438ECFB50910D913"
 				type: "item"
 				item: "create:rotation_speed_controller"
 			}]
-			description: ["{chapter.5.quest.64.description.1}"]
-			id: "098E962DEAE94DFC"
-			x: -14.0d
-			y: 5.0d
-			title: "{chapter.5.quest.64.title}"
 			rewards: [{
 				id: "64B4205ED5F7B052"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 5253492355592689915L
 			}]
-			subtitle: "{chapter.5.quest.64.subtitle}"
-			dependencies: [
-				"22B29B232EF2638F"
-				"21DBCD51CC35B794"
-			]
 		}
 		{
+			title: "{chapter.5.quest.65.title}"
+			x: -15.0d
+			y: 8.0d
+			subtitle: "{chapter.5.quest.65.subtitle}"
+			description: ["{chapter.5.quest.65.description.1}"]
+			dependencies: ["22B29B232EF2638F"]
+			id: "71D8CE5E35BE1389"
 			tasks: [{
 				id: "76505FAFF55FA94F"
 				type: "item"
 				item: "create:redstone_link"
 				count: 2L
 			}]
-			description: ["{chapter.5.quest.65.description.1}"]
-			id: "71D8CE5E35BE1389"
-			x: -15.0d
-			y: 8.0d
-			title: "{chapter.5.quest.65.title}"
-			subtitle: "{chapter.5.quest.65.subtitle}"
-			dependencies: ["22B29B232EF2638F"]
 		}
 		{
+			x: -13.0d
+			y: 8.0d
+			shape: "gear"
+			subtitle: "{chapter.5.quest.66.subtitle}"
+			description: ["{chapter.5.quest.66.description.1}"]
+			dependencies: ["0873D71412D52F18"]
+			id: "1D294F2F189410BD"
 			tasks: [{
 				id: "0C573B0469B99101"
 				type: "item"
 				item: "create:stockpile_switch"
 			}]
-			description: ["{chapter.5.quest.66.description.1}"]
-			x: -13.0d
-			id: "1D294F2F189410BD"
-			y: 8.0d
-			shape: "gear"
-			subtitle: "{chapter.5.quest.66.subtitle}"
-			dependencies: ["0873D71412D52F18"]
 		}
 		{
+			title: "{chapter.5.quest.67.title}"
+			x: -14.0d
+			y: 8.0d
+			subtitle: "{chapter.5.quest.67.subtitle}"
+			description: ["{chapter.5.quest.67.description.1}"]
+			dependencies: ["22B29B232EF2638F"]
+			id: "0F8E22F275728521"
 			tasks: [
 				{
 					id: "2AA4AE11D36C4B4E"
@@ -1884,77 +1801,77 @@
 					item: "create:display_link"
 				}
 			]
-			description: ["{chapter.5.quest.67.description.1}"]
-			id: "0F8E22F275728521"
-			x: -14.0d
-			y: 8.0d
-			title: "{chapter.5.quest.67.title}"
-			subtitle: "{chapter.5.quest.67.subtitle}"
-			dependencies: ["22B29B232EF2638F"]
 		}
 		{
+			title: "{chapter.5.quest.68.title}"
+			x: -16.0d
+			y: 7.0d
+			subtitle: "{chapter.5.quest.68.subtitle}"
+			description: ["{chapter.5.quest.68.description.1}"]
+			dependencies: ["22B29B232EF2638F"]
+			id: "0EDFECC97E44B508"
 			tasks: [{
 				id: "247D868F3B1A8BD3"
 				type: "item"
 				item: "create:sequenced_gearshift"
 			}]
-			description: ["{chapter.5.quest.68.description.1}"]
-			id: "0EDFECC97E44B508"
-			x: -16.0d
-			y: 7.0d
-			title: "{chapter.5.quest.68.title}"
 			rewards: [{
 				id: "017CBDDF50D8DA58"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 5687404501397719867L
 			}]
-			subtitle: "{chapter.5.quest.68.subtitle}"
-			dependencies: ["22B29B232EF2638F"]
 		}
 		{
+			title: "{chapter.5.quest.69.title}"
+			x: -9.0d
+			y: -0.5d
+			shape: "rsquare"
+			subtitle: "{chapter.5.quest.69.subtitle}"
+			description: ["{chapter.5.quest.69.description.1}"]
+			dependencies: ["752215E611021472"]
+			id: "2F7F41E1C9C7F7B3"
 			tasks: [{
 				id: "3FBA5658ECE0C4AE"
 				type: "item"
 				item: "techreborn:grinder"
 			}]
-			description: ["{chapter.5.quest.69.description.1}"]
-			id: "2F7F41E1C9C7F7B3"
-			x: -9.0d
-			y: -0.5d
-			shape: "rsquare"
-			title: "{chapter.5.quest.69.title}"
-			subtitle: "{chapter.5.quest.69.subtitle}"
-			dependencies: ["752215E611021472"]
 		}
 		{
+			x: -13.0d
+			y: 7.0d
+			subtitle: "{chapter.5.quest.70.subtitle}"
+			description: ["{chapter.5.quest.70.description.1}"]
+			dependencies: ["22B29B232EF2638F"]
+			id: "0873D71412D52F18"
 			tasks: [{
 				id: "39CD77A35EB1ABBD"
 				type: "item"
 				item: "create:content_observer"
 			}]
-			description: ["{chapter.5.quest.70.description.1}"]
-			id: "0873D71412D52F18"
-			x: -13.0d
-			y: 7.0d
-			subtitle: "{chapter.5.quest.70.subtitle}"
-			dependencies: ["22B29B232EF2638F"]
 		}
 		{
+			title: "{chapter.5.quest.71.title}"
+			x: -17.0d
+			y: -4.5d
+			subtitle: "{chapter.5.quest.71.subtitle}"
+			description: ["{chapter.5.quest.71.description.1}"]
+			dependencies: ["1DFF76A494C9A586"]
+			id: "229495414D7B7D5E"
 			tasks: [{
 				id: "3C22F3628F0B5488"
 				type: "item"
 				item: "techreborn:silver_plate"
 			}]
-			description: ["{chapter.5.quest.71.description.1}"]
-			id: "229495414D7B7D5E"
-			x: -17.0d
-			y: -4.5d
-			title: "{chapter.5.quest.71.title}"
-			subtitle: "{chapter.5.quest.71.subtitle}"
-			dependencies: ["1DFF76A494C9A586"]
 		}
 		{
+			x: 3.0d
+			y: -6.0d
+			subtitle: "{chapter.5.quest.72.subtitle}"
+			description: ["{chapter.5.quest.72.description.1}"]
+			hide_dependency_lines: true
+			dependencies: ["752215E611021472"]
+			id: "22C043704EB6527C"
 			tasks: [
 				{
 					id: "48FDF6884D0D37E1"
@@ -1967,15 +1884,15 @@
 					item: "techreborn:cell"
 				}
 			]
-			description: ["{chapter.5.quest.72.description.1}"]
-			id: "22C043704EB6527C"
-			x: 2.0d
-			y: -6.0d
-			subtitle: "{chapter.5.quest.72.subtitle}"
-			dependencies: ["752215E611021472"]
-			hide_dependency_lines: true
 		}
 		{
+			title: "{chapter.5.quest.73.title}"
+			x: -17.0d
+			y: 7.0d
+			subtitle: "{chapter.5.quest.73.subtitle}"
+			description: ["{chapter.5.quest.73.description.1}"]
+			dependencies: ["0EDFECC97E44B508"]
+			id: "6A008BEB9C5F456C"
 			tasks: [
 				{
 					id: "033C73549FA1C041"
@@ -1988,29 +1905,29 @@
 					item: "create:gantry_shaft"
 				}
 			]
-			description: ["{chapter.5.quest.73.description.1}"]
-			id: "6A008BEB9C5F456C"
-			x: -17.0d
-			y: 7.0d
-			title: "{chapter.5.quest.73.title}"
-			subtitle: "{chapter.5.quest.73.subtitle}"
-			dependencies: ["0EDFECC97E44B508"]
 		}
 		{
+			title: "{chapter.5.quest.74.title}"
+			x: -17.0d
+			y: 8.0d
+			subtitle: "{chapter.5.quest.74.subtitle}"
+			description: ["{chapter.5.quest.74.description.1}"]
+			dependencies: ["0EDFECC97E44B508"]
+			id: "5261F7129457E4BD"
 			tasks: [{
 				id: "6FCE8742879DAAE1"
 				type: "item"
 				item: "create:rope_pulley"
 			}]
-			description: ["{chapter.5.quest.74.description.1}"]
-			id: "5261F7129457E4BD"
-			x: -17.0d
-			y: 8.0d
-			title: "{chapter.5.quest.74.title}"
-			subtitle: "{chapter.5.quest.74.subtitle}"
-			dependencies: ["0EDFECC97E44B508"]
 		}
 		{
+			title: "{chapter.5.quest.75.title}"
+			x: -16.0d
+			y: 8.0d
+			subtitle: "{chapter.5.quest.75.subtitle}"
+			description: ["{chapter.5.quest.75.description.1}"]
+			dependencies: ["0EDFECC97E44B508"]
+			id: "1B2B6C73281EAD26"
 			tasks: [
 				{
 					id: "4417AFCF9E34DBE6"
@@ -2023,25 +1940,18 @@
 					item: "create:sticky_mechanical_piston"
 				}
 			]
-			description: ["{chapter.5.quest.75.description.1}"]
-			id: "1B2B6C73281EAD26"
-			x: -16.0d
-			y: 8.0d
-			title: "{chapter.5.quest.75.title}"
-			subtitle: "{chapter.5.quest.75.subtitle}"
-			dependencies: ["0EDFECC97E44B508"]
 		}
 		{
-			size: 1.5d
-			description: ["{chapter.5.quest.76.description.1}"]
-			id: "4C59011F80601279"
+			title: "{chapter.5.quest.76.title}"
 			x: -5.5d
 			y: -5.5d
 			shape: "pentagon"
-			title: "{chapter.5.quest.76.title}"
-			dependencies: ["306D009F01634115"]
 			subtitle: "{chapter.5.quest.76.subtitle}"
+			description: ["{chapter.5.quest.76.description.1}"]
 			hide_dependency_lines: true
+			dependencies: ["306D009F01634115"]
+			size: 1.5d
+			id: "4C59011F80601279"
 			tasks: [{
 				id: "62E96FF6DC6FD344"
 				type: "checkmark"
@@ -2049,36 +1959,38 @@
 			}]
 		}
 		{
+			title: "{chapter.5.quest.77.title}"
+			x: -2.5d
+			y: -2.0d
+			shape: "hexagon"
+			subtitle: "{chapter.5.quest.77.subtitle}"
+			description: ["{chapter.5.quest.77.description.1}"]
+			dependencies: ["07B10625859F1AF9"]
+			id: "463D366C0BF340BF"
 			tasks: [{
 				id: "2E20D62841A10DD6"
 				type: "item"
 				item: "ad_astra:desh_plate"
 			}]
-			description: ["{chapter.5.quest.77.description.1}"]
-			id: "463D366C0BF340BF"
-			x: -2.5d
-			y: -2.0d
-			shape: "hexagon"
-			title: "{chapter.5.quest.77.title}"
 			rewards: [{
 				id: "0700AB7F45551184"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 5253492355592689915L
 			}]
-			subtitle: "{chapter.5.quest.77.subtitle}"
-			dependencies: ["07B10625859F1AF9"]
 		}
 		{
+			x: -5.0d
+			y: -1.0d
+			subtitle: "{chapter.5.quest.78.subtitle}"
+			description: ["{chapter.5.quest.78.description.1}"]
+			dependencies: ["64A1C434EB7021E6"]
+			id: "55214095FAF22F42"
 			tasks: [{
 				id: "0276F73188BF69D0"
 				type: "item"
 				item: "tconstruct:molten_electrum_bucket"
 			}]
-			description: ["{chapter.5.quest.78.description.1}"]
-			id: "55214095FAF22F42"
-			x: -5.5d
-			y: -0.5d
 			rewards: [
 				{
 					id: "365574D8751A7E34"
@@ -2093,149 +2005,148 @@
 					table_id: 5253492355592689915L
 				}
 			]
-			subtitle: "{chapter.5.quest.78.subtitle}"
-			dependencies: ["64A1C434EB7021E6"]
 		}
 		{
+			x: -22.5d
+			y: 2.0d
+			subtitle: "{chapter.5.quest.79.subtitle}"
+			description: ["{chapter.5.quest.79.description.1}"]
+			dependencies: ["6027602617EC9F1F"]
+			id: "129A16584F8B0BFE"
 			tasks: [{
 				id: "2DC99A19ECDEA2A4"
 				type: "item"
 				item: "minecraft:magma_cream"
 			}]
-			description: ["{chapter.5.quest.79.description.1}"]
-			id: "129A16584F8B0BFE"
-			x: -22.5d
-			y: 2.0d
-			subtitle: "{chapter.5.quest.79.subtitle}"
-			dependencies: ["6027602617EC9F1F"]
 		}
 		{
-			tasks: [{
-				id: "44C49E675068A654"
-				type: "item"
-				item: "tconstruct:nether_grout"
-			}]
-			description: ["{chapter.5.quest.80.description.1}"]
-			id: "7372E223FCD34128"
 			x: -23.0d
 			y: 4.0d
 			subtitle: "{chapter.5.quest.80.subtitle}"
+			description: ["{chapter.5.quest.80.description.1}"]
 			dependencies: [
 				"0E59475F511DBCC7"
 				"129A16584F8B0BFE"
 				"51BD31261A5725E3"
 				"20BFF582275C31C8"
 			]
+			id: "7372E223FCD34128"
+			tasks: [{
+				id: "44C49E675068A654"
+				type: "item"
+				item: "tconstruct:nether_grout"
+			}]
 		}
 		{
+			x: -23.0d
+			y: 5.0d
+			subtitle: "{chapter.5.quest.81.subtitle}"
+			description: ["{chapter.5.quest.81.description.1}"]
+			dependencies: ["7372E223FCD34128"]
+			id: "11AF7F7CE0940C06"
 			tasks: [{
 				id: "0E9EDE52F2262B4F"
 				type: "item"
 				item: "tconstruct:scorched_brick"
 			}]
-			description: ["{chapter.5.quest.81.description.1}"]
-			id: "11AF7F7CE0940C06"
-			x: -23.0d
-			y: 5.0d
-			subtitle: "{chapter.5.quest.81.subtitle}"
-			dependencies: ["7372E223FCD34128"]
 		}
 		{
+			x: -25.0d
+			y: 5.0d
+			subtitle: "{chapter.5.quest.82.subtitle}"
+			description: ["{chapter.5.quest.82.description.1}"]
+			dependencies: ["11AF7F7CE0940C06"]
+			id: "1A7150A746855B4D"
 			tasks: [{
 				id: "285D283636EFB86A"
 				type: "item"
 				item: "tconstruct:scorched_bricks"
 				count: 24L
 			}]
-			description: ["{chapter.5.quest.82.description.1}"]
-			id: "1A7150A746855B4D"
-			x: -25.0d
-			y: 5.0d
 			rewards: [{
 				id: "45293067CB0594D3"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 5253492355592689915L
 			}]
-			subtitle: "{chapter.5.quest.82.subtitle}"
-			dependencies: ["11AF7F7CE0940C06"]
 		}
 		{
+			title: "{chapter.5.quest.83.title}"
+			x: -27.5d
+			y: 6.5d
+			subtitle: "{chapter.5.quest.83.subtitle}"
+			description: ["{chapter.5.quest.83.description.1}"]
+			dependencies: ["5355CA2F0BA74BF1"]
+			id: "5AFABBFC63D9558E"
 			tasks: [{
 				id: "7EBC53644B89038F"
 				type: "item"
 				item: "tconstruct:scorched_chute"
 			}]
-			description: ["{chapter.5.quest.83.description.1}"]
-			id: "5AFABBFC63D9558E"
-			x: -27.5d
-			y: 6.5d
-			title: "{chapter.5.quest.83.title}"
 			rewards: [{
 				id: "42E58A9066A0A65F"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 2053519168689179764L
 			}]
-			subtitle: "{chapter.5.quest.83.subtitle}"
-			dependencies: ["5355CA2F0BA74BF1"]
 		}
 		{
+			title: "{chapter.5.quest.84.title}"
+			x: -27.5d
+			y: 5.5d
+			subtitle: "{chapter.5.quest.84.subtitle}"
+			description: ["{chapter.5.quest.84.description.1}"]
+			dependencies: ["5355CA2F0BA74BF1"]
+			id: "645BE27FEDB3FE29"
 			tasks: [{
 				id: "2EBA2303556ED7FF"
 				type: "item"
 				item: "tconstruct:scorched_drain"
 			}]
-			description: ["{chapter.5.quest.84.description.1}"]
-			id: "645BE27FEDB3FE29"
-			x: -27.5d
-			y: 5.5d
-			title: "{chapter.5.quest.84.title}"
 			rewards: [{
 				id: "0E4BDEBF81FA652A"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 2053519168689179764L
 			}]
-			subtitle: "{chapter.5.quest.84.subtitle}"
-			dependencies: ["5355CA2F0BA74BF1"]
 		}
 		{
-			tasks: [
-				title: "Any Scorched Tank"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "tconstruct:scorched_fuel_tank"
-								Count: 1b
-							}
-							{
-								id: "tconstruct:scorched_fuel_gauge"
-								Count: 1b
-							}
-						]
-					}
-				}
-			]
-			description: ["{chapter.5.quest.85.description.1}"]
-			min_required_dependencies: 1
-			id: "0BCFF062FD1518BF"
+			title: "{chapter.5.quest.85.title}"
 			x: -23.0d
 			y: 7.0d
-			title: "{chapter.5.quest.85.title}"
+			subtitle: "{chapter.5.quest.85.subtitle}"
+			description: ["{chapter.5.quest.85.description.1}"]
+			min_required_dependencies: 1
+			dependencies: ["11AF7F7CE0940C06"]
+			id: "0BCFF062FD1518BF"
+			tasks: [
+				{
+					id: "3967A624C03BA62B"
+					type: "item"
+					item: "tconstruct:scorched_fuel_tank"
+				}
+				{
+					id: "3F799EF56B42E640"
+					type: "item"
+					item: "tconstruct:scorched_fuel_gauge"
+				}
+			]
 			rewards: [{
 				id: "1725B6D56E7EA1C3"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 5253492355592689915L
 			}]
-			subtitle: "{chapter.5.quest.85.subtitle}"
-			dependencies: ["11AF7F7CE0940C06"]
 		}
 		{
+			title: "{chapter.5.quest.86.title}"
+			x: -27.5d
+			y: 7.5d
+			subtitle: "{chapter.5.quest.86.subtitle}"
+			description: ["{chapter.5.quest.86.description.1}"]
+			dependencies: ["5355CA2F0BA74BF1"]
+			optional: true
+			id: "29F408CC74D53405"
 			tasks: [
 				{
 					id: "3444EFD7AE7D52F6"
@@ -2248,22 +2159,21 @@
 					item: "tconstruct:scorched_glass"
 				}
 			]
-			description: ["{chapter.5.quest.86.description.1}"]
-			id: "29F408CC74D53405"
-			x: -27.5d
-			y: 7.5d
-			title: "{chapter.5.quest.86.title}"
 			rewards: [{
 				id: "03E40ADF3D537711"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 2053519168689179764L
 			}]
-			subtitle: "{chapter.5.quest.86.subtitle}"
-			dependencies: ["5355CA2F0BA74BF1"]
-			optional: true
 		}
 		{
+			title: "{chapter.5.quest.87.title}"
+			x: -10.0d
+			y: -0.5d
+			subtitle: "{chapter.5.quest.87.subtitle}"
+			description: ["{chapter.5.quest.87.description.1}"]
+			dependencies: ["2F7F41E1C9C7F7B3"]
+			id: "01F2D498CB3CC2BB"
 			tasks: [
 				{
 					id: "470042735C2A533C"
@@ -2290,56 +2200,58 @@
 					count: 32L
 				}
 			]
-			description: ["{chapter.5.quest.87.description.1}"]
-			id: "01F2D498CB3CC2BB"
-			x: -10.0d
-			y: -0.5d
-			title: "{chapter.5.quest.87.title}"
 			rewards: [{
 				id: "671B8D8451219BB3"
 				type: "xp"
 				xp: 50
 			}]
-			subtitle: "{chapter.5.quest.87.subtitle}"
-			dependencies: ["2F7F41E1C9C7F7B3"]
 		}
 		{
+			title: "{chapter.5.quest.88.title}"
+			x: -24.5d
+			y: 2.0d
+			subtitle: "{chapter.5.quest.88.subtitle}"
+			description: ["{chapter.5.quest.88.description.1}"]
+			dependencies: ["6027602617EC9F1F"]
+			id: "20BFF582275C31C8"
 			tasks: [{
 				id: "2D8C1B3C2C879043"
 				type: "item"
 				item: "minecraft:soul_soil"
 				count: 16L
 			}]
-			description: ["{chapter.5.quest.88.description.1}"]
-			id: "20BFF582275C31C8"
-			x: -24.5d
-			y: 2.0d
-			title: "{chapter.5.quest.88.title}"
-			subtitle: "{chapter.5.quest.88.subtitle}"
-			dependencies: ["6027602617EC9F1F"]
 		}
 		{
+			title: "{chapter.5.quest.89.title}"
+			x: -27.5d
+			y: 2.0d
+			shape: "gear"
+			subtitle: "{chapter.5.quest.89.subtitle}"
+			description: ["{chapter.5.quest.89.description.1}"]
+			dependencies: ["20BFF582275C31C8"]
+			id: "072FC342FAE44F38"
 			tasks: [{
 				id: "7D08C2F8EA085D3B"
 				type: "item"
 				item: "minecraft:soul_campfire"
 			}]
-			description: ["{chapter.5.quest.89.description.1}"]
-			id: "072FC342FAE44F38"
-			x: -27.5d
-			y: 2.0d
-			shape: "gear"
-			title: "{chapter.5.quest.89.title}"
 			rewards: [{
 				id: "3D99B29D0BABB364"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 2053519168689179764L
 			}]
-			subtitle: "{chapter.5.quest.89.subtitle}"
-			dependencies: ["20BFF582275C31C8"]
 		}
 		{
+			title: "{chapter.5.quest.90.title}"
+			x: -25.5d
+			y: 9.0d
+			shape: "diamond"
+			subtitle: "{chapter.5.quest.90.subtitle}"
+			description: ["{chapter.5.quest.90.description.1}"]
+			dependencies: ["5355CA2F0BA74BF1"]
+			optional: true
+			id: "78370C1AE832CBF1"
 			tasks: [
 				{
 					id: "2D9E5085CC306B2A"
@@ -2354,34 +2266,27 @@
 					count: 64L
 				}
 			]
-			description: ["{chapter.5.quest.90.description.1}"]
-			id: "78370C1AE832CBF1"
-			x: -25.5d
-			y: 9.0d
-			shape: "diamond"
-			title: "{chapter.5.quest.90.title}"
 			rewards: [{
 				id: "2289F95267A44346"
 				type: "xp"
 				xp: 100
 			}]
-			subtitle: "{chapter.5.quest.90.subtitle}"
-			dependencies: ["5355CA2F0BA74BF1"]
-			optional: true
 		}
 		{
+			title: "{chapter.5.quest.91.title}"
+			x: -24.5d
+			y: 9.0d
+			shape: "diamond"
+			subtitle: "{chapter.5.quest.91.subtitle}"
+			description: ["{chapter.5.quest.91.description.1}"]
+			dependencies: ["5355CA2F0BA74BF1"]
+			id: "221861F3A1C4C3B8"
 			tasks: [{
 				id: "5BDEA31879A81061"
 				type: "item"
 				item: "minecraft:blaze_rod"
 				count: 256L
 			}]
-			description: ["{chapter.5.quest.91.description.1}"]
-			id: "221861F3A1C4C3B8"
-			x: -24.5d
-			y: 9.0d
-			shape: "diamond"
-			title: "{chapter.5.quest.91.title}"
 			rewards: [
 				{
 					id: "450F604021FB005C"
@@ -2394,22 +2299,22 @@
 					item: "tconstruct:blaze_head"
 				}
 			]
-			subtitle: "{chapter.5.quest.91.subtitle}"
-			dependencies: ["5355CA2F0BA74BF1"]
 		}
 		{
+			title: "{chapter.5.quest.92.title}"
+			x: -28.5d
+			y: 3.0d
+			shape: "diamond"
+			subtitle: "{chapter.5.quest.92.subtitle}"
+			description: ["{chapter.5.quest.92.description.1}"]
+			dependencies: ["072FC342FAE44F38"]
+			id: "0813FC54B6D7F235"
 			tasks: [{
 				id: "4B13E44C378834F5"
 				type: "item"
 				item: "minecraft:gold_nugget"
 				count: 512L
 			}]
-			description: ["{chapter.5.quest.92.description.1}"]
-			id: "0813FC54B6D7F235"
-			x: -28.5d
-			y: 3.0d
-			shape: "diamond"
-			title: "{chapter.5.quest.92.title}"
 			rewards: [
 				{
 					id: "7D36C2F4E2E52B93"
@@ -2422,10 +2327,16 @@
 					item: "minecraft:enchanted_golden_apple"
 				}
 			]
-			subtitle: "{chapter.5.quest.92.subtitle}"
-			dependencies: ["072FC342FAE44F38"]
 		}
 		{
+			title: "{chapter.5.quest.93.title}"
+			x: -29.0d
+			y: 2.0d
+			subtitle: "{chapter.5.quest.93.subtitle}"
+			description: ["{chapter.5.quest.93.description.1}"]
+			dependencies: ["072FC342FAE44F38"]
+			optional: true
+			id: "47130960FB5806A9"
 			tasks: [
 				{
 					id: "2C3778A72EB57BB5"
@@ -2453,11 +2364,6 @@
 					item: "minecraft:prismarine_shard"
 				}
 			]
-			description: ["{chapter.5.quest.93.description.1}"]
-			id: "47130960FB5806A9"
-			x: -29.0d
-			y: 2.0d
-			title: "{chapter.5.quest.93.title}"
 			rewards: [
 				{
 					id: "03625B5D50B2BD01"
@@ -2472,11 +2378,15 @@
 					table_id: 2053519168689179764L
 				}
 			]
-			subtitle: "{chapter.5.quest.93.subtitle}"
-			dependencies: ["072FC342FAE44F38"]
-			optional: true
 		}
 		{
+			x: -28.5d
+			y: 1.0d
+			subtitle: "{chapter.5.quest.94.subtitle}"
+			description: ["{chapter.5.quest.94.description.1}"]
+			dependencies: ["072FC342FAE44F38"]
+			optional: true
+			id: "1ABEB66BBE3FC979"
 			tasks: [
 				{
 					id: "71D03AEAF112BA77"
@@ -2489,22 +2399,25 @@
 					item: "create:peculiar_bell"
 				}
 			]
-			description: ["{chapter.5.quest.94.description.1}"]
-			id: "1ABEB66BBE3FC979"
-			x: -28.5d
-			y: 1.0d
-			subtitle: "{chapter.5.quest.94.subtitle}"
-			dependencies: ["072FC342FAE44F38"]
-			optional: true
 		}
 		{
+			title: "{chapter.5.quest.95.title}"
+			icon: "minecraft:lapis_lazuli"
+			x: -5.0d
+			y: 6.5d
+			shape: "diamond"
+			subtitle: "{chapter.5.quest.95.subtitle}"
+			description: ["{chapter.5.quest.95.description.1}"]
+			dependencies: ["429D2340C2B20A60"]
+			optional: true
+			id: "3FA9591D6D79371F"
 			tasks: [
 				{
-					type: "item"
-					count: 512L
 					id: "7760579AE96D168D"
-					item: "minecraft:lapis_lazuli"
+					type: "item"
 					title: "{chapter.5.quest.95.task.1.title}"
+					item: "minecraft:lapis_lazuli"
+					count: 512L
 				}
 				{
 					id: "56ED83A39EB3063A"
@@ -2512,36 +2425,28 @@
 					item: "techreborn:lazurite_dust"
 				}
 			]
-			description: ["{chapter.5.quest.95.description.1}"]
-			id: "3FA9591D6D79371F"
-			icon: "minecraft:lapis_lazuli"
-			x: -5.0d
-			y: 6.5d
-			shape: "diamond"
-			title: "{chapter.5.quest.95.title}"
 			rewards: [{
 				id: "0EAA5F4610ACA831"
 				type: "item"
 				item: "create:integrated_circuit"
 				count: 16
 			}]
-			dependencies: ["429D2340C2B20A60"]
-			subtitle: "{chapter.5.quest.95.subtitle}"
-			optional: true
 		}
 		{
+			title: "{chapter.5.quest.96.title}"
+			x: -4.5d
+			y: 3.5d
+			shape: "diamond"
+			subtitle: "{chapter.5.quest.96.subtitle}"
+			description: ["{chapter.5.quest.96.description.1}"]
+			dependencies: ["429D2340C2B20A60"]
+			id: "71E3E5B94A8B7FE3"
 			tasks: [{
 				id: "3CF45A65B2FAF358"
 				type: "item"
 				item: "minecraft:sand"
 				count: 256L
 			}]
-			description: ["{chapter.5.quest.96.description.1}"]
-			id: "71E3E5B94A8B7FE3"
-			x: -4.5d
-			y: 3.5d
-			shape: "diamond"
-			title: "{chapter.5.quest.96.title}"
 			rewards: [
 				{
 					id: "19D69140A45EB73C"
@@ -2555,26 +2460,32 @@
 					count: 512
 				}
 			]
-			subtitle: "{chapter.5.quest.96.subtitle}"
-			dependencies: ["429D2340C2B20A60"]
 		}
 		{
+			title: "{chapter.5.quest.97.title}"
+			x: -4.0d
+			y: 6.5d
+			shape: "diamond"
+			subtitle: "{chapter.5.quest.97.subtitle}"
+			description: ["{chapter.5.quest.97.description.1}"]
+			dependencies: ["429D2340C2B20A60"]
+			optional: true
+			id: "6061158DA0E09D13"
 			tasks: [{
 				id: "395597019B7DD9FE"
 				type: "item"
 				item: "techreborn:netherrack_dust"
 			}]
-			description: ["{chapter.5.quest.97.description.1}"]
-			id: "6061158DA0E09D13"
-			x: -4.0d
-			y: 6.5d
-			shape: "diamond"
-			title: "{chapter.5.quest.97.title}"
-			subtitle: "{chapter.5.quest.97.subtitle}"
-			dependencies: ["429D2340C2B20A60"]
-			optional: true
 		}
 		{
+			title: "{chapter.5.quest.98.title}"
+			x: -4.5d
+			y: 7.0d
+			shape: "diamond"
+			subtitle: "{chapter.5.quest.98.subtitle}"
+			description: ["{chapter.5.quest.98.description.1}"]
+			dependencies: ["429D2340C2B20A60"]
+			id: "7C29C95E2F7AAA62"
 			tasks: [
 				{
 					id: "5EABFAE314360894"
@@ -2588,12 +2499,6 @@
 					item: "createastral:lime"
 				}
 			]
-			description: ["{chapter.5.quest.98.description.1}"]
-			id: "7C29C95E2F7AAA62"
-			x: -4.5d
-			y: 7.0d
-			shape: "diamond"
-			title: "{chapter.5.quest.98.title}"
 			rewards: [
 				{
 					id: "430C317CBA16B993"
@@ -2613,10 +2518,16 @@
 					count: 3
 				}
 			]
-			subtitle: "{chapter.5.quest.98.subtitle}"
-			dependencies: ["429D2340C2B20A60"]
 		}
 		{
+			title: "{chapter.5.quest.99.title}"
+			x: -25.5d
+			y: 3.0d
+			shape: "diamond"
+			description: ["{chapter.5.quest.99.description.1}"]
+			dependencies: ["20BFF582275C31C8"]
+			optional: true
+			id: "3EFFCF29981E3159"
 			tasks: [
 				{
 					id: "670E344F88BD7685"
@@ -2630,12 +2541,6 @@
 					item: "minecraft:blue_ice"
 				}
 			]
-			description: ["{chapter.5.quest.99.description.1}"]
-			id: "3EFFCF29981E3159"
-			x: -25.5d
-			y: 3.0d
-			shape: "diamond"
-			title: "{chapter.5.quest.99.title}"
 			rewards: [
 				{
 					id: "14D072CD91245774"
@@ -2649,46 +2554,27 @@
 					table_id: 2053519168689179764L
 				}
 			]
-			dependencies: ["20BFF582275C31C8"]
-			optional: true
 		}
 		{
-			tasks: [{
-				id: "763C057A2FC69246"
-				type: "item"
-				item: "techreborn:chunk_loader"
-			}]
-			description: ["{chapter.5.quest.100.description.1}"]
-			id: "063D2171F5FC0407"
-			x: -5.5d
-			y: -1.5d
-			shape: "gear"
-			title: "{chapter.5.quest.100.title}"
-			rewards: [{
-				id: "0C660FEF88D5DF59"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 5253492355592689915L
-			}]
-			subtitle: "{chapter.5.quest.100.subtitle}"
-			dependencies: [
-				"07B10625859F1AF9"
-				"55214095FAF22F42"
-			]
-		}
-		{
+			x: -11.0d
+			y: 6.5d
+			subtitle: "{chapter.5.quest.101.subtitle}"
+			dependencies: ["3EA569DE4AC60CC2"]
+			id: "0E295989064E5992"
 			tasks: [{
 				id: "4D56A458CCF11F20"
 				type: "item"
 				item: "polaroidcamera:camera"
 			}]
-			dependencies: ["3EA569DE4AC60CC2"]
-			subtitle: "{chapter.5.quest.101.subtitle}"
-			id: "0E295989064E5992"
-			y: 6.5d
-			x: -11.0d
 		}
 		{
+			title: "{chapter.5.quest.102.title}"
+			x: -8.5d
+			y: 3.5d
+			subtitle: "{chapter.5.quest.102.subtitle}"
+			description: ["Take note of what new recipes are available to make in the near-future by viewing all &6Mechanical Crafting&r recipes in REI!"]
+			dependencies: ["3EA569DE4AC60CC2"]
+			id: "0C82B8A57B80C9DE"
 			tasks: [
 				{
 					id: "24849C9FB7372894"
@@ -2724,81 +2610,82 @@
 					}
 				}
 				{
-					id: "222B1A2D9BED790D"
+					id: "515A99EB28EBCF0C"
 					type: "item"
-					item: "doodads:ender_goggles"
+					item: {
+						id: "astraladditions:chromatic_vacuum"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
 				}
 			]
-			description: ["{chapter.5.quest.102.description.1}"]
-			id: "0C82B8A57B80C9DE"
-			x: -8.5d
-			y: 3.5d
-			title: "{chapter.5.quest.102.title}"
 			rewards: [{
 				id: "1BD24E5929C25272"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 5253492355592689915L
 			}]
-			subtitle: "{chapter.5.quest.102.subtitle}"
-			dependencies: ["3EA569DE4AC60CC2"]
 		}
 		{
+			title: "{chapter.5.quest.103.title}"
+			x: -1.5d
+			y: 4.0d
+			subtitle: "Don't ingest this, it ain't coal coke."
+			description: ["{chapter.5.quest.103.description.1}"]
+			dependencies: ["2F7F41E1C9C7F7B3"]
+			id: "609BD6A99E34BB17"
 			tasks: [{
 				id: "76C4CB8EF9714566"
 				type: "item"
 				item: "techreborn:coal_dust"
 			}]
-			description: ["{chapter.5.quest.103.description.1}"]
-			id: "609BD6A99E34BB17"
-			x: -1.5d
-			y: 4.0d
-			title: "{chapter.5.quest.103.title}"
-			subtitle: "{chapter.5.quest.103.subtitle}"
-			dependencies: ["2F7F41E1C9C7F7B3"]
 		}
 		{
+			title: "{chapter.5.quest.104.title}"
+			x: -0.5d
+			y: 4.0d
+			subtitle: "{chapter.5.quest.104.subtitle}"
+			description: ["{chapter.5.quest.104.description.1}"]
+			dependencies: ["609BD6A99E34BB17"]
+			id: "70FE485B4505AC81"
 			tasks: [{
 				id: "36A4C8C59770F890"
 				type: "item"
 				item: "techreborn:steel_dust"
 			}]
-			description: ["{chapter.5.quest.104.description.1}"]
-			id: "70FE485B4505AC81"
-			x: -0.5d
-			y: 4.0d
-			title: "{chapter.5.quest.104.title}"
-			subtitle: "{chapter.5.quest.104.subtitle}"
-			dependencies: ["609BD6A99E34BB17"]
 		}
 		{
+			title: "{chapter.5.quest.105.title}"
+			x: -0.5d
+			y: 5.0d
+			subtitle: "{chapter.5.quest.105.subtitle}"
+			description: ["{chapter.5.quest.105.description.1}"]
+			dependencies: [
+				"70FE485B4505AC81"
+				"49BE333EAC6260C8"
+			]
+			id: "65DED861096175C2"
 			tasks: [{
 				id: "6EAE447DF0EF949F"
 				type: "item"
 				item: "kubejs:blast-resistant_cement_bucket"
 			}]
-			description: ["{chapter.5.quest.105.description.1}"]
-			id: "65DED861096175C2"
-			x: -0.5d
-			y: 5.0d
-			title: "{chapter.5.quest.105.title}"
-			subtitle: "{chapter.5.quest.105.subtitle}"
-			dependencies: [
-				"70FE485B4505AC81"
-				"49BE333EAC6260C8"
-			]
 		}
 		{
+			x: 0.5d
+			y: 5.0d
+			subtitle: "{chapter.5.quest.106.subtitle}"
+			description: ["{chapter.5.quest.106.description.1}"]
+			dependencies: ["65DED861096175C2"]
+			id: "62C959AC63DD2A89"
 			tasks: [{
 				id: "2D8437605F091BEF"
 				type: "item"
 				item: "createastral:blast-resistant_concrete"
 				count: 16L
 			}]
-			description: ["{chapter.5.quest.106.description.1}"]
-			id: "62C959AC63DD2A89"
-			x: 0.5d
-			y: 5.0d
 			rewards: [{
 				id: "498DCE4281AF6E58"
 				type: "item"
@@ -2813,36 +2700,36 @@
 					}
 				}
 			}]
-			subtitle: "{chapter.5.quest.106.subtitle}"
-			dependencies: ["65DED861096175C2"]
 		}
 		{
+			title: "{chapter.5.quest.107.title}"
+			x: -23.0d
+			y: 8.5d
+			subtitle: "{chapter.5.quest.107.subtitle}"
+			description: ["{chapter.5.quest.107.description.1}"]
+			dependencies: ["5355CA2F0BA74BF1"]
+			id: "18FFC172467B68B7"
 			tasks: [{
 				id: "0ECBA864EB1C9CAC"
 				type: "checkmark"
 				title: "{chapter.5.quest.107.task.1.title}"
 			}]
-			description: ["{chapter.5.quest.107.description.1}"]
-			id: "18FFC172467B68B7"
-			x: -23.0d
-			y: 8.5d
-			title: "{chapter.5.quest.107.title}"
-			subtitle: "{chapter.5.quest.107.subtitle}"
-			dependencies: ["5355CA2F0BA74BF1"]
 		}
 		{
+			title: "{chapter.5.quest.108.title}"
+			x: -16.0d
+			y: -1.0d
+			shape: "diamond"
+			subtitle: "{chapter.5.quest.108.subtitle}"
+			description: ["{chapter.5.quest.108.description.1}"]
+			dependencies: ["73973C5E6D2573B8"]
+			id: "470ACBBCC340FB4D"
 			tasks: [{
 				id: "5596269BD1E2AECB"
 				type: "item"
 				item: "create:integrated_circuit"
 				count: 128L
 			}]
-			description: ["{chapter.5.quest.108.description.1}"]
-			id: "470ACBBCC340FB4D"
-			x: -16.0d
-			y: -1.0d
-			shape: "diamond"
-			title: "{chapter.5.quest.108.title}"
 			rewards: [
 				{
 					id: "68A76C9ADA4291BC"
@@ -2856,24 +2743,30 @@
 					table_id: 5253492355592689915L
 				}
 			]
-			subtitle: "{chapter.5.quest.108.subtitle}"
-			dependencies: ["73973C5E6D2573B8"]
 		}
 		{
+			title: "{chapter.5.quest.109.title}"
+			x: -14.5d
+			y: -3.5d
+			subtitle: "{chapter.5.quest.109.subtitle}"
+			description: ["{chapter.5.quest.109.description.1}"]
+			dependencies: ["5459F646B9A392C4"]
+			id: "5FED52E4F6F60F6A"
 			tasks: [{
 				id: "653A6DB16D35B8DB"
 				type: "item"
 				item: "createaddition:electric_motor"
 			}]
-			description: ["{chapter.5.quest.109.description.1}"]
-			id: "5FED52E4F6F60F6A"
-			x: -14.5d
-			y: -3.5d
-			title: "{chapter.5.quest.109.title}"
-			subtitle: "{chapter.5.quest.109.subtitle}"
-			dependencies: ["5459F646B9A392C4"]
 		}
 		{
+			title: "{chapter.5.quest.110.title}"
+			x: -10.0d
+			y: 0.5d
+			subtitle: "{chapter.5.quest.110.subtitle}"
+			description: ["{chapter.5.quest.110.description.1}"]
+			dependencies: ["2F7F41E1C9C7F7B3"]
+			optional: true
+			id: "7A172AD294C44DB5"
 			tasks: [{
 				id: "3764FB2BBA9B333B"
 				type: "item"
@@ -2885,68 +2778,65 @@
 					}
 				}
 			}]
-			description: ["{chapter.5.quest.110.description.1}"]
-			id: "7A172AD294C44DB5"
-			x: -10.0d
-			y: 0.5d
-			title: "{chapter.5.quest.110.title}"
 			rewards: [{
 				id: "26686C23B03EEB7E"
 				type: "item"
 				item: "create:rose_quartz"
 			}]
-			subtitle: "{chapter.5.quest.110.subtitle}"
-			dependencies: ["2F7F41E1C9C7F7B3"]
-			optional: true
 		}
 		{
+			title: "{chapter.5.quest.111.title}"
+			x: -9.0d
+			y: 0.5d
+			subtitle: "{chapter.5.quest.111.subtitle}"
+			description: ["{chapter.5.quest.111.description.1}"]
+			dependencies: ["2F7F41E1C9C7F7B3"]
+			id: "425F51268D51FC3A"
 			tasks: [{
 				id: "5724EB0FABAA69EB"
 				type: "item"
 				item: "minecraft:gunpowder"
 				count: 32L
 			}]
-			description: ["{chapter.5.quest.111.description.1}"]
-			id: "425F51268D51FC3A"
-			x: -9.0d
-			y: 0.5d
-			title: "{chapter.5.quest.111.title}"
 			rewards: [{
 				id: "2F78DBA49E5FFDB1"
 				type: "item"
 				item: "minecraft:tnt"
 				count: 8
 			}]
-			subtitle: "{chapter.5.quest.111.subtitle}"
-			dependencies: ["2F7F41E1C9C7F7B3"]
 		}
 		{
+			title: "{chapter.5.quest.112.title}"
+			x: -1.5d
+			y: 5.0d
+			description: ["{chapter.5.quest.112.description.1}"]
+			dependencies: ["429D2340C2B20A60"]
+			id: "49BE333EAC6260C8"
 			tasks: [{
 				id: "71C443166BBF2710"
 				type: "item"
 				item: "createastral:lime"
 			}]
-			description: ["{chapter.5.quest.112.description.1}"]
-			id: "49BE333EAC6260C8"
-			x: -1.5d
-			y: 5.0d
-			title: "{chapter.5.quest.112.title}"
-			dependencies: ["429D2340C2B20A60"]
 		}
 		{
-			tasks: [{
-				type: "item"
-				count: 256L
-				id: "1CB04A67ECFD96FD"
-				item: "create:sturdy_sheet"
-				title: "{chapter.5.quest.113.task.1.title}"
-			}]
-			description: ["{chapter.5.quest.113.description.1}"]
-			id: "6FB5805264D88AC4"
+			title: "{chapter.5.quest.113.title}"
 			x: -25.0d
 			y: 10.0d
 			shape: "diamond"
-			title: "{chapter.5.quest.113.title}"
+			subtitle: "{chapter.5.quest.113.subtitle}"
+			description: ["{chapter.5.quest.113.description.1}"]
+			dependencies: [
+				"78370C1AE832CBF1"
+				"221861F3A1C4C3B8"
+			]
+			id: "6FB5805264D88AC4"
+			tasks: [{
+				id: "1CB04A67ECFD96FD"
+				type: "item"
+				title: "{chapter.5.quest.113.task.1.title}"
+				item: "create:sturdy_sheet"
+				count: 256L
+			}]
 			rewards: [
 				{
 					id: "3EC3C7977ABCFFF2"
@@ -2972,13 +2862,16 @@
 					count: 6
 				}
 			]
-			subtitle: "{chapter.5.quest.113.subtitle}"
-			dependencies: [
-				"78370C1AE832CBF1"
-				"221861F3A1C4C3B8"
-			]
 		}
 		{
+			title: "{chapter.5.quest.114.title}"
+			x: -9.5d
+			y: -5.5d
+			subtitle: "{chapter.5.quest.114.subtitle}"
+			description: ["{chapter.5.quest.114.description.1}"]
+			min_required_dependencies: 1
+			dependencies: ["64271E1245394C9A"]
+			id: "7E53F7BA6BCA166B"
 			tasks: [
 				{
 					id: "0E7A27C6A8635B9F"
@@ -2991,44 +2884,43 @@
 					item: "techreborn:basic_jackhammer"
 				}
 			]
-			description: ["{chapter.5.quest.114.description.1}"]
-			min_required_dependencies: 1
-			id: "7E53F7BA6BCA166B"
-			x: -9.5d
-			y: -5.5d
-			title: "{chapter.5.quest.114.title}"
-			subtitle: "{chapter.5.quest.114.subtitle}"
-			dependencies: ["64271E1245394C9A"]
 		}
 		{
+			title: "{chapter.5.quest.115.title}"
+			x: -12.0d
+			y: -4.5d
+			subtitle: "{chapter.5.quest.115.subtitle}"
+			description: ["{chapter.5.quest.115.description.1}"]
+			dependencies: ["64271E1245394C9A"]
+			id: "54106852E46435FA"
 			tasks: [{
 				id: "657D5635D2A31BCC"
 				type: "item"
 				item: "techreborn:basic_chainsaw"
 			}]
-			description: ["{chapter.5.quest.115.description.1}"]
-			id: "54106852E46435FA"
-			x: -12.0d
-			y: -4.5d
-			title: "{chapter.5.quest.115.title}"
-			subtitle: "{chapter.5.quest.115.subtitle}"
-			dependencies: ["64271E1245394C9A"]
 		}
 		{
+			title: "{chapter.5.quest.116.title}"
+			x: -9.0d
+			y: -4.5d
+			subtitle: "{chapter.5.quest.116.subtitle}"
+			description: ["{chapter.5.quest.116.description.1}"]
+			dependencies: ["64271E1245394C9A"]
+			id: "7E5C46C5D079B23D"
 			tasks: [{
 				id: "78AF5D1C2CAE6920"
 				type: "item"
 				item: "techreborn:electric_treetap"
 			}]
-			description: ["{chapter.5.quest.116.description.1}"]
-			id: "7E5C46C5D079B23D"
-			x: -9.0d
-			y: -4.5d
-			title: "{chapter.5.quest.116.title}"
-			subtitle: "{chapter.5.quest.116.subtitle}"
-			dependencies: ["64271E1245394C9A"]
 		}
 		{
+			title: "{chapter.5.quest.117.title}"
+			x: -11.5d
+			y: -5.5d
+			subtitle: "{chapter.5.quest.117.subtitle}"
+			description: ["{chapter.5.quest.117.description.1}"]
+			dependencies: ["64271E1245394C9A"]
+			id: "38AE3052E5BBBED7"
 			tasks: [{
 				id: "44CEA189E79D7B09"
 				type: "item"
@@ -3043,52 +2935,53 @@
 					}
 				}
 			}]
-			description: ["{chapter.5.quest.117.description.1}"]
-			id: "38AE3052E5BBBED7"
-			x: -11.5d
-			y: -5.5d
-			title: "{chapter.5.quest.117.title}"
-			subtitle: "{chapter.5.quest.117.subtitle}"
-			dependencies: ["64271E1245394C9A"]
 		}
 		{
-			tasks: [{
-				id: "75A559502846E25E"
-				type: "item"
-				item: "createaddition:modular_accumulator"
-			}]
-			description: ["{chapter.5.quest.118.description.1}"]
-			id: "6642B2F9BB8E20E6"
+			title: "{chapter.5.quest.118.title}"
 			x: -11.0d
 			y: 0.5d
-			title: "{chapter.5.quest.118.title}"
 			subtitle: "{chapter.5.quest.118.subtitle}"
+			description: ["{chapter.5.quest.118.description.1}"]
 			dependencies: [
 				"752215E611021472"
 				"3EA569DE4AC60CC2"
 			]
+			id: "6642B2F9BB8E20E6"
+			tasks: [{
+				id: "5A6975A55C303A95"
+				type: "item"
+				item: "createaddition:modular_accumulator"
+			}]
 		}
 		{
+			title: "{chapter.5.quest.119.title}"
+			x: -10.5d
+			y: -6.0d
+			subtitle: "{chapter.5.quest.119.subtitle}"
+			description: ["{chapter.5.quest.119.description.1}"]
+			dependencies: ["64271E1245394C9A"]
+			id: "7FF635D31674DBBA"
 			tasks: [{
 				id: "79DB2B717FA7CD02"
 				type: "item"
 				item: "techreborn:low_voltage_su"
 			}]
-			description: ["{chapter.5.quest.119.description.1}"]
-			id: "7FF635D31674DBBA"
-			x: -10.5d
-			y: -6.0d
-			title: "{chapter.5.quest.119.title}"
 			rewards: [{
 				id: "03D768C1A59B8A1F"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 5253492355592689915L
 			}]
-			subtitle: "{chapter.5.quest.119.subtitle}"
-			dependencies: ["64271E1245394C9A"]
 		}
 		{
+			title: "{chapter.5.quest.120.title}"
+			x: -0.5d
+			y: 3.0d
+			subtitle: "{chapter.5.quest.120.subtitle}"
+			description: ["{chapter.5.quest.120.description.1}"]
+			dependencies: ["70FE485B4505AC81"]
+			optional: true
+			id: "5D07FD239AC21940"
 			tasks: [
 				{
 					id: "77E8F5077D380E75"
@@ -3135,25 +3028,17 @@
 					}
 				}
 			]
-			description: ["{chapter.5.quest.120.description.1}"]
-			id: "5D07FD239AC21940"
-			x: -0.5d
-			y: 3.0d
-			title: "{chapter.5.quest.120.title}"
-			subtitle: "{chapter.5.quest.120.subtitle}"
-			dependencies: ["70FE485B4505AC81"]
-			optional: true
 		}
 		{
-			size: 1.5d
-			id: "790B0567FF49110F"
+			title: "{chapter.5.quest.121.title}"
 			icon: "ae2:sky_stone_block"
 			x: -21.5d
 			y: -5.0d
 			shape: "gear"
-			title: "{chapter.5.quest.121.title}"
 			subtitle: "{chapter.5.quest.121.subtitle}"
 			dependencies: ["306D009F01634115"]
+			size: 1.5d
+			id: "790B0567FF49110F"
 			tasks: [{
 				id: "2FFA9F28B98FFB25"
 				type: "structure"
@@ -3161,28 +3046,22 @@
 			}]
 		}
 		{
+			title: "{chapter.5.quest.122.title}"
+			x: -3.5d
+			y: 6.0d
+			shape: "diamond"
+			subtitle: "{chapter.5.quest.122.subtitle}"
+			description: ["{chapter.5.quest.122.description.1}"]
+			dependencies: ["429D2340C2B20A60"]
+			id: "056B65ECA8538ED0"
 			tasks: [{
 				id: "1853E0DB1A4FFB9F"
 				type: "item"
 				item: "ad_astra:moon_stone"
 			}]
-			description: ["{chapter.5.quest.122.description.1}"]
-			id: "056B65ECA8538ED0"
-			x: -3.5d
-			y: 6.0d
-			shape: "diamond"
-			title: "{chapter.5.quest.122.title}"
-			subtitle: "{chapter.5.quest.122.subtitle}"
-			dependencies: ["429D2340C2B20A60"]
 		}
 		{
-			tasks: [{
-				id: "7DA6659E11BD55C3"
-				type: "checkmark"
-				title: "{chapter.5.quest.123.task.1.title}"
-			}]
-			description: ["{chapter.5.quest.123.description.1}"]
-			id: "41097A2335061B1D"
+			title: "{chapter.5.quest.123.title}"
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -3193,7 +3072,15 @@
 			x: -8.996428571428567d
 			y: -3.2571428571428527d
 			shape: "diamond"
-			title: "{chapter.5.quest.123.title}"
+			subtitle: "{chapter.5.quest.123.subtitle}"
+			description: ["{chapter.5.quest.123.description.1}"]
+			dependencies: ["752215E611021472"]
+			id: "41097A2335061B1D"
+			tasks: [{
+				id: "7DA6659E11BD55C3"
+				type: "checkmark"
+				title: "{chapter.5.quest.123.task.1.title}"
+			}]
 			rewards: [
 				{
 					id: "3E203B86C5B4A0A7"
@@ -3217,66 +3104,71 @@
 					only_one: true
 				}
 			]
-			dependencies: ["752215E611021472"]
-			subtitle: "{chapter.5.quest.123.subtitle}"
 		}
 		{
+			title: "{chapter.5.quest.124.title}"
+			icon: "ad_astra:moon_ice_shard_ore"
+			x: -24.5d
+			y: -2.0d
+			dependencies: ["306D009F01634115"]
+			min_required_tasks: 1
+			id: "01BF21C02F97B378"
 			tasks: [
 				{
-					type: "questsadditions:break"
-					value: 16L
-					block: "ad_astra:moon_desh_ore"
 					id: "1D825C50C2C5B58C"
-					checkItem: false
+					type: "questsadditions:break"
 					block_type: 0
+					block: "ad_astra:moon_desh_ore"
+					value: 16L
+					checkItem: false
 				}
 				{
-					type: "questsadditions:break"
-					value: 16L
-					block: "ad_astra:moon_cheese_ore"
 					id: "257A64F93C34D386"
-					checkItem: false
+					type: "questsadditions:break"
 					block_type: 0
+					block: "ad_astra:moon_cheese_ore"
+					value: 16L
+					checkItem: false
 				}
 				{
-					type: "questsadditions:break"
-					value: 32L
-					block: "ad_astra:moon_iron_ore"
 					id: "56286EDB89499395"
-					checkItem: false
+					type: "questsadditions:break"
 					block_type: 0
+					block: "ad_astra:moon_iron_ore"
+					value: 32L
+					checkItem: false
 				}
 				{
-					type: "questsadditions:break"
-					value: 16L
-					block: "ad_astra:moon_ice_shard_ore"
 					id: "5BE048ECE4AED124"
-					checkItem: false
+					type: "questsadditions:break"
 					block_type: 0
+					block: "ad_astra:moon_ice_shard_ore"
+					value: 16L
+					checkItem: false
 				}
 				{
-					type: "questsadditions:break"
-					value: 16L
-					block: "tconstruct:cobalt_ore"
 					id: "5187B19909CA4773"
-					checkItem: false
+					type: "questsadditions:break"
 					block_type: 0
+					block: "tconstruct:cobalt_ore"
+					value: 16L
+					checkItem: false
 				}
 				{
-					type: "questsadditions:break"
-					value: 16L
-					block: "techreborn:deepslate_silver_ore"
 					id: "76BBB9390B6CD775"
-					checkItem: false
+					type: "questsadditions:break"
 					block_type: 0
+					block: "techreborn:deepslate_silver_ore"
+					value: 16L
+					checkItem: false
 				}
 				{
-					type: "questsadditions:break"
-					value: 16L
-					block: "ae2:deepslate_quartz_ore"
 					id: "24677D0A32D17AED"
-					checkItem: false
+					type: "questsadditions:break"
 					block_type: 0
+					block: "ae2:deepslate_quartz_ore"
+					value: 16L
+					checkItem: false
 				}
 				{
 					id: "3881AFE2E790DFCA"
@@ -3284,39 +3176,675 @@
 					title: "{chapter.5.quest.124.task.8.title}"
 				}
 			]
-			icon: "ad_astra:moon_ice_shard_ore"
-			id: "01BF21C02F97B378"
-			x: -24.5d
-			y: -2.0d
-			title: "{chapter.5.quest.124.title}"
 			rewards: [{
 				id: "7E497BC1C88A5603"
 				type: "item"
 				item: "createaddition:chocolate_cake"
 			}]
-			dependencies: ["306D009F01634115"]
-			min_required_tasks: 1
 		}
 		{
-			size: 1.5d
-			id: "70625FA5C1118180"
+			title: "Taking to the skies."
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "immersive_aircraft:textures/item/biplane.png"
+				}
+			}
 			x: -14.482142857142854d
 			y: 2.4285714285714235d
 			shape: "octagon"
-			title: "Taking to the skies."
+			subtitle: "Perhaps a blueprint from a lost civilisation might hold the mechanics to build this thing..."
+			description: [
+				"Hint: There is a low chance on most high tier loot chests for any blueprint, however a guaranteed roll will always be at the top of a certain &6telecommunications tower&r on the moon..."
+				""
+				"All blueprints can be &6Duplicated&r through mixing once you have obtained the first copy. "
+			]
+			dependencies: ["21DBCD51CC35B794"]
+			size: 1.5d
+			id: "70625FA5C1118180"
+			tasks: [{
+				id: "654D93F248E8C85E"
+				type: "checkmark"
+			}]
 			rewards: [{
 				id: "5EA35EA84E383102"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 5253492355592689915L
 			}]
-			subtitle: "Perhaps a blueprint from a lost civilisation might hold the mechanics to build this thing..."
-			dependencies: ["21DBCD51CC35B794"]
+		}
+		{
+			x: -16.0d
+			y: 2.0d
+			subtitle: "Versatile craft made for hovering..."
+			dependencies: ["70625FA5C1118180"]
+			id: "37128664FA549CDB"
 			tasks: [{
-				id: "0F42DA73BDAC2152"
+				id: "4992380F4FF3B074"
 				type: "item"
-				item: "immersive_aircraft:quadrocopter"
+				item: "createastral:quadrocopter_blueprint"
+			}]
+		}
+		{
+			x: -15.5d
+			y: 1.0d
+			subtitle: "Pedal-powered craft fueled by hunger rather than coal..."
+			dependencies: ["70625FA5C1118180"]
+			id: "7A561A04FD74B7A0"
+			tasks: [{
+				id: "73E6D7A73E0AAF9F"
+				type: "item"
+				item: "createastral:gyrodyne_blueprint"
+			}]
+		}
+		{
+			x: -14.0d
+			y: 1.0d
+			subtitle: "Difficult to control but uncontested for long-range flights..."
+			dependencies: ["70625FA5C1118180"]
+			id: "7A672EB91DAA8485"
+			tasks: [{
+				id: "252ED81632D771AA"
+				type: "item"
+				item: "createastral:biplane_blueprint"
+			}]
+		}
+		{
+			x: -13.0d
+			y: 2.0d
+			subtitle: "Bulky, but comes with storage capability."
+			dependencies: ["70625FA5C1118180"]
+			id: "636AAC859158819A"
+			tasks: [{
+				id: "52F3873544ED549C"
+				type: "item"
+				item: "createastral:airship_blueprint"
+			}]
+		}
+		{
+			title: "Automatic Brewing"
+			icon: "minecraft:brewing_stand"
+			x: -21.5d
+			y: 4.0d
+			description: [
+				"With heated basins, you can now automatically make potions."
+				"This might have a few more uses than vanilla"
+			]
+			dependencies: ["51BD31261A5725E3"]
+			id: "0AC7A99125824E7E"
+			tasks: [{
+				id: "011BEC4AC2072FC0"
+				type: "checkmark"
+				title: "Brewing"
+			}]
+		}
+		{
+			title: "Another Armor Set"
+			x: -25.5d
+			y: -1.0d
+			subtitle: "For the tinker's fans"
+			dependencies: ["01BF21C02F97B378"]
+			id: "6B8452600F4D3A85"
+			tasks: [
+				{
+					id: "48121C5C3E498A87"
+					type: "item"
+					item: {
+						id: "tconstruct:plate_helmet"
+						Count: 1b
+						tag: {
+							tic_modifiers: [ ]
+							tic_broken: 0b
+							Damage: 0
+							tic_stats: {
+								"tconstruct:armor_toughness": 2.0f
+								"tconstruct:knockback_resistance": 0.1f
+								"tconstruct:durability": 330.0f
+								"tconstruct:armor": 2.0f
+							}
+							tic_multipliers: { }
+							tic_persistent_data: {
+								upgrades: 1
+								abilities: 1
+								defense: 4
+							}
+						}
+					}
+				}
+				{
+					id: "60701C7F906223AC"
+					type: "item"
+					item: {
+						id: "tconstruct:plate_chestplate"
+						Count: 1b
+						tag: {
+							tic_modifiers: [ ]
+							tic_broken: 0b
+							Damage: 0
+							tic_stats: {
+								"tconstruct:armor_toughness": 2.0f
+								"tconstruct:knockback_resistance": 0.1f
+								"tconstruct:durability": 480.0f
+								"tconstruct:armor": 7.0f
+							}
+							tic_multipliers: { }
+							tic_persistent_data: {
+								upgrades: 1
+								abilities: 1
+								defense: 4
+							}
+						}
+					}
+				}
+				{
+					id: "38CA004E59FE4980"
+					type: "item"
+					item: {
+						id: "tconstruct:plate_leggings"
+						Count: 1b
+						tag: {
+							tic_modifiers: [ ]
+							tic_broken: 0b
+							Damage: 0
+							tic_stats: {
+								"tconstruct:armor_toughness": 2.0f
+								"tconstruct:knockback_resistance": 0.1f
+								"tconstruct:durability": 450.0f
+								"tconstruct:armor": 5.0f
+							}
+							tic_multipliers: { }
+							tic_persistent_data: {
+								upgrades: 1
+								abilities: 1
+								defense: 4
+							}
+						}
+					}
+				}
+				{
+					id: "2D1DAB6DEA5A1D2F"
+					type: "item"
+					item: {
+						id: "tconstruct:plate_boots"
+						Count: 1b
+						tag: {
+							tic_modifiers: [ ]
+							tic_broken: 0b
+							Damage: 0
+							tic_stats: {
+								"tconstruct:armor_toughness": 2.0f
+								"tconstruct:knockback_resistance": 0.1f
+								"tconstruct:durability": 390.0f
+								"tconstruct:armor": 2.0f
+							}
+							tic_multipliers: { }
+							tic_persistent_data: {
+								upgrades: 1
+								abilities: 1
+								defense: 4
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "36EF1618B26588F7"
+				type: "item"
+				item: "tconstruct:molten_cobalt_bucket"
+			}]
+		}
+		{
+			title: "Screw Breeches"
+			x: 2.0d
+			y: 3.0d
+			description: [
+				"Simply place your post-drilled breech onto the floor, and introduce it by hand (or automate with deployers) to a create shaft followed by a screw bearing."
+				""
+				"You'll need to cast the steel ingots required in a screw bearing or pour it yourself using a ring cast for a slightly reduced material cost!"
+			]
+			dependencies: ["536964348E9EBF56"]
+			id: "74C57EAD8DD6C215"
+			tasks: [{
+				id: "64D4B7779B2852AA"
+				type: "item"
+				item: "createbigcannons:steel_screw_breech"
+			}]
+		}
+		{
+			title: "This is *Boring*"
+			x: 1.0d
+			y: 4.0d
+			subtitle: "If you've dipped your toes into big cannons, this is essentially free..."
+			description: [
+				"Follow the REI prompts backwards to work your way through drilling an incomplete steel screw breech."
+				""
+				"Sometimes military war game mods aren't so optional after all..."
+			]
+			dependencies: ["70FE485B4505AC81"]
+			id: "79DD3B81F011D236"
+			tasks: [
+				{
+					id: "67A614F19B61CA29"
+					type: "item"
+					item: "createbigcannons:cannon_drill"
+				}
+				{
+					id: "5ABEAEB38C3A05C1"
+					type: "item"
+					item: "createbigcannons:casting_sand"
+					count: 8L
+				}
+				{
+					id: "674A84C68086D2EE"
+					type: "item"
+					item: "createbigcannons:unbored_steel_screw_breech"
+				}
+				{
+					id: "4358978210F2384D"
+					type: "item"
+					item: "createbigcannons:screw_breech_cast_mould"
+				}
+			]
+		}
+		{
+			title: "Righty-tighty"
+			x: 2.0d
+			y: 4.0d
+			subtitle: "I am a dwarf and i'm boring a hole."
+			description: ["Attach the breech to a rotating bearing. Placing a drill bore with at least enough extension poles to propel it far enough into the breech (when provided with rotational power) will allow you to drill straight through."]
+			dependencies: ["79DD3B81F011D236"]
+			id: "536964348E9EBF56"
+			tasks: [{
+				id: "01BB3F194DB9D16F"
+				type: "item"
+				item: "createbigcannons:incomplete_steel_screw_breech"
+			}]
+		}
+		{
+			title: "Further Fin Processing."
+			x: -0.65d
+			y: 0.65d
+			shape: "pentagon"
+			subtitle: "Simply use a create presser to condense the fin back to it's sturdy makeup."
+			dependencies: ["1BF9656E9FBB2364"]
+			size: 1.3d
+			id: "2B461CB27269D9CD"
+			tasks: [{
+				id: "6EF6D453DC139451"
+				type: "item"
+				item: "ad_astra:rocket_fin"
+			}]
+		}
+		{
+			title: "Not so sturdy anymore."
+			x: -6.5d
+			y: 1.0d
+			subtitle: "Weaken some sturdy sheets in a Grinder"
+			dependencies: ["2F7F41E1C9C7F7B3"]
+			id: "0B6A23E35BDA5D6F"
+			tasks: [{
+				id: "0F14208DC3730166"
+				type: "item"
+				item: "createastral:fragile_sheet"
+			}]
+		}
+		{
+			title: "The Moon Debris"
+			icon: "astraladditions:moonset_crystal_block"
+			x: 5.5d
+			y: 2.5d
+			subtitle: "The Dark Side of the Moon"
+			description: [
+				"The ruins of the moon, swallowed and regurgitated... Thrown up into the air like a great beast playing with its food."
+				""
+				"With a rocket, we can see what lies in the Moon Debris beyond orbit. Bring your finest gear - there's a terrible aura filling the air here, and things will get hostile very quickly."
+			]
+			dependencies: ["6E20B194F5CA8F22"]
+			size: 1.5d
+			id: "201DD2C17E5BE35D"
+			tasks: [{
+				id: "531E574A35DA1505"
+				type: "dimension"
+				dimension: "createastral:moon_debris"
+			}]
+			rewards: [{
+				id: "6B64C05A1FC35A4D"
+				type: "item"
+				item: "minecraft:enchanted_golden_apple"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 2.5d
+			subtitle: "Residue of a Devoured Moon"
+			description: [
+				"The Monsters here, corrupted by something living, something evil."
+				""
+				"The Crystals they form when defeated... are clearly not of this world. What caused this damage?"
+				""
+				"Reality itself seems to disagree with whatever grazed civilisation on the Moon, yet... There's something so beautiful about the scars it left."
+			]
+			dependencies: ["201DD2C17E5BE35D"]
+			id: "3A67A15771B2D8CD"
+			tasks: [{
+				id: "205CF4006B9DA8DB"
+				type: "item"
+				item: "astraladditions:moonset_crystal"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 1.5d
+			subtitle: "/home in a Jar"
+			description: [
+				"Our modern technology and alien matter, combined to form something of great use."
+				""
+				"The Pylon permits teleportation to a set location, as long as the user doesn't step beyond 256 blocks of it."
+				""
+				"Once a Pylon is active, Right Click to teleport, or Shift + Right Click to detonate for a strong burst of knockback."
+			]
+			dependencies: ["3A67A15771B2D8CD"]
+			id: "659C8D9E756AAA57"
+			tasks: [{
+				id: "2216CAF1CE28283C"
+				type: "item"
+				item: "astraladditions:pylon"
+			}]
+			rewards: [{
+				id: "0486A42A6BE91425"
+				type: "item"
+				item: "doodads:magic_plum"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 3.5d
+			subtitle: "Throwable Comet"
+			description: [
+				"The Crystals can be formed into a ball for a devastating projectile."
+				""
+				"If a Cometball hits an enemy, it will launch them into the air. Throw the Cometball while looking straight down to hit yourself, allowing for air maneuverablity at the cost of your health."
+			]
+			dependencies: ["3A67A15771B2D8CD"]
+			id: "363F32FD21913A0F"
+			tasks: [{
+				id: "15B7A40435BECE15"
+				type: "item"
+				item: "astraladditions:cometball"
+				count: 4L
+			}]
+			rewards: [{
+				id: "47AE4DCA506521C1"
+				type: "item"
+				item: "astraladditions:cometball"
+				count: 16
+			}]
+		}
+		{
+			x: 5.5d
+			y: 4.5d
+			subtitle: "It Grows."
+			description: [
+				"Whatever happened here... it left spores... it formed life..."
+				""
+				"Could an entity do this? "
+			]
+			dependencies: ["201DD2C17E5BE35D"]
+			id: "3EADE572CCC75F8D"
+			tasks: [{
+				id: "5BD046CAC997CCDB"
+				type: "item"
+				item: "minecraft:chorus_fruit"
+				count: 32L
+			}]
+			rewards: [{
+				id: "35FA326C3E75DAD7"
+				type: "item"
+				item: "minecraft:chorus_flower"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 6.0d
+			subtitle: "YOU STINK!"
+			description: ["Access to Lingering Potions!"]
+			dependencies: ["3EADE572CCC75F8D"]
+			id: "7FF80EF81F4139D9"
+			tasks: [{
+				id: "1D8328214F1D700D"
+				type: "item"
+				item: "minecraft:dragon_breath"
+			}]
+			rewards: [{
+				id: "5AD4445C2995D2A6"
+				type: "item"
+				item: "minecraft:experience_bottle"
+				count: 16
+			}]
+		}
+		{
+			title: "Functional Decor"
+			x: 7.0d
+			y: 4.5d
+			subtitle: "Purr... Purr..."
+			description: ["Shimmer-coloured decor that functions in a few recipes."]
+			dependencies: ["3EADE572CCC75F8D"]
+			id: "0D9730704CBAEEA2"
+			tasks: [{
+				id: "11CDD23B9767AA01"
+				type: "item"
+				item: "minecraft:purpur_block"
+			}]
+			rewards: [{
+				id: "49314E30B500205C"
+				type: "item"
+				item: "adoptafloppa:kitney_item"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 5.5d
+			subtitle: "XP Storage!"
+			description: [
+				"Right Click to Store XP"
+				"Left Click to Take XP"
+				""
+				"You can use this to store your XP before going out on adventures, or you can use it to give XP to friends!"
+			]
+			dependencies: ["0D9730704CBAEEA2"]
+			id: "0D78592C36778E94"
+			tasks: [{
+				id: "67AD052BA4A5E042"
+				type: "item"
+				item: "xpcrystals:xp_syphon"
+			}]
+			rewards: [{
+				id: "3C0B77106789FBF1"
+				type: "item"
+				item: "xpcrystals:sticky_crystal_pudding"
+			}]
+		}
+		{
+			title: "Shulker Boxes!"
+			x: 6.5d
+			y: 3.5d
+			subtitle: "No need to Shulk about it :("
+			description: [
+				"Backpacks!!! but- different."
+				""
+				"Use Shulker Shells to make Shulker Boxes. Place these down like a chest and store items. Break the block and you will be able to carry a whole inventory in one slot."
+			]
+			dependencies: ["201DD2C17E5BE35D"]
+			id: "7E6C60C76782D1EB"
+			tasks: [{
+				id: "3A26F633FDD90AC8"
+				type: "item"
+				item: "minecraft:shulker_shell"
+			}]
+		}
+		{
+			title: "Mobile Artillery"
+			icon: {
+				id: "create:potato_cannon"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -6.702380952380956d
+			y: 3.4642857142857153d
+			shape: "octagon"
+			subtitle: "We have provided some... &6alternative ammo types&r for you to shoot from potato cannons."
+			description: ["All of these projectiles have different projectile properties, try them all and see which is your favourite tool of destruction!"]
+			dependencies: ["0C82B8A57B80C9DE"]
+			size: 1.5d
+			id: "5C6A2E8BA7BF7315"
+			tasks: [
+				{
+					id: "0A58184632D5D74A"
+					type: "item"
+					item: {
+						id: "create:potato_cannon"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6C2278E63B7B45C1"
+					type: "item"
+					item: "create:cogwheel"
+				}
+				{
+					id: "1B0E81A4A5CE4EA5"
+					type: "item"
+					item: "create:large_cogwheel"
+				}
+				{
+					id: "7AA1E7393E84E9B4"
+					type: "item"
+					item: "minecraft:arrow"
+				}
+				{
+					id: "5AF98B8BF34E568B"
+					type: "item"
+					item: {
+						id: "createbigcannons:autocannon_cartridge"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "3E9A22DAB412F5C4"
+					type: "item"
+					item: {
+						id: "createbigcannons:machine_gun_round"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [{
+				id: "52CCE652B1ACFC77"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
+			}]
+		}
+		{
+			x: 9.5d
+			y: 2.5d
+			subtitle: "Orbital Homebound Navigation Orb"
+			description: [
+				"Right click to set a location. Right click again to teleport there."
+				""
+				"This item has unlimited range and &6works cross-dimension&r. However, it will break upon use."
+				""
+				"I'm not even going to explain the recipe for this one. An item like this is complicated to forge. Good luck."
+			]
+			dependencies: ["3A67A15771B2D8CD"]
+			id: "6F2BEC39C1DBEBDC"
+			tasks: [{
+				id: "09CA1B018DCB0BF7"
+				type: "item"
+				item: "astraladditions:oh-no"
+			}]
+			rewards: [
+				{
+					id: "0F7101C9AA1D06D6"
+					type: "item"
+					item: "astraladditions:shimmer_heart"
+				}
+				{
+					id: "358CF17D2314C6C5"
+					type: "item"
+					item: "astralfoods:shimmered_apple"
+					count: 8
+				}
+			]
+		}
+		{
+			x: -25.5d
+			y: -5.5d
+			subtitle: "The Purple Prison"
+			description: [
+				"You may stumble upon a Shimmer Heart in a storage crate - left behind from cruel experimentation..."
+				""
+				"To reawaken it would be... cruel..."
+				""
+				"When thrown into a pool of Shimmer, the Awakened Shimmer Heart will glow. Globs of Shimmer will chunk together to form a &dPowerful Creature&r. It will not take kindly to you reawakening it."
+			]
+			dependencies: ["63C197DE5231155D"]
+			id: "33875939443A5D1C"
+			tasks: [{
+				id: "3E7E3B721D3EA64B"
+				type: "item"
+				item: "astraladditions:awakened_shimmer_heart"
+			}]
+			rewards: [{
+				id: "19D121734E09CA54"
+				type: "item"
+				item: "xpcrystals:xp_crystal"
+				count: 64
+			}]
+		}
+		{
+			title: "XP Crystals"
+			x: -22.0d
+			y: -6.5d
+			subtitle: "Hard not to eat!"
+			description: [
+				"XP Crystal Lakes spawn rarely underground on the Moon. A crust of hardened XP will surround a pool of Liquid Soul. "
+				""
+				"Budding XP Crystals feed off of Liquid Soul through the sides of the block, producing XP Crystals on the top and bottom of the block when they get hungry. Liquid Soul is automatable, so keep those crystals growing!"
+				""
+				"XP Crystals can be eaten for XP, or they can be melted and processed into XP Boost potions, and various foods that grant large quantities of XP when digested."
+			]
+			dependencies: ["582C723B2F261D68"]
+			id: "59004FDE3ACCCAD6"
+			tasks: [
+				{
+					id: "79052E3B735D3B20"
+					type: "observation"
+					icon: "xpcrystals:budding_xp_crystal"
+					timer: 0L
+					observe_type: 0
+					to_observe: "xpcrystals:budding_xp_crystal"
+				}
+				{
+					id: "72C19B21D2B6EB18"
+					type: "item"
+					item: "xpcrystals:xp_crystal"
+				}
+			]
+			rewards: [{
+				id: "5666960E7B52FB1E"
+				type: "item"
+				item: "xpcrystals:xp_boost_potion"
 			}]
 		}
 	]
+	quest_links: [ ]
 }

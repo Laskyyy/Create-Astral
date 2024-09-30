@@ -17,21 +17,21 @@ onEvent("recipes", (event) => {
         { output: "techreborn:quantum_tank_unit" },
 
         //cables
-        {output: "techreborn:gold_cable"},
-        {output: "techreborn:copper_cable"},
-        {output: "techreborn:tin_cable"},
-        {output: "techreborn:hv_cable"},
-        {output: "techreborn:glassfiber_cable"},
-        {output: "techreborn:insulated_hv_cable"},
-        {output: "techreborn:insulated_gold_cable"},
-        {output: "techreborn:insulated_copper_cable"},
+        { output: "techreborn:gold_cable" },
+        { output: "techreborn:copper_cable" },
+        { output: "techreborn:tin_cable" },
+        { output: "techreborn:hv_cable" },
+        { output: "techreborn:glassfiber_cable" },
+        { output: "techreborn:insulated_hv_cable" },
+        { output: "techreborn:insulated_gold_cable" },
+        { output: "techreborn:insulated_copper_cable" },
 
-        { output: "techreborn:hv_transformer"},
-        { output: "techreborn:nanosaber"},
-        {output: "techreborn:lightning_rod"},
-        {output: "techreborn:refined_iron_fence"},
+        { output: "techreborn:hv_transformer" },
+        { output: "techreborn:nanosaber" },
+        { output: "techreborn:lightning_rod" },
+        { output: "techreborn:refined_iron_fence" },
         { output: "techreborn:chunk_loader" },
-        { output: "techreborn:pyrite_dust"},
+        { output: "techreborn:pyrite_dust" },
         { output: "ae2:spatial_anchor" },
         { output: "techreborn:carbon_fiber" },
         { output: "techreborn:scrap_box" },
@@ -157,6 +157,7 @@ onEvent("recipes", (event) => {
         { output: "create:blaze_burner" },
         { output: "create:ochrum" },
         { output: "create:crimsite" },
+        { input: "create:crimsite", output: "create:crushed_raw_iron" },
         { output: "create:limestone" },
         { output: "create:asurine" },
         { output: "create:veridium" },
@@ -479,13 +480,12 @@ onEvent("recipes", (event) => {
         { output: "yttr:yttrium_dust" },
         { output: "yttr:magtank" },
         { output: "yttr:neodymium_disc" },
-        { output: "yttr:yttrium_ingot", type: "minecraft:smelting"},
-        { output: "yttr:yttrium_ingot", type: "minecraft:blasting"},
+        { output: "yttr:yttrium_ingot", type: "minecraft:smelting" },
+        { output: "yttr:yttrium_ingot", type: "minecraft:blasting" },
         { output: "yttr:xl_iron_ingot" },
         { output: "yttr:spatula" },
         { output: "yttr:giant_cobblestone" },
         { output: "yttr:armor_plating" },
-
 
         // Minecraft
 
@@ -542,9 +542,9 @@ onEvent("recipes", (event) => {
         { output: "minecraft:gold_nugget", input: "minecraft:soul_sand" },
         { output: "minecraft:gravel", input: "techreborn:granite_dust" },
         { output: "minecraft:gold_nugget", input: "minecraft:soul_soil" },
-        {output: "ae2:silicon"},
-        {output: "blahaj:bread"},
-        {id: "techreborn:centrifuge/redstone" }, // remove other version of centrifuging certus quartz
+        { output: "ae2:silicon" },
+        { output: "blahaj:bread" },
+        { id: "techreborn:centrifuge/redstone" }, // remove other version of centrifuging certus quartz
         { input: "minecraft:crying_obsidian" },
         {
             input: "minecraft:copper_block",
