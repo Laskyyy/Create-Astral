@@ -3227,7 +3227,7 @@ function mechanicalCraftingRecipes(event) {
         E: "createastral:promethium_atomic_battery",
         M: "createastral:prismatic_crystal",
     });
-    event.recipes.createMechanicalCrafting("yttr:shifter", ["MMSMM", "MIM", " E "], {
+    event.recipes.createMechanicalCrafting("yttr:shifter", ["MMSMM", " MIM ", "  E  "], {
         S: "astraladditions:moonset_crystal_block",
         C: "createastral:ender_plating",
         I: "createastral:astral_singularity",
