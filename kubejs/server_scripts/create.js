@@ -3241,6 +3241,7 @@ function mechanicalCraftingRecipes(event) {
         E: "astraladditions:moonblazed_orb",
         M: "createastral:prismatic_crystal",
     });
+}
 
 function pressingRecipes(event) {
     // [Input string, Output string]
