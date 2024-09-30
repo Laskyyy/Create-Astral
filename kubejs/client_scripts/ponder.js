@@ -9,7 +9,7 @@ onEvent(
             "createastral:astral_singularity",
             "Create: Astral",
             "Tips and Tricks specific to this modpack",
-            ["createastral:electrolyser_dummy", "createastral:shimmering_stone", "astraladditions:desizer_8"]
+            ["createastral:electrolyser_dummy", "createastral:shimmering_stone", "astraladditions:desizer_controller"]
         );
         event.createTag(
             "kubejs:tconstruct",
