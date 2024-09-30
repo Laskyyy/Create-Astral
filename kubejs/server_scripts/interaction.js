@@ -17,7 +17,7 @@ onEvent("player.logged_in", (event) => {
             Text.aqua("Please Read The Quest Book (Hover Over Me!)")
                 .underlined()
                 .hover(
-                    "The quest book contains most of all the information needed to progress in this mod pack. Its your friend!, Use the item to remove this message"
+                    "The Quest Book contains most of the information needed to progress in this modpack - it's your friend! Use the item to prevent this message from appearing."
                 )
         );
     }
