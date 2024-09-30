@@ -3217,8 +3217,6 @@ function mechanicalCraftingRecipes(event) {
         S: "astraladditions:moonset_crystal_block",
         C: "createastral:ender_plating",
         I: "createastral:astral_singularity",
-        E: "createastral:promethium_atomic_battery",
-        M: "yttr:rifle_reinforced",
     });
     event.recipes.createMechanicalCrafting("yttr:projector", ["MSM", "MIM", " E ", " C "], {
         S: "astraladditions:moonset_crystal_block",
@@ -3227,19 +3225,16 @@ function mechanicalCraftingRecipes(event) {
         E: "createastral:promethium_atomic_battery",
         M: "createastral:prismatic_crystal",
     });
-    event.recipes.createMechanicalCrafting("yttr:shifter", ["MMSMM", " MIM ", "  E  "], {
-        S: "astraladditions:moonset_crystal_block",
+    event.recipes.createMechanicalCrafting("yttr:shifter", ["MMCMM", " MIM ", "  E  "], {
         C: "createastral:ender_plating",
         I: "createastral:astral_singularity",
         E: "createastral:promethium_atomic_battery",
         M: "createastral:prismatic_crystal",
     });
     event.recipes.createMechanicalCrafting("doodads:celestial_ring", [" I ", "C C", " E "], {
-        S: "astraladditions:moonset_crystal_block",
         C: "createastral:ender_plating",
         I: "createastral:astral_singularity",
         E: "astraladditions:moonblazed_orb",
-        M: "createastral:prismatic_crystal",
     });
 }
 
