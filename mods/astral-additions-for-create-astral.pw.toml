@@ -1,12 +1,12 @@
-filename = 'astraladditions-1.3.7.jar'
+filename = 'astraladditions-1.3.8.jar'
 name = 'Astral Additions (for Create: Astral)'
 side = 'both'
 
 [download]
-hash = '5cdd3d3fdf30ca77b30b9b9bf5eb72e1e9b03fdd'
+hash = '3acf5c16903ae60b41b092b25dc6cfaed222dfd8'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 
 [update.curseforge]
-file-id = 5766417
+file-id = 5774943
 project-id = 818843

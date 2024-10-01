@@ -12,18 +12,6 @@
 		"drinkbeer:golden_call_bell",
 		"drinkbeer:lekas_call_bell",
     "yttr:continuous_platform",
-		"xpcrystals:xp_syphon",
-		"astraladditions:desizer_controller",
-		"astraladditions:desizer_1",
-		"astraladditions:desizer_2",
-		"astraladditions:desizer_3",
-		"astraladditions:desizer_4",
-		"astraladditions:desizer_6",
-		"astraladditions:desizer_7",
-		"astraladditions:desizer_8",
-		"astraladditions:desizer_9",
-		"astraladditions:enderrack",
-		"astraladditions:twisted_nylium",
-		"astraladditions:ender_tip"
+		"xpcrystals:xp_syphon"
   ]
 }
