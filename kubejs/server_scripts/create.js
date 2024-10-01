@@ -1731,19 +1731,6 @@ function mixingRecipes(event) {
             time: 1000,
         },
         {
-            output: "createastral:ender_mush",
-            input: [
-                "8x tconstruct:ender_slime_crystal",
-                "estrogen:estrogen_pill",
-                {
-                    fluid: "kubejs:shimmer",
-                    amount: 1000 * mB,
-                },
-            ],
-            heat: "superheated",
-            time: 1000,
-        },
-        {
             output: "techreborn:plantball",
             input: [
                 "3x farmersdelight:straw",
@@ -2252,6 +2239,18 @@ function mixingRecipes(event) {
         {
             output: "doodads:asphalt",
             input: [{ fluid: "kubejs:compound_mixture", amount: 3000 }, "#c:concrete_powder"],
+            heat: "",
+            time: 50,
+        },
+				{
+            output: "2x astraladditions:ender_tip",
+            input: ["astraladditions:ender_tip", "yttr:neodymium_dust"],
+            heat: "",
+            time: 50,
+        },
+				{
+            output: "astraladditions:twisted_nylium",
+            input: ["astraladditions:enderrack", { fluid: "astraladditions:sputum", amount: INGOT }],
             heat: "",
             time: 50,
         },
@@ -3648,6 +3647,10 @@ function superheatedMixingRecipes(event) {
             ["tconstruct:ichor_slime_sling", "yttr:delicace", { fluid: "kubejs:metabolic_broth", amount: BUCKET / 2 }],
             ["tconstruct:ender_slime_sling"],
         ],
+				[
+						["astraladditions:ender_tip"],
+						[Fluid.of("astraladditions:sputum", INGOT)]
+				],
         [
             [
                 { fluid: "tconstruct:molten_tin", amount: INGOT * 2 },
