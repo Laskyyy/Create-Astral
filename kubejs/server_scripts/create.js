@@ -155,6 +155,10 @@ function crushingRecipes(event) {
                 ["minecraft:coal", 0.05],
             ],
         },
+        {
+            input: "tconstruct:ender_slime_crystal_block",
+            outputs: [["4x tconstruct:ender_slime_crystal", 1]],
+        },
         //Diorite,Granite,Andesite Crushing
         {
             input: "minecraft:diorite",
@@ -1727,19 +1731,6 @@ function mixingRecipes(event) {
             time: 1000,
         },
         {
-            output: "createastral:ender_mush",
-            input: [
-                "8x tconstruct:ender_slime_crystal",
-                "estrogen:estrogen_pill",
-                {
-                    fluid: "kubejs:shimmer",
-                    amount: 1000 * mB,
-                },
-            ],
-            heat: "superheated",
-            time: 1000,
-        },
-        {
             output: "techreborn:plantball",
             input: [
                 "3x farmersdelight:straw",
@@ -2248,6 +2239,18 @@ function mixingRecipes(event) {
         {
             output: "doodads:asphalt",
             input: [{ fluid: "kubejs:compound_mixture", amount: 3000 }, "#c:concrete_powder"],
+            heat: "",
+            time: 50,
+        },
+				{
+            output: "2x astraladditions:ender_tip",
+            input: ["astraladditions:ender_tip", "yttr:neodymium_dust"],
+            heat: "",
+            time: 50,
+        },
+				{
+            output: "astraladditions:twisted_nylium",
+            input: ["astraladditions:enderrack", { fluid: "astraladditions:sputum", amount: INGOT }],
             heat: "",
             time: 50,
         },
@@ -3213,6 +3216,29 @@ function mechanicalCraftingRecipes(event) {
         E: "createastral:promethium_atomic_battery",
         M: "yttr:rifle_reinforced",
     });
+    event.recipes.createMechanicalCrafting("astraladditions:meteor_mitts", ["SSSSS", "SSISS", "SCCCS", " CCC "], {
+        S: "astraladditions:moonset_crystal_block",
+        C: "createastral:ender_plating",
+        I: "createastral:astral_singularity",
+    });
+    event.recipes.createMechanicalCrafting("yttr:projector", ["MSM", "MIM", " E ", " C "], {
+        S: "astraladditions:moonset_crystal_block",
+        C: "createastral:ender_plating",
+        I: "createastral:astral_singularity",
+        E: "createastral:promethium_atomic_battery",
+        M: "createastral:prismatic_crystal",
+    });
+    event.recipes.createMechanicalCrafting("yttr:shifter", ["MMCMM", " MIM ", "  E  "], {
+        C: "createastral:ender_plating",
+        I: "createastral:astral_singularity",
+        E: "createastral:promethium_atomic_battery",
+        M: "createastral:prismatic_crystal",
+    });
+    event.recipes.createMechanicalCrafting("doodads:celestial_ring", [" I ", "C C", " E "], {
+        C: "createastral:ender_plating",
+        I: "createastral:astral_singularity",
+        E: "astraladditions:moonblazed_orb",
+    });
 }
 
 function pressingRecipes(event) {
@@ -3598,6 +3624,9 @@ function superheatedMixingRecipes(event) {
         ["minecraft:calcite", "minecraft:tuff"],
         ["minecraft:obsidian", "minecraft:crying_obsidian"],
         ["compressor:octuple_compressed_cobblestone", "createastral:logo"],
+        ["16x minecraft:poppy", "minecraft:wither_rose"],
+        ["16x minecraft:bone", "tconstruct:necrotic_bone"],
+        [["estrogen:estrogen_pill", "tconstruct:ender_slime_crystal"], "estrogen:crystal_estrogen_pill"],
         [
             [
                 "8x create:refined_radiance_casing",
@@ -3618,6 +3647,10 @@ function superheatedMixingRecipes(event) {
             ["tconstruct:ichor_slime_sling", "yttr:delicace", { fluid: "kubejs:metabolic_broth", amount: BUCKET / 2 }],
             ["tconstruct:ender_slime_sling"],
         ],
+				[
+						["astraladditions:ender_tip"],
+						[Fluid.of("astraladditions:sputum", INGOT)]
+				],
         [
             [
                 { fluid: "tconstruct:molten_tin", amount: INGOT * 2 },

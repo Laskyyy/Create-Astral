@@ -1,68 +1,210 @@
 {
-	quest_links: [ ]
-	default_hide_dependency_lines: false
-	group: ""
 	id: "3E0862BB5F2DDA3C"
+	group: ""
+	order_index: 4
 	filename: "chapter_3"
-	default_quest_shape: ""
-	icon: "create:fluid_tank"
 	title: "{chapter.3.title}"
+	icon: "create:fluid_tank"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	images: [
 		{
+			x: 10.0d
+			y: -3.5d
+			width: 1.0d
+			height: 1.0d
 			rotation: 0.0d
 			image: "createastral:textures/item/questmoon.png"
-			width: 1.0d
-			click: ""
 			hover: [ ]
-			x: 11.0d
-			y: -2.5d
-			corner: false
+			click: ""
 			dev: false
-			height: 1.0d
+			corner: false
 		}
 		{
+			x: 9.0d
+			y: 1.5d
+			width: 4.0d
+			height: 4.0d
 			rotation: 0.0d
 			image: "ad_astra:textures/painting/sun.png"
-			width: 4.0d
-			click: ""
 			hover: [ ]
-			x: 5.0d
-			y: -5.0d
-			corner: false
+			click: ""
 			dev: false
-			height: 4.0d
+			corner: false
+		}
+		{
+			x: 12.0d
+			y: -5.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_a.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 13.5d
+			y: -5.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_n.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 14.5d
+			y: -5.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_e.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 15.5d
+			y: -5.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_w.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 12.0d
+			y: -1.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_e.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 13.0d
+			y: -1.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_a.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 14.0d
+			y: -1.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_r.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 15.0d
+			y: -1.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_t.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 16.0d
+			y: -1.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_h.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
 		}
 	]
-	order_index: 2
 	quests: [
 		{
+			title: "{chapter.3.quest.1.title}"
+			x: -1.5d
+			y: 0.5d
+			subtitle: "Store your liquids in a stylish way!"
+			description: [
+				"You probably want to store your molten metal somewhere?"
+				""
+				"&6Fluid Tanks&r store 10 buckets of liquid per tank."
+				""
+				"They can be placed with 1x1, 2x2 or 3x3 bases and stacked vertically to create bigger tanks."
+				""
+				"You can't add liquids to Tanks manually - Tanks only accept liquids transferred by automation."
+			]
+			dependencies: ["70799237323247B7"]
+			id: "6AEEE2B22E28945B"
 			tasks: [{
 				id: "5852E083EF17B463"
 				type: "item"
 				item: "create:fluid_tank"
 				count: 4L
 			}]
-			description: ["{chapter.3.quest.1.description.1}"]
-			id: "6AEEE2B22E28945B"
-			x: 0.0d
-			y: -2.0d
-			title: "{chapter.3.quest.1.title}"
 			rewards: [{
 				id: "5689B7136BEB29FC"
 				type: "item"
 				item: "create:fluid_tank"
 				count: 4
 			}]
-			subtitle: "{chapter.3.quest.1.subtitle}"
-			dependencies: ["70799237323247B7"]
 		}
 		{
-			size: 1.5d
-			description: ["{chapter.3.quest.2.description.1}"]
-			id: "0A34148EBAF329B3"
 			x: -3.0d
 			y: -0.5d
 			shape: "rsquare"
+			subtitle: "{chapter.3.quest.2.subtitle}"
+			description: [
+				"Time to melt some metal!"
+				""
+				"Place a &6Melter&r on top of a &6Heater&r."
+				"Fuel the &6Heater&r using furnace fuel."
+				""
+				"You can now melt metals. Try inserting some Raw Iron into the Melter!"
+				""
+				"Melting raw ores in the Melter will provide you with 4 ingots of metal per 3 raw ore!"
+				""
+				"You can extract liquids from the Melter using &6Create pipes&r or &6Hephaestus Faucets&r."
+				""
+				"The molten metal will be also used later for &6alloys&r. More on that later."
+			]
+			dependencies: ["751CC4EF84A919C7"]
+			size: 1.5d
+			id: "0A34148EBAF329B3"
+			tasks: [
+				{
+					id: "3C8959799657F5E3"
+					type: "item"
+					item: "tconstruct:seared_melter"
+				}
+				{
+					id: "56C67F71E1B37C35"
+					type: "item"
+					item: "tconstruct:seared_heater"
+				}
+			]
 			rewards: [
 				{
 					id: "6CAB1338A11F9FAE"
@@ -88,32 +230,26 @@
 					count: 16
 				}
 			]
-			subtitle: "{chapter.3.quest.2.subtitle}"
-			dependencies: ["751CC4EF84A919C7"]
-			tasks: [
-				{
-					id: "3C8959799657F5E3"
-					type: "item"
-					item: "tconstruct:seared_melter"
-				}
-				{
-					id: "56C67F71E1B37C35"
-					type: "item"
-					item: "tconstruct:seared_heater"
-				}
-			]
 		}
 		{
+			x: -3.0d
+			y: 1.0d
+			subtitle: "{chapter.3.quest.3.subtitle}"
+			description: [
+				"Smelt some &6Grout&r using a Furnace or by Bulk Blasting."
+				""
+				"Seared Bricks are an integral component for various Melter-related things!"
+				""
+				"As a reward, you will get a book, that explains many things about the Melter usage."
+			]
+			dependencies: ["1F79F4D01B219D7E"]
+			id: "751CC4EF84A919C7"
 			tasks: [{
 				id: "19A59A4A0A2A5541"
 				type: "item"
 				item: "tconstruct:seared_brick"
 				count: 32L
 			}]
-			description: ["{chapter.3.quest.3.description.1}"]
-			id: "751CC4EF84A919C7"
-			x: -3.0d
-			y: 1.0d
 			rewards: [
 				{
 					id: "7000E291741C9F53"
@@ -127,10 +263,30 @@
 					count: 32
 				}
 			]
-			subtitle: "{chapter.3.quest.3.subtitle}"
-			dependencies: ["1F79F4D01B219D7E"]
 		}
 		{
+			x: 0.5d
+			y: -0.5d
+			shape: "rsquare"
+			subtitle: "{chapter.3.quest.4.subtitle}"
+			description: [
+				"Don't forget about Ponder - it will explain most of the Fluid Pipe mechanics."
+				""
+				"&6Fluid Pipes&r can move liquids around."
+				""
+				"However, simply conntecting two tanks with a Pipe won't work."
+				""
+				"You must use a &6Mechanical Pump&r to force the flow."
+				""
+				"Mechanical Pumps can push and pull liquids &625&r blocks from the pump."
+				""
+				"Fluid Pipes can only contain one liquid at a time - if two different liquids meet in a pipe, the pipe will break."
+			]
+			dependencies: [
+				"62DAEDF65FB2226B"
+				"0A34148EBAF329B3"
+			]
+			id: "70799237323247B7"
 			tasks: [
 				{
 					id: "10C300B57E40F356"
@@ -144,61 +300,89 @@
 					item: "create:mechanical_pump"
 				}
 			]
-			description: ["{chapter.3.quest.4.description.1}"]
-			x: 0.0d
-			id: "70799237323247B7"
-			y: -0.5d
-			shape: "rsquare"
 			rewards: [{
 				id: "1BC7927E26233E37"
 				type: "item"
 				item: "minecraft:copper_ingot"
 				count: 16
 			}]
-			subtitle: "{chapter.3.quest.4.subtitle}"
-			dependencies: [
-				"62DAEDF65FB2226B"
-				"0A34148EBAF329B3"
-			]
 		}
 		{
-			size: 3.0d
-			x: -4.5d
+			title: "{chapter.3.quest.5.title}"
 			icon: "minecraft:lava_bucket"
-			subtitle: "{chapter.3.quest.5.subtitle}"
+			x: -4.5d
+			y: 3.0d
+			shape: "pentagon"
+			subtitle: "This is only the beginning..."
+			description: [
+				"This chapter's already a doozy to look at, yeah?"
+				""
+				"The Andesite World eased you in, but manufacturing will become more complicated as your crafting techniques expand and resources begin requiring multiple steps."
+				""
+				"It all builds on stuff you've already learned, so it's all about improving your craft."
+				""
+				"You'll find in this chapter that gathering and managing base resources will become more and more of a hassle."
+				""
+				"You will need to begin semi or fully automating basic resources, as crafting everything on demand will become unsustainable."
+				""
+				"But the beauty of industrialization is that you have the power to decide what you need and the tools and tenacity to manufacture limitless amounts of it."
+				""
+				"There is no one true path to success: let your problem-solving skills be your ultimate guide."
+				""
+				"Overcome the revolution of industry and the Moon will welcome you to explore its wonders."
+				""
+				"New resources will be found that can further improve your automation efficiency and capabilities."
+				""
+				"Plus, any production lines set up this chapter will provide for you for the rest of the game."
+			]
+			hide_dependency_lines: true
+			dependencies: ["7354F2BFB2591ECF"]
+			hide: true
+			size: 3.0d
+			min_width: 300
+			id: "1F79F4D01B219D7E"
 			tasks: [{
 				id: "3209A6ED527120C7"
 				type: "checkmark"
 				title: "{chapter.3.quest.5.task.1.title}"
 			}]
-			description: ["{chapter.3.quest.5.description.1}"]
-			id: "1F79F4D01B219D7E"
-			shape: "pentagon"
-			y: 3.0d
-			title: "{chapter.3.quest.5.title}"
 			rewards: [{
 				id: "2347ADEAFB518BEC"
 				type: "xp"
 				xp: 150
 			}]
-			dependencies: ["7354F2BFB2591ECF"]
-			hide_dependency_lines: true
-			hide: true
 		}
 		{
+			x: 5.0d
+			y: -2.0d
+			subtitle: "Industrial filling"
+			description: [
+				"&6Spouts&r spout fluids onto items to create new items."
+				""
+				"They can also interact with some blocks, like Hephaestus Basins and Casting Tables."
+			]
+			dependencies: ["557684C7D7B955B8"]
+			id: "17041A495A41EEFD"
 			tasks: [{
 				id: "2D468975DA98C2B7"
 				type: "item"
 				item: "create:spout"
 			}]
-			description: ["{chapter.3.quest.6.description.1}"]
-			id: "17041A495A41EEFD"
-			x: 4.0d
-			y: -0.5d
-			subtitle: "{chapter.3.quest.6.subtitle}"
-			dependencies: ["557684C7D7B955B8"]
 		}
 		{
+			title: "{chapter.3.quest.7.title}"
+			x: 4.0d
+			y: 0.5d
+			subtitle: "{chapter.3.quest.7.subtitle}"
+			description: [
+				"&6Item Drains&r have the ability to drain liquid from liquid-containing items, such as buckets and bottles."
+				""
+				"&6Hose Pulleys&r can fill or drain a body of liquid, up to the certain threshold."
+				""
+				"&6Portable Fluid Interfaces&r operate much like Portable Storage Interfaces, but they interact with fluids and Tanks on the Contraption instead."
+			]
+			dependencies: ["557684C7D7B955B8"]
+			id: "2D86CC26B4A2E07A"
 			tasks: [
 				{
 					id: "00BB2093C329A339"
@@ -216,34 +400,44 @@
 					item: "create:portable_fluid_interface"
 				}
 			]
-			description: ["{chapter.3.quest.7.description.1}"]
-			id: "2D86CC26B4A2E07A"
-			x: 4.0d
-			y: 0.5d
-			title: "{chapter.3.quest.7.title}"
-			rewards: [{
-				id: "4E57D9CF415F3C86"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 5687404501397719867L
-			}]
-			subtitle: "{chapter.3.quest.7.subtitle}"
-			dependencies: ["557684C7D7B955B8"]
 		}
 		{
+			x: -4.5d
+			y: -1.0d
+			subtitle: "{chapter.3.quest.8.subtitle}"
+			description: [
+				"Put a &6Faucet&r on the side or below the Melter or any other Tank."
+				""
+				"Put a Casting Basin, Table or a Tank below the Faucet to transfer the liquid to them."
+				""
+				"Now, you can right-click the Faucet to start pouring liquids!"
+				""
+				"You can power the Faucet with Redstone in order to cast continuously!"
+			]
+			dependencies: ["0A34148EBAF329B3"]
+			id: "6D5301A68808F8E8"
 			tasks: [{
 				id: "590F0D26EB4E4101"
 				type: "item"
 				item: "tconstruct:seared_faucet"
 			}]
-			description: ["{chapter.3.quest.8.description.1}"]
-			id: "6D5301A68808F8E8"
-			x: -4.5d
-			y: -1.0d
-			subtitle: "{chapter.3.quest.8.subtitle}"
-			dependencies: ["0A34148EBAF329B3"]
 		}
 		{
+			title: "{chapter.3.quest.9.title}"
+			x: -5.5d
+			y: -2.0d
+			shape: "rsquare"
+			description: [
+				"&6Casting Basins and Tables&r allow you to shape molten metal into various forms: blocks, ingots, tool parts - you name it!"
+				""
+				"&6Casts&r are required to craft ingots, nuggets and tool parts."
+				""
+				"&6Sand Casts&r can be swiftly created, however they only last for 1 use."
+				""
+				"&6Gold Casts&r are much more prefferable."
+			]
+			dependencies: ["6D5301A68808F8E8"]
+			id: "1519A1EA2CFA6FB1"
 			tasks: [
 				{
 					id: "782BA71DB02EEEEC"
@@ -256,21 +450,27 @@
 					item: "tconstruct:seared_table"
 				}
 			]
-			description: ["{chapter.3.quest.9.description.1}"]
-			x: -5.5d
-			id: "1519A1EA2CFA6FB1"
-			y: -2.0d
-			shape: "rsquare"
-			title: "{chapter.3.quest.9.title}"
 			rewards: [{
 				id: "5FCAC2FEAE3BBD14"
 				type: "item"
 				item: "tconstruct:ingot_sand_cast"
 				count: 3
 			}]
-			dependencies: ["6D5301A68808F8E8"]
 		}
 		{
+			title: "{chapter.3.quest.10.title}"
+			x: 6.5d
+			y: -2.0d
+			subtitle: "{chapter.3.quest.10.subtitle}"
+			description: [
+				"The &6Explorer's Compass&r will lead you to a variety of different structures."
+				""
+				"I would not recommend searching for a &7Stronghold&r. The End Portal does not work."
+				""
+				"You can also find &6Shimmer Lakes&r, which will be important pretty soon..."
+			]
+			dependencies: ["17041A495A41EEFD"]
+			id: "33B14FCDB52879E4"
 			tasks: [{
 				id: "720A3210935826F3"
 				type: "item"
@@ -280,60 +480,27 @@
 					tag: { }
 				}
 			}]
-			description: ["{chapter.3.quest.10.description.1}"]
-			id: "33B14FCDB52879E4"
-			x: 5.0d
-			y: 0.5d
-			title: "{chapter.3.quest.10.title}"
 			rewards: [{
 				id: "31FB455D6634DC34"
 				type: "item"
 				item: "minecraft:map"
 			}]
-			subtitle: "{chapter.3.quest.10.subtitle}"
-			dependencies: ["17041A495A41EEFD"]
 		}
 		{
-			size: 1.25d
-			description: ["{chapter.3.quest.11.description.1}"]
-			rewards: [
-				{
-					id: "2158B503350C965A"
-					type: "item"
-					item: {
-						id: "minecraft:potion"
-						Count: 1b
-						tag: {
-							Potion: "minecraft:night_vision"
-						}
-					}
-					count: 3
-				}
-				{
-					id: "3BBAB178558DEFD6"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 2053519168689179764L
-				}
-			]
-			id: "624026189BBACBB0"
-			x: 12.0d
-			y: -0.5d
+			title: "LET'S GO!"
+			x: 11.0d
+			y: -2.0d
 			shape: "hexagon"
-			title: "{chapter.3.quest.11.title}"
-			dependency_requirement: "one_completed"
 			subtitle: "{chapter.3.quest.11.subtitle}"
+			description: ["{chapter.3.quest.11.description.1}"]
 			dependencies: [
 				"4D7BFA8973D61425"
 				"343B8B2BF76B1D3B"
 			]
+			dependency_requirement: "one_completed"
+			size: 1.25d
+			id: "624026189BBACBB0"
 			tasks: [
-				{
-					id: "7AB8005F32B46DEF"
-					type: "advancement"
-					advancement: "ad_astra:space_suit"
-					criterion: ""
-				}
 				{
 					id: "74883FDF073BAA11"
 					type: "item"
@@ -379,162 +546,248 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "2158B503350C965A"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:night_vision"
+					}
+				}
+				count: 3
+			}]
 		}
 		{
-			size: 1.25d
-			description: ["{chapter.3.quest.12.description.1}"]
-			id: "0A71AC65808AFBE5"
-			x: 12.0d
-			y: -3.5d
-			shape: "hexagon"
 			title: "{chapter.3.quest.12.title}"
-			rewards: [
-				{
-					id: "64CA01C1E20C102F"
-					type: "item"
-					item: "createastral:shimmering_stone"
-					count: 4
-				}
-				{
-					id: "355697A3D304C28F"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 5687404501397719867L
-				}
-			]
+			x: 11.0d
+			y: -5.0d
+			shape: "hexagon"
 			subtitle: "{chapter.3.quest.12.subtitle}"
+			description: [
+				"Never heard of it."
+				""
+				"Instead, you will build a &9Moon&r portal!"
+				""
+				"Place &6Shimmering Stone&r in a shape of a regular portal."
+				""
+				"Then, ignite the portal with the &6Astral Conduit&r!"
+				""
+				"Make sure to have a Space Suit equipped!"
+				""
+				"Please note:"
+				"- Trains CAN go through Moon portals."
+				"- The quest reward allows you to have a portal with filled corners without wasting additional Shimmer or Moon Stone!"
+			]
 			dependencies: [
 				"00F3EA4A8FB5B11B"
 				"08BC73F24043BB91"
 			]
+			size: 1.25d
+			id: "0A71AC65808AFBE5"
 			tasks: [{
 				id: "2DBDDF4C51DE3879"
 				type: "item"
 				item: "createastral:shimmering_stone"
 				count: 10L
 			}]
+			rewards: [{
+				id: "64CA01C1E20C102F"
+				type: "item"
+				item: "createastral:shimmering_stone"
+				count: 4
+			}]
 		}
 		{
+			title: "{chapter.3.quest.13.title}"
+			x: 10.5d
+			y: -3.5d
+			shape: "hexagon"
+			subtitle: "{chapter.3.quest.13.subtitle}"
+			dependencies: ["00F3EA4A8FB5B11B"]
 			size: 1.25d
 			id: "33F13EB2C45C36B3"
-			x: 11.5d
-			y: -2.0d
-			shape: "hexagon"
-			title: "{chapter.3.quest.13.title}"
+			tasks: [{
+				id: "0C1658CB1EAE88C0"
+				type: "item"
+				item: {
+					id: "createastral:astral_conduit"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
 			rewards: [{
 				id: "763A441926286C68"
 				type: "item"
 				item: "minecraft:enchanted_golden_apple"
 			}]
-			subtitle: "{chapter.3.quest.13.subtitle}"
-			dependencies: ["00F3EA4A8FB5B11B"]
-			tasks: [{
-				id: "0C1658CB1EAE88C0"
-				type: "item"
-				item: "createastral:astral_conduit"
-			}]
 		}
 		{
+			x: 9.5d
+			y: -1.0d
+			subtitle: "Loads Oxygen into your Space Suit!"
+			description: [
+				"No power is needed to this machine to load Oxygen into your Space Suit!"
+				""
+				"Also, be aware that this pack changes many recipes - you can't create &7Oxygen&r from &7Water&r here, use an &6Electrolyzer&r."
+			]
+			dependencies: ["343B8B2BF76B1D3B"]
+			optional: true
+			id: "4D7BFA8973D61425"
 			tasks: [{
 				id: "773F68FCB1D6F848"
 				type: "item"
 				item: "ad_astra:oxygen_loader"
 			}]
-			description: ["{chapter.3.quest.14.description.1}"]
-			id: "4D7BFA8973D61425"
-			x: 10.5d
-			y: 0.5d
-			subtitle: "{chapter.3.quest.14.subtitle}"
-			dependencies: ["343B8B2BF76B1D3B"]
-			optional: true
 		}
 		{
-			tasks: [{
-				id: "16EB4FE518665789"
-				type: "item"
-				item: {
-					id: "custommachinery:custom_machine_item"
-					Count: 1b
-					tag: {
-						machine: "createastral:electrolyser"
+			x: 8.0d
+			y: -2.0d
+			subtitle: "{chapter.3.quest.15.subtitle}"
+			description: [
+				"Don't confuse this with a Tech Reborn Electrolyzer!"
+				""
+				"Ponder the Electrolyzer to learn how to build it."
+				"Pump Water into the Electrolyser."
+				""
+				"If the multiblock is done correctly, the Electrolyser should start producing Oxygen."
+				""
+				"Pump Oxygen from the Electrolyzer - you don't need filters as Oxygen is the only liquid that can be extracted."
+			]
+			dependencies: ["267CD8D04921402E"]
+			id: "343B8B2BF76B1D3B"
+			tasks: [
+				{
+					id: "16EB4FE518665789"
+					type: "item"
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "createastral:electrolyser"
+						}
 					}
 				}
-			}]
-			description: [
-				"{chapter.3.quest.15.description.1}"
-				"{image:createastral:textures/item/electrolyser_blueprint.png width:100 height:100 align:1 fit:true}"
-				"{chapter.3.quest.15.description.2}"
-			]
-			id: "343B8B2BF76B1D3B"
-			x: 9.0d
-			y: -0.5d
-			rewards: [
 				{
-					id: "14B1F04D575BEA47"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 5687404501397719867L
+					id: "7E98FDE54891D542"
+					type: "item"
+					item: "createastral:copper_heating_coil"
+					count: 8L
 				}
 				{
-					id: "35E6D992F31F03A1"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 2053519168689179764L
+					id: "166ADE0858E12086"
+					type: "item"
+					item: "create:copper_casing"
+					count: 17L
 				}
-			]
-			subtitle: "{chapter.3.quest.15.subtitle}"
-			dependencies: [
-				"267CD8D04921402E"
-				"3C26E1DEA0265C03"
 			]
 		}
 		{
+			x: 3.5d
+			y: -2.5d
+			shape: "gear"
+			subtitle: "{chapter.3.quest.16.subtitle}"
+			description: [
+				"&6Electron Tubes&r are used in advanced Create technology."
+				""
+				"So far, there's not much use for them, but when you get access to Brass, they will become important."
+				""
+				"Tip: To polish Rose Quartz manually, hold &6Sand Paper&r in one hand, &6Rose Quartz&r in other, and hold Right-click."
+				""
+				"And then the Sand Paper breaks after 8 uses."
+			]
+			dependencies: [
+				"0F4C452C9C9AB1B8"
+				"17041A495A41EEFD"
+			]
+			id: "32B9EAE28E1C5D7A"
 			tasks: [{
 				id: "059E87732C2699DC"
 				type: "item"
 				item: "create:electron_tube"
 			}]
-			description: ["{chapter.3.quest.16.description.1}"]
-			x: 5.0d
-			id: "32B9EAE28E1C5D7A"
-			y: -0.5d
-			shape: "gear"
 			rewards: [{
 				id: "1A4E57DF864AD13C"
 				type: "item"
 				item: "minecraft:redstone"
 				count: 24
 			}]
-			subtitle: "{chapter.3.quest.16.subtitle}"
-			dependencies: [
-				"0F4C452C9C9AB1B8"
-				"17041A495A41EEFD"
-			]
 		}
 		{
+			x: 5.0d
+			y: -3.5d
+			subtitle: "{chapter.3.quest.17.subtitle}"
+			description: [
+				"&6Redstone Chips&r are circuits specialized for radio equipment - like radios from Phonos."
+				""
+				"They will be used for the next thing required to go to the Moon."
+				""
+				"Make sure to craft more than one of these - you will need multiple!"
+			]
+			dependencies: ["32B9EAE28E1C5D7A"]
+			id: "267CD8D04921402E"
 			tasks: [{
 				id: "799B7B25F4911437"
 				type: "item"
 				item: "phonos:redstone_chip"
 			}]
-			description: ["{chapter.3.quest.17.description.1}"]
-			id: "267CD8D04921402E"
-			x: 8.0d
-			y: -0.5d
-			subtitle: "{chapter.3.quest.17.subtitle}"
-			dependencies: ["32B9EAE28E1C5D7A"]
+			rewards: [{
+				id: "6CD1183CC7833669"
+				type: "item"
+				item: {
+					id: "create:schematic"
+					Count: 1b
+					tag: {
+						Anchor: {
+							Z: 0
+							X: 0
+							Y: 0
+						}
+						Owner: "Laskyyy"
+						Deployed: 0b
+						File: "[AstralExamples] Electrolyzer.nbt"
+						Rotation: "NONE"
+						Mirror: "NONE"
+						Bounds: [
+							7
+							6
+							7
+						]
+					}
+				}
+			}]
 		}
 		{
+			title: "{chapter.3.quest.18.title}"
+			x: 2.0d
+			y: -2.0d
+			shape: "rsquare"
+			subtitle: "{chapter.3.quest.18.subtitle}"
+			description: [
+				"&6Rose Gold&r is an alloy of &6Molten Copper&r and &6Molten Gold&r."
+				""
+				"But how do I alloy..."
+				""
+				"By mixing them in the Basin, of course!"
+				""
+				"Pump &6Molten Gold&r and &6Molten Copper&r into the Basin."
+				"Don't worry - Basins only accept up to 1 bucket of each fluid."
+				""
+				"The resulting &6Rose Gold&r can be either pumped out with an aid of a &6Smart Fluid Pipe&r, or by placing another &6Basin&r or an &6Item Drain&r diagonally downwards relative to the basin."
+				""
+				"&lThis recipe does not need heating!&r"
+				"The recipe you are performing is taking &6molten metals&r, not &6ingots&r!"
+			]
+			dependencies: ["70799237323247B7"]
+			id: "0F4C452C9C9AB1B8"
 			tasks: [{
 				id: "1BC2FEBA428BF095"
 				type: "item"
 				item: "tconstruct:molten_rose_gold_bucket"
 			}]
-			description: ["{chapter.3.quest.18.description.1}"]
-			id: "0F4C452C9C9AB1B8"
-			x: 3.5d
-			y: -1.5d
-			title: "{chapter.3.quest.18.title}"
 			rewards: [
 				{
 					id: "44A1974D27454D3A"
@@ -548,18 +801,28 @@
 					item: "minecraft:golden_apple"
 				}
 			]
-			subtitle: "{chapter.3.quest.18.subtitle}"
-			dependencies: ["70799237323247B7"]
 		}
 		{
-			size: 3.0d
-			description: ["{chapter.3.quest.19.description.1}"]
-			id: "15B9947ABCCB882F"
-			icon: "ad_astra:moon_globe"
-			x: 14.0d
-			y: -2.0d
-			shape: "gear"
 			title: "{chapter.3.quest.19.title}"
+			icon: "ad_astra:moon_globe"
+			x: 13.0d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "{chapter.3.quest.19.subtitle}"
+			description: ["{chapter.3.quest.19.description.1}"]
+			dependencies: [
+				"33F13EB2C45C36B3"
+				"624026189BBACBB0"
+				"0A71AC65808AFBE5"
+			]
+			size: 3.0d
+			id: "15B9947ABCCB882F"
+			tasks: [{
+				id: "26E0A4319968F290"
+				type: "dimension"
+				title: "{chapter.3.quest.19.task.1.title}"
+				dimension: "ad_astra:moon"
+			}]
 			rewards: [
 				{
 					id: "22851C938DEDAC0C"
@@ -592,26 +855,26 @@
 					count: 8
 				}
 			]
-			dependencies: [
-				"33F13EB2C45C36B3"
-				"624026189BBACBB0"
-				"0A71AC65808AFBE5"
-			]
-			subtitle: "{chapter.3.quest.19.subtitle}"
-			tasks: [{
-				id: "26E0A4319968F290"
-				type: "dimension"
-				title: "{chapter.3.quest.19.task.1.title}"
-				dimension: "ad_astra:moon"
-			}]
 		}
 		{
+			title: "{chapter.3.quest.20.title}"
+			x: 7.0d
+			y: -3.5d
+			subtitle: "{chapter.3.quest.20.subtitle}"
+			description: [
+				"&6Shimmer&r can be found in underground &6Shimmer Lakes&r, which can be found with a use of a Structure Compass."
+				""
+				"Alternatively, Shimmer can be produced by mixing Amethyst Dust and Glow Ink Sacs together."
+			]
+			min_required_dependencies: 1
+			dependencies: ["267CD8D04921402E"]
+			dependency_requirement: "one_completed"
+			id: "00F3EA4A8FB5B11B"
 			tasks: [{
 				id: "1BE3D8C8806EA239"
 				type: "item"
 				item: "kubejs:shimmer_bucket"
 			}]
-			description: ["{chapter.3.quest.20.description.1}"]
 			rewards: [{
 				id: "31F9BBCBD48F1BFA"
 				type: "item"
@@ -624,55 +887,63 @@
 				}
 				count: 3
 			}]
-			min_required_dependencies: 1
-			id: "00F3EA4A8FB5B11B"
-			x: 8.0d
-			y: -2.0d
-			title: "{chapter.3.quest.20.title}"
-			dependency_requirement: "one_completed"
-			subtitle: "{chapter.3.quest.20.subtitle}"
-			dependencies: [
-				"267CD8D04921402E"
-				"586FA45ED205784F"
-			]
 		}
 		{
+			x: 5.0d
+			y: -0.5d
+			subtitle: "Layered Casings!"
+			description: [
+				"&6Copper Casings&r are largely used for fluid machines, much like Andesite Casings used for kinetic machines."
+				""
+				"Copper Casings can also cover pipes, locking their connections with neighboring blocks - check out the Ponder for more info."
+				""
+				"When making the next tier of casings, you'll be needing a lot of the previous tiered stuff too."
+				""
+				"As such, automation is recommended to make the production easier."
+			]
+			dependencies: [
+				"70799237323247B7"
+				"41926BDF2F7890F6"
+			]
+			id: "557684C7D7B955B8"
 			tasks: [{
 				id: "6CC8E342EABC3432"
 				type: "item"
 				item: "create:copper_casing"
 			}]
-			description: ["{chapter.3.quest.21.description.1}"]
-			id: "557684C7D7B955B8"
-			x: 3.0d
-			y: -0.5d
-			subtitle: "{chapter.3.quest.21.subtitle}"
-			dependencies: [
-				"70799237323247B7"
-				"41926BDF2F7890F6"
-			]
 		}
 		{
+			title: "{chapter.3.quest.24.title}"
+			x: -1.0d
+			y: -2.0d
+			shape: "rsquare"
+			description: ["You can produce Andesite Alloy with &6triple&r efficiency using a Mechanical Mixer."]
+			dependencies: ["70799237323247B7"]
+			id: "5A1B85C3323DDBD1"
 			tasks: [{
 				id: "57BB6CFDC8C9F731"
 				type: "item"
 				item: "kubejs:compound_mixture_bucket"
 			}]
-			x: -1.0d
-			id: "5A1B85C3323DDBD1"
-			y: -4.0d
-			shape: "rsquare"
-			title: "{chapter.3.quest.24.title}"
 			rewards: [{
 				id: "0C0EDF94D00BFA3B"
 				type: "item"
 				item: "create:andesite_alloy"
 				count: 16
 			}]
-			subtitle: "{chapter.3.quest.24.subtitle}"
-			dependencies: ["6AEEE2B22E28945B"]
 		}
 		{
+			title: "{chapter.3.quest.25.title}"
+			x: -4.0d
+			y: -3.5d
+			subtitle: "{chapter.3.quest.25.subtitle}"
+			description: [
+				"The &6Tinker's Anvil&r allows you to assemble tools, just like the Tinker Station."
+				""
+				"However, unlike Tinker Station, it can produce &6broad tools&r too, such as Broad Axes, Sledge Hammers, or Excavators."
+			]
+			dependencies: ["1519A1EA2CFA6FB1"]
+			id: "5042E544D3181FAC"
 			tasks: [{
 				id: "622223D1E4140C47"
 				type: "item"
@@ -684,32 +955,19 @@
 					}
 				}
 			}]
-			description: ["{chapter.3.quest.25.description.1}"]
-			id: "5042E544D3181FAC"
-			x: -4.5d
-			y: -3.5d
-			title: "{chapter.3.quest.25.title}"
-			subtitle: "{chapter.3.quest.25.subtitle}"
-			dependencies: ["1519A1EA2CFA6FB1"]
 		}
 		{
-			size: 1.25d
-			id: "68FDC2C761EF6BC0"
-			x: -5.75d
-			y: -4.25d
 			title: "{chapter.3.quest.26.title}"
-			rewards: [{
-				id: "7EF43D1201B1F35A"
-				type: "item"
-				item: "minecraft:redstone_block"
-				count: 5
-			}]
-			subtitle: "{chapter.3.quest.26.subtitle}"
+			x: -5.5d
+			y: -4.375d
+			subtitle: "Bronze is a great material for your Hephaestus tools!"
 			dependencies: [
 				"5042E544D3181FAC"
 				"7856BCA1DB363174"
 			]
+			size: 1.25d
 			min_required_tasks: 1
+			id: "68FDC2C761EF6BC0"
 			tasks: [
 				{
 					id: "1C272BE87714B7EB"
@@ -721,6 +979,7 @@
 							Material: "tconstruct:bronze"
 						}
 					}
+					match_nbt: true
 				}
 				{
 					id: "5BBF1C4CAF0AEEF0"
@@ -732,6 +991,7 @@
 							Material: "tconstruct:bronze"
 						}
 					}
+					match_nbt: true
 				}
 				{
 					id: "50862D4CC58352D9"
@@ -743,10 +1003,32 @@
 							Material: "tconstruct:bronze"
 						}
 					}
+					match_nbt: true
 				}
 			]
+			rewards: [{
+				id: "7EF43D1201B1F35A"
+				type: "item"
+				item: "minecraft:redstone_block"
+				count: 5
+			}]
 		}
 		{
+			title: "{chapter.3.quest.27.title}"
+			icon: "minecraft:blue_dye"
+			x: -4.0d
+			y: -4.5d
+			subtitle: "&9Luck&r requires this recipe!"
+			description: [
+				"&9Luck&r works like Fortune and Looting combined!"
+				""
+				"It's an &6ability&r, so it uses a special Ability slot to apply."
+				""
+				"Further levels of this modifier don't require any modifier slots."
+			]
+			dependencies: ["5042E544D3181FAC"]
+			optional: true
+			id: "1717E5063CC231DD"
 			tasks: [
 				{
 					id: "0BF6EB8118C0A5AD"
@@ -760,16 +1042,16 @@
 					item: "minecraft:blue_dye"
 				}
 			]
-			id: "1717E5063CC231DD"
-			icon: "minecraft:blue_dye"
-			x: -3.5d
-			y: -4.5d
-			title: "{chapter.3.quest.27.title}"
-			subtitle: "{chapter.3.quest.27.subtitle}"
-			dependencies: ["5042E544D3181FAC"]
-			optional: true
 		}
 		{
+			title: "{chapter.3.quest.28.title}"
+			icon: "minecraft:diamond"
+			x: -4.0d
+			y: -5.5d
+			subtitle: "&9Luckier&r requires this recipe!"
+			dependencies: ["1717E5063CC231DD"]
+			optional: true
+			id: "1C10D7A2828DE436"
 			tasks: [
 				{
 					id: "16168BDE7ED0509A"
@@ -783,16 +1065,16 @@
 					item: "minecraft:diamond"
 				}
 			]
-			id: "1C10D7A2828DE436"
-			icon: "minecraft:diamond"
-			x: -3.5d
-			y: -5.5d
-			title: "{chapter.3.quest.28.title}"
-			subtitle: "{chapter.3.quest.28.subtitle}"
-			dependencies: ["1717E5063CC231DD"]
-			optional: true
 		}
 		{
+			title: "{chapter.3.quest.29.title}"
+			icon: "minecraft:deepslate_diamond_ore"
+			x: -4.0d
+			y: -6.5d
+			subtitle: "&9Luckiest&r requires this recipe!"
+			dependencies: ["1C10D7A2828DE436"]
+			optional: true
+			id: "25085C910155E06D"
 			tasks: [
 				{
 					id: "5C84001C06B8BE8F"
@@ -807,16 +1089,16 @@
 					item: "minecraft:diamond_block"
 				}
 			]
-			id: "25085C910155E06D"
-			icon: "minecraft:deepslate_diamond_ore"
-			x: -3.5d
-			y: -6.5d
-			title: "{chapter.3.quest.29.title}"
-			subtitle: "{chapter.3.quest.29.subtitle}"
-			dependencies: ["1C10D7A2828DE436"]
-			optional: true
 		}
 		{
+			title: "{chapter.3.quest.30.title}"
+			x: 7.0d
+			y: -4.5d
+			subtitle: "{chapter.3.quest.30.subtitle}"
+			description: ["{chapter.3.quest.30.description.1}"]
+			hide_dependency_lines: true
+			dependencies: ["557684C7D7B955B8"]
+			id: "586FA45ED205784F"
 			tasks: [{
 				id: "74C312D1BA7AE516"
 				type: "structure"
@@ -829,79 +1111,53 @@
 				}
 				structure: "astralrails:shimmer_lake"
 			}]
-			description: ["{chapter.3.quest.30.description.1}"]
-			id: "586FA45ED205784F"
-			x: 7.0d
-			y: -2.0d
-			title: "{chapter.3.quest.30.title}"
-			subtitle: "{chapter.3.quest.30.subtitle}"
-			dependencies: ["557684C7D7B955B8"]
-			hide_dependency_lines: true
 		}
 		{
-			tasks: [
-				{
-					id: "332E2B7A9B05C112"
-					type: "item"
-					item: "createastral:copper_heating_coil"
-					count: 8L
-				}
-				{
-					id: "13E157B81D7B2039"
-					type: "item"
-					item: "create:copper_casing"
-					count: 17L
-				}
-			]
-			description: ["{chapter.3.quest.31.description.1}"]
-			id: "3C26E1DEA0265C03"
-			x: 9.0d
-			y: 0.5d
-			title: "{chapter.3.quest.31.title}"
-			subtitle: "{chapter.3.quest.31.subtitle}"
-			dependencies: ["32B9EAE28E1C5D7A"]
-			hide_dependency_lines: true
-		}
-		{
+			x: 2.5d
+			y: -4.0d
+			subtitle: "Fashionable storage!"
+			description: ["{chapter.3.quest.32.description.1}"]
+			dependencies: ["0F4C452C9C9AB1B8"]
+			id: "069634A427DE403F"
 			tasks: [{
 				id: "363C22605DD3C4ED"
 				type: "item"
 				item: "reinfchest:gold_chest"
 			}]
-			description: ["{chapter.3.quest.32.description.1}"]
-			id: "069634A427DE403F"
-			x: 3.5d
-			y: -2.5d
-			rewards: [{
-				id: "3334E8B15B964A0B"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 2053519168689179764L
-			}]
-			subtitle: "{chapter.3.quest.32.subtitle}"
-			dependencies: ["0F4C452C9C9AB1B8"]
 		}
 		{
+			title: "{chapter.3.quest.33.title}"
+			x: 0.5d
+			y: -2.0d
+			shape: "rsquare"
+			description: ["By mixing Copper and Tin Ingots in a Basin using a Mechanical Mixer, you can produce Bronze with double efficiency!"]
+			dependencies: ["70799237323247B7"]
+			id: "0E939F8167F47710"
 			tasks: [{
 				id: "48920459D1BBDA83"
 				type: "item"
 				item: "tconstruct:molten_bronze_bucket"
 			}]
-			x: 0.0d
-			id: "0E939F8167F47710"
-			y: -4.0d
-			shape: "rsquare"
-			title: "{chapter.3.quest.33.title}"
 			rewards: [{
 				id: "591B68F92188CBBC"
 				type: "item"
 				item: "create:cogwheel"
 				count: 16
 			}]
-			subtitle: "{chapter.3.quest.33.subtitle}"
-			dependencies: ["6AEEE2B22E28945B"]
 		}
 		{
+			icon: "tconstruct:gear_cast"
+			x: 0.5d
+			y: -3.0d
+			subtitle: "You can cast cogwheels out of Molten Bronze!"
+			description: [
+				"You can use &6Coin Casts&r to cast &nsmall Cogwheels&r."
+				"You can use &6Gear Casts&r to cast &nLarge Cogwheels."
+				""
+				"This method is more expensive in Bronze, but you won't use any Andesite Alloy!"
+			]
+			dependencies: ["0E939F8167F47710"]
+			id: "15069E711021763F"
 			tasks: [
 				{
 					id: "243CAF3164E51094"
@@ -914,15 +1170,24 @@
 					item: "tconstruct:coin_cast"
 				}
 			]
-			description: ["{chapter.3.quest.34.description.1}"]
-			icon: "tconstruct:gear_cast"
-			id: "15069E711021763F"
-			x: 0.0d
-			y: -5.0d
-			subtitle: "{chapter.3.quest.34.subtitle}"
-			dependencies: ["0E939F8167F47710"]
 		}
 		{
+			title: "{chapter.3.quest.35.title}"
+			icon: "techreborn:sap"
+			x: -2.0d
+			y: 3.0d
+			subtitle: "{chapter.3.quest.35.subtitle}"
+			description: [
+				"For the new inventions, a new resource will be needed - &6Sap&r."
+				""
+				"First, find some Rubber Trees - they are common in Plains or in Forests."
+				""
+				"Then, use a &6Treetap&r on a log that has Sap on it to extract it."
+				""
+				"You can also mill Rubber Logs for Sap."
+			]
+			dependencies: ["1F79F4D01B219D7E"]
+			id: "1FAC54D118F09831"
 			tasks: [
 				{
 					id: "4C432F24E70A5F96"
@@ -942,23 +1207,27 @@
 					count: 4L
 				}
 			]
-			description: ["{chapter.3.quest.35.description.1}"]
-			id: "1FAC54D118F09831"
-			icon: "techreborn:sap"
-			x: -2.0d
-			y: 2.5d
-			title: "{chapter.3.quest.35.title}"
-			subtitle: "{chapter.3.quest.35.subtitle}"
-			dependencies: ["1F79F4D01B219D7E"]
 		}
 		{
-			size: 1.5d
-			description: ["{chapter.3.quest.36.description.1}"]
-			id: "62DAEDF65FB2226B"
-			x: 0.0d
-			y: 2.5d
-			shape: "rsquare"
 			title: "{chapter.3.quest.36.title}"
+			x: 0.5d
+			y: 3.0d
+			shape: "rsquare"
+			subtitle: "Mix up some Sap in a Mixer and get this lovely substance!"
+			description: [
+				"&6Rubber&r is used for a lot of important things."
+				""
+				"You'll want to farm some Sap."
+			]
+			dependencies: ["1FAC54D118F09831"]
+			size: 1.5d
+			id: "62DAEDF65FB2226B"
+			tasks: [{
+				id: "744B5A4CE8D4DBD4"
+				type: "item"
+				item: "techreborn:rubber"
+				count: 4L
+			}]
 			rewards: [
 				{
 					id: "4ABE03E4C2915C68"
@@ -979,56 +1248,70 @@
 					count: 6
 				}
 			]
-			subtitle: "{chapter.3.quest.36.subtitle}"
-			dependencies: ["1FAC54D118F09831"]
-			tasks: [{
-				id: "744B5A4CE8D4DBD4"
-				type: "item"
-				item: "techreborn:rubber"
-				count: 4L
-			}]
 		}
 		{
+			x: 1.0d
+			y: 4.5d
+			subtitle: "{chapter.3.quest.37.subtitle}"
+			description: [
+				"&6Mechanical Belts&r can move items on them around."
+				""
+				"Items dropped onto the Belt will be placed on it."
+				""
+				"Items on the Belt can be Bulk processed, although sometimes the automation might get stuck - Use a &6Depot&r at the end of the Belt line to prevent items from being stuck."
+				""
+				"Mechanical Belts can also insert items to Chutes, Millstones, or aforementioned Depots, placed one block behind the end of the belt."
+			]
+			dependencies: ["62DAEDF65FB2226B"]
+			id: "710C81D7DE6C7FCB"
 			tasks: [{
 				id: "69CD74B242D4D7D4"
 				type: "item"
 				item: "create:belt_connector"
 			}]
-			description: ["{chapter.3.quest.37.description.1}"]
-			id: "710C81D7DE6C7FCB"
-			x: 1.0d
-			y: 4.5d
 			rewards: [{
 				id: "111A04CC66B24879"
 				type: "item"
 				item: "create:belt_connector"
 				count: 3
 			}]
-			subtitle: "{chapter.3.quest.37.subtitle}"
-			dependencies: ["62DAEDF65FB2226B"]
 		}
 		{
+			title: "{chapter.3.quest.38.title}"
+			x: -1.0d
+			y: 4.5d
+			subtitle: "Sturdier than Copper Chests!"
+			description: [
+				"&6Sturdy Chests&r hold 54 stacks of items - 9 more than Copper Chests!"
+				""
+				"That &6Sturdy Chest&r you earned from the Traveler's Armor quest in Chapter 0.5 doesn't count."
+			]
+			dependencies: ["62DAEDF65FB2226B"]
+			id: "13B2095F8EE6B4D3"
 			tasks: [{
 				id: "716518D91561DEFD"
 				type: "item"
 				item: "reinfchest:iron_chest"
 				count: 2L
 			}]
-			description: ["{chapter.3.quest.38.description.1}"]
-			id: "13B2095F8EE6B4D3"
-			x: -1.0d
-			y: 4.5d
-			title: "{chapter.3.quest.38.title}"
-			rewards: [{
-				id: "1A5A790C80B3C933"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 2053519168689179764L
-			}]
-			subtitle: "{chapter.3.quest.38.subtitle}"
-			dependencies: ["62DAEDF65FB2226B"]
 		}
 		{
+			x: 5.0d
+			y: 3.0d
+			subtitle: "Whoa, Sequenced Assembly already?"
+			description: [
+				"The &6Deployer&r is very special - it acts as a player right-clicking or left-clicking."
+				""
+				"Deployers always interact with stuff 2 blocks ahead of itself."
+				""
+				"Deployers can also be used to apply items onto blocks on a Depot or a Belt."
+				""
+				"They can also polish Rose Quartz much faster than you can."
+				""
+				"Useful on contraptions to automatically place blocks!"
+			]
+			dependencies: ["62DAEDF65FB2226B"]
+			id: "41926BDF2F7890F6"
 			tasks: [
 				{
 					id: "116A1C6B3FAAAE36"
@@ -1041,23 +1324,25 @@
 					item: "create:deployer"
 				}
 			]
-			description: ["{chapter.3.quest.39.description.1}"]
-			id: "41926BDF2F7890F6"
-			x: 3.0d
-			y: 2.5d
-			subtitle: "{chapter.3.quest.39.subtitle}"
-			dependencies: ["62DAEDF65FB2226B"]
 		}
 		{
+			x: 2.0d
+			y: 4.5d
+			subtitle: "{chapter.3.quest.40.subtitle}"
+			description: [
+				"&6Andesite Funnels&r can extract items from the inventory 1 item at a time."
+				""
+				"They can either place items on the Belt or Depot, or drop items in-world if there are neither."
+				""
+				"Very useful to kickstart the belt spaghetti."
+			]
+			dependencies: ["62DAEDF65FB2226B"]
+			id: "18159A0691993E5B"
 			tasks: [{
 				id: "781EE507F4A75175"
 				type: "item"
 				item: "create:andesite_funnel"
 			}]
-			description: ["{chapter.3.quest.40.description.1}"]
-			id: "18159A0691993E5B"
-			x: 2.0d
-			y: 4.5d
 			rewards: [
 				{
 					id: "6DAF91C21A5DA98B"
@@ -1072,31 +1357,57 @@
 					count: 2
 				}
 			]
-			subtitle: "{chapter.3.quest.40.subtitle}"
-			dependencies: ["62DAEDF65FB2226B"]
 		}
 		{
+			title: "{chapter.3.quest.41.title}"
+			x: -2.0d
+			y: 4.5d
+			shape: "gear"
+			subtitle: "{chapter.3.quest.41.subtitle}"
+			description: [
+				"&6Engineer's Goggles&r allow you to see:"
+				"- Stress usages of machines,"
+				"- Contents of Chutes, Tunnels, or Tanks,"
+				"- Exact readouts from Speedometer and Stressometer,"
+				"- SU generation rates for stress generators and boilers,"
+				"And more."
+				""
+				"Definitely invest in a pair."
+			]
+			dependencies: ["62DAEDF65FB2226B"]
+			id: "22F037A9108D116A"
 			tasks: [{
 				id: "52B4D82C0E3E59E2"
 				type: "item"
 				item: "create:goggles"
 			}]
-			description: ["{chapter.3.quest.41.description.1}"]
-			id: "22F037A9108D116A"
-			x: -2.0d
-			y: 4.5d
-			shape: "gear"
-			title: "{chapter.3.quest.41.title}"
 			rewards: [{
 				id: "65E2D30DE201400C"
 				type: "item"
 				item: "create:stressometer"
 				count: 3
 			}]
-			subtitle: "{chapter.3.quest.41.subtitle}"
-			dependencies: ["62DAEDF65FB2226B"]
 		}
 		{
+			title: "{chapter.3.quest.42.title}"
+			icon: "create:mechanical_bearing"
+			x: 4.0d
+			y: 7.0d
+			subtitle: "{chapter.3.quest.42.subtitle}"
+			description: [
+				"Mechanical Bearings can attach a structure on top."
+				""
+				"When activated, the resulting contraption will start spinning, and all actors (like Mechanical Saws, Drills, Deployers, etc.) will activate."
+				""
+				"Blocks destroyed by actors such as Mechanical Saws and Drills will be inserted into a Chest, Barrel, Vault or a Toolbox on a contraption, if present."
+				""
+				"To extract items from the contraption, use &6Portable Storage Interfaces&r."
+			]
+			dependencies: [
+				"38814494AB07C2D8"
+				"0C3A39AC4C3D10A2"
+			]
+			id: "6C28C7FB221EA517"
 			tasks: [
 				{
 					id: "52F6062C88CED3FD"
@@ -1110,19 +1421,21 @@
 					count: 9L
 				}
 			]
-			description: ["{chapter.3.quest.42.description.1}"]
-			id: "6C28C7FB221EA517"
-			icon: "create:mechanical_bearing"
-			x: 4.0d
-			y: 7.0d
-			title: "{chapter.3.quest.42.title}"
-			subtitle: "{chapter.3.quest.42.subtitle}"
-			dependencies: [
-				"38814494AB07C2D8"
-				"0C3A39AC4C3D10A2"
-			]
 		}
 		{
+			title: "{chapter.3.quest.43.title}"
+			x: 5.0d
+			y: 6.5d
+			subtitle: "{chapter.3.quest.43.subtitle}"
+			description: [
+				"&6Mechanical Harvesters&r can harvest crops."
+				""
+				"They are smart enough to only harvest fully-grown tools - additionally crops collected by Mechanical Harvester will be automatically replanted!"
+				""
+				"&6Kelp&r will be used a lot in the future - make sure to make a large farm!"
+			]
+			dependencies: ["6C28C7FB221EA517"]
+			id: "1A683B56285B7DFC"
 			tasks: [
 				{
 					id: "7F67736E31940425"
@@ -1136,35 +1449,52 @@
 					item: "minecraft:kelp"
 				}
 			]
-			description: ["{chapter.3.quest.43.description.1}"]
-			id: "1A683B56285B7DFC"
-			x: 5.0d
-			y: 6.5d
-			title: "{chapter.3.quest.43.title}"
-			subtitle: "{chapter.3.quest.43.subtitle}"
-			dependencies: ["6C28C7FB221EA517"]
 		}
 		{
+			x: 6.0d
+			y: 6.5d
+			shape: "diamond"
+			subtitle: "{chapter.3.quest.44.subtitle}"
+			description: [
+				"Having wet &6Kelp&r doesn't help you much."
+				"Before Kelp goes to the final destination, it'd be best if you &6Bulk Smoke&r it on the way."
+				""
+				"(Dried Kelp is a food item! Bulk Blasting it will burn it!)"
+			]
+			dependencies: ["1A683B56285B7DFC"]
+			id: "600FB959B71E4B18"
 			tasks: [{
 				id: "72CCE7A23842964A"
 				type: "item"
 				item: "minecraft:dried_kelp"
 				count: 64L
 			}]
-			description: ["{chapter.3.quest.44.description.1}"]
-			x: 6.0d
-			id: "600FB959B71E4B18"
-			y: 6.5d
-			shape: "diamond"
 			rewards: [{
 				id: "60F5D6526E49A3AE"
 				type: "xp"
 				xp: 50
 			}]
-			subtitle: "{chapter.3.quest.44.subtitle}"
-			dependencies: ["1A683B56285B7DFC"]
 		}
 		{
+			title: "{chapter.3.quest.45.title}"
+			icon: "create:mechanical_saw"
+			x: 5.0d
+			y: 7.5d
+			subtitle: "Remember the Mechanical Saw from the last chapter?"
+			description: [
+				"If you put them on a moving contraption, they should do exactly what you'd expect."
+				""
+				"That being said, one caveat of automatic farming is that trees need to be replanted."
+				""
+				"That's what Deployers are for:"
+				"- Put them above the Saws or on the opposite side of the arm,"
+				"- Set their filter to Saplings,"
+				"- And equip them with Saplings. Make sure that Deployers are facing down."
+				""
+				"Trees that are cut down will provide you with more Saplings."
+			]
+			dependencies: ["6C28C7FB221EA517"]
+			id: "34F33F38F8BF2B22"
 			tasks: [
 				{
 					id: "49E6527651CCE3DC"
@@ -1191,20 +1521,20 @@
 					}
 				}
 			]
-			description: ["{chapter.3.quest.45.description.1}"]
-			id: "34F33F38F8BF2B22"
-			icon: "create:mechanical_saw"
-			x: 5.0d
-			y: 7.5d
-			title: "{chapter.3.quest.45.title}"
-			subtitle: "{chapter.3.quest.45.subtitle}"
-			dependencies: ["6C28C7FB221EA517"]
 		}
 		{
+			title: "{chapter.3.quest.46.title}"
+			x: 6.0d
+			y: 7.5d
+			shape: "diamond"
+			subtitle: "{chapter.3.quest.46.subtitle}"
+			description: ["Tree farms produce &6Logs&r, &6Sticks&r and &6Saplings&r - probably you won't want to keep all of them at once, or else your farm will start spilling items!"]
+			dependencies: ["34F33F38F8BF2B22"]
+			id: "726EED16A080CFC4"
 			tasks: [{
-				type: "item"
-				count: 128L
 				id: "351C7D49A9C4EFD9"
+				type: "item"
+				title: "{chapter.3.quest.46.task.1.title}"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -1212,23 +1542,30 @@
 						value: "minecraft:logs_that_burn"
 					}
 				}
-				title: "{chapter.3.quest.46.task.1.title}"
+				count: 128L
 			}]
-			description: ["{chapter.3.quest.46.description.1}"]
-			id: "726EED16A080CFC4"
-			x: 6.0d
-			y: 7.5d
-			shape: "diamond"
-			title: "{chapter.3.quest.46.title}"
 			rewards: [{
 				id: "5DB68D341AF2C9FE"
 				type: "xp"
 				xp: 50
 			}]
-			subtitle: "{chapter.3.quest.46.subtitle}"
-			dependencies: ["34F33F38F8BF2B22"]
 		}
 		{
+			title: "{chapter.3.quest.47.title}"
+			icon: "create:zinc_ingot"
+			x: -1.5d
+			y: 7.0d
+			shape: "diamond"
+			subtitle: "{chapter.3.quest.47.subtitle}"
+			description: [
+				"Washing Red Sand gives you 33% chance of getting &6Zinc Nuggets&r and 12% chance of getting Dead Bushes."
+				""
+				"Your only two options for automating Red Sand at this point are milling Terracotta blocks or Granite, both of which are quite slow to produce."
+				""
+				"You can go back to this automation later, or wash Red Sand obtained from digging it from Badlands."
+			]
+			dependencies: ["38814494AB07C2D8"]
+			id: "60906B723CCE6D10"
 			tasks: [
 				{
 					id: "675B16F2461B1576"
@@ -1236,27 +1573,20 @@
 					item: "minecraft:red_sand"
 				}
 				{
-					type: "item"
-					count: 512L
 					id: "56B00DC3D1BC24B5"
-					item: "create:zinc_nugget"
+					type: "item"
 					title: "{chapter.3.quest.47.task.2.title}"
+					item: "create:zinc_nugget"
+					count: 512L
 				}
 				{
-					type: "item"
-					count: 256L
 					id: "6BA9DBE5AF20FDBD"
-					item: "minecraft:dead_bush"
+					type: "item"
 					title: "{chapter.3.quest.47.task.3.title}"
+					item: "minecraft:dead_bush"
+					count: 256L
 				}
 			]
-			description: ["{chapter.3.quest.47.description.1}"]
-			id: "60906B723CCE6D10"
-			icon: "create:zinc_ingot"
-			x: -1.5d
-			y: 7.0d
-			shape: "diamond"
-			title: "{chapter.3.quest.47.title}"
 			rewards: [
 				{
 					id: "1E91B41BA3BD511D"
@@ -1270,10 +1600,23 @@
 					count: 2
 				}
 			]
-			dependencies: ["38814494AB07C2D8"]
-			subtitle: "{chapter.3.quest.47.subtitle}"
 		}
 		{
+			title: "{chapter.3.quest.48.title}"
+			icon: "minecraft:iron_ingot"
+			x: -1.0d
+			y: 6.5d
+			shape: "diamond"
+			subtitle: "{chapter.3.quest.48.subtitle}"
+			description: [
+				"Washing Gravel gives 25% chance of getting &6Flint&r and 12% chance of getting &6Iron Nuggets&r."
+				""
+				"Sieving Gravel gives 35% chance of getting &6Flint&r and 15% chance of getting &6Iron Nuggets&r."
+				""
+				"You can automate Gravel by milling Cobblestone."
+			]
+			dependencies: ["38814494AB07C2D8"]
+			id: "6E9F3AA80AB398EB"
 			tasks: [
 				{
 					id: "3F5CCBB3ED3D2522"
@@ -1281,27 +1624,20 @@
 					item: "minecraft:gravel"
 				}
 				{
-					type: "item"
-					count: 256L
 					id: "7DCBBC12F5319CA3"
-					item: "minecraft:iron_nugget"
+					type: "item"
 					title: "{chapter.3.quest.48.task.2.title}"
+					item: "minecraft:iron_nugget"
+					count: 256L
 				}
 				{
-					type: "item"
-					count: 256L
 					id: "4D471D33779993B0"
-					item: "minecraft:flint"
+					type: "item"
 					title: "{chapter.3.quest.48.task.3.title}"
+					item: "minecraft:flint"
+					count: 256L
 				}
 			]
-			description: ["{chapter.3.quest.48.description.1}"]
-			id: "6E9F3AA80AB398EB"
-			icon: "minecraft:iron_ingot"
-			x: -1.0d
-			y: 6.5d
-			shape: "diamond"
-			title: "{chapter.3.quest.48.title}"
 			rewards: [
 				{
 					id: "10719D7A6E2844CD"
@@ -1315,10 +1651,25 @@
 					count: 2
 				}
 			]
-			dependencies: ["38814494AB07C2D8"]
-			subtitle: "{chapter.3.quest.48.subtitle}"
 		}
 		{
+			title: "{chapter.3.quest.49.title}"
+			icon: "minecraft:clay_ball"
+			x: -1.0d
+			y: 7.5d
+			shape: "diamond"
+			subtitle: "{chapter.3.quest.49.subtitle}"
+			description: [
+				"Sand can be washed for 25% chance of getting &6Clay&r."
+				""
+				"There's a 25% chance of getting Gravel from milling Sand. Not too efficient, but it will do."
+				""
+				"Alternatively, you can produce Dripstone blocks and mill them into Clay."
+				""
+				"The setup requires either a big vanilla farm or Calcite automation, so get your Moss farm prepared!"
+			]
+			dependencies: ["38814494AB07C2D8"]
+			id: "3B80A4FBF7D2AB7B"
 			tasks: [
 				{
 					id: "50EC05071089BC85"
@@ -1328,23 +1679,16 @@
 				{
 					id: "610B0EA58C74E70E"
 					type: "item"
-					item: "minecraft:calcite"
+					item: "minecraft:dripstone_block"
 				}
 				{
-					type: "item"
-					count: 1024L
 					id: "0E85B9A7C227F319"
-					item: "minecraft:clay_ball"
+					type: "item"
 					title: "{chapter.3.quest.49.task.3.title}"
+					item: "minecraft:clay_ball"
+					count: 1024L
 				}
 			]
-			description: ["Sand can be washed into clay, much like how gravel washes into flint+iron. Sand is produceable at low rates from milling gravel, so you may be interested in starting a stockpile."]
-			id: "3B80A4FBF7D2AB7B"
-			icon: "minecraft:clay_ball"
-			x: -1.0d
-			y: 7.5d
-			shape: "diamond"
-			title: "{chapter.3.quest.49.title}"
 			rewards: [
 				{
 					id: "3842F6EA9589983F"
@@ -1352,11 +1696,11 @@
 					xp: 250
 				}
 				{
-					type: "item"
-					count: 518
 					id: "5C5E71C77D96C277"
-					item: "minecraft:brick"
+					type: "item"
 					title: "{chapter.3.quest.49.reward.2.title}"
+					item: "minecraft:brick"
+					count: 518
 				}
 				{
 					id: "3DCFB22D892B3251"
@@ -1365,82 +1709,109 @@
 					count: 8
 				}
 				{
-					type: "item"
-					count: 256
 					id: "5F8AF4A3119F37A3"
-					item: "minecraft:glass"
+					type: "item"
 					title: "{chapter.3.quest.49.reward.4.title}"
+					item: "minecraft:glass"
+					count: 256
 				}
 			]
-			dependencies: ["38814494AB07C2D8"]
-			subtitle: "{chapter.3.quest.49.subtitle}"
 		}
 		{
+			title: "{chapter.3.quest.50.title}"
+			x: 0.0d
+			y: 4.5d
+			subtitle: "{chapter.3.quest.50.subtitle}"
+			description: [
+				"If you have belts going through walls, or if you don't want to accidentally drop an item onto the belt from above, &6Andesite Tunnels&r can cover them."
+				""
+				"If there's a belt going perpedicularly to the main belt, and the Andesite Tunnel is placed on a junction, the Andesite Tunnel will split one item from the stack on the belt."
+			]
+			dependencies: ["62DAEDF65FB2226B"]
+			id: "42817242953BD9CA"
 			tasks: [{
 				id: "28DBB8ADEE366629"
 				type: "item"
 				item: "create:andesite_tunnel"
 			}]
-			description: ["{chapter.3.quest.50.description.1}"]
-			id: "42817242953BD9CA"
-			x: 0.0d
-			y: 4.5d
-			title: "{chapter.3.quest.50.title}"
 			rewards: [{
 				id: "1A6B2424FFD9E72F"
 				type: "item"
 				item: "create:andesite_funnel"
 				count: 2
 			}]
-			subtitle: "{chapter.3.quest.50.subtitle}"
-			dependencies: ["62DAEDF65FB2226B"]
 		}
 		{
-			size: 2.0d
-			description: ["{chapter.3.quest.51.description.1}"]
-			id: "38814494AB07C2D8"
+			title: "{chapter.3.quest.51.title}"
 			icon: "create:mechanical_arm"
 			x: 1.5d
 			y: 7.0d
 			shape: "gear"
-			title: "{chapter.3.quest.51.title}"
+			subtitle: "Automation Matrix Chapter Unlocked!"
+			description: [
+				"The true power of Create isn't in the new crafting techniques it provides, but the ability to automate resources."
+				""
+				"Automating comes in two flavors:"
+				"- full automation, where a specific resource will be made until the end of time without any need for the player to touch a system,"
+				"- and semi-automation, where you only need to periodically restock starting resources or fuel."
+				""
+				"This pack won't always tell you when to automate and what can be automated. That'll be up to you to decide."
+				""
+				"That being said, we'll occasionally make diamond-shaped automation quests, to either let you know that a new automation opportunity exists, or because it's a really strong idea."
+				""
+				"You don't need to complete them immediately - just consider starting sometime down the line."
+				""
+				"By the way - there may have been some of these automation quests in Chapter 1!"
+			]
+			dependencies: [
+				"18159A0691993E5B"
+				"710C81D7DE6C7FCB"
+			]
+			size: 2.0d
+			id: "38814494AB07C2D8"
+			tasks: [{
+				id: "645496942E14E974"
+				type: "checkmark"
+				title: "{chapter.3.quest.51.task.1.title}"
+			}]
 			rewards: [{
 				id: "61C410A110D3AE8F"
 				type: "item"
 				item: "create:builders_tea"
 				count: 3
 			}]
-			dependencies: [
-				"18159A0691993E5B"
-				"710C81D7DE6C7FCB"
-			]
-			subtitle: "{chapter.3.quest.51.subtitle}"
-			tasks: [{
-				id: "645496942E14E974"
-				type: "checkmark"
-				title: "{chapter.3.quest.51.task.1.title}"
-			}]
 		}
 		{
+			icon: "create:track"
+			x: 6.0d
+			y: 4.0d
+			shape: "diamond"
+			subtitle: "{chapter.3.quest.52.subtitle}"
+			description: [
+				"Rembember the Track recipe from Chapter 1?"
+				""
+				"Using &6Deployers&r, you can now create tracks &63 times cheaper&r!"
+				""
+				"Both Stone Slabs and Iron Nuggets are easily automatable - lurk in REI to find out how!"
+				""
+				"To complete this quest, create &61000 Tracks&r using the same Mechanical Press."
+			]
+			dependencies: ["41926BDF2F7890F6"]
+			optional: true
+			id: "1BC8A4F925705AAD"
 			tasks: [{
 				id: "6F02CB1D80713CD7"
 				type: "advancement"
 				advancement: "create:track_crafting_factory"
 				criterion: ""
 			}]
-			description: ["{chapter.3.quest.52.description.1}"]
-			id: "1BC8A4F925705AAD"
-			icon: "create:track"
-			x: 4.0d
-			y: 3.0d
-			shape: "diamond"
 			rewards: [
 				{
-					type: "item"
-					count: 128
 					id: "4C5AE91F594F0018"
-					item: "create:metal_girder"
+					type: "item"
 					title: "{chapter.3.quest.52.reward.1.title}"
+					item: "create:metal_girder"
+					count: 128
 				}
 				{
 					id: "401A83960EF72587"
@@ -1455,11 +1826,33 @@
 					count: 16
 				}
 			]
-			subtitle: "{chapter.3.quest.52.subtitle}"
-			dependencies: ["41926BDF2F7890F6"]
-			optional: true
 		}
 		{
+			title: "{chapter.3.quest.53.title}"
+			icon: "create:mechanical_drill"
+			x: 1.5d
+			y: 10.5d
+			subtitle: "Build a tunnel bore!"
+			description: [
+				"Tunnel bores will mine tunnels for you."
+				"They're stupidly complicated, and it's highly, highly recommended that you watch a guide on YouTube."
+				""
+				"That being said, here's the gist:"
+				"Any Minecart running under a powered Cart Assembler will turn into a Minecart Contraption."
+				"The entire contraption can be picked up by right-clicking the Minecart with a Wrench."
+				"Running the Minecart Contraption under the unpowered Cart Assembler will turn it back into blocks."
+				""
+				"A tunnel bore is a Minecart Contraption with a wall of Mechanical Drills, with Deployers placing Cobblestone/Cobbled Deepslate walls, and with Deployers ahead of Mechanical Drills placing solid blocks to prevent fluids messing up the contraption."
+				""
+				"Finally, you create a long neck. The front of the neck has a Deployer to place down Rails, and a Deployers in front of it one block lower to place a floor to place the Rails."
+				"At the back, place a Mechanical Plough that will collect Rails to place them ahead of the Minecart Contraption again."
+				""
+				"If you used a Minecart with Furnace to create the Minecart Contraption, any Coal on the contraption will be consumed to propel the Minecart."
+				"You will get stupid amounts of various ores and stones very quickly, although you need to take care of lighting up the tunnels to prevent monsters from spawning."
+			]
+			dependencies: ["4642949B43A4F838"]
+			min_width: 300
+			id: "1C084F85AD4E24BE"
 			tasks: [
 				{
 					id: "1571406F47294F05"
@@ -1507,26 +1900,20 @@
 					count: 24L
 				}
 			]
-			description: ["{chapter.3.quest.53.description.1}"]
-			id: "1C084F85AD4E24BE"
-			icon: "create:mechanical_drill"
-			x: 1.5d
-			y: 10.5d
-			title: "{chapter.3.quest.53.title}"
 			rewards: [
 				{
-					type: "item"
-					count: 192
 					id: "602415334344E919"
-					item: "minecraft:cobblestone"
+					type: "item"
 					title: "{chapter.3.quest.53.reward.1.title}"
+					item: "minecraft:cobblestone"
+					count: 192
 				}
 				{
-					type: "item"
-					count: 192
 					id: "27AE8A781FEE8E1C"
-					item: "minecraft:cobbled_deepslate"
+					type: "item"
 					title: "{chapter.3.quest.53.reward.2.title}"
+					item: "minecraft:cobbled_deepslate"
+					count: 192
 				}
 				{
 					id: "30E0650FC87968AC"
@@ -1534,47 +1921,49 @@
 					item: "create:white_seat"
 				}
 				{
-					type: "item"
-					count: 128
 					id: "72281C48ED17B5E1"
-					item: "minecraft:torch"
+					type: "item"
 					title: "{chapter.3.quest.53.reward.4.title}"
-				}
-				{
-					id: "74537F8B7C76CAF9"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 2053519168689179764L
+					item: "minecraft:torch"
+					count: 128
 				}
 			]
-			subtitle: "{chapter.3.quest.53.subtitle}"
-			dependencies: ["4642949B43A4F838"]
 		}
 		{
+			x: 1.5d
+			y: 9.5d
+			subtitle: "Contraptions on Rails"
+			description: [
+				"&6Cart Assemblers&r allow you to create Minecart Contraptions - special contraptions that can drive on Rails an are pickable up with a Wrench."
+				""
+				"Cart Assemblers are very useful for things done in a straight line, like &6tunnel bores&r."
+			]
+			dependencies: [
+				"38814494AB07C2D8"
+				"0C3A39AC4C3D10A2"
+			]
+			id: "4642949B43A4F838"
 			tasks: [{
 				id: "27DED2EFB8738FD3"
 				type: "item"
 				item: "create:cart_assembler"
 			}]
-			description: ["{chapter.3.quest.54.description.1}"]
-			id: "4642949B43A4F838"
-			x: 1.5d
-			y: 9.5d
-			subtitle: "{chapter.3.quest.54.subtitle}"
-			dependencies: [
-				"38814494AB07C2D8"
-				"0C3A39AC4C3D10A2"
-			]
 		}
 		{
-			size: 0.75d
-			description: ["{chapter.3.quest.55.description.1}"]
-			id: "0C3A39AC4C3D10A2"
-			x: 2.5d
-			y: 8.0d
 			title: "{chapter.3.quest.55.title}"
+			x: 2.625d
+			y: 8.25d
 			subtitle: "{chapter.3.quest.55.subtitle}"
+			description: [
+				"Certain automation processes use animated &6Contraptions&r - for example tree and crop farms."
+				""
+				"Super Glue is very convenient for connecting different contraption blocks together."
+				""
+				"Though make sure to not accidentally glue a part of your base onto a Contraption!"
+			]
 			dependencies: ["38814494AB07C2D8"]
+			size: 0.75d
+			id: "0C3A39AC4C3D10A2"
 			tasks: [
 				{
 					id: "084292B4BAFB17C5"
@@ -1596,38 +1985,43 @@
 			]
 		}
 		{
-			size: 1.5d
-			min_required_dependencies: 1
+			title: "{chapter.3.quest.56.title}"
 			x: 7.0d
+			y: 7.0d
+			shape: "diamond"
 			subtitle: "{chapter.3.quest.56.subtitle}"
+			description: ["Complete one of these tasks to complete this quest."]
+			min_required_dependencies: 1
+			dependencies: [
+				"600FB959B71E4B18"
+				"726EED16A080CFC4"
+			]
+			dependency_requirement: "one_completed"
+			size: 1.5d
 			min_required_tasks: 1
+			id: "3A20912CB1E34B1A"
 			tasks: [
 				{
-					type: "item"
-					count: 256L
 					id: "15435C852622B0D4"
-					item: "minecraft:dried_kelp_block"
+					type: "item"
 					title: "{chapter.3.quest.56.task.1.title}"
+					item: "minecraft:dried_kelp_block"
+					count: 256L
 				}
 				{
-					type: "item"
-					count: 640L
 					id: "54E59B27898C5A60"
-					item: "minecraft:charcoal"
+					type: "item"
 					title: "{chapter.3.quest.56.task.2.title}"
+					item: "minecraft:charcoal"
+					count: 640L
 				}
 				{
 					id: "0F07739CD62649E1"
 					type: "item"
 					item: "minecraft:lava_bucket"
-					count: 32L
+					count: 8L
 				}
 			]
-			description: ["{chapter.3.quest.56.description.1}"]
-			id: "3A20912CB1E34B1A"
-			shape: "diamond"
-			y: 7.0d
-			title: "{chapter.3.quest.56.title}"
 			rewards: [
 				{
 					id: "58854B481FB82C82"
@@ -1658,20 +2052,24 @@
 					item: "create:andesite_casing"
 					count: 16
 				}
-				{
-					id: "1B5BBA82397A90CB"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 2053519168689179764L
-				}
 			]
-			dependencies: [
-				"600FB959B71E4B18"
-				"726EED16A080CFC4"
-			]
-			dependency_requirement: "one_completed"
 		}
 		{
+			title: "{chapter.3.quest.57.title}"
+			x: -7.0d
+			y: -3.5d
+			subtitle: "{chapter.3.quest.57.subtitle}"
+			description: [
+				"&6Gold Casts&r are reusable."
+				""
+				"To create one:"
+				"- Place an item in a shape of a cast you want to make, for example: an Axe Head,"
+				"- Pour 1 ingot worth of Molten Gold onto the Casting Table."
+				""
+				"This will consume the item, and the freshly created Gold Cast can be used to cast stuff out of molten metal!"
+			]
+			dependencies: ["1519A1EA2CFA6FB1"]
+			id: "7856BCA1DB363174"
 			tasks: [{
 				id: "61061313B1FF9DC3"
 				type: "item"
@@ -1684,15 +2082,14 @@
 					}
 				}
 			}]
-			description: ["{chapter.3.quest.57.description.1}"]
-			id: "7856BCA1DB363174"
-			x: -7.0d
-			y: -3.5d
-			title: "{chapter.3.quest.57.title}"
-			subtitle: "{chapter.3.quest.57.subtitle}"
-			dependencies: ["1519A1EA2CFA6FB1"]
 		}
 		{
+			title: "{chapter.3.quest.58.title}"
+			x: -8.0d
+			y: -3.5d
+			subtitle: "21 in total!"
+			dependencies: ["7856BCA1DB363174"]
+			id: "346D47B32354428D"
 			tasks: [
 				{
 					id: "6D740F628F501950"
@@ -1794,11 +2191,12 @@
 					type: "item"
 					item: "tconstruct:tough_handle_cast"
 				}
+				{
+					id: "4C74F64272F8159D"
+					type: "item"
+					item: "astraladditions:ring_gold_cast"
+				}
 			]
-			id: "346D47B32354428D"
-			x: -8.0d
-			y: -3.5d
-			title: "{chapter.3.quest.58.title}"
 			rewards: [
 				{
 					id: "526DC221F6058122"
@@ -1812,10 +2210,16 @@
 					item: "minecraft:diamond"
 				}
 			]
-			subtitle: "{chapter.3.quest.58.subtitle}"
-			dependencies: ["7856BCA1DB363174"]
 		}
 		{
+			title: "{chapter.3.quest.59.title}"
+			icon: "minecraft:diamond_block"
+			x: -4.0d
+			y: -7.5d
+			subtitle: "{chapter.3.quest.59.subtitle}"
+			dependencies: ["25085C910155E06D"]
+			optional: true
+			id: "3F331B0DAE1062E8"
 			tasks: [
 				{
 					id: "6357813BD979AC3C"
@@ -1830,11 +2234,6 @@
 					count: 4L
 				}
 			]
-			id: "3F331B0DAE1062E8"
-			icon: "minecraft:diamond_block"
-			x: -3.5d
-			y: -7.5d
-			title: "{chapter.3.quest.59.title}"
 			rewards: [
 				{
 					id: "67867CF7F86A799D"
@@ -1847,11 +2246,20 @@
 					item: "adoptafloppa:amazon_delivery"
 				}
 			]
-			subtitle: "{chapter.3.quest.59.subtitle}"
-			dependencies: ["25085C910155E06D"]
-			optional: true
 		}
 		{
+			title: "{chapter.3.quest.60.title}"
+			icon: "create:sail_frame"
+			x: -7.0d
+			y: 2.0d
+			subtitle: "{chapter.3.quest.60.subtitle}"
+			description: [
+				"&6Windmills&r can spin at speeds between 1 and 16 RPM, depending on the amount of sails."
+				""
+				"They need more gearshifting, but they generate a ton of Stress Units."
+			]
+			dependencies: ["1F79F4D01B219D7E"]
+			id: "7DA20A39EC1DE7EA"
 			tasks: [
 				{
 					id: "04A9735CAD1B5944"
@@ -1871,36 +2279,47 @@
 					criterion: ""
 				}
 			]
-			description: ["{chapter.3.quest.60.description.1}"]
-			id: "7DA20A39EC1DE7EA"
-			icon: "create:sail_frame"
-			x: -7.0d
-			y: 2.0d
-			title: "{chapter.3.quest.60.title}"
 			rewards: [{
 				id: "7807C96EAD96A936"
 				type: "item"
 				item: "create:white_sail"
 				count: 16
 			}]
-			subtitle: "{chapter.3.quest.60.subtitle}"
-			dependencies: ["1F79F4D01B219D7E"]
 		}
 		{
+			title: "{chapter.3.quest.61.title}"
+			x: 3.0d
+			y: 4.5d
+			subtitle: "{chapter.3.quest.61.subtitle}"
+			description: [
+				"&6Item Vaults&r can store 20 stacks of items per block."
+				""
+				"Vaults can combine into 1x1x3, 2x2x6 and 3x3x9 multiblocks with total capacity summed up - up to 1620 stacks for a 3x3x9 Vault! "
+				""
+				"Vaults can only be accessed by automation. That means you have to use Hoppers, Chutes, Funnels, etc. to insert and extract items from Vaults."
+				""
+				"Brass Funnels and Smart Chutes will be useful later."
+				""
+				"&eWarning&r: Big slotted inventories do not pair well with filtered Brass Funnels/Smart Chutes, if it comes for perfomance."
+			]
+			dependencies: ["18159A0691993E5B"]
+			id: "59E7FEA861328505"
 			tasks: [{
 				id: "40AF0D2869E8C2D3"
 				type: "item"
 				item: "create:item_vault"
 			}]
-			description: ["{chapter.3.quest.61.description.1}"]
-			id: "59E7FEA861328505"
-			x: 3.0d
-			y: 4.5d
-			title: "{chapter.3.quest.61.title}"
-			subtitle: "{chapter.3.quest.61.subtitle}"
-			dependencies: ["18159A0691993E5B"]
 		}
 		{
+			title: "{chapter.3.quest.62.title}"
+			icon: "minecraft:lava_bucket"
+			x: 2.5d
+			y: 0.5d
+			shape: "rsquare"
+			subtitle: "{chapter.3.quest.62.subtitle}"
+			description: ["{chapter.3.quest.62.description.1}"]
+			dependencies: ["70799237323247B7"]
+			id: "35C34E4EA8292D24"
 			tasks: [
 				{
 					id: "2DB076A46654E115"
@@ -1915,70 +2334,46 @@
 					count: 4L
 				}
 			]
-			description: ["{chapter.3.quest.62.description.1}"]
-			id: "35C34E4EA8292D24"
-			icon: "minecraft:lava_bucket"
-			x: 1.0d
-			y: -4.0d
-			shape: "rsquare"
-			title: "{chapter.3.quest.62.title}"
 			rewards: [{
 				id: "4E619525E3DF0B31"
 				type: "item"
 				item: "minecraft:lava_bucket"
 				count: 4
 			}]
-			dependencies: ["6AEEE2B22E28945B"]
-			subtitle: "{chapter.3.quest.62.subtitle}"
 		}
 		{
-			tasks: [{
-				type: "advancement"
-				advancement: "create:hose_pulley_lava"
-				criterion: ""
-				id: "504396A933375CAF"
-				icon: "create:hose_pulley"
-			}]
-			description: ["{chapter.3.quest.63.description.1}"]
-			id: "2EC9C1C70660A6A4"
-			x: 1.0d
-			y: -5.0d
-			shape: "diamond"
-			title: "{chapter.3.quest.63.title}"
-			rewards: [
-				{
-					id: "7B9A6D45D9CCAE6F"
-					type: "item"
-					item: "create:fluid_tank"
-					count: 32
-				}
-				{
-					id: "2A2A7CE0322FB4B5"
-					type: "xp"
-					xp: 300
-				}
+			x: -0.5d
+			y: 1.0d
+			description: [
+				"Allows you to filter, what liquid passes through the &6Smart Fluid Pipe&r."
+				""
+				"&nImportant info&r:"
+				"Hephaestus buckets don't render, but they still work as filters."
 			]
-			subtitle: "{chapter.3.quest.63.subtitle}"
-			dependencies: ["35C34E4EA8292D24"]
-		}
-		{
+			dependencies: ["70799237323247B7"]
+			id: "31E69CA962A58692"
 			tasks: [{
 				id: "5B411729AAD16009"
 				type: "item"
 				item: "create:smart_fluid_pipe"
 			}]
-			dependencies: ["70799237323247B7"]
-			id: "31E69CA962A58692"
-			y: 0.5d
-			x: 1.0d
-			rewards: [{
-				id: "419AB2F9D3A5D5D7"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 5687404501397719867L
-			}]
 		}
 		{
+			x: 3.5d
+			y: -3.5d
+			subtitle: "{chapter.3.quest.65.subtitle}"
+			description: [
+				"&6Display Boards&r can show text on a big board."
+				""
+				"You can edit their text by clicking on the line with a named Name Tag."
+				"Make sure that the Display Boards' cogs spin with sufficient speed!"
+				""
+				"&6Display Links&r can take data from various vanilla or Create blocks and show them on the Display Board."
+				""
+				"Try creating a Train schedule or a SU monitor with them!"
+			]
+			dependencies: ["32B9EAE28E1C5D7A"]
+			id: "08550B021D54D2DF"
 			tasks: [
 				{
 					id: "5D343FA9E913F5C9"
@@ -1991,10 +2386,6 @@
 					item: "create:display_board"
 				}
 			]
-			description: ["{chapter.3.quest.65.description.1}"]
-			id: "08550B021D54D2DF"
-			x: 6.0d
-			y: 0.5d
 			rewards: [
 				{
 					id: "187401FFE35A80D9"
@@ -2009,21 +2400,25 @@
 					count: 3
 				}
 			]
-			subtitle: "{chapter.3.quest.65.subtitle}"
-			dependencies: ["32B9EAE28E1C5D7A"]
 		}
 		{
+			title: "{chapter.3.quest.66.title}"
+			x: -7.5d
+			y: 3.0d
+			subtitle: "{chapter.3.quest.66.subtitle}"
+			description: [
+				"Create a Windmill with 128+ Sail-like blocks attached."
+				""
+				"You used a ton of Wool for this one, so have a stack of Wool as a reward."
+			]
+			dependencies: ["7DA20A39EC1DE7EA"]
+			id: "731D9E7777150B6A"
 			tasks: [{
 				id: "1DF4BEDC3FB10D99"
 				type: "advancement"
 				advancement: "create:windmill_maxed"
 				criterion: ""
 			}]
-			description: ["{chapter.3.quest.66.description.1}"]
-			id: "731D9E7777150B6A"
-			x: -7.5d
-			y: 3.0d
-			title: "{chapter.3.quest.66.title}"
 			rewards: [
 				{
 					id: "4C96C01B7564D095"
@@ -2036,111 +2431,150 @@
 					item: "minecraft:white_wool"
 					count: 64
 				}
-				{
-					id: "7AC62AAA8D9F4B6B"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 2053519168689179764L
-				}
 			]
-			subtitle: "{chapter.3.quest.66.subtitle}"
-			dependencies: ["7DA20A39EC1DE7EA"]
 		}
 		{
+			title: "{chapter.3.quest.67.title}"
+			icon: "create:railway_casing"
+			x: 3.5d
+			y: 9.0d
+			subtitle: "Mechanical Saws on a Train - will they work?"
+			description: [
+				"Remember in Chapter 1 how you used Glue to assemble trains? Isn't that similar to what you did with a Cart Assembler and Mechanical Bearing?"
+				""
+				"Well, it turns out that Trains are in the same family of moving contraptions."
+				"That means that actors like Saws, Drills, Harvesters, Portable Storage Interfaces, etc. will work on trains and operate like usual."
+				""
+				"That means you can build farms that operate with Trains on automated Schedules."
+				"If you want to overkill things this way, then by all means, it's encouraged!"
+				""
+				"You can even make a Train tunnel bore, although it won't be any easier than using a Cart Assembler."
+			]
+			dependencies: ["0C3A39AC4C3D10A2"]
+			id: "2B8584C007CB9EFF"
 			tasks: [{
 				id: "25061F9EE73507D3"
 				type: "checkmark"
 				title: "{chapter.3.quest.67.task.1.title}"
 			}]
-			description: ["{chapter.3.quest.67.description.1}"]
-			id: "2B8584C007CB9EFF"
-			icon: "create:railway_casing"
-			x: 4.0d
-			y: 9.5d
-			title: "{chapter.3.quest.67.title}"
-			subtitle: "{chapter.3.quest.67.subtitle}"
-			dependencies: ["0C3A39AC4C3D10A2"]
 		}
 		{
-			tasks: [{
-				id: "35D4128EDBDDE699"
-				type: "item"
-				item: "tconstruct:ingot_cast"
-			}]
-			description: ["{chapter.3.quest.68.description.1}"]
-			id: "3095586FC5E09B01"
-			x: -1.0d
-			y: -5.0d
 			title: "{chapter.3.quest.68.title}"
-			subtitle: "{chapter.3.quest.68.subtitle}"
+			x: -1.0d
+			y: -3.0d
+			description: [
+				"To form your Compound Mixture into an Ingot, you'll need an &6Ingot Cast&r."
+				""
+				"Alternatively you can cast whole blocks in a &6Casting Basin&r."
+			]
 			dependencies: ["5A1B85C3323DDBD1"]
+			min_required_tasks: 1
+			id: "3095586FC5E09B01"
+			tasks: [
+				{
+					id: "35D4128EDBDDE699"
+					type: "item"
+					item: "tconstruct:ingot_cast"
+				}
+				{
+					id: "7B1D6C134EBA8727"
+					type: "item"
+					item: "tconstruct:seared_basin"
+				}
+			]
 		}
 		{
-			tasks: [{
-				type: "item"
-				count: 256L
-				id: "364A0657277272C9"
-				item: "techreborn:rubber"
-				title: "{chapter.3.quest.69.task.1.title}"
-			}]
-			description: ["{chapter.3.quest.69.description.1}"]
-			id: "6C24E4B83E454EC5"
+			title: "{chapter.3.quest.69.title}"
 			x: 6.0d
 			y: 8.5d
 			shape: "diamond"
-			title: "{chapter.3.quest.69.title}"
-			rewards: [
-				{
-					id: "2673DE427711FCD7"
-					type: "xp"
-					xp: 200
-				}
-				{
-					id: "79A7B477BBEB51CF"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 2053519168689179764L
-				}
-			]
 			subtitle: "{chapter.3.quest.69.subtitle}"
+			description: [
+				"You can mill Rubber Logs to produce &6Sap&r. That Sap can be then mixed by Mechanical Mixer into &6Rubber&r."
+				""
+				"Consider making an automated Rubber tree farm, as it can also give you most of the things standard Wood can give!"
+				""
+				"Alternatively, you can use a Deployer to automatically use Treetaps on Rubber Logs to extract Sap from them."
+				""
+				"Not as efficient, but eco-friendly!"
+			]
 			dependencies: ["726EED16A080CFC4"]
+			id: "6C24E4B83E454EC5"
+			tasks: [{
+				id: "364A0657277272C9"
+				type: "item"
+				title: "{chapter.3.quest.69.task.1.title}"
+				item: "techreborn:rubber"
+				count: 256L
+			}]
+			rewards: [{
+				id: "2673DE427711FCD7"
+				type: "xp"
+				xp: 200
+			}]
 		}
 		{
+			title: "{chapter.3.quest.70.title}"
+			x: -0.5d
+			y: 9.0d
+			subtitle: "You just need some &5I&dm&4a&cg&ei&an&ba&3t&9i&1o&5n&r."
+			description: [
+				"The possibilities may be larger than you think. Here are some examples just to give you an idea of the possibilities, whether available now or later:"
+				"- A food source,"
+				"- Your favorite decoration block,"
+				"- Cogwheels,"
+				"- Shafts,"
+				"- Torches,"
+				"- Andesite Casings,"
+				"- Copper Casings,"
+				"- Electron Tubes,"
+				"- Rose Gold,"
+				"- Wool,"
+				"- Mob farms,"
+				"- Every Raw Ore,"
+				"- Seared Bricks,"
+				"and many more..."
+			]
+			dependencies: ["38814494AB07C2D8"]
+			id: "7DF5B49918827647"
 			tasks: [{
 				id: "72B6D7AE0932635B"
 				type: "checkmark"
 				title: "{chapter.3.quest.70.task.1.title}"
 			}]
-			description: ["{chapter.3.quest.70.description.1}"]
-			id: "7DF5B49918827647"
-			x: -0.5d
-			y: 9.0d
-			title: "{chapter.3.quest.70.title}"
-			subtitle: "{chapter.3.quest.70.subtitle}"
-			dependencies: ["38814494AB07C2D8"]
 		}
 		{
+			title: "{chapter.3.quest.71.title}"
+			x: -2.0d
+			y: -2.5d
+			subtitle: "{chapter.3.quest.71.subtitle}"
+			description: ["Walking on &6Andesite Pavement&r will grant you a &6Speed I&r effect."]
+			dependencies: ["5A1B85C3323DDBD1"]
+			id: "6229BC66A88B614B"
 			tasks: [{
 				id: "535BFA280660D524"
 				type: "item"
 				item: "doodads:asphalt"
 				count: 32L
 			}]
-			description: ["{chapter.3.quest.71.description.1}"]
-			id: "6229BC66A88B614B"
-			x: 8.0d
-			y: -3.0d
-			title: "{chapter.3.quest.71.title}"
-			rewards: [{
-				id: "5A260EAD6AFF0BF7"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 2053519168689179764L
-			}]
-			subtitle: "{chapter.3.quest.71.subtitle}"
-			dependencies: ["00F3EA4A8FB5B11B"]
 		}
 		{
+			title: "{chapter.3.quest.73.title}"
+			x: -1.5d
+			y: 1.5d
+			description: [
+				"Ye filthy landlubbers can't even walk 10 seconds on the ocean floor without spluttering for air."
+				""
+				"&6Copper Backtank&r stores compressed air, used by Diving Helmets and some pneumatic tools."
+				""
+				"Speaking of &6Diving Helmet&r - it allows you to breathe underwater and nullifies the mining penalty underwater if the Copper Backtank you wear has air inside."
+				""
+				"&6Diving Boots&r allow you to walk and jump underwater instead of swimming. They also make you no longer affected by Mechanical Belts."
+				""
+				"These three will be useful for creation of a special suit designed to withstand the vacuum of space..."
+			]
+			dependencies: ["62DAEDF65FB2226B"]
+			id: "2C8290C44890E0B5"
 			tasks: [
 				{
 					id: "3717FB82A5D4CAC3"
@@ -2154,7 +2588,7 @@
 					}
 				}
 				{
-					id: "36DE6D66639F9E37"
+					id: "3334247871EC5488"
 					type: "item"
 					item: {
 						id: "create:copper_diving_helmet"
@@ -2165,7 +2599,7 @@
 					}
 				}
 				{
-					id: "5EAC820A8EFDA5F2"
+					id: "33DAE4F8E0AE88C7"
 					type: "item"
 					item: {
 						id: "create:copper_diving_boots"
@@ -2176,20 +2610,26 @@
 					}
 				}
 			]
-			description: ["{chapter.3.quest.73.description.1}"]
-			id: "2C8290C44890E0B5"
-			x: -1.0d
-			y: 1.5d
-			title: "{chapter.3.quest.73.title}"
 			rewards: [{
 				id: "358BBCC53DC4B6AF"
 				type: "item"
 				item: "minecraft:nautilus_shell"
 				count: 5
 			}]
-			dependencies: ["62DAEDF65FB2226B"]
 		}
 		{
+			icon: "ad_astra:moon_stone"
+			x: 9.0d
+			y: -6.0d
+			subtitle: "{chapter.3.quest.76.subtitle}"
+			description: [
+				"Pieces of the Moon remain all over the Overworld. You can stumble upon them in small meteors, in loot chests, on sky islands, or find a large quantity of it near a &6Shimmer Lake&r."
+				""
+				"Collect at least &610 Moon Stone&r to make enough Shimmering Stone for a portal."
+			]
+			hide_dependency_lines: true
+			dependencies: ["00F3EA4A8FB5B11B"]
+			id: "08BC73F24043BB91"
 			tasks: [
 				{
 					id: "3CDDFDB700B20B99"
@@ -2203,19 +2643,343 @@
 					title: "{chapter.3.quest.76.task.2.title}"
 				}
 			]
-			description: ["{chapter.3.quest.76.description.1}"]
-			id: "08BC73F24043BB91"
-			icon: "ad_astra:moon_stone"
-			x: 10.0d
-			y: -4.5d
 			rewards: [{
 				id: "4F4AC8EE18D127B0"
 				type: "xp"
 				xp: 50
 			}]
-			subtitle: "{chapter.3.quest.76.subtitle}"
-			dependencies: ["00F3EA4A8FB5B11B"]
-			hide_dependency_lines: true
+		}
+		{
+			title: "I hate Terracotta!"
+			x: -5.5d
+			y: -0.5d
+			subtitle: "For when you are trying to automate Seared Stone for Asurine and Veridium, but you get Terracotta instead..."
+			description: [
+				"Obtain &6Scorched Basin and Table&r by blasting their Seared counterparts in a Blast Furnace or using Bulk Blasting."
+				""
+				"Scorched Basins and Tables only accept liquids when there's a cast!"
+				""
+				"For example: The Scorched Basin won't accept Molten Clay, when there's no Stone or Andesite in the basin."
+				""
+				"If you for some reason want to cast recipes that don't require a cast, you can use &6Gold Platforms&r and &6Gold Bars&r as an \"empty cast\"."
+			]
+			dependencies: ["1519A1EA2CFA6FB1"]
+			min_required_tasks: 1
+			id: "5DE9FD633DB0358D"
+			tasks: [
+				{
+					id: "2409D3B21C94F486"
+					type: "item"
+					item: "tconstruct:scorched_basin"
+				}
+				{
+					id: "50A044BCE8EE9698"
+					type: "item"
+					item: "tconstruct:scorched_table"
+				}
+			]
+			rewards: [{
+				id: "1297734708EBAC0C"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
+			}]
+		}
+		{
+			icon: "tconstruct:smeltery_controller"
+			x: -3.0d
+			y: -2.0d
+			subtitle: "How do I alloy?"
+			description: [
+				"The Smeltery has been &ndisabled&r in this pack."
+				""
+				"In this pack, alloying is done through Create's Mechanical Mixers."
+				""
+				"Later on, you will get access to the Foundry, completely skipping the Smeltery."
+			]
+			dependencies: ["0A34148EBAF329B3"]
+			id: "7BFEA241D8543721"
+			tasks: [{
+				id: "67E083F03D9B713C"
+				type: "checkmark"
+				title: "Where's the Smeltery?"
+			}]
+		}
+		{
+			title: "Automate Sturdy Sheets!"
+			x: 6.5d
+			y: -1.0d
+			shape: "diamond"
+			subtitle: "Exploit liquid manipulation to automate Sturdy Sheets."
+			description: [
+				"Generate Obsidian by pouring Lava next to a waterlogged Stair."
+				""
+				"Use a Mechanical Drill to mine the Obsidian - it doesn't take a very long time if the drill spins at 256 RPM."
+				""
+				"Then mill Obsidian into Powdered Obsidian - there's a chance you will get an Obsidian block back."
+				""
+				"Then, you can do one of two paths:"
+				""
+				"1. Use a Mechanical Press on Powdered Obsidian 10 times - this will produce Sturdy Sheets 60% of a time,"
+				""
+				"2. Spout Lava, then press 2 times, loop 5 times - this will give you Sturdy Sheets 100% of a time."
+			]
+			dependencies: ["17041A495A41EEFD"]
+			id: "2F5E73F6CEA949AA"
+			tasks: [{
+				id: "09137995FF6F40D8"
+				type: "item"
+				item: "create:sturdy_sheet"
+				count: 256L
+			}]
+			rewards: [
+				{
+					id: "2E7C8444D0A1D5B4"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "043FA7EB98A44289"
+					type: "item"
+					item: "create:railway_casing"
+					count: 24
+				}
+				{
+					id: "29CAE9DC3EA42951"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:fire_resistance"
+						}
+					}
+					count: 6
+				}
+			]
+		}
+		{
+			title: "Get Silky"
+			x: 1.0d
+			y: -4.0d
+			description: [
+				"&6Silky&r works like vanilla Silk Touch."
+				""
+				"If applied to a Sword, it can shear blocks like Shears."
+				""
+				"If applied on a Kama, you can collect Slimy Vines - they aren't collectable with regular Silk Touch!"
+			]
+			dependencies: [
+				"5042E544D3181FAC"
+				"0F4C452C9C9AB1B8"
+			]
+			id: "610593E8EACE8EBC"
+			tasks: [{
+				id: "6311CD924197D073"
+				type: "item"
+				item: "tconstruct:silky_cloth"
+				count: 5L
+			}]
+		}
+		{
+			title: "Get Hasty"
+			x: -2.5d
+			y: -4.5d
+			subtitle: "Efficiency: Tinker's Edition"
+			description: ["&cHaste&r is a really straightforward modifier - it increases mining speed of the tool."]
+			dependencies: ["5042E544D3181FAC"]
+			id: "1EA3910AEF29A489"
+			tasks: [{
+				id: "544FA0A773D09A1F"
+				type: "item"
+				item: "minecraft:redstone_block"
+				count: 5L
+			}]
+		}
+		{
+			title: "Tube Corals"
+			x: 0.5d
+			y: 9.5d
+			description: [
+				"Automatable warm ocean no matter where you are at!"
+				""
+				"&bNote: Press \"U\" on the Coral in REI to see all the possibilities! "
+				""
+				"Whilst not a priority right now, do take the time to see the possibilites of &6Crushing&r these blocks later..."
+			]
+			hide_dependency_lines: false
+			dependencies: ["38814494AB07C2D8"]
+			dependency_requirement: "one_completed"
+			min_required_tasks: 1
+			id: "188BB7559F7A37B0"
+			tasks: [
+				{
+					id: "4118BF40631AC97A"
+					type: "item"
+					item: "minecraft:tube_coral_block"
+				}
+				{
+					id: "05CF38D3F0CFF397"
+					type: "item"
+					item: "minecraft:brain_coral_block"
+				}
+				{
+					id: "3552D1AE1B3D858E"
+					type: "item"
+					item: "minecraft:bubble_coral_block"
+				}
+				{
+					id: "3384F69AD1A64D5B"
+					type: "item"
+					item: "minecraft:fire_coral_block"
+				}
+				{
+					id: "7E69A95C68760DAC"
+					type: "item"
+					item: "minecraft:horn_coral_block"
+				}
+			]
+			rewards: [{
+				id: "16DBA4D8CCABB01A"
+				type: "item"
+				item: "minecraft:sea_pickle"
+				count: 16
+			}]
+		}
+		{
+			title: "&6Unlimited Andesite&r"
+			x: 6.0d
+			y: 0.5d
+			subtitle: "3x3 Multiblock which changes block generation based on planet!"
+			description: [
+				"Complimentary schematic included with all purchases!"
+				""
+				"Top Layer: 3x3 Copper Casing"
+				""
+				"Middle Layer: Lava in middle, surrounded by vanilla glass. Chamber on any central side."
+				""
+				"Lower Layer: 3x3 Copper Casing"
+			]
+			dependencies: ["557684C7D7B955B8"]
+			id: "7F3DD44E4885A837"
+			tasks: [{
+				id: "0F2DE8EE0A4B0AB0"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "createastral:stone_growth_chamber"
+					}
+				}
+			}]
+			rewards: [{
+				id: "2C0CD5E9685CFFEA"
+				type: "item"
+				item: {
+					id: "create:schematic"
+					Count: 1b
+					tag: {
+						Anchor: {
+							Z: 0
+							X: 0
+							Y: 0
+						}
+						Owner: "Laskyyy"
+						Deployed: 0b
+						File: "[AstralExamples] Stone Growth Chamber.nbt"
+						Rotation: "NONE"
+						Mirror: "NONE"
+						Bounds: [
+							3
+							3
+							3
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "&6Bulk Processing of Create Orestones&r"
+			x: 4.5d
+			y: 5.25d
+			shape: "hexagon"
+			subtitle: "Huge ore returns with side products galore!"
+			description: [
+				"Create Orestones have been changes to be &6fully automatable&r."
+				""
+				"The recipes each require a liquid, a block (or two!) and a dye."
+				""
+				"Merging these production lines to end in an orestone farm can fund your factories for the foreseeable future."
+			]
+			dependencies: ["38814494AB07C2D8"]
+			size: 1.5d
+			id: "280074A596663CE6"
+			tasks: [
+				{
+					id: "58CBFD5202BC6F7F"
+					type: "item"
+					item: "create:limestone"
+					count: 64L
+				}
+				{
+					id: "6BDA58A70543DEFE"
+					type: "item"
+					item: "create:asurine"
+					count: 64L
+				}
+				{
+					id: "3B94D34CDEAE8C29"
+					type: "item"
+					item: "create:crimsite"
+					count: 64L
+				}
+				{
+					id: "74014F05B4E03C1E"
+					type: "item"
+					item: "create:ochrum"
+					count: 64L
+				}
+				{
+					id: "4568F1E9131E6958"
+					type: "item"
+					item: "create:veridium"
+					count: 64L
+				}
+				{
+					id: "2E512B0AD59DF176"
+					type: "item"
+					item: "create:scoria"
+					count: 64L
+				}
+				{
+					id: "2690E2798BB1A91B"
+					type: "item"
+					item: "create:scorchia"
+					count: 64L
+				}
+			]
+			rewards: [
+				{
+					id: "2DEC7B3ECFB78C92"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2053519168689179764L
+				}
+				{
+					id: "42C3E01978012505"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2053519168689179764L
+				}
+				{
+					id: "168FC39EDDB6EFFB"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2053519168689179764L
+				}
+			]
 		}
 	]
+	quest_links: [ ]
 }

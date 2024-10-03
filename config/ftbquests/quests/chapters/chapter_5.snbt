@@ -1,67 +1,141 @@
 {
-	quest_links: [ ]
-	default_hide_dependency_lines: false
-	group: ""
 	id: "33205DD87098DE65"
+	group: ""
+	order_index: 7
 	filename: "chapter_5"
-	default_quest_shape: ""
-	icon: "techreborn:electronic_circuit"
 	title: "{chapter.7.title}"
+	icon: "techreborn:electronic_circuit"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	images: [
 		{
-			rotation: 0.0d
-			image: "ad_astra:textures/painting/mars.png"
+			x: -3.5d
+			y: 0.5d
 			width: 3.0d
-			click: ""
+			height: 4.0d
+			rotation: 0.0d
+			image: "createastral:textures/item/coolmars.png"
 			hover: [ ]
-			x: -3.0d
-			y: 0.0d
-			corner: false
+			click: ""
 			dev: false
-			height: 3.0d
+			corner: false
 		}
 		{
-			rotation: 0.0d
-			image: "ad_astra:textures/painting/mercury.png"
-			width: 2.0d
-			click: ""
-			hover: [ ]
 			x: 27.0d
 			y: -4.0d
-			corner: false
-			dev: false
+			width: 2.0d
 			height: 2.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/painting/mercury.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
 		}
 		{
-			rotation: 0.0d
-			image: "ad_astra:textures/sky/glacio.png"
-			width: 3.0d
-			click: ""
-			hover: [ ]
 			x: 19.0d
 			y: 5.0d
-			corner: false
-			dev: false
+			width: 3.0d
 			height: 3.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/sky/glacio.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 11.0d
+			y: -8.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_g.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 12.0d
+			y: -8.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_i.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 13.0d
+			y: -8.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_l.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 14.0d
+			y: -8.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_d.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 15.0d
+			y: -8.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_e.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 16.0d
+			y: -8.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_d.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
 		}
 	]
-	order_index: 6
 	quests: [
 		{
-			hide_text_until_complete: false
+			title: "{chapter.7.quest.1.title}"
 			x: 0.0d
+			y: 0.0d
+			shape: "pentagon"
 			subtitle: "{chapter.7.quest.1.subtitle}"
+			description: ["{chapter.7.quest.1.description.1}"]
+			dependencies: ["63DCF596AAA9A232"]
+			hide: true
+			hide_text_until_complete: false
+			size: 2.0d
+			id: "253F29A00B4EA050"
 			tasks: [{
 				id: "136C0FE1977335AD"
 				type: "dimension"
 				icon: "ad_astra:mars_globe"
 				dimension: "ad_astra:mars"
 			}]
-			description: ["{chapter.7.quest.1.description.1}"]
-			id: "253F29A00B4EA050"
-			shape: "pentagon"
-			y: 0.0d
-			title: "{chapter.7.quest.1.title}"
 			rewards: [
 				{
 					id: "765072271F3D139D"
@@ -74,19 +148,28 @@
 					xp: 300
 				}
 			]
-			dependencies: ["63DCF596AAA9A232"]
-			hide: true
-			size: 2.0d
 		}
 		{
-			size: 1.5d
-			description: ["{chapter.7.quest.2.description.1}"]
-			id: "3A5D7E60EF1C3BC3"
+			title: "Obtaining Ostrum!"
 			icon: "ad_astra:ostrum_ingot"
 			x: 18.02857142857141d
 			y: -2.4761904761904745d
 			shape: "square"
-			title: "{chapter.7.quest.2.title}"
+			subtitle: "Let us put that &bHellfire&r to good use, shall we?"
+			description: [
+				"Access to your new fuel will allow the &6Foundry&r to become &bSUPERHEATED&r!"
+				""
+				"This new heat threshold of 3000*C will allow most future ores to be melted down into molten goodness, which can then be cast as ingots and plates. Ostrum, especially, is going to be integral in creating a rocket and protective equipment to survive the dangerous conditions as we approach ever closer to the sun..."
+			]
+			dependencies: ["07C60C1DB44579B9"]
+			size: 1.5d
+			id: "3A5D7E60EF1C3BC3"
+			tasks: [{
+				id: "31C9A429FF4C66EA"
+				type: "item"
+				item: "ad_astra:ostrum_ingot"
+				count: 8L
+			}]
 			rewards: [
 				{
 					id: "668A4046FFBD54AB"
@@ -113,38 +196,20 @@
 					table_id: 2770258610575478801L
 				}
 			]
-			dependencies: ["522A1B9A073A573E"]
-			subtitle: "{chapter.7.quest.2.subtitle}"
-			tasks: [{
-				id: "31C9A429FF4C66EA"
-				type: "item"
-				item: "ad_astra:ostrum_ingot"
-				count: 8L
-			}]
 		}
 		{
-			size: 1.5d
-			description: ["{chapter.7.quest.3.description.1}"]
-			id: "7B5DE5040FC24D21"
+			title: "{chapter.7.quest.3.title}"
 			x: 5.5d
 			y: 1.0d
 			shape: "square"
-			title: "{chapter.7.quest.3.title}"
-			rewards: [
-				{
-					id: "31F0CCE562AB9B0C"
-					type: "item"
-					item: "vinery:chocolate_bread"
-				}
-				{
-					id: "62A98A415DEE7E07"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 2770258610575478801L
-				}
-			]
 			subtitle: "{chapter.7.quest.3.subtitle}"
-			dependencies: ["4F9C4AB5B7F21887"]
+			description: ["{chapter.7.quest.3.description.1}"]
+			dependencies: [
+				"42FDBAC4A8966F9D"
+				"684E33C50BD55A8E"
+			]
+			size: 1.5d
+			id: "7B5DE5040FC24D21"
 			tasks: [
 				{
 					id: "63AB5A5A44B664D3"
@@ -164,57 +229,39 @@
 					}
 				}
 			]
+			rewards: [
+				{
+					id: "31F0CCE562AB9B0C"
+					type: "item"
+					item: "vinery:chocolate_bread"
+				}
+				{
+					id: "62A98A415DEE7E07"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2770258610575478801L
+				}
+			]
 		}
 		{
-			tasks: [{
-				id: "0E031E746AC39336"
-				type: "item"
-				item: "techreborn:advanced_drill"
-			}]
-			id: "77F3D564A2AE72AE"
-			x: 4.5d
-			y: 2.25d
-			title: "{chapter.7.quest.4.title}"
-			dependencies: ["7B5DE5040FC24D21"]
-			optional: true
-		}
-		{
-			tasks: [{
-				id: "19C512CEF9BECFDC"
-				type: "item"
-				item: "techreborn:advanced_chainsaw"
-			}]
-			id: "1D5DEE21F9178935"
-			x: 6.5d
-			y: 2.25d
-			title: "{chapter.7.quest.5.title}"
-			dependencies: ["7B5DE5040FC24D21"]
-			optional: true
-		}
-		{
-			tasks: [{
-				id: "6BC916CE343DB9CA"
-				type: "item"
-				item: "techreborn:advanced_jackhammer"
-			}]
-			id: "575F106CD1827C99"
-			x: 5.5d
-			y: 2.75d
-			title: "{chapter.7.quest.6.title}"
-			dependencies: ["7B5DE5040FC24D21"]
-			optional: true
-		}
-		{
+			title: "{chapter.7.quest.7.title}"
+			x: 7.0833333333333215d
+			y: -0.4761904761904816d
+			shape: "square"
+			subtitle: "{chapter.7.quest.7.subtitle}"
+			description: [
+				"A swathe of recipes are available in the electrolyser, from separating Tech Reborn fluids to their base components, to converting items like clay and coal dust into &6lithium and carbon cells respectively&r."
+				""
+				"Those two recipes mention at the tail-end of the first sentence are worth knowing, and getting produced already, before you will start using it for further manufacturing."
+			]
+			dependencies: ["5729A883639B2EEF"]
+			size: 1.5d
+			id: "684E33C50BD55A8E"
 			tasks: [{
 				id: "3688FB4578B78F23"
 				type: "item"
 				item: "techreborn:industrial_electrolyzer"
 			}]
-			description: ["{chapter.7.quest.7.description.1}"]
-			id: "684E33C50BD55A8E"
-			x: 7.0d
-			y: -0.5d
-			title: "{chapter.7.quest.7.title}"
 			rewards: [
 				{
 					id: "6A9BB237A3F3860C"
@@ -239,33 +286,21 @@
 					}
 				}
 			]
-			subtitle: "{chapter.7.quest.7.subtitle}"
-			dependencies: ["5729A883639B2EEF"]
 		}
 		{
-			size: 1.5d
-			description: ["{chapter.7.quest.8.description.1}"]
-			id: "7B5AE0A782DE8DF8"
+			title: "{chapter.7.quest.8.title}"
 			x: 22.0d
 			y: -2.5d
 			shape: "square"
-			title: "{chapter.7.quest.8.title}"
-			rewards: [
-				{
-					id: "0A150B7DBD98E783"
-					type: "item"
-					item: "create:metal_bracket"
-					count: 32
-				}
-				{
-					id: "04AF8D3BEA00BA10"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 2770258610575478801L
-				}
+			subtitle: "Become. &6A Helldiver&r."
+			description: [
+				"An upgrade to your humble space-suit. How enticing! This suit will be &6Mandatory&r for exploration on Mercury, as the ambient temperature would rip through your basic suit like kindling."
+				""
+				"You'll need a &6Shimmer Amplifier&r and &6Orange Stained Glass&r for these! Take note of the latter as it catches many off guard."
 			]
-			subtitle: "{chapter.7.quest.8.subtitle}"
-			dependencies: ["3A5D7E60EF1C3BC3"]
+			dependencies: ["717A6825F23CC07F"]
+			size: 1.5d
+			id: "7B5AE0A782DE8DF8"
 			tasks: [
 				{
 					id: "25670D5E53F8126E"
@@ -312,14 +347,53 @@
 					}
 				}
 			]
+			rewards: [
+				{
+					id: "0A150B7DBD98E783"
+					type: "item"
+					item: "create:metal_bracket"
+					count: 32
+				}
+				{
+					id: "04AF8D3BEA00BA10"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2770258610575478801L
+				}
+			]
 		}
 		{
-			size: 1.5d
-			id: "3CF2DB0B0ACE19B6"
+			title: "Explosively Powerful Rockets."
 			x: 25.0d
 			y: -2.5d
 			shape: "hexagon"
-			title: "{chapter.7.quest.9.title}"
+			subtitle: "Combining everything we have learnt so far."
+			description: [
+				"&bWell done.&r"
+				""
+				"Not everyone makes it this far, you know."
+				""
+				"You are about to assemble your second rocket, utilising all the components made up to this point. Quite a thrill!"
+				""
+				"Preparing for &6Mercury&r should be of utmost priority. Enemies there will not spare you if you slack, so be sure to get protection on your suit if you haven't already!"
+			]
+			dependencies: [
+				"7B5AE0A782DE8DF8"
+				"63A96438AB2F9506"
+				"08F5A89342F03D4C"
+				"218D042C0501AE76"
+			]
+			size: 1.5d
+			id: "3CF2DB0B0ACE19B6"
+			tasks: [{
+				id: "2FC71B79D1D17B9D"
+				type: "item"
+				item: {
+					id: "ad_astra:tier_3_rocket"
+					Count: 1b
+					tag: { }
+				}
+			}]
 			rewards: [
 				{
 					id: "6F94AD86CBF1F65D"
@@ -334,81 +408,46 @@
 					table_id: 2770258610575478801L
 				}
 			]
-			subtitle: "{chapter.7.quest.9.subtitle}"
-			dependencies: [
-				"7B5AE0A782DE8DF8"
-				"63A96438AB2F9506"
-				"3F21FC19DD9459EF"
-			]
-			tasks: [{
-				id: "2FC71B79D1D17B9D"
-				type: "item"
-				item: {
-					id: "ad_astra:tier_3_rocket"
-					Count: 1b
-					tag: { }
-				}
-			}]
 		}
 		{
-			tasks: [{
-				id: "551F104DC625712F"
-				type: "item"
-				item: "doodads:slimey_shoes"
-			}]
-			description: ["{chapter.7.quest.10.description.1}"]
-			id: "08CEB76C11CCE833"
-			x: 18.5d
-			y: -4.0d
-			rewards: [{
-				id: "28F3BF080FAAB3DB"
-				type: "item"
-				item: {
-					id: "tconstruct:large_plate"
-					Count: 1b
-					tag: {
-						Material: "tconstruct:manyullyn"
-					}
-				}
-				count: 2
-			}]
-			subtitle: "{chapter.7.quest.10.subtitle}"
-			dependencies: ["3A5D7E60EF1C3BC3"]
-			optional: true
-		}
-		{
-			size: 3.0d
-			description: ["{chapter.7.quest.11.description.1}"]
-			id: "5BD2D0F7F0D70180"
+			title: "Ready for things to get &bHotter?&r"
 			x: 29.5d
 			y: -2.5d
 			shape: "gear"
-			title: "{chapter.7.quest.11.title}"
-			rewards: [{
-				id: "3BBF172AD342EF01"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 2770258610575478801L
-			}]
+			description: ["{chapter.7.quest.11.description.1}"]
 			dependencies: ["3CF2DB0B0ACE19B6"]
+			size: 3.0d
+			id: "5BD2D0F7F0D70180"
 			tasks: [{
 				id: "39BBDC85B1D5AAA7"
 				type: "dimension"
 				icon: "ad_astra:mercury_globe"
 				dimension: "ad_astra:mercury"
 			}]
+			rewards: [{
+				id: "3BBF172AD342EF01"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2770258610575478801L
+			}]
 		}
 		{
+			title: "Blasting Steel Dust!"
+			x: 5.5d
+			y: -4.5d
+			description: [
+				"The recipe you've been using so far for steel dust is rather low output for it's cost."
+				""
+				"&6This can change...&r"
+			]
+			dependencies: ["5729A883639B2EEF"]
+			optional: true
+			id: "30B554B51AEFEB0C"
 			tasks: [{
 				id: "68BB3658712A39A5"
 				type: "item"
 				item: "techreborn:industrial_blast_furnace"
 			}]
-			description: ["{chapter.7.quest.12.description.1}"]
-			id: "30B554B51AEFEB0C"
-			x: 5.5d
-			y: -4.5d
-			title: "{chapter.7.quest.12.title}"
 			rewards: [
 				{
 					id: "15AF530D5E400274"
@@ -428,22 +467,26 @@
 					table_id: 2770258610575478801L
 				}
 			]
-			dependencies: ["5729A883639B2EEF"]
-			optional: true
 		}
 		{
+			title: "{chapter.7.quest.14.title}"
+			x: 0.0d
+			y: 2.0d
+			subtitle: "{chapter.7.quest.14.subtitle}"
+			dependencies: ["253F29A00B4EA050"]
+			id: "28B99F2B5CA82BF9"
 			tasks: [
 				{
 					id: "68293CB7A35DED12"
 					type: "biome"
 					icon: "ad_astra:mars_sand"
-					biome: "ad_astra:mars_wastelands"
+					biome: "ad_astra:martian_wastelands"
 				}
 				{
 					id: "0EADEDD630D75A8E"
 					type: "biome"
 					icon: "ad_astra:conglomerate"
-					biome: "ad_astra:mars_canyon_creek"
+					biome: "ad_astra:martian_canyon_creek"
 				}
 				{
 					id: "3A9B33851300612F"
@@ -451,17 +494,7 @@
 					icon: "ad_astra:infernal_spire_block"
 					biome: "ad_astra:infernal_venus_barrens"
 				}
-				{
-					id: "73BBF21C30B00F13"
-					type: "biome"
-					icon: "minecraft:red_terracotta"
-					biome: "incendium:infernal_dunes"
-				}
 			]
-			id: "28B99F2B5CA82BF9"
-			x: 0.5d
-			y: 3.0d
-			title: "{chapter.7.quest.14.title}"
 			rewards: [
 				{
 					id: "4BF3BE9BBB3F8726"
@@ -481,94 +514,53 @@
 					table_id: 5253492355592689915L
 				}
 			]
-			subtitle: "{chapter.7.quest.14.subtitle}"
-			dependencies: ["253F29A00B4EA050"]
 		}
 		{
-			tasks: [
-				{
-					id: "3FEB50C48D701D63"
-					type: "structure"
-					icon: "minecraft:crimson_stem"
-					structure: "incendium:piglin_village"
-				}
-				{
-					id: "6ECBF3C4BDA6BB76"
-					type: "structure"
-					icon: "chipped:raw_gold_block_46"
-					structure: "incendium:forbidden_castle"
-				}
-				{
-					id: "066178CA6B2603B9"
-					type: "structure"
-					icon: "chipped:gilded_blackstone_38"
-					structure: "minecraft:bastion_remnant"
-				}
+			title: "{chapter.7.quest.16.title}"
+			x: 0.0d
+			y: -2.0d
+			description: [
+				"Much like certain desktop CPUs the new chip that's our goal will need pins to connect to its motherboard, whether that may be a washing machine or a high-end gaming PC is irrelevant."
+				""
+				"To create pins you will need to put gold nuggets into a Rolling Machine, which will result in normal pins. We don't want the normal pins though, we want special ones, electrified ones."
+				""
+				"Create these electrified pins by putting the normal ones on a depot below a Tesla Coil, which will charge them up."
 			]
-			description: [""]
-			id: "16D7DDD842CB4797"
-			x: -0.5d
-			y: 3.0d
-			title: "{chapter.7.quest.15.title}"
-			rewards: [
-				{
-					id: "3D1C44FE3954271F"
-					type: "item"
-					item: {
-						id: "tconstruct:broad_blade"
-						Count: 1b
-						tag: {
-							Material: "tconstruct:lead"
-						}
-					}
-				}
-				{
-					id: "7DBD517E630BFF29"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 5253492355592689915L
-				}
-			]
-			subtitle: "{chapter.7.quest.15.subtitle}"
 			dependencies: ["253F29A00B4EA050"]
-		}
-		{
+			id: "7B0BBD0E9F82939D"
 			tasks: [{
 				id: "462ECA657570F004"
 				type: "item"
 				item: "minecraft:gold_nugget"
 				count: 16L
 			}]
-			description: [
-				"Much like certain desktop CPUs the new chip that's our goal will need pins to connect to its motherboard, whether that may be a washing mashine or a high-end gaming PC is irrelevant."
-				""
-				"To create pins you will need to put gold nuggets into a Rolling Machine, which will result in normal pins. We don't want the normal pins though, we want special ones, electrified ones."
-				""
-				"Create these electrified pins by putting the normal ones on a depot below a Tesla Coil, which will charge them up."
-			]
-			id: "7B0BBD0E9F82939D"
-			x: 0.0d
-			y: -2.0d
-			title: "{chapter.7.quest.16.title}"
 			rewards: [{
 				id: "2F569B756907B0DC"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 2770258610575478801L
 			}]
-			dependencies: ["253F29A00B4EA050"]
 		}
 		{
+			title: "{chapter.7.quest.17.title}"
+			x: 2.5d
+			y: -2.5d
+			subtitle: "I thought these were assembly items."
+			description: [
+				"So, you have pre-emptively applied all the electrified pins on the mechanism. "
+				""
+				"Good work!"
+			]
+			dependencies: [
+				"0476231FB94F095A"
+				"2993E04DCB7B4EC4"
+			]
+			id: "0DF20AB6978A93FE"
 			tasks: [{
 				id: "036E856A5BC3198E"
 				type: "item"
 				item: "createastral:incomplete_electronic_circuit"
 			}]
-			description: ["{chapter.7.quest.17.description.1}"]
-			id: "0DF20AB6978A93FE"
-			x: 2.5d
-			y: -2.5d
-			title: "{chapter.7.quest.17.title}"
 			rewards: [
 				{
 					id: "29C85DBB78534DDD"
@@ -583,19 +575,29 @@
 					table_id: 2770258610575478801L
 				}
 			]
-			dependencies: [
-				"0476231FB94F095A"
-				"2993E04DCB7B4EC4"
-			]
 		}
 		{
-			size: 1.5d
-			description: ["{chapter.7.quest.18.description.1}"]
-			id: "5729A883639B2EEF"
+			title: "Moore's Law"
 			x: 5.5d
 			y: -2.5d
 			shape: "rsquare"
-			title: "Moore's Law"
+			subtitle: "A new tier of chips with high demand."
+			description: [
+				"A simple process to finish the recipe chain, just apply a &6Lead Plate&r and &6Press&r to form your new circuit!"
+				""
+				"A majority of Tech Reborn machine blocks will be utilising these chips, and they will have uses in later chapters for further tiered items. "
+				""
+				"Don't slack on your automation! You've made it this far, after all."
+			]
+			dependencies: ["0DF20AB6978A93FE"]
+			size: 1.5d
+			id: "5729A883639B2EEF"
+			tasks: [{
+				id: "5F77DA249763A9A4"
+				type: "item"
+				item: "techreborn:electronic_circuit"
+				count: 4L
+			}]
 			rewards: [
 				{
 					id: "31DBA47B879AD749"
@@ -621,52 +623,88 @@
 					table_id: 2770258610575478801L
 				}
 			]
-			subtitle: "A new tier of chips with high demand."
-			dependencies: ["0DF20AB6978A93FE"]
-			tasks: [{
-				id: "5F77DA249763A9A4"
-				type: "item"
-				item: "techreborn:electronic_circuit"
-				count: 4L
-			}]
 		}
 		{
+			title: "{chapter.7.quest.19.title}"
+			x: 7.976190476190467d
+			y: -2.4761904761904816d
+			shape: "square"
+			subtitle: "The ultimate washing machine."
+			description: [
+				"The &6Centrifuge&r is an integral tool at your disposal. Use it to turn items, techreborn cells and more into their base components with a little bit of time and Energy input."
+				""
+				"From here, you have multiple paths to branch into, however they will converge eventually, feel free to focus on them one at a time, or all at once!"
+			]
+			dependencies: ["5729A883639B2EEF"]
+			size: 1.5d
+			id: "673DC1F22D2F790D"
 			tasks: [{
 				id: "343A9BACCFB28B13"
 				type: "item"
 				item: "techreborn:industrial_centrifuge"
 			}]
-			description: ["{chapter.7.quest.19.description.1}"]
-			id: "673DC1F22D2F790D"
-			x: 7.5d
-			y: -2.5d
-			title: "{chapter.7.quest.19.title}"
 			rewards: [{
-				id: "32D5F0149F97AD47"
+				id: "70E6E65AB2B6A0D6"
 				type: "item"
 				item: {
-					id: "tconstruct:pick_head"
+					id: "create:schematic"
 					Count: 1b
 					tag: {
-						Material: "tconstruct:ostrum"
+						Anchor: {
+							Z: 0
+							X: 0
+							Y: 0
+						}
+						Owner: "Laskyyy"
+						Deployed: 0b
+						File: "[AstralExamples] Distillery.nbt"
+						Rotation: "NONE"
+						Mirror: "NONE"
+						Bounds: [
+							5
+							5
+							5
+						]
 					}
 				}
 			}]
-			dependencies: ["5729A883639B2EEF"]
 		}
 		{
+			title: "Producing Lithium From Clay Dust"
+			x: 4.0d
+			y: -0.5d
+			subtitle: "{chapter.7.quest.20.subtitle}"
+			dependencies: ["5729A883639B2EEF"]
+			id: "42FDBAC4A8966F9D"
 			tasks: [{
 				id: "151F4608F7E77B3D"
 				type: "item"
 				item: "techreborn:clay_dust"
 			}]
-			dependencies: ["5729A883639B2EEF"]
-			subtitle: "{chapter.7.quest.20.subtitle}"
-			id: "42FDBAC4A8966F9D"
-			y: -0.5d
-			x: 4.0d
+			rewards: [{
+				id: "7A16F2717EA9BDED"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "techreborn:lithium"
+					}
+				}
+			}]
 		}
 		{
+			title: "Steel from liquid."
+			x: 5.5d
+			y: -6.0d
+			description: [
+				"&6Molten Iron Cells&r mixed with &6Carbon Cells&r (Obtained by electrolysing coal or charcoal) will produce four steel dust in a blast furnace."
+				""
+				"This is over 2x the efficiency of the prior recipe per resource spent!"
+			]
+			dependencies: ["30B554B51AEFEB0C"]
+			optional: true
+			id: "33DBA03CF188DF0B"
 			tasks: [
 				{
 					id: "4AD6A2F23A9FACEE"
@@ -680,12 +718,6 @@
 					}
 				}
 				{
-					id: "5C4466EA099805DA"
-					type: "item"
-					item: "techreborn:coal_dust"
-					count: 2L
-				}
-				{
 					id: "30B11C4314A81F5C"
 					type: "item"
 					item: {
@@ -697,69 +729,51 @@
 					}
 				}
 			]
-			description: ["{chapter.7.quest.21.description.1}"]
-			id: "33DBA03CF188DF0B"
-			x: 5.5d
-			y: -6.0d
-			title: "{chapter.7.quest.21.title}"
-			dependencies: ["30B554B51AEFEB0C"]
-			optional: true
-		}
-		{
-			tasks: [{
-				id: "544483DAD0120103"
+			rewards: [{
+				id: "3001E0CE6D4C5328"
 				type: "item"
 				item: "techreborn:steel_dust"
-				count: 64L
+				count: 16
 			}]
-			description: ["{chapter.7.quest.22.description.1}"]
-			id: "4AEC38BDC884A6C4"
-			x: 4.0d
-			y: -6.0d
-			rewards: [{
-				id: "0AACBF003327ABFD"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 2770258610575478801L
-			}]
-			dependencies: ["33DBA03CF188DF0B"]
-			optional: true
 		}
 		{
+			title: "{chapter.7.quest.25.title}"
+			x: -1.5d
+			y: -2.0d
+			shape: "circle"
+			subtitle: "{chapter.7.quest.25.subtitle}"
+			description: ["{chapter.7.quest.25.description.1}"]
+			dependencies: ["253F29A00B4EA050"]
+			optional: true
+			id: "520A09EF39A1BF5D"
 			tasks: [{
 				id: "63F4A287D6A5B92F"
 				type: "item"
 				item: "ad_astra:infernal_spire_block"
 			}]
-			description: ["{chapter.7.quest.25.description.1}"]
-			id: "520A09EF39A1BF5D"
-			x: -3.5d
-			y: -2.0d
-			shape: "circle"
-			title: "{chapter.7.quest.25.title}"
 			rewards: [{
 				id: "087C306CC387F474"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 5253492355592689915L
 			}]
-			subtitle: "{chapter.7.quest.25.subtitle}"
-			dependencies: ["2B697AA42C48FC04"]
-			optional: true
 		}
 		{
+			title: "{chapter.7.quest.26.title}"
+			x: -3.0d
+			y: -2.0d
+			shape: "diamond"
+			subtitle: "{chapter.7.quest.26.subtitle}"
+			description: ["{chapter.7.quest.26.description.1}"]
+			dependencies: ["520A09EF39A1BF5D"]
+			optional: true
+			id: "27B0EA62812564DD"
 			tasks: [{
 				id: "46A91B73816C6440"
 				type: "item"
 				item: "tconstruct:debris_nugget"
 				count: 64L
 			}]
-			description: ["{chapter.7.quest.26.description.1}"]
-			id: "27B0EA62812564DD"
-			x: -5.0d
-			y: -2.0d
-			shape: "diamond"
-			title: "{chapter.7.quest.26.title}"
 			rewards: [{
 				id: "637BCCC6223E87A9"
 				type: "item"
@@ -771,24 +785,23 @@
 					}
 				}
 			}]
-			subtitle: "{chapter.7.quest.26.subtitle}"
-			dependencies: ["520A09EF39A1BF5D"]
-			optional: true
 		}
 		{
-			tasks: [{
-				id: "04BCF9DF55944974"
-				type: "item"
-				item: "createastral:electrified_pin"
-			}]
+			title: "Electrifying Pins"
+			x: 1.0d
+			y: -2.5d
 			description: [
 				"Now that you've got electrified pins it is time to add them to the chip."
 				""
 				"However, they are very small and delicate, which means that human precision is not enough. You will need to apply the pins to an integrated circuit in an assembly line using deployers."
 			]
+			dependencies: ["7B0BBD0E9F82939D"]
 			id: "0476231FB94F095A"
-			x: 1.0d
-			y: -2.5d
+			tasks: [{
+				id: "04BCF9DF55944974"
+				type: "item"
+				item: "createastral:electrified_pin"
+			}]
 			rewards: [
 				{
 					id: "01E486EDBFBDD7FB"
@@ -803,190 +816,36 @@
 					table_id: 5253492355592689915L
 				}
 			]
-			dependencies: ["7B0BBD0E9F82939D"]
 		}
 		{
-			tasks: [{
-				id: "348F9CA589D63FB6"
-				type: "item"
-				item: "gearreborn:nv_goggles"
-			}]
-			description: ["{chapter.7.quest.28.description.1}"]
-			id: "259E754B57C45C67"
-			x: 6.5d
-			y: -4.5d
-			title: "{chapter.7.quest.28.title}"
-			rewards: [{
-				id: "6CA657AA5EC0D9B2"
-				type: "item"
-				item: {
-					id: "minecraft:potion"
-					Count: 1b
-					tag: {
-						Potion: "minecraft:long_night_vision"
-					}
-				}
-			}]
-			dependencies: ["5729A883639B2EEF"]
-		}
-		{
-			tasks: [{
-				id: "57E6AB2360AF8EE8"
-				type: "item"
-				item: {
-					id: "techreborn:cell"
-					Count: 1b
-					tag: {
-						fluid: "techreborn:sodium"
-					}
-				}
-			}]
-			id: "3110924697AB562C"
-			x: 16.0d
-			y: -4.5d
-			title: "{chapter.7.quest.33.title}"
-			rewards: [{
-				id: "3D96D1E80CBDA01B"
-				type: "item"
-				item: "createastral:uwaah"
-			}]
-			subtitle: "{chapter.7.quest.33.subtitle}"
-			dependencies: ["6C43EB3CBD04AA17"]
-		}
-		{
-			size: 1.5d
-			id: "0050671D67C2FC01"
-			x: 14.5d
+			title: "The Shimmer Amplifier"
+			x: 20.5d
 			y: -6.0d
-			title: "{chapter.7.quest.35.title}"
-			rewards: [{
-				id: "7B8519532E7289CD"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 2770258610575478801L
-			}]
-			dependencies: ["34740D396988DE97"]
-			tasks: [{
-				id: "48A25495A77F213A"
-				type: "item"
-				item: {
-					id: "techreborn:cell"
-					Count: 1b
-					tag: {
-						fluid: "techreborn:potassium"
-					}
-				}
-			}]
-		}
-		{
-			tasks: [{
-				id: "53092950FA54512A"
-				type: "item"
-				item: "techreborn:lazurite_dust"
-			}]
-			id: "6C43EB3CBD04AA17"
-			x: 14.5d
-			y: -4.5d
-			title: "{chapter.7.quest.36.title}"
-			subtitle: "{chapter.7.quest.36.subtitle}"
-			dependencies: ["684E33C50BD55A8E"]
-			hide_dependency_lines: true
-		}
-		{
+			description: [
+				"A component use in &6Vital Rocket Assembly Parts&r."
+				""
+				"Various fluid you've interacted with before, alongside &6Fire-Resistant Fragile Sheet Blocks&r will assemble into this component."
+			]
+			dependencies: [
+				"5DAEC5A11AF8FCE7"
+				"3AC1211B3D81C683"
+				"0682A67E2A94B663"
+			]
+			id: "717A6825F23CC07F"
 			tasks: [{
 				id: "05B72CB01449965A"
 				type: "item"
 				item: "createastral:shimmer_amplifier"
 			}]
-			id: "717A6825F23CC07F"
-			x: 16.0d
-			y: -6.0d
-			title: "{chapter.7.quest.37.title}"
-			rewards: [
-				{
-					id: "582AA8225A240D07"
-					type: "item"
-					item: {
-						id: "minecraft:potion"
-						Count: 1b
-						tag: {
-							Potion: "minecraft:strong_leaping"
-						}
-					}
-				}
-				{
-					id: "3060337FE332870C"
-					type: "item"
-					item: {
-						id: "minecraft:potion"
-						Count: 1b
-						tag: {
-							Potion: "minecraft:strong_swiftness"
-						}
-					}
-				}
-				{
-					id: "31AD6626DE63EA9F"
-					type: "item"
-					item: {
-						id: "minecraft:potion"
-						Count: 1b
-						tag: {
-							Potion: "minecraft:long_slow_falling"
-						}
-					}
-				}
-			]
-			dependencies: [
-				"0050671D67C2FC01"
-				"3110924697AB562C"
-			]
+			rewards: [{
+				id: "16E53204537D86BE"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2770258610575478801L
+			}]
 		}
 		{
-			tasks: [{
-				id: "65AE540EDF7157E7"
-				type: "item"
-				item: "techreborn:overclocker_upgrade"
-			}]
-			dependencies: ["717A6825F23CC07F"]
-			id: "19E1C30DBB2B1AB2"
-			y: -7.5d
-			x: 16.0d
-		}
-		{
-			tasks: [{
-				id: "1081B553AE56D482"
-				type: "item"
-				item: "techreborn:implosion_compressor"
-			}]
-			id: "2E320829DF95EB8E"
-			x: 5.5d
-			y: -7.5d
-			title: "{chapter.7.quest.43.title}"
-			rewards: [
-				{
-					id: "1839CF2AE0EBC4C0"
-					type: "item"
-					item: "reinfchest:diamond_chest"
-				}
-				{
-					id: "5C4117A290CD9FF2"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 2770258610575478801L
-				}
-			]
-			subtitle: "{chapter.7.quest.43.subtitle}"
-			dependencies: ["33DBA03CF188DF0B"]
-			optional: true
-		}
-		{
-			tasks: [{
-				id: "4588380C7A069FFA"
-				type: "checkmark"
-			}]
-			description: ["{chapter.7.quest.44.description.1}"]
-			id: "6FC315C473D123F8"
+			title: "{chapter.7.quest.44.title}"
 			icon: {
 				id: "techreborn:cell"
 				Count: 1b
@@ -994,86 +853,95 @@
 					fluid: "tconstruct:molten_diamond"
 				}
 			}
-			x: 7.0d
-			y: -6.0d
-			title: "{chapter.7.quest.44.title}"
-			rewards: [{
-				id: "3A3624C2349BF4A5"
-				type: "item"
-				item: {
-					id: "techreborn:cell"
-					Count: 1b
-					tag: {
-						fluid: "tconstruct:molten_diamond"
+			x: 5.5d
+			y: -7.5d
+			subtitle: "{chapter.7.quest.44.subtitle}"
+			description: ["{chapter.7.quest.44.description.1}"]
+			dependencies: ["33DBA03CF188DF0B"]
+			optional: true
+			id: "6FC315C473D123F8"
+			tasks: [
+				{
+					id: "4588380C7A069FFA"
+					type: "checkmark"
+				}
+				{
+					id: "35F998F01D6E0719"
+					type: "item"
+					item: "techreborn:implosion_compressor"
+				}
+			]
+			rewards: [
+				{
+					id: "3A3624C2349BF4A5"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "tconstruct:molten_diamond"
+						}
 					}
 				}
-			}]
-			subtitle: "{chapter.7.quest.44.subtitle}"
-			dependencies: ["2E320829DF95EB8E"]
-			optional: true
+				{
+					id: "02F9740D40146BCC"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2770258610575478801L
+				}
+			]
 		}
 		{
+			icon: "minecraft:gold_block"
+			x: 1.5d
+			y: 2.0d
+			subtitle: "{chapter.7.quest.45.subtitle}"
+			description: ["Gold can be found in structures here, but it's important to set up Gold automation using Ochrum!"]
+			dependencies: ["253F29A00B4EA050"]
+			id: "3303D84A3F6FBBBA"
 			tasks: [{
 				id: "1CA9416E1FBF478C"
 				type: "checkmark"
 				title: "{chapter.7.quest.45.task.1.title}"
 			}]
-			description: ["{chapter.7.quest.45.description.1}"]
-			icon: "minecraft:gold_block"
-			id: "3303D84A3F6FBBBA"
-			x: 5.0d
-			y: 4.0d
-			subtitle: "{chapter.7.quest.45.subtitle}"
-			dependencies: ["253F29A00B4EA050"]
 		}
 		{
+			title: "{chapter.7.quest.46.title}"
+			x: 2.5d
+			y: 4.0d
+			subtitle: "&6Respect the Piglin's Religion, and they may opt to bargain with you.&r"
+			description: [
+				"{image:tconstruct:textures/block/storage/pig_iron/front.png width:100 height:100 align:1}"
+				"{chapter.7.quest.46.description.1}"
+			]
+			dependencies: ["3303D84A3F6FBBBA"]
+			id: "1873D12083BC1697"
 			tasks: [{
 				id: "45E0F4CC4E15B053"
 				type: "item"
 				item: "passivepiglins:piglin_totem"
 			}]
-			description: [
-				"{image:tconstruct:textures/block/storage/pig_iron/front.png width:100 height:100 align:1}"
-				"{chapter.7.quest.46.description.1}"
-			]
-			id: "1873D12083BC1697"
-			x: 5.0d
-			y: 6.0d
-			title: "{chapter.7.quest.46.title}"
 			rewards: [{
 				id: "2D6FDB9B66C7E39D"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 2770258610575478801L
 			}]
-			subtitle: "{chapter.7.quest.46.subtitle}"
-			dependencies: ["3303D84A3F6FBBBA"]
 		}
 		{
-			tasks: [{
-				id: "3C7D9A10113C6167"
-				type: "checkmark"
-			}]
-			description: ["{chapter.7.quest.47.description.1}"]
-			icon: "ad_astra:ostrum_nugget"
-			id: "2B697AA42C48FC04"
-			x: -2.0d
-			y: -2.0d
-			title: "{chapter.7.quest.47.title}"
-			dependencies: ["253F29A00B4EA050"]
-		}
-		{
+			title: "{chapter.7.quest.48.title}"
+			x: 4.0d
+			y: 6.0d
+			subtitle: "{chapter.7.quest.48.subtitle}"
+			description: ["{chapter.7.quest.48.description.1}"]
+			dependencies: ["1A99F6B849B12B09"]
+			id: "597DB82F2961DD9B"
 			tasks: [{
 				id: "3DC4A6F587D3B9A6"
 				type: "item"
 				item: "passivepiglins:piglin_coin"
 				count: 4L
 			}]
-			description: ["{chapter.7.quest.48.description.1}"]
-			id: "597DB82F2961DD9B"
-			x: 2.0d
-			y: 4.0d
-			title: "{chapter.7.quest.48.title}"
 			rewards: [
 				{
 					id: "536F4C9ED2562C7B"
@@ -1086,34 +954,21 @@
 					exclude_from_claim_all: true
 					table_id: 2770258610575478801L
 				}
+				{
+					id: "13EF501337A6A45E"
+					type: "item"
+					item: "passivepiglins:piglin_fortune"
+				}
 			]
-			subtitle: "{chapter.7.quest.48.subtitle}"
-			dependencies: ["1A99F6B849B12B09"]
 		}
 		{
-			tasks: [{
-				id: "7883A02E68531B76"
-				type: "item"
-				item: "passivepiglins:piglin_coin"
-				count: 128L
-			}]
-			secret: true
-			id: "2E8C7043B3332651"
-			x: 3.0d
-			y: 5.0d
-			shape: "diamond"
-			title: "{chapter.7.quest.49.title}"
-			rewards: [{
-				id: "3D5DEBB4C99AF52D"
-				type: "item"
-				item: "passivepiglins:piglin_fortune"
-			}]
-			subtitle: "{chapter.7.quest.49.subtitle}"
-			dependencies: ["597DB82F2961DD9B"]
-			hide_dependency_lines: true
-			hide: true
-		}
-		{
+			title: "{chapter.7.quest.50.title}"
+			x: 2.5d
+			y: 5.5d
+			subtitle: "{chapter.7.quest.50.subtitle}"
+			description: ["Pig-Iron can be made by putting a pork chop, an iron ingot, and a gold ingot in a heated mixer."]
+			dependencies: ["1873D12083BC1697"]
+			id: "1A99F6B849B12B09"
 			tasks: [
 				{
 					id: "230347B1351B7F4D"
@@ -1132,117 +987,21 @@
 					item: "minecraft:piglin_banner_pattern"
 				}
 			]
-			description: ["Pig-Iron can be made by putting: a pork chop, an iron ingot, and a gold ingot in a heated mixer."]
-			id: "1A99F6B849B12B09"
-			x: 2.0d
-			y: 6.0d
-			title: "{chapter.7.quest.50.title}"
 			rewards: [{
 				id: "33153667AFB1D325"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 2770258610575478801L
 			}]
-			subtitle: "{chapter.7.quest.50.subtitle}"
-			dependencies: ["1873D12083BC1697"]
 		}
 		{
-			tasks: [{
-				id: "5472F7BDF8DB830A"
-				type: "item"
-				item: "quarrymod:quarry"
-			}]
-			dependencies: ["3A5D7E60EF1C3BC3"]
-			id: "102428C7923FD992"
-			y: -4.0d
-			x: 21.0d
-			rewards: [{
-				id: "1F631C0314E852CA"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 2770258610575478801L
-			}]
-		}
-		{
-			tasks: [{
-				id: "1417AF547C6665E3"
-				type: "item"
-				item: "quarrymod:drill_tube"
-			}]
-			dependencies: ["102428C7923FD992"]
-			id: "37E09C2412D9D971"
-			y: -5.0d
-			x: 19.5d
-		}
-		{
-			tasks: [{
-				id: "2139D43A46B3AAD0"
-				type: "item"
-				item: "passivepiglins:piglin_fortune"
-				count: 64L
-			}]
-			secret: true
-			id: "76676EF3CCB630EA"
-			x: 4.0d
-			y: 5.0d
-			shape: "diamond"
-			title: "{chapter.7.quest.54.title}"
-			subtitle: "{chapter.7.quest.54.subtitle}"
-			dependencies: ["2EC536106C5002D4"]
-			hide_dependency_lines: true
-		}
-		{
-			tasks: [{
-				id: "44630E4CFE24FC18"
-				type: "item"
-				item: "quarrymod:range_extender_lvl1_upgrade"
-			}]
-			dependencies: ["102428C7923FD992"]
-			id: "0BBB2FDEBB19AA3F"
-			y: -5.0d
-			x: 20.5d
-			rewards: [{
-				id: "2E66A6B8EB890C68"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 2770258610575478801L
-			}]
-		}
-		{
-			tasks: [{
-				id: "61B9E0F362AB8EB1"
-				type: "item"
-				item: "quarrymod:fortune_lvl1_upgrade"
-			}]
-			dependencies: ["102428C7923FD992"]
-			id: "5F2CFE5D581F3D1F"
-			y: -5.0d
-			x: 21.5d
-			rewards: [{
-				id: "67A409FC609DA481"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 2770258610575478801L
-			}]
-		}
-		{
-			tasks: [{
-				id: "0459F5CD55CEB991"
-				type: "item"
-				item: "quarrymod:silktouch_upgrade"
-			}]
-			dependencies: ["102428C7923FD992"]
-			id: "3B0E35CF9E78AD17"
-			y: -5.0d
-			x: 22.5d
-			rewards: [{
-				id: "6523BF8784D73F94"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 2770258610575478801L
-			}]
-		}
-		{
+			title: "{chapter.7.quest.58.title}"
+			x: 10.0d
+			y: 0.0d
+			subtitle: "{chapter.7.quest.58.subtitle}"
+			description: ["{chapter.7.quest.58.description.1}"]
+			dependencies: ["673DC1F22D2F790D"]
+			id: "08920EA71AAD4519"
 			tasks: [{
 				id: "488BE1806C558808"
 				type: "item"
@@ -1254,100 +1013,89 @@
 					}
 				}
 			}]
-			description: ["{chapter.7.quest.58.description.1}"]
-			id: "08920EA71AAD4519"
-			x: 9.5d
-			y: -1.0d
-			title: "{chapter.7.quest.58.title}"
 			rewards: [{
 				id: "14830FF635820F71"
 				type: "item"
 				item: "minecraft:oak_wood"
 				count: 16
 			}]
-			subtitle: "{chapter.7.quest.58.subtitle}"
-			dependencies: ["673DC1F22D2F790D"]
 		}
 		{
+			title: "{chapter.7.quest.59.title}"
+			x: 7.0d
+			y: 5.5d
+			subtitle: "{chapter.7.quest.59.subtitle}"
+			description: ["Piglins love to trade Gold Coins! They can't resist give you lots of goodies in return."]
+			dependencies: ["1873D12083BC1697"]
+			id: "43D115AA6859432C"
 			tasks: [{
+				id: "245EF434B65DCD82"
 				type: "observation"
+				icon: "tconstruct:piglin_head"
 				timer: 0L
 				observe_type: 5
-				id: "245EF434B65DCD82"
-				icon: "tconstruct:piglin_head"
 				to_observe: "minecraft:piglin"
 			}]
-			id: "43D115AA6859432C"
-			x: 7.0d
-			y: 5.0d
-			title: "{chapter.7.quest.59.title}"
 			rewards: [{
 				id: "3A0AF3AC1F4185EC"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 2770258610575478801L
 			}]
-			subtitle: "{chapter.7.quest.59.subtitle}"
-			dependencies: ["1873D12083BC1697"]
 		}
 		{
-			tasks: [{
-				id: "2CD743CBC9E54435"
-				type: "item"
-				item: "compressor:quadruple_compressed_andesite"
-			}]
-			description: ["{chapter.7.quest.63.description.1}"]
-			id: "180A2D9D8EF9DC0A"
-			x: 1.5d
-			y: 2.0d
-			title: "{chapter.7.quest.63.title}"
-			rewards: [{
-				id: "5CFE09179A943EBD"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 2770258610575478801L
-			}]
-			subtitle: "Better Andesite Generation"
+			title: "Your first martian ore."
+			x: 2.0d
+			y: 0.0d
+			subtitle: "One out of two, although the second is still out of reach..."
+			description: [
+				"Lead acts as any other ore you've seen so far would. It can be &6Crushed, smelted, melted down&r without trouble."
+				""
+				"Pockets of Ostrum may catch your eye on Mars, ensure to collect them for further research, I know just the thing to process them, &bbut it will require some real heat...&r"
+			]
 			dependencies: ["253F29A00B4EA050"]
-			optional: true
-		}
-		{
+			id: "08FBFF7A3465BF56"
 			tasks: [{
 				id: "71C8273AA9B3BBFC"
 				type: "item"
 				item: "techreborn:raw_lead"
 			}]
-			id: "08FBFF7A3465BF56"
-			x: 2.0d
-			y: 0.0d
-			title: "{chapter.7.quest.64.title}"
-			subtitle: "babe wake up, new ingot just dropped!"
-			dependencies: ["253F29A00B4EA050"]
 		}
 		{
+			title: "{chapter.7.quest.65.title}"
+			x: 2.5d
+			y: -1.0d
+			subtitle: "{chapter.7.quest.65.subtitle}"
+			description: ["{chapter.7.quest.65.description.1}"]
+			dependencies: ["08FBFF7A3465BF56"]
+			id: "2993E04DCB7B4EC4"
 			tasks: [{
 				id: "3C768C0BF038A29E"
 				type: "item"
 				item: "techreborn:lead_plate"
 			}]
-			description: ["{chapter.7.quest.65.description.1}"]
-			id: "2993E04DCB7B4EC4"
-			x: 2.5d
-			y: -1.0d
-			title: "{chapter.7.quest.65.title}"
-			subtitle: "{chapter.7.quest.65.subtitle}"
-			dependencies: ["08FBFF7A3465BF56"]
 		}
 		{
+			title: "{chapter.7.quest.66.title}"
+			x: 10.0d
+			y: 2.5d
+			subtitle: "Oh..."
+			description: [
+				"Why is there methane in this? Is this ethical?"
+				""
+				"Eitherway, Piglin Fortunes unlock a higher tier of trading. It would be very rewarding to automate these. Just throw at a Piglin and they wont be able to resist!"
+			]
+			dependencies: [
+				"08920EA71AAD4519"
+				"5DE2E3396D1A4C7F"
+				"733A852EFCA7B36E"
+			]
+			id: "2EC536106C5002D4"
 			tasks: [{
 				id: "72A1CACD4E47FC8A"
 				type: "item"
 				item: "passivepiglins:piglin_fortune"
 			}]
-			id: "2EC536106C5002D4"
-			x: 9.5d
-			y: 3.5d
-			title: "{chapter.7.quest.66.title}"
 			rewards: [
 				{
 					id: "1BAD78CA92B39137"
@@ -1361,56 +1109,71 @@
 					table_id: 2770258610575478801L
 				}
 			]
-			subtitle: "{chapter.7.quest.66.subtitle}"
-			dependencies: [
-				"08920EA71AAD4519"
-				"5DE2E3396D1A4C7F"
-				"733A852EFCA7B36E"
-			]
 		}
 		{
+			x: 9.0d
+			y: 4.5d
+			subtitle: "Bole"
+			description: ["Piglins love gold, so a gift for them should be presented in a Golden Bowl."]
+			dependencies: ["43D115AA6859432C"]
+			id: "5DE2E3396D1A4C7F"
 			tasks: [{
 				id: "6EDC765BD0E4CC63"
 				type: "item"
 				item: "createastral:golden_bowl"
 			}]
-			dependencies: ["673DC1F22D2F790D"]
-			id: "5DE2E3396D1A4C7F"
-			hide_dependency_lines: true
-			y: 3.5d
-			x: 11.0d
 		}
 		{
+			title: "Putting the FUN into Fungus"
+			x: 8.0d
+			y: 3.5d
+			subtitle: "Mushrooms are a hell of a drug."
+			description: ["A gift to remind the Piglins of their home. They're gonna love this!"]
+			hide_dependency_lines: false
+			dependencies: ["43D115AA6859432C"]
+			id: "733A852EFCA7B36E"
 			tasks: [{
 				id: "68640D2C5A470F2E"
 				type: "item"
 				item: "minecraft:crimson_fungus"
 			}]
-			dependencies: ["43D115AA6859432C"]
-			id: "733A852EFCA7B36E"
-			hide_dependency_lines: false
-			y: 3.5d
-			x: 8.0d
 		}
 		{
+			title: "Higher Tier Engines."
+			x: 23.25d
+			y: -4.5d
+			description: [
+				"The Shimmer Amplifier will play a primary role in the mechanical crafting of Ostrum Engines."
+				""
+				"At this point, the remaining costs, being a haul of ostrum materials and a capacitor should be of no trouble for you."
+			]
+			dependencies: ["717A6825F23CC07F"]
 			size: 1.5d
 			id: "63A96438AB2F9506"
-			x: 25.0d
-			y: -6.0d
+			tasks: [{
+				id: "5F76C58E7AC52E4A"
+				type: "item"
+				item: "ad_astra:ostrum_engine"
+			}]
 			rewards: [{
 				id: "163E99AF72198A87"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 2770258610575478801L
 			}]
-			dependencies: ["717A6825F23CC07F"]
-			tasks: [{
-				id: "5F76C58E7AC52E4A"
-				type: "item"
-				item: "ad_astra:ostrum_engine"
-			}]
 		}
 		{
+			title: "Supersonic, Acrobatic, Rocket Powered Wings."
+			x: 23.309523809523824d
+			y: -6.005952380952387d
+			subtitle: "The unfiltered power of the elytra is within reach. Limitless flight."
+			description: [
+				"We've gated this rather far into the pack to limit methods of 'free flight', but now is the time. These rocket engine powered wings can provide you will endless flight (with the accompanying firework rockets) as long as you aren't in space."
+				""
+				"(Where you will promptly either combust into flames or suffocate)"
+			]
+			dependencies: ["63A96438AB2F9506"]
+			id: "482A444BAFDFC947"
 			tasks: [{
 				id: "0669418F0C2175E6"
 				type: "item"
@@ -1422,28 +1185,32 @@
 					}
 				}
 			}]
-			dependencies: ["63A96438AB2F9506"]
-			id: "482A444BAFDFC947"
-			y: -7.0d
-			x: 26.0d
 		}
 		{
+			title: "{chapter.7.quest.73.title}"
+			icon: "ad_astra:mars_ostrum_ore"
+			x: -1.5d
+			y: 2.0d
+			dependencies: ["253F29A00B4EA050"]
+			dependency_requirement: "one_completed"
+			min_required_tasks: 1
+			id: "45F455EC8BF84ADB"
 			tasks: [
 				{
-					type: "questsadditions:break"
-					value: 32L
-					block: "ad_astra:mars_ostrum_ore"
 					id: "5730612B3D2750E8"
-					checkItem: false
+					type: "questsadditions:break"
 					block_type: 0
+					block: "ad_astra:mars_ostrum_ore"
+					value: 32L
+					checkItem: false
 				}
 				{
-					type: "questsadditions:break"
-					value: 32L
-					block: "techreborn:deepslate_lead_ore"
 					id: "6ACA8E7FD8C268CE"
-					checkItem: false
+					type: "questsadditions:break"
 					block_type: 0
+					block: "techreborn:deepslate_lead_ore"
+					value: 32L
+					checkItem: false
 				}
 				{
 					id: "306A86A91B8059A1"
@@ -1451,44 +1218,29 @@
 					title: "{chapter.7.quest.73.task.3.title}"
 				}
 			]
-			icon: "ad_astra:mars_ostrum_ore"
-			id: "45F455EC8BF84ADB"
-			x: -1.5d
-			y: 2.0d
-			title: "{chapter.7.quest.73.title}"
-			dependencies: ["253F29A00B4EA050"]
-			min_required_tasks: 1
 		}
 		{
+			title: "Grind down to dust."
+			x: 13.0d
+			y: 5.0d
+			description: ["Sky Stone is then milled or crushed into dust, presenting an infinitely renewable source."]
+			dependencies: ["7244D7E45BDFFD0E"]
+			id: "3489CBA7A54C6530"
 			tasks: [{
 				id: "6510FC422735D220"
 				type: "item"
 				item: "ae2:sky_dust"
 			}]
-			dependencies: ["4482FE2F624729DF"]
-			id: "3489CBA7A54C6530"
-			y: 5.0d
-			x: 13.0d
 		}
 		{
-			tasks: [{
-				id: "6B580C9BF4048447"
-				type: "item"
-				item: "ad_astra:sky_stone"
-			}]
-			id: "4482FE2F624729DF"
-			x: 13.0d
+			title: "Compacting to Skystone"
+			x: 14.5d
 			y: 6.5d
-			title: "Get skystone dust"
-			rewards: [{
-				id: "78DFB5AE90A85878"
-				type: "item"
-				item: "ae2:sky_dust"
-			}]
-			dependencies: ["7244D7E45BDFFD0E"]
+			description: ["5 Moon Stone and 1 Certus dust will compress into sky stone, usually only obtained in Ad Astra meteors."]
+			hide_dependency_lines: true
+			dependencies: ["253F29A00B4EA050"]
 			optional: true
-		}
-		{
+			id: "7244D7E45BDFFD0E"
 			tasks: [
 				{
 					id: "1EFEF2C9A28BBAB2"
@@ -1501,30 +1253,21 @@
 					item: "ad_astra:moon_stone"
 				}
 			]
-			id: "7244D7E45BDFFD0E"
-			x: 14.5d
-			y: 6.5d
-			title: "Automatable skystone"
 			rewards: [{
 				id: "75EA643738E2BABD"
 				type: "item"
 				item: "ad_astra:sky_stone"
 			}]
-			optional: true
 		}
 		{
-			size: 1.5d
+			title: "Mixing some sulfur."
 			icon: "techreborn:sulfur_dust"
-			id: "04954A167C56AC1C"
 			x: 14.5d
 			y: 5.0d
-			title: "Make sulfur"
-			rewards: [{
-				id: "128F0866D8D9DD0E"
-				type: "item"
-				item: "techreborn:sulfur_dust"
-			}]
+			description: ["Three Glowstone and One Sky Stone Dust creates a simple way to renew sulfur."]
 			dependencies: ["3489CBA7A54C6530"]
+			size: 1.5d
+			id: "04954A167C56AC1C"
 			tasks: [
 				{
 					id: "0D39FC988F2720A8"
@@ -1537,8 +1280,19 @@
 					item: "ae2:sky_dust"
 				}
 			]
+			rewards: [{
+				id: "128F0866D8D9DD0E"
+				type: "item"
+				item: "techreborn:sulfur_dust"
+			}]
 		}
 		{
+			title: "Liquid Sulfur."
+			x: 14.5d
+			y: 3.5d
+			description: ["Sulfur, placed in the melter or foundry, can be reduced to it's fluid form, and whilst it isnt too combustible like this, it only requires some basic catalysts to change that..."]
+			dependencies: ["04954A167C56AC1C"]
+			id: "0842CB2511EA7CE9"
 			tasks: [{
 				id: "2DA7A2C0AEC6781C"
 				type: "item"
@@ -1550,13 +1304,15 @@
 					}
 				}
 			}]
-			dependencies: ["04954A167C56AC1C"]
-			id: "0842CB2511EA7CE9"
-			y: 3.5d
-			x: 14.5d
-			title: "Melt sulfur in melter or foundry"
 		}
 		{
+			title: "Adding some dinosaur into that liquid sulfur."
+			x: 13.0d
+			y: 3.5d
+			subtitle: "It's scientifically accurate!"
+			description: ["A large amount of the carbon-based coal dust will create a thick, black substance, known to us as oil."]
+			dependencies: ["0842CB2511EA7CE9"]
+			id: "7E55004B488A16C1"
 			tasks: [
 				{
 					id: "7266F6F5E4D67949"
@@ -1575,19 +1331,30 @@
 					item: "techreborn:coal_dust"
 				}
 			]
-			dependencies: ["0842CB2511EA7CE9"]
-			id: "7E55004B488A16C1"
-			y: 3.5d
-			x: 13.0d
-			title: "mix these two"
+			rewards: [{
+				id: "7915ED055B7F892E"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2770258610575478801L
+			}]
 		}
 		{
-			size: 1.5d
-			id: "4167177A752546A3"
+			title: "Black Gold"
 			x: 13.0d
 			y: -1.0d
-			title: "Get oil"
+			subtitle: "Finally, some liquid Freedom."
+			description: [
+				"You will be presented with TWO choices, when obtaining oil."
+				""
+				"1: &6Automating it&r, the attached process line involving skystone, sulfur and coal will be integral in creating a renewable supply."
+				""
+				"2: &6Prospecting! &rAnd by prospecting, I of course mean trudging through the martian wastelands, in hopes of uncovering surface lakes of oil. Whilst not a particularly sustainable method, it will for sure allow for your first distillations to obtain a quick headstart."
+				""
+				""
+			]
 			dependencies: ["7E55004B488A16C1"]
+			size: 1.5d
+			id: "4167177A752546A3"
 			tasks: [{
 				id: "4E42AA832C55804E"
 				type: "item"
@@ -1601,89 +1368,61 @@
 			}]
 		}
 		{
-			tasks: [
-				{
-					id: "25DDAF5300DFCDE5"
-					type: "item"
-					item: "ae2:fluix_dust"
-				}
-				{
-					id: "7877A008437ED42B"
-					type: "item"
-					item: "techreborn:diamond_small_dust"
-				}
-				{
-					id: "073A9C61BD3D3161"
-					type: "item"
-					item: "minecraft:gold_nugget"
-				}
-				{
-					id: "4FA2427AEF0573DA"
-					type: "item"
-					item: {
-						id: "techreborn:cell"
-						Count: 1b
-						tag: {
-							fluid: "techreborn:nitrogen"
-						}
-					}
-				}
-			]
-			dependencies: ["7A30BBD9F64920A4"]
-			id: "14D3BE241AB8CACC"
-			y: -4.5d
-			x: 10.0d
-			title: "Make refining agent process line"
-		}
-		{
-			size: 1.5d
-			id: "2799577FF58D10A3"
+			title: "Creation of the refining agent."
 			x: 11.5d
 			y: -4.5d
-			title: "Refining agent"
+			subtitle: "Another use for biofuel, hope you didnt manually craft that back in chapter 3..."
+			description: [
+				"A steady supply of &6Biofuel&r, alongside your new stash of &bNitrogen&r can be assembled into an enriching compound. "
+				""
+				"Refining agents are used as the catalyst in forming a far more combustive fuel type..."
+			]
+			dependencies: ["7A30BBD9F64920A4"]
+			size: 1.5d
+			id: "2799577FF58D10A3"
+			tasks: [{
+				id: "2B421B2FB5CE55F2"
+				type: "item"
+				item: "createastral:refining_agent"
+			}]
 			rewards: [{
 				id: "237D6DF3557B4721"
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 2770258610575478801L
 			}]
-			dependencies: ["14D3BE241AB8CACC"]
-			tasks: [{
-				id: "352B7362D126F864"
-				type: "item"
-				item: "createastral:astral_conduit"
-			}]
 		}
 		{
-			size: 1.5d
+			title: "Fueling the Industry"
+			icon: {
+				id: "custommachinery:custom_machine_item"
+				Count: 1b
+				tag: {
+					machine: "createastral:distillery"
+				}
+			}
 			x: 11.5d
-			id: "0BA5C147C098C5A8"
 			y: -2.5d
 			shape: "rsquare"
-			title: "Make distillation tower multiblock"
-			rewards: [{
-				id: "373163AF9032F122"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 2770258610575478801L
-			}]
+			subtitle: "Multiblock Madess."
+			description: [
+				"The distillery is your new best friend for exporting a new fluid type, capable of burning at extreme temperatures."
+				""
+				"This fluid is called &bHellfire&r."
+				""
+				"Using the compementary schematic obtained as a reward from the previous quest, you can place an outline of a structure to use as a baseline when building it."
+				""
+				"A fluid, an item, energy and &6heat from blaze burners&r will allow the multiblock to operate."
+			]
 			dependencies: [
 				"4167177A752546A3"
 				"2799577FF58D10A3"
-				"5729A883639B2EEF"
+				"673DC1F22D2F790D"
 			]
+			size: 2.0d
+			min_required_tasks: 6
+			id: "0BA5C147C098C5A8"
 			tasks: [
-				{
-					id: "41100E0A2FBBDD6E"
-					type: "item"
-					item: "techreborn:distillation_tower"
-				}
-				{
-					id: "248D2E0D4EB0571B"
-					type: "item"
-					item: "techreborn:basic_machine_casing"
-					count: 9L
-				}
 				{
 					id: "5A4124CFE8F66540"
 					type: "item"
@@ -1708,9 +1447,43 @@
 					item: "techreborn:advanced_machine_frame"
 					count: 4L
 				}
+				{
+					id: "49EA46EFF8825355"
+					type: "item"
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "createastral:distillery"
+						}
+					}
+				}
+				{
+					id: "3A86D6722D2BE63B"
+					type: "item"
+					item: "techreborn:basic_machine_casing"
+					count: 9L
+				}
 			]
+			rewards: [{
+				id: "373163AF9032F122"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2770258610575478801L
+			}]
 		}
 		{
+			title: "Distilling Fear"
+			x: 14.5d
+			y: -2.5d
+			subtitle: "Refine 'Hellfire' in a heated distillation tower."
+			description: [
+				"&6Lava&r is so outdated, &bHellfire&r is where the action is now."
+				""
+				"From now on, many melting recipes are going to require a melting point &6too high for lava&r to reach. Hellfire on the other hand will cut through and melt these materials like butter with it's &b3000 Degrees Celsius&r burning temperature. "
+			]
+			dependencies: ["0BA5C147C098C5A8"]
+			id: "07C60C1DB44579B9"
 			tasks: [
 				{
 					id: "5D982FC7B6331B59"
@@ -1724,93 +1497,105 @@
 					}
 				}
 				{
-					id: "253A7621BE5A4F1E"
-					type: "item"
-					item: "techreborn:saw_dust"
-				}
-				{
 					id: "4A61D1E1FE5ED548"
 					type: "item"
 					item: "create:blaze_burner"
 				}
+				{
+					id: "14A419C73E4E811F"
+					type: "item"
+					item: "createastral:refining_agent"
+				}
 			]
-			id: "07C60C1DB44579B9"
-			x: 14.0d
-			y: -2.5d
-			title: "Cook up oil + agent in multi"
 			rewards: [{
-				id: "5E02FBA33B08EEC2"
+				id: "2335F27AD52C24E7"
 				type: "item"
 				item: {
 					id: "techreborn:cell"
 					Count: 1b
 					tag: {
-						fluid: "techreborn:nitrofuel"
+						fluid: "kubejs:hellfire"
 					}
 				}
 			}]
-			dependencies: ["0BA5C147C098C5A8"]
 		}
 		{
-			tasks: [{
-				id: "6E758B0F02458E96"
-				type: "item"
-				icon: {
-					id: "ftbquests:custom_icon"
-					Count: 1b
-					tag: {
-						Icon: "techreborn:textures/block/fluids/nitro_diesel_still.png"
-					}
-				}
-				item: {
-					id: "techreborn:cell"
-					Count: 1b
-					tag: {
-						fluid: "techreborn:nitro_diesel"
-					}
-				}
-			}]
-			id: "522A1B9A073A573E"
-			x: 15.5d
-			y: -2.5d
-			title: "Get nitro diesel to superheat stuff"
-			subtitle: "use blaze burner"
-			dependencies: ["07C60C1DB44579B9"]
-		}
-		{
+			title: "Leftover Biomatter."
+			x: 8.0d
+			y: -9.0d
+			description: [
+				"You may have already got to work at automating scrapboxes!"
+				""
+				"In that case, you will be two steps ahead already... for this task, the easiest method of obtaining saltpeter dust is to heated mix, or centrifuge it out of rich soil, which of course comes from this."
+				""
+			]
+			hide_dependency_lines: true
+			dependencies: ["27B0EA62812564DD"]
+			optional: true
+			id: "7C85D3BB93C02CD7"
 			tasks: [{
 				id: "28D650B4A77B5554"
 				type: "item"
 				item: "farmersdelight:organic_compost"
+				count: 16L
 			}]
-			id: "7C85D3BB93C02CD7"
-			y: -8.5d
-			x: 10.0d
-			optional: true
 		}
 		{
+			title: "Richest of soils."
+			x: 8.0d
+			y: -8.0d
+			description: [
+				"Washing compost into rich soil is the quickest way to progress without relying on those dastardly random ticks."
+				""
+				"Do not forget, if you still have a steady supply of pure biomatter going unused, it can be utilised in the more efficient compost recipe, no longer relying on bark or straw!"
+				""
+			]
+			dependencies: ["7C85D3BB93C02CD7"]
+			id: "0C44297569A23C3C"
 			tasks: [{
 				id: "3E5123DC837C84C4"
 				type: "item"
 				item: "farmersdelight:rich_soil"
+				count: 16L
 			}]
-			dependencies: ["7C85D3BB93C02CD7"]
-			id: "0C44297569A23C3C"
-			y: -8.5d
-			x: 8.5d
 		}
 		{
+			title: "Get spinning!"
+			x: 8.0d
+			y: -6.0d
+			subtitle: "I'm going to be honest, who on earth is Peter."
+			description: [
+				"Rich soil can be placed in a centrifuge to create large quantities of saltpeter dust. "
+				""
+				"Integral in basic nitrogen automation, you could start producing it by placing saltpeter into an &6Electrolyser&r. If you hadn't made it when you produced the first advanced circuits, it's advised to create one now!"
+			]
+			dependencies: [
+				"0C44297569A23C3C"
+				"673DC1F22D2F790D"
+			]
+			id: "34740D396988DE97"
 			tasks: [{
 				id: "179513872CF787C2"
 				type: "item"
 				item: "techreborn:saltpeter_dust"
+				count: 10L
 			}]
-			dependencies: ["0C44297569A23C3C"]
-			id: "34740D396988DE97"
-			y: -6.0d
-			x: 8.5d
 		}
 		{
+			title: "Need some Nitra over here!"
+			x: 9.0d
+			y: -4.5d
+			description: [
+				"We're on a path to reach &6Superheating Potential&r."
+				""
+				"For utilisation in a &6Distillery Multiblock&r, a refining agent will be required to produce a fluid necessary to accomplish this."
+				""
+				"Nitrogen, alongside other goodies, can be assembled into a compound capable of seeping new power into oil, when used in the distillery."
+				""
+				"Nitrogen can also be sourced from the frigid permafrost rocks of &bGlacio."
+			]
+			dependencies: ["33DA3ABE77235723"]
+			id: "7A30BBD9F64920A4"
 			tasks: [{
 				id: "05E87D559048BC40"
 				type: "item"
@@ -1822,13 +1607,6 @@
 					}
 				}
 			}]
-			dependencies: [
-				"34740D396988DE97"
-				"673DC1F22D2F790D"
-			]
-			id: "7A30BBD9F64920A4"
-			y: -4.5d
-			x: 8.5d
 			rewards: [{
 				id: "27E0D0EDB9F5A76B"
 				type: "loot"
@@ -1837,39 +1615,21 @@
 			}]
 		}
 		{
-			tasks: [{
-				id: "0771293240544F38"
-				type: "item"
-				item: {
-					id: "techreborn:cell"
-					Count: 1b
-					tag: {
-						fluid: "techreborn:lithium"
-					}
-				}
-			}]
-			dependencies: [
-				"684E33C50BD55A8E"
-				"42FDBAC4A8966F9D"
-			]
-			id: "4F9C4AB5B7F21887"
-			y: -0.5d
-			x: 5.5d
-		}
-		{
-			tasks: [{
-				id: "6553ED753D9913F2"
-				type: "item"
-				item: "ad_astra:cryo_freezer"
-			}]
+			title: "The Refridgerator-inator!"
+			x: 18.0d
+			y: 1.0d
+			description: ["Cryo freezing is how we're going to convert &6Prismatic Shards&r into aurorite, a lost fluid from Glacio which can react with certain elements to lower their temperature by hundreds of degrees."]
 			dependencies: [
 				"7B5DE5040FC24D21"
 				"4A711576A877709C"
 				"3A5D7E60EF1C3BC3"
 			]
 			id: "562D93203A0A135A"
-			y: 1.0d
-			x: 18.0d
+			tasks: [{
+				id: "6553ED753D9913F2"
+				type: "item"
+				item: "ad_astra:cryo_freezer"
+			}]
 			rewards: [{
 				id: "442B5C5FB534D589"
 				type: "loot"
@@ -1878,18 +1638,24 @@
 			}]
 		}
 		{
-			tasks: [{
-				id: "66F516E06ED0EF60"
-				type: "item"
-				item: "ad_astra:cryo_fuel_bucket"
-			}]
+			title: "The Liquid Nitrogen-inator!"
+			x: 22.0d
+			y: 1.0d
+			description: [
+				"Infuse the freezing heat dissipating fluid of aurorite with nitrogen to create a form of Liquid Nitrogen which will never heat when exposed to warmer atmospheres and high-tech machinery."
+				""
+				"It's in violation direct violation of the laws of thermodynamics! "
+			]
 			dependencies: [
 				"407805C6726FB46F"
 				"0FFDADC5EC32AEC7"
 			]
 			id: "3F21FC19DD9459EF"
-			y: 1.0d
-			x: 22.0d
+			tasks: [{
+				id: "66F516E06ED0EF60"
+				type: "item"
+				item: "ad_astra:cryo_fuel_bucket"
+			}]
 			rewards: [{
 				id: "62BA6B42C6558BCA"
 				type: "loot"
@@ -1898,22 +1664,41 @@
 			}]
 		}
 		{
-			x: 20.0d
-			y: 2.5d
+			x: 21.0d
+			y: 2.0d
+			description: ["An easy way to form nitrogen will be the compression of permafrost + heat."]
+			dependencies: ["39670DF746429956"]
+			dependency_requirement: "all_started"
+			min_required_tasks: 1
 			id: "0FFDADC5EC32AEC7"
-			tasks: [{
-				id: "1540B9A6D179C030"
-				type: "item"
-				item: {
-					id: "techreborn:cell"
-					Count: 1b
-					tag: {
-						fluid: "techreborn:nitrogen"
+			tasks: [
+				{
+					id: "1540B9A6D179C030"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "techreborn:nitrogen"
+						}
 					}
 				}
-			}]
+				{
+					id: "6745E96601ED9D26"
+					type: "checkmark"
+					title: "Got it!"
+				}
+			]
 		}
 		{
+			title: "Hydrogen Extraction"
+			icon: "ad_astra:ice_shard"
+			x: 17.0d
+			y: 2.0d
+			description: ["If you need a simple source of &3Hydrogen&r without getting caught up in tech reborn processes, try placing some ice related blocks into the cryo freezer!"]
+			dependencies: ["111E91837243077C"]
+			min_required_tasks: 1
+			id: "4A711576A877709C"
 			tasks: [
 				{
 					id: "7B85DFE3CF32E254"
@@ -1933,36 +1718,64 @@
 					}
 				}
 			]
-			id: "4A711576A877709C"
-			y: 2.5d
-			x: 17.5d
-			icon: "ad_astra:ice_shard"
 		}
 		{
-			tasks: [{
-				id: "4AA516FD61C13061"
-				type: "item"
-				item: "kubejs:aurorite_bucket"
-			}]
-			dependencies: ["562D93203A0A135A"]
-			id: "407805C6726FB46F"
-			y: 1.0d
-			x: 19.5d
 			title: "Aurorite"
+			icon: {
+				id: "techreborn:cell"
+				Count: 1b
+				tag: {
+					fluid: "kubejs:aurorite"
+				}
+			}
+			x: 19.5d
+			y: 1.0d
+			description: [
+				"&bAurorite&r can be synthesised using the &6Prismatic Crystals&r you obtained from either vacuuming the structured prismatic crystals, or crushed at low rates from glacio stone."
+				""
+				"Reminder that the &6Stone Growth Chamber&r functions in every space dimension as a method to infinitely producing stone types from celestial bodies."
+			]
+			dependencies: [
+				"562D93203A0A135A"
+				"3666768F4FCCB7F3"
+				"2CF70CD66E486131"
+			]
+			id: "407805C6726FB46F"
+			tasks: [{
+				id: "1330A61594F63DBD"
+				type: "checkmark"
+			}]
 		}
 		{
-			x: 21.5d
-			y: 6.0d
+			title: "Processing for Ice related blocks."
+			x: 19.5d
+			y: 2.5d
+			description: [
+				"Glacio stone can be crushed, as like any other type of stone you've seen before."
+				""
+				"This time, the results will not be of the metal variety, but instead be ice-related products. Prismatic crystals may also appear in your bounty, but beware the rates at which they drop is significantly lower than most other results."
+				""
+			]
+			dependencies: ["111E91837243077C"]
 			id: "3666768F4FCCB7F3"
 			tasks: [{
 				id: "769F63E81F66F695"
 				type: "item"
 				item: "ad_astra:glacio_stone"
+				count: 256L
 			}]
 		}
 		{
-			x: 17.5d
-			y: 7.5d
+			title: "Glacio Ores"
+			x: 17.0d
+			y: 5.0d
+			subtitle: "Known primarily for it's bountiful distribution of lapis lazuli, glacio also contains multiple overworld ores."
+			description: [
+				"Iron, Coal, Copper, &bIce Shards, &b Prismatic Crystals (Unique)"
+				""
+				"Ice Stores at the planets centre are almost infinite."
+			]
+			dependencies: ["111E91837243077C"]
 			id: "22917BDEEB2FB172"
 			tasks: [{
 				id: "65FBFD3C66537122"
@@ -1971,44 +1784,483 @@
 			}]
 		}
 		{
-			x: 20.0d
-			y: 7.5d
+			title: "Upper Crust Ice"
+			x: 21.0d
+			y: 3.5d
+			subtitle: "Permafrost is easily obtainable from the surface of Glacio, just find a large pocket of powdered snow."
+			description: [
+				"They are also automatable from glacio stone, at a rather steep price."
+				""
+				"The primary purpose you can find with permafrost is it's rich mineral makeup of solid nitrogen, which we can squeeze out for an easy source of the vital component in liquid nitrogen."
+			]
+			dependencies: ["3666768F4FCCB7F3"]
 			id: "39670DF746429956"
 			tasks: [{
 				id: "061B96CBC40992B9"
 				type: "item"
 				item: "ad_astra:permafrost"
+				count: 32L
 			}]
 		}
 		{
+			title: "&bFeeding the Flame"
+			x: 16.0d
+			y: -1.0d
+			shape: "pentagon"
+			subtitle: "FINE, no fuel buckets anymore."
+			description: [
+				"A fun-sized snack favoured by the whole family. If you are familiar with create already, this item needs no explanation."
+				""
+				"However, for those that DO, these can be fed to blaze burners to activate a second tier of heat, known as &bsuperheating&r. This will unlock recipes previously out of reach due to their heat requirements."
+				""
+				"Blaze Cakes are not your only option, however. Pumping &bHellfire&r directly into a burner with a straw will superheat at a similar net fuel usage."
+			]
+			dependencies: ["07C60C1DB44579B9"]
+			size: 2.0d
+			id: "1B80AB828439B3F1"
+			tasks: [{
+				id: "134776DFD88B9376"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
+		}
+		{
+			title: "Cleaning up"
+			icon: "yttr:continuous_platform"
+			x: 19.5d
+			y: 0.0d
+			subtitle: "&bGlacio&r and the &dMoon Debris&r hosts a highly compressed form of ice."
+			description: [
+				"They form in large spikes on the surface of the glacio wastes, but deep within the crust of the planet, ore pockets of them will form in packed ice towards y=0..."
+				""
+				"Use a &3Chromatic Vaccum&r to separate the crystalline pieces from the ice it is solidified in."
+			]
+			dependencies: ["562D93203A0A135A"]
+			dependency_requirement: "one_completed"
+			id: "2CF70CD66E486131"
+			tasks: [
+				{
+					id: "367F0988F6736E36"
+					type: "item"
+					item: "createastral:prismatic_crystal"
+					count: 16L
+				}
+				{
+					id: "253966A170C06E99"
+					type: "item"
+					item: {
+						id: "astraladditions:chromatic_vacuum"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Advanced Machinery Component Creation"
 			x: 21.5d
-			y: 4.0d
-			id: "1B28D0BA49CA1983"
+			y: -1.0d
+			description: ["Used in various &6Late Chapter4&r and &6Chapter 5&r recipes, these machine parts consist of Wiring, Steel and a &6Carbon Fibre Mesh&r."]
+			dependencies: ["4989A4C93B101219"]
+			id: "43F0268A479AF372"
 			tasks: [{
-				id: "19A22DE27688F48B"
+				id: "788F4968E771D1F5"
 				type: "item"
-				item: "minecraft:blue_ice"
+				item: "techreborn:machine_parts"
+				count: 4L
+			}]
+			rewards: [{
+				id: "543A65843828A644"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2770258610575478801L
 			}]
 		}
 		{
-			x: 16.5d
-			y: 4.0d
-			id: "0F561456DF07ABA5"
+			title: "Superheat &6Carbon Fiber&r into a mesh!"
+			x: 19.5d
+			y: -1.0d
+			description: [
+				"One of the first usages of a &bSuperheated Blaze Burner&r you'll use."
+				""
+				"Remember, using a straw from &6Create: Crafts and Additions&r will allow you to pump &bHellfire&r directly into burners. Convenient, if a little more space intensive."
+			]
+			dependencies: ["1B80AB828439B3F1"]
+			id: "4989A4C93B101219"
 			tasks: [{
-				id: "5824B59AA6739E69"
+				id: "6627C5C19BCD2FA6"
 				type: "item"
-				item: "minecraft:powder_snow_bucket"
+				item: "techreborn:carbon_mesh"
+			}]
+			rewards: [{
+				id: "1718EA773D6D069B"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2770258610575478801L
 			}]
 		}
 		{
-			x: 16.5d
-			y: 5.5d
-			id: "7C25E51582B1B2D0"
+			x: 3.5d
+			y: -1.5d
+			dependencies: ["2993E04DCB7B4EC4"]
+			id: "1F2BC723A3178961"
 			tasks: [{
-				id: "10152399FEC31C4A"
-				type: "custom"
-				title: "All snow related things are pretty biome locked sometimes, perhaps allow glacio to be a huge focus on just ice/cold related shite, make it tie into cryo-line and aurorite somehow."
+				id: "06357CC08CCE0E2E"
+				type: "item"
+				item: "techreborn:advanced_machine_frame"
+			}]
+		}
+		{
+			title: "Electrolysis"
+			icon: "create:electron_tube"
+			x: 9.0d
+			y: -6.0d
+			subtitle: "Utilise a &3Centrifuge&r to extract cells from saltpeter."
+			description: ["If you have already been on a field trip to Glacio, you may also notice that permafrost is a alternative, lucrative source of nitrogen,"]
+			dependencies: ["34740D396988DE97"]
+			id: "33DA3ABE77235723"
+			tasks: [{
+				id: "02C2545F2F3F2F42"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Winter... Wasteland?"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "ad_astra:textures/sky/glacio.png"
+				}
+			}
+			x: 17.0d
+			y: 3.5d
+			subtitle: "Or... a wonderland?"
+			description: [
+				"Glacio is a frigid celestial body with an overabundance of ice and snow."
+				""
+				"Surely we can harness this landscape to discover methods of cooling our own creations."
+			]
+			hide_dependency_lines: true
+			dependencies: ["5729A883639B2EEF"]
+			id: "111E91837243077C"
+			tasks: [{
+				id: "02F4F003BBEE3953"
+				type: "dimension"
+				dimension: "ad_astra:glacio"
+			}]
+		}
+		{
+			title: "Fragile Cooling Mechanism"
+			x: 24.5d
+			y: -1.0d
+			subtitle: "&6Don't drop it, clumsy!&r"
+			description: [
+				""
+				"Items marked as &6[Fragile]&r are meticulously crafted devices which should never be taken off the production line by workers!"
+				""
+				"Attempting to hold these within the player inventory will cause them to &6Shatter&r into their base components, at a slight material loss. "
+				""
+				"Attempt to transfer these items straight from production to storage / mechanical crafters using logistical tools like belts / mechanical arms."
+			]
+			dependencies: [
+				"43F0268A479AF372"
+				"3F21FC19DD9459EF"
+			]
+			id: "08F5A89342F03D4C"
+			tasks: [{
+				id: "55E7651129BF29B2"
+				type: "item"
+				item: "astraladditions:fragile_item"
+			}]
+		}
+		{
+			title: "Techreborn Tools+"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "techreborn:textures/item/tool/advanced_drill.png"
+				}
+			}
+			x: 5.5d
+			y: 2.5d
+			description: [
+				"Are you still a Hephaestus tool user? I'd expect so, they are better in almost every way."
+				""
+				"Some may find the simplicity of being able to use energy as durability relaxing, however, and their impressive mining speed is nothing to scoff at."
+			]
+			dependencies: ["7B5DE5040FC24D21"]
+			id: "1CCE5B91BAE9F757"
+			tasks: [
+				{
+					id: "73F0CDC886CDB9CC"
+					type: "item"
+					item: "techreborn:advanced_chainsaw"
+				}
+				{
+					id: "3FEF717C9E49CAD2"
+					type: "item"
+					item: "techreborn:advanced_drill"
+				}
+				{
+					id: "214A6F8FD2F93D75"
+					type: "item"
+					item: "techreborn:advanced_jackhammer"
+				}
+			]
+		}
+		{
+			title: "Boring Ostrum"
+			x: 19.0d
+			y: -4.5d
+			description: [
+				"As with your first rocket, the second will require you to bore a material and create a screw breech to use as a base item when forming &6Shimmer Amplifiers&r"
+				""
+				"The steps are the same, however this time you will be utilising liquid ostrum, only obtainable from melting at 3000 Degrees!"
+			]
+			dependencies: ["3A5D7E60EF1C3BC3"]
+			id: "5DAEC5A11AF8FCE7"
+			tasks: [{
+				id: "75BB624D8BF0A85E"
+				type: "item"
+				item: "createbigcannons:nethersteel_screw_breech"
+			}]
+		}
+		{
+			title: "Solid of frame you may be..."
+			x: 25.0d
+			y: -7.5d
+			description: [
+				"Pour &6Blast-Resistant Cement&r over the Fire-Resistant Fragile Sheet Blocks you have produced, and give it time to set."
+				""
+				"These casings will form the frame of the Tier 3 Rocket, capable of thrusting you towards &6Mercury&r."
+				""
+			]
+			dependencies: ["0682A67E2A94B663"]
+			id: "218D042C0501AE76"
+			tasks: [{
+				id: "4DA2FC105FB01EAF"
+				type: "item"
+				item: "createastral:rocket_casing"
+			}]
+		}
+		{
+			title: "Potions? In &6MY&r recipe chain?!"
+			x: 20.5d
+			y: -7.5d
+			subtitle: "It's more likely than you think!"
+			description: [
+				"Place down Fragile Sheet Blocks (Be careful not to step on them!) and &6throw your lingering potion&r over them."
+				""
+				"This can be performed in bulk to save on crafting as many potions. Work smarter, not harder."
+			]
+			dependencies: [
+				"707F3FC3F847C603"
+				"69FC88A6A47A79AB"
+			]
+			id: "0682A67E2A94B663"
+			tasks: [{
+				id: "59AB06DB9B254CA4"
+				type: "item"
+				item: "kubejs:fire_resistant_fragile_sheet_block"
+				count: 6L
+			}]
+		}
+		{
+			title: "A delicate matter."
+			x: 17.5d
+			y: -7.0d
+			subtitle: "Produce blocks of fragile sheets, which you used in Ch3 to produce the T2 rocket!"
+			description: [
+				"Fragile sheet blocks are &6Delicate&r."
+				""
+				"Upon placing them, you &6may not mine them by hand&r or step on them. Instead, utilising alternative means, such as deployers with pickaxes, AE2 destruction planes, and other forms of block breaking automations will be mandatory."
+				""
+				"The same rules apply to it's fire-resistant bretheren, so don't waste your effort on a good block by mining it yourself!"
+			]
+			hide_dependency_lines: true
+			dependencies: ["673DC1F22D2F790D"]
+			id: "69FC88A6A47A79AB"
+			tasks: [{
+				id: "20D51EB24853689C"
+				type: "item"
+				item: "kubejs:fragile_sheet_block"
+				count: 6L
+			}]
+		}
+		{
+			title: "Preparing access to silicon."
+			icon: {
+				id: "techreborn:cell"
+				Count: 1b
+				tag: {
+					fluid: "techreborn:silicon"
+				}
+			}
+			x: 14.0d
+			y: -6.0d
+			subtitle: "Silicon can be obtained from mixing, centrifuging. or electrolysis."
+			description: [
+				"Through delicate processing of sand-related products, silicon can be made in &6bulk&r rather easily."
+				""
+				"If you have been using AE2 up to this point, it is likely you have already made use of it, as a method of printing circuits out of your presses!"
+			]
+			dependencies: ["33DA3ABE77235723"]
+			min_required_tasks: 1
+			id: "3AC1211B3D81C683"
+			tasks: [{
+				id: "2589CA7B6A9EC864"
+				type: "checkmark"
+				title: "I have obtained the necessary &6Silicon&r."
+			}]
+			rewards: [
+				{
+					id: "45C3023020B5B1FA"
+					type: "item"
+					item: "ae2:certus_quartz_dust"
+					count: 8
+				}
+				{
+					id: "1A45A065987C161A"
+					type: "item"
+					item: "techreborn:flint_dust"
+					count: 16
+				}
+				{
+					id: "0B277207F7E881D9"
+					type: "item"
+					item: "minecraft:sand"
+					count: 64
+				}
+			]
+		}
+		{
+			title: "Produce &6Lingering Potion of Fire Resistance&r"
+			x: 17.5d
+			y: -8.0d
+			dependencies: [
+				"402E174C7A3AE2FF"
+				"6876006B359685CC"
+			]
+			id: "707F3FC3F847C603"
+			tasks: [{
+				id: "46F0EB247C0FCE6B"
+				type: "item"
+				item: {
+					id: "minecraft:lingering_potion"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:fire_resistance"
+					}
+				}
+			}]
+			rewards: [{
+				id: "3011423020FECC5A"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2770258610575478801L
+			}]
+		}
+		{
+			title: "Magma Cream from the &6Moon&r"
+			x: 17.0d
+			y: -9.0d
+			hide_dependency_lines: true
+			dependencies: ["673DC1F22D2F790D"]
+			id: "402E174C7A3AE2FF"
+			tasks: [{
+				id: "7B6EA89A46C36AE3"
+				type: "item"
+				item: "minecraft:magma_cream"
+			}]
+		}
+		{
+			title: "Producing &6Dragon's Breath&r without a dragon."
+			x: 18.0d
+			y: -9.0d
+			dependencies: [
+				"45ED6D09FF4EE5F0"
+				"52C8F72154556551"
+			]
+			id: "6876006B359685CC"
+			tasks: [{
+				id: "5E684B2DAF0C9D31"
+				type: "item"
+				item: "minecraft:dragon_breath"
+			}]
+		}
+		{
+			title: "Enderslime Balls from &6Shimmered Ichor&r"
+			x: 17.5d
+			y: -10.0d
+			hide_dependency_lines: true
+			dependencies: ["673DC1F22D2F790D"]
+			id: "45ED6D09FF4EE5F0"
+			tasks: [{
+				id: "46270FA07015E89F"
+				type: "item"
+				item: "tconstruct:ender_slime_ball"
+			}]
+		}
+		{
+			title: "Chorus Fruit from the &6Moon Debris&r"
+			x: 18.5d
+			y: -10.0d
+			description: ["Growing in the &6Moon Debris&r dimension, which can be accessed similarly to the moon when clicking earth with a T2 rocket, lies a wonderful fruit."]
+			hide_dependency_lines: true
+			dependencies: ["673DC1F22D2F790D"]
+			id: "52C8F72154556551"
+			tasks: [{
+				id: "1E684B7D0738E765"
+				type: "item"
+				item: "minecraft:chorus_fruit"
+				count: 8L
+			}]
+		}
+		{
+			title: "Efficient Biofuel"
+			x: 11.5d
+			y: -1.0d
+			subtitle: "This is... far easier!"
+			description: [
+				"Sick of processing all your biofuel for little result?"
+				""
+				"Fear no more! &6Pure Biomatter&r in the distillery, with heated burners, and water in the tank will produce a much larger amount of biofuel &6per item spent&r."
+			]
+			dependencies: ["0BA5C147C098C5A8"]
+			id: "090149AB105A82F8"
+			tasks: [{
+				id: "2311ABAA9531FECA"
+				type: "item"
+				item: "createastral:pure_biomatter"
+				count: 32L
+			}]
+		}
+		{
+			title: "&6A portal from the Moon to Mars?&r"
+			x: -1.5d
+			y: -3.75d
+			shape: "square"
+			description: [
+				"For the price of &610 Ancient Debris&r, a portal from the Moon to Mars can be created, and lit with an Astral Conduit."
+				""
+				"A worthy investment, for those who are not interested in using a rocket for every trip. This should make exploring the planet more often viable!"
+				""
+				"&6WARNING:&r It is advised you be careful, as the portal will always send you back from mars to the moon, meaning if you built the portal in the overworld you may not have a way back anymore! Make sure to always chain Moon portals -> Mars portals."
+			]
+			dependencies: ["520A09EF39A1BF5D"]
+			size: 1.5d
+			id: "079DFAB4BD213C68"
+			tasks: [{
+				id: "2420B1829A9F2149"
+				type: "item"
+				item: "createastral:ancient_stone"
+				count: 10L
 			}]
 		}
 	]
+	quest_links: [ ]
 }

@@ -1,0 +1,1279 @@
+{
+	id: "7136A22A8137E1D1"
+	group: ""
+	order_index: 9
+	filename: "6"
+	title: "6) The End"
+	icon: {
+		id: "ad_astra:tier_4_rocket"
+		Count: 1b
+		tag: { }
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: 2.0d
+		y: -14.5d
+		width: 20.0d
+		height: 20.0d
+		rotation: 0.0d
+		image: "ad_astra:textures/sky/milky_way.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			title: "A World Lost to Time"
+			icon: "minecraft:ender_eye"
+			x: 2.0d
+			y: 0.5d
+			shape: "pentagon"
+			subtitle: "The End of Astral"
+			description: [
+				"A wasteland above, and the bowels below. Something about this place is famliar, yet twisted."
+				""
+				"The same force that devoured the Moon, I feel it. It formed an entire ecosystem here - an entire world as its nest."
+			]
+			hide_dependency_lines: true
+			dependencies: ["5BD2D0F7F0D70180"]
+			size: 2.0d
+			id: "220441E71254C532"
+			tasks: [{
+				id: "03CFBED87641F7D0"
+				type: "dimension"
+				dimension: "minecraft:the_nether"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -12.5d
+			description: ["The End being inevitable.. like a time loop? continuity?"]
+			dependencies: [
+				"7E274C274E5E3A5C"
+				"3F559FAFA31FD081"
+			]
+			id: "0AE79E624EA78861"
+			tasks: [{
+				id: "02D8723A609FEF08"
+				type: "item"
+				item: "yttr:root_of_continuity"
+			}]
+		}
+		{
+			icon: "tconstruct:ender_slime_crystal_block"
+			x: -1.5d
+			y: -0.5d
+			subtitle: "The End, Crystallised"
+			description: [
+				"A foul odour, like the inside of an animal, fills the air of the world below the surface. The ground is slimy, and purple crystals form in the ground."
+				""
+				"Harvest the excrement of a greater force. These Crystals echo with power."
+			]
+			dependencies: ["220441E71254C532"]
+			id: "586DA028F2A79E2F"
+			tasks: [{
+				id: "753B5ECAAEE198BE"
+				type: "item"
+				item: "tconstruct:ender_slime_crystal"
+			}]
+		}
+		{
+			title: "The Desizer"
+			x: 2.0d
+			y: -8.5d
+			shape: "hexagon"
+			subtitle: "Try this on for size"
+			description: [
+				"Introducing: The Desizer - a multiblock machine with a specialisation in shrinking."
+				""
+				"The Desizer is made up of 1x Desizer Controller and 8x Desizer Casings. If you wish, you can decorate the desizer by putting the Casing blocks in a Stone Cutter."
+				""
+				"Hold 'W' on the Desizer to view a simple tutoral on what it looks like and how it works. "
+			]
+			dependencies: [
+				"1D59FDF8FE9BFC8F"
+				"70528B6EB84817B1"
+				"3BC1C47CA86C200F"
+			]
+			size: 1.5d
+			id: "47A50CF905A68E98"
+			tasks: [
+				{
+					id: "6C518E8AA01DB545"
+					type: "item"
+					item: "astraladditions:desizer_controller"
+				}
+				{
+					id: "67759D34C78DCA0F"
+					type: "item"
+					item: "astraladditions:desizer_8"
+					count: 8L
+				}
+			]
+			rewards: [
+				{
+					id: "2A1BE367381DE61A"
+					type: "item"
+					item: "astralfoods:quantum_bites"
+					count: 3
+				}
+				{
+					id: "5B81A333FC9DCEA8"
+					type: "item"
+					item: "minecraft:moss_block"
+					count: 27
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: -5.5d
+			subtitle: "Vwoom"
+			description: [
+				"Poke a hole through reality."
+				""
+				"Right Click any block to create a temporary tunnel to walk through. Be quick, as the tunnel will not wait for you to leave before closing in on itself."
+				""
+				"The Void Effector uses Void as fuel, top it up by Right Clicking a Void fluid source block."
+			]
+			dependencies: ["3BC1C47CA86C200F"]
+			id: "710B656C18F55A2A"
+			tasks: [{
+				id: "2F7B94755A05C57C"
+				type: "item"
+				item: "yttr:effector"
+			}]
+			rewards: [{
+				id: "16C8498D9C89912A"
+				type: "item"
+				item: "createastral:voidtouched_compound"
+				count: 4
+			}]
+		}
+		{
+			title: "Rubble"
+			x: 5.5d
+			y: -0.5d
+			subtitle: "The Past, Reduced"
+			description: [
+				"What happened here?"
+				""
+				"Rubble is present underground and in structures on the surface. Some of these blocks look familiar..."
+				""
+				"The past carries a lot of power. You will want to gather lots of this."
+			]
+			dependencies: ["220441E71254C532"]
+			id: "155B0CF48A2CC893"
+			tasks: [{
+				id: "4595E2C80DE12EEE"
+				type: "item"
+				item: "yttr:rubble"
+				count: 4L
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.5d
+			subtitle: "It's not just a speck!"
+			description: [
+				"Enderslime Crystals contain small quantities of Promethium, in the form of pin-sized specks."
+				""
+				"A strange reaction occurs between Enderslime Crystals and Rubble, resulting in the decay of the crystal, almost as if the history of this place clashes with the present."
+				""
+				"Mix the two conflicting materials together to extract Promethium Specks from the Enderslime Crystals."
+			]
+			dependencies: [
+				"155B0CF48A2CC893"
+				"586DA028F2A79E2F"
+			]
+			id: "111B851BE26C9C43"
+			tasks: [{
+				id: "7EE70552324C9A1A"
+				type: "item"
+				item: "yttr:promethium_speck"
+			}]
+			rewards: [{
+				id: "19969E163AF321A8"
+				type: "item"
+				item: "astraladditions:sputum_bucket"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.5d
+			subtitle: "Grow up!"
+			description: [
+				"To be useful, the rare Promethium must be grown into a larger mass."
+				""
+				"Neodymium, another element found in this world, is used in the production of Promethium isotopes."
+				""
+				"The process involves irradiating Neodymium while it is present among the existing Promethium."
+			]
+			dependencies: [
+				"111B851BE26C9C43"
+				"7536EE4DB00E8100"
+			]
+			id: "477A4A079EE4CB67"
+			tasks: [{
+				id: "4E53EB9CCB2C801A"
+				type: "item"
+				item: "yttr:promethium_lump"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -4.5d
+			subtitle: "Glow up~"
+			description: [
+				"Excellent, feel the radiation in the palm of your hands. However, to be used to power machinery, we must grow the Promethium one last time."
+				""
+				"...cus what's a tech modpack without a little repetition?"
+			]
+			dependencies: [
+				"477A4A079EE4CB67"
+				"7A23938B0DEE0B74"
+			]
+			id: "453A225243C415F9"
+			tasks: [{
+				id: "4AE5D770C9AB96BA"
+				type: "item"
+				item: "yttr:promethium_glob"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -1.0d
+			subtitle: "Even more Girl Power!"
+			description: [
+				"Eating &6Crystal Estrogen Pills&r will grant you the &6Girl Power II&r effect."
+				""
+				"&6Girl Power II&r makes you twice as girl, allowing you to perform &62 midair dashes&r instead of just 1."
+			]
+			dependencies: ["586DA028F2A79E2F"]
+			id: "006C1E587619553B"
+			tasks: [{
+				id: "6A9F33F79EB0FF9B"
+				type: "item"
+				item: "estrogen:crystal_estrogen_pill"
+			}]
+		}
+		{
+			title: "Ender Plating"
+			x: 0.5d
+			y: -7.5d
+			subtitle: "Not to eat off of..."
+			description: [
+				"Press Delicace to harden it further into a usable material to encase a new machine. "
+				""
+				"You can't eat this. Don't even try."
+			]
+			dependencies: ["4B5C2A5E3337E88E"]
+			id: "1D59FDF8FE9BFC8F"
+			tasks: [{
+				id: "09C227FE0DF0F242"
+				type: "item"
+				item: "createastral:ender_plating"
+				count: 16L
+			}]
+			rewards: [{
+				id: "196D8159EA4D53B3"
+				type: "item"
+				item: "tconstruct:enderman_head"
+			}]
+		}
+		{
+			title: "Living Mechanism"
+			x: 3.5d
+			y: -7.5d
+			subtitle: "Shimmer me timbers!"
+			description: [
+				"It's alive! The combination of Pure Carbon, Enderslime, an Eye of Ender and our beloved Shimmer creates... Life?"
+				""
+				"It won't stop staring..."
+			]
+			dependencies: ["7E7069083F7E84EA"]
+			id: "70528B6EB84817B1"
+			tasks: [{
+				id: "00264AE9ACD23B96"
+				type: "item"
+				item: "createastral:living_mechanism"
+			}]
+			rewards: [{
+				id: "6B8CF0D92B96FD17"
+				type: "item"
+				item: "astraladditions:cometball"
+				count: 32
+			}]
+		}
+		{
+			title: "Shimmered Apple"
+			x: -3.5d
+			y: 1.0d
+			subtitle: "Tastes sweet!"
+			description: [
+				"Who'd have thought that you'd be able to make good food down here!"
+				""
+				"Shimmered apples provide lots of saturation and some light health regen."
+			]
+			dependencies: ["586DA028F2A79E2F"]
+			id: "48172552E60243CC"
+			tasks: [{
+				id: "4C4FAD2B6812B1C4"
+				type: "item"
+				item: "astralfoods:shimmered_apple"
+				count: 8L
+			}]
+		}
+		{
+			title: "New Blaze Cake Automation"
+			icon: "create:blaze_cake"
+			x: -3.0d
+			y: -6.5d
+			subtitle: "Irresistable!"
+			description: ["Blazes can't say no to the excrement of an unfathomable entity!"]
+			dependencies: [
+				"07CB23B8118CE00A"
+				"4B5C2A5E3337E88E"
+			]
+			id: "332C9CADA179D514"
+			tasks: [{
+				id: "0231C83201C7AD83"
+				type: "item"
+				item: "create:blaze_cake"
+				count: 16L
+			}]
+			rewards: [{
+				id: "6A9C676C38F3C5B4"
+				type: "item"
+				item: "create:blaze_cake"
+				count: 16
+			}]
+		}
+		{
+			x: -2.0d
+			y: -7.5d
+			subtitle: "Zwoop"
+			description: ["When in Rome..."]
+			dependencies: ["4B5C2A5E3337E88E"]
+			id: "0E9DEE59EF7AAF22"
+			tasks: [{
+				id: "590C950AD1B0E757"
+				type: "item"
+				item: {
+					id: "tconstruct:ender_slime_sling"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: -8.5d
+			subtitle: "But Where's the Dragon Egg?"
+			dependencies: ["47A50CF905A68E98"]
+			id: "06B974CE21252348"
+			tasks: [{
+				id: "0C1F4482CF6A8462"
+				type: "item"
+				item: "techreborn:dragon_egg_syphon"
+			}]
+			rewards: [{
+				id: "25E22336C1C2C522"
+				type: "item"
+				item: "tconstruct:ender_cake"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -6.5d
+			subtitle: "Purification Station"
+			description: [
+				"Our final Centrifuge."
+				""
+				"Uncover what items really are. This machine will split items down into it's finest parts, turning an item into a maximum of four outputs."
+				""
+				"The Yttric Centrifuge requires a burnable fuel in the lower left slot as an input. This can be automatically input via an input into the side using a Funnel or Hopper. Items can be output through the bottom face of the block."
+			]
+			dependencies: ["3BC1C47CA86C200F"]
+			id: "05F3CDD240A00C45"
+			tasks: [{
+				id: "06D993D22743540D"
+				type: "item"
+				item: "yttr:centrifuge"
+			}]
+			rewards: [{
+				id: "118812421A9B6F8A"
+				type: "item"
+				item: "minecraft:enchanted_golden_apple"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -7.5d
+			description: [
+				"Lets break down some coal."
+				"Put 16 coal into the middle of the centrifuge, and a burnable fuel item in the fuel slot."
+				"When the Centrifuge detects a valid item, it will start tumbling the item until it is broken down into its factors."
+			]
+			dependencies: ["05F3CDD240A00C45"]
+			id: "7E7069083F7E84EA"
+			tasks: [{
+				id: "17086ED8710BAE2F"
+				type: "item"
+				item: "yttr:ultrapure_carbon"
+				count: 2L
+			}]
+			rewards: [{
+				id: "5DE554C37F860C05"
+				type: "item"
+				item: "createastral:charcoal_block"
+				count: 8
+			}]
+		}
+		{
+			title: "Sputum"
+			x: -4.5d
+			y: -3.5d
+			subtitle: "Digest This"
+			description: [
+				"Thick saliva found in pools within the bowels of this dimension. It stinks."
+				"Watch your step."
+			]
+			hide_dependency_lines: true
+			dependencies: ["586DA028F2A79E2F"]
+			id: "21305A046B14B983"
+			tasks: [{
+				id: "4C3D57267E00AB49"
+				type: "item"
+				item: "astraladditions:sputum_bucket"
+			}]
+		}
+		{
+			title: "Ender Mush"
+			x: -2.0d
+			y: -3.0d
+			subtitle: "Ender Slop"
+			description: [
+				"Sputum digests Enderslime Crystals, softening them."
+				""
+				"This Mush will be easier to work with."
+			]
+			dependencies: [
+				"21305A046B14B983"
+				"586DA028F2A79E2F"
+			]
+			id: "658F1D4DCD082AD0"
+			tasks: [{
+				id: "4DD11CE03F438175"
+				type: "item"
+				item: "createastral:ender_mush"
+				count: 16L
+			}]
+		}
+		{
+			title: "Fully Automatable Debris"
+			x: 6.0d
+			y: -3.0d
+			subtitle: "De Brie"
+			description: [
+				"With solid Rubble production, we can comfortably crush good amounts of it to release the Debris inside."
+				""
+				"Signs of the past show up within every inch of this place."
+			]
+			dependencies: ["155B0CF48A2CC893"]
+			id: "543FB6A35A0382AE"
+			tasks: [{
+				id: "3B0627217A9D00CA"
+				type: "item"
+				item: "tconstruct:debris_nugget"
+				count: 32L
+			}]
+			rewards: [{
+				id: "278A0D854C58ED9B"
+				type: "item"
+				item: "createastral:monazite_crystal"
+				count: 8
+			}]
+		}
+		{
+			title: "Ultrapure Gold"
+			x: 7.0d
+			y: -6.5d
+			subtitle: "Don't let a Piglin see this"
+			description: ["The highly conductive Gold now purified to it's finest form."]
+			dependencies: [
+				"05F3CDD240A00C45"
+				"79737BD306B433EC"
+			]
+			id: "540C6BA867A9F2C7"
+			tasks: [{
+				id: "3C59AB4208EE476F"
+				type: "item"
+				item: "yttr:ultrapure_gold"
+				count: 2L
+			}]
+			rewards: [{
+				id: "382BBA9835E1FB1D"
+				type: "item"
+				item: "minecraft:golden_carrot"
+				count: 16
+			}]
+		}
+		{
+			x: 8.5d
+			y: -7.5d
+			shape: "square"
+			subtitle: "Nether Right"
+			description: ["The durability of Ancient Debris and the conductivity of Gold. The perfect mix for use in powerful tools and machinery."]
+			dependencies: ["540C6BA867A9F2C7"]
+			id: "2F264FA51CB9971D"
+			tasks: [{
+				id: "045E694E22AC3E94"
+				type: "item"
+				item: "yttr:ultrapure_netherite"
+			}]
+			rewards: [{
+				id: "373BFC887ECA82E9"
+				type: "item"
+				item: "reinfchest:netherite_chest"
+				count: 4
+			}]
+		}
+		{
+			title: "Metabolic Broth"
+			x: -1.5d
+			y: -5.5d
+			subtitle: "The Belly of the Beast"
+			description: ["Utilising the &6Basin Foundry Lid&r, Ender Mush can be melted down into Metabolic Broth, a processed form of stomach acid. It has a oddly comforting smell compared to Sputum."]
+			dependencies: ["658F1D4DCD082AD0"]
+			id: "07CB23B8118CE00A"
+			tasks: [{
+				id: "24D8805020D30947"
+				type: "item"
+				item: "kubejs:metabolic_broth_bucket"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -9.5d
+			subtitle: "Ultra Compression"
+			description: ["7 ultrapure carbon in a star formation, desized into compressed ultrapure carbon"]
+			dependencies: ["47A50CF905A68E98"]
+			id: "171116CC8CD6606A"
+			tasks: [{
+				id: "1472436C2038C5BB"
+				type: "item"
+				item: "yttr:compressed_ultrapure_carbon_block"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -6.5d
+			subtitle: "DO NOT EAT (optional)"
+			description: [
+				"When cooled, Metabolic Broth forms into an odd gummy food, like a sugary sweet."
+				""
+				"It's somewhat medicinal, granting health benefits that increase the potency of positive potion effects and soften the impact of negative effects. It also aids in digestion, improving the benefits of food items."
+				""
+				"Don't eat your whole supply though, you will be needing it!"
+			]
+			dependencies: ["07CB23B8118CE00A"]
+			id: "4B5C2A5E3337E88E"
+			tasks: [{
+				id: "01AD9C6926B42712"
+				type: "item"
+				item: "yttr:delicace"
+				count: 16L
+			}]
+			rewards: [{
+				id: "48FEF08B3C5BFDD3"
+				type: "item"
+				item: "createastral:seitan"
+				count: 32
+			}]
+		}
+		{
+			x: 0.5d
+			y: -5.5d
+			subtitle: "Upgrade!"
+			description: [
+				"A direct upgrade to the Void Cleaver. Shift + Right Click a block to cut it into a new shape."
+				""
+				"This iteration of the Void Cleaver also acts as an &6omnitool&r, mining as any tool type and applying &rstacks of Bleed&r when used as a weapon."
+			]
+			dependencies: ["3BC1C47CA86C200F"]
+			id: "2EC69DE42957F831"
+			tasks: [{
+				id: "45F8D131FC22D638"
+				type: "item"
+				item: {
+					id: "yttr:reinforced_cleaver"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "2C7C29267517F13D"
+				type: "item"
+				item: {
+					id: "mcdw:dagger_eternal_knife"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Neodymium"
+			x: 1.0d
+			y: -3.0d
+			subtitle: "The magnetic element"
+			description: [
+				"A metal present in significant quantities in Monazite. "
+				""
+				"Cannot be found naturally in its metallic form, but can be extracted from crushed Monazite."
+			]
+			dependencies: ["07F69FBBB91767CC"]
+			id: "7536EE4DB00E8100"
+			tasks: [{
+				id: "4BE61A12B68FA4AD"
+				type: "item"
+				item: "yttr:neodymium_dust"
+				count: 8L
+			}]
+		}
+		{
+			title: "Ultrapure Debris"
+			x: 5.5d
+			y: -5.5d
+			subtitle: "Automating Rubble"
+			description: [
+				"Ancient Debris is a compound of a world's history. The centrifuge will break it down into its finest moments"
+				"Place 1 Ancient Debris into a centrifuge to get Ultrapure Debris and a bit of Rubble"
+			]
+			dependencies: [
+				"05F3CDD240A00C45"
+				"543FB6A35A0382AE"
+			]
+			id: "79737BD306B433EC"
+			tasks: [
+				{
+					id: "7B46C0358B249D32"
+					type: "item"
+					item: "minecraft:netherite_scrap"
+					count: 8L
+				}
+				{
+					id: "41F5018478729548"
+					type: "item"
+					item: "yttr:ultrapure_wolfram"
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "Monazite Crystal"
+			x: 0.0d
+			y: -2.5d
+			subtitle: "Monazite"
+			description: [
+				"Monazite Crystals can be found in the Warped Forest biome."
+				"Due it's tough composition, you will have to use a pair of Crushing Wheels to break it down into its elements: Yttrium and Neodymium."
+			]
+			hide_dependency_lines: true
+			dependencies: ["111B851BE26C9C43"]
+			id: "07F69FBBB91767CC"
+			tasks: [{
+				id: "2F144F9F706B9CCF"
+				type: "item"
+				item: "createastral:monazite_crystal"
+				count: 16L
+			}]
+		}
+		{
+			title: "Sturdy Cage"
+			x: 3.5d
+			y: -9.5d
+			subtitle: "To Store a Sacrifice"
+			description: [
+				"Hold 'W' on the Sturdy Cage to see how to craft it using the Desizer."
+				""
+				"To summon a &5Great Beast&r, we need a Sacrifice. This cage of Sturdy Blocks will be able to contain it."
+			]
+			dependencies: ["47A50CF905A68E98"]
+			id: "463B94056F32BAD1"
+			tasks: [
+				{
+					id: "4F6BD09ECF6C7F1E"
+					type: "item"
+					item: "createastral:sturdy_cage"
+				}
+				{
+					id: "39E0C6B0247CBA0B"
+					type: "item"
+					item: "createastral:sturdy_sheet_block"
+					count: 20L
+				}
+				{
+					id: "7430675542A729D6"
+					type: "item"
+					item: "yttr:glassy_void"
+					count: 6L
+				}
+			]
+			rewards: [{
+				id: "0479AC1DB8382BDC"
+				type: "item"
+				item: "xpcrystals:crystal_broth"
+				count: 8
+			}]
+		}
+		{
+			title: "[placeholder] Contained End"
+			x: 3.5d
+			y: -11.5d
+			description: ["Trap a Ender Jelly in a snare and place it into a Sturdy Cage"]
+			dependencies: ["463B94056F32BAD1"]
+			id: "7E274C274E5E3A5C"
+			tasks: [{
+				id: "3222498964CF920A"
+				type: "item"
+				item: "createastral:contained_end"
+			}]
+			rewards: [{
+				id: "009DB6B1B89CE1BA"
+				type: "item"
+				item: "xpcrystals:sticky_crystal_pudding"
+				count: 8
+			}]
+		}
+		{
+			title: "Ultramatter"
+			x: 0.5d
+			y: -11.5d
+			subtitle: "Shimmers..."
+			description: [
+				"Compressed Ultrapure Carbon with shimmer casted on it"
+				"throwback to shimmering stone :3"
+			]
+			dependencies: ["171116CC8CD6606A"]
+			id: "3F559FAFA31FD081"
+			tasks: [{
+				id: "3398F5FA70FD5B35"
+				type: "item"
+				item: "createastral:ultramatter"
+			}]
+		}
+		{
+			title: "Fuel for the Fire"
+			x: -0.5d
+			y: -8.5d
+			subtitle: "Compacting biomass"
+			description: [
+				"Coal generation using the desizer!"
+				""
+				"With a 3x3x3 cube of any of these biomass materials, we can use the Desizer to create Charcoal and Coal blocks."
+				""
+				"Charcoal Blocks can be turned back into Coal Blocks using the Chromatic Vacuum with just a Right Click."
+			]
+			dependencies: ["47A50CF905A68E98"]
+			id: "7ECDE911177BB9A9"
+			tasks: [
+				{
+					id: "5A69E7E911AEB368"
+					type: "item"
+					item: "minecraft:moss_block"
+					count: 27L
+				}
+				{
+					id: "525A5CD0ACD0A298"
+					type: "item"
+					item: "minecraft:dirt"
+					count: 27L
+				}
+				{
+					id: "617544D6AFABCAA4"
+					type: "item"
+					item: "minecraft:dried_kelp_block"
+					count: 27L
+				}
+				{
+					id: "32F6C0EA4FC1755B"
+					type: "item"
+					item: "minecraft:soul_soil"
+					count: 27L
+				}
+			]
+			rewards: [{
+				id: "5412C358B03C8A40"
+				type: "item"
+				item: {
+					id: "mcdw:sword_obsidian_claymore"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "O' Beast of Ender,"
+			x: 2.0d
+			y: -14.5d
+			shape: "gear"
+			subtitle: "Die With Honour."
+			description: ["Locate the Scorched Totem and call upon a &5Great Beast&r."]
+			dependencies: [
+				"0AE79E624EA78861"
+				"46620FE1375C7674"
+			]
+			size: 2.0d
+			id: "58B45DBA573A9FFB"
+			tasks: [{
+				id: "6F06EC6768486F7B"
+				type: "kill"
+				icon: "minecraft:dragon_head"
+				entity: "minecraft:ender_dragon"
+				value: 1L
+			}]
+		}
+		{
+			title: "Astral Singularity"
+			x: 2.0d
+			y: -16.5d
+			subtitle: "&dThe End.&r"
+			description: [
+				"A &byear and a half&r since the last update major update for Astral released... and here we are in &bv2.1&r, how far we have come."
+				""
+				"Astral had just over 10,000 downloads when v2.0 dropped in early 2023. As of now we have surpassed &bOne Million&r users."
+				""
+				"I cannot begin to express my thanks to everyone in the Astral community, and &6YOU&r for getting far enough to finish the entire pack."
+				""
+				"&c\"Fixed in 2.1\" &rbecame a bit of a meme, in the community, as this update was so long in the making due to varieties of reasons. I hope that you got to enjoy playing a more 'finished' version of astral."
+				""
+				"&bFrom me to you,&r as the original mind behind Astral, it warms my heart that the little modpack pet project in 2022 became a fully fledged pack with it's incredible set of community members."
+				""
+				"&o&dThank you.&r"
+				""
+				"&6- \"Laky\" Laskyyy&r"
+			]
+			dependencies: ["58B45DBA573A9FFB"]
+			id: "0938969824F4D4CB"
+			tasks: [{
+				id: "7F2F3F1937AE40F9"
+				type: "item"
+				item: "createastral:astral_singularity"
+			}]
+			rewards: [{
+				id: "39374B3C9586FF63"
+				type: "item"
+				item: "createastral:laskinium_pill"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -18.0d
+			subtitle: "The Journey Makes Us Stronger"
+			description: ["Celestial Ring forged across all of space. While equipped, grants 1.5x damage to most attacks."]
+			dependencies: ["0938969824F4D4CB"]
+			id: "1D76A6E8BD6B7FD1"
+			tasks: [{
+				id: "1963B60406673B14"
+				type: "item"
+				item: "doodads:celestial_ring"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -17.0d
+			subtitle: "Papapap"
+			description: [
+				"The ultimate crowd control. Weld a mystic boxing glove, punching through enemies with the force of a meteor."
+				""
+				"Punches deal more damage the faster they are travelling when they hit a mob. Their initial velocity is also effected by your own velocity, travelling further when you are sprinting forwards. There is no cap to the amount of possible damage."
+				""
+				"Melee attacks will launch mobs into the air. Shift Right Click to uppercut."
+			]
+			dependencies: ["0938969824F4D4CB"]
+			id: "43C9FDBABD7FB776"
+			tasks: [{
+				id: "21F117B6ADEB3570"
+				type: "item"
+				item: {
+					id: "astraladditions:meteor_mitts"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: -17.0d
+			subtitle: "Void Survivor"
+			description: [
+				"A direct upgrade to the Yttric Rifle, as long as you can time it correctly."
+				""
+				"Charges shots 1.65x faster."
+			]
+			dependencies: ["0938969824F4D4CB"]
+			id: "756FF6156BDE6ECE"
+			tasks: [{
+				id: "231A1E1A34B5AEE2"
+				type: "item"
+				item: "yttr:rifle_overclocked"
+			}]
+		}
+		{
+			title: "Ruined Technology"
+			x: 7.5d
+			y: 1.0d
+			subtitle: "Have we been here before?"
+			dependencies: ["155B0CF48A2CC893"]
+			min_required_tasks: 1
+			id: "78E334E650E918E0"
+			tasks: [
+				{
+					id: "0D690E64AD97D025"
+					type: "item"
+					item: "yttr:ruined_bricks"
+				}
+				{
+					id: "047371022596CC5D"
+					type: "item"
+					item: "yttr:ruined_container"
+				}
+				{
+					id: "1CDB0C1881229E79"
+					type: "item"
+					item: "yttr:ruined_device_bc_1"
+				}
+				{
+					id: "45CF8D164F520ED7"
+					type: "item"
+					item: "yttr:ruined_device_bc_2"
+				}
+				{
+					id: "5F0962076C627375"
+					type: "item"
+					item: "yttr:ruined_device_gt_1"
+				}
+				{
+					id: "025208D3EBEA4D06"
+					type: "item"
+					item: "yttr:ruined_device_rp_1"
+				}
+				{
+					id: "5A92D453CD03DCD9"
+					type: "item"
+					item: "yttr:ruined_device_fo_1"
+				}
+				{
+					id: "7C42F173718F851D"
+					type: "item"
+					item: "yttr:ruined_pipe"
+				}
+				{
+					id: "567F28B16A6BC1C9"
+					type: "item"
+					item: "yttr:ruined_frame"
+				}
+				{
+					id: "2B7DB1600AAB7DCD"
+					type: "item"
+					item: "yttr:ruined_tube"
+				}
+				{
+					id: "0C76B6A6DAE26EB9"
+					type: "item"
+					item: "yttr:ruined_lever"
+				}
+				{
+					id: "68D58C6B42850749"
+					type: "item"
+					item: "yttr:ruined_tank"
+				}
+				{
+					id: "72939F0B4FCFA654"
+					type: "item"
+					item: "yttr:ruined_construct_rc_1"
+				}
+				{
+					id: "2F940858BE7B13B3"
+					type: "item"
+					item: "yttr:ruined_construct_rc_2"
+				}
+				{
+					id: "200D06AF382CA5D9"
+					type: "item"
+					item: "yttr:ruined_torch"
+				}
+			]
+			rewards: [{
+				id: "4033A7C2FAF8481F"
+				type: "item"
+				item: "yttr:rubble"
+				count: 16
+			}]
+		}
+		{
+			title: "Ruined Cobblestone"
+			x: 8.0d
+			y: -1.0d
+			subtitle: "The Past, Crumbling"
+			description: [
+				"Cobblestone can be mixed with Rubble to make its Ruined counterpart."
+				""
+				"Ruined Cobblestone can then be crushed back into Rubble, with a chance of one bonus Rubble. As long as you save at least one Rubble to make more Ruined Cobblestone, you can automate Rubble."
+			]
+			dependencies: ["155B0CF48A2CC893"]
+			id: "135798C8E97B7D89"
+			tasks: [
+				{
+					id: "6CB3D654B634DCC3"
+					type: "item"
+					item: "yttr:ruined_cobblestone"
+				}
+				{
+					id: "5F666710675D4BB4"
+					type: "item"
+					item: "yttr:rubble"
+					count: 32L
+				}
+			]
+			rewards: [{
+				id: "3782E2A05CC9648C"
+				type: "item"
+				item: "tconstruct:ender_slime_crystal"
+				count: 16
+			}]
+		}
+		{
+			title: "Automate Rubble!"
+			x: 10.5d
+			y: -1.5d
+			shape: "diamond"
+			subtitle: "I believe in you!"
+			dependencies: ["135798C8E97B7D89"]
+			id: "3B570698D276A201"
+			tasks: [{
+				id: "76E1595A2C2163D5"
+				type: "item"
+				item: "yttr:rubble"
+				count: 256L
+			}]
+			rewards: [{
+				id: "46BC85722D652E4C"
+				type: "item"
+				item: "passivepiglins:piglin_fortune"
+				count: 32
+			}]
+		}
+		{
+			title: "Neodymium 2"
+			x: 1.0d
+			y: -4.0d
+			subtitle: "Now with less dust and more curves!"
+			description: ["Zapping Neodymium will irradiate it, promoting the growth of Promethium Lumps"]
+			dependencies: ["7536EE4DB00E8100"]
+			id: "7A23938B0DEE0B74"
+			tasks: [{
+				id: "1CD09061F1A20130"
+				type: "item"
+				item: "yttr:neodymium_disc"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -6.5d
+			shape: "square"
+			subtitle: "Slightly better than AAA"
+			description: ["Now we're getting somewhere! These batteries will be used to power the next machines. Don't worry, they have a very long battery life."]
+			dependencies: ["453A225243C415F9"]
+			id: "3BC1C47CA86C200F"
+			tasks: [{
+				id: "37855F965E517E5F"
+				type: "item"
+				item: "createastral:promethium_atomic_battery"
+			}]
+			rewards: [{
+				id: "79DDC18480B747DB"
+				type: "item"
+				item: "doodads:magic_plum"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -15.5d
+			subtitle: "The rainbow road"
+			description: ["The projector will place a rainbow platform below you. Continuing to hold Right Click will create a long platform to wherever you desire. "]
+			dependencies: ["0938969824F4D4CB"]
+			id: "47FF7B656DBE52E3"
+			tasks: [{
+				id: "780FD0F7F3970A23"
+				type: "item"
+				item: "yttr:projector"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -15.5d
+			subtitle: "SwipSwapper"
+			description: ["The Shifter replaces blocks with a 'paint bucket tool' function. Hold a block in your offhand to replace any placed blocks with that block. Works with Void-Cleaved blocks."]
+			dependencies: ["0938969824F4D4CB"]
+			id: "20777196D4CD5C6F"
+			tasks: [{
+				id: "2B0522FE3BCAECB1"
+				type: "item"
+				item: "yttr:shifter"
+			}]
+		}
+		{
+			icon: "estrogen:centrifuge"
+			x: -3.5d
+			y: -5.0d
+			subtitle: "Sputum Automation"
+			description: ["A Fluid Tank of Metabolic Broth with a Centrifuge on top will output Sputum into a Fluid Tank on top. This process will give a net gain in Sputum"]
+			dependencies: ["07CB23B8118CE00A"]
+			id: "232BF3750113B99D"
+			tasks: [{
+				id: "160A0392300727E9"
+				type: "checkmark"
+				title: "Salivation"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -5.0d
+			subtitle: "NYEOWM"
+			description: [
+				"Like a conveyor belt.. but goopy.. and faster.."
+				""
+				"Lay this goop on the ground and apply a direction for a major speed boost. Fill your walkways with this to get around much faster."
+			]
+			dependencies: ["4B5C2A5E3337E88E"]
+			id: "743D4A82982C2F4F"
+			tasks: [{
+				id: "174B8FD8EE4637EE"
+				type: "item"
+				item: "yttr:velresin"
+			}]
+		}
+		{
+			title: "Forces of Nature"
+			x: 1.0d
+			y: 2.5d
+			subtitle: "The future clashes with the past"
+			dependencies: ["220441E71254C532"]
+			id: "11B6F1D5D17591E3"
+			tasks: [
+				{
+					id: "1D3630EB10ACC99C"
+					type: "biome"
+					icon: "astraladditions:twisted_nylium"
+					biome: "minecraft:warped_forest"
+				}
+				{
+					id: "17ABABAF60614BB8"
+					type: "biome"
+					icon: "minecraft:crimson_nylium"
+					biome: "minecraft:crimson_forest"
+				}
+			]
+			rewards: [{
+				id: "37100CE3CE099EBD"
+				type: "xp"
+				xp: 250
+			}]
+		}
+		{
+			title: "Refine Gadolinite"
+			icon: "createastral:crushed_raw_gadolinite"
+			x: 4.5d
+			y: -5.0d
+			subtitle: "Centrifuge that compound!"
+			description: [
+				"Gadolinite is a compound of a few useful elements. Break it down, girl."
+				""
+				"You can also break down Enderrack and End Stone in the Yttric Centrifuge. Try it out!"
+			]
+			dependencies: ["05F3CDD240A00C45"]
+			id: "05E5820BA29375CE"
+			tasks: [
+				{
+					id: "4D5A046C5562E78E"
+					type: "item"
+					item: "yttr:iron_dust"
+					count: 16L
+				}
+				{
+					id: "28DFAE7246745FB8"
+					type: "item"
+					item: "yttr:neodymium_dust"
+					count: 8L
+				}
+				{
+					id: "56437FB4D133AC78"
+					type: "item"
+					item: "yttr:yttrium_dust"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "2E67DDBFFF9F6622"
+				type: "item"
+				item: "yttr:promethium_speck"
+				count: 16
+			}]
+		}
+		{
+			title: "Shrine atop the Old World"
+			x: 3.5d
+			y: -13.5d
+			subtitle: "Summon the Beast"
+			description: [
+				"At the top of the dimension, islands of fire and ash float high."
+				""
+				"You will find Shrines of Scorched Obsidian. Bring a &6Root of Continuity&r to the shrine, and Right Click on the highest block in the center pillar. You may want to stand back."
+			]
+			dependencies: ["0AE79E624EA78861"]
+			id: "46620FE1375C7674"
+			tasks: [{
+				id: "1861EFE113B208EE"
+				type: "observation"
+				icon: "yttr:polished_scorched_obsidian_holster_alive"
+				timer: 0L
+				observe_type: 0
+				to_observe: "yttr:polished_scorched_obsidian_holster"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -13.5d
+			subtitle: "Cheers, Pal"
+			description: [
+				"When you activate the Holster at the top of the middle pillar, it will glow red."
+				""
+				"Right Click the Holster block with a &6Netherite Knife&r to scrape a Haemopal from it."
+				""
+				"The Haemopal can be processed into crafting materials to help you summon another &5Great Beast&r."
+			]
+			dependencies: ["46620FE1375C7674"]
+			id: "133327AF8E6C3F92"
+			tasks: [{
+				id: "02CAF1958F3D698E"
+				type: "item"
+				item: "yttr:haemopal"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

@@ -431,9 +431,9 @@ function lizardCH3Changes(event) {
     event.shaped("createaddition:tesla_coil", ["DSD", "USU", "CMC"], {
         D: "ad_astra:desh_ingot",
         S: "createaddition:copper_spool",
-        U: "techreborn:copper_cable",
+        U: "createaddition:copper_wire",
         C: "createaddition:capacitor",
-        M: "techreborn:basic_machine_casing",
+        M: "create:brass_block",
     });
 
     // New Electrum recipe
@@ -628,6 +628,17 @@ onEvent("recipes", (event) => {
         C: "yttr:project_table",
         D: "create:smart_fluid_pipe",
         E: "create:electron_tube",
+    });
+
+    event.shaped("yttr:centrifuge", ["ABBBBA", "BCDDCB", "BD  EB", "BD  EB", "BCEECB", "ABBBBA"], {
+        A: "yttr:yttrium_block",
+        B: "yttr:yttrium_plating",
+        C: "createastral:promethium_atomic_battery",
+        D: "create:shadow_steel_casing",
+        E: "create:refined_radiance_casing",
+        F: "yttr:neodymium_block",
+        G: "techreborn:industrial_centrifuge",
+        H: "createastral:separation_agent",
     });
 
     ///COMPUTERCRAFT FIXES
@@ -1220,7 +1231,7 @@ onEvent("recipes", (event) => {
         }),
         ["CCC", "DED", "CCC"],
         {
-            D: "techreborn:insulated_copper_cable",
+            D: "createaddition:copper_wire",
             E: "phonos:redstone_chip",
             C: "create:copper_casing",
         }
@@ -1296,7 +1307,7 @@ onEvent("recipes", (event) => {
     event.shaped("techreborn:industrial_electrolyzer", ["ABA", "CDC", "ABA"], {
         A: "createastral:copper_heating_coil",
         B: "techreborn:electronic_circuit",
-        C: "techreborn:hv_cable",
+        C: "createaddition:copper_wire",
         D: "techreborn:advanced_machine_frame",
     });
 
@@ -1383,11 +1394,11 @@ onEvent("recipes", (event) => {
     });
 
     event.shaped("travelersbackpack:standard", ["ABC", "DED", "FBF"], {
-        A: "#c:workbenches",
+        A: "projecttable:projecttable",
         B: "campanion:leather_pouch",
         C: "campanion:sleeping_bag",
         D: "create:fluid_tank",
-        E: "tconstruct:travelers_chestplate",
+        E: "minecraft:leather_chestplate",
         F: "farmersdelight:rope",
     });
 
