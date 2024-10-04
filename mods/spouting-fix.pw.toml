@@ -1,0 +1,13 @@
+name = "Spouting Fix"
+filename = "SpoutingFix-1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "73d3b2bd9f833ace72c05958312d21b99f0ab042"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5779756
+project-id = 1114332
