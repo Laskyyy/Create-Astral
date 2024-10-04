@@ -1,6 +1,6 @@
 name = "Ponder Overrides"
 filename = "ponder_overrides-0.0.2+1.18.2.jar"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"
