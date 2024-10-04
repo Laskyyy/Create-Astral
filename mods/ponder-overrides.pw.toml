@@ -1,0 +1,13 @@
+name = "Ponder Overrides"
+filename = "ponder_overrides-0.0.2+1.18.2.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "0cba7e6299df4567246ef8036507db09d9bc7bff"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5779725
+project-id = 1114329
