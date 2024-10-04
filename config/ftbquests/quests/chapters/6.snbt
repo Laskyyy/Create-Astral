@@ -49,7 +49,12 @@
 		{
 			x: 2.0d
 			y: -12.5d
-			description: ["The End being inevitable.. like a time loop? continuity?"]
+			subtitle: "Inevitable"
+			description: [
+				"&5The End&r swallows all. Dimensions born and voided. "
+				""
+				"Yet there's something intriguing about an inevitable End. Harvest the fruits. We have everything we need for a greater form of Astral Conduit."
+			]
 			dependencies: [
 				"7E274C274E5E3A5C"
 				"3F559FAFA31FD081"
@@ -59,6 +64,15 @@
 				id: "02D8723A609FEF08"
 				type: "item"
 				item: "yttr:root_of_continuity"
+			}]
+			rewards: [{
+				id: "1F419BD4FD595871"
+				type: "item"
+				item: {
+					id: "vinery:bolvar_wine"
+					Count: 1b
+					tag: { }
+				}
 			}]
 		}
 		{
@@ -561,13 +575,19 @@
 			x: 0.5d
 			y: -9.5d
 			subtitle: "Ultra Compression"
-			description: ["7 ultrapure carbon in a star formation, desized into compressed ultrapure carbon"]
+			description: ["Carbon, a part of all life. Using the Desizer, compress it into a highly dense form."]
 			dependencies: ["47A50CF905A68E98"]
 			id: "171116CC8CD6606A"
 			tasks: [{
 				id: "1472436C2038C5BB"
 				type: "item"
 				item: "yttr:compressed_ultrapure_carbon_block"
+			}]
+			rewards: [{
+				id: "18841F1F07975784"
+				type: "item"
+				item: "create:experience_block"
+				count: 4
 			}]
 		}
 		{
@@ -739,7 +759,13 @@
 			title: "[placeholder] Contained End"
 			x: 3.5d
 			y: -11.5d
-			description: ["Trap a Ender Jelly in a snare and place it into a Sturdy Cage"]
+			description: [
+				"An Ender Watcher will make for the perfect sacrifice. It's cry will echo throughout the sky. "
+				""
+				"Using a &bSnare&r, capture an Ender Watcher and quickly put it into the Sturdy Cage. Remember that Snares can not contain mobs forever. Lower the HP of the Ender Watcher to keep it contained in the Snare for longer."
+				""
+				"If you haven't had the pleasure of meeting one yet, Ender Watchers are giant jellyfish that roam the Warped Forest and Small End Islands biomes."
+			]
 			dependencies: ["463B94056F32BAD1"]
 			id: "7E274C274E5E3A5C"
 			tasks: [{
@@ -759,16 +785,18 @@
 			x: 0.5d
 			y: -11.5d
 			subtitle: "Shimmers..."
-			description: [
-				"Compressed Ultrapure Carbon with shimmer casted on it"
-				"throwback to shimmering stone :3"
-			]
+			description: ["Shimmer, the blood of reality. Combined with Compressed Ultrapure Carbon, a frame for a conduit is within grasp."]
 			dependencies: ["171116CC8CD6606A"]
 			id: "3F559FAFA31FD081"
 			tasks: [{
 				id: "3398F5FA70FD5B35"
 				type: "item"
 				item: "createastral:ultramatter"
+			}]
+			rewards: [{
+				id: "79181E19B1585FA7"
+				type: "item"
+				item: "astralsignals:shimmer_polyvinyl_sheet"
 			}]
 		}
 		{
@@ -829,7 +857,7 @@
 			y: -14.5d
 			shape: "gear"
 			subtitle: "Die With Honour."
-			description: ["Locate the Scorched Totem and call upon a &5Great Beast&r."]
+			description: ["Locate the Scorched Shrine and call upon a &5Great Beast&r."]
 			dependencies: [
 				"0AE79E624EA78861"
 				"46620FE1375C7674"
@@ -842,6 +870,12 @@
 				icon: "minecraft:dragon_head"
 				entity: "minecraft:ender_dragon"
 				value: 1L
+			}]
+			rewards: [{
+				id: "4DAA81166C4E3E53"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 128
 			}]
 		}
 		{
@@ -1137,6 +1171,7 @@
 			}]
 		}
 		{
+			title: "Salivation"
 			icon: "estrogen:centrifuge"
 			x: -3.5d
 			y: -5.0d
@@ -1145,9 +1180,9 @@
 			dependencies: ["07CB23B8118CE00A"]
 			id: "232BF3750113B99D"
 			tasks: [{
-				id: "160A0392300727E9"
-				type: "checkmark"
-				title: "Salivation"
+				id: "3765BDB5933F30E0"
+				type: "item"
+				item: "estrogen:centrifuge"
 			}]
 		}
 		{
@@ -1169,7 +1204,7 @@
 		}
 		{
 			title: "Forces of Nature"
-			x: 1.0d
+			x: 0.5d
 			y: 2.5d
 			subtitle: "The future clashes with the past"
 			dependencies: ["220441E71254C532"]
@@ -1273,6 +1308,70 @@
 				type: "item"
 				item: "yttr:haemopal"
 			}]
+		}
+		{
+			title: "Ores of the Old World"
+			x: 3.5d
+			y: 2.5d
+			subtitle: "Gotta mine em all"
+			dependencies: ["220441E71254C532"]
+			id: "028C2D7ACC01610A"
+			tasks: [
+				{
+					id: "3CC82F5053B6B298"
+					type: "observation"
+					icon: "tconstruct:ender_slime_crystal_cluster"
+					timer: 0L
+					observe_type: 0
+					to_observe: "tconstruct:ender_slime_crystal_cluster"
+				}
+				{
+					id: "168A2ABAC25F9CDE"
+					type: "observation"
+					icon: "createastral:monazite_crystal"
+					timer: 0L
+					observe_type: 0
+					to_observe: "createastral:monazite"
+				}
+				{
+					id: "388F205C0B79A297"
+					type: "observation"
+					icon: "yttr:deepslate_gadolinite"
+					timer: 0L
+					observe_type: 0
+					to_observe: "yttr:deepslate_gadolinite"
+				}
+				{
+					id: "0893B9BF959CE931"
+					type: "observation"
+					icon: "minecraft:nether_quartz_ore"
+					timer: 0L
+					observe_type: 0
+					to_observe: "minecraft:nether_quartz_ore"
+				}
+				{
+					id: "6960DFC49C966612"
+					type: "observation"
+					icon: "minecraft:nether_gold_ore"
+					timer: 0L
+					observe_type: 0
+					to_observe: "minecraft:nether_gold_ore"
+				}
+			]
+			rewards: [
+				{
+					id: "4CA84D1B0E4D0FD5"
+					type: "item"
+					item: "astraladditions:enderrack"
+					count: 32
+				}
+				{
+					id: "39F1AF63FA295419"
+					type: "item"
+					item: "astraladditions:twisted_nylium"
+					count: 32
+				}
+			]
 		}
 	]
 	quest_links: [ ]

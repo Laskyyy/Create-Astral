@@ -166,7 +166,7 @@ function LakyCrushingRecipes(event) {
             input: "ad_astra:moon_cobblestone",
             outputs: [
                 ["ad_astra:raw_desh", 0.03],
-                ["ad_astra:mars_sand", 1],
+                ["ad_astra:moon_sand", 1],
                 ["minecraft:tuff", 0.25],
             ],
         },
