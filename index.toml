@@ -15236,7 +15236,7 @@ metafile = true
 
 [[files]]
 file = "mods/ponder-overrides.pw.toml"
-hash = "a91e6336fc0c1511eb4cf10a29f5ca3500a0cdc4caec44901cafc2a2dcdd27a0"
+hash = "41e4493e18604e658d0b868bf06e03be6579601d6f4cc0bcf3ec0ba7ac19c15b"
 metafile = true
 
 [[files]]
@@ -15345,7 +15345,7 @@ metafile = true
 
 [[files]]
 file = "mods/spouting-fix.pw.toml"
-hash = "836879d56bda62aaec6967a2293b88bad0204bc9fcefeb33a5fb7b57cc1911b0"
+hash = "c663a06590fdf49af5432b627e1bc2833d9873cfaa42d11e7438dfcf6447b0d7"
 metafile = true
 
 [[files]]
