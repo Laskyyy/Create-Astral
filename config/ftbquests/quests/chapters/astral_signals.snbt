@@ -226,11 +226,19 @@
 					}
 				}
 			}]
-			rewards: [{
-				id: "226C1C645B4D196C"
-				type: "item"
-				item: "astralsignals:polyvinyl_sheet"
-			}]
+			rewards: [
+				{
+					id: "226C1C645B4D196C"
+					type: "item"
+					item: "astralsignals:polyvinyl_sheet"
+				}
+				{
+					id: "3A719670514EEFA2"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2053519168689179764L
+				}
+			]
 		}
 		{
 			x: 8.0d
@@ -822,20 +830,6 @@
 			}]
 		}
 		{
-			title: "Needs some reward here"
-			x: 17.5d
-			y: 3.5d
-			subtitle: "Give them my shortman bowowow adopt a floppa png item thing"
-			optional: true
-			invisible: true
-			id: "7CD33A9C946A2555"
-			tasks: [{
-				id: "4A1DFAE4D9103AEA"
-				type: "custom"
-				title: "completionist quests"
-			}]
-		}
-		{
 			title: "Gambling pays off, trust me"
 			icon: {
 				id: "phonos:custom_music_disc"
@@ -870,11 +864,6 @@
 				id: "25CE3E0C8022796C"
 				type: "checkmark"
 				title: "I can't stop winning!"
-			}]
-			rewards: [{
-				id: "39B628902E21FE20"
-				type: "custom"
-				title: "Put something here or make it trigger the trophy quest"
 			}]
 		}
 	]

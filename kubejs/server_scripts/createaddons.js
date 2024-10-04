@@ -72,11 +72,6 @@ onEvent("recipes", (event) => {
             processingTime: 50,
         },
         {
-            inputs: [{ item: "minecraft:flint" }],
-            outputs: [{ item: "minecraft:music_disc_13", chance: 0.001 }],
-            processingTime: 20,
-        },
-        {
             inputs: [{ item: "minecraft:basalt" }],
             outputs: [
                 { item: "minecraft:magma_cream", chance: 0.1 },
