@@ -190,6 +190,8 @@ onEvent("recipes", (event) => {
         { type: "create:crushing", input: "minecraft:tuff" },
         { type: "create:milling", input: "minecraft:tuff" },
         { type: "create:milling", input: "minecraft:basalt" },
+        { type: "create:milling", input: "minecraft:clay" },
+        { type: "create:crushing", input: "minecraft:clay" },
         { type: "create:crushing", input: "minecraft:lapis_lazuli" },
         { type: "create:crushing", input: "minecraft:diamond" },
         { type: "create:crushing", input: "minecraft:diorite" },
