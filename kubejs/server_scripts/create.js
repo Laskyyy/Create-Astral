@@ -3275,6 +3275,18 @@ function compactingRecipes(event) {
             inputs: ["3x minecraft:bone_meal", "minecraft:gravel", { fluid: "minecraft:lava", amount: 100 * mB }],
         },
         {
+            output: "create:scoria",
+            inputs: ["minecraft:soul_soil", { fluid: "create:chocolate", amount: 50 * mB }],
+        },
+        {
+            output: "create:scoria",
+            inputs: ["minecraft:soul_sand", { fluid: "create:chocolate", amount: 50 * mB }],
+        },
+        {
+            output: "create:limestone",
+            inputs: ["minecraft:cobblestone", { fluid: "milk:still_milk", amount: 100 * mB }],
+        },
+        {
             output: "minecraft:tuff",
             inputs: ["1x minecraft:iron_nugget", "minecraft:cobblestone", "techreborn:andesite_dust"],
         },
