@@ -20,13 +20,6 @@ function LakyCompactingRecipes(event) {
             "minecraft:red_dye",
         ],
         [
-            "create:limestone",
-            "minecraft:clay",
-            "minecraft:cobblestone",
-            { fluid: "milk:still_milk", amount: 100 * mB },
-            "minecraft:white_dye",
-        ],
-        [
             "create:veridium",
             "minecraft:cobblestone",
             "minecraft:slime_ball",
@@ -46,13 +39,6 @@ function LakyCompactingRecipes(event) {
             "ad_astra:moon_sand",
             { fluid: "tconstruct:blazing_blood", amount: 50 * mB },
             "minecraft:black_dye",
-        ],
-        [
-            "create:scoria",
-            "tconstruct:seared_stone",
-            "minecraft:soul_soil",
-            { fluid: "create:chocolate", amount: 100 * mB },
-            "minecraft:brown_dye",
         ],
     ];
 
@@ -98,12 +84,10 @@ function LakyCrushingRecipes(event) {
         {
             input: "create:limestone",
             outputs: [
-                ["techreborn:raw_tin", 1],
-                ["techreborn:raw_tin", 0.5],
-                ["createastral:lime", 1],
-                ["createastral:lime", 0.5],
-                ["minecraft:clay", 0.5],
-                ["minecraft:andesite", 0.25],
+                ["minecraft:clay_ball", 1],
+                ["techreborn:raw_tin", 0.4],
+                ["createastral:lime", 0.7],
+
             ],
         },
         {
@@ -111,9 +95,9 @@ function LakyCrushingRecipes(event) {
             outputs: [
                 ["minecraft:raw_copper", 1],
                 ["minecraft:raw_copper", 0.9],
-                ["techreborn:olivine_dust", 0.1],
                 ["minecraft:sand", 0.5],
                 ["minecraft:green_dye", 0.25],
+                ["minecraft:emerald", 0.1],
             ],
         },
         {
@@ -180,10 +164,10 @@ function LakyCrushingRecipes(event) {
         {
             input: "create:scoria",
             outputs: [
-                ["minecraft:magma_cream", 0.9],
-                ["minecraft:magma_block", 1],
-                ["minecraft:tuff", 0.5],
-                ["minecraft:basalt", 0.25],
+                ["minecraft:magma_cream", 0.4],
+                ["minecraft:magma_block", 0.5],
+                ["minecraft:tuff", 0.3],
+                ["minecraft:basalt", 0.1],
             ],
         },
         {
