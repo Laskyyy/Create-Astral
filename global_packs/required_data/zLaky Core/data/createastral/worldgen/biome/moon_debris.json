@@ -5,7 +5,7 @@
   "category": "none",
   "effects": {
     "sky_color": 0,
-    "fog_color": 1447444,
+    "fog_color": 720907,
     "water_color": 4159204,
     "water_fog_color": 329011,
     "grass_color": 9551193,
@@ -29,19 +29,13 @@
       },
       {
       	"type": "astraladditions:phast",
-      	"weight": 2,
+      	"weight": 4,
       	"minCount": 1,
       	"maxCount": 2
       },
       {
-      	"type": "astraladditions:moonman",
-      	"weight": 1,
-      	"minCount": 1,
-      	"maxCount": 1
-      },
-      {
       	"type": "astraladditions:hemogiant",
-      	"weight": 1,
+      	"weight": 4,
       	"minCount": 1,
       	"maxCount": 1
       }

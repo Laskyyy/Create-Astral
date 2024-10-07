@@ -4,10 +4,10 @@
   "precipitation": "none",
   "category": "none",
   "effects": {
-    "sky_color": 458760,
-    "fog_color": 458760,
-    "water_color": 458791,
-    "water_fog_color": 458791,
+    "sky_color": 524310,
+    "fog_color": 524310,
+    "water_color": 524310,
+    "water_fog_color": 524310,
     "grass_color": 1517351,
     "foliage_color": 1517351
   },
