@@ -415,6 +415,11 @@
 			y: 13.244897959183653d
 			shape: "pentagon"
 			subtitle: "{chapter.1.quest.13.subtitle}"
+			description: [
+				"&cWARNING!&r The Project Table is quite buggy, and can &lvoid items&r when multiple people are using it at the same time!"
+				""
+				"This will hopefully be fixed in a later version of the mod!"
+			]
 			min_required_dependencies: 1
 			dependency_requirement: "one_completed"
 			size: 2.5d
@@ -1017,9 +1022,9 @@
 				Count: 1b
 				tag: {
 					Automobile: {
-						engine: "automobility:stone"
-						frame: "automobility:yellow_tractor"
 						wheels: "automobility:standard"
+						frame: "automobility:yellow_tractor"
+						engine: "automobility:stone"
 					}
 				}
 			}
@@ -1107,9 +1112,9 @@
 						Count: 1b
 						tag: {
 							Automobile: {
-								wheels: "automobility:standard"
-								frame: "automobility:yellow_tractor"
 								engine: "automobility:stone"
+								frame: "automobility:yellow_tractor"
+								wheels: "automobility:standard"
 							}
 						}
 					}
@@ -1539,8 +1544,8 @@
 								realCount: 0
 							}
 							PackageStyle: {
-								inner: "minecraft:oak_planks"
 								frame: "minecraft:oak_log"
+								inner: "minecraft:oak_planks"
 								color: 0
 							}
 						}

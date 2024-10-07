@@ -1,10 +1,9 @@
 {
-	"type": "minecraft:blasting",
-	"yttr:discovered_via": "yttr:ultrapure_cinnabar",
-	"ingredient": {
-		"item": "yttr:ultrapure_cinnabar"
-	},
-	"result": "yttr:quicksilver",
-	"experience": 0,
-	"cookingtime": 100
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "ad_astra:calorite_block"
+    },
+    "result": "yttr:quicksilver",
+    "experience": 0,
+    "cookingtime": 100
 }

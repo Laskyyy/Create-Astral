@@ -31,8 +31,8 @@
 							realCount: 0
 						}
 						PackageStyle: {
-							frame: "minecraft:stripped_acacia_log"
 							inner: "minecraft:acacia_planks"
+							frame: "minecraft:stripped_acacia_log"
 							color: 6
 						}
 					}

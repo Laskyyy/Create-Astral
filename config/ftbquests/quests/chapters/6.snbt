@@ -104,7 +104,7 @@
 				""
 				"The Desizer is made up of 1x Desizer Controller and 8x Desizer Casings. If you wish, you can decorate the desizer by putting the Casing blocks in a Stone Cutter."
 				""
-				"Hold 'W' on the Desizer to view a simple tutoral on what it looks like and how it works. "
+				"Hold 'W' on the Desizer to view a simple tutorial on what it looks like and how it works. "
 			]
 			dependencies: [
 				"1D59FDF8FE9BFC8F"
@@ -1238,7 +1238,7 @@
 			description: [
 				"Gadolinite is a compound of a few useful elements. Break it down, girl."
 				""
-				"You can also break down Enderrack and End Stone in the Yttric Centrifuge. Try it out!"
+				"You can also break down &5Enderrack&r and &eEnd Stone&r in the Yttric Centrifuge. Try it out!"
 			]
 			dependencies: ["05F3CDD240A00C45"]
 			id: "05E5820BA29375CE"

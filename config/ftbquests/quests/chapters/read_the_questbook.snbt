@@ -102,17 +102,10 @@
 				"These are prone to spilling item entities everywhere, causes noticeable MSPT spikes when active and even more if the items are staying for a long time."
 			]
 			id: "120F8BAE32A271B8"
-			tasks: [
-				{
-					id: "54D46298535515CD"
-					type: "checkmark"
-				}
-				{
-					id: "03005E4E26F01A03"
-					type: "item"
-					item: "create:item_vault"
-				}
-			]
+			tasks: [{
+				id: "54D46298535515CD"
+				type: "checkmark"
+			}]
 		}
 		{
 			title: "&6Villager FAQ"
@@ -224,9 +217,9 @@
 			description: [
 				"In Create: Astral, progression follows a different order than that which you may be familiar with."
 				""
-				"Brass is not obtainable pre-moon, as blazes which are required to heat basins to mix it are only found inside \"Lunar Pipelines\", large structures found on the moon."
+				"&6Brass is not obtainable pre-moon&r, as blazes which are required to heat basins to mix it are only found inside \"Lunar Power Plants\", large structures found on the moon."
 				""
-				"You do not require a rocket to reach the moon, instead you'll find yourself reaching it rather early... (End of Chapter 2)"
+				"&6You do not require a rocket to reach the moon&r, instead you'll find yourself reaching it rather early... (End of Chapter 2)"
 			]
 			id: "441EA3A4F4DDC6A7"
 			tasks: [{
@@ -242,7 +235,7 @@
 			description: [
 				"In Create: Astral, progression follows a different order than that which you may be familiar with."
 				""
-				"Heating blazes with regular fuel is going to be the primary heat level up until late Chapter 4. Blaze cakes are a later component and will not be crafted through processes you'll be familiar with."
+				"Heating blazes with regular fuel is going to be the primary heat level up &6until late Chapter 4&r. Blaze cakes are a later component and will not be crafted through processes you'll be familiar with."
 			]
 			id: "6F757AA5D8206995"
 			tasks: [{
@@ -419,7 +412,7 @@
 			description: [
 				"The custom music you will hear throughout the pack is licensed so that you may use it &6wherever you wish&r!"
 				""
-				"Feel free to include it in &6Youtube Videos&r or content surrounding astral, it will not be striked."
+				"Feel free to include it in &6Youtube Videos&r or content surrounding Astral, it will not be striked."
 				""
 				"Music was produced by Hesperyd, XETROO, PINS3Y, ethanicuss"
 			]

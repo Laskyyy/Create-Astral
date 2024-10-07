@@ -27,7 +27,6 @@
 			y: -3.0d
 			shape: "circle"
 			subtitle: "{chapter.4.quest.5.subtitle}"
-			min_required_dependencies: 1
 			dependencies: [
 				"429D2340C2B20A60"
 				"38814494AB07C2D8"
@@ -508,7 +507,6 @@
 			subtitle: "{chapter.4.quest.67.subtitle}"
 			description: ["{chapter.4.quest.67.description.1}"]
 			hide_dependency_lines: false
-			min_required_dependencies: 1
 			dependencies: [
 				"18A6359D578BEF87"
 				"38814494AB07C2D8"
@@ -542,8 +540,7 @@
 			x: -43.75d
 			y: 13.75d
 			shape: "diamond"
-			subtitle: "{chapter.4.quest.69.subtitle}"
-			description: ["{chapter.4.quest.69.description.1}"]
+			description: [""]
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			hide: false
@@ -559,8 +556,7 @@
 			x: -45.0d
 			y: 15.0d
 			shape: "diamond"
-			subtitle: "{chapter.4.quest.70.subtitle}"
-			description: ["{chapter.4.quest.70.description.1}"]
+			description: [""]
 			dependencies: [
 				"557684C7D7B955B8"
 				"0BF064389F9FFDC3"
@@ -578,8 +574,7 @@
 			x: -43.75d
 			y: 16.25d
 			shape: "diamond"
-			subtitle: "{chapter.4.quest.71.subtitle}"
-			description: ["{chapter.4.quest.71.description.1}"]
+			description: [""]
 			min_required_dependencies: 2
 			dependencies: [
 				"22B29B232EF2638F"
@@ -695,8 +690,7 @@
 			x: -45.0d
 			y: 17.5d
 			shape: "diamond"
-			subtitle: "{chapter.4.quest.81.subtitle}"
-			description: ["{chapter.4.quest.81.description.1}"]
+			description: [""]
 			dependencies: [
 				"2E7D02CA77627EF5"
 				"1D0E2A46A37501CB"
@@ -1105,6 +1099,12 @@
 				type: "checkmark"
 				title: "{chapter.4.quest.118.task.1.title}"
 			}]
+			rewards: [{
+				id: "2682F0057C2A2B48"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
+			}]
 		}
 		{
 			x: -31.0d
@@ -1472,9 +1472,9 @@
 			dependencies: ["60FEDA21DCE756B6"]
 			id: "2085B4FFCEB6913C"
 			tasks: [{
-				id: "64694EFA155769D7"
+				id: "0A33B9EBB44985E9"
 				type: "item"
-				item: "minecraft:quartz"
+				item: "minecraft:andesite"
 			}]
 		}
 		{
@@ -1505,9 +1505,9 @@
 			dependencies: ["4C2C2C74FB0F242E"]
 			id: "300157052319E92A"
 			tasks: [{
-				id: "6D994123AEA46494"
+				id: "1CF46A3D7A6E8B97"
 				type: "item"
-				item: "techreborn:olivine_dust"
+				item: "minecraft:emerald"
 			}]
 		}
 		{
@@ -1522,27 +1522,15 @@
 			}]
 		}
 		{
-			x: -39.0d
+			x: -41.0d
 			y: 2.0d
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "6BC17E6FF3988F27"
 			tasks: [{
-				id: "374D1BB437D814F2"
+				id: "6C8CB4DF622C7315"
 				type: "item"
-				item: "minecraft:calcite"
-			}]
-		}
-		{
-			x: -41.0d
-			y: 2.0d
-			hide_dependency_lines: true
-			dependencies: ["75928E9A25B2EFFD"]
-			id: "0E3D21DCCE195BD6"
-			tasks: [{
-				id: "7A7ECFCEDFB51E12"
-				type: "item"
-				item: "minecraft:clay_ball"
+				item: "minecraft:cobblestone"
 			}]
 		}
 		{
@@ -1564,9 +1552,9 @@
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "5CCFB0D5E793FEEA"
 			tasks: [{
-				id: "739FBE73E90ABE84"
+				id: "63DF733B838CA96B"
 				type: "item"
-				item: "minecraft:red_sand"
+				item: "minecraft:cobblestone"
 			}]
 		}
 		{
@@ -1576,9 +1564,9 @@
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "7EDD9855995EE2DC"
 			tasks: [{
-				id: "3029627293E88783"
+				id: "3A019DBA580FD2E6"
 				type: "item"
-				item: "minecraft:sandstone"
+				item: "minecraft:cobblestone"
 			}]
 		}
 		{
@@ -1636,9 +1624,9 @@
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "24EAC63D0CD34C36"
 			tasks: [{
-				id: "5D27E164DD7404BB"
+				id: "766A1266E6A51E53"
 				type: "item"
-				item: "minecraft:basalt"
+				item: "minecraft:cobblestone"
 			}]
 		}
 		{
@@ -1666,28 +1654,23 @@
 			}]
 		}
 		{
-			x: -23.0d
-			y: 2.0d
-			hide_dependency_lines: true
-			dependencies: ["75928E9A25B2EFFD"]
-			id: "4B5AE6C2F3F93879"
-			tasks: [{
-				id: "5B11979F2CA96035"
-				type: "item"
-				item: "tconstruct:seared_stone"
-			}]
-		}
-		{
 			x: -21.0d
 			y: 2.0d
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "1FB12E194186B1E8"
-			tasks: [{
-				id: "571C26D5F9A12039"
-				type: "item"
-				item: "minecraft:soul_soil"
-			}]
+			tasks: [
+				{
+					id: "571C26D5F9A12039"
+					type: "item"
+					item: "minecraft:soul_soil"
+				}
+				{
+					id: "0A54CAE00300D53A"
+					type: "item"
+					item: "minecraft:soul_sand"
+				}
+			]
 		}
 		{
 			x: -17.0d
@@ -1744,7 +1727,6 @@
 			x: -43.75d
 			y: 18.75d
 			shape: "diamond"
-			subtitle: "Deploying"
 			dependencies: ["705D35F27DB6DDEF"]
 			size: 2.5d
 			id: "72A49150FFDDA744"
@@ -1923,7 +1905,6 @@
 			x: -43.75d
 			y: 21.25d
 			shape: "diamond"
-			subtitle: "Deploying"
 			dependencies: ["72A49150FFDDA744"]
 			size: 2.5d
 			id: "03239E08D06379E6"
@@ -2050,7 +2031,6 @@
 			x: -45.0d
 			y: 20.0d
 			shape: "diamond"
-			subtitle: "Deploying"
 			dependencies: ["72A49150FFDDA744"]
 			size: 2.5d
 			id: "01F36051D7A7CE49"
@@ -2249,6 +2229,31 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "52A0A4BD8AA2E042"
+				type: "item"
+				item: {
+					id: "create:schematic"
+					Count: 1b
+					tag: {
+						Anchor: {
+							Z: 0
+							X: 0
+							Y: 0
+						}
+						Owner: "Laskyyy"
+						Deployed: 0b
+						Rotation: "NONE"
+						File: "[AstralExamples] Stone Growth Chamber.nbt"
+						Mirror: "NONE"
+						Bounds: [
+							3
+							3
+							3
+						]
+					}
+				}
+			}]
 		}
 		{
 			x: -36.0d
@@ -2266,6 +2271,31 @@
 					Count: 1b
 					tag: {
 						machine: "createastral:distillery"
+					}
+				}
+			}]
+			rewards: [{
+				id: "26BB7BAFA474570B"
+				type: "item"
+				item: {
+					id: "create:schematic"
+					Count: 1b
+					tag: {
+						Anchor: {
+							Z: 0
+							X: 0
+							Y: 0
+						}
+						Owner: "Laskyyy"
+						Deployed: 0b
+						Rotation: "NONE"
+						File: "[AstralExamples] Distillery.nbt"
+						Mirror: "NONE"
+						Bounds: [
+							5
+							5
+							5
+						]
 					}
 				}
 			}]
@@ -2594,6 +2624,83 @@
 					item: "minecraft:ink_sac"
 				}
 			]
+		}
+		{
+			x: -39.0d
+			y: 4.0d
+			dependencies: ["60FEDA21DCE756B6"]
+			id: "76E518EC3690A351"
+			tasks: [{
+				id: "6F3511A65BFA4780"
+				type: "item"
+				item: "minecraft:clay_ball"
+			}]
+		}
+		{
+			title: "Create Cobblegen Generatable!"
+			icon: "create:fluid_pipe"
+			x: -21.0d
+			y: 3.0d
+			subtitle: "Chocolate+Lava"
+			hide_dependency_lines: true
+			dependencies: ["75928E9A25B2EFFD"]
+			id: "4C2E65BA0282A607"
+			tasks: [
+				{
+					id: "72FB768A76666727"
+					type: "item"
+					item: "create:fluid_pipe"
+				}
+				{
+					id: "2A0E6137BD9FA4AC"
+					type: "checkmark"
+				}
+			]
+		}
+		{
+			title: "Create Cobblegen Generatable!"
+			icon: "create:fluid_pipe"
+			x: -39.0d
+			y: 3.0d
+			subtitle: "Honey+Lava"
+			hide_dependency_lines: true
+			dependencies: ["75928E9A25B2EFFD"]
+			id: "4D947F2DBBA0CBD9"
+			tasks: [{
+				id: "26A6B8841800C301"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: -38.5d
+			y: 12.5d
+			subtitle: "Spawns in moon caves"
+			description: ["Grow on stone ceilings and harvest for plentiful amounts of prismarine shards and crystals. "]
+			hide_dependency_lines: true
+			dependencies: ["75928E9A25B2EFFD"]
+			id: "494DAA43E781A919"
+			tasks: [{
+				id: "5AF38B447D804BAD"
+				type: "item"
+				item: "astraladditions:bulba_root"
+			}]
+		}
+		{
+			x: -39.5d
+			y: 12.5d
+			dependencies: ["494DAA43E781A919"]
+			id: "48C329E3DF3EACE3"
+			tasks: [{
+				id: "537A3708B9F9F566"
+				type: "item"
+				item: "minecraft:prismarine_crystals"
+				count: 8L
+			}]
+			rewards: [{
+				id: "593A18DA4D880B33"
+				type: "item"
+				item: "minecraft:sea_lantern"
+			}]
 		}
 	]
 	quest_links: [ ]
