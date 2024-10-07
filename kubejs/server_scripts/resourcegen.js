@@ -35,7 +35,7 @@ function LakyCompactingRecipes(event) {
         ],
         [
             "create:scorchia",
-            "minecraft:blackstone",
+            "minecraft:basalt",
             "ad_astra:moon_sand",
             { fluid: "tconstruct:blazing_blood", amount: 50 * mB },
             "minecraft:black_dye",
@@ -103,8 +103,8 @@ function LakyCrushingRecipes(event) {
         {
             input: "create:asurine",
             outputs: [
-                ["techreborn:raw_tin", 1],
-                ["techreborn:raw_tin", 0.2],
+                ["tconstruct:raw_cobalt", 1],
+                ["tconstruct:raw_cobalt", 0.2],
                 ["minecraft:lapis_lazuli", 0.5],
                 ["techreborn:lazurite_dust", 0.1],
                 ["minecraft:blue_dye", 0.25],
