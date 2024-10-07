@@ -71,8 +71,9 @@
 			"astralrails:nether/nether_enderslime_geode"
     ],
 		[
-			"minecraft:chorus_plant"
 		],
-		[	]
+		[	
+			"minecraft:chorus_plant"
+		]
   ]
 }
