@@ -1388,12 +1388,6 @@ function fillingRecipes(event) {
             amount: BUCKET,
         },
         {
-            input: "minecraft:compass",
-            output: "explorerscompass:explorerscompass",
-            fluid: "kubejs:shimmer",
-            amount: 4 * INGOT,
-        },
-        {
             input: "doodads:brick_road",
             output: "doodads:yellow_brick_road",
             fluid: "tconstruct:molten_gold",
@@ -1459,6 +1453,11 @@ function fillingRecipes(event) {
 function deployingRecipes(event) {
     [
         {
+            output: "explorerscompass:explorerscompass",
+            basin_input: "minecraft:compass",
+            deployer_input: "phonos:redstone_chip",
+        },
+        {
             output: "astraladditions:oh-no",
             basin_input: "astraladditions:moonblazed_orb",
             deployer_input: "astraladditions:orbital_navigation_ring",
@@ -1469,12 +1468,7 @@ function deployingRecipes(event) {
             deployer_input: "yttr:haemopal",
         },
     ].forEach((recipe) => {
-        event.recipes
-            .createSequencedAssembly([Item.of(recipe.output).withChance(1)], recipe.basin_input, [
-                event.recipes.createDeploying(recipe.basin_input, [recipe.basin_input, recipe.deployer_input]),
-            ])
-            .transitionalItem(recipe.basin_input)
-            .loops(1);
+        event.recipes.create.deploying([recipe.output], [recipe.basin_input, recipe.deployer_input]);
     });
 }
 

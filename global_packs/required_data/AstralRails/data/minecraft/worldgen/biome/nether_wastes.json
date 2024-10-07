@@ -85,10 +85,10 @@
         "maxCount": 4
       },
       {
-        "type": "minecraft:zoglin",
-        "weight": 15,
+        "type": "astraladditions:glazer",
+        "weight": 2,
         "minCount": 4,
-        "maxCount": 4
+        "maxCount": 10
       }
     ],
     "creature": [
