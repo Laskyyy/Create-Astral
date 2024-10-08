@@ -137,7 +137,7 @@
 			description: [
 				"Extremely brittle, but as fast as light, and with plenty of opportunity for upgrades. This material will have no competition by any other utility tool if utilised well..."
 				""
-				"Mix radiant residue with a chromatic compound to absorb the pure light into it. This produces Refined Radiance."
+				"Mix Radiant Residue with a Chromatic Compound to absorb the pure light into it. This produces Refined Radiance."
 			]
 			dependencies: ["65F77462CD1DFFDB"]
 			id: "1E93A90AEF614FA3"
@@ -173,11 +173,11 @@
 			shape: "square"
 			subtitle: "{chapter.8.quest.2.subtitle}"
 			description: [
-				"&6Refined Shimmer&r is a substance holding immense chromatic potential, but it is not quite there yet."
+				"&6Refined Shimmer&r is a substance holding immense chromatic potential, but it's not quite there yet."
 				""
-				"By superheating all 16 blaze burners under the shimmer refinery, and pumping shimmer + refining agents into its slots you will begin to process Refined Shimmer."
+				"By superheating all 16 Blaze Burners under the Shimmer Refinery, and pumping Shimmer + Refining Agents into its slots, you will begin to process Refined Shimmer."
 				""
-				"A blaze cake stockpile is recommended to obtain, as 16 blaze cakes is likely to fund ~30 Refined Shimmer if lit at once!"
+				"A Blaze Cake stockpile is recommended to obtain, as 16 Blaze Cakes is likely to fund ~30 Refined Shimmer if lit at once!"
 			]
 			dependencies: ["6E9849C1B2A2AA15"]
 			size: 1.5d
@@ -248,7 +248,7 @@
 			]
 		}
 		{
-			title: "Techreborn Tools+ Turbo"
+			title: "Tech Reborn Tools + Turbo"
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -319,9 +319,9 @@
 			y: 5.0d
 			subtitle: "{chapter.8.quest.19.subtitle}"
 			description: [
-				"Strengthening our steel by pouring the newly created &6Shadow Steel Fluid&r over it will create one of the strongest metals in the known galaxy."
+				"Strengthening our Steel by pouring the newly created &6Shadow Steel Fluid&r over it will create one of the strongest metals in the known galaxy."
 				""
-				"Utilise this power well, as a Tinker Tool shadow steel serves as an un-matched weapon for combat focused weaponry."
+				"Utilise this power well, as a Tinker Tool shadow Steel serves as an unmatched weapon for combat focused weaponry."
 				""
 			]
 			dependencies: ["6328B6E2C86D8834"]
@@ -509,8 +509,6 @@
 				"This is the source of it all. This indiscriminate destruction."
 				""
 				"What's a &cN&ka&r&ceth&ka&r&cer?"
-				""
-				"&c(Travel to ??? in Proxima Centauri)&r"
 			]
 			dependencies: [
 				"638DBED9ED0BD4CB"
@@ -728,9 +726,9 @@
 			y: -7.0d
 			subtitle: "Es Muy Calor"
 			description: [
-				"Unlike its bretheren, yttrium, calorite does not require as much special processing."
+				"Unlike its bretheren, Yttrium, Calorite does not require as much special processing."
 				""
-				"Simply melt down raw, or crushed ore into fluid using a hellfire heated foundry or smelter, and cast it into ingots."
+				"Simply melt down raw or crushed ore into fluid using a Hellfire-heated Foundry or Melter, and cast it into ingots."
 			]
 			dependencies: [
 				"7A4255522DA6FEB7"
@@ -750,9 +748,9 @@
 			description: [
 				"Calorite production can split in a few ways."
 				""
-				"For now, you are likely only going to want to produce cinnabar and calorite pins."
+				"For now, you are likely only going to want to produce Cinnabar and Calorite Pins."
 				""
-				"Yttrium however, will be automatable through calorite later on, so prepare a source of raw calorite for when this happens..."
+				"Yttrium however, will be automatable through Calorite later on, so prepare a source of Raw Calorite for when this happens..."
 			]
 			dependencies: ["7959BC3A659C88D5"]
 			id: "2291F6259C65D8F6"
@@ -860,7 +858,7 @@
 				""
 				"...and a decoration block. "
 				""
-				"Apply Refined Radiance to advanced casings to obtain."
+				"Apply Refined Radiance to Advanced Casings to obtain."
 			]
 			dependencies: ["1E93A90AEF614FA3"]
 			id: "704AEB416AA5A953"
@@ -874,7 +872,7 @@
 			x: 24.0d
 			y: 7.5d
 			subtitle: "An extremely durable casing."
-			description: ["Boasting toughness beyond known constraints, shadowsteel is obtained through applying shadow steel to advanced casings."]
+			description: ["Boasting toughness beyond known constraints, Shadowsteel is obtained through applying Shadow Steel to Advanced Casings."]
 			dependencies: ["69F63D2FA5384442"]
 			id: "0931E20B74EB2D8A"
 			tasks: [{
@@ -884,7 +882,7 @@
 			}]
 		}
 		{
-			title: "Crushing to crushed yttrium."
+			title: "Crushing to Crushed Yttrium."
 			x: 8.5d
 			y: -3.0d
 			subtitle: "The first round of crushing begins!"
@@ -901,7 +899,7 @@
 			x: 15.0d
 			y: -5.0d
 			description: [
-				"Once you have combined your choice of Ad Astra Ingot with molten yttrium, an ingot will form."
+				"Once you have combined your choice of Ad Astra ingot with Molten Yttrium, an ingot will form."
 				""
 				"It's not quick, it's not easy, but it's a powerful metal."
 			]
@@ -917,7 +915,7 @@
 			title: "Converting to powder."
 			x: 10.5d
 			y: -3.0d
-			subtitle: "Millstones or crushing wheels will get the job done!"
+			subtitle: "Millstones or Crushing Wheels will get the job done!"
 			dependencies: ["20FCAE136788543A"]
 			id: "27E46FB10D9F214B"
 			tasks: [{
@@ -936,7 +934,7 @@
 			}
 			x: 12.5d
 			y: -3.5d
-			subtitle: "Melting to yttrium fluid, and mixing with chromatic metals."
+			subtitle: "Melting to Yttrium fluid, and mixing with chromatic metals."
 			dependencies: ["27E46FB10D9F214B"]
 			id: "2E70D7A586F92E7A"
 			tasks: [
@@ -972,9 +970,9 @@
 			x: 27.5d
 			y: 1.5d
 			description: [
-				"Before hopping into a void spout and being obliterated, consider equipping a suit of diving gear, filling it up at a diving station and standing on a diving plate to initiate a deep dive."
+				"Before hopping into a Void Spout and being obliterated, consider equipping a suit of Diving gear, filling it up at a Diving Station and standing atop a Diving Plate to initiate a deep dive."
 				""
-				"Checkpoints between all void spouts in the overworld with diving plates will be created, which the diver can instantly fast travel between at little cost. Perfect for setting up huge cross-overworld transport networks."
+				"Checkpoints between all Void Spouts in the Overworld with Diving Plates will be created, which the diver can instantly fast travel between at little cost. Perfect for setting up huge cross-Overworld transport networks."
 				""
 			]
 			dependencies: ["637D5C1C0C789F9E"]
@@ -1011,7 +1009,7 @@
 			description: [
 				"The first (productive) thing to do with this rifle will be to split open a block of bedrock."
 				""
-				"When placing a bedrock smasher on a piece of bedrock above Y=-64 (Not touching the void), the device will penetrate straight through it's unbreakable core."
+				"When placing a bedrock smasher on a piece of bedrock above Y=-64 (Not touching the void), the device will penetrate straight through its unbreakable core."
 			]
 			dependencies: ["07A143B6DCF06587"]
 			id: "185518EF87BFDBCC"
@@ -1029,7 +1027,7 @@
 			description: [
 				"After that brutal display, against the specific piece of bedrock you chose in particular, you may mine the fruit of your labour."
 				""
-				"From the remnants will drop a bedrock shard. With this you may infuse yttrium with bedrock, creating a new variant of plate."
+				"From the remnants will drop a bedrock shard. With this you may infuse Yttrium with Bedrock, creating a new variant of plate."
 			]
 			dependencies: ["185518EF87BFDBCC"]
 			id: "0947CB03046F64B5"
@@ -1049,9 +1047,9 @@
 				"Complementary Schematic included to assist with building. "
 				"(Refunds cannot be processed at this time)"
 				""
-				"The &6Shimmer Refinery&r will be your &6only method of obtaining refined shimmer&r, a substance with some of the purest raw energy in the universe."
+				"The &6Shimmer Refinery&r will be your &6only method of obtaining Refined Shimmer&r, a substance with some of the purest raw energy in the universe."
 				""
-				"16 Blaze Burners must be superheated during processing to allow the shimmer filling the tanks to be heated enough to be purified,"
+				"16 Blaze Burners must be superheated during processing to allow the Shimmer filling the tanks to be heated enough to be purified."
 			]
 			dependencies: [
 				"62E2DB401A1BBC8D"
@@ -1196,14 +1194,14 @@
 			}]
 		}
 		{
-			title: "The ever durable Magtank."
+			title: "The ever-durable Magtank."
 			x: 19.5d
 			y: -3.75d
-			subtitle: "Tanks to withhold the temperature of the sun."
+			subtitle: "Tanks to withhold the temperature of the Sun."
 			description: [
-				"Whilst not serving a purpose of their own, these magtanks act as part of the structure for the &6Shimmer Refinery&r."
+				"Whilst not serving a purpose of their own, these Magtanks act as part of the structure for the &6Shimmer Refinery&r."
 				""
-				"Rather than pumping into them, pump shimmer directly into the refinery machine block instead!"
+				"Rather than pumping into them, pump Shimmer directly into the refinery machine block instead!"
 				""
 				"&6NOTICE:&r It is known that attempting to shift click an item into the UI will crash the users client. I have received exclusive commentary from the Pack Developer to \"Please don't do that\", and, \"We warned them in advance\"."
 			]
@@ -1254,7 +1252,7 @@
 			x: 13.485714285714302d
 			y: 0.7785714285714391d
 			description: [
-				"&6Molten Uranium&r does not possess properties in it's current form to be useful to us,"
+				"&6Molten Uranium&r does not possess properties in its current form to be useful to us."
 				""
 				"By casting it into a rod, we may soon use its energy potential within machines to maximise their potential..."
 			]
@@ -1281,9 +1279,9 @@
 			x: 11.0d
 			y: -0.5d
 			description: [
-				"&6Uranium Residue&r can be extracted from yttrium powder using an industrial centrifuge. "
+				"&6Uranium Residue&r can be extracted from Yttrium Powder using an Industrial Centrifuge. "
 				""
-				"It is unknown the exact chemical properties of Yttrium, but the presence of this material within it sparks a greater question of why we are so comfortable holding it in our hands."
+				"It is unknown the exact chemical properties of Yttrium, but the presence of this material within it sparks a greater question as to why we are so comfortable holding it in our hands."
 			]
 			dependencies: ["27E46FB10D9F214B"]
 			id: "5BCACF82FA7D1B80"
@@ -1297,7 +1295,7 @@
 			title: "Distillation Tower on Overdrive"
 			x: 12.708333333333329d
 			y: -0.6130952380952408d
-			description: ["The Distillation Tower Multiblock from Ch4 supports superheating as a condition of recipes. By lighting it up with 9 blaze cakes, the heat will be enough to process this uranium residue into a purer form."]
+			description: ["The Distillation Tower Multiblock from Chapter 4 supports superheating as a condition of recipes. By lighting it up with 9 Blaze Cakes, the heat will be enough to process this Uranium Residue into a purer form."]
 			dependencies: ["5BCACF82FA7D1B80"]
 			id: "77217A6E21B6D3B3"
 			tasks: [{
@@ -1311,7 +1309,7 @@
 			x: 19.5d
 			y: 5.0d
 			description: [
-				"A selection of gear, traditionally used more for it's ceremonial potential, rather than its combat capability."
+				"A selection of gear, traditionally used more for its ceremonial potential, rather than its combat capability."
 				""
 				"There will be no other player on the battleground as royal as those who wear gear made with light itself."
 			]
@@ -1381,7 +1379,7 @@
 			title: "A source of Mercury."
 			x: 12.089285714285708d
 			y: 0.7440476190476346d
-			description: ["By forming mercury from calorite, a solid source of this element can be procured, ready to process."]
+			description: ["By completing a chain of Calorite to Mercury, a solid source of this material can be procured, ready to process."]
 			hide_dependency_lines: true
 			dependencies: ["5BCACF82FA7D1B80"]
 			id: "06431C6B11CBD4D1"
@@ -1509,7 +1507,7 @@
 			description: [
 				"For 50% more effecient ammo usage, fill up Rifle Canisters at the Canister Filler."
 				""
-				"The Canister filler takes a single Empty Rifle Canister, one of the four ammo ingredients, and a bottle of Glow Damp"
+				"The Canister filler takes a single Empty Rifle Canister, one of the four ammo ingredients, and a bottle of Glowdamp"
 			]
 			dependencies: ["07A143B6DCF06587"]
 			id: "0A27F3A10DE2E425"
@@ -1635,10 +1633,10 @@
 			]
 		}
 		{
-			title: "&6The stone growth chamber returns.&r"
+			title: "&6The Stone Growth Chamber returns.&r"
 			x: 6.5d
 			y: -7.0d
-			subtitle: "Crush mercury cobblestone for calorite automation (and others)."
+			subtitle: "Crush Mercury Cobblestone for Calorite automation (and others)."
 			dependencies: ["7A4255522DA6FEB7"]
 			id: "5AE829C4B70FCF74"
 			tasks: [{
@@ -1654,7 +1652,7 @@
 			y: 0.0d
 			subtitle: "Calorite -> Yttrium"
 			description: [
-				"Pouring &6Void&r over a block of raw calorite (automated from mercury cobblestone) will form a block of yttrium."
+				"Pouring &6Void&r over a Raw Calorite Block (automated from Mercury Cobblestone) will form a block of Yttrium."
 				""
 				"From here, break it down into individual pieces and continue the processing chain as usual. Automatable Uranium and Yttrium!"
 			]
@@ -1677,9 +1675,9 @@
 				"&6Sea Lanterns&r"
 				"&6Shimmer&r"
 				""
-				"All under the molecule splitting power of a separation agent, crafted with the purest of void..."
+				"All under the molecule-splitting power of a Separation Agent, crafted with the purest of Void..."
 				""
-				"You may find that radiance fluid is particularly simple to automate once you have overcome the initial amount... by manufacturing your own artifical nether stars."
+				"You may find that Radiance fluid is particularly simple to automate once you have overcome the initial amount... by manufacturing your own artifical Nether Stars."
 			]
 			dependencies: [
 				"67337DF3DCEAC3DE"
@@ -1708,7 +1706,7 @@
 				"&bVoidtouched-Compound&r"
 				"&bEnder Pearls&r"
 				""
-				"All under the molecule splitting power of a separation agent, crafted with the purest of void..."
+				"All under the molecule splitting power of a Separation Agent, crafted with the purest of Void..."
 			]
 			dependencies: [
 				"1A3925C20FDC3876"
@@ -1737,7 +1735,7 @@
 				""
 				"Designed as an extension to the Moon Portal -> Mars Portal Chain, the Mercury portal must be created on Mars and is once again lit with an Astral Conduit."
 				""
-				"&6WARNING:&r It is advised you be careful, as the portal will always send you back from Mercury to Mars, meaning if you built the portal in the overworld you may not have a way back anymore! Make sure to always chain Moon portals -> Mars portals -> Mercury portals."
+				"&6WARNING:&r It is advised you be careful, as the portal will always send you back from Mercury to Mars, meaning if you built the portal in the Overworld you may not have a way back anymore! Make sure to always chain Moon portals -> Mars portals -> Mercury portals."
 			]
 			hide_dependency_lines: true
 			dependencies: [
@@ -1754,7 +1752,7 @@
 			}]
 		}
 		{
-			title: "First step to mercury."
+			title: "First step to Mercury."
 			x: 8.0d
 			y: -7.0d
 			description: [
