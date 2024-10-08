@@ -312,16 +312,16 @@
 				"&6Sturdy Sheets&r are used in production of various Train-related things."
 				""
 				"Trains are really useful for:"
-				"- transporting yourself - trains can reach speed of up to &621 m/s&r when not powered by fuel and driven manually."
-				"With fuel, trains can drive up to &630 m/s&r when driven manually."
-				"- transporting mobs from distant areas,"
-				"- transporting items from distant areas."
+				"- Transporting yourself - Trains can reach speed of up to &621 m/s&r when not powered by fuel and driven manually."
+				"With fuel, Trains can drive up to &630 m/s&r when driven manually."
+				"- Transporting mobs from distant areas"
+				"- Transporting items from distant areas"
 				""
 				"Trains can be also driven automatically with a Train Schedule - Trains drive 33% faster when doing so and can also drive through unloaded chunks."
 				""
 				"This can be used for:"
-				"- item/fluid transportation,"
-				"- replacement for Mechanical Pistons for crop/tree farms."
+				"- Item/Fluid transportation"
+				"- Replacement for Mechanical Pistons for crop/tree farms"
 				""
 				"Usually Trains come later in the progression, but we are generous."
 			]
@@ -465,7 +465,7 @@
 			description: [
 				"Tired of cranking that Hand Crank?"
 				""
-				"&6Water Wheels&r will generate stress, if water flows on at least one side of it."
+				"&6Water Wheels&r will generate stress, if Water flows on at least one side of it."
 				""
 				"Covering more sides with flowing Water &6won't&r increase its speed nor stress output."
 			]
@@ -611,13 +611,13 @@
 				""
 				"Computers can attach peripherals and network using Modems."
 				""
-				"Wired Modems can connect to chests, tanks and batteries and network Computers, while Wireless Modems can only network different Computers."
+				"Wired Modems can connect to Chests, Tanks and Batteries and network Computers, while Wireless Modems can only network different Computers."
 				""
 				"Examples of things possible with Computers:"
-				"- Automatic item transporter/sorter,"
-				"- GPS system,"
-				"- Games,"
-				"- Music players,"
+				"- Automatic item transporter/sorter"
+				"- GPS system"
+				"- Games"
+				"- Music players"
 				"- Base monitors/control panels..."
 				""
 				"The possibilities are endless."
@@ -652,11 +652,11 @@
 				"Give the Turtle some fuel by putting some Coal into the currently selected slot and then execute turtle.refuel()."
 				""
 				"Turtles can also have peripherals applied to them that allow them to perform certain tasks, like:"
-				"- networking with other computers/turtles,"
-				"- automatic crafting,"
-				"- generating sound,"
-				"- fighting mobs,"
-				"- mining,"
+				"- Networking with other computers/turtles"
+				"- Automatic crafting"
+				"- Generating sound"
+				"- Fighting mobs"
+				"- Mining"
 				"and so on..."
 			]
 			dependencies: ["247AF9BF2D5EBF78"]
@@ -897,7 +897,7 @@
 			}]
 		}
 		{
-			title: "It's grout all over..."
+			title: "It's Grout all over..."
 			x: -2.0d
 			y: -4.0d
 			shape: "gear"
@@ -981,8 +981,8 @@
 			x: -4.5d
 			y: 4.5d
 			shape: "diamond"
-			subtitle: "Milling Gravel and Sandstone will break down into sand."
-			description: ["Find ways to turn this into clay! "]
+			subtitle: "Milling Gravel and Sandstone will break down into Sand."
+			description: ["Find ways to turn this into Clay! "]
 			dependencies: ["1DEF161DE26F3587"]
 			optional: true
 			id: "3DBD012732199053"
@@ -1046,8 +1046,7 @@
 			subtitle: "{chapter.2.quest.32.subtitle}"
 			description: [
 				"You can use Diamonds to:"
-				"- Upgrade your Hephaestus gear - just put the tool and a Diamond in a Tinker Station."
-				"The tool can now mine like a Diamond tool, and also will mine faster and will have more durability."
+				"- Upgrade your Hephaestus gear - just put the tool and a Diamond in a Tinker Station. The tool can now mine like a Diamond tool, and also will mine faster and will have more durability."
 				""
 				"- Create an Enchanting Table to upgrade your vanilla-style gear."
 			]
@@ -1090,7 +1089,7 @@
 			description: [
 				"&6Mechanical Saws&r can cut whole trees in one swoop!"
 				""
-				"If the Mechanical Saw destroys all the bottommost logs of the tree, it will destroy all logs and leaves of the tree above!"
+				"If the Mechanical Saw destroys all the bottommost Logs of the tree, it will destroy all Logs and Leaves of the tree above!"
 			]
 			dependencies: ["4EB4838CCED125E2"]
 			id: "0E7A9F741823BB1C"
@@ -1360,8 +1359,8 @@
 				"The &6Wrench&r allows you to rotate and configure Create blocks."
 				""
 				"It can also:"
-				"- instantly dismantle Create and Redstone-related blocks - the dismantled blocks go directly to your inventory,"
-				"- configure some blocks (like Linear Chassis)."
+				"- Instantly dismantle Create and Redstone-related blocks - the dismantled blocks go directly into your inventory"
+				"- Configure some blocks (like the Linear Chassis)"
 			]
 			dependencies: ["6499CD689863283D"]
 			size: 1.25d
@@ -1400,7 +1399,7 @@
 				""
 				"Due to the scope of Create, this questbook can not cover the full extent of Create knowledge."
 				""
-				"Thankfully, Create offers a &6Ponder&r feature - hover over any Create block - whether in your inventory or in the REI screen - and hold W for a detailed explanation of how its mechanics function."
+				"Thankfully, Create offers a &6Ponder&r feature - hover over any Create block - whether in your inventory or in the REI screen - and hold [W] for a detailed explanation of how its mechanics function."
 				""
 				"If this still isn't enough, feel free to look up videos - resourcefulness is a trait to be proud of!"
 				""
@@ -1482,7 +1481,7 @@
 			y: 12.5d
 			subtitle: "{chapter.2.quest.47.subtitle}"
 			description: [
-				"Flowing lava touching water over bedrock will produce mixed varieties of stone types. You may be familiar with this setup from other modpacks!"
+				"Flowing Lava touching Water over Bedrock will produce mixed varieties of stone types. You may be familiar with this setup from other modpacks!"
 				""
 				"&6Stone&r is primarily produced, with chances of obtaining &6Andesite, Granite and Diorite&r."
 				""
@@ -1535,7 +1534,7 @@
 			}]
 		}
 		{
-			title: "Free Trainsignals for everyone!"
+			title: "Free Train Signals for everyone!"
 			icon: "create:track_signal"
 			x: -11.5d
 			y: -0.5d
@@ -1602,7 +1601,7 @@
 			description: [
 				"You can press &6Coral varieties&r into Prismarine."
 				""
-				"Useful is automating veridium (for copper) later on, it would be wise to consider learning the recipe chains in REI!"
+				"Useful is automating Veridium (for Copper) later on, it would be wise to consider learning the recipe chains in REI!"
 			]
 			dependencies: ["6499CD689863283D"]
 			id: "0FDA89BAC13B5687"
@@ -1627,7 +1626,7 @@
 				"[Unbreaking III] Oh, dang it!"
 				"[Curse of Annihilation] Oh, dang it!"
 				""
-				"&6Enchanting Tables&r allow you to randomly enhance your tools and armor using experience and Lapis Lazuli."
+				"&6Enchanting Tables&r allow you to randomly enhance your tools and armor using Experience and Lapis Lazuli."
 				""
 				"Make sure to prepare a Grindstone (for scrapping terrible enchantments) and an Anvil (for combining enchanted items) too."
 			]
@@ -1683,7 +1682,7 @@
 			shape: "hexagon"
 			subtitle: "Discover a lost receiver to show this questline."
 			description: [
-				"These can be discovered through specific structures in the overworld..."
+				"These can be discovered through specific structures in the Overworld..."
 				""
 				"Keep an eye out for any &eruined satellite dishes,&r they just might hold something important."
 			]

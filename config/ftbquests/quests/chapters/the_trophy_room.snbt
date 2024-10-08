@@ -442,7 +442,7 @@
 			title: "Continue Forever"
 			x: 0.5d
 			y: 4.5d
-			description: ["As its flesh was torn apart, the moon bled pink - The essence of everything."]
+			description: ["As its flesh was torn apart, the Moon bled pink - The essence of everything."]
 			dependencies: ["0938969824F4D4CB"]
 			id: "0A141ADE11568F1E"
 			tasks: [{

@@ -155,7 +155,7 @@
 			description: [
 				"Utilising your awakened beacons against &bthe clear sky,&r your telescope can get something from it."
 				""
-				"&7Break the shroud."
+				"&Break the shroud."
 			]
 			dependencies: [
 				"22D73D57C82D4297"
@@ -183,7 +183,7 @@
 		{
 			x: 7.5d
 			y: 0.5d
-			subtitle: "Put it through a &3converter"
+			subtitle: "Put it through a &3converter."
 			description: [
 				"Two possibilities exist: either we are alone in this universe, or we are not."
 				""
@@ -243,7 +243,7 @@
 		{
 			x: 8.0d
 			y: 1.5d
-			subtitle: "Put it through a &3filter"
+			subtitle: "Put it through a &3filter."
 			description: [
 				"So much Universe."
 				""
@@ -277,7 +277,7 @@
 		{
 			x: 8.5d
 			y: 2.5d
-			subtitle: "Put it through a &3denoiser"
+			subtitle: "Put it through a &3denoiser."
 			description: [
 				"The Universe is under no obligation to make sense to you."
 				""
@@ -322,7 +322,7 @@
 		{
 			x: 9.0d
 			y: 0.5d
-			subtitle: "Put a &4Garbled Data Drive&r in an Analog Decryptor"
+			subtitle: "Put a &4Garbled Data Drive&r in an Analog Decryptor."
 			dependencies: ["6821F86937D5E499"]
 			id: "04F638504B6D607C"
 			tasks: [{
@@ -334,7 +334,7 @@
 		{
 			x: 9.5d
 			y: 1.5d
-			subtitle: "Put an &6Analagously Decrypted Data Drive&r in a Parallel Processing Decryptor"
+			subtitle: "Put an &6Analagously Decrypted Data Drive&r in a Parallel Processing Decryptor."
 			description: ["A Parallel Processing decryptor also requires &c50 E/t&r to function."]
 			dependencies: [
 				"04F638504B6D607C"
@@ -351,7 +351,7 @@
 		{
 			x: 10.0d
 			y: 2.5d
-			subtitle: "Put a &2Parallel Decypted Data Drive&r in a Microphysical Decryptor"
+			subtitle: "Put a &2Parallel Decypted Data Drive&r in a Microphysical Decryptor."
 			description: ["A Microphysical Decryptor also requires &c250 E/t&r and a &cSubatomic Ingot&r to function."]
 			dependencies: [
 				"3B9A0AB1F6BE839D"
@@ -433,7 +433,7 @@
 		{
 			x: 1.5d
 			y: -0.5d
-			subtitle: "A telescope requires something to tell it &3where to look"
+			subtitle: "A telescope requires something to tell it &3where to look."
 			description: [
 				"This is where &2you&r step in."
 				""
@@ -451,7 +451,7 @@
 		{
 			x: 3.5d
 			y: 0.5d
-			subtitle: "Finish &athe scan"
+			subtitle: "Finish &athe scan."
 			description: ["&7Search the skies."]
 			dependencies: ["38C4272C58E5D202"]
 			id: "4BE6535AC9215A17"
@@ -523,7 +523,7 @@
 			title: "Any Analogously Decrypted Drive"
 			x: 10.5d
 			y: 0.5d
-			subtitle: "Awaken it"
+			subtitle: "Awaken it."
 			dependencies: ["04F638504B6D607C"]
 			id: "715E926DF4DED51A"
 			tasks: [{
@@ -543,7 +543,7 @@
 			title: "Any Parallel Decrypted Drive"
 			x: 11.0d
 			y: 1.5d
-			subtitle: "Disturb it"
+			subtitle: "Disturb it."
 			dependencies: ["3B9A0AB1F6BE839D"]
 			id: "0DB6A844CCA38CD5"
 			tasks: [{
@@ -568,7 +568,7 @@
 			title: "Any Microphysically Decrypted Drive"
 			x: 11.5d
 			y: 2.5d
-			subtitle: "Gamble it all away"
+			subtitle: "Gamble it all away."
 			dependencies: ["3392473AE31BBF22"]
 			hide: true
 			id: "6233CD80C11EFA15"
@@ -662,7 +662,7 @@
 		{
 			x: 5.5d
 			y: -2.5d
-			subtitle: "Reset your &cunwanted drives"
+			subtitle: "Reset your &cunwanted drives."
 			description: ["&7Purge and persevere."]
 			dependencies: ["22D73D57C82D4297"]
 			id: "42ED20F23C62FEF3"
@@ -832,7 +832,7 @@
 			}]
 		}
 		{
-			title: "Gambling pays off, trust me"
+			title: "Gambling pays off, trust me."
 			icon: {
 				id: "phonos:custom_music_disc"
 				Count: 1b
@@ -847,7 +847,7 @@
 			y: 3.5d
 			subtitle: "Gotta catch 'em all!"
 			description: [
-				"Yes, this is the end of the questline"
+				"Yes, this is the end of the questline."
 				""
 				"Yes, the entire point was to make music discs."
 				""

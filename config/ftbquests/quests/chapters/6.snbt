@@ -102,7 +102,7 @@
 			description: [
 				"Introducing: The Desizer - a multiblock machine with a specialisation in shrinking."
 				""
-				"The Desizer is made up of 1x Desizer Controller and 8x Desizer Casings. If you wish, you can decorate the desizer by putting the Casing blocks in a Stone Cutter."
+				"The Desizer is made up of 1x Desizer Controller and 8x Desizer Casings. If you wish, you can decorate the Desizer by putting the Casing blocks in a Stone Cutter."
 				""
 				"Hold 'W' on the Desizer to view a simple tutorial on what it looks like and how it works. "
 			]
@@ -148,9 +148,9 @@
 			description: [
 				"Poke a hole through reality."
 				""
-				"Right Click any block to create a temporary tunnel to walk through. Be quick, as the tunnel will not wait for you to leave before closing in on itself."
+				"Right-Click any block to create a temporary tunnel to walk through. Be quick, as the tunnel will not wait for you to leave before closing in on itself."
 				""
-				"The Void Effector uses Void as fuel, top it up by Right Clicking a Void fluid source block."
+				"The Void Effector uses Void as fuel, top it up by Right-Clicking a Void fluid source block."
 			]
 			dependencies: ["3BC1C47CA86C200F"]
 			id: "710B656C18F55A2A"
@@ -387,7 +387,7 @@
 		{
 			x: 4.5d
 			y: -8.5d
-			subtitle: "But Where's the Dragon Egg?"
+			subtitle: "But where's the Dragon Egg?"
 			dependencies: ["47A50CF905A68E98"]
 			id: "06B974CE21252348"
 			tasks: [{
@@ -408,7 +408,7 @@
 			description: [
 				"Our final Centrifuge."
 				""
-				"Uncover what items really are. This machine will split items down into it's finest parts, turning an item into a maximum of four outputs."
+				"Uncover what items really are. This machine will split items down into its finest parts, turning an item into a maximum of four outputs."
 				""
 				"The Yttric Centrifuge requires a burnable fuel in the lower left slot as an input. This can be automatically input via an input into the side using a Funnel or Hopper. Items can be output through the bottom face of the block."
 			]
@@ -429,8 +429,8 @@
 			x: 6.0d
 			y: -7.5d
 			description: [
-				"Lets break down some coal."
-				"Put 16 coal into the middle of the centrifuge, and a burnable fuel item in the fuel slot."
+				"Lets break down some Coal."
+				"Put 16 Coal into the middle of the Centrifuge, and a burnable fuel item in the fuel slot."
 				"When the Centrifuge detects a valid item, it will start tumbling the item until it is broken down into its factors."
 			]
 			dependencies: ["05F3CDD240A00C45"]
@@ -518,7 +518,7 @@
 			x: 7.0d
 			y: -6.5d
 			subtitle: "Don't let a Piglin see this"
-			description: ["The highly conductive Gold now purified to it's finest form."]
+			description: ["The highly-conductive Gold now purified to its finest form."]
 			dependencies: [
 				"05F3CDD240A00C45"
 				"79737BD306B433EC"
@@ -575,7 +575,7 @@
 			x: 0.5d
 			y: -9.5d
 			subtitle: "Ultra Compression"
-			description: ["Carbon, a part of all life. Using the Desizer, compress it into a highly dense form."]
+			description: ["Carbon, a part of all life. Using the Desizer, compress it into a highly-dense form."]
 			dependencies: ["47A50CF905A68E98"]
 			id: "171116CC8CD6606A"
 			tasks: [{
@@ -621,7 +621,7 @@
 			y: -5.5d
 			subtitle: "Upgrade!"
 			description: [
-				"A direct upgrade to the Void Cleaver. Shift + Right Click a block to cut it into a new shape."
+				"A direct upgrade to the Void Cleaver. Shift + Right-Click a block to cut it into a new shape."
 				""
 				"This iteration of the Void Cleaver also acts as an &6omnitool&r, mining as any tool type and applying &rstacks of Bleed&r when used as a weapon."
 			]
@@ -658,7 +658,7 @@
 			description: [
 				"A metal present in significant quantities in Monazite. "
 				""
-				"Cannot be found naturally in its metallic form, but can be extracted from crushed Monazite."
+				"Cannot be found naturally in its metallic form, but can be extracted from Crushed Monazite."
 			]
 			dependencies: ["07F69FBBB91767CC"]
 			id: "7536EE4DB00E8100"
@@ -705,7 +705,7 @@
 			subtitle: "Monazite"
 			description: [
 				"Monazite Crystals can be found in the Warped Forest biome."
-				"Due it's tough composition, you will have to use a pair of Crushing Wheels to break it down into its elements: Yttrium and Neodymium."
+				"Due its tough composition, you will have to use a pair of Crushing Wheels to break it down into its elements: Yttrium and Neodymium."
 			]
 			hide_dependency_lines: true
 			dependencies: ["111B851BE26C9C43"]
@@ -760,7 +760,7 @@
 			x: 3.5d
 			y: -11.5d
 			description: [
-				"An Ender Watcher will make for the perfect sacrifice. It's cry will echo throughout the sky. "
+				"An Ender Watcher will make for the perfect sacrifice. Its cry will echo throughout the sky. "
 				""
 				"Using a &bSnare&r, capture an Ender Watcher and quickly put it into the Sturdy Cage. Remember that Snares can not contain mobs forever. Lower the HP of the Ender Watcher to keep it contained in the Snare for longer."
 				""
@@ -803,13 +803,13 @@
 			title: "Fuel for the Fire"
 			x: -0.5d
 			y: -8.5d
-			subtitle: "Compacting biomass"
+			subtitle: "Compacting Biomass"
 			description: [
-				"Coal generation using the desizer!"
+				"Coal generation using the Desizer!"
 				""
-				"With a 3x3x3 cube of any of these biomass materials, we can use the Desizer to create Charcoal and Coal blocks."
+				"With a 3x3x3 cube of any of these Biomass materials, we can use the Desizer to create Charcoal and Coal blocks."
 				""
-				"Charcoal Blocks can be turned back into Coal Blocks using the Chromatic Vacuum with just a Right Click."
+				"Charcoal Blocks can be turned back into Coal Blocks using the Chromatic Vacuum with just a Right-Click."
 			]
 			dependencies: ["47A50CF905A68E98"]
 			id: "7ECDE911177BB9A9"
@@ -890,9 +890,9 @@
 				""
 				"I cannot begin to express my thanks to everyone in the Astral community, and &6YOU&r for getting far enough to finish the entire pack."
 				""
-				"&c\"Fixed in 2.1\" &rbecame a bit of a meme, in the community, as this update was so long in the making due to varieties of reasons. I hope that you got to enjoy playing a more 'finished' version of astral."
+				"&c\"Fixed in 2.1\" &rbecame a bit of a meme, in the community, as this update was so long in the making due to varieties of reasons. I hope that you got to enjoy playing a more 'finished' version of Astral."
 				""
-				"&bFrom me to you,&r as the original mind behind Astral, it warms my heart that the little modpack pet project in 2022 became a fully fledged pack with it's incredible set of community members."
+				"&bFrom me to you,&r as the original mind behind Astral, it warms my heart that the little modpack pet project in 2022 became a fully fledged pack with its incredible set of community members."
 				""
 				"&o&dThank you.&r"
 				""
@@ -933,7 +933,7 @@
 				""
 				"Punches deal more damage the faster they are travelling when they hit a mob. Their initial velocity is also effected by your own velocity, travelling further when you are sprinting forwards. There is no cap to the amount of possible damage."
 				""
-				"Melee attacks will launch mobs into the air. Shift Right Click to uppercut."
+				"Melee attacks will launch mobs into the air. Shift + Right-Click to uppercut."
 			]
 			dependencies: ["0938969824F4D4CB"]
 			id: "43C9FDBABD7FB776"
@@ -1148,7 +1148,7 @@
 			x: 0.5d
 			y: -15.5d
 			subtitle: "The rainbow road"
-			description: ["The projector will place a rainbow platform below you. Continuing to hold Right Click will create a long platform to wherever you desire. "]
+			description: ["The Projector will place a rainbow platform below you. Continuing to hold Right-Click will create a long platform to wherever you desire. "]
 			dependencies: ["0938969824F4D4CB"]
 			id: "47FF7B656DBE52E3"
 			tasks: [{
@@ -1277,7 +1277,7 @@
 			description: [
 				"At the top of the dimension, islands of fire and ash float high."
 				""
-				"You will find Shrines of Scorched Obsidian. Bring a &6Root of Continuity&r to the shrine, and Right Click on the highest block in the center pillar. You may want to stand back."
+				"You will find Shrines of Scorched Obsidian. Bring a &6Root of Continuity&r to the shrine, and Right-Click on the highest block in the center pillar. You may want to stand back."
 			]
 			dependencies: ["0AE79E624EA78861"]
 			id: "46620FE1375C7674"
@@ -1297,7 +1297,7 @@
 			description: [
 				"When you activate the Holster at the top of the middle pillar, it will glow red."
 				""
-				"Right Click the Holster block with a &6Netherite Knife&r to scrape a Haemopal from it."
+				"Right-Click the Holster block with a &6Netherite Knife&r to scrape a Haemopal from it."
 				""
 				"The Haemopal can be processed into crafting materials to help you summon another &5Great Beast&r."
 			]
