@@ -669,7 +669,7 @@ element {
 
 element {
   interactable = true
-  source = |||%n%Alpvia, Ari, DRCheese1, Dzsonzi, GayGirl_Violet, HanetRee, Lúthien, MrRumblz89, Neijr, NikWas, Proga, Quint0ne, Red9433, RaKonski, Shortman, SkullBoy987, Teddo, The Local Raccoon, ThEmeralDuke, TheRobbie72, WhoPlaysTheFool, YourAverageNoob%n%|||
+  source = |||%n%Alpvia, Ari, DRCheese1, Dzsonzi, GayGirl_Violet, HanetRee, HelixGlitch, Icewater, Littlemojo, Lúthien, Masoki, MrRumblz89, Neijr, NikWas, Proga, Quint0ne, Red9433, RaKonski, Shortman, SkullBoy987, Teddo, The Local Raccoon, ThEmeralDuke, TheRobbie72, Vendetros, Villhume, WhoPlaysTheFool, YourAverageNoob%n%|||
   source_mode = direct
   shadow = true
   scale = 0.8
@@ -704,7 +704,7 @@ element {
   x = -233
   y = -144
   width = 50
-  height = 60
+  height = 80
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
