@@ -34,60 +34,60 @@ function farmersDelightCuttingChanges(event) {
     // Tech Reborn Rubber Log
     event.custom({
         type: "farmersdelight:cutting",
-        ingredients: [{  item: "techreborn:rubber_log"  }],
+        ingredients: [{ item: "techreborn:rubber_log" }],
         tool: {
             type: "farmersdelight:tool",
             tag: "c:tools/axes",
         },
-        result: [{  item: "techreborn:rubber_log_stripped"  }, {  item: "farmersdelight:tree_bark"  }],
+        result: [{ item: "techreborn:rubber_log_stripped" }, { item: "farmersdelight:tree_bark" }],
         sound: "minecraft:item.axe.strip",
     });
 
     // Ad Astra Glacian Log
     event.custom({
         type: "farmersdelight:cutting",
-        ingredients: [{  item: "ad_astra:glacian_log"  }],
+        ingredients: [{ item: "ad_astra:glacian_log" }],
         tool: {
             type: "farmersdelight:tool",
             tag: "c:tools/axes",
         },
-        result: [{  item: "ad_astra:stripped_glacian_log"  }, {  item: "farmersdelight:tree_bark"  }],
+        result: [{ item: "ad_astra:stripped_glacian_log" }, { item: "farmersdelight:tree_bark" }],
         sound: "minecraft:item.axe.strip",
     });
 
     // Tinkers' Construct Bloodshroom Log
     event.custom({
         type: "farmersdelight:cutting",
-        ingredients: [{  item: "tconstruct:bloodshroom_log"  }],
+        ingredients: [{ item: "tconstruct:bloodshroom_log" }],
         tool: {
             type: "farmersdelight:tool",
             tag: "c:tools/axes",
         },
-        result: [{  item: "tconstruct:stripped_bloodshroom_log"  }, {  item: "farmersdelight:tree_bark"  }],
+        result: [{ item: "tconstruct:stripped_bloodshroom_log" }, { item: "farmersdelight:tree_bark" }],
         sound: "minecraft:item.axe.strip",
     });
 
     // Tinkers' Construct Greenheart Log
     event.custom({
         type: "farmersdelight:cutting",
-        ingredients: [{  item: "tconstruct:greenheart_log"  }],
+        ingredients: [{ item: "tconstruct:greenheart_log" }],
         tool: {
             type: "farmersdelight:tool",
             tag: "c:tools/axes",
         },
-        result: [{  item: "tconstruct:stripped_greenheart_log"  }, {  item: "farmersdelight:tree_bark"  }],
+        result: [{ item: "tconstruct:stripped_greenheart_log" }, { item: "farmersdelight:tree_bark" }],
         sound: "minecraft:item.axe.strip",
     });
 
     // Tinkers' Construct Skyroot Log
     event.custom({
         type: "farmersdelight:cutting",
-        ingredients: [{  item: "tconstruct:skyroot_log"  }],
+        ingredients: [{ item: "tconstruct:skyroot_log" }],
         tool: {
             type: "farmersdelight:tool",
             tag: "c:tools/axes",
         },
-        result: [{  item: "tconstruct:stripped_skyroot_log"  }, {  item: "farmersdelight:tree_bark"  }],
+        result: [{ item: "tconstruct:stripped_skyroot_log" }, { item: "farmersdelight:tree_bark" }],
         sound: "minecraft:item.axe.strip",
     });
 
@@ -133,7 +133,7 @@ function sequencedAssemblyCooking(event) {
         .createSequencedAssembly(
             [
                 // output
-                Item.of("astralfoods:shimmered_rabbit_stew").withChance(1) // begin
+                Item.of("astralfoods:shimmered_rabbit_stew").withChance(1), // begin
             ],
             "minecraft:bowl",
             [
@@ -144,7 +144,7 @@ function sequencedAssemblyCooking(event) {
                 event.recipes.createFilling("minecraft:bowl", [
                     "minecraft:bowl",
                     { fluid: "kubejs:shimmer", amount: BUCKET },
-                ])
+                ]),
             ]
         )
         .transitionalItem("minecraft:bowl")
@@ -562,7 +562,6 @@ onEvent("recipes", (event) => {
     farmersdelight(event);
     sequencedAssemblyCooking(event);
     astralAdditionsFood(event);
-    
 
     /////// TECH REBORN ACTUAL RECIPES //////
 
@@ -628,17 +627,6 @@ onEvent("recipes", (event) => {
         C: "yttr:project_table",
         D: "create:smart_fluid_pipe",
         E: "create:electron_tube",
-    });
-
-    event.shaped("yttr:centrifuge", ["ABBBBA", "BCDDCB", "BD  EB", "BD  EB", "BCEECB", "ABBBBA"], {
-        A: "yttr:yttrium_block",
-        B: "yttr:yttrium_plating",
-        C: "createastral:promethium_atomic_battery",
-        D: "create:shadow_steel_casing",
-        E: "create:refined_radiance_casing",
-        F: "yttr:neodymium_block",
-        G: "techreborn:industrial_centrifuge",
-        H: "createastral:separation_agent",
     });
 
     ///COMPUTERCRAFT FIXES
