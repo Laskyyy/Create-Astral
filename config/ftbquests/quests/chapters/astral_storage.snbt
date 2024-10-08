@@ -420,8 +420,10 @@
 			y: -8.5d
 			subtitle: "This thing can store up to 10 cells simultaneously"
 			description: [
-				"ME drives store your storage cells, each cell has a specific amount of bytes, and can hold 63 item types. For items that you have a lot off, it is generally recommended to allocate the larger cells to them."
+				"ME drives store your storage cells, each cell has a specific amount of bytes, and can hold 63 item types. For items that you have a lot of, it is generally recommended to allocate the larger cells to them."
+				""
 				"ME drives also form a multiblock, allowing you to only hook up 1 cable to it, and they all get added to the ME system. They do consume one channel each though!"
+				""
 				"(channel info is on the left track)"
 			]
 			dependencies: ["0C8063DF02E52A47"]
@@ -497,7 +499,7 @@
 			y: -10.0d
 			subtitle: "Time for some useful stuff"
 			description: [
-				"Do you remember the blaze spawner you needed for Blaze Rods or to fill empty Blaze Burners? This thing got you covered."
+				"Do you remember the blaze spawner you needed for Blaze Rods or to fill empty Blaze Burners? This thing has got you covered."
 				""
 				"First, craft yourself the items listed in the quest, PLUS the desired size of spatial cell, each having their block capacity in the tooltip. The smallest one for example can carry a space of 2x2x2 blocks."
 				""
@@ -657,11 +659,11 @@
 			x: -3.5d
 			y: -8.5d
 			description: [
-				"The last bit, thats is very handy!"
+				"The last bit, that's very handy!"
 				""
 				"The level emitters are your stockpile switches, they emit or stop emitting a redstone signal once the configured item reaches a certain threshold, which can of course be chosen."
 				""
-				"The redstone card enabled redstone control, allowing you to turn off the export bus once you got less than 4 stacks of iron!"
+				"The redstone card enables redstone control, allowing you to turn off the export bus once you have less than 4 stacks of iron!"
 			]
 			dependencies: ["4CCF69F7FB7BBDF4"]
 			min_required_tasks: 1

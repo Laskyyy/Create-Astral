@@ -657,8 +657,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						File: "[AstralExamples] Distillery.nbt"
 						Rotation: "NONE"
+						File: "[AstralExamples] Distillery.nbt"
 						Mirror: "NONE"
 						Bounds: [
 							5
@@ -1062,11 +1062,15 @@
 			}]
 		}
 		{
-			title: "{chapter.7.quest.65.title}"
+			title: "Let's press this sheet!"
 			x: 2.5d
 			y: -1.0d
-			subtitle: "{chapter.7.quest.65.subtitle}"
-			description: ["{chapter.7.quest.65.description.1}"]
+			subtitle: "Ok you may use the Press for this one :)"
+			description: [
+				"&6Desh&r is tough, and requires a Compressor to turn into sheets. However, Lead is highly malleable, so kinetic energy and a big block of iron will be plenty to form sheets of it."
+				""
+				"Simply through it into whatever highly sophisticated Mechanical Press setup you have!"
+			]
 			dependencies: ["08FBFF7A3465BF56"]
 			id: "2993E04DCB7B4EC4"
 			tasks: [{
@@ -1170,7 +1174,7 @@
 			description: [
 				"We've gated this rather far into the pack to limit methods of 'free flight', but now is the time. These rocket engine powered wings can provide you will endless flight (with the accompanying firework rockets) as long as you aren't in space."
 				""
-				"(Where you will promptly either combust into flames or suffocate)"
+				"(Where you will promptly either melt spontaneously or suffocate)"
 			]
 			dependencies: ["63A96438AB2F9506"]
 			id: "482A444BAFDFC947"
@@ -1412,7 +1416,7 @@
 				""
 				"Using the compementary schematic obtained as a reward from the previous quest, you can place an outline of a structure to use as a baseline when building it."
 				""
-				"A fluid, an item, energy and &6heat from blaze burners&r will allow the multiblock to operate."
+				"A fluid (oil), an item (refining agent), energy and &6heat from blaze burners&r will allow the multiblock to operate."
 			]
 			dependencies: [
 				"4167177A752546A3"
@@ -1483,6 +1487,7 @@
 				"From now on, many melting recipes are going to require a melting point &6too high for lava&r to reach. Hellfire on the other hand will cut through and melt these materials like butter with it's &b3000 Degrees Celsius&r burning temperature. "
 			]
 			dependencies: ["0BA5C147C098C5A8"]
+			min_required_tasks: 2
 			id: "07C60C1DB44579B9"
 			tasks: [
 				{
@@ -1664,9 +1669,15 @@
 			}]
 		}
 		{
+			title: "Nitrogeneration!"
 			x: 21.0d
 			y: 2.0d
-			description: ["An easy way to form nitrogen will be the compression of permafrost + heat."]
+			subtitle: "You may automate Nitrogen"
+			description: [
+				"Permafrost, which can be created by compressing Glacio Stone, will melt into a small amount of Nitrogen when Headed with a Foundry Basin Lid."
+				""
+				"If you've not used the Foundry Basin Lid before, it has a handy Ponder that will guide you on using it. It's simple! Just make sure to use a Blaze Burner and pump the output liquid using a Mechanical Pump."
+			]
 			dependencies: ["39670DF746429956"]
 			dependency_requirement: "all_started"
 			min_required_tasks: 1
@@ -1675,20 +1686,25 @@
 				{
 					id: "1540B9A6D179C030"
 					type: "item"
-					item: {
-						id: "techreborn:cell"
-						Count: 1b
-						tag: {
-							fluid: "techreborn:nitrogen"
-						}
-					}
+					item: "techreborn:nitrogen_bucket"
 				}
 				{
 					id: "6745E96601ED9D26"
 					type: "checkmark"
 					title: "Got it!"
 				}
+				{
+					id: "4447F27B43FA32CA"
+					type: "item"
+					item: "createbigcannons:basin_foundry_lid"
+				}
 			]
+			rewards: [{
+				id: "2311DC3094B26A64"
+				type: "item"
+				item: "ad_astra:permafrost"
+				count: 16
+			}]
 		}
 		{
 			title: "Hydrogen Extraction"
@@ -1807,11 +1823,11 @@
 			x: 16.0d
 			y: -1.0d
 			shape: "pentagon"
-			subtitle: "FINE, no fuel buckets anymore."
+			subtitle: "But now they're blue!"
 			description: [
 				"A fun-sized snack favoured by the whole family. If you are familiar with create already, this item needs no explanation."
 				""
-				"However, for those that DO, these can be fed to blaze burners to activate a second tier of heat, known as &bsuperheating&r. This will unlock recipes previously out of reach due to their heat requirements."
+				"However, for those that DO need an explanation, these can be fed to blaze burners to activate a second tier of heat, known as &bsuperheating&r. This will unlock recipes previously out of reach due to their heat requirements."
 				""
 				"Blaze Cakes are not your only option, however. Pumping &bHellfire&r directly into a burner with a straw will superheat at a similar net fuel usage."
 			]
@@ -1829,11 +1845,11 @@
 			icon: "yttr:continuous_platform"
 			x: 19.5d
 			y: 0.0d
-			subtitle: "&bGlacio&r and the &dMoon Debris&r hosts a highly compressed form of ice."
+			subtitle: "&bGlacio&r and the &dMoon Debris&r hosts a highly exotic form of ice."
 			description: [
 				"They form in large spikes on the surface of the glacio wastes, but deep within the crust of the planet, ore pockets of them will form in packed ice towards y=0..."
 				""
-				"Use a &3Chromatic Vaccum&r to separate the crystalline pieces from the ice it is solidified in."
+				"Use a &3Chromatic Vacuum&r to separate the crystalline pieces from the ice it is solidified in."
 			]
 			dependencies: ["562D93203A0A135A"]
 			dependency_requirement: "one_completed"
@@ -1904,12 +1920,23 @@
 		{
 			x: 3.5d
 			y: -1.5d
+			subtitle: "Machine Frames... But cooler..."
+			description: [
+				"We'll be using Advanced Machine Frames a lot from now on in production of new machines."
+				""
+				"It would be very handy to set up semi-automation for this."
+			]
 			dependencies: ["2993E04DCB7B4EC4"]
 			id: "1F2BC723A3178961"
 			tasks: [{
 				id: "06357CC08CCE0E2E"
 				type: "item"
 				item: "techreborn:advanced_machine_frame"
+			}]
+			rewards: [{
+				id: "1C697A80964E3957"
+				type: "item"
+				item: "techreborn:raw_lead_storage_block"
 			}]
 		}
 		{
@@ -1939,7 +1966,7 @@
 			y: 3.5d
 			subtitle: "Or... a wonderland?"
 			description: [
-				"Glacio is a frigid celestial body with an overabundance of ice and snow."
+				"Glacio is a frigid celestial body in the &corbit of Mars&r with an overabundance of ice and snow."
 				""
 				"Surely we can harness this landscape to discover methods of cooling our own creations."
 			]

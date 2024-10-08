@@ -42,8 +42,8 @@
         "maxCount": 1
       },
       {
-        "type": "minecraft:end_crystal",
-        "weight": 1,
+        "type": "astraladditions:phast",
+        "weight": 2,
         "minCount": 1,
         "maxCount": 1
       }
@@ -71,8 +71,9 @@
 			"astralrails:nether/nether_enderslime_geode"
     ],
 		[
-			"minecraft:chorus_plant"
 		],
-		[	]
+		[	
+			"minecraft:chorus_plant"
+		]
   ]
 }

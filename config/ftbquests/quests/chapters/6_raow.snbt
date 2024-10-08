@@ -175,7 +175,7 @@
 			description: [
 				"&6Refined Shimmer&r is a substance holding immense chromatic potential, but it is not quite there yet."
 				""
-				"By superheating all 16 blaze burners under the shimmer refinery, and pumping shimmer + refining agents into it's slots you will begin to process Refined Shimmer."
+				"By superheating all 16 blaze burners under the shimmer refinery, and pumping shimmer + refining agents into its slots you will begin to process Refined Shimmer."
 				""
 				"A blaze cake stockpile is recommended to obtain, as 16 blaze cakes is likely to fund ~30 Refined Shimmer if lit at once!"
 			]
@@ -383,7 +383,7 @@
 			description: [
 				"Thanks to rapid accelerations in technology, the jet suit will provide an unbeatable defense, alongside flight capability."
 				""
-				"Utilise the &6Jet Suit Flash Card&r from Per Aspera to control your flight more delicately, allowing for movement akin to creative flight, at the cost of it's fuel..."
+				"Utilise the &6Jet Suit Flash Card&r from Per Aspera to control your flight more delicately, allowing for movement akin to creative flight, at the cost of its fuel..."
 			]
 			hide_dependency_lines: false
 			dependencies: ["3ED703EAA646A18A"]
@@ -506,9 +506,11 @@
 				""
 				"It cannot be possible."
 				""
-				"This is the source of it all. This destruction of the solar system."
+				"This is the source of it all. This indiscriminate destruction."
 				""
 				"What's a &cN&ka&r&ceth&ka&r&cer?"
+				""
+				"&c(Travel to ??? in Proxima Centauri)&r"
 			]
 			dependencies: [
 				"638DBED9ED0BD4CB"
@@ -726,7 +728,7 @@
 			y: -7.0d
 			subtitle: "Es Muy Calor"
 			description: [
-				"Unlike it's bretheren, yttrium, calorite does not require as much special processing."
+				"Unlike its bretheren, yttrium, calorite does not require as much special processing."
 				""
 				"Simply melt down raw, or crushed ore into fluid using a hellfire heated foundry or smelter, and cast it into ingots."
 			]
@@ -854,9 +856,9 @@
 			y: 7.5d
 			subtitle: "An extremely light casing."
 			description: [
-				"Used for it's properties of being incredibly lightweight, radiant casing in unmatched as both an ingredient..."
+				"Used for its properties of being incredibly lightweight, radiant casing in unmatched as both an ingredient..."
 				""
-				"...and decoration block. "
+				"...and a decoration block. "
 				""
 				"Apply Refined Radiance to advanced casings to obtain."
 			]
@@ -1083,8 +1085,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						Rotation: "NONE"
 						File: "[AstralExamples] Shimmer Refinery.nbt"
+						Rotation: "NONE"
 						Mirror: "NONE"
 						Bounds: [
 							5
@@ -1254,7 +1256,7 @@
 			description: [
 				"&6Molten Uranium&r does not possess properties in it's current form to be useful to us,"
 				""
-				"By casting it into a rod, we may soon use it's energy potential within machines to maximise their potential..."
+				"By casting it into a rod, we may soon use its energy potential within machines to maximise their potential..."
 			]
 			dependencies: [
 				"5BCACF82FA7D1B80"
@@ -1281,7 +1283,7 @@
 			description: [
 				"&6Uranium Residue&r can be extracted from yttrium powder using an industrial centrifuge. "
 				""
-				"It is unknown the exact chemical makeup of yttrium, but the presence of this material within it sparks a greater question of why we are so comfortable holding it in our hands."
+				"It is unknown the exact chemical properties of Yttrium, but the presence of this material within it sparks a greater question of why we are so comfortable holding it in our hands."
 			]
 			dependencies: ["27E46FB10D9F214B"]
 			id: "5BCACF82FA7D1B80"
@@ -1309,7 +1311,7 @@
 			x: 19.5d
 			y: 5.0d
 			description: [
-				"A selection of gear, traditionally used more for it's ceremonial potential, rather than it's combat capability."
+				"A selection of gear, traditionally used more for it's ceremonial potential, rather than its combat capability."
 				""
 				"There will be no other player on the battleground as royal as those who wear gear made with light itself."
 			]
@@ -1379,7 +1381,7 @@
 			title: "A source of Mercury."
 			x: 12.089285714285708d
 			y: 0.7440476190476346d
-			description: ["By completing a chain of calorite to mercury, a solid source of this element can be procured, ready to process."]
+			description: ["By forming mercury from calorite, a solid source of this element can be procured, ready to process."]
 			hide_dependency_lines: true
 			dependencies: ["5BCACF82FA7D1B80"]
 			id: "06431C6B11CBD4D1"
@@ -1733,7 +1735,7 @@
 			description: [
 				"Upon creating &6Radiant Residue&r and &6Shadow Fluid&r, the process for &cMercurian Stone&r becomes available."
 				""
-				"Designed as an extension to the Moon Portal -> Mars Portal Chain, the mercury portal must be created on mars and is once again lit with an Astral Conduit."
+				"Designed as an extension to the Moon Portal -> Mars Portal Chain, the Mercury portal must be created on Mars and is once again lit with an Astral Conduit."
 				""
 				"&6WARNING:&r It is advised you be careful, as the portal will always send you back from Mercury to Mars, meaning if you built the portal in the overworld you may not have a way back anymore! Make sure to always chain Moon portals -> Mars portals -> Mercury portals."
 			]
@@ -1752,28 +1754,15 @@
 			}]
 		}
 		{
-			title: "Electrolysing Calorite into Pure Cinnabar."
-			x: 8.0d
-			y: -7.0d
-			description: ["Separation of calorite into cinnabar is the beginning step to understanding the chemical roots of this element."]
-			dependencies: ["2291F6259C65D8F6"]
-			id: "4273DD2FD9527284"
-			tasks: [{
-				id: "44A2E6633B500900"
-				type: "item"
-				item: "yttr:ultrapure_cinnabar"
-			}]
-		}
-		{
 			title: "First step to mercury."
 			x: 8.0d
-			y: -5.5d
+			y: -7.0d
 			description: [
-				"Cinnabar can be &6Bulk Blasted&r into quicksilver."
+				"Calorite can be &6Electrolysed&r into Quicksilver."
 				""
 				"This can in turn be melted down into &6Mercury&r"
 			]
-			dependencies: ["4273DD2FD9527284"]
+			dependencies: ["2291F6259C65D8F6"]
 			id: "09B37242E2CCAE8E"
 			tasks: [{
 				id: "713CF3FEAA2BE265"
