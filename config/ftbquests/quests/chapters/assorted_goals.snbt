@@ -93,7 +93,7 @@
 			description: [
 				"Use the &6Part Builder&r to create tool parts!"
 				""
-				"Place in some Patterns, and a material you want to make the part out of, and then choose your part!"
+				"Place in some Patterns and a material you want to make the part out of, and then choose your part!"
 			]
 			dependencies: ["1AC4A5B8D86CAB0F"]
 			id: "75B36BB7FE771333"
@@ -1311,9 +1311,9 @@
 			y: 10.0d
 			subtitle: "{chapter.1.quest.44.subtitle}"
 			description: [
-				"&6Copper Chest&r allow you to store 45 stacks of items in a single chest!"
+				"&6Copper Chests&r allow you to store 45 stacks of items in a single chest!"
 				""
-				"You can combine them into a Double Chest, just like vanilla chests."
+				"You can combine them into a double chest, just like vanilla chests."
 				""
 				"Later on you'll be able to get even better chests!"
 			]
@@ -1340,7 +1340,7 @@
 			description: [
 				"{chapter.1.quest.45.description.1}"
 				""
-				"&6Obtaining a cow in a jar&r is a good place to start when experimenting with blockheads, as infinite milk without entities is a lag-free method of collection."
+				"&6Obtaining a cow in a jar&r is a good place to start when experimenting with Blockheads, as infinite milk without entities is a lag-free method of collection."
 			]
 			dependencies: ["2CE5BB6A7B30CA4C"]
 			optional: true
@@ -1883,14 +1883,14 @@
 				"(applicable to individual slots,"
 				"Shift-Right click the drawer slot)"
 				""
-				"> &6Lava Bucket&r - if a drawer is full and new items are inserted, those items will be voided instead."
+				"> &6Lava Bucket&r - If a drawer is full and new items are inserted, those items will be voided instead."
 				""
 				"> &6Drawer Lock&r - Locks the drawer to the specified item."
 				""
 				"> &6Black Dye&r - Hides the item preview and count."
 				"Useful for FPS lag reduction."
 				""
-				"> &6Drawer Upgrades&r - increase the maximum amount of items that can be stored in a slot:"
+				"> &6Drawer Upgrades&r - Increases the maximum amount of items that can be stored in a slot:"
 				"- T1: 2x"
 				"- T2: 4x"
 				"- T3: 16x"
@@ -1898,7 +1898,7 @@
 				"- T5: 256x"
 				"- T6: A really large multiplier!"
 				""
-				"> &6Drawer Downgrades&r: Reduces to max size of a slot to 64."
+				"> &6Drawer Downgrades&r: Reduces max size of a slot to 64."
 				"Useful for small buffers."
 			]
 			dependencies: ["6433AD83545428C3"]

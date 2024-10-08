@@ -339,7 +339,7 @@
 			x: -40.0d
 			y: -2.0d
 			subtitle: "{chapter.4.quest.53.subtitle}"
-			description: ["&6This is going to be essential for automating dripstone which is a vital ingredient!"]
+			description: ["&6This is going to be essential for automating Dripstone, which is a vital ingredient!"]
 			dependencies: [
 				"09C4EF17B09DD54B"
 				"22466F075AF13097"
@@ -1893,7 +1893,7 @@
 			}
 			x: -26.5d
 			y: 9.0d
-			subtitle: "Obtain blazes from lunar reactors / pipelines."
+			subtitle: "Obtain Blazes from Lunar Reactors/Pipelines."
 			dependencies: ["6D73E725B72F6E88"]
 			id: "6ED96165ED450D8B"
 			tasks: [{
@@ -1931,7 +1931,7 @@
 			title: "Optional substitute."
 			x: -32.0d
 			y: 23.0d
-			subtitle: "Scrap can be utilised in forming nether grout to reduce the amount of scoria needed when mass producing."
+			subtitle: "Scrap can be utilised in forming Nether Grout to reduce the amount of Scoria needed when mass-producing."
 			hide_dependency_lines: true
 			dependencies: ["3CB5D433A10C2040"]
 			id: "24EF2D48101694B9"
@@ -2213,7 +2213,7 @@
 			x: -39.0d
 			y: 15.0d
 			shape: "hexagon"
-			subtitle: "The Stone Growth Chamber varies its output based on &6dimension&r"
+			subtitle: "The Stone Growth Chamber varies its output based on &6dimension&r."
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			size: 3.0d
@@ -2560,7 +2560,7 @@
 		{
 			x: -43.5d
 			y: 9.0d
-			subtitle: "Mushrooms can be processed into seitan,"
+			subtitle: "Mushrooms can be processed into seitan."
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "272C487352DDE36E"
@@ -2674,8 +2674,8 @@
 		{
 			x: -38.5d
 			y: 12.5d
-			subtitle: "Spawns in moon caves"
-			description: ["Grow on stone ceilings and harvest for plentiful amounts of prismarine shards and crystals. "]
+			subtitle: "Spawns in Moon caves"
+			description: ["Grow on Stone ceilings and harvest for plentiful amounts of Prismarine Shards and crystals. "]
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "494DAA43E781A919"

@@ -159,7 +159,7 @@
 			description: [
 				"Access to your new fuel will allow the &6Foundry&r to become &bSUPERHEATED&r!"
 				""
-				"This new heat threshold of 3000*C will allow most future ores to be melted down into molten goodness, which can then be cast as ingots and plates. Ostrum, especially, is going to be integral in creating a rocket and protective equipment to survive the dangerous conditions as we approach ever closer to the sun..."
+				"This new heat threshold of 3000*C will allow most future ores to be melted down into molten goodness, which can then be cast as ingots and plates. Ostrum, especially, is going to be integral in creating a rocket and protective equipment to survive the dangerous conditions as we approach ever-closer to the Sun..."
 			]
 			dependencies: ["07C60C1DB44579B9"]
 			size: 1.5d
@@ -250,7 +250,7 @@
 			shape: "square"
 			subtitle: "{chapter.7.quest.7.subtitle}"
 			description: [
-				"A swathe of recipes are available in the electrolyser, from separating Tech Reborn fluids to their base components, to converting items like clay and coal dust into &6lithium and carbon cells respectively&r."
+				"A swathe of recipes are available in the electrolyser, from separating Tech Reborn fluids to their base components, to converting items like Clay and Coal Dust into &6Lithium and Carbon Cells respectively&r."
 				""
 				"Those two recipes mention at the tail-end of the first sentence are worth knowing, and getting produced already, before you will start using it for further manufacturing."
 			]
@@ -436,7 +436,7 @@
 			x: 5.5d
 			y: -4.5d
 			description: [
-				"The recipe you've been using so far for steel dust is rather low output for it's cost."
+				"The recipe you've been using so far for Steel Dust is rather low output for its cost."
 				""
 				"&6This can change...&r"
 			]
@@ -520,11 +520,11 @@
 			x: 0.0d
 			y: -2.0d
 			description: [
-				"Much like certain desktop CPUs the new chip that's our goal will need pins to connect to its motherboard, whether that may be a washing machine or a high-end gaming PC is irrelevant."
+				"Much like certain desktop CPUs, the new chip that's our goal will need pins to connect to its motherboard, whether that may be a washing machine or a high-end gaming PC is irrelevant."
 				""
-				"To create pins you will need to put gold nuggets into a Rolling Machine, which will result in normal pins. We don't want the normal pins though, we want special ones, electrified ones."
+				"To create pins you will need to put Gold Nuggets into a Rolling Machine, which will result in normal pins. We don't want the normal pins though, we want special ones, electrified ones."
 				""
-				"Create these electrified pins by putting the normal ones on a depot below a Tesla Coil, which will charge them up."
+				"Create these Electrified Pins by putting the normal ones on a depot below a Tesla Coil, which will charge them up."
 			]
 			dependencies: ["253F29A00B4EA050"]
 			id: "7B0BBD0E9F82939D"
@@ -547,7 +547,7 @@
 			y: -2.5d
 			subtitle: "I thought these were assembly items."
 			description: [
-				"So, you have pre-emptively applied all the electrified pins on the mechanism. "
+				"So, you have pre-emptively applied all the Electrified Pins on the mechanism. "
 				""
 				"Good work!"
 			]
@@ -631,7 +631,7 @@
 			shape: "square"
 			subtitle: "The ultimate washing machine."
 			description: [
-				"The &6Centrifuge&r is an integral tool at your disposal. Use it to turn items, techreborn cells and more into their base components with a little bit of time and Energy input."
+				"The &6Centrifuge&r is an integral tool at your disposal. Use it to turn items, Tech Reborn Cells and more into their base components with a little bit of time and Energy input."
 				""
 				"From here, you have multiple paths to branch into, however they will converge eventually, feel free to focus on them one at a time, or all at once!"
 			]
@@ -698,7 +698,7 @@
 			x: 5.5d
 			y: -6.0d
 			description: [
-				"&6Molten Iron Cells&r mixed with &6Carbon Cells&r (Obtained by electrolysing coal or charcoal) will produce four steel dust in a blast furnace."
+				"&6Molten Iron Cells&r mixed with &6Carbon Cells&r (Obtained by electrolysing Coal or Charcoal) will produce four Steel Dust in a blast furnace."
 				""
 				"This is over 2x the efficiency of the prior recipe per resource spent!"
 			]
@@ -966,7 +966,7 @@
 			x: 2.5d
 			y: 5.5d
 			subtitle: "{chapter.7.quest.50.subtitle}"
-			description: ["Pig-Iron can be made by putting a pork chop, an iron ingot, and a gold ingot in a heated mixer."]
+			description: ["Pig-Iron can be made by putting a pork chop, an Iron Ingot, and a Gold Ingot in a heated Mixer."]
 			dependencies: ["1873D12083BC1697"]
 			id: "1A99F6B849B12B09"
 			tasks: [
@@ -1044,7 +1044,7 @@
 			}]
 		}
 		{
-			title: "Your first martian ore."
+			title: "Your first Martian ore."
 			x: 2.0d
 			y: 0.0d
 			subtitle: "One out of two, although the second is still out of reach..."
@@ -1065,9 +1065,9 @@
 			title: "Let's press this sheet!"
 			x: 2.5d
 			y: -1.0d
-			subtitle: "Ok you may use the Press for this one :)"
+			subtitle: "OK, you may use the Press for this one :)"
 			description: [
-				"&6Desh&r is tough, and requires a Compressor to turn into sheets. However, Lead is highly malleable, so kinetic energy and a big block of iron will be plenty to form sheets of it."
+				"&6Desh&r is tough, and requires a Compressor to turn into sheets. However, Lead is highly malleable, so kinetic energy and a big block of Iron will be plenty to form sheets of it."
 				""
 				"Simply through it into whatever highly sophisticated Mechanical Press setup you have!"
 			]
@@ -1087,7 +1087,7 @@
 			description: [
 				"Why is there methane in this? Is this ethical?"
 				""
-				"Eitherway, Piglin Fortunes unlock a higher tier of trading. It would be very rewarding to automate these. Just throw at a Piglin and they wont be able to resist!"
+				"Either way, Piglin Fortunes unlock a higher tier of trading. It would be very rewarding to automate these. Just throw at a Piglin and they won't be able to resist!"
 			]
 			dependencies: [
 				"08920EA71AAD4519"
@@ -1118,7 +1118,7 @@
 			x: 9.0d
 			y: 4.5d
 			subtitle: "Bole"
-			description: ["Piglins love gold, so a gift for them should be presented in a Golden Bowl."]
+			description: ["Piglins love Gold, so a gift for them should be presented in a Golden Bowl."]
 			dependencies: ["43D115AA6859432C"]
 			id: "5DE2E3396D1A4C7F"
 			tasks: [{
@@ -1149,7 +1149,7 @@
 			description: [
 				"The Shimmer Amplifier will play a primary role in the mechanical crafting of Ostrum Engines."
 				""
-				"At this point, the remaining costs, being a haul of ostrum materials and a capacitor should be of no trouble for you."
+				"At this point, the remaining costs, being a haul of Ostrum materials and a capacitor should be of no trouble for you."
 			]
 			dependencies: ["717A6825F23CC07F"]
 			size: 1.5d
@@ -1170,11 +1170,11 @@
 			title: "Supersonic, Acrobatic, Rocket Powered Wings."
 			x: 23.309523809523824d
 			y: -6.005952380952387d
-			subtitle: "The unfiltered power of the elytra is within reach. Limitless flight."
+			subtitle: "The unfiltered power of the Elytra is within reach. Limitless flight."
 			description: [
-				"We've gated this rather far into the pack to limit methods of 'free flight', but now is the time. These rocket engine powered wings can provide you will endless flight (with the accompanying firework rockets) as long as you aren't in space."
+				"We've gated this rather far into the pack to limit methods of 'free flight', but now is the time. These rocket engine-powered wings can provide you will endless flight (with the accompanying Firework Rockets) as long as you aren't in space."
 				""
-				"(Where you will promptly either melt spontaneously or suffocate)"
+				"(...where you will promptly either melt spontaneously or suffocate)"
 			]
 			dependencies: ["63A96438AB2F9506"]
 			id: "482A444BAFDFC947"
@@ -1240,7 +1240,7 @@
 			title: "Compacting to Skystone"
 			x: 14.5d
 			y: 6.5d
-			description: ["5 Moon Stone and 1 Certus dust will compress into sky stone, usually only obtained in Ad Astra meteors."]
+			description: ["5 Moon Stone and 1 Certus Dust will compress into Sky Stone, usually only obtained in Ad Astra meteors."]
 			hide_dependency_lines: true
 			dependencies: ["253F29A00B4EA050"]
 			optional: true
@@ -1268,7 +1268,7 @@
 			icon: "techreborn:sulfur_dust"
 			x: 14.5d
 			y: 5.0d
-			description: ["Three Glowstone and One Sky Stone Dust creates a simple way to renew sulfur."]
+			description: ["Three Glowstone and one Sky Stone Dust creates a simple way to renew Sulfur."]
 			dependencies: ["3489CBA7A54C6530"]
 			size: 1.5d
 			id: "04954A167C56AC1C"
@@ -1294,7 +1294,7 @@
 			title: "Liquid Sulfur."
 			x: 14.5d
 			y: 3.5d
-			description: ["Sulfur, placed in the melter or foundry, can be reduced to it's fluid form, and whilst it isnt too combustible like this, it only requires some basic catalysts to change that..."]
+			description: ["Sulfur, placed in the Melter or Foundry, can be reduced to its fluid form, and while it isn't too combustible like this, it only requires some basic catalysts to change that..."]
 			dependencies: ["04954A167C56AC1C"]
 			id: "0842CB2511EA7CE9"
 			tasks: [{
@@ -1310,11 +1310,11 @@
 			}]
 		}
 		{
-			title: "Adding some dinosaur into that liquid sulfur."
+			title: "Adding some dinosaur into that Liquid Sulfur."
 			x: 13.0d
 			y: 3.5d
 			subtitle: "It's scientifically accurate!"
-			description: ["A large amount of the carbon-based coal dust will create a thick, black substance, known to us as oil."]
+			description: ["A large amount of the Carbon-based Coal Dust will create a thick, black substance, known to us as Oil."]
 			dependencies: ["0842CB2511EA7CE9"]
 			id: "7E55004B488A16C1"
 			tasks: [
@@ -1348,11 +1348,11 @@
 			y: -1.0d
 			subtitle: "Finally, some liquid Freedom."
 			description: [
-				"You will be presented with TWO choices, when obtaining oil."
+				"You will be presented with TWO choices when obtaining Oil."
 				""
-				"1: &6Automating it&r, the attached process line involving skystone, sulfur and coal will be integral in creating a renewable supply."
+				"1: &6Automating it&r, the attached process line involving Sky Stone, Sulfur and Coal will be integral in creating a renewable supply."
 				""
-				"2: &6Prospecting! &rAnd by prospecting, I of course mean trudging through the martian wastelands, in hopes of uncovering surface lakes of oil. Whilst not a particularly sustainable method, it will for sure allow for your first distillations to obtain a quick headstart."
+				"2: &6Prospecting! &rAnd by prospecting, I of course mean trudging through the Martian wastelands, in hopes of uncovering surface lakes of Oil. Whilst not a particularly sustainable method, it will for sure allow for your first distillations to obtain a quick headstart."
 				""
 				""
 			]
@@ -1372,14 +1372,14 @@
 			}]
 		}
 		{
-			title: "Creation of the refining agent."
+			title: "Creation of the Refining Agent."
 			x: 11.5d
 			y: -4.5d
-			subtitle: "Another use for biofuel, hope you didnt manually craft that back in chapter 3..."
+			subtitle: "Another use for Biofuel, hope you didnt manually craft that back in Chapter 3..."
 			description: [
 				"A steady supply of &6Biofuel&r, alongside your new stash of &bNitrogen&r can be assembled into an enriching compound. "
 				""
-				"Refining agents are used as the catalyst in forming a far more combustive fuel type..."
+				"Refining Agents are used as the catalyst in forming a far more combustive fuel type..."
 			]
 			dependencies: ["7A30BBD9F64920A4"]
 			size: 1.5d
@@ -1410,13 +1410,13 @@
 			shape: "rsquare"
 			subtitle: "Multiblock Madess."
 			description: [
-				"The distillery is your new best friend for exporting a new fluid type, capable of burning at extreme temperatures."
+				"The Distillery is your new best friend for exporting a new fluid type, capable of burning at extreme temperatures."
 				""
 				"This fluid is called &bHellfire&r."
 				""
 				"Using the compementary schematic obtained as a reward from the previous quest, you can place an outline of a structure to use as a baseline when building it."
 				""
-				"A fluid (oil), an item (refining agent), energy and &6heat from blaze burners&r will allow the multiblock to operate."
+				"A fluid (Oil), an item (a Refining Agent), energy and &6heat from Blaze Burners&r will allow the multiblock to operate."
 			]
 			dependencies: [
 				"4167177A752546A3"
@@ -1484,7 +1484,7 @@
 			description: [
 				"&6Lava&r is so outdated, &bHellfire&r is where the action is now."
 				""
-				"From now on, many melting recipes are going to require a melting point &6too high for lava&r to reach. Hellfire on the other hand will cut through and melt these materials like butter with it's &b3000 Degrees Celsius&r burning temperature. "
+				"From now on, many melting recipes are going to require a melting point &6too high for Lava&r to reach. Hellfire on the other hand will cut through and melt these materials like butter with its &b3000 Degrees Celsius&r burning temperature. "
 			]
 			dependencies: ["0BA5C147C098C5A8"]
 			min_required_tasks: 2
@@ -1531,7 +1531,7 @@
 			description: [
 				"You may have already got to work at automating scrapboxes!"
 				""
-				"In that case, you will be two steps ahead already... for this task, the easiest method of obtaining saltpeter dust is to heated mix, or centrifuge it out of rich soil, which of course comes from this."
+				"In that case, you will be two steps ahead already... for this task, the easiest method of obtaining Saltpeter Dust is to heated mix or centrifuge it out of Rich Soil, which of course comes from this."
 				""
 			]
 			hide_dependency_lines: true
@@ -1550,7 +1550,7 @@
 			x: 8.0d
 			y: -8.0d
 			description: [
-				"Washing compost into rich soil is the quickest way to progress without relying on those dastardly random ticks."
+				"Washing compost into Rich Soil is the quickest way to progress without relying on those dastardly random ticks."
 				""
 				"Do not forget, if you still have a steady supply of pure biomatter going unused, it can be utilised in the more efficient compost recipe, no longer relying on bark or straw!"
 				""
@@ -1568,11 +1568,11 @@
 			title: "Get spinning!"
 			x: 8.0d
 			y: -6.0d
-			subtitle: "I'm going to be honest, who on earth is Peter."
+			subtitle: "I'm going to be honest, who on Earth is Peter?"
 			description: [
-				"Rich soil can be placed in a centrifuge to create large quantities of saltpeter dust. "
+				"Rich Soil can be placed into a Centrifuge to create large quantities of Saltpeter Dust. "
 				""
-				"Integral in basic nitrogen automation, you could start producing it by placing saltpeter into an &6Electrolyser&r. If you hadn't made it when you produced the first advanced circuits, it's advised to create one now!"
+				"Integral in basic Nitrogen automation, you could start producing it by placing Saltpeter into an &6Electrolyser&r. If you hadn't made it when you produced the first Advanced Circuits, it's advised to create one now!"
 			]
 			dependencies: [
 				"0C44297569A23C3C"
@@ -1593,11 +1593,11 @@
 			description: [
 				"We're on a path to reach &6Superheating Potential&r."
 				""
-				"For utilisation in a &6Distillery Multiblock&r, a refining agent will be required to produce a fluid necessary to accomplish this."
+				"For utilisation in a &6Distillery Multiblock&r, a Refining Agent will be required to produce a fluid necessary to accomplish this."
 				""
-				"Nitrogen, alongside other goodies, can be assembled into a compound capable of seeping new power into oil, when used in the distillery."
+				"Nitrogen, alongside other goodies, can be assembled into a compound capable of seeping new power into Oil, when used in the Distillery."
 				""
-				"Nitrogen can also be sourced from the frigid permafrost rocks of &bGlacio."
+				"Nitrogen can also be sourced from the frigid Permafrost rocks of &bGlacio."
 			]
 			dependencies: ["33DA3ABE77235723"]
 			id: "7A30BBD9F64920A4"
@@ -1647,7 +1647,7 @@
 			x: 22.0d
 			y: 1.0d
 			description: [
-				"Infuse the freezing heat dissipating fluid of aurorite with nitrogen to create a form of Liquid Nitrogen which will never heat when exposed to warmer atmospheres and high-tech machinery."
+				"Infuse the freezing heat dissipating fluid of Aurorite with Nitrogen to create a form of Liquid Nitrogen which will never heat when exposed to warmer atmospheres and high-tech machinery."
 				""
 				"It's in violation direct violation of the laws of thermodynamics! "
 			]
@@ -1674,7 +1674,7 @@
 			y: 2.0d
 			subtitle: "You may automate Nitrogen"
 			description: [
-				"Permafrost, which can be created by compressing Glacio Stone, will melt into a small amount of Nitrogen when Headed with a Foundry Basin Lid."
+				"Permafrost, which can be created by compressing Glacio Stone, will melt into a small amount of Nitrogen when heated with a Foundry Basin Lid."
 				""
 				"If you've not used the Foundry Basin Lid before, it has a handy Ponder that will guide you on using it. It's simple! Just make sure to use a Blaze Burner and pump the output liquid using a Mechanical Pump."
 			]
@@ -1711,7 +1711,7 @@
 			icon: "ad_astra:ice_shard"
 			x: 17.0d
 			y: 2.0d
-			description: ["If you need a simple source of &3Hydrogen&r without getting caught up in tech reborn processes, try placing some ice related blocks into the cryo freezer!"]
+			description: ["If you need a simple source of &3Hydrogen&r without getting caught up in Tech Reborn processes, try placing some Ice-related blocks into the Cryo Freezer!"]
 			dependencies: ["111E91837243077C"]
 			min_required_tasks: 1
 			id: "4A711576A877709C"
@@ -1747,7 +1747,7 @@
 			x: 19.5d
 			y: 1.0d
 			description: [
-				"&bAurorite&r can be synthesised using the &6Prismatic Crystals&r you obtained from either vacuuming the structured prismatic crystals, or crushed at low rates from glacio stone."
+				"&bAurorite&r can be synthesised using the &6Prismatic Crystals&r you obtained from either vacuuming the Structured Prismatic Crystals, or crushed at low rates from Glacio Stone."
 				""
 				"Reminder that the &6Stone Growth Chamber&r functions in every space dimension as a method to infinitely producing stone types from celestial bodies."
 			]
@@ -1767,7 +1767,7 @@
 			x: 19.5d
 			y: 2.5d
 			description: [
-				"Glacio stone can be crushed, as like any other type of stone you've seen before."
+				"Glacio Stone can be crushed, as like any other type of stone you've seen before."
 				""
 				"This time, the results will not be of the metal variety, but instead be ice-related products. Prismatic crystals may also appear in your bounty, but beware the rates at which they drop is significantly lower than most other results."
 				""
@@ -1785,11 +1785,11 @@
 			title: "Glacio Ores"
 			x: 17.0d
 			y: 5.0d
-			subtitle: "Known primarily for it's bountiful distribution of lapis lazuli, glacio also contains multiple overworld ores."
+			subtitle: "Known primarily for its bountiful distribution of Lapis Lazuli, Glacio also contains multiple Overworld ores."
 			description: [
 				"Iron, Coal, Copper, &bIce Shards, &b Prismatic Crystals (Unique)"
 				""
-				"Ice Stores at the planets centre are almost infinite."
+				"Ice stores at the planet's centre are almost infinite."
 			]
 			dependencies: ["111E91837243077C"]
 			id: "22917BDEEB2FB172"
@@ -1803,11 +1803,11 @@
 			title: "Upper Crust Ice"
 			x: 21.0d
 			y: 3.5d
-			subtitle: "Permafrost is easily obtainable from the surface of Glacio, just find a large pocket of powdered snow."
+			subtitle: "Permafrost is easily obtainable from the surface of Glacio, just find a large pocket of Powdered Snow."
 			description: [
-				"They are also automatable from glacio stone, at a rather steep price."
+				"They are also automatable from Glacio Stone, at a rather steep price."
 				""
-				"The primary purpose you can find with permafrost is it's rich mineral makeup of solid nitrogen, which we can squeeze out for an easy source of the vital component in liquid nitrogen."
+				"The primary purpose you can find with Permafrost is its rich mineral makeup of solid Nitrogen, which we can squeeze out for an easy source of the vital component in Liquid Nitrogen."
 			]
 			dependencies: ["3666768F4FCCB7F3"]
 			id: "39670DF746429956"
@@ -1825,11 +1825,11 @@
 			shape: "pentagon"
 			subtitle: "But now they're blue!"
 			description: [
-				"A fun-sized snack favoured by the whole family. If you are familiar with create already, this item needs no explanation."
+				"A fun-sized snack favoured by the whole family. If you are familiar with Create already, this item needs no explanation."
 				""
-				"However, for those that DO need an explanation, these can be fed to blaze burners to activate a second tier of heat, known as &bsuperheating&r. This will unlock recipes previously out of reach due to their heat requirements."
+				"However, for those that DO need an explanation, these can be fed to Blaze Burners to activate a second tier of heat, known as &bsuperheating&r. This will unlock recipes previously out of reach due to their heat requirements."
 				""
-				"Blaze Cakes are not your only option, however. Pumping &bHellfire&r directly into a burner with a straw will superheat at a similar net fuel usage."
+				"Blaze Cakes are not your only option, however. Pumping &bHellfire&r directly into a Burner with a Straw will superheat at a similar net fuel usage."
 			]
 			dependencies: ["07C60C1DB44579B9"]
 			size: 2.0d
@@ -1845,9 +1845,9 @@
 			icon: "yttr:continuous_platform"
 			x: 19.5d
 			y: 0.0d
-			subtitle: "&bGlacio&r and the &dMoon Debris&r hosts a highly exotic form of ice."
+			subtitle: "&bGlacio&r and the &dMoon Debris&r hosts a highly exotic form of Ice."
 			description: [
-				"They form in large spikes on the surface of the glacio wastes, but deep within the crust of the planet, ore pockets of them will form in packed ice towards y=0..."
+				"They form in large spikes on the surface of the Glacio Wastes, but deep within the crust of the planet, ore pockets of them will form in packed ice towards y=0..."
 				""
 				"Use a &3Chromatic Vacuum&r to separate the crystalline pieces from the ice it is solidified in."
 			]
@@ -1899,9 +1899,9 @@
 			x: 19.5d
 			y: -1.0d
 			description: [
-				"One of the first usages of a &bSuperheated Blaze Burner&r you'll use."
+				"One of the first usages of a &bSuperheated Blaze Burner&r you'll encounter."
 				""
-				"Remember, using a straw from &6Create: Crafts and Additions&r will allow you to pump &bHellfire&r directly into burners. Convenient, if a little more space intensive."
+				"Remember, using a straw from &6Create: Crafts and Additions&r will allow you to pump &bHellfire&r directly into burners. Convenient, if a little more space-intensive."
 			]
 			dependencies: ["1B80AB828439B3F1"]
 			id: "4989A4C93B101219"
@@ -1944,8 +1944,8 @@
 			icon: "create:electron_tube"
 			x: 9.0d
 			y: -6.0d
-			subtitle: "Utilise a &3Centrifuge&r to extract cells from saltpeter."
-			description: ["If you have already been on a field trip to Glacio, you may also notice that permafrost is a alternative, lucrative source of nitrogen,"]
+			subtitle: "Utilise a &3Centrifuge&r to extract cells from Saltpeter."
+			description: ["If you have already been on a field trip to Glacio, you may also notice that Permafrost is a alternative, lucrative source of Nitrogen,"]
 			dependencies: ["34740D396988DE97"]
 			id: "33DA3ABE77235723"
 			tasks: [{
@@ -1966,7 +1966,7 @@
 			y: 3.5d
 			subtitle: "Or... a wonderland?"
 			description: [
-				"Glacio is a frigid celestial body in the &corbit of Mars&r with an overabundance of ice and snow."
+				"Glacio is a frigid celestial body in the &corbit of Mars&r with an overabundance of Ice and Snow."
 				""
 				"Surely we can harness this landscape to discover methods of cooling our own creations."
 			]
@@ -2044,9 +2044,9 @@
 			x: 19.0d
 			y: -4.5d
 			description: [
-				"As with your first rocket, the second will require you to bore a material and create a screw breech to use as a base item when forming &6Shimmer Amplifiers&r"
+				"As with your first rocket, the second will require you to bore a material and create a Screw Breech to use as a base item when forming &6Shimmer Amplifiers&r"
 				""
-				"The steps are the same, however this time you will be utilising liquid ostrum, only obtainable from melting at 3000 Degrees!"
+				"The steps are the same, however this time you will be utilising Liquid Ostrum, only obtainable from melting at 3000 Degrees!"
 			]
 			dependencies: ["3A5D7E60EF1C3BC3"]
 			id: "5DAEC5A11AF8FCE7"
@@ -2100,13 +2100,13 @@
 			title: "A delicate matter."
 			x: 17.5d
 			y: -7.0d
-			subtitle: "Produce blocks of fragile sheets, which you used in Ch3 to produce the T2 rocket!"
+			subtitle: "Produce blocks of Fragile Sheets, which you used in Chapter 3 to produce the T2 rocket!"
 			description: [
-				"Fragile sheet blocks are &6Delicate&r."
+				"Fragile Sheet Blocks are &6Delicate&r."
 				""
 				"Upon placing them, you &6may not mine them by hand&r or step on them. Instead, utilising alternative means, such as deployers with pickaxes, AE2 destruction planes, and other forms of block breaking automations will be mandatory."
 				""
-				"The same rules apply to it's fire-resistant bretheren, so don't waste your effort on a good block by mining it yourself!"
+				"The same rules apply to its fire-resistant bretheren, so don't waste your effort on a good block by mining it yourself!"
 			]
 			hide_dependency_lines: true
 			dependencies: ["673DC1F22D2F790D"]
@@ -2236,7 +2236,7 @@
 			title: "Chorus Fruit from the &6Moon Debris&r"
 			x: 18.5d
 			y: -10.0d
-			description: ["Growing in the &6Moon Debris&r dimension, which can be accessed similarly to the moon when clicking earth with a T2 rocket, lies a wonderful fruit."]
+			description: ["Growing in the &6Moon Debris&r dimension, which can be accessed similarly to the Moon when clicking earth with a T2 rocket, lies a wonderful fruit."]
 			hide_dependency_lines: true
 			dependencies: ["673DC1F22D2F790D"]
 			id: "52C8F72154556551"
@@ -2253,9 +2253,9 @@
 			y: -1.0d
 			subtitle: "This is... far easier!"
 			description: [
-				"Sick of processing all your biofuel for little result?"
+				"Sick of processing all your Biofuel for little result?"
 				""
-				"Fear no more! &6Pure Biomatter&r in the distillery, with heated burners, and water in the tank will produce a much larger amount of biofuel &6per item spent&r."
+				"Fear no more! &6Pure Biomatter&r in the Distillery, with heated Burners, and Water in the tank will produce a much larger amount of Biofuel &6per item spent&r."
 			]
 			dependencies: ["0BA5C147C098C5A8"]
 			id: "090149AB105A82F8"
@@ -2276,7 +2276,7 @@
 				""
 				"A worthy investment, for those who are not interested in using a rocket for every trip. This should make exploring the planet more often viable!"
 				""
-				"&6WARNING:&r It is advised you be careful, as the portal will always send you back from mars to the moon, meaning if you built the portal in the overworld you may not have a way back anymore! Make sure to always chain Moon portals -> Mars portals."
+				"&6WARNING:&r It is advised you be careful, as the portal will always send you back from Mars to the Moon, meaning if you built the portal in the Overworld you may not have a way back anymore! Make sure to always chain Moon portals -> Mars portals."
 			]
 			dependencies: ["520A09EF39A1BF5D"]
 			size: 1.5d

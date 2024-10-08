@@ -148,13 +148,13 @@
 			y: 0.5d
 			subtitle: "Store your liquids in a stylish way!"
 			description: [
-				"You probably want to store your molten metal somewhere?"
+				"You probably want to store your molten metal somewhere."
 				""
-				"&6Fluid Tanks&r store 10 buckets of liquid per tank."
+				"&6Fluid Tanks&r store 10 buckets of liquid per Tank."
 				""
-				"They can be placed with 1x1, 2x2 or 3x3 bases and stacked vertically to create bigger tanks."
+				"They can be placed with 1x1, 2x2 or 3x3 bases and stacked vertically to create bigger Tanks."
 				""
-				"You can't add liquids to Tanks manually - Tanks only accept liquids transferred by automation."
+				"You can't add liquids to Tanks manually - Tanks only accept liquids transferred by automation, such as via Pipes."
 			]
 			dependencies: ["70799237323247B7"]
 			id: "6AEEE2B22E28945B"
@@ -240,7 +240,7 @@
 				""
 				"Seared Bricks are an integral component for various Melter-related things!"
 				""
-				"As a reward, you will get a book, that explains many things about the Melter usage."
+				"As a reward, you will get a book that explains many things about the Melter usage."
 			]
 			dependencies: ["1F79F4D01B219D7E"]
 			id: "751CC4EF84A919C7"
@@ -274,7 +274,7 @@
 				""
 				"&6Fluid Pipes&r can move liquids around."
 				""
-				"However, simply conntecting two tanks with a Pipe won't work."
+				"However, simply conntecting two Tanks with a Pipe won't work."
 				""
 				"You must use a &6Mechanical Pump&r to force the flow."
 				""
@@ -695,7 +695,7 @@
 				""
 				"So far, there's not much use for them, but when you get access to Brass, they will become important."
 				""
-				"Tip: To polish Rose Quartz manually, hold &6Sand Paper&r in one hand, &6Rose Quartz&r in other, and hold Right-click. To polish Rose Quartz automatically, you can use a Deployer! Note that Sand Paper breaks after 8 uses."
+				"Tip: To polish Rose Quartz manually, hold &6Sand Paper&r in one hand, &6Rose Quartz&r in other, and hold Right-Click. To polish Rose Quartz automatically, you can use a Deployer! Note that Sand Paper breaks after 8 uses."
 			]
 			dependencies: [
 				"0F4C452C9C9AB1B8"
@@ -767,7 +767,7 @@
 			description: [
 				"&6Rose Gold&r is an alloy of &6Molten Copper&r and &6Molten Gold&r."
 				""
-				"But how do I alloy..."
+				"But how do I alloy?.."
 				""
 				"By mixing them in the Basin, of course!"
 				""
@@ -777,7 +777,7 @@
 				"The resulting &6Rose Gold&r can be either pumped out with an aid of a &6Smart Fluid Pipe&r, or by placing another &6Basin&r or an &6Item Drain&r diagonally downwards relative to the basin."
 				""
 				"&lThis recipe does not need heating!&r"
-				"The recipe you are performing is taking &6molten metals&r, not &6ingots&r!"
+				"The recipe you are performing is mixing &6molten metals&r, not &6ingots&r!"
 			]
 			dependencies: ["70799237323247B7"]
 			id: "0F4C452C9C9AB1B8"
@@ -1153,7 +1153,7 @@
 			y: -3.0d
 			subtitle: "You can cast cogwheels out of Molten Bronze!"
 			description: [
-				"You can use &6Coin Casts&r to cast &nsmall Cogwheels&r."
+				"You can use &6Coin Casts&r to cast &nSmall Cogwheels&r."
 				"You can use &6Gear Casts&r to cast &nLarge Cogwheels."
 				""
 				"This method is more expensive in Bronze, but you won't use any Andesite Alloy!"
@@ -1184,7 +1184,7 @@
 				""
 				"First, find some Rubber Trees - they are common in Plains or in Forests."
 				""
-				"Then, use a &6Treetap&r on a log that has Sap on it to extract it."
+				"Then, use a &6Treetap&r on a Log that has Sap on it to extract it."
 				""
 				"You can also mill Rubber Logs for Sap."
 			]
@@ -1260,7 +1260,7 @@
 				""
 				"Items dropped onto the Belt will be placed on it."
 				""
-				"Items on the Belt can be Bulk processed, although sometimes the automation might get stuck - Use a &6Depot&r at the end of the Belt line to prevent items from being stuck."
+				"Items on the Belt can be bulk-processed, although sometimes the automation might get stuck - Use a &6Depot&r at the end of the Belt line to prevent items from being stuck."
 				""
 				"Mechanical Belts can also insert items to Chutes, Millstones, or aforementioned Depots, placed one block behind the end of the belt."
 			]
@@ -1303,9 +1303,9 @@
 			y: 3.0d
 			subtitle: "Whoa, Sequenced Assembly already?"
 			description: [
-				"The &6Deployer&r is very special - it acts as a player right-clicking or left-clicking."
+				"The &6Deployer&r is very special - it acts as a player Right-Clicking or Left-Clicking."
 				""
-				"Deployers always interact with things 2 blocks ahead of itself. It can place blocks, feed animals, use a bucket... It can do a lot!"
+				"Deployers always interact with things 2 blocks ahead of itself. It can place blocks, feed animals, use a Bucket... It can do a lot!"
 				""
 				"Deployers can also be used in a new type of recipe - deploying items onto other items on a Depot or a Belt."
 				""
@@ -1336,7 +1336,7 @@
 			y: 4.5d
 			subtitle: "{chapter.3.quest.40.subtitle}"
 			description: [
-				"&6Andesite Funnels&r can extract items from the inventory 1 item at a time."
+				"&6Andesite Funnels&r can extract items from the inventory, 1 item at a time."
 				""
 				"They can either place items on the Belt or Depot, or drop items in-world if there are neither."
 				""
@@ -1372,11 +1372,11 @@
 			subtitle: "{chapter.3.quest.41.subtitle}"
 			description: [
 				"&6Engineer's Goggles&r allow you to see:"
-				"- Stress usages of machines,"
-				"- Contents of Chutes, Tunnels, or Tanks,"
-				"- Exact readouts from Speedometer and Stressometer,"
-				"- SU generation rates for stress generators and boilers,"
-				"And more."
+				"- Stress usages of machines"
+				"- Contents of Chutes, Tunnels, or Tanks"
+				"- Exact readouts from Speedometer and Stressometer"
+				"- SU generation rates for stress generators and boilers"
+				"and more."
 				""
 				"Definitely invest in a pair."
 			]
@@ -1401,9 +1401,9 @@
 			y: 7.0d
 			subtitle: "{chapter.3.quest.42.subtitle}"
 			description: [
-				"Mechanical Bearings can attach a structure on top."
+				"Mechanical Bearings can attach to a structure on top."
 				""
-				"When activated, the resulting contraption will start spinning, and all actors (like Mechanical Saws, Drills, Deployers, etc.) will activate."
+				"When activated, the resulting contraption will start spinning, and all actors (Mechanical Saws, Drills, Deployers, etc.) will activate."
 				""
 				"Blocks destroyed by actors such as Mechanical Saws and Drills will be inserted into a Chest, Barrel, Vault or a Toolbox on a contraption, if present."
 				""
@@ -1493,9 +1493,9 @@
 				"That being said, one caveat of automatic farming is that trees need to be replanted."
 				""
 				"That's what Deployers are for:"
-				"- Put them above the Saws or on the opposite side of the arm,"
-				"- Set their filter to Saplings,"
-				"- And equip them with Saplings. Make sure that Deployers are facing down."
+				"- Put them above the Saws or on the opposite side of the arm"
+				"- Set their filter to Saplings"
+				"- Equip them with Saplings. Make sure that Deployers are facing down."
 				""
 				"Trees that are cut down will provide you with more Saplings."
 			]
@@ -1534,7 +1534,7 @@
 			y: 7.5d
 			shape: "diamond"
 			subtitle: "{chapter.3.quest.46.subtitle}"
-			description: ["Tree farms produce &6Logs&r, &6Sticks&r and &6Saplings&r - probably you won't want to keep all of them at once, or else your farm will start spilling items!"]
+			description: ["Tree farms produce &6Logs&r, &6Sticks&r and &6Saplings&r - you probably won't want to keep all of them at once, or else your farm will start spilling items!"]
 			dependencies: ["34F33F38F8BF2B22"]
 			id: "726EED16A080CFC4"
 			tasks: [{
@@ -1568,7 +1568,7 @@
 				""
 				"Your only two options for automating Red Sand at this point are milling Terracotta blocks or Granite, both of which are quite slow to produce."
 				""
-				"You can go back to this automation later, or wash Red Sand obtained from digging it from Badlands."
+				"You can go back to this automation later, or wash Red Sand obtained from digging from Badlands."
 			]
 			dependencies: ["38814494AB07C2D8"]
 			id: "60906B723CCE6D10"
@@ -1729,9 +1729,9 @@
 			y: 4.5d
 			subtitle: "{chapter.3.quest.50.subtitle}"
 			description: [
-				"If you have belts going through walls, or if you don't want to accidentally drop an item onto the belt from above, &6Andesite Tunnels&r can cover them."
+				"If you have Belts going through walls, or if you don't want to accidentally drop an item onto the Belt from above, &6Andesite Tunnels&r can cover them."
 				""
-				"If there's a belt going perpedicularly to the main belt, and the Andesite Tunnel is placed on a junction, the Andesite Tunnel will split one item from the stack on the belt."
+				"If there's a Belt perpendicular to the main Belt, and the Andesite Tunnel is placed on a junction, the Andesite Tunnel will split one item from the stack on the Belt."
 			]
 			dependencies: ["62DAEDF65FB2226B"]
 			id: "42817242953BD9CA"
@@ -1758,8 +1758,8 @@
 				"The true power of Create isn't in the new crafting techniques it provides, but the ability to automate resources."
 				""
 				"Automating comes in two flavors:"
-				"- full automation, where a specific resource will be made until the end of time without any need for the player to touch a system,"
-				"- and semi-automation, where you only need to periodically restock starting resources or fuel."
+				"- Full automation, where a specific resource will be made until the end of time without any need for the player to touch a system"
+				"- Semi-automation, where you only need to periodically restock starting resources or fuel"
 				""
 				"This pack won't always tell you when to automate and what can be automated. That'll be up to you to decide."
 				""
@@ -1940,7 +1940,7 @@
 			y: 9.5d
 			subtitle: "Contraptions on Rails"
 			description: [
-				"&6Cart Assemblers&r allow you to create Minecart Contraptions - special contraptions that can drive on Rails an are pickable up with a Wrench."
+				"&6Cart Assemblers&r allow you to create Minecart Contraptions - special contraptions that can drive on Rails and can be picked up with a Wrench."
 				""
 				"Cart Assemblers are very useful for things done in a straight line, like &6tunnel bores&r."
 			]
@@ -2069,8 +2069,8 @@
 				"&6Gold Casts&r are reusable."
 				""
 				"To create one:"
-				"- Place an item in a shape of a cast you want to make, for example: an Axe Head,"
-				"- Pour 1 ingot worth of Molten Gold onto the Casting Table."
+				"- Place an item in a shape of a cast you want to make, for example: an Axe Head"
+				"- Pour 1 ingot worth of Molten Gold onto the Casting Table"
 				""
 				"This will consume the item, and the freshly created Gold Cast can be used to cast stuff out of molten metal!"
 			]
@@ -2260,7 +2260,7 @@
 			y: 2.0d
 			subtitle: "{chapter.3.quest.60.subtitle}"
 			description: [
-				"&6Windmills&r can spin at speeds between 1 and 16 RPM, depending on the amount of sails."
+				"&6Windmills&r can spin at speeds between 1 and 16 RPM, depending on the number of sails."
 				""
 				"They need more gearshifting, but they generate a ton of Stress Units."
 			]
@@ -2351,7 +2351,7 @@
 			x: -0.5d
 			y: 1.0d
 			description: [
-				"Allows you to filter, what liquid passes through the &6Smart Fluid Pipe&r."
+				"Allows you to filter what liquid passes through the &6Smart Fluid Pipe&r."
 				""
 				"&nImportant info&r:"
 				"Hephaestus buckets don't render, but they still work as filters."
@@ -2446,10 +2446,10 @@
 			y: 9.0d
 			subtitle: "Mechanical Saws on a Train - will they work?"
 			description: [
-				"Remember in Chapter 1 how you used Glue to assemble trains? Isn't that similar to what you did with a Cart Assembler and Mechanical Bearing?"
+				"Remember in Chapter 1 how you used Glue to assemble Trains? Isn't that similar to what you did with a Cart Assembler and Mechanical Bearing?"
 				""
 				"Well, it turns out that Trains are in the same family of moving contraptions."
-				"That means that actors like Saws, Drills, Harvesters, Portable Storage Interfaces, etc. will work on trains and operate like usual."
+				"That means that actors like Saws, Drills, Harvesters, Portable Storage Interfaces, etc. will work on Trains and operate like usual."
 				""
 				"That means you can build farms that operate with Trains on automated Schedules."
 				"If you want to overkill things this way, then by all means, it's encouraged!"
@@ -2526,19 +2526,19 @@
 			subtitle: "You just need some &5I&dm&4a&cg&ei&an&ba&3t&9i&1o&5n&r."
 			description: [
 				"The possibilities may be larger than you think. Here are some examples just to give you an idea of the possibilities, whether available now or later:"
-				"- A food source,"
-				"- Your favorite decoration block,"
-				"- Cogwheels,"
-				"- Shafts,"
-				"- Torches,"
-				"- Andesite Casings,"
-				"- Copper Casings,"
-				"- Electron Tubes,"
-				"- Rose Gold,"
-				"- Wool,"
-				"- Mob farms,"
-				"- Every Raw Ore,"
-				"- Seared Bricks,"
+				"- A food source"
+				"- Your favorite decoration block"
+				"- Cogwheels"
+				"- Shafts"
+				"- Torches"
+				"- Andesite Casings"
+				"- Copper Casings"
+				"- Electron Tubes"
+				"- Rose Gold"
+				"- Wool"
+				"- Mob farms"
+				"- Every Raw Ore"
+				"- Seared Bricks"
 				"and many more..."
 			]
 			dependencies: ["38814494AB07C2D8"]
@@ -2571,11 +2571,11 @@
 			description: [
 				"Ye filthy landlubbers can't even walk 10 seconds on the ocean floor without spluttering for air."
 				""
-				"&6Copper Backtank&r stores compressed air, used by Diving Helmets and some pneumatic tools."
+				"&6Copper Backtank&rs store compressed air, used by Diving Helmets and some pneumatic tools."
 				""
-				"Speaking of &6Diving Helmet&r - it allows you to breathe underwater and nullifies the mining penalty underwater if the Copper Backtank you wear has air inside."
+				"Speaking of the &6Diving Helmet&r - it allows you to breathe underwater and nullifies the mining penalty underwater if the Copper Backtank you wear has air inside."
 				""
-				"&6Diving Boots&r allow you to walk and jump underwater instead of swimming. They also make you no longer affected by Mechanical Belts."
+				"&6Diving Boots&r allow you to walk and jump underwater instead of swimming. Wearing them, you will no longer be moved by Mechanical Belts."
 				""
 				"These three will be useful for creation of a special suit designed to withstand the vacuum of space..."
 			]
@@ -2665,7 +2665,7 @@
 				""
 				"Scorched Basins and Tables only accept liquids when there's a cast!"
 				""
-				"For example: The Scorched Basin won't accept Molten Clay, when there's no Stone or Andesite in the basin."
+				"For example: The Scorched Basin won't accept Molten Clay, when there's no Stone or Andesite in the Basin."
 				""
 				"If you for some reason want to cast recipes that don't require a cast, you can use &6Gold Platforms&r and &6Gold Bars&r as an \"empty cast\"."
 			]
@@ -2857,7 +2857,7 @@
 			x: 6.0d
 			y: 0.5d
 			shape: "rsquare"
-			subtitle: "3x3 Multiblock which changes block generation based on planet!"
+			subtitle: "3x3 multiblock which changes block generation based on planet!"
 			description: [
 				"Complimentary schematic included with all purchases! You can also Ponder this block to see more info!"
 				""
@@ -2867,7 +2867,7 @@
 				""
 				"&7Lower Layer: 3x3 Copper Casing&r"
 				""
-				"The &6Stone Growth Chamber&r, once built correctly, will slowly generate Andesite. This is a healthy upgrade from a Mining Drill cobblegen setup, as it's less tedious to set up, and the item collection is done for you! As Andesite can be milled into Cobblestone."
+				"The &6Stone Growth Chamber&r, once built correctly, will slowly generate Andesite. This is a healthy upgrade from a Mining Drill cobblegen setup, as Andesite can be milled into Cobblestone, it's less tedious to set up, and the item collection is done for you!"
 				""
 				"When built on other planets, it will generate that planet's main stone block. &6Don't forget!&r"
 			]
@@ -2917,7 +2917,7 @@
 			shape: "hexagon"
 			subtitle: "Huge ore returns with side products galore!"
 			description: [
-				"Create Orestones have been changes to be &6fully automatable&r."
+				"Create Orestones have been changed to be &6fully automatable&r."
 				""
 				"The recipes each require a liquid, a block (or two!) and a dye."
 				""
