@@ -36,12 +36,12 @@
 					symmetry: {
 						type: "empty"
 						direction: 0
+						enable: 1b
 						pos: [
 							0.0f
 							0.0f
 							0.0f
 						]
-						enable: 1b
 					}
 				}
 			}

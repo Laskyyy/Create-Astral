@@ -1685,7 +1685,7 @@
 			description: [
 				"These can be discovered through specific structures in the overworld..."
 				""
-				"Keep an eye out for any &esatellite dishes,&r they just might hold something important."
+				"Keep an eye out for any &eruined satellite dishes,&r they just might hold something important."
 			]
 			dependencies: ["6499CD689863283D"]
 			size: 1.5d
@@ -1700,6 +1700,33 @@
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 5687404501397719867L
+			}]
+		}
+		{
+			x: -8.5d
+			y: 3.0d
+			shape: "gear"
+			subtitle: "{chapter.5.quest.66.subtitle}"
+			description: ["{chapter.5.quest.66.description.1}"]
+			dependencies: ["0873D71412D52F18"]
+			id: "1D294F2F189410BD"
+			tasks: [{
+				id: "0C573B0469B99101"
+				type: "item"
+				item: "create:stockpile_switch"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 3.0d
+			subtitle: "{chapter.5.quest.70.subtitle}"
+			description: ["{chapter.5.quest.70.description.1}"]
+			dependencies: ["1579C73B735F06F8"]
+			id: "0873D71412D52F18"
+			tasks: [{
+				id: "39CD77A35EB1ABBD"
+				type: "item"
+				item: "create:content_observer"
 			}]
 		}
 	]

@@ -155,7 +155,7 @@
 			description: [
 				"Utilising your awakened beacons against &bthe clear sky,&r your telescope can get something from it."
 				""
-				"&7Unveil the shroud."
+				"&7Break the shroud."
 			]
 			dependencies: [
 				"22D73D57C82D4297"
@@ -335,6 +335,7 @@
 			x: 9.5d
 			y: 1.5d
 			subtitle: "Put an &6Analagously Decrypted Data Drive&r in a Parallel Processing Decryptor"
+			description: ["A Parallel Processing decryptor also requires &c50 E/t&r to function."]
 			dependencies: [
 				"04F638504B6D607C"
 				"740769C2802E7EE4"
@@ -351,6 +352,7 @@
 			x: 10.0d
 			y: 2.5d
 			subtitle: "Put a &2Parallel Decypted Data Drive&r in a Microphysical Decryptor"
+			description: ["A Microphysical Decryptor also requires &c250 E/t&r and a &cSubatomic Ingot&r to function."]
 			dependencies: [
 				"3B9A0AB1F6BE839D"
 				"1AE5C771D29C9BC2"
