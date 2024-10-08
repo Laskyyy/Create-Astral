@@ -159,7 +159,7 @@
 			description: [
 				"Access to your new fuel will allow the &6Foundry&r to become &bSUPERHEATED&r!"
 				""
-				"This new heat threshold of 3000*C will allow most future ores to be melted down into molten goodness, which can then be cast as ingots and plates. Ostrum, especially, is going to be integral in creating a rocket and protective equipment to survive the dangerous conditions as we approach ever closer to the Sun..."
+				"This new heat threshold of 3000*C will allow most future ores to be melted down into molten goodness, which can then be cast as ingots and plates. Ostrum, especially, is going to be integral in creating a rocket and protective equipment to survive the dangerous conditions as we approach ever-closer to the Sun..."
 			]
 			dependencies: ["07C60C1DB44579B9"]
 			size: 1.5d
@@ -1044,7 +1044,7 @@
 			}]
 		}
 		{
-			title: "Your first martian ore."
+			title: "Your first Martian ore."
 			x: 2.0d
 			y: 0.0d
 			subtitle: "One out of two, although the second is still out of reach..."
@@ -1352,7 +1352,7 @@
 				""
 				"1: &6Automating it&r, the attached process line involving Sky Stone, Sulfur and Coal will be integral in creating a renewable supply."
 				""
-				"2: &6Prospecting! &rAnd by prospecting, I of course mean trudging through the martian wastelands, in hopes of uncovering surface lakes of Oil. Whilst not a particularly sustainable method, it will for sure allow for your first distillations to obtain a quick headstart."
+				"2: &6Prospecting! &rAnd by prospecting, I of course mean trudging through the Martian wastelands, in hopes of uncovering surface lakes of Oil. Whilst not a particularly sustainable method, it will for sure allow for your first distillations to obtain a quick headstart."
 				""
 				""
 			]
@@ -1375,7 +1375,7 @@
 			title: "Creation of the Refining Agent."
 			x: 11.5d
 			y: -4.5d
-			subtitle: "Another use for biofuel, hope you didnt manually craft that back in Chapter 3..."
+			subtitle: "Another use for Biofuel, hope you didnt manually craft that back in Chapter 3..."
 			description: [
 				"A steady supply of &6Biofuel&r, alongside your new stash of &bNitrogen&r can be assembled into an enriching compound. "
 				""
@@ -1531,7 +1531,7 @@
 			description: [
 				"You may have already got to work at automating scrapboxes!"
 				""
-				"In that case, you will be two steps ahead already... for this task, the easiest method of obtaining Saltpeter Dust is to heated mix, or centrifuge it out of rich soil, which of course comes from this."
+				"In that case, you will be two steps ahead already... for this task, the easiest method of obtaining Saltpeter Dust is to heated mix or centrifuge it out of Rich Soil, which of course comes from this."
 				""
 			]
 			hide_dependency_lines: true
@@ -1550,7 +1550,7 @@
 			x: 8.0d
 			y: -8.0d
 			description: [
-				"Washing compost into rich soil is the quickest way to progress without relying on those dastardly random ticks."
+				"Washing compost into Rich Soil is the quickest way to progress without relying on those dastardly random ticks."
 				""
 				"Do not forget, if you still have a steady supply of pure biomatter going unused, it can be utilised in the more efficient compost recipe, no longer relying on bark or straw!"
 				""
@@ -2253,7 +2253,7 @@
 			y: -1.0d
 			subtitle: "This is... far easier!"
 			description: [
-				"Sick of processing all your biofuel for little result?"
+				"Sick of processing all your Biofuel for little result?"
 				""
 				"Fear no more! &6Pure Biomatter&r in the Distillery, with heated Burners, and Water in the tank will produce a much larger amount of Biofuel &6per item spent&r."
 			]
