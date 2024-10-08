@@ -104,7 +104,7 @@
 				""
 				"The Desizer is made up of 1x Desizer Controller and 8x Desizer Casings. If you wish, you can decorate the Desizer by putting the Casing blocks in a Stone Cutter."
 				""
-				"Hold 'W' on the Desizer to view a simple tutorial on what it looks like and how it works. "
+				"Hold [w] on the Desizer to view a simple tutorial on what it looks like and how it works. "
 			]
 			dependencies: [
 				"1D59FDF8FE9BFC8F"
@@ -410,7 +410,7 @@
 				""
 				"Uncover what items really are. This machine will split items down into its finest parts, turning an item into a maximum of four outputs."
 				""
-				"The Yttric Centrifuge requires a burnable fuel in the lower left slot as an input. This can be automatically input via an input into the side using a Funnel or Hopper. Items can be output through the bottom face of the block."
+				"The Yttric Centrifuge requires a burnable fuel in the lower left slot as an input. This can be automatically inputted via an input into the side using a Funnel or Hopper. Items can be output through the bottom face of the block."
 			]
 			dependencies: ["3BC1C47CA86C200F"]
 			id: "05F3CDD240A00C45"
@@ -675,8 +675,8 @@
 			y: -5.5d
 			subtitle: "Automating Rubble"
 			description: [
-				"Ancient Debris is a compound of a world's history. The centrifuge will break it down into its finest moments"
-				"Place 1 Ancient Debris into a centrifuge to get Ultrapure Debris and a bit of Rubble"
+				"Ancient Debris is a compound of a world's history. The Centrifuge will break it down into its finest moments"
+				"Place 1 Ancient Debris into a Centrifuge to get Ultrapure Debris and a bit of Rubble"
 			]
 			dependencies: [
 				"05F3CDD240A00C45"
@@ -723,7 +723,7 @@
 			y: -9.5d
 			subtitle: "To Store a Sacrifice"
 			description: [
-				"Hold 'W' on the Sturdy Cage to see how to craft it using the Desizer."
+				"Hold [w] on the Sturdy Cage to see how to craft it using the Desizer."
 				""
 				"To summon a &5Great Beast&r, we need a Sacrifice. This cage of Sturdy Blocks will be able to contain it."
 			]
