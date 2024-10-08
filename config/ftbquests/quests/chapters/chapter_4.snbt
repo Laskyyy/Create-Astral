@@ -417,7 +417,11 @@
 			y: 6.0d
 			shape: "diamond"
 			subtitle: "{chapter.5.quest.13.subtitle}"
-			description: ["{chapter.5.quest.13.description.1}"]
+			description: [
+				"Deepslate, which could previously be milled for redstone dust and copper nuggets, can now be &6crushed&r for zinc nuggets and coal!"
+				""
+				"Consider splitting a conveyor into two to automate both processes at once."
+			]
 			dependencies: ["429D2340C2B20A60"]
 			id: "014B450CC8D472A4"
 			tasks: [{
@@ -562,17 +566,34 @@
 			x: -25.0d
 			y: -3.0d
 			shape: "diamond"
-			subtitle: "{chapter.5.quest.18.subtitle}"
-			description: ["{chapter.5.quest.18.description.1}"]
+			subtitle: "Stone Growth Chamber, my beloved."
+			description: [
+				"Desh can be obtained through crushing moon cobblestone or washing moon sand."
+				""
+				"Moon cobblestone will generate infinitely from stone growth chambers in their repsective planets / orbits."
+				""
+				"Similar processes can be used in future planets to obtain their ores too."
+				""
+				"&6One quest objective required to complete&r"
+			]
 			dependencies: ["306D009F01634115"]
+			min_required_tasks: 1
 			id: "7909A5A0E194C800"
-			tasks: [{
-				id: "415C272D0390AAFA"
-				type: "item"
-				title: "{chapter.5.quest.18.task.1.title}"
-				item: "ad_astra:desh_nugget"
-				count: 512L
-			}]
+			tasks: [
+				{
+					id: "415C272D0390AAFA"
+					type: "item"
+					title: "{chapter.5.quest.18.task.1.title}"
+					item: "ad_astra:desh_nugget"
+					count: 512L
+				}
+				{
+					id: "26C41B4DD83A9904"
+					type: "item"
+					item: "ad_astra:raw_desh"
+					count: 64L
+				}
+			]
 			rewards: [
 				{
 					id: "368A95184CCC6B9A"
@@ -685,7 +706,10 @@
 					id: "tconstruct:sword"
 					Count: 1b
 					tag: {
-						Damage: 0
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.5f
+							"tconstruct:durability": 1.1f
+						}
 						tic_stats: {
 							"tconstruct:attack_speed": 1.7600001f
 							"tconstruct:mining_speed": 4.07f
@@ -693,15 +717,8 @@
 							"tconstruct:harvest_tier": "minecraft:diamond"
 							"tconstruct:durability": 246.40001f
 						}
-						tic_multipliers: {
-							"tconstruct:mining_speed": 0.5f
-							"tconstruct:durability": 1.1f
-						}
-						tic_materials: [
-							"tconstruct:silver"
-							"tconstruct:silver"
-							"tconstruct:silver"
-						]
+						Damage: 0
+						tic_broken: 0b
 						tic_modifiers: [
 							{
 								name: "tconstruct:smite"
@@ -712,7 +729,11 @@
 								level: 1s
 							}
 						]
-						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:silver"
+							"tconstruct:silver"
+							"tconstruct:silver"
+						]
 						tic_persistent_data: {
 							upgrades: 3
 							abilities: 1
@@ -1768,20 +1789,6 @@
 			}]
 		}
 		{
-			x: -13.0d
-			y: 8.0d
-			shape: "gear"
-			subtitle: "{chapter.5.quest.66.subtitle}"
-			description: ["{chapter.5.quest.66.description.1}"]
-			dependencies: ["0873D71412D52F18"]
-			id: "1D294F2F189410BD"
-			tasks: [{
-				id: "0C573B0469B99101"
-				type: "item"
-				item: "create:stockpile_switch"
-			}]
-		}
-		{
 			title: "{chapter.5.quest.67.title}"
 			x: -14.0d
 			y: 8.0d
@@ -1835,19 +1842,6 @@
 				id: "3FBA5658ECE0C4AE"
 				type: "item"
 				item: "techreborn:grinder"
-			}]
-		}
-		{
-			x: -13.0d
-			y: 7.0d
-			subtitle: "{chapter.5.quest.70.subtitle}"
-			description: ["{chapter.5.quest.70.description.1}"]
-			dependencies: ["22B29B232EF2638F"]
-			id: "0873D71412D52F18"
-			tasks: [{
-				id: "39CD77A35EB1ABBD"
-				type: "item"
-				item: "create:content_observer"
 			}]
 		}
 		{
@@ -2433,57 +2427,20 @@
 			}]
 		}
 		{
-			title: "{chapter.5.quest.96.title}"
-			x: -4.5d
-			y: 3.5d
-			shape: "diamond"
-			subtitle: "{chapter.5.quest.96.subtitle}"
-			description: ["{chapter.5.quest.96.description.1}"]
-			dependencies: ["429D2340C2B20A60"]
-			id: "71E3E5B94A8B7FE3"
-			tasks: [{
-				id: "3CF45A65B2FAF358"
-				type: "item"
-				item: "minecraft:sand"
-				count: 256L
-			}]
-			rewards: [
-				{
-					id: "19D69140A45EB73C"
-					type: "xp"
-					xp: 50
-				}
-				{
-					id: "4245CFFA03C41B3A"
-					type: "item"
-					item: "tconstruct:clear_glass"
-					count: 512
-				}
-			]
-		}
-		{
-			title: "{chapter.5.quest.97.title}"
+			title: "{chapter.5.quest.98.title}"
 			x: -4.0d
 			y: 6.5d
 			shape: "diamond"
-			subtitle: "{chapter.5.quest.97.subtitle}"
-			description: ["{chapter.5.quest.97.description.1}"]
-			dependencies: ["429D2340C2B20A60"]
-			optional: true
-			id: "6061158DA0E09D13"
-			tasks: [{
-				id: "395597019B7DD9FE"
-				type: "item"
-				item: "techreborn:netherrack_dust"
-			}]
-		}
-		{
-			title: "{chapter.5.quest.98.title}"
-			x: -4.5d
-			y: 7.0d
-			shape: "diamond"
 			subtitle: "{chapter.5.quest.98.subtitle}"
-			description: ["{chapter.5.quest.98.description.1}"]
+			description: [
+				"Silver can be obtained by washing the lime byproduct obtained by crushing limestone."
+				""
+				"It also appears as a byproduct in desh automation."
+				""
+				"Consider creating a limestone generator if you haven't already! "
+				""
+				"(Honey+Lava cobble generator OR compacting Cobble+Milk)"
+			]
 			dependencies: ["429D2340C2B20A60"]
 			id: "7C29C95E2F7AAA62"
 			tasks: [
@@ -3198,7 +3155,7 @@
 			description: [
 				"Hint: There is a low chance on most high tier loot chests for any blueprint, however a guaranteed roll will always be at the top of a certain &6telecommunications tower&r on the moon..."
 				""
-				"All blueprints can be &6Duplicated&r through mixing once you have obtained the first copy. "
+				"All blueprints can be &6Duplicated&r through compacting in a basin, once you have obtained the first copy. "
 			]
 			dependencies: ["21DBCD51CC35B794"]
 			size: 1.5d
@@ -3296,14 +3253,14 @@
 						tag: {
 							tic_modifiers: [ ]
 							tic_broken: 0b
-							Damage: 0
+							tic_multipliers: { }
 							tic_stats: {
 								"tconstruct:armor_toughness": 2.0f
 								"tconstruct:knockback_resistance": 0.1f
 								"tconstruct:durability": 330.0f
 								"tconstruct:armor": 2.0f
 							}
-							tic_multipliers: { }
+							Damage: 0
 							tic_persistent_data: {
 								upgrades: 1
 								abilities: 1
@@ -3321,14 +3278,14 @@
 						tag: {
 							tic_modifiers: [ ]
 							tic_broken: 0b
-							Damage: 0
+							tic_multipliers: { }
 							tic_stats: {
 								"tconstruct:armor_toughness": 2.0f
 								"tconstruct:knockback_resistance": 0.1f
 								"tconstruct:durability": 480.0f
 								"tconstruct:armor": 7.0f
 							}
-							tic_multipliers: { }
+							Damage: 0
 							tic_persistent_data: {
 								upgrades: 1
 								abilities: 1
@@ -3346,14 +3303,14 @@
 						tag: {
 							tic_modifiers: [ ]
 							tic_broken: 0b
-							Damage: 0
+							tic_multipliers: { }
 							tic_stats: {
 								"tconstruct:armor_toughness": 2.0f
 								"tconstruct:knockback_resistance": 0.1f
 								"tconstruct:durability": 450.0f
 								"tconstruct:armor": 5.0f
 							}
-							tic_multipliers: { }
+							Damage: 0
 							tic_persistent_data: {
 								upgrades: 1
 								abilities: 1
@@ -3371,14 +3328,14 @@
 						tag: {
 							tic_modifiers: [ ]
 							tic_broken: 0b
-							Damage: 0
+							tic_multipliers: { }
 							tic_stats: {
 								"tconstruct:armor_toughness": 2.0f
 								"tconstruct:knockback_resistance": 0.1f
 								"tconstruct:durability": 390.0f
 								"tconstruct:armor": 2.0f
 							}
-							tic_multipliers: { }
+							Damage: 0
 							tic_persistent_data: {
 								upgrades: 1
 								abilities: 1
@@ -3498,7 +3455,7 @@
 			description: [
 				"The ruins of the moon, swallowed and regurgitated... Thrown up into the air like a great beast playing with its food."
 				""
-				"With a rocket, we can see what lies in the Moon Debris beyond orbit. Bring your finest gear - there's a terrible aura filling the air here, and things will get hostile very quickly."
+				"With a &6Desh Rocket&r, we can see what lies in the &3Moon Debris&r beyond orbit. Bring your finest gear - there's a terrible aura filling the air here, and things will get hostile very quickly."
 			]
 			dependencies: ["6E20B194F5CA8F22"]
 			size: 1.5d
@@ -3521,7 +3478,7 @@
 			description: [
 				"The Monsters here, corrupted by something living, something evil."
 				""
-				"The Crystals they form when defeated... are clearly not of this world. What caused this damage?"
+				"The &3Crystals&r they form when defeated... are clearly not of this world. What caused this damage?"
 				""
 				"Reality itself seems to disagree with whatever grazed civilisation on the Moon, yet... There's something so beautiful about the scars it left."
 			]
@@ -3532,6 +3489,12 @@
 				type: "item"
 				item: "astraladditions:moonset_crystal"
 			}]
+			rewards: [{
+				id: "7321927BC15331FB"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 16
+			}]
 		}
 		{
 			x: 8.5d
@@ -3540,9 +3503,9 @@
 			description: [
 				"Our modern technology and alien matter, combined to form something of great use."
 				""
-				"The Pylon permits teleportation to a set location, as long as the user doesn't step beyond 256 blocks of it."
+				"The &3Pylon&r permits teleportation to a set location, as long as the user doesn't step beyond 256 blocks of it."
 				""
-				"Once a Pylon is active, Right Click to teleport, or Shift + Right Click to detonate for a strong burst of knockback."
+				"Once a &3Pylon&r is active, Right Click to teleport, or Shift + Right Click to detonate for a strong burst of knockback."
 			]
 			dependencies: ["3A67A15771B2D8CD"]
 			id: "659C8D9E756AAA57"
@@ -3558,13 +3521,14 @@
 			}]
 		}
 		{
+			title: "The Cometball"
 			x: 8.5d
 			y: 3.5d
 			subtitle: "Throwable Comet"
 			description: [
-				"The Crystals can be formed into a ball for a devastating projectile."
+				"The &3Crystals&r can be formed into a ball for a devastating projectile."
 				""
-				"If a Cometball hits an enemy, it will launch them into the air. Throw the Cometball while looking straight down to hit yourself, allowing for air maneuverablity at the cost of your health."
+				"If a Cometball hits an enemy, it will launch them into the air. Throw the &3Cometball&r while looking straight down to hit yourself, allowing for air maneuverablity at the cost of your health."
 			]
 			dependencies: ["3A67A15771B2D8CD"]
 			id: "363F32FD21913A0F"
@@ -3582,6 +3546,7 @@
 			}]
 		}
 		{
+			title: "Chorus Fruit"
 			x: 5.5d
 			y: 4.5d
 			subtitle: "It Grows."
@@ -3671,7 +3636,7 @@
 			y: 3.5d
 			subtitle: "No need to Shulk about it :("
 			description: [
-				"Backpacks!!! but- different."
+				"Backpacks!!! But- different."
 				""
 				"Use Shulker Shells to make Shulker Boxes. Place these down like a chest and store items. Break the block and you will be able to carry a whole inventory in one slot."
 			]
@@ -3788,15 +3753,17 @@
 		{
 			x: -25.5d
 			y: -5.5d
+			shape: "pentagon"
 			subtitle: "The Purple Prison"
 			description: [
-				"You may stumble upon a Shimmer Heart in a storage crate - left behind from cruel experimentation..."
+				"You may stumble upon a &dShimmer Heart&r in a storage crate - left behind from cruel experimentation..."
 				""
 				"To reawaken it would be... cruel..."
 				""
-				"When thrown into a pool of Shimmer, the Awakened Shimmer Heart will glow. Globs of Shimmer will chunk together to form a &dPowerful Creature&r. It will not take kindly to you reawakening it."
+				"When thrown into a pool of Shimmer, the &dAwakened Shimmer Heart&r will glow. Globs of Shimmer will chunk together to form a &dPowerful Creature&r. It will not take kindly to you reawakening it."
 			]
 			dependencies: ["63C197DE5231155D"]
+			size: 1.5d
 			id: "33875939443A5D1C"
 			tasks: [{
 				id: "3E7E3B721D3EA64B"
@@ -3816,11 +3783,11 @@
 			y: -6.5d
 			subtitle: "Hard not to eat!"
 			description: [
-				"XP Crystal Lakes spawn rarely underground on the Moon. A crust of hardened XP will surround a pool of Liquid Soul. "
+				"&aXP Crystal&r Lakes spawn rarely underground on the Moon. A crust of hardened XP will surround a pool of &bLiquid Soul&r. "
 				""
-				"Budding XP Crystals feed off of Liquid Soul through the sides of the block, producing XP Crystals on the top and bottom of the block when they get hungry. Liquid Soul is automatable, so keep those crystals growing!"
+				"&aBudding XP Crystals&r feed off of &bLiquid Soul&r through the sides of the block, producing &aXP Crystals&r on the top and bottom of the block when they get hungry. &bLiquid Soul&r is automatable, so keep those crystals growing!"
 				""
-				"XP Crystals can be eaten for XP, or they can be melted and processed into XP Boost potions, and various foods that grant large quantities of XP when digested."
+				"&aXP Crystals&r can be eaten for &aXP&r, or they can be melted and processed into &aXP Boost&r potions, and various foods that grant large quantities of &aXP&r when digested."
 			]
 			dependencies: ["582C723B2F261D68"]
 			id: "59004FDE3ACCCAD6"
@@ -3837,6 +3804,11 @@
 					id: "72C19B21D2B6EB18"
 					type: "item"
 					item: "xpcrystals:xp_crystal"
+				}
+				{
+					id: "7B476681124C996E"
+					type: "item"
+					item: "kubejs:liquid_xp_nuggies_bucket"
 				}
 			]
 			rewards: [{

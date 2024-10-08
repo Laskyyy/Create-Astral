@@ -27,17 +27,15 @@ function millingRecipes(event) {
         ["create:asurine", "minecraft:lapis_lazuli", 1],
         ["create:crimsite", "minecraft:raw_iron", 0.4],
         ["create:ochrum", "minecraft:raw_gold", 0.4],
-        ["create:limestone", "techreborn:raw_tin", 0.5],
+        ["create:limestone", "techreborn:raw_tin", 0.2],
         ["create:scorchia", "create:raw_zinc", 0.4],
         ["create:scoria", "minecraft:magma_block", 1],
         ["minecraft:blackstone", "create:powdered_obsidian", 0.2],
-        ["minecraft:basalt", "techreborn:andesite_dust", 0.4],
         ["minecraft:tuff", "minecraft:iron_nugget", 1],
         ["minecraft:dripstone_block", "2x minecraft:golden_nugget", 1],
-        ["minecraft:basalt", "create:copper_nugget", 0.4],
         ["minecraft:blackstone", "create:zinc_nugget", 0.5],
         ["minecraft:andesite", "techreborn:tin_nugget", 0.5],
-        ["minecraft:flint", "techreborn:andesite_dust", 1],
+        ["minecraft:flint", "techreborn:andesite_dust", 2],
         ["minecraft:iron_nugget", "techreborn:andesite_dust", 0.75],
         ["minecraft:tube_coral_block", "2x minecraft:blue_dye", 1],
         ["minecraft:brain_coral_block", "2x minecraft:pink_dye", 1],
@@ -190,7 +188,7 @@ function crushingRecipes(event) {
             outputs: [
                 ["minecraft:cobblestone", 1],
                 ["techreborn:andesite_dust", 1],
-                ["techreborn:andesite_dust", 0.5],
+                ["techreborn:andesite_dust", 0.9],
             ],
         },
         {
@@ -1390,12 +1388,6 @@ function fillingRecipes(event) {
             amount: BUCKET,
         },
         {
-            input: "minecraft:compass",
-            output: "explorerscompass:explorerscompass",
-            fluid: "kubejs:shimmer",
-            amount: 4 * INGOT,
-        },
-        {
             input: "doodads:brick_road",
             output: "doodads:yellow_brick_road",
             fluid: "tconstruct:molten_gold",
@@ -1461,6 +1453,11 @@ function fillingRecipes(event) {
 function deployingRecipes(event) {
     [
         {
+            output: "explorerscompass:explorerscompass",
+            basin_input: "minecraft:compass",
+            deployer_input: "phonos:redstone_chip",
+        },
+        {
             output: "astraladditions:oh-no",
             basin_input: "astraladditions:moonblazed_orb",
             deployer_input: "astraladditions:orbital_navigation_ring",
@@ -1471,12 +1468,7 @@ function deployingRecipes(event) {
             deployer_input: "yttr:haemopal",
         },
     ].forEach((recipe) => {
-        event.recipes
-            .createSequencedAssembly([Item.of(recipe.output).withChance(1)], recipe.basin_input, [
-                event.recipes.createDeploying(recipe.basin_input, [recipe.basin_input, recipe.deployer_input]),
-            ])
-            .transitionalItem(recipe.basin_input)
-            .loops(1);
+        event.recipes.create.deploying([recipe.output], [recipe.basin_input, recipe.deployer_input]);
     });
 }
 

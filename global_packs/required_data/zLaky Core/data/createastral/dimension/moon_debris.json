@@ -1,5 +1,5 @@
 {
-    "type": "minecraft:the_end",
+    "type": "minecraft:the_nether",
     "generator": {
       "type": "ad_astra:planet_noise",
       "seed": 0,

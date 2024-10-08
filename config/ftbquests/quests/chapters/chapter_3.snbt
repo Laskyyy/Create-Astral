@@ -458,18 +458,18 @@
 			}]
 		}
 		{
-			title: "{chapter.3.quest.10.title}"
-			x: 6.5d
-			y: -2.0d
-			subtitle: "{chapter.3.quest.10.subtitle}"
+			title: "The Explorer's Compass"
+			x: 5.0d
+			y: -4.5d
+			subtitle: "Compass, find me a structure!"
 			description: [
-				"The &6Explorer's Compass&r will lead you to a variety of different structures."
+				"The &6Explorer's Compass&r will lead you to a variety of different structures!"
 				""
 				"I would not recommend searching for a &7Stronghold&r. The End Portal does not work."
 				""
 				"You can also find &6Shimmer Lakes&r, which will be important pretty soon..."
 			]
-			dependencies: ["17041A495A41EEFD"]
+			dependencies: ["267CD8D04921402E"]
 			id: "33B14FCDB52879E4"
 			tasks: [{
 				id: "720A3210935826F3"
@@ -653,7 +653,7 @@
 				"Ponder the Electrolyzer to learn how to build it."
 				"Pump Water into the Electrolyser."
 				""
-				"If the multiblock is done correctly, the Electrolyser should start producing Oxygen."
+				"If the multiblock is done correctly, the Electrolyser will start producing Oxygen."
 				""
 				"Pump Oxygen from the Electrolyzer - you don't need filters as Oxygen is the only liquid that can be extracted."
 			]
@@ -695,9 +695,7 @@
 				""
 				"So far, there's not much use for them, but when you get access to Brass, they will become important."
 				""
-				"Tip: To polish Rose Quartz manually, hold &6Sand Paper&r in one hand, &6Rose Quartz&r in other, and hold Right-click."
-				""
-				"And then the Sand Paper breaks after 8 uses."
+				"Tip: To polish Rose Quartz manually, hold &6Sand Paper&r in one hand, &6Rose Quartz&r in other, and hold Right-click. To polish Rose Quartz automatically, you can use a Deployer! Note that Sand Paper breaks after 8 uses."
 			]
 			dependencies: [
 				"0F4C452C9C9AB1B8"
@@ -748,8 +746,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						File: "[AstralExamples] Electrolyzer.nbt"
 						Rotation: "NONE"
+						File: "[AstralExamples] Electrolyzer.nbt"
 						Mirror: "NONE"
 						Bounds: [
 							7
@@ -1095,7 +1093,11 @@
 			x: 7.0d
 			y: -4.5d
 			subtitle: "{chapter.3.quest.30.subtitle}"
-			description: ["{chapter.3.quest.30.description.1}"]
+			description: [
+				"{chapter.3.quest.30.description.1}"
+				""
+				"&7If you choose to use the Explorer's Compass, remember that Shimmer Lakes form at around Y=-24!&r"
+			]
 			hide_dependency_lines: true
 			dependencies: ["557684C7D7B955B8"]
 			id: "586FA45ED205784F"
@@ -1296,19 +1298,18 @@
 			}]
 		}
 		{
+			title: "The Deployer"
 			x: 5.0d
 			y: 3.0d
 			subtitle: "Whoa, Sequenced Assembly already?"
 			description: [
 				"The &6Deployer&r is very special - it acts as a player right-clicking or left-clicking."
 				""
-				"Deployers always interact with stuff 2 blocks ahead of itself."
+				"Deployers always interact with things 2 blocks ahead of itself. It can place blocks, feed animals, use a bucket... It can do a lot!"
 				""
-				"Deployers can also be used to apply items onto blocks on a Depot or a Belt."
+				"Deployers can also be used in a new type of recipe - deploying items onto other items on a Depot or a Belt."
 				""
-				"They can also polish Rose Quartz much faster than you can."
-				""
-				"Useful on contraptions to automatically place blocks!"
+				"To craft them, you will need Polished Rose Quartz. Hold &6Sand Paper&r in one hand, &6Rose Quartz&r in the other, and hold Right-Click."
 			]
 			dependencies: ["62DAEDF65FB2226B"]
 			id: "41926BDF2F7890F6"
@@ -1322,6 +1323,11 @@
 					id: "605FB50C0F3B8331"
 					type: "item"
 					item: "create:deployer"
+				}
+				{
+					id: "60B18C380C155DC8"
+					type: "item"
+					item: "create:polished_rose_quartz"
 				}
 			]
 		}
@@ -1611,7 +1617,7 @@
 			description: [
 				"Washing Gravel gives 25% chance of getting &6Flint&r and 12% chance of getting &6Iron Nuggets&r."
 				""
-				"Sieving Gravel gives 35% chance of getting &6Flint&r and 15% chance of getting &6Iron Nuggets&r."
+				"If you have lots of spare &6Tuff&r, you can Mill it to get 1 &6Iron Nugget&r."
 				""
 				"You can automate Gravel by milling Cobblestone."
 			]
@@ -2850,15 +2856,20 @@
 			title: "&6Unlimited Andesite&r"
 			x: 6.0d
 			y: 0.5d
+			shape: "rsquare"
 			subtitle: "3x3 Multiblock which changes block generation based on planet!"
 			description: [
-				"Complimentary schematic included with all purchases!"
+				"Complimentary schematic included with all purchases! You can also Ponder this block to see more info!"
 				""
-				"Top Layer: 3x3 Copper Casing"
+				"&7Top Layer: 3x3 Copper Casing&r"
 				""
-				"Middle Layer: Lava in middle, surrounded by vanilla glass. Chamber on any central side."
+				"&7Middle Layer: Lava in middle, surrounded by vanilla glass. Chamber on any central side.&r"
 				""
-				"Lower Layer: 3x3 Copper Casing"
+				"&7Lower Layer: 3x3 Copper Casing&r"
+				""
+				"The &6Stone Growth Chamber&r, once built correctly, will slowly generate Andesite. This is a healthy upgrade from a Mining Drill cobblegen setup, as it's less tedious to set up, and the item collection is done for you! As Andesite can be milled into Cobblestone."
+				""
+				"When built on other planets, it will generate that planet's main stone block. &6Don't forget!&r"
 			]
 			dependencies: ["557684C7D7B955B8"]
 			id: "7F3DD44E4885A837"
@@ -2887,8 +2898,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						File: "[AstralExamples] Stone Growth Chamber.nbt"
 						Rotation: "NONE"
+						File: "[AstralExamples] Stone Growth Chamber.nbt"
 						Mirror: "NONE"
 						Bounds: [
 							3

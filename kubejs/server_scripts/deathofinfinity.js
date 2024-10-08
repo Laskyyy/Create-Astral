@@ -53,7 +53,7 @@ const mixings = [
     {
         output: {fluid: "minecraft:lava", amount: 125 * mB },
         input: [
-            "1x createastral:stone_dust",
+            "1x techreborn:andesite_dust",
             "1x minecraft:cobblestone",
             { fluid: "minecraft:lava", amount: 50 * mB },
         ],
@@ -62,7 +62,7 @@ const mixings = [
     },{
     output: {fluid: "minecraft:lava", amount: 250 * mB },
     input: [
-        "4x createastral:stone_dust",
+        "4x techreborn:andesite_dust",
         "2x minecraft:cobblestone",
         { fluid: "minecraft:lava", amount: 50 * mB },
     ],
@@ -71,7 +71,7 @@ const mixings = [
     },{
         output: {fluid: "minecraft:lava", amount: 500 * mB },
         input: [
-            "4x createastral:stone_dust",
+            "4x techreborn:andesite_dust",
             "2x minecraft:netherrack",
         ],
         heat: "heated",
