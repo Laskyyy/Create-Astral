@@ -756,7 +756,7 @@
 			}]
 		}
 		{
-			title: "[placeholder] Contained End"
+			title: "Contained End"
 			x: 3.5d
 			y: -11.5d
 			description: [
