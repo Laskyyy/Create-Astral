@@ -1294,7 +1294,7 @@
 			title: "Liquid Sulfur."
 			x: 14.5d
 			y: 3.5d
-			description: ["Sulfur, placed in the Melter or Foundry, can be reduced to its fluid form, and while it isnt too combustible like this, it only requires some basic catalysts to change that..."]
+			description: ["Sulfur, placed in the Melter or Foundry, can be reduced to its fluid form, and while it isn't too combustible like this, it only requires some basic catalysts to change that..."]
 			dependencies: ["04954A167C56AC1C"]
 			id: "0842CB2511EA7CE9"
 			tasks: [{

@@ -335,7 +335,7 @@
 			x: 9.5d
 			y: 1.5d
 			subtitle: "Put an &6Analagously Decrypted Data Drive&r in a Parallel Processing Decryptor."
-			description: ["A Parallel Processing decryptor also requires &c50 E/t&r to function."]
+			description: ["A Parallel Processing Decryptor also requires &c50 E/t&r to function."]
 			dependencies: [
 				"04F638504B6D607C"
 				"740769C2802E7EE4"

@@ -1089,7 +1089,7 @@
 			description: [
 				"&6Mechanical Saws&r can cut whole trees in one swoop!"
 				""
-				"If the Mechanical Saw destroys all the bottommost Logs of the tree, it will destroy all Logs and Leaves of the tree above!"
+				"If the Mechanical Saw destroys all the bottommost logs of the tree, it will destroy all logs and leaves of the tree above!"
 			]
 			dependencies: ["4EB4838CCED125E2"]
 			id: "0E7A9F741823BB1C"

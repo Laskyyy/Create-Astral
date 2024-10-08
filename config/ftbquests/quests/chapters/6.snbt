@@ -102,7 +102,7 @@
 			description: [
 				"Introducing: The Desizer - a multiblock machine with a specialisation in shrinking."
 				""
-				"The Desizer is made up of 1x Desizer Controller and 8x Desizer Casings. If you wish, you can decorate the Desizer by putting the Casing blocks in a Stone Cutter."
+				"The Desizer is made up of 1x Desizer Controller and 8x Desizer Casings. If you wish, you can decorate the Desizer by putting the Casing blocks in a Stonecutter."
 				""
 				"Hold [w] on the Desizer to view a simple tutorial on what it looks like and how it works. "
 			]
@@ -575,7 +575,7 @@
 			x: 0.5d
 			y: -9.5d
 			subtitle: "Ultra Compression"
-			description: ["Carbon, a part of all life. Using the Desizer, compress it into a highly-dense form."]
+			description: ["Carbon, a part of all life. Using the Desizer, compress it into a highly dense form."]
 			dependencies: ["47A50CF905A68E98"]
 			id: "171116CC8CD6606A"
 			tasks: [{

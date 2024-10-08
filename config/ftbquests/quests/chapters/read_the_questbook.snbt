@@ -131,7 +131,7 @@
 			}]
 		}
 		{
-			title: "&6The smeltery is disabled!"
+			title: "&6The Smeltery is disabled!"
 			icon: "tconstruct:smeltery_controller"
 			x: -7.0d
 			y: -7.5d
