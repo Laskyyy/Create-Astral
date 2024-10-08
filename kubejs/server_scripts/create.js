@@ -972,8 +972,8 @@ function sequencedAssemblyRecipes(event) {
 
         event.recipes
             .createSequencedAssembly(["techreborn:industrial_circuit"], "techreborn:electronic_circuit", [
-                event.recipes.createFilling(sequenced_placehold, [
-                    sequenced_placehold,
+                event.recipes.createFilling("techreborn:electronic_circuit", [
+                    "techreborn:electronic_circuit",
                     { fluid: "techreborn:lithium", amount: 4500 },
                 ]),
                 event.recipes.createPressing("techreborn:electronic_circuit", "techreborn:electronic_circuit"),
