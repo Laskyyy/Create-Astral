@@ -247,6 +247,7 @@ onEvent("recipes", (event) => {
         { output: "createdeco:brass_door" },
         { output: "createdeco:copper_door" },
         { output: "createdeco:zinc_door" },
+        { output: "createdeco:zinc_sheet" },
 
         //Create Additions
 

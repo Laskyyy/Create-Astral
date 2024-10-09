@@ -1475,6 +1475,12 @@ function mixingRecipes(event) {
             time: 100,
         },
         {
+            output: "2x minecraft:soul_soil",
+            input: ["minecraft:dirt", "minecraft:soul_sand"],
+            heat: "",
+            time: 100,
+        },
+        {
             output: "minecraft:small_amethyst_bud",
             input: ["techreborn:amethyst_dust", "ae2:certus_crystal_seed"],
             heat: "",
@@ -2594,6 +2600,14 @@ function splashingRecipes(event) {
                 ["createastral:pure_biomatter", 1],
                 ["minecraft:sugar", 0.2],
                 ["minecraft:bonemeal", 0.2],
+            ],
+        },
+        {
+            input: "minecraft:soul_soil",
+            outputs: [
+                ["minecraft:gold_nugget", 0.08],
+                ["minecraft:quartz", 0.06],
+                ["minecraft:bone_meal", 0.1],
             ],
         },
         {
