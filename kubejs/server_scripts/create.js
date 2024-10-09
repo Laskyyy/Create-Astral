@@ -1998,7 +1998,7 @@ function mixingRecipes(event) {
         {
             output: Fluid.of("tconstruct:molten_pig_iron", INGOT * 2),
             input: [
-                "minecraft:chop",
+                "minecraft:porkchop",
                 { fluid: "tconstruct:molten_iron", amount: INGOT },
                 { fluid: "tconstruct:molten_gold", amount: INGOT },
             ],
