@@ -433,6 +433,7 @@ onEvent("recipes", (event) => {
         { output: "explorerscompass:explorerscompass" },
 
         { output: "phonos:radio_player_piano" },
+        { output: "phonos:radio_jukebox" },
         { output: "phonos:redstone_chip" },
 
         { mod: "doodads" },
