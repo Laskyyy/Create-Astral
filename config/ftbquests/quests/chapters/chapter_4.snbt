@@ -638,11 +638,9 @@
 			size: 1.5d
 			id: "6027602617EC9F1F"
 			tasks: [{
-				id: "369624A3BE4061DF"
-				type: "structure"
-				title: "{chapter.5.quest.20.task.1.title}"
-				icon: "ad_astra:iron_plating"
-				structure: "incendium:pipeline"
+				id: "28D4A5E8D1A13E6C"
+				type: "item"
+				item: "minecraft:blaze_rod"
 			}]
 			rewards: [{
 				id: "3E4944FC57F47F13"
