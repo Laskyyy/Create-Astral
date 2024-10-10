@@ -175,25 +175,25 @@
 				{
 					id: "22FB9564D8489F57"
 					type: "item"
-					item: "create:crushed_iron_ore"
+					item: "create:crushed_raw_iron"
 					count: 5
 				}
 				{
 					id: "2C3A9DF5C7850621"
 					type: "item"
-					item: "create:crushed_gold_ore"
+					item: "create:crushed_raw_gold"
 					count: 5
 				}
 				{
 					id: "35AEE17AA1541902"
 					type: "item"
-					item: "create:crushed_copper_ore"
+					item: "create:crushed_raw_copper"
 					count: 5
 				}
 				{
 					id: "0BE9FB2ACC5AE776"
 					type: "item"
-					item: "create:crushed_zinc_ore"
+					item: "create:crushed_raw_zinc"
 					count: 5
 				}
 			]
@@ -638,11 +638,9 @@
 			size: 1.5d
 			id: "6027602617EC9F1F"
 			tasks: [{
-				id: "369624A3BE4061DF"
-				type: "structure"
-				title: "{chapter.5.quest.20.task.1.title}"
-				icon: "ad_astra:iron_plating"
-				structure: "incendium:pipeline"
+				id: "28D4A5E8D1A13E6C"
+				type: "item"
+				item: "minecraft:blaze_rod"
 			}]
 			rewards: [{
 				id: "3E4944FC57F47F13"
