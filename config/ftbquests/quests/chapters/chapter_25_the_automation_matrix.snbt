@@ -193,10 +193,7 @@
 			subtitle: "{chapter.4.quest.38.subtitle}"
 			description: ["{chapter.4.quest.38.description.1}"]
 			hide_dependency_lines: true
-			dependencies: [
-				"274BA7205ECC4FEB"
-				"73973C5E6D2573B8"
-			]
+			dependencies: ["75928E9A25B2EFFD"]
 			size: 2.5d
 			id: "0C464BD01B2B52E0"
 			tasks: [{
@@ -557,10 +554,7 @@
 			y: 15.0d
 			shape: "diamond"
 			description: [""]
-			dependencies: [
-				"557684C7D7B955B8"
-				"0BF064389F9FFDC3"
-			]
+			dependencies: ["0BF064389F9FFDC3"]
 			hide: false
 			size: 2.5d
 			id: "737625E7DFCB0382"
@@ -576,10 +570,7 @@
 			shape: "diamond"
 			description: [""]
 			min_required_dependencies: 2
-			dependencies: [
-				"22B29B232EF2638F"
-				"737625E7DFCB0382"
-			]
+			dependencies: ["737625E7DFCB0382"]
 			size: 2.5d
 			id: "1D0E2A46A37501CB"
 			tasks: [{
@@ -691,10 +682,7 @@
 			y: 17.5d
 			shape: "diamond"
 			description: [""]
-			dependencies: [
-				"2E7D02CA77627EF5"
-				"1D0E2A46A37501CB"
-			]
+			dependencies: ["1D0E2A46A37501CB"]
 			size: 2.5d
 			id: "705D35F27DB6DDEF"
 			tasks: [{
@@ -1789,26 +1777,6 @@
 			}]
 		}
 		{
-			title: "PLACEHOLDER QUEST"
-			x: -22.0d
-			y: 6.5d
-			shape: "square"
-			dependencies: ["3930FFC230D67068"]
-			size: 2.0d
-			id: "6A67B1BB390AED38"
-			tasks: [{
-				id: "040F4D73A0A54E67"
-				type: "item"
-				item: "techreborn:raw_silver"
-			}]
-			rewards: [{
-				id: "6C8933E5C2366D2A"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 2053519168689179764L
-			}]
-		}
-		{
 			x: -25.0d
 			y: 9.5d
 			dependencies: ["2D90C8ED3DD34561"]
@@ -1912,19 +1880,6 @@
 				id: "18318935E609530E"
 				type: "item"
 				item: "create:refined_radiance_casing"
-			}]
-		}
-		{
-			x: -22.0d
-			y: 9.5d
-			shape: "square"
-			dependencies: ["6A67B1BB390AED38"]
-			size: 2.0d
-			id: "34A96ED06A2CF0FF"
-			tasks: [{
-				id: "5FA3171710B1AB3F"
-				type: "item"
-				item: "techreborn:raw_lead"
 			}]
 		}
 		{
@@ -2243,8 +2198,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						Rotation: "NONE"
 						File: "[AstralExamples] Stone Growth Chamber.nbt"
+						Rotation: "NONE"
 						Mirror: "NONE"
 						Bounds: [
 							3
@@ -2288,8 +2243,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						Rotation: "NONE"
 						File: "[AstralExamples] Distillery.nbt"
+						Rotation: "NONE"
 						Mirror: "NONE"
 						Bounds: [
 							5
