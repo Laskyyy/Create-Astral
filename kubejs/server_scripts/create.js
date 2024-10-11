@@ -885,7 +885,7 @@ function sequencedAssemblyRecipes(event) {
                 ]),
             ])
             .loops(2)
-            .transitionalItem("tconstruct:obsidian_pane");
+            .transitionalItem(inc_sturdy_sheet);
 
         event.recipes
             .createSequencedAssembly(["6x create:belt_connector"], "minecraft:dried_kelp", [
