@@ -3350,61 +3350,6 @@ function compactingRecipes(event) {
             inputs: ["vinery:red_grape"],
         },
         {
-            output: "minecraft:porkchop",
-            inputs: [
-                "3x #c:mushrooms",
-                "minecraft:rotten_flesh",
-                {
-                    fluid: "createaddition:seed_oil",
-                    amount: 100 * mB,
-                },
-            ],
-        },
-        {
-            output: "minecraft:beef",
-            inputs: [
-                "3x #c:mushrooms",
-                "3x #c:grass_variants",
-                {
-                    fluid: "createaddition:seed_oil",
-                    amount: 100 * mB,
-                },
-            ],
-        },
-        {
-            output: "minecraft:chicken",
-            inputs: [
-                "3x #c:mushrooms",
-                "farmersdelight:rice",
-                {
-                    fluid: "createaddition:seed_oil",
-                    amount: 100 * mB,
-                },
-            ],
-        },
-        {
-            output: "minecraft:mutton",
-            inputs: [
-                "3x #c:mushrooms",
-                "#minecraft:wool",
-                {
-                    fluid: "createaddition:seed_oil",
-                    amount: 100 * mB,
-                },
-            ],
-        },
-        {
-            output: "minecraft:rabbit",
-            inputs: [
-                "3x #c:mushrooms",
-                "minecraft:carrot",
-                {
-                    fluid: "createaddition:seed_oil",
-                    amount: 100 * mB,
-                },
-            ],
-        },
-        {
             output: "2x createastral:gyrodyne_blueprint",
             inputs: ["createastral:gyrodyne_blueprint", "create:empty_schematic", "32x minecraft:black_dye"],
         },
