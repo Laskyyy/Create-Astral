@@ -21,7 +21,7 @@ function millingRecipes(event) {
     //[Input, Output, Chance]
     [
         ["farmersdelight:straw", "minecraft:string", 1],
-        ["ae2:certus_quartz_dust", "ae2:certus_crystal_seed", 2],
+        ["ae2:certus_quartz_dust", "ae2:certus_crystal_seed", 1],
         ["minecraft:gravel", "minecraft:sand", 0.5],
         ["create:veridium", "minecraft:raw_copper", 0.6],
         ["create:asurine", "minecraft:lapis_lazuli", 1],
@@ -34,7 +34,7 @@ function millingRecipes(event) {
         ["minecraft:tuff", "minecraft:iron_nugget", 1],
         ["minecraft:dripstone_block", "2x minecraft:golden_nugget", 1],
         ["minecraft:blackstone", "create:zinc_nugget", 0.5],
-        ["minecraft:flint", "techreborn:andesite_dust", 2],
+        ["minecraft:flint", "techreborn:andesite_dust", 1],
         ["minecraft:iron_nugget", "techreborn:andesite_dust", 0.75],
         ["minecraft:tube_coral_block", "2x minecraft:blue_dye", 1],
         ["minecraft:brain_coral_block", "2x minecraft:pink_dye", 1],
