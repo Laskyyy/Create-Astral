@@ -885,7 +885,7 @@ function sequencedAssemblyRecipes(event) {
                 ]),
             ])
             .loops(2)
-            .transitionalItem("tconstruct:obsidian_pane");
+            .transitionalItem(inc_sturdy_sheet);
 
         event.recipes
             .createSequencedAssembly(["6x create:belt_connector"], "minecraft:dried_kelp", [
@@ -3348,61 +3348,6 @@ function compactingRecipes(event) {
         {
             output: { fluid: "kubejs:red_grape_juice", amount: 6750 },
             inputs: ["vinery:red_grape"],
-        },
-        {
-            output: "minecraft:porkchop",
-            inputs: [
-                "3x #c:mushrooms",
-                "minecraft:rotten_flesh",
-                {
-                    fluid: "createaddition:seed_oil",
-                    amount: 100 * mB,
-                },
-            ],
-        },
-        {
-            output: "minecraft:beef",
-            inputs: [
-                "3x #c:mushrooms",
-                "3x #c:grass_variants",
-                {
-                    fluid: "createaddition:seed_oil",
-                    amount: 100 * mB,
-                },
-            ],
-        },
-        {
-            output: "minecraft:chicken",
-            inputs: [
-                "3x #c:mushrooms",
-                "farmersdelight:rice",
-                {
-                    fluid: "createaddition:seed_oil",
-                    amount: 100 * mB,
-                },
-            ],
-        },
-        {
-            output: "minecraft:mutton",
-            inputs: [
-                "3x #c:mushrooms",
-                "#minecraft:wool",
-                {
-                    fluid: "createaddition:seed_oil",
-                    amount: 100 * mB,
-                },
-            ],
-        },
-        {
-            output: "minecraft:rabbit",
-            inputs: [
-                "3x #c:mushrooms",
-                "minecraft:carrot",
-                {
-                    fluid: "createaddition:seed_oil",
-                    amount: 100 * mB,
-                },
-            ],
         },
         {
             output: "2x createastral:gyrodyne_blueprint",
