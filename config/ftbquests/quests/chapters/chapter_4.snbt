@@ -1414,20 +1414,20 @@
 				{
 					id: "5B9178A6D6E78EDC"
 					type: "item"
-					item: "create:zinc_ingot"
-					count: 32L
+					item: "create:iron_sheet"
+					count: 64L
 				}
 				{
 					id: "63BB45AF2D40E144"
 					type: "item"
-					item: "ad_astra:iron_plate"
-					count: 32L
+					item: "ad_astra:oxygen_distributor"
+					count: 1L
 				}
 				{
 					id: "6869CE7DA56027CA"
 					type: "item"
 					item: "create:integrated_circuit"
-					count: 6L
+					count: 8L
 				}
 				{
 					id: "50D956034D3D2FD4"
@@ -3388,7 +3388,7 @@
 					id: "5ABEAEB38C3A05C1"
 					type: "item"
 					item: "createbigcannons:casting_sand"
-					count: 8L
+					count: 9L
 				}
 				{
 					id: "674A84C68086D2EE"
