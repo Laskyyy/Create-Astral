@@ -42,7 +42,7 @@ const customTradesToAdd = [
 ]
 
 /**
- * @typedef {object} NewTrade Config
+ * @typedef {object} replaceTrades Config
  * @property {string} villagerType - String - Requird
  * @property {string} buyItem - String - What the player gives - Requird
  * @property {string} sellItem - String - What the player gets - Requird
@@ -56,7 +56,18 @@ const customTradesToAdd = [
  * @property {string} replaceSellItemWith - String - What item to replace sell item with - Required if replaceSellItem is true
  * @property {number} replaceSellCount - Int - How much is given to the player after replaced - Required if replaceSellItem is true
  */
-
+/**
+ * @typedef {object} addTrades
+ * @property {string} villagerType - String - Requird
+ * @property {number} villagerLevel - Int - Requird
+ * @property {string} buyItem - String - Requird
+ * @property {string} sellItem - String - Requird
+ * @property {number} buyCount - Int - Requird
+ * @property {number} sellCount - Int - Requird
+ * @property {boolean} rewardExp - Bool - Requird
+ * @property {number} maxUses - Int - Requird
+ * @property {number} uses - Int - Requird
+ */
 
 const replaceTrades = [
     //? this is an example use
@@ -66,7 +77,13 @@ const replaceTrades = [
     replaceSellItem: true, replaceSellItemWith: "minecraft:iron_boots", replaceSellCount: 1}
 ]
 
-function replaceVillagerTrades(entity) {
+const addTrades = [
+    {villagerType: "minecraft:armorer", villagerLevel: 1, buyItem: "minecraft:dirt", sellItem: "minecraft:sand", 
+    buyCount: 2, sellCount: 1, rewardExp: true, maxUses: 12, uses: 0
+    }
+]
+
+function ReplaceVillagerTrades(entity) {
     let nbt = entity.getFullNBT()
 
     if (nbt.Offers && nbt.Offers.Recipes) {
@@ -100,10 +117,43 @@ function replaceVillagerTrades(entity) {
     }
 }
 
+function AddVillagerTrade(entity) {
+    let nbt = entity.getFullNBT()
+
+    if (nbt.Offers && nbt.Offers.Recipes) {
+        let recipes = nbt.Offers.Recipes;
+
+
+        addTrades.forEach(newTrade => {
+            if (nbt.VillagerData.profession === newTrade.villagerType && nbt.VillagerData.level >= newTrade.villagerLevel) {
+
+                let tradeExists = recipes.some(trade => {
+                    let buyMatches = trade.buy.id === newTrade.buyItem && trade.buy.Count === newTrade.buyCount;
+                    let sellMatches = trade.sell.id === newTrade.sellItem && trade.sell.Count === newTrade.sellCount;
+                    return buyMatches && sellMatches;
+                });
+
+                if (!tradeExists) {
+                let newRecipe = {
+                    buy: { id: newTrade.buyItem, Count: newTrade.buyCount },
+                    sell: { id: newTrade.sellItem, Count: newTrade.sellCount },
+                    rewardExp: newTrade.rewardExp,
+                    maxUses: newTrade.maxUses,
+                    uses: newTrade.uses
+                }
+                recipes.push(newRecipe);
+            }}
+        })
+        entity.setFullNBT(nbt)
+    }
+}
+
+
 
 onEvent("item.entity_interact", (event) => {
     if (event.target.type == "minecraft:villager") {
-        replaceVillagerTrades(event.target)
+        ReplaceVillagerTrades(event.target)
+        AddVillagerTrade(event.target)
     }
 })
 
