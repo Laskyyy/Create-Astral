@@ -1,8 +1,8 @@
 {
 	"type":"createaddition:liquid_burning",
 	"input": {
-      	"fluid": "minecraft:lava",
+      	"fluid": "createaddition:seed_oil",
       	"amount": 81000
 	},
-	"burnTime": 6000
+	"burnTime": 2400
 }

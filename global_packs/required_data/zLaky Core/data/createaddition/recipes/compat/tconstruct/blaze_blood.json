@@ -1,8 +1,8 @@
 {
 	"type":"createaddition:liquid_burning",
 	"input": {
-      	"fluid": "minecraft:lava",
+      	"fluid": "tconstruct:blazing_blood",
       	"amount": 81000
 	},
-	"burnTime": 6000
+	"burnTime": 12000
 }
