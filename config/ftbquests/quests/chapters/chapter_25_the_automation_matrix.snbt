@@ -193,10 +193,7 @@
 			subtitle: "{chapter.4.quest.38.subtitle}"
 			description: ["{chapter.4.quest.38.description.1}"]
 			hide_dependency_lines: true
-			dependencies: [
-				"274BA7205ECC4FEB"
-				"73973C5E6D2573B8"
-			]
+			dependencies: ["75928E9A25B2EFFD"]
 			size: 2.5d
 			id: "0C464BD01B2B52E0"
 			tasks: [{
@@ -339,7 +336,7 @@
 			x: -40.0d
 			y: -2.0d
 			subtitle: "{chapter.4.quest.53.subtitle}"
-			description: ["&6This is going to be essential for automating dripstone which is a vital ingredient!"]
+			description: ["&6This is going to be essential for automating Dripstone, which is a vital ingredient!"]
 			dependencies: [
 				"09C4EF17B09DD54B"
 				"22466F075AF13097"
@@ -557,10 +554,7 @@
 			y: 15.0d
 			shape: "diamond"
 			description: [""]
-			dependencies: [
-				"557684C7D7B955B8"
-				"0BF064389F9FFDC3"
-			]
+			dependencies: ["0BF064389F9FFDC3"]
 			hide: false
 			size: 2.5d
 			id: "737625E7DFCB0382"
@@ -576,10 +570,7 @@
 			shape: "diamond"
 			description: [""]
 			min_required_dependencies: 2
-			dependencies: [
-				"22B29B232EF2638F"
-				"737625E7DFCB0382"
-			]
+			dependencies: ["737625E7DFCB0382"]
 			size: 2.5d
 			id: "1D0E2A46A37501CB"
 			tasks: [{
@@ -691,10 +682,7 @@
 			y: 17.5d
 			shape: "diamond"
 			description: [""]
-			dependencies: [
-				"2E7D02CA77627EF5"
-				"1D0E2A46A37501CB"
-			]
+			dependencies: ["1D0E2A46A37501CB"]
 			size: 2.5d
 			id: "705D35F27DB6DDEF"
 			tasks: [{
@@ -1789,26 +1777,6 @@
 			}]
 		}
 		{
-			title: "PLACEHOLDER QUEST"
-			x: -22.0d
-			y: 6.5d
-			shape: "square"
-			dependencies: ["3930FFC230D67068"]
-			size: 2.0d
-			id: "6A67B1BB390AED38"
-			tasks: [{
-				id: "040F4D73A0A54E67"
-				type: "item"
-				item: "techreborn:raw_silver"
-			}]
-			rewards: [{
-				id: "6C8933E5C2366D2A"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 2053519168689179764L
-			}]
-		}
-		{
 			x: -25.0d
 			y: 9.5d
 			dependencies: ["2D90C8ED3DD34561"]
@@ -1893,7 +1861,7 @@
 			}
 			x: -26.5d
 			y: 9.0d
-			subtitle: "Obtain blazes from lunar reactors / pipelines."
+			subtitle: "Obtain Blazes from Lunar Reactors/Pipelines."
 			dependencies: ["6D73E725B72F6E88"]
 			id: "6ED96165ED450D8B"
 			tasks: [{
@@ -1915,23 +1883,10 @@
 			}]
 		}
 		{
-			x: -22.0d
-			y: 9.5d
-			shape: "square"
-			dependencies: ["6A67B1BB390AED38"]
-			size: 2.0d
-			id: "34A96ED06A2CF0FF"
-			tasks: [{
-				id: "5FA3171710B1AB3F"
-				type: "item"
-				item: "techreborn:raw_lead"
-			}]
-		}
-		{
 			title: "Optional substitute."
 			x: -32.0d
 			y: 23.0d
-			subtitle: "Scrap can be utilised in forming nether grout to reduce the amount of scoria needed when mass producing."
+			subtitle: "Scrap can be utilised in forming Nether Grout to reduce the amount of Scoria needed when mass-producing."
 			hide_dependency_lines: true
 			dependencies: ["3CB5D433A10C2040"]
 			id: "24EF2D48101694B9"
@@ -2213,7 +2168,7 @@
 			x: -39.0d
 			y: 15.0d
 			shape: "hexagon"
-			subtitle: "The Stone Growth Chamber varies its output based on &6dimension&r"
+			subtitle: "The Stone Growth Chamber varies its output based on &6dimension&r."
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			size: 3.0d
@@ -2243,8 +2198,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						Rotation: "NONE"
 						File: "[AstralExamples] Stone Growth Chamber.nbt"
+						Rotation: "NONE"
 						Mirror: "NONE"
 						Bounds: [
 							3
@@ -2288,8 +2243,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						Rotation: "NONE"
 						File: "[AstralExamples] Distillery.nbt"
+						Rotation: "NONE"
 						Mirror: "NONE"
 						Bounds: [
 							5
@@ -2560,7 +2515,7 @@
 		{
 			x: -43.5d
 			y: 9.0d
-			subtitle: "Mushrooms can be processed into seitan,"
+			subtitle: "Mushrooms can be processed into seitan."
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "272C487352DDE36E"
@@ -2674,8 +2629,8 @@
 		{
 			x: -38.5d
 			y: 12.5d
-			subtitle: "Spawns in moon caves"
-			description: ["Grow on stone ceilings and harvest for plentiful amounts of prismarine shards and crystals. "]
+			subtitle: "Spawns in Moon caves"
+			description: ["Grow on Stone ceilings and harvest for plentiful amounts of Prismarine Shards and crystals. "]
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "494DAA43E781A919"

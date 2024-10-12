@@ -624,7 +624,7 @@ onEvent("recipes", (event) => {
     event.shaped("automobility:auto_mechanic_table", ["DBD", "ACA", "AEA"], {
         A: "create:railway_casing",
         B: "create:crafting_blueprint",
-        C: "yttr:project_table",
+        C: "projecttable:projecttable",
         D: "create:smart_fluid_pipe",
         E: "create:electron_tube",
     });

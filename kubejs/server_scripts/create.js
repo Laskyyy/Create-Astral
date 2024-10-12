@@ -21,7 +21,7 @@ function millingRecipes(event) {
     //[Input, Output, Chance]
     [
         ["farmersdelight:straw", "minecraft:string", 1],
-        ["ae2:certus_quartz_dust", "ae2:certus_crystal_seed", 2],
+        ["ae2:certus_quartz_dust", "ae2:certus_crystal_seed", 1],
         ["minecraft:gravel", "minecraft:sand", 0.5],
         ["create:veridium", "minecraft:raw_copper", 0.6],
         ["create:asurine", "minecraft:lapis_lazuli", 1],
@@ -34,8 +34,7 @@ function millingRecipes(event) {
         ["minecraft:tuff", "minecraft:iron_nugget", 1],
         ["minecraft:dripstone_block", "2x minecraft:golden_nugget", 1],
         ["minecraft:blackstone", "create:zinc_nugget", 0.5],
-        ["minecraft:andesite", "techreborn:tin_nugget", 0.5],
-        ["minecraft:flint", "techreborn:andesite_dust", 2],
+        ["minecraft:flint", "techreborn:andesite_dust", 1],
         ["minecraft:iron_nugget", "techreborn:andesite_dust", 0.75],
         ["minecraft:tube_coral_block", "2x minecraft:blue_dye", 1],
         ["minecraft:brain_coral_block", "2x minecraft:pink_dye", 1],
@@ -886,7 +885,7 @@ function sequencedAssemblyRecipes(event) {
                 ]),
             ])
             .loops(2)
-            .transitionalItem("tconstruct:obsidian_pane");
+            .transitionalItem(inc_sturdy_sheet);
 
         event.recipes
             .createSequencedAssembly(["6x create:belt_connector"], "minecraft:dried_kelp", [
@@ -1476,6 +1475,12 @@ function mixingRecipes(event) {
             time: 100,
         },
         {
+            output: "2x minecraft:soul_soil",
+            input: ["minecraft:dirt", "minecraft:soul_sand"],
+            heat: "",
+            time: 100,
+        },
+        {
             output: "minecraft:small_amethyst_bud",
             input: ["techreborn:amethyst_dust", "ae2:certus_crystal_seed"],
             heat: "",
@@ -1747,18 +1752,6 @@ function mixingRecipes(event) {
                 "minecraft:magma_cream",
                 "minecraft:soul_sand",
                 "create:scoria",
-                "#c:dusts/obsidian",
-                "#c:dusts/obsidian",
-                "#c:dusts/obsidian",
-            ],
-            heat: "heated",
-            time: 700,
-        },
-        {
-            output: "3x tconstruct:nether_grout",
-            input: [
-                "minecraft:magma_cream",
-                "minecraft:soul_sand",
                 "#c:dusts/obsidian",
                 "#c:dusts/obsidian",
                 "#c:dusts/obsidian",
@@ -2610,6 +2603,14 @@ function splashingRecipes(event) {
             ],
         },
         {
+            input: "minecraft:soul_soil",
+            outputs: [
+                ["minecraft:gold_nugget", 0.08],
+                ["minecraft:quartz", 0.06],
+                ["minecraft:bone_meal", 0.1],
+            ],
+        },
+        {
             input: "ae2:certus_crystal_seed",
             outputs: [
                 ["ae2:certus_quartz_crystal", 1],
@@ -3347,61 +3348,6 @@ function compactingRecipes(event) {
         {
             output: { fluid: "kubejs:red_grape_juice", amount: 6750 },
             inputs: ["vinery:red_grape"],
-        },
-        {
-            output: "minecraft:porkchop",
-            inputs: [
-                "3x #c:mushrooms",
-                "minecraft:rotten_flesh",
-                {
-                    fluid: "createaddition:seed_oil",
-                    amount: 100 * mB,
-                },
-            ],
-        },
-        {
-            output: "minecraft:beef",
-            inputs: [
-                "3x #c:mushrooms",
-                "3x #c:grass_variants",
-                {
-                    fluid: "createaddition:seed_oil",
-                    amount: 100 * mB,
-                },
-            ],
-        },
-        {
-            output: "minecraft:chicken",
-            inputs: [
-                "3x #c:mushrooms",
-                "farmersdelight:rice",
-                {
-                    fluid: "createaddition:seed_oil",
-                    amount: 100 * mB,
-                },
-            ],
-        },
-        {
-            output: "minecraft:mutton",
-            inputs: [
-                "3x #c:mushrooms",
-                "#minecraft:wool",
-                {
-                    fluid: "createaddition:seed_oil",
-                    amount: 100 * mB,
-                },
-            ],
-        },
-        {
-            output: "minecraft:rabbit",
-            inputs: [
-                "3x #c:mushrooms",
-                "minecraft:carrot",
-                {
-                    fluid: "createaddition:seed_oil",
-                    amount: 100 * mB,
-                },
-            ],
         },
         {
             output: "2x createastral:gyrodyne_blueprint",

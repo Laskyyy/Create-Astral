@@ -33,9 +33,9 @@
 			y: -7.5d
 			subtitle: "Use the Hephaestus tools for early-game instead!"
 			description: [
-				"Regular stone/wooden tools can still be obtained through the fallback recipe by stonecutting andesite alloy."
+				"Regular Stone/Wooden tools can still be obtained through the fallback recipe by stonecutting Andesite Alloy."
 				""
-				"These are still required in a few edge cases, such as the hardcoded loot tables for drinkbeer trading."
+				"These are still required in a few edge cases, such as the hardcoded loot tables for Drink Beer trading."
 			]
 			id: "39FDFD195622958E"
 			tasks: [{
@@ -52,7 +52,7 @@
 			description: [
 				"Tinker Crafting Stations are not recommended for crafting as they do NOT register quests when taking items from them. Please use &6Erdragh's \"Project Tables\"&r implementation instead as these have similar functions but do not cause this headache!"
 				""
-				"If a quest is not triggering, do not fret! Simply place the problematic items into a chest, and then re-take them, which should trigger the FTBquests condition again."
+				"If a quest is not triggering, do not fret! Simply place the problematic items into a chest, and then re-take them, which should trigger the FTB Quests condition again."
 			]
 			id: "70731526C9551DD6"
 			tasks: [
@@ -95,10 +95,10 @@
 				"Extracting items from a big inventory (like a big vault or a big chest) causes significant MSPT usage, funnels/chutes use more MSPT when filtered with a \"List Filter\" or \"Attribute Filter\" item, scales linearly to amount of filtered items."
 				""
 				"> &l&4Bulk-processing dropped items&r"
-				"Instead, bulk process items on depots or belts."
+				"Instead, bulk process items on Depots or Belts."
 				""
-				"> &l&4Contraption displacement-based cobblestone generators&r"
-				"&7&oA type of generator where contraption locking into a spot breaks the cobblestone, replacing it with a contraption (hence the term \"displacing\").&r"
+				"> &l&4Contraption displacement-based Cobblestone generators&r"
+				"&7&oA type of generator where contraption locking into a spot breaks the Cobblestone, replacing it with a contraption (hence the term \"displacing\").&r"
 				"These are prone to spilling item entities everywhere, causes noticeable MSPT spikes when active and even more if the items are staying for a long time."
 			]
 			id: "120F8BAE32A271B8"
@@ -120,7 +120,7 @@
 			y: -6.5d
 			subtitle: "Massive inhumane trading halls are back, baby!"
 			description: [
-				"As of v2.1 villagers have now been reworked. Old progression skips are fixed and the Tech Reborn Electrician + Metallurgist &6(Generator + Iron Alloy Furnace workstations)&r now focus on redstone + create focused items respectively."
+				"As of v2.1 villagers have now been reworked. Old progression skips are fixed and the Tech Reborn Electrician + Metallurgist &6(Generator + Iron Alloy Furnace workstations)&r now focus on Redstone + Create-focused items respectively."
 				""
 				"Diamond gear is no longer obtainable from villagers, looks like they forgot how to forge it..."
 			]
@@ -131,7 +131,7 @@
 			}]
 		}
 		{
-			title: "&6The smeltery is disabled!"
+			title: "&6The Smeltery is disabled!"
 			icon: "tconstruct:smeltery_controller"
 			x: -7.0d
 			y: -7.5d
@@ -173,9 +173,9 @@
 			y: -7.5d
 			subtitle: "So many methods!"
 			description: [
-				"To begin with, you'll be using Create's &9belts&r to move items short-range. This works pretty well and has relatively high throughput, but it won't last you the whole game."
+				"To begin with, you'll be using Create's &9Belts&r to move items short-range. This works pretty well and has relatively high throughput, but it won't last you the whole game."
 				""
-				"Soon you'll unlock &6trains&r! These are available in Chapter 1 and will suit your long-distance needs for most of the game. Trains can travel through portals and even unloaded chunks, however you need to have your stations and machines loaded in order for the trains to pick up their cargo."
+				"Soon you'll unlock &6Trains&r! These are available in Chapter 1 and will suit your long-distance needs for most of the game. Trains can travel through portals and even unloaded chunks, however you need to have your stations and machines loaded in order for the Trains to pick up their cargo."
 				""
 				"Later on, &3AE2&r will become available in Chapter 3. AE2 is an extensive and incredibly powerful mod, it's recommended you go to their wiki at &2https://appliedenergistics.org&r!"
 			]
@@ -217,9 +217,9 @@
 			description: [
 				"In Create: Astral, progression follows a different order than that which you may be familiar with."
 				""
-				"&6Brass is not obtainable pre-moon&r, as blazes which are required to heat basins to mix it are only found inside \"Lunar Power Plants\", large structures found on the moon."
+				"&6Brass is not obtainable pre-Moon&r, as Blazes, which are required to heat Basins to mix it, are only found inside \"Lunar Power Plants\", large structures found on the Moon."
 				""
-				"&6You do not require a rocket to reach the moon&r, instead you'll find yourself reaching it rather early... (End of Chapter 2)"
+				"&6You do not require a rocket to reach the Moon&r, instead you'll find yourself reaching it rather early... (End of Chapter 2)"
 			]
 			id: "441EA3A4F4DDC6A7"
 			tasks: [{
@@ -235,7 +235,7 @@
 			description: [
 				"In Create: Astral, progression follows a different order than that which you may be familiar with."
 				""
-				"Heating blazes with regular fuel is going to be the primary heat level up &6until late Chapter 4&r. Blaze cakes are a later component and will not be crafted through processes you'll be familiar with."
+				"Heating Blazes with regular fuel is going to be the primary heat level up &6until late Chapter 4&r. Blaze Cakes are a later component and will not be crafted through processes you'll be familiar with."
 			]
 			id: "6F757AA5D8206995"
 			tasks: [{
@@ -247,9 +247,9 @@
 			title: "&6Where are my portals?"
 			x: -11.5d
 			y: -6.5d
-			subtitle: "Say farewell to the nether!"
+			subtitle: "Say farewell to the Nether!"
 			description: [
-				"Attempting to construct a Nether Portal will leave you as disappointed as placing water into a glowstone portal frame..."
+				"Attempting to construct a Nether Portal will leave you as disappointed as placing Water into a Glowstone portal frame..."
 				""
 				"&oAs far as we know,&r the Nether is long gone. It won't be possible to establish a connection. "
 				""
@@ -309,7 +309,7 @@
 			}]
 		}
 		{
-			title: "&6Repairing my space suit!"
+			title: "&6Repairing my Space Suit!"
 			icon: {
 				id: "ad_astra:space_suit"
 				Count: 1b
@@ -321,11 +321,11 @@
 			y: -7.5d
 			subtitle: "Low on durability?"
 			description: [
-				"Each Space suit tier uses vanilla Minecraft mechanics for repairing and enchanting. It is recommended you craft Mending books to repair these."
+				"Each Space Suit tier uses vanilla Minecraft mechanics for repairing and enchanting. It is recommended you craft Mending books to repair these."
 				""
 				"This naturally comes with less convenience than tinkers, however the repair ingredients are as follows:"
 				""
-				"&2Regular Space Suit&r = Sturdy Sheet OR Steel Ingot"
+				"&2Regular Space Suit&r = Sturdy Sheets OR Steel Ingots"
 				"&5Lead-Lined Space Suit&r = Netherite Ingots"
 				"&4Jet Suit&r = Calorite Ingots"
 			]
@@ -340,13 +340,13 @@
 			x: -13.5d
 			y: -7.0d
 			shape: "gear"
-			subtitle: "We're building an FAQ ingame! Common questions which arise often usually have explainable answers which may not be immediately obvious."
+			subtitle: "We're building an FAQ ingame! Common questions which arise usually have explainable answers which may not be immediately obvious."
 			description: [
 				"As the pack evolves, new knowledge must be shared."
 				""
 				"As such, contributing to this page with questions *you* had when trying the pack is the most valuable content we can add."
 				""
-				"PR's on git are welcome with your own edits to this tab."
+				"PR's on Git are welcome with your own edits to this tab."
 				"(File = read_the_questbook.snbt)"
 			]
 			size: 3.0d
@@ -362,9 +362,9 @@
 			icon: "create:filter"
 			x: -3.0d
 			y: -7.5d
-			subtitle: "No brass?"
+			subtitle: "No Brass?"
 			description: [
-				"Drawers from &6Extended Drawers&r in conjunction with Chutes/Andesite Funnels from &6Create&r are good replacements for brass logistics."
+				"Drawers from &6Extended Drawers&r in conjunction with Chutes/Andesite Funnels from &6Create&r are good replacements for Brass logistics."
 				""
 				"&6Locked Drawers&r are also a feature in Extended Drawers, preventing any other item from entering the locked drawer."
 			]
@@ -412,7 +412,7 @@
 			description: [
 				"The custom music you will hear throughout the pack is licensed so that you may use it &6wherever you wish&r!"
 				""
-				"Feel free to include it in &6Youtube Videos&r or content surrounding Astral, it will not be striked."
+				"Feel free to include it in &6YouTube videos&r or content surrounding Astral, it will not receieve strikes."
 				""
 				"Music was produced by Hesperyd, XETROO, PINS3Y, ethanicuss"
 			]
@@ -433,11 +433,11 @@
 				""
 				"Whilst the majority of recipes are the same, the materials used in some have been adjusted to match the astral progression curve."
 				""
-				"Wrought Iron uses &6Andesite Iron&r"
+				"Wrought Iron uses &6Andesite Iron&r."
 				""
-				"Liquid bronze is locked behind &6Chapter 2&r"
+				"Liquid Bronze is locked behind &6Chapter 2&r."
 				""
-				"Steel is obtained at the end of &6Chapter 3&r"
+				"Steel is obtained at the end of &6Chapter 3&r."
 				""
 				"The final tier of barrel has been repurposed to &6Ostrum&r, obtained in &6Chapter 4&r."
 			]

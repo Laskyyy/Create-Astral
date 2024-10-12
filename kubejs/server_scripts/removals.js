@@ -247,6 +247,7 @@ onEvent("recipes", (event) => {
         { output: "createdeco:brass_door" },
         { output: "createdeco:copper_door" },
         { output: "createdeco:zinc_door" },
+        { output: "createdeco:zinc_sheet" },
 
         //Create Additions
 
@@ -432,6 +433,7 @@ onEvent("recipes", (event) => {
         { output: "explorerscompass:explorerscompass" },
 
         { output: "phonos:radio_player_piano" },
+        { output: "phonos:radio_jukebox" },
         { output: "phonos:redstone_chip" },
 
         { mod: "doodads" },

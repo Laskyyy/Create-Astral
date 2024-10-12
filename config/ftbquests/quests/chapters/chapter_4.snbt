@@ -175,25 +175,25 @@
 				{
 					id: "22FB9564D8489F57"
 					type: "item"
-					item: "create:crushed_iron_ore"
+					item: "create:crushed_raw_iron"
 					count: 5
 				}
 				{
 					id: "2C3A9DF5C7850621"
 					type: "item"
-					item: "create:crushed_gold_ore"
+					item: "create:crushed_raw_gold"
 					count: 5
 				}
 				{
 					id: "35AEE17AA1541902"
 					type: "item"
-					item: "create:crushed_copper_ore"
+					item: "create:crushed_raw_copper"
 					count: 5
 				}
 				{
 					id: "0BE9FB2ACC5AE776"
 					type: "item"
-					item: "create:crushed_zinc_ore"
+					item: "create:crushed_raw_zinc"
 					count: 5
 				}
 			]
@@ -418,7 +418,7 @@
 			shape: "diamond"
 			subtitle: "{chapter.5.quest.13.subtitle}"
 			description: [
-				"Deepslate, which could previously be milled for redstone dust and copper nuggets, can now be &6crushed&r for zinc nuggets and coal!"
+				"Deepslate, which could previously be milled for Redstone Dust and Copper Nuggets, can now be &6crushed&r for Zinc Nuggets and Coal!"
 				""
 				"Consider splitting a conveyor into two to automate both processes at once."
 			]
@@ -568,9 +568,9 @@
 			shape: "diamond"
 			subtitle: "Stone Growth Chamber, my beloved."
 			description: [
-				"Desh can be obtained through crushing moon cobblestone or washing moon sand."
+				"Desh can be obtained through crushing Moon Cobblestone or washing Moon Sand."
 				""
-				"Moon cobblestone will generate infinitely from stone growth chambers in their repsective planets / orbits."
+				"Moon Cobblestone will generate infinitely from Stone Growth Chambers in their repsective planets / orbits."
 				""
 				"Similar processes can be used in future planets to obtain their ores too."
 				""
@@ -638,11 +638,9 @@
 			size: 1.5d
 			id: "6027602617EC9F1F"
 			tasks: [{
-				id: "369624A3BE4061DF"
-				type: "structure"
-				title: "{chapter.5.quest.20.task.1.title}"
-				icon: "ad_astra:iron_plating"
-				structure: "incendium:pipeline"
+				id: "28D4A5E8D1A13E6C"
+				type: "item"
+				item: "minecraft:blaze_rod"
 			}]
 			rewards: [{
 				id: "3E4944FC57F47F13"
@@ -990,8 +988,8 @@
 			x: -2.5d
 			y: 1.5d
 			shape: "hexagon"
-			subtitle: "Pour molten gold over a fragile fin to create a cast shape."
-			description: ["By casting the fragile fin, it will be ready to further process into a more stable material."]
+			subtitle: "Pour Molten Gold over a Fragile Fin to create a cast shape."
+			description: ["By casting the Fragile Fin, it will be ready to further process into a more stable material."]
 			dependencies: [
 				"0B6A23E35BDA5D6F"
 				"463D366C0BF340BF"
@@ -1416,20 +1414,20 @@
 				{
 					id: "5B9178A6D6E78EDC"
 					type: "item"
-					item: "create:zinc_ingot"
-					count: 32L
+					item: "create:iron_sheet"
+					count: 64L
 				}
 				{
 					id: "63BB45AF2D40E144"
 					type: "item"
-					item: "ad_astra:iron_plate"
-					count: 32L
+					item: "ad_astra:oxygen_distributor"
+					count: 1L
 				}
 				{
 					id: "6869CE7DA56027CA"
 					type: "item"
 					item: "create:integrated_circuit"
-					count: 6L
+					count: 8L
 				}
 				{
 					id: "50D956034D3D2FD4"
@@ -2433,11 +2431,11 @@
 			shape: "diamond"
 			subtitle: "{chapter.5.quest.98.subtitle}"
 			description: [
-				"Silver can be obtained by washing the lime byproduct obtained by crushing limestone."
+				"Silver can be obtained by washing the Lime byproduct obtained by crushing Limestone."
 				""
-				"It also appears as a byproduct in desh automation."
+				"It also appears as a byproduct in Desh automation."
 				""
-				"Consider creating a limestone generator if you haven't already! "
+				"Consider creating a Limestone generator if you haven't already! "
 				""
 				"(Honey+Lava cobble generator OR compacting Cobble+Milk)"
 			]
@@ -2529,7 +2527,7 @@
 			x: -8.5d
 			y: 3.5d
 			subtitle: "{chapter.5.quest.102.subtitle}"
-			description: ["Take note of what new recipes are available to make in the near-future by viewing all &6Mechanical Crafting&r recipes in REI!"]
+			description: ["Take note of which new recipes are available to make in the near-future by viewing all &6Mechanical Crafting&r recipes in REI!"]
 			dependencies: ["3EA569DE4AC60CC2"]
 			id: "0C82B8A57B80C9DE"
 			tasks: [
@@ -3153,7 +3151,7 @@
 			shape: "octagon"
 			subtitle: "Perhaps a blueprint from a lost civilisation might hold the mechanics to build this thing..."
 			description: [
-				"Hint: There is a low chance on most high tier loot chests for any blueprint, however a guaranteed roll will always be at the top of a certain &6telecommunications tower&r on the moon..."
+				"Hint: There is a low chance on most high tier loot chests for any blueprint, however one is guaranteed atop a certain &6Telecommunications Tower&r on the Moon..."
 				""
 				"All blueprints can be &6Duplicated&r through compacting in a basin, once you have obtained the first copy. "
 			]
@@ -3225,8 +3223,8 @@
 			x: -21.5d
 			y: 4.0d
 			description: [
-				"With heated basins, you can now automatically make potions."
-				"This might have a few more uses than vanilla"
+				"With heated Basins, you can now automatically make potions."
+				"This might have a few more uses than vanilla."
 			]
 			dependencies: ["51BD31261A5725E3"]
 			id: "0AC7A99125824E7E"
@@ -3240,7 +3238,7 @@
 			title: "Another Armor Set"
 			x: -25.5d
 			y: -1.0d
-			subtitle: "For the tinker's fans"
+			subtitle: "For the Tinkers' fans"
 			dependencies: ["01BF21C02F97B378"]
 			id: "6B8452600F4D3A85"
 			tasks: [
@@ -3356,9 +3354,9 @@
 			x: 2.0d
 			y: 3.0d
 			description: [
-				"Simply place your post-drilled breech onto the floor, and introduce it by hand (or automate with deployers) to a create shaft followed by a screw bearing."
+				"Simply place your post-drilled Breech onto the floor, and introduce it by hand (or automate with Deployers) to a Create Shaft followed by a Screw Lock."
 				""
-				"You'll need to cast the steel ingots required in a screw bearing or pour it yourself using a ring cast for a slightly reduced material cost!"
+				"You'll need to cast the Steel Ingots required in a Screw Lock or pour it yourself using a Ring Cast for a slightly reduced material cost!"
 			]
 			dependencies: ["536964348E9EBF56"]
 			id: "74C57EAD8DD6C215"
@@ -3372,9 +3370,9 @@
 			title: "This is *Boring*"
 			x: 1.0d
 			y: 4.0d
-			subtitle: "If you've dipped your toes into big cannons, this is essentially free..."
+			subtitle: "If you've dipped your toes into Big Cannons, this is essentially free..."
 			description: [
-				"Follow the REI prompts backwards to work your way through drilling an incomplete steel screw breech."
+				"Follow the REI prompts backwards to work your way through drilling an Incomplete Steel Screw Breech."
 				""
 				"Sometimes military war game mods aren't so optional after all..."
 			]
@@ -3390,7 +3388,7 @@
 					id: "5ABEAEB38C3A05C1"
 					type: "item"
 					item: "createbigcannons:casting_sand"
-					count: 8L
+					count: 9L
 				}
 				{
 					id: "674A84C68086D2EE"
@@ -3405,11 +3403,11 @@
 			]
 		}
 		{
-			title: "Righty-tighty"
+			title: "Righty-Tighty"
 			x: 2.0d
 			y: 4.0d
-			subtitle: "I am a dwarf and i'm boring a hole."
-			description: ["Attach the breech to a rotating bearing. Placing a drill bore with at least enough extension poles to propel it far enough into the breech (when provided with rotational power) will allow you to drill straight through."]
+			subtitle: "I am a dwarf and I'm boring a hole."
+			description: ["Attach the Breech to a Mechanical Bearing. Placing a Cannon Drill with at least enough Extension Poles to propel it far enough into the Breech (when provided with rotational power) will allow you to drill straight through."]
 			dependencies: ["79DD3B81F011D236"]
 			id: "536964348E9EBF56"
 			tasks: [{
@@ -3419,11 +3417,11 @@
 			}]
 		}
 		{
-			title: "Further Fin Processing."
+			title: "Further Fin Processing"
 			x: -0.65d
 			y: 0.65d
 			shape: "pentagon"
-			subtitle: "Simply use a create presser to condense the fin back to it's sturdy makeup."
+			subtitle: "Simply use a Create Press to condense the Fin back to its sturdy makeup."
 			dependencies: ["1BF9656E9FBB2364"]
 			size: 1.3d
 			id: "2B461CB27269D9CD"
@@ -3437,7 +3435,7 @@
 			title: "Not so sturdy anymore."
 			x: -6.5d
 			y: 1.0d
-			subtitle: "Weaken some sturdy sheets in a Grinder"
+			subtitle: "Weaken some Sturdy Sheets in a Grinder."
 			dependencies: ["2F7F41E1C9C7F7B3"]
 			id: "0B6A23E35BDA5D6F"
 			tasks: [{
@@ -3453,7 +3451,7 @@
 			y: 2.5d
 			subtitle: "The Dark Side of the Moon"
 			description: [
-				"The ruins of the moon, swallowed and regurgitated... Thrown up into the air like a great beast playing with its food."
+				"The ruins of the Moon, swallowed and regurgitated... Thrown up into the air like a great beast playing with its food."
 				""
 				"With a &6Desh Rocket&r, we can see what lies in the &3Moon Debris&r beyond orbit. Bring your finest gear - there's a terrible aura filling the air here, and things will get hostile very quickly."
 			]
@@ -3505,7 +3503,7 @@
 				""
 				"The &3Pylon&r permits teleportation to a set location, as long as the user doesn't step beyond 256 blocks of it."
 				""
-				"Once a &3Pylon&r is active, Right Click to teleport, or Shift + Right Click to detonate for a strong burst of knockback."
+				"Once a &3Pylon&r is active, Right-Click to teleport, or Shift + Right-Click to detonate for a strong burst of knockback."
 			]
 			dependencies: ["3A67A15771B2D8CD"]
 			id: "659C8D9E756AAA57"
@@ -3612,8 +3610,8 @@
 			y: 5.5d
 			subtitle: "XP Storage!"
 			description: [
-				"Right Click to Store XP"
-				"Left Click to Take XP"
+				"Right-Click to Store XP"
+				"Left-Click to Take XP"
 				""
 				"You can use this to store your XP before going out on adventures, or you can use it to give XP to friends!"
 			]
@@ -3723,7 +3721,7 @@
 			y: 2.5d
 			subtitle: "Orbital Homebound Navigation Orb"
 			description: [
-				"Right click to set a location. Right click again to teleport there."
+				"Right-Click to set a location. Right-Click again to teleport there."
 				""
 				"This item has unlimited range and &6works cross-dimension&r. However, it will break upon use."
 				""
