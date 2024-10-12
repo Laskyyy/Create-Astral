@@ -3933,6 +3933,10 @@ file = "global_packs/required_data/zLaky Core/data/astralgenerators/machines/ama
 hash = "040f9687c7938809dc43991e557e1782be09686473d295cc4e464e6ed19ea235"
 
 [[files]]
+file = "global_packs/required_data/zLaky Core/data/astralgenerators/machines/assembler.json"
+hash = "538a4adde7d19012142f3299f1af03eb059cdb51ba94d471536eab6bb7f4f8e0"
+
+[[files]]
 file = "global_packs/required_data/zLaky Core/data/astralgenerators/machines/fluid_boiler.json"
 hash = "bf4d8d4b15dc1c312e97ce956b5be8dc8be084576798385d34b7b52e4ea14b76"
 
@@ -3955,6 +3959,10 @@ hash = "c63b0b9cae4c502cc97de692f8ab939f35e9c2cb8f5032deb820c4933f11e205"
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/astralgenerators/recipes/amalgamation_matrix/test.json"
 hash = "489898143da589dd86f5f329c8dbc5d5abaed3a30810e4716da01298ec23659b"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/astralgenerators/recipes/assembler/test.json"
+hash = "cafcb6d4482bac477e07ddc69567b02d384a7ac5038f5da7887f1d258bf652d1"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/astralgenerators/recipes/boiler/steam_from_fuel.json"
@@ -14643,7 +14651,7 @@ metafile = true
 
 [[files]]
 file = "mods/astral-generators-for-create-astral.pw.toml"
-hash = "b20932e57c25bbe0bc88f506e9f8e3ab0f54f926a242788738246e8f31043a4b"
+hash = "f78fabbc3e5ff897dd048b74f780c0aa16f74bb108667676859513953790ec59"
 metafile = true
 
 [[files]]
