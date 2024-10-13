@@ -42,6 +42,13 @@ function millingRecipes(event) {
         ["minecraft:fire_coral_block", "2x minecraft:red_dye", 1],
         ["minecraft:horn_coral_block", "2x minecraft:yellow_dye", 1],
         ["minecraft:glow_berries", "naturalist:glow_goop", 1],
+				["naturalist:glow_goop", "minecraft:yellow_dye", 1],
+        ["minecraft:twisting_vines", "minecraft:blue_dye", 1],
+        ["minecraft:weeping_vines", "minecraft:red_dye", 1],
+        ["minecraft:sweet_berries", "minecraft:red_dye", 1],
+        ["vinery:red_grape", "minecraft:purple_dye", 1],
+        ["vinery:white_grape", "minecraft:lime_dye", 1],
+        ["minecraft:melon_slice", "minecraft:red_dye", 0.5],
         ["minecraft:snow_block", "2x minecraft:snowball", 1],
         ["createastral:crushed_raw_gadolinite", "yttr:yttrium_dust", 1],
         ["createastral:broken_fragile_sheet", "create:powdered_obsidian", 1],
@@ -3330,6 +3337,14 @@ function compactingRecipes(event) {
         {
             output: "minecraft:andesite",
             inputs: ["4x techreborn:andesite_dust"],
+        },
+				{
+            output: "minecraft:granite",
+            inputs: ["4x techreborn:granite_dust"],
+        },
+        {
+            output: "minecraft:diorite",
+            inputs: ["4x techreborn:diorite_dust"],
         },
         {
             output: "minecraft:andesite",
