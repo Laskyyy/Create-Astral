@@ -3028,7 +3028,7 @@ function mechanicalCraftingRecipes(event) {
                 B: "ad_astra:ostrum_block",
                 C: "tconstruct:cobalt_block",
                 D: "createastral:navigation_mechanism",
-                E: "createaddition:accumulator",
+                E: "createaddition:modular_accumulator",
             },
         },
 

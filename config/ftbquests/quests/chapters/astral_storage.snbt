@@ -133,11 +133,6 @@
 					type: "item"
 					item: "ae2:certus_quartz_dust"
 				}
-				{
-					id: "1CAC0D2F1E1E6D11"
-					type: "item"
-					item: "ae2:silicon"
-				}
 			]
 		}
 		{
