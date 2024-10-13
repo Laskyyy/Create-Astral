@@ -6,7 +6,7 @@
 		{
 			"type": "custommachinery:structure",
 			"keys": {
-				"a": "ad_astra:polished_venus_stone",
+				"a": "minecraft:polished_andesite",
 				"l": "minecraft:lava",
 				"g": "minecraft:glass"
 			},
@@ -30,7 +30,7 @@
 		},
 		{
 			"type": "custommachinery:item",
-			"item": "ad_astra:venus_cobblestone",
+			"item": "minecraft:andesite",
 			"amount": 1,
 			"mode": "output"
 		}
