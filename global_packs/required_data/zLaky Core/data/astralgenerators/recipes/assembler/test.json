@@ -1,0 +1,72 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "astralgenerators:assembler",
+	"time": 10,
+	"requirements": [
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:stone",
+			"mode": "input",
+			"amount": 1
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:stone",
+			"mode": "input",
+			"amount": 1
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:stone",
+			"mode": "input",
+			"amount": 1
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:stone",
+			"mode": "input",
+			"amount": 1
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:stone",
+			"mode": "input",
+			"amount": 1
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:stone",
+			"mode": "input",
+			"amount": 1
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:stone",
+			"mode": "input",
+			"amount": 1
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:stone",
+			"mode": "input",
+			"amount": 1
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:stone",
+			"mode": "input",
+			"amount": 1
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "minecraft:diamond",
+			"mode": "output",
+			"amount": 1
+		},
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 1000
+		}
+	]
+}

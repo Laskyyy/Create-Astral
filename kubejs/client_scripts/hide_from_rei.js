@@ -18,6 +18,8 @@ onEvent("rei.hide.items", (event) => {
         "ad_astra:steel_cable",
         "ad_astra:iron_plate",
         "ad_astra:iron_rod",
+        "ad_astra:tier_1_rocket",
+        "create:andesite_alloy_block",
         "techreborn:scrap_box",
         "techreborn:scrapboxinator",
         "techreborn:recycler",
