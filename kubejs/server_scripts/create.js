@@ -1475,6 +1475,12 @@ function mixingRecipes(event) {
             time: 100,
         },
         {
+            output: "minecraft:bone_meal",
+            input: ["techreborn:calcite_dust", { fluid: "minecraft:water", amount: 100 * mB }],
+            heat: "",
+            time: 100,
+        },
+        {
             output: "2x minecraft:soul_soil",
             input: ["minecraft:dirt", "minecraft:soul_sand"],
             heat: "",
@@ -2599,7 +2605,7 @@ function splashingRecipes(event) {
             outputs: [
                 ["createastral:pure_biomatter", 1],
                 ["minecraft:sugar", 0.2],
-                ["minecraft:bonemeal", 0.2],
+                ["minecraft:bone_meal", 0.2],
             ],
         },
         {
@@ -3248,7 +3254,11 @@ function compactingRecipes(event) {
     [
         {
             output: "minecraft:calcite",
-            inputs: ["3x minecraft:bone_meal", "minecraft:gravel", { fluid: "minecraft:lava", amount: 100 * mB }],
+            inputs: ["3x minecraft:bone_meal", "minecraft:gravel", { fluid: "minecraft:lava", amount: 50 * mB }],
+        },
+        {
+            output: "minecraft:calcite",
+            inputs: ["2x minecraft:bone_meal", "minecraft:gravel", { fluid: "milk:still_milk", amount: 100 * mB }],
         },
         {
             output: "create:scoria",
