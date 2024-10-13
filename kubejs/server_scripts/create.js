@@ -1424,6 +1424,12 @@ function fillingRecipes(event) {
             fluid: "kubejs:white_grape_juice",
             amount: 250 * mB,
         },
+        {
+            input: "minecraft:calcite",
+            output: "minecraft:dripstone_block",
+            fluid: "minecraft:water",
+            amount: 250 * mB,
+        },
     ].forEach((recipe) => {
         event.recipes.createFilling(recipe.output, [recipe.input, { fluid: recipe.fluid, amount: recipe.amount }]);
     });
@@ -2604,6 +2610,10 @@ function splashingRecipes(event) {
     [
         //sponge to wet sponge
         {
+            input: "minecraft:calcite",
+            outputs: [["minecraft:dripstone_block", 1]],
+        },
+				{
             input: "minecraft:sponge",
             outputs: [["minecraft:wet_sponge", 1]],
         },
