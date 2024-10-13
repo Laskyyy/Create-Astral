@@ -2656,10 +2656,10 @@
 			}]
 		}
 		{
-			title: "I hate Terracotta!"
+			title: "Scorched Casting"
 			x: -5.5d
 			y: -0.5d
-			subtitle: "For when you are trying to automate Seared Stone for Asurine and Veridium, but you get Terracotta instead..."
+			subtitle: "Handy for automation"
 			description: [
 				"Obtain &6Scorched Basin and Table&r by blasting their Seared counterparts in a Blast Furnace or using Bulk Blasting."
 				""
@@ -2861,15 +2861,15 @@
 			description: [
 				"Complimentary schematic included with all purchases! You can also Ponder this block to see more info!"
 				""
-				"&7Top Layer: 3x3 Copper Casing&r"
+				"&7Top Layer: 3x3 Polished Andesite&r"
 				""
-				"&7Middle Layer: Lava in middle, surrounded by vanilla glass. Chamber on any central side.&r"
+				"&7Middle Layer: Lava in middle, surrounded by vanilla glass. &r"
 				""
-				"&7Lower Layer: 3x3 Copper Casing&r"
+				"&7Lower Layer: 3x3 Polished Andesite. Chamber on any central side.&r"
 				""
 				"The &6Stone Growth Chamber&r, once built correctly, will slowly generate Andesite. This is a healthy upgrade from a Mining Drill cobblegen setup, as Andesite can be milled into Cobblestone, it's less tedious to set up, and the item collection is done for you!"
 				""
-				"When built on other planets, it will generate that planet's main stone block. &6Don't forget!&r"
+				"When built using other Polished stone, like Polished Moon Stone, it can generate stone from other planets. &6Don't forget!&r"
 			]
 			dependencies: ["557684C7D7B955B8"]
 			id: "7F3DD44E4885A837"
