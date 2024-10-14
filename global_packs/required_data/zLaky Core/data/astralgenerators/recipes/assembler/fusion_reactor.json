@@ -1,65 +1,66 @@
 {
 	"type": "custommachinery:custom_machine",
 	"machine": "astralgenerators:assembler",
-	"time": 10,
+	"time": 100,
 	"requirements": [
 		{
 			"type": "custommachinery:item",
-			"item": "minecraft:stone",
+			"item": "astralgenerators:fusion_coil",
 			"mode": "input",
 			"amount": 1
 		},
 		{
 			"type": "custommachinery:item",
-			"item": "minecraft:stone",
+			"item": "createastral:living_mechanism",
+			"mode": "input",
+			"amount": 4
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "createastral:ender_plating",
+			"mode": "input",
+			"amount": 8
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "createastral:astral_singularity",
 			"mode": "input",
 			"amount": 1
 		},
 		{
 			"type": "custommachinery:item",
-			"item": "minecraft:stone",
+			"item": "createastral:subatomic_ingot",
+			"mode": "input",
+			"amount": 2
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "techreborn:industrial_circuit",
+			"mode": "input",
+			"amount": 64
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "techreborn:industrial_circuit",
+			"mode": "input",
+			"amount": 64
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "techreborn:industrial_circuit",
+			"mode": "input",
+			"amount": 64
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "createastral:promethium_atomic_battery",
 			"mode": "input",
 			"amount": 1
 		},
 		{
 			"type": "custommachinery:item",
-			"item": "minecraft:stone",
-			"mode": "input",
-			"amount": 1
-		},
-		{
-			"type": "custommachinery:item",
-			"item": "minecraft:stone",
-			"mode": "input",
-			"amount": 1
-		},
-		{
-			"type": "custommachinery:item",
-			"item": "minecraft:stone",
-			"mode": "input",
-			"amount": 1
-		},
-		{
-			"type": "custommachinery:item",
-			"item": "minecraft:stone",
-			"mode": "input",
-			"amount": 1
-		},
-		{
-			"type": "custommachinery:item",
-			"item": "minecraft:stone",
-			"mode": "input",
-			"amount": 1
-		},
-		{
-			"type": "custommachinery:item",
-			"item": "minecraft:stone",
-			"mode": "input",
-			"amount": 1
-		},
-		{
-			"type": "custommachinery:item",
-			"item": "minecraft:diamond",
+			"item": "custommachinery:custom_machine_item",
+			"nbt": { "machine": "astralgenerators:fusion_reactor" },
 			"mode": "output",
 			"amount": 1
 		},
