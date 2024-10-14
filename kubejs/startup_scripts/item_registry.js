@@ -36,6 +36,7 @@ onEvent("item.registry", (event) => {
     event.create("createastral:star_shard").glow(true);
     event.create("createastral:pure_star_shard").glow(true).rarity("Epic");
     event.create("createastral:crushed_raw_gadolinite");
+    event.create("createastral:crushed_raw_cobalt");
     event.create("createastral:experience_ingot").glow(true);
     event.create("createastral:stone_dust").displayName("Stone Dust");
     event.create("createastral:stone_small_dust").displayName("Small Pile of Stone Dust");
