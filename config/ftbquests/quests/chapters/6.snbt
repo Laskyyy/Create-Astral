@@ -38,6 +38,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["69669C2A3E16E328"]
+			hide: true
 			size: 2.0d
 			id: "220441E71254C532"
 			tasks: [{
