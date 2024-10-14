@@ -72,6 +72,10 @@ function crushingRecipes(event) {
     //      ...
     [
         {
+            input: "minecraft:calcite",
+            outputs: [["4x techreborn:calcite_dust", 1]],
+        },
+				{
             input: "minecraft:dead_tube_coral_block",
             outputs: [["1x techreborn:calcite_dust", 1]],
         },
@@ -1353,7 +1357,7 @@ function fillingRecipes(event) {
             amount: INGOT,
         },
         {
-            input: "minecraft:calcite",
+            input: "minecraft:dripstone_block",
             output: "3x minecraft:pointed_dripstone",
             fluid: "minecraft:water",
             amount: 500 * mB,
@@ -1422,6 +1426,12 @@ function fillingRecipes(event) {
             input: "vinery:wine_bottle",
             output: "vinery:white_grapejuice_wine_bottle",
             fluid: "kubejs:white_grape_juice",
+            amount: 250 * mB,
+        },
+        {
+            input: "minecraft:calcite",
+            output: "minecraft:dripstone_block",
+            fluid: "minecraft:water",
             amount: 250 * mB,
         },
     ].forEach((recipe) => {
@@ -2604,6 +2614,10 @@ function splashingRecipes(event) {
     [
         //sponge to wet sponge
         {
+            input: "minecraft:calcite",
+            outputs: [["minecraft:dripstone_block", 1]],
+        },
+				{
             input: "minecraft:sponge",
             outputs: [["minecraft:wet_sponge", 1]],
         },
@@ -3261,11 +3275,11 @@ function compactingRecipes(event) {
     [
         {
             output: "minecraft:calcite",
-            inputs: ["3x minecraft:bone_meal", "minecraft:gravel", { fluid: "minecraft:lava", amount: 50 * mB }],
+            inputs: ["minecraft:gravel", "2x minecraft:bone_meal"],
         },
         {
             output: "minecraft:calcite",
-            inputs: ["2x minecraft:bone_meal", "minecraft:gravel", { fluid: "milk:still_milk", amount: 100 * mB }],
+            inputs: ["minecraft:gravel", { fluid: "milk:still_milk", amount: 500 * mB }],
         },
         {
             output: "create:scoria",
@@ -3345,6 +3359,10 @@ function compactingRecipes(event) {
         {
             output: "minecraft:diorite",
             inputs: ["4x techreborn:diorite_dust"],
+        },
+        {
+            output: "minecraft:calcite",
+            inputs: ["4x techreborn:calcite_dust"],
         },
         {
             output: "minecraft:andesite",
