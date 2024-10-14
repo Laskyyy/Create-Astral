@@ -20,4 +20,9 @@ onEvent("recipes", event => {
     ], [
         "techreborn:ashes"
     ])
+    //allow for a smaller tree farm if you have sulfur to spare
+    event.recipes.createMixing("8x techreborn:rubber", [
+        "3x techreborn:sap",
+        "1x techreborn:sulfur_dust"
+    ])
 })
