@@ -1083,8 +1083,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						Rotation: "NONE"
 						File: "[AstralExamples] Shimmer Refinery.nbt"
+						Rotation: "NONE"
 						Mirror: "NONE"
 						Bounds: [
 							5
@@ -1131,6 +1131,7 @@
 			}]
 		}
 		{
+			icon: "astraladditions:fragile_item_2"
 			x: 24.0d
 			y: 10.0d
 			shape: "hexagon"
@@ -1142,14 +1143,22 @@
 			]
 			dependencies: ["0931E20B74EB2D8A"]
 			size: 2.0d
+			min_required_tasks: 1
 			id: "739D93CC57AA8BF2"
-			tasks: [{
-				id: "28ABE24C52D47141"
-				type: "item"
-				item: "astraladditions:fragile_item_2"
-			}]
+			tasks: [
+				{
+					id: "28ABE24C52D47141"
+					type: "item"
+					item: "astraladditions:fragile_item_2"
+				}
+				{
+					id: "22CC147F35A403C2"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "astraladditions:fragile_item_3"
 			x: 20.0d
 			y: 10.0d
 			shape: "hexagon"
@@ -1161,12 +1170,19 @@
 			]
 			dependencies: ["704AEB416AA5A953"]
 			size: 2.0d
+			min_required_tasks: 1
 			id: "638DBED9ED0BD4CB"
-			tasks: [{
-				id: "586B49EB963667B8"
-				type: "item"
-				item: "astraladditions:fragile_item_3"
-			}]
+			tasks: [
+				{
+					id: "586B49EB963667B8"
+					type: "item"
+					item: "astraladditions:fragile_item_3"
+				}
+				{
+					id: "1B147F24B1ED238D"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			title: "&bSeparation Agent&r"
