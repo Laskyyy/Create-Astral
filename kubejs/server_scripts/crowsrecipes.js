@@ -25,4 +25,5 @@ onEvent("recipes", event => {
         "3x techreborn:sap",
         "1x techreborn:sulfur_dust"
     ])
+    event.shapeless("appliedenergistics2:me_covered_cable", ["techreborn:rubber", "appliedenergistics2:fluix_cable"])
 })
