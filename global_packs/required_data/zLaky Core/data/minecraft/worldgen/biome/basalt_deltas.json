@@ -39,26 +39,18 @@
             "minecraft:small_basalt_columns",
             "minecraft:large_basalt_columns"
         ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
         [
             "minecraft:basalt_blobs",
             "minecraft:blackstone_blobs",
             "minecraft:spring_delta",
-            "minecraft:patch_fire",
-            "minecraft:patch_soul_fire",
             "minecraft:glowstone_extra",
             "minecraft:glowstone",
-            "minecraft:brown_mushroom_nether",
-            "minecraft:red_mushroom_nether",
-            "minecraft:ore_magma",
             "minecraft:spring_closed_double",
-            "minecraft:ore_gold_deltas",
-            "minecraft:ore_quartz_deltas",
+            "ad_astra:moon_cheese_ore",
+            "ad_astra:moon_soul_soil",
+            "ad_astra:moon_ice_shard_ore",
+            "ad_astra:moon_iron_ore",
+            "ad_astra:moon_desh_ore",
             "minecraft:ore_ancient_debris_large",
             "minecraft:ore_debris_small"
         ]
@@ -95,7 +87,7 @@
     },
     "spawn_costs": {},
     "precipitation": "none",
-    "temperature": 2.0,
+    "temperature": 0.7,
     "downfall": 0.0,
-    "category": "nether"
+    "category": "none"
 }

@@ -88,7 +88,9 @@
 			"astralrails:moon_nether_wart_patch",
 			"astralrails:moon_twisting_vines",
 			"astralrails:moon_lune_shroom_patch",
-			"astralrails:moon_bulba_patch"
+			"astralrails:moon_bulba_patch",
+      "minecraft:ore_ancient_debris_large",
+      "minecraft:ore_debris_small"
     ]
   ]
 }
