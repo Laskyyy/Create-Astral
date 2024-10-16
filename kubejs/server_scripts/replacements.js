@@ -36,6 +36,11 @@ onEvent("recipes", (event) => {
             "createaddition:iron_wire",
         ],
         [
+            {output: "tconstruct:raw_cobalt_block"},
+            "#c:raw_materials/cobalt",
+            "tconstruct:raw_cobalt" // fix cobalt craftable with raw cobalt
+        ],
+        [
             {output: "createaddition:connector"},
             "#c:slimeballs",
             "createaddition:copper_wire",

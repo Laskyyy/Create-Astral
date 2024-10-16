@@ -1,17 +1,17 @@
 {
-  "replace": false,
-  "values": [
-    "createaddition:rolling_mill",
-    "createaddition:electric_motor",
-    "createaddition:alternator",
-    "createaddition:accumulator",
-    "createaddition:redstone_relay",
-    "createaddition:tesla_coil",
-    "createaddition:connector",
-		"drinkbeer:iron_call_bell",
-		"drinkbeer:golden_call_bell",
-		"drinkbeer:lekas_call_bell",
-    "yttr:continuous_platform",
-		"xpcrystals:xp_syphon"
-  ]
+    "replace": false,
+    "values": [
+        "createaddition:rolling_mill",
+        "createaddition:electric_motor",
+        "createaddition:alternator",
+        "createaddition:modular_accumulator",
+        "createaddition:redstone_relay",
+        "createaddition:tesla_coil",
+        "createaddition:connector",
+        "drinkbeer:iron_call_bell",
+        "drinkbeer:golden_call_bell",
+        "drinkbeer:lekas_call_bell",
+        "yttr:continuous_platform",
+        "xpcrystals:xp_syphon"
+    ]
 }

@@ -1,0 +1,12 @@
+{
+    "type": "tconstruct:melting",
+    "ingredient": {
+        "tag": "tconstruct:skyroot_logs"
+    },
+    "result": {
+        "fluid": "tconstruct:sky_slime",
+        "amount": 20250
+    },
+    "temperature": 10,
+    "time": 50
+}

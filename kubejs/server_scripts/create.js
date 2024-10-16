@@ -42,6 +42,13 @@ function millingRecipes(event) {
         ["minecraft:fire_coral_block", "2x minecraft:red_dye", 1],
         ["minecraft:horn_coral_block", "2x minecraft:yellow_dye", 1],
         ["minecraft:glow_berries", "naturalist:glow_goop", 1],
+				["naturalist:glow_goop", "minecraft:yellow_dye", 1],
+        ["minecraft:twisting_vines", "minecraft:blue_dye", 1],
+        ["minecraft:weeping_vines", "minecraft:red_dye", 1],
+        ["minecraft:sweet_berries", "minecraft:red_dye", 1],
+        ["vinery:red_grape", "minecraft:purple_dye", 1],
+        ["vinery:white_grape", "minecraft:lime_dye", 1],
+        ["minecraft:melon_slice", "minecraft:red_dye", 0.5],
         ["minecraft:snow_block", "2x minecraft:snowball", 1],
         ["createastral:crushed_raw_gadolinite", "yttr:yttrium_dust", 1],
         ["createastral:broken_fragile_sheet", "create:powdered_obsidian", 1],
@@ -65,6 +72,10 @@ function crushingRecipes(event) {
     //      ...
     [
         {
+            input: "minecraft:calcite",
+            outputs: [["4x techreborn:calcite_dust", 1]],
+        },
+				{
             input: "minecraft:dead_tube_coral_block",
             outputs: [["1x techreborn:calcite_dust", 1]],
         },
@@ -1346,7 +1357,7 @@ function fillingRecipes(event) {
             amount: INGOT,
         },
         {
-            input: "minecraft:calcite",
+            input: "minecraft:dripstone_block",
             output: "3x minecraft:pointed_dripstone",
             fluid: "minecraft:water",
             amount: 500 * mB,
@@ -1361,7 +1372,7 @@ function fillingRecipes(event) {
             input: "create:blaze_cake_base",
             output: "create:blaze_cake",
             fluid: "kubejs:hellfire",
-            amount: 250 * mB,
+            amount: 75 * mB,
         },
         {
             input: "techreborn:red_cell_battery",
@@ -1415,6 +1426,12 @@ function fillingRecipes(event) {
             input: "vinery:wine_bottle",
             output: "vinery:white_grapejuice_wine_bottle",
             fluid: "kubejs:white_grape_juice",
+            amount: 250 * mB,
+        },
+        {
+            input: "minecraft:calcite",
+            output: "minecraft:dripstone_block",
+            fluid: "minecraft:water",
             amount: 250 * mB,
         },
     ].forEach((recipe) => {
@@ -1471,6 +1488,12 @@ function mixingRecipes(event) {
         {
             output: "minecraft:feather",
             input: ["minecraft:stick", "minecraft:string"],
+            heat: "",
+            time: 100,
+        },
+        {
+            output: "minecraft:bone_meal",
+            input: ["techreborn:calcite_dust", { fluid: "minecraft:water", amount: 100 * mB }],
             heat: "",
             time: 100,
         },
@@ -2591,6 +2614,10 @@ function splashingRecipes(event) {
     [
         //sponge to wet sponge
         {
+            input: "minecraft:calcite",
+            outputs: [["minecraft:dripstone_block", 1]],
+        },
+				{
             input: "minecraft:sponge",
             outputs: [["minecraft:wet_sponge", 1]],
         },
@@ -2599,7 +2626,7 @@ function splashingRecipes(event) {
             outputs: [
                 ["createastral:pure_biomatter", 1],
                 ["minecraft:sugar", 0.2],
-                ["minecraft:bonemeal", 0.2],
+                ["minecraft:bone_meal", 0.2],
             ],
         },
         {
@@ -3015,7 +3042,7 @@ function mechanicalCraftingRecipes(event) {
                 B: "ad_astra:ostrum_block",
                 C: "tconstruct:cobalt_block",
                 D: "createastral:navigation_mechanism",
-                E: "createaddition:accumulator",
+                E: "createaddition:modular_accumulator",
             },
         },
 
@@ -3248,7 +3275,11 @@ function compactingRecipes(event) {
     [
         {
             output: "minecraft:calcite",
-            inputs: ["3x minecraft:bone_meal", "minecraft:gravel", { fluid: "minecraft:lava", amount: 100 * mB }],
+            inputs: ["minecraft:gravel", "2x minecraft:bone_meal"],
+        },
+        {
+            output: "minecraft:calcite",
+            inputs: ["minecraft:gravel", { fluid: "milk:still_milk", amount: 500 * mB }],
         },
         {
             output: "create:scoria",
@@ -3320,6 +3351,18 @@ function compactingRecipes(event) {
         {
             output: "minecraft:andesite",
             inputs: ["4x techreborn:andesite_dust"],
+        },
+				{
+            output: "minecraft:granite",
+            inputs: ["4x techreborn:granite_dust"],
+        },
+        {
+            output: "minecraft:diorite",
+            inputs: ["4x techreborn:diorite_dust"],
+        },
+        {
+            output: "minecraft:calcite",
+            inputs: ["4x techreborn:calcite_dust"],
         },
         {
             output: "minecraft:andesite",

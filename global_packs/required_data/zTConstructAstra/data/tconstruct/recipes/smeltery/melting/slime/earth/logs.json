@@ -1,0 +1,12 @@
+{
+    "type": "tconstruct:melting",
+    "ingredient": {
+        "tag": "tconstruct:greenheart_logs"
+    },
+    "result": {
+        "fluid": "tconstruct:earth_slime",
+        "amount": 20250
+    },
+    "temperature": 50,
+    "time": 50
+}
