@@ -1,0 +1,12 @@
+{
+    "items": [
+      "create:large_cogwheel"
+    ],
+    "reload_ticks": 60,
+    "damage": 2,
+    "knockback": 5,
+    "drag": 0.99,
+    "velocity_multiplier": 0.2,
+    "gravity_multiplier": 1,
+    "sound_pitch": 1
+  }

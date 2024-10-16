@@ -62,41 +62,41 @@
     }
   },
   "storage": {
-    "AdvancedStorageMaxStorage": {
-      "comment": "Maximum amount of items an Advanced Storage Unit can store",
-      "value": 32768
+    "CrudeStorageUnitMaxStorage": {
+      "comment": "Maximum amount of items a Crude Storage Unit can store",
+      "value": 4096
     },
     "BasicStorageUnitMaxStorage": {
       "comment": "Maximum amount of items a Basic Storage Unit can store",
       "value": 8192
     },
-    "CrudeStorageUnitMaxStorage": {
-      "comment": "Maximum amount of items a Crude Storage Unit can store",
-      "value": 2048
+    "AdvancedStorageMaxStorage": {
+      "comment": "Maximum amount of items an Advanced Storage Unit can store",
+      "value": 32768
     },
     "IndustrialStorageMaxStorage": {
       "comment": "Maximum amount of items an Industrial Storage Unit can store (Compat: \u003e\u003d 32768)",
-      "value": 65536
-    },
-    "BasicTankUnitCapacity": {
-      "comment": "How much liquid a Basic Tank Unit can take (Value in buckets, 1000 Mb)",
-      "value": 128
-    },
-    "IndustrialTankUnitCapacity": {
-      "comment": "How much liquid an Industrial Tank Unit can take (Value in buckets, 1000 Mb)",
-      "value": 1024
-    },
-    "QuantumTankUnitCapacity": {
-      "comment": "How much liquid a Quantum Tank Unit can take (Value in buckets, 1000 Mb)(Compat: \u003d\u003d MAX_VALUE)",
-      "value": 2147483
+      "value": 131072
     },
     "QuantumStorageUnitMaxStorage": {
       "comment": "Maximum amount of items a Quantum Storage Unit can store (Compat: \u003d\u003d MAX_VALUE)",
-      "value": 2147483647
+      "value": 524288
+    },
+    "BasicTankUnitCapacity": {
+      "comment": "How much liquid a Basic Tank Unit can take (Value in buckets, 1000 Mb)",
+      "value": 40
     },
     "AdvancedTankUnitMaxStorage": {
       "comment": "How much liquid an Advanced Tank Unit can take (Value in buckets, 1000 Mb)",
-      "value": 512
+      "value": 160
+    },
+    "IndustrialTankUnitCapacity": {
+      "comment": "How much liquid an Industrial Tank Unit can take (Value in buckets, 1000 Mb)",
+      "value": 640
+    },
+    "QuantumTankUnitCapacity": {
+      "comment": "How much liquid a Quantum Tank Unit can take (Value in buckets, 1000 Mb)(Compat: \u003d\u003d MAX_VALUE)",
+      "value": 2560
     }
   },
   "matter_fabricator": {

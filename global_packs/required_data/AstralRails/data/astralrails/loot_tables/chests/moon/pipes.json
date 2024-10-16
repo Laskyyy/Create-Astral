@@ -1,0 +1,171 @@
+{
+	"type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 6,
+        "max": 8
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "create:copper_sheet"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:dried_kelp"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "create:fluid_pipe"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "create:fluid_tank"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "create:copper_casing"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "create:portable_fluid_interface"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "create:item_drain"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "create:copper_nugget"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "create:hose_pulley"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "create:copper_valve_handle"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "create:fluid_valve"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "create:smart_fluid_pipe"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "create:mechanical_pump"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "astralsignals:polyvinyl_sheet",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.02
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "createastral:quadrocopter_blueprint",
+          "weight": 100,
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.02
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "createastral:biplane_blueprint",
+          "weight": 100,
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.02
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count":1,
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "createastral:airship_blueprint",
+          "weight": 100,
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.02
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "createastral:gyrodyne_blueprint",
+          "weight": 100,
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.02
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+	"replace": true,
+	"yttr:ultrapure_copper": "minecraft:copper_ingot",
+	"yttr:ultrapure_yttrium": "yttr:yttrium_ingot",
+	"yttr:ultrapure_diamond": "minecraft:diamond",
+	"yttr:ultrapure_netherite": "minecraft:netherite_ingot"
+}

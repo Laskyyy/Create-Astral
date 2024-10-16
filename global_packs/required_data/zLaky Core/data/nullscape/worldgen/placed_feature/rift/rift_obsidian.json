@@ -1,9 +1,0 @@
-{
-	"feature": "nullscape:rift/rift_obsidian",
-	"placement": [
-		{
-			"type": "carving_mask",
-			"step": "air"
-		}
-	]
-}

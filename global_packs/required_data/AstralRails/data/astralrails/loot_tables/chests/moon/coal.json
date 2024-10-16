@@ -1,0 +1,58 @@
+{
+	"type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 10,
+        "max": 12
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "ad_astra:raw_desh"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "ad_astra:desh_nugget"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "ad_astra:moon_desh_ore"
+        },
+				{
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:coal_block"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "ad_astra:moon_stone"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:coal"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "astralsignals:polyvinyl_sheet",
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.02
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

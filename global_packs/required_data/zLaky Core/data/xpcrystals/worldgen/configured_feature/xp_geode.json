@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:lake",
+  "config": {
+		"fluid": {
+			"type": "simple_state_provider",
+			"state":{
+				"Name": "xpcrystals:soul"
+			}
+		},
+		"barrier":{
+			"type": "simple_state_provider",
+			"state":{
+				"Name": "minecraft:warped_wart_block"
+			}
+		}
+	}
+}

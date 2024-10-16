@@ -5,7 +5,7 @@
     {
       "weight": 1,
       "element": {
-        "location": "astralrails:mine/mineshaft_floor",
+        "location": "astralrails:overworld/railtown/mine/mineshaft_floor",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"

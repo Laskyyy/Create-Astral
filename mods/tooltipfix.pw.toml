@@ -1,6 +1,6 @@
 name = "ToolTipFix"
 filename = "tooltipfix-1.0.4-1.18.jar"
-side = "both"
+side = "client"
 
 [download]
 mode = "metadata:curseforge"

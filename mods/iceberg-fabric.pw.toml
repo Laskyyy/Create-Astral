@@ -1,6 +1,6 @@
 name = "Iceberg [Fabric]"
 filename = "Iceberg-1.18.2-fabric-1.0.38.jar"
-side = "both"
+side = "client"
 
 [download]
 mode = "metadata:curseforge"

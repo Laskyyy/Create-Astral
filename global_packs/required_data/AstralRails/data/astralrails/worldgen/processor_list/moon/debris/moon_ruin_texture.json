@@ -1,0 +1,126 @@
+{
+	"processors": [
+		{
+			"processor_type": "minecraft:rule",
+			"rules": [
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "minecraft:dirt",
+						"probability": 1.0
+					},
+					"output_state": {
+						"Name": "ad_astra:moon_sand"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "minecraft:gray_concrete",
+						"probability": 0.1
+					},
+					"output_state": {
+						"Name": "minecraft:air"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "ad_astra:moon_stone",
+						"probability": 0.1
+					},
+					"output_state": {
+						"Name": "minecraft:air"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "ad_astra:moon_stone",
+						"probability": 0.1
+					},
+					"output_state": {
+						"Name": "minecraft:air"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "chipped:glass_7",
+						"probability": 0.1
+					},
+					"output_state": {
+						"Name": "minecraft:air"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "createdeco:cast_iron_mesh_fence",
+						"probability": 0.15
+					},
+					"output_state": {
+						"Name": "minecraft:air"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "createdeco:cast_iron_catwalk",
+						"probability": 0.15
+					},
+					"output_state": {
+						"Name": "minecraft:air"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "minecraft:tinted_glass",
+						"probability": 0.2
+					},
+					"output_state": {
+						"Name": "minecraft:air"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "dbe:grray_steel_plating",
+						"probability": 0.1
+					},
+					"output_state": {
+						"Name": "minecraft:air"
+					}
+				}
+			]
+		}
+	]
+}

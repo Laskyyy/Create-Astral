@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "techreborn:crude_storage_unit",
+	"techreborn:storage_buffer",
 		"drinkbeer:beer_barrel",
 		"drinkbeer:bartending_table_normal",
 		"drinkbeer:trade_box_normal",

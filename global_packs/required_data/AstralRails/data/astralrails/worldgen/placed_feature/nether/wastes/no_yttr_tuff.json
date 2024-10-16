@@ -1,0 +1,24 @@
+{
+	"feature": "astralrails:nether/wastes/no_yttr_tuff",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 64
+    },
+    {
+      "type": "minecraft:biome"
+    },
+		{
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 5
+        },
+        "max_inclusive": {
+          "absolute": 5
+        }
+      }
+    }
+  ]
+}

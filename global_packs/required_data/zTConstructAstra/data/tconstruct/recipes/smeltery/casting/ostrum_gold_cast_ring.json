@@ -1,0 +1,16 @@
+{
+  "type": "tconstruct:casting_table",
+  "fabric:load_conditions": [
+  ],
+  "cast": {
+    "item": "astraladditions:ring_gold_cast"
+  },
+  "fluid": {
+    "tag": "c:molten_ostrum",
+    "amount": 8000
+  },
+  "result": {
+    "item": "createbigcannons:nethersteel_screw_lock"
+  },
+  "cooling_time": 60
+}

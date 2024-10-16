@@ -1,6 +1,6 @@
 name = "Ambient Environment"
 filename = "AmbientEnvironment-fabric-1.18.2-7.0+19.jar"
-side = "both"
+side = "client"
 
 [download]
 mode = "metadata:curseforge"

@@ -1,0 +1,15 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "amount": 20250,
+      "fluid": "tconstruct:earth_slime",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:slime_ball"
+    }
+  ]
+}

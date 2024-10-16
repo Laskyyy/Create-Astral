@@ -1,0 +1,67 @@
+{
+	id: "65F4E9F0B48DCF6C"
+	order_index: 0
+	title: "Chapter 0.5"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:oak_log", count: 32, weight: 2 }
+		{ item: "minecraft:stone", count: 32, weight: 2 }
+		{ item: "minecraft:diorite", count: 32, weight: 2 }
+		{ item: "minecraft:granite", count: 32, weight: 2 }
+		{ item: "minecraft:andesite", count: 32, weight: 2 }
+		{ item: "minecraft:sand", count: 32, weight: 2 }
+		{ item: "minecraft:gravel", count: 32, weight: 2 }
+		{ item: "minecraft:clay", count: 32, weight: 2 }
+		{ item: "minecraft:iron_ingot", count: 8, weight: 2 }
+		{ item: "minecraft:copper_ingot", count: 16, weight: 2 }
+		{ item: "techreborn:tin_ingot", count: 8, weight: 2 }
+		{ item: "minecraft:redstone", count: 32, weight: 2 }
+		{ item: "minecraft:lapis_lazuli", count: 16, weight: 2 }
+		{ item: "minecraft:coal", count: 32, weight: 2 }
+		{ item: "techreborn:crude_storage_unit", count: 2, weight: 2 }
+		{ item: "reinfchest:iron_chest" }
+		{ item: "minecraft:bundle" }
+		{
+			item: {
+				id: "packages:package"
+				Count: 1b
+				tag: {
+					BlockEntityTag: {
+						PackageContents: {
+							realCount: 0
+						}
+						PackageStyle: {
+							inner: "minecraft:acacia_planks"
+							frame: "minecraft:stripped_acacia_log"
+							color: 6
+						}
+					}
+				}
+			}
+			count: 4
+		}
+		{ item: "minecraft:bone", count: 8 }
+		{ item: "minecraft:gunpowder", count: 8 }
+		{ item: "minecraft:string", count: 8 }
+		{ item: "minecraft:rotten_flesh", count: 16 }
+		{ item: "minecraft:porkchop", count: 8 }
+		{ item: "minecraft:cod" }
+		{ item: "minecraft:salmon", count: 8 }
+		{ item: "minecraft:beef", count: 8 }
+		{ item: "minecraft:chicken", count: 8 }
+		{ item: "minecraft:rabbit", count: 8 }
+		{ item: "minecraft:mutton", count: 8 }
+		{ item: "minecraft:white_wool", count: 16 }
+		{ item: "create:experience_nugget", count: 8, weight: 5 }
+	]
+	loot_crate: {
+		drops: {
+			boss: 0
+			passive: 0
+			monster: 0
+		}
+		color: 9858867
+		item_name: "Chapter 0.5 Loot Crate"
+		string_id: "chapter_0_5"
+	}
+}

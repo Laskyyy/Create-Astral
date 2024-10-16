@@ -1,0 +1,86 @@
+{
+  "name": "Fluid Boiler Controller",
+  "appearance": {
+    "block": "astralgenerators:fluid_boiler",
+    "running": {
+      "lightlevel": 15
+    }
+  },
+  "gui": [
+    {
+      "texture": "custommachinery:textures/gui/base_background.png",
+      "x": 0,
+      "y": 0,
+      "type": "custommachinery:texture"
+    },
+    {
+      "x": 47,
+      "y": 80,
+      "type": "custommachinery:player_inventory"
+    },
+
+    {
+      "type": "custommachinery:fluid",
+      "x": 100,
+      "y": 20,
+      "id": "fuel"
+    },
+    {
+      "type": "custommachinery:fluid",
+      "x": 120,
+      "y": 20,
+      "id": "water"
+    },
+    {
+      "type": "custommachinery:progress",
+      "x": 138,
+      "y": 35
+    },
+    {
+      "type": "custommachinery:fluid",
+      "x": 162,
+      "y": 20,
+      "id": "output"
+    },
+    {
+      "text": "Fluid Boiler",
+      "x": 7,
+      "y": 5,
+      "type": "custommachinery:text"
+    },
+    {
+      "x": 236,
+      "y": 5,
+      "type": "custommachinery:status"
+    }
+  ],
+  "components": [
+    {
+      "type": "custommachinery:fluid",
+      "capacity": "81000000",
+      "id": "fuel",
+      "mode": "input",
+      "maxInput": "81000000",
+      "maxOutput": "0",
+      "filter": ["minecraft:water"]
+    },
+    {
+      "type": "custommachinery:fluid",
+      "capacity": "81000000",
+      "id": "water",
+      "mode": "input",
+      "maxInput": "81000000",
+      "maxOutput": "0",
+      "whitelist": true,
+      "filter": ["minecraft:water"]
+    },
+    {
+      "type": "custommachinery:fluid",
+      "capacity": "81000000",
+      "id": "output",
+      "mode": "output",
+      "maxInput": "0",
+      "maxOutput": "81000000"
+    }
+  ]
+}

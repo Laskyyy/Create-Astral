@@ -1,8 +1,5 @@
 type = customizablemenus
 
-net.minecraft.class_442 {
-}
-
 net.minecraft.class_526 {
 }
 
@@ -36,25 +33,13 @@ com.terraformersmc.modmenu.gui.ModsScreen {
 me.shedaniel.clothconfig2.gui.ClothConfigScreen {
 }
 
-net.minecraft.class_429 {
-}
-
 net.minecraft.class_6777 {
-}
-
-net.minecraft.class_440 {
 }
 
 me.flashyreese.mods.reeses_sodium_options.client.gui.SodiumVideoOptionsScreen {
 }
 
 net.coderbot.iris.gui.screen.ShaderPackScreen {
-}
-
-net.minecraft.class_458 {
-}
-
-com.github.einjerjar.mc.keymap.client.gui.screen.KeymapScreen {
 }
 
 net.minecraft.class_4288 {
@@ -78,18 +63,27 @@ net.minecraft.class_407 {
 net.minecraft.class_443 {
 }
 
-com.github.einjerjar.mc.keymap.client.gui.screen.ConfigScreen {
-}
-
-com.github.einjerjar.mc.keymap.client.gui.screen.LayoutSelectionScreen {
-}
-
-com.github.einjerjar.mc.keymap.client.gui.screen.CreditsScreen {
-}
-
-com.github.einjerjar.mc.keymap.client.gui.screen.HelpScreen {
-}
-
 net.minecraft.class_6599 {
+}
+
+de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen {
+}
+
+net.minecraft.class_433 {
+}
+
+net.minecraft.class_442 {
+}
+
+net.minecraft.class_429 {
+}
+
+net.minecraft.class_440 {
+}
+
+net.minecraft.class_458 {
+}
+
+net.minecraft.class_419 {
 }
 

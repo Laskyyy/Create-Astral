@@ -1,0 +1,8 @@
+{
+	"type":"createaddition:liquid_burning",
+	"input": {
+      	"fluid": "techreborn:nitro_diesel",
+      	"amount": 81000
+	},
+	"burnTime": 24000
+}

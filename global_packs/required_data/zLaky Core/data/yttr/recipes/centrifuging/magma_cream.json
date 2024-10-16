@@ -1,0 +1,19 @@
+{
+	"type": "yttr:centrifuging",
+	"time": 1600,
+	"ingredient": {
+		"item": "minecraft:magma_cream",
+		"count": 8,
+		"yttr:no_substitution": true
+	},
+	"results": [
+		{
+			"item": "minecraft:slime_ball",
+			"count": 8
+		},
+		{
+			"item": "minecraft:blaze_powder",
+			"count": 6
+		}
+	]
+}

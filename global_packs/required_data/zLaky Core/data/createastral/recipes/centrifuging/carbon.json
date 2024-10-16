@@ -1,0 +1,16 @@
+{
+  "type": "estrogen:centrifuging",
+  "ingredients": [
+    {
+      "amount": 162,
+      "fluid": "techreborn:methane",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "amount": 81,
+      "fluid": "techreborn:carbon"
+    }
+  ]
+}

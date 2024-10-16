@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:netherrack_replace_blobs",
+  "config": {
+    "state": {
+      "Name": "tconstruct:ender_slime",
+      "Properties": {
+        "axis": "x"
+      }
+    },
+    "target": {
+      "Name": "minecraft:air"
+    },
+    "radius": {
+      "type": "minecraft:uniform",
+      "value": {
+        "min_inclusive": 1,
+        "max_inclusive": 2
+      }
+    }
+  }
+}

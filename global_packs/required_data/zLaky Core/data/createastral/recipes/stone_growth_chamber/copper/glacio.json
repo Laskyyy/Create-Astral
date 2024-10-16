@@ -1,0 +1,38 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "createastral:stone_growth_chamber",
+	"time": 10,
+	"requirements": [
+		{
+			"type": "custommachinery:structure",
+			"keys": {
+				"a": "ad_astra:polished_glacio_stone",
+				"l": "minecraft:lava",
+				"g": "minecraft:glass"
+			},
+			"pattern": [
+				[
+					"aaa",
+					"aaa",
+					"ama"
+				],
+				[
+					"ggg",
+					"glg",
+					"ggg"
+				],
+				[
+					"aaa",
+					"aaa",
+					"aaa"
+				]
+			]
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "ad_astra:glacio_cobblestone",
+			"amount": 1,
+			"mode": "output"
+		}
+	]
+}

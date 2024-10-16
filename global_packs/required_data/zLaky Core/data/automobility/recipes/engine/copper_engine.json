@@ -1,0 +1,17 @@
+{
+    "type": "automobility:auto_mechanic_table",
+    "category": "automobility:engines",
+    "sortnum": 1,
+    "ingredients": [
+        {"item": "create:large_cogwheel"},
+        {"item": "create:electron_tube"},
+        {"item": "create:copper_casing"},
+        {"item": "create:smart_fluid_pipe"},
+        {"item": "create:gearshift"},
+        {"item": "create:clutch"}
+    ],
+    "result": {
+        "item": "automobility:automobile_engine",
+        "component": "automobility:copper"
+    }
+}

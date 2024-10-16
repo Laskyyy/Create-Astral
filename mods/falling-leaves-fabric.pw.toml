@@ -1,6 +1,6 @@
 name = "Falling Leaves (Fabric)"
 filename = "fallingleaves-1.11.1+1.18.2.jar"
-side = "both"
+side = "client"
 
 [download]
 mode = "metadata:curseforge"

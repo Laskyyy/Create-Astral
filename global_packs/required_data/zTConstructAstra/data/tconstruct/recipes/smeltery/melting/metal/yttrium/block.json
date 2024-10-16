@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+"ingredient": {
+    "item": "yttr:yttrium_block"
+  },
+  "result": {
+    "fluid": "kubejs:molten_calorite",
+    "amount": 81000
+  },
+  "temperature": 3000,
+  "time": 500
+}

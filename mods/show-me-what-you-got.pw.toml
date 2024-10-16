@@ -1,13 +1,13 @@
 name = "Show Me What You Got"
-filename = "ShowMeWhatYouGot-1.18-1.0.1.jar"
+filename = "ShowMeWhatYouGot-1.18-1.0.4.jar"
 side = "both"
 
 [download]
-mode = "metadata:curseforge"
 hash-format = "sha1"
-hash = "e545fe2689c9e9391cf7ad1fa905bcb6eb1ab7e9"
+hash = "b36ec95c51f23a136939dad020bf84f2ac8532de"
+mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 3751100
+file-id = 4630661
 project-id = 564941

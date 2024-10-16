@@ -1,5 +1,20 @@
-type = cached_variables
+type = user_variables
 
-variables {
+variable {
+  name = viewed_changelog_2.1
+  value = false
+  reset_on_launch = false
+}
+
+variable {
+  name = viewed_changelog_2.1.1
+  value = false
+  reset_on_launch = false
+}
+
+variable {
+  name = version
+  value = EXPERIMENTAL
+  reset_on_launch = false
 }
 

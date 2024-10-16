@@ -1,0 +1,65 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "astralsignals:ancient_receiver",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            }
+          ]
+        }
+      ]
+    },
+		{
+      "rolls": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "createastral:quadrocopter_blueprint",
+          "weight": 25
+        },
+				{
+          "type": "minecraft:item",
+          "name": "createastral:gyrodyne_blueprint",
+          "weight": 25
+        },
+				{
+          "type": "minecraft:item",
+          "name": "createastral:biplane_blueprint",
+          "weight": 25
+        },
+				{
+          "type": "minecraft:item",
+          "name": "createastral:airship_blueprint",
+          "weight": 25
+        },
+				{
+          "type": "minecraft:item",
+          "name": "astralsignals:polyvinyl_sheet",
+          "weight": 50
+        },
+				{
+          "type": "minecraft:item",
+          "name": "astralsignals:shimmer_polyvinyl_sheet",
+          "weight": 50
+        },
+				{
+          "type": "minecraft:item",
+          "name": "astralsignals:yttric_polyvinyl_sheet",
+          "weight": 50
+        }
+      ]
+    }
+  ]
+}

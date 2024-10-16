@@ -1,0 +1,15 @@
+{
+  "name": "astralrails:paths/start_paths",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "astralrails:moon/nuclear/powerplant_step_2",
+        "processors": [],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

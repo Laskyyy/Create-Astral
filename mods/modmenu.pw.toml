@@ -1,6 +1,6 @@
 name = "Mod Menu"
 filename = "modmenu-3.2.5.jar"
-side = "both"
+side = "client"
 
 [download]
 mode = "metadata:curseforge"

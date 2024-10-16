@@ -1,0 +1,15 @@
+{
+  "feature": "astralrails:nether/warped/ender_tip",
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 16
+    },
+		{
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

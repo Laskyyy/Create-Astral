@@ -1,0 +1,7 @@
+{
+	"type": "yttr:soaking",
+	"ingredients": [ { "item": "create:chromatic_compound" } ],
+	"catalyst": { "fluid": "yttr:void" },
+	"result": { "block": "createastral:voidtouched_compound" },
+	"sound": "yttr:dissolve"
+}

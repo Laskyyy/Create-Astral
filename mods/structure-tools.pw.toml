@@ -1,0 +1,13 @@
+name = "St'ructure Tools"
+filename = "structure-tools-1.0.22.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+hash-format = "sha1"
+hash = "3ae828251c6158668ebda7be9c394b1b406c1424"
+
+[update]
+[update.curseforge]
+file-id = 3837169
+project-id = 536984

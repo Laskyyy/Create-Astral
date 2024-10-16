@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:netherrack_replace_blobs",
+  "config": {
+    "state": {
+      "Name": "yttr:nethertuff"
+    },
+    "target": {
+      "Name": "minecraft:netherrack"
+    },
+    "radius": 6
+  }
+}

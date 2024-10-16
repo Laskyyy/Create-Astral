@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:netherrack_replace_blobs",
+  "config": {
+    "state": {
+      "Name": "astraladditions:sputum",
+      "Properties": {
+        "axis": "z"
+      }
+    },
+    "target": {
+      "Name": "astraladditions:twisted_nylium"
+    },
+    "radius": {
+      "type": "minecraft:uniform",
+      "value": {
+        "min_inclusive": 1,
+        "max_inclusive": 2
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:netherrack_replace_blobs",
+  "config": {
+    "state": {
+      "Name": "yttr:deepslate_gadolinite",
+      "Properties": {
+        "axis": "y"
+      }
+    },
+    "target": {
+      "Name": "minecraft:end_stone"
+    },
+    "radius": {
+      "type": "minecraft:uniform",
+      "value": {
+        "min_inclusive": 1,
+        "max_inclusive": 2
+      }
+    }
+  }
+}

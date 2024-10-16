@@ -1,9 +1,0 @@
-{
-    "xz_scale": 0.2,
-    "y_scale": 0.1,
-    "noise": "incendium:climate/purity",
-    "shift_x": "minecraft:shift_x",
-    "shift_y": 0.0,
-    "shift_z": "minecraft:shift_z",
-    "type": "minecraft:shifted_noise"
-  }

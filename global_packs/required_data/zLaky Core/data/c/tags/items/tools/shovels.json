@@ -6,6 +6,8 @@
     "minecraft:iron_shovel",
     "minecraft:diamond_shovel",
     "minecraft:golden_shovel",
-    "minecraft:netherite_shovel"
+    "minecraft:netherite_shovel",
+    "tconstruct:excacator",
+    "tconstruct:mattock"
   ]
 }

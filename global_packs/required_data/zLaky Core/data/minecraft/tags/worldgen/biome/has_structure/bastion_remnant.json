@@ -1,7 +1,4 @@
 {
-  "replace": true,
-  "values": [
-    "ad_astra:martian_canyon_creek",
-    "incendium:infernal_dunes"
-  ]
+    "replace": true,
+    "values": ["ad_astra:martian_canyon_creek"]
 }
