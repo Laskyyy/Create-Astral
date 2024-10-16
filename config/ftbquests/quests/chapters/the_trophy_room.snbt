@@ -235,7 +235,7 @@
 			click: ""
 			dev: false
 			corner: false
-			dependency: "5C59106DF5771CE2"
+			dependency: "0938969824F4D4CB"
 		}
 		{
 			x: -0.5d
@@ -293,6 +293,7 @@
 			y: -2.0d
 			description: ["The Players were ever-cunning, they used anything to do everything."]
 			dependencies: ["0938969824F4D4CB"]
+			hide: true
 			hide_text_until_complete: false
 			id: "56C5627DDB62C6E5"
 			tasks: [
@@ -357,6 +358,7 @@
 			y: -0.5d
 			description: ["What is not recorded will be lost."]
 			dependencies: ["0938969824F4D4CB"]
+			hide: true
 			id: "5E9F6A0BF9C19736"
 			tasks: [{
 				id: "108E346B5F9E1E83"
@@ -375,6 +377,7 @@
 			y: 1.5d
 			description: ["The Piglins were cunning enough to leave while they could - and small enough to fit through the portal."]
 			dependencies: ["0938969824F4D4CB"]
+			hide: true
 			id: "1E0623DDA08556BA"
 			tasks: [{
 				id: "7CE193024FB74F7A"
@@ -400,6 +403,7 @@
 			y: 3.0d
 			description: ["Life isn't always about expanding and increasing profits. Sometimes a good meal is enough to be content."]
 			dependencies: ["0938969824F4D4CB"]
+			hide: true
 			id: "6727F3852FC3323C"
 			tasks: [{
 				id: "15E65CBF22539E31"
@@ -425,6 +429,7 @@
 			y: 4.0d
 			description: ["The Sisters of The End fled their home when it became too uninhabitable. The End is inevitable."]
 			dependencies: ["0938969824F4D4CB"]
+			hide: true
 			id: "69915811D14AB0BD"
 			tasks: [{
 				id: "45F7C0CC5F8674FA"
@@ -444,6 +449,7 @@
 			y: 4.5d
 			description: ["As its flesh was torn apart, the Moon bled pink - The essence of everything."]
 			dependencies: ["0938969824F4D4CB"]
+			hide: true
 			id: "0A141ADE11568F1E"
 			tasks: [{
 				id: "43B5414428A95403"
@@ -469,6 +475,7 @@
 			y: 4.5d
 			description: ["Experience, the blood of life."]
 			dependencies: ["0938969824F4D4CB"]
+			hide: true
 			id: "36BC1547ABFE2C05"
 			tasks: [{
 				id: "22B41618D457A687"
@@ -488,6 +495,7 @@
 			y: 4.0d
 			description: ["The Industrial Revolution and its consequences"]
 			dependencies: ["0938969824F4D4CB"]
+			hide: true
 			id: "1847D57138A4D806"
 			tasks: [
 				{
@@ -593,6 +601,7 @@
 			y: 3.0d
 			description: ["The Players pushed opposites together and untangled the entangled. Nothing out of reach."]
 			dependencies: ["0938969824F4D4CB"]
+			hide: true
 			id: "6F2EE9291E961AEE"
 			tasks: [{
 				id: "51E9B59AEB7D5E51"
@@ -618,6 +627,7 @@
 			y: 1.5d
 			description: ["How long ago were we there? How many ages past?"]
 			dependencies: ["0938969824F4D4CB"]
+			hide: true
 			id: "38E17A6C19D35584"
 			tasks: [{
 				id: "138D971F11B540A2"
@@ -636,6 +646,7 @@
 			y: -0.5d
 			description: ["Stories of the &kNether&r were lost to time... lost to reality..."]
 			dependencies: ["0938969824F4D4CB"]
+			hide: true
 			id: "477C2D5CA5F8F5C2"
 			tasks: [{
 				id: "31EAC2B25F4A968F"
@@ -655,6 +666,7 @@
 			y: -2.0d
 			description: ["The End of everything."]
 			dependencies: ["0938969824F4D4CB"]
+			hide: true
 			id: "2E145505F5721C4F"
 			tasks: [{
 				id: "36DC77FB2187411C"
@@ -689,7 +701,6 @@
 				"56C5627DDB62C6E5"
 				"6F2EE9291E961AEE"
 			]
-			secret: true
 			id: "5C59106DF5771CE2"
 			tasks: [{
 				id: "47C02E9DDC6692C7"

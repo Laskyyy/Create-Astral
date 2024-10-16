@@ -1,7 +1,7 @@
 {
 	"type":"createaddition:liquid_burning",
 	"input": {
-      	"fluidTag": "createastral:superheatedfluids",
+      	"fluid": "kubejs:hellfire",
       	"amount": 20250
 	},
 	"burnTime": 3300,

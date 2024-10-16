@@ -112,11 +112,11 @@ onEvent("item.tooltip", (e) => {
         //Create tooltips
         {
             item: "create:blaze_burner",
-            tooltip: 'Blazes are found on the moon inside of the "Lunar Pipeline" structure.',
+            tooltip: 'Blazes are found on the moon inside of the "Lunar Powerplant" structure.',
         },
         {
             item: "create:empty_blaze_burner",
-            tooltip: 'Blazes are found on the moon inside of the "Lunar Pipeline" structure.',
+            tooltip: 'Blazes are found on the moon inside of the "Lunar Powerplant" structure.',
         },
         {
             item: "create:mechanical_arm",
@@ -141,7 +141,7 @@ onEvent("item.tooltip", (e) => {
         },
         {
             item: "minecraft:blaze_rod",
-            tooltip: 'Blazes are found on the moon inside of the "Lunar Pipeline" structure.',
+            tooltip: 'Blazes are found on the moon inside of the "Lunar Powerplant" structure.',
         },
         {
             item: "minecraft:flint_and_steel",
@@ -301,6 +301,22 @@ onEvent("item.tooltip", (e) => {
         {
             item: "astralfoods:astral_sauce",
             tooltip: "Where did the bowl come? The singularity can fabricate them of course!",
+        },
+        {
+            item: "createbigcannons:steel_screw_breech",
+            tooltip: "Wrenchable",
+        },
+        {
+            item: "createbigcannons:incomplete_steel_screw_breech",
+            tooltip: "Wrenchable",
+        },
+        {
+            item: "createbigcannons:nethersteel_screw_breech",
+            tooltip: "Wrenchable",
+        },
+        {
+            item: "createbigcannons:incomplete_nethersteel_screw_breech",
+            tooltip: "Wrenchable",
         },
     ];
 

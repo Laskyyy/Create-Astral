@@ -1,0 +1,30 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "astralgenerators:assembler",
+	"time": 100,
+	"requirements": [
+		{
+			"type": "custommachinery:item",
+			"item": "createastral:astral_singularity",
+			"mode": "input",
+			"amount": 1
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "createastral:subatomic_ingot",
+			"mode": "input",
+			"amount": 8
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "astralgenerators:convergence_core",
+			"mode": "output",
+			"amount": 1
+		},
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 1000
+		}
+	]
+}

@@ -136,7 +136,7 @@ onEvent("recipes", (event) => {
 
         event.recipes
         .createSequencedAssembly( // Inksack for inky fun
-            ["minecraft:ink_sac"],
+            ["2x minecraft:ink_sac"],
             ["createastral:seitan"],
             [
                 event.recipes.createDeploying("createastral:seitan", [

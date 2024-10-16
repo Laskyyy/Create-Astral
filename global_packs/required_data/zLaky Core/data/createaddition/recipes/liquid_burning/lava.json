@@ -4,5 +4,5 @@
       	"fluid": "minecraft:lava",
       	"amount": 81000
 	},
-	"burnTime": 20000
+	"burnTime": 6000
 }

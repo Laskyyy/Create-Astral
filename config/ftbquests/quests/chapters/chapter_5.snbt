@@ -1981,6 +1981,7 @@
 		}
 		{
 			title: "Fragile Cooling Mechanism"
+			icon: "astraladditions:fragile_item"
 			x: 24.5d
 			y: -1.0d
 			subtitle: "&6Don't drop it, clumsy!&r"
@@ -1996,12 +1997,19 @@
 				"43F0268A479AF372"
 				"3F21FC19DD9459EF"
 			]
+			min_required_tasks: 1
 			id: "08F5A89342F03D4C"
-			tasks: [{
-				id: "55E7651129BF29B2"
-				type: "item"
-				item: "astraladditions:fragile_item"
-			}]
+			tasks: [
+				{
+					id: "55E7651129BF29B2"
+					type: "item"
+					item: "astraladditions:fragile_item"
+				}
+				{
+					id: "38356E25638EF579"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			title: "Techreborn Tools+"

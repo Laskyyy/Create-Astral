@@ -1,13 +1,13 @@
 name = "Astral: Generators (for Create: Astral)"
-filename = "astralgenerators-1.0.1.21.jar"
+filename = "astralgenerators-1.0.3.28.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "feff5697fc608d0139c030908212186c13999d43"
+hash = "84e56fc0b983134b654200edf93450f153a66f46"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5763656
+file-id = 5810946
 project-id = 1109754

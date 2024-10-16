@@ -7,7 +7,6 @@
     "minecraft:snowy_slopes",
     "minecraft:windswept_hills",
     "minecraft:windswept_gravelly_hills",
-    "minecraft:windswept_forest",
-    "#minecraft:is_desert"
+    "minecraft:windswept_forest"
   ]
 }

@@ -1,6 +1,10 @@
 onEvent("block.tags", (event) => {
     [
         "#c:shulker_boxes",
+        "createbigcannons:steel_screw_breech",
+        "createbigcannons:nethersteel_screw_breech",
+        "createbigcannons:incomplete_steel_screw_breech",
+        "createbigcannons:incomplete_nethersteel_screw_breech",
         "#extended_drawers:network_components",
         "catwalksinc:catwalk",
         "catwalksinc:industrial_ladder",
@@ -12,7 +16,7 @@ onEvent("block.tags", (event) => {
         "catwalksinc:yellow_caged_ladder",
         "catwalksinc:red_catwalk",
         "catwalksinc:red_ladder",
-        "catwalksinc:red_caged_ladder"
+        "catwalksinc:red_caged_ladder",
     ].forEach((item) => {
         event.add("create:wrench_pickup", item);
     });
