@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = modpack_changelog_2.1
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1728749230236
+  last_edited_time = 1728927244946
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:eb8e2950-cdcc-48ac-b52f-c6f5d2e0353b-1728749180302] = [groups:][instances:]
+  [loading_requirement_container_meta:71bf2d88-4d4e-4b70-b437-c29fe86a2cc5-1728927221137] = [groups:][instances:]
 }
 
 customization {
@@ -193,7 +193,8 @@ element {
 element {
   button_element_executable_block_identifier = 059d60fe-f637-472d-8181-0c50edf16d9b-1706720794956
   [executable_action_instance:9969d8d3-b682-4532-881a-7cea0b0f1233-1706720887122][action_type:closegui] = 
-  [executable_block:059d60fe-f637-472d-8181-0c50edf16d9b-1706720794956][type:generic] = [executables:9969d8d3-b682-4532-881a-7cea0b0f1233-1706720887122;]
+  [executable_action_instance:ca6c2af9-efa5-45be-bff2-811368012f47-1728927170305][action_type:opengui] = title_screen
+  [executable_block:059d60fe-f637-472d-8181-0c50edf16d9b-1706720794956][type:generic] = [executables:9969d8d3-b682-4532-881a-7cea0b0f1233-1706720887122;ca6c2af9-efa5-45be-bff2-811368012f47-1728927170305;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
@@ -221,9 +222,10 @@ element {
 
 element {
   button_element_executable_block_identifier = 14dacea9-bfd2-48d0-b100-e0fe780bd33c-1728748209889
+  [executable_action_instance:090ffeb3-59b7-4612-97ca-7037274bb337-1728927230147][action_type:closegui] = 
   [executable_action_instance:6d0e4496-965f-4fdb-9bce-ac7daebd62e5-1728748621236][action_type:opengui] = modpack_changelog_2.1.1
   [executable_action_instance:e04c70cf-5fa5-43a3-aa6c-e19a46807db9-1728749196882][action_type:set_variable] = viewed_changelog_2.1.1:true
-  [executable_block:14dacea9-bfd2-48d0-b100-e0fe780bd33c-1728748209889][type:generic] = [executables:6d0e4496-965f-4fdb-9bce-ac7daebd62e5-1728748621236;e04c70cf-5fa5-43a3-aa6c-e19a46807db9-1728749196882;]
+  [executable_block:14dacea9-bfd2-48d0-b100-e0fe780bd33c-1728748209889][type:generic] = [executables:090ffeb3-59b7-4612-97ca-7037274bb337-1728927230147;6d0e4496-965f-4fdb-9bce-ac7daebd62e5-1728748621236;e04c70cf-5fa5-43a3-aa6c-e19a46807db9-1728749196882;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
