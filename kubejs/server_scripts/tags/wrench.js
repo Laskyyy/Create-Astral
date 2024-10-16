@@ -5,6 +5,8 @@ onEvent("block.tags", (event) => {
         "createbigcannons:nethersteel_screw_breech",
         "createbigcannons:incomplete_steel_screw_breech",
         "createbigcannons:incomplete_nethersteel_screw_breech",
+        "kubejs:fragile_sheet_block",
+        "kubejs:fire_resistant_fragile_sheet_block",
         "#extended_drawers:network_components",
         "catwalksinc:catwalk",
         "catwalksinc:industrial_ladder",
