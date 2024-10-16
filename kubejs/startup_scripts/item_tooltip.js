@@ -302,6 +302,22 @@ onEvent("item.tooltip", (e) => {
             item: "astralfoods:astral_sauce",
             tooltip: "Where did the bowl come? The singularity can fabricate them of course!",
         },
+        {
+            item: "createbigcannons:steel_screw_breech",
+            tooltip: "Wrenchable",
+        },
+        {
+            item: "createbigcannons:incomplete_steel_screw_breech",
+            tooltip: "Wrenchable",
+        },
+        {
+            item: "createbigcannons:nethersteel_screw_breech",
+            tooltip: "Wrenchable",
+        },
+        {
+            item: "createbigcannons:incomplete_nethersteel_screw_breech",
+            tooltip: "Wrenchable",
+        },
     ];
 
     tooltips.forEach((tooltip) => {

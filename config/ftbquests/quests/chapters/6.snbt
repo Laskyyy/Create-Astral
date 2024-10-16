@@ -37,7 +37,8 @@
 				"The same force that devoured the Moon, I feel it. It formed an entire ecosystem here - an entire world as its nest."
 			]
 			hide_dependency_lines: true
-			dependencies: ["5BD2D0F7F0D70180"]
+			dependencies: ["69669C2A3E16E328"]
+			hide: true
 			size: 2.0d
 			id: "220441E71254C532"
 			tasks: [{
