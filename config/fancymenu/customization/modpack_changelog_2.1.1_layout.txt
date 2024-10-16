@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = modpack_changelog_2.1.1
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1729095882867
+  last_edited_time = 1729099649755
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:16e2e31c-2262-4c2e-a0b3-24cc59635df9-1729095617767] = [groups:][instances:]
+  [loading_requirement_container_meta:e5afe04d-5056-4b5b-a1ba-2efcede5bad1-1729099407674] = [groups:][instances:]
 }
 
 customization {
@@ -105,7 +105,7 @@ element {
 
 element {
   interactable = true
-  source = - **General quest book fixes, amending chapters appearing too early, unfinishable / legacy quests, missing item rewards.**%n%%n%- Stone Growth Chamber: %n%Fixed behaviour on servers (weren't generating). %n%Changed location of machine block in the structure & no longer uses dimension conditions, instead changing the block produced based on the type of smooth stone you build the machine out of (Re-visit ch2 quest for new explanation). %n%Legacy recipe exists for any previously built stone chambers to still function and generate andesite anywhere.%n%%n%- Astral Generators PR, recipes added, no quests yet.%n%- Orbit dimension fixes PR, no longer fall out of overworld orbit into the end, space station doesn't void terrain nearby%n%- Seitan recipe fix PR%n%- TR Fluid name fix PR%n%- Buff blaze cake recipe to use less hellfire / TR fuels re-buff PR%n%- Andesite now gets crushed into cobble, no more conflicting tin nugget recipe%n%- Milling for 200% recipes now properly show as 100%%n%- Createdeco zinc sheets (no uses) are no longer obtainable%n%- Merge andesite alloy block from Create and KubeJs%n%- Slime log melting%n%- Calcite/dripstone new recipe options + mill into higher yield of bonemeal%n%- New dye automation routes%n%- Screw Breeches are now wrenchable, could not previously be mined in survival w/o silk touch%n%- Restore methods of getting resources from soul sand/soil%n%- Misc tweaks to fluid numbers, structure nbt, radio jukebox recipe removal, ink sac recipe buff
+  source = - **General quest book fixes, amending chapters appearing too early, unfinishable / legacy quests, missing item rewards.**%n%%n%- Stone Growth Chamber: %n%Fixed behaviour on servers (weren't generating). %n%Changed location of machine block in the structure & no longer uses dimension conditions, instead changing the block produced based on the type of smooth stone you build the machine out of (Re-visit ch2 quest for new explanation). %n%Legacy recipe exists for any previously built stone chambers to still function and generate andesite anywhere.%n%%n%- Astral Generators PR merged, recipes added, no quests yet.%n%- Orbit dimension fixes PR, no longer fall out of overworld orbit into the end, space station doesn't void terrain nearby.%n%- Seitan recipe fix PR merged.%n%- Tech Rebirb Fluid name fix PR merged.%n%- Buff blaze cake recipe to use less hellfire / Tech Reborn fuels re-buff PR.%n%- Andesite now gets crushed into cobble, no more conflicting tin nugget recipe.%n%- Milling for 200% recipes now properly show as 100%.%n%- Createdeco zinc sheets (no uses) are no longer obtainable.%n%- Merge andesite alloy block from Create and KubeJs.%n%- Slime log melting.%n%- Calcite/dripstone new recipe options + mill into higher yield of bonemeal.%n%- New dye automation routes.%n%- Screw Breeches are now wrenchable, could not previously be mined in survival w/o silk touch.%n%- Restore methods of getting resources from soul sand/soil.%n%- Misc tweaks to fluid numbers, structure nbt, radio jukebox recipe removal, ink sac recipe buff.%n%- Fix uncraftable process for shimmer amplifier due to using 9000 mB instead of fabric units.
   source_mode = direct
   shadow = true
   scale = 1.0
