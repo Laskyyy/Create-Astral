@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = modpack_changelog_2.1.1
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1728924658950
+  last_edited_time = 1729095882867
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:566b54a0-d7e9-4c74-8fb7-20419aae899e-1728801704109] = [groups:][instances:]
+  [loading_requirement_container_meta:16e2e31c-2262-4c2e-a0b3-24cc59635df9-1729095617767] = [groups:][instances:]
 }
 
 customization {
@@ -63,7 +63,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%2.1.1 is the first patch to 2.1, addressing many of the bugs and issues identified by the community since launch.%n%Thanks to everyone for helping make Astral as enjoyable as possible!%n%^^^
+  source = ^^^%n%2.1.1 is the first patch to 2.1, addressing many of the critical bugs and issues identified by the community since launch.%n%%n%Thanks to everyone for helping make Astral as enjoyable as possible!%n%^^^
   source_mode = direct
   shadow = true
   scale = 0.7
@@ -105,7 +105,7 @@ element {
 
 element {
   interactable = true
-  source = **Major Mod Changes**%n%- Updated to Create 0.5.1%n%- Introduced Astral Additions 1.3.1 (In-house Astral mod)%n%- XpCrystals (In-house Astral mod)%n%- Cam’s Backpack → Travellers’ Backpack%n%- Yttr Mod%n%- Create Big Cannons%n%- Create Copycats%n%- Create Additions%n%- ProjectTable%n%- Create Ender Transmission%n%- Create Estrogen%n%- Storage Drawers%n%- Discord Rich Presence%n%- TrashCans%n%- Buildings Gadgets & Trowels%n%%n%**Reworks and Additions**%n%_All javascript code got refractored in this update for ease of reading and better organisation. We split the code into multiple files based on purpose. The code should now be pretty useful, if you want to learn some KubeJS._%n%%n%- Gave some love to the entire quest book to include clearer descriptions, new automation explanations & in later chapters, almost entirely re-made progression.%n%- Introduced CH6 & and a tangible "End" to the pack.%n%- Edited all structures placed around the world to strengthen Create: Astral’s 'unique' atmosphere (especially thanks to our structure contest submitters!). Structures are now vastly more varied, and even inhabit orbit dimensions!%n%- Courtesy of Astral Additions, include new mobs, items with unique gameplay mechanics, varieties of fixes, and more.%n%- Reworked the primary UI, and re-made almost all of the existing textures for Create: Astral that weren't directly created by us to be in-house.%n%- In addition to the above, a community paintings optional resource packs is included, made from content posted to the #fan-art channel!%n%- In addition in addition to the above, create-Style sheet textures replace all types of metal plates, and transitional textures for a number of create sequenced assemblies should further differentiate items in active assembly lines.%n%- Introduced an entirely new create-related enchantment chain,  for automation of enchantments (In the late game, this extends above maximum level caps for certain enchantments.)%n%- Reworked the resource generation in its totality. (Goodbye, deepslate gen :lakysalute: ). Cobblestone generators still kick off many production chains, and all lunar cobble varieties can be generated in the Stone Growth Chamber multiblock in different planet orbits. All metals can be obtained in much greater varieties AND quantities from alternative sources, and those sources (e.g. create orestones) can be automated more easily.%n%- Removed the Reliance on 10k infinite pools of fluids, added tiered automation recipes for Shimmer and Lava, and further recipes for most other fluid types. (10k pools are now disabled by default, but can be re-enabled in the create settings widget on the pause menu!)%n%- Reworked and added a plethora of new Create-ified food recipes for all food mods. (Inc. Liquid Food processing PR)%n%- Included in the above: Methods of obtaining meats and mob drops without directly harming an animal at all.%n%- Multiple new multiblocks spread across all tiers of progression have been created. (REI support for some may be limited or non-existent, but recipes will be explained within the questbook!)%n%- Added Ponder support for some custom multiblocks, including the electrolyzer.%n%- Reworked Villagers to work in Create: Astral by changing the trades to not break progression, and changed some trader varieties to be more thematic to a create-pack.%n%- Added a Create: Astral multiblock to lessen the reliance on normal cobblestone gens to ease the strain item entities sometimes have on the game.%n%- Portals for Mars & Mercury now exist, but are less simple to obtain than the Shimmer Portal, and will be obtained later in chapters where you have already explored that planet. (Reducing reliance on rockets for when the 'gimmick' of them has faded)%n%- A brand new flashy main menu, credits screen, and this very in-game changelog! (All designed by Shortman)%n%- A unique revamp of obtaining music discs in your playthrough (also developed by Shortman) - discs can no longer be found in loot chests or dropped by creepers; you must instead progress through a side questline unlocked in Chapter 1. Discs aren't required to complete the game, but they make for a great collection and bragging point.%n%- On top of this, 7 new music discs have been added to the game! Two by our very own Ethanicuss, and five added by the Yttr mod. Happy listening!%n%%n%**Minor Additions**%n%- Added Discord Rich Presence%n%- Adjusted the power generation curve by adding new options and reworking/buffing the lesser used ones.%n%- Removed sifting as a process, distributed the recipes between vanilla create processes.%n%- Introduced many extra tooltips for more informational content regarding less-clear item usages.%n%- Fixed the default settings configuration setup (Will now keep your settings every time you update the pack)%n%- Reworked Tinker tool balance. (Buffed sledgehammer back to it's true strength. Additionally, adjusted lesser used tools to be more relevant).%n%- Added Immersive Aircraft "Blueprints", which can be found in generated structure loot tables. These can be duplicated infinitely once the first of each is obtained.%n%- Changed inventory management, by making shulker boxes and the newly added Travelers Backpack (Compatible with spacesuits!) be accessible more conveniently. Alongside these, "Extended Drawers" will provide a smarter solution to storage than packages and CSU’s. These come with custom-implemented storage drawer upgrades for smoother progression.%n%- Reworked AE2 Recipes to work with Create instead of the Vanilla AE2 methods, adjusted the questline for it.%n%- Adjusted Ad Astra planet generation (Mercury is now flatter, but retains patches of extreme spikes and mars terrain is now more rough). Ore should now generate more commonly / evenly to incentivise exploring on your first visit.%n%- Two more dimensions are now relevant in Ch4 (one being entirely new), and another dimension is introduced in Ch6.%n%- Superheating through blaze cakes are back, liquid superheating still exists and is even smoother, accepting the actual fluids rather than buckets when using a straw.%n%- Easier access to Brass Create components early-on, including the regular suite of funnels/tunnels, alongside stockpile switches and content observers.%n%- Train support for custom Astral Portals%n%- Log stripping support for all wood types%n%- Reworked a large amount of stonecutting & mechanical saw recipes so they integrate with Create sawing smoothly.%n%- Added secret plushies :3%n%- Fluid player behaviour applied to most custom fluids (collision/floating/lava burning)%n%- Added too many splash texts, to hopefully make you smile, because we love you. <3%n%- Fixed common duplication bugs through updating to Create 0.5.1%n%- Fixed loot table behaviour (Example: Loot tables were sometimes not generating properly, when a player visits another structure of the same type)%n%- Re-added trinket slots to allow as many trinkets as you can fit…%n%- Added new Potato cannon projectiles, some useful, some less than useful, some… explosive…%n%- Added prompt to rEaD tHe QuEsTbOoK%n%- Easy access home from the end by shift clicking any bedrock at y=0
+  source = - **General quest book fixes, amending chapters appearing too early, unfinishable / legacy quests, missing item rewards.**%n%%n%- Stone Growth Chamber: %n%Fixed behaviour on servers (weren't generating). %n%Changed location of machine block in the structure & no longer uses dimension conditions, instead changing the block produced based on the type of smooth stone you build the machine out of (Re-visit ch2 quest for new explanation). %n%Legacy recipe exists for any previously built stone chambers to still function and generate andesite anywhere.%n%%n%- Astral Generators PR, recipes added, no quests yet.%n%- Orbit dimension fixes PR, no longer fall out of overworld orbit into the end, space station doesn't void terrain nearby%n%- Seitan recipe fix PR%n%- TR Fluid name fix PR%n%- Buff blaze cake recipe to use less hellfire / TR fuels re-buff PR%n%- Andesite now gets crushed into cobble, no more conflicting tin nugget recipe%n%- Milling for 200% recipes now properly show as 100%%n%- Createdeco zinc sheets (no uses) are no longer obtainable%n%- Merge andesite alloy block from Create and KubeJs%n%- Slime log melting%n%- Calcite/dripstone new recipe options + mill into higher yield of bonemeal%n%- New dye automation routes%n%- Screw Breeches are now wrenchable, could not previously be mined in survival w/o silk touch%n%- Restore methods of getting resources from soul sand/soil%n%- Misc tweaks to fluid numbers, structure nbt, radio jukebox recipe removal, ink sac recipe buff
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -192,8 +192,9 @@ element {
 
 element {
   button_element_executable_block_identifier = 059d60fe-f637-472d-8181-0c50edf16d9b-1706720794956
-  [executable_action_instance:9969d8d3-b682-4532-881a-7cea0b0f1233-1706720887122][action_type:closegui] = 
-  [executable_block:059d60fe-f637-472d-8181-0c50edf16d9b-1706720794956][type:generic] = [executables:9969d8d3-b682-4532-881a-7cea0b0f1233-1706720887122;]
+  [executable_action_instance:17f1d316-96e1-4fbf-af75-797832c85f20-1728927029162][action_type:closegui] = 
+  [executable_action_instance:a0a30e18-83d3-4f22-8aab-61bfcd03fd90-1728927045716][action_type:opengui] = title_screen
+  [executable_block:059d60fe-f637-472d-8181-0c50edf16d9b-1706720794956][type:generic] = [executables:17f1d316-96e1-4fbf-af75-797832c85f20-1728927029162;a0a30e18-83d3-4f22-8aab-61bfcd03fd90-1728927045716;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
@@ -221,15 +222,16 @@ element {
 
 element {
   button_element_executable_block_identifier = 14dacea9-bfd2-48d0-b100-e0fe780bd33c-1728748209889
-  [executable_action_instance:6d0e4496-965f-4fdb-9bce-ac7daebd62e5-1728748621236][action_type:opengui] = modpack_changelog_2.1.1
-  [executable_action_instance:e04c70cf-5fa5-43a3-aa6c-e19a46807db9-1728749196882][action_type:set_variable] = viewed_changelog_2.1.1:true
-  [executable_block:14dacea9-bfd2-48d0-b100-e0fe780bd33c-1728748209889][type:generic] = [executables:6d0e4496-965f-4fdb-9bce-ac7daebd62e5-1728748621236;e04c70cf-5fa5-43a3-aa6c-e19a46807db9-1728749196882;]
+  [executable_action_instance:e9f652b9-5c84-4318-bb03-1c4c66ba295b-1728927278426][action_type:closegui] = 
+  [executable_action_instance:6d0e4496-965f-4fdb-9bce-ac7daebd62e5-1728748621236][action_type:opengui] = modpack_changelog_2.1
+  [executable_action_instance:e04c70cf-5fa5-43a3-aa6c-e19a46807db9-1728749196882][action_type:set_variable] = viewed_changelog_2.1:true
+  [executable_block:14dacea9-bfd2-48d0-b100-e0fe780bd33c-1728748209889][type:generic] = [executables:e9f652b9-5c84-4318-bb03-1c4c66ba295b-1728927278426;6d0e4496-965f-4fdb-9bce-ac7daebd62e5-1728748621236;e04c70cf-5fa5-43a3-aa6c-e19a46807db9-1728749196882;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = →
+  label = ←
   navigatable = true
   element_type = custom_button
   instance_identifier = e8f5abda-1459-4a90-bc21-a2ecb33d21e6-1728748209888
@@ -237,8 +239,8 @@ element {
   appearance_delay_seconds = 1.0
   fade_in = false
   fade_in_speed = 1.0
-  anchor_point = mid-right
-  x = -69
+  anchor_point = mid-left
+  x = 20
   y = -20
   width = 40
   height = 40
@@ -251,7 +253,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%{"placeholder":"local","values":{"key":"astralmenu.changelog.2_1_1.label"}}%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"astralmenu.changelog.2_1.label"}}%n%^^^
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -279,9 +281,10 @@ element {
   appearance_delay_seconds = 1.0
   fade_in = false
   fade_in_speed = 1.0
-  anchor_point = mid-right
-  x = -79
-  y = 22
+  anchor_point = element
+  anchor_point_element = e8f5abda-1459-4a90-bc21-a2ecb33d21e6-1728748209888
+  x = -10
+  y = 40
   width = 60
   height = 16
   stretch_x = false
@@ -314,6 +317,6 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = 112bdd4f-1d86-4cd5-997e-92c2d82ff02c-1728748714164
   [loading_requirement_container_meta:112bdd4f-1d86-4cd5-997e-92c2d82ff02c-1728748714164] = [groups:][instances:d04b0455-a474-4f54-8d2e-becc879cc9d4-1728748815885;]
-  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:d04b0455-a474-4f54-8d2e-becc879cc9d4-1728748815885] = viewed_changelog_2.1.1:false
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:d04b0455-a474-4f54-8d2e-becc879cc9d4-1728748815885] = viewed_changelog_2.1:false
 }
 
