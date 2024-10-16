@@ -38,4 +38,9 @@ onEvent("recipes", event => {
         result: "minecraft:red_dye",
         cooling_time: 100
     })
+    //infinite dirt premoon
+    event.recipes.createMixing("4x minecraft:coarse_dirt", [
+        "2x minecraft:dirt",
+        "2x minecraft:gravel"
+    ])
 })
