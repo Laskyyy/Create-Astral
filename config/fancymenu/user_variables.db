@@ -1,14 +1,20 @@
 type = user_variables
 
 variable {
-  name = version
-  value = EXPERIMENTAL
+  name = viewed_changelog_2.1
+  value = false
   reset_on_launch = false
 }
 
 variable {
-  name = has_checked_changelog
+  name = viewed_changelog_2.1.1
   value = false
+  reset_on_launch = false
+}
+
+variable {
+  name = version
+  value = EXPERIMENTAL
   reset_on_launch = false
 }
 

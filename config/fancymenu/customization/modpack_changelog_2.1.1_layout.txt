@@ -1,15 +1,15 @@
 type = fancymenu_layout
 
 layout-meta {
-  identifier = modpack_changelog_2.1
+  identifier = modpack_changelog_2.1.1
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1728749230236
+  last_edited_time = 1728924658950
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:eb8e2950-cdcc-48ac-b52f-c6f5d2e0353b-1728749180302] = [groups:][instances:]
+  [loading_requirement_container_meta:566b54a0-d7e9-4c74-8fb7-20419aae899e-1728801704109] = [groups:][instances:]
 }
 
 customization {
@@ -63,7 +63,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%2.1 is the next major content update for Astral, giving love to the whole pack, but particularly focusing on revamping Chapters 4 and 5, and introducing the new, final, Chapter 6.%n%%n%We've also taken the time to address many of the issues from the previous version, with QoL changes, such as build tools and proper backpacks. Weapon changes are also featured, with some fresh combat encounters!%n%^^^
+  source = ^^^%n%2.1.1 is the first patch to 2.1, addressing many of the bugs and issues identified by the community since launch.%n%Thanks to everyone for helping make Astral as enjoyable as possible!%n%^^^
   source_mode = direct
   shadow = true
   scale = 0.7
@@ -251,7 +251,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%Patch 2.1.1%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"astralmenu.changelog.2_1_1.label"}}%n%^^^
   source_mode = direct
   shadow = true
   scale = 1.0
