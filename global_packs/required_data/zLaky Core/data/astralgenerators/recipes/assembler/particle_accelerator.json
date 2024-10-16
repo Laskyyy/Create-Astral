@@ -1,0 +1,73 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "astralgenerators:assembler",
+	"time": 100,
+	"requirements": [
+		{
+			"type": "custommachinery:item",
+			"item": "createastral:pure_star_shard",
+			"mode": "input",
+			"amount": 2
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "ae2:singularity",
+			"mode": "input",
+			"amount": 8
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "createastral:ender_plating",
+			"mode": "input",
+			"amount": 32
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "createastral:astral_singularity",
+			"mode": "input",
+			"amount": 8
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "createastral:subatomic_ingot",
+			"mode": "input",
+			"amount": 8
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "techreborn:industrial_circuit",
+			"mode": "input",
+			"amount": 64
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "techreborn:industrial_circuit",
+			"mode": "input",
+			"amount": 64
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "techreborn:industrial_circuit",
+			"mode": "input",
+			"amount": 64
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "createastral:promethium_atomic_battery",
+			"mode": "input",
+			"amount": 1
+		},
+		{
+			"type": "custommachinery:item",
+			"item": "custommachinery:custom_machine_item",
+			"nbt": { "machine": "astralgenerators:particle_accelerator" },
+			"mode": "output",
+			"amount": 1
+		},
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 1000
+		}
+	]
+}
