@@ -1,0 +1,11 @@
+{
+  "config": {
+    "start_pool": "astralrails:mine/house",
+    "size": 7
+  },
+  "biomes": "#astralrails:has_structure/railtowns",
+  "adapt_noise":false,
+  "spawn_overrides": {
+  },
+  "type": "minecraft:village"
+}

@@ -1,0 +1,60 @@
+{
+  "name": "incendium:generic",
+  "fallback": "incendium:castle/decor/saplings",
+  "elements": [
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:castle/decor/saplings_big",
+        "processors": "incendium:castle/oak",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:castle/decor/saplings_big",
+        "processors": "incendium:castle/dark_oak",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:castle/decor/saplings_big",
+        "processors": "incendium:castle/spruce",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:castle/decor/saplings_big",
+        "processors": "incendium:castle/jungle",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:castle/decor/saplings_big",
+        "processors": "incendium:castle/acacia",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:castle/decor/saplings_big",
+        "processors": "incendium:castle/dark_oak",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

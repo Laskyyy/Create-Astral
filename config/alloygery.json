@@ -1,0 +1,23 @@
+{
+  "enable_diamond_upgrade": true,
+  "enable_emerald_upgrade": true,
+  "enable_netherite_upgrade": true,
+  "enable_gold_upgrade": true,
+  "disable_diamond_crafting": true,
+  "disable_iron_crafting": true,
+  "tin_ore": {
+    "should_generate": true,
+    "size": 9,
+    "number": 50
+  },
+  "nickel_ore": {
+    "should_generate": true,
+    "size": 8,
+    "number": 10
+  },
+  "titanium_ore": {
+    "should_generate": true,
+    "size": 6,
+    "number": 10
+  }
+}

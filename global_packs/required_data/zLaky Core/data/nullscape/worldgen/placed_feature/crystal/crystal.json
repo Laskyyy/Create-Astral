@@ -1,0 +1,1147 @@
+{
+  "feature": {
+    "type": "minecraft:random_patch",
+    "config": {
+      "tries": 150,
+      "xz_spread": 8,
+      "y_spread": 8,
+      "feature": {
+        "feature": {
+          "type": "minecraft:random_selector",
+          "config": {
+            "features": [
+              {
+                "chance": 0.015,
+                "feature": {
+                  "feature": {
+                    "type": "minecraft:random_patch",
+                    "config": {
+                      "tries": 50,
+                      "xz_spread": 2,
+                      "y_spread": 2,
+                      "feature": {
+                        "feature": {
+                          "type": "minecraft:simple_random_selector",
+                          "config": {
+                            "features": [
+                              {
+                                "feature": {
+                                  "type": "minecraft:simple_block",
+                                  "config": {
+                                    "to_place": {
+                                      "type": "minecraft:noise_provider",
+                                      "seed": 25324,
+                                      "noise": {
+                                        "firstOctave": -6,
+                                        "amplitudes": [
+                                          3.75,
+                                          2.5,
+                                          1.75,
+                                          2.25,
+                                          5.5
+                                        ]
+                                      },
+                                      "scale": 1,
+                                      "states": [
+                                        {
+                                          "Name": "minecraft:light",
+                                          "Properties": {
+                                            "level": "15",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:light",
+                                          "Properties": {
+                                            "level": "14",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:light",
+                                          "Properties": {
+                                            "level": "13",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:light",
+                                          "Properties": {
+                                            "level": "12",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:light",
+                                          "Properties": {
+                                            "level": "11",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:light",
+                                          "Properties": {
+                                            "level": "10",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:light",
+                                          "Properties": {
+                                            "level": "9",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:light",
+                                          "Properties": {
+                                            "level": "8",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:light",
+                                          "Properties": {
+                                            "level": "7",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:light",
+                                          "Properties": {
+                                            "level": "6",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:light",
+                                          "Properties": {
+                                            "level": "5",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:light",
+                                          "Properties": {
+                                            "level": "4",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:cave_air",
+                                          "Properties": {
+                                            "level": "3",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:cave_air",
+                                          "Properties": {
+                                            "level": "2",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:cave_air",
+                                          "Properties": {
+                                            "level": "1",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:cave_air",
+                                          "Properties": {
+                                            "level": "0",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:cave_air",
+                                          "Properties": {
+                                            "level": "0",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:cave_air",
+                                          "Properties": {
+                                            "level": "0",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:cave_air",
+                                          "Properties": {
+                                            "level": "0",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:cave_air",
+                                          "Properties": {
+                                            "level": "0",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:cave_air",
+                                          "Properties": {
+                                            "level": "0",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:cave_air",
+                                          "Properties": {
+                                            "level": "0",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:cave_air",
+                                          "Properties": {
+                                            "level": "0",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:cave_air",
+                                          "Properties": {
+                                            "level": "0",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:cave_air",
+                                          "Properties": {
+                                            "level": "1",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:cave_air",
+                                          "Properties": {
+                                            "level": "2",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:cave_air",
+                                          "Properties": {
+                                            "level": "3",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:light",
+                                          "Properties": {
+                                            "level": "4",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:light",
+                                          "Properties": {
+                                            "level": "5",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:light",
+                                          "Properties": {
+                                            "level": "6",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:light",
+                                          "Properties": {
+                                            "level": "7",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:light",
+                                          "Properties": {
+                                            "level": "8",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:light",
+                                          "Properties": {
+                                            "level": "9",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:light",
+                                          "Properties": {
+                                            "level": "10",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:light",
+                                          "Properties": {
+                                            "level": "11",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:light",
+                                          "Properties": {
+                                            "level": "12",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:light",
+                                          "Properties": {
+                                            "level": "13",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:light",
+                                          "Properties": {
+                                            "level": "14",
+                                            "waterlogged": "false"
+                                          }
+                                        },
+                                        {
+                                          "Name": "minecraft:light",
+                                          "Properties": {
+                                            "level": "15",
+                                            "waterlogged": "false"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                },
+                                "placement": [
+                                  {
+                                    "type": "minecraft:block_predicate_filter",
+                                    "predicate": {
+                                      "type": "minecraft:all_of",
+                                      "predicates": [
+                                        {
+                                          "type": "minecraft:matching_blocks",
+                                          "offset": [
+                                            0,
+                                            0,
+                                            0
+                                          ],
+                                          "blocks": [
+                                            "minecraft:air",
+                                            "cave_air"
+                                          ]
+                                        },
+                                        {
+                                          "type": "minecraft:any_of",
+                                          "predicates": [
+                                            {
+                                              "type": "minecraft:matching_blocks",
+                                              "offset": [
+                                                1,
+                                                0,
+                                                0
+                                              ],
+                                              "blocks": [
+                                                "minecraft:amethyst_block"
+                                              ]
+                                            },
+                                            {
+                                              "type": "minecraft:matching_blocks",
+                                              "offset": [
+                                                -1,
+                                                0,
+                                                0
+                                              ],
+                                              "blocks": [
+                                                "minecraft:amethyst_block"
+                                              ]
+                                            },
+                                            {
+                                              "type": "minecraft:matching_blocks",
+                                              "offset": [
+                                                0,
+                                                1,
+                                                0
+                                              ],
+                                              "blocks": [
+                                                "minecraft:amethyst_block"
+                                              ]
+                                            },
+                                            {
+                                              "type": "minecraft:matching_blocks",
+                                              "offset": [
+                                                0,
+                                                -1,
+                                                0
+                                              ],
+                                              "blocks": [
+                                                "minecraft:amethyst_block"
+                                              ]
+                                            },
+                                            {
+                                              "type": "minecraft:matching_blocks",
+                                              "offset": [
+                                                0,
+                                                0,
+                                                1
+                                              ],
+                                              "blocks": [
+                                                "minecraft:amethyst_block"
+                                              ]
+                                            },
+                                            {
+                                              "type": "minecraft:matching_blocks",
+                                              "offset": [
+                                                0,
+                                                0,
+                                                -1
+                                              ],
+                                              "blocks": [
+                                                "minecraft:amethyst_block"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        },
+                        "placement": []
+                      }
+                    }
+                  },
+                  "placement": [
+                    {
+                      "type": "minecraft:block_predicate_filter",
+                      "predicate": {
+                        "type": "minecraft:matching_blocks",
+                        "blocks": [
+                          "minecraft:amethyst_block",
+                          "minecraft:cave_air",
+                          "light"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "chance": 0.4,
+                "feature": {
+                  "feature": {
+                    "type": "minecraft:simple_block",
+                    "config": {
+                      "to_place": {
+                        "type": "minecraft:noise_provider",
+                        "seed": 999,
+                        "noise": {
+                          "firstOctave": -6,
+                          "amplitudes": [
+                            1.075,
+                            1.5,
+                            0.75,
+                            1.05,
+                            1.25
+                          ]
+                        },
+                        "scale": 1,
+                        "states": [
+                          {
+                            "Name": "minecraft:air"
+                          },
+                          {
+                            "Name": "minecraft:air"
+                          },
+                          {
+                            "Name": "minecraft:air"
+                          },
+                          {
+                            "Name": "minecraft:air"
+                          },
+                          {
+                            "Name": "minecraft:air"
+                          },
+                          {
+                            "Name": "minecraft:air"
+                          },
+                          {
+                            "Name": "minecraft:air"
+                          },
+                          {
+                            "Name": "minecraft:air"
+                          },
+                          {
+                            "Name": "minecraft:air"
+                          },
+                          {
+                            "Name": "minecraft:air"
+                          },
+                          {
+                            "Name": "minecraft:air"
+                          },
+                          {
+                            "Name": "minecraft:air"
+                          },
+                          {
+                            "Name": "minecraft:cave_air"
+                          },
+                          {
+                            "Name": "minecraft:cave_air"
+                          },
+                          {
+                            "Name": "minecraft:cave_air"
+                          },
+                          {
+                            "Name": "minecraft:air"
+                          },
+                          {
+                            "Name": "minecraft:air"
+                          },
+                          {
+                            "Name": "minecraft:air"
+                          },
+                          {
+                            "Name": "minecraft:air"
+                          },
+                          {
+                            "Name": "minecraft:air"
+                          },
+                          {
+                            "Name": "minecraft:air"
+                          },
+                          {
+                            "Name": "minecraft:air"
+                          },
+                          {
+                            "Name": "minecraft:air"
+                          },
+                          {
+                            "Name": "minecraft:air"
+                          },
+                          {
+                            "Name": "minecraft:air"
+                          },
+                          {
+                            "Name": "minecraft:air"
+                          },
+                          {
+                            "Name": "minecraft:air"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "placement": [
+                    {
+                      "type": "minecraft:block_predicate_filter",
+                      "predicate": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              0,
+                              0,
+                              0
+                            ],
+                            "blocks": [
+                              "minecraft:air"
+                            ]
+                          },
+                          {
+                            "type": "minecraft:any_of",
+                            "predicates": [
+                              {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                  1,
+                                  0,
+                                  0
+                                ],
+                                "blocks": [
+                                  "minecraft:cave_air",
+                                  "minecraft:amethyst_block",
+                                  "minecraft:blackstone",
+                                  "light",
+                                  "obsidian",
+                                  "crying_obsidian"
+                                ]
+                              },
+                              {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                  0,
+                                  0,
+                                  1
+                                ],
+                                "blocks": [
+                                  "minecraft:cave_air",
+                                  "minecraft:amethyst_block",
+                                  "minecraft:blackstone",
+                                  "light",
+                                  "obsidian",
+                                  "crying_obsidian"
+                                ]
+                              },
+                              {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                  -1,
+                                  0,
+                                  0
+                                ],
+                                "blocks": [
+                                  "minecraft:cave_air",
+                                  "minecraft:amethyst_block",
+                                  "minecraft:blackstone",
+                                  "light",
+                                  "obsidian",
+                                  "crying_obsidian"
+                                ]
+                              },
+                              {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                  0,
+                                  0,
+                                  -1
+                                ],
+                                "blocks": [
+                                  "minecraft:cave_air",
+                                  "minecraft:amethyst_block",
+                                  "minecraft:blackstone",
+                                  "light",
+                                  "obsidian",
+                                  "crying_obsidian"
+                                ]
+                              },
+                              {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                  0,
+                                  1,
+                                  0
+                                ],
+                                "blocks": [
+                                  "minecraft:cave_air",
+                                  "minecraft:amethyst_block",
+                                  "minecraft:blackstone",
+                                  "light",
+                                  "obsidian",
+                                  "crying_obsidian"
+                                ]
+                              },
+                              {
+                                "type": "minecraft:matching_blocks",
+                                "offset": [
+                                  0,
+                                  -1,
+                                  0
+                                ],
+                                "blocks": [
+                                  "minecraft:cave_air",
+                                  "minecraft:amethyst_block",
+                                  "minecraft:blackstone",
+                                  "light",
+                                  "obsidian",
+                                  "crying_obsidian"
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "chance": 0.1,
+                "feature": {
+                  "feature": {
+                    "type": "minecraft:simple_block",
+                    "config": {
+                      "to_place": {
+                        "type": "minecraft:noise_provider",
+                        "seed": 999,
+                        "noise": {
+                          "firstOctave": -6,
+                          "amplitudes": [
+                            0.95,
+                            1.5,
+                            2,
+                            1.5,
+                            3,
+                            4.5
+                          ]
+                        },
+                        "scale": 1,
+                        "states": [
+                          {
+                            "Name": "minecraft:crying_obsidian"
+                          },
+                          {
+                            "Name": "minecraft:crying_obsidian"
+                          },
+                          {
+                            "Name": "minecraft:crying_obsidian"
+                          },
+                          {
+                            "Name": "minecraft:crying_obsidian"
+                          },
+                          {
+                            "Name": "minecraft:obsidian"
+                          },
+                          {
+                            "Name": "minecraft:obsidian"
+                          },
+                          {
+                            "Name": "minecraft:obsidian"
+                          },
+                          {
+                            "Name": "minecraft:blackstone"
+                          },
+                          {
+                            "Name": "minecraft:blackstone"
+                          },
+                          {
+                            "Name": "minecraft:blackstone"
+                          },
+                          {
+                            "Name": "minecraft:obsidiann"
+                          },
+                          {
+                            "Name": "minecraft:crying_obsidian"
+                          },
+                          {
+                            "Name": "minecraft:obsidian"
+                          },
+                          {
+                            "Name": "minecraft:blackstone"
+                          },
+                          {
+                            "Name": "minecraft:blackstone"
+                          },
+                          {
+                            "Name": "minecraft:blackstone"
+                          },
+                          {
+                            "Name": "minecraft:obsidian"
+                          },
+                          {
+                            "Name": "minecraft:obsidian"
+                          },
+                          {
+                            "Name": "minecraft:obsidian"
+                          },
+                          {
+                            "Name": "minecraft:crying_obsidian"
+                          },
+                          {
+                            "Name": "minecraft:crying_obsidian"
+                          },
+                          {
+                            "Name": "minecraft:crying_obsidian"
+                          },
+                          {
+                            "Name": "minecraft:crying_obsidian"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "placement": [
+                    {
+                      "type": "minecraft:block_predicate_filter",
+                      "predicate": {
+                        "type": "minecraft:all_of",
+                        "predicates": [
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              0,
+                              0,
+                              0
+                            ],
+                            "blocks": [
+                              "minecraft:blackstone"
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "default": {
+              "feature": {
+                "type": "minecraft:simple_block",
+                "config": {
+                  "to_place": {
+                    "type": "minecraft:noise_provider",
+                    "seed": 9,
+                    "noise": {
+                      "firstOctave": -6,
+                      "amplitudes": [
+                        1.075,
+                        1.5,
+                        0.75,
+                        1.05,
+                        1.25
+                      ]
+                    },
+                    "scale": 1,
+                    "states": [
+                      {
+                        "Name": "minecraft:cave_air"
+                      },
+                      {
+                        "Name": "minecraft:cave_air"
+                      },
+                      {
+                        "Name": "minecraft:cave_air"
+                      },
+                      {
+                        "Name": "minecraft:cave_air"
+                      },
+                      {
+                        "Name": "minecraft:cave_air"
+                      },
+                      {
+                        "Name": "minecraft:cave_air"
+                      },
+                      {
+                        "Name": "minecraft:cave_air"
+                      },
+                      {
+                        "Name": "minecraft:cave_air"
+                      },
+                      {
+                        "Name": "minecraft:cave_air"
+                      },
+                      {
+                        "Name": "minecraft:cave_air"
+                      },
+                      {
+                        "Name": "minecraft:cave_air"
+                      },
+                      {
+                        "Name": "minecraft:amethyst_block"
+                      },
+                      {
+                        "Name": "minecraft:amethyst_block"
+                      },
+                      {
+                        "Name": "minecraft:amethyst_block"
+                      },
+                      {
+                        "Name": "minecraft:cave_air"
+                      },
+                      {
+                        "Name": "minecraft:cave_air"
+                      },
+                      {
+                        "Name": "minecraft:cave_air"
+                      },
+                      {
+                        "Name": "minecraft:cave_air"
+                      },
+                      {
+                        "Name": "minecraft:cave_air"
+                      },
+                      {
+                        "Name": "minecraft:cave_air"
+                      },
+                      {
+                        "Name": "minecraft:cave_air"
+                      },
+                      {
+                        "Name": "minecraft:cave_air"
+                      },
+                      {
+                        "Name": "minecraft:cave_air"
+                      },
+                      {
+                        "Name": "minecraft:cave_air"
+                      },
+                      {
+                        "Name": "minecraft:cave_air"
+                      }
+                    ]
+                  }
+                }
+              },
+              "placement": [
+                {
+                  "type": "minecraft:block_predicate_filter",
+                  "predicate": {
+                    "type": "minecraft:all_of",
+                    "predicates": [
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          0,
+                          0,
+                          0
+                        ],
+                        "blocks": [
+                          "minecraft:cave_air",
+                          "light"
+                        ]
+                      },
+                      {
+                        "type": "minecraft:any_of",
+                        "predicates": [
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              1,
+                              0,
+                              0
+                            ],
+                            "blocks": [
+                              "minecraft:amethyst_block",
+                              "minecraft:tuff",
+                              "minecraft:blackstone"
+                            ]
+                          },
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              0,
+                              0,
+                              1
+                            ],
+                            "blocks": [
+                              "minecraft:amethyst_block",
+                              "minecraft:tuff",
+                              "minecraft:blackstone"
+                            ]
+                          },
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              -1,
+                              0,
+                              0
+                            ],
+                            "blocks": [
+                              "minecraft:amethyst_block",
+                              "minecraft:tuff",
+                              "minecraft:blackstone"
+                            ]
+                          },
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              0,
+                              0,
+                              -1
+                            ],
+                            "blocks": [
+                              "minecraft:amethyst_block",
+                              "minecraft:tuff",
+                              "minecraft:blackstone"
+                            ]
+                          },
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              0,
+                              1,
+                              0
+                            ],
+                            "blocks": [
+                              "minecraft:amethyst_block",
+                              "minecraft:tuff",
+                              "minecraft:blackstone"
+                            ]
+                          },
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              0,
+                              -1,
+                              0
+                            ],
+                            "blocks": [
+                              "minecraft:amethyst_block",
+                              "minecraft:tuff",
+                              "minecraft:blackstone"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "placement": []
+      }
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 1
+    },
+    {
+      "type": "minecraft:count",
+      "count": 16
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "blocks": [
+              "minecraft:air",
+              "minecraft:cave_air"
+            ]
+          },
+          {
+            "type": "minecraft:any_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [
+                  1,
+                  0,
+                  0
+                ],
+                "blocks": [
+                  "minecraft:amethyst_block",
+                  "minecraft:blackstone",
+                  "obsidian",
+                  "crying_obsidian"
+                ]
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [
+                  0,
+                  0,
+                  1
+                ],
+                "blocks": [
+                  "minecraft:amethyst_block",
+                  "minecraft:blackstone",
+                  "obsidian",
+                  "crying_obsidian"
+                ]
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [
+                  -1,
+                  0,
+                  0
+                ],
+                "blocks": [
+                  "minecraft:amethyst_block",
+                  "minecraft:blackstone",
+                  "obsidian",
+                  "crying_obsidian"
+                ]
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [
+                  0,
+                  0,
+                  -1
+                ],
+                "blocks": [
+                  "minecraft:amethyst_block",
+                  "minecraft:blackstone",
+                  "obsidian",
+                  "crying_obsidian"
+                ]
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [
+                  0,
+                  1,
+                  0
+                ],
+                "blocks": [
+                  "minecraft:amethyst_block",
+                  "minecraft:blackstone",
+                  "obsidian",
+                  "crying_obsidian"
+                ]
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ],
+                "blocks": [
+                  "minecraft:amethyst_block",
+                  "minecraft:blackstone",
+                  "obsidian",
+                  "crying_obsidian"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "minecraft:count",
+      "count": 75
+    },
+    {
+      "type": "minecraft:count",
+      "count": 1
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": -5,
+          "max_inclusive": 5
+        }
+      },
+      "y_spread": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": -5,
+          "max_inclusive": 5
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

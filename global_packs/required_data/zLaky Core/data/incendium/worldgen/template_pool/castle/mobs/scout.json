@@ -1,0 +1,15 @@
+{
+  "name": "incendium:generic",
+  "fallback": "incendium:castle/mobs/scout",
+  "elements": [
+    {
+      "weight": 4,
+      "element": {
+        "location": "incendium:castle/mobs/scout",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

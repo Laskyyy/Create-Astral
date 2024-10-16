@@ -1,0 +1,11 @@
+{
+	"feature": "incendium:quartz_flats/quartz_replace",
+	"placement": [
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"absolute": 31
+			}
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "incendium:artifact/weapon/scarlet_dagger",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "incendium:artifact/weapon/greatsword_of_sacrifice",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

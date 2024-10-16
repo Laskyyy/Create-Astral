@@ -1,0 +1,28 @@
+{
+  "type": "techreborn:implosion_compressor",
+  "power": 500,
+  "time": 500,
+  "ingredients": [
+	{
+	  "count": 1,
+	  "item": "ae2:singularity"
+	},
+    {
+      "item": "techreborn:nuke",
+      "count": 1
+    }
+  ],
+  "results": [
+    {
+      "item": "createastral:astral_singularity",
+      "count": 1
+    },
+    {
+      "item": "techreborn:cell",
+      "count": 2,
+      "nbt": {
+        "fluid": "tconstruct:molten_uranium"
+      }
+    }
+  ]
+}

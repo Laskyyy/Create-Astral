@@ -1,0 +1,14 @@
+{
+  "name": "incendium:generic",
+  "fallback": "incendium:castle/feature_pool/crimson_vegetation",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "feature": "incendium:feature_pool/crimson_vegetation",
+        "projection": "rigid",
+        "element_type": "minecraft:feature_pool_element"
+      }
+    }
+  ]
+}

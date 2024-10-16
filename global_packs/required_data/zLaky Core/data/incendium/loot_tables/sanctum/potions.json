@@ -1,0 +1,330 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": " "
+                },
+                {
+                  "text": "Make your choice, adventurous stranger",
+                  "color": "red"
+                },
+                {
+                  "text": "Drink the brew, and bide the danger,",
+                  "color": "red"
+                },
+                {
+                  "text": "Or wonder till it drives you mad;",
+                  "color": "red"
+                },
+                {
+                  "text": "What would have happened if you had?",
+                  "color": "red"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomPotionColor:1517120,HideFlags:32,Potion:\"minecraft:water\",CustomPotionEffects:[{Id:2,Amplifier:9,Duration:2147483647},{Id:4,Amplifier:9,Duration:2147483647},{Id:7,Amplifier:28},{Id:9,Duration:2147483647},{Id:15,Duration:2147483647},{Id:17,Amplifier:19,Duration:2147483647},{Id:18,Amplifier:9,Duration:2147483647},{Id:19,Amplifier:4,Duration:2147483647},{Id:20,Amplifier:2,Duration:2147483647},{Id:24,Duration:2147483647},{Id:25,Amplifier:49,Duration:2147483647},{Id:27,Amplifier:99,Duration:2147483647},{Id:31,Amplifier:5,Duration:1200}],display:{Name:'[{\"text\":\"Death Potion\",\"italic\":false,\"color\":\"dark_red\"}]'}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomPotionColor:16514882,HideFlags:32,Potion:\"minecraft:water\",CustomPotionEffects:[{Id:24,Duration:100000000}],display:{Lore:['[{\"text\":\"Glowing (∞)\",\"italic\":false,\"color\":\"red\"}]'],Name:'[{\"text\":\"Splash Potion of Eternal Glowing\",\"italic\":false}]'}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 500,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:water\",CustomPotionColor:424462,CustomPotionEffects:[{Id:31,Duration:1200}],display:{Name:'[{\"text\":\"Potion of Bad Omen\",\"italic\":false}]'}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 700,
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:strong_harming\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1000,
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:harming\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 700,
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:long_poison\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 700,
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:strong_poison\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1000,
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:poison\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 700,
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:long_weakness\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1000,
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:weakness\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 700,
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:long_slowness\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 700,
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:strong_slowness\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1000,
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:slowness\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 700,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:long_swiftness\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 700,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:strong_swiftness\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1000,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:swiftness\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 700,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:long_leaping\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 700,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:strong_leaping\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1000,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:leaping\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 200,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:long_strength\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 100,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:strong_strength\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 500,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:strength\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 200,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:strong_turtle_master\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 700,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:turtle_master\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 50,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:invisibility\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 700,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:long_slow_falling\"}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1000,
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:slow_falling\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

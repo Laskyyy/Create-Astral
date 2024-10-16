@@ -1,0 +1,47 @@
+{
+  "name": "astralrails:paths/start_paths",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "astralrails:moon/a_moon_statue",
+        "processors": [
+					{
+						"processor_type": "minecraft:rule",
+						"rules": [
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "ad_astra:polished_moon_stone",
+									"probability": 0.3
+								},
+								"output_state": {
+									"Name": "ad_astra:moon_stone"
+								}
+							},
+							{
+								"location_predicate": {
+									"predicate_type": "minecraft:always_true"
+								},
+								"input_predicate": {
+									"predicate_type": "minecraft:random_block_match",
+									"block": "ad_astra:moon_iron_ore",
+									"probability": 0.35
+								},
+								"output_state": {
+									"Name": "ad_astra:moon_stone"
+								}
+							}
+						]
+					}
+				],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

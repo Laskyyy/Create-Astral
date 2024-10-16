@@ -288,7 +288,7 @@
     },
     "biome_source": {
       "type": "minecraft:fixed",
-      "biome": "yttr:scorched_terminus"
+      "biome": "ad_astra:orbit"
     }
   }
 }

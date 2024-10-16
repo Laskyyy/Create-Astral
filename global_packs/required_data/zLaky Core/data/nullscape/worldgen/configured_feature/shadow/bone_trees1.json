@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:vegetation_patch",
+  "config": {
+    "surface": "floor",
+    "depth": 1,
+    "vertical_range": 1,
+    "extra_bottom_block_chance": 0,
+    "extra_edge_column_chance": 0,
+    "vegetation_chance": 1,
+    "xz_radius": 0,
+    "replaceable": "#nullscape:coral",
+    "ground_state": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:dead_fire_coral_block"
+      }
+    },
+    "vegetation_feature": "nullscape:shadow/bone_tree"
+  }
+}

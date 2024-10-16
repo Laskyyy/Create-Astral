@@ -1,0 +1,11 @@
+{
+  "config": {
+    "start_pool": "incendium:quartz/kitchen",
+    "size": 6
+  },
+  "biomes": ["incendium:quartz_flats"],
+  "adapt_noise":false,
+  "spawn_overrides": {
+  },
+  "type": "minecraft:bastion_remnant"
+}

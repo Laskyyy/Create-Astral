@@ -1,0 +1,109 @@
+To refresh this file, delete it and run /reload command again! Last updated: Dec 1, 2022, 5:57:57 PM
+
+#minecraft:ocean_ruin
+- minecraft:ocean_ruin_cold
+- minecraft:ocean_ruin_warm
+- minecraft:ocean_ruin_cold
+- minecraft:ocean_ruin_warm
+
+#minecraft:mineshaft
+- minecraft:mineshaft
+- minecraft:mineshaft_mesa
+- minecraft:mineshaft
+- minecraft:mineshaft_mesa
+
+#bosses_of_mass_destruction:void_lily_target
+- bosses_of_mass_destruction:void_blossom
+- bosses_of_mass_destruction:void_blossom
+
+#minecraft:on_woodland_explorer_maps
+- minecraft:mansion
+- minecraft:mansion
+
+#bosses_of_mass_destruction:soul_star_target
+- bosses_of_mass_destruction:lich_tower
+- bosses_of_mass_destruction:lich_tower
+
+#yigd:graveyard_structures
+- graveyard:small_graveyard?
+- graveyard:medium_graveyard?
+- graveyard:large_graveyard?
+- graveyard:small_desert_graveyard?
+
+#minecraft:shipwreck
+- minecraft:shipwreck
+- minecraft:shipwreck_beached
+- minecraft:shipwreck
+- minecraft:shipwreck_beached
+
+#minecraft:on_ocean_explorer_maps
+- minecraft:monument
+- minecraft:monument
+
+#minecraft:on_treasure_maps
+- minecraft:buried_treasure
+- minecraft:buried_treasure
+
+#minecraft:eye_of_ender_located
+- minecraft:stronghold
+- minecraft:stronghold
+
+#minecraft:ruined_portal
+- minecraft:ruined_portal_desert
+- minecraft:ruined_portal_jungle
+- minecraft:ruined_portal_mountain
+- minecraft:ruined_portal_nether
+- minecraft:ruined_portal_ocean
+- minecraft:ruined_portal
+- minecraft:ruined_portal_swamp
+- minecraft:ruined_portal_desert
+- minecraft:ruined_portal_jungle
+- minecraft:ruined_portal_mountain
+- minecraft:ruined_portal_nether
+- minecraft:ruined_portal_ocean
+- minecraft:ruined_portal
+- minecraft:ruined_portal_swamp
+
+#minecraft:village
+- minecraft:village_plains
+- minecraft:village_desert
+- minecraft:village_savanna
+- minecraft:village_snowy
+- minecraft:village_taiga
+- minecraft:village_plains
+- minecraft:village_desert
+- minecraft:village_savanna
+- minecraft:village_snowy
+- minecraft:village_taiga
+
+#towns_and_towers:town
+- towns_and_towers:exclusives/village_classic
+- towns_and_towers:exclusives/village_iberian
+- towns_and_towers:exclusives/village_mediterranean
+- towns_and_towers:exclusives/village_rustic
+- towns_and_towers:exclusives/village_swedish
+- towns_and_towers:exclusives/village_tudor
+- towns_and_towers:exclusives/village_wandering_trader_camp
+- towns_and_towers:village_badlands
+- towns_and_towers:village_beach
+- towns_and_towers:village_birch_forest
+- towns_and_towers:village_flower_forest
+- towns_and_towers:village_forest
+- towns_and_towers:village_snowy_slopes
+- towns_and_towers:village_jungle
+- towns_and_towers:village_grove
+- towns_and_towers:village_meadow
+- towns_and_towers:village_mushroom_fields
+- towns_and_towers:village_ocean
+- towns_and_towers:village_old_growth_taiga
+- towns_and_towers:village_sparse_jungle
+- towns_and_towers:village_sunflower_plains
+- towns_and_towers:village_snowy_taiga
+- towns_and_towers:village_swamp
+- towns_and_towers:village_wooded_badlands
+
+#minecraft:dolphin_located
+- #minecraft:ocean_ruin
+- #minecraft:shipwreck
+- #minecraft:ocean_ruin
+- #minecraft:shipwreck

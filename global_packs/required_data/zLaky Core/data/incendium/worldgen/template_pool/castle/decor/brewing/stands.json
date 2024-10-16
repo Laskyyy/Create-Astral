@@ -1,0 +1,66 @@
+{
+  "name": "incendium:generic",
+  "fallback": "incendium:castle/decor/brewing/stands",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:castle/decor/brewing/stand1",
+        "processors": "incendium:za_warudo_stand",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:castle/decor/brewing/stand2",
+        "processors": "incendium:za_warudo_stand",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:castle/decor/brewing/stand3",
+        "processors": "incendium:za_warudo_stand",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:castle/decor/brewing/stand4",
+        "processors": "incendium:za_warudo_stand",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:castle/decor/brewing/stand5",
+        "processors": "incendium:za_warudo_stand",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:castle/decor/brewing/stand6",
+        "processors": "incendium:za_warudo_stand",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 7,
+      "element": {
+        "element_type": "minecraft:empty_pool_element"
+      }
+    }
+  ]
+}

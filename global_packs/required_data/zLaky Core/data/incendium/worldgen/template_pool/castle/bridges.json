@@ -1,0 +1,21 @@
+{
+  "name": "incendium:generic",
+  "fallback": "incendium:castle/bridges",
+  "elements": [
+    {
+      "weight": 10,
+      "element": {
+        "location": "incendium:castle/bridges/bridge1",
+        "processors": "incendium:castle/bridge_decay",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "element_type": "minecraft:empty_pool_element"
+      }
+    }
+  ]
+}

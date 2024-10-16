@@ -1,0 +1,13 @@
+name = "Disable Villager trades"
+filename = "disable-trading-0.1.1.18.2.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+hash-format = "sha1"
+hash = "13c7a3c93e9ca7bc1e54a6b91efd70e5e6643e15"
+
+[update]
+[update.curseforge]
+file-id = 4158115
+project-id = 729170

@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_basin",
+  "cast": {
+    "item": "tconstruct:seared_stone"
+  },
+  "cast_consumed": true,
+  "fluid": {
+    "name": "minecraft:lava",
+    "amount": 22500
+  },
+  "result": "create:veridium",
+  "cooling_time": 150
+}

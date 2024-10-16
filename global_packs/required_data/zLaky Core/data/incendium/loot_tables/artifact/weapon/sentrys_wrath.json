@@ -1,0 +1,61 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:mending": 1,
+                "minecraft:piercing": 6
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "Turns spectral arrows into",
+                  "color": "#0077bb",
+                  "italic": true
+                },
+                {
+                  "translate": "a slow, powerful attack.",
+                  "color": "#0077bb",
+                  "italic": true
+                },
+                {
+                  "translate": "Beware the cooldown.",
+                  "color": "#0077bb",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "Incendium",
+                  "color": "#FF8000",
+                  "italic": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "translate": "Sentry's Wrath",
+                "color": "#33ccff",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:1450103,incendium:{item:'sentrys_wrath'}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

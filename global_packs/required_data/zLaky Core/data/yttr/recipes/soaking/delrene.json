@@ -1,8 +1,0 @@
-{
-	"type": "yttr:soaking",
-	"ingredients": [ { "item": "yttr:delicace" } ],
-	"catalyst": { "fluid": "yttr:void" },
-	"result": { "block": "yttr:delrene" },
-	"time": 20,
-	"sound": "minecraft:entity.generic.splash"
-}

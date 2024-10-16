@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_basin",
+  "cast": {
+    "item": "tconstruct:seared_stone"
+  },
+  "cast_consumed": true,
+  "fluid": {
+    "name": "minecraft:water",
+    "amount": 45000
+  },
+  "result": "create:asurine",
+  "cooling_time": 150
+}

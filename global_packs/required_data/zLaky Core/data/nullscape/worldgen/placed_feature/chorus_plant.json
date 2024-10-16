@@ -1,0 +1,12 @@
+{
+	"feature": "nullscape:chorus_plant",
+	"placement": [
+		{
+			"type": "minecraft:count_on_every_layer",
+			"count": 8
+		},
+		{
+			"type": "biome"
+		}
+	]
+}

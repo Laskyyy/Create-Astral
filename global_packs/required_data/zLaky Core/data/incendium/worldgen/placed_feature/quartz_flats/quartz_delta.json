@@ -1,0 +1,25 @@
+{
+	"feature": "incendium:quartz_flats/quartz_delta",
+	"placement": [
+		{
+			"type": "count",
+			"count": 10
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"absolute": 31
+			}
+		},
+		{"type":"biome"},
+				{
+			"type": "minecraft:height_range",
+			"height": {
+				"absolute": 192
+			}
+		}
+	]
+}

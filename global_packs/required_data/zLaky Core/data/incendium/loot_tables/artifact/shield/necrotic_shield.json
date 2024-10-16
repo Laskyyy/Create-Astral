@@ -1,0 +1,68 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "shield",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attack_damage",
+                  "name": "weaken",
+                  "amount": {
+                    "min": -0.07,
+                    "max": -0.001
+                  },
+                  "operation": "multiply_base",
+                  "slot": [
+                    "offhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "Reacts to attacks with",
+                  "color": "#884444",
+                  "italic": true
+                },
+                {
+                  "translate": "an explosion of death",
+                  "color": "#884444",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "Incendium",
+                  "color": "#FF8000",
+                  "italic": true
+                }
+              ],
+              "entity": "this"
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "translate": "Necrotic Shield",
+                "italic": false,
+                "color": "#993333"
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:1450300,incendium:{item:'necrotic_shield'},HideFlags:32,BlockEntityTag:{Patterns:[{Pattern:rud,Color:14},{Pattern:ld,Color:14},{Pattern:sc,Color:14},{Pattern:sku,Color:15},{Pattern:cbo,Color:15},{Pattern:ts,Color:15}],Base:15}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

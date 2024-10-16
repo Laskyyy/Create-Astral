@@ -27,7 +27,7 @@
     {
       "item": "techreborn:cell",
       "nbt": {
-        "fluid": "techreborn:oil"
+        "fluid": "ad_astra:oil"
       }
     }
   ]

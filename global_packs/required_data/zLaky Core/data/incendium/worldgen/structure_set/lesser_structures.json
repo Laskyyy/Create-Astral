@@ -1,0 +1,30 @@
+{
+  "structures": [
+        {
+      "structure": "incendium:quartz_kitchen",
+      "weight": 1
+    },
+        {
+      "structure": "incendium:abandoned_tower",
+      "weight": 1
+    },
+    {
+      "structure": "incendium:pipeline",
+      "weight": 1
+    },
+    {
+      "structure": "incendium:piglin_village",
+      "weight": 1
+    },
+    {
+      "structure": "incendium:infernal_altar",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 39912534647,
+    "spacing": 35,
+    "separation": 3,
+    "type": "minecraft:random_spread"
+  }
+}

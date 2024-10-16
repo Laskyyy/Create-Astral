@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:fill_layer",
+  "config": {
+    "state": {
+      "Name": "minecraft:void_air"
+    },
+    "height": 1
+  }
+}

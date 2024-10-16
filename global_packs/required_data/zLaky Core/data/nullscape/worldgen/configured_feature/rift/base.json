@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:netherrack_replace_blobs",
+  "config": {
+    "state": {
+      "Name": "minecraft:obsidian"
+    },
+    "target": {
+      "Name": "minecraft:blackstone"
+    },
+    "radius": 0
+  }
+}

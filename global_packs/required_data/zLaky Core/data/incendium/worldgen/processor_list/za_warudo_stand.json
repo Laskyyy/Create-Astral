@@ -1,0 +1,57 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:brewing_stand",
+            "probability": 0.15
+          },
+          "output_state": {
+            "Name": "minecraft:light_weighted_pressure_plate",
+            "Properties": {
+              "power": "0"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:brewing_stand",
+            "probability": 0.1
+          },
+          "output_state": {
+            "Name": "minecraft:heavy_weighted_pressure_plate",
+            "Properties": {
+              "power": "0"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:brewing_stand",
+            "probability": 0.2
+          },
+          "output_state": {
+            "Name": "minecraft:polished_blackstone_pressure_plate",
+            "Properties": {
+              "powered": "false"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

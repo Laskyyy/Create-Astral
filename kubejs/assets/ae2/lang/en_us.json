@@ -1,0 +1,25 @@
+{
+
+  "achievement.ae2.Charger": "Shimmer Production",
+  "achievement.ae2.Fluix.desc": "Create Shimmer Dust",
+  "achievement.ae2.GlassCable": "Shimmer Energy Connection",
+  "block.ae2.fluix_block": "Shimmer Block",
+  "block.ae2.fluix_slab": "Shimmer Slabs",
+  "block.ae2.fluix_stairs": "Shimmer Stairs",
+  "block.ae2.fluix_wall": "Shimmer Wall",
+  "gui.ae2.Fluix": "Shimmer",
+  "item.ae2.fluix_axe": "Shimmer Axe",
+  "item.ae2.fluix_covered_cable": "Shimmer ME Covered Cable",
+  "item.ae2.fluix_covered_dense_cable": "Shimmer ME Dense Covered Cable",
+  "item.ae2.fluix_crystal": "Shimmer Crystal",
+  "item.ae2.fluix_crystal_seed": "Shimmer Seed",
+  "item.ae2.fluix_dust": "Shimmer Dust",
+  "item.ae2.fluix_glass_cable": "Shimmer ME Glass Cable",
+  "item.ae2.fluix_hoe": "Shimmer Hoe",
+  "item.ae2.fluix_pearl": "Shimmer Pearl",
+  "item.ae2.fluix_pickaxe": "Shimmer Pickaxe",
+  "item.ae2.fluix_shovel": "Shimmer Shovel",
+  "item.ae2.fluix_smart_cable": "Shimmer ME Smart Cable",
+  "item.ae2.fluix_smart_dense_cable": "Shimmer ME Dense Smart Cable",
+  "item.ae2.fluix_sword": "Shimmer Sword"
+}

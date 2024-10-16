@@ -1,0 +1,22 @@
+{
+	"feature": "nullscape:chorus_light",
+	"placement": [
+		{
+			"type": "minecraft:count_on_every_layer",
+			"count": 8
+		},
+		{
+			"type": "minecraft:noise_based_count",
+			"noise_to_count_ratio": 10,
+			"noise_factor": 175,
+			"noise_offset": 0
+		},
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 80
+		},
+		{
+			"type": "biome"
+		}
+	]
+}

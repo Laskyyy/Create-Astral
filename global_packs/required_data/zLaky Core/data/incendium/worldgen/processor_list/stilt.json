@@ -1,0 +1,142 @@
+{
+  "processors": [
+    {
+      "rules": [
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Properties": {
+              "axis": "y"
+            },
+            "Name": "minecraft:stripped_crimson_stem"
+          },
+          "input_predicate": {
+            "block": "minecraft:crimson_fence",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:lava",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Properties": {
+              "axis": "y"
+            },
+            "Name": "minecraft:stripped_crimson_stem"
+          },
+          "input_predicate": {
+            "block": "minecraft:crimson_fence",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:netherrack",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Properties": {
+              "axis": "y"
+            },
+            "Name": "minecraft:stripped_crimson_stem"
+          },
+          "input_predicate": {
+            "block": "minecraft:crimson_fence",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:soul_soil",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Properties": {
+              "axis": "y"
+            },
+            "Name": "minecraft:stripped_crimson_stem"
+          },
+          "input_predicate": {
+            "block": "minecraft:crimson_fence",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:magma_block",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Properties": {
+              "axis": "y"
+            },
+            "Name": "minecraft:stripped_crimson_stem"
+          },
+          "input_predicate": {
+            "block": "minecraft:crimson_fence",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:nether_wart_block",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Properties": {
+              "axis": "y"
+            },
+            "Name": "minecraft:stripped_crimson_stem"
+          },
+          "input_predicate": {
+            "block": "minecraft:crimson_fence",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:soul_sand",
+            "predicate_type": "minecraft:block_match"
+          }
+        },
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Properties": {
+              "axis": "y"
+            },
+            "Name": "minecraft:stripped_crimson_stem"
+          },
+          "input_predicate": {
+            "block": "minecraft:soul_soil",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "block": "minecraft:lava",
+            "predicate_type": "minecraft:block_match"
+          }
+        }
+      ],
+      "processor_type": "minecraft:rule"
+    }
+  ]
+}

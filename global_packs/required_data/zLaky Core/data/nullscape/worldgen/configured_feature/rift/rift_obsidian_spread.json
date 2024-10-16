@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:scattered_ore",
+  "config": {
+    "size": 47,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "nullscape:rift_blocks"
+        },
+        "state": {
+          "Name": "minecraft:obsidian"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "textures": {
+        "particle": "block/birch_planks",
+        "back": "block/itemframe"
+    },
+    "elements": [
+        {   "from": [ 3, 3, 15.5 ],
+            "to": [ 13, 13, 16 ],
+            "faces": {
+                "north": { "uv": [ 3, 3, 13, 13 ], "texture": "#back" },
+                "south": { "uv": [ 3, 3, 13, 13 ], "texture": "#back" }
+            }
+        }
+    ]
+}

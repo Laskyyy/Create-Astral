@@ -1,0 +1,11 @@
+{
+  "description": "All non-teleportable mob entities",
+  "values": [
+    "minecraft:enderman",
+    "minecraft:ender_pearl",
+    "minecraft:marker",
+    "minecraft:wither",
+    "minecraft:ender_dragon",
+    "minecraft:fishing_bobber"
+  ]
+}
