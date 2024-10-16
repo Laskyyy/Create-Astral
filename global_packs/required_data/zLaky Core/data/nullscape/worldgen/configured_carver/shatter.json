@@ -1,0 +1,76 @@
+{
+  "type": "minecraft:canyon",
+  "config": {
+    "probability": 0.85,
+    "y": {
+      "type": "minecraft:uniform",
+      "min_inclusive": {
+        "above_bottom": 40
+      },
+      "max_inclusive": {
+        "absolute": 120
+      }
+    },
+    "yScale": {
+      "type": "minecraft:uniform",
+      "value": {
+        "min_inclusive": 4,
+        "max_exclusive": 7
+      }
+    },
+    "lava_level": {
+      "above_bottom": -1
+    },
+    "aquifers_enabled": false,
+    "debug_settings": {
+      "debug_mode": true,
+      "air_state": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "water_state": {
+        "Name": "minecraft:air",
+        "Properties": {}
+      },
+      "lava_state": {
+        "Name": "minecraft:air"
+      },
+      "barrier_state": {
+        "Name": "minecraft:air"
+      }
+    },
+    "vertical_rotation": {
+      "type": "minecraft:uniform",
+      "value": {
+        "min_inclusive": -0.125,
+        "max_exclusive": 0.125
+      }
+    },
+    "shape": {
+      "distance_factor": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 0.65,
+          "max_exclusive": 1.5
+        }
+      },
+      "thickness": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 0,
+          "max_exclusive": 2.25
+        }
+      },
+      "width_smoothness": 20,
+      "horizontal_radius_factor": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 0.25,
+          "max_exclusive": 1.25
+        }
+      },
+      "vertical_radius_default_factor": 0,
+      "vertical_radius_center_factor": 5
+    }
+  }
+}

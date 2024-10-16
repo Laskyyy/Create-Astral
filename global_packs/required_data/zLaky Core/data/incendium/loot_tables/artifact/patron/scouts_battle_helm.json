@@ -1,0 +1,61 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "translate": "You can hide, but you can't",
+                  "color": "#ccbb88",
+                  "italic": true
+                },
+                {
+                  "translate": "outrun TheDancyScout",
+                  "color": "#ccbb88",
+                  "italic": true
+                },
+                {
+                  "translate": "",
+                  "color": "#884400",
+                  "italic": false
+                },
+                {
+                  "translate": "Patron Item",
+                  "color": "#333333",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "Incendium",
+                  "color": "#FF8000",
+                  "italic": true
+                }
+              ],
+              "replace": true
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "translate": "Scout's Battle Helm",
+                "color": "#ff9944",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:1450200,incendium:{item:'scouts_battle_helm'}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

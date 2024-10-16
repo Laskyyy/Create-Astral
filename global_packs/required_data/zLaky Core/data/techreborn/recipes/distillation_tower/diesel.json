@@ -1,0 +1,33 @@
+{
+  "type": "techreborn:distillation_tower",
+  "power": 70,
+  "time": 2000,
+  "ingredients": [
+    {
+      "item": "techreborn:cell",
+      "count": 2,
+      "nbt": "empty"
+    },
+    {
+      "fluid": "ad_astra:oil",
+      "holder": "techreborn:cell",
+      "count": 1
+    }
+  ],
+  "results": [
+    {
+      "item": "techreborn:cell",
+      "count": 1,
+      "nbt": {
+        "fluid": "ad_astra:fuel"
+      }
+    },
+    {
+      "item": "techreborn:cell",
+      "count": 2,
+      "nbt": {
+        "fluid": "techreborn:sulfuric_acid"
+      }
+    }
+  ]
+}

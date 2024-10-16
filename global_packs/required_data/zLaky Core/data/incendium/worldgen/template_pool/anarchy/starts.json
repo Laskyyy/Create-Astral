@@ -1,0 +1,15 @@
+{
+  "name": "minecraft:bastion/starts",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:anarchy/stash",
+        "processors": "minecraft:bastion_generic_degradation",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "feature": {
+    "type": "minecraft:vegetation_patch",
+    "config": {
+      "surface": "floor",
+      "depth": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 2,
+          "max_inclusive": 3
+        }
+      },
+      "vertical_range": 3,
+      "extra_bottom_block_chance": 0,
+      "extra_edge_column_chance": 0.5,
+      "vegetation_chance": 0,
+      "xz_radius": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 2,
+          "max_inclusive": 4
+        }
+      },
+      "replaceable": "#nullscape:end_stone",
+      "ground_state": {
+        "type": "minecraft:dual_noise_provider",
+        "seed": 0,
+        "noise": {
+          "firstOctave": -8,
+          "amplitudes": [
+            0,
+            0
+          ]
+        },
+        "scale": 1,
+        "variety": {
+          "min_inclusive": 1,
+          "max_inclusive": 1
+        },
+        "slow_noise": {
+          "firstOctave": -7,
+          "amplitudes": [
+            1,
+            1.5,
+            1,
+            1.75,
+            1,
+            2.75
+          ]
+        },
+        "slow_scale": 1,
+        "states": [
+          {
+            "Name": "minecraft:end_stone"
+          },
+          {
+            "Name": "minecraft:end_stone"
+          },
+          {
+            "Name": "minecraft:end_stone"
+          },
+          {
+            "Name": "minecraft:end_stone"
+          },
+          {
+            "Name": "minecraft:end_stone"
+          },
+          {
+            "Name": "minecraft:end_stone"
+          },
+          {
+            "Name": "minecraft:end_stone"
+          },
+          {
+            "Name": "minecraft:end_stone"
+          },
+          {
+            "Name": "minecraft:end_stone"
+          },
+          {
+            "Name": "minecraft:end_stone"
+          },
+          {
+            "Name": "minecraft:end_stone"
+          },
+          {
+            "Name": "minecraft:blackstone"
+          },
+          {
+            "Name": "minecraft:blackstone"
+          },
+          {
+            "Name": "minecraft:blackstone"
+          },
+          {
+            "Name": "minecraft:end_stone"
+          },
+          {
+            "Name": "minecraft:end_stone"
+          },
+          {
+            "Name": "minecraft:end_stone"
+          },
+          {
+            "Name": "minecraft:end_stone"
+          },
+          {
+            "Name": "minecraft:end_stone"
+          },
+          {
+            "Name": "minecraft:end_stone"
+          },
+          {
+            "Name": "minecraft:end_stone"
+          },
+          {
+            "Name": "minecraft:end_stone"
+          },
+          {
+            "Name": "minecraft:end_stone"
+          },
+          {
+            "Name": "minecraft:end_stone"
+          },
+          {
+            "Name": "minecraft:end_stone"
+          }
+        ]
+      },
+      "vegetation_feature": "nullscape:highland/glowstone_tree"
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 40
+    },
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": -1,
+      "noise_factor": 1800,
+      "noise_offset": 0
+    },
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 1,
+      "noise_factor": 1100,
+      "noise_offset": 0
+    },
+    {
+      "type": "biome"
+    }
+  ]
+}

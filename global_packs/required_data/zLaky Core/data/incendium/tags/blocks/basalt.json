@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:basalt",
+    "minecraft:netherrack",
+		"ad_astra:mars_sand"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+
+  "block.techreborn.nuke": "W.O.L.F",
+  "block.techreborn.deepslate_silver_ore": "Moon Silver Ore",
+  "block.techreborn.deepslate_lead_ore": "Mars Lead Ore",
+  "block.techreborn.deepslate_iridium_ore": "Mercury Iridium Ore",
+  "block.techreborn.deepslate_galena_ore": "Mercury Galena Ore",
+  "block.techreborn.deepslate_sodalite_ore": "Mars Sodalite Ore",
+  "item.techreborn.electronic_circuit": "Advanced Integrated Circuit",
+  "item.techreborn.industrial_circuit": "Industrial Computing Unit",
+  "item.techreborn.machine_parts": "Machine Parts",
+  "item.techreborn.uu_matter": "Refined Shimmer",
+  "item.techreborn.synthetic_redstone_crystal": "Synthetic Redstone Crystal"
+}

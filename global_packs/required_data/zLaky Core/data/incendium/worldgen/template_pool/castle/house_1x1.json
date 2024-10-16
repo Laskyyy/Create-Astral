@@ -1,0 +1,204 @@
+{
+  "name": "incendium:generic",
+  "fallback": "incendium:castle/roof_1x1",
+  "elements": [
+    {
+      "weight": 4,
+      "element": {
+        "location": "incendium:castle/house_1x1",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "incendium:castle/rooms/1x1/armory_1",
+        "processors": "incendium:castle/armory",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "incendium:castle/rooms/1x1/dining",
+        "processors": "incendium:castle/dining",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "incendium:castle/rooms/1x1/cell",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "incendium:castle/rooms/1x1/odd_treasure",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "incendium:castle/rooms/1x1/pigstep",
+        "processors": "incendium:castle/dining",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "incendium:castle/rooms/1x1/crossroads1",
+        "processors": "incendium:castle/dining",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "incendium:castle/rooms/1x1/ocean_portal",
+        "processors": "incendium:castle/ocean_portal",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "incendium:castle/rooms/1x1/brewing",
+        "processors": "incendium:castle/armory",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "incendium:castle/rooms/1x1/brewing_w",
+        "processors": "incendium:castle/armory",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "incendium:castle/rooms/1x1/kitchen",
+        "processors": "incendium:castle/armory",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:castle/rooms/1x1/treasure_netherite",
+        "processors": "incendium:castle/netherite",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "incendium:castle/rooms/1x1/corridors",
+        "processors": "incendium:castle/armory",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:castle/rooms/1x1/cryostasis_chamber",
+        "processors": "incendium:castle/armory",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:castle/rooms/1x1/livq2",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "incendium:castle/rooms/1x1/livq1",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "incendium:castle/roof_1x1_3",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 7,
+      "element": {
+        "location": "incendium:castle/roof_1x1_5",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "incendium:castle/roof_1x1_6",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:castle/roof_1x1_short1",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:castle/roof_1x1_short1_hoglin",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:castle/roof_1x1_short2",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

@@ -6,17 +6,17 @@
 
 ## Table of Contents
 
--   [About](#about)
--   [Contacts](#contacts)
--   [License](#license)
--   [Downloads](#downloads)
--   [Installation](#installation)
--   [Issues](#issues)
--   [API](#applied-energistics-2-api)
--   [Building](#building)
--   [Contribution](#contribution)
--   [Localization](#applied-energistics-2-localization)
--   [Credits](#credits)
+* [About](#about)
+* [Contacts](#contacts)
+* [License](#license)
+* [Downloads](#downloads)
+* [Installation](#installation)
+* [Issues](#issues)
+* [API](#applied-energistics-2-api)
+* [Building](#building)
+* [Contribution](#contribution)
+* [Localization](#applied-energistics-2-localization)
+* [Credits](#credits)
 
 ## About
 
@@ -24,23 +24,23 @@ A Mod about Matter, Energy and using them to conquer the world..
 
 ## Contacts
 
--   [Website](https://appliedenergistics.github.io/)
--   [Discord](https://discord.gg/Zd6t9ka7ne)
--   [GitHub](https://github.com/AppliedEnergistics/Applied-Energistics-2)
+* [Website](https://appliedenergistics.github.io/)
+* [Discord](https://discord.gg/Zd6t9ka7ne)
+* [GitHub](https://github.com/AppliedEnergistics/Applied-Energistics-2)
 
 ## License
 
--   Applied Energistics 2 API
-    -   (c) 2013 - 2020 AlgorithmX2 et al
-    -   [![License](https://img.shields.io/badge/License-MIT-red.svg?style=flat-square)](http://opensource.org/licenses/MIT)
--   Applied Energistics 2
-    -   (c) 2013 - 2020 AlgorithmX2 et al
-    -   [![License](https://img.shields.io/badge/License-LGPLv3-blue.svg?style=flat-square)](https://raw.githubusercontent.com/AppliedEnergistics/Applied-Energistics-2/rv2/LICENSE)
--   Textures and Models
-    -   (c) 2020, [Ridanisaurus Rid](https://github.com/Ridanisaurus/), (c) 2013 - 2020 AlgorithmX2 et al
-    -   [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%203.0-yellow.svg?style=flat-square)](https://creativecommons.org/licenses/by-nc-sa/3.0/)
--   Text and Translations
-    -   [![License](https://img.shields.io/badge/License-No%20Restriction-green.svg?style=flat-square)](https://creativecommons.org/publicdomain/zero/1.0/)
+* Applied Energistics 2 API
+  - (c) 2013 - 2020 AlgorithmX2 et al
+  - [![License](https://img.shields.io/badge/License-MIT-red.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+* Applied Energistics 2
+  - (c) 2013 - 2020 AlgorithmX2 et al
+  - [![License](https://img.shields.io/badge/License-LGPLv3-blue.svg?style=flat-square)](https://raw.githubusercontent.com/AppliedEnergistics/Applied-Energistics-2/rv2/LICENSE)
+* Textures and Models
+  - (c) 2020, [Ridanisaurus Rid](https://github.com/Ridanisaurus/), (c) 2013 - 2020 AlgorithmX2 et al
+  - [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%203.0-yellow.svg?style=flat-square)](https://creativecommons.org/licenses/by-nc-sa/3.0/)
+* Text and Translations
+  - [![License](https://img.shields.io/badge/License-No%20Restriction-green.svg?style=flat-square)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 ## Downloads
 
@@ -52,18 +52,18 @@ You install this mod by putting it into the `minecraft/mods/` folder. It has no 
 
 ## Issues
 
-Applied Energistics 2 crashing, have a suggestion, found a bug? Create an issue now!
+Applied Energistics 2 crashing, have a suggestion, found a bug?  Create an issue now!
 
 1. Make sure your issue has not already been answered or fixed and you are using the latest version. Also think about whether your issue is a valid one before submitting it.
-    - If it is already possible with vanilla and AE2 itself, the suggestion will be considered invalid.
-    - Asking for a smaller version, more compact version, or more efficient version of something will also be considered invalid.
+    * If it is already possible with vanilla and AE2 itself, the suggestion will be considered invalid.
+    * Asking for a smaller version, more compact version, or more efficient version of something will also be considered invalid.
 2. Go to [the issues page](https://github.com/AppliedEnergistics/Applied-Energistics-2/issues) and click [new issue](https://github.com/AppliedEnergistics/Applied-Energistics-2/issues/new)
 3. If applicable, use on of the provided templates. It will also contain further details about required or useful information to add.
 4. Click `Submit New Issue`, and wait for feedback!
 
 Providing as many details as possible does help us to find and resolve the issue faster and also you getting a fixed version as fast as possible.
 
-Please note that we might close any issue not matching these requirements.
+Please note that we might close any issue not matching these requirements. 
 
 ## Applied Energistics 2 API
 
@@ -71,8 +71,8 @@ The API for Applied Energistics 2. It is open source to discuss changes, improve
 
 ### Maven
 
-Our authoritative Maven repository is Github Packages, which you can also use in your builds. Use of Github Packages
-[requires special setup](https://docs.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-gradle-for-use-with-github-packages#authenticating-to-github-packages)
+Our authoritative Maven repository is Github Packages, which you can also use in your builds. Use of Github Packages 
+[requires special setup](https://docs.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-gradle-for-use-with-github-packages#authenticating-to-github-packages) 
 to authenticate with your personal access token.
 
 AE2 is also available without authentication from Modmaven. You can use the following snippet as example on how to add a repository to your gradle build file.
@@ -96,7 +96,7 @@ When compiling against the AE2 API you can use gradle dependencies, just add
 
 or add the `compileOnly` line to your existing dependencies task to your build.gradle.
 
-Replace `VERSION` with the desired one. With 1.15+ we switched to using [semver](https://semver.org/).
+Replace `VERSION` with the desired one. With 1.15+ we switched to using [semver](https://semver.org/). 
 It is highly recommended following its specification and further considering an upper bound for the dependency version.
 A change of the `MAJOR` version will be an API break and can lead to various crashes. Better to inform a player about the addon not supporting the new version until it could be tested or updated.
 
@@ -107,16 +107,13 @@ However the dependency might need to be wrapped in `fg.deobf()` like `runtimeOnl
 
 ## Building
 
-1. Clone this repository via
-
--   SSH `git clone git@github.com:AppliedEnergistics/Applied-Energistics-2.git` or
--   HTTPS `git clone https://github.com/AppliedEnergistics/Applied-Energistics-2.git`
-
+1. Clone this repository via 
+  - SSH `git clone git@github.com:AppliedEnergistics/Applied-Energistics-2.git` or 
+  - HTTPS `git clone https://github.com/AppliedEnergistics/Applied-Energistics-2.git`
 2. Build using the `gradlew runData build` command. Jar will be in `build/libs`
 3. For core developer: Setup IDE
-
--   IntelliJ: Import as gradle project
--   Eclipse: Import as gradle project or execute gradle task `eclipse` and potentially `genEclipseRuns`
+  - IntelliJ: Import as gradle project
+  - Eclipse: Import as gradle project or execute gradle task `eclipse` and potentially `genEclipseRuns`
 
 ## Contribution
 
@@ -127,22 +124,20 @@ The [guidelines for contributing](https://github.com/AppliedEnergistics/Applied-
 
 Here are a few things to keep in mind that will help get your PR approved.
 
--   A PR should be focused on content. Any PRs where the changes are only syntax will be rejected.
--   Use the file you are editing as a style guide.
--   Consider your feature.
-    -   Is your suggestion already possible using Vanilla + AE2?
-    -   Make sure your feature isn't already in the works, or hasn't been rejected previously.
-    -   Does your feature simplify another feature of AE2? These changes will not be accepted.
-    -   If your feature can be done by any popular mod, discuss with us first.
+* A PR should be focused on content. Any PRs where the changes are only syntax will be rejected.
+* Use the file you are editing as a style guide.
+* Consider your feature.
+  - Is your suggestion already possible using Vanilla + AE2?
+  - Make sure your feature isn't already in the works, or hasn't been rejected previously.
+  - Does your feature simplify another feature of AE2? These changes will not be accepted.
+  - If your feature can be done by any popular mod, discuss with us first.
 
 **Getting Started**
 
 1. Fork this repository
 2. Clone the fork via
-
--   SSH `git clone git@github.com:<your username>/Applied-Energistics-2.git` or
--   HTTPS `git clone https://github.com/<your username>/Applied-Energistics-2.git`
-
+  * SSH `git clone git@github.com:<your username>/Applied-Energistics-2.git` or 
+  * HTTPS `git clone https://github.com/<your username>/Applied-Energistics-2.git`
 3. Change code base
 4. Run `gradlew spotlessApply` to apply automatic code formatting
 5. Add changes to git `git add -A`
@@ -181,9 +176,9 @@ Thanks to everyone helping out to improve localization of AE2.
 ## Credits
 
 Thanks to
-
--   Notch et al for Minecraft
--   Lex et al for MinecraftForge
--   AlgorithmX2 for AppliedEnergistics2
--   [Ridanisaurus Rid](https://github.com/Ridanisaurus/) for the new 2020 textures
--   all [contributors](https://github.com/AppliedEnergistics/Applied-Energistics-2/graphs/contributors)
+ 
+* Notch et al for Minecraft
+* Lex et al for MinecraftForge
+* AlgorithmX2 for AppliedEnergistics2
+* [Ridanisaurus Rid](https://github.com/Ridanisaurus/) for the new 2020 textures
+* all [contributors](https://github.com/AppliedEnergistics/Applied-Energistics-2/graphs/contributors)

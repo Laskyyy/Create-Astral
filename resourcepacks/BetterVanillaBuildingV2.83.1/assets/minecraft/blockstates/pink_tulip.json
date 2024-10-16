@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      {"model": "minecraft:block/pink_tulip"},
+	  {"model": "minecraft:block/pink_tulip2"},
+	  {"model": "minecraft:block/pink_tulip3"},
+	  {"model": "minecraft:block/pink_tulip4"}
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "name": "incendium:generic",
+  "fallback": "incendium:castle/roof_2x1",
+  "elements": [
+    {
+      "weight": 4,
+      "element": {
+        "location": "incendium:castle/rooms/2x1/pyro",
+        "processors": "incendium:castle/pyro",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "incendium:castle/rooms/2x1/treasure_quartz",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "incendium:castle/rooms/2x1/library",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "incendium:castle/rooms/2x1/crypt",
+        "processors": "incendium:castle/pyro",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "incendium:castle/rooms/2x1/war_table",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:castle/boom_room",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "incendium:castle/roof_2x1_1",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "incendium:castle/roof_2x1_2",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "incendium:castle/roof_2x1_3",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:castle/roof_2x1_4",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "incendium:castle/rooms/2x1/storage",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

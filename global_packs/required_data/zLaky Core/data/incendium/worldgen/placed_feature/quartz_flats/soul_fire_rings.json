@@ -1,0 +1,116 @@
+{
+  "feature": {
+    "type": "minecraft:simple_block",
+    "config": {
+      "to_place": {
+        "type": "minecraft:noise_provider",
+        "seed": 0,
+        "noise": {
+          "firstOctave": -6,
+          "amplitudes": [
+            1.25,
+            1,
+            1,
+            1
+          ]
+        },
+        "scale": 1.5,
+        "states": [
+          {
+            "Name": "minecraft:soul_fire"
+          },
+          {
+            "Name": "minecraft:air"
+          },
+          {
+            "Name": "minecraft:air"
+          },
+          {
+            "Name": "minecraft:air"
+          },
+          {
+            "Name": "minecraft:air"
+          },
+          {
+            "Name": "minecraft:soul_fire"
+          },
+          {
+            "Name": "minecraft:air"
+          },
+          {
+            "Name": "minecraft:air"
+          },
+          {
+            "Name": "minecraft:air"
+          },
+          {
+            "Name": "minecraft:air"
+          },
+          {
+            "Name": "minecraft:air"
+          },
+          {
+            "Name": "minecraft:air"
+          },
+          {
+            "Name": "minecraft:soul_fire"
+          },
+          {
+            "Name": "minecraft:air"
+          },
+          {
+            "Name": "minecraft:air"
+          },
+          {
+            "Name": "minecraft:air"
+          },
+          {
+            "Name": "minecraft:air"
+          },
+          {
+            "Name": "minecraft:soul_fire"
+          }
+        ]
+      }
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 66
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              -1,
+              0
+            ],
+            "blocks": [
+              "minecraft:smooth_quartz"
+            ]
+          },
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              0,
+              0
+            ],
+            "blocks": [
+              "minecraft:air"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

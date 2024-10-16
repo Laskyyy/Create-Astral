@@ -1,0 +1,28 @@
+{
+  "name": "incendium:generic",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 3,
+      "element": {
+        "feature": "incendium:feature_pool/warped_stem_pile",
+        "projection": "rigid",
+        "element_type": "minecraft:feature_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "feature": "incendium:feature_pool/stripped_warped_stem_pile",
+        "projection": "rigid",
+        "element_type": "minecraft:feature_pool_element"
+      }
+    },
+    {
+      "weight": 13,
+      "element": {
+        "element_type": "minecraft:empty_pool_element"
+      }
+    }
+  ]
+}

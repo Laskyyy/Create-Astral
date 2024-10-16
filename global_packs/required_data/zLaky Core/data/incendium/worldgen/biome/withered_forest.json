@@ -1,0 +1,118 @@
+{
+  "effects": {
+    "mood_sound": {
+      "sound": "minecraft:ambient.warped_forest.mood",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2
+    },
+    "additions_sound": {
+      "sound": "minecraft:ambient.crimson_forest.additions",
+      "tick_chance": 0.0111
+    },
+    "music": {
+      "sound": "minecraft:music.nether.basalt_deltas",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": false
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:smoke"
+      },
+      "probability": 0.01
+    },
+    "ambient_sound": "minecraft:ambient.basalt_deltas.loop",
+    "sky_color": 12763856,
+    "fog_color": 2169642,
+    "foliage_color":8357004,
+    "water_color": 4159204,
+    "water_fog_color": 4341314
+  },
+  "carvers": {
+    "air": [
+      "minecraft:nether_cave",
+      "incendium:big_cave"
+    ]
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [
+      "incendium:withered_forest/trees"
+    ],
+    [],
+    [],
+    [
+      "minecraft:blackstone_blobs",
+      "minecraft:spring_delta",
+      "minecraft:patch_fire",
+      "minecraft:patch_soul_fire",
+      "minecraft:glowstone_extra",
+      "minecraft:glowstone",
+      "minecraft:brown_mushroom_nether",
+      "minecraft:red_mushroom_nether",
+      "minecraft:ore_magma",
+      "minecraft:spring_closed_double",
+      "minecraft:ore_gold_nether",
+      "minecraft:ore_quartz_nether",
+      "minecraft:ore_ancient_debris_large",
+      "minecraft:ore_debris_small"
+    ]
+  ],
+  "spawners": {
+    "water_ambient": [],
+    "ambient": [],
+    "misc": [],
+    "water_creature": [],
+    "creature": [],
+    "monster": [
+      {
+        "type": "minecraft:wither_skeleton",
+        "weight": 50,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "type": "minecraft:magma_cube",
+        "weight": 20,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "type": "minecraft:phantom",
+        "weight": 6,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ]
+  },
+  "spawn_costs": {
+    "minecraft:wither_skeleton": {
+      "energy_budget": 0.1,
+      "charge": 0.4
+    },
+    "minecraft:enderman": {
+      "energy_budget": 0.1,
+      "charge": 0.2
+    },
+    "minecraft:magma_cube": {
+      "energy_budget": 0.15,
+      "charge": 0.5
+    },
+    "minecraft:vex": {
+      "energy_budget": 0.2,
+      "charge": 0.5
+    },
+    "minecraft:phantom": {
+      "energy_budget": 0.15,
+      "charge": 0.7
+    }
+  },
+  "precipitation": "none",
+  "temperature": 2.0,
+  "downfall": 0.0,
+  "category": "nether"
+}

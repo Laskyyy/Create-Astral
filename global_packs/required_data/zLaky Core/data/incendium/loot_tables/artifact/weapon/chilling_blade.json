@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "Freezes souls to the core",
+                  "color": "#0055aa",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "Incendium",
+                  "color": "#FF8000",
+                  "italic": true
+                }
+              ],
+              "replace": true
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:1450003,incendium:{item:'chilling_blade'}}"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "Chilling Blade",
+                "color": "#0088ff",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

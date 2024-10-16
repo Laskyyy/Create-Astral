@@ -1,0 +1,138 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.3,
+        "feature": {
+          "feature": {
+            "type": "minecraft:tree",
+            "config": {
+              "ignore_vines": false,
+              "force_dirt": false,
+              "minimum_size": {
+                "type": "minecraft:two_layers_feature_size",
+                "min_clipped_height": 0,
+                "limit": 0,
+                "lower_size": 1,
+                "upper_size": 0
+              },
+              "dirt_provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "minecraft:bone_block",
+                  "Properties": {
+                    "axis": "y"
+                  }
+                }
+              },
+              "sapling_provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "minecraft:stone"
+                }
+              },
+              "trunk_provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "minecraft:bone_block",
+                  "Properties": {
+                    "axis": "y"
+                  }
+                }
+              },
+              "foliage_provider": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "minecraft:air"
+                }
+              },
+              "trunk_placer": {
+                "type": "minecraft:fancy_trunk_placer",
+                "base_height": 3,
+                "height_rand_a": 3,
+                "height_rand_b": 3
+              },
+              "foliage_placer": {
+                "type": "minecraft:pine_foliage_placer",
+                "radius": 0,
+                "offset": 0,
+                "height": 0
+              },
+              "decorators": []
+            }
+          },
+          "placement": []
+        }
+      }
+    ],
+    "default": {
+      "feature": {
+        "type": "minecraft:tree",
+        "config": {
+          "ignore_vines": false,
+          "force_dirt": false,
+          "minimum_size": {
+            "type": "minecraft:two_layers_feature_size",
+            "min_clipped_height": 0,
+            "limit": 0,
+            "lower_size": 1,
+            "upper_size": 0
+          },
+          "dirt_provider": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:bone_block",
+              "Properties": {
+                "axis": "y"
+              }
+            }
+          },
+          "sapling_provider": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:stone"
+            }
+          },
+          "trunk_provider": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:bone_block",
+              "Properties": {
+                "axis": "y"
+              }
+            }
+          },
+          "foliage_provider": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:air"
+            }
+          },
+          "trunk_placer": {
+            "type": "minecraft:bending_trunk_placer",
+            "base_height": 4,
+            "height_rand_a": 2,
+            "height_rand_b": 3,
+            "bend_length": {
+              "type": "minecraft:uniform",
+              "value": {
+                "min_inclusive": 1,
+                "max_inclusive": 4
+              }
+            },
+            "min_height_for_leaves": 100
+          },
+          "foliage_placer": {
+            "type": "minecraft:pine_foliage_placer",
+            "radius": 0,
+            "offset": 0,
+            "height": 0
+          },
+          "decorators": []
+        }
+      },
+      "placement": []
+    }
+  }
+}

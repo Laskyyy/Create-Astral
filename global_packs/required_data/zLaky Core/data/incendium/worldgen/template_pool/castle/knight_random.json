@@ -1,0 +1,48 @@
+{
+  "name": "incendium:generic",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 4,
+      "element": {
+        "location": "incendium:castle/mobs/knight",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 6,
+      "element": {
+        "location": "incendium:castle/mobs/knight_gold",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:castle/mobs/knight_diamond",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:castle/mobs/knight_netherite",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 16,
+      "element": {
+        "element_type": "minecraft:empty_pool_element"
+      }
+    }
+  ]
+}

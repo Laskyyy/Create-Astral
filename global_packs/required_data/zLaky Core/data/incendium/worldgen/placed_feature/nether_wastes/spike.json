@@ -1,0 +1,298 @@
+{
+  "feature": {
+    "type": "minecraft:simple_random_selector",
+    "config": {
+      "features": [
+        {
+          "feature": "incendium:nether_wastes/spike_block",
+          "placement": [
+            {
+              "type": "minecraft:environment_scan",
+              "direction_of_search": "up",
+              "max_steps": 32,
+              "target_condition": {
+                "type": "minecraft:has_sturdy_face",
+                "offset": [
+                  0,
+                  1,
+                  0
+                ],
+                "direction": "down"
+              }
+            },
+            {
+              "type": "minecraft:block_predicate_filter",
+              "predicate": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "blocks": [
+                      "minecraft:air",
+                      "minecraft:lava"
+                    ]
+                  },
+                  {
+                    "type": "minecraft:any_of",
+                    "predicates": [
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          0,
+                          1,
+                          0
+                        ],
+                        "blocks": [
+                          "minecraft:netherrack"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:any_of",
+                    "predicates": [
+                      {
+                        "type": "minecraft:any_of",
+                        "predicates": [
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              1,
+                              3,
+                              0
+                            ],
+                            "blocks": [
+                              "minecraft:netherrack"
+                            ]
+                          },
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              -1,
+                              3,
+                              0
+                            ],
+                            "blocks": [
+                              "minecraft:netherrack"
+                            ]
+                          },
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              0,
+                              3,
+                              1
+                            ],
+                            "blocks": [
+                              "minecraft:netherrack"
+                            ]
+                          },
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              0,
+                              3,
+                              -1
+                            ],
+                            "blocks": [
+                              "minecraft:netherrack"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "feature": "incendium:nether_wastes/spike_block",
+          "placement": [
+            {
+              "type": "minecraft:environment_scan",
+              "direction_of_search": "down",
+              "max_steps": 32,
+              "target_condition": {
+                "type": "minecraft:has_sturdy_face",
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ],
+                "direction": "up"
+              }
+            },
+            {
+              "type": "minecraft:block_predicate_filter",
+              "predicate": {
+                "type": "minecraft:all_of",
+                "predicates": [
+                  {
+                    "type": "minecraft:matching_blocks",
+                    "offset": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "blocks": [
+                      "minecraft:air",
+                      "minecraft:lava"
+                    ]
+                  },
+                  {
+                    "type": "minecraft:any_of",
+                    "predicates": [
+                      {
+                        "type": "minecraft:matching_blocks",
+                        "offset": [
+                          0,
+                          -1,
+                          0
+                        ],
+                        "blocks": [
+                          "minecraft:netherrack"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "minecraft:any_of",
+                    "predicates": [
+                      {
+                        "type": "minecraft:any_of",
+                        "predicates": [
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              1,
+                              -3,
+                              0
+                            ],
+                            "blocks": [
+                              "minecraft:netherrack"
+                            ]
+                          },
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              -1,
+                              -3,
+                              0
+                            ],
+                            "blocks": [
+                              "minecraft:netherrack"
+                            ]
+                          },
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              0,
+                              -3,
+                              1
+                            ],
+                            "blocks": [
+                              "minecraft:netherrack"
+                            ]
+                          },
+                          {
+                            "type": "minecraft:matching_blocks",
+                            "offset": [
+                              0,
+                              -3,
+                              -1
+                            ],
+                            "blocks": [
+                              "minecraft:netherrack"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "placement": [
+    {
+      "type": "minecraft:count_on_every_layer",
+      "count": 1
+    },
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 10
+    },
+    {
+      "type": "minecraft:count",
+      "count": 62
+    },
+    {
+      "type": "minecraft:count",
+      "count": 255
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": -8,
+          "max_inclusive": 8
+        }
+      },
+      "y_spread": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": -16,
+          "max_inclusive": 16
+        }
+      }
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": 0,
+      "y_spread": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": -16,
+          "max_inclusive": 16
+        }
+      }
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": 0,
+      "y_spread": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": -16,
+          "max_inclusive": 16
+        }
+      }
+    },
+    {
+      "type": "minecraft:random_offset",
+      "xz_spread": 0,
+      "y_spread": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": -16,
+          "max_inclusive": 16
+        }
+      }
+    },
+        {
+      "type": "minecraft:biome"
+    }
+  ]
+}

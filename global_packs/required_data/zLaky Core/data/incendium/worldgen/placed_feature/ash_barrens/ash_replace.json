@@ -1,0 +1,11 @@
+{
+	"feature": "incendium:ash_barrens/ash_replace",
+	"placement": [
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"absolute": 31
+			}
+		}
+	]
+}

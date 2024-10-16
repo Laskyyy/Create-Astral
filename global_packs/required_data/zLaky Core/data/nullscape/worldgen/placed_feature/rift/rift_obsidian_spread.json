@@ -1,0 +1,13 @@
+{
+	"feature": "nullscape:rift/rift_obsidian_spread",
+	"placement": [
+		{
+			"type": "carving_mask",
+			"step": "air"
+		},
+		{
+			"type": "minecraft:rarity_filter",
+			"chance": 4
+		}
+	]
+}

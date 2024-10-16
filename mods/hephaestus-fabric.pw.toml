@@ -1,6 +1,6 @@
 name = "Hephaestus"
 filename = "Hephaestus-1.18.2-3.5.2.155.jar"
-side = "client"
+side = "both"
 
 [download]
 mode = "metadata:curseforge"

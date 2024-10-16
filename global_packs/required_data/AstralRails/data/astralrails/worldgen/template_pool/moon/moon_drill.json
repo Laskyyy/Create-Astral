@@ -1,0 +1,15 @@
+{
+  "name": "astralrails:paths/start_paths",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "astralrails:moon/miningfacility",
+        "processors": "astralrails:moon_debris/moon_ruin_texture",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

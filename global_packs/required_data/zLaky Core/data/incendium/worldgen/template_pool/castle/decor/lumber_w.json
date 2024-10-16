@@ -1,0 +1,60 @@
+{
+  "name": "incendium:generic",
+  "fallback": "incendium:castle/decor/lumber_c",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:castle/decor/lumber/c1",
+        "processors": "incendium:castle/lumber",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:castle/decor/lumber/c2",
+        "processors": "incendium:castle/lumber",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:castle/decor/lumber/c3",
+        "processors": "incendium:castle/lumber",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "incendium:castle/decor/lumber/w1",
+        "processors": "incendium:castle/lumber",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "incendium:castle/decor/lumber/w2",
+        "processors": "incendium:castle/lumber",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "incendium:castle/decor/lumber/w3",
+        "processors": "incendium:castle/lumber",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

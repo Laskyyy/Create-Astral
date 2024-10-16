@@ -1,0 +1,26 @@
+{
+  "processors": [
+    {
+      "rules": [
+        {
+          "position_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "minecraft:structure_void"
+          },
+          "input_predicate": {
+            "block": "minecraft:air",
+            "probability": 1,
+            "predicate_type": "minecraft:random_block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          }
+        }
+      ],
+      "processor_type": "minecraft:rule",
+      "name": "incendium:void"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_pickaxe",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "Hefty Pickaxe",
+                "color": "#990025",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "A nether-oriented excavator",
+                  "color": "#880012",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "Incendium",
+                  "color": "#FF8000",
+                  "italic": true
+                }
+              ],
+              "replace": true
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:1450500,incendium:{item:'hefty_pickaxe'}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

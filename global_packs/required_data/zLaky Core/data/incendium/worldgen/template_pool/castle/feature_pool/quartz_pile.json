@@ -1,0 +1,20 @@
+{
+  "name": "incendium:generic",
+  "fallback": "incendium:castle/feature_pool/quartz_pile",
+  "elements": [
+    {
+      "weight": 3,
+      "element": {
+        "feature": "incendium:feature_pool/quartz_pile",
+        "projection": "rigid",
+        "element_type": "minecraft:feature_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "element_type": "minecraft:empty_pool_element"
+      }
+    }
+  ]
+}

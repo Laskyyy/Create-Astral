@@ -1,0 +1,95 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:generic.movement_speed",
+                  "name": "d",
+                  "amount": {
+                    "min": -0.225,
+                    "max": -0.15
+                  },
+                  "operation": "multiply_base",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:generic.attack_speed",
+                  "name": "d",
+                  "amount": -3.4,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:generic.attack_damage",
+                  "name": "d",
+                  "amount": 13,
+                  "operation": "addition",
+                  "slot": "mainhand"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "translate": "Used by the wither king Mors to",
+                  "color": "#006666",
+                  "italic": true
+                },
+                {
+                  "translate": "corrupt and torment the piglins",
+                  "color": "#006666",
+                  "italic": true
+                },
+                {
+                  "translate": "and their ancient forests in war...",
+                  "color": "#006666",
+                  "italic": true
+                },
+                {
+                  "translate": "",
+                  "color": "#884400",
+                  "italic": false
+                },
+                {
+                  "translate": "Patron Item",
+                  "color": "#333333",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "Incendium",
+                  "color": "#FF8000",
+                  "italic": true
+                }
+              ],
+              "replace": true
+            },
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "translate": "Warping Witherblade",
+                "color": "#330099",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:1450001,incendium:{item:'warping_witherblade'}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

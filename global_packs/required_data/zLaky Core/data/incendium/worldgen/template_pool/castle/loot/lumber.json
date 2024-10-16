@@ -1,0 +1,66 @@
+{
+  "name": "incendium:generic",
+  "fallback": "incendium:castle/loot/lumber",
+  "elements": [
+    {
+      "weight": 3,
+      "element": {
+        "location": "incendium:castle/decor/lumber/barrel_big1",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:castle/decor/lumber/barrel_big2",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:castle/decor/lumber/barrel_big3",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:castle/decor/lumber/barrel_small1",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:castle/decor/lumber/barrel_small2",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:castle/decor/lumber/barrel_small3",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "element_type": "minecraft:empty_pool_element"
+      }
+    }
+  ]
+}

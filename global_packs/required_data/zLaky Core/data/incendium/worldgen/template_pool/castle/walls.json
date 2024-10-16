@@ -1,0 +1,42 @@
+{
+  "name": "incendium:generic",
+  "fallback": "incendium:castle/small_walls",
+  "elements": [
+    {
+      "weight": 10,
+      "element": {
+        "location": "incendium:castle/wall_15_compat",
+        "processors": "incendium:nuclear_option_wall",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "incendium:castle/wall_15",
+        "processors": "incendium:nuclear_option_wall",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "incendium:castle/wall_15w",
+        "processors": "incendium:nuclear_option_wall",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 3,
+      "element": {
+        "location": "incendium:castle/wall_corner",
+        "processors": "incendium:nuclear_option_wall",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

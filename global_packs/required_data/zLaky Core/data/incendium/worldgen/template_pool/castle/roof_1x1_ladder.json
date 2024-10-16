@@ -1,0 +1,24 @@
+{
+  "name": "incendium:generic",
+  "fallback": "incendium:castle/roof_1x1_ladder",
+  "elements": [
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:castle/roof_1x1_4",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "incendium:castle/roof_1x1_8",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

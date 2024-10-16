@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:netherrack_replace_blobs",
+  "config": {
+    "state": {
+      "Name": "minecraft:air"
+    },
+    "target": {
+      "Name": "minecraft:end_stone"
+    },
+    "radius": 12
+  }
+}

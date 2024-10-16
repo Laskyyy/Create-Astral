@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "soul_sand",
+    "ad_astra:moon_stone",
+		"ad_astra:mars_stone",
+		"ad_astra:mercury_stone"
+  ]
+}

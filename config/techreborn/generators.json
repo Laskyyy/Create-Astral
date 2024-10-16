@@ -10,25 +10,25 @@
     },
     "LightningRodMaxEnergy": {
       "comment": "Lightning Rod Max Energy",
-      "value": 2097152
+      "value": 100000000
     },
     "LightningRodBaseStrikeEnergy": {
       "comment": "Base amount of Energy per strike",
-      "value": 720000
+      "value": 262144
     }
   },
   "dragon_egg_siphoner": {
     "DragonEggSiphonerMaxEnergy": {
       "comment": "Dragon Egg Siphoner Max Energy",
-      "value": 10000
+      "value": 1000
     },
     "DragonEggSiphonerMaxOutput": {
       "comment": "Dragon Egg Siphoner Max Output (Energy per tick)",
-      "value": 2048
+      "value": 128
     },
     "DragonEggSiphonerEnergyPerTick": {
       "comment": "Dragon Egg Siphoner Energy Per Tick",
-      "value": 128
+      "value": 15
     }
   },
   "water_mill": {
@@ -48,7 +48,7 @@
   "wind_mill": {
     "WindMillMaxEnergy": {
       "comment": "Wind Mill Max Energy",
-      "value": 1000
+      "value": 10000
     },
     "WindMillMaxOutput": {
       "comment": "Wind Mill Max Output (Energy per tick)",

@@ -1,0 +1,11 @@
+{
+  "config": {
+    "start_pool": "astralrails:moon/pocisk_middle",
+    "size": 2
+  },
+  "biomes": "#astralrails:has_structure/moon_debris",
+  "adapt_noise":false,
+  "spawn_overrides": {
+  },
+  "type": "minecraft:village"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "incendium:generic",
+  "fallback": "incendium:castle/decor/brewing/cages_w",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:castle/decor/brewing/table2_w",
+        "processors": "incendium:castle/armory",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:castle/decor/brewing/table1_w",
+        "processors": "incendium:castle/armory",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

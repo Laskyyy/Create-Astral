@@ -1,0 +1,6 @@
+{
+    //"item.immersive_aircraft.boiler": "Moteur", // not use in-game, the originale translation gonna be used
+    //"item.immersive_aircraft.engine": "Moteur", // same as the original translation in the mod
+    "item.immersive_aircraft.sail": "Grande voile",
+    "item.immersive_aircraft.propeller": "Grande hélice"
+}

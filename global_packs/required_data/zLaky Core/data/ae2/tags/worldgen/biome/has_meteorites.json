@@ -1,4 +1,7 @@
 {
-    "replace": false,
-    "values": ["ad_astra:lunar_wastelands"]
+  "replace": false,
+  "values": [
+    "incendium:basalt_deltas",
+    "ad_astra:lunar_wastelands"
+  ]
 }

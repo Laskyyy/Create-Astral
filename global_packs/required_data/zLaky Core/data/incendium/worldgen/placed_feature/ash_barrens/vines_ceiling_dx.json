@@ -1,0 +1,43 @@
+{
+	"feature": "incendium:ash_barrens/vines_ceiling_dx",
+	"placement": [
+		{
+			"type": "minecraft:count",
+			"count": {
+				"type": "minecraft:weighted_list",
+				"distribution": [
+					{
+						"weight": 100,
+						"data": 47
+					},
+					{
+						"weight": 0,
+						"data": 47
+					}
+				]
+			}
+		},
+		{
+			"type": "minecraft:in_square"
+		},
+		{
+			"type": "minecraft:height_range",
+			"height": {
+				"type": "minecraft:uniform",
+				"min_inclusive": {
+					"absolute": 33
+				},
+				"max_inclusive": {
+					"absolute": 127
+				}
+			}
+		},
+		{
+			"type": "minecraft:noise_based_count",
+			"noise_to_count_ratio": 1,
+			"noise_factor": 44,
+			"noise_offset": 1
+		},
+		{"type":"biome"}
+	]
+}

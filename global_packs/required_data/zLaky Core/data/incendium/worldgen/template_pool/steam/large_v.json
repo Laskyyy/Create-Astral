@@ -1,0 +1,33 @@
+{
+  "name": "incendium:pipes/pipe_start",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 6,
+      "element": {
+        "location": "incendium:pipe_small",
+        "processors": "minecraft:bastion_generic_degradation",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "incendium:steam/large_hv",
+        "processors": "incendium:pipe_small",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 4,
+      "element": {
+        "location": "incendium:steam/large_vh",
+        "processors": "incendium:pipe_small",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

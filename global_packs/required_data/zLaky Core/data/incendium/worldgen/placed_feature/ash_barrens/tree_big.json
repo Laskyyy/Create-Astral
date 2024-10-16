@@ -1,0 +1,9 @@
+{
+	"feature": "incendium:ash_barrens/tree_big",
+	"placement": [
+		{
+			"type": "count",
+			"count": 16
+		}
+	]
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:lava",
+    "minecraft:flowing_lava",
+    "ad_astra:fuel",
+    "ad_astra:flowing_fuel"
+  ]
+}

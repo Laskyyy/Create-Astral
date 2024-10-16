@@ -1,6 +1,6 @@
 name = "Indium"
 filename = "indium-1.0.7+mc1.18.2.jar"
-side = "client"
+side = "both"
 
 [download]
 mode = "metadata:curseforge"

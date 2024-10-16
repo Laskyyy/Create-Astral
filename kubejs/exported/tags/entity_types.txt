@@ -1,0 +1,370 @@
+To refresh this file, delete it and run /reload command again! Last updated: Dec 1, 2022, 5:57:57 PM
+
+#incendium:ghastling_enemy
+- minecraft:ghast
+- minecraft:fireball
+
+#incendium:castle
+- minecraft:piglin
+- minecraft:piglin_brute
+- minecraft:marker
+- minecraft:area_effect_cloud
+
+#minecraft:axolotl_always_hostiles
+- minecraft:drowned
+- minecraft:guardian
+- minecraft:elder_guardian
+
+#minecraft:freeze_immune_entity_types
+- minecraft:stray
+- minecraft:polar_bear
+- minecraft:snow_golem
+- minecraft:wither
+
+#ad_astra:entities/lives_without_oxygen
+- ad_astra:lunarian
+- ad_astra:corrupted_lunarian
+- ad_astra:star_crawler
+- ad_astra:martian_raptor
+- ad_astra:pygro
+- ad_astra:zombified_pygro
+- ad_astra:pygro_brute
+- ad_astra:mogler
+- ad_astra:zombified_mogler
+- ad_astra:sulfur_creeper
+- ad_astra:lunarian_wandering_trader
+- minecraft:ender_dragon
+- minecraft:wither
+- minecraft:skeleton
+- minecraft:stray
+- minecraft:armor_stand
+- minecraft:iron_golem
+- minecraft:snow_golem
+- minecraft:magma_cube
+- minecraft:blaze
+- minecraft:piglin
+- minecraft:piglin_brute
+- minecraft:zombified_piglin
+- minecraft:ghast
+- minecraft:enderman
+- minecraft:hoglin
+
+#ad_astra:entities/fire_immune
+- ad_astra:pygro
+- ad_astra:zombified_pygro
+- ad_astra:pygro_brute
+- ad_astra:mogler
+- ad_astra:zombified_mogler
+- ad_astra:sulfur_creeper
+- ad_astra:lunarian_wandering_trader
+- ad_astra:pygro
+- ad_astra:zombified_pygro
+- ad_astra:pygro_brute
+- ad_astra:mogler
+- ad_astra:zombified_mogler
+- ad_astra:sulfur_creeper
+- ad_astra:lunarian_wandering_trader
+
+#incendium:mobs
+- minecraft:player
+- #incendium:mobs_no_player
+
+#tconstruct:rare_mobs
+- minecraft:wither
+- minecraft:ender_dragon
+- minecraft:elder_guardian
+- minecraft:evoker
+- minecraft:player
+
+#incendium:other
+- #minecraft:arrows
+- minecraft:potion
+- minecraft:item
+- minecraft:marker
+- minecraft:area_effect_cloud
+- minecraft:fireball
+- minecraft:small_fireball
+- minecraft:armor_stand
+- minecraft:falling_block
+- minecraft:trident
+- minecraft:ender_pearl
+
+#c:slimes
+- minecraft:slime
+- tconstruct:earth_slime
+- tconstruct:sky_slime
+- tconstruct:ender_slime
+- tconstruct:terracube
+- minecraft:slime
+- tconstruct:earth_slime
+- tconstruct:sky_slime
+- tconstruct:ender_slime
+- tconstruct:terracube
+
+#tconstruct:melting/show_in_default
+- minecraft:iron_golem
+- minecraft:snow_golem
+- minecraft:villager
+- minecraft:player
+
+#naturalist:lion_hostiles
+- naturalist:rhino
+- minecraft:horse
+
+#naturalist:bear_hostiles
+- minecraft:tropical_fish
+- minecraft:salmon
+- minecraft:cod
+- naturalist:deer
+
+#tconstruct:piggybackpack_blacklist
+
+#nullscape:not_teleportable
+- minecraft:enderman
+- minecraft:ender_pearl
+- minecraft:marker
+- minecraft:wither
+- minecraft:ender_dragon
+- minecraft:fishing_bobber
+
+#c:bosses
+- minecraft:ender_dragon
+- minecraft:wither
+
+#incendium:withersbane_targets
+- minecraft:wither
+- minecraft:wither_skeleton
+- minecraft:skeleton
+- minecraft:zombified_piglin
+
+#farmersdelight:horse_feed_users
+- minecraft:horse
+- minecraft:skeleton_horse
+- minecraft:zombie_horse
+- minecraft:donkey
+- minecraft:mule
+- minecraft:llama
+
+#minecraft:raiders
+- minecraft:evoker
+- minecraft:pillager
+- minecraft:ravager
+- minecraft:vindicator
+- minecraft:illusioner
+- minecraft:witch
+
+#minecraft:powder_snow_walkable_mobs
+- minecraft:rabbit
+- minecraft:endermite
+- minecraft:silverfish
+- minecraft:fox
+
+#tconstruct:melting/hide_in_default
+- minecraft:giant
+
+#minecraft:axolotl_hunt_targets
+- minecraft:tropical_fish
+- minecraft:pufferfish
+- minecraft:salmon
+- minecraft:cod
+- minecraft:squid
+- minecraft:glow_squid
+
+#farmersdelight:dog_food_users
+- minecraft:wolf
+
+#naturalist:deer_predators
+- naturalist:bear
+
+#incendium:mobs_no_player
+- minecraft:axolotl
+- minecraft:bat
+- minecraft:chicken
+- minecraft:cod
+- minecraft:cow
+- minecraft:donkey
+- minecraft:fox
+- minecraft:horse
+- minecraft:mooshroom
+- minecraft:mule
+- minecraft:ocelot
+- minecraft:panda
+- minecraft:parrot
+- minecraft:pig
+- minecraft:rabbit
+- minecraft:sheep
+- minecraft:skeleton_horse
+- minecraft:salmon
+- minecraft:squid
+- minecraft:strider
+- minecraft:turtle
+- minecraft:tropical_fish
+- minecraft:villager
+- minecraft:wandering_trader
+- minecraft:bee
+- minecraft:dolphin
+- minecraft:polar_bear
+- minecraft:wolf
+- minecraft:cave_spider
+- minecraft:enderman
+- minecraft:iron_golem
+- minecraft:spider
+- minecraft:zombified_piglin
+- minecraft:llama
+- minecraft:trader_llama
+- minecraft:pufferfish
+- minecraft:blaze
+- minecraft:creeper
+- minecraft:drowned
+- minecraft:elder_guardian
+- minecraft:ender_dragon
+- minecraft:evoker
+- minecraft:ghast
+- minecraft:guardian
+- minecraft:hoglin
+- minecraft:husk
+- minecraft:magma_cube
+- minecraft:phantom
+- minecraft:piglin
+- minecraft:piglin_brute
+- minecraft:pillager
+- minecraft:illusioner
+- minecraft:ravager
+- minecraft:shulker
+- minecraft:silverfish
+- minecraft:skeleton
+- minecraft:slime
+- minecraft:stray
+- minecraft:vex
+- minecraft:vindicator
+- minecraft:witch
+- minecraft:wither
+- minecraft:wither_skeleton
+- minecraft:zoglin
+- minecraft:zombie
+- minecraft:zombie_villager
+
+#tconstruct:killagers
+- #c:villagers
+- #c:illagers
+- minecraft:iron_golem
+- minecraft:ravager
+
+#minecraft:impact_projectiles
+- #minecraft:arrows
+- minecraft:snowball
+- minecraft:fireball
+- minecraft:small_fireball
+- minecraft:egg
+- minecraft:trident
+- minecraft:dragon_fireball
+- minecraft:wither_skull
+- ad_astra:ice_spit_entity
+
+#automobility:dash_panel_boostables
+- minecraft:arrow
+- minecraft:boat
+- minecraft:donkey
+- minecraft:falling_block
+- minecraft:horse
+- minecraft:llama
+- minecraft:minecart
+- minecraft:mule
+- minecraft:pig
+- minecraft:strider
+- minecraft:tnt
+- balloonist:balloon?
+- gravityguns:block?
+- hyperstellar:ship?
+- lovely_snails:snail?
+- owf:sled?
+- wackyvessels:submarine_vessel?
+- wackyvessels:airship_vessel?
+
+#minecraft:beehive_inhabitors
+- minecraft:bee
+
+#c:boats
+- minecraft:boat
+
+#minecraft:skeletons
+- minecraft:skeleton
+- minecraft:stray
+- minecraft:wither_skeleton
+
+#minecraft:arrows
+- minecraft:arrow
+- minecraft:spectral_arrow
+
+#c:villagers
+- minecraft:villager
+- minecraft:wandering_trader
+- minecraft:zombie_villager
+- minecraft:villager
+- minecraft:wandering_trader
+- minecraft:zombie_villager
+
+#naturalist:snake_hostiles
+- minecraft:rabbit
+- minecraft:chicken
+- minecraft:silverfish
+- naturalist:snail
+
+#incendium:sentry_targets
+- minecraft:player
+- minecraft:armor_stand
+
+#minecraft:freeze_hurts_extra_types
+- minecraft:strider
+- minecraft:blaze
+- minecraft:magma_cube
+
+#tconstruct:bacon_producer
+- minecraft:pig
+- minecraft:piglin
+- minecraft:hoglin
+
+#c:creepers
+- minecraft:creeper
+- minecraft:creeper
+
+#naturalist:vulture_hostiles
+- minecraft:zombie
+- minecraft:zombie_villager
+- minecraft:husk
+- minecraft:zombified_piglin
+- minecraft:zoglin
+- minecraft:zombie_horse
+
+#incendium:castle_spawned
+- minecraft:area_effect_cloud
+- #minecraft:arrows
+- minecraft:armor_stand
+- minecraft:firework_rocket
+- minecraft:fireball
+- minecraft:small_fireball
+
+#c:minecarts
+- minecraft:minecart
+- minecraft:tnt_minecart
+- minecraft:chest_minecart
+- minecraft:furnace_minecart
+- minecraft:command_block_minecart
+- minecraft:hopper_minecart
+- minecraft:spawner_minecart
+
+#c:illagers
+- minecraft:evoker
+- minecraft:illusioner
+- minecraft:pillager
+- minecraft:vindicator
+- minecraft:witch
+- minecraft:evoker
+- minecraft:illusioner
+- minecraft:pillager
+- minecraft:vindicator
+- minecraft:witch
+
+#c:small_armor
+- #c:slimes
+- #c:slimes

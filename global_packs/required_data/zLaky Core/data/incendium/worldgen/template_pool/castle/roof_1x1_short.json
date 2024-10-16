@@ -1,0 +1,24 @@
+{
+  "name": "incendium:generic",
+  "fallback": "incendium:castle/roof_1x1",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:castle/roof_1x1_short1",
+        "processors": "incendium:nuclear_option",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "incendium:castle/roof_1x1_short2",
+        "processors": "incendium:castle_floor",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

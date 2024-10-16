@@ -1,0 +1,29 @@
+type = menu
+
+customization-meta {
+  identifier = %fancymenu:universal_layout%
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  orientation = top-left
+  audio_source:9078e26b-6987-4791-ab86-e5670b40ff171674352818384 = resources/menumusic/sounds/npc_theme.ogg;EXTERNAL_LOCAL;100;0
+  loop = true
+  channel = music
+  x = 378
+  width = 50
+  action = custom_layout_element:fancymenu_extension:audio_item
+  actionid = d0f32f53-27bd-4544-89a5-68b90e95b0b01674352809313
+  y = 159
+  once_per_session = false
+  height = 50
+}
+

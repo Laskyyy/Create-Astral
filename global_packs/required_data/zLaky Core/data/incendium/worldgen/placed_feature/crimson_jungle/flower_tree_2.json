@@ -1,0 +1,66 @@
+{
+  "feature": {
+    "type": "minecraft:tree",
+    "config": {
+      "ignore_vines": false,
+      "force_dirt": false,
+      "minimum_size": {
+        "type": "minecraft:two_layers_feature_size",
+        "min_clipped_height": 6,
+        "limit": 1,
+        "lower_size": 1,
+        "upper_size": 1
+      },
+      "dirt_provider": {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "minecraft:netherrack"
+        }
+      },
+      "trunk_provider": {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "minecraft:crimson_stem",
+          "Properties": {
+            "axis": "y"
+          }
+        }
+      },
+      "foliage_provider": {
+        "type": "minecraft:weighted_state_provider",
+        "entries": [
+          {
+            "weight": 100,
+            "data": {
+              "Name": "minecraft:nether_wart_block",
+              "Properties": {
+                "axis": "y"
+              }
+            }
+          }
+        ]
+      },
+      "trunk_placer": {
+        "type": "minecraft:straight_trunk_placer",
+        "base_height": 6,
+        "height_rand_a": 4,
+        "height_rand_b": 7
+      },
+      "foliage_placer": {
+        "type": "minecraft:jungle_foliage_placer",
+        "radius": {
+          "type": "minecraft:biased_to_bottom",
+          "value": {
+            "min_inclusive": 2,
+            "max_inclusive": 4
+          }
+        },
+        "offset": 1,
+        "height": 0
+      },
+      "decorators": [
+      ]
+    }
+  },
+  "placement": []
+}

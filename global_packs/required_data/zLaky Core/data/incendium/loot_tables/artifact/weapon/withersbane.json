@@ -1,0 +1,55 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:unbreaking": 8,
+                "minecraft:mending": 1
+              }
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "Withersbane",
+                "color": "#ffee99",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "An ancient blade to smite",
+                  "color": "#ffdd66",
+                  "italic": true
+                },
+                {
+                  "translate": "the impurity from the Nether",
+                  "color": "#ffdd66",
+                  "italic": true
+                },
+                "",
+                {
+                  "translate": "Incendium",
+                  "color": "#FF8000",
+                  "italic": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:1450007,incendium:{item:'withersbane'}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

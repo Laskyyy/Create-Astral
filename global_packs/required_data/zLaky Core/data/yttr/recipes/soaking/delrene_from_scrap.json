@@ -1,7 +1,0 @@
-{
-	"type": "yttr:soaking",
-	"single_ingredient": { "item": "yttr:delrene_scrap", "count": 24 },
-	"catalyst": { "fluid": "yttr:void" },
-	"result": { "block": "yttr:delrene" },
-	"sound": "yttr:dissolve"
-}

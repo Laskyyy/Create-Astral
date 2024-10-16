@@ -1,0 +1,11 @@
+{
+  "use_mtr_font": false,
+  "show_announcement_messages": false,
+  "use_tts_announcements": false,
+  "hide_special_rail_colors": false,
+  "hide_translucent_parts": false,
+  "shift_to_toggle_sitting": false,
+  "track_texture_offset": 0,
+  "dynamic texture resolution": 2,
+  "train_render_distance_ratio": 7
+}

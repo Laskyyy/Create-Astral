@@ -6,6 +6,6 @@ slideshow-meta {
    height = 1440
    x = 0
    y = 0
-   duration = 15.0
-   fadespeed = 5.0
+   duration = 9.0
+   fadespeed = 15.0
 }

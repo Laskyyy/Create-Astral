@@ -1,6 +1,6 @@
 name = "Let's do Wine!"
 filename = "vinery-1.1.4.jar"
-side = "client"
+side = "both"
 
 [download]
 mode = "metadata:curseforge"

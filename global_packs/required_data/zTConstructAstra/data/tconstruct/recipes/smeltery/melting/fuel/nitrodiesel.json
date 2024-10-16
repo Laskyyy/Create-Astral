@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:melting_fuel",
-  "fluid": {
-    "name": "kubejs:hellfire",
-    "amount": 1000
-  },
-  "duration": 150,
-  "temperature": 3000
-}

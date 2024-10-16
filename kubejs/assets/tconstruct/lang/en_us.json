@@ -1,0 +1,27 @@
+{
+
+
+  "block.tconstruct.cobalt_ore": "Moon Cobalt Ore",
+
+
+  "material.tconstruct.desh": "Desh",
+  "material.tconstruct.desh.flavor": "Soft, Speedy, Reliable.",
+  "material.tconstruct.desh.encyclopedia": "Average overall stats, contains a variety of unusual modifiers for mining and convenience.",
+
+  "material.tconstruct.ostrum": "Ostrum",
+  "material.tconstruct.ostrum.flavor": "This weighs tons! You're making tools out of this?!.",
+  "material.tconstruct.ostrum.encyclopedia": "Godly durability, but is a pain to swing with it's slow mining speed. Incredibly useful for ore mining.",
+
+  "material.tconstruct.calorite": "Calorite",
+  "material.tconstruct.calorite.flavor": "Sharpest metal in the lands.",
+  "material.tconstruct.calorite.encyclopedia": "Blood red, just like your enemies after feeling the blade end of your cleaver.",
+
+  "material.tconstruct.shadow": "Shadow",
+  "material.tconstruct.shadow.flavor": "As dense as dark matter.",
+  "material.tconstruct.shadow.encyclopedia": "Ridiculous durability. Makes for almost perfect tool rod handles and bindings.",
+
+  "material.tconstruct.radiant": "Radiant",
+  "material.tconstruct.radiant.flavor": "Hard. Light.",
+  "material.tconstruct.radiant.encyclopedia": "The power of light itself. Extremely brittle in the casting process, it boasts unparalleled modifiers, speed, and slots to toy with. "
+}
+
