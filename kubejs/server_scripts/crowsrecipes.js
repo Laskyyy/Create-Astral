@@ -28,5 +28,14 @@ onEvent("recipes", event => {
     //much much easier cable covering
     event.shapeless("appliedenergistics2:me_covered_cable", ["techreborn:rubber", "appliedenergistics2:fluix_glass_cable"])
     //easier red dye if you're still in premoon and want crimsite
-    event.recipes.createMixing("3x minecraft:red_dye", ["7x minecraft:sweet_berries", {fluid: "minecraft:water", amount: 500 * mB}])
+    event.recipes.createMixing({fluid: "kubejs:red_paste", amount: 300 * mB}, ["7x minecraft:sweet_berries", {fluid: "minecraft:water", amount: 500 * mB}])
+    event.custom({
+        type:"tconstruct:casting_table",
+        fluid: {
+            name: "kubejs:red_paste",
+            amount: 100 * mB
+        },
+        result: "minecraft:red_dye",
+        cooling_time: 100
+    })
 })

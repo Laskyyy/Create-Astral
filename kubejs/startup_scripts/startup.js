@@ -10,6 +10,13 @@ function lizardBurnModificationChanges(event) {
 ///// REGISTERING CUSTOM FLUIDS ////
 
 onEvent('fluid.registry', event => {
+  event.create('red_paste')
+        .thickTexture(0xff0000)
+        .bucketColor(0xff0000)
+        .displayName('Red Paste')
+        .stillTexture('tconstruct:block/fluid/molten/still')
+        .flowingTexture('tconstruct:block/fluid/molten/still')
+        
 	event.create('molten_calorite')
        .thickTexture(0xc41a39)
        .bucketColor(0xc41a39)
