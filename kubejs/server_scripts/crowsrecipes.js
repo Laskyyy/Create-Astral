@@ -7,7 +7,7 @@ onEvent("recipes", event => {
             "count": 1
         },
         "result": {
-            "item": "techreborn:ashes",
+            "item": "techreborn:ashes_dust",
             "count": 2
         },
         "energy": 10000
@@ -18,7 +18,7 @@ onEvent("recipes", event => {
         Item.of("create:copper_nugget").withChance(0.3),
         Item.of("techreborn:tin_nugget").withChance(0.25)
     ], [
-        "techreborn:ashes"
+        "techreborn:ashes_dust"
     ])
     //allow for a smaller tree farm if you have sulfur to spare
     event.recipes.createMixing("8x techreborn:rubber", [
