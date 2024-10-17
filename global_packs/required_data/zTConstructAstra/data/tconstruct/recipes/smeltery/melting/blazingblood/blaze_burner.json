@@ -1,15 +1,14 @@
 {
-    "type": "tconstruct:melting",
-    "rate": "metal",
-    "ingredient": {
-      "item": "create:blaze_burner"
-    },
-    "result": {
-      "fluid": "tconstruct:blazing_blood",
-      "amount": 81000
-    },
-    "temperature": 800,
-    "time": 194,
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "create:blaze_burner"
+  },
+  "result": {
+    "fluid": "tconstruct:blazing_blood",
+    "amount": 81000
+  },
+  "temperature": 32,
+  "time": 14
     "byproducts": [
       {
         "fluid": "tconstruct:molten_iron",
