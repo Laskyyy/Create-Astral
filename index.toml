@@ -362,11 +362,11 @@ hash = "8d7ce46d8038ef37e526605538913133dba45657144c228080d1a8ba1e55436d"
 
 [[files]]
 file = "config/fancymenu/custom_gui_screens.txt"
-hash = "91cfe713fcf681218b388da90282c142a4a4bc06203ae2170556bbe537510bab"
+hash = "daa176135e4986defbdbf74108cef19add9e00f620061086ca2c6089c439900b"
 
 [[files]]
 file = "config/fancymenu/custom_locals/astralmenu/en_us.local"
-hash = "77a19028134963062f7cd4ecf64259eefd8bf6a666997ff4c31b204b5c23121d"
+hash = "3fb56a7979ea63c825f2626fc2b8b3134d9c97a2384e27a33f15569c4a34f697"
 
 [[files]]
 file = "config/fancymenu/customizablemenus.txt"
@@ -385,12 +385,16 @@ file = "config/fancymenu/customization/main_menu_image_credits_layout.txt"
 hash = "77a559f0de4a9966981f204342b97eb12ceb0f50b0e7c2273f7a56ca1768af36"
 
 [[files]]
+file = "config/fancymenu/customization/modpack_changelog_2.1.1_layout.txt"
+hash = "89372d8fed09c2af0200f49dda3afb5e99005474f7636873ab4e44594305a12e"
+
+[[files]]
 file = "config/fancymenu/customization/modpack_changelog_2.1_layout.txt"
-hash = "892cff022f346ce18c893cb23c2d9825c2fab9a494f00c14f4288e74045bae25"
+hash = "fad11ea121cd7a7ee850d383a61200cd9a3a23826c5c677a95762ce6f4faccc1"
 
 [[files]]
 file = "config/fancymenu/customization/title_screen_layout.txt"
-hash = "08b167bd381f830bb380f0f652b073a557ee08e1cd6ae2ef882c6615014f3ab4"
+hash = "2bf739ee17f21021f74759d7f9c46aa42b57dd2c92019ec2d05e4cca643b640f"
 
 [[files]]
 file = "config/fancymenu/customization/universal_astral_lakes.txt"
@@ -494,7 +498,7 @@ hash = "6954379d658fdf496f162792a3244f0f08635858ed4b0553a718a7ef63b8a620"
 
 [[files]]
 file = "config/fancymenu/user_variables.db"
-hash = "bd0616dbd61e601519cb98f4394f7dbcdf0f68dcae0a747f11c084ccc7af0130"
+hash = "2f25574a6a01cca45b0917f910ef5421fc6e5e76a3cf163d48a84fc33e721019"
 
 [[files]]
 file = "config/farmersdelight.json"
@@ -546,7 +550,7 @@ hash = "644e3849afa423e8e23444fd4a7c70d2c1ed83b222b34aea9a52816fba66bcf9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/6_raow.snbt"
-hash = "f2e59b2bd0cf452abd7b1392167dd53b8f3f1ecb3388ba73b3e6d7144664e90e"
+hash = "6e05f9ea1169082926ff223fc9449ccc211f2acd9b8a6e6fa8e3dd929fccfe34"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/assorted_goals.snbt"
@@ -578,7 +582,7 @@ hash = "871fdb3b29b1624f6a06c3dd0dcc7232a58874c26f92e74307bb4928872f3f1a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_5.snbt"
-hash = "9dbb2046493910c3cebcdc8308c95e58946110fec2f60f46b45cb18fffddcac2"
+hash = "16f161090684dfea434baaf5a4289e2001e8bd37c7c5764a45632dca5f744a50"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/read_the_questbook.snbt"
@@ -926,7 +930,7 @@ hash = "95a653a5edbff246ac6d724a40786c91de418b59d7c853ec8d9f279f76f84680"
 
 [[files]]
 file = "config/tconstruct-client.toml"
-hash = "5a79158cf8418b47f3ef2d75039b7ba86b249fb3497d297436e270e14d76a934"
+hash = "e8ef19b80de28df320d46df98921fd8b34f2736e66117f6251e7a739016f6529"
 
 [[files]]
 file = "config/tconstruct-common.toml"
@@ -3658,11 +3662,11 @@ hash = "b7c816cdb272a04686bd3f048928ad54b6c49e081993098fd0bd91e5e8985a53"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/worldgen/biome/infernal_venus_barrens.json"
-hash = "2bc6f53cfc4f91b5443859b892d31e6eac5cef46fcde7109b8c693f13b483504"
+hash = "89d24de07831ae0f475a636c717379681ec634af7797654b3d4dba32c1b2d9c9"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/worldgen/biome/lunar_wastelands.json"
-hash = "758714976282eff11f5571ebe9f131492cf80270b735b7ac7335731862003277"
+hash = "f774a4405bfd5094578e98291a9939b34d55dbe2796db5e817f343766c75ec8c"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/ad_astra/worldgen/biome/martian_canyon_creek.json"
@@ -3969,8 +3973,28 @@ file = "global_packs/required_data/zLaky Core/data/astralgenerators/recipes/amal
 hash = "489898143da589dd86f5f329c8dbc5d5abaed3a30810e4716da01298ec23659b"
 
 [[files]]
-file = "global_packs/required_data/zLaky Core/data/astralgenerators/recipes/assembler/test.json"
-hash = "cafcb6d4482bac477e07ddc69567b02d384a7ac5038f5da7887f1d258bf652d1"
+file = "global_packs/required_data/zLaky Core/data/astralgenerators/recipes/assembler/convergence_core.json"
+hash = "7fd6c0fa12ab753430a19a280a080b908c685a62035973a11e903cca270b34a0"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/astralgenerators/recipes/assembler/fluid_boiler.json"
+hash = "2ada4c26e3a2c83f7d12df48fb64f1ae12b07eb414508e07c373b6c8c0902d13"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/astralgenerators/recipes/assembler/fusion_reactor.json"
+hash = "42ef6629781bee43401ee9e3c02fceb3a4b1a14936af9b215bd3aac3befdf7bd"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/astralgenerators/recipes/assembler/particle_accelerator.json"
+hash = "b40a6edefb120d76c97ae8b421309676f45eddae4687eb7202b139571964aa3f"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/astralgenerators/recipes/assembler/solid_boiler.json"
+hash = "48eebe66835dd4f77d49564f27731516f4ff294310fbfed1cf1b891868b36a7a"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/astralgenerators/recipes/assembler/steam_turbine.json"
+hash = "74c3739e66b5d0ffd8f87b3be09602d8c7426acb0fb7096d24de3373ea0170ad"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/astralgenerators/recipes/boiler/steam_from_fuel.json"
@@ -5125,6 +5149,14 @@ file = "global_packs/required_data/zLaky Core/data/createbigcannons/block_recipe
 hash = "821c7746e72ce9b2119115630d5c18f16ff79f1b17587c5c5993b9d16cdb644a"
 
 [[files]]
+file = "global_packs/required_data/zLaky Core/data/createbigcannons/loot_tables/blocks/nethersteel_screw_breech.json"
+hash = "9948352bac44a50ba9533ad9f6157d3f741852eaad22d19c9e01c3b8edd9a110"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/createbigcannons/loot_tables/blocks/steel_screw_breech.json"
+hash = "5b77bcf23598c1337d803d9e3cc7cd7fc08743690879d40bcb316919e2e62e33"
+
+[[files]]
 file = "global_packs/required_data/zLaky Core/data/createbigcannons/recipes/compacting/forge_nethersteel_ingot.json"
 hash = "a10ecb403aa5f6a6f8f673b5684dd44618a574bc77a6bf20fd62e6ed8d3fbb1a"
 
@@ -5870,7 +5902,7 @@ hash = "555fce940cbf1cf05dfbc6608adafa1242e98d01820bd4644acc5c07cc9e2591"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/minecraft/worldgen/biome/basalt_deltas.json"
-hash = "beac64f208a88c1a2a1c6129dbe327b0677a513f163b181dd4694952b0723c81"
+hash = "98898d4be52f2587df22cb23edd7e20ae5c9809b1555bb4bbfbb7db62d5e70e1"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/minecraft/worldgen/biome/snowy_slopes.json"
@@ -14458,7 +14490,7 @@ hash = "8c5164f2a71800f6689566fa863ed2145b2d48b0c4f172a03208ff97faf47c06"
 
 [[files]]
 file = "kubejs/server_scripts/astral_generators.js"
-hash = "44598b8921bafea35ce1b03fde52d2985e23b66fba1cc67d4fe923b8f3b70fdb"
+hash = "d8c32dd6d7e641791c41e13c7e1fb86e3ce74fa29bdc748cf5ea8cc7f4f7fd25"
 
 [[files]]
 file = "kubejs/server_scripts/astral_signals_crafting.js"
@@ -14478,11 +14510,15 @@ hash = "cd5c8ccbcbb6fac0913c504b2241f361f6b4b8f422111c934636d101732604d4"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
-hash = "032598fad738b846fe4cb64720e5b26930adfc597d8ce115303ad9cce2a84bb2"
+hash = "288cfc1032cfd05812190e3b4defb77accdd3192f1f2f1d0598829a4d499431c"
 
 [[files]]
 file = "kubejs/server_scripts/createaddons.js"
 hash = "3d25fbc7eebba3b3fc689af80450025e75e29c825e16d1d1266c1da2b578051b"
+
+[[files]]
+file = "kubejs/server_scripts/crowsrecipes.js"
+hash = "ddfae19c0d57de2f12305cc9aff9c5c1a1bb7ddc4453c093a5a5fe7e5b388048"
 
 [[files]]
 file = "kubejs/server_scripts/crushing.js"
@@ -14582,7 +14618,7 @@ hash = "3d0d14d9f4dc930b87c4a49be8411c63b9a6e871acef359b8d5aec0098bb310a"
 
 [[files]]
 file = "kubejs/server_scripts/tags/wrench.js"
-hash = "1b2f0eb8e80cdad4cd17c2c2176eb285b3734ceefb55b0b6f55ea3add16caa7c"
+hash = "915598e35e10b7fae6f5cac0378e3cfb85b5c145b3fe57301ca6fce3799893aa"
 
 [[files]]
 file = "kubejs/server_scripts/tconstruct.js"
@@ -14610,7 +14646,7 @@ hash = "3dbc60829581e44c57b337bafaee2dfa0b66fe83d3573030419be46d12af50e7"
 
 [[files]]
 file = "kubejs/startup_scripts/fluid_registry.js"
-hash = "fe2d692cf4620a48e397f7dbef5e96de072edaf77240619df61bdc02d12fd62b"
+hash = "6d763aa6b59f72e849843cb84b2b1439c64374c2b8577d13a8ccca1a63df3f23"
 
 [[files]]
 file = "kubejs/startup_scripts/item_registry.js"
@@ -14618,7 +14654,7 @@ hash = "063141897cb63795a7d88e3889e67ec98e72f2b5907b228c6b8b835f32dbd58d"
 
 [[files]]
 file = "kubejs/startup_scripts/item_tooltip.js"
-hash = "cc43a6c1f69d5d8cba9f54d6e82497507e95af3800a995995edc6708a8ab196f"
+hash = "86f1968bea4a3dede5592dcfa1c481c0e81b8c37d3e6635a6c824a981ce82bf0"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
@@ -14675,7 +14711,7 @@ metafile = true
 
 [[files]]
 file = "mods/astral-generators-for-create-astral.pw.toml"
-hash = "f78fabbc3e5ff897dd048b74f780c0aa16f74bb108667676859513953790ec59"
+hash = "03fb23379a9d35f22af6b4b310bd2dcd230380224a6c90b383e6ec3f0e3f71ce"
 metafile = true
 
 [[files]]
@@ -14789,6 +14825,11 @@ metafile = true
 [[files]]
 file = "mods/cit-resewn.pw.toml"
 hash = "a6039ab39cf62d93d2e98af97dbe3b32427f6d8fe5b18fb7de827e4d619ade0c"
+metafile = true
+
+[[files]]
+file = "mods/cloth-config-legacy.pw.toml"
+hash = "ebb8d0a31f63dfb0d248ff7748cebe42913f5541bb0e2b44346ca4b5d1d7544d"
 metafile = true
 
 [[files]]
@@ -15404,6 +15445,26 @@ hash = "b518d8c6c92ebe8ed1ee86c69211453dace7a77a48f688546bf0e688f93e8287"
 metafile = true
 
 [[files]]
+file = "mods/roughly-enough-loot-tables.pw.toml"
+hash = "0006c5a3520cf4e6f2868ceb18fa81c9878fe3adea4b5fc7fef51c0250843330"
+metafile = true
+
+[[files]]
+file = "mods/roughly-enough-professions-rep.pw.toml"
+hash = "8c0488e4258f43263794f8b09a4c3361622e319ca250b2b1926e3c953eec858c"
+metafile = true
+
+[[files]]
+file = "mods/roughly-enough-resources.pw.toml"
+hash = "d5b6ecde4992d8515c9fd1b2ede3b03f6fae320eb1e91c1607fd94dd58f10c1a"
+metafile = true
+
+[[files]]
+file = "mods/roughly-enough-trades.pw.toml"
+hash = "53335e3c29fbb36237257cfae9314f0be065cf83d759f5105a95009e70505c34"
+metafile = true
+
+[[files]]
 file = "mods/searchlight.pw.toml"
 hash = "f81345d6ba552bd53a82d7f75237973687875d3f95a17195cfdb315f3aa2b4a7"
 metafile = true
@@ -15453,8 +15514,9 @@ hash = "c663a06590fdf49af5432b627e1bc2833d9873cfaa42d11e7438dfcf6447b0d7"
 metafile = true
 
 [[files]]
-file = "mods/starei-1.0.0.jar"
-hash = "339cf73aac5c581570ff5fba960d9627595109c6121a5324e2d3c3b4d3509f82"
+file = "mods/starei.pw.toml"
+hash = "047a0ab6490df3725901e1e62e1d4436c7a96a9035f770488d674d65a71af945"
+metafile = true
 
 [[files]]
 file = "mods/starlight.pw.toml"
@@ -29218,7 +29280,7 @@ hash = "ddaed1f475cb36918b8bbefaeb691b9037fa2e22a4195805999edaad0469e5c4"
 
 [[files]]
 file = "resources/createastral/lang/en_us.json"
-hash = "414725946fea923193a49028fff85289973cf894107b24648fd55b8eff3e258f"
+hash = "8ee9b1f5fbf17fe4d699d33ed8ddcda17f74b8d97a187424dd4154bf3f0d5d48"
 
 [[files]]
 file = "resources/createastral/lang/fr_fr.json"
