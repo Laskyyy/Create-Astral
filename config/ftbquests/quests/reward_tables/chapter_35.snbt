@@ -1,41 +1,119 @@
 {
 	id: "170876D9D871D1C5"
 	order_index: 4
-	title: "Loot Crate: AE2"
+	title: "{ftbquests.reward_tables.chapter_35.title}"
 	loot_size: 1
 	use_title: true
 	rewards: [
-		{ item: "ae2:charged_certus_quartz_crystal", count: 2 }
-		{ item: "ae2:name_press", weight: 2 }
-		{ item: "ae2:fluix_pearl" }
-		{ item: "ae2:engineering_processor_press", weight: 2 }
-		{ item: "ae2:basic_card" }
-		{ item: "ae2:item_cell_housing" }
-		{ item: "ae2:sky_dust", count: 7 }
-		{ item: "ae2:portable_item_cell_1k" }
-		{ item: "ae2:portable_fluid_cell_1k" }
-		{ item: "ae2:fluix_crystal" }
-		{ item: "ae2:printed_engineering_processor" }
-		{ item: "ae2:fluid_cell_housing" }
-		{ item: "ae2:white_paint_ball", count: 6 }
-		{ item: "ae2:calculation_processor_press", weight: 2 }
-		{ item: "ae2:printed_logic_processor" }
-		{ item: "ae2:white_covered_cable", count: 4 }
-		{ item: "ae2:white_covered_dense_cable", count: 4 }
-		{ item: "ae2:monitor" }
-		{ item: "ae2:crafting_terminal" }
-		{ item: "ae2:blank_pattern" }
-		{ item: "ae2:white_smart_cable", count: 8 }
-		{ item: "ae2:biometric_card" }
-		{ item: "ae2:certus_quartz_crystal", count: 6 }
-		{ item: "ae2:fluix_dust", count: 2 }
-		{ item: "ae2:logic_processor_press", weight: 2 }
-		{ item: "ae2:printed_calculation_processor" }
-		{ item: "ae2:silicon_press", weight: 2 }
-		{ item: "ae2:printed_silicon" }
-		{ item: "ae2:white_glass_cable", count: 4 }
-		{ item: "ae2:quartz_fiber", count: 4 }
-		{ item: "ae2:certus_quartz_dust", count: 4 }
+		{
+			item: "ae2:charged_certus_quartz_crystal"
+			count: 2
+		}
+		{
+			item: "ae2:name_press"
+			weight: 2
+		}
+		{
+			item: "ae2:fluix_pearl"
+		}
+		{
+			item: "ae2:engineering_processor_press"
+			weight: 2
+		}
+		{
+			item: "ae2:basic_card"
+		}
+		{
+			item: "ae2:item_cell_housing"
+		}
+		{
+			item: "ae2:sky_dust"
+			count: 7
+		}
+		{
+			item: "ae2:portable_item_cell_1k"
+		}
+		{
+			item: "ae2:portable_fluid_cell_1k"
+		}
+		{
+			item: "ae2:fluix_crystal"
+		}
+		{
+			item: "ae2:printed_engineering_processor"
+		}
+		{
+			item: "ae2:fluid_cell_housing"
+		}
+		{
+			item: "ae2:white_paint_ball"
+			count: 6
+		}
+		{
+			item: "ae2:calculation_processor_press"
+			weight: 2
+		}
+		{
+			item: "ae2:printed_logic_processor"
+		}
+		{
+			item: "ae2:white_covered_cable"
+			count: 4
+		}
+		{
+			item: "ae2:white_covered_dense_cable"
+			count: 4
+		}
+		{
+			item: "ae2:monitor"
+		}
+		{
+			item: "ae2:crafting_terminal"
+		}
+		{
+			item: "ae2:blank_pattern"
+		}
+		{
+			item: "ae2:white_smart_cable"
+			count: 8
+		}
+		{
+			item: "ae2:biometric_card"
+		}
+		{
+			item: "ae2:certus_quartz_crystal"
+			count: 6
+		}
+		{
+			item: "ae2:fluix_dust"
+			count: 2
+		}
+		{
+			item: "ae2:logic_processor_press"
+			weight: 2
+		}
+		{
+			item: "ae2:printed_calculation_processor"
+		}
+		{
+			item: "ae2:silicon_press"
+			weight: 2
+		}
+		{
+			item: "ae2:printed_silicon"
+		}
+		{
+			item: "ae2:white_glass_cable"
+			count: 4
+		}
+		{
+			item: "ae2:quartz_fiber"
+			count: 4
+		}
+		{
+			item: "ae2:certus_quartz_dust"
+			count: 4
+		}
 	]
 	loot_crate: {
 		drops: {

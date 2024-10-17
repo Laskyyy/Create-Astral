@@ -1,5 +1,5 @@
 {
-  "name": "Slime Furnace",
+  "name": "custommachinery.createastral.slime_furnace",
   "appearance": {
     "block": "createastral:slime_furnace_dummy",
     "running": {
@@ -42,7 +42,7 @@
       "type": "custommachinery:slot"
     },
     {
-      "text": "Slime Furnace",
+      "text": "custommachinery.createastral.slime_furnace.text",
       "x": 7,
       "y": 5,
       "type": "custommachinery:text"

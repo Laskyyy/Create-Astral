@@ -1,16 +1,39 @@
 {
 	id: "184075C9E8247561"
 	order_index: 6
-	title: "Loot Crate: Chapter 5-6"
+	title: "{ftbquests.reward_tables.chapter_5.title}"
 	loot_size: 1
 	use_title: true
 	rewards: [
-		{ item: "compressor:quadruple_compressed_andesite", weight: 2 }
-		{ item: "farmersdelight:rich_soil", count: 8, weight: 2 }
-		{ item: "techreborn:lead_ingot", count: 16, weight: 2 }
-		{ item: "ad_astra:ostrum_ingot", count: 8, weight: 2 }
-		{ item: "minecraft:gold_block", count: 8, weight: 2 }
-		{ item: "passivepiglins:piglin_coin", count: 4, weight: 2 }
+		{
+			item: "compressor:quadruple_compressed_andesite"
+			weight: 2
+		}
+		{
+			item: "farmersdelight:rich_soil"
+			count: 8
+			weight: 2
+		}
+		{
+			item: "techreborn:lead_ingot"
+			count: 16
+			weight: 2
+		}
+		{
+			item: "ad_astra:ostrum_ingot"
+			count: 8
+			weight: 2
+		}
+		{
+			item: "minecraft:gold_block"
+			count: 8
+			weight: 2
+		}
+		{
+			item: "passivepiglins:piglin_coin"
+			count: 4
+			weight: 2
+		}
 		{
 			item: {
 				id: "tconstruct:large_plate"
@@ -22,11 +45,31 @@
 			count: 8
 			weight: 2
 		}
-		{ item: "techreborn:steel_dust", count: 8, weight: 2 }
-		{ item: "minecraft:ancient_debris", count: 8, weight: 2 }
-		{ item: "passivepiglins:piglin_fortune", count: 4, weight: 2 }
-		{ item: "ae2:certus_quartz_crystal", count: 32, weight: 2 }
-		{ item: "ae2:fluix_crystal", count: 32, weight: 2 }
+		{
+			item: "techreborn:steel_dust"
+			count: 8
+			weight: 2
+		}
+		{
+			item: "minecraft:ancient_debris"
+			count: 8
+			weight: 2
+		}
+		{
+			item: "passivepiglins:piglin_fortune"
+			count: 4
+			weight: 2
+		}
+		{
+			item: "ae2:certus_quartz_crystal"
+			count: 32
+			weight: 2
+		}
+		{
+			item: "ae2:fluix_crystal"
+			count: 32
+			weight: 2
+		}
 		{
 			item: {
 				id: "techreborn:lithium_ion_battery"
@@ -69,63 +112,222 @@
 			count: 2
 			weight: 2
 		}
-		{ item: "techreborn:basic_machine_frame", count: 8, weight: 2 }
-		{ item: "create:integrated_circuit", count: 16, weight: 2 }
-		{ item: "techreborn:electronic_circuit", count: 2 }
-		{ item: "techreborn:overclocker_upgrade", count: 2 }
-		{ item: "create:blaze_burner", count: 4, weight: 2 }
-		{ item: "techreborn:basic_machine_casing", count: 8, weight: 2 }
-		{ item: "techreborn:advanced_machine_casing", count: 4 }
-		{ item: "create:spout" }
-		{ item: "minecraft:blaze_powder", count: 8 }
-		{ item: "minecraft:blaze_rod", count: 4 }
-		{ item: "ad_astra:moon_stone", count: 4 }
-		{ item: "create:fluid_tank", count: 4 }
-		{ item: "create:smart_fluid_pipe", count: 2 }
-		{ item: "create:mechanical_pump", count: 2 }
-		{ item: "create:fluid_pipe", count: 8 }
-		{ item: "create:smart_chute" }
-		{ item: "create:encased_chain_drive", count: 2 }
-		{ item: "create:gearbox", count: 4 }
-		{ item: "copycats:copycat_block", count: 12 }
-		{ item: "createbigcannons:mortar_stone", count: 2 }
-		{ item: "createbigcannons:he_shell" }
-		{ item: "createbigcannons:solid_shot", count: 2 }
-		{ item: "createaddition:iron_rod", count: 7 }
-		{ item: "createaddition:copper_rod", count: 6 }
-		{ item: "createaddition:copper_spool", count: 4 }
-		{ item: "createaddition:gold_spool", count: 2 }
-		{ item: "create:experience_nugget", count: 10 }
-		{ item: "createaddition:zinc_sheet", count: 4 }
-		{ item: "create:copper_scaffolding", count: 16 }
-		{ item: "create:empty_blaze_burner" }
-		{ item: "create:crushed_raw_silver", count: 3 }
-		{ item: "create:iron_sheet", count: 6 }
-		{ item: "create:brass_sheet", count: 5 }
-		{ item: "create:copper_sheet", count: 9 }
-		{ item: "create:copper_nugget", count: 35 }
-		{ item: "create:brass_ingot", count: 8 }
-		{ item: "create:andesite_alloy", count: 14 }
-		{ item: "create:stockpile_switch" }
-		{ item: "create:brass_tunnel" }
-		{ item: "create:brass_funnel" }
-		{ item: "create:rotation_speed_controller" }
-		{ item: "create:integrated_circuit", count: 2 }
-		{ item: "create:sequenced_gearshift" }
-		{ item: "create:mechanical_crafter" }
-		{ item: "create:copper_casing", count: 8 }
-		{ item: "create:brass_casing", count: 6 }
-		{ item: "create:sail_frame", count: 7 }
-		{ item: "create:piston_extension_pole", count: 13 }
-		{ item: "createbigcannons:machine_gun_round", count: 8 }
-		{ item: "astralsignals:parallel_processor" }
-		{ item: "create:cogwheel", count: 4 }
-		{ item: "create:large_cogwheel", count: 3 }
-		{ item: "astralsignals:polyvinyl_sheet" }
-		{ item: "createastral:quadrocopter_blueprint" }
-		{ item: "createastral:biplane_blueprint" }
-		{ item: "createastral:airship_blueprint" }
-		{ item: "createastral:gyrodyne_blueprint" }
+		{
+			item: "techreborn:basic_machine_frame"
+			count: 8
+			weight: 2
+		}
+		{
+			item: "create:integrated_circuit"
+			count: 16
+			weight: 2
+		}
+		{
+			item: "techreborn:electronic_circuit"
+			count: 2
+		}
+		{
+			item: "techreborn:overclocker_upgrade"
+			count: 2
+		}
+		{
+			item: "create:blaze_burner"
+			count: 4
+			weight: 2
+		}
+		{
+			item: "techreborn:basic_machine_casing"
+			count: 8
+			weight: 2
+		}
+		{
+			item: "techreborn:advanced_machine_casing"
+			count: 4
+		}
+		{
+			item: "create:spout"
+		}
+		{
+			item: "minecraft:blaze_powder"
+			count: 8
+		}
+		{
+			item: "minecraft:blaze_rod"
+			count: 4
+		}
+		{
+			item: "ad_astra:moon_stone"
+			count: 4
+		}
+		{
+			item: "create:fluid_tank"
+			count: 4
+		}
+		{
+			item: "create:smart_fluid_pipe"
+			count: 2
+		}
+		{
+			item: "create:mechanical_pump"
+			count: 2
+		}
+		{
+			item: "create:fluid_pipe"
+			count: 8
+		}
+		{
+			item: "create:smart_chute"
+		}
+		{
+			item: "create:encased_chain_drive"
+			count: 2
+		}
+		{
+			item: "create:gearbox"
+			count: 4
+		}
+		{
+			item: "copycats:copycat_block"
+			count: 12
+		}
+		{
+			item: "createbigcannons:mortar_stone"
+			count: 2
+		}
+		{
+			item: "createbigcannons:he_shell"
+		}
+		{
+			item: "createbigcannons:solid_shot"
+			count: 2
+		}
+		{
+			item: "createaddition:iron_rod"
+			count: 7
+		}
+		{
+			item: "createaddition:copper_rod"
+			count: 6
+		}
+		{
+			item: "createaddition:copper_spool"
+			count: 4
+		}
+		{
+			item: "createaddition:gold_spool"
+			count: 2
+		}
+		{
+			item: "create:experience_nugget"
+			count: 10
+		}
+		{
+			item: "createaddition:zinc_sheet"
+			count: 4
+		}
+		{
+			item: "create:copper_scaffolding"
+			count: 16
+		}
+		{
+			item: "create:empty_blaze_burner"
+		}
+		{
+			item: "create:crushed_raw_silver"
+			count: 3
+		}
+		{
+			item: "create:iron_sheet"
+			count: 6
+		}
+		{
+			item: "create:brass_sheet"
+			count: 5
+		}
+		{
+			item: "create:copper_sheet"
+			count: 9
+		}
+		{
+			item: "create:copper_nugget"
+			count: 35
+		}
+		{
+			item: "create:brass_ingot"
+			count: 8
+		}
+		{
+			item: "create:andesite_alloy"
+			count: 14
+		}
+		{
+			item: "create:stockpile_switch"
+		}
+		{
+			item: "create:brass_tunnel"
+		}
+		{
+			item: "create:brass_funnel"
+		}
+		{
+			item: "create:rotation_speed_controller"
+		}
+		{
+			item: "create:integrated_circuit"
+			count: 2
+		}
+		{
+			item: "create:sequenced_gearshift"
+		}
+		{
+			item: "create:mechanical_crafter"
+		}
+		{
+			item: "create:copper_casing"
+			count: 8
+		}
+		{
+			item: "create:brass_casing"
+			count: 6
+		}
+		{
+			item: "create:sail_frame"
+			count: 7
+		}
+		{
+			item: "create:piston_extension_pole"
+			count: 13
+		}
+		{
+			item: "createbigcannons:machine_gun_round"
+			count: 8
+		}
+		{
+			item: "astralsignals:parallel_processor"
+		}
+		{
+			item: "create:cogwheel"
+			count: 4
+		}
+		{
+			item: "create:large_cogwheel"
+			count: 3
+		}
+		{
+			item: "astralsignals:polyvinyl_sheet"
+		}
+		{
+			item: "createastral:quadrocopter_blueprint"
+		}
+		{
+			item: "createastral:biplane_blueprint"
+		}
+		{
+			item: "createastral:airship_blueprint"
+		}
+		{
+			item: "createastral:gyrodyne_blueprint"
+		}
 	]
 	loot_crate: {
 		drops: {

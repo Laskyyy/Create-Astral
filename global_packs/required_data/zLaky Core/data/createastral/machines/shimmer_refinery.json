@@ -1,5 +1,5 @@
 {
-    "name": "Shimmer Refinery",
+    "name": "custommachinery.createastral.shimmer_refinery",
     "appearance": {
         "block": "yttr:void_filter",
         "running": {
@@ -52,7 +52,7 @@
             "type": "custommachinery:status"
         },
         {
-            "text": "Shimmer Refinery",
+            "text": "custommachinery.createastral.shimmer_refinery.text",
             "x": 7,
             "y": 5,
             "type": "custommachinery:text"
