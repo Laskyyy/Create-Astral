@@ -162,13 +162,36 @@ onEvent("recipes", (event) => {
         .transitionalItem("createastral:seitan")
         .loops(1);
 
+        event.recipes
+        .createSequencedAssembly( // If you need some head, drill some bone
+            ["tconstruct:blaze_head"],
+            ["minecraft:skeleton_skull"],
+            [
+                event.recipes.createDeploying("minecraft:skeleton_skull", [
+                    "minecraft:skeleton_skull",
+                    "minecraft:blaze_powder",
+                ]),
+
+                event.recipes.createFilling("minecraft:skeleton_skull",
+                ["minecraft:skeleton_skull",{ fluid: "tconstruct:blazing_blood", amount: 100 * mB }]),
+                
+                event.recipes.createFilling("minecraft:skeleton_skull",
+                ["minecraft:skeleton_skull",{ fluid: "kubejs:shimmer", amount: 50 * mB }]),
+                
+                event.recipes.createPressing("minecraft:skeleton_skull",
+                "minecraft:skeleton_skull"),
+            ]
+        )
+        .transitionalItem("minecraft:skeleton_skull")
+        .loops(1);
+
 const mixings = [
             {
                 output: {fluid: "tconstruct:blood", amount: BUCKET },
                 input: [
                     "2x minecraft:beetroot",
-                    { fluid: "kubejs:tomato_sauce_fluid", amount: 500 * mB },
-                    { fluid: "kubejs:shimmer", amount: 500 * mB },
+                    { fluid: "kubejs:tomato_sauce_fluid", amount: 900 * mB },
+                    { fluid: "kubejs:shimmer", amount: 100 * mB },
                 ],
                 heat: "heated",
                 time: null,  //Vegan BLOOD
@@ -188,16 +211,22 @@ const mixings = [
                 ],
                 heat: "",
                 time: null,
+            },{
+                output: {fluid: "tconstruct:blazing_blood", amount: BUCKET },
+                input: [
+                    "minecraft:blaze_powder",
+                    { fluid: "tconstuct:blood", amount: BUCKET },
+                ],
+                heat: "superheated",
+                time: null,  //Vegan BLOOD
             }];
             for (const mixing of mixings) {
                 event.recipes
                     .createMixing(mixing.output, mixing.input)
                     .heatRequirement(mixing.heat)
-                    .processingTime(mixing.time ?? 100);
-            
+                    .processingTime(mixing.time ?? 100);}
 
                     event.recipes.createSplashing("minecraft:mossy_cobblestone", 'minecraft:cobblestone') //easy mossy cobble for moss
                     event.recipes.createSplashing("minecraft:mossy_stone_bricks", 'minecraft:stone_bricks')
-                    
-                };
+                ;
 })

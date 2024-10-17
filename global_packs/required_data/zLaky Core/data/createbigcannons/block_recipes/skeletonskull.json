@@ -1,0 +1,6 @@
+{
+    "type": "createbigcannons:drill_boring",
+    "input": "minecraft:bone_block",
+    "result": "minecraft:skeleton_skull",
+    "obey_facing_or_axis": false
+  }
