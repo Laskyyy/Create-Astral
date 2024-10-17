@@ -1,5 +1,5 @@
 {
-    "type": "tconstruct:ore_melting",
+    "type": "tconstruct:melting",
     "rate": "metal",
     "ingredient": {
       "item": "create:blaze_burner"
