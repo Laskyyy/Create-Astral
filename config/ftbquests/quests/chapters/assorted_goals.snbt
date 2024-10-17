@@ -3,29 +3,31 @@
 	group: ""
 	order_index: 1
 	filename: "assorted_goals"
-	title: "{chapter.1.title}"
+	title: "{ftbquests.chapter.assorted_goals.title}"
 	icon: "minecraft:furnace"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	images: [{
-		x: -5.0d
-		y: 6.5d
-		width: 6.0d
-		height: 3.5d
-		rotation: 0.0d
-		image: "createastral:textures/item/logos_binted.png"
-		hover: [ ]
-		click: ""
-		dev: false
-		corner: false
-	}]
+	images: [
+		{
+			x: -5.0d
+			y: 6.5d
+			width: 6.0d
+			height: 3.5d
+			rotation: 0.0d
+			image: "createastral:textures/item/logos_binted.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
 	quests: [
 		{
-			title: "{chapter.1.quest.1.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests0.title}"
 			x: 0.5d
 			y: 12.0d
-			subtitle: "{chapter.1.quest.1.subtitle}"
-			description: ["The armor set provides slightly better protection than Golden Armor, and has way more durability."]
+			subtitle: "{ftbquests.chapter.assorted_goals.quests0.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests0.description}"]
 			dependencies: ["11ACD707D7284920"]
 			id: "327EA8E115211B55"
 			tasks: [
@@ -74,63 +76,69 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "43F5FD04C1D31C33"
-				type: "item"
-				item: {
-					id: "mcdw:staff_battlestaff"
-					Count: 1b
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: "43F5FD04C1D31C33"
+					type: "item"
+					item: {
+						id: "mcdw:staff_battlestaff"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
 					}
 				}
-			}]
+			]
 		}
 		{
 			x: -5.5d
 			y: 12.0d
-			subtitle: "{chapter.1.quest.2.subtitle}"
+			subtitle: "{ftbquests.chapter.assorted_goals.quests1.subtitle}"
 			description: [
-				"Use the &6Part Builder&r to create tool parts!"
+				"{ftbquests.chapter.assorted_goals.quests1.description0}"
 				""
-				"Place in some Patterns and a material you want to make the part out of, and then choose your part!"
+				"{ftbquests.chapter.assorted_goals.quests1.description2}"
 			]
 			dependencies: ["1AC4A5B8D86CAB0F"]
 			id: "75B36BB7FE771333"
-			tasks: [{
-				id: "0793DCFD2EA88A6B"
-				type: "item"
-				item: {
-					id: "tconstruct:part_builder"
-					Count: 1b
-					tag: {
-						texture: "minecraft:oak_planks"
+			tasks: [
+				{
+					id: "0793DCFD2EA88A6B"
+					type: "item"
+					item: {
+						id: "tconstruct:part_builder"
+						Count: 1b
+						tag: {
+							texture: "minecraft:oak_planks"
+						}
 					}
 				}
-			}]
+			]
 		}
 		{
 			x: -6.0d
 			y: 10.5d
-			subtitle: "{chapter.1.quest.3.subtitle}"
+			subtitle: "{ftbquests.chapter.assorted_goals.quests2.subtitle}"
 			description: [
-				"Using the &6Tinker Station&r, you can assemble your tools out of parts."
+				"{ftbquests.chapter.assorted_goals.quests2.description0}"
 				""
-				"Try to make a &6Wooden Pickaxe&r out of wooden parts first."
+				"{ftbquests.chapter.assorted_goals.quests2.description2}"
 				""
-				"Hephaestus tools can be &6repaired&r in the Tinker Station using the material used for the \"head\"."
+				"{ftbquests.chapter.assorted_goals.quests2.description4}"
 				""
-				"Alternatively, you can make &6Repair Kits&r to repair items using the crafting grid."
+				"{ftbquests.chapter.assorted_goals.quests2.description6}"
 				""
-				"Later on, you will also be able to apply &6modifiers&r to improve the tool, for example to mine faster, to deal more damage, or to gain new abilities."
+				"{ftbquests.chapter.assorted_goals.quests2.description8}"
 			]
 			dependencies: ["1AC4A5B8D86CAB0F"]
 			id: "584489E0781D5C0C"
-			tasks: [{
-				id: "7E9FEA64819569DC"
-				type: "item"
-				item: "tconstruct:tinker_station"
-			}]
+			tasks: [
+				{
+					id: "7E9FEA64819569DC"
+					type: "item"
+					item: "tconstruct:tinker_station"
+				}
+			]
 		}
 		{
 			icon: {
@@ -142,21 +150,25 @@
 			}
 			x: -4.5d
 			y: 11.5d
-			subtitle: "{chapter.1.quest.4.subtitle}"
-			description: ["Make any Hephaestus tool part in the Part Builder."]
+			subtitle: "{ftbquests.chapter.assorted_goals.quests3.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests3.description}"]
 			dependencies: ["75B36BB7FE771333"]
 			id: "29AF19492CFCB2DB"
-			tasks: [{
-				id: "0939A1A78118E737"
-				type: "advancement"
-				advancement: "tconstruct:tools/make_part"
-				criterion: ""
-			}]
-			rewards: [{
-				id: "292903F1AB1DB1C2"
-				type: "item"
-				item: "farmersdelight:fruit_salad"
-			}]
+			tasks: [
+				{
+					id: "0939A1A78118E737"
+					type: "advancement"
+					advancement: "tconstruct:tools/make_part"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "292903F1AB1DB1C2"
+					type: "item"
+					item: "farmersdelight:fruit_salad"
+				}
+			]
 		}
 		{
 			icon: {
@@ -168,11 +180,11 @@
 			}
 			x: -4.5d
 			y: 10.0d
-			subtitle: "{chapter.1.quest.5.subtitle}"
+			subtitle: "{ftbquests.chapter.assorted_goals.quests4.subtitle}"
 			description: [
-				"Now that you have some tools, you can now gather materials needed for your next advancement - the &6Furnace&r!"
+				"{ftbquests.chapter.assorted_goals.quests4.description0}"
 				""
-				"As a reward, you'll receive a &6Tinker's Encyclopedia&r - a compendium of currently known tools from books you obtained so far, with detailed explanation about the tool traits."
+				"{ftbquests.chapter.assorted_goals.quests4.description2}"
 			]
 			dependencies: [
 				"29AF19492CFCB2DB"
@@ -180,12 +192,14 @@
 			]
 			size: 1.25d
 			id: "0FC0B4E8EC58F791"
-			tasks: [{
-				id: "2722741D5C4A6C82"
-				type: "advancement"
-				advancement: "tconstruct:tools/tinker_tool"
-				criterion: ""
-			}]
+			tasks: [
+				{
+					id: "2722741D5C4A6C82"
+					type: "advancement"
+					advancement: "tconstruct:tools/tinker_tool"
+					criterion: ""
+				}
+			]
 			rewards: [
 				{
 					id: "660CC63F25D4B6C5"
@@ -200,45 +214,49 @@
 			]
 		}
 		{
-			title: "{chapter.1.quest.6.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests5.title}"
 			x: 1.5d
 			y: 11.0d
-			subtitle: "{chapter.1.quest.6.subtitle}"
-			description: ["Don't like Hephaestus? You can make vanilla-style &6Copper Tools&r using Ingots."]
+			subtitle: "{ftbquests.chapter.assorted_goals.quests5.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests5.description}"]
 			dependencies: ["11ACD707D7284920"]
 			optional: true
 			id: "01B4EDC69A4BDBBD"
-			tasks: [{
-				id: "462E8991B3305276"
-				type: "item"
-				item: {
-					id: "createastral:copper_pickaxe"
-					Count: 1b
-					tag: {
-						Damage: 0
+			tasks: [
+				{
+					id: "462E8991B3305276"
+					type: "item"
+					item: {
+						id: "createastral:copper_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
 					}
 				}
-			}]
+			]
 		}
 		{
-			title: "Fresh Furnace"
+			title: "{ftbquests.chapter.assorted_goals.quests6.title}"
 			x: -1.5d
 			y: 10.0d
 			shape: "rsquare"
-			subtitle: "A pioneer's first piece of industry..."
+			subtitle: "{ftbquests.chapter.assorted_goals.quests6.subtitle}"
 			description: [
-				"Now that you have a &6Furnace&r, you can start smelting!"
+				"{ftbquests.chapter.assorted_goals.quests6.description0}"
 				""
-				"Tip: Copper makes for a great Hephaestus tool material!"
+				"{ftbquests.chapter.assorted_goals.quests6.description2}"
 			]
 			dependencies: ["0FC0B4E8EC58F791"]
 			size: 1.25d
 			id: "601A619C6E96920A"
-			tasks: [{
-				id: "29288FDE98AD30BB"
-				type: "item"
-				item: "minecraft:furnace"
-			}]
+			tasks: [
+				{
+					id: "29288FDE98AD30BB"
+					type: "item"
+					item: "minecraft:furnace"
+				}
+			]
 			rewards: [
 				{
 					id: "5D6FD8197D731E3E"
@@ -254,24 +272,26 @@
 			]
 		}
 		{
-			title: "{chapter.1.quest.8.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests7.title}"
 			icon: "minecraft:copper_ingot"
 			x: 0.5d
 			y: 11.0d
-			description: ["&6Copper&r can be used in some utilities, as well as a great Hephaestus material!"]
+			description: ["{ftbquests.chapter.assorted_goals.quests7.description}"]
 			dependencies: ["601A619C6E96920A"]
 			id: "11ACD707D7284920"
-			tasks: [{
-				id: "091AFA0FDB6FB307"
-				type: "checkmark"
-				title: "{chapter.1.quest.8.task.1.title}"
-			}]
+			tasks: [
+				{
+					id: "091AFA0FDB6FB307"
+					type: "checkmark"
+					title: "{ftbquests.chapter.assorted_goals.quests7.tasks0.title}"
+				}
+			]
 		}
 		{
-			title: "{chapter.1.quest.9.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests8.title}"
 			x: -10.5d
 			y: 11.0d
-			description: ["{chapter.1.quest.9.description.1}"]
+			description: ["{ftbquests.chapter.assorted_goals.quests8.description}"]
 			dependencies: ["2CE5BB6A7B30CA4C"]
 			optional: true
 			id: "4F4C278C3A8C0281"
@@ -299,18 +319,20 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "70A134C16BEE9213"
-				type: "item"
-				item: "farmersdelight:vegetable_noodles"
-			}]
+			rewards: [
+				{
+					id: "70A134C16BEE9213"
+					type: "item"
+					item: "farmersdelight:vegetable_noodles"
+				}
+			]
 		}
 		{
-			title: "{chapter.1.quest.10.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests9.title}"
 			x: -1.5d
 			y: 11.5d
-			subtitle: "{chapter.1.quest.10.subtitle}"
-			description: ["Show your swag with a full set of &6Golden Armor&r."]
+			subtitle: "{ftbquests.chapter.assorted_goals.quests9.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests9.description}"]
 			dependencies: ["601A619C6E96920A"]
 			optional: true
 			id: "5E6B48D6A4254759"
@@ -386,39 +408,43 @@
 			]
 		}
 		{
-			title: "{chapter.1.quest.11.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests10.title}"
 			x: -5.25d
 			y: 16.5d
 			shape: "diamond"
-			subtitle: "{chapter.1.quest.11.subtitle}"
-			description: ["{chapter.1.quest.11.description.1}"]
+			subtitle: "{ftbquests.chapter.assorted_goals.quests10.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests10.description}"]
 			hide_dependency_lines: true
 			dependencies: ["0BCED0F8481E0C21"]
 			size: 1.5d
 			optional: true
 			id: "05E45A7D1C9927E5"
-			tasks: [{
-				id: "06BFB633FC06AF54"
-				type: "item"
-				item: "drinkbeer:beer_barrel"
-			}]
-			rewards: [{
-				id: "2FB3A079A96DE590"
-				type: "item"
-				item: "create:dough"
-				count: 3
-			}]
+			tasks: [
+				{
+					id: "06BFB633FC06AF54"
+					type: "item"
+					item: "drinkbeer:beer_barrel"
+				}
+			]
+			rewards: [
+				{
+					id: "2FB3A079A96DE590"
+					type: "item"
+					item: "create:dough"
+					count: 3
+				}
+			]
 		}
 		{
-			title: "{chapter.1.quest.13.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests11.title}"
 			x: -7.8078231292516875d
 			y: 13.244897959183653d
 			shape: "pentagon"
-			subtitle: "{chapter.1.quest.13.subtitle}"
+			subtitle: "{ftbquests.chapter.assorted_goals.quests11.subtitle}"
 			description: [
-				"&cWARNING!&r The Project Table is quite buggy, and can &lvoid items&r when multiple people are using it at the same time!"
+				"{ftbquests.chapter.assorted_goals.quests11.description0}"
 				""
-				"This will hopefully be fixed in a later version of the mod!"
+				"{ftbquests.chapter.assorted_goals.quests11.description2}"
 			]
 			min_required_dependencies: 1
 			dependency_requirement: "one_completed"
@@ -454,39 +480,43 @@
 		{
 			x: -6.5d
 			y: 11.5d
-			subtitle: "{chapter.1.quest.14.subtitle}"
+			subtitle: "{ftbquests.chapter.assorted_goals.quests12.subtitle}"
 			description: [
-				"&6Tinkers' Construct&r (or &6Hephaestus&r) is a mod that allows you to create tools out of parts!"
+				"{ftbquests.chapter.assorted_goals.quests12.description0}"
 				""
-				"Each material comes with a different trait, which gives the tool some sort of a special effect!"
+				"{ftbquests.chapter.assorted_goals.quests12.description2}"
 				""
-				"To get started, craft some &6Patterns&r - you'll need quite a few."
+				"{ftbquests.chapter.assorted_goals.quests12.description4}"
 				""
-				"As a reward, you'll receive a book that explains the basics of Hephaestus."
+				"{ftbquests.chapter.assorted_goals.quests12.description6}"
 			]
 			dependencies: ["0BCED0F8481E0C21"]
 			id: "1AC4A5B8D86CAB0F"
-			tasks: [{
-				id: "0A56270F3A56875F"
-				type: "item"
-				item: "tconstruct:pattern"
-				count: 3L
-			}]
-			rewards: [{
-				id: "1D969A2DAF5418C8"
-				type: "item"
-				item: "tconstruct:materials_and_you"
-			}]
+			tasks: [
+				{
+					id: "0A56270F3A56875F"
+					type: "item"
+					item: "tconstruct:pattern"
+					count: 3L
+				}
+			]
+			rewards: [
+				{
+					id: "1D969A2DAF5418C8"
+					type: "item"
+					item: "tconstruct:materials_and_you"
+				}
+			]
 		}
 		{
-			title: "{chapter.1.quest.15.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests13.title}"
 			x: -2.5d
 			y: 9.0d
-			subtitle: "{chapter.1.quest.15.subtitle}"
+			subtitle: "{ftbquests.chapter.assorted_goals.quests13.subtitle}"
 			description: [
-				"Time to grab some essentials: &6Iron, Tin and Copper&r."
+				"{ftbquests.chapter.assorted_goals.quests13.description0}"
 				""
-				"Make sure that you don't use a &7Pick&nadze&r though, as it can only mine Wood-tier blocks!"
+				"{ftbquests.chapter.assorted_goals.quests13.description2}"
 			]
 			dependencies: ["0FC0B4E8EC58F791"]
 			min_required_tasks: 1
@@ -513,71 +543,81 @@
 			]
 		}
 		{
-			title: "{chapter.1.quest.16.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests14.title}"
 			x: -9.0d
 			y: 10.0d
 			shape: "diamond"
-			subtitle: "{chapter.1.quest.16.subtitle}"
+			subtitle: "{ftbquests.chapter.assorted_goals.quests14.subtitle}"
 			description: [
-				"You'll need some of this Rice later on."
-				"You can cut fully grown Grass or Rice to get Straw!"
+				"{ftbquests.chapter.assorted_goals.quests14.description0}"
+				"{ftbquests.chapter.assorted_goals.quests14.description1}"
 			]
 			hide_dependency_lines: true
 			dependencies: ["0BCED0F8481E0C21"]
 			size: 1.5d
 			optional: true
 			id: "2CE5BB6A7B30CA4C"
-			tasks: [{
-				id: "5F1D78666FED176F"
-				type: "item"
-				item: "farmersdelight:stove"
-			}]
-			rewards: [{
-				id: "11032AC6D056CDC5"
-				type: "item"
-				item: "farmersdelight:rice"
-				count: 4
-			}]
+			tasks: [
+				{
+					id: "5F1D78666FED176F"
+					type: "item"
+					item: "farmersdelight:stove"
+				}
+			]
+			rewards: [
+				{
+					id: "11032AC6D056CDC5"
+					type: "item"
+					item: "farmersdelight:rice"
+					count: 4
+				}
+			]
 		}
 		{
-			title: "{chapter.1.quest.17.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests15.title}"
 			x: -10.5d
 			y: 10.0d
-			subtitle: "{chapter.1.quest.17.subtitle}"
-			description: ["There's a lot of new crops in Farmer's Delight, can you automate them all?"]
+			subtitle: "{ftbquests.chapter.assorted_goals.quests15.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests15.description}"]
 			dependencies: ["2CE5BB6A7B30CA4C"]
 			optional: true
 			id: "504201C234C38437"
-			tasks: [{
-				id: "2F0EB60847E4ECF7"
-				type: "item"
-				item: "farmersdelight:straw"
-			}]
-			rewards: [{
-				id: "4BB9B1AC0821A6AD"
-				type: "item"
-				item: "farmersdelight:straw"
-				count: 3
-			}]
+			tasks: [
+				{
+					id: "2F0EB60847E4ECF7"
+					type: "item"
+					item: "farmersdelight:straw"
+				}
+			]
+			rewards: [
+				{
+					id: "4BB9B1AC0821A6AD"
+					type: "item"
+					item: "farmersdelight:straw"
+					count: 3
+				}
+			]
 		}
 		{
 			x: -6.0d
 			y: 9.5d
-			subtitle: "&oIt's dangerous to go alone, make this!&r"
+			subtitle: "{ftbquests.chapter.assorted_goals.quests16.subtitle}"
 			description: [
-				"&6Traveler's Armor&r is a modifiable set of armor that is by default comparable to Golden Armor."
+				"{ftbquests.chapter.assorted_goals.quests16.description0}"
 				""
-				"Later on, you will be able to add modifiers to this set to improve armor's defense, your speed, your mining speed, etc."
+				"{ftbquests.chapter.assorted_goals.quests16.description2}"
 			]
 			dependencies: ["0FC0B4E8EC58F791"]
 			optional: true
 			id: "78E055160B11FC48"
-			tasks: [{
-				id: "100F661313FF3C14"
-				type: "advancement"
-				advancement: "tconstruct:tools/travelers_gear"
-				criterion: ""
-			}]
+			tasks: [
+				{
+					id: "100F661313FF3C14"
+					type: "advancement"
+					advancement: "tconstruct:tools/travelers_gear"
+					criterion: ""
+				}
+			]
 			rewards: [
 				{
 					id: "4D442FD95DEBC09A"
@@ -593,100 +633,118 @@
 			]
 		}
 		{
-			title: "{chapter.1.quest.20.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests17.title}"
 			x: -11.5d
 			y: 11.0d
 			dependencies: ["4F4C278C3A8C0281"]
 			optional: true
 			id: "6D072F2027D8DFCE"
-			tasks: [{
-				id: "072F87225B252EF0"
-				type: "item"
-				item: "minecraft:melon"
-				count: 64L
-			}]
-			rewards: [{
-				id: "70CEAFBC1ED06AAF"
-				type: "item"
-				item: "minecraft:copper_ore"
-				count: 25
-			}]
+			tasks: [
+				{
+					id: "072F87225B252EF0"
+					type: "item"
+					item: "minecraft:melon"
+					count: 64L
+				}
+			]
+			rewards: [
+				{
+					id: "70CEAFBC1ED06AAF"
+					type: "item"
+					item: "minecraft:copper_ore"
+					count: 25
+				}
+			]
 		}
 		{
-			title: "{chapter.1.quest.21.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests18.title}"
 			x: -10.5d
 			y: 12.0d
 			dependencies: ["4F4C278C3A8C0281"]
 			optional: true
 			id: "1645C544BEBC01EE"
-			tasks: [{
-				id: "1E76A2267860CAB1"
-				type: "item"
-				item: "minecraft:cactus"
-				count: 64L
-			}]
-			rewards: [{
-				id: "7EF1AFDAC31ED87C"
-				type: "item"
-				item: "minecraft:gold_ore"
-				count: 20
-			}]
+			tasks: [
+				{
+					id: "1E76A2267860CAB1"
+					type: "item"
+					item: "minecraft:cactus"
+					count: 64L
+				}
+			]
+			rewards: [
+				{
+					id: "7EF1AFDAC31ED87C"
+					type: "item"
+					item: "minecraft:gold_ore"
+					count: 20
+				}
+			]
 		}
 		{
-			title: "{chapter.1.quest.22.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests19.title}"
 			x: -11.5d
 			y: 12.0d
 			dependencies: ["4F4C278C3A8C0281"]
 			optional: true
 			id: "79886A5C435F29E0"
-			tasks: [{
-				id: "455B346FB9ADE2BB"
-				type: "item"
-				item: "minecraft:pumpkin"
-				count: 64L
-			}]
-			rewards: [{
-				id: "62BE7175BE9B0DED"
-				type: "item"
-				item: "minecraft:iron_ore"
-				count: 20
-			}]
+			tasks: [
+				{
+					id: "455B346FB9ADE2BB"
+					type: "item"
+					item: "minecraft:pumpkin"
+					count: 64L
+				}
+			]
+			rewards: [
+				{
+					id: "62BE7175BE9B0DED"
+					type: "item"
+					item: "minecraft:iron_ore"
+					count: 20
+				}
+			]
 		}
 		{
-			title: "{chapter.1.quest.23.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests20.title}"
 			x: -11.5d
 			y: 14.0d
 			hide_dependency_lines: true
 			dependencies: ["4F4C278C3A8C0281"]
 			optional: true
 			id: "513E187ADFD4F2A4"
-			tasks: [{
-				id: "1CB5135CDE0FEAB3"
-				type: "item"
-				item: "farmersdelight:carrot_crate"
-				count: 64L
-			}]
-			rewards: [{
-				id: "64C5214D379321F1"
-				type: "item"
-				item: "minecraft:deepslate_copper_ore"
-				count: 30
-			}]
+			tasks: [
+				{
+					id: "1CB5135CDE0FEAB3"
+					type: "item"
+					item: "farmersdelight:carrot_crate"
+					count: 64L
+				}
+			]
+			rewards: [
+				{
+					id: "64C5214D379321F1"
+					type: "item"
+					item: "minecraft:deepslate_copper_ore"
+					count: 30
+				}
+			]
 		}
 		{
-			title: "{chapter.1.quest.24.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests21.title}"
 			x: -13.5d
 			y: 14.5d
 			hide_dependency_lines: true
 			dependencies: ["4F4C278C3A8C0281"]
 			optional: true
 			id: "09A4CEF0AF68A055"
-			tasks: [{
-				id: "107F3E609ABD62F6"
-				type: "item"
-				item: "farmersdelight:potato_crate"
-				count: 64L
-			}]
+			tasks: [
+				{
+					id: "107F3E609ABD62F6"
+					type: "item"
+					item: "farmersdelight:potato_crate"
+					count: 64L
+				}
+			]
 			rewards: [
 				{
 					id: "3127F7CCD4E19F3F"
@@ -703,61 +761,71 @@
 			]
 		}
 		{
-			title: "{chapter.1.quest.25.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests22.title}"
 			x: -12.5d
 			y: 14.5d
 			hide_dependency_lines: true
 			dependencies: ["4F4C278C3A8C0281"]
 			optional: true
 			id: "6FF9501CDF19F0D5"
-			tasks: [{
-				id: "51D0686E879398CF"
-				type: "item"
-				item: "farmersdelight:beetroot_crate"
-				count: 64L
-			}]
-			rewards: [{
-				id: "52FC831AEA7F2A46"
-				type: "item"
-				item: "minecraft:deepslate_redstone_ore"
-				count: 25
-			}]
+			tasks: [
+				{
+					id: "51D0686E879398CF"
+					type: "item"
+					item: "farmersdelight:beetroot_crate"
+					count: 64L
+				}
+			]
+			rewards: [
+				{
+					id: "52FC831AEA7F2A46"
+					type: "item"
+					item: "minecraft:deepslate_redstone_ore"
+					count: 25
+				}
+			]
 		}
 		{
-			title: "{chapter.1.quest.26.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests23.title}"
 			x: -10.5d
 			y: 13.5d
 			hide_dependency_lines: true
 			dependencies: ["4F4C278C3A8C0281"]
 			optional: true
 			id: "1858F35E1B7128AA"
-			tasks: [{
-				id: "632EC9B47BD48D61"
-				type: "item"
-				item: "farmersdelight:rice_bag"
-				count: 64L
-			}]
-			rewards: [{
-				id: "19EF8ED55AE8ABED"
-				type: "item"
-				item: "minecraft:quartz"
-				count: 32
-			}]
+			tasks: [
+				{
+					id: "632EC9B47BD48D61"
+					type: "item"
+					item: "farmersdelight:rice_bag"
+					count: 64L
+				}
+			]
+			rewards: [
+				{
+					id: "19EF8ED55AE8ABED"
+					type: "item"
+					item: "minecraft:quartz"
+					count: 32
+				}
+			]
 		}
 		{
-			title: "{chapter.1.quest.27.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests24.title}"
 			x: -13.0d
 			y: 11.5d
 			hide_dependency_lines: true
 			dependencies: ["4F4C278C3A8C0281"]
 			optional: true
 			id: "641D3099B18682CD"
-			tasks: [{
-				id: "371A5F8851677000"
-				type: "item"
-				item: "farmersdelight:onion_crate"
-				count: 64L
-			}]
+			tasks: [
+				{
+					id: "371A5F8851677000"
+					type: "item"
+					item: "farmersdelight:onion_crate"
+					count: 64L
+				}
+			]
 			rewards: [
 				{
 					id: "7DB7488CBDF70735"
@@ -774,53 +842,61 @@
 			]
 		}
 		{
-			title: "{chapter.1.quest.28.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests25.title}"
 			x: -13.5d
 			y: 12.5d
 			hide_dependency_lines: true
 			dependencies: ["4F4C278C3A8C0281"]
 			optional: true
 			id: "0C6D7B3DCF139FA9"
-			tasks: [{
-				id: "559246BCCF5EDD0A"
-				type: "item"
-				item: "farmersdelight:tomato_crate"
-				count: 64L
-			}]
-			rewards: [{
-				id: "504F364ED908935F"
-				type: "item"
-				item: "minecraft:redstone_ore"
-				count: 32
-			}]
+			tasks: [
+				{
+					id: "559246BCCF5EDD0A"
+					type: "item"
+					item: "farmersdelight:tomato_crate"
+					count: 64L
+				}
+			]
+			rewards: [
+				{
+					id: "504F364ED908935F"
+					type: "item"
+					item: "minecraft:redstone_ore"
+					count: 32
+				}
+			]
 		}
 		{
-			title: "{chapter.1.quest.29.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests26.title}"
 			x: -13.5d
 			y: 13.5d
 			hide_dependency_lines: true
 			dependencies: ["4F4C278C3A8C0281"]
 			optional: true
 			id: "4E0B5BFE718A99CD"
-			tasks: [{
-				id: "01BAB43531550385"
-				type: "item"
-				item: "farmersdelight:cabbage_crate"
-				count: 64L
-			}]
-			rewards: [{
-				id: "15293C6F9430DA31"
-				type: "item"
-				item: "minecraft:emerald_ore"
-				count: 25
-			}]
+			tasks: [
+				{
+					id: "01BAB43531550385"
+					type: "item"
+					item: "farmersdelight:cabbage_crate"
+					count: 64L
+				}
+			]
+			rewards: [
+				{
+					id: "15293C6F9430DA31"
+					type: "item"
+					item: "minecraft:emerald_ore"
+					count: 25
+				}
+			]
 		}
 		{
-			title: "{chapter.1.quest.30.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests27.title}"
 			x: -3.5d
 			y: 16.0d
-			subtitle: "{chapter.1.quest.30.subtitle}"
-			description: ["{chapter.1.quest.30.description.1}"]
+			subtitle: "{ftbquests.chapter.assorted_goals.quests27.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests27.description}"]
 			dependencies: ["05E45A7D1C9927E5"]
 			optional: true
 			id: "69C0C2601F6F79A7"
@@ -916,44 +992,50 @@
 					consume_items: false
 				}
 			]
-			rewards: [{
-				id: "3415146CCA0548A2"
-				type: "item"
-				item: {
-					id: "mcdw:axe_encrusted_anchor"
-					Count: 1b
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: "3415146CCA0548A2"
+					type: "item"
+					item: {
+						id: "mcdw:axe_encrusted_anchor"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
 					}
 				}
-			}]
+			]
 		}
 		{
-			title: "{chapter.1.quest.32.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests28.title}"
 			icon: "minecraft:spyglass"
 			x: 1.5d
 			y: 12.0d
-			subtitle: "{chapter.1.quest.32.subtitle}"
+			subtitle: "{ftbquests.chapter.assorted_goals.quests28.subtitle}"
 			description: [
-				"Press [Z] (default) to zoom in."
+				"{ftbquests.chapter.assorted_goals.quests28.description0}"
 				""
-				"(Wait, what does this have to do with Copper?)"
+				"{ftbquests.chapter.assorted_goals.quests28.description2}"
 			]
 			dependencies: ["11ACD707D7284920"]
 			id: "6B68AF2DE79A65A3"
-			tasks: [{
-				id: "36090F953BBA78B4"
-				type: "checkmark"
-				title: "{chapter.1.quest.32.task.1.title}"
-			}]
-			rewards: [{
-				id: "44E31D1175B6FDDF"
-				type: "item"
-				item: "minecraft:spyglass"
-			}]
+			tasks: [
+				{
+					id: "36090F953BBA78B4"
+					type: "checkmark"
+					title: "{ftbquests.chapter.assorted_goals.quests28.tasks0.title}"
+				}
+			]
+			rewards: [
+				{
+					id: "44E31D1175B6FDDF"
+					type: "item"
+					item: "minecraft:spyglass"
+				}
+			]
 		}
 		{
-			title: "Pretty Storage"
+			title: "{ftbquests.chapter.assorted_goals.quests29.title}"
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -963,17 +1045,17 @@
 			}
 			x: 2.0d
 			y: 8.0d
-			subtitle: "Aesthetics > Practicality"
+			subtitle: "{ftbquests.chapter.assorted_goals.quests29.subtitle}"
 			description: [
-				"The &6Package Crafter&r allows you to create a Package out of materials:"
-				"- Any block for the &6core&r of the Package,"
-				"- Any block for the &6frame&r of the Package,"
-				"- Any dye for the &6front&r of the package,"
-				"- A Copper Ingot."
+				"{ftbquests.chapter.assorted_goals.quests29.description0}"
+				"{ftbquests.chapter.assorted_goals.quests29.description1}"
+				"{ftbquests.chapter.assorted_goals.quests29.description2}"
+				"{ftbquests.chapter.assorted_goals.quests29.description3}"
+				"{ftbquests.chapter.assorted_goals.quests29.description4}"
 				""
-				"This will result in a &6Package&r that can store 8 stacks of a single item."
+				"{ftbquests.chapter.assorted_goals.quests29.description6}"
 				""
-				"You can also store Packages in Packages!"
+				"{ftbquests.chapter.assorted_goals.quests29.description8}"
 			]
 			dependencies: ["6433AD83545428C3"]
 			id: "5D69FB71CD8A1391"
@@ -986,7 +1068,7 @@
 				{
 					id: "1548CF476FD5F8D3"
 					type: "item"
-					title: "{chapter.1.quest.33.task.2.title}"
+					title: "{ftbquests.chapter.assorted_goals.quests29.tasks1.title}"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -998,7 +1080,7 @@
 				{
 					id: "6E62E369EA9C1050"
 					type: "item"
-					title: "{chapter.1.quest.33.task.3.title}"
+					title: "{ftbquests.chapter.assorted_goals.quests29.tasks2.title}"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -1016,7 +1098,7 @@
 			]
 		}
 		{
-			title: "{chapter.1.quest.34.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests30.title}"
 			icon: {
 				id: "automobility:automobile"
 				Count: 1b
@@ -1031,8 +1113,8 @@
 			x: -12.172448979591834d
 			y: 12.847959183673467d
 			shape: "gear"
-			subtitle: "{chapter.1.quest.34.subtitle}"
-			description: ["{chapter.1.quest.34.description.1}"]
+			subtitle: "{ftbquests.chapter.assorted_goals.quests30.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests30.description}"]
 			hide_dependency_lines: true
 			min_required_dependencies: 2
 			dependencies: [
@@ -1133,15 +1215,15 @@
 			]
 		}
 		{
-			title: "{chapter.1.quest.35.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests31.title}"
 			x: -1.5d
 			y: 8.0d
 			shape: "gear"
-			subtitle: "{chapter.1.quest.35.subtitle}"
+			subtitle: "{ftbquests.chapter.assorted_goals.quests31.subtitle}"
 			description: [
-				"Tin and Copper will be used for an alloy, which is a base of all industry going forward."
+				"{ftbquests.chapter.assorted_goals.quests31.description0}"
 				""
-				"Andesite and Clay will introduce you to Create."
+				"{ftbquests.chapter.assorted_goals.quests31.description2}"
 			]
 			dependencies: [
 				"601A619C6E96920A"
@@ -1188,17 +1270,21 @@
 			dependencies: ["30671A15990F39D8"]
 			optional: true
 			id: "791D3292F22706E6"
-			tasks: [{
-				id: "40EFAB1EA82C0179"
-				type: "item"
-				item: "chipped:botanist_workbench"
-			}]
-			rewards: [{
-				id: "37C1156AB1726C5E"
-				type: "item"
-				item: "minecraft:moss_block"
-				count: 8
-			}]
+			tasks: [
+				{
+					id: "40EFAB1EA82C0179"
+					type: "item"
+					item: "chipped:botanist_workbench"
+				}
+			]
+			rewards: [
+				{
+					id: "37C1156AB1726C5E"
+					type: "item"
+					item: "minecraft:moss_block"
+					count: 8
+				}
+			]
 		}
 		{
 			x: -1.5d
@@ -1206,17 +1292,21 @@
 			dependencies: ["30671A15990F39D8"]
 			optional: true
 			id: "61268E9695C2B0B0"
-			tasks: [{
-				id: "686BE4BE4E9EE3FB"
-				type: "item"
-				item: "chipped:glassblower"
-			}]
-			rewards: [{
-				id: "412393C0BD8AAFC9"
-				type: "item"
-				item: "minecraft:glass"
-				count: 16
-			}]
+			tasks: [
+				{
+					id: "686BE4BE4E9EE3FB"
+					type: "item"
+					item: "chipped:glassblower"
+				}
+			]
+			rewards: [
+				{
+					id: "412393C0BD8AAFC9"
+					type: "item"
+					item: "minecraft:glass"
+					count: 16
+				}
+			]
 		}
 		{
 			x: 1.5d
@@ -1224,17 +1314,21 @@
 			dependencies: ["30671A15990F39D8"]
 			optional: true
 			id: "441D6F369B7912E5"
-			tasks: [{
-				id: "4F02DF2E116D3E92"
-				type: "item"
-				item: "chipped:carpenters_table"
-			}]
-			rewards: [{
-				id: "2C267CF0C88E548F"
-				type: "item"
-				item: "minecraft:oak_log"
-				count: 32
-			}]
+			tasks: [
+				{
+					id: "4F02DF2E116D3E92"
+					type: "item"
+					item: "chipped:carpenters_table"
+				}
+			]
+			rewards: [
+				{
+					id: "2C267CF0C88E548F"
+					type: "item"
+					item: "minecraft:oak_log"
+					count: 32
+				}
+			]
 		}
 		{
 			x: 1.5d
@@ -1242,17 +1336,21 @@
 			dependencies: ["30671A15990F39D8"]
 			optional: true
 			id: "5FFC7DFF4294C81A"
-			tasks: [{
-				id: "74EB7FF43AA93703"
-				type: "item"
-				item: "chipped:loom_table"
-			}]
-			rewards: [{
-				id: "1F16D277E7B3D5DD"
-				type: "item"
-				item: "minecraft:white_wool"
-				count: 16
-			}]
+			tasks: [
+				{
+					id: "74EB7FF43AA93703"
+					type: "item"
+					item: "chipped:loom_table"
+				}
+			]
+			rewards: [
+				{
+					id: "1F16D277E7B3D5DD"
+					type: "item"
+					item: "minecraft:white_wool"
+					count: 16
+				}
+			]
 		}
 		{
 			x: -1.5d
@@ -1260,17 +1358,21 @@
 			dependencies: ["30671A15990F39D8"]
 			optional: true
 			id: "65C0B4100CD88D77"
-			tasks: [{
-				id: "184486A840B467DE"
-				type: "item"
-				item: "chipped:mason_table"
-			}]
-			rewards: [{
-				id: "5B3D1DB7984B6EA4"
-				type: "item"
-				item: "minecraft:andesite"
-				count: 16
-			}]
+			tasks: [
+				{
+					id: "184486A840B467DE"
+					type: "item"
+					item: "chipped:mason_table"
+				}
+			]
+			rewards: [
+				{
+					id: "5B3D1DB7984B6EA4"
+					type: "item"
+					item: "minecraft:andesite"
+					count: 16
+				}
+			]
 		}
 		{
 			x: 1.5d
@@ -1278,16 +1380,20 @@
 			dependencies: ["30671A15990F39D8"]
 			optional: true
 			id: "11B2E25F18AD9C35"
-			tasks: [{
-				id: "1077A31DBE0B61EF"
-				type: "item"
-				item: "chipped:alchemy_bench"
-			}]
-			rewards: [{
-				id: "302E910F93ECC032"
-				type: "item"
-				item: "minecraft:copper_block"
-			}]
+			tasks: [
+				{
+					id: "1077A31DBE0B61EF"
+					type: "item"
+					item: "chipped:alchemy_bench"
+				}
+			]
+			rewards: [
+				{
+					id: "302E910F93ECC032"
+					type: "item"
+					item: "minecraft:copper_block"
+				}
+			]
 		}
 		{
 			x: -1.5d
@@ -1295,52 +1401,60 @@
 			dependencies: ["30671A15990F39D8"]
 			optional: true
 			id: "30A8E779764AE865"
-			tasks: [{
-				id: "0F24228CDCEB910E"
-				type: "item"
-				item: "chipped:mechanist_workbench"
-			}]
-			rewards: [{
-				id: "21B1578A2172D29C"
-				type: "item"
-				item: "minecraft:redstone_block"
-			}]
+			tasks: [
+				{
+					id: "0F24228CDCEB910E"
+					type: "item"
+					item: "chipped:mechanist_workbench"
+				}
+			]
+			rewards: [
+				{
+					id: "21B1578A2172D29C"
+					type: "item"
+					item: "minecraft:redstone_block"
+				}
+			]
 		}
 		{
 			x: 1.5d
 			y: 10.0d
-			subtitle: "{chapter.1.quest.44.subtitle}"
+			subtitle: "{ftbquests.chapter.assorted_goals.quests39.subtitle}"
 			description: [
-				"&6Copper Chests&r allow you to store 45 stacks of items in a single chest!"
+				"{ftbquests.chapter.assorted_goals.quests39.description0}"
 				""
-				"You can combine them into a double chest, just like vanilla chests."
+				"{ftbquests.chapter.assorted_goals.quests39.description2}"
 				""
-				"Later on you'll be able to get even better chests!"
+				"{ftbquests.chapter.assorted_goals.quests39.description4}"
 			]
 			dependencies: [
 				"11ACD707D7284920"
 				"6433AD83545428C3"
 			]
 			id: "22EDB2C326C53A89"
-			tasks: [{
-				id: "247A190DDF6719BF"
-				type: "item"
-				item: "reinfchest:copper_chest"
-			}]
-			rewards: [{
-				id: "75AB59721C18FE4E"
-				type: "item"
-				item: "reinfchest:copper_chest"
-			}]
+			tasks: [
+				{
+					id: "247A190DDF6719BF"
+					type: "item"
+					item: "reinfchest:copper_chest"
+				}
+			]
+			rewards: [
+				{
+					id: "75AB59721C18FE4E"
+					type: "item"
+					item: "reinfchest:copper_chest"
+				}
+			]
 		}
 		{
-			title: "{chapter.1.quest.45.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests40.title}"
 			x: -10.5d
 			y: 9.0d
 			description: [
-				"{chapter.1.quest.45.description.1}"
+				"{ftbquests.chapter.assorted_goals.quests40.description0}"
 				""
-				"&6Obtaining a cow in a jar&r is a good place to start when experimenting with Blockheads, as infinite milk without entities is a lag-free method of collection."
+				"{ftbquests.chapter.assorted_goals.quests40.description2}"
 			]
 			dependencies: ["2CE5BB6A7B30CA4C"]
 			optional: true
@@ -1372,15 +1486,17 @@
 					item: "cookingforblockheads:cooking_table"
 				}
 			]
-			rewards: [{
-				id: "3E69ED9AD85027DE"
-				type: "item"
-				item: "chipped:white_concrete_1"
-				count: 10
-			}]
+			rewards: [
+				{
+					id: "3E69ED9AD85027DE"
+					type: "item"
+					item: "chipped:white_concrete_1"
+					count: 10
+				}
+			]
 		}
 		{
-			title: "{chapter.1.quest.49.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests41.title}"
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -1392,27 +1508,29 @@
 			y: 15.0d
 			shape: "diamond"
 			description: [
-				"If you like building, you might be interested in these."
+				"{ftbquests.chapter.assorted_goals.quests41.description0}"
 				""
-				"Chipped blocks require a specific workstation to create them."
+				"{ftbquests.chapter.assorted_goals.quests41.description2}"
 				""
-				"That workstation is related to the nature of the block."
+				"{ftbquests.chapter.assorted_goals.quests41.description4}"
 			]
 			hide_dependency_lines: true
 			dependencies: ["0BCED0F8481E0C21"]
 			size: 1.5d
 			optional: true
 			id: "30671A15990F39D8"
-			tasks: [{
-				id: "0156EF5B8B50BDB8"
-				type: "checkmark"
-				title: "{chapter.1.quest.49.task.1.title}"
-			}]
+			tasks: [
+				{
+					id: "0156EF5B8B50BDB8"
+					type: "checkmark"
+					title: "{ftbquests.chapter.assorted_goals.quests41.tasks0.title}"
+				}
+			]
 		}
 		{
 			x: -6.5d
 			y: 17.0d
-			subtitle: "{chapter.1.quest.50.subtitle}"
+			subtitle: "{ftbquests.chapter.assorted_goals.quests42.subtitle}"
 			dependencies: ["05E45A7D1C9927E5"]
 			optional: true
 			id: "7D768E5AA9EA358C"
@@ -1438,44 +1556,52 @@
 		{
 			x: -8.0d
 			y: 16.5d
-			subtitle: "{chapter.1.quest.51.subtitle}"
+			subtitle: "{ftbquests.chapter.assorted_goals.quests43.subtitle}"
 			dependencies: ["7D768E5AA9EA358C"]
 			optional: true
 			id: "52832D8DA239C017"
-			tasks: [{
-				id: "67BF890594998248"
-				type: "item"
-				item: "drinkbeer:beer_mug"
-			}]
-			rewards: [{
-				id: "004A64084DE31C6B"
-				type: "item"
-				item: "drinkbeer:empty_beer_mug"
-				count: 5
-			}]
+			tasks: [
+				{
+					id: "67BF890594998248"
+					type: "item"
+					item: "drinkbeer:beer_mug"
+				}
+			]
+			rewards: [
+				{
+					id: "004A64084DE31C6B"
+					type: "item"
+					item: "drinkbeer:empty_beer_mug"
+					count: 5
+				}
+			]
 		}
 		{
 			x: -9.0d
 			y: 16.0d
-			subtitle: "{chapter.1.quest.52.subtitle}"
+			subtitle: "{ftbquests.chapter.assorted_goals.quests44.subtitle}"
 			dependencies: ["52832D8DA239C017"]
 			optional: true
 			id: "154EF80FC9B8F0B0"
-			tasks: [{
-				id: "145A72A4C427E775"
-				type: "item"
-				item: "drinkbeer:bartending_table_normal"
-			}]
-			rewards: [{
-				id: "3093A76BEC813CA5"
-				type: "item"
-				item: "farmersdelight:hot_cocoa"
-			}]
+			tasks: [
+				{
+					id: "145A72A4C427E775"
+					type: "item"
+					item: "drinkbeer:bartending_table_normal"
+				}
+			]
+			rewards: [
+				{
+					id: "3093A76BEC813CA5"
+					type: "item"
+					item: "farmersdelight:hot_cocoa"
+				}
+			]
 		}
 		{
 			x: -11.5d
 			y: 9.0d
-			subtitle: "{chapter.1.quest.53.subtitle}"
+			subtitle: "{ftbquests.chapter.assorted_goals.quests45.subtitle}"
 			dependencies: ["3522109BABC7E48B"]
 			optional: true
 			id: "152FF1A843FFDDB5"
@@ -1491,84 +1617,94 @@
 					item: "cookingforblockheads:no_filter_edition"
 				}
 			]
-			rewards: [{
-				id: "424A77A5F66DAD47"
-				type: "item"
-				item: "minecraft:cooked_beef"
-			}]
+			rewards: [
+				{
+					id: "424A77A5F66DAD47"
+					type: "item"
+					item: "minecraft:cooked_beef"
+				}
+			]
 		}
 		{
-			title: "{chapter.1.quest.54.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests46.title}"
 			icon: "minecraft:barrel"
 			x: 0.5d
 			y: 9.0d
-			subtitle: "{chapter.1.quest.54.subtitle}"
-			description: ["{chapter.1.quest.54.description.1}"]
+			subtitle: "{ftbquests.chapter.assorted_goals.quests46.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests46.description}"]
 			dependencies: ["601A619C6E96920A"]
 			id: "6433AD83545428C3"
-			tasks: [{
-				id: "162E460403877286"
-				type: "checkmark"
-				title: "{chapter.1.quest.54.task.1.title}"
-			}]
+			tasks: [
+				{
+					id: "162E460403877286"
+					type: "checkmark"
+					title: "{ftbquests.chapter.assorted_goals.quests46.tasks0.title}"
+				}
+			]
 		}
 		{
-			title: "{chapter.1.quest.55.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests47.title}"
 			x: 3.0d
 			y: 8.0d
-			subtitle: "{chapter.1.quest.55.subtitle}"
-			description: ["Mix and match cores, frames and front colors to your desire."]
+			subtitle: "{ftbquests.chapter.assorted_goals.quests47.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests47.description}"]
 			dependencies: ["5D69FB71CD8A1391"]
 			id: "36A1589C564732B1"
-			tasks: [{
-				id: "56447C1ED629FE47"
-				type: "item"
-				title: "{chapter.1.quest.55.task.1.title}"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "packages:banned_from_package_maker"
-					}
-				}
-			}]
-			rewards: [{
-				id: "6330A382A9654992"
-				type: "item"
-				item: {
-					id: "packages:package"
-					Count: 1b
-					tag: {
-						BlockEntityTag: {
-							PackageContents: {
-								realCount: 0
-							}
-							PackageStyle: {
-								frame: "minecraft:oak_log"
-								inner: "minecraft:oak_planks"
-								color: 0
-							}
+			tasks: [
+				{
+					id: "56447C1ED629FE47"
+					type: "item"
+					title: "{ftbquests.chapter.assorted_goals.quests47.tasks0.title}"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "packages:banned_from_package_maker"
 						}
 					}
 				}
-				count: 4
-			}]
+			]
+			rewards: [
+				{
+					id: "6330A382A9654992"
+					type: "item"
+					item: {
+						id: "packages:package"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								PackageContents: {
+									realCount: 0
+								}
+								PackageStyle: {
+									frame: "minecraft:oak_log"
+									inner: "minecraft:oak_planks"
+									color: 0
+								}
+							}
+						}
+					}
+					count: 4
+				}
+			]
 		}
 		{
-			title: "{chapter.1.quest.56.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests48.title}"
 			icon: "vinery:old_cherry_sapling"
 			x: -4.5d
 			y: 17.5d
-			subtitle: "{chapter.1.quest.56.subtitle}"
-			description: ["{chapter.1.quest.56.description.1}"]
+			subtitle: "{ftbquests.chapter.assorted_goals.quests48.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests48.description}"]
 			hide_dependency_lines: false
 			dependencies: ["05E45A7D1C9927E5"]
 			id: "165C3C3DF1B9B4A3"
-			tasks: [{
-				id: "0B0B28657F7C6931"
-				type: "item"
-				item: "vinery:fermentation_barrel"
-			}]
+			tasks: [
+				{
+					id: "0B0B28657F7C6931"
+					type: "item"
+					item: "vinery:fermentation_barrel"
+				}
+			]
 			rewards: [
 				{
 					id: "28323BFEABB17884"
@@ -1588,22 +1724,24 @@
 			]
 		}
 		{
-			title: "{chapter.1.quest.57.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests49.title}"
 			x: -3.5d
 			y: 19.5d
-			subtitle: "{chapter.1.quest.57.subtitle}"
-			description: ["{chapter.1.quest.57.description.1}"]
+			subtitle: "{ftbquests.chapter.assorted_goals.quests49.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests49.description}"]
 			dependencies: ["4B565923D33B2CB8"]
 			id: "1D8FB0253FF41716"
-			tasks: [{
-				id: "47820AF8B45F9AEE"
-				type: "item"
-				item: {
-					id: "vinery:apple_juice"
-					Count: 1b
-					tag: { }
+			tasks: [
+				{
+					id: "47820AF8B45F9AEE"
+					type: "item"
+					item: {
+						id: "vinery:apple_juice"
+						Count: 1b
+						tag: { }
+					}
 				}
-			}]
+			]
 			rewards: [
 				{
 					id: "5136D615F0B99ABE"
@@ -1619,89 +1757,103 @@
 			]
 		}
 		{
-			title: "{chapter.1.quest.58.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests50.title}"
 			x: -2.0d
 			y: 17.5d
-			subtitle: "{chapter.1.quest.58.subtitle}"
-			description: ["{chapter.1.quest.58.description.1}"]
+			subtitle: "{ftbquests.chapter.assorted_goals.quests50.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests50.description}"]
 			dependencies: ["6BECCB7FA4132517"]
 			id: "529CAD4508F33471"
-			tasks: [{
-				id: "0914332FB936AF32"
-				type: "item"
-				item: {
-					id: "vinery:red_grapejuice_wine_bottle"
-					Count: 1b
-					tag: { }
+			tasks: [
+				{
+					id: "0914332FB936AF32"
+					type: "item"
+					item: {
+						id: "vinery:red_grapejuice_wine_bottle"
+						Count: 1b
+						tag: { }
+					}
 				}
-			}]
-			rewards: [{
-				id: "1097AB4611D7E57D"
-				type: "item"
-				item: "vinery:wine_box"
-			}]
+			]
+			rewards: [
+				{
+					id: "1097AB4611D7E57D"
+					type: "item"
+					item: "vinery:wine_box"
+				}
+			]
 		}
 		{
-			title: "{chapter.1.quest.59.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests51.title}"
 			x: -2.5d
 			y: 18.5d
-			subtitle: "{chapter.1.quest.59.subtitle}"
-			description: ["{chapter.1.quest.59.description.1}"]
+			subtitle: "{ftbquests.chapter.assorted_goals.quests51.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests51.description}"]
 			dependencies: ["6BECCB7FA4132517"]
 			id: "66AF3CCC6B74CC09"
-			tasks: [{
-				id: "297B32716629650B"
-				type: "item"
-				item: {
-					id: "vinery:white_grapejuice_wine_bottle"
-					Count: 1b
-					tag: { }
+			tasks: [
+				{
+					id: "297B32716629650B"
+					type: "item"
+					item: {
+						id: "vinery:white_grapejuice_wine_bottle"
+						Count: 1b
+						tag: { }
+					}
 				}
-			}]
-			rewards: [{
-				id: "75E5A6B7988A3D1A"
-				type: "item"
-				item: "vinery:wine_rack_2"
-			}]
+			]
+			rewards: [
+				{
+					id: "75E5A6B7988A3D1A"
+					type: "item"
+					item: "vinery:wine_rack_2"
+				}
+			]
 		}
 		{
-			title: "{chapter.1.quest.60.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests52.title}"
 			x: -4.0d
 			y: 18.5d
-			subtitle: "{chapter.1.quest.60.subtitle}"
-			description: ["{chapter.1.quest.60.description.1}"]
+			subtitle: "{ftbquests.chapter.assorted_goals.quests52.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests52.description}"]
 			dependencies: ["165C3C3DF1B9B4A3"]
 			id: "4B565923D33B2CB8"
-			tasks: [{
-				id: "46966651EFC64C4E"
-				type: "item"
-				item: "vinery:wine_press"
-			}]
-			rewards: [{
-				id: "1B24564A722FFBEC"
-				type: "item"
-				item: "vinery:apple_mash"
-			}]
+			tasks: [
+				{
+					id: "46966651EFC64C4E"
+					type: "item"
+					item: "vinery:wine_press"
+				}
+			]
+			rewards: [
+				{
+					id: "1B24564A722FFBEC"
+					type: "item"
+					item: "vinery:apple_mash"
+				}
+			]
 		}
 		{
-			title: "{chapter.1.quest.61.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests53.title}"
 			icon: "vinery:red_grape"
 			x: -3.0d
 			y: 17.5d
-			subtitle: "{chapter.1.quest.61.subtitle}"
+			subtitle: "{ftbquests.chapter.assorted_goals.quests53.subtitle}"
 			dependencies: ["165C3C3DF1B9B4A3"]
 			id: "6BECCB7FA4132517"
-			tasks: [{
-				id: "4750F1C7CA412A27"
-				type: "item"
-				item: "vinery:grapevine_pot"
-			}]
+			tasks: [
+				{
+					id: "4750F1C7CA412A27"
+					type: "item"
+					item: "vinery:grapevine_pot"
+				}
+			]
 		}
 		{
-			title: "{chapter.1.quest.62.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests54.title}"
 			x: -9.0d
 			y: 8.5d
-			subtitle: "{chapter.1.quest.62.subtitle}"
+			subtitle: "{ftbquests.chapter.assorted_goals.quests54.subtitle}"
 			dependencies: ["2CE5BB6A7B30CA4C"]
 			id: "4D65B95D552D92BA"
 			tasks: [
@@ -1723,14 +1875,14 @@
 			]
 		}
 		{
-			title: "{chapter.1.quest.63.title}"
+			title: "{ftbquests.chapter.assorted_goals.quests55.title}"
 			icon: "minecraft:coal_ore"
 			x: -4.5d
 			y: 8.5d
 			description: [
-				"The only new ore you are going to find in the overworld is &6Tin!&r"
+				"{ftbquests.chapter.assorted_goals.quests55.description0}"
 				""
-				"It is noteworthy that we do not expect you to go mining for ores as your main income of metal as you progress, &6explore REI&r for potential ways to automate the creation of these materials!"
+				"{ftbquests.chapter.assorted_goals.quests55.description2}"
 			]
 			dependencies: ["0FC0B4E8EC58F791"]
 			min_required_tasks: 1
@@ -1811,14 +1963,16 @@
 				{
 					id: "2CAB697E724073A6"
 					type: "checkmark"
-					title: "{chapter.1.quest.63.task.10.title}"
+					title: "{ftbquests.chapter.assorted_goals.quests55.tasks9.title}"
 				}
 			]
-			rewards: [{
-				id: "4E42F1996A792ECD"
-				type: "item"
-				item: "minecraft:cake"
-			}]
+			rewards: [
+				{
+					id: "4E42F1996A792ECD"
+					type: "item"
+					item: "minecraft:cake"
+				}
+			]
 		}
 		{
 			icon: {
@@ -1831,75 +1985,79 @@
 			x: -4.0d
 			y: 14.0d
 			description: [
-				"- If you are new to &6Create&r, use the &6Ponder&r feature (hold the [W] key while hovering over an item), or online guides to learn how Create works."
+				"{ftbquests.chapter.assorted_goals.quests56.description0}"
 				""
-				"- This pack is centered mainly around &6Create&r, &6Tech Reborn&r, &6Ad Astra&r, and later on... &6Yttr!&r"
+				"{ftbquests.chapter.assorted_goals.quests56.description2}"
 				""
-				"- This pack changes a ton of recipes! Be sure to check out &6REI&r (the recipe viewer to the right of your inventory)."
-				"Left-click an item in the list to view its recipe."
-				"Right-click an item to show the usages of the item."
+				"{ftbquests.chapter.assorted_goals.quests56.description4}"
+				"{ftbquests.chapter.assorted_goals.quests56.description5}"
+				"{ftbquests.chapter.assorted_goals.quests56.description6}"
 				""
-				"(You can also do that with items in your inventory by pressing R and U respectively)"
+				"{ftbquests.chapter.assorted_goals.quests56.description8}"
 				""
-				"- Your first tools are made using &6Hephaestus&r (Fabric port of &6Tinker's Construct&r). Make a Tinker Station and a Part Builder to get started!"
+				"{ftbquests.chapter.assorted_goals.quests56.description10}"
 				""
-				"- Speaking of Hephaestus: &7Smeltery&r is disabled in this pack! Alloying is done with &6Create&r's Mechanical Mixers instead."
+				"{ftbquests.chapter.assorted_goals.quests56.description12}"
 				""
-				"- &7Nether&r? What is the Nether?"
-				"There's no Nether in this pack! Instead, you go to the &6Moon&r later on via a portal."
-				"Content that would normally be in the Nether is distributed across different celestial bodies."
+				"{ftbquests.chapter.assorted_goals.quests56.description14}"
+				"{ftbquests.chapter.assorted_goals.quests56.description15}"
+				"{ftbquests.chapter.assorted_goals.quests56.description16}"
 				""
-				"- &l&6Blazes&r&l are found on the Moon!&r"
+				"{ftbquests.chapter.assorted_goals.quests56.description18}"
 			]
 			size: 2.0d
 			min_width: 300
 			id: "6A78320DA0312F1C"
-			tasks: [{
-				id: "143B044BCD64138B"
-				type: "checkmark"
-				title: "Important info!"
-			}]
-			rewards: [{
-				id: "37CF43D8E5C3E950"
-				type: "item"
-				item: "adoptafloppa:orca_item"
-			}]
+			tasks: [
+				{
+					id: "143B044BCD64138B"
+					type: "checkmark"
+					title: "{ftbquests.chapter.assorted_goals.quests56.tasks0.title}"
+				}
+			]
+			rewards: [
+				{
+					id: "37CF43D8E5C3E950"
+					type: "item"
+					item: "adoptafloppa:orca_item"
+				}
+			]
 		}
 		{
-			title: "Extended Drawers!"
+			title: "{ftbquests.chapter.assorted_goals.quests57.title}"
 			x: 0.5d
 			y: 7.5d
-			subtitle: "Mass single-item storage solution."
+			subtitle: "{ftbquests.chapter.assorted_goals.quests57.subtitle}"
 			description: [
-				"&6Single Drawer&r can store 1 different items, 2048 (16x64) items per slot."
+				"{ftbquests.chapter.assorted_goals.quests57.description0}"
 				""
-				"&6Double Drawer&r can store 2 different items, 1024 (16x64) items per slot."
+				"{ftbquests.chapter.assorted_goals.quests57.description2}"
 				""
-				"&6Quad Drawer&r can store 4 different items, 512 (16x64) items per slot."
+				"{ftbquests.chapter.assorted_goals.quests57.description4}"
 				""
-				"They can be broken, retaining their contents."
+				"{ftbquests.chapter.assorted_goals.quests57.description6}"
 				""
-				"Available Upgrades:"
-				"(applicable to individual slots,"
-				"Shift-Right click the drawer slot)"
+				"{ftbquests.chapter.assorted_goals.quests57.description8}"
+				"{ftbquests.chapter.assorted_goals.quests57.description9}"
+				"{ftbquests.chapter.assorted_goals.quests57.description10}"
 				""
-				"> &6Lava Bucket&r - If a drawer is full and new items are inserted, those items will be voided instead."
+				"{ftbquests.chapter.assorted_goals.quests57.description12}"
 				""
-				"> &6Drawer Lock&r - Locks the drawer to the specified item."
+				"{ftbquests.chapter.assorted_goals.quests57.description14}"
 				""
-				"> &6Black Dye&r - Hides the item preview and count."
-				"Useful for FPS lag reduction."
+				"{ftbquests.chapter.assorted_goals.quests57.description16}"
+				"{ftbquests.chapter.assorted_goals.quests57.description17}"
 				""
-				"> &6Drawer Upgrades&r - Increases the maximum amount of items that can be stored in a slot:"
-				"- T1: 2x"
-				"- T2: 4x"
-				"- T3: 16x"
-				"- T4: 64x"
-				"- T5: 256x"
-				"- T6: A really large multiplier!"
+				"{ftbquests.chapter.assorted_goals.quests57.description19}"
+				"{ftbquests.chapter.assorted_goals.quests57.description20}"
+				"{ftbquests.chapter.assorted_goals.quests57.description21}"
+				"{ftbquests.chapter.assorted_goals.quests57.description22}"
+				"{ftbquests.chapter.assorted_goals.quests57.description23}"
+				"{ftbquests.chapter.assorted_goals.quests57.description24}"
+				"{ftbquests.chapter.assorted_goals.quests57.description25}"
 				""
-				"> &6Drawer Downgrades&r: Reduces max size of a slot to 64."
-				"Useful for small buffers."
+				"{ftbquests.chapter.assorted_goals.quests57.description27}"
+				"{ftbquests.chapter.assorted_goals.quests57.description28}"
 			]
 			dependencies: ["6433AD83545428C3"]
 			id: "3C1ED5C02DDB00F2"
@@ -1937,14 +2095,16 @@
 		{
 			x: -5.5d
 			y: 18.0d
-			subtitle: "Contains all recipes for Drink Beer."
+			subtitle: "{ftbquests.chapter.assorted_goals.quests58.subtitle}"
 			dependencies: ["05E45A7D1C9927E5"]
 			id: "23B56D5D09CE3A0E"
-			tasks: [{
-				id: "4F8FB44812FB367D"
-				type: "item"
-				item: "drinkbeer:recipe_board_package"
-			}]
+			tasks: [
+				{
+					id: "4F8FB44812FB367D"
+					type: "item"
+					item: "drinkbeer:recipe_board_package"
+				}
+			]
 		}
 	]
 	quest_links: [ ]

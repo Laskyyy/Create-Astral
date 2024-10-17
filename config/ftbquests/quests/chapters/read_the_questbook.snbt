@@ -3,25 +3,27 @@
 	group: ""
 	order_index: 0
 	filename: "read_the_questbook"
-	title: "Read the Questbook! (FAQ)"
+	title: "{ftbquests.chapter.read_the_questbook.title}"
 	icon: "ftbquests:book"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	images: [{
-		x: -8.5d
-		y: -2.0d
-		width: 15.0d
-		height: 15.0d
-		rotation: 0.0d
-		image: "createastral:textures/item/portal.png"
-		hover: [ ]
-		click: ""
-		dev: false
-		corner: false
-	}]
+	images: [
+		{
+			x: -8.5d
+			y: -2.0d
+			width: 15.0d
+			height: 15.0d
+			rotation: 0.0d
+			image: "createastral:textures/item/portal.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
 	quests: [
 		{
-			title: "&6Vanilla Tools"
+			title: "{ftbquests.chapter.read_the_questbook.quests0.title}"
 			icon: {
 				id: "minecraft:wooden_axe"
 				Count: 1b
@@ -31,28 +33,30 @@
 			}
 			x: -5.0d
 			y: -7.5d
-			subtitle: "Use the Hephaestus tools for early-game instead!"
+			subtitle: "{ftbquests.chapter.read_the_questbook.quests0.subtitle}"
 			description: [
-				"Regular Stone/Wooden tools can still be obtained through the fallback recipe by stonecutting Andesite Alloy."
+				"{ftbquests.chapter.read_the_questbook.quests0.description0}"
 				""
-				"These are still required in a few edge cases, such as the hardcoded loot tables for Drink Beer trading."
+				"{ftbquests.chapter.read_the_questbook.quests0.description2}"
 			]
 			id: "39FDFD195622958E"
-			tasks: [{
-				id: "00029B4CC32B7DCD"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "00029B4CC32B7DCD"
+					type: "checkmark"
+				}
+			]
 		}
 		{
-			title: "&6Project Tables!"
+			title: "{ftbquests.chapter.read_the_questbook.quests1.title}"
 			icon: "tconstruct:crafting_station"
 			x: -5.0d
 			y: -6.5d
-			subtitle: "And how to fix quests not registering"
+			subtitle: "{ftbquests.chapter.read_the_questbook.quests1.subtitle}"
 			description: [
-				"Tinker Crafting Stations are not recommended for crafting as they do NOT register quests when taking items from them. Please use &6Erdragh's \"Project Tables\"&r implementation instead as these have similar functions but do not cause this headache!"
+				"{ftbquests.chapter.read_the_questbook.quests1.description0}"
 				""
-				"If a quest is not triggering, do not fret! Simply place the problematic items into a chest, and then re-take them, which should trigger the FTB Quests condition again."
+				"{ftbquests.chapter.read_the_questbook.quests1.description2}"
 			]
 			id: "70731526C9551DD6"
 			tasks: [
@@ -68,47 +72,51 @@
 			]
 		}
 		{
-			title: "&6Hidden Chapters"
+			title: "{ftbquests.chapter.read_the_questbook.quests2.title}"
 			icon: "createastral:subatomic_ingot"
 			x: -4.0d
 			y: -6.5d
-			subtitle: "Your issues might be solved in later, hidden chapters!"
+			subtitle: "{ftbquests.chapter.read_the_questbook.quests2.subtitle}"
 			description: [
-				"By default, the only chapters displayed in the quest book are those which have been unlocked."
+				"{ftbquests.chapter.read_the_questbook.quests2.description0}"
 				""
-				"More chapters are unlocked when you complete the quests that are shaped like a gear at the end of every chapter."
+				"{ftbquests.chapter.read_the_questbook.quests2.description2}"
 			]
 			id: "604EEAD6E9E5D671"
-			tasks: [{
-				id: "4C1E4BD27BAAEDF0"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "4C1E4BD27BAAEDF0"
+					type: "checkmark"
+				}
+			]
 		}
 		{
-			title: "&6Common Server Lag Causes"
+			title: "{ftbquests.chapter.read_the_questbook.quests3.title}"
 			icon: "create:brass_funnel"
 			x: -6.0d
 			y: -7.5d
-			subtitle: "MSPT = MilliSeconds Per Tick. More MSPT, more server lag."
+			subtitle: "{ftbquests.chapter.read_the_questbook.quests3.subtitle}"
 			description: [
-				"> &l&4Brass Funnels or Smart Chutes&r"
-				"Extracting items from a big inventory (like a big vault or a big chest) causes significant MSPT usage, funnels/chutes use more MSPT when filtered with a \"List Filter\" or \"Attribute Filter\" item, scales linearly to amount of filtered items."
+				"{ftbquests.chapter.read_the_questbook.quests3.description0}"
+				"{ftbquests.chapter.read_the_questbook.quests3.description1}"
 				""
-				"> &l&4Bulk-processing dropped items&r"
-				"Instead, bulk process items on Depots or Belts."
+				"{ftbquests.chapter.read_the_questbook.quests3.description3}"
+				"{ftbquests.chapter.read_the_questbook.quests3.description4}"
 				""
-				"> &l&4Contraption displacement-based Cobblestone generators&r"
-				"&7&oA type of generator where contraption locking into a spot breaks the Cobblestone, replacing it with a contraption (hence the term \"displacing\").&r"
-				"These are prone to spilling item entities everywhere, causes noticeable MSPT spikes when active and even more if the items are staying for a long time."
+				"{ftbquests.chapter.read_the_questbook.quests3.description6}"
+				"{ftbquests.chapter.read_the_questbook.quests3.description7}"
+				"{ftbquests.chapter.read_the_questbook.quests3.description8}"
 			]
 			id: "120F8BAE32A271B8"
-			tasks: [{
-				id: "54D46298535515CD"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "54D46298535515CD"
+					type: "checkmark"
+				}
+			]
 		}
 		{
-			title: "&6Villager FAQ"
+			title: "{ftbquests.chapter.read_the_questbook.quests4.title}"
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -118,142 +126,156 @@
 			}
 			x: -6.0d
 			y: -6.5d
-			subtitle: "Massive inhumane trading halls are back, baby!"
+			subtitle: "{ftbquests.chapter.read_the_questbook.quests4.subtitle}"
 			description: [
-				"As of v2.1 villagers have now been reworked. Old progression skips are fixed and the Tech Reborn Electrician + Metallurgist &6(Generator + Iron Alloy Furnace workstations)&r now focus on Redstone + Create-focused items respectively."
+				"{ftbquests.chapter.read_the_questbook.quests4.description0}"
 				""
-				"Diamond gear is no longer obtainable from villagers, looks like they forgot how to forge it..."
+				"{ftbquests.chapter.read_the_questbook.quests4.description2}"
 			]
 			id: "01438CFAE0491B76"
-			tasks: [{
-				id: "28660DD237438E78"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "28660DD237438E78"
+					type: "checkmark"
+				}
+			]
 		}
 		{
-			title: "&6The Smeltery is disabled!"
+			title: "{ftbquests.chapter.read_the_questbook.quests5.title}"
 			icon: "tconstruct:smeltery_controller"
 			x: -7.0d
 			y: -7.5d
-			subtitle: "Alloying is done in a different way!"
+			subtitle: "{ftbquests.chapter.read_the_questbook.quests5.subtitle}"
 			description: [
-				"Hephaestus alloys are made in Create's &lMixing Basin&r."
+				"{ftbquests.chapter.read_the_questbook.quests5.description0}"
 				""
-				"Melting metals is done in the smaller &l&2Melter&r multiblock, unlocked in Chapter 2."
+				"{ftbquests.chapter.read_the_questbook.quests5.description2}"
 				""
-				"Your large-scale, later-game mineral melting solution is the &l&6Foundry&r, unlocked in Chapter 3."
+				"{ftbquests.chapter.read_the_questbook.quests5.description4}"
 			]
 			id: "671B581118263B3A"
-			tasks: [{
-				id: "26274474BC591ECF"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "26274474BC591ECF"
+					type: "checkmark"
+				}
+			]
 		}
 		{
-			title: "&6Patterns?"
+			title: "{ftbquests.chapter.read_the_questbook.quests6.title}"
 			icon: "ae2:pattern_encoding_terminal"
 			x: -7.0d
 			y: -6.5d
-			subtitle: "Finally, we can use AE2 to its full potential"
+			subtitle: "{ftbquests.chapter.read_the_questbook.quests6.subtitle}"
 			description: [
-				"As of v2.1, AE2 patterns are now ENABLED and craftable."
+				"{ftbquests.chapter.read_the_questbook.quests6.description0}"
 				""
-				"The molecular assembler has been disabled as a result."
+				"{ftbquests.chapter.read_the_questbook.quests6.description2}"
 			]
 			id: "6C4B3D1FD0CA9903"
-			tasks: [{
-				id: "5687C491EEC25E38"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "5687C491EEC25E38"
+					type: "checkmark"
+				}
+			]
 		}
 		{
-			title: "&6Item Transport"
+			title: "{ftbquests.chapter.read_the_questbook.quests7.title}"
 			icon: "create:schedule"
 			x: -8.0d
 			y: -7.5d
-			subtitle: "So many methods!"
+			subtitle: "{ftbquests.chapter.read_the_questbook.quests7.subtitle}"
 			description: [
-				"To begin with, you'll be using Create's &9Belts&r to move items short-range. This works pretty well and has relatively high throughput, but it won't last you the whole game."
+				"{ftbquests.chapter.read_the_questbook.quests7.description0}"
 				""
-				"Soon you'll unlock &6Trains&r! These are available in Chapter 1 and will suit your long-distance needs for most of the game. Trains can travel through portals and even unloaded chunks, however you need to have your stations and machines loaded in order for the Trains to pick up their cargo."
+				"{ftbquests.chapter.read_the_questbook.quests7.description2}"
 				""
-				"Later on, &3AE2&r will become available in Chapter 3. AE2 is an extensive and incredibly powerful mod, it's recommended you go to their wiki at &2https://appliedenergistics.org&r!"
+				"{ftbquests.chapter.read_the_questbook.quests7.description4}"
 			]
 			id: "0AC8216D9E5F1131"
-			tasks: [{
-				id: "5CB0331F5A76150B"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "5CB0331F5A76150B"
+					type: "checkmark"
+				}
+			]
 		}
 		{
-			title: "&6How do I input to storage units?"
+			title: "{ftbquests.chapter.read_the_questbook.quests8.title}"
 			icon: "techreborn:crude_storage_unit"
 			x: -8.0d
 			y: -6.5d
-			subtitle: "Crude Storage Unit my beloved"
+			subtitle: "{ftbquests.chapter.read_the_questbook.quests8.subtitle}"
 			description: [
-				"By default, Tech Reborn storage units don't allow automatic inputting nor outputting."
+				"{ftbquests.chapter.read_the_questbook.quests8.description0}"
 				""
-				"To allow your storage unit to accept items from automation, go into their inventory, and click the wrench tab on the left."
+				"{ftbquests.chapter.read_the_questbook.quests8.description2}"
 				""
-				"For inputs, select the &lIN&r slot and set the sides you want to be inputs to &9blue&r."
+				"{ftbquests.chapter.read_the_questbook.quests8.description4}"
 				""
-				"For output, select the &lOUT&r slot and set the sides you want to output to &6orange&r."
+				"{ftbquests.chapter.read_the_questbook.quests8.description6}"
 				""
-				"The &6Back Output Slot&r on the UI is the corner face, in the bottom right."
+				"{ftbquests.chapter.read_the_questbook.quests8.description8}"
 			]
 			id: "620C9147A1AD808F"
-			tasks: [{
-				id: "6EBA920A8E37F431"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "6EBA920A8E37F431"
+					type: "checkmark"
+				}
+			]
 		}
 		{
-			title: "&6Brass Info"
+			title: "{ftbquests.chapter.read_the_questbook.quests9.title}"
 			icon: "create:brass_ingot"
 			x: -10.5d
 			y: -7.5d
-			subtitle: "No filtering options?"
+			subtitle: "{ftbquests.chapter.read_the_questbook.quests9.subtitle}"
 			description: [
-				"In Create: Astral, progression follows a different order than that which you may be familiar with."
+				"{ftbquests.chapter.read_the_questbook.quests9.description0}"
 				""
-				"&6Brass is not obtainable pre-Moon&r, as Blazes, which are required to heat Basins to mix it, are only found inside \"Lunar Power Plants\", large structures found on the Moon."
+				"{ftbquests.chapter.read_the_questbook.quests9.description2}"
 				""
-				"&6You do not require a rocket to reach the Moon&r, instead you'll find yourself reaching it rather early... (End of Chapter 2)"
+				"{ftbquests.chapter.read_the_questbook.quests9.description4}"
 			]
 			id: "441EA3A4F4DDC6A7"
-			tasks: [{
-				id: "5EF5138C4FFA1D40"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "5EF5138C4FFA1D40"
+					type: "checkmark"
+				}
+			]
 		}
 		{
-			title: "&6Superheating FAQ"
+			title: "{ftbquests.chapter.read_the_questbook.quests10.title}"
 			icon: "create:blaze_burner"
 			x: -11.5d
 			y: -7.5d
 			description: [
-				"In Create: Astral, progression follows a different order than that which you may be familiar with."
+				"{ftbquests.chapter.read_the_questbook.quests10.description0}"
 				""
-				"Heating Blazes with regular fuel is going to be the primary heat level up &6until late Chapter 4&r. Blaze Cakes are a later component and will not be crafted through processes you'll be familiar with."
+				"{ftbquests.chapter.read_the_questbook.quests10.description2}"
 			]
 			id: "6F757AA5D8206995"
-			tasks: [{
-				id: "3EF6EF90A1BA32E9"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "3EF6EF90A1BA32E9"
+					type: "checkmark"
+				}
+			]
 		}
 		{
-			title: "&6Where are my portals?"
+			title: "{ftbquests.chapter.read_the_questbook.quests11.title}"
 			x: -11.5d
 			y: -6.5d
-			subtitle: "Say farewell to the Nether!"
+			subtitle: "{ftbquests.chapter.read_the_questbook.quests11.subtitle}"
 			description: [
-				"Attempting to construct a Nether Portal will leave you as disappointed as placing Water into a Glowstone portal frame..."
+				"{ftbquests.chapter.read_the_questbook.quests11.description0}"
 				""
-				"&oAs far as we know,&r the Nether is long gone. It won't be possible to establish a connection. "
+				"{ftbquests.chapter.read_the_questbook.quests11.description2}"
 				""
-				"&2(Portals can still be made, but they will be unresponsive upon entering.)"
+				"{ftbquests.chapter.read_the_questbook.quests11.description4}"
 				""
 			]
 			id: "50A67A22E5C03589"
@@ -261,7 +283,7 @@
 				{
 					id: "225D156FEDCD5C4E"
 					type: "dimension"
-					title: "What's a Nether? (Completed upon joining the world)"
+					title: "{ftbquests.chapter.read_the_questbook.quests11.tasks0.title}"
 					dimension: "minecraft:overworld"
 				}
 				{
@@ -271,7 +293,7 @@
 			]
 		}
 		{
-			title: "&6Getting to the Moon without rockets?"
+			title: "{ftbquests.chapter.read_the_questbook.quests12.title}"
 			icon: {
 				id: "ad_astra:tier_1_rocket"
 				Count: 1b
@@ -279,37 +301,41 @@
 			}
 			x: -10.5d
 			y: -6.5d
-			subtitle: "Moon Portals!"
+			subtitle: "{ftbquests.chapter.read_the_questbook.quests12.subtitle}"
 			description: [
-				"Create: Astral delves into methods of reaching the Moon some would consider 'unconventional'."
+				"{ftbquests.chapter.read_the_questbook.quests12.description0}"
 				""
-				"The Moon is reached using a &lportal&r at the end of Chapter 2, and is realistically meant to be treated as an alternative to making the Nether Portal."
+				"{ftbquests.chapter.read_the_questbook.quests12.description2}"
 			]
 			id: "2567CAC0A184AC8F"
-			tasks: [{
-				id: "338D8F2C593FE97E"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "338D8F2C593FE97E"
+					type: "checkmark"
+				}
+			]
 		}
 		{
-			title: "&4Computercraft / Turtle Chunk Saving!"
+			title: "{ftbquests.chapter.read_the_questbook.quests13.title}"
 			icon: "computercraft:computer_normal"
 			x: -3.0d
 			y: -6.5d
-			subtitle: "Computercraft in 1.18.2 has a chunk saving issue!"
+			subtitle: "{ftbquests.chapter.read_the_questbook.quests13.subtitle}"
 			description: [
-				"Wait on the pause menu for &6around 10 seconds in singleplayer&r to allow chunks to fully autosave, before quitting a session. &2This bug is not present on dedicated servers&r, which do actual save sequences."
+				"{ftbquests.chapter.read_the_questbook.quests13.description0}"
 				""
-				"&l&3This only applies if you are near chunks containing computers!&r"
+				"{ftbquests.chapter.read_the_questbook.quests13.description2}"
 			]
 			id: "0896080DB6ED4E3D"
-			tasks: [{
-				id: "710CEF4FF2ADA411"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "710CEF4FF2ADA411"
+					type: "checkmark"
+				}
+			]
 		}
 		{
-			title: "&6Repairing my Space Suit!"
+			title: "{ftbquests.chapter.read_the_questbook.quests14.title}"
 			icon: {
 				id: "ad_astra:space_suit"
 				Count: 1b
@@ -319,60 +345,66 @@
 			}
 			x: -4.0d
 			y: -7.5d
-			subtitle: "Low on durability?"
+			subtitle: "{ftbquests.chapter.read_the_questbook.quests14.subtitle}"
 			description: [
-				"Each Space Suit tier uses vanilla Minecraft mechanics for repairing and enchanting. It is recommended you craft Mending books to repair these."
+				"{ftbquests.chapter.read_the_questbook.quests14.description0}"
 				""
-				"This naturally comes with less convenience than tinkers, however the repair ingredients are as follows:"
+				"{ftbquests.chapter.read_the_questbook.quests14.description2}"
 				""
-				"&2Regular Space Suit&r = Sturdy Sheets OR Steel Ingots"
-				"&5Lead-Lined Space Suit&r = Netherite Ingots"
-				"&4Jet Suit&r = Calorite Ingots"
+				"{ftbquests.chapter.read_the_questbook.quests14.description4}"
+				"{ftbquests.chapter.read_the_questbook.quests14.description5}"
+				"{ftbquests.chapter.read_the_questbook.quests14.description6}"
 			]
 			id: "48863CE3EB44E94C"
-			tasks: [{
-				id: "7D080DA78B72A6FB"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "7D080DA78B72A6FB"
+					type: "checkmark"
+				}
+			]
 		}
 		{
-			title: "Common FAQ!"
+			title: "{ftbquests.chapter.read_the_questbook.quests15.title}"
 			x: -13.5d
 			y: -7.0d
 			shape: "gear"
-			subtitle: "We're building an FAQ ingame! Common questions which arise usually have explainable answers which may not be immediately obvious."
+			subtitle: "{ftbquests.chapter.read_the_questbook.quests15.subtitle}"
 			description: [
-				"As the pack evolves, new knowledge must be shared."
+				"{ftbquests.chapter.read_the_questbook.quests15.description0}"
 				""
-				"As such, contributing to this page with questions *you* had when trying the pack is the most valuable content we can add."
+				"{ftbquests.chapter.read_the_questbook.quests15.description2}"
 				""
-				"PR's on Git are welcome with your own edits to this tab."
-				"(File = read_the_questbook.snbt)"
+				"{ftbquests.chapter.read_the_questbook.quests15.description4}"
+				"{ftbquests.chapter.read_the_questbook.quests15.description5}"
 			]
 			size: 3.0d
 			id: "70E54AE7E953CDB2"
-			tasks: [{
-				id: "0FFF0F95A45D6A56"
-				type: "item"
-				item: "ftbquests:book"
-			}]
+			tasks: [
+				{
+					id: "0FFF0F95A45D6A56"
+					type: "item"
+					item: "ftbquests:book"
+				}
+			]
 		}
 		{
-			title: "&6Early-game filtering"
+			title: "{ftbquests.chapter.read_the_questbook.quests16.title}"
 			icon: "create:filter"
 			x: -3.0d
 			y: -7.5d
-			subtitle: "No Brass?"
+			subtitle: "{ftbquests.chapter.read_the_questbook.quests16.subtitle}"
 			description: [
-				"Drawers from &6Extended Drawers&r in conjunction with Chutes/Andesite Funnels from &6Create&r are good replacements for Brass logistics."
+				"{ftbquests.chapter.read_the_questbook.quests16.description0}"
 				""
-				"&6Locked Drawers&r are also a feature in Extended Drawers, preventing any other item from entering the locked drawer."
+				"{ftbquests.chapter.read_the_questbook.quests16.description2}"
 			]
 			id: "02E38442290805ED"
-			tasks: [{
-				id: "7B022C1C8FCE53E2"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "7B022C1C8FCE53E2"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			icon: {
@@ -384,20 +416,22 @@
 			}
 			x: -3.0d
 			y: -5.5d
-			subtitle: "Toggle Combat Music"
+			subtitle: "{ftbquests.chapter.read_the_questbook.quests17.subtitle}"
 			description: [
-				"We heard your request!! Combat music has been turned down and a config option has been added."
+				"{ftbquests.chapter.read_the_questbook.quests17.description0}"
 				""
-				".minecraft\\config\\astraladditions\\combatmusic.txt"
+				"{ftbquests.chapter.read_the_questbook.quests17.description2}"
 				""
-				"Simply set the value in this file from 'true' to 'false'"
+				"{ftbquests.chapter.read_the_questbook.quests17.description4}"
 			]
 			id: "717070F52F2CC786"
-			tasks: [{
-				id: "42CB71A3B0C8A6BF"
-				type: "checkmark"
-				title: "Combat Music"
-			}]
+			tasks: [
+				{
+					id: "42CB71A3B0C8A6BF"
+					type: "checkmark"
+					title: "{ftbquests.chapter.read_the_questbook.quests17.tasks0.title}"
+				}
+			]
 		}
 		{
 			icon: {
@@ -410,42 +444,46 @@
 			x: -4.0d
 			y: -5.5d
 			description: [
-				"The custom music you will hear throughout the pack is licensed so that you may use it &6wherever you wish&r!"
+				"{ftbquests.chapter.read_the_questbook.quests18.description0}"
 				""
-				"Feel free to include it in &6YouTube videos&r or content surrounding Astral, it will not receieve strikes."
+				"{ftbquests.chapter.read_the_questbook.quests18.description2}"
 				""
-				"Music was produced by Hesperyd, XETROO, PINS3Y, ethanicuss"
+				"{ftbquests.chapter.read_the_questbook.quests18.description4}"
 			]
 			id: "12236EB957EBAF2A"
-			tasks: [{
-				id: "2AB40504A683A539"
-				type: "checkmark"
-				title: "Astral Music Info"
-			}]
+			tasks: [
+				{
+					id: "2AB40504A683A539"
+					type: "checkmark"
+					title: "{ftbquests.chapter.read_the_questbook.quests18.tasks0.title}"
+				}
+			]
 		}
 		{
-			title: "&6Create Big Cannon Changes&r"
+			title: "{ftbquests.chapter.read_the_questbook.quests19.title}"
 			icon: "createbigcannons:bronze_cannon_barrel"
 			x: -5.0d
 			y: -5.5d
 			description: [
-				"The progression of &6Big Cannons&r is slightly modified."
+				"{ftbquests.chapter.read_the_questbook.quests19.description0}"
 				""
-				"Whilst the majority of recipes are the same, the materials used in some have been adjusted to match the astral progression curve."
+				"{ftbquests.chapter.read_the_questbook.quests19.description2}"
 				""
-				"Wrought Iron uses &6Andesite Iron&r."
+				"{ftbquests.chapter.read_the_questbook.quests19.description4}"
 				""
-				"Liquid Bronze is locked behind &6Chapter 2&r."
+				"{ftbquests.chapter.read_the_questbook.quests19.description6}"
 				""
-				"Steel is obtained at the end of &6Chapter 3&r."
+				"{ftbquests.chapter.read_the_questbook.quests19.description8}"
 				""
-				"The final tier of barrel has been repurposed to &6Ostrum&r, obtained in &6Chapter 4&r."
+				"{ftbquests.chapter.read_the_questbook.quests19.description10}"
 			]
 			id: "280C4BF916CC90BC"
-			tasks: [{
-				id: "401D67F02E5ED682"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "401D67F02E5ED682"
+					type: "checkmark"
+				}
+			]
 		}
 	]
 	quest_links: [ ]

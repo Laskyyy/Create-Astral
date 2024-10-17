@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 6
 	filename: "astral_storage"
-	title: "{chapter.6.title}"
+	title: "{ftbquests.chapter.astral_storage.title}"
 	icon: "ae2:fluix_dust"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -47,7 +47,7 @@
 	]
 	quests: [
 		{
-			title: "{chapter.6.quest.6.title}"
+			title: "{ftbquests.chapter.astral_storage.quests0.title}"
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -58,72 +58,82 @@
 			x: -5.0d
 			y: 2.0d
 			shape: "pentagon"
-			subtitle: "{chapter.6.quest.6.subtitle}"
-			description: ["{chapter.6.quest.6.description.1}"]
+			subtitle: "{ftbquests.chapter.astral_storage.quests0.subtitle}"
+			description: ["{ftbquests.chapter.astral_storage.quests0.description}"]
 			dependencies: ["790B0567FF49110F"]
 			hide: true
 			size: 2.0d
 			id: "326EB9A775B8D791"
-			tasks: [{
-				id: "50441F5A6EECD674"
-				type: "checkmark"
-				title: "{chapter.6.quest.6.task.1.title}"
-			}]
+			tasks: [
+				{
+					id: "50441F5A6EECD674"
+					type: "checkmark"
+					title: "{ftbquests.chapter.astral_storage.quests0.tasks0.title}"
+				}
+			]
 		}
 		{
-			title: "{chapter.6.quest.7.title}"
+			title: "{ftbquests.chapter.astral_storage.quests1.title}"
 			x: -3.0d
 			y: -2.0d
 			dependencies: ["7A2E9BE533B92DC0"]
 			id: "396D08757F6B9CC2"
-			tasks: [{
-				id: "3D7BCAD49F189A8F"
-				type: "item"
-				item: "ae2:calculation_processor_press"
-			}]
+			tasks: [
+				{
+					id: "3D7BCAD49F189A8F"
+					type: "item"
+					item: "ae2:calculation_processor_press"
+				}
+			]
 		}
 		{
-			title: "{chapter.6.quest.8.title}"
+			title: "{ftbquests.chapter.astral_storage.quests2.title}"
 			x: -7.0d
 			y: -2.0d
 			dependencies: ["7A2E9BE533B92DC0"]
 			id: "1BF34B94FC7DCC2A"
-			tasks: [{
-				id: "61951F37EB189176"
-				type: "item"
-				item: "ae2:engineering_processor_press"
-			}]
+			tasks: [
+				{
+					id: "61951F37EB189176"
+					type: "item"
+					item: "ae2:engineering_processor_press"
+				}
+			]
 		}
 		{
-			title: "{chapter.6.quest.9.title}"
+			title: "{ftbquests.chapter.astral_storage.quests3.title}"
 			x: -5.0d
 			y: -2.5d
 			dependencies: ["7A2E9BE533B92DC0"]
 			id: "2A2EAD3A06D7196D"
-			tasks: [{
-				id: "7B03E7692661F1C8"
-				type: "item"
-				item: "ae2:logic_processor_press"
-			}]
+			tasks: [
+				{
+					id: "7B03E7692661F1C8"
+					type: "item"
+					item: "ae2:logic_processor_press"
+				}
+			]
 		}
 		{
-			title: "{chapter.6.quest.10.title}"
+			title: "{ftbquests.chapter.astral_storage.quests4.title}"
 			x: -5.5d
 			y: 0.0d
-			subtitle: "{chapter.6.quest.10.subtitle}"
+			subtitle: "{ftbquests.chapter.astral_storage.quests4.subtitle}"
 			dependencies: ["326EB9A775B8D791"]
 			id: "43DF61335F1A3AD6"
-			tasks: [{
-				id: "6AF0153E0EEBA9AF"
-				type: "item"
-				item: "ae2:silicon_press"
-			}]
+			tasks: [
+				{
+					id: "6AF0153E0EEBA9AF"
+					type: "item"
+					item: "ae2:silicon_press"
+				}
+			]
 		}
 		{
-			title: "{chapter.6.quest.11.title}"
+			title: "{ftbquests.chapter.astral_storage.quests5.title}"
 			x: -4.5d
 			y: 0.0d
-			subtitle: "{chapter.6.quest.11.subtitle}"
+			subtitle: "{ftbquests.chapter.astral_storage.quests5.subtitle}"
 			dependencies: ["790B0567FF49110F"]
 			hide: true
 			id: "227EF17194467491"
@@ -136,29 +146,33 @@
 			]
 		}
 		{
-			title: "{chapter.6.quest.12.title}"
+			title: "{ftbquests.chapter.astral_storage.quests6.title}"
 			x: -5.0d
 			y: -1.0d
-			subtitle: "{chapter.6.quest.12.subtitle}"
+			subtitle: "{ftbquests.chapter.astral_storage.quests6.subtitle}"
 			dependencies: [
 				"43DF61335F1A3AD6"
 				"227EF17194467491"
 			]
 			id: "7A2E9BE533B92DC0"
-			tasks: [{
-				id: "3EB0AE528455D7C3"
-				type: "item"
-				item: "ae2:printed_silicon"
-			}]
-			rewards: [{
-				id: "114410E96146E5FE"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 1659707140697346501L
-			}]
+			tasks: [
+				{
+					id: "3EB0AE528455D7C3"
+					type: "item"
+					item: "ae2:printed_silicon"
+				}
+			]
+			rewards: [
+				{
+					id: "114410E96146E5FE"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1659707140697346501L
+				}
+			]
 		}
 		{
-			title: "{chapter.6.quest.13.title}"
+			title: "{ftbquests.chapter.astral_storage.quests7.title}"
 			x: -5.0d
 			y: -4.0d
 			dependencies: [
@@ -184,30 +198,34 @@
 					item: "ae2:printed_logic_processor"
 				}
 			]
-			rewards: [{
-				id: "6521283F3C0CE5E9"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 1659707140697346501L
-			}]
+			rewards: [
+				{
+					id: "6521283F3C0CE5E9"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1659707140697346501L
+				}
+			]
 		}
 		{
-			title: "{chapter.6.quest.23.title}"
+			title: "{ftbquests.chapter.astral_storage.quests8.title}"
 			x: -3.5d
 			y: 1.0d
 			description: [
-				"{chapter.6.quest.23.description.1}"
+				"{ftbquests.chapter.astral_storage.quests8.description0}"
 				""
-				"&eAll uses have been merged with Ad Astra Sky Stone!&r"
+				"{ftbquests.chapter.astral_storage.quests8.description2}"
 			]
 			dependencies: ["326EB9A775B8D791"]
 			id: "432AF29897E50CDC"
-			tasks: [{
-				id: "1BA6BB94C76CAA81"
-				type: "item"
-				item: "ad_astra:sky_stone"
-				count: 64L
-			}]
+			tasks: [
+				{
+					id: "1BA6BB94C76CAA81"
+					type: "item"
+					item: "ad_astra:sky_stone"
+					count: 64L
+				}
+			]
 			rewards: [
 				{
 					id: "3A10A6E1DB7FD45E"
@@ -224,58 +242,62 @@
 			]
 		}
 		{
-			title: "Certus Quartz Dust Automation!"
+			title: "{ftbquests.chapter.astral_storage.quests9.title}"
 			x: -6.5d
 			y: -5.0d
-			subtitle: "Blue dust? Hmmm..."
-			description: [
-				"You can automate this by crafting it with Sand and washing the resultant seeds. They will grow into pure crystals, and then ground into dust."
-			]
+			subtitle: "{ftbquests.chapter.astral_storage.quests9.subtitle}"
+			description: ["{ftbquests.chapter.astral_storage.quests9.description}"]
 			hide_dependency_lines: true
 			dependencies: ["227EF17194467491"]
 			id: "47DD53AAA0680214"
-			tasks: [{
-				id: "4D52CABBB8594569"
-				type: "item"
-				item: "ae2:certus_quartz_dust"
-			}]
+			tasks: [
+				{
+					id: "4D52CABBB8594569"
+					type: "item"
+					item: "ae2:certus_quartz_dust"
+				}
+			]
 		}
 		{
 			x: -3.5d
 			y: -5.0d
-			subtitle: "You should have some now!"
-			description: ["If you haven't found a way to stockpile this now, you definitely should!"]
+			subtitle: "{ftbquests.chapter.astral_storage.quests10.subtitle}"
+			description: ["{ftbquests.chapter.astral_storage.quests10.description}"]
 			hide_dependency_lines: true
 			dependencies: ["227EF17194467491"]
 			id: "5B72AC99C3A727CE"
-			tasks: [{
-				id: "40E04826DCB04BAE"
-				type: "item"
-				item: "kubejs:shimmer_bucket"
-			}]
+			tasks: [
+				{
+					id: "40E04826DCB04BAE"
+					type: "item"
+					item: "kubejs:shimmer_bucket"
+				}
+			]
 		}
 		{
 			x: -5.0d
 			y: -5.0d
-			description: ["This should be stockpiled when investing into larger AE2 setups."]
+			description: ["{ftbquests.chapter.astral_storage.quests11.description}"]
 			dependencies: [
 				"5B72AC99C3A727CE"
 				"47DD53AAA0680214"
 				"7A9F59521C6A6B7E"
 			]
 			id: "2D5C0605E1EB21AD"
-			tasks: [{
-				id: "69B7BA16EDCF980E"
-				type: "item"
-				item: "ae2:fluix_dust"
-			}]
+			tasks: [
+				{
+					id: "69B7BA16EDCF980E"
+					type: "item"
+					item: "ae2:fluix_dust"
+				}
+			]
 		}
 		{
-			title: "Processors"
+			title: "{ftbquests.chapter.astral_storage.quests12.title}"
 			icon: "ae2:calculation_processor"
 			x: -5.0d
 			y: -6.0d
-			subtitle: "We suggest stockpiling in sets of 10-20, it's a pain crafting them all one by one."
+			subtitle: "{ftbquests.chapter.astral_storage.quests12.subtitle}"
 			dependencies: ["2D5C0605E1EB21AD"]
 			id: "0F92EA9231F85D25"
 			tasks: [
@@ -295,22 +317,24 @@
 					item: "ae2:engineering_processor"
 				}
 			]
-			rewards: [{
-				id: "0D05C14246FE6AB5"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 1659707140697346501L
-			}]
+			rewards: [
+				{
+					id: "0D05C14246FE6AB5"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1659707140697346501L
+				}
+			]
 		}
 		{
-			title: "The first cables"
+			title: "{ftbquests.chapter.astral_storage.quests13.title}"
 			icon: "ae2:fluix_glass_cable"
 			x: -8.0d
 			y: -7.5d
-			subtitle: "The first items you'll probably use"
+			subtitle: "{ftbquests.chapter.astral_storage.quests13.subtitle}"
 			description: [
-				"The Shimmer Glass Cable can carry up to 8 channels, and when you exceed the channel limit, any devices farther on the line won't receive a channel and thus won't work."
-				"Smart Cables display the amount of channels used, both on Jade (your block viewer in top middle) and on the block itself, viewed as a line."
+				"{ftbquests.chapter.astral_storage.quests13.description0}"
+				"{ftbquests.chapter.astral_storage.quests13.description1}"
 				""
 			]
 			dependencies: ["0F92EA9231F85D25"]
@@ -320,7 +344,7 @@
 				{
 					id: "385213E0E6E13C3B"
 					type: "item"
-					title: "Any #ae2:glass_cable"
+					title: "{ftbquests.chapter.astral_storage.quests13.tasks0.title}"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -332,7 +356,7 @@
 				{
 					id: "24DC43C594E8D66F"
 					type: "item"
-					title: "Any #ae2:smart_cable"
+					title: "{ftbquests.chapter.astral_storage.quests13.tasks1.title}"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -342,23 +366,25 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "2482933B90AC24EA"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 1659707140697346501L
-			}]
+			rewards: [
+				{
+					id: "2482933B90AC24EA"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1659707140697346501L
+				}
+			]
 		}
 		{
-			title: "The jumpstart of the system"
+			title: "{ftbquests.chapter.astral_storage.quests14.title}"
 			icon: "ae2:singularity"
 			x: -6.5d
 			y: -7.5d
-			subtitle: "Time for engineering, baby!"
+			subtitle: "{ftbquests.chapter.astral_storage.quests14.subtitle}"
 			description: [
-				"Everything AE2 consumes a channel, which cables can transport. More on that later, but keep in mind each side of a CONTROLLER gives 32 channels, while a network that does not have a Controller can handle up to 8 channels."
+				"{ftbquests.chapter.astral_storage.quests14.description0}"
 				""
-				"(Only one item is needed to complete this quest)"
+				"{ftbquests.chapter.astral_storage.quests14.description2}"
 			]
 			dependencies: ["0F92EA9231F85D25"]
 			min_required_tasks: 1
@@ -375,22 +401,24 @@
 					item: "ae2:controller"
 				}
 			]
-			rewards: [{
-				id: "58123A1F38E15005"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 1659707140697346501L
-			}]
+			rewards: [
+				{
+					id: "58123A1F38E15005"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1659707140697346501L
+				}
+			]
 		}
 		{
-			title: "Advanced cabling"
+			title: "{ftbquests.chapter.astral_storage.quests15.title}"
 			icon: "ae2:fluix_smart_dense_cable"
 			x: -8.0d
 			y: -8.5d
-			subtitle: "For the chads of engineering only!"
+			subtitle: "{ftbquests.chapter.astral_storage.quests15.subtitle}"
 			description: [
-				"The Dense Cable does exactly what you think it does - it can carry 32 channels instead of 8!"
-				"The Glass Fiber does something entirely different; it can carry AE power, but 0 channels, thus it will break systems. Commonly used to transfer power or create subnetworks, but more on that later."
+				"{ftbquests.chapter.astral_storage.quests15.description0}"
+				"{ftbquests.chapter.astral_storage.quests15.description1}"
 			]
 			dependencies: ["29DB1FA90A9FEE9C"]
 			min_required_tasks: 1
@@ -409,107 +437,117 @@
 			]
 		}
 		{
-			title: "Viewing items"
+			title: "{ftbquests.chapter.astral_storage.quests16.title}"
 			x: -6.5d
 			y: -8.5d
-			subtitle: "This thing can store up to 10 Cells simultaneously"
+			subtitle: "{ftbquests.chapter.astral_storage.quests16.subtitle}"
 			description: [
-				"ME drives store your storage cells. Each cell has a specific number of bytes, and can hold 63 item types. For items that you have a lot of, it is generally recommended to allocate the larger cells to them."
-				"ME Drives also form a multiblock, allowing you to only hook up 1 cable to it, and they all get added to the ME system. They do consume one channel each, though!"
-				"(channel info is on the left track)"
+				"{ftbquests.chapter.astral_storage.quests16.description0}"
+				"{ftbquests.chapter.astral_storage.quests16.description1}"
+				"{ftbquests.chapter.astral_storage.quests16.description2}"
 			]
 			dependencies: ["0C8063DF02E52A47"]
 			id: "690FA10B8A532B16"
-			tasks: [{
-				id: "76F97AC9364E59F1"
-				type: "item"
-				item: "ae2:drive"
-			}]
+			tasks: [
+				{
+					id: "76F97AC9364E59F1"
+					type: "item"
+					item: "ae2:drive"
+				}
+			]
 		}
 		{
-			title: "Subnetworks"
+			title: "{ftbquests.chapter.astral_storage.quests17.title}"
 			x: -8.0d
 			y: -10.0d
 			description: [
-				"Subnetworks are mainly used to get a certain chain to work, for example creating specific resources through a series of recipes."
+				"{ftbquests.chapter.astral_storage.quests17.description0}"
 				""
-				"These are smaller networks normally powered via Quartz Fiber from the main network. They will act the same as if it was hooked up by an Energy Acceptor, thus able to execute 8 channels."
+				"{ftbquests.chapter.astral_storage.quests17.description2}"
 				""
-				"When you export items into an ME Interface, it will be INSTANTLY put into the respective ME system, thus you can export from a subnet into your main."
+				"{ftbquests.chapter.astral_storage.quests17.description4}"
 			]
 			dependencies: ["100EEA0D73CFFBE6"]
 			optional: true
 			id: "000CC99296151B0A"
-			tasks: [{
-				id: "5821DA7521DE3643"
-				type: "item"
-				item: "ae2:controller"
-			}]
-			rewards: [{
-				id: "6EB559CA6D63CD57"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 1659707140697346501L
-			}]
+			tasks: [
+				{
+					id: "5821DA7521DE3643"
+					type: "item"
+					item: "ae2:controller"
+				}
+			]
+			rewards: [
+				{
+					id: "6EB559CA6D63CD57"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1659707140697346501L
+				}
+			]
 		}
 		{
-			title: "Customising your storage cells"
+			title: "{ftbquests.chapter.astral_storage.quests18.title}"
 			x: -6.5d
 			y: -10.0d
-			subtitle: "You don't want to get all your cells to fill up with one item, do you?"
+			subtitle: "{ftbquests.chapter.astral_storage.quests18.subtitle}"
 			description: [
-				"The Cell Workbench is a very handy tool!"
+				"{ftbquests.chapter.astral_storage.quests18.description0}"
 				""
-				"It has two functions:"
-				"1. You can filter the Cells to only accept given items/fluids - this is called &nformatting&r."
-				"2. You can upgrade the Cells with cards:"
+				"{ftbquests.chapter.astral_storage.quests18.description2}"
+				"{ftbquests.chapter.astral_storage.quests18.description3}"
+				"{ftbquests.chapter.astral_storage.quests18.description4}"
 				""
-				"- &eInverter Card&r - Causes the filter to be a deny-list rather than allow-list."
-				"- &eFuzzy Card&r - The cell disregards NBT when filtering items. You can also set a durability treshold to only accept items with more than desired durability."
-				"- &eEqual Distribution Card&r - Ensures equal maximum amount of items for every type in the cell."
-				"- &eOverflow Destruction Card&r - If the Cell is full or the quota managed by Equal Distribution Card would be exceeded, the items will be &nvoided&r instead of filling up other cells."
+				"{ftbquests.chapter.astral_storage.quests18.description6}"
+				"{ftbquests.chapter.astral_storage.quests18.description7}"
+				"{ftbquests.chapter.astral_storage.quests18.description8}"
+				"{ftbquests.chapter.astral_storage.quests18.description9}"
 			]
 			dependencies: ["690FA10B8A532B16"]
 			min_width: 300
 			id: "0C1BF4EAE2CC1729"
-			tasks: [{
-				id: "7342E1A9A92606C4"
-				type: "item"
-				item: "ae2:cell_workbench"
-			}]
-			rewards: [{
-				id: "45CC9220F71DBF12"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 1659707140697346501L
-			}]
+			tasks: [
+				{
+					id: "7342E1A9A92606C4"
+					type: "item"
+					item: "ae2:cell_workbench"
+				}
+			]
+			rewards: [
+				{
+					id: "45CC9220F71DBF12"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1659707140697346501L
+				}
+			]
 		}
 		{
-			title: "Moving BLOCKS like a Pro"
+			title: "{ftbquests.chapter.astral_storage.quests19.title}"
 			icon: "ae2:spatial_cell_component_2"
 			x: -5.0d
 			y: -10.0d
-			subtitle: "Time for some useful stuff"
+			subtitle: "{ftbquests.chapter.astral_storage.quests19.subtitle}"
 			description: [
-				"Do you remember the blaze spawner you needed for Blaze Rods or to fill empty Blaze Burners? This thing has got you covered."
+				"{ftbquests.chapter.astral_storage.quests19.description0}"
 				""
-				"First, craft yourself the items listed in the quest, PLUS the desired size of Spatial Cell, each having their block capacity in the tooltip. The smallest one, for example, can carry a volume of 2x2x2 blocks."
+				"{ftbquests.chapter.astral_storage.quests19.description2}"
 				""
-				"Then, to define the bounding box of your structure, place Spatial Pylons outside of the bounding box."
+				"{ftbquests.chapter.astral_storage.quests19.description4}"
 				""
-				"A 2-long line of Pylons in north/south direction, 2-long line in east/west, and 2-long line in up/down directions is the required amount for storing a 1x1x1 structure (like the aforementioned Spawner)."
+				"{ftbquests.chapter.astral_storage.quests19.description6}"
 				""
-				"This setup is called a \"Spatial Containment Chamber\". There can be only one on the given network."
+				"{ftbquests.chapter.astral_storage.quests19.description8}"
 				""
-				"Then, place a Spatial IO Port anywhere on the network."
-				"Insert your Spatial Storage Cell into the Spatial IO Port, give the Port a Redstone signal..."
-				"...and your structure ends up in the Spatial Storage!"
+				"{ftbquests.chapter.astral_storage.quests19.description10}"
+				"{ftbquests.chapter.astral_storage.quests19.description11}"
+				"{ftbquests.chapter.astral_storage.quests19.description12}"
 				""
-				"Some additional facts:"
-				"- Once a structure of a given size was stored in the Spatial Storage Cell, that Cell won't work for dimensions other than the dimension that was initially stored."
-				"- Bigger Spatial Containment Chambers have a higher energy cost to store a structure."
-				"- To increase the efficiency of larger Spatial Containment Chambers, you can place additional sets of Pylons 1 block outside of the structure to store."
-				"Be aware that each set of Pylons uses up a channel, so you might need an ME Controller for bigger structures."
+				"{ftbquests.chapter.astral_storage.quests19.description14}"
+				"{ftbquests.chapter.astral_storage.quests19.description15}"
+				"{ftbquests.chapter.astral_storage.quests19.description16}"
+				"{ftbquests.chapter.astral_storage.quests19.description17}"
+				"{ftbquests.chapter.astral_storage.quests19.description18}"
 			]
 			dependencies: ["5B6C345D10546F73"]
 			min_width: 300
@@ -526,32 +564,34 @@
 					item: "ae2:spatial_io_port"
 				}
 			]
-			rewards: [{
-				id: "66FAEE72CCAD091E"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 1659707140697346501L
-			}]
+			rewards: [
+				{
+					id: "66FAEE72CCAD091E"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1659707140697346501L
+				}
+			]
 		}
 		{
-			title: "I hate cabling!"
+			title: "{ftbquests.chapter.astral_storage.quests20.title}"
 			icon: "ae2:quantum_entangled_singularity"
 			x: -5.0d
 			y: -8.5d
-			subtitle: "This is beefy for your power, though - consumes 100 E/t when operational!"
+			subtitle: "{ftbquests.chapter.astral_storage.quests20.subtitle}"
 			description: [
-				"What if your cabling became too long, or you need to go across dimensions?!"
+				"{ftbquests.chapter.astral_storage.quests20.description0}"
 				""
-				"The Quantum Bridge got you covered."
+				"{ftbquests.chapter.astral_storage.quests20.description2}"
 				""
-				"To build a Quantum Bridge, surround the ME Quantum Link Chamber with ME Quantum Rings."
+				"{ftbquests.chapter.astral_storage.quests20.description4}"
 				""
-				"Put one of your Quantum Entangled Singularities into the Link Chamber, and the other one in the Link Chamber of the Bridge at your desired destination."
+				"{ftbquests.chapter.astral_storage.quests20.description6}"
 				""
-				"The Bridge has been established, and the network is now operational in multiple places."
+				"{ftbquests.chapter.astral_storage.quests20.description8}"
 				""
-				"The Quantum Bridge can move up to 32 channels cross-dimensionally."
-				"But remember that both sides need to be chunkloaded in order for the Bridge to work!"
+				"{ftbquests.chapter.astral_storage.quests20.description10}"
+				"{ftbquests.chapter.astral_storage.quests20.description11}"
 			]
 			dependencies: ["5B6C345D10546F73"]
 			id: "0EB3DE329825D112"
@@ -574,51 +614,55 @@
 			]
 		}
 		{
-			title: "Moving items like a pro"
+			title: "{ftbquests.chapter.astral_storage.quests21.title}"
 			x: -5.0d
 			y: -7.5d
-			subtitle: "Belts are soo 1880..."
+			subtitle: "{ftbquests.chapter.astral_storage.quests21.subtitle}"
 			description: [
-				"Ahh yes, the P2P Tunnel, let's do this. (Point-to-Point, for the uninitiated)"
+				"{ftbquests.chapter.astral_storage.quests21.description0}"
 				""
-				"Each type of P2P tunnel can transport their respective type: channels, items, fluids, Redstone signals, energy, or light!"
+				"{ftbquests.chapter.astral_storage.quests21.description2}"
 				""
-				"You can only craft the ME P2P Tunnel, and you right-click it with a specific item to define which type of tunnel it is. (Refer to REI for the items for each type.)"
+				"{ftbquests.chapter.astral_storage.quests21.description4}"
 				""
-				"Now that you have the right P2P Tunnel for the job, you need inputs and outputs. Each P2P network can ONLY have ONE input, but several outputs, which will be split evenly."
+				"{ftbquests.chapter.astral_storage.quests21.description6}"
 				""
-				"To set them, Sneak-Right-Click the input P2P bus with a Memory Card, and proceed to Right-Click the same Card to bind them together. There can be as many output Tunnels as you'd like."
+				"{ftbquests.chapter.astral_storage.quests21.description8}"
 				""
-				"When the appropriate type is inserted into the input bus, it will INSTANTLY appear at the outputs."
+				"{ftbquests.chapter.astral_storage.quests21.description10}"
 				""
-				"Note: All P2P tunnels consume power, and one channel each, so plan accordingly. When transfering channels trough P2P tunnels, you still need channels to transport the channels..."
+				"{ftbquests.chapter.astral_storage.quests21.description12}"
 			]
 			dependencies: ["0F92EA9231F85D25"]
 			id: "5B6C345D10546F73"
-			tasks: [{
-				id: "7B8883E4CC1BDD9F"
-				type: "item"
-				item: "ae2:me_p2p_tunnel"
-			}]
-			rewards: [{
-				id: "17BB7A819118528E"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 1659707140697346501L
-			}]
+			tasks: [
+				{
+					id: "7B8883E4CC1BDD9F"
+					type: "item"
+					item: "ae2:me_p2p_tunnel"
+				}
+			]
+			rewards: [
+				{
+					id: "17BB7A819118528E"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1659707140697346501L
+				}
+			]
 		}
 		{
 			x: -3.5d
 			y: -7.5d
-			subtitle: "'I'm on a highway to hell!'"
+			subtitle: "{ftbquests.chapter.astral_storage.quests22.subtitle}"
 			description: [
-				"Each bus doesn't do a lot that exceeds the brainpower of a normal individual, the Import Bus imports from the adjacent inventory, eating a channel, and inputting everything into the network."
+				"{ftbquests.chapter.astral_storage.quests22.description0}"
 				""
-				"Export Busses do the exact reverse, except the channel of course."
+				"{ftbquests.chapter.astral_storage.quests22.description2}"
 				""
-				"Storage Busses are a bit cooler, first, they treat any inventory connected as if it was part of the ME network, like the contents of a Vault. Thus, items can be put in or extracted by busses. On the left, you can set priorities, the lower, the most important it finds to first fill up this, and then the rest."
+				"{ftbquests.chapter.astral_storage.quests22.description4}"
 				""
-				"The Import and Export Busses can be upgraded with the Acceleration (wonder what it does), Redstone, and Capacity cards, with Capacity increasing the filtering capacity by four, with a cap on two installed at once."
+				"{ftbquests.chapter.astral_storage.quests22.description6}"
 			]
 			dependencies: ["0F92EA9231F85D25"]
 			id: "4CCF69F7FB7BBDF4"
@@ -639,21 +683,23 @@
 					item: "ae2:export_bus"
 				}
 			]
-			rewards: [{
-				id: "7F96188B8FC272CD"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 1659707140697346501L
-			}]
+			rewards: [
+				{
+					id: "7F96188B8FC272CD"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1659707140697346501L
+				}
+			]
 		}
 		{
 			icon: "minecraft:redstone_torch"
 			x: -3.5d
 			y: -8.5d
 			description: [
-				"The Level Emitter is your Stockpile Switch; it emits or stops emitting a Redstone signal once the configured item reaches a certain threshold, which can, of course be chosen."
+				"{ftbquests.chapter.astral_storage.quests23.description0}"
 				""
-				"The Redstone Card enables Redstone control, allowing you to turn off the Export Bus once less than 4 stacks of iron remain in the network."
+				"{ftbquests.chapter.astral_storage.quests23.description2}"
 			]
 			dependencies: ["4CCF69F7FB7BBDF4"]
 			min_required_tasks: 1
@@ -672,7 +718,7 @@
 			]
 		}
 		{
-			title: "This is just an explanation!"
+			title: "{ftbquests.chapter.astral_storage.quests24.title}"
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -682,34 +728,36 @@
 			}
 			x: -7.5d
 			y: 1.0d
-			subtitle: "Stuff can be incomplete, missing, or wrong, always refer to the Wiki to stay with the crowd."
+			subtitle: "{ftbquests.chapter.astral_storage.quests24.subtitle}"
 			description: [""]
 			hide_dependency_lines: true
 			dependencies: ["326EB9A775B8D791"]
 			id: "07A6E8FD5F4961E0"
-			tasks: [{
-				id: "66FEC24EDD870128"
-				type: "checkmark"
-				title: "None of this is perfect!"
-			}]
+			tasks: [
+				{
+					id: "66FEC24EDD870128"
+					type: "checkmark"
+					title: "{ftbquests.chapter.astral_storage.quests24.tasks0.title}"
+				}
+			]
 		}
 		{
-			title: "The power of Creation and Destruction"
+			title: "{ftbquests.chapter.astral_storage.quests25.title}"
 			x: -2.0d
 			y: -7.5d
-			subtitle: "The absolute power... for your cobblestone generators!"
+			subtitle: "{ftbquests.chapter.astral_storage.quests25.subtitle}"
 			description: [
-				"The &eFormation Plane&r acts like a &nStorage Bus&r."
-				"When an item is imported into the ME Network, ME Formation Plane will try to place that block or drop that item."
+				"{ftbquests.chapter.astral_storage.quests25.description0}"
+				"{ftbquests.chapter.astral_storage.quests25.description1}"
 				""
-				"The &eAnnihilation Plane&r works like an &nImport Bus&r."
-				"It will &ninstantly&r break blocks in front of itself and import them into the ME Network."
+				"{ftbquests.chapter.astral_storage.quests25.description3}"
+				"{ftbquests.chapter.astral_storage.quests25.description4}"
 				""
-				"The Annihilation Plane supports enchants:"
-				"- Fortune, Silk Touch - works the same as on the pickaxe"
-				"- Efficiency - decreases power usage upon breaking the block"
+				"{ftbquests.chapter.astral_storage.quests25.description6}"
+				"{ftbquests.chapter.astral_storage.quests25.description7}"
+				"{ftbquests.chapter.astral_storage.quests25.description8}"
 				""
-				"Tip: To \"filter\" the Annihilation Plane, position it so that it can only accept the desired item."
+				"{ftbquests.chapter.astral_storage.quests25.description10}"
 			]
 			dependencies: ["0F92EA9231F85D25"]
 			id: "4C424AB8A9226881"
@@ -725,12 +773,14 @@
 					item: "ae2:annihilation_plane"
 				}
 			]
-			rewards: [{
-				id: "62DF335B4F07E4C4"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 1659707140697346501L
-			}]
+			rewards: [
+				{
+					id: "62DF335B4F07E4C4"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1659707140697346501L
+				}
+			]
 		}
 	]
 	quest_links: [ ]
