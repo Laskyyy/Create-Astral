@@ -215,7 +215,7 @@ const mixings = [
                 output: {fluid: "tconstruct:blazing_blood", amount: BUCKET },
                 input: [
                     "minecraft:blaze_powder",
-                    { fluid: "tconstuct:blood", amount: BUCKET },
+                    { fluid: "tconstruct:blood", amount: BUCKET },
                 ],
                 heat: "superheated",
                 time: null,  //Vegan BLOOD
