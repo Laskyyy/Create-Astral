@@ -1,5 +1,5 @@
 {
-    "name": "Drive Eraser",
+    "name": "custommachinery.astralsignals.drive_eraser",
     "appearance": {
         "block": "astralsignals:drive_eraser_dummy"
     },
@@ -38,13 +38,13 @@
             "type": "custommachinery:status"
         },
         {
-            "text": "Drive Eraser",
+            "text": "custommachinery.astralsignals.drive_eraser.text.1",
             "x": 7,
             "y": 5,
             "type": "custommachinery:text"
         },
         {
-            "text": "Will wipe ANY drive and make it a Blank!",
+            "text": "custommachinery.astralsignals.drive_eraser.text.2",
             "x": 7,
             "y": 55,
             "type": "custommachinery:text"

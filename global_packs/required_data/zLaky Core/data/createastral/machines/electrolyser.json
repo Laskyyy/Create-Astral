@@ -1,5 +1,5 @@
 {
-  "name": "Electrolyser",
+  "name": "custommachinery.createastral.electrolyser",
   "appearance": {
     "block": "createastral:electrolyser_dummy",    
     "running": {
@@ -43,7 +43,7 @@
       "type": "custommachinery:status"
     },
     {
-      "text": "Electrolyser",
+      "text": "custommachinery.createastral.electrolyser.text",
       "x": 7,
       "y": 5,
       "type": "custommachinery:text"

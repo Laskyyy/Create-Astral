@@ -1,5 +1,5 @@
 {
-    "name": "Distillation Tower",
+    "name": "custommachinery.createastral.distillery",
     "appearance": {
         "block": "createastral:distillery_dummy",
         "running": {
@@ -52,7 +52,7 @@
             "type": "custommachinery:status"
         },
         {
-            "text": "Distillation Tower",
+            "text": "custommachinery.createastral.distillery.text",
             "x": 7,
             "y": 5,
             "type": "custommachinery:text"
