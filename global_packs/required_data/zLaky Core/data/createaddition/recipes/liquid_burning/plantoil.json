@@ -1,0 +1,8 @@
+{
+	"type":"createaddition:liquid_burning",
+	"input": {
+      	"fluid": "createaddition:seed_oil",
+      	"amount": 81000
+	},
+	"burnTime": 2400
+}

@@ -1,13 +1,13 @@
 name = "Projectile Damage Attribute [Fabric & Forge]"
-filename = "projectiledamage-fabric-2.2.0+1.18.2.jar"
+filename = "projectile_damage-fabric-3.1.0+1.18.2.jar"
 side = "both"
 
 [download]
-mode = "metadata:curseforge"
 hash-format = "sha1"
-hash = "904aa62e4690bd0ba0aed0b380079e39dbde0688"
+hash = "8a19416b3348be9635d859ecb7b689474dd7bbc4"
+mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 3989218
+file-id = 4492041
 project-id = 643780

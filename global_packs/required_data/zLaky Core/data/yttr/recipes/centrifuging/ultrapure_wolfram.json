@@ -1,0 +1,23 @@
+{
+	"type": "yttr:centrifuging",
+	"time": 1600,
+	"ingredient": {
+		"item": "minecraft:netherite_scrap",
+		"count": 8,
+		"yttr:no_substitution": true
+	},
+	"results": [
+		{
+			"item": "yttr:ultrapure_wolfram",
+			"count": 2
+		},
+		{
+			"item": "yttr:rubble",
+			"count": 1
+		},
+		{
+			"item": "minecraft:netherrack",
+			"count": 1
+		}
+	]
+}

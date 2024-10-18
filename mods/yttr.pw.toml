@@ -1,0 +1,13 @@
+name = "Yttr"
+filename = "yttr-7.626+1.18.2.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+hash-format = "sha1"
+hash = "8c5777c188d4b1c41c18178f5fe4053aaa730e34"
+
+[update]
+[update.curseforge]
+file-id = 4259913
+project-id = 467267

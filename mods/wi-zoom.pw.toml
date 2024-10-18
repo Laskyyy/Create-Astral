@@ -1,6 +1,6 @@
 name = "WI Zoom"
 filename = "WI-Zoom-1.4-MC1.18.2.jar"
-side = "both"
+side = "client"
 
 [download]
 mode = "metadata:curseforge"

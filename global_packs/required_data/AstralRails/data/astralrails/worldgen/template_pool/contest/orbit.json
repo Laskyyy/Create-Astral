@@ -1,0 +1,249 @@
+{
+  "name": "astralrails:paths/start_paths",
+  "fallback": "minecraft:empty",
+  "elements": [
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:contest/orbit/adrift_satellite",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:contest/orbit/asteroid_harvester",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:contest/orbit/bnuuy_crater",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:contest/orbit/experimental_lab_3",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:contest/orbit/failed_skyblock_experiment",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:contest/orbit/final_station",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:contest/orbit/meteor_hollow",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:contest/orbit/meteor_hollow_wreck",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:contest/orbit/mlon_planet",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:contest/orbit/mob_shimmer_spacestation",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:contest/orbit/moon_bunker_debris",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:contest/orbit/moon_debris_pipe",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:contest/orbit/moon_gear_debris",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:contest/orbit/moon_gas_station_2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:contest/orbit/osy_alpha_v2",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:contest/orbit/ring_impacted",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:contest/orbit/ring_orbit",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:contest/orbit/ring_prime",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:contest/orbit/ringed_station",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:contest/orbit/shimmer_transport_vessel",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:contest/orbit/sleek_ship",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:contest/orbit/submarine_ship",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+      "weight": 2,
+      "element": {
+        "location": "astralrails:contest/orbit/super_mars_ket",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    },
+		{
+		"weight": 2,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/girder/girderm",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},
+	{
+		"weight": 2,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/girder/girderb",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},
+	{
+		"weight": 2,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/girder/girdert",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},
+	{
+		"weight": 1,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/girder/lone",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	}
+  ]
+}

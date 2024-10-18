@@ -1,9 +1,0 @@
-{
-    "variants": {
-        "": [
-		{ "model": "block/andesite2" },
-		{ "model": "block/andesite" },
-		{ "model": "block/andesite3" }
-]
-    }
-}

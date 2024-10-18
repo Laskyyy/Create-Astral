@@ -1,0 +1,51 @@
+{
+  "name": "Slime Furnace",
+  "appearance": {
+    "block": "createastral:slime_furnace_dummy",
+    "running": {
+      "block": "createastral:slime_furnace_on_dummy",
+      "lightlevel": 15
+    }
+  },
+  "components" : [
+    {
+      "type": "custommachinery:item",
+      "id": "fuel",
+      "filter": ["#c:slimeballs", "#tconstruct:slime_block"],
+      "whitelist": true,
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:contraption",
+      "config": {
+        "default": "none",
+        "top": "output"
+      }
+    }
+  ],
+  "gui": [
+    {
+      "texture": "custommachinery:textures/gui/base_background.png",
+      "x": 0,
+      "y": 0,
+      "type": "custommachinery:texture"
+    },
+    {
+      "x": 47,
+      "y": 80,
+      "type": "custommachinery:player_inventory"
+    },
+    {
+      "id": "fuel",
+      "x": 119,
+      "y": 38,
+      "type": "custommachinery:slot"
+    },
+    {
+      "text": "Slime Furnace",
+      "x": 7,
+      "y": 5,
+      "type": "custommachinery:text"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+    "translation": "Moon Debris",
+    "galaxy": "ad_astra:milky_way",
+    "solar_system": "ad_astra:solar_system",
+    "world": "createastral:moon_debris",
+    "orbit_world": "ad_astra:moon_debris_orbit",
+    "parent_world": "minecraft:overworld",
+    "rocket_tier": 2,
+    "gravity": 1.3,
+    "has_atmosphere": false,
+    "days_in_year": 27,
+    "temperature": -300,
+    "solar_power": 13,
+    "orbit_solar_power": 15,
+    "has_oxygen": false,
+    "button_color": "purple"
+}

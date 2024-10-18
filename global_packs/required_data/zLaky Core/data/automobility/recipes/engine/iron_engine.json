@@ -1,0 +1,17 @@
+{
+    "type": "automobility:auto_mechanic_table",
+    "category": "automobility:engines",
+    "sortnum": 2,
+    "ingredients": [
+        {"item": "create:integrated_circuit"},
+        {"item": "minecraft:iron_block"},
+        {"item": "techreborn:basic_machine_frame"},
+        {"item": "create:cogwheel"},
+        {"item": "create:gearshift"},
+        {"item": "create:clutch"}
+    ],
+    "result": {
+        "item": "automobility:automobile_engine",
+        "component": "automobility:iron"
+    }
+}

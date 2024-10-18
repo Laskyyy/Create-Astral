@@ -1,0 +1,718 @@
+{
+	id: "6E4FDDEB475CA8A6"
+	group: ""
+	order_index: 11
+	filename: "the_trophy_room"
+	title: "?) The Trophy Room"
+	icon: "yttr:ultrapure_gold"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: -0.5d
+			y: 0.5d
+			width: 10.0d
+			height: 10.0d
+			rotation: 0.0d
+			image: "minecraft:textures/map/map_background.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -4.0d
+			y: -6.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_t.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -3.0d
+			y: -6.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_h.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -2.0d
+			y: -6.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_e.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 0.0d
+			y: -6.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_f.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 1.0d
+			y: -6.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_i.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 1.5d
+			y: -6.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_n.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 2.5d
+			y: -6.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_a.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 3.5d
+			y: -6.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_l.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -3.5d
+			y: -5.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_t.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -2.5d
+			y: -5.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_r.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -1.5d
+			y: -5.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_e.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -0.5d
+			y: -5.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_a.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 0.5d
+			y: -5.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_s.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 1.0d
+			y: -5.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_u.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 2.0d
+			y: -5.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_r.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 3.0d
+			y: -5.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/sga_e.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			width: 2.0d
+			height: 2.0d
+			rotation: 0.0d
+			image: "ftbquests:textures/shapes/hexagon/outline.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			width: 20.0d
+			height: 20.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/sky/milky_way.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+			dependency: "0938969824F4D4CB"
+		}
+		{
+			x: -0.5d
+			y: -4.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/sky/earth.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 4.0d
+			y: 0.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/sky/moon.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -0.5d
+			y: 5.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/sky/mars.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -5.0d
+			y: 0.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "ad_astra:textures/sky/mercury.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			title: "I automated"
+			x: 3.0d
+			y: -2.0d
+			description: ["The Players were ever-cunning, they used anything to do everything."]
+			dependencies: ["0938969824F4D4CB"]
+			hide: true
+			hide_text_until_complete: false
+			id: "56C5627DDB62C6E5"
+			tasks: [
+				{
+					id: "1F662B6475E4B78B"
+					type: "item"
+					item: "create:veridium"
+					count: 1024L
+				}
+				{
+					id: "10152AE61DA21F1B"
+					type: "item"
+					item: "create:scorchia"
+					count: 1024L
+				}
+				{
+					id: "00EE8C12EF38B25A"
+					type: "item"
+					item: "create:scoria"
+					count: 1024L
+				}
+				{
+					id: "746149797168C653"
+					type: "item"
+					item: "create:ochrum"
+					count: 1024L
+				}
+				{
+					id: "180C350A992A4D7C"
+					type: "item"
+					item: "create:limestone"
+					count: 1024L
+				}
+				{
+					id: "2E76ADBCE501C809"
+					type: "item"
+					item: "create:crimsite"
+					count: 1024L
+				}
+				{
+					id: "5C5E19A3A2642EFD"
+					type: "item"
+					item: "create:asurine"
+					count: 1024L
+				}
+			]
+			rewards: [{
+				id: "5EBE4E6AAD4FA946"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "souls"
+					}
+				}
+			}]
+		}
+		{
+			title: "Defragmented Break"
+			x: 3.5d
+			y: -0.5d
+			description: ["What is not recorded will be lost."]
+			dependencies: ["0938969824F4D4CB"]
+			hide: true
+			id: "5E9F6A0BF9C19736"
+			tasks: [{
+				id: "108E346B5F9E1E83"
+				type: "item"
+				item: "astraladditions:disc_astral_lakes_remix"
+			}]
+			rewards: [{
+				id: "512F5A5D2ED5C68C"
+				type: "item"
+				item: "createastral:logo"
+			}]
+		}
+		{
+			title: "Pig Production"
+			x: 3.5d
+			y: 1.5d
+			description: ["The Piglins were cunning enough to leave while they could - and small enough to fit through the portal."]
+			dependencies: ["0938969824F4D4CB"]
+			hide: true
+			id: "1E0623DDA08556BA"
+			tasks: [{
+				id: "7CE193024FB74F7A"
+				type: "item"
+				item: "tconstruct:pig_iron_block"
+				count: 64L
+			}]
+			rewards: [{
+				id: "589ADE9778F55289"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "defense"
+					}
+				}
+			}]
+		}
+		{
+			title: "Guljalabala Gamna"
+			x: 3.0d
+			y: 3.0d
+			description: ["Life isn't always about expanding and increasing profits. Sometimes a good meal is enough to be content."]
+			dependencies: ["0938969824F4D4CB"]
+			hide: true
+			id: "6727F3852FC3323C"
+			tasks: [{
+				id: "15E65CBF22539E31"
+				type: "advancement"
+				advancement: "farmersdelight:main/master_chef"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "7330AA55AA6F602B"
+				type: "item"
+				item: {
+					id: "yttr:spatula"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Feminisation Mechanism"
+			x: 2.0d
+			y: 4.0d
+			description: ["The Sisters of The End fled their home when it became too uninhabitable. The End is inevitable."]
+			dependencies: ["0938969824F4D4CB"]
+			hide: true
+			id: "69915811D14AB0BD"
+			tasks: [{
+				id: "45F7C0CC5F8674FA"
+				type: "item"
+				item: "estrogen:crystal_estrogen_pill"
+				count: 256L
+			}]
+			rewards: [{
+				id: "7301652C7D6D1885"
+				type: "item"
+				item: "doodads:bendy_straw"
+			}]
+		}
+		{
+			title: "Continue Forever"
+			x: 0.5d
+			y: 4.5d
+			description: ["As its flesh was torn apart, the Moon bled pink - The essence of everything."]
+			dependencies: ["0938969824F4D4CB"]
+			hide: true
+			id: "0A141ADE11568F1E"
+			tasks: [{
+				id: "43B5414428A95403"
+				type: "item"
+				item: "yttr:root_of_continuity"
+				count: 256L
+			}]
+			rewards: [{
+				id: "4C27D9381718D749"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "abilities"
+					}
+				}
+			}]
+		}
+		{
+			title: "Know Knowledge"
+			x: -1.5d
+			y: 4.5d
+			description: ["Experience, the blood of life."]
+			dependencies: ["0938969824F4D4CB"]
+			hide: true
+			id: "36BC1547ABFE2C05"
+			tasks: [{
+				id: "22B41618D457A687"
+				type: "xp"
+				value: 210L
+				points: false
+			}]
+			rewards: [{
+				id: "53E78BE47D4E33B6"
+				type: "item"
+				item: "minecraft:knowledge_book"
+			}]
+		}
+		{
+			title: "Military Industrial Complex"
+			x: -3.0d
+			y: 4.0d
+			description: ["The Industrial Revolution and its consequences"]
+			dependencies: ["0938969824F4D4CB"]
+			hide: true
+			id: "1847D57138A4D806"
+			tasks: [
+				{
+					id: "15FA43E0E222A043"
+					type: "item"
+					item: {
+						id: "createbigcannons:ap_autocannon_round"
+						Count: 1b
+						tag: { }
+					}
+					count: 64L
+				}
+				{
+					id: "601662752F689BC1"
+					type: "item"
+					item: {
+						id: "createbigcannons:flak_autocannon_round"
+						Count: 1b
+						tag: { }
+					}
+					count: 64L
+				}
+				{
+					id: "31A7CF3B51685304"
+					type: "item"
+					item: {
+						id: "createbigcannons:machine_gun_round"
+						Count: 1b
+						tag: { }
+					}
+					count: 64L
+				}
+				{
+					id: "6003A513D163D13A"
+					type: "item"
+					item: "createbigcannons:solid_shot"
+					count: 64L
+				}
+				{
+					id: "2A6891EA2C9B913D"
+					type: "item"
+					item: "createbigcannons:he_shell"
+					count: 64L
+				}
+				{
+					id: "0436C0729604DF13"
+					type: "item"
+					item: "createbigcannons:shrapnel_shell"
+					count: 64L
+				}
+				{
+					id: "2D7CE8509E0C1A3E"
+					type: "item"
+					item: "createbigcannons:ap_shot"
+					count: 64L
+				}
+				{
+					id: "5F4C2018CDB9BD2D"
+					type: "item"
+					item: "createbigcannons:ap_shell"
+					count: 64L
+				}
+				{
+					id: "4F03BD203FAB4D6B"
+					type: "item"
+					item: "createbigcannons:fluid_shell"
+					count: 64L
+				}
+				{
+					id: "41F176786D8D1396"
+					type: "item"
+					item: "createbigcannons:smoke_shell"
+					count: 64L
+				}
+				{
+					id: "76EBAD358E9780AA"
+					type: "item"
+					item: "createbigcannons:bag_of_grapeshot"
+					count: 64L
+				}
+				{
+					id: "35CD3AE656D8CD85"
+					type: "item"
+					item: "createbigcannons:mortar_stone"
+					count: 64L
+				}
+				{
+					id: "7222604B3DFAB271"
+					type: "item"
+					item: "createbigcannons:drop_mortar_shell"
+					count: 64L
+				}
+			]
+			rewards: [{
+				id: "37352E1E4AC29880"
+				type: "item"
+				item: "createbigcannons:traffic_cone"
+			}]
+		}
+		{
+			title: "Supreme Atomic"
+			x: -4.0d
+			y: 3.0d
+			description: ["The Players pushed opposites together and untangled the entangled. Nothing out of reach."]
+			dependencies: ["0938969824F4D4CB"]
+			hide: true
+			id: "6F2EE9291E961AEE"
+			tasks: [{
+				id: "51E9B59AEB7D5E51"
+				type: "item"
+				item: "createastral:subatomic_ingot"
+				count: 512L
+			}]
+			rewards: [{
+				id: "6A6413FE63B230F5"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "upgrades"
+					}
+				}
+			}]
+		}
+		{
+			title: "Stone Ages"
+			x: -4.5d
+			y: 1.5d
+			description: ["How long ago were we there? How many ages past?"]
+			dependencies: ["0938969824F4D4CB"]
+			hide: true
+			id: "38E17A6C19D35584"
+			tasks: [{
+				id: "138D971F11B540A2"
+				type: "item"
+				item: "compressor:octuple_compressed_cobblestone"
+			}]
+			rewards: [{
+				id: "4A66702D078A2F6D"
+				type: "item"
+				item: "yttr:giant_cobblestone"
+			}]
+		}
+		{
+			title: "Primordial Debris"
+			x: -4.5d
+			y: -0.5d
+			description: ["Stories of the &kNether&r were lost to time... lost to reality..."]
+			dependencies: ["0938969824F4D4CB"]
+			hide: true
+			id: "477C2D5CA5F8F5C2"
+			tasks: [{
+				id: "31EAC2B25F4A968F"
+				type: "item"
+				item: "yttr:ultrapure_netherite"
+				count: 256L
+			}]
+			rewards: [{
+				id: "44FF6F2F7E172B84"
+				type: "item"
+				item: "immersive_aircraft:nether_engine"
+			}]
+		}
+		{
+			title: "Inevitable End"
+			x: -4.0d
+			y: -2.0d
+			description: ["The End of everything."]
+			dependencies: ["0938969824F4D4CB"]
+			hide: true
+			id: "2E145505F5721C4F"
+			tasks: [{
+				id: "36DC77FB2187411C"
+				type: "dimension"
+				icon: "minecraft:end_portal_frame"
+				dimension: "minecraft:the_end"
+			}]
+			rewards: [{
+				id: "1BF5E74A70172AE3"
+				type: "item"
+				item: "minecraft:dragon_egg"
+			}]
+		}
+		{
+			title: "The Final Treasure"
+			x: -0.5d
+			y: 0.5d
+			subtitle: "A Souvenir"
+			description: ["A friend; a memoir of all the good times."]
+			hide_dependency_lines: true
+			dependencies: [
+				"36BC1547ABFE2C05"
+				"0A141ADE11568F1E"
+				"5E9F6A0BF9C19736"
+				"1E0623DDA08556BA"
+				"1847D57138A4D806"
+				"69915811D14AB0BD"
+				"38E17A6C19D35584"
+				"477C2D5CA5F8F5C2"
+				"2E145505F5721C4F"
+				"6727F3852FC3323C"
+				"56C5627DDB62C6E5"
+				"6F2EE9291E961AEE"
+			]
+			id: "5C59106DF5771CE2"
+			tasks: [{
+				id: "47C02E9DDC6692C7"
+				type: "structure"
+				structure: "astralrails:dogstatue"
+			}]
+			rewards: [{
+				id: "72E8CFF935C36AC1"
+				type: "item"
+				item: "blahaj:bread"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

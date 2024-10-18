@@ -1,0 +1,16 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "farmersdelight:wild_tomatoes"
+    }
+  ],
+  "result": [
+    {
+      "item": "farmersdelight:tomato_seeds"
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knives"
+  }
+}

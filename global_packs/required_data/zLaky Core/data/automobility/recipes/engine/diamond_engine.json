@@ -1,0 +1,19 @@
+{
+    "type": "automobility:auto_mechanic_table",
+    "category": "automobility:engines",
+    "sortnum": 4,
+    "ingredients": [
+        {"item": "create:integrated_circuit"},
+        {"item": "minecraft:diamond_block"},
+        {"item": "createaddition:alternator"},
+        {"item": "createaddition:electric_motor"},
+        {"item": "create:electron_tube"},
+        {"item": "minecraft:diamond_block"},
+        {"item": "create:rotation_speed_controller"},
+        {"item": "create:mechanical_arm"}
+    ],
+    "result": {
+        "item": "automobility:automobile_engine",
+        "component": "automobility:diamond"
+    }
+}

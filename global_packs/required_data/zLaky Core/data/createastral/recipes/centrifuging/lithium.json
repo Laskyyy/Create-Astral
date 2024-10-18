@@ -1,0 +1,16 @@
+{
+  "type": "estrogen:centrifuging",
+  "ingredients": [
+    {
+      "amount": 243,
+      "fluid": "techreborn:helium",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "amount": 81,
+      "fluid": "techreborn:lithium"
+    }
+  ]
+}

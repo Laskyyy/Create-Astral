@@ -1,0 +1,108 @@
+{
+    "name": "Amalgamation Matrix Core",
+    "appearance": {
+        "block": "astralgenerators:amalgamation_matrix_controller",
+        "running": {
+            "lightlevel": 15
+        }
+    },
+    "gui": [
+        {
+            "texture": "custommachinery:textures/gui/base_background.png",
+            "x": 0,
+            "y": 0,
+            "type": "custommachinery:texture"
+        },
+        {
+            "x": 47,
+            "y": 80,
+            "type": "custommachinery:player_inventory"
+        },
+        {
+            "text": "Amalgamation Matrix",
+            "x": 7,
+            "y": 5,
+            "type": "custommachinery:text"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 130,
+            "y": 15,
+            "id": "input1"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 110,
+            "y": 35,
+            "id": "input2"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 130,
+            "y": 55,
+            "id": "input3"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 150,
+            "y": 35,
+            "id": "input4"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 130,
+            "y": 35,
+            "variant": "custommachinery:result",
+            "id": "output"
+        },
+        {
+            "type": "custommachinery:energy",
+            "x": 20,
+            "y": 20,
+            "id": "energy"
+        },
+        {
+            "x": 236,
+            "y": 5,
+            "type": "custommachinery:status"
+        }
+    ],
+    "components": [
+        {
+            "type": "custommachinery:energy",
+            "capacity": "1000000000000",
+            "maxInput": "1000000000000",
+            "maxOutput": "0",
+            "id": "energy",
+            "config": {
+                "input": true,
+                "output": false
+            }
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "input1",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "input2",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "input3",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "input4",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "output",
+            "mode": "output"
+        }
+    ]
+}

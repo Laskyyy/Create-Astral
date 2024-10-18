@@ -1,0 +1,17 @@
+{
+    "translation": "???",
+    "galaxy": "ad_astra:milky_way",
+    "solar_system": "ad_astra:proxima_centauri",
+    "world": "minecraft:the_nether",
+    "orbit_world": "minecraft:the_end",
+    "parent_world": null,
+    "rocket_tier": 4,
+    "gravity": 2.721,
+    "has_atmosphere": true,
+    "days_in_year": 365,
+    "temperature": 50,
+    "solar_power": 0,
+    "orbit_solar_power": 0,
+    "has_oxygen": true,
+    "button_color": "light_blue"
+}

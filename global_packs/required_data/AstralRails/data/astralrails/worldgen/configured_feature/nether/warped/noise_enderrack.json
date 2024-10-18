@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:netherrack_replace_blobs",
+  "config": {
+    "state": {
+      "Name": "astraladditions:enderrack"
+    },
+    "target": {
+      "Name": "minecraft:netherrack"
+    },
+    "radius": 10
+  }
+}

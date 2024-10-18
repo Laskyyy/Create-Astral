@@ -1,0 +1,26 @@
+{
+	// Enable Recipe Viewer support (EMI/REI/JEI)
+	"enableRecipeViewer": true,
+	// Enable Experimental Features
+	"enableExperimentalFeatures": false,
+	// Enable debug log, may spam your server console
+	"debugLog": false,
+	// Merge CobbleGen recipe categories into EMI's World Interaction category
+	"mergeEMIRecipeCategory": true,
+	// EMI related config, used when mergeEMIRecipeCategory is set to 'true'
+	"emi": {
+		// Add CobbleGen tooltip
+		"addTooltip": true,
+		// Remove overlapping recipe between CobbleGen and EMI
+		"removeOverlaps": true,
+		// Invert input position
+		"invertInput": false,
+	},
+	// Create mod related config
+	"create": {
+		// Load Create Integration
+		"loadIntegration": true,
+		// Disable Create's pipe support
+		"disablePipe": true,
+	},
+}

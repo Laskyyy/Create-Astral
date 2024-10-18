@@ -1,0 +1,25 @@
+{
+    "type": "techreborn:industrial_electrolyzer",
+    "power": 400,
+    "time": 1100,
+    "ingredients": [
+        {
+            "item": "ad_astra:calorite_ingot",
+            "count": 16
+        }
+    ],
+    "results": [
+        {
+            "item": "yttr:quicksilver",
+            "count": 3
+        },
+        {
+            "item": "ad_astra:ostrum_ingot",
+            "count": 7
+        },
+        {
+            "item": "minecraft:red_dye",
+            "count": 4
+        }
+    ]
+}

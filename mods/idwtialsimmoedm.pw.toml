@@ -1,6 +1,6 @@
 name = "Idwtialsimmoedm"
 filename = "idwtialsimmoedm-0.1.1+1.18.jar"
-side = "both"
+side = "client"
 
 [download]
 mode = "metadata:curseforge"

@@ -1,0 +1,52 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = %fancymenu:universal_layout%
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1726395495170
+  is_enabled = false
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:0b80bfc5-833c-4de8-847d-aa41fff54b7e-1727299519346] = [groups:][instances:]
+}
+
+customization {
+  action = backgroundoptions
+  keepaspectratio = false
+}
+
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
+  repeat_scroll_list_header_texture = false
+  repeat_scroll_list_footer_texture = false
+}
+
+element {
+  audio_instance_0 = [source:local]/config/fancymenu/assets/npc_theme.ogg
+  play_mode = normal
+  looping = true
+  volume = 1.0
+  sound_source = music
+  element_type = audio_v2
+  instance_identifier = 34c4daa9-11f8-498b-97f7-bada52b7c325-1718463447538
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = -95
+  y = -24
+  width = 100
+  height = 100
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 8931fa6c-722f-48fe-a969-6680b6550485-1706779921785
+  [loading_requirement_container_meta:8931fa6c-722f-48fe-a969-6680b6550485-1706779921785] = [groups:][instances:]
+}
+

@@ -1,0 +1,49 @@
+{
+	"feature": "astralrails:nether/wastes/decay_2",
+	"placement": [
+		{
+      "type": "minecraft:count",
+      "count": 24
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:biased_to_bottom",
+        "min_inclusive": {
+          "absolute": 0
+        },
+        "max_inclusive": {
+          "absolute": 128
+        }
+      }
+    },
+		{
+      "type": "minecraft:environment_scan",
+      "direction_of_search": "up",
+      "max_steps": 32,
+      "target_condition": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:matching_blocks",
+            "offset": [
+              0,
+              0,
+              0
+            ],
+            "blocks": [
+              "minecraft:netherrack"
+            ]
+          }
+        ]
+      }
+    },
+		
+    {
+      "type": "minecraft:biome"
+    }
+	]
+}

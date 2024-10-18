@@ -5,7 +5,7 @@
     {
       "weight": 2,
       "element": {
-        "location": "astralrails:mine/dungeon/dungeon_room1",
+        "location": "astralrails:overworld/railtown/mine/dungeon/dungeon_room1",
         "processors": [
 					{
 						"processor_type": "minecraft:rule",
@@ -46,7 +46,7 @@
 		{
       "weight": 3,
       "element": {
-        "location": "astralrails:mine/dungeon/dungeon_room2",
+        "location": "astralrails:overworld/railtown/mine/dungeon/dungeon_room2",
         "processors": [
 					{
 						"processor_type": "minecraft:rule",
@@ -100,7 +100,7 @@
 		{
       "weight": 1,
       "element": {
-        "location": "astralrails:mine/dungeon/dungeon_room3",
+        "location": "astralrails:overworld/railtown/mine/dungeon/dungeon_room3",
         "processors": [
 					{
 						"processor_type": "minecraft:rule",
@@ -154,7 +154,7 @@
 		{
       "weight": 2,
       "element": {
-        "location": "astralrails:mine/dungeon/dungeon_room4",
+        "location": "astralrails:overworld/railtown/mine/dungeon/dungeon_room4",
         "processors": [
 					{
 						"processor_type": "minecraft:rule",

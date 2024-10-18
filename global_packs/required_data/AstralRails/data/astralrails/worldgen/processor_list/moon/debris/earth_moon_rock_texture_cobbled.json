@@ -1,0 +1,61 @@
+{
+	"processors": [
+		{
+			"processor_type": "minecraft:rule",
+			"rules": [
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "ad_astra:moon_cobblestone",
+						"probability": 0.04
+					},
+					"output_state": {
+						"Name": "minecraft:deepslate_coal_ore"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "ad_astra:moon_cobblestone",
+						"probability": 0.08
+					},
+					"output_state": {
+						"Name": "ad_astra:moon_iron_ore"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "minecraft:dirt",
+						"probability": 0.5
+					},
+					"output_state": {
+						"Name": "minecraft:sand"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "minecraft:grass",
+						"probability": 1.0
+					},
+					"output_state": {
+						"Name": "minecraft:air"
+					}
+				}
+			]
+		}
+	]
+}

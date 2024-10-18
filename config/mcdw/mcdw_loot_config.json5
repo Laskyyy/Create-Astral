@@ -18,14 +18,7 @@
 			"minecraft:chests/village/village_toolsmith",
 			"kaisyn:village/exclusives/village_classic_blacksmith",
 			"kaisyn:outpost/common/armory",
-			"incendium:castle/barrel/generic",
-			"probablychests:chests/coral_pc_chests",
-			"probablychests:chests/gold_pc_chests",
-			"probablychests:chests/ice_pc_chests",
-			"probablychests:chests/lush_pc_chests",
-			"probablychests:chests/normal_pc_chests",
-			"probablychests:chests/rocky_pc_chests",
-			"probablychests:chests/stone_pc_chests"
+			"astralrails:chests/generic/c_andesite_age"
 		]
 	},
 	"UNCOMMON_LOOT_TABLES": {
@@ -35,11 +28,7 @@
 			"minecraft:chests/bastion_bridge",
 			"minecraft:chests/bastion_other",
 			"minecraft:chests/ruined_portal",
-			"incendium:steam/treasure",
-			"incendium:steam/uncommon",
-			"incendium:castle/barrel/monument",
-			"probablychests:chests/nether_pc_chests",
-			"probablychests:chests/shadow_pc_chests"
+			"astralrails:chests/generic/c_copper_age"
 		]
 	},
 	"RARE_LOOT_TABLES": {
@@ -49,10 +38,7 @@
 			"minecraft:chests/simple_dungeon",
 			"minecraft:chests/pillager_outpost",
 			"minecraft:chests/nether_bridge",
-			"incendium:castle/barrel/library",
-			"incendium:reactor/treasure",
-			"incendium:lab/treasure",
-			"incendium:sanctum/treasure"
+			"astralrails:chests/generic/c_brass_age"
 		]
 	},
 	"EPIC_LOOT_TABLES": {
@@ -63,9 +49,7 @@
 			"minecraft:chests/end_city_treasure",
 			"minecraft:chests/bastion_treasure",
 			"ad_astra:chests/dungeon/moon/large_dungeon_chest",
-			"ad_astra:chests/temple/mars/temple",
-			"incendium:castle/barrel/barracks",
-			"incendium:castle/barrel/blacksmith"
+			"ad_astra:chests/temple/mars/temple"
 		]
 	},
 	"AXE_SPAWN_RATES": {

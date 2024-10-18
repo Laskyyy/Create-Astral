@@ -1,0 +1,17 @@
+# .packwizignore follows the same format as .gitignore, and can be used to exclude unwanted files from pack exports
+# See https://git-scm.com/docs/gitignore
+
+# Exclude README
+/README.md
+LICENSE*.md
+.prettierrc
+packwiz
+packwiz.exe
+.vscode
+.github
+kubejs/probe
+.idea
+reload-example.bat
+
+# The contents of the serverpack folder will automatically get lifted to the root directory on build
+serverpack

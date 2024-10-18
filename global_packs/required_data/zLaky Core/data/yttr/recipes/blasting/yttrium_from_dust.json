@@ -1,0 +1,10 @@
+{
+	"type": "minecraft:blasting",
+	"yttr:discovered_via": "yttr:yttrium_dust",
+	"ingredient": {
+		"item": "yttr:yttrium_dust"
+	},
+	"result": "yttr:yttrium_ingot",
+	"experience": 0,
+	"cookingtime": 100
+}

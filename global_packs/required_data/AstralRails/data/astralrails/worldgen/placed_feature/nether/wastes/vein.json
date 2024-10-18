@@ -1,0 +1,37 @@
+{
+	"feature": "astralrails:nether/wastes/vein",
+  "placement": [
+		{
+      "type": "minecraft:count",
+      "count": 256
+    },
+		{
+      "type": "minecraft:count",
+      "count": 256
+    },
+		{
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 0
+        },
+        "max_inclusive": {
+          "absolute": 96
+        }
+      }
+    },
+    {
+      "type": "minecraft:noise_based_count",
+      "noise_to_count_ratio": 1,
+      "noise_factor": 32,
+      "noise_offset": 0.001
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

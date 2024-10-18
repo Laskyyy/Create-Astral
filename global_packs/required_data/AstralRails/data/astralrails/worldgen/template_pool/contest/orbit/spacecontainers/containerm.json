@@ -1,0 +1,22 @@
+{
+	"name": "astralrails:contest/orbit/spacecontainers/containerm",
+	"fallback": "minecraft:empty",
+	"elements": [{
+		"weight": 60,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/exterior/middle",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},
+	{
+		"weight": 40,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/exterior/middlef",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	}]
+}

@@ -1,0 +1,286 @@
+{
+    "backpackSettings": {
+        "leather": {
+            // Number of inventory slots for the tier
+            "inventorySlotCount": 27,
+            // Number of tool slots for the tier
+            "toolSlotCount": 2,
+            // Tank capacity for the tier, 81000 equals 1 Bucket, (Leather default: 3 buckets)
+            "tankCapacity": 243000
+        },
+        "iron": {
+            // Number of inventory slots for the tier
+            "inventorySlotCount": 36,
+            // Number of tool slots for the tier
+            "toolSlotCount": 3,
+            // Tank capacity for the tier, 81000 equals 1 Bucket, (Iron default: 4 buckets)
+            "tankCapacity": 324000
+        },
+        "gold": {
+            // Number of inventory slots for the tier
+            "inventorySlotCount": 45,
+            // Number of tool slots for the tier
+            "toolSlotCount": 4,
+            // Tank capacity for the tier, 81000 equals 1 Bucket, (Gold default: 5 buckets)
+            "tankCapacity": 405000
+        },
+        "diamond": {
+            // Number of inventory slots for the tier
+            "inventorySlotCount": 54,
+            // Number of tool slots for the tier
+            "toolSlotCount": 5,
+            // Tank capacity for the tier, 81000 equals 1 Bucket, (Diamond default: 6 buckets)
+            "tankCapacity": 486000
+        },
+        "netherite": {
+            // Number of inventory slots for the tier
+            "inventorySlotCount": 63,
+            // Number of tool slots for the tier
+            "toolSlotCount": 6,
+            // Tank capacity for the tier, 81000 equals 1 Bucket, (Netherite default: 7 buckets)
+            "tankCapacity": 567000
+        },
+        "enableTierUpgrades": false,
+        // Unused - keep for compatibility only, will be removed in future versions
+        "disableCrafting": false,
+        "enableCraftingUpgrade": true,
+        // New backpacks will have crafting grid by default
+        "craftingUpgradeByDefault": false,
+        "craftingSavesItems": true,
+        // Enables wearing backpack directly from ground
+        "enableBackpackBlockQuickEquip": true,
+        // Enables unequipping the backpack when player clicks with empty hand on the ground
+        "enableBackpackRightClickUnequip": false,
+        // Backpack immune to any damage source (lava, fire), can't be destroyed, never disappears as floating item
+        "invulnerableBackpack": true,
+        // List of items that can be put in tool slots (Use registry names, for example: minecraft:apple, minecraft:flint)
+        "toolSlotsAcceptableItems": [
+            // Commented lines do not work for unknown reason
+            //  - neijr
+            // "ae2:biometric_card",
+            // "ae2:charged_staff",
+            // "ae2:color_applicator",
+            // "ae2:debug_card",
+            // "ae2:debug_eraser",
+            // "ae2:debug_meteorite_place",
+            // "ae2:debug_replicator_card",
+            // "ae2:entropy_manipulator",
+            // "ae2:matter_cannon",
+            // "ae2:memory_card_black",
+            // "ae2:memory_card_blue",
+            // "ae2:memory_card_brown",
+            // "ae2:memory_card_cyan",
+            // "ae2:memory_card_gray",
+            // "ae2:memory_card_green",
+            // "ae2:memory_card_light_blue",
+            // "ae2:memory_card_light_gray",
+            // "ae2:memory_card_lime",
+            // "ae2:memory_card_magenta",
+            // "ae2:memory_card_orange",
+            // "ae2:memory_card_pink",
+            // "ae2:memory_card_purple",
+            // "ae2:memory_card_red",
+            // "ae2:memory_card_white",
+            // "ae2:memory_card_yellow",
+            // "ae2:memory_card",
+            // "ae2:wireless_crafting_terminal",
+            // "ae2:wireless_terminal",
+            "another_furniture:furniture_hammer",
+            "astraladditions:chromatic_vacuum",
+            "astraladditions:e_guitar",
+            "astraladditions:lunar_wacker",
+            "astraladditions:oh-no",
+            "astraladditions:pylon",
+            "astraladditions:shimmer_blower",
+            "buildinggadgets:gadget_building",
+            "buildinggadgets:gadget_copy_paste",
+            "buildinggadgets:gadget_destruction",
+            "buildinggadgets:gadget_exchanging",
+            "campanion:flare",
+            "campanion:grappling_hook",
+            "computercraft:pocket_computer_advanced",
+            "computercraft:pocket_computer_normal",
+            "create:clipboard",
+            "create:extendo_grip",
+            "create:handheld_worldshaper",
+            "create:linked_controller",
+            "create:wand_of_symmetry",
+            "createbigcannons:cannon_crafting_wand",
+            "createbigcannons:cannon_welder",
+            "createbigcannons:ram_rod",
+            "createbigcannons:resistance_inspection_tool",
+            "createbigcannons:worm",
+            "farmersdelight:skillet",
+            "phonos:channel_tuner",
+            "phonos:note_block_tuner",
+            "polaroidcamera:camera",
+            "railways:conductor_whistle",
+            "railways:remote_lens",
+            "techreborn:debug_tool",
+            "techreborn:frequency_transmitter",
+            "techreborn:treetap",
+            // "trowel:trowel",
+            // "yttr:cleaver",
+            // "yttr:effector",
+            // "yttr:projector",
+            // "yttr:reinforced_cleaver",
+            // "yttr:rifle_overclocked",
+            // "yttr:rifle_reinforced",
+            // "yttr:rifle",
+            // "yttr:shifter"
+        ],
+        // List of items that can't be put in backpack inventory (Use registry names, for example: minecraft:apple, minecraft:flint)
+        "blacklistedItems": [],
+        // Tool slots accept any item
+        "toolSlotsAcceptEverything": false,
+        "allowShulkerBoxes": false,
+        // Unused - keep for compatibility only, will be removed in future versions
+        "tanksCapacity": [
+            162000,
+            243000,
+            324000,
+            405000,
+            486000
+        ],
+        // Prevents backpack disappearing in void
+        "voidProtection": false,
+        // Places backpack at place where player died
+        "backpackDeathPlace": false,
+        // Places backpack at place where player died, replacing all blocks that are breakable and do not have inventory (backpackDeathPlace must be true in order to work)
+        "backpackForceDeathPlace": false,
+        "enableSleepingBagSpawnPoint": false,
+        /* If true, backpack can only be worn by placing it in curios 'Back' slot
+		   WARNING - Remember to TAKE OFF BACKPACK BEFORE enabling or disabling this integration!! - if not you'll lose your backpack
+		*/
+        "trinketsIntegration": true
+    },
+    "world": {
+        // Enables backpacks spawning in loot chests
+        "enableLoot": false,
+        // Enables chance to spawn Zombie, Skeleton, Wither Skeleton, Piglin or Enderman with random backpack equipped
+        "spawnEntitiesWithBackpack": false,
+        // List of overworld entity types that can spawn with equipped backpack. DO NOT ADD anything to this list, because the game will crash, remove entries if mob should not spawn with backpack
+        "possibleOverworldEntityTypes": [
+            "minecraft:zombie",
+            "minecraft:skeleton",
+            "minecraft:enderman"
+        ],
+        // List of nether entity types that can spawn with equipped backpack. DO NOT ADD anything to this list, because the game will crash, remove entries if mob should not spawn with backpack
+        "possibleNetherEntityTypes": [
+            "minecraft:wither_skeleton",
+            "minecraft:piglin"
+        ],
+        // Defines spawn chance of entity with backpack (1 in [selected value])
+        "spawnChance": 500,
+        // List of backpacks that can spawn on overworld mobs
+        "overworldBackpacks": [
+            "travelersbackpack:standard",
+            "travelersbackpack:diamond",
+            "travelersbackpack:gold",
+            "travelersbackpack:emerald",
+            "travelersbackpack:iron",
+            "travelersbackpack:lapis",
+            "travelersbackpack:redstone",
+            "travelersbackpack:coal",
+            "travelersbackpack:bookshelf",
+            "travelersbackpack:sandstone",
+            "travelersbackpack:snow",
+            "travelersbackpack:sponge",
+            "travelersbackpack:cake",
+            "travelersbackpack:cactus",
+            "travelersbackpack:hay",
+            "travelersbackpack:melon",
+            "travelersbackpack:pumpkin",
+            "travelersbackpack:creeper",
+            "travelersbackpack:enderman",
+            "travelersbackpack:skeleton",
+            "travelersbackpack:spider",
+            "travelersbackpack:bee",
+            "travelersbackpack:wolf",
+            "travelersbackpack:fox",
+            "travelersbackpack:ocelot",
+            "travelersbackpack:horse",
+            "travelersbackpack:cow",
+            "travelersbackpack:pig",
+            "travelersbackpack:sheep",
+            "travelersbackpack:chicken",
+            "travelersbackpack:squid"
+        ],
+        // List of backpacks that can spawn on nether mobs
+        "netherBackpacks": [
+            "travelersbackpack:quartz",
+            "travelersbackpack:nether",
+            "travelersbackpack:blaze",
+            "travelersbackpack:ghast",
+            "travelersbackpack:magma_cube",
+            "travelersbackpack:wither"
+        ],
+        // Enables trade for Villager Backpack in Librarian villager trades
+        "enableVillagerTrade": true
+    },
+    "backpackAbilities": {
+        "enableBackpackAbilities": false,
+        "forceAbilityEnabled": false,
+        // List of backpacks that are allowed to have an ability. DO NOT ADD anything to this list, because the game will crash, remove entries if backpack should not have ability
+        "allowedAbilities": [
+            "travelersbackpack:netherite",
+            "travelersbackpack:diamond",
+            "travelersbackpack:gold",
+            "travelersbackpack:emerald",
+            "travelersbackpack:iron",
+            "travelersbackpack:lapis",
+            "travelersbackpack:redstone",
+            "travelersbackpack:bookshelf",
+            "travelersbackpack:sponge",
+            "travelersbackpack:cake",
+            "travelersbackpack:cactus",
+            "travelersbackpack:melon",
+            "travelersbackpack:pumpkin",
+            "travelersbackpack:creeper",
+            "travelersbackpack:dragon",
+            "travelersbackpack:enderman",
+            "travelersbackpack:blaze",
+            "travelersbackpack:ghast",
+            "travelersbackpack:magma_cube",
+            "travelersbackpack:spider",
+            "travelersbackpack:wither",
+            "travelersbackpack:bat",
+            "travelersbackpack:bee",
+            "travelersbackpack:ocelot",
+            "travelersbackpack:cow",
+            "travelersbackpack:chicken",
+            "travelersbackpack:squid"
+        ]
+    },
+    "slownessDebuff": {
+        // Player gets slowness effect, if carries too many backpacks in inventory
+        "tooManyBackpacksSlowness": true,
+        // Maximum number of backpacks, which can be carried in inventory, without slowness effect
+        "maxNumberOfBackpacks": 1,
+        "slownessPerExcessedBackpack": 1
+    },
+    "client": {
+        "overlay": {
+            // Enables tanks and tool slots overlay, while backpack is worn
+            "enableOverlay": true,
+            // Offsets to left side
+            "offsetX": 20,
+            // Offsets to up
+            "offsetY": 30
+        },
+        // Enables legacy GUI (Blue slots for storage, brown for crafting and green for tools)
+        "enableLegacyGui": false,
+        // Enables tool cycling via keybind (Default Z) + scroll combination, while backpack is worn
+        "enableToolCycling": true,
+        // Allows tool cycling using keybinding only (Default Z)
+        "disableScrollWheel": false,
+        // Enables tip, how to obtain a backpack, if there's no crafting recipe for it
+        "obtainTips": false,
+        // Render tools in tool slots on the backpack, while worn
+        "renderTools": true,
+        // Render backpack if elytra is present
+        "renderBackpackWithElytra": true,
+        // Disable backpack rendering
+        "disableBackpackRender": false
+    }
+}

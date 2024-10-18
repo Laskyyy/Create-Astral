@@ -1,6 +1,6 @@
 name = "Load My Resources"
 filename = "loadmyresources_fabric_1.0.4_MC_1.18-1.18.2.jar"
-side = "both"
+side = "client"
 
 [download]
 mode = "metadata:curseforge"

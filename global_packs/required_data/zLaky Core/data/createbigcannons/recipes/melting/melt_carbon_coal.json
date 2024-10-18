@@ -1,0 +1,17 @@
+{
+  "type": "createbigcannons:melting",
+  "ingredients": [
+    {
+      "item": "minecraft:coal",
+      "count": 8
+    }
+  ],
+  "results": [
+    {
+      "fluid": "techreborn:carbon",
+      "amount": 10125
+    }
+  ],
+  "processingTime": 300,
+  "heatRequirement": "heated"
+}

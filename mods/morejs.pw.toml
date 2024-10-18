@@ -1,0 +1,13 @@
+name = "MoreJS"
+filename = "morejs-fabric-1.18.2-0.0.6.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+hash-format = "sha1"
+hash = "eab7c128c77ae2e33183b1584d76285931a4e188"
+
+[update]
+[update.curseforge]
+file-id = 4318731
+project-id = 666198

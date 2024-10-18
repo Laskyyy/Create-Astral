@@ -1,0 +1,36 @@
+{
+  "general": {
+    "rayTraceRange": 8.0,
+    "allowAbsoluteCoords": false,
+    "absoluteCoordDefault": false,
+    "allowOverwriteBlocks": true
+  },
+  "gadgets": {
+    "maxRange": 5,
+    "placeSteps": 1024,
+    "gadgetBuilding": {
+      "maxEnergy": 100000,
+      "energyCost": 100
+    },
+    "gadgetExchanger": {
+      "maxEnergy": 500000,
+      "energyCost": 50
+    },
+    "gadgetDestruction": {
+      "maxEnergy": 1000000,
+      "energyCost": 200,
+      "destroySize": 16,
+      "nonFuzzyMultiplier": 2,
+      "nonFuzzyEnabled": false
+    },
+    "gadgetCopyPaste": {
+      "maxEnergy": 100000,
+      "energyCost": 240,
+      "copySteps": 32768,
+      "maxCopySize": 256,
+      "maxBuildSize": 256
+    },
+    "undoSize": 128,
+    "undoExpiry": 300000
+  }
+}
