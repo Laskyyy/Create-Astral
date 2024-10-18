@@ -1278,7 +1278,7 @@ function sequencedAssemblyRecipes(event) {
                 // input
                 event.recipes.createFilling("createbigcannons:nethersteel_screw_breech", [
                     "createbigcannons:nethersteel_screw_breech",
-                    { fluid: "kubejs:shimmer", amount: 9000 * mB },
+                    { fluid: "kubejs:shimmer", amount: 9000  },
                 ]),
                 event.recipes.createDeploying("createbigcannons:nethersteel_screw_breech", [
                     "createbigcannons:nethersteel_screw_breech",
@@ -1286,11 +1286,11 @@ function sequencedAssemblyRecipes(event) {
                 ]),
                 event.recipes.createFilling("createbigcannons:nethersteel_screw_breech", [
                     "createbigcannons:nethersteel_screw_breech",
-                    { fluid: "techreborn:lithium", amount: 3000 * mB },
+                    { fluid: "techreborn:lithium", amount: 3000  },
                 ]),
                 event.recipes.createFilling("createbigcannons:nethersteel_screw_breech", [
                     "createbigcannons:nethersteel_screw_breech",
-                    { fluid: "techreborn:silicon", amount: 3000 * mB },
+                    { fluid: "techreborn:silicon", amount: 3000  },
                 ]),
             ]
         )

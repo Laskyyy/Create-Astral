@@ -14,11 +14,19 @@ onEvent("item.tooltip", (e) => {
         },
         {
             item: "kubejs:broken_fire_resistant_fragile_sheet_block",
-            tooltip: "Throw lingering fire resistance onto fragile sheet blocks to create.",
+            tooltip: "Throw lingering fire resistance onto fragile sheet blocks to create. Wrenchable.",
         },
         {
             item: "kubejs:fire_resistant_fragile_sheet_block",
-            tooltip: "Throw lingering fire resistance onto fragile sheet blocks to create.",
+            tooltip: "Throw lingering fire resistance onto fragile sheet blocks to create. Wrenchable.",
+        },
+        {
+            item: "kubejs:fragile_sheet_block",
+            tooltip: "Wrenchable.",
+        },
+        {
+            item: "kubejs:broken_fragile_sheet_block",
+            tooltip: "Wrenchable.",
         },
         {
             item: "createastral:uranium_residue",

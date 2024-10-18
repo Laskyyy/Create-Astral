@@ -134,6 +134,14 @@ onEvent("fluid.registry", (event) => {
         .flowingTexture("tconstruct:block/fluid/molten/shimmer");
 
     event
+        .create('red_paste')
+        .thickTexture(0xff0000)
+        .bucketColor(0xff0000)
+        .displayName('Red Paste')
+        .stillTexture('tconstruct:block/fluid/molten/still')
+        .flowingTexture('tconstruct:block/fluid/molten/still')
+
+    event
         .create("supercooled_water")
         .thinTexture(0x4afff0)
         .bucketColor(0x4afff0)
