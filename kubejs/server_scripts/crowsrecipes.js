@@ -44,14 +44,20 @@ onEvent("recipes", event => {
         "2x minecraft:gravel"
     ])
     //easier glowstone
-    event.replaceInput({id: "create:filling/glowstone"}, "create:cinder_flour", "techreborn:andesite_dust")
     //an actual use for glowstone lmao, throwing in a function so I should be able to use int again
     glowstone(event)
     function glowstone(event) {
-    let int = "kubejs:incomplete_electron_tube"
-    event.recipes.createSequencedAssembly("4x create:electron_tube", "create:iron_sheet" [
+    let int = "createastral:incomplete_electron_tube"
+    event.recipes.createSequencedAssembly("3x create:electron_tube", "create:iron_sheet" [
         event.recipes.createDeploying(int, [int, "minecraft:glowstone"]),
-        event.recipes.createFilling(int, [int, {fluid: "tconstruct:rose_gold", amount: 2250}])
+        event.recipes.createFilling(int, [int, {fluid: "tconstruct:rose_gold", amount: 2025}])
     ]).loops(4).transitionalItem(int)
+    event.remove({id: "create:filling/glowstone"})
+    event.recipes.createFilling("createastral:glowstone_clump", ["createastral:glowstone_catalyst", {fluid: "create:potion", amount: 25 * mB, nbt: {Bottle: REGULAR, Potion: "minecraft:glowing"}}])
+    event.recipes.createMixing([
+        "createastral:glowstone_catalyst",
+        Item.of("minecraft:glowstone_dust").withChance(0.7)
+    ], "createastral:glowstone_clump")
     }
+    event.shapeless("createastral:glowstone_catalyst", ["SGS", "GGG", "SGS"], {S: "#minecraft:slime_balls", G: "minecraft:glowstone"})
 })
