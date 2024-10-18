@@ -476,6 +476,7 @@ event.create('createastral:astral_singularity').food(food => {
 event.create('createastral:pure_biomatter')
 event.create('createastral:lime').displayName('Lime Dust');
 event.create('createastral:coin','create:sequenced_assembly').displayName('coin');
+event.create('createastral:incomplete_electron_tube', 'create:sequenced_assembly')
 
 })
 

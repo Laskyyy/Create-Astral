@@ -43,4 +43,15 @@ onEvent("recipes", event => {
         "2x minecraft:dirt",
         "2x minecraft:gravel"
     ])
+    //easier glowstone
+    event.replaceInput({id: "create:filling/glowstone"}, "create:cinder_flour", "techreborn:andesite_dust")
+    //an actual use for glowstone lmao, throwing in a function so I should be able to use int again
+    glowstone(event)
+    function glowstone(event) {
+    let int = "kubejs:incomplete_electron_tube"
+    event.recipes.createSequencedAssembly("4x create:electron_tube", "create:iron_sheet" [
+        event.recipes.createDeploying(int, [int, "minecraft:glowstone"]),
+        event.recipes.createFilling(int, [int, {fluid: "tconstruct:rose_gold", amount: 2250}])
+    ]).loops(4).transitionalItem(int)
+    }
 })
