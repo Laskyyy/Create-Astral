@@ -237,7 +237,6 @@ onEvent("recipes", (event) => {
             type: "create:item_application",
         },
         { mod: "create", output: "minecraft:andesite" },
-        { input: "create:blaze_burner" },
 
         // Create Deco
 
