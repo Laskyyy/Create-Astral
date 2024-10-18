@@ -155,7 +155,7 @@ onEvent("recipes", (event) => {
         },
         { id: "techreborn:crafting_table/paper" },
         //Create
-
+        { output: "create:track" },
         { output: "create:blaze_cake" },
         { output: "create:blaze_cake_base" },
         { output: "create:blaze_burner" },
