@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "ad_astra:calorite_block"
+    },
+    "result": "yttr:quicksilver",
+    "experience": 0,
+    "cookingtime": 100
+}

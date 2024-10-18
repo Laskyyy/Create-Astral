@@ -1,0 +1,38 @@
+{
+  "feature": "astralrails:nether/crimson/scab",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 32
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 22
+        },
+        "max_inclusive": {
+          "absolute": 128
+        }
+      }
+    },
+		{
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:environment_scan",
+      "direction_of_search": "up",
+      "max_steps": 16,
+      "target_condition": {
+        "type": "minecraft:matching_blocks",
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "blocks": "minecraft:netherrack"
+      }
+    }
+  ]
+}

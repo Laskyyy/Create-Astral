@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:netherrack_replace_blobs",
+  "config": {
+    "state": {
+      "Name": "minecraft:end_stone",
+      "Properties": {
+        "axis": "z"
+      }
+    },
+    "target": {
+      "Name": "minecraft:netherrack"
+    },
+    "radius": {
+      "type": "minecraft:uniform",
+      "value": {
+        "min_inclusive": 10,
+        "max_inclusive": 12
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+	"type": "yttr:centrifuging",
+	"time": 400,
+	"ingredient": {
+		"item": "minecraft:end_stone",
+		"count": 16,
+		"yttr:no_substitution": true
+	},
+	"results": [
+		{
+			"item": "tconstruct:ender_slime_ball",
+			"count": 1
+		},
+		{
+			"item": "yttr:yttrium_dust",
+			"count": 2
+		}
+	]
+}

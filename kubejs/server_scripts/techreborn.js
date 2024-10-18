@@ -7,7 +7,7 @@ onEvent("recipes", (event) => {
     //  to use both machines for an item they may not craft often, outside of circuit automation.
     // Still, I'll let the wire mill produce wires.
     //
-    const WIRE_MATERIALS = ["iron", "gold", "copper", "brass"];
+    const WIRE_MATERIALS = ["iron", "gold", "copper"];
     for (let material of WIRE_MATERIALS) {
         event.custom({
             type: "techreborn:wire_mill",
@@ -15,7 +15,9 @@ onEvent("recipes", (event) => {
             time: 300,
             ingredients: [
                 {
-                    item: "create:" + material + "_sheet",
+                    // create calls it golden sheet, otherwise material + _sheet
+                    item: (material === "gold") ? "create:golden_sheet" :
+                        "create:" + material + "_sheet",
                     count: 2,
                 },
             ],
@@ -51,13 +53,13 @@ onEvent("recipes", (event) => {
         time: 600,
         ingredients: [
             {
-                item: "create:sturdy_sheet",
+                item: "createastral:fragile_sheet",
                 count: 16,
             },
         ],
         results: [
             {
-                item: "ad_astra:rocket_fin",
+                item: "createastral:fragile_rocket_fin",
                 count: 1,
             },
         ],
@@ -80,13 +82,7 @@ onEvent("recipes", (event) => {
     const DEFAULT_GRIND_TIME = 100; // five seconds
     const DEFAULT_GRIND_POWER = 5;
     const CRUSHING_RECIPES_TO_BECOME_GRINDING = [
-        [
-            "minecraft:clay_ball",
-            1,
-            "techreborn:clay_dust",
-            undefined,
-            undefined,
-        ], // showing the 4th and 5th for demonstration
+        ["minecraft:clay_ball", 1, "techreborn:clay_dust", undefined, undefined], // showing the 4th and 5th for demonstration
         ["minecraft:amethyst_cluster", 7, "minecraft:amethyst_shard"],
         ["minecraft:prismarine_crystals", 2, "minecraft:quartz"],
         ["minecraft:saddle", 3, "minecraft:leather"],
@@ -94,10 +90,11 @@ onEvent("recipes", (event) => {
         ["minecraft:ender_pearl", 2, "ae2:ender_dust"],
         ["tconstruct:necrotic_bone", 6, "minecraft:bone_meal"],
         ["minecraft:dried_kelp", 1, "minecraft:gunpowder"],
+        ["create:sturdy_sheet", 1, "createastral:fragile_sheet"]
     ];
 
     for (let recipe of CRUSHING_RECIPES_TO_BECOME_GRINDING) {
-        event.remove({ type: "create:crushing", input: recipe[0] });
+        event.remove({type: "create:crushing", input: recipe[0]});
         event.custom({
             type: "techreborn:grinder",
             time: recipe[3] || DEFAULT_GRIND_TIME,
@@ -137,31 +134,114 @@ onEvent("recipes", (event) => {
         ],
     });
 
-    //Implosion Compressor
-
+    // centrifuge
     event.custom({
-        type: "techreborn:implosion_compressor",
-        power: 30,
+        type: "techreborn:centrifuge",
+        power: 8,
         time: 500,
         ingredients: [
             {
-                count: 1,
-                item: "techreborn:steel_dust",
-            },
-            {
-                item: "minecraft:tnt",
-                count: 1,
+                item: "farmersdelight:rich_soil",
+                count: 2,
             },
         ],
         results: [
             {
-                item: "ad_astra:steel_ingot",
-                count: 1,
+                item: "minecraft:coarse_dirt",
+                count: 2,
             },
             {
-                item: "techreborn:steel_nugget",
-                count: 2,
+                item: "techreborn:saltpeter_dust",
+                count: 4,
             },
         ],
     });
+
+    event.custom({
+        type: "techreborn:centrifuge",
+        power: 100,
+        time: 500,
+        ingredients: [
+            {
+                item: "yttr:yttrium_dust",
+                count: 4,
+            },
+        ],
+        results: [
+            {
+                item: "createastral:crushed_raw_calorite",
+                count: 3,
+            },
+            {
+                item: "createastral:uranium_residue",
+                count: 1,
+            },
+        ],
+    });
+
+    event.custom({
+        type: "techreborn:centrifuge",
+        power: 8,
+        time: 500,
+        ingredients: [
+            {
+                item: "ae2:certus_quartz_crystal",
+                count: 1,
+            },
+            {
+                item: "techreborn:cell",
+                count: 13
+            }
+        ],
+        results: [
+            {
+                item: "techreborn:cell",
+                nbt: {
+                    fluid: "techreborn:oxygen",
+                },
+                count: 10,
+            },
+            {
+                item: "techreborn:cell",
+                nbt: {
+                    fluid: "techreborn:silicon",
+                },
+                count: 3,
+            },
+        ],
+    });
+
+
+    // Vacuum Freezer
+
+    event.custom({
+        type: "techreborn:vacuum_freezer",
+        power: 25,
+        time: 100,
+        ingredients: [
+            {
+                fluid: "minecraft:water",
+                holder: "techreborn:cell",
+            },
+        ],
+        results: [
+            {
+                item: "techreborn:cell",
+                nbt: {
+                    fluid: "kubejs:supercooled_water",
+                },
+            },
+        ],
+    });
+
+    // Crafting Table recipes
+    event
+        .shapeless("3x minecraft:paper", [
+            "techreborn:saw_dust",
+            "techreborn:saw_dust",
+            "techreborn:saw_dust",
+            "minecraft:water_bucket",
+        ])
+        .replaceIngredient("minecraft:water_bucket", "minecraft:bucket")
+        .id("techreborn:crafting_table/paper_manual_only");
 });

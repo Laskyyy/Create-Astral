@@ -1,0 +1,175 @@
+{
+	"name": "astralrails:contest/orbit/spacecontainers/interiors",
+	"fallback": "minecraft:empty",
+	"elements": [{
+		"weight": 75,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/interior/1",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},
+	{
+		"weight": 40,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/interior/2",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},
+	{
+		"weight": 40,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/interior/3",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},
+	{
+		"weight": 40,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/interior/4",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},
+	{
+		"weight": 40,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/interior/5",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},
+	{
+		"weight": 40,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/interior/6",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},
+	{
+		"weight": 70,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/interior/7",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},
+	{
+		"weight": 40,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/interior/9",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},
+	{
+		"weight": 40,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/interior/10",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},
+	{
+		"weight": 75,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/interior/11",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},
+	{
+		"weight": 40,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/interior/12",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},
+	{
+		"weight": 75,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/interior/14",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},
+	{
+		"weight": 75,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/interior/15",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},
+	{
+		"weight": 40,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/interior/16",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},
+	{
+		"weight": 75,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/interior/19",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},
+	{
+		"weight": 75,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/interior/20",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},
+	{
+		"weight": 40,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/interior/21",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},
+	{
+		"weight": 40,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/interior/25",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	},
+	{
+		"weight": 40,
+		"element": {
+			"location": "astralrails:contest/orbit/spacecontainers/interior/30",
+			"processors": "minecraft:empty",
+			"projection": "rigid",
+			"element_type": "minecraft:single_pool_element"
+		}
+	}]
+}

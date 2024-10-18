@@ -5,7 +5,7 @@
     {
       "weight": 1,
       "element": {
-        "location": "astralrails:mine/mining_building",
+        "location": "astralrails:overworld/railtown/mine/mining_building",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"

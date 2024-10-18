@@ -1,0 +1,10 @@
+{
+    "block": "createastral:mercurian_stone",
+    "dim": "ad_astra:mercury",
+    "ignitionType": "ITEM",
+    "ignitionSource": "createastral:astral_conduit",
+	"returnDim": "ad_astra:mars",
+    "r": 189,
+    "g": 38,
+    "b": 83
+}

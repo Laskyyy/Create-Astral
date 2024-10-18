@@ -5,7 +5,7 @@
     {
       "weight": 1,
       "element": {
-        "location": "astralrails:paths/path_start1",
+        "location": "astralrails:overworld/railtown/paths/path_start1",
         "processors": [
 					{
 						"processor_type": "minecraft:rule",
@@ -33,7 +33,7 @@
 		{
       "weight": 1,
       "element": {
-        "location": "astralrails:paths/path_start2",
+        "location": "astralrails:overworld/railtown/paths/path_start2",
         "processors": [
 					{
 						"processor_type": "minecraft:rule",
@@ -61,7 +61,7 @@
 		{
       "weight": 1,
       "element": {
-        "location": "astralrails:paths/path_start3",
+        "location": "astralrails:overworld/railtown/paths/path_start3",
         "processors": [
 					{
 						"processor_type": "minecraft:rule",

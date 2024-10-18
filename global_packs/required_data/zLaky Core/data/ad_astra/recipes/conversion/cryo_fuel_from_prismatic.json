@@ -1,0 +1,10 @@
+{
+    "type": "ad_astra:cryo_fuel_conversion",
+    "input": {
+        "item": "createastral:prismatic_crystal"
+    },
+    "output": {
+        "name": "kubejs:aurorite"
+    },
+    "conversion_ratio": 0.2
+}

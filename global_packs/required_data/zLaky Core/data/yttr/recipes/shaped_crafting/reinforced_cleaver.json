@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "    VV",
+    "   VV ",
+    "  VV  ",
+    " VN   ",
+    " P    ",
+    "P     "
+  ],
+  "key": {
+    "N": {
+      "item": "yttr:neodymium_block"
+    },
+    "P": {
+      "item": "yttr:ultrapure_netherite"
+    },
+    "V": {
+      "item": "yttr:glassy_void"
+    }
+  },
+  "result": {
+    "item": "yttr:effector"
+  }
+}

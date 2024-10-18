@@ -1,0 +1,19 @@
+{
+	"type": "yttr:centrifuging",
+	"ingredient": {
+		"item": "createastral:crushed_raw_gadolinite"
+	},
+	"results": [
+		{
+			"item": "yttr:iron_dust",
+			"count": 2
+		},
+		{
+			"item": "yttr:neodymium_dust",
+			"count": 1
+		},
+		{
+			"item": "yttr:yttrium_dust"
+		}
+	]
+}

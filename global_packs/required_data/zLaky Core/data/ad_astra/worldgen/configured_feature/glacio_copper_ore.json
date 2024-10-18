@@ -1,16 +1,16 @@
 {
   "type": "minecraft:ore",
   "config": {
-    "size": 4,
+    "size": 17,
     "discard_chance_on_air_exposure": 0,
     "targets": [
       {
         "target": {
           "predicate_type": "minecraft:tag_match",
-          "tag": "ad_astra:glacio_ore_replaceables"
+          "tag": "minecraft:ice"
         },
         "state": {
-          "Name": "tconstruct:raw_cobalt_block"
+          "Name": "yttr:continuous_platform"
         }
       }
     ]

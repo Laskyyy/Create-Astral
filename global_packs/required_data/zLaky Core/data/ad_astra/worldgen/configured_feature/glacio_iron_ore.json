@@ -1,7 +1,7 @@
 {
   "type": "minecraft:ore",
   "config": {
-    "size": 20,
+    "size": 11,
     "discard_chance_on_air_exposure": 0,
     "targets": [
       {
@@ -10,7 +10,7 @@
           "tag": "ad_astra:glacio_ore_replaceables"
         },
         "state": {
-          "Name": "minecraft:raw_iron_block"
+          "Name": "ad_astra:glacio_iron_ore"
         }
       }
     ]

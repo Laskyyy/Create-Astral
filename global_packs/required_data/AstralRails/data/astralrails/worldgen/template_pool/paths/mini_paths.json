@@ -5,7 +5,7 @@
     {
       "weight": 2,
       "element": {
-        "location": "astralrails:paths/path_mini1",
+        "location": "astralrails:overworld/railtown/paths/path_mini1",
         "processors": [
 					{
 						"processor_type": "minecraft:rule",
@@ -33,7 +33,7 @@
 		{
       "weight": 2,
       "element": {
-        "location": "astralrails:paths/path_mini2",
+        "location": "astralrails:overworld/railtown/paths/path_mini2",
         "processors": [
 					{
 						"processor_type": "minecraft:rule",
@@ -61,7 +61,7 @@
 		{
       "weight": 2,
       "element": {
-        "location": "astralrails:paths/path_mini3",
+        "location": "astralrails:overworld/railtown/paths/path_mini3",
         "processors": [
 					{
 						"processor_type": "minecraft:rule",
@@ -89,7 +89,7 @@
 		{
       "weight": 3,
       "element": {
-        "location": "astralrails:buildings/well",
+        "location": "astralrails:overworld/railtown/buildings/well",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -98,7 +98,7 @@
 		{
       "weight": 2,
       "element": {
-        "location": "astralrails:buildings/wagon",
+        "location": "astralrails:overworld/railtown/buildings/wagon",
         "processors": [
 					{
 						"processor_type": "minecraft:rule",
@@ -126,7 +126,7 @@
 		{
       "weight": 2,
       "element": {
-        "location": "astralrails:buildings/pillager_tent",
+        "location": "astralrails:overworld/railtown/buildings/pillager_tent",
         "processors": [
 					{
 						"processor_type": "minecraft:rule",
@@ -154,7 +154,7 @@
 		{
       "weight": 3,
       "element": {
-        "location": "astralrails:buildings/empty_plot",
+        "location": "astralrails:overworld/railtown/buildings/empty_plot",
         "processors": [
 					{
 						"processor_type": "minecraft:rule",

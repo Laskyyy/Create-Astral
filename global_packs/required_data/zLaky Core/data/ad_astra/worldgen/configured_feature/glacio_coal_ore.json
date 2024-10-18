@@ -10,7 +10,7 @@
           "tag": "ad_astra:glacio_ore_replaceables"
         },
         "state": {
-          "Name": "minecraft:coal_block"
+          "Name": "ad_astra:glacio_coal_ore"
         }
       }
     ]

@@ -1,7 +1,7 @@
 {
 	id: "12D4862FD0A5F7F5"
 	group: ""
-	order_index: 0
+	order_index: 1
 	filename: "assorted_goals"
 	title: "{chapter.1.title}"
 	icon: "minecraft:furnace"
@@ -25,7 +25,7 @@
 			x: 0.5d
 			y: 12.0d
 			subtitle: "{chapter.1.quest.1.subtitle}"
-			description: ["{chapter.1.quest.1.description.1}"]
+			description: ["The armor set provides slightly better protection than Golden Armor, and has way more durability."]
 			dependencies: ["11ACD707D7284920"]
 			id: "327EA8E115211B55"
 			tasks: [
@@ -90,7 +90,11 @@
 			x: -5.5d
 			y: 12.0d
 			subtitle: "{chapter.1.quest.2.subtitle}"
-			description: ["{chapter.1.quest.2.description.1}"]
+			description: [
+				"Use the &6Part Builder&r to create tool parts!"
+				""
+				"Place in some Patterns and a material you want to make the part out of, and then choose your part!"
+			]
 			dependencies: ["1AC4A5B8D86CAB0F"]
 			id: "75B36BB7FE771333"
 			tasks: [{
@@ -109,19 +113,23 @@
 			x: -6.0d
 			y: 10.5d
 			subtitle: "{chapter.1.quest.3.subtitle}"
-			description: ["{chapter.1.quest.3.description.1}"]
+			description: [
+				"Using the &6Tinker Station&r, you can assemble your tools out of parts."
+				""
+				"Try to make a &6Wooden Pickaxe&r out of wooden parts first."
+				""
+				"Hephaestus tools can be &6repaired&r in the Tinker Station using the material used for the \"head\"."
+				""
+				"Alternatively, you can make &6Repair Kits&r to repair items using the crafting grid."
+				""
+				"Later on, you will also be able to apply &6modifiers&r to improve the tool, for example to mine faster, to deal more damage, or to gain new abilities."
+			]
 			dependencies: ["1AC4A5B8D86CAB0F"]
 			id: "584489E0781D5C0C"
 			tasks: [{
 				id: "7E9FEA64819569DC"
 				type: "item"
-				item: {
-					id: "tconstruct:tinker_station"
-					Count: 1b
-					tag: {
-						texture: "minecraft:oak_planks"
-					}
-				}
+				item: "tconstruct:tinker_station"
 			}]
 		}
 		{
@@ -135,7 +143,7 @@
 			x: -4.5d
 			y: 11.5d
 			subtitle: "{chapter.1.quest.4.subtitle}"
-			description: ["{chapter.1.quest.4.description.1}"]
+			description: ["Make any Hephaestus tool part in the Part Builder."]
 			dependencies: ["75B36BB7FE771333"]
 			id: "29AF19492CFCB2DB"
 			tasks: [{
@@ -161,7 +169,11 @@
 			x: -4.5d
 			y: 10.0d
 			subtitle: "{chapter.1.quest.5.subtitle}"
-			description: ["{chapter.1.quest.5.description.1}"]
+			description: [
+				"Now that you have some tools, you can now gather materials needed for your next advancement - the &6Furnace&r!"
+				""
+				"As a reward, you'll receive a &6Tinker's Encyclopedia&r - a compendium of currently known tools from books you obtained so far, with detailed explanation about the tool traits."
+			]
 			dependencies: [
 				"29AF19492CFCB2DB"
 				"584489E0781D5C0C"
@@ -192,7 +204,7 @@
 			x: 1.5d
 			y: 11.0d
 			subtitle: "{chapter.1.quest.6.subtitle}"
-			description: ["{chapter.1.quest.6.description.1}"]
+			description: ["Don't like Hephaestus? You can make vanilla-style &6Copper Tools&r using Ingots."]
 			dependencies: ["11ACD707D7284920"]
 			optional: true
 			id: "01B4EDC69A4BDBBD"
@@ -209,11 +221,16 @@
 			}]
 		}
 		{
+			title: "Fresh Furnace"
 			x: -1.5d
 			y: 10.0d
 			shape: "rsquare"
-			subtitle: "{chapter.1.quest.7.subtitle}"
-			description: ["{chapter.1.quest.7.description.1}"]
+			subtitle: "A pioneer's first piece of industry..."
+			description: [
+				"Now that you have a &6Furnace&r, you can start smelting!"
+				""
+				"Tip: Copper makes for a great Hephaestus tool material!"
+			]
 			dependencies: ["0FC0B4E8EC58F791"]
 			size: 1.25d
 			id: "601A619C6E96920A"
@@ -241,7 +258,7 @@
 			icon: "minecraft:copper_ingot"
 			x: 0.5d
 			y: 11.0d
-			description: ["{chapter.1.quest.8.description.1}"]
+			description: ["&6Copper&r can be used in some utilities, as well as a great Hephaestus material!"]
 			dependencies: ["601A619C6E96920A"]
 			id: "11ACD707D7284920"
 			tasks: [{
@@ -293,7 +310,7 @@
 			x: -1.5d
 			y: 11.5d
 			subtitle: "{chapter.1.quest.10.subtitle}"
-			description: ["{chapter.1.quest.10.description.1}"]
+			description: ["Show your swag with a full set of &6Golden Armor&r."]
 			dependencies: ["601A619C6E96920A"]
 			optional: true
 			id: "5E6B48D6A4254759"
@@ -370,8 +387,8 @@
 		}
 		{
 			title: "{chapter.1.quest.11.title}"
-			x: -10.0d
-			y: 16.0d
+			x: -5.25d
+			y: 16.5d
 			shape: "diamond"
 			subtitle: "{chapter.1.quest.11.subtitle}"
 			description: ["{chapter.1.quest.11.description.1}"]
@@ -380,18 +397,11 @@
 			size: 1.5d
 			optional: true
 			id: "05E45A7D1C9927E5"
-			tasks: [
-				{
-					id: "06BFB633FC06AF54"
-					type: "item"
-					item: "drinkbeer:beer_barrel"
-				}
-				{
-					id: "1CA938F3C387BA3E"
-					type: "item"
-					item: "drinkbeer:recipe_board_package"
-				}
-			]
+			tasks: [{
+				id: "06BFB633FC06AF54"
+				type: "item"
+				item: "drinkbeer:beer_barrel"
+			}]
 			rewards: [{
 				id: "2FB3A079A96DE590"
 				type: "item"
@@ -400,46 +410,31 @@
 			}]
 		}
 		{
-			title: "{chapter.1.quest.12.title}"
-			x: -9.0d
-			y: 17.0d
-			description: ["{chapter.1.quest.12.description.1}"]
-			dependencies: ["05E45A7D1C9927E5"]
-			optional: true
-			id: "3E499250F88E22DA"
-			tasks: [{
-				id: "4C08DE69B9F3B0D9"
-				type: "item"
-				item: "drinkbeer:trade_box_normal"
-			}]
-		}
-		{
 			title: "{chapter.1.quest.13.title}"
 			x: -7.8078231292516875d
 			y: 13.244897959183653d
 			shape: "pentagon"
 			subtitle: "{chapter.1.quest.13.subtitle}"
-			description: ["{chapter.1.quest.13.description.1}"]
+			description: [
+				"&cWARNING!&r The Project Table is quite buggy, and can &lvoid items&r when multiple people are using it at the same time!"
+				""
+				"This will hopefully be fixed in a later version of the mod!"
+			]
+			min_required_dependencies: 1
 			dependency_requirement: "one_completed"
 			size: 2.5d
 			min_required_tasks: 1
 			id: "0BCED0F8481E0C21"
 			tasks: [
 				{
-					id: "7762F7FD3BD41EA6"
-					type: "item"
-					item: {
-						id: "tconstruct:crafting_station"
-						Count: 1b
-						tag: {
-							texture: "minecraft:oak_log"
-						}
-					}
-				}
-				{
 					id: "576B4EA932FC2E16"
 					type: "item"
 					item: "minecraft:crafting_table"
+				}
+				{
+					id: "3B80E831E315C381"
+					type: "item"
+					item: "projecttable:projecttable"
 				}
 			]
 			rewards: [
@@ -460,7 +455,15 @@
 			x: -6.5d
 			y: 11.5d
 			subtitle: "{chapter.1.quest.14.subtitle}"
-			description: ["{chapter.1.quest.14.description.1}"]
+			description: [
+				"&6Tinkers' Construct&r (or &6Hephaestus&r) is a mod that allows you to create tools out of parts!"
+				""
+				"Each material comes with a different trait, which gives the tool some sort of a special effect!"
+				""
+				"To get started, craft some &6Patterns&r - you'll need quite a few."
+				""
+				"As a reward, you'll receive a book that explains the basics of Hephaestus."
+			]
 			dependencies: ["0BCED0F8481E0C21"]
 			id: "1AC4A5B8D86CAB0F"
 			tasks: [{
@@ -480,7 +483,11 @@
 			x: -2.5d
 			y: 9.0d
 			subtitle: "{chapter.1.quest.15.subtitle}"
-			description: ["{chapter.1.quest.15.description.1}"]
+			description: [
+				"Time to grab some essentials: &6Iron, Tin and Copper&r."
+				""
+				"Make sure that you don't use a &7Pick&nadze&r though, as it can only mine Wood-tier blocks!"
+			]
 			dependencies: ["0FC0B4E8EC58F791"]
 			min_required_tasks: 1
 			id: "6698096C19C55333"
@@ -511,7 +518,10 @@
 			y: 10.0d
 			shape: "diamond"
 			subtitle: "{chapter.1.quest.16.subtitle}"
-			description: ["{chapter.1.quest.16.description.1}"]
+			description: [
+				"You'll need some of this Rice later on."
+				"You can cut fully grown Grass or Rice to get Straw!"
+			]
 			hide_dependency_lines: true
 			dependencies: ["0BCED0F8481E0C21"]
 			size: 1.5d
@@ -534,7 +544,7 @@
 			x: -10.5d
 			y: 10.0d
 			subtitle: "{chapter.1.quest.17.subtitle}"
-			description: ["{chapter.1.quest.17.description.1}"]
+			description: ["There's a lot of new crops in Farmer's Delight, can you automate them all?"]
 			dependencies: ["2CE5BB6A7B30CA4C"]
 			optional: true
 			id: "504201C234C38437"
@@ -553,7 +563,12 @@
 		{
 			x: -6.0d
 			y: 9.5d
-			description: ["{chapter.1.quest.18.description.1}"]
+			subtitle: "&oIt's dangerous to go alone, make this!&r"
+			description: [
+				"&6Traveler's Armor&r is a modifiable set of armor that is by default comparable to Golden Armor."
+				""
+				"Later on, you will be able to add modifiers to this set to improve armor's defense, your speed, your mining speed, etc."
+			]
 			dependencies: ["0FC0B4E8EC58F791"]
 			optional: true
 			id: "78E055160B11FC48"
@@ -576,34 +591,6 @@
 					item: "reinfchest:iron_chest"
 				}
 			]
-		}
-		{
-			title: "{chapter.1.quest.19.title}"
-			icon: {
-				id: "ftbquests:custom_icon"
-				Count: 1b
-				tag: {
-					Icon: "createastral:textures/item/uwaah.png"
-				}
-			}
-			x: -6.536394557823115d
-			y: 14.571088435374122d
-			shape: "gear"
-			subtitle: "{chapter.1.quest.19.subtitle}"
-			description: ["{chapter.1.quest.19.description.1}"]
-			dependency_requirement: "one_completed"
-			size: 1.25d
-			id: "1472D9CAB3B3A74D"
-			tasks: [{
-				id: "03400A6C3B703E48"
-				type: "checkmark"
-				title: "{chapter.1.quest.19.task.1.title}"
-			}]
-			rewards: [{
-				id: "3041554AA6080450"
-				type: "item"
-				item: "createastral:orcane"
-			}]
 		}
 		{
 			title: "{chapter.1.quest.20.title}"
@@ -830,11 +817,11 @@
 		}
 		{
 			title: "{chapter.1.quest.30.title}"
-			x: -8.0d
-			y: 17.5d
+			x: -3.5d
+			y: 16.0d
 			subtitle: "{chapter.1.quest.30.subtitle}"
 			description: ["{chapter.1.quest.30.description.1}"]
-			dependencies: ["3E499250F88E22DA"]
+			dependencies: ["05E45A7D1C9927E5"]
 			optional: true
 			id: "69C0C2601F6F79A7"
 			tasks: [
@@ -942,33 +929,16 @@
 			}]
 		}
 		{
-			title: "{chapter.1.quest.31.title}"
-			x: -11.5d
-			y: 10.0d
-			subtitle: "{chapter.1.quest.31.subtitle}"
-			description: ["{chapter.1.quest.31.description.1}"]
-			dependencies: ["504201C234C38437"]
-			optional: true
-			id: "501AD44D7875F4D9"
-			tasks: [{
-				id: "18650A6066610756"
-				type: "item"
-				item: "camsbackpacks:white_backpack"
-			}]
-			rewards: [{
-				id: "1E0A00A53BFB7196"
-				type: "item"
-				item: "reinfchest:copper_chest"
-				count: 4
-			}]
-		}
-		{
 			title: "{chapter.1.quest.32.title}"
 			icon: "minecraft:spyglass"
 			x: 1.5d
 			y: 12.0d
 			subtitle: "{chapter.1.quest.32.subtitle}"
-			description: ["{chapter.1.quest.32.description.1}"]
+			description: [
+				"Press [Z] (default) to zoom in."
+				""
+				"(Wait, what does this have to do with Copper?)"
+			]
 			dependencies: ["11ACD707D7284920"]
 			id: "6B68AF2DE79A65A3"
 			tasks: [{
@@ -976,21 +946,14 @@
 				type: "checkmark"
 				title: "{chapter.1.quest.32.task.1.title}"
 			}]
-			rewards: [
-				{
-					id: "62EBCF9C550E38E7"
-					type: "item"
-					item: "create:gray_toolbox"
-				}
-				{
-					id: "44E31D1175B6FDDF"
-					type: "item"
-					item: "minecraft:spyglass"
-				}
-			]
+			rewards: [{
+				id: "44E31D1175B6FDDF"
+				type: "item"
+				item: "minecraft:spyglass"
+			}]
 		}
 		{
-			title: "{chapter.1.quest.33.title}"
+			title: "Pretty Storage"
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -1000,8 +963,18 @@
 			}
 			x: 2.0d
 			y: 8.0d
-			subtitle: "{chapter.1.quest.33.subtitle}"
-			description: ["{chapter.1.quest.33.description.1}"]
+			subtitle: "Aesthetics > Practicality"
+			description: [
+				"The &6Package Crafter&r allows you to create a Package out of materials:"
+				"- Any block for the &6core&r of the Package,"
+				"- Any block for the &6frame&r of the Package,"
+				"- Any dye for the &6front&r of the package,"
+				"- A Copper Ingot."
+				""
+				"This will result in a &6Package&r that can store 8 stacks of a single item."
+				""
+				"You can also store Packages in Packages!"
+			]
 			dependencies: ["6433AD83545428C3"]
 			id: "5D69FB71CD8A1391"
 			tasks: [
@@ -1165,7 +1138,11 @@
 			y: 8.0d
 			shape: "gear"
 			subtitle: "{chapter.1.quest.35.subtitle}"
-			description: ["{chapter.1.quest.35.description.1}"]
+			description: [
+				"Tin and Copper will be used for an alloy, which is a base of all industry going forward."
+				""
+				"Andesite and Clay will introduce you to Create."
+			]
 			dependencies: [
 				"601A619C6E96920A"
 				"6698096C19C55333"
@@ -1206,41 +1183,7 @@
 			]
 		}
 		{
-			title: "{chapter.1.quest.36.title}"
-			x: 0.5d
-			y: 8.0d
-			subtitle: "{chapter.1.quest.36.subtitle}"
-			description: ["{chapter.1.quest.36.description.1}"]
-			dependencies: ["6433AD83545428C3"]
-			id: "3147C3CCBC6856B6"
-			tasks: [
-				{
-					id: "4AD8D3B2156A38B8"
-					type: "item"
-					item: "techreborn:storage_buffer"
-				}
-				{
-					id: "6435D0B2DADB3D95"
-					type: "item"
-					item: "techreborn:crude_storage_unit"
-				}
-			]
-			rewards: [
-				{
-					id: "136E8C4D5C4A0054"
-					type: "item"
-					item: "techreborn:crude_storage_unit"
-					count: 4
-				}
-				{
-					id: "185D3119BF9DE681"
-					type: "item"
-					item: "techreborn:wrench"
-				}
-			]
-		}
-		{
-			x: -2.0d
+			x: 0.0d
 			y: 13.5d
 			dependencies: ["30671A15990F39D8"]
 			optional: true
@@ -1258,7 +1201,7 @@
 			}]
 		}
 		{
-			x: -3.5d
+			x: -1.5d
 			y: 15.0d
 			dependencies: ["30671A15990F39D8"]
 			optional: true
@@ -1276,7 +1219,7 @@
 			}]
 		}
 		{
-			x: -0.5d
+			x: 1.5d
 			y: 15.0d
 			dependencies: ["30671A15990F39D8"]
 			optional: true
@@ -1294,7 +1237,7 @@
 			}]
 		}
 		{
-			x: -0.5d
+			x: 1.5d
 			y: 14.0d
 			dependencies: ["30671A15990F39D8"]
 			optional: true
@@ -1312,7 +1255,7 @@
 			}]
 		}
 		{
-			x: -3.5d
+			x: -1.5d
 			y: 14.0d
 			dependencies: ["30671A15990F39D8"]
 			optional: true
@@ -1330,7 +1273,7 @@
 			}]
 		}
 		{
-			x: -0.5d
+			x: 1.5d
 			y: 16.0d
 			dependencies: ["30671A15990F39D8"]
 			optional: true
@@ -1347,7 +1290,7 @@
 			}]
 		}
 		{
-			x: -3.5d
+			x: -1.5d
 			y: 16.0d
 			dependencies: ["30671A15990F39D8"]
 			optional: true
@@ -1367,7 +1310,13 @@
 			x: 1.5d
 			y: 10.0d
 			subtitle: "{chapter.1.quest.44.subtitle}"
-			description: ["{chapter.1.quest.44.description.1}"]
+			description: [
+				"&6Copper Chests&r allow you to store 45 stacks of items in a single chest!"
+				""
+				"You can combine them into a double chest, just like vanilla chests."
+				""
+				"Later on you'll be able to get even better chests!"
+			]
 			dependencies: [
 				"11ACD707D7284920"
 				"6433AD83545428C3"
@@ -1388,117 +1337,46 @@
 			title: "{chapter.1.quest.45.title}"
 			x: -10.5d
 			y: 9.0d
-			description: ["{chapter.1.quest.45.description.1}"]
+			description: [
+				"{chapter.1.quest.45.description.1}"
+				""
+				"&6Obtaining a cow in a jar&r is a good place to start when experimenting with Blockheads, as infinite milk without entities is a lag-free method of collection."
+			]
 			dependencies: ["2CE5BB6A7B30CA4C"]
 			optional: true
 			id: "3522109BABC7E48B"
-			tasks: [{
-				id: "34A0BAA9C0AE7A74"
-				type: "item"
-				item: "cookingforblockheads:white_kitchen_floor"
-			}]
+			tasks: [
+				{
+					id: "34A0BAA9C0AE7A74"
+					type: "item"
+					item: "cookingforblockheads:white_kitchen_floor"
+				}
+				{
+					id: "009412A63A560AB1"
+					type: "item"
+					item: "cookingforblockheads:milk_jar"
+				}
+				{
+					id: "720CA3FD6574A4AF"
+					type: "item"
+					item: "cookingforblockheads:fridge"
+				}
+				{
+					id: "6D8617ECA0B6259F"
+					type: "item"
+					item: "cookingforblockheads:oven"
+				}
+				{
+					id: "6FC3BADFCF84BEF5"
+					type: "item"
+					item: "cookingforblockheads:cooking_table"
+				}
+			]
 			rewards: [{
 				id: "3E69ED9AD85027DE"
 				type: "item"
 				item: "chipped:white_concrete_1"
 				count: 10
-			}]
-		}
-		{
-			title: "{chapter.1.quest.46.title}"
-			x: -10.5d
-			y: 8.0d
-			subtitle: "{chapter.1.quest.46.subtitle}"
-			dependencies: ["3522109BABC7E48B"]
-			optional: true
-			id: "337723130C80CD91"
-			tasks: [
-				{
-					id: "7D33C5F208328B37"
-					type: "item"
-					item: "cookingforblockheads:oven"
-				}
-				{
-					id: "5E02F460E91CA16F"
-					type: "item"
-					item: "cookingforblockheads:fridge"
-				}
-				{
-					id: "01F817CDA1FD1EB1"
-					type: "item"
-					item: "cookingforblockheads:cooking_table"
-				}
-			]
-		}
-		{
-			x: -9.5d
-			y: 8.0d
-			subtitle: "{chapter.1.quest.47.subtitle}"
-			dependencies: ["3522109BABC7E48B"]
-			optional: true
-			id: "18BA6A99120CF00D"
-			tasks: [
-				{
-					id: "46DDBA57E0E31ED4"
-					type: "item"
-					item: "cookingforblockheads:counter"
-				}
-				{
-					id: "5DAAA626786D2781"
-					type: "item"
-					item: "cookingforblockheads:sink"
-				}
-			]
-		}
-		{
-			title: "{chapter.1.quest.48.title}"
-			x: -11.5d
-			y: 8.0d
-			subtitle: "{chapter.1.quest.48.subtitle}"
-			dependencies: ["3522109BABC7E48B"]
-			optional: true
-			id: "3BACB90B72AE7623"
-			tasks: [
-				{
-					id: "5E8E12E883FDC595"
-					type: "item"
-					item: "cookingforblockheads:tool_rack"
-				}
-				{
-					id: "5AB7422E73C26E76"
-					type: "item"
-					item: "cookingforblockheads:spice_rack"
-				}
-				{
-					id: "591F6C488FB3F775"
-					type: "item"
-					item: "cookingforblockheads:fruit_basket"
-				}
-				{
-					id: "3D63E7309CEE69AA"
-					type: "item"
-					item: "cookingforblockheads:milk_jar"
-				}
-				{
-					id: "6372A49D46ED573E"
-					type: "item"
-					item: "cookingforblockheads:toaster"
-				}
-			]
-			rewards: [{
-				id: "2727129F435DDB21"
-				type: "item"
-				item: {
-					id: "minecraft:bread"
-					Count: 1b
-					tag: {
-						CookingForBlockheadsToasted: 1b
-						display: {
-							Name: "{\"translate\":\"tooltip.cookingforblockheads:toasted\",\"with\":[{\"translate\":\"item.minecraft.bread\"}]}"
-						}
-					}
-				}
-				count: 2
 			}]
 		}
 		{
@@ -1510,10 +1388,16 @@
 					Icon: "chipped:textures/block/stripped_dark_oak_log/stripped_dark_oak_log_16.png"
 				}
 			}
-			x: -2.0d
+			x: 0.0d
 			y: 15.0d
 			shape: "diamond"
-			subtitle: "{chapter.1.quest.49.subtitle}"
+			description: [
+				"If you like building, you might be interested in these."
+				""
+				"Chipped blocks require a specific workstation to create them."
+				""
+				"That workstation is related to the nature of the block."
+			]
 			hide_dependency_lines: true
 			dependencies: ["0BCED0F8481E0C21"]
 			size: 1.5d
@@ -1526,8 +1410,8 @@
 			}]
 		}
 		{
-			x: -8.5d
-			y: 16.0d
+			x: -6.5d
+			y: 17.0d
 			subtitle: "{chapter.1.quest.50.subtitle}"
 			dependencies: ["05E45A7D1C9927E5"]
 			optional: true
@@ -1552,7 +1436,7 @@
 			]
 		}
 		{
-			x: -7.5d
+			x: -8.0d
 			y: 16.5d
 			subtitle: "{chapter.1.quest.51.subtitle}"
 			dependencies: ["7D768E5AA9EA358C"]
@@ -1571,8 +1455,8 @@
 			}]
 		}
 		{
-			x: -6.5d
-			y: 17.0d
+			x: -9.0d
+			y: 16.0d
 			subtitle: "{chapter.1.quest.52.subtitle}"
 			dependencies: ["52832D8DA239C017"]
 			optional: true
@@ -1633,7 +1517,7 @@
 			x: 3.0d
 			y: 8.0d
 			subtitle: "{chapter.1.quest.55.subtitle}"
-			description: ["{chapter.1.quest.55.description.1}"]
+			description: ["Mix and match cores, frames and front colors to your desire."]
 			dependencies: ["5D69FB71CD8A1391"]
 			id: "36A1589C564732B1"
 			tasks: [{
@@ -1673,12 +1557,12 @@
 		{
 			title: "{chapter.1.quest.56.title}"
 			icon: "vinery:old_cherry_sapling"
-			x: -6.0d
-			y: 18.5d
+			x: -4.5d
+			y: 17.5d
 			subtitle: "{chapter.1.quest.56.subtitle}"
 			description: ["{chapter.1.quest.56.description.1}"]
-			hide_dependency_lines: true
-			dependencies: ["0BCED0F8481E0C21"]
+			hide_dependency_lines: false
+			dependencies: ["05E45A7D1C9927E5"]
 			id: "165C3C3DF1B9B4A3"
 			tasks: [{
 				id: "0B0B28657F7C6931"
@@ -1705,8 +1589,8 @@
 		}
 		{
 			title: "{chapter.1.quest.57.title}"
-			x: -5.0d
-			y: 20.0d
+			x: -3.5d
+			y: 19.5d
 			subtitle: "{chapter.1.quest.57.subtitle}"
 			description: ["{chapter.1.quest.57.description.1}"]
 			dependencies: ["4B565923D33B2CB8"]
@@ -1736,8 +1620,8 @@
 		}
 		{
 			title: "{chapter.1.quest.58.title}"
-			x: -3.5d
-			y: 18.0d
+			x: -2.0d
+			y: 17.5d
 			subtitle: "{chapter.1.quest.58.subtitle}"
 			description: ["{chapter.1.quest.58.description.1}"]
 			dependencies: ["6BECCB7FA4132517"]
@@ -1759,8 +1643,8 @@
 		}
 		{
 			title: "{chapter.1.quest.59.title}"
-			x: -3.5d
-			y: 19.0d
+			x: -2.5d
+			y: 18.5d
 			subtitle: "{chapter.1.quest.59.subtitle}"
 			description: ["{chapter.1.quest.59.description.1}"]
 			dependencies: ["6BECCB7FA4132517"]
@@ -1782,8 +1666,8 @@
 		}
 		{
 			title: "{chapter.1.quest.60.title}"
-			x: -6.5d
-			y: 19.5d
+			x: -4.0d
+			y: 18.5d
 			subtitle: "{chapter.1.quest.60.subtitle}"
 			description: ["{chapter.1.quest.60.description.1}"]
 			dependencies: ["165C3C3DF1B9B4A3"]
@@ -1802,8 +1686,8 @@
 		{
 			title: "{chapter.1.quest.61.title}"
 			icon: "vinery:red_grape"
-			x: -5.0d
-			y: 18.5d
+			x: -3.0d
+			y: 17.5d
 			subtitle: "{chapter.1.quest.61.subtitle}"
 			dependencies: ["165C3C3DF1B9B4A3"]
 			id: "6BECCB7FA4132517"
@@ -1815,7 +1699,7 @@
 		}
 		{
 			title: "{chapter.1.quest.62.title}"
-			x: -8.5d
+			x: -9.0d
 			y: 8.5d
 			subtitle: "{chapter.1.quest.62.subtitle}"
 			dependencies: ["2CE5BB6A7B30CA4C"]
@@ -1843,6 +1727,11 @@
 			icon: "minecraft:coal_ore"
 			x: -4.5d
 			y: 8.5d
+			description: [
+				"The only new ore you are going to find in the overworld is &6Tin!&r"
+				""
+				"It is noteworthy that we do not expect you to go mining for ores as your main income of metal as you progress, &6explore REI&r for potential ways to automate the creation of these materials!"
+			]
 			dependencies: ["0FC0B4E8EC58F791"]
 			min_required_tasks: 1
 			id: "49202443C0D32255"
@@ -1929,6 +1818,132 @@
 				id: "4E42F1996A792ECD"
 				type: "item"
 				item: "minecraft:cake"
+			}]
+		}
+		{
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "ftblibrary:textures/icons/info.png"
+				}
+			}
+			x: -4.0d
+			y: 14.0d
+			description: [
+				"- If you are new to &6Create&r, use the &6Ponder&r feature (hold the [W] key while hovering over an item), or online guides to learn how Create works."
+				""
+				"- This pack is centered mainly around &6Create&r, &6Tech Reborn&r, &6Ad Astra&r, and later on... &6Yttr!&r"
+				""
+				"- This pack changes a ton of recipes! Be sure to check out &6REI&r (the recipe viewer to the right of your inventory)."
+				"Left-click an item in the list to view its recipe."
+				"Right-click an item to show the usages of the item."
+				""
+				"(You can also do that with items in your inventory by pressing R and U respectively)"
+				""
+				"- Your first tools are made using &6Hephaestus&r (Fabric port of &6Tinker's Construct&r). Make a Tinker Station and a Part Builder to get started!"
+				""
+				"- Speaking of Hephaestus: &7Smeltery&r is disabled in this pack! Alloying is done with &6Create&r's Mechanical Mixers instead."
+				""
+				"- &7Nether&r? What is the Nether?"
+				"There's no Nether in this pack! Instead, you go to the &6Moon&r later on via a portal."
+				"Content that would normally be in the Nether is distributed across different celestial bodies."
+				""
+				"- &l&6Blazes&r&l are found on the Moon!&r"
+			]
+			size: 2.0d
+			min_width: 300
+			id: "6A78320DA0312F1C"
+			tasks: [{
+				id: "143B044BCD64138B"
+				type: "checkmark"
+				title: "Important info!"
+			}]
+			rewards: [{
+				id: "37CF43D8E5C3E950"
+				type: "item"
+				item: "adoptafloppa:orca_item"
+			}]
+		}
+		{
+			title: "Extended Drawers!"
+			x: 0.5d
+			y: 7.5d
+			subtitle: "Mass single-item storage solution."
+			description: [
+				"&6Single Drawer&r can store 1 different items, 2048 (16x64) items per slot."
+				""
+				"&6Double Drawer&r can store 2 different items, 1024 (16x64) items per slot."
+				""
+				"&6Quad Drawer&r can store 4 different items, 512 (16x64) items per slot."
+				""
+				"They can be broken, retaining their contents."
+				""
+				"Available Upgrades:"
+				"(applicable to individual slots,"
+				"Shift-Right click the drawer slot)"
+				""
+				"> &6Lava Bucket&r - If a drawer is full and new items are inserted, those items will be voided instead."
+				""
+				"> &6Drawer Lock&r - Locks the drawer to the specified item."
+				""
+				"> &6Black Dye&r - Hides the item preview and count."
+				"Useful for FPS lag reduction."
+				""
+				"> &6Drawer Upgrades&r - Increases the maximum amount of items that can be stored in a slot:"
+				"- T1: 2x"
+				"- T2: 4x"
+				"- T3: 16x"
+				"- T4: 64x"
+				"- T5: 256x"
+				"- T6: A really large multiplier!"
+				""
+				"> &6Drawer Downgrades&r: Reduces max size of a slot to 64."
+				"Useful for small buffers."
+			]
+			dependencies: ["6433AD83545428C3"]
+			id: "3C1ED5C02DDB00F2"
+			tasks: [
+				{
+					id: "258444EF007D50B2"
+					type: "item"
+					item: "extended_drawers:single_drawer"
+				}
+				{
+					id: "78E2C1E31A343A06"
+					type: "item"
+					item: "extended_drawers:double_drawer"
+				}
+				{
+					id: "761863FDDBCFE8FB"
+					type: "item"
+					item: "extended_drawers:quad_drawer"
+				}
+			]
+			rewards: [
+				{
+					id: "78174A5E83BE0D96"
+					type: "item"
+					item: "extended_drawers:lock"
+				}
+				{
+					id: "70C7F507544F7BD0"
+					type: "item"
+					item: "extended_drawers:single_drawer"
+					count: 4
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: 18.0d
+			subtitle: "Contains all recipes for Drink Beer."
+			dependencies: ["05E45A7D1C9927E5"]
+			id: "23B56D5D09CE3A0E"
+			tasks: [{
+				id: "4F8FB44812FB367D"
+				type: "item"
+				item: "drinkbeer:recipe_board_package"
 			}]
 		}
 	]

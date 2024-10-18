@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:scattered_ore",
+  "config": {
+		"size": 32,
+		"discard_chance_on_air_exposure": 0,
+		"targets":[
+			{
+				"target":{
+					"predicate_type": "block_match",
+					"block": "minecraft:warped_wart_block"
+				},
+				"state":{
+					"Name": "xpcrystals:budding_xp_crystal",
+					"Properties":{
+						"facing": "north"
+					}
+				}
+			},
+			{
+				"target":{
+					"predicate_type": "block_match",
+					"block": "minecraft:warped_wart_block"
+				},
+				"state":{
+					"Name": "xpcrystals:budding_xp_crystal",
+					"Properties":{
+						"facing": "south"
+					}
+				}
+			}
+		]
+	}
+}

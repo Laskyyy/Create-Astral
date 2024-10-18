@@ -1,0 +1,52 @@
+{
+  "type": "custommachinery:custom_machine",
+  "machine": "astralgenerators:fluid_boiler",
+  "time": 10,
+  "requirements": [
+    {
+      "type": "custommachinery:fluid",
+      "mode": "input",
+      "fluid": "minecraft:lava",
+      "amount": 100800
+    },
+    {
+      "type": "custommachinery:fluid",
+      "mode": "input",
+      "fluid": "minecraft:water",
+      "amount": 100800
+    },
+    {
+      "type": "custommachinery:fluid",
+      "fluid": "astralgenerators:steam",
+      "amount": 201600,
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:structure",
+      "keys": {
+        "a": "techreborn:basic_machine_frame",
+        "b": "astralgenerators:pipe_casing"
+      },
+      "pattern": [
+        [
+          "aaa",
+          "aaa",
+          "aaa",
+          " m "
+        ],
+        [
+          "aaa",
+          "aba",
+          "aba",
+          "   "
+        ],
+        [
+          "aaa",
+          "aaa",
+          "aaa",
+          "   "
+        ]
+      ]
+    }
+  ]
+}
