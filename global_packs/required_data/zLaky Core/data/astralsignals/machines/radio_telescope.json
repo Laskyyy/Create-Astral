@@ -1,5 +1,5 @@
 {
-    "name": "Radio Telescope",
+    "name": "custommachinery.astralsignals.radio_telescope",
     "appearance": {
         "block": "astralsignals:radio_telescope_dummy"
     },
@@ -50,7 +50,7 @@
             "type": "custommachinery:status"
         },
         {
-            "text": "Radio Telescope",
+            "text": "custommachinery.astralsignals.radio_telescope.text",
             "x": 7,
             "y": 5,
             "type": "custommachinery:text"

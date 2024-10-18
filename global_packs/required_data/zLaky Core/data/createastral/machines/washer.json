@@ -1,5 +1,5 @@
 {
-  "name": "Washer",
+  "name": "custommachinery.createastral.washer",
   "appearance": {
     "block": "createastral:washer_dummy",
     "running": {

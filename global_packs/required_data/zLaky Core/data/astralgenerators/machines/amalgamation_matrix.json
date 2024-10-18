@@ -1,5 +1,5 @@
 {
-    "name": "Amalgamation Matrix Core",
+    "name": "custommachinery.astralgenerators.amalgamation_matrix",
     "appearance": {
         "block": "astralgenerators:amalgamation_matrix_controller",
         "running": {
@@ -19,7 +19,7 @@
             "type": "custommachinery:player_inventory"
         },
         {
-            "text": "Amalgamation Matrix",
+            "text": "custommachinery.astralgenerators.amalgamation_matrix.text",
             "x": 7,
             "y": 5,
             "type": "custommachinery:text"

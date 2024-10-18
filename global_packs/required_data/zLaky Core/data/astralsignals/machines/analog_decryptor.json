@@ -1,5 +1,5 @@
 {
-    "name": "Analog Decryptor",
+    "name": "custommachinery.astralsignals.analog_decryptor",
     "appearance": {
         "block": "astralsignals:analog_decryptor_dummy"
     },
@@ -38,7 +38,7 @@
             "type": "custommachinery:status"
         },
         {
-            "text": "Analog Decryptor",
+            "text": "custommachinery.astralsignals.analog_decryptor.text",
             "x": 7,
             "y": 5,
             "type": "custommachinery:text"
