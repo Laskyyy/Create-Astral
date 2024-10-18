@@ -331,9 +331,9 @@ onEvent("item.tooltip", (e) => {
     e.addAdvanced(tooltip.item, (item, advanced, text) => {
       if (!e.isShift()) {
         text.add(1, [
-          Text.of("Hold ").darkGreen(),
-          Text.of("Shift ").green(),
-          Text.of("to see more info.").darkGreen(),
+          Text.of(Component.translate("tooltip.hover.tip.1")).darkGreen(),
+          Text.of(Component.translate("tooltip.hover.tip.2")).green(),
+          Text.of(Component.translate("tooltip.hover.tip.3")).darkGreen(),
         ]);
       }
       if (e.isShift()) {
@@ -344,69 +344,69 @@ onEvent("item.tooltip", (e) => {
   e.addAdvanced("createastral:orcane", (item, advanced, text) => {
     if (!e.isShift()) {
       text.add(1, [
-        Text.of("Hold ").gold(),
-        Text.of("Shift ").yellow(),
-        Text.of("to see more info.").gold(),
+        Text.of(Component.translate("tooltip.hover.tip.1")).gold(),
+        Text.of(Component.translate("tooltip.hover.tip.2")).yellow(),
+        Text.of(Component.translate("tooltip.hover.tip.3")).gold(),
       ]);
     }
     if (e.isShift()) {
       text.add(1, [
-        Text.of(
-          "If you are new to create, use pondering or online guides. The pack is almost exclusively centered around it and Tech Reborn. The quest book has some items that give a general idea of what has changed / what is included, in the order of when to take note of them, however the pack can be played without following it exactly, so do what you enjoy."
-        ).gold(),
+        Text.of(Component.translate(
+          "tooltip.createastral.orcane.1"
+        )).gold(),
       ]);
       text.add(2, [
-        Text.of(
-          "A major change you *might* want to be aware of. The nether does not exist. Do not even try to make the portal as it will not function. All nether related items are distributed throughout the pack (mostly planets)"
-        ).white(),
+        Text.of(Component.translate(
+          "tooltip.createastral.orcane.2"
+        )).white(),
       ]);
     }
   });
   e.addAdvanced("astraladditions:fragile_item", (item, advanced, text) => {
     if (!e.isShift()) {
       text.add(1, [
-        Text.of("WARNING: Hold ").red(),
-        Text.of("Shift ").red(),
-        Text.of("to see more info.").red(),
+        Text.of(Component.translate("tooltip.hover.warning.1")).red(),
+        Text.of(Component.translate("tooltip.hover.warning.2")).red(),
+        Text.of(Component.translate("tooltip.hover.warning.3")).red(),
       ]);
     }
     if (e.isShift()) {
       text.add(1, [
-        Text.of(
-          "Breaks when held in player inventories, it must be moved with logistical methods!"
-        ).red(),
+        Text.of(Component.translate(
+          "tooltip.astraladditions.fragile_item"
+        )).red(),
       ]);
     }
   });
   e.addAdvanced("astraladditions:fragile_item_2", (item, advanced, text) => {
     if (!e.isShift()) {
       text.add(1, [
-        Text.of("WARNING: Hold ").red(),
-        Text.of("Shift ").red(),
-        Text.of("to see more info.").red(),
+        Text.of(Component.translate("tooltip.hover.warning.1")).red(),
+        Text.of(Component.translate("tooltip.hover.warning.2")).red(),
+        Text.of(Component.translate("tooltip.hover.warning.3")).red(),
       ]);
     }
     if (e.isShift()) {
       text.add(1, [
-        Text.of(
-          "Breaks when held in player inventories, it must be moved with logistical methods!"
-        ).red(),
+        Text.of(Component.translate(
+          "tooltip.astraladditions.fragile_item"
+        )).red(),
       ]);
     }
   });
   e.addAdvanced("astraladditions:fragile_item_3", (item, advanced, text) => {
     if (!e.isShift()) {
       text.add(1, [
-        Text.of("WARNING: Hold ").red(),
-        Text.of("Shift ").red(),
-        Text.of("to see more info.").red(),
+        Text.of(Component.translate("tooltip.hover.warning.1")).red(),
+        Text.of(Component.translate("tooltip.hover.warning.2")).red(),
+        Text.of(Component.translate("tooltip.hover.warning.3")).red(),
       ]);
     }
     if (e.isShift()) {
       text.add(1, [
-        Text.of(
-          "Breaks when held in player inventories, it must be moved with logistical methods!"
-        ).red(),
+        Text.of((
+          "tooltip.astraladditions.fragile_item"
+        )).red(),
       ]);
     }
   });
@@ -414,32 +414,32 @@ onEvent("item.tooltip", (e) => {
   for (const [item, mutliplier] of Object.entries(drawer_multipliers)) {
     e.add(
       [item],
-      Text.gray("Drawer Slot capacity: ").append(Text.green(`${mutliplier}x`))
+      Text.gray(Component.translate("tooltip.drawer.upgrade")).append(Text.green(`${mutliplier}x`))
     );
   }
   // Standard drawer up/downgrades
   e.add(
     "extended_drawers:downgrade",
-    Text.gray("Reduces the Drawer Slot capacity to ")
-      .append(Text.red("64"))
-      .append(Text.gray("."))
+    Text.gray(Component.translate("tooltip.extended_drawers.downgrade.1"))
+      .append(Text.red(Component.translate("tooltip.extended_drawers.downgrade.2")))
+      .append(Text.gray(Component.translate("tooltip.dot")))
   );
   e.add(
     "minecraft:lava_bucket",
-    Text.gray("Shift-Right-click the Drawer Slot to make that slot ")
-      .append(Text.red("void excess items"))
-      .append(Text.gray("."))
+    Text.gray(Component.translate("tooltip.minecraft.lava_bucket.1"))
+      .append(Text.red(Component.translate("tooltip.minecraft.lava_bucket.2")))
+      .append(Text.gray(Component.translate("tooltip.dot")))
   );
   e.add(
     "minecraft:black_dye",
-    Text.gray("Shift-Right-click the Drawer Slot to ")
-      .append(Text.white("hide the label"))
-      .append(Text.gray("."))
+    Text.gray(Component.translate("tooltip.minecraft.black_dye.1"))
+      .append(Text.white(Component.translate("tooltip.minecraft.black_dye.2")))
+      .append(Text.gray(Component.translate("tooltip.dot")))
   );
   e.add(
     "extended_drawers:lock",
-    Text.gray("Shift-Right-click the Drawer Slot to ")
-      .append(Text.yellow("lock it"))
-      .append(Text.gray(" to the item inside."))
+    Text.gray(Component.translate("tooltip.extended_drawers.lock.1"))
+      .append(Text.yellow(Component.translate("tooltip.extended_drawers.lock.2")))
+      .append(Text.gray(Component.translate("tooltip.extended_drawers.lock.3")))
   );
 });
