@@ -167,22 +167,22 @@ onEvent("recipes", (event) => {
             ["tconstruct:blaze_head"],
             ["minecraft:skeleton_skull"],
             [
-                event.recipes.createDeploying("minecraft:skeleton_skull", [
-                    "minecraft:skeleton_skull",
+                event.recipes.createDeploying("createastral:incomplete_blaze_head", [
+                    "createastral:incomplete_blaze_head",
                     "minecraft:blaze_powder",
                 ]),
 
-                event.recipes.createFilling("minecraft:skeleton_skull",
-                ["minecraft:skeleton_skull",{ fluid: "tconstruct:blazing_blood", amount: 100 * mB }]),
+                event.recipes.createFilling("createastral:incomplete_blaze_head",
+                ["createastral:incomplete_blaze_head",{ fluid: "tconstruct:blazing_blood", amount: 100 * mB }]),
                 
-                event.recipes.createFilling("minecraft:skeleton_skull",
-                ["minecraft:skeleton_skull",{ fluid: "kubejs:shimmer", amount: 50 * mB }]),
+                event.recipes.createFilling("createastral:incomplete_blaze_head",
+                ["createastral:incomplete_blaze_head",{ fluid: "kubejs:shimmer", amount: 50 * mB }]),
                 
-                event.recipes.createPressing("minecraft:skeleton_skull",
-                "minecraft:skeleton_skull"),
+                event.recipes.createPressing("createastral:incomplete_blaze_head",
+                "createastral:incomplete_blaze_head"),
             ]
         )
-        .transitionalItem("minecraft:skeleton_skull")
+        .transitionalItem("createastral:incomplete_blaze_head")
         .loops(1);
 
 const mixings = [
