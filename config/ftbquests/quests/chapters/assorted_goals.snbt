@@ -1694,7 +1694,12 @@
 			x: -4.5d
 			y: 17.5d
 			subtitle: "{ftbquests.chapter.assorted_goals.quests48.subtitle}"
-			description: ["{ftbquests.chapter.assorted_goals.quests48.description}"]
+			description: [
+				"{ftbquests.chapter.assorted_goals.quests48.description0}"
+				""
+				""
+				"{ftbquests.chapter.assorted_goals.quests48.description3}"
+			]
 			hide_dependency_lines: false
 			dependencies: ["05E45A7D1C9927E5"]
 			id: "165C3C3DF1B9B4A3"
@@ -1728,7 +1733,11 @@
 			x: -3.5d
 			y: 19.5d
 			subtitle: "{ftbquests.chapter.assorted_goals.quests49.subtitle}"
-			description: ["{ftbquests.chapter.assorted_goals.quests49.description}"]
+			description: [
+				"{ftbquests.chapter.assorted_goals.quests49.description0}"
+				"{ftbquests.chapter.assorted_goals.quests49.description1}"
+				"{ftbquests.chapter.assorted_goals.quests49.description2}"
+			]
 			dependencies: ["4B565923D33B2CB8"]
 			id: "1D8FB0253FF41716"
 			tasks: [
@@ -1761,7 +1770,13 @@
 			x: -2.0d
 			y: 17.5d
 			subtitle: "{ftbquests.chapter.assorted_goals.quests50.subtitle}"
-			description: ["{ftbquests.chapter.assorted_goals.quests50.description}"]
+			description: [
+				"{ftbquests.chapter.assorted_goals.quests50.description0}"
+				"{ftbquests.chapter.assorted_goals.quests50.description1}"
+				"{ftbquests.chapter.assorted_goals.quests50.description2}"
+				"{ftbquests.chapter.assorted_goals.quests50.description3}"
+				"{ftbquests.chapter.assorted_goals.quests50.description4}"
+			]
 			dependencies: ["6BECCB7FA4132517"]
 			id: "529CAD4508F33471"
 			tasks: [
@@ -1788,7 +1803,11 @@
 			x: -2.5d
 			y: 18.5d
 			subtitle: "{ftbquests.chapter.assorted_goals.quests51.subtitle}"
-			description: ["{ftbquests.chapter.assorted_goals.quests51.description}"]
+			description: [
+				"{ftbquests.chapter.assorted_goals.quests51.description0}"
+				"{ftbquests.chapter.assorted_goals.quests51.description1}"
+				"{ftbquests.chapter.assorted_goals.quests51.description2}"
+			]
 			dependencies: ["6BECCB7FA4132517"]
 			id: "66AF3CCC6B74CC09"
 			tasks: [

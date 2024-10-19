@@ -32,7 +32,12 @@
 			x: -21.5d
 			y: 2.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests0.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests0.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests0.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests0.description3}"
+			]
 			dependencies: ["6027602617EC9F1F"]
 			id: "51BD31261A5725E3"
 			tasks: [
@@ -61,7 +66,11 @@
 			x: -19.0d
 			y: 5.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests1.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests1.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests1.description0}"
+				""
+				""
+			]
 			dependencies: ["51BD31261A5725E3"]
 			id: "705C815541DB89F8"
 			tasks: [
@@ -97,7 +106,18 @@
 			y: 5.0d
 			shape: "rsquare"
 			subtitle: "{ftbquests.chapter.chapter_4.quests2.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests2.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests2.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests2.description3}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests2.description6}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests2.description9}"
+			]
 			dependencies: [
 				"21DBCD51CC35B794"
 				"22B29B232EF2638F"
@@ -142,7 +162,11 @@
 			x: -14.5d
 			y: 4.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests3.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests3.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests3.description0}"
+				""
+				""
+			]
 			dependencies: ["705C815541DB89F8"]
 			id: "21DBCD51CC35B794"
 			tasks: [
@@ -170,17 +194,15 @@
 			subtitle: "{ftbquests.chapter.chapter_4.quests4.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests4.description0}"
-				"{ftbquests.chapter.chapter_4.quests4.description1}"
-				"{ftbquests.chapter.chapter_4.quests4.description2}"
+				""
+				""
 				"{ftbquests.chapter.chapter_4.quests4.description3}"
-				"{ftbquests.chapter.chapter_4.quests4.description4}"
-				"{ftbquests.chapter.chapter_4.quests4.description5}"
+				""
+				""
 				"{ftbquests.chapter.chapter_4.quests4.description6}"
-				"{ftbquests.chapter.chapter_4.quests4.description7}"
-				"{ftbquests.chapter.chapter_4.quests4.description8}"
+				""
+				""
 				"{ftbquests.chapter.chapter_4.quests4.description9}"
-				"{ftbquests.chapter.chapter_4.quests4.description10}"
-				"{ftbquests.chapter.chapter_4.quests4.description11}"
 			]
 			min_required_dependencies: 1
 			dependencies: ["3EA569DE4AC60CC2"]
@@ -302,7 +324,12 @@
 			y: 5.0d
 			shape: "hexagon"
 			subtitle: "{ftbquests.chapter.chapter_4.quests6.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests6.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests6.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests6.description3}"
+			]
 			hide_dependency_lines: false
 			dependencies: ["62C959AC63DD2A89"]
 			size: 1.75d
@@ -330,7 +357,14 @@
 			y: 2.0d
 			shape: "gear"
 			subtitle: "{ftbquests.chapter.chapter_4.quests7.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests7.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests7.description0}"
+				""
+				""
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests7.description5}"
+			]
 			dependencies: ["51BD31261A5725E3"]
 			size: 1.5d
 			id: "186E8426BD7CE343"
@@ -390,10 +424,7 @@
 			x: -9.5d
 			y: 7.5d
 			subtitle: "{ftbquests.chapter.chapter_4.quests9.subtitle}"
-			description: [
-				""
-				"{ftbquests.chapter.chapter_4.quests9.description1}"
-			]
+			description: ["{ftbquests.chapter.chapter_4.quests9.description}"]
 			dependencies: ["1142742E67E7F493"]
 			optional: true
 			id: "75E964418F7E94F0"
@@ -511,7 +542,12 @@
 			title: "{ftbquests.chapter.chapter_4.quests12.title}"
 			x: -1.5d
 			y: -5.0d
-			description: ["{ftbquests.chapter.chapter_4.quests12.description}"]
+			description: [
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests12.description2}"
+				"{ftbquests.chapter.chapter_4.quests12.description3}"
+			]
 			dependencies: ["5CD6C6CA30CA50F0"]
 			dependency_requirement: "one_completed"
 			min_required_tasks: 1
@@ -555,7 +591,15 @@
 			y: -3.5d
 			shape: "pentagon"
 			subtitle: "{ftbquests.chapter.chapter_4.quests14.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests14.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests14.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests14.description3}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests14.description6}"
+			]
 			dependencies: ["15B9947ABCCB882F"]
 			hide: true
 			size: 3.0d
@@ -592,7 +636,12 @@
 			x: -18.5d
 			y: -3.5d
 			subtitle: "{ftbquests.chapter.chapter_4.quests15.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests15.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests15.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests15.description3}"
+			]
 			dependencies: ["306D009F01634115"]
 			dependency_requirement: "one_completed"
 			size: 1.5d
@@ -668,11 +717,12 @@
 			subtitle: "{ftbquests.chapter.chapter_4.quests17.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests17.description0}"
-				"{ftbquests.chapter.chapter_4.quests17.description1}"
-				"{ftbquests.chapter.chapter_4.quests17.description2}"
+				""
+				""
 				"{ftbquests.chapter.chapter_4.quests17.description3}"
-				"{ftbquests.chapter.chapter_4.quests17.description4}"
-				"{ftbquests.chapter.chapter_4.quests17.description5}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests17.description6}"
 			]
 			dependencies: ["705C815541DB89F8"]
 			id: "22B29B232EF2638F"
@@ -698,7 +748,12 @@
 			x: -23.0d
 			y: 0.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests18.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests18.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests18.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests18.description3}"
+			]
 			dependencies: ["306D009F01634115"]
 			size: 1.5d
 			id: "6027602617EC9F1F"
@@ -723,7 +778,12 @@
 			x: -18.5d
 			y: -2.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests19.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests19.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests19.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests19.description3}"
+			]
 			hide_dependency_lines: true
 			dependencies: [
 				"306D009F01634115"
@@ -838,7 +898,15 @@
 			x: -12.0d
 			y: 0.5d
 			subtitle: "{ftbquests.chapter.chapter_4.quests23.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests23.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests23.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests23.description3}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests23.description6}"
+			]
 			dependencies: ["61878C8DC870AC6A"]
 			id: "52EC8406E928BDB3"
 			tasks: [
@@ -909,7 +977,9 @@
 			y: -2.5d
 			description: [
 				"{ftbquests.chapter.chapter_4.quests25.description0}"
-				"{ftbquests.chapter.chapter_4.quests25.description1}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests25.description3}"
 			]
 			dependencies: ["752215E611021472"]
 			id: "07B10625859F1AF9"
@@ -940,7 +1010,12 @@
 			y: -4.5d
 			shape: "diamond"
 			subtitle: "{ftbquests.chapter.chapter_4.quests26.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests26.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests26.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests26.description3}"
+			]
 			dependencies: [
 				"1533B14714529386"
 				"22C043704EB6527C"
@@ -977,7 +1052,12 @@
 			y: -2.5d
 			shape: "gear"
 			subtitle: "{ftbquests.chapter.chapter_4.quests27.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests27.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests27.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests27.description3}"
+			]
 			dependencies: [
 				"73973C5E6D2573B8"
 				"19CCFE1A90B73F44"
@@ -1008,7 +1088,15 @@
 			y: -2.5d
 			shape: "rsquare"
 			subtitle: "{ftbquests.chapter.chapter_4.quests28.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests28.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests28.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests28.description3}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests28.description6}"
+			]
 			dependencies: ["5459F646B9A392C4"]
 			size: 1.75d
 			id: "752215E611021472"
@@ -1044,7 +1132,20 @@
 			y: 0.0d
 			shape: "circle"
 			subtitle: "{ftbquests.chapter.chapter_4.quests29.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests29.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests29.description0}"
+				""
+				""
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests29.description5}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests29.description8}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests29.description11}"
+			]
 			dependencies: [
 				"57724BFDF0A78FAF"
 				"44D51F142E9E8902"
@@ -1121,7 +1222,12 @@
 			x: -10.5d
 			y: -4.5d
 			subtitle: "{ftbquests.chapter.chapter_4.quests31.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests31.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests31.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests31.description3}"
+			]
 			dependencies: ["752215E611021472"]
 			optional: true
 			id: "64271E1245394C9A"
@@ -1138,7 +1244,12 @@
 			x: -1.5d
 			y: -1.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests32.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests32.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests32.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests32.description3}"
+			]
 			dependencies: ["55214095FAF22F42"]
 			id: "75CE520F392CC1E1"
 			tasks: [
@@ -1217,7 +1328,12 @@
 			x: -1.5d
 			y: 3.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests36.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests36.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests36.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests36.description3}"
+			]
 			dependencies: ["609BD6A99E34BB17"]
 			optional: true
 			id: "6AC13A0D339D57F4"
@@ -1239,7 +1355,12 @@
 			x: -17.0d
 			y: -1.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests37.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests37.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests37.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests37.description3}"
+			]
 			dependencies: ["73973C5E6D2573B8"]
 			id: "0ADFE1D87DB51856"
 			tasks: [
@@ -1288,7 +1409,12 @@
 			x: -27.5d
 			y: 8.5d
 			subtitle: "{ftbquests.chapter.chapter_4.quests39.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests39.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests39.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests39.description3}"
+			]
 			dependencies: ["5355CA2F0BA74BF1"]
 			optional: true
 			id: "1E83F62D325A44F2"
@@ -1344,9 +1470,12 @@
 			subtitle: "{ftbquests.chapter.chapter_4.quests41.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests41.description0}"
-				"{ftbquests.chapter.chapter_4.quests41.description1}"
-				"{ftbquests.chapter.chapter_4.quests41.description2}"
+				""
+				""
 				"{ftbquests.chapter.chapter_4.quests41.description3}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests41.description6}"
 			]
 			dependencies: [
 				"1A7150A746855B4D"
@@ -1441,7 +1570,10 @@
 			y: -2.0d
 			shape: "diamond"
 			subtitle: "{ftbquests.chapter.chapter_4.quests45.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests45.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests45.description0}"
+				"{ftbquests.chapter.chapter_4.quests45.description1}"
+			]
 			dependencies: ["64A1C434EB7021E6"]
 			id: "512B5F1349E34457"
 			tasks: [
@@ -1553,7 +1685,13 @@
 			subtitle: "{ftbquests.chapter.chapter_4.quests48.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests48.description0}"
-				"{ftbquests.chapter.chapter_4.quests48.description1}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests48.description3}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests48.description6}"
+				"{ftbquests.chapter.chapter_4.quests48.description7}"
 			]
 			dependencies: ["6E20B194F5CA8F22"]
 			id: "47A155F9CAD19710"
@@ -1645,7 +1783,15 @@
 			y: -5.0d
 			shape: "diamond"
 			subtitle: "{ftbquests.chapter.chapter_4.quests50.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests50.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests50.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests50.description3}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests50.description6}"
+			]
 			min_required_dependencies: 1
 			dependencies: ["4C59011F80601279"]
 			min_required_tasks: 1
@@ -1785,7 +1931,15 @@
 			x: -6.5d
 			y: -1.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests55.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests55.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests55.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests55.description3}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests55.description6}"
+			]
 			dependencies: ["752215E611021472"]
 			id: "64A1C434EB7021E6"
 			tasks: [
@@ -1801,7 +1955,15 @@
 			x: -19.0d
 			y: 6.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests56.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests56.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests56.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests56.description3}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests56.description6}"
+			]
 			dependencies: ["705C815541DB89F8"]
 			id: "042CE6F6D7A67F42"
 			tasks: [
@@ -1831,7 +1993,12 @@
 			x: -20.0d
 			y: 6.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests57.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests57.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests57.description0}"
+				""
+				"{ftbquests.chapter.chapter_4.quests57.description2}"
+				"{ftbquests.chapter.chapter_4.quests57.description3}"
+			]
 			dependencies: ["705C815541DB89F8"]
 			id: "0A29C0657D13CD49"
 			tasks: [
@@ -1860,7 +2027,12 @@
 			x: -20.0d
 			y: 5.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests58.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests58.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests58.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests58.description3}"
+			]
 			dependencies: ["705C815541DB89F8"]
 			id: "50200A5256D99A82"
 			tasks: [
@@ -1895,7 +2067,12 @@
 			x: -15.0d
 			y: 5.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests59.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests59.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests59.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests59.description3}"
+			]
 			dependencies: [
 				"22B29B232EF2638F"
 				"21DBCD51CC35B794"
@@ -1928,7 +2105,12 @@
 			x: -14.0d
 			y: 5.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests60.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests60.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests60.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests60.description3}"
+			]
 			dependencies: [
 				"22B29B232EF2638F"
 				"21DBCD51CC35B794"
@@ -1955,7 +2137,12 @@
 			x: -15.0d
 			y: 8.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests61.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests61.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests61.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests61.description3}"
+			]
 			dependencies: ["22B29B232EF2638F"]
 			id: "71D8CE5E35BE1389"
 			tasks: [
@@ -1993,7 +2180,15 @@
 			x: -16.0d
 			y: 7.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests63.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests63.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests63.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests63.description3}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests63.description6}"
+			]
 			dependencies: ["22B29B232EF2638F"]
 			id: "0EDFECC97E44B508"
 			tasks: [
@@ -2018,7 +2213,15 @@
 			y: -0.5d
 			shape: "rsquare"
 			subtitle: "{ftbquests.chapter.chapter_4.quests64.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests64.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests64.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests64.description3}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests64.description6}"
+			]
 			dependencies: ["752215E611021472"]
 			id: "2F7F41E1C9C7F7B3"
 			tasks: [
@@ -2049,7 +2252,12 @@
 			x: 3.0d
 			y: -6.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests66.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests66.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests66.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests66.description3}"
+			]
 			hide_dependency_lines: true
 			dependencies: ["752215E611021472"]
 			id: "22C043704EB6527C"
@@ -2073,8 +2281,8 @@
 			subtitle: "{ftbquests.chapter.chapter_4.quests67.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests67.description0}"
-				"{ftbquests.chapter.chapter_4.quests67.description1}"
-				"{ftbquests.chapter.chapter_4.quests67.description2}"
+				""
+				""
 				"{ftbquests.chapter.chapter_4.quests67.description3}"
 			]
 			dependencies: ["0EDFECC97E44B508"]
@@ -2097,7 +2305,15 @@
 			x: -17.0d
 			y: 8.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests68.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests68.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests68.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests68.description3}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests68.description6}"
+			]
 			dependencies: ["0EDFECC97E44B508"]
 			id: "5261F7129457E4BD"
 			tasks: [
@@ -2113,7 +2329,15 @@
 			x: -16.0d
 			y: 8.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests69.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests69.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests69.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests69.description3}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests69.description6}"
+			]
 			dependencies: ["0EDFECC97E44B508"]
 			id: "1B2B6C73281EAD26"
 			tasks: [
@@ -2135,7 +2359,12 @@
 			y: -5.5d
 			shape: "pentagon"
 			subtitle: "{ftbquests.chapter.chapter_4.quests70.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests70.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests70.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests70.description3}"
+			]
 			hide_dependency_lines: true
 			dependencies: ["306D009F01634115"]
 			size: 1.5d
@@ -2177,7 +2406,12 @@
 			x: -5.0d
 			y: -1.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests72.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests72.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests72.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests72.description3}"
+			]
 			dependencies: ["64A1C434EB7021E6"]
 			id: "55214095FAF22F42"
 			tasks: [
@@ -2206,7 +2440,11 @@
 			x: -22.5d
 			y: 2.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests73.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests73.description}"]
+			description: [
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests73.description2}"
+			]
 			dependencies: ["6027602617EC9F1F"]
 			id: "129A16584F8B0BFE"
 			tasks: [
@@ -2241,7 +2479,12 @@
 			x: -23.0d
 			y: 5.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests75.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests75.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests75.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests75.description3}"
+			]
 			dependencies: ["7372E223FCD34128"]
 			id: "11AF7F7CE0940C06"
 			tasks: [
@@ -2281,7 +2524,12 @@
 			x: -27.5d
 			y: 6.5d
 			subtitle: "{ftbquests.chapter.chapter_4.quests77.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests77.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests77.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests77.description3}"
+			]
 			dependencies: ["5355CA2F0BA74BF1"]
 			id: "5AFABBFC63D9558E"
 			tasks: [
@@ -2305,7 +2553,12 @@
 			x: -27.5d
 			y: 5.5d
 			subtitle: "{ftbquests.chapter.chapter_4.quests78.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests78.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests78.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests78.description3}"
+			]
 			dependencies: ["5355CA2F0BA74BF1"]
 			id: "645BE27FEDB3FE29"
 			tasks: [
@@ -2329,7 +2582,12 @@
 			x: -23.0d
 			y: 7.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests79.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests79.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests79.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests79.description3}"
+			]
 			min_required_dependencies: 1
 			dependencies: ["11AF7F7CE0940C06"]
 			id: "0BCFF062FD1518BF"
@@ -2359,7 +2617,12 @@
 			x: -27.5d
 			y: 7.5d
 			subtitle: "{ftbquests.chapter.chapter_4.quests80.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests80.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests80.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests80.description3}"
+			]
 			dependencies: ["5355CA2F0BA74BF1"]
 			optional: true
 			id: "29F408CC74D53405"
@@ -2389,7 +2652,12 @@
 			x: -10.0d
 			y: -0.5d
 			subtitle: "{ftbquests.chapter.chapter_4.quests81.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests81.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests81.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests81.description3}"
+			]
 			dependencies: ["2F7F41E1C9C7F7B3"]
 			id: "01F2D498CB3CC2BB"
 			tasks: [
@@ -2431,10 +2699,7 @@
 			x: -24.5d
 			y: 2.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests82.subtitle}"
-			description: [
-				"{ftbquests.chapter.chapter_4.quests82.description0}"
-				"{ftbquests.chapter.chapter_4.quests82.description1}"
-			]
+			description: ["{ftbquests.chapter.chapter_4.quests82.description}"]
 			dependencies: ["6027602617EC9F1F"]
 			id: "20BFF582275C31C8"
 			tasks: [
@@ -2452,11 +2717,7 @@
 			y: 2.0d
 			shape: "gear"
 			subtitle: "{ftbquests.chapter.chapter_4.quests83.subtitle}"
-			description: [
-				"{ftbquests.chapter.chapter_4.quests83.description0}"
-				"{ftbquests.chapter.chapter_4.quests83.description1}"
-				"{ftbquests.chapter.chapter_4.quests83.description2}"
-			]
+			description: ["{ftbquests.chapter.chapter_4.quests83.description}"]
 			dependencies: ["20BFF582275C31C8"]
 			id: "072FC342FAE44F38"
 			tasks: [
@@ -2481,7 +2742,15 @@
 			y: 9.0d
 			shape: "diamond"
 			subtitle: "{ftbquests.chapter.chapter_4.quests84.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests84.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests84.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests84.description3}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests84.description6}"
+			]
 			dependencies: ["5355CA2F0BA74BF1"]
 			optional: true
 			id: "78370C1AE832CBF1"
@@ -2513,7 +2782,12 @@
 			y: 9.0d
 			shape: "diamond"
 			subtitle: "{ftbquests.chapter.chapter_4.quests85.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests85.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests85.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests85.description3}"
+			]
 			dependencies: ["5355CA2F0BA74BF1"]
 			id: "221861F3A1C4C3B8"
 			tasks: [
@@ -2646,12 +2920,7 @@
 			y: 6.5d
 			shape: "diamond"
 			subtitle: "{ftbquests.chapter.chapter_4.quests89.subtitle}"
-			description: [
-				"{ftbquests.chapter.chapter_4.quests89.description0}"
-				"{ftbquests.chapter.chapter_4.quests89.description1}"
-				"{ftbquests.chapter.chapter_4.quests89.description2}"
-				"{ftbquests.chapter.chapter_4.quests89.description3}"
-			]
+			description: ["{ftbquests.chapter.chapter_4.quests89.description}"]
 			dependencies: ["429D2340C2B20A60"]
 			optional: true
 			id: "3FA9591D6D79371F"
@@ -2733,7 +3002,12 @@
 			x: -25.5d
 			y: 3.0d
 			shape: "diamond"
-			description: ["{ftbquests.chapter.chapter_4.quests91.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests91.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests91.description3}"
+			]
 			dependencies: ["20BFF582275C31C8"]
 			optional: true
 			id: "3EFFCF29981E3159"
@@ -2767,7 +3041,7 @@
 		{
 			x: -11.0d
 			y: 6.5d
-			subtitle: ""
+			subtitle: "{ftbquests.chapter.chapter_4.quests92.subtitle}"
 			dependencies: ["3EA569DE4AC60CC2"]
 			id: "0E295989064E5992"
 			tasks: [
@@ -2846,7 +3120,12 @@
 			x: -1.5d
 			y: 4.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests94.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests94.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests94.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests94.description3}"
+			]
 			dependencies: ["2F7F41E1C9C7F7B3"]
 			id: "609BD6A99E34BB17"
 			tasks: [
@@ -2862,7 +3141,12 @@
 			x: -0.5d
 			y: 4.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests95.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests95.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests95.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests95.description3}"
+			]
 			dependencies: ["609BD6A99E34BB17"]
 			id: "70FE485B4505AC81"
 			tasks: [
@@ -2878,7 +3162,12 @@
 			x: -0.5d
 			y: 5.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests96.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests96.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests96.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests96.description3}"
+			]
 			dependencies: [
 				"70FE485B4505AC81"
 				"49BE333EAC6260C8"
@@ -2896,7 +3185,15 @@
 			x: 0.5d
 			y: 5.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests97.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests97.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests97.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests97.description3}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests97.description6}"
+			]
 			dependencies: ["65DED861096175C2"]
 			id: "62C959AC63DD2A89"
 			tasks: [
@@ -2948,7 +3245,12 @@
 			y: -1.0d
 			shape: "diamond"
 			subtitle: "{ftbquests.chapter.chapter_4.quests99.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests99.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests99.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests99.description3}"
+			]
 			dependencies: ["73973C5E6D2573B8"]
 			id: "470ACBBCC340FB4D"
 			tasks: [
@@ -3048,7 +3350,11 @@
 			title: "{ftbquests.chapter.chapter_4.quests103.title}"
 			x: -1.5d
 			y: 5.0d
-			description: ["{ftbquests.chapter.chapter_4.quests103.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests103.description0}"
+				""
+				""
+			]
 			dependencies: ["429D2340C2B20A60"]
 			id: "49BE333EAC6260C8"
 			tasks: [
@@ -3065,7 +3371,12 @@
 			y: 10.0d
 			shape: "diamond"
 			subtitle: "{ftbquests.chapter.chapter_4.quests104.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests104.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests104.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests104.description3}"
+			]
 			dependencies: [
 				"78370C1AE832CBF1"
 				"221861F3A1C4C3B8"
@@ -3111,7 +3422,15 @@
 			x: -9.5d
 			y: -5.5d
 			subtitle: "{ftbquests.chapter.chapter_4.quests105.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests105.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests105.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests105.description3}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests105.description6}"
+			]
 			min_required_dependencies: 1
 			dependencies: ["64271E1245394C9A"]
 			id: "7E53F7BA6BCA166B"
@@ -3235,7 +3554,12 @@
 			x: -0.5d
 			y: 3.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests111.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests111.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests111.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests111.description3}"
+			]
 			dependencies: ["70FE485B4505AC81"]
 			optional: true
 			id: "5D07FD239AC21940"
@@ -3334,7 +3658,21 @@
 			y: -3.2571428571428527d
 			shape: "diamond"
 			subtitle: "{ftbquests.chapter.chapter_4.quests114.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests114.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests114.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests114.description3}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests114.description6}"
+				"{ftbquests.chapter.chapter_4.quests114.description7}"
+				"{ftbquests.chapter.chapter_4.quests114.description8}"
+				"{ftbquests.chapter.chapter_4.quests114.description9}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests114.description12}"
+			]
 			dependencies: ["752215E611021472"]
 			id: "41097A2335061B1D"
 			tasks: [

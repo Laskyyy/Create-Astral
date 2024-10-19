@@ -206,7 +206,15 @@
 			x: 11.0d
 			y: -7.0d
 			shape: "square"
-			description: ["{ftbquests.chapter.6_raow.quests2.description}"]
+			description: [
+				"{ftbquests.chapter.6_raow.quests2.description0}"
+				""
+				""
+				"{ftbquests.chapter.6_raow.quests2.description3}"
+				""
+				""
+				"{ftbquests.chapter.6_raow.quests2.description6}"
+			]
 			dependencies: ["3091F7AC37F848AD"]
 			size: 2.0d
 			id: "11F776AD4AEA326A"

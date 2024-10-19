@@ -124,7 +124,12 @@
 			y: 0.0d
 			shape: "pentagon"
 			subtitle: "{ftbquests.chapter.chapter_5.quests0.subtitle}"
-			description: ["{ftbquests.chapter.chapter_5.quests0.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_5.quests0.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_5.quests0.description3}"
+			]
 			dependencies: ["63DCF596AAA9A232"]
 			hide: true
 			hide_text_until_complete: false
@@ -207,7 +212,12 @@
 			y: 1.0d
 			shape: "square"
 			subtitle: "{ftbquests.chapter.chapter_5.quests2.subtitle}"
-			description: ["{ftbquests.chapter.chapter_5.quests2.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_5.quests2.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_5.quests2.description3}"
+			]
 			dependencies: [
 				"42FDBAC4A8966F9D"
 				"684E33C50BD55A8E"
@@ -961,6 +971,8 @@
 			description: [
 				"{image:tconstruct:textures/block/storage/pig_iron/front.png width:100 height:100 align:1}"
 				"{ftbquests.chapter.chapter_5.quests21.description1}"
+				"{ftbquests.chapter.chapter_5.quests21.description2}"
+				"{ftbquests.chapter.chapter_5.quests21.description3}"
 			]
 			dependencies: ["3303D84A3F6FBBBA"]
 			id: "1873D12083BC1697"
@@ -1055,7 +1067,11 @@
 			x: 10.0d
 			y: 0.0d
 			subtitle: "{ftbquests.chapter.chapter_5.quests24.subtitle}"
-			description: ["{ftbquests.chapter.chapter_5.quests24.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_5.quests24.description0}"
+				"{ftbquests.chapter.chapter_5.quests24.description1}"
+				"{ftbquests.chapter.chapter_5.quests24.description2}"
+			]
 			dependencies: ["673DC1F22D2F790D"]
 			id: "08920EA71AAD4519"
 			tasks: [

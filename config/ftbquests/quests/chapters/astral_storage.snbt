@@ -59,7 +59,12 @@
 			y: 2.0d
 			shape: "pentagon"
 			subtitle: "{ftbquests.chapter.astral_storage.quests0.subtitle}"
-			description: ["{ftbquests.chapter.astral_storage.quests0.description}"]
+			description: [
+				"{ftbquests.chapter.astral_storage.quests0.description0}"
+				""
+				""
+				"{ftbquests.chapter.astral_storage.quests0.description3}"
+			]
 			dependencies: ["790B0567FF49110F"]
 			hide: true
 			size: 2.0d
@@ -214,7 +219,10 @@
 			description: [
 				"{ftbquests.chapter.astral_storage.quests8.description0}"
 				""
-				"{ftbquests.chapter.astral_storage.quests8.description2}"
+				""
+				"{ftbquests.chapter.astral_storage.quests8.description3}"
+				""
+				"{ftbquests.chapter.astral_storage.quests8.description5}"
 			]
 			dependencies: ["326EB9A775B8D791"]
 			id: "432AF29897E50CDC"

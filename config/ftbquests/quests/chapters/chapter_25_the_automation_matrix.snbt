@@ -179,7 +179,12 @@
 			y: -4.0d
 			shape: "square"
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests9.subtitle}"
-			description: ["{ftbquests.chapter.chapter_25_the_automation_matrix.quests9.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_25_the_automation_matrix.quests9.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_25_the_automation_matrix.quests9.description3}"
+			]
 			dependencies: ["707B59245747B112"]
 			id: "32C6826E01CB67F2"
 			tasks: [
@@ -248,7 +253,12 @@
 			y: -4.0d
 			shape: "octagon"
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests13.subtitle}"
-			description: ["{ftbquests.chapter.chapter_25_the_automation_matrix.quests13.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_25_the_automation_matrix.quests13.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_25_the_automation_matrix.quests13.description3}"
+			]
 			dependencies: ["003484147EC41589"]
 			size: 1.5d
 			id: "6623524E68636273"
@@ -320,10 +330,7 @@
 			y: 13.267857142857174d
 			shape: "diamond"
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests17.subtitle}"
-			description: [
-				"{ftbquests.chapter.chapter_25_the_automation_matrix.quests17.description0}"
-				"{ftbquests.chapter.chapter_25_the_automation_matrix.quests17.description1}"
-			]
+			description: ["{ftbquests.chapter.chapter_25_the_automation_matrix.quests17.description}"]
 			dependencies: [
 				"1CBDFF73BCBD9083"
 				"244E5AA24082322C"
@@ -1138,7 +1145,12 @@
 			x: -47.0d
 			y: 2.0d
 			shape: "gear"
-			description: ["{ftbquests.chapter.chapter_25_the_automation_matrix.quests63.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_25_the_automation_matrix.quests63.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_25_the_automation_matrix.quests63.description3}"
+			]
 			dependencies: ["38814494AB07C2D8"]
 			hide: true
 			size: 5.0d
@@ -1186,11 +1198,12 @@
 			shape: "gear"
 			description: [
 				"{ftbquests.chapter.chapter_25_the_automation_matrix.quests65.description0}"
-				"{ftbquests.chapter.chapter_25_the_automation_matrix.quests65.description1}"
-				"{ftbquests.chapter.chapter_25_the_automation_matrix.quests65.description2}"
+				""
+				""
 				"{ftbquests.chapter.chapter_25_the_automation_matrix.quests65.description3}"
-				"{ftbquests.chapter.chapter_25_the_automation_matrix.quests65.description4}"
-				"{ftbquests.chapter.chapter_25_the_automation_matrix.quests65.description5}"
+				""
+				""
+				"{ftbquests.chapter.chapter_25_the_automation_matrix.quests65.description6}"
 			]
 			dependencies: ["75928E9A25B2EFFD"]
 			hide: false

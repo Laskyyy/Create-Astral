@@ -432,7 +432,12 @@
 			y: -0.5d
 			shape: "rsquare"
 			subtitle: "{ftbquests.chapter.chapter_2.quests11.subtitle}"
-			description: ["{ftbquests.chapter.chapter_2.quests11.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_2.quests11.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_2.quests11.description3}"
+			]
 			dependencies: [
 				"67AA35D9D18AD64B"
 				"0E28273A4D119B81"
@@ -964,7 +969,12 @@
 			y: -4.0d
 			shape: "gear"
 			subtitle: "{ftbquests.chapter.chapter_2.quests25.subtitle}"
-			description: ["{ftbquests.chapter.chapter_2.quests25.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_2.quests25.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_2.quests25.description3}"
+			]
 			dependencies: ["545BF28E82A07D19"]
 			size: 2.5d
 			id: "7354F2BFB2591ECF"
@@ -1278,7 +1288,12 @@
 			x: 0.0d
 			y: -1.5d
 			subtitle: "{ftbquests.chapter.chapter_2.quests33.subtitle}"
-			description: ["{ftbquests.chapter.chapter_2.quests33.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_2.quests33.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_2.quests33.description3}"
+			]
 			dependencies: ["4EB4838CCED125E2"]
 			id: "5A0C01D3ED5C49D4"
 			tasks: [
@@ -1428,7 +1443,15 @@
 			x: -10.0d
 			y: 2.0d
 			subtitle: "{ftbquests.chapter.chapter_2.quests38.subtitle}"
-			description: ["{ftbquests.chapter.chapter_2.quests38.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_2.quests38.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_2.quests38.description3}"
+				""
+				""
+				"{ftbquests.chapter.chapter_2.quests38.description6}"
+			]
 			hide_dependency_lines: true
 			dependencies: ["0A5DC78719B9A244"]
 			id: "0E28273A4D119B81"
@@ -1566,7 +1589,12 @@
 			x: -10.0d
 			y: -2.0d
 			subtitle: "{ftbquests.chapter.chapter_2.quests43.subtitle}"
-			description: ["{ftbquests.chapter.chapter_2.quests43.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_2.quests43.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_2.quests43.description3}"
+			]
 			dependencies: ["36129D7A46CC6F6D"]
 			optional: true
 			id: "4525F3F3177D72B8"
@@ -1844,7 +1872,15 @@
 			y: 3.0d
 			shape: "gear"
 			subtitle: "{ftbquests.chapter.chapter_2.quests53.subtitle}"
-			description: ["{ftbquests.chapter.chapter_2.quests53.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_2.quests53.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_2.quests53.description3}"
+				""
+				""
+				"{ftbquests.chapter.chapter_2.quests53.description6}"
+			]
 			dependencies: ["0873D71412D52F18"]
 			id: "1D294F2F189410BD"
 			tasks: [
@@ -1858,8 +1894,13 @@
 		{
 			x: -7.5d
 			y: 3.0d
-			subtitle: ""
-			description: ["{ftbquests.chapter.chapter_2.quests54.description}"]
+			subtitle: "{ftbquests.chapter.chapter_2.quests54.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_2.quests54.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_2.quests54.description3}"
+			]
 			dependencies: ["1579C73B735F06F8"]
 			id: "0873D71412D52F18"
 			tasks: [

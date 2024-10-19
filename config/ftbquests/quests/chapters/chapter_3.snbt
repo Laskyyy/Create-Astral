@@ -2431,7 +2431,15 @@
 			y: 0.5d
 			shape: "rsquare"
 			subtitle: "{ftbquests.chapter.chapter_3.quests58.subtitle}"
-			description: ["{ftbquests.chapter.chapter_3.quests58.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_3.quests58.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_3.quests58.description3}"
+				""
+				""
+				"{ftbquests.chapter.chapter_3.quests58.description6}"
+			]
 			dependencies: ["70799237323247B7"]
 			id: "35C34E4EA8292D24"
 			tasks: [
