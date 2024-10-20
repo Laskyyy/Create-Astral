@@ -404,7 +404,7 @@ onEvent("item.tooltip", (e) => {
     }
     if (e.isShift()) {
       text.add(1, [
-        Text.of((
+        Text.of(Component.translate(
           "tooltip.astraladditions.fragile_item"
         )).red(),
       ]);
