@@ -451,6 +451,22 @@ function sequencedAssemblyRecipes(event) {
     //Honestly just good luck in figuring this out its too complex to
     //document in an effective way
     const inc_sturdy_sheet = "create:unprocessed_obsidian_sheet";
+
+    event.recipes
+        .createSequencedAssembly(Item.of("create:track"), "#create:sleepers", [
+            event.recipes.createDeploying("create:incomplete_track", [
+                "create:incomplete_track",
+                ["#c:nuggets/iron", "#c:nuggets/tin", "#c:nuggets/zinc"],
+            ]),
+            event.recipes.createDeploying("create:incomplete_track", [
+                "create:incomplete_track",
+                ["#c:nuggets/iron", "#c:nuggets/tin", "#c:nuggets/zinc"],
+            ]),
+            event.recipes.createPressing("create:incomplete_track", "create:incomplete_track"),
+        ])
+        .transitionalItem("create:incomplete_track")
+        .loops(1);
+
     event.recipes
         .createSequencedAssembly([Item.of("astralfoods:shimmered_apple").withChance(1)], "minecraft:apple", [
             event.recipes.createDeploying("minecraft:apple", ["minecraft:apple", "tconstruct:ender_slime_crystal"]),
