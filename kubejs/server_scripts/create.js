@@ -533,6 +533,22 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem(inc_sturdy_sheet)
         .loops(5);
 
+        event.recipes
+            .createSequencedAssembly(["2x create:sturdy_sheet"], "tconstruct:obsidian_pane", [
+                event.recipes.createDeploying(inc_sturdy_sheet, [
+                    inc_sturdy_sheet,
+                    "minecraft:magma_cream",
+                ]),
+                event.recipes.createPressing(inc_sturdy_sheet, inc_sturdy_sheet),
+                event.recipes.createFilling(inc_sturdy_sheet, [
+                    inc_sturdy_sheet,
+                    { fluid: "minecraft:lava", amount: mB * 100 },
+                ]),
+            ])
+            .loops(2)
+            .transitionalItem(inc_sturdy_sheet);
+
+
     event.custom({
         type: "create:sequenced_assembly",
         ingredient: { tag: "c:plates/gold" },
@@ -735,7 +751,7 @@ function sequencedAssemblyRecipes(event) {
             .loops(5);
 
         event.recipes
-            .createSequencedAssembly(
+                    .createSequencedAssembly(
                 [
                     // begin
                     "astraladditions:fragile_item", // output
@@ -883,20 +899,6 @@ function sequencedAssemblyRecipes(event) {
             ])
             .transitionalItem(transitional_lapis_sheet);
 
-        event.recipes
-            .createSequencedAssembly(["2x create:sturdy_sheet"], "tconstruct:obsidian_pane", [
-                event.recipes.createDeploying("tconstruct:obsidian_pane", [
-                    "tconstruct:obsidian_pane",
-                    "minecraft:magma_cream",
-                ]),
-                event.recipes.createPressing("tconstruct:obsidian_pane", "tconstruct:obsidian_pane"),
-                event.recipes.createFilling("tconstruct:obsidian_pane", [
-                    "tconstruct:obsidian_pane",
-                    { fluid: "minecraft:lava", amount: mB * 100 },
-                ]),
-            ])
-            .loops(2)
-            .transitionalItem(inc_sturdy_sheet);
 
         event.recipes
             .createSequencedAssembly(["6x create:belt_connector"], "minecraft:dried_kelp", [
