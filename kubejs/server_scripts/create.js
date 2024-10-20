@@ -451,6 +451,22 @@ function sequencedAssemblyRecipes(event) {
     //Honestly just good luck in figuring this out its too complex to
     //document in an effective way
     const inc_sturdy_sheet = "create:unprocessed_obsidian_sheet";
+
+    event.recipes
+        .createSequencedAssembly(Item.of("create:track"), "#create:sleepers", [
+            event.recipes.createDeploying("create:incomplete_track", [
+                "create:incomplete_track",
+                ["#c:nuggets/iron", "#c:nuggets/tin", "#c:nuggets/zinc"],
+            ]),
+            event.recipes.createDeploying("create:incomplete_track", [
+                "create:incomplete_track",
+                ["#c:nuggets/iron", "#c:nuggets/tin", "#c:nuggets/zinc"],
+            ]),
+            event.recipes.createPressing("create:incomplete_track", "create:incomplete_track"),
+        ])
+        .transitionalItem("create:incomplete_track")
+        .loops(1);
+
     event.recipes
         .createSequencedAssembly([Item.of("astralfoods:shimmered_apple").withChance(1)], "minecraft:apple", [
             event.recipes.createDeploying("minecraft:apple", ["minecraft:apple", "tconstruct:ender_slime_crystal"]),
@@ -532,6 +548,22 @@ function sequencedAssemblyRecipes(event) {
         )
         .transitionalItem(inc_sturdy_sheet)
         .loops(5);
+
+        event.recipes
+            .createSequencedAssembly(["2x create:sturdy_sheet"], "tconstruct:obsidian_pane", [
+                event.recipes.createDeploying(inc_sturdy_sheet, [
+                    inc_sturdy_sheet,
+                    "minecraft:magma_cream",
+                ]),
+                event.recipes.createPressing(inc_sturdy_sheet, inc_sturdy_sheet),
+                event.recipes.createFilling(inc_sturdy_sheet, [
+                    inc_sturdy_sheet,
+                    { fluid: "minecraft:lava", amount: mB * 100 },
+                ]),
+            ])
+            .loops(2)
+            .transitionalItem(inc_sturdy_sheet);
+
 
     event.custom({
         type: "create:sequenced_assembly",
@@ -735,7 +767,7 @@ function sequencedAssemblyRecipes(event) {
             .loops(5);
 
         event.recipes
-            .createSequencedAssembly(
+                    .createSequencedAssembly(
                 [
                     // begin
                     "astraladditions:fragile_item", // output
@@ -883,20 +915,6 @@ function sequencedAssemblyRecipes(event) {
             ])
             .transitionalItem(transitional_lapis_sheet);
 
-        event.recipes
-            .createSequencedAssembly(["2x create:sturdy_sheet"], "tconstruct:obsidian_pane", [
-                event.recipes.createDeploying("tconstruct:obsidian_pane", [
-                    "tconstruct:obsidian_pane",
-                    "minecraft:magma_cream",
-                ]),
-                event.recipes.createPressing("tconstruct:obsidian_pane", "tconstruct:obsidian_pane"),
-                event.recipes.createFilling("tconstruct:obsidian_pane", [
-                    "tconstruct:obsidian_pane",
-                    { fluid: "minecraft:lava", amount: mB * 100 },
-                ]),
-            ])
-            .loops(2)
-            .transitionalItem(inc_sturdy_sheet);
 
         event.recipes
             .createSequencedAssembly(["6x create:belt_connector"], "minecraft:dried_kelp", [
