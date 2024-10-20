@@ -14,7 +14,7 @@ variable {
 
 variable {
   name = version
-  value = EXPERIMENTAL
+  value = v2.1.1
   reset_on_launch = false
 }
 
