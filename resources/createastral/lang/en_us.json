@@ -82,5 +82,24 @@
     "block.createastral.blast-resistant_concrete": "Blast-resistant concrete",
     "block.createastral.blast-resistant_concrete_stairs": "Blast-resistant concrete stairs",
     "block.createastral.electrolyser_dummy": "Electrolyser dummy",
-    "block.createastral.andesite_alloy_block": "Andesite alloy block"
+    "block.createastral.andesite_alloy_block": "Andesite alloy block",
+
+    "category.starei.channeling_transformer": "Channeling",
+    "category.starei.distillery": "Distilling",
+    "category.starei.electrolyzer": "Electrolyzing",
+    "category.starei.gas_mixer": "Gas Mixing",
+    "category.starei.shimmer_refinery": "Shimmer Refining",
+    "category.starei.slime_furnace": "Slime Fuel",
+    "category.starei.stone_growth": "Stone Growing",
+
+    "starei.slime_furnace.text1": "%d SU at %d RPM",
+    "starei.slime_furnace.text2": "%s seconds",
+
+    "starei.planet.earth": "Earth",
+    "starei.planet.moon": "Moon",
+    "starei.planet.mars": "Mars",
+    "starei.planet.mercury": "Mercury",
+    "starei.planet.venus": "Venus",
+    "starei.planet.glacio": "Glacio"
+
 }
