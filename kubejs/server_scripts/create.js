@@ -2645,6 +2645,14 @@ function splashingRecipes(event) {
             ],
         },
         {
+            input: "ae2:fluix_crystal_seed",
+            outputs: [
+                ["ae2:fluix_crystal", 1],
+                ["minecraft:sugar", 0.1],
+            ],
+        },
+
+        {
             input: "createastral:lime",
             outputs: [
                 ["techreborn:silver_nugget", 0.12],
