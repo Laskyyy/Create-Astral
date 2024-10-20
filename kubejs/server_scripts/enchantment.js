@@ -3423,6 +3423,6 @@ onEvent("recipes", (event) => {
                 ]),
             ]
         )
-        .transitionalItem("minecraft:enchanted_book")
+        .transitionalItem("minecraft:glass_bottle")
         .loops(1);
 });
