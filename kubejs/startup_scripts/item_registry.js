@@ -121,12 +121,12 @@ onEvent("item.registry", (event) => {
     event
         .create("astralfoods:bulbas_tea")
         .displayName("Bulba's Tea")
+        .maxStackSize(16)
         .food((food) => {
             food.hunger(2)
                 .saturation(1.2)
                 .effect("night_vision", 4800, 1, 1)
                 .effect("haste", 4800, 1, 1)
-                .maxStackSize(16)
                 .alwaysEdible();
         });
 
