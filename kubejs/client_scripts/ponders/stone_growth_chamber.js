@@ -104,7 +104,7 @@ onEvent("ponder.registry", event => {
         scene.idle(1);
 				
         scene.idle(70);
-        scene.text(90, "This currently works with Stone, Andesite, Diorite, Granite and any default stone from each planet, like Moon Stone and Mars Stone.", [3, 2.5, 3])
+        scene.text(90, "This currently works with Stone, Andesite, Diorite, Granite and any default stone from each planet, like Moon Stone and Mars Stone", [3, 2.5, 3])
         scene.idle(100);
 				
 				scene.world.setBlocks([1, 1, 3,], "chipped:mossy_stone_bricks_1", true);
