@@ -42,7 +42,7 @@ function millingRecipes(event) {
         ["minecraft:fire_coral_block", "2x minecraft:red_dye", 1],
         ["minecraft:horn_coral_block", "2x minecraft:yellow_dye", 1],
         ["minecraft:glow_berries", "naturalist:glow_goop", 1],
-        ["naturalist:glow_goop", "minecraft:yellow_dye", 1],
+				["naturalist:glow_goop", "minecraft:yellow_dye", 1],
         ["minecraft:twisting_vines", "minecraft:blue_dye", 1],
         ["minecraft:weeping_vines", "minecraft:red_dye", 1],
         ["minecraft:sweet_berries", "minecraft:red_dye", 1],
@@ -75,7 +75,7 @@ function crushingRecipes(event) {
             input: "minecraft:calcite",
             outputs: [["4x techreborn:calcite_dust", 1]],
         },
-        {
+				{
             input: "minecraft:dead_tube_coral_block",
             outputs: [["1x techreborn:calcite_dust", 1]],
         },
@@ -1278,7 +1278,7 @@ function sequencedAssemblyRecipes(event) {
                 // input
                 event.recipes.createFilling("createbigcannons:nethersteel_screw_breech", [
                     "createbigcannons:nethersteel_screw_breech",
-                    { fluid: "kubejs:shimmer", amount: 9000 },
+                    { fluid: "kubejs:shimmer", amount: 9000  },
                 ]),
                 event.recipes.createDeploying("createbigcannons:nethersteel_screw_breech", [
                     "createbigcannons:nethersteel_screw_breech",
@@ -1286,11 +1286,11 @@ function sequencedAssemblyRecipes(event) {
                 ]),
                 event.recipes.createFilling("createbigcannons:nethersteel_screw_breech", [
                     "createbigcannons:nethersteel_screw_breech",
-                    { fluid: "techreborn:lithium", amount: 3000 },
+                    { fluid: "techreborn:lithium", amount: 3000  },
                 ]),
                 event.recipes.createFilling("createbigcannons:nethersteel_screw_breech", [
                     "createbigcannons:nethersteel_screw_breech",
-                    { fluid: "techreborn:silicon", amount: 3000 },
+                    { fluid: "techreborn:silicon", amount: 3000  },
                 ]),
             ]
         )
@@ -2538,15 +2538,6 @@ function mixingRecipes(event) {
         ])
         .superheated()
         .processingTime(1000);
-
-    event.recipes
-        .createMixing("astralfoods:bulbas_tea", [
-            "astraladditions:bulba_root",
-            { fluid: "minecraft:water", amount: 333 * mB },
-            { fluid: "milk:still_milk", amount: 333 * mB },
-        ])
-        .heated()
-        .processingTime(45);
 }
 
 function cuttingRecipes(event) {
@@ -2626,7 +2617,7 @@ function splashingRecipes(event) {
             input: "minecraft:calcite",
             outputs: [["minecraft:dripstone_block", 1]],
         },
-        {
+				{
             input: "minecraft:sponge",
             outputs: [["minecraft:wet_sponge", 1]],
         },
@@ -3361,7 +3352,7 @@ function compactingRecipes(event) {
             output: "minecraft:andesite",
             inputs: ["4x techreborn:andesite_dust"],
         },
-        {
+				{
             output: "minecraft:granite",
             inputs: ["4x techreborn:granite_dust"],
         },

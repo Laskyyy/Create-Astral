@@ -118,18 +118,6 @@ onEvent("item.registry", (event) => {
                 .alwaysEdible();
         });
 
-    event
-        .create("astralfoods:bulbas_tea")
-        .displayName("Bulba's Tea")
-        .food((food) => {
-            food.hunger(2)
-                .saturation(1.2)
-                .effect("night_vision", 4800, 1, 1)
-                .effect("haste", 4800, 1, 1)
-                .maxStackSize(16)
-                .alwaysEdible();
-        });
-
     event.create("createastral:golden_bowl").displayName("Golden Bowl");
     event
         .create("createastral:filled_golden_bowl", "create:sequenced_assembly")
