@@ -65,8 +65,27 @@ onEvent("ponder.registry", event => {
         scene.idle(10);
         scene.text(80, "When built using different Polished Stone, the Stone Growth Chamber will generate different types of cobblestone", [3, 2.5, 3])
         scene.idle(90);
-        scene.text(80, "This currently works with Andesite, and any default stone from each planet, like Moon Stone and Mars Stone.", [3, 2.5, 3])
-        scene.idle(90);
+        scene.text(90, "This currently works with Andesite, Cobblestone, and any default stone from each planet, like Moon Stone and Mars Stone.", [3, 2.5, 3])
+        scene.idle(100);
+				
+				scene.world.setBlocks([1, 1, 3,], "minecraft:stone_bricks", true);
+        scene.world.setBlocks([2, 1, 3,], "minecraft:stone_bricks", true);
+        scene.world.setBlocks([3, 1, 3,], "minecraft:stone_bricks", true);
+				scene.world.setBlocks([1, 1, 2,], "minecraft:stone_bricks", true);
+        scene.world.setBlocks([2, 1, 2,], "minecraft:stone_bricks", true);
+        scene.world.setBlocks([3, 1, 2,], "minecraft:stone_bricks", true);
+				scene.world.setBlocks([1, 1, 1,], "minecraft:stone_bricks", true);
+        scene.world.setBlocks([3, 1, 1,], "minecraft:stone_bricks", true);
+        scene.world.setBlocks([1, 3, 3,], "minecraft:stone_bricks", true);
+        scene.world.setBlocks([2, 3, 3,], "minecraft:stone_bricks", true);
+        scene.world.setBlocks([3, 3, 3,], "minecraft:stone_bricks", true);
+        scene.world.setBlocks([1, 3, 2,], "minecraft:stone_bricks", true);
+        scene.world.setBlocks([2, 3, 2,], "minecraft:stone_bricks", true);
+        scene.world.setBlocks([3, 3, 2,], "minecraft:stone_bricks", true);
+        scene.world.setBlocks([1, 3, 1,], "minecraft:stone_bricks", true);
+        scene.world.setBlocks([2, 3, 1,], "minecraft:stone_bricks", true);
+        scene.world.setBlocks([3, 3, 1,], "minecraft:stone_bricks", true);
+        scene.idle(25);
 				
 				scene.world.setBlocks([1, 1, 3,], "ad_astra:polished_mars_stone", true);
         scene.world.setBlocks([2, 1, 3,], "ad_astra:polished_mars_stone", true);
