@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 2
 	filename: "chapter_2"
-	title: "{chapter.2.title}"
+	title: "{ftbquests.chapter.chapter_2.title}"
 	icon: "create:andesite_alloy"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -73,37 +73,39 @@
 		{
 			x: -2.5d
 			y: 10.0d
-			subtitle: "{chapter.2.quest.1.subtitle}"
+			subtitle: "{ftbquests.chapter.chapter_2.quests0.subtitle}"
 			description: [
-				"But wait, alloying hasn't been invented yet!"
+				"{ftbquests.chapter.chapter_2.quests0.description0}"
 				""
-				"You can create &6Bronze&r by smithing Copper together with Tin."
+				"{ftbquests.chapter.chapter_2.quests0.description2}"
 				""
-				"Logical, makes sense."
+				"{ftbquests.chapter.chapter_2.quests0.description4}"
 			]
 			hide_dependency_lines: false
 			dependencies: ["5BE7EBA598FD5EE0"]
 			hide: false
 			id: "5268B7CCEDC48422"
-			tasks: [{
-				id: "22254C04A4E1B471"
-				type: "item"
-				item: "createastral:bronze_ingot"
-			}]
+			tasks: [
+				{
+					id: "22254C04A4E1B471"
+					type: "item"
+					item: "createastral:bronze_ingot"
+				}
+			]
 		}
 		{
-			title: "{chapter.2.quest.2.title}"
+			title: "{ftbquests.chapter.chapter_2.quests1.title}"
 			icon: "create:cogwheel"
 			x: -2.0d
 			y: 8.0d
 			shape: "gear"
-			subtitle: "{chapter.2.quest.2.subtitle}"
+			subtitle: "{ftbquests.chapter.chapter_2.quests1.subtitle}"
 			description: [
-				"&6Cogwheels&r and &6Shafts&r take rotational input - such as from a Hand Crank or a Water Wheel - and transfer the power around."
+				"{ftbquests.chapter.chapter_2.quests1.description0}"
 				""
-				"&6Large Cogwheels&r in particular can be used to change the axis of rotation, or speed up/slow down the rotation speed when used in combination with small Cogwheels."
+				"{ftbquests.chapter.chapter_2.quests1.description2}"
 				""
-				"Use the Ponder feature to learn more!"
+				"{ftbquests.chapter.chapter_2.quests1.description4}"
 			]
 			dependencies: [
 				"4D1A55B136F62B3F"
@@ -148,18 +150,18 @@
 			icon: "create:mechanical_press"
 			x: -2.0d
 			y: 2.0d
-			subtitle: "{chapter.2.quest.3.subtitle}"
+			subtitle: "{ftbquests.chapter.chapter_2.quests2.subtitle}"
 			description: [
-				"&6Mechanical Presses&r can press items underneath them."
+				"{ftbquests.chapter.chapter_2.quests2.description0}"
 				""
-				"The items can be:"
-				"- thrown below the Press,"
-				"- placed on a Depot,"
-				"- placed on a Belt."
+				"{ftbquests.chapter.chapter_2.quests2.description2}"
+				"{ftbquests.chapter.chapter_2.quests2.description3}"
+				"{ftbquests.chapter.chapter_2.quests2.description4}"
+				"{ftbquests.chapter.chapter_2.quests2.description5}"
 				""
-				"In all cases, Mechanical Press will process items."
+				"{ftbquests.chapter.chapter_2.quests2.description7}"
 				""
-				"&e⚠&r Putting a solid block between a Depot/Belt and Mechanical Press will prevent it from processing items!"
+				"{ftbquests.chapter.chapter_2.quests2.description9}"
 			]
 			dependencies: [
 				"604CF717881C323A"
@@ -179,30 +181,34 @@
 					item: "create:depot"
 				}
 			]
-			rewards: [{
-				id: "58C0759B314F7A1A"
-				type: "item"
-				item: "create:andesite_alloy"
-				count: 8
-			}]
+			rewards: [
+				{
+					id: "58C0759B314F7A1A"
+					type: "item"
+					item: "create:andesite_alloy"
+					count: 8
+				}
+			]
 		}
 		{
-			title: "{chapter.2.quest.4.title}"
+			title: "{ftbquests.chapter.chapter_2.quests3.title}"
 			x: -2.0d
 			y: 0.0d
 			description: [
-				"&6Iron Sheets&r are used to create a wide variety of Create machinery."
+				"{ftbquests.chapter.chapter_2.quests3.description0}"
 				""
-				"Try making a Mixer to perform your first Mixing recipe!"
+				"{ftbquests.chapter.chapter_2.quests3.description2}"
 			]
 			dependencies: ["6499CD689863283D"]
 			id: "4EB4838CCED125E2"
-			tasks: [{
-				id: "5C8677CAB68CDBF5"
-				type: "item"
-				item: "create:iron_sheet"
-				count: 10L
-			}]
+			tasks: [
+				{
+					id: "5C8677CAB68CDBF5"
+					type: "item"
+					item: "create:iron_sheet"
+					count: 10L
+				}
+			]
 			rewards: [
 				{
 					id: "5DEE6FCAA4C9AF9A"
@@ -218,123 +224,137 @@
 			]
 		}
 		{
-			title: "{chapter.2.quest.5.title}"
+			title: "{ftbquests.chapter.chapter_2.quests4.title}"
 			x: -3.5d
 			y: 0.0d
 			description: [
-				"&6Chutes&r can drop items from the inventory above to inventory below."
+				"{ftbquests.chapter.chapter_2.quests4.description0}"
 				""
-				"They can be also made diagonal to transfer items diagonally down."
+				"{ftbquests.chapter.chapter_2.quests4.description2}"
 				""
-				"Since they pull items 16 at a time instead of just 1 at a time, definitely invest in some Chutes."
+				"{ftbquests.chapter.chapter_2.quests4.description4}"
 			]
 			dependencies: ["4EB4838CCED125E2"]
 			optional: true
 			id: "122CDE9C00B5CA06"
-			tasks: [{
-				id: "7A09C3BFCA29B6B3"
-				type: "item"
-				item: "create:chute"
-			}]
+			tasks: [
+				{
+					id: "7A09C3BFCA29B6B3"
+					type: "item"
+					item: "create:chute"
+				}
+			]
 		}
 		{
-			title: "{chapter.2.quest.6.title}"
+			title: "{ftbquests.chapter.chapter_2.quests5.title}"
 			x: -1.5d
 			y: 9.0d
-			subtitle: "The basis of all Create."
-			description: ["{chapter.2.quest.6.description.1}"]
+			subtitle: "{ftbquests.chapter.chapter_2.quests5.subtitle}"
+			description: ["{ftbquests.chapter.chapter_2.quests5.description}"]
 			dependencies: ["76704C59FAFCD2E7"]
 			id: "74E7B48237BED17D"
-			tasks: [{
-				id: "6F6521AD31ABDEDB"
-				type: "item"
-				item: "create:andesite_alloy"
-				count: 3L
-			}]
-			rewards: [{
-				id: "15A8D721E715AA17"
-				type: "item"
-				item: {
-					id: "mcdw:dagger_dagger"
-					Count: 1b
-					tag: {
-						Damage: 0
+			tasks: [
+				{
+					id: "6F6521AD31ABDEDB"
+					type: "item"
+					item: "create:andesite_alloy"
+					count: 3L
+				}
+			]
+			rewards: [
+				{
+					id: "15A8D721E715AA17"
+					type: "item"
+					item: {
+						id: "mcdw:dagger_dagger"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
 					}
 				}
-			}]
+			]
 		}
 		{
 			x: -2.5d
 			y: 9.0d
-			subtitle: "Cogwheel teeth reinforcement."
-			description: ["Slice a Bronze Ingot into two &6Sheets &rusing a Stonecutter."]
+			subtitle: "{ftbquests.chapter.chapter_2.quests6.subtitle}"
+			description: ["{ftbquests.chapter.chapter_2.quests6.description}"]
 			dependencies: ["5268B7CCEDC48422"]
 			id: "4D1A55B136F62B3F"
-			tasks: [{
-				id: "754C2AF1CE1B6795"
-				type: "item"
-				item: "createastral:bronze_sheet"
-			}]
+			tasks: [
+				{
+					id: "754C2AF1CE1B6795"
+					type: "item"
+					item: "createastral:bronze_sheet"
+				}
+			]
 		}
 		{
 			x: -3.0d
 			y: -1.5d
-			subtitle: "{chapter.2.quest.8.subtitle}"
+			subtitle: "{ftbquests.chapter.chapter_2.quests7.subtitle}"
 			description: [
-				"&6Drills&r allow you to automate mining!"
+				"{ftbquests.chapter.chapter_2.quests7.description0}"
 				""
-				"Power the Drill, and it will start drilling the block in from of itself."
+				"{ftbquests.chapter.chapter_2.quests7.description2}"
 				""
-				"Since Drills don't care about mining levels, you can mine practically anything with them."
+				"{ftbquests.chapter.chapter_2.quests7.description4}"
 				""
-				"Try mining some &bDiamonds&r using them!"
+				"{ftbquests.chapter.chapter_2.quests7.description6}"
 			]
 			dependencies: ["4EB4838CCED125E2"]
 			id: "5D51B2F9F28ECE8A"
-			tasks: [{
-				id: "33D6253E8E977ED8"
-				type: "item"
-				item: "create:mechanical_drill"
-			}]
-			rewards: [{
-				id: "66C7D5F72E20E263"
-				type: "item"
-				item: "farmersdelight:chocolate_pie_slice"
-				count: 5
-			}]
+			tasks: [
+				{
+					id: "33D6253E8E977ED8"
+					type: "item"
+					item: "create:mechanical_drill"
+				}
+			]
+			rewards: [
+				{
+					id: "66C7D5F72E20E263"
+					type: "item"
+					item: "farmersdelight:chocolate_pie_slice"
+					count: 5
+				}
+			]
 		}
 		{
 			x: -6.0d
 			y: 2.0d
 			shape: "rsquare"
-			subtitle: "{chapter.2.quest.9.subtitle}"
+			subtitle: "{ftbquests.chapter.chapter_2.quests8.subtitle}"
 			description: [
-				"&6Sturdy Sheets&r are used in production of various Train-related things."
+				"{ftbquests.chapter.chapter_2.quests8.description0}"
 				""
-				"Trains are really useful for:"
-				"- Transporting yourself - Trains can reach speed of up to &621 m/s&r when not powered by fuel and driven manually."
-				"With fuel, Trains can drive up to &630 m/s&r when driven manually."
-				"- Transporting mobs from distant areas"
-				"- Transporting items from distant areas"
+				"{ftbquests.chapter.chapter_2.quests8.description2}"
+				"{ftbquests.chapter.chapter_2.quests8.description3}"
+				"{ftbquests.chapter.chapter_2.quests8.description4}"
+				"{ftbquests.chapter.chapter_2.quests8.description5}"
+				"{ftbquests.chapter.chapter_2.quests8.description6}"
 				""
-				"Trains can be also driven automatically with a Train Schedule - Trains drive 33% faster when doing so and can also drive through unloaded chunks."
+				"{ftbquests.chapter.chapter_2.quests8.description8}"
 				""
-				"This can be used for:"
-				"- Item/Fluid transportation"
-				"- Replacement for Mechanical Pistons for crop/tree farms"
+				"{ftbquests.chapter.chapter_2.quests8.description10}"
+				"{ftbquests.chapter.chapter_2.quests8.description11}"
+				"{ftbquests.chapter.chapter_2.quests8.description12}"
 				""
-				"Usually Trains come later in the progression, but we are generous."
+				"{ftbquests.chapter.chapter_2.quests8.description14}"
 			]
 			dependencies: [
 				"68108C8A6AC63A01"
 				"6499CD689863283D"
 			]
 			id: "0A5DC78719B9A244"
-			tasks: [{
-				id: "132CCDA06F8DC8C5"
-				type: "item"
-				item: "create:sturdy_sheet"
-			}]
+			tasks: [
+				{
+					id: "132CCDA06F8DC8C5"
+					type: "item"
+					item: "create:sturdy_sheet"
+				}
+			]
 			rewards: [
 				{
 					id: "4C67A01DA11A0B50"
@@ -359,52 +379,65 @@
 		{
 			x: -7.5d
 			y: -0.5d
-			subtitle: "{chapter.2.quest.10.subtitle}"
+			subtitle: "{ftbquests.chapter.chapter_2.quests9.subtitle}"
 			description: [
-				"Trains drive on &6Tracks&r, so you'll need some in order for your Train to move."
+				"{ftbquests.chapter.chapter_2.quests9.description0}"
 				""
-				"Tracks can be placed straight, diagonally, and also can make smooth turns."
+				"{ftbquests.chapter.chapter_2.quests9.description2}"
 				""
-				"If you want even more Tracks, there will be a cheaper recipe later on."
+				"{ftbquests.chapter.chapter_2.quests9.description4}"
 			]
 			hide_dependency_lines: true
 			dependencies: ["0A5DC78719B9A244"]
 			id: "67AA35D9D18AD64B"
-			tasks: [{
-				id: "45ABEEADF51C2407"
-				type: "item"
-				item: "create:track"
-			}]
-			rewards: [{
-				id: "68BF3F2B051CCF01"
-				type: "item"
-				item: "create:track"
-				count: 16
-			}]
+			tasks: [
+				{
+					id: "45ABEEADF51C2407"
+					type: "item"
+					item: "create:track"
+				}
+			]
+			rewards: [
+				{
+					id: "68BF3F2B051CCF01"
+					type: "item"
+					item: "create:track"
+					count: 16
+				}
+			]
 		}
 		{
 			x: -7.5d
 			y: 2.0d
-			description: ["{chapter.2.quest.11.description.1}"]
+			description: ["{ftbquests.chapter.chapter_2.quests10.description}"]
 			dependencies: ["0A5DC78719B9A244"]
 			id: "1579C73B735F06F8"
-			tasks: [{
-				id: "5983C48519515105"
-				type: "item"
-				item: "create:railway_casing"
-			}]
-			rewards: [{
-				id: "73BB68E05FE6085E"
-				type: "item"
-				item: "farmersdelight:stuffed_pumpkin_block"
-			}]
+			tasks: [
+				{
+					id: "5983C48519515105"
+					type: "item"
+					item: "create:railway_casing"
+				}
+			]
+			rewards: [
+				{
+					id: "73BB68E05FE6085E"
+					type: "item"
+					item: "farmersdelight:stuffed_pumpkin_block"
+				}
+			]
 		}
 		{
 			x: -10.0d
 			y: -0.5d
 			shape: "rsquare"
-			subtitle: "{chapter.2.quest.12.subtitle}"
-			description: ["{chapter.2.quest.12.description.1}"]
+			subtitle: "{ftbquests.chapter.chapter_2.quests11.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_2.quests11.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_2.quests11.description3}"
+			]
 			dependencies: [
 				"67AA35D9D18AD64B"
 				"0E28273A4D119B81"
@@ -413,12 +446,14 @@
 			]
 			size: 1.5d
 			id: "36129D7A46CC6F6D"
-			tasks: [{
-				id: "0AF596BE70DCA925"
-				type: "advancement"
-				advancement: "create:train"
-				criterion: ""
-			}]
+			tasks: [
+				{
+					id: "0AF596BE70DCA925"
+					type: "advancement"
+					advancement: "create:train"
+					criterion: ""
+				}
+			]
 			rewards: [
 				{
 					id: "190791854AEC801D"
@@ -461,13 +496,13 @@
 			}
 			x: -1.0d
 			y: 3.0d
-			subtitle: "Power a Water Wheel!"
+			subtitle: "{ftbquests.chapter.chapter_2.quests12.subtitle}"
 			description: [
-				"Tired of cranking that Hand Crank?"
+				"{ftbquests.chapter.chapter_2.quests12.description0}"
 				""
-				"&6Water Wheels&r will generate stress, if Water flows on at least one side of it."
+				"{ftbquests.chapter.chapter_2.quests12.description2}"
 				""
-				"Covering more sides with flowing Water &6won't&r increase its speed nor stress output."
+				"{ftbquests.chapter.chapter_2.quests12.description4}"
 			]
 			hide_dependency_lines: true
 			dependencies: ["515FDE185E1FB782"]
@@ -485,36 +520,40 @@
 					item: "create:water_wheel"
 				}
 			]
-			rewards: [{
-				id: "75D6346CB8A5E30C"
-				type: "item"
-				item: "create:water_wheel"
-				count: 3
-			}]
+			rewards: [
+				{
+					id: "75D6346CB8A5E30C"
+					type: "item"
+					item: "create:water_wheel"
+					count: 3
+				}
+			]
 		}
 		{
 			x: -2.0d
 			y: 5.5d
 			shape: "rsquare"
 			description: [
-				"To create your first &6Andesite Casing&r:"
-				"1. Strip any Log with an Axe,"
-				"2. Right-click the Stripped Log with Andesite Alloy."
+				"{ftbquests.chapter.chapter_2.quests13.description0}"
+				"{ftbquests.chapter.chapter_2.quests13.description1}"
+				"{ftbquests.chapter.chapter_2.quests13.description2}"
 				""
-				"You can automate this later on."
+				"{ftbquests.chapter.chapter_2.quests13.description4}"
 				""
-				"Andesite Casings are core for many Create machines."
-				"You can also use them to cover your Shafts or Cogwheels and decorate Belts!"
+				"{ftbquests.chapter.chapter_2.quests13.description6}"
+				"{ftbquests.chapter.chapter_2.quests13.description7}"
 			]
 			dependencies: ["515FDE185E1FB782"]
 			size: 1.5d
 			id: "604CF717881C323A"
-			tasks: [{
-				id: "705806F9DF2C4D4E"
-				type: "advancement"
-				advancement: "create:andesite_casing"
-				criterion: ""
-			}]
+			tasks: [
+				{
+					id: "705806F9DF2C4D4E"
+					type: "advancement"
+					advancement: "create:andesite_casing"
+					criterion: ""
+				}
+			]
 		}
 		{
 			icon: {
@@ -526,8 +565,8 @@
 			}
 			x: -3.0d
 			y: 6.5d
-			subtitle: "{chapter.2.quest.15.subtitle}"
-			description: ["{chapter.2.quest.15.description.1}"]
+			subtitle: "{ftbquests.chapter.chapter_2.quests14.subtitle}"
+			description: ["{ftbquests.chapter.chapter_2.quests14.description}"]
 			dependencies: ["604CF717881C323A"]
 			id: "07ED5ADF97F6F0D8"
 			tasks: [
@@ -548,23 +587,25 @@
 					item: "minecraft:arrow"
 				}
 			]
-			rewards: [{
-				id: "4E124F950CDC52D4"
-				type: "item"
-				item: "minecraft:arrow"
-				count: 16
-			}]
+			rewards: [
+				{
+					id: "4E124F950CDC52D4"
+					type: "item"
+					item: "minecraft:arrow"
+					count: 16
+				}
+			]
 		}
 		{
 			icon: "create:mechanical_mixer"
 			x: -2.0d
 			y: -1.5d
 			shape: "circle"
-			subtitle: "{chapter.2.quest.17.subtitle}"
+			subtitle: "{ftbquests.chapter.chapter_2.quests15.subtitle}"
 			description: [
-				"&6Mixers&r are used to mix stuff, both solid and liquid."
+				"{ftbquests.chapter.chapter_2.quests15.description0}"
 				""
-				"It needs to have a Basin below."
+				"{ftbquests.chapter.chapter_2.quests15.description2}"
 			]
 			dependencies: ["4EB4838CCED125E2"]
 			id: "545BF28E82A07D19"
@@ -584,96 +625,106 @@
 		{
 			x: 0.0d
 			y: 8.5d
-			subtitle: "{chapter.2.quest.18.subtitle}"
+			subtitle: "{ftbquests.chapter.chapter_2.quests16.subtitle}"
 			dependencies: ["74E7B48237BED17D"]
 			optional: true
 			id: "638367CB9262248E"
-			tasks: [{
-				id: "4D557555BDA21F35"
-				type: "item"
-				item: "doodads:platform"
-				count: 16L
-			}]
-			rewards: [{
-				id: "0DC3D0AAF6DD9929"
-				type: "item"
-				item: "doodads:platform"
-				count: 16
-				only_one: true
-			}]
+			tasks: [
+				{
+					id: "4D557555BDA21F35"
+					type: "item"
+					item: "doodads:platform"
+					count: 16L
+				}
+			]
+			rewards: [
+				{
+					id: "0DC3D0AAF6DD9929"
+					type: "item"
+					item: "doodads:platform"
+					count: 16
+					only_one: true
+				}
+			]
 		}
 		{
 			x: -6.5d
 			y: 7.0d
-			subtitle: "if not ok then return end"
+			subtitle: "{ftbquests.chapter.chapter_2.quests17.subtitle}"
 			description: [
-				"&6Computers&r can execute code written in &6Lua&r to perform a variety of things."
+				"{ftbquests.chapter.chapter_2.quests17.description0}"
 				""
-				"Computers can attach peripherals and network using Modems."
+				"{ftbquests.chapter.chapter_2.quests17.description2}"
 				""
-				"Wired Modems can connect to Chests, Tanks and Batteries and network Computers, while Wireless Modems can only network different Computers."
+				"{ftbquests.chapter.chapter_2.quests17.description4}"
 				""
-				"Examples of things possible with Computers:"
-				"- Automatic item transporter/sorter"
-				"- GPS system"
-				"- Games"
-				"- Music players"
-				"- Base monitors/control panels..."
+				"{ftbquests.chapter.chapter_2.quests17.description6}"
+				"{ftbquests.chapter.chapter_2.quests17.description7}"
+				"{ftbquests.chapter.chapter_2.quests17.description8}"
+				"{ftbquests.chapter.chapter_2.quests17.description9}"
+				"{ftbquests.chapter.chapter_2.quests17.description10}"
+				"{ftbquests.chapter.chapter_2.quests17.description11}"
 				""
-				"The possibilities are endless."
+				"{ftbquests.chapter.chapter_2.quests17.description13}"
 				""
-				"The documentation is available at &bhttps://tweaked.cc&r."
+				"{ftbquests.chapter.chapter_2.quests17.description15}"
 				""
-				"Don't worry - you don't need to use Computers to beat the pack."
+				"{ftbquests.chapter.chapter_2.quests17.description17}"
 			]
 			dependencies: ["6B85CBE54B33C91F"]
 			optional: true
 			id: "247AF9BF2D5EBF78"
-			tasks: [{
-				id: "0FE3D0A672182AE6"
-				type: "item"
-				item: "computercraft:computer_normal"
-			}]
-			rewards: [{
-				id: "7E0B5E1A08BA855C"
-				type: "item"
-				item: "minecraft:note_block"
-			}]
+			tasks: [
+				{
+					id: "0FE3D0A672182AE6"
+					type: "item"
+					item: "computercraft:computer_normal"
+				}
+			]
+			rewards: [
+				{
+					id: "7E0B5E1A08BA855C"
+					type: "item"
+					item: "minecraft:note_block"
+				}
+			]
 		}
 		{
 			x: -7.5d
 			y: 7.0d
-			subtitle: "forward 70 turn left"
+			subtitle: "{ftbquests.chapter.chapter_2.quests18.subtitle}"
 			description: [
-				"&6Turtles&r are basically Computers that are able to move."
+				"{ftbquests.chapter.chapter_2.quests18.description0}"
 				""
-				"In order for Turtle to move, the turtle needs fuel."
+				"{ftbquests.chapter.chapter_2.quests18.description2}"
 				""
-				"Give the Turtle some fuel by putting some Coal into the currently selected slot and then execute turtle.refuel()."
+				"{ftbquests.chapter.chapter_2.quests18.description4}"
 				""
-				"Turtles can also have peripherals applied to them that allow them to perform certain tasks, like:"
-				"- Networking with other computers/turtles"
-				"- Automatic crafting"
-				"- Generating sound"
-				"- Fighting mobs"
-				"- Mining"
-				"and so on..."
+				"{ftbquests.chapter.chapter_2.quests18.description6}"
+				"{ftbquests.chapter.chapter_2.quests18.description7}"
+				"{ftbquests.chapter.chapter_2.quests18.description8}"
+				"{ftbquests.chapter.chapter_2.quests18.description9}"
+				"{ftbquests.chapter.chapter_2.quests18.description10}"
+				"{ftbquests.chapter.chapter_2.quests18.description11}"
+				"{ftbquests.chapter.chapter_2.quests18.description12}"
 			]
 			dependencies: ["247AF9BF2D5EBF78"]
 			optional: true
 			id: "266B4D9BDF29BD12"
-			tasks: [{
-				id: "3EF37A796B2984A4"
-				type: "item"
-				item: "computercraft:turtle_normal"
-			}]
+			tasks: [
+				{
+					id: "3EF37A796B2984A4"
+					type: "item"
+					item: "computercraft:turtle_normal"
+				}
+			]
 		}
 		{
-			title: "{chapter.2.quest.21.title}"
+			title: "{ftbquests.chapter.chapter_2.quests19.title}"
 			x: -6.0d
 			y: 0.5d
-			subtitle: "{chapter.2.quest.21.subtitle}"
-			description: ["This armor set provides base protection slightly better than that of Iron Armor, insane protection against strong attacks and ludicrous durability."]
+			subtitle: "{ftbquests.chapter.chapter_2.quests19.subtitle}"
+			description: ["{ftbquests.chapter.chapter_2.quests19.description}"]
 			dependencies: ["0A5DC78719B9A244"]
 			optional: true
 			id: "2B458E50ED7705ED"
@@ -723,24 +774,26 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "17F4671881A115DF"
-				type: "item"
-				item: {
-					id: "mcdw:hammer_flail"
-					Count: 1b
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: "17F4671881A115DF"
+					type: "item"
+					item: {
+						id: "mcdw:hammer_flail"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
 					}
 				}
-			}]
+			]
 		}
 		{
-			title: "Feeling like a knight?"
+			title: "{ftbquests.chapter.chapter_2.quests20.title}"
 			x: -0.5d
 			y: 1.0d
-			subtitle: "I think so!"
-			description: ["Stay protected with this set of Iron Armor!"]
+			subtitle: "{ftbquests.chapter.chapter_2.quests20.subtitle}"
+			description: ["{ftbquests.chapter.chapter_2.quests20.description}"]
 			dependencies: ["4EB4838CCED125E2"]
 			optional: true
 			id: "735D255FF23C8967"
@@ -790,60 +843,68 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "2F3403F31AC55A14"
-				type: "item"
-				item: {
-					id: "campanion:iron_spear"
-					Count: 1b
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: "2F3403F31AC55A14"
+					type: "item"
+					item: {
+						id: "campanion:iron_spear"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
 					}
 				}
-			}]
+			]
 		}
 		{
 			x: -1.0d
 			y: 8.0d
-			subtitle: "Manufactory"
+			subtitle: "{ftbquests.chapter.chapter_2.quests21.subtitle}"
 			description: [
-				"You can use the &6Hand Crank&r to manually spin Create setups."
+				"{ftbquests.chapter.chapter_2.quests21.description0}"
 				""
-				"However, this is tiring - you'll use up your hunger in no time!"
+				"{ftbquests.chapter.chapter_2.quests21.description2}"
 				""
-				"Useful for testing contraptions."
+				"{ftbquests.chapter.chapter_2.quests21.description4}"
 			]
 			dependencies: ["74E7B48237BED17D"]
 			id: "4AF3238551E346E1"
-			tasks: [{
-				id: "5AA7D9B4E863846A"
-				type: "item"
-				item: "create:hand_crank"
-			}]
-			rewards: [{
-				id: "23B7C7FE9EE1C6BF"
-				type: "item"
-				item: "minecraft:cooked_beef"
-				count: 4
-			}]
+			tasks: [
+				{
+					id: "5AA7D9B4E863846A"
+					type: "item"
+					item: "create:hand_crank"
+				}
+			]
+			rewards: [
+				{
+					id: "23B7C7FE9EE1C6BF"
+					type: "item"
+					item: "minecraft:cooked_beef"
+					count: 4
+				}
+			]
 		}
 		{
 			x: -5.0d
 			y: 5.5d
-			subtitle: "{chapter.2.quest.24.subtitle}"
+			subtitle: "{ftbquests.chapter.chapter_2.quests22.subtitle}"
 			description: [
-				"&6Millstones&r are used to, well, mill stuff."
-				"Simply throw anything on top or supply items by automation and Millstone will mill the items."
+				"{ftbquests.chapter.chapter_2.quests22.description0}"
+				"{ftbquests.chapter.chapter_2.quests22.description1}"
 				""
-				"Items can be extracted either via right-clicking the Millstone or by automation."
+				"{ftbquests.chapter.chapter_2.quests22.description3}"
 			]
 			dependencies: ["604CF717881C323A"]
 			id: "1DEF161DE26F3587"
-			tasks: [{
-				id: "062D9D73045B04F3"
-				type: "item"
-				item: "create:millstone"
-			}]
+			tasks: [
+				{
+					id: "062D9D73045B04F3"
+					type: "item"
+					item: "create:millstone"
+				}
+			]
 			rewards: [
 				{
 					id: "20738A978098D996"
@@ -860,58 +921,71 @@
 			]
 		}
 		{
-			title: "Obtain Quartz!"
+			title: "{ftbquests.chapter.chapter_2.quests23.title}"
 			x: -6.5d
 			y: 5.5d
 			shape: "diamond"
-			subtitle: "With a solid source of Diorite, you can produce a lot of Quartz."
-			description: ["With the &6Nether not existing&r, alternative sources such as this are essential!"]
+			subtitle: "{ftbquests.chapter.chapter_2.quests23.subtitle}"
+			description: ["{ftbquests.chapter.chapter_2.quests23.description}"]
 			dependencies: ["1DEF161DE26F3587"]
 			id: "6B85CBE54B33C91F"
-			tasks: [{
-				id: "77BFFF7831525CB0"
-				type: "item"
-				item: "minecraft:quartz"
-				count: 16L
-			}]
+			tasks: [
+				{
+					id: "77BFFF7831525CB0"
+					type: "item"
+					item: "minecraft:quartz"
+					count: 16L
+				}
+			]
 		}
 		{
-			title: "{chapter.2.quest.26.title}"
+			title: "{ftbquests.chapter.chapter_2.quests24.title}"
 			x: -6.0d
 			y: 4.0d
-			subtitle: "{chapter.2.quest.26.subtitle}"
-			description: ["{chapter.2.quest.26.description.1}"]
+			subtitle: "{ftbquests.chapter.chapter_2.quests24.subtitle}"
+			description: ["{ftbquests.chapter.chapter_2.quests24.description}"]
 			dependencies: ["1DEF161DE26F3587"]
 			id: "68108C8A6AC63A01"
-			tasks: [{
-				id: "20CDF6DD734135C3"
-				type: "item"
-				item: "create:powdered_obsidian"
-				count: 4L
-			}]
-			rewards: [{
-				id: "7EEED7520D320247"
-				type: "item"
-				item: "minecraft:obsidian"
-				count: 6
-			}]
+			tasks: [
+				{
+					id: "20CDF6DD734135C3"
+					type: "item"
+					item: "create:powdered_obsidian"
+					count: 4L
+				}
+			]
+			rewards: [
+				{
+					id: "7EEED7520D320247"
+					type: "item"
+					item: "minecraft:obsidian"
+					count: 6
+				}
+			]
 		}
 		{
-			title: "It's Grout all over..."
+			title: "{ftbquests.chapter.chapter_2.quests25.title}"
 			x: -2.0d
 			y: -4.0d
 			shape: "gear"
-			subtitle: "{chapter.2.quest.27.subtitle}"
-			description: ["{chapter.2.quest.27.description.1}"]
+			subtitle: "{ftbquests.chapter.chapter_2.quests25.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_2.quests25.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_2.quests25.description3}"
+			]
 			dependencies: ["545BF28E82A07D19"]
 			size: 2.5d
 			id: "7354F2BFB2591ECF"
-			tasks: [{
-				id: "4F44B7121D6C4F8D"
-				type: "item"
-				item: "tconstruct:grout"
-				count: 32L
-			}]
+			tasks: [
+				{
+					id: "4F44B7121D6C4F8D"
+					type: "item"
+					item: "tconstruct:grout"
+					count: 32L
+				}
+			]
 			rewards: [
 				{
 					id: "2FC3C3C1EEF29421"
@@ -957,41 +1031,45 @@
 			]
 		}
 		{
-			title: "{chapter.2.quest.28.title}"
+			title: "{ftbquests.chapter.chapter_2.quests26.title}"
 			x: -1.5d
 			y: 10.0d
-			subtitle: "{chapter.2.quest.28.subtitle}"
+			subtitle: "{ftbquests.chapter.chapter_2.quests26.subtitle}"
 			description: [
-				"Craft some &6Andesite Compound&r and smelt in in a Furnace."
+				"{ftbquests.chapter.chapter_2.quests26.description0}"
 				""
-				"Looks expensive? Don't worry - you'll soon be able to create Andesite Alloy 3 times cheaper!"
+				"{ftbquests.chapter.chapter_2.quests26.description2}"
 			]
 			dependencies: ["5BE7EBA598FD5EE0"]
 			hide: false
 			id: "76704C59FAFCD2E7"
-			tasks: [{
-				id: "11F5577E4AC6319A"
-				type: "item"
-				item: "createastral:andesite_compound"
-				count: 3L
-			}]
+			tasks: [
+				{
+					id: "11F5577E4AC6319A"
+					type: "item"
+					item: "createastral:andesite_compound"
+					count: 3L
+				}
+			]
 		}
 		{
-			title: "Automatable Sand."
+			title: "{ftbquests.chapter.chapter_2.quests27.title}"
 			x: -4.5d
 			y: 4.5d
 			shape: "diamond"
-			subtitle: "Milling Gravel and Sandstone will break down into Sand."
-			description: ["Find ways to turn this into Clay! "]
+			subtitle: "{ftbquests.chapter.chapter_2.quests27.subtitle}"
+			description: ["{ftbquests.chapter.chapter_2.quests27.description}"]
 			dependencies: ["1DEF161DE26F3587"]
 			optional: true
 			id: "3DBD012732199053"
-			tasks: [{
-				id: "4CAB1128165A4732"
-				type: "item"
-				item: "minecraft:sand"
-				count: 256L
-			}]
+			tasks: [
+				{
+					id: "4CAB1128165A4732"
+					type: "item"
+					item: "minecraft:sand"
+					count: 256L
+				}
+			]
 			rewards: [
 				{
 					id: "5807402B0565A95D"
@@ -1023,103 +1101,119 @@
 		{
 			x: -4.0d
 			y: -1.5d
-			subtitle: "{chapter.2.quest.31.subtitle}"
-			description: ["{chapter.2.quest.31.description.1}"]
+			subtitle: "{ftbquests.chapter.chapter_2.quests28.subtitle}"
+			description: ["{ftbquests.chapter.chapter_2.quests28.description}"]
 			dependencies: ["4EB4838CCED125E2"]
 			id: "4117DCE0FDD1C403"
-			tasks: [{
-				id: "0B8A1FC256D818B0"
-				type: "item"
-				item: "createaddition:rolling_mill"
-			}]
-			rewards: [{
-				id: "0658745608F58B97"
-				type: "item"
-				item: "minecraft:grass_block"
-				count: 8
-			}]
+			tasks: [
+				{
+					id: "0B8A1FC256D818B0"
+					type: "item"
+					item: "createaddition:rolling_mill"
+				}
+			]
+			rewards: [
+				{
+					id: "0658745608F58B97"
+					type: "item"
+					item: "minecraft:grass_block"
+					count: 8
+				}
+			]
 		}
 		{
-			title: "{chapter.2.quest.32.title}"
+			title: "{ftbquests.chapter.chapter_2.quests29.title}"
 			x: -3.5d
 			y: -2.5d
-			subtitle: "{chapter.2.quest.32.subtitle}"
+			subtitle: "{ftbquests.chapter.chapter_2.quests29.subtitle}"
 			description: [
-				"You can use Diamonds to:"
-				"- Upgrade your Hephaestus gear - just put the tool and a Diamond in a Tinker Station. The tool can now mine like a Diamond tool, and also will mine faster and will have more durability."
+				"{ftbquests.chapter.chapter_2.quests29.description0}"
+				"{ftbquests.chapter.chapter_2.quests29.description1}"
 				""
-				"- Create an Enchanting Table to upgrade your vanilla-style gear."
+				"{ftbquests.chapter.chapter_2.quests29.description3}"
 			]
 			dependencies: ["5D51B2F9F28ECE8A"]
 			id: "605ECFFA4F1C2736"
-			tasks: [{
-				id: "467CF458EC67569F"
-				type: "item"
-				item: "minecraft:diamond"
-			}]
-			rewards: [{
-				id: "1723B18152EFFBDB"
-				type: "item"
-				item: "minecraft:emerald"
-				count: 4
-			}]
+			tasks: [
+				{
+					id: "467CF458EC67569F"
+					type: "item"
+					item: "minecraft:diamond"
+				}
+			]
+			rewards: [
+				{
+					id: "1723B18152EFFBDB"
+					type: "item"
+					item: "minecraft:emerald"
+					count: 4
+				}
+			]
 		}
 		{
 			x: -4.5d
 			y: -2.5d
-			subtitle: "{chapter.2.quest.33.subtitle}"
-			description: ["{chapter.2.quest.33.description.1}"]
+			subtitle: "{ftbquests.chapter.chapter_2.quests30.subtitle}"
+			description: ["{ftbquests.chapter.chapter_2.quests30.description}"]
 			dependencies: ["4117DCE0FDD1C403"]
 			id: "0563257D5CE9C8A5"
-			tasks: [{
-				id: "01D04DDE6D25A335"
-				type: "item"
-				item: "ad_astra:earth_globe"
-			}]
-			rewards: [{
-				id: "474F63CEE27D89D4"
-				type: "item"
-				item: "ad_astra:moon_globe"
-			}]
+			tasks: [
+				{
+					id: "01D04DDE6D25A335"
+					type: "item"
+					item: "ad_astra:earth_globe"
+				}
+			]
+			rewards: [
+				{
+					id: "474F63CEE27D89D4"
+					type: "item"
+					item: "ad_astra:moon_globe"
+				}
+			]
 		}
 		{
 			x: -1.0d
 			y: -1.5d
-			subtitle: "{chapter.2.quest.34.subtitle}"
+			subtitle: "{ftbquests.chapter.chapter_2.quests31.subtitle}"
 			description: [
-				"&6Mechanical Saws&r can cut whole trees in one swoop!"
+				"{ftbquests.chapter.chapter_2.quests31.description0}"
 				""
-				"If the Mechanical Saw destroys all the bottommost logs of the tree, it will destroy all logs and leaves of the tree above!"
+				"{ftbquests.chapter.chapter_2.quests31.description2}"
 			]
 			dependencies: ["4EB4838CCED125E2"]
 			id: "0E7A9F741823BB1C"
-			tasks: [{
-				id: "0AE62A2EB5C01889"
-				type: "item"
-				item: "create:mechanical_saw"
-			}]
+			tasks: [
+				{
+					id: "0AE62A2EB5C01889"
+					type: "item"
+					item: "create:mechanical_saw"
+				}
+			]
 		}
 		{
-			title: "{chapter.2.quest.35.title}"
+			title: "{ftbquests.chapter.chapter_2.quests32.title}"
 			x: -0.5d
 			y: -2.5d
 			shape: "pentagon"
-			subtitle: "{chapter.2.quest.35.subtitle}"
+			subtitle: "{ftbquests.chapter.chapter_2.quests32.subtitle}"
 			dependencies: ["0E7A9F741823BB1C"]
 			id: "4881D5FF815609C3"
-			tasks: [{
-				id: "2F0FF11646ED9D1C"
-				type: "item"
-				title: "{chapter.2.quest.35.task.1.title}"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "minecraft:logs"
+			tasks: [
+				{
+					id: "2F0FF11646ED9D1C"
+					type: "item"
+					title: "{ftbquests.chapter.chapter_2.quests32.tasks0.title}"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:logs"
+						}
 					}
+					count: 100L
 				}
-				count: 100L
-			}]
+			]
 			rewards: [
 				{
 					id: "6339032CF14E63E3"
@@ -1193,122 +1287,143 @@
 		{
 			x: 0.0d
 			y: -1.5d
-			subtitle: "{chapter.2.quest.36.subtitle}"
-			description: ["{chapter.2.quest.36.description.1}"]
+			subtitle: "{ftbquests.chapter.chapter_2.quests33.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_2.quests33.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_2.quests33.description3}"
+			]
 			dependencies: ["4EB4838CCED125E2"]
 			id: "5A0C01D3ED5C49D4"
-			tasks: [{
-				id: "5E3F778EEE449FC5"
-				type: "item"
-				item: "create:encased_fan"
-			}]
+			tasks: [
+				{
+					id: "5E3F778EEE449FC5"
+					type: "item"
+					item: "create:encased_fan"
+				}
+			]
 		}
 		{
-			title: "{chapter.2.quest.37.title}"
+			title: "{ftbquests.chapter.chapter_2.quests34.title}"
 			icon: "minecraft:blast_furnace"
 			x: 0.5d
 			y: -2.5d
-			subtitle: "&6Info Dump Inside!&r"
+			subtitle: "{ftbquests.chapter.chapter_2.quests34.subtitle}"
 			description: [
-				"When air pushed/pulled by a Mechanical Fan passes through certain blocks, the air current gains special properties."
+				"{ftbquests.chapter.chapter_2.quests34.description0}"
 				""
-				"This can be used for &6Bulk Processing&r items dropped on the ground, on Depots or on Belts."
+				"{ftbquests.chapter.chapter_2.quests34.description2}"
 				""
-				"> &6Bulk Washing&r - when air passes through Water."
+				"{ftbquests.chapter.chapter_2.quests34.description4}"
 				""
-				"Washing Raw Ores will yield you Nuggets and sometimes a byproduct."
-				"You can also use washing for specific stuff that normally requires Water, like converting Concrete Powder into Concrete, or Flour into Dough."
+				"{ftbquests.chapter.chapter_2.quests34.description6}"
+				"{ftbquests.chapter.chapter_2.quests34.description7}"
 				""
-				"> &6Bulk Blasting&r - when air passes through Lava."
+				"{ftbquests.chapter.chapter_2.quests34.description9}"
 				""
-				"This stream of air can smelt things smeltable in a Furnace or a Blast Furnace."
-				"If an item isn't smeltable, it will be &nincinerated&r instead."
-				"BEWARE: The air is too hot for cooking food, the food will be &nincinerated&r too!"
+				"{ftbquests.chapter.chapter_2.quests34.description11}"
+				"{ftbquests.chapter.chapter_2.quests34.description12}"
+				"{ftbquests.chapter.chapter_2.quests34.description13}"
 				""
-				"> &6Bulk Smoking&r - when air passes through Fire or a Campfire."
+				"{ftbquests.chapter.chapter_2.quests34.description15}"
 				""
-				"This stream of air can cook food, just like Smoker or a Campfire does."
+				"{ftbquests.chapter.chapter_2.quests34.description17}"
 			]
 			dependencies: ["5A0C01D3ED5C49D4"]
 			min_width: 300
 			id: "1FFB7970C388204C"
-			tasks: [{
-				id: "1A528CDF4DA51B41"
-				type: "checkmark"
-				title: "{chapter.2.quest.37.task.1.title}"
-			}]
-			rewards: [{
-				id: "220200620D9BA6CF"
-				type: "xp"
-				xp: 100
-			}]
+			tasks: [
+				{
+					id: "1A528CDF4DA51B41"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_2.quests34.tasks0.title}"
+				}
+			]
+			rewards: [
+				{
+					id: "220200620D9BA6CF"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
 			x: 0.5d
 			y: 4.5d
-			subtitle: "{chapter.2.quest.38.subtitle}"
+			subtitle: "{ftbquests.chapter.chapter_2.quests35.subtitle}"
 			description: [
-				"Are you annoyed at Gearboxes reversing rotation? And Belts aren't very bendable?"
+				"{ftbquests.chapter.chapter_2.quests35.description0}"
 				""
-				"&6Encased Chain Drives&r solve the problem. "
+				"{ftbquests.chapter.chapter_2.quests35.description2}"
 				""
-				"Placing them next to each other causes them to spin in the same direction."
+				"{ftbquests.chapter.chapter_2.quests35.description4}"
 				""
-				"Additionally, Encased Chain Drives can change axis."
+				"{ftbquests.chapter.chapter_2.quests35.description6}"
 			]
 			dependencies: ["604CF717881C323A"]
 			id: "3BC959B431460B3E"
-			tasks: [{
-				id: "6AB8ACEC187A2696"
-				type: "item"
-				item: "create:encased_chain_drive"
-			}]
-			rewards: [{
-				id: "0584F4786C257952"
-				type: "item"
-				item: "create:encased_chain_drive"
-				count: 6
-			}]
+			tasks: [
+				{
+					id: "6AB8ACEC187A2696"
+					type: "item"
+					item: "create:encased_chain_drive"
+				}
+			]
+			rewards: [
+				{
+					id: "0584F4786C257952"
+					type: "item"
+					item: "create:encased_chain_drive"
+					count: 6
+				}
+			]
 		}
 		{
 			x: 0.5d
 			y: 6.5d
-			subtitle: "{chapter.2.quest.39.subtitle}"
+			subtitle: "{ftbquests.chapter.chapter_2.quests36.subtitle}"
 			description: [
-				"&6Gearboxes&r allow you to easily and compactly make turns in your rotational network."
+				"{ftbquests.chapter.chapter_2.quests36.description0}"
 				""
-				"They may be expensive, but they are extremely convenient."
+				"{ftbquests.chapter.chapter_2.quests36.description2}"
 			]
 			dependencies: ["604CF717881C323A"]
 			id: "16B52EB613255A4E"
-			tasks: [{
-				id: "05717BB30821DD97"
-				type: "item"
-				item: "create:gearbox"
-			}]
-			rewards: [{
-				id: "719847700014D8D3"
-				type: "item"
-				item: "create:gearbox"
-				count: 6
-			}]
+			tasks: [
+				{
+					id: "05717BB30821DD97"
+					type: "item"
+					item: "create:gearbox"
+				}
+			]
+			rewards: [
+				{
+					id: "719847700014D8D3"
+					type: "item"
+					item: "create:gearbox"
+					count: 6
+				}
+			]
 		}
 		{
 			x: 0.5d
 			y: 5.5d
-			subtitle: "{chapter.2.quest.40.subtitle}"
+			subtitle: "{ftbquests.chapter.chapter_2.quests37.subtitle}"
 			description: [
-				"Is your farm spilling items or needlessly using SU?"
+				"{ftbquests.chapter.chapter_2.quests37.description0}"
 				""
-				"&6Clutches&r come in clutch. Powering Clutches with Redstone will stop rotation."
+				"{ftbquests.chapter.chapter_2.quests37.description2}"
 			]
 			dependencies: ["604CF717881C323A"]
 			id: "2091C55A386F75AB"
-			tasks: [{
-				id: "345E2CF0447592DE"
-				type: "item"
-				item: "create:clutch"
-			}]
+			tasks: [
+				{
+					id: "345E2CF0447592DE"
+					type: "item"
+					item: "create:clutch"
+				}
+			]
 			rewards: [
 				{
 					id: "23B75B415E6531E5"
@@ -1327,49 +1442,63 @@
 		{
 			x: -10.0d
 			y: 2.0d
-			subtitle: "{chapter.2.quest.41.subtitle}"
-			description: ["{chapter.2.quest.41.description.1}"]
+			subtitle: "{ftbquests.chapter.chapter_2.quests38.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_2.quests38.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_2.quests38.description3}"
+				""
+				""
+				"{ftbquests.chapter.chapter_2.quests38.description6}"
+			]
 			hide_dependency_lines: true
 			dependencies: ["0A5DC78719B9A244"]
 			id: "0E28273A4D119B81"
-			tasks: [{
-				id: "4842B54099B4114B"
-				type: "item"
-				item: {
-					id: "create:super_glue"
-					Count: 1b
-					tag: {
-						Damage: 0
+			tasks: [
+				{
+					id: "4842B54099B4114B"
+					type: "item"
+					item: {
+						id: "create:super_glue"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
 					}
 				}
-			}]
-			rewards: [{
-				id: "38DF6AA8C288E420"
-				type: "item"
-				item: "minecraft:slime_block"
-			}]
+			]
+			rewards: [
+				{
+					id: "38DF6AA8C288E420"
+					type: "item"
+					item: "minecraft:slime_block"
+				}
+			]
 		}
 		{
-			title: "{chapter.2.quest.42.title}"
+			title: "{ftbquests.chapter.chapter_2.quests39.title}"
 			x: -3.125d
 			y: 1.25d
 			shape: "gear"
-			subtitle: "{chapter.2.quest.42.subtitle}"
+			subtitle: "{ftbquests.chapter.chapter_2.quests39.subtitle}"
 			description: [
-				"The &6Wrench&r allows you to rotate and configure Create blocks."
+				"{ftbquests.chapter.chapter_2.quests39.description0}"
 				""
-				"It can also:"
-				"- Instantly dismantle Create and Redstone-related blocks - the dismantled blocks go directly into your inventory"
-				"- Configure some blocks (like the Linear Chassis)"
+				"{ftbquests.chapter.chapter_2.quests39.description2}"
+				"{ftbquests.chapter.chapter_2.quests39.description3}"
+				"{ftbquests.chapter.chapter_2.quests39.description4}"
 			]
 			dependencies: ["6499CD689863283D"]
 			size: 1.25d
 			id: "0C6D01057E4E29FC"
-			tasks: [{
-				id: "78CC75D171BB7AE8"
-				type: "item"
-				item: "create:wrench"
-			}]
+			tasks: [
+				{
+					id: "78CC75D171BB7AE8"
+					type: "item"
+					item: "create:wrench"
+				}
+			]
 			rewards: [
 				{
 					id: "5ABAC2209006E1A0"
@@ -1386,73 +1515,86 @@
 			]
 		}
 		{
-			title: "{chapter.2.quest.43.title}"
+			title: "{ftbquests.chapter.chapter_2.quests40.title}"
 			icon: "create:wrench"
 			x: -2.0d
 			y: 12.5d
 			shape: "pentagon"
-			subtitle: "{chapter.2.quest.43.subtitle}"
+			subtitle: "{ftbquests.chapter.chapter_2.quests40.subtitle}"
 			description: [
-				"The world of &6Create&r is one of machinery, industry, and automation, and is the backbone of this modpack."
+				"{ftbquests.chapter.chapter_2.quests40.description0}"
 				""
-				"This chapter will introduce you to the basics of Create and what new blocks are available to you."
+				"{ftbquests.chapter.chapter_2.quests40.description2}"
 				""
-				"Due to the scope of Create, this questbook can not cover the full extent of Create knowledge."
+				"{ftbquests.chapter.chapter_2.quests40.description4}"
 				""
-				"Thankfully, Create offers a &6Ponder&r feature - hover over any Create block - whether in your inventory or in the REI screen - and hold [w] for a detailed explanation of how its mechanics function."
+				"{ftbquests.chapter.chapter_2.quests40.description6}"
 				""
-				"If this still isn't enough, feel free to look up videos - resourcefulness is a trait to be proud of!"
+				"{ftbquests.chapter.chapter_2.quests40.description8}"
 				""
-				"Each successive chapter will introduce more complicated recipes and materials, challenging you to create bigger and more intricate manufacturing setups."
+				"{ftbquests.chapter.chapter_2.quests40.description10}"
 				""
-				"The reward will be access to the cosmos above."
+				"{ftbquests.chapter.chapter_2.quests40.description12}"
 			]
 			dependencies: ["1337920DA45E72AD"]
 			hide: true
 			size: 2.5d
 			id: "5BE7EBA598FD5EE0"
-			tasks: [{
-				id: "032EAA934B34EED4"
-				type: "checkmark"
-				title: "{chapter.2.quest.43.task.1.title}"
-			}]
-			rewards: [{
-				id: "04356BEE19FBF2E4"
-				type: "xp"
-				xp: 100
-			}]
+			tasks: [
+				{
+					id: "032EAA934B34EED4"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_2.quests40.tasks0.title}"
+				}
+			]
+			rewards: [
+				{
+					id: "04356BEE19FBF2E4"
+					type: "xp"
+					xp: 100
+				}
+			]
 		}
 		{
 			x: -8.0d
 			y: 0.5d
-			subtitle: "{chapter.2.quest.44.subtitle}"
+			subtitle: "{ftbquests.chapter.chapter_2.quests41.subtitle}"
 			dependencies: ["1579C73B735F06F8"]
 			id: "4E17A29F84247877"
-			tasks: [{
-				id: "0FB3C74D1CF20AF1"
-				type: "item"
-				item: "create:controls"
-			}]
+			tasks: [
+				{
+					id: "0FB3C74D1CF20AF1"
+					type: "item"
+					item: "create:controls"
+				}
+			]
 		}
 		{
 			x: -9.0d
 			y: 1.5d
-			subtitle: "{chapter.2.quest.45.subtitle}"
-			description: ["{chapter.2.quest.45.description.1}"]
+			subtitle: "{ftbquests.chapter.chapter_2.quests42.subtitle}"
+			description: ["{ftbquests.chapter.chapter_2.quests42.description}"]
 			dependencies: ["1579C73B735F06F8"]
 			id: "31B9F34B69172C02"
-			tasks: [{
-				id: "6869CF716EC9137A"
-				type: "item"
-				item: "create:track_station"
-			}]
+			tasks: [
+				{
+					id: "6869CF716EC9137A"
+					type: "item"
+					item: "create:track_station"
+				}
+			]
 		}
 		{
-			title: "{chapter.2.quest.46.title}"
+			title: "{ftbquests.chapter.chapter_2.quests43.title}"
 			x: -10.0d
 			y: -2.0d
-			subtitle: "{chapter.2.quest.46.subtitle}"
-			description: ["{chapter.2.quest.46.description.1}"]
+			subtitle: "{ftbquests.chapter.chapter_2.quests43.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_2.quests43.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_2.quests43.description3}"
+			]
 			dependencies: ["36129D7A46CC6F6D"]
 			optional: true
 			id: "4525F3F3177D72B8"
@@ -1475,15 +1617,15 @@
 			]
 		}
 		{
-			title: "{chapter.2.quest.47.title}"
+			title: "{ftbquests.chapter.chapter_2.quests44.title}"
 			icon: "minecraft:bedrock"
 			x: -4.0d
 			y: 12.5d
-			subtitle: "{chapter.2.quest.47.subtitle}"
+			subtitle: "{ftbquests.chapter.chapter_2.quests44.subtitle}"
 			description: [
-				"Flowing Lava touching Water over Bedrock will produce mixed varieties of stone types. You may be familiar with this setup from other modpacks!"
+				"{ftbquests.chapter.chapter_2.quests44.description0}"
 				""
-				"&6Stone&r is primarily produced, with chances of obtaining &6Andesite, Granite and Diorite&r."
+				"{ftbquests.chapter.chapter_2.quests44.description2}"
 				""
 			]
 			dependencies: ["5BE7EBA598FD5EE0"]
@@ -1492,7 +1634,7 @@
 				{
 					id: "35684AEA414C5246"
 					type: "checkmark"
-					title: "{chapter.2.quest.47.task.1.title}"
+					title: "{ftbquests.chapter.chapter_2.quests44.tasks0.title}"
 				}
 				{
 					id: "65DD979F7CE1FDE8"
@@ -1507,72 +1649,82 @@
 			]
 		}
 		{
-			title: "Basket-ball"
+			title: "{ftbquests.chapter.chapter_2.quests45.title}"
 			x: 0.0d
 			y: 12.5d
-			subtitle: "Can't catch Cobblestone? Basket will do this for you."
+			subtitle: "{ftbquests.chapter.chapter_2.quests45.subtitle}"
 			description: [
-				"Baskets can store 27 stacks of items (like a normal chest or barrel) and can pick up dropped items 1 block ahead of its open end."
+				"{ftbquests.chapter.chapter_2.quests45.description0}"
 				""
-				"Baskets can be placed in all 6 directions."
+				"{ftbquests.chapter.chapter_2.quests45.description2}"
 				""
-				"They can be also waterlogged."
+				"{ftbquests.chapter.chapter_2.quests45.description4}"
 				""
-				"You will surely find them useful in your Cobblestone generator!"
+				"{ftbquests.chapter.chapter_2.quests45.description6}"
 			]
 			dependencies: ["5BE7EBA598FD5EE0"]
 			id: "1978741F9D5A9499"
-			tasks: [{
-				id: "77619E5A0573E6BD"
-				type: "item"
-				item: "farmersdelight:basket"
-			}]
-			rewards: [{
-				id: "7480A0164889D83F"
-				type: "item"
-				item: "farmersdelight:basket"
-			}]
+			tasks: [
+				{
+					id: "77619E5A0573E6BD"
+					type: "item"
+					item: "farmersdelight:basket"
+				}
+			]
+			rewards: [
+				{
+					id: "7480A0164889D83F"
+					type: "item"
+					item: "farmersdelight:basket"
+				}
+			]
 		}
 		{
-			title: "Free Train Signals for everyone!"
+			title: "{ftbquests.chapter.chapter_2.quests46.title}"
 			icon: "create:track_signal"
 			x: -11.5d
 			y: -0.5d
 			shape: "gear"
-			subtitle: "You get a Train Signal and You get a Signal! All of y'all get some Train Signals!"
+			subtitle: "{ftbquests.chapter.chapter_2.quests46.subtitle}"
 			description: [
-				"Placing a Train Signal facing outwards and Inwards to your base assures that automatic Trains can work"
-				"You get 16 for free just for that purpose."
+				"{ftbquests.chapter.chapter_2.quests46.description0}"
+				"{ftbquests.chapter.chapter_2.quests46.description1}"
 			]
 			dependencies: ["0AF596BE70DCA925"]
 			hide: true
 			optional: true
 			id: "47D1586DACB759D3"
-			tasks: [{
-				id: "5CBA3CBB4160C6E0"
-				type: "checkmark"
-				title: "I need my Signals!"
-			}]
-			rewards: [{
-				id: "0CAB1CCB1AE99102"
-				type: "item"
-				item: "create:track_signal"
-				count: 16
-			}]
+			tasks: [
+				{
+					id: "5CBA3CBB4160C6E0"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_2.quests46.tasks0.title}"
+				}
+			]
+			rewards: [
+				{
+					id: "0CAB1CCB1AE99102"
+					type: "item"
+					item: "create:track_signal"
+					count: 16
+				}
+			]
 		}
 		{
 			icon: "railways:track_monorail"
 			x: -6.5d
 			y: -1.5d
-			subtitle: "&mTRAINS!!&r Monorails?"
-			description: ["Stonecut regular Tracks to get their variants!"]
+			subtitle: "{ftbquests.chapter.chapter_2.quests47.subtitle}"
+			description: ["{ftbquests.chapter.chapter_2.quests47.description}"]
 			dependencies: ["67AA35D9D18AD64B"]
 			id: "31808F43F7804B7C"
-			tasks: [{
-				id: "484EC88E03BAEA74"
-				type: "checkmark"
-				title: "Track Variants"
-			}]
+			tasks: [
+				{
+					id: "484EC88E03BAEA74"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_2.quests47.tasks0.title}"
+				}
+			]
 			rewards: [
 				{
 					id: "367325E57D90CF2D"
@@ -1595,138 +1747,169 @@
 			]
 		}
 		{
-			title: "Pressmarine Shards"
+			title: "{ftbquests.chapter.chapter_2.quests48.title}"
 			x: -3.0d
 			y: 3.0d
 			description: [
-				"You can press &6Coral varieties&r into Prismarine."
+				"{ftbquests.chapter.chapter_2.quests48.description0}"
 				""
-				"Useful is automating Veridium (for Copper) later on, it would be wise to consider learning the recipe chains in REI!"
+				"{ftbquests.chapter.chapter_2.quests48.description2}"
 			]
 			dependencies: ["6499CD689863283D"]
 			id: "0FDA89BAC13B5687"
-			tasks: [{
-				id: "6DEC64FC4FF81F5B"
-				type: "item"
-				item: "minecraft:prismarine_shard"
-			}]
-			rewards: [{
-				id: "172C5457621E02AA"
-				type: "item"
-				item: "minecraft:prismarine_shard"
-				count: 16
-			}]
+			tasks: [
+				{
+					id: "6DEC64FC4FF81F5B"
+					type: "item"
+					item: "minecraft:prismarine_shard"
+				}
+			]
+			rewards: [
+				{
+					id: "172C5457621E02AA"
+					type: "item"
+					item: "minecraft:prismarine_shard"
+					count: 16
+				}
+			]
 		}
 		{
 			x: -4.0d
 			y: -3.5d
-			subtitle: "Let's go gambling!"
+			subtitle: "{ftbquests.chapter.chapter_2.quests49.subtitle}"
 			description: [
-				"[Efficiency IV] Oh, dang it!"
-				"[Unbreaking III] Oh, dang it!"
-				"[Curse of Annihilation] Oh, dang it!"
+				"{ftbquests.chapter.chapter_2.quests49.description0}"
+				"{ftbquests.chapter.chapter_2.quests49.description1}"
+				"{ftbquests.chapter.chapter_2.quests49.description2}"
 				""
-				"&6Enchanting Tables&r allow you to randomly enhance your tools and armor using Experience and Lapis Lazuli."
+				"{ftbquests.chapter.chapter_2.quests49.description4}"
 				""
-				"Make sure to prepare a Grindstone (for scrapping terrible enchantments) and an Anvil (for combining enchanted items) too."
+				"{ftbquests.chapter.chapter_2.quests49.description6}"
 			]
 			dependencies: ["605ECFFA4F1C2736"]
 			id: "30A419DD34E02268"
-			tasks: [{
-				id: "5DBB517949D1F4E6"
-				type: "item"
-				item: "minecraft:enchanting_table"
-			}]
+			tasks: [
+				{
+					id: "5DBB517949D1F4E6"
+					type: "item"
+					item: "minecraft:enchanting_table"
+				}
+			]
 		}
 		{
 			x: -0.5d
 			y: 0.0d
-			subtitle: "Time for an upgrade!"
+			subtitle: "{ftbquests.chapter.chapter_2.quests50.subtitle}"
 			description: [
-				"Iron tools are more durable than Copper tools."
+				"{ftbquests.chapter.chapter_2.quests50.description0}"
 				""
-				"They won't let you mine Diamonds, however."
+				"{ftbquests.chapter.chapter_2.quests50.description2}"
 				""
-				"You'll need to resort to some Create-ive ideas to get those sweet Diamonds from the ore."
+				"{ftbquests.chapter.chapter_2.quests50.description4}"
 			]
 			dependencies: ["4EB4838CCED125E2"]
 			id: "40A871AE63A59C68"
-			tasks: [{
-				id: "18D669027BCDC506"
-				type: "item"
-				item: {
-					id: "minecraft:iron_pickaxe"
-					Count: 1b
-					tag: {
-						Damage: 0
+			tasks: [
+				{
+					id: "18D669027BCDC506"
+					type: "item"
+					item: {
+						id: "minecraft:iron_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
 					}
 				}
-			}]
+			]
 		}
 		{
-			title: "Bigger Water Wheels"
+			title: "{ftbquests.chapter.chapter_2.quests51.title}"
 			x: 0.5d
 			y: 3.0d
 			dependencies: ["35F1B635057746F0"]
 			id: "252F754ED993B1C2"
-			tasks: [{
-				id: "523018978C3785DD"
-				type: "item"
-				item: "create:large_water_wheel"
-			}]
+			tasks: [
+				{
+					id: "523018978C3785DD"
+					type: "item"
+					item: "create:large_water_wheel"
+				}
+			]
 		}
 		{
-			title: "&e[Optional Questline] Astral Signals"
+			title: "{ftbquests.chapter.chapter_2.quests52.title}"
 			x: 1.5d
 			y: 2.0d
 			shape: "hexagon"
-			subtitle: "Discover a lost receiver to show this questline."
+			subtitle: "{ftbquests.chapter.chapter_2.quests52.subtitle}"
 			description: [
-				"These can be discovered through specific structures in the Overworld..."
+				"{ftbquests.chapter.chapter_2.quests52.description0}"
 				""
-				"Keep an eye out for any &eruined satellite dishes,&r they just might hold something important."
+				"{ftbquests.chapter.chapter_2.quests52.description2}"
 			]
 			dependencies: ["6499CD689863283D"]
 			size: 1.5d
 			id: "0BCFACD1E9B83FA3"
-			tasks: [{
-				id: "08B8D561B0403E2C"
-				type: "item"
-				item: "astralsignals:ancient_receiver"
-			}]
-			rewards: [{
-				id: "55B0F6BDE39ABB9D"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 5687404501397719867L
-			}]
+			tasks: [
+				{
+					id: "08B8D561B0403E2C"
+					type: "item"
+					item: "astralsignals:ancient_receiver"
+				}
+			]
+			rewards: [
+				{
+					id: "55B0F6BDE39ABB9D"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5687404501397719867L
+				}
+			]
 		}
 		{
 			x: -8.5d
 			y: 3.0d
 			shape: "gear"
-			subtitle: "{chapter.5.quest.66.subtitle}"
-			description: ["{chapter.5.quest.66.description.1}"]
+			subtitle: "{ftbquests.chapter.chapter_2.quests53.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_2.quests53.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_2.quests53.description3}"
+				""
+				""
+				"{ftbquests.chapter.chapter_2.quests53.description6}"
+			]
 			dependencies: ["0873D71412D52F18"]
 			id: "1D294F2F189410BD"
-			tasks: [{
-				id: "0C573B0469B99101"
-				type: "item"
-				item: "create:stockpile_switch"
-			}]
+			tasks: [
+				{
+					id: "0C573B0469B99101"
+					type: "item"
+					item: "create:stockpile_switch"
+				}
+			]
 		}
 		{
 			x: -7.5d
 			y: 3.0d
-			subtitle: "{chapter.5.quest.70.subtitle}"
-			description: ["{chapter.5.quest.70.description.1}"]
+			subtitle: "{ftbquests.chapter.chapter_2.quests54.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_2.quests54.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_2.quests54.description3}"
+			]
 			dependencies: ["1579C73B735F06F8"]
 			id: "0873D71412D52F18"
-			tasks: [{
-				id: "39CD77A35EB1ABBD"
-				type: "item"
-				item: "create:content_observer"
-			}]
+			tasks: [
+				{
+					id: "39CD77A35EB1ABBD"
+					type: "item"
+					item: "create:content_observer"
+				}
+			]
 		}
 	]
 	quest_links: [ ]

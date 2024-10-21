@@ -1,5 +1,5 @@
 {
-    "name": "Parallel Processing Decryptor",
+    "name": "custommachinery.astralsignals.pp_decryptor",
     "appearance": {
         "block": "astralsignals:pp_decryptor_dummy"
     },
@@ -43,7 +43,7 @@
             "type": "custommachinery:status"
         },
         {
-            "text": "Parallel Processing Decryptor",
+            "text": "custommachinery.astralsignals.pp_decryptor.text",
             "x": 7,
             "y": 5,
             "type": "custommachinery:text"

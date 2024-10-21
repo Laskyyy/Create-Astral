@@ -1,5 +1,5 @@
 {
-  "name": "Stone Growth Chamber",
+  "name": "custommachinery.createastral.stone_growth_chamber",
   "appearance": {
     "block": "createastral:stone_growth_chamber_dummy",
     "running": {
@@ -25,7 +25,7 @@
       "type": "custommachinery:slot"
     },
     {
-      "text": "Stone Growth Chamber",
+      "text": "custommachinery.createastral.stone_growth_chamber.text",
       "x": 7,
       "y": 5,
       "type": "custommachinery:text"
