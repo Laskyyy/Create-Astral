@@ -6,7 +6,7 @@
 		{
 			"type": "custommachinery:structure",
 			"keys": {
-				"a": "createastral:stone_growth_chamber/building_blocks/cobblestone",
+				"a": "createastral:stone_growth_chamber/building_blocks/mars_cobblestone",
 				"l": "minecraft:lava",
 				"g": "createastral:stone_growth_chamber/glass_blocks"
 			},
@@ -30,7 +30,7 @@
 		},
 		{
 			"type": "custommachinery:item",
-			"item": "minecraft:cobblestone",
+			"item": "ad_astra:mars_cobblestone",
 			"amount": 1,
 			"mode": "output"
 		}
