@@ -1,0 +1,29 @@
+{
+    "display": {
+      "icon": {
+        "item": "yttr:nethertuff"
+      },
+      "title": {
+        "translate": "advancements.ad_astra.interstellar.title"
+      },
+      "description": {
+        "translate": "advancements.ad_astra.interstellar.description"
+      },
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+      "interstellar": {
+        "trigger": "minecraft:changed_dimension",
+        "conditions": {
+          "to": "minecraft:the_nether"
+        }
+      }
+    },
+    "rewards": {
+      "experience": 200
+    },
+    "parent": "ad_astra:tier_4_rocket"
+  }
