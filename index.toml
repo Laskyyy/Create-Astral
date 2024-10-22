@@ -5438,7 +5438,7 @@ hash = "6aa0a322a4f49fac6f1993d6c903f316497588310188db7a32c4ad1fe0b674bd"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/estrogen/recipes/mixing/molten_amethyst.json"
-hash = "bd28d8916c097efdf97f5bcf153887048dce6ffcabedac0ee50f28f29238f9e5"
+hash = "39ac9a9214d01c0dffdaa80a54e2c95c761525f2eaa5ca0e32b24b40a013cb85"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/extractinator/recipes/extractinating/cobblestone.json"
@@ -10177,6 +10177,10 @@ file = "global_packs/required_data/zTConstructAstra/data/tconstruct/recipes/smel
 hash = "67dc99560e452703487dc43afdc002396641e1f8f6f0f4d0c0f874396589c555"
 
 [[files]]
+file = "global_packs/required_data/zTConstructAstra/data/tconstruct/recipes/smeltery/melting/blazingblood/blaze_burner.json"
+hash = "d4329a007484f399741ce2e14a4acff93cd1bdace06c3db819e57252d2748fbe"
+
+[[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/recipes/smeltery/melting/blood/cod.json"
 hash = "4fd8728f2e72073b51a72b7799769fc1009b84dc069709c11b9d8446406e0508"
 
@@ -12498,15 +12502,15 @@ hash = "b740c0f8eb538b59a8dab15b1b8be1c25db6a05f00f3483c0f7d683a52475273"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/recipes/smeltery/melting/metal/tin/ore_dense.json"
-hash = "1c726b71c7aad79910940678699025f0b5034156aeef91bbdeeea55d5db52b97"
+hash = "7457c36535b2ba7bf840212d0ae1a8c00400bb0e40000d1533c23083dfac7737"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/recipes/smeltery/melting/metal/tin/ore_singular.json"
-hash = "8325d66a8f5cf014deb35825e9011e251b0837577d0facc0ec96ff7a8e60eab0"
+hash = "784bc6a62ade342372ca86a230715e0a3e13585f9d971d823daaaad25ff6475d"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/recipes/smeltery/melting/metal/tin/ore_sparse.json"
-hash = "fddccb4a4e91b7466c509d10467bbc1f1aa634f543012c5043b5417386584d6d"
+hash = "f4714ecf707e912e6d1034e143422c126e60da549d5e547c03f5251c0afb41d4"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/recipes/smeltery/melting/metal/tin/plates.json"
@@ -12514,11 +12518,11 @@ hash = "9766e528c29f1e964d0d91887402f8274b220cb3a1a0654eb06b19732b7f4614"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/recipes/smeltery/melting/metal/tin/raw.json"
-hash = "0e33453afc8205984aeaab47cc099cc869d97cd1f0239435c6c059a26f24ff52"
+hash = "b3b7152b76c7e1fdb4d50d05e303ece3f90af5a753b6eec827bb0ff0799b98ef"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/recipes/smeltery/melting/metal/tin/raw_block.json"
-hash = "e63b7097bd845845ae8436ad353d8db62709fa8ef3e2da02b32cefaaaeed1efc"
+hash = "7e6f892a57caa504c001aff346d3ca298deed9e78e7eed59e19621618e507b90"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/recipes/smeltery/melting/metal/tin/rod.json"
@@ -14462,7 +14466,7 @@ hash = "fb1762412729b1f27c98944d8806f2e7bef5bdcc2efb9de1481c5e80c2654a2f"
 
 [[files]]
 file = "kubejs/client_scripts/script.js"
-hash = "64c324fde1441426ba20e407215a249937ce72786d00dbbdb6eb91d55a977a64"
+hash = "b5fc76348fe00a854718d39f45b122c83c85815184cfad89195197b279b1478a"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -14482,7 +14486,7 @@ hash = "cdc1eb02684b70f15631ea298e5094dad4caf6e54e043b594163650ea9c5784e"
 
 [[files]]
 file = "kubejs/server_scripts/Bloodyfile.js"
-hash = "15b56c5f71794678a590bbe11e90af9b26512604a442dee5443ae836a61e0146"
+hash = "7d501bd61f165c7aad07b648e73d073dcdd3af3a29c4293678c54f8c93022eb1"
 
 [[files]]
 file = "kubejs/server_scripts/astral_generators.js"
@@ -14514,11 +14518,11 @@ hash = "3d25fbc7eebba3b3fc689af80450025e75e29c825e16d1d1266c1da2b578051b"
 
 [[files]]
 file = "kubejs/server_scripts/crowsrecipes.js"
-hash = "ddfae19c0d57de2f12305cc9aff9c5c1a1bb7ddc4453c093a5a5fe7e5b388048"
+hash = "ec9526589148f6dd97a141243965d7d6c3a7c4b3a0c83624301ece245b5aaa7c"
 
 [[files]]
 file = "kubejs/server_scripts/crushing.js"
-hash = "24a8bcac1a1a19feefd22ee89a0c58cd92056f662ca4312a75c6bb8bdaacebb2"
+hash = "ebc76e04e052e48d22ae65cb622f35961b9e666d5d79070917c338a74cf395e9"
 
 [[files]]
 file = "kubejs/server_scripts/deathofinfinity.js"
@@ -14570,7 +14574,7 @@ hash = "1becce5642c6ca74f664127d62e3039cec9ac69a95b0e0f650113cd6fb56d393"
 
 [[files]]
 file = "kubejs/server_scripts/removals.js"
-hash = "535c890cfa9b6daebab3fbf19c9b833c6da7fae188a1f76ae189f92ba4cffc17"
+hash = "b4d0b907dc8adef444cc6a536d5f022416832c62344ad5b309e2e849899cf5d8"
 
 [[files]]
 file = "kubejs/server_scripts/replacements.js"
@@ -14602,7 +14606,7 @@ hash = "7880a338890070cb09d6c05f7d20d48c62e5bdffc488ad1225117d358fba24ef"
 
 [[files]]
 file = "kubejs/server_scripts/tags/for_recipes.js"
-hash = "6699846e21add4567812240e8c7c430a28aee690330eec0a6d1dfd6018db00f4"
+hash = "3388aa03f42f885517ab57f620381b55e817d81e9539b4b25137b8960867d973"
 
 [[files]]
 file = "kubejs/server_scripts/tags/graveReplaceBlacklist.js"
@@ -14646,7 +14650,7 @@ hash = "6d763aa6b59f72e849843cb84b2b1439c64374c2b8577d13a8ccca1a63df3f23"
 
 [[files]]
 file = "kubejs/startup_scripts/item_registry.js"
-hash = "063141897cb63795a7d88e3889e67ec98e72f2b5907b228c6b8b835f32dbd58d"
+hash = "a37a554673eecc99beb36ac4f342c52338ecf7f7f661794439fdd4f9ce0d6f02"
 
 [[files]]
 file = "kubejs/startup_scripts/item_tooltip.js"
@@ -14702,7 +14706,7 @@ metafile = true
 
 [[files]]
 file = "mods/astral-additions-for-create-astral.pw.toml"
-hash = "83a6ad8739ae5a6fd289c26d4a5b64d1c2d03df96ae1293e812094b8c62d387c"
+hash = "ae9e5d1b9a554740d8d46eb4ab2aafdab011e252f75f07fab8b15c1a3c2cc446"
 metafile = true
 
 [[files]]
@@ -29695,6 +29699,10 @@ hash = "c0254289b4dc70d984fe39d9a046cedad5bd8c3fbb08d7039d8551eec053c5fc"
 [[files]]
 file = "resources/createastral/textures/item/incomplete_basic_machine_frame1.png"
 hash = "07044bc288a3bb57d166420e0220f2f29e99a7d7a36444f2e9bf3b58abc6a89f"
+
+[[files]]
+file = "resources/createastral/textures/item/incomplete_blaze_head.png"
+hash = "047ae6dc6ed6cdd47d53c07c3e1b0867258b4edda03a96e9cab06d782942ac8d"
 
 [[files]]
 file = "resources/createastral/textures/item/incomplete_brass_casing.png"
