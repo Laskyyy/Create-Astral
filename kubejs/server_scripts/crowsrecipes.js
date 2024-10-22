@@ -60,4 +60,11 @@ onEvent("recipes", event => {
     ], "createastral:glowstone_clump")
     }
     event.shapeless("createastral:glowstone_catalyst", ["SGS", "GGG", "SGS"], {S: "#minecraft:slime_balls", G: "minecraft:glowstone"})
+    //make a dirt farm >> bedrock cobblegen
+    event.recipes.createMilling([
+        Item.of("techreborn:andesite_dust").withChance(0.4),
+        Item.of("techreborn:diorite_dust").withChance(0.3),
+        Item.of("techreborn:granite_dust").withChance(0.3),
+        Item.of("techreborn:calcite_dust").withChance(0.2)
+    ])
 })
