@@ -218,6 +218,9 @@ onEvent("item.registry", (event) => {
 
     // Transitional Items
     event
+        .create("createastral:incomplete_blaze_head", "create:sequenced_assembly")
+        .displayName("Incomplete Blaze Head");
+    event
         .create("createastral:incomplete_transitional_electronic_circuit", "create:sequenced_assembly")
         .displayName("Incomplete Electronic Circuit");
     event
