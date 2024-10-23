@@ -36,6 +36,7 @@ onEvent("item.registry", (event) => {
     event.create("createastral:star_shard").glow(true);
     event.create("createastral:pure_star_shard").glow(true).rarity("Epic");
     event.create("createastral:crushed_raw_gadolinite");
+    event.create("createastral:crushed_raw_cobalt");
     event.create("createastral:experience_ingot").glow(true);
     event.create("createastral:stone_dust").displayName("Stone Dust");
     event.create("createastral:stone_small_dust").displayName("Small Pile of Stone Dust");
@@ -114,6 +115,18 @@ onEvent("item.registry", (event) => {
                 .effect("haste", 1100, 4, 1)
                 .effect("health_boost", 1000, 3, 1)
                 .effect("saturation", 760, 2, 1)
+                .alwaysEdible();
+        });
+
+    event
+        .create("astralfoods:bulbas_tea")
+        .displayName("Bulba's Tea")
+        .maxStackSize(16)
+        .food((food) => {
+            food.hunger(2)
+                .saturation(1.2)
+                .effect("night_vision", 4800, 1, 1)
+                .effect("haste", 4800, 1, 1)
                 .alwaysEdible();
         });
 
@@ -204,6 +217,9 @@ onEvent("item.registry", (event) => {
     event.create("createastral:synthetic_slime");
 
     // Transitional Items
+    event
+        .create("createastral:incomplete_blaze_head", "create:sequenced_assembly")
+        .displayName("Incomplete Blaze Head");
     event
         .create("createastral:incomplete_transitional_electronic_circuit", "create:sequenced_assembly")
         .displayName("Incomplete Electronic Circuit");

@@ -1,5 +1,5 @@
 {
-  "name": "Gas Mixer",
+  "name": "custommachinery.createastral.gas_mixer",
   "appearance": {
     "block": "createastral:gas_mixer_dummy",
     "running": {
@@ -78,7 +78,7 @@
       "type": "custommachinery:status"
     },
     {
-      "text": "Gas Mixer",
+      "text": "custommachinery.createastral.gas_mixer.text",
       "x": 7,
       "y": 5,
       "type": "custommachinery:text"

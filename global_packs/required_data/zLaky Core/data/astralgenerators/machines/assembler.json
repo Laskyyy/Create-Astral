@@ -1,0 +1,169 @@
+{
+    "name": "custommachinery.astralgenerators.assembler",
+    "appearance": {
+        "block": "astralgenerators:assembler",
+        "running": {
+            "block": "astralgenerators:assembler[active=true]",
+            "lightlevel": 15
+        }
+    },
+    "gui": [
+        {
+            "texture": "custommachinery:textures/gui/base_background.png",
+            "x": 0,
+            "y": 0,
+            "type": "custommachinery:texture"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 110,
+            "y": 15,
+            "id": "slot1"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 130,
+            "y": 15,
+            "id": "slot2"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 150,
+            "y": 15,
+            "id": "slot3"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 110,
+            "y": 35,
+            "id": "slot4"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 130,
+            "y": 35,
+            "id": "slot5"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 150,
+            "y": 35,
+            "id": "slot6"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 110,
+            "y": 55,
+            "id": "slot7"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 130,
+            "y": 55,
+            "id": "slot8"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 150,
+            "y": 55,
+            "id": "slot9"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 198,
+            "y": 33,
+            "variant": "custommachinery:result",
+            "id": "output"
+        },
+        {
+            "x": 47,
+            "y": 80,
+            "type": "custommachinery:player_inventory"
+        },
+        {
+            "type": "custommachinery:energy",
+            "x": 20,
+            "y": 20,
+            "id": "energy"
+        },
+        {
+            "type": "custommachinery:progress",
+            "x": 170,
+            "y": 35
+        },
+        {
+            "text": "custommachinery.astralgenerators.assembler.text",
+            "x": 7,
+            "y": 5,
+            "type": "custommachinery:text"
+        },
+        {
+            "x": 236,
+            "y": 5,
+            "type": "custommachinery:status"
+        }
+    ],
+    "components": [
+        {
+            "type": "custommachinery:item",
+            "mode": "input",
+            "id": "slot1"
+        },
+        {
+            "type": "custommachinery:item",
+            "mode": "input",
+            "id": "slot2"
+        },
+        {
+            "type": "custommachinery:item",
+            "mode": "input",
+            "id": "slot3"
+        },
+        {
+            "type": "custommachinery:item",
+            "mode": "input",
+            "id": "slot4"
+        },
+        {
+            "type": "custommachinery:item",
+            "mode": "input",
+            "id": "slot5"
+        },
+        {
+            "type": "custommachinery:item",
+            "mode": "input",
+            "id": "slot6"
+        },
+        {
+            "type": "custommachinery:item",
+            "mode": "input",
+            "id": "slot7"
+        },
+        {
+            "type": "custommachinery:item",
+            "mode": "input",
+            "id": "slot8"
+        },
+        {
+            "type": "custommachinery:item",
+            "mode": "input",
+            "id": "slot9"
+        },
+        {
+            "type": "custommachinery:item",
+            "mode": "output",
+            "id": "output"
+        },
+        {
+            "type": "custommachinery:energy",
+            "capacity": "1000000",
+            "maxInput": "1000000000000",
+            "maxOutput": "1000000000000",
+            "id": "energy",
+            "config": {
+                "input": true,
+                "output": false
+            }
+        }
+    ]
+}

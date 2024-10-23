@@ -6,7 +6,7 @@
 		{
 			"type": "custommachinery:structure",
 			"keys": {
-				"a": "create:copper_casing",
+				"a": "ad_astra:polished_venus_stone",
 				"l": "minecraft:lava",
 				"g": "minecraft:glass"
 			},
@@ -14,12 +14,12 @@
 				[
 					"aaa",
 					"aaa",
-					"aaa"
+					"ama"
 				],
 				[
 					"ggg",
 					"glg",
-					"gmg"
+					"ggg"
 				],
 				[
 					"aaa",
@@ -33,11 +33,6 @@
 			"item": "ad_astra:venus_cobblestone",
 			"amount": 1,
 			"mode": "output"
-		},
-		{
-			"type": "custommachinery:dimension",
-			"filter": ["ad_astra:venus_orbit", "ad_astra:venus"],
-			"blacklist": false
 		}
 	]
 }

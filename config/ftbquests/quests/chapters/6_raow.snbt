@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 8
 	filename: "6_raow"
-	title: "{chapter.8.title}"
+	title: "{ftbquests.chapter.6_raow.title}"
 	icon: "createastral:subatomic_ingot"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -133,19 +133,21 @@
 		{
 			x: 21.0d
 			y: 5.0d
-			subtitle: "{chapter.8.quest.1.subtitle}"
+			subtitle: "{ftbquests.chapter.6_raow.quests0.subtitle}"
 			description: [
-				"Extremely brittle, but as fast as light, and with plenty of opportunity for upgrades. This material will have no competition by any other utility tool if utilised well..."
+				"{ftbquests.chapter.6_raow.quests0.description0}"
 				""
-				"Mix Radiant Residue with a Chromatic Compound to absorb the pure light into it. This produces Refined Radiance."
+				"{ftbquests.chapter.6_raow.quests0.description2}"
 			]
 			dependencies: ["65F77462CD1DFFDB"]
 			id: "1E93A90AEF614FA3"
-			tasks: [{
-				id: "49D7814698B13860"
-				type: "item"
-				item: "create:refined_radiance"
-			}]
+			tasks: [
+				{
+					id: "49D7814698B13860"
+					type: "item"
+					item: "create:refined_radiance"
+				}
+			]
 			rewards: [
 				{
 					id: "19F8F9A8C9D44884"
@@ -167,72 +169,90 @@
 			]
 		}
 		{
-			title: "{chapter.8.quest.2.title}"
+			title: "{ftbquests.chapter.6_raow.quests1.title}"
 			x: 21.75d
 			y: -1.5d
 			shape: "square"
-			subtitle: "{chapter.8.quest.2.subtitle}"
+			subtitle: "{ftbquests.chapter.6_raow.quests1.subtitle}"
 			description: [
-				"&6Refined Shimmer&r is a substance holding immense chromatic potential, but it's not quite there yet."
+				"{ftbquests.chapter.6_raow.quests1.description0}"
 				""
-				"By superheating all 16 Blaze Burners under the Shimmer Refinery, and pumping Shimmer + Refining Agents into its slots, you will begin to process Refined Shimmer."
+				"{ftbquests.chapter.6_raow.quests1.description2}"
 				""
-				"A Blaze Cake stockpile is recommended to obtain, as 16 Blaze Cakes is likely to fund ~30 Refined Shimmer if lit at once!"
+				"{ftbquests.chapter.6_raow.quests1.description4}"
 			]
 			dependencies: ["6E9849C1B2A2AA15"]
 			size: 1.5d
 			id: "00EB34849356498A"
-			tasks: [{
-				id: "0CD2F946292C0C82"
-				type: "item"
-				item: "techreborn:uu_matter"
-				count: 10L
-			}]
-			rewards: [{
-				id: "3A62FF88ADB2691F"
-				type: "item"
-				item: "farmersdelight:glow_berry_custard"
-				count: 8
-			}]
+			tasks: [
+				{
+					id: "0CD2F946292C0C82"
+					type: "item"
+					item: "techreborn:uu_matter"
+					count: 10L
+				}
+			]
+			rewards: [
+				{
+					id: "3A62FF88ADB2691F"
+					type: "item"
+					item: "farmersdelight:glow_berry_custard"
+					count: 8
+				}
+			]
 		}
 		{
-			title: "{chapter.8.quest.3.title}"
+			title: "{ftbquests.chapter.6_raow.quests2.title}"
 			x: 11.0d
 			y: -7.0d
 			shape: "square"
-			description: ["{chapter.8.quest.3.description.1}"]
+			description: [
+				"{ftbquests.chapter.6_raow.quests2.description0}"
+				""
+				""
+				"{ftbquests.chapter.6_raow.quests2.description3}"
+				""
+				""
+				"{ftbquests.chapter.6_raow.quests2.description6}"
+			]
 			dependencies: ["3091F7AC37F848AD"]
 			size: 2.0d
 			id: "11F776AD4AEA326A"
-			tasks: [{
-				id: "6B36647F19D4A0E4"
-				type: "item"
-				item: "techreborn:industrial_circuit"
-			}]
-			rewards: [{
-				id: "704C52E8417151D8"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 1747526165463332193L
-			}]
+			tasks: [
+				{
+					id: "6B36647F19D4A0E4"
+					type: "item"
+					item: "techreborn:industrial_circuit"
+				}
+			]
+			rewards: [
+				{
+					id: "704C52E8417151D8"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1747526165463332193L
+				}
+			]
 		}
 		{
-			title: "{chapter.8.quest.6.title}"
+			title: "{ftbquests.chapter.6_raow.quests3.title}"
 			x: 4.5d
 			y: -4.5d
 			shape: "pentagon"
-			subtitle: "{chapter.8.quest.6.subtitle}"
-			description: ["{chapter.8.quest.6.description.1}"]
+			subtitle: "{ftbquests.chapter.6_raow.quests3.subtitle}"
+			description: ["{ftbquests.chapter.6_raow.quests3.description}"]
 			dependencies: ["5BD2D0F7F0D70180"]
 			hide: true
 			size: 3.0d
 			id: "7A4255522DA6FEB7"
-			tasks: [{
-				id: "5602FF437BAA6984"
-				type: "dimension"
-				icon: "ad_astra:mercury_globe"
-				dimension: "ad_astra:mercury"
-			}]
+			tasks: [
+				{
+					id: "5602FF437BAA6984"
+					type: "dimension"
+					icon: "ad_astra:mercury_globe"
+					dimension: "ad_astra:mercury"
+				}
+			]
 			rewards: [
 				{
 					id: "3D48BAA2A9CB06DC"
@@ -248,7 +268,7 @@
 			]
 		}
 		{
-			title: "Tech Reborn Tools + Turbo"
+			title: "{ftbquests.chapter.6_raow.quests4.title}"
 			icon: {
 				id: "ftbquests:custom_icon"
 				Count: 1b
@@ -258,7 +278,7 @@
 			}
 			x: 18.0d
 			y: -1.0d
-			description: ["Another round of upgrades for the Tech Reborn crew. "]
+			description: ["{ftbquests.chapter.6_raow.quests4.description}"]
 			dependencies: ["3705B91C0D4EA2A0"]
 			optional: true
 			id: "15D4CF543BB0B94F"
@@ -281,19 +301,21 @@
 			]
 		}
 		{
-			title: "In fact, you can hold these bare handed!"
+			title: "{ftbquests.chapter.6_raow.quests5.title}"
 			x: 19.5d
 			y: 0.75d
 			shape: "square"
-			description: ["Any machine fitted with &6Uranium Rods&r will function at incredible potential, which is worth the side-effects of the ambient radiation likely lowering lifespans of those nearby."]
+			description: ["{ftbquests.chapter.6_raow.quests5.description}"]
 			dependencies: ["4E9CF88D314F6843"]
 			size: 1.5d
 			id: "3705B91C0D4EA2A0"
-			tasks: [{
-				id: "7C490195DEDC649C"
-				type: "item"
-				item: "techreborn:data_storage_chip"
-			}]
+			tasks: [
+				{
+					id: "7C490195DEDC649C"
+					type: "item"
+					item: "techreborn:data_storage_chip"
+				}
+			]
 			rewards: [
 				{
 					id: "1ECE2D478CABB09D"
@@ -317,20 +339,22 @@
 		{
 			x: 23.0d
 			y: 5.0d
-			subtitle: "{chapter.8.quest.19.subtitle}"
+			subtitle: "{ftbquests.chapter.6_raow.quests6.subtitle}"
 			description: [
-				"Strengthening our Steel by pouring the newly created &6Shadow Steel Fluid&r over it will create one of the strongest metals in the known galaxy."
+				"{ftbquests.chapter.6_raow.quests6.description0}"
 				""
-				"Utilise this power well, as a Tinker Tool shadow Steel serves as an unmatched weapon for combat focused weaponry."
+				"{ftbquests.chapter.6_raow.quests6.description2}"
 				""
 			]
 			dependencies: ["6328B6E2C86D8834"]
 			id: "69F63D2FA5384442"
-			tasks: [{
-				id: "62B6F76DEE9A1280"
-				type: "item"
-				item: "create:shadow_steel"
-			}]
+			tasks: [
+				{
+					id: "62B6F76DEE9A1280"
+					type: "item"
+					item: "create:shadow_steel"
+				}
+			]
 			rewards: [
 				{
 					id: "43511E95E9B3CA35"
@@ -352,38 +376,42 @@
 			]
 		}
 		{
-			title: "{chapter.8.quest.20.title}"
+			title: "{ftbquests.chapter.6_raow.quests7.title}"
 			x: 21.759523809523827d
 			y: 1.0345238095238187d
-			subtitle: "{chapter.8.quest.20.subtitle}"
-			description: ["This quirky little compound is the purest form of colour. It is practically begging to be turned into Refined Radiance or Shadow Steel."]
+			subtitle: "{ftbquests.chapter.6_raow.quests7.subtitle}"
+			description: ["{ftbquests.chapter.6_raow.quests7.description}"]
 			dependencies: ["00EB34849356498A"]
 			id: "17794A6A366C8497"
-			tasks: [{
-				id: "196283706CF2C8F5"
-				type: "item"
-				item: {
-					id: "create:chromatic_compound"
-					Count: 1b
-					tag: { }
+			tasks: [
+				{
+					id: "196283706CF2C8F5"
+					type: "item"
+					item: {
+						id: "create:chromatic_compound"
+						Count: 1b
+						tag: { }
+					}
 				}
-			}]
-			rewards: [{
-				id: "1A29B5BE39F28223"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 1747526165463332193L
-			}]
+			]
+			rewards: [
+				{
+					id: "1A29B5BE39F28223"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1747526165463332193L
+				}
+			]
 		}
 		{
-			title: "{chapter.8.quest.24.title}"
+			title: "{ftbquests.chapter.6_raow.quests8.title}"
 			x: 22.0d
 			y: 5.5d
 			shape: "square"
 			description: [
-				"Thanks to rapid accelerations in technology, the jet suit will provide an unbeatable defense, alongside flight capability."
+				"{ftbquests.chapter.6_raow.quests8.description0}"
 				""
-				"Utilise the &6Jet Suit Flash Card&r from Per Aspera to control your flight more delicately, allowing for movement akin to creative flight, at the cost of its fuel..."
+				"{ftbquests.chapter.6_raow.quests8.description2}"
 			]
 			hide_dependency_lines: false
 			dependencies: ["3ED703EAA646A18A"]
@@ -439,30 +467,34 @@
 					item: "per_aspera:jet_suit_flash_card"
 				}
 			]
-			rewards: [{
-				id: "57B93FBC8CB04D7A"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 1747526165463332193L
-			}]
+			rewards: [
+				{
+					id: "57B93FBC8CB04D7A"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1747526165463332193L
+				}
+			]
 		}
 		{
-			title: "The connection of Dark and Light."
+			title: "{ftbquests.chapter.6_raow.quests9.title}"
 			x: 22.0d
 			y: 7.5d
 			shape: "hexagon"
-			description: ["This Super-Energised alloy will crumble under no known force."]
+			description: ["{ftbquests.chapter.6_raow.quests9.description}"]
 			dependencies: [
 				"1E93A90AEF614FA3"
 				"69F63D2FA5384442"
 			]
 			size: 2.0d
 			id: "3ED703EAA646A18A"
-			tasks: [{
-				id: "62B66772EBD3B7F0"
-				type: "item"
-				item: "createastral:subatomic_ingot"
-			}]
+			tasks: [
+				{
+					id: "62B66772EBD3B7F0"
+					type: "item"
+					item: "createastral:subatomic_ingot"
+				}
+			]
 			rewards: [
 				{
 					id: "4F5C903B3EB2C00D"
@@ -479,36 +511,38 @@
 			]
 		}
 		{
-			title: "{chapter.8.quest.31.title}"
+			title: "{ftbquests.chapter.6_raow.quests10.title}"
 			x: 9.0d
 			y: -8.5d
-			description: ["{chapter.8.quest.31.description.1}"]
+			description: ["{ftbquests.chapter.6_raow.quests10.description}"]
 			dependencies: ["2291F6259C65D8F6"]
 			id: "3091F7AC37F848AD"
-			tasks: [{
-				id: "6B1169BFB796200B"
-				type: "item"
-				item: "createastral:calorite_pin"
-				count: 16L
-			}]
+			tasks: [
+				{
+					id: "6B1169BFB796200B"
+					type: "item"
+					item: "createastral:calorite_pin"
+					count: 16L
+				}
+			]
 		}
 		{
-			title: "A rocket to break the barrier between realities."
+			title: "{ftbquests.chapter.6_raow.quests11.title}"
 			x: 21.928571428571445d
 			y: 14.250000000000036d
 			shape: "gear"
-			subtitle: "Are you prepared for what comes next?"
+			subtitle: "{ftbquests.chapter.6_raow.quests11.subtitle}"
 			description: [
 				""
-				"This rocket is &bnot limited by the bounds of spacetime&r."
+				"{ftbquests.chapter.6_raow.quests11.description1}"
 				""
-				"Where we are about to go trascends all understanding. "
+				"{ftbquests.chapter.6_raow.quests11.description3}"
 				""
-				"It cannot be possible."
+				"{ftbquests.chapter.6_raow.quests11.description5}"
 				""
-				"This is the source of it all. This indiscriminate destruction."
+				"{ftbquests.chapter.6_raow.quests11.description7}"
 				""
-				"What's a &cN&ka&r&ceth&ka&r&cer?"
+				"{ftbquests.chapter.6_raow.quests11.description9}"
 			]
 			dependencies: [
 				"638DBED9ED0BD4CB"
@@ -517,15 +551,17 @@
 			]
 			size: 5.0d
 			id: "69669C2A3E16E328"
-			tasks: [{
-				id: "1718FFABE1DE0504"
-				type: "item"
-				item: {
-					id: "ad_astra:tier_4_rocket"
-					Count: 1b
-					tag: { }
+			tasks: [
+				{
+					id: "1718FFABE1DE0504"
+					type: "item"
+					item: {
+						id: "ad_astra:tier_4_rocket"
+						Count: 1b
+						tag: { }
+					}
 				}
-			}]
+			]
 			rewards: [
 				{
 					id: "338DB62A4C226423"
@@ -541,41 +577,45 @@
 			]
 		}
 		{
-			title: "Out of Bounds"
+			title: "{ftbquests.chapter.6_raow.quests12.title}"
 			x: 23.5d
 			y: -2.0d
-			subtitle: "You've gone too far..."
+			subtitle: "{ftbquests.chapter.6_raow.quests12.subtitle}"
 			description: [
-				"Grab yourself another Bedrock Smasher. We're going deeper."
+				"{ftbquests.chapter.6_raow.quests12.description0}"
 				""
-				"Breaking Bedrock with the Yttric Rifle above Y=-64 will give you bedrock shards, but we can go deeper than that."
+				"{ftbquests.chapter.6_raow.quests12.description2}"
 				""
-				"Break through the lowest level of Bedrock (Y=-64) and unleash the Void beneath."
+				"{ftbquests.chapter.6_raow.quests12.description4}"
 			]
 			dependencies: ["185518EF87BFDBCC"]
 			id: "0DA873C30C320AD9"
-			tasks: [{
-				id: "63E9A67A654D5B55"
-				type: "item"
-				item: "yttr:bedrock_smasher"
-			}]
-			rewards: [{
-				id: "12574995BA34B3CF"
-				type: "item"
-				item: "chipped:black_concrete_9"
-				count: 32
-			}]
+			tasks: [
+				{
+					id: "63E9A67A654D5B55"
+					type: "item"
+					item: "yttr:bedrock_smasher"
+				}
+			]
+			rewards: [
+				{
+					id: "12574995BA34B3CF"
+					type: "item"
+					item: "chipped:black_concrete_9"
+					count: 32
+				}
+			]
 		}
 		{
-			title: "&6Aim&r for the stars."
+			title: "{ftbquests.chapter.6_raow.quests13.title}"
 			x: 16.5d
 			y: -7.0d
 			shape: "hexagon"
-			subtitle: "A multipurpose rifle with incredible potential."
+			subtitle: "{ftbquests.chapter.6_raow.quests13.subtitle}"
 			description: [
-				"&6Press R&r to cycle between firing modes on the rifle."
+				"{ftbquests.chapter.6_raow.quests13.description0}"
 				""
-				"For progression you will want to become familiar with the &6explosive shot&r, but feel free to become acquainted with the modes at your disposal!"
+				"{ftbquests.chapter.6_raow.quests13.description2}"
 			]
 			dependencies: [
 				"11F776AD4AEA326A"
@@ -583,52 +623,58 @@
 			]
 			size: 2.0d
 			id: "07A143B6DCF06587"
-			tasks: [{
-				id: "156E0FBC07E0A278"
-				type: "item"
-				item: "yttr:rifle"
-			}]
-			rewards: [{
-				id: "66C76993F8BE8831"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 1747526165463332193L
-			}]
+			tasks: [
+				{
+					id: "156E0FBC07E0A278"
+					type: "item"
+					item: "yttr:rifle"
+				}
+			]
+			rewards: [
+				{
+					id: "66C76993F8BE8831"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1747526165463332193L
+				}
+			]
 		}
 		{
-			title: "The Void"
+			title: "{ftbquests.chapter.6_raow.quests14.title}"
 			x: 23.5d
 			y: 1.0d
-			subtitle: "The World... is Leaking..."
+			subtitle: "{ftbquests.chapter.6_raow.quests14.subtitle}"
 			description: [
-				"Stand well clear, this stuff is not to swim in... not yet..."
+				"{ftbquests.chapter.6_raow.quests14.description0}"
 				""
-				"The Void calls you. Use a Bucket, or Copper Pipes, to pick it up. We will be using this."
+				"{ftbquests.chapter.6_raow.quests14.description2}"
 			]
 			dependencies: ["0DA873C30C320AD9"]
 			id: "471D3DCAFD9710EC"
-			tasks: [{
-				id: "4F4F59A87FE43DAB"
-				type: "item"
-				item: {
-					id: "techreborn:cell"
-					Count: 1b
-					tag: {
-						fluid: "yttr:void"
+			tasks: [
+				{
+					id: "4F4F59A87FE43DAB"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "yttr:void"
+						}
 					}
+					match_nbt: true
 				}
-				match_nbt: true
-			}]
+			]
 		}
 		{
-			title: "Void Diving Gear"
+			title: "{ftbquests.chapter.6_raow.quests15.title}"
 			x: 26.5d
 			y: 2.0d
-			subtitle: "Into the Void..."
+			subtitle: "{ftbquests.chapter.6_raow.quests15.subtitle}"
 			description: [
-				"All Void is connected. With this diving gear, we can safely enter a Void Geyser to fast travel to other locations where the Void has been exposed."
+				"{ftbquests.chapter.6_raow.quests15.description0}"
 				""
-				"You will need a Suit Station and a Diving Plate also, so don't go splashing around in your Void Geyser just yet."
+				"{ftbquests.chapter.6_raow.quests15.description2}"
 			]
 			dependencies: ["4C8291E72A5757F9"]
 			id: "637D5C1C0C789F9E"
@@ -680,55 +726,61 @@
 			]
 		}
 		{
-			title: "BOO!"
+			title: "{ftbquests.chapter.6_raow.quests16.title}"
 			x: 17.0d
 			y: -4.5d
-			subtitle: "Did I Snare You?"
+			subtitle: "{ftbquests.chapter.6_raow.quests16.subtitle}"
 			description: [
-				"A Snare can capture mobs with a simple right click BUT-"
-				"Captured mobs are on a timer. The higher the HP of the mob, the lower the timer will be. Battle a mob down to low HP to keep it captured for a longer amount of time."
+				"{ftbquests.chapter.6_raow.quests16.description0}"
+				"{ftbquests.chapter.6_raow.quests16.description1}"
 				""
-				"If the timer runs out, the mob will be destroyed. Be careful!"
+				"{ftbquests.chapter.6_raow.quests16.description3}"
 			]
 			dependencies: ["7001A75C47B1DA1A"]
 			id: "5F4AD4D6BA9BD7BA"
-			tasks: [{
-				id: "5F8EB803180D85C6"
-				type: "item"
-				item: "yttr:snare"
-			}]
-			rewards: [{
-				id: "1A2BC69CDB5C9911"
-				type: "item"
-				item: "tconstruct:jeweled_apple"
-			}]
+			tasks: [
+				{
+					id: "5F8EB803180D85C6"
+					type: "item"
+					item: "yttr:snare"
+				}
+			]
+			rewards: [
+				{
+					id: "1A2BC69CDB5C9911"
+					type: "item"
+					item: "tconstruct:jeweled_apple"
+				}
+			]
 		}
 		{
-			title: "Beginning a yttrium processing line."
+			title: "{ftbquests.chapter.6_raow.quests17.title}"
 			x: 6.5d
 			y: -3.5d
 			description: [
-				"Yttrium cannot be automated from the get-go, so get mining!"
+				"{ftbquests.chapter.6_raow.quests17.description0}"
 				""
-				"I'm sure there will be a method soon to produce it... "
+				"{ftbquests.chapter.6_raow.quests17.description2}"
 			]
 			dependencies: ["7A4255522DA6FEB7"]
 			id: "1CF74DAA63DCF682"
-			tasks: [{
-				id: "698929C301002FCE"
-				type: "item"
-				item: "yttr:raw_gadolinite"
-			}]
+			tasks: [
+				{
+					id: "698929C301002FCE"
+					type: "item"
+					item: "yttr:raw_gadolinite"
+				}
+			]
 		}
 		{
-			title: "Chromatic Ores are the new trend."
+			title: "{ftbquests.chapter.6_raow.quests18.title}"
 			x: 4.5d
 			y: -7.0d
-			subtitle: "Es Muy Calor"
+			subtitle: "{ftbquests.chapter.6_raow.quests18.subtitle}"
 			description: [
-				"Unlike its bretheren, Yttrium, Calorite does not require as much special processing."
+				"{ftbquests.chapter.6_raow.quests18.description0}"
 				""
-				"Simply melt down raw or crushed ore into fluid using a Hellfire-heated Foundry or Melter, and cast it into ingots."
+				"{ftbquests.chapter.6_raow.quests18.description2}"
 			]
 			dependencies: [
 				"7A4255522DA6FEB7"
@@ -736,49 +788,55 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "7959BC3A659C88D5"
-			tasks: [{
-				id: "569AC03E026D1FB2"
-				type: "item"
-				item: "ad_astra:raw_calorite"
-			}]
+			tasks: [
+				{
+					id: "569AC03E026D1FB2"
+					type: "item"
+					item: "ad_astra:raw_calorite"
+				}
+			]
 		}
 		{
 			x: 6.5d
 			y: -8.5d
 			description: [
-				"Calorite production can split in a few ways."
+				"{ftbquests.chapter.6_raow.quests19.description0}"
 				""
-				"For now, you are likely only going to want to produce Cinnabar and Calorite Pins."
+				"{ftbquests.chapter.6_raow.quests19.description2}"
 				""
-				"Yttrium however, will be automatable through Calorite later on, so prepare a source of Raw Calorite for when this happens..."
+				"{ftbquests.chapter.6_raow.quests19.description4}"
 			]
 			dependencies: ["7959BC3A659C88D5"]
 			id: "2291F6259C65D8F6"
-			tasks: [{
-				id: "5F908FE049E296F6"
-				type: "item"
-				item: "ad_astra:calorite_ingot"
-			}]
+			tasks: [
+				{
+					id: "5F908FE049E296F6"
+					type: "item"
+					item: "ad_astra:calorite_ingot"
+				}
+			]
 		}
 		{
-			title: "Creation of a dark compound."
+			title: "{ftbquests.chapter.6_raow.quests20.title}"
 			x: 23.5d
 			y: 2.5d
 			description: [
-				"&lTo create it, throw a &6Chromatic Compound&r &linto Void fluid.&r"
+				"{ftbquests.chapter.6_raow.quests20.description0}"
 				""
-				"The Void will embrace your gift, and return the favour."
+				"{ftbquests.chapter.6_raow.quests20.description2}"
 			]
 			dependencies: ["471D3DCAFD9710EC"]
 			id: "1A3925C20FDC3876"
-			tasks: [{
-				id: "1E8EE7B30C05B570"
-				type: "item"
-				item: "createastral:voidtouched_compound"
-			}]
+			tasks: [
+				{
+					id: "1E8EE7B30C05B570"
+					type: "item"
+					item: "createastral:voidtouched_compound"
+				}
+			]
 		}
 		{
-			title: "Mix for liquid light"
+			title: "{ftbquests.chapter.6_raow.quests21.title}"
 			x: 21.0d
 			y: 2.0d
 			dependencies: ["17794A6A366C8497"]
@@ -797,7 +855,7 @@
 				{
 					id: "2337556CF97FFD02"
 					type: "item"
-					title: "Any #c:nether_stars"
+					title: "{ftbquests.chapter.6_raow.quests21.tasks2.title}"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -821,7 +879,7 @@
 				{
 					id: "1C105E7D8EAF0568"
 					type: "item"
-					title: "Any #chipped:glowstone"
+					title: "{ftbquests.chapter.6_raow.quests21.tasks4.title}"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -833,7 +891,7 @@
 				{
 					id: "5F88E376E49C2AC7"
 					type: "item"
-					title: "Any #chipped:sea_lantern"
+					title: "{ftbquests.chapter.6_raow.quests21.tasks5.title}"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -852,77 +910,87 @@
 		{
 			x: 20.0d
 			y: 7.5d
-			subtitle: "An extremely light casing."
+			subtitle: "{ftbquests.chapter.6_raow.quests22.subtitle}"
 			description: [
-				"Used for its properties of being incredibly lightweight, radiant casing in unmatched as both an ingredient..."
+				"{ftbquests.chapter.6_raow.quests22.description0}"
 				""
-				"...and a decoration block. "
+				"{ftbquests.chapter.6_raow.quests22.description2}"
 				""
-				"Apply Refined Radiance to Advanced Casings to obtain."
+				"{ftbquests.chapter.6_raow.quests22.description4}"
 			]
 			dependencies: ["1E93A90AEF614FA3"]
 			id: "704AEB416AA5A953"
-			tasks: [{
-				id: "305D53E422BBD5E6"
-				type: "item"
-				item: "create:refined_radiance_casing"
-			}]
+			tasks: [
+				{
+					id: "305D53E422BBD5E6"
+					type: "item"
+					item: "create:refined_radiance_casing"
+				}
+			]
 		}
 		{
 			x: 24.0d
 			y: 7.5d
-			subtitle: "An extremely durable casing."
-			description: ["Boasting toughness beyond known constraints, Shadowsteel is obtained through applying Shadow Steel to Advanced Casings."]
+			subtitle: "{ftbquests.chapter.6_raow.quests23.subtitle}"
+			description: ["{ftbquests.chapter.6_raow.quests23.description}"]
 			dependencies: ["69F63D2FA5384442"]
 			id: "0931E20B74EB2D8A"
-			tasks: [{
-				id: "739A2A7682DE28F2"
-				type: "item"
-				item: "create:shadow_steel_casing"
-			}]
+			tasks: [
+				{
+					id: "739A2A7682DE28F2"
+					type: "item"
+					item: "create:shadow_steel_casing"
+				}
+			]
 		}
 		{
-			title: "Crushing to Crushed Yttrium."
+			title: "{ftbquests.chapter.6_raow.quests24.title}"
 			x: 8.5d
 			y: -3.0d
-			subtitle: "The first round of crushing begins!"
+			subtitle: "{ftbquests.chapter.6_raow.quests24.subtitle}"
 			dependencies: ["1CF74DAA63DCF682"]
 			id: "20FCAE136788543A"
-			tasks: [{
-				id: "2344F45CE2D696EE"
-				type: "item"
-				item: "createastral:crushed_raw_gadolinite"
-			}]
+			tasks: [
+				{
+					id: "2344F45CE2D696EE"
+					type: "item"
+					item: "createastral:crushed_raw_gadolinite"
+				}
+			]
 		}
 		{
-			title: "Forming Yttrium Ingots"
+			title: "{ftbquests.chapter.6_raow.quests25.title}"
 			x: 15.0d
 			y: -5.0d
 			description: [
-				"Once you have combined your choice of Ad Astra ingot with Molten Yttrium, an ingot will form."
+				"{ftbquests.chapter.6_raow.quests25.description0}"
 				""
-				"It's not quick, it's not easy, but it's a powerful metal."
+				"{ftbquests.chapter.6_raow.quests25.description2}"
 			]
 			dependencies: ["2E70D7A586F92E7A"]
 			id: "7001A75C47B1DA1A"
-			tasks: [{
-				id: "7CF51EC610A1C6D0"
-				type: "item"
-				item: "yttr:yttrium_ingot"
-			}]
+			tasks: [
+				{
+					id: "7CF51EC610A1C6D0"
+					type: "item"
+					item: "yttr:yttrium_ingot"
+				}
+			]
 		}
 		{
-			title: "Converting to powder."
+			title: "{ftbquests.chapter.6_raow.quests26.title}"
 			x: 10.5d
 			y: -3.0d
-			subtitle: "Millstones or Crushing Wheels will get the job done!"
+			subtitle: "{ftbquests.chapter.6_raow.quests26.subtitle}"
 			dependencies: ["20FCAE136788543A"]
 			id: "27E46FB10D9F214B"
-			tasks: [{
-				id: "40240E962DD86A7F"
-				type: "item"
-				item: "yttr:yttrium_dust"
-			}]
+			tasks: [
+				{
+					id: "40240E962DD86A7F"
+					type: "item"
+					item: "yttr:yttrium_dust"
+				}
+			]
 		}
 		{
 			icon: {
@@ -934,7 +1002,7 @@
 			}
 			x: 12.5d
 			y: -3.5d
-			subtitle: "Melting to Yttrium fluid, and mixing with chromatic metals."
+			subtitle: "{ftbquests.chapter.6_raow.quests27.subtitle}"
 			dependencies: ["27E46FB10D9F214B"]
 			id: "2E70D7A586F92E7A"
 			tasks: [
@@ -961,95 +1029,103 @@
 				{
 					id: "4F173F2EBB46F3FE"
 					type: "checkmark"
-					title: "&6I'm ready!&r"
+					title: "{ftbquests.chapter.6_raow.quests27.tasks4.title}"
 				}
 			]
 		}
 		{
-			title: "Diving Board for Void?"
+			title: "{ftbquests.chapter.6_raow.quests28.title}"
 			x: 27.5d
 			y: 1.5d
 			description: [
-				"Before hopping into a Void Spout and being obliterated, consider equipping a suit of Diving gear, filling it up at a Diving Station and standing atop a Diving Plate to initiate a deep dive."
+				"{ftbquests.chapter.6_raow.quests28.description0}"
 				""
-				"Checkpoints between all Void Spouts in the Overworld with Diving Plates will be created, which the diver can instantly fast travel between at little cost. Perfect for setting up huge cross-Overworld transport networks."
+				"{ftbquests.chapter.6_raow.quests28.description2}"
 				""
 			]
 			dependencies: ["637D5C1C0C789F9E"]
 			id: "32CD4BE3B7B7CF46"
-			tasks: [{
-				id: "71103BF2B9585BCF"
-				type: "item"
-				item: "yttr:diving_plate"
-			}]
+			tasks: [
+				{
+					id: "71103BF2B9585BCF"
+					type: "item"
+					item: "yttr:diving_plate"
+				}
+			]
 		}
 		{
 			x: 26.0d
 			y: 3.0d
-			subtitle: "Getting Fueled Up"
+			subtitle: "{ftbquests.chapter.6_raow.quests29.subtitle}"
 			description: [
-				"You need to manage three resources to Dive safely: Fuel, Oxygen and Hull Integrity."
+				"{ftbquests.chapter.6_raow.quests29.description0}"
 				""
-				"Fuel will aid movement under a bulky Diving Suit and the immense pressure of the Void. Oxygen will keep you breathing. Hull Integrity will counteract the hostile nature of the Void, preventing your Diving Suit from imploding with you in it."
+				"{ftbquests.chapter.6_raow.quests29.description2}"
 				""
 			]
 			dependencies: ["637D5C1C0C789F9E"]
 			id: "6F5C9A0CC0CAC7A8"
-			tasks: [{
-				id: "5C63E8CF79F15691"
-				type: "item"
-				item: "yttr:suit_station"
-			}]
+			tasks: [
+				{
+					id: "5C63E8CF79F15691"
+					type: "item"
+					item: "yttr:suit_station"
+				}
+			]
 		}
 		{
-			title: "Smashing!"
+			title: "{ftbquests.chapter.6_raow.quests30.title}"
 			x: 23.5d
 			y: -7.0d
-			subtitle: "Crackers, Gromit!"
+			subtitle: "{ftbquests.chapter.6_raow.quests30.subtitle}"
 			description: [
-				"The first (productive) thing to do with this rifle will be to split open a block of bedrock."
+				"{ftbquests.chapter.6_raow.quests30.description0}"
 				""
-				"When placing a bedrock smasher on a piece of bedrock above Y=-64 (Not touching the void), the device will penetrate straight through its unbreakable core."
+				"{ftbquests.chapter.6_raow.quests30.description2}"
 			]
 			dependencies: ["07A143B6DCF06587"]
 			id: "185518EF87BFDBCC"
-			tasks: [{
-				id: "4AE0F030409752C6"
-				type: "item"
-				item: "yttr:bedrock_smasher"
-			}]
+			tasks: [
+				{
+					id: "4AE0F030409752C6"
+					type: "item"
+					item: "yttr:bedrock_smasher"
+				}
+			]
 		}
 		{
-			title: "Little chip of destiny."
+			title: "{ftbquests.chapter.6_raow.quests31.title}"
 			x: 22.5d
 			y: -5.5d
-			subtitle: "You'll only need one of these for full plating automation!"
+			subtitle: "{ftbquests.chapter.6_raow.quests31.subtitle}"
 			description: [
-				"After that brutal display, against the specific piece of bedrock you chose in particular, you may mine the fruit of your labour."
+				"{ftbquests.chapter.6_raow.quests31.description0}"
 				""
-				"From the remnants will drop a bedrock shard. With this you may infuse Yttrium with Bedrock, creating a new variant of plate."
+				"{ftbquests.chapter.6_raow.quests31.description2}"
 			]
 			dependencies: ["185518EF87BFDBCC"]
 			id: "0947CB03046F64B5"
-			tasks: [{
-				id: "76B53879CFFAFF6D"
-				type: "item"
-				item: "yttr:bedrock_shard"
-			}]
+			tasks: [
+				{
+					id: "76B53879CFFAFF6D"
+					type: "item"
+					item: "yttr:bedrock_shard"
+				}
+			]
 		}
 		{
-			title: "The Blaze-Cake Eater 9000"
+			title: "{ftbquests.chapter.6_raow.quests32.title}"
 			x: 21.744047619047606d
 			y: -3.7619047619047663d
 			shape: "square"
-			subtitle: "Refined Shimmer in a bottle, or four."
+			subtitle: "{ftbquests.chapter.6_raow.quests32.subtitle}"
 			description: [
-				"Complementary Schematic included to assist with building. "
-				"(Refunds cannot be processed at this time)"
+				"{ftbquests.chapter.6_raow.quests32.description0}"
+				"{ftbquests.chapter.6_raow.quests32.description1}"
 				""
-				"The &6Shimmer Refinery&r will be your &6only method of obtaining Refined Shimmer&r, a substance with some of the purest raw energy in the universe."
+				"{ftbquests.chapter.6_raow.quests32.description3}"
 				""
-				"16 Blaze Burners must be superheated during processing to allow the Shimmer filling the tanks to be heated enough to be purified."
+				"{ftbquests.chapter.6_raow.quests32.description5}"
 			]
 			dependencies: [
 				"62E2DB401A1BBC8D"
@@ -1057,153 +1133,183 @@
 			]
 			size: 2.0d
 			id: "6E9849C1B2A2AA15"
-			tasks: [{
-				id: "72FC2479FF71EEFD"
-				type: "item"
-				item: {
-					id: "custommachinery:custom_machine_item"
-					Count: 1b
-					tag: {
-						machine: "createastral:shimmer_refinery"
-					}
-				}
-			}]
-			rewards: [{
-				id: "63B65F7B750EA1C8"
-				type: "item"
-				auto: "disabled"
-				item: {
-					id: "create:schematic"
-					Count: 1b
-					tag: {
-						Anchor: {
-							Z: 0
-							X: 0
-							Y: 0
+			tasks: [
+				{
+					id: "72FC2479FF71EEFD"
+					type: "item"
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "createastral:shimmer_refinery"
 						}
-						Owner: "Laskyyy"
-						Deployed: 0b
-						File: "[AstralExamples] Shimmer Refinery.nbt"
-						Rotation: "NONE"
-						Mirror: "NONE"
-						Bounds: [
-							5
-							5
-							5
-						]
 					}
 				}
-			}]
+			]
+			rewards: [
+				{
+					id: "63B65F7B750EA1C8"
+					type: "item"
+					auto: "disabled"
+					item: {
+						id: "create:schematic"
+						Count: 1b
+						tag: {
+							Anchor: {
+								Z: 0
+								X: 0
+								Y: 0
+							}
+							Owner: "Laskyyy"
+							Deployed: 0b
+							File: "[AstralExamples] Shimmer Refinery.nbt"
+							Rotation: "NONE"
+							Mirror: "NONE"
+							Bounds: [
+								5
+								5
+								5
+							]
+						}
+					}
+				}
+			]
 		}
 		{
-			title: "Densely Packed Yttrium!"
+			title: "{ftbquests.chapter.6_raow.quests33.title}"
 			x: 20.5d
 			y: -5.5d
 			dependencies: ["0947CB03046F64B5"]
 			id: "62E2DB401A1BBC8D"
-			tasks: [{
-				id: "5AA9B9580836CFF4"
-				type: "item"
-				item: "yttr:armor_plating"
-			}]
+			tasks: [
+				{
+					id: "5AA9B9580836CFF4"
+					type: "item"
+					item: "yttr:armor_plating"
+				}
+			]
 		}
 		{
-			title: "Infinitely Renewing Light Itself"
+			title: "{ftbquests.chapter.6_raow.quests34.title}"
 			x: 19.5d
 			y: 3.5d
-			subtitle: "...and Automatable Nether Stars"
+			subtitle: "{ftbquests.chapter.6_raow.quests34.subtitle}"
 			description: [
-				"Compressing a small amount of Radiant Residue will cause Star Shards to crystallise."
+				"{ftbquests.chapter.6_raow.quests34.description0}"
 				""
-				"Process these Shards into a Pure Star Shard. This can then be converted into a Nether Star, or melted down into a greater yield of Radiant Residue."
+				"{ftbquests.chapter.6_raow.quests34.description2}"
 			]
 			dependencies: ["65F77462CD1DFFDB"]
 			id: "56FBBD9207565ED6"
-			tasks: [{
-				id: "032F95D0B26EA163"
-				type: "item"
-				item: "createastral:pure_star_shard"
-			}]
-			rewards: [{
-				id: "50A5CABFECEA9173"
-				type: "item"
-				item: "createastral:star_shard"
-			}]
+			tasks: [
+				{
+					id: "032F95D0B26EA163"
+					type: "item"
+					item: "createastral:pure_star_shard"
+				}
+			]
+			rewards: [
+				{
+					id: "50A5CABFECEA9173"
+					type: "item"
+					item: "createastral:star_shard"
+				}
+			]
 		}
 		{
+			icon: "astraladditions:fragile_item_2"
 			x: 24.0d
 			y: 10.0d
 			shape: "hexagon"
-			subtitle: "&cWarning: FRAGILE!&r"
+			subtitle: "{ftbquests.chapter.6_raow.quests35.subtitle}"
 			description: [
-				"&6Challenge 3:&r"
+				"{ftbquests.chapter.6_raow.quests35.description0}"
 				""
-				"The Sub-atomic Core."
+				"{ftbquests.chapter.6_raow.quests35.description2}"
 			]
 			dependencies: ["0931E20B74EB2D8A"]
 			size: 2.0d
+			min_required_tasks: 1
 			id: "739D93CC57AA8BF2"
-			tasks: [{
-				id: "28ABE24C52D47141"
-				type: "item"
-				item: "astraladditions:fragile_item_2"
-			}]
+			tasks: [
+				{
+					id: "28ABE24C52D47141"
+					type: "item"
+					item: "astraladditions:fragile_item_2"
+				}
+				{
+					id: "22CC147F35A403C2"
+					type: "checkmark"
+				}
+			]
 		}
 		{
+			icon: "astraladditions:fragile_item_3"
 			x: 20.0d
 			y: 10.0d
 			shape: "hexagon"
-			subtitle: "&cWarning: FRAGILE!&r"
+			subtitle: "{ftbquests.chapter.6_raow.quests36.subtitle}"
 			description: [
-				"&6Challenge 1:&r"
+				"{ftbquests.chapter.6_raow.quests36.description0}"
 				""
-				"Six Radiant Thrusters."
+				"{ftbquests.chapter.6_raow.quests36.description2}"
 			]
 			dependencies: ["704AEB416AA5A953"]
 			size: 2.0d
+			min_required_tasks: 1
 			id: "638DBED9ED0BD4CB"
-			tasks: [{
-				id: "586B49EB963667B8"
-				type: "item"
-				item: "astraladditions:fragile_item_3"
-			}]
+			tasks: [
+				{
+					id: "586B49EB963667B8"
+					type: "item"
+					item: "astraladditions:fragile_item_3"
+				}
+				{
+					id: "1B147F24B1ED238D"
+					type: "checkmark"
+				}
+			]
 		}
 		{
-			title: "&bSeparation Agent&r"
+			title: "{ftbquests.chapter.6_raow.quests37.title}"
 			x: 22.0d
 			y: 2.5d
-			subtitle: "Clashing Forces"
-			description: ["Shimmer and The Void. Two opposite forces clashing to produce a powder we can use to split compounds"]
+			subtitle: "{ftbquests.chapter.6_raow.quests37.subtitle}"
+			description: ["{ftbquests.chapter.6_raow.quests37.description}"]
 			dependencies: ["471D3DCAFD9710EC"]
 			id: "1CCB3210417B55B6"
-			tasks: [{
-				id: "3AFF35DB8C4DC33B"
-				type: "item"
-				item: "createastral:separation_agent"
-			}]
+			tasks: [
+				{
+					id: "3AFF35DB8C4DC33B"
+					type: "item"
+					item: "createastral:separation_agent"
+				}
+			]
 		}
 		{
 			x: 21.0d
 			y: 8.5d
 			dependencies: ["3ED703EAA646A18A"]
 			id: "4BD75128B2B5E343"
-			tasks: [{
-				id: "44E5216528B0571E"
-				type: "item"
-				item: "createastral:t6_upgrade"
-			}]
+			tasks: [
+				{
+					id: "44E5216528B0571E"
+					type: "item"
+					item: "createastral:t6_upgrade"
+				}
+			]
 		}
 		{
-			title: "The ever-durable Magtank."
+			title: "{ftbquests.chapter.6_raow.quests39.title}"
 			x: 19.5d
 			y: -3.75d
-			subtitle: "Tanks to withhold the temperature of the Sun."
+			subtitle: "{ftbquests.chapter.6_raow.quests39.subtitle}"
 			description: [
-				"Whilst not serving a purpose of their own, these Magtanks act as part of the structure for the &6Shimmer Refinery&r."
+				"{ftbquests.chapter.6_raow.quests39.description0}"
 				""
-				"Rather than pumping into them, pump Shimmer directly into the refinery machine block instead!"
+				"{ftbquests.chapter.6_raow.quests39.description2}"
 				""
-				"&6NOTICE:&r It is known that attempting to shift click an item into the UI will crash the users client. I have received exclusive commentary from the Pack Developer to \"Please don't do that\", and, \"We warned them in advance\"."
+				"{ftbquests.chapter.6_raow.quests39.description4}"
 			]
 			dependencies: [
 				"3705B91C0D4EA2A0"
@@ -1211,50 +1317,56 @@
 			]
 			size: 1.5d
 			id: "4CC6AB06056BC35C"
-			tasks: [{
-				id: "149EDE621EBD708B"
-				type: "item"
-				item: "yttr:magtank"
-			}]
+			tasks: [
+				{
+					id: "149EDE621EBD708B"
+					type: "item"
+					item: "yttr:magtank"
+				}
+			]
 		}
 		{
 			x: 22.0d
 			y: 10.5d
 			shape: "hexagon"
 			description: [
-				"&6Challenge 2:&r"
+				"{ftbquests.chapter.6_raow.quests40.description0}"
 				""
-				"Five Calorite Engines."
+				"{ftbquests.chapter.6_raow.quests40.description2}"
 			]
 			dependencies: ["3ED703EAA646A18A"]
 			size: 2.0d
 			id: "16A408D4C0DAD08D"
-			tasks: [{
-				id: "0E306D967731CE1B"
-				type: "item"
-				item: "ad_astra:calorite_engine"
-			}]
+			tasks: [
+				{
+					id: "0E306D967731CE1B"
+					type: "item"
+					item: "ad_astra:calorite_engine"
+				}
+			]
 		}
 		{
 			x: 23.0d
 			y: 8.5d
-			description: ["A slower Yttric Rifle, but much more stable."]
+			description: ["{ftbquests.chapter.6_raow.quests41.description}"]
 			dependencies: ["3ED703EAA646A18A"]
 			id: "7E3960A7DECF8C25"
-			tasks: [{
-				id: "2D7E6BC6EC19F64C"
-				type: "item"
-				item: "yttr:rifle_reinforced"
-			}]
+			tasks: [
+				{
+					id: "2D7E6BC6EC19F64C"
+					type: "item"
+					item: "yttr:rifle_reinforced"
+				}
+			]
 		}
 		{
-			title: "Turns out, it's safer than you think!"
+			title: "{ftbquests.chapter.6_raow.quests42.title}"
 			x: 13.485714285714302d
 			y: 0.7785714285714391d
 			description: [
-				"&6Molten Uranium&r does not possess properties in its current form to be useful to us."
+				"{ftbquests.chapter.6_raow.quests42.description0}"
 				""
-				"By casting it into a rod, we may soon use its energy potential within machines to maximise their potential..."
+				"{ftbquests.chapter.6_raow.quests42.description2}"
 			]
 			dependencies: [
 				"5BCACF82FA7D1B80"
@@ -1262,56 +1374,62 @@
 				"77217A6E21B6D3B3"
 			]
 			id: "4E9CF88D314F6843"
-			tasks: [{
-				id: "45E0814BA1D565D0"
-				type: "item"
-				item: {
-					id: "techreborn:cell"
-					Count: 1b
-					tag: {
-						fluid: "tconstruct:molten_uranium"
+			tasks: [
+				{
+					id: "45E0814BA1D565D0"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "tconstruct:molten_uranium"
+						}
 					}
 				}
-			}]
+			]
 		}
 		{
-			title: "Is this safe to touch?"
+			title: "{ftbquests.chapter.6_raow.quests43.title}"
 			x: 11.0d
 			y: -0.5d
 			description: [
-				"&6Uranium Residue&r can be extracted from Yttrium Powder using an Industrial Centrifuge. "
+				"{ftbquests.chapter.6_raow.quests43.description0}"
 				""
-				"It is unknown the exact chemical properties of Yttrium, but the presence of this material within it sparks a greater question as to why we are so comfortable holding it in our hands."
+				"{ftbquests.chapter.6_raow.quests43.description2}"
 			]
 			dependencies: ["27E46FB10D9F214B"]
 			id: "5BCACF82FA7D1B80"
-			tasks: [{
-				id: "421929BF70E37ADE"
-				type: "item"
-				item: "createastral:uranium_residue"
-			}]
+			tasks: [
+				{
+					id: "421929BF70E37ADE"
+					type: "item"
+					item: "createastral:uranium_residue"
+				}
+			]
 		}
 		{
-			title: "Distillation Tower on Overdrive"
+			title: "{ftbquests.chapter.6_raow.quests44.title}"
 			x: 12.708333333333329d
 			y: -0.6130952380952408d
-			description: ["The Distillation Tower Multiblock from Chapter 4 supports superheating as a condition of recipes. By lighting it up with 9 Blaze Cakes, the heat will be enough to process this Uranium Residue into a purer form."]
+			description: ["{ftbquests.chapter.6_raow.quests44.description}"]
 			dependencies: ["5BCACF82FA7D1B80"]
 			id: "77217A6E21B6D3B3"
-			tasks: [{
-				id: "10931ACB8B9DD4DD"
-				type: "item"
-				item: "create:blaze_cake"
-			}]
+			tasks: [
+				{
+					id: "10931ACB8B9DD4DD"
+					type: "item"
+					item: "create:blaze_cake"
+				}
+			]
 		}
 		{
-			title: "Radiant Arsenal"
+			title: "{ftbquests.chapter.6_raow.quests45.title}"
 			x: 19.5d
 			y: 5.0d
 			description: [
-				"A selection of gear, traditionally used more for its ceremonial potential, rather than its combat capability."
+				"{ftbquests.chapter.6_raow.quests45.description0}"
 				""
-				"There will be no other player on the battleground as royal as those who wear gear made with light itself."
+				"{ftbquests.chapter.6_raow.quests45.description2}"
 			]
 			dependencies: ["1E93A90AEF614FA3"]
 			dependency_requirement: "one_completed"
@@ -1376,138 +1494,154 @@
 			]
 		}
 		{
-			title: "A source of Mercury."
+			title: "{ftbquests.chapter.6_raow.quests46.title}"
 			x: 12.089285714285708d
 			y: 0.7440476190476346d
-			description: ["By completing a chain of Calorite to Mercury, a solid source of this material can be procured, ready to process."]
+			description: ["{ftbquests.chapter.6_raow.quests46.description}"]
 			hide_dependency_lines: true
 			dependencies: ["5BCACF82FA7D1B80"]
 			id: "06431C6B11CBD4D1"
-			tasks: [{
-				id: "2AD9F7D6CA6CC058"
-				type: "item"
-				item: {
-					id: "techreborn:cell"
-					Count: 1b
-					tag: {
-						fluid: "techreborn:mercury"
+			tasks: [
+				{
+					id: "2AD9F7D6CA6CC058"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "techreborn:mercury"
+						}
 					}
 				}
-			}]
+			]
 		}
 		{
 			x: 18.0d
 			y: 6.0d
 			shape: "heart"
-			subtitle: "...and his music was electric."
+			subtitle: "{ftbquests.chapter.6_raow.quests47.subtitle}"
 			description: [
-				"An Electric Guitar, the ultimate weapon of mass destruction."
+				"{ftbquests.chapter.6_raow.quests47.description0}"
 				""
-				"Hit enemies with melee attacks to charge up the E Guitar to a maximum of 5 notes. After at least 3 hits, Right Click to unleash the stored energy as a piercing bolt of lightning."
+				"{ftbquests.chapter.6_raow.quests47.description2}"
 				""
-				"If we're slaying beasts, why not make a song of it?"
+				"{ftbquests.chapter.6_raow.quests47.description4}"
 			]
 			dependencies: ["4DAA2612F8E1E043"]
 			size: 1.5d
 			id: "11943F36C544F8E6"
-			tasks: [{
-				id: "0F738A7D82DD8A9C"
-				type: "item"
-				item: {
-					id: "astraladditions:e_guitar"
-					Count: 1b
-					tag: {
-						Damage: 0
+			tasks: [
+				{
+					id: "0F738A7D82DD8A9C"
+					type: "item"
+					item: {
+						id: "astraladditions:e_guitar"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
 					}
 				}
-			}]
-			rewards: [{
-				id: "668123BD8BDBF5B8"
-				type: "item"
-				item: "astralsignals:polyvinyl_sheet"
-			}]
+			]
+			rewards: [
+				{
+					id: "668123BD8BDBF5B8"
+					type: "item"
+					item: "astralsignals:polyvinyl_sheet"
+				}
+			]
 		}
 		{
 			x: 25.5d
 			y: 1.0d
-			subtitle: "Classy Glassy"
+			subtitle: "{ftbquests.chapter.6_raow.quests48.subtitle}"
 			description: [
-				"Glassy Void is a classier variant of Tinted Glass, blocking light while allowing you to see through."
+				"{ftbquests.chapter.6_raow.quests48.description0}"
 				""
-				"&lTo create it, throw a Bedrock Shard into Void fluid.&r"
+				"{ftbquests.chapter.6_raow.quests48.description2}"
 			]
 			dependencies: ["471D3DCAFD9710EC"]
 			id: "4C8291E72A5757F9"
-			tasks: [{
-				id: "74BCC4BD6D7EB3B8"
-				type: "item"
-				item: "yttr:glassy_void"
-			}]
+			tasks: [
+				{
+					id: "74BCC4BD6D7EB3B8"
+					type: "item"
+					item: "yttr:glassy_void"
+				}
+			]
 		}
 		{
-			title: "Illumination Shot"
+			title: "{ftbquests.chapter.6_raow.quests49.title}"
 			x: 18.0d
 			y: -8.5d
-			subtitle: "Light sources with no block."
+			subtitle: "{ftbquests.chapter.6_raow.quests49.subtitle}"
 			dependencies: ["07A143B6DCF06587"]
 			id: "205E46FC4E6AD8A1"
-			tasks: [{
-				id: "6E87CB0D8B2EC2B4"
-				type: "item"
-				item: "minecraft:glowstone_dust"
-				count: 64L
-			}]
+			tasks: [
+				{
+					id: "6E87CB0D8B2EC2B4"
+					type: "item"
+					item: "minecraft:glowstone_dust"
+					count: 64L
+				}
+			]
 		}
 		{
-			title: "Teleport Shot"
+			title: "{ftbquests.chapter.6_raow.quests50.title}"
 			x: 17.5d
 			y: -9.5d
-			subtitle: "Teleportation at will."
+			subtitle: "{ftbquests.chapter.6_raow.quests50.subtitle}"
 			dependencies: ["07A143B6DCF06587"]
 			id: "660B16FBBBA83A18"
-			tasks: [{
-				id: "3939A03477F73F2A"
-				type: "item"
-				item: "minecraft:chorus_fruit"
-				count: 64L
-			}]
+			tasks: [
+				{
+					id: "3939A03477F73F2A"
+					type: "item"
+					item: "minecraft:chorus_fruit"
+					count: 64L
+				}
+			]
 		}
 		{
-			title: "Explosive Shot"
+			title: "{ftbquests.chapter.6_raow.quests51.title}"
 			x: 15.5d
 			y: -9.5d
-			subtitle: "Destructive, that's what you like, right?"
+			subtitle: "{ftbquests.chapter.6_raow.quests51.subtitle}"
 			dependencies: ["07A143B6DCF06587"]
 			id: "7EA3E1022B635878"
-			tasks: [{
-				id: "198D622AB3AB676D"
-				type: "item"
-				item: "minecraft:gunpowder"
-				count: 64L
-			}]
+			tasks: [
+				{
+					id: "198D622AB3AB676D"
+					type: "item"
+					item: "minecraft:gunpowder"
+					count: 64L
+				}
+			]
 		}
 		{
-			title: "Beam Shot"
+			title: "{ftbquests.chapter.6_raow.quests52.title}"
 			x: 15.0d
 			y: -8.5d
-			subtitle: "Damaging, but non-destructive."
+			subtitle: "{ftbquests.chapter.6_raow.quests52.subtitle}"
 			dependencies: ["07A143B6DCF06587"]
 			id: "14634473513AEB59"
-			tasks: [{
-				id: "04DF7E476EA08C5B"
-				type: "item"
-				item: "minecraft:redstone"
-				count: 64L
-			}]
+			tasks: [
+				{
+					id: "04DF7E476EA08C5B"
+					type: "item"
+					item: "minecraft:redstone"
+					count: 64L
+				}
+			]
 		}
 		{
 			x: 16.5d
 			y: -10.0d
-			subtitle: "Biggy Mags"
+			subtitle: "{ftbquests.chapter.6_raow.quests53.subtitle}"
 			description: [
-				"For 50% more effecient ammo usage, fill up Rifle Canisters at the Canister Filler."
+				"{ftbquests.chapter.6_raow.quests53.description0}"
 				""
-				"The Canister filler takes a single Empty Rifle Canister, one of the four ammo ingredients, and a bottle of Glowdamp"
+				"{ftbquests.chapter.6_raow.quests53.description2}"
 			]
 			dependencies: ["07A143B6DCF06587"]
 			id: "0A27F3A10DE2E425"
@@ -1525,16 +1659,16 @@
 			]
 		}
 		{
-			title: "Glowdamp"
+			title: "{ftbquests.chapter.6_raow.quests54.title}"
 			x: 14.5d
 			y: -3.0d
-			subtitle: "Bright and Soggy"
+			subtitle: "{ftbquests.chapter.6_raow.quests54.subtitle}"
 			description: [
-				"Glowdamp is the glowing gas that illuminates Shroomlight blocks."
+				"{ftbquests.chapter.6_raow.quests54.description0}"
 				""
-				"It can be extracted by placing a Shroomlight block inbetween two Yttrium Blocks, and pushing the two Yttrium Blocks together using a piston. This will crush the Shroomlight inbetween, and release the gas into the air. Collect the Glowdamp gas using a Glass Bottle."
+				"{ftbquests.chapter.6_raow.quests54.description2}"
 				""
-				"The Glowdamp can then be used to create Lamps and Lazers, and will be used to fill Rifle Canisters later on."
+				"{ftbquests.chapter.6_raow.quests54.description4}"
 			]
 			dependencies: ["7001A75C47B1DA1A"]
 			id: "49A28F867CC1CF2C"
@@ -1565,11 +1699,11 @@
 		{
 			x: 15.5d
 			y: -2.0d
-			subtitle: "Light It Up"
+			subtitle: "{ftbquests.chapter.6_raow.quests55.subtitle}"
 			description: [
-				"Utilise Glowdamp to light up your world with a rainbow of new Redstone-powered lamps."
+				"{ftbquests.chapter.6_raow.quests55.description0}"
 				""
-				"Use REI to see how the Lamp can be Inverted, dyed, and used to create Lazors!"
+				"{ftbquests.chapter.6_raow.quests55.description2}"
 			]
 			dependencies: ["49A28F867CC1CF2C"]
 			id: "6EB3981BE33C0E9B"
@@ -1599,18 +1733,20 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "7ABF362E85F560A9"
-				type: "item"
-				item: "create:experience_nugget"
-				count: 32
-			}]
+			rewards: [
+				{
+					id: "7ABF362E85F560A9"
+					type: "item"
+					item: "create:experience_nugget"
+					count: 32
+				}
+			]
 		}
 		{
-			title: "Imma firin mah lazor!"
+			title: "{ftbquests.chapter.6_raow.quests56.title}"
 			x: 14.0d
 			y: -1.0d
-			description: ["Whilst bearing no practical use, these beams can be used as decoration, light shows, or even a fun way to (temporarily) blind someone!"]
+			description: ["{ftbquests.chapter.6_raow.quests56.description}"]
 			dependencies: ["6EB3981BE33C0E9B"]
 			id: "7F192850D46B32E6"
 			tasks: [
@@ -1633,109 +1769,117 @@
 			]
 		}
 		{
-			title: "&6The Stone Growth Chamber returns.&r"
+			title: "{ftbquests.chapter.6_raow.quests57.title}"
 			x: 6.5d
 			y: -7.0d
-			subtitle: "Crush Mercury Cobblestone for Calorite automation (and others)."
+			subtitle: "{ftbquests.chapter.6_raow.quests57.subtitle}"
 			dependencies: ["7A4255522DA6FEB7"]
 			id: "5AE829C4B70FCF74"
-			tasks: [{
-				id: "4BDDC0F85D3C89B0"
-				type: "item"
-				item: "ad_astra:mercury_cobblestone"
-				count: 64L
-			}]
+			tasks: [
+				{
+					id: "4BDDC0F85D3C89B0"
+					type: "item"
+					item: "ad_astra:mercury_cobblestone"
+					count: 64L
+				}
+			]
 		}
 		{
-			title: "&6Automating Yttrium.&r"
+			title: "{ftbquests.chapter.6_raow.quests58.title}"
 			x: 24.5d
 			y: 0.0d
-			subtitle: "Calorite -> Yttrium"
+			subtitle: "{ftbquests.chapter.6_raow.quests58.subtitle}"
 			description: [
-				"Pouring &6Void&r over a Raw Calorite Block (automated from Mercury Cobblestone) will form a block of Yttrium."
+				"{ftbquests.chapter.6_raow.quests58.description0}"
 				""
-				"From here, break it down into individual pieces and continue the processing chain as usual. Automatable Uranium and Yttrium!"
+				"{ftbquests.chapter.6_raow.quests58.description2}"
 			]
 			dependencies: ["471D3DCAFD9710EC"]
 			id: "59CDE73E177D6750"
-			tasks: [{
-				id: "0878FF9002FA7C89"
-				type: "item"
-				item: "yttr:raw_gadolinite_block"
-			}]
+			tasks: [
+				{
+					id: "0878FF9002FA7C89"
+					type: "item"
+					item: "yttr:raw_gadolinite_block"
+				}
+			]
 		}
 		{
 			x: 21.0d
 			y: 3.5d
 			description: [
-				"Superheated mix the brightest substances known to you:"
+				"{ftbquests.chapter.6_raow.quests59.description0}"
 				""
-				"&6Nether Stars&r"
-				"&6Glowstone&r"
-				"&6Sea Lanterns&r"
-				"&6Shimmer&r"
+				"{ftbquests.chapter.6_raow.quests59.description2}"
+				"{ftbquests.chapter.6_raow.quests59.description3}"
+				"{ftbquests.chapter.6_raow.quests59.description4}"
+				"{ftbquests.chapter.6_raow.quests59.description5}"
 				""
-				"All under the molecule-splitting power of a Separation Agent, crafted with the purest of Void..."
+				"{ftbquests.chapter.6_raow.quests59.description7}"
 				""
-				"You may find that Radiance fluid is particularly simple to automate once you have overcome the initial amount... by manufacturing your own artifical Nether Stars."
+				"{ftbquests.chapter.6_raow.quests59.description9}"
 			]
 			dependencies: [
 				"67337DF3DCEAC3DE"
 				"1CCB3210417B55B6"
 			]
 			id: "65F77462CD1DFFDB"
-			tasks: [{
-				id: "38E2FE16957BF2CC"
-				type: "item"
-				item: {
-					id: "techreborn:cell"
-					Count: 1b
-					tag: {
-						fluid: "kubejs:molten_radiance"
+			tasks: [
+				{
+					id: "38E2FE16957BF2CC"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "kubejs:molten_radiance"
+						}
 					}
 				}
-			}]
+			]
 		}
 		{
 			x: 23.0d
 			y: 3.5d
 			description: [
-				"Superheated mix the darkest substances known to you:"
+				"{ftbquests.chapter.6_raow.quests60.description0}"
 				""
-				"&bVantablack&r"
-				"&bVoidtouched-Compound&r"
-				"&bEnder Pearls&r"
+				"{ftbquests.chapter.6_raow.quests60.description2}"
+				"{ftbquests.chapter.6_raow.quests60.description3}"
+				"{ftbquests.chapter.6_raow.quests60.description4}"
 				""
-				"All under the molecule splitting power of a Separation Agent, crafted with the purest of Void..."
+				"{ftbquests.chapter.6_raow.quests60.description6}"
 			]
 			dependencies: [
 				"1A3925C20FDC3876"
 				"1CCB3210417B55B6"
 			]
 			id: "6328B6E2C86D8834"
-			tasks: [{
-				id: "20C665E85CBE42FD"
-				type: "item"
-				item: {
-					id: "techreborn:cell"
-					Count: 1b
-					tag: {
-						fluid: "kubejs:molten_shadowsteel"
+			tasks: [
+				{
+					id: "20C665E85CBE42FD"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "kubejs:molten_shadowsteel"
+						}
 					}
 				}
-			}]
+			]
 		}
 		{
-			title: "&6A Portal From Mars to Mercury?&r"
+			title: "{ftbquests.chapter.6_raow.quests61.title}"
 			x: 25.5d
 			y: 4.5d
 			shape: "square"
 			description: [
-				"Upon creating &6Radiant Residue&r and &6Shadow Fluid&r, the process for &cMercurian Stone&r becomes available."
+				"{ftbquests.chapter.6_raow.quests61.description0}"
 				""
-				"Designed as an extension to the Moon Portal -> Mars Portal Chain, the Mercury portal must be created on Mars and is once again lit with an Astral Conduit."
+				"{ftbquests.chapter.6_raow.quests61.description2}"
 				""
-				"&6WARNING:&r It is advised you be careful, as the portal will always send you back from Mercury to Mars, meaning if you built the portal in the Overworld you may not have a way back anymore! Make sure to always chain Moon portals -> Mars portals -> Mercury portals."
+				"{ftbquests.chapter.6_raow.quests61.description4}"
 			]
 			hide_dependency_lines: true
 			dependencies: [
@@ -1744,64 +1888,74 @@
 			]
 			size: 1.5d
 			id: "239D3C8315C472C4"
-			tasks: [{
-				id: "600CC46FB00BACF2"
-				type: "item"
-				item: "createastral:mercurian_stone"
-				count: 10L
-			}]
+			tasks: [
+				{
+					id: "600CC46FB00BACF2"
+					type: "item"
+					item: "createastral:mercurian_stone"
+					count: 10L
+				}
+			]
 		}
 		{
-			title: "First step to Mercury."
+			title: "{ftbquests.chapter.6_raow.quests62.title}"
 			x: 8.0d
 			y: -7.0d
 			description: [
-				"Calorite can be &6Electrolysed&r into Quicksilver."
+				"{ftbquests.chapter.6_raow.quests62.description0}"
 				""
-				"This can in turn be melted down into &6Mercury&r"
+				"{ftbquests.chapter.6_raow.quests62.description2}"
 			]
 			dependencies: ["2291F6259C65D8F6"]
 			id: "09B37242E2CCAE8E"
-			tasks: [{
-				id: "713CF3FEAA2BE265"
-				type: "item"
-				item: "yttr:quicksilver"
-			}]
-			rewards: [{
-				id: "592909B5382CB537"
-				type: "item"
-				item: {
-					id: "techreborn:cell"
-					Count: 1b
-					tag: {
-						fluid: "techreborn:mercury"
+			tasks: [
+				{
+					id: "713CF3FEAA2BE265"
+					type: "item"
+					item: "yttr:quicksilver"
+				}
+			]
+			rewards: [
+				{
+					id: "592909B5382CB537"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "techreborn:mercury"
+						}
 					}
 				}
-			}]
+			]
 		}
 		{
 			x: 16.0d
 			y: -3.5d
-			subtitle: "The Warrior's Build Wand"
-			description: ["The Void Cleaver can slice blocks along a flat plane, allowing you to turn any solid block into a flexible slope block. Decorative and functional - Use this to build ramps with any block!"]
+			subtitle: "{ftbquests.chapter.6_raow.quests63.subtitle}"
+			description: ["{ftbquests.chapter.6_raow.quests63.description}"]
 			dependencies: ["7001A75C47B1DA1A"]
 			id: "4F50E37BACB25892"
-			tasks: [{
-				id: "28D9D9B6B45AE060"
-				type: "item"
-				item: {
-					id: "yttr:cleaver"
-					Count: 1b
-					tag: {
-						Damage: 0
+			tasks: [
+				{
+					id: "28D9D9B6B45AE060"
+					type: "item"
+					item: {
+						id: "yttr:cleaver"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
 					}
 				}
-			}]
-			rewards: [{
-				id: "21D6FC083CB0F3FC"
-				type: "item"
-				item: "astralfoods:shimmered_apple"
-			}]
+			]
+			rewards: [
+				{
+					id: "21D6FC083CB0F3FC"
+					type: "item"
+					item: "astralfoods:shimmered_apple"
+				}
+			]
 		}
 	]
 	quest_links: [ ]

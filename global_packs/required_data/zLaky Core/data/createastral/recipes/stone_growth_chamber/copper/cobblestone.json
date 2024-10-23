@@ -6,7 +6,7 @@
 		{
 			"type": "custommachinery:structure",
 			"keys": {
-				"a": "create:copper_casing",
+				"a": "minecraft:stone_bricks",
 				"l": "minecraft:lava",
 				"g": "minecraft:glass"
 			},
@@ -14,12 +14,12 @@
 				[
 					"aaa",
 					"aaa",
-					"aaa"
+					"ama"
 				],
 				[
 					"ggg",
 					"glg",
-					"gmg"
+					"ggg"
 				],
 				[
 					"aaa",
@@ -30,14 +30,9 @@
 		},
 		{
 			"type": "custommachinery:item",
-			"item": "minecraft:andesite",
+			"item": "minecraft:cobblestone",
 			"amount": 1,
 			"mode": "output"
-		},
-		{
-			"type": "custommachinery:dimension",
-			"filter": ["ad_astra:moon_orbit", "ad_astra:mars_orbit", "ad_astra:venus_orbit", "ad_astra:glacio_orbit", "ad_astra:mercury_orbit", "ad_astra:moon", "ad_astra:mars", "ad_astra:venus", "ad_astra:glacio", "ad_astra:mercury"],
-			"blacklist": true
 		}
 	]
 }

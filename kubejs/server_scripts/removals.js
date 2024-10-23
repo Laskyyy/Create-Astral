@@ -155,7 +155,7 @@ onEvent("recipes", (event) => {
         },
         { id: "techreborn:crafting_table/paper" },
         //Create
-
+        { output: "create:track" },
         { output: "create:blaze_cake" },
         { output: "create:blaze_cake_base" },
         { output: "create:blaze_burner" },
@@ -206,8 +206,6 @@ onEvent("recipes", (event) => {
         { type: "create:crushing", input: "create:scorchia" },
         { type: "create:crushing", input: "minecraft:cobblestone" },
         { type: "create:mixing", output: "create:brass_ingot" },
-        { type: "create:crushing", input: "minecraft:netherrack" },
-        { type: "create:splashing", input: "minecraft:soul_sand" },
         { type: "create:splashing", input: "minecraft:red_sand" },
         { type: "create:haunting", input: "minecraft:red_sand" },
         {
@@ -239,7 +237,6 @@ onEvent("recipes", (event) => {
             type: "create:item_application",
         },
         { mod: "create", output: "minecraft:andesite" },
-        { input: "create:blaze_burner" },
 
         // Create Deco
 
@@ -435,6 +432,8 @@ onEvent("recipes", (event) => {
         { output: "phonos:radio_player_piano" },
         { output: "phonos:radio_jukebox" },
         { output: "phonos:redstone_chip" },
+        { output: "create:andesite_alloy_block" },
+        { input: "create:andesite_alloy_block" },
 
         { mod: "doodads" },
         { mod: "extended_drawers" },
@@ -547,9 +546,7 @@ onEvent("recipes", (event) => {
         { output: "minecraft:diamond_ore" },
         { output: "minecraft:emerald_ore" },
         { output: "minecraft:blackstone" },
-        { output: "minecraft:gold_nugget", input: "minecraft:soul_sand" },
         { output: "minecraft:gravel", input: "techreborn:granite_dust" },
-        { output: "minecraft:gold_nugget", input: "minecraft:soul_soil" },
         { output: "ae2:silicon" },
         { output: "blahaj:bread" },
         { id: "techreborn:centrifuge/redstone" }, // remove other version of centrifuging certus quartz

@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 3
 	filename: "astral_signals"
-	title: "&k1.5&r) Astral Signals"
+	title: "{ftbquests.chapter.astral_signals.title}"
 	icon: "astralsignals:signal_coordinator_dummy"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -98,116 +98,130 @@
 		{
 			x: 0.5d
 			y: 0.5d
-			subtitle: "Long-forgotten &astargazers"
+			subtitle: "{ftbquests.chapter.astral_signals.quests0.subtitle}"
 			description: [
-				"This satellite dish eminates with a sense of meaning and wonder, but also chaos and destruction."
+				"{ftbquests.chapter.astral_signals.quests0.description0}"
 				""
-				"It has seen the sky and the stars beyond, and it has seen the Earth and the end of days."
+				"{ftbquests.chapter.astral_signals.quests0.description2}"
 				""
-				"&7Restore its purpose."
+				"{ftbquests.chapter.astral_signals.quests0.description4}"
 			]
 			dependencies: ["0BCFACD1E9B83FA3"]
 			hide: true
 			dependency_requirement: "one_completed"
 			id: "6A7E9B1D97D7F5F6"
-			tasks: [{
-				id: "168E16EBC1F6D259"
-				type: "item"
-				item: "astralsignals:ancient_receiver"
-			}]
+			tasks: [
+				{
+					id: "168E16EBC1F6D259"
+					type: "item"
+					item: "astralsignals:ancient_receiver"
+				}
+			]
 		}
 		{
 			x: 2.0d
 			y: 0.5d
-			subtitle: "Reviving the &6tradition"
+			subtitle: "{ftbquests.chapter.astral_signals.quests1.subtitle}"
 			description: [
-				"Looking to &ba clear sky&r reveals the secrets of the heavens."
+				"{ftbquests.chapter.astral_signals.quests1.description0}"
 				""
-				"&7Observe the unknown."
+				"{ftbquests.chapter.astral_signals.quests1.description2}"
 			]
 			dependencies: [
 				"6A7E9B1D97D7F5F6"
 				"2014C5E0EA557199"
 			]
 			id: "38C4272C58E5D202"
-			tasks: [{
-				id: "39B5C3E37EA41780"
-				type: "item"
-				item: {
-					id: "custommachinery:custom_machine_item"
-					Count: 1b
-					tag: {
-						machine: "astralsignals:signal_coordinator"
+			tasks: [
+				{
+					id: "39B5C3E37EA41780"
+					type: "item"
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "astralsignals:signal_coordinator"
+						}
 					}
 				}
-			}]
-			rewards: [{
-				id: "7395D02086BE7D22"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 5687404501397719867L
-			}]
+			]
+			rewards: [
+				{
+					id: "7395D02086BE7D22"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5687404501397719867L
+				}
+			]
 		}
 		{
 			x: 5.5d
 			y: -0.5d
-			subtitle: "Your gateway to the &3Universe"
+			subtitle: "{ftbquests.chapter.astral_signals.quests2.subtitle}"
 			description: [
-				"Utilising your awakened beacons against &bthe clear sky,&r your telescope can get something from it."
+				"{ftbquests.chapter.astral_signals.quests2.description0}"
 				""
-				"&Break the shroud."
+				"{ftbquests.chapter.astral_signals.quests2.description2}"
 			]
 			dependencies: [
 				"22D73D57C82D4297"
 				"4A09D2D32FC1623D"
 			]
 			id: "37A372C5779194DA"
-			tasks: [{
-				id: "00A4A6D504BD8143"
-				type: "item"
-				item: {
-					id: "custommachinery:custom_machine_item"
-					Count: 1b
-					tag: {
-						machine: "astralsignals:radio_telescope"
+			tasks: [
+				{
+					id: "00A4A6D504BD8143"
+					type: "item"
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "astralsignals:radio_telescope"
+						}
 					}
 				}
-			}]
-			rewards: [{
-				id: "79148E1CCF9DB6AF"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 5687404501397719867L
-			}]
+			]
+			rewards: [
+				{
+					id: "79148E1CCF9DB6AF"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5687404501397719867L
+				}
+			]
 		}
 		{
 			x: 7.5d
 			y: 0.5d
-			subtitle: "Put it through a &3converter."
+			subtitle: "{ftbquests.chapter.astral_signals.quests3.subtitle}"
 			description: [
-				"Two possibilities exist: either we are alone in this universe, or we are not."
+				"{ftbquests.chapter.astral_signals.quests3.description0}"
 				""
-				"&7Both are equally as terrifying."
+				"{ftbquests.chapter.astral_signals.quests3.description2}"
 			]
 			dependencies: ["7C4ED98970F918BE"]
 			id: "6821F86937D5E499"
-			tasks: [{
-				id: "17086DC89D68E863"
-				type: "item"
-				item: {
-					id: "custommachinery:custom_machine_item"
-					Count: 1b
-					tag: {
-						machine: "astralsignals:analog_decryptor"
+			tasks: [
+				{
+					id: "17086DC89D68E863"
+					type: "item"
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "astralsignals:analog_decryptor"
+						}
 					}
 				}
-			}]
-			rewards: [{
-				id: "75A0ECA6CF5F6A1D"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 5687404501397719867L
-			}]
+			]
+			rewards: [
+				{
+					id: "75A0ECA6CF5F6A1D"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5687404501397719867L
+				}
+			]
 		}
 		{
 			x: 13.0d
@@ -215,17 +229,19 @@
 			hide_dependency_lines: true
 			dependencies: ["33856BEC179B720A"]
 			id: "69E916E1BA593CD7"
-			tasks: [{
-				id: "5E4FFE4DA21E3120"
-				type: "item"
-				item: {
-					id: "custommachinery:custom_machine_item"
-					Count: 1b
-					tag: {
-						machine: "astralsignals:vinyl_printer"
+			tasks: [
+				{
+					id: "5E4FFE4DA21E3120"
+					type: "item"
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "astralsignals:vinyl_printer"
+						}
 					}
 				}
-			}]
+			]
 			rewards: [
 				{
 					id: "226C1C645B4D196C"
@@ -243,11 +259,11 @@
 		{
 			x: 8.0d
 			y: 1.5d
-			subtitle: "Put it through a &3filter."
+			subtitle: "{ftbquests.chapter.astral_signals.quests5.subtitle}"
 			description: [
-				"So much Universe."
+				"{ftbquests.chapter.astral_signals.quests5.description0}"
 				""
-				"&7So little time."
+				"{ftbquests.chapter.astral_signals.quests5.description2}"
 			]
 			min_required_dependencies: 2
 			dependencies: [
@@ -256,32 +272,36 @@
 			]
 			hide: true
 			id: "740769C2802E7EE4"
-			tasks: [{
-				id: "7197A45C7E4BF708"
-				type: "item"
-				item: {
-					id: "custommachinery:custom_machine_item"
-					Count: 1b
-					tag: {
-						machine: "astralsignals:pp_decryptor"
+			tasks: [
+				{
+					id: "7197A45C7E4BF708"
+					type: "item"
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "astralsignals:pp_decryptor"
+						}
 					}
 				}
-			}]
-			rewards: [{
-				id: "273F92EA62A5EDBB"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 2053519168689179764L
-			}]
+			]
+			rewards: [
+				{
+					id: "273F92EA62A5EDBB"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2053519168689179764L
+				}
+			]
 		}
 		{
 			x: 8.5d
 			y: 2.5d
-			subtitle: "Put it through a &3denoiser."
+			subtitle: "{ftbquests.chapter.astral_signals.quests6.subtitle}"
 			description: [
-				"The Universe is under no obligation to make sense to you."
+				"{ftbquests.chapter.astral_signals.quests6.description0}"
 				""
-				"&7Prove it wrong."
+				"{ftbquests.chapter.astral_signals.quests6.description2}"
 			]
 			dependencies: [
 				"740769C2802E7EE4"
@@ -289,403 +309,457 @@
 			]
 			hide: true
 			id: "1AE5C771D29C9BC2"
-			tasks: [{
-				id: "2476A4ABD9F7ED31"
-				type: "item"
-				item: {
-					id: "custommachinery:custom_machine_item"
-					Count: 1b
-					tag: {
-						machine: "astralsignals:mp_decryptor"
+			tasks: [
+				{
+					id: "2476A4ABD9F7ED31"
+					type: "item"
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "astralsignals:mp_decryptor"
+						}
 					}
 				}
-			}]
-			rewards: [{
-				id: "1312D6B4ADE35F6C"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 1747526165463332193L
-			}]
+			]
+			rewards: [
+				{
+					id: "1312D6B4ADE35F6C"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 1747526165463332193L
+				}
+			]
 		}
 		{
 			x: 12.0d
 			y: 0.5d
-			subtitle: "Go &2exploring!"
+			subtitle: "{ftbquests.chapter.astral_signals.quests7.subtitle}"
 			dependencies: ["715E926DF4DED51A"]
 			id: "33856BEC179B720A"
-			tasks: [{
-				id: "032CD91F58FD0D72"
-				type: "item"
-				item: "astralsignals:polyvinyl_sheet"
-			}]
+			tasks: [
+				{
+					id: "032CD91F58FD0D72"
+					type: "item"
+					item: "astralsignals:polyvinyl_sheet"
+				}
+			]
 		}
 		{
 			x: 9.0d
 			y: 0.5d
-			subtitle: "Put a &4Garbled Data Drive&r in an Analog Decryptor."
+			subtitle: "{ftbquests.chapter.astral_signals.quests8.subtitle}"
 			dependencies: ["6821F86937D5E499"]
 			id: "04F638504B6D607C"
-			tasks: [{
-				id: "0DE59865D642E4F1"
-				type: "item"
-				item: "astralsignals:data_drive_dormant_t1"
-			}]
+			tasks: [
+				{
+					id: "0DE59865D642E4F1"
+					type: "item"
+					item: "astralsignals:data_drive_dormant_t1"
+				}
+			]
 		}
 		{
 			x: 9.5d
 			y: 1.5d
-			subtitle: "Put an &6Analagously Decrypted Data Drive&r in a Parallel Processing Decryptor."
-			description: ["A Parallel Processing Decryptor also requires &c50 E/t&r to function."]
+			subtitle: "{ftbquests.chapter.astral_signals.quests9.subtitle}"
+			description: ["{ftbquests.chapter.astral_signals.quests9.description}"]
 			dependencies: [
 				"04F638504B6D607C"
 				"740769C2802E7EE4"
 			]
 			hide: true
 			id: "3B9A0AB1F6BE839D"
-			tasks: [{
-				id: "453B3471841E3D90"
-				type: "item"
-				item: "astralsignals:data_drive_dormant_t2"
-			}]
+			tasks: [
+				{
+					id: "453B3471841E3D90"
+					type: "item"
+					item: "astralsignals:data_drive_dormant_t2"
+				}
+			]
 		}
 		{
 			x: 10.0d
 			y: 2.5d
-			subtitle: "Put a &2Parallel Decypted Data Drive&r in a Microphysical Decryptor."
-			description: ["A Microphysical Decryptor also requires &c250 E/t&r and a &cSubatomic Ingot&r to function."]
+			subtitle: "{ftbquests.chapter.astral_signals.quests10.subtitle}"
+			description: ["{ftbquests.chapter.astral_signals.quests10.description}"]
 			dependencies: [
 				"3B9A0AB1F6BE839D"
 				"1AE5C771D29C9BC2"
 			]
 			id: "3392473AE31BBF22"
-			tasks: [{
-				id: "0A74657FAC44BCBB"
-				type: "item"
-				item: "astralsignals:data_drive_dormant_t3"
-			}]
+			tasks: [
+				{
+					id: "0A74657FAC44BCBB"
+					type: "item"
+					item: "astralsignals:data_drive_dormant_t3"
+				}
+			]
 		}
 		{
 			x: 12.5d
 			y: 1.5d
-			subtitle: "Infuse with &5Shimmer!"
+			subtitle: "{ftbquests.chapter.astral_signals.quests11.subtitle}"
 			dependencies: [
 				"0DB6A844CCA38CD5"
 				"33856BEC179B720A"
 			]
 			id: "5CF8F8C8E59F50DF"
-			tasks: [{
-				id: "29BEBA914920520A"
-				type: "item"
-				item: "astralsignals:shimmer_polyvinyl_sheet"
-			}]
+			tasks: [
+				{
+					id: "29BEBA914920520A"
+					type: "item"
+					item: "astralsignals:shimmer_polyvinyl_sheet"
+				}
+			]
 		}
 		{
 			x: 13.0d
 			y: 2.5d
-			subtitle: "Plate in &3Yttrium!"
+			subtitle: "{ftbquests.chapter.astral_signals.quests12.subtitle}"
 			dependencies: [
 				"6233CD80C11EFA15"
 				"5CF8F8C8E59F50DF"
 			]
 			id: "41371FAD5638F39F"
-			tasks: [{
-				id: "382D000DA82D49B5"
-				type: "item"
-				item: "astralsignals:yttric_polyvinyl_sheet"
-			}]
+			tasks: [
+				{
+					id: "382D000DA82D49B5"
+					type: "item"
+					item: "astralsignals:yttric_polyvinyl_sheet"
+				}
+			]
 		}
 		{
 			x: 5.0d
 			y: -1.5d
-			subtitle: "A medium to store your &anew discoveries"
-			description: ["&7Develop a hoarding problem."]
+			subtitle: "{ftbquests.chapter.astral_signals.quests13.subtitle}"
+			description: ["{ftbquests.chapter.astral_signals.quests13.description}"]
 			hide_dependency_lines: true
 			dependencies: ["4A09D2D32FC1623D"]
 			id: "22D73D57C82D4297"
-			tasks: [{
-				id: "69D06242C1241308"
-				type: "item"
-				item: "astralsignals:data_drive_blank"
-			}]
+			tasks: [
+				{
+					id: "69D06242C1241308"
+					type: "item"
+					item: "astralsignals:data_drive_blank"
+				}
+			]
 		}
 		{
 			x: 7.0d
 			y: -0.5d
-			subtitle: "W&kh&rat is t&khis&r &5hi&kd&r&5in&kg&r&5?"
+			subtitle: "{ftbquests.chapter.astral_signals.quests14.subtitle}"
 			description: [
-				"&kHi there I'm just writing this paragraph so it looks like I've put &4effort&r &kinto this quest &2description."
+				"{ftbquests.chapter.astral_signals.quests14.description0}"
 				""
-				"&7&kMeow Moew WolfGif."
+				"{ftbquests.chapter.astral_signals.quests14.description2}"
 			]
 			dependencies: ["37A372C5779194DA"]
 			id: "7C4ED98970F918BE"
-			tasks: [{
-				id: "28B44FE63BD26954"
-				type: "item"
-				item: "astralsignals:data_drive_garbled"
-			}]
-			rewards: [{
-				id: "7E3DF9BD78DCE107"
-				type: "item"
-				item: "astralsignals:data_drive_blank"
-			}]
+			tasks: [
+				{
+					id: "28B44FE63BD26954"
+					type: "item"
+					item: "astralsignals:data_drive_garbled"
+				}
+			]
+			rewards: [
+				{
+					id: "7E3DF9BD78DCE107"
+					type: "item"
+					item: "astralsignals:data_drive_blank"
+				}
+			]
 		}
 		{
 			x: 1.5d
 			y: -0.5d
-			subtitle: "A telescope requires something to tell it &3where to look."
+			subtitle: "{ftbquests.chapter.astral_signals.quests15.subtitle}"
 			description: [
-				"This is where &2you&r step in."
+				"{ftbquests.chapter.astral_signals.quests15.description0}"
 				""
-				"&7Provide the vessel."
+				"{ftbquests.chapter.astral_signals.quests15.description2}"
 			]
 			hide_dependency_lines: true
 			dependencies: ["6A7E9B1D97D7F5F6"]
 			id: "2014C5E0EA557199"
-			tasks: [{
-				id: "5BAA2CFB98CD16B7"
-				type: "item"
-				item: "astralsignals:dormant_signal_beacon"
-			}]
+			tasks: [
+				{
+					id: "5BAA2CFB98CD16B7"
+					type: "item"
+					item: "astralsignals:dormant_signal_beacon"
+				}
+			]
 		}
 		{
 			x: 3.5d
 			y: 0.5d
-			subtitle: "Finish &athe scan."
-			description: ["&7Search the skies."]
+			subtitle: "{ftbquests.chapter.astral_signals.quests16.subtitle}"
+			description: ["{ftbquests.chapter.astral_signals.quests16.description}"]
 			dependencies: ["38C4272C58E5D202"]
 			id: "4BE6535AC9215A17"
-			tasks: [{
-				id: "72C3EE1F06CA5DFC"
-				type: "item"
-				item: "astralsignals:stirring_signal_beacon"
-			}]
+			tasks: [
+				{
+					id: "72C3EE1F06CA5DFC"
+					type: "item"
+					item: "astralsignals:stirring_signal_beacon"
+				}
+			]
 		}
 		{
 			x: 5.0d
 			y: 0.5d
-			subtitle: "Secrets &5within"
-			description: ["&7Awaken the Beacon."]
+			subtitle: "{ftbquests.chapter.astral_signals.quests17.subtitle}"
+			description: ["{ftbquests.chapter.astral_signals.quests17.description}"]
 			dependencies: ["4BE6535AC9215A17"]
 			id: "4A09D2D32FC1623D"
-			tasks: [{
-				id: "6E45E03FD9ABE5B2"
-				type: "item"
-				item: "astralsignals:homing_signal_beacon"
-			}]
-			rewards: [{
-				id: "3847D923F677A6CF"
-				type: "item"
-				item: "astralsignals:dormant_signal_beacon"
-			}]
+			tasks: [
+				{
+					id: "6E45E03FD9ABE5B2"
+					type: "item"
+					item: "astralsignals:homing_signal_beacon"
+				}
+			]
+			rewards: [
+				{
+					id: "3847D923F677A6CF"
+					type: "item"
+					item: "astralsignals:dormant_signal_beacon"
+				}
+			]
 		}
 		{
 			x: 6.5d
 			y: 1.5d
-			subtitle: "Great &apioneers"
+			subtitle: "{ftbquests.chapter.astral_signals.quests18.subtitle}"
 			description: [
-				"This small chip fits in your palm, yet the power of a &5supercomputer&r flows through its transistors."
+				"{ftbquests.chapter.astral_signals.quests18.description0}"
 				""
-				"&7Upgrade your gaming setup."
+				"{ftbquests.chapter.astral_signals.quests18.description2}"
 			]
 			dependencies: ["0BCFACD1E9B83FA3"]
 			hide: true
 			dependency_requirement: "one_completed"
 			invisible: true
 			id: "2C0436F31A5E966D"
-			tasks: [{
-				id: "63B80B6FBC04CEA9"
-				type: "item"
-				item: "astralsignals:parallel_processor"
-			}]
+			tasks: [
+				{
+					id: "63B80B6FBC04CEA9"
+					type: "item"
+					item: "astralsignals:parallel_processor"
+				}
+			]
 		}
 		{
 			x: 7.0d
 			y: 2.5d
-			subtitle: "The people who &4cracked the Cosmos."
+			subtitle: "{ftbquests.chapter.astral_signals.quests19.subtitle}"
 			description: [
-				"The sheer &9scientific potential&r of a relic like this - whoever left it here must have been &6comparable to gods."
+				"{ftbquests.chapter.astral_signals.quests19.description0}"
 				""
-				"&7Use the most powerful scientific device ever created to fuel your gambling addiction."
+				"{ftbquests.chapter.astral_signals.quests19.description2}"
 			]
 			dependencies: ["0BCFACD1E9B83FA3"]
 			hide: true
 			dependency_requirement: "one_completed"
 			invisible: true
 			id: "48662E4F9FCF6CC9"
-			tasks: [{
-				id: "481B571563E77B2F"
-				type: "item"
-				item: "astralsignals:microphysical_probe"
-			}]
+			tasks: [
+				{
+					id: "481B571563E77B2F"
+					type: "item"
+					item: "astralsignals:microphysical_probe"
+				}
+			]
 		}
 		{
-			title: "Any Analogously Decrypted Drive"
+			title: "{ftbquests.chapter.astral_signals.quests20.title}"
 			x: 10.5d
 			y: 0.5d
-			subtitle: "Awaken it."
+			subtitle: "{ftbquests.chapter.astral_signals.quests20.subtitle}"
 			dependencies: ["04F638504B6D607C"]
 			id: "715E926DF4DED51A"
-			tasks: [{
-				id: "293DC774A0C0CE72"
-				type: "item"
-				title: "Any Tier 1 Decrypted Drive"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "astralsignals:drives_decrypted_t1"
+			tasks: [
+				{
+					id: "293DC774A0C0CE72"
+					type: "item"
+					title: "{ftbquests.chapter.astral_signals.quests20.tasks0.title}"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "astralsignals:drives_decrypted_t1"
+						}
 					}
 				}
-			}]
+			]
 		}
 		{
-			title: "Any Parallel Decrypted Drive"
+			title: "{ftbquests.chapter.astral_signals.quests21.title}"
 			x: 11.0d
 			y: 1.5d
-			subtitle: "Disturb it."
+			subtitle: "{ftbquests.chapter.astral_signals.quests21.subtitle}"
 			dependencies: ["3B9A0AB1F6BE839D"]
 			id: "0DB6A844CCA38CD5"
-			tasks: [{
-				id: "6D0899C9AF55448A"
-				type: "item"
-				title: "Any Tier 2 Decrypted Drive"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "astralsignals:drives_decrypted_t2"
+			tasks: [
+				{
+					id: "6D0899C9AF55448A"
+					type: "item"
+					title: "{ftbquests.chapter.astral_signals.quests21.tasks0.title}"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "astralsignals:drives_decrypted_t2"
+						}
 					}
 				}
-			}]
-			rewards: [{
-				id: "03AB975ACCC39B3C"
-				type: "item"
-				item: "astralsignals:polyvinyl_sheet"
-			}]
+			]
+			rewards: [
+				{
+					id: "03AB975ACCC39B3C"
+					type: "item"
+					item: "astralsignals:polyvinyl_sheet"
+				}
+			]
 		}
 		{
-			title: "Any Microphysically Decrypted Drive"
+			title: "{ftbquests.chapter.astral_signals.quests22.title}"
 			x: 11.5d
 			y: 2.5d
-			subtitle: "Gamble it all away."
+			subtitle: "{ftbquests.chapter.astral_signals.quests22.subtitle}"
 			dependencies: ["3392473AE31BBF22"]
 			hide: true
 			id: "6233CD80C11EFA15"
-			tasks: [{
-				id: "7D2AD81E4176AD79"
-				type: "item"
-				title: "Any Tier 3 Decrypted Drive"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "astralsignals:drives_decrypted_t3"
+			tasks: [
+				{
+					id: "7D2AD81E4176AD79"
+					type: "item"
+					title: "{ftbquests.chapter.astral_signals.quests22.tasks0.title}"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "astralsignals:drives_decrypted_t3"
+						}
 					}
 				}
-			}]
-			rewards: [{
-				id: "5C1B56A8BE2A7617"
-				type: "item"
-				item: "astralsignals:polyvinyl_sheet"
-			}]
+			]
+			rewards: [
+				{
+					id: "5C1B56A8BE2A7617"
+					type: "item"
+					item: "astralsignals:polyvinyl_sheet"
+				}
+			]
 		}
 		{
-			title: "Any Yttric Polyvinyl Music Disc"
+			title: "{ftbquests.chapter.astral_signals.quests23.title}"
 			x: 14.5d
 			y: 2.5d
-			subtitle: "Ponder"
+			subtitle: "{ftbquests.chapter.astral_signals.quests23.subtitle}"
 			dependencies: [
 				"69E916E1BA593CD7"
 				"41371FAD5638F39F"
 			]
 			id: "167AAE95CC5E18D4"
-			tasks: [{
-				id: "6EB6D697BBFC0802"
-				type: "item"
-				title: "Any Tier 3 Music Disc"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "astralsignals:discs_t3"
+			tasks: [
+				{
+					id: "6EB6D697BBFC0802"
+					type: "item"
+					title: "{ftbquests.chapter.astral_signals.quests23.tasks0.title}"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "astralsignals:discs_t3"
+						}
 					}
 				}
-			}]
+			]
 		}
 		{
-			title: "Any Shimmer Polyvinyl Music Disc"
+			title: "{ftbquests.chapter.astral_signals.quests24.title}"
 			x: 14.0d
 			y: 1.5d
-			subtitle: "Hear"
+			subtitle: "{ftbquests.chapter.astral_signals.quests24.subtitle}"
 			dependencies: [
 				"69E916E1BA593CD7"
 				"5CF8F8C8E59F50DF"
 			]
 			id: "7958451C6004D845"
-			tasks: [{
-				id: "601D3461708EBF93"
-				type: "item"
-				title: "Any Tier 2 Music Disc"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "astralsignals:discs_t2"
+			tasks: [
+				{
+					id: "601D3461708EBF93"
+					type: "item"
+					title: "{ftbquests.chapter.astral_signals.quests24.tasks0.title}"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "astralsignals:discs_t2"
+						}
 					}
 				}
-			}]
+			]
 		}
 		{
-			title: "Any Basic Polyvinyl Music Disc"
+			title: "{ftbquests.chapter.astral_signals.quests25.title}"
 			x: 13.5d
 			y: 0.5d
-			subtitle: "Listen"
+			subtitle: "{ftbquests.chapter.astral_signals.quests25.subtitle}"
 			dependencies: [
 				"69E916E1BA593CD7"
 				"33856BEC179B720A"
 			]
 			id: "2752CD6F9AA7448A"
-			tasks: [{
-				id: "191D0BC743E5EC59"
-				type: "item"
-				title: "Any Tier 1 Music Disc"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "astralsignals:discs_t1"
+			tasks: [
+				{
+					id: "191D0BC743E5EC59"
+					type: "item"
+					title: "{ftbquests.chapter.astral_signals.quests25.tasks0.title}"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "astralsignals:discs_t1"
+						}
 					}
 				}
-			}]
+			]
 		}
 		{
 			x: 5.5d
 			y: -2.5d
-			subtitle: "Reset your &cunwanted drives."
-			description: ["&7Purge and persevere."]
+			subtitle: "{ftbquests.chapter.astral_signals.quests26.subtitle}"
+			description: ["{ftbquests.chapter.astral_signals.quests26.description}"]
 			dependencies: ["22D73D57C82D4297"]
 			id: "42ED20F23C62FEF3"
-			tasks: [{
-				id: "512D021D34EF6DCD"
-				type: "item"
-				item: {
-					id: "custommachinery:custom_machine_item"
-					Count: 1b
-					tag: {
-						machine: "astralsignals:drive_eraser"
+			tasks: [
+				{
+					id: "512D021D34EF6DCD"
+					type: "item"
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "astralsignals:drive_eraser"
+						}
 					}
 				}
-			}]
-			rewards: [{
-				id: "3850DEDC7492CB5A"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 5687404501397719867L
-			}]
+			]
+			rewards: [
+				{
+					id: "3850DEDC7492CB5A"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5687404501397719867L
+				}
+			]
 		}
 		{
-			title: "All Basic Polyvinyl Music Discs"
+			title: "{ftbquests.chapter.astral_signals.quests27.title}"
 			x: 15.0d
 			y: 0.5d
 			dependencies: ["2752CD6F9AA7448A"]
@@ -757,14 +831,16 @@
 					item: "minecraft:music_disc_otherside"
 				}
 			]
-			rewards: [{
-				id: "448510290080C367"
-				type: "item"
-				item: "astralsignals:polyvinyl_sheet"
-			}]
+			rewards: [
+				{
+					id: "448510290080C367"
+					type: "item"
+					item: "astralsignals:polyvinyl_sheet"
+				}
+			]
 		}
 		{
-			title: "All Shimmer Polyvinyl Music Discs"
+			title: "{ftbquests.chapter.astral_signals.quests28.title}"
 			x: 15.5d
 			y: 1.5d
 			dependencies: ["7958451C6004D845"]
@@ -791,14 +867,16 @@
 					item: "yttr:music_disc_memorandum"
 				}
 			]
-			rewards: [{
-				id: "6E524B5AC34CD5DA"
-				type: "item"
-				item: "astralsignals:polyvinyl_sheet"
-			}]
+			rewards: [
+				{
+					id: "6E524B5AC34CD5DA"
+					type: "item"
+					item: "astralsignals:polyvinyl_sheet"
+				}
+			]
 		}
 		{
-			title: "All Yttric Polyvinyl Music Discs"
+			title: "{ftbquests.chapter.astral_signals.quests29.title}"
 			x: 16.0d
 			y: 2.5d
 			dependencies: ["167AAE95CC5E18D4"]
@@ -825,14 +903,16 @@
 					item: "yttr:music_disc_torus"
 				}
 			]
-			rewards: [{
-				id: "06CD5013E9BD51CA"
-				type: "item"
-				item: "astralsignals:polyvinyl_sheet"
-			}]
+			rewards: [
+				{
+					id: "06CD5013E9BD51CA"
+					type: "item"
+					item: "astralsignals:polyvinyl_sheet"
+				}
+			]
 		}
 		{
-			title: "Gambling pays off, trust me."
+			title: "{ftbquests.chapter.astral_signals.quests30.title}"
 			icon: {
 				id: "phonos:custom_music_disc"
 				Count: 1b
@@ -845,15 +925,15 @@
 			}
 			x: 16.5d
 			y: 3.5d
-			subtitle: "Gotta catch 'em all!"
+			subtitle: "{ftbquests.chapter.astral_signals.quests30.subtitle}"
 			description: [
-				"Yes, this is the end of the questline."
+				"{ftbquests.chapter.astral_signals.quests30.description0}"
 				""
-				"Yes, the entire point was to make music discs."
+				"{ftbquests.chapter.astral_signals.quests30.description2}"
 				""
-				"Yes, I disabled the skeleton-killing-creeper method."
+				"{ftbquests.chapter.astral_signals.quests30.description4}"
 				""
-				"No, there is no other purpose of this questline."
+				"{ftbquests.chapter.astral_signals.quests30.description6}"
 			]
 			dependencies: [
 				"6D0D09DC08F90BAC"
@@ -862,11 +942,13 @@
 			]
 			hide: true
 			id: "28DE28FBCF42CA8F"
-			tasks: [{
-				id: "25CE3E0C8022796C"
-				type: "checkmark"
-				title: "I can't stop winning!"
-			}]
+			tasks: [
+				{
+					id: "25CE3E0C8022796C"
+					type: "checkmark"
+					title: "{ftbquests.chapter.astral_signals.quests30.tasks0.title}"
+				}
+			]
 		}
 	]
 	quest_links: [ ]

@@ -1,5 +1,5 @@
 {
-    "name": "Vinyl Printer",
+    "name": "custommachinery.astralsignals.vinyl_printer",
     "appearance": {
         "block": "astralsignals:vinyl_printer_dummy"
     },
@@ -50,7 +50,7 @@
             "type": "custommachinery:status"
         },
         {
-            "text": "Vinyl Printer",
+            "text": "custommachinery.astralsignals.vinyl_printer.text",
             "x": 7,
             "y": 5,
             "type": "custommachinery:text"

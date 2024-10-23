@@ -22,6 +22,19 @@ onEvent("item.tags", (event) => {
             event.add("createastral:tank_unit_" + i, item);
     });
 
+    [
+        "astraladditions:ring_gold_cast",
+        "tconstruct:gold_platform", //Never add anything here with a melting value below a nugget, thx
+    ].forEach((item, index) => {
+        event.add("tconstruct:casts", item);
+        event.add("tconstruct:casts/gold", item);
+        event.add("tconstruct:casts/multi_use", item);
+        event.add("tconstruct:patterns", item);
+        event.add("tconstruct:patterns/reusable", item);
+    });
+
     event.add("c:slimeballs", "createastral:synthetic_slime");
     event.add("tconstruct:slime_block", "createastral:synthetic_slime_block");
+
+    event.add("c:raw_materials/cobalt", "createastral:crushed_raw_cobalt");
 });

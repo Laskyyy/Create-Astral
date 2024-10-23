@@ -15,7 +15,7 @@ onEvent("recipes", (event) => {
             ores: [
                 {
                     name: "tin",
-                    extra: "minecraft:iron_nugget",
+                    extra: "techreborn:silver_nugget",
                 },
                 {
                     name: "silver",
@@ -51,6 +51,17 @@ onEvent("recipes", (event) => {
                 {
                     name: "gadolinite",
                     extra: "techreborn:silver_nugget"
+                },
+            ],
+            suffix: "block",
+            crushed_prefix: "createastral"
+        },
+        {
+            mod: "tconstruct",
+            ores: [
+                {
+                    name: "cobalt",
+                    extra: "techreborn:tin_nugget"
                 },
             ],
             suffix: "block",
@@ -137,7 +148,8 @@ onEvent("recipes", (event) => {
         lead: {name: "techreborn:raw_lead", count: 1},
         silver: {name: "techreborn:raw_silver", count: 1},
         tin: {name: "techreborn:raw_tin", count: 1},
-        yttr: {name: "yttr:raw_gadolinite", count: 1}
+        yttr: {name: "yttr:raw_gadolinite", count: 1},
+        cobalt: {name: "tconstruct:raw_cobalt", count: 1}
     };
     let ORES = [
         // Earth Ores
@@ -156,6 +168,9 @@ onEvent("recipes", (event) => {
         // Misc
         {ore: "iron", name: "ad_astra:mercury_iron_ore", block: "ad_astra:mercury_cobblestone", bonus: 1},
         {ore: "yttr", name: "yttr:gadolinite", block: "ad_astra:mercury_cobblestone", bonus: 1},
+
+
+        {ore: "cobalt", name: "tconstruct:cobalt_ore", block: "ad_astra:moon_cobblestone", bonus: 1},
     ];
 
     // vanilla ores

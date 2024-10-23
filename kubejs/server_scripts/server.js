@@ -297,6 +297,9 @@ function lizardMiscChanges(event) {
         D: "techreborn:basic_machine_frame",
     });
 
+    // Change the resin basin recipe to use an Item Drain so that it can be crafted during chapter 2
+    event.replaceInput({id:"techreborn:crafting_table/machine/resin_basin"}, "techreborn:drain", "create:item_drain")
+
     // Buffed catwalk output. Seriously! Its so resource heavy!
     const CATWALK_MATERIALS = [
         ["gold", "create:golden_sheet"],

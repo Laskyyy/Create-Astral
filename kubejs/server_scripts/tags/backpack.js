@@ -24,7 +24,8 @@ onEvent("item.tags", (event) => {
         "automobility:crowbar",
         "doodads:slingshot",
         "doodads:paintbrush",
-        "doodads:glare_staff"
+        "doodads:glare_staff",
+        "create:super_glue"
     ].forEach((item) => {
         event.add("travelersbackpack:acceptable_tools", item);
     });
