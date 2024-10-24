@@ -682,16 +682,33 @@ onEvent("recipes", (event) => {
         ],
         [{mod: "computercraft"}, "minecraft:iron_ingot", "create:iron_sheet"],
         [
-            {output: "ae2:fluid_cell_housing"},
+            [
+                { id: "ae2:network/cells/item_cell_housing" },
+                { id: "ae2:network/cells/view_cell" },
+                { id: "ae2:network/cells/item_storage_cell_1k" },
+                { id: "ae2:network/cells/item_storage_cell_4k" },
+                { id: "ae2:network/cells/item_storage_cell_16k" },
+                { id: "ae2:network/cells/item_storage_cell_64k" },
+                { id: "ae2:network/cells/item_storage_cell_256k" },
+                { id: "ae2:network/cells/spatial_storage_cell_2_cubed" },
+                { id: "ae2:network/cells/spatial_storage_cell_16_cubed" },
+                { id: "ae2:network/cells/spatial_storage_cell_128_cubed" }
+            ],
             "techreborn:silver_plate",
-            "create:copper_casing",
+            "create:andesite_casing"
         ],
         [
-            {output: "ae2:item_cell_housing"},
+            [
+                { id: "ae2:network/cells/fluid_cell_housing" },
+                { id: "ae2:network/cells/fluid_storage_cell_1k" },
+                { id: "ae2:network/cells/fluid_storage_cell_4k" },
+                { id: "ae2:network/cells/fluid_storage_cell_16k" },
+                { id: "ae2:network/cells/fluid_storage_cell_64k" },
+                { id: "ae2:network/cells/fluid_storage_cell_256k" },
+            ],
             "techreborn:silver_plate",
-            "create:andesite_casing",
+            "create:copper_casing"
         ],
-
         [
             {output: "techreborn:industrial_grinder"},
             "techreborn:electronic_circuit",

@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:polished_andesite",
+        "create:cut_andesite",
+        "create:polished_cut_andesite",
+        "create:cut_andesite_bricks",
+        "create:small_andesite_bricks",
+        "chipped:andesite_1"
+    ]
+}

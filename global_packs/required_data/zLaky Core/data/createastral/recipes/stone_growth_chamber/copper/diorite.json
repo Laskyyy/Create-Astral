@@ -6,9 +6,9 @@
 		{
 			"type": "custommachinery:structure",
 			"keys": {
-				"a": "ad_astra:polished_venus_stone",
+				"a": "createastral:stone_growth_chamber/building_blocks/diorite",
 				"l": "minecraft:lava",
-				"g": "minecraft:glass"
+				"g": "createastral:stone_growth_chamber/glass_blocks"
 			},
 			"pattern": [
 				[
@@ -30,7 +30,7 @@
 		},
 		{
 			"type": "custommachinery:item",
-			"item": "ad_astra:venus_cobblestone",
+			"item": "minecraft:diorite",
 			"amount": 1,
 			"mode": "output"
 		}

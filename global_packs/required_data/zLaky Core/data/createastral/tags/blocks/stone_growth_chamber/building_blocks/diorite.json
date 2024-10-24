@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:polished_diorite",
+        "create:cut_diorite",
+        "create:polished_cut_diorite",
+        "create:cut_diorite_bricks",
+        "create:small_diorite_bricks",
+        "chipped:diorite_1"
+    ]
+}
