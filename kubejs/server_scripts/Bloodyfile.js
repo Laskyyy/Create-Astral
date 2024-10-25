@@ -9,7 +9,7 @@ onEvent("recipes", (event) => {
             event.recipes.createCutting("create:dough","create:dough"),]
         )
         .transitionalItem("create:dough")
-        .loops(3);
+        .loops(2);
 
     event.recipes
         .createSequencedAssembly(
@@ -104,6 +104,29 @@ onEvent("recipes", (event) => {
                                              "createastral:seitan"),
                 event.recipes.createCutting("createastral:seitan",
                                             "createastral:seitan"),
+            ]
+        )
+        .transitionalItem("createastral:seitan")
+        .loops (1);
+
+        event.recipes
+        .createSequencedAssembly(
+            ["minecraft:egg"],
+            ["createastral:seitan"],
+            [
+                event.recipes.createDeploying("createastral:seitan", [
+                    "createastral:seitan",
+                    "techreborn:calcite_dust",
+                ]),
+                event.recipes.createFilling("createastral:seitan",
+                ["createastral:seitan",{ fluid: "tconstruct:earth_slime", amount: 10 * mB }    
+                ]),
+                event.recipes.createPressing("createastral:seitan",
+                                             "createastral:seitan"),
+
+                event.recipes.createFilling("createastral:seitan",
+                ["createastral:seitan",{ fluid: "kubejs:shimmer", amount: 10 * mB }    //For the bit of magic required to create life
+                ]),
             ]
         )
         .transitionalItem("createastral:seitan")
@@ -211,6 +234,13 @@ const mixings = [
                 ],
                 heat: "",
                 time: null,
+            },{
+                output: "10x minecraft:kelp", // If you got the bonemeal, some kelp can be arranged
+                input: ["minecraft:kelp","minecraft:bone_meal",
+                    { fluid: "minecraft:water", amount: BUCKET },
+                ],
+                heat: "",
+                time: 120,
             },{
                 output: {fluid: "tconstruct:blazing_blood", amount: BUCKET },
                 input: [
