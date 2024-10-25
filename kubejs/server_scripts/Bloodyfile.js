@@ -227,7 +227,7 @@ const mixings = [
                 heat: "",
                 time: null,
             },{
-                output: "16x minecraft:moss_block", //Yea Moss is automatable now without breaking contraptions
+                output: "24x minecraft:moss_block", //Yea Moss is automatable now without breaking contraptions, More Blocks out than in? MAGIC
                 input: [
                     "16x minecraft:mossy_cobblestone","minecraft:moss_block","1x minecraft:bone_meal",
                     { fluid: "minecraft:water", amount: BUCKET },

@@ -209,6 +209,7 @@ onEvent("recipes", (event) => {
         { type: "create:mixing", output: "create:brass_ingot" },
         { type: "create:splashing", input: "minecraft:red_sand" },
         { type: "create:haunting", input: "minecraft:red_sand" },
+        { type: "create:haunting", input: "minecraft:moss_block" },
         {
             type: "create:mixing",
             output: "tconstruct:rose_gold_ingot",
