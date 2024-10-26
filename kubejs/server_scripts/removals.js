@@ -205,9 +205,11 @@ onEvent("recipes", (event) => {
         { type: "create:crushing", input: "create:scoria" },
         { type: "create:crushing", input: "create:scorchia" },
         { type: "create:crushing", input: "minecraft:cobblestone" },
+        { type: "create:crushing", output: "create:cinder_flour" },
         { type: "create:mixing", output: "create:brass_ingot" },
         { type: "create:splashing", input: "minecraft:red_sand" },
         { type: "create:haunting", input: "minecraft:red_sand" },
+        { type: "create:haunting", input: "minecraft:moss_block" },
         {
             type: "create:mixing",
             output: "tconstruct:rose_gold_ingot",
