@@ -468,16 +468,6 @@ function sequencedAssemblyRecipes(event) {
         .loops(1);
 
     event.recipes
-        .createSequencedAssembly([Item.of("astralfoods:shimmered_apple").withChance(1)], "minecraft:apple", [
-            event.recipes.createDeploying("minecraft:apple", ["minecraft:apple", "tconstruct:ender_slime_crystal"]),
-            event.recipes.createFilling("minecraft:apple", [
-                "minecraft:apple",
-                { fluid: "kubejs:shimmer", amount: BUCKET / 3 },
-            ]),
-        ])
-        .transitionalItem("minecraft:apple")
-        .loops(1);
-    event.recipes
         .createSequencedAssembly([Item.of("createastral:living_mechanism").withChance(1)], "yttr:ultrapure_carbon", [
             event.recipes.createFilling("yttr:ultrapure_carbon", [
                 "yttr:ultrapure_carbon",
@@ -549,21 +539,17 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem(inc_sturdy_sheet)
         .loops(5);
 
-        event.recipes
-            .createSequencedAssembly(["2x create:sturdy_sheet"], "tconstruct:obsidian_pane", [
-                event.recipes.createDeploying(inc_sturdy_sheet, [
-                    inc_sturdy_sheet,
-                    "minecraft:magma_cream",
-                ]),
-                event.recipes.createPressing(inc_sturdy_sheet, inc_sturdy_sheet),
-                event.recipes.createFilling(inc_sturdy_sheet, [
-                    inc_sturdy_sheet,
-                    { fluid: "minecraft:lava", amount: mB * 100 },
-                ]),
-            ])
-            .loops(2)
-            .transitionalItem(inc_sturdy_sheet);
-
+    event.recipes
+        .createSequencedAssembly(["2x create:sturdy_sheet"], "tconstruct:obsidian_pane", [
+            event.recipes.createDeploying(inc_sturdy_sheet, [inc_sturdy_sheet, "minecraft:magma_cream"]),
+            event.recipes.createPressing(inc_sturdy_sheet, inc_sturdy_sheet),
+            event.recipes.createFilling(inc_sturdy_sheet, [
+                inc_sturdy_sheet,
+                { fluid: "minecraft:lava", amount: mB * 100 },
+            ]),
+        ])
+        .loops(2)
+        .transitionalItem(inc_sturdy_sheet);
 
     event.custom({
         type: "create:sequenced_assembly",
@@ -767,7 +753,7 @@ function sequencedAssemblyRecipes(event) {
             .loops(5);
 
         event.recipes
-                    .createSequencedAssembly(
+            .createSequencedAssembly(
                 [
                     // begin
                     "astraladditions:fragile_item", // output
@@ -914,7 +900,6 @@ function sequencedAssemblyRecipes(event) {
                 event.recipes.createPressing(transitional_lapis_sheet, transitional_lapis_sheet),
             ])
             .transitionalItem(transitional_lapis_sheet);
-
 
         event.recipes
             .createSequencedAssembly(["6x create:belt_connector"], "minecraft:dried_kelp", [
@@ -1451,6 +1436,12 @@ function fillingRecipes(event) {
             output: "minecraft:dripstone_block",
             fluid: "minecraft:water",
             amount: 250 * mB,
+        },
+        {
+            input: "minecraft:apple",
+            output: "astralfoods:shimmered_apple",
+            fluid: "kubejs:shimmer",
+            amount: BUCKET / 3,
         },
     ].forEach((recipe) => {
         event.recipes.createFilling(recipe.output, [recipe.input, { fluid: recipe.fluid, amount: recipe.amount }]);
