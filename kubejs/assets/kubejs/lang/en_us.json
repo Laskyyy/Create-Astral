@@ -2908,5 +2908,21 @@
     "ftbquests.reward_tables.chapter_3.title": "Chapter 3",
     "ftbquests.reward_tables.chapter_35.title": "Loot Crate: AE2",
     "ftbquests.reward_tables.chapter_4.title": "Loot Crate: Chapter 4",
-    "ftbquests.reward_tables.chapter_5.title": "Loot Crate: Chapter 5-6"
+    "ftbquests.reward_tables.chapter_5.title": "Loot Crate: Chapter 5-6",
+
+		"category.starei.channeling_transformer": "Channeling",
+    "category.starei.distillery": "Distilling",
+    "category.starei.electrolyzer": "Electrolyzing",
+    "category.starei.gas_mixer": "Gas Mixing",
+    "category.starei.shimmer_refinery": "Shimmer Refining",
+    "category.starei.slime_furnace": "Slime Fuel",
+    "category.starei.stone_growth": "Stone Growing",
+    "starei.slime_furnace.text1": "%d SU at %d RPM",
+    "starei.slime_furnace.text2": "%s seconds",
+    "starei.planet.earth": "Earth",
+    "starei.planet.moon": "Moon",
+    "starei.planet.mars": "Mars",
+    "starei.planet.mercury": "Mercury",
+    "starei.planet.venus": "Venus",
+    "starei.planet.glacio": "Glacio"
 }
