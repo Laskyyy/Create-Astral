@@ -104,7 +104,7 @@ onEvent("ponder.registry", event => {
         scene.idle(1);
 				
         scene.idle(70);
-        scene.text(90, "This currently works with Stone, Andesite, Diorite, Granite and any default stone from each planet, like Moon Stone and Mars Stone", [3, 2.5, 3])
+        scene.text(90, "This currently works with Stone, Andesite and any default stone from each planet, like Moon Stone and Mars Stone", [3, 2.5, 3])
         scene.idle(100);
 				
 				scene.world.setBlocks([1, 1, 3,], "chipped:mossy_stone_bricks_1", true);
@@ -179,30 +179,30 @@ onEvent("ponder.registry", event => {
 
         scene.text(150, "A list of valid stone blocks can be found by searching '$createastral:stone_growth_chamber/building_blocks' in REI", [3, 2.5, 3]).attachKeyFrame();
         scene.idle(20);
-        scene.world.setBlocks([1, 1, 2, 3, 1, 3], "minecraft:polished_diorite", true);
-        scene.world.setBlock([1, 1, 1], "minecraft:polished_diorite", true);
-        scene.world.setBlock([3, 1, 1], "minecraft:polished_diorite", true);
-        scene.world.setBlocks([1, 3, 1, 3, 3, 3], "minecraft:polished_diorite", true);
+        scene.world.setBlocks([1, 1, 2, 3, 1, 3], "minecraft:polished_andesite", true);
+        scene.world.setBlock([1, 1, 1], "minecraft:polished_andesite", true);
+        scene.world.setBlock([3, 1, 1], "minecraft:polished_andesite", true);
+        scene.world.setBlocks([1, 3, 1, 3, 3, 3], "minecraft:polished_andesite", true);
         scene.idle(30);
-        scene.world.setBlocks([1, 1, 2, 3, 1, 3], "chipped:diorite_1", true);
-        scene.world.setBlock([1, 1, 1], "chipped:diorite_1", true);
-        scene.world.setBlock([3, 1, 1], "chipped:diorite_1", true);
-        scene.world.setBlocks([1, 3, 1, 3, 3, 3], "chipped:diorite_1", true);
+        scene.world.setBlocks([1, 1, 2, 3, 1, 3], "chipped:andesite_1", true);
+        scene.world.setBlock([1, 1, 1], "chipped:andesite_1", true);
+        scene.world.setBlock([3, 1, 1], "chipped:andesite_1", true);
+        scene.world.setBlocks([1, 3, 1, 3, 3, 3], "chipped:andesite_1", true);
         scene.idle(30);
-        scene.world.setBlocks([1, 1, 2, 3, 1, 3], "create:cut_diorite", true);
-        scene.world.setBlock([1, 1, 1], "create:cut_diorite", true);
-        scene.world.setBlock([3, 1, 1], "create:cut_diorite", true);
-        scene.world.setBlocks([1, 3, 1, 3, 3, 3], "create:cut_diorite", true);
+        scene.world.setBlocks([1, 1, 2, 3, 1, 3], "create:cut_andesite", true);
+        scene.world.setBlock([1, 1, 1], "create:cut_andesite", true);
+        scene.world.setBlock([3, 1, 1], "create:cut_andesite", true);
+        scene.world.setBlocks([1, 3, 1, 3, 3, 3], "create:cut_andesite", true);
         scene.idle(30);
-        scene.world.setBlocks([1, 1, 2, 3, 1, 3], "create:cut_diorite_bricks", true);
-        scene.world.setBlock([1, 1, 1], "create:cut_diorite_bricks", true);
-        scene.world.setBlock([3, 1, 1], "create:cut_diorite_bricks", true);
-        scene.world.setBlocks([1, 3, 1, 3, 3, 3], "create:cut_diorite_bricks", true);
+        scene.world.setBlocks([1, 1, 2, 3, 1, 3], "create:cut_andesite_bricks", true);
+        scene.world.setBlock([1, 1, 1], "create:cut_andesite_bricks", true);
+        scene.world.setBlock([3, 1, 1], "create:cut_andesite_bricks", true);
+        scene.world.setBlocks([1, 3, 1, 3, 3, 3], "create:cut_andesite_bricks", true);
         scene.idle(30);
-        scene.world.setBlocks([1, 1, 2, 3, 1, 3], "create:small_diorite_bricks", true);
-        scene.world.setBlock([1, 1, 1], "create:small_diorite_bricks", true);
-        scene.world.setBlock([3, 1, 1], "create:small_diorite_bricks", true);
-        scene.world.setBlocks([1, 3, 1, 3, 3, 3], "create:small_diorite_bricks", true);
+        scene.world.setBlocks([1, 1, 2, 3, 1, 3], "create:small_andesite_bricks", true);
+        scene.world.setBlock([1, 1, 1], "create:small_andesite_bricks", true);
+        scene.world.setBlock([3, 1, 1], "create:small_andesite_bricks", true);
+        scene.world.setBlocks([1, 3, 1, 3, 3, 3], "create:small_andesite_bricks", true);
         scene.idle(40);
 
         scene.text(120, "Similarly, valid glass blocks can be found by searching '$createastral:stone_growth_chamber/glass_blocks'", [1.5, 3, 2.5]).attachKeyFrame();
@@ -211,12 +211,12 @@ onEvent("ponder.registry", event => {
         scene.world.setBlocks([1, 2, 1, 3, 2, 3], "minecraft:tinted_glass", true);
         scene.world.setBlock([2, 2, 2], "minecraft:lava", false);
         scene.idle(30);
-        scene.world.setBlocks([1, 2, 1, 3, 2, 3], "chipped:glass_26", true);
+        scene.world.setBlocks([1, 2, 1, 3, 2, 3], "tconstruct:gray_clear_stained_glass", true);
         scene.world.setBlock([2, 2, 2], "minecraft:lava", false);
         scene.idle(30);
-        scene.world.setBlocks([1, 2, 1, 3, 2, 3], "tconstruct:white_clear_stained_glass", true);
+        scene.world.setBlocks([1, 2, 1, 3, 2, 3], "chipped:glass_48", true);
         scene.world.setBlock([2, 2, 2], "minecraft:lava", false);
         scene.idle(30);
-        scene.world.setBlocks([1, 3, 1, 3, 3, 3], "create:small_diorite_bricks", true);
+        scene.world.setBlocks([1, 3, 1, 3, 3, 3], "create:small_andesite_bricks", true);
     });
 });
