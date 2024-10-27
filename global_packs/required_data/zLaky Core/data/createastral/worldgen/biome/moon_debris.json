@@ -63,6 +63,8 @@
     ],
     [
       "createastral:debris_pillar",
+			"xpcrystals:xp_geode",
+			"xpcrystals:xp_geode_ore",
 			"createastral:moonset_crystal"
     ]
   ]
