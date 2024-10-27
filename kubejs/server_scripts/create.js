@@ -30,7 +30,6 @@ function millingRecipes(event) {
         ["create:limestone", "techreborn:raw_tin", 0.2],
         ["create:scorchia", "create:raw_zinc", 0.4],
         ["create:scoria", "minecraft:magma_block", 1],
-        ["minecraft:blackstone", "create:powdered_obsidian", 0.2],
         ["minecraft:tuff", "minecraft:iron_nugget", 1],
         ["minecraft:dripstone_block", "2x minecraft:golden_nugget", 1],
         ["minecraft:blackstone", "create:zinc_nugget", 0.5],
@@ -2745,6 +2744,14 @@ function mechanicalCraftingRecipes(event) {
     // Shape: Array of rows of inputs based on letters assigned
     // Inputs: Object with letters assigned to input items, to be used in the shape
     [
+				{
+            output: "ad_astra:calorite_tank",
+            shape: [" C ", "COC", " C "],
+            inputs: {
+                C: "ad_astra:calorite_plate",
+                O: "ad_astra:ostrum_tank"
+            },
+        },
         {
             output: "astraladditions:desizer_8",
             shape: ["YLY", "YBY", "YPY"],
