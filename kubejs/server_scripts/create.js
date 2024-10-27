@@ -3391,6 +3391,10 @@ function compactingRecipes(event) {
             inputs: ["4x techreborn:calcite_dust"],
         },
         {
+            output: "minecraft:basalt",
+            inputs: ["4x techreborn:basalt_dust"],
+        },
+        {
             output: "minecraft:andesite",
             inputs: ["2x techreborn:andesite_dust", "2x minecraft:basalt"],
         },
