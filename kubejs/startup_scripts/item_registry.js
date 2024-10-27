@@ -118,6 +118,18 @@ onEvent("item.registry", (event) => {
                 .alwaysEdible();
         });
 
+    event
+        .create("astralfoods:bulbas_tea")
+        .displayName("Bulba's Tea")
+        .maxStackSize(16)
+        .food((food) => {
+            food.hunger(2)
+                .saturation(1.2)
+                .effect("night_vision", 4800, 1, 1)
+                .effect("haste", 4800, 1, 1)
+                .alwaysEdible();
+        });
+
     event.create("createastral:golden_bowl").displayName("Golden Bowl");
     event
         .create("createastral:filled_golden_bowl", "create:sequenced_assembly")
@@ -205,6 +217,9 @@ onEvent("item.registry", (event) => {
     event.create("createastral:synthetic_slime");
 
     // Transitional Items
+    event
+        .create("createastral:incomplete_blaze_head", "create:sequenced_assembly")
+        .displayName("Incomplete Blaze Head");
     event
         .create("createastral:incomplete_transitional_electronic_circuit", "create:sequenced_assembly")
         .displayName("Incomplete Electronic Circuit");

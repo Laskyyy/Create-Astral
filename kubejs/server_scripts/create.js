@@ -42,7 +42,7 @@ function millingRecipes(event) {
         ["minecraft:fire_coral_block", "2x minecraft:red_dye", 1],
         ["minecraft:horn_coral_block", "2x minecraft:yellow_dye", 1],
         ["minecraft:glow_berries", "naturalist:glow_goop", 1],
-				["naturalist:glow_goop", "minecraft:yellow_dye", 1],
+        ["naturalist:glow_goop", "minecraft:yellow_dye", 1],
         ["minecraft:twisting_vines", "minecraft:blue_dye", 1],
         ["minecraft:weeping_vines", "minecraft:red_dye", 1],
         ["minecraft:sweet_berries", "minecraft:red_dye", 1],
@@ -75,7 +75,7 @@ function crushingRecipes(event) {
             input: "minecraft:calcite",
             outputs: [["4x techreborn:calcite_dust", 1]],
         },
-				{
+        {
             input: "minecraft:dead_tube_coral_block",
             outputs: [["1x techreborn:calcite_dust", 1]],
         },
@@ -451,6 +451,22 @@ function sequencedAssemblyRecipes(event) {
     //Honestly just good luck in figuring this out its too complex to
     //document in an effective way
     const inc_sturdy_sheet = "create:unprocessed_obsidian_sheet";
+
+    event.recipes
+        .createSequencedAssembly(Item.of("create:track"), "#create:sleepers", [
+            event.recipes.createDeploying("create:incomplete_track", [
+                "create:incomplete_track",
+                ["#c:nuggets/iron", "#c:nuggets/tin", "#c:nuggets/zinc"],
+            ]),
+            event.recipes.createDeploying("create:incomplete_track", [
+                "create:incomplete_track",
+                ["#c:nuggets/iron", "#c:nuggets/tin", "#c:nuggets/zinc"],
+            ]),
+            event.recipes.createPressing("create:incomplete_track", "create:incomplete_track"),
+        ])
+        .transitionalItem("create:incomplete_track")
+        .loops(1);
+
     event.recipes
         .createSequencedAssembly([Item.of("astralfoods:shimmered_apple").withChance(1)], "minecraft:apple", [
             event.recipes.createDeploying("minecraft:apple", ["minecraft:apple", "tconstruct:ender_slime_crystal"]),
@@ -532,6 +548,22 @@ function sequencedAssemblyRecipes(event) {
         )
         .transitionalItem(inc_sturdy_sheet)
         .loops(5);
+
+        event.recipes
+            .createSequencedAssembly(["2x create:sturdy_sheet"], "tconstruct:obsidian_pane", [
+                event.recipes.createDeploying(inc_sturdy_sheet, [
+                    inc_sturdy_sheet,
+                    "minecraft:magma_cream",
+                ]),
+                event.recipes.createPressing(inc_sturdy_sheet, inc_sturdy_sheet),
+                event.recipes.createFilling(inc_sturdy_sheet, [
+                    inc_sturdy_sheet,
+                    { fluid: "minecraft:lava", amount: mB * 100 },
+                ]),
+            ])
+            .loops(2)
+            .transitionalItem(inc_sturdy_sheet);
+
 
     event.custom({
         type: "create:sequenced_assembly",
@@ -735,7 +767,7 @@ function sequencedAssemblyRecipes(event) {
             .loops(5);
 
         event.recipes
-            .createSequencedAssembly(
+                    .createSequencedAssembly(
                 [
                     // begin
                     "astraladditions:fragile_item", // output
@@ -883,20 +915,6 @@ function sequencedAssemblyRecipes(event) {
             ])
             .transitionalItem(transitional_lapis_sheet);
 
-        event.recipes
-            .createSequencedAssembly(["2x create:sturdy_sheet"], "tconstruct:obsidian_pane", [
-                event.recipes.createDeploying("tconstruct:obsidian_pane", [
-                    "tconstruct:obsidian_pane",
-                    "minecraft:magma_cream",
-                ]),
-                event.recipes.createPressing("tconstruct:obsidian_pane", "tconstruct:obsidian_pane"),
-                event.recipes.createFilling("tconstruct:obsidian_pane", [
-                    "tconstruct:obsidian_pane",
-                    { fluid: "minecraft:lava", amount: mB * 100 },
-                ]),
-            ])
-            .loops(2)
-            .transitionalItem(inc_sturdy_sheet);
 
         event.recipes
             .createSequencedAssembly(["6x create:belt_connector"], "minecraft:dried_kelp", [
@@ -1278,7 +1296,7 @@ function sequencedAssemblyRecipes(event) {
                 // input
                 event.recipes.createFilling("createbigcannons:nethersteel_screw_breech", [
                     "createbigcannons:nethersteel_screw_breech",
-                    { fluid: "kubejs:shimmer", amount: 9000  },
+                    { fluid: "kubejs:shimmer", amount: 9000 },
                 ]),
                 event.recipes.createDeploying("createbigcannons:nethersteel_screw_breech", [
                     "createbigcannons:nethersteel_screw_breech",
@@ -1286,11 +1304,11 @@ function sequencedAssemblyRecipes(event) {
                 ]),
                 event.recipes.createFilling("createbigcannons:nethersteel_screw_breech", [
                     "createbigcannons:nethersteel_screw_breech",
-                    { fluid: "techreborn:lithium", amount: 3000  },
+                    { fluid: "techreborn:lithium", amount: 3000 },
                 ]),
                 event.recipes.createFilling("createbigcannons:nethersteel_screw_breech", [
                     "createbigcannons:nethersteel_screw_breech",
-                    { fluid: "techreborn:silicon", amount: 3000  },
+                    { fluid: "techreborn:silicon", amount: 3000 },
                 ]),
             ]
         )
@@ -2538,6 +2556,15 @@ function mixingRecipes(event) {
         ])
         .superheated()
         .processingTime(1000);
+
+    event.recipes
+        .createMixing("astralfoods:bulbas_tea", [
+            "astraladditions:bulba_root",
+            { fluid: "minecraft:water", amount: 333 * mB },
+            { fluid: "milk:still_milk", amount: 333 * mB },
+        ])
+        .heated()
+        .processingTime(45);
 }
 
 function cuttingRecipes(event) {
@@ -2617,7 +2644,7 @@ function splashingRecipes(event) {
             input: "minecraft:calcite",
             outputs: [["minecraft:dripstone_block", 1]],
         },
-				{
+        {
             input: "minecraft:sponge",
             outputs: [["minecraft:wet_sponge", 1]],
         },
@@ -2644,6 +2671,14 @@ function splashingRecipes(event) {
                 ["minecraft:sugar", 0.1],
             ],
         },
+        {
+            input: "ae2:fluix_crystal_seed",
+            outputs: [
+                ["ae2:fluix_crystal", 1],
+                ["minecraft:sugar", 0.1],
+            ],
+        },
+
         {
             input: "createastral:lime",
             outputs: [
@@ -3352,7 +3387,7 @@ function compactingRecipes(event) {
             output: "minecraft:andesite",
             inputs: ["4x techreborn:andesite_dust"],
         },
-				{
+        {
             output: "minecraft:granite",
             inputs: ["4x techreborn:granite_dust"],
         },

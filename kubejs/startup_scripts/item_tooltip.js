@@ -308,7 +308,7 @@ onEvent("item.tooltip", (e) => {
         },
         {
             item: "astralfoods:astral_sauce",
-            tooltip: "Where did the bowl come? The singularity can fabricate them of course!",
+            tooltip: "The bowl comes from the recipe :blehh:",
         },
         {
             item: "createbigcannons:steel_screw_breech",

@@ -24,8 +24,7 @@ onEvent("item.tags", (event) => {
 
     [
         "astraladditions:ring_gold_cast",
-        "tconstruct:gold_platform",
-        "tconstruct:gold_bars"
+        "tconstruct:gold_platform", //Never add anything here with a melting value below a nugget, thx
     ].forEach((item, index) => {
         event.add("tconstruct:casts", item);
         event.add("tconstruct:casts/gold", item);

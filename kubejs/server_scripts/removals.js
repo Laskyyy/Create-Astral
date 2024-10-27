@@ -155,7 +155,7 @@ onEvent("recipes", (event) => {
         },
         { id: "techreborn:crafting_table/paper" },
         //Create
-
+        { output: "create:track" },
         { output: "create:blaze_cake" },
         { output: "create:blaze_cake_base" },
         { output: "create:blaze_burner" },
@@ -237,7 +237,6 @@ onEvent("recipes", (event) => {
             type: "create:item_application",
         },
         { mod: "create", output: "minecraft:andesite" },
-        { input: "create:blaze_burner" },
 
         // Create Deco
 
