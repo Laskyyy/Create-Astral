@@ -84,9 +84,7 @@
 			"astralrails:moon_lune_shroom_patch",
 			"astralrails:moon_bulba_patch",
       "minecraft:ore_ancient_debris_large",
-      "minecraft:ore_debris_small",
-			"xpcrystals:xp_geode",
-			"xpcrystals:xp_geode_ore"
+      "minecraft:ore_debris_small"
     ]
   ]
 }

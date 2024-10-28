@@ -22,7 +22,7 @@
       "alternate_inner_layer_provider": {
         "type": "minecraft:simple_state_provider",
         "state": {
-          "Name": "kubejs:monazite_crystal"
+          "Name": "createastral:monazite_crystal"
         }
       },
       "middle_layer_provider": {
