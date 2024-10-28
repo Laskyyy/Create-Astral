@@ -69,6 +69,7 @@ onEvent("item.registry", (event) => {
                 .saturation(1.1)
                 .effect("haste", 5000, 2, 1)
                 .effect("regeneration", 5000, 2, 1)
+                .effect("farmersdelight:nourishment", 6600, 2, 1)
                 .alwaysEdible();
         });
 
@@ -80,13 +81,24 @@ onEvent("item.registry", (event) => {
         });
 
     event
+        .create("astralfoods:dipped_potato")
+        .displayName("Dipped Potato")
+        .food((food) => {
+            food.hunger(19)
+                .saturation(1.1)
+                .effect("resistance", 440, 2, 1)
+                .effect("absorption", 440, 3, 1)
+                .alwaysEdible();
+        });
+
+    event
         .create("astralfoods:shimmered_rabbit_stew")
         .displayName("Shimmered Rabbit Stew")
         .food((food) => {
             food.hunger(18)
                 .saturation(0.9)
                 .effect("resistance", 500, 1, 1)
-                .effect("saturation", 500, 0, 1)
+                .effect("farmersdelight:nourishment", 5000, 0, 1)
                 .alwaysEdible();
         });
 

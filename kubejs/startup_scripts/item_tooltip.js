@@ -310,6 +310,10 @@ onEvent("item.tooltip", (e) => {
             tooltip: "tooltip.astralfoods.astral_sauce",
         },
         {
+            item: "astralfoods:dipped_potato",
+            tooltip: "Beloved food of the dwarves! Suggested by TheRobbie72",
+        },
+        {
             item: "createbigcannons:steel_screw_breech",
             tooltip: "tooltip.createbigcannons.steel_screw_breech",
         },
