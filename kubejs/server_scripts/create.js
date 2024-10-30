@@ -378,7 +378,6 @@ function crushingRecipes(event) {
             outputs: [
                 ["tconstruct:debris_nugget", 1],
                 ["techreborn:andesite_dust", 1],
-                ["minecraft:netherite_scrap", 0.25],
                 ["createbigcannons:steel_scrap", 0.1],
                 ["createbigcannons:bronze_scrap", 0.1],
             ],
@@ -1374,7 +1373,7 @@ function fillingRecipes(event) {
             input: "create:blaze_cake_base",
             output: "create:blaze_cake",
             fluid: "kubejs:hellfire",
-            amount: 75 * mB,
+            amount: 250 * mB,
         },
         {
             input: "techreborn:red_cell_battery",
@@ -1441,6 +1440,12 @@ function fillingRecipes(event) {
             output: "astralfoods:shimmered_apple",
             fluid: "kubejs:shimmer",
             amount: BUCKET / 3,
+        },
+        {
+            input: "astralfoods:seared_potato",
+            output: "astralfoods:dipped_potato",
+            fluid: "tconstruct:molten_gold",
+            amount: INGOT,
         },
     ].forEach((recipe) => {
         event.recipes.createFilling(recipe.output, [recipe.input, { fluid: recipe.fluid, amount: recipe.amount }]);
@@ -2367,10 +2372,16 @@ function mixingRecipes(event) {
             output: ["astralfoods:quantum_pasta"],
             input: ["astralfoods:astral_sauce", "2x astralfoods:quantum_bites", "farmersdelight:raw_pasta"],
             heat: "heated",
-            output: "yttr:ruined_cobblestone",
-            input: ["minecraft:cobblestone", "yttr:rubble"],
-            heat: "",
             time: 250,
+				},
+				{
+            output: "yttr:ruined_cobblestone",
+            input: ["minecraft:cobblestone", "yttr:rubble", {
+                    fluid: "tconstruct:magma",
+                    amount: BUCKET/4,
+                }],
+            heat: "superheated",
+            time: 200,
         },
         {
             output: "yttr:wasteland_stone",

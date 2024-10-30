@@ -21,12 +21,6 @@
         "maxCount": 3
       },
       {
-      	"type": "astraladditions:voidtouched_zombie",
-      	"weight": 1,
-      	"minCount": 1,
-      	"maxCount": 1
-      },
-      {
         "type": "ad_astra:star_crawler",
         "weight": 100,
         "minCount": 1,
@@ -84,9 +78,7 @@
 			"astralrails:moon_lune_shroom_patch",
 			"astralrails:moon_bulba_patch",
       "minecraft:ore_ancient_debris_large",
-      "minecraft:ore_debris_small",
-			"xpcrystals:xp_geode",
-			"xpcrystals:xp_geode_ore"
+      "minecraft:ore_debris_small"
     ]
   ]
 }
