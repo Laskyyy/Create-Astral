@@ -14981,6 +14981,11 @@ hash = "ed245958a858e8a3903a98a58924772fcbbb4ee29f9171dc9b4be61f71f86dff"
 metafile = true
 
 [[files]]
+file = "mods/defineds-blocks.pw.toml"
+hash = "bb67e2b305262246a8b5e4d8377996a85da34074a8555a7db6fef60a1ba03ee7"
+metafile = true
+
+[[files]]
 file = "mods/disableportals-0.2.0-1.18-github-fork.jar"
 hash = "8804f035e6adbe28a04804959976c58922ce44a967590835cbc52927eb7768af"
 
