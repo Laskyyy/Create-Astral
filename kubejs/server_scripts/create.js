@@ -1441,6 +1441,12 @@ function fillingRecipes(event) {
             fluid: "kubejs:shimmer",
             amount: BUCKET / 3,
         },
+        {
+            input: "astralfoods:seared_potato",
+            output: "astralfoods:dipped_potato",
+            fluid: "tconstruct:molten_gold",
+            amount: INGOT,
+        },
     ].forEach((recipe) => {
         event.recipes.createFilling(recipe.output, [recipe.input, { fluid: recipe.fluid, amount: recipe.amount }]);
     });
