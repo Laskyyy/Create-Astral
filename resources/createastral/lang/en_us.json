@@ -393,6 +393,7 @@
     "block.doodads.asphalt_slab": "Asphalt Slab",
     "block.doodads.asphalt_stair": "Asphalt Stair",
     "block.yttr.polished_scorched_obsidian_holster_alive": "Polished Scorched Obsidian Holster Alive",
+    "block.estrogen.centrifuge": "Fluid Centrifuge",
 
     "fluid.kubejs.molten_calorite": "Calorite",
     "fluid.kubejs.molten_ostrum": "Ostrum",
@@ -440,6 +441,7 @@
     "fluid.kubejs.vegetable_soup_fluid": "Vegetable Soup",
     "fluid.kubejs.apple_cider_fluid": "Apple Cider",
     "fluid.kubejs.chicken_soup_fluid": "Chicken Soup",
+    "fluid.yttr.core_lava": "Core Lava",
 
     "comment_4": "vanilla",
     "logging_tip": "Please Read The Quest Book (Hover Over Me!)",

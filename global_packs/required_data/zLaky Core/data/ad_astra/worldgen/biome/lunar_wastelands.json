@@ -21,12 +21,6 @@
         "maxCount": 3
       },
       {
-      	"type": "astraladditions:voidtouched_zombie",
-      	"weight": 1,
-      	"minCount": 1,
-      	"maxCount": 1
-      },
-      {
         "type": "ad_astra:star_crawler",
         "weight": 100,
         "minCount": 1,

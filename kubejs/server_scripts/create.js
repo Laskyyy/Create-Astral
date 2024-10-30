@@ -378,7 +378,6 @@ function crushingRecipes(event) {
             outputs: [
                 ["tconstruct:debris_nugget", 1],
                 ["techreborn:andesite_dust", 1],
-                ["minecraft:netherite_scrap", 0.25],
                 ["createbigcannons:steel_scrap", 0.1],
                 ["createbigcannons:bronze_scrap", 0.1],
             ],
@@ -2418,10 +2417,16 @@ function mixingRecipes(event) {
             output: ["astralfoods:quantum_pasta"],
             input: ["astralfoods:astral_sauce", "2x astralfoods:quantum_bites", "farmersdelight:raw_pasta"],
             heat: "heated",
-            output: "yttr:ruined_cobblestone",
-            input: ["minecraft:cobblestone", "yttr:rubble"],
-            heat: "",
             time: 250,
+				},
+				{
+            output: "yttr:ruined_cobblestone",
+            input: ["minecraft:cobblestone", "yttr:rubble", {
+                    fluid: "tconstruct:magma",
+                    amount: BUCKET/4,
+                }],
+            heat: "superheated",
+            time: 200,
         },
         {
             output: "yttr:wasteland_stone",
