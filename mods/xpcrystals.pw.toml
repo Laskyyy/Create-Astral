@@ -1,12 +1,12 @@
-filename = 'xpcrystals-1.0.4.jar'
+filename = 'xpcrystals-1.0.5.jar'
 name = 'XPCrystals'
 side = 'both'
 
 [download]
-hash = 'e16ce3098fee20a92441e8e8f7444ee628f01b94'
+hash = '780c481bb9c1dc5191a4e9c0446de85ad81eebf8'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 
 [update.curseforge]
-file-id = 5850848
+file-id = 5861684
 project-id = 876985
