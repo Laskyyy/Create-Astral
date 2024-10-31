@@ -14,11 +14,11 @@ onEvent("player.logged_in", (event) => {
     //!This point forward, all code was made by TheOverlyCaffeinatedTrashPanda
     if (!event.player.stages.has("read_quest")) {
         event.player.tell(
-            Text.aqua("Please Read The Quest Book (Hover Over Me!)")
+            Text.aqua(Component.translate("logging_tip"))
                 .underlined()
-                .hover(
-                    "The Quest Book contains most of the information needed to progress in this modpack - it's your friend! Use the item to prevent this message from appearing."
-                )
+                .hover(Component.translate(
+                    "logging_tip.hover"
+                ))
         );
     }
 });

@@ -13,5 +13,6 @@
     "item.ad_astra.steel_plate": "Steel Sheet",
     "item.ad_astra.desh_plate": "Desh Sheet",
     "item.ad_astra.ostrum_plate": "Ostrum Sheet",
-    "item.ad_astra.calorite_plate": "Calorite Sheet"
+    "item.ad_astra.calorite_plate": "Calorite Sheet",
+		"block.ad_astra.calorite_block": "Calorite Block"
 }

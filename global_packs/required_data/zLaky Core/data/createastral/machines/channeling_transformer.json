@@ -1,5 +1,5 @@
 {
-  "name": "Channeling Transformer",
+  "name": "custommachinery.createastral.channeling_transformer",
   "appearance": {
     "block": "createastral:channeling_transformer_dummy"
   },
@@ -33,7 +33,7 @@
       "type": "custommachinery:fluid"
     },
     {
-      "text": "Channeling Transformer",
+      "text": "custommachinery.createastral.channeling_transformer.text",
       "x": 7,
       "y": 5,
       "type": "custommachinery:text"

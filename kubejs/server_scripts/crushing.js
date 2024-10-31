@@ -15,7 +15,7 @@ onEvent("recipes", (event) => {
             ores: [
                 {
                     name: "tin",
-                    extra: "minecraft:iron_nugget",
+                    extra: "techreborn:silver_nugget",
                 },
                 {
                     name: "silver",

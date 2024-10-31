@@ -1,0 +1,48 @@
+{
+	"processors": [
+		{
+			"processor_type": "minecraft:rule",
+			"rules": [
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "xpcrystals:xp_crystal_block",
+						"probability": 0.15
+					},
+					"output_state": {
+						"Name": "xpcrystals:budding_xp_crystal"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "xpcrystals:xp_crystal_block",
+						"probability": 0.1
+					},
+					"output_state": {
+						"Name": "ad_astra:moon_sand"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "xpcrystals:xp_crystal_block",
+						"probability": 0.1
+					},
+					"output_state": {
+						"Name": "minecraft:warped_wart_block"
+					}
+				}
+			]
+		}
+	]
+}

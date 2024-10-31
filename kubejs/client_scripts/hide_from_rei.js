@@ -343,7 +343,6 @@ onEvent("rei.hide.items", (event) => {
         "minecraft:player_head",
         "minecraft:repeating_command_block",
         "minecraft:sculk_sensor",
-        "minecraft:skeleton_skull",
         "minecraft:zombie_head",
         Item.of("tconstruct:crafting_station", '{texture:"minecraft:acacia_log"}'),
         Item.of("tconstruct:crafting_station", '{texture:"minecraft:acacia_wood"}'),

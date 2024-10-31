@@ -69,6 +69,7 @@ onEvent("item.registry", (event) => {
                 .saturation(1.1)
                 .effect("haste", 5000, 2, 1)
                 .effect("regeneration", 5000, 2, 1)
+                .effect("farmersdelight:nourishment", 6600, 2, 1)
                 .alwaysEdible();
         });
 
@@ -80,13 +81,24 @@ onEvent("item.registry", (event) => {
         });
 
     event
+        .create("astralfoods:dipped_potato")
+        .displayName("Dipped Potato")
+        .food((food) => {
+            food.hunger(19)
+                .saturation(1.1)
+                .effect("resistance", 440, 2, 1)
+                .effect("absorption", 440, 3, 1)
+                .alwaysEdible();
+        });
+
+    event
         .create("astralfoods:shimmered_rabbit_stew")
         .displayName("Shimmered Rabbit Stew")
         .food((food) => {
             food.hunger(18)
                 .saturation(0.9)
                 .effect("resistance", 500, 1, 1)
-                .effect("saturation", 500, 0, 1)
+                .effect("farmersdelight:nourishment", 5000, 0, 1)
                 .alwaysEdible();
         });
 
@@ -94,7 +106,7 @@ onEvent("item.registry", (event) => {
         .create("astralfoods:shimmered_apple")
         .displayName("Shimmered Apple")
         .food((food) => {
-            food.hunger(4).saturation(2.5).effect("instant_health", 60, 1, 1);
+            food.hunger(7).saturation(1.5).effect("instant_health", 60, 1, 1);
         });
 
     event
@@ -115,6 +127,18 @@ onEvent("item.registry", (event) => {
                 .effect("haste", 1100, 4, 1)
                 .effect("health_boost", 1000, 3, 1)
                 .effect("saturation", 760, 2, 1)
+                .alwaysEdible();
+        });
+
+    event
+        .create("astralfoods:bulbas_tea")
+        .displayName("Bulba's Tea")
+        .maxStackSize(16)
+        .food((food) => {
+            food.hunger(2)
+                .saturation(1.2)
+                .effect("night_vision", 4800, 1, 1)
+                .effect("haste", 4800, 1, 1)
                 .alwaysEdible();
         });
 
@@ -205,6 +229,9 @@ onEvent("item.registry", (event) => {
     event.create("createastral:synthetic_slime");
 
     // Transitional Items
+    event
+        .create("createastral:incomplete_blaze_head", "create:sequenced_assembly")
+        .displayName("Incomplete Blaze Head");
     event
         .create("createastral:incomplete_transitional_electronic_circuit", "create:sequenced_assembly")
         .displayName("Incomplete Electronic Circuit");
