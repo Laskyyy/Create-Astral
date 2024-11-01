@@ -144,6 +144,7 @@
 
     "tooltip.astralfoods.shimmered_rabbit_stew": "Suggested by NikWas!",
     "tooltip.astralfoods.astral_sauce": "The bowl comes from the recipe :blehh:",
+    "tooltip.astralfoods.dipped_potato": "Beloved food of the piglins! Suggested by TheRobbie72",
 
     "tooltip.createbigcannons.steel_screw_breech": "Wrenchable",
     "tooltip.createbigcannons.incomplete_steel_screw_breech": "Wrenchable",
@@ -341,7 +342,8 @@
     "item.astralfoods.shimmered_apple": "Shimmered Apple",
     "item.astralfoods.compressed_onion": "Compressed Onion",
     "item.astralfoods.food_amalgamation": "Food Amalgamation",
-    "item.astralfoods:bulbas_tea":"Bulba's Tea",
+    "item.astralfoods.bulbas_tea": "Bulba's Tea",
+    "item.astralfoods.astralfoods.dipped_potato": "Dipped Potato",
 
     "block.kubejs.fragile_sheet_block": "Fragile Sheet Block",
     "block.kubejs.broken_fragile_sheet_block": "Broken Fragile Sheet Block",
@@ -389,6 +391,7 @@
     "block.createastral.synthetic_slime_block": "Synthetic Slime Block",
     "block.createastral.swift_andesite": "Swift Andesite",
     "block.createastral.rocket_casing": "Rocket Casing",
+    "block.createastral.moonset_stone": "Moonset Stone",
 
     "block.doodads.asphalt_slab": "Asphalt Slab",
     "block.doodads.asphalt_stair": "Asphalt Stair",
