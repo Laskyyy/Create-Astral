@@ -230,14 +230,14 @@ const mixings = [
                 output: "24x minecraft:moss_block", //Yea Moss is automatable now without breaking contraptions, More Blocks out than in? MAGIC
                 input: [
                     "16x minecraft:mossy_cobblestone","minecraft:moss_block","1x minecraft:bone_meal",
-                    { fluid: "minecraft:water", amount: BUCKET },
+                    { fluid: "minecraft:water", amount: BUCKET / 2 },
                 ],
                 heat: "",
                 time: null,
             },{
                 output: "10x minecraft:kelp", // If you got the bonemeal, some kelp can be arranged
                 input: ["minecraft:kelp","minecraft:bone_meal",
-                    { fluid: "minecraft:water", amount: BUCKET },
+                    { fluid: "minecraft:water", amount: BUCKET / 2 },
                 ],
                 heat: "",
                 time: 120,
