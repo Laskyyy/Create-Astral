@@ -1876,10 +1876,10 @@ function mixingRecipes(event) {
             time: 200,
         },
         {
-            output: Fluid.of("tconstruct:molten_amethyst_bronze", INGOT * 2),
+            output: Fluid.of("tconstruct:molten_amethyst_bronze", INGOT * 4),
             input: ["createastral:bronze_ingot", "minecraft:amethyst_shard"],
             heat: "superheated",
-            time: 300,
+            time: 100,
         },
         {
             output: Fluid.of("tconstruct:molten_amethyst_bronze", INGOT * 2),
@@ -1901,10 +1901,7 @@ function mixingRecipes(event) {
         },
         {
             output: Fluid.of("tconstruct:molten_rose_gold", INGOT * 2),
-            input: [
-                { fluid: "tconstruct:molten_copper", amount: INGOT },
-                { fluid: "tconstruct:molten_gold", amount: INGOT },
-            ],
+            input: ["9x minecraft:gold_nugget", "9x create:copper_nugget" ],
             heat: "heated",
             time: 300,
         },
@@ -3621,16 +3618,6 @@ function superheatedMixingRecipes(event) {
             ["tconstruct:ender_slime_sling"],
         ],
         [["astraladditions:ender_tip"], [Fluid.of("astraladditions:sputum", INGOT)]],
-        [
-            [
-                { fluid: "tconstruct:molten_tin", amount: INGOT * 2 },
-                {
-                    fluid: "tconstruct:molten_copper",
-                    amount: INGOT * 4,
-                },
-            ],
-            [Fluid.of("tconstruct:molten_bronze", INGOT * 9)],
-        ],
         [["yttr:quicksilver"], [Fluid.of("techreborn:mercury", mB * 500)]],
     ].forEach((recipe) => {
         event.recipes.createMixing(recipe[1], recipe[0]).superheated().processingTime(20);
