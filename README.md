@@ -12,11 +12,11 @@ Does not include mods, or most configs, only pack specific files which are used 
 
 ## Contributing
 
-For developers: If you just want to edit the text, do it in this [file](resources\createastral\lang\en_us.json) (Ponders are in this [file](kubejs\assets\ponderjs_generated\lang\en_us.json)), editing the text in other files will NOT work! If you want to add items, blocks, fluids, tooltips and everything else that contains text, please use the translation key and the [lang file](resources\createastral\lang\en_us.json).
+For developers: If you just want to edit the text, do it in this [file](resources/createastral/lang/en_us.json) (Ponders are in this [file](kubejs/assets/ponderjs_generated/lang/en_us.json)), editing the text in other files will NOT work! If you want to add items, blocks, fluids, tooltips and everything else that contains text, please use the translation key and the [lang file](resources/createastral/lang/en_us.json).
 
 Here's an [example](https://github.com/Laskyyy/Create-Astral/pull/389) of changing the added tooltip and some other text to a translation key. For adding a new item/block/fluid, the naming of the key in the language file needs to follow these rules.
 
-To name keys in the [lang file](resources\createastral\lang\en_us.json) correctly, you need use the **prefix** (`item/block/fluid`) + the **namespace** of mod (such as `kubejs`,`create_astral`) + the **id** of item/block/fluid. For vaules, it's the **displayed name** instead of translation keys. There is a example.
+To name keys in the [lang file](resources/createastral/lang/en_us.json) correctly, you need use the **prefix** (`item/block/fluid`) + the **namespace** of mod (such as `kubejs`,`create_astral`) + the **id** of item/block/fluid. For vaules, it's the **displayed name** instead of translation keys. There is a example.
 
 ```json
 {
