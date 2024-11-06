@@ -154,6 +154,7 @@ onEvent("recipes", (event) => {
             output: "techreborn:nak_coolant_cell_60k",
         },
         { id: "techreborn:crafting_table/paper" },
+        {output: "techreborn:block_placer"},
         //Create
 
         { output: "create:blaze_cake" },
