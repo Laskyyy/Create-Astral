@@ -212,13 +212,12 @@ onEvent("recipes", (event) => {
         )
         .modifyResult((grid, result)=>{
             let item = grid.find(Ingredient.of(`yttr:${lamp}`).ignoreNBT());
-    
-            let nbt = {};
-            nbt.Inverted = !item.nbt.Inverted;
-            if (item.nbt.LampColor) {
-                nbt.LampColor = item.nbt.LampColor;
-            }
-            return result.withNBT(nbt);
+            let inputNbt = item.nbt || {};
+
+            let outputNbt = {};
+            outputNbt.Inverted = !inputNbt.Inverted;
+            outputNbt.LampColor = inputNbt.LampColor || "colorless";
+            return result.withNBT(outputNbt);
         })
         .keepIngredient("minecraft:redstone_torch")
         .id(`createastral:crafting/yttr/lamp/${lamp}_invert`)
@@ -234,19 +233,19 @@ onEvent("recipes", (event) => {
         .modifyResult((grid, result)=>{
             let item = grid.find(Ingredient.of(`yttr:${lamp}`).ignoreNBT());
             let dye = grid.find(`#yttr:lamp_dyes`);
+            let inputNbt = item.nbt || {};
     
-            let nbt = {};
+            let outputNbt = {};
 
-            nbt.Inverted = !!item.nbt.Inverted;
-
+            outputNbt.Inverted = !!inputNbt.Inverted;
             for (let i=0;i<lampColors.length;++i) {
                 if (dye.getId()===lampColors[i][1]) {
-                    nbt.LampColor = lampColors[i][0];
+                    outputNbt.LampColor = lampColors[i][0];
                     break;
                 }
             }
 
-            return result.withNBT(nbt);
+            return result.withNBT(outputNbt);
         })
         .id(`createastral:crafting/yttr/lamp/${lamp}_dye`)
     })
