@@ -155,6 +155,11 @@ onEvent("item.registry", (event) => {
         .food((food) => {
             food.hunger(2).saturation(0.5).alwaysEdible();
         });
+    event.create("createastral:protobeef");
+    event.create("createastral:protochicken");
+    event.create("createastral:protomutton");
+    event.create("createastral:protopork");
+    event.create("createastral:protorabbit");
 
     //Radiant Armor And Tools//
     event.create("createastral:radiant_helmet", "helmet").tier("radiantarmor").glow(true).rarity("Epic");

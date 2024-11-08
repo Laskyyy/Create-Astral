@@ -15,18 +15,18 @@ onEvent("recipes", (event) => {
         .createSequencedAssembly(
             ["minecraft:porkchop"],
             ["createastral:seitan"],
-            [event.recipes.createDeploying("createastral:seitan", ["createastral:seitan","minecraft:rotten_flesh"]),
+            [event.recipes.createDeploying("createastral:protopork", ["createastral:protopork","minecraft:rotten_flesh"]),
             
-            event.recipes.createFilling("createastral:seitan",
-                ["createastral:seitan",{ fluid: "tconstruct:blood", amount: 100 * mB }]),
+            event.recipes.createFilling("createastral:protopork",
+                ["createastral:protopork",{ fluid: "tconstruct:blood", amount: 100 * mB }]),
             
-            event.recipes.createPressing("createastral:seitan",
-                                             "createastral:seitan"),
-            event.recipes.createCutting("createastral:seitan",
-                                            "createastral:seitan"),
+            event.recipes.createPressing("createastral:protopork",
+                                             "createastral:protopork"),
+            event.recipes.createCutting("createastral:protopork",
+                                            "createastral:protopork"),
             ]
         )
-        .transitionalItem("createastral:seitan")
+        .transitionalItem("createastral:protopork")
         .loops(1);
 
     event.recipes
@@ -34,19 +34,19 @@ onEvent("recipes", (event) => {
             ["minecraft:mutton"],
             ["createastral:seitan"],
             [
-                event.recipes.createDeploying("createastral:seitan", [
-                    "createastral:seitan",
+                event.recipes.createDeploying("createastral:protomutton", [
+                    "createastral:protomutton",
                     "minecraft:string",
                 ]),
-                event.recipes.createFilling("createastral:seitan",
-                ["createastral:seitan",{ fluid: "tconstruct:blood", amount: 100 * mB }]),
-                event.recipes.createPressing("createastral:seitan",
-                                             "createastral:seitan"),
-                event.recipes.createCutting("createastral:seitan",
-                                            "createastral:seitan"),
+                event.recipes.createFilling("createastral:protomutton",
+                ["createastral:protomutton",{ fluid: "tconstruct:blood", amount: 100 * mB }]),
+                event.recipes.createPressing("createastral:protomutton",
+                                             "createastral:protomutton"),
+                event.recipes.createCutting("createastral:protomutton",
+                                            "createastral:protomutton"),
             ]
         )
-        .transitionalItem("createastral:seitan")
+        .transitionalItem("createastral:protomutton")
         .loops(1);
     
     event.recipes
@@ -54,19 +54,19 @@ onEvent("recipes", (event) => {
             ["minecraft:beef"],
             ["createastral:seitan"],
             [
-                event.recipes.createDeploying("createastral:seitan", [
-                    "createastral:seitan",
+                event.recipes.createDeploying("createastral:protobeef", [
+                    "createastral:protobeef",
                     "minecraft:moss_carpet",
                 ]),
-                event.recipes.createFilling("createastral:seitan",
-                ["createastral:seitan",{ fluid: "tconstruct:blood", amount: 100 * mB }]),
-                event.recipes.createPressing("createastral:seitan",
-                                             "createastral:seitan"),
-                event.recipes.createCutting("createastral:seitan",
-                                            "createastral:seitan"),
+                event.recipes.createFilling("createastral:protobeef",
+                ["createastral:protobeef",{ fluid: "tconstruct:blood", amount: 100 * mB }]),
+                event.recipes.createPressing("createastral:protobeef",
+                                             "createastral:protobeef"),
+                event.recipes.createCutting("createastral:protobeef",
+                                            "createastral:protobeef"),
             ]
         )
-        .transitionalItem("createastral:seitan")
+        .transitionalItem("createastral:protobeef")
         .loops(1);
     
     event.recipes
@@ -74,19 +74,19 @@ onEvent("recipes", (event) => {
             ["minecraft:chicken"],
             ["createastral:seitan"],
             [
-                event.recipes.createDeploying("createastral:seitan", [
-                    "createastral:seitan",
+                event.recipes.createDeploying("createastral:protochicken", [
+                    "createastral:protochicken",
                     "minecraft:wheat_seeds",
                 ]),
-                event.recipes.createFilling("createastral:seitan",
-                ["createastral:seitan",{ fluid: "tconstruct:blood", amount: 100 * mB }]),
-                event.recipes.createPressing("createastral:seitan",
-                                             "createastral:seitan"),
-                event.recipes.createCutting("createastral:seitan",
-                                            "createastral:seitan"),
+                event.recipes.createFilling("createastral:protochicken",
+                ["createastral:protochicken",{ fluid: "tconstruct:blood", amount: 100 * mB }]),
+                event.recipes.createPressing("createastral:protochicken",
+                                             "createastral:protochicken"),
+                event.recipes.createCutting("createastral:protochicken",
+                                            "createastral:protochicken"),
             ]
         )
-        .transitionalItem("createastral:seitan")
+        .transitionalItem("createastral:protochicken")
         .loops(1);
 
     event.recipes
@@ -94,19 +94,19 @@ onEvent("recipes", (event) => {
             ["minecraft:rabbit"],
             ["createastral:seitan"],
             [
-                event.recipes.createDeploying("createastral:seitan", [
-                    "createastral:seitan",
+                event.recipes.createDeploying("createastral:protorabbit", [
+                    "createastral:protorabbit",
                     "minecraft:carrot",
                 ]),
-                event.recipes.createFilling("createastral:seitan",
-                ["createastral:seitan",{ fluid: "tconstruct:blood", amount: 100 * mB }]),
-                event.recipes.createPressing("createastral:seitan",
-                                             "createastral:seitan"),
-                event.recipes.createCutting("createastral:seitan",
-                                            "createastral:seitan"),
+                event.recipes.createFilling("createastral:protorabbit",
+                ["createastral:protorabbit",{ fluid: "tconstruct:blood", amount: 100 * mB }]),
+                event.recipes.createPressing("createastral:protorabbit",
+                                             "createastral:protorabbit"),
+                event.recipes.createCutting("createastral:protorabbit",
+                                            "createastral:protorabbit"),
             ]
         )
-        .transitionalItem("createastral:seitan")
+        .transitionalItem("createastral:protorabbit")
         .loops (1);
 
         event.recipes
