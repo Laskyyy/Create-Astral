@@ -182,6 +182,11 @@ onEvent("recipes", (event) => {
             output: "create:andesite_alloy",
             input: "minecraft:andesite",
         },
+        {
+            output: "create:experience_nugget",
+            input: "create:experience_block",
+        },
+
 
         { type: "create:milling", output: "minecraft:gunpowder" },
         { type: "create:milling", output: "minecraft:flint" },
