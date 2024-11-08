@@ -155,7 +155,7 @@ onEvent("recipes", (event) => {
         },
         { id: "techreborn:crafting_table/paper" },
         //Create
-
+        { output: "create:track" },
         { output: "create:blaze_cake" },
         { output: "create:blaze_cake_base" },
         { output: "create:blaze_burner" },
@@ -205,9 +205,11 @@ onEvent("recipes", (event) => {
         { type: "create:crushing", input: "create:scoria" },
         { type: "create:crushing", input: "create:scorchia" },
         { type: "create:crushing", input: "minecraft:cobblestone" },
+        { type: "create:crushing", output: "create:cinder_flour" },
         { type: "create:mixing", output: "create:brass_ingot" },
         { type: "create:splashing", input: "minecraft:red_sand" },
         { type: "create:haunting", input: "minecraft:red_sand" },
+        { type: "create:haunting", input: "minecraft:moss_block" },
         {
             type: "create:mixing",
             output: "tconstruct:rose_gold_ingot",
@@ -237,7 +239,6 @@ onEvent("recipes", (event) => {
             type: "create:item_application",
         },
         { mod: "create", output: "minecraft:andesite" },
-        { input: "create:blaze_burner" },
 
         // Create Deco
 

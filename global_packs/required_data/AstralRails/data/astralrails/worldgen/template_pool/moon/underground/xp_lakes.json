@@ -1,0 +1,33 @@
+{
+  "name": "astralrails:paths/start_paths",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "astralrails:moon/underground/xp_lake_1",
+        "processors": "astralrails:moon/underground/moon_xp_lake",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+		{
+      "weight": 1,
+      "element": {
+        "location": "astralrails:moon/underground/xp_lake_2",
+        "processors": "astralrails:moon/underground/moon_xp_lake",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+		{
+      "weight": 1,
+      "element": {
+        "location": "astralrails:moon/underground/xp_lake_3",
+        "processors": "astralrails:moon/underground/moon_xp_lake",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

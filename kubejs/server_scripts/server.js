@@ -1199,6 +1199,8 @@ onEvent("recipes", (event) => {
 
     event.shapeless("3x createastral:synthetic_slime", ["2x #c:slimeballs", "2x techreborn:sponge_piece"]);
 
+    event.shapeless("1x createastral:moonset_stone", ["1x ad_astra:moon_stone", "1x astraladditions:moonset_crystal"]);
+
     event.shaped("createastral:synthetic_slime_block", ["SSS", "SSS", "SSS"], {
         S: "createastral:synthetic_slime",
     });

@@ -8,5 +8,6 @@
     "block.yttr.continuous_platform": "Structured Prismatic Crystals",
     "block.yttr.centrifuge": "Yttric Centrifuge",
     "advancements.yttr.obtain_xl_iron_ingot.desc": "Obtain Big Iron by smelting Raw Yttrium",
-    "advancements.yttr.obtain_yttrium_ingot.desc": "Obtain an Yttrium Ingot by blasting Raw Yttrium"
+    "advancements.yttr.obtain_yttrium_ingot.desc": "Obtain an Yttrium Ingot by blasting Raw Yttrium",
+    "fluid.yttr.core_lava": "Core Lava"
 }

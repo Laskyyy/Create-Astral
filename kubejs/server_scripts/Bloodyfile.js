@@ -9,7 +9,7 @@ onEvent("recipes", (event) => {
             event.recipes.createCutting("create:dough","create:dough"),]
         )
         .transitionalItem("create:dough")
-        .loops(3);
+        .loops(2);
 
     event.recipes
         .createSequencedAssembly(
@@ -109,6 +109,29 @@ onEvent("recipes", (event) => {
         .transitionalItem("createastral:seitan")
         .loops (1);
 
+        event.recipes
+        .createSequencedAssembly(
+            ["minecraft:egg"],
+            ["createastral:seitan"],
+            [
+                event.recipes.createDeploying("createastral:seitan", [
+                    "createastral:seitan",
+                    "techreborn:calcite_dust",
+                ]),
+                event.recipes.createFilling("createastral:seitan",
+                ["createastral:seitan",{ fluid: "tconstruct:earth_slime", amount: 10 * mB }    
+                ]),
+                event.recipes.createPressing("createastral:seitan",
+                                             "createastral:seitan"),
+
+                event.recipes.createFilling("createastral:seitan",
+                ["createastral:seitan",{ fluid: "kubejs:shimmer", amount: 10 * mB }    //For the bit of magic required to create life
+                ]),
+            ]
+        )
+        .transitionalItem("createastral:seitan")
+        .loops (1);
+
 
         event.recipes
         .createSequencedAssembly( //true DIY Ham
@@ -162,13 +185,36 @@ onEvent("recipes", (event) => {
         .transitionalItem("createastral:seitan")
         .loops(1);
 
+        event.recipes
+        .createSequencedAssembly( // If you need some head, drill some bone
+            ["tconstruct:blaze_head"],
+            ["minecraft:skeleton_skull"],
+            [
+                event.recipes.createDeploying("createastral:incomplete_blaze_head", [
+                    "createastral:incomplete_blaze_head",
+                    "minecraft:blaze_powder",
+                ]),
+
+                event.recipes.createFilling("createastral:incomplete_blaze_head",
+                ["createastral:incomplete_blaze_head",{ fluid: "tconstruct:blazing_blood", amount: 100 * mB }]),
+                
+                event.recipes.createFilling("createastral:incomplete_blaze_head",
+                ["createastral:incomplete_blaze_head",{ fluid: "kubejs:shimmer", amount: 50 * mB }]),
+                
+                event.recipes.createPressing("createastral:incomplete_blaze_head",
+                "createastral:incomplete_blaze_head"),
+            ]
+        )
+        .transitionalItem("createastral:incomplete_blaze_head")
+        .loops(1);
+
 const mixings = [
             {
                 output: {fluid: "tconstruct:blood", amount: BUCKET },
                 input: [
                     "2x minecraft:beetroot",
-                    { fluid: "kubejs:tomato_sauce_fluid", amount: 500 * mB },
-                    { fluid: "kubejs:shimmer", amount: 500 * mB },
+                    { fluid: "kubejs:tomato_sauce_fluid", amount: 900 * mB },
+                    { fluid: "kubejs:shimmer", amount: 100 * mB },
                 ],
                 heat: "heated",
                 time: null,  //Vegan BLOOD
@@ -181,23 +227,36 @@ const mixings = [
                 heat: "",
                 time: null,
             },{
-                output: "16x minecraft:moss_block", //Yea Moss is automatable now without breaking contraptions
+                output: "24x minecraft:moss_block", //Yea Moss is automatable now without breaking contraptions, More Blocks out than in? MAGIC
                 input: [
                     "16x minecraft:mossy_cobblestone","minecraft:moss_block","1x minecraft:bone_meal",
-                    { fluid: "minecraft:water", amount: BUCKET },
+                    { fluid: "minecraft:water", amount: BUCKET / 2 },
                 ],
                 heat: "",
                 time: null,
+            },{
+                output: "10x minecraft:kelp", // If you got the bonemeal, some kelp can be arranged
+                input: ["minecraft:kelp","minecraft:bone_meal",
+                    { fluid: "minecraft:water", amount: BUCKET / 2 },
+                ],
+                heat: "",
+                time: 120,
+            },{
+                output: {fluid: "tconstruct:blazing_blood", amount: BUCKET },
+                input: [
+                    "minecraft:blaze_powder",
+                    { fluid: "tconstruct:blood", amount: BUCKET },
+                ],
+                heat: "superheated",
+                time: null,  //Vegan BLOOD
             }];
             for (const mixing of mixings) {
                 event.recipes
                     .createMixing(mixing.output, mixing.input)
                     .heatRequirement(mixing.heat)
-                    .processingTime(mixing.time ?? 100);
-            
+                    .processingTime(mixing.time ?? 100);}
 
                     event.recipes.createSplashing("minecraft:mossy_cobblestone", 'minecraft:cobblestone') //easy mossy cobble for moss
                     event.recipes.createSplashing("minecraft:mossy_stone_bricks", 'minecraft:stone_bricks')
-                    
-                };
+                ;
 })

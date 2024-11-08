@@ -1,7 +1,7 @@
 {
 	id: "48E82776955518FB"
 	order_index: 3
-	title: "Chapter 3"
+	title: "{ftbquests.reward_tables.chapter_3.title}"
 	icon: "ad_astra:moon_globe"
 	loot_size: 1
 	rewards: [
@@ -15,12 +15,35 @@
 			}
 			weight: 2
 		}
-		{ item: "create:rose_quartz", count: 8, weight: 2 }
-		{ item: "create:railway_casing", count: 24, weight: 2 }
-		{ item: "minecraft:tnt", count: 8, weight: 2 }
-		{ item: "create:belt_connector", count: 8, weight: 2 }
-		{ item: "create:large_cogwheel", count: 5, weight: 2 }
-		{ item: "minecraft:enchanted_golden_apple", weight: 2 }
+		{
+			item: "create:rose_quartz"
+			count: 8
+			weight: 2
+		}
+		{
+			item: "create:railway_casing"
+			count: 24
+			weight: 2
+		}
+		{
+			item: "minecraft:tnt"
+			count: 8
+			weight: 2
+		}
+		{
+			item: "create:belt_connector"
+			count: 8
+			weight: 2
+		}
+		{
+			item: "create:large_cogwheel"
+			count: 5
+			weight: 2
+		}
+		{
+			item: "minecraft:enchanted_golden_apple"
+			weight: 2
+		}
 		{
 			item: {
 				id: "create:filter"
@@ -32,92 +55,335 @@
 			count: 6
 			weight: 2
 		}
-		{ item: "create:crushed_raw_iron", count: 5, weight: 2 }
-		{ item: "minecraft:soul_torch", count: 8, weight: 2 }
-		{ item: "create:crushed_raw_copper", count: 5, weight: 2 }
-		{ item: "techreborn:basic_machine_frame", weight: 2 }
-		{ item: "create:crushed_raw_gold", count: 5, weight: 2 }
-		{ item: "create:crushed_raw_zinc", count: 5, weight: 2 }
-		{ item: "create:experience_nugget", count: 32, weight: 10 }
-		{ item: "farmersdelight:shepherds_pie", weight: 2 }
-		{ item: "create:depot", count: 3, weight: 2 }
-		{ item: "create:brass_hand", count: 6, weight: 2 }
-		{ item: "ad_astra:space_painting", weight: 2 }
-		{ item: "create:chute", weight: 2 }
-		{ item: "minecraft:emerald_block", weight: 2 }
-		{ item: "createaddition:chocolate_cake", weight: 2 }
-		{ item: "create:andesite_funnel", weight: 2 }
-		{ item: "minecraft:shulker_shell", count: 2 }
-		{ item: "techreborn:silver_ingot", count: 8 }
-		{ item: "ad_astra:desh_ingot", count: 4 }
-		{ item: "techreborn:andesite_dust", count: 25 }
-		{ item: "ad_astra:moon_stone", count: 8 }
-		{ item: "minecraft:arrow", count: 7 }
-		{ item: "minecraft:dried_kelp", count: 6 }
-		{ item: "dustrial_decor:cast_iron_billet" }
-		{ item: "minecraft:ender_pearl", count: 3 }
-		{ item: "minecraft:hopper" }
-		{ item: "minecraft:piston" }
-		{ item: "minecraft:kelp", count: 8 }
-		{ item: "minecraft:dried_kelp_block", count: 2 }
-		{ item: "create:bar_of_chocolate", count: 5 }
-		{ item: "create:brass_hand" }
-		{ item: "create:whisk" }
-		{ item: "create:propeller" }
-		{ item: "create:sturdy_sheet", count: 3 }
-		{ item: "create:rose_quartz", count: 5 }
-		{ item: "create:brass_funnel" }
-		{ item: "create:andesite_funnel", count: 2 }
-		{ item: "create:railway_casing", count: 5 }
-		{ item: "create:track", count: 9 }
-		{ item: "create:copper_casing", count: 3 }
-		{ item: "create:andesite_casing", count: 5 }
-		{ item: "create:sail_frame", count: 8 }
-		{ item: "create:piston_extension_pole", count: 5 }
-		{ item: "create:spout" }
-		{ item: "create:fluid_tank" }
-		{ item: "create:smart_fluid_pipe" }
-		{ item: "create:mechanical_pump" }
-		{ item: "create:fluid_pipe" }
-		{ item: "create:smart_chute" }
-		{ item: "create:chute" }
-		{ item: "create:encased_chain_drive" }
-		{ item: "create:gearbox" }
-		{ item: "create:cogwheel", count: 3 }
-		{ item: "create:shaft", count: 11 }
-		{ item: "copycats:copycat_block", count: 7 }
-		{ item: "techreborn:rubber", count: 7 }
-		{ item: "create:belt_connector", count: 3 }
-		{ item: "create:golden_sheet", count: 2 }
-		{ item: "create:iron_sheet", count: 3 }
-		{ item: "create:copper_sheet", count: 4 }
-		{ item: "create:experience_nugget", count: 10 }
-		{ item: "create:copper_nugget", count: 37 }
-		{ item: "create:andesite_alloy", count: 8 }
-		{ item: "create:sweet_roll", count: 3 }
-		{ item: "createastral:bronze_ingot", count: 3 }
-		{ item: "createastral:andesite_compound", count: 7 }
-		{ item: "doodads:platform", count: 14 }
-		{ item: "createdeco:andesite_catwalk", count: 15 }
-		{ item: "createbigcannons:machine_gun_round" }
-		{ item: "createbigcannons:flak_autocannon_round" }
-		{ item: "createbigcannons:empty_powder_charge", count: 2 }
-		{ item: "createbigcannons:impact_fuze" }
-		{ item: "createbigcannons:mortar_stone" }
-		{ item: "createbigcannons:solid_shot" }
-		{ item: "createaddition:iron_rod", count: 3 }
-		{ item: "createaddition:copper_rod", count: 3 }
-		{ item: "createaddition:copper_wire", count: 8 }
-		{ item: "createaddition:copper_spool" }
-		{ item: "createaddition:zinc_sheet", count: 2 }
-		{ item: "create:veridium", count: 10 }
-		{ item: "create:ochrum", count: 10 }
-		{ item: "create:crimsite", count: 16 }
-		{ item: "create:asurine", count: 16 }
-		{ item: "create:copper_scaffolding", count: 16 }
-		{ item: "create:cogwheel", count: 4 }
-		{ item: "create:large_cogwheel", count: 3 }
-		{ item: "astralsignals:polyvinyl_sheet" }
+		{
+			item: "create:crushed_raw_iron"
+			count: 5
+			weight: 2
+		}
+		{
+			item: "minecraft:soul_torch"
+			count: 8
+			weight: 2
+		}
+		{
+			item: "create:crushed_raw_copper"
+			count: 5
+			weight: 2
+		}
+		{
+			item: "techreborn:basic_machine_frame"
+			weight: 2
+		}
+		{
+			item: "create:crushed_raw_gold"
+			count: 5
+			weight: 2
+		}
+		{
+			item: "create:crushed_raw_zinc"
+			count: 5
+			weight: 2
+		}
+		{
+			item: "create:experience_nugget"
+			count: 32
+			weight: 10
+		}
+		{
+			item: "farmersdelight:shepherds_pie"
+			weight: 2
+		}
+		{
+			item: "create:depot"
+			count: 3
+			weight: 2
+		}
+		{
+			item: "create:brass_hand"
+			count: 6
+			weight: 2
+		}
+		{
+			item: "ad_astra:space_painting"
+			weight: 2
+		}
+		{
+			item: "create:chute"
+			weight: 2
+		}
+		{
+			item: "minecraft:emerald_block"
+			weight: 2
+		}
+		{
+			item: "createaddition:chocolate_cake"
+			weight: 2
+		}
+		{
+			item: "create:andesite_funnel"
+			weight: 2
+		}
+		{
+			item: "minecraft:shulker_shell"
+			count: 2
+		}
+		{
+			item: "techreborn:silver_ingot"
+			count: 8
+		}
+		{
+			item: "ad_astra:desh_ingot"
+			count: 4
+		}
+		{
+			item: "techreborn:andesite_dust"
+			count: 25
+		}
+		{
+			item: "ad_astra:moon_stone"
+			count: 8
+		}
+		{
+			item: "minecraft:arrow"
+			count: 7
+		}
+		{
+			item: "minecraft:dried_kelp"
+			count: 6
+		}
+		{
+			item: "dustrial_decor:cast_iron_billet"
+		}
+		{
+			item: "minecraft:ender_pearl"
+			count: 3
+		}
+		{
+			item: "minecraft:hopper"
+		}
+		{
+			item: "minecraft:piston"
+		}
+		{
+			item: "minecraft:kelp"
+			count: 8
+		}
+		{
+			item: "minecraft:dried_kelp_block"
+			count: 2
+		}
+		{
+			item: "create:bar_of_chocolate"
+			count: 5
+		}
+		{
+			item: "create:brass_hand"
+		}
+		{
+			item: "create:whisk"
+		}
+		{
+			item: "create:propeller"
+		}
+		{
+			item: "create:sturdy_sheet"
+			count: 3
+		}
+		{
+			item: "create:rose_quartz"
+			count: 5
+		}
+		{
+			item: "create:brass_funnel"
+		}
+		{
+			item: "create:andesite_funnel"
+			count: 2
+		}
+		{
+			item: "create:railway_casing"
+			count: 5
+		}
+		{
+			item: "create:track"
+			count: 9
+		}
+		{
+			item: "create:copper_casing"
+			count: 3
+		}
+		{
+			item: "create:andesite_casing"
+			count: 5
+		}
+		{
+			item: "create:sail_frame"
+			count: 8
+		}
+		{
+			item: "create:piston_extension_pole"
+			count: 5
+		}
+		{
+			item: "create:spout"
+		}
+		{
+			item: "create:fluid_tank"
+		}
+		{
+			item: "create:smart_fluid_pipe"
+		}
+		{
+			item: "create:mechanical_pump"
+		}
+		{
+			item: "create:fluid_pipe"
+		}
+		{
+			item: "create:smart_chute"
+		}
+		{
+			item: "create:chute"
+		}
+		{
+			item: "create:encased_chain_drive"
+		}
+		{
+			item: "create:gearbox"
+		}
+		{
+			item: "create:cogwheel"
+			count: 3
+		}
+		{
+			item: "create:shaft"
+			count: 11
+		}
+		{
+			item: "copycats:copycat_block"
+			count: 7
+		}
+		{
+			item: "techreborn:rubber"
+			count: 7
+		}
+		{
+			item: "create:belt_connector"
+			count: 3
+		}
+		{
+			item: "create:golden_sheet"
+			count: 2
+		}
+		{
+			item: "create:iron_sheet"
+			count: 3
+		}
+		{
+			item: "create:copper_sheet"
+			count: 4
+		}
+		{
+			item: "create:experience_nugget"
+			count: 10
+		}
+		{
+			item: "create:copper_nugget"
+			count: 37
+		}
+		{
+			item: "create:andesite_alloy"
+			count: 8
+		}
+		{
+			item: "create:sweet_roll"
+			count: 3
+		}
+		{
+			item: "createastral:bronze_ingot"
+			count: 3
+		}
+		{
+			item: "createastral:andesite_compound"
+			count: 7
+		}
+		{
+			item: "doodads:platform"
+			count: 14
+		}
+		{
+			item: "createdeco:andesite_catwalk"
+			count: 15
+		}
+		{
+			item: "createbigcannons:machine_gun_round"
+		}
+		{
+			item: "createbigcannons:flak_autocannon_round"
+		}
+		{
+			item: "createbigcannons:empty_powder_charge"
+			count: 2
+		}
+		{
+			item: "createbigcannons:impact_fuze"
+		}
+		{
+			item: "createbigcannons:mortar_stone"
+		}
+		{
+			item: "createbigcannons:solid_shot"
+		}
+		{
+			item: "createaddition:iron_rod"
+			count: 3
+		}
+		{
+			item: "createaddition:copper_rod"
+			count: 3
+		}
+		{
+			item: "createaddition:copper_wire"
+			count: 8
+		}
+		{
+			item: "createaddition:copper_spool"
+		}
+		{
+			item: "createaddition:zinc_sheet"
+			count: 2
+		}
+		{
+			item: "create:veridium"
+			count: 10
+		}
+		{
+			item: "create:ochrum"
+			count: 10
+		}
+		{
+			item: "create:crimsite"
+			count: 16
+		}
+		{
+			item: "create:asurine"
+			count: 16
+		}
+		{
+			item: "create:copper_scaffolding"
+			count: 16
+		}
+		{
+			item: "create:cogwheel"
+			count: 4
+		}
+		{
+			item: "create:large_cogwheel"
+			count: 3
+		}
+		{
+			item: "astralsignals:polyvinyl_sheet"
+		}
 	]
 	loot_crate: {
 		drops: {

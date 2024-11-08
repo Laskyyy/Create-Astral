@@ -167,7 +167,7 @@ onEvent("recipes", (event) => {
             cast: ["tconstruct:rod_cast", false],
         },
         {
-            fluid: ["tconstruct:molten_uranium", mB*500],
+            fluid: ["tconstruct:molten_uranium", mB * 500],
             result: "techreborn:data_storage_chip",
             cooling_time: 300,
             cast: ["tconstruct:rod_cast", false],
@@ -191,11 +191,17 @@ onEvent("recipes", (event) => {
             cast: ["astraladditions:ring_gold_cast", false],
         },
         {
-            fluid: ["kubejs:shimmer", NUGGET*3],
+            fluid: ["kubejs:shimmer", NUGGET * 3],
             result: "astraladditions:shimmer_lily",
             cooling_time: 20,
             cast: ["minecraft:lily_of_the_valley", true],
-        }
+        },
+        {
+            fluid: ["tconstruct:seared_stone", NUGGET * 3],
+            result: "astralfoods:seared_potato",
+            cooling_time: 20,
+            cast: ["minecraft:potato", true],
+        },
     ].forEach((recipe) => {
         event.custom({
             type: "tconstruct:casting_table",

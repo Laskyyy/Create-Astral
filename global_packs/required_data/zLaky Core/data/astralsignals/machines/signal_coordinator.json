@@ -1,5 +1,5 @@
 {
-    "name": "Signal Coordinator",
+    "name": "custommachinery.astralsignals.signal_coordinator",
     "appearance": {
         "block": "astralsignals:signal_coordinator_dummy"
     },
@@ -38,7 +38,7 @@
             "type": "custommachinery:status"
         },
         {
-            "text": "Signal Coordinator",
+            "text": "custommachinery.astralsignals.signal_coordinator.text",
             "x": 7,
             "y": 5,
             "type": "custommachinery:text"
