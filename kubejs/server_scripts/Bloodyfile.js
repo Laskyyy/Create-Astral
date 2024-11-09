@@ -258,5 +258,6 @@ const mixings = [
 
                     event.recipes.createSplashing("minecraft:mossy_cobblestone", 'minecraft:cobblestone') //easy mossy cobble for moss
                     event.recipes.createSplashing("minecraft:mossy_stone_bricks", 'minecraft:stone_bricks')
+                    event.recipes.createCutting("minecraft:skeleton_skull","minecraft:bone_block")
                 ;
 })
