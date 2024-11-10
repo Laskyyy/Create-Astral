@@ -51,7 +51,7 @@ onEvent("item.registry", (event) => {
         .create("astralfoods:quantum_bites")
         .displayName("Quantum Bites")
         .food((food) => {
-            food.hunger(15).saturation(1.2).effect("regeneration", 300, 2, 1).alwaysEdible();
+            food.hunger(8).saturation(0.9).effect("regeneration", 300, 2, 1).alwaysEdible();
         });
 
     event
@@ -66,7 +66,7 @@ onEvent("item.registry", (event) => {
         .displayName("Quantum Pasta")
         .food((food) => {
             food.hunger(75)
-                .saturation(1.1)
+                .saturation(0.9)
                 .effect("haste", 5000, 2, 1)
                 .effect("regeneration", 5000, 2, 1)
                 .effect("farmersdelight:nourishment", 6600, 2, 1)
@@ -77,15 +77,15 @@ onEvent("item.registry", (event) => {
         .create("astralfoods:seared_potato")
         .displayName("Seared Potato")
         .food((food) => {
-            food.hunger(14).saturation(1).effect("resistance", 440, 1, 1).alwaysEdible();
+            food.hunger(7).saturation(0.8).effect("resistance", 440, 1, 1).alwaysEdible();
         });
 
     event
         .create("astralfoods:dipped_potato")
         .displayName("Dipped Potato")
         .food((food) => {
-            food.hunger(19)
-                .saturation(1.1)
+            food.hunger(10)
+                .saturation(0.8)
                 .effect("resistance", 440, 2, 1)
                 .effect("absorption", 440, 3, 1)
                 .alwaysEdible();
@@ -95,8 +95,8 @@ onEvent("item.registry", (event) => {
         .create("astralfoods:shimmered_rabbit_stew")
         .displayName("Shimmered Rabbit Stew")
         .food((food) => {
-            food.hunger(18)
-                .saturation(0.9)
+            food.hunger(10)
+                .saturation(0.8)
                 .effect("resistance", 500, 1, 1)
                 .effect("farmersdelight:nourishment", 5000, 0, 1)
                 .alwaysEdible();

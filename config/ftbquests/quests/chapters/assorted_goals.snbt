@@ -1577,8 +1577,8 @@
 			]
 		}
 		{
-			x: -9.0d
-			y: 16.0d
+			x: -8.5d
+			y: 15.5d
 			subtitle: "{ftbquests.chapter.assorted_goals.quests44.subtitle}"
 			dependencies: ["52832D8DA239C017"]
 			optional: true
@@ -2124,6 +2124,140 @@
 					item: "drinkbeer:recipe_board_package"
 				}
 			]
+		}
+		{
+			icon: {
+				id: "farmersdelight:flint_knife"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -11.0d
+			y: 16.0d
+			shape: "diamond"
+			subtitle: "A food expansion"
+			description: ["Powerful foods made to aid you through your journey!"]
+			dependencies: ["576B4EA932FC2E16"]
+			id: "63780E00CD88F52F"
+			tasks: [{
+				id: "5D7B09F6DB50859C"
+				type: "checkmark"
+				title: "Welcome to Astral Foods!"
+			}]
+			rewards: [{
+				id: "28986454F3CD4EC7"
+				type: "item"
+				item: {
+					id: "farmersdelight:iron_knife"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -13.0d
+			y: 17.0d
+			subtitle: "\"smart\" food"
+			description: ["Cut some AE2 singularities and cook some astral singularities then put them in a pot with pasta!"]
+			hide_dependency_lines: true
+			dependencies: ["5D7B09F6DB50859C"]
+			id: "62659BC787D407E1"
+			tasks: [{
+				id: "7B0A7FEA40FC0133"
+				type: "item"
+				item: "astralfoods:quantum_pasta"
+			}]
+		}
+		{
+			x: -11.0d
+			y: 18.0d
+			subtitle: "Tough as a rock! Literally!"
+			description: ["Pour seared stone on a potato"]
+			hide_dependency_lines: true
+			dependencies: ["5D7B09F6DB50859C"]
+			id: "34EA48FB79E409D4"
+			tasks: [{
+				id: "415CBAE25BF4D0A5"
+				type: "item"
+				item: "astralfoods:seared_potato"
+			}]
+		}
+		{
+			x: -11.0d
+			y: 17.0d
+			subtitle: "Nerfed a bunch"
+			description: ["Spout shimmer on an apple"]
+			hide_dependency_lines: true
+			dependencies: ["5D7B09F6DB50859C"]
+			id: "799319A86142407F"
+			tasks: [{
+				id: "6BC614231D8014BB"
+				type: "item"
+				item: "astralfoods:shimmered_apple"
+			}]
+		}
+		{
+			x: -12.0d
+			y: 16.0d
+			subtitle: "Contains 243 onions!"
+			description: ["Obtained by placing 27 onion crates in a desizer. It isn't that tasty btw"]
+			hide_dependency_lines: true
+			dependencies: ["5D7B09F6DB50859C"]
+			id: "6D509E586A16E23A"
+			tasks: [{
+				id: "7BBFC1D65BCC5B6C"
+				type: "item"
+				item: "astralfoods:compressed_onion"
+			}]
+		}
+		{
+			x: -12.0d
+			y: 17.0d
+			shape: "gear"
+			subtitle: "The finale"
+			description: ["Put all four major foods in a amalgamation matrix. This is the best food in the game (I think)"]
+			dependencies: [
+				"799319A86142407F"
+				"5DE5797033D9F50B"
+				"6D509E586A16E23A"
+				"62659BC787D407E1"
+			]
+			secret: true
+			id: "42B568D7D0C2C0E0"
+			tasks: [{
+				id: "20B60D9BC18EF308"
+				type: "item"
+				item: "astralfoods:food_amalgamation"
+			}]
+		}
+		{
+			x: -12.0d
+			y: 18.0d
+			subtitle: "Not so tough now"
+			description: ["Alternative to the dipped potato! This one gives nourishment! Made by deploying seared stone, cooked rabbit and spouting shimmer on a bowl"]
+			dependencies: ["34EA48FB79E409D4"]
+			id: "5DE5797033D9F50B"
+			tasks: [{
+				id: "3769D9A62A831DA0"
+				type: "item"
+				item: "astralfoods:shimmered_rabbit_stew"
+			}]
+		}
+		{
+			x: -10.0d
+			y: 18.0d
+			subtitle: "Even tougher!"
+			description: ["Alternative to the stew. This one gives absorption! Made by pouring gold on a seared potato"]
+			dependencies: ["34EA48FB79E409D4"]
+			id: "7EBC3B5BFA6D8C6C"
+			tasks: [{
+				id: "2FAE23765B1ED7F2"
+				type: "item"
+				item: "astralfoods:dipped_potato"
+			}]
 		}
 	]
 	quest_links: [ ]
