@@ -1,0 +1,10 @@
+{
+    "block": "createastral:moonset_stone",
+    "dim": "createastral:moon_debris",
+    "ignitionType": "ITEM",
+    "ignitionSource": "createastral:astral_conduit",
+		"returnDim": "ad_astra:moon",
+    "r": 225,
+    "g": 162,
+    "b": 225
+}

@@ -144,6 +144,7 @@
 
     "tooltip.astralfoods.shimmered_rabbit_stew": "Suggested by NikWas!",
     "tooltip.astralfoods.astral_sauce": "The bowl comes from the recipe :blehh:",
+    "tooltip.astralfoods.dipped_potato": "Beloved food of the piglins! Suggested by TheRobbie72",
 
     "tooltip.createbigcannons.steel_screw_breech": "Wrenchable",
     "tooltip.createbigcannons.incomplete_steel_screw_breech": "Wrenchable",
@@ -211,7 +212,7 @@
     "item.createastral.crushed_raw_ostrum": "Crushed Raw Ostrum",
     "item.createastral.crushed_raw_calorite": "Crushed Raw Calorite",
     "item.createastral.crushed_raw_cobalt": "Crushed Raw Cobalt",
-    "item.createastral.crushed_raw_gadolinite": "Crushed Raw Gadolinite",
+    "item.createastral.crushed_raw_gadolinite": "Crushed Raw Yttrium",
 
     "item.createastral.subatomic_ingot": "Subatomic Ingot",
     "item.createastral.bronze_ingot": "Bronze Ingot",
@@ -341,7 +342,8 @@
     "item.astralfoods.shimmered_apple": "Shimmered Apple",
     "item.astralfoods.compressed_onion": "Compressed Onion",
     "item.astralfoods.food_amalgamation": "Food Amalgamation",
-    "item.astralfoods:bulbas_tea":"Bulba's Tea",
+    "item.astralfoods.bulbas_tea": "Bulba's Tea",
+    "item.astralfoods.astralfoods.dipped_potato": "Dipped Potato",
 
     "block.kubejs.fragile_sheet_block": "Fragile Sheet Block",
     "block.kubejs.broken_fragile_sheet_block": "Broken Fragile Sheet Block",
@@ -389,10 +391,12 @@
     "block.createastral.synthetic_slime_block": "Synthetic Slime Block",
     "block.createastral.swift_andesite": "Swift Andesite",
     "block.createastral.rocket_casing": "Rocket Casing",
+    "block.createastral.moonset_stone": "Moonset Stone",
 
     "block.doodads.asphalt_slab": "Asphalt Slab",
     "block.doodads.asphalt_stair": "Asphalt Stair",
     "block.yttr.polished_scorched_obsidian_holster_alive": "Polished Scorched Obsidian Holster Alive",
+    "block.estrogen.centrifuge": "Fluid Centrifuge",
 
     "fluid.kubejs.molten_calorite": "Calorite",
     "fluid.kubejs.molten_ostrum": "Ostrum",
@@ -440,6 +444,7 @@
     "fluid.kubejs.vegetable_soup_fluid": "Vegetable Soup",
     "fluid.kubejs.apple_cider_fluid": "Apple Cider",
     "fluid.kubejs.chicken_soup_fluid": "Chicken Soup",
+    "fluid.yttr.core_lava": "Core Lava",
 
     "comment_4": "vanilla",
     "logging_tip": "Please Read The Quest Book (Hover Over Me!)",
@@ -928,7 +933,7 @@
     "ftbquests.chapter.assorted_goals.quests19.title": "Gather! 64 Pumpkins",
     "ftbquests.chapter.assorted_goals.quests20.title": "Gather! 64 Carrot Crates",
     "ftbquests.chapter.assorted_goals.quests21.title": "Gather! 64 Potato Crates",
-    "ftbquests.chapter.assorted_goals.quests22.title": "Gather! 64 Corn Crates",
+    "ftbquests.chapter.assorted_goals.quests22.title": "Gather! 64 Beetroot Crates",
     "ftbquests.chapter.assorted_goals.quests23.title": "Gather! 64 Bags of Rice",
     "ftbquests.chapter.assorted_goals.quests24.title": "Gather! 64 Onion Crates",
     "ftbquests.chapter.assorted_goals.quests25.title": "Gather! 64 Tomato Crates",
@@ -2351,7 +2356,7 @@
     "ftbquests.chapter.chapter_4.quests90.description4": "Consider creating a Limestone generator if you haven't already! ",
     "ftbquests.chapter.chapter_4.quests90.description6": "(Honey+Lava cobble generator OR compacting Cobble+Milk)",
     "ftbquests.chapter.chapter_4.quests91.title": "A Basalt Generator",
-    "ftbquests.chapter.chapter_4.quests91.description0": "Lava touching Basalt and Blue Ice will create Basalt. The Basalt can then be mined, much like a Cobblestone generator setup.",
+    "ftbquests.chapter.chapter_4.quests91.description0": "Lava touching Soul Soil and Blue Ice will create Basalt. The Basalt can then be mined, much like a Cobblestone generator setup.",
     "ftbquests.chapter.chapter_4.quests91.description3": "Basalt can be processed to directly yield many useful resources.",
     "ftbquests.chapter.chapter_4.quests92.subtitle": "\"Say cheese!\" is pretty fitting.",
     "ftbquests.chapter.chapter_4.quests93.title": "Too Many Items!",
@@ -2908,5 +2913,21 @@
     "ftbquests.reward_tables.chapter_3.title": "Chapter 3",
     "ftbquests.reward_tables.chapter_35.title": "Loot Crate: AE2",
     "ftbquests.reward_tables.chapter_4.title": "Loot Crate: Chapter 4",
-    "ftbquests.reward_tables.chapter_5.title": "Loot Crate: Chapter 5-6"
+    "ftbquests.reward_tables.chapter_5.title": "Loot Crate: Chapter 5-6",
+
+		"category.starei.channeling_transformer": "Channeling",
+    "category.starei.distillery": "Distilling",
+    "category.starei.electrolyzer": "Electrolyzing",
+    "category.starei.gas_mixer": "Gas Mixing",
+    "category.starei.shimmer_refinery": "Shimmer Refining",
+    "category.starei.slime_furnace": "Slime Fuel",
+    "category.starei.stone_growth": "Stone Growing",
+    "starei.slime_furnace.text1": "%d SU at %d RPM",
+    "starei.slime_furnace.text2": "%s seconds",
+    "starei.planet.earth": "Earth",
+    "starei.planet.moon": "Moon",
+    "starei.planet.mars": "Mars",
+    "starei.planet.mercury": "Mercury",
+    "starei.planet.venus": "Venus",
+    "starei.planet.glacio": "Glacio"
 }

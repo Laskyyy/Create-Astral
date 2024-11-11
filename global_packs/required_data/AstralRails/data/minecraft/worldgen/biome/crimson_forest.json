@@ -119,7 +119,8 @@
       "minecraft:ore_quartz_nether",
       "minecraft:ore_ancient_debris_large",
       "minecraft:ore_debris_small",
-			"astralrails:nether/nether_enderslime_geode"
+			"astralrails:nether/nether_enderslime_geode",
+			"astralrails:nether/nether_monazite_geode"
     ],
     [],
     [
@@ -131,7 +132,8 @@
       "minecraft:red_mushroom_normal",
       "minecraft:weeping_vines",
       "minecraft:crimson_fungi",
-      "minecraft:crimson_forest_vegetation"
+      "minecraft:crimson_forest_vegetation",
+      "astralrails:mars_bramblebone_veg"
     ]
   ]
 }

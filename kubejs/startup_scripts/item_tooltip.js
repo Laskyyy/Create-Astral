@@ -311,7 +311,7 @@ onEvent("item.tooltip", (e) => {
         },
         {
             item: "astralfoods:dipped_potato",
-            tooltip: "Beloved food of the piglins! Suggested by TheRobbie72",
+            tooltip: "tooltip.astralfoods.dipped_potato",
         },
         {
             item: "createbigcannons:steel_screw_breech",
