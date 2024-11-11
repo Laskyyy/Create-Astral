@@ -199,7 +199,7 @@ onEvent("item.registry", (event) => {
     event.create("createastral:orcane").displayName("Information / General Progression").glow(true);
     event.create("createastral:astral_singularity").food((food) => {
         food.hunger(50)
-            .saturation(50) //This value does not directly translate to saturation points gained
+            .saturation(1) //This value does not directly translate to saturation points gained
             //The real value can be assumed to be:
             //min(hunger * saturation * 2 + saturation, foodAmountAfterEating)
             .effect("regeneration", 3000, 0, 1)

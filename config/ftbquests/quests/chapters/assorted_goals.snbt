@@ -2126,6 +2126,7 @@
 			]
 		}
 		{
+			title: "{ftbquests.chapter.assorted_goals.quests59.title}"
 			icon: {
 				id: "farmersdelight:flint_knife"
 				Count: 1b
@@ -2136,8 +2137,8 @@
 			x: -11.0d
 			y: 16.0d
 			shape: "diamond"
-			subtitle: "A food expansion"
-			description: ["Powerful foods made to aid you through your journey!"]
+			subtitle: "{ftbquests.chapter.assorted_goals.quests59.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests59.description0}"]
 			dependencies: ["576B4EA932FC2E16"]
 			id: "63780E00CD88F52F"
 			tasks: [{
@@ -2160,8 +2161,8 @@
 		{
 			x: -13.0d
 			y: 17.0d
-			subtitle: "\"smart\" food"
-			description: ["Cut some AE2 singularities and cook some astral singularities then put them in a pot with pasta!"]
+			subtitle: "{ftbquests.chapter.assorted_goals.quests63.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests59.description5}"]
 			hide_dependency_lines: true
 			dependencies: ["5D7B09F6DB50859C"]
 			id: "62659BC787D407E1"
@@ -2170,12 +2171,17 @@
 				type: "item"
 				item: "astralfoods:quantum_pasta"
 			}]
+			rewards: [{
+				id: "50B685C77E086AF6"
+				type: "item"
+				item: "ae2:cell_component_16k"
+			}]
 		}
 		{
 			x: -11.0d
 			y: 18.0d
-			subtitle: "Tough as a rock! Literally!"
-			description: ["Pour seared stone on a potato"]
+			subtitle: "{ftbquests.chapter.assorted_goals.quests65.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests59.description7}"]
 			hide_dependency_lines: true
 			dependencies: ["5D7B09F6DB50859C"]
 			id: "34EA48FB79E409D4"
@@ -2184,12 +2190,18 @@
 				type: "item"
 				item: "astralfoods:seared_potato"
 			}]
+			rewards: [{
+				id: "7B4B6F584C9FA50F"
+				type: "item"
+				item: "tconstruct:seared_brick"
+				count: 2
+			}]
 		}
 		{
 			x: -11.0d
 			y: 17.0d
-			subtitle: "Nerfed a bunch"
-			description: ["Spout shimmer on an apple"]
+			subtitle: "{ftbquests.chapter.assorted_goals.quests61.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests59.description3}"]
 			hide_dependency_lines: true
 			dependencies: ["5D7B09F6DB50859C"]
 			id: "799319A86142407F"
@@ -2198,12 +2210,17 @@
 				type: "item"
 				item: "astralfoods:shimmered_apple"
 			}]
+			rewards: [{
+				id: "01379DCB86DBC9A9"
+				type: "item"
+				item: "tconstruct:ender_slime_crystal_cluster"
+			}]
 		}
 		{
 			x: -12.0d
 			y: 16.0d
-			subtitle: "Contains 243 onions!"
-			description: ["Obtained by placing 27 onion crates in a desizer. It isn't that tasty btw"]
+			subtitle: "{ftbquests.chapter.assorted_goals.quests60.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests59.description2}"]
 			hide_dependency_lines: true
 			dependencies: ["5D7B09F6DB50859C"]
 			id: "6D509E586A16E23A"
@@ -2212,13 +2229,19 @@
 				type: "item"
 				item: "astralfoods:compressed_onion"
 			}]
+			rewards: [{
+				id: "165408791E6FBE03"
+				type: "item"
+				item: "farmersdelight:onion"
+			}]
 		}
 		{
+			title: "{ftbquests.chapter.assorted_goals.quests62.title}"
 			x: -12.0d
 			y: 17.0d
 			shape: "gear"
-			subtitle: "The finale"
-			description: ["Put all four major foods in a amalgamation matrix. This is the best food in the game (I think)"]
+			subtitle: "{ftbquests.chapter.assorted_goals.quests62.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests59.description4}"]
 			dependencies: [
 				"799319A86142407F"
 				"5DE5797033D9F50B"
@@ -2232,12 +2255,23 @@
 				type: "item"
 				item: "astralfoods:food_amalgamation"
 			}]
+			rewards: [{
+				id: "7FFF3CD947CEBF08"
+				type: "item"
+				item: {
+					id: "farmersdelight:netherite_knife"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
 		}
 		{
 			x: -12.0d
 			y: 18.0d
-			subtitle: "Not so tough now"
-			description: ["Alternative to the dipped potato! This one gives nourishment! Made by deploying seared stone, cooked rabbit and spouting shimmer on a bowl"]
+			subtitle: "{ftbquests.chapter.assorted_goals.quests66.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests59.description8}"]
 			dependencies: ["34EA48FB79E409D4"]
 			id: "5DE5797033D9F50B"
 			tasks: [{
@@ -2245,14 +2279,24 @@
 				type: "item"
 				item: "astralfoods:shimmered_rabbit_stew"
 			}]
+			rewards: [{
+				id: "7E0EF4CD988D47B4"
+				type: "item"
+				item: "minecraft:rabbit_foot"
+			}]
 		}
 		{
 			x: -10.0d
 			y: 18.0d
-			subtitle: "Even tougher!"
-			description: ["Alternative to the stew. This one gives absorption! Made by pouring gold on a seared potato"]
+			subtitle: "{ftbquests.chapter.assorted_goals.quests64.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests59.description6}"]
 			dependencies: ["34EA48FB79E409D4"]
 			id: "7EBC3B5BFA6D8C6C"
+			tasks: [{
+				id: "2FAE23765B1ED7F2"
+				type: "item"
+				item: "astralfoods:dipped_potato"
+			}]
 			tasks: [{
 				id: "2FAE23765B1ED7F2"
 				type: "item"
