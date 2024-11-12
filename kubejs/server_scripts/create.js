@@ -2715,6 +2715,12 @@ function splashingRecipes(event) {
             outputs: [["minecraft:shulker_box", 1]],
         },
 
+	{
+	    // soul soil without random ticks
+	    input: "farmersdelight:orgarnic_compost",
+	    output: [["farmersdelight:rich_soil", 1]],
+	},
+
         // ae2 cable washing made easy !!!
 
         {
