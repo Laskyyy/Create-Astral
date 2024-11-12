@@ -2715,6 +2715,12 @@ function splashingRecipes(event) {
             outputs: [["minecraft:shulker_box", 1]],
         },
 
+	{
+	    // rich soil with no random ticks !!!
+	    input:"farmersdelight:organic_compost",
+	    outputs: ["farmersdelight:rich_soil", 1],
+	},
+
         // ae2 cable washing made easy !!!
 
         {
