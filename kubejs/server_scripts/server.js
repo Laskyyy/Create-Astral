@@ -457,14 +457,14 @@ function lizardCH3Changes(event) {
     });
 
     // Changed blaze burner recipe.
-    event.shaped("create:empty_blaze_burner", ["AAA", "A A", "BCB"], {
+    event.shaped("create:empty_blaze_burner", ["A A", "A A", "BCB"], {
         A: "createaddition:iron_rod",
         B: "create:iron_sheet",
         C: "ad_astra:moon_stone",
     });
 
     // Gag recipe
-    event.shaped("create:blaze_burner", ["AAA", "ADA", "BCB"], {
+    event.shaped("create:blaze_burner", ["A A", "ADA", "BCB"], {
         A: "createaddition:iron_rod",
         B: "create:iron_sheet",
         C: "ad_astra:moon_stone",
