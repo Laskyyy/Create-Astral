@@ -6,7 +6,8 @@ onEvent("fluid.registry", (event) => {
         .bucketColor(0xc41a39)
         .displayName("Calorite")
         .stillTexture("tconstruct:block/fluid/molten/still")
-        .flowingTexture("tconstruct:block/fluid/molten/flowing");
+        .flowingTexture("tconstruct:block/fluid/molten/flowing")
+        .tag("tconstruct:tooltips/metal")
 
     event
         .create("molten_ostrum")
@@ -14,7 +15,8 @@ onEvent("fluid.registry", (event) => {
         .bucketColor(0x73515e)
         .displayName("Ostrum")
         .stillTexture("tconstruct:block/fluid/molten/still")
-        .flowingTexture("tconstruct:block/fluid/molten/flowing");
+        .flowingTexture("tconstruct:block/fluid/molten/flowing")
+        .tag("tconstruct:tooltips/metal")
 
     event
         .create("molten_desh")
@@ -22,7 +24,8 @@ onEvent("fluid.registry", (event) => {
         .bucketColor(0xec8742)
         .displayName("Desh")
         .stillTexture("tconstruct:block/fluid/molten/still")
-        .flowingTexture("tconstruct:block/fluid/molten/flowing");
+        .flowingTexture("tconstruct:block/fluid/molten/flowing")
+        .tag("tconstruct:tooltips/metal")
 
     event
         .create("molten_yttrium")
@@ -30,7 +33,8 @@ onEvent("fluid.registry", (event) => {
         .bucketColor(0x487d77)
         .displayName("Yttrium")
         .stillTexture("tconstruct:block/fluid/molten/still")
-        .flowingTexture("tconstruct:block/fluid/molten/flowing");
+        .flowingTexture("tconstruct:block/fluid/molten/flowing")
+        .tag("tconstruct:tooltips/metal")
 
     event
         .create("molten_shadowsteel")
@@ -38,7 +42,8 @@ onEvent("fluid.registry", (event) => {
         .bucketColor(0x2e2742)
         .displayName("Shadow Fluid")
         .stillTexture("tconstruct:block/fluid/molten/still")
-        .flowingTexture("tconstruct:block/fluid/molten/flowing");
+        .flowingTexture("tconstruct:block/fluid/molten/flowing")
+        .tag("tconstruct:tooltips/metal")
 
     event
         .create("molten_radiance")
@@ -46,7 +51,8 @@ onEvent("fluid.registry", (event) => {
         .bucketColor(0xf7f2ff)
         .displayName("Radiant Residue")
         .stillTexture("tconstruct:block/fluid/molten/still")
-        .flowingTexture("tconstruct:block/fluid/molten/flowing");
+        .flowingTexture("tconstruct:block/fluid/molten/flowing")
+        .tag("tconstruct:tooltips/metal")
 
     event
         .create("aurorite")
@@ -54,7 +60,7 @@ onEvent("fluid.registry", (event) => {
         .bucketColor(0xc8e9e9)
         .displayName("Aurorite")
         .stillTexture("tconstruct:block/fluid/molten/still")
-        .flowingTexture("tconstruct:block/fluid/molten/flowing");
+        .flowingTexture("tconstruct:block/fluid/molten/flowing")
 
     event
         .create("metabolic_broth")
@@ -62,7 +68,7 @@ onEvent("fluid.registry", (event) => {
         .bucketColor(0xC3B1E1)
         .displayName("Metabolic Broth")
         .stillTexture("tconstruct:block/fluid/molten/still")
-        .flowingTexture("tconstruct:block/fluid/molten/flowing");
+        .flowingTexture("tconstruct:block/fluid/molten/flowing")
 
         event
         .create("plasma_fluid")
@@ -107,7 +113,8 @@ onEvent("fluid.registry", (event) => {
         .bucketColor(0x959595)
         .displayName("Blast-Resistant Cement")
         .stillTexture("tconstruct:block/fluid/molten/still")
-        .flowingTexture("tconstruct:block/fluid/molten/flowing");
+        .flowingTexture("tconstruct:block/fluid/molten/flowing")
+        .tag("tconstruct:tooltips/metal")
 
     event
         .create("red_grape_juice")
