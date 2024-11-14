@@ -2717,7 +2717,7 @@ function splashingRecipes(event) {
 
 	{
 	    // soul soil without random ticks
-	    input: "farmersdelight:orgarnic_compost",
+	    input: "farmersdelight:organic_compost",
 	    outputs: [["farmersdelight:rich_soil", 1]],
 	},
 
