@@ -2126,7 +2126,6 @@
 			]
 		}
 		{
-			title: "{ftbquests.chapter.assorted_goals.quests59.title}"
 			icon: {
 				id: "farmersdelight:flint_knife"
 				Count: 1b
@@ -2144,7 +2143,7 @@
 			tasks: [{
 				id: "5D7B09F6DB50859C"
 				type: "checkmark"
-				title: "Welcome to Astral Foods!"
+				title: "{ftbquests.chapter.assorted_goals.quests59.title}!"
 			}]
 			rewards: [{
 				id: "28986454F3CD4EC7"
