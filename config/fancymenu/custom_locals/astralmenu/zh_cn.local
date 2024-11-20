@@ -1,0 +1,46 @@
+astralmenu.mainmenu.singleplayer.text = 单人游戏
+astralmenu.mainmenu.singleplayer.hover = 好好享受吧！
+astralmenu.mainmenu.multiplayer.text = 多人游戏
+astralmenu.mainmenu.multiplayer.hover = 加入官方服务器！
+astralmenu.mainmenu.options.text = 选项
+astralmenu.mainmenu.options.hover = 调节游戏选项
+astralmenu.mainmenu.quit.text = 退出游戏
+astralmenu.mainmenu.quit.hover = 早点回来啊！
+astralmenu.mainmenu.changelog.text = 更新日志
+astralmenu.mainmenu.changelog.hover = 最新版本号：2.1.3
+astralmenu.mainmenu.music.hover = 在Spotify上欣赏游戏OST！
+astralmenu.mainmenu.discord.hover = 加入官方Discord服务器！
+astralmenu.mainmenu.credits.hover = 打开机械动力：星辰的致谢人员表
+astralmenu.mainmenu.accessibility.hover = 打开辅助功能设置
+astralmenu.mainmenu.modlist.hover = 打开模组列表
+astralmenu.mainmenu.createconfig.hover = 打开机械动力模组的配置
+astralmenu.mainmenu.menucredit.line1 = 菜单设计者：_Shortman
+astralmenu.mainmenu.menucredit.line2 = 底部图标设计者：_Shortman
+astralmenu.mainmenu.menucredit.line3 = 由Erdragh和_Shortman实现
+
+astralmenu.creditsmenu.title = 机械动力：星辰 致谢人员表
+astralmenu.creditsmenu.packdevs.header = 整合包开发者
+astralmenu.creditsmenu.contributors.header = 重要贡献者
+astralmenu.creditsmenu.screenshots.header = 菜单截图
+astralmenu.creditsmenu.screenshots.nzmanor = N.Z. Manor（官方服务器）
+astralmenu.creditsmenu.screenshots.bar = Bar（姊妹服务器）
+astralmenu.creditsmenu.screenshots.lander = Moon Lander
+astralmenu.creditsmenu.screenshots.station = Train Station（官方服务器）
+astralmenu.creditsmenu.screenshots.mountain = Mountainside Base
+astralmenu.creditsmenu.screenshots.tanks = Lava Tanks
+astralmenu.creditsmenu.screenshots.guard = Ruined Guard Monument
+astralmenu.creditsmenu.screenshots.satellite = Rusted Satellite Dish
+astralmenu.creditsmenu.screenshots.underground = Underground Lava Operation
+astralmenu.creditsmenu.structures.header = 结构设计者
+astralmenu.creditsmenu.testers.header = Beta时期测试者
+astralmenu.creditsmenu.close = 关闭致谢人员表
+
+astralmenu.changelog.2_1.title = 机械动力：星辰 Ver 2.1
+astralmenu.changelog.2_1.close = 关闭更新日志
+astralmenu.changelog.2_1_1.label =2.1版本更新
+
+astralmenu.changelog.2_1_1.title = 机械动力：星辰2.1.3更新补丁
+astralmenu.changelog.2_1_1.label = 2.1.3版本补丁
+
+astralmenu.multiplayer_error_message.line1 = 如果你加入多人游戏时报错，请先多试几次再考虑报告bug！
+astralmenu.multiplayer_error_message.line2 = 如果你还是没法进多人游戏，请加入我们的Discord（链接在主菜单左边），然后在#bug-reports频道中报告bug！
