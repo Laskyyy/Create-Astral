@@ -1492,6 +1492,17 @@ function mixingRecipes(event) {
     // Heat: "" = no heat, "heated", or "superheated"
     // Time: Mixing time in ticks
     [
+				{
+            output: [{
+                fluid: "milk:still_milk",
+                amount: BUCKET/2,
+            },
+						"cookingforblockheads:cow_jar"
+						],
+            input: ["cookingforblockheads:cow_jar"],
+            heat: "",
+            time: 60,
+        },
         {
             output: "8x create:blaze_cake",
             input: ["yttr:delicace", { fluid: "kubejs:metabolic_broth", amount: BUCKET / 4 }],
