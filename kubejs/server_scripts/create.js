@@ -1446,6 +1446,59 @@ function fillingRecipes(event) {
             output: "astralfoods:dipped_potato",
             fluid: "tconstruct:molten_gold",
             amount: INGOT,
+        },{
+            input: "drinkbeer:empty_beer_mug",
+            output: "drinkbeer:beer_mug",
+            fluid: "kubejs:miner_pale_ale_fluid",
+            amount: 250 * mB
+        },
+        {
+            input: "drinkbeer:empty_beer_mug",
+            output: "drinkbeer:beer_mug_blaze_stout",
+            fluid: "kubejs:blaze_stout_fluid",
+            amount: 250 * mB
+        },
+        {
+            input: "drinkbeer:empty_beer_mug",
+            output: "drinkbeer:beer_mug_blaze_milk_stout",
+            fluid: "kubejs:blaze_milk_stout_fluid",
+            amount: 250 * mB
+        },
+        {
+            input: "drinkbeer:empty_beer_mug",
+            output: "drinkbeer:beer_mug_apple_lambic",
+            fluid: "kubejs:apple_lambic_fluid",
+            amount: 250 * mB
+        },
+        {
+            input: "drinkbeer:empty_beer_mug",
+            output: "drinkbeer:beer_mug_sweet_berry_kriek",
+            fluid: "kubejs:sweet_berry_kriek_fluid",
+            amount: 250 * mB
+        },
+        {
+            input: "drinkbeer:empty_beer_mug",
+            output: "drinkbeer:beer_mug_haars_icey_pale_lager",
+            fluid: "kubejs:haars_icey_pale_lager_fluid",
+            amount: 250 * mB
+        },
+        {
+            input: "drinkbeer:empty_beer_mug",
+            output: "drinkbeer:beer_mug_pumpkin_kvass",
+            fluid: "kubejs:pumpkin_kvass_fluid",
+            amount: 250 * mB
+        },
+        {
+            input: "drinkbeer:empty_beer_mug",
+            output: "drinkbeer:beer_mug_night_howl_kvass",
+            fluid: "kubejs:night_howl_kvass_fluid",
+            amount: 250 * mB
+        },
+        {
+            input: "drinkbeer:empty_beer_mug",
+            output: "drinkbeer:beer_mug_frothy_pink_eggnog",
+            fluid: "kubejs:frothy_pink_eggnog_fluid",
+            amount: 250 * mB
         },
     ].forEach((recipe) => {
         event.recipes.createFilling(recipe.output, [recipe.input, { fluid: recipe.fluid, amount: recipe.amount }]);
@@ -2645,6 +2698,77 @@ function mixingRecipes(event) {
                 "#minecraft:sand",
             ],
             heat: "",
+            time: 500,
+        },
+        //Beer Liquids
+        {
+            output: [{fluid: "kubejs:miner_pale_ale_fluid", amount: BUCKET}],
+            input: ["3x minecraft:wheat",
+                  {fluid: "minecraft:water", amount: BUCKET}
+             ],
+            heat: "heated",
+            time: 500,
+        },
+        {
+            output: [{fluid: "kubejs:blaze_stout_fluid", amount: BUCKET}],
+            input: ["2x minecraft:wheat","minecraft:blaze_powder",
+                {fluid:"minecraft:water", amount: BUCKET}
+            ],
+            heat: "heated",
+            time: 500,
+        },
+        {
+            output: [{fluid: "kubejs:blaze_milk_stout_fluid", amount: BUCKET}],
+            input: ["minecraft:wheat", "minecraft:sugar", "minecraft:blaze_powder",
+                {fluid:"minecraft:water", amount: BUCKET}
+            ],
+            heat: "heated",
+            time: 500,
+        },
+        {
+            output: [{fluid: "kubejs:apple_lambic_fluid", amount: BUCKET}],
+            input: ["2x minecraft:wheat", "minecraft:apple",
+                {fluid:"minecraft:water", amount: BUCKET}
+            ],
+            heat: "heated",
+            time: 500,
+        },
+        {
+            output: [{fluid: "kubejs:sweet_berry_kriek_fluid", amount: BUCKET}],
+            input:["minecraft:sweet_berries", "2x minecraft:wheat",
+                {fluid:"minecraft:water", amount: BUCKET}
+            ],
+            heat: "heated",
+            time: 500,
+        },
+        {
+            output: [{fluid: "kubejs:haars_icey_pale_lager_fluid", amount: BUCKET}],
+           input: ["3x minecraft:wheat", "minecraft:ice"],
+        heat: "heated",
+        time: 500,
+        },
+        {
+            output: [{fluid: "kubejs:pumpkin_kvass_fluid", amount: BUCKET}],
+            input: ["2x minecraft:bread", "minecraft:pumpkin",
+                {fluid:"minecraft:water", amount: BUCKET},
+            ],
+            heat: "heated",
+            time: 500,            
+        },
+        {
+            output: [{fluid: "kubejs:night_howl_kvass_fluid", amount: BUCKET}],
+            input: ["2x minecraft:bread", "minecraft:bone",
+            {fluid:"minecraft:water", amount: BUCKET}
+            ],
+            heat: "heated",
+            time: 500,
+        },
+        {
+            output: [{fluid: "kubejs:frothy_pink_eggnog_fluid", amount: BUCKET}],
+            input: ["minecraft:wheat", "minecraft:egg", "minecarft:beetroot",
+                {fluid:"minecraft:water", amount: BUCKET}
+            ],
+            heat: "heated",
             time: 500,
         },
     ].forEach((recipe) => {

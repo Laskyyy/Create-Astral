@@ -283,6 +283,52 @@ function liquidFoodGen(event) {
             displayName: "Chicken Soup",
             color: 0xffdd99,
         },
+        //DRINKBEER FLUIDS
+        {
+        name: "miner_pale_ale",
+        displayName: "Miner Pale Ale",
+        color: 0xa67a21,
+        },
+        {
+            name: "blaze_stout",
+            displayName: "Blaze Stout",
+            color: 0x2e2410,
+        },
+        {
+            name: "blaze_milk_stout",
+            displayName: "Blaze Milk Stout",
+            color: 0xe8b279,
+        },
+        {
+            name: "apple_lambic",
+            displayName: "Apple Lambic",
+            color: 0xeb8315,
+        },
+        {
+            name: "sweet_berry_kriek",
+            displayName: "Sweet Berry Kriek",
+            color: 0xd13674,
+        },
+        {
+            name: "haars_icey_pale_lager",
+            displayName: "Haar's Icey Pale Lager",
+            color: 0xf0d797,
+        },
+        {
+            name: "pumpkin_kvass",
+            displayName: "Pumpkin Kvass",
+            color: 0xfc8d05,
+        },
+        {
+            name: "night_howl_kvass",
+            displayName: "Night Howl OwOss",
+            color: 0xe8d1b5,
+        },
+        {
+            name: "frothy_pink_eggnog",
+            displayName: "Frothy Pink Eggnog",
+            color: 0xd1b694,
+        },
     ].forEach((f) => {
         let fluid = event
             .create(f.name)
