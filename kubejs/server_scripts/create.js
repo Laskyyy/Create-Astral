@@ -2507,6 +2507,145 @@ function mixingRecipes(event) {
             ],
             heat: "heated",
             time: 500,
+        }, 
+        //Drink Beer Spices
+        {
+            output: "drinkbeer:spice_blaze_paprika",
+            input: [
+                "2x minecraft:blaze_powder",
+                "minecraft:fire_charge",
+            ],
+            heat: "heated",
+            time: 500,
+        },
+        {
+            output: "drinkbeer:spice_dried_eglia_bud",
+            input: [
+                "minecraft:dried_kelp",
+                "2x tconstruct:glow_ball",
+            ],
+            heat: "",
+            time: 500,
+        },
+        {
+            output: "drinkbeer:spice_smoked_eglia_bud",
+            input: [
+                "minecraft:fire_charge",
+                "2x tconstruct:glow_ball"
+            ],
+            heat: "heated",
+            time: 500,
+        },
+        {
+            output: "drinkbeer:spice_amethyst_nigella_seeds",
+            input: [
+                "2x techreborn:amethyst_dust",
+                "minecraft:popped_chorus_fruit",
+            ],
+            heat: "",
+            time: 500,
+        },
+        {
+            output: "drinkbeer:spice_citrine_nigella_seeds",
+            input: [
+                "2x minecraft:glowstone_dust",
+                "minecraft:popped_chorus_fruit",
+            ],
+            heat: "",
+            time: 500,
+        },
+        {
+            output: "drinkbeer:spice_ice_mint",
+            input: [
+                "minecraft:ice",
+                "4x #minecraft:leaves",
+            ],
+            heat: "",
+            time: 500,
+        },
+        { 
+            output: "drinkbeer:spice_ice_patchouli",
+            input: [
+                "minecraft:packed_ice",
+                "2x minecraft:kelp",
+            ],
+            heat: "",
+            time: 500,
+        },
+        {
+            output: ["drinkbeer:spice_storm_shards", "ae2:certus_quartz_crystal"],
+            input:[
+                "ae2:charged_certus_quartz_crystal",
+                "2x minecraft:prismarine_shard"
+            ],
+            heat: "",
+            time: 500,
+        },
+        {
+            output: "drinkbeer:spice_roasted_red_pine_nuts",
+            input:[
+                "minecraft:blaze_powder",
+                "3x minecraft:wheat_seeds",
+            ],
+            heat: "heated",
+            time: 500,
+        },    
+        {
+            output: "drinkbeer:spice_glace_goji_berries",
+            input:[
+                "3x minecraft:sweet_berries",
+                "minecraft:sugar",
+            ],
+            heat:"heated",
+            time: 500,
+        },
+        {
+            output: "drinkbeer:spice_frozen_persimmon",
+            input:[
+                "minecraft:blue_ice",
+                "minecraft:glistering_melon_slice",
+            ],
+            heat: "",
+            time: 500,
+        },
+        {
+            output: "drinkbeer:spice_roasted_pecans",
+            input:[
+                "minecraft:blaze_powder",
+                "3x minecraft:cocoa_beans",
+            ],
+            heat: "heated",
+            time: 500,
+        },
+        {
+            output: "drinkbeer:spice_silver_needle_white_tea",
+            input:[
+                "3x techreborn:silver_nugget",
+                {
+                    fluid: "kubejs:white_grape_juice",
+                    amount: 166 * mB,
+                },
+            ],
+            heat: "heated",
+            time: 500,
+        },
+        {
+            output: "drinkbeer:spice_golden_cinnamon_powder",
+            input:[
+                "minecraft:gold_nugget",
+                "2x farmersdelight:tree_bark",
+            ],
+            heat: "heated",
+            time: 500,
+        },
+        {
+            output: "drinkbeer:spice_dried_selaginella",
+            input:[
+                "minecraft:fern",
+                "#minecraft:sand",
+            ],
+            heat: "",
+            time: 500,
         },
     ].forEach((recipe) => {
         event.recipes
