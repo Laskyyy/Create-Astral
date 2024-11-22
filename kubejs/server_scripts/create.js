@@ -1169,6 +1169,265 @@ function sequencedAssemblyRecipes(event) {
             .transitionalItem("minecraft:gold_ingot")
             .loops(1);
     }
+    function wineSequence(event) {
+        event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "vinery:chenet_wine", // output
+                ],
+                "vinery:red_grapejuice_wine_bottle",
+                [
+                    // input
+                    event.recipes.createDeploying("vinery:red_grapejuice_wine_bottle", [
+                        "vinery:red_grapejuice_wine_bottle",
+                        "minecraft:sweet_berries",
+                    ]),
+                    event.recipes.createFilling("vinery:red_grapejuice_wine_bottle", [
+                        "vinery:red_grapejuice_wine_bottle",
+                        { fluid: "kubejs:red_grape_juice", amount: 250 * mB },
+                    ]),
+                    event.recipes.createDeploying("vinery:red_grapejuice_wine_bottle", [
+                        "vinery:red_grapejuice_wine_bottle",
+                        "minecraft:sweet_berries",
+                    ]),
+                ]
+            )
+    
+        event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "vinery:king_danis_wine", // output
+                ],
+                "vinery:red_grapejuice_wine_bottle",
+                [
+                    // input
+                    event.recipes.createFilling("vinery:red_grapejuice_wine_bottle", [
+                        "vinery:red_grapejuice_wine_bottle",
+                        { fluid: "create:honey", amount: 250 * mB },
+                    ]),
+                    event.recipes.createFilling("vinery:red_grapejuice_wine_bottle", [
+                        "vinery:red_grapejuice_wine_bottle",
+                        { fluid: "kubejs:red_grape_juice", amount: 250 * mB },
+                    ]),
+                    event.recipes.createFilling("vinery:red_grapejuice_wine_bottle", [
+                        "vinery:red_grapejuice_wine_bottle",
+                        { fluid: "create:honey", amount: 250 * mB },
+                    ]),
+                ]
+            )
+            .transitionalItem("vinery:red_grapejuice_wine_bottle")
+            .loops(1);
+    
+        event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "vinery:noir_wine", // output
+                ],
+                "vinery:red_grapejuice_wine_bottle",
+                [
+                    // input
+                    event.recipes.createDeploying("vinery:red_grapejuice_wine_bottle", [
+                        "vinery:red_grapejuice_wine_bottle",
+                        "minecraft:kelp",
+                    ]),
+                    event.recipes.createFilling("vinery:red_grapejuice_wine_bottle", [
+                        "vinery:red_grapejuice_wine_bottle",
+                        { fluid: "kubejs:red_grape_juice", amount: 250 * mB },
+                    ]),
+                    event.recipes.createDeploying("vinery:red_grapejuice_wine_bottle", [
+                        "vinery:red_grapejuice_wine_bottle",
+                        "minecraft:kelp",
+                    ]),
+                ]
+            )
+            .transitionalItem("vinery:red_grapejuice_wine_bottle")
+            .loops(1);
+    
+         event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "vinery:bolvar_wine", // output
+                ],
+                "vinery:red_grapejuice_wine_bottle",
+                [
+                    // input
+                    event.recipes.createFilling("vinery:red_grapejuice_wine_bottle", [
+                        "vinery:red_grapejuice_wine_bottle",
+                        { fluid: "create:honey", amount: 250 * mB },
+                    ]),
+                    event.recipes.createFilling("vinery:red_grapejuice_wine_bottle", [
+                        "vinery:red_grapejuice_wine_bottle",
+                        { fluid: "kubejs:red_grape_juice", amount: 250 * mB },
+                    ]),
+                    event.recipes.createDeploying("vinery:red_grapejuice_wine_bottle", [
+                        "vinery:red_grapejuice_wine_bottle",
+                        "vinery:cherry",
+                    ]),
+                ]
+            )
+            .transitionalItem("vinery:red_grapejuice_wine_bottle")
+            .loops(1);
+    
+            event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "vinery:cherry_wine", // output
+                ],
+                "vinery:red_grapejuice_wine_bottle",
+                [
+                    // input
+                    event.recipes.createDeploying("vinery:red_grapejuice_wine_bottle", [
+                        "vinery:red_grapejuice_wine_bottle",
+                        "vinery:cherry",
+                    ]),
+                    event.recipes.createFilling("vinery:red_grapejuice_wine_bottle", [
+                        "vinery:red_grapejuice_wine_bottle",
+                        { fluid: "kubejs:red_grape_juice", amount: 250 * mB },
+                    ]),
+                    event.recipes.createDeploying("vinery:red_grapejuice_wine_bottle", [
+                        "vinery:red_grapejuice_wine_bottle",
+                        "vinery:cherry",
+                    ]),
+                ]
+            )
+            .transitionalItem("vinery:red_grapejuice_wine_bottle")
+            .loops(1);
+    
+        event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "vinery:jellie_wine", // output
+                ],
+                "vinery:red_grapejuice_wine_bottle",
+                [
+                    // input
+                    event.recipes.createDeploying("vinery:red_grapejuice_wine_bottle", [
+                        "vinery:red_grapejuice_wine_bottle",
+                        "minecraft:golden_apple",
+                    ]),
+                    event.recipes.createFilling("vinery:red_grapejuice_wine_bottle", [
+                        "vinery:red_grapejuice_wine_bottle",
+                        { fluid: "kubejs:white_grape_juice", amount: 250 * mB },
+                    ]),
+                    event.recipes.createFilling("vinery:red_grapejuice_wine_bottle", [
+                        "vinery:red_grapejuice_wine_bottle",
+                        { fluid: "create:honey", amount: 250 * mB },
+                    ]),
+                ]
+            )
+            .transitionalItem("vinery:red_grapejuice_wine_bottle")
+            .loops(1);
+    
+        event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "vinery:clark_wine", // output
+                ],
+                "vinery:white_grapejuice_wine_bottle",
+                [
+                    // input
+                    event.recipes.createDeploying("vinery:white_grapejuice_wine_bottle", [
+                        "vinery:white_grapejuice_wine_bottle",
+                        "minecraft:sweet_berries",
+                    ]),
+                    event.recipes.createFilling("vinery:white_grapejuice_wine_bottle", [
+                        "vinery:white_grapejuice_wine_bottle",
+                        { fluid: "kubejs:white_grape_juice", amount: 250 * mB },
+                    ]),
+                    event.recipes.createDeploying("vinery:white_grapejuice_wine_bottle", [
+                        "vinery:white_grapejuice_wine_bottle",
+                        "minecraft:sweet_berries",
+                    ]),
+                ]
+            )
+            .transitionalItem("vinery:white_grapejuice_wine_bottle")
+            .loops(1);
+    
+        event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "vinery:mellohi_wine", // output
+                ],
+                "vinery:white_grapejuice_wine_bottle",
+                [
+                    // input
+                    event.recipes.createFilling("vinery:white_grapejuice_wine_bottle", [
+                        "vinery:white_grapejuice_wine_bottle",
+                        { fluid: "create:honey", amount: 250 * mB },
+                    ]),
+                    event.recipes.createFilling("vinery:white_grapejuice_wine_bottle", [
+                        "vinery:white_grapejuice_wine_bottle",
+                        { fluid: "kubejs:white_grape_juice", amount: 250 * mB },
+                    ]),
+                    event.recipes.createFilling("vinery:white_grapejuice_wine_bottle", [
+                        "vinery:white_grapejuice_wine_bottle",
+                        { fluid: "create:honey", amount: 250 * mB },
+                    ]),
+                ]
+            )
+            .transitionalItem("vinery:white_grapejuice_wine_bottle")
+            .loops(1);
+    
+        event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "vinery:solaris_wine", // output
+                ],
+                "vinery:white_grapejuice_wine_bottle",
+                [
+                    // input
+                    event.recipes.createDeploying("vinery:white_grapejuice_wine_bottle", [
+                        "vinery:white_grapejuice_wine_bottle",
+                        "minecraft:sweet_berries"
+                    ]),
+                    event.recipes.createFilling("vinery:white_grapejuice_wine_bottle", [
+                        "vinery:white_grapejuice_wine_bottle",
+                        { fluid: "kubejs:white_grape_juice", amount: 250 * mB },
+                    ]),
+                    event.recipes.createFilling("vinery:white_grapejuice_wine_bottle", [
+                        "vinery:white_grapejuice_wine_bottle",
+                        { fluid: "create:honey", amount: 250 * mB },
+                    ]),
+                ]
+            )
+            .transitionalItem("vinery:white_grapejuice_wine_bottle")
+            .loops(1);
+    
+        event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "vinery:aegis_wine", // output
+                ],
+                "vinery:wine_bottle",
+                [
+                    // input
+                    event.recipes.createDeploying("vinery:wine_bottle", [
+                        "vinery:wine_bottle",
+                        "minecraft:sugar",
+                    ]),
+                    event.recipes.createFilling("vinery:wine_bottle", [
+                        "vinery:wine_bottle",
+                        { fluid: "minecraft:water", amount: 1000 * mB },
+                    ]),
+                    event.recipes.createDeploying("vinery:wine_bottle", [
+                        "vinery:wine_bottle",
+                        "minecraft:kelp",
+                    ]),
+                ]
+            )
+            .transitionalItem("vinery:white_grapejuice_wine_bottle")
+            .loops(1);
+    }
 
     event.recipes
         .createSequencedAssembly(
