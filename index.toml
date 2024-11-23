@@ -369,6 +369,10 @@ file = "config/fancymenu/custom_locals/astralmenu/en_us.local"
 hash = "ceaa03ecdeb6851d797bff729cf8aa282ee830eed8ed0441eec65acdb230cd8d"
 
 [[files]]
+file = "config/fancymenu/custom_locals/astralmenu/zh_cn.local"
+hash = "700e41f861ce882418be6040a199d17c9d510fb1386aa3ce6dbec16f60ca4ee7"
+
+[[files]]
 file = "config/fancymenu/customizablemenus.txt"
 hash = "82345259c75fa165daeac4670393f7d30e08c21c011acaf1887976384964e641"
 
@@ -783,6 +787,10 @@ hash = "5de0dbcf4fe30911c37906bba39cd575310e475dfbf3334215ed55470d5e440e"
 [[files]]
 file = "config/midnightlib.json"
 hash = "6b52769b3358f87b591871a4444f3cef8124a9dced0da1755f18db2f47adf4f3"
+
+[[files]]
+file = "config/modernfix-mixins.properties"
+hash = "259938dda6ef379693a79852fe67f76daa326bf427d06572c847c69a4672bb03"
 
 [[files]]
 file = "config/modmenu.json"
@@ -14493,6 +14501,10 @@ file = "kubejs/assets/ponderjs_generated/lang/en_us.json"
 hash = "6a7cdffba7f345f7e6f13091b79d10d2efebe87a6b863d2896bae9e2831376d7"
 
 [[files]]
+file = "kubejs/assets/ponderjs_generated/lang/zh_cn.json"
+hash = "0c30de8efacea01c3c8ec546ad94f5939b0425f7a66fb1a8270e995ac200753f"
+
+[[files]]
 file = "kubejs/assets/yttr/textures/block/polished_scorched_obsidian_holster.png"
 hash = "4d50c33a8fb6f00786c1d30a4c39ce87692617e791ccfdab0200a71d3607f3e6"
 
@@ -14578,7 +14590,7 @@ hash = "cdc1eb02684b70f15631ea298e5094dad4caf6e54e043b594163650ea9c5784e"
 
 [[files]]
 file = "kubejs/server_scripts/Bloodyfile.js"
-hash = "857974421c399c8b418213f4f9314e6e2ac4c082bd2a3f14fd9bfff5c625ab84"
+hash = "a67521a8d83a3127c769f1c80e55753ff342e726917d79281ad0cca37b666441"
 
 [[files]]
 file = "kubejs/server_scripts/astral_generators.js"
@@ -14710,11 +14722,15 @@ hash = "3d0d14d9f4dc930b87c4a49be8411c63b9a6e871acef359b8d5aec0098bb310a"
 
 [[files]]
 file = "kubejs/server_scripts/tags/wrench.js"
-hash = "915598e35e10b7fae6f5cac0378e3cfb85b5c145b3fe57301ca6fce3799893aa"
+hash = "9a9e9eef1a1433e3359cd9b872e958593c783013289f0badb0a085731ad6f6b3"
 
 [[files]]
 file = "kubejs/server_scripts/tconstruct.js"
 hash = "319e179a3850416563fbe43ce1ce7e6dec721bdb1e4d964a7de43ebcba19aed6"
+
+[[files]]
+file = "kubejs/server_scripts/tconstruct_fluidsyncfix.js"
+hash = "3944c2284f9fe0a6ba797e83f8eaee0c3345c535fe0f9e72a3555c4a41523cfc"
 
 [[files]]
 file = "kubejs/server_scripts/techreborn.js"
@@ -14726,7 +14742,7 @@ hash = "4fa1e2cc6de5b45b94b6f57ab90e93b672c64ceeb453669ca874405d15dbb43c"
 
 [[files]]
 file = "kubejs/server_scripts/yttr_block_fix.js"
-hash = "2c9329b472d1d889d5995a5ae57dbb7e94da0d12850c3dbb52ce6d5645047c4e"
+hash = "a7a6baad6a12f7c34092e3acb1f52604a831582e1289cfcacf08c590190bad87"
 
 [[files]]
 file = "kubejs/startup_scripts/astralsignals_registry.js"
@@ -14742,7 +14758,7 @@ hash = "6d763aa6b59f72e849843cb84b2b1439c64374c2b8577d13a8ccca1a63df3f23"
 
 [[files]]
 file = "kubejs/startup_scripts/item_registry.js"
-hash = "386b2c353541e411d620fe987d320c928babc49067356bd71f0435a3d793debb"
+hash = "9424ef360374b530439cec028971d2e43560926acd215e67d0aed43a1293a537"
 
 [[files]]
 file = "kubejs/startup_scripts/item_tooltip.js"
@@ -29989,26 +30005,6 @@ file = "resources/createastral/textures/item/promethium_atomic_battery.png"
 hash = "dd12de629cac2cc0e1af2e726b4011f13debacedd1da9e1736ea9191f1e33e08"
 
 [[files]]
-file = "resources/createastral/textures/item/protobeef.png"
-hash = "bd732368563b46fad710708984188751d4d63265ffb92872b96f646ab2044bc8"
-
-[[files]]
-file = "resources/createastral/textures/item/protochicken.png"
-hash = "5337060a1f91857145b91f67bb0dd59ce74ab5dcb53c459a7c7db9919a5596bb"
-
-[[files]]
-file = "resources/createastral/textures/item/protomutton.png"
-hash = "d2ec788f60b2bad1d2abaa3453af43184b6e2838d473be3e377ce6cb731732c6"
-
-[[files]]
-file = "resources/createastral/textures/item/protopork.png"
-hash = "5a0ab7ef8dc0d18205972585286099b97c31b4c95357a7dbcfe6f49b5e5ace18"
-
-[[files]]
-file = "resources/createastral/textures/item/protorabbit.png"
-hash = "00d1fa13504fdbf9a5c6c90630891e61a2d3a4e0280be4bcc8971d2a3a8b94a8"
-
-[[files]]
 file = "resources/createastral/textures/item/pure_biomatter.png"
 hash = "7c36c74d826640877964ffd63c2f33490e1b57b6b2605438203506de196dea9f"
 
@@ -30427,6 +30423,10 @@ hash = "b97889cf4f4aa6eddce84488254d3cc910676bb426de1e61585ef9f2e451e57b"
 [[files]]
 file = "resources/kubejs/lang/fr_fr.json"
 hash = "78a0821754c33ffbd910377d092534c599963759d6ba7b0af1b78089931b424f"
+
+[[files]]
+file = "resources/kubejs/lang/zh_cn.json"
+hash = "9cc462c0619749a5da3451a240fcd6ba9bb967cc536f6625ed746fb446ec3dff"
 
 [[files]]
 file = "resources/kubejs/textures/models/armor/brassarmor_layer_1.png"
