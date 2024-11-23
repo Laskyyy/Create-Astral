@@ -450,6 +450,24 @@ function sequencedAssemblyRecipes(event) {
     //document in an effective way
     const inc_sturdy_sheet = "create:unprocessed_obsidian_sheet";
 
+		event.recipes
+        .createSequencedAssembly(Item.of("cookingforblockheads:cow_jar"), "cookingforblockheads:milk_jar", [
+            event.recipes.createDeploying("cookingforblockheads:milk_jar", [
+                "cookingforblockheads:milk_jar",
+                ["minecraft:beef"],
+            ]),
+            event.recipes.createDeploying("cookingforblockheads:milk_jar", [
+                "cookingforblockheads:milk_jar",
+                ["minecraft:leather"],
+            ]),
+            event.recipes.createFilling("yttr:ultrapure_carbon", [
+                "yttr:ultrapure_carbon",
+                { fluid: "tconstruct:blood", amount: 100 * mB },
+            ]),
+        ])
+        .transitionalItem("cookingforblockheads:milk_jar")
+        .loops(1);
+
     event.recipes
         .createSequencedAssembly(Item.of("create:track"), "#create:sleepers", [
             event.recipes.createDeploying("create:incomplete_track", [
