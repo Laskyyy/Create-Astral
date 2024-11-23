@@ -19,7 +19,25 @@ onEvent("block.tags", (event) => {
         "catwalksinc:red_catwalk",
         "catwalksinc:red_ladder",
         "catwalksinc:red_caged_ladder",
+        "tconstruct:seared_melter",
+        "tconstruct:seared_heater",
     ].forEach((item) => {
         event.add("create:wrench_pickup", item);
+    });
+
+    const tinkersBlocks = ["table", "basin", "faucet", "channel", "lantern"];
+    tinkersBlocks.forEach((block) => {
+        event.add("create:wrench_pickup", `tconstruct:seared_${block}`);
+        event.add("create:wrench_pickup", `tconstruct:scorched_${block}`);
+    });
+
+    const smelteryBlocks = event.get("tconstruct:smeltery").getObjectIds();
+    smelteryBlocks.forEach((block) => {
+        event.add("create:wrench_pickup", block);
+    });
+
+    const foundryBlocks = event.get("tconstruct:foundry").getObjectIds();
+    foundryBlocks.forEach((block) => {
+        event.add("create:wrench_pickup", block);
     });
 });
