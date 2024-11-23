@@ -1355,6 +1355,30 @@ onEvent("recipes", (event) => {
         E: "techreborn:basic_machine_frame",
     });
 
+    event.shaped("techreborn:block_placer", ["SCS", "SDS", "SFS"], {
+        S: "create:sturdy_sheet",
+        C: "create:integrated_circuit",
+        D: "create:deployer",
+        F: "techreborn:basic_machine_frame",
+    });
+
+
+    event.shaped("techreborn:block_breaker", ["SCS", "SDS", "SFS"], {
+        S: "create:sturdy_sheet",
+        C: "create:integrated_circuit",
+        D: "create:mechanical_drill",
+        F: "techreborn:basic_machine_frame",
+    });
+
+
+    event.shaped("techreborn:player_detector", ["SCS", "TRT", "SFS"], {
+        S: "create:sturdy_sheet",
+        C: "create:integrated_circuit",
+        R: "create:redstone_link",
+        F: "techreborn:basic_machine_frame",
+        T: "minecraft:redstone_torch",
+    });
+
     event.shaped("techreborn:chemical_reactor", ["ABA", "CDC", "AEA"], {
         A: "create:sturdy_sheet",
         B: "create:mechanical_mixer",
