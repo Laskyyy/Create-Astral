@@ -3468,7 +3468,7 @@ function compactingRecipes(event) {
             inputs: ["9x create:experience_block"],
         },
         {
-            output: ["minecraft:sponge", "minecraft:clay"],
+            output: ["minecraft:clay", "minecraft:sponge"],
             inputs: ["minecraft:wet_sponge", "minecraft:sand"],
         },
         {
