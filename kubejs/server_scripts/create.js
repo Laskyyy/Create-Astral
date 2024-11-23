@@ -450,6 +450,24 @@ function sequencedAssemblyRecipes(event) {
     //document in an effective way
     const inc_sturdy_sheet = "create:unprocessed_obsidian_sheet";
 
+		event.recipes
+        .createSequencedAssembly(Item.of("cookingforblockheads:cow_jar"), "cookingforblockheads:milk_jar", [
+            event.recipes.createDeploying("cookingforblockheads:milk_jar", [
+                "cookingforblockheads:milk_jar",
+                ["minecraft:beef"],
+            ]),
+            event.recipes.createDeploying("cookingforblockheads:milk_jar", [
+                "cookingforblockheads:milk_jar",
+                ["minecraft:leather"],
+            ]),
+            event.recipes.createFilling("yttr:ultrapure_carbon", [
+                "yttr:ultrapure_carbon",
+                { fluid: "tconstruct:blood", amount: 100 * mB },
+            ]),
+        ])
+        .transitionalItem("cookingforblockheads:milk_jar")
+        .loops(1);
+
     event.recipes
         .createSequencedAssembly(Item.of("create:track"), "#create:sleepers", [
             event.recipes.createDeploying("create:incomplete_track", [
@@ -1492,6 +1510,17 @@ function mixingRecipes(event) {
     // Heat: "" = no heat, "heated", or "superheated"
     // Time: Mixing time in ticks
     [
+				{
+            output: [{
+                fluid: "milk:still_milk",
+                amount: BUCKET/2,
+            },
+						"cookingforblockheads:cow_jar"
+						],
+            input: ["cookingforblockheads:cow_jar"],
+            heat: "",
+            time: 60,
+        },
         {
             output: "8x create:blaze_cake",
             input: ["yttr:delicace", { fluid: "kubejs:metabolic_broth", amount: BUCKET / 4 }],
@@ -2715,6 +2744,12 @@ function splashingRecipes(event) {
             outputs: [["minecraft:shulker_box", 1]],
         },
 
+	{
+	    // soul soil without random ticks
+	    input: "farmersdelight:organic_compost",
+	    outputs: [["farmersdelight:rich_soil", 1]],
+	},
+
         // ae2 cable washing made easy !!!
 
         {
@@ -3433,7 +3468,7 @@ function compactingRecipes(event) {
             inputs: ["9x create:experience_block"],
         },
         {
-            output: ["minecraft:sponge", "minecraft:clay"],
+            output: ["minecraft:clay", "minecraft:sponge"],
             inputs: ["minecraft:wet_sponge", "minecraft:sand"],
         },
         {

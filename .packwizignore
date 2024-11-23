@@ -12,6 +12,7 @@ packwiz.exe
 kubejs/probe
 .idea
 reload-example.bat
+server.packwizignore
 
 # The contents of the serverpack folder will automatically get lifted to the root directory on build
 serverpack

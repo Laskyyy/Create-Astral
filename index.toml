@@ -14726,7 +14726,7 @@ hash = "3d0d14d9f4dc930b87c4a49be8411c63b9a6e871acef359b8d5aec0098bb310a"
 
 [[files]]
 file = "kubejs/server_scripts/tags/wrench.js"
-hash = "915598e35e10b7fae6f5cac0378e3cfb85b5c145b3fe57301ca6fce3799893aa"
+hash = "9a9e9eef1a1433e3359cd9b872e958593c783013289f0badb0a085731ad6f6b3"
 
 [[files]]
 file = "kubejs/server_scripts/tconstruct.js"
