@@ -2929,5 +2929,23 @@
     "starei.planet.mars": "Mars",
     "starei.planet.mercury": "Mercury",
     "starei.planet.venus": "Venus",
-    "starei.planet.glacio": "Glacio"
+    "starei.planet.glacio": "Glacio",
+
+    "text.rei.createastral.astralsignals.drives_decrypted_t1": "Analogously Decrypted Data Drive",
+    "text.rei.createastral.astralsignals.drives_decrypted_t2": "§eParallel Decrypted Data Drive",
+    "text.rei.createastral.astralsignals.drives_decrypted_t3": "§bMicrophysically Decrypted Data Drive",
+    "text.rei.createastral.create.potion.regular": "Potion Fluid",
+    "text.rei.createastral.create.potion.splash": "Splash Potion Fluid",
+    "text.rei.createastral.create.potion.lingering": "Lingering Potion Fluid",
+    "text.rei.createastral.packages.package": "Package",
+    "text.rei.createastral.tconstruct.tinkers_anvil": "Seared Anvil",
+    "text.rei.createastral.tconstruct.scorched_anvil": "Scorched Anvil",
+    "text.rei.createastral.tconstruct.parts": "Tinker Tool Part",
+    "text.rei.createastral.tconstruct.multipart": "Tinker Tool",
+    "text.rei.createastral.tconstruct.slime_helmet": "Slimeskull",
+    "text.rei.createastral.techreborn.cell": "Fluid Cell",
+    "text.rei.createastral.yttr.mercurial_potion": "Mercurial Potion",
+    "text.rei.createastral.yttr.mercurial_splash_potion": "Mercurial Splash Potion",
+
+    "porting_lib.stepHeight": "Step Height"
 }
