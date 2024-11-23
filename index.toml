@@ -14677,6 +14677,10 @@ file = "kubejs/server_scripts/packing.js"
 hash = "1becce5642c6ca74f664127d62e3039cec9ac69a95b0e0f650113cd6fb56d393"
 
 [[files]]
+file = "kubejs/server_scripts/qol_recipes.js"
+hash = "7a71ca7a5ae5edbaa77c638467d8643f9ea68804584c5a81130f5a6128105c5b"
+
+[[files]]
 file = "kubejs/server_scripts/removals.js"
 hash = "d498392858d6e19b45026724731c0f633bfacb30837502183352398a6d963310"
 
