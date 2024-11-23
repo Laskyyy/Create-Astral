@@ -22,4 +22,8 @@ onEvent("recipes", (event) => {
         S: "#wooden_slabs",
         T: "#wooden_trapdoors",
     });
+
+    event.shapeless("1x vinery:red_grape_seeds", ["vinery:red_grape"])
+    event.shapeless("1x vinery:white_grape_seeds", ["vinery:white_grape"])
+
 });

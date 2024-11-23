@@ -6,9 +6,9 @@
 		{
 			"type": "custommachinery:structure",
 			"keys": {
-				"a": "minecraft:polished_andesite",
+				"a": "createastral:stone_growth_chamber/building_blocks/andesite",
 				"l": "minecraft:lava",
-				"g": "minecraft:glass"
+				"g": "createastral:stone_growth_chamber/glass_blocks"
 			},
 			"pattern": [
 				[

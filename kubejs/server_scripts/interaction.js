@@ -14,11 +14,11 @@ onEvent("player.logged_in", (event) => {
     //!This point forward, all code was made by TheOverlyCaffeinatedTrashPanda
     if (!event.player.stages.has("read_quest")) {
         event.player.tell(
-            Text.aqua("Please Read The Quest Book (Hover Over Me!)")
+            Text.aqua(Component.translate("logging_tip"))
                 .underlined()
-                .hover(
-                    "The Quest Book contains most of the information needed to progress in this modpack - it's your friend! Use the item to prevent this message from appearing."
-                )
+                .hover(Component.translate(
+                    "logging_tip.hover"
+                ))
         );
     }
 });
@@ -141,40 +141,42 @@ const ammos = [
 // TODO: Test this with multiple people shooting at once
 onEvent("entity.spawned", (event) => {
     const {entity, server} = event;
-    ammos.forEach((ammoType) => {
-        if (entity.type === "create:potato_projectile" && entity.fullNBT.Item.id === ammoType.projectileItem) {
-            server.scheduleInTicks(5, (event) => {
-                if (entity.removed || entity.deadOrDying || !entity.alive) {
-                    let x = entity.fullNBT.Pos[0];
-                    let y = entity.fullNBT.Pos[1];
-                    let z = entity.fullNBT.Pos[2];
-                    let explosion = entity.block.offset(0, 0, 0).createExplosion();
 
-                    if (ammoType.particlesEnable) {
-                        if (ammoType.particleHasColour) {
-                            server.runCommandSilent(
-                                `particle ${ammoType.particleType} ${ammoType.particleColourR} ${ammoType.particleColourG} ${ammoType.particleColourB} ${ammoType.particleSize} ${x} ${y} ${z} ${ammoType.particleSpread} ${ammoType.particleSpread} ${ammoType.particleSpread} ${ammoType.particleSpeed} ${ammoType.particleCount}`
-                            );
-                        } else {
-                            server.runCommandSilent(
-                                `particle ${ammoType.particleType} ${x} ${y} ${z} ${ammoType.particleSpread} ${ammoType.particleSpread} ${ammoType.particleSpread} ${ammoType.particleSpeed} ${ammoType.particleCount}`
-                            );
+    if (entity.type === "create:potato_projectile") {
+        ammos.forEach((ammoType) => {
+            if (entity.fullNBT.Item.id === ammoType.projectileItem) {
+                server.scheduleInTicks(5, (event) => {
+                    if (entity.removed || entity.deadOrDying || !entity.alive) {
+                        let x = entity.fullNBT.Pos[0];
+                        let y = entity.fullNBT.Pos[1];
+                        let z = entity.fullNBT.Pos[2];
+                        let explosion = entity.block.offset(0, 0, 0).createExplosion();
+
+                        if (ammoType.particlesEnable) {
+                            if (ammoType.particleHasColour) {
+                                server.runCommandSilent(
+                                    `particle ${ammoType.particleType} ${ammoType.particleColourR} ${ammoType.particleColourG} ${ammoType.particleColourB} ${ammoType.particleSize} ${x} ${y} ${z} ${ammoType.particleSpread} ${ammoType.particleSpread} ${ammoType.particleSpread} ${ammoType.particleSpeed} ${ammoType.particleCount}`
+                                );
+                            } else {
+                                server.runCommandSilent(
+                                    `particle ${ammoType.particleType} ${x} ${y} ${z} ${ammoType.particleSpread} ${ammoType.particleSpread} ${ammoType.particleSpread} ${ammoType.particleSpeed} ${ammoType.particleCount}`
+                                );
+                            }
                         }
-                    }
 
-                    if (ammoType.explosionEnable) {
-                        explosion.strength(ammoType.explosionStrength);
-                        explosion.damagesTerrain(ammoType.explosionDamageTerrain);
-                        explosion.explode();
+                        if (ammoType.explosionEnable) {
+                            explosion.strength(ammoType.explosionStrength);
+                            explosion.damagesTerrain(ammoType.explosionDamageTerrain);
+                            explosion.explode();
+                        }
+                        return;
                     }
-                    return;
-                }
-                event.reschedule();
-            });
-            //! Made by TheOverlyCaffeinatedTrashPanda
-        }
-    });
-    if (entity.type === "minecraft:item") {
+                    event.reschedule();
+                });
+                //! Made by TheOverlyCaffeinatedTrashPanda
+            }
+        });
+    } else if (entity.type === "minecraft:item") {
         if (entity.item === "createastral:fragile_sheet") {
             entity.item = "createastral:broken_fragile_sheet"
             Utils.server.runCommandSilent(`particle minecraft:block minecraft:magenta_concrete_powder ${entity.x} ${entity.y} ${entity.z} 0.0 0.1 0.0 0 5`)

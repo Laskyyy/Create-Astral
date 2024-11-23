@@ -26,7 +26,7 @@ onEvent("recipes", event => {
         "1x techreborn:sulfur_dust"
     ])
     //much much easier cable covering
-    event.shapeless("appliedenergistics2:me_covered_cable", ["techreborn:rubber", "appliedenergistics2:fluix_glass_cable"])
+    event.shapeless("ae2:fluix_covered_cable", ["techreborn:rubber", "#ae2:glass_cable"])
     //easier red dye if you're still in premoon and want crimsite
     event.recipes.createMixing({fluid: "kubejs:red_paste", amount: 300 * mB}, ["7x minecraft:sweet_berries", {fluid: "minecraft:water", amount: 500 * mB}])
     event.custom({
