@@ -1050,7 +1050,7 @@
 				icon: "tconstruct:piglin_head"
 				timer: 0L
 				observe_type: 5
-				to_observe: "minecraft:piglin"
+				to_observe: "ad_astra:pygro"
 			}]
 			rewards: [{
 				id: "3A0AF3AC1F4185EC"
