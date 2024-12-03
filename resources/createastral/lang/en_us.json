@@ -397,6 +397,9 @@
     "block.createastral.swift_andesite": "Swift Andesite",
     "block.createastral.rocket_casing": "Rocket Casing",
     "block.createastral.moonset_stone": "Moonset Stone",
+		
+		"item.createastral.marimo": "Marimo",
+		"item.createastral.moonset_marimo": "Moonset Marimo",
 
     "block.doodads.asphalt_slab": "Asphalt Slab",
     "block.doodads.asphalt_stair": "Asphalt Stair",
