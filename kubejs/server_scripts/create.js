@@ -1511,6 +1511,59 @@ function mixingRecipes(event) {
     // Time: Mixing time in ticks
     [
 				{
+            output: [
+							Item.of("2x createastral:marimo").withChance(0.5),
+							Item.of("2x createastral:moonset_marimo").withChance(0.5),
+							{
+									fluid: "minecraft:water",
+									amount: BUCKET,
+							}
+						],
+            input: [
+							"createastral:marimo",
+							"createastral:moonset_marimo",
+							{
+									fluid: "minecraft:water",
+									amount: BUCKET,
+							}
+						],
+            heat: "",
+            time: 60,
+        },
+				{
+            output: [
+							"1x createastral:moonset_marimo"
+						],
+            input: [
+							"createastral:marimo",
+							"astraladditions:moonset_crystal",
+							{
+									fluid: "kubejs:shimmer",
+									amount: BUCKET/2,
+							}
+						],
+            heat: "",
+            time: 180,
+        },
+				{
+            output: [
+							"2x createastral:marimo",
+							{
+									fluid: "minecraft:water",
+									amount: BUCKET/2,
+							}
+						],
+            input: [
+							"createastral:marimo", 
+							{
+									fluid: "minecraft:water",
+									amount: BUCKET/2,
+							}
+						],
+            heat: "",
+            time: 60,
+        },
+				{
             output: [{
                 fluid: "milk:still_milk",
                 amount: BUCKET/2,
@@ -1743,6 +1796,18 @@ function mixingRecipes(event) {
             output: "techreborn:plantball",
             input: [
                 "9x minecraft:kelp",
+                {
+                    fluid: "createaddition:seed_oil",
+                    amount: 500 * mB,
+                },
+            ],
+            heat: "heated",
+            time: 1000,
+        },
+				{
+            output: "techreborn:plantball",
+            input: [
+                "9x createastral:marimo",
                 {
                     fluid: "createaddition:seed_oil",
                     amount: 500 * mB,
@@ -2604,6 +2669,9 @@ function mixingRecipes(event) {
 function cuttingRecipes(event) {
     // [Input string, Output string]
     [
+        ["createastral:marimo", "minecraft:seagrass"],
+        ["minecraft:moss_block", "2x minecraft:moss_carpet"],
+        ["minecraft:moss_carpet", "2x createastral:marimo"],
         ["techreborn:rubber_log", "techreborn:rubber_log_stripped"],
         ["techreborn:rubber_wood", "techreborn:stripped_rubber_wood"],
         ["techreborn:rubber_log_stripped", "6x techreborn:rubber_planks"],
@@ -3356,6 +3424,30 @@ function farmersDelightIntegration(event) {
 
 function compactingRecipes(event) {
     [
+				{
+            output: "minecraft:dirt",
+            inputs: ["64x createastral:marimo"],
+        },
+        {
+            output: "minecraft:grass",
+            inputs: ["minecraft:seagrass"],
+        },
+				{
+            output: { fluid: "tconstruct:molten_ender", amount: 250 * mB },
+            inputs: ["4x createastral:moonset_marimo", "4x ae2:fluix_dust", { fluid: "tconstruct:ender_slime", amount: 500 * mB }],
+        },
+				{
+            output: "astraladditions:moonset_crystal",
+            inputs: ["8x createastral:moonset_marimo", "minecraft:ender_pearl"],
+        },
+				{
+            output: "minecraft:chorus_flower",
+            inputs: ["8x createastral:moonset_marimo", "minecraft:chorus_fruit"],
+        },
+				{
+            output: { fluid: "minecraft:water", amount: 500 * mB },
+            inputs: ["createastral:marimo"],
+        },
         {
             output: "minecraft:calcite",
             inputs: ["minecraft:gravel", "2x minecraft:bone_meal"],

@@ -46,6 +46,7 @@ onEvent("item.registry", (event) => {
     event.create("createastral:broken_fragile_rocket_fin");
     event.create("createastral:gold_casted_rocket_fin");
     event.create("createastral:marimo");
+    event.create("createastral:moonset_marimo");
 
     //Astral Foods
     event

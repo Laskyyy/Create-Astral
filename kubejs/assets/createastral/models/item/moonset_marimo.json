@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "createastral:item/marimo/marimo",
-		"particle": "createastral:item/marimo/marimo"
+		"0": "createastral:item/marimo/moonset_marimo",
+		"particle": "createastral:item/marimo/moonset_marimo"
 	},
 	"elements": [
 		{
