@@ -21,6 +21,7 @@ function millingRecipes(event) {
     //[Input, Output, Chance]
     [
         ["farmersdelight:straw", "minecraft:string", 1],
+        ["minecraft:bamboo", "farmersdelight:straw", 0.2],
         ["ae2:certus_quartz_dust", "ae2:certus_crystal_seed", 1],
         ["minecraft:gravel", "minecraft:sand", 0.5],
         ["create:veridium", "minecraft:raw_copper", 0.6],
@@ -1512,6 +1513,21 @@ function mixingRecipes(event) {
     [
 				{
             output: [
+							"1x createastral:snowy_marimo"
+						],
+            input: [
+							"createastral:marimo",
+							"createastral:prismatic_crystal",
+							{
+									fluid: "kubejs:shimmer",
+									amount: BUCKET/2,
+							}
+						],
+            heat: "",
+            time: 180,
+        },
+				{
+            output: [
 							Item.of("2x createastral:marimo").withChance(0.5),
 							Item.of("2x createastral:moonset_marimo").withChance(0.5),
 							{
@@ -2670,6 +2686,8 @@ function cuttingRecipes(event) {
     // [Input string, Output string]
     [
         ["createastral:marimo", "minecraft:seagrass"],
+        ["createastral:moonset_marimo", Item.of("ae2:ender_dust").withChance(0.1)],
+        ["createastral:snowy_marimo", "minecraft:snowball"],
         ["minecraft:moss_block", "2x minecraft:moss_carpet"],
         ["minecraft:moss_carpet", "2x createastral:marimo"],
         ["techreborn:rubber_log", "techreborn:rubber_log_stripped"],
