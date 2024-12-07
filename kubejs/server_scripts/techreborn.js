@@ -197,7 +197,7 @@ onEvent("recipes", (event) => {
             {
                 item: "techreborn:cell",
                 nbt: {
-                    fluid: "techreborn:oxygen",
+                    fluid: "ad_astra:oxygen",
                 },
                 count: 10,
             },
