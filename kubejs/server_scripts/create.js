@@ -20,6 +20,7 @@ onEvent("recipes", (event) => {
 function millingRecipes(event) {
     //[Input, Output, Chance]
     [
+        ["minecraft:rooted_dirt", "minecraft:dirt", 1],
         ["farmersdelight:straw", "minecraft:string", 1],
         ["minecraft:bamboo", "farmersdelight:straw", 0.2],
         ["ae2:certus_quartz_dust", "ae2:certus_crystal_seed", 1],
@@ -778,29 +779,29 @@ function sequencedAssemblyRecipes(event) {
                 "createastral:navigation_mechanism",
                 [
                     // input
-                    event.recipes.createDeploying("createastral:incomplete_navigation_mechanism", [
-                        "createastral:incomplete_navigation_mechanism",
+                    event.recipes.createDeploying("createastral:navigation_mechanism", [
+                        "techreborn:machine_parts",
                         "techreborn:machine_parts",
                     ]),
-                    event.recipes.createDeploying("createastral:incomplete_navigation_mechanism", [
-                        "createastral:incomplete_navigation_mechanism",
+                    event.recipes.createDeploying("createastral:navigation_mechanism", [
+                        "ad_astra:ostrum_plate",
                         "ad_astra:ostrum_plate",
                     ]),
                     event.recipes.createPressing(
-                        "createastral:incomplete_navigation_mechanism",
-                        "createastral:incomplete_navigation_mechanism"
+                        "createastral:navigation_mechanism",
+                        "createastral:navigation_mechanism"
                     ),
-                    event.recipes.createFilling("createastral:incomplete_navigation_mechanism", [
-                        "createastral:incomplete_navigation_mechanism",
+                    event.recipes.createFilling("createastral:navigation_mechanism", [
+                        "createastral:navigation_mechanism",
                         { fluid: "ad_astra:cryo_fuel", amount: BUCKET },
                     ]),
                     event.recipes.createPressing(
-                        "createastral:incomplete_navigation_mechanism",
-                        "createastral:incomplete_navigation_mechanism"
+                        "createastral:navigation_mechanism",
+                        "createastral:navigation_mechanism"
                     ),
                 ]
             )
-            .transitionalItem("createastral:incomplete_navigation_mechanism")
+            .transitionalItem("createastral:navigation_mechanism")
             .loops(4);
 
         event.recipes
@@ -826,25 +827,25 @@ function sequencedAssemblyRecipes(event) {
                 "create:copper_casing",
                 [
                     // input
-                    event.recipes.createDeploying("createastral:incomplete_brass_casing", [
-                        "createastral:incomplete_brass_casing",
+                    event.recipes.createDeploying("create:copper_casing", [
+                        "create:copper_casing",
                         "createaddition:brass_rod",
                     ]),
-                    event.recipes.createFilling("createastral:incomplete_brass_casing", [
-                        "createastral:incomplete_brass_casing",
+                    event.recipes.createFilling("create:copper_casing", [
+                        "create:copper_casing",
                         { fluid: "tconstruct:molten_brass", amount: NUGGET },
                     ]),
-                    event.recipes.createDeploying("createastral:incomplete_brass_casing", [
-                        "createastral:incomplete_brass_casing",
+                    event.recipes.createDeploying("create:copper_casing", [
+                        "create:copper_casing",
                         "create:brass_sheet",
                     ]),
                     event.recipes.createPressing(
-                        "createastral:incomplete_brass_casing",
-                        "createastral:incomplete_brass_casing"
+                        "create:copper_casing",
+                        "create:copper_casing"
                     ),
                 ]
             )
-            .transitionalItem("createastral:incomplete_brass_casing")
+            .transitionalItem("create:copper_casing")
             .loops(3);
 
         event.recipes
@@ -856,21 +857,21 @@ function sequencedAssemblyRecipes(event) {
                 "techreborn:basic_machine_frame",
                 [
                     // input
-                    event.recipes.createDeploying("createastral:incomplete_advanced_machine_frame", [
-                        "createastral:incomplete_advanced_machine_frame",
+                    event.recipes.createDeploying("techreborn:basic_machine_frame", [
+                        "techreborn:basic_machine_frame",
                         "techreborn:lead_plate",
                     ]),
-                    event.recipes.createFilling("createastral:incomplete_advanced_machine_frame", [
-                        "createastral:incomplete_advanced_machine_frame",
+                    event.recipes.createFilling("techreborn:basic_machine_frame", [
+                        "techreborn:basic_machine_frame",
                         { fluid: "kubejs:blast-resistant_cement", amount: 200 * mB },
                     ]),
-                    event.recipes.createDeploying("createastral:incomplete_advanced_machine_frame", [
-                        "createastral:incomplete_advanced_machine_frame",
+                    event.recipes.createDeploying("techreborn:basic_machine_frame", [
+                        "techreborn:basic_machine_frame",
                         "techreborn:lead_plate",
                     ]),
                 ]
             )
-            .transitionalItem("createastral:incomplete_advanced_machine_frame")
+            .transitionalItem("techreborn:basic_machine_frame")
             .loops(1);
 
         event.recipes
@@ -882,21 +883,21 @@ function sequencedAssemblyRecipes(event) {
                 "techreborn:advanced_machine_frame",
                 [
                     // input
-                    event.recipes.createDeploying("createastral:incomplete_industrial_machine_frame", [
-                        "createastral:incomplete_industrial_machine_frame",
+                    event.recipes.createDeploying("techreborn:advanced_machine_frame", [
+                        "techreborn:advanced_machine_frame",
                         "ad_astra:ostrum_plate",
                     ]),
-                    event.recipes.createDeploying("createastral:incomplete_industrial_machine_frame", [
-                        "createastral:incomplete_industrial_machine_frame",
+                    event.recipes.createDeploying("techreborn:advanced_machine_frame", [
+                        "techreborn:advanced_machine_frame",
                         "techreborn:machine_parts",
                     ]),
-                    event.recipes.createDeploying("createastral:incomplete_industrial_machine_frame", [
-                        "createastral:incomplete_industrial_machine_frame",
+                    event.recipes.createDeploying("techreborn:advanced_machine_frame", [
+                        "techreborn:advanced_machine_frame",
                         "ad_astra:ostrum_plate",
                     ]),
                 ]
             )
-            .transitionalItem("createastral:incomplete_industrial_machine_frame")
+            .transitionalItem("techreborn:advanced_machine_frame")
             .loops(1);
 
         let transitional_lapis_sheet = "createastral:transitional_lapis_sheet";
@@ -1222,20 +1223,19 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem("create:tree_fertilizer")
         .loops(125);
 
-    const inc_navmechanism = "createastral:incomplete_navigation_mechanism";
     event.recipes
         .createSequencedAssembly(["createastral:navigation_mechanism"], "phonos:redstone_chip", [
-            event.recipes.createFilling(inc_navmechanism, [
-                "create:incomplete_precision_mechanism",
+            event.recipes.createFilling("phonos:redstone_chip", [
+                "phonos:redstone_chip",
                 {
                     fluid: "tconstruct:molten_cobalt",
                     amount: 1350,
                 },
             ]),
-            event.recipes.createDeploying(inc_navmechanism, [inc_navmechanism, "techreborn:electrum_nugget"]),
-            event.recipes.createPressing(inc_navmechanism, inc_navmechanism),
+            event.recipes.createDeploying("phonos:redstone_chip", ["phonos:redstone_chip", "techreborn:electrum_nugget"]),
+            event.recipes.createPressing("phonos:redstone_chip", "phonos:redstone_chip"),
         ])
-        .transitionalItem(inc_navmechanism)
+        .transitionalItem("phonos:redstone_chip")
         .loops(30);
 
     event.recipes
@@ -1370,6 +1370,18 @@ function sequencedAssemblyRecipes(event) {
 
 function fillingRecipes(event) {
     [
+				{
+            input: "minecraft:stick",
+            output: "minecraft:torch",
+            fluid: "minecraft:lava",
+            amount: 20 * mB,
+        },
+				{
+            input: "minecraft:stick",
+            output: "minecraft:torch",
+            fluid: "minecraft:lava",
+            amount: 20 * mB,
+        },
         {
             input: "create:polished_rose_quartz",
             output: "create:electron_tube",
@@ -1498,6 +1510,11 @@ function deployingRecipes(event) {
             basin_input: "createastral:sturdy_cage",
             deployer_input: "yttr:haemopal",
         },
+				{
+            output: "minecraft:sea_pickle",
+            basin_input: "minecraft:torch",
+            deployer_input: "createastral:marimo",
+        },
     ].forEach((recipe) => {
         event.recipes.create.deploying([recipe.output], [recipe.basin_input, recipe.deployer_input]);
     });
@@ -1511,6 +1528,48 @@ function mixingRecipes(event) {
     // Heat: "" = no heat, "heated", or "superheated"
     // Time: Mixing time in ticks
     [
+				{
+            output: [
+							{ fluid: "tconstruct:ender_slime", amount: 250 * mB }
+						],
+            input: [
+							"createastral:shimmer_marimo", 
+							"ae2:ender_dust",
+							{ fluid: "tconstruct:earth_slime", amount: 125 * mB }
+						],
+            heat: "heated",
+            time: 180,
+        },
+				{
+            output: [
+							"1x createastral:shimmer_marimo"
+						],
+            input: [
+							"createastral:marimo",
+							"tconstruct:ender_slime_crystal",
+							{
+									fluid: "kubejs:shimmer",
+									amount: BUCKET/2,
+							}
+						],
+            heat: "",
+            time: 180,
+        },
+				{
+            output: [
+							"2x createastral:shimmer_marimo"
+						],
+            input: [
+							"createastral:shimmer_marimo",
+							"ae2:fluix_crystal_seed",
+							{
+									fluid: "astraladditions:sputum",
+									amount: INGOT,
+							}
+						],
+            heat: "",
+            time: 180,
+        },
 				{
             output: [
 							"1x createastral:snowy_marimo"
@@ -1869,9 +1928,15 @@ function mixingRecipes(event) {
             time: 1000,
         },
         {
-            output: "#c:living_coral_plants",
+            output: [
+							Item.of("minecraft:tube_coral").withChance(0.2),
+							Item.of("minecraft:brain_coral").withChance(0.2),
+							Item.of("minecraft:bubble_coral").withChance(0.2),
+							Item.of("minecraft:fire_coral").withChance(0.2),
+							Item.of("minecraft:horn_coral").withChance(0.2),
+						],
             input: [
-                "4x minecraft:kelp",
+                "4x minecraft:sea_pickle",
                 {
                     fluid: "minecraft:water",
                     amount: 250 * mB,
@@ -1881,7 +1946,13 @@ function mixingRecipes(event) {
             time: 50,
         },
         {
-            output: "#c:living_coral_fans",
+            output: [
+							Item.of("minecraft:tube_coral_fan").withChance(0.2),
+							Item.of("minecraft:brain_coral_fan").withChance(0.2),
+							Item.of("minecraft:bubble_coral_fan").withChance(0.2),
+							Item.of("minecraft:fire_coral_fan").withChance(0.2),
+							Item.of("minecraft:horn_coral_fan").withChance(0.2),
+						],
             input: [
                 "4x minecraft:dried_kelp",
                 {
@@ -2686,8 +2757,9 @@ function cuttingRecipes(event) {
     // [Input string, Output string]
     [
         ["createastral:marimo", "minecraft:seagrass"],
-        ["createastral:moonset_marimo", Item.of("ae2:ender_dust").withChance(0.1)],
+        ["createastral:moonset_marimo", "minecraft:warped_roots"],
         ["createastral:snowy_marimo", "minecraft:snowball"],
+        ["createastral:shimmer_marimo", "astraladditions:ender_sprouts"],
         ["minecraft:moss_block", "2x minecraft:moss_carpet"],
         ["minecraft:moss_carpet", "2x createastral:marimo"],
         ["techreborn:rubber_log", "techreborn:rubber_log_stripped"],
@@ -3416,6 +3488,10 @@ function mechanicalCraftingRecipes(event) {
 function pressingRecipes(event) {
     // [Input string, Output string]
     [
+        ["createastral:shimmer_marimo", "ae2:fluix_dust"],
+        ["createastral:moonset_marimo", Item.of("ae2:ender_dust").withChance(0.1)],
+        ["createastral:marimo", "minecraft:vine"],
+        ["minecraft:sea_pickle", "4x minecraft:glow_lichen"],
         ["yttr:haemopal", "5x createastral:ultramatter"],
         ["minecraft:lapis_block", "create:lapis_sheet"],
         ["tconstruct:greenheart_log", "2x minecraft:green_dye"],
@@ -3443,12 +3519,19 @@ function farmersDelightIntegration(event) {
 function compactingRecipes(event) {
     [
 				{
-            output: "minecraft:dirt",
-            inputs: ["64x createastral:marimo"],
+            output: "minecraft:rooted_dirt",
+            inputs: [
+							"minecraft:grass",
+							"32x createastral:marimo",
+						],
         },
         {
             output: "minecraft:grass",
             inputs: ["minecraft:seagrass"],
+        },
+				{
+            output: { fluid: "astraladditions:sputum", amount: 500 * mB },
+            inputs: ["4x createastral:shimmer_marimo", "techreborn:uu_matter", { fluid: "tconstruct:molten_ender", amount: 250 * mB }],
         },
 				{
             output: { fluid: "tconstruct:molten_ender", amount: 250 * mB },

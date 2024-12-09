@@ -48,6 +48,7 @@ onEvent("item.registry", (event) => {
     event.create("createastral:marimo");
     event.create("createastral:moonset_marimo");
     event.create("createastral:snowy_marimo");
+    event.create("createastral:shimmer_marimo");
 
     //Astral Foods
     event
@@ -239,16 +240,16 @@ onEvent("item.registry", (event) => {
     // Transitional Items
     event
         .create("createastral:incomplete_blaze_head", "create:sequenced_assembly")
-        .displayName("Incomplete Blaze Head");//not working
+        .displayName("Incomplete Blaze Head");
     event
         .create("createastral:incomplete_transitional_electronic_circuit", "create:sequenced_assembly")
         .displayName("Incomplete Electronic Circuit");
     event
         .create("createastral:transitional_lapis_sheet", "create:sequenced_assembly")
-        .displayName("Incomplete Integrated Circuit");//not working
+        .displayName("Incomplete Integrated Circuit");
     event
         .create("createastral:incomplete_navigation_mechanism", "create:sequenced_assembly")
-        .displayName("Incomplete Navigation Mechanism");//not working
+        .displayName("Incomplete Navigation Mechanism");
     event
         .create("createastral:incomplete_redstone_chip", "create:sequenced_assembly")
         .displayName("Incomplete Redstone Chip");
