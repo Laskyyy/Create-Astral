@@ -1,0 +1,50 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "createastral:item/marimo/marimo",
+		"particle": "createastral:item/marimo/marimo"
+	},
+	"elements": [
+		{
+			"from": [6, 6, 6],
+			"to": [10, 10, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6, 6, 6]},
+			"faces": {
+				"north": {"uv": [0, 0, 4, 4], "texture": "#0"},
+				"east": {"uv": [0, 4, 4, 8], "texture": "#0"},
+				"south": {"uv": [4, 0, 8, 4], "texture": "#0"},
+				"west": {"uv": [4, 4, 8, 8], "texture": "#0"},
+				"up": {"uv": [4, 12, 0, 8], "texture": "#0"},
+				"down": {"uv": [12, 0, 8, 4], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 0, 4],
+			"translation": [-1, 0.5, 0]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [75, 52, -4.5],
+			"translation": [-0.25, -1.25, 13.75]
+		},
+		"firstperson_righthand": {
+			"translation": [2.5, 0, 0]
+		},
+		"firstperson_lefthand": {
+			"translation": [10.75, 11.5, 0]
+		},
+		"gui": {
+			"rotation": [15, 135, 0],
+			"scale": [2, 2, 2]
+		},
+		"head": {
+			"rotation": [0, -50, 0],
+			"translation": [0, 8.5, 0]
+		},
+		"fixed": {
+			"translation": [0, 0, -1.5],
+			"scale": [1.5, 1.5, 1.5]
+		}
+	}
+}

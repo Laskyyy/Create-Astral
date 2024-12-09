@@ -457,14 +457,14 @@ function lizardCH3Changes(event) {
     });
 
     // Changed blaze burner recipe.
-    event.shaped("create:empty_blaze_burner", ["AAA", "A A", "BCB"], {
+    event.shaped("create:empty_blaze_burner", ["A A", "A A", "BCB"], {
         A: "createaddition:iron_rod",
         B: "create:iron_sheet",
         C: "ad_astra:moon_stone",
     });
 
     // Gag recipe
-    event.shaped("create:blaze_burner", ["AAA", "ADA", "BCB"], {
+    event.shaped("create:blaze_burner", ["A A", "ADA", "BCB"], {
         A: "createaddition:iron_rod",
         B: "create:iron_sheet",
         C: "ad_astra:moon_stone",
@@ -1353,6 +1353,30 @@ onEvent("recipes", (event) => {
         C: "create:encased_fan",
         D: "minecraft:furnace",
         E: "techreborn:basic_machine_frame",
+    });
+
+    event.shaped("techreborn:block_placer", ["SCS", "SDS", "SFS"], {
+        S: "create:sturdy_sheet",
+        C: "create:integrated_circuit",
+        D: "create:deployer",
+        F: "techreborn:basic_machine_frame",
+    });
+
+
+    event.shaped("techreborn:block_breaker", ["SCS", "SDS", "SFS"], {
+        S: "create:sturdy_sheet",
+        C: "create:integrated_circuit",
+        D: "create:mechanical_drill",
+        F: "techreborn:basic_machine_frame",
+    });
+
+
+    event.shaped("techreborn:player_detector", ["SCS", "TRT", "SFS"], {
+        S: "create:sturdy_sheet",
+        C: "create:integrated_circuit",
+        R: "create:redstone_link",
+        F: "techreborn:basic_machine_frame",
+        T: "minecraft:redstone_torch",
     });
 
     event.shaped("techreborn:chemical_reactor", ["ABA", "CDC", "AEA"], {
