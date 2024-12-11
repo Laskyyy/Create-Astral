@@ -12,5 +12,20 @@
         count: 1
       }
     ]
+  }),
+  event.custom({
+    type: "astraladditions:shimmer_transmute",
+    input: {
+      item: "minecraft:sea_lantern",
+      count: 1
+      },
+
+    output: [
+      {
+        item: "minecraft:glowstone",
+        count: 1
+      }
+    ]
   })
+  
 })*/

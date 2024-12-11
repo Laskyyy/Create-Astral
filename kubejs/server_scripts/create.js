@@ -1266,7 +1266,7 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem("minecraft:ender_pearl")
         .loops(3);
 
-    const inc_redstone_chip = "createastral:incomplete_redstone_chip";
+    const inc_redstone_chip = "create:electron_tube";
     event.recipes
         .createSequencedAssembly(
             [
@@ -1329,7 +1329,7 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem("minecraft:black_dye")
         .loops(2);
 
-    const inc_dash_panel = "createastral:incomplete_dash_panel";
+    const inc_dash_panel = "create:iron_sheet";
     //Dash panel
     event.recipes
         .createSequencedAssembly(["automobility:dash_panel"], "create:iron_sheet", [
@@ -1341,7 +1341,7 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem(inc_dash_panel)
         .loops(3);
 
-    const inc_refining_agent = "createastral:incomplete_refining_agent";
+    const inc_refining_agent = "ae2:fluix_dust";
     event.recipes
         .createSequencedAssembly(["createastral:refining_agent"], "ae2:fluix_dust", [
             event.recipes.createFilling(inc_refining_agent, [

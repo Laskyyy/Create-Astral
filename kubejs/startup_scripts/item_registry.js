@@ -45,11 +45,24 @@ onEvent("item.registry", (event) => {
     event.create("createastral:fragile_rocket_fin");
     event.create("createastral:broken_fragile_rocket_fin");
     event.create("createastral:gold_casted_rocket_fin");
-    event.create("createastral:marimo");
-    event.create("createastral:moonset_marimo");
-    event.create("createastral:snowy_marimo");
-    event.create("createastral:ender_marimo");
-    event.create("createastral:shimmer_marimo");
+    event.create("createastral:marimo")
+		.food((food) => {
+            food.hunger(1).saturation(0).alwaysEdible();
+        });
+    event.create("createastral:moonset_marimo")
+		.food((food) => {
+            food.hunger(1).saturation(0).effect("levitation", 300, 2, 1).alwaysEdible();
+        });
+    event.create("createastral:snowy_marimo")
+		.food((food) => {
+            food.hunger(1).saturation(0).effect("levitation", 300, 2, 1).alwaysEdible();
+        });
+    event.create("createastral:ender_marimo")
+		.food((food) => {
+            food.hunger(1).saturation(0).effect("levitation", 300, 2, 1).alwaysEdible();
+        });
+    event.create("createastral:shimmer_marimo")
+        .displayName("Shimarimo");
 
     //Astral Foods
     event
