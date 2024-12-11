@@ -1371,10 +1371,10 @@ function sequencedAssemblyRecipes(event) {
 function fillingRecipes(event) {
     [
 				{
-            input: "minecraft:stick",
-            output: "minecraft:torch",
-            fluid: "minecraft:lava",
-            amount: 20 * mB,
+            input: "minecraft:wheat_seeds",
+            output: "tconstruct:earth_slime_grass_seeds",
+            fluid: "tconstruct:earth_slime",
+            amount: 250 * mB / 4,
         },
 				{
             input: "minecraft:stick",
@@ -1533,7 +1533,7 @@ function mixingRecipes(event) {
 							{ fluid: "tconstruct:ender_slime", amount: 250 * mB }
 						],
             input: [
-							"createastral:shimmer_marimo", 
+							"createastral:ender_marimo", 
 							"ae2:ender_dust",
 							{ fluid: "tconstruct:earth_slime", amount: 125 * mB }
 						],
@@ -1546,7 +1546,7 @@ function mixingRecipes(event) {
 						],
             input: [
 							"createastral:marimo",
-							"tconstruct:ender_slime_crystal",
+							"ae2:fluix_crystal",
 							{
 									fluid: "kubejs:shimmer",
 									amount: BUCKET/2,
@@ -1562,6 +1562,36 @@ function mixingRecipes(event) {
             input: [
 							"createastral:shimmer_marimo",
 							"ae2:fluix_crystal_seed",
+							{
+									fluid: "kubejs:shimmer",
+									amount: INGOT,
+							}
+						],
+            heat: "",
+            time: 180,
+        },
+				{
+            output: [
+							"1x createastral:ender_marimo"
+						],
+            input: [
+							"createastral:marimo",
+							"tconstruct:ender_slime_crystal",
+							{
+									fluid: "kubejs:shimmer",
+									amount: BUCKET/2,
+							}
+						],
+            heat: "",
+            time: 180,
+        },
+				{
+            output: [
+							"2x createastral:ender_marimo"
+						],
+            input: [
+							"createastral:ender_marimo",
+							"tconstruct:ender_slime_grass_seeds",
 							{
 									fluid: "astraladditions:sputum",
 									amount: INGOT,
@@ -2759,7 +2789,7 @@ function cuttingRecipes(event) {
         ["createastral:marimo", "minecraft:seagrass"],
         ["createastral:moonset_marimo", "minecraft:warped_roots"],
         ["createastral:snowy_marimo", "minecraft:snowball"],
-        ["createastral:shimmer_marimo", "astraladditions:ender_sprouts"],
+        ["createastral:ender_marimo", "astraladditions:ender_sprouts"],
         ["minecraft:moss_block", "2x minecraft:moss_carpet"],
         ["minecraft:moss_carpet", "2x createastral:marimo"],
         ["techreborn:rubber_log", "techreborn:rubber_log_stripped"],
@@ -3531,7 +3561,7 @@ function compactingRecipes(event) {
         },
 				{
             output: { fluid: "astraladditions:sputum", amount: 500 * mB },
-            inputs: ["4x createastral:shimmer_marimo", "techreborn:uu_matter", { fluid: "tconstruct:molten_ender", amount: 250 * mB }],
+            inputs: ["4x createastral:ender_marimo", "techreborn:uu_matter", { fluid: "tconstruct:molten_ender", amount: 250 * mB }],
         },
 				{
             output: { fluid: "tconstruct:molten_ender", amount: 250 * mB },

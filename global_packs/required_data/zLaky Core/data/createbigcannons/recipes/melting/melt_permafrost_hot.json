@@ -11,6 +11,6 @@
             "amount": 12150
         }
     ],
-    "processingTime": 200,
+    "processingTime": 100,
     "heatRequirement": "superheated"
 }

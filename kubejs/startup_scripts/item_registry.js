@@ -48,6 +48,7 @@ onEvent("item.registry", (event) => {
     event.create("createastral:marimo");
     event.create("createastral:moonset_marimo");
     event.create("createastral:snowy_marimo");
+    event.create("createastral:ender_marimo");
     event.create("createastral:shimmer_marimo");
 
     //Astral Foods
