@@ -1594,7 +1594,19 @@ function mixingRecipes(event) {
     // Heat: "" = no heat, "heated", or "superheated"
     // Time: Mixing time in ticks
     [
-				{
+		{
+            output: [
+				"astraladditions:shimmer_blaze_rod"
+			],
+            input: [
+				"32x createastral:shimmer_marimo",
+				"2x minecraft:blaze_rod",
+				"tconstruct:blazing_bone"
+			],
+            heat: "heated",
+            time: 180,
+        },
+		{
             output: [
 							{ fluid: "tconstruct:ender_slime", amount: 250 * mB }
 						],
@@ -1678,6 +1690,21 @@ function mixingRecipes(event) {
 									amount: BUCKET/2,
 							}
 						],
+            heat: "",
+            time: 180,
+        },
+		{
+            output: [
+				"2x createastral:snowy_marimo"
+			],
+            input: [
+				"createastral:snowy_marimo",
+				"ad_astra:ice_shard",
+				{
+						fluid: "minecraft:water",
+						amount: BUCKET/2,
+				}
+			],
             heat: "",
             time: 180,
         },
