@@ -72,6 +72,28 @@ function crushingRecipes(event) {
     //      ["Item", Chance],
     //      ...
     [
+				{
+            input: "tconstruct:ender_slime_crystal_cluster",
+            outputs: [
+							["3x tconstruct:ender_slime_crystal", 1],
+							["1x tconstruct:ender_slime_crystal", 0.5],
+						],
+        },
+				{
+            input: "minecraft:packed_ice",
+            outputs: [
+							["2x ad_astra:ice_shard", 1],
+							["1x ad_astra:ice_shard", 0.5],
+						],
+        },
+				{
+            input: "minecraft:blue_ice",
+            outputs: [
+							["9x ad_astra:ice_shard", 1],
+							["2x ad_astra:ice_shard", 0.66],
+							["1x ad_astra:ice_shard", 0.33],
+						],
+        },
         {
             input: "minecraft:calcite",
             outputs: [["4x techreborn:calcite_dust", 1]],
@@ -453,6 +475,44 @@ function sequencedAssemblyRecipes(event) {
     const inc_sturdy_sheet = "create:unprocessed_obsidian_sheet";
 
 		event.recipes
+        .createSequencedAssembly(Item.of("tconstruct:medium_ender_slime_crystal_bud"), "tconstruct:small_ender_slime_crystal_bud", [
+            event.recipes.createFilling("tconstruct:small_ender_slime_crystal_bud", [
+                "tconstruct:small_ender_slime_crystal_bud",
+                { fluid: "tconstruct:ender_slime", amount: 250 * mB / 3 },
+            ]),
+        ])
+        .transitionalItem("tconstruct:small_ender_slime_crystal_bud")
+        .loops(3);
+				
+		event.recipes
+        .createSequencedAssembly(Item.of("tconstruct:large_ender_slime_crystal_bud"), "tconstruct:medium_ender_slime_crystal_bud", [
+            event.recipes.createDeploying("tconstruct:medium_ender_slime_crystal_bud", [
+                "tconstruct:medium_ender_slime_crystal_bud",
+                ["techreborn:basalt_dust"],
+            ]),
+						event.recipes.createFilling("tconstruct:medium_ender_slime_crystal_bud", [
+                "tconstruct:medium_ender_slime_crystal_bud",
+                { fluid: "tconstruct:ender_slime", amount: 250 * mB / 3 },
+            ]),
+        ])
+        .transitionalItem("tconstruct:medium_ender_slime_crystal_bud")
+        .loops(3);
+				
+		event.recipes
+        .createSequencedAssembly(Item.of("tconstruct:ender_slime_crystal_cluster"), "tconstruct:large_ender_slime_crystal_bud", [
+            event.recipes.createDeploying("tconstruct:large_ender_slime_crystal_bud", [
+                "tconstruct:large_ender_slime_crystal_bud",
+                ["create:powdered_obsidian"],
+            ]),
+						event.recipes.createFilling("tconstruct:large_ender_slime_crystal_bud", [
+                "tconstruct:large_ender_slime_crystal_bud",
+                { fluid: "tconstruct:ender_slime", amount: 250 * mB / 3 },
+            ]),
+        ])
+        .transitionalItem("tconstruct:large_ender_slime_crystal_bud")
+        .loops(3);
+
+		event.recipes
         .createSequencedAssembly(Item.of("cookingforblockheads:cow_jar"), "cookingforblockheads:milk_jar", [
             event.recipes.createDeploying("cookingforblockheads:milk_jar", [
                 "cookingforblockheads:milk_jar",
@@ -462,8 +522,8 @@ function sequencedAssemblyRecipes(event) {
                 "cookingforblockheads:milk_jar",
                 ["minecraft:leather"],
             ]),
-            event.recipes.createFilling("yttr:ultrapure_carbon", [
-                "yttr:ultrapure_carbon",
+            event.recipes.createFilling("cookingforblockheads:milk_jar", [
+                "cookingforblockheads:milk_jar",
                 { fluid: "tconstruct:blood", amount: 100 * mB },
             ]),
         ])
@@ -1370,6 +1430,12 @@ function sequencedAssemblyRecipes(event) {
 
 function fillingRecipes(event) {
     [
+				{
+            input: "tconstruct:ender_slime_crystal",
+            output: "tconstruct:small_ender_slime_crystal_bud",
+            fluid: "astraladditions:sputum",
+            amount: 250 * mB / 4,
+        },
 				{
             input: "minecraft:wheat_seeds",
             output: "tconstruct:earth_slime_grass_seeds",
@@ -3548,6 +3614,13 @@ function farmersDelightIntegration(event) {
 
 function compactingRecipes(event) {
     [
+				{
+            output: "astraladditions:enderrack",
+            inputs: [
+							"astraladditions:ender_sprouts",
+							"32x createastral:ender_marimo",
+						],
+        },
 				{
             output: "minecraft:rooted_dirt",
             inputs: [

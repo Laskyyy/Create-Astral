@@ -476,6 +476,7 @@ onEvent("recipes", (event) => {
         { output: "buildinggadgets:gadget_copy_paste" },
 
         // Yttr
+        { type: "yttr:centrifuging", input: "minecraft:coal"},
         { output: "yttr:chute" },
         { output: "yttr:rafter" },
         { output: "yttr:centrifuge" },
