@@ -51,18 +51,21 @@ onEvent("item.registry", (event) => {
         });
     event.create("createastral:moonset_marimo")
 		.food((food) => {
-            food.hunger(1).saturation(0).effect("levitation", 300, 2, 1).alwaysEdible();
+            food.hunger(1).saturation(0).effect("levitation", 30, 2, 1).alwaysEdible();
         });
     event.create("createastral:snowy_marimo")
 		.food((food) => {
-            food.hunger(1).saturation(0).effect("levitation", 300, 2, 1).alwaysEdible();
+            food.hunger(1).saturation(0).effect("absorption", 180, 0, 1).alwaysEdible();
         });
     event.create("createastral:ender_marimo")
 		.food((food) => {
-            food.hunger(1).saturation(0).effect("levitation", 300, 2, 1).alwaysEdible();
+            food.hunger(1).saturation(0).effect("instant_damage", 30, 0, 1).effect("regeneration", 180, 1, 1).alwaysEdible();
         });
     event.create("createastral:shimmer_marimo")
-        .displayName("Shimarimo");
+        .displayName("Shimarimo")
+		.food((food) => {
+            food.hunger(1).saturation(0).effect("night_vision", 180, 0, 1).effect("glowing", 180, 1, 1).alwaysEdible();
+        });
 
     //Astral Foods
     event

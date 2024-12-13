@@ -475,6 +475,20 @@ function sequencedAssemblyRecipes(event) {
     const inc_sturdy_sheet = "create:unprocessed_obsidian_sheet";
 
 		event.recipes
+        .createSequencedAssembly(Item.of("minecraft:powder_snow_bucket"), "minecraft:bucket", [
+			event.recipes.createDeploying("minecraft:bucket", [
+                "minecraft:bucket",
+                ["createastral:snowy_marimo"],
+            ]),
+            event.recipes.createFilling("minecraft:bucket", [
+                "minecraft:bucket",
+                { fluid: "minecraft:water", amount: 250 * mB },
+            ]),
+        ])
+        .transitionalItem("minecraft:bucket")
+        .loops(2);
+		
+		event.recipes
         .createSequencedAssembly(Item.of("tconstruct:medium_ender_slime_crystal_bud"), "tconstruct:small_ender_slime_crystal_bud", [
             event.recipes.createFilling("tconstruct:small_ender_slime_crystal_bud", [
                 "tconstruct:small_ender_slime_crystal_bud",
@@ -1430,19 +1444,31 @@ function sequencedAssemblyRecipes(event) {
 
 function fillingRecipes(event) {
     [
-				{
+		{
+            input: "minecraft:dirt",
+            output: "tconstruct:sky_slime_dirt",
+            fluid: "tconstruct:sky_slime",
+            amount: 250,
+        },
+		{
+            input: "minecraft:dirt",
+            output: "tconstruct:earth_slime_dirt",
+            fluid: "tconstruct:earth_slime",
+            amount: 250,
+        },
+		{
             input: "tconstruct:ender_slime_crystal",
             output: "tconstruct:small_ender_slime_crystal_bud",
             fluid: "astraladditions:sputum",
             amount: 250 * mB / 4,
         },
-				{
+		{
             input: "minecraft:wheat_seeds",
             output: "tconstruct:earth_slime_grass_seeds",
             fluid: "tconstruct:earth_slime",
             amount: 250 * mB / 4,
         },
-				{
+		{
             input: "minecraft:stick",
             output: "minecraft:torch",
             fluid: "minecraft:lava",
@@ -1561,6 +1587,11 @@ function fillingRecipes(event) {
 
 function deployingRecipes(event) {
     [
+		{
+            output: "dbe:vanta_black",
+            basin_input: "minecraft:stone",
+            deployer_input: "minecraft:black_dye",
+        },
         {
             output: "explorerscompass:explorerscompass",
             basin_input: "minecraft:compass",
@@ -1608,88 +1639,88 @@ function mixingRecipes(event) {
         },
 		{
             output: [
-							{ fluid: "tconstruct:ender_slime", amount: 250 * mB }
-						],
+				{ fluid: "tconstruct:ender_slime", amount: 250 * mB }
+			],
             input: [
-							"createastral:ender_marimo", 
-							"ae2:ender_dust",
-							{ fluid: "tconstruct:earth_slime", amount: 125 * mB }
-						],
+				"createastral:ender_marimo", 
+				"ae2:ender_dust",
+				{ fluid: "tconstruct:earth_slime", amount: 125 * mB }
+			],
             heat: "heated",
             time: 180,
         },
-				{
+		{
             output: [
-							"1x createastral:shimmer_marimo"
-						],
+				"1x createastral:shimmer_marimo"
+			],
             input: [
-							"createastral:marimo",
-							"ae2:fluix_crystal",
-							{
-									fluid: "kubejs:shimmer",
-									amount: BUCKET/2,
-							}
-						],
+				"createastral:marimo",
+				"ae2:fluix_crystal",
+				{
+						fluid: "kubejs:shimmer",
+						amount: BUCKET/2,
+				}
+			],
             heat: "",
             time: 180,
         },
-				{
+		{
             output: [
-							"2x createastral:shimmer_marimo"
-						],
+				"2x createastral:shimmer_marimo"
+			],
             input: [
-							"createastral:shimmer_marimo",
-							"ae2:fluix_crystal_seed",
-							{
-									fluid: "kubejs:shimmer",
-									amount: INGOT,
-							}
-						],
+				"createastral:shimmer_marimo",
+				"ae2:fluix_crystal_seed",
+				{
+						fluid: "kubejs:shimmer",
+						amount: INGOT,
+				}
+			],
             heat: "",
             time: 180,
         },
-				{
+		{
             output: [
-							"1x createastral:ender_marimo"
-						],
+				"1x createastral:ender_marimo"
+			],
             input: [
-							"createastral:marimo",
-							"tconstruct:ender_slime_crystal",
-							{
-									fluid: "kubejs:shimmer",
-									amount: BUCKET/2,
-							}
-						],
+				"createastral:marimo",
+				"tconstruct:ender_slime_crystal",
+				{
+					fluid: "kubejs:shimmer",
+					amount: BUCKET/2,
+				}
+			],
             heat: "",
             time: 180,
         },
-				{
+		{
             output: [
-							"2x createastral:ender_marimo"
-						],
+				"2x createastral:ender_marimo"
+			],
             input: [
-							"createastral:ender_marimo",
-							"tconstruct:ender_slime_grass_seeds",
-							{
-									fluid: "astraladditions:sputum",
-									amount: INGOT,
-							}
-						],
+				"createastral:ender_marimo",
+				"tconstruct:ender_slime_grass_seeds",
+				{
+					fluid: "astraladditions:sputum",
+					amount: INGOT,
+				}
+			],
             heat: "",
             time: 180,
         },
-				{
+		{
             output: [
-							"1x createastral:snowy_marimo"
-						],
+				"1x createastral:snowy_marimo"
+			],
             input: [
-							"createastral:marimo",
-							"createastral:prismatic_crystal",
-							{
-									fluid: "kubejs:shimmer",
-									amount: BUCKET/2,
-							}
-						],
+				"createastral:marimo",
+				"createastral:prismatic_crystal",
+				{
+					fluid: "kubejs:shimmer",
+					amount: BUCKET/2,
+				}
+			],
             heat: "",
             time: 180,
         },
@@ -1701,73 +1732,74 @@ function mixingRecipes(event) {
 				"createastral:snowy_marimo",
 				"ad_astra:ice_shard",
 				{
-						fluid: "minecraft:water",
-						amount: BUCKET/2,
+					fluid: "minecraft:water",
+					amount: BUCKET/2,
 				}
 			],
             heat: "",
             time: 180,
         },
-				{
+		{
             output: [
-							Item.of("2x createastral:marimo").withChance(0.5),
-							Item.of("2x createastral:moonset_marimo").withChance(0.5),
-							{
-									fluid: "minecraft:water",
-									amount: BUCKET,
-							}
-						],
+				Item.of("2x createastral:marimo").withChance(0.5),
+				Item.of("2x createastral:moonset_marimo").withChance(0.5),
+				{
+					fluid: "minecraft:water",
+					amount: BUCKET,
+				}
+			],
             input: [
-							"createastral:marimo",
-							"createastral:moonset_marimo",
-							{
-									fluid: "minecraft:water",
-									amount: BUCKET,
-							}
-						],
+				"createastral:marimo",
+				"createastral:moonset_marimo",
+				{
+					fluid: "minecraft:water",
+					amount: BUCKET,
+				}
+			],
             heat: "",
             time: 60,
         },
-				{
+		{
             output: [
-							"1x createastral:moonset_marimo"
-						],
+				"1x createastral:moonset_marimo"
+			],
             input: [
-							"createastral:marimo",
-							"astraladditions:moonset_crystal",
-							{
-									fluid: "kubejs:shimmer",
-									amount: BUCKET/2,
-							}
-						],
+				"createastral:marimo",
+				"astraladditions:moonset_crystal",
+				{
+					fluid: "kubejs:shimmer",
+					amount: BUCKET/2,
+				}
+			],
             heat: "",
             time: 180,
         },
-				{
+		{
             output: [
-							"2x createastral:marimo",
-							{
-									fluid: "minecraft:water",
-									amount: BUCKET/2,
-							}
-						],
+				"2x createastral:marimo",
+				{
+					fluid: "minecraft:water",
+					amount: BUCKET/2,
+				}
+			],
             input: [
-							"createastral:marimo", 
-							{
-									fluid: "minecraft:water",
-									amount: BUCKET/2,
-							}
-						],
+				"createastral:marimo", 
+				{
+					fluid: "minecraft:water",
+					amount: BUCKET/2,
+				}
+			],
             heat: "",
             time: 60,
         },
+		{
+            output: [
 				{
-            output: [{
-                fluid: "milk:still_milk",
-                amount: BUCKET/2,
-            },
-						"cookingforblockheads:cow_jar"
-						],
+					fluid: "milk:still_milk",
+					amount: BUCKET/2,
+				},
+				"cookingforblockheads:cow_jar"
+			],
             input: ["cookingforblockheads:cow_jar"],
             heat: "",
             time: 60,
@@ -3641,19 +3673,49 @@ function farmersDelightIntegration(event) {
 
 function compactingRecipes(event) {
     [
-				{
+		{
+            output: ["techreborn:saltpeter_dust", { fluid: "minecraft:water", amount: 500 * mB }],
+            inputs: [
+				"4x createastral:snowy_marimo",
+				"minecraft:seagrass"
+			],
+        },
+		{
+            output: "farmersdelight:organic_compost",
+            inputs: [
+				"minecraft:rooted_dirt",
+				"minecraft:bone_meal",
+				{ fluid: "techreborn:potassium", amount: 250 * mB }
+			],
+        },
+		{
             output: "astraladditions:enderrack",
             inputs: [
-							"astraladditions:ender_sprouts",
-							"32x createastral:ender_marimo",
-						],
+				"astraladditions:ender_sprouts",
+				"32x createastral:ender_marimo",
+			],
         },
-				{
+		{
+            output: "minecraft:budding_amethyst",
+            inputs: [
+				"6x minecraft:amethyst_cluster",
+				"tconstruct:amethyst_bronze_block",
+				"32x createastral:shimmer_marimo",
+			],
+        },
+		{
+            output: "ad_astra:permafrost",
+            inputs: [
+				"minecraft:warped_roots",
+				"32x createastral:snowy_marimo",
+			],
+        },
+		{
             output: "minecraft:rooted_dirt",
             inputs: [
-							"minecraft:grass",
-							"32x createastral:marimo",
-						],
+				"minecraft:grass",
+				"32x createastral:marimo",
+			],
         },
         {
             output: "minecraft:grass",
