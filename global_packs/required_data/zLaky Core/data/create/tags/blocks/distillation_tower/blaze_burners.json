@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "create:blaze_burner",
+    "createaddition:liquid_blaze_burner"
+  ]
+}
