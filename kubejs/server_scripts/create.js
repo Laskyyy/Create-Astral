@@ -3677,6 +3677,13 @@ function compactingRecipes(event) {
             output: ["techreborn:saltpeter_dust", { fluid: "minecraft:water", amount: 500 * mB }],
             inputs: [
 				"4x createastral:snowy_marimo",
+				"4x astraladditions:bulba_root"
+			],
+        },
+		{
+            output: ["techreborn:saltpeter_dust", { fluid: "minecraft:water", amount: 500 * mB }],
+            inputs: [
+				"4x createastral:snowy_marimo",
 				"minecraft:seagrass"
 			],
         },

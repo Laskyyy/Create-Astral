@@ -398,9 +398,11 @@
     "block.createastral.rocket_casing": "Rocket Casing",
     "block.createastral.moonset_stone": "Moonset Stone",
 		
-		"item.createastral.marimo": "Marimo",
-		"item.createastral.moonset_marimo": "Moonset Marimo",
-		"item.createastral.snowy_marimo": "Snowy Marimo",
+	"item.createastral.marimo": "Marimo",
+	"item.createastral.moonset_marimo": "Moonset Marimo",
+	"item.createastral.snowy_marimo": "Snowy Marimo",
+	"item.createastral.ender_marimo": "Ender Marimo",
+	"item.createastral.shimmer_marimo": "Shimarimo",
 
     "block.doodads.asphalt_slab": "Asphalt Slab",
     "block.doodads.asphalt_stair": "Asphalt Stair",
