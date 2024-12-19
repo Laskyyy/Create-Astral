@@ -1880,6 +1880,11 @@ function deployingRecipes(event) {
             deployer_input: "astraladditions:orbital_navigation_ring",
         },
         {
+            output: "farmersdelight:raw_pasta",
+            basin_input: ["farmersdelight:wheat_dough", "create:dough"],
+            deployer_input: ["farmersdelight:flint_knife", "farmersdelight:iron_knife", "farmersdelight:golden_knife", "farmersdelight:diamond_knife", "farmersdelight:netherite_knife"]
+        },    
+        {
             output: "createastral:contained_end",
             basin_input: "createastral:sturdy_cage",
             deployer_input: "yttr:haemopal",
