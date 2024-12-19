@@ -3,13 +3,13 @@
   "ingredients": [
     {
       "amount": 810,
-      "fluid": "tconstruct:molten_amethyst",
+      "fluid": "estrogen:molten_amethyst",
       "nbt": {}
     }
   ],
   "results": [
     {
-      "amount": 81,
+      "amount": 810,
       "fluid": "kubejs:shimmer"
     }
   ]

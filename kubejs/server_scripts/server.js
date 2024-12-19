@@ -716,6 +716,10 @@ onEvent("recipes", (event) => {
         S: "#c:raw_materials",
         A: "minecraft:cobblestone",
     });
+	event.shaped("minecraft:furnace", ["AAA", "A A", "SSS"], {
+        S: "#c:ingots",
+        A: "minecraft:cobblestone",
+    });
     event.shaped("minecraft:blast_furnace", ["AAA", "ASA", "BBB"], {
         S: "minecraft:furnace",
         A: "minecraft:iron_ingot",

@@ -2,13 +2,13 @@
     "type": "createbigcannons:melting",
     "ingredients": [
         {
-            "item": "ad_astra:permafrost"
+            "item": "ad_astra:polished_permafrost"
         }
     ],
     "results": [
         {
             "fluid": "techreborn:nitrogen",
-            "amount": 12150
+            "amount": 16200
         }
     ],
     "processingTime": 100,

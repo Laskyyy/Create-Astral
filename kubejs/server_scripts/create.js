@@ -72,27 +72,27 @@ function crushingRecipes(event) {
     //      ["Item", Chance],
     //      ...
     [
-				{
+		{
             input: "tconstruct:ender_slime_crystal_cluster",
             outputs: [
-							["3x tconstruct:ender_slime_crystal", 1],
-							["1x tconstruct:ender_slime_crystal", 0.5],
-						],
+				["3x tconstruct:ender_slime_crystal", 1],
+				["1x tconstruct:ender_slime_crystal", 0.5],
+			],
         },
-				{
+		{
             input: "minecraft:packed_ice",
             outputs: [
-							["2x ad_astra:ice_shard", 1],
-							["1x ad_astra:ice_shard", 0.5],
-						],
+				["2x ad_astra:ice_shard", 1],
+				["1x ad_astra:ice_shard", 0.5],
+			],
         },
-				{
+		{
             input: "minecraft:blue_ice",
             outputs: [
-							["9x ad_astra:ice_shard", 1],
-							["2x ad_astra:ice_shard", 0.66],
-							["1x ad_astra:ice_shard", 0.33],
-						],
+				["9x ad_astra:ice_shard", 1],
+				["2x ad_astra:ice_shard", 0.66],
+				["1x ad_astra:ice_shard", 0.33],
+			],
         },
         {
             input: "minecraft:calcite",
@@ -178,7 +178,6 @@ function crushingRecipes(event) {
                 ["1x minecraft:horn_coral_fan", 0.25],
             ],
         },
-
         {
             input: "minecraft:cobbled_deepslate",
             outputs: [
@@ -1627,6 +1626,51 @@ function mixingRecipes(event) {
     [
 		{
             output: [
+				{
+					fluid: "kubejs:shimmer",
+					amount: BUCKET/9,
+				}
+			],
+            input: [
+				"ae2:fluix_crystal",
+				"minecraft:glowstone_dust",
+				"tconstruct:amethyst_bronze_nugget"
+			],
+            heat: "heated",
+            time: 180,
+        },
+		{
+            output: [
+				{
+					fluid: "kubejs:shimmer",
+					amount: BUCKET,
+				}
+			],
+            input: [
+				"4x createastral:shimmer_marimo",
+				"naturalist:glow_goop",
+				"astraladditions:lune_shroom"
+			],
+            heat: "heated",
+            time: 180,
+        },
+		{
+            output: [
+				"astraladditions:shimmer_heart"
+			],
+            input: [
+				"32x createastral:shimmer_marimo",
+				"minecraft:heart_of_the_sea",
+				{
+					fluid: "xpcrystals:soul",
+					amount: BUCKET,
+				}
+			],
+            heat: "heated",
+            time: 180,
+        },
+		{
+            output: [
 				"astraladditions:shimmer_blaze_rod"
 			],
             input: [
@@ -1657,8 +1701,8 @@ function mixingRecipes(event) {
 				"createastral:marimo",
 				"ae2:fluix_crystal",
 				{
-						fluid: "kubejs:shimmer",
-						amount: BUCKET/2,
+					fluid: "kubejs:shimmer",
+					amount: BUCKET/2,
 				}
 			],
             heat: "",
@@ -1672,8 +1716,8 @@ function mixingRecipes(event) {
 				"createastral:shimmer_marimo",
 				"ae2:fluix_crystal_seed",
 				{
-						fluid: "kubejs:shimmer",
-						amount: INGOT,
+					fluid: "kubejs:shimmer",
+					amount: INGOT,
 				}
 			],
             heat: "",
@@ -2084,12 +2128,12 @@ function mixingRecipes(event) {
         },
         {
             output: [
-							Item.of("minecraft:tube_coral").withChance(0.2),
-							Item.of("minecraft:brain_coral").withChance(0.2),
-							Item.of("minecraft:bubble_coral").withChance(0.2),
-							Item.of("minecraft:fire_coral").withChance(0.2),
-							Item.of("minecraft:horn_coral").withChance(0.2),
-						],
+				Item.of("minecraft:tube_coral").withChance(0.2),
+				Item.of("minecraft:brain_coral").withChance(0.2),
+				Item.of("minecraft:bubble_coral").withChance(0.2),
+				Item.of("minecraft:fire_coral").withChance(0.2),
+				Item.of("minecraft:horn_coral").withChance(0.2),
+			],
             input: [
                 "4x minecraft:sea_pickle",
                 {
@@ -2102,12 +2146,12 @@ function mixingRecipes(event) {
         },
         {
             output: [
-							Item.of("minecraft:tube_coral_fan").withChance(0.2),
-							Item.of("minecraft:brain_coral_fan").withChance(0.2),
-							Item.of("minecraft:bubble_coral_fan").withChance(0.2),
-							Item.of("minecraft:fire_coral_fan").withChance(0.2),
-							Item.of("minecraft:horn_coral_fan").withChance(0.2),
-						],
+				Item.of("minecraft:tube_coral_fan").withChance(0.2),
+				Item.of("minecraft:brain_coral_fan").withChance(0.2),
+				Item.of("minecraft:bubble_coral_fan").withChance(0.2),
+				Item.of("minecraft:fire_coral_fan").withChance(0.2),
+				Item.of("minecraft:horn_coral_fan").withChance(0.2),
+			],
             input: [
                 "4x minecraft:dried_kelp",
                 {
@@ -2324,14 +2368,14 @@ function mixingRecipes(event) {
             time: 40,
         },
         {
-                output: Fluid.of("tconstruct:molten_slimesteel", INGOT),
-                input: [
-                    "9x minecraft:iron_nugget",
-                    { fluid: "tconstruct:sky_slime", amount: 250 * mB },
-                    "#tconstruct:seared_blocks",
-                ],
-                heat: "heated",
-                time: 40,
+			output: Fluid.of("tconstruct:molten_slimesteel", INGOT),
+			input: [
+				"9x minecraft:iron_nugget",
+				{ fluid: "tconstruct:sky_slime", amount: 250 * mB },
+				"#tconstruct:seared_blocks",
+			],
+			heat: "heated",
+			time: 40,
         },
         {
             output: Fluid.of("tconstruct:molten_slimesteel", INGOT),
@@ -2768,9 +2812,9 @@ function mixingRecipes(event) {
 				{
             output: "yttr:ruined_cobblestone",
             input: ["minecraft:cobblestone", "yttr:rubble", {
-                    fluid: "tconstruct:magma",
-                    amount: BUCKET/4,
-                }],
+				fluid: "tconstruct:magma",
+				amount: BUCKET/4,
+			}],
             heat: "superheated",
             time: 200,
         },
@@ -3107,7 +3151,7 @@ function mechanicalCraftingRecipes(event) {
     // Shape: Array of rows of inputs based on letters assigned
     // Inputs: Object with letters assigned to input items, to be used in the shape
     [
-				{
+		{
             output: "ad_astra:calorite_tank",
             shape: [" C ", "COC", " C "],
             inputs: {
@@ -3674,6 +3718,20 @@ function farmersDelightIntegration(event) {
 function compactingRecipes(event) {
     [
 		{
+            output: ["ae2:fluix_pearl"],
+            inputs: [
+				"4x createastral:shimmer_marimo",
+				"ae2:ender_dust"
+			],
+        },
+		{
+            output: ["techreborn:saltpeter_dust", { fluid: "minecraft:water", amount: 500 * mB }],
+            inputs: [
+				"4x createastral:snowy_marimo",
+				"4x astraladditions:bulba_root"
+			],
+        },
+		{
             output: ["techreborn:saltpeter_dust", { fluid: "minecraft:water", amount: 500 * mB }],
             inputs: [
 				"4x createastral:snowy_marimo",
@@ -3731,7 +3789,7 @@ function compactingRecipes(event) {
         },
 				{
             output: "astraladditions:moonset_crystal",
-            inputs: ["8x createastral:moonset_marimo", "minecraft:ender_pearl"],
+            inputs: ["8x createastral:moonset_marimo", "2x ae2:ender_dust"],
         },
 				{
             output: "minecraft:chorus_flower",
