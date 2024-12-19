@@ -445,6 +445,7 @@ function sequencedAssemblyRecipes(event) {
     diamondSequence(event);
     casingSequence(event);
     piglinSequence(event);
+    wineSequence(event);
 
     //Honestly just good luck in figuring this out its too complex to
     //document in an effective way
@@ -1170,345 +1171,344 @@ function sequencedAssemblyRecipes(event) {
             .loops(1);
     }
     function wineSequence(event) {
-        event.recipes
-            .createSequencedAssembly(
-                [
-                    // begin
-                    "vinery:chenet_wine", // output
-                ],
-                "vinery:red_grapejuice_wine_bottle",
-                [
-                    // input
-                    event.recipes.createDeploying("kubejs:incomplete_chenet_wine", [
-                        "kubejs:incomplete_chenet_wine",
-                        "minecraft:sweet_berries",
-                    ]),
-                    event.recipes.createFilling("kubejs:incomplete_chenet_wine", [
-                        "kubejs:incomplete_chenet_wine",
-                        { fluid: "kubejs:red_grape_juice", amount: 250 * mB },
-                    ]),
-                    event.recipes.createDeploying("kubejs:incomplete_chenet_wine", [
-                        "kubejs:incomplete_chenet_wine",
-                        "minecraft:sweet_berries",
-                    ]),
-                ]
-            )
-            .transitionalItem("kubejs:incomplete_chenet_wine")
-            .loops(1);
-    
-        event.recipes
-            .createSequencedAssembly(
-                [
-                    // begin
-                    "vinery:king_danis_wine", // output
-                ],
-                "vinery:red_grapejuice_wine_bottle",
-                [
-                    // input
-                    event.recipes.createFilling("kubejs:incomplete_king_danis_wine", [
-                        "kubejs:incomplete_king_danis_wine",
-                        { fluid: "kubejs:red_grape_juice", amount: 250 * mB },
-                    ]),
-                    event.recipes.createFilling("kubejs:incomplete_king_danis_wine", [
-                        "kubejs:incomplete_king_danis_wine",
-                        { fluid: "create:honey", amount: 250 * mB },
-                    ]),
-                    event.recipes.createFilling("kubejs:incomplete_king_danis_wine", [
-                        "kubejs:incomplete_king_danis_wine",
-                        { fluid: "create:honey", amount: 250 * mB },
-                    ]),
-                ]
-            )
-            .transitionalItem("kubejs:incomplete_king_danis_wine")
-            .loops(1);
-    
-        event.recipes
-            .createSequencedAssembly(
-                [
-                    // begin
-                    "vinery:noir_wine", // output
-                ],
-                "vinery:red_grapejuice_wine_bottle",
-                [
-                    // input
-                    event.recipes.createDeploying("kubejs:incomplete_noir_wine", [
-                        "kubejs:incomplete_noir_wine",
-                        "minecraft:kelp",
-                    ]),
-                    event.recipes.createFilling("kubejs:incomplete_noir_wine", [
-                        "kubejs:incomplete_noir_wine",
-                        { fluid: "kubejs:red_grape_juice", amount: 250 * mB },
-                    ]),
-                    event.recipes.createDeploying("kubejs:incomplete_noir_wine", [
-                        "kubejs:incomplete_noir_wine",
-                        "minecraft:kelp",
-                    ]),
-                ]
-            )
-            .transitionalItem("kubejs:incomplete_noir_wine")
-            .loops(1);
-    
-         event.recipes
-            .createSequencedAssembly(
-                [
-                    // begin
-                    "vinery:bolvar_wine", // output
-                ],
-                "vinery:red_grapejuice_wine_bottle",
-                [
-                    // input
-                    event.recipes.createFilling("kubejs:incomplete_bolvar_wine", [
-                        "kubejs:incomplete_bolvar_wine",
-                        { fluid: "create:honey", amount: 250 * mB },
-                    ]),
-                    event.recipes.createFilling("kubejs:incomplete_bolvar_wine", [
-                        "kubejs:incomplete_bolvar_wine",
-                        { fluid: "kubejs:red_grape_juice", amount: 250 * mB },
-                    ]),
-                    event.recipes.createDeploying("kubejs:incomplete_bolvar_wine", [
-                        "kubejs:incomplete_bolvar_wine",
-                        "vinery:cherry",
-                    ]),
-                ]
-            )
-            .transitionalItem("kubejs:incomplete_bolvar_wine")
-            .loops(1);
-    
-            event.recipes
-            .createSequencedAssembly(
-                [
-                    // begin
-                    "vinery:cherry_wine", // output
-                ],
-                "vinery:red_grapejuice_wine_bottle",
-                [
-                    // input
-                    event.recipes.createDeploying("kubejs:incomplete_cherry_wine", [
-                        "kubejs:incomplete_cherry_wine",
-                        "vinery:cherry",
-                    ]),
-                    event.recipes.createFilling("kubejs:incomplete_cherry_wine", [
-                        "kubejs:incomplete_cherry_wine",
-                        { fluid: "kubejs:red_grape_juice", amount: 250 * mB },
-                    ]),
-                    event.recipes.createDeploying("kubejs:incomplete_cherry_wine", [
-                        "kubejs:incomplete_cherry_wine",
-                        "vinery:cherry",
-                    ]),
-                ]
-            )
-            .transitionalItem("kubejs:incomplete_cherry_wine")
-            .loops(1);
-    
-        event.recipes
-            .createSequencedAssembly(
-                [
-                    // begin
-                    "vinery:jellie_wine", // output
-                ],
-                "vinery:red_grapejuice_wine_bottle",
-                [
-                    // input
-                    event.recipes.createDeploying("kubejs:incomplete_jellie_wine", [
-                        "kubejs:incomplete_jellie_wine",
-                        "minecraft:golden_apple",
-                    ]),
-                    event.recipes.createFilling("kubejs:incomplete_jellie_wine", [
-                        "kubejs:incomplete_jellie_wine",
-                        { fluid: "kubejs:white_grape_juice", amount: 250 * mB },
-                    ]),
-                    event.recipes.createFilling("kubejs:incomplete_jellie_wine", [
-                        "kubejs:incomplete_jellie_wine",
-                        { fluid: "create:honey", amount: 250 * mB },
-                    ]),
-                ]
-            )
-            .transitionalItem("kubejs:incomplete_jellie_wine")
-            .loops(1);
-    
-        event.recipes
-            .createSequencedAssembly(
-                [
-                    // begin
-                    "vinery:clark_wine", // output
-                ],
-                "vinery:white_grapejuice_wine_bottle",
-                [
-                    // input
-                    event.recipes.createDeploying("kubejs:incomplete_clark_wine", [
-                        "kubejs:incomplete_clark_wine",
-                        "minecraft:sweet_berries",
-                    ]),
-                    event.recipes.createFilling("kubejs:incomplete_clark_wine", [
-                        "kubejs:incomplete_clark_wine",
-                        { fluid: "kubejs:white_grape_juice", amount: 250 * mB },
-                    ]),
-                    event.recipes.createDeploying("kubejs:incomplete_clark_wine", [
-                        "kubejs:incomplete_clark_wine",
-                        "minecraft:sweet_berries",
-                    ]),
-                ]
-            )
-            .transitionalItem("kubejs:incomplete_clark_wine")
-            .loops(1);
-    
-        event.recipes
-            .createSequencedAssembly(
-                [
-                    // begin
-                    "vinery:mellohi_wine", // output
-                ],
-                "vinery:white_grapejuice_wine_bottle",
-                [
-                    // input
-                    event.recipes.createFilling("kubejs:incomplete_mellohi_wine", [
-                        "kubejs:incomplete_mellohi_wine",
-                        { fluid: "create:honey", amount: 250 * mB },
-                    ]),
-                    event.recipes.createFilling("kubejs:incomplete_mellohi_wine", [
-                       "kubejs:incomplete_mellohi_wine",
-                       { fluid: "create:honey", amount: 250 * mB },
-                    ]),
-                    event.recipes.createFilling("kubejs:incomplete_mellohi_wine", [
-                        "kubejs:incomplete_mellohi_wine",
-                        { fluid: "kubejs:white_grape_juice", amount: 250 * mB },
-                    ]),
-                ]
-            )
-            .transitionalItem("kubejs:incomplete_mellohi_wine")
-            .loops(1);
-    
-        event.recipes
-            .createSequencedAssembly(
-                [
-                    // begin
-                    "vinery:solaris_wine", // output
-                ],
-                "vinery:white_grapejuice_wine_bottle",
-                [
-                    // input
-                    event.recipes.createFilling("kubejs:incomplete_solaris_wine", [
-                        "kubejs:incomplete_solaris_wine",
-                        { fluid: "kubejs:white_grape_juice", amount: 250 * mB },
-                    ]),
-                    event.recipes.createDeploying("kubejs:incomplete_solaris_wine", [
-                        "kubejs:incomplete_solaris_wine",
-                        "minecraft:sweet_berries"
-                    ]),
-                    event.recipes.createFilling("kubejs:incomplete_solaris_wine", [
-                        "kubejs:incomplete_solaris_wine",
-                        { fluid: "create:honey", amount: 250 * mB },
-                    ]),
-                ]
-            )
-            .transitionalItem("kubejs:incomplete_solaris_wine")
-            .loops(1);
-    
-        event.recipes
-            .createSequencedAssembly(
-                [
-                    // begin
-                    "vinery:aegis_wine", // output
-                ],
-                "vinery:wine_bottle",
-                [
-                    // input
-                    event.recipes.createDeploying("kubejs:incomplete_aegis_wine", [
-                        "kubejs:incomplete_aegis_wine",
-                        "minecraft:sugar",
-                    ]),
-                    event.recipes.createFilling("kubejs:incomplete_aegis_wine", [
-                        "kubejs:incomplete_aegis_wine",
-                        { fluid: "minecraft:water", amount: 1000 * mB },
-                    ]),
-                    event.recipes.createDeploying("kubejs:incomplete_aegis_wine", [
-                        "kubejs:incomplete_aegis_wine",
-                        "minecraft:kelp",
-                    ]),
-                ]
-            )
-            .transitionalItem("kubejs:incomplete_aegis_wine")
-            .loops(1);
-    
-        event.recipes
-            .createSequencedAssembly(
-                [
-                    // begin
-                    "vinery:apple_wine", // output
-                ],
-                "vinery:wine_bottle",
-                [
-                    // input
-                    event.recipes.createDeploying("kubejs:incomplete_apple_wine", [
-                        "kubejs:incomplete_apple_wine",
-                        "minecraft:apple"
-                    ]),
-                    event.recipes.createFilling("kubejs:incomplete_apple_wine", [
-                        "kubejs:incomplete_apple_wine",
-                        { fluid: "create:honey", amount: 250 * mB },
-                    ]),
-                    event.recipes.createDeploying("kubejs:incomplete_apple_wine", [
-                        "kubejs:incomplete_apple_wine",
-                        "minecraft:apple"
-                    ]),
-                ]
-            )
-            .transitionalItem("kubejs:incomplete_apple_wine")
-            .loops(1);
-    
-            event.recipes
-            .createSequencedAssembly(
-                [
-                    // begin
-                    "vinery:kelp_cider", // output
-                ],
-                "vinery:wine_bottle",
-                [
-                    // input
-                    event.recipes.createDeploying("kubejs:incomplete_kelp_cider", [
-                        "kubejs:incomplete_kelp_cider",
-                        "minecraft:kelp",
-                    ]),
-                    event.recipes.createDeploying("kubejs:incomplete_kelp_cider", [
-                        "kubejs:incomplete_kelp_cider",
-                       "minecraft:kelp", 
-                    ]),
-                    event.recipes.createDeploying("kubejs:incomplete_kelp_cider", [
-                        "kubejs:incomplete_kelp_cider",
-                        "minecraft:apple",
-                    ]),
-                ]
-            )
-            .transitionalItem("kubejs:incomplete_kelp_cider")
-            .loops(1);
-    
-        event.recipes
-            .createSequencedAssembly(
-                [
-                    // begin
-                    "vinery:apple_cider", // output
-                ],
-                "vinery:wine_bottle",
-                [
-                    // input
-                    event.recipes.createDeploying("kubejs:incomplete_apple_cider", [
-                        "kubejs:incomplete_apple_cider",
-                        "#minecraft:straw",
-                    ]),
-                    event.recipes.createDeploying("kubejs:incomplete_apple_cider", [
-                        "kubejs:incomplete_apple_cider",
-                       "minecraft:apple", 
-                    ]),
-                    event.recipes.createDeploying("kubejs:incomplete_apple_cider", [
-                        "kubejs:incomplete_apple_cider",
-                        "minecraft:apple",
-                    ]),
-                ]
-            )
-            .transitionalItem("kubejs:incomplete_apple_cider")
-            .loops(1);
-    }
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:chenet_wine", // output
+            ],
+            "vinery:red_grapejuice_wine_bottle",
+            [
+                // input
+                event.recipes.createDeploying("kubejs:incomplete_chenet_wine", [
+                    "kubejs:incomplete_chenet_wine",
+                    "minecraft:sweet_berries",
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_chenet_wine", [
+                    "kubejs:incomplete_chenet_wine",
+                    { fluid: "kubejs:red_grape_juice", amount: 250 * mB },
+                ]),
+                event.recipes.createDeploying("kubejs:incomplete_chenet_wine", [
+                    "kubejs:incomplete_chenet_wine",
+                    "minecraft:sweet_berries",
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_chenet_wine")
+        .loops(1);
 
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:king_danis_wine", // output
+            ],
+            "vinery:red_grapejuice_wine_bottle",
+            [
+                // input
+                event.recipes.createFilling("kubejs:incomplete_king_danis_wine", [
+                    "kubejs:incomplete_king_danis_wine",
+                    { fluid: "kubejs:red_grape_juice", amount: 250 * mB },
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_king_danis_wine", [
+                    "kubejs:incomplete_king_danis_wine",
+                    { fluid: "create:honey", amount: 250 * mB },
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_king_danis_wine", [
+                    "kubejs:incomplete_king_danis_wine",
+                    { fluid: "create:honey", amount: 250 * mB },
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_king_danis_wine")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:noir_wine", // output
+            ],
+            "vinery:red_grapejuice_wine_bottle",
+            [
+                // input
+                event.recipes.createDeploying("kubejs:incomplete_noir_wine", [
+                    "kubejs:incomplete_noir_wine",
+                    "minecraft:kelp",
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_noir_wine", [
+                    "kubejs:incomplete_noir_wine",
+                    { fluid: "kubejs:red_grape_juice", amount: 250 * mB },
+                ]),
+                event.recipes.createDeploying("kubejs:incomplete_noir_wine", [
+                    "kubejs:incomplete_noir_wine",
+                    "minecraft:kelp",
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_noir_wine")
+        .loops(1);
+
+     event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:bolvar_wine", // output
+            ],
+            "vinery:red_grapejuice_wine_bottle",
+            [
+                // input
+                event.recipes.createFilling("kubejs:incomplete_bolvar_wine", [
+                    "kubejs:incomplete_bolvar_wine",
+                    { fluid: "create:honey", amount: 250 * mB },
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_bolvar_wine", [
+                    "kubejs:incomplete_bolvar_wine",
+                    { fluid: "kubejs:red_grape_juice", amount: 250 * mB },
+                ]),
+                event.recipes.createDeploying("kubejs:incomplete_bolvar_wine", [
+                    "kubejs:incomplete_bolvar_wine",
+                    "vinery:cherry",
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_bolvar_wine")
+        .loops(1);
+
+        event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:cherry_wine", // output
+            ],
+            "vinery:red_grapejuice_wine_bottle",
+            [
+                // input
+                event.recipes.createDeploying("kubejs:incomplete_cherry_wine", [
+                    "kubejs:incomplete_cherry_wine",
+                    "vinery:cherry",
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_cherry_wine", [
+                    "kubejs:incomplete_cherry_wine",
+                    { fluid: "kubejs:red_grape_juice", amount: 250 * mB },
+                ]),
+                event.recipes.createDeploying("kubejs:incomplete_cherry_wine", [
+                    "kubejs:incomplete_cherry_wine",
+                    "vinery:cherry",
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_cherry_wine")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:jellie_wine", // output
+            ],
+            "vinery:red_grapejuice_wine_bottle",
+            [
+                // input
+                event.recipes.createDeploying("kubejs:incomplete_jellie_wine", [
+                    "kubejs:incomplete_jellie_wine",
+                    "minecraft:golden_apple",
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_jellie_wine", [
+                    "kubejs:incomplete_jellie_wine",
+                    { fluid: "kubejs:white_grape_juice", amount: 250 * mB },
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_jellie_wine", [
+                    "kubejs:incomplete_jellie_wine",
+                    { fluid: "create:honey", amount: 250 * mB },
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_jellie_wine")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:clark_wine", // output
+            ],
+            "vinery:white_grapejuice_wine_bottle",
+            [
+                // input
+                event.recipes.createDeploying("kubejs:incomplete_clark_wine", [
+                    "kubejs:incomplete_clark_wine",
+                    "minecraft:sweet_berries",
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_clark_wine", [
+                    "kubejs:incomplete_clark_wine",
+                    { fluid: "kubejs:white_grape_juice", amount: 250 * mB },
+                ]),
+                event.recipes.createDeploying("kubejs:incomplete_clark_wine", [
+                    "kubejs:incomplete_clark_wine",
+                    "minecraft:sweet_berries",
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_clark_wine")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:mellohi_wine", // output
+            ],
+            "vinery:white_grapejuice_wine_bottle",
+            [
+                // input
+                event.recipes.createFilling("kubejs:incomplete_mellohi_wine", [
+                    "kubejs:incomplete_mellohi_wine",
+                    { fluid: "create:honey", amount: 250 * mB },
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_mellohi_wine", [
+                   "kubejs:incomplete_mellohi_wine",
+                   { fluid: "create:honey", amount: 250 * mB },
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_mellohi_wine", [
+                    "kubejs:incomplete_mellohi_wine",
+                    { fluid: "kubejs:white_grape_juice", amount: 250 * mB },
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_mellohi_wine")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:solaris_wine", // output
+            ],
+            "vinery:white_grapejuice_wine_bottle",
+            [
+                // input
+                event.recipes.createFilling("kubejs:incomplete_solaris_wine", [
+                    "kubejs:incomplete_solaris_wine",
+                    { fluid: "kubejs:white_grape_juice", amount: 250 * mB },
+                ]),
+                event.recipes.createDeploying("kubejs:incomplete_solaris_wine", [
+                    "kubejs:incomplete_solaris_wine",
+                    "minecraft:sweet_berries"
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_solaris_wine", [
+                    "kubejs:incomplete_solaris_wine",
+                    { fluid: "create:honey", amount: 250 * mB },
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_solaris_wine")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:aegis_wine", // output
+            ],
+            "vinery:wine_bottle",
+            [
+                // input
+                event.recipes.createDeploying("kubejs:incomplete_aegis_wine", [
+                    "kubejs:incomplete_aegis_wine",
+                    "minecraft:sugar",
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_aegis_wine", [
+                    "kubejs:incomplete_aegis_wine",
+                    { fluid: "minecraft:water", amount: 1000 * mB },
+                ]),
+                event.recipes.createDeploying("kubejs:incomplete_aegis_wine", [
+                    "kubejs:incomplete_aegis_wine",
+                    "minecraft:kelp",
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_aegis_wine")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:apple_wine", // output
+            ],
+            "vinery:wine_bottle",
+            [
+                // input
+                event.recipes.createDeploying("kubejs:incomplete_apple_wine", [
+                    "kubejs:incomplete_apple_wine",
+                    "minecraft:apple"
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_apple_wine", [
+                    "kubejs:incomplete_apple_wine",
+                    { fluid: "create:honey", amount: 250 * mB },
+                ]),
+                event.recipes.createDeploying("kubejs:incomplete_apple_wine", [
+                    "kubejs:incomplete_apple_wine",
+                    "minecraft:apple"
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_apple_wine")
+        .loops(1);
+
+        event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:kelp_cider", // output
+            ],
+            "vinery:wine_bottle",
+            [
+                // input
+                event.recipes.createDeploying("kubejs:incomplete_kelp_cider", [
+                    "kubejs:incomplete_kelp_cider",
+                    "minecraft:kelp",
+                ]),
+                event.recipes.createDeploying("kubejs:incomplete_kelp_cider", [
+                    "kubejs:incomplete_kelp_cider",
+                   "minecraft:kelp", 
+                ]),
+                event.recipes.createDeploying("kubejs:incomplete_kelp_cider", [
+                    "kubejs:incomplete_kelp_cider",
+                    "minecraft:apple",
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_kelp_cider")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:apple_cider", // output
+            ],
+            "vinery:wine_bottle",
+            [
+                // input
+                event.recipes.createDeploying("kubejs:incomplete_apple_cider", [
+                    "kubejs:incomplete_apple_cider",
+                    "#minecraft:straw",
+                ]),
+                event.recipes.createDeploying("kubejs:incomplete_apple_cider", [
+                    "kubejs:incomplete_apple_cider",
+                   "minecraft:apple", 
+                ]),
+                event.recipes.createDeploying("kubejs:incomplete_apple_cider", [
+                    "kubejs:incomplete_apple_cider",
+                    "minecraft:apple",
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_apple_cider")
+        .loops(1);
+}
     event.recipes
         .createSequencedAssembly(
             [
@@ -1785,7 +1785,20 @@ function fillingRecipes(event) {
             output: "astralfoods:dipped_potato",
             fluid: "tconstruct:molten_gold",
             amount: INGOT,
-        },{
+        },
+        {
+            input: "minecraft:bowl",
+            output: "farmersdelight:squid_ink_pasta",
+            fluid: "kubejs:squid_ink_pasta_fluid",
+            amount: 250 * mB,
+        },
+        {
+            input: "minecraft:bowl",
+            output: "farmersdelight:pumpkin_soup",
+            fluid: "kubejs:pumpkin_soup_fluid",
+            amount: 250 * mB
+        },
+        {
             input: "drinkbeer:empty_beer_mug",
             output: "drinkbeer:beer_mug",
             fluid: "kubejs:miner_pale_ale_fluid",
