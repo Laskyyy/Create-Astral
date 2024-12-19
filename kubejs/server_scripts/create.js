@@ -1778,6 +1778,23 @@ function sequencedAssemblyRecipes(event) {
         ])
         .transitionalItem(inc_separation_agent)
         .loops(3);
+
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "astralfoods:shimmered_apple", // output
+            ],
+            "minecraft:apple",
+            [event.recipes.createDeploying("minecraft:apple", ["minecraft:apple", "tconstruct:ender_slime_crystal"])],
+
+            event.recipes.createFilling("minecraft:apple", [
+                "minecraft:apple",
+                { fluid: "kubejs:shimmer", amount: BUCKET / 3 },
+            ])
+        )
+        .transitionalItem("minecraft:apple")
+        .loops(1);
 }
 
 function fillingRecipes(event) {
@@ -1895,12 +1912,6 @@ function fillingRecipes(event) {
             output: "minecraft:dripstone_block",
             fluid: "minecraft:water",
             amount: 250 * mB,
-        },
-        {
-            input: "minecraft:apple",
-            output: "astralfoods:shimmered_apple",
-            fluid: "kubejs:shimmer",
-            amount: BUCKET / 3,
         },
         {
             input: "astralfoods:seared_potato",
