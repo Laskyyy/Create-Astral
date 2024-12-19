@@ -2346,6 +2346,24 @@ function mixingRecipes(event) {
             time: 100,
         },
         {
+            output: Fluid.of("tconstruct:molten_netherite", INGOT * 3 / 10),
+            input: [
+                { fluid: "tconstruct:molten_debris", amount: INGOT * 10 / 10 },
+                { fluid: "tconstruct:molten_gold", amount: INGOT * 10 / 10},
+            ],
+            heat: "heated",
+            time: 100,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_netherite", INGOT * 2),
+            input: [
+                { fluid: "tconstruct:molten_debris", amount: INGOT * 4 },
+                { fluid: "tconstruct:molten_gold", amount: INGOT * 4 },
+            ],
+            heat: "superheated",
+            time: 100,
+        },
+        {
             output: Fluid.of("tconstruct:molten_steel", INGOT),
             input: ["techreborn:steel_dust"],
             heat: "heated",
