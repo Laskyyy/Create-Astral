@@ -45,6 +45,27 @@ onEvent("item.registry", (event) => {
     event.create("createastral:fragile_rocket_fin");
     event.create("createastral:broken_fragile_rocket_fin");
     event.create("createastral:gold_casted_rocket_fin");
+    event.create("createastral:marimo")
+		.food((food) => {
+            food.hunger(1).saturation(0).alwaysEdible();
+        });
+    event.create("createastral:moonset_marimo")
+		.food((food) => {
+            food.hunger(1).saturation(0).effect("levitation", 30, 2, 1).alwaysEdible();
+        });
+    event.create("createastral:snowy_marimo")
+		.food((food) => {
+            food.hunger(1).saturation(0).effect("absorption", 180, 0, 1).alwaysEdible();
+        });
+    event.create("createastral:ender_marimo")
+		.food((food) => {
+            food.hunger(1).saturation(0).effect("instant_damage", 30, 0, 1).effect("regeneration", 180, 1, 1).alwaysEdible();
+        });
+    event.create("createastral:shimmer_marimo")
+        .displayName("Shimarimo")
+		.food((food) => {
+            food.hunger(1).saturation(0).effect("night_vision", 180, 0, 1).effect("glowing", 180, 1, 1).alwaysEdible();
+        });
 
     //Astral Foods
     event
@@ -155,6 +176,11 @@ onEvent("item.registry", (event) => {
         .food((food) => {
             food.hunger(2).saturation(0.5).alwaysEdible();
         });
+    event.create("createastral:protobeef");
+    event.create("createastral:protochicken");
+    event.create("createastral:protomutton");
+    event.create("createastral:protopork");
+    event.create("createastral:protorabbit");
 
     //Radiant Armor And Tools//
     event.create("createastral:radiant_helmet", "helmet").tier("radiantarmor").glow(true).rarity("Epic");
@@ -229,6 +255,19 @@ onEvent("item.registry", (event) => {
     event.create("createastral:synthetic_slime");
 
     // Transitional Items
+    event.create("kubejs:incomplete_noir_wine").texture("kubejs:item/noir_wine");
+    event.create("kubejs:incomplete_chenet_wine").texture("kubejs:item/chenet_wine");
+    event.create("kubejs:incomplete_king_danis_wine").texture("kubejs:item/king_danis_wine");
+    event.create("kubejs:incomplete_bolvar_wine").texture("kubejs:item/bolvar_wine");
+    event.create("kubejs:incomplete_cherry_wine").texture("kubejs:item/cherry_wine");
+    event.create("kubejs:incomplete_jellie_wine").texture("kubejs:item/jellie_wine");
+    event.create("kubejs:incomplete_clark_wine").texture("kubejs:item/clark_wine");
+    event.create("kubejs:incomplete_mellohi_wine").texture("kubejs:item/mellohi_wine");
+    event.create("kubejs:incomplete_solaris_wine").texture("kubejs:item/solaris_wine");
+    event.create("kubejs:incomplete_aegis_wine").texture("kubejs:item/aegis_wine");
+    event.create("kubejs:incomplete_apple_wine").texture("kubejs:item/apple_wine");
+    event.create("kubejs:incomplete_apple_cider").texture("kubejs:item/apple_cider");
+    event.create("kubejs:incomplete_kelp_cider").texture("kubejs:item/kelp_cider");
     event
         .create("createastral:incomplete_blaze_head", "create:sequenced_assembly")
         .displayName("Incomplete Blaze Head");

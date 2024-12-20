@@ -1,6 +1,7 @@
 //Block Drop Fixes
 onEvent("block.loot_tables", (event) => {
     [
+        ["yttr:centrifuge"],
         ["yttr:yttrium_block"],
         ["yttr:power_meter"],
         ["yttr:chute"],
