@@ -1,15 +1,15 @@
 type = fancymenu_layout
 
 layout-meta {
-  identifier = modpack_changelog_2.1.1
+  identifier = modpack_changelog_2.1.3
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1729099649755
+  last_edited_time = 1734693446105
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:e5afe04d-5056-4b5b-a1ba-2efcede5bad1-1729099407674] = [groups:][instances:]
+  [loading_requirement_container_meta:d26f21a3-da14-4313-9b4f-8268f135d56d-1734693442648] = [groups:][instances:]
 }
 
 customization {
@@ -105,7 +105,7 @@ element {
 
 element {
   interactable = true
-  source = - **General quest book fixes, amending chapters appearing too early, unfinishable / legacy quests, missing item rewards.** %n%%n%- Stone Growth Chamber: Fixed behaviour on servers (weren't generating). Changed location of machine block in the structure & no longer uses dimension conditions, instead changing the block produced based on the type of smooth stone you build the machine out of (Re-visit ch2 quest for new explanation). Legacy recipe exists for any previously built stone chambers to still function and generate andesite anywhere.%n%- Pull Request: Orbit dimension fixes, no longer fall out of overworld orbit into the end, space station doesn't void terrain nearby.%n%- Pull Request: Seitan recipe fix.%n%- Pull Request: Tech Reborn Fluid name fix.%n%- Pull Request: Buff blaze cake recipe to use less hellfire / Tech Reborn fuels re-buff PR.%n%- Andesite now gets crushed into cobble, no more conflicting tin nugget recipe.%n%- Milling for' 200%' results recipes now properly show as 100%%n%- CreateDeco zinc sheets (no uses) are no longer obtainable.%n%- Merge andesite alloy block from Create and KubeJs.%n%- Slime log melting.%n%- Pull Request: Astral Generators PR, recipes added, no quests yet.%n%- Calcite/dripstone new recipe options + mill into higher yield of bonemeal.%n%- New dye automation routes.%n%- Screw Breeches are now wrenchable without breaking them, could not previously be mined in survival w/o silk touch.%n%- Restore methods of getting resources from soul sand/soil.%n%- Misc tweaks to some Tech Reborn fluids to not use ingot amounts (e.g. 111mb --> 100mb) , structure nbt, radio jukebox recipe removal, ink sac recipe buff.%n%- Fragile sheet blocks are now wrenchable.%n%- Fix for shimmer amplifier using the impossible fluid amounts.
+  source = - **Quest book is now fully implements localisation keys for translators thanks to the efforts from the l18n modpack pull request on GitHub.** %n%%n%Create: Copycats updated to 2.1.4, which includes copycats for components such as cogwheels and fluid pipes!%n%- XPcrystals updated to 1.0.5 (QoL), fixes for xp lake spawning.%n%- Various ch6 world gen tweaks, monazite spawning.%n%- Moon Debris now has a portal and ore geodes.%n%- Blazing blood automation path%n%- Quest book states bottomless lava tanks don't exist but they did, config adjusted so newly generated worlds will actually reflect that. If enabling bottomless fluids in create config yourself, new fluids can be bottomless such as chocolate, blood, milk and honey to reflect them being useful in many automation recipes.%n%- Fix for some default included schematics showing the wrong multiblocks.%n%- Stone growth QoL (Block tags in structure, cobblestone variant using stone bricks)%n%- Remove conflicting netherrack crushing recipes%n%- Added missing recipe for calorite tank%n%- General fixes for item names that displayed as internal names.%n%- Quantum tanks re-buffed to Tier 6 Upgrade levels (virtually infinite).%n%- Misc. Lang file tweaks and quest book discrepancy fixes.%n%- Copper shovel can now be used in recipes that look for shovel tags (farmers delight)%n%%n%- Pull Request: Added StarEI -- an REI Addon for astral's Custom Machinery recipes - A Pepper%n%- Pull Request: Remove Venus and Glacio in proxima centuri from the planet menu - CubeBotFan%n%- Pull Request: Block tags in stone growth chamber multiblock and distillery blaze burners are less strict with fluid burners - CubeBotFan%n%- Pull Request:  Added new food items, Bulba's Tea, Dipped Potato. Adjusted Shimmered Apple and Seared potato recipes. Adjust some food stats and effects. - MikoTheBoi%n%- Pull Request:  Metal Alloying fixes -> Create does allow for regular heated Crafting recipes to be done when Superheated. Distinguished Superheated / Heated alloying by using molten metals in heated and solid metals with superheated. -GreenOxygen%n%- Misc. Pull Requests: Vinery seeds from grapes, new kelpfarm recipes, gold dupe fix, eggs without chickens, buff some 2.1.1 recipes to make them more appealing -GreenOxygen%n%- Pull Request:  Nerf steam turbine. 168k E --> 15k E - DefinedEntity%n%- Pull Request: Added Defined's Blocks mod - DefinedEntity
   source_mode = direct
   shadow = true
   scale = 1.0
