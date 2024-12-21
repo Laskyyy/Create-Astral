@@ -268,9 +268,11 @@ onEvent("item.registry", (event) => {
     event.create("kubejs:incomplete_apple_wine").texture("kubejs:item/apple_wine");
     event.create("kubejs:incomplete_apple_cider").texture("kubejs:item/apple_cider");
     event.create("kubejs:incomplete_kelp_cider").texture("kubejs:item/kelp_cider");
-    event
-        .create("createastral:incomplete_blaze_head", "create:sequenced_assembly")
-        .displayName("Incomplete Blaze Head");
+    //event
+    //    .create("createastral:incomplete_blaze_head", "create:sequenced_assembly")
+    //    .displayName("Incomplete Blaze Head");
+	
+    event.create("createastral:incomplete_blaze_head", "create:sequenced_assembly").displayName("Golden Coin");
     event
         .create("createastral:incomplete_transitional_electronic_circuit", "create:sequenced_assembly")
         .displayName("Incomplete Electronic Circuit");

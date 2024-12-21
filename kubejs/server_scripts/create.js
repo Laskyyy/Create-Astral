@@ -919,7 +919,7 @@ function sequencedAssemblyRecipes(event) {
                     ),
                 ]
             )
-            .transitionalItem("create:copper_casing")
+            .transitionalItem("createastral:incomplete_brass_casing")
             .loops(3);
 
         event.recipes
@@ -945,7 +945,7 @@ function sequencedAssemblyRecipes(event) {
                     ]),
                 ]
             )
-            .transitionalItem("techreborn:basic_machine_frame")
+            .transitionalItem("createastral:incomplete_advanced_machine_frame")
             .loops(1);
 
         event.recipes
@@ -971,7 +971,7 @@ function sequencedAssemblyRecipes(event) {
                     ]),
                 ]
             )
-            .transitionalItem("techreborn:advanced_machine_frame")
+            .transitionalItem("createastral:incomplete_industrial_machine_frame")
             .loops(1);
 
         let transitional_lapis_sheet = "createastral:transitional_lapis_sheet";
@@ -1647,7 +1647,7 @@ function sequencedAssemblyRecipes(event) {
             event.recipes.createDeploying("phonos:redstone_chip", ["phonos:redstone_chip", "techreborn:electrum_nugget"]),
             event.recipes.createPressing("phonos:redstone_chip", "phonos:redstone_chip"),
         ])
-        .transitionalItem("phonos:redstone_chip")
+        .transitionalItem("createastral:incomplete_navigation_mechanism")
         .loops(30);
 
     event.recipes
@@ -1678,7 +1678,7 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem("minecraft:ender_pearl")
         .loops(3);
 
-    const inc_redstone_chip = "create:electron_tube";
+    const inc_redstone_chip = "createastral:incomplete_redstone_chip";
     event.recipes
         .createSequencedAssembly(
             [
@@ -1741,7 +1741,7 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem("minecraft:black_dye")
         .loops(2);
 
-    const inc_dash_panel = "create:iron_sheet";
+    const inc_dash_panel = "createastral:incomplete_dash_panel";
     //Dash panel
     event.recipes
         .createSequencedAssembly(["automobility:dash_panel"], "create:iron_sheet", [
@@ -1753,7 +1753,7 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem(inc_dash_panel)
         .loops(3);
 
-    const inc_refining_agent = "ae2:fluix_dust";
+    const inc_refining_agent = "createastral:incomplete_refining_agent";
     event.recipes
         .createSequencedAssembly(["createastral:refining_agent"], "ae2:fluix_dust", [
             event.recipes.createFilling(inc_refining_agent, [
@@ -1769,7 +1769,7 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem(inc_refining_agent)
         .loops(3);
 
-    const inc_separation_agent = "createastral:incomplete_separation_agent";
+/*     const inc_separation_agent = "createastral:incomplete_separation_agent";
     event.recipes
         .createSequencedAssembly(["minecraft:paper"], "createastral:separation_agent", [
             event.recipes.createDeploying(inc_separation_agent, [inc_separation_agent, "techreborn:charcoal_dust"]),
@@ -1777,7 +1777,7 @@ function sequencedAssemblyRecipes(event) {
             event.recipes.createDeploying(inc_separation_agent, [inc_separation_agent, "techreborn:sulfur_dust"]),
         ])
         .transitionalItem(inc_separation_agent)
-        .loops(3);
+        .loops(3); */
 }
 
 function fillingRecipes(event) {
