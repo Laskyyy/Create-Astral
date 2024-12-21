@@ -352,7 +352,8 @@ onEvent("recipes", (event) => {
         { output: "ae2:controller", type: "crafting_shaped" },
 
         // Tconstruct
-
+        {output: "tconstruct:gold_bars"},
+        {input: "tconstruct:gold_bars", output: "tconstruct:molten_gold"},
         { mod: "tconstruct", output: "minecraft:granite" },
         {
             type: "tconstruct:casting_basin",
