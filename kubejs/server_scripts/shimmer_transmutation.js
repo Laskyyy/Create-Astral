@@ -1,4 +1,4 @@
-/*onEvent('recipes', event => {
+onEvent('recipes', event => {
   event.custom({
     type: "astraladditions:shimmer_transmute",
     input: {
@@ -112,4 +112,4 @@
     ]
   })
   
-})*/
+})
