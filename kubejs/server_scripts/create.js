@@ -2036,6 +2036,18 @@ function mixingRecipes(event) {
     [
 		{
             output: [
+				"create:tree_fertilizer"
+			],
+            input: [
+				"#minecraft:saplings",
+				"#c:coral_fans",
+				"minecraft:bone_meal"
+			],
+            heat: "",
+            time: 180,
+        },
+		{
+            output: [
 				{
 					fluid: "kubejs:shimmer",
 					amount: BUCKET/9,
@@ -4356,6 +4368,14 @@ function compactingRecipes(event) {
             inputs: [
 				"4x createastral:snowy_marimo",
 				"minecraft:seagrass"
+			],
+        },
+		{
+            output: "farmersdelight:organic_compost",
+            inputs: [
+				"minecraft:coarse_dirt",
+				"create:tree_fertilizer",
+				"createastral:pure_biomatter"
 			],
         },
 		{
