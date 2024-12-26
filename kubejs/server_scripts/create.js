@@ -843,6 +843,59 @@ function sequencedAssemblyRecipes(event) {
             )
             .transitionalItem("ad_astra:mercury_stone")
             .loops(5);
+			
+		event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "createastral:aurorite_block", // output
+                ],
+                "ad_astra:polished_permafrost",
+                [
+                    // input
+                    event.recipes.createDeploying("ad_astra:polished_permafrost", [
+                        "ad_astra:ice_shard",
+                        "ad_astra:ice_shard",
+                    ]),
+                    event.recipes.createDeploying("ad_astra:polished_permafrost", [
+                        "ad_astra:ice_shard",
+                        "ad_astra:ice_shard",
+                    ]),
+                    event.recipes.createFilling("ad_astra:polished_permafrost", [
+                        "ad_astra:polished_permafrost",
+                        { fluid: "kubejs:aurorite", amount: BUCKET / 2 },
+                    ]),
+                    event.recipes.createPressing("ad_astra:polished_permafrost", "ad_astra:polished_permafrost"),
+                ]
+            )
+            .transitionalItem("ad_astra:polished_permafrost")
+			.loops(1);
+			
+		event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "estrogen:estrogen_patches", // output
+                ],
+                "minecraft:paper",
+                [
+                    // input
+                    event.recipes.createFilling("create:sand_paper", [
+                        "create:sand_paper",
+                        { fluid: "tconstruct:molten_queens_slime", amount: BUCKET },
+                    ]),
+                    event.recipes.createFilling("create:sand_paper", [
+                        "create:sand_paper",
+                        { fluid: "estrogen:liquid_estrogen", amount: BUCKET },
+                    ]),
+                    event.recipes.createDeploying("create:sand_paper", [
+                        "blahaj:blue_shark",
+                        "blahaj:blue_shark",
+                    ]),
+                ]
+            )
+            .transitionalItem("ad_astra:polished_permafrost")
+			.loops(1);
 
         event.recipes
             .createSequencedAssembly(
