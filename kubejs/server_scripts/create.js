@@ -543,6 +543,35 @@ function sequencedAssemblyRecipes(event) {
         ])
         .transitionalItem("cookingforblockheads:milk_jar")
         .loops(1);
+	
+	event.recipes
+        .createSequencedAssembly(Item.of("minecraft:sea_lantern"), "minecraft:prismarine", [
+			event.recipes.createDeploying("minecraft:prismarine", [
+                "minecraft:prismarine",
+                ["minecraft:prismarine_crystals"],
+            ])
+        ])
+        .transitionalItem("chipped:sea_lantern_2")
+        .loops(5);
+	
+	event.recipes
+        .createSequencedAssembly(Item.of("yttr:lamp"), "minecraft:redstone_torch", [
+			event.recipes.createDeploying("minecraft:redstone_torch", [
+                "minecraft:redstone_torch",
+                ["minecraft:iron_bars"],
+            ]),
+            event.recipes.createDeploying("minecraft:redstone_torch", [
+                "minecraft:redstone_torch",
+                ["create:framed_glass"],
+            ]),
+            event.recipes.createDeploying("minecraft:redstone_torch", [
+                "minecraft:redstone_torch",
+                ["minecraft:iron_bars"],
+            ])
+        ])
+        .transitionalItem("chipped:redstone_lamp_1")
+        .loops(1);
+		
 	event.recipes
         .createSequencedAssembly(Item.of("createastral:horse"), "minecraft:leather_horse_armor", [
             event.recipes.createDeploying("minecraft:leather_horse_armor", [
@@ -2061,6 +2090,11 @@ function fillingRecipes(event) {
 
 function deployingRecipes(event) {
     [
+		{
+            output: "minecraft:redstone_torch",
+            basin_input: "minecraft:torch",
+            deployer_input: "minecraft:redstone",
+        },
 		{
             output: "dbe:vanta_black",
             basin_input: "minecraft:stone",

@@ -1501,7 +1501,7 @@ onEvent("recipes", (event) => {
 	event.shaped("4x yttr:lamp", ["ABA", "BCB", "ABA"], {
         A: "minecraft:iron_ingot",
         B: "minecraft:glass_pane",
-        C: "minecraft:redstone_torch"
+        C: "minecraft:redstone_lamp"
     });
 
 
