@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "yttr:delicace",
+		  "weight": 99
+        },
+		{
+          "type": "minecraft:item",
+          "name": "astralsignals:microphysical_probe",
+		  "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:ender_slime_crystal",
+          "weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:looting_enchant",
+							"count": {
+								"min": 2.0,
+								"max": 4.0
+							},
+							"limit": 1
+						}
+					]
+        },
+				{
+          "type": "minecraft:item",
+          "name": "minecraft:ender_pearl",
+          "weight": 1,
+					"functions": [
+						{
+							"function": "minecraft:looting_enchant",
+							"count": {
+								"min": 2.0,
+								"max": 3.0
+							},
+							"limit": 1
+						}
+					]
+        }
+      ]
+    }
+  ]
+}

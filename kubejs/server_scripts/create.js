@@ -526,7 +526,7 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem("tconstruct:large_ender_slime_crystal_bud")
         .loops(3);
 
-		event.recipes
+	event.recipes
         .createSequencedAssembly(Item.of("cookingforblockheads:cow_jar"), "cookingforblockheads:milk_jar", [
             event.recipes.createDeploying("cookingforblockheads:milk_jar", [
                 "cookingforblockheads:milk_jar",
@@ -542,6 +542,23 @@ function sequencedAssemblyRecipes(event) {
             ]),
         ])
         .transitionalItem("cookingforblockheads:milk_jar")
+        .loops(1);
+	event.recipes
+        .createSequencedAssembly(Item.of("createastral:horse"), "minecraft:leather_horse_armor", [
+            event.recipes.createDeploying("minecraft:leather_horse_armor", [
+                "minecraft:leather_horse_armor",
+                ["minecraft:apple"],
+            ]),
+            event.recipes.createDeploying("minecraft:leather_horse_armor", [
+                "minecraft:leather_horse_armor",
+                ["minecraft:hay_block"],
+            ]),
+            event.recipes.createFilling("minecraft:leather_horse_armor", [
+                "minecraft:leather_horse_armor",
+                { fluid: "tconstruct:blood", amount: 100 * mB },
+            ]),
+        ])
+        .transitionalItem("minecraft:leather_horse_armor")
         .loops(1);
 
     event.recipes
@@ -2320,6 +2337,18 @@ function mixingRecipes(event) {
 				"cookingforblockheads:cow_jar"
 			],
             input: ["cookingforblockheads:cow_jar"],
+            heat: "",
+            time: 60,
+        },
+		{
+            output: [
+				{
+					fluid: "estrogen:horse_urine",
+					amount: BUCKET/2,
+				},
+				"createastral:horse"
+			],
+            input: ["createastral:horse"],
             heat: "",
             time: 60,
         },

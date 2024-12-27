@@ -45,6 +45,10 @@ onEvent("item.registry", (event) => {
     event.create("createastral:fragile_rocket_fin");
     event.create("createastral:broken_fragile_rocket_fin");
     event.create("createastral:gold_casted_rocket_fin");
+    event.create("createastral:horse")
+		.food((food) => {
+            food.hunger(0).saturation(0).alwaysEdible();
+        });
     event.create("createastral:marimo")
 		.food((food) => {
             food.hunger(1).saturation(0).alwaysEdible();
