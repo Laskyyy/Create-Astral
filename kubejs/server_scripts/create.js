@@ -47,8 +47,8 @@ function millingRecipes(event) {
         ["minecraft:twisting_vines", "minecraft:blue_dye", 1],
         ["minecraft:weeping_vines", "minecraft:red_dye", 1],
         ["minecraft:sweet_berries", "minecraft:red_dye", 1],
-        ["vinery:red_grape", "minecraft:purple_dye", 1],
-        ["vinery:white_grape", "minecraft:lime_dye", 1],
+        ["vinery:red_grape", "minecraft:purple_dye", 0.5],
+        ["vinery:white_grape", "minecraft:lime_dye", 0.5],
         ["minecraft:melon_slice", "minecraft:red_dye", 0.5],
         ["minecraft:snow_block", "2x minecraft:snowball", 1],
         ["createastral:crushed_raw_gadolinite", "yttr:yttrium_dust", 1],
@@ -2138,6 +2138,23 @@ function mixingRecipes(event) {
     // Heat: "" = no heat, "heated", or "superheated"
     // Time: Mixing time in ticks
     [
+		{
+            output: [
+				{
+					fluid: "estrogen:molten_amethyst",
+					amount: INGOT,
+				}
+			],
+            input: [
+				{
+					fluid: "tconstruct:molten_amethyst",
+					amount: BUCKET,
+				},
+				"astraladditions:bulba_root"
+			],
+            heat: "",
+            time: 210,
+        },
 		{
             output: [
 				"create:tree_fertilizer"
@@ -4465,6 +4482,14 @@ function farmersDelightIntegration(event) {
 
 function compactingRecipes(event) {
     [
+		{
+            output: ["minecraft:end_stone"],
+            inputs: [
+				"yttr:yttrium_dust",
+				"3x techreborn:dark_ashes_dust",
+				{ fluid: "tconstruct:molten_ender", amount: 125 * mB }
+			],
+        },
 		{
             output: ["ae2:fluix_pearl"],
             inputs: [
