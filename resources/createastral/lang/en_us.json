@@ -407,7 +407,6 @@
     "block.doodads.asphalt_slab": "Asphalt Slab",
     "block.doodads.asphalt_stair": "Asphalt Stair",
     "block.yttr.polished_scorched_obsidian_holster_alive": "Polished Scorched Obsidian Holster Alive",
-    "block.estrogen.centrifuge": "Fluid Centrifuge",
 
     "fluid.kubejs.molten_calorite": "Calorite",
     "fluid.kubejs.molten_ostrum": "Ostrum",
@@ -415,7 +414,6 @@
     "fluid.kubejs.molten_yttrium": "Yttrium",
     "fluid.kubejs.molten_shadowsteel": "Shadow Fluid",
     "fluid.kubejs.molten_radiance": "Radiant Residue",
-    "fluid.estrogen.molten_amethyst": "Shimmery Compound",
 
     "fluid.kubejs.aurorite": "Aurorite",
     "fluid.kubejs.metabolic_broth": "Metabolic Broth",
@@ -465,7 +463,6 @@
     "fluid.kubejs.blaze_milk_stout_fluid": "Blaze Milk Stout",
     "fluid.kubejs.blaze_stout_fluid": "Blaze Stout",
     "fluid.kubejs.miner_pale_ale_fluid": "Miner Pale Ale",
-    "fluid.yttr.core_lava": "Core Lava",
 
     "comment_4": "vanilla",
     "logging_tip": "Please Read The Quest Book (Hover Over Me!)",
@@ -2937,7 +2934,7 @@
     "ftbquests.reward_tables.chapter_4.title": "Loot Crate: Chapter 4",
     "ftbquests.reward_tables.chapter_5.title": "Loot Crate: Chapter 5-6",
 
-		"category.starei.channeling_transformer": "Channeling",
+	"category.starei.channeling_transformer": "Channeling",
     "category.starei.distillery": "Distilling",
     "category.starei.electrolyzer": "Electrolyzing",
     "category.starei.gas_mixer": "Gas Mixing",

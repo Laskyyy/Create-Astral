@@ -3,14 +3,14 @@
   "ingredients": [
     {
       "amount": 81,
-      "fluid": "techreborn:oil",
+      "fluid": "minecraft:lava",
       "nbt": {}
     }
   ],
   "results": [
     {
       "amount": 81,
-      "fluid": "techreborn:sulfur"
+      "fluid": "yttr:core_lava"
     }
   ]
 }
