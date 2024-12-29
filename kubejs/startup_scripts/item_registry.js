@@ -131,7 +131,7 @@ onEvent("item.registry", (event) => {
         .create("astralfoods:shimmered_apple")
         .displayName("Shimmered Apple")
         .food((food) => {
-            food.hunger(7).saturation(1.5).effect("instant_health", 60, 1, 1);
+            food.hunger(7).saturation(1.4).effect("regeneration", 60, 1, 1);
         });
 
     event
