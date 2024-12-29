@@ -1,13 +1,13 @@
 name = "Estrogen Patches"
-filename = "estrogenpatches-1.0.0.jar"
+filename = "estrogenpatches-1.0.1.jar"
 side = "both"
 
 [download]
 mode = "metadata:curseforge"
 hash-format = "sha1"
-hash = "5153c19dc41d622abbdebf184d09965c6568e794"
+hash = "7a423282eff2bcefe8f740be7b000910c2350d6d"
 
 [update]
 [update.curseforge]
-file-id = 6012086
+file-id = 6033454
 project-id = 1163595
