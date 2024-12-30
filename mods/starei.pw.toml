@@ -1,0 +1,13 @@
+name = "StarEI"
+filename = "starei-1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f5373bce651833a8491fba0b753098bf00549323"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6006211
+project-id = 1122402

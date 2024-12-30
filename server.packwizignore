@@ -7,6 +7,5 @@ fancymenustuff
 config/**/*-client.toml
 configureddefaults
 packwiz-installer.jar
-server.packwizignore
 
 kubejs/client_scripts

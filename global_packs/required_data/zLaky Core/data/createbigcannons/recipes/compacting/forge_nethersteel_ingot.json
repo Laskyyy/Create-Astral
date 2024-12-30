@@ -2,9 +2,9 @@
   "type": "create:compacting",
   "ingredients": [
     {
-      "fluid": "createbigcannons:molten_ostrum",
+      "fluid": "kubejs:molten_ostrum",
       "nbt": {},
-      "amount": 7290
+      "amount": 8100
     }
   ],
   "results": [

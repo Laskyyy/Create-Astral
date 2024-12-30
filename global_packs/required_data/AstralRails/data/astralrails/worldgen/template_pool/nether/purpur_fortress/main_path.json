@@ -1,0 +1,69 @@
+{
+  "name": "astralrails:nether/purpur_fortress/main_path",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 2,
+      "element": {
+        "location": "astralrails:nether/purpur_fortress/line",
+        "processors": [],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "astralrails:nether/purpur_fortress/line_2",
+        "processors": [],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "astralrails:nether/purpur_fortress/line_3",
+        "processors": [],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{
+      "weight": 1,
+      "element": {
+        "location": "astralrails:nether/purpur_fortress/l_corner",
+        "processors": [],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{
+      "weight": 1,
+      "element": {
+        "location": "astralrails:nether/purpur_fortress/l_corner_2",
+        "processors": [],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{
+      "weight": 1,
+      "element": {
+        "location": "astralrails:nether/purpur_fortress/stairs",
+        "processors": [],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+	{
+      "weight": 1,
+      "element": {
+        "location": "astralrails:nether/purpur_fortress/t_junction",
+        "processors": [],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

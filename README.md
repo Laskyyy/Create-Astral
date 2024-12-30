@@ -12,6 +12,24 @@ Does not include mods, or most configs, only pack specific files which are used 
 
 ## Contributing
 
+For developers: If you just want to edit the text, do it in this [file](resources/createastral/lang/en_us.json) (Ponders are in this [file](kubejs/assets/ponderjs_generated/lang/en_us.json)), editing the text in other files will NOT work! If you want to add items, blocks, fluids, tooltips and everything else that contains text, please use the translation key and the [lang file](resources/createastral/lang/en_us.json).
+
+Here's an [example](https://github.com/Laskyyy/Create-Astral/pull/389) of changing the added tooltip and some other text to a translation key. For adding a new item/block/fluid, the naming of the key in the language file needs to follow these rules.
+
+To name keys in the [lang file](resources/createastral/lang/en_us.json) correctly, you need use the **prefix** (`item/block/fluid`) + the **namespace** of mod (such as `kubejs`,`create_astral`) + the **id** of item/block/fluid. For vaules, it's the **displayed name** instead of translation keys. There is a example.
+
+```json
+{
+    "item.createastral.crushed_raw_desh": "Crushed Raw Desh",
+    "block.kubejs.fragile_sheet_block": "Fragile Sheet Block",
+    "fluid.kubejs.molten_calorite": "Calorite",
+}
+```
+
+For other texts in javascript, you should use [Text Components](https://wiki.latvian.dev/books/kubejs-legacy/page/components-kubejs-and-you). There is a [example](kubejs/startup_scripts/item_tooltip.js#L402C2-L407C7).
+
+---
+
 This repository uses [packwiz](https://github.com/packwiz/packwiz), which allows a lightweight repository such as this to be built into a full modpack by downloading mods from Modrinth or CurseForge.
 
 The following instructions are a simplified version of the [packwiz installer tutorial](https://packwiz.infra.link/tutorials/installing/packwiz-installer/), so if you run into any issues, you should check there.

@@ -1,6 +1,6 @@
 {
 	"type": "yttr:centrifuging",
-	"time": 400,
+	"time": 200,
 	"ingredient": {
 		"item": "minecraft:end_stone",
 		"count": 16,
@@ -8,7 +8,7 @@
 	},
 	"results": [
 		{
-			"item": "tconstruct:ender_slime_ball",
+			"item": "ae2:ender_dust",
 			"count": 1
 		},
 		{

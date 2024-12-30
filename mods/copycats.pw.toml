@@ -1,13 +1,12 @@
-name = "Create: Copycats+"
-filename = "Copycats-fabric.1.18.2-1.2.5.jar"
-side = "both"
+filename = 'copycats-2.1.4+mc.1.18.2-fabric.jar'
+name = 'Create: Copycats+'
+side = 'both'
 
 [download]
-mode = "metadata:curseforge"
-hash-format = "sha1"
-hash = "94c940dd3ee5757d3e9f0bd24905b6e6f60ca11f"
+hash = '0634ac01f47ae7fc324b4808a583ccf1c2f6d021'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
 
-[update]
 [update.curseforge]
-file-id = 5214894
+file-id = 5725823
 project-id = 968398

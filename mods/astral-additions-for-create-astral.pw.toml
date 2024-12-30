@@ -3,10 +3,10 @@ name = 'Astral Additions'
 side = 'both'
 
 [download]
-hash = 'ccd4fe47c42a3e595a307eff95b1f21fa9a2f055'
+hash = 'e69c8105ea9a8c7dbfdbe994bc856b99579ef88d'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
 
 [update.curseforge]
-file-id = 5809792
+file-id = 6012040
 project-id = 818843

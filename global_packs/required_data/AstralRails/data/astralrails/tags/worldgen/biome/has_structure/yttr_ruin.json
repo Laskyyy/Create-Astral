@@ -1,7 +1,10 @@
 {
   "replace": false,
   "values": [
-    "#minecraft:is_nether",
-		"minecraft:small_end_islands"
+    "minecraft:nether_wastes",
+    "minecraft:soul_sand_valley",
+    "minecraft:crimson_forest",
+    "minecraft:warped_forest",
+	"minecraft:small_end_islands"
   ]
 }

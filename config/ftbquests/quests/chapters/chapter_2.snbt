@@ -1847,6 +1847,8 @@
 				"{ftbquests.chapter.chapter_2.quests52.description0}"
 				""
 				"{ftbquests.chapter.chapter_2.quests52.description2}"
+				""
+				"{ftbquests.chapter.chapter_2.quests52.description4}"
 			]
 			dependencies: ["6499CD689863283D"]
 			size: 1.5d

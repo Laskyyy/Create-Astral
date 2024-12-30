@@ -154,6 +154,7 @@ onEvent("recipes", (event) => {
             output: "techreborn:nak_coolant_cell_60k",
         },
         { id: "techreborn:crafting_table/paper" },
+        {output: "techreborn:block_placer"},
         //Create
         { output: "create:track" },
         { output: "create:blaze_cake" },
@@ -182,6 +183,11 @@ onEvent("recipes", (event) => {
             output: "create:andesite_alloy",
             input: "minecraft:andesite",
         },
+        {
+            output: "create:experience_nugget",
+            input: "create:experience_block",
+        },
+
 
         { type: "create:milling", output: "minecraft:gunpowder" },
         { type: "create:milling", output: "minecraft:flint" },
@@ -468,8 +474,11 @@ onEvent("recipes", (event) => {
 
         { output: "buildinggadgets:gadget_building" },
         { output: "buildinggadgets:gadget_copy_paste" },
+        { output: "buildinggadgets:gadget_destruction" },
+        { output: "buildinggadgets:gadget_exchanging" },
 
         // Yttr
+        { type: "yttr:centrifuging", input: "minecraft:coal"},
         { output: "yttr:chute" },
         { output: "yttr:rafter" },
         { output: "yttr:centrifuge" },

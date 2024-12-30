@@ -457,14 +457,14 @@ function lizardCH3Changes(event) {
     });
 
     // Changed blaze burner recipe.
-    event.shaped("create:empty_blaze_burner", ["AAA", "A A", "BCB"], {
+    event.shaped("create:empty_blaze_burner", ["A A", "A A", "BCB"], {
         A: "createaddition:iron_rod",
         B: "create:iron_sheet",
         C: "ad_astra:moon_stone",
     });
 
     // Gag recipe
-    event.shaped("create:blaze_burner", ["AAA", "ADA", "BCB"], {
+    event.shaped("create:blaze_burner", ["A A", "ADA", "BCB"], {
         A: "createaddition:iron_rod",
         B: "create:iron_sheet",
         C: "ad_astra:moon_stone",
@@ -667,7 +667,7 @@ onEvent("recipes", (event) => {
     event.shapeless(Item.of("dbe:track_end"), ["create:track"]);
     event.shapeless("ad_astra:sky_stone", ["ae2:sky_stone_block"]);
     event.shapeless("2x techreborn:andesite_dust", ["minecraft:gravel"]);
-    event.shapeless("1x techreborn:andesite_dust", ["minecraft:cobblestone"]);
+    event.shapeless("1x techreborn:andesite_dust", ["minecraft:cobblestone"]).id("kubejs:andesite_dust_manual_only");
 
     // IRON TOOLS RECIPES / DIAMOND
 
@@ -714,6 +714,10 @@ onEvent("recipes", (event) => {
 
     event.shaped("minecraft:furnace", ["AAA", "A A", "SSS"], {
         S: "#c:raw_materials",
+        A: "minecraft:cobblestone",
+    });
+	event.shaped("minecraft:furnace", ["AAA", "A A", "SSS"], {
+        S: "#c:ingots",
         A: "minecraft:cobblestone",
     });
     event.shaped("minecraft:blast_furnace", ["AAA", "ASA", "BBB"], {
@@ -847,6 +851,14 @@ onEvent("recipes", (event) => {
         A: "techreborn:tin_plate",
         B: "techreborn:wood_plate",
     });
+	
+	event.shaped("2x ae2:wireless_booster", ["SCE", "III"], {
+        S: "ae2:fluix_dust",
+        C: "ae2:charged_certus_quartz_crystal",
+        E: "ae2:ender_dust",
+        I: "techreborn:silver_plate",
+    });
+
 
     event.shaped("minecraft:shulker_shell", ["BBB", "BAB", "BBB"], {
         A: "minecraft:nautilus_shell",
@@ -1199,6 +1211,8 @@ onEvent("recipes", (event) => {
 
     event.shapeless("3x createastral:synthetic_slime", ["2x #c:slimeballs", "2x techreborn:sponge_piece"]);
 
+    event.shapeless("1x createastral:moonset_stone", ["1x ad_astra:moon_stone", "1x astraladditions:moonset_crystal"]);
+
     event.shaped("createastral:synthetic_slime_block", ["SSS", "SSS", "SSS"], {
         S: "createastral:synthetic_slime",
     });
@@ -1353,6 +1367,30 @@ onEvent("recipes", (event) => {
         E: "techreborn:basic_machine_frame",
     });
 
+    event.shaped("techreborn:block_placer", ["SCS", "SDS", "SFS"], {
+        S: "create:sturdy_sheet",
+        C: "create:integrated_circuit",
+        D: "create:deployer",
+        F: "techreborn:basic_machine_frame",
+    });
+
+
+    event.shaped("techreborn:block_breaker", ["SCS", "SDS", "SFS"], {
+        S: "create:sturdy_sheet",
+        C: "create:integrated_circuit",
+        D: "create:mechanical_drill",
+        F: "techreborn:basic_machine_frame",
+    });
+
+
+    event.shaped("techreborn:player_detector", ["SCS", "TRT", "SFS"], {
+        S: "create:sturdy_sheet",
+        C: "create:integrated_circuit",
+        R: "create:redstone_link",
+        F: "techreborn:basic_machine_frame",
+        T: "minecraft:redstone_torch",
+    });
+
     event.shaped("techreborn:chemical_reactor", ["ABA", "CDC", "AEA"], {
         A: "create:sturdy_sheet",
         B: "create:mechanical_mixer",
@@ -1460,6 +1498,13 @@ onEvent("recipes", (event) => {
         B: "ad_astra:calorite_ingot",
         C: "techreborn:diamond_plate",
     });
+	event.shaped("4x yttr:lamp", ["ABA", "BCB", "ABA"], {
+        A: "minecraft:iron_ingot",
+        B: "minecraft:glass_pane",
+        C: "minecraft:redstone_lamp"
+    });
+
+
 
     /// Stuff Laky CBA updating to new format from experimental yet
 
