@@ -4203,13 +4203,13 @@
 		{
 			x: -13.5d
 			y: 3.5d
-			subtitle: "Centrifugin' it"
+			subtitle: "{ftbquests.chapter.chapter_3.quests77.subtitle}"
 			description: [
-				"The Fluid Centrifuge refines a liquid to create a new liquid."
+				"{ftbquests.chapter.chapter_3.quests77.description0}"
 				""
-				"&bHold W on the Fluid Centrifuge item to see how it works!&r Essentially, when spinning at 256 RPM, the Fluid Centrifuge takes an input fluid from a Fluid Tank underneath, and outputs a new liquid to a Fluid Tank on top."
+				"{ftbquests.chapter.chapter_3.quests77.description2}"
 				""
-				"&4The Fluid Centrifuge doesn't work very well with REI.&r To see its recipes, you must press U on it. Take note of all these recipes, as they come in handy at various points in progession!"
+				"{ftbquests.chapter.chapter_3.quests77.description4}"
 			]
 			dependencies: ["21DBCD51CC35B794"]
 			id: "0509FE90672247F4"
@@ -4222,13 +4222,14 @@
 		{
 			x: -12.0d
 			y: 3.0d
-			subtitle: "Hell yeah"
+			subtitle: "{ftbquests.chapter.chapter_3.quests78.subtitle}"
 			description: [
-				"The Fluid Centrifuge can be used to refine Horse Urine into Liquid Estrogen. &8(I swear this is scientifically accurate)"
+				"{ftbquests.chapter.chapter_3.quests78.description0}"
 				""
-				"Pop an Estrogen Pill and unleash your inner *&dgirl&r*. The ability to air-dash is granted! Bind the dash button to something comfortable in the Controls menu. I recommend a mouse button if you have one spare!"
+				"{ftbquests.chapter.chapter_3.quests78.description2}"
 			]
 			dependencies: ["0509FE90672247F4"]
+			min_required_tasks: 1
 			id: "31A29F203C2C500F"
 			tasks: [
 				{
@@ -4251,8 +4252,8 @@
 		{
 			x: -11.5d
 			y: 2.0d
-			subtitle: "Sticky!"
-			description: ["Mouth getting sore from eating all those pills? An Estrogen Patch consumes Estrogen Pills automatically from your inventory, and it increases the duration of the effect given! Woohoo!"]
+			subtitle: "{ftbquests.chapter.chapter_3.quests79.subtitle}"
+			description: ["{ftbquests.chapter.chapter_3.quests79.description0}"]
 			dependencies: ["31A29F203C2C500F"]
 			id: "12AB1CDAFC7FCE4F"
 			tasks: [{
