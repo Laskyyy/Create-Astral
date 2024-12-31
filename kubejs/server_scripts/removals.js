@@ -595,12 +595,7 @@ onEvent("recipes", (event) => {
 
     // Define the array of materials
     const materials = [
-        "techreborn:lead",
         "techreborn:bronze",
-        "techreborn:steel",
-        "techreborn:tin",
-        "techreborn:copper",
-        "techreborn:steel",
         "techreborn:silver",
     ];
 
@@ -616,6 +611,8 @@ onEvent("recipes", (event) => {
         event.remove({ output: material + "_hoe" });
         event.remove({ output: material + "_shovel" });
     }
+
+    materials.forEach(removeRecipes);
 
     const metal = [
         "tungstensteel",
