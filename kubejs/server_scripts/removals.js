@@ -663,8 +663,8 @@ onEvent("recipes", (event) => {
         "silicon",
     ];
 
-    plates.forEach((metal) => {
-        event.remove({ output: `techreborn:${metal}_plate` });
+    plates.forEach((plate) => {
+        event.remove({ output: `techreborn:${plate}_plate` });
     });
 
     const dusts = [
@@ -716,6 +716,11 @@ onEvent("recipes", (event) => {
         ["uvarovite", false],
         ["glowstone", true],
         ["redstone", true],
+        ["peridot", false],
+        ["red_garnet", false],
+        ["ruby", false],
+        ["sapphire", false],
+        ["yellow_garnet", false],
     ];
     dusts.forEach((dust) => {
         if (!dust[1]) {
