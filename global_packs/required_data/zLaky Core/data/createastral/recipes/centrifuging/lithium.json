@@ -2,7 +2,7 @@
   "type": "estrogen:centrifuging",
   "ingredients": [
     {
-      "amount": 81,
+      "amount": 243,
       "fluid": "techreborn:helium",
       "nbt": {}
     }

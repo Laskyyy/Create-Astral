@@ -11,6 +11,6 @@
             "amount": 8100
         }
     ],
-    "processingTime": 300,
+    "processingTime": 600,
     "heatRequirement": "heated"
 }

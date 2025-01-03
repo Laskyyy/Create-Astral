@@ -1876,7 +1876,7 @@ function sequencedAssemblyRecipes(event) {
             event.recipes.createDeploying(inc_separation_agent, [inc_separation_agent, "techreborn:sulfur_dust"]),
         ])
         .transitionalItem(inc_separation_agent)
-        .loops(3); */
+        .loops(3);
 }
 
 function fillingRecipes(event) {
@@ -1996,16 +1996,16 @@ function fillingRecipes(event) {
             amount: 250 * mB,
         },
         {
-            input: "minecraft:apple",
-            output: "astralfoods:shimmered_apple",
-            fluid: "kubejs:shimmer",
-            amount: BUCKET / 3,
-        },
-        {
             input: "astralfoods:seared_potato",
             output: "astralfoods:dipped_potato",
             fluid: "tconstruct:molten_gold",
             amount: INGOT,
+        },
+                {
+            input: "minecraft:cookie",
+            output: "astralfoods:ice_cream_sandwich",
+            fluid: "astralfoods:cream",
+            amount: 250 * mB,
         },
         {
             input: "minecraft:bowl",
@@ -3363,8 +3363,17 @@ function mixingRecipes(event) {
             input: ["astralfoods:astral_sauce", "2x astralfoods:quantum_bites", "farmersdelight:raw_pasta"],
             heat: "heated",
             time: 250,
-				},
-				{
+		},
+                {
+            output: ["astralfoods:chocolate_ice_cream"],
+            input: ["create:bar_of_chocolate", {
+				fluid: "astralfoods:cream",
+				amount: BUCKET/4,
+			}],
+            heat: "heated",
+            time: 100,
+		},
+		{
             output: "yttr:ruined_cobblestone",
             input: ["minecraft:cobblestone", "yttr:rubble", {
 				fluid: "tconstruct:magma",

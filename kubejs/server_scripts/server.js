@@ -253,6 +253,23 @@ function astralAdditionsFood(event) {
     });
 }
 
+onEvent("recipes", (event) => {
+    event.custom({
+        type: "astraladditions:shimmer_transmute",
+        input: {
+            item: "astralfoods:chocolate_ice_cream",
+            count: 1,
+        },
+
+        output: [
+            {
+                item: "astralfoods:ambrosia",
+                count: 1,
+            },
+        ],
+    });
+});
+
 // Includes some "ore alchemy" and other misc blocks like andeste alloy blocks
 function lizardMiscChanges(event) {
     // Implementing Andesite Alloy Block
@@ -298,7 +315,11 @@ function lizardMiscChanges(event) {
     });
 
     // Change the resin basin recipe to use an Item Drain so that it can be crafted during chapter 2
-    event.replaceInput({id:"techreborn:crafting_table/machine/resin_basin"}, "techreborn:drain", "create:item_drain")
+    event.replaceInput(
+        { id: "techreborn:crafting_table/machine/resin_basin" },
+        "techreborn:drain",
+        "create:item_drain"
+    );
 
     // Buffed catwalk output. Seriously! Its so resource heavy!
     const CATWALK_MATERIALS = [
@@ -667,7 +688,7 @@ onEvent("recipes", (event) => {
     event.shapeless(Item.of("dbe:track_end"), ["create:track"]);
     event.shapeless("ad_astra:sky_stone", ["ae2:sky_stone_block"]);
     event.shapeless("2x techreborn:andesite_dust", ["minecraft:gravel"]);
-    event.shapeless("1x techreborn:andesite_dust", ["minecraft:cobblestone"]).id("kubejs:andesite_dust_manual_only");
+    event.shapeless("1x techreborn:andesite_dust", ["minecraft:cobblestone"]);
 
     // IRON TOOLS RECIPES / DIAMOND
 
@@ -714,10 +735,6 @@ onEvent("recipes", (event) => {
 
     event.shaped("minecraft:furnace", ["AAA", "A A", "SSS"], {
         S: "#c:raw_materials",
-        A: "minecraft:cobblestone",
-    });
-	event.shaped("minecraft:furnace", ["AAA", "A A", "SSS"], {
-        S: "#c:ingots",
         A: "minecraft:cobblestone",
     });
     event.shaped("minecraft:blast_furnace", ["AAA", "ASA", "BBB"], {
@@ -851,14 +868,6 @@ onEvent("recipes", (event) => {
         A: "techreborn:tin_plate",
         B: "techreborn:wood_plate",
     });
-	
-	event.shaped("2x ae2:wireless_booster", ["SCE", "III"], {
-        S: "ae2:fluix_dust",
-        C: "ae2:charged_certus_quartz_crystal",
-        E: "ae2:ender_dust",
-        I: "techreborn:silver_plate",
-    });
-
 
     event.shaped("minecraft:shulker_shell", ["BBB", "BAB", "BBB"], {
         A: "minecraft:nautilus_shell",
@@ -1374,14 +1383,12 @@ onEvent("recipes", (event) => {
         F: "techreborn:basic_machine_frame",
     });
 
-
     event.shaped("techreborn:block_breaker", ["SCS", "SDS", "SFS"], {
         S: "create:sturdy_sheet",
         C: "create:integrated_circuit",
         D: "create:mechanical_drill",
         F: "techreborn:basic_machine_frame",
     });
-
 
     event.shaped("techreborn:player_detector", ["SCS", "TRT", "SFS"], {
         S: "create:sturdy_sheet",
@@ -1498,13 +1505,6 @@ onEvent("recipes", (event) => {
         B: "ad_astra:calorite_ingot",
         C: "techreborn:diamond_plate",
     });
-	event.shaped("4x yttr:lamp", ["ABA", "BCB", "ABA"], {
-        A: "minecraft:iron_ingot",
-        B: "minecraft:glass_pane",
-        C: "minecraft:redstone_lamp"
-    });
-
-
 
     /// Stuff Laky CBA updating to new format from experimental yet
 

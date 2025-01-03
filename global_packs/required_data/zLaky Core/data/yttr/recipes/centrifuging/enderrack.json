@@ -1,6 +1,6 @@
 {
 	"type": "yttr:centrifuging",
-	"time": 200,
+	"time": 400,
 	"ingredient": {
 		"item": "astraladditions:enderrack",
 		"count": 16,

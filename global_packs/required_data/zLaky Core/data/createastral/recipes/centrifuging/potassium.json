@@ -2,15 +2,15 @@
   "type": "estrogen:centrifuging",
   "ingredients": [
     {
-      "amount": 81,
-      "fluid": "tconstruct:molten_pig_iron",
+      "amount": 243,
+      "fluid": "techreborn:sodium",
       "nbt": {}
     }
   ],
   "results": [
     {
       "amount": 81,
-      "fluid": "tconstruct:blood"
+      "fluid": "techreborn:potassium"
     }
   ]
 }

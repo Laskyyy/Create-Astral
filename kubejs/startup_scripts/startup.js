@@ -111,16 +111,6 @@ onEvent("item.modification", (event) => {
     event.modify("techreborna:oil_bucket", (item) => {
         item.burnTime = 40000;
     });
-	
-	event.modify("estrogen:estrogen_pill", (item) => {
-		item.maxStackSize = 64;
-	});
-	event.modify("estrogen:crystal_estrogen_pill", (item) => {
-		item.maxStackSize = 64;
-	});
-	event.modify("estrogen:estrogen_patches", (item) => {
-		item.maxStackSize = 1;
-	});
 });
 
 ///// CUSTOM TOOL TIERS /////

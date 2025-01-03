@@ -1577,8 +1577,8 @@
 			]
 		}
 		{
-			x: -9.0d
-			y: 16.0d
+			x: -8.5d
+			y: 15.5d
 			subtitle: "{ftbquests.chapter.assorted_goals.quests44.subtitle}"
 			dependencies: ["52832D8DA239C017"]
 			optional: true
@@ -2124,6 +2124,183 @@
 					item: "drinkbeer:recipe_board_package"
 				}
 			]
+		}
+		{
+			icon: {
+				id: "farmersdelight:flint_knife"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -11.0d
+			y: 16.0d
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.assorted_goals.quests59.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests59.description0}"]
+			dependencies: ["576B4EA932FC2E16"]
+			id: "63780E00CD88F52F"
+			tasks: [{
+				id: "5D7B09F6DB50859C"
+				type: "checkmark"
+				title: "{ftbquests.chapter.assorted_goals.quests59.title}!"
+			}]
+			rewards: [{
+				id: "28986454F3CD4EC7"
+				type: "item"
+				item: {
+					id: "farmersdelight:iron_knife"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -13.0d
+			y: 17.0d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests63.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests59.description5}"]
+			hide_dependency_lines: true
+			dependencies: ["5D7B09F6DB50859C"]
+			id: "62659BC787D407E1"
+			tasks: [{
+				id: "7B0A7FEA40FC0133"
+				type: "item"
+				item: "astralfoods:quantum_pasta"
+			}]
+			rewards: [{
+				id: "50B685C77E086AF6"
+				type: "item"
+				item: "ae2:cell_component_16k"
+			}]
+		}
+		{
+			x: -11.0d
+			y: 18.0d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests65.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests59.description7}"]
+			hide_dependency_lines: true
+			dependencies: ["5D7B09F6DB50859C"]
+			id: "34EA48FB79E409D4"
+			tasks: [{
+				id: "415CBAE25BF4D0A5"
+				type: "item"
+				item: "astralfoods:seared_potato"
+			}]
+			rewards: [{
+				id: "7B4B6F584C9FA50F"
+				type: "item"
+				item: "tconstruct:seared_brick"
+				count: 2
+			}]
+		}
+		{
+			x: -11.0d
+			y: 17.0d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests61.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests59.description3}"]
+			hide_dependency_lines: true
+			dependencies: ["5D7B09F6DB50859C"]
+			id: "799319A86142407F"
+			tasks: [{
+				id: "6BC614231D8014BB"
+				type: "item"
+				item: "astralfoods:shimmered_apple"
+			}]
+			rewards: [{
+				id: "01379DCB86DBC9A9"
+				type: "item"
+				item: "tconstruct:ender_slime_crystal_cluster"
+			}]
+		}
+		{
+			x: -12.0d
+			y: 16.0d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests60.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests59.description2}"]
+			hide_dependency_lines: true
+			dependencies: ["5D7B09F6DB50859C"]
+			id: "6D509E586A16E23A"
+			tasks: [{
+				id: "7BBFC1D65BCC5B6C"
+				type: "item"
+				item: "astralfoods:compressed_onion"
+			}]
+			rewards: [{
+				id: "165408791E6FBE03"
+				type: "item"
+				item: "farmersdelight:onion"
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.assorted_goals.quests62.title}"
+			x: -12.0d
+			y: 17.0d
+			shape: "gear"
+			subtitle: "{ftbquests.chapter.assorted_goals.quests62.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests59.description4}"]
+			dependencies: [
+				"799319A86142407F"
+				"5DE5797033D9F50B"
+				"6D509E586A16E23A"
+				"62659BC787D407E1"
+			]
+			secret: true
+			id: "42B568D7D0C2C0E0"
+			tasks: [{
+				id: "20B60D9BC18EF308"
+				type: "item"
+				item: "astralfoods:food_amalgamation"
+			}]
+			rewards: [{
+				id: "7FFF3CD947CEBF08"
+				type: "item"
+				item: {
+					id: "farmersdelight:netherite_knife"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -12.0d
+			y: 18.0d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests66.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests59.description8}"]
+			dependencies: ["34EA48FB79E409D4"]
+			id: "5DE5797033D9F50B"
+			tasks: [{
+				id: "3769D9A62A831DA0"
+				type: "item"
+				item: "astralfoods:shimmered_rabbit_stew"
+			}]
+			rewards: [{
+				id: "7E0EF4CD988D47B4"
+				type: "item"
+				item: "minecraft:rabbit_foot"
+			}]
+		}
+		{
+			x: -10.0d
+			y: 18.0d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests64.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests59.description6}"]
+			dependencies: ["34EA48FB79E409D4"]
+			id: "7EBC3B5BFA6D8C6C"
+			tasks: [{
+				id: "2FAE23765B1ED7F2"
+				type: "item"
+				item: "astralfoods:dipped_potato"
+			}]
+			tasks: [{
+				id: "2FAE23765B1ED7F2"
+				type: "item"
+				item: "astralfoods:dipped_potato"
+			}]
 		}
 	]
 	quest_links: [ ]

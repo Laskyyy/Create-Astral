@@ -1,6 +1,6 @@
 {
 	"type": "yttr:centrifuging",
-	"time": 400,
+	"time": 1600,
 	"ingredient": {
 		"item": "minecraft:magma_cream",
 		"count": 8,
