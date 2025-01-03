@@ -20,6 +20,7 @@ onEvent("recipes", (event) => {
 function millingRecipes(event) {
     //[Input, Output, Chance]
     [
+        ["minecraft:rooted_dirt", "minecraft:dirt", 1],
         ["farmersdelight:straw", "minecraft:string", 1],
         ["minecraft:bamboo", "farmersdelight:straw", 0.2],
         ["ae2:certus_quartz_dust", "ae2:certus_crystal_seed", 1],
@@ -46,8 +47,8 @@ function millingRecipes(event) {
         ["minecraft:twisting_vines", "minecraft:blue_dye", 1],
         ["minecraft:weeping_vines", "minecraft:red_dye", 1],
         ["minecraft:sweet_berries", "minecraft:red_dye", 1],
-        ["vinery:red_grape", "minecraft:purple_dye", 1],
-        ["vinery:white_grape", "minecraft:lime_dye", 1],
+        ["vinery:red_grape", "minecraft:purple_dye", 0.5],
+        ["vinery:white_grape", "minecraft:lime_dye", 0.5],
         ["minecraft:melon_slice", "minecraft:red_dye", 0.5],
         ["minecraft:snow_block", "2x minecraft:snowball", 1],
         ["createastral:crushed_raw_gadolinite", "yttr:yttrium_dust", 1],
@@ -71,6 +72,28 @@ function crushingRecipes(event) {
     //      ["Item", Chance],
     //      ...
     [
+		{
+            input: "tconstruct:ender_slime_crystal_cluster",
+            outputs: [
+				["3x tconstruct:ender_slime_crystal", 1],
+				["1x tconstruct:ender_slime_crystal", 0.5],
+			],
+        },
+		{
+            input: "minecraft:packed_ice",
+            outputs: [
+				["2x ad_astra:ice_shard", 1],
+				["1x ad_astra:ice_shard", 0.5],
+			],
+        },
+		{
+            input: "minecraft:blue_ice",
+            outputs: [
+				["9x ad_astra:ice_shard", 1],
+				["2x ad_astra:ice_shard", 0.66],
+				["1x ad_astra:ice_shard", 0.33],
+			],
+        },
         {
             input: "minecraft:calcite",
             outputs: [["4x techreborn:calcite_dust", 1]],
@@ -155,7 +178,6 @@ function crushingRecipes(event) {
                 ["1x minecraft:horn_coral_fan", 0.25],
             ],
         },
-
         {
             input: "minecraft:cobbled_deepslate",
             outputs: [
@@ -446,12 +468,65 @@ function sequencedAssemblyRecipes(event) {
     diamondSequence(event);
     casingSequence(event);
     piglinSequence(event);
+    wineSequence(event);
 
     //Honestly just good luck in figuring this out its too complex to
     //document in an effective way
     const inc_sturdy_sheet = "create:unprocessed_obsidian_sheet";
 
 		event.recipes
+        .createSequencedAssembly(Item.of("minecraft:powder_snow_bucket"), "minecraft:bucket", [
+			event.recipes.createDeploying("minecraft:bucket", [
+                "minecraft:bucket",
+                ["createastral:snowy_marimo"],
+            ]),
+            event.recipes.createFilling("minecraft:bucket", [
+                "minecraft:bucket",
+                { fluid: "minecraft:water", amount: 250 * mB },
+            ]),
+        ])
+        .transitionalItem("minecraft:bucket")
+        .loops(2);
+		
+		event.recipes
+        .createSequencedAssembly(Item.of("tconstruct:medium_ender_slime_crystal_bud"), "tconstruct:small_ender_slime_crystal_bud", [
+            event.recipes.createFilling("tconstruct:small_ender_slime_crystal_bud", [
+                "tconstruct:small_ender_slime_crystal_bud",
+                { fluid: "tconstruct:ender_slime", amount: 250 * mB / 3 },
+            ]),
+        ])
+        .transitionalItem("tconstruct:small_ender_slime_crystal_bud")
+        .loops(3);
+				
+		event.recipes
+        .createSequencedAssembly(Item.of("tconstruct:large_ender_slime_crystal_bud"), "tconstruct:medium_ender_slime_crystal_bud", [
+            event.recipes.createDeploying("tconstruct:medium_ender_slime_crystal_bud", [
+                "tconstruct:medium_ender_slime_crystal_bud",
+                ["techreborn:basalt_dust"],
+            ]),
+						event.recipes.createFilling("tconstruct:medium_ender_slime_crystal_bud", [
+                "tconstruct:medium_ender_slime_crystal_bud",
+                { fluid: "tconstruct:ender_slime", amount: 250 * mB / 3 },
+            ]),
+        ])
+        .transitionalItem("tconstruct:medium_ender_slime_crystal_bud")
+        .loops(3);
+				
+		event.recipes
+        .createSequencedAssembly(Item.of("tconstruct:ender_slime_crystal_cluster"), "tconstruct:large_ender_slime_crystal_bud", [
+            event.recipes.createDeploying("tconstruct:large_ender_slime_crystal_bud", [
+                "tconstruct:large_ender_slime_crystal_bud",
+                ["create:powdered_obsidian"],
+            ]),
+						event.recipes.createFilling("tconstruct:large_ender_slime_crystal_bud", [
+                "tconstruct:large_ender_slime_crystal_bud",
+                { fluid: "tconstruct:ender_slime", amount: 250 * mB / 3 },
+            ]),
+        ])
+        .transitionalItem("tconstruct:large_ender_slime_crystal_bud")
+        .loops(3);
+
+	event.recipes
         .createSequencedAssembly(Item.of("cookingforblockheads:cow_jar"), "cookingforblockheads:milk_jar", [
             event.recipes.createDeploying("cookingforblockheads:milk_jar", [
                 "cookingforblockheads:milk_jar",
@@ -461,12 +536,58 @@ function sequencedAssemblyRecipes(event) {
                 "cookingforblockheads:milk_jar",
                 ["minecraft:leather"],
             ]),
-            event.recipes.createFilling("yttr:ultrapure_carbon", [
-                "yttr:ultrapure_carbon",
+            event.recipes.createFilling("cookingforblockheads:milk_jar", [
+                "cookingforblockheads:milk_jar",
                 { fluid: "tconstruct:blood", amount: 100 * mB },
             ]),
         ])
         .transitionalItem("cookingforblockheads:milk_jar")
+        .loops(1);
+	
+	event.recipes
+        .createSequencedAssembly(Item.of("minecraft:sea_lantern"), "minecraft:prismarine", [
+			event.recipes.createDeploying("minecraft:prismarine", [
+                "minecraft:prismarine",
+                ["minecraft:prismarine_crystals"],
+            ])
+        ])
+        .transitionalItem("chipped:sea_lantern_2")
+        .loops(5);
+	
+	event.recipes
+        .createSequencedAssembly(Item.of("yttr:lamp"), "minecraft:redstone_torch", [
+			event.recipes.createDeploying("minecraft:redstone_torch", [
+                "minecraft:redstone_torch",
+                ["minecraft:iron_bars"],
+            ]),
+            event.recipes.createDeploying("minecraft:redstone_torch", [
+                "minecraft:redstone_torch",
+                ["create:framed_glass"],
+            ]),
+            event.recipes.createDeploying("minecraft:redstone_torch", [
+                "minecraft:redstone_torch",
+                ["minecraft:iron_bars"],
+            ])
+        ])
+        .transitionalItem("chipped:redstone_lamp_1")
+        .loops(1);
+		
+	event.recipes
+        .createSequencedAssembly(Item.of("createastral:horse"), "minecraft:leather_horse_armor", [
+            event.recipes.createDeploying("minecraft:leather_horse_armor", [
+                "minecraft:leather_horse_armor",
+                ["minecraft:apple"],
+            ]),
+            event.recipes.createDeploying("minecraft:leather_horse_armor", [
+                "minecraft:leather_horse_armor",
+                ["minecraft:hay_block"],
+            ]),
+            event.recipes.createFilling("minecraft:leather_horse_armor", [
+                "minecraft:leather_horse_armor",
+                { fluid: "tconstruct:blood", amount: 100 * mB },
+            ]),
+        ])
+        .transitionalItem("minecraft:leather_horse_armor")
         .loops(1);
 
     event.recipes
@@ -768,6 +889,59 @@ function sequencedAssemblyRecipes(event) {
             )
             .transitionalItem("ad_astra:mercury_stone")
             .loops(5);
+			
+		event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "createastral:aurorite_block", // output
+                ],
+                "ad_astra:polished_permafrost",
+                [
+                    // input
+                    event.recipes.createDeploying("ad_astra:polished_permafrost", [
+                        "ad_astra:ice_shard",
+                        "ad_astra:ice_shard",
+                    ]),
+                    event.recipes.createDeploying("ad_astra:polished_permafrost", [
+                        "ad_astra:ice_shard",
+                        "ad_astra:ice_shard",
+                    ]),
+                    event.recipes.createFilling("ad_astra:polished_permafrost", [
+                        "ad_astra:polished_permafrost",
+                        { fluid: "kubejs:aurorite", amount: BUCKET / 2 },
+                    ]),
+                    event.recipes.createPressing("ad_astra:polished_permafrost", "ad_astra:polished_permafrost"),
+                ]
+            )
+            .transitionalItem("ad_astra:polished_permafrost")
+			.loops(1);
+			
+		event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "estrogen:estrogen_patches", // output
+                ],
+                "minecraft:paper",
+                [
+                    // input
+                    event.recipes.createFilling("create:sand_paper", [
+                        "create:sand_paper",
+                        { fluid: "tconstruct:molten_queens_slime", amount: BUCKET },
+                    ]),
+                    event.recipes.createFilling("create:sand_paper", [
+                        "create:sand_paper",
+                        { fluid: "estrogen:liquid_estrogen", amount: BUCKET },
+                    ]),
+                    event.recipes.createDeploying("create:sand_paper", [
+                        "blahaj:blue_shark",
+                        "blahaj:blue_shark",
+                    ]),
+                ]
+            )
+            .transitionalItem("ad_astra:polished_permafrost")
+			.loops(1);
 
         event.recipes
             .createSequencedAssembly(
@@ -778,29 +952,29 @@ function sequencedAssemblyRecipes(event) {
                 "createastral:navigation_mechanism",
                 [
                     // input
-                    event.recipes.createDeploying("createastral:incomplete_navigation_mechanism", [
-                        "createastral:incomplete_navigation_mechanism",
+                    event.recipes.createDeploying("createastral:navigation_mechanism", [
+                        "techreborn:machine_parts",
                         "techreborn:machine_parts",
                     ]),
-                    event.recipes.createDeploying("createastral:incomplete_navigation_mechanism", [
-                        "createastral:incomplete_navigation_mechanism",
+                    event.recipes.createDeploying("createastral:navigation_mechanism", [
+                        "ad_astra:ostrum_plate",
                         "ad_astra:ostrum_plate",
                     ]),
                     event.recipes.createPressing(
-                        "createastral:incomplete_navigation_mechanism",
-                        "createastral:incomplete_navigation_mechanism"
+                        "createastral:navigation_mechanism",
+                        "createastral:navigation_mechanism"
                     ),
-                    event.recipes.createFilling("createastral:incomplete_navigation_mechanism", [
-                        "createastral:incomplete_navigation_mechanism",
+                    event.recipes.createFilling("createastral:navigation_mechanism", [
+                        "createastral:navigation_mechanism",
                         { fluid: "ad_astra:cryo_fuel", amount: BUCKET },
                     ]),
                     event.recipes.createPressing(
-                        "createastral:incomplete_navigation_mechanism",
-                        "createastral:incomplete_navigation_mechanism"
+                        "createastral:navigation_mechanism",
+                        "createastral:navigation_mechanism"
                     ),
                 ]
             )
-            .transitionalItem("createastral:incomplete_navigation_mechanism")
+            .transitionalItem("createastral:navigation_mechanism")
             .loops(4);
 
         event.recipes
@@ -826,21 +1000,21 @@ function sequencedAssemblyRecipes(event) {
                 "create:copper_casing",
                 [
                     // input
-                    event.recipes.createDeploying("createastral:incomplete_brass_casing", [
-                        "createastral:incomplete_brass_casing",
+                    event.recipes.createDeploying("create:copper_casing", [
+                        "create:copper_casing",
                         "createaddition:brass_rod",
                     ]),
-                    event.recipes.createFilling("createastral:incomplete_brass_casing", [
-                        "createastral:incomplete_brass_casing",
+                    event.recipes.createFilling("create:copper_casing", [
+                        "create:copper_casing",
                         { fluid: "tconstruct:molten_brass", amount: NUGGET },
                     ]),
-                    event.recipes.createDeploying("createastral:incomplete_brass_casing", [
-                        "createastral:incomplete_brass_casing",
+                    event.recipes.createDeploying("create:copper_casing", [
+                        "create:copper_casing",
                         "create:brass_sheet",
                     ]),
                     event.recipes.createPressing(
-                        "createastral:incomplete_brass_casing",
-                        "createastral:incomplete_brass_casing"
+                        "create:copper_casing",
+                        "create:copper_casing"
                     ),
                 ]
             )
@@ -856,16 +1030,16 @@ function sequencedAssemblyRecipes(event) {
                 "techreborn:basic_machine_frame",
                 [
                     // input
-                    event.recipes.createDeploying("createastral:incomplete_advanced_machine_frame", [
-                        "createastral:incomplete_advanced_machine_frame",
+                    event.recipes.createDeploying("techreborn:basic_machine_frame", [
+                        "techreborn:basic_machine_frame",
                         "techreborn:lead_plate",
                     ]),
-                    event.recipes.createFilling("createastral:incomplete_advanced_machine_frame", [
-                        "createastral:incomplete_advanced_machine_frame",
+                    event.recipes.createFilling("techreborn:basic_machine_frame", [
+                        "techreborn:basic_machine_frame",
                         { fluid: "kubejs:blast-resistant_cement", amount: 200 * mB },
                     ]),
-                    event.recipes.createDeploying("createastral:incomplete_advanced_machine_frame", [
-                        "createastral:incomplete_advanced_machine_frame",
+                    event.recipes.createDeploying("techreborn:basic_machine_frame", [
+                        "techreborn:basic_machine_frame",
                         "techreborn:lead_plate",
                     ]),
                 ]
@@ -882,16 +1056,16 @@ function sequencedAssemblyRecipes(event) {
                 "techreborn:advanced_machine_frame",
                 [
                     // input
-                    event.recipes.createDeploying("createastral:incomplete_industrial_machine_frame", [
-                        "createastral:incomplete_industrial_machine_frame",
+                    event.recipes.createDeploying("techreborn:advanced_machine_frame", [
+                        "techreborn:advanced_machine_frame",
                         "ad_astra:ostrum_plate",
                     ]),
-                    event.recipes.createDeploying("createastral:incomplete_industrial_machine_frame", [
-                        "createastral:incomplete_industrial_machine_frame",
+                    event.recipes.createDeploying("techreborn:advanced_machine_frame", [
+                        "techreborn:advanced_machine_frame",
                         "techreborn:machine_parts",
                     ]),
-                    event.recipes.createDeploying("createastral:incomplete_industrial_machine_frame", [
-                        "createastral:incomplete_industrial_machine_frame",
+                    event.recipes.createDeploying("techreborn:advanced_machine_frame", [
+                        "techreborn:advanced_machine_frame",
                         "ad_astra:ostrum_plate",
                     ]),
                 ]
@@ -1188,7 +1362,345 @@ function sequencedAssemblyRecipes(event) {
             .transitionalItem("minecraft:gold_ingot")
             .loops(1);
     }
+    function wineSequence(event) {
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:chenet_wine", // output
+            ],
+            "vinery:red_grapejuice_wine_bottle",
+            [
+                // input
+                event.recipes.createDeploying("kubejs:incomplete_chenet_wine", [
+                    "kubejs:incomplete_chenet_wine",
+                    "minecraft:sweet_berries",
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_chenet_wine", [
+                    "kubejs:incomplete_chenet_wine",
+                    { fluid: "kubejs:red_grape_juice", amount: 250 * mB },
+                ]),
+                event.recipes.createDeploying("kubejs:incomplete_chenet_wine", [
+                    "kubejs:incomplete_chenet_wine",
+                    "minecraft:sweet_berries",
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_chenet_wine")
+        .loops(1);
 
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:king_danis_wine", // output
+            ],
+            "vinery:red_grapejuice_wine_bottle",
+            [
+                // input
+                event.recipes.createFilling("kubejs:incomplete_king_danis_wine", [
+                    "kubejs:incomplete_king_danis_wine",
+                    { fluid: "kubejs:red_grape_juice", amount: 250 * mB },
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_king_danis_wine", [
+                    "kubejs:incomplete_king_danis_wine",
+                    { fluid: "create:honey", amount: 250 * mB },
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_king_danis_wine", [
+                    "kubejs:incomplete_king_danis_wine",
+                    { fluid: "create:honey", amount: 250 * mB },
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_king_danis_wine")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:noir_wine", // output
+            ],
+            "vinery:red_grapejuice_wine_bottle",
+            [
+                // input
+                event.recipes.createDeploying("kubejs:incomplete_noir_wine", [
+                    "kubejs:incomplete_noir_wine",
+                    "minecraft:kelp",
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_noir_wine", [
+                    "kubejs:incomplete_noir_wine",
+                    { fluid: "kubejs:red_grape_juice", amount: 250 * mB },
+                ]),
+                event.recipes.createDeploying("kubejs:incomplete_noir_wine", [
+                    "kubejs:incomplete_noir_wine",
+                    "minecraft:kelp",
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_noir_wine")
+        .loops(1);
+
+     event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:bolvar_wine", // output
+            ],
+            "vinery:red_grapejuice_wine_bottle",
+            [
+                // input
+                event.recipes.createFilling("kubejs:incomplete_bolvar_wine", [
+                    "kubejs:incomplete_bolvar_wine",
+                    { fluid: "create:honey", amount: 250 * mB },
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_bolvar_wine", [
+                    "kubejs:incomplete_bolvar_wine",
+                    { fluid: "kubejs:red_grape_juice", amount: 250 * mB },
+                ]),
+                event.recipes.createDeploying("kubejs:incomplete_bolvar_wine", [
+                    "kubejs:incomplete_bolvar_wine",
+                    "vinery:cherry",
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_bolvar_wine")
+        .loops(1);
+
+        event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:cherry_wine", // output
+            ],
+            "vinery:red_grapejuice_wine_bottle",
+            [
+                // input
+                event.recipes.createDeploying("kubejs:incomplete_cherry_wine", [
+                    "kubejs:incomplete_cherry_wine",
+                    "vinery:cherry",
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_cherry_wine", [
+                    "kubejs:incomplete_cherry_wine",
+                    { fluid: "kubejs:red_grape_juice", amount: 250 * mB },
+                ]),
+                event.recipes.createDeploying("kubejs:incomplete_cherry_wine", [
+                    "kubejs:incomplete_cherry_wine",
+                    "vinery:cherry",
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_cherry_wine")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:jellie_wine", // output
+            ],
+            "vinery:red_grapejuice_wine_bottle",
+            [
+                // input
+                event.recipes.createDeploying("kubejs:incomplete_jellie_wine", [
+                    "kubejs:incomplete_jellie_wine",
+                    "minecraft:golden_apple",
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_jellie_wine", [
+                    "kubejs:incomplete_jellie_wine",
+                    { fluid: "kubejs:white_grape_juice", amount: 250 * mB },
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_jellie_wine", [
+                    "kubejs:incomplete_jellie_wine",
+                    { fluid: "create:honey", amount: 250 * mB },
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_jellie_wine")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:clark_wine", // output
+            ],
+            "vinery:white_grapejuice_wine_bottle",
+            [
+                // input
+                event.recipes.createDeploying("kubejs:incomplete_clark_wine", [
+                    "kubejs:incomplete_clark_wine",
+                    "minecraft:sweet_berries",
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_clark_wine", [
+                    "kubejs:incomplete_clark_wine",
+                    { fluid: "kubejs:white_grape_juice", amount: 250 * mB },
+                ]),
+                event.recipes.createDeploying("kubejs:incomplete_clark_wine", [
+                    "kubejs:incomplete_clark_wine",
+                    "minecraft:sweet_berries",
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_clark_wine")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:mellohi_wine", // output
+            ],
+            "vinery:white_grapejuice_wine_bottle",
+            [
+                // input
+                event.recipes.createFilling("kubejs:incomplete_mellohi_wine", [
+                    "kubejs:incomplete_mellohi_wine",
+                    { fluid: "create:honey", amount: 250 * mB },
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_mellohi_wine", [
+                   "kubejs:incomplete_mellohi_wine",
+                   { fluid: "create:honey", amount: 250 * mB },
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_mellohi_wine", [
+                    "kubejs:incomplete_mellohi_wine",
+                    { fluid: "kubejs:white_grape_juice", amount: 250 * mB },
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_mellohi_wine")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:solaris_wine", // output
+            ],
+            "vinery:white_grapejuice_wine_bottle",
+            [
+                // input
+                event.recipes.createFilling("kubejs:incomplete_solaris_wine", [
+                    "kubejs:incomplete_solaris_wine",
+                    { fluid: "kubejs:white_grape_juice", amount: 250 * mB },
+                ]),
+                event.recipes.createDeploying("kubejs:incomplete_solaris_wine", [
+                    "kubejs:incomplete_solaris_wine",
+                    "minecraft:sweet_berries"
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_solaris_wine", [
+                    "kubejs:incomplete_solaris_wine",
+                    { fluid: "create:honey", amount: 250 * mB },
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_solaris_wine")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:aegis_wine", // output
+            ],
+            "vinery:wine_bottle",
+            [
+                // input
+                event.recipes.createDeploying("kubejs:incomplete_aegis_wine", [
+                    "kubejs:incomplete_aegis_wine",
+                    "minecraft:sugar",
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_aegis_wine", [
+                    "kubejs:incomplete_aegis_wine",
+                    { fluid: "minecraft:water", amount: 1000 * mB },
+                ]),
+                event.recipes.createDeploying("kubejs:incomplete_aegis_wine", [
+                    "kubejs:incomplete_aegis_wine",
+                    "minecraft:kelp",
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_aegis_wine")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:apple_wine", // output
+            ],
+            "vinery:wine_bottle",
+            [
+                // input
+                event.recipes.createDeploying("kubejs:incomplete_apple_wine", [
+                    "kubejs:incomplete_apple_wine",
+                    "minecraft:apple"
+                ]),
+                event.recipes.createFilling("kubejs:incomplete_apple_wine", [
+                    "kubejs:incomplete_apple_wine",
+                    { fluid: "create:honey", amount: 250 * mB },
+                ]),
+                event.recipes.createDeploying("kubejs:incomplete_apple_wine", [
+                    "kubejs:incomplete_apple_wine",
+                    "minecraft:apple"
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_apple_wine")
+        .loops(1);
+
+        event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:kelp_cider", // output
+            ],
+            "vinery:wine_bottle",
+            [
+                // input
+                event.recipes.createDeploying("kubejs:incomplete_kelp_cider", [
+                    "kubejs:incomplete_kelp_cider",
+                    "minecraft:kelp",
+                ]),
+                event.recipes.createDeploying("kubejs:incomplete_kelp_cider", [
+                    "kubejs:incomplete_kelp_cider",
+                   "minecraft:kelp", 
+                ]),
+                event.recipes.createDeploying("kubejs:incomplete_kelp_cider", [
+                    "kubejs:incomplete_kelp_cider",
+                    "minecraft:apple",
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_kelp_cider")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // begin
+                "vinery:apple_cider", // output
+            ],
+            "vinery:wine_bottle",
+            [
+                // input
+                event.recipes.createDeploying("kubejs:incomplete_apple_cider", [
+                    "kubejs:incomplete_apple_cider",
+                    "#minecraft:straw",
+                ]),
+                event.recipes.createDeploying("kubejs:incomplete_apple_cider", [
+                    "kubejs:incomplete_apple_cider",
+                   "minecraft:apple", 
+                ]),
+                event.recipes.createDeploying("kubejs:incomplete_apple_cider", [
+                    "kubejs:incomplete_apple_cider",
+                    "minecraft:apple",
+                ]),
+            ]
+        )
+        .transitionalItem("kubejs:incomplete_apple_cider")
+        .loops(1);
+}
     event.recipes
         .createSequencedAssembly(
             [
@@ -1222,20 +1734,19 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem("create:tree_fertilizer")
         .loops(125);
 
-    const inc_navmechanism = "createastral:incomplete_navigation_mechanism";
     event.recipes
         .createSequencedAssembly(["createastral:navigation_mechanism"], "phonos:redstone_chip", [
-            event.recipes.createFilling(inc_navmechanism, [
-                "create:incomplete_precision_mechanism",
+            event.recipes.createFilling("phonos:redstone_chip", [
+                "phonos:redstone_chip",
                 {
                     fluid: "tconstruct:molten_cobalt",
                     amount: 1350,
                 },
             ]),
-            event.recipes.createDeploying(inc_navmechanism, [inc_navmechanism, "techreborn:electrum_nugget"]),
-            event.recipes.createPressing(inc_navmechanism, inc_navmechanism),
+            event.recipes.createDeploying("phonos:redstone_chip", ["phonos:redstone_chip", "techreborn:electrum_nugget"]),
+            event.recipes.createPressing("phonos:redstone_chip", "phonos:redstone_chip"),
         ])
-        .transitionalItem(inc_navmechanism)
+        .transitionalItem("createastral:incomplete_navigation_mechanism")
         .loops(30);
 
     event.recipes
@@ -1357,7 +1868,7 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem(inc_refining_agent)
         .loops(3);
 
-    const inc_separation_agent = "createastral:incomplete_separation_agent";
+/*     const inc_separation_agent = "createastral:incomplete_separation_agent";
     event.recipes
         .createSequencedAssembly(["minecraft:paper"], "createastral:separation_agent", [
             event.recipes.createDeploying(inc_separation_agent, [inc_separation_agent, "techreborn:charcoal_dust"]),
@@ -1366,27 +1877,40 @@ function sequencedAssemblyRecipes(event) {
         ])
         .transitionalItem(inc_separation_agent)
         .loops(3);
-
-    event.recipes
-        .createSequencedAssembly(
-            [
-                // begin
-                "astralfoods:shimmered_apple", // output
-            ],
-            "minecraft:apple",
-            [event.recipes.createDeploying("minecraft:apple", ["minecraft:apple", "tconstruct:ender_slime_crystal"])],
-
-            event.recipes.createFilling("minecraft:apple", [
-                "minecraft:apple",
-                { fluid: "kubejs:shimmer", amount: BUCKET / 3 },
-            ])
-        )
-        .transitionalItem("minecraft:apple")
-        .loops(1);
 }
 
 function fillingRecipes(event) {
     [
+		{
+            input: "minecraft:dirt",
+            output: "tconstruct:sky_slime_dirt",
+            fluid: "tconstruct:sky_slime",
+            amount: 250,
+        },
+		{
+            input: "minecraft:dirt",
+            output: "tconstruct:earth_slime_dirt",
+            fluid: "tconstruct:earth_slime",
+            amount: 250,
+        },
+		{
+            input: "tconstruct:ender_slime_crystal",
+            output: "tconstruct:small_ender_slime_crystal_bud",
+            fluid: "astraladditions:sputum",
+            amount: 250 * mB / 4,
+        },
+		{
+            input: "minecraft:wheat_seeds",
+            output: "tconstruct:earth_slime_grass_seeds",
+            fluid: "tconstruct:earth_slime",
+            amount: 250 * mB / 4,
+        },
+		{
+            input: "minecraft:stick",
+            output: "minecraft:torch",
+            fluid: "minecraft:lava",
+            amount: 20 * mB,
+        },
         {
             input: "create:polished_rose_quartz",
             output: "create:electron_tube",
@@ -1477,6 +2001,78 @@ function fillingRecipes(event) {
             fluid: "tconstruct:molten_gold",
             amount: INGOT,
         },
+                {
+            input: "minecraft:cookie",
+            output: "astralfoods:ice_cream_sandwich",
+            fluid: "astralfoods:cream",
+            amount: 250 * mB,
+        },
+        {
+            input: "minecraft:bowl",
+            output: "farmersdelight:squid_ink_pasta",
+            fluid: "kubejs:squid_ink_pasta_fluid",
+            amount: 250 * mB,
+        },
+        {
+            input: "minecraft:bowl",
+            output: "farmersdelight:pumpkin_soup",
+            fluid: "kubejs:pumpkin_soup_fluid",
+            amount: 250 * mB
+        },
+        {
+            input: "drinkbeer:empty_beer_mug",
+            output: "drinkbeer:beer_mug",
+            fluid: "kubejs:miner_pale_ale_fluid",
+            amount: 250 * mB
+        },
+        {
+            input: "drinkbeer:empty_beer_mug",
+            output: "drinkbeer:beer_mug_blaze_stout",
+            fluid: "kubejs:blaze_stout_fluid",
+            amount: 250 * mB
+        },
+        {
+            input: "drinkbeer:empty_beer_mug",
+            output: "drinkbeer:beer_mug_blaze_milk_stout",
+            fluid: "kubejs:blaze_milk_stout_fluid",
+            amount: 250 * mB
+        },
+        {
+            input: "drinkbeer:empty_beer_mug",
+            output: "drinkbeer:beer_mug_apple_lambic",
+            fluid: "kubejs:apple_lambic_fluid",
+            amount: 250 * mB
+        },
+        {
+            input: "drinkbeer:empty_beer_mug",
+            output: "drinkbeer:beer_mug_sweet_berry_kriek",
+            fluid: "kubejs:sweet_berry_kriek_fluid",
+            amount: 250 * mB
+        },
+        {
+            input: "drinkbeer:empty_beer_mug",
+            output: "drinkbeer:beer_mug_haars_icey_pale_lager",
+            fluid: "kubejs:haars_icey_pale_lager_fluid",
+            amount: 250 * mB
+        },
+        {
+            input: "drinkbeer:empty_beer_mug",
+            output: "drinkbeer:beer_mug_pumpkin_kvass",
+            fluid: "kubejs:pumpkin_kvass_fluid",
+            amount: 250 * mB
+        },
+        {
+            input: "drinkbeer:empty_beer_mug",
+            output: "drinkbeer:beer_mug_night_howl_kvass",
+            fluid: "kubejs:night_howl_kvass_fluid",
+            amount: 250 * mB
+        },
+        {
+            input: "drinkbeer:empty_beer_mug",
+            output: "drinkbeer:beer_mug_frothy_pink_eggnog",
+            fluid: "kubejs:frothy_pink_eggnog_fluid",
+            amount: 250 * mB
+        },
     ].forEach((recipe) => {
         event.recipes.createFilling(recipe.output, [recipe.input, { fluid: recipe.fluid, amount: recipe.amount }]);
     });
@@ -1494,6 +2090,16 @@ function fillingRecipes(event) {
 
 function deployingRecipes(event) {
     [
+		{
+            output: "minecraft:redstone_torch",
+            basin_input: "minecraft:torch",
+            deployer_input: "minecraft:redstone",
+        },
+		{
+            output: "dbe:vanta_black",
+            basin_input: "minecraft:stone",
+            deployer_input: "minecraft:black_dye",
+        },
         {
             output: "explorerscompass:explorerscompass",
             basin_input: "minecraft:compass",
@@ -1505,9 +2111,19 @@ function deployingRecipes(event) {
             deployer_input: "astraladditions:orbital_navigation_ring",
         },
         {
+            output: "farmersdelight:raw_pasta",
+            basin_input: ["farmersdelight:wheat_dough", "create:dough"],
+            deployer_input: ["farmersdelight:flint_knife", "farmersdelight:iron_knife", "farmersdelight:golden_knife", "farmersdelight:diamond_knife", "farmersdelight:netherite_knife"]
+        },    
+        {
             output: "createastral:contained_end",
             basin_input: "createastral:sturdy_cage",
             deployer_input: "yttr:haemopal",
+        },
+				{
+            output: "minecraft:sea_pickle",
+            basin_input: "minecraft:torch",
+            deployer_input: "createastral:marimo",
         },
     ].forEach((recipe) => {
         event.recipes.create.deploying([recipe.output], [recipe.basin_input, recipe.deployer_input]);
@@ -1522,82 +2138,268 @@ function mixingRecipes(event) {
     // Heat: "" = no heat, "heated", or "superheated"
     // Time: Mixing time in ticks
     [
-				{
+		{
             output: [
-							"1x createastral:snowy_marimo"
-						],
+				{
+					fluid: "estrogen:molten_amethyst",
+					amount: INGOT,
+				}
+			],
             input: [
-							"createastral:marimo",
-							"createastral:prismatic_crystal",
-							{
-									fluid: "kubejs:shimmer",
-									amount: BUCKET/2,
-							}
-						],
+				{
+					fluid: "tconstruct:molten_amethyst",
+					amount: BUCKET,
+				},
+				"astraladditions:bulba_root"
+			],
+            heat: "",
+            time: 210,
+        },
+		{
+            output: [
+				"create:tree_fertilizer"
+			],
+            input: [
+				"#minecraft:saplings",
+				"#c:coral_fans",
+				"minecraft:bone_meal"
+			],
             heat: "",
             time: 180,
         },
-				{
+		{
             output: [
-							Item.of("2x createastral:marimo").withChance(0.5),
-							Item.of("2x createastral:moonset_marimo").withChance(0.5),
-							{
-									fluid: "minecraft:water",
-									amount: BUCKET,
-							}
-						],
+				{
+					fluid: "kubejs:shimmer",
+					amount: BUCKET/9,
+				}
+			],
             input: [
-							"createastral:marimo",
-							"createastral:moonset_marimo",
-							{
-									fluid: "minecraft:water",
-									amount: BUCKET,
-							}
-						],
-            heat: "",
-            time: 60,
+				"ae2:fluix_crystal",
+				"minecraft:glowstone_dust",
+				"tconstruct:amethyst_bronze_nugget"
+			],
+            heat: "heated",
+            time: 180,
         },
-				{
+		{
             output: [
-							"1x createastral:moonset_marimo"
-						],
+				{
+					fluid: "kubejs:shimmer",
+					amount: BUCKET,
+				}
+			],
             input: [
-							"createastral:marimo",
-							"astraladditions:moonset_crystal",
-							{
-									fluid: "kubejs:shimmer",
-									amount: BUCKET/2,
-							}
-						],
+				"4x createastral:shimmer_marimo",
+				"naturalist:glow_goop",
+				"astraladditions:lune_shroom"
+			],
+            heat: "heated",
+            time: 180,
+        },
+		{
+            output: [
+				"astraladditions:shimmer_heart"
+			],
+            input: [
+				"32x createastral:shimmer_marimo",
+				"minecraft:heart_of_the_sea",
+				{
+					fluid: "xpcrystals:soul",
+					amount: BUCKET,
+				}
+			],
+            heat: "heated",
+            time: 180,
+        },
+		{
+            output: [
+				"astraladditions:shimmer_blaze_rod"
+			],
+            input: [
+				"32x createastral:shimmer_marimo",
+				"2x minecraft:blaze_rod",
+				"tconstruct:blazing_bone"
+			],
+            heat: "heated",
+            time: 180,
+        },
+		{
+            output: [
+				{ fluid: "tconstruct:ender_slime", amount: 250 * mB }
+			],
+            input: [
+				"createastral:ender_marimo", 
+				"ae2:ender_dust",
+				{ fluid: "tconstruct:earth_slime", amount: 125 * mB }
+			],
+            heat: "heated",
+            time: 180,
+        },
+		{
+            output: [
+				"1x createastral:shimmer_marimo"
+			],
+            input: [
+				"createastral:marimo",
+				"ae2:fluix_crystal",
+				{
+					fluid: "kubejs:shimmer",
+					amount: BUCKET/2,
+				}
+			],
             heat: "",
             time: 180,
         },
-				{
+		{
             output: [
-							"2x createastral:marimo",
-							{
-									fluid: "minecraft:water",
-									amount: BUCKET/2,
-							}
-						],
+				"2x createastral:shimmer_marimo"
+			],
             input: [
-							"createastral:marimo", 
-							{
-									fluid: "minecraft:water",
-									amount: BUCKET/2,
-							}
-						],
+				"createastral:shimmer_marimo",
+				"ae2:fluix_crystal_seed",
+				{
+					fluid: "kubejs:shimmer",
+					amount: INGOT,
+				}
+			],
+            heat: "",
+            time: 180,
+        },
+		{
+            output: [
+				"1x createastral:ender_marimo"
+			],
+            input: [
+				"createastral:marimo",
+				"tconstruct:ender_slime_crystal",
+				{
+					fluid: "kubejs:shimmer",
+					amount: BUCKET/2,
+				}
+			],
+            heat: "",
+            time: 180,
+        },
+		{
+            output: [
+				"2x createastral:ender_marimo"
+			],
+            input: [
+				"createastral:ender_marimo",
+				"tconstruct:ender_slime_grass_seeds",
+				{
+					fluid: "astraladditions:sputum",
+					amount: INGOT,
+				}
+			],
+            heat: "",
+            time: 180,
+        },
+		{
+            output: [
+				"1x createastral:snowy_marimo"
+			],
+            input: [
+				"createastral:marimo",
+				"createastral:prismatic_crystal",
+				{
+					fluid: "kubejs:shimmer",
+					amount: BUCKET/2,
+				}
+			],
+            heat: "",
+            time: 180,
+        },
+		{
+            output: [
+				"2x createastral:snowy_marimo"
+			],
+            input: [
+				"createastral:snowy_marimo",
+				"ad_astra:ice_shard",
+				{
+					fluid: "minecraft:water",
+					amount: BUCKET/2,
+				}
+			],
+            heat: "",
+            time: 180,
+        },
+		{
+            output: [
+				Item.of("2x createastral:marimo").withChance(0.5),
+				Item.of("2x createastral:moonset_marimo").withChance(0.5),
+				{
+					fluid: "minecraft:water",
+					amount: BUCKET,
+				}
+			],
+            input: [
+				"createastral:marimo",
+				"createastral:moonset_marimo",
+				{
+					fluid: "minecraft:water",
+					amount: BUCKET,
+				}
+			],
             heat: "",
             time: 60,
         },
+		{
+            output: [
+				"1x createastral:moonset_marimo"
+			],
+            input: [
+				"createastral:marimo",
+				"astraladditions:moonset_crystal",
 				{
-            output: [{
-                fluid: "milk:still_milk",
-                amount: BUCKET/2,
-            },
-						"cookingforblockheads:cow_jar"
-						],
+					fluid: "kubejs:shimmer",
+					amount: BUCKET/2,
+				}
+			],
+            heat: "",
+            time: 180,
+        },
+		{
+            output: [
+				"2x createastral:marimo",
+				{
+					fluid: "minecraft:water",
+					amount: BUCKET/2,
+				}
+			],
+            input: [
+				"createastral:marimo", 
+				{
+					fluid: "minecraft:water",
+					amount: BUCKET/2,
+				}
+			],
+            heat: "",
+            time: 60,
+        },
+		{
+            output: [
+				{
+					fluid: "milk:still_milk",
+					amount: BUCKET/2,
+				},
+				"cookingforblockheads:cow_jar"
+			],
             input: ["cookingforblockheads:cow_jar"],
+            heat: "",
+            time: 60,
+        },
+		{
+            output: [
+				{
+					fluid: "estrogen:horse_urine",
+					amount: BUCKET/2,
+				},
+				"createastral:horse"
+			],
+            input: ["createastral:horse"],
             heat: "",
             time: 60,
         },
@@ -1880,9 +2682,15 @@ function mixingRecipes(event) {
             time: 1000,
         },
         {
-            output: "#c:living_coral_plants",
+            output: [
+				Item.of("minecraft:tube_coral").withChance(0.2),
+				Item.of("minecraft:brain_coral").withChance(0.2),
+				Item.of("minecraft:bubble_coral").withChance(0.2),
+				Item.of("minecraft:fire_coral").withChance(0.2),
+				Item.of("minecraft:horn_coral").withChance(0.2),
+			],
             input: [
-                "4x minecraft:kelp",
+                "4x minecraft:sea_pickle",
                 {
                     fluid: "minecraft:water",
                     amount: 250 * mB,
@@ -1892,7 +2700,13 @@ function mixingRecipes(event) {
             time: 50,
         },
         {
-            output: "#c:living_coral_fans",
+            output: [
+				Item.of("minecraft:tube_coral_fan").withChance(0.2),
+				Item.of("minecraft:brain_coral_fan").withChance(0.2),
+				Item.of("minecraft:bubble_coral_fan").withChance(0.2),
+				Item.of("minecraft:fire_coral_fan").withChance(0.2),
+				Item.of("minecraft:horn_coral_fan").withChance(0.2),
+			],
             input: [
                 "4x minecraft:dried_kelp",
                 {
@@ -2109,14 +2923,14 @@ function mixingRecipes(event) {
             time: 40,
         },
         {
-                output: Fluid.of("tconstruct:molten_slimesteel", INGOT),
-                input: [
-                    "9x minecraft:iron_nugget",
-                    { fluid: "tconstruct:sky_slime", amount: 250 * mB },
-                    "#tconstruct:seared_blocks",
-                ],
-                heat: "heated",
-                time: 40,
+			output: Fluid.of("tconstruct:molten_slimesteel", INGOT),
+			input: [
+				"9x minecraft:iron_nugget",
+				{ fluid: "tconstruct:sky_slime", amount: 250 * mB },
+				"#tconstruct:seared_blocks",
+			],
+			heat: "heated",
+			time: 40,
         },
         {
             output: Fluid.of("tconstruct:molten_slimesteel", INGOT),
@@ -2549,13 +3363,22 @@ function mixingRecipes(event) {
             input: ["astralfoods:astral_sauce", "2x astralfoods:quantum_bites", "farmersdelight:raw_pasta"],
             heat: "heated",
             time: 250,
-				},
-				{
+		},
+                {
+            output: ["astralfoods:chocolate_ice_cream"],
+            input: ["create:bar_of_chocolate", {
+				fluid: "astralfoods:cream",
+				amount: BUCKET/4,
+			}],
+            heat: "heated",
+            time: 100,
+		},
+		{
             output: "yttr:ruined_cobblestone",
             input: ["minecraft:cobblestone", "yttr:rubble", {
-                    fluid: "tconstruct:magma",
-                    amount: BUCKET/4,
-                }],
+				fluid: "tconstruct:magma",
+				amount: BUCKET/4,
+			}],
             heat: "superheated",
             time: 200,
         },
@@ -2628,6 +3451,216 @@ function mixingRecipes(event) {
             ],
             heat: "heated",
             time: 500,
+        }, 
+        //Drink Beer Spices
+        {
+            output: "drinkbeer:spice_blaze_paprika",
+            input: [
+                "2x minecraft:blaze_powder",
+                "minecraft:fire_charge",
+            ],
+            heat: "heated",
+            time: 500,
+        },
+        {
+            output: "drinkbeer:spice_dried_eglia_bud",
+            input: [
+                "minecraft:dried_kelp",
+                "2x tconstruct:glow_ball",
+            ],
+            heat: "",
+            time: 500,
+        },
+        {
+            output: "drinkbeer:spice_smoked_eglia_bud",
+            input: [
+                "minecraft:fire_charge",
+                "2x tconstruct:glow_ball"
+            ],
+            heat: "heated",
+            time: 500,
+        },
+        {
+            output: "drinkbeer:spice_amethyst_nigella_seeds",
+            input: [
+                "2x techreborn:amethyst_dust",
+                "minecraft:popped_chorus_fruit",
+            ],
+            heat: "",
+            time: 500,
+        },
+        {
+            output: "drinkbeer:spice_citrine_nigella_seeds",
+            input: [
+                "2x minecraft:glowstone_dust",
+                "minecraft:popped_chorus_fruit",
+            ],
+            heat: "",
+            time: 500,
+        },
+        {
+            output: "drinkbeer:spice_ice_mint",
+            input: [
+                "minecraft:ice",
+                "4x #minecraft:leaves",
+            ],
+            heat: "",
+            time: 500,
+        },
+        { 
+            output: "drinkbeer:spice_ice_patchouli",
+            input: [
+                "minecraft:packed_ice",
+                "2x minecraft:kelp",
+            ],
+            heat: "",
+            time: 500,
+        },
+        {
+            output: ["drinkbeer:spice_storm_shards", "ae2:certus_quartz_crystal"],
+            input:[
+                "ae2:charged_certus_quartz_crystal",
+                "2x minecraft:prismarine_shard"
+            ],
+            heat: "",
+            time: 500,
+        },
+        {
+            output: "drinkbeer:spice_roasted_red_pine_nuts",
+            input:[
+                "minecraft:blaze_powder",
+                "3x minecraft:wheat_seeds",
+            ],
+            heat: "heated",
+            time: 500,
+        },    
+        {
+            output: "drinkbeer:spice_glace_goji_berries",
+            input:[
+                "3x minecraft:sweet_berries",
+                "minecraft:sugar",
+            ],
+            heat:"heated",
+            time: 500,
+        },
+        {
+            output: "drinkbeer:spice_frozen_persimmon",
+            input:[
+                "minecraft:blue_ice",
+                "minecraft:glistering_melon_slice",
+            ],
+            heat: "",
+            time: 500,
+        },
+        {
+            output: "drinkbeer:spice_roasted_pecans",
+            input:[
+                "minecraft:blaze_powder",
+                "3x minecraft:cocoa_beans",
+            ],
+            heat: "heated",
+            time: 500,
+        },
+        {
+            output: "drinkbeer:spice_silver_needle_white_tea",
+            input:[
+                "3x techreborn:silver_nugget",
+                {
+                    fluid: "kubejs:white_grape_juice",
+                    amount: 166 * mB,
+                },
+            ],
+            heat: "heated",
+            time: 500,
+        },
+        {
+            output: "drinkbeer:spice_golden_cinnamon_powder",
+            input:[
+                "minecraft:gold_nugget",
+                "2x farmersdelight:tree_bark",
+            ],
+            heat: "heated",
+            time: 500,
+        },
+        {
+            output: "drinkbeer:spice_dried_selaginella",
+            input:[
+                "minecraft:fern",
+                "#minecraft:sand",
+            ],
+            heat: "",
+            time: 500,
+        },
+        //Beer Liquids
+        {
+            output: [{fluid: "kubejs:miner_pale_ale_fluid", amount: BUCKET}],
+            input: ["3x minecraft:wheat",
+                  {fluid: "minecraft:water", amount: BUCKET}
+             ],
+            heat: "heated",
+            time: 500,
+        },
+        {
+            output: [{fluid: "kubejs:blaze_stout_fluid", amount: BUCKET}],
+            input: ["2x minecraft:wheat","minecraft:blaze_powder",
+                {fluid:"minecraft:water", amount: BUCKET}
+            ],
+            heat: "heated",
+            time: 500,
+        },
+        {
+            output: [{fluid: "kubejs:blaze_milk_stout_fluid", amount: BUCKET}],
+            input: ["minecraft:wheat", "minecraft:sugar", "minecraft:blaze_powder",
+                {fluid:"minecraft:water", amount: BUCKET}
+            ],
+            heat: "heated",
+            time: 500,
+        },
+        {
+            output: [{fluid: "kubejs:apple_lambic_fluid", amount: BUCKET}],
+            input: ["2x minecraft:wheat", "minecraft:apple",
+                {fluid:"minecraft:water", amount: BUCKET}
+            ],
+            heat: "heated",
+            time: 500,
+        },
+        {
+            output: [{fluid: "kubejs:sweet_berry_kriek_fluid", amount: BUCKET}],
+            input:["minecraft:sweet_berries", "2x minecraft:wheat",
+                {fluid:"minecraft:water", amount: BUCKET}
+            ],
+            heat: "heated",
+            time: 500,
+        },
+        {
+            output: [{fluid: "kubejs:haars_icey_pale_lager_fluid", amount: BUCKET}],
+           input: ["3x minecraft:wheat", "minecraft:ice"],
+        heat: "heated",
+        time: 500,
+        },
+        {
+            output: [{fluid: "kubejs:pumpkin_kvass_fluid", amount: BUCKET}],
+            input: ["2x minecraft:bread", "minecraft:pumpkin",
+                {fluid:"minecraft:water", amount: BUCKET},
+            ],
+            heat: "heated",
+            time: 500,            
+        },
+        {
+            output: [{fluid: "kubejs:night_howl_kvass_fluid", amount: BUCKET}],
+            input: ["2x minecraft:bread", "minecraft:bone",
+            {fluid:"minecraft:water", amount: BUCKET}
+            ],
+            heat: "heated",
+            time: 500,
+        },
+        {
+            output: [{fluid: "kubejs:frothy_pink_eggnog_fluid", amount: BUCKET}],
+            input: ["minecraft:wheat", "minecraft:egg", "minecarft:beetroot",
+                {fluid:"minecraft:water", amount: BUCKET}
+            ],
+            heat: "heated",
+            time: 500,
         },
     ].forEach((recipe) => {
         event.recipes
@@ -2697,8 +3730,9 @@ function cuttingRecipes(event) {
     // [Input string, Output string]
     [
         ["createastral:marimo", "minecraft:seagrass"],
-        ["createastral:moonset_marimo", Item.of("ae2:ender_dust").withChance(0.1)],
+        ["createastral:moonset_marimo", "minecraft:warped_roots"],
         ["createastral:snowy_marimo", "minecraft:snowball"],
+        ["createastral:ender_marimo", "astraladditions:ender_sprouts"],
         ["minecraft:moss_block", "2x minecraft:moss_carpet"],
         ["minecraft:moss_carpet", "2x createastral:marimo"],
         ["techreborn:rubber_log", "techreborn:rubber_log_stripped"],
@@ -2891,7 +3925,7 @@ function mechanicalCraftingRecipes(event) {
     // Shape: Array of rows of inputs based on letters assigned
     // Inputs: Object with letters assigned to input items, to be used in the shape
     [
-				{
+		{
             output: "ad_astra:calorite_tank",
             shape: [" C ", "COC", " C "],
             inputs: {
@@ -3427,6 +4461,10 @@ function mechanicalCraftingRecipes(event) {
 function pressingRecipes(event) {
     // [Input string, Output string]
     [
+        ["createastral:shimmer_marimo", "ae2:fluix_dust"],
+        ["createastral:moonset_marimo", Item.of("ae2:ender_dust").withChance(0.1)],
+        ["createastral:marimo", "minecraft:vine"],
+        ["minecraft:sea_pickle", "4x minecraft:glow_lichen"],
         ["yttr:haemopal", "5x createastral:ultramatter"],
         ["minecraft:lapis_block", "create:lapis_sheet"],
         ["tconstruct:greenheart_log", "2x minecraft:green_dye"],
@@ -3453,13 +4491,87 @@ function farmersDelightIntegration(event) {
 
 function compactingRecipes(event) {
     [
-				{
-            output: "minecraft:dirt",
-            inputs: ["64x createastral:marimo"],
+		{
+            output: ["minecraft:end_stone"],
+            inputs: [
+				"yttr:yttrium_dust",
+				"3x techreborn:dark_ashes_dust",
+				{ fluid: "tconstruct:molten_ender", amount: 125 * mB }
+			],
+        },
+		{
+            output: ["ae2:fluix_pearl"],
+            inputs: [
+				"4x createastral:shimmer_marimo",
+				"ae2:ender_dust"
+			],
+        },
+		{
+            output: ["techreborn:saltpeter_dust", { fluid: "minecraft:water", amount: 500 * mB }],
+            inputs: [
+				"4x createastral:snowy_marimo",
+				"4x astraladditions:bulba_root"
+			],
+        },
+		{
+            output: ["techreborn:saltpeter_dust", { fluid: "minecraft:water", amount: 500 * mB }],
+            inputs: [
+				"4x createastral:snowy_marimo",
+				"minecraft:seagrass"
+			],
+        },
+		{
+            output: "farmersdelight:organic_compost",
+            inputs: [
+				"minecraft:coarse_dirt",
+				"create:tree_fertilizer",
+				"createastral:pure_biomatter"
+			],
+        },
+		{
+            output: "farmersdelight:organic_compost",
+            inputs: [
+				"minecraft:rooted_dirt",
+				"minecraft:bone_meal",
+				{ fluid: "techreborn:potassium", amount: 250 * mB }
+			],
+        },
+		{
+            output: "astraladditions:enderrack",
+            inputs: [
+				"astraladditions:ender_sprouts",
+				"32x createastral:ender_marimo",
+			],
+        },
+		{
+            output: "minecraft:budding_amethyst",
+            inputs: [
+				"6x minecraft:amethyst_cluster",
+				"tconstruct:amethyst_bronze_block",
+				"32x createastral:shimmer_marimo",
+			],
+        },
+		{
+            output: "ad_astra:permafrost",
+            inputs: [
+				"minecraft:warped_roots",
+				"32x createastral:snowy_marimo",
+			],
+        },
+		{
+            output: "minecraft:rooted_dirt",
+            inputs: [
+				"minecraft:grass",
+				"32x createastral:marimo",
+			],
         },
         {
             output: "minecraft:grass",
             inputs: ["minecraft:seagrass"],
+        },
+				{
+            output: { fluid: "astraladditions:sputum", amount: 500 * mB },
+            inputs: ["4x createastral:ender_marimo", "techreborn:uu_matter", { fluid: "tconstruct:molten_ender", amount: 250 * mB }],
         },
 				{
             output: { fluid: "tconstruct:molten_ender", amount: 250 * mB },
@@ -3467,7 +4579,7 @@ function compactingRecipes(event) {
         },
 				{
             output: "astraladditions:moonset_crystal",
-            inputs: ["8x createastral:moonset_marimo", "minecraft:ender_pearl"],
+            inputs: ["8x createastral:moonset_marimo", "2x ae2:ender_dust"],
         },
 				{
             output: "minecraft:chorus_flower",

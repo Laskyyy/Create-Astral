@@ -122,4 +122,16 @@ onEvent("item.registry", (event) => {
         .food((food) => {
             food.hunger(3.5).saturation(1.1).effect("haste", 900, 1, 1).alwaysEdible();
         });
+
+    event;
+});
+
+onEvent("fluid.registry", (event) => {
+    event
+        .create("cream")
+        .thickTexture(0xbcaa79)
+        .bucketColor(0xbcaa79)
+        .displayName("Cream")
+        .stillTexture("kubejsassetsastralfoods\textures\fluidcream_still.png")
+        .flowingTexture("kubejsassetsastralfoods\textures\fluidcream_flow.png");
 });
