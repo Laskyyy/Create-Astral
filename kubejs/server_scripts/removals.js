@@ -504,6 +504,7 @@ onEvent("recipes", (event) => {
         { output: "yttr:spatula" },
         { output: "yttr:giant_cobblestone" },
         { output: "yttr:armor_plating" },
+        { output: "yttr:lamp", input: "yttr:glowing_gas" },
 
         // Minecraft
 
