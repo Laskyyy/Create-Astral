@@ -1885,7 +1885,7 @@ function fillingRecipes(event) {
             input: "minecraft:glass_bottle",
             output: "astraladditions:shimmer_bottle",
             fluid: "kubejs:shimmer",
-            amount: 333 * mb,
+            amount: 333 * mB,
         },
 		{
             input: "minecraft:dirt",
