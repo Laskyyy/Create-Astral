@@ -7,7 +7,7 @@ astralmenu.mainmenu.options.hover = Configure the game
 astralmenu.mainmenu.quit.text = Quit Game
 astralmenu.mainmenu.quit.hover = Come back soon!
 astralmenu.mainmenu.changelog.text = Changelog
-astralmenu.mainmenu.changelog.hover = Latest Patch: 2.1.2
+astralmenu.mainmenu.changelog.hover = Latest Patch: 2.1.3
 astralmenu.mainmenu.music.hover = Listen to the OST on Spotify!
 astralmenu.mainmenu.discord.hover = Join the official Discord server!
 astralmenu.mainmenu.credits.hover = Open the credits for Create: Astral
@@ -39,8 +39,8 @@ astralmenu.changelog.2_1.title = Create: Astral Version 2.1
 astralmenu.changelog.2_1.close = Close Changelog
 astralmenu.changelog.2_1_1.label = Update 2.1
 
-astralmenu.changelog.2_1_1.title = Create: Astral Patch 2.1.2
-astralmenu.changelog.2_1_1.label = Patch 2.1.2
+astralmenu.changelog.2_1_1.title = Create: Astral Patch 2.1.3
+astralmenu.changelog.2_1_1.label = Patch 2.1.3
 
 astralmenu.multiplayer_error_message.line1 = If you're getting an error when joining a multiplayer server, try rejoining before reporting it as a bug!
 astralmenu.multiplayer_error_message.line2 = If you still can't join, please join the Discord (link can be found on the left hand side of the main menu) and report it in the #bug-reports channel!

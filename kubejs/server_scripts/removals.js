@@ -60,7 +60,6 @@ onEvent("recipes", (event) => {
         { output: "techreborn:compressor" },
         { output: "techreborn:synthetic_redstone_crystal" },
         { output: "techreborn:bronze_nugget" },
-        { output: "techreborn:iron_plate" },
         { output: "techreborn:steel_ingot" },
         { output: "techreborn:steel_block" },
         { output: "techreborn:steel_plate" },
@@ -597,12 +596,7 @@ onEvent("recipes", (event) => {
 
     // Define the array of materials
     const materials = [
-        "techreborn:lead",
         "techreborn:bronze",
-        "techreborn:steel",
-        "techreborn:tin",
-        "techreborn:copper",
-        "techreborn:steel",
         "techreborn:silver",
     ];
 
@@ -618,6 +612,8 @@ onEvent("recipes", (event) => {
         event.remove({ output: material + "_hoe" });
         event.remove({ output: material + "_shovel" });
     }
+
+    materials.forEach(removeRecipes);
 
     const metal = [
         "tungstensteel",
@@ -645,6 +641,28 @@ onEvent("recipes", (event) => {
         event.remove({ output: `techreborn:${metal}_dust` });
         event.remove({ output: `techreborn:${metal}_small_dust` });
         event.remove({ output: `techreborn:${metal}_nugget` });
+    });
+
+    // remove unused plate materials.
+    const plates = [
+        "iron",
+        "copper",
+        "gold",
+        "advanced_alloy",
+        "iridium_alloy",
+        "iridium",
+        "carbon",
+        "coal",
+        "emerald",
+        "lapis",
+        "lazurite",
+        "obsidian",
+        "redstone",
+        "silicon",
+    ];
+
+    plates.forEach((plate) => {
+        event.remove({ output: `techreborn:${plate}_plate` });
     });
 
     const dusts = [
@@ -696,6 +714,11 @@ onEvent("recipes", (event) => {
         ["uvarovite", false],
         ["glowstone", true],
         ["redstone", true],
+        ["peridot", false],
+        ["red_garnet", false],
+        ["ruby", false],
+        ["sapphire", false],
+        ["yellow_garnet", false],
     ];
     dusts.forEach((dust) => {
         if (!dust[1]) {
