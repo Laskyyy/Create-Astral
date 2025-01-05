@@ -1668,7 +1668,7 @@
     "ftbquests.chapter.chapter_3.quests6.title": "New Water Toys",
     "ftbquests.chapter.chapter_3.quests6.subtitle": "Compatible with Tinkers' fluids",
     "ftbquests.chapter.chapter_3.quests6.description0": "&6Item Drains&r have the ability to drain liquid from liquid-containing items, such as buckets and bottles.",
-    "ftbquests.chapter.chapter_3.quests6.description2": "&6Hose Pulleys&r can fill or drain a body of liquid, up to the certain threshold.",
+    "ftbquests.chapter.chapter_3.quests6.description2": "&6Hose Pulleys&r can fill or drain a body of liquid, up to the certain threshold. &410k Fluid pools have been removed!&r There are many recipes for automating Lava instead. Check REI :)",
     "ftbquests.chapter.chapter_3.quests6.description4": "&6Portable Fluid Interfaces&r operate much like Portable Storage Interfaces, but they interact with fluids and Tanks on the Contraption instead.",
     "ftbquests.chapter.chapter_3.quests7.subtitle": "A note on Tinkers' integration",
     "ftbquests.chapter.chapter_3.quests7.description0": "Put a &6Faucet&r on the side or below the Melter or any other Tank.",
@@ -2918,6 +2918,14 @@
     "ftbquests.chapter.read_the_questbook.quests19.description6": "Liquid Bronze is locked behind &6Chapter 2&r.",
     "ftbquests.chapter.read_the_questbook.quests19.description8": "Steel is obtained at the end of &6Chapter 3&r.",
     "ftbquests.chapter.read_the_questbook.quests19.description10": "The final tier of barrel has been repurposed to &6Ostrum&r, obtained in &6Chapter 4&r.",
+	
+	"ftbquests.chapter.read_the_questbook.quests20.title": "10k Fluid Infinite Pools?",
+	"ftbquests.chapter.read_the_questbook.quests20.subtitle": "Gone!",
+    "ftbquests.chapter.read_the_questbook.quests20.description0": "10k Infinite Fluid Pools from Create have been disabled in favour of more traditional automation. All the usual fluids, like Lava, have multiple recipes using Create machinery. Check REI for these recipes.",
+    "ftbquests.chapter.read_the_questbook.quests21.title": "How to FTBQuests",
+	"ftbquests.chapter.read_the_questbook.quests21.subtitle": "First time using a quest book?",
+    "ftbquests.chapter.read_the_questbook.quests21.description0": "Close this quest and hover your mouse to the left of the screen to open the chapter browser :)",
+    
     "ftbquests.chapter.the_trophy_room.title": "?) The Trophy Room",
     "ftbquests.chapter.the_trophy_room.quests0.title": "I automated",
     "ftbquests.chapter.the_trophy_room.quests0.description": "The Players were ever-cunning, they used anything to do everything.",

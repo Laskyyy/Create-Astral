@@ -71,6 +71,13 @@ onEvent("block.registry", (event) => {
         .displayName("Block of Ultramatter")
         .tagBlock("minecraft:mineable/pickaxe")
         .lightLevel(0.5);
+		
+	event
+        .create("definedsblocks:undefined_block")
+        .material("bone")
+        .hardness(26)
+        .displayName("uhhh ignore this")
+        .tagBlock("minecraft:mineable/pickaxe")
 
     event
         .create("createastral:copper_plating")
