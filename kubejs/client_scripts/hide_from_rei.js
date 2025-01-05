@@ -337,13 +337,11 @@ onEvent("rei.hide.items", (event) => {
         "minecraft:chain_command_block",
         "minecraft:chipped_anvil",
         "minecraft:command_block",
-        "minecraft:creeper_head",
         "minecraft:damaged_anvil",
         "minecraft:light",
         "minecraft:player_head",
         "minecraft:repeating_command_block",
         "minecraft:sculk_sensor",
-        "minecraft:zombie_head",
         Item.of("tconstruct:crafting_station", '{texture:"minecraft:acacia_log"}'),
         Item.of("tconstruct:crafting_station", '{texture:"minecraft:acacia_wood"}'),
         Item.of("tconstruct:crafting_station", '{texture:"minecraft:birch_log"}'),
@@ -601,8 +599,68 @@ onEvent("rei.hide.items", (event) => {
         "createbigcannons:molten_steel_bucket",
         "createbigcannons:molten_nethersteel_bucket",
         "createdeco:zinc_sheet",
+        "#yttr:project_tables",
         "createastral:laskinium",
         "createastral:laskinium_pill",
+
+        //Sequenced Assembly Transition Items - not useful to have in rei
+        "railways:white_incomplete_conductor_cap",
+        "railways:orange_incomplete_conductor_cap",
+        "railways:magenta_incomplete_conductor_cap",
+        "railways:light_blue_incomplete_conductor_cap",
+        "railways:yellow_incomplete_conductor_cap",
+        "railways:lime_incomplete_conductor_cap",
+        "railways:lime_incomplete_conductor_cap",
+        "railways:pink_incomplete_conductor_cap",
+        "railways:gray_incomplete_conductor_cap",
+        "railways:light_gray_incomplete_conductor_cap",
+        "railways:cyan_incomplete_conductor_cap",
+        "railways:purple_incomplete_conductor_cap",
+        "railways:blue_incomplete_conductor_cap",
+        "railways:brown_incomplete_conductor_cap",
+        "railways:green_incomplete_conductor_cap",
+        "railways:red_incomplete_conductor_cap",
+        "railways:black_incomplete_conductor_cap",
+        "railways:track_incomplete_acacia",
+        "railways:track_incomplete_jungle",
+        "railways:track_incomplete_oak",
+        "railways:track_incomplete_crimson",
+        "railways:track_incomplete_monorail",
+        "railways:track_incomplete_blackstone",
+        "railways:track_incomplete_phantom",
+        "railways:track_incomplete_birch",
+        "railways:track_incomplete_warped",
+        "railways:track_incomplete_ender",
+        "railways:track_incomplete_dark_oak",
+        "railways:track_incomplete_spruce",
+        "railways:track_incomplete_tieless",
+        "estrogen:incomplete_estrogen_patches",
+        "estrogen:incomplete_uwu",
+        "astralsignals:inter_data_drive_dormant_t1",
+        "astralsignals:inter_data_drive_dormant_t2",
+        "astralsignals:inter_data_drive_dormant_t3",
+
+        //Dummy Blocks
+        "astralgenerators:amalgamation_matrix_controller",
+        "astralgenerators:steam_turbine",
+        "astralgenerators:solid_boiler",
+        "astralgenerators:fluid_boiler",
+        "astralgenerators:assembler",
+        "astralsignals:signal_coordinator_dummy",
+        "astralsignals:radio_telescope_dummy",
+        "astralsignals:analog_decryptor_dummy",
+        "astralsignals:pp_decryptor_dummy",
+        "astralsignals:mp_decryptor_dummy",
+        "astralsignals:drive_eraser_dummy",
+        "astralsignals:vinyl_printer_dummy",
+        "createastral:distillery_dummy",
+        "createastral:electrolyser_dummy",
+        "createastral:stone_growth_chamber_dummy",
+        "createastral:slime_furnace_dummy",
+        "createastral:slime_furnace_on_dummy",
+        "createastral:washer_dummy",
+        "createastral:gas_mixer_dummy",
+        "createastral:channeling_transformer_dummy",
     ];
     addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:part_builder", "oak_planks", 41);
     addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:part_builder", "birch_planks", 41);
@@ -742,16 +800,12 @@ onEvent("rei.hide.items", (event) => {
     HIDDEN_ITEMS.forEach((id) => event.hide(id));
 });
 
-onEvent("rei.add.items", (event) => {
-    event.add(Item.of("ae2:facade", '{item:"minecraft:stone"}'));
-    //event.add("tconstruct:crafting_station");
-});
-
 onEvent("rei.hide.fluids", (event) => {
     event.hide("createbigcannons:molten_steel");
     event.hide("createbigcannons:molten_bronze");
     event.hide("createbigcannons:molten_nethersteel");
-    event.hide("estrogen:molten_amethyst");
     event.hide("estrogen:molten_slime");
+    event.hide("tconstruct:potion");
     event.hide("tconstruct:honey");
+    event.hide("travelersbackpack:potion_still");
 });

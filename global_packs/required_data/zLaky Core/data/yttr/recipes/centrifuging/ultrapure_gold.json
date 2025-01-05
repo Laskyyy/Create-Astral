@@ -1,6 +1,6 @@
 {
 	"type": "yttr:centrifuging",
-	"time": 1200,
+	"time": 600,
 	"ingredient": {
 		"item": "minecraft:gold_ingot",
 		"count": 8,
@@ -10,6 +10,14 @@
 		{
 			"item": "yttr:ultrapure_gold",
 			"count": 2
+		},
+		{
+			"item": "tconstruct:pig_iron_nugget",
+			"count": 1
+		},
+		{
+			"item": "techreborn:andesite_dust",
+			"count": 1
 		}
 	]
 }

@@ -1,6 +1,6 @@
 {
 	"type": "yttr:centrifuging",
-	"time": 1600,
+	"time": 800,
 	"ingredient": {
 		"item": "minecraft:netherite_scrap",
 		"count": 8,
@@ -18,6 +18,10 @@
 		{
 			"item": "minecraft:netherrack",
 			"count": 1
+		},
+		{
+			"item": "techreborn:netherrack_dust",
+			"count": 2
 		}
 	]
 }

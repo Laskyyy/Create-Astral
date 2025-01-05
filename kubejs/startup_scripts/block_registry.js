@@ -42,7 +42,13 @@ onEvent("block.registry", (event) => {
         .displayName("Mercurian Stone")
         .tagBlock("minecraft:mineable/pickaxe");
 				
-		event
+	event
+        .create("createastral:aurorite_block")
+        .material("stone")
+        .hardness(24)
+        .tagBlock("minecraft:mineable/pickaxe");
+				
+	event
         .create("createastral:sturdy_cage")
         .material("lantern")
         .defaultTranslucent()
@@ -50,7 +56,7 @@ onEvent("block.registry", (event) => {
         .displayName("Sturdy Cage")
         .tagBlock("minecraft:mineable/pickaxe");
 				
-		event
+	event
         .create("createastral:contained_end")
         .material("bone")
         .hardness(26)
@@ -58,13 +64,20 @@ onEvent("block.registry", (event) => {
         .tagBlock("minecraft:mineable/pickaxe")
         .lightLevel(0.5);
 				
-		event
+	event
         .create("createastral:ultramatter")
         .material("bone")
         .hardness(26)
         .displayName("Block of Ultramatter")
         .tagBlock("minecraft:mineable/pickaxe")
         .lightLevel(0.5);
+		
+	event
+        .create("definedsblocks:undefined_block")
+        .material("bone")
+        .hardness(26)
+        .displayName("uhhh ignore this")
+        .tagBlock("minecraft:mineable/pickaxe")
 
     event
         .create("createastral:copper_plating")

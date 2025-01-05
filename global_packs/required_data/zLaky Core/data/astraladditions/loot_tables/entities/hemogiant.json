@@ -1,0 +1,83 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+		{
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ae2:fluix_pearl",
+		  "weight": 33
+        },
+		{
+          "type": "minecraft:item",
+          "name": "minecraft:chorus_flower",
+		  "weight": 33
+        },
+		{
+          "type": "minecraft:item",
+          "name": "minecraft:ender_eye",
+		  "weight": 33
+        },
+		{
+          "type": "minecraft:item",
+          "name": "astralsignals:parallel_processor",
+		  "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 3,
+        "max": 4
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "astraladditions:moonset_crystal",
+          "weight": 20,
+					"functions": [
+						{
+							"function": "minecraft:looting_enchant",
+							"count": {
+								"min": 2.0,
+								"max": 3.0
+							},
+							"limit": 1
+						}
+					]
+        },
+				{
+          "type": "minecraft:item",
+          "name": "minecraft:ender_pearl",
+          "weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:looting_enchant",
+							"count": {
+								"min": 2.0,
+								"max": 3.0
+							},
+							"limit": 1
+						}
+					]
+        },
+				{
+          "type": "minecraft:item",
+          "name": "minecraft:chorus_fruit",
+          "weight": 5,
+					"functions": [
+						{
+							"function": "minecraft:looting_enchant",
+							"count": {
+								"min": 2.0,
+								"max": 3.0
+							},
+							"limit": 1
+						}
+					]
+        }
+      ]
+    }
+  ]
+}

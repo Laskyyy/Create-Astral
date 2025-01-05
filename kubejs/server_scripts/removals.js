@@ -60,7 +60,6 @@ onEvent("recipes", (event) => {
         { output: "techreborn:compressor" },
         { output: "techreborn:synthetic_redstone_crystal" },
         { output: "techreborn:bronze_nugget" },
-        { output: "techreborn:iron_plate" },
         { output: "techreborn:steel_ingot" },
         { output: "techreborn:steel_block" },
         { output: "techreborn:steel_plate" },
@@ -154,6 +153,7 @@ onEvent("recipes", (event) => {
             output: "techreborn:nak_coolant_cell_60k",
         },
         { id: "techreborn:crafting_table/paper" },
+        {output: "techreborn:block_placer"},
         //Create
         { output: "create:track" },
         { output: "create:blaze_cake" },
@@ -182,6 +182,11 @@ onEvent("recipes", (event) => {
             output: "create:andesite_alloy",
             input: "minecraft:andesite",
         },
+        {
+            output: "create:experience_nugget",
+            input: "create:experience_block",
+        },
+
 
         { type: "create:milling", output: "minecraft:gunpowder" },
         { type: "create:milling", output: "minecraft:flint" },
@@ -468,8 +473,11 @@ onEvent("recipes", (event) => {
 
         { output: "buildinggadgets:gadget_building" },
         { output: "buildinggadgets:gadget_copy_paste" },
+        { output: "buildinggadgets:gadget_destruction" },
+        { output: "buildinggadgets:gadget_exchanging" },
 
         // Yttr
+        { type: "yttr:centrifuging", input: "minecraft:coal"},
         { output: "yttr:chute" },
         { output: "yttr:rafter" },
         { output: "yttr:centrifuge" },
@@ -495,6 +503,7 @@ onEvent("recipes", (event) => {
         { output: "yttr:spatula" },
         { output: "yttr:giant_cobblestone" },
         { output: "yttr:armor_plating" },
+        { output: "yttr:lamp", input: "yttr:glowing_gas" },
 
         // Minecraft
 
@@ -587,12 +596,7 @@ onEvent("recipes", (event) => {
 
     // Define the array of materials
     const materials = [
-        "techreborn:lead",
         "techreborn:bronze",
-        "techreborn:steel",
-        "techreborn:tin",
-        "techreborn:copper",
-        "techreborn:steel",
         "techreborn:silver",
     ];
 
@@ -608,6 +612,8 @@ onEvent("recipes", (event) => {
         event.remove({ output: material + "_hoe" });
         event.remove({ output: material + "_shovel" });
     }
+
+    materials.forEach(removeRecipes);
 
     const metal = [
         "tungstensteel",
@@ -635,6 +641,28 @@ onEvent("recipes", (event) => {
         event.remove({ output: `techreborn:${metal}_dust` });
         event.remove({ output: `techreborn:${metal}_small_dust` });
         event.remove({ output: `techreborn:${metal}_nugget` });
+    });
+
+    // remove unused plate materials.
+    const plates = [
+        "iron",
+        "copper",
+        "gold",
+        "advanced_alloy",
+        "iridium_alloy",
+        "iridium",
+        "carbon",
+        "coal",
+        "emerald",
+        "lapis",
+        "lazurite",
+        "obsidian",
+        "redstone",
+        "silicon",
+    ];
+
+    plates.forEach((plate) => {
+        event.remove({ output: `techreborn:${plate}_plate` });
     });
 
     const dusts = [
@@ -686,6 +714,11 @@ onEvent("recipes", (event) => {
         ["uvarovite", false],
         ["glowstone", true],
         ["redstone", true],
+        ["peridot", false],
+        ["red_garnet", false],
+        ["ruby", false],
+        ["sapphire", false],
+        ["yellow_garnet", false],
     ];
     dusts.forEach((dust) => {
         if (!dust[1]) {
