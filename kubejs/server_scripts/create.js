@@ -3050,7 +3050,7 @@ function mixingRecipes(event) {
         },
         {
             output: "create:chromatic_compound",
-            input: ["5x techreborn:uu_matter", { fluid: "kubejs:shimmer", amount: BUCKET }],
+            input: ["4x techreborn:uu_matter", { fluid: "kubejs:shimmer", amount: BUCKET }],
             heat: "superheated",
             time: 2500,
         },
