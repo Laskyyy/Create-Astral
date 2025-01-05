@@ -1882,6 +1882,12 @@ function sequencedAssemblyRecipes(event) {
 function fillingRecipes(event) {
     [
 		{
+            input: "minecraft:glass_bottle",
+            output: "astraladditions:shimmer_bottle",
+            fluid: "kubejs:shimmer",
+            amount: 333 * mb,
+        },
+		{
             input: "minecraft:dirt",
             output: "tconstruct:sky_slime_dirt",
             fluid: "tconstruct:sky_slime",

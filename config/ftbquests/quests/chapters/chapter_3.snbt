@@ -158,22 +158,18 @@
 			]
 			dependencies: ["70799237323247B7"]
 			id: "6AEEE2B22E28945B"
-			tasks: [
-				{
-					id: "5852E083EF17B463"
-					type: "item"
-					item: "create:fluid_tank"
-					count: 4L
-				}
-			]
-			rewards: [
-				{
-					id: "5689B7136BEB29FC"
-					type: "item"
-					item: "create:fluid_tank"
-					count: 4
-				}
-			]
+			tasks: [{
+				id: "5852E083EF17B463"
+				type: "item"
+				item: "create:fluid_tank"
+				count: 4L
+			}]
+			rewards: [{
+				id: "5689B7136BEB29FC"
+				type: "item"
+				item: "create:fluid_tank"
+				count: 4
+			}]
 		}
 		{
 			x: -3.0d
@@ -248,14 +244,12 @@
 			]
 			dependencies: ["1F79F4D01B219D7E"]
 			id: "751CC4EF84A919C7"
-			tasks: [
-				{
-					id: "19A59A4A0A2A5541"
-					type: "item"
-					item: "tconstruct:seared_brick"
-					count: 32L
-				}
-			]
+			tasks: [{
+				id: "19A59A4A0A2A5541"
+				type: "item"
+				item: "tconstruct:seared_brick"
+				count: 32L
+			}]
 			rewards: [
 				{
 					id: "7000E291741C9F53"
@@ -306,14 +300,12 @@
 					item: "create:mechanical_pump"
 				}
 			]
-			rewards: [
-				{
-					id: "1BC7927E26233E37"
-					type: "item"
-					item: "minecraft:copper_ingot"
-					count: 16
-				}
-			]
+			rewards: [{
+				id: "1BC7927E26233E37"
+				type: "item"
+				item: "minecraft:copper_ingot"
+				count: 16
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests4.title}"
@@ -349,20 +341,16 @@
 			size: 3.0d
 			min_width: 300
 			id: "1F79F4D01B219D7E"
-			tasks: [
-				{
-					id: "3209A6ED527120C7"
-					type: "checkmark"
-					title: "{ftbquests.chapter.chapter_3.quests4.tasks0.title}"
-				}
-			]
-			rewards: [
-				{
-					id: "2347ADEAFB518BEC"
-					type: "xp"
-					xp: 150
-				}
-			]
+			tasks: [{
+				id: "3209A6ED527120C7"
+				type: "checkmark"
+				title: "{ftbquests.chapter.chapter_3.quests4.tasks0.title}"
+			}]
+			rewards: [{
+				id: "2347ADEAFB518BEC"
+				type: "xp"
+				xp: 150
+			}]
 		}
 		{
 			x: 5.0d
@@ -375,13 +363,11 @@
 			]
 			dependencies: ["557684C7D7B955B8"]
 			id: "17041A495A41EEFD"
-			tasks: [
-				{
-					id: "2D468975DA98C2B7"
-					type: "item"
-					item: "create:spout"
-				}
-			]
+			tasks: [{
+				id: "2D468975DA98C2B7"
+				type: "item"
+				item: "create:spout"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests6.title}"
@@ -430,13 +416,11 @@
 			]
 			dependencies: ["0A34148EBAF329B3"]
 			id: "6D5301A68808F8E8"
-			tasks: [
-				{
-					id: "590F0D26EB4E4101"
-					type: "item"
-					item: "tconstruct:seared_faucet"
-				}
-			]
+			tasks: [{
+				id: "590F0D26EB4E4101"
+				type: "item"
+				item: "tconstruct:seared_faucet"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests8.title}"
@@ -466,14 +450,12 @@
 					item: "tconstruct:seared_table"
 				}
 			]
-			rewards: [
-				{
-					id: "5FCAC2FEAE3BBD14"
-					type: "item"
-					item: "tconstruct:ingot_sand_cast"
-					count: 3
-				}
-			]
+			rewards: [{
+				id: "5FCAC2FEAE3BBD14"
+				type: "item"
+				item: "tconstruct:ingot_sand_cast"
+				count: 3
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests9.title}"
@@ -489,24 +471,20 @@
 			]
 			dependencies: ["267CD8D04921402E"]
 			id: "33B14FCDB52879E4"
-			tasks: [
-				{
-					id: "720A3210935826F3"
-					type: "item"
-					item: {
-						id: "explorerscompass:explorerscompass"
-						Count: 1b
-						tag: { }
-					}
+			tasks: [{
+				id: "720A3210935826F3"
+				type: "item"
+				item: {
+					id: "explorerscompass:explorerscompass"
+					Count: 1b
+					tag: { }
 				}
-			]
-			rewards: [
-				{
-					id: "31FB455D6634DC34"
-					type: "item"
-					item: "minecraft:map"
-				}
-			]
+			}]
+			rewards: [{
+				id: "31FB455D6634DC34"
+				type: "item"
+				item: "minecraft:map"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests10.title}"
@@ -568,20 +546,18 @@
 					}
 				}
 			]
-			rewards: [
-				{
-					id: "2158B503350C965A"
-					type: "item"
-					item: {
-						id: "minecraft:potion"
-						Count: 1b
-						tag: {
-							Potion: "minecraft:night_vision"
-						}
+			rewards: [{
+				id: "2158B503350C965A"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:night_vision"
 					}
-					count: 3
 				}
-			]
+				count: 3
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests11.title}"
@@ -610,22 +586,18 @@
 			]
 			size: 1.25d
 			id: "0A71AC65808AFBE5"
-			tasks: [
-				{
-					id: "2DBDDF4C51DE3879"
-					type: "item"
-					item: "createastral:shimmering_stone"
-					count: 10L
-				}
-			]
-			rewards: [
-				{
-					id: "64CA01C1E20C102F"
-					type: "item"
-					item: "createastral:shimmering_stone"
-					count: 4
-				}
-			]
+			tasks: [{
+				id: "2DBDDF4C51DE3879"
+				type: "item"
+				item: "createastral:shimmering_stone"
+				count: 10L
+			}]
+			rewards: [{
+				id: "64CA01C1E20C102F"
+				type: "item"
+				item: "createastral:shimmering_stone"
+				count: 4
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests12.title}"
@@ -636,26 +608,22 @@
 			dependencies: ["00F3EA4A8FB5B11B"]
 			size: 1.25d
 			id: "33F13EB2C45C36B3"
-			tasks: [
-				{
-					id: "0C1658CB1EAE88C0"
-					type: "item"
-					item: {
-						id: "createastral:astral_conduit"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "0C1658CB1EAE88C0"
+				type: "item"
+				item: {
+					id: "createastral:astral_conduit"
+					Count: 1b
+					tag: {
+						Damage: 0
 					}
 				}
-			]
-			rewards: [
-				{
-					id: "763A441926286C68"
-					type: "item"
-					item: "minecraft:enchanted_golden_apple"
-				}
-			]
+			}]
+			rewards: [{
+				id: "763A441926286C68"
+				type: "item"
+				item: "minecraft:enchanted_golden_apple"
+			}]
 		}
 		{
 			x: 9.5d
@@ -669,13 +637,11 @@
 			dependencies: ["343B8B2BF76B1D3B"]
 			optional: true
 			id: "4D7BFA8973D61425"
-			tasks: [
-				{
-					id: "773F68FCB1D6F848"
-					type: "item"
-					item: "ad_astra:oxygen_loader"
-				}
-			]
+			tasks: [{
+				id: "773F68FCB1D6F848"
+				type: "item"
+				item: "ad_astra:oxygen_loader"
+			}]
 		}
 		{
 			x: 8.0d
@@ -736,21 +702,17 @@
 				"17041A495A41EEFD"
 			]
 			id: "32B9EAE28E1C5D7A"
-			tasks: [
-				{
-					id: "059E87732C2699DC"
-					type: "item"
-					item: "create:electron_tube"
-				}
-			]
-			rewards: [
-				{
-					id: "1A4E57DF864AD13C"
-					type: "item"
-					item: "minecraft:redstone"
-					count: 24
-				}
-			]
+			tasks: [{
+				id: "059E87732C2699DC"
+				type: "item"
+				item: "create:electron_tube"
+			}]
+			rewards: [{
+				id: "1A4E57DF864AD13C"
+				type: "item"
+				item: "minecraft:redstone"
+				count: 24
+			}]
 		}
 		{
 			x: 5.0d
@@ -765,40 +727,36 @@
 			]
 			dependencies: ["32B9EAE28E1C5D7A"]
 			id: "267CD8D04921402E"
-			tasks: [
-				{
-					id: "799B7B25F4911437"
-					type: "item"
-					item: "phonos:redstone_chip"
-				}
-			]
-			rewards: [
-				{
-					id: "6CD1183CC7833669"
-					type: "item"
-					item: {
-						id: "create:schematic"
-						Count: 1b
-						tag: {
-							Anchor: {
-								Z: 0
-								X: 0
-								Y: 0
-							}
-							Owner: "Laskyyy"
-							Deployed: 0b
-							Rotation: "NONE"
-							File: "[AstralExamples] Electrolyzer.nbt"
-							Mirror: "NONE"
-							Bounds: [
-								7
-								6
-								7
-							]
+			tasks: [{
+				id: "799B7B25F4911437"
+				type: "item"
+				item: "phonos:redstone_chip"
+			}]
+			rewards: [{
+				id: "6CD1183CC7833669"
+				type: "item"
+				item: {
+					id: "create:schematic"
+					Count: 1b
+					tag: {
+						Anchor: {
+							Z: 0
+							X: 0
+							Y: 0
 						}
+						Owner: "Laskyyy"
+						Deployed: 0b
+						File: "[AstralExamples] Electrolyzer.nbt"
+						Rotation: "NONE"
+						Mirror: "NONE"
+						Bounds: [
+							7
+							6
+							7
+						]
 					}
 				}
-			]
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests17.title}"
@@ -823,13 +781,11 @@
 			]
 			dependencies: ["70799237323247B7"]
 			id: "0F4C452C9C9AB1B8"
-			tasks: [
-				{
-					id: "1BC2FEBA428BF095"
-					type: "item"
-					item: "tconstruct:molten_rose_gold_bucket"
-				}
-			]
+			tasks: [{
+				id: "1BC2FEBA428BF095"
+				type: "item"
+				item: "tconstruct:molten_rose_gold_bucket"
+			}]
 			rewards: [
 				{
 					id: "44A1974D27454D3A"
@@ -859,14 +815,12 @@
 			]
 			size: 3.0d
 			id: "15B9947ABCCB882F"
-			tasks: [
-				{
-					id: "26E0A4319968F290"
-					type: "dimension"
-					title: "{ftbquests.chapter.chapter_3.quests18.tasks0.title}"
-					dimension: "ad_astra:moon"
-				}
-			]
+			tasks: [{
+				id: "26E0A4319968F290"
+				type: "dimension"
+				title: "{ftbquests.chapter.chapter_3.quests18.tasks0.title}"
+				dimension: "ad_astra:moon"
+			}]
 			rewards: [
 				{
 					id: "22851C938DEDAC0C"
@@ -914,27 +868,23 @@
 			dependencies: ["267CD8D04921402E"]
 			dependency_requirement: "one_completed"
 			id: "00F3EA4A8FB5B11B"
-			tasks: [
-				{
-					id: "1BE3D8C8806EA239"
-					type: "item"
-					item: "kubejs:shimmer_bucket"
-				}
-			]
-			rewards: [
-				{
-					id: "31F9BBCBD48F1BFA"
-					type: "item"
-					item: {
-						id: "minecraft:potion"
-						Count: 1b
-						tag: {
-							Potion: "minecraft:healing"
-						}
+			tasks: [{
+				id: "1BE3D8C8806EA239"
+				type: "item"
+				item: "kubejs:shimmer_bucket"
+			}]
+			rewards: [{
+				id: "31F9BBCBD48F1BFA"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:healing"
 					}
-					count: 3
 				}
-			]
+				count: 3
+			}]
 		}
 		{
 			x: 5.0d
@@ -954,13 +904,11 @@
 				"41926BDF2F7890F6"
 			]
 			id: "557684C7D7B955B8"
-			tasks: [
-				{
-					id: "6CC8E342EABC3432"
-					type: "item"
-					item: "create:copper_casing"
-				}
-			]
+			tasks: [{
+				id: "6CC8E342EABC3432"
+				type: "item"
+				item: "create:copper_casing"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests21.title}"
@@ -970,21 +918,17 @@
 			description: ["{ftbquests.chapter.chapter_3.quests21.description}"]
 			dependencies: ["70799237323247B7"]
 			id: "5A1B85C3323DDBD1"
-			tasks: [
-				{
-					id: "57BB6CFDC8C9F731"
-					type: "item"
-					item: "kubejs:compound_mixture_bucket"
-				}
-			]
-			rewards: [
-				{
-					id: "0C0EDF94D00BFA3B"
-					type: "item"
-					item: "create:andesite_alloy"
-					count: 16
-				}
-			]
+			tasks: [{
+				id: "57BB6CFDC8C9F731"
+				type: "item"
+				item: "kubejs:compound_mixture_bucket"
+			}]
+			rewards: [{
+				id: "0C0EDF94D00BFA3B"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 16
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests22.title}"
@@ -998,19 +942,17 @@
 			]
 			dependencies: ["1519A1EA2CFA6FB1"]
 			id: "5042E544D3181FAC"
-			tasks: [
-				{
-					id: "622223D1E4140C47"
-					type: "item"
-					item: {
-						id: "tconstruct:tinkers_anvil"
-						Count: 1b
-						tag: {
-							texture: "createastral:bronze_block"
-						}
+			tasks: [{
+				id: "622223D1E4140C47"
+				type: "item"
+				item: {
+					id: "tconstruct:tinkers_anvil"
+					Count: 1b
+					tag: {
+						texture: "createastral:bronze_block"
 					}
 				}
-			]
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests23.title}"
@@ -1062,14 +1004,12 @@
 					match_nbt: true
 				}
 			]
-			rewards: [
-				{
-					id: "7EF43D1201B1F35A"
-					type: "item"
-					item: "minecraft:redstone_block"
-					count: 5
-				}
-			]
+			rewards: [{
+				id: "7EF43D1201B1F35A"
+				type: "item"
+				item: "minecraft:redstone_block"
+				count: 5
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests24.title}"
@@ -1150,8 +1090,8 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests27.title}"
-			x: 7.0d
-			y: -4.5d
+			x: 7.5d
+			y: -5.0d
 			subtitle: "{ftbquests.chapter.chapter_3.quests27.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_3.quests27.description0}"
@@ -1161,20 +1101,18 @@
 			hide_dependency_lines: true
 			dependencies: ["557684C7D7B955B8"]
 			id: "586FA45ED205784F"
-			tasks: [
-				{
-					id: "74C312D1BA7AE516"
-					type: "structure"
-					icon: {
-						id: "ftbquests:custom_icon"
-						Count: 1b
-						tag: {
-							Icon: "createdeco:textures/block/palettes/decal/pink_decal.png"
-						}
+			tasks: [{
+				id: "74C312D1BA7AE516"
+				type: "structure"
+				icon: {
+					id: "ftbquests:custom_icon"
+					Count: 1b
+					tag: {
+						Icon: "createdeco:textures/block/palettes/decal/pink_decal.png"
 					}
-					structure: "astralrails:shimmer_lake"
 				}
-			]
+				structure: "astralrails:shimmer_lake"
+			}]
 		}
 		{
 			x: 2.5d
@@ -1183,13 +1121,11 @@
 			description: ["{ftbquests.chapter.chapter_3.quests28.description}"]
 			dependencies: ["0F4C452C9C9AB1B8"]
 			id: "069634A427DE403F"
-			tasks: [
-				{
-					id: "363C22605DD3C4ED"
-					type: "item"
-					item: "reinfchest:gold_chest"
-				}
-			]
+			tasks: [{
+				id: "363C22605DD3C4ED"
+				type: "item"
+				item: "reinfchest:gold_chest"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests29.title}"
@@ -1199,21 +1135,17 @@
 			description: ["{ftbquests.chapter.chapter_3.quests29.description}"]
 			dependencies: ["70799237323247B7"]
 			id: "0E939F8167F47710"
-			tasks: [
-				{
-					id: "48920459D1BBDA83"
-					type: "item"
-					item: "tconstruct:molten_bronze_bucket"
-				}
-			]
-			rewards: [
-				{
-					id: "591B68F92188CBBC"
-					type: "item"
-					item: "create:cogwheel"
-					count: 16
-				}
-			]
+			tasks: [{
+				id: "48920459D1BBDA83"
+				type: "item"
+				item: "tconstruct:molten_bronze_bucket"
+			}]
+			rewards: [{
+				id: "591B68F92188CBBC"
+				type: "item"
+				item: "create:cogwheel"
+				count: 16
+			}]
 		}
 		{
 			icon: "tconstruct:gear_cast"
@@ -1292,14 +1224,12 @@
 			dependencies: ["1FAC54D118F09831"]
 			size: 1.5d
 			id: "62DAEDF65FB2226B"
-			tasks: [
-				{
-					id: "744B5A4CE8D4DBD4"
-					type: "item"
-					item: "techreborn:rubber"
-					count: 4L
-				}
-			]
+			tasks: [{
+				id: "744B5A4CE8D4DBD4"
+				type: "item"
+				item: "techreborn:rubber"
+				count: 4L
+			}]
 			rewards: [
 				{
 					id: "4ABE03E4C2915C68"
@@ -1336,21 +1266,17 @@
 			]
 			dependencies: ["62DAEDF65FB2226B"]
 			id: "710C81D7DE6C7FCB"
-			tasks: [
-				{
-					id: "69CD74B242D4D7D4"
-					type: "item"
-					item: "create:belt_connector"
-				}
-			]
-			rewards: [
-				{
-					id: "111A04CC66B24879"
-					type: "item"
-					item: "create:belt_connector"
-					count: 3
-				}
-			]
+			tasks: [{
+				id: "69CD74B242D4D7D4"
+				type: "item"
+				item: "create:belt_connector"
+			}]
+			rewards: [{
+				id: "111A04CC66B24879"
+				type: "item"
+				item: "create:belt_connector"
+				count: 3
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests34.title}"
@@ -1364,14 +1290,12 @@
 			]
 			dependencies: ["62DAEDF65FB2226B"]
 			id: "13B2095F8EE6B4D3"
-			tasks: [
-				{
-					id: "716518D91561DEFD"
-					type: "item"
-					item: "reinfchest:iron_chest"
-					count: 2L
-				}
-			]
+			tasks: [{
+				id: "716518D91561DEFD"
+				type: "item"
+				item: "reinfchest:iron_chest"
+				count: 2L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests35.title}"
@@ -1420,13 +1344,11 @@
 			]
 			dependencies: ["62DAEDF65FB2226B"]
 			id: "18159A0691993E5B"
-			tasks: [
-				{
-					id: "781EE507F4A75175"
-					type: "item"
-					item: "create:andesite_funnel"
-				}
-			]
+			tasks: [{
+				id: "781EE507F4A75175"
+				type: "item"
+				item: "create:andesite_funnel"
+			}]
 			rewards: [
 				{
 					id: "6DAF91C21A5DA98B"
@@ -1460,21 +1382,17 @@
 			]
 			dependencies: ["62DAEDF65FB2226B"]
 			id: "22F037A9108D116A"
-			tasks: [
-				{
-					id: "52B4D82C0E3E59E2"
-					type: "item"
-					item: "create:goggles"
-				}
-			]
-			rewards: [
-				{
-					id: "65E2D30DE201400C"
-					type: "item"
-					item: "create:stressometer"
-					count: 3
-				}
-			]
+			tasks: [{
+				id: "52B4D82C0E3E59E2"
+				type: "item"
+				item: "create:goggles"
+			}]
+			rewards: [{
+				id: "65E2D30DE201400C"
+				type: "item"
+				item: "create:stressometer"
+				count: 3
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests38.title}"
@@ -1551,21 +1469,17 @@
 			]
 			dependencies: ["1A683B56285B7DFC"]
 			id: "600FB959B71E4B18"
-			tasks: [
-				{
-					id: "72CCE7A23842964A"
-					type: "item"
-					item: "minecraft:dried_kelp"
-					count: 64L
-				}
-			]
-			rewards: [
-				{
-					id: "60F5D6526E49A3AE"
-					type: "xp"
-					xp: 50
-				}
-			]
+			tasks: [{
+				id: "72CCE7A23842964A"
+				type: "item"
+				item: "minecraft:dried_kelp"
+				count: 64L
+			}]
+			rewards: [{
+				id: "60F5D6526E49A3AE"
+				type: "xp"
+				xp: 50
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests41.title}"
@@ -1623,28 +1537,24 @@
 			description: ["{ftbquests.chapter.chapter_3.quests42.description}"]
 			dependencies: ["34F33F38F8BF2B22"]
 			id: "726EED16A080CFC4"
-			tasks: [
-				{
-					id: "351C7D49A9C4EFD9"
-					type: "item"
-					title: "{ftbquests.chapter.chapter_3.quests42.tasks0.title}"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "minecraft:logs_that_burn"
-						}
+			tasks: [{
+				id: "351C7D49A9C4EFD9"
+				type: "item"
+				title: "{ftbquests.chapter.chapter_3.quests42.tasks0.title}"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs_that_burn"
 					}
-					count: 128L
 				}
-			]
-			rewards: [
-				{
-					id: "5DB68D341AF2C9FE"
-					type: "xp"
-					xp: 50
-				}
-			]
+				count: 128L
+			}]
+			rewards: [{
+				id: "5DB68D341AF2C9FE"
+				type: "xp"
+				xp: 50
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests43.title}"
@@ -1825,21 +1735,17 @@
 			]
 			dependencies: ["62DAEDF65FB2226B"]
 			id: "42817242953BD9CA"
-			tasks: [
-				{
-					id: "28DBB8ADEE366629"
-					type: "item"
-					item: "create:andesite_tunnel"
-				}
-			]
-			rewards: [
-				{
-					id: "1A6B2424FFD9E72F"
-					type: "item"
-					item: "create:andesite_funnel"
-					count: 2
-				}
-			]
+			tasks: [{
+				id: "28DBB8ADEE366629"
+				type: "item"
+				item: "create:andesite_tunnel"
+			}]
+			rewards: [{
+				id: "1A6B2424FFD9E72F"
+				type: "item"
+				item: "create:andesite_funnel"
+				count: 2
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests47.title}"
@@ -1869,21 +1775,17 @@
 			]
 			size: 2.0d
 			id: "38814494AB07C2D8"
-			tasks: [
-				{
-					id: "645496942E14E974"
-					type: "checkmark"
-					title: "{ftbquests.chapter.chapter_3.quests47.tasks0.title}"
-				}
-			]
-			rewards: [
-				{
-					id: "61C410A110D3AE8F"
-					type: "item"
-					item: "create:builders_tea"
-					count: 3
-				}
-			]
+			tasks: [{
+				id: "645496942E14E974"
+				type: "checkmark"
+				title: "{ftbquests.chapter.chapter_3.quests47.tasks0.title}"
+			}]
+			rewards: [{
+				id: "61C410A110D3AE8F"
+				type: "item"
+				item: "create:builders_tea"
+				count: 3
+			}]
 		}
 		{
 			icon: "create:track"
@@ -1903,14 +1805,12 @@
 			dependencies: ["41926BDF2F7890F6"]
 			optional: true
 			id: "1BC8A4F925705AAD"
-			tasks: [
-				{
-					id: "6F02CB1D80713CD7"
-					type: "advancement"
-					advancement: "create:track_crafting_factory"
-					criterion: ""
-				}
-			]
+			tasks: [{
+				id: "6F02CB1D80713CD7"
+				type: "advancement"
+				advancement: "create:track_crafting_factory"
+				criterion: ""
+			}]
 			rewards: [
 				{
 					id: "4C5AE91F594F0018"
@@ -2049,13 +1949,11 @@
 				"0C3A39AC4C3D10A2"
 			]
 			id: "4642949B43A4F838"
-			tasks: [
-				{
-					id: "27DED2EFB8738FD3"
-					type: "item"
-					item: "create:cart_assembler"
-				}
-			]
+			tasks: [{
+				id: "27DED2EFB8738FD3"
+				type: "item"
+				item: "create:cart_assembler"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests51.title}"
@@ -2178,20 +2076,18 @@
 			]
 			dependencies: ["1519A1EA2CFA6FB1"]
 			id: "7856BCA1DB363174"
-			tasks: [
-				{
-					id: "61061313B1FF9DC3"
-					type: "item"
-					title: "{ftbquests.chapter.chapter_3.quests53.tasks0.title}"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "tconstruct:casts/gold"
-						}
+			tasks: [{
+				id: "61061313B1FF9DC3"
+				type: "item"
+				title: "{ftbquests.chapter.chapter_3.quests53.tasks0.title}"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tconstruct:casts/gold"
 					}
 				}
-			]
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests54.title}"
@@ -2389,14 +2285,12 @@
 					criterion: ""
 				}
 			]
-			rewards: [
-				{
-					id: "7807C96EAD96A936"
-					type: "item"
-					item: "create:white_sail"
-					count: 16
-				}
-			]
+			rewards: [{
+				id: "7807C96EAD96A936"
+				type: "item"
+				item: "create:white_sail"
+				count: 16
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests57.title}"
@@ -2416,13 +2310,11 @@
 			]
 			dependencies: ["18159A0691993E5B"]
 			id: "59E7FEA861328505"
-			tasks: [
-				{
-					id: "40AF0D2869E8C2D3"
-					type: "item"
-					item: "create:item_vault"
-				}
-			]
+			tasks: [{
+				id: "40AF0D2869E8C2D3"
+				type: "item"
+				item: "create:item_vault"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests58.title}"
@@ -2456,14 +2348,12 @@
 					count: 4L
 				}
 			]
-			rewards: [
-				{
-					id: "4E619525E3DF0B31"
-					type: "item"
-					item: "minecraft:lava_bucket"
-					count: 4
-				}
-			]
+			rewards: [{
+				id: "4E619525E3DF0B31"
+				type: "item"
+				item: "minecraft:lava_bucket"
+				count: 4
+			}]
 		}
 		{
 			x: -0.5d
@@ -2476,13 +2366,11 @@
 			]
 			dependencies: ["70799237323247B7"]
 			id: "31E69CA962A58692"
-			tasks: [
-				{
-					id: "5B411729AAD16009"
-					type: "item"
-					item: "create:smart_fluid_pipe"
-				}
-			]
+			tasks: [{
+				id: "5B411729AAD16009"
+				type: "item"
+				item: "create:smart_fluid_pipe"
+			}]
 		}
 		{
 			x: 3.5d
@@ -2539,14 +2427,12 @@
 			]
 			dependencies: ["7DA20A39EC1DE7EA"]
 			id: "731D9E7777150B6A"
-			tasks: [
-				{
-					id: "1DF4BEDC3FB10D99"
-					type: "advancement"
-					advancement: "create:windmill_maxed"
-					criterion: ""
-				}
-			]
+			tasks: [{
+				id: "1DF4BEDC3FB10D99"
+				type: "advancement"
+				advancement: "create:windmill_maxed"
+				criterion: ""
+			}]
 			rewards: [
 				{
 					id: "4C96C01B7564D095"
@@ -2580,13 +2466,11 @@
 			]
 			dependencies: ["0C3A39AC4C3D10A2"]
 			id: "2B8584C007CB9EFF"
-			tasks: [
-				{
-					id: "25061F9EE73507D3"
-					type: "checkmark"
-					title: "{ftbquests.chapter.chapter_3.quests62.tasks0.title}"
-				}
-			]
+			tasks: [{
+				id: "25061F9EE73507D3"
+				type: "checkmark"
+				title: "{ftbquests.chapter.chapter_3.quests62.tasks0.title}"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests63.title}"
@@ -2630,22 +2514,18 @@
 			]
 			dependencies: ["726EED16A080CFC4"]
 			id: "6C24E4B83E454EC5"
-			tasks: [
-				{
-					id: "364A0657277272C9"
-					type: "item"
-					title: "{ftbquests.chapter.chapter_3.quests64.tasks0.title}"
-					item: "techreborn:rubber"
-					count: 256L
-				}
-			]
-			rewards: [
-				{
-					id: "2673DE427711FCD7"
-					type: "xp"
-					xp: 200
-				}
-			]
+			tasks: [{
+				id: "364A0657277272C9"
+				type: "item"
+				title: "{ftbquests.chapter.chapter_3.quests64.tasks0.title}"
+				item: "techreborn:rubber"
+				count: 256L
+			}]
+			rewards: [{
+				id: "2673DE427711FCD7"
+				type: "xp"
+				xp: 200
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests65.title}"
@@ -2671,13 +2551,11 @@
 			]
 			dependencies: ["38814494AB07C2D8"]
 			id: "7DF5B49918827647"
-			tasks: [
-				{
-					id: "72B6D7AE0932635B"
-					type: "checkmark"
-					title: "{ftbquests.chapter.chapter_3.quests65.tasks0.title}"
-				}
-			]
+			tasks: [{
+				id: "72B6D7AE0932635B"
+				type: "checkmark"
+				title: "{ftbquests.chapter.chapter_3.quests65.tasks0.title}"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests66.title}"
@@ -2687,14 +2565,12 @@
 			description: ["{ftbquests.chapter.chapter_3.quests66.description}"]
 			dependencies: ["5A1B85C3323DDBD1"]
 			id: "6229BC66A88B614B"
-			tasks: [
-				{
-					id: "535BFA280660D524"
-					type: "item"
-					item: "doodads:asphalt"
-					count: 32L
-				}
-			]
+			tasks: [{
+				id: "535BFA280660D524"
+				type: "item"
+				item: "doodads:asphalt"
+				count: 32L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests67.title}"
@@ -2748,14 +2624,12 @@
 					}
 				}
 			]
-			rewards: [
-				{
-					id: "358BBCC53DC4B6AF"
-					type: "item"
-					item: "minecraft:nautilus_shell"
-					count: 5
-				}
-			]
+			rewards: [{
+				id: "358BBCC53DC4B6AF"
+				type: "item"
+				item: "minecraft:nautilus_shell"
+				count: 5
+			}]
 		}
 		{
 			icon: "ad_astra:moon_stone"
@@ -2783,13 +2657,11 @@
 					title: "{ftbquests.chapter.chapter_3.quests68.tasks1.title}"
 				}
 			]
-			rewards: [
-				{
-					id: "4F4AC8EE18D127B0"
-					type: "xp"
-					xp: 50
-				}
-			]
+			rewards: [{
+				id: "4F4AC8EE18D127B0"
+				type: "xp"
+				xp: 50
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests69.title}"
@@ -2820,14 +2692,12 @@
 					item: "tconstruct:scorched_table"
 				}
 			]
-			rewards: [
-				{
-					id: "1297734708EBAC0C"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 2053519168689179764L
-				}
-			]
+			rewards: [{
+				id: "1297734708EBAC0C"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
+			}]
 		}
 		{
 			icon: "tconstruct:smeltery_controller"
@@ -2843,13 +2713,11 @@
 			]
 			dependencies: ["0A34148EBAF329B3"]
 			id: "7BFEA241D8543721"
-			tasks: [
-				{
-					id: "67E083F03D9B713C"
-					type: "checkmark"
-					title: "{ftbquests.chapter.chapter_3.quests70.tasks0.title}"
-				}
-			]
+			tasks: [{
+				id: "67E083F03D9B713C"
+				type: "checkmark"
+				title: "{ftbquests.chapter.chapter_3.quests70.tasks0.title}"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests71.title}"
@@ -2872,14 +2740,12 @@
 			]
 			dependencies: ["17041A495A41EEFD"]
 			id: "2F5E73F6CEA949AA"
-			tasks: [
-				{
-					id: "09137995FF6F40D8"
-					type: "item"
-					item: "create:sturdy_sheet"
-					count: 256L
-				}
-			]
+			tasks: [{
+				id: "09137995FF6F40D8"
+				type: "item"
+				item: "create:sturdy_sheet"
+				count: 256L
+			}]
 			rewards: [
 				{
 					id: "2E7C8444D0A1D5B4"
@@ -2922,14 +2788,12 @@
 				"0F4C452C9C9AB1B8"
 			]
 			id: "610593E8EACE8EBC"
-			tasks: [
-				{
-					id: "6311CD924197D073"
-					type: "item"
-					item: "tconstruct:silky_cloth"
-					count: 5L
-				}
-			]
+			tasks: [{
+				id: "6311CD924197D073"
+				type: "item"
+				item: "tconstruct:silky_cloth"
+				count: 5L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests73.title}"
@@ -2939,14 +2803,12 @@
 			description: ["{ftbquests.chapter.chapter_3.quests73.description}"]
 			dependencies: ["5042E544D3181FAC"]
 			id: "1EA3910AEF29A489"
-			tasks: [
-				{
-					id: "544FA0A773D09A1F"
-					type: "item"
-					item: "minecraft:redstone_block"
-					count: 5L
-				}
-			]
+			tasks: [{
+				id: "544FA0A773D09A1F"
+				type: "item"
+				item: "minecraft:redstone_block"
+				count: 5L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests74.title}"
@@ -2991,14 +2853,12 @@
 					item: "minecraft:horn_coral_block"
 				}
 			]
-			rewards: [
-				{
-					id: "16DBA4D8CCABB01A"
-					type: "item"
-					item: "minecraft:sea_pickle"
-					count: 16
-				}
-			]
+			rewards: [{
+				id: "16DBA4D8CCABB01A"
+				type: "item"
+				item: "minecraft:sea_pickle"
+				count: 16
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests75.title}"
@@ -3021,46 +2881,42 @@
 			]
 			dependencies: ["557684C7D7B955B8"]
 			id: "7F3DD44E4885A837"
-			tasks: [
-				{
-					id: "0F2DE8EE0A4B0AB0"
-					type: "item"
-					item: {
-						id: "custommachinery:custom_machine_item"
-						Count: 1b
-						tag: {
-							machine: "createastral:stone_growth_chamber"
-						}
+			tasks: [{
+				id: "0F2DE8EE0A4B0AB0"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "createastral:stone_growth_chamber"
 					}
 				}
-			]
-			rewards: [
-				{
-					id: "2C0CD5E9685CFFEA"
-					type: "item"
-					item: {
-						id: "create:schematic"
-						Count: 1b
-						tag: {
-							Anchor: {
-								Z: 0
-								X: 0
-								Y: 0
-							}
-							Owner: "Laskyyy"
-							Deployed: 0b
-							Rotation: "NONE"
-							File: "[AstralExamples] Stone Growth Chamber.nbt"
-							Mirror: "NONE"
-							Bounds: [
-								3
-								3
-								3
-							]
+			}]
+			rewards: [{
+				id: "2C0CD5E9685CFFEA"
+				type: "item"
+				item: {
+					id: "create:schematic"
+					Count: 1b
+					tag: {
+						Anchor: {
+							Z: 0
+							X: 0
+							Y: 0
 						}
+						Owner: "Laskyyy"
+						Deployed: 0b
+						File: "[AstralExamples] Stone Growth Chamber.nbt"
+						Rotation: "NONE"
+						Mirror: "NONE"
+						Bounds: [
+							3
+							3
+							3
+						]
 					}
 				}
-			]
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_3.quests76.title}"
@@ -3142,6 +2998,29 @@
 					table_id: 2053519168689179764L
 				}
 			]
+		}
+		{
+			title: "{ftbquests.chapter.chapter_3.quests80.title}"
+			x: 6.5d
+			y: -5.0d
+			subtitle: "{ftbquests.chapter.chapter_3.quests80.title}"
+			description: [
+				"{ftbquests.chapter.chapter_3.quests80.description0}"
+				""
+				"{ftbquests.chapter.chapter_3.quests80.description2}"
+			]
+			dependencies: ["00F3EA4A8FB5B11B"]
+			id: "2F47A42AA439BA7B"
+			tasks: [{
+				id: "2195C7B99D5DF0CF"
+				type: "item"
+				item: "astraladditions:shimmer_lily"
+			}]
+			rewards: [{
+				id: "3032AFD48AB063DE"
+				type: "item"
+				item: "astraladditions:shimmer_bottle"
+			}]
 		}
 	]
 	quest_links: [ ]
