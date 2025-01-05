@@ -3931,7 +3931,7 @@ function mechanicalCraftingRecipes(event) {
             },
         },
         {
-            output: "astraladditions:desizer_8",
+            output: "astraladditions:desizer_base",
             shape: ["YLY", "YBY", "YPY"],
             inputs: {
                 Y: "createastral:ender_plating",
