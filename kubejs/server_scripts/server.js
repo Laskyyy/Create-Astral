@@ -253,6 +253,23 @@ function astralAdditionsFood(event) {
     });
 }
 
+onEvent("recipes", (event) => {
+    event.custom({
+        type: "astraladditions:shimmer_transmute",
+        input: {
+            item: "astralfoods:chocolate_ice_cream",
+            count: 1,
+        },
+
+        output: [
+            {
+                item: "astralfoods:ambrosia",
+                count: 1,
+            },
+        ],
+    });
+});
+
 // Includes some "ore alchemy" and other misc blocks like andeste alloy blocks
 function lizardMiscChanges(event) {
     // Implementing Andesite Alloy Block

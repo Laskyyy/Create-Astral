@@ -1881,7 +1881,7 @@ function sequencedAssemblyRecipes(event) {
 
 function fillingRecipes(event) {
     [
-		{
+        {
             input: "minecraft:glass_bottle",
             output: "astraladditions:shimmer_bottle",
             fluid: "kubejs:shimmer",
@@ -2014,6 +2014,12 @@ function fillingRecipes(event) {
             amount: INGOT,
         },
         {
+            input: "minecraft:cookie",
+            output: "astralfoods:ice_cream_sandwich",
+            fluid: "astralfoods:cream",
+            amount: 250 * mB,
+        },
+        {
             input: "minecraft:bowl",
             output: "farmersdelight:squid_ink_pasta",
             fluid: "kubejs:squid_ink_pasta_fluid",
@@ -2041,7 +2047,7 @@ function fillingRecipes(event) {
             input: "drinkbeer:empty_beer_mug",
             output: "drinkbeer:beer_mug_blaze_milk_stout",
             fluid: "kubejs:blaze_milk_stout_fluid",
-            amount: 250 * mB
+            amount: 250 * mB,
         },
         {
             input: "drinkbeer:empty_beer_mug",
@@ -2173,7 +2179,7 @@ function mixingRecipes(event) {
             heat: "",
             time: 180,
         },
-		{
+        {
             output: [
 				{
 					fluid: "kubejs:shimmer",
@@ -3369,8 +3375,20 @@ function mixingRecipes(event) {
             input: ["astralfoods:astral_sauce", "2x astralfoods:quantum_bites", "farmersdelight:raw_pasta"],
             heat: "heated",
             time: 250,
-				},
-				{
+        },
+        {
+            output: ["astralfoods:chocolate_ice_cream"],
+            input: [
+                "create:bar_of_chocolate",
+                {
+                    fluid: "astralfoods:cream",
+                    amount: BUCKET / 4,
+                },
+            ],
+            heat: "heated",
+            time: 100,
+        },
+        {
             output: "yttr:ruined_cobblestone",
             input: ["minecraft:cobblestone", "yttr:rubble", {
 				fluid: "tconstruct:magma",
