@@ -253,23 +253,6 @@ function astralAdditionsFood(event) {
     });
 }
 
-onEvent("recipes", (event) => {
-    event.custom({
-        type: "astraladditions:shimmer_transmute",
-        input: {
-            item: "astralfoods:chocolate_ice_cream",
-            count: 1,
-        },
-
-        output: [
-            {
-                item: "astralfoods:ambrosia",
-                count: 1,
-            },
-        ],
-    });
-});
-
 // Includes some "ore alchemy" and other misc blocks like andeste alloy blocks
 function lizardMiscChanges(event) {
     // Implementing Andesite Alloy Block
@@ -315,11 +298,7 @@ function lizardMiscChanges(event) {
     });
 
     // Change the resin basin recipe to use an Item Drain so that it can be crafted during chapter 2
-    event.replaceInput(
-        { id: "techreborn:crafting_table/machine/resin_basin" },
-        "techreborn:drain",
-        "create:item_drain"
-    );
+    event.replaceInput({id:"techreborn:crafting_table/machine/resin_basin"}, "techreborn:drain", "create:item_drain")
 
     // Buffed catwalk output. Seriously! Its so resource heavy!
     const CATWALK_MATERIALS = [
@@ -1383,12 +1362,14 @@ onEvent("recipes", (event) => {
         F: "techreborn:basic_machine_frame",
     });
 
+
     event.shaped("techreborn:block_breaker", ["SCS", "SDS", "SFS"], {
         S: "create:sturdy_sheet",
         C: "create:integrated_circuit",
         D: "create:mechanical_drill",
         F: "techreborn:basic_machine_frame",
     });
+
 
     event.shaped("techreborn:player_detector", ["SCS", "TRT", "SFS"], {
         S: "create:sturdy_sheet",
