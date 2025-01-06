@@ -255,7 +255,7 @@ const mixings = [
                     "minecraft:blaze_powder",
                     { fluid: "tconstruct:blood", amount: BUCKET },
                 ],
-                heat: "",
+                heat: "heated",
                 time: 120,
             }];
             for (const mixing of mixings) {
