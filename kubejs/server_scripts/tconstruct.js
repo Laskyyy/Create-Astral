@@ -22,6 +22,12 @@ onEvent("recipes", (event) => {
             cooling_time: 140,
             cast: ["minecraft:diorite", true],
         },
+		{
+            fluid: ["minecraft:lava", INGOT],
+            result: "minecraft:deepslate",
+            cooling_time: 140,
+            cast: ["minecraft:cobblestone", true],
+        },
         {
             fluid: ["yttr:void", BUCKET],
             result: "yttr:raw_gadolinite_block",

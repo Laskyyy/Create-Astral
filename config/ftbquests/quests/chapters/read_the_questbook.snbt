@@ -7,20 +7,18 @@
 	icon: "ftbquests:book"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	images: [
-		{
-			x: -8.5d
-			y: -2.0d
-			width: 15.0d
-			height: 15.0d
-			rotation: 0.0d
-			image: "createastral:textures/item/portal.png"
-			hover: [ ]
-			click: ""
-			dev: false
-			corner: false
-		}
-	]
+	images: [{
+		x: -8.5d
+		y: -2.0d
+		width: 15.0d
+		height: 15.0d
+		rotation: 0.0d
+		image: "createastral:textures/item/portal.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
 	quests: [
 		{
 			title: "{ftbquests.chapter.read_the_questbook.quests0.title}"
@@ -40,12 +38,10 @@
 				"{ftbquests.chapter.read_the_questbook.quests0.description2}"
 			]
 			id: "39FDFD195622958E"
-			tasks: [
-				{
-					id: "00029B4CC32B7DCD"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "00029B4CC32B7DCD"
+				type: "checkmark"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.read_the_questbook.quests1.title}"
@@ -83,12 +79,10 @@
 				"{ftbquests.chapter.read_the_questbook.quests2.description2}"
 			]
 			id: "604EEAD6E9E5D671"
-			tasks: [
-				{
-					id: "4C1E4BD27BAAEDF0"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "4C1E4BD27BAAEDF0"
+				type: "checkmark"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.read_the_questbook.quests3.title}"
@@ -108,12 +102,10 @@
 				"{ftbquests.chapter.read_the_questbook.quests3.description8}"
 			]
 			id: "120F8BAE32A271B8"
-			tasks: [
-				{
-					id: "54D46298535515CD"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "54D46298535515CD"
+				type: "checkmark"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.read_the_questbook.quests4.title}"
@@ -133,12 +125,10 @@
 				"{ftbquests.chapter.read_the_questbook.quests4.description2}"
 			]
 			id: "01438CFAE0491B76"
-			tasks: [
-				{
-					id: "28660DD237438E78"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "28660DD237438E78"
+				type: "checkmark"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.read_the_questbook.quests5.title}"
@@ -154,12 +144,10 @@
 				"{ftbquests.chapter.read_the_questbook.quests5.description4}"
 			]
 			id: "671B581118263B3A"
-			tasks: [
-				{
-					id: "26274474BC591ECF"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "26274474BC591ECF"
+				type: "checkmark"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.read_the_questbook.quests6.title}"
@@ -173,12 +161,10 @@
 				"{ftbquests.chapter.read_the_questbook.quests6.description2}"
 			]
 			id: "6C4B3D1FD0CA9903"
-			tasks: [
-				{
-					id: "5687C491EEC25E38"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "5687C491EEC25E38"
+				type: "checkmark"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.read_the_questbook.quests7.title}"
@@ -194,12 +180,10 @@
 				"{ftbquests.chapter.read_the_questbook.quests7.description4}"
 			]
 			id: "0AC8216D9E5F1131"
-			tasks: [
-				{
-					id: "5CB0331F5A76150B"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "5CB0331F5A76150B"
+				type: "checkmark"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.read_the_questbook.quests8.title}"
@@ -219,12 +203,10 @@
 				"{ftbquests.chapter.read_the_questbook.quests8.description8}"
 			]
 			id: "620C9147A1AD808F"
-			tasks: [
-				{
-					id: "6EBA920A8E37F431"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "6EBA920A8E37F431"
+				type: "checkmark"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.read_the_questbook.quests9.title}"
@@ -240,12 +222,10 @@
 				"{ftbquests.chapter.read_the_questbook.quests9.description4}"
 			]
 			id: "441EA3A4F4DDC6A7"
-			tasks: [
-				{
-					id: "5EF5138C4FFA1D40"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "5EF5138C4FFA1D40"
+				type: "checkmark"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.read_the_questbook.quests10.title}"
@@ -258,12 +238,10 @@
 				"{ftbquests.chapter.read_the_questbook.quests10.description2}"
 			]
 			id: "6F757AA5D8206995"
-			tasks: [
-				{
-					id: "3EF6EF90A1BA32E9"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "3EF6EF90A1BA32E9"
+				type: "checkmark"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.read_the_questbook.quests11.title}"
@@ -308,12 +286,10 @@
 				"{ftbquests.chapter.read_the_questbook.quests12.description2}"
 			]
 			id: "2567CAC0A184AC8F"
-			tasks: [
-				{
-					id: "338D8F2C593FE97E"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "338D8F2C593FE97E"
+				type: "checkmark"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.read_the_questbook.quests13.title}"
@@ -327,12 +303,10 @@
 				"{ftbquests.chapter.read_the_questbook.quests13.description2}"
 			]
 			id: "0896080DB6ED4E3D"
-			tasks: [
-				{
-					id: "710CEF4FF2ADA411"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "710CEF4FF2ADA411"
+				type: "checkmark"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.read_the_questbook.quests14.title}"
@@ -356,12 +330,10 @@
 				"{ftbquests.chapter.read_the_questbook.quests14.description6}"
 			]
 			id: "48863CE3EB44E94C"
-			tasks: [
-				{
-					id: "7D080DA78B72A6FB"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "7D080DA78B72A6FB"
+				type: "checkmark"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.read_the_questbook.quests15.title}"
@@ -379,13 +351,11 @@
 			]
 			size: 3.0d
 			id: "70E54AE7E953CDB2"
-			tasks: [
-				{
-					id: "0FFF0F95A45D6A56"
-					type: "item"
-					item: "ftbquests:book"
-				}
-			]
+			tasks: [{
+				id: "0FFF0F95A45D6A56"
+				type: "item"
+				item: "ftbquests:book"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.read_the_questbook.quests16.title}"
@@ -399,12 +369,10 @@
 				"{ftbquests.chapter.read_the_questbook.quests16.description2}"
 			]
 			id: "02E38442290805ED"
-			tasks: [
-				{
-					id: "7B022C1C8FCE53E2"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "7B022C1C8FCE53E2"
+				type: "checkmark"
+			}]
 		}
 		{
 			icon: {
@@ -425,13 +393,11 @@
 				"{ftbquests.chapter.read_the_questbook.quests17.description4}"
 			]
 			id: "717070F52F2CC786"
-			tasks: [
-				{
-					id: "42CB71A3B0C8A6BF"
-					type: "checkmark"
-					title: "{ftbquests.chapter.read_the_questbook.quests17.tasks0.title}"
-				}
-			]
+			tasks: [{
+				id: "42CB71A3B0C8A6BF"
+				type: "checkmark"
+				title: "{ftbquests.chapter.read_the_questbook.quests17.tasks0.title}"
+			}]
 		}
 		{
 			icon: {
@@ -451,13 +417,11 @@
 				"{ftbquests.chapter.read_the_questbook.quests18.description4}"
 			]
 			id: "12236EB957EBAF2A"
-			tasks: [
-				{
-					id: "2AB40504A683A539"
-					type: "checkmark"
-					title: "{ftbquests.chapter.read_the_questbook.quests18.tasks0.title}"
-				}
-			]
+			tasks: [{
+				id: "2AB40504A683A539"
+				type: "checkmark"
+				title: "{ftbquests.chapter.read_the_questbook.quests18.tasks0.title}"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.read_the_questbook.quests19.title}"
@@ -478,12 +442,38 @@
 				"{ftbquests.chapter.read_the_questbook.quests19.description10}"
 			]
 			id: "280C4BF916CC90BC"
-			tasks: [
-				{
-					id: "401D67F02E5ED682"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "401D67F02E5ED682"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.read_the_questbook.quests20.title}"
+			icon: "minecraft:lava_bucket"
+			x: -11.5d
+			y: -5.5d
+			subtitle: "{ftbquests.chapter.read_the_questbook.quests20.subtitle}"
+			description: ["{ftbquests.chapter.read_the_questbook.quests20.description0}"]
+			id: "7304102B52418B23"
+			tasks: [{
+				id: "05528784AC7BA0C1"
+				type: "checkmark"
+				title: "Understood!"
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.read_the_questbook.quests21.title}"
+			icon: "minecraft:book"
+			x: -10.5d
+			y: -5.5d
+			subtitle: "{ftbquests.chapter.read_the_questbook.quests21.subtitle}"
+			description: ["{ftbquests.chapter.read_the_questbook.quests21.description0}"]
+			id: "689345B1199DF01F"
+			tasks: [{
+				id: "0F6066B1517FEAB5"
+				type: "checkmark"
+				title: "Wow thanks!"
+			}]
 		}
 	]
 	quest_links: [ ]

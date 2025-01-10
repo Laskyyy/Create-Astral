@@ -253,7 +253,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%{"placeholder":"local","values":{"key":"astralmenu.changelog.2_1.label"}}%n%^^^
+  source = {"placeholder":"local","values":{"key":"astralmenu.changelog.2_1.label"}}
   source_mode = direct
   shadow = true
   scale = 1.0

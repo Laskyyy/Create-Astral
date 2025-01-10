@@ -47,8 +47,8 @@ function millingRecipes(event) {
         ["minecraft:twisting_vines", "minecraft:blue_dye", 1],
         ["minecraft:weeping_vines", "minecraft:red_dye", 1],
         ["minecraft:sweet_berries", "minecraft:red_dye", 1],
-        ["vinery:red_grape", "minecraft:purple_dye", 1],
-        ["vinery:white_grape", "minecraft:lime_dye", 1],
+        ["vinery:red_grape", "minecraft:purple_dye", 0.5],
+        ["vinery:white_grape", "minecraft:lime_dye", 0.5],
         ["minecraft:melon_slice", "minecraft:red_dye", 0.5],
         ["minecraft:snow_block", "2x minecraft:snowball", 1],
         ["createastral:crushed_raw_gadolinite", "yttr:yttrium_dust", 1],
@@ -526,7 +526,7 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem("tconstruct:large_ender_slime_crystal_bud")
         .loops(3);
 
-		event.recipes
+	event.recipes
         .createSequencedAssembly(Item.of("cookingforblockheads:cow_jar"), "cookingforblockheads:milk_jar", [
             event.recipes.createDeploying("cookingforblockheads:milk_jar", [
                 "cookingforblockheads:milk_jar",
@@ -542,6 +542,52 @@ function sequencedAssemblyRecipes(event) {
             ]),
         ])
         .transitionalItem("cookingforblockheads:milk_jar")
+        .loops(1);
+	
+	event.recipes
+        .createSequencedAssembly(Item.of("minecraft:sea_lantern"), "minecraft:prismarine", [
+			event.recipes.createDeploying("minecraft:prismarine", [
+                "minecraft:prismarine",
+                ["minecraft:prismarine_crystals"],
+            ])
+        ])
+        .transitionalItem("chipped:sea_lantern_2")
+        .loops(5);
+	
+	event.recipes
+        .createSequencedAssembly(Item.of("yttr:lamp"), "minecraft:redstone_torch", [
+			event.recipes.createDeploying("minecraft:redstone_torch", [
+                "minecraft:redstone_torch",
+                ["minecraft:iron_bars"],
+            ]),
+            event.recipes.createDeploying("minecraft:redstone_torch", [
+                "minecraft:redstone_torch",
+                ["create:framed_glass"],
+            ]),
+            event.recipes.createDeploying("minecraft:redstone_torch", [
+                "minecraft:redstone_torch",
+                ["minecraft:iron_bars"],
+            ])
+        ])
+        .transitionalItem("chipped:redstone_lamp_1")
+        .loops(1);
+		
+	event.recipes
+        .createSequencedAssembly(Item.of("createastral:horse"), "minecraft:leather_horse_armor", [
+            event.recipes.createDeploying("minecraft:leather_horse_armor", [
+                "minecraft:leather_horse_armor",
+                ["minecraft:apple"],
+            ]),
+            event.recipes.createDeploying("minecraft:leather_horse_armor", [
+                "minecraft:leather_horse_armor",
+                ["minecraft:hay_block"],
+            ]),
+            event.recipes.createFilling("minecraft:leather_horse_armor", [
+                "minecraft:leather_horse_armor",
+                { fluid: "tconstruct:blood", amount: 100 * mB },
+            ]),
+        ])
+        .transitionalItem("minecraft:leather_horse_armor")
         .loops(1);
 
     event.recipes
@@ -843,6 +889,59 @@ function sequencedAssemblyRecipes(event) {
             )
             .transitionalItem("ad_astra:mercury_stone")
             .loops(5);
+			
+		event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "createastral:aurorite_block", // output
+                ],
+                "ad_astra:polished_permafrost",
+                [
+                    // input
+                    event.recipes.createDeploying("ad_astra:polished_permafrost", [
+                        "ad_astra:ice_shard",
+                        "ad_astra:ice_shard",
+                    ]),
+                    event.recipes.createDeploying("ad_astra:polished_permafrost", [
+                        "ad_astra:ice_shard",
+                        "ad_astra:ice_shard",
+                    ]),
+                    event.recipes.createFilling("ad_astra:polished_permafrost", [
+                        "ad_astra:polished_permafrost",
+                        { fluid: "kubejs:aurorite", amount: BUCKET / 2 },
+                    ]),
+                    event.recipes.createPressing("ad_astra:polished_permafrost", "ad_astra:polished_permafrost"),
+                ]
+            )
+            .transitionalItem("ad_astra:polished_permafrost")
+			.loops(1);
+			
+		event.recipes
+            .createSequencedAssembly(
+                [
+                    // begin
+                    "estrogen:estrogen_patches", // output
+                ],
+                "minecraft:paper",
+                [
+                    // input
+                    event.recipes.createFilling("create:sand_paper", [
+                        "create:sand_paper",
+                        { fluid: "tconstruct:molten_queens_slime", amount: BUCKET },
+                    ]),
+                    event.recipes.createFilling("create:sand_paper", [
+                        "create:sand_paper",
+                        { fluid: "estrogen:liquid_estrogen", amount: BUCKET },
+                    ]),
+                    event.recipes.createDeploying("create:sand_paper", [
+                        "blahaj:blue_shark",
+                        "blahaj:blue_shark",
+                    ]),
+                ]
+            )
+            .transitionalItem("ad_astra:polished_permafrost")
+			.loops(1);
 
         event.recipes
             .createSequencedAssembly(
@@ -919,7 +1018,7 @@ function sequencedAssemblyRecipes(event) {
                     ),
                 ]
             )
-            .transitionalItem("create:copper_casing")
+            .transitionalItem("createastral:incomplete_brass_casing")
             .loops(3);
 
         event.recipes
@@ -945,7 +1044,7 @@ function sequencedAssemblyRecipes(event) {
                     ]),
                 ]
             )
-            .transitionalItem("techreborn:basic_machine_frame")
+            .transitionalItem("createastral:incomplete_advanced_machine_frame")
             .loops(1);
 
         event.recipes
@@ -971,7 +1070,7 @@ function sequencedAssemblyRecipes(event) {
                     ]),
                 ]
             )
-            .transitionalItem("techreborn:advanced_machine_frame")
+            .transitionalItem("createastral:incomplete_industrial_machine_frame")
             .loops(1);
 
         let transitional_lapis_sheet = "createastral:transitional_lapis_sheet";
@@ -1647,7 +1746,7 @@ function sequencedAssemblyRecipes(event) {
             event.recipes.createDeploying("phonos:redstone_chip", ["phonos:redstone_chip", "techreborn:electrum_nugget"]),
             event.recipes.createPressing("phonos:redstone_chip", "phonos:redstone_chip"),
         ])
-        .transitionalItem("phonos:redstone_chip")
+        .transitionalItem("createastral:incomplete_navigation_mechanism")
         .loops(30);
 
     event.recipes
@@ -1678,7 +1777,7 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem("minecraft:ender_pearl")
         .loops(3);
 
-    const inc_redstone_chip = "create:electron_tube";
+    const inc_redstone_chip = "createastral:incomplete_redstone_chip";
     event.recipes
         .createSequencedAssembly(
             [
@@ -1741,7 +1840,7 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem("minecraft:black_dye")
         .loops(2);
 
-    const inc_dash_panel = "create:iron_sheet";
+    const inc_dash_panel = "createastral:incomplete_dash_panel";
     //Dash panel
     event.recipes
         .createSequencedAssembly(["automobility:dash_panel"], "create:iron_sheet", [
@@ -1753,7 +1852,7 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem(inc_dash_panel)
         .loops(3);
 
-    const inc_refining_agent = "ae2:fluix_dust";
+    const inc_refining_agent = "createastral:incomplete_refining_agent";
     event.recipes
         .createSequencedAssembly(["createastral:refining_agent"], "ae2:fluix_dust", [
             event.recipes.createFilling(inc_refining_agent, [
@@ -1769,7 +1868,7 @@ function sequencedAssemblyRecipes(event) {
         .transitionalItem(inc_refining_agent)
         .loops(3);
 
-    const inc_separation_agent = "createastral:incomplete_separation_agent";
+/*     const inc_separation_agent = "createastral:incomplete_separation_agent";
     event.recipes
         .createSequencedAssembly(["minecraft:paper"], "createastral:separation_agent", [
             event.recipes.createDeploying(inc_separation_agent, [inc_separation_agent, "techreborn:charcoal_dust"]),
@@ -1777,11 +1876,17 @@ function sequencedAssemblyRecipes(event) {
             event.recipes.createDeploying(inc_separation_agent, [inc_separation_agent, "techreborn:sulfur_dust"]),
         ])
         .transitionalItem(inc_separation_agent)
-        .loops(3);
+        .loops(3); */
 }
 
 function fillingRecipes(event) {
     [
+		{
+            input: "minecraft:glass_bottle",
+            output: "astraladditions:shimmer_bottle",
+            fluid: "kubejs:shimmer",
+            amount: 333 * mB,
+        },
 		{
             input: "minecraft:dirt",
             output: "tconstruct:sky_slime_dirt",
@@ -1992,6 +2097,11 @@ function fillingRecipes(event) {
 function deployingRecipes(event) {
     [
 		{
+            output: "minecraft:redstone_torch",
+            basin_input: "minecraft:torch",
+            deployer_input: "minecraft:redstone",
+        },
+		{
             output: "dbe:vanta_black",
             basin_input: "minecraft:stone",
             deployer_input: "minecraft:black_dye",
@@ -2034,6 +2144,35 @@ function mixingRecipes(event) {
     // Heat: "" = no heat, "heated", or "superheated"
     // Time: Mixing time in ticks
     [
+		{
+            output: [
+				{
+					fluid: "estrogen:molten_amethyst",
+					amount: INGOT,
+				}
+			],
+            input: [
+				{
+					fluid: "tconstruct:molten_amethyst",
+					amount: BUCKET,
+				},
+				"astraladditions:bulba_root"
+			],
+            heat: "",
+            time: 210,
+        },
+		{
+            output: [
+				"create:tree_fertilizer"
+			],
+            input: [
+				"#minecraft:saplings",
+				"#c:coral_fans",
+				"minecraft:bone_meal"
+			],
+            heat: "",
+            time: 180,
+        },
 		{
             output: [
 				{
@@ -2255,6 +2394,18 @@ function mixingRecipes(event) {
 				"cookingforblockheads:cow_jar"
 			],
             input: ["cookingforblockheads:cow_jar"],
+            heat: "",
+            time: 60,
+        },
+		{
+            output: [
+				{
+					fluid: "estrogen:horse_urine",
+					amount: BUCKET/2,
+				},
+				"createastral:horse"
+			],
+            input: ["createastral:horse"],
             heat: "",
             time: 60,
         },
@@ -2899,7 +3050,7 @@ function mixingRecipes(event) {
         },
         {
             output: "create:chromatic_compound",
-            input: ["5x techreborn:uu_matter", { fluid: "kubejs:shimmer", amount: BUCKET }],
+            input: ["4x techreborn:uu_matter", { fluid: "kubejs:shimmer", amount: BUCKET }],
             heat: "superheated",
             time: 2500,
         },
@@ -3780,7 +3931,7 @@ function mechanicalCraftingRecipes(event) {
             },
         },
         {
-            output: "astraladditions:desizer_8",
+            output: "astraladditions:desizer_base",
             shape: ["YLY", "YBY", "YPY"],
             inputs: {
                 Y: "createastral:ender_plating",
@@ -4338,6 +4489,14 @@ function farmersDelightIntegration(event) {
 function compactingRecipes(event) {
     [
 		{
+            output: ["minecraft:end_stone"],
+            inputs: [
+				"yttr:yttrium_dust",
+				"3x techreborn:dark_ashes_dust",
+				{ fluid: "tconstruct:molten_ender", amount: 125 * mB }
+			],
+        },
+		{
             output: ["ae2:fluix_pearl"],
             inputs: [
 				"4x createastral:shimmer_marimo",
@@ -4356,6 +4515,14 @@ function compactingRecipes(event) {
             inputs: [
 				"4x createastral:snowy_marimo",
 				"minecraft:seagrass"
+			],
+        },
+		{
+            output: "farmersdelight:organic_compost",
+            inputs: [
+				"minecraft:coarse_dirt",
+				"create:tree_fertilizer",
+				"createastral:pure_biomatter"
 			],
         },
 		{
