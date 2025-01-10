@@ -13,6 +13,24 @@ variable {
 }
 
 variable {
+  name = viewed_changelog_2.1.2
+  value = false
+  reset_on_launch = false
+}
+
+variable {
+  name = viewed_changelog_2.1.3
+  value = false
+  reset_on_launch = false
+}
+
+variable {
+  name = viewed_changelog_2.1.4
+  value = false
+  reset_on_launch = false
+}
+
+variable {
   name = version
   value = EXPERIMENTAL
   reset_on_launch = false
