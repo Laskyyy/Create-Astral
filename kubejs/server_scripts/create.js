@@ -2146,6 +2146,19 @@ function mixingRecipes(event) {
     [
 		{
             output: [
+				"create:dough"
+			],
+            input: [
+				"create:wheat_flour",
+				{
+					fluid: "minecraft:water",
+					amount: BUCKET / 2,
+				}
+			],
+            heat: "",
+            time: 10,
+        },{
+            output: [
 				{
 					fluid: "estrogen:molten_amethyst",
 					amount: INGOT,

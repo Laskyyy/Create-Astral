@@ -243,6 +243,10 @@ onEvent("recipes", (event) => {
             output: "create:brass_casing",
             type: "create:item_application",
         },
+        {
+            type: "create:mixing",
+            output: "create:dough",
+        },
         { mod: "create", output: "minecraft:andesite" },
 
         // Create Deco
