@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "astralrails:nether/purpur_fortress",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"spacing": 16,
+		"separation": 8,
+		"salt": 1139251414
+	}
+}

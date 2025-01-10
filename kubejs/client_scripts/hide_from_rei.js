@@ -636,25 +636,6 @@ onEvent("rei.hide.items", (event) => {
         "railways:track_incomplete_tieless",
         "estrogen:incomplete_estrogen_patches",
         "estrogen:incomplete_uwu",
-        "createastral:incomplete_blaze_head",
-        "createastral:incomplete_transitional_electronic_circuit",
-        "createastral:transitional_lapis_sheet",
-        "createastral:incomplete_navigation_mechanism",
-        "createastral:incomplete_redstone_chip",
-        "createastral:incomplete_refining_agent",
-        "createastral:incomplete_separation_agent",
-        "createastral:incomplete_pure_star_shard",
-        "createastral:incomplete_calculation_processor",
-        "createastral:incomplete_logic_processor",
-        "createastral:incomplete_engineering_processor",
-        "createastral:incomplete_dash_panel",
-        "createastral:incomplete_copper_casing",
-        "createastral:incomplete_basic_machine_frame",
-        "createastral:incomplete_brass_casing",
-        "createastral:incomplete_advanced_machine_frame",
-        "createastral:incomplete_industrial_machine_frame",
-        "createastral:incomplete_refined_radiance_casing",
-        "createastral:incomplete_shadow_steel_casing",
         "astralsignals:inter_data_drive_dormant_t1",
         "astralsignals:inter_data_drive_dormant_t2",
         "astralsignals:inter_data_drive_dormant_t3",
@@ -823,7 +804,6 @@ onEvent("rei.hide.fluids", (event) => {
     event.hide("createbigcannons:molten_steel");
     event.hide("createbigcannons:molten_bronze");
     event.hide("createbigcannons:molten_nethersteel");
-    event.hide("estrogen:molten_amethyst");
     event.hide("estrogen:molten_slime");
     event.hide("tconstruct:potion");
     event.hide("tconstruct:honey");

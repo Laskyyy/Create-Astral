@@ -1,0 +1,11 @@
+{
+  "config": {
+    "start_pool": "astralrails:nether/purpur_fortress/start",
+    "size": 7
+  },
+  "biomes": "#astralrails:has_structure/purpur_fortress",
+  "adapt_noise":false,
+  "spawn_overrides": {
+  },
+  "type": "minecraft:bastion_remnant"
+}

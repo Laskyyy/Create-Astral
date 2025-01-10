@@ -45,6 +45,10 @@ onEvent("item.registry", (event) => {
     event.create("createastral:fragile_rocket_fin");
     event.create("createastral:broken_fragile_rocket_fin");
     event.create("createastral:gold_casted_rocket_fin");
+    event.create("createastral:horse")
+		.food((food) => {
+            food.hunger(0).saturation(0).alwaysEdible();
+        });
     event.create("createastral:marimo")
 		.food((food) => {
             food.hunger(1).saturation(0).alwaysEdible();
@@ -127,7 +131,7 @@ onEvent("item.registry", (event) => {
         .create("astralfoods:shimmered_apple")
         .displayName("Shimmered Apple")
         .food((food) => {
-            food.hunger(7).saturation(1.5).effect("instant_health", 60, 1, 1);
+            food.hunger(7).saturation(1.4).effect("regeneration", 60, 1, 1);
         });
 
     event
@@ -268,9 +272,11 @@ onEvent("item.registry", (event) => {
     event.create("kubejs:incomplete_apple_wine").texture("kubejs:item/apple_wine");
     event.create("kubejs:incomplete_apple_cider").texture("kubejs:item/apple_cider");
     event.create("kubejs:incomplete_kelp_cider").texture("kubejs:item/kelp_cider");
-    event
-        .create("createastral:incomplete_blaze_head", "create:sequenced_assembly")
-        .displayName("Incomplete Blaze Head");
+    //event
+    //    .create("createastral:incomplete_blaze_head", "create:sequenced_assembly")
+    //    .displayName("Incomplete Blaze Head");
+	
+    event.create("createastral:incomplete_blaze_head", "create:sequenced_assembly").displayName("Golden Coin");
     event
         .create("createastral:incomplete_transitional_electronic_circuit", "create:sequenced_assembly")
         .displayName("Incomplete Electronic Circuit");

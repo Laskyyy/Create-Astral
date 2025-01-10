@@ -851,6 +851,14 @@ onEvent("recipes", (event) => {
         A: "techreborn:tin_plate",
         B: "techreborn:wood_plate",
     });
+	
+	event.shaped("2x ae2:wireless_booster", ["SCE", "III"], {
+        S: "ae2:fluix_dust",
+        C: "ae2:charged_certus_quartz_crystal",
+        E: "ae2:ender_dust",
+        I: "techreborn:silver_plate",
+    });
+
 
     event.shaped("minecraft:shulker_shell", ["BBB", "BAB", "BBB"], {
         A: "minecraft:nautilus_shell",
@@ -1490,6 +1498,13 @@ onEvent("recipes", (event) => {
         B: "ad_astra:calorite_ingot",
         C: "techreborn:diamond_plate",
     });
+	event.shaped("4x yttr:lamp", ["ABA", "BCB", "ABA"], {
+        A: "minecraft:iron_ingot",
+        B: "minecraft:glass_pane",
+        C: "minecraft:redstone_lamp"
+    });
+
+
 
     /// Stuff Laky CBA updating to new format from experimental yet
 

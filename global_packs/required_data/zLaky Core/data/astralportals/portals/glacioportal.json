@@ -1,0 +1,10 @@
+{
+    "block": "createastral:aurorite_block",
+    "dim": "ad_astra:glacio",
+    "ignitionType": "ITEM",
+    "ignitionSource": "createastral:astral_conduit",
+	"returnDim": "ad_astra:mars",
+    "r": 38,
+    "g": 128,
+    "b": 192
+}

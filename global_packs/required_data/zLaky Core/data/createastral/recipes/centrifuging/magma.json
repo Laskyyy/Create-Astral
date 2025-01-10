@@ -2,8 +2,8 @@
   "type": "estrogen:centrifuging",
   "ingredients": [
     {
-      "amount": 364,
-      "fluid": "minecraft:lava",
+      "amount": 81,
+      "fluid": "createbigcannons:molten_cast_iron",
       "nbt": {}
     }
   ],
