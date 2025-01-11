@@ -1,15 +1,15 @@
 type = fancymenu_layout
 
 layout-meta {
-  identifier = modpack_changelog_2.1.2
+  identifier = modpack_changelog_2.1.4
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1734693431817
+  last_edited_time = 1736553610925
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:8ec61fec-7627-4222-a4ad-7042da72b8d8-1734693425410] = [groups:][instances:]
+  [loading_requirement_container_meta:d49c6a46-060d-4327-b981-9d5fec475392-1736553606091] = [groups:][instances:]
 }
 
 customization {
@@ -63,7 +63,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%2.1.2 addresses issues identified by the community, and introduces new features which are detailed in the below changelog.%n%%n%Thanks to everyone for helping make Astral as enjoyable as possible!%n%^^^
+  source = ^^^%n%[2.1.4 summary]%n%^^^
   source_mode = direct
   shadow = true
   scale = 0.7
@@ -105,7 +105,7 @@ element {
 
 element {
   interactable = true
-  source = - **Quest book is now fully implemented with localisation keys for translators, thanks to the efforts from the internationalisation modpack pull request on GitHub.** %n%%n%Create: Copycats updated to 2.1.4, which includes copycats for components such as cogwheels and fluid pipes!%n%- XPcrystals updated to 1.0.5 (QoL), fixes for xp lake spawning.%n%- Various ch6 world gen tweaks, monazite spawning.%n%- Moon Debris now has a portal and ore geodes.%n%- Blazing blood automation path%n%- Quest book states bottomless lava tanks don't exist but they did, config adjusted so newly generated worlds will actually reflect that. If enabling bottomless fluids in create config yourself, new fluids can be bottomless such as chocolate, blood, milk and honey to reflect them being useful in many automation recipes.%n%- Fix for some default included schematics showing the wrong multiblocks.%n%- Stone growth QoL (Block tags in structure, cobblestone variant using stone bricks)%n%- Remove conflicting netherrack crushing recipes%n%- Added missing recipe for calorite tank%n%- General fixes for item names that displayed as internal names.%n%- Quantum tanks re-buffed to Tier 6 Upgrade levels (virtually infinite).%n%- Misc. Lang file tweaks and quest book discrepancy fixes.%n%- Copper shovel can now be used in recipes that look for shovel tags (farmers delight)%n%%n%- Pull Request: Added StarEI -- an REI Addon for astral's Custom Machinery recipes - A Pepper%n%- Pull Request: Remove Venus and Glacio in proxima centuri from the planet menu - CubeBotFan%n%- Pull Request: Block tags in stone growth chamber multiblock and distillery blaze burners are less strict with fluid burners - CubeBotFan%n%- Pull Request:  Added new food items, Bulba's Tea, Dipped Potato. Adjusted Shimmered Apple and Seared potato recipes. Adjust some food stats and effects. - MikoTheBoi%n%- Pull Request:  Metal Alloying fixes -> Create does allow for regular heated Crafting recipes to be done when Superheated. Distinguished Superheated / Heated alloying by using molten metals in heated and solid metals with superheated. -GreenOxygen%n%- Misc. Pull Requests: Vinery seeds from grapes, new kelpfarm recipes, gold dupe fix, eggs without chickens, buff some 2.1.1 recipes to make them more appealing -GreenOxygen%n%- Pull Request:  Nerf steam turbine. 168k E --> 15k E - DefinedEntity%n%- Pull Request: Added Defined's Blocks mod - DefinedEntity
+  source = [2.1.4 patch notes]
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -223,8 +223,8 @@ element {
 element {
   button_element_executable_block_identifier = 14dacea9-bfd2-48d0-b100-e0fe780bd33c-1728748209889
   [executable_action_instance:e9f652b9-5c84-4318-bb03-1c4c66ba295b-1728927278426][action_type:closegui] = 
-  [executable_action_instance:6d0e4496-965f-4fdb-9bce-ac7daebd62e5-1728748621236][action_type:opengui] = modpack_changelog_2.1.1
-  [executable_action_instance:e04c70cf-5fa5-43a3-aa6c-e19a46807db9-1728749196882][action_type:set_variable] = viewed_changelog_2.1.1:true
+  [executable_action_instance:6d0e4496-965f-4fdb-9bce-ac7daebd62e5-1728748621236][action_type:opengui] = modpack_changelog_2.1.3
+  [executable_action_instance:e04c70cf-5fa5-43a3-aa6c-e19a46807db9-1728749196882][action_type:set_variable] = viewed_changelog_2.1.3:true
   [executable_block:14dacea9-bfd2-48d0-b100-e0fe780bd33c-1728748209889][type:generic] = [executables:e9f652b9-5c84-4318-bb03-1c4c66ba295b-1728927278426;6d0e4496-965f-4fdb-9bce-ac7daebd62e5-1728748621236;e04c70cf-5fa5-43a3-aa6c-e19a46807db9-1728749196882;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
@@ -253,7 +253,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%{"placeholder":"local","values":{"key":"astralmenu.changelog.2_1_1.label"}}%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"astralmenu.changelog.2_1_3.label"}}%n%^^^
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -309,106 +309,6 @@ element {
   anchor_point = element
   anchor_point_element = e8f5abda-1459-4a90-bc21-a2ecb33d21e6-1728748209888
   x = 35
-  y = -5
-  width = 10
-  height = 10
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 112bdd4f-1d86-4cd5-997e-92c2d82ff02c-1728748714164
-  [loading_requirement_container_meta:112bdd4f-1d86-4cd5-997e-92c2d82ff02c-1728748714164] = [groups:][instances:d04b0455-a474-4f54-8d2e-becc879cc9d4-1728748815885;]
-  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:d04b0455-a474-4f54-8d2e-becc879cc9d4-1728748815885] = viewed_changelog_2.1.1:false
-}
-
-element {
-  button_element_executable_block_identifier = 14dacea9-bfd2-48d0-b100-e0fe780bd33c-1728748209889
-  [executable_action_instance:e9f652b9-5c84-4318-bb03-1c4c66ba295b-1728927278426][action_type:closegui] = 
-  [executable_action_instance:6d0e4496-965f-4fdb-9bce-ac7daebd62e5-1728748621236][action_type:opengui] = modpack_changelog_2.1.3
-  [executable_action_instance:e04c70cf-5fa5-43a3-aa6c-e19a46807db9-1728749196882][action_type:set_variable] = viewed_changelog_2.1.3:true
-  [executable_block:14dacea9-bfd2-48d0-b100-e0fe780bd33c-1728748209889][type:generic] = [executables:e9f652b9-5c84-4318-bb03-1c4c66ba295b-1728927278426;6d0e4496-965f-4fdb-9bce-ac7daebd62e5-1728748621236;e04c70cf-5fa5-43a3-aa6c-e19a46807db9-1728749196882;]
-  restartbackgroundanimations = true
-  loopbackgroundanimations = true
-  nine_slice_custom_background = false
-  nine_slice_border_x = 5
-  nine_slice_border_y = 5
-  label = →
-  navigatable = true
-  element_type = custom_button
-  instance_identifier = d5f3a078-544a-45d4-8d30-2b9ad74bd189-1736552038249
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in = false
-  fade_in_speed = 1.0
-  anchor_point = mid-left
-  x = 796
-  y = -20
-  width = 40
-  height = 40
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 24d09220-1053-4450-81c5-bf463a8cae67-1728748209888
-  [loading_requirement_container_meta:24d09220-1053-4450-81c5-bf463a8cae67-1728748209888] = [groups:][instances:]
-}
-
-element {
-  interactable = true
-  source = ^^^%n%{"placeholder":"local","values":{"key":"astralmenu.changelog.2_1_3.label"}}%n%^^^
-  source_mode = direct
-  shadow = true
-  scale = 1.0
-  base_color = #FFFFFFFF
-  text_border = 2
-  line_spacing = 2
-  enable_scrolling = false
-  auto_line_wrapping = false
-  remove_html_breaks = true
-  code_block_single_color = #737373FF
-  code_block_multi_color = #565656FF
-  headline_line_color = #A9A9A9FF
-  separation_line_color = #A9A9A9FF
-  hyperlink_color = #0771FCFF
-  quote_color = #818181FF
-  quote_indent = 8.0
-  quote_italic = false
-  bullet_list_dot_color = #A9A9A9FF
-  bullet_list_indent = 8.0
-  bullet_list_spacing = 3.0
-  parse_markdown = true
-  element_type = text_v2
-  instance_identifier = fbf6120b-a610-4e15-9c41-0d2ffae4b6a9-1736552038249
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in = false
-  fade_in_speed = 1.0
-  anchor_point = element
-  anchor_point_element = e8f5abda-1459-4a90-bc21-a2ecb33d21e6-1728748209888
-  x = 768
-  y = 40
-  width = 60
-  height = 16
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 11be1bac-34e2-4658-b85f-4d28a7271046-1728748481566
-  [loading_requirement_container_meta:11be1bac-34e2-4658-b85f-4d28a7271046-1728748481566] = [groups:][instances:]
-}
-
-element {
-  source = [source:local]/config/fancymenu/assets/notification.gif
-  repeat_texture = false
-  nine_slice_texture = false
-  nine_slice_texture_border_x = 5
-  nine_slice_texture_border_y = 5
-  element_type = image
-  instance_identifier = e59e93db-946b-4789-82fa-878a64ea66b4-1736552038250
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in = false
-  fade_in_speed = 1.0
-  anchor_point = element
-  anchor_point_element = e8f5abda-1459-4a90-bc21-a2ecb33d21e6-1728748209888
-  x = 811
   y = -5
   width = 10
   height = 10

@@ -223,8 +223,8 @@ element {
 element {
   button_element_executable_block_identifier = 14dacea9-bfd2-48d0-b100-e0fe780bd33c-1728748209889
   [executable_action_instance:e9f652b9-5c84-4318-bb03-1c4c66ba295b-1728927278426][action_type:closegui] = 
-  [executable_action_instance:6d0e4496-965f-4fdb-9bce-ac7daebd62e5-1728748621236][action_type:opengui] = modpack_changelog_2.1
-  [executable_action_instance:e04c70cf-5fa5-43a3-aa6c-e19a46807db9-1728749196882][action_type:set_variable] = viewed_changelog_2.1:true
+  [executable_action_instance:6d0e4496-965f-4fdb-9bce-ac7daebd62e5-1728748621236][action_type:opengui] = modpack_changelog_2.1.2
+  [executable_action_instance:e04c70cf-5fa5-43a3-aa6c-e19a46807db9-1728749196882][action_type:set_variable] = viewed_changelog_2.1.2:true
   [executable_block:14dacea9-bfd2-48d0-b100-e0fe780bd33c-1728748209889][type:generic] = [executables:e9f652b9-5c84-4318-bb03-1c4c66ba295b-1728927278426;6d0e4496-965f-4fdb-9bce-ac7daebd62e5-1728748621236;e04c70cf-5fa5-43a3-aa6c-e19a46807db9-1728749196882;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
@@ -240,7 +240,7 @@ element {
   fade_in = false
   fade_in_speed = 1.0
   anchor_point = mid-left
-  x = 20
+  x = 18
   y = -20
   width = 40
   height = 40
@@ -253,7 +253,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%{"placeholder":"local","values":{"key":"astralmenu.changelog.2_1.label"}}%n%^^^
+  source = ^^^%n%{"placeholder":"local","values":{"key":"astralmenu.changelog.2_1_2.label"}}%n%^^^
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -317,5 +317,105 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = 112bdd4f-1d86-4cd5-997e-92c2d82ff02c-1728748714164
   [loading_requirement_container_meta:112bdd4f-1d86-4cd5-997e-92c2d82ff02c-1728748714164] = [groups:][instances:d04b0455-a474-4f54-8d2e-becc879cc9d4-1728748815885;]
-  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:d04b0455-a474-4f54-8d2e-becc879cc9d4-1728748815885] = viewed_changelog_2.1:false
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:d04b0455-a474-4f54-8d2e-becc879cc9d4-1728748815885] = viewed_changelog_2.1.2:false
+}
+
+element {
+  button_element_executable_block_identifier = 14dacea9-bfd2-48d0-b100-e0fe780bd33c-1728748209889
+  [executable_action_instance:e9f652b9-5c84-4318-bb03-1c4c66ba295b-1728927278426][action_type:closegui] = 
+  [executable_action_instance:6d0e4496-965f-4fdb-9bce-ac7daebd62e5-1728748621236][action_type:opengui] = modpack_changelog_2.1.4
+  [executable_action_instance:e04c70cf-5fa5-43a3-aa6c-e19a46807db9-1728749196882][action_type:set_variable] = viewed_changelog_2.1.4:true
+  [executable_block:14dacea9-bfd2-48d0-b100-e0fe780bd33c-1728748209889][type:generic] = [executables:e9f652b9-5c84-4318-bb03-1c4c66ba295b-1728927278426;6d0e4496-965f-4fdb-9bce-ac7daebd62e5-1728748621236;e04c70cf-5fa5-43a3-aa6c-e19a46807db9-1728749196882;]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  label = →
+  navigatable = true
+  element_type = custom_button
+  instance_identifier = d5f3a078-544a-45d4-8d30-2b9ad74bd189-1736552038249
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-left
+  x = 796
+  y = -20
+  width = 40
+  height = 40
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 24d09220-1053-4450-81c5-bf463a8cae67-1728748209888
+  [loading_requirement_container_meta:24d09220-1053-4450-81c5-bf463a8cae67-1728748209888] = [groups:][instances:]
+}
+
+element {
+  interactable = true
+  source = ^^^%n%{"placeholder":"local","values":{"key":"astralmenu.changelog.2_1_4.label"}}%n%^^^
+  source_mode = direct
+  shadow = true
+  scale = 1.0
+  base_color = #FFFFFFFF
+  text_border = 2
+  line_spacing = 2
+  enable_scrolling = false
+  auto_line_wrapping = false
+  remove_html_breaks = true
+  code_block_single_color = #737373FF
+  code_block_multi_color = #565656FF
+  headline_line_color = #A9A9A9FF
+  separation_line_color = #A9A9A9FF
+  hyperlink_color = #0771FCFF
+  quote_color = #818181FF
+  quote_indent = 8.0
+  quote_italic = false
+  bullet_list_dot_color = #A9A9A9FF
+  bullet_list_indent = 8.0
+  bullet_list_spacing = 3.0
+  parse_markdown = true
+  element_type = text_v2
+  instance_identifier = fbf6120b-a610-4e15-9c41-0d2ffae4b6a9-1736552038249
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = element
+  anchor_point_element = e8f5abda-1459-4a90-bc21-a2ecb33d21e6-1728748209888
+  x = 768
+  y = 40
+  width = 60
+  height = 16
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 11be1bac-34e2-4658-b85f-4d28a7271046-1728748481566
+  [loading_requirement_container_meta:11be1bac-34e2-4658-b85f-4d28a7271046-1728748481566] = [groups:][instances:]
+}
+
+element {
+  source = [source:local]/config/fancymenu/assets/notification.gif
+  repeat_texture = false
+  nine_slice_texture = false
+  nine_slice_texture_border_x = 5
+  nine_slice_texture_border_y = 5
+  element_type = image
+  instance_identifier = e59e93db-946b-4789-82fa-878a64ea66b4-1736552038250
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = element
+  anchor_point_element = e8f5abda-1459-4a90-bc21-a2ecb33d21e6-1728748209888
+  x = 811
+  y = -5
+  width = 10
+  height = 10
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 112bdd4f-1d86-4cd5-997e-92c2d82ff02c-1728748714164
+  [loading_requirement_container_meta:112bdd4f-1d86-4cd5-997e-92c2d82ff02c-1728748714164] = [groups:][instances:d04b0455-a474-4f54-8d2e-becc879cc9d4-1728748815885;]
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:d04b0455-a474-4f54-8d2e-becc879cc9d4-1728748815885] = viewed_changelog_2.1.4:false
 }
