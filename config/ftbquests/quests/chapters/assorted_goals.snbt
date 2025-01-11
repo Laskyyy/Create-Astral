@@ -7,20 +7,18 @@
 	icon: "minecraft:furnace"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	images: [
-		{
-			x: -5.0d
-			y: 6.5d
-			width: 6.0d
-			height: 3.5d
-			rotation: 0.0d
-			image: "createastral:textures/item/logos_binted.png"
-			hover: [ ]
-			click: ""
-			dev: false
-			corner: false
-		}
-	]
+	images: [{
+		x: -5.0d
+		y: 6.5d
+		width: 6.0d
+		height: 3.5d
+		rotation: 0.0d
+		image: "createastral:textures/item/logos_binted.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
 	quests: [
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests0.title}"
@@ -76,19 +74,17 @@
 					}
 				}
 			]
-			rewards: [
-				{
-					id: "43F5FD04C1D31C33"
-					type: "item"
-					item: {
-						id: "mcdw:staff_battlestaff"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
+			rewards: [{
+				id: "43F5FD04C1D31C33"
+				type: "item"
+				item: {
+					id: "mcdw:staff_battlestaff"
+					Count: 1b
+					tag: {
+						Damage: 0
 					}
 				}
-			]
+			}]
 		}
 		{
 			x: -5.5d
@@ -101,19 +97,17 @@
 			]
 			dependencies: ["1AC4A5B8D86CAB0F"]
 			id: "75B36BB7FE771333"
-			tasks: [
-				{
-					id: "0793DCFD2EA88A6B"
-					type: "item"
-					item: {
-						id: "tconstruct:part_builder"
-						Count: 1b
-						tag: {
-							texture: "minecraft:oak_planks"
-						}
+			tasks: [{
+				id: "0793DCFD2EA88A6B"
+				type: "item"
+				item: {
+					id: "tconstruct:part_builder"
+					Count: 1b
+					tag: {
+						texture: "minecraft:oak_planks"
 					}
 				}
-			]
+			}]
 		}
 		{
 			x: -6.0d
@@ -132,13 +126,11 @@
 			]
 			dependencies: ["1AC4A5B8D86CAB0F"]
 			id: "584489E0781D5C0C"
-			tasks: [
-				{
-					id: "7E9FEA64819569DC"
-					type: "item"
-					item: "tconstruct:tinker_station"
-				}
-			]
+			tasks: [{
+				id: "7E9FEA64819569DC"
+				type: "item"
+				item: "tconstruct:tinker_station"
+			}]
 		}
 		{
 			icon: {
@@ -154,21 +146,17 @@
 			description: ["{ftbquests.chapter.assorted_goals.quests3.description}"]
 			dependencies: ["75B36BB7FE771333"]
 			id: "29AF19492CFCB2DB"
-			tasks: [
-				{
-					id: "0939A1A78118E737"
-					type: "advancement"
-					advancement: "tconstruct:tools/make_part"
-					criterion: ""
-				}
-			]
-			rewards: [
-				{
-					id: "292903F1AB1DB1C2"
-					type: "item"
-					item: "farmersdelight:fruit_salad"
-				}
-			]
+			tasks: [{
+				id: "0939A1A78118E737"
+				type: "advancement"
+				advancement: "tconstruct:tools/make_part"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "292903F1AB1DB1C2"
+				type: "item"
+				item: "farmersdelight:fruit_salad"
+			}]
 		}
 		{
 			icon: {
@@ -192,14 +180,12 @@
 			]
 			size: 1.25d
 			id: "0FC0B4E8EC58F791"
-			tasks: [
-				{
-					id: "2722741D5C4A6C82"
-					type: "advancement"
-					advancement: "tconstruct:tools/tinker_tool"
-					criterion: ""
-				}
-			]
+			tasks: [{
+				id: "2722741D5C4A6C82"
+				type: "advancement"
+				advancement: "tconstruct:tools/tinker_tool"
+				criterion: ""
+			}]
 			rewards: [
 				{
 					id: "660CC63F25D4B6C5"
@@ -222,19 +208,17 @@
 			dependencies: ["11ACD707D7284920"]
 			optional: true
 			id: "01B4EDC69A4BDBBD"
-			tasks: [
-				{
-					id: "462E8991B3305276"
-					type: "item"
-					item: {
-						id: "createastral:copper_pickaxe"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "462E8991B3305276"
+				type: "item"
+				item: {
+					id: "createastral:copper_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
 					}
 				}
-			]
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests6.title}"
@@ -250,13 +234,11 @@
 			dependencies: ["0FC0B4E8EC58F791"]
 			size: 1.25d
 			id: "601A619C6E96920A"
-			tasks: [
-				{
-					id: "29288FDE98AD30BB"
-					type: "item"
-					item: "minecraft:furnace"
-				}
-			]
+			tasks: [{
+				id: "29288FDE98AD30BB"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
 			rewards: [
 				{
 					id: "5D6FD8197D731E3E"
@@ -279,13 +261,11 @@
 			description: ["{ftbquests.chapter.assorted_goals.quests7.description}"]
 			dependencies: ["601A619C6E96920A"]
 			id: "11ACD707D7284920"
-			tasks: [
-				{
-					id: "091AFA0FDB6FB307"
-					type: "checkmark"
-					title: "{ftbquests.chapter.assorted_goals.quests7.tasks0.title}"
-				}
-			]
+			tasks: [{
+				id: "091AFA0FDB6FB307"
+				type: "checkmark"
+				title: "{ftbquests.chapter.assorted_goals.quests7.tasks0.title}"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests8.title}"
@@ -319,13 +299,11 @@
 					}
 				}
 			]
-			rewards: [
-				{
-					id: "70A134C16BEE9213"
-					type: "item"
-					item: "farmersdelight:vegetable_noodles"
-				}
-			]
+			rewards: [{
+				id: "70A134C16BEE9213"
+				type: "item"
+				item: "farmersdelight:vegetable_noodles"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests9.title}"
@@ -419,21 +397,17 @@
 			size: 1.5d
 			optional: true
 			id: "05E45A7D1C9927E5"
-			tasks: [
-				{
-					id: "06BFB633FC06AF54"
-					type: "item"
-					item: "drinkbeer:beer_barrel"
-				}
-			]
-			rewards: [
-				{
-					id: "2FB3A079A96DE590"
-					type: "item"
-					item: "create:dough"
-					count: 3
-				}
-			]
+			tasks: [{
+				id: "06BFB633FC06AF54"
+				type: "item"
+				item: "drinkbeer:beer_barrel"
+			}]
+			rewards: [{
+				id: "2FB3A079A96DE590"
+				type: "item"
+				item: "create:dough"
+				count: 3
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests11.title}"
@@ -492,21 +466,17 @@
 			]
 			dependencies: ["0BCED0F8481E0C21"]
 			id: "1AC4A5B8D86CAB0F"
-			tasks: [
-				{
-					id: "0A56270F3A56875F"
-					type: "item"
-					item: "tconstruct:pattern"
-					count: 3L
-				}
-			]
-			rewards: [
-				{
-					id: "1D969A2DAF5418C8"
-					type: "item"
-					item: "tconstruct:materials_and_you"
-				}
-			]
+			tasks: [{
+				id: "0A56270F3A56875F"
+				type: "item"
+				item: "tconstruct:pattern"
+				count: 3L
+			}]
+			rewards: [{
+				id: "1D969A2DAF5418C8"
+				type: "item"
+				item: "tconstruct:materials_and_you"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests13.title}"
@@ -557,21 +527,17 @@
 			size: 1.5d
 			optional: true
 			id: "2CE5BB6A7B30CA4C"
-			tasks: [
-				{
-					id: "5F1D78666FED176F"
-					type: "item"
-					item: "farmersdelight:stove"
-				}
-			]
-			rewards: [
-				{
-					id: "11032AC6D056CDC5"
-					type: "item"
-					item: "farmersdelight:rice"
-					count: 4
-				}
-			]
+			tasks: [{
+				id: "5F1D78666FED176F"
+				type: "item"
+				item: "farmersdelight:stove"
+			}]
+			rewards: [{
+				id: "11032AC6D056CDC5"
+				type: "item"
+				item: "farmersdelight:rice"
+				count: 4
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests15.title}"
@@ -582,21 +548,17 @@
 			dependencies: ["2CE5BB6A7B30CA4C"]
 			optional: true
 			id: "504201C234C38437"
-			tasks: [
-				{
-					id: "2F0EB60847E4ECF7"
-					type: "item"
-					item: "farmersdelight:straw"
-				}
-			]
-			rewards: [
-				{
-					id: "4BB9B1AC0821A6AD"
-					type: "item"
-					item: "farmersdelight:straw"
-					count: 3
-				}
-			]
+			tasks: [{
+				id: "2F0EB60847E4ECF7"
+				type: "item"
+				item: "farmersdelight:straw"
+			}]
+			rewards: [{
+				id: "4BB9B1AC0821A6AD"
+				type: "item"
+				item: "farmersdelight:straw"
+				count: 3
+			}]
 		}
 		{
 			x: -6.0d
@@ -610,14 +572,12 @@
 			dependencies: ["0FC0B4E8EC58F791"]
 			optional: true
 			id: "78E055160B11FC48"
-			tasks: [
-				{
-					id: "100F661313FF3C14"
-					type: "advancement"
-					advancement: "tconstruct:tools/travelers_gear"
-					criterion: ""
-				}
-			]
+			tasks: [{
+				id: "100F661313FF3C14"
+				type: "advancement"
+				advancement: "tconstruct:tools/travelers_gear"
+				criterion: ""
+			}]
 			rewards: [
 				{
 					id: "4D442FD95DEBC09A"
@@ -639,22 +599,18 @@
 			dependencies: ["4F4C278C3A8C0281"]
 			optional: true
 			id: "6D072F2027D8DFCE"
-			tasks: [
-				{
-					id: "072F87225B252EF0"
-					type: "item"
-					item: "minecraft:melon"
-					count: 64L
-				}
-			]
-			rewards: [
-				{
-					id: "70CEAFBC1ED06AAF"
-					type: "item"
-					item: "minecraft:copper_ore"
-					count: 25
-				}
-			]
+			tasks: [{
+				id: "072F87225B252EF0"
+				type: "item"
+				item: "minecraft:melon"
+				count: 64L
+			}]
+			rewards: [{
+				id: "70CEAFBC1ED06AAF"
+				type: "item"
+				item: "minecraft:copper_ore"
+				count: 25
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests18.title}"
@@ -663,22 +619,18 @@
 			dependencies: ["4F4C278C3A8C0281"]
 			optional: true
 			id: "1645C544BEBC01EE"
-			tasks: [
-				{
-					id: "1E76A2267860CAB1"
-					type: "item"
-					item: "minecraft:cactus"
-					count: 64L
-				}
-			]
-			rewards: [
-				{
-					id: "7EF1AFDAC31ED87C"
-					type: "item"
-					item: "minecraft:gold_ore"
-					count: 20
-				}
-			]
+			tasks: [{
+				id: "1E76A2267860CAB1"
+				type: "item"
+				item: "minecraft:cactus"
+				count: 64L
+			}]
+			rewards: [{
+				id: "7EF1AFDAC31ED87C"
+				type: "item"
+				item: "minecraft:gold_ore"
+				count: 20
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests19.title}"
@@ -687,22 +639,18 @@
 			dependencies: ["4F4C278C3A8C0281"]
 			optional: true
 			id: "79886A5C435F29E0"
-			tasks: [
-				{
-					id: "455B346FB9ADE2BB"
-					type: "item"
-					item: "minecraft:pumpkin"
-					count: 64L
-				}
-			]
-			rewards: [
-				{
-					id: "62BE7175BE9B0DED"
-					type: "item"
-					item: "minecraft:iron_ore"
-					count: 20
-				}
-			]
+			tasks: [{
+				id: "455B346FB9ADE2BB"
+				type: "item"
+				item: "minecraft:pumpkin"
+				count: 64L
+			}]
+			rewards: [{
+				id: "62BE7175BE9B0DED"
+				type: "item"
+				item: "minecraft:iron_ore"
+				count: 20
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests20.title}"
@@ -712,22 +660,18 @@
 			dependencies: ["4F4C278C3A8C0281"]
 			optional: true
 			id: "513E187ADFD4F2A4"
-			tasks: [
-				{
-					id: "1CB5135CDE0FEAB3"
-					type: "item"
-					item: "farmersdelight:carrot_crate"
-					count: 64L
-				}
-			]
-			rewards: [
-				{
-					id: "64C5214D379321F1"
-					type: "item"
-					item: "minecraft:deepslate_copper_ore"
-					count: 30
-				}
-			]
+			tasks: [{
+				id: "1CB5135CDE0FEAB3"
+				type: "item"
+				item: "farmersdelight:carrot_crate"
+				count: 64L
+			}]
+			rewards: [{
+				id: "64C5214D379321F1"
+				type: "item"
+				item: "minecraft:deepslate_copper_ore"
+				count: 30
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests21.title}"
@@ -737,14 +681,12 @@
 			dependencies: ["4F4C278C3A8C0281"]
 			optional: true
 			id: "09A4CEF0AF68A055"
-			tasks: [
-				{
-					id: "107F3E609ABD62F6"
-					type: "item"
-					item: "farmersdelight:potato_crate"
-					count: 64L
-				}
-			]
+			tasks: [{
+				id: "107F3E609ABD62F6"
+				type: "item"
+				item: "farmersdelight:potato_crate"
+				count: 64L
+			}]
 			rewards: [
 				{
 					id: "3127F7CCD4E19F3F"
@@ -768,22 +710,18 @@
 			dependencies: ["4F4C278C3A8C0281"]
 			optional: true
 			id: "6FF9501CDF19F0D5"
-			tasks: [
-				{
-					id: "51D0686E879398CF"
-					type: "item"
-					item: "farmersdelight:beetroot_crate"
-					count: 64L
-				}
-			]
-			rewards: [
-				{
-					id: "52FC831AEA7F2A46"
-					type: "item"
-					item: "minecraft:deepslate_redstone_ore"
-					count: 25
-				}
-			]
+			tasks: [{
+				id: "51D0686E879398CF"
+				type: "item"
+				item: "farmersdelight:beetroot_crate"
+				count: 64L
+			}]
+			rewards: [{
+				id: "52FC831AEA7F2A46"
+				type: "item"
+				item: "minecraft:deepslate_redstone_ore"
+				count: 25
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests23.title}"
@@ -793,22 +731,18 @@
 			dependencies: ["4F4C278C3A8C0281"]
 			optional: true
 			id: "1858F35E1B7128AA"
-			tasks: [
-				{
-					id: "632EC9B47BD48D61"
-					type: "item"
-					item: "farmersdelight:rice_bag"
-					count: 64L
-				}
-			]
-			rewards: [
-				{
-					id: "19EF8ED55AE8ABED"
-					type: "item"
-					item: "minecraft:quartz"
-					count: 32
-				}
-			]
+			tasks: [{
+				id: "632EC9B47BD48D61"
+				type: "item"
+				item: "farmersdelight:rice_bag"
+				count: 64L
+			}]
+			rewards: [{
+				id: "19EF8ED55AE8ABED"
+				type: "item"
+				item: "minecraft:quartz"
+				count: 32
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests24.title}"
@@ -818,14 +752,12 @@
 			dependencies: ["4F4C278C3A8C0281"]
 			optional: true
 			id: "641D3099B18682CD"
-			tasks: [
-				{
-					id: "371A5F8851677000"
-					type: "item"
-					item: "farmersdelight:onion_crate"
-					count: 64L
-				}
-			]
+			tasks: [{
+				id: "371A5F8851677000"
+				type: "item"
+				item: "farmersdelight:onion_crate"
+				count: 64L
+			}]
 			rewards: [
 				{
 					id: "7DB7488CBDF70735"
@@ -849,22 +781,18 @@
 			dependencies: ["4F4C278C3A8C0281"]
 			optional: true
 			id: "0C6D7B3DCF139FA9"
-			tasks: [
-				{
-					id: "559246BCCF5EDD0A"
-					type: "item"
-					item: "farmersdelight:tomato_crate"
-					count: 64L
-				}
-			]
-			rewards: [
-				{
-					id: "504F364ED908935F"
-					type: "item"
-					item: "minecraft:redstone_ore"
-					count: 32
-				}
-			]
+			tasks: [{
+				id: "559246BCCF5EDD0A"
+				type: "item"
+				item: "farmersdelight:tomato_crate"
+				count: 64L
+			}]
+			rewards: [{
+				id: "504F364ED908935F"
+				type: "item"
+				item: "minecraft:redstone_ore"
+				count: 32
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests26.title}"
@@ -874,22 +802,18 @@
 			dependencies: ["4F4C278C3A8C0281"]
 			optional: true
 			id: "4E0B5BFE718A99CD"
-			tasks: [
-				{
-					id: "01BAB43531550385"
-					type: "item"
-					item: "farmersdelight:cabbage_crate"
-					count: 64L
-				}
-			]
-			rewards: [
-				{
-					id: "15293C6F9430DA31"
-					type: "item"
-					item: "minecraft:emerald_ore"
-					count: 25
-				}
-			]
+			tasks: [{
+				id: "01BAB43531550385"
+				type: "item"
+				item: "farmersdelight:cabbage_crate"
+				count: 64L
+			}]
+			rewards: [{
+				id: "15293C6F9430DA31"
+				type: "item"
+				item: "minecraft:emerald_ore"
+				count: 25
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests27.title}"
@@ -992,19 +916,17 @@
 					consume_items: false
 				}
 			]
-			rewards: [
-				{
-					id: "3415146CCA0548A2"
-					type: "item"
-					item: {
-						id: "mcdw:axe_encrusted_anchor"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
+			rewards: [{
+				id: "3415146CCA0548A2"
+				type: "item"
+				item: {
+					id: "mcdw:axe_encrusted_anchor"
+					Count: 1b
+					tag: {
+						Damage: 0
 					}
 				}
-			]
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests28.title}"
@@ -1019,20 +941,16 @@
 			]
 			dependencies: ["11ACD707D7284920"]
 			id: "6B68AF2DE79A65A3"
-			tasks: [
-				{
-					id: "36090F953BBA78B4"
-					type: "checkmark"
-					title: "{ftbquests.chapter.assorted_goals.quests28.tasks0.title}"
-				}
-			]
-			rewards: [
-				{
-					id: "44E31D1175B6FDDF"
-					type: "item"
-					item: "minecraft:spyglass"
-				}
-			]
+			tasks: [{
+				id: "36090F953BBA78B4"
+				type: "checkmark"
+				title: "{ftbquests.chapter.assorted_goals.quests28.tasks0.title}"
+			}]
+			rewards: [{
+				id: "44E31D1175B6FDDF"
+				type: "item"
+				item: "minecraft:spyglass"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests29.title}"
@@ -1270,21 +1188,17 @@
 			dependencies: ["30671A15990F39D8"]
 			optional: true
 			id: "791D3292F22706E6"
-			tasks: [
-				{
-					id: "40EFAB1EA82C0179"
-					type: "item"
-					item: "chipped:botanist_workbench"
-				}
-			]
-			rewards: [
-				{
-					id: "37C1156AB1726C5E"
-					type: "item"
-					item: "minecraft:moss_block"
-					count: 8
-				}
-			]
+			tasks: [{
+				id: "40EFAB1EA82C0179"
+				type: "item"
+				item: "chipped:botanist_workbench"
+			}]
+			rewards: [{
+				id: "37C1156AB1726C5E"
+				type: "item"
+				item: "minecraft:moss_block"
+				count: 8
+			}]
 		}
 		{
 			x: -1.5d
@@ -1292,21 +1206,17 @@
 			dependencies: ["30671A15990F39D8"]
 			optional: true
 			id: "61268E9695C2B0B0"
-			tasks: [
-				{
-					id: "686BE4BE4E9EE3FB"
-					type: "item"
-					item: "chipped:glassblower"
-				}
-			]
-			rewards: [
-				{
-					id: "412393C0BD8AAFC9"
-					type: "item"
-					item: "minecraft:glass"
-					count: 16
-				}
-			]
+			tasks: [{
+				id: "686BE4BE4E9EE3FB"
+				type: "item"
+				item: "chipped:glassblower"
+			}]
+			rewards: [{
+				id: "412393C0BD8AAFC9"
+				type: "item"
+				item: "minecraft:glass"
+				count: 16
+			}]
 		}
 		{
 			x: 1.5d
@@ -1314,21 +1224,17 @@
 			dependencies: ["30671A15990F39D8"]
 			optional: true
 			id: "441D6F369B7912E5"
-			tasks: [
-				{
-					id: "4F02DF2E116D3E92"
-					type: "item"
-					item: "chipped:carpenters_table"
-				}
-			]
-			rewards: [
-				{
-					id: "2C267CF0C88E548F"
-					type: "item"
-					item: "minecraft:oak_log"
-					count: 32
-				}
-			]
+			tasks: [{
+				id: "4F02DF2E116D3E92"
+				type: "item"
+				item: "chipped:carpenters_table"
+			}]
+			rewards: [{
+				id: "2C267CF0C88E548F"
+				type: "item"
+				item: "minecraft:oak_log"
+				count: 32
+			}]
 		}
 		{
 			x: 1.5d
@@ -1336,21 +1242,17 @@
 			dependencies: ["30671A15990F39D8"]
 			optional: true
 			id: "5FFC7DFF4294C81A"
-			tasks: [
-				{
-					id: "74EB7FF43AA93703"
-					type: "item"
-					item: "chipped:loom_table"
-				}
-			]
-			rewards: [
-				{
-					id: "1F16D277E7B3D5DD"
-					type: "item"
-					item: "minecraft:white_wool"
-					count: 16
-				}
-			]
+			tasks: [{
+				id: "74EB7FF43AA93703"
+				type: "item"
+				item: "chipped:loom_table"
+			}]
+			rewards: [{
+				id: "1F16D277E7B3D5DD"
+				type: "item"
+				item: "minecraft:white_wool"
+				count: 16
+			}]
 		}
 		{
 			x: -1.5d
@@ -1358,21 +1260,17 @@
 			dependencies: ["30671A15990F39D8"]
 			optional: true
 			id: "65C0B4100CD88D77"
-			tasks: [
-				{
-					id: "184486A840B467DE"
-					type: "item"
-					item: "chipped:mason_table"
-				}
-			]
-			rewards: [
-				{
-					id: "5B3D1DB7984B6EA4"
-					type: "item"
-					item: "minecraft:andesite"
-					count: 16
-				}
-			]
+			tasks: [{
+				id: "184486A840B467DE"
+				type: "item"
+				item: "chipped:mason_table"
+			}]
+			rewards: [{
+				id: "5B3D1DB7984B6EA4"
+				type: "item"
+				item: "minecraft:andesite"
+				count: 16
+			}]
 		}
 		{
 			x: 1.5d
@@ -1380,20 +1278,16 @@
 			dependencies: ["30671A15990F39D8"]
 			optional: true
 			id: "11B2E25F18AD9C35"
-			tasks: [
-				{
-					id: "1077A31DBE0B61EF"
-					type: "item"
-					item: "chipped:alchemy_bench"
-				}
-			]
-			rewards: [
-				{
-					id: "302E910F93ECC032"
-					type: "item"
-					item: "minecraft:copper_block"
-				}
-			]
+			tasks: [{
+				id: "1077A31DBE0B61EF"
+				type: "item"
+				item: "chipped:alchemy_bench"
+			}]
+			rewards: [{
+				id: "302E910F93ECC032"
+				type: "item"
+				item: "minecraft:copper_block"
+			}]
 		}
 		{
 			x: -1.5d
@@ -1401,20 +1295,16 @@
 			dependencies: ["30671A15990F39D8"]
 			optional: true
 			id: "30A8E779764AE865"
-			tasks: [
-				{
-					id: "0F24228CDCEB910E"
-					type: "item"
-					item: "chipped:mechanist_workbench"
-				}
-			]
-			rewards: [
-				{
-					id: "21B1578A2172D29C"
-					type: "item"
-					item: "minecraft:redstone_block"
-				}
-			]
+			tasks: [{
+				id: "0F24228CDCEB910E"
+				type: "item"
+				item: "chipped:mechanist_workbench"
+			}]
+			rewards: [{
+				id: "21B1578A2172D29C"
+				type: "item"
+				item: "minecraft:redstone_block"
+			}]
 		}
 		{
 			x: 1.5d
@@ -1432,20 +1322,16 @@
 				"6433AD83545428C3"
 			]
 			id: "22EDB2C326C53A89"
-			tasks: [
-				{
-					id: "247A190DDF6719BF"
-					type: "item"
-					item: "reinfchest:copper_chest"
-				}
-			]
-			rewards: [
-				{
-					id: "75AB59721C18FE4E"
-					type: "item"
-					item: "reinfchest:copper_chest"
-				}
-			]
+			tasks: [{
+				id: "247A190DDF6719BF"
+				type: "item"
+				item: "reinfchest:copper_chest"
+			}]
+			rewards: [{
+				id: "75AB59721C18FE4E"
+				type: "item"
+				item: "reinfchest:copper_chest"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests40.title}"
@@ -1486,14 +1372,12 @@
 					item: "cookingforblockheads:cooking_table"
 				}
 			]
-			rewards: [
-				{
-					id: "3E69ED9AD85027DE"
-					type: "item"
-					item: "chipped:white_concrete_1"
-					count: 10
-				}
-			]
+			rewards: [{
+				id: "3E69ED9AD85027DE"
+				type: "item"
+				item: "chipped:white_concrete_1"
+				count: 10
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests41.title}"
@@ -1519,13 +1403,11 @@
 			size: 1.5d
 			optional: true
 			id: "30671A15990F39D8"
-			tasks: [
-				{
-					id: "0156EF5B8B50BDB8"
-					type: "checkmark"
-					title: "{ftbquests.chapter.assorted_goals.quests41.tasks0.title}"
-				}
-			]
+			tasks: [{
+				id: "0156EF5B8B50BDB8"
+				type: "checkmark"
+				title: "{ftbquests.chapter.assorted_goals.quests41.tasks0.title}"
+			}]
 		}
 		{
 			x: -6.5d
@@ -1560,21 +1442,17 @@
 			dependencies: ["7D768E5AA9EA358C"]
 			optional: true
 			id: "52832D8DA239C017"
-			tasks: [
-				{
-					id: "67BF890594998248"
-					type: "item"
-					item: "drinkbeer:beer_mug"
-				}
-			]
-			rewards: [
-				{
-					id: "004A64084DE31C6B"
-					type: "item"
-					item: "drinkbeer:empty_beer_mug"
-					count: 5
-				}
-			]
+			tasks: [{
+				id: "67BF890594998248"
+				type: "item"
+				item: "drinkbeer:beer_mug"
+			}]
+			rewards: [{
+				id: "004A64084DE31C6B"
+				type: "item"
+				item: "drinkbeer:empty_beer_mug"
+				count: 5
+			}]
 		}
 		{
 			x: -9.0d
@@ -1583,20 +1461,16 @@
 			dependencies: ["52832D8DA239C017"]
 			optional: true
 			id: "154EF80FC9B8F0B0"
-			tasks: [
-				{
-					id: "145A72A4C427E775"
-					type: "item"
-					item: "drinkbeer:bartending_table_normal"
-				}
-			]
-			rewards: [
-				{
-					id: "3093A76BEC813CA5"
-					type: "item"
-					item: "farmersdelight:hot_cocoa"
-				}
-			]
+			tasks: [{
+				id: "145A72A4C427E775"
+				type: "item"
+				item: "drinkbeer:bartending_table_normal"
+			}]
+			rewards: [{
+				id: "3093A76BEC813CA5"
+				type: "item"
+				item: "farmersdelight:hot_cocoa"
+			}]
 		}
 		{
 			x: -11.5d
@@ -1617,13 +1491,11 @@
 					item: "cookingforblockheads:no_filter_edition"
 				}
 			]
-			rewards: [
-				{
-					id: "424A77A5F66DAD47"
-					type: "item"
-					item: "minecraft:cooked_beef"
-				}
-			]
+			rewards: [{
+				id: "424A77A5F66DAD47"
+				type: "item"
+				item: "minecraft:cooked_beef"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests46.title}"
@@ -1634,13 +1506,11 @@
 			description: ["{ftbquests.chapter.assorted_goals.quests46.description}"]
 			dependencies: ["601A619C6E96920A"]
 			id: "6433AD83545428C3"
-			tasks: [
-				{
-					id: "162E460403877286"
-					type: "checkmark"
-					title: "{ftbquests.chapter.assorted_goals.quests46.tasks0.title}"
-				}
-			]
+			tasks: [{
+				id: "162E460403877286"
+				type: "checkmark"
+				title: "{ftbquests.chapter.assorted_goals.quests46.tasks0.title}"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests47.title}"
@@ -1650,43 +1520,39 @@
 			description: ["{ftbquests.chapter.assorted_goals.quests47.description}"]
 			dependencies: ["5D69FB71CD8A1391"]
 			id: "36A1589C564732B1"
-			tasks: [
-				{
-					id: "56447C1ED629FE47"
-					type: "item"
-					title: "{ftbquests.chapter.assorted_goals.quests47.tasks0.title}"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "packages:banned_from_package_maker"
-						}
+			tasks: [{
+				id: "56447C1ED629FE47"
+				type: "item"
+				title: "{ftbquests.chapter.assorted_goals.quests47.tasks0.title}"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "packages:banned_from_package_maker"
 					}
 				}
-			]
-			rewards: [
-				{
-					id: "6330A382A9654992"
-					type: "item"
-					item: {
-						id: "packages:package"
-						Count: 1b
-						tag: {
-							BlockEntityTag: {
-								PackageContents: {
-									realCount: 0
-								}
-								PackageStyle: {
-									frame: "minecraft:oak_log"
-									inner: "minecraft:oak_planks"
-									color: 0
-								}
+			}]
+			rewards: [{
+				id: "6330A382A9654992"
+				type: "item"
+				item: {
+					id: "packages:package"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							PackageContents: {
+								realCount: 0
+							}
+							PackageStyle: {
+								frame: "minecraft:oak_log"
+								inner: "minecraft:oak_planks"
+								color: 0
 							}
 						}
 					}
-					count: 4
 				}
-			]
+				count: 4
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests48.title}"
@@ -1703,13 +1569,11 @@
 			hide_dependency_lines: false
 			dependencies: ["05E45A7D1C9927E5"]
 			id: "165C3C3DF1B9B4A3"
-			tasks: [
-				{
-					id: "0B0B28657F7C6931"
-					type: "item"
-					item: "vinery:fermentation_barrel"
-				}
-			]
+			tasks: [{
+				id: "0B0B28657F7C6931"
+				type: "item"
+				item: "vinery:fermentation_barrel"
+			}]
 			rewards: [
 				{
 					id: "28323BFEABB17884"
@@ -1740,17 +1604,15 @@
 			]
 			dependencies: ["4B565923D33B2CB8"]
 			id: "1D8FB0253FF41716"
-			tasks: [
-				{
-					id: "47820AF8B45F9AEE"
-					type: "item"
-					item: {
-						id: "vinery:apple_juice"
-						Count: 1b
-						tag: { }
-					}
+			tasks: [{
+				id: "47820AF8B45F9AEE"
+				type: "item"
+				item: {
+					id: "vinery:apple_juice"
+					Count: 1b
+					tag: { }
 				}
-			]
+			}]
 			rewards: [
 				{
 					id: "5136D615F0B99ABE"
@@ -1779,24 +1641,20 @@
 			]
 			dependencies: ["6BECCB7FA4132517"]
 			id: "529CAD4508F33471"
-			tasks: [
-				{
-					id: "0914332FB936AF32"
-					type: "item"
-					item: {
-						id: "vinery:red_grapejuice_wine_bottle"
-						Count: 1b
-						tag: { }
-					}
+			tasks: [{
+				id: "0914332FB936AF32"
+				type: "item"
+				item: {
+					id: "vinery:red_grapejuice_wine_bottle"
+					Count: 1b
+					tag: { }
 				}
-			]
-			rewards: [
-				{
-					id: "1097AB4611D7E57D"
-					type: "item"
-					item: "vinery:wine_box"
-				}
-			]
+			}]
+			rewards: [{
+				id: "1097AB4611D7E57D"
+				type: "item"
+				item: "vinery:wine_box"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests51.title}"
@@ -1810,24 +1668,20 @@
 			]
 			dependencies: ["6BECCB7FA4132517"]
 			id: "66AF3CCC6B74CC09"
-			tasks: [
-				{
-					id: "297B32716629650B"
-					type: "item"
-					item: {
-						id: "vinery:white_grapejuice_wine_bottle"
-						Count: 1b
-						tag: { }
-					}
+			tasks: [{
+				id: "297B32716629650B"
+				type: "item"
+				item: {
+					id: "vinery:white_grapejuice_wine_bottle"
+					Count: 1b
+					tag: { }
 				}
-			]
-			rewards: [
-				{
-					id: "75E5A6B7988A3D1A"
-					type: "item"
-					item: "vinery:wine_rack_2"
-				}
-			]
+			}]
+			rewards: [{
+				id: "75E5A6B7988A3D1A"
+				type: "item"
+				item: "vinery:wine_rack_2"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests52.title}"
@@ -1837,20 +1691,16 @@
 			description: ["{ftbquests.chapter.assorted_goals.quests52.description}"]
 			dependencies: ["165C3C3DF1B9B4A3"]
 			id: "4B565923D33B2CB8"
-			tasks: [
-				{
-					id: "46966651EFC64C4E"
-					type: "item"
-					item: "vinery:wine_press"
-				}
-			]
-			rewards: [
-				{
-					id: "1B24564A722FFBEC"
-					type: "item"
-					item: "vinery:apple_mash"
-				}
-			]
+			tasks: [{
+				id: "46966651EFC64C4E"
+				type: "item"
+				item: "vinery:wine_press"
+			}]
+			rewards: [{
+				id: "1B24564A722FFBEC"
+				type: "item"
+				item: "vinery:apple_mash"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests53.title}"
@@ -1860,13 +1710,11 @@
 			subtitle: "{ftbquests.chapter.assorted_goals.quests53.subtitle}"
 			dependencies: ["165C3C3DF1B9B4A3"]
 			id: "6BECCB7FA4132517"
-			tasks: [
-				{
-					id: "4750F1C7CA412A27"
-					type: "item"
-					item: "vinery:grapevine_pot"
-				}
-			]
+			tasks: [{
+				id: "4750F1C7CA412A27"
+				type: "item"
+				item: "vinery:grapevine_pot"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests54.title}"
@@ -1985,13 +1833,11 @@
 					title: "{ftbquests.chapter.assorted_goals.quests55.tasks9.title}"
 				}
 			]
-			rewards: [
-				{
-					id: "4E42F1996A792ECD"
-					type: "item"
-					item: "minecraft:cake"
-				}
-			]
+			rewards: [{
+				id: "4E42F1996A792ECD"
+				type: "item"
+				item: "minecraft:cake"
+			}]
 		}
 		{
 			icon: {
@@ -2027,20 +1873,16 @@
 			size: 2.0d
 			min_width: 300
 			id: "6A78320DA0312F1C"
-			tasks: [
-				{
-					id: "143B044BCD64138B"
-					type: "checkmark"
-					title: "{ftbquests.chapter.assorted_goals.quests56.tasks0.title}"
-				}
-			]
-			rewards: [
-				{
-					id: "37CF43D8E5C3E950"
-					type: "item"
-					item: "adoptafloppa:orca_item"
-				}
-			]
+			tasks: [{
+				id: "143B044BCD64138B"
+				type: "checkmark"
+				title: "{ftbquests.chapter.assorted_goals.quests56.tasks0.title}"
+			}]
+			rewards: [{
+				id: "37CF43D8E5C3E950"
+				type: "item"
+				item: "adoptafloppa:orca_item"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests57.title}"
@@ -2117,13 +1959,11 @@
 			subtitle: "{ftbquests.chapter.assorted_goals.quests58.subtitle}"
 			dependencies: ["05E45A7D1C9927E5"]
 			id: "23B56D5D09CE3A0E"
-			tasks: [
-				{
-					id: "4F8FB44812FB367D"
-					type: "item"
-					item: "drinkbeer:recipe_board_package"
-				}
-			]
+			tasks: [{
+				id: "4F8FB44812FB367D"
+				type: "item"
+				item: "drinkbeer:recipe_board_package"
+			}]
 		}
 	]
 	quest_links: [ ]

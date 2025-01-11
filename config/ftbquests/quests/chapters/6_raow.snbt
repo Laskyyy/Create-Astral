@@ -141,13 +141,11 @@
 			]
 			dependencies: ["65F77462CD1DFFDB"]
 			id: "1E93A90AEF614FA3"
-			tasks: [
-				{
-					id: "49D7814698B13860"
-					type: "item"
-					item: "create:refined_radiance"
-				}
-			]
+			tasks: [{
+				id: "49D7814698B13860"
+				type: "item"
+				item: "create:refined_radiance"
+			}]
 			rewards: [
 				{
 					id: "19F8F9A8C9D44884"
@@ -184,22 +182,18 @@
 			dependencies: ["6E9849C1B2A2AA15"]
 			size: 1.5d
 			id: "00EB34849356498A"
-			tasks: [
-				{
-					id: "0CD2F946292C0C82"
-					type: "item"
-					item: "techreborn:uu_matter"
-					count: 10L
-				}
-			]
-			rewards: [
-				{
-					id: "3A62FF88ADB2691F"
-					type: "item"
-					item: "farmersdelight:glow_berry_custard"
-					count: 8
-				}
-			]
+			tasks: [{
+				id: "0CD2F946292C0C82"
+				type: "item"
+				item: "techreborn:uu_matter"
+				count: 10L
+			}]
+			rewards: [{
+				id: "3A62FF88ADB2691F"
+				type: "item"
+				item: "farmersdelight:glow_berry_custard"
+				count: 8
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests2.title}"
@@ -218,21 +212,17 @@
 			dependencies: ["3091F7AC37F848AD"]
 			size: 2.0d
 			id: "11F776AD4AEA326A"
-			tasks: [
-				{
-					id: "6B36647F19D4A0E4"
-					type: "item"
-					item: "techreborn:industrial_circuit"
-				}
-			]
-			rewards: [
-				{
-					id: "704C52E8417151D8"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 1747526165463332193L
-				}
-			]
+			tasks: [{
+				id: "6B36647F19D4A0E4"
+				type: "item"
+				item: "techreborn:industrial_circuit"
+			}]
+			rewards: [{
+				id: "704C52E8417151D8"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1747526165463332193L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests3.title}"
@@ -245,14 +235,12 @@
 			hide: true
 			size: 3.0d
 			id: "7A4255522DA6FEB7"
-			tasks: [
-				{
-					id: "5602FF437BAA6984"
-					type: "dimension"
-					icon: "ad_astra:mercury_globe"
-					dimension: "ad_astra:mercury"
-				}
-			]
+			tasks: [{
+				id: "5602FF437BAA6984"
+				type: "dimension"
+				icon: "ad_astra:mercury_globe"
+				dimension: "ad_astra:mercury"
+			}]
 			rewards: [
 				{
 					id: "3D48BAA2A9CB06DC"
@@ -309,13 +297,11 @@
 			dependencies: ["4E9CF88D314F6843"]
 			size: 1.5d
 			id: "3705B91C0D4EA2A0"
-			tasks: [
-				{
-					id: "7C490195DEDC649C"
-					type: "item"
-					item: "techreborn:data_storage_chip"
-				}
-			]
+			tasks: [{
+				id: "7C490195DEDC649C"
+				type: "item"
+				item: "techreborn:data_storage_chip"
+			}]
 			rewards: [
 				{
 					id: "1ECE2D478CABB09D"
@@ -348,13 +334,11 @@
 			]
 			dependencies: ["6328B6E2C86D8834"]
 			id: "69F63D2FA5384442"
-			tasks: [
-				{
-					id: "62B6F76DEE9A1280"
-					type: "item"
-					item: "create:shadow_steel"
-				}
-			]
+			tasks: [{
+				id: "62B6F76DEE9A1280"
+				type: "item"
+				item: "create:shadow_steel"
+			}]
 			rewards: [
 				{
 					id: "43511E95E9B3CA35"
@@ -383,25 +367,21 @@
 			description: ["{ftbquests.chapter.6_raow.quests7.description}"]
 			dependencies: ["00EB34849356498A"]
 			id: "17794A6A366C8497"
-			tasks: [
-				{
-					id: "196283706CF2C8F5"
-					type: "item"
-					item: {
-						id: "create:chromatic_compound"
-						Count: 1b
-						tag: { }
-					}
+			tasks: [{
+				id: "196283706CF2C8F5"
+				type: "item"
+				item: {
+					id: "create:chromatic_compound"
+					Count: 1b
+					tag: { }
 				}
-			]
-			rewards: [
-				{
-					id: "1A29B5BE39F28223"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 1747526165463332193L
-				}
-			]
+			}]
+			rewards: [{
+				id: "1A29B5BE39F28223"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1747526165463332193L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests8.title}"
@@ -467,14 +447,12 @@
 					item: "per_aspera:jet_suit_flash_card"
 				}
 			]
-			rewards: [
-				{
-					id: "57B93FBC8CB04D7A"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 1747526165463332193L
-				}
-			]
+			rewards: [{
+				id: "57B93FBC8CB04D7A"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1747526165463332193L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests9.title}"
@@ -488,13 +466,11 @@
 			]
 			size: 2.0d
 			id: "3ED703EAA646A18A"
-			tasks: [
-				{
-					id: "62B66772EBD3B7F0"
-					type: "item"
-					item: "createastral:subatomic_ingot"
-				}
-			]
+			tasks: [{
+				id: "62B66772EBD3B7F0"
+				type: "item"
+				item: "createastral:subatomic_ingot"
+			}]
 			rewards: [
 				{
 					id: "4F5C903B3EB2C00D"
@@ -517,14 +493,12 @@
 			description: ["{ftbquests.chapter.6_raow.quests10.description}"]
 			dependencies: ["2291F6259C65D8F6"]
 			id: "3091F7AC37F848AD"
-			tasks: [
-				{
-					id: "6B1169BFB796200B"
-					type: "item"
-					item: "createastral:calorite_pin"
-					count: 16L
-				}
-			]
+			tasks: [{
+				id: "6B1169BFB796200B"
+				type: "item"
+				item: "createastral:calorite_pin"
+				count: 16L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests11.title}"
@@ -551,17 +525,15 @@
 			]
 			size: 5.0d
 			id: "69669C2A3E16E328"
-			tasks: [
-				{
-					id: "1718FFABE1DE0504"
-					type: "item"
-					item: {
-						id: "ad_astra:tier_4_rocket"
-						Count: 1b
-						tag: { }
-					}
+			tasks: [{
+				id: "1718FFABE1DE0504"
+				type: "item"
+				item: {
+					id: "ad_astra:tier_4_rocket"
+					Count: 1b
+					tag: { }
 				}
-			]
+			}]
 			rewards: [
 				{
 					id: "338DB62A4C226423"
@@ -590,21 +562,17 @@
 			]
 			dependencies: ["185518EF87BFDBCC"]
 			id: "0DA873C30C320AD9"
-			tasks: [
-				{
-					id: "63E9A67A654D5B55"
-					type: "item"
-					item: "yttr:bedrock_smasher"
-				}
-			]
-			rewards: [
-				{
-					id: "12574995BA34B3CF"
-					type: "item"
-					item: "chipped:black_concrete_9"
-					count: 32
-				}
-			]
+			tasks: [{
+				id: "63E9A67A654D5B55"
+				type: "item"
+				item: "yttr:bedrock_smasher"
+			}]
+			rewards: [{
+				id: "12574995BA34B3CF"
+				type: "item"
+				item: "chipped:black_concrete_9"
+				count: 32
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests13.title}"
@@ -623,21 +591,17 @@
 			]
 			size: 2.0d
 			id: "07A143B6DCF06587"
-			tasks: [
-				{
-					id: "156E0FBC07E0A278"
-					type: "item"
-					item: "yttr:rifle"
-				}
-			]
-			rewards: [
-				{
-					id: "66C76993F8BE8831"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 1747526165463332193L
-				}
-			]
+			tasks: [{
+				id: "156E0FBC07E0A278"
+				type: "item"
+				item: "yttr:rifle"
+			}]
+			rewards: [{
+				id: "66C76993F8BE8831"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1747526165463332193L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests14.title}"
@@ -651,20 +615,18 @@
 			]
 			dependencies: ["0DA873C30C320AD9"]
 			id: "471D3DCAFD9710EC"
-			tasks: [
-				{
-					id: "4F4F59A87FE43DAB"
-					type: "item"
-					item: {
-						id: "techreborn:cell"
-						Count: 1b
-						tag: {
-							fluid: "yttr:void"
-						}
+			tasks: [{
+				id: "4F4F59A87FE43DAB"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "yttr:void"
 					}
-					match_nbt: true
 				}
-			]
+				match_nbt: true
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests15.title}"
@@ -738,20 +700,16 @@
 			]
 			dependencies: ["7001A75C47B1DA1A"]
 			id: "5F4AD4D6BA9BD7BA"
-			tasks: [
-				{
-					id: "5F8EB803180D85C6"
-					type: "item"
-					item: "yttr:snare"
-				}
-			]
-			rewards: [
-				{
-					id: "1A2BC69CDB5C9911"
-					type: "item"
-					item: "tconstruct:jeweled_apple"
-				}
-			]
+			tasks: [{
+				id: "5F8EB803180D85C6"
+				type: "item"
+				item: "yttr:snare"
+			}]
+			rewards: [{
+				id: "1A2BC69CDB5C9911"
+				type: "item"
+				item: "tconstruct:jeweled_apple"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests17.title}"
@@ -764,13 +722,11 @@
 			]
 			dependencies: ["7A4255522DA6FEB7"]
 			id: "1CF74DAA63DCF682"
-			tasks: [
-				{
-					id: "698929C301002FCE"
-					type: "item"
-					item: "yttr:raw_gadolinite"
-				}
-			]
+			tasks: [{
+				id: "698929C301002FCE"
+				type: "item"
+				item: "yttr:raw_gadolinite"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests18.title}"
@@ -788,13 +744,11 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "7959BC3A659C88D5"
-			tasks: [
-				{
-					id: "569AC03E026D1FB2"
-					type: "item"
-					item: "ad_astra:raw_calorite"
-				}
-			]
+			tasks: [{
+				id: "569AC03E026D1FB2"
+				type: "item"
+				item: "ad_astra:raw_calorite"
+			}]
 		}
 		{
 			x: 6.5d
@@ -808,13 +762,11 @@
 			]
 			dependencies: ["7959BC3A659C88D5"]
 			id: "2291F6259C65D8F6"
-			tasks: [
-				{
-					id: "5F908FE049E296F6"
-					type: "item"
-					item: "ad_astra:calorite_ingot"
-				}
-			]
+			tasks: [{
+				id: "5F908FE049E296F6"
+				type: "item"
+				item: "ad_astra:calorite_ingot"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests20.title}"
@@ -827,13 +779,11 @@
 			]
 			dependencies: ["471D3DCAFD9710EC"]
 			id: "1A3925C20FDC3876"
-			tasks: [
-				{
-					id: "1E8EE7B30C05B570"
-					type: "item"
-					item: "createastral:voidtouched_compound"
-				}
-			]
+			tasks: [{
+				id: "1E8EE7B30C05B570"
+				type: "item"
+				item: "createastral:voidtouched_compound"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests21.title}"
@@ -920,13 +870,11 @@
 			]
 			dependencies: ["1E93A90AEF614FA3"]
 			id: "704AEB416AA5A953"
-			tasks: [
-				{
-					id: "305D53E422BBD5E6"
-					type: "item"
-					item: "create:refined_radiance_casing"
-				}
-			]
+			tasks: [{
+				id: "305D53E422BBD5E6"
+				type: "item"
+				item: "create:refined_radiance_casing"
+			}]
 		}
 		{
 			x: 24.0d
@@ -935,13 +883,11 @@
 			description: ["{ftbquests.chapter.6_raow.quests23.description}"]
 			dependencies: ["69F63D2FA5384442"]
 			id: "0931E20B74EB2D8A"
-			tasks: [
-				{
-					id: "739A2A7682DE28F2"
-					type: "item"
-					item: "create:shadow_steel_casing"
-				}
-			]
+			tasks: [{
+				id: "739A2A7682DE28F2"
+				type: "item"
+				item: "create:shadow_steel_casing"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests24.title}"
@@ -950,13 +896,11 @@
 			subtitle: "{ftbquests.chapter.6_raow.quests24.subtitle}"
 			dependencies: ["1CF74DAA63DCF682"]
 			id: "20FCAE136788543A"
-			tasks: [
-				{
-					id: "2344F45CE2D696EE"
-					type: "item"
-					item: "createastral:crushed_raw_gadolinite"
-				}
-			]
+			tasks: [{
+				id: "2344F45CE2D696EE"
+				type: "item"
+				item: "createastral:crushed_raw_gadolinite"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests25.title}"
@@ -969,13 +913,11 @@
 			]
 			dependencies: ["2E70D7A586F92E7A"]
 			id: "7001A75C47B1DA1A"
-			tasks: [
-				{
-					id: "7CF51EC610A1C6D0"
-					type: "item"
-					item: "yttr:yttrium_ingot"
-				}
-			]
+			tasks: [{
+				id: "7CF51EC610A1C6D0"
+				type: "item"
+				item: "yttr:yttrium_ingot"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests26.title}"
@@ -984,13 +926,11 @@
 			subtitle: "{ftbquests.chapter.6_raow.quests26.subtitle}"
 			dependencies: ["20FCAE136788543A"]
 			id: "27E46FB10D9F214B"
-			tasks: [
-				{
-					id: "40240E962DD86A7F"
-					type: "item"
-					item: "yttr:yttrium_dust"
-				}
-			]
+			tasks: [{
+				id: "40240E962DD86A7F"
+				type: "item"
+				item: "yttr:yttrium_dust"
+			}]
 		}
 		{
 			icon: {
@@ -1045,13 +985,11 @@
 			]
 			dependencies: ["637D5C1C0C789F9E"]
 			id: "32CD4BE3B7B7CF46"
-			tasks: [
-				{
-					id: "71103BF2B9585BCF"
-					type: "item"
-					item: "yttr:diving_plate"
-				}
-			]
+			tasks: [{
+				id: "71103BF2B9585BCF"
+				type: "item"
+				item: "yttr:diving_plate"
+			}]
 		}
 		{
 			x: 26.0d
@@ -1065,13 +1003,11 @@
 			]
 			dependencies: ["637D5C1C0C789F9E"]
 			id: "6F5C9A0CC0CAC7A8"
-			tasks: [
-				{
-					id: "5C63E8CF79F15691"
-					type: "item"
-					item: "yttr:suit_station"
-				}
-			]
+			tasks: [{
+				id: "5C63E8CF79F15691"
+				type: "item"
+				item: "yttr:suit_station"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests30.title}"
@@ -1085,13 +1021,11 @@
 			]
 			dependencies: ["07A143B6DCF06587"]
 			id: "185518EF87BFDBCC"
-			tasks: [
-				{
-					id: "4AE0F030409752C6"
-					type: "item"
-					item: "yttr:bedrock_smasher"
-				}
-			]
+			tasks: [{
+				id: "4AE0F030409752C6"
+				type: "item"
+				item: "yttr:bedrock_smasher"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests31.title}"
@@ -1105,13 +1039,11 @@
 			]
 			dependencies: ["185518EF87BFDBCC"]
 			id: "0947CB03046F64B5"
-			tasks: [
-				{
-					id: "76B53879CFFAFF6D"
-					type: "item"
-					item: "yttr:bedrock_shard"
-				}
-			]
+			tasks: [{
+				id: "76B53879CFFAFF6D"
+				type: "item"
+				item: "yttr:bedrock_shard"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests32.title}"
@@ -1133,47 +1065,43 @@
 			]
 			size: 2.0d
 			id: "6E9849C1B2A2AA15"
-			tasks: [
-				{
-					id: "72FC2479FF71EEFD"
-					type: "item"
-					item: {
-						id: "custommachinery:custom_machine_item"
-						Count: 1b
-						tag: {
-							machine: "createastral:shimmer_refinery"
-						}
+			tasks: [{
+				id: "72FC2479FF71EEFD"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "createastral:shimmer_refinery"
 					}
 				}
-			]
-			rewards: [
-				{
-					id: "63B65F7B750EA1C8"
-					type: "item"
-					auto: "disabled"
-					item: {
-						id: "create:schematic"
-						Count: 1b
-						tag: {
-							Anchor: {
-								Z: 0
-								X: 0
-								Y: 0
-							}
-							Owner: "Laskyyy"
-							Deployed: 0b
-							File: "[AstralExamples] Shimmer Refinery.nbt"
-							Rotation: "NONE"
-							Mirror: "NONE"
-							Bounds: [
-								5
-								5
-								5
-							]
+			}]
+			rewards: [{
+				id: "63B65F7B750EA1C8"
+				type: "item"
+				auto: "disabled"
+				item: {
+					id: "create:schematic"
+					Count: 1b
+					tag: {
+						Anchor: {
+							Z: 0
+							X: 0
+							Y: 0
 						}
+						Owner: "Laskyyy"
+						Deployed: 0b
+						File: "[AstralExamples] Shimmer Refinery.nbt"
+						Rotation: "NONE"
+						Mirror: "NONE"
+						Bounds: [
+							5
+							5
+							5
+						]
 					}
 				}
-			]
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests33.title}"
@@ -1181,13 +1109,11 @@
 			y: -5.5d
 			dependencies: ["0947CB03046F64B5"]
 			id: "62E2DB401A1BBC8D"
-			tasks: [
-				{
-					id: "5AA9B9580836CFF4"
-					type: "item"
-					item: "yttr:armor_plating"
-				}
-			]
+			tasks: [{
+				id: "5AA9B9580836CFF4"
+				type: "item"
+				item: "yttr:armor_plating"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests34.title}"
@@ -1201,20 +1127,16 @@
 			]
 			dependencies: ["65F77462CD1DFFDB"]
 			id: "56FBBD9207565ED6"
-			tasks: [
-				{
-					id: "032F95D0B26EA163"
-					type: "item"
-					item: "createastral:pure_star_shard"
-				}
-			]
-			rewards: [
-				{
-					id: "50A5CABFECEA9173"
-					type: "item"
-					item: "createastral:star_shard"
-				}
-			]
+			tasks: [{
+				id: "032F95D0B26EA163"
+				type: "item"
+				item: "createastral:pure_star_shard"
+			}]
+			rewards: [{
+				id: "50A5CABFECEA9173"
+				type: "item"
+				item: "createastral:star_shard"
+			}]
 		}
 		{
 			icon: "astraladditions:fragile_item_2"
@@ -1278,26 +1200,22 @@
 			description: ["{ftbquests.chapter.6_raow.quests37.description}"]
 			dependencies: ["471D3DCAFD9710EC"]
 			id: "1CCB3210417B55B6"
-			tasks: [
-				{
-					id: "3AFF35DB8C4DC33B"
-					type: "item"
-					item: "createastral:separation_agent"
-				}
-			]
+			tasks: [{
+				id: "3AFF35DB8C4DC33B"
+				type: "item"
+				item: "createastral:separation_agent"
+			}]
 		}
 		{
 			x: 21.0d
 			y: 8.5d
 			dependencies: ["3ED703EAA646A18A"]
 			id: "4BD75128B2B5E343"
-			tasks: [
-				{
-					id: "44E5216528B0571E"
-					type: "item"
-					item: "createastral:t6_upgrade"
-				}
-			]
+			tasks: [{
+				id: "44E5216528B0571E"
+				type: "item"
+				item: "createastral:t6_upgrade"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests39.title}"
@@ -1317,13 +1235,11 @@
 			]
 			size: 1.5d
 			id: "4CC6AB06056BC35C"
-			tasks: [
-				{
-					id: "149EDE621EBD708B"
-					type: "item"
-					item: "yttr:magtank"
-				}
-			]
+			tasks: [{
+				id: "149EDE621EBD708B"
+				type: "item"
+				item: "yttr:magtank"
+			}]
 		}
 		{
 			x: 22.0d
@@ -1337,13 +1253,11 @@
 			dependencies: ["3ED703EAA646A18A"]
 			size: 2.0d
 			id: "16A408D4C0DAD08D"
-			tasks: [
-				{
-					id: "0E306D967731CE1B"
-					type: "item"
-					item: "ad_astra:calorite_engine"
-				}
-			]
+			tasks: [{
+				id: "0E306D967731CE1B"
+				type: "item"
+				item: "ad_astra:calorite_engine"
+			}]
 		}
 		{
 			x: 23.0d
@@ -1351,13 +1265,11 @@
 			description: ["{ftbquests.chapter.6_raow.quests41.description}"]
 			dependencies: ["3ED703EAA646A18A"]
 			id: "7E3960A7DECF8C25"
-			tasks: [
-				{
-					id: "2D7E6BC6EC19F64C"
-					type: "item"
-					item: "yttr:rifle_reinforced"
-				}
-			]
+			tasks: [{
+				id: "2D7E6BC6EC19F64C"
+				type: "item"
+				item: "yttr:rifle_reinforced"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests42.title}"
@@ -1374,19 +1286,17 @@
 				"77217A6E21B6D3B3"
 			]
 			id: "4E9CF88D314F6843"
-			tasks: [
-				{
-					id: "45E0814BA1D565D0"
-					type: "item"
-					item: {
-						id: "techreborn:cell"
-						Count: 1b
-						tag: {
-							fluid: "tconstruct:molten_uranium"
-						}
+			tasks: [{
+				id: "45E0814BA1D565D0"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "tconstruct:molten_uranium"
 					}
 				}
-			]
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests43.title}"
@@ -1399,13 +1309,11 @@
 			]
 			dependencies: ["27E46FB10D9F214B"]
 			id: "5BCACF82FA7D1B80"
-			tasks: [
-				{
-					id: "421929BF70E37ADE"
-					type: "item"
-					item: "createastral:uranium_residue"
-				}
-			]
+			tasks: [{
+				id: "421929BF70E37ADE"
+				type: "item"
+				item: "createastral:uranium_residue"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests44.title}"
@@ -1414,13 +1322,11 @@
 			description: ["{ftbquests.chapter.6_raow.quests44.description}"]
 			dependencies: ["5BCACF82FA7D1B80"]
 			id: "77217A6E21B6D3B3"
-			tasks: [
-				{
-					id: "10931ACB8B9DD4DD"
-					type: "item"
-					item: "create:blaze_cake"
-				}
-			]
+			tasks: [{
+				id: "10931ACB8B9DD4DD"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests45.title}"
@@ -1501,19 +1407,17 @@
 			hide_dependency_lines: true
 			dependencies: ["5BCACF82FA7D1B80"]
 			id: "06431C6B11CBD4D1"
-			tasks: [
-				{
-					id: "2AD9F7D6CA6CC058"
-					type: "item"
-					item: {
-						id: "techreborn:cell"
-						Count: 1b
-						tag: {
-							fluid: "techreborn:mercury"
-						}
+			tasks: [{
+				id: "2AD9F7D6CA6CC058"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "techreborn:mercury"
 					}
 				}
-			]
+			}]
 		}
 		{
 			x: 18.0d
@@ -1530,26 +1434,22 @@
 			dependencies: ["4DAA2612F8E1E043"]
 			size: 1.5d
 			id: "11943F36C544F8E6"
-			tasks: [
-				{
-					id: "0F738A7D82DD8A9C"
-					type: "item"
-					item: {
-						id: "astraladditions:e_guitar"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "0F738A7D82DD8A9C"
+				type: "item"
+				item: {
+					id: "astraladditions:e_guitar"
+					Count: 1b
+					tag: {
+						Damage: 0
 					}
 				}
-			]
-			rewards: [
-				{
-					id: "668123BD8BDBF5B8"
-					type: "item"
-					item: "astralsignals:polyvinyl_sheet"
-				}
-			]
+			}]
+			rewards: [{
+				id: "668123BD8BDBF5B8"
+				type: "item"
+				item: "astralsignals:polyvinyl_sheet"
+			}]
 		}
 		{
 			x: 25.5d
@@ -1562,13 +1462,11 @@
 			]
 			dependencies: ["471D3DCAFD9710EC"]
 			id: "4C8291E72A5757F9"
-			tasks: [
-				{
-					id: "74BCC4BD6D7EB3B8"
-					type: "item"
-					item: "yttr:glassy_void"
-				}
-			]
+			tasks: [{
+				id: "74BCC4BD6D7EB3B8"
+				type: "item"
+				item: "yttr:glassy_void"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests49.title}"
@@ -1577,14 +1475,12 @@
 			subtitle: "{ftbquests.chapter.6_raow.quests49.subtitle}"
 			dependencies: ["07A143B6DCF06587"]
 			id: "205E46FC4E6AD8A1"
-			tasks: [
-				{
-					id: "6E87CB0D8B2EC2B4"
-					type: "item"
-					item: "minecraft:glowstone_dust"
-					count: 64L
-				}
-			]
+			tasks: [{
+				id: "6E87CB0D8B2EC2B4"
+				type: "item"
+				item: "minecraft:glowstone_dust"
+				count: 64L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests50.title}"
@@ -1593,14 +1489,12 @@
 			subtitle: "{ftbquests.chapter.6_raow.quests50.subtitle}"
 			dependencies: ["07A143B6DCF06587"]
 			id: "660B16FBBBA83A18"
-			tasks: [
-				{
-					id: "3939A03477F73F2A"
-					type: "item"
-					item: "minecraft:chorus_fruit"
-					count: 64L
-				}
-			]
+			tasks: [{
+				id: "3939A03477F73F2A"
+				type: "item"
+				item: "minecraft:chorus_fruit"
+				count: 64L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests51.title}"
@@ -1609,14 +1503,12 @@
 			subtitle: "{ftbquests.chapter.6_raow.quests51.subtitle}"
 			dependencies: ["07A143B6DCF06587"]
 			id: "7EA3E1022B635878"
-			tasks: [
-				{
-					id: "198D622AB3AB676D"
-					type: "item"
-					item: "minecraft:gunpowder"
-					count: 64L
-				}
-			]
+			tasks: [{
+				id: "198D622AB3AB676D"
+				type: "item"
+				item: "minecraft:gunpowder"
+				count: 64L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests52.title}"
@@ -1625,14 +1517,12 @@
 			subtitle: "{ftbquests.chapter.6_raow.quests52.subtitle}"
 			dependencies: ["07A143B6DCF06587"]
 			id: "14634473513AEB59"
-			tasks: [
-				{
-					id: "04DF7E476EA08C5B"
-					type: "item"
-					item: "minecraft:redstone"
-					count: 64L
-				}
-			]
+			tasks: [{
+				id: "04DF7E476EA08C5B"
+				type: "item"
+				item: "minecraft:redstone"
+				count: 64L
+			}]
 		}
 		{
 			x: 16.5d
@@ -1733,14 +1623,12 @@
 					}
 				}
 			]
-			rewards: [
-				{
-					id: "7ABF362E85F560A9"
-					type: "item"
-					item: "create:experience_nugget"
-					count: 32
-				}
-			]
+			rewards: [{
+				id: "7ABF362E85F560A9"
+				type: "item"
+				item: "create:experience_nugget"
+				count: 32
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests56.title}"
@@ -1775,14 +1663,12 @@
 			subtitle: "{ftbquests.chapter.6_raow.quests57.subtitle}"
 			dependencies: ["7A4255522DA6FEB7"]
 			id: "5AE829C4B70FCF74"
-			tasks: [
-				{
-					id: "4BDDC0F85D3C89B0"
-					type: "item"
-					item: "ad_astra:mercury_cobblestone"
-					count: 64L
-				}
-			]
+			tasks: [{
+				id: "4BDDC0F85D3C89B0"
+				type: "item"
+				item: "ad_astra:mercury_cobblestone"
+				count: 64L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests58.title}"
@@ -1796,13 +1682,11 @@
 			]
 			dependencies: ["471D3DCAFD9710EC"]
 			id: "59CDE73E177D6750"
-			tasks: [
-				{
-					id: "0878FF9002FA7C89"
-					type: "item"
-					item: "yttr:raw_gadolinite_block"
-				}
-			]
+			tasks: [{
+				id: "0878FF9002FA7C89"
+				type: "item"
+				item: "yttr:raw_gadolinite_block"
+			}]
 		}
 		{
 			x: 21.0d
@@ -1824,19 +1708,17 @@
 				"1CCB3210417B55B6"
 			]
 			id: "65F77462CD1DFFDB"
-			tasks: [
-				{
-					id: "38E2FE16957BF2CC"
-					type: "item"
-					item: {
-						id: "techreborn:cell"
-						Count: 1b
-						tag: {
-							fluid: "kubejs:molten_radiance"
-						}
+			tasks: [{
+				id: "38E2FE16957BF2CC"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "kubejs:molten_radiance"
 					}
 				}
-			]
+			}]
 		}
 		{
 			x: 23.0d
@@ -1855,19 +1737,17 @@
 				"1CCB3210417B55B6"
 			]
 			id: "6328B6E2C86D8834"
-			tasks: [
-				{
-					id: "20C665E85CBE42FD"
-					type: "item"
-					item: {
-						id: "techreborn:cell"
-						Count: 1b
-						tag: {
-							fluid: "kubejs:molten_shadowsteel"
-						}
+			tasks: [{
+				id: "20C665E85CBE42FD"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "kubejs:molten_shadowsteel"
 					}
 				}
-			]
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests61.title}"
@@ -1888,14 +1768,12 @@
 			]
 			size: 1.5d
 			id: "239D3C8315C472C4"
-			tasks: [
-				{
-					id: "600CC46FB00BACF2"
-					type: "item"
-					item: "createastral:mercurian_stone"
-					count: 10L
-				}
-			]
+			tasks: [{
+				id: "600CC46FB00BACF2"
+				type: "item"
+				item: "createastral:mercurian_stone"
+				count: 10L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests62.title}"
@@ -1908,26 +1786,22 @@
 			]
 			dependencies: ["2291F6259C65D8F6"]
 			id: "09B37242E2CCAE8E"
-			tasks: [
-				{
-					id: "713CF3FEAA2BE265"
-					type: "item"
-					item: "yttr:quicksilver"
-				}
-			]
-			rewards: [
-				{
-					id: "592909B5382CB537"
-					type: "item"
-					item: {
-						id: "techreborn:cell"
-						Count: 1b
-						tag: {
-							fluid: "techreborn:mercury"
-						}
+			tasks: [{
+				id: "713CF3FEAA2BE265"
+				type: "item"
+				item: "yttr:quicksilver"
+			}]
+			rewards: [{
+				id: "592909B5382CB537"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "techreborn:mercury"
 					}
 				}
-			]
+			}]
 		}
 		{
 			x: 16.0d
@@ -1936,26 +1810,22 @@
 			description: ["{ftbquests.chapter.6_raow.quests63.description}"]
 			dependencies: ["7001A75C47B1DA1A"]
 			id: "4F50E37BACB25892"
-			tasks: [
-				{
-					id: "28D9D9B6B45AE060"
-					type: "item"
-					item: {
-						id: "yttr:cleaver"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "28D9D9B6B45AE060"
+				type: "item"
+				item: {
+					id: "yttr:cleaver"
+					Count: 1b
+					tag: {
+						Damage: 0
 					}
 				}
-			]
-			rewards: [
-				{
-					id: "21D6FC083CB0F3FC"
-					type: "item"
-					item: "astralfoods:shimmered_apple"
-				}
-			]
+			}]
+			rewards: [{
+				id: "21D6FC083CB0F3FC"
+				type: "item"
+				item: "astralfoods:shimmered_apple"
+			}]
 		}
 	]
 	quest_links: [ ]
