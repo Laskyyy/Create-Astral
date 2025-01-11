@@ -397,12 +397,16 @@
     "block.createastral.swift_andesite": "Swift Andesite",
     "block.createastral.rocket_casing": "Rocket Casing",
     "block.createastral.moonset_stone": "Moonset Stone",
-		
-	"item.createastral.marimo": "Marimo",
-	"item.createastral.moonset_marimo": "Moonset Marimo",
-	"item.createastral.snowy_marimo": "Snowy Marimo",
-	"item.createastral.ender_marimo": "Ender Marimo",
-	"item.createastral.shimmer_marimo": "Shimarimo",
+
+    "item.astralfoods.ambrosia": "Ambrosia",
+    "item.astralfoods.chocolate_ice_cream": "Chocolate Ice Cream",
+    "item.astralfoods.ice_cream_sandwich": "Ice Cream Sandwich",
+
+    "item.createastral.marimo": "Marimo",
+    "item.createastral.moonset_marimo": "Moonset Marimo",
+    "item.createastral.snowy_marimo": "Snowy Marimo",
+    "item.createastral.ender_marimo": "Ender Marimo",
+    "item.createastral.shimmer_marimo": "Shimarimo",
 
     "block.doodads.asphalt_slab": "Asphalt Slab",
     "block.doodads.asphalt_stair": "Asphalt Stair",
@@ -464,6 +468,7 @@
     "fluid.kubejs.blaze_milk_stout_fluid": "Blaze Milk Stout",
     "fluid.kubejs.blaze_stout_fluid": "Blaze Stout",
     "fluid.kubejs.miner_pale_ale_fluid": "Miner Pale Ale",
+    "fluid.astralfoods.cream": "Cream",
 
     "comment_4": "vanilla",
     "logging_tip": "Please Read The Quest Book (Hover Over Me!)",
@@ -1506,11 +1511,11 @@
     "ftbquests.chapter.chapter_2.quests54.subtitle": "\"What's in the box?\" \"Pain.\"",
     "ftbquests.chapter.chapter_2.quests54.description0": "The Smart Observer can broadcast a Redstone signal whenever an inventory has a matching item.",
     "ftbquests.chapter.chapter_2.quests54.description3": "Not too useful if you've managed your factories well enough, you should already know what's in an inventory. That being said, put it your inventory Crafting Table and...",
-	"ftbquests.chapter.chapter_2.quests55.subtitle": "And Duh Sight",
-	"ftbquests.chapter.chapter_2.quests55.description0": "Got Andesite problems? I feel bad for you, son.",
-	"ftbquests.chapter.chapter_2.quests55.description2": "Crush Cobblestone using a Mechanical Press and you'll be left with a neat pile of Andesite Dust! Place 4 Andesite Dust in a Basin and use another Mechanical Press over a Basin to Compact the dust into a fresh block of Andesite!",
-	"ftbquests.chapter.chapter_2.quests55.description4": "This isn't the only way to make Andesite or Andesite Dust. Using REI, you can click on Andesite and Andesite Dust to see all of their recipes. Remember that REI is your friend! Often there are recipes in the pack that are not mentioned in this questbook, so make sure to explore all the recipes for any items you need more of!",
-	"ftbquests.chapter.chapter_25_the_automation_matrix.title": "The Automation Matrix",
+    "ftbquests.chapter.chapter_2.quests55.subtitle": "And Duh Sight",
+    "ftbquests.chapter.chapter_2.quests55.description0": "Got Andesite problems? I feel bad for you, son.",
+    "ftbquests.chapter.chapter_2.quests55.description2": "Crush Cobblestone using a Mechanical Press and you'll be left with a neat pile of Andesite Dust! Place 4 Andesite Dust in a Basin and use another Mechanical Press over a Basin to Compact the dust into a fresh block of Andesite!",
+    "ftbquests.chapter.chapter_2.quests55.description4": "This isn't the only way to make Andesite or Andesite Dust. Using REI, you can click on Andesite and Andesite Dust to see all of their recipes. Remember that REI is your friend! Often there are recipes in the pack that are not mentioned in this questbook, so make sure to explore all the recipes for any items you need more of!",
+    "ftbquests.chapter.chapter_25_the_automation_matrix.title": "The Automation Matrix",
     "ftbquests.chapter.chapter_25_the_automation_matrix.quests0.subtitle": "Compost organics",
     "ftbquests.chapter.chapter_25_the_automation_matrix.quests0.description": "Bone Meal is used to speed up the growth of crops.",
     "ftbquests.chapter.chapter_25_the_automation_matrix.quests1.subtitle": "There may be a way to automate this later...",
@@ -2047,18 +2052,18 @@
     "ftbquests.chapter.chapter_3.quests77.description0": "The Fluid Centrifuge refines a liquid to create a new liquid.",
     "ftbquests.chapter.chapter_3.quests77.description2": "&bHold W on the Fluid Centrifuge item to see how it works!&r Essentially, when spinning at 256 RPM, the Fluid Centrifuge takes an input fluid from a Fluid Tank underneath, and outputs a new liquid to a Fluid Tank on top.",
     "ftbquests.chapter.chapter_3.quests77.description4": "&4The Fluid Centrifuge doesn't work very well with REI.&r To see its recipes, you must press U on it. Take note of all these recipes, as they come in handy at various points in progession!",
-	"ftbquests.chapter.chapter_3.quests78.subtitle": "Hell yeah",
+    "ftbquests.chapter.chapter_3.quests78.subtitle": "Hell yeah",
     "ftbquests.chapter.chapter_3.quests78.description0": "The Fluid Centrifuge can be used to refine Horse Urine into Liquid Estrogen. &8(I swear this is scientifically accurate)",
     "ftbquests.chapter.chapter_3.quests78.description2": "Pop an Estrogen Pill and unleash your inner *&dgirl&r*. The ability to air-dash is granted! Bind the dash button to something comfortable in the Controls menu. I recommend a mouse button if you have one spare!",
-	"ftbquests.chapter.chapter_3.quests79.subtitle": "Sticky!",
+    "ftbquests.chapter.chapter_3.quests79.subtitle": "Sticky!",
     "ftbquests.chapter.chapter_3.quests79.description0": "Mouth getting sore from eating all those pills? An Estrogen Patch consumes Estrogen Pills automatically from your inventory, and it increases the duration of the effect given! Woohoo!",
-    
-	"ftbquests.chapter.chapter_3.quests80.title": "Shimmer Transmutation",
-	"ftbquests.chapter.chapter_3.quests80.subtitle": "This is still a tech pack, I swear",
+
+    "ftbquests.chapter.chapter_3.quests80.title": "Shimmer Transmutation",
+    "ftbquests.chapter.chapter_3.quests80.subtitle": "This is still a tech pack, I swear",
     "ftbquests.chapter.chapter_3.quests80.description0": "Shimmer can be used to Transmute certain items, transforming them into another item. Press U on a bucket of Shimmer in your inventory to see all of the recipes!",
     "ftbquests.chapter.chapter_3.quests80.description2": "Simply throw a valid item into Shimmer fluid and watch the SCIENCE unfold! Remember your protective goggles!",
-	
-	"ftbquests.chapter.chapter_4.title": "3) Remnants of a Lost Civilisation",
+
+    "ftbquests.chapter.chapter_4.title": "3) Remnants of a Lost Civilisation",
     "ftbquests.chapter.chapter_4.quests0.subtitle": "Obtain a Blaze from a lost Powerplant on the Moon!",
     "ftbquests.chapter.chapter_4.quests0.description0": "Powerplants spawn with dangerous Wither Skeletons and guaranteed Blaze Spawners. With an empty Blaze Burner, you'll be able to Right-Click Blazes and scoop them up.",
     "ftbquests.chapter.chapter_4.quests0.description3": "Blaze Burners let you do heated (and later on, super-heated) recipes, where you can light a fire under a Basin for a Mixer or Press to operate on. A lot of recipes can only be made this way. It's the reason you really should have fuel automated.",
@@ -2918,14 +2923,14 @@
     "ftbquests.chapter.read_the_questbook.quests19.description6": "Liquid Bronze is locked behind &6Chapter 2&r.",
     "ftbquests.chapter.read_the_questbook.quests19.description8": "Steel is obtained at the end of &6Chapter 3&r.",
     "ftbquests.chapter.read_the_questbook.quests19.description10": "The final tier of barrel has been repurposed to &6Ostrum&r, obtained in &6Chapter 4&r.",
-	
-	"ftbquests.chapter.read_the_questbook.quests20.title": "10k Fluid Infinite Pools?",
-	"ftbquests.chapter.read_the_questbook.quests20.subtitle": "Gone!",
+
+    "ftbquests.chapter.read_the_questbook.quests20.title": "10k Fluid Infinite Pools?",
+    "ftbquests.chapter.read_the_questbook.quests20.subtitle": "Gone!",
     "ftbquests.chapter.read_the_questbook.quests20.description0": "10k Infinite Fluid Pools from Create have been disabled in favour of more traditional automation. All the usual fluids, like Lava, have multiple recipes using Create machinery. Check REI for these recipes.",
     "ftbquests.chapter.read_the_questbook.quests21.title": "How to FTBQuests",
-	"ftbquests.chapter.read_the_questbook.quests21.subtitle": "First time using a quest book?",
+    "ftbquests.chapter.read_the_questbook.quests21.subtitle": "First time using a quest book?",
     "ftbquests.chapter.read_the_questbook.quests21.description0": "Close this quest and hover your mouse to the left of the screen to open the chapter browser :)",
-    
+
     "ftbquests.chapter.the_trophy_room.title": "?) The Trophy Room",
     "ftbquests.chapter.the_trophy_room.quests0.title": "I automated",
     "ftbquests.chapter.the_trophy_room.quests0.description": "The Players were ever-cunning, they used anything to do everything.",
@@ -2962,7 +2967,7 @@
     "ftbquests.reward_tables.chapter_4.title": "Loot Crate: Chapter 4",
     "ftbquests.reward_tables.chapter_5.title": "Loot Crate: Chapter 5-6",
 
-	"category.starei.channeling_transformer": "Channeling",
+    "category.starei.channeling_transformer": "Channeling",
     "category.starei.distillery": "Distilling",
     "category.starei.electrolyzer": "Electrolyzing",
     "category.starei.gas_mixer": "Gas Mixing",
