@@ -475,6 +475,17 @@ function sequencedAssemblyRecipes(event) {
     const inc_sturdy_sheet = "create:unprocessed_obsidian_sheet";
 
 		event.recipes
+	.createSequencedAssembly(Item.of("ad_astra:moon_stone"), "minecraft:stone", [
+        	event.recipes.createPressing("minecraft:stone", "minecraft:stone"),
+        	event.recipes.createFilling("minecraft:stone", [
+        	"minecraft:stone",
+        	{ fluid: "kubejs:shimmer", amount: 250 * mB },
+        	]),
+	])
+	.transitionalItem("minecraft:stone")
+	.loops(4);
+
+		event.recipes
         .createSequencedAssembly(Item.of("minecraft:powder_snow_bucket"), "minecraft:bucket", [
 			event.recipes.createDeploying("minecraft:bucket", [
                 "minecraft:bucket",
