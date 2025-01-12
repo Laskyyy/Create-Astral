@@ -3765,6 +3765,7 @@ function cuttingRecipes(event) {
 function hauntingRecipes(event) {
     // [Input string, Output string]
     [
+	["minecraft:emerald", "minecraft:amethyst_shard"]
         ["naturalist:snail_shell", "minecraft:nautilus_shell"],
         ["2x techreborn:charcoal_dust", "techreborn:coal_dust"],
         ["2x minecraft:charcoal", "minecraft:coal"],
