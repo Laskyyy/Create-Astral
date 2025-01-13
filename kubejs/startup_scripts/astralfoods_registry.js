@@ -99,21 +99,21 @@ onEvent("item.registry", (event) => {
         .create("astralfoods:ambrosia")
         .displayName("Ambrosia")
         .food((food) => {
-            food.hunger(3).saturation(1.2).effect("haste", 1200, 1, 1).alwaysEdible();
+            food.hunger(3).saturation(1.1).effect("haste", 1200, 1, 1).alwaysEdible();
         });
 
     event
         .create("astralfoods:chocolate_ice_cream")
         .displayName("Chocolate Ice Cream")
         .food((food) => {
-            food.hunger(2).saturation(1.4).effect("speed", 800, 1, 1).alwaysEdible();
+            food.hunger(2).saturation(1.2).effect("speed", 800, 1, 1).alwaysEdible();
         });
 
     event
-        .create("astralfoods:chocolate_ice_cream")
-        .displayName("Chocolate Ice Cream")
+        .create("astralfoods:ice_cream_sandwich")
+        .displayName("Ice Cream Sandwich")
         .food((food) => {
-            food.hunger(6).saturation(1.4).effect("speed", 600, 1, 1).effect("haste", 600, 1, 1).alwaysEdible();
+            food.hunger(6).saturation(1.2).effect("speed", 600, 1, 1).effect("haste", 600, 1, 1).alwaysEdible();
         });
 });
 
