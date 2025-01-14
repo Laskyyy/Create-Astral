@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "farmersdelight:salmon_slice"
+  },
+  "result": {
+    "fluid": "tconstruct:blood",
+    "amount": 3240
+  },
+  "temperature": 32,
+  "time": 7
+}
