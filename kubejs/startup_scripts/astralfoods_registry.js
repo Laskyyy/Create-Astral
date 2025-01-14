@@ -30,14 +30,14 @@ onEvent("item.registry", (event) => {
         .create("astralfoods:seared_potato")
         .displayName("Seared Potato")
         .food((food) => {
-            food.hunger(9).saturation(1).effect("resistance", 440, 1, 1).alwaysEdible();
+            food.hunger(8).saturation(1).effect("resistance", 440, 1, 1).alwaysEdible();
         });
 
     event
         .create("astralfoods:dipped_potato")
         .displayName("Dipped Potato")
         .food((food) => {
-            food.hunger(12)
+            food.hunger(10)
                 .saturation(1.1)
                 .effect("resistance", 440, 2, 1)
                 .effect("absorption", 440, 3, 1)
@@ -114,6 +114,17 @@ onEvent("item.registry", (event) => {
         .displayName("Ice Cream Sandwich")
         .food((food) => {
             food.hunger(6).saturation(1.2).effect("speed", 600, 1, 1).effect("haste", 600, 1, 1).alwaysEdible();
+        });
+
+    event
+        .create("astralfoods:gamers_delight")
+        .displayName("Gamers Delight")
+        .food((food) => {
+            food.hunger(7)
+                .saturation(1.3)
+                .effect("createaddition:shocking", 10, 1, 1)
+                .effect("strength", 400, 1, 1)
+                .alwaysEdible();
         });
 });
 
