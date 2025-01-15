@@ -366,7 +366,7 @@ hash = "daa176135e4986defbdbf74108cef19add9e00f620061086ca2c6089c439900b"
 
 [[files]]
 file = "config/fancymenu/custom_locals/astralmenu/en_us.local"
-hash = "ceaa03ecdeb6851d797bff729cf8aa282ee830eed8ed0441eec65acdb230cd8d"
+hash = "c18bd04749402c84bf020a8179b1499ca91814adbb5694a34b51d2e9931c54d1"
 
 [[files]]
 file = "config/fancymenu/custom_locals/astralmenu/zh_cn.local"
@@ -390,11 +390,11 @@ hash = "77a559f0de4a9966981f204342b97eb12ceb0f50b0e7c2273f7a56ca1768af36"
 
 [[files]]
 file = "config/fancymenu/customization/modpack_changelog_2.1.1_layout.txt"
-hash = "2cae4380e50bbd638a4d5f173307d64985528fba0ab953819c995ddee5b2c4d9"
+hash = "9d6d76a58ea908a94492bbd5d99b749693a2993e77142e222831398d890f35f4"
 
 [[files]]
 file = "config/fancymenu/customization/modpack_changelog_2.1_layout.txt"
-hash = "fad11ea121cd7a7ee850d383a61200cd9a3a23826c5c677a95762ce6f4faccc1"
+hash = "d8aed985986018a193618eec5a97b289da4085401620edb6f8c61ed684f308f2"
 
 [[files]]
 file = "config/fancymenu/customization/title_screen_layout.txt"
@@ -570,7 +570,7 @@ hash = "717247d714376aefd5b971dbc5195cdbd08de2970f34e86910c1eefcf6dd13ca"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_2.snbt"
-hash = "d4b8824235181d69e97c436302fa6f9ef98a21939aa7f7cf90ffd56c33a2d76e"
+hash = "40f2a28679230bf9a36b539f7bd223f5c4aaa62db1143cd89c67ae46ce1cc551"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_25_the_automation_matrix.snbt"
@@ -578,11 +578,11 @@ hash = "084de3c9a60965228c23243930ccfd64f6bc0f136ad001ae538b2e932e471fb7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_3.snbt"
-hash = "a42e5b6a76b787ce316f7b196eca1da3ceda70712abba3d91fa8ec0b33b2885b"
+hash = "232626d243cccc874e187597c4bcea38ebc321fffffddbd0f17b6c8cfd420f3e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_4.snbt"
-hash = "54c35096dc8f5c12d19cbf8fa0c4294f253fa75c815b9e1cd25c3cc90cc33c04"
+hash = "a999b6ab48b64330d20f1d4fec9d7ef9bcc864fdb3d4a7c54076df6acef020c3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_5.snbt"
@@ -590,7 +590,7 @@ hash = "7adffeaba75b69482b604b094c4d36d14fbf474c56c41d896ea2a2726f04bcf5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/read_the_questbook.snbt"
-hash = "0353a7ee76bb5a2db1604efa6fd08cf17cc35306692c8d2e020b002e2713886d"
+hash = "465125501e2ae42b351c0cf4119eea618297ae40d274f79194cf254c2a5837bd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/the_trophy_room.snbt"
@@ -1109,6 +1109,14 @@ file = "global_packs/required_data/AstralRails/data/astralrails/loot_tables/ches
 hash = "482aedd5d45258ebc3b2babf5581ef6e3f2397f4b2d9a1680f97c039e458aef7"
 
 [[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/loot_tables/chests/generic/ch6.json"
+hash = "3c3d7138d54c556863c293fd9c9a697c11940d885dee9b058650f01c510ba93b"
+
+[[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/loot_tables/chests/generic/ch6_major.json"
+hash = "d65430f681a23d88a3e233931f898a0c6f2fbb8de8231970ebcff062a7c15034"
+
+[[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/loot_tables/chests/moon/coal.json"
 hash = "9ac703e59be3e6554431f61b23901baa7e9d0945a0da2dfc510e70c6121e9938"
 
@@ -1123,6 +1131,10 @@ hash = "b1a7fb5f3b3bb14ad0a1a5e49fd6e0837f9576f9359466ab62de1f967d6ce8b7"
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/loot_tables/chests/moon/pipes.json"
 hash = "43d5d5b9dcc8ac9cd1571a1311870504643a4f752c59f154a7ca85d4c0e107d5"
+
+[[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/loot_tables/chests/nether/.json"
+hash = "27d32d978ad1cbb3059ada9f34af1dea86f57dce0321509b18463cf4625e48f8"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/loot_tables/chests/powerplant/highestvalueblaze.json"
@@ -1813,6 +1825,38 @@ file = "global_packs/required_data/AstralRails/data/astralrails/structures/moon/
 hash = "8166c81e41a77a70aba86c0f282e9a57bdc5d4de75af121f1220f75691f7423d"
 
 [[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/nether/purpur_fortress/l_corner.nbt"
+hash = "abb1fcade0fff64dd273fab219492a3dd0cb18ad0b7840e628ebf21fa8712f8c"
+
+[[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/nether/purpur_fortress/l_corner_2.nbt"
+hash = "cc97be3bae89122080d0ec6cb56e0bface83c3606c7005e94650ed98eb139fe5"
+
+[[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/nether/purpur_fortress/line.nbt"
+hash = "44a5f292443d7429cba993525ecd026af1e34eb6224883be9e8207c9def743a1"
+
+[[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/nether/purpur_fortress/line_2.nbt"
+hash = "5afdfc52a97f43e5fe26685d44c7462f72bcab51d0536b61fdcae893991fbece"
+
+[[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/nether/purpur_fortress/line_3.nbt"
+hash = "672196486da52fa7b0766fcf2e0f5dced8d0e518823a03bb027d1493e97aa3dd"
+
+[[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/nether/purpur_fortress/main.nbt"
+hash = "d90ff9cf48fdd6611ccae92524da811d971a8baa37ff5f23f550601b0d0ec23c"
+
+[[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/nether/purpur_fortress/stairs.nbt"
+hash = "034f547a2c4f202bebedfc8ae636d40faa8e77336d60873f517dbf4bf746147a"
+
+[[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/structures/nether/purpur_fortress/t_junction.nbt"
+hash = "0cb7c18c285f747459e8e06814fec5fb7bb80486d491651bf07c3191ce881a62"
+
+[[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/structures/nether/yttr_ruin/ruin_1.nbt"
 hash = "558245ddc0a88d1dcfb7e09e87aa1b4f3bf855532122a275a3250664743e761e"
 
@@ -2333,6 +2377,10 @@ file = "global_packs/required_data/AstralRails/data/astralrails/tags/worldgen/bi
 hash = "e605c87efa1ae90fe1e23868b70b8f578737b9f39e852f001c5833f8ce6bf135"
 
 [[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/tags/worldgen/biome/has_structure/purpur_fortress.json"
+hash = "db08da6fddc1ba4fb3f7a57c02c2da25e694234bc5cec8dbc6fa681b44e90156"
+
+[[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/tags/worldgen/biome/has_structure/railtowns.json"
 hash = "d0a7328291b40c17b1f6e72eb8033a12874be0fed10384c5dc780856f3ec274e"
 
@@ -2354,7 +2402,7 @@ hash = "688ed8d8af6ebe68472649ba00245fc0c0ff2903847cf8d9b8e2429831a2d4e3"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/tags/worldgen/biome/has_structure/yttr_ruin.json"
-hash = "999518fd2019c87b4186a7f051f773b0ffa03ffa1f7ceed144a22dbe8bd37335"
+hash = "472883ee0cb5297884030b0c926ee86913fe77aee1931499c62361ad4686e88d"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/configured_feature/glacio_amethyst_cluster.json"
@@ -2655,6 +2703,10 @@ hash = "df74fdddd8f259c8a0350102fdcae8ba4f455ff5220750c6740b74bf15a7cd73"
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/configured_structure_feature/nether/chunk_error.json"
 hash = "474c223d5b4e7a0b309713d94eefbfae2ac0d975018c55ee713e255b9a60961c"
+
+[[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/configured_structure_feature/nether/purpur_fortress.json"
+hash = "dbf6e886429f52bb7ab22212a10c411480f74f646b64d7507cae97c7fb38177e"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/configured_structure_feature/nether/yttr_ruin.json"
@@ -3053,6 +3105,10 @@ file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/structu
 hash = "f1ce72c0214041dd1c055b4d31a4d34c007f02b1dda6c94effc45ffa2b2d7c19"
 
 [[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/structure_set/nether/purpur_fortress.json"
+hash = "4935dcaf76aaad32dd29073f8ae2bfc9bec29a59c50d38b108476ce680864576"
+
+[[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/structure_set/nether/yttr_ruin.json"
 hash = "9b369a551ff95024431caf303feac8dce7f1856c21d4f6c6e92343382fa9cdc4"
 
@@ -3327,6 +3383,18 @@ hash = "0155232ab3b83b41a6ca5b7db2329ac5fd1bc0b2a642377a539413ad2c5ba66e"
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/nether/chunk_error/chunks.json"
 hash = "1b2d3afb7e18dfe6f3a089c61bf7f576a02d2963ee54ef462f4dc8290d3a3017"
+
+[[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/nether/purpur_fortress/init_path.json"
+hash = "d133a2b85cdd0c7537e18265b16d907f76dff3a58565737cbd85cbc184c00c82"
+
+[[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/nether/purpur_fortress/main_path.json"
+hash = "af6758cc851761130c5b2e5e6e0dc79e280bc7e09035fe63c06dc742a5f97cf3"
+
+[[files]]
+file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/nether/purpur_fortress/start.json"
+hash = "1815884627f36967291eb25b6ab85144f287c381235725a5448ead0a0acb6387"
 
 [[files]]
 file = "global_packs/required_data/AstralRails/data/astralrails/worldgen/template_pool/nether/yttr_ruin/yttr_ruin.json"
@@ -3953,6 +4021,14 @@ file = "global_packs/required_data/zLaky Core/data/ae2/tags/worldgen/biome/has_m
 hash = "4c2230a2f252ea1067b6a7e41c1d5cf69d786bfc649d4cd6eaa13ff310a2298f"
 
 [[files]]
+file = "global_packs/required_data/zLaky Core/data/astraladditions/loot_tables/entities/ender_watcher.json"
+hash = "81bbde79ebd3ed7e135772e99d31177f2186ae004beb920cef93154938e35465"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/astraladditions/loot_tables/entities/hemogiant.json"
+hash = "126d4ff66f6e223328115547b98d3397be3b74d1ab0143bbf10db4ea4d2f7c06"
+
+[[files]]
 file = "global_packs/required_data/zLaky Core/data/astraladditions/loot_tables/gameplay/fragile_items/fragile_item.json"
 hash = "b300b3415edfca8bb91ce4868bbeda70f98ed93512f23ff079ea9561acf5c5fd"
 
@@ -4083,6 +4159,10 @@ hash = "80d9cb1476c7266acac40dc35a0b756ceb0e92879d75e5ab0e7a92ac820b2f48"
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/astralportals/portals/earthportal.json"
 hash = "79d69b422f9c5762076742ea5b3b3abdaedb8e8ad29b682b97019d2afbcb981c"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/astralportals/portals/glacioportal.json"
+hash = "ca31e63432492ab59e8b031dcf1ecc15b739cba22eb3c441fabcfd2da0bc2e9a"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/astralportals/portals/marsportal.json"
@@ -5013,16 +5093,20 @@ file = "global_packs/required_data/zLaky Core/data/createastral/potato_cannon_pr
 hash = "7abfd9426b3a2aa7de9c3a8592a7afd040b7b0b8d59d9778325f875e675989d9"
 
 [[files]]
+file = "global_packs/required_data/zLaky Core/data/createastral/recipes/centrifuging/blood.json"
+hash = "c41e8263b05c1d1b2f686ae7d4419a72ec4f231bbf922de50d715e948c62480a"
+
+[[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/recipes/centrifuging/carbon.json"
-hash = "4611eb289b752067a92ce1b6cbdaa99b07eccd01d543264d4edbaad903559aee"
+hash = "e92d8af18a2e3f8d161d37bede763f19944fb983aab230e90f00dacd0d4c00b6"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/recipes/centrifuging/lithium.json"
-hash = "8658a53ea049afbc319d5887047e77b4ac84fd8e903e86e34c8783d360bb4acd"
+hash = "3f9c87cba9d1183fa0532b88e7d454d23b41e825385bc107c7ada61fdcb3e517"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/recipes/centrifuging/magma.json"
-hash = "0cc89a225a1a13a0a27c485b03479816d30a7e616e9d0339840e5af46c8094d1"
+hash = "0d776f8f5d7cb0399457f7df7d9514b654b246f7c98babe287b14f2e934e99b5"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/recipes/centrifuging/metabolic.json"
@@ -5037,16 +5121,8 @@ file = "global_packs/required_data/zLaky Core/data/createastral/recipes/centrifu
 hash = "52acfb16ab839d396d41743efd3cc512fca2075db7f853cbca9e329790ea091b"
 
 [[files]]
-file = "global_packs/required_data/zLaky Core/data/createastral/recipes/centrifuging/potassium.json"
-hash = "cdfea2950c95b2853254c7139817cfb522d85ae5b189f1f65118343e3f9942ab"
-
-[[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/recipes/centrifuging/shimmer.json"
-hash = "c7d23603593a3b10d6126cd4045fd1f0f38b31b991235ec1194994c0d3b0fd21"
-
-[[files]]
-file = "global_packs/required_data/zLaky Core/data/createastral/recipes/centrifuging/sulfur.json"
-hash = "0c0b224ee5f3693d070e7cdf541a675e5f9cad6f13486e53a5071f21c86db6b5"
+hash = "963485f2c2acf57c1a83d8e9328118204f00b7daba5bacaae773ad68c39c5257"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createastral/recipes/distillery/biofuel.json"
@@ -5265,12 +5341,28 @@ file = "global_packs/required_data/zLaky Core/data/createbigcannons/block_recipe
 hash = "821c7746e72ce9b2119115630d5c18f16ff79f1b17587c5c5993b9d16cdb644a"
 
 [[files]]
+file = "global_packs/required_data/zLaky Core/data/createbigcannons/loot_tables/blocks/incomplete_nethersteel_screw_breech.json"
+hash = "c5ddc9f01c065303b8498c827ba11059528110dd8b5779d4217639f122614ffc"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/createbigcannons/loot_tables/blocks/incomplete_steel_screw_breech.json"
+hash = "b25e984ae58af787ae913e77e31ace775093379e8f3eb80780a742cf73159981"
+
+[[files]]
 file = "global_packs/required_data/zLaky Core/data/createbigcannons/loot_tables/blocks/nethersteel_screw_breech.json"
 hash = "9948352bac44a50ba9533ad9f6157d3f741852eaad22d19c9e01c3b8edd9a110"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createbigcannons/loot_tables/blocks/steel_screw_breech.json"
 hash = "5b77bcf23598c1337d803d9e3cc7cd7fc08743690879d40bcb316919e2e62e33"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/createbigcannons/loot_tables/blocks/unbored_nethersteel_screw_breech.json"
+hash = "c5fc1840950be4aa4ff8b797d162d96462fc30650656de3bed45b3bf60352b10"
+
+[[files]]
+file = "global_packs/required_data/zLaky Core/data/createbigcannons/loot_tables/blocks/unbored_steel_screw_breech.json"
+hash = "66364a30bf1583cd4caf9568abc9d6686a61728a979015e3f87929d96ff8104c"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createbigcannons/recipes/compacting/forge_nethersteel_ingot.json"
@@ -5322,7 +5414,7 @@ hash = "ddca422dec6f56263facf3ce49e080f7d6537ce0e73ed7e4cc6337cd4479d49f"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createbigcannons/recipes/melting/melt_permafrost_hot.json"
-hash = "fd8c4235f97bb14fcb1410532dab5b3be362dc87329c473ff77b2f47b371b132"
+hash = "6fabca0cd8bf56a53c3c097aa27957f6d81c67bb7b7c6d2d5bfbdeafe1e00d24"
 
 [[files]]
 file = "global_packs/required_data/zLaky Core/data/createbigcannons/recipes/melting/melt_steel_block.json"
@@ -11514,7 +11606,7 @@ hash = "758414cc3f8bbfc849ea5558d35d605586c9c7648046cc60e70f55f35698fc37"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/recipes/smeltery/melting/metal/iron/wire.json"
-hash = "0a6329fac67f8dccc499dc021060fe9337bedbed311e5e5cd719d6b7f0bc65f5"
+hash = "6fea7af3f402ef79b3206fdce356aedffc4d9a6f1c614f10962d5f92064aca63"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/recipes/smeltery/melting/metal/knightslime/block.json"
@@ -13814,11 +13906,11 @@ hash = "3c90b1ce6624838470828f72d6e9ccea4eead6331a319f83774a7548732a6cc1"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/structures/slime_islands/sky/earth_4x1x6.nbt"
-hash = "3658e10c75e46ed8ba2477ca8cf3d6f1501775efe780281822250235bdbd2401"
+hash = "506ddc6d413615788e41c75dd1c6e46b87f412d0ea7c2665e45709b35aa06ea6"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/structures/slime_islands/sky/earth_8x1x11.nbt"
-hash = "3658e10c75e46ed8ba2477ca8cf3d6f1501775efe780281822250235bdbd2401"
+hash = "f8d3261269ecac0ef725bc86741465817eaf0008ec9e69e425a0edcaa3dceb12"
 
 [[files]]
 file = "global_packs/required_data/zTConstructAstra/data/tconstruct/structures/slime_islands/sky/sky_0x1x0.nbt"
@@ -14165,12 +14257,36 @@ file = "kubejs/README.txt"
 hash = "02d6feb3afe1d9c96e137f8baaa71de982f1af0a2b37fbcba73f34ee59ebbd4d"
 
 [[files]]
+file = "kubejs/assets/astralfoods/textures/fluid/cream_flow.png"
+hash = "7b1b42a330724b549cb07c26d1989e0fd2616c345e4bb173ce1ee6fc745bc2db"
+
+[[files]]
+file = "kubejs/assets/astralfoods/textures/fluid/cream_flow.png.mcmeta"
+hash = "e9b8025fde1b09b0a4d2a38427b04f98f28a593045be6d177eb2b29164c872b0"
+
+[[files]]
+file = "kubejs/assets/astralfoods/textures/fluid/cream_still.png"
+hash = "1635ace6356f2326887e7f3f81655d64d6f853ebc50650061c7f955ffa568b4b"
+
+[[files]]
+file = "kubejs/assets/astralfoods/textures/fluid/cream_still.png.mcmeta"
+hash = "d947e6371a5bb46ab733722fac72f7aae2832fc94ecc8a1ab55c3e1471cbf4f4"
+
+[[files]]
+file = "kubejs/assets/astralfoods/textures/item/ambrosia.png"
+hash = "f01457e0c46f2cd7de058c7d56581a1078019d2b404fd929187fef63766e25da"
+
+[[files]]
 file = "kubejs/assets/astralfoods/textures/item/astral_sauce.png"
 hash = "a903ec2d834eb152f29389539e1513d1973d5676dc3d9c29eee9553c9dd0176c"
 
 [[files]]
 file = "kubejs/assets/astralfoods/textures/item/bulbas_tea.png"
 hash = "b223eaf8f3b6f890fda059b064eb784e6800cf433b19d47e098b7258eaf3fff5"
+
+[[files]]
+file = "kubejs/assets/astralfoods/textures/item/chocolate_ice_cream.png"
+hash = "d6b476ae2d0f216adcafc1b32728b35a5742f140ea3432800d40122a577b86ef"
 
 [[files]]
 file = "kubejs/assets/astralfoods/textures/item/compressed_onion.png"
@@ -14183,6 +14299,14 @@ hash = "d99476549246662d2e90b336bc84f610340f19fb00ef9402271200d19ac46fff"
 [[files]]
 file = "kubejs/assets/astralfoods/textures/item/food_amalgamation.png"
 hash = "1957f3233ab27c994dc044b6c065858db31610dbb4a642043da313cb1c1d79dc"
+
+[[files]]
+file = "kubejs/assets/astralfoods/textures/item/gamers_delight.png"
+hash = "4a8db9220ae5e60f6b648129499716cfbcba4674c901d6ed6e0fb9fabb59b32a"
+
+[[files]]
+file = "kubejs/assets/astralfoods/textures/item/ice_cream_sandwich.png"
+hash = "6213693cab47cb999fc0d088348adb4ccb39f061c43013260114e8965e08b873"
 
 [[files]]
 file = "kubejs/assets/astralfoods/textures/item/quantum_bites.png"
@@ -14553,6 +14677,58 @@ file = "kubejs/assets/kubejs/textures/block/fragile_sheet_block.png"
 hash = "7aeb0d97021c991d416100c256ea5fa4df9ae553d3e9024714527891415fd903"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/aegis_wine.png"
+hash = "7d107644a2bceb88dd4cea582aae6a27fa8766523bff0dd7ba0f6dede65c6604"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/apple_cider.png"
+hash = "b20e36e616651a7060fe10bdc2970a3d655294c4cdc102bff0a83be96ec1e116"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/apple_wine.png"
+hash = "859cf9701abaabf39cdb02be55be6eb2885a3cdd004ca608cfcec25513b13af2"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/bolvar_wine.png"
+hash = "fde2896e3494974abcea79f4d1e108601446f0a5e361b79884b7905ef28ee3c4"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/chenet_wine.png"
+hash = "db1334ad13d3f459e6f4ff6fd7e0b93f4ed76c677b59cc25fb73227c3f99972f"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/cherry_wine.png"
+hash = "1966b015f1df4e26e93c22e3b5b0bdd33bb4ff156fd455b53f30a5fe4e7c1654"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/clark_wine.png"
+hash = "20e057d6aaf57e6d1ac9c46f4510afc03c95df00c7d81712d5327c53bea8b5e6"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/jellie_wine.png"
+hash = "8ba39a80b62a248c7b7c10ae23f7f26bddc69717656b7664438bb37205f31155"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/kelp_cider.png"
+hash = "1bd117afb868913c162959484578aa0b5923adabc349625aa2c85bd32ac437fc"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/king_danis_wine.png"
+hash = "bcd2f017cb9af47e4be04becec9e2762163314a59e19ab54614baff005b79be1"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/mellohi_wine.png"
+hash = "77ecdafeed211af1f9608a4c406b9a7a660906a71080a5b9291c0e24f855ce9e"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/noir_wine.png"
+hash = "d964468aa63ecab20b5a9fd9a86f3faf9f7623f37dd08c1de5067782077a57a1"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/solaris_wine.png"
+hash = "ec78bff948c54117f13d1604e7a87ffab8e73b22e4543db1dca85c4aa1807f22"
+
+[[files]]
 file = "kubejs/assets/ponderjs_generated/lang/en_us.json"
 hash = "6a7cdffba7f345f7e6f13091b79d10d2efebe87a6b863d2896bae9e2831376d7"
 
@@ -14574,7 +14750,7 @@ hash = "2c621f408f8efbb495530c472ae895d50f9aadecc2ce716653fb47ffedbfaa81"
 
 [[files]]
 file = "kubejs/client_scripts/hide_from_rei.js"
-hash = "0b29a07f55b5a138686d3203f586bd1cf066d3845d9dd89cf69ecea29b522d8a"
+hash = "8e5177a8d9ef1532fc4a2a605819d6a9ff84ec137e422edbbd8eec3ecdb80db7"
 
 [[files]]
 file = "kubejs/client_scripts/ponder.js"
@@ -14674,7 +14850,7 @@ hash = "cd5c8ccbcbb6fac0913c504b2241f361f6b4b8f422111c934636d101732604d4"
 
 [[files]]
 file = "kubejs/server_scripts/create.js"
-hash = "115531a33fb3ab52b48cf850d345ef889b6fefc282d2c10dd831592ef30604a5"
+hash = "3cf77cc5f096d7bc7387416d1471536133445ae55c02d5fae85bea8c86e8ee0b"
 
 [[files]]
 file = "kubejs/server_scripts/createaddons.js"
@@ -14742,7 +14918,7 @@ hash = "7a71ca7a5ae5edbaa77c638467d8643f9ea68804584c5a81130f5a6128105c5b"
 
 [[files]]
 file = "kubejs/server_scripts/removals.js"
-hash = "8493196ad344fad7ebbe60397cba0ecd6facd7a65c720b32ee64ac59176ea80c"
+hash = "f361cf991abddc3b5e0880ca193e7ca94d2882e09eeec47fec18c0b558d88575"
 
 [[files]]
 file = "kubejs/server_scripts/replacements.js"
@@ -14758,7 +14934,7 @@ hash = "b14d492175c12c237a35159c6621010426d5249fd9720b100ac2e73d8d35fb7b"
 
 [[files]]
 file = "kubejs/server_scripts/server.js"
-hash = "0b685fc2efd6a1f8a7fd256dac033e217377b0e0609eaa77a2942bd240e96e0a"
+hash = "f9bcd774c4a9e2dfc0d4f6b8352976d316e0d273041e4111ed154cfffaff0f6b"
 
 [[files]]
 file = "kubejs/server_scripts/sheets.js"
@@ -14766,7 +14942,7 @@ hash = "1d3f087ae76f109f1b2f6eb7cf46fe431b720daccf3eed3685696dba7af37de9"
 
 [[files]]
 file = "kubejs/server_scripts/shimmer_transmutation.js"
-hash = "daa1f938d93222a19c8a5e1389dc95840cab6fe0a53d256ec494baa65ed90079"
+hash = "4537bcabc3cf87060c9d9a9be69b65818862b3e78db0d7adbc0fcda401ae4c75"
 
 [[files]]
 file = "kubejs/server_scripts/smithing.js"
@@ -14798,7 +14974,7 @@ hash = "bb5a2dd0e3a0ae89f8edb666c15fbef422c29384ecaa6d7f3afc31f4db79f233"
 
 [[files]]
 file = "kubejs/server_scripts/tconstruct.js"
-hash = "319e179a3850416563fbe43ce1ce7e6dec721bdb1e4d964a7de43ebcba19aed6"
+hash = "5dc7c753a3f690c13b8f6da5678d8319414b3f67dda7a4d5ce1b9c806b0709bb"
 
 [[files]]
 file = "kubejs/server_scripts/tconstruct_fluidsyncfix.js"
@@ -14806,7 +14982,7 @@ hash = "3944c2284f9fe0a6ba797e83f8eaee0c3345c535fe0f9e72a3555c4a41523cfc"
 
 [[files]]
 file = "kubejs/server_scripts/techreborn.js"
-hash = "260e9b62a2e5949fc4fd0e5040f00613c53e7b9302b55eed6c30d30481257fbe"
+hash = "7bd353dcac737f3f8707f2a833a3c8499885dcc490abb8467d29cb661fe70479"
 
 [[files]]
 file = "kubejs/server_scripts/vinery.js"
@@ -14821,20 +14997,24 @@ file = "kubejs/server_scripts/yttr_centrifuging.js"
 hash = "dff8b585fd2b9910ae864c8d1e655c3fe8d1da0b08ca3fddb49c9ec5b4f1ab47"
 
 [[files]]
+file = "kubejs/startup_scripts/astralfoods_registry.js"
+hash = "ab4e86ea6a94d89e257459f816d30298bac77fdb3b639586d33fffca4abd9229"
+
+[[files]]
 file = "kubejs/startup_scripts/astralsignals_registry.js"
 hash = "fc606d2957141a4e017e0d7706e5bb4d6f47028ad5fc3f6c7926ba534c24d51a"
 
 [[files]]
 file = "kubejs/startup_scripts/block_registry.js"
-hash = "9d5fc61ebe57fa69ab59cf383def36727e299f974b6e7d0bae5e92313fce9e59"
+hash = "8f704e87a2945dc5c5af6f3a6c39b85347c3c75c209371c033e723e27bfaf94e"
 
 [[files]]
 file = "kubejs/startup_scripts/fluid_registry.js"
-hash = "c4c5b01650d51387f97f9f0a72c5970a7e2c4981d1f5fb354236f162324aaac0"
+hash = "5b117c9d4da44260f66f664899400f3b3d3c55e2d3f3f76bd7bd01403bff24ab"
 
 [[files]]
 file = "kubejs/startup_scripts/item_registry.js"
-hash = "3a0c9d1f4478ec6a4e0e61353b105250ba409e374c4b4a87595ddf3fa2eb6a29"
+hash = "a2f1992fdd9161093978b41d0d71499f6d4010e4181381572cf66c2c11741b57"
 
 [[files]]
 file = "kubejs/startup_scripts/item_tooltip.js"
@@ -14846,7 +15026,7 @@ hash = "17767c189610ee743310e6204b04e214ca8d597e44d8850a02cc41844cc7cb62"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
-hash = "2596a4213535c912678a7ed53d1287a71733718957bb5746bd510ae3483475a8"
+hash = "8507fbfdf783e48bcfb6685ca64854cb382b41e99d0f3554671f46aecf485291"
 
 [[files]]
 file = "kubejs/startup_scripts/worldgen.js"
@@ -14894,7 +15074,7 @@ metafile = true
 
 [[files]]
 file = "mods/astral-additions-for-create-astral.pw.toml"
-hash = "ae9e5d1b9a554740d8d46eb4ab2aafdab011e252f75f07fab8b15c1a3c2cc446"
+hash = "650cfc7864ff534453a5566fdfa375d80a4954dc6e471de90eedb06b22d8e377"
 metafile = true
 
 [[files]]
@@ -15192,6 +15372,11 @@ metafile = true
 [[files]]
 file = "mods/environmental-creepers.pw.toml"
 hash = "b1eff587a37f4725cd0cb8b461f6e775113f74c5c8798dbe95b8ab4cb8eb1e35"
+metafile = true
+
+[[files]]
+file = "mods/estrogen-patches.pw.toml"
+hash = "8fb59edf5fa6cdfa274f1221a22b7853b17dcb5fdaa12cd88beb914a6b20cf83"
 metafile = true
 
 [[files]]
@@ -29478,7 +29663,7 @@ hash = "ddaed1f475cb36918b8bbefaeb691b9037fa2e22a4195805999edaad0469e5c4"
 
 [[files]]
 file = "resources/createastral/lang/en_us.json"
-hash = "256c7d80919293633bc3f769bebdb6f4ad55aafd99af468fe5663a7db41acd67"
+hash = "d0b7018e8ecc3c584c0530967e86da4587b76930df786cf134898e974bc35f75"
 
 [[files]]
 file = "resources/createastral/lang/fr_fr.json"
@@ -29527,6 +29712,14 @@ hash = "60f5eb557327f0070f24d09d6f773c5c5d5371138a443abfe37662819e852002"
 [[files]]
 file = "resources/createastral/textures/block/andesite_alloy_block_old.png"
 hash = "eeffe4d36960281231515ef6be16d6d309429b1f8dd0189401c99c506f9b56b6"
+
+[[files]]
+file = "resources/createastral/textures/block/aurorite_block.png"
+hash = "422d89c90dfc7f5dce3375ff649e687bf1305628e7f95a91937f2604797b2013"
+
+[[files]]
+file = "resources/createastral/textures/block/aurorite_block.png.mcmeta"
+hash = "03c36a86b3cc09789a418eafdc29e79c2b4a759b1fe909fc01534703399d8745"
 
 [[files]]
 file = "resources/createastral/textures/block/blast_side.png"
@@ -29919,6 +30112,10 @@ hash = "c328c8e4ffa216a7841bc2759365801b852c0617b6fd4535c62147152d5c7bff"
 [[files]]
 file = "resources/createastral/textures/item/golden_pin.png"
 hash = "3c2cbb27acda816265268d160f401988bc373f385e900385c2561bbc6a450314"
+
+[[files]]
+file = "resources/createastral/textures/item/horse.png"
+hash = "9eed0740251f1eed63684d0a3628f3ea19dff4c5f234bda5248dd10df6e38e36"
 
 [[files]]
 file = "resources/createastral/textures/item/incomplete_advanced_machine_frame.png"
@@ -30337,6 +30534,10 @@ file = "resources/dustrial_decor/lang/fr_fr.json"
 hash = "24c4df8d42c2eef4d29d1fd7cb64ad2508a5892dd105b4014a3eb15110d31ca1"
 
 [[files]]
+file = "resources/estrogen/lang/en_us.json"
+hash = "486f8b563f48800be587b5616124e3d1dd1027fda95e71efa50f90499bdbe60b"
+
+[[files]]
 file = "resources/estrogen/textures/item/balls.png"
 hash = "8f696a080930fcf6b03e12f7e8288a0fce00df43610c41f3036f88a1fd9c84f4"
 
@@ -30730,7 +30931,7 @@ hash = "12aa4f2ffb4b4ddfbf6e6284ce96782a5c21cfb619afda4f4fe8b66572d8f13d"
 
 [[files]]
 file = "resources/minecraft/texts/splashes.txt"
-hash = "f304acbc15d60d86914cc07822456f722a114b699c05a898ddb9300fa83b3d65"
+hash = "ae7970691c398417a02a941a68aa01e8ae677ffa3cf98ddea0c2d56e98c9c914"
 
 [[files]]
 file = "resources/minecraft/textures/block/sea_corn_full.png"
