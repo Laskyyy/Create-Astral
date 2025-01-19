@@ -20,9 +20,9 @@
     "material.tconstruct.shadow.flavor": "Плотность как у тёмной материи.",
     "material.tconstruct.shadow.encyclopedia": "Невероятная долговечность. Из неё выходят практически идеальные ручки и крепления для инструментов.",
 
-    "material.tconstruct.radiant": "Радиант",
-    "material.tconstruct.radiant.flavor": "Твёрдый. Лёгкий.",
-    "material.tconstruct.radiant.encyclopedia": "Сама сила света. Чрезвычайно хрупкий в процессе литья, может похвастаться несравненными скоростью, модификаторами и слотами, чтобы поиграться.",
+    "material.tconstruct.radiant": "Сияние",
+    "material.tconstruct.radiant.flavor": "Твёрдое. Лёгкое.",
+    "material.tconstruct.radiant.encyclopedia": "Сама сила света. Чрезвычайно хрупкое в процессе литья, может похвастаться несравненными скоростью, модификаторами и слотами, чтобы поиграться.",
 
     "death.attack.fusion" : "%1$s испытал сияние"
 }
