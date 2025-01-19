@@ -10,7 +10,7 @@
 
     "material.tconstruct.ostrum": "Острум",
     "material.tconstruct.ostrum.flavor": "Весит целую тонну! Ты из этого инструменты собрался делать?!.",
-    "material.tconstruct.ostrum.encyclopedia": "Божественная прочность, но им тяжело махать из-за медленной скорости копания. Очень полезно для добычи руд.",
+    "material.tconstruct.ostrum.encyclopedia": "Божественная прочность, но им тяжело махать из-за медленной скорости копания. Полезен для добычи руд.",
 
     "material.tconstruct.calorite": "Калорит",
     "material.tconstruct.calorite.flavor": "Острейший метал.",
@@ -22,7 +22,7 @@
 
     "material.tconstruct.radiant": "Радиант",
     "material.tconstruct.radiant.flavor": "Твёрдый. Лёгкий.",
-    "material.tconstruct.radiant.encyclopedia": "Сама сила света. Чрезвычайно хрупкий в процессе литья, может похвастаться несравненными скоростью, модификаторами и слотами чтобы поиграться.",
+    "material.tconstruct.radiant.encyclopedia": "Сама сила света. Чрезвычайно хрупкий в процессе литья, может похвастаться несравненными скоростью, модификаторами и слотами, чтобы поиграться.",
 
     "death.attack.fusion" : "%1$s испытал сияние"
 }
