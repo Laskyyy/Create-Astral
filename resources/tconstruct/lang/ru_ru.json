@@ -1,0 +1,28 @@
+{
+    "block.tconstruct.cobalt_ore": "Лунная кобальтовая руда",
+
+    "item.tconstruct.liquid_soul_bucket": "Ведро жидкого песка душ",
+    "fluid.tconstruct.liquid_soul": "Жидкий песок душ",
+
+    "material.tconstruct.desh": "Деш",
+    "material.tconstruct.desh.flavor": "Мягкий, Быстрый, Надёжный.",
+    "material.tconstruct.desh.encyclopedia": "В целом средний материал, содержит необычные модификаторы для копания и удобства.",
+
+    "material.tconstruct.ostrum": "Острум",
+    "material.tconstruct.ostrum.flavor": "Весит целую тонну! Ты из этого инструменты собрался делать?!.",
+    "material.tconstruct.ostrum.encyclopedia": "Божественная прочность, но им тяжело махать из-за медленной скорости копания. Очень полезно для добычи руд.",
+
+    "material.tconstruct.calorite": "Калорит",
+    "material.tconstruct.calorite.flavor": "Острейший метал.",
+    "material.tconstruct.calorite.encyclopedia": "Красный, как кровь твоих врагов почувствовавших лезвие твоего тесака.",
+
+    "material.tconstruct.shadow": "Тень",
+    "material.tconstruct.shadow.flavor": "Плотность как у тёмной материи.",
+    "material.tconstruct.shadow.encyclopedia": "Невероятная долговечность. Из неё выходят практически идеальные ручки и крепления для инструментов.",
+
+    "material.tconstruct.radiant": "Радиант",
+    "material.tconstruct.radiant.flavor": "Твёрдый. Лёгкий.",
+    "material.tconstruct.radiant.encyclopedia": "Сама сила света. Чрезвычайно хрупкий в процессе литья, может похвастаться несравненными скоростью, модификаторами и слотами чтобы поиграться.",
+
+    "death.attack.fusion" : "%1$s испытал сияние"
+}

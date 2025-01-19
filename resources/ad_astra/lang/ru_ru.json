@@ -1,0 +1,18 @@
+{
+    "biome.ad_astra.infernal_venus_barrens": "Infernal Mars Barrens",
+    "entity.ad_astra.glacian_ram": "Lunar Ram",
+    "item.ad_astra.netherite_space_boots": "Свинцовые Космические Ботинки",
+    "item.ad_astra.netherite_space_helmet": "Свинцовый Космический Шлем",
+    "item.ad_astra.netherite_space_pants": "Свинцовые Космические Штаны",
+    "item.ad_astra.netherite_space_suit": "Свинцовый Космический Костюм",
+    "item.ad_astra.tier_2_rocket": "Ракета из деша",
+    "item.ad_astra.tier_3_rocket": "Ракета из острума",
+    "item.ad_astra.tier_4_rocket": "Ракета из калорита",
+    "fluid.ad_astra.oxygen": "Кислород",
+
+    "item.ad_astra.steel_plate": "Металлическая пластина",
+    "item.ad_astra.desh_plate": "Пластина из деша",
+    "item.ad_astra.ostrum_plate": "Пластина из острума",
+    "item.ad_astra.calorite_plate": "Пластина из калорита",
+	"block.ad_astra.calorite_block": "Блок Калорита"
+}
