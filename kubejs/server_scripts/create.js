@@ -3765,6 +3765,7 @@ function cuttingRecipes(event) {
 function hauntingRecipes(event) {
     // [Input string, Output string]
     [
+	["vinery:cherry_sapling", "vinery:old_cherry_sapling"]
         ["naturalist:snail_shell", "minecraft:nautilus_shell"],
         ["2x techreborn:charcoal_dust", "techreborn:coal_dust"],
         ["2x minecraft:charcoal", "minecraft:coal"],
