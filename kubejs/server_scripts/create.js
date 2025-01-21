@@ -3678,6 +3678,10 @@ function mixingRecipes(event) {
         .processingTime(50);
 
     event.recipes
+        .createMixing("minecraft:slime_ball", ["minecraft:lime_dye", "#c:slimeballs"])
+        .processingTime(50);
+
+    event.recipes
         .createMixing(Fluid.of("techreborn:oil", 250 * mB), [
             { fluid: "techreborn:sulfur", amount: 500 * mB },
             "3x techreborn:coal_dust",
