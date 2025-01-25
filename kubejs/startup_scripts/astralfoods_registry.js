@@ -4,7 +4,7 @@ onEvent("item.registry", (event) => {
         .create("astralfoods:quantum_bites")
         .displayName("Quantum Bites")
         .food((food) => {
-            food.hunger(8).saturation(1.2).effect("regeneration", 300, 2, 1).alwaysEdible();
+            food.hunger(7).saturation(1.2).effect("regeneration", 300, 1, 0).alwaysEdible();
         });
 
     event
@@ -20,9 +20,9 @@ onEvent("item.registry", (event) => {
         .food((food) => {
             food.hunger(75)
                 .saturation(1.1)
-                .effect("haste", 5000, 2, 1)
-                .effect("regeneration", 5000, 2, 1)
-                .effect("farmersdelight:nourishment", 6600, 2, 1)
+                .effect("haste", 5000, 2, 0)
+                .effect("regeneration", 5000, 2, 0)
+                .effect("farmersdelight:nourishment", 6600, 2, 0)
                 .alwaysEdible();
         });
 
@@ -30,17 +30,18 @@ onEvent("item.registry", (event) => {
         .create("astralfoods:seared_potato")
         .displayName("Seared Potato")
         .food((food) => {
-            food.hunger(8).saturation(1).effect("resistance", 440, 1, 1).alwaysEdible();
+            food.hunger(7).saturation(0.9).effect("resistance", 440, 1, 0).alwaysEdible();
         });
 
     event
         .create("astralfoods:dipped_potato")
         .displayName("Dipped Potato")
         .food((food) => {
-            food.hunger(10)
-                .saturation(1.1)
-                .effect("resistance", 440, 2, 1)
-                .effect("absorption", 440, 3, 1)
+            food.hunger(9)
+                .saturation(1)
+                .effect("resistance", 440, 2, 0)
+                .effect("absorption", 440, 3, 0)
+                .effect("jumpboost", 160, 128, 0)
                 .alwaysEdible();
         });
 
@@ -50,8 +51,8 @@ onEvent("item.registry", (event) => {
         .food((food) => {
             food.hunger(18)
                 .saturation(0.9)
-                .effect("resistance", 500, 1, 1)
-                .effect("farmersdelight:nourishment", 5000, 0, 1)
+                .effect("resistance", 500, 1, 0)
+                .effect("farmersdelight:nourishment", 5000, 0, 0)
                 .alwaysEdible();
         });
 
@@ -59,7 +60,7 @@ onEvent("item.registry", (event) => {
         .create("astralfoods:shimmered_apple")
         .displayName("Shimmered Apple")
         .food((food) => {
-            food.hunger(7).saturation(1.4).effect("regeneration", 60, 1, 1);
+            food.hunger(7).saturation(1.4).effect("regeneration", 60, 1, 0);
         });
 
     event
@@ -90,8 +91,8 @@ onEvent("item.registry", (event) => {
         .food((food) => {
             food.hunger(2)
                 .saturation(1.2)
-                .effect("night_vision", 4800, 1, 1)
-                .effect("haste", 4800, 1, 1)
+                .effect("night_vision", 4800, 1, 0)
+                .effect("haste", 4800, 1, 0)
                 .alwaysEdible();
         });
 
@@ -99,21 +100,21 @@ onEvent("item.registry", (event) => {
         .create("astralfoods:ambrosia")
         .displayName("Ambrosia")
         .food((food) => {
-            food.hunger(3).saturation(1.1).effect("haste", 1200, 1, 1).alwaysEdible();
+            food.hunger(3).saturation(1.1).effect("haste", 1200, 1, 0).alwaysEdible();
         });
 
     event
         .create("astralfoods:chocolate_ice_cream")
         .displayName("Chocolate Ice Cream")
         .food((food) => {
-            food.hunger(2).saturation(1.2).effect("speed", 800, 1, 1).alwaysEdible();
+            food.hunger(2).saturation(1.2).effect("speed", 800, 1, 0).alwaysEdible();
         });
 
     event
         .create("astralfoods:ice_cream_sandwich")
         .displayName("Ice Cream Sandwich")
         .food((food) => {
-            food.hunger(6).saturation(1.2).effect("speed", 600, 1, 1).effect("haste", 600, 1, 1).alwaysEdible();
+            food.hunger(6).saturation(1.2).effect("speed", 600, 1, 0).effect("haste", 600, 1, 0).alwaysEdible();
         });
 
     event
@@ -123,7 +124,7 @@ onEvent("item.registry", (event) => {
             food.hunger(7)
                 .saturation(1.3)
                 .effect("createaddition:shocking", 10, 1, 1)
-                .effect("strength", 400, 1, 1)
+                .effect("strength", 400, 1, 0)
                 .alwaysEdible();
         });
 });
