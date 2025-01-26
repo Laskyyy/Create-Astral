@@ -14998,7 +14998,7 @@ hash = "dff8b585fd2b9910ae864c8d1e655c3fe8d1da0b08ca3fddb49c9ec5b4f1ab47"
 
 [[files]]
 file = "kubejs/startup_scripts/astralfoods_registry.js"
-hash = "ab4e86ea6a94d89e257459f816d30298bac77fdb3b639586d33fffca4abd9229"
+hash = "4bddbf3cb5ce24b3c28779d0d98e59f3848db9f19ec82850a85a745da48a985a"
 
 [[files]]
 file = "kubejs/startup_scripts/astralsignals_registry.js"
