@@ -2097,6 +2097,11 @@ function fillingRecipes(event) {
 function deployingRecipes(event) {
     [
 		{
+            output: "createastral:cheesier_block",
+            basin_input: "ad_astra:cheese_block",
+            deployer_input: "ad_astra:cheese",
+        },
+		{
             output: "minecraft:redstone_torch",
             basin_input: "minecraft:torch",
             deployer_input: "minecraft:redstone",
