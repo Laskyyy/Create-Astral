@@ -2339,8 +2339,8 @@ function mixingRecipes(event) {
         },
 		{
             output: [
-				Item.of("2x createastral:marimo").withChance(0.5),
-				Item.of("2x createastral:moonset_marimo").withChance(0.5),
+				Item.of("2x createastral:marimo").withChance(0.4),
+				Item.of("2x createastral:moonset_marimo").withChance(0.6),
 				{
 					fluid: "minecraft:water",
 					amount: BUCKET,
