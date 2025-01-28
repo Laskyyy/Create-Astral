@@ -3377,6 +3377,18 @@ function mixingRecipes(event) {
             time: 250,
         },
         {
+            output: [{ fluid: "astralfoods:cream", amount: BUCKET }],
+            input: [
+                "3x minecraft:sugar",
+                {
+                    fluid: "milk:still_milk",
+                    amount: BUCKET,
+                },
+            ],
+            heat: "heated",
+            time: 100,
+        },
+        {
             output: ["astralfoods:chocolate_ice_cream"],
             input: [
                 "create:bar_of_chocolate",
