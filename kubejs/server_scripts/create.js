@@ -4947,6 +4947,22 @@ function compactingRecipes(event) {
         .superheated()
         .processingTime(200);
 
+    event.recipes
+        .createCompacting("astralfoods:blaze_fries", [
+            "astralfoods:blaze_rods",
+            { fluid: "createaddition:seed_oil", amount: 100 * mB },
+        ])
+        .heated()
+        .processingTime(60);
+
+    event.recipes
+        .createCompacting("astralfoods:fried_cod", [
+            "minecraft:raw_cod",
+            { fluid: "createaddition:seed_oil", amount: 100 * mB },
+        ])
+        .heated()
+        .processingTime(80);
+
     event.recipes.createCompacting("4x minecraft:purpur_block", [
         "4x ad_astra:strophar_cap",
         { fluid: "minecraft:water", amount: 100 * mB },

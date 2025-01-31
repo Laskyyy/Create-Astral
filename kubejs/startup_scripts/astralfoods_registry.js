@@ -127,6 +127,51 @@ onEvent("item.registry", (event) => {
                 .effect("strength", 440, 0, 1)
                 .alwaysEdible();
         });
+
+    event
+        .create("astralfoods:fried_cod")
+        .displayName("Fried Cod")
+        .food((food) => {
+            food.hunger(6).saturation(0.9);
+        });
+
+    event
+        .create("astralfoods:blaze_rods")
+        .displayName("Blaze Rods")
+        .food((food) => {
+            food.hunger(1)
+                .saturation(0.5)
+                .effect("tconstruct:bleeding", 160, 0, 1)
+                .effect("fire_resistance", 160, 0, 1);
+        });
+
+    event
+        .create("astralfoods:blaze_fries")
+        .displayName("Blaze Fries")
+        .food((food) => {
+            food.hunger(4).saturation(0.8).effect("fire_resistance", 200, 0, 1);
+        });
+
+    event
+        .create("astralfoods:blaze_fries_and_cod")
+        .displayName("Blaze Fries and Cod")
+        .food((food) => {
+            food.hunger(9)
+                .saturation(0.9)
+                .effect("fire_resistance", 300, 0, 1)
+                .effect("farmersdelight:nourishment", 3500, 0, 1);
+        });
+
+    event
+        .create("astralfoods:cod_n_blaze")
+        .displayName("Cod n' Blaze")
+        .food((food) => {
+            food.hunger(12)
+                .saturation(1)
+                .effect("fire_resistance", 360, 0, 1)
+                .effect("farmersdelight:nourishment", 5000, 0, 1)
+                .effect("yttr:delicaceness", 360, 0, 1);
+        });
 });
 
 onEvent("fluid.registry", (event) => {
@@ -135,6 +180,6 @@ onEvent("fluid.registry", (event) => {
         .thickTexture(0xfeedbd)
         .bucketColor(0xfeedbd)
         .displayName("Cream")
-        .stillTexture("kubejsassetsastralfoods\textures\fluidcream_still.png")
-        .flowingTexture("kubejsassetsastralfoods\textures\fluidcream_flow.png");
+        .stillTexture("tconstruct:block/fluid/molten/still")
+        .flowingTexture("tconstruct:block/fluid/molten/flowing");
 });

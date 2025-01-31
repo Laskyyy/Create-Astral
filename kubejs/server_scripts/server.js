@@ -102,6 +102,16 @@ function farmersDelightCuttingChanges(event) {
         },
         result: [{ item: "astralfoods:quantum_bites", count: 3 }],
     });
+
+    event.custom({
+        type: "farmersdelight:cutting",
+        ingredients: [{ item: "minecraft:blaze_rod" }],
+        tool: {
+            type: "farmersdelight:tool",
+            tag: "c:tools/knives",
+        },
+        result: [{ item: "astralfoods:blaze_rods", count: 2 }],
+    });
 }
 
 function farmersdelight(event) {
@@ -125,7 +135,6 @@ function farmersdelight(event) {
         experience: 8.0,
         cookingtime: 300,
     });
-    //yes, these recipes don't work. Please use the temp ones
 }
 
 function sequencedAssemblyCooking(event) {
@@ -148,6 +157,32 @@ function sequencedAssemblyCooking(event) {
             ]
         )
         .transitionalItem("minecraft:bowl")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // output
+                Item.of("astralfoods:cod_n_blaze").withChance(1), // begin
+            ],
+            "minecraft:bowl",
+            [
+                // input
+                event.recipes.createDeploying("astralfoods:blaze_fries_and_cod", [
+                    "astralfoods:blaze_fries_and_cod",
+                    "minecraft:paper",
+                ]),
+                event.recipes.createDeploying("astralfoods:blaze_fries_and_cod", [
+                    "astralfoods:blaze_fries_and_cod",
+                    "minecraft:paper",
+                ]),
+                event.recipes.createDeploying("astralfoods:blaze_fries_and_cod", [
+                    "astralfoods:blaze_fries_and_cod",
+                    "minecraft:paper",
+                ]),
+            ]
+        )
+        .transitionalItem("astralfoods:blaze_fries_and_cod")
         .loops(1);
 }
 function astralAdditionsFood(event) {
@@ -1549,6 +1584,8 @@ onEvent("recipes", (event) => {
 
     event.shapeless(Item.of("techreborn:nitro_diesel_bucket"), ["ad_astra:fuel_bucket"]);
     event.shapeless(Item.of("techreborn:oil_bucket"), ["ad_astra:oil_bucket"]);
+
+    event.shapeless(Item.of("astralfoods:blaze_fries_and_cod"), ["astralfoods:fried_cod", "astralfoods:blaze_fries"]);
 
     event.shaped("ad_astra:strophar_cap", ["AA", "AA"], {
         A: "ad_astra:strophar_mushroom",
