@@ -139,10 +139,7 @@ onEvent("item.registry", (event) => {
         .create("astralfoods:blaze_rods")
         .displayName("Blaze Rods")
         .food((food) => {
-            food.hunger(1)
-                .saturation(0.5)
-                .effect("tconstruct:bleeding", 160, 0, 1)
-                .effect("fire_resistance", 160, 0, 1);
+            food.hunger(1).saturation(0.5).effect("minecraft;wither", 160, 0, 1).effect("fire_resistance", 160, 0, 1);
         });
 
     event
