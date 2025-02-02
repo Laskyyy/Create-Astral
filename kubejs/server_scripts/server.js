@@ -165,17 +165,9 @@ function sequencedAssemblyCooking(event) {
                 // output
                 Item.of("astralfoods:cod_n_blaze").withChance(1), // begin
             ],
-            "minecraft:bowl",
+            "astralfoods:blaze_fries_and_cod",
             [
                 // input
-                event.recipes.createDeploying("astralfoods:blaze_fries_and_cod", [
-                    "astralfoods:blaze_fries_and_cod",
-                    "minecraft:paper",
-                ]),
-                event.recipes.createDeploying("astralfoods:blaze_fries_and_cod", [
-                    "astralfoods:blaze_fries_and_cod",
-                    "minecraft:paper",
-                ]),
                 event.recipes.createDeploying("astralfoods:blaze_fries_and_cod", [
                     "astralfoods:blaze_fries_and_cod",
                     "minecraft:paper",
@@ -183,7 +175,7 @@ function sequencedAssemblyCooking(event) {
             ]
         )
         .transitionalItem("astralfoods:blaze_fries_and_cod")
-        .loops(1);
+        .loops(3);
 }
 function astralAdditionsFood(event) {
     event.custom({

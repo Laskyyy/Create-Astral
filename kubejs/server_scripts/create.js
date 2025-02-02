@@ -4953,15 +4953,15 @@ function compactingRecipes(event) {
             { fluid: "createaddition:seed_oil", amount: 100 * mB },
         ])
         .heated()
-        .processingTime(60);
+        .processingTime(40);
 
     event.recipes
         .createCompacting("astralfoods:fried_cod", [
-            "minecraft:raw_cod",
+            "minecraft:cod",
             { fluid: "createaddition:seed_oil", amount: 100 * mB },
         ])
         .heated()
-        .processingTime(80);
+        .processingTime(60);
 
     event.recipes.createCompacting("4x minecraft:purpur_block", [
         "4x ad_astra:strophar_cap",

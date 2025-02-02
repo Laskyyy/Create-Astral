@@ -139,14 +139,18 @@ onEvent("item.registry", (event) => {
         .create("astralfoods:blaze_rods")
         .displayName("Blaze Rods")
         .food((food) => {
-            food.hunger(1).saturation(0.5).effect("minecraft;wither", 160, 0, 1).effect("fire_resistance", 160, 0, 1);
+            food.hunger(1)
+                .saturation(0.6)
+                .effect("wither", 160, 1, 1)
+                .effect("fire_resistance", 160, 0, 1)
+                .alwaysEdible();
         });
 
     event
         .create("astralfoods:blaze_fries")
         .displayName("Blaze Fries")
         .food((food) => {
-            food.hunger(4).saturation(0.8).effect("fire_resistance", 200, 0, 1);
+            food.hunger(3).saturation(0.8).effect("fire_resistance", 200, 0, 1);
         });
 
     event
@@ -167,7 +171,7 @@ onEvent("item.registry", (event) => {
                 .saturation(1)
                 .effect("fire_resistance", 360, 0, 1)
                 .effect("farmersdelight:nourishment", 5000, 0, 1)
-                .effect("yttr:delicaceness", 360, 0, 1);
+                .effect("absorption", 360, 0, 1);
         });
 });
 
