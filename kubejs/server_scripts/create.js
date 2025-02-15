@@ -1899,6 +1899,18 @@ function fillingRecipes(event) {
             fluid: "tconstruct:earth_slime",
             amount: 250,
         },
+	    {
+	    input: "minecraft:oak_sapling",
+	    output: "tconstruct:earth_slime_sapling",
+	    fluid: "tconstruct:earth_slime",
+    	    amount: 1000 * mB / 3, 
+	},
+	    {
+	    input: "minecraft:oak_sapling",
+	    output: "tconstruct:sky_slime_sapling",
+	    fluid: "tconstruct:sky_slime",
+    	    amount: 1000 * mB / 3
+	},
 		{
             input: "tconstruct:ender_slime_crystal",
             output: "tconstruct:small_ender_slime_crystal_bud",
