@@ -2168,6 +2168,24 @@ function mixingRecipes(event) {
         },
 		{
             output: [
+				{
+					"minecraft:cocoa_beans"
+				}
+			],
+            input: [
+				{
+					fluid: "kubejs:shimmer",
+					amount: INGOT,
+				},
+				"minecraft:brown_dye",
+		    		"minecraft:wheat_seeds",
+		    		"create:tree_fertilizer"
+			],
+            heat: "",
+            time: 80,
+        },
+		{
+            output: [
 				"create:tree_fertilizer"
 			],
             input: [
