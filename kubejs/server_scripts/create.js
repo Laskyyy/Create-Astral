@@ -941,7 +941,7 @@ function sequencedAssemblyRecipes(event) {
                 ]
             )
             .transitionalItem("ad_astra:polished_permafrost")
-			.loops(1);
+	    .loops(1);
 
         event.recipes
             .createSequencedAssembly(
