@@ -100,7 +100,7 @@ function farmersDelightCuttingChanges(event) {
             type: "farmersdelight:tool",
             tag: "c:tools/knives",
         },
-        result: [{ item: "astralfoods:quantum_bites", count: 3 }],
+        result: [{ item: "AstralFoods:quantum_bites", count: 3 }],
     });
 
     event.custom({
@@ -110,7 +110,7 @@ function farmersDelightCuttingChanges(event) {
             type: "farmersdelight:tool",
             tag: "c:tools/knives",
         },
-        result: [{ item: "astralfoods:blaze_rods", count: 2 }],
+        result: [{ item: "AstralFoods:blaze_rods", count: 2 }],
     });
 }
 
@@ -118,7 +118,7 @@ function farmersdelight(event) {
     event.custom({
         type: "farmersdelight:cooking",
         ingredients: [{ item: "createastral:astral_singularity" }],
-        result: { item: "astralfoods:astral_sauce" },
+        result: { item: "AstralFoods:astral_sauce" },
         container: { item: "minecraft:bowl" },
         experience: 10.0,
         cookingtime: 360,
@@ -127,11 +127,11 @@ function farmersdelight(event) {
     event.custom({
         type: "farmersdelight:cooking",
         ingredients: [
-            { item: "astralfoods:astral_sauce" },
-            { item: "astralfoods:quantum_bites" },
+            { item: "AstralFoods:astral_sauce" },
+            { item: "AstralFoods:quantum_bites" },
             { item: "farmersdelight:raw_pasta" },
         ],
-        result: { item: "astralfoods:quantum_pasta" },
+        result: { item: "AstralFoods:quantum_pasta" },
         experience: 8.0,
         cookingtime: 300,
     });
@@ -142,12 +142,12 @@ function sequencedAssemblyCooking(event) {
         .createSequencedAssembly(
             [
                 // output
-                Item.of("astralfoods:shimmered_rabbit_stew").withChance(1), // begin
+                Item.of("AstralFoods:shimmered_rabbit_stew").withChance(1), // begin
             ],
             "minecraft:bowl",
             [
                 // input
-                event.recipes.createDeploying("minecraft:bowl", ["minecraft:bowl", "astralfoods:seared_potato"]),
+                event.recipes.createDeploying("minecraft:bowl", ["minecraft:bowl", "AstralFoods:seared_potato"]),
                 event.recipes.createDeploying("minecraft:bowl", ["minecraft:bowl", "minecraft:cooked_rabbit"]),
 
                 event.recipes.createFilling("minecraft:bowl", [
@@ -163,18 +163,18 @@ function sequencedAssemblyCooking(event) {
         .createSequencedAssembly(
             [
                 // output
-                Item.of("astralfoods:cod_n_blaze").withChance(1), // begin
+                Item.of("AstralFoods:cod_n_blaze").withChance(1), // begin
             ],
-            "astralfoods:blaze_fries_and_cod",
+            "AstralFoods:blaze_fries_and_cod",
             [
                 // input
-                event.recipes.createDeploying("astralfoods:blaze_fries_and_cod", [
-                    "astralfoods:blaze_fries_and_cod",
+                event.recipes.createDeploying("AstralFoods:blaze_fries_and_cod", [
+                    "AstralFoods:blaze_fries_and_cod",
                     "minecraft:paper",
                 ]),
             ]
         )
-        .transitionalItem("astralfoods:blaze_fries_and_cod")
+        .transitionalItem("AstralFoods:blaze_fries_and_cod")
         .loops(3);
 }
 function astralAdditionsFood(event) {
@@ -185,31 +185,31 @@ function astralAdditionsFood(event) {
         requirements: [
             {
                 type: "custommachinery:item",
-                item: "astralfoods:quantum_pasta",
+                item: "AstralFoods:quantum_pasta",
                 mode: "input",
                 amount: 1,
             },
             {
                 type: "custommachinery:item",
-                item: "astralfoods:shimmered_apple",
+                item: "AstralFoods:shimmered_apple",
                 mode: "input",
                 amount: 1,
             },
             {
                 type: "custommachinery:item",
-                item: "astralfoods:compressed_onion",
+                item: "AstralFoods:compressed_onion",
                 mode: "input",
                 amount: 1,
             },
             {
                 type: "custommachinery:item",
-                item: "astralfoods:shimmered_rabbit_stew",
+                item: "AstralFoods:shimmered_rabbit_stew",
                 mode: "input",
                 amount: 1,
             },
             {
                 type: "custommachinery:item",
-                item: "astralfoods:food_amalgamation",
+                item: "AstralFoods:food_amalgamation",
                 mode: "output",
                 amount: 1,
             },
@@ -275,7 +275,7 @@ function astralAdditionsFood(event) {
             { item: "farmersdelight:onion_crate" },
         ],
         output: {
-            item: "astralfoods:compressed_onion",
+            item: "AstralFoods:compressed_onion",
         },
     });
 }
@@ -284,13 +284,13 @@ onEvent("recipes", (event) => {
     event.custom({
         type: "astraladditions:shimmer_transmute",
         input: {
-            item: "astralfoods:chocolate_ice_cream",
+            item: "AstralFoods:chocolate_ice_cream",
             count: 1,
         },
 
         output: [
             {
-                item: "astralfoods:ambrosia",
+                item: "AstralFoods:ambrosia",
                 count: 1,
             },
         ],
@@ -1577,7 +1577,7 @@ onEvent("recipes", (event) => {
     event.shapeless(Item.of("techreborn:nitro_diesel_bucket"), ["ad_astra:fuel_bucket"]);
     event.shapeless(Item.of("techreborn:oil_bucket"), ["ad_astra:oil_bucket"]);
 
-    event.shapeless(Item.of("astralfoods:blaze_fries_and_cod"), ["astralfoods:fried_cod", "astralfoods:blaze_fries"]);
+    event.shapeless(Item.of("AstralFoods:blaze_fries_and_cod"), ["AstralFoods:fried_cod", "AstralFoods:blaze_fries"]);
 
     event.shaped("ad_astra:strophar_cap", ["AA", "AA"], {
         A: "ad_astra:strophar_mushroom",

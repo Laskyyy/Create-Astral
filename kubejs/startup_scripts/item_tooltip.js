@@ -302,16 +302,16 @@ onEvent("item.tooltip", (e) => {
             tooltip: "tooltip.createastral.biplane_blueprint",
         },
         {
-            item: "astralfoods:shimmered_rabbit_stew",
-            tooltip: "tooltip.astralfoods.shimmered_rabbit_stew",
+            item: "AstralFoods:shimmered_rabbit_stew",
+            tooltip: "tooltip.AstralFoods.shimmered_rabbit_stew",
         },
         {
-            item: "astralfoods:astral_sauce",
-            tooltip: "tooltip.astralfoods.astral_sauce",
+            item: "AstralFoods:astral_sauce",
+            tooltip: "tooltip.AstralFoods.astral_sauce",
         },
         {
-            item: "astralfoods:dipped_potato",
-            tooltip: "tooltip.astralfoods.dipped_potato",
+            item: "AstralFoods:dipped_potato",
+            tooltip: "tooltip.AstralFoods.dipped_potato",
         },
         {
             item: "createbigcannons:steel_screw_breech",

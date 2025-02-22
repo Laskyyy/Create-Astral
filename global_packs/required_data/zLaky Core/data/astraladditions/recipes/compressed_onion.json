@@ -14,6 +14,6 @@
         {"item":"farmersdelight:onion_crate"}, {"item":"farmersdelight:onion_crate"}, {"item":"farmersdelight:onion_crate"}
     ],
     "output": {
-        "item": "astralfoods:compressed_onion"
+        "item": "AstralFoods:compressed_onion"
     }
 }
