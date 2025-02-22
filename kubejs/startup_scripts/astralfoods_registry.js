@@ -1,21 +1,21 @@
 onEvent("item.registry", (event) => {
     //Astral Foods
     event
-        .create("AstralFoods:quantum_bites")
+        .create("astralfoods:quantum_bites")
         .displayName("Quantum Bites")
         .food((food) => {
             food.hunger(7).saturation(1.2).effect("regeneration", 300, 0, 1).alwaysEdible();
         });
 
     event
-        .create("AstralFoods:astral_sauce")
+        .create("astralfoods:astral_sauce")
         .displayName("Astral Sauce")
         .food((food) => {
             food.hunger(7).saturation(0.6).effect("wither", 440, 0, 1).effect("hunger", 440, 1, 1).alwaysEdible();
         });
 
     event
-        .create("AstralFoods:quantum_pasta")
+        .create("astralfoods:quantum_pasta")
         .displayName("Quantum Pasta")
         .food((food) => {
             food.hunger(75)
@@ -27,14 +27,14 @@ onEvent("item.registry", (event) => {
         });
 
     event
-        .create("AstralFoods:seared_potato")
+        .create("astralfoods:seared_potato")
         .displayName("Seared Potato")
         .food((food) => {
             food.hunger(7).saturation(0.8).effect("resistance", 440, 0, 1).alwaysEdible();
         });
 
     event
-        .create("AstralFoods:dipped_potato")
+        .create("astralfoods:dipped_potato")
         .displayName("Dipped Potato")
         .food((food) => {
             food.hunger(9)
@@ -46,7 +46,7 @@ onEvent("item.registry", (event) => {
         });
 
     event
-        .create("AstralFoods:shimmered_rabbit_stew")
+        .create("astralfoods:shimmered_rabbit_stew")
         .displayName("Shimmered Rabbit Stew")
         .food((food) => {
             food.hunger(18)
@@ -57,21 +57,21 @@ onEvent("item.registry", (event) => {
         });
 
     event
-        .create("AstralFoods:shimmered_apple")
+        .create("astralfoods:shimmered_apple")
         .displayName("Shimmered Apple")
         .food((food) => {
             food.hunger(7).saturation(1.4).effect("regeneration", 60, 1, 1);
         });
 
     event
-        .create("AstralFoods:compressed_onion")
+        .create("astralfoods:compressed_onion")
         .displayName("Compressed Onion")
         .food((food) => {
             food.hunger(54).saturation(0.6).effect("slowness", 200, 1, 1).effect("nausea", 200, 2, 1).alwaysEdible();
         });
 
     event
-        .create("AstralFoods:food_amalgamation")
+        .create("astralfoods:food_amalgamation")
         .displayName("Food Amalgamation")
         .food((food) => {
             food.hunger(200)
@@ -85,8 +85,9 @@ onEvent("item.registry", (event) => {
         });
 
     event
-        .create("AstralFoods:bulbas_tea")
+        .create("astralfoods:bulbas_tea")
         .displayName("Bulba's Tea")
+        .useAnimation("drink")
         .maxStackSize(16)
         .food((food) => {
             food.hunger(2)
@@ -97,28 +98,28 @@ onEvent("item.registry", (event) => {
         });
 
     event
-        .create("AstralFoods:ambrosia")
+        .create("astralfoods:ambrosia")
         .displayName("Ambrosia")
         .food((food) => {
             food.hunger(3).saturation(1.1).effect("haste", 1200, 0, 1).alwaysEdible();
         });
 
     event
-        .create("AstralFoods:chocolate_ice_cream")
+        .create("astralfoods:chocolate_ice_cream")
         .displayName("Chocolate Ice Cream")
         .food((food) => {
             food.hunger(3).saturation(1.2).effect("speed", 800, 0, 1).alwaysEdible();
         });
 
     event
-        .create("AstralFoods:ice_cream_sandwich")
+        .create("astralfoods:ice_cream_sandwich")
         .displayName("Ice Cream Sandwich")
         .food((food) => {
             food.hunger(6).saturation(1.2).effect("speed", 520, 0, 1).effect("haste", 520, 0, 1).alwaysEdible();
         });
 
     event
-        .create("AstralFoods:gamers_delight")
+        .create("astralfoods:gamers_delight")
         .displayName("Gamers Delight")
         .food((food) => {
             food.hunger(7)
@@ -129,14 +130,14 @@ onEvent("item.registry", (event) => {
         });
 
     event
-        .create("AstralFoods:fried_cod")
+        .create("astralfoods:fried_cod")
         .displayName("Fried Cod")
         .food((food) => {
             food.hunger(6).saturation(0.9);
         });
 
     event
-        .create("AstralFoods:blaze_rods")
+        .create("astralfoods:blaze_rods")
         .displayName("Blaze Rods")
         .food((food) => {
             food.hunger(1)
@@ -147,14 +148,14 @@ onEvent("item.registry", (event) => {
         });
 
     event
-        .create("AstralFoods:blaze_fries")
+        .create("astralfoods:blaze_fries")
         .displayName("Blaze Fries")
         .food((food) => {
             food.hunger(3).saturation(0.8).effect("fire_resistance", 200, 0, 1);
         });
 
     event
-        .create("AstralFoods:blaze_fries_and_cod")
+        .create("astralfoods:blaze_fries_and_cod")
         .displayName("Blaze Fries and Cod")
         .food((food) => {
             food.hunger(9)
@@ -164,7 +165,7 @@ onEvent("item.registry", (event) => {
         });
 
     event
-        .create("AstralFoods:cod_n_blaze")
+        .create("astralfoods:cod_n_blaze")
         .displayName("Cod n' Blaze")
         .food((food) => {
             food.hunger(12)
@@ -173,11 +174,20 @@ onEvent("item.registry", (event) => {
                 .effect("farmersdelight:nourishment", 5000, 0, 1)
                 .effect("absorption", 360, 0, 1);
         });
+
+    event
+        .create("astralfoods:recovery_orb")
+        .displayName("Recovery Orb")
+        .useAnimation("drink")
+        .maxStackSize(4)
+        .food((food) => {
+            food.hunger(16).saturation(1.2).effect("resistance", 600, 1, 1).alwaysEdible();
+        });
 });
 
 onEvent("fluid.registry", (event) => {
     event
-        .create("AstralFoods:cream")
+        .create("astralfoods:cream")
         .thickTexture(0xfeedbd)
         .bucketColor(0xfeedbd)
         .displayName("Cream")

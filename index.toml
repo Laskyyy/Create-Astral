@@ -14257,75 +14257,75 @@ file = "kubejs/README.txt"
 hash = "02d6feb3afe1d9c96e137f8baaa71de982f1af0a2b37fbcba73f34ee59ebbd4d"
 
 [[files]]
-file = "kubejs/assets/AstralFoods/textures/fluid/cream_flow.png"
+file = "kubejs/assets/astralfoods/textures/fluid/cream_flow.png"
 hash = "7b1b42a330724b549cb07c26d1989e0fd2616c345e4bb173ce1ee6fc745bc2db"
 
 [[files]]
-file = "kubejs/assets/AstralFoods/textures/fluid/cream_flow.png.mcmeta"
+file = "kubejs/assets/astralfoods/textures/fluid/cream_flow.png.mcmeta"
 hash = "e9b8025fde1b09b0a4d2a38427b04f98f28a593045be6d177eb2b29164c872b0"
 
 [[files]]
-file = "kubejs/assets/AstralFoods/textures/fluid/cream_still.png"
+file = "kubejs/assets/astralfoods/textures/fluid/cream_still.png"
 hash = "1635ace6356f2326887e7f3f81655d64d6f853ebc50650061c7f955ffa568b4b"
 
 [[files]]
-file = "kubejs/assets/AstralFoods/textures/fluid/cream_still.png.mcmeta"
+file = "kubejs/assets/astralfoods/textures/fluid/cream_still.png.mcmeta"
 hash = "d947e6371a5bb46ab733722fac72f7aae2832fc94ecc8a1ab55c3e1471cbf4f4"
 
 [[files]]
-file = "kubejs/assets/AstralFoods/textures/item/ambrosia.png"
+file = "kubejs/assets/astralfoods/textures/item/ambrosia.png"
 hash = "f01457e0c46f2cd7de058c7d56581a1078019d2b404fd929187fef63766e25da"
 
 [[files]]
-file = "kubejs/assets/AstralFoods/textures/item/astral_sauce.png"
+file = "kubejs/assets/astralfoods/textures/item/astral_sauce.png"
 hash = "a903ec2d834eb152f29389539e1513d1973d5676dc3d9c29eee9553c9dd0176c"
 
 [[files]]
-file = "kubejs/assets/AstralFoods/textures/item/bulbas_tea.png"
+file = "kubejs/assets/astralfoods/textures/item/bulbas_tea.png"
 hash = "b223eaf8f3b6f890fda059b064eb784e6800cf433b19d47e098b7258eaf3fff5"
 
 [[files]]
-file = "kubejs/assets/AstralFoods/textures/item/chocolate_ice_cream.png"
+file = "kubejs/assets/astralfoods/textures/item/chocolate_ice_cream.png"
 hash = "d6b476ae2d0f216adcafc1b32728b35a5742f140ea3432800d40122a577b86ef"
 
 [[files]]
-file = "kubejs/assets/AstralFoods/textures/item/compressed_onion.png"
+file = "kubejs/assets/astralfoods/textures/item/compressed_onion.png"
 hash = "c5b3a9dbdeadac34438ab0208e4b2a1a0d543385c89a41fefc58ca07f0c57f81"
 
 [[files]]
-file = "kubejs/assets/AstralFoods/textures/item/dipped_potato.png"
+file = "kubejs/assets/astralfoods/textures/item/dipped_potato.png"
 hash = "d99476549246662d2e90b336bc84f610340f19fb00ef9402271200d19ac46fff"
 
 [[files]]
-file = "kubejs/assets/AstralFoods/textures/item/food_amalgamation.png"
+file = "kubejs/assets/astralfoods/textures/item/food_amalgamation.png"
 hash = "1957f3233ab27c994dc044b6c065858db31610dbb4a642043da313cb1c1d79dc"
 
 [[files]]
-file = "kubejs/assets/AstralFoods/textures/item/gamers_delight.png"
+file = "kubejs/assets/astralfoods/textures/item/gamers_delight.png"
 hash = "4a8db9220ae5e60f6b648129499716cfbcba4674c901d6ed6e0fb9fabb59b32a"
 
 [[files]]
-file = "kubejs/assets/AstralFoods/textures/item/ice_cream_sandwich.png"
+file = "kubejs/assets/astralfoods/textures/item/ice_cream_sandwich.png"
 hash = "6213693cab47cb999fc0d088348adb4ccb39f061c43013260114e8965e08b873"
 
 [[files]]
-file = "kubejs/assets/AstralFoods/textures/item/quantum_bites.png"
+file = "kubejs/assets/astralfoods/textures/item/quantum_bites.png"
 hash = "8cab750ccdfd07a456da17288bbe7a57fad8a218886ef0fd98da831641f8512a"
 
 [[files]]
-file = "kubejs/assets/AstralFoods/textures/item/quantum_pasta.png"
+file = "kubejs/assets/astralfoods/textures/item/quantum_pasta.png"
 hash = "ceb0fb27102bcd1e3d9278c285a5fdf9f5e0996fcde45f7aa13c4a6e9fe25dcb"
 
 [[files]]
-file = "kubejs/assets/AstralFoods/textures/item/seared_potato.png"
+file = "kubejs/assets/astralfoods/textures/item/seared_potato.png"
 hash = "a346a03a14d1cc1112ddf33895f33a7f2ad18f51364fd1cfa232b9d63ff67b1b"
 
 [[files]]
-file = "kubejs/assets/AstralFoods/textures/item/shimmered_apple.png"
+file = "kubejs/assets/astralfoods/textures/item/shimmered_apple.png"
 hash = "d1275ede37ff2cebe1e202eaf2e5733e675a372082675e44f51e75f68a68a1e9"
 
 [[files]]
-file = "kubejs/assets/AstralFoods/textures/item/shimmered_rabbit_stew.png"
+file = "kubejs/assets/astralfoods/textures/item/shimmered_rabbit_stew.png"
 hash = "9ca3f6e70f9174321f95c822da830cdfe8deb33b3ccbe2a3bcf97635b8799fe2"
 
 [[files]]
@@ -14997,7 +14997,7 @@ file = "kubejs/server_scripts/yttr_centrifuging.js"
 hash = "dff8b585fd2b9910ae864c8d1e655c3fe8d1da0b08ca3fddb49c9ec5b4f1ab47"
 
 [[files]]
-file = "kubejs/startup_scripts/AstralFoods_registry.js"
+file = "kubejs/startup_scripts/astralfoods_registry.js"
 hash = "4bddbf3cb5ce24b3c28779d0d98e59f3848db9f19ec82850a85a745da48a985a"
 
 [[files]]

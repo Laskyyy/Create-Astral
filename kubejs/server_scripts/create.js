@@ -2003,20 +2003,20 @@ function fillingRecipes(event) {
         },
         {
             input: "minecraft:apple",
-            output: "AstralFoods:shimmered_apple",
+            output: "astralfoods:shimmered_apple",
             fluid: "kubejs:shimmer",
             amount: BUCKET / 3,
         },
         {
-            input: "AstralFoods:seared_potato",
-            output: "AstralFoods:dipped_potato",
+            input: "astralfoods:seared_potato",
+            output: "astralfoods:dipped_potato",
             fluid: "tconstruct:molten_gold",
             amount: INGOT,
         },
         {
             input: "minecraft:cookie",
-            output: "AstralFoods:ice_cream_sandwich",
-            fluid: "AstralFoods:cream",
+            output: "astralfoods:ice_cream_sandwich",
+            fluid: "astralfoods:cream",
             amount: 250 * mB,
         },
         {
@@ -3365,19 +3365,19 @@ function mixingRecipes(event) {
             time: 1000,
         },
         {
-            output: ["AstralFoods:astral_sauce"],
+            output: ["astralfoods:astral_sauce"],
             input: ["createastral:astral_singularity"],
             heat: "superheated",
             time: 80,
         },
         {
-            output: ["AstralFoods:quantum_pasta"],
-            input: ["AstralFoods:astral_sauce", "2x AstralFoods:quantum_bites", "farmersdelight:raw_pasta"],
+            output: ["astralfoods:quantum_pasta"],
+            input: ["astralfoods:astral_sauce", "2x astralfoods:quantum_bites", "farmersdelight:raw_pasta"],
             heat: "heated",
             time: 250,
         },
         {
-            output: [{ fluid: "AstralFoods:cream", amount: BUCKET }],
+            output: [{ fluid: "astralfoods:cream", amount: BUCKET }],
             input: [
                 "3x minecraft:sugar",
                 {
@@ -3389,11 +3389,11 @@ function mixingRecipes(event) {
             time: 100,
         },
         {
-            output: ["AstralFoods:chocolate_ice_cream"],
+            output: ["astralfoods:chocolate_ice_cream"],
             input: [
                 "create:bar_of_chocolate",
                 {
-                    fluid: "AstralFoods:cream",
+                    fluid: "astralfoods:cream",
                     amount: BUCKET / 4,
                 },
             ],
@@ -3401,7 +3401,7 @@ function mixingRecipes(event) {
             time: 60,
         },
         {
-            output: ["AstralFoods:gamers_delight"],
+            output: ["astralfoods:gamers_delight"],
             input: [
                 "techreborn:compressed_plantball",
                 "farmersdelight:pie_crust",
@@ -3757,7 +3757,7 @@ function mixingRecipes(event) {
         .processingTime(1000);
 
     event.recipes
-        .createMixing("AstralFoods:bulbas_tea", [
+        .createMixing("astralfoods:bulbas_tea", [
             "astraladditions:bulba_root",
             { fluid: "minecraft:water", amount: 333 * mB },
             { fluid: "milk:still_milk", amount: 333 * mB },
@@ -4948,15 +4948,15 @@ function compactingRecipes(event) {
         .processingTime(200);
 
     event.recipes
-        .createCompacting("AstralFoods:blaze_fries", [
-            "AstralFoods:blaze_rods",
+        .createCompacting("astralfoods:blaze_fries", [
+            "astralfoods:blaze_rods",
             { fluid: "createaddition:seed_oil", amount: 100 * mB },
         ])
         .heated()
         .processingTime(40);
 
     event.recipes
-        .createCompacting("AstralFoods:fried_cod", [
+        .createCompacting("astralfoods:fried_cod", [
             "minecraft:cod",
             { fluid: "createaddition:seed_oil", amount: 100 * mB },
         ])

@@ -204,7 +204,7 @@ onEvent("recipes", (event) => {
         },
         {
             fluid: ["tconstruct:seared_stone", NUGGET * 3],
-            result: "AstralFoods:seared_potato",
+            result: "astralfoods:seared_potato",
             cooling_time: 20,
             cast: ["minecraft:potato", true],
         },

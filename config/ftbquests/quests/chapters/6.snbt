@@ -141,7 +141,7 @@
 				{
 					id: "2A1BE367381DE61A"
 					type: "item"
-					item: "AstralFoods:quantum_bites"
+					item: "astralfoods:quantum_bites"
 					count: 3
 				}
 				{
@@ -372,7 +372,7 @@
 				{
 					id: "4C4FAD2B6812B1C4"
 					type: "item"
-					item: "AstralFoods:shimmered_apple"
+					item: "astralfoods:shimmered_apple"
 					count: 8L
 				}
 			]
