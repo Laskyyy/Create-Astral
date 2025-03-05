@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "astralrails:mars/piglin_tower",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"spacing": 28,
+		"separation": 5,
+		"salt": 382531311
+	}
+}

@@ -1882,6 +1882,12 @@ function sequencedAssemblyRecipes(event) {
 function fillingRecipes(event) {
     [
 		{
+            input: "minecraft:glass_bottle",
+            output: "astraladditions:shimmer_bottle",
+            fluid: "kubejs:shimmer",
+            amount: 333 * mB,
+        },
+		{
             input: "minecraft:dirt",
             output: "tconstruct:sky_slime_dirt",
             fluid: "tconstruct:sky_slime",
@@ -2090,6 +2096,11 @@ function fillingRecipes(event) {
 
 function deployingRecipes(event) {
     [
+		{
+            output: "createastral:cheesier_block",
+            basin_input: "ad_astra:cheese_block",
+            deployer_input: "ad_astra:cheese",
+        },
 		{
             output: "minecraft:redstone_torch",
             basin_input: "minecraft:torch",
@@ -2328,8 +2339,8 @@ function mixingRecipes(event) {
         },
 		{
             output: [
-				Item.of("2x createastral:marimo").withChance(0.5),
-				Item.of("2x createastral:moonset_marimo").withChance(0.5),
+				Item.of("2x createastral:marimo").withChance(0.4),
+				Item.of("2x createastral:moonset_marimo").withChance(0.6),
 				{
 					fluid: "minecraft:water",
 					amount: BUCKET,
@@ -3044,7 +3055,7 @@ function mixingRecipes(event) {
         },
         {
             output: "create:chromatic_compound",
-            input: ["5x techreborn:uu_matter", { fluid: "kubejs:shimmer", amount: BUCKET }],
+            input: ["4x techreborn:uu_matter", { fluid: "kubejs:shimmer", amount: BUCKET }],
             heat: "superheated",
             time: 2500,
         },
@@ -3925,7 +3936,7 @@ function mechanicalCraftingRecipes(event) {
             },
         },
         {
-            output: "astraladditions:desizer_8",
+            output: "astraladditions:desizer_base",
             shape: ["YLY", "YBY", "YPY"],
             inputs: {
                 Y: "createastral:ender_plating",

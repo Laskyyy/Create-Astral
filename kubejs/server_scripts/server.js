@@ -1217,6 +1217,15 @@ onEvent("recipes", (event) => {
         S: "createastral:synthetic_slime",
     });
 
+	event.shaped("createastral:cheese_bricks", ["SS", "SS"], {
+        S: "ad_astra:cheese",
+    });
+	
+	event.shaped("2x minecraft:mycelium", ["CD", "DC"], {
+        C: "ad_astra:cheese",
+        D: "minecraft:dirt",
+    });
+
     event.shaped("techreborn:lightning_rod", ["SRS", "DBD", "CCC"], {
         S: "techreborn:silver_plate",
         R: "minecraft:lightning_rod",
