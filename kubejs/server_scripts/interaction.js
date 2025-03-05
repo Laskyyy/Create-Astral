@@ -33,22 +33,18 @@ onEvent("item.right_click", (event) => {
 //? Makes the conduit take damge if used on shimmer stone
 //? If you wish to increase the damge please goto startup scripts, line 385, then what ever value you set it, take 1 off and change the 19
 
-const conduitBlocks = [
-    "createastral:shimmering_stone",
-    "createastral:ancient_stone",
-    "createastral:moonset_stone",
-    "createastral:mercurian_stone"
-]
-
 onEvent("block.right_click", (event) => {
-    if (event.item.id == "createastral:astral_conduit" && event.item.nbt["Damage"] <= 19  && conduitBlocks.includes(event.block.id)) {
-        if (event.hand != "MAIN_HAND") { return }
+    if (
+        event.block.id == "createastral:shimmering_stone" &&
+        event.item.id == "createastral:astral_conduit" &&
+        event.item.nbt["Damage"] <= 19
+    ) {
         event.item.nbt["Damage"]++;
         if (event.item.nbt["Damage"] == 20) {
             event.player.inventory.set(event.player.getSelectedSlot(), "air");
         }
     }
-    //? Tp player back to their spawn point, or world spawn if no spawn point was set
+        //? Tp player back to their spawn point, or world spawn if no spawn point was set
     //! Please note it will still send the player to their bed if the bed was broke. A fix is planned
     else if (
         event.block.id == "minecraft:bedrock" &&
