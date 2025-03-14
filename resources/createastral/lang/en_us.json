@@ -397,12 +397,12 @@
     "block.createastral.swift_andesite": "Swift Andesite",
     "block.createastral.rocket_casing": "Rocket Casing",
     "block.createastral.moonset_stone": "Moonset Stone",
-		
-	"item.createastral.marimo": "Marimo",
-	"item.createastral.moonset_marimo": "Moonset Marimo",
-	"item.createastral.snowy_marimo": "Snowy Marimo",
-	"item.createastral.ender_marimo": "Ender Marimo",
-	"item.createastral.shimmer_marimo": "Shimarimo",
+
+    "item.createastral.marimo": "Marimo",
+    "item.createastral.moonset_marimo": "Moonset Marimo",
+    "item.createastral.snowy_marimo": "Snowy Marimo",
+    "item.createastral.ender_marimo": "Ender Marimo",
+    "item.createastral.shimmer_marimo": "Shimarimo",
 
     "block.doodads.asphalt_slab": "Asphalt Slab",
     "block.doodads.asphalt_stair": "Asphalt Stair",
@@ -503,6 +503,7 @@
     "comment_5": "ftbquests",
 
     "ftbquests.data.data.title": "Create: Astral",
+
     "ftbquests.chapter.6.title": "6) The End",
     "ftbquests.chapter.6.quests0.title": "A World Lost to Time",
     "ftbquests.chapter.6.quests0.subtitle": "The End of Astral",
@@ -684,6 +685,7 @@
     "ftbquests.chapter.6.quests51.description4": "The Haemopal can be processed into crafting materials to help you summon another &5Great Beast&r.",
     "ftbquests.chapter.6.quests52.title": "Ores of the Old World",
     "ftbquests.chapter.6.quests52.subtitle": "Gotta mine em all",
+
     "ftbquests.chapter.6_raow.title": "5) Sub-Atomic",
     "ftbquests.chapter.6_raow.quests0.subtitle": "A godly Tinkers' material.",
     "ftbquests.chapter.6_raow.quests0.description0": "Extremely brittle, but as fast as light, and with plenty of opportunity for upgrades. This material will have no competition by any other utility tool if utilised well...",
@@ -888,6 +890,7 @@
     "ftbquests.chapter.6_raow.quests62.description2": "This can in turn be melted down into &6Mercury&r",
     "ftbquests.chapter.6_raow.quests63.subtitle": "The Warrior's Build Wand",
     "ftbquests.chapter.6_raow.quests63.description": "The Void Cleaver can slice blocks along a flat plane, allowing you to turn any solid block into a flexible slope block. Decorative and functional - Use this to build ramps with any block!",
+
     "ftbquests.chapter.assorted_goals.title": "0.5) Getting Started",
     "ftbquests.chapter.assorted_goals.quests0.title": "A Knight in Shining Copper",
     "ftbquests.chapter.assorted_goals.quests0.subtitle": "Cheap defense.",
@@ -1075,6 +1078,7 @@
     "ftbquests.chapter.assorted_goals.quests57.description27": "> &6Drawer Downgrades&r: Reduces max size of a slot to 64.",
     "ftbquests.chapter.assorted_goals.quests57.description28": "Useful for small buffers.",
     "ftbquests.chapter.assorted_goals.quests58.subtitle": "Contains all recipes for Drink Beer.",
+
     "ftbquests.chapter.astral_signals.title": "&k1.5&r) Astral Signals",
     "ftbquests.chapter.astral_signals.quests0.subtitle": "Long-forgotten &astargazers",
     "ftbquests.chapter.astral_signals.quests0.description0": "This satellite dish eminates with a sense of meaning and wonder, but also chaos and destruction.",
@@ -1151,6 +1155,7 @@
     "ftbquests.chapter.astral_signals.quests30.description4": "Yes, I disabled the skeleton-killing-creeper method.",
     "ftbquests.chapter.astral_signals.quests30.description6": "No, there is no other purpose of this questline.",
     "ftbquests.chapter.astral_signals.quests30.tasks0.title": "I can't stop winning!",
+
     "ftbquests.chapter.astral_storage.title": "3.5) Astral Storage",
     "ftbquests.chapter.astral_storage.quests0.title": "Welcome to Applied Energistics 2!",
     "ftbquests.chapter.astral_storage.quests0.subtitle": "The lunar meteorites contain rare circuits useful in inventory management!",
@@ -1265,6 +1270,7 @@
     "ftbquests.chapter.astral_storage.quests25.description7": "- Fortune, Silk Touch - works the same as on the pickaxe",
     "ftbquests.chapter.astral_storage.quests25.description8": "- Efficiency - decreases power usage upon breaking the block",
     "ftbquests.chapter.astral_storage.quests25.description10": "Tip: To \"filter\" the Annihilation Plane, position it so that it can only accept the desired item.",
+
     "ftbquests.chapter.chapter_2.title": "1) The Andesite World",
     "ftbquests.chapter.chapter_2.quests0.subtitle": "A new metal?",
     "ftbquests.chapter.chapter_2.quests0.description0": "But wait, alloying hasn't been invented yet!",
@@ -1505,12 +1511,14 @@
     "ftbquests.chapter.chapter_2.quests53.description6": "This is handy for dumping inventories when clogged up. This also helps manage fine control of what resources are being made. You don't really need any more than four stacks of Andesite Casing at a time, yeah? Use this, and now any extra Andesite Casings produced can continue to be transformed into Copper and Brass Casings.",
     "ftbquests.chapter.chapter_2.quests54.subtitle": "\"What's in the box?\" \"Pain.\"",
     "ftbquests.chapter.chapter_2.quests54.description0": "The Smart Observer can broadcast a Redstone signal whenever an inventory has a matching item.",
-    "ftbquests.chapter.chapter_2.quests54.description3": "Not too useful if you've managed your factories well enough, you should already know what's in an inventory. That being said, put it your inventory Crafting Table and...",
-	"ftbquests.chapter.chapter_2.quests55.subtitle": "And Duh Sight",
-	"ftbquests.chapter.chapter_2.quests55.description0": "Got Andesite problems? I feel bad for you, son.",
-	"ftbquests.chapter.chapter_2.quests55.description2": "Crush Cobblestone using a Mechanical Press and you'll be left with a neat pile of Andesite Dust! Place 4 Andesite Dust in a Basin and use another Mechanical Press over a Basin to Compact the dust into a fresh block of Andesite!",
-	"ftbquests.chapter.chapter_2.quests55.description4": "This isn't the only way to make Andesite or Andesite Dust. Using REI, you can click on Andesite and Andesite Dust to see all of their recipes. Remember that REI is your friend! Often there are recipes in the pack that are not mentioned in this questbook, so make sure to explore all the recipes for any items you need more of!",
-	"ftbquests.chapter.chapter_25_the_automation_matrix.title": "The Automation Matrix",
+    "ftbquests.chapter.chapter_2.quests54.description3": "Not too useful if you've managed your factories well enough, you should already know what's in an inventory. That being said, the next quest has something a bit more useful...",
+    "ftbquests.chapter.chapter_2.quests55.subtitle": "And Duh Sight",
+    "ftbquests.chapter.chapter_2.quests55.description0": "Got Andesite problems? I feel bad for you, son.",
+    "ftbquests.chapter.chapter_2.quests55.description2": "Crush Cobblestone using a Mechanical Press and you'll be left with a neat pile of Andesite Dust! Place 4 Andesite Dust in a Basin and use another Mechanical Press over a Basin to Compact the dust into a fresh block of Andesite!",
+    "ftbquests.chapter.chapter_2.quests55.description4": "This isn't the only way to make Andesite or Andesite Dust. Using REI, you can click on Andesite and Andesite Dust to see all of their recipes. Remember that REI is your friend! Often there are recipes in the pack that are not mentioned in this questbook, so make sure to explore all the recipes for any items you need more of!",
+
+    "ftbquests.chapter.chapter_25_the_automation_matrix.title": "The Automation Matrix",
+    "ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark": "Automated!",
     "ftbquests.chapter.chapter_25_the_automation_matrix.quests0.subtitle": "Compost organics",
     "ftbquests.chapter.chapter_25_the_automation_matrix.quests0.description": "Bone Meal is used to speed up the growth of crops.",
     "ftbquests.chapter.chapter_25_the_automation_matrix.quests1.subtitle": "There may be a way to automate this later...",
@@ -1609,10 +1617,8 @@
     "ftbquests.chapter.chapter_25_the_automation_matrix.quests66.tasks0.title": "Understood.",
     "ftbquests.chapter.chapter_25_the_automation_matrix.quests125.title": "Moon",
     "ftbquests.chapter.chapter_25_the_automation_matrix.quests125.subtitle": "Obtain Blazes from Lunar Powerplants.",
-    "ftbquests.chapter.chapter_25_the_automation_matrix.quests127.title": "Optional substitute.",
-    "ftbquests.chapter.chapter_25_the_automation_matrix.quests127.subtitle": "Scrap can be utilised in forming Nether Grout to reduce the amount of Scoria needed when mass-producing.",
     "ftbquests.chapter.chapter_25_the_automation_matrix.quests136.tasks0.title": "Any #c:coral_plants",
-    "ftbquests.chapter.chapter_25_the_automation_matrix.quests150.subtitle": "The Stone Growth Chamber varies its output based on &6dimension&r.",
+    "ftbquests.chapter.chapter_25_the_automation_matrix.quests150.subtitle": "The Stone Growth Chamber varies its output based on &6the stone it's built with&r.",
     "ftbquests.chapter.chapter_25_the_automation_matrix.quests163.subtitle": "Regular heat",
     "ftbquests.chapter.chapter_25_the_automation_matrix.quests164.subtitle": "Regular Heat (superheat for efficient recipe)",
     "ftbquests.chapter.chapter_25_the_automation_matrix.quests165.subtitle": "Superheating Only.",
@@ -1623,6 +1629,7 @@
     "ftbquests.chapter.chapter_25_the_automation_matrix.quests174.subtitle": "Honey+Lava",
     "ftbquests.chapter.chapter_25_the_automation_matrix.quests175.subtitle": "Spawns in Moon caves",
     "ftbquests.chapter.chapter_25_the_automation_matrix.quests175.description": "Grow on Stone ceilings and harvest for plentiful amounts of Prismarine Shards and crystals. ",
+
     "ftbquests.chapter.chapter_3.title": "2) Getting Industrial",
     "ftbquests.chapter.chapter_3.quests0.title": "Fluid Storage",
     "ftbquests.chapter.chapter_3.quests0.subtitle": "Store your liquids in a stylish way!",
@@ -2031,7 +2038,7 @@
     "ftbquests.chapter.chapter_3.quests74.description2": "&bNote: Press \"U\" on the Coral in REI to see all the possibilities! ",
     "ftbquests.chapter.chapter_3.quests74.description4": "Whilst not a priority right now, do take the time to see the possibilites of &6Crushing&r these blocks later...",
     "ftbquests.chapter.chapter_3.quests75.title": "&6Unlimited Andesite&r",
-    "ftbquests.chapter.chapter_3.quests75.subtitle": "3x3 multiblock which changes block generation based on planet!",
+    "ftbquests.chapter.chapter_3.quests75.subtitle": "3x3 multiblock which changes block generation based on the stone it's built from!",
     "ftbquests.chapter.chapter_3.quests75.description0": "Complimentary schematic included with all purchases! You can also Ponder this block to see more info!",
     "ftbquests.chapter.chapter_3.quests75.description2": "&7Top Layer: 3x3 Polished Andesite&r",
     "ftbquests.chapter.chapter_3.quests75.description4": "&7Middle Layer: Lava in middle, surrounded by vanilla glass. &r",
@@ -2047,18 +2054,17 @@
     "ftbquests.chapter.chapter_3.quests77.description0": "The Fluid Centrifuge refines a liquid to create a new liquid.",
     "ftbquests.chapter.chapter_3.quests77.description2": "&bHold W on the Fluid Centrifuge item to see how it works!&r Essentially, when spinning at 256 RPM, the Fluid Centrifuge takes an input fluid from a Fluid Tank underneath, and outputs a new liquid to a Fluid Tank on top.",
     "ftbquests.chapter.chapter_3.quests77.description4": "&4The Fluid Centrifuge doesn't work very well with REI.&r To see its recipes, you must press U on it. Take note of all these recipes, as they come in handy at various points in progession!",
-	"ftbquests.chapter.chapter_3.quests78.subtitle": "Hell yeah",
+    "ftbquests.chapter.chapter_3.quests78.subtitle": "Hell yeah",
     "ftbquests.chapter.chapter_3.quests78.description0": "The Fluid Centrifuge can be used to refine Horse Urine into Liquid Estrogen. &8(I swear this is scientifically accurate)",
     "ftbquests.chapter.chapter_3.quests78.description2": "Pop an Estrogen Pill and unleash your inner *&dgirl&r*. The ability to air-dash is granted! Bind the dash button to something comfortable in the Controls menu. I recommend a mouse button if you have one spare!",
-	"ftbquests.chapter.chapter_3.quests79.subtitle": "Sticky!",
+    "ftbquests.chapter.chapter_3.quests79.subtitle": "Sticky!",
     "ftbquests.chapter.chapter_3.quests79.description0": "Mouth getting sore from eating all those pills? An Estrogen Patch consumes Estrogen Pills automatically from your inventory, and it increases the duration of the effect given! Woohoo!",
-    
-	"ftbquests.chapter.chapter_3.quests80.title": "Shimmer Transmutation",
-	"ftbquests.chapter.chapter_3.quests80.subtitle": "This is still a tech pack, I swear",
+    "ftbquests.chapter.chapter_3.quests80.title": "Shimmer Transmutation",
+    "ftbquests.chapter.chapter_3.quests80.subtitle": "This is still a tech pack, I swear",
     "ftbquests.chapter.chapter_3.quests80.description0": "Shimmer can be used to Transmute certain items, transforming them into another item. Press U on a bucket of Shimmer in your inventory to see all of the recipes!",
     "ftbquests.chapter.chapter_3.quests80.description2": "Simply throw a valid item into Shimmer fluid and watch the SCIENCE unfold! Remember your protective goggles!",
-	
-	"ftbquests.chapter.chapter_4.title": "3) Remnants of a Lost Civilisation",
+
+    "ftbquests.chapter.chapter_4.title": "3) Remnants of a Lost Civilisation",
     "ftbquests.chapter.chapter_4.quests0.subtitle": "Obtain a Blaze from a lost Powerplant on the Moon!",
     "ftbquests.chapter.chapter_4.quests0.description0": "Powerplants spawn with dangerous Wither Skeletons and guaranteed Blaze Spawners. With an empty Blaze Burner, you'll be able to Right-Click Blazes and scoop them up.",
     "ftbquests.chapter.chapter_4.quests0.description3": "Blaze Burners let you do heated (and later on, super-heated) recipes, where you can light a fire under a Basin for a Mixer or Press to operate on. A lot of recipes can only be made this way. It's the reason you really should have fuel automated.",
@@ -2559,6 +2565,7 @@
     "ftbquests.chapter.chapter_4.quests140.description0": "&aXP Crystal&r Lakes spawn rarely underground on the Moon. A crust of hardened XP will surround a pool of &bLiquid Soul&r. ",
     "ftbquests.chapter.chapter_4.quests140.description2": "&aBudding XP Crystals&r feed off of &bLiquid Soul&r through the sides of the block, producing &aXP Crystals&r on the top and bottom of the block when they get hungry. &bLiquid Soul&r is automatable, so keep those crystals growing!",
     "ftbquests.chapter.chapter_4.quests140.description4": "&aXP Crystals&r can be eaten for &aXP&r, or they can be melted and processed into &aXP Boost&r potions, and various foods that grant large quantities of &aXP&r when digested.",
+
     "ftbquests.chapter.chapter_5.title": "4) Piglin Peculiarities",
     "ftbquests.chapter.chapter_5.quests0.title": "Welcome to Mars.",
     "ftbquests.chapter.chapter_5.quests0.subtitle": "Make yourself at home, it only gets worse from here...",
@@ -2816,6 +2823,7 @@
     "ftbquests.chapter.chapter_5.quests75.description0": "For the price of &610 Ancient Debris&r, a portal from the Moon to Mars can be created, and lit with an Astral Conduit.",
     "ftbquests.chapter.chapter_5.quests75.description2": "A worthy investment, for those who are not interested in using a rocket for every trip. This should make exploring the planet more often viable!",
     "ftbquests.chapter.chapter_5.quests75.description4": "&6WARNING:&r It is advised you be careful, as the portal will always send you back from Mars to the Moon, meaning if you built the portal in the Overworld you may not have a way back anymore! Make sure to always chain Moon portals -> Mars portals.",
+
     "ftbquests.chapter.read_the_questbook.title": "Read the Questbook! (FAQ)",
     "ftbquests.chapter.read_the_questbook.quests0.title": "&6Vanilla Tools",
     "ftbquests.chapter.read_the_questbook.quests0.subtitle": "Use the Hephaestus tools for early-game instead!",
@@ -2918,14 +2926,13 @@
     "ftbquests.chapter.read_the_questbook.quests19.description6": "Liquid Bronze is locked behind &6Chapter 2&r.",
     "ftbquests.chapter.read_the_questbook.quests19.description8": "Steel is obtained at the end of &6Chapter 3&r.",
     "ftbquests.chapter.read_the_questbook.quests19.description10": "The final tier of barrel has been repurposed to &6Ostrum&r, obtained in &6Chapter 4&r.",
-	
-	"ftbquests.chapter.read_the_questbook.quests20.title": "10k Fluid Infinite Pools?",
-	"ftbquests.chapter.read_the_questbook.quests20.subtitle": "Gone!",
+    "ftbquests.chapter.read_the_questbook.quests20.title": "10k Fluid Infinite Pools?",
+    "ftbquests.chapter.read_the_questbook.quests20.subtitle": "Gone!",
     "ftbquests.chapter.read_the_questbook.quests20.description0": "10k Infinite Fluid Pools from Create have been disabled in favour of more traditional automation. All the usual fluids, like Lava, have multiple recipes using Create machinery. Check REI for these recipes.",
     "ftbquests.chapter.read_the_questbook.quests21.title": "How to FTBQuests",
-	"ftbquests.chapter.read_the_questbook.quests21.subtitle": "First time using a quest book?",
+    "ftbquests.chapter.read_the_questbook.quests21.subtitle": "First time using a quest book?",
     "ftbquests.chapter.read_the_questbook.quests21.description0": "Close this quest and hover your mouse to the left of the screen to open the chapter browser :)",
-    
+
     "ftbquests.chapter.the_trophy_room.title": "?) The Trophy Room",
     "ftbquests.chapter.the_trophy_room.quests0.title": "I automated",
     "ftbquests.chapter.the_trophy_room.quests0.description": "The Players were ever-cunning, they used anything to do everything.",
@@ -2954,6 +2961,7 @@
     "ftbquests.chapter.the_trophy_room.quests12.title": "The Final Treasure",
     "ftbquests.chapter.the_trophy_room.quests12.subtitle": "A Souvenir",
     "ftbquests.chapter.the_trophy_room.quests12.description": "A friend; a memoir of all the good times.",
+
     "ftbquests.reward_tables.chapter_05.title": "Chapter 0.5",
     "ftbquests.reward_tables.chapter_1.title": "Chapter 1",
     "ftbquests.reward_tables.chapter_2.title": "Chapter 2",
@@ -2962,7 +2970,7 @@
     "ftbquests.reward_tables.chapter_4.title": "Loot Crate: Chapter 4",
     "ftbquests.reward_tables.chapter_5.title": "Loot Crate: Chapter 5-6",
 
-	"category.starei.channeling_transformer": "Channeling",
+    "category.starei.channeling_transformer": "Channeling",
     "category.starei.distillery": "Distilling",
     "category.starei.electrolyzer": "Electrolyzing",
     "category.starei.gas_mixer": "Gas Mixing",
