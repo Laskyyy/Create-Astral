@@ -667,8 +667,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						Rotation: "NONE"
 						File: "[AstralExamples] Distillery.nbt"
+						Rotation: "NONE"
 						Mirror: "NONE"
 						Bounds: [
 							5
@@ -1389,7 +1389,7 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_5.quests40.title}"
-			x: 11.5d
+			x: 14.5d
 			y: -4.5d
 			subtitle: "{ftbquests.chapter.chapter_5.quests40.subtitle}"
 			description: [
@@ -1436,7 +1436,6 @@
 			]
 			dependencies: [
 				"4167177A752546A3"
-				"2799577FF58D10A3"
 				"673DC1F22D2F790D"
 			]
 			size: 2.0d
@@ -1502,7 +1501,10 @@
 				""
 				"{ftbquests.chapter.chapter_5.quests42.description2}"
 			]
-			dependencies: ["0BA5C147C098C5A8"]
+			dependencies: [
+				"0BA5C147C098C5A8"
+				"2799577FF58D10A3"
+			]
 			min_required_tasks: 2
 			id: "07C60C1DB44579B9"
 			tasks: [
@@ -1551,7 +1553,7 @@
 				""
 			]
 			hide_dependency_lines: true
-			dependencies: ["27B0EA62812564DD"]
+			dependencies: ["253F29A00B4EA050"]
 			optional: true
 			id: "7C85D3BB93C02CD7"
 			tasks: [{
@@ -2151,7 +2153,7 @@
 					fluid: "techreborn:silicon"
 				}
 			}
-			x: 14.0d
+			x: 14.5d
 			y: -6.0d
 			subtitle: "{ftbquests.chapter.chapter_5.quests68.subtitle}"
 			description: [
