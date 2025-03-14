@@ -667,8 +667,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						File: "[AstralExamples] Distillery.nbt"
 						Rotation: "NONE"
+						File: "[AstralExamples] Distillery.nbt"
 						Mirror: "NONE"
 						Bounds: [
 							5
@@ -1434,10 +1434,7 @@
 				""
 				"{ftbquests.chapter.chapter_5.quests41.description6}"
 			]
-			dependencies: [
-				"4167177A752546A3"
-				"673DC1F22D2F790D"
-			]
+			dependencies: ["673DC1F22D2F790D"]
 			size: 2.0d
 			min_required_tasks: 6
 			id: "0BA5C147C098C5A8"
@@ -1504,6 +1501,7 @@
 			dependencies: [
 				"0BA5C147C098C5A8"
 				"2799577FF58D10A3"
+				"4167177A752546A3"
 			]
 			min_required_tasks: 2
 			id: "07C60C1DB44579B9"
