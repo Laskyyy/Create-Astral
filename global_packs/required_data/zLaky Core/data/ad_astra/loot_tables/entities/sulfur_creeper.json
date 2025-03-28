@@ -29,6 +29,24 @@
                 }
             ],
             "rolls": 1.0
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "astralsignals:polyvinyl_sheet",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "killer",
+                            "predicate": {
+                                "type": "#minecraft:skeletons"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

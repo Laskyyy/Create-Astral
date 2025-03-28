@@ -1,10 +1,11 @@
 {
+    "type": "minecraft:entity",
     "pools": [
         {
             "rolls": 1,
             "entries": [
                 {
-                    "type": "item",
+                    "type": "minecraft:item",
                     "name": "minecraft:gunpowder",
                     "weight": 1,
                     "functions": [
@@ -20,6 +21,24 @@
                             "count": {
                                 "min": 0,
                                 "max": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "astralsignals:polyvinyl_sheet",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "killer",
+                            "predicate": {
+                                "type": "#minecraft:skeletons"
                             }
                         }
                     ]
