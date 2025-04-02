@@ -1632,4 +1632,2198 @@ onEvent("recipes", (event) => {
         )
         .transitionalItem("createastral:incomplete_blaze_head")
         .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            ["minecraft:small_amethyst_bud"],
+            ["minecraft:amethyst_shard"],
+            [
+                event.recipes.createFilling("minecraft:amethyst_shard", [
+                    "minecraft:amethyst_shard",
+                    { fluid: "minecraft:water", amount: BUCKET / 4 },
+                ]),
+                event.recipes.createFilling("minecraft:amethyst_shard", [
+                    "minecraft:amethyst_shard",
+                    { fluid: "kubejs:shimmer", amount: 10 * mB },
+                ]),
+                event.recipes.createFilling("minecraft:amethyst_shard", [
+                    "minecraft:amethyst_shard",
+                    { fluid: "minecraft:water", amount: BUCKET / 4 },
+                ]),
+                event.recipes.createFilling("minecraft:amethyst_shard", [
+                    "minecraft:amethyst_shard",
+                    { fluid: "kubejs:shimmer", amount: 10 * mB },
+                ]),
+            ]
+        )
+        .transitionalItem("minecraft:amethyst_shard")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            ["minecraft:medium_amethyst_bud"],
+            ["minecraft:small_amethyst_bud"],
+            [
+                event.recipes.createFilling("minecraft:small_amethyst_bud", [
+                    "minecraft:small_amethyst_bud",
+                    { fluid: "minecraft:water", amount: BUCKET / 4 },
+                ]),
+                event.recipes.createFilling("minecraft:small_amethyst_bud", [
+                    "minecraft:small_amethyst_bud",
+                    { fluid: "kubejs:shimmer", amount: 10 * mB },
+                ]),
+                event.recipes.createFilling("minecraft:small_amethyst_bud", [
+                    "minecraft:small_amethyst_bud",
+                    { fluid: "minecraft:water", amount: BUCKET / 4 },
+                ]),
+                event.recipes.createFilling("minecraft:small_amethyst_bud", [
+                    "minecraft:small_amethyst_bud",
+                    { fluid: "kubejs:shimmer", amount: 10 * mB },
+                ]),
+            ]
+        )
+        .transitionalItem("minecraft:small_amethyst_bud")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            ["minecraft:large_amethyst_bud"],
+            ["minecraft:medium_amethyst_bud"],
+            [
+                event.recipes.createFilling("minecraft:medium_amethyst_bud", [
+                    "minecraft:medium_amethyst_bud",
+                    { fluid: "minecraft:water", amount: BUCKET / 4 },
+                ]),
+                event.recipes.createFilling("minecraft:medium_amethyst_bud", [
+                    "minecraft:medium_amethyst_bud",
+                    { fluid: "kubejs:shimmer", amount: 10 * mB },
+                ]),
+                event.recipes.createFilling("minecraft:medium_amethyst_bud", [
+                    "minecraft:medium_amethyst_bud",
+                    { fluid: "minecraft:water", amount: BUCKET / 4 },
+                ]),
+                event.recipes.createFilling("minecraft:medium_amethyst_bud", [
+                    "minecraft:medium_amethyst_bud",
+                    { fluid: "kubejs:shimmer", amount: 10 * mB },
+                ]),
+            ]
+        )
+        .transitionalItem("minecraft:medium_amethyst_bud")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            ["minecraft:amethyst_cluster"],
+            ["minecraft:large_amethyst_bud"],
+            [
+                event.recipes.createFilling("minecraft:large_amethyst_bud", [
+                    "minecraft:large_amethyst_bud",
+                    { fluid: "minecraft:water", amount: BUCKET / 4 },
+                ]),
+                event.recipes.createFilling("minecraft:large_amethyst_bud", [
+                    "minecraft:large_amethyst_bud",
+                    { fluid: "kubejs:shimmer", amount: 10 * mB },
+                ]),
+                event.recipes.createFilling("minecraft:large_amethyst_bud", [
+                    "minecraft:large_amethyst_bud",
+                    { fluid: "minecraft:water", amount: BUCKET / 4 },
+                ]),
+                event.recipes.createFilling("minecraft:large_amethyst_bud", [
+                    "minecraft:large_amethyst_bud",
+                    { fluid: "kubejs:shimmer", amount: 10 * mB },
+                ]),
+            ]
+        )
+        .transitionalItem("minecraft:large_amethyst_bud")
+        .loops(1);
+
+    enchantBooks(event);
 });
+
+function enchantBooks(event) {
+    //! enchantment.js
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "minecraft:golden_sword",
+                    "minecraft:golden_sword",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "tconstruct:gold_reinforcement",
+                    "tconstruct:gold_reinforcement",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "tconstruct:iron_reinforcement",
+                    "tconstruct:iron_reinforcement",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:mending",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "tconstruct:slimesteel_reinforcement",
+                    "tconstruct:slimesteel_reinforcement",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "tconstruct:seared_reinforcement",
+                    "tconstruct:seared_reinforcement",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "tconstruct:emerald_reinforcement",
+                    "tconstruct:emerald_reinforcement",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "tconstruct:bronze_reinforcement",
+                    "tconstruct:bronze_reinforcement",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:thorns",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "tconstruct:cobalt_reinforcement",
+                    "tconstruct:cobalt_reinforcement",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "dustrial_decor:wrapped_chains",
+                    "dustrial_decor:wrapped_chains",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "minecraft:soul_lantern",
+                    "minecraft:soul_lantern",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "techreborn:silver_plate",
+                    "techreborn:silver_plate",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:silk_touch",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "tconstruct:silky_cloth",
+                    "tconstruct:silky_cloth",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:respiration",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "create:copper_diving_helmet",
+                    "create:copper_diving_helmet",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:lever", "minecraft:lever"]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:punch",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", ["create:brass_hand", "create:brass_hand"]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "minecraft:gunpowder",
+                    "minecraft:gunpowder",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:piston", "minecraft:piston"]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:multishot",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:crossbow", "minecraft:crossbow"]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:looting",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "ad_astra:calorite_ingot",
+                    "ad_astra:calorite_ingot",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:knockback",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:tnt", "minecraft:tnt"]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:infinity",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "minecraft:spectral_arrow",
+                    "minecraft:spectral_arrow",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "minecraft:spectral_arrow",
+                    "minecraft:spectral_arrow",
+                ]), // Why? Just to fug wit ppl
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:frost_walker",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:blue_ice", "minecraft:blue_ice"]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fortune",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "tconstruct:jeweled_apple",
+                    "tconstruct:jeweled_apple",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:flame",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "minecraft:blaze_powder",
+                    "minecraft:blaze_powder",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_aspect",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "minecraft:blaze_rod",
+                    "minecraft:blaze_rod",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "minecraft:white_bed",
+                    "minecraft:white_bed",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    Item.of("minecraft:potion", '{Potion:"minecraft:swiftness"}'),
+                    Item.of("minecraft:potion", '{Potion:"minecraft:swiftness"}'),
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:depth_strider",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "create:copper_diving_boots",
+                    "create:copper_diving_boots",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:aqua_affinity",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "create:copper_backtank",
+                    "create:copper_backtank",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "minecraft:spider_eye",
+                    "minecraft:spider_eye",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:lure",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "farmersdelight:cod_slice",
+                    "farmersdelight:cod_slice",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "minecraft:golden_apple",
+                    "minecraft:golden_apple",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "minecraft:sea_lantern",
+                    "minecraft:sea_lantern",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:riptide",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "minecraft:dark_prismarine",
+                    "minecraft:dark_prismarine",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "minecraft:prismarine_shard",
+                    "minecraft:prismarine_shard",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes.createSequencedAssembly(
+        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:channeling",lvl:1s}]}'),
+        ["minecraft:book"],
+        [
+            event.recipes.createDeploying("minecraft:enchanted_book", [
+                "minecraft:lightning_rod",
+                "minecraft:lightning_rod",
+            ]),
+            event.recipes.createDeploying("minecraft:enchanted_book", [
+                "xpcrystals:xp_crystal",
+                "xpcrystals:xp_crystal",
+            ]), // insert crystal here / def something that could be changed
+            event.recipes.createFilling("minecraft:enchanted_book", [
+                "minecraft:enchanted_book",
+                { fluid: "xpcrystals:soul", amount: BUCKET },
+            ]), //gathering the souls / def something that could be changed
+            event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+        ]
+    );
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "farmersdelight:iron_knife",
+                    "farmersdelight:iron_knife",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"create:capacity",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "ad_astra:oxygen_bucket",
+                    "ad_astra:oxygen_bucket",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"create:potato_recovery",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "ad_astra:oxygen_bucket",
+                    "ad_astra:oxygen_bucket",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("xpcrystals:xp_boost_potion"),
+            ["minecraft:glass_bottle"],
+            [
+                event.recipes.createFilling("minecraft:glass_bottle", [
+                    "minecraft:glass_bottle",
+                    {
+                        fluid: "kubejs:liquid_xp_nuggies",
+                        amount: BUCKET / 3,
+                    },
+                ]),
+                event.recipes.createFilling("minecraft:glass_bottle", [
+                    "minecraft:glass_bottle",
+                    {
+                        fluid: "xpcrystals:soul",
+                        amount: BUCKET / 3,
+                    },
+                ]),
+                event.recipes.createFilling("minecraft:glass_bottle", [
+                    "minecraft:glass_bottle",
+                    {
+                        fluid: "kubejs:shimmer",
+                        amount: BUCKET / 3,
+                    },
+                ]),
+            ]
+        )
+        .transitionalItem("minecraft:glass_bottle")
+        .loops(1);
+
+    //! dungeonsenchants.js
+
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:accelerate",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "minecraft:rabbit_foot",
+                    "minecraft:rabbit_foot",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:ambush",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:leather", "minecraft:leather"]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes.createSequencedAssembly(
+        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:anima_conduit",lvl:1s}]}'),
+        ["minecraft:book"],
+        [
+            event.recipes.createDeploying("minecraft:enchanted_book", [
+                "astraladditions:shimmer_heart",
+                "astraladditions:shimmer_heart",
+            ]),
+            event.recipes.createDeploying("minecraft:enchanted_book", [
+                "xpcrystals:xp_crystal",
+                "xpcrystals:xp_crystal",
+            ]), // insert crystal here / def something that could be changed
+            event.recipes.createFilling("minecraft:enchanted_book", [
+                "minecraft:enchanted_book",
+                { fluid: "xpcrystals:soul", amount: BUCKET },
+            ]), //gathering the souls / def something that could be changed
+            event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+        ]
+    );
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:bonus_shot",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "createbigcannons:flak_autocannon_round",
+                    "createbigcannons:flak_autocannon_round",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:burst_bowstring",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "doodads:slimey_shoes",
+                    "doodads:slimey_shoes",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:chain_reaction",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "createbigcannons:shot_balls",
+                    "createbigcannons:shot_balls",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:chains",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:chain", "minecraft:chain"]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:charge",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "create:sturdy_sheet",
+                    "create:sturdy_sheet",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:cobweb_shot",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:cobweb", "minecraft:cobweb"]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:committed",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "techreborn:diamond_saw_blade",
+                    "techreborn:diamond_saw_blade",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:critical_hit",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "minecraft:nether_star",
+                    "minecraft:nether_star",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:dipping_poison",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "minecraft:pufferfish",
+                    "minecraft:pufferfish",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:dynamo",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "tconstruct:slime_boots",
+                    "tconstruct:slime_boots",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:echo",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:jukebox", "minecraft:jukebox"]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:enigma_resonator",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "tconstruct:sky_slime_crystal",
+                    "tconstruct:sky_slime_crystal",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:exploding",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "createbigcannons:he_shell",
+                    "createbigcannons:he_shell",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:freezing",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", ["ad_astra:ice_shard", "ad_astra:ice_shard"]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:fuse_shot",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "createbigcannons:impact_fuze",
+                    "createbigcannons:impact_fuze",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:gravity",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "create:weighted_ejector",
+                    "create:weighted_ejector",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:guarding_strike",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:shield", "minecraft:shield"]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:fuse_shot",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "createbigcannons:impact_fuze",
+                    "createbigcannons:impact_fuze",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:illagers_bane",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "minecraft:totem_of_undying",
+                    "minecraft:totem_of_undying",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:jungle_poison",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "minecraft:poisonous_potato",
+                    "minecraft:poisonous_potato",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:leeching",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "tconstruct:necrotic_bone",
+                    "tconstruct:necrotic_bone",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:levitation_shot",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "minecraft:phantom_membrane",
+                    "minecraft:phantom_membrane",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:overcharge",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "createbigcannons:nitropowder",
+                    "createbigcannons:nitropowder",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:leeching",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "tconstruct:necrotic_bone",
+                    "tconstruct:necrotic_bone",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:pain_cycle",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "tconstruct:bloodbone",
+                    "tconstruct:bloodbone",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:phantoms_mark",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "minecraft:glowstone",
+                    "minecraft:glowstone",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:poison_cloud",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "minecraft:spore_blossom",
+                    "minecraft:spore_blossom",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:prospector",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "tconstruct:emerald_reinforcement",
+                    "tconstruct:emerald_reinforcement",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:radiance",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "minecraft:glow_berries",
+                    "minecraft:glow_berries",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:rampaging",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "techreborn:overclocker_upgrade",
+                    "techreborn:overclocker_upgrade",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:refreshment",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "farmersdelight:melon_juice",
+                    "farmersdelight:melon_juice",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:ricochet",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "createbigcannons:recoil_spring",
+                    "createbigcannons:recoil_spring",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:replenish",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "automobility:launch_gel",
+                    "automobility:launch_gel",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:rushdown",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "automobility:dash_panel",
+                    "automobility:dash_panel",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:shadow_barb",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "createaddition:barbed_wire",
+                    "createaddition:barbed_wire",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:shared_pain",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "doodads:cactus_ring",
+                    "doodads:cactus_ring",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:shadow_shot",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "createbigcannons:solid_shot",
+                    "createbigcannons:solid_shot",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:shockwave",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "createbigcannons:shrapnel_shell",
+                    "createbigcannons:shrapnel_shell",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:smiting",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", ["yigd:grave", "yigd:grave"]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:soul_devourer",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "tconstruct:soulsteel_nugget",
+                    "tconstruct:soulsteel_nugget",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:soul_siphon",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:soul_compound",
+                    "xpcrystals:soul_compound",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:stunning",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", ["drinkbeer:beer_mug", "drinkbeer:beer_mug"]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:swirling",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "ae2:certus_quartz_crystal",
+                    "ae2:certus_quartz_crystal",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:tempo_theft",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "createastral:swift_andesite",
+                    "createastral:swift_andesite",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:thundering",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "minecraft:lightning_rod",
+                    "minecraft:lightning_rod",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:replenish",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "createbigcannons:recoil_spring",
+                    "createbigcannons:recoil_spring",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:weakening",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "minecraft:wither_rose",
+                    "minecraft:wither_rose",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:wild_rage",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "tconstruct:blood_slime_ball",
+                    "tconstruct:blood_slime_ball",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    //void stuffs
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:void_strike",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "create:refined_radiance",
+                    "create:refined_radiance",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:void_shot",lvl:1s}]}'),
+            ["minecraft:book"],
+            [
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "create:shadow_steel",
+                    "create:shadow_steel",
+                ]),
+                event.recipes.createDeploying("minecraft:enchanted_book", [
+                    "xpcrystals:xp_crystal",
+                    "xpcrystals:xp_crystal",
+                ]), // insert crystal here / def something that could be changed
+                event.recipes.createFilling("minecraft:enchanted_book", [
+                    "minecraft:enchanted_book",
+                    { fluid: "xpcrystals:soul", amount: BUCKET },
+                ]), //gathering the souls / def something that could be changed
+                event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
+            ]
+        )
+        .transitionalItem("minecraft:enchanted_book")
+        .loops(1);
+    event.recipes
+        .createSequencedAssembly(
+            Item.of("xpcrystals:xp_boost_potion"),
+            ["minecraft:glass_bottle"],
+            [
+                event.recipes.createFilling("minecraft:glass_bottle", [
+                    "minecraft:glass_bottle",
+                    {
+                        fluid: "kubejs:liquid_xp_nuggies",
+                        amount: BUCKET / 3,
+                    },
+                ]),
+                event.recipes.createFilling("minecraft:glass_bottle", [
+                    "minecraft:glass_bottle",
+                    {
+                        fluid: "xpcrystals:soul",
+                        amount: BUCKET / 3,
+                    },
+                ]),
+                event.recipes.createFilling("minecraft:glass_bottle", [
+                    "minecraft:glass_bottle",
+                    {
+                        fluid: "kubejs:shimmer",
+                        amount: BUCKET / 3,
+                    },
+                ]),
+            ]
+        )
+        .transitionalItem("minecraft:glass_bottle")
+        .loops(1);
+}

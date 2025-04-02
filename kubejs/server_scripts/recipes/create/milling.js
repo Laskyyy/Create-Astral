@@ -38,6 +38,7 @@ onEvent("recipes", (event) => {
         ["kubejs:broken_fragile_sheet_block", "16x create:powdered_obsidian", 1],
         ["kubejs:broken_fire_resistant_fragile_sheet_block", "16x create:powdered_obsidian", 1],
         ["astraladditions:shimmer_blaze_rod", "2x astraladditions:shimmer_blaze_powder", 1],
+        ["minecraft:amethyst_shard", "techreborn:amethyst_dust", 1],
     ].forEach((recipe) => {
         event.recipes.createMilling([Item.of(recipe[1]).withChance(recipe[2])], recipe[0]);
     });
@@ -102,6 +103,14 @@ onEvent("recipes", (event) => {
                 { item: "minecraft:glow_ink_sac", chance: 0.1 },
             ],
             processingTime: 100,
+        },
+        {
+            inputs: [{ item: "minecraft:soul_sand" }],
+            outputs: [
+                { item: "xpcrystals:soul_compound", chance: 1 },
+                { item: "xpcrystals:soul_compound", chance: 0.5 },
+                { item: "minecraft:soul_sand", chance: 0.25 },
+            ],
         },
         {
             inputs: [

@@ -568,6 +568,13 @@ onEvent("recipes", (event) => {
         },
         //dispenser recipe
         { output: "minecraft:dispenser" },
+
+        // xpcrystals
+        { output: "xpcrystals:crystal_broth" },
+        { output: "xpcrystals:sticky_crystal_pudding" },
+        { output: "xpcrystals:soul_bucket" },
+        { output: "xpcrystals:soul_compound" },
+        { output: "xpcrystals:xp_boost_potion" },
     ].forEach((recipe) => {
         event.remove(recipe);
     });

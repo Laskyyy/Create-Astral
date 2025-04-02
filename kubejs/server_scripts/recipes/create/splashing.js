@@ -99,7 +99,6 @@ onEvent("recipes", (event) => {
             input: "#ae2:smart_dense_cable",
             outputs: [["ae2:fluix_smart_dense_cable", 1]],
         },
-        // Green's bloodyfile.js stuff
         {
             input: "minecraft:cobblestone",
             outputs: [["minecraft:mossy_cobblestone", 1]], //easy mossy cobble for moss
@@ -107,6 +106,15 @@ onEvent("recipes", (event) => {
         {
             input: "minecraft:stone_bricks",
             outputs: [["minecraft:mossy_stone_bricks", 1]],
+        },
+        {
+            input: "techreborn:ashes_dust",
+            outputs: [
+                ["minecraft:gold_nugget", 0.2],
+                ["create:zinc_nugget", 0.225],
+                ["create:copper_nugget", 0.3],
+                ["techreborn:tin_nugget", 0.25],
+            ],
         },
     ].forEach((recipe) => {
         let cleanoutputs = [];

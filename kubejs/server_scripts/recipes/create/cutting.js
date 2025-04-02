@@ -59,4 +59,17 @@ onEvent("recipes", (event) => {
             });
         });
     });
+
+    // RandomUser240306's farmerscompat.js script
+    event.forEachRecipe({ type: "farmersdelight:cutting" }, (recipe) => {
+        let newList = Utils.newList();
+        recipe.json.get("result").forEach((e) => newList.push(e));
+        newList.reverse(); //prevents conflicts with existing cutting recipes (e.g. log stripping)
+        event.custom({
+            type: "create:cutting",
+            ingredients: recipe.json.get("ingredients"),
+            results: newList,
+            processingItem: 50,
+        });
+    });
 });

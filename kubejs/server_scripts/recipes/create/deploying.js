@@ -54,4 +54,11 @@ onEvent("recipes", (event) => {
     ].forEach((recipe) => {
         event.recipes.create.deploying([recipe.output], [recipe.basin_input, recipe.deployer_input]);
     });
+
+    // Cutting board integration
+    let knivesTag = "c:tools/knives";
+    event.forEachRecipe({ type: "farmersdelight:cutting", tool: { tag: knivesTag } }, (recipe) => {
+        let { originalRecipeIngredients, originalRecipeResult } = recipe;
+        event.recipes.create.deploying([originalRecipeResult], [originalRecipeIngredients, `#${knivesTag}`]);
+    });
 });

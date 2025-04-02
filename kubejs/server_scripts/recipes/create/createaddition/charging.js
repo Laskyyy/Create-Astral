@@ -25,6 +25,11 @@ onEvent("recipes", (event) => {
             output: ["yttr:neodymium_disc", 1],
             energy: 5000,
         },
+        {
+            input: ["minecraft:tuff", 1], // add a use for ashes, making tuff much more relevant if you can spare the power
+            output: ["techreborn:ashes_dust", 1],
+            energy: 10000,
+        },
     ].forEach((recipe) => {
         event.custom({
             type: "createaddition:charging",

@@ -200,6 +200,18 @@ onEvent("recipes", (event) => {
             fluid: "kubejs:frothy_pink_eggnog_fluid",
             amount: 250 * mB,
         },
+        {
+            input: "createaddition:cake_base_baked",
+            output: "xpcrystals:sticky_crystal_pudding",
+            fluid: "kubejs:liquid_xp_nuggies",
+            amount: BUCKET,
+        },
+        {
+            input: "minecraft:bowl",
+            output: "xpcrystals:crystal_broth",
+            fluid: "kubejs:liquid_xp_nuggies",
+            amount: BUCKET / 2,
+        },
     ].forEach((recipe) => {
         event.recipes.createFilling(recipe.output, [recipe.input, { fluid: recipe.fluid, amount: recipe.amount }]);
     });

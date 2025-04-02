@@ -1586,7 +1586,6 @@ onEvent("recipes", (event) => {
             heat: "superheated",
             time: 20,
         },
-        // Green's bloodyfile.js for meat stuff
         {
             output: { fluid: "tconstruct:blood", amount: BUCKET },
             input: [
@@ -1626,10 +1625,1729 @@ onEvent("recipes", (event) => {
             heat: "superheated",
             time: null, //Vegan BLOOD
         },
+        {
+            output: "8x techreborn:rubber",
+            input: ["3x techreborn:sap", "1x techreborn:sulfur_dust"],
+        },
+        {
+            output: "4x minecraft:coarse_dirt",
+            input: ["2x minecraft:dirt", "2x minecraft:gravel"], // infinte dirt premoon
+        },
+        {
+            output: { fluid: "kubejs:red_paste", amount: 300 * mB },
+            input: ["7x minecraft:sweet_berries", { fluid: "minecraft:water", amount: 500 * mB }], // red dye for crimsite premoon
+        },
+        {
+            output: { fluid: "minecraft:lava", amount: 125 * mB },
+            input: [
+                "1x techreborn:andesite_dust",
+                "1x minecraft:cobblestone",
+                { fluid: "minecraft:lava", amount: 50 * mB },
+            ],
+            heat: "",
+            time: null,
+        },
+        {
+            output: { fluid: "minecraft:lava", amount: 250 * mB },
+            input: [
+                "4x techreborn:andesite_dust",
+                "2x minecraft:cobblestone",
+                { fluid: "minecraft:lava", amount: 50 * mB },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: { fluid: "minecraft:lava", amount: 500 * mB },
+            input: ["4x techreborn:andesite_dust", "2x minecraft:netherrack"],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: { fluid: "kubejs:shimmer", amount: 250 * mB },
+            input: ["5x minecraft:amethyst_shard", "2x minecraft:glow_ink_sac"],
+            heat: "",
+            time: null,
+        },
+        {
+            output: { fluid: "kubejs:shimmer", amount: 500 * mB },
+            input: ["5x techreborn:amethyst_dust", "2x minecraft:glow_ink_sac"],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: { fluid: "kubejs:shimmer", amount: 1000 * mB },
+            input: ["2x techreborn:amethyst_dust", "1x minecraft:glow_ink_sac", "astraladditions:lune_shroom"],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:2s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:3s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:2s}]}'),
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:4s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:5s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:4s}]}'),
+                "createastral:experience_ingot",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:6s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:5s}]}'),
+                "create:experience_block",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET / 2 },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:7s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:6s}]}'),
+                "create:experience_block",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:2s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:3s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:4s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:5s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:4s}]}'),
+                "createastral:experience_ingot",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:2s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:3s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:4s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:5s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:4s}]}'),
+                "createastral:experience_ingot",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:6s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:5s}]}'),
+                "create:experience_block",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET / 2 },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:7s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:6s}]}'),
+                "create:experience_block",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:2s}]}'
+            ),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:3s}]}'
+            ),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:4s}]}'
+            ),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:5s}]}'
+            ),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:4s}]}'),
+                "createastral:experience_ingot",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:6s}]}'
+            ),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:5s}]}'),
+                "create:experience_block",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET / 2 },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:2s}]}'
+            ),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:3s}]}'
+            ),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:4s}]}'
+            ),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:5s}]}'
+            ),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:4s}]}'),
+                "createastral:experience_ingot",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:6s}]}'
+            ),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:5s}]}'),
+                "create:experience_block",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET / 2 },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:2s}]}'
+            ),
+            input: [
+                Item.of(
+                    "minecraft:enchanted_book",
+                    '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:1s}]}'
+                ),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:3s}]}'
+            ),
+            input: [
+                Item.of(
+                    "minecraft:enchanted_book",
+                    '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:2s}]}'
+                ),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:4s}]}'
+            ),
+            input: [
+                Item.of(
+                    "minecraft:enchanted_book",
+                    '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:3s}]}'
+                ),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:5s}]}'
+            ),
+            input: [
+                Item.of(
+                    "minecraft:enchanted_book",
+                    '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:4s}]}'
+                ),
+                "createastral:experience_ingot",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:6s}]}'
+            ),
+            input: [
+                Item.of(
+                    "minecraft:enchanted_book",
+                    '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:5s}]}'
+                ),
+                "create:experience_block",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET / 2 },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:thorns",lvl:2s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:thorns",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:thorns",lvl:3s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:thorns",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:thorns",lvl:4s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:thorns",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:thorns",lvl:5s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:thorns",lvl:4s}]}'),
+                "createastral:experience_ingot",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:2s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:3s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:4s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:5s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:4s}]}'),
+                "createastral:experience_ingot",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:2s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:3s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:4s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:5s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:4s}]}'),
+                "createastral:experience_ingot",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:2s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:3s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:4s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:5s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:4s}]}'),
+                "createastral:experience_ingot",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:6s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:5s}]}'),
+                "create:experience_block",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET / 2 },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:7s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:6s}]}'),
+                "create:experience_block",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:respiration",lvl:2s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:respiration",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:respiration",lvl:3s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:respiration",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:respiration",lvl:4s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:respiration",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:respiration",lvl:5s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:respiration",lvl:4s}]}'),
+                "createastral:experience_ingot",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:2s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:3s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:4s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:5s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:4s}]}'),
+                "createastral:experience_ingot",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:punch",lvl:2s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:punch",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:punch",lvl:3s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:punch",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:punch",lvl:4s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:punch",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:2s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:3s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:4s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:5s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:4s}]}'),
+                "createastral:experience_ingot",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:6s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:5s}]}'),
+                "create:experience_block",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET / 2 },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:7s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:6s}]}'),
+                "create:experience_block",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:2s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:3s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:4s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:5s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:4s}]}'),
+                "createastral:experience_ingot",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:6s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:5s}]}'),
+                "create:experience_block",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET / 2 },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:looting",lvl:2s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:looting",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:looting",lvl:3s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:looting",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:looting",lvl:4s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:looting",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:looting",lvl:5s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:looting",lvl:4s}]}'),
+                "createastral:experience_ingot",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:knockback",lvl:2s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:knockback",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:knockback",lvl:3s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:knockback",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:knockback",lvl:4s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:knockback",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:frost_walker",lvl:2s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:frost_walker",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:frost_walker",lvl:3s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:frost_walker",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:frost_walker",lvl:4s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:frost_walker",lvl:3s}]}'),
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fortune",lvl:2s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fortune",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fortune",lvl:3s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fortune",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fortune",lvl:4s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fortune",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fortune",lvl:5s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fortune",lvl:4s}]}'),
+                "createastral:experience_ingot",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_aspect",lvl:2s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_aspect",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_aspect",lvl:3s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_aspect",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_aspect",lvl:4s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_aspect",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:2s}]}'
+            ),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:3s}]}'
+            ),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:4s}]}'
+            ),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:5s}]}'
+            ),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:4s}]}'),
+                "createastral:experience_ingot",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:6s}]}'
+            ),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:5s}]}'),
+                "create:experience_block",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET / 2 },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:2s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:3s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:4s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:5s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:4s}]}'),
+                "createastral:experience_ingot",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:6s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:5s}]}'),
+                "create:experience_block",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET / 2 },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:7s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:6s}]}'),
+                "create:experience_block",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:depth_strider",lvl:2s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:depth_strider",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:depth_strider",lvl:3s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:depth_strider",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:2s}]}'
+            ),
+            input: [
+                Item.of(
+                    "minecraft:enchanted_book",
+                    '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:1s}]}'
+                ),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:3s}]}'
+            ),
+            input: [
+                Item.of(
+                    "minecraft:enchanted_book",
+                    '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:2s}]}'
+                ),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:4s}]}'
+            ),
+            input: [
+                Item.of(
+                    "minecraft:enchanted_book",
+                    '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:3s}]}'
+                ),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:5s}]}'
+            ),
+            input: [
+                Item.of(
+                    "minecraft:enchanted_book",
+                    '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:4s}]}'
+                ),
+                "createastral:experience_ingot",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:6s}]}'
+            ),
+            input: [
+                Item.of(
+                    "minecraft:enchanted_book",
+                    '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:5s}]}'
+                ),
+                "create:experience_block",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET / 2 },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:7s}]}'
+            ),
+            input: [
+                Item.of(
+                    "minecraft:enchanted_book",
+                    '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:6s}]}'
+                ),
+                "create:experience_block",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:lure",lvl:2s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:lure",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:lure",lvl:3s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:lure",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:lure",lvl:4s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:lure",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:lure",lvl:5s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:lure",lvl:4s}]}'),
+                "createastral:experience_ingot",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:2s}]}'
+            ),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:3s}]}'
+            ),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:4s}]}'
+            ),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:5s}]}'
+            ),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:4s}]}'),
+                "createastral:experience_ingot",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:2s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:3s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:4s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:5s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:4s}]}'),
+                "createastral:experience_ingot",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:riptide",lvl:2s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:riptide",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:riptide",lvl:3s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:riptide",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:riptide",lvl:4s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:riptide",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:riptide",lvl:5s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:riptide",lvl:4s}]}'),
+                "createastral:experience_ingot",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:2s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:3s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:4s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:5s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:4s}]}'),
+                "createastral:experience_ingot",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:6s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:5s}]}'),
+                "create:experience_block",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET / 2 },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:7s}]}'),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:6s}]}'),
+                "create:experience_block",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:2s}]}'
+            ),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:1s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 3 * NUGGET },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:3s}]}'
+            ),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:2s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+                { fluid: "kubejs:shimmer", amount: BUCKET },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:4s}]}'
+            ),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:3s}]}'),
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 125 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: Item.of(
+                "minecraft:enchanted_book",
+                '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:5s}]}'
+            ),
+            input: [
+                Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:4s}]}'),
+                "createastral:experience_ingot",
+                { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+                { fluid: "kubejs:hellfire", amount: 250 * mB },
+            ],
+            heat: "superheated",
+            time: null,
+        },
+        {
+            output: { fluid: "kubejs:liquid_xp_nuggies", amount: 1000 },
+            input: ["create:experience_nugget"],
+            heat: "heated",
+            time: 10,
+        },
+        {
+            output: { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+            input: ["createastral:experience_ingot"],
+            heat: "heated",
+            time: 100,
+        },
+        {
+            output: { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
+            input: ["create:experience_block"],
+            heat: "heated",
+            time: 1000,
+        },
+        {
+            output: { fluid: "kubejs:liquid_xp_nuggies", amount: 2000 },
+            input: ["xpcrystals:xp_crystal"],
+            heat: "heated",
+            time: 12,
+        },
+        {
+            output: {
+                fluid: "tconstruct:liquid_soul",
+                amount: 250 * mB,
+            },
+            input: ["xpcrystals:soul_compound"],
+            heat: "heated",
+            time: 30,
+        },
+        {
+            output: {
+                fluid: "tconstruct:liquid_soul",
+                amount: 250 * mB,
+            },
+            input: ["xpcrystals:soul_compound", { fluid: "minecraft:water", amount: 125 * mB }],
+            heat: "heated",
+            time: 25,
+        },
+        {
+            output: { fluid: "xpcrystals:soul", amount: 250 * mB },
+            input: { fluid: "tconstruct:liquid_soul", amount: 250 * mB },
+            heat: "",
+            time: 25,
+        },
     ].forEach((recipe) => {
         event.recipes
             .createMixing(recipe.output, recipe.input)
             .heatRequirement(recipe.heat ?? "")
             .processingTime(recipe.time ?? 100);
+    });
+
+    //! Max Norfolk's flowers.js
+    /// Array format: [flower, dye color]
+    [
+        ["minecraft:dandelion", "minecraft:yellow_dye"],
+        ["minecraft:poppy", "minecraft:red_dye"],
+        ["minecraft:blue_orchid", "minecraft:light_blue_dye"],
+        ["minecraft:allium", "minecraft:magenta_dye"],
+        ["minecraft:azure_bluet", "minecraft:light_gray_dye"],
+        ["minecraft:red_tulip", "minecraft:red_dye"],
+        ["minecraft:orange_tulip", "minecraft:orange_dye"],
+        ["minecraft:white_tulip", "minecraft:white_dye"],
+        ["minecraft:pink_tulip", "minecraft:pink_dye"],
+        ["minecraft:oxeye_daisy", "minecraft:light_gray_dye"],
+        ["minecraft:cornflower", "minecraft:blue_dye"],
+        ["minecraft:lily_of_the_valley", "minecraft:white_dye"],
+    ].forEach((recipe) => {
+        event.recipes
+            .createMixing(recipe[0], [
+                recipe[1],
+                "minecraft:dead_bush",
+                "create:tree_fertilizer",
+                { fluid: "kubejs:shimmer", amount: INGOT },
+            ])
+            .processingTime(50);
+    });
+
+    /// Array format: [2 tall flower, 1 tall flower]
+    [
+        ["minecraft:sunflower", "minecraft:dandelion"],
+        ["minecraft:lilac", "minecraft:allium"],
+        ["minecraft:rose_bush", "minecraft:poppy"],
+        ["minecraft:peony", "minecraft:pink_tulip"],
+        ["farmersdelight:wild_cabbages", "farmersdelight:cabbage"],
+        ["farmersdelight:wild_onions", "farmersdelight:onion"],
+        ["farmersdelight:wild_tomatoes", "farmersdelight:tomato"],
+        ["farmersdelight:wild_carrots", "minecraft:carrot"],
+        ["farmersdelight:wild_potatoes", "minecraft:potato"],
+        ["farmersdelight:wild_beetroots", "minecraft:beetroot"],
+        ["farmersdelight:wild_rice", "farmersdelight:rice"],
+    ].forEach((recipe) => {
+        event.recipes
+            .createMixing(recipe[0], [
+                "2x " + recipe[1],
+                "2x create:tree_fertilizer",
+                { fluid: "kubejs:shimmer", amount: 2 * INGOT },
+            ])
+            .processingTime(50);
+    });
+
+    //! RandomUser240306's farmerscompat.js mixing recipes
+    event.forEachRecipe({ type: "farmersdelight:cooking" }, (recipe) => {
+        let outputItem = recipe.getOriginalRecipeResult().getId().split(":")[1];
+        let inputItems = recipe.json.get("ingredients").deepCopy();
+        if (outputItem == "cabbage_rolls") return; //too few ingredients to add recipe for
+
+        let containers = {
+            "minecraft:glass_bottle": ["hot_cocoa", "apple_cider", "glow_berry_custard"],
+            "minecraft:pumpkin": ["stuffed_pumpkin_block"],
+            "#c:dough": ["dumplings"],
+        };
+
+        let container = Object.keys(containers).find((key) => containers[key].includes(outputItem)) ?? "minecraft:bowl";
+
+        for (let i = 0; i < inputItems.size(); i++) {
+            if (inputItems.get(i).getClass() == "class com.google.gson.JsonObject") {
+                if (inputItems.get(i).has("item")) {
+                    if (inputItems.get(i).get("item").toString().replaceAll('"', "") == "farmersdelight:tomato_sauce") {
+                        let JsonObject = java("com.google.gson.JsonObject");
+                        let tomato_sauce_fluid_ingredient = new JsonObject();
+                        tomato_sauce_fluid_ingredient.add("fluid", "kubejs:tomato_sauce_fluid");
+                        tomato_sauce_fluid_ingredient.add("amount", BUCKET / 4);
+                        inputItems.set(i, tomato_sauce_fluid_ingredient);
+                    }
+                } else {
+                    if (inputItems.get(i).has("tag")) {
+                        if (inputItems.get(i).get("tag").toString().replaceAll('"', "") == "c:dough") {
+                            inputItems.remove(inputItems.get(i)); //removes dough from dumpling recipe
+                        } else if (inputItems.get(i).get("tag").toString().replaceAll('"', "") == "c:milk") {
+                            let JsonObject = java("com.google.gson.JsonObject");
+                            let milk = new JsonObject();
+                            milk.add("fluid", "milk:still_milk");
+                            milk.add("amount", BUCKET / 4);
+                            inputItems.set(i, milk);
+                        }
+                    }
+                }
+            }
+        }
+        event.recipes
+            .createMixing(
+                {
+                    fluid: "kubejs:" + outputItem + "_fluid",
+                    amount: BUCKET / 4,
+                },
+                inputItems
+            )
+            .heatRequirement("heated")
+            .processingTime(100);
+
+        event.recipes.createFilling(recipe.getOriginalRecipeResult(), [
+            container,
+            {
+                fluid: "kubejs:" + outputItem + "_fluid",
+                amount: BUCKET / 4,
+            },
+        ]);
     });
 });
