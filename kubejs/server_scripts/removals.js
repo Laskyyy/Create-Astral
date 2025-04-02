@@ -153,7 +153,7 @@ onEvent("recipes", (event) => {
             output: "techreborn:nak_coolant_cell_60k",
         },
         { id: "techreborn:crafting_table/paper" },
-        {output: "techreborn:block_placer"},
+        { output: "techreborn:block_placer" },
         //Create
         { output: "create:track" },
         { output: "create:blaze_cake" },
@@ -186,7 +186,6 @@ onEvent("recipes", (event) => {
             output: "create:experience_nugget",
             input: "create:experience_block",
         },
-
 
         { type: "create:milling", output: "minecraft:gunpowder" },
         { type: "create:milling", output: "minecraft:flint" },
@@ -477,7 +476,7 @@ onEvent("recipes", (event) => {
         { output: "buildinggadgets:gadget_exchanging" },
 
         // Yttr
-        { type: "yttr:centrifuging", input: "minecraft:coal"},
+        { type: "yttr:centrifuging", input: "minecraft:coal" },
         { output: "yttr:chute" },
         { output: "yttr:rafter" },
         { output: "yttr:centrifuge" },
@@ -486,6 +485,7 @@ onEvent("recipes", (event) => {
         { output: "yttr:levitation_chamber" },
         { output: "yttr:skeletal_sorter_right_handed" },
         { output: "yttr:skeletal_sorter_left_handed" },
+        { output: "yttr:rifle" },
         { output: "yttr:rifle_reinforced" },
         { output: "yttr:rifle_overclocked" },
         { output: "yttr:shifter" },
@@ -595,10 +595,7 @@ onEvent("recipes", (event) => {
     colors.forEach((color) => event.remove({ output: `yttr:${color}_project_table` }));
 
     // Define the array of materials
-    const materials = [
-        "techreborn:bronze",
-        "techreborn:silver",
-    ];
+    const materials = ["techreborn:bronze", "techreborn:silver"];
 
     // Define a function to remove all recipes with a given material
     function removeRecipes(material) {
