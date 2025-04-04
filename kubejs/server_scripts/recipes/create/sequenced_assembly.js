@@ -272,6 +272,27 @@ onEvent("recipes", (event) => {
         loops: 6,
     });
 
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // output
+                Item.of("astralfoods:shimmered_rabbit_stew").withChance(1), // begin
+            ],
+            "minecraft:bowl",
+            [
+                // input
+                event.recipes.createDeploying("minecraft:bowl", ["minecraft:bowl", "astralfoods:seared_potato"]),
+                event.recipes.createDeploying("minecraft:bowl", ["minecraft:bowl", "minecraft:cooked_rabbit"]),
+
+                event.recipes.createFilling("minecraft:bowl", [
+                    "minecraft:bowl",
+                    { fluid: "kubejs:shimmer", amount: BUCKET },
+                ]),
+            ]
+        )
+        .transitionalItem("minecraft:bowl")
+        .loops(1);
+
     function biomassSequence(event) {
         var transitional_c_plantball = "techreborn:plantball";
         event.recipes

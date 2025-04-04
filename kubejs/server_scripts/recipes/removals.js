@@ -575,6 +575,9 @@ onEvent("recipes", (event) => {
         { output: "xpcrystals:soul_bucket" },
         { output: "xpcrystals:soul_compound" },
         { output: "xpcrystals:xp_boost_potion" },
+
+        // vinery
+        { output: "vinery:wine_rack_1" },
     ].forEach((recipe) => {
         event.remove(recipe);
     });

@@ -1,4 +1,9 @@
 onEvent("entity.loot_tables", (event) => {
+    vinery(event);
+});
+
+// Taken from the old vinery.js file
+function vinery(event) {
     event.addEntity("vinery:wandering_winemaker", (table) => {
         table.addPool((pool) => {
             pool.rolls = 1;
@@ -12,18 +17,4 @@ onEvent("entity.loot_tables", (event) => {
             pool.addItem("vinery:apple_pie", 2);
         });
     });
-});
-
-onEvent("recipes", (event) => {
-    event.remove({ output: "vinery:wine_rack_1" });
-
-    event.shaped("vinery:wine_rack_1", ["PSP", "STS", "PSP"], {
-        P: "#planks",
-        S: "#wooden_slabs",
-        T: "#wooden_trapdoors",
-    });
-
-    event.shapeless("1x vinery:red_grape_seeds", ["vinery:red_grape"])
-    event.shapeless("1x vinery:white_grape_seeds", ["vinery:white_grape"])
-
-});
+}

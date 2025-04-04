@@ -1,4 +1,58 @@
 onEvent("item.tags", (event) => {
+    logTags(event);
+    backpackTags(event);
+
+    event.add("c:stripped_logs", "vinery:stripped_cherry_log");
+    event.add("c:stripped_logs", "vinery:stripped_old_cherry_log");
+    event.add("c:stripped_logs", "techreborn:rubber_log_stripped");
+    event.add("c:stripped_logs", "ad_astra:stripped_glacian_log");
+
+    event.add("c:slimeballs", "createastral:synthetic_slime");
+    event.add("tconstruct:slime_block", "createastral:synthetic_slime_block");
+
+    event.add("c:raw_materials/cobalt", "createastral:crushed_raw_cobalt");
+
+    event.add("c:plates/tin", "techreborn:tin_plate");
+
+    [["create:zinc_nugget", "techreborn:tin_nugget", "minecraft:iron_nugget"]].forEach((nugget) => {
+        event.add("create:alloy_nuggets", nugget);
+    });
+
+    [
+        "techreborn:storage_buffer",
+        "techreborn:crude_storage_unit",
+        "techreborn:basic_storage_unit",
+        "techreborn:advanced_storage_unit",
+        "techreborn:industrial_storage_unit",
+        "techreborn:quantum_storage_unit",
+    ].forEach((item, index) => {
+        for (let i = 5; i >= index; i--) event.add("createastral:storage_unit_" + i, item);
+    });
+
+    [
+        "create:fluid_tank",
+        "techreborn:basic_tank_unit",
+        "techreborn:advanced_tank_unit",
+        "techreborn:industrial_tank_unit",
+        "techreborn:quantum_tank_unit",
+    ].forEach((item, index) => {
+        for (let i = 5; i >= index; i--) event.add("createastral:tank_unit_" + i, item);
+    });
+
+    [
+        "astraladditions:ring_gold_cast",
+        "tconstruct:gold_platform", //Never add anything here with a melting value below a nugget, thx
+    ].forEach((item, index) => {
+        event.add("tconstruct:casts", item);
+        event.add("tconstruct:casts/gold", item);
+        event.add("tconstruct:casts/multi_use", item);
+        event.add("tconstruct:patterns", item);
+        event.add("tconstruct:patterns/reusable", item);
+    });
+});
+
+// Taken from the old logs.js file
+function logTags(event) {
     // Oak
     event.add("createastral:barked_oak_logs", "minecraft:oak_log");
     event.add("createastral:barked_oak_logs", "minecraft:oak_wood");
@@ -85,4 +139,38 @@ onEvent("item.tags", (event) => {
     event.add("createastral:stripped_cherry_logs", "vinery:stripped_cherry_wood");
     event.add("createastral:stripped_cherry_logs", "vinery:stripped_old_cherry_log");
     event.add("createastral:stripped_cherry_logs", "vinery:stripped_old_cherry_wood");
-});
+}
+
+// Taken from the old backpack.js file
+function backpackTags(event) {
+    [
+        "tconstruct:pickaxe",
+        "tconstruct:sledge_hammer",
+        "tconstruct:vein_hammer",
+        "tconstruct:mattock",
+        "tconstruct:pickadze",
+        "tconstruct:excavator",
+        "tconstruct:hand_axe",
+        "tconstruct:broad_axe",
+        "tconstruct:kama",
+        "tconstruct:scythe",
+        "tconstruct:dagger",
+        "tconstruct:sword",
+        "tconstruct:cleaver",
+        "#tconstruct:slimeslings",
+        "#c:wrenches",
+        "ad_astra:wrench",
+        "catwalksinc:wrench",
+        "techreborn:wrench",
+        "techreborn:electric_treetap",
+        "techreborn:painting_tool",
+        "gearreborn:stun_gun",
+        "automobility:crowbar",
+        "doodads:slingshot",
+        "doodads:paintbrush",
+        "doodads:glare_staff",
+        "create:super_glue",
+    ].forEach((item) => {
+        event.add("travelersbackpack:acceptable_tools", item);
+    });
+}

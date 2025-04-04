@@ -1,476 +1,22 @@
-// constants
-
-const BUCKET = 81000;
-const INGOT = 9000;
-const NUGGET = 1000;
-const GEM = 8100;
-const mB = 81;
-
-// priority: 0
-
-settings.logAddedRecipes = false;
-settings.logRemovedRecipes = false;
-settings.logSkippedRecipes = false;
-settings.logErroringRecipes = false;
-
-onEvent("tags.blocks", (event) => {
-    event.remove("minecraft:needs_iron_tool", "minecraft:diamond_ore");
-    event.remove("minecraft:needs_iron_tool", "minecraft:deepslate_diamond_ore");
-    event.add("minecraft:needs_diamond_tool", "minecraft:diamond_ore");
-    event.add("minecraft:needs_diamond_tool", "minecraft:deepslate_diamond_ore");
-});
-
-onEvent("item.tags", (event) => {
-    event.add("c:stripped_logs", "vinery:stripped_cherry_log");
-    event.add("c:stripped_logs", "vinery:stripped_old_cherry_log");
-    event.add("c:stripped_logs", "techreborn:rubber_log_stripped");
-    event.add("c:stripped_logs", "ad_astra:stripped_glacian_log");
-
-    event.add("c:plates/tin", "techreborn:tin_plate");
-});
-
 // Farmer's Delight cutting board changes
-function farmersDelightCuttingChanges(event) {
-    // Tech Reborn Rubber Log
-    event.custom({
-        type: "farmersdelight:cutting",
-        ingredients: [{ item: "techreborn:rubber_log" }],
-        tool: {
-            type: "farmersdelight:tool",
-            tag: "c:tools/axes",
-        },
-        result: [{ item: "techreborn:rubber_log_stripped" }, { item: "farmersdelight:tree_bark" }],
-        sound: "minecraft:item.axe.strip",
-    });
+function farmersDelightCuttingChanges(event) {}
 
-    // Ad Astra Glacian Log
-    event.custom({
-        type: "farmersdelight:cutting",
-        ingredients: [{ item: "ad_astra:glacian_log" }],
-        tool: {
-            type: "farmersdelight:tool",
-            tag: "c:tools/axes",
-        },
-        result: [{ item: "ad_astra:stripped_glacian_log" }, { item: "farmersdelight:tree_bark" }],
-        sound: "minecraft:item.axe.strip",
-    });
+function farmersdelight(event) {}
 
-    // Tinkers' Construct Bloodshroom Log
-    event.custom({
-        type: "farmersdelight:cutting",
-        ingredients: [{ item: "tconstruct:bloodshroom_log" }],
-        tool: {
-            type: "farmersdelight:tool",
-            tag: "c:tools/axes",
-        },
-        result: [{ item: "tconstruct:stripped_bloodshroom_log" }, { item: "farmersdelight:tree_bark" }],
-        sound: "minecraft:item.axe.strip",
-    });
-
-    // Tinkers' Construct Greenheart Log
-    event.custom({
-        type: "farmersdelight:cutting",
-        ingredients: [{ item: "tconstruct:greenheart_log" }],
-        tool: {
-            type: "farmersdelight:tool",
-            tag: "c:tools/axes",
-        },
-        result: [{ item: "tconstruct:stripped_greenheart_log" }, { item: "farmersdelight:tree_bark" }],
-        sound: "minecraft:item.axe.strip",
-    });
-
-    // Tinkers' Construct Skyroot Log
-    event.custom({
-        type: "farmersdelight:cutting",
-        ingredients: [{ item: "tconstruct:skyroot_log" }],
-        tool: {
-            type: "farmersdelight:tool",
-            tag: "c:tools/axes",
-        },
-        result: [{ item: "tconstruct:stripped_skyroot_log" }, { item: "farmersdelight:tree_bark" }],
-        sound: "minecraft:item.axe.strip",
-    });
-
-    // Astral Foods section
-
-    event.custom({
-        type: "farmersdelight:cutting",
-        ingredients: [{ item: "ae2:singularity" }],
-        tool: {
-            type: "farmersdelight:tool",
-            tag: "c:tools/knives",
-        },
-        result: [{ item: "astralfoods:quantum_bites", count: 3 }],
-    });
-}
-
-function farmersdelight(event) {
-    event.custom({
-        type: "farmersdelight:cooking",
-        ingredients: [{ item: "createastral:astral_singularity" }],
-        result: { item: "astralfoods:astral_sauce" },
-        container: { item: "minecraft:bowl" },
-        experience: 10.0,
-        cookingtime: 360,
-    });
-
-    event.custom({
-        type: "farmersdelight:cooking",
-        ingredients: [
-            { item: "astralfoods:astral_sauce" },
-            { item: "astralfoods:quantum_bites" },
-            { item: "farmersdelight:raw_pasta" },
-        ],
-        result: { item: "astralfoods:quantum_pasta" },
-        experience: 8.0,
-        cookingtime: 300,
-    });
-    //yes, these recipes don't work. Please use the temp ones
-}
-
-function sequencedAssemblyCooking(event) {
-    event.recipes
-        .createSequencedAssembly(
-            [
-                // output
-                Item.of("astralfoods:shimmered_rabbit_stew").withChance(1), // begin
-            ],
-            "minecraft:bowl",
-            [
-                // input
-                event.recipes.createDeploying("minecraft:bowl", ["minecraft:bowl", "astralfoods:seared_potato"]),
-                event.recipes.createDeploying("minecraft:bowl", ["minecraft:bowl", "minecraft:cooked_rabbit"]),
-
-                event.recipes.createFilling("minecraft:bowl", [
-                    "minecraft:bowl",
-                    { fluid: "kubejs:shimmer", amount: BUCKET },
-                ]),
-            ]
-        )
-        .transitionalItem("minecraft:bowl")
-        .loops(1);
-}
-function astralAdditionsFood(event) {
-    event.custom({
-        type: "custommachinery:custom_machine",
-        machine: "astralgenerators:amalgamation_matrix",
-        time: 10,
-        requirements: [
-            {
-                type: "custommachinery:item",
-                item: "astralfoods:quantum_pasta",
-                mode: "input",
-                amount: 1,
-            },
-            {
-                type: "custommachinery:item",
-                item: "astralfoods:shimmered_apple",
-                mode: "input",
-                amount: 1,
-            },
-            {
-                type: "custommachinery:item",
-                item: "astralfoods:compressed_onion",
-                mode: "input",
-                amount: 1,
-            },
-            {
-                type: "custommachinery:item",
-                item: "astralfoods:shimmered_rabbit_stew",
-                mode: "input",
-                amount: 1,
-            },
-            {
-                type: "custommachinery:item",
-                item: "astralfoods:food_amalgamation",
-                mode: "output",
-                amount: 1,
-            },
-            {
-                type: "custommachinery:energy",
-                mode: "input",
-                amount: 20000,
-            },
-            {
-                type: "custommachinery:structure",
-                keys: {
-                    a: "techreborn:basic_machine_frame",
-                    b: "astralgenerators:superconducting_coil",
-                    c: "techreborn:advanced_machine_casing",
-                    d: "astralgenerators:convergence_core",
-                },
-                pattern: [
-                    ["aaaaa", "aaaaa", "aaaaa", "aaaaa", "aamaa"],
-                    ["aaaaa", "abbba", "abbba", "abbba", "aaaaa"],
-                    ["     ", " ccc ", " ccc ", " ccc ", "     "],
-                    ["     ", "     ", "  c  ", "     ", "     "],
-                    ["     ", "     ", "  d  ", "     ", "     "],
-                    ["     ", "     ", "  c  ", "     ", "     "],
-                    ["     ", " ccc ", " ccc ", " ccc ", "     "],
-                    ["     ", " bbb ", " bbb ", " bbb ", "     "],
-                    ["aaaaa", "aaaaa", "aaaaa", "aaaaa", "aaaaa"],
-                ],
-            },
-        ],
-    });
-
-    event.custom({
-        type: "astraladditions:desizer",
-        ingredients: [
-            { item: "farmersdelight:onion_crate" },
-            { item: "farmersdelight:onion_crate" },
-            { item: "farmersdelight:onion_crate" },
-            { item: "farmersdelight:onion_crate" },
-            { item: "farmersdelight:onion_crate" },
-            { item: "farmersdelight:onion_crate" },
-            { item: "farmersdelight:onion_crate" },
-            { item: "farmersdelight:onion_crate" },
-            { item: "farmersdelight:onion_crate" },
-
-            { item: "farmersdelight:onion_crate" },
-            { item: "farmersdelight:onion_crate" },
-            { item: "farmersdelight:onion_crate" },
-            { item: "farmersdelight:onion_crate" },
-            { item: "farmersdelight:onion_crate" },
-            { item: "farmersdelight:onion_crate" },
-            { item: "farmersdelight:onion_crate" },
-            { item: "farmersdelight:onion_crate" },
-            { item: "farmersdelight:onion_crate" },
-
-            { item: "farmersdelight:onion_crate" },
-            { item: "farmersdelight:onion_crate" },
-            { item: "farmersdelight:onion_crate" },
-            { item: "farmersdelight:onion_crate" },
-            { item: "farmersdelight:onion_crate" },
-            { item: "farmersdelight:onion_crate" },
-            { item: "farmersdelight:onion_crate" },
-            { item: "farmersdelight:onion_crate" },
-            { item: "farmersdelight:onion_crate" },
-        ],
-        output: {
-            item: "astralfoods:compressed_onion",
-        },
-    });
-}
+function sequencedAssemblyCooking(event) {}
+function astralAdditionsFood(event) {}
 
 // Includes some "ore alchemy" and other misc blocks like andeste alloy blocks
-function lizardMiscChanges(event) {
-    // Implementing Andesite Alloy Block
-    event.shaped("createastral:andesite_alloy_block", ["AAA", "AAA", "AAA"], {
-        A: "create:andesite_alloy",
-    });
-
-    event.shaped("9x create:andesite_alloy", ["A"], {
-        A: "createastral:andesite_alloy_block",
-    });
-
-    event.shaped("createastral:charcoal_block", ["AAA", "AAA", "AAA"], {
-        A: "minecraft:charcoal",
-    });
-
-    event.shaped("9x minecraft:charcoal", ["A"], {
-        A: "createastral:charcoal_block",
-    });
-
-    // Make some machine recipes more interesting
-
-    event.shaped("techreborn:grinder", ["ABA", "CDC", " E "], {
-        A: "create:sturdy_sheet",
-        B: "create:integrated_circuit",
-        C: "minecraft:diamond",
-        D: "create:millstone",
-        E: "techreborn:basic_machine_frame",
-    });
-
-    event.shaped("techreborn:wire_mill", ["ABA", "ADA" /*'CDC',*/, " E "], {
-        A: "create:sturdy_sheet",
-        B: "createaddition:rolling_mill",
-        // C: 'create:integreted' // A little weird since the extractor also has the
-        D: "techreborn:extractor",
-        E: "create:mechanical_piston",
-    });
-
-    event.shaped("techreborn:compressor", ["ABA", "ACA", "ADA"], {
-        A: "create:sturdy_sheet",
-        B: "create:integrated_circuit",
-        C: "create:mechanical_press",
-        D: "techreborn:basic_machine_frame",
-    });
-
-    // Change the resin basin recipe to use an Item Drain so that it can be crafted during chapter 2
-    event.replaceInput({id:"techreborn:crafting_table/machine/resin_basin"}, "techreborn:drain", "create:item_drain")
-
-    // Buffed catwalk output. Seriously! Its so resource heavy!
-    const CATWALK_MATERIALS = [
-        ["gold", "create:golden_sheet"],
-        ["netherite", "createdeco:netherite_sheet"],
-        ["andesite", "create:andesite_alloy"],
-        ["brass", "create:brass_sheet"],
-        ["cast_iron", "createdeco:cast_iron_sheet"],
-        ["iron", "create:iron_sheet"],
-        ["copper", "create:copper_sheet"],
-        ["zinc", "#c:plates/zinc"],
-    ];
-
-    for (let catwalkMaterial of CATWALK_MATERIALS) {
-        event.remove({
-            output: "createdeco:" + catwalkMaterial[0] + "_catwalk",
-        });
-
-        // Note I'm deliberately changing iron catwalk recipe to not use sandpapering.
-        event.shaped("8x createdeco:" + catwalkMaterial[0] + "_catwalk", [" A ", "ABA", " A "], {
-            A: catwalkMaterial[1],
-            B: catwalkMaterial[0] == "iron" ? "minecraft:iron_bars" : "createdeco:" + catwalkMaterial[0] + "_bars",
-        });
-    }
-}
+function lizardMiscChanges(event) {}
 
 // Largely degating trains
-function lizardCH1Changes(event) {
-    // Pre-bulk-washing obisidian (train de-gating)
-    event
-        .shapeless("minecraft:obsidian", ["minecraft:magma_block", "minecraft:water_bucket"])
-        .replaceIngredient("minecraft:water_bucket", "minecraft:bucket")
-        .id("createastral:washing_obsidian_manual_only");
-
-    var track_shape = ["NSN", "NSN", "NSN"];
-    ["create:zinc_nugget", "techreborn:tin_nugget", "minecraft:iron_nugget"].forEach((nugget) => {
-        event.shaped("create:track", track_shape, {
-            N: nugget,
-            S: "#create:sleepers",
-        });
-    });
-}
+function lizardCH1Changes(event) {}
 
 // A lot of progression fixes
-function lizardCH2Changes(event) {
-    // Pre-brass Smart Pipe
-    event.shaped("create:smart_fluid_pipe", ["FB", "CO", "VP"], {
-        B: "createastral:bronze_sheet",
-        O: "minecraft:observer",
-        F: "create:filter",
-        C: "minecraft:comparator",
-        P: "create:fluid_pipe",
-        V: "create:fluid_valve",
-    });
-
-    event.shaped("create:brass_funnel", ["FB", "CO", "VP"], {
-        B: "create:golden_sheet",
-        O: "minecraft:observer",
-        F: "create:filter",
-        C: "minecraft:comparator",
-        P: "create:andesite_funnel",
-        V: "create:andesite_tunnel",
-    });
-
-    event.shaped("create:smart_chute", ["FB", "CO", "PP"], {
-        B: "create:golden_sheet",
-        O: "minecraft:observer",
-        F: "create:filter",
-        C: "minecraft:comparator",
-        P: "create:chute",
-    });
-
-    event.shaped("create:stockpile_switch", ["FB", "BO"], {
-        B: "create:copper_sheet",
-        O: "minecraft:observer",
-        F: "create:railway_casing",
-    });
-
-    // Pre-brass display links (we can get pre-brass display boards after all)
-    event.shaped("create:display_link", [" R ", "BOB", " C "], {
-        B: "createastral:bronze_sheet",
-        O: "minecraft:observer",
-        R: "minecraft:redstone_torch",
-        C: "#c:plates/copper",
-    });
-
-    // Make Oxygen loader possible before the moon
-    // (NOTE: I commented out original recipe)
-    event.shaped("ad_astra:oxygen_loader", ["IOI", "PTP", "IFI"], {
-        I: "create:iron_sheet",
-        O: "ad_astra:oxygen_tank",
-        P: "create:smart_fluid_pipe",
-        T: "create:fluid_tank",
-        F: "ad_astra:engine_fan",
-    });
-
-    // Degate Distributor to be before the compressor, so people can make moon bases as soon as they
-    //  reach the moon.
-
-    event.shaped("ad_astra:oxygen_distributor", ["FFF", "TLT", "DGD"], {
-        F: "ad_astra:engine_fan",
-        T: "ad_astra:oxygen_tank",
-        L: "ad_astra:oxygen_loader",
-        D: "ad_astra:desh_ingot",
-        G: "ad_astra:oxygen_gear",
-    });
-}
+function lizardCH2Changes(event) {}
 
 // Made changes to give silver and brass more unique identities
-function lizardCH3Changes(event) {
-    // Remove mechanical crafter requirement from alternator+electric motor,
-    //  Making it fully unique to the silver path.
-
-    event.shaped("createaddition:alternator", ["AAA", "CDC", "EAE"], {
-        A: "create:iron_sheet",
-        C: "createaddition:copper_spool",
-        D: "create:integrated_circuit",
-        E: "createaddition:capacitor",
-    });
-
-    event.shaped("createaddition:electric_motor", ["ABA", "CDC", "EFE"], {
-        A: "createastral:bronze_sheet",
-        B: "techreborn:red_cell_battery",
-        C: "createaddition:copper_spool",
-        D: "create:integrated_circuit",
-        E: "createaddition:capacitor",
-        F: "techreborn:basic_machine_casing",
-    });
-
-    // Removed brass+mechanical crafting requirement for Tesla Coil,
-    //  Making it fully unique to the silver path.
-
-    event.shaped("createaddition:tesla_coil", ["DSD", "USU", "CMC"], {
-        D: "ad_astra:desh_ingot",
-        S: "createaddition:copper_spool",
-        U: "createaddition:copper_wire",
-        C: "createaddition:capacitor",
-        M: "create:brass_block",
-    });
-
-    // New Electrum recipe
-
-    // De-gating chunk-loader, but then give it more difficult materials to balance it out
-    // Todo V2.X: make it require plates that require special dust crafting. (emerald and diamond plates suffice for now)
-
-    // Scorched tanks NEED a recipe! These both take the same amount of bricks.
-    //  Seared version did require brass but I don't think that makes sense.
-    event.shaped("tconstruct:scorched_fuel_tank", ["AAA", "ABA"], {
-        A: "tconstruct:scorched_brick",
-        B: "create:fluid_tank",
-    });
-    event.shaped("tconstruct:scorched_fuel_gauge", ["ACA", "CBC", "AAA"], {
-        A: "tconstruct:scorched_brick",
-        B: "create:fluid_tank",
-        C: "#c:glass",
-    });
-
-    // Changed blaze burner recipe.
-    event.shaped("create:empty_blaze_burner", ["A A", "A A", "BCB"], {
-        A: "createaddition:iron_rod",
-        B: "create:iron_sheet",
-        C: "ad_astra:moon_stone",
-    });
-
-    // Gag recipe
-    event.shaped("create:blaze_burner", ["A A", "ADA", "BCB"], {
-        A: "createaddition:iron_rod",
-        B: "create:iron_sheet",
-        C: "ad_astra:moon_stone",
-        D: "tconstruct:blaze_head",
-    });
-}
+function lizardCH3Changes(event) {}
 
 // This includes the launch pad recipe
 function lizardCH3Concrete(event) {
@@ -491,12 +37,6 @@ function lizardCH3Concrete(event) {
 }
 
 function lizardGeologyAlchemyChanges(event) {
-    // Manual dripstone
-    event
-        .shapeless("minecraft:dripstone_block", ["minecraft:calcite", "minecraft:water_bucket"])
-        .replaceIngredient("minecraft:water_bucket", "minecraft:bucket")
-        .id("createastral:dripstone_block_manual_only");
-
     // Manual Pointed Dripstone
     event.stonecutting("2x minecraft:pointed_dripstone", "minecraft:dripstone_block");
 
@@ -504,8 +44,6 @@ function lizardGeologyAlchemyChanges(event) {
     // (1.33 for milling dripstone, ~2 per calcite for crushing dripstone, 3 per calcite if grinding pointed drip)
 
     // Nerf vanilla granite recipe
-
-    event.shapeless("minecraft:granite", ["1x minecraft:diorite", "3x minecraft:sand"]);
 
     // Nerf vanilla andesite shapeless
 
@@ -716,7 +254,7 @@ onEvent("recipes", (event) => {
         S: "#c:raw_materials",
         A: "minecraft:cobblestone",
     });
-	event.shaped("minecraft:furnace", ["AAA", "A A", "SSS"], {
+    event.shaped("minecraft:furnace", ["AAA", "A A", "SSS"], {
         S: "#c:ingots",
         A: "minecraft:cobblestone",
     });
@@ -851,14 +389,13 @@ onEvent("recipes", (event) => {
         A: "techreborn:tin_plate",
         B: "techreborn:wood_plate",
     });
-	
-	event.shaped("2x ae2:wireless_booster", ["SCE", "III"], {
+
+    event.shaped("2x ae2:wireless_booster", ["SCE", "III"], {
         S: "ae2:fluix_dust",
         C: "ae2:charged_certus_quartz_crystal",
         E: "ae2:ender_dust",
         I: "techreborn:silver_plate",
     });
-
 
     event.shaped("minecraft:shulker_shell", ["BBB", "BAB", "BBB"], {
         A: "minecraft:nautilus_shell",
@@ -1217,11 +754,11 @@ onEvent("recipes", (event) => {
         S: "createastral:synthetic_slime",
     });
 
-	event.shaped("createastral:cheese_bricks", ["SS", "SS"], {
+    event.shaped("createastral:cheese_bricks", ["SS", "SS"], {
         S: "ad_astra:cheese",
     });
-	
-	event.shaped("2x minecraft:mycelium", ["CD", "DC"], {
+
+    event.shaped("2x minecraft:mycelium", ["CD", "DC"], {
         C: "ad_astra:cheese",
         D: "minecraft:dirt",
     });
@@ -1383,14 +920,12 @@ onEvent("recipes", (event) => {
         F: "techreborn:basic_machine_frame",
     });
 
-
     event.shaped("techreborn:block_breaker", ["SCS", "SDS", "SFS"], {
         S: "create:sturdy_sheet",
         C: "create:integrated_circuit",
         D: "create:mechanical_drill",
         F: "techreborn:basic_machine_frame",
     });
-
 
     event.shaped("techreborn:player_detector", ["SCS", "TRT", "SFS"], {
         S: "create:sturdy_sheet",
@@ -1507,13 +1042,11 @@ onEvent("recipes", (event) => {
         B: "ad_astra:calorite_ingot",
         C: "techreborn:diamond_plate",
     });
-	event.shaped("4x yttr:lamp", ["ABA", "BCB", "ABA"], {
+    event.shaped("4x yttr:lamp", ["ABA", "BCB", "ABA"], {
         A: "minecraft:iron_ingot",
         B: "minecraft:glass_pane",
-        C: "minecraft:redstone_lamp"
+        C: "minecraft:redstone_lamp",
     });
-
-
 
     /// Stuff Laky CBA updating to new format from experimental yet
 

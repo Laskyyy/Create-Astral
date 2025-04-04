@@ -1,4 +1,17 @@
-onEvent("block.tags", (event) => {
+onEvent("tags.blocks", (event) => {
+    event.remove("minecraft:needs_iron_tool", "minecraft:diamond_ore");
+    event.remove("minecraft:needs_iron_tool", "minecraft:deepslate_diamond_ore");
+    event.add("minecraft:needs_diamond_tool", "minecraft:diamond_ore");
+    event.add("minecraft:needs_diamond_tool", "minecraft:deepslate_diamond_ore");
+
+    const graveReplaceBlacklist = ["customportalapi:customportalblock"];
+    graveReplaceBlacklist.forEach((entry) => {
+        event.add("yigd:replace_blacklist", entry);
+    });
+});
+
+// Taken from the old wrench.js file
+function wrenchables(event) {
     [
         "#c:shulker_boxes",
         "createbigcannons:steel_screw_breech",
@@ -40,4 +53,4 @@ onEvent("block.tags", (event) => {
     foundryBlocks.forEach((block) => {
         event.add("create:wrench_pickup", block);
     });
-});
+}
