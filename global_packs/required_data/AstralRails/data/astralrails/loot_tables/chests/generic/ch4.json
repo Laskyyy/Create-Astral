@@ -54,7 +54,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "cminecraft:gold_block",
+          "name": "minecraft:gold_block",
           "weight": 100,
           "functions": [
             {
