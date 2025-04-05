@@ -7,7 +7,7 @@ onEvent("recipes", (event) => {
     // damage - the amount of damage done per damage tick
     [
         {
-            entity: ["minecraft:blaze"],
+            entity: "minecraft:blaze",
             result: ["tconstruct:blazing_blood", BLAZING_BLOOD_MADIC_AMOUNT],
             damage: 2,
         },

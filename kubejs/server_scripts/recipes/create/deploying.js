@@ -25,7 +25,8 @@ onEvent("recipes", (event) => {
             basin_input: "astraladditions:moonblazed_orb",
             deployer_input: "astraladditions:orbital_navigation_ring",
         },
-        {
+        //? This recipe seems to be registered with konsola's script at the bottom of this file and as a result is outputting a warning in kube
+        /* {
             output: "farmersdelight:raw_pasta",
             basin_input: ["farmersdelight:wheat_dough", "create:dough"],
             deployer_input: [
@@ -35,7 +36,7 @@ onEvent("recipes", (event) => {
                 "farmersdelight:diamond_knife",
                 "farmersdelight:netherite_knife",
             ],
-        },
+        }, */
         {
             output: "createastral:contained_end",
             basin_input: "createastral:sturdy_cage",
@@ -60,5 +61,6 @@ onEvent("recipes", (event) => {
     event.forEachRecipe({ type: "farmersdelight:cutting", tool: { tag: knivesTag } }, (recipe) => {
         let { originalRecipeIngredients, originalRecipeResult } = recipe;
         event.recipes.create.deploying([originalRecipeResult], [originalRecipeIngredients, `#${knivesTag}`]);
+        console.log(originalRecipeIngredients);
     });
 });

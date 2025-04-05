@@ -39,7 +39,7 @@ onEvent("recipes", (event) => {
 
     // Konsola's Auto Chipped script
 
-    [
+    /* [
         "chipped:alchemy_bench",
         "chipped:botanist_workbench",
         "chipped:carpenters_table",
@@ -58,7 +58,7 @@ onEvent("recipes", (event) => {
                     });
             });
         });
-    });
+    }); */
 
     // RandomUser240306's farmerscompat.js script
     event.forEachRecipe({ type: "farmersdelight:cutting" }, (recipe) => {

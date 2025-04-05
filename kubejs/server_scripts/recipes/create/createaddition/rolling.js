@@ -8,7 +8,7 @@ onEvent("recipes", (event) => {
 function tagRecipes(event) {
     [
         {
-            input: "c:nuggets/gold",
+            tag: "c:nuggets/gold",
             output: "createastral:golden_pin",
             count: 1,
         },
@@ -31,15 +31,15 @@ function tagRecipes(event) {
 function itemRecipes(event) {
     [
         {
-            input: "c:nuggets/gold",
-            output: "createastral:golden_pin",
+            input: "ad_astra:calorite_nugget",
+            output: "createastral:calorite_pin",
             count: 1,
         },
     ].forEach((recipe) => {
         event.custom({
             type: "createaddition:rolling",
             input: {
-                tag: recipe.tag,
+                tag: recipe.input,
             },
             result: {
                 item: recipe.output,

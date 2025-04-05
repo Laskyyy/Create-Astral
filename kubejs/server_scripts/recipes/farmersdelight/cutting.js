@@ -53,8 +53,8 @@ onEvent("recipes", (event) => {
             type: "farmersdelight:cutting",
             ingredients: recipe.input,
             tool: recipe.tool,
-            result: recipe.output,
-            sound: [recipe.sound ?? "minecraft:item.axe.strip"],
+            result: recipe.result,
+            sound: recipe.sound ?? "minecraft:item.axe.strip",
         });
     });
 });

@@ -1433,7 +1433,7 @@ onEvent("recipes", (event) => {
             input: [
                 "minecraft:wheat",
                 "minecraft:egg",
-                "minecarft:beetroot",
+                "minecraft:beetroot",
                 { fluid: "minecraft:water", amount: BUCKET },
             ],
             heat: "heated",
