@@ -19554,11 +19554,11 @@ hash = "71ff565cf4e1a8becbf0d82375fa7c86e5125fd9641a4037a558b4255bce3788"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/cutting.js"
-hash = "de246adeb57e9c0e682af78d2ae516d456bc96e12800b12e19d8f9095288a890"
+hash = "af2b7f3daa441292fd6fa910d88a6454f2fe34cc7e13a4c93f87d8636182b43f"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/deploying.js"
-hash = "6eb8d85a6a59c869cbb5a1bfa1211baa57494d694a8aecec116b44073ebb309c"
+hash = "d9b73a4ed9733a2f334dbe33520744c7a7d941861014a1e6a11a1ae31e468b23"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/emptying.js"
