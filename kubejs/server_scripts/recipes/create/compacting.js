@@ -1,4 +1,6 @@
 onEvent("recipes", (event) => {
+    LakyCompactingRecipes(event);
+
     [
         {
             output: ["minecraft:end_stone"],
@@ -404,3 +406,57 @@ onEvent("recipes", (event) => {
         event.recipes.createCompacting(recipe.output, recipe.inputs).heatRequirement(recipe.heat ?? "");
     });
 });
+
+function LakyCompactingRecipes(event) {
+    const recipeList = [
+        [
+            "create:ochrum",
+            "minecraft:dripstone_block",
+            "minecraft:cobblestone",
+            { fluid: "create:honey", amount: 100 * mB },
+            "minecraft:yellow_dye",
+        ],
+        [
+            "create:crimsite",
+            "minecraft:tuff",
+            "minecraft:cobblestone",
+            { fluid: "tconstruct:blood", amount: 100 * mB },
+            "minecraft:red_dye",
+        ],
+        [
+            "create:veridium",
+            "minecraft:cobblestone",
+            "minecraft:slime_ball",
+            { fluid: "minecraft:lava", amount: 100 * mB },
+            "minecraft:green_dye",
+        ],
+        [
+            "create:asurine",
+            "minecraft:prismarine",
+            "minecraft:kelp",
+            { fluid: "minecraft:water", amount: 100 * mB },
+            "minecraft:blue_dye",
+        ],
+        [
+            "create:scorchia",
+            "minecraft:basalt",
+            "ad_astra:moon_sand",
+            { fluid: "tconstruct:blazing_blood", amount: 50 * mB },
+            "minecraft:black_dye",
+        ],
+    ];
+
+    recipeList.forEach((entry) => {
+        const recipe = {
+            output: entry[0],
+            input: [entry[1], entry[2], entry[3], entry[4]],
+            heat: "",
+            time: 400,
+        };
+
+        event.recipes
+            .createCompacting(recipe.output, recipe.input)
+            .heatRequirement(recipe.heat ?? "")
+            .processingTime(recipe.time ?? 100);
+    });
+}
