@@ -218,6 +218,21 @@ const MATERIALS = [
     },
 ];
 
+const CRUSHING_RECIPES_TO_BECOME_GRINDING = [
+    ["minecraft:clay_ball", 1, "techreborn:clay_dust", undefined, undefined], // showing the 4th and 5th for demonstration
+    ["minecraft:amethyst_cluster", 7, "minecraft:amethyst_shard"],
+    ["minecraft:prismarine_crystals", 2, "minecraft:quartz"],
+    ["minecraft:saddle", 3, "minecraft:leather"],
+    ["minecraft:wheat", 3, "create:wheat_flour"],
+    ["minecraft:ender_pearl", 2, "ae2:ender_dust"],
+    ["tconstruct:necrotic_bone", 6, "minecraft:bone_meal"],
+    ["minecraft:dried_kelp", 1, "minecraft:gunpowder"],
+    ["create:sturdy_sheet", 1, "createastral:fragile_sheet"],
+];
+
+const DEFAULT_GRIND_TIME = 100; // five seconds
+const DEFAULT_GRIND_POWER = 5;
+
 // priority: 0
 
 settings.logAddedRecipes = false;

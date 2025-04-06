@@ -1,12 +1,11 @@
 onEvent("recipes", (event) => {
     /// Manual-only recipes (cannot be automated with create mixers)
     //? [[Input string], Output string, Recipe ID]
-    [
-        [["minecraft:magma_block", "minecraft:water_bucket"], "minecraft:obsidian", "washing_obsidian"],
-        [["minecraft:calcite", "minecraft:water_bucket"], "minecraft:dripstone_block", "dripstone_block"],
-    ].forEach((recipe) => {
-        event.shapeless(recipe[1], recipe[0]).id(`createastral:${recipe[2]}_manual_only`);
-    });
+    [[["minecraft:magma_block", "minecraft:water_bucket"], "minecraft:obsidian", "washing_obsidian"]].forEach(
+        (recipe) => {
+            event.shapeless(recipe[1], recipe[0]).id(`createastral:${recipe[2]}_manual_only`);
+        }
+    );
 
     /// Other recipes
     //? [[Input string], Output string]
@@ -18,4 +17,19 @@ onEvent("recipes", (event) => {
     ].forEach((recipe) => {
         event.shapeless(recipe[1], recipe[0]);
     });
+
+    event
+        .shapeless("3x minecraft:paper", [
+            "techreborn:saw_dust",
+            "techreborn:saw_dust",
+            "techreborn:saw_dust",
+            "minecraft:water_bucket",
+        ])
+        .replaceIngredient("minecraft:water_bucket", "minecraft:bucket")
+        .id("techreborn:crafting_table/paper_manual_only");
+
+    event
+        .shapeless("minecraft:dripstone_block", ["minecraft:calcite", "minecraft:water_bucket"])
+        .replaceIngredient("minecraft:water_bucket", "minecraft:bucket")
+        .id("techreborn:crafting_table/paper_manual_only");
 });

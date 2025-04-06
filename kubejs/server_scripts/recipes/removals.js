@@ -737,4 +737,8 @@ onEvent("recipes", (event) => {
     MATERIALS.forEach((material) => {
         event.remove({ not: { mod: "tconstruct" }, output: material.plate });
     });
+
+    for (let recipe of CRUSHING_RECIPES_TO_BECOME_GRINDING) {
+        event.remove({ type: "create:crushing", input: recipe[0] });
+    }
 });
