@@ -13,7 +13,14 @@ onEvent("recipes", (event) => {
         ["minecraft:cobblestone", "techreborn:andesite_dust"],
         ["yttr:delicace", "createastral:ender_plating"],
         ["createastral:gold_casted_rocket_fin", ["ad_astra:rocket_fin", "create:golden_sheet"]],
+        ["#minecraft:planks", "techreborn:wood_plate"],
     ].forEach((recipe) => {
         event.recipes.createPressing(recipe[1], recipe[0]);
+    });
+
+    MATERIALS.forEach((material) => {
+        if (material.useMechPress) {
+            event.recipes.createPressing(material.plate, material.ingot);
+        }
     });
 });

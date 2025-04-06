@@ -1,15 +1,17 @@
 onEvent("recipes", (event) => {
-    //Oxidisation
-    const oxidisationTypes = ["exposed", "weathered", "oxidized"];
-    const vanillaCopperBlocks = ["cut_copper", "cut_copper_stairs", "cut_copper_slab"];
-    const createCopperBlocks = [
-        "copper_shingles",
-        "copper_shingle_slab",
-        "copper_shingle_stairs",
-        "copper_tiles",
-        "copper_tile_slab",
-        "copper_tile_stairs",
-    ];
+    copperOxidising(event);
+
+    [
+        // [Input string, Output string]
+        ["createastral:blast-resistant_concrete", "2x createastral:blast-resistant_concrete_slab"],
+        ["createastral:blast-resistant_concrete", "createastral:blast-resistant_concrete_stairs"],
+    ].forEach((recipe) => {
+        event.stonecutting(recipe[1], recipe[0]);
+    });
+});
+
+function copperOxidising(event) {
+    // Oxidisation of all copper blocks that can weather
 
     for (const block of vanillaCopperBlocks) {
         for (const state of oxidisationTypes) {
@@ -37,12 +39,4 @@ onEvent("recipes", (event) => {
             event.stonecutting(recipe[1], recipe[0]);
         });
     }
-
-    [
-        // [Input string, Output string]
-        ["createastral:blast-resistant_concrete", "2x createastral:blast-resistant_concrete_slab"],
-        ["createastral:blast-resistant_concrete", "createastral:blast-resistant_concrete_stairs"],
-    ].forEach((recipe) => {
-        event.stonecutting(recipe[1], recipe[0]);
-    });
-});
+}

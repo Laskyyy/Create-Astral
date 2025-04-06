@@ -1,4 +1,105 @@
-// All sheets are equal!
+// constants
+
+const BUCKET = 81000;
+const INGOT = 9000;
+const NUGGET = 1000;
+const GEM = 8100;
+const mB = 81;
+
+const oxidisationTypes = ["exposed", "weathered", "oxidized"];
+const vanillaCopperBlocks = ["cut_copper", "cut_copper_stairs", "cut_copper_slab"];
+const createCopperBlocks = [
+    "copper_shingles",
+    "copper_shingle_slab",
+    "copper_shingle_stairs",
+    "copper_tiles",
+    "copper_tile_slab",
+    "copper_tile_stairs",
+];
+
+const CATWALK_MATERIALS = [
+    ["gold", "create:golden_sheet"],
+    ["netherite", "createdeco:netherite_sheet"],
+    ["andesite", "create:andesite_alloy"],
+    ["brass", "create:brass_sheet"],
+    ["cast_iron", "createdeco:cast_iron_sheet"],
+    ["iron", "create:iron_sheet"],
+    ["copper", "create:copper_sheet"],
+    ["zinc", "#c:plates/zinc"],
+];
+
+const WOODS = [
+    {
+        mod: "minecraft",
+        type: "oak",
+        tag: "minecraft:oak_logs",
+    },
+    {
+        mod: "minecraft",
+        type: "birch",
+        tag: "minecraft:birch_logs",
+    },
+    {
+        mod: "minecraft",
+        type: "spruce",
+        tag: "minecraft:spruce_logs",
+    },
+    {
+        mod: "minecraft",
+        type: "jungle",
+        tag: "minecraft:jungle_logs",
+    },
+    {
+        mod: "minecraft",
+        type: "acacia",
+        tag: "minecraft:acacia_logs",
+    },
+    {
+        mod: "minecraft",
+        type: "dark_oak",
+        tag: "minecraft:dark_oak_logs",
+    },
+    {
+        mod: "minecraft",
+        type: "crimson",
+        tag: "minecraft:crimson_stems",
+    },
+    {
+        mod: "minecraft",
+        type: "warped",
+        tag: "minecraft:warped_stems",
+    },
+    {
+        mod: "ad_astra",
+        type: "glacian",
+        tag: "ad_astra:glacian_logs",
+    },
+    {
+        mod: "techreborn",
+        type: "rubber",
+        tag: "techreborn:rubber_logs",
+    },
+    {
+        mod: "tconstruct",
+        type: "greenheart",
+        tag: "tconstruct:greenheart_logs",
+    },
+    {
+        mod: "tconstruct",
+        type: "skyroot",
+        tag: "tconstruct:skyroot_logs",
+    },
+    {
+        mod: "tconstruct",
+        type: "bloodshroom",
+        tag: "tconstruct:bloodshroom_logs",
+    },
+    {
+        mod: "vinery",
+        type: "cherry",
+        tag: "vinery:cherry_logs",
+    },
+];
 
 const MATERIALS = [
     {
@@ -114,76 +215,12 @@ const MATERIALS = [
         block: "minecraft:barrier",
         plate: "createastral:ender_plating",
         useMechPress: false,
-    }
+    },
 ];
 
-onEvent("recipes", (event) => {
-    MATERIALS.forEach((material) => {
-        // wood plates are special
-        event.recipes.createPressing("techreborn:wood_plate", "#minecraft:planks");
-        event.recipes.createCutting("techreborn:wood_plate", "#minecraft:planks");
+// priority: 0
 
-        event.remove({ not: { mod: "tconstruct" }, output: material.plate });
-        if (material.useMechPress) {
-            event.recipes.createPressing(material.plate, material.ingot);
-        }
-        event.custom({
-            type: "techreborn:compressor",
-            power: 10,
-            time: 300,
-            ingredients: [
-                {
-                    item: material.ingot,
-                },
-            ],
-            results: [
-                {
-                    item: material.plate,
-                },
-            ],
-        });
-        event.custom({
-            type: "techreborn:implosion_compressor",
-            power: 30,
-            time: 1200,
-            ingredients: [
-                {
-                    item: material.block,
-                },
-                {
-                    item: "minecraft:tnt",
-                },
-            ],
-            results: [
-                {
-                    item: material.plate,
-                    count: 9,
-                },
-            ],
-        });
-        event.custom({
-            type: "techreborn:implosion_compressor",
-            power: 50,
-            time: 300,
-            ingredients: [
-                {
-                    item: material.block,
-                    count: 4,
-                },
-                {
-                    item: "minecraft:end_crystal",
-                },
-            ],
-            results: [
-                {
-                    item: material.plate,
-                    count: 36,
-                },
-                {
-                    item: "techreborn:dark_ashes_dust",
-                    count: 4,
-                },
-            ],
-        });
-    });
-});
+settings.logAddedRecipes = false;
+settings.logRemovedRecipes = false;
+settings.logSkippedRecipes = false;
+settings.logErroringRecipes = false;

@@ -733,4 +733,8 @@ onEvent("recipes", (event) => {
         }
         event.remove({ output: `techreborn:${dust[0]}_small_dust` });
     });
+
+    MATERIALS.forEach((material) => {
+        event.remove({ not: { mod: "tconstruct" }, output: material.plate });
+    });
 });

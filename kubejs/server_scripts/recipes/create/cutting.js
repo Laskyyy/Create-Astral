@@ -35,6 +35,7 @@ onEvent("recipes", (event) => {
         ["create:track", "railways:track_monorail"],
         ["minecraft:rabbit", "minecraft:rabbit_foot"],
         ["minecraft:bone_block", "minecraft:skeleton_skull"],
+        ["#minecraft:planks", "techreborn:wood_plate"],
     ].forEach((recipe) => {
         event.recipes.createCutting(recipe[1], recipe[0]);
     });
