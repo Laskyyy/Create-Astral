@@ -1,9 +1,5 @@
 // This includes the launch pad recipe
-function lizardCH3Concrete(event) {
-    // Cement block-cutting recipe
-    event.stonecutting("2x createastral:blast-resistant_concrete_slab", "createastral:blast-resistant_concrete");
-    event.stonecutting("createastral:blast-resistant_concrete_stairs", "createastral:blast-resistant_concrete");
-}
+function lizardCH3Concrete(event) {}
 
 function lizardGeologyAlchemyChanges(event) {
     // Manual Pointed Dripstone
