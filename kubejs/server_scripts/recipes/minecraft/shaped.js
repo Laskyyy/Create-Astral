@@ -237,6 +237,21 @@ onEvent("recipes", (event) => {
                 T: "#wooden_trapdoors",
             },
         },
+        // Old school slab and stairs
+        {
+            output: "6x createastral:blast-resistant_concrete_slab",
+            pattern: ["AAA"],
+            key: {
+                A: "createastral:blast-resistant_concrete",
+            },
+        },
+        {
+            output: "4x createastral:blast-resistant_concrete_stairs",
+            pattern: ["A  ", "AA ", "AAA"],
+            key: {
+                A: "createastral:blast-resistant_concrete",
+            },
+        },
     ].forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key);
     });

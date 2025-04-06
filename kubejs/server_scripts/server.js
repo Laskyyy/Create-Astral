@@ -1,36 +1,5 @@
-// Farmer's Delight cutting board changes
-function farmersDelightCuttingChanges(event) {}
-
-function farmersdelight(event) {}
-
-function sequencedAssemblyCooking(event) {}
-function astralAdditionsFood(event) {}
-
-// Includes some "ore alchemy" and other misc blocks like andeste alloy blocks
-function lizardMiscChanges(event) {}
-
-// Largely degating trains
-function lizardCH1Changes(event) {}
-
-// A lot of progression fixes
-function lizardCH2Changes(event) {}
-
-// Made changes to give silver and brass more unique identities
-function lizardCH3Changes(event) {}
-
 // This includes the launch pad recipe
 function lizardCH3Concrete(event) {
-    // Cement pouring recipe
-
-    // Old school slab and stairs
-    event.shaped("6x createastral:blast-resistant_concrete_slab", ["AAA"], {
-        A: "createastral:blast-resistant_concrete",
-    });
-
-    event.shaped("4x createastral:blast-resistant_concrete_stairs", ["A  ", "AA ", "AAA"], {
-        A: "createastral:blast-resistant_concrete",
-    });
-
     // Cement block-cutting recipe
     event.stonecutting("2x createastral:blast-resistant_concrete_slab", "createastral:blast-resistant_concrete");
     event.stonecutting("createastral:blast-resistant_concrete_stairs", "createastral:blast-resistant_concrete");
@@ -63,10 +32,6 @@ function lizardGeologyAlchemyChanges(event) {
 // Lasky - feel free to move the code in here to more appropriate places, I just wanted
 //  to keep all my changes together
 function lizardChanges(event) {
-    lizardMiscChanges(event);
-    lizardCH1Changes(event);
-    lizardCH2Changes(event);
-    lizardCH3Changes(event);
     lizardCH3Concrete(event);
     lizardGeologyAlchemyChanges(event);
 }
