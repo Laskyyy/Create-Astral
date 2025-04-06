@@ -23,29 +23,29 @@ function sheetImplosionCompressing(event) {
                 },
             ],
         });
-    });
-    event.custom({
-        type: "techreborn:implosion_compressor",
-        power: 50,
-        time: 300,
-        ingredients: [
-            {
-                item: material.block,
-                count: 4,
-            },
-            {
-                item: "minecraft:end_crystal",
-            },
-        ],
-        results: [
-            {
-                item: material.plate,
-                count: 36,
-            },
-            {
-                item: "techreborn:dark_ashes_dust",
-                count: 4,
-            },
-        ],
+        event.custom({
+            type: "techreborn:implosion_compressor",
+            power: 50,
+            time: 300,
+            ingredients: [
+                {
+                    item: material.block,
+                    count: 4,
+                },
+                {
+                    item: "minecraft:end_crystal",
+                },
+            ],
+            results: [
+                {
+                    item: material.plate,
+                    count: 36,
+                },
+                {
+                    item: "techreborn:dark_ashes_dust",
+                    count: 4,
+                },
+            ],
+        });
     });
 }

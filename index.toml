@@ -19469,6 +19469,10 @@ file = "kubejs/server_scripts/data/loot_tables/entity.js"
 hash = "0b4a558febec1214d4e2ed0d97aa6b8bf0f7cf0dd0274dd979510d6a449de052"
 
 [[files]]
+file = "kubejs/server_scripts/misc/constants.js"
+hash = "a7dd515b09cb33c75ddd6d6ea9f205943a1e9da79b4e5301a01878d410c5fc97"
+
+[[files]]
 file = "kubejs/server_scripts/misc/dragon.js"
 hash = "43a44ab4f8771171f025b79a72e27668aa584651d7aa20c083c5227f48c111aa"
 
@@ -19477,12 +19481,12 @@ file = "kubejs/server_scripts/misc/interaction.js"
 hash = "328d4106df65e04d8735c74ccaaa94a7032fcca80749ead1a0189c281d171793"
 
 [[files]]
-file = "kubejs/server_scripts/misc/server.js"
-hash = "3556d5983e4b90c1721eb8b5df88c93166fc5fa859bfb72f4ad7130d819b4974"
-
-[[files]]
 file = "kubejs/server_scripts/misc/spawnpointfix.js"
 hash = "7e483a53eb48cebb584f44ff748499340db4ed7c993b48405c9974886fb57961"
+
+[[files]]
+file = "kubejs/server_scripts/misc/tconstruct_fluidsyncfix.js"
+hash = "3944c2284f9fe0a6ba797e83f8eaee0c3345c535fe0f9e72a3555c4a41523cfc"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astral_generators/amalgamation_matrix.js"
@@ -19537,6 +19541,10 @@ file = "kubejs/server_scripts/recipes/astraladditions/desizer.js"
 hash = "1ded9779f569dd2d2d03eb558e95721658c8fade450c99442eb292cd6a386805"
 
 [[files]]
+file = "kubejs/server_scripts/recipes/astraladditions/shimmer_transmute.js"
+hash = "bd5fde9896e580b0ec6d77c05e62a9d0a13693a54b206ff9bfac76dc1f709de1"
+
+[[files]]
 file = "kubejs/server_scripts/recipes/create/compacting.js"
 hash = "65363007de90927c85a47f6d47fc7578807df9fb20d577edca904ebbf609c64a"
 
@@ -19554,7 +19562,7 @@ hash = "fd5cbb8c806de6522401e910a4f6e401d7d19344d600b2ec9268f9b815f7deac"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/cutting.js"
-hash = "af2b7f3daa441292fd6fa910d88a6454f2fe34cc7e13a4c93f87d8636182b43f"
+hash = "0583dac2b807b8d2fa3010c93e3b9ef23bca5249d09807ac2add0cbf582f0a51"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/deploying.js"
@@ -19590,7 +19598,7 @@ hash = "a23bb8d7303601108bd83f05e7ba84fd9a1cbb63396a2996a047b2e30b3418c1"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/pressing.js"
-hash = "54913f67d2dc59546217ed6d0f8fb967674da222ebd2d4aab48cd41666cc98e2"
+hash = "ebb26468d9a6a6b925070c1166c10e0085cf4df1ad1657521f578ba265cc339f"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/sandpaper_polishing.js"
@@ -19622,15 +19630,19 @@ hash = "39c96440b1677013c5d22c211e54e0dd5541770aa7036f18f2e77d9f18e441fc"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/shapeless.js"
-hash = "fd2ad8a9af07ef065774821f4e5209c31c2eb563da3d1fa9dd101e52977c0f91"
+hash = "33383aab1fe2e66f7f50f4a38f8650b2655d8fbee79d80cff655b3d607a2d241"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/minecraft/smithing.js"
+hash = "c424a357e36c0570994bcfd29510dd513f7a658d56bfbb341ab8b842e65a79e1"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/stonecutting.js"
-hash = "d85ca1cae48972977c766457533ce7c09aa4d067f34b749310d9accad86ec8ac"
+hash = "cc177acf4f4bcedcadce100bca04f2feef99c554ccdc2b3a97fc9102f53372e2"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/removals.js"
-hash = "6b8a63e4d9adb0a8232c071f1a3b1f59acd01f7f1da77767644499e8165a8ddb"
+hash = "c3f33b3c78ed2ca0aa8f331da031812af7ec35542903396a6bce17f0e0b58da5"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/replacements.js"
@@ -19649,6 +19661,22 @@ file = "kubejs/server_scripts/recipes/tconstruct/entity_melting.js"
 hash = "d23eb90b7e919937a8feaaba0acf06e36c07c2ab98bafa5f861fff8678999a76"
 
 [[files]]
+file = "kubejs/server_scripts/recipes/techreborn/centrifuge.js"
+hash = "3093584e11947d3683e1968bdeafd3ae3dc91403d119583924fb07fcc80e4feb"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/techreborn/compressor.js"
+hash = "649feab8a6b4660698e9124ec302dd9cadc6e0a66976f009d66e0a04105c2fc8"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/techreborn/grinder.js"
+hash = "d14d266bca5c8ade24ef0cb9e0ec0057c45b8eba0249a5585c115185ddbbdb7f"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/techreborn/implosion_compressor.js"
+hash = "3359af6f0453448220a89b489c5cb08ce651e5df4944d8e6d9faf7311a1d52cf"
+
+[[files]]
 file = "kubejs/server_scripts/recipes/techreborn/industrial_grinder.js"
 hash = "9f4b3bfeaace374727e95b85244d15436933fde0a6eec876484546a2f34895a0"
 
@@ -19661,24 +19689,24 @@ file = "kubejs/server_scripts/recipes/techreborn/packing.js"
 hash = "1becce5642c6ca74f664127d62e3039cec9ac69a95b0e0f650113cd6fb56d393"
 
 [[files]]
+file = "kubejs/server_scripts/recipes/techreborn/vacuum_freezer.js"
+hash = "4477fb280b1e970d01a6eef1ce1df22ab475ba1a248de7afa6e425044cfca40a"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/techreborn/wire_mill.js"
+hash = "d4b83e7e5937d6bff902c0e91b9bb72cb7119ad22ba3c32446eff31c94eb2444"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/yttr/centrifuging.js"
+hash = "04b6756ee33b2ffb8c44285fa0bd63cd66c1808c555352814ae6a68ab5daffbd"
+
+[[files]]
 file = "kubejs/server_scripts/recipes/yttr/lamps.js"
 hash = "a40b5f628fbfc151bb32ff136d24f03c6b9fd84ce535a64b9d2e9f4193c1b371"
 
 [[files]]
 file = "kubejs/server_scripts/server.js"
-hash = "43758a70b6fb5efa7e04cf66e5271bb7999e593244fc3b65b404836755e4f345"
-
-[[files]]
-file = "kubejs/server_scripts/sheets.js"
-hash = "1d3f087ae76f109f1b2f6eb7cf46fe431b720daccf3eed3685696dba7af37de9"
-
-[[files]]
-file = "kubejs/server_scripts/shimmer_transmutation.js"
-hash = "4537bcabc3cf87060c9d9a9be69b65818862b3e78db0d7adbc0fcda401ae4c75"
-
-[[files]]
-file = "kubejs/server_scripts/smithing.js"
-hash = "5240a76f5aeb7e51e0ecbbc98a404be5cc5228d69be5f07cc05b789efc2bd0c5"
+hash = "208d7f6945dcb2bc616f7cf3388399f4c1a2b4e53e5a174c110d700dd5f3868d"
 
 [[files]]
 file = "kubejs/server_scripts/tags/blocks.js"
@@ -19687,18 +19715,6 @@ hash = "caefee027230ec02b18b3984f998cf62c073b3b60bda92d35ad392a2f3215709"
 [[files]]
 file = "kubejs/server_scripts/tags/items.js"
 hash = "64f1ae1e135e240d8e0256ed27d721c2f13a6f25d0f22c72ed8b64e8ea4abcbf"
-
-[[files]]
-file = "kubejs/server_scripts/tconstruct_fluidsyncfix.js"
-hash = "3944c2284f9fe0a6ba797e83f8eaee0c3345c535fe0f9e72a3555c4a41523cfc"
-
-[[files]]
-file = "kubejs/server_scripts/techreborn.js"
-hash = "7bd353dcac737f3f8707f2a833a3c8499885dcc490abb8467d29cb661fe70479"
-
-[[files]]
-file = "kubejs/server_scripts/yttr_centrifuging.js"
-hash = "dff8b585fd2b9910ae864c8d1e655c3fe8d1da0b08ca3fddb49c9ec5b4f1ab47"
 
 [[files]]
 file = "kubejs/startup_scripts/astralsignals_registry.js"
@@ -19711,6 +19727,10 @@ hash = "52702ee57d1cf1036bd0aadaa10cba57c2b9d41de8a8d0ff6db41709fffc4042"
 [[files]]
 file = "kubejs/startup_scripts/fluid_registry.js"
 hash = "5b117c9d4da44260f66f664899400f3b3d3c55e2d3f3f76bd7bd01403bff24ab"
+
+[[files]]
+file = "kubejs/startup_scripts/item/item_modification.js"
+hash = "50154cd8fdb8648f9079cd4f374f4a9ba305e47cd8ba9ba8c77f59af8ad08f67"
 
 [[files]]
 file = "kubejs/startup_scripts/item_registry.js"

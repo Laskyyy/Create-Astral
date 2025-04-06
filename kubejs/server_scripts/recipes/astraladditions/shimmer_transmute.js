@@ -60,7 +60,7 @@ onEvent("recipes", (event) => {
                 },
             ],
         });
-        if (stackable) {
+        if (recipe.stackable) {
             event.custom({
                 type: "astraladditions:shimmer_transmute",
                 input: {
