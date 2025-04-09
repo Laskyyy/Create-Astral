@@ -566,7 +566,6 @@ onEvent("recipes", (event) => {
             input: "minecraft:copper_block",
             type: "minecraft:stonecutting",
         },
-        //dispenser recipe
         { output: "minecraft:dispenser" },
 
         // xpcrystals
@@ -578,6 +577,25 @@ onEvent("recipes", (event) => {
 
         // vinery
         { output: "vinery:wine_rack_1" },
+
+        // techreborn
+        { output: "techreborn:sulfur" },
+        {
+            input: "minecraft:soul_soil",
+            output: "techreborn:coal_dust",
+        },
+        {
+            input: "minecraft:soul_sand",
+            output: "techreborn:coal_dust",
+        },
+        {
+            input: "minecraft:glowstone_dust",
+            output: "minecraft:redstone",
+        },
+        {
+            input: "techreborn:netherrack_dust",
+            output: "minecraft:redstone",
+        },
     ].forEach((recipe) => {
         event.remove(recipe);
     });
@@ -711,13 +729,13 @@ onEvent("recipes", (event) => {
         ["pyrite", false],
         ["pyrope", false],
         ["quartz", false],
-        ["saltpeter", true],
+        ["saltpeter", false],
         ["saw", true],
         ["sodalite", false],
         ["spessartine", false],
         ["sphalerite", false],
         ["steel", true],
-        ["sulfur", true],
+        ["sulfur", false],
         ["uvarovite", false],
         ["glowstone", true],
         ["redstone", true],

@@ -1,4 +1,5 @@
 onEvent("recipes", (event) => {
+    farmersCompatMixing(event);
     // Biofuel rework
 
     // Output: string
@@ -3291,7 +3292,9 @@ onEvent("recipes", (event) => {
             ])
             .processingTime(50);
     });
+});
 
+function farmersCompatMixing(event) {
     //! RandomUser240306's farmerscompat.js mixing recipes
     event.forEachRecipe({ type: "farmersdelight:cooking" }, (recipe) => {
         let outputItem = recipe.getOriginalRecipeResult().getId().split(":")[1];
@@ -3350,4 +3353,4 @@ onEvent("recipes", (event) => {
             },
         ]);
     });
-});
+}

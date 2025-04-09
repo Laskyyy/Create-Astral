@@ -343,6 +343,7 @@ onEvent("recipes", (event) => {
         [{ mod: "createendertransmission" }, "minecraft:ender_pearl", "minecraft:ender_eye"],
         ["techreborn:carbon_plate", "techreborn:carbon_mesh"],
         ["techreborn:lazurite_plate", "create:lapis_sheet"],
+        ["ae2:sky_stone_block", "ad_astra:sky_stone"],
     ].forEach((recipe) => {
         if (recipe.length === 2) {
             event.replaceInput(recipe[0], recipe[1]);

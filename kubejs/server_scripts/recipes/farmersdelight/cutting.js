@@ -48,6 +48,36 @@ onEvent("recipes", (event) => {
             },
             result: [{ item: "astralfoods:quantum_bites", count: 3 }],
         },
+        {
+            input: [{ item: "vinery:cherry_log" }],
+            tool: {
+                type: "farmersdelight:tool",
+                tag: "c:tools/axes",
+            },
+            result: [
+                {
+                    item: "vinery:stripped_cherry_log",
+                },
+                {
+                    item: "farmersdelight:tree_bark",
+                },
+            ],
+        },
+        {
+            input: [{ item: "vinery:old_cherry_log" }],
+            tool: {
+                type: "farmersdelight:tool",
+                tag: "c:tools/axes",
+            },
+            result: [
+                {
+                    item: "vinery:stripped_old_cherry_log",
+                },
+                {
+                    item: "farmersdelight:tree_bark",
+                },
+            ],
+        },
     ].forEach((recipe) => {
         event.custom({
             type: "farmersdelight:cutting",

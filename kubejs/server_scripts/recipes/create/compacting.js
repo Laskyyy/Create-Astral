@@ -402,6 +402,18 @@ onEvent("recipes", (event) => {
             inputs: ["4x ad_astra:strophar_cap", { fluid: "minecraft:water", amount: 100 * mB }],
             heat: "",
         },
+        {
+            output: [
+                "minecraft:sponge",
+                Item.of("minecraft:cod").withChance(0.25),
+                Item.of("minecraft:salmon").withChance(0.25),
+                Item.of("minecraft:tropical_fish").withChance(0.2),
+                Item.of("minecraft:pufferfish").withChance(0.15),
+                Item.of("minecraft:ink_sac").withChance(0.15),
+            ],
+            inputs: "minecraft:wet_sponge",
+            heat: "",
+        },
     ].forEach((recipe) => {
         event.recipes.createCompacting(recipe.output, recipe.inputs).heatRequirement(recipe.heat ?? "");
     });
