@@ -171,7 +171,8 @@ onEvent("block.registry", (event) => {
         .hardness(4)
         .displayName("Charcoal Block")
         .tagBlock("minecraft:mineable/pickaxe")
-        .material("stone");
+        .material("stone")
+        .burnTime(2000);
 
     event
         .create("createastral:cheese_bricks", "basic")
