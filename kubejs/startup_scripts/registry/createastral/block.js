@@ -1,4 +1,3 @@
-///// REGISTER CUSTOM BLOCKS /////
 onEvent("block.registry", (event) => {
     event
         .create("createastral:sturdy_sheet_block")
@@ -41,43 +40,32 @@ onEvent("block.registry", (event) => {
         .hardness(24)
         .displayName("Mercurian Stone")
         .tagBlock("minecraft:mineable/pickaxe");
-				
-	event
-        .create("createastral:aurorite_block")
-        .material("stone")
-        .hardness(24)
-        .tagBlock("minecraft:mineable/pickaxe");
-				
-	event
+
+    event.create("createastral:aurorite_block").material("stone").hardness(24).tagBlock("minecraft:mineable/pickaxe");
+
+    event
         .create("createastral:sturdy_cage")
         .material("lantern")
         .defaultTranslucent()
         .hardness(26)
         .displayName("Sturdy Cage")
         .tagBlock("minecraft:mineable/pickaxe");
-				
-	event
+
+    event
         .create("createastral:contained_end")
         .material("bone")
         .hardness(26)
         .displayName("Contained End")
         .tagBlock("minecraft:mineable/pickaxe")
         .lightLevel(0.5);
-				
-	event
+
+    event
         .create("createastral:ultramatter")
         .material("bone")
         .hardness(26)
         .displayName("Block of Ultramatter")
         .tagBlock("minecraft:mineable/pickaxe")
         .lightLevel(0.5);
-		
-	event
-        .create("definedsblocks:undefined_block")
-        .material("bone")
-        .hardness(26)
-        .displayName("uhhh ignore this")
-        .tagBlock("minecraft:mineable/pickaxe")
 
     event
         .create("createastral:copper_plating")
@@ -146,7 +134,7 @@ onEvent("block.registry", (event) => {
         .texture("up", "techreborn:block/machines/tier1_machines/machine_top")
         .texture("north", "createastral:block/distillation_tower_on")
         .tagBlock("minecraft:mineable/pickaxe");
-    
+
     event
         .create("createastral:electrolyser_dummy", "basic")
         .hardness(4)
@@ -155,8 +143,6 @@ onEvent("block.registry", (event) => {
         .texture("down", "createastral:block/electropipe")
         .texture("north", "createastral:block/electropipe")
         .tagBlock("minecraft:mineable/pickaxe");
-
-
 
     event
         .create("createastral:stone_growth_chamber_dummy")
@@ -186,14 +172,14 @@ onEvent("block.registry", (event) => {
         .displayName("Charcoal Block")
         .tagBlock("minecraft:mineable/pickaxe")
         .material("stone");
-		
-	event
+
+    event
         .create("createastral:cheese_bricks", "basic")
         .hardness(4)
         .tagBlock("minecraft:mineable/pickaxe")
         .material("stone");
-		
-	event
+
+    event
         .create("createastral:cheesier_block", "basic")
         .hardness(4)
         .tagBlock("minecraft:mineable/pickaxe")
@@ -207,8 +193,9 @@ onEvent("block.registry", (event) => {
         .hardness(2)
         .lightLevel(5);
 
-    event.create("createastral:synthetic_slime_block")
-    .displayName("Synthetic Slime Block")
+    event
+        .create("createastral:synthetic_slime_block")
+        .displayName("Synthetic Slime Block")
         .material("lantern")
         .hardness(0);
 
@@ -219,89 +206,37 @@ onEvent("block.registry", (event) => {
         .hardness(4)
         .tagBlock("minecraft:mineable/pickaxe");
 
-    event.create("kubejs:fragile_sheet_block", "basic")
-        .material("stone")
-        .displayName("Fragile Sheet Block")
-        .defaultTranslucent()
-        .hardness(1);
-
-    event.create("kubejs:broken_fragile_sheet_block", "basic")
-        .material("stone")
-        .displayName("Broken Fragile Sheet Block")
-        .defaultTranslucent()
-        .hardness(1)
-        .box(0, 0, 0, 16, 8, 16, true)
-        .box(2, 8, 2, 14, 12, 14, true)
-
-    event.create("kubejs:fire_resistant_fragile_sheet_block", "basic")
-        .material("stone")
-        .displayName("Fire Resistant Fragile Sheet Block")
-        .defaultTranslucent()
-        .hardness(1)
-
-    event.create("kubejs:broken_fire_resistant_fragile_sheet_block", "basic")
-        .material("stone")
-        .displayName("Broken Fire Resistant Fragile Sheet Block")
-        .defaultTranslucent()
-        .hardness(1)
-        .box(0, 0, 0, 16, 8, 16, true)
-        .box(2, 8, 2, 14, 12, 14, true)
-
-    event.create("createastral:rocket_casing", "basic")
+    event
+        .create("createastral:rocket_casing", "basic")
         .material("stone")
         .displayName("Rocket Casing")
         .hardness(4)
         .defaultTranslucent()
-        .tagBlock("minecraft:mineable/pickaxe")
+        .tagBlock("minecraft:mineable/pickaxe");
 
-    event.create("createastral:slime_furnace_dummy")
+    event
+        .create("createastral:slime_furnace_dummy")
         .textureAll("createastral:block/slime_furnace_side")
         .texture("up", "createastral:block/slime_furnace_top")
-        .texture("down", "createastral:block/slime_furnace_bottom")
+        .texture("down", "createastral:block/slime_furnace_bottom");
 
-    event.create("createastral:slime_furnace_on_dummy")
+    event
+        .create("createastral:slime_furnace_on_dummy")
         .textureAll("createastral:block/slime_furnace_on_side")
         .texture("up", "createastral:block/slime_furnace_on_top")
-        .texture("down", "createastral:block/slime_furnace_on_bottom")
+        .texture("down", "createastral:block/slime_furnace_on_bottom");
 
-
-    event.create("createastral:washer_dummy")
+    event
+        .create("createastral:washer_dummy")
         .textureAll("createastral:block/washer")
         .texture("up", "create:block/railway_casing")
         .texture("down", "create:block/railway_casing")
-        .texture("north", "createastral:block/washer_shaft")
+        .texture("north", "createastral:block/washer_shaft");
 
-    event.create("createastral:gas_mixer_dummy")
+    event
+        .create("createastral:gas_mixer_dummy")
         .textureAll("createastral:block/gas_mixer")
-        .texture("down", "createastral:block/gas_mixer_shaft")
+        .texture("down", "createastral:block/gas_mixer_shaft");
 
-    event.create("createastral:channeling_transformer_dummy")
-        .textureAll("createastral:block/channeling_transformer");
-
-    event
-        .create("doodads:asphalt_slab", "slab")
-        .material("stone")
-        .displayName("Asphalt Slab")
-        .hardness(4)
-        .tagBlock("minecraft:mineable/pickaxe")
-        .textureAll("doodads:block/asphalt");
-
-    event
-        .create("doodads:asphalt_stair", "stairs")
-        .material("stone")
-        .displayName("Asphalt Stair")
-        .hardness(4)
-        .tagBlock("minecraft:mineable/pickaxe")
-        .textureAll("doodads:block/asphalt");
-    
-    event
-        .create("yttr:polished_scorched_obsidian_holster_alive", "basic")
-        .textureAll("yttr:block/polished_scorched_obsidian_holster_alive")
-        .texture("up", "yttr:block/polished_scorched_obsidian_capstone")
-        .texture("down", "yttr:block/polished_scorched_obsidian")
-        .luminance(4)
-        .hardness(50)
-        .material("stone")
-        .requiresTool(true)
-
+    event.create("createastral:channeling_transformer_dummy").textureAll("createastral:block/channeling_transformer");
 });

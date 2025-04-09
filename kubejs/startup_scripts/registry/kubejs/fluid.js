@@ -1,5 +1,7 @@
-///// REGISTERING CUSTOM FLUIDS ////
+//? REGISTERING CUSTOM FLUIDS
 onEvent("fluid.registry", (event) => {
+    liquidFoodGen(event);
+
     event
         .create("molten_calorite")
         .thickTexture(0xc41a39)
@@ -7,7 +9,7 @@ onEvent("fluid.registry", (event) => {
         .displayName("Calorite")
         .stillTexture("tconstruct:block/fluid/molten/still")
         .flowingTexture("tconstruct:block/fluid/molten/flowing")
-        .tag("tconstruct:tooltips/metal")
+        .tag("tconstruct:tooltips/metal");
 
     event
         .create("molten_ostrum")
@@ -16,7 +18,7 @@ onEvent("fluid.registry", (event) => {
         .displayName("Ostrum")
         .stillTexture("tconstruct:block/fluid/molten/still")
         .flowingTexture("tconstruct:block/fluid/molten/flowing")
-        .tag("tconstruct:tooltips/metal")
+        .tag("tconstruct:tooltips/metal");
 
     event
         .create("molten_desh")
@@ -25,7 +27,7 @@ onEvent("fluid.registry", (event) => {
         .displayName("Desh")
         .stillTexture("tconstruct:block/fluid/molten/still")
         .flowingTexture("tconstruct:block/fluid/molten/flowing")
-        .tag("tconstruct:tooltips/metal")
+        .tag("tconstruct:tooltips/metal");
 
     event
         .create("molten_yttrium")
@@ -34,7 +36,7 @@ onEvent("fluid.registry", (event) => {
         .displayName("Yttrium")
         .stillTexture("tconstruct:block/fluid/molten/still")
         .flowingTexture("tconstruct:block/fluid/molten/flowing")
-        .tag("tconstruct:tooltips/metal")
+        .tag("tconstruct:tooltips/metal");
 
     event
         .create("molten_shadowsteel")
@@ -43,7 +45,7 @@ onEvent("fluid.registry", (event) => {
         .displayName("Shadow Fluid")
         .stillTexture("tconstruct:block/fluid/molten/still")
         .flowingTexture("tconstruct:block/fluid/molten/flowing")
-        .tag("tconstruct:tooltips/metal")
+        .tag("tconstruct:tooltips/metal");
 
     event
         .create("molten_radiance")
@@ -52,7 +54,7 @@ onEvent("fluid.registry", (event) => {
         .displayName("Radiant Residue")
         .stillTexture("tconstruct:block/fluid/molten/still")
         .flowingTexture("tconstruct:block/fluid/molten/flowing")
-        .tag("tconstruct:tooltips/metal")
+        .tag("tconstruct:tooltips/metal");
 
     event
         .create("aurorite")
@@ -60,17 +62,17 @@ onEvent("fluid.registry", (event) => {
         .bucketColor(0xc8e9e9)
         .displayName("Aurorite")
         .stillTexture("tconstruct:block/fluid/molten/still")
-        .flowingTexture("tconstruct:block/fluid/molten/flowing")
+        .flowingTexture("tconstruct:block/fluid/molten/flowing");
 
     event
         .create("metabolic_broth")
-        .thickTexture(0xC3B1E1)
-        .bucketColor(0xC3B1E1)
+        .thickTexture(0xc3b1e1)
+        .bucketColor(0xc3b1e1)
         .displayName("Metabolic Broth")
         .stillTexture("tconstruct:block/fluid/molten/still")
-        .flowingTexture("tconstruct:block/fluid/molten/flowing")
+        .flowingTexture("tconstruct:block/fluid/molten/flowing");
 
-        event
+    event
         .create("plasma_fluid")
         .thickTexture(0x4cfbff)
         .bucketColor(0x4cfbff)
@@ -86,7 +88,8 @@ onEvent("fluid.registry", (event) => {
         .stillTexture("tconstruct:block/fluid/molten/still")
         .flowingTexture("tconstruct:block/fluid/molten/flowing");
 
-    event.create("smite")
+    event
+        .create("smite")
         .thickTexture(0xffff00)
         .bucketColor(0xffff00)
         .displayName("Smite")
@@ -94,10 +97,7 @@ onEvent("fluid.registry", (event) => {
         .flowingTexture("tconstruct:block/fluid/molten/flowing")
         .gaseous();
 
-    event.create("released_water_coolant")
-        .thickTexture(0x63b1ed)
-        .bucketColor(0x63b1ed)
-        .displayName("Released Coolant")
+    event.create("released_water_coolant").thickTexture(0x63b1ed).bucketColor(0x63b1ed).displayName("Released Coolant");
 
     event
         .create("compound_mixture")
@@ -106,7 +106,7 @@ onEvent("fluid.registry", (event) => {
         .displayName("Compound Mixture")
         .stillTexture("tconstruct:block/fluid/molten/still")
         .flowingTexture("tconstruct:block/fluid/molten/flowing")
-        .tag("tconstruct:tooltips/metal")
+        .tag("tconstruct:tooltips/metal");
 
     event
         .create("blast-resistant_cement")
@@ -141,40 +141,40 @@ onEvent("fluid.registry", (event) => {
         .flowingTexture("tconstruct:block/fluid/molten/shimmer");
 
     event
-        .create('red_paste')
+        .create("red_paste")
         .thickTexture(0xff0000)
         .bucketColor(0xff0000)
-        .displayName('Red Paste')
-        .stillTexture('tconstruct:block/fluid/molten/still')
-        .flowingTexture('tconstruct:block/fluid/molten/still');
+        .displayName("Red Paste")
+        .stillTexture("tconstruct:block/fluid/molten/still")
+        .flowingTexture("tconstruct:block/fluid/molten/still");
     event
         .create("frothy_pink_eggnog_fluid")
         .thickTexture(0xd1b694)
         .bucketColor(0xd1b694)
         .displayName("Frothy Pink Eggnog")
         .stillTexture("tconstruct:block/fluid/molten/still")
-        .flowingTexture("tconstruct:block/fluid/molten/flowing");    
+        .flowingTexture("tconstruct:block/fluid/molten/flowing");
     event
         .create("night_howl_kvass_fluid")
         .thickTexture(0xe8d1b5)
         .bucketColor(0xe8d1b5)
         .displayName("Night Howl OwOss")
         .stillTexture("tconstruct:block/fluid/molten/still")
-        .flowingTexture("tconstruct:block/fluid/molten/flowing");    
+        .flowingTexture("tconstruct:block/fluid/molten/flowing");
     event
         .create("pumpkin_kvass_fluid")
         .thickTexture(0xfc8d05)
         .bucketColor(0xfc8d05)
         .displayName("Pumpkin Kvass")
         .stillTexture("tconstruct:block/fluid/molten/still")
-        .flowingTexture("tconstruct:block/fluid/molten/flowing");    
+        .flowingTexture("tconstruct:block/fluid/molten/flowing");
     event
         .create("haars_icey_pale_lager_fluid")
         .thickTexture(0xf0d797)
         .bucketColor(0xf0d797)
         .displayName("Haar's Icey Pale Lager")
         .stillTexture("tconstruct:block/fluid/molten/still")
-        .flowingTexture("tconstruct:block/fluid/molten/flowing");    
+        .flowingTexture("tconstruct:block/fluid/molten/flowing");
     event
         .create("sweet_berry_kriek_fluid")
         .thickTexture(0xd13674)
@@ -210,18 +210,11 @@ onEvent("fluid.registry", (event) => {
         .displayName("Miner Pale Ale")
         .stillTexture("tconstruct:block/fluid/molten/still")
         .flowingTexture("tconstruct:block/fluid/molten/flowing");
-    event
-        .create("supercooled_water")
-        .thinTexture(0x4afff0)
-        .bucketColor(0x4afff0)
-        .displayName("Supercooled Water");
-
-    liquidFoodGen(event);
+    event.create("supercooled_water").thinTexture(0x4afff0).bucketColor(0x4afff0).displayName("Supercooled Water");
 });
 
-//LIQUID FOODS
 function liquidFoodGen(event) {
-    [
+    const liquidFoods = [
         {
             name: "dumplings_fluid",
             displayName: "Dumpling Mix",
@@ -352,13 +345,15 @@ function liquidFoodGen(event) {
             displayName: "Chicken Soup",
             color: 0xffdd99,
         },
-    ].forEach((f) => {
-        let fluid = event
-            .create(f.name)
-            .thinTexture(f.color)
-            .bucketColor(f.color)
-            .displayName(f.displayName)
+    ];
+
+    for (const fluid in liquidFoods) {
+        event
+            .create(fluid.name)
+            .thinTexture(fluid.color)
+            .bucketColor(fluid.color)
+            .displayName(fluid.displayName)
             .stillTexture("tconstruct:block/fluid/stew/still")
             .flowingTexture("tconstruct:block/fluid/stew/flowing");
-    });
+    }
 }
