@@ -347,7 +347,7 @@ function liquidFoodGen(event) {
         },
     ];
 
-    for (const fluid in liquidFoods) {
+    for (const fluid of liquidFoods) {
         event
             .create(fluid.name)
             .thinTexture(fluid.color)

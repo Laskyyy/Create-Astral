@@ -18,7 +18,7 @@ function wineTransitionals(event) {
         "apple",
     ];
 
-    for (const wine in wines) {
+    for (const wine of wines) {
         event.create(`kubejs:incomplete_${wine}_wine`, "create:sequenced_assembly").texture(`kubejs:item/${wine}_wine`);
     }
 

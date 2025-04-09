@@ -171,8 +171,7 @@ onEvent("block.registry", (event) => {
         .hardness(4)
         .displayName("Charcoal Block")
         .tagBlock("minecraft:mineable/pickaxe")
-        .material("stone")
-        .burnTime(2000);
+        .material("stone"); // item.burnTime breaks if registered during block.registry so it has to be registered during block.modification
 
     event
         .create("createastral:cheese_bricks", "basic")

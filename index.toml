@@ -19469,6 +19469,10 @@ file = "kubejs/server_scripts/data/loot_tables/entity.js"
 hash = "0b4a558febec1214d4e2ed0d97aa6b8bf0f7cf0dd0274dd979510d6a449de052"
 
 [[files]]
+file = "kubejs/server_scripts/data/villager_trades.js"
+hash = "f4e93e62101d093dbdcc15b2a25dad612c8e895a2face71fb24f297eaf60e2bb"
+
+[[files]]
 file = "kubejs/server_scripts/misc/constants.js"
 hash = "a7dd515b09cb33c75ddd6d6ea9f205943a1e9da79b4e5301a01878d410c5fc97"
 
@@ -19546,7 +19550,7 @@ hash = "bd5fde9896e580b0ec6d77c05e62a9d0a13693a54b206ff9bfac76dc1f709de1"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/compacting.js"
-hash = "65363007de90927c85a47f6d47fc7578807df9fb20d577edca904ebbf609c64a"
+hash = "9b651bbd2872997adcf9a28959414a901da149d5ff56eb4dc3075c5466314415"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/createaddition/charging.js"
@@ -19594,7 +19598,7 @@ hash = "2b68782632042dbcc0df6b4a2c43c74e05b4029686f7ab0ddb2d77d079697460"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/mixing.js"
-hash = "a23bb8d7303601108bd83f05e7ba84fd9a1cbb63396a2996a047b2e30b3418c1"
+hash = "0e6e857a7147ab616c06d2adeead5e9c3d025e705e7f1cef5d015a1a6a4022da"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/pressing.js"
@@ -19606,7 +19610,7 @@ hash = "f4668fb6f5e28c3a16f17f5ef0804b56695bb6fef45f354d99103e9b6abcfe1f"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/sequenced_assembly.js"
-hash = "459cd576e30037816891e1f82a4df4e140cac5301ac394f0a78567744619cab4"
+hash = "05e60f79682338ca0bdfcc65447b4533ced67e3b3b1557aa6fc3daaf699f6a60"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/splashing.js"
@@ -19622,31 +19626,47 @@ hash = "75ccc9544e76b8dcac73d5a95b100f0c987ff0793b2fc1902cce3d7cf15d8201"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/farmersdelight/cutting.js"
-hash = "227caabb4a9107f88865777b1ebf3834f5919793be8fd8e618b7a554304fa606"
+hash = "d77a268d350ded5cf15fc077ce1191e642b2cac997ef227508b8cbde2257b822"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/minecraft/blasting.js"
+hash = "7f926bbd92eefa4508ca92ba1d56960a3477027f691e653c377744896cf4e8fe"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/minecraft/compostables.js"
+hash = "0c110b826e39c5e68ac1d6a821c81682218699a465836daca497cb35f39b8064"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/shaped.js"
-hash = "39c96440b1677013c5d22c211e54e0dd5541770aa7036f18f2e77d9f18e441fc"
+hash = "abe35ff0b1f0f57a4581d462adfee54605bd6a2aa679988f9e0803ae661dcc0f"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/shapeless.js"
-hash = "33383aab1fe2e66f7f50f4a38f8650b2655d8fbee79d80cff655b3d607a2d241"
+hash = "34472332e828282d429be9ca602ee99d5b1a9c864614f6f47f47d3a87531e4c6"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/minecraft/smelting.js"
+hash = "171ef257499a0557d9a91f364d94f7377b50dee139bdaf75e5e643aab972661e"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/smithing.js"
 hash = "c424a357e36c0570994bcfd29510dd513f7a658d56bfbb341ab8b842e65a79e1"
 
 [[files]]
+file = "kubejs/server_scripts/recipes/minecraft/smoking.js"
+hash = "62d945f47bf4fd9274c529682f307a9f4dbf56166e9565f457b20f61eed09224"
+
+[[files]]
 file = "kubejs/server_scripts/recipes/minecraft/stonecutting.js"
-hash = "cc177acf4f4bcedcadce100bca04f2feef99c554ccdc2b3a97fc9102f53372e2"
+hash = "ca3a0d7d20bc862105bbc0386a9fc286da19727716e74d3bc85cf39971679e75"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/removals.js"
-hash = "c3f33b3c78ed2ca0aa8f331da031812af7ec35542903396a6bce17f0e0b58da5"
+hash = "a9f32e16cba84856d33106c7fc490f67511deb4aba2837895ba089aabd9b6408"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/replacements.js"
-hash = "77ad43842f27044576a4d68e9adf22b6ff5dcc4981a9b8bc5fa32b2842f8542f"
+hash = "38233aaa5482f7e637dd2388a1fec7676780fae3a428fe0be054327de25b8d20"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/casting_basin.js"
@@ -19705,10 +19725,6 @@ file = "kubejs/server_scripts/recipes/yttr/lamps.js"
 hash = "a40b5f628fbfc151bb32ff136d24f03c6b9fd84ce535a64b9d2e9f4193c1b371"
 
 [[files]]
-file = "kubejs/server_scripts/server.js"
-hash = "208d7f6945dcb2bc616f7cf3388399f4c1a2b4e53e5a174c110d700dd5f3868d"
-
-[[files]]
 file = "kubejs/server_scripts/tags/blocks.js"
 hash = "caefee027230ec02b18b3984f998cf62c073b3b60bda92d35ad392a2f3215709"
 
@@ -19717,40 +19733,180 @@ file = "kubejs/server_scripts/tags/items.js"
 hash = "64f1ae1e135e240d8e0256ed27d721c2f13a6f25d0f22c72ed8b64e8ea4abcbf"
 
 [[files]]
-file = "kubejs/startup_scripts/astralsignals_registry.js"
-hash = "fc606d2957141a4e017e0d7706e5bb4d6f47028ad5fc3f6c7926ba534c24d51a"
-
-[[files]]
-file = "kubejs/startup_scripts/block_registry.js"
-hash = "52702ee57d1cf1036bd0aadaa10cba57c2b9d41de8a8d0ff6db41709fffc4042"
-
-[[files]]
-file = "kubejs/startup_scripts/fluid_registry.js"
-hash = "5b117c9d4da44260f66f664899400f3b3d3c55e2d3f3f76bd7bd01403bff24ab"
-
-[[files]]
-file = "kubejs/startup_scripts/item/item_modification.js"
-hash = "50154cd8fdb8648f9079cd4f374f4a9ba305e47cd8ba9ba8c77f59af8ad08f67"
-
-[[files]]
-file = "kubejs/startup_scripts/item_registry.js"
-hash = "3f22050b1b1aea8a536b1e761fbe339b9ed9c6c7acfb5b131b1b42d73986505d"
-
-[[files]]
-file = "kubejs/startup_scripts/item_tooltip.js"
-hash = "c28aa96e763d761f240fefebf1256b0554ae898b2e9d7e8814a2c218144363b4"
-
-[[files]]
-file = "kubejs/startup_scripts/planet_destroyer.js"
+file = "kubejs/startup_scripts/misc/planet_destroyer.js"
 hash = "17767c189610ee743310e6204b04e214ca8d597e44d8850a02cc41844cc7cb62"
 
 [[files]]
-file = "kubejs/startup_scripts/startup.js"
-hash = "8507fbfdf783e48bcfb6685ca64854cb382b41e99d0f3554671f46aecf485291"
+file = "kubejs/startup_scripts/misc/startup.js"
+hash = "cc1828b9120df74fdb4a31c08f05a981df2f6e07b02b0ba7c4317e0ef9d83bc7"
 
 [[files]]
-file = "kubejs/startup_scripts/worldgen.js"
+file = "kubejs/startup_scripts/misc/worldgen.js"
 hash = "82b1cf183cc913dc55965bef2bfefb8cb0c510e42eadfb43f41a52c235121c83"
+
+[[files]]
+file = "kubejs/startup_scripts/modification/create/block.js"
+hash = "ffa539f39570b84e2be506be1cfb06c998cc69e4b1f8387d1827e54e3cb2cc8d"
+
+[[files]]
+file = "kubejs/startup_scripts/modification/create/item.js"
+hash = "df711c22288dcf06ff99734e72e1bfb14c54b4e3483c450d5438ff8e6d291a43"
+
+[[files]]
+file = "kubejs/startup_scripts/modification/createaddition/item.js"
+hash = "4940e7d53ae47787c8ab3ed666bae52a0e903594cea66506d16ff368fd9bf39d"
+
+[[files]]
+file = "kubejs/startup_scripts/modification/createastral/item.js"
+hash = "13938b3986564403d6179956e4a6fffa9ffce756c6c9539be0aa3a57d74679d0"
+
+[[files]]
+file = "kubejs/startup_scripts/modification/estrogen/item.js"
+hash = "198fec02745a29012c315456b2066ac53ee00e7beaa04f7add74b0b07720c74d"
+
+[[files]]
+file = "kubejs/startup_scripts/modification/farmersdelight/item.js"
+hash = "b84ecac647960eb3c46e466d774de9a78b267042ee0498bf38ff02a4c24cfd21"
+
+[[files]]
+file = "kubejs/startup_scripts/modification/minecraft/block.js"
+hash = "f7ab4e95b2a32a1b8e36c8cceb699dc1ef744ca7b2011d79e12a401b4e2aba2a"
+
+[[files]]
+file = "kubejs/startup_scripts/modification/minecraft/item.js"
+hash = "bfa760239226f09423a7cbb15ac839a00ef53ecec51a8b16752be23056bac6f7"
+
+[[files]]
+file = "kubejs/startup_scripts/modification/techreborn/block.js"
+hash = "b3a453a21112280e9e78a02b8c4c85daa48705a2e6906399b20f520d8f2a96a8"
+
+[[files]]
+file = "kubejs/startup_scripts/modification/techreborn/item.js"
+hash = "1d409b770a7ac5e6372f4cea1fe9b415bbaa347523d0967a4a85644187cb3964"
+
+[[files]]
+file = "kubejs/startup_scripts/modification/yigd/block.js"
+hash = "f8ef08c9d8c3afb5bccb21d0e5948d9768719ee797da79a6638ebbc1a691ea35"
+
+[[files]]
+file = "kubejs/startup_scripts/modification/yttr/block.js"
+hash = "1f45cd1d4a8e76269e74b39af6178c231ad8b0ddafc1e0a01e38c74bfc54fcee"
+
+[[files]]
+file = "kubejs/startup_scripts/registry/astralfoods/item.js"
+hash = "9eb65d2074d261af70da3f226cf6ea7bde82064eb2248d8490844f92224403fc"
+
+[[files]]
+file = "kubejs/startup_scripts/registry/astralsignals/block.js"
+hash = "1653d6816e29af575686a60650c29b6b2606310826dcfe673bdb02d7fc1066f5"
+
+[[files]]
+file = "kubejs/startup_scripts/registry/astralsignals/item.js"
+hash = "4de65ba1f93f6ec38b87322acfb5615fb63413096eb6538e3791abc4a91ea76c"
+
+[[files]]
+file = "kubejs/startup_scripts/registry/createastral/block.js"
+hash = "0f0b0ddd75dc9b6de0986160b5034af6e4cc34d0222688718c2d30fb167b16f3"
+
+[[files]]
+file = "kubejs/startup_scripts/registry/createastral/item/armor_tiers.js"
+hash = "ffe20c94c06bd4b664242a82d56fd1771a1c43ddf4dc0739f7374188cb050516"
+
+[[files]]
+file = "kubejs/startup_scripts/registry/createastral/item/item.js"
+hash = "7bb54391fd52d4c5a9d7b7fa4a590df29a3c1a10d6e31d450026f25522b1a809"
+
+[[files]]
+file = "kubejs/startup_scripts/registry/createastral/item/tool_tiers.js"
+hash = "062ccd8b0d74b2aa9b0a6e8659eddc0125183de9e4a2cf8c8d4e6e4853dd55d3"
+
+[[files]]
+file = "kubejs/startup_scripts/registry/definedsblocks/block.js"
+hash = "c7907d0442632f3b7508e40ac462953e7867d8da3a9b78b911cb8bb1e569d8c8"
+
+[[files]]
+file = "kubejs/startup_scripts/registry/doodads/block.js"
+hash = "2fbf56e4c1e5b614f1fa5d707c521581ebb994cf2caa0127f0c9bc8c68e07a7f"
+
+[[files]]
+file = "kubejs/startup_scripts/registry/kubejs/block.js"
+hash = "2e71f4131988656ca8db1f3c8ec13746c6ecabe07a6576b47f9945ffae1a50f1"
+
+[[files]]
+file = "kubejs/startup_scripts/registry/kubejs/fluid.js"
+hash = "3f38c6109251ccb825816d41120c5a98798e92192ea24ca4372372b8efbd853a"
+
+[[files]]
+file = "kubejs/startup_scripts/registry/kubejs/item.js"
+hash = "dc82f99e70a9769a2ca44ff0ab32d91291569094cb595ea202c97ff33f5ec1dc"
+
+[[files]]
+file = "kubejs/startup_scripts/registry/yttr/block.js"
+hash = "1ec8d3c0fe70439d8867c1ef57d334f1d22958a71b7f336de5f6bc4d4587bba3"
+
+[[files]]
+file = "kubejs/startup_scripts/tooltip/ad_astra.js"
+hash = "f3b7e239b9b54a4ffe882feb12be8d38f1060247aa148ca98b515e46ff412afa"
+
+[[files]]
+file = "kubejs/startup_scripts/tooltip/adoptafloppa.js"
+hash = "cfb3d25fe5816d9d7d64eaae61be6ede08514b1736120f1ee23b2bf0d0c45fbb"
+
+[[files]]
+file = "kubejs/startup_scripts/tooltip/ae2.js"
+hash = "e861ddf3ac18aa3706aece1b7ff8c283da1e288f05dcab39c8cdf8a1e4ec7f0c"
+
+[[files]]
+file = "kubejs/startup_scripts/tooltip/astraladditions.js"
+hash = "1697a6ea62e939de97059c50af402f191c4b8d062c699fe434cde612b91725b8"
+
+[[files]]
+file = "kubejs/startup_scripts/tooltip/astralfoods.js"
+hash = "ca90ffa06915b9cbe42669363a40390f8c10a17287b445aa033a79af7e384ccc"
+
+[[files]]
+file = "kubejs/startup_scripts/tooltip/computercraft.js"
+hash = "c88520aee4dd7be7a6b4a96fe55f0da7d29b9567cf4497ab703e32bdace9888a"
+
+[[files]]
+file = "kubejs/startup_scripts/tooltip/create.js"
+hash = "dcf800ba57556b5397c8861f0b7291216899b9b8c7b998cdf93e4ce2f71bfe7a"
+
+[[files]]
+file = "kubejs/startup_scripts/tooltip/createastral.js"
+hash = "55be0a8b75b66f9ab48e1738717f44685d25088f5813c7135cc3106207811b14"
+
+[[files]]
+file = "kubejs/startup_scripts/tooltip/createbigcannons.js"
+hash = "da3a3b3ca4056c1242db4a3f63cd0ca6fe3c6e3f09a455da796ef4b4aa35780f"
+
+[[files]]
+file = "kubejs/startup_scripts/tooltip/extended_drawers.js"
+hash = "bce533592424b1e22581fdb7e8a7fe28417adca2d5318d87e13d167c084b2d99"
+
+[[files]]
+file = "kubejs/startup_scripts/tooltip/extractinator.js"
+hash = "63351238f0ddae737a72b135a355febdb524e38c166b3ccb562725fa22691cbb"
+
+[[files]]
+file = "kubejs/startup_scripts/tooltip/kubejs.js"
+hash = "ab8dfa5fa073832e86dc90f0fd3144d42cd1e46333d053c95a072f69f938682b"
+
+[[files]]
+file = "kubejs/startup_scripts/tooltip/minecraft.js"
+hash = "776c7e46f12e67cc16350d2c0acc17ac18e022d227fab2c049b215b94197767d"
+
+[[files]]
+file = "kubejs/startup_scripts/tooltip/tconstruct.js"
+hash = "4aa1bddf86ca6af375264dccb864495e355d40fafb5c758a64b3549df18ba922"
+
+[[files]]
+file = "kubejs/startup_scripts/tooltip/techreborn.js"
+hash = "be7c12d1cbeb30b6b8c9340761e4b2aeb32c250da1171b833da8e907ad3967d1"
+
+[[files]]
+file = "kubejs/startup_scripts/tooltip/yttr.js"
+hash = "5db232984c6644538d551994f8ca4a0e72e6aea4d5daa9d8e0fb266d35e4acf3"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"

@@ -763,7 +763,7 @@ onEvent("recipes", (event) => {
             output: "3x createdeco:copper_door",
             pattern: ["AA", "AA", "AA"],
             key: {
-                A: "create:copper_ingot",
+                A: "minecraft:copper_ingot",
             },
         },
         {
