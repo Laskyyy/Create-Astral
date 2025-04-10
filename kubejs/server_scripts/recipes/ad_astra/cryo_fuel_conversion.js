@@ -26,7 +26,7 @@ onEvent("recipes", (event) => {
             ratio: 0.025,
         },
     ].forEach((recipe) => {
-        event.custon({
+        event.custom({
             type: "ad_astra:cryo_fuel_conversion",
             input: recipe.input,
             output: recipe.output,

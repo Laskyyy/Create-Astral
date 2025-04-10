@@ -6425,70 +6425,6 @@ file = "kubejs/data/ad_astra/planet_data/planets/the_nether.json"
 hash = "e7161720fcf4bf16ea05a3400b1e08b1a6566a8a83242b496c4d6ec934188467"
 
 [[files]]
-file = "kubejs/data/ad_astra/recipes/conversion/cryo_fuel_from_blue_ice.json"
-hash = "742f6537ea9de2864411b8bcd25adb35e69d45726638311cfc25e81f17413563"
-
-[[files]]
-file = "kubejs/data/ad_astra/recipes/conversion/cryo_fuel_from_ice.json"
-hash = "afd2f52160ba8b7bdf670a59a35f97e789a0aa5f812595ee5aefc42391302bdb"
-
-[[files]]
-file = "kubejs/data/ad_astra/recipes/conversion/cryo_fuel_from_ice_shard.json"
-hash = "9c900e8b755014ec6d16d90757784504ce0490778d5a74cf3daf15d093f81262"
-
-[[files]]
-file = "kubejs/data/ad_astra/recipes/conversion/cryo_fuel_from_packed_ice.json"
-hash = "0562588093a67255f7acfce59a4b1ab563f90187fea5a449654bd347bd9f26d4"
-
-[[files]]
-file = "kubejs/data/ad_astra/recipes/conversion/cryo_fuel_from_prismatic.json"
-hash = "6c597219e696a58abea815a6753280e46c28d3f4cbc692739c41ac484e43c514"
-
-[[files]]
-file = "kubejs/data/ad_astra/recipes/conversion/oxygen_from_oxygen.json"
-hash = "865ba9dfc21964667a710a2772f846fd436976587a00022860bc48787ac52cc6"
-
-[[files]]
-file = "kubejs/data/ad_astra/recipes/conversion/oxygen_from_water.json"
-hash = "48e1c6b61d5413511a598ebe6fd15f00c43523104190a9d2a391b35b4bb746fa"
-
-[[files]]
-file = "kubejs/data/ad_astra/recipes/nasa_workbench/tier_1_rocket.json"
-hash = "8ea87663f0946b289b6863289615588f1245397c42d2027586f2d23f9774e43d"
-
-[[files]]
-file = "kubejs/data/ad_astra/recipes/nasa_workbench/tier_2_rocket.json"
-hash = "0f861120c469b5bdcdde4e5e6bb54aa7a634b7e48469d1f5c239d9bb807ff1e8"
-
-[[files]]
-file = "kubejs/data/ad_astra/recipes/nasa_workbench/tier_4_rocket.json"
-hash = "be7f980d5d172d11478b9bfdce81b30331783b8f593ef6eb97a121b4a441a70a"
-
-[[files]]
-file = "kubejs/data/ad_astra/recipes/recipes/engine_fan.json"
-hash = "9dfa0bf4d0d185ef7e67bbeb6e608a77bb9f71b3ee5ce7d8fd0e2896a635caf6"
-
-[[files]]
-file = "kubejs/data/ad_astra/recipes/recipes/netherite_space_boots.json"
-hash = "caee18356783e1f1888c81ba113ab8716ac9331fd186fa13a4b357d8f677e3c6"
-
-[[files]]
-file = "kubejs/data/ad_astra/recipes/recipes/netherite_space_helmet.json"
-hash = "c7d18b684b814e5b0e4deca8750cfa02a2712889ea55f34788b6e51aeb6a2db3"
-
-[[files]]
-file = "kubejs/data/ad_astra/recipes/recipes/netherite_space_pants.json"
-hash = "6a7b13b9b2759b91b0d35d077fa3af0e68ed68581870522888b0d4dbd12441fc"
-
-[[files]]
-file = "kubejs/data/ad_astra/recipes/recipes/netherite_space_suit.json"
-hash = "2a18b58a4193945f99e0ff6a800de579afab13d3c59b6a2cc250194ebf8d7812"
-
-[[files]]
-file = "kubejs/data/ad_astra/recipes/space_station/space_station.json"
-hash = "f4c0e79814f3795579f37fbb87c67207ea4163d7cafc678fe58df4c25135651b"
-
-[[files]]
 file = "kubejs/data/ad_astra/structures/space_station.nbt"
 hash = "21b5fc334268bcb3fa3afe4ed40bce3bb3fa20ce4dd2cb9ab5603b2eca6df4cd"
 
@@ -19493,6 +19429,18 @@ file = "kubejs/server_scripts/misc/tconstruct_fluidsyncfix.js"
 hash = "3944c2284f9fe0a6ba797e83f8eaee0c3345c535fe0f9e72a3555c4a41523cfc"
 
 [[files]]
+file = "kubejs/server_scripts/recipes/ad_astra/cryo_fuel_conversion.js"
+hash = "ce27fa366dd2db71aeec2960f63ab8875bd0f44c4ea7eaf4bbbdef9c8cf1c191"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/ad_astra/oxygen_conversion.js"
+hash = "d68a8fbcf23d9e01f259eaddc06cd33dea04dfa8974977fb987a7e25005bb34a"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/ad_astra/space_station.js"
+hash = "dee6701a0db25b122d616575ca2979fa455c81b1b2f518eb5f88f9586bacc5ab"
+
+[[files]]
 file = "kubejs/server_scripts/recipes/astral_generators/amalgamation_matrix.js"
 hash = "5b7adb656ad6852fc7142aa28962067c1de7272b2046aeb19451a413afed9d83"
 
@@ -19662,7 +19610,7 @@ hash = "ca3a0d7d20bc862105bbc0386a9fc286da19727716e74d3bc85cf39971679e75"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/removals.js"
-hash = "a9f32e16cba84856d33106c7fc490f67511deb4aba2837895ba089aabd9b6408"
+hash = "5c2684d1882a0d2567985c97767cbab53494dba5df5ff3e0913ca1dd69b8c439"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/replacements.js"
