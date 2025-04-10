@@ -2097,6 +2097,11 @@ function fillingRecipes(event) {
 function deployingRecipes(event) {
     [
 		{
+            output: "createastral:cheesier_block",
+            basin_input: "ad_astra:cheese_block",
+            deployer_input: "ad_astra:cheese",
+        },
+		{
             output: "minecraft:redstone_torch",
             basin_input: "minecraft:torch",
             deployer_input: "minecraft:redstone",
@@ -2332,8 +2337,8 @@ function mixingRecipes(event) {
         },
 		{
             output: [
-				Item.of("2x createastral:marimo").withChance(0.5),
-				Item.of("2x createastral:moonset_marimo").withChance(0.5),
+				Item.of("2x createastral:marimo").withChance(0.4),
+				Item.of("2x createastral:moonset_marimo").withChance(0.6),
 				{
 					fluid: "minecraft:water",
 					amount: BUCKET,

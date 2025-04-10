@@ -1,0 +1,11 @@
+{
+  "config": {
+    "start_pool": "astralrails:mars/piglin/lobby",
+    "size": 7
+  },
+  "biomes": "ad_astra:martian_wastelands",
+  "adapt_noise":true,
+  "spawn_overrides": {
+  },
+  "type": "minecraft:village"
+}

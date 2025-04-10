@@ -186,6 +186,18 @@ onEvent("block.registry", (event) => {
         .displayName("Charcoal Block")
         .tagBlock("minecraft:mineable/pickaxe")
         .material("stone");
+		
+	event
+        .create("createastral:cheese_bricks", "basic")
+        .hardness(4)
+        .tagBlock("minecraft:mineable/pickaxe")
+        .material("stone");
+		
+	event
+        .create("createastral:cheesier_block", "basic")
+        .hardness(4)
+        .tagBlock("minecraft:mineable/pickaxe")
+        .material("stone");
 
     event
         .create("createastral:compressed_experience_block")
