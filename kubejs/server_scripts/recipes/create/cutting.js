@@ -1,4 +1,7 @@
 onEvent("recipes", (event) => {
+    autoChipped(event);
+    farmersCompatCutting(event);
+
     // [Input string, Output string]
     [
         ["createastral:marimo", "minecraft:seagrass"],
@@ -39,10 +42,12 @@ onEvent("recipes", (event) => {
     ].forEach((recipe) => {
         event.recipes.createCutting(recipe[1], recipe[0]);
     });
+});
 
-    // Konsola's Auto Chipped script
+function autoChipped(event) {
+    //? Konsola's auto_chipped.js script
 
-    /* [
+    [
         "chipped:alchemy_bench",
         "chipped:botanist_workbench",
         "chipped:carpenters_table",
@@ -57,13 +62,28 @@ onEvent("recipes", (event) => {
                 Ingredient.of(`#${tag}`)
                     .getStacks()
                     .forEach((item) => {
-                        event.recipes.createCutting(item.id, tag);
+                        event.custom({
+                            type: "create:cutting",
+                            ingredients: [
+                                {
+                                    tag: tag,
+                                },
+                            ],
+                            results: [
+                                {
+                                    item: item.id,
+                                },
+                            ],
+                        });
                     });
             });
         });
-    }); */
+    });
+}
 
-    // RandomUser240306's farmerscompat.js script
+function farmersCompatCutting(event) {
+    //? RandomUser240306's farmerscompat.js script
+
     event.forEachRecipe({ type: "farmersdelight:cutting" }, (recipe) => {
         let newList = Utils.newList();
         recipe.json.get("result").forEach((e) => newList.push(e));
@@ -75,4 +95,4 @@ onEvent("recipes", (event) => {
             processingItem: 50,
         });
     });
-});
+}

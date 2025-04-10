@@ -362,7 +362,7 @@ hash = "8d7ce46d8038ef37e526605538913133dba45657144c228080d1a8ba1e55436d"
 
 [[files]]
 file = "config/fancymenu/custom_gui_screens.txt"
-hash = "c6c4e0e64f60257e6cff4b3f143c0057ad561729da86a5d73bec23fd9880ca21"
+hash = "04ea9bc23ce39a24106b5371b56a8cb6d88661db29971ad1579324bce3b433b0"
 
 [[files]]
 file = "config/fancymenu/custom_locals/astralmenu/en_us.local"
@@ -19566,7 +19566,7 @@ hash = "fd5cbb8c806de6522401e910a4f6e401d7d19344d600b2ec9268f9b815f7deac"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/cutting.js"
-hash = "0583dac2b807b8d2fa3010c93e3b9ef23bca5249d09807ac2add0cbf582f0a51"
+hash = "559a3e21bbbb303541c0710355abdd978b3b6e6e008b9bf03454b34747def808"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/deploying.js"
