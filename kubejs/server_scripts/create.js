@@ -2162,7 +2162,7 @@ function mixingRecipes(event) {
 				"astraladditions:bulba_root"
 			],
             heat: "",
-            time: 210,
+            time: 105,
         },
 		{
             output: [
