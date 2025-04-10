@@ -341,6 +341,11 @@ onEvent("recipes", (event) => {
         { output: "ad_astra:steel_tank" },
         { output: "ad_astra:rocket_nose_cone" },
 
+        { output: "ad_astra:oxygen", type: "ad_astra:oxygen_conversion" },
+        { output: "ad_astra:cryo_fuel", type: "ad_astra:cryo_fuel_conversion" },
+
+        { type: "ad_astra:space_station" },
+
         // AE2
 
         { output: "ae2:fluix_dust" },
