@@ -6653,50 +6653,6 @@ file = "kubejs/data/ad_astra/worldgen/structure_set/meteor.json"
 hash = "6ec5d60ffc82d14b24b378037b92c648e0bb83601d3b799073d41450e6fd5894"
 
 [[files]]
-file = "kubejs/data/ae2/recipes/inscriber/calculation_processor.json"
-hash = "c4fdcb27b06cf134f82347e2b7a5a8afd1fd4461893a8dbbd145f9199aaa892a"
-
-[[files]]
-file = "kubejs/data/ae2/recipes/inscriber/calculation_processor_press.json"
-hash = "8133c7d2a98770179ad2571b2c9777ee39336f2ff43eb7ec8a23c5d96653e34b"
-
-[[files]]
-file = "kubejs/data/ae2/recipes/inscriber/calculation_processor_print.json"
-hash = "a0174ce0880373428cc95686d4cef80b2eb71eb42851cc4765443a45bfeb6913"
-
-[[files]]
-file = "kubejs/data/ae2/recipes/inscriber/engineering_processor.json"
-hash = "56e6e15d65c9914fd40db912282e7acd4421d6c101dcc9659a118da88b6aeda9"
-
-[[files]]
-file = "kubejs/data/ae2/recipes/inscriber/engineering_processor_press.json"
-hash = "0879fc6f4fc7b16eb414cd9e27b3600f24c776259b7c9cfc3b683b0977088e8d"
-
-[[files]]
-file = "kubejs/data/ae2/recipes/inscriber/engineering_processor_print.json"
-hash = "2cc9f9cb2a3e9080eee6c4de9a2baf9cceb4e77ee67fab0afe1071470c64ca9c"
-
-[[files]]
-file = "kubejs/data/ae2/recipes/inscriber/logic_processor.json"
-hash = "cebc000f51e5025b41317e75b6c470ba0fafd446cbba69899b54836666439fc9"
-
-[[files]]
-file = "kubejs/data/ae2/recipes/inscriber/logic_processor_press.json"
-hash = "5084425e828275269a0c38dedcda085e468224f65c98729f75f2775441c7c3a8"
-
-[[files]]
-file = "kubejs/data/ae2/recipes/inscriber/logic_processor_print.json"
-hash = "a2af2aaf6da1bcb8e4a429fa671c1f6bb999db779f040e366f446f69f210e579"
-
-[[files]]
-file = "kubejs/data/ae2/recipes/inscriber/silicon_press.json"
-hash = "b93c9d831c0741db379afa383ac9bccaca245965b0eb11eb277cb41c7dd2559a"
-
-[[files]]
-file = "kubejs/data/ae2/recipes/inscriber/silicon_print.json"
-hash = "79797dd675708ebeb57c9eeb8cc90d15a4e9c93eacdd1b6b8ae24d42e677608e"
-
-[[files]]
 file = "kubejs/data/ae2/tags/worldgen/biome/has_meteorites.json"
 hash = "4c2230a2f252ea1067b6a7e41c1d5cf69d786bfc649d4cd6eaa13ff310a2298f"
 
@@ -6719,42 +6675,6 @@ hash = "ce0c131fd5a4b3ee6b02367253a161bb39ab2bca661e65c10b050015c6acdc0e"
 [[files]]
 file = "kubejs/data/astraladditions/loot_tables/gameplay/fragile_items/fragile_item_3.json"
 hash = "ef182d0df6aaaf0ec80209c789124e63046ab7d5d38d0f3a1b8bab87cb8d4215"
-
-[[files]]
-file = "kubejs/data/astraladditions/recipes/charcoal_1.json"
-hash = "c0984eb63b8bb459ce3d8c5d16c204a98789c4a5f671ec0ce353529f486b746b"
-
-[[files]]
-file = "kubejs/data/astraladditions/recipes/charcoal_2.json"
-hash = "301e5bb936dfc4f66e77bebcd1b4788850749618706b62aca853fd734642a37e"
-
-[[files]]
-file = "kubejs/data/astraladditions/recipes/charcoal_3.json"
-hash = "abcf0d1ef2e1850c45b04f8089fb1a3f1ccc302db548e47a705ddf0292d77be6"
-
-[[files]]
-file = "kubejs/data/astraladditions/recipes/coal_1.json"
-hash = "8f8ec22faa0396e0d6d82d3145d025fcb20b2efe25e348b72bf6bd9b5a551827"
-
-[[files]]
-file = "kubejs/data/astraladditions/recipes/compressed_onion.json"
-hash = "08021b27be5235745b785ae8fbfd1afeb381ec426f353af7117ba726b15f4be9"
-
-[[files]]
-file = "kubejs/data/astraladditions/recipes/compressed_ultrapure_carbon_block.json"
-hash = "f6d69901084b40046c93655e0c61c90109128de4e253c109100984f55bb6c842"
-
-[[files]]
-file = "kubejs/data/astraladditions/recipes/diamond.json"
-hash = "f1c48925eafa78a99b05b41da0c35c6f708982520fcf5f23c7c748a8104fa737"
-
-[[files]]
-file = "kubejs/data/astraladditions/recipes/root_of_continuity.json"
-hash = "e1f73baf6dad59cb072563efe74db6032ee038d9fd600a7f1c6a9c254ff40e28"
-
-[[files]]
-file = "kubejs/data/astraladditions/recipes/sturdy_cage.json"
-hash = "76e68eff4abe8bfe06ba78c6cb49995a53759ca099b3b77284913e0cb34c7909"
 
 [[files]]
 file = "kubejs/data/astralgenerators/machines/amalgamation_matrix.json"
@@ -6783,54 +6703,6 @@ hash = "49d208cc8655ded67e691d7cb84b2de649331f2a62d1001965a3649fd51b506e"
 [[files]]
 file = "kubejs/data/astralgenerators/machines/steam_turbine.json"
 hash = "50ca505bc2d33c1ac3ded9ecd88a81aad58e34d99fbdc01f803ccb37369ba92b"
-
-[[files]]
-file = "kubejs/data/astralgenerators/recipes/amalgamation_matrix/test.json"
-hash = "489898143da589dd86f5f329c8dbc5d5abaed3a30810e4716da01298ec23659b"
-
-[[files]]
-file = "kubejs/data/astralgenerators/recipes/assembler/convergence_core.json"
-hash = "7fd6c0fa12ab753430a19a280a080b908c685a62035973a11e903cca270b34a0"
-
-[[files]]
-file = "kubejs/data/astralgenerators/recipes/assembler/fluid_boiler.json"
-hash = "2ada4c26e3a2c83f7d12df48fb64f1ae12b07eb414508e07c373b6c8c0902d13"
-
-[[files]]
-file = "kubejs/data/astralgenerators/recipes/assembler/fusion_reactor.json"
-hash = "42ef6629781bee43401ee9e3c02fceb3a4b1a14936af9b215bd3aac3befdf7bd"
-
-[[files]]
-file = "kubejs/data/astralgenerators/recipes/assembler/particle_accelerator.json"
-hash = "b40a6edefb120d76c97ae8b421309676f45eddae4687eb7202b139571964aa3f"
-
-[[files]]
-file = "kubejs/data/astralgenerators/recipes/assembler/solid_boiler.json"
-hash = "48eebe66835dd4f77d49564f27731516f4ff294310fbfed1cf1b891868b36a7a"
-
-[[files]]
-file = "kubejs/data/astralgenerators/recipes/assembler/steam_turbine.json"
-hash = "74c3739e66b5d0ffd8f87b3be09602d8c7426acb0fb7096d24de3373ea0170ad"
-
-[[files]]
-file = "kubejs/data/astralgenerators/recipes/boiler/steam_from_fuel.json"
-hash = "69a483e6e71e3b748c234c7792e516532962d6deef10900f03aaac4d1a2e23f7"
-
-[[files]]
-file = "kubejs/data/astralgenerators/recipes/boiler/steam_from_lava.json"
-hash = "f70dc9aa4cacb1df645316d1febf03e6216c55e9c60e87220f46c8e8ea0ceab2"
-
-[[files]]
-file = "kubejs/data/astralgenerators/recipes/fusion_reactor/helium3.json"
-hash = "0f78d95126dcf83ab03f1da532521c66093120ef9a3df6cd532a282b533ebd1b"
-
-[[files]]
-file = "kubejs/data/astralgenerators/recipes/particle_accelerator/astral_singularity.json"
-hash = "000c4ee5e2b59165d1bb197a4a536974ffd78c14d64baa133bd45cab13de5013"
-
-[[files]]
-file = "kubejs/data/astralgenerators/recipes/steam_turbine/steam_to_energy.json"
-hash = "b6f4717e2f05ea7f740aeb09ba62ac726520b34e309a55d8a9dbeeec4d690769"
 
 [[files]]
 file = "kubejs/data/astralportals/portals/debrisportal.json"
@@ -19442,11 +19314,31 @@ hash = "dee6701a0db25b122d616575ca2979fa455c81b1b2f518eb5f88f9586bacc5ab"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astral_generators/amalgamation_matrix.js"
-hash = "5b7adb656ad6852fc7142aa28962067c1de7272b2046aeb19451a413afed9d83"
+hash = "ed50e27ad29d979c62bf44101c8427a6afdf20d225aa62314cfec5db6111ee81"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/astral_generators/assembler.js"
+hash = "f9123750b6b26d4c5533ac803489c0f83a60014d752489bcb2b6ba3923b31725"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astral_generators/astral_generators.js"
 hash = "d8c32dd6d7e641791c41e13c7e1fb86e3ce74fa29bdc748cf5ea8cc7f4f7fd25"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/astral_generators/boiler.js"
+hash = "dee70965bae40c045dda3062d2c3c8d20746f50046fbce2660429aee49d13367"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/astral_generators/fusion_reactor.js"
+hash = "fb9dfe8ede5890f47f3d75e5ad891ecd25068e5cc85d79bfcabf6a46955a8a4d"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/astral_generators/particle_accelerator.js"
+hash = "b538ad4caf8a3acb5dce0fd13ef33da69ad6e1ecf689ae165d1ca8d32f5a9966"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/astral_generators/steam_turbine.js"
+hash = "69df09dbd3e324ec6c6f3a5edee81766cde422f65cf8470b330599d574521d6a"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astral_signals/machines/analog_decryptor.js"
@@ -19490,7 +19382,7 @@ hash = "cd5c8ccbcbb6fac0913c504b2241f361f6b4b8f422111c934636d101732604d4"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astraladditions/desizer.js"
-hash = "1ded9779f569dd2d2d03eb558e95721658c8fade450c99442eb292cd6a386805"
+hash = "ae60735e223cf479db034edb648468126bd6c27fe292cd74f594205bf244b497"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astraladditions/shimmer_transmute.js"
