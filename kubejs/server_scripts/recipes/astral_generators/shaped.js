@@ -1,20 +1,4 @@
 onEvent("recipes", (event) => {
-    AGShapeRecipes(event);
-    AGShapelessRecipes(event);
-    AGMixingRecipes(event);
-});
-
-function AGMixingRecipes(event) {
-    event.recipes.create
-        .mixing("astralgenerators:fusion_glass", ["techreborn:flint_dust", "techreborn:steel_dust", "minecraft:glass"])
-        .heated();
-}
-
-function AGShapelessRecipes(event) {
-    event.shapeless("astralgenerators:vent", ["ad_astra:vent", "techreborn:basic_machine_frame"]);
-}
-
-function AGShapeRecipes(event) {
     event.shaped(
         Item.of("custommachinery:custom_machine_item", {
             machine: "astralgenerators:assembler",
@@ -62,4 +46,4 @@ function AGShapeRecipes(event) {
         y: "techreborn:silver_plate",
         z: "astralgenerators:superconducting_coil",
     });
-}
+});
