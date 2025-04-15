@@ -249,14 +249,6 @@ const mixings = [
                 ],
                 heat: "superheated",
                 time: null,  //Vegan BLOOD
-            },{
-                output: {fluid: "tconstruct:blazing_blood", amount: BUCKET / 4 },
-                input: [
-                    "minecraft:blaze_powder",
-                    { fluid: "tconstruct:blood", amount: BUCKET },
-                ],
-                heat: "heated",
-                time: 120,
             }];
             for (const mixing of mixings) {
                 event.recipes
