@@ -1881,7 +1881,7 @@ function sequencedAssemblyRecipes(event) {
 
 function fillingRecipes(event) {
     [
-		{
+        {
             input: "minecraft:glass_bottle",
             output: "astraladditions:shimmer_bottle",
             fluid: "kubejs:shimmer",
@@ -2014,6 +2014,12 @@ function fillingRecipes(event) {
             amount: INGOT,
         },
         {
+            input: "minecraft:cookie",
+            output: "astralfoods:ice_cream_sandwich",
+            fluid: "astralfoods:cream",
+            amount: 250 * mB,
+        },
+        {
             input: "minecraft:bowl",
             output: "farmersdelight:squid_ink_pasta",
             fluid: "kubejs:squid_ink_pasta_fluid",
@@ -2041,7 +2047,7 @@ function fillingRecipes(event) {
             input: "drinkbeer:empty_beer_mug",
             output: "drinkbeer:beer_mug_blaze_milk_stout",
             fluid: "kubejs:blaze_milk_stout_fluid",
-            amount: 250 * mB
+            amount: 250 * mB,
         },
         {
             input: "drinkbeer:empty_beer_mug",
@@ -2191,7 +2197,7 @@ function mixingRecipes(event) {
             heat: "",
             time: 180,
         },
-		{
+        {
             output: [
 				{
 					fluid: "kubejs:shimmer",
@@ -3405,8 +3411,45 @@ function mixingRecipes(event) {
             input: ["astralfoods:astral_sauce", "2x astralfoods:quantum_bites", "farmersdelight:raw_pasta"],
             heat: "heated",
             time: 250,
-				},
-				{
+        },
+        {
+            output: [{ fluid: "astralfoods:cream", amount: BUCKET }],
+            input: [
+                "3x minecraft:sugar",
+                {
+                    fluid: "milk:still_milk",
+                    amount: BUCKET,
+                },
+            ],
+            heat: "heated",
+            time: 100,
+        },
+        {
+            output: ["astralfoods:chocolate_ice_cream"],
+            input: [
+                "create:bar_of_chocolate",
+                {
+                    fluid: "astralfoods:cream",
+                    amount: BUCKET / 4,
+                },
+            ],
+            heat: "heated",
+            time: 60,
+        },
+        {
+            output: ["astralfoods:gamers_delight"],
+            input: [
+                "techreborn:compressed_plantball",
+                "farmersdelight:pie_crust",
+                {
+                    fluid: "techreborn:lithium",
+                    amount: BUCKET,
+                },
+            ],
+            heat: "heated",
+            time: 80,
+        },
+        {
             output: "yttr:ruined_cobblestone",
             input: ["minecraft:cobblestone", "yttr:rubble", {
 				fluid: "tconstruct:magma",
@@ -4939,6 +4982,22 @@ function compactingRecipes(event) {
         .createCompacting("ad_astra:permafrost", ["9x ad_astra:glacio_stone"])
         .superheated()
         .processingTime(200);
+
+    event.recipes
+        .createCompacting("astralfoods:blaze_fries", [
+            "astralfoods:blaze_rods",
+            { fluid: "createaddition:seed_oil", amount: 100 * mB },
+        ])
+        .heated()
+        .processingTime(40);
+
+    event.recipes
+        .createCompacting("astralfoods:fried_cod", [
+            "minecraft:cod",
+            { fluid: "createaddition:seed_oil", amount: 100 * mB },
+        ])
+        .heated()
+        .processingTime(60);
 
     event.recipes.createCompacting("4x minecraft:purpur_block", [
         "4x ad_astra:strophar_cap",
