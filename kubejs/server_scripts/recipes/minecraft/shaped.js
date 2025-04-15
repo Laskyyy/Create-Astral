@@ -1258,6 +1258,27 @@ onEvent("recipes", (event) => {
                 A: "doodads:asphalt",
             },
         },
+        {
+            output: "chipped:carpenters_table",
+            pattern: ["  y", "axa", "bca"],
+            key: {
+                x: "minecraft:crafting_table",
+                y: "minecraft:iron_ingot",
+                a: "#minecraft:logs",
+                b: "minecraft:flint",
+                c: "#minecraft:planks",
+            },
+        },
+        {
+            output: "chipped:alchemy_bench",
+            pattern: [" b ", "axa", "aya"],
+            key: {
+                x: "minecraft:crafting_table",
+                y: "vinery:fermentation_barrel",
+                a: "#minecraft:wooden_slabs",
+                b: "drinkbeer:beer_barrel",
+            },
+        },
     ].forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key);
     });

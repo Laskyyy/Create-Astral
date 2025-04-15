@@ -9393,26 +9393,6 @@ file = "kubejs/data/astralsignals/tags/items/drives_decrypted_t3.json"
 hash = "7b07989371d9b5306ff39fea1ed1f8f8c2eb75c295900314b6c3fcc48c8281fa"
 
 [[files]]
-file = "kubejs/data/automobility/recipes/engine/copper_engine.json"
-hash = "454d03fec017a683e84ff45688c5df2756989866750a8619411d8a4cdc107187"
-
-[[files]]
-file = "kubejs/data/automobility/recipes/engine/diamond_engine.json"
-hash = "70016df8676408432a81271bf4706a4b3503d02c55ef0e35e42d3f36c95b15aa"
-
-[[files]]
-file = "kubejs/data/automobility/recipes/engine/gold_engine.json"
-hash = "041401de38361cf82f2f7f9fe4913bf5e007b99a82030dec12aae1d798a7f121"
-
-[[files]]
-file = "kubejs/data/automobility/recipes/engine/iron_engine.json"
-hash = "7ebb138cd8e32aac38ad4e5cb2458e5c0152dd0772651f766c8d3b440fe0c9be"
-
-[[files]]
-file = "kubejs/data/automobility/recipes/engine/stone_engine.json"
-hash = "6c81443492c6a55a707449255b5b97f8ed663665d36a664ca868dc526e2760d1"
-
-[[files]]
 file = "kubejs/data/c/tags/blocks/andesite.json"
 hash = "c53cd15eef542f8ddd636a7abe5f642cc9573a7d5a56f0e1d7487d4974723879"
 
@@ -10763,34 +10743,6 @@ hash = "c1c0acbeee4a05697fe23d5c7d79484df2bc88a4c9ccc00836e38d5416e1abc7"
 [[files]]
 file = "kubejs/data/c/tags/items/zinc_small_dusts.json"
 hash = "96ce980edfab27d149c50ac9b7d340483320eae74ba54c1c39b1b133fc4bd09e"
-
-[[files]]
-file = "kubejs/data/chipped/recipes/benches/alchemy_bench.json"
-hash = "2a64c179988ade87333d712109057e26c1872f18c14fb3bbdec1b5e9d813b564"
-
-[[files]]
-file = "kubejs/data/chipped/recipes/benches/botanist_workbench.json"
-hash = "960a107065d536d37b6751e01a819571f3d6480f112333b045e882fffcdb4816"
-
-[[files]]
-file = "kubejs/data/chipped/recipes/benches/carpenters_table.json"
-hash = "5d69d15852654c2c3796f3b6c1c88d8b85972262ae41ab1a2071b6ab6064e52b"
-
-[[files]]
-file = "kubejs/data/chipped/recipes/benches/glassblower.json"
-hash = "e47fa8fadb1b39f1d52ba627a8ee00ca7b5b7be3644282d8bab41fecf1e4866b"
-
-[[files]]
-file = "kubejs/data/chipped/recipes/benches/loom_table.json"
-hash = "c75cade5a08cd90db489f57df7037cb55a8bb0a54b3ff5c4edb933caa9e8650a"
-
-[[files]]
-file = "kubejs/data/chipped/recipes/benches/mason_table.json"
-hash = "f3d74769fc863ae823e432674e2e392ed860458071e503ad08404aa5ae4d4ce1"
-
-[[files]]
-file = "kubejs/data/chipped/recipes/benches/mechanist_workbench.json"
-hash = "4ab18f9956bb12363b6679098ade63e54edead82c06c3f001ef24562ce13fa04"
 
 [[files]]
 file = "kubejs/data/create/advancements/andesite_alloy.json"
@@ -19313,32 +19265,40 @@ file = "kubejs/server_scripts/recipes/ad_astra/space_station.js"
 hash = "dee6701a0db25b122d616575ca2979fa455c81b1b2f518eb5f88f9586bacc5ab"
 
 [[files]]
-file = "kubejs/server_scripts/recipes/astral_generators/amalgamation_matrix.js"
+file = "kubejs/server_scripts/recipes/astral_generators/machines/amalgamation_matrix.js"
 hash = "ed50e27ad29d979c62bf44101c8427a6afdf20d225aa62314cfec5db6111ee81"
 
 [[files]]
-file = "kubejs/server_scripts/recipes/astral_generators/assembler.js"
+file = "kubejs/server_scripts/recipes/astral_generators/machines/assembler.js"
 hash = "f9123750b6b26d4c5533ac803489c0f83a60014d752489bcb2b6ba3923b31725"
 
 [[files]]
-file = "kubejs/server_scripts/recipes/astral_generators/astral_generators.js"
-hash = "d8c32dd6d7e641791c41e13c7e1fb86e3ce74fa29bdc748cf5ea8cc7f4f7fd25"
-
-[[files]]
-file = "kubejs/server_scripts/recipes/astral_generators/boiler.js"
+file = "kubejs/server_scripts/recipes/astral_generators/machines/boiler.js"
 hash = "dee70965bae40c045dda3062d2c3c8d20746f50046fbce2660429aee49d13367"
 
 [[files]]
-file = "kubejs/server_scripts/recipes/astral_generators/fusion_reactor.js"
+file = "kubejs/server_scripts/recipes/astral_generators/machines/fusion_reactor.js"
 hash = "fb9dfe8ede5890f47f3d75e5ad891ecd25068e5cc85d79bfcabf6a46955a8a4d"
 
 [[files]]
-file = "kubejs/server_scripts/recipes/astral_generators/particle_accelerator.js"
+file = "kubejs/server_scripts/recipes/astral_generators/machines/particle_accelerator.js"
 hash = "b538ad4caf8a3acb5dce0fd13ef33da69ad6e1ecf689ae165d1ca8d32f5a9966"
 
 [[files]]
-file = "kubejs/server_scripts/recipes/astral_generators/steam_turbine.js"
+file = "kubejs/server_scripts/recipes/astral_generators/machines/steam_turbine.js"
 hash = "69df09dbd3e324ec6c6f3a5edee81766cde422f65cf8470b330599d574521d6a"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/astral_generators/mixing.js"
+hash = "040de2b5f12365cfd2df7b1ffb416b2f201704c7a4c84e0be2b737f43ca666aa"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/astral_generators/shaped.js"
+hash = "ddaf2554a4700846147c46d6009f5446136b88f75f7440fe2b8d4b16efa756ce"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/astral_generators/shapeless.js"
+hash = "22e4e0c2dd9e6584e86309cbd3871ce9e6fffa7aa92a6899d0566d98b95b88a2"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astral_signals/machines/analog_decryptor.js"
@@ -19387,6 +19347,10 @@ hash = "ae60735e223cf479db034edb648468126bd6c27fe292cd74f594205bf244b497"
 [[files]]
 file = "kubejs/server_scripts/recipes/astraladditions/shimmer_transmute.js"
 hash = "bd5fde9896e580b0ec6d77c05e62a9d0a13693a54b206ff9bfac76dc1f709de1"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/automobility/auto_mechanic_table/engines.js"
+hash = "d07e4201cde5cc0724aa8afa7101c131199fc6fd1fbe40c9b1ddf1014093ab00"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/compacting.js"
@@ -19478,7 +19442,7 @@ hash = "0c110b826e39c5e68ac1d6a821c81682218699a465836daca497cb35f39b8064"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/shaped.js"
-hash = "abe35ff0b1f0f57a4581d462adfee54605bd6a2aa679988f9e0803ae661dcc0f"
+hash = "a4a965752e7a0d14e5374209576576fc3474a7ff95840a0f9fa7aa308e072351"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/shapeless.js"
@@ -19502,7 +19466,7 @@ hash = "ca3a0d7d20bc862105bbc0386a9fc286da19727716e74d3bc85cf39971679e75"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/removals.js"
-hash = "5c2684d1882a0d2567985c97767cbab53494dba5df5ff3e0913ca1dd69b8c439"
+hash = "df86b87fe90da22964a4235eb48b07658e43d01e8c2238177526735626bc52e4"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/replacements.js"

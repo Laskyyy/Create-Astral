@@ -391,6 +391,8 @@ onEvent("recipes", (event) => {
         { output: "minecraft:shroomlight" },
 
         { output: "chipped:mechanist_workbench" },
+        { output: "chipped:carpenters_table" },
+        { output: "chipped:alchemy_bench" },
 
         { output: "passivepiglins:piglin_fortune" },
         { output: "passivepiglins:piglin_totem" },
