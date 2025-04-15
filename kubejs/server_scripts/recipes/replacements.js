@@ -26,7 +26,6 @@ onEvent("recipes", (event) => {
         [{ output: "minecraft:pointed_dripstone" }, "techreborn:calcite_small_dust", "techreborn:calcite_dust"],
         [{ output: "minecraft:hopper" }, "minecraft:iron_ingot", "create:iron_sheet"],
         [{ output: "minecraft:calcite" }, "techreborn:calcite_small_dust", "techreborn:calcite_dust"],
-        [{ output: "techreborn:nanosaber" }, "techreborn:glowstone_small_dust", "minecraft:glowstone_dust"],
         [{ output: "techreborn:copper_cable" }, "minecraft:copper_ingot", "createaddition:copper_rod"],
         [{ output: "techreborn:gold_cable" }, "minecraft:gold_ingot", "createaddition:gold_rod"],
         [
@@ -253,7 +252,6 @@ onEvent("recipes", (event) => {
             "techreborn:lead_plate",
         ],
         ["techreborn:energy_flow_chip", "techreborn:data_storage_chip"],
-        [{ output: "techreborn:nanosaber" }, "create:precision_mechanism", "create:refined_radiance"],
         [{ mod: "techreborn" }, "techreborn:iridium_ingot", "yttr:yttrium_ingot"],
         [{ mod: "techreborn" }, "techreborn:iridium_plate", "yttr:yttrium_ingot"],
         [{ output: "ad_astra:cryo_freezer" }, "ad_astra:ostrum_tank", "techreborn:lithium_ion_battery"],
