@@ -8,9 +8,9 @@
     },
     "gui": [
         {
-            "texture": "resources/createastral/textures/gui/sgc_gui.png",
-            "x": 0,
-            "y": 0,
+            "texture": "createastral:textures/gui/sgc_gui.png",
+            "x": 47,
+            "y": 16,
             "type": "custommachinery:texture"
         },
         {

@@ -8,8 +8,8 @@
     },
     "gui": [
         {
-            "texture": "resources/createastral/textures/gui/electrolyzer_gui.png",
-            "x": 0,
+            "texture": "createastral:textures/gui/electrolyzer_gui.png",
+            "x": 47,
             "y": 0,
             "type": "custommachinery:texture"
         },
