@@ -116,6 +116,10 @@ onEvent("recipes", (event) => {
                 ["techreborn:tin_nugget", 0.25],
             ],
         },
+        {
+            input: "createastral:orcane",
+            outputs: ["createastral:orcane"],
+        },
     ].forEach((recipe) => {
         let cleanoutputs = [];
         recipe.outputs.forEach((output) => {

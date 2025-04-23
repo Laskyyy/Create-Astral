@@ -61,6 +61,7 @@ onEvent("recipes", (event) => {
         [["1x ad_astra:moon_stone", "1x astraladditions:moonset_crystal"], "1x createastral:moonset_stone"],
         [["ad_astra:fuel_bucket"], "techreborn:nitro_diesel_bucket"],
         [["ad_astra:oil_bucket"], "techreborn:oil_bucket"],
+        [["#c:plates/iron", "create:fluid_pipe"], "create:fluid_valve"],
     ].forEach((recipe) => {
         event.shapeless(recipe[1], recipe[0]);
     });

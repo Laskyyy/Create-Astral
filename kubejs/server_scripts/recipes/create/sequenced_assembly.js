@@ -237,6 +237,18 @@ onEvent("recipes", (event) => {
         .loops(2)
         .transitionalItem(inc_sturdy_sheet);
 
+    event.recipes
+        .createSequencedAssembly(["create:sturdy_sheet"], "create:powdered_obsidian", [
+            event.recipes.createFilling(inc_sturdy_sheet, [
+                inc_sturdy_sheet,
+                { fluid: "minecraft:lava", amount: mB * 50 },
+            ]),
+            event.recipes.createPressing(inc_sturdy_sheet, inc_sturdy_sheet),
+            event.recipes.createPressing(inc_sturdy_sheet, inc_sturdy_sheet),
+        ])
+        .loops(5)
+        .transitionalItem(inc_sturdy_sheet);
+
     event.custom({
         type: "create:sequenced_assembly",
         ingredient: { tag: "c:plates/gold" },
@@ -292,6 +304,40 @@ onEvent("recipes", (event) => {
         )
         .transitionalItem("minecraft:bowl")
         .loops(1);
+
+    event.custom({
+        type: "create:sequenced_assembly",
+        ingredient: {
+            item: "createastral:sturdy_cage",
+        },
+        transitionalItem: {
+            item: "createastral:sturdy_cage",
+        },
+        sequence: [
+            {
+                type: "create:deploying",
+                ingredients: [
+                    {
+                        item: "createastral:sturdy_cage",
+                    },
+                    {
+                        "yttr:entity": "astraladditions:ender_watcher",
+                    },
+                ],
+                results: [
+                    {
+                        item: "createastral:sturdy_cage",
+                    },
+                ],
+            },
+        ],
+        results: [
+            {
+                item: "createastral:contained_end",
+            },
+        ],
+        loops: 1,
+    });
 
     function biomassSequence(event) {
         var transitional_c_plantball = "techreborn:plantball";

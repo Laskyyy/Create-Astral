@@ -359,6 +359,13 @@ onEvent("recipes", (event) => {
                 ["xpcrystals:soul_compound", 0.5],
             ],
         },
+        {
+            input: "minecraft:dried_kelp",
+            outputs: [
+                ["minecraft:gunpowder", 0.5],
+                ["create:experience", 0.1],
+            ],
+        },
     ].forEach((recipe) => {
         let cleanoutputs = [];
         recipe.outputs.forEach((output) => {

@@ -1,5 +1,9 @@
 onEvent("recipes", (event) => {
+    otherMillingRecipes(event);
+    sifterRecipes(event);
     // [Input, Output, Chance]
+    //? This array is for simple "single input -> single output + chance" recipes
+    //? Use the otherMillingRecipes function for more complex recipes e.g. multiple outputs
     [
         ["minecraft:rooted_dirt", "minecraft:dirt", 1],
         ["farmersdelight:straw", "minecraft:string", 1],
@@ -39,11 +43,27 @@ onEvent("recipes", (event) => {
         ["kubejs:broken_fire_resistant_fragile_sheet_block", "16x create:powdered_obsidian", 1],
         ["astraladditions:shimmer_blaze_rod", "2x astraladditions:shimmer_blaze_powder", 1],
         ["minecraft:amethyst_shard", "techreborn:amethyst_dust", 1],
+        ["minecraft:diorite", "minecraft:quartz", 0.25],
+        ["minecraft:dried_kelp", "minecraft:gunpowder", 0.25],
+        ["techreborn:rubber_log", "techreborn:sap", 0.35],
     ].forEach((recipe) => {
         event.recipes.createMilling([Item.of(recipe[1]).withChance(recipe[2])], recipe[0]);
     });
+});
 
-    // Old sifter recipes that were transferred to the millstone to update create to 0.5.1
+function otherMillingRecipes(event) {
+    [
+        {
+            input: "minecraft:obsidian",
+            output: ["create:powdered_obsidian", Item.of("minecraft:obsidian").withChance(0.25)],
+        },
+    ].forEach((recipe) => {
+        event.recipes.createMilling(recipe.output, recipe.input);
+    });
+}
+
+function sifterRecipes(event) {
+    //? Old sifter recipes that were transferred to the millstone to update create to 0.5.1
 
     [
         {
@@ -155,4 +175,4 @@ onEvent("recipes", (event) => {
         const outputs = recipe.outputs.map((output) => Item.of(output.item).withChance(output.chance));
         event.recipes.createMilling(outputs, inputs);
     });
-});
+}

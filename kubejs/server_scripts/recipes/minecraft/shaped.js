@@ -1279,6 +1279,108 @@ onEvent("recipes", (event) => {
                 b: "drinkbeer:beer_barrel",
             },
         },
+        {
+            output: "create:copper_backtank",
+            pattern: ["AGA", "PBP", " P "],
+            key: {
+                G: "create:shaft",
+                A: "create:andesite_alloy",
+                B: "minecraft:copper_block",
+                P: "techreborn:rubber",
+            },
+        },
+        {
+            output: "create:belt_connector",
+            pattern: ["DDD", "EEE"],
+            key: {
+                D: "minecraft:dried_kelp",
+                E: "techreborn:rubber",
+            },
+        },
+        {
+            output: "create:brass_hand",
+            pattern: [" A ", "BBB", " B "],
+            key: {
+                A: "create:andesite_alloy",
+                B: "techreborn:rubber",
+            },
+        },
+        {
+            output: "create:controls",
+            pattern: ["B", "C", "I"],
+            key: {
+                I: "create:zinc_block",
+                B: "minecraft:lever",
+                C: "create:railway_casing",
+            },
+        },
+        {
+            output: "2x create:fluid_pipe",
+            pattern: [" S ", "CCC", " S "], // horizontal
+            key: {
+                S: "#c:plates/copper",
+                C: "techreborn:rubber",
+            },
+        },
+        {
+            output: "2x create:fluid_pipe",
+            pattern: [" C ", "SCS", " C "], // vertical
+            key: {
+                S: "#c:plates/copper",
+                C: "techreborn:rubber",
+            },
+        },
+        {
+            output: "create:fluid_tank",
+            pattern: [" B ", "BCB", " B "],
+            key: {
+                B: "create:copper_sheet",
+                C: "#c:barrels/wooden",
+            },
+        },
+        {
+            output: "create:goggles",
+            pattern: [" S ", "GPG"],
+            key: {
+                G: "#c:glass",
+                P: "#c:plates/gold",
+                S: "techreborn:rubber",
+            },
+        },
+        {
+            output: "2x create:andesite_funnel",
+            pattern: ["A", "K"],
+            key: {
+                A: "create:andesite_alloy",
+                K: "techreborn:rubber",
+            },
+        },
+        {
+            output: "2x create:andesite_tunnel",
+            pattern: ["AA", "KK"],
+            key: {
+                A: "create:andesite_alloy",
+                K: "techreborn:rubber",
+            },
+        },
+        {
+            output: "2x create:brass_funnel",
+            pattern: ["E", "A", "K"],
+            key: {
+                A: "#c:ingots/brass",
+                K: "techreborn:rubber",
+                E: "create:electron_tube",
+            },
+        },
+        {
+            output: "2x create:brass_tunnel",
+            pattern: ["E", "AA", "KK"],
+            key: {
+                A: "#c:ingots/brass",
+                K: "techreborn:rubber",
+                E: "create:electron_tube",
+            },
+        },
     ].forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key);
     });
