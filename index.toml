@@ -10934,7 +10934,7 @@ hash = "b84bc959f30ad3812c13cc3c3c04d7b275864d28ad7c04460fe74761924f02e3"
 
 [[files]]
 file = "kubejs/data/create/tags/blocks/wrench_pickup.json"
-hash = "5df4d8970db184369cf52385f286fb42fbd714891341e3de75f309f3c642eaa1"
+hash = "2a3c9ccfe5f594b59c4bdac0893f275ffef32198a4968f2c860ab2e090734e1e"
 
 [[files]]
 file = "kubejs/data/create/tags/fluids/bottomless/allow.json"
@@ -11589,6 +11589,10 @@ file = "kubejs/data/estrogen/recipes/mixing/molten_amethyst.json"
 hash = "39ac9a9214d01c0dffdaa80a54e2c95c761525f2eaa5ca0e32b24b40a013cb85"
 
 [[files]]
+file = "kubejs/data/extended_drawers/tags/blocks/drawer_containers.json"
+hash = "53d16372ba4bcff9a51d278bbfc21c93c8f56fe8e46a3829ee5b9f4dbeb22d9f"
+
+[[files]]
 file = "kubejs/data/extractinator/recipes/extractinating/cobblestone.json"
 hash = "563397b2489574ca583794f9e969d5f1cce9916a07ae61c7704467217c9c6b29"
 
@@ -11863,6 +11867,14 @@ hash = "f445ba233db9a547d9a7075a6398d388e974954496f027253aef372fe90eb815"
 [[files]]
 file = "kubejs/data/minecraft/tags/blocks/mushroom_grow_block.json"
 hash = "da524055f7c58593ba83e7a2fa49e38d973ea5bf4975294195cbce3dac031881"
+
+[[files]]
+file = "kubejs/data/minecraft/tags/blocks/needs_diamond_tool.json"
+hash = "5a00557b0f11b155e1ff2ab294af00363ae48531c14fcb1e1f0fe620cd7f723e"
+
+[[files]]
+file = "kubejs/data/minecraft/tags/blocks/needs_iron_tool.json"
+hash = "225a453ed10866d0c218a9251df61b599c0307dab9cd756b221bfea8ce6bdc87"
 
 [[files]]
 file = "kubejs/data/minecraft/tags/blocks/piglin_repellents.json"
@@ -18985,6 +18997,10 @@ file = "kubejs/data/xpcrystals/worldgen/placed_feature/xp_geode_ore.json"
 hash = "6aec08b45b171fcb5f05e25e462c1e81da669166951ccb8a00bb78835b422528"
 
 [[files]]
+file = "kubejs/data/yigd/tags/blocks/replace_blacklist.json"
+hash = "89a14dffb3d6d9efdc7c8be3ec82e052941c3590075d39b67645e0a5ab0ac146"
+
+[[files]]
 file = "kubejs/data/yttr/loot_tables/blocks/root_of_continuity.json"
 hash = "7f42bf885a843f8242f5d5d082466ad19f5246fe1323a1ebe9f71dcea61894f9"
 
@@ -19314,7 +19330,7 @@ hash = "0c110b826e39c5e68ac1d6a821c81682218699a465836daca497cb35f39b8064"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/shaped.js"
-hash = "5af1433cb8a8834a1869f618dde31835703be886112e1829de849533c2800c71"
+hash = "b04c1f1c6189e437bd05c29594c300af3577e040a668e9672ead44dd6b0792df"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/shapeless.js"
@@ -19346,11 +19362,11 @@ hash = "95fa251c21ea025238ddb5e8a0960a542bd66f80900d7c9959c3e853e8e78f66"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/casting_basin.js"
-hash = "9884debfe6a59107ac9123291eb3e271234ab320cb616df13eb24f011042e670"
+hash = "9c24dd2e5d48b8d3904e89f5a38f216d43eaa511b135450317e2af2870f4484b"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/casting_table.js"
-hash = "02d28ad8efd072c8ba9f29c6beaa697db2955a32a6bd935f31a9c2eb4f06202d"
+hash = "7eab8ea9a1c1424678a0b96edd6fc3125f9727dc5511700a632e9962f07dd9f1"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/entity_melting.js"
@@ -19399,10 +19415,6 @@ hash = "04b6756ee33b2ffb8c44285fa0bd63cd66c1808c555352814ae6a68ab5daffbd"
 [[files]]
 file = "kubejs/server_scripts/recipes/yttr/lamps.js"
 hash = "a40b5f628fbfc151bb32ff136d24f03c6b9fd84ce535a64b9d2e9f4193c1b371"
-
-[[files]]
-file = "kubejs/server_scripts/tags/blocks.js"
-hash = "64b8f84a87ddb802cb1ae5d27e8dbd0eed6e1cddd5077d60cd73620f310cdd31"
 
 [[files]]
 file = "kubejs/server_scripts/tags/items.js"

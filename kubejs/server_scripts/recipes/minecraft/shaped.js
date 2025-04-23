@@ -1374,7 +1374,7 @@ onEvent("recipes", (event) => {
         },
         {
             output: "2x create:brass_tunnel",
-            pattern: ["E", "AA", "KK"],
+            pattern: ["E ", "AA", "KK"],
             key: {
                 A: "#c:ingots/brass",
                 K: "techreborn:rubber",

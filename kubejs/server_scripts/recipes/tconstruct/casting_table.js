@@ -89,12 +89,6 @@ onEvent("recipes", (event) => {
             cooling_time: 20,
             cast: [{ item: "minecraft:potato" }, true],
         },
-        {
-            fluid: ["tconstruct:molten_tin", BUCKET],
-            result: "extended_drawers:shadow_drawer",
-            cooling_time: 117, // same as cooling tin block
-            cast: [{ tag: "extended_drawers:drawers" }, true],
-        },
     ].forEach((recipe) => {
         event.custom({
             type: "tconstruct:casting_table",
