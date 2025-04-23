@@ -1,6 +1,10 @@
 // Java reflection stuff //
 // Custom drawer upgrades
 
+const modpackVersion = "EXPERIMENTAL v2.1.4";
+
+console.log(modpackVersion);
+
 const $DeferredRegister = java("dev.architectury.registry.registries.DeferredRegister");
 const $Tiers = java("net.minecraft.world.item.Tiers");
 const $Item = java("net.minecraft.world.item.Item");
