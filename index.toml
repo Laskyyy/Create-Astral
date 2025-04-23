@@ -10929,140 +10929,12 @@ file = "kubejs/data/create/advancements/wrench_goggles.json"
 hash = "415a7e2b486c7e42f5d243c1b9a04f02629e89b99501b46e49f6a998e8580b57"
 
 [[files]]
-file = "kubejs/data/create/recipes/crafting/appliances/copper_backtank.json"
-hash = "10dc23bf6c4519fc3418db74100ef8c781354b79d51e395fa892c822fdb3c40b"
-
-[[files]]
-file = "kubejs/data/create/recipes/crafting/appliances/diving_boots.json"
-hash = "1f74fc3dd08e45ce767f1e11861d5263e1b5b9637bfec3fe6e4e574ebb0c9749"
-
-[[files]]
-file = "kubejs/data/create/recipes/crafting/appliances/diving_helmet.json"
-hash = "43ff1a6fb0740cdc867853767b7e6ddd98723d7a600b32e186df95b628f36f92"
-
-[[files]]
-file = "kubejs/data/create/recipes/crafting/kinetics/belt_connector.json"
-hash = "20175fe747f5a7d9d6799ba9b1681e68b2595bb0123e1efcf2fbb4ca222e6f81"
-
-[[files]]
-file = "kubejs/data/create/recipes/crafting/kinetics/brass_hand.json"
-hash = "8b47737ca800b7610f5db32c757a395d4ab4cefe488ade9155244950893cf5b1"
-
-[[files]]
-file = "kubejs/data/create/recipes/crafting/kinetics/controls.json"
-hash = "4256598ae29e01b374ef7b189e25d5fac5ba814f3edb5d8c5fccb0991b3f80ae"
-
-[[files]]
-file = "kubejs/data/create/recipes/crafting/kinetics/fluid_pipe.json"
-hash = "76ea2935fe0ac4b166f38660d08c706046836eeab9c5e6b37295bd0ee65607db"
-
-[[files]]
-file = "kubejs/data/create/recipes/crafting/kinetics/fluid_pipe_vertical.json"
-hash = "e71b1aa25aed706edaf1fa57470a30451fd38459b6334b3c98646eee9aa431b1"
-
-[[files]]
-file = "kubejs/data/create/recipes/crafting/kinetics/fluid_tank.json"
-hash = "b83c6714406a6be7ce89f5bf26579feedf2e3a0bd94f46c53582bb1bfd1488c1"
-
-[[files]]
-file = "kubejs/data/create/recipes/crafting/kinetics/fluid_valve.json"
-hash = "793db61f9f7e61a76d22b1aaf81c2c5b70e59bd2b195652229098dfea3347055"
-
-[[files]]
-file = "kubejs/data/create/recipes/crafting/kinetics/goggles.json"
-hash = "1b782db329cc1c900dbfb7045e7620cb94658aaf8144f65661fe722ffb935986"
-
-[[files]]
-file = "kubejs/data/create/recipes/crafting/logistics/andesite_funnel.json"
-hash = "6629f104ff4f21cc6731937966946d03cd8e11a6aaf4277b67e105da3dfc7897"
-
-[[files]]
-file = "kubejs/data/create/recipes/crafting/logistics/andesite_tunnel.json"
-hash = "c069b5e802a2d7aaaa0681fe1ac23c5b26f1bd24dfd407fbf3eb8ae8a7967e3a"
-
-[[files]]
-file = "kubejs/data/create/recipes/crafting/logistics/brass_funnel.json"
-hash = "4eee80ebfe0495f521ac533460f79392eccb294c025e259ac8a504c3ca0ac494"
-
-[[files]]
-file = "kubejs/data/create/recipes/crafting/logistics/brass_tunnel.json"
-hash = "60f144aa9e92f5984b48c511b6d730faf924a1e598398c25111e2dc5d2a411b9"
-
-[[files]]
-file = "kubejs/data/create/recipes/crushing/kelppowder.json"
-hash = "48132a1985785bda6bd23c039ef41f1f011055d81f3f031e5c11fc72dca38b6b"
-
-[[files]]
-file = "kubejs/data/create/recipes/item_application/andesite_casing_from_log.json"
-hash = "c577f5ed7c30e56bb71cd69f983bcffd63d1e287346d28ac1a7f4520e55e2cc4"
-
-[[files]]
-file = "kubejs/data/create/recipes/item_application/andesite_casing_from_wood.json"
-hash = "fdec3f0a5f96968b6d5b14fb56c687c35e4a90a91029bd2e66390c23ce59b9f6"
-
-[[files]]
-file = "kubejs/data/create/recipes/item_application/brass_casing_from_log.json"
-hash = "76dd6f96ebd979a088758e25b4903450955cf85ea7c7331c40baa4f98b2269e0"
-
-[[files]]
-file = "kubejs/data/create/recipes/item_application/brass_casing_from_wood.json"
-hash = "e857956d6e0b792a02bf005d29164707537aca3a2d8fc9975815c31851c8b27f"
-
-[[files]]
-file = "kubejs/data/create/recipes/item_application/copper_casing_from_log.json"
-hash = "831c268fd09c2de5933685f2331f76439fee84f13f431368b6b53b3a2ff452ae"
-
-[[files]]
-file = "kubejs/data/create/recipes/item_application/copper_casing_from_wood.json"
-hash = "831c268fd09c2de5933685f2331f76439fee84f13f431368b6b53b3a2ff452ae"
-
-[[files]]
-file = "kubejs/data/create/recipes/item_application/railway_casing.json"
-hash = "325853bc94c92fe183bdaf6408106f432ed7189f1cff1795e4a95fb7940dcfb5"
-
-[[files]]
-file = "kubejs/data/create/recipes/milling/diorite.json"
-hash = "1f0a5ee5308525cf6bf99c1b2887fb75ed47e6e6d9c7e9219eb92c3c8d05e2b0"
-
-[[files]]
-file = "kubejs/data/create/recipes/milling/kelp.json"
-hash = "ec62a15f5e32c7c7510c49c8a9a980ea9e34623cc6caec1e3acb74a4e97434d1"
-
-[[files]]
-file = "kubejs/data/create/recipes/milling/obsidian.json"
-hash = "755fb35f7b297ca1a30d273b945bfad1b6d45d7f7eb9dcf62d0c096e0e1503b4"
-
-[[files]]
-file = "kubejs/data/create/recipes/milling/sap.json"
-hash = "3ab73d85fc9d484d873d63434800ea810d0b30d6b49d1ac8a94500cb2b27b7db"
-
-[[files]]
-file = "kubejs/data/create/recipes/sequenced_assembly/contained_end.json"
-hash = "e1fc51f68f617b642c2aa993db5fbcf9598ee0ebb044647930568401befe8556"
-
-[[files]]
-file = "kubejs/data/create/recipes/sequenced_assembly/precision_mechanism.json"
-hash = "e8a015b25397a9497d41158b32a0035fec43949c96e222c0f39321ce550856c8"
-
-[[files]]
-file = "kubejs/data/create/recipes/sequenced_assembly/sturdy_sheet.json"
-hash = "d11dfe946c5fcfc1bab72ffc24a0203b1d206d428c3e4722c386d75761641ec7"
-
-[[files]]
-file = "kubejs/data/create/recipes/splashing/orcane.json"
-hash = "2a5cf671e3afbbd2792ef2f956c9482ee9d2218c472281a4c611d6af6e9e93af"
-
-[[files]]
-file = "kubejs/data/create/recipes/splashing/red_sand.json"
-hash = "30058b4acd854772e89a654a58f2d09bfa670496d007f1bf0eda2cf578217bb2"
-
-[[files]]
-file = "kubejs/data/create/recipes/synthetic_redstone.json"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-
-[[files]]
 file = "kubejs/data/create/tags/blocks/distillation_tower/blaze_burners.json"
 hash = "b84bc959f30ad3812c13cc3c3c04d7b275864d28ad7c04460fe74761924f02e3"
+
+[[files]]
+file = "kubejs/data/create/tags/blocks/wrench_pickup.json"
+hash = "5df4d8970db184369cf52385f286fb42fbd714891341e3de75f309f3c642eaa1"
 
 [[files]]
 file = "kubejs/data/create/tags/fluids/bottomless/allow.json"
@@ -19366,7 +19238,7 @@ hash = "cad724be67ea5a29129fd68b7b4464c583c6288c830a7b6a0ebf177a2d73b250"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/crushing.js"
-hash = "fd5cbb8c806de6522401e910a4f6e401d7d19344d600b2ec9268f9b815f7deac"
+hash = "94776ab60ddfbca8f5c6b61b8ea0866bb8d0b661cc47b7c5f1a6067d4d5c67bb"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/cutting.js"
@@ -19398,7 +19270,7 @@ hash = "ed850d00428037d1246f7616ae29717e29a46e55d7557a8b25615e230e5e77d9"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/milling.js"
-hash = "2b68782632042dbcc0df6b4a2c43c74e05b4029686f7ab0ddb2d77d079697460"
+hash = "05219ce0f5731737dbd03bbff6878700b48061c8b088fe439b80b97731e03c95"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/mixing.js"
@@ -19414,11 +19286,11 @@ hash = "f4668fb6f5e28c3a16f17f5ef0804b56695bb6fef45f354d99103e9b6abcfe1f"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/sequenced_assembly.js"
-hash = "05e60f79682338ca0bdfcc65447b4533ced67e3b3b1557aa6fc3daaf699f6a60"
+hash = "b9f7dc58d9a23782ac01b0680dbc88a0fdd048c7a2644f8e54f704afe8dba182"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/splashing.js"
-hash = "086976d5d5d7ba089f9597ba5ae5438b0f20711fae6051b1c3e13891aee695c8"
+hash = "a8a3258b0628d4fb628bc2db9c29145500f908dd7b01bea0ab758fcb676110bd"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/custommachinery/machines.js"
@@ -19442,11 +19314,11 @@ hash = "0c110b826e39c5e68ac1d6a821c81682218699a465836daca497cb35f39b8064"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/shaped.js"
-hash = "a4a965752e7a0d14e5374209576576fc3474a7ff95840a0f9fa7aa308e072351"
+hash = "5af1433cb8a8834a1869f618dde31835703be886112e1829de849533c2800c71"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/shapeless.js"
-hash = "34472332e828282d429be9ca602ee99d5b1a9c864614f6f47f47d3a87531e4c6"
+hash = "248b70109e95d082b923e23c83e3b60808861deae273644332254c04c588aa18"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/smelting.js"
@@ -19466,11 +19338,11 @@ hash = "ca3a0d7d20bc862105bbc0386a9fc286da19727716e74d3bc85cf39971679e75"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/removals.js"
-hash = "df86b87fe90da22964a4235eb48b07658e43d01e8c2238177526735626bc52e4"
+hash = "c96638bcf373efa50ab857282259d7b58e5b1c01d40003aad923acab96b057ba"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/replacements.js"
-hash = "38233aaa5482f7e637dd2388a1fec7676780fae3a428fe0be054327de25b8d20"
+hash = "95fa251c21ea025238ddb5e8a0960a542bd66f80900d7c9959c3e853e8e78f66"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/casting_basin.js"
@@ -19530,7 +19402,7 @@ hash = "a40b5f628fbfc151bb32ff136d24f03c6b9fd84ce535a64b9d2e9f4193c1b371"
 
 [[files]]
 file = "kubejs/server_scripts/tags/blocks.js"
-hash = "caefee027230ec02b18b3984f998cf62c073b3b60bda92d35ad392a2f3215709"
+hash = "64b8f84a87ddb802cb1ae5d27e8dbd0eed6e1cddd5077d60cd73620f310cdd31"
 
 [[files]]
 file = "kubejs/server_scripts/tags/items.js"
@@ -19542,7 +19414,7 @@ hash = "17767c189610ee743310e6204b04e214ca8d597e44d8850a02cc41844cc7cb62"
 
 [[files]]
 file = "kubejs/startup_scripts/misc/startup.js"
-hash = "cc1828b9120df74fdb4a31c08f05a981df2f6e07b02b0ba7c4317e0ef9d83bc7"
+hash = "bea010d872f33830f70a0266b7555e8f5c9f46e748b270e9610b6560eba46976"
 
 [[files]]
 file = "kubejs/startup_scripts/misc/worldgen.js"
