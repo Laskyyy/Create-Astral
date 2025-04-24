@@ -10941,32 +10941,8 @@ file = "kubejs/data/create/tags/fluids/bottomless/allow.json"
 hash = "d170319eb0fd13317dbd26e2acbe45081d08d4ae86037bf87eb9ec2b2072ce85"
 
 [[files]]
-file = "kubejs/data/create_recipes/recipes/mechanical_crafting/airship.json"
-hash = "dd393d0478fcce4554e9d4e0193a7f1cf288fb012cfa15d626ee699138f82a24"
-
-[[files]]
-file = "kubejs/data/create_recipes/recipes/mechanical_crafting/biplane.json"
-hash = "079764d67548365e4dd7670ae61525ef45adfa8a8eebacfccfc5ed0057492304"
-
-[[files]]
 file = "kubejs/data/createaddition/recipes/compat/tconstruct/blaze_blood.json"
 hash = "621a0b60c213e7a4c1cd022b40d8d05af56869ca62c671b7f3a203b16bcee14f"
-
-[[files]]
-file = "kubejs/data/createaddition/recipes/liquid_burning/biofuel.json"
-hash = "57ffb6106b0329d61b23fc530ee904df4729a5b324bba2d85a0694a1c4bf2129"
-
-[[files]]
-file = "kubejs/data/createaddition/recipes/liquid_burning/lava.json"
-hash = "b708e57da8fb5abf350dba34c95d52bd9ce052cb8fcf3dbea8667fa0f2dd3dcc"
-
-[[files]]
-file = "kubejs/data/createaddition/recipes/liquid_burning/plantoil.json"
-hash = "d6eecb0bcc169fa1a1e9b9404685e6f7368b8a4e8e61f9aebeb476955962e521"
-
-[[files]]
-file = "kubejs/data/createaddition/recipes/mixing/bioethanol.json"
-hash = "48068a23083af9dbabba59208269a7071be988d311506397152f612b39e47b8a"
 
 [[files]]
 file = "kubejs/data/createastral/dimension/moon_debris.json"
@@ -11591,34 +11567,6 @@ hash = "39ac9a9214d01c0dffdaa80a54e2c95c761525f2eaa5ca0e32b24b40a013cb85"
 [[files]]
 file = "kubejs/data/extended_drawers/tags/blocks/drawer_containers.json"
 hash = "53d16372ba4bcff9a51d278bbfc21c93c8f56fe8e46a3829ee5b9f4dbeb22d9f"
-
-[[files]]
-file = "kubejs/data/extractinator/recipes/extractinating/cobblestone.json"
-hash = "563397b2489574ca583794f9e969d5f1cce9916a07ae61c7704467217c9c6b29"
-
-[[files]]
-file = "kubejs/data/extractinator/recipes/extractinating/gravel.json"
-hash = "563397b2489574ca583794f9e969d5f1cce9916a07ae61c7704467217c9c6b29"
-
-[[files]]
-file = "kubejs/data/extractinator/recipes/extractinating/sand.json"
-hash = "563397b2489574ca583794f9e969d5f1cce9916a07ae61c7704467217c9c6b29"
-
-[[files]]
-file = "kubejs/data/extractinator/recipes/extractinating/silt.json"
-hash = "563397b2489574ca583794f9e969d5f1cce9916a07ae61c7704467217c9c6b29"
-
-[[files]]
-file = "kubejs/data/extractinator/recipes/extractinating/slush.json"
-hash = "563397b2489574ca583794f9e969d5f1cce9916a07ae61c7704467217c9c6b29"
-
-[[files]]
-file = "kubejs/data/extractinator/recipes/extractinating/stone.json"
-hash = "563397b2489574ca583794f9e969d5f1cce9916a07ae61c7704467217c9c6b29"
-
-[[files]]
-file = "kubejs/data/extractinator/recipes/extractinator.json"
-hash = "fa43a8b2f2e44671f802e8eb0bc60c3b27a8fb7424280c7d85953cbbb89a3a1a"
 
 [[files]]
 file = "kubejs/data/farmersdelight/loot_tables/inject/chests/abandoned_mineshaft.json"
@@ -19249,6 +19197,10 @@ file = "kubejs/server_scripts/recipes/create/createaddition/charging.js"
 hash = "f7be9774e4eddf7c886f4fdec65bfd3d2199685fdef232effa22000e9a985946"
 
 [[files]]
+file = "kubejs/server_scripts/recipes/create/createaddition/liquid_burning.js"
+hash = "685350b801d721ca0b92988273571af0e5377aee66f17829a6f599eb7e52d822"
+
+[[files]]
 file = "kubejs/server_scripts/recipes/create/createaddition/rolling.js"
 hash = "cad724be67ea5a29129fd68b7b4464c583c6288c830a7b6a0ebf177a2d73b250"
 
@@ -19290,7 +19242,7 @@ hash = "05219ce0f5731737dbd03bbff6878700b48061c8b088fe439b80b97731e03c95"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/mixing.js"
-hash = "0e6e857a7147ab616c06d2adeead5e9c3d025e705e7f1cef5d015a1a6a4022da"
+hash = "ef35cb0880b0847fa0564478e982c627514b98ccc020e5ff91edebfd0da3c398"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/pressing.js"
@@ -19330,7 +19282,7 @@ hash = "0c110b826e39c5e68ac1d6a821c81682218699a465836daca497cb35f39b8064"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/shaped.js"
-hash = "b04c1f1c6189e437bd05c29594c300af3577e040a668e9672ead44dd6b0792df"
+hash = "06ef14f75ee743e01e76255888e8128c469d4e5ad06f4ed5aa3a9d43459ac1f2"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/shapeless.js"
@@ -19354,7 +19306,7 @@ hash = "ca3a0d7d20bc862105bbc0386a9fc286da19727716e74d3bc85cf39971679e75"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/removals.js"
-hash = "c96638bcf373efa50ab857282259d7b58e5b1c01d40003aad923acab96b057ba"
+hash = "e635907266f7444d8fe36b8ddddbb2acd9c7de50561bd4e8d4906d32fea44214"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/replacements.js"

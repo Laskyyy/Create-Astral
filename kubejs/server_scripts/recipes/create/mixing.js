@@ -3237,6 +3237,13 @@ onEvent("recipes", (event) => {
             heat: "",
             time: 25,
         },
+        {
+            output: {
+                fluid: "createaddition:bioethanol",
+                amount: 81000,
+            },
+            input: ["minecraft:sugar", "create:cinder_flour", "2x createaddition:biomass"],
+        },
     ].forEach((recipe) => {
         event.recipes
             .createMixing(recipe.output, recipe.input)

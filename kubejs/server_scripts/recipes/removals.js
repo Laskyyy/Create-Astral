@@ -271,15 +271,14 @@ onEvent("recipes", (event) => {
         { output: "createaddition:alternator" },
         { output: "createaddition:electric_motor" },
         { output: "createaddition:tesla_coil" },
-        {
-            output: "createaddition:biomass_pellet",
-        },
-        {
-            output: "createaddition:biomass_pellet",
-        },
-        {
-            output: "createaddition:biomass",
-        },
+        { output: "createaddition:biomass_pellet" },
+        { output: "createaddition:biomass_pellet" },
+        { output: "createaddition:biomass" },
+        { output: "createaddition:bioethanol" },
+        { type: "createaddition:liquid_burning", input: "createaddition:bioethanol" },
+        { type: "createaddition:liquid_burning", input: "minecraft:lava" },
+        { type: "createaddition:liquid_burning", input: "createaddition:seed_oil" },
+        { type: "createaddition:liquid_burning", input: "tconstruct:blazing_blood" },
 
         // Create Railways
         { output: "railways:track_acacia" },
@@ -617,6 +616,10 @@ onEvent("recipes", (event) => {
             input: "techreborn:netherrack_dust",
             output: "minecraft:redstone",
         },
+
+        // extractinator
+        { type: "extractinator:extractinating" },
+        { output: "extractinator:extractinator" },
     ].forEach((recipe) => {
         event.remove(recipe);
     });

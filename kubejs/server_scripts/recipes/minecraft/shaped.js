@@ -1381,6 +1381,18 @@ onEvent("recipes", (event) => {
                 E: "create:electron_tube",
             },
         },
+        {
+            output: "extractinator:extractinator",
+            pattern: ["H  ", "PRA", "CBA"],
+            key: {
+                H: "minecraft:hopper",
+                P: "minecraft:piston",
+                C: "minecraft:cauldron",
+                B: "minecraft:copper_block",
+                R: "minecraft:redstone_block",
+                A: "minecraft:chain",
+            },
+        },
     ].forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key);
     });
