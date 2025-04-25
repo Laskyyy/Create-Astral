@@ -275,10 +275,7 @@ onEvent("recipes", (event) => {
         { output: "createaddition:biomass_pellet" },
         { output: "createaddition:biomass" },
         { output: "createaddition:bioethanol" },
-        { type: "createaddition:liquid_burning", input: "createaddition:bioethanol" },
-        { type: "createaddition:liquid_burning", input: "minecraft:lava" },
-        { type: "createaddition:liquid_burning", input: "createaddition:seed_oil" },
-        { type: "createaddition:liquid_burning", input: "tconstruct:blazing_blood" },
+        { type: "createaddition:liquid_burning" },
 
         // Create Railways
         { output: "railways:track_acacia" },
