@@ -51,7 +51,7 @@ onEvent("item.tooltip", (event) => {
                 ]);
             }
             if (event.isShift()) {
-                tect.add(1, [Text.of(Component.translate(tooltip.tooltip)).green()]);
+                text.add(1, [Text.of(Component.translate(tooltip.tooltip)).green()]);
             }
         });
     });
