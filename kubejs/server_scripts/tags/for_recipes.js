@@ -24,7 +24,8 @@ onEvent("item.tags", (event) => {
 
     [
         "astraladditions:ring_gold_cast",
-        "tconstruct:gold_platform", //Never add anything here with a melting value below a nugget, thx
+        "tconstruct:gold_platform",
+        "tconstruct:gold_bars"
     ].forEach((item, index) => {
         event.add("tconstruct:casts", item);
         event.add("tconstruct:casts/gold", item);
@@ -37,4 +38,9 @@ onEvent("item.tags", (event) => {
     event.add("tconstruct:slime_block", "createastral:synthetic_slime_block");
 
     event.add("c:raw_materials/cobalt", "createastral:crushed_raw_cobalt");
+
 });
+
+onEvent("fluid.tags", (event)=>{
+    event.add("tconstruct:tooltips/metal", "kubejs:shimmer");
+})

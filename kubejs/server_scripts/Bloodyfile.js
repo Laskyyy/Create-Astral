@@ -16,10 +16,10 @@ onEvent("recipes", (event) => {
             ["minecraft:porkchop"],
             ["createastral:seitan"],
             [event.recipes.createDeploying("createastral:protopork", ["createastral:protopork","minecraft:rotten_flesh"]),
-            
+
             event.recipes.createFilling("createastral:protopork",
                 ["createastral:protopork",{ fluid: "tconstruct:blood", amount: 100 * mB }]),
-            
+
             event.recipes.createPressing("createastral:protopork",
                                              "createastral:protopork"),
             event.recipes.createCutting("createastral:protopork",
@@ -48,7 +48,7 @@ onEvent("recipes", (event) => {
         )
         .transitionalItem("createastral:protomutton")
         .loops(1);
-    
+
     event.recipes
         .createSequencedAssembly(
             ["minecraft:beef"],
@@ -68,7 +68,7 @@ onEvent("recipes", (event) => {
         )
         .transitionalItem("createastral:protobeef")
         .loops(1);
-    
+
     event.recipes
         .createSequencedAssembly(
             ["minecraft:chicken"],
@@ -119,7 +119,7 @@ onEvent("recipes", (event) => {
                     "techreborn:calcite_dust",
                 ]),
                 event.recipes.createFilling("createastral:seitan",
-                ["createastral:seitan",{ fluid: "tconstruct:earth_slime", amount: 10 * mB }    
+                ["createastral:seitan",{ fluid: "tconstruct:earth_slime", amount: 10 * mB }
                 ]),
                 event.recipes.createPressing("createastral:seitan",
                                              "createastral:seitan"),
@@ -146,10 +146,10 @@ onEvent("recipes", (event) => {
                     "minecraft:porkchop",
                     "createastral:seitan",
                 ]),
-                
+
                 event.recipes.createFilling("minecraft:porkchop",
                 ["minecraft:porkchop",{ fluid: "tconstruct:blood", amount: 100 * mB }]),
-                
+
                 event.recipes.createPressing("minecraft:porkchop",
                 "minecraft:porkchop"),
             ]
@@ -174,10 +174,10 @@ onEvent("recipes", (event) => {
                     "createastral:seitan",
                     "minecraft:black_dye",
                 ]),
-                
+
                 event.recipes.createFilling("createastral:seitan",
                 ["createastral:seitan",{ fluid: "minecraft:water", amount: 500 * mB }]),
-                
+
                 event.recipes.createPressing("createastral:seitan",
                 "createastral:seitan"),
             ]
@@ -197,10 +197,10 @@ onEvent("recipes", (event) => {
 
                 event.recipes.createFilling("createastral:incomplete_blaze_head",
                 ["createastral:incomplete_blaze_head",{ fluid: "tconstruct:blazing_blood", amount: 100 * mB }]),
-                
+
                 event.recipes.createFilling("createastral:incomplete_blaze_head",
                 ["createastral:incomplete_blaze_head",{ fluid: "kubejs:shimmer", amount: 50 * mB }]),
-                
+
                 event.recipes.createPressing("createastral:incomplete_blaze_head",
                 "createastral:incomplete_blaze_head"),
             ]

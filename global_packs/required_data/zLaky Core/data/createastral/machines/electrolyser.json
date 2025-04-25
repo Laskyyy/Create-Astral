@@ -1,72 +1,72 @@
 {
-  "name": "custommachinery.createastral.electrolyser",
-  "appearance": {
-    "block": "createastral:electrolyser_dummy",    
-    "running": {
-      "lightlevel": 15
-    }
-  },
-  "gui": [
-    {
-      "texture": "custommachinery:textures/gui/base_background.png",
-      "x": 0,
-      "y": 0,
-      "type": "custommachinery:texture"
+    "name": "custommachinery.createastral.electrolyser",
+    "appearance": {
+        "block": "createastral:electrolyser_dummy",
+        "running": {
+            "lightlevel": 15
+        }
     },
-    {
-      "x": 47,
-      "y": 80,
-      "type": "custommachinery:player_inventory"
-    },
-    {
-      "id": "watertank",
-      "x": 90,
-      "y": 30,
-      "type": "custommachinery:fluid"
-    },
-    
-    {
-      "id": "oxygentank",
-      "x": 142,
-      "y": 30,
-      "type": "custommachinery:fluid"
-    },
-    
-    {
-      "x": 116,
-      "y": 30,
-      "type": "custommachinery:progress"
-    },
-    {
-      "x": 236,
-      "y": 5,
-      "type": "custommachinery:status"
-    },
-    {
-      "text": "custommachinery.createastral.electrolyser.text",
-      "x": 7,
-      "y": 5,
-      "type": "custommachinery:text"
-    }
-  ],
-  "components": [
-    {
-      "type": "custommachinery:fluid",
-      "capacity": 810000,
-      "id": "oxygentank",
-      "maxInput": 0,
-      "maxOutput": 1000,
-      "filter": ["ad_astra:oxygen","kubejs:smite", "techreborn:electrolyzed_water"],
-      "whitelist": true
-  },
-    {
-      "type": "custommachinery:fluid",
-      "capacity": 810000,
-      "id": "watertank",
-      "maxInput": 666,
-      "maxOutput": 0,
-      "filter": ["minecraft:water", "kubejs:hellfire", "kubejs:released_water_coolant"],
-      "whitelist": true
-  }
-  ]
+    "gui": [
+        {
+            "texture": "createastral:textures/gui/electrolyzer_gui.png",
+            "x": 47,
+            "y": 0,
+            "type": "custommachinery:texture"
+        },
+        {
+            "x": 47,
+            "y": 80,
+            "type": "custommachinery:player_inventory"
+        },
+        {
+            "id": "watertank",
+            "x": 90,
+            "y": 30,
+            "type": "custommachinery:fluid"
+        },
+
+        {
+            "id": "oxygentank",
+            "x": 142,
+            "y": 30,
+            "type": "custommachinery:fluid"
+        },
+
+        {
+            "x": 116,
+            "y": 30,
+            "type": "custommachinery:progress"
+        },
+        {
+            "x": 236,
+            "y": 5,
+            "type": "custommachinery:status"
+        },
+        {
+            "text": "custommachinery.createastral.electrolyser.text",
+            "x": 7,
+            "y": 5,
+            "type": "custommachinery:text"
+        }
+    ],
+    "components": [
+        {
+            "type": "custommachinery:fluid",
+            "capacity": 810000,
+            "id": "oxygentank",
+            "maxInput": 0,
+            "maxOutput": 1000,
+            "filter": ["ad_astra:oxygen", "kubejs:smite", "techreborn:electrolyzed_water"],
+            "whitelist": true
+        },
+        {
+            "type": "custommachinery:fluid",
+            "capacity": 810000,
+            "id": "watertank",
+            "maxInput": 666,
+            "maxOutput": 0,
+            "filter": ["minecraft:water", "kubejs:hellfire", "kubejs:released_water_coolant"],
+            "whitelist": true
+        }
+    ]
 }

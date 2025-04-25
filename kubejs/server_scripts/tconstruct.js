@@ -208,6 +208,12 @@ onEvent("recipes", (event) => {
             cooling_time: 20,
             cast: ["minecraft:potato", true],
         },
+        {
+            fluid: ["tconstruct:molten_gold", INGOT],
+            result: "tconstruct:gold_bars",
+            cooling_time: 60,
+            cast: null,
+        },
     ].forEach((recipe) => {
         event.custom({
             type: "tconstruct:casting_table",
