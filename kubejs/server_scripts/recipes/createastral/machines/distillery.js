@@ -122,7 +122,7 @@ onEvent("recipes", (event) => {
                         type: "custommachinery:block",
                         mode: "input",
                         action: "check",
-                        pos: [-1, -3, -2, 1, -3, 0],
+                        pos: [-1, -3, -2, 1, -4, 0],
                         filter: recipe.burnersAllowed,
                         whitelist: true,
                         amount: 9,
