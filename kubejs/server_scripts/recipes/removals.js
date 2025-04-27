@@ -584,6 +584,7 @@ onEvent("recipes", (event) => {
             type: "minecraft:stonecutting",
         },
         { output: "minecraft:dispenser" },
+        { input: "tconstruct:copper_nugget", output: "minecraft:copper_ingot" },
 
         // xpcrystals
         { output: "xpcrystals:crystal_broth" },
