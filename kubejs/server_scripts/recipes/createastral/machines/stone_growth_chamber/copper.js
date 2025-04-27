@@ -40,35 +40,4 @@ onEvent("recipes", (event) => {
             ],
         });
     });
-
-    //? support for old SGC structure andesite recipe
-
-    const oldCopperSGCStructure = [
-        ["aaa", "aaa", "aaa"],
-        ["ggg", "glg", "gmg"],
-        ["aaa", "aaa", "aaa"],
-    ];
-
-    event.custom({
-        type: "custommachinery:custom_machine",
-        machine: "createastral:stone_growth_chamber",
-        time: 10,
-        requirements: [
-            {
-                type: "custommachinery:structure",
-                keys: {
-                    a: "create:copper_casing",
-                    l: "minecraft:lava",
-                    g: "minecraft:glass",
-                },
-                pattern: oldCopperSGCStructure,
-            },
-            {
-                type: "custommachinery:item",
-                item: "minecraft:andesite",
-                amount: 1,
-                mode: "output",
-            },
-        ],
-    });
 });
