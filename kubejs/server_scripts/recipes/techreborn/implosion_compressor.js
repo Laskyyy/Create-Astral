@@ -1,5 +1,27 @@
 onEvent("recipes", (event) => {
     sheetImplosionCompressing(event);
+    [
+        {
+            input: [
+                { count: 64, item: "techreborn:coal_dust" },
+                { item: "minecraft:tnt", count: 4 },
+            ],
+            output: [
+                { item: "minecraft:diamond", count: 1 },
+                { item: "techreborn:dark_ashes_dust", count: 8 },
+            ],
+            power: 60,
+            time: 1000,
+        },
+    ].forEach((recipe) => {
+        event.custom({
+            type: "techreborn:implosion_compressor",
+            power: recipe.power,
+            time: recipe.time,
+            ingredients: recipe.input,
+            results: recipe.output,
+        });
+    });
 });
 
 function sheetImplosionCompressing(event) {

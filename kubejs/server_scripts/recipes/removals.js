@@ -51,6 +51,7 @@ onEvent("recipes", (event) => {
         { input: "techreborn:sponge_piece" },
         { output: "techreborn:sponge_piece" },
         { output: "techreborn:compressed_plantball" },
+        { input: "techreborn:compressed_plantball", type: "techreborn:solid_canning_machine" },
         { output: "techreborn:plantball" },
         { output: "techreborn:grinder" },
         { output: "techreborn:scrapboxinator" },
@@ -154,6 +155,11 @@ onEvent("recipes", (event) => {
         },
         { id: "techreborn:crafting_table/paper" },
         { output: "techreborn:block_placer" },
+        { output: "minecraft:soul_sand", type: "techreborn:centrifuge" },
+        { input: "techreborn:clay_dust", type: "techreborn:industrial_electrolyzer" },
+        { id: "techreborn:solid_canning_machine/sulfur_cell" },
+        { id: "techreborn:solid_canning_machine/bio_cell" },
+
         //Create
         { output: "create:track" },
         { output: "create:blaze_cake" },
