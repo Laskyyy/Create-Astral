@@ -402,10 +402,6 @@ onEvent("recipes", (event) => {
         { type: "tconstruct:melting", input: "minecraft:golden_horse_armor" },
         { type: "tconstruct:melting", input: "minecraft:diamond_horse_armor" },
 
-        // minecraft
-
-        { mod: "minecraft", output: "minecraft:trident" },
-
         // reinfchest
 
         { output: "reinfchest:diamond_chest" },
@@ -540,6 +536,10 @@ onEvent("recipes", (event) => {
         { output: "yttr:giant_cobblestone" },
         { output: "yttr:armor_plating" },
         { output: "yttr:lamp", input: "yttr:glowing_gas" },
+        { output: "yttr:quicksilver" },
+        { output: "minecraft:slime_ball", type: "yttr:centrifuging" },
+        { input: "yttr:raw_gadolinite", type: "yttr:centrifuging" },
+        { input: "minecraft:coal", type: "yttr:centrifuging" },
 
         // Minecraft
 

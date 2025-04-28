@@ -4,6 +4,7 @@ onEvent("recipes", (event) => {
         ["createastral:andesite_compound", "create:andesite_alloy"],
         ["tconstruct:seared_basin", "tconstruct:scorched_basin"],
         ["tconstruct:seared_table", "tconstruct:scorched_table"],
+        ["ad_astra:calorite_block", "yttr:quicksilver"],
     ].forEach((recipe) => {
         event.blasting(recipe[1], recipe[0]).xp(recipe[2] ?? 0.0);
     });
