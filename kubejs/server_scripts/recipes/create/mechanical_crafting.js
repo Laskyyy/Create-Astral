@@ -84,7 +84,8 @@ onEvent("recipes", (event) => {
                 C: "create:integrated_circuit",
             },
         },
-        {
+        //! Unsure if this is used at all so I'm disabling it entirely
+        /* {
             output: "yttr:rafter",
             pattern: ["AEBDA", "AFCFA", "AFGFA", "AAAAA"],
             key: {
@@ -96,7 +97,7 @@ onEvent("recipes", (event) => {
                 G: "astraladditions:fragile_item_2",
                 F: "yttr:yttrium_block",
             },
-        },
+        }, */
         {
             output: "immersive_aircraft:airship",
             pattern: ["AAAA ", "AAAAA", " GFG ", "BEDBC", " BBB "],
