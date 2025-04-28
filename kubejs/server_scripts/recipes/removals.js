@@ -311,6 +311,7 @@ onEvent("recipes", (event) => {
         { output: "createbigcannons:molten_bronze", type: "createbigcannons:melting" },
         { output: "createbigcannons:molten_nethersteel", type: "createbigcannons:melting" },
         { output: "createbigcannons:molten_steel", type: "createbigcannons:melting" },
+        { input: "createbigcannons:molten_cast_iron", type: "create:compacting" },
 
         // dustrial decor sheetmetal rework
 
@@ -621,6 +622,12 @@ onEvent("recipes", (event) => {
         // extractinator
         { type: "extractinator:extractinating" },
         { output: "extractinator:extractinator" },
+
+        // estrogen
+        { type: "create:compacting", input: "minecraft:slime_ball" },
+        { output: "estrogen:crystal_estrogen_pill" },
+        { type: "create:mixing", output: "estrogen:balls" },
+        { type: "create:mixing", output: "estrogen:molten_amethyst" },
     ].forEach((recipe) => {
         event.remove(recipe);
     });

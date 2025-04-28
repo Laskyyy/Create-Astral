@@ -3244,6 +3244,19 @@ onEvent("recipes", (event) => {
             },
             input: ["minecraft:sugar", "create:cinder_flour", "2x createaddition:biomass"],
         },
+        {
+            output: "estrogen:balls",
+            input: "minecraft:slime_ball",
+            heat: "heated",
+        },
+        {
+            output: {
+                fluid: "tconstruct:molten_amethyst",
+                amount: GEM,
+            },
+            input: "minecraft:amethyst_shard",
+            heat: "heated",
+        },
     ].forEach((recipe) => {
         event.recipes
             .createMixing(recipe.output, recipe.input)
