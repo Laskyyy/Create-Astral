@@ -628,6 +628,10 @@ onEvent("recipes", (event) => {
         { output: "estrogen:crystal_estrogen_pill" },
         { type: "create:mixing", output: "estrogen:balls" },
         { type: "create:mixing", output: "estrogen:molten_amethyst" },
+
+        // farmers delight
+        { type: "farmersdelight:cutting", input: "minecraft:gravel" },
+        { type: "farmersdelight:cutting", input: "farmersdelight:wild_rice" },
     ].forEach((recipe) => {
         event.remove(recipe);
     });
