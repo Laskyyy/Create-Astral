@@ -67,6 +67,7 @@ onEvent("recipes", (event) => {
         [["createbigcannons:nethersteel_nugget"], "ad_astra:ostrum_nugget"],
         [["9x techreborn:bronze_nugget"], "createastral:bronze_ingot"],
         [["createastral:bronze_ingot"], "9x techreborn:bronze_nugget"],
+        [["minecraft:wither_skeleton_skull"], "4x minecraft:wither_rose"],
     ].forEach((recipe) => {
         event.shapeless(recipe[1], recipe[0]);
     });

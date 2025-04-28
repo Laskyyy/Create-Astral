@@ -1,20 +1,20 @@
 onEvent("recipes", (event) => {
     // Output: String
-    // Shape: Array of rows of inputs based on letters assigned
-    // Inputs: Object with letters assigned to input items, to be used in the shape
+    // Pattern: Array of rows of inputs based on letters assigned
+    // Key: Object with letters assigned to input items, to be used in the shape
     [
         {
             output: "ad_astra:calorite_tank",
-            shape: [" C ", "COC", " C "],
-            inputs: {
+            pattern: [" C ", "COC", " C "],
+            key: {
                 C: "ad_astra:calorite_plate",
                 O: "ad_astra:ostrum_tank",
             },
         },
         {
             output: "astraladditions:desizer_base",
-            shape: ["YLY", "YBY", "YPY"],
-            inputs: {
+            pattern: ["YLY", "YBY", "YPY"],
+            key: {
                 Y: "createastral:ender_plating",
                 P: "yttr:ultrapure_netherite",
                 B: "createastral:promethium_atomic_battery",
@@ -23,8 +23,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "astraladditions:desizer_controller",
-            shape: ["YYYYYY", "YBLLBY", "YLSRLY", "YLSRLY", "YBLLBY", "YYYYYY"],
-            inputs: {
+            pattern: ["YYYYYY", "YBLLBY", "YLSRLY", "YLSRLY", "YBLLBY", "YYYYYY"],
+            key: {
                 Y: "createastral:ender_plating",
                 S: "create:shadow_steel_casing",
                 R: "create:refined_radiance_casing",
@@ -34,8 +34,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "yttr:reinforced_cleaver",
-            shape: ["    VV", "   VV ", "  VV  ", " VN   ", " P    ", "P     "],
-            inputs: {
+            pattern: ["    VV", "   VV ", "  VV  ", " VN   ", " P    ", "P     "],
+            key: {
                 N: "yttr:neodymium_block",
                 V: "yttr:glassy_void",
                 P: "yttr:ultrapure_netherite",
@@ -43,8 +43,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "yttr:effector",
-            shape: ["VVV   ", "VVY   ", "VYNY  ", "  YBY ", "   YPY", "    YY"],
-            inputs: {
+            pattern: ["VVV   ", "VVY   ", "VYNY  ", "  YBY ", "   YPY", "    YY"],
+            key: {
                 Y: "yttr:yttrium_plating",
                 N: "yttr:neodymium_block",
                 V: "yttr:glassy_void",
@@ -54,8 +54,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "yttr:centrifuge",
-            shape: ["YYYYYY", "YBSSBY", "YSNNRY", "YSNNRY", "YBRRBY", "YYYYYY"],
-            inputs: {
+            pattern: ["YYYYYY", "YBSSBY", "YSNNRY", "YSNNRY", "YBRRBY", "YYYYYY"],
+            key: {
                 Y: "yttr:yttrium_plating",
                 N: "yttr:neodymium_block",
                 S: "create:shadow_steel_casing",
@@ -65,8 +65,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "astraladditions:e_guitar",
-            shape: ["PCC  ", "PWIWT", "PCC A"],
-            inputs: {
+            pattern: ["PCC  ", "PWIWT", "PCC A"],
+            key: {
                 A: "createastral:radiant_axe",
                 P: "createastral:calorite_pin",
                 C: "ad_astra:calorite_plate",
@@ -77,8 +77,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "astraladditions:chromatic_vacuum",
-            shape: [" B ", "ACA", "AAA"],
-            inputs: {
+            pattern: [" B ", "ACA", "AAA"],
+            key: {
                 A: "techreborn:rubber",
                 B: "minecraft:hopper",
                 C: "create:integrated_circuit",
@@ -86,8 +86,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "yttr:rafter",
-            shape: ["AEBDA", "AFCFA", "AFGFA", "AAAAA"],
-            inputs: {
+            pattern: ["AEBDA", "AFCFA", "AFGFA", "AAAAA"],
+            key: {
                 A: "yttr:armor_plating",
                 B: "projecttable:projecttable",
                 C: "createastral:promethium_atomic_battery",
@@ -99,8 +99,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "immersive_aircraft:airship",
-            shape: ["AAAA ", "AAAAA", " GFG ", "BEDBC", " BBB "],
-            inputs: {
+            pattern: ["AAAA ", "AAAAA", " GFG ", "BEDBC", " BBB "],
+            key: {
                 A: "immersive_aircraft:sail",
                 B: "immersive_aircraft:hull",
                 C: "create:propeller",
@@ -112,8 +112,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "yttr:magtank",
-            shape: ["CAC", "ABA", "ABA", "CAC"],
-            inputs: {
+            pattern: ["CAC", "ABA", "ABA", "CAC"],
+            key: {
                 A: "yttr:armor_plating",
                 B: "techreborn:data_storage_chip",
                 C: "ad_astra:calorite_plate",
@@ -121,8 +121,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "ad_astra:tier_3_rocket",
-            shape: ["   A   ", "  PEP  ", "  EFE  ", "  ECE  ", " IRDRI ", "IBRHRBI", "I PRP I"],
-            inputs: {
+            pattern: ["   A   ", "  PEP  ", "  EFE  ", "  ECE  ", " IRDRI ", "IBRHRBI", "I PRP I"],
+            key: {
                 A: "createbigcannons:nethersteel_screw_breech",
                 B: "ad_astra:ostrum_engine",
                 C: "astraladditions:fragile_item",
@@ -137,8 +137,18 @@ onEvent("recipes", (event) => {
         },
         {
             output: "ad_astra:tier_4_rocket",
-            shape: ["   A   ", "  AAA  ", "  BEB  ", "  BDB  ", "  BDB  ", " CDFDC ", "IGDGDGI", "IGHGHGI", "IH H HI"],
-            inputs: {
+            pattern: [
+                "   A   ",
+                "  AAA  ",
+                "  BEB  ",
+                "  BDB  ",
+                "  BDB  ",
+                " CDFDC ",
+                "IGDGDGI",
+                "IGHGHGI",
+                "IH H HI",
+            ],
+            key: {
                 A: "ad_astra:calorite_block",
                 B: "create:shadow_steel_casing",
                 C: "create:refined_radiance_casing",
@@ -152,8 +162,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "immersive_aircraft:quadrocopter",
-            shape: ["CCDCC ", "CCBCC ", "ABEBAF", "CCBCC ", "CCDCC "],
-            inputs: {
+            pattern: ["CCDCC ", "CCBCC ", "ABEBAF", "CCBCC ", "CCDCC "],
+            key: {
                 A: "create:precision_mechanism",
                 B: "immersive_aircraft:hull",
                 C: "create:propeller",
@@ -164,8 +174,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "immersive_aircraft:gyrodyne",
-            shape: [" CCC ", "  DF ", "BGEBA", " BBB "],
-            inputs: {
+            pattern: [" CCC ", "  DF ", "BGEBA", " BBB "],
+            key: {
                 A: "immersive_aircraft:sail",
                 B: "immersive_aircraft:hull",
                 C: "create:propeller",
@@ -177,8 +187,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "immersive_aircraft:biplane",
-            shape: ["    AA   ", "    AA   ", " A   BBC ", "BBBBBEDCF", " A   BBC ", "    AA   ", "    AA   "],
-            inputs: {
+            pattern: ["    AA   ", "    AA   ", " A   BBC ", "BBBBBEDCF", " A   BBC ", "    AA   ", "    AA   "],
+            key: {
                 A: "immersive_aircraft:sail",
                 B: "immersive_aircraft:hull",
                 C: "create:propeller",
@@ -189,16 +199,16 @@ onEvent("recipes", (event) => {
         },
         {
             output: "ad_astra:launch_pad",
-            shape: ["BAAAB", "ABABA", "AABAA", "ABABA", "BAAAB"],
-            inputs: {
+            pattern: ["BAAAB", "ABABA", "AABAA", "ABABA", "BAAAB"],
+            key: {
                 A: "createastral:blast-resistant_concrete",
                 B: "create:sturdy_sheet",
             },
         },
         {
             output: "techreborn:data_storage_chip",
-            shape: ["A", "C", "B"],
-            inputs: {
+            pattern: ["A", "C", "B"],
+            key: {
                 A: "createastral:olivine_sheet",
                 B: "yttr:yttrium_ingot",
                 C: "techreborn:industrial_circuit",
@@ -206,8 +216,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "immersive_aircraft:boiler",
-            shape: ["AB", "CB", "CB"],
-            inputs: {
+            pattern: ["AB", "CB", "CB"],
+            key: {
                 A: "create:nozzle",
                 B: "create:copper_sheet",
                 C: "techreborn:rubber",
@@ -215,8 +225,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "minecraft:elytra",
-            shape: ["  A  ", " B B ", " C C ", "C   C", "DE ED", "F G F"],
-            inputs: {
+            pattern: ["  A  ", " B B ", " C C ", "C   C", "DE ED", "F G F"],
+            key: {
                 A: "createastral:navigation_mechanism",
                 B: "create:brass_sheet",
                 C: "minecraft:phantom_membrane",
@@ -226,21 +236,10 @@ onEvent("recipes", (event) => {
                 G: "computercraft:computer_advanced",
             },
         },
-        ///  {
-        ///      output: "techreborn:fusion_control_computer",
-        ///      shape: ["DBCBD", "BDCDB", "CCECC", "BDADB", "DABAD"],
-        ///      inputs: {
-        ///          A: "techreborn:industrial_circuit",
-        ///          B: "techreborn:advanced_machine_casing",
-        ///          C: "techreborn:fusion_coil",
-        ///          D: "createaddition:tesla_coil",
-        ///          E: "techreborn:digital_display",
-        ///      },
-        ///  },
         {
             output: "minecraft:crossbow",
-            shape: [" CCA ", "AABDB"],
-            inputs: {
+            pattern: [" CCA ", "AABDB"],
+            key: {
                 A: "create:iron_sheet",
                 B: "#minecraft:logs",
                 C: "minecraft:gunpowder",
@@ -249,8 +248,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "ad_astra:nasa_workbench",
-            shape: ["EFE", "CDC", "ABA"],
-            inputs: {
+            pattern: ["EFE", "CDC", "ABA"],
+            key: {
                 // A: minecraft:redstone_block,
                 A: "createaddition:capacitor",
                 B: "ad_astra:desh_block",
@@ -264,8 +263,8 @@ onEvent("recipes", (event) => {
 
         {
             output: "ad_astra:solar_panel",
-            shape: ["DDD", " B ", "ACA", "AEA"],
-            inputs: {
+            pattern: ["DDD", " B ", "ACA", "AEA"],
+            key: {
                 A: "ad_astra:desh_plate",
                 B: "create:integrated_circuit",
                 C: "createastral:navigation_mechanism",
@@ -276,8 +275,8 @@ onEvent("recipes", (event) => {
 
         {
             output: "ad_astra:coal_generator",
-            shape: ["ABCBA", "AAEAA"],
-            inputs: {
+            pattern: ["ABCBA", "AAEAA"],
+            key: {
                 A: "ad_astra:steel_plate",
                 B: "techreborn:lead_ingot",
                 C: "create:precision_mechanism",
@@ -286,8 +285,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "computercraft:computer_advanced",
-            shape: ["AAA", "BCB", "ADA"],
-            inputs: {
+            pattern: ["AAA", "BCB", "ADA"],
+            key: {
                 A: "create:brass_sheet",
                 B: "create:electron_tube",
                 C: "create:display_board",
@@ -296,8 +295,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "computercraft:pocket_computer_advanced",
-            shape: [" E ", "AAA", "CBC", "ADA"],
-            inputs: {
+            pattern: [" E ", "AAA", "CBC", "ADA"],
+            key: {
                 A: "create:brass_sheet",
                 B: "create:electron_tube",
                 C: "create:display_board",
@@ -307,8 +306,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "computercraft:turtle_advanced",
-            shape: ["ADA", "ABA"],
-            inputs: {
+            pattern: ["ADA", "ABA"],
+            key: {
                 A: "create:brass_sheet",
                 B: "computercraft:turtle_normal",
                 D: "create:precision_mechanism",
@@ -317,8 +316,8 @@ onEvent("recipes", (event) => {
 
         {
             output: "polaroidcamera:camera",
-            shape: ["AAA", "CBC", "CDC"],
-            inputs: {
+            pattern: ["AAA", "CBC", "CDC"],
+            key: {
                 A: "create:brass_sheet",
                 B: "create:electron_tube",
                 C: "techreborn:tin_ingot",
@@ -328,8 +327,8 @@ onEvent("recipes", (event) => {
 
         {
             output: "ad_astra:energizer",
-            shape: [" E ", "ADA", "ACA", "BAB"],
-            inputs: {
+            pattern: [" E ", "ADA", "ACA", "BAB"],
+            key: {
                 A: "ad_astra:ostrum_plate",
                 B: "ad_astra:ostrum_block",
                 C: "tconstruct:cobalt_block",
@@ -340,8 +339,8 @@ onEvent("recipes", (event) => {
 
         {
             output: "ad_astra:jet_suit",
-            shape: ["  F  ", "AAGAA", " BEB ", " CDC "],
-            inputs: {
+            pattern: ["  F  ", "AAGAA", " BEB ", " CDC "],
+            key: {
                 A: "ad_astra:calorite_plate",
                 B: "ad_astra:calorite_tank",
                 C: "ad_astra:calorite_block",
@@ -353,8 +352,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "ad_astra:jet_suit_helmet",
-            shape: [" F ", "AEA", "AGA"],
-            inputs: {
+            pattern: [" F ", "AEA", "AGA"],
+            key: {
                 A: "ad_astra:calorite_plate",
                 E: Item.of("ad_astra:netherite_space_helmet").ignoreNBT(),
                 F: "create:integrated_circuit",
@@ -363,8 +362,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "ad_astra:jet_suit_pants",
-            shape: ["CEC", "AFA", "A A", "A A"],
-            inputs: {
+            pattern: ["CEC", "AFA", "A A", "A A"],
+            key: {
                 A: "ad_astra:calorite_plate",
                 C: "ad_astra:calorite_block",
                 E: Item.of("ad_astra:netherite_space_pants").ignoreNBT(),
@@ -373,27 +372,18 @@ onEvent("recipes", (event) => {
         },
         {
             output: "ad_astra:jet_suit_boots",
-            shape: ["FEF", "A A", "C C"],
-            inputs: {
+            pattern: ["FEF", "A A", "C C"],
+            key: {
                 A: "ad_astra:calorite_plate",
                 C: "ad_astra:calorite_block",
                 E: Item.of("ad_astra:netherite_space_boots").ignoreNBT(),
                 F: "dustrial_decor:padded_block",
             },
         },
-        ///    {
-        ///        output: "2x techreborn:fusion_coil",
-        ///        shape: ["CCCCC", "CBBBC", "CBDBC", "CBBBC", "CCCCC"],
-        ///        inputs: {
-        ///            B: "ae2:fluix_glass_cable",
-        ///            C: "create:sturdy_sheet",
-        ///            D: "techreborn:advanced_machine_casing",
-        ///        },
-        ///    },
         {
             output: "doodads:slimey_shoes",
-            shape: [" D ", "EFE", "ABA", "CGC"],
-            inputs: {
+            pattern: [" D ", "EFE", "ABA", "CGC"],
+            key: {
                 A: "ad_astra:steel_plate",
                 B: "create:sticker",
                 C: "minecraft:slime_block",
@@ -405,8 +395,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "doodads:ender_goggles",
-            shape: [" AAA ", "CBABC"],
-            inputs: {
+            pattern: [" AAA ", "CBABC"],
+            key: {
                 A: "createdeco:cast_iron_sheet",
                 B: "minecraft:ender_eye",
                 C: "minecraft:string",
@@ -414,8 +404,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "doodads:midnights_eye",
-            shape: ["DCCCD", "CBCAC", "DCCCD"],
-            inputs: {
+            pattern: ["DCCCD", "CBCAC", "DCCCD"],
+            key: {
                 A: "create:refined_radiance",
                 B: "create:shadow_steel",
                 C: "minecraft:glowstone",
@@ -425,8 +415,8 @@ onEvent("recipes", (event) => {
 
         {
             output: "doodads:speed_boots",
-            shape: [" ADA ", " AEAC", "BBBB "],
-            inputs: {
+            pattern: [" ADA ", " AEAC", "BBBB "],
+            key: {
                 A: "ad_astra:calorite_plate",
                 B: "create:sturdy_sheet",
                 C: "ad_astra:steel_engine",
@@ -437,8 +427,8 @@ onEvent("recipes", (event) => {
 
         {
             output: "buildinggadgets:gadget_building",
-            shape: [" I ", "SOS", "S8S", "SNS"],
-            inputs: {
+            pattern: [" I ", "SOS", "S8S", "SNS"],
+            key: {
                 S: "techreborn:silver_plate",
                 8: "ae2:spatial_cell_component_2",
                 O: "techreborn:basic_display",
@@ -448,8 +438,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "buildinggadgets:gadget_copy_paste",
-            shape: [" I ", "SOS", "SMS", "SNS"],
-            inputs: {
+            pattern: [" I ", "SOS", "SMS", "SNS"],
+            key: {
                 S: "techreborn:silver_plate",
                 M: "ae2:memory_card",
                 O: "techreborn:basic_display",
@@ -459,8 +449,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "ad_astra:ostrum_engine",
-            shape: [" F ", "FEF", "FDF", "ABA"],
-            inputs: {
+            pattern: [" F ", "FEF", "FDF", "ABA"],
+            key: {
                 A: "createastral:shimmer_amplifier",
                 B: "createaddition:capacitor",
                 D: "createaddition:tesla_coil",
@@ -470,15 +460,15 @@ onEvent("recipes", (event) => {
         },
         {
             output: "kubejs:fragile_sheet_block",
-            shape: ["FFFF", "FFFF", "FFFF", "FFFF"],
-            inputs: {
+            pattern: ["FFFF", "FFFF", "FFFF", "FFFF"],
+            key: {
                 F: "createastral:fragile_sheet",
             },
         },
         {
             output: "astraladditions:pylon",
-            shape: [" C ", "CEC", "CNC", " C "],
-            inputs: {
+            pattern: [" C ", "CEC", "CNC", " C "],
+            key: {
                 C: "astraladditions:moonset_crystal_block",
                 E: "minecraft:ender_eye",
                 N: "createastral:navigation_mechanism",
@@ -486,8 +476,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "astraladditions:meteor_mitts",
-            shape: ["SSSSS", "SSISS", "SCCCS", " CCC "],
-            inputs: {
+            pattern: ["SSSSS", "SSISS", "SCCCS", " CCC "],
+            key: {
                 S: "astraladditions:moonset_crystal_block",
                 C: "createastral:ender_plating",
                 I: "createastral:astral_singularity",
@@ -495,8 +485,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "doodads:celestial_ring",
-            shape: [" I ", "C C", " E "],
-            inputs: {
+            pattern: [" I ", "C C", " E "],
+            key: {
                 C: "createastral:ender_plating",
                 I: "createastral:astral_singularity",
                 E: "astraladditions:moonblazed_orb",
@@ -504,8 +494,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "yttr:projector",
-            shape: ["MSM", "MIM", " E ", " C "],
-            inputs: {
+            pattern: ["MSM", "MIM", " E ", " C "],
+            key: {
                 S: "astraladditions:moonset_crystal_block",
                 C: "createastral:ender_plating",
                 I: "createastral:astral_singularity",
@@ -515,8 +505,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "yttr:shifter",
-            shape: ["MMCMM", " MIM ", "  E  "],
-            inputs: {
+            pattern: ["MMCMM", " MIM ", "  E  "],
+            key: {
                 C: "createastral:ender_plating",
                 I: "createastral:astral_singularity",
                 E: "createastral:promethium_atomic_battery",
@@ -526,8 +516,8 @@ onEvent("recipes", (event) => {
         // yttric rifle
         {
             output: "yttr:rifle",
-            shape: ["CCY  ", "YMEIC", " CIYC", "   C "],
-            inputs: {
+            pattern: ["CCY  ", "YMEIC", " CIYC", "   C "],
+            key: {
                 Y: "yttr:yttrium_block",
                 C: "ad_astra:calorite_ingot",
                 I: "techreborn:industrial_circuit",
@@ -537,8 +527,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "yttr:rifle_reinforced",
-            shape: ["CCY  ", "YMEIC", " CIYC", "   C "],
-            inputs: {
+            pattern: ["CCY  ", "YMEIC", " CIYC", "   C "],
+            key: {
                 Y: "create:refined_radiance_casing",
                 C: "createastral:subatomic_ingot",
                 I: "techreborn:industrial_circuit",
@@ -548,8 +538,8 @@ onEvent("recipes", (event) => {
         },
         {
             output: "yttr:rifle_overclocked",
-            shape: ["CCY  ", "YMEIC", " CIYC", "   C "],
-            inputs: {
+            pattern: ["CCY  ", "YMEIC", " CIYC", "   C "],
+            key: {
                 Y: "create:refined_radiance_casing",
                 C: "createastral:ender_plating",
                 I: "createastral:astral_singularity",
@@ -557,7 +547,16 @@ onEvent("recipes", (event) => {
                 M: "yttr:rifle_reinforced",
             },
         },
+        {
+            output: "minecraft:trident",
+            pattern: ["  C  ", "C S C", " SDS ", "  S  ", "  S  "],
+            key: {
+                S: "minecraft:prismarine_shard",
+                D: "createaddition:diamond_grit",
+                C: "minecraft:prismarine_crystals",
+            },
+        },
     ].forEach((recipe) => {
-        event.recipes.create.mechanical_crafting(recipe.output, recipe.shape, recipe.inputs);
+        event.recipes.create.mechanical_crafting(recipe.output, recipe.pattern, recipe.key);
     });
 });

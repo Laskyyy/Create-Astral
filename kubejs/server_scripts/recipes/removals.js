@@ -402,6 +402,10 @@ onEvent("recipes", (event) => {
         { type: "tconstruct:melting", input: "minecraft:golden_horse_armor" },
         { type: "tconstruct:melting", input: "minecraft:diamond_horse_armor" },
 
+        // minecraft
+
+        { mod: "minecraft", output: "minecraft:trident" },
+
         // Miscellaneous
         { output: "minecraft:shroomlight" },
 

@@ -3257,6 +3257,11 @@ onEvent("recipes", (event) => {
             input: "minecraft:amethyst_shard",
             heat: "heated",
         },
+        {
+            output: "minecraft:wither_skeleton_skull",
+            input: ["minecraft:coal_block", "minecraft:skeleton_skull", "4x minecraft:wither_rose"],
+            heat: "superheated",
+        },
     ].forEach((recipe) => {
         event.recipes
             .createMixing(recipe.output, recipe.input)
