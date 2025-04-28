@@ -483,6 +483,9 @@ onEvent("recipes", (event) => {
         { output: "immersive_aircraft:gyrodyne" },
         { output: "immersive_aircraft:biplane" },
         { output: "immersive_aircraft:quadrocopter" },
+        { output: "immersive_aircraft:hull" },
+        { output: "immersive_aircraft:propeller" },
+        { output: "immersive_aircraft:sail" },
 
         { output: "catwalksinc:iron_rod" },
 

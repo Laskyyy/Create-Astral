@@ -1411,6 +1411,29 @@ onEvent("recipes", (event) => {
                 G: "minecraft:gunpowder",
             },
         },
+        {
+            output: "immersive_aircraft:hull",
+            pattern: ["LIL", "LIL", "LIL"],
+            key: {
+                L: "create:andesite_casing",
+                I: "createaddition:iron_rod",
+            },
+        },
+        {
+            output: "immersive_aircraft:propeller",
+            pattern: [" I ", "IPI", " I "],
+            key: {
+                I: "create:iron_sheet",
+                P: "create:propeller",
+            },
+        },
+        {
+            output: "immersive_aircraft:sail",
+            pattern: ["SSS", "SSS"],
+            key: {
+                S: "create:white_sail",
+            },
+        },
     ].forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key);
     });
