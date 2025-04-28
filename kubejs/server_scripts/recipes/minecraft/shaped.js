@@ -1434,6 +1434,31 @@ onEvent("recipes", (event) => {
                 S: "create:white_sail",
             },
         },
+        {
+            output: "reinfchest:diamond_chest",
+            pattern: ["MMM", "MCM", "MMM"],
+            key: {
+                C: "reinfchest:gold_chest",
+                M: "techreborn:diamond_plate",
+            },
+        },
+        {
+            output: "reinfchest:gold_chest",
+            pattern: ["MMM", "MCM", "MMM"],
+            key: {
+                C: "reinfchest:iron_chest",
+                M: "tconstruct:rose_gold_ingot",
+            },
+        },
+        {
+            output: "reinfchest:iron_chest",
+            pattern: ["LLL", "MCM", "LLL"],
+            key: {
+                C: "reinfchest:copper_chest",
+                M: "create:sturdy_sheet",
+                L: "techreborn:rubber",
+            },
+        },
     ].forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key);
     });

@@ -406,6 +406,13 @@ onEvent("recipes", (event) => {
 
         { mod: "minecraft", output: "minecraft:trident" },
 
+        // reinfchest
+
+        { output: "reinfchest:diamond_chest" },
+        { output: "reinfchest:gold_chest" },
+        { output: "reinfchest:iron_chest" },
+        { output: "reinfchest:netherite_chest" },
+
         // Miscellaneous
         { output: "minecraft:shroomlight" },
 

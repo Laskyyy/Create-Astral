@@ -7,6 +7,7 @@ onEvent("recipes", (event) => {
         ["minecraft:copper_ingot", "techreborn:tin_ingot", "createastral:bronze_ingot"],
         ["techreborn:tin_ingot", "minecraft:copper_ingot", "createastral:bronze_ingot"],
         ["farmersdelight:skillet", "minecraft:water_bucket", "farmersdelight:cooking_pot"],
+        ["reinfchest:diamond_chest", "minecraft:netherite_ingot", "reinfchest:netherite_chest"],
     ].forEach((recipe) => {
         event.smithing(recipe[2], recipe[0], recipe[1]);
     });
