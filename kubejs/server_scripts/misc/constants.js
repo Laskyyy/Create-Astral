@@ -1,3 +1,10 @@
+// priority: 0
+
+settings.logAddedRecipes = false;
+settings.logRemovedRecipes = false;
+settings.logSkippedRecipes = false;
+settings.logErroringRecipes = false;
+
 // constants
 
 const BUCKET = 81000;
@@ -232,10 +239,3 @@ const CRUSHING_RECIPES_TO_BECOME_GRINDING = [
 
 const DEFAULT_GRIND_TIME = 100; // five seconds
 const DEFAULT_GRIND_POWER = 5;
-
-// priority: 0
-
-settings.logAddedRecipes = false;
-settings.logRemovedRecipes = false;
-settings.logSkippedRecipes = false;
-settings.logErroringRecipes = false;

@@ -1394,6 +1394,23 @@ onEvent("recipes", (event) => {
                 A: "minecraft:chain",
             },
         },
+        {
+            output: "createbigcannons:wrought_iron_drop_mortar_end",
+            pattern: ["B", "E"],
+            key: {
+                B: "minecraft:iron_bars",
+                E: "createbigcannons:wrought_iron_cannon_end",
+            },
+        },
+        {
+            output: "createbigcannons:yaw_controller",
+            pattern: [" S ", "GCG", " S "],
+            key: {
+                S: "create:shaft",
+                C: "create:andesite_casing",
+                G: "minecraft:gunpowder",
+            },
+        },
     ].forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key);
     });

@@ -308,6 +308,9 @@ onEvent("recipes", (event) => {
         { output: "createbigcannons:nethersteel_nugget" },
         { output: "createbigcannons:nethersteel_ingot" },
         { output: "createbigcannons:nethersteel_block" },
+        { output: "createbigcannons:molten_bronze", type: "createbigcannons:melting" },
+        { output: "createbigcannons:molten_nethersteel", type: "createbigcannons:melting" },
+        { output: "createbigcannons:molten_steel", type: "createbigcannons:melting" },
 
         // dustrial decor sheetmetal rework
 

@@ -62,6 +62,11 @@ onEvent("recipes", (event) => {
         [["ad_astra:fuel_bucket"], "techreborn:nitro_diesel_bucket"],
         [["ad_astra:oil_bucket"], "techreborn:oil_bucket"],
         [["#c:plates/iron", "create:fluid_pipe"], "create:fluid_valve"],
+        [["createbigcannons:steel_scrap"], "ad_astra:steel_nugget"],
+        [["createbigcannons:bronze_scrap"], "techreborn:bronze_nugget"],
+        [["createbigcannons:nethersteel_nugget"], "ad_astra:ostrum_nugget"],
+        [["9x techreborn:bronze_nugget"], "createastral:bronze_ingot"],
+        [["createastral:bronze_ingot"], "9x techreborn:bronze_nugget"],
     ].forEach((recipe) => {
         event.shapeless(recipe[1], recipe[0]);
     });

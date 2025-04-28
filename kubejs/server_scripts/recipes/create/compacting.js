@@ -414,6 +414,22 @@ onEvent("recipes", (event) => {
             inputs: "minecraft:wet_sponge",
             heat: "",
         },
+        {
+            output: "createbigcannons:nethersteel_ingot",
+            inputs: {
+                fluid: "kubejs:molten_ostrum",
+                nbt: {},
+                amount: BUCKET / 10,
+            },
+        },
+        {
+            output: "createbigcannons:nethersteel_nugget",
+            inputs: {
+                fluid: "kubejs:molten_ostrum",
+                nbt: {},
+                amount: BUCKET / 100,
+            },
+        },
     ].forEach((recipe) => {
         event.recipes.createCompacting(recipe.output, recipe.inputs).heatRequirement(recipe.heat ?? "");
     });

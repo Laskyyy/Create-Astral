@@ -338,8 +338,8 @@ onEvent("recipes", (event) => {
             outputs: [
                 ["tconstruct:debris_nugget", 1],
                 ["techreborn:andesite_dust", 1],
-                ["createbigcannons:steel_scrap", 0.1],
-                ["createbigcannons:bronze_scrap", 0.1],
+                ["ad_astra:steel_nugget", 0.1],
+                ["techreborn:bronze_nugget", 0.1],
             ],
         },
         {
