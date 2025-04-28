@@ -311,7 +311,8 @@ onEvent("recipes", (event) => {
         { output: "createbigcannons:molten_bronze", type: "createbigcannons:melting" },
         { output: "createbigcannons:molten_nethersteel", type: "createbigcannons:melting" },
         { output: "createbigcannons:molten_steel", type: "createbigcannons:melting" },
-        { input: "createbigcannons:molten_cast_iron", type: "create:compacting" },
+        { output: "createbigcannons:cast_iron_ingot", type: "create:compacting" },
+        { output: "createbigcannons:cast_iron_nugget", type: "create:compacting" },
 
         // dustrial decor sheetmetal rework
 
@@ -627,7 +628,7 @@ onEvent("recipes", (event) => {
         { type: "create:compacting", input: "minecraft:slime_ball" },
         { output: "estrogen:crystal_estrogen_pill" },
         { type: "create:mixing", output: "estrogen:balls" },
-        { type: "create:mixing", output: "estrogen:molten_amethyst" },
+        { id: "estrogen:mixing/molten_amethyst" },
 
         // farmers delight
         { type: "farmersdelight:cutting", input: "minecraft:gravel" },

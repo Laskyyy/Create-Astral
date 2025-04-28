@@ -418,7 +418,6 @@ onEvent("recipes", (event) => {
             output: "ad_astra:ostrum_ingot",
             inputs: {
                 fluid: "kubejs:molten_ostrum",
-                nbt: {},
                 amount: INGOT,
             },
         },
@@ -426,7 +425,6 @@ onEvent("recipes", (event) => {
             output: "ad_astra:ostrum_nugget",
             inputs: {
                 fluid: "kubejs:molten_ostrum",
-                nbt: {},
                 amount: NUGGET,
             },
         },
@@ -434,7 +432,6 @@ onEvent("recipes", (event) => {
             output: "createdeco:cast_iron_ingot",
             inputs: {
                 fluid: "createbigcannons:molten_cast_iron",
-                nbt: {},
                 amount: INGOT,
             },
         },
@@ -442,7 +439,6 @@ onEvent("recipes", (event) => {
             output: "createdeco:cast_iron_nugget",
             inputs: {
                 fluid: "createbigcannons:molten_cast_iron",
-                nbt: {},
                 amount: NUGGET,
             },
         },
@@ -450,9 +446,8 @@ onEvent("recipes", (event) => {
             output: {
                 amount: BUCKET / 4,
                 fluid: "tconstruct:earth_slime",
-                nbt: {},
             },
-            input: "minecraft:slime_ball",
+            inputs: "minecraft:slime_ball",
         },
     ].forEach((recipe) => {
         event.recipes.createCompacting(recipe.output, recipe.inputs).heatRequirement(recipe.heat ?? "");
