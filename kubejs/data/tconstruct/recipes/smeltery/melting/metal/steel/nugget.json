@@ -4,17 +4,17 @@
     {
       "condition": "fabric:item_tags_populated",
       "values": [
-        "c:steel_nuggets"
+        "c:nuggets/steel"
       ]
     }
   ],
   "ingredient": {
-    "tag": "c:steel_nuggets"
+    "tag": "c:nuggets/steel"
   },
   "result": {
     "fluid": "tconstruct:molten_steel",
     "amount": 1000
   },
-  "temperature": 800,
+  "temperature": 950,
   "time": 22
 }

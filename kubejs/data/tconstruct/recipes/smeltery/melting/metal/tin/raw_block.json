@@ -20,7 +20,7 @@
   "time": 234,
   "byproducts": [
     {
-      "fluid": "tconstruct:molten_silver",
+      "fluid": "tconstruct:molten_copper",
       "amount": 81000
     }
   ]

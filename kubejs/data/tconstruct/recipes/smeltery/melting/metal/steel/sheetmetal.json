@@ -4,17 +4,17 @@
     {
       "condition": "fabric:item_tags_populated",
       "values": [
-        "ad_astra:steel_plating"
+        "c:sheetmetals/steel"
       ]
     }
   ],
   "ingredient": {
-    "tag": "ad_astra:steel_plating"
+    "tag": "c:sheetmetals/steel"
   },
   "result": {
     "fluid": "tconstruct:molten_steel",
-    "amount": 1000
+    "amount": 9000
   },
-  "temperature": 800,
+  "temperature": 950,
   "time": 65
 }

@@ -2,19 +2,19 @@
   "type": "tconstruct:modifier",
   "inputs": [
     {
-      "item": "minecraft:diamond"
+      "tag": "c:ingots/gold"
     },
     {
-      "tag": "c:storage_blocks/lapis"
+      "item": "minecraft:golden_carrot"
     },
     {
-      "tag": "c:storage_blocks/lapis"
+      "tag": "c:ingots/gold"
     },
     {
-      "tag": "c:storage_blocks/lapis"
+      "tag": "c:ender_pearls"
     },
     {
-      "tag": "c:storage_blocks/lapis"
+      "tag": "c:ender_pearls"
     }
   ],
   "tools": {

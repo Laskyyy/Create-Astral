@@ -4,17 +4,17 @@
     {
       "condition": "fabric:item_tags_populated",
       "values": [
-        "c:steel_plates"
+        "c:plates/steel"
       ]
     }
   ],
   "ingredient": {
-    "tag": "c:steel_plates"
+    "tag": "c:plates/steel"
   },
   "result": {
     "fluid": "tconstruct:molten_steel",
     "amount": 9000
   },
-  "temperature": 800,
+  "temperature": 950,
   "time": 65
 }

@@ -1,5 +1,4 @@
 {
-  "replace": "true",
   "type": "tconstruct:incremental_modifier",
   "input": {
     "item": "minecraft:cactus"
@@ -13,7 +12,7 @@
     "upgrades": 1
   },
   "result": {
-    "name": "tconstruct:thorns",
+    "name": "tconstruct:piercing",
     "level": 1
   },
   "max_level": 5

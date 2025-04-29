@@ -21,14 +21,9 @@
       "recipe": {
         "type": "tconstruct:ore_melting",
         "rate": "metal",
-        "ingredient": [
-    {
-      "tag": "c:raw_materials/zinc"
-    },
-    {
-      "item": "create:crushed_raw_zinc"
-    }
-  ],
+        "ingredient": {
+          "tag": "c:raw_materials/zinc"
+        },
         "result": {
           "fluid": "tconstruct:molten_zinc",
           "amount": 9000
@@ -52,14 +47,9 @@
       "recipe": {
         "type": "tconstruct:ore_melting",
         "rate": "metal",
-        "ingredient": [
-    {
-      "tag": "c:raw_materials/zinc"
-    },
-    {
-      "item": "create:crushed_raw_zinc"
-    }
-  ],
+        "ingredient": {
+          "tag": "c:raw_materials/zinc"
+        },
         "result": {
           "fluid": "tconstruct:molten_zinc",
           "amount": 9000

@@ -2,7 +2,7 @@
   "type": "tconstruct:modifier",
   "inputs": [
     {
-      "item": "createastral:astral_conduit"
+      "item": "minecraft:end_crystal"
     }
   ],
   "tools": {

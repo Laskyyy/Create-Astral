@@ -1,13 +1,20 @@
 {
   "type": "tconstruct:melting",
-  
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:wires/steel"
+      ]
+    }
+  ],
   "ingredient": {
-    "item": "ad_astra:steel_cable"
+    "tag": "c:wires/steel"
   },
   "result": {
     "fluid": "tconstruct:molten_steel",
-    "amount": 9000
+    "amount": 4500
   },
-  "temperature": 800,
+  "temperature": 950,
   "time": 13
 }

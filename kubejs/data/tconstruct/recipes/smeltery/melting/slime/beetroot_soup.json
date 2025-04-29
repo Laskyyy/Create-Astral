@@ -4,7 +4,7 @@
     "item": "minecraft:beetroot"
   },
   "result": {
-    "fluid": "createaddition:seed_oil",
+    "fluid": "tconstruct:beetroot_soup",
     "amount": 5400
   },
   "temperature": 100,

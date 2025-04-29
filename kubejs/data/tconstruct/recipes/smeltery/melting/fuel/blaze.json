@@ -2,8 +2,8 @@
   "type": "tconstruct:melting_fuel",
   "fluid": {
     "name": "tconstruct:blazing_blood",
-    "amount": 1000
+    "amount": 50
   },
   "duration": 150,
-  "temperature": 1200
+  "temperature": 1500
 }

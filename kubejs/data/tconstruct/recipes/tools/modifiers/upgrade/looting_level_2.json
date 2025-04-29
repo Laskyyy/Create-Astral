@@ -1,0 +1,36 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "tag": "c:ingots/gold"
+    },
+    {
+      "item": "minecraft:golden_carrot"
+    },
+    {
+      "tag": "c:ingots/gold"
+    },
+    {
+      "tag": "c:ender_pearls"
+    },
+    {
+      "tag": "c:ender_pearls"
+    }
+  ],
+  "tools": {
+    "tag": "tconstruct:modifiable/unarmed"
+  },
+  "slots": {
+    "upgrades": 1
+  },
+  "requirements": {
+    "name": "tconstruct:looting",
+    "level": 1,
+    "error": "recipe.tconstruct.modifier.looting.level_2"
+  },
+  "result": {
+    "name": "tconstruct:looting",
+    "level": 1
+  },
+  "max_level": 2
+}

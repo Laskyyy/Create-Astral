@@ -1,14 +1,9 @@
 {
   "type": "tconstruct:ore_melting",
   "rate": "metal",
-  "ingredient": [
-    {
-      "tag": "c:raw_materials/gold"
-    },
-    {
-      "item": "create:crushed_raw_gold"
-    }
-  ],
+  "ingredient": {
+    "tag": "c:raw_materials/gold"
+  },
   "result": {
     "fluid": "tconstruct:molten_gold",
     "amount": 9000

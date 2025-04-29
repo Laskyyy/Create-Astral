@@ -2,20 +2,20 @@
   "type": "tconstruct:modifier",
   "inputs": [
     {
-      "item": "minecraft:blue_dye"
+      "tag": "c:ingots/copper"
     },
     {
       "ingredient": [
         {
-          "tag": "c:storage_blocks/lapis"
+          "item": "minecraft:cornflower"
         },
         {
-          "tag": "c:storage_blocks/lapis"
+          "item": "minecraft:blue_orchid"
         }
       ]
     },
     {
-      "tag": "c:storage_blocks/lapis"
+      "tag": "c:ingots/copper"
     },
     {
       "tag": "c:storage_blocks/lapis"

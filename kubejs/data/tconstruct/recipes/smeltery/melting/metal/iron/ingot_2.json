@@ -2,6 +2,9 @@
   "type": "tconstruct:melting",
   "ingredient": [
     {
+      "item": "minecraft:heavy_weighted_pressure_plate"
+    },
+    {
       "item": "minecraft:iron_door"
     },
     {

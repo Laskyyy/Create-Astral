@@ -5,16 +5,16 @@
       "item": "minecraft:shulker_shell"
     },
     {
-      "item": "createastral:subatomic_ingot"
+      "item": "minecraft:dragon_breath"
     },
     {
       "item": "minecraft:shulker_shell"
     },
     {
-      "tag": "c:ingots/shadow"
+      "tag": "c:ingots/netherite"
     },
     {
-      "tag": "c:ingots/shadow"
+      "tag": "c:ingots/netherite"
     }
   ],
   "tools": {

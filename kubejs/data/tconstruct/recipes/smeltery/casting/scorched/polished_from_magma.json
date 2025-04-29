@@ -8,6 +8,6 @@
     "tag": "c:magma",
     "amount": 40500
   },
-  "result": "minecraft:magma_block",
+  "result": "tconstruct:polished_scorched_stone",
   "cooling_time": 90
 }
