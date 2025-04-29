@@ -42,7 +42,7 @@
           "fluid": "tconstruct:molten_tungsten",
           "amount": 18000
         },
-        "temperature": 950,
+        "temperature": 700,
         "time": 162,
         "byproducts": [
           {
@@ -79,7 +79,7 @@
           "fluid": "tconstruct:molten_tungsten",
           "amount": 18000
         },
-        "temperature": 950,
+        "temperature": 700,
         "time": 162,
         "byproducts": [
           {

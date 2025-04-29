@@ -1,0 +1,23 @@
+{
+  "type": "tconstruct:casting_table",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:ostrum_ingots"
+      ]
+    }
+  ],
+  "cast": {
+    "tag": "tconstruct:casts/single_use/ingot"
+  },
+  "cast_consumed": true,
+  "fluid": {
+    "tag": "c:molten_ostrum",
+    "amount": 9000
+  },
+  "result": {
+    "tag": "c:ostrum_ingots"
+  },
+  "cooling_time": 65
+}

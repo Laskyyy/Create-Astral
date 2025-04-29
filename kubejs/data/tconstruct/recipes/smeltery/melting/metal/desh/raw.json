@@ -1,0 +1,27 @@
+{
+  "type": "tconstruct:ore_melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:raw_materials/desh"
+      ]
+    }
+  ],
+  "rate": "metal",
+  "ingredient": {
+    "tag": "c:raw_materials/desh"
+  },
+  "result": {
+    "fluid": "kubejs:molten_desh",
+    "amount": 9000
+  },
+  "temperature": 425,
+  "time": 71,
+  "byproducts": [
+    {
+      "fluid": "tconstruct:molten_iron",
+      "amount": 9000
+    }
+  ]
+}

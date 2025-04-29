@@ -11,10 +11,10 @@
       "recipe": {
         "type": "tconstruct:incremental_modifier",
         "input": {
-          "item": "tconstruct:ichor_slime_crystal"
+          "item": "tconstruct:ichor_slime_ball"
         },
         "amount_per_item": 1,
-        "needed_per_level": 72,
+        "needed_per_level": 192,
         "tools": {
           "tag": "tconstruct:modifiable/armor/chestplate"
         },

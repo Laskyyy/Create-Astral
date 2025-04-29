@@ -32,7 +32,7 @@
         "time": 359,
         "byproducts": [
           {
-            "fluid": "tconstruct:molten_lead",
+            "fluid": "kubejs:molten_desh",
             "amount": 81000
           }
         ]
@@ -58,7 +58,7 @@
         "time": 359,
         "byproducts": [
           {
-            "fluid": "tconstruct:molten_gold",
+            "fluid": "kubejs:molten_desh",
             "amount": 81000
           }
         ]

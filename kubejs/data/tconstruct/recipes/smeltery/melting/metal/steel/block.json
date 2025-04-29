@@ -4,17 +4,17 @@
     {
       "condition": "fabric:item_tags_populated",
       "values": [
-        "c:storage_blocks/steel"
+        "c:steel_blocks"
       ]
     }
   ],
   "ingredient": {
-    "tag": "c:storage_blocks/steel"
+    "tag": "c:steel_blocks"
   },
   "result": {
     "fluid": "tconstruct:molten_steel",
     "amount": 81000
   },
-  "temperature": 950,
+  "temperature": 800,
   "time": 194
 }

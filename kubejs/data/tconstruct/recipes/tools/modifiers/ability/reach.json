@@ -2,19 +2,19 @@
   "type": "tconstruct:modifier",
   "inputs": [
     {
-      "item": "minecraft:piston"
+      "item": "create:mechanical_piston"
     },
     {
-      "tag": "c:ingots/queens_slime"
+      "tag": "createastral:astral_conduit"
     },
     {
-      "item": "minecraft:piston"
+      "item": "create:mechanical_piston"
     },
     {
-      "tag": "c:slimeball/ender"
+      "tag": "create:piston_extension_pole"
     },
     {
-      "tag": "c:slimeball/ender"
+      "tag": "create:piston_extension_pole"
     }
   ],
   "tools": {

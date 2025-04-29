@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material",
-  "ingredient": {
-    "tag": "c:string"
-  },
-  "value": 1,
-  "needed": 4,
-  "material": "tconstruct:string"
-}

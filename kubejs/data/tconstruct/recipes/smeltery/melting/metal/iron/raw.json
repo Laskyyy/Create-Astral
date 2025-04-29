@@ -13,9 +13,14 @@
       "recipe": {
         "type": "tconstruct:ore_melting",
         "rate": "metal",
-        "ingredient": {
-          "tag": "c:raw_materials/iron"
-        },
+        "ingredient": [
+    {
+      "tag": "c:raw_materials/iron"
+    },
+    {
+      "item": "create:crushed_raw_iron"
+    }
+  ],
         "result": {
           "fluid": "tconstruct:molten_iron",
           "amount": 9000
@@ -24,7 +29,7 @@
         "time": 90,
         "byproducts": [
           {
-            "fluid": "tconstruct:molten_nickel",
+            "fluid": "tconstruct:molten_copper",
             "amount": 9000
           }
         ]
@@ -39,9 +44,14 @@
       "recipe": {
         "type": "tconstruct:ore_melting",
         "rate": "metal",
-        "ingredient": {
-          "tag": "c:raw_materials/iron"
-        },
+        "ingredient": [
+    {
+      "tag": "c:raw_materials/iron"
+    },
+    {
+      "item": "create:crushed_raw_iron"
+    }
+  ],
         "result": {
           "fluid": "tconstruct:molten_iron",
           "amount": 9000

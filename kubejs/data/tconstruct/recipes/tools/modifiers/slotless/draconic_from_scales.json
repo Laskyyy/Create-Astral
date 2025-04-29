@@ -2,19 +2,7 @@
   "type": "tconstruct:modifier",
   "inputs": [
     {
-      "item": "minecraft:wither_rose"
-    },
-    {
-      "item": "tconstruct:dragon_scale"
-    },
-    {
-      "item": "minecraft:wither_rose"
-    },
-    {
-      "item": "tconstruct:dragon_scale"
-    },
-    {
-      "item": "tconstruct:dragon_scale"
+      "item": "createastral:astral_singularity"
     }
   ],
   "tools": {

@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material",
-  "ingredient": {
-    "tag": "c:ingots/amethyst_bronze"
-  },
-  "value": 1,
-  "needed": 1,
-  "material": "tconstruct:amethyst_bronze"
-}

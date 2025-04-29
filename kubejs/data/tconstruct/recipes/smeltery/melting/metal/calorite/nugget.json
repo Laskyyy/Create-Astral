@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:nuggets/calorite"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "c:nuggets/calorite"
+  },
+  "result": {
+    "fluid": "kubejs:molten_calorite",
+    "amount": 1000
+  },
+  "temperature": 3000,
+  "time": 16
+}

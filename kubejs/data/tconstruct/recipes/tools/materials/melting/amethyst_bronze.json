@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material_melting",
-  "input": "tconstruct:amethyst_bronze",
-  "temperature": 820,
-  "result": {
-    "fluid": "tconstruct:molten_amethyst_bronze",
-    "amount": 9000
-  }
-}

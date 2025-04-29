@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material_melting",
-  "input": "tconstruct:copper",
-  "temperature": 500,
-  "result": {
-    "fluid": "tconstruct:molten_copper",
-    "amount": 9000
-  }
-}

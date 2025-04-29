@@ -2,19 +2,19 @@
   "type": "tconstruct:modifier",
   "inputs": [
     {
-      "item": "minecraft:piston"
+      "item": "create:mechanical_piston"
     },
     {
       "item": "tconstruct:sky_slime"
     },
     {
-      "item": "minecraft:piston"
+      "item": "create:mechanical_piston"
     },
     {
-      "item": "minecraft:phantom_membrane"
+      "item": "create:blaze_burner"
     },
     {
-      "item": "minecraft:phantom_membrane"
+      "item": "create:blaze_burner"
     }
   ],
   "tools": {

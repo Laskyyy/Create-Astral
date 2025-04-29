@@ -2,19 +2,19 @@
   "type": "tconstruct:modifier",
   "inputs": [
     {
-      "tag": "c:ingots/rose_gold"
+      "item": "minecraft:diamond_block"
     },
     {
-      "item": "minecraft:rabbit_foot"
+      "tag": "c:storage_blocks/lapis"
     },
     {
-      "tag": "c:ingots/rose_gold"
+      "tag": "c:storage_blocks/lapis"
     },
     {
-      "tag": "c:gems/diamond"
+      "tag": "c:storage_blocks/lapis"
     },
     {
-      "item": "minecraft:name_tag"
+      "tag": "c:storage_blocks/lapis"
     }
   ],
   "tools": {

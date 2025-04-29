@@ -1,0 +1,27 @@
+{
+  "type": "tconstruct:ore_melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:raw_materials/ostrum"
+      ]
+    }
+  ],
+  "rate": "metal",
+  "ingredient": {
+    "tag": "c:raw_materials/ostrum"
+  },
+  "result": {
+    "fluid": "kubejs:molten_ostrum",
+    "amount": 9000
+  },
+  "temperature": 3000,
+  "time": 71,
+  "byproducts": [
+    {
+      "fluid": "tconstruct:molten_lead",
+      "amount": 9000
+    }
+  ]
+}

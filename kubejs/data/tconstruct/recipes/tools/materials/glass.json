@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material",
-  "ingredient": {
-    "tag": "c:glass"
-  },
-  "value": 1,
-  "needed": 1,
-  "material": "tconstruct:glass"
-}

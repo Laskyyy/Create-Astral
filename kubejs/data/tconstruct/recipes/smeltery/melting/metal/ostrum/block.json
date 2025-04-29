@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:storage_blocks/ostrum"
+      ]
+    }
+  ],
+  "ingredient": {
+    "tag": "c:storage_blocks/ostrum"
+  },
+  "result": {
+    "fluid": "kubejs:molten_ostrum",
+    "amount": 81000
+  },
+  "temperature": 3000,
+  "time": 141
+}

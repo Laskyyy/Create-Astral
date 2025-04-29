@@ -4,7 +4,7 @@
     {
       "condition": "fabric:item_tags_populated",
       "values": [
-        "c:nuggets/steel"
+        "c:steel_nuggets"
       ]
     }
   ],
@@ -17,7 +17,7 @@
     "amount": 1000
   },
   "result": {
-    "tag": "c:nuggets/steel"
+    "tag": "c:steel_nuggets"
   },
   "cooling_time": 22
 }

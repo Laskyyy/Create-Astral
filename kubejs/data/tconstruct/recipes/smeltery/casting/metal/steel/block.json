@@ -4,7 +4,7 @@
     {
       "condition": "fabric:item_tags_populated",
       "values": [
-        "c:storage_blocks/steel"
+        "c:steel_blocks"
       ]
     }
   ],
@@ -13,7 +13,7 @@
     "amount": 81000
   },
   "result": {
-    "tag": "c:storage_blocks/steel"
+    "tag": "c:steel_blocks"
   },
   "cooling_time": 194
 }

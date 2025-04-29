@@ -1,0 +1,27 @@
+{
+  "type": "tconstruct:ore_melting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:storage_blocks/raw_calorite"
+      ]
+    }
+  ],
+  "rate": "metal",
+  "ingredient": {
+    "tag": "c:storage_blocks/raw_calorite"
+  },
+  "result": {
+    "fluid": "kubejs:molten_calorite",
+    "amount": 81000
+  },
+  "temperature": 3000,
+  "time": 283,
+  "byproducts": [
+    {
+      "fluid": "tconstruct:molten_diamond",
+      "amount": 81000
+    }
+  ]
+}

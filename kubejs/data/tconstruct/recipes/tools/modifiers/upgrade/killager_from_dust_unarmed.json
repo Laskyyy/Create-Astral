@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:incremental_modifier",
   "input": {
-    "tag": "c:gems/lapis"
+    "tag": "c:ingots/iron"
   },
   "amount_per_item": 1,
   "needed_per_level": 45,

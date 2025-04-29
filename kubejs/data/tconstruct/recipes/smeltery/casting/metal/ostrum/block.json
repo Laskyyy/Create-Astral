@@ -1,0 +1,19 @@
+{
+  "type": "tconstruct:casting_basin",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "c:ostrum_blocks"
+      ]
+    }
+  ],
+  "fluid": {
+    "tag": "c:molten_ostrum",
+    "amount": 81000
+  },
+  "result": {
+    "tag": "c:ostrum_blocks"
+  },
+  "cooling_time": 194
+}

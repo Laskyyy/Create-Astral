@@ -13,7 +13,7 @@
   },
   "fluid": {
     "tag": "c:molten_bronze",
-    "amount": 9000
+    "amount": 4500
   },
   "result": {
     "tag": "c:plates/bronze"

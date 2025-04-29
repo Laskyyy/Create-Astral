@@ -4,7 +4,7 @@
     {
       "condition": "fabric:item_tags_populated",
       "values": [
-        "c:plates/steel"
+        "c:steel_plates"
       ]
     }
   ],
@@ -17,7 +17,7 @@
     "amount": 9000
   },
   "result": {
-    "tag": "c:plates/steel"
+    "tag": "c:steel_plates"
   },
   "cooling_time": 65
 }

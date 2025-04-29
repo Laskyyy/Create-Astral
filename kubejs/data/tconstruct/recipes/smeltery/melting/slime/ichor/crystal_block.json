@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "tconstruct:ichor_slime_crystal_block"
+  },
+  "result": {
+    "fluid": "tconstruct:ichor",
+    "amount": 40500
+  },
+  "temperature": 50,
+  "time": 250
+}

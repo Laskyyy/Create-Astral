@@ -4,6 +4,6 @@
     "tag": "tconstruct:molten_clay",
     "amount": 81000
   },
-  "result": "minecraft:terracotta",
+  "result": "minecraft:clay",
   "cooling_time": 144
 }

@@ -1,9 +1,14 @@
 {
   "type": "tconstruct:ore_melting",
   "rate": "metal",
-  "ingredient": {
-    "tag": "c:raw_materials/copper"
-  },
+  "ingredient": [
+    {
+      "tag": "c:raw_materials/copper"
+    },
+    {
+      "item": "create:crushed_raw_copper"
+    }
+  ],
   "result": {
     "fluid": "tconstruct:molten_copper",
     "amount": 9000
