@@ -2148,8 +2148,6 @@ function deployingRecipes(event) {
 }
 
 function mixingRecipes(event) {
-    // Biofuel rework
-
     // Output: string
     // Input: Array of items, may include fluid objects or item strings
     // Heat: "" = no heat, "heated", or "superheated"
@@ -2172,18 +2170,18 @@ function mixingRecipes(event) {
             output: [
 				{
 					fluid: "estrogen:molten_amethyst",
-					amount: INGOT,
+					amount: INGOT/2,
 				}
 			],
             input: [
 				{
 					fluid: "tconstruct:molten_amethyst",
-					amount: BUCKET,
+					amount: BUCKET/2,
 				},
 				"astraladditions:bulba_root"
 			],
             heat: "",
-            time: 210,
+            time: 105,
         },
 		{
             output: [
