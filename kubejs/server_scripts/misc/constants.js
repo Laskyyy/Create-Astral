@@ -8,9 +8,12 @@ settings.logErroringRecipes = false;
 // constants
 
 const BUCKET = 81000;
+const GEM_BLOCK = 72900;
+const SLIMEBALL = 20250;
 const INGOT = 9000;
-const NUGGET = 1000;
 const GEM = 8100;
+const NUGGET = 1000;
+
 const mB = 81;
 
 const oxidisationTypes = ["exposed", "weathered", "oxidized"];

@@ -88,6 +88,119 @@ onEvent("recipes", (event) => {
             cooling_time: 117, // same as cooling tin block
             cast: [{ tag: "extended_drawers:drawer_containers" }, true],
         },
+        {
+            fluid: ["kubejs:shimmer", BUCKET * 2],
+            result: "ae2:controller",
+            cooling_time: 400,
+            cast: [{ item: "ae2:energy_cell" }, true],
+        },
+        {
+            fluid: ["tconstruct:mushroom_stew", (BUCKET * 2) / 3],
+            result: "minecraft:mushroom_stem",
+            cooling_time: 25,
+        },
+        {
+            fluid: ["kubejs:shimmer", BUCKET],
+            result: "createastral:shimmering_stone",
+            cooling_time: 250,
+            cast: [{ item: "ad_astra:moon_stone" }, true],
+        },
+        {
+            fluid: ["tconstruct:mushroom_stew", INGOT * 1.5],
+            result: "minecraft:shroomlight",
+            cooling_time: 100,
+            cast: [{ item: "minecraft:glowstone" }, true],
+        },
+        {
+            fluid: ["tconstruct:molten_clay", BUCKET],
+            result: "minecraft:clay",
+            cooling_time: 144,
+        },
+        {
+            fluid: ["kubejs:molten_calorite", BUCKET],
+            result: "ad_astra:calorite_block",
+            cooling_time: 194,
+        },
+        {
+            fluid: ["kubejs:molten_desh", BUCKET],
+            result: "ad_astra:desh_block",
+            cooling_time: 141,
+        },
+        {
+            fluid: ["kubejs:molten_ostrum", BUCKET],
+            result: "ad_astra:ostrum_block",
+            cooling_time: 194,
+        },
+        {
+            fluid: ["tconstruct:molten_steel", BUCKET],
+            result: "ad_astra:steel_block",
+            cooling_time: 194,
+        },
+        {
+            fluid: ["tconstruct:magma", BUCKET / 2],
+            result: "minecraft:magma_block",
+            cooling_time: 90,
+            cast: [{ item: "minecraft:polished_basalt" }, true],
+        },
+        {
+            fluid: ["tconstruct:magma", BUCKET / 2],
+            result: "minecraft:stone",
+            cooling_time: 90,
+            cast: [{ item: "minecraft:basalt" }, true],
+        },
+        {
+            fluid: ["tconstruct:magma", BUCKET / 2],
+            result: "minecraft:stone",
+            cooling_time: 90,
+            cast: [{ item: "minecraft:gravel" }, true],
+        },
+        {
+            fluid: ["tconstruct:seared_stone", BUCKET / 2],
+            result: "tconstruct:seared_cobble_wall",
+            cooling_time: 102,
+            cast: [{ item: "minecraft:cobblestone_wall" }, true],
+        },
+        {
+            fluid: ["tconstruct:seared_stone", BUCKET / 4],
+            result: "tconstruct:seared_stone_slab",
+            cooling_time: 72,
+            cast: [{ item: "minecraft:stone_slab" }, true],
+        },
+        {
+            fluid: ["tconstruct:seared_stone", BUCKET / 4],
+            result: "tconstruct:seared_stone_stairs",
+            cooling_time: 102,
+            cast: [{ item: "minecraft:stone_stairs" }, true],
+        },
+        {
+            fluid: ["tconstruct:seared_stone", INGOT * 8],
+            result: "tconstruct:seared_fancy_bricks",
+            cooling_time: 102,
+            cast: [{ item: "minecraft:chiseled_stone_bricks" }, true],
+        },
+        {
+            fluid: ["tconstruct:seared_stone", INGOT * 8],
+            result: "tconstruct:seared_cracked_bricks",
+            cooling_time: 102,
+            cast: [{ item: "minecraft:cracked_stone_bricks" }, true],
+        },
+        {
+            fluid: ["tconstruct:seared_stone", INGOT * 8],
+            result: "tconstruct:seared_paver",
+            cooling_time: 102,
+            cast: [{ item: "minecraft:smooth_stone" }, true],
+        },
+        {
+            fluid: ["tconstruct:ichor", SLIMEBALL * 5],
+            result: "tconstruct:ichor_slime",
+            cooling_time: 103,
+            cast: [{ item: "tconstruct:ichor_congealed_slime" }, true],
+        },
+        {
+            fluid: ["tconstruct:ichor", BUCKET],
+            result: "tconstruct:ichor_congealed_slime",
+            cooling_time: 92,
+        },
     ].forEach((recipe) => {
         event.custom({
             type: "tconstruct:casting_basin",
