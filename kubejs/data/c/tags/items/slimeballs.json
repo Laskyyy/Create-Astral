@@ -5,6 +5,7 @@
     "#c:slimeball/sky",
     "#c:slimeball/ichor",
     "#c:slimeball/ender",
-    "#c:slimeball/blood"
+    "#c:slimeball/blood",
+    "createastral:synthetic_slime"
   ]
 }

@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "techreborn:rubber_log_stripped"
+    "techreborn:rubber_log_stripped",
+    "vinery:stripped_cherry_log",
+    "vinery:stripped_old_cherry_log",
+    "ad_astra:stripped_glacian_log"
   ]
 }

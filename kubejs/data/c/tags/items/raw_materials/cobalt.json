@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "tconstruct:raw_cobalt"
+    "tconstruct:raw_cobalt",
+    "createastral:crushed_raw_cobalt"
   ]
 }
