@@ -2185,9 +2185,7 @@ function mixingRecipes(event) {
         },
 		{
             output: [
-				{
-					"minecraft:cocoa_beans"
-				}
+				"minecraft:cocoa_beans"
 			],
             input: [
 				{
