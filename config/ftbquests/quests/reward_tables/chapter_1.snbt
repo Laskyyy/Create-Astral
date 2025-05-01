@@ -4,82 +4,29 @@
 	title: "{ftbquests.reward_tables.chapter_1.title}"
 	loot_size: 1
 	rewards: [
-		{
-			item: "createdeco:white_decal"
-		}
-		{
-			item: "createdeco:orange_decal"
-		}
-		{
-			item: "createdeco:gray_decal"
-		}
-		{
-			item: "createdeco:light_gray_decal"
-		}
-		{
-			item: "createdeco:blue_decal"
-		}
-		{
-			item: "createdeco:brown_decal"
-		}
-		{
-			item: "createdeco:red_decal"
-		}
-		{
-			item: "create:mechanical_plough"
-		}
-		{
-			item: "create:andesite_funnel"
-		}
-		{
-			item: "create:andesite_tunnel"
-		}
-		{
-			item: "create:track"
-			count: 32
-		}
-		{
-			item: "create:railway_casing"
-			count: 3
-		}
-		{
-			item: "create:track_station"
-		}
-		{
-			item: "create:display_board"
-		}
-		{
-			item: "create:sturdy_sheet"
-			count: 5
-		}
-		{
-			item: "create:basin"
-		}
-		{
-			item: "create:hand_crank"
-		}
-		{
-			item: "create:turntable"
-			count: 2
-		}
-		{
-			item: "create:clutch"
-		}
-		{
-			item: "create:gearbox"
-		}
-		{
-			item: "create:large_cogwheel"
-			count: 3
-		}
-		{
-			item: "create:cogwheel"
-			count: 4
-		}
-		{
-			item: "create:shaft"
-			count: 8
-		}
+		{ item: "createdeco:white_decal" }
+		{ item: "createdeco:orange_decal" }
+		{ item: "createdeco:gray_decal" }
+		{ item: "createdeco:light_gray_decal" }
+		{ item: "createdeco:blue_decal" }
+		{ item: "createdeco:brown_decal" }
+		{ item: "createdeco:red_decal" }
+		{ item: "create:mechanical_plough" }
+		{ item: "create:andesite_funnel" }
+		{ item: "create:andesite_tunnel" }
+		{ item: "create:track", count: 32 }
+		{ item: "create:railway_casing", count: 3 }
+		{ item: "create:track_station" }
+		{ item: "create:display_board" }
+		{ item: "create:sturdy_sheet", count: 5 }
+		{ item: "create:basin" }
+		{ item: "create:hand_crank" }
+		{ item: "create:turntable", count: 2 }
+		{ item: "create:clutch" }
+		{ item: "create:gearbox" }
+		{ item: "create:large_cogwheel", count: 3 }
+		{ item: "create:cogwheel", count: 4 }
+		{ item: "create:shaft", count: 8 }
 		{
 			item: {
 				id: "create:wand_of_symmetry"
@@ -89,89 +36,37 @@
 					symmetry: {
 						type: "empty"
 						direction: 0
-						enable: 1b
 						pos: [
 							0.0f
 							0.0f
 							0.0f
 						]
+						enable: 1b
 					}
 				}
 			}
 		}
-		{
-			item: "create:wrench"
-		}
-		{
-			item: "create:water_wheel"
-		}
-		{
-			item: "create:gearshift"
-		}
-		{
-			item: "create:encased_chain_drive"
-		}
-		{
-			item: "create:windmill_bearing"
-		}
-		{
-			item: "create:mechanical_piston"
-		}
-		{
-			item: "create:piston_extension_pole"
-			count: 8
-		}
-		{
-			item: "create:metal_bracket"
-			count: 10
-		}
-		{
-			item: "create:metal_girder"
-			count: 10
-		}
-		{
-			item: "create:mechanical_harvester"
-		}
-		{
-			item: "create:chute"
-			count: 2
-		}
-		{
-			item: "create:stressometer"
-		}
-		{
-			item: "create:speedometer"
-		}
-		{
-			item: "create:red_seat"
-		}
-		{
-			item: "create:white_sail"
-			count: 8
-		}
-		{
-			item: "create:andesite_casing"
-		}
-		{
-			item: "dustrial_decor:cast_iron_billet"
-			count: 16
-		}
-		{
-			item: "catwalksinc:catwalk"
-			count: 16
-		}
-		{
-			item: "create:copper_sheet"
-			count: 6
-		}
-		{
-			item: "create:iron_sheet"
-			count: 6
-		}
-		{
-			item: "create:golden_sheet"
-			count: 6
-		}
+		{ item: "create:wrench" }
+		{ item: "create:water_wheel" }
+		{ item: "create:gearshift" }
+		{ item: "create:encased_chain_drive" }
+		{ item: "create:windmill_bearing" }
+		{ item: "create:mechanical_piston" }
+		{ item: "create:piston_extension_pole", count: 8 }
+		{ item: "create:metal_bracket", count: 10 }
+		{ item: "create:metal_girder", count: 10 }
+		{ item: "create:mechanical_harvester" }
+		{ item: "create:chute", count: 2 }
+		{ item: "create:stressometer" }
+		{ item: "create:speedometer" }
+		{ item: "create:red_seat" }
+		{ item: "create:white_sail", count: 8 }
+		{ item: "create:andesite_casing" }
+		{ item: "dustrial_decor:cast_iron_billet", count: 16 }
+		{ item: "catwalksinc:catwalk", count: 16 }
+		{ item: "create:copper_sheet", count: 6 }
+		{ item: "create:iron_sheet", count: 6 }
+		{ item: "create:golden_sheet", count: 6 }
 		{
 			item: {
 				id: "create:sand_paper"
@@ -181,121 +76,35 @@
 				}
 			}
 		}
-		{
-			item: "create:empty_schematic"
-		}
-		{
-			item: "createdeco:andesite_mesh_fence"
-			count: 16
-		}
-		{
-			item: "createdeco:andesite_catwalk"
-			count: 16
-		}
-		{
-			item: "createdeco:cast_iron_catwalk"
-			count: 16
-		}
-		{
-			item: "createdeco:iron_mesh_fence"
-			count: 16
-		}
-		{
-			item: "createdeco:iron_catwalk"
-			count: 16
-		}
-		{
-			item: "techreborn:crude_storage_unit"
-			count: 3
-		}
-		{
-			item: "minecraft:redstone"
-			count: 32
-		}
-		{
-			item: "minecraft:coal"
-			count: 32
-		}
-		{
-			item: "minecraft:rabbit"
-			count: 8
-		}
-		{
-			item: "minecraft:gunpowder"
-			count: 16
-		}
-		{
-			item: "minecraft:bone"
-			count: 24
-		}
-		{
-			item: "minecraft:bundle"
-		}
-		{
-			item: "minecraft:stone"
-			count: 32
-		}
-		{
-			item: "techreborn:tin_ingot"
-			count: 16
-		}
-		{
-			item: "minecraft:oak_log"
-			count: 32
-		}
-		{
-			item: "minecraft:lapis_lazuli"
-			count: 16
-		}
-		{
-			item: "create:ochrum"
-			count: 20
-		}
-		{
-			item: "create:veridium"
-			count: 20
-		}
-		{
-			item: "create:crimsite"
-			count: 20
-		}
-		{
-			item: "create:asurine"
-			count: 20
-		}
-		{
-			item: "minecraft:polished_andesite"
-			count: 32
-		}
-		{
-			item: "minecraft:calcite"
-			count: 32
-		}
-		{
-			item: "minecraft:bricks"
-			count: 64
-		}
-		{
-			item: "minecraft:stone_bricks"
-			count: 64
-		}
-		{
-			item: "minecraft:oak_log"
-			count: 32
-		}
-		{
-			item: "minecraft:spruce_log"
-			count: 32
-		}
-		{
-			item: "minecraft:dark_oak_log"
-			count: 32
-		}
-		{
-			item: "create:experience_nugget"
-			count: 16
-			weight: 5
-		}
+		{ item: "create:empty_schematic" }
+		{ item: "createdeco:andesite_mesh_fence", count: 16 }
+		{ item: "createdeco:andesite_catwalk", count: 16 }
+		{ item: "createdeco:cast_iron_catwalk", count: 16 }
+		{ item: "createdeco:iron_mesh_fence", count: 16 }
+		{ item: "createdeco:iron_catwalk", count: 16 }
+		{ item: "techreborn:crude_storage_unit", count: 3 }
+		{ item: "minecraft:redstone", count: 32 }
+		{ item: "minecraft:coal", count: 32 }
+		{ item: "minecraft:rabbit", count: 8 }
+		{ item: "minecraft:gunpowder", count: 16 }
+		{ item: "minecraft:bone", count: 24 }
+		{ item: "minecraft:bundle" }
+		{ item: "minecraft:stone", count: 32 }
+		{ item: "techreborn:tin_ingot", count: 16 }
+		{ item: "minecraft:oak_log", count: 32 }
+		{ item: "minecraft:lapis_lazuli", count: 16 }
+		{ item: "create:ochrum", count: 20 }
+		{ item: "create:veridium", count: 20 }
+		{ item: "create:crimsite", count: 20 }
+		{ item: "create:asurine", count: 20 }
+		{ item: "minecraft:polished_andesite", count: 32 }
+		{ item: "minecraft:calcite", count: 32 }
+		{ item: "minecraft:bricks", count: 64 }
+		{ item: "minecraft:stone_bricks", count: 64 }
+		{ item: "minecraft:oak_log", count: 32 }
+		{ item: "minecraft:spruce_log", count: 32 }
+		{ item: "minecraft:dark_oak_log", count: 32 }
+		{ item: "create:experience_nugget", count: 16, weight: 5 }
 	]
 	loot_crate: {
 		drops: {

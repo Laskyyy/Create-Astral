@@ -746,8 +746,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						File: "[AstralExamples] Electrolyzer.nbt"
 						Rotation: "NONE"
+						File: "[AstralExamples] Electrolyzer.nbt"
 						Mirror: "NONE"
 						Bounds: [
 							7
@@ -2906,8 +2906,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						File: "[AstralExamples] Stone Growth Chamber.nbt"
 						Rotation: "NONE"
+						File: "[AstralExamples] Stone Growth Chamber.nbt"
 						Mirror: "NONE"
 						Bounds: [
 							3
@@ -3005,9 +3005,11 @@
 			y: -5.0d
 			subtitle: "{ftbquests.chapter.chapter_3.quests80.title}"
 			description: [
-				"{ftbquests.chapter.chapter_3.quests80.description0}"
+				"&6Shimmer&r can be used to &6transmute&r certain items, transforming them into another item."
 				""
-				"{ftbquests.chapter.chapter_3.quests80.description2}"
+				"Press U on a bucket of Shimmer in your inventory to see all of the recipes!"
+				""
+				"Simply throw a valid item into Shimmer fluid and watch the SCIENCE unfold! Remember your protective goggles!"
 			]
 			dependencies: ["00F3EA4A8FB5B11B"]
 			id: "2F47A42AA439BA7B"

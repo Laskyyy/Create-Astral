@@ -33,7 +33,6 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests0.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests0.description3}"
 			]
 			dependencies: ["6027602617EC9F1F"]
@@ -62,11 +61,7 @@
 			x: -19.0d
 			y: 5.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests1.subtitle}"
-			description: [
-				"{ftbquests.chapter.chapter_4.quests1.description0}"
-				""
-				""
-			]
+			description: ["{ftbquests.chapter.chapter_4.quests1.description0}"]
 			dependencies: ["51BD31261A5725E3"]
 			id: "705C815541DB89F8"
 			tasks: [
@@ -105,12 +100,9 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests2.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests2.description3}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests2.description6}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests2.description9}"
 			]
@@ -158,11 +150,7 @@
 			x: -14.5d
 			y: 4.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests3.subtitle}"
-			description: [
-				"{ftbquests.chapter.chapter_4.quests3.description0}"
-				""
-				""
-			]
+			description: ["{ftbquests.chapter.chapter_4.quests3.description0}"]
 			dependencies: ["705C815541DB89F8"]
 			id: "21DBCD51CC35B794"
 			tasks: [{
@@ -187,12 +175,9 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests4.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests4.description3}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests4.description6}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests4.description9}"
 			]
@@ -317,7 +302,6 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests6.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests6.description3}"
 			]
 			hide_dependency_lines: false
@@ -345,9 +329,6 @@
 			subtitle: "{ftbquests.chapter.chapter_4.quests7.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests7.description0}"
-				""
-				""
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests7.description5}"
 			]
@@ -517,8 +498,6 @@
 			x: -1.5d
 			y: -5.0d
 			description: [
-				""
-				""
 				"{ftbquests.chapter.chapter_4.quests12.description2}"
 				"{ftbquests.chapter.chapter_4.quests12.description3}"
 			]
@@ -562,11 +541,14 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests14.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests14.description3}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests14.description6}"
+				"&lWelcome to Chapter 3!&r"
+				""
+				"Things will start feeling truly challenging."
+				""
+				"Recipe chains will be long and complicated"
 			]
 			dependencies: ["15B9947ABCCB882F"]
 			hide: true
@@ -604,7 +586,6 @@
 			subtitle: "{ftbquests.chapter.chapter_4.quests15.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests15.description0}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests15.description3}"
 			]
@@ -680,9 +661,7 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests17.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests17.description3}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests17.description6}"
 			]
@@ -709,7 +688,6 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests18.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests18.description3}"
 			]
 			dependencies: ["306D009F01634115"]
@@ -734,7 +712,6 @@
 			subtitle: "{ftbquests.chapter.chapter_4.quests19.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests19.description0}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests19.description3}"
 			]
@@ -787,10 +764,7 @@
 					id: "tconstruct:sword"
 					Count: 1b
 					tag: {
-						tic_multipliers: {
-							"tconstruct:mining_speed": 0.5f
-							"tconstruct:durability": 1.1f
-						}
+						Damage: 0
 						tic_stats: {
 							"tconstruct:attack_speed": 1.7600001f
 							"tconstruct:mining_speed": 4.07f
@@ -798,8 +772,15 @@
 							"tconstruct:harvest_tier": "minecraft:diamond"
 							"tconstruct:durability": 246.40001f
 						}
-						Damage: 0
-						tic_broken: 0b
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.5f
+							"tconstruct:durability": 1.1f
+						}
+						tic_materials: [
+							"tconstruct:silver"
+							"tconstruct:silver"
+							"tconstruct:silver"
+						]
 						tic_modifiers: [
 							{
 								name: "tconstruct:smite"
@@ -810,11 +791,7 @@
 								level: 1s
 							}
 						]
-						tic_materials: [
-							"tconstruct:silver"
-							"tconstruct:silver"
-							"tconstruct:silver"
-						]
+						tic_broken: 0b
 						tic_persistent_data: {
 							upgrades: 3
 							abilities: 1
@@ -845,9 +822,7 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests23.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests23.description3}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests23.description6}"
 			]
@@ -916,7 +891,6 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests25.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests25.description3}"
 			]
 			dependencies: ["752215E611021472"]
@@ -946,7 +920,6 @@
 			subtitle: "{ftbquests.chapter.chapter_4.quests26.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests26.description0}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests26.description3}"
 			]
@@ -985,7 +958,6 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests27.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests27.description3}"
 			]
 			dependencies: [
@@ -1017,9 +989,7 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests28.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests28.description3}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests28.description6}"
 			]
@@ -1059,14 +1029,9 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests29.description0}"
 				""
-				""
-				""
-				""
 				"{ftbquests.chapter.chapter_4.quests29.description5}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests29.description8}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests29.description11}"
 			]
@@ -1143,7 +1108,6 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests31.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests31.description3}"
 			]
 			dependencies: ["752215E611021472"]
@@ -1162,7 +1126,6 @@
 			subtitle: "{ftbquests.chapter.chapter_4.quests32.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests32.description0}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests32.description3}"
 			]
@@ -1237,7 +1200,6 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests36.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests36.description3}"
 			]
 			dependencies: ["609BD6A99E34BB17"]
@@ -1263,7 +1225,6 @@
 			subtitle: "{ftbquests.chapter.chapter_4.quests37.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests37.description0}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests37.description3}"
 			]
@@ -1309,7 +1270,6 @@
 			subtitle: "{ftbquests.chapter.chapter_4.quests39.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests39.description0}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests39.description3}"
 			]
@@ -1365,9 +1325,7 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests41.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests41.description3}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests41.description6}"
 			]
@@ -1566,16 +1524,13 @@
 			x: 5.5d
 			y: -2.5d
 			shape: "circle"
-			subtitle: "{ftbquests.chapter.chapter_4.quests48.subtitle}"
+			subtitle: "Feeling like a NASA astronaut?"
 			description: [
-				"{ftbquests.chapter.chapter_4.quests48.description0}"
+				"Living in Space can be awesome."
 				""
+				"The Space Station comes with a Oxygen Distributor and a Solar Panel, but the oxygen will only last for a while. Make sure to bring a way to generate more Oxygen!"
 				""
-				"{ftbquests.chapter.chapter_4.quests48.description3}"
-				""
-				""
-				"{ftbquests.chapter.chapter_4.quests48.description6}"
-				"{ftbquests.chapter.chapter_4.quests48.description7}"
+				"Also, you may find some remnants of &6ancient advanced civilizations&r here..."
 			]
 			dependencies: ["6E20B194F5CA8F22"]
 			id: "47A155F9CAD19710"
@@ -1587,21 +1542,44 @@
 					count: 64L
 				}
 				{
-					id: "63BB45AF2D40E144"
+					id: "58F75F65EAFD0BF1"
 					type: "item"
-					item: "ad_astra:oxygen_distributor"
+					item: "techreborn:rubber"
+					count: 64L
 				}
 				{
-					id: "6869CE7DA56027CA"
+					id: "17816788741BD168"
+					type: "item"
+					item: "ad_astra:desh_plate"
+					count: 32L
+				}
+				{
+					id: "2C19D15089162C3F"
+					type: "item"
+					item: "minecraft:glass"
+					count: 32L
+				}
+				{
+					id: "47A450F87FACB1D8"
+					type: "item"
+					item: "create:sturdy_sheet"
+					count: 16L
+				}
+				{
+					id: "3F08F452805BDE47"
 					type: "item"
 					item: "create:integrated_circuit"
 					count: 8L
 				}
 				{
-					id: "50D956034D3D2FD4"
+					id: "2F90B58920B8C523"
 					type: "item"
-					item: "ad_astra:desh_plate"
-					count: 32L
+					item: "createastral:navigation_mechanism"
+				}
+				{
+					id: "010EB777DB0353E7"
+					type: "item"
+					item: "ad_astra:oxygen_distributor"
 				}
 			]
 			rewards: [
@@ -1667,9 +1645,7 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests50.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests50.description3}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests50.description6}"
 			]
@@ -1803,9 +1779,7 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests55.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests55.description3}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests55.description6}"
 			]
@@ -1825,9 +1799,7 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests56.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests56.description3}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests56.description6}"
 			]
@@ -1889,7 +1861,6 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests58.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests58.description3}"
 			]
 			dependencies: ["705C815541DB89F8"]
@@ -1927,7 +1898,6 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests59.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests59.description3}"
 			]
 			dependencies: [
@@ -1963,7 +1933,6 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests60.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests60.description3}"
 			]
 			dependencies: [
@@ -1990,7 +1959,6 @@
 			subtitle: "{ftbquests.chapter.chapter_4.quests61.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests61.description0}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests61.description3}"
 			]
@@ -2032,9 +2000,7 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests63.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests63.description3}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests63.description6}"
 			]
@@ -2061,9 +2027,7 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests64.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests64.description3}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests64.description6}"
 			]
@@ -2096,7 +2060,6 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests66.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests66.description3}"
 			]
 			hide_dependency_lines: true
@@ -2123,7 +2086,6 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests67.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests67.description3}"
 			]
 			dependencies: ["0EDFECC97E44B508"]
@@ -2149,9 +2111,7 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests68.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests68.description3}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests68.description6}"
 			]
@@ -2171,9 +2131,7 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests69.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests69.description3}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests69.description6}"
 			]
@@ -2200,7 +2158,6 @@
 			subtitle: "{ftbquests.chapter.chapter_4.quests70.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests70.description0}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests70.description3}"
 			]
@@ -2242,7 +2199,6 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests72.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests72.description3}"
 			]
 			dependencies: ["64A1C434EB7021E6"]
@@ -2271,11 +2227,7 @@
 			x: -22.5d
 			y: 2.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests73.subtitle}"
-			description: [
-				""
-				""
-				"{ftbquests.chapter.chapter_4.quests73.description2}"
-			]
+			description: ["{ftbquests.chapter.chapter_4.quests73.description2}"]
 			dependencies: ["6027602617EC9F1F"]
 			id: "129A16584F8B0BFE"
 			tasks: [{
@@ -2308,7 +2260,6 @@
 			subtitle: "{ftbquests.chapter.chapter_4.quests75.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests75.description0}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests75.description3}"
 			]
@@ -2348,7 +2299,6 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests77.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests77.description3}"
 			]
 			dependencies: ["5355CA2F0BA74BF1"]
@@ -2373,7 +2323,6 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests78.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests78.description3}"
 			]
 			dependencies: ["5355CA2F0BA74BF1"]
@@ -2397,7 +2346,6 @@
 			subtitle: "{ftbquests.chapter.chapter_4.quests79.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests79.description0}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests79.description3}"
 			]
@@ -2431,7 +2379,6 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests80.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests80.description3}"
 			]
 			dependencies: ["5355CA2F0BA74BF1"]
@@ -2463,7 +2410,6 @@
 			subtitle: "{ftbquests.chapter.chapter_4.quests81.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests81.description0}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests81.description3}"
 			]
@@ -2546,9 +2492,7 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests84.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests84.description3}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests84.description6}"
 			]
@@ -2583,7 +2527,6 @@
 			subtitle: "{ftbquests.chapter.chapter_4.quests85.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests85.description0}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests85.description3}"
 			]
@@ -2798,7 +2741,6 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests91.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests91.description3}"
 			]
 			dependencies: ["20BFF582275C31C8"]
@@ -2912,7 +2854,6 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests94.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests94.description3}"
 			]
 			dependencies: ["2F7F41E1C9C7F7B3"]
@@ -2931,7 +2872,6 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests95.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests95.description3}"
 			]
 			dependencies: ["609BD6A99E34BB17"]
@@ -2949,7 +2889,6 @@
 			subtitle: "{ftbquests.chapter.chapter_4.quests96.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests96.description0}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests96.description3}"
 			]
@@ -2971,9 +2910,7 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests97.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests97.description3}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests97.description6}"
 			]
@@ -3022,7 +2959,6 @@
 			subtitle: "{ftbquests.chapter.chapter_4.quests99.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests99.description0}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests99.description3}"
 			]
@@ -3113,11 +3049,7 @@
 			title: "{ftbquests.chapter.chapter_4.quests103.title}"
 			x: -1.5d
 			y: 5.0d
-			description: [
-				"{ftbquests.chapter.chapter_4.quests103.description0}"
-				""
-				""
-			]
+			description: ["{ftbquests.chapter.chapter_4.quests103.description0}"]
 			dependencies: ["429D2340C2B20A60"]
 			id: "49BE333EAC6260C8"
 			tasks: [{
@@ -3134,7 +3066,6 @@
 			subtitle: "{ftbquests.chapter.chapter_4.quests104.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests104.description0}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests104.description3}"
 			]
@@ -3184,9 +3115,7 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests105.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests105.description3}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests105.description6}"
 			]
@@ -3302,7 +3231,6 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests111.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests111.description3}"
 			]
 			dependencies: ["70FE485B4505AC81"]
@@ -3402,15 +3330,12 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests114.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests114.description3}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests114.description6}"
 				"{ftbquests.chapter.chapter_4.quests114.description7}"
 				"{ftbquests.chapter.chapter_4.quests114.description8}"
 				"{ftbquests.chapter.chapter_4.quests114.description9}"
-				""
 				""
 				"{ftbquests.chapter.chapter_4.quests114.description12}"
 			]
@@ -3636,14 +3561,14 @@
 						tag: {
 							tic_modifiers: [ ]
 							tic_broken: 0b
-							tic_multipliers: { }
+							Damage: 0
 							tic_stats: {
 								"tconstruct:armor_toughness": 2.0f
 								"tconstruct:knockback_resistance": 0.1f
 								"tconstruct:durability": 330.0f
 								"tconstruct:armor": 2.0f
 							}
-							Damage: 0
+							tic_multipliers: { }
 							tic_persistent_data: {
 								upgrades: 1
 								abilities: 1
@@ -3661,14 +3586,14 @@
 						tag: {
 							tic_modifiers: [ ]
 							tic_broken: 0b
-							tic_multipliers: { }
+							Damage: 0
 							tic_stats: {
 								"tconstruct:armor_toughness": 2.0f
 								"tconstruct:knockback_resistance": 0.1f
 								"tconstruct:durability": 480.0f
 								"tconstruct:armor": 7.0f
 							}
-							Damage: 0
+							tic_multipliers: { }
 							tic_persistent_data: {
 								upgrades: 1
 								abilities: 1
@@ -3686,14 +3611,14 @@
 						tag: {
 							tic_modifiers: [ ]
 							tic_broken: 0b
-							tic_multipliers: { }
+							Damage: 0
 							tic_stats: {
 								"tconstruct:armor_toughness": 2.0f
 								"tconstruct:knockback_resistance": 0.1f
 								"tconstruct:durability": 450.0f
 								"tconstruct:armor": 5.0f
 							}
-							Damage: 0
+							tic_multipliers: { }
 							tic_persistent_data: {
 								upgrades: 1
 								abilities: 1
@@ -3711,14 +3636,14 @@
 						tag: {
 							tic_modifiers: [ ]
 							tic_broken: 0b
-							tic_multipliers: { }
+							Damage: 0
 							tic_stats: {
 								"tconstruct:armor_toughness": 2.0f
 								"tconstruct:knockback_resistance": 0.1f
 								"tconstruct:durability": 390.0f
 								"tconstruct:armor": 2.0f
 							}
-							Damage: 0
+							tic_multipliers: { }
 							tic_persistent_data: {
 								upgrades: 1
 								abilities: 1

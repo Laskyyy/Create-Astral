@@ -127,7 +127,6 @@
 			description: [
 				"{ftbquests.chapter.chapter_5.quests0.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_5.quests0.description3}"
 			]
 			dependencies: ["63DCF596AAA9A232"]
@@ -210,7 +209,6 @@
 			subtitle: "{ftbquests.chapter.chapter_5.quests2.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_5.quests2.description0}"
-				""
 				""
 				"{ftbquests.chapter.chapter_5.quests2.description3}"
 			]
@@ -667,8 +665,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						File: "[AstralExamples] Distillery.nbt"
 						Rotation: "NONE"
+						File: "[AstralExamples] Distillery.nbt"
 						Mirror: "NONE"
 						Bounds: [
 							5
@@ -1050,7 +1048,7 @@
 				icon: "tconstruct:piglin_head"
 				timer: 0L
 				observe_type: 5
-				to_observe: "Minecraft:piglin"
+				to_observe: "minecraft:piglin"
 			}]
 			rewards: [{
 				id: "3A0AF3AC1F4185EC"
@@ -1369,8 +1367,6 @@
 				"{ftbquests.chapter.chapter_5.quests39.description2}"
 				""
 				"{ftbquests.chapter.chapter_5.quests39.description4}"
-				""
-				""
 			]
 			dependencies: ["7E55004B488A16C1"]
 			size: 1.5d
@@ -1548,10 +1544,9 @@
 				"{ftbquests.chapter.chapter_5.quests43.description0}"
 				""
 				"{ftbquests.chapter.chapter_5.quests43.description2}"
-				""
 			]
 			hide_dependency_lines: true
-			dependencies: ["253F29A00B4EA050"]
+			dependencies: ["27B0EA62812564DD"]
 			optional: true
 			id: "7C85D3BB93C02CD7"
 			tasks: [{
@@ -1569,7 +1564,6 @@
 				"{ftbquests.chapter.chapter_5.quests44.description0}"
 				""
 				"{ftbquests.chapter.chapter_5.quests44.description2}"
-				""
 			]
 			dependencies: ["7C85D3BB93C02CD7"]
 			id: "0C44297569A23C3C"
@@ -1786,7 +1780,6 @@
 				"{ftbquests.chapter.chapter_5.quests52.description0}"
 				""
 				"{ftbquests.chapter.chapter_5.quests52.description2}"
-				""
 			]
 			dependencies: ["111E91837243077C"]
 			id: "3666768F4FCCB7F3"
@@ -2002,7 +1995,6 @@
 			y: -1.0d
 			subtitle: "{ftbquests.chapter.chapter_5.quests62.subtitle}"
 			description: [
-				""
 				"{ftbquests.chapter.chapter_5.quests62.description1}"
 				""
 				"{ftbquests.chapter.chapter_5.quests62.description3}"
@@ -2088,7 +2080,6 @@
 				"{ftbquests.chapter.chapter_5.quests65.description0}"
 				""
 				"{ftbquests.chapter.chapter_5.quests65.description2}"
-				""
 			]
 			dependencies: ["0682A67E2A94B663"]
 			id: "218D042C0501AE76"

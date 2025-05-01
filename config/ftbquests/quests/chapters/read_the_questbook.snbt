@@ -254,7 +254,6 @@
 				"{ftbquests.chapter.read_the_questbook.quests11.description2}"
 				""
 				"{ftbquests.chapter.read_the_questbook.quests11.description4}"
-				""
 			]
 			id: "50A67A22E5C03589"
 			tasks: [
@@ -441,6 +440,7 @@
 				""
 				"{ftbquests.chapter.read_the_questbook.quests19.description10}"
 			]
+			min_width: 220
 			id: "280C4BF916CC90BC"
 			tasks: [{
 				id: "401D67F02E5ED682"

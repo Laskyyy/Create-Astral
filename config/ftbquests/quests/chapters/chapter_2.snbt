@@ -923,7 +923,6 @@
 			description: [
 				"{ftbquests.chapter.chapter_2.quests25.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_2.quests25.description3}"
 			]
 			dependencies: ["545BF28E82A07D19"]
@@ -1220,7 +1219,6 @@
 			description: [
 				"{ftbquests.chapter.chapter_2.quests33.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_2.quests33.description3}"
 			]
 			dependencies: ["4EB4838CCED125E2"]
@@ -1359,9 +1357,7 @@
 			description: [
 				"{ftbquests.chapter.chapter_2.quests38.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_2.quests38.description3}"
-				""
 				""
 				"{ftbquests.chapter.chapter_2.quests38.description6}"
 			]
@@ -1525,7 +1521,6 @@
 				"{ftbquests.chapter.chapter_2.quests44.description0}"
 				""
 				"{ftbquests.chapter.chapter_2.quests44.description2}"
-				""
 			]
 			dependencies: ["5BE7EBA598FD5EE0"]
 			id: "2AF2E0A5DF16F5D9"
@@ -1750,13 +1745,17 @@
 			shape: "gear"
 			subtitle: "{ftbquests.chapter.chapter_2.quests53.subtitle}"
 			description: [
-				"{ftbquests.chapter.chapter_2.quests53.description0}"
+				"Here's an especially handy gadget."
 				""
+				"&6Threshold Switches&r can be set to broadcast a Redstone signal when an inventory has reached a certain threshold, and will turn off once it drops below a threshold."
 				""
-				"{ftbquests.chapter.chapter_2.quests53.description3}"
+				"This is handy for dumping inventories when clogged up."
 				""
+				"This also helps manage fine control of what resources are being made."
 				""
-				"{ftbquests.chapter.chapter_2.quests53.description6}"
+				"You don't really need any more than 4 stacks of Andesite Casing at a time, yeah?"
+				""
+				"Use this, and now any extra Andesite Casings produced can continue to be transformed into Copper and Brass Casings."
 			]
 			dependencies: ["0873D71412D52F18"]
 			id: "1D294F2F189410BD"
@@ -1772,7 +1771,6 @@
 			subtitle: "{ftbquests.chapter.chapter_2.quests54.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_2.quests54.description0}"
-				""
 				""
 				"{ftbquests.chapter.chapter_2.quests54.description3}"
 			]

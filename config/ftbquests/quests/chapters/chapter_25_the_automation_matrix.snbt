@@ -16,13 +16,11 @@
 			description: ["{ftbquests.chapter.chapter_25_the_automation_matrix.quests0.description}"]
 			dependencies: ["7A552E564BED33A1"]
 			id: "447B85EDCD394BC6"
-			tasks: [
-				{
-					id: "725FFF11D9979152"
-					type: "item"
-					item: "minecraft:bone_meal"
-				}
-			]
+			tasks: [{
+				id: "725FFF11D9979152"
+				type: "item"
+				item: "minecraft:bone_meal"
+			}]
 		}
 		{
 			x: -21.5d
@@ -36,13 +34,11 @@
 			]
 			hide: true
 			id: "0ECC3FAE2E840816"
-			tasks: [
-				{
-					id: "53646AC4D82963CF"
-					type: "item"
-					item: "minecraft:sand"
-				}
-			]
+			tasks: [{
+				id: "53646AC4D82963CF"
+				type: "item"
+				item: "minecraft:sand"
+			}]
 		}
 		{
 			x: -21.5d
@@ -53,13 +49,11 @@
 			min_required_dependencies: 1
 			dependencies: ["0ECC3FAE2E840816"]
 			id: "09C0AD7F5D605F0C"
-			tasks: [
-				{
-					id: "41D1941166CC02A4"
-					type: "item"
-					item: "minecraft:clay_ball"
-				}
-			]
+			tasks: [{
+				id: "41D1941166CC02A4"
+				type: "item"
+				item: "minecraft:clay_ball"
+			}]
 		}
 		{
 			x: -33.0d
@@ -72,13 +66,11 @@
 			dependencies: ["75928E9A25B2EFFD"]
 			size: 2.0d
 			id: "347BC30501D878D4"
-			tasks: [
-				{
-					id: "291A449FE0164A45"
-					type: "item"
-					item: "minecraft:quartz"
-				}
-			]
+			tasks: [{
+				id: "291A449FE0164A45"
+				type: "item"
+				item: "minecraft:quartz"
+			}]
 		}
 		{
 			x: -42.0d
@@ -92,13 +84,11 @@
 				"0A433FA9A896A28F"
 			]
 			id: "20B5957A02D96D8D"
-			tasks: [
-				{
-					id: "4D252726EC84BF13"
-					type: "item"
-					item: "techreborn:silver_nugget"
-				}
-			]
+			tasks: [{
+				id: "4D252726EC84BF13"
+				type: "item"
+				item: "techreborn:silver_nugget"
+			}]
 		}
 		{
 			x: -30.0d
@@ -109,13 +99,11 @@
 			dependencies: ["75928E9A25B2EFFD"]
 			size: 2.0d
 			id: "3DF7824F849750C5"
-			tasks: [
-				{
-					id: "6D9F07BCBCC02C87"
-					type: "item"
-					item: "minecraft:glass"
-				}
-			]
+			tasks: [{
+				id: "6D9F07BCBCC02C87"
+				type: "item"
+				item: "minecraft:glass"
+			}]
 		}
 		{
 			x: -30.0d
@@ -128,13 +116,11 @@
 				"4EB80B301903436B"
 			]
 			id: "0D2B2E4558DCB357"
-			tasks: [
-				{
-					id: "4685A4EF8FA17804"
-					type: "item"
-					item: "techreborn:synthetic_redstone_crystal"
-				}
-			]
+			tasks: [{
+				id: "4685A4EF8FA17804"
+				type: "item"
+				item: "techreborn:synthetic_redstone_crystal"
+			}]
 		}
 		{
 			x: -30.0d
@@ -148,13 +134,11 @@
 				"3EA569DE4AC60CC2"
 			]
 			id: "7DFED69541E3B273"
-			tasks: [
-				{
-					id: "2BA382AE0D28A524"
-					type: "item"
-					item: "minecraft:redstone"
-				}
-			]
+			tasks: [{
+				id: "2BA382AE0D28A524"
+				type: "item"
+				item: "minecraft:redstone"
+			}]
 		}
 		{
 			x: -32.5d
@@ -166,13 +150,11 @@
 			hide: false
 			size: 2.0d
 			id: "707B59245747B112"
-			tasks: [
-				{
-					id: "6969F0E705A7FAFE"
-					type: "item"
-					item: "minecraft:kelp"
-				}
-			]
+			tasks: [{
+				id: "6969F0E705A7FAFE"
+				type: "item"
+				item: "minecraft:kelp"
+			}]
 		}
 		{
 			x: -32.5d
@@ -182,18 +164,15 @@
 			description: [
 				"{ftbquests.chapter.chapter_25_the_automation_matrix.quests9.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_25_the_automation_matrix.quests9.description3}"
 			]
 			dependencies: ["707B59245747B112"]
 			id: "32C6826E01CB67F2"
-			tasks: [
-				{
-					id: "544C749CDC09E419"
-					type: "item"
-					item: "minecraft:dried_kelp"
-				}
-			]
+			tasks: [{
+				id: "544C749CDC09E419"
+				type: "item"
+				item: "minecraft:dried_kelp"
+			}]
 		}
 		{
 			x: -32.5d
@@ -205,13 +184,11 @@
 			]
 			hide: false
 			id: "5389EB8711792F04"
-			tasks: [
-				{
-					id: "619E30E3E634B090"
-					type: "item"
-					item: "minecraft:gunpowder"
-				}
-			]
+			tasks: [{
+				id: "619E30E3E634B090"
+				type: "item"
+				item: "minecraft:gunpowder"
+			}]
 		}
 		{
 			x: -25.5d
@@ -223,13 +200,11 @@
 			dependencies: ["75928E9A25B2EFFD"]
 			size: 2.5d
 			id: "0C464BD01B2B52E0"
-			tasks: [
-				{
-					id: "353753310099B852"
-					type: "item"
-					item: "minecraft:lapis_lazuli"
-				}
-			]
+			tasks: [{
+				id: "353753310099B852"
+				type: "item"
+				item: "minecraft:lapis_lazuli"
+			}]
 		}
 		{
 			x: -24.5d
@@ -239,13 +214,11 @@
 			dependencies: ["75928E9A25B2EFFD"]
 			hide: false
 			id: "274BA7205ECC4FEB"
-			tasks: [
-				{
-					id: "5628C6693E4D8EBF"
-					type: "item"
-					item: "techreborn:lazurite_dust"
-				}
-			]
+			tasks: [{
+				id: "5628C6693E4D8EBF"
+				type: "item"
+				item: "techreborn:lazurite_dust"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests13.title}"
@@ -256,19 +229,16 @@
 			description: [
 				"{ftbquests.chapter.chapter_25_the_automation_matrix.quests13.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_25_the_automation_matrix.quests13.description3}"
 			]
 			dependencies: ["003484147EC41589"]
 			size: 1.5d
 			id: "6623524E68636273"
-			tasks: [
-				{
-					id: "657017DCE89F1209"
-					type: "item"
-					item: "minecraft:flint"
-				}
-			]
+			tasks: [{
+				id: "657017DCE89F1209"
+				type: "item"
+				item: "minecraft:flint"
+			}]
 		}
 		{
 			x: -35.0d
@@ -302,13 +272,11 @@
 			]
 			hide: false
 			id: "6B3AE660A641C114"
-			tasks: [
-				{
-					id: "686A9D13861D1830"
-					type: "item"
-					item: "create:rose_quartz"
-				}
-			]
+			tasks: [{
+				id: "686A9D13861D1830"
+				type: "item"
+				item: "create:rose_quartz"
+			}]
 		}
 		{
 			x: -31.0d
@@ -317,13 +285,11 @@
 			dependencies: ["6B3AE660A641C114"]
 			hide: false
 			id: "1CBDFF73BCBD9083"
-			tasks: [
-				{
-					id: "1C60E20F1AF2652B"
-					type: "item"
-					item: "create:polished_rose_quartz"
-				}
-			]
+			tasks: [{
+				id: "1C60E20F1AF2652B"
+				type: "item"
+				item: "create:polished_rose_quartz"
+			}]
 		}
 		{
 			x: -29.440476190476183d
@@ -340,13 +306,11 @@
 			size: 2.5d
 			min_width: 1
 			id: "79BE0CDB2541C4C2"
-			tasks: [
-				{
-					id: "67126B48EE8EAEF7"
-					type: "item"
-					item: "create:electron_tube"
-				}
-			]
+			tasks: [{
+				id: "67126B48EE8EAEF7"
+				type: "item"
+				item: "create:electron_tube"
+			}]
 		}
 		{
 			x: -32.0d
@@ -356,13 +320,11 @@
 			description: ["{ftbquests.chapter.chapter_25_the_automation_matrix.quests18.description}"]
 			dependencies: ["3CB5D433A10C2040"]
 			id: "2E443EE8C2CC5DE9"
-			tasks: [
-				{
-					id: "3AE3FABC164A0A54"
-					type: "item"
-					item: "tconstruct:blazing_blood_bucket"
-				}
-			]
+			tasks: [{
+				id: "3AE3FABC164A0A54"
+				type: "item"
+				item: "tconstruct:blazing_blood_bucket"
+			}]
 		}
 		{
 			x: -30.0d
@@ -372,13 +334,11 @@
 			description: ["{ftbquests.chapter.chapter_25_the_automation_matrix.quests19.description}"]
 			dependencies: ["3CB5D433A10C2040"]
 			id: "75DBB5D323C6761B"
-			tasks: [
-				{
-					id: "5077E3D13D3FB1CF"
-					type: "item"
-					item: "tconstruct:blood_bucket"
-				}
-			]
+			tasks: [{
+				id: "5077E3D13D3FB1CF"
+				type: "item"
+				item: "tconstruct:blood_bucket"
+			}]
 		}
 		{
 			x: -40.0d
@@ -390,13 +350,11 @@
 				"22466F075AF13097"
 			]
 			id: "435FEF448EECB8A9"
-			tasks: [
-				{
-					id: "2E7BA205A33FAAB4"
-					type: "item"
-					item: "minecraft:slime_ball"
-				}
-			]
+			tasks: [{
+				id: "2E7BA205A33FAAB4"
+				type: "item"
+				item: "minecraft:slime_ball"
+			}]
 		}
 		{
 			x: -40.0d
@@ -404,13 +362,11 @@
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests21.subtitle}"
 			dependencies: ["506F91A88F6A9960"]
 			id: "09C4EF17B09DD54B"
-			tasks: [
-				{
-					id: "67D1E04081F6C2EB"
-					type: "item"
-					item: "create:dough"
-				}
-			]
+			tasks: [{
+				id: "67D1E04081F6C2EB"
+				type: "item"
+				item: "create:dough"
+			}]
 		}
 		{
 			x: -37.5d
@@ -421,13 +377,11 @@
 				"09BA679DF8E30068"
 			]
 			id: "22466F075AF13097"
-			tasks: [
-				{
-					id: "008DBEC585A373FD"
-					type: "item"
-					item: "minecraft:lime_dye"
-				}
-			]
+			tasks: [{
+				id: "008DBEC585A373FD"
+				type: "item"
+				item: "minecraft:lime_dye"
+			}]
 		}
 		{
 			x: -37.5d
@@ -436,13 +390,11 @@
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests23.subtitle}"
 			dependencies: ["3AF363AF0DF17B33"]
 			id: "538805A57FBC2DC8"
-			tasks: [
-				{
-					id: "785570FA1A3C3501"
-					type: "item"
-					item: "minecraft:green_dye"
-				}
-			]
+			tasks: [{
+				id: "785570FA1A3C3501"
+				type: "item"
+				item: "minecraft:green_dye"
+			}]
 		}
 		{
 			x: -32.0d
@@ -450,13 +402,11 @@
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests24.subtitle}"
 			dependencies: ["2E443EE8C2CC5DE9"]
 			id: "234C22F2C08CFE9B"
-			tasks: [
-				{
-					id: "596542A61DFB9212"
-					type: "item"
-					item: "minecraft:blaze_rod"
-				}
-			]
+			tasks: [{
+				id: "596542A61DFB9212"
+				type: "item"
+				item: "minecraft:blaze_rod"
+			}]
 		}
 		{
 			x: -32.0d
@@ -464,13 +414,11 @@
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests25.subtitle}"
 			dependencies: ["234C22F2C08CFE9B"]
 			id: "7E8A77B2BB8550B6"
-			tasks: [
-				{
-					id: "4312350F016A5223"
-					type: "item"
-					item: "minecraft:blaze_powder"
-				}
-			]
+			tasks: [{
+				id: "4312350F016A5223"
+				type: "item"
+				item: "minecraft:blaze_powder"
+			}]
 		}
 		{
 			x: -31.0d
@@ -483,13 +431,11 @@
 				"1570C65776B6B233"
 			]
 			id: "6A40405DDF192EE6"
-			tasks: [
-				{
-					id: "2DCA186CBA1B5EEC"
-					type: "item"
-					item: "minecraft:magma_cream"
-				}
-			]
+			tasks: [{
+				id: "2DCA186CBA1B5EEC"
+				type: "item"
+				item: "minecraft:magma_cream"
+			}]
 		}
 		{
 			x: -24.5d
@@ -499,13 +445,11 @@
 			dependencies: ["61CBA59F2BC063AC"]
 			hide: false
 			id: "32D551CE9F6A6B0A"
-			tasks: [
-				{
-					id: "6969CCDD1D95EBEF"
-					type: "item"
-					item: "minecraft:obsidian"
-				}
-			]
+			tasks: [{
+				id: "6969CCDD1D95EBEF"
+				type: "item"
+				item: "minecraft:obsidian"
+			}]
 		}
 		{
 			x: -24.5d
@@ -515,13 +459,11 @@
 			description: ["{ftbquests.chapter.chapter_25_the_automation_matrix.quests28.description}"]
 			dependencies: ["619CD1378381E86E"]
 			id: "6B75BA55CF212249"
-			tasks: [
-				{
-					id: "7C589F71A51D28A8"
-					type: "item"
-					item: "create:sturdy_sheet"
-				}
-			]
+			tasks: [{
+				id: "7C589F71A51D28A8"
+				type: "item"
+				item: "create:sturdy_sheet"
+			}]
 		}
 		{
 			x: -30.0d
@@ -529,13 +471,11 @@
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests29.subtitle}"
 			dependencies: ["75DBB5D323C6761B"]
 			id: "2950D3DA74E0D635"
-			tasks: [
-				{
-					id: "0F7409F178A3CB9F"
-					type: "item"
-					item: "tconstruct:blood_slime_ball"
-				}
-			]
+			tasks: [{
+				id: "0F7409F178A3CB9F"
+				type: "item"
+				item: "tconstruct:blood_slime_ball"
+			}]
 		}
 		{
 			x: -31.0d
@@ -546,13 +486,11 @@
 			dependencies: ["75928E9A25B2EFFD"]
 			size: 1.5d
 			id: "3CB5D433A10C2040"
-			tasks: [
-				{
-					id: "6D2E325203A1C22C"
-					type: "item"
-					item: "tconstruct:foundry_controller"
-				}
-			]
+			tasks: [{
+				id: "6D2E325203A1C22C"
+				type: "item"
+				item: "tconstruct:foundry_controller"
+			}]
 		}
 		{
 			x: -40.0d
@@ -561,13 +499,11 @@
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests31.subtitle}"
 			dependencies: ["1A7E5A082C9C7BC8"]
 			id: "506F91A88F6A9960"
-			tasks: [
-				{
-					id: "2ECC9A08D16E6EF3"
-					type: "item"
-					item: "create:wheat_flour"
-				}
-			]
+			tasks: [{
+				id: "2ECC9A08D16E6EF3"
+				type: "item"
+				item: "create:wheat_flour"
+			}]
 		}
 		{
 			x: -16.999999999999915d
@@ -582,13 +518,11 @@
 			]
 			size: 2.5d
 			id: "0368B30374467B41"
-			tasks: [
-				{
-					id: "22119F83E6D2E7E8"
-					type: "item"
-					item: "create:andesite_alloy"
-				}
-			]
+			tasks: [{
+				id: "22119F83E6D2E7E8"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
 		}
 		{
 			x: -17.0d
@@ -601,13 +535,11 @@
 				"0F059AE4EFCF8EE6"
 			]
 			id: "18A6359D578BEF87"
-			tasks: [
-				{
-					id: "3BFED453550C5CAB"
-					type: "item"
-					item: "kubejs:compound_mixture_bucket"
-				}
-			]
+			tasks: [{
+				id: "3BFED453550C5CAB"
+				type: "item"
+				item: "kubejs:compound_mixture_bucket"
+			}]
 		}
 		{
 			x: -43.75d
@@ -619,13 +551,11 @@
 			hide: false
 			size: 2.5d
 			id: "0BF064389F9FFDC3"
-			tasks: [
-				{
-					id: "66FA647204560D3A"
-					type: "item"
-					item: "create:andesite_casing"
-				}
-			]
+			tasks: [{
+				id: "66FA647204560D3A"
+				type: "item"
+				item: "create:andesite_casing"
+			}]
 		}
 		{
 			x: -45.0d
@@ -636,13 +566,11 @@
 			hide: false
 			size: 2.5d
 			id: "737625E7DFCB0382"
-			tasks: [
-				{
-					id: "4F9DF35559A76531"
-					type: "item"
-					item: "create:copper_casing"
-				}
-			]
+			tasks: [{
+				id: "4F9DF35559A76531"
+				type: "item"
+				item: "create:copper_casing"
+			}]
 		}
 		{
 			x: -43.75d
@@ -653,13 +581,11 @@
 			dependencies: ["737625E7DFCB0382"]
 			size: 2.5d
 			id: "1D0E2A46A37501CB"
-			tasks: [
-				{
-					id: "54159F6A49F9603A"
-					type: "item"
-					item: "create:brass_casing"
-				}
-			]
+			tasks: [{
+				id: "54159F6A49F9603A"
+				type: "item"
+				item: "create:brass_casing"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests37.title}"
@@ -672,20 +598,18 @@
 			hide: false
 			size: 2.0d
 			id: "5B3FA87A71825852"
-			tasks: [
-				{
-					id: "3AD1ED9336A597C6"
-					type: "item"
-					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests37.tasks0.title}"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "minecraft:saplings"
-						}
+			tasks: [{
+				id: "3AD1ED9336A597C6"
+				type: "item"
+				title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests37.tasks0.title}"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:saplings"
 					}
 				}
-			]
+			}]
 		}
 		{
 			x: -27.0d
@@ -693,20 +617,18 @@
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests38.subtitle}"
 			dependencies: ["5B3FA87A71825852"]
 			id: "7FFED14DF7F210ED"
-			tasks: [
-				{
-					id: "3D07DB5BC2416123"
-					type: "item"
-					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests38.tasks0.title}"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "minecraft:logs_that_burn"
-						}
+			tasks: [{
+				id: "3D07DB5BC2416123"
+				type: "item"
+				title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests38.tasks0.title}"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs_that_burn"
 					}
 				}
-			]
+			}]
 		}
 		{
 			x: -28.0d
@@ -716,13 +638,11 @@
 			description: ["{ftbquests.chapter.chapter_25_the_automation_matrix.quests39.description}"]
 			dependencies: ["7FFED14DF7F210ED"]
 			id: "558432AC3AABA477"
-			tasks: [
-				{
-					id: "7576759C9EFBCFB3"
-					type: "item"
-					item: "minecraft:charcoal"
-				}
-			]
+			tasks: [{
+				id: "7576759C9EFBCFB3"
+				type: "item"
+				item: "minecraft:charcoal"
+			}]
 		}
 		{
 			x: -27.0d
@@ -730,13 +650,11 @@
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests40.subtitle}"
 			dependencies: ["7FFED14DF7F210ED"]
 			id: "153FAE86E32F306B"
-			tasks: [
-				{
-					id: "3AE20AB50AA5EC15"
-					type: "item"
-					item: "techreborn:sap"
-				}
-			]
+			tasks: [{
+				id: "3AE20AB50AA5EC15"
+				type: "item"
+				item: "techreborn:sap"
+			}]
 		}
 		{
 			x: -27.0d
@@ -746,13 +664,11 @@
 			description: ["{ftbquests.chapter.chapter_25_the_automation_matrix.quests41.description}"]
 			dependencies: ["153FAE86E32F306B"]
 			id: "023225B51792489A"
-			tasks: [
-				{
-					id: "009718C2DC7AAE91"
-					type: "item"
-					item: "techreborn:rubber"
-				}
-			]
+			tasks: [{
+				id: "009718C2DC7AAE91"
+				type: "item"
+				item: "techreborn:rubber"
+			}]
 		}
 		{
 			x: -28.0d
@@ -763,13 +679,11 @@
 				"558432AC3AABA477"
 			]
 			id: "7F18819B46FAB017"
-			tasks: [
-				{
-					id: "6232A5326FD848AC"
-					type: "item"
-					item: "minecraft:coal"
-				}
-			]
+			tasks: [{
+				id: "6232A5326FD848AC"
+				type: "item"
+				item: "minecraft:coal"
+			}]
 		}
 		{
 			x: -45.0d
@@ -779,13 +693,11 @@
 			dependencies: ["1D0E2A46A37501CB"]
 			size: 2.5d
 			id: "705D35F27DB6DDEF"
-			tasks: [
-				{
-					id: "0C1E485B92104BD0"
-					type: "item"
-					item: "techreborn:basic_machine_frame"
-				}
-			]
+			tasks: [{
+				id: "0C1E485B92104BD0"
+				type: "item"
+				item: "techreborn:basic_machine_frame"
+			}]
 		}
 		{
 			x: -24.0d
@@ -798,13 +710,11 @@
 				"274BA7205ECC4FEB"
 			]
 			id: "7F769452EFAD2E99"
-			tasks: [
-				{
-					id: "633991C61F929CE1"
-					type: "item"
-					item: "minecraft:lapis_block"
-				}
-			]
+			tasks: [{
+				id: "633991C61F929CE1"
+				type: "item"
+				item: "minecraft:lapis_block"
+			}]
 		}
 		{
 			x: -22.5d
@@ -812,13 +722,11 @@
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests45.subtitle}"
 			dependencies: ["7F769452EFAD2E99"]
 			id: "3C90385C588F4630"
-			tasks: [
-				{
-					id: "7CCCAC19D6B772AD"
-					type: "item"
-					item: "create:lapis_sheet"
-				}
-			]
+			tasks: [{
+				id: "7CCCAC19D6B772AD"
+				type: "item"
+				item: "create:lapis_sheet"
+			}]
 		}
 		{
 			x: -21.0d
@@ -830,13 +738,11 @@
 				"4FC60CABB568F168"
 			]
 			id: "7DDCC50A985C6BCC"
-			tasks: [
-				{
-					id: "43C4900204AD6DD2"
-					type: "item"
-					item: "createaddition:copper_wire"
-				}
-			]
+			tasks: [{
+				id: "43C4900204AD6DD2"
+				type: "item"
+				item: "createaddition:copper_wire"
+			}]
 		}
 		{
 			x: -24.0d
@@ -846,13 +752,11 @@
 			dependencies: ["75928E9A25B2EFFD"]
 			hide: false
 			id: "491505BB41BEF9DE"
-			tasks: [
-				{
-					id: "232B368658F87849"
-					type: "item"
-					item: "tconstruct:molten_silver_bucket"
-				}
-			]
+			tasks: [{
+				id: "232B368658F87849"
+				type: "item"
+				item: "tconstruct:molten_silver_bucket"
+			}]
 		}
 		{
 			x: -22.5d
@@ -867,13 +771,11 @@
 			]
 			size: 2.5d
 			id: "759E56BE7B6E2BB3"
-			tasks: [
-				{
-					id: "45381CA917FDCF9E"
-					type: "item"
-					item: "create:integrated_circuit"
-				}
-			]
+			tasks: [{
+				id: "45381CA917FDCF9E"
+				type: "item"
+				item: "create:integrated_circuit"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests49.title}"
@@ -883,13 +785,11 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "36FE917048C6B485"
-			tasks: [
-				{
-					id: "2516528F83CA78EC"
-					type: "item"
-					item: "minecraft:clay_ball"
-				}
-			]
+			tasks: [{
+				id: "2516528F83CA78EC"
+				type: "item"
+				item: "minecraft:clay_ball"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests50.title}"
@@ -928,13 +828,11 @@
 			dependencies: ["75928E9A25B2EFFD"]
 			hide: false
 			id: "5D1A07E7D27FB96D"
-			tasks: [
-				{
-					id: "6BEA4D86E02EB296"
-					type: "item"
-					item: "minecraft:redstone"
-				}
-			]
+			tasks: [{
+				id: "6BEA4D86E02EB296"
+				type: "item"
+				item: "minecraft:redstone"
+			}]
 		}
 		{
 			x: -35.0d
@@ -942,13 +840,11 @@
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests52.subtitle}"
 			dependencies: ["447B85EDCD394BC6"]
 			id: "09BA679DF8E30068"
-			tasks: [
-				{
-					id: "00C0F3834C5CA87C"
-					type: "item"
-					item: "minecraft:white_dye"
-				}
-			]
+			tasks: [{
+				id: "00C0F3834C5CA87C"
+				type: "item"
+				item: "minecraft:white_dye"
+			}]
 		}
 		{
 			x: -29.5d
@@ -962,13 +858,11 @@
 			]
 			hide: false
 			id: "244E5AA24082322C"
-			tasks: [
-				{
-					id: "676FAC62EAC24B74"
-					type: "item"
-					item: "tconstruct:molten_rose_gold_bucket"
-				}
-			]
+			tasks: [{
+				id: "676FAC62EAC24B74"
+				type: "item"
+				item: "tconstruct:molten_rose_gold_bucket"
+			}]
 		}
 		{
 			x: -28.0d
@@ -978,13 +872,11 @@
 			dependencies: ["75928E9A25B2EFFD"]
 			hide: false
 			id: "60CE6A8505C14D69"
-			tasks: [
-				{
-					id: "03409D79EAAD8B0A"
-					type: "item"
-					item: "minecraft:copper_ingot"
-				}
-			]
+			tasks: [{
+				id: "03409D79EAAD8B0A"
+				type: "item"
+				item: "minecraft:copper_ingot"
+			}]
 		}
 		{
 			x: -31.0d
@@ -994,13 +886,11 @@
 			dependencies: ["75928E9A25B2EFFD"]
 			hide: false
 			id: "75AB3EC879693954"
-			tasks: [
-				{
-					id: "6ADC49CF729121C8"
-					type: "item"
-					item: "minecraft:gold_ingot"
-				}
-			]
+			tasks: [{
+				id: "6ADC49CF729121C8"
+				type: "item"
+				item: "minecraft:gold_ingot"
+			}]
 		}
 		{
 			x: -31.0d
@@ -1014,13 +904,11 @@
 				"1B0D38FAEC73D6F8"
 			]
 			id: "7CC71DB08315F7BE"
-			tasks: [
-				{
-					id: "7E5D478AA091748C"
-					type: "item"
-					item: "tconstruct:nether_grout"
-				}
-			]
+			tasks: [{
+				id: "7E5D478AA091748C"
+				type: "item"
+				item: "tconstruct:nether_grout"
+			}]
 		}
 		{
 			x: -24.5d
@@ -1028,13 +916,11 @@
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests57.subtitle}"
 			dependencies: ["32D551CE9F6A6B0A"]
 			id: "619CD1378381E86E"
-			tasks: [
-				{
-					id: "3B356FD0C210EFA4"
-					type: "item"
-					item: "create:powdered_obsidian"
-				}
-			]
+			tasks: [{
+				id: "3B356FD0C210EFA4"
+				type: "item"
+				item: "create:powdered_obsidian"
+			}]
 		}
 		{
 			x: -21.0d
@@ -1044,13 +930,11 @@
 			dependencies: ["75928E9A25B2EFFD"]
 			hide: false
 			id: "4FC60CABB568F168"
-			tasks: [
-				{
-					id: "0ADBA1FF7F733A32"
-					type: "item"
-					item: "create:copper_sheet"
-				}
-			]
+			tasks: [{
+				id: "0ADBA1FF7F733A32"
+				type: "item"
+				item: "create:copper_sheet"
+			}]
 		}
 		{
 			x: -24.5d
@@ -1063,13 +947,11 @@
 			hide: false
 			size: 2.0d
 			id: "61CBA59F2BC063AC"
-			tasks: [
-				{
-					id: "095280D394CF277F"
-					type: "item"
-					item: "minecraft:magma_block"
-				}
-			]
+			tasks: [{
+				id: "095280D394CF277F"
+				type: "item"
+				item: "minecraft:magma_block"
+			}]
 		}
 		{
 			x: -30.999999999999886d
@@ -1084,13 +966,11 @@
 			]
 			size: 2.5d
 			id: "342FA1CA3902D64F"
-			tasks: [
-				{
-					id: "3C3EEC218F49AE5C"
-					type: "item"
-					item: "tconstruct:scorched_brick"
-				}
-			]
+			tasks: [{
+				id: "3C3EEC218F49AE5C"
+				type: "item"
+				item: "tconstruct:scorched_brick"
+			}]
 		}
 		{
 			x: -40.0d
@@ -1101,13 +981,11 @@
 			dependencies: ["75928E9A25B2EFFD"]
 			size: 2.0d
 			id: "1A7E5A082C9C7BC8"
-			tasks: [
-				{
-					id: "0C00ADAAAF8E8759"
-					type: "item"
-					item: "minecraft:wheat"
-				}
-			]
+			tasks: [{
+				id: "0C00ADAAAF8E8759"
+				type: "item"
+				item: "minecraft:wheat"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests62.title}"
@@ -1148,20 +1026,17 @@
 			description: [
 				"{ftbquests.chapter.chapter_25_the_automation_matrix.quests63.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_25_the_automation_matrix.quests63.description3}"
 			]
 			dependencies: ["38814494AB07C2D8"]
 			hide: true
 			size: 5.0d
 			id: "75928E9A25B2EFFD"
-			tasks: [
-				{
-					id: "0C4A361DA556D37A"
-					type: "checkmark"
-					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests63.tasks0.title}"
-				}
-			]
+			tasks: [{
+				id: "0C4A361DA556D37A"
+				type: "checkmark"
+				title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests63.tasks0.title}"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests64.title}"
@@ -1175,20 +1050,18 @@
 			hide: false
 			min_required_tasks: 2
 			id: "1570C65776B6B233"
-			tasks: [
-				{
-					id: "07E194DB658C304F"
-					type: "item"
-					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests64.tasks0.title}"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "c:slimeballs"
-						}
+			tasks: [{
+				id: "07E194DB658C304F"
+				type: "item"
+				title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests64.tasks0.title}"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "c:slimeballs"
 					}
 				}
-			]
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests65.title}"
@@ -1199,9 +1072,7 @@
 			description: [
 				"{ftbquests.chapter.chapter_25_the_automation_matrix.quests65.description0}"
 				""
-				""
 				"{ftbquests.chapter.chapter_25_the_automation_matrix.quests65.description3}"
-				""
 				""
 				"{ftbquests.chapter.chapter_25_the_automation_matrix.quests65.description6}"
 			]
@@ -1209,13 +1080,11 @@
 			hide: false
 			size: 3.0d
 			id: "3CDA0DBF9C8CF228"
-			tasks: [
-				{
-					id: "6A7245A59D6471C9"
-					type: "checkmark"
-					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests65.tasks0.title}"
-				}
-			]
+			tasks: [{
+				id: "6A7245A59D6471C9"
+				type: "checkmark"
+				title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests65.tasks0.title}"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests66.title}"
@@ -1231,170 +1100,144 @@
 			dependencies: ["3CDA0DBF9C8CF228"]
 			size: 1.5d
 			id: "4E42B1B429EF3AFF"
-			tasks: [
-				{
-					id: "01671A62BCC4E3F3"
-					type: "checkmark"
-					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests66.tasks0.title}"
-				}
-			]
-			rewards: [
-				{
-					id: "2682F0057C2A2B48"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 2053519168689179764L
-				}
-			]
+			tasks: [{
+				id: "01671A62BCC4E3F3"
+				type: "checkmark"
+				title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests66.tasks0.title}"
+			}]
+			rewards: [{
+				id: "2682F0057C2A2B48"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
+			}]
 		}
 		{
 			x: -31.0d
 			y: 4.0d
 			dependencies: ["72D7864EBA8E3ABA"]
 			id: "54995020F2BB0E05"
-			tasks: [
-				{
-					id: "6E19F0A08260902E"
-					type: "item"
-					item: "create:ochrum"
-					count: 64L
-				}
-			]
+			tasks: [{
+				id: "6E19F0A08260902E"
+				type: "item"
+				item: "create:ochrum"
+				count: 64L
+			}]
 		}
 		{
 			x: -37.0d
 			y: 4.0d
 			dependencies: ["1EAA2FB8699F543B"]
 			id: "1ACB3A0438D74FA8"
-			tasks: [
-				{
-					id: "79EA6ECA577F9AF9"
-					type: "item"
-					item: "create:crimsite"
-					count: 64L
-				}
-			]
+			tasks: [{
+				id: "79EA6ECA577F9AF9"
+				type: "item"
+				item: "create:crimsite"
+				count: 64L
+			}]
 		}
 		{
 			x: -28.0d
 			y: 4.0d
 			dependencies: ["432B82B19DFB1465"]
 			id: "4C2C2C74FB0F242E"
-			tasks: [
-				{
-					id: "0680CF24B03B8B17"
-					type: "item"
-					item: "create:veridium"
-					count: 64L
-				}
-			]
+			tasks: [{
+				id: "0680CF24B03B8B17"
+				type: "item"
+				item: "create:veridium"
+				count: 64L
+			}]
 		}
 		{
 			x: -34.0d
 			y: 4.0d
 			dependencies: ["795C15A264870B71"]
 			id: "3848102DC87DC4D0"
-			tasks: [
-				{
-					id: "01786A8ECA0CECBC"
-					type: "item"
-					item: "create:asurine"
-					count: 64L
-				}
-			]
+			tasks: [{
+				id: "01786A8ECA0CECBC"
+				type: "item"
+				item: "create:asurine"
+				count: 64L
+			}]
 		}
 		{
 			x: -35.0d
 			y: 4.0d
 			dependencies: ["3848102DC87DC4D0"]
 			id: "7996608F2A1D1431"
-			tasks: [
-				{
-					id: "23D329AEB7EF8E15"
-					type: "item"
-					item: "minecraft:lapis_lazuli"
-				}
-			]
+			tasks: [{
+				id: "23D329AEB7EF8E15"
+				type: "item"
+				item: "minecraft:lapis_lazuli"
+			}]
 		}
 		{
 			x: -25.0d
 			y: 4.0d
 			dependencies: ["74175B603EE5E3AF"]
 			id: "6D8ECB10B559D4C3"
-			tasks: [
-				{
-					id: "7AB31D30C294CF2A"
-					type: "item"
-					item: "create:scorchia"
-					count: 64L
-				}
-			]
+			tasks: [{
+				id: "7AB31D30C294CF2A"
+				type: "item"
+				item: "create:scorchia"
+				count: 64L
+			}]
 		}
 		{
 			x: -22.0d
 			y: 4.0d
 			dependencies: ["40458DEE478FDD85"]
 			id: "3930FFC230D67068"
-			tasks: [
-				{
-					id: "454BB1ACF98E827B"
-					type: "item"
-					item: "create:scoria"
-					count: 64L
-				}
-			]
+			tasks: [{
+				id: "454BB1ACF98E827B"
+				type: "item"
+				item: "create:scoria"
+				count: 64L
+			}]
 		}
 		{
 			x: -21.0d
 			y: 5.0d
 			dependencies: ["3930FFC230D67068"]
 			id: "4C8AC6564D14DFDA"
-			tasks: [
-				{
-					id: "572D95F5EBC69058"
-					type: "item"
-					item: "tconstruct:scorched_brick"
-				}
-			]
+			tasks: [{
+				id: "572D95F5EBC69058"
+				type: "item"
+				item: "tconstruct:scorched_brick"
+			}]
 		}
 		{
 			x: -23.0d
 			y: 5.0d
 			dependencies: ["3930FFC230D67068"]
 			id: "09309EEBED87E854"
-			tasks: [
-				{
-					id: "261F026DC9AC7982"
-					type: "item"
-					item: "minecraft:magma_cream"
-				}
-			]
+			tasks: [{
+				id: "261F026DC9AC7982"
+				type: "item"
+				item: "minecraft:magma_cream"
+			}]
 		}
 		{
 			x: -26.0d
 			y: 5.0d
 			dependencies: ["6D8ECB10B559D4C3"]
 			id: "4800A805C0146DB8"
-			tasks: [
-				{
-					id: "620E9886664CF42A"
-					type: "item"
-					item: "tconstruct:seared_brick"
-				}
-			]
+			tasks: [{
+				id: "620E9886664CF42A"
+				type: "item"
+				item: "tconstruct:seared_brick"
+			}]
 		}
 		{
 			x: -26.0d
 			y: 4.0d
 			dependencies: ["6D8ECB10B559D4C3"]
 			id: "0D7AA9C7809DEF74"
-			tasks: [
-				{
-					id: "61DE59F8BC6E431D"
-					type: "item"
-					item: "create:powdered_obsidian"
-				}
-			]
+			tasks: [{
+				id: "61DE59F8BC6E431D"
+				type: "item"
+				item: "create:powdered_obsidian"
+			}]
 		}
 		{
 			x: -25.0d
@@ -1403,21 +1246,17 @@
 			dependencies: ["6D8ECB10B559D4C3"]
 			size: 2.0d
 			id: "2D90C8ED3DD34561"
-			tasks: [
-				{
-					id: "0D1B7161AC46EEE4"
-					type: "item"
-					item: "create:raw_zinc"
-				}
-			]
-			rewards: [
-				{
-					id: "1BE162CC3A1E4D2C"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 2053519168689179764L
-				}
-			]
+			tasks: [{
+				id: "0D1B7161AC46EEE4"
+				type: "item"
+				item: "create:raw_zinc"
+			}]
+			rewards: [{
+				id: "1BE162CC3A1E4D2C"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
+			}]
 		}
 		{
 			x: -40.0d
@@ -1425,27 +1264,23 @@
 			shape: "circle"
 			dependencies: ["6EB629983858601E"]
 			id: "60FEDA21DCE756B6"
-			tasks: [
-				{
-					id: "66953EE20F4296E9"
-					type: "item"
-					item: "create:limestone"
-					count: 64L
-				}
-			]
+			tasks: [{
+				id: "66953EE20F4296E9"
+				type: "item"
+				item: "create:limestone"
+				count: 64L
+			}]
 		}
 		{
 			x: -41.0d
 			y: 5.0d
 			dependencies: ["60FEDA21DCE756B6"]
 			id: "0A433FA9A896A28F"
-			tasks: [
-				{
-					id: "36EAA8D352873E73"
-					type: "item"
-					item: "createastral:lime"
-				}
-			]
+			tasks: [{
+				id: "36EAA8D352873E73"
+				type: "item"
+				item: "createastral:lime"
+			}]
 		}
 		{
 			x: -40.0d
@@ -1454,21 +1289,17 @@
 			dependencies: ["60FEDA21DCE756B6"]
 			size: 2.0d
 			id: "592D6A3E14642DC6"
-			tasks: [
-				{
-					id: "4F44CDBF279A644D"
-					type: "item"
-					item: "techreborn:raw_tin"
-				}
-			]
-			rewards: [
-				{
-					id: "577A5CF75A759451"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 2053519168689179764L
-				}
-			]
+			tasks: [{
+				id: "4F44CDBF279A644D"
+				type: "item"
+				item: "techreborn:raw_tin"
+			}]
+			rewards: [{
+				id: "577A5CF75A759451"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
+			}]
 		}
 		{
 			x: -34.0d
@@ -1477,21 +1308,17 @@
 			dependencies: ["3848102DC87DC4D0"]
 			size: 2.0d
 			id: "696B95922506D640"
-			tasks: [
-				{
-					id: "02F62966AD090F3A"
-					type: "item"
-					item: "tconstruct:raw_cobalt"
-				}
-			]
-			rewards: [
-				{
-					id: "790481ACBA975EAF"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 2053519168689179764L
-				}
-			]
+			tasks: [{
+				id: "02F62966AD090F3A"
+				type: "item"
+				item: "tconstruct:raw_cobalt"
+			}]
+			rewards: [{
+				id: "790481ACBA975EAF"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
+			}]
 		}
 		{
 			x: -31.0d
@@ -1500,21 +1327,17 @@
 			dependencies: ["54995020F2BB0E05"]
 			size: 2.0d
 			id: "23F084D4691CB4E6"
-			tasks: [
-				{
-					id: "1EFBD834D969EA85"
-					type: "item"
-					item: "minecraft:raw_gold"
-				}
-			]
-			rewards: [
-				{
-					id: "2EA4E67EFF241B01"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 2053519168689179764L
-				}
-			]
+			tasks: [{
+				id: "1EFBD834D969EA85"
+				type: "item"
+				item: "minecraft:raw_gold"
+			}]
+			rewards: [{
+				id: "2EA4E67EFF241B01"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
+			}]
 		}
 		{
 			x: -37.0d
@@ -1523,21 +1346,17 @@
 			dependencies: ["1ACB3A0438D74FA8"]
 			size: 2.0d
 			id: "11BEE0CA2337CEA5"
-			tasks: [
-				{
-					id: "39EA31660A4F5660"
-					type: "item"
-					item: "minecraft:raw_iron"
-				}
-			]
-			rewards: [
-				{
-					id: "79A2E11FDDF7A9D7"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 2053519168689179764L
-				}
-			]
+			tasks: [{
+				id: "39EA31660A4F5660"
+				type: "item"
+				item: "minecraft:raw_iron"
+			}]
+			rewards: [{
+				id: "79A2E11FDDF7A9D7"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
+			}]
 		}
 		{
 			x: -28.0d
@@ -1546,21 +1365,17 @@
 			dependencies: ["4C2C2C74FB0F242E"]
 			size: 2.0d
 			id: "3ADB8C06E236CFB5"
-			tasks: [
-				{
-					id: "2C59F5316F3A6FE2"
-					type: "item"
-					item: "minecraft:raw_copper"
-				}
-			]
-			rewards: [
-				{
-					id: "7B924DA2654A5984"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 2053519168689179764L
-				}
-			]
+			tasks: [{
+				id: "2C59F5316F3A6FE2"
+				type: "item"
+				item: "minecraft:raw_copper"
+			}]
+			rewards: [{
+				id: "7B924DA2654A5984"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
+			}]
 		}
 		{
 			x: -31.0d
@@ -1568,13 +1383,11 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "72D7864EBA8E3ABA"
-			tasks: [
-				{
-					id: "0AD7B918785016FB"
-					type: "item"
-					item: "create:honey_bucket"
-				}
-			]
+			tasks: [{
+				id: "0AD7B918785016FB"
+				type: "item"
+				item: "create:honey_bucket"
+			}]
 		}
 		{
 			x: -37.0d
@@ -1582,13 +1395,11 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "1EAA2FB8699F543B"
-			tasks: [
-				{
-					id: "6625C3D982D0C4EF"
-					type: "item"
-					item: "tconstruct:blood_bucket"
-				}
-			]
+			tasks: [{
+				id: "6625C3D982D0C4EF"
+				type: "item"
+				item: "tconstruct:blood_bucket"
+			}]
 		}
 		{
 			x: -40.0d
@@ -1596,13 +1407,11 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "6EB629983858601E"
-			tasks: [
-				{
-					id: "4F95079BC6B64939"
-					type: "item"
-					item: "minecraft:milk_bucket"
-				}
-			]
+			tasks: [{
+				id: "4F95079BC6B64939"
+				type: "item"
+				item: "minecraft:milk_bucket"
+			}]
 		}
 		{
 			x: -28.0d
@@ -1610,13 +1419,11 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "432B82B19DFB1465"
-			tasks: [
-				{
-					id: "33E3958DBC6305D5"
-					type: "item"
-					item: "minecraft:lava_bucket"
-				}
-			]
+			tasks: [{
+				id: "33E3958DBC6305D5"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
 		}
 		{
 			x: -34.0d
@@ -1624,13 +1431,11 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "795C15A264870B71"
-			tasks: [
-				{
-					id: "585147CB07BFDB45"
-					type: "item"
-					item: "minecraft:water_bucket"
-				}
-			]
+			tasks: [{
+				id: "585147CB07BFDB45"
+				type: "item"
+				item: "minecraft:water_bucket"
+			}]
 		}
 		{
 			x: -25.0d
@@ -1638,13 +1443,11 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "74175B603EE5E3AF"
-			tasks: [
-				{
-					id: "4CD447D5F22D335F"
-					type: "item"
-					item: "tconstruct:blazing_blood_bucket"
-				}
-			]
+			tasks: [{
+				id: "4CD447D5F22D335F"
+				type: "item"
+				item: "tconstruct:blazing_blood_bucket"
+			}]
 		}
 		{
 			x: -22.0d
@@ -1652,91 +1455,77 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "40458DEE478FDD85"
-			tasks: [
-				{
-					id: "6C343860628F0850"
-					type: "item"
-					item: "create:chocolate_bucket"
-				}
-			]
+			tasks: [{
+				id: "6C343860628F0850"
+				type: "item"
+				item: "create:chocolate_bucket"
+			}]
 		}
 		{
 			x: -38.0d
 			y: 5.0d
 			dependencies: ["1ACB3A0438D74FA8"]
 			id: "5ED4BF584F9B769E"
-			tasks: [
-				{
-					id: "330115764BA88056"
-					type: "item"
-					item: "minecraft:redstone"
-				}
-			]
+			tasks: [{
+				id: "330115764BA88056"
+				type: "item"
+				item: "minecraft:redstone"
+			}]
 		}
 		{
 			x: -41.0d
 			y: 4.0d
 			dependencies: ["60FEDA21DCE756B6"]
 			id: "2085B4FFCEB6913C"
-			tasks: [
-				{
-					id: "0A33B9EBB44985E9"
-					type: "item"
-					item: "minecraft:andesite"
-				}
-			]
+			tasks: [{
+				id: "0A33B9EBB44985E9"
+				type: "item"
+				item: "minecraft:andesite"
+			}]
 		}
 		{
 			x: -23.0d
 			y: 4.0d
 			dependencies: ["3930FFC230D67068"]
 			id: "6FBAD794AA1F139A"
-			tasks: [
-				{
-					id: "14383FDAF44716B5"
-					type: "item"
-					item: "minecraft:magma_block"
-				}
-			]
+			tasks: [{
+				id: "14383FDAF44716B5"
+				type: "item"
+				item: "minecraft:magma_block"
+			}]
 		}
 		{
 			x: -32.0d
 			y: 5.0d
 			dependencies: ["54995020F2BB0E05"]
 			id: "6263CE99C664DC40"
-			tasks: [
-				{
-					id: "7230FF2D67343909"
-					type: "item"
-					item: "minecraft:glowstone_dust"
-				}
-			]
+			tasks: [{
+				id: "7230FF2D67343909"
+				type: "item"
+				item: "minecraft:glowstone_dust"
+			}]
 		}
 		{
 			x: -29.0d
 			y: 5.0d
 			dependencies: ["4C2C2C74FB0F242E"]
 			id: "300157052319E92A"
-			tasks: [
-				{
-					id: "1CF46A3D7A6E8B97"
-					type: "item"
-					item: "minecraft:emerald"
-				}
-			]
+			tasks: [{
+				id: "1CF46A3D7A6E8B97"
+				type: "item"
+				item: "minecraft:emerald"
+			}]
 		}
 		{
 			x: -35.0d
 			y: 5.0d
 			dependencies: ["3848102DC87DC4D0"]
 			id: "7FEAA40B7B238DAE"
-			tasks: [
-				{
-					id: "7193EDE9C5CD775F"
-					type: "item"
-					item: "techreborn:lazurite_dust"
-				}
-			]
+			tasks: [{
+				id: "7193EDE9C5CD775F"
+				type: "item"
+				item: "techreborn:lazurite_dust"
+			}]
 		}
 		{
 			x: -41.0d
@@ -1744,13 +1533,11 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "6BC17E6FF3988F27"
-			tasks: [
-				{
-					id: "6C8CB4DF622C7315"
-					type: "item"
-					item: "minecraft:cobblestone"
-				}
-			]
+			tasks: [{
+				id: "6C8CB4DF622C7315"
+				type: "item"
+				item: "minecraft:cobblestone"
+			}]
 		}
 		{
 			x: -36.0d
@@ -1758,13 +1545,11 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "5224CA660D810648"
-			tasks: [
-				{
-					id: "7DB0462A7F2BA2B6"
-					type: "item"
-					item: "minecraft:tuff"
-				}
-			]
+			tasks: [{
+				id: "7DB0462A7F2BA2B6"
+				type: "item"
+				item: "minecraft:tuff"
+			}]
 		}
 		{
 			x: -38.0d
@@ -1772,13 +1557,11 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "5CCFB0D5E793FEEA"
-			tasks: [
-				{
-					id: "63DF733B838CA96B"
-					type: "item"
-					item: "minecraft:cobblestone"
-				}
-			]
+			tasks: [{
+				id: "63DF733B838CA96B"
+				type: "item"
+				item: "minecraft:cobblestone"
+			}]
 		}
 		{
 			x: -32.0d
@@ -1786,13 +1569,11 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "7EDD9855995EE2DC"
-			tasks: [
-				{
-					id: "3A019DBA580FD2E6"
-					type: "item"
-					item: "minecraft:cobblestone"
-				}
-			]
+			tasks: [{
+				id: "3A019DBA580FD2E6"
+				type: "item"
+				item: "minecraft:cobblestone"
+			}]
 		}
 		{
 			x: -30.0d
@@ -1800,13 +1581,11 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "458841D80946EDA0"
-			tasks: [
-				{
-					id: "4BC82158863D0EB1"
-					type: "item"
-					item: "minecraft:dripstone_block"
-				}
-			]
+			tasks: [{
+				id: "4BC82158863D0EB1"
+				type: "item"
+				item: "minecraft:dripstone_block"
+			}]
 		}
 		{
 			x: -33.0d
@@ -1814,13 +1593,11 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "62B6C8E75354C54D"
-			tasks: [
-				{
-					id: "0713BFF78D5E7539"
-					type: "item"
-					item: "minecraft:prismarine"
-				}
-			]
+			tasks: [{
+				id: "0713BFF78D5E7539"
+				type: "item"
+				item: "minecraft:prismarine"
+			}]
 		}
 		{
 			x: -35.0d
@@ -1828,13 +1605,11 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "4F70476E121EF539"
-			tasks: [
-				{
-					id: "255DF80D25E89284"
-					type: "item"
-					item: "minecraft:kelp"
-				}
-			]
+			tasks: [{
+				id: "255DF80D25E89284"
+				type: "item"
+				item: "minecraft:kelp"
+			}]
 		}
 		{
 			x: -29.0d
@@ -1842,13 +1617,11 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "7FAE67DE1F6CD57C"
-			tasks: [
-				{
-					id: "59CC3670EE0F63ED"
-					type: "item"
-					item: "minecraft:slime_ball"
-				}
-			]
+			tasks: [{
+				id: "59CC3670EE0F63ED"
+				type: "item"
+				item: "minecraft:slime_ball"
+			}]
 		}
 		{
 			x: -27.0d
@@ -1856,13 +1629,11 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "24EAC63D0CD34C36"
-			tasks: [
-				{
-					id: "766A1266E6A51E53"
-					type: "item"
-					item: "minecraft:cobblestone"
-				}
-			]
+			tasks: [{
+				id: "766A1266E6A51E53"
+				type: "item"
+				item: "minecraft:cobblestone"
+			}]
 		}
 		{
 			x: -26.0d
@@ -1870,13 +1641,11 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "7E4791DA6BBFE06B"
-			tasks: [
-				{
-					id: "6B85531A164856E6"
-					type: "item"
-					item: "minecraft:blackstone"
-				}
-			]
+			tasks: [{
+				id: "6B85531A164856E6"
+				type: "item"
+				item: "minecraft:blackstone"
+			}]
 		}
 		{
 			x: -24.0d
@@ -1884,13 +1653,11 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "13DA0A75C85A46FB"
-			tasks: [
-				{
-					id: "3E28ADC124B4BEF2"
-					type: "item"
-					item: "ad_astra:moon_sand"
-				}
-			]
+			tasks: [{
+				id: "3E28ADC124B4BEF2"
+				type: "item"
+				item: "ad_astra:moon_sand"
+			}]
 		}
 		{
 			x: -21.0d
@@ -1918,13 +1685,11 @@
 			dependencies: ["30F960F9ABFEAB04"]
 			size: 3.0d
 			id: "0F059AE4EFCF8EE6"
-			tasks: [
-				{
-					id: "4C95E4135EA37930"
-					type: "item"
-					item: "minecraft:andesite"
-				}
-			]
+			tasks: [{
+				id: "4C95E4135EA37930"
+				type: "item"
+				item: "minecraft:andesite"
+			}]
 		}
 		{
 			x: -17.0d
@@ -1933,13 +1698,11 @@
 			dependencies: ["75928E9A25B2EFFD"]
 			size: 2.0d
 			id: "30F960F9ABFEAB04"
-			tasks: [
-				{
-					id: "36D24686B1982A62"
-					type: "item"
-					item: "techreborn:andesite_dust"
-				}
-			]
+			tasks: [{
+				id: "36D24686B1982A62"
+				type: "item"
+				item: "techreborn:andesite_dust"
+			}]
 		}
 		{
 			x: -21.5d
@@ -1949,26 +1712,22 @@
 			dependencies: ["75928E9A25B2EFFD"]
 			size: 2.0d
 			id: "080F8A78EC0E37E3"
-			tasks: [
-				{
-					id: "02A4703B13F3B4CA"
-					type: "item"
-					item: "minecraft:cobblestone"
-				}
-			]
+			tasks: [{
+				id: "02A4703B13F3B4CA"
+				type: "item"
+				item: "minecraft:cobblestone"
+			}]
 		}
 		{
 			x: -21.5d
 			y: -4.0d
 			dependencies: ["080F8A78EC0E37E3"]
 			id: "003484147EC41589"
-			tasks: [
-				{
-					id: "4BC533C79172EC4F"
-					type: "item"
-					item: "minecraft:gravel"
-				}
-			]
+			tasks: [{
+				id: "4BC533C79172EC4F"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
 		}
 		{
 			x: -43.75d
@@ -1977,13 +1736,11 @@
 			dependencies: ["705D35F27DB6DDEF"]
 			size: 2.5d
 			id: "72A49150FFDDA744"
-			tasks: [
-				{
-					id: "488204F8FBE07C93"
-					type: "item"
-					item: "techreborn:advanced_machine_frame"
-				}
-			]
+			tasks: [{
+				id: "488204F8FBE07C93"
+				type: "item"
+				item: "techreborn:advanced_machine_frame"
+			}]
 		}
 		{
 			x: -32.0d
@@ -1991,13 +1748,11 @@
 			hide_dependency_lines: true
 			dependencies: ["3CB5D433A10C2040"]
 			id: "0C21D07EF58E310B"
-			tasks: [
-				{
-					id: "499B96DA45CBF97F"
-					type: "item"
-					item: "create:powdered_obsidian"
-				}
-			]
+			tasks: [{
+				id: "499B96DA45CBF97F"
+				type: "item"
+				item: "create:powdered_obsidian"
+			}]
 		}
 		{
 			x: -30.0d
@@ -2005,58 +1760,50 @@
 			hide_dependency_lines: true
 			dependencies: ["3CB5D433A10C2040"]
 			id: "1B0D38FAEC73D6F8"
-			tasks: [
-				{
-					id: "25D240B73E2D9B33"
-					type: "item"
-					item: "minecraft:soul_soil"
-				}
-			]
+			tasks: [{
+				id: "25D240B73E2D9B33"
+				type: "item"
+				item: "minecraft:soul_soil"
+			}]
 		}
 		{
 			x: -40.0d
 			y: -1.0d
 			dependencies: ["435FEF448EECB8A9"]
 			id: "7A3F834C4F7B9133"
-			tasks: [
-				{
-					id: "08EA6022C84D8E1F"
-					type: "item"
-					item: {
-						id: "create:super_glue"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "08EA6022C84D8E1F"
+				type: "item"
+				item: {
+					id: "create:super_glue"
+					Count: 1b
+					tag: {
+						Damage: 0
 					}
 				}
-			]
+			}]
 		}
 		{
 			x: -22.5d
 			y: -4.0d
 			dependencies: ["003484147EC41589"]
 			id: "5F5726D00204F844"
-			tasks: [
-				{
-					id: "28401409F8F13D8E"
-					type: "item"
-					item: "minecraft:iron_nugget"
-				}
-			]
+			tasks: [{
+				id: "28401409F8F13D8E"
+				type: "item"
+				item: "minecraft:iron_nugget"
+			}]
 		}
 		{
 			x: -25.0d
 			y: 9.5d
 			dependencies: ["2D90C8ED3DD34561"]
 			id: "6D73E725B72F6E88"
-			tasks: [
-				{
-					id: "66F67300BD69A755"
-					type: "item"
-					item: "create:zinc_ingot"
-				}
-			]
+			tasks: [{
+				id: "66F67300BD69A755"
+				type: "item"
+				item: "create:zinc_ingot"
+			}]
 		}
 		{
 			x: -26.5d
@@ -2069,27 +1816,23 @@
 			]
 			size: 1.5d
 			id: "171FA425FBBFF143"
-			tasks: [
-				{
-					id: "650907D498B1717D"
-					type: "item"
-					item: "create:brass_ingot"
-					consume_items: false
-				}
-			]
+			tasks: [{
+				id: "650907D498B1717D"
+				type: "item"
+				item: "create:brass_ingot"
+				consume_items: false
+			}]
 		}
 		{
 			x: -26.5d
 			y: 10.0d
 			dependencies: ["6ED96165ED450D8B"]
 			id: "2A8F9496538E8074"
-			tasks: [
-				{
-					id: "088A420109597D2D"
-					type: "item"
-					item: "create:blaze_burner"
-				}
-			]
+			tasks: [{
+				id: "088A420109597D2D"
+				type: "item"
+				item: "create:blaze_burner"
+			}]
 		}
 		{
 			x: -23.75d
@@ -2102,13 +1845,11 @@
 			]
 			size: 2.5d
 			id: "2989343CF8B46EB6"
-			tasks: [
-				{
-					id: "7294857464E23C03"
-					type: "item"
-					item: "techreborn:electronic_circuit"
-				}
-			]
+			tasks: [{
+				id: "7294857464E23C03"
+				type: "item"
+				item: "techreborn:electronic_circuit"
+			}]
 		}
 		{
 			x: -25.0d
@@ -2121,13 +1862,11 @@
 			]
 			size: 2.5d
 			id: "0A6BCFEC3811A423"
-			tasks: [
-				{
-					id: "13927682D8828CED"
-					type: "item"
-					item: "techreborn:industrial_circuit"
-				}
-			]
+			tasks: [{
+				id: "13927682D8828CED"
+				type: "item"
+				item: "techreborn:industrial_circuit"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests125.title}"
@@ -2143,12 +1882,10 @@
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests125.subtitle}"
 			dependencies: ["6D73E725B72F6E88"]
 			id: "6ED96165ED450D8B"
-			tasks: [
-				{
-					id: "6B73AAA9FE2CCEA8"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "6B73AAA9FE2CCEA8"
+				type: "checkmark"
+			}]
 		}
 		{
 			x: -43.75d
@@ -2157,13 +1894,11 @@
 			dependencies: ["72A49150FFDDA744"]
 			size: 2.5d
 			id: "03239E08D06379E6"
-			tasks: [
-				{
-					id: "18318935E609530E"
-					type: "item"
-					item: "create:refined_radiance_casing"
-				}
-			]
+			tasks: [{
+				id: "18318935E609530E"
+				type: "item"
+				item: "create:refined_radiance_casing"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests127.title}"
@@ -2173,13 +1908,11 @@
 			hide_dependency_lines: true
 			dependencies: ["3CB5D433A10C2040"]
 			id: "24EF2D48101694B9"
-			tasks: [
-				{
-					id: "558C812DA769E7DB"
-					type: "item"
-					item: "techreborn:scrap"
-				}
-			]
+			tasks: [{
+				id: "558C812DA769E7DB"
+				type: "item"
+				item: "techreborn:scrap"
+			}]
 		}
 		{
 			x: -41.5d
@@ -2189,13 +1922,11 @@
 				"117AEE1AA8AE47AF"
 			]
 			id: "5B29051FD983F71F"
-			tasks: [
-				{
-					id: "02DB1170516C7A28"
-					type: "item"
-					item: "minecraft:dripstone_block"
-				}
-			]
+			tasks: [{
+				id: "02DB1170516C7A28"
+				type: "item"
+				item: "minecraft:dripstone_block"
+			}]
 		}
 		{
 			x: -41.5d
@@ -2203,13 +1934,11 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "117AEE1AA8AE47AF"
-			tasks: [
-				{
-					id: "6E8CAE098A7D43C8"
-					type: "item"
-					item: "minecraft:granite"
-				}
-			]
+			tasks: [{
+				id: "6E8CAE098A7D43C8"
+				type: "item"
+				item: "minecraft:granite"
+			}]
 		}
 		{
 			x: -41.5d
@@ -2217,13 +1946,11 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "5E2BAA885FC40321"
-			tasks: [
-				{
-					id: "2AAB85E07B42E618"
-					type: "item"
-					item: "minecraft:tube_coral_block"
-				}
-			]
+			tasks: [{
+				id: "2AAB85E07B42E618"
+				type: "item"
+				item: "minecraft:tube_coral_block"
+			}]
 		}
 		{
 			x: -40.5d
@@ -2231,13 +1958,11 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "4CFDE2174401C627"
-			tasks: [
-				{
-					id: "7BC52023383BFD21"
-					type: "item"
-					item: "minecraft:brain_coral_block"
-				}
-			]
+			tasks: [{
+				id: "7BC52023383BFD21"
+				type: "item"
+				item: "minecraft:brain_coral_block"
+			}]
 		}
 		{
 			x: -39.5d
@@ -2245,13 +1970,11 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "156B9F54B45FDA59"
-			tasks: [
-				{
-					id: "6E7BF45724932EDF"
-					type: "item"
-					item: "minecraft:bubble_coral_block"
-				}
-			]
+			tasks: [{
+				id: "6E7BF45724932EDF"
+				type: "item"
+				item: "minecraft:bubble_coral_block"
+			}]
 		}
 		{
 			x: -38.5d
@@ -2259,13 +1982,11 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "788B528231AE68FE"
-			tasks: [
-				{
-					id: "3A5467677180A52E"
-					type: "item"
-					item: "minecraft:fire_coral_block"
-				}
-			]
+			tasks: [{
+				id: "3A5467677180A52E"
+				type: "item"
+				item: "minecraft:fire_coral_block"
+			}]
 		}
 		{
 			x: -37.5d
@@ -2273,13 +1994,11 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "0EAB3D183E6C300A"
-			tasks: [
-				{
-					id: "69FCDB6531DC1855"
-					type: "item"
-					item: "minecraft:horn_coral_block"
-				}
-			]
+			tasks: [{
+				id: "69FCDB6531DC1855"
+				type: "item"
+				item: "minecraft:horn_coral_block"
+			}]
 		}
 		{
 			x: -45.0d
@@ -2288,13 +2007,11 @@
 			dependencies: ["72A49150FFDDA744"]
 			size: 2.5d
 			id: "01F36051D7A7CE49"
-			tasks: [
-				{
-					id: "7887119D4D1D8F0D"
-					type: "item"
-					item: "create:shadow_steel_casing"
-				}
-			]
+			tasks: [{
+				id: "7887119D4D1D8F0D"
+				type: "item"
+				item: "create:shadow_steel_casing"
+			}]
 		}
 		{
 			icon: {
@@ -2309,189 +2026,161 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "2F3FEC1F22FC45E0"
-			tasks: [
-				{
-					id: "01718DAE7848B92F"
-					type: "item"
-					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests136.tasks0.title}"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "c:coral_plants"
-						}
+			tasks: [{
+				id: "01718DAE7848B92F"
+				type: "item"
+				title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests136.tasks0.title}"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "c:coral_plants"
 					}
 				}
-			]
+			}]
 		}
 		{
 			x: -40.5d
 			y: 12.5d
 			dependencies: ["2F3FEC1F22FC45E0"]
 			id: "1C3C854C1266ACA4"
-			tasks: [
-				{
-					id: "1ED89913798446EC"
-					type: "item"
-					item: "minecraft:prismarine_shard"
-				}
-			]
+			tasks: [{
+				id: "1ED89913798446EC"
+				type: "item"
+				item: "minecraft:prismarine_shard"
+			}]
 		}
 		{
 			x: -41.5d
 			y: 11.0d
 			dependencies: ["5E2BAA885FC40321"]
 			id: "4883F3785B9CA1FA"
-			tasks: [
-				{
-					id: "480C5FCE09DAD47F"
-					type: "item"
-					item: "minecraft:lapis_lazuli"
-				}
-			]
+			tasks: [{
+				id: "480C5FCE09DAD47F"
+				type: "item"
+				item: "minecraft:lapis_lazuli"
+			}]
 		}
 		{
 			x: -40.5d
 			y: 11.0d
 			dependencies: ["4CFDE2174401C627"]
 			id: "0CC8A76B81BFB421"
-			tasks: [
-				{
-					id: "7CF3E6CDC8458086"
-					type: "item"
-					item: "farmersdelight:ham"
-				}
-			]
+			tasks: [{
+				id: "7CF3E6CDC8458086"
+				type: "item"
+				item: "farmersdelight:ham"
+			}]
 		}
 		{
 			x: -39.5d
 			y: 11.0d
 			dependencies: ["156B9F54B45FDA59"]
 			id: "47463C91C084DA27"
-			tasks: [
-				{
-					id: "2BD01054EDCF8883"
-					type: "item"
-					item: "minecraft:popped_chorus_fruit"
-				}
-			]
+			tasks: [{
+				id: "2BD01054EDCF8883"
+				type: "item"
+				item: "minecraft:popped_chorus_fruit"
+			}]
 		}
 		{
 			x: -39.5d
 			y: 9.0d
 			dependencies: ["156B9F54B45FDA59"]
 			id: "6C148EEEC3E9F79A"
-			tasks: [
-				{
-					id: "730BC3B81B9A7820"
-					type: "item"
-					item: "ae2:ender_dust"
-				}
-			]
+			tasks: [{
+				id: "730BC3B81B9A7820"
+				type: "item"
+				item: "ae2:ender_dust"
+			}]
 		}
 		{
 			x: -38.5d
 			y: 9.0d
 			dependencies: ["788B528231AE68FE"]
 			id: "7BDBE3FCD3FBF26D"
-			tasks: [
-				{
-					id: "610A92809F9C8DA1"
-					type: "item"
-					item: "minecraft:blaze_powder"
-				}
-			]
+			tasks: [{
+				id: "610A92809F9C8DA1"
+				type: "item"
+				item: "minecraft:blaze_powder"
+			}]
 		}
 		{
 			x: -38.5d
 			y: 11.0d
 			dependencies: ["788B528231AE68FE"]
 			id: "2B5891426D3CE681"
-			tasks: [
-				{
-					id: "5A2CA68077767EAA"
-					type: "item"
-					item: "tconstruct:blood_slime_ball"
-				}
-			]
+			tasks: [{
+				id: "5A2CA68077767EAA"
+				type: "item"
+				item: "tconstruct:blood_slime_ball"
+			}]
 		}
 		{
 			x: -37.5d
 			y: 9.0d
 			dependencies: ["0EAB3D183E6C300A"]
 			id: "0564BD21387C8359"
-			tasks: [
-				{
-					id: "0B344A3EEF97BFCD"
-					type: "item"
-					item: "techreborn:sponge_piece"
-				}
-			]
+			tasks: [{
+				id: "0B344A3EEF97BFCD"
+				type: "item"
+				item: "techreborn:sponge_piece"
+			}]
 		}
 		{
 			x: -37.5d
 			y: 11.0d
 			dependencies: ["0EAB3D183E6C300A"]
 			id: "49DA8488937B7813"
-			tasks: [
-				{
-					id: "3D74E0EC7B8D2D7F"
-					type: "item"
-					item: "minecraft:sea_pickle"
-				}
-			]
+			tasks: [{
+				id: "3D74E0EC7B8D2D7F"
+				type: "item"
+				item: "minecraft:sea_pickle"
+			}]
 		}
 		{
 			x: -25.0d
 			y: 20.0d
 			dependencies: ["759E56BE7B6E2BB3"]
 			id: "6AC31E75B8A6FD44"
-			tasks: [
-				{
-					id: "79AB3C14043878B4"
-					type: "item"
-					item: "createastral:electrified_pin"
-				}
-			]
+			tasks: [{
+				id: "79AB3C14043878B4"
+				type: "item"
+				item: "createastral:electrified_pin"
+			}]
 		}
 		{
 			x: -22.5d
 			y: 22.0d
 			dependencies: ["759E56BE7B6E2BB3"]
 			id: "355342AA53A7683E"
-			tasks: [
-				{
-					id: "24CBC45B4C82CF7F"
-					type: "item"
-					item: "techreborn:lead_plate"
-				}
-			]
+			tasks: [{
+				id: "24CBC45B4C82CF7F"
+				type: "item"
+				item: "techreborn:lead_plate"
+			}]
 		}
 		{
 			x: -24.0d
 			y: 24.0d
 			dependencies: ["2989343CF8B46EB6"]
 			id: "51000360AC13833A"
-			tasks: [
-				{
-					id: "6B7078FA5F278F7E"
-					type: "item"
-					item: "techreborn:machine_parts"
-				}
-			]
+			tasks: [{
+				id: "6B7078FA5F278F7E"
+				type: "item"
+				item: "techreborn:machine_parts"
+			}]
 		}
 		{
 			x: -26.5d
 			y: 21.5d
 			dependencies: ["2989343CF8B46EB6"]
 			id: "07F1CB899DDDCA50"
-			tasks: [
-				{
-					id: "02CD5C12823A1817"
-					type: "item"
-					item: "createastral:calorite_pin"
-				}
-			]
+			tasks: [{
+				id: "02CD5C12823A1817"
+				type: "item"
+				item: "createastral:calorite_pin"
+			}]
 		}
 		{
 			x: -39.0d
@@ -2502,46 +2191,42 @@
 			dependencies: ["75928E9A25B2EFFD"]
 			size: 3.0d
 			id: "5AFF1BD1A2ABF7A0"
-			tasks: [
-				{
-					id: "4516C97BCEF2D5DE"
-					type: "item"
-					item: {
-						id: "custommachinery:custom_machine_item"
-						Count: 1b
-						tag: {
-							machine: "createastral:stone_growth_chamber"
-						}
+			tasks: [{
+				id: "4516C97BCEF2D5DE"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "createastral:stone_growth_chamber"
 					}
 				}
-			]
-			rewards: [
-				{
-					id: "52A0A4BD8AA2E042"
-					type: "item"
-					item: {
-						id: "create:schematic"
-						Count: 1b
-						tag: {
-							Anchor: {
-								Z: 0
-								X: 0
-								Y: 0
-							}
-							Owner: "Laskyyy"
-							Deployed: 0b
-							File: "[AstralExamples] Stone Growth Chamber.nbt"
-							Rotation: "NONE"
-							Mirror: "NONE"
-							Bounds: [
-								3
-								3
-								3
-							]
+			}]
+			rewards: [{
+				id: "52A0A4BD8AA2E042"
+				type: "item"
+				item: {
+					id: "create:schematic"
+					Count: 1b
+					tag: {
+						Anchor: {
+							Z: 0
+							X: 0
+							Y: 0
 						}
+						Owner: "Laskyyy"
+						Deployed: 0b
+						Rotation: "NONE"
+						File: "[AstralExamples] Stone Growth Chamber.nbt"
+						Mirror: "NONE"
+						Bounds: [
+							3
+							3
+							3
+						]
 					}
 				}
-			]
+			}]
 		}
 		{
 			x: -36.0d
@@ -2551,46 +2236,42 @@
 			dependencies: ["75928E9A25B2EFFD"]
 			size: 3.0d
 			id: "052A6A3EA6BC93D5"
-			tasks: [
-				{
-					id: "52CFAD59E84D1FD2"
-					type: "item"
-					item: {
-						id: "custommachinery:custom_machine_item"
-						Count: 1b
-						tag: {
-							machine: "createastral:distillery"
-						}
+			tasks: [{
+				id: "52CFAD59E84D1FD2"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "createastral:distillery"
 					}
 				}
-			]
-			rewards: [
-				{
-					id: "26BB7BAFA474570B"
-					type: "item"
-					item: {
-						id: "create:schematic"
-						Count: 1b
-						tag: {
-							Anchor: {
-								Z: 0
-								X: 0
-								Y: 0
-							}
-							Owner: "Laskyyy"
-							Deployed: 0b
-							File: "[AstralExamples] Distillery.nbt"
-							Rotation: "NONE"
-							Mirror: "NONE"
-							Bounds: [
-								5
-								5
-								5
-							]
+			}]
+			rewards: [{
+				id: "26BB7BAFA474570B"
+				type: "item"
+				item: {
+					id: "create:schematic"
+					Count: 1b
+					tag: {
+						Anchor: {
+							Z: 0
+							X: 0
+							Y: 0
 						}
+						Owner: "Laskyyy"
+						Deployed: 0b
+						Rotation: "NONE"
+						File: "[AstralExamples] Distillery.nbt"
+						Mirror: "NONE"
+						Bounds: [
+							5
+							5
+							5
+						]
 					}
 				}
-			]
+			}]
 		}
 		{
 			x: -40.5d
@@ -2598,13 +2279,11 @@
 			hide_dependency_lines: true
 			dependencies: ["5AFF1BD1A2ABF7A0"]
 			id: "3E19BCBCCE9229BF"
-			tasks: [
-				{
-					id: "706F04DF09EB7FCE"
-					type: "item"
-					item: "minecraft:andesite"
-				}
-			]
+			tasks: [{
+				id: "706F04DF09EB7FCE"
+				type: "item"
+				item: "minecraft:andesite"
+			}]
 		}
 		{
 			x: -40.5d
@@ -2612,13 +2291,11 @@
 			hide_dependency_lines: true
 			dependencies: ["5AFF1BD1A2ABF7A0"]
 			id: "2E8FC330FEEF68BF"
-			tasks: [
-				{
-					id: "206DC4E4DC150030"
-					type: "item"
-					item: "ad_astra:moon_stone"
-				}
-			]
+			tasks: [{
+				id: "206DC4E4DC150030"
+				type: "item"
+				item: "ad_astra:moon_stone"
+			}]
 		}
 		{
 			x: -40.5d
@@ -2626,13 +2303,11 @@
 			hide_dependency_lines: true
 			dependencies: ["5AFF1BD1A2ABF7A0"]
 			id: "67353038EE90A053"
-			tasks: [
-				{
-					id: "3919C336B2238988"
-					type: "item"
-					item: "ad_astra:mars_stone"
-				}
-			]
+			tasks: [{
+				id: "3919C336B2238988"
+				type: "item"
+				item: "ad_astra:mars_stone"
+			}]
 		}
 		{
 			x: -40.5d
@@ -2640,13 +2315,11 @@
 			hide_dependency_lines: true
 			dependencies: ["5AFF1BD1A2ABF7A0"]
 			id: "5E5CD5E22967ADA1"
-			tasks: [
-				{
-					id: "3EDE2E37668ACA4F"
-					type: "item"
-					item: "ad_astra:mercury_stone"
-				}
-			]
+			tasks: [{
+				id: "3EDE2E37668ACA4F"
+				type: "item"
+				item: "ad_astra:mercury_stone"
+			}]
 		}
 		{
 			x: -40.5d
@@ -2654,109 +2327,95 @@
 			hide_dependency_lines: true
 			dependencies: ["5AFF1BD1A2ABF7A0"]
 			id: "219107EA6C17A920"
-			tasks: [
-				{
-					id: "3ECC7CE56169B05C"
-					type: "item"
-					item: "ad_astra:glacio_stone"
-				}
-			]
+			tasks: [{
+				id: "3ECC7CE56169B05C"
+				type: "item"
+				item: "ad_astra:glacio_stone"
+			}]
 		}
 		{
 			x: -39.0d
 			y: 18.0d
 			dependencies: ["2E8FC330FEEF68BF"]
 			id: "38C5E54C8E237219"
-			tasks: [
-				{
-					id: "0BC89864FE1C624B"
-					type: "item"
-					item: "ad_astra:desh_nugget"
-				}
-			]
+			tasks: [{
+				id: "0BC89864FE1C624B"
+				type: "item"
+				item: "ad_astra:desh_nugget"
+			}]
 		}
 		{
 			x: -39.0d
 			y: 19.0d
 			dependencies: ["67353038EE90A053"]
 			id: "7BD304D58CF2A7DB"
-			tasks: [
-				{
-					id: "685C81A22C399300"
-					type: "item"
-					item: "ad_astra:ostrum_nugget"
-				}
-			]
+			tasks: [{
+				id: "685C81A22C399300"
+				type: "item"
+				item: "ad_astra:ostrum_nugget"
+			}]
 		}
 		{
 			x: -39.0d
 			y: 20.0d
 			dependencies: ["5E5CD5E22967ADA1"]
 			id: "3B80F5ADD8309271"
-			tasks: [
-				{
-					id: "2ED564323BE35543"
-					type: "item"
-					item: "ad_astra:calorite_nugget"
-				}
-			]
+			tasks: [{
+				id: "2ED564323BE35543"
+				type: "item"
+				item: "ad_astra:calorite_nugget"
+			}]
 		}
 		{
 			x: -35.0d
 			y: 17.5d
 			dependencies: ["36B70BA3B4CC3803"]
 			id: "775810CD84EBBF58"
-			tasks: [
-				{
-					id: "4A5B10BDA5EDCB39"
-					type: "item"
-					item: {
-						id: "techreborn:cell"
-						Count: 1b
-						tag: {
-							fluid: "kubejs:hellfire"
-						}
+			tasks: [{
+				id: "4A5B10BDA5EDCB39"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "kubejs:hellfire"
 					}
 				}
-			]
+			}]
 		}
 		{
 			x: -35.0d
 			y: 18.5d
 			dependencies: ["1AC8A25302812909"]
 			id: "196A695E8F304398"
-			tasks: [
-				{
-					id: "2F83FBAD167C0BF6"
-					type: "item"
-					item: {
-						id: "techreborn:cell"
-						Count: 1b
-						tag: {
-							fluid: "techreborn:biofuel"
-						}
+			tasks: [{
+				id: "2F83FBAD167C0BF6"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "techreborn:biofuel"
 					}
 				}
-			]
+			}]
 		}
 		{
 			x: -35.0d
 			y: 19.5d
 			dependencies: ["42FE4109E62B8CAF"]
 			id: "084116AFD5A1DB3A"
-			tasks: [
-				{
-					id: "0A579D7FAA32833B"
-					type: "item"
-					item: {
-						id: "techreborn:cell"
-						Count: 1b
-						tag: {
-							fluid: "tconstruct:molten_uranium"
-						}
+			tasks: [{
+				id: "0A579D7FAA32833B"
+				type: "item"
+				item: {
+					id: "techreborn:cell"
+					Count: 1b
+					tag: {
+						fluid: "tconstruct:molten_uranium"
 					}
 				}
-			]
+			}]
 		}
 		{
 			x: -37.0d
@@ -2842,26 +2501,22 @@
 			y: 17.0d
 			dependencies: ["3E19BCBCCE9229BF"]
 			id: "623B9C676DB68AAE"
-			tasks: [
-				{
-					id: "522CDBF67C2F9889"
-					type: "item"
-					item: "create:andesite_alloy"
-				}
-			]
+			tasks: [{
+				id: "522CDBF67C2F9889"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
 		}
 		{
 			x: -39.0d
 			y: 21.0d
 			dependencies: ["219107EA6C17A920"]
 			id: "750A0F0ECE740D8C"
-			tasks: [
-				{
-					id: "576AFB835EDBB3B8"
-					type: "item"
-					item: "createastral:prismatic_crystal"
-				}
-			]
+			tasks: [{
+				id: "576AFB835EDBB3B8"
+				type: "item"
+				item: "createastral:prismatic_crystal"
+			}]
 		}
 		{
 			x: -31.0d
@@ -2869,13 +2524,11 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "4EB80B301903436B"
-			tasks: [
-				{
-					id: "6CBED2E05BF71A72"
-					type: "item"
-					item: "minecraft:red_dye"
-				}
-			]
+			tasks: [{
+				id: "6CBED2E05BF71A72"
+				type: "item"
+				item: "minecraft:red_dye"
+			}]
 		}
 		{
 			x: -43.5d
@@ -2884,26 +2537,22 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "272C487352DDE36E"
-			tasks: [
-				{
-					id: "7324F361EC9654FE"
-					type: "item"
-					item: "minecraft:brown_mushroom"
-				}
-			]
+			tasks: [{
+				id: "7324F361EC9654FE"
+				type: "item"
+				item: "minecraft:brown_mushroom"
+			}]
 		}
 		{
 			x: -43.5d
 			y: 10.0d
 			dependencies: ["272C487352DDE36E"]
 			id: "5A6C0F1C2D28D1DD"
-			tasks: [
-				{
-					id: "38BA7608CCD38E95"
-					type: "item"
-					item: "createastral:seitan"
-				}
-			]
+			tasks: [{
+				id: "38BA7608CCD38E95"
+				type: "item"
+				item: "createastral:seitan"
+			}]
 		}
 		{
 			x: -43.5d
@@ -2954,13 +2603,11 @@
 			y: 4.0d
 			dependencies: ["60FEDA21DCE756B6"]
 			id: "76E518EC3690A351"
-			tasks: [
-				{
-					id: "6F3511A65BFA4780"
-					type: "item"
-					item: "minecraft:clay_ball"
-				}
-			]
+			tasks: [{
+				id: "6F3511A65BFA4780"
+				type: "item"
+				item: "minecraft:clay_ball"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests173.title}"
@@ -2992,12 +2639,10 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "4D947F2DBBA0CBD9"
-			tasks: [
-				{
-					id: "26A6B8841800C301"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "26A6B8841800C301"
+				type: "checkmark"
+			}]
 		}
 		{
 			x: -38.5d
@@ -3007,34 +2652,28 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "494DAA43E781A919"
-			tasks: [
-				{
-					id: "5AF38B447D804BAD"
-					type: "item"
-					item: "astraladditions:bulba_root"
-				}
-			]
+			tasks: [{
+				id: "5AF38B447D804BAD"
+				type: "item"
+				item: "astraladditions:bulba_root"
+			}]
 		}
 		{
 			x: -39.5d
 			y: 12.5d
 			dependencies: ["494DAA43E781A919"]
 			id: "48C329E3DF3EACE3"
-			tasks: [
-				{
-					id: "537A3708B9F9F566"
-					type: "item"
-					item: "minecraft:prismarine_crystals"
-					count: 8L
-				}
-			]
-			rewards: [
-				{
-					id: "593A18DA4D880B33"
-					type: "item"
-					item: "minecraft:sea_lantern"
-				}
-			]
+			tasks: [{
+				id: "537A3708B9F9F566"
+				type: "item"
+				item: "minecraft:prismarine_crystals"
+				count: 8L
+			}]
+			rewards: [{
+				id: "593A18DA4D880B33"
+				type: "item"
+				item: "minecraft:sea_lantern"
+			}]
 		}
 	]
 	quest_links: [ ]

@@ -330,7 +330,6 @@
 				"{ftbquests.chapter.6_raow.quests6.description0}"
 				""
 				"{ftbquests.chapter.6_raow.quests6.description2}"
-				""
 			]
 			dependencies: ["6328B6E2C86D8834"]
 			id: "69F63D2FA5384442"
@@ -385,8 +384,8 @@
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests8.title}"
-			x: 23.0d
-			y: 9.0d
+			x: 22.0d
+			y: 5.5d
 			shape: "square"
 			description: [
 				"{ftbquests.chapter.6_raow.quests8.description0}"
@@ -394,10 +393,7 @@
 				"{ftbquests.chapter.6_raow.quests8.description2}"
 			]
 			hide_dependency_lines: false
-			dependencies: [
-				"3ED703EAA646A18A"
-				"16A408D4C0DAD08D"
-			]
+			dependencies: ["3ED703EAA646A18A"]
 			id: "0299295DF9D47181"
 			tasks: [
 				{
@@ -510,7 +506,6 @@
 			shape: "gear"
 			subtitle: "{ftbquests.chapter.6_raow.quests11.subtitle}"
 			description: [
-				""
 				"{ftbquests.chapter.6_raow.quests11.description1}"
 				""
 				"{ftbquests.chapter.6_raow.quests11.description3}"
@@ -984,7 +979,6 @@
 				"{ftbquests.chapter.6_raow.quests28.description0}"
 				""
 				"{ftbquests.chapter.6_raow.quests28.description2}"
-				""
 			]
 			dependencies: ["637D5C1C0C789F9E"]
 			id: "32CD4BE3B7B7CF46"
@@ -1002,7 +996,6 @@
 				"{ftbquests.chapter.6_raow.quests29.description0}"
 				""
 				"{ftbquests.chapter.6_raow.quests29.description2}"
-				""
 			]
 			dependencies: ["637D5C1C0C789F9E"]
 			id: "6F5C9A0CC0CAC7A8"
@@ -1094,8 +1087,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						Rotation: "NONE"
 						File: "[AstralExamples] Shimmer Refinery.nbt"
+						Rotation: "NONE"
 						Mirror: "NONE"
 						Bounds: [
 							5
@@ -1144,7 +1137,7 @@
 		{
 			icon: "astraladditions:fragile_item_2"
 			x: 24.0d
-			y: 11.0d
+			y: 10.0d
 			shape: "hexagon"
 			subtitle: "{ftbquests.chapter.6_raow.quests35.subtitle}"
 			description: [
@@ -1171,7 +1164,7 @@
 		{
 			icon: "astraladditions:fragile_item_3"
 			x: 20.0d
-			y: 11.0d
+			y: 10.0d
 			shape: "hexagon"
 			subtitle: "{ftbquests.chapter.6_raow.quests36.subtitle}"
 			description: [
@@ -1179,10 +1172,7 @@
 				""
 				"{ftbquests.chapter.6_raow.quests36.description2}"
 			]
-			dependencies: [
-				"704AEB416AA5A953"
-				"16A408D4C0DAD08D"
-			]
+			dependencies: ["704AEB416AA5A953"]
 			size: 2.0d
 			min_required_tasks: 1
 			id: "638DBED9ED0BD4CB"
@@ -1214,7 +1204,7 @@
 		}
 		{
 			x: 21.0d
-			y: 9.0d
+			y: 8.5d
 			dependencies: ["3ED703EAA646A18A"]
 			id: "4BD75128B2B5E343"
 			tasks: [{
@@ -1266,8 +1256,8 @@
 			}]
 		}
 		{
-			x: 22.0d
-			y: 5.5d
+			x: 23.0d
+			y: 8.5d
 			description: ["{ftbquests.chapter.6_raow.quests41.description}"]
 			dependencies: ["3ED703EAA646A18A"]
 			id: "7E3960A7DECF8C25"
