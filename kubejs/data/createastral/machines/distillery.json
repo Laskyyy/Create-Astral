@@ -8,9 +8,9 @@
     },
     "gui": [
         {
-            "texture": "custommachinery:textures/gui/base_background.png",
-            "x": 0,
-            "y": 0,
+            "texture": "createastral:textures/gui/distillation_tower_gui.png",
+            "x": 47,
+            "y": 8,
             "type": "custommachinery:texture"
         },
         {

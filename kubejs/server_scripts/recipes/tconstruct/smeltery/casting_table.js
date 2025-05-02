@@ -298,6 +298,11 @@ onEvent("recipes", (event) => {
             result: "tconstruct:ichor_slime_ball",
             cooling_time: 46,
         },
+        {
+            fluid: ["tconstruct:molten_gold", INGOT],
+            result: "tconstruct:gold_bars",
+            cooling_time: 60,
+        },
     ].forEach((recipe) => {
         event.custom({
             type: "tconstruct:casting_table",

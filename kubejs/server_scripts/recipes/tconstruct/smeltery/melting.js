@@ -20,10 +20,22 @@ onEvent("recipes", (event) => {
             time: 14,
         },
         {
+            fluid: ["tconstruct:blood", mB * 40],
+            input: { item: "farmersdelight:cod_slice" },
+            temp: 32,
+            time: 7,
+        },
+        {
             fluid: ["tconstruct:blood", GEM],
             input: { item: "minecraft:salmon" },
             temp: 32,
             time: 14,
+        },
+        {
+            fluid: ["tconstruct:blood", mB * 40],
+            input: { item: "farmersdelight:salmon_slice" },
+            temp: 32,
+            time: 7,
         },
         {
             fluid: ["tconstruct:blood", GEM],

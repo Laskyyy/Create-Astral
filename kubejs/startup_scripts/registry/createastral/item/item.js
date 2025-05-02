@@ -63,18 +63,23 @@ onEvent("item.registry", (event) => {
     event.create("createastral:fragile_rocket_fin");
     event.create("createastral:broken_fragile_rocket_fin");
     event.create("createastral:gold_casted_rocket_fin");
+
     event.create("createastral:horse").food((food) => {
         food.hunger(0).saturation(0).alwaysEdible();
     });
+
     event.create("createastral:marimo").food((food) => {
         food.hunger(1).saturation(0).alwaysEdible();
     });
+
     event.create("createastral:moonset_marimo").food((food) => {
         food.hunger(1).saturation(0).effect("levitation", 30, 2, 1).alwaysEdible();
     });
+
     event.create("createastral:snowy_marimo").food((food) => {
         food.hunger(1).saturation(0).effect("absorption", 180, 0, 1).alwaysEdible();
     });
+
     event.create("createastral:ender_marimo").food((food) => {
         food.hunger(1)
             .saturation(0)
@@ -82,6 +87,7 @@ onEvent("item.registry", (event) => {
             .effect("regeneration", 180, 1, 1)
             .alwaysEdible();
     });
+
     event
         .create("createastral:shimmer_marimo")
         .displayName("Shimarimo")
@@ -91,45 +97,80 @@ onEvent("item.registry", (event) => {
 
     //Radiant Armor And Tools//
     event.create("createastral:radiant_helmet", "helmet").tier("radiantarmor").glow(true).rarity("Epic");
+
     event.create("createastral:radiant_chestplate", "chestplate").tier("radiantarmor").glow(true).rarity("Epic");
+
     event.create("createastral:radiant_leggings", "leggings").tier("radiantarmor").glow(true).rarity("Epic");
+
     event.create("createastral:radiant_boots", "boots").tier("radiantarmor").glow(true).rarity("Epic");
+
     event.create("createastral:radiant_sword", "sword").tier("radiant").glow(true).rarity("Epic");
+
     event.create("createastral:radiant_pickaxe", "pickaxe").tier("radiant").glow(true).rarity("Epic");
+
     event.create("createastral:radiant_axe", "axe").tier("radiant").glow(true).rarity("Epic");
+
     event.create("createastral:radiant_shovel", "shovel").tier("radiant").glow(true).rarity("Epic");
+
     //Copper Armor And Tools//
     event.create("createastral:copper_helmet", "helmet").tier("copperarmor");
+
     event.create("createastral:copper_chestplate", "chestplate").tier("copperarmor");
+
     event.create("createastral:copper_leggings", "leggings").tier("copperarmor");
+
     event.create("createastral:copper_boots", "boots").tier("copperarmor");
+
     event.create("createastral:copper_sword", "sword").tier("copper");
+
     event.create("createastral:copper_pickaxe", "pickaxe").tier("copper");
+
     event.create("createastral:copper_axe", "axe").tier("copper");
+
     event.create("createastral:copper_shovel", "shovel").tier("copper");
+
     event.create("createastral:copper_hoe", "hoe").tier("copper");
+
     //Brass Armor And Tools//
     event.create("createastral:brass_helmet", "helmet").tier("brassarmor");
+
     event.create("createastral:brass_chestplate", "chestplate").tier("brassarmor");
+
     event.create("createastral:brass_leggings", "leggings").tier("brassarmor");
+
     event.create("createastral:brass_boots", "boots").tier("brassarmor");
+
     event.create("createastral:brass_sword", "sword").tier("brass");
+
     event.create("createastral:brass_pickaxe", "pickaxe").tier("brass");
+
     event.create("createastral:brass_axe", "axe").tier("brass");
+
     event.create("createastral:brass_shovel", "shovel").tier("brass");
+
     event.create("createastral:brass_hoe", "hoe").tier("brass");
+
     //Steel Armor//
     event.create("createastral:steel_helmet", "helmet").tier("steelarmor");
+
     event.create("createastral:steel_chestplate", "chestplate").tier("steelarmor");
+
     event.create("createastral:steel_leggings", "leggings").tier("steelarmor");
+
     event.create("createastral:steel_boots", "boots").tier("steelarmor");
+
     //Sturdy Armor//
     event.create("createastral:sturdy_helmet", "helmet").tier("sturdyarmor");
+
     event.create("createastral:sturdy_chestplate", "chestplate").tier("sturdyarmor");
+
     event.create("createastral:sturdy_leggings", "leggings").tier("sturdyarmor");
+
     event.create("createastral:sturdy_boots", "boots").tier("sturdyarmor");
+
     //Other Items//
     event.create("createastral:orcane").displayName("Information / General Progression").glow(true);
+
     event.create("createastral:astral_singularity").food((food) => {
         food.hunger(50)
             .saturation(50) //This value does not directly translate to saturation points gained
@@ -142,7 +183,9 @@ onEvent("item.registry", (event) => {
             .removeEffect("poison")
             .alwaysEdible(); //Like golden apples
     });
+
     event.create("createastral:laskinium").glow(true).rarity("epic");
+
     event
         .create("createastral:laskinium_pill")
         .glow(true)
@@ -156,7 +199,9 @@ onEvent("item.registry", (event) => {
                 .removeEffect("poison")
                 .alwaysEdible(); //Like golden apples
         });
+
     event.create("createastral:pure_biomatter");
+
     event.create("createastral:lime").displayName("Lime Dust");
 
     event.create("createastral:synthetic_slime");
@@ -167,31 +212,43 @@ onEvent("item.registry", (event) => {
     //    .create("createastral:incomplete_blaze_head", "create:sequenced_assembly")
     //    .displayName("Incomplete Blaze Head");
     event.create("createastral:incomplete_blaze_head", "create:sequenced_assembly").displayName("Golden Coin");
+
     event
         .create("createastral:incomplete_transitional_electronic_circuit", "create:sequenced_assembly")
         .displayName("Incomplete Electronic Circuit");
+
     event
         .create("createastral:transitional_lapis_sheet", "create:sequenced_assembly")
         .displayName("Incomplete Integrated Circuit");
+
     event
         .create("createastral:incomplete_navigation_mechanism", "create:sequenced_assembly")
         .displayName("Incomplete Navigation Mechanism");
+
     event
         .create("createastral:incomplete_redstone_chip", "create:sequenced_assembly")
         .displayName("Incomplete Redstone Chip");
+
     event
         .create("createastral:incomplete_refining_agent", "create:sequenced_assembly")
         .displayName("Incomplete Refining Agent");
+
     event
         .create("createastral:incomplete_separation_agent", "create:sequenced_assembly")
         .displayName("Incomplete Separation Agent");
+
     event
         .create("createastral:incomplete_pure_star_shard", "create:sequenced_assembly")
         .displayName("Incomplete Pure Star Shard");
+
     event.create("createastral:incomplete_calculation_processor", "create:sequenced_assembly");
+
     event.create("createastral:incomplete_logic_processor", "create:sequenced_assembly");
+
     event.create("createastral:incomplete_engineering_processor", "create:sequenced_assembly");
+
     event.create("createastral:incomplete_dash_panel", "create:sequenced_assembly");
+
     event.create("createastral:incomplete_copper_casing", "create:sequenced_assembly").modelJson({
         parent: "minecraft:block/cube",
         textures: {
@@ -203,6 +260,7 @@ onEvent("item.registry", (event) => {
             east: "createastral:item/incomplete_copper_casing2",
         },
     });
+
     event.create("createastral:incomplete_basic_machine_frame", "create:sequenced_assembly").modelJson({
         parent: "minecraft:block/cube",
         textures: {
@@ -214,6 +272,7 @@ onEvent("item.registry", (event) => {
             east: "createastral:item/incomplete_basic_machine_frame1",
         },
     });
+
     event.create("createastral:incomplete_brass_casing", "create:sequenced_assembly").modelJson({
         parent: "minecraft:block/cube",
         textures: {
@@ -225,6 +284,7 @@ onEvent("item.registry", (event) => {
             east: "createastral:item/incomplete_brass_casing",
         },
     });
+
     event.create("createastral:incomplete_advanced_machine_frame", "create:sequenced_assembly").modelJson({
         parent: "minecraft:block/cube",
         textures: {
@@ -236,6 +296,7 @@ onEvent("item.registry", (event) => {
             east: "createastral:item/incomplete_advanced_machine_frame",
         },
     });
+
     event.create("createastral:incomplete_industrial_machine_frame", "create:sequenced_assembly").modelJson({
         parent: "minecraft:block/cube",
         textures: {
@@ -247,6 +308,7 @@ onEvent("item.registry", (event) => {
             east: "createastral:item/incomplete_industrial_machine_frame",
         },
     });
+
     event.create("createastral:incomplete_refined_radiance_casing", "create:sequenced_assembly").modelJson({
         parent: "minecraft:block/cube",
         textures: {
@@ -258,6 +320,7 @@ onEvent("item.registry", (event) => {
             east: "createastral:item/incomplete_refined_radiance_casing",
         },
     });
+
     event.create("createastral:incomplete_shadow_steel_casing", "create:sequenced_assembly").modelJson({
         parent: "minecraft:block/cube",
         textures: {

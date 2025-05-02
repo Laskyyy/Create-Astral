@@ -1459,6 +1459,23 @@ onEvent("recipes", (event) => {
                 L: "techreborn:rubber",
             },
         },
+        {
+            output: "6x tconstruct:gold_bars",
+            pattern: ["AAA", "AAA"],
+            key: {
+                A: "minecraft:gold_ingot",
+            },
+        },
+        {
+            output: "astralfoods:recovery_orb",
+            pattern: [" S ", "THT", " O "],
+            key: {
+                S: "tconstruct:seared_brick",
+                T: "ad_astra:oxygen_tank",
+                H: "ad_astra:space_helmet",
+                O: "ad_astra:oxygen_bucket",
+            },
+        },
     ].forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key);
     });

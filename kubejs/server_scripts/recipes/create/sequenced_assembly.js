@@ -1825,6 +1825,35 @@ onEvent("recipes", (event) => {
         )
         .transitionalItem("createastral:martian_clump")
         .loops(1);
+
+    event.recipes
+        .createSequencedAssembly(
+            [
+                // output
+                Item.of("astralfoods:cod_n_blaze").withChance(1), // begin
+            ],
+            "astralfoods:blaze_fries_and_cod",
+            [
+                // input
+                event.recipes.createDeploying("astralfoods:blaze_fries_and_cod", [
+                    "astralfoods:blaze_fries_and_cod",
+                    "minecraft:paper",
+                ]),
+            ]
+        )
+        .transitionalItem("astralfoods:blaze_fries_and_cod")
+        .loops(3);
+
+    event.recipes
+        .createSequencedAssembly(Item.of("ad_astra:moon_stone"), "minecraft:stone", [
+            event.recipes.createPressing("minecraft:stone", "minecraft:stone"),
+            event.recipes.createFilling("minecraft:stone", [
+                "minecraft:stone",
+                { fluid: "kubejs:shimmer", amount: 250 * mB },
+            ]),
+        ])
+        .transitionalItem("minecraft:stone")
+        .loops(4);
 });
 
 function enchantBooks(event) {

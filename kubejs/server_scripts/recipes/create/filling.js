@@ -212,6 +212,24 @@ onEvent("recipes", (event) => {
             fluid: "kubejs:liquid_xp_nuggies",
             amount: BUCKET / 2,
         },
+        {
+            input: "minecraft:oak_sapling",
+            output: "tconstruct:earth_slime_sapling",
+            fluid: "tconstruct:earth_slime",
+            amount: BUCKET / 3,
+        },
+        {
+            input: "minecraft:oak_sapling",
+            output: "tconstruct:sky_slime_sapling",
+            fluid: "tconstruct:sky_slime",
+            amount: BUCKET / 3,
+        },
+        {
+            input: "minecraft:cookie",
+            output: "astralfoods:ice_cream_sandwich",
+            fluid: "astralfoods:cream",
+            amount: 250 * mB,
+        },
     ].forEach((recipe) => {
         event.recipes.createFilling(recipe.output, [recipe.input, { fluid: recipe.fluid, amount: recipe.amount }]);
     });

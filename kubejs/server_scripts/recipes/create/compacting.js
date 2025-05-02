@@ -449,6 +449,14 @@ onEvent("recipes", (event) => {
             },
             inputs: "minecraft:slime_ball",
         },
+        {
+            output: "astralfoods:blaze_fries",
+            inputs: ["astralfoods:blaze_rods", { fluid: "createaddition:seed_oil", amount: 100 * mB }],
+        },
+        {
+            output: "astralfoods:fried_cod",
+            inputs: ["minecraft:cod", { fluid: "createaddition:seed_oil", amount: 100 * mB }],
+        },
     ].forEach((recipe) => {
         event.recipes.createCompacting(recipe.output, recipe.inputs).heatRequirement(recipe.heat ?? "");
     });

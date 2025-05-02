@@ -50,6 +50,11 @@ onEvent("recipes", (event) => {
             tool: "c:tools/knives",
             result: [{ item: "farmersdelight:rice" }, { item: "farmersdelight:straw" }],
         },
+        {
+            input: "minecraft:blaze_rod",
+            tool: "c:tools/knives",
+            result: [{ item: "astralfoods:blaze_rods", count: 2 }],
+        },
     ].forEach((recipe) => {
         event.custom({
             type: "farmersdelight:cutting",

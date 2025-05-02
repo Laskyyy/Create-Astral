@@ -1,50 +1,55 @@
 onEvent("recipes", (event) => {
     [
-        // ["item", count]
+        // "stack64" allows 64 of an item to be transmuted
         {
             input: "tconstruct:earth_slime_grass_seeds",
             output: "tconstruct:ender_slime_grass_seeds",
-            stack: true,
+            stack64: true,
         },
         {
             input: "minecraft:sea_lantern",
             output: "minecraft:glowstone",
-            stack: true,
+            stack64: true,
         },
         {
             input: "techreborn:lead_ingot",
             output: "minecraft:glowstone",
-            stackable: true,
+            stack64: true,
         },
         {
             input: "minecraft:green_dye",
             output: "minecraft:red_dye",
-            stackable: true,
+            stack64: true,
         },
         {
             input: "minecraft:red_dye",
             output: "minecraft:green_dye",
-            stackable: true,
+            stack64: true,
         },
         {
             input: "minecraft:yellow_dye",
             output: "minecraft:blue_dye",
-            stackable: true,
+            stack64: true,
         },
         {
             input: "minecraft:blue_dye",
             output: "minecraft:yellow_dye",
-            stackable: true,
+            stack64: true,
         },
         {
             input: "minecraft:green_dye",
             output: "minecraft:red_dye",
-            stackable: true,
+            stack64: true,
         },
         {
             input: "minecraft:lily_of_the_valley",
             output: "astraladditions:shimmer_lily",
-            stackable: true,
+            stack64: true,
+        },
+        {
+            input: "astralfoods:chocolate_ice_cream",
+            output: "astralfoods:ambrosia",
+            stack64: false,
         },
     ].forEach((recipe) => {
         event.custom({
@@ -60,7 +65,7 @@ onEvent("recipes", (event) => {
                 },
             ],
         });
-        if (recipe.stackable) {
+        if (recipe.stack64) {
             event.custom({
                 type: "astraladditions:shimmer_transmute",
                 input: {

@@ -566,7 +566,7 @@ hash = "511e5b8e20ed84d34331d50e986b572ab6d0d3daf0fa68bd4398944e8ea626ee"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/6_raow.snbt"
-hash = "b01f3dbd28e6dd673e5a77a989a401f96550f410f26ab35a802efe1d82d96996"
+hash = "9490ff2e951a93d9ca10419b166f94692aab8d8cb19a87960b8b8a1bd7ebb827"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/assorted_goals.snbt"
@@ -598,7 +598,7 @@ hash = "0abce67d822d67e035e4a4e380c96446948bd5cbda87e99a2f3feb2ec09189a2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_5.snbt"
-hash = "0169fcb5cd5d93880fcc61129544260eba547a8d663160f3f8492f678b3035a0"
+hash = "2c040101a8efee5b3b892f1811120bf6b47f9d6a8d1dbd76c7b565d2d5c7f2b2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/read_the_questbook.snbt"
@@ -1437,12 +1437,52 @@ file = "kubejs/assets/astraladditions/textures/item/fragile_item_3.png"
 hash = "7c7b46bd62c1c833e1d986e10032bd4da0562e66f4586c476c32f7b55f80db52"
 
 [[files]]
+file = "kubejs/assets/astralfoods/textures/fluid/cream_flow.png"
+hash = "7b1b42a330724b549cb07c26d1989e0fd2616c345e4bb173ce1ee6fc745bc2db"
+
+[[files]]
+file = "kubejs/assets/astralfoods/textures/fluid/cream_flow.png.mcmeta"
+hash = "e9b8025fde1b09b0a4d2a38427b04f98f28a593045be6d177eb2b29164c872b0"
+
+[[files]]
+file = "kubejs/assets/astralfoods/textures/fluid/cream_still.png"
+hash = "1635ace6356f2326887e7f3f81655d64d6f853ebc50650061c7f955ffa568b4b"
+
+[[files]]
+file = "kubejs/assets/astralfoods/textures/fluid/cream_still.png.mcmeta"
+hash = "d947e6371a5bb46ab733722fac72f7aae2832fc94ecc8a1ab55c3e1471cbf4f4"
+
+[[files]]
+file = "kubejs/assets/astralfoods/textures/item/ambrosia.png"
+hash = "f01457e0c46f2cd7de058c7d56581a1078019d2b404fd929187fef63766e25da"
+
+[[files]]
 file = "kubejs/assets/astralfoods/textures/item/astral_sauce.png"
 hash = "a903ec2d834eb152f29389539e1513d1973d5676dc3d9c29eee9553c9dd0176c"
 
 [[files]]
+file = "kubejs/assets/astralfoods/textures/item/blaze_fries.png"
+hash = "86844892e22b27d1a114a1f17e2aa0cf2bc995766881114549dbbf07af348701"
+
+[[files]]
+file = "kubejs/assets/astralfoods/textures/item/blaze_fries_and_cod.png"
+hash = "849049411aedb77b1f53f8e99835c402330045f409e3b0a08c7254e515344d03"
+
+[[files]]
+file = "kubejs/assets/astralfoods/textures/item/blaze_rods.png"
+hash = "ed50f91d74af1dcc7928ddaea31e953e4c150e2b10d6847391139edbafe90f91"
+
+[[files]]
 file = "kubejs/assets/astralfoods/textures/item/bulbas_tea.png"
 hash = "b223eaf8f3b6f890fda059b064eb784e6800cf433b19d47e098b7258eaf3fff5"
+
+[[files]]
+file = "kubejs/assets/astralfoods/textures/item/chocolate_ice_cream.png"
+hash = "d6b476ae2d0f216adcafc1b32728b35a5742f140ea3432800d40122a577b86ef"
+
+[[files]]
+file = "kubejs/assets/astralfoods/textures/item/cod_n_blaze.png"
+hash = "f3535a47bc71d2fd0d0fc4a552df05f57df2cb84085f2fe287f7d6d7d48ea4c8"
 
 [[files]]
 file = "kubejs/assets/astralfoods/textures/item/compressed_onion.png"
@@ -1457,12 +1497,28 @@ file = "kubejs/assets/astralfoods/textures/item/food_amalgamation.png"
 hash = "1957f3233ab27c994dc044b6c065858db31610dbb4a642043da313cb1c1d79dc"
 
 [[files]]
+file = "kubejs/assets/astralfoods/textures/item/fried_cod.png"
+hash = "3cad8a5eec84cb74fcc2d674834c7337feca96b4b6dac859f1dde610e90bb111"
+
+[[files]]
+file = "kubejs/assets/astralfoods/textures/item/gamers_delight.png"
+hash = "4a8db9220ae5e60f6b648129499716cfbcba4674c901d6ed6e0fb9fabb59b32a"
+
+[[files]]
+file = "kubejs/assets/astralfoods/textures/item/ice_cream_sandwich.png"
+hash = "6213693cab47cb999fc0d088348adb4ccb39f061c43013260114e8965e08b873"
+
+[[files]]
 file = "kubejs/assets/astralfoods/textures/item/quantum_bites.png"
 hash = "8cab750ccdfd07a456da17288bbe7a57fad8a218886ef0fd98da831641f8512a"
 
 [[files]]
 file = "kubejs/assets/astralfoods/textures/item/quantum_pasta.png"
 hash = "ceb0fb27102bcd1e3d9278c285a5fdf9f5e0996fcde45f7aa13c4a6e9fe25dcb"
+
+[[files]]
+file = "kubejs/assets/astralfoods/textures/item/recovery_orb.png"
+hash = "4b5a7c193934419b7d821fa9360e4d41dedaaec2faef89324092c17e3f7e69ef"
 
 [[files]]
 file = "kubejs/assets/astralfoods/textures/item/seared_potato.png"
@@ -2106,7 +2162,7 @@ hash = "ddaed1f475cb36918b8bbefaeb691b9037fa2e22a4195805999edaad0469e5c4"
 
 [[files]]
 file = "kubejs/assets/createastral/lang/en_us.json"
-hash = "3ab561c4f5e3531a71a080054391247b69ebc4def9d62d82eff19f3b55d5dd0b"
+hash = "41faceeac73e28f095413b77144e33a0928a78665f3aa5c0f36d868156cb809d"
 
 [[files]]
 file = "kubejs/assets/createastral/lang/fr_fr.json"
@@ -2379,6 +2435,18 @@ hash = "ed48d321e8797713e2cf9270de5388e33ad518063f0ac34247a474b4751e52b7"
 [[files]]
 file = "kubejs/assets/createastral/textures/block/washer_shaft.png"
 hash = "9ca0c24db6e399e6c8cb0ed8cff501c4587b51607d6d42c45b7c124c49ee9202"
+
+[[files]]
+file = "kubejs/assets/createastral/textures/gui/distillation_tower_gui.png"
+hash = "01a8f6ea9384f16e1b4da08dc81ec0091487eb1ff90f1523fdf4178facb1a792"
+
+[[files]]
+file = "kubejs/assets/createastral/textures/gui/electrolyzer_gui.png"
+hash = "ea6ec32b029d7cb903a94e44913e766fbdd31faeda21dbf6f4bc2f6a124c03a3"
+
+[[files]]
+file = "kubejs/assets/createastral/textures/gui/sgc_gui.png"
+hash = "350d0eb6928d67b9edccf2de34e369bfe7895a019064f3e722edf28e11b5bc68"
 
 [[files]]
 file = "kubejs/assets/createastral/textures/item/HESPERYD (WHITE).png"
@@ -2774,7 +2842,7 @@ hash = "e55c0d3d744b13dae3c4cb62336f27167ee3234f006b19d192d6f1eecd6a195a"
 
 [[files]]
 file = "kubejs/assets/createastral/textures/item/promethium_atomic_battery.png"
-hash = "dd12de629cac2cc0e1af2e726b4011f13debacedd1da9e1736ea9191f1e33e08"
+hash = "10fc67753107b9a20f83ef3dd729ead49834fd9ff9ef99f368f92226cfa4a5fd"
 
 [[files]]
 file = "kubejs/assets/createastral/textures/item/protobeef.png"
@@ -3222,7 +3290,7 @@ hash = "78a0821754c33ffbd910377d092534c599963759d6ba7b0af1b78089931b424f"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/zh_cn.json"
-hash = "9cc462c0619749a5da3451a240fcd6ba9bb967cc536f6625ed746fb446ec3dff"
+hash = "b0fef0e63ea60a4c526870f30c53f30fbd0867e1bf01cc46e3a9a6451c0bdd95"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/block/broken_fire_resistant_fragile_sheet_block.json"
@@ -6758,7 +6826,7 @@ hash = "482aedd5d45258ebc3b2babf5581ef6e3f2397f4b2d9a1680f97c039e458aef7"
 
 [[files]]
 file = "kubejs/data/astralrails/loot_tables/chests/generic/ch4.json"
-hash = "300ae3014c4f87de679f937bc49ec497bfa6cdfaf8d5d83d7ccc375e8bcaf2e5"
+hash = "e473028f995af161df4118454411bd4b27fc6750743f4d981291f5b65120de98"
 
 [[files]]
 file = "kubejs/data/astralrails/loot_tables/chests/generic/ch6.json"
@@ -10958,11 +11026,11 @@ hash = "903fa9fe9d8e68acfc86fabf944808fa3614ff773848077ac8417ca05b55d396"
 
 [[files]]
 file = "kubejs/data/createastral/machines/distillery.json"
-hash = "23d2d7e28813fa644544714af21f2b02d20df44d341168d752928ad473d5862b"
+hash = "cb8bd8305f8aeaacc5169696ee968de2d6a6bacfaaa2b912850ec4652b61e47c"
 
 [[files]]
 file = "kubejs/data/createastral/machines/electrolyser.json"
-hash = "789f42b1bc8491aab09a0d9b72a0c204eb4139327c79119023d60021ab4a43dd"
+hash = "744710fadce7add7435d37ead5face72c5fdfe8c38952930f626f3889889c52d"
 
 [[files]]
 file = "kubejs/data/createastral/machines/gas_mixer.json"
@@ -10978,7 +11046,7 @@ hash = "17221fce71fb8ea7c143987e49542775fbee022510924ff3290559007749506b"
 
 [[files]]
 file = "kubejs/data/createastral/machines/stone_growth_chamber.json"
-hash = "79da1cbb81162aca5ed06700840aecbbf07d7237e45e51318fe89b9ac6f0fe7b"
+hash = "de509b7cea0546395d1733b8f863bb698d49c2a566e26d4dae7779c5d421ab8f"
 
 [[files]]
 file = "kubejs/data/createastral/machines/washer.json"
@@ -12594,23 +12662,23 @@ hash = "d061b2f719c0e9f13038f1767a0117e7afd8cebd9c0e29c3bb05bd0a3b29c187"
 
 [[files]]
 file = "kubejs/data/tconstruct/tags/items/casts.json"
-hash = "e99b027956811fdaade4605195fe879e7f81dce7adce8f4f4699ebf51ab4e67b"
+hash = "3d3e512df5fbf117cfcb16f34fc1acc6f1feb6fc666ed2cf349042b87a68ea6e"
 
 [[files]]
 file = "kubejs/data/tconstruct/tags/items/casts/gold.json"
-hash = "e99b027956811fdaade4605195fe879e7f81dce7adce8f4f4699ebf51ab4e67b"
+hash = "3d3e512df5fbf117cfcb16f34fc1acc6f1feb6fc666ed2cf349042b87a68ea6e"
 
 [[files]]
 file = "kubejs/data/tconstruct/tags/items/casts/multi_use.json"
-hash = "e99b027956811fdaade4605195fe879e7f81dce7adce8f4f4699ebf51ab4e67b"
+hash = "3d3e512df5fbf117cfcb16f34fc1acc6f1feb6fc666ed2cf349042b87a68ea6e"
 
 [[files]]
 file = "kubejs/data/tconstruct/tags/items/patterns.json"
-hash = "e99b027956811fdaade4605195fe879e7f81dce7adce8f4f4699ebf51ab4e67b"
+hash = "3d3e512df5fbf117cfcb16f34fc1acc6f1feb6fc666ed2cf349042b87a68ea6e"
 
 [[files]]
 file = "kubejs/data/tconstruct/tags/items/patterns/reusable.json"
-hash = "e99b027956811fdaade4605195fe879e7f81dce7adce8f4f4699ebf51ab4e67b"
+hash = "3d3e512df5fbf117cfcb16f34fc1acc6f1feb6fc666ed2cf349042b87a68ea6e"
 
 [[files]]
 file = "kubejs/data/tconstruct/tags/items/slime_block.json"
@@ -12862,7 +12930,7 @@ hash = "43a44ab4f8771171f025b79a72e27668aa584651d7aa20c083c5227f48c111aa"
 
 [[files]]
 file = "kubejs/server_scripts/misc/interaction.js"
-hash = "328d4106df65e04d8735c74ccaaa94a7032fcca80749ead1a0189c281d171793"
+hash = "be5e468ee06873508ef972f6612398a7de466c9beb39205a07bfab44ee5d89d7"
 
 [[files]]
 file = "kubejs/server_scripts/misc/spawnpointfix.js"
@@ -12962,7 +13030,7 @@ hash = "ae60735e223cf479db034edb648468126bd6c27fe292cd74f594205bf244b497"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astraladditions/shimmer_transmute.js"
-hash = "bd5fde9896e580b0ec6d77c05e62a9d0a13693a54b206ff9bfac76dc1f709de1"
+hash = "fb756ec928e28d8b2d4bec3f8e2691248c32aace7a8923a6ad63c32366133eda"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/automobility/auto_mechanic_table/engines.js"
@@ -12970,7 +13038,7 @@ hash = "d07e4201cde5cc0724aa8afa7101c131199fc6fd1fbe40c9b1ddf1014093ab00"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/compacting.js"
-hash = "1b6bb0cb5e929c5e1696be2c42711a771bd37332dc65ac29874ecc6f8d55c17c"
+hash = "9983efe1699dac84e86362f841248c4e013c799bbf2ce1b01928209a15ce624d"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/createaddition/charging.js"
@@ -13010,11 +13078,11 @@ hash = "04362eac525d2436f690b78608b69a60a1eca004a9180d10450042fb292e2f3d"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/filling.js"
-hash = "925b07c3a5bf35bdde783924941cb4510979b28e093b096cb22f55d88b0f6ab4"
+hash = "061c5a52313dcad62369b7150f6c1951f4797b2766ccdfd5a45fc0677af09f63"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/haunting.js"
-hash = "7bec78b6103f1c8d4f1cbc6d1315c21225729aad3f35ecddbf9f79d2cf13cc1c"
+hash = "58c8f034c67a4184f04124d7d59d7638b54f6cc7aef86dfa1edc3f96214522ea"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/item_application.js"
@@ -13030,7 +13098,7 @@ hash = "05219ce0f5731737dbd03bbff6878700b48061c8b088fe439b80b97731e03c95"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/mixing.js"
-hash = "149eb923097506d09b7f6e9daf410178584f6f3e28fe8de435fdcdc7552169ec"
+hash = "976e828cdd9efd36a3f485300709c4f8e730952bfbe82ab452dc395102df0cc9"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/pressing.js"
@@ -13042,7 +13110,7 @@ hash = "f4668fb6f5e28c3a16f17f5ef0804b56695bb6fef45f354d99103e9b6abcfe1f"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/sequenced_assembly.js"
-hash = "b9f7dc58d9a23782ac01b0680dbc88a0fdd048c7a2644f8e54f704afe8dba182"
+hash = "e90272b27637eb66027519ba19e9618d0376a6698e274c0dafab484b68273965"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/splashing.js"
@@ -13074,7 +13142,7 @@ hash = "75ccc9544e76b8dcac73d5a95b100f0c987ff0793b2fc1902cce3d7cf15d8201"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/farmersdelight/cutting.js"
-hash = "27d274f7d8f5e8d07d47f7b2ebc864eb26f24cf6094b3c2e187436db0daf58b7"
+hash = "d56333eb6638d0a1cb8bfc86cb3d9538664f89d91390046df7ccdf8c3a6c30ae"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/blasting.js"
@@ -13086,11 +13154,11 @@ hash = "0c110b826e39c5e68ac1d6a821c81682218699a465836daca497cb35f39b8064"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/shaped.js"
-hash = "c873cc51b7abb2c8c140661e3496f124d13c81c33e304795e93ccafb698fd973"
+hash = "6681449e2b20f4e8ce85516e927e65be25005cc789563a8e315ab178295328c9"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/shapeless.js"
-hash = "6099a040b62ab790bce6c52330975a46db5de6dde0a9e4a310c889afc17608a0"
+hash = "df90704e38577c392e2beef7624a9de6385b9d89c45caa059d3553c043b9c139"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/smelting.js"
@@ -13110,7 +13178,7 @@ hash = "ca3a0d7d20bc862105bbc0386a9fc286da19727716e74d3bc85cf39971679e75"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/removals.js"
-hash = "55e835830002be8912a846c85c9d34bb66a09bd7570491a32741ade0ff52e67a"
+hash = "518b853a044b2382d830e65ea50b0dd7f436eea845bd0cc8bdc73f91563ab3d1"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/replacements.js"
@@ -13122,7 +13190,7 @@ hash = "d2fb37c2fb109fc1d25b063bd645c4c10c3aaba520557365eb1443d8c246872e"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/smeltery/casting_table.js"
-hash = "d1c53f0bbdf492f72651db3a97f762945a61d35d6570cf0ad90e4c393b74837b"
+hash = "6a73b8e2e46fd986972f66e6c92a1249a29e402621208c2cb16411f7053a0a80"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/smeltery/entity_melting.js"
@@ -13130,7 +13198,7 @@ hash = "d23eb90b7e919937a8feaaba0acf06e36c07c2ab98bafa5f861fff8678999a76"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/smeltery/melting.js"
-hash = "20130f74f4cc15901126b34f40acbcccca854ff7a42bcbc7de4eb08d78e9031f"
+hash = "babb03f975ed61133652aab5ff76cc1e811c59b344121f796ce66b1ba5b9a623"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/smeltery/melting_fuel.js"
@@ -13142,7 +13210,7 @@ hash = "8f2a3b672a0320bc915f389a18c5911c7034e985c074a19085f33152d0674ddc"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/tools/tool_materials.js"
-hash = "7f0410a45411208caf5b0695a0fd886b892bf3e0c00ef045aaa22cbb91557294"
+hash = "51804ee6cb3daa4dc8aa407246c5c4f523064c912c07337fcf0506196738840b"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/techreborn/blast_furnace.js"
@@ -13270,7 +13338,7 @@ hash = "1f45cd1d4a8e76269e74b39af6178c231ad8b0ddafc1e0a01e38c74bfc54fcee"
 
 [[files]]
 file = "kubejs/startup_scripts/registry/astralfoods/item.js"
-hash = "9eb65d2074d261af70da3f226cf6ea7bde82064eb2248d8490844f92224403fc"
+hash = "d44612c361d527970c46c08550ad76591a0343edd56221a7fd8b81c13d43a860"
 
 [[files]]
 file = "kubejs/startup_scripts/registry/astralsignals/block.js"
@@ -13290,7 +13358,7 @@ hash = "ffe20c94c06bd4b664242a82d56fd1771a1c43ddf4dc0739f7374188cb050516"
 
 [[files]]
 file = "kubejs/startup_scripts/registry/createastral/item/item.js"
-hash = "7bb54391fd52d4c5a9d7b7fa4a590df29a3c1a10d6e31d450026f25522b1a809"
+hash = "1246de11cc2d291d4d5f7b285d92fe7e50a21887050aea7dd895e9590b45b753"
 
 [[files]]
 file = "kubejs/startup_scripts/registry/createastral/item/tool_tiers.js"

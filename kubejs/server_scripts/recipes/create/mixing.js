@@ -11,18 +11,18 @@ onEvent("recipes", (event) => {
             output: [
                 {
                     fluid: "estrogen:molten_amethyst",
-                    amount: INGOT,
+                    amount: INGOT / 2,
                 },
             ],
             input: [
                 {
                     fluid: "tconstruct:molten_amethyst",
-                    amount: BUCKET,
+                    amount: BUCKET / 2,
                 },
                 "astraladditions:bulba_root",
             ],
             heat: "",
-            time: 210,
+            time: 105,
         },
         {
             output: ["create:tree_fertilizer"],
@@ -3261,6 +3261,93 @@ onEvent("recipes", (event) => {
             output: "minecraft:wither_skeleton_skull",
             input: ["minecraft:coal_block", "minecraft:skeleton_skull", "4x minecraft:wither_rose"],
             heat: "superheated",
+        },
+        {
+            output: ["create:dough"],
+            input: ["create:wheat_flour", { fluid: "minecraft:water", amount: BUCKET / 2 }],
+            heat: "",
+            time: 10,
+        },
+        {
+            output: ["minecraft:cocoa_beans"],
+            input: [
+                { fluid: "kubejs:shimmer", amount: INGOT },
+                "minecraft:brown_dye",
+                "minecraft:wheat_seeds",
+                "create:tree_fertilizer",
+            ],
+            heat: "",
+            time: 80,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_netherite", (INGOT * 3) / 10),
+            input: [
+                { fluid: "tconstruct:molten_debris", amount: INGOT },
+                { fluid: "tconstruct:molten_gold", amount: INGOT },
+            ],
+            heat: "heated",
+            time: 100,
+        },
+        {
+            output: Fluid.of("tconstruct:molten_netherite", INGOT * 2),
+            input: [
+                { fluid: "tconstruct:molten_debris", amount: INGOT * 4 },
+                { fluid: "tconstruct:molten_gold", amount: INGOT * 4 },
+            ],
+            heat: "superheated",
+            time: 100,
+        },
+        {
+            output: [{ fluid: "astralfoods:cream", amount: BUCKET }],
+            input: ["3x minecraft:sugar", { fluid: "milk:still_milk", amount: BUCKET }],
+            heat: "heated",
+            time: 100,
+        },
+        {
+            output: ["astralfoods:chocolate_ice_cream"],
+            input: ["create:bar_of_chocolate", { fluid: "astralfoods:cream", amount: BUCKET / 4 }],
+            heat: "heated",
+            time: 60,
+        },
+        {
+            output: ["astralfoods:gamers_delight"],
+            input: [
+                "techreborn:compressed_plantball",
+                "farmersdelight:pie_crust",
+                { fluid: "techreborn:lithium", amount: BUCKET },
+            ],
+            heat: "heated",
+            time: 80,
+        },
+        {
+            output: "minecraft:slime_ball",
+            input: ["minecraft:lime_dye", "#c:slimeballs"],
+            heat: "",
+            time: 50,
+        },
+        {
+            output: "3x createastral:synthetic_slime",
+            input: ["2x techreborn:sponge_piece", { fluid: "tconstruct:blood", amount: SLIMEBALL * 2 }],
+            heat: "",
+            time: 50,
+        },
+        {
+            output: "3x createastral:synthetic_slime",
+            input: ["2x techreborn:sponge_piece", { fluid: "tconstruct:earth_slime", amount: SLIMEBALL * 2 }],
+            heat: "",
+            time: 50,
+        },
+        {
+            output: "3x createastral:synthetic_slime",
+            input: ["2x techreborn:sponge_piece", { fluid: "tconstruct:sky_slime", amount: SLIMEBALL * 2 }],
+            heat: "",
+            time: 50,
+        },
+        {
+            output: "3x createastral:synthetic_slime",
+            input: ["2x techreborn:sponge_piece", { fluid: "tconstruct:ender_slime", amount: SLIMEBALL * 2 }],
+            heat: "",
+            time: 50,
         },
     ].forEach((recipe) => {
         event.recipes

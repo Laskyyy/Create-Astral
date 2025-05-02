@@ -1,43 +1,43 @@
 {
-  "name": "custommachinery.createastral.stone_growth_chamber",
-  "appearance": {
-    "block": "createastral:stone_growth_chamber_dummy",
-    "running": {
-      "lightlevel": 15
-    }
-  },
-  "gui": [
-    {
-      "texture": "custommachinery:textures/gui/base_background.png",
-      "x": 0,
-      "y": 0,
-      "type": "custommachinery:texture"
+    "name": "custommachinery.createastral.stone_growth_chamber",
+    "appearance": {
+        "block": "createastral:stone_growth_chamber_dummy",
+        "running": {
+            "lightlevel": 15
+        }
     },
-    {
-      "x": 47,
-      "y": 80,
-      "type": "custommachinery:player_inventory"
-    },
-    {
-      "id": "stoneslot",
-      "x": 119,
-      "y": 38,
-      "type": "custommachinery:slot"
-    },
-    {
-      "text": "custommachinery.createastral.stone_growth_chamber.text",
-      "x": 7,
-      "y": 5,
-      "type": "custommachinery:text"
-    }
-  ],
-  "components": [
-    {
-      "type": "custommachinery:item",
-			"variant": "custommachinery:default",
-      "capacity": 64,
-      "id": "stoneslot",
-      "mode": "both"
-		}
-  ]
+    "gui": [
+        {
+            "texture": "createastral:textures/gui/sgc_gui.png",
+            "x": 47,
+            "y": 16,
+            "type": "custommachinery:texture"
+        },
+        {
+            "x": 47,
+            "y": 80,
+            "type": "custommachinery:player_inventory"
+        },
+        {
+            "id": "stoneslot",
+            "x": 119,
+            "y": 38,
+            "type": "custommachinery:slot"
+        },
+        {
+            "text": "custommachinery.createastral.stone_growth_chamber.text",
+            "x": 7,
+            "y": 5,
+            "type": "custommachinery:text"
+        }
+    ],
+    "components": [
+        {
+            "type": "custommachinery:item",
+            "variant": "custommachinery:default",
+            "capacity": 64,
+            "id": "stoneslot",
+            "mode": "both"
+        }
+    ]
 }

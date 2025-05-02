@@ -6,6 +6,7 @@ onEvent("recipes", (event) => {
         ["2x minecraft:charcoal", "minecraft:coal"],
         ["minecraft:sand", "minecraft:soul_sand"],
         ["minecraft:soul_sand", "minecraft:netherrack"],
+        ["vinery:cherry_sapling", "vinery:old_cherry_sapling"],
 
         //dead coral blocks
         ["minecraft:tube_coral_block", "minecraft:dead_tube_coral_block"],

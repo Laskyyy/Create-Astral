@@ -68,6 +68,8 @@ onEvent("recipes", (event) => {
         [["9x techreborn:bronze_nugget"], "createastral:bronze_ingot"],
         [["createastral:bronze_ingot"], "9x techreborn:bronze_nugget"],
         [["minecraft:wither_skeleton_skull"], "4x minecraft:wither_rose"],
+        [["astralfoods:fried_cod", "astralfoods:blaze_fries"], "astralfoods:blaze_fries_and_cod"],
+        [["create:dough", "minecraft:cyan_dye"], "tconstruct:sky_slime_ball"],
     ].forEach((recipe) => {
         event.shapeless(recipe[1], recipe[0]);
     });
