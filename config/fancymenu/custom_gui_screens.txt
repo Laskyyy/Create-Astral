@@ -22,6 +22,15 @@ custom_gui {
 }
 
 custom_gui {
+  identifier = modpack_changelog_2.1.4
+  title = {"placeholder":"local","values":{"key":"astralmenu.changelog.2_1_4.title"}}
+  allow_esc = true
+  transparent_world_background = true
+  transparent_world_background_overlay = true
+  pause_game = true
+}
+
+custom_gui {
   identifier = modpack_changelog_2.1.1
   title = {"placeholder":"local","values":{"key":"astralmenu.changelog.2_1_1.title"}}
   allow_esc = true

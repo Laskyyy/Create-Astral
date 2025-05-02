@@ -1,1 +1,0 @@
-{"type":"minecraft:crafting_shaped","pattern":[" B ","BCB"," B "],"key":{"B":{"item":"create:copper_sheet"},"C":{"tag":"c:barrels/wooden"}},"result":{"item":"create:fluid_tank"}}
