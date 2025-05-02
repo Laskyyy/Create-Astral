@@ -1,9 +1,0 @@
-Hello this is mainly here for contributor reference.
-
-When redoing astral's code this section was probably the most complex to transition to use kubejs instead of datapacks for all recipes.
-As a result, the Hephaestus modifer recipes will remain in datapack due to their sheer complexity and also the fact that I've been working on this PR for the best part of 2 weeks now and decided it's best to just leave those where they are for now.
-
-If you can think of a way to transfer the modifier recipes from datapack to JS then please be my guest, but for now they can be found at:
-kubejs/data/tconstruct/recipes/tools/modifiers
-
-- _Shortman

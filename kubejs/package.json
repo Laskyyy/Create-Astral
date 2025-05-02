@@ -1,0 +1,16 @@
+{
+  "name": "kubejs",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build --mode client && vite build --mode server && vite build --mode startup",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "typescript": "~5.7.2",
+    "vite": "^6.3.1"
+  }
+}
