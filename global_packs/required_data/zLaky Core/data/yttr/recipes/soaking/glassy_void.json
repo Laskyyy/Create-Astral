@@ -1,7 +1,0 @@
-{
-	"type": "yttr:soaking",
-	"ingredients": [ { "item": "yttr:bedrock_shard" } ],
-	"catalyst": { "fluid": "yttr:void" },
-	"result": { "block": "yttr:glassy_void" },
-	"sound": "yttr:dissolve"
-}

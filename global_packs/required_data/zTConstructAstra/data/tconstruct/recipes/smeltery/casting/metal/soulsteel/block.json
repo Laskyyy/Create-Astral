@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:casting_basin",
-  "fluid": {
-    "tag": "tconstruct:molten_soulsteel",
-    "amount": 81000
-  },
-  "result": "tconstruct:soulsteel_block",
-  "cooling_time": 216
-}
