@@ -58,6 +58,13 @@ declare function onEvent(name: "tags.activity", handler: (event: Internal.TagEve
 declare function onEvent(name: "fabric.client.after_entities", handler: (event: Internal.WorldRenderContextEventJS) => void);
 /**
  * 
+ * The event fires on: **startup**, **server**, **client**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "block.left_click", handler: (event: Internal.BlockLeftClickEventJS) => void);
+/**
+ * 
  * The event fires on: **startup**, **server**.
  * 
  * The event is **not** cancellable.
@@ -91,6 +98,13 @@ declare function onEvent(name: "item.modification", handler: (event: Internal.It
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "tags.chunk_status", handler: (event: Internal.TagEventJS<any>) => void);
+/**
+ * 
+ * The event fires on: **startup**, **server**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "fabric.allow_elytra_flight", handler: (event: Internal.AllowElytraFlightEventJS) => void);
 /**
  * 
  * The event fires on: **startup**, **server**.
@@ -202,6 +216,13 @@ declare function onEvent(name: "player.logged_in", handler: (event: Internal.Sim
  * 
  * The event is **not** cancellable.
 */
+declare function onEvent(name: "fabric.modify_sleeping_direction", handler: (event: Internal.ModifySleepingDirectionEventJS) => void);
+/**
+ * 
+ * The event fires on: **startup**, **server**.
+ * 
+ * The event is **not** cancellable.
+*/
 declare function onEvent(name: "tags.entity_types", handler: (event: Internal.TagEventJS<any>) => void);
 /**
  * 
@@ -303,11 +324,25 @@ declare function onEvent(name: "tags.worldgen.structure_pool_element", handler: 
 declare function onEvent(name: "rei.group", handler: (event: Internal.REIGroupEntriesEventJS) => void);
 /**
  * 
+ * The event fires on: **startup**, **server**, **client**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "block.place", handler: (event: Internal.BlockPlaceEventJS) => void);
+/**
+ * 
  * The event fires on: **startup**, **client**.
  * 
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "ponder.tag", handler: (event: Internal.PonderItemTagEventJS) => void);
+/**
+ * 
+ * The event fires on: **startup**, **server**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "server.unload", handler: (event: Internal.ServerEventJS) => void);
 /**
  * 
  * The event fires on: **startup**.
@@ -336,6 +371,20 @@ declare function onEvent(name: "fabric.client.before_entities", handler: (event:
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "tags.stat_type", handler: (event: Internal.TagEventJS<any>) => void);
+/**
+ * 
+ * The event fires on: **startup**, **server**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "player.advancement", handler: (event: Internal.PlayerAdvancementEventJS) => void);
+/**
+ * 
+ * The event fires on: **startup**, **server**, **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "ServerLifecycleEvents.EndDataPackReload", handler: (event: Internal.ProxyEventJS) => void);
 /**
  * 
  * The event fires on: **startup**.
@@ -398,6 +447,13 @@ declare function onEvent(name: "block.modification", handler: (event: Internal.B
  * 
  * The event is **not** cancellable.
 */
+declare function onEvent(name: "player.inventory.changed", handler: (event: Internal.InventoryChangedEventJS) => void);
+/**
+ * 
+ * The event fires on: **startup**, **server**.
+ * 
+ * The event is **not** cancellable.
+*/
 declare function onEvent(name: "gift.loot_tables", handler: (event: Internal.GiftLootEventJS) => void);
 /**
  * 
@@ -436,7 +492,7 @@ declare function onEvent(name: "tags.recipe_serializer", handler: (event: Intern
 declare function onEvent(name: "fishing.loot_tables", handler: (event: Internal.FishingLootEventJS) => void);
 /**
  * 
- * The event fires on: **startup**, **client**.
+ * The event fires on: **startup**, **server**, **client**.
  * 
  * The event is **not** cancellable.
 */
@@ -448,6 +504,13 @@ declare function onEvent(name: "entity.enter_chunk", handler: (event: Internal.E
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "fluid.tags", handler: (event: Internal.TagEventJS<any>) => void);
+/**
+ * 
+ * The event fires on: **startup**, **server**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "fabric.allow_setting_spawn", handler: (event: Internal.AllowSettingSpawnEventJS) => void);
 /**
  * 
  * The event fires on: **startup**, **server**.
@@ -639,6 +702,13 @@ declare function onEvent(name: "client.generate_assets", handler: (event: Intern
 declare function onEvent(name: "tags.pos_rule_test", handler: (event: Internal.TagEventJS<any>) => void);
 /**
  * 
+ * The event fires on: **startup**, **server**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "player.inventory.opened", handler: (event: Internal.InventoryEventJS) => void);
+/**
+ * 
  * The event fires on: **startup**, **client**.
  * 
  * The event is **not** cancellable.
@@ -672,6 +742,13 @@ declare function onEvent(name: "tags.loot_nbt_provider_type", handler: (event: I
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "tags.worldgen.configured_structure_feature", handler: (event: Internal.TagEventJS<any>) => void);
+/**
+ * 
+ * The event fires on: **startup**, **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "client.logged_out", handler: (event: Internal.ClientLoggedInEventJS) => void);
 /**
  * 
  * The event fires on: **startup**, **server**.
@@ -737,11 +814,25 @@ declare function onEvent(name: "arch.event.register", handler: (event: Internal.
 declare function onEvent(name: "generic.loot_tables", handler: (event: Internal.GenericLootEventJS) => void);
 /**
  * 
+ * The event fires on: **startup**, **server**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "morejs.player.xp_change", handler: (event: Internal.ExperiencePlayerEventJS) => void);
+/**
+ * 
  * The event fires on: **startup**, **client**.
  * 
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "client.painter_updated", handler: (event: Internal.PainterUpdatedEventJS) => void);
+/**
+ * 
+ * The event fires on: **startup**, **server**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "player.logged_out", handler: (event: Internal.SimplePlayerEventJS) => void);
 /**
  * 
  * The event fires on: **startup**, **server**.
@@ -770,6 +861,13 @@ declare function onEvent(name: "server.load", handler: (event: Internal.ServerEv
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "tags.float_provider_type", handler: (event: Internal.TagEventJS<any>) => void);
+/**
+ * 
+ * The event fires on: **startup**, **server**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "fabric.custom_elytra_flight", handler: (event: Internal.CustomElytraFlightEventJS) => void);
 /**
  * 
  * The event fires on: **startup**, **server**.
@@ -872,6 +970,13 @@ declare function onEvent(name: "fabric.client.after_translucent", handler: (even
  * 
  * The event fires on: **startup**, **server**.
  * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "fabric.allow_sleep_time", handler: (event: Internal.AllowSleepTimeEventJS) => void);
+/**
+ * 
+ * The event fires on: **startup**, **server**.
+ * 
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "tags.worldgen.structure_processor", handler: (event: Internal.TagEventJS<any>) => void);
@@ -949,6 +1054,13 @@ declare function onEvent(name: "command.run", handler: (event: Internal.CommandE
  * 
  * The event fires on: **startup**, **server**.
  * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "block.break", handler: (event: Internal.BlockBreakEventJS) => void);
+/**
+ * 
+ * The event fires on: **startup**, **server**.
+ * 
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "tags.component_type", handler: (event: Internal.TagEventJS<any>) => void);
@@ -973,6 +1085,13 @@ declare function onEvent(name: "fabric.client.render_hud", handler: (event: Inte
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "tags.worldgen.tree_decorator_type", handler: (event: Internal.TagEventJS<any>) => void);
+/**
+ * 
+ * The event fires on: **startup**, **server**, **client**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "item.right_click", handler: (event: Internal.ItemRightClickEventJS) => void);
 /**
  * 
  * The event fires on: **startup**, **server**.
@@ -1000,6 +1119,13 @@ declare function onEvent(name: "fabric.set_bed_occupation_state", handler: (even
  * 
  * The event is **not** cancellable.
 */
+declare function onEvent(name: "player.inventory.closed", handler: (event: Internal.InventoryEventJS) => void);
+/**
+ * 
+ * The event fires on: **startup**, **server**.
+ * 
+ * The event is **not** cancellable.
+*/
 declare function onEvent(name: "tags.villager_type", handler: (event: Internal.TagEventJS<any>) => void);
 /**
  * 
@@ -1010,11 +1136,25 @@ declare function onEvent(name: "tags.villager_type", handler: (event: Internal.T
 declare function onEvent(name: "rei.remove.categories", handler: (event: Internal.RemoveREICategoryEventJS) => void);
 /**
  * 
+ * The event fires on: **startup**, **server**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "player.change_dimension", handler: (event: Internal.PlayerChangeDimensionEventJS) => void);
+/**
+ * 
  * The event fires on: **startup**.
  * 
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "create.spout.special", handler: (event: Internal.SpecialSpoutHandlerEvent) => void);
+/**
+ * 
+ * The event fires on: **startup**, **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "fabric.client.block_outline", handler: (event: Internal.BlockOutlineRenderEventJS) => void);
 /**
  * 
  * The event fires on: **startup**, **server**.
@@ -1036,6 +1176,13 @@ declare function onEvent(name: "tags.block_recipe_serializers", handler: (event:
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "rei.information", handler: (event: Internal.InformationREIEventJS) => void);
+/**
+ * 
+ * The event fires on: **startup**, **server**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "level.unload", handler: (event: Internal.SimpleLevelEventJS) => void);
 /**
  * 
  * The event fires on: **startup**, **server**.
@@ -1113,6 +1260,13 @@ declare function onEvent(name: "client.logged_in", handler: (event: Internal.Cli
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "tags.block_node_decoder", handler: (event: Internal.TagEventJS<any>) => void);
+/**
+ * 
+ * The event fires on: **startup**, **server**, **client**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "block.right_click", handler: (event: Internal.BlockRightClickEventJS) => void);
 /**
  * 
  * The event fires on: **startup**, **server**.

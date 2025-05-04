@@ -5,6 +5,7 @@
     "module": "ESNext",
     "lib": ["ES5", "ES2017"],
     "skipLibCheck": true,
+    "allowJs": true,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -20,7 +21,8 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
 
-    "typeRoots": ["./src/types/probe", "./src/types/custom"]
+    "typeRoots": ["./src/types/probe", "./src/types/custom"],
+    "paths": { "constants": ["./src/server/constants.ts"], "fluid-constants": ["./src/server/fluid-constants.ts"] }
   },
   "include": ["src"]
 }

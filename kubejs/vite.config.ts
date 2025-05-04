@@ -5,7 +5,7 @@ import { defineConfig, UserConfig} from "vite";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 function generateConfig(inputFile: string, outputDir: string): UserConfig {
-  return {
+  let config: UserConfig = {
     build: {
       outDir: outputDir,
       minify: false,
@@ -18,6 +18,15 @@ function generateConfig(inputFile: string, outputDir: string): UserConfig {
       },
     },
   };
+  if (outputDir == "server_scripts") {
+    config.resolve = {
+      alias: {
+        "constants": "src/server/constants.ts",
+        "fluid-constants": "src/server/fluid-constants.ts"
+      }
+    }
+  }
+  return config
 }
 
 export default defineConfig(({ mode }) => {

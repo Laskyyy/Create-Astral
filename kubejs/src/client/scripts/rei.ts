@@ -3,7 +3,7 @@ export function rei() {
 
   onEvent("rei.group", (event) => {
     event.groupItems("kubejs:rei_groups/chipped", Component.of("Chipped Blocks"), [
-      Ingredient.of(/chipped:.*/)
+      Ingredient.of("@chipped")
         .getItemIds()
         .toArray()
         .filter(

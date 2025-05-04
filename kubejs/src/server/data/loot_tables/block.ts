@@ -18,6 +18,7 @@ export function yttrLootFix() {
   });
 
   // Taken from the old yttr_block_fix.js file
+  // ! Commented out entries aren't both blocks and items! 
   function yttrBlockFix(event: Internal.BlockLootEventJS) {
     const yttrBlocks: BlockThatIsAlsoAnItem[] = [
       "yttr:centrifuge",

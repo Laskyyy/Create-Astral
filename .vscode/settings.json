@@ -5,6 +5,9 @@
         "editor.formatOnSave": false,
         "editor.defaultFormatter": null
     },
+    "[javascript]": {"editor.tabSize": 2},
+    "[typescript]": {"editor.tabSize": 2},
+    "[json]": {"editor.tabSize": 2},
     "files.associations": {
         "*.mcmeta": "json",
         ".packwizignore": "ignore"
