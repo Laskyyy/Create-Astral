@@ -17,6 +17,10 @@
             item !== "chipped:mechanist_workbench"
         ),
     ]);
+
+    // Compressed Blocks
+    event.groupItems("kubejs:rei_groups/compressed", "Compressed Blocks", [Ingredient.of("@compressor").getItemIds()]);
+
     //Decrypted Drives
     event.groupItemsByTag(
       "createastral:rei_groups/astralsignals/drives_decrypted_t1",
