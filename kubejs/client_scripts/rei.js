@@ -19,6 +19,9 @@ onEvent("rei.group", (event) => {
             ),
     ]);
 
+    // Compressed Blocks
+    event.groupItems("kubejs:rei_groups/compressed", "Compressed Blocks", [Ingredient.of("@compressor").getItemIds()]);
+
     //Decrypted Drives
     event.groupItemsByTag('createastral:rei_groups/astralsignals/drives_decrypted_t1', Component.translate("text.rei.createastral.astralsignals.drives_decrypted_t1"), 'astralsignals:drives_decrypted_t1')
     event.groupItemsByTag('createastral:rei_groups/astralsignals/drives_decrypted_t2', Component.translate("text.rei.createastral.astralsignals.drives_decrypted_t2"), 'astralsignals:drives_decrypted_t2')
