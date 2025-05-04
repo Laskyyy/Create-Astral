@@ -3,52 +3,163 @@ export function createCuttingRecipes() {
     autoChipped(event);
     farmersCompatCutting(event);
 
-    
-    // [Input string, Output string]
-    [
-      ["createastral:marimo", "minecraft:seagrass"],
-      ["createastral:moonset_marimo", "minecraft:warped_roots"],
-      ["createastral:snowy_marimo", "minecraft:snowball"],
-      ["createastral:ender_marimo", "astraladditions:ender_sprouts"],
-      ["minecraft:moss_block", "2x minecraft:moss_carpet"],
-      ["minecraft:moss_carpet", "2x createastral:marimo"],
-      ["techreborn:rubber_log", "techreborn:rubber_log_stripped"],
-      ["techreborn:rubber_log", ["farmersdelight:tree_bark", "techreborn:rubber_log_stripped"]],
-      ["techreborn:rubber_wood", "techreborn:stripped_rubber_wood"],
-      ["techreborn:rubber_wood", ["farmersdelight:tree_bark", "techreborn:stripped_rubber_wood"]],
-      ["techreborn:rubber_log_stripped", "6x techreborn:rubber_planks"],
-      ["vinery:cherry_log", "vinery:stripped_cherry_log"],
-      ["vinery:stripped_cherry_log", "6x vinery:cherry_planks"],
-      ["vinery:old_cherry_log", "vinery:stripped_old_cherry_log"],
-      ["vinery:stripped_old_cherry_log", "6x vinery:cherry_planks"],
-      ["vinery:cherry_wood", "vinery:stripped_cherry_wood"],
-      ["vinery:old_cherry_wood", "vinery:stripped_old_cherry_wood"],
-      ["ad_astra:glacian_log", "ad_astra:stripped_glacian_log"],
-      ["ad_astra:stripped_glacian_log", "6x ad_astra:glacian_planks"],
-      ["create:track", "railways:track_acacia"],
-      ["create:track", "railways:track_birch"],
-      ["create:track", "railways:track_crimson"],
-      ["create:track", "railways:track_dark_oak"],
-      ["create:track", "railways:track_jungle"],
-      ["create:track", "railways:track_oak"],
-      ["create:track", "railways:track_spruce"],
-      ["create:track", "railways:track_warped"],
-      ["create:track", "railways:track_blackstone"],
-      ["create:track", "railways:track_ender"],
-      ["create:track", "railways:track_tieless"],
-      ["create:track", "railways:track_phantom"],
-      ["create:track", "railways:track_monorail"],
-      ["minecraft:rabbit", "minecraft:rabbit_foot"],
-      ["minecraft:bone_block", "minecraft:skeleton_skull"],
-      ["#minecraft:planks", "techreborn:wood_plate"],
-    ].forEach((recipe) => {
-      event.recipes.createCutting(recipe[1], recipe[0]);
+    interface CuttingRecipe {
+      input: Internal.IngredientJS_;
+      output: Internal.IngredientJS_;
+    }
+    const cuttingRecipes: CuttingRecipe[] = [
+      {
+        input: "createastral:marimo",
+        output: "minecraft:seagrass",
+      },
+      {
+        input: "createastral:moonset_marimo",
+        output: "minecraft:warped_roots",
+      },
+      {
+        input: "createastral:snowy_marimo",
+        output: "minecraft:snowball",
+      },
+      {
+        input: "createastral:ender_marimo",
+        output: "astraladditions:ender_sprouts",
+      },
+      {
+        input: "minecraft:moss_block",
+        output: Item.of("minecraft:moss_carpet", 2),
+      },
+      {
+        input: "minecraft:moss_carpet",
+        output: Item.of("createastral:marimo", 2),
+      },
+      {
+        input: "techreborn:rubber_log",
+        output: "techreborn:rubber_log_stripped",
+      },
+      {
+        input: "techreborn:rubber_log",
+        output: ["farmersdelight:tree_bark", "techreborn:rubber_log_stripped"],
+      },
+      {
+        input: "techreborn:rubber_wood",
+        output: "techreborn:stripped_rubber_wood",
+      },
+      {
+        input: "techreborn:rubber_wood",
+        output: ["farmersdelight:tree_bark", "techreborn:stripped_rubber_wood"],
+      },
+      {
+        input: "techreborn:rubber_log_stripped",
+        output: Item.of("techreborn:rubber_planks", 6),
+      },
+      {
+        input: "vinery:cherry_log",
+        output: "vinery:stripped_cherry_log",
+      },
+      {
+        input: "vinery:stripped_cherry_log",
+        output: Item.of("vinery:cherry_planks", 6),
+      },
+      {
+        input: "vinery:old_cherry_log",
+        output: "vinery:stripped_old_cherry_log",
+      },
+      {
+        input: "vinery:stripped_old_cherry_log",
+        output: Item.of("vinery:cherry_planks", 6),
+      },
+      {
+        input: "vinery:cherry_wood",
+        output: "vinery:stripped_cherry_wood",
+      },
+      {
+        input: "vinery:old_cherry_wood",
+        output: "vinery:stripped_old_cherry_wood",
+      },
+      {
+        input: "ad_astra:glacian_log",
+        output: "ad_astra:stripped_glacian_log",
+      },
+      {
+        input: "ad_astra:stripped_glacian_log",
+        output: Item.of("ad_astra:glacian_planks", 6),
+      },
+      {
+        input: "create:track",
+        output: "railways:track_acacia",
+      },
+      {
+        input: "create:track",
+        output: "railways:track_birch",
+      },
+      {
+        input: "create:track",
+        output: "railways:track_crimson",
+      },
+      {
+        input: "create:track",
+        output: "railways:track_dark_oak",
+      },
+      {
+        input: "create:track",
+        output: "railways:track_jungle",
+      },
+      {
+        input: "create:track",
+        output: "railways:track_oak",
+      },
+      {
+        input: "create:track",
+        output: "railways:track_spruce",
+      },
+      {
+        input: "create:track",
+        output: "railways:track_warped",
+      },
+      {
+        input: "create:track",
+        output: "railways:track_blackstone",
+      },
+      {
+        input: "create:track",
+        output: "railways:track_ender",
+      },
+      {
+        input: "create:track",
+        output: "railways:track_tieless",
+      },
+      {
+        input: "create:track",
+        output: "railways:track_phantom",
+      },
+      {
+        input: "create:track",
+        output: "railways:track_monorail",
+      },
+      {
+        input: "minecraft:rabbit",
+        output: "minecraft:rabbit_foot",
+      },
+      {
+        input: "minecraft:bone_block",
+        output: "minecraft:skeleton_skull",
+      },
+      {
+        input: "#minecraft:planks",
+        output: "techreborn:wood_plate",
+      },
+    ] as const;
+
+    cuttingRecipes.forEach((recipe) => {
+      event.recipes.createCutting(recipe.output, recipe.input);
     });
   });
 
+  /**
+   * Automated Chipped tables via Mechanical Saw.
+   * @author KonSola5
+   */
   function autoChipped(event: Internal.RecipeEventJS) {
-    //? Konsola's auto_chipped.js script
-
     const CHIPPED_TABLES: Special.RecipeSerializer[] = [
       "chipped:alchemy_bench",
       "chipped:botanist_workbench",
@@ -60,8 +171,8 @@ export function createCuttingRecipes() {
     ] as const;
     CHIPPED_TABLES.forEach((table) => {
       event.forEachRecipe({ type: table }, (recipe) => {
-        const tags = JSON.parse(recipe.json.toString()).tags;
-        tags.forEach((tag: string) => {
+        const tags: Special.ItemTag[] = JSON.parse(recipe.json.toString()).tags;
+        tags.forEach((tag) => {
           Ingredient.of(`#${tag}`)
             .getStacks()
             .forEach((item: any) => {
@@ -84,9 +195,8 @@ export function createCuttingRecipes() {
     });
   }
 
+  /** @author RandomUser240306 */
   function farmersCompatCutting(event: Internal.RecipeEventJS) {
-    //? RandomUser240306's farmerscompat.js script
-
     event.forEachRecipe({ type: "farmersdelight:cutting" }, (recipe) => {
       let newList = Utils.newList();
       recipe.json.get("result").asJsonArray.forEach((e) => newList.push(e));

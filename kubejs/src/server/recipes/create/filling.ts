@@ -4,7 +4,14 @@ export function createFillingRecipes() {
   onEvent("recipes", (event) => {
     // The functions are pretty self-explanatory
 
-    [
+    interface FillingRecipe {
+      input: Internal.ItemStackJS_,
+      output: Internal.ItemStackJS_,
+      fluid: Special.Fluid,
+      amount: number
+    }
+
+    const fillingRecipes: FillingRecipe[] = [
       {
         input: "minecraft:glass_bottle",
         output: "astraladditions:shimmer_bottle",
@@ -49,7 +56,7 @@ export function createFillingRecipes() {
       },
       {
         input: "minecraft:dripstone_block",
-        output: "3x minecraft:pointed_dripstone",
+        output: Item.of("minecraft:pointed_dripstone", 3),
         fluid: "minecraft:water",
         amount: 500 * mB,
       },
@@ -233,7 +240,8 @@ export function createFillingRecipes() {
         fluid: "astralfoods:cream",
         amount: 250 * mB,
       },
-    ].forEach((recipe) => {
+    ]
+    fillingRecipes.forEach((recipe) => {
       event.recipes.createFilling(recipe.output, [recipe.input, { fluid: recipe.fluid, amount: recipe.amount }]);
     });
 

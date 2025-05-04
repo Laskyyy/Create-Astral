@@ -3,134 +3,120 @@ export function createWashingRecipes() {
     //Input: String
     //Outputs: Array of outputs, which is each an array.
     //    [Item string, float from 0.0 - 1.0 deciding chance]
-    [
+    interface WashingRecipe {
+      input: Internal.IngredientJS_;
+      outputs: Internal.ItemStackJS_[];
+    }
+
+    const washingRecipes: WashingRecipe[] = [
       //sponge to wet sponge
       {
         input: "minecraft:calcite",
-        outputs: [["minecraft:dripstone_block", 1]],
+        outputs: [Item.of("minecraft:dripstone_block")],
       },
       {
         input: "minecraft:sponge",
-        outputs: [["minecraft:wet_sponge", 1]],
+        outputs: [Item.of("minecraft:wet_sponge")],
       },
       {
         input: "createaddition:biomass",
         outputs: [
-          ["createastral:pure_biomatter", 1],
-          ["minecraft:sugar", 0.2],
-          ["minecraft:bone_meal", 0.2],
+          Item.of("createastral:pure_biomatter"),
+          Item.of("minecraft:sugar").withChance(0.2),
+          Item.of("minecraft:bone_meal").withChance(0.2),
         ],
       },
       {
         input: "minecraft:soul_soil",
         outputs: [
-          ["minecraft:gold_nugget", 0.08],
-          ["minecraft:quartz", 0.06],
-          ["minecraft:bone_meal", 0.1],
+          Item.of("minecraft:gold_nugget").withChance(0.08),
+          Item.of("minecraft:quartz").withChance(0.06),
+          Item.of("minecraft:bone_meal").withChance(0.1),
         ],
       },
       {
         input: "ae2:certus_crystal_seed",
-        outputs: [
-          ["ae2:certus_quartz_crystal", 1],
-          ["minecraft:sugar", 0.1],
-        ],
+        outputs: [Item.of("ae2:certus_quartz_crystal"), Item.of("minecraft:sugar").withChance(0.1)],
       },
       {
         input: "ae2:fluix_crystal_seed",
-        outputs: [
-          ["ae2:fluix_crystal", 1],
-          ["minecraft:sugar", 0.1],
-        ],
+        outputs: [Item.of("ae2:fluix_crystal"), Item.of("minecraft:sugar").withChance(0.1)],
       },
 
       {
         input: "createastral:lime",
         outputs: [
-          ["techreborn:silver_nugget", 0.12],
-          ["techreborn:raw_silver", 0.02],
+          Item.of("techreborn:silver_nugget").withChance(0.12),
+          Item.of("techreborn:raw_silver").withChance(0.02),
         ],
       },
       {
         input: "minecraft:red_sand",
-        outputs: [
-          ["create:zinc_nugget", 0.33],
-          ["minecraft:dead_bush", 0.12],
-        ],
+        outputs: [Item.of("create:zinc_nugget").withChance(0.33), Item.of("minecraft:dead_bush").withChance(0.12)],
       },
       {
         input: "ad_astra:moon_sand",
-        outputs: [
-          ["ad_astra:desh_nugget", 0.12],
-          ["ad_astra:cheese", 0.04],
-        ],
+        outputs: [Item.of("ad_astra:desh_nugget").withChance(0.12), Item.of("ad_astra:cheese").withChance(0.04)],
       },
       {
         input: "ad_astra:mars_sand",
-        outputs: [["techreborn:lead_nugget", 0.25]],
+        outputs: [Item.of("techreborn:lead_nugget").withChance(0.25)],
       },
       {
         // wash shulker box to remove the color
         input: "#c:shulker_boxes",
-        outputs: [["minecraft:shulker_box", 1]],
+        outputs: [Item.of("minecraft:shulker_box")],
       },
       {
         // soul soil without random ticks
         input: "farmersdelight:organic_compost",
-        outputs: [["farmersdelight:rich_soil", 1]],
+        outputs: [Item.of("farmersdelight:rich_soil")],
       },
       // ae2 cable washing made easy !!!
       {
         input: "#ae2:glass_cable",
-        outputs: [["ae2:fluix_glass_cable", 1]],
+        outputs: [Item.of("ae2:fluix_glass_cable")],
       },
       {
         input: "#ae2:covered_cable",
-        outputs: [["ae2:fluix_covered_cable", 1]],
+        outputs: [Item.of("ae2:fluix_covered_cable")],
       },
       {
         input: "#ae2:covered_dense_cable",
-        outputs: [["ae2:fluix_covered_dense_cable", 1]],
+        outputs: [Item.of("ae2:fluix_covered_dense_cable")],
       },
       {
         input: "#ae2:smart_cable",
-        outputs: [["ae2:fluix_smart_cable", 1]],
+        outputs: [Item.of("ae2:fluix_smart_cable")],
       },
       {
         input: "#ae2:smart_dense_cable",
-        outputs: [["ae2:fluix_smart_dense_cable", 1]],
+        outputs: [Item.of("ae2:fluix_smart_dense_cable")],
       },
       {
         input: "minecraft:cobblestone",
-        outputs: [["minecraft:mossy_cobblestone", 1]], //easy mossy cobble for moss
+        outputs: [Item.of("minecraft:mossy_cobblestone")], //easy mossy cobble for moss
       },
       {
         input: "minecraft:stone_bricks",
-        outputs: [["minecraft:mossy_stone_bricks", 1]],
+        outputs: [Item.of("minecraft:mossy_stone_bricks")],
       },
       {
         input: "techreborn:ashes_dust",
         outputs: [
-          ["minecraft:gold_nugget", 0.2],
-          ["create:zinc_nugget", 0.225],
-          ["create:copper_nugget", 0.3],
-          ["techreborn:tin_nugget", 0.25],
+          Item.of("minecraft:gold_nugget").withChance(0.2),
+          Item.of("create:zinc_nugget").withChance(0.225),
+          Item.of("create:copper_nugget").withChance(0.3),
+          Item.of("techreborn:tin_nugget").withChance(0.25),
         ],
       },
       {
         input: "createastral:orcane",
         outputs: ["createastral:orcane"],
       },
-    ].forEach((recipe) => {
-      let cleanoutputs = [];
-      recipe.outputs.forEach((output) => {
-        if (output[1] == 1) {
-          cleanoutputs.push(output[0]);
-        } else {
-          cleanoutputs.push(Item.of(output[0]).withChance(output[1]));
-        }
-      });
-      event.recipes.createSplashing(cleanoutputs, recipe.input);
+    ] as const;
+    washingRecipes.forEach((recipe) => {
+      event.recipes.createSplashing(recipe.outputs, recipe.input);
     });
   });
 }

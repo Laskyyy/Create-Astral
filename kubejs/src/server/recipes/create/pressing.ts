@@ -2,23 +2,64 @@ import { MATERIALS } from "constants";
 
 export function createPressingRecipes() {
   onEvent("recipes", (event) => {
-    // [Input string, Output string]
-    [
-      ["createastral:shimmer_marimo", "ae2:fluix_dust"],
-      ["createastral:moonset_marimo", Item.of("ae2:ender_dust").withChance(0.1)],
-      ["createastral:marimo", "minecraft:vine"],
-      ["minecraft:sea_pickle", "4x minecraft:glow_lichen"],
-      ["yttr:haemopal", "5x createastral:ultramatter"],
-      ["minecraft:lapis_block", "create:lapis_sheet"],
-      ["tconstruct:greenheart_log", "2x minecraft:green_dye"],
-      ["tconstruct:skyroot_log", "2x minecraft:blue_dye"],
-      ["createastral:pure_star_shard", "minecraft:nether_star"],
-      ["minecraft:cobblestone", "techreborn:andesite_dust"],
-      ["yttr:delicace", "createastral:ender_plating"],
-      ["createastral:gold_casted_rocket_fin", ["ad_astra:rocket_fin", "create:golden_sheet"]],
-      ["#minecraft:planks", "techreborn:wood_plate"],
-    ].forEach((recipe) => {
-      event.recipes.createPressing(recipe[1], recipe[0]);
+    interface PressingRecipe {
+      input: Internal.IngredientJS_;
+      output: Internal.IngredientJS_;
+    }
+
+    const pressingRecipes: PressingRecipe[] = [
+      {
+        input: "createastral:shimmer_marimo",
+        output: "ae2:fluix_dust",
+      },
+      { input: "createastral:moonset_marimo", output: Item.of("ae2:ender_dust").withChance(0.1) },
+      {
+        input: "createastral:marimo",
+        output: "minecraft:vine",
+      },
+      {
+        input: "minecraft:sea_pickle",
+        output: Item.of("minecraft:glow_lichen", 4),
+      },
+      {
+        input: "yttr:haemopal",
+        output: Item.of("createastral:ultramatter", 5),
+      },
+      {
+        input: "minecraft:lapis_block",
+        output: "create:lapis_sheet",
+      },
+      {
+        input: "tconstruct:greenheart_log",
+        output: Item.of("minecraft:green_dye", 2),
+      },
+      {
+        input: "tconstruct:skyroot_log",
+        output: Item.of("minecraft:blue_dye", 2),
+      },
+      {
+        input: "createastral:pure_star_shard",
+        output: "minecraft:nether_star",
+      },
+      {
+        input: "minecraft:cobblestone",
+        output: "techreborn:andesite_dust",
+      },
+      {
+        input: "yttr:delicace",
+        output: "createastral:ender_plating",
+      },
+      {
+        input: "createastral:gold_casted_rocket_fin",
+        output: ["ad_astra:rocket_fin", "create:golden_sheet"],
+      },
+      {
+        input: "#minecraft:planks",
+        output: "techreborn:wood_plate",
+      },
+    ] as const;
+    pressingRecipes.forEach((recipe) => {
+      event.recipes.createPressing(recipe.output, recipe.input);
     });
 
     MATERIALS.forEach((material) => {

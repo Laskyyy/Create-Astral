@@ -1,3 +1,5 @@
+import { BUCKET, INGOT, mB, NUGGET } from "fluid-constants";
+
 export function createSequencedAssemblyRecipes() {
   onEvent("recipes", (event) => {
     biomassSequence(event);
@@ -14,8 +16,8 @@ export function createSequencedAssemblyRecipes() {
 
     const inc_sturdy_sheet = "create:unprocessed_obsidian_sheet";
 
-    event.recipes
-      .createSequencedAssembly(Item.of("minecraft:powder_snow_bucket"), "minecraft:bucket", [
+    event.recipes.create
+      .sequenced_assembly([Item.of("minecraft:powder_snow_bucket")], "minecraft:bucket", [
         event.recipes.createDeploying("minecraft:bucket", ["minecraft:bucket", ["createastral:snowy_marimo"]]),
         event.recipes.createFilling("minecraft:bucket", [
           "minecraft:bucket",
@@ -25,9 +27,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:bucket")
       .loops(2);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("tconstruct:medium_ender_slime_crystal_bud"),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("tconstruct:medium_ender_slime_crystal_bud")],
         "tconstruct:small_ender_slime_crystal_bud",
         [
           event.recipes.createFilling("tconstruct:small_ender_slime_crystal_bud", [
@@ -39,9 +41,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("tconstruct:small_ender_slime_crystal_bud")
       .loops(3);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("tconstruct:large_ender_slime_crystal_bud"),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("tconstruct:large_ender_slime_crystal_bud")],
         "tconstruct:medium_ender_slime_crystal_bud",
         [
           event.recipes.createDeploying("tconstruct:medium_ender_slime_crystal_bud", [
@@ -57,9 +59,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("tconstruct:medium_ender_slime_crystal_bud")
       .loops(3);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("tconstruct:ender_slime_crystal_cluster"),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("tconstruct:ender_slime_crystal_cluster")],
         "tconstruct:large_ender_slime_crystal_bud",
         [
           event.recipes.createDeploying("tconstruct:large_ender_slime_crystal_bud", [
@@ -75,8 +77,8 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("tconstruct:large_ender_slime_crystal_bud")
       .loops(3);
 
-    event.recipes
-      .createSequencedAssembly(Item.of("cookingforblockheads:cow_jar"), "cookingforblockheads:milk_jar", [
+    event.recipes.create
+      .sequenced_assembly([Item.of("cookingforblockheads:cow_jar")], "cookingforblockheads:milk_jar", [
         event.recipes.createDeploying("cookingforblockheads:milk_jar", [
           "cookingforblockheads:milk_jar",
           ["minecraft:beef"],
@@ -93,8 +95,8 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("cookingforblockheads:milk_jar")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(Item.of("minecraft:sea_lantern"), "minecraft:prismarine", [
+    event.recipes.create
+      .sequenced_assembly([Item.of("minecraft:sea_lantern")], "minecraft:prismarine", [
         event.recipes.createDeploying("minecraft:prismarine", [
           "minecraft:prismarine",
           ["minecraft:prismarine_crystals"],
@@ -103,8 +105,8 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("chipped:sea_lantern_2")
       .loops(5);
 
-    event.recipes
-      .createSequencedAssembly(Item.of("yttr:lamp"), "minecraft:redstone_torch", [
+    event.recipes.create
+      .sequenced_assembly([Item.of("yttr:lamp")], "minecraft:redstone_torch", [
         event.recipes.createDeploying("minecraft:redstone_torch", [
           "minecraft:redstone_torch",
           ["minecraft:iron_bars"],
@@ -121,8 +123,8 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("chipped:redstone_lamp_1")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(Item.of("createastral:horse"), "minecraft:leather_horse_armor", [
+    event.recipes.create
+      .sequenced_assembly([Item.of("createastral:horse")], "minecraft:leather_horse_armor", [
         event.recipes.createDeploying("minecraft:leather_horse_armor", [
           "minecraft:leather_horse_armor",
           ["minecraft:apple"],
@@ -139,8 +141,8 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:leather_horse_armor")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(Item.of("create:track"), "#create:sleepers", [
+    event.recipes.create
+      .sequenced_assembly([Item.of("create:track")], "#create:sleepers", [
         event.recipes.createDeploying("create:incomplete_track", [
           "create:incomplete_track",
           ["#c:nuggets/iron", "#c:nuggets/tin", "#c:nuggets/zinc"],
@@ -154,8 +156,8 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("create:incomplete_track")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly([Item.of("createastral:living_mechanism").withChance(1)], "yttr:ultrapure_carbon", [
+    event.recipes.create
+      .sequenced_assembly([Item.of("createastral:living_mechanism").withChance(1)], "yttr:ultrapure_carbon", [
         event.recipes.createFilling("yttr:ultrapure_carbon", [
           "yttr:ultrapure_carbon",
           { fluid: "tconstruct:ender_slime", amount: INGOT },
@@ -174,12 +176,12 @@ export function createSequencedAssemblyRecipes() {
       ])
       .transitionalItem("yttr:ultrapure_carbon")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
+    event.recipes.create
+      .sequenced_assembly(
         [Item.of("astraladditions:orbital_navigation_ring").withChance(1)],
         "astraladditions:blazed_steel_ring",
         [
-          event.recipes.createFilling("createastral:blazed_steel_ring", [
+          event.recipes.createFilling("astraladditions:blazed_steel_ring", [
             "astraladditions:blazed_steel_ring",
             { fluid: "tconstruct:molten_steel", amount: NUGGET },
           ]),
@@ -195,8 +197,8 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("astraladditions:blazed_steel_ring")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly([Item.of("createastral:laskinium_pill").withChance(1)], "estrogen:estrogen_pill", [
+    event.recipes.create
+      .sequenced_assembly([Item.of("createastral:laskinium_pill").withChance(1)], "estrogen:estrogen_pill", [
         event.recipes.createFilling("estrogen:estrogen_pill", [
           "estrogen:estrogen_pill",
           { fluid: "kubejs:shimmer", amount: BUCKET },
@@ -211,8 +213,8 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("estrogen:estrogen_pill")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
+    event.recipes.create
+      .sequenced_assembly(
         [Item.of("create:sturdy_sheet").withChance(12), Item.of("minecraft:gravel").withChance(8)],
         "#c:dusts/obsidian",
         [
@@ -223,21 +225,21 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem(inc_sturdy_sheet)
       .loops(5);
 
-    event.recipes
-      .createSequencedAssembly(["2x create:sturdy_sheet"], "tconstruct:obsidian_pane", [
+    event.recipes.create
+      .sequenced_assembly([Item.of("create:sturdy_sheet", 2)], "tconstruct:obsidian_pane", [
         event.recipes.createDeploying(inc_sturdy_sheet, [inc_sturdy_sheet, "minecraft:magma_cream"]),
         event.recipes.createPressing(inc_sturdy_sheet, inc_sturdy_sheet),
         event.recipes.createFilling(inc_sturdy_sheet, [
           inc_sturdy_sheet,
-          { fluid: "minecraft:lava", amount: mB * 100 },
+          { fluid: "minecraft:lava", amount: 100 * mB },
         ]),
       ])
       .loops(2)
       .transitionalItem(inc_sturdy_sheet);
 
-    event.recipes
-      .createSequencedAssembly(["create:sturdy_sheet"], "create:powdered_obsidian", [
-        event.recipes.createFilling(inc_sturdy_sheet, [inc_sturdy_sheet, { fluid: "minecraft:lava", amount: mB * 50 }]),
+    event.recipes.create
+      .sequenced_assembly(["create:sturdy_sheet"], "create:powdered_obsidian", [
+        event.recipes.createFilling(inc_sturdy_sheet, [inc_sturdy_sheet, { fluid: "minecraft:lava", amount: 50 * mB }]),
         event.recipes.createPressing(inc_sturdy_sheet, inc_sturdy_sheet),
         event.recipes.createPressing(inc_sturdy_sheet, inc_sturdy_sheet),
       ])
@@ -279,8 +281,8 @@ export function createSequencedAssemblyRecipes() {
       loops: 6,
     });
 
-    event.recipes
-      .createSequencedAssembly(
+    event.recipes.create
+      .sequenced_assembly(
         [
           // output
           Item.of("astralfoods:shimmered_rabbit_stew").withChance(1), // begin
@@ -334,10 +336,10 @@ export function createSequencedAssemblyRecipes() {
       loops: 1,
     });
 
-    function biomassSequence(event) {
-      var transitional_c_plantball = "techreborn:plantball";
-      event.recipes
-        .createSequencedAssembly(
+    function biomassSequence(event: Internal.RecipeEventJS) {
+      const transitional_c_plantball = "techreborn:plantball";
+      event.recipes.create
+        .sequenced_assembly(
           [
             Item.of("techreborn:compressed_plantball").withChance(8),
             Item.of("minecraft:grass").withChance(1),
@@ -350,22 +352,18 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem(transitional_c_plantball)
         .loops(4);
 
-      var transitional_bio_pellet = "createaddition:biomass";
-      event.recipes
-        .createSequencedAssembly(
-          [Item.of("4x createaddition:biomass_pellet").withChance(1)],
-          "createaddition:biomass",
-          [
-            event.recipes.createCutting(transitional_bio_pellet, transitional_bio_pellet),
-            event.recipes.createCutting(transitional_bio_pellet, transitional_bio_pellet),
-            event.recipes.createPressing(transitional_bio_pellet, transitional_bio_pellet),
-          ]
-        )
+      const transitional_bio_pellet = "createaddition:biomass";
+      event.recipes.create
+        .sequenced_assembly([Item.of("createaddition:biomass_pellet", 4).withChance(1)], "createaddition:biomass", [
+          event.recipes.createCutting(transitional_bio_pellet, transitional_bio_pellet),
+          event.recipes.createCutting(transitional_bio_pellet, transitional_bio_pellet),
+          event.recipes.createPressing(transitional_bio_pellet, transitional_bio_pellet),
+        ])
         .transitionalItem(transitional_bio_pellet)
         .loops(1);
 
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             Item.of("techreborn:compressed_plantball").withChance(8),
             Item.of("minecraft:grass").withChance(1),
@@ -378,24 +376,20 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem(transitional_c_plantball)
         .loops(4);
 
-      event.recipes
-        .createSequencedAssembly(
-          [Item.of("4x createaddition:biomass_pellet").withChance(1)],
-          "createaddition:biomass",
-          [
-            event.recipes.createCutting(transitional_bio_pellet, transitional_bio_pellet),
-            event.recipes.createCutting(transitional_bio_pellet, transitional_bio_pellet),
-            event.recipes.createPressing(transitional_bio_pellet, transitional_bio_pellet),
-          ]
-        )
+      event.recipes.create
+        .sequenced_assembly([Item.of("createaddition:biomass_pellet", 4).withChance(1)], "createaddition:biomass", [
+          event.recipes.createCutting(transitional_bio_pellet, transitional_bio_pellet),
+          event.recipes.createCutting(transitional_bio_pellet, transitional_bio_pellet),
+          event.recipes.createPressing(transitional_bio_pellet, transitional_bio_pellet),
+        ])
         .transitionalItem(transitional_bio_pellet)
         .loops(1);
     }
 
-    function circuitSequence(event) {
-      let incomplete_transitional_circuit = "createastral:incomplete_transitional_electronic_circuit";
-      event.recipes
-        .createSequencedAssembly(
+    function circuitSequence(event: Internal.RecipeEventJS) {
+      const incomplete_transitional_circuit = "createastral:incomplete_transitional_electronic_circuit";
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "createastral:incomplete_electronic_circuit", // output
@@ -412,8 +406,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem(incomplete_transitional_circuit)
         .loops(32);
 
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "techreborn:electronic_circuit", // output
@@ -434,8 +428,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("createastral:incomplete_electronic_circuit")
         .loops(1);
 
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "astraladditions:fragile_item_3", // output
@@ -469,8 +463,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("ad_astra:calorite_engine")
         .loops(5);
 
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "createastral:mercurian_stone", // output
@@ -500,8 +494,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("ad_astra:mercury_stone")
         .loops(5);
 
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "createastral:aurorite_block", // output
@@ -521,8 +515,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("ad_astra:polished_permafrost")
         .loops(1);
 
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "estrogen:estrogen_patches", // output
@@ -544,8 +538,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("ad_astra:polished_permafrost")
         .loops(1);
 
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "astraladditions:fragile_item", // output
@@ -572,8 +566,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("createastral:navigation_mechanism")
         .loops(4);
 
-      event.recipes
-        .createSequencedAssembly(["minecraft:dragon_breath"], "minecraft:glass_bottle", [
+      event.recipes.create
+        .sequenced_assembly(["minecraft:dragon_breath"], "minecraft:glass_bottle", [
           event.recipes.createFilling("minecraft:glass_bottle", [
             "minecraft:glass_bottle",
             { fluid: "tconstruct:ender_slime", amount: BUCKET },
@@ -583,8 +577,8 @@ export function createSequencedAssemblyRecipes() {
         .loops(1)
         .transitionalItem("minecraft:glass_bottle");
 
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "create:brass_casing", // output
@@ -604,8 +598,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("createastral:incomplete_brass_casing")
         .loops(3);
 
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "techreborn:advanced_machine_frame", // output
@@ -630,8 +624,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("createastral:incomplete_advanced_machine_frame")
         .loops(1);
 
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "techreborn:industrial_machine_frame", // output
@@ -656,9 +650,9 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("createastral:incomplete_industrial_machine_frame")
         .loops(1);
 
-      let transitional_lapis_sheet = "createastral:transitional_lapis_sheet";
-      event.recipes
-        .createSequencedAssembly(["create:integrated_circuit"], "create:lapis_sheet", [
+      const transitional_lapis_sheet = "createastral:transitional_lapis_sheet";
+      event.recipes.create
+        .sequenced_assembly(["create:integrated_circuit"], "create:lapis_sheet", [
           event.recipes.createFilling(transitional_lapis_sheet, [
             transitional_lapis_sheet,
             { fluid: "tconstruct:molten_silver", amount: 3375 },
@@ -675,8 +669,8 @@ export function createSequencedAssemblyRecipes() {
         ])
         .transitionalItem(transitional_lapis_sheet);
 
-      event.recipes
-        .createSequencedAssembly(["6x create:belt_connector"], "minecraft:dried_kelp", [
+      event.recipes.create
+        .sequenced_assembly([Item.of("create:belt_connector", 6)], "minecraft:dried_kelp", [
           event.recipes.createDeploying("minecraft:dried_kelp", ["minecraft:dried_kelp", "techreborn:rubber"]),
           event.recipes.createPressing("minecraft:dried_kelp", "minecraft:dried_kelp"),
           event.recipes.createDeploying("minecraft:dried_kelp", ["minecraft:dried_kelp", "minecraft:dried_kelp"]),
@@ -685,8 +679,8 @@ export function createSequencedAssemblyRecipes() {
         .loops(3)
         .transitionalItem("minecraft:dried_kelp");
 
-      event.recipes
-        .createSequencedAssembly(["6x create:display_board"], "create:electron_tube", [
+      event.recipes.create
+        .sequenced_assembly([Item.of("create:display_board", 6)], "create:electron_tube", [
           event.recipes.createDeploying("create:electron_tube", ["create:electron_tube", "create:belt_connector"]),
           event.recipes.createDeploying("create:electron_tube", ["create:electron_tube", "create:cogwheel"]),
           event.recipes.createDeploying("create:electron_tube", ["create:electron_tube", "#c:dyes"]),
@@ -694,8 +688,8 @@ export function createSequencedAssemblyRecipes() {
         .loops(2)
         .transitionalItem("create:electron_tube");
 
-      event.recipes
-        .createSequencedAssembly(["ad_astra:calorite_engine"], "ad_astra:ostrum_engine", [
+      event.recipes.create
+        .sequenced_assembly(["ad_astra:calorite_engine"], "ad_astra:ostrum_engine", [
           event.recipes.createFilling("ad_astra:ostrum_engine", [
             "ad_astra:ostrum_engine",
             { fluid: "kubejs:molten_yttrium", amount: BUCKET },
@@ -717,8 +711,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("ad_astra:ostrum_engine");
 
       const inc_calc = "createastral:incomplete_calculation_processor";
-      event.recipes
-        .createSequencedAssembly(["ae2:calculation_processor"], "ae2:printed_silicon", [
+      event.recipes.create
+        .sequenced_assembly(["ae2:calculation_processor"], "ae2:printed_silicon", [
           event.recipes.createDeploying(inc_calc, [inc_calc, "ae2:printed_calculation_processor"]),
           event.recipes.createDeploying(inc_calc, [inc_calc, "ae2:fluix_dust"]),
 
@@ -729,8 +723,8 @@ export function createSequencedAssemblyRecipes() {
         .loops(1);
 
       const inc_eng = "createastral:incomplete_engineering_processor";
-      event.recipes
-        .createSequencedAssembly(["ae2:engineering_processor"], "ae2:printed_silicon", [
+      event.recipes.create
+        .sequenced_assembly(["ae2:engineering_processor"], "ae2:printed_silicon", [
           event.recipes.createDeploying(inc_eng, [inc_eng, "ae2:printed_engineering_processor"]),
           event.recipes.createDeploying(inc_eng, [inc_eng, "ae2:fluix_dust"]),
 
@@ -741,8 +735,8 @@ export function createSequencedAssemblyRecipes() {
         .loops(1);
 
       const inc_log = "createastral:incomplete_logic_processor";
-      event.recipes
-        .createSequencedAssembly(["ae2:logic_processor"], "ae2:printed_silicon", [
+      event.recipes.create
+        .sequenced_assembly(["ae2:logic_processor"], "ae2:printed_silicon", [
           event.recipes.createDeploying(inc_log, [inc_log, "ae2:printed_logic_processor"]),
           event.recipes.createDeploying(inc_log, [inc_log, "ae2:fluix_dust"]),
 
@@ -752,8 +746,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem(inc_log)
         .loops(1);
 
-      event.recipes
-        .createSequencedAssembly(["techreborn:industrial_circuit"], "techreborn:electronic_circuit", [
+      event.recipes.create
+        .sequenced_assembly(["techreborn:industrial_circuit"], "techreborn:electronic_circuit", [
           event.recipes.createFilling("techreborn:electronic_circuit", [
             "techreborn:electronic_circuit",
             { fluid: "techreborn:lithium", amount: 4500 },
@@ -776,8 +770,8 @@ export function createSequencedAssemblyRecipes() {
         .loops(9);
 
       const inc_starshard = "createastral:incomplete_pure_star_shard";
-      event.recipes
-        .createSequencedAssembly(["createastral:pure_star_shard"], "createastral:star_shard", [
+      event.recipes.create
+        .sequenced_assembly(["createastral:pure_star_shard"], "createastral:star_shard", [
           event.recipes.createFilling(inc_starshard, [
             inc_starshard,
             { fluid: "kubejs:molten_yttrium", amount: INGOT / 2 },
@@ -790,10 +784,10 @@ export function createSequencedAssemblyRecipes() {
         .loops(3);
     }
 
-    function casingSequence(event) {
+    function casingSequence(event: Internal.RecipeEventJS) {
       const inc_casing = "createastral:incomplete_copper_casing";
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "create:copper_casing", // output
@@ -809,8 +803,8 @@ export function createSequencedAssemblyRecipes() {
         .loops(3);
 
       const inc_mf = "createastral:incomplete_basic_machine_frame";
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "techreborn:basic_machine_frame", // output
@@ -827,30 +821,31 @@ export function createSequencedAssemblyRecipes() {
         .loops(4);
     }
 
-    function diamondSequence(event) {
+    function diamondSequence(event: Internal.RecipeEventJS) {
       // Item type , loop amount
-      [
-        ["helmet", 4],
-        ["chestplate", 8],
-        ["leggings", 6],
-        ["boots", 5],
-        ["pickaxe", 2],
-        ["axe", 2],
-        ["shovel", 1],
-        ["hoe", 1],
-        ["sword", 2],
-      ].forEach((item) => {
-        event.recipes
-          .createSequencedAssembly(
+      const items = [
+        { item: "helmet", loops: 4 },
+        { item: "chestplate", loops: 8 },
+        { item: "leggings", loops: 6 },
+        { item: "boots", loops: 5 },
+        { item: "pickaxe", loops: 2 },
+        { item: "axe", loops: 2 },
+        { item: "shovel", loops: 1 },
+        { item: "hoe", loops: 1 },
+        { item: "sword", loops: 2 },
+      ] as const;
+      items.forEach((item) => {
+        event.recipes.create
+          .sequenced_assembly(
             [
               // begin
-              "minecraft:diamond_" + item[0], // output
+              `minecraft:diamond_${item.item}`, // output
             ],
-            Item.of("createastral:brass_" + item[0]).ignoreNBT(),
+            Item.of(`createastral:brass_${item.item}`).ignoreNBT(),
             [
               // input
-              event.recipes.createFilling("createastral:brass_" + item[0], [
-                "createastral:brass_" + item[0],
+              event.recipes.createFilling(`createastral:brass_${item.item}`, [
+                `createastral:brass_${item.item}`,
                 {
                   fluid: "tconstruct:molten_diamond",
                   amount: 250 * mB,
@@ -858,14 +853,14 @@ export function createSequencedAssemblyRecipes() {
               ]),
             ]
           )
-          .transitionalItem("createastral:brass_" + item[0])
-          .loops(item[1]);
+          .transitionalItem(`createastral:brass_${item.item}`)
+          .loops(item.loops);
       });
     }
 
-    function piglinSequence(event) {
-      event.recipes
-        .createSequencedAssembly(
+    function piglinSequence(event: Internal.RecipeEventJS) {
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "passivepiglins:piglin_coin", // output
@@ -885,8 +880,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("createastral:coin")
         .loops(1);
 
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "passivepiglins:piglin_fortune", // output
@@ -913,8 +908,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("createastral:filled_golden_bowl")
         .loops(1);
 
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "passivepiglins:piglin_totem", // output
@@ -936,9 +931,9 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("minecraft:gold_ingot")
         .loops(1);
     }
-    function wineSequence(event) {
-      event.recipes
-        .createSequencedAssembly(
+    function wineSequence(event: Internal.RecipeEventJS) {
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "vinery:chenet_wine", // output
@@ -963,8 +958,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("kubejs:incomplete_chenet_wine")
         .loops(1);
 
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "vinery:king_danis_wine", // output
@@ -989,8 +984,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("kubejs:incomplete_king_danis_wine")
         .loops(1);
 
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "vinery:noir_wine", // output
@@ -1015,8 +1010,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("kubejs:incomplete_noir_wine")
         .loops(1);
 
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "vinery:bolvar_wine", // output
@@ -1041,8 +1036,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("kubejs:incomplete_bolvar_wine")
         .loops(1);
 
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "vinery:cherry_wine", // output
@@ -1067,8 +1062,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("kubejs:incomplete_cherry_wine")
         .loops(1);
 
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "vinery:jellie_wine", // output
@@ -1093,8 +1088,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("kubejs:incomplete_jellie_wine")
         .loops(1);
 
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "vinery:clark_wine", // output
@@ -1119,8 +1114,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("kubejs:incomplete_clark_wine")
         .loops(1);
 
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "vinery:mellohi_wine", // output
@@ -1145,8 +1140,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("kubejs:incomplete_mellohi_wine")
         .loops(1);
 
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "vinery:solaris_wine", // output
@@ -1171,8 +1166,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("kubejs:incomplete_solaris_wine")
         .loops(1);
 
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "vinery:aegis_wine", // output
@@ -1197,8 +1192,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("kubejs:incomplete_aegis_wine")
         .loops(1);
 
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "vinery:apple_wine", // output
@@ -1223,8 +1218,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("kubejs:incomplete_apple_wine")
         .loops(1);
 
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "vinery:kelp_cider", // output
@@ -1249,8 +1244,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("kubejs:incomplete_kelp_cider")
         .loops(1);
 
-      event.recipes
-        .createSequencedAssembly(
+      event.recipes.create
+        .sequenced_assembly(
           [
             // begin
             "vinery:apple_cider", // output
@@ -1275,8 +1270,8 @@ export function createSequencedAssemblyRecipes() {
         .transitionalItem("kubejs:incomplete_apple_cider")
         .loops(1);
     }
-    event.recipes
-      .createSequencedAssembly(
+    event.recipes.create
+      .sequenced_assembly(
         [
           // begin
           "immersive_aircraft:engine", // output
@@ -1301,15 +1296,15 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("create:incomplete_precision_mechanism")
       .loops(2);
 
-    event.recipes
-      .createSequencedAssembly(["automobility:launch_gel"], "tconstruct:slimesteel_nugget", [
+    event.recipes.create
+      .sequenced_assembly(["automobility:launch_gel"], "tconstruct:slimesteel_nugget", [
         event.recipes.createPressing("tconstruct:slimesteel_nugget", "tconstruct:slimesteel_nugget"),
       ])
       .transitionalItem("create:tree_fertilizer")
       .loops(125);
 
-    event.recipes
-      .createSequencedAssembly(["createastral:navigation_mechanism"], "phonos:redstone_chip", [
+    event.recipes.create
+      .sequenced_assembly(["createastral:navigation_mechanism"], "phonos:redstone_chip", [
         event.recipes.createFilling("phonos:redstone_chip", [
           "phonos:redstone_chip",
           {
@@ -1323,8 +1318,8 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("createastral:incomplete_navigation_mechanism")
       .loops(30);
 
-    event.recipes
-      .createSequencedAssembly(
+    event.recipes.create
+      .sequenced_assembly(
         [
           // begin
           "minecraft:ender_eye", // output
@@ -1349,8 +1344,8 @@ export function createSequencedAssemblyRecipes() {
       .loops(3);
 
     const inc_redstone_chip = "createastral:incomplete_redstone_chip";
-    event.recipes
-      .createSequencedAssembly(
+    event.recipes.create
+      .sequenced_assembly(
         [
           // begin
           "phonos:redstone_chip", // output
@@ -1369,8 +1364,8 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem(inc_redstone_chip)
       .loops(12);
 
-    event.recipes
-      .createSequencedAssembly(
+    event.recipes.create
+      .sequenced_assembly(
         [
           // begin
           "createastral:shimmer_amplifier", // output
@@ -1399,8 +1394,8 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("createastral:incomplete_electronic_circuit")
       .loops(6);
 
-    event.recipes
-      .createSequencedAssembly(
+    event.recipes.create
+      .sequenced_assembly(
         [
           // begin
           "minecraft:ink_sac", // output
@@ -1413,8 +1408,8 @@ export function createSequencedAssemblyRecipes() {
 
     const inc_dash_panel = "createastral:incomplete_dash_panel";
     //Dash panel
-    event.recipes
-      .createSequencedAssembly(["automobility:dash_panel"], "create:iron_sheet", [
+    event.recipes.create
+      .sequenced_assembly(["automobility:dash_panel"], "create:iron_sheet", [
         event.recipes
           .createFilling(inc_dash_panel, [inc_dash_panel, { fluid: "kubejs:shimmer", amount: INGOT }])
           .processingTime(75), //fill
@@ -1424,8 +1419,8 @@ export function createSequencedAssemblyRecipes() {
       .loops(3);
 
     const inc_refining_agent = "createastral:incomplete_refining_agent";
-    event.recipes
-      .createSequencedAssembly(["createastral:refining_agent"], "ae2:fluix_dust", [
+    event.recipes.create
+      .sequenced_assembly(["createastral:refining_agent"], "ae2:fluix_dust", [
         event.recipes.createFilling(inc_refining_agent, [
           inc_refining_agent,
           { fluid: "techreborn:nitrogen", amount: 9000 },
@@ -1441,8 +1436,8 @@ export function createSequencedAssemblyRecipes() {
 
     // Green's bloodyfile.js for meat stuff
 
-    event.recipes // Dough to MEAT
-      .createSequencedAssembly(
+    event.recipes.create // Dough to MEAT
+      .sequenced_assembly(
         ["createastral:seitan"],
         ["create:dough"],
         [
@@ -1454,8 +1449,8 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("create:dough")
       .loops(2);
 
-    event.recipes
-      .createSequencedAssembly(
+    event.recipes.create
+      .sequenced_assembly(
         ["minecraft:porkchop"],
         ["createastral:seitan"],
         [
@@ -1473,8 +1468,8 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("createastral:protopork")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
+    event.recipes.create
+      .sequenced_assembly(
         ["minecraft:mutton"],
         ["createastral:seitan"],
         [
@@ -1490,8 +1485,8 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("createastral:protomutton")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
+    event.recipes.create
+      .sequenced_assembly(
         ["minecraft:beef"],
         ["createastral:seitan"],
         [
@@ -1507,8 +1502,8 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("createastral:protobeef")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
+    event.recipes.create
+      .sequenced_assembly(
         ["minecraft:chicken"],
         ["createastral:seitan"],
         [
@@ -1527,8 +1522,8 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("createastral:protochicken")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
+    event.recipes.create
+      .sequenced_assembly(
         ["minecraft:rabbit"],
         ["createastral:seitan"],
         [
@@ -1544,8 +1539,8 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("createastral:protorabbit")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
+    event.recipes.create
+      .sequenced_assembly(
         ["minecraft:egg"],
         ["createastral:seitan"],
         [
@@ -1565,8 +1560,8 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("createastral:seitan")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
+    event.recipes.create
+      .sequenced_assembly(
         //true DIY Ham
         ["farmersdelight:ham"],
         ["minecraft:porkchop"],
@@ -1585,10 +1580,10 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("createastral:seitan")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
+    event.recipes.create
+      .sequenced_assembly(
         // Inksack for inky fun
-        ["2x minecraft:ink_sac"],
+        [Item.of("minecraft:ink_sac", 2)],
         ["createastral:seitan"],
         [
           event.recipes.createDeploying("createastral:seitan", ["createastral:seitan", "minecraft:black_dye"]),
@@ -1611,8 +1606,8 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("createastral:seitan")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
+    event.recipes.create
+      .sequenced_assembly(
         // If you need some head, drill some bone
         ["tconstruct:blaze_head"],
         ["minecraft:skeleton_skull"],
@@ -1638,8 +1633,8 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("createastral:incomplete_blaze_head")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
+    event.recipes.create
+      .sequenced_assembly(
         ["minecraft:small_amethyst_bud"],
         ["minecraft:amethyst_shard"],
         [
@@ -1664,8 +1659,8 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:amethyst_shard")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
+    event.recipes.create
+      .sequenced_assembly(
         ["minecraft:medium_amethyst_bud"],
         ["minecraft:small_amethyst_bud"],
         [
@@ -1690,8 +1685,8 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:small_amethyst_bud")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
+    event.recipes.create
+      .sequenced_assembly(
         ["minecraft:large_amethyst_bud"],
         ["minecraft:medium_amethyst_bud"],
         [
@@ -1716,8 +1711,8 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:medium_amethyst_bud")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
+    event.recipes.create
+      .sequenced_assembly(
         ["minecraft:amethyst_cluster"],
         ["minecraft:large_amethyst_bud"],
         [
@@ -1743,8 +1738,8 @@ export function createSequencedAssemblyRecipes() {
       .loops(1);
 
     enchantBooks(event);
-    event.recipes
-      .createSequencedAssembly(
+    event.recipes.create
+      .sequenced_assembly(
         [
           // begin
           "createastral:ancient_stone", // output
@@ -1764,8 +1759,8 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("createastral:martian_clump")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
+    event.recipes.create
+      .sequenced_assembly(
         [
           // output
           Item.of("astralfoods:cod_n_blaze").withChance(1), // begin
@@ -1782,8 +1777,8 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("astralfoods:blaze_fries_and_cod")
       .loops(3);
 
-    event.recipes
-      .createSequencedAssembly(Item.of("ad_astra:moon_stone"), "minecraft:stone", [
+    event.recipes.create
+      .sequenced_assembly([Item.of("ad_astra:moon_stone")], "minecraft:stone", [
         event.recipes.createPressing("minecraft:stone", "minecraft:stone"),
         event.recipes.createFilling("minecraft:stone", [
           "minecraft:stone",
@@ -1794,12 +1789,12 @@ export function createSequencedAssemblyRecipes() {
       .loops(4);
   });
 
-  function enchantBooks(event) {
+  function enchantBooks(event: Internal.RecipeEventJS) {
     //! enchantment.js
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -1817,9 +1812,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -1837,9 +1832,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -1857,9 +1852,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:mending",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:mending",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -1877,9 +1872,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -1897,9 +1892,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -1917,9 +1912,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -1937,9 +1932,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:thorns",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:thorns",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -1957,9 +1952,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -1977,9 +1972,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -1997,9 +1992,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2017,9 +2012,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:silk_touch",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:silk_touch",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2037,9 +2032,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:respiration",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:respiration",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2057,9 +2052,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:lever", "minecraft:lever"]),
@@ -2074,9 +2069,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:punch",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:punch",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["create:brass_hand", "create:brass_hand"]),
@@ -2091,9 +2086,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:gunpowder", "minecraft:gunpowder"]),
@@ -2108,9 +2103,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:piston", "minecraft:piston"]),
@@ -2125,9 +2120,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:multishot",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:multishot",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:crossbow", "minecraft:crossbow"]),
@@ -2142,9 +2137,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:looting",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:looting",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2162,9 +2157,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:knockback",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:knockback",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:tnt", "minecraft:tnt"]),
@@ -2179,9 +2174,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:infinity",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:infinity",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2203,9 +2198,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:frost_walker",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:frost_walker",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:blue_ice", "minecraft:blue_ice"]),
@@ -2220,9 +2215,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fortune",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fortune",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2240,9 +2235,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:flame",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:flame",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2260,9 +2255,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_aspect",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_aspect",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:blaze_rod", "minecraft:blaze_rod"]),
@@ -2277,9 +2272,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:white_bed", "minecraft:white_bed"]),
@@ -2294,9 +2289,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2314,9 +2309,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:depth_strider",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:depth_strider",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2334,9 +2329,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:aqua_affinity",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:aqua_affinity",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2354,9 +2349,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:spider_eye", "minecraft:spider_eye"]),
@@ -2371,9 +2366,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:lure",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:lure",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2391,9 +2386,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2411,9 +2406,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:sea_lantern", "minecraft:sea_lantern"]),
@@ -2428,9 +2423,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:riptide",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:riptide",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2448,9 +2443,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2468,8 +2463,8 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes.createSequencedAssembly(
-      Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:channeling",lvl:1s}]}'),
+    event.recipes.create.sequenced_assembly(
+      [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:channeling",lvl:1s}]}')],
       ["minecraft:book"],
       [
         event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2485,9 +2480,9 @@ export function createSequencedAssemblyRecipes() {
       ]
     );
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2505,9 +2500,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"create:capacity",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"create:capacity",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2525,9 +2520,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"create:potato_recovery",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"create:potato_recovery",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2545,9 +2540,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("xpcrystals:xp_boost_potion"),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("xpcrystals:xp_boost_potion")],
         ["minecraft:glass_bottle"],
         [
           event.recipes.createFilling("minecraft:glass_bottle", [
@@ -2578,9 +2573,9 @@ export function createSequencedAssemblyRecipes() {
 
     //! dungeonsenchants.js
 
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:accelerate",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:accelerate",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:rabbit_foot", "minecraft:rabbit_foot"]),
@@ -2594,9 +2589,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:ambush",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:ambush",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:leather", "minecraft:leather"]),
@@ -2610,8 +2605,8 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes.createSequencedAssembly(
-      Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:anima_conduit",lvl:1s}]}'),
+    event.recipes.create.sequenced_assembly(
+      [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:anima_conduit",lvl:1s}]}')],
       ["minecraft:book"],
       [
         event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2626,9 +2621,9 @@ export function createSequencedAssemblyRecipes() {
         event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
       ]
     );
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:bonus_shot",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:bonus_shot",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2645,9 +2640,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:burst_bowstring",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:burst_bowstring",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["doodads:slimey_shoes", "doodads:slimey_shoes"]),
@@ -2661,9 +2656,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:chain_reaction",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:chain_reaction",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2680,9 +2675,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:chains",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:chains",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:chain", "minecraft:chain"]),
@@ -2696,9 +2691,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:charge",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:charge",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["create:sturdy_sheet", "create:sturdy_sheet"]),
@@ -2712,9 +2707,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:cobweb_shot",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:cobweb_shot",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:cobweb", "minecraft:cobweb"]),
@@ -2728,9 +2723,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:committed",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:committed",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2747,9 +2742,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:critical_hit",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:critical_hit",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:nether_star", "minecraft:nether_star"]),
@@ -2763,9 +2758,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:dipping_poison",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:dipping_poison",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:pufferfish", "minecraft:pufferfish"]),
@@ -2779,9 +2774,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:dynamo",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:dynamo",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2798,9 +2793,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:echo",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:echo",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:jukebox", "minecraft:jukebox"]),
@@ -2814,9 +2809,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:enigma_resonator",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:enigma_resonator",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2833,9 +2828,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:exploding",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:exploding",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2852,9 +2847,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:freezing",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:freezing",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["ad_astra:ice_shard", "ad_astra:ice_shard"]),
@@ -2868,9 +2863,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:fuse_shot",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:fuse_shot",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2887,9 +2882,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:gravity",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:gravity",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2906,9 +2901,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:guarding_strike",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:guarding_strike",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:shield", "minecraft:shield"]),
@@ -2922,9 +2917,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:fuse_shot",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:fuse_shot",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2941,9 +2936,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:illagers_bane",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:illagers_bane",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2960,9 +2955,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:jungle_poison",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:jungle_poison",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2979,9 +2974,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:leeching",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:leeching",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -2998,9 +2993,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:levitation_shot",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:levitation_shot",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -3017,9 +3012,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:overcharge",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+      [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:overcharge",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -3036,9 +3031,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:leeching",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:leeching",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -3055,9 +3050,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:pain_cycle",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:pain_cycle",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["tconstruct:bloodbone", "tconstruct:bloodbone"]),
@@ -3071,9 +3066,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:phantoms_mark",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:phantoms_mark",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:glowstone", "minecraft:glowstone"]),
@@ -3087,9 +3082,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:poison_cloud",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:poison_cloud",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -3106,9 +3101,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:prospector",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:prospector",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -3125,9 +3120,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:radiance",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:radiance",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -3144,9 +3139,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:rampaging",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:rampaging",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -3163,9 +3158,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:refreshment",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:refreshment",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -3182,9 +3177,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:ricochet",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:ricochet",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -3201,9 +3196,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:replenish",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:replenish",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -3220,9 +3215,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:rushdown",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:rushdown",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -3239,9 +3234,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:shadow_barb",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:shadow_barb",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -3258,9 +3253,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:shared_pain",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:shared_pain",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["doodads:cactus_ring", "doodads:cactus_ring"]),
@@ -3274,9 +3269,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:shadow_shot",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:shadow_shot",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -3293,9 +3288,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:shockwave",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:shockwave",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -3312,9 +3307,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:smiting",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:smiting",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["yigd:grave", "yigd:grave"]),
@@ -3328,9 +3323,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:soul_devourer",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:soul_devourer",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -3347,9 +3342,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:soul_siphon",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:soul_siphon",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -3366,9 +3361,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:stunning",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:stunning",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["drinkbeer:beer_mug", "drinkbeer:beer_mug"]),
@@ -3382,9 +3377,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:swirling",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:swirling",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -3401,9 +3396,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:tempo_theft",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:tempo_theft",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -3420,9 +3415,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:thundering",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:thundering",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -3439,9 +3434,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:replenish",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:replenish",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -3458,9 +3453,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:weakening",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:weakening",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["minecraft:wither_rose", "minecraft:wither_rose"]),
@@ -3474,9 +3469,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:wild_rage",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:wild_rage",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -3494,9 +3489,9 @@ export function createSequencedAssemblyRecipes() {
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
     //void stuffs
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:void_strike",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:void_strike",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", [
@@ -3513,9 +3508,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:void_shot",lvl:1s}]}'),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:void_shot",lvl:1s}]}')],
         ["minecraft:book"],
         [
           event.recipes.createDeploying("minecraft:enchanted_book", ["create:shadow_steel", "create:shadow_steel"]),
@@ -3529,9 +3524,9 @@ export function createSequencedAssemblyRecipes() {
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
-    event.recipes
-      .createSequencedAssembly(
-        Item.of("xpcrystals:xp_boost_potion"),
+    event.recipes.create
+      .sequenced_assembly(
+        [Item.of("xpcrystals:xp_boost_potion")],
         ["minecraft:glass_bottle"],
         [
           event.recipes.createFilling("minecraft:glass_bottle", [

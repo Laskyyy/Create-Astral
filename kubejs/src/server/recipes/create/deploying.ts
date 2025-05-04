@@ -2,9 +2,9 @@ export function createDeployingRecipes() {
   onEvent("recipes", (event) => {
 
     interface DeployingRecipe {
-      output: Special.Item
-      appliedTo: Special.Item,
-      deployerInput: Special.Item,
+      output: Internal.ItemStackJS_
+      appliedTo: Internal.ItemStackJS_,
+      deployerInput: Internal.ItemStackJS_,
     }
 
     const deployingRecipes: DeployingRecipe[] = [

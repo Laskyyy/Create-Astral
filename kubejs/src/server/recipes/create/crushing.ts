@@ -6,7 +6,7 @@ export function createCrushingRecipes() {
 
     interface CrushingRecipe {
       input: Internal.IngredientJS_;
-      outputs: Internal.IngredientJS_[];
+      outputs: Internal.IngredientJS_;
     }
     const crushingRecipes: CrushingRecipe[] = [
       {
@@ -459,7 +459,7 @@ export function createCrushingRecipes() {
         let multi_ore_output = [
           Item.of(crushed_ore, 9),
           Item.of(crushed_ore, 9).withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
-          Item.of(Item.of("create:experience_nugget", 9), 9).withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
+          Item.of("create:experience_nugget", 9).withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
         ];
 
         if (ore.extra) {
@@ -477,11 +477,10 @@ export function createCrushingRecipes() {
     const BLOCK_CHANCE = 0.12;
 
     // This map is how much you should get regularly from the ore (no bonuses)
-    // format is
 
     // ^ Wrong, this is a JS object, not a map.
 
-    type OreMapping = {
+    interface OreMapping {
       [Ore: string]: {
         name: Special.Item;
         count: number;

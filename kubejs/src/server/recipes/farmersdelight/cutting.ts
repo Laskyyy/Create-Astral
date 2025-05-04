@@ -1,6 +1,13 @@
 export function farmersDelightCuttingRecipes() {
   onEvent("recipes", (event) => {
-    [
+    interface FarmersDelightCuttingRecipe {
+      input: Special.Item;
+      tool: Special.ItemTag;
+      result: { item: Special.Item; count?: number }[];
+      sound?: Special.SoundEvent;
+    }
+
+    const farmersDelightCuttingRecipes: FarmersDelightCuttingRecipe[] = [
       {
         input: "techreborn:rubber_log",
         tool: "c:tools/axes",
@@ -43,7 +50,7 @@ export function farmersDelightCuttingRecipes() {
       },
       {
         input: "minecraft:gravel",
-        tool: "c:tools/shovels",
+        tool: "c:shovels",
         result: [{ item: "minecraft:flint" }],
       },
       {
@@ -56,7 +63,8 @@ export function farmersDelightCuttingRecipes() {
         tool: "c:tools/knives",
         result: [{ item: "astralfoods:blaze_rods", count: 2 }],
       },
-    ].forEach((recipe) => {
+    ];
+    farmersDelightCuttingRecipes.forEach((recipe) => {
       event.custom({
         type: "farmersdelight:cutting",
         ingredients: [{ item: recipe.input }],

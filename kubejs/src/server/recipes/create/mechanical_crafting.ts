@@ -1,9 +1,17 @@
 export function createMechanicalCraftingRecipes() {
   onEvent("recipes", (event) => {
-    // Output: String
-    // Pattern: Array of rows of inputs based on letters assigned
-    // Key: Object with letters assigned to input items, to be used in the shape
-    [
+    
+    interface MechanicalCraftingRecipe {
+      output: Internal.IngredientJS_,
+      /** Array of rows with inputs based on letters assigned. */
+      pattern: string[],
+      /** Object with letters assigned to input items, to be used in the shape. */
+      key: {
+        [key: string]: Internal.IngredientJS_
+      }
+    }
+
+    const mechanicalCraftingRecipes: MechanicalCraftingRecipe[] = [
       {
         output: "ad_astra:calorite_tank",
         pattern: [" C ", "COC", " C "],
@@ -548,7 +556,8 @@ export function createMechanicalCraftingRecipes() {
           C: "minecraft:prismarine_crystals",
         },
       },
-    ].forEach((recipe) => {
+    ]
+    mechanicalCraftingRecipes.forEach((recipe) => {
       event.recipes.create.mechanical_crafting(recipe.output, recipe.pattern, recipe.key);
     });
   });

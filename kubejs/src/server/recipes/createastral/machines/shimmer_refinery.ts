@@ -1,3 +1,5 @@
+import { BUCKET } from "fluid-constants";
+
 export function shimmerRefineryRecipes() {
   onEvent("recipes", (event) => {
     const shimmerRefineryStructure = [
@@ -6,7 +8,7 @@ export function shimmerRefineryRecipes() {
       ["dd dd", "dd dd", "  a  ", "dd dd", "dd dd"],
       ["ddadd", "ddbdd", "abbba", "ddbdd", "ddadd"],
       ["     ", "  a  ", " aca ", "  a  ", "     "],
-    ];
+    ] as const;
 
     /*
      * Aim of this script is to fix the blaze burner jank caused by fluid burners and superheated burners
@@ -26,16 +28,22 @@ export function shimmerRefineryRecipes() {
      *
      * All fields (burnersAllowed, time, itemInput, fluidInput, energy, and itemOutput) need to be filled to make the recipes work.
      * Any extra recipes can go outside the forEach loop.
-     *
-     * burnersAllowed: [array],
-     * time: integer,
-     * itemInput: ["item", count],
-     * fluidInput: ["fluid", amount],
-     * energy: integer,
-     * itemOutput: ["item", count]
      */
 
-    [
+    type Burners = "create:blaze_burner" | "createaddition:liquid_blaze_burner";
+    type HeatedNBT = "fuelLevel:1" | "isCreative:1b";
+    type SuperheatedNBT = "fuelLevel:2" | "isCreative:1b";
+    type Burner = Burners | `${Burners}{${HeatedNBT | SuperheatedNBT}}`;
+    interface ShimmerRefineryRecipe {
+      burnersAllowed: Burner[];
+      time: number;
+      itemInput: { item: Special.Item; count: number };
+      fluidInput: { fluid: Special.Fluid; amount: number };
+      energy: number;
+      itemOutput: { item: Special.Item; count: number };
+    }
+
+    const shimmerRefineryRecipes: ShimmerRefineryRecipe[] = [
       {
         burnersAllowed: [
           "create:blaze_burner{fuelLevel:2}",
@@ -44,12 +52,13 @@ export function shimmerRefineryRecipes() {
           "createaddition:liquid_blaze_burner{isCreative:1b}",
         ],
         time: 125,
-        fluidInput: ["kubejs:shimmer", BUCKET],
-        itemInput: ["createastral:refining_agent", 1],
+        fluidInput: { fluid: "kubejs:shimmer", amount: BUCKET },
+        itemInput: { item: "createastral:refining_agent", count: 1 },
         energy: 20000,
-        itemOutput: ["techreborn:uu_matter", 1],
+        itemOutput: { item: "techreborn:uu_matter", count: 1 },
       },
-    ].forEach((recipe) => {
+    ];
+    shimmerRefineryRecipes.forEach((recipe) => {
       event.custom({
         type: "custommachinery:custom_machine",
         machine: "createastral:shimmer_refinery",
@@ -78,15 +87,15 @@ export function shimmerRefineryRecipes() {
           },
           {
             type: "custommachinery:fluid",
-            fluid: recipe.fluidInput[0],
-            amount: recipe.fluidInput[1],
+            fluid: recipe.fluidInput.fluid,
+            amount: recipe.fluidInput.amount,
             mode: "input",
           },
           {
             type: "custommachinery:item",
             mode: "input",
-            item: recipe.itemInput[0],
-            amount: recipe.itemInput[1],
+            item: recipe.itemInput.item,
+            amount: recipe.itemInput.count,
           },
 
           {
@@ -96,8 +105,8 @@ export function shimmerRefineryRecipes() {
           },
           {
             type: "custommachinery:item",
-            item: recipe.itemOutput[0],
-            amount: recipe.itemOutput[1],
+            item: recipe.itemOutput.item,
+            amount: recipe.itemOutput.count,
             mode: "output",
           },
         ],

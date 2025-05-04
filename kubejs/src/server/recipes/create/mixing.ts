@@ -9,7 +9,15 @@ export function createMixingRecipes() {
     // Input: Array of items, may include fluid objects or item strings
     // Heat: "" = no heat, "heated", or "superheated"
     // Time: Mixing time in ticks
-    [
+
+    interface MixingRecipe {
+      output: Internal.IngredientJS_;
+      input: Internal.IngredientJS_;
+      heat?: "heated" | "superheated";
+      time?: number;
+    }
+
+    const mixingRecipes: MixingRecipe[] = [
       {
         output: [
           {
@@ -24,13 +32,11 @@ export function createMixingRecipes() {
           },
           "astraladditions:bulba_root",
         ],
-        heat: "",
         time: 105,
       },
       {
         output: ["create:tree_fertilizer"],
         input: ["#minecraft:saplings", "#c:coral_fans", "minecraft:bone_meal"],
-        heat: "",
         time: 180,
       },
       {
@@ -94,7 +100,6 @@ export function createMixingRecipes() {
             amount: 500 * mB,
           },
         ],
-        heat: "",
         time: 180,
       },
       {
@@ -107,7 +112,6 @@ export function createMixingRecipes() {
             amount: INGOT,
           },
         ],
-        heat: "",
         time: 180,
       },
       {
@@ -120,7 +124,6 @@ export function createMixingRecipes() {
             amount: 500 * mB,
           },
         ],
-        heat: "",
         time: 180,
       },
       {
@@ -133,7 +136,6 @@ export function createMixingRecipes() {
             amount: INGOT,
           },
         ],
-        heat: "",
         time: 180,
       },
       {
@@ -146,7 +148,6 @@ export function createMixingRecipes() {
             amount: 500 * mB,
           },
         ],
-        heat: "",
         time: 180,
       },
       {
@@ -159,7 +160,6 @@ export function createMixingRecipes() {
             amount: 500 * mB,
           },
         ],
-        heat: "",
         time: 180,
       },
       {
@@ -179,7 +179,6 @@ export function createMixingRecipes() {
             amount: BUCKET,
           },
         ],
-        heat: "",
         time: 60,
       },
       {
@@ -192,7 +191,6 @@ export function createMixingRecipes() {
             amount: 500 * mB,
           },
         ],
-        heat: "",
         time: 180,
       },
       {
@@ -210,7 +208,6 @@ export function createMixingRecipes() {
             amount: 500 * mB,
           },
         ],
-        heat: "",
         time: 60,
       },
       {
@@ -222,7 +219,6 @@ export function createMixingRecipes() {
           "cookingforblockheads:cow_jar",
         ],
         input: ["cookingforblockheads:cow_jar"],
-        heat: "",
         time: 60,
       },
       {
@@ -234,7 +230,6 @@ export function createMixingRecipes() {
           "createastral:horse",
         ],
         input: ["createastral:horse"],
-        heat: "",
         time: 60,
       },
       {
@@ -246,25 +241,21 @@ export function createMixingRecipes() {
       {
         output: "minecraft:feather",
         input: ["minecraft:stick", "minecraft:string"],
-        heat: "",
         time: 100,
       },
       {
         output: "minecraft:bone_meal",
         input: ["techreborn:calcite_dust", { fluid: "minecraft:water", amount: 100 * mB }],
-        heat: "",
         time: 100,
       },
       {
         output: Item.of("minecraft:soul_soil", 2),
         input: ["minecraft:dirt", "minecraft:soul_sand"],
-        heat: "",
         time: 100,
       },
       {
         output: "minecraft:small_amethyst_bud",
         input: ["techreborn:amethyst_dust", "ae2:certus_crystal_seed"],
-        heat: "",
         time: 200,
       },
       {
@@ -276,7 +267,6 @@ export function createMixingRecipes() {
             amount: 25 * mB,
           },
         ],
-        heat: "",
         time: 100,
       },
       {
@@ -295,7 +285,6 @@ export function createMixingRecipes() {
             amount: 25 * mB,
           },
         ],
-        heat: "",
         time: 100,
       },
       {
@@ -314,7 +303,6 @@ export function createMixingRecipes() {
             amount: 25 * mB,
           },
         ],
-        heat: "",
         time: 100,
       },
       {
@@ -326,7 +314,6 @@ export function createMixingRecipes() {
             amount: BUCKET * 0.5,
           },
         ],
-        heat: "",
         time: 100,
       },
       {
@@ -366,7 +353,6 @@ export function createMixingRecipes() {
             amount: 100 * mB,
           },
         ],
-        heat: "",
         time: 100,
       },
       {
@@ -380,7 +366,6 @@ export function createMixingRecipes() {
             amount: 100 * mB,
           },
         ],
-        heat: "",
         time: 100,
       },
       {
@@ -394,7 +379,6 @@ export function createMixingRecipes() {
             amount: 100 * mB,
           },
         ],
-        heat: "",
         time: 100,
       },
       {
@@ -408,7 +392,6 @@ export function createMixingRecipes() {
             amount: 100 * mB,
           },
         ],
-        heat: "",
         time: 100,
       },
       {
@@ -422,19 +405,16 @@ export function createMixingRecipes() {
             amount: 100 * mB,
           },
         ],
-        heat: "",
         time: 100,
       },
       {
         output: Item.of("minecraft:blaze_powder", 2),
         input: ["minecraft:blaze_rod"],
-        heat: "",
-        time: null,
       },
       {
         output: "techreborn:plantball",
         input: [
-          "9x #minecraft:leaves",
+          Ingredient.of("#minecraft:leaves", 9),
           {
             fluid: "createaddition:seed_oil",
             amount: 500 * mB,
@@ -446,7 +426,7 @@ export function createMixingRecipes() {
       {
         output: "techreborn:plantball",
         input: [
-          "9x #c:grass_variants",
+          Ingredient.of("#c:grass_variants", 9),
           {
             fluid: "createaddition:seed_oil",
             amount: 500 * mB,
@@ -530,7 +510,7 @@ export function createMixingRecipes() {
             amount: 250 * mB,
           },
         ],
-        heat: "",
+
         time: 50,
       },
       {
@@ -548,7 +528,6 @@ export function createMixingRecipes() {
             amount: 250 * mB,
           },
         ],
-        heat: "",
         time: 50,
       },
       {
@@ -584,24 +563,20 @@ export function createMixingRecipes() {
       {
         output: Fluid.of("create:honey", 100 * mB),
         input: ["techreborn:sap", "minecraft:sugar"],
-        heat: "",
         time: 100,
       },
       {
         output: Item.of("dustrial_decor:cast_iron_billet", 3),
         input: ["minecraft:iron_ingot", Item.of("create:andesite_alloy", 2), "minecraft:coal"],
-        heat: "",
-        time: null,
       },
       {
         output: "techreborn:rubber",
         input: ["techreborn:sap"],
-        heat: "",
         time: 50,
       },
       {
         output: Item.of("techreborn:machine_parts", 4),
-        input: ["ad_astra:steel_plate", "techreborn:carbon_mesh", "8x #c:wires"],
+        input: ["ad_astra:steel_plate", "techreborn:carbon_mesh", Ingredient.of("#c:wires", 8)],
         heat: "superheated",
         time: 400,
       },
@@ -677,7 +652,6 @@ export function createMixingRecipes() {
           { fluid: "tconstruct:molten_tin", amount: INGOT },
           { fluid: "tconstruct:molten_copper", amount: INGOT },
         ],
-        heat: "",
         time: 100,
       },
       {
@@ -689,7 +663,6 @@ export function createMixingRecipes() {
       {
         output: Fluid.of("tconstruct:molten_bronze", INGOT * 2),
         input: [Item.of("create:copper_nugget", 9), Item.of("techreborn:tin_nugget", 9)],
-        heat: "",
         time: 300,
       },
       {
@@ -710,7 +683,6 @@ export function createMixingRecipes() {
           { fluid: "tconstruct:molten_copper", amount: INGOT / 10 },
           { fluid: "tconstruct:molten_gold", amount: INGOT / 10 },
         ],
-        heat: "",
         time: 10,
       },
       {
@@ -924,19 +896,16 @@ export function createMixingRecipes() {
       {
         output: Item.of("tconstruct:grout", 8),
         input: ["create:andesite_alloy", "create:zinc_ingot", Item.of("minecraft:gravel", 8)],
-        heat: "",
         time: 0,
       },
       {
         output: "tconstruct:seared_bricks",
         input: [Item.of("tconstruct:seared_brick", 4), "#c:slimeballs"],
-        heat: "",
         time: 0,
       },
       {
         output: "tconstruct:seared_bricks",
         input: [Item.of("tconstruct:seared_brick", 4), "techreborn:sap"],
-        heat: "",
         time: 0,
       },
       {
@@ -948,31 +917,26 @@ export function createMixingRecipes() {
       {
         output: "minecraft:glow_ink_sac",
         input: ["minecraft:ink_sac", Item.of("minecraft:glowstone_dust", 2)],
-        heat: "",
         time: 50,
       },
       {
         output: "minecraft:piglin_banner_pattern",
         input: [Item.of("minecraft:paper", 1), Item.of("tconstruct:large_plate", '{Material:"tconstruct:pig_iron"}')],
-        heat: "",
         time: 100,
       },
       {
         output: "minecraft:dolphin_spawn_egg",
         input: [{ fluid: "kubejs:shimmer", amount: 500 * mB }, "createastral:orcane"],
-        heat: "",
         time: 500,
       },
       {
         output: "adoptafloppa:kitney_item",
         input: [{ fluid: "kubejs:shimmer", amount: 500 * mB }, Item.of("minecraft:ghast_tear", 3)],
-        heat: "",
         time: 500,
       },
       {
         output: "blahaj:gray_shark",
         input: [{ fluid: "kubejs:shimmer", amount: BUCKET }, "blahaj:blue_shark"],
-        heat: "",
         time: 2000,
       },
       {
@@ -1008,31 +972,26 @@ export function createMixingRecipes() {
       {
         output: Item.of("doodads:stone_brick_road", 2),
         input: [{ fluid: "kubejs:shimmer", amount: 500 * mB }, Item.of("minecraft:stone_bricks", 2)],
-        heat: "",
         time: 1000,
       },
       {
         output: Item.of("doodads:brick_road", 2),
         input: [{ fluid: "kubejs:shimmer", amount: 500 * mB }, Item.of("minecraft:bricks", 2)],
-        heat: "",
         time: 1000,
       },
       {
         output: "doodads:asphalt",
         input: [{ fluid: "kubejs:compound_mixture", amount: 3000 }, "#c:concrete_powder"],
-        heat: "",
         time: 50,
       },
       {
         output: Item.of("astraladditions:ender_tip", 2),
         input: ["astraladditions:ender_tip", "yttr:neodymium_dust"],
-        heat: "",
         time: 50,
       },
       {
         output: "astraladditions:twisted_nylium",
         input: ["astraladditions:enderrack", { fluid: "astraladditions:sputum", amount: INGOT }],
-        heat: "",
         time: 50,
       },
       {
@@ -1041,7 +1000,6 @@ export function createMixingRecipes() {
           { fluid: "minecraft:water", amount: 500 * mB },
           { fluid: "kubejs:shimmer", amount: 500 * mB },
         ],
-        heat: "",
         time: 3000,
       },
       {
@@ -1052,13 +1010,11 @@ export function createMixingRecipes() {
           "phonos:redstone_chip",
           "minecraft:flint_and_steel",
         ],
-        heat: "",
         time: 30,
       },
       {
         output: ["minecraft:sponge", "minecraft:clay"],
         input: ["minecraft:wet_sponge", "minecraft:sand"],
-        heat: "",
         time: 50,
       },
       {
@@ -1081,13 +1037,11 @@ export function createMixingRecipes() {
           Item.of("minecraft:heart_of_the_sea", 1),
           { fluid: "minecraft:water", amount: BUCKET },
         ],
-        heat: "",
         time: 500,
       },
       {
         output: Item.of("minecraft:paper", 3),
         input: [Item.of("techreborn:saw_dust", 3), { fluid: "minecraft:water", amount: BUCKET }],
-        heat: "",
         time: 100,
       },
       {
@@ -1218,31 +1172,26 @@ export function createMixingRecipes() {
       {
         output: "yttr:wasteland_stone",
         input: ["minecraft:stone", "yttr:rubble", "yttr:rubble"],
-        heat: "",
         time: 200,
       },
       {
         output: "yttr:wasteland_dirt",
         input: ["minecraft:sand", "yttr:rubble", "yttr:rubble"],
-        heat: "",
         time: 200,
       },
       {
         output: "yttr:wasteland_log",
         input: ["minecraft:oak_log", "yttr:rubble", "yttr:rubble"],
-        heat: "",
         time: 200,
       },
       {
         output: Item.of("minecraft:piglin_banner_pattern", 2),
         input: ["minecraft:piglin_banner_pattern", "minecraft:paper"],
-        heat: "",
         time: 150,
       },
       {
         output: Item.of("astraladditions:cometball", 4),
         input: [Item.of("astraladditions:moonset_crystal", 3)],
-        heat: "",
         time: 150,
       },
       {
@@ -1269,7 +1218,6 @@ export function createMixingRecipes() {
             amount: BUCKET,
           },
         ],
-        heat: "",
         time: 500,
       },
       {
@@ -1295,7 +1243,7 @@ export function createMixingRecipes() {
       {
         output: "drinkbeer:spice_dried_eglia_bud",
         input: ["minecraft:dried_kelp", Item.of("tconstruct:glow_ball", 2)],
-        heat: "",
+
         time: 500,
       },
       {
@@ -1307,31 +1255,31 @@ export function createMixingRecipes() {
       {
         output: "drinkbeer:spice_amethyst_nigella_seeds",
         input: [Item.of("techreborn:amethyst_dust", 2), "minecraft:popped_chorus_fruit"],
-        heat: "",
+
         time: 500,
       },
       {
         output: "drinkbeer:spice_citrine_nigella_seeds",
         input: [Item.of("minecraft:glowstone_dust", 2), "minecraft:popped_chorus_fruit"],
-        heat: "",
+
         time: 500,
       },
       {
         output: "drinkbeer:spice_ice_mint",
-        input: ["minecraft:ice", "4x #minecraft:leaves"],
-        heat: "",
+        input: ["minecraft:ice", Ingredient.of("#minecraft:leaves", 4)],
+
         time: 500,
       },
       {
         output: "drinkbeer:spice_ice_patchouli",
         input: ["minecraft:packed_ice", Item.of("minecraft:kelp", 2)],
-        heat: "",
+
         time: 500,
       },
       {
         output: ["drinkbeer:spice_storm_shards", "ae2:certus_quartz_crystal"],
         input: ["ae2:charged_certus_quartz_crystal", Item.of("minecraft:prismarine_shard", 2)],
-        heat: "",
+
         time: 500,
       },
       {
@@ -1349,7 +1297,7 @@ export function createMixingRecipes() {
       {
         output: "drinkbeer:spice_frozen_persimmon",
         input: ["minecraft:blue_ice", "minecraft:glistering_melon_slice"],
-        heat: "",
+
         time: 500,
       },
       {
@@ -1379,7 +1327,7 @@ export function createMixingRecipes() {
       {
         output: "drinkbeer:spice_dried_selaginella",
         input: ["minecraft:fern", "#minecraft:sand"],
-        heat: "",
+
         time: 500,
       },
       //Beer Liquids
@@ -1448,19 +1396,19 @@ export function createMixingRecipes() {
           { fluid: "techreborn:nitrogen", amount: BUCKET },
           { fluid: "kubejs:aurorite", amount: BUCKET },
         ],
-        heat: "",
+
         time: 300,
       },
       {
         output: ["techreborn:sulfur_dust"],
         input: [Item.of("minecraft:glowstone_dust", 3), "ae2:sky_dust"],
-        heat: "",
+
         time: 50,
       },
       {
         output: [{ fluid: "rechreborn:oil", amount: 250 * mB }],
         input: [{ fluid: "techreborn:sulfur", amount: 500 * mB }, Item.of("techreborn:coal_dust", 3)],
-        heat: "",
+
         time: 300,
       },
       {
@@ -1597,13 +1545,11 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: 100 * mB },
         ],
         heat: "heated",
-        time: null, //Vegan BLOOD
+        //Vegan BLOOD
       },
       {
         output: "createastral:seitan",
         input: [Item.of("minecraft:brown_mushroom", 3), { fluid: "createaddition:seed_oil", amount: 100 * mB }],
-        heat: "",
-        time: null,
       },
       {
         output: Item.of("minecraft:moss_block", 4), //Yea Moss is automatable now without breaking contraptions, More Blocks out than in? MAGIC
@@ -1613,20 +1559,18 @@ export function createMixingRecipes() {
           Item.of("minecraft:bone_meal", 1),
           { fluid: "minecraft:water", amount: 500 * mB },
         ],
-        heat: "",
-        time: null,
       },
       {
         output: Item.of("minecraft:kelp", 0), // If you got the bonemeal, some kelp can be arranged
         input: ["minecraft:kelp", "minecraft:bone_meal", { fluid: "minecraft:water", amount: 500 * mB }],
-        heat: "",
+
         time: 120,
       },
       {
         output: { fluid: "tconstruct:blazing_blood", amount: BUCKET },
         input: ["minecraft:blaze_powder", { fluid: "tconstruct:blood", amount: BUCKET }],
         heat: "superheated",
-        time: null, //Vegan BLOOD
+        //Vegan BLOOD
       },
       {
         output: Item.of("techreborn:rubber", 8),
@@ -1647,8 +1591,6 @@ export function createMixingRecipes() {
           Item.of("minecraft:cobblestone", 1),
           { fluid: "minecraft:lava", amount: 50 * mB },
         ],
-        heat: "",
-        time: null,
       },
       {
         output: { fluid: "minecraft:lava", amount: 250 * mB },
@@ -1658,25 +1600,20 @@ export function createMixingRecipes() {
           { fluid: "minecraft:lava", amount: 50 * mB },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: { fluid: "minecraft:lava", amount: 500 * mB },
         input: [Item.of("techreborn:andesite_dust", 4), Item.of("minecraft:netherrack", 2)],
         heat: "heated",
-        time: null,
       },
       {
         output: { fluid: "kubejs:shimmer", amount: 250 * mB },
         input: [Item.of("minecraft:amethyst_shard", 5), Item.of("minecraft:glow_ink_sac", 2)],
-        heat: "",
-        time: null,
       },
       {
         output: { fluid: "kubejs:shimmer", amount: 500 * mB },
         input: [Item.of("techreborn:amethyst_dust", 5), Item.of("minecraft:glow_ink_sac", 2)],
         heat: "heated",
-        time: null,
       },
       {
         output: { fluid: "kubejs:shimmer", amount: 1000 * mB },
@@ -1686,7 +1623,6 @@ export function createMixingRecipes() {
           "astraladditions:lune_shroom",
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:2s}]}'),
@@ -1696,7 +1632,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:3s}]}'),
@@ -1705,7 +1640,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:4s}]}'),
@@ -1715,7 +1649,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:5s}]}'),
@@ -1726,7 +1659,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:6s}]}'),
@@ -1737,7 +1669,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:7s}]}'),
@@ -1748,7 +1679,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:2s}]}'),
@@ -1758,7 +1688,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:3s}]}'),
@@ -1768,7 +1697,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:4s}]}'),
@@ -1778,7 +1706,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:5s}]}'),
@@ -1789,7 +1716,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:2s}]}'),
@@ -1799,7 +1725,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:3s}]}'),
@@ -1809,7 +1734,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:4s}]}'),
@@ -1819,7 +1743,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:5s}]}'),
@@ -1830,7 +1753,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:6s}]}'),
@@ -1841,7 +1763,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:7s}]}'),
@@ -1852,7 +1773,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:2s}]}'),
@@ -1862,7 +1782,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:3s}]}'),
@@ -1872,7 +1791,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:4s}]}'),
@@ -1882,7 +1800,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:5s}]}'),
@@ -1893,7 +1810,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:6s}]}'),
@@ -1904,7 +1820,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:2s}]}'),
@@ -1914,7 +1829,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:3s}]}'),
@@ -1924,7 +1838,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:4s}]}'),
@@ -1934,7 +1847,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:5s}]}'),
@@ -1945,7 +1857,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:6s}]}'),
@@ -1956,7 +1867,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of(
@@ -1969,7 +1879,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of(
@@ -1982,7 +1891,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of(
@@ -1995,7 +1903,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of(
@@ -2009,7 +1916,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of(
@@ -2023,7 +1929,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:thorns",lvl:2s}]}'),
@@ -2033,7 +1938,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:thorns",lvl:3s}]}'),
@@ -2043,7 +1947,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:thorns",lvl:4s}]}'),
@@ -2053,7 +1956,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:thorns",lvl:5s}]}'),
@@ -2064,7 +1966,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:2s}]}'),
@@ -2074,7 +1975,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:3s}]}'),
@@ -2084,7 +1984,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:4s}]}'),
@@ -2094,7 +1993,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:5s}]}'),
@@ -2105,7 +2003,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:2s}]}'),
@@ -2115,7 +2012,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:3s}]}'),
@@ -2125,7 +2021,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:4s}]}'),
@@ -2135,7 +2030,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:5s}]}'),
@@ -2146,7 +2040,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:2s}]}'),
@@ -2156,7 +2049,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:3s}]}'),
@@ -2166,7 +2058,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:4s}]}'),
@@ -2176,7 +2067,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:5s}]}'),
@@ -2187,7 +2077,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:6s}]}'),
@@ -2198,7 +2087,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:7s}]}'),
@@ -2209,7 +2097,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:respiration",lvl:2s}]}'),
@@ -2219,7 +2106,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:respiration",lvl:3s}]}'),
@@ -2229,7 +2115,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:respiration",lvl:4s}]}'),
@@ -2239,7 +2124,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:respiration",lvl:5s}]}'),
@@ -2250,7 +2134,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:2s}]}'),
@@ -2260,7 +2143,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:3s}]}'),
@@ -2270,7 +2152,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:4s}]}'),
@@ -2280,7 +2161,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:5s}]}'),
@@ -2291,7 +2171,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:punch",lvl:2s}]}'),
@@ -2301,7 +2180,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:punch",lvl:3s}]}'),
@@ -2311,7 +2189,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:punch",lvl:4s}]}'),
@@ -2321,7 +2198,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:2s}]}'),
@@ -2331,7 +2207,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:3s}]}'),
@@ -2341,7 +2216,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:4s}]}'),
@@ -2351,7 +2225,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:5s}]}'),
@@ -2362,7 +2235,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:6s}]}'),
@@ -2373,7 +2245,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:7s}]}'),
@@ -2384,7 +2255,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:2s}]}'),
@@ -2394,7 +2264,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:3s}]}'),
@@ -2404,7 +2273,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:4s}]}'),
@@ -2414,7 +2282,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:5s}]}'),
@@ -2425,7 +2292,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:6s}]}'),
@@ -2436,7 +2302,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:looting",lvl:2s}]}'),
@@ -2446,7 +2311,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:looting",lvl:3s}]}'),
@@ -2456,7 +2320,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:looting",lvl:4s}]}'),
@@ -2466,7 +2329,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:looting",lvl:5s}]}'),
@@ -2477,7 +2339,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:knockback",lvl:2s}]}'),
@@ -2487,7 +2348,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:knockback",lvl:3s}]}'),
@@ -2497,7 +2357,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:knockback",lvl:4s}]}'),
@@ -2507,7 +2366,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:frost_walker",lvl:2s}]}'),
@@ -2517,7 +2375,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:frost_walker",lvl:3s}]}'),
@@ -2527,7 +2384,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:frost_walker",lvl:4s}]}'),
@@ -2536,7 +2392,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fortune",lvl:2s}]}'),
@@ -2546,7 +2401,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fortune",lvl:3s}]}'),
@@ -2556,7 +2410,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fortune",lvl:4s}]}'),
@@ -2566,7 +2419,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fortune",lvl:5s}]}'),
@@ -2577,7 +2429,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_aspect",lvl:2s}]}'),
@@ -2587,7 +2438,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_aspect",lvl:3s}]}'),
@@ -2597,7 +2447,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_aspect",lvl:4s}]}'),
@@ -2607,7 +2456,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:2s}]}'),
@@ -2617,7 +2465,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:3s}]}'),
@@ -2627,7 +2474,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:4s}]}'),
@@ -2637,7 +2483,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:5s}]}'),
@@ -2648,7 +2493,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:6s}]}'),
@@ -2659,7 +2503,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:2s}]}'),
@@ -2669,7 +2512,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:3s}]}'),
@@ -2679,7 +2521,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:4s}]}'),
@@ -2689,7 +2530,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:5s}]}'),
@@ -2700,7 +2540,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:6s}]}'),
@@ -2711,7 +2550,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:7s}]}'),
@@ -2722,7 +2560,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:depth_strider",lvl:2s}]}'),
@@ -2732,7 +2569,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:depth_strider",lvl:3s}]}'),
@@ -2742,7 +2578,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of(
@@ -2755,7 +2590,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of(
@@ -2768,7 +2602,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of(
@@ -2781,7 +2614,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of(
@@ -2795,7 +2627,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of(
@@ -2809,7 +2640,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of(
@@ -2823,7 +2653,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:lure",lvl:2s}]}'),
@@ -2833,7 +2662,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:lure",lvl:3s}]}'),
@@ -2843,7 +2671,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:lure",lvl:4s}]}'),
@@ -2853,7 +2680,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:lure",lvl:5s}]}'),
@@ -2864,7 +2690,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:2s}]}'),
@@ -2874,7 +2699,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:3s}]}'),
@@ -2884,7 +2708,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:4s}]}'),
@@ -2894,7 +2717,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:5s}]}'),
@@ -2905,7 +2727,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:2s}]}'),
@@ -2915,7 +2736,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:3s}]}'),
@@ -2925,7 +2745,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:4s}]}'),
@@ -2935,7 +2754,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:5s}]}'),
@@ -2946,7 +2764,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:riptide",lvl:2s}]}'),
@@ -2956,7 +2773,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:riptide",lvl:3s}]}'),
@@ -2966,7 +2782,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:riptide",lvl:4s}]}'),
@@ -2976,7 +2791,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:riptide",lvl:5s}]}'),
@@ -2987,7 +2801,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:2s}]}'),
@@ -2997,7 +2810,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:3s}]}'),
@@ -3007,7 +2819,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:4s}]}'),
@@ -3017,7 +2828,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:5s}]}'),
@@ -3028,7 +2838,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:6s}]}'),
@@ -3039,7 +2848,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:7s}]}'),
@@ -3050,7 +2858,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:2s}]}'),
@@ -3060,7 +2867,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "heated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:3s}]}'),
@@ -3070,7 +2876,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:shimmer", amount: BUCKET },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:4s}]}'),
@@ -3080,7 +2885,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 125 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:5s}]}'),
@@ -3091,7 +2895,6 @@ export function createMixingRecipes() {
           { fluid: "kubejs:hellfire", amount: 250 * mB },
         ],
         heat: "superheated",
-        time: null,
       },
       {
         output: { fluid: "kubejs:liquid_xp_nuggies", amount: 1000 },
@@ -3138,7 +2941,7 @@ export function createMixingRecipes() {
       {
         output: { fluid: "xpcrystals:soul", amount: 250 * mB },
         input: { fluid: "tconstruct:liquid_soul", amount: 250 * mB },
-        heat: "",
+
         time: 25,
       },
       {
@@ -3169,7 +2972,7 @@ export function createMixingRecipes() {
       {
         output: ["create:dough"],
         input: ["create:wheat_flour", { fluid: "minecraft:water", amount: 500 * mB }],
-        heat: "",
+
         time: 10,
       },
       {
@@ -3180,7 +2983,7 @@ export function createMixingRecipes() {
           "minecraft:wheat_seeds",
           "create:tree_fertilizer",
         ],
-        heat: "",
+
         time: 80,
       },
       {
@@ -3226,34 +3029,35 @@ export function createMixingRecipes() {
       {
         output: "minecraft:slime_ball",
         input: ["minecraft:lime_dye", "#c:slimeballs"],
-        heat: "",
+
         time: 50,
       },
       {
         output: Item.of("createastral:synthetic_slime", 3),
         input: [Item.of("techreborn:sponge_piece", 2), { fluid: "tconstruct:blood", amount: SLIMEBALL * 2 }],
-        heat: "",
+
         time: 50,
       },
       {
         output: Item.of("createastral:synthetic_slime", 3),
         input: [Item.of("techreborn:sponge_piece", 2), { fluid: "tconstruct:earth_slime", amount: SLIMEBALL * 2 }],
-        heat: "",
+
         time: 50,
       },
       {
         output: Item.of("createastral:synthetic_slime", 3),
         input: [Item.of("techreborn:sponge_piece", 2), { fluid: "tconstruct:sky_slime", amount: SLIMEBALL * 2 }],
-        heat: "",
+
         time: 50,
       },
       {
         output: Item.of("createastral:synthetic_slime", 3),
         input: [Item.of("techreborn:sponge_piece", 2), { fluid: "tconstruct:ender_slime", amount: SLIMEBALL * 2 }],
-        heat: "",
+
         time: 50,
       },
-    ].forEach((recipe) => {
+    ] as const;
+    mixingRecipes.forEach((recipe) => {
       event.recipes
         .createMixing(recipe.output, recipe.input)
         .heatRequirement(recipe.heat ?? "")
@@ -3403,14 +3207,14 @@ export function createMixingRecipes() {
       let inputItems = recipe.json.get("ingredients").deepCopy() as any; // Setting this to any, since I have no idea what type this really is.
       if (outputItem == "cabbage_rolls") return; //too few ingredients to add recipe for
 
-      const containers = {
+      const containers : {[item: string]: string[]} = {
         "minecraft:glass_bottle": ["hot_cocoa", "apple_cider", "glow_berry_custard"],
         "minecraft:pumpkin": ["stuffed_pumpkin_block"],
         "#c:dough": ["dumplings"],
       } as const;
 
-      let container =
-        Object.keys(containers).find((key) => containers[key as keyof typeof containers].includes(outputItem)) ??
+      let container: Special.Item =
+        Object.keys(containers).find((key) => containers[key as keyof typeof containers].includes(outputItem)) as Special.Item ??
         "minecraft:bowl";
       for (let i = 0; i < inputItems.size(); i++) {
         if (inputItems.get(i).getClass() == "class com.google.gson.JsonObject") {
@@ -3440,7 +3244,7 @@ export function createMixingRecipes() {
       event.recipes
         .createMixing(
           {
-            fluid: "kubejs:" + outputItem + "_fluid",
+            fluid: `kubejs:${outputItem}_fluid`,
             amount: 250 * mB,
           },
           inputItems
@@ -3451,7 +3255,7 @@ export function createMixingRecipes() {
       event.recipes.createFilling(recipe.getOriginalRecipeResult(), [
         container,
         {
-          fluid: "kubejs:" + outputItem + "_fluid",
+          fluid: `kubejs:${outputItem}_fluid`,
           amount: 250 * mB,
         },
       ]);

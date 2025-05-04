@@ -1,6 +1,13 @@
 export function farmersDelightCookingRecipes() {
   onEvent("recipes", (event) => {
-    [
+    interface FarmersDelightCookingRecipe {
+      input: { item: Special.Item }[];
+      output: { item: Special.Item };
+      xp: number;
+      time: number;
+    }
+
+    const farmersDelightCookingRecipes: FarmersDelightCookingRecipe[] = [
       {
         input: [{ item: "createastral:astral_singularity" }],
         output: { item: "astralfoods:astral_sauce" },
@@ -17,7 +24,8 @@ export function farmersDelightCookingRecipes() {
         xp: 8.0,
         time: 300,
       },
-    ].forEach((recipe) => {
+    ];
+    farmersDelightCookingRecipes.forEach((recipe) => {
       event.custom({
         type: "farmersdelight:cooking",
         cookingtime: recipe.time,

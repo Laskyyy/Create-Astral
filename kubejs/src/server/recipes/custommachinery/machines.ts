@@ -1,3 +1,5 @@
+import { BUCKET } from "fluid-constants";
+
 export function customMachineryRecipes() {
   onEvent("recipes", (event) => {
     event.recipes.custommachinery
@@ -43,8 +45,8 @@ export function customMachineryRecipes() {
         .priority(speed)
         .requireFluid(Fluid.of("ad_astra:oxygen", BUCKET), "in_fluid")
         .requireItem(Item.of("minecraft:wither_rose"))
-        .requireItem(Item.of("3x minecraft:glass_bottle"))
-        .produceItem(Item.of("3x minecraft:dragon_breath"));
+        .requireItem(Item.of("minecraft:glass_bottle", 3))
+        .produceItem(Item.of("minecraft:dragon_breath", 3));
 
       event.recipes.custommachinery
         .custom_machine("createastral:gas_mixer", dur)
@@ -55,7 +57,7 @@ export function customMachineryRecipes() {
         .requireSU(speed, MIXER_IMPACT)
         .priority(speed)
         .requireFluid(Fluid.of("techreborn:mercury", BUCKET / 81), "in_fluid")
-        .requireItem(Item.of("2x minecraft:lily_of_the_valley"))
+        .requireItem(Item.of("minecraft:lily_of_the_valley", 2))
         .produceItem(Item.of("minecraft:spider_eye"));
     }
 
