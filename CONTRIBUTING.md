@@ -93,6 +93,8 @@ Simple as that! On MacOS and Linux-based operating systems, you can execute the 
 
 Now your Prism instance will automatically update when you start the game as long as the packwiz server is running (and you've saved your files). Note that this does not update the game as you edit the files in the repository, you have to restart the game every time you wish to update the files.
 
+If you want, you could also write a batch script (here's an [example](/reload-example.bat)) that runs the packwiz jar file similarly to how it is run at the startup of the instance, that you could run to reload the modpack without restarting the game.
+
 #### Running the packwiz server using your PATH (Windows only)
 
 If you're tired of downloading the packwiz binary every time you start developing a new modpack, or you're tired of typing `./packwiz.exe serve` every time you start your terminal, you may wish to add the packwiz exe to your PATH variable. This allows you to run `packwiz serve` from any folder that contains the correct `pack.toml` and `index.toml` files for packwiz to reference, without needing another packwiz binary installed in the same folder.
