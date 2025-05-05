@@ -2,7 +2,7 @@
 # it gets appended to the original .packwizignore
 resourcepacks
 shaderpacks
-resources/**/textures
+kubejs/assets/**/textures
 fancymenustuff
 config/**/*-client.toml
 configureddefaults
