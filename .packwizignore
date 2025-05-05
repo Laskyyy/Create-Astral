@@ -4,6 +4,7 @@
 # Exclude README
 /README.md
 LICENSE*.md
+CONTRIBUTING.md
 .prettierrc
 packwiz
 packwiz.exe
