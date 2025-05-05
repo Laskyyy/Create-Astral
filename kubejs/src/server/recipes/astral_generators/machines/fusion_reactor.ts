@@ -1,4 +1,4 @@
-export function astralGenreatorsFusionReactorRecipes() {
+export function astralGeneratorsFusionReactorRecipes() {
   onEvent("recipes", (event) => {
     fusionHelium3(event);
   });

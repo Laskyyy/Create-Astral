@@ -1,6 +1,6 @@
 export function techRebornIndustrialElectrolyzerRecipes() {
   onEvent("recipes", (event) => {
-    [
+    const industrialElectrolyzerRecipes = [
       {
         input: [{ item: "ad_astra:calorite_ingot", count: 16 }],
         output: [
@@ -36,7 +36,8 @@ export function techRebornIndustrialElectrolyzerRecipes() {
         power: 100,
         time: 1100,
       },
-    ].forEach((recipe) => {
+    ] as const;
+    industrialElectrolyzerRecipes.forEach((recipe) => {
       event.custom({
         type: "techreborn:industrial_electrolyzer",
         power: recipe.power,

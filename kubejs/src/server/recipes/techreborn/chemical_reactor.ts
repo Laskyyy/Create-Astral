@@ -1,6 +1,6 @@
 export function techRebornChemicalReactorRecipes() {
   onEvent("recipes", (event) => {
-    [
+    const chemicalReactorRecipes = [
       {
         input: [
           { fluid: "techreborn:potassium", count: 2, holder: "techreborn:cell" },
@@ -10,7 +10,8 @@ export function techRebornChemicalReactorRecipes() {
         power: 30,
         time: 400,
       },
-    ].forEach((recipe) => {
+    ] as const;
+    chemicalReactorRecipes.forEach((recipe) => {
       event.custom({
         type: "techreborn:chemical_reactor",
         power: recipe.power,

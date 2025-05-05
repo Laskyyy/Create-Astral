@@ -1,4 +1,4 @@
-export function millingRecipes() {
+export function createMillingRecipes() {
   onEvent("recipes", (event) => {
     otherMillingRecipes(event);
     sifterRecipes(event);

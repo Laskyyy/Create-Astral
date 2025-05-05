@@ -1,4 +1,4 @@
-export function desizerRecipes() {
+export function astralAdditionsDesizerRecipes() {
   onEvent("recipes", (event) => {
     desizer27SingleType(event);
 

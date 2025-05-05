@@ -8,7 +8,7 @@ export function astralSignalsSequencedAssemblyRecipes() {
       inter: Internal.IngredientJS_
     }
 
-    const assemblyRecipes: AssemblyRecipe[] = [
+    const assemblyRecipes = [
       {
         input: "astralsignals:stirring_signal_beacon",
         outputs: [
@@ -56,7 +56,7 @@ export function astralSignalsSequencedAssemblyRecipes() {
         ],
         inter: "astralsignals:inter_data_drive_dormant_t3",
       },
-    ] as const;
+    ] as const satisfies AssemblyRecipe[];
     assemblyRecipes.forEach((inst) => {
       event.recipes
         .create.sequenced_assembly(inst.outputs, inst.input, [

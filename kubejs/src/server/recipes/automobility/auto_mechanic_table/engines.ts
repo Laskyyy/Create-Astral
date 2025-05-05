@@ -1,4 +1,4 @@
-export function engineRecipes() {
+export function automobilityEngineRecipes() {
   onEvent("recipes", (event) => {
     type EngineMaterials = "copper" | "stone" | "gold" | "iron" | "diamond";
     type EngineType = `automobility:${EngineMaterials}`;

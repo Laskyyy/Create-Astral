@@ -1,6 +1,6 @@
 export function techRebornVacuumFreezerRecipes() {
   onEvent("recipes", (event) => {
-    [
+    const vacuumFreezerRecipes = [
       {
         input: [
           {
@@ -19,7 +19,8 @@ export function techRebornVacuumFreezerRecipes() {
         power: 25,
         time: 100,
       },
-    ].forEach((recipe) => {
+    ]
+    vacuumFreezerRecipes.forEach((recipe) => {
       event.custom({
         type: "techreborn:vacuum_freezer",
         power: recipe.power,

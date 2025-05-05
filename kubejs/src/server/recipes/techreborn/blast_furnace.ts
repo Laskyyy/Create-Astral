@@ -1,6 +1,6 @@
 export function techRebornBlastFurnaceRecipes() {
   onEvent("recipes", (event) => {
-    [
+    const blastFurnaceRecipes = [
       {
         input: [
           { fluid: "techreborn:carbon", holder: "techreborn:cell", count: 1 },
@@ -11,7 +11,8 @@ export function techRebornBlastFurnaceRecipes() {
         time: 1000,
         heat: 1500,
       },
-    ].forEach((recipe) => {
+    ] as const;
+    blastFurnaceRecipes.forEach((recipe) => {
       event.custom({
         type: "techreborn:blast_furnace",
         power: recipe.power,

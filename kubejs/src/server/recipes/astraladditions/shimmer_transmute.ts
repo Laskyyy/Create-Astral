@@ -1,4 +1,4 @@
-export function shimmerTransmutationRecipes() {
+export function astralAdditionsShimmerTransmutationRecipes() {
   onEvent("recipes", (event) => {
     interface ShimmerTransmutationRecipe {
       input: Special.Item,

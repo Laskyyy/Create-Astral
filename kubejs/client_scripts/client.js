@@ -1430,7 +1430,7 @@ function rei() {
   console.info("Hello, World! (You will see this line every time client resources reload)");
   onEvent("rei.group", (event) => {
     event.groupItems("kubejs:rei_groups/chipped", Component.of("Chipped Blocks"), [
-      Ingredient.of(/chipped:.*/).getItemIds().toArray().filter(
+      Ingredient.of("@chipped").getItemIds().toArray().filter(
         (item) => item !== "chipped:mason_table" && item !== "chipped:botanist_workbench" && item !== "chipped:loom_table" && item !== "chipped:glassblower" && item !== "chipped:alchemy_bench" && item !== "chipped:tinkering_table" && item !== "chipped:carpenters_table" && item !== "chipped:mechanist_workbench"
       )
     ]);

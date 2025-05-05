@@ -14,5 +14,13 @@ kubejs/probe
 reload-example.bat
 server.packwizignore
 
+# Exclude Vite modules and configs
+kubejs/src
+kubejs/package-lock.json
+kubejs/package.json
+kubejs/tsconfig.json
+kubejs/vite.config.ts
+kubejs/node-modules
+
 # The contents of the serverpack folder will automatically get lifted to the root directory on build
 serverpack

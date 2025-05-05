@@ -1,4 +1,4 @@
-export function chromaticVacuumRecipes() {
+export function astralAdditionsChromaticVacuumRecipes() {
   onEvent("recipes", (event) => {
     interface ChromaticVacuumRecipe {
       block: Special.Block

@@ -1,6 +1,6 @@
 export function techRebornCentrifugeRecipes() {
   onEvent("recipes", (event) => {
-    [
+    const centrifugeRecipes = [
       {
         input: [{ item: "farmersdelight:rich_soil", count: 2 }],
         output: [
@@ -59,7 +59,8 @@ export function techRebornCentrifugeRecipes() {
         power: 5,
         time: 2500,
       },
-    ].forEach((recipe) => {
+    ] as const;
+    centrifugeRecipes.forEach((recipe) => {
       event.custom({
         type: "techreborn:centrifuge",
         power: recipe.power,

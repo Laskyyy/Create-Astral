@@ -1,7 +1,7 @@
 // constants
 
 export const OXIDISATION_TYPES = ["exposed", "weathered", "oxidized"] as const;
-export const OXIDIZATION_TYPES: typeof OXIDISATION_TYPES = OXIDISATION_TYPES
+export const OXIDIZATION_TYPES: typeof OXIDISATION_TYPES = OXIDISATION_TYPES;
 export const VANILLA_COPPER_BLOCKS = ["cut_copper", "cut_copper_stairs", "cut_copper_slab"] as const;
 export const CREATE_COPPER_BLOCKS = [
   "copper_shingles",
@@ -13,14 +13,14 @@ export const CREATE_COPPER_BLOCKS = [
 ] as const;
 
 export const CATWALK_MATERIALS = [
-  ["gold", "create:golden_sheet"],
-  ["netherite", "createdeco:netherite_sheet"],
-  ["andesite", "create:andesite_alloy"],
-  ["brass", "create:brass_sheet"],
-  ["cast_iron", "createdeco:cast_iron_sheet"],
-  ["iron", "create:iron_sheet"],
-  ["copper", "create:copper_sheet"],
-  ["zinc", "#c:plates/zinc"],
+  { material: "gold", sheet: "create:golden_sheet" },
+  { material: "netherite", sheet: "createdeco:netherite_sheet" },
+  { material: "andesite", sheet: "create:andesite_alloy" },
+  { material: "brass", sheet: "create:brass_sheet" },
+  { material: "cast_iron", sheet: "createdeco:cast_iron_sheet" },
+  { material: "iron", sheet: "create:iron_sheet" },
+  { material: "copper", sheet: "create:copper_sheet" },
+  { material: "zinc", sheet: "#c:plates/zinc" },
 ] as const;
 
 export const WOODS = [
@@ -213,17 +213,51 @@ export const MATERIALS = [
   },
 ] as const;
 
+interface CrushingRecipeToBecomeGrinding {
+  input: { item: Special.Item };
+  output: { item: Special.Item; count: number };
+  time?: number;
+  power?: number;
+}
+
 export const CRUSHING_RECIPES_TO_BECOME_GRINDING = [
-  ["minecraft:clay_ball", 1, "techreborn:clay_dust", undefined, undefined], // showing the 4th and 5th for demonstration
-  ["minecraft:amethyst_cluster", 7, "minecraft:amethyst_shard"],
-  ["minecraft:prismarine_crystals", 2, "minecraft:quartz"],
-  ["minecraft:saddle", 3, "minecraft:leather"],
-  ["minecraft:wheat", 3, "create:wheat_flour"],
-  ["minecraft:ender_pearl", 2, "ae2:ender_dust"],
-  ["tconstruct:necrotic_bone", 6, "minecraft:bone_meal"],
-  ["minecraft:dried_kelp", 1, "minecraft:gunpowder"],
-  ["create:sturdy_sheet", 1, "createastral:fragile_sheet"],
-] as const;
+  {
+    input: { item: "minecraft:clay_ball" },
+    output: { item: "techreborn:clay_dust", count: 1 },
+  },
+  {
+    input: { item: "minecraft:amethyst_cluster" },
+    output: { item: "minecraft:amethyst_shard", count: 7 },
+  },
+  {
+    input: { item: "minecraft:prismarine_crystals" },
+    output: { item: "minecraft:quartz", count: 2 },
+  },
+  {
+    input: { item: "minecraft:saddle" },
+    output: { item: "minecraft:leather", count: 3 },
+  },
+  {
+    input: { item: "minecraft:wheat" },
+    output: { item: "create:wheat_flour", count: 3 },
+  },
+  {
+    input: { item: "minecraft:ender_pearl" },
+    output: { item: "ae2:ender_dust", count: 2 },
+  },
+  {
+    input: { item: "tconstruct:necrotic_bone" },
+    output: { item: "minecraft:bone_meal", count: 6 },
+  },
+  {
+    input: { item: "minecraft:dried_kelp" },
+    output: { item: "minecraft:gunpowder", count: 1 },
+  },
+  {
+    input: { item: "create:sturdy_sheet" },
+    output: { item: "createastral:fragile_sheet", count: 1 },
+  },
+] as const satisfies CrushingRecipeToBecomeGrinding[];
 
 export const DEFAULT_GRIND_TIME = 100; // five seconds
 export const DEFAULT_GRIND_POWER = 5;

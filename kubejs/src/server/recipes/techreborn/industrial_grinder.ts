@@ -3,21 +3,29 @@ export function techRebornIndustrialGrinderRecipes() {
 
   /**
    * Creates an Industrial Grinder recipe with a tag input.
-   * @param {event} event - The recipe event. Make sure that the function is called from within the event!
-   * @param {number} energy - Base Energy per tick used for the recipe.
-   * @param {number} time - Base time in ticks to process the recipe.
-   * @param {string} inputTag - Input tag (ex. `"c:copper_ores"`).
-   * @param {object[]} outputs - Output items in the array of objects containing "item" and optionally "count" fields.
+   * @param event - The recipe event. Make sure that the function is called from within the event!
+   * @param energy - Base Energy per tick used for the recipe.
+   * @param time - Base time in ticks to process the recipe.
+   * @param inputTag - Input tag (ex. `"c:copper_ores"`).
+   * @param outputs - Output items in the array of objects containing "item" and optionally "count" fields.
    * For example:
    * ```
    * [{item: "minecraft:raw_copper", count: 2}, {item: "minecraft:gold_nugget", count: 3}]
    * ```
-   * @param {string} fluid - The fluid necessary to process the recipe.
-   * @param {number} fluidAmount - The amount of fluid (in **mB**, not droplets!)
-   * @param {number?} energy - Base Energy per tick used for the recipe. 16 E/t if not provided.
-   * @param {number?} time - Base time in ticks to process the recipe. 100 ticks if not provided.
+   * @param fluid - The fluid necessary to process the recipe.
+   * @param fluidAmount - The amount of fluid (in **mB**, not droplets!)
+   * @param energy - Base Energy per tick used for the recipe. 16 E/t if not provided.
+   * @param time - Base time in ticks to process the recipe. 100 ticks if not provided.
    */
-  function industrialGrinderTag(event, inputTag, outputs, fluid, fluidAmount, energy, time) {
+  function industrialGrinderTag(
+    event: Internal.RecipeEventJS,
+    inputTag: string,
+    outputs: { item: Special.Item; count?: number }[],
+    fluid: string,
+    fluidAmount: number,
+    energy?: number,
+    time?: number
+  ) {
     event.custom({
       type: "techreborn:industrial_grinder",
       power: energy ? energy : 16, // ?? doesn't work with numbers for some reason
@@ -37,20 +45,29 @@ export function techRebornIndustrialGrinderRecipes() {
 
   /**
    * Creates an Industrial Grinder recipe with an item input.
-   * @param {event} event - The recipe event. Make sure that the function is called from within the event!
-   * @param {string} input - Input item (ex. `"minecraft:cobblestone"`).
-   * @param {object[]} outputs - Output items in the array of objects containing "item" and optionally "count" fields.
+   * @param event - The recipe event. Make sure that the function is called from within the event!
+   * @param input - Input item (ex. `"minecraft:cobblestone"`).
+   * @param outputs - Output items in the array of objects containing "item" and optionally "count" fields.
    * For example:
    * ```
    * [{item: "minecraft:raw_copper", count: 2}, {item: "minecraft:gold_nugget", count: 3}]
    * ```
-   * @param {string} fluid - The fluid necessary to process the recipe.
-   * @param {number} fluidAmount - The amount of fluid (in **mB**, not droplets!)
-   * @param {number?} inputCount - The amount of input item. 1 if not provided.
-   * @param {number?} energy - Base Energy per tick used for the recipe. 16 E/t if not provided.
-   * @param {number?} time - Base time in ticks to process the recipe. 100 ticks if not provided.
+   * @param fluid - The fluid necessary to process the recipe.
+   * @param fluidAmount - The amount of fluid (in **mB**, not droplets!)
+   * @param inputCount - The amount of input item. 1 if not provided.
+   * @param energy - Base Energy per tick used for the recipe. 16 E/t if not provided.
+   * @param time - Base time in ticks to process the recipe. 100 ticks if not provided.
    */
-  function industrialGrinder(event, input, outputs, fluid, fluidAmount, inputCount, energy, time) {
+  function industrialGrinder(
+    event: Internal.RecipeEventJS,
+    input: string,
+    outputs: { item: Special.Item; count?: number }[],
+    fluid: string,
+    fluidAmount: number,
+    inputCount?: number,
+    energy?: number,
+    time?: number
+  ) {
     event.custom({
       type: "techreborn:industrial_grinder",
       power: energy ? energy : 16,
@@ -74,11 +91,11 @@ export function techRebornIndustrialGrinderRecipes() {
    * ```
    * {item: item, count: count}
    * ```
-   * @param {string} item - The item ID.
-   * @param {number?} count - The item amount. 1 if not provided.
-   * @returns {object}
+   * @param item - The item ID.
+   * @param count - The item amount. 1 if not provided.
+   * @returns
    */
-  function itemCount(item, count) {
+  function itemCount(item: Special.Item, count?: number) {
     return {
       item: item,
       count: count ? count : 1,
@@ -92,7 +109,27 @@ export function techRebornIndustrialGrinderRecipes() {
   const rawOreWaterRate = 17; // Little less than crushing wheels + foundry combined
   const rawOreMercuryRate = 24; // 2.5 ingots per raw ore, wowie!
 
-  const ORES = [
+  interface OreWithTag {
+    tag: Special.ItemTag;
+    count?: number;
+    waterOutput: { item: Special.Item; count: number }[];
+    mercuryOutput: { item: Special.Item; count: number }[];
+    energy?: number;
+    time?: number;
+  }
+
+  interface OreWithItem {
+    item: Special.Item;
+    count?: number;
+    waterOutput?: { item: Special.Item; count: number }[];
+    mercuryOutput?: { item: Special.Item; count: number }[];
+    energy?: number;
+    time?: number;
+  }
+
+  type Ore = OreWithTag | OreWithItem;
+
+  const ORES: Ore[] = [
     // Ore blocks
     {
       tag: "c:coal_ores",
@@ -333,7 +370,16 @@ export function techRebornIndustrialGrinderRecipes() {
     },
   ];
 
-  const COBBLE_PROCESSING = [
+  interface CobbleProcessingRecipe {
+    item: Special.Item,
+    count?: number
+    output: { item: Special.Item; count?: number }[],
+    time: number,
+    waterAmount: number,
+    energy?: number
+  }
+
+  const COBBLE_PROCESSING: CobbleProcessingRecipe[] = [
     {
       item: "minecraft:cobblestone",
       output: [itemCount("minecraft:gravel")],
@@ -359,7 +405,7 @@ export function techRebornIndustrialGrinderRecipes() {
     event.remove({ type: "techreborn:industrial_grinder" });
 
     ORES.forEach((ore) => {
-      if (ore.tag) {
+      if ("tag" in ore) {
         if (ore.waterOutput) {
           industrialGrinderTag(event, ore.tag, ore.waterOutput, "minecraft:water", 100, ore.energy, ore.time);
         }
@@ -367,7 +413,7 @@ export function techRebornIndustrialGrinderRecipes() {
           industrialGrinderTag(event, ore.tag, ore.mercuryOutput, "techreborn:mercury", 100, ore.energy, ore.time);
         }
       }
-      if (ore.item) {
+      if ("item" in ore) {
         if (ore.waterOutput) {
           industrialGrinder(event, ore.item, ore.waterOutput, "minecraft:water", 100, ore.count, ore.energy, ore.time);
         }

@@ -3,7 +3,7 @@ export function techRebornWireMillRecipes() {
     wireMillWires(event);
   });
 
-  function wireMillWires(event) {
+  function wireMillWires(event: Internal.RecipeEventJS) {
     // Wire Mill
     // Let's making the rolling mill more relevant by making cables require create addition rods
 
@@ -13,7 +13,7 @@ export function techRebornWireMillRecipes() {
     // Still, I'll let the wire mill produce wires.
     //
 
-    const WIRE_MATERIALS = ["iron", "gold", "copper"];
+    const WIRE_MATERIALS = ["iron", "gold", "copper"] as const;
     for (let material of WIRE_MATERIALS) {
       event.custom({
         type: "techreborn:wire_mill",
@@ -22,13 +22,13 @@ export function techRebornWireMillRecipes() {
         ingredients: [
           {
             // create calls it golden sheet, otherwise material + _sheet
-            item: material === "gold" ? "create:golden_sheet" : "create:" + material + "_sheet",
+            item: material === "gold" ? "create:golden_sheet" : `create:${material}_sheet`,
             count: 2,
           },
         ],
         results: [
           {
-            item: "createaddition:" + material + "_wire",
+            item: `createaddition:${material}_wire`,
             count: 6,
           },
         ],

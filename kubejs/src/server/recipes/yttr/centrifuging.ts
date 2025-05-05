@@ -1,6 +1,6 @@
 export function yttrCentrifugingRecipes() {
   onEvent("recipes", (event) => {
-    [
+    const centrifugingRecipes = [
       {
         input: { item: "minecraft:coal", count: 16 },
         output: [
@@ -64,7 +64,8 @@ export function yttrCentrifugingRecipes() {
         ],
         time: 800,
       },
-    ].forEach((recipe) => {
+    ]
+    centrifugingRecipes.forEach((recipe) => {
       event.custom({
         type: "yttr:centrifuging",
         time: recipe.time,

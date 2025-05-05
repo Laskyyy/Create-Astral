@@ -1,16 +1,18 @@
+import { CRUSHING_RECIPES_TO_BECOME_GRINDING, MATERIALS } from "constants";
+
 export function recipeRemovals() {
   onEvent("recipes", (event) => {
     // Removal Object
     // Output, Input, Type, Mod
 
     //Tech Reborn
-    [
+    const recipeRemovals: Internal.RecipeFilter_[] = [
       // storage units
       { output: "techreborn:crude_storage_unit" },
       { output: "techreborn:basic_storage_unit" },
       { output: "techreborn:advanced_storage_unit" },
       { output: "techreborn:industrial_storage_unit" },
-      { output: "techreborn:quantumr_storage_unit" },
+      { output: "techreborn:quantum_storage_unit" },
       // tanks units
       { output: "techreborn:basic_tank_unit" },
       { output: "techreborn:advanced_tank_unit" },
@@ -63,9 +65,9 @@ export function recipeRemovals() {
       { output: "techreborn:synthetic_redstone_crystal" },
       { output: "techreborn:bronze_nugget" },
       { output: "techreborn:steel_ingot" },
-      { output: "techreborn:steel_block" },
+      { output: "techreborn:steel_storage_block" },
       { output: "techreborn:steel_plate" },
-      { output: "techreborn:bronze_block" },
+      { output: "techreborn:bronze_storage_block" },
       { output: "techreborn:ender_pearl_dust" },
       { output: "techreborn:electronic_circuit" },
       { output: "techreborn:industrial_circuit" },
@@ -151,7 +153,7 @@ export function recipeRemovals() {
         output: "techreborn:plantball",
       },
       {
-        type: "minecraft:shaped",
+        type: "minecraft:crafting_shaped",
         output: "techreborn:nak_coolant_cell_60k",
       },
       { id: "techreborn:crafting_table/paper" },
@@ -176,9 +178,9 @@ export function recipeRemovals() {
       { output: "create:scorchia" },
       { output: "create:crushed_raw_uranium" },
       { output: "create:electron_tube" },
-      { output: "create:cogwheel", type: "minecraft:shaped" },
-      { output: "create:large_cogwheel", type: "minecraft:shaped" },
-      { output: "travelersbackpack:standard", type: "minecraft:shaped" },
+      { output: "create:cogwheel", type: "minecraft:crafting_shaped" },
+      { output: "create:large_cogwheel", type: "minecraft:crafting_shaped" },
+      { output: "travelersbackpack:standard", type: "minecraft:crafting_shaped" },
       { output: "travelersbackpack:standard", type: "minecraft:crafting_shaped" },
       { output: "create:cogwheel" },
       { output: "create:large_cogwheel" },
@@ -416,6 +418,7 @@ export function recipeRemovals() {
       { id: "tconstruct:smeltery/casting/metal/steel/nugget_sand_cast" },
       { id: "tconstruct:smeltery/casting/metal/steel/plate_gold_cast" },
       { id: "tconstruct:smeltery/casting/metal/steel/plate_sand_cast" },
+      // @ts-expect-error Recipe didn't generate?
       { id: "tconstruct:smeltery/casting/metal/uranium/block" },
       { id: "tconstruct:smeltery/casting/scorched/brick_composite" },
       { id: "tconstruct:smeltery/casting/scorched/polished_from_magma" },
@@ -429,6 +432,7 @@ export function recipeRemovals() {
       { id: "tconstruct:smeltery/casting/seared/paver" },
       { id: "tconstruct:smeltery/casting/slime/ichor/block" },
       { id: "tconstruct:smeltery/casting/slime/ichor/congealed" },
+      // @ts-expect-error Recipe didn't generate?
       { id: "tconstruct:smeltery/casting/slime/slimeball" },
 
       { id: "tconstruct:smeltery/entity_melting/blaze" },
@@ -449,14 +453,10 @@ export function recipeRemovals() {
       { id: "tconstruct:smeltery/melting/metal/iron/raw_block" },
       { id: "tconstruct:smeltery/melting/metal/iron/raw" },
       { id: "tconstruct:smeltery/melting/metal/rose_gold/silky_cloth" },
-      { id: "tconstruct:smeltery/melting/metal/silver/ore_dense" },
       { id: "tconstruct:smeltery/melting/metal/silver/ore_singular" },
-      { id: "tconstruct:smeltery/melting/metal/silver/ore_sparse" },
       { id: "tconstruct:smeltery/melting/metal/silver/raw_block" },
       { id: "tconstruct:smeltery/melting/metal/silver/raw" },
-      { id: "tconstruct:smeltery/melting/metal/tin/ore_dense" },
       { id: "tconstruct:smeltery/melting/metal/tin/ore_singular" },
-      { id: "tconstruct:smeltery/melting/metal/tin/ore_sparse" },
       { id: "tconstruct:smeltery/melting/metal/tin/raw_block" },
       { id: "tconstruct:smeltery/melting/metal/tin/raw" },
 
@@ -464,6 +464,7 @@ export function recipeRemovals() {
       { id: "tconstruct:smeltery/melting/obsidian/block" },
       { id: "tconstruct:smeltery/melting/obsidian/chest" },
       { id: "tconstruct:smeltery/melting/obsidian/dust" },
+      // @ts-expect-error Recipe didn't generate?
       { id: "tconstruct:smeltery/melting/obsidian/foundry_controler" },
       { id: "tconstruct:smeltery/melting/obsidian/foundry_io" },
       { id: "tconstruct:smeltery/melting/obsidian/pane" },
@@ -527,6 +528,7 @@ export function recipeRemovals() {
 
       { output: "automobility:auto_mechanic_table" },
       { output: "automobility:automobile_assembler" },
+      // @ts-expect-error Recipe didn't generate?
       { type: "automobility:automobile_assembler" },
       { type: "ad_astra:fuel_conversion" },
 
@@ -559,11 +561,10 @@ export function recipeRemovals() {
       { output: "farmersdelight:cooking_pot" },
       { output: "campanion:rope" },
 
-      { mod: "lchunkloader" },
-
       { output: "immersive_aircraft:boiler" },
       { output: "immersive_aircraft:engine" },
       { output: "immersive_aircraft:nether_engine" },
+      // @ts-expect-error Recipe didn't generate?
       { output: "immersive_aircraft:large_propeller" },
       { output: "immersive_aircraft:airship" },
       { output: "immersive_aircraft:gyrodyne" },
@@ -726,7 +727,8 @@ export function recipeRemovals() {
       // farmers delight
       { type: "farmersdelight:cutting", input: "minecraft:gravel" },
       { type: "farmersdelight:cutting", input: "farmersdelight:wild_rice" },
-    ].forEach((recipe) => {
+    ];
+    recipeRemovals.forEach((recipe) => {
       event.remove(recipe);
     });
 
@@ -749,26 +751,25 @@ export function recipeRemovals() {
       "green",
       "red",
       "black",
-    ];
+    ] as const;
     colors.forEach((color) => event.remove({ output: `yttr:${color}_project_table` }));
 
     // Define the array of materials
-    const materials = ["techreborn:bronze", "techreborn:silver"];
+    const materials = ["techreborn:bronze", "techreborn:silver"] as const;
 
     // Define a function to remove all recipes with a given material
-    function removeRecipes(material) {
-      event.remove({ output: material + "_helmet" });
-      event.remove({ output: material + "_chestplate" });
-      event.remove({ output: material + "_leggings" });
-      event.remove({ output: material + "_boots" });
-      event.remove({ output: material + "_axe" });
-      event.remove({ output: material + "_sword" });
-      event.remove({ output: material + "_pickaxe" });
-      event.remove({ output: material + "_hoe" });
-      event.remove({ output: material + "_shovel" });
-    }
 
-    materials.forEach(removeRecipes);
+    materials.forEach((material) => {
+      event.remove({ output: `${material}_helmet` });
+      event.remove({ output: `${material}_chestplate` });
+      event.remove({ output: `${material}_leggings` });
+      event.remove({ output: `${material}_boots` });
+    });
+    event.remove({ output: "techreborn:bronze_axe" });
+    event.remove({ output: "techreborn:bronze_sword" });
+    event.remove({ output: "techreborn:bronze_pickaxe" });
+    event.remove({ output: "techreborn:bronze_hoe" });
+    event.remove({ output: "techreborn:bronze_spade" }); // TR calls shovels "spades". 🤔
 
     const metal = [
       "tungstensteel",
@@ -784,7 +785,7 @@ export function recipeRemovals() {
       "zinc",
       "nickel",
       "platinum",
-    ];
+    ] as const;
 
     metal.forEach((metal) => {
       event.remove({ output: `techreborn:${metal}_plate` });
@@ -793,9 +794,40 @@ export function recipeRemovals() {
       event.remove({ output: `techreborn:${metal}_storage_block_stairs` });
       event.remove({ output: `techreborn:${metal}_storage_block_slab` });
       event.remove({ output: `techreborn:${metal}_storage_block_wall` });
-      event.remove({ output: `techreborn:${metal}_dust` });
-      event.remove({ output: `techreborn:${metal}_small_dust` });
+
       event.remove({ output: `techreborn:${metal}_nugget` });
+    });
+
+    const metalsWithDusts = [
+      "chrome",
+      "titanium",
+      "nickel",
+      "bronze",
+      "aluminum",
+      "platinum",
+      "brass",
+      "zinc",
+      "nickel",
+      "platinum",
+    ] as const;
+
+    metalsWithDusts.forEach((metal) => {
+      event.remove({ output: `techreborn:${metal}_dust` });
+    });
+
+    const metalsWithSmallDusts = [
+      "chrome",
+      "titanium",
+      "nickel",
+      "tungsten",
+      "platinum",
+      "zinc",
+      "nickel",
+      "platinum",
+    ] as const;
+
+    metalsWithSmallDusts.forEach((dust) => {
+      event.remove({ output: `techreborn:${dust}_small_dust` });
     });
 
     // remove unused plate materials.
@@ -814,72 +846,77 @@ export function recipeRemovals() {
       "obsidian",
       "redstone",
       "silicon",
-    ];
+    ] as const;
 
     plates.forEach((plate) => {
       event.remove({ output: `techreborn:${plate}_plate` });
     });
 
+    interface Dust {
+      name: string;
+      hasSmall: boolean;
+      noLarge?: boolean;
+    }
     const dusts = [
-      ["almandine", false],
-      ["amethyst", true],
-      ["andesite", true],
-      ["andradite", false],
-      ["ashes", true],
-      ["basalt", true],
-      ["bauxite", false],
-      ["bronze", false],
-      ["calcite", true],
-      ["charcoal", true],
-      ["cinnabar", false],
-      ["clay", true],
-      ["coal", true],
-      ["dark_ashes", true],
-      ["diamond", true],
-      ["diorite", true],
-      ["electrum", true],
-      ["emerald", false],
-      ["ender_eye", false],
-      ["ender_pearl", false], // ae2 ender dust replaces it
-      ["endstone", false],
-      ["flint", true],
-      ["galena", true],
-      ["granite", true],
-      ["grossular", false],
-      ["invar", false],
-      ["lazurite", true],
-      ["magnesium", false],
-      ["manganese", false],
-      ["marble", false],
-      ["netherrack", true],
-      ["nickel", false],
-      ["obsidian", false],
-      ["olivine", true],
-      ["phosphorous", false],
-      ["pyrite", false],
-      ["pyrope", false],
-      ["quartz", false],
-      ["saltpeter", false],
-      ["saw", true],
-      ["sodalite", false],
-      ["spessartine", false],
-      ["sphalerite", false],
-      ["steel", true],
-      ["sulfur", false],
-      ["uvarovite", false],
-      ["glowstone", true],
-      ["redstone", true],
-      ["peridot", false],
-      ["red_garnet", false],
-      ["ruby", false],
-      ["sapphire", false],
-      ["yellow_garnet", false],
-    ];
+      { name: "almandine", hasSmall: false },
+      { name: "amethyst", hasSmall: false },
+      { name: "andesite", hasSmall: true },
+      { name: "andradite", hasSmall: false },
+      { name: "ashes", hasSmall: true },
+      { name: "basalt", hasSmall: true },
+      { name: "bauxite", hasSmall: false },
+      { name: "bronze", hasSmall: false },
+      { name: "calcite", hasSmall: true },
+      { name: "charcoal", hasSmall: true },
+      { name: "cinnabar", hasSmall: false },
+      { name: "clay", hasSmall: true },
+      { name: "coal", hasSmall: true },
+      { name: "dark_ashes", hasSmall: true },
+      { name: "diamond", hasSmall: true },
+      { name: "diorite", hasSmall: true },
+      { name: "electrum", hasSmall: true },
+      { name: "emerald", hasSmall: false },
+      { name: "ender_eye", hasSmall: false },
+      { name: "ender_pearl", hasSmall: false },
+      { name: "endstone", hasSmall: false },
+      { name: "flint", hasSmall: true },
+      { name: "galena", hasSmall: true },
+      { name: "granite", hasSmall: true },
+      { name: "grossular", hasSmall: false },
+      { name: "invar", hasSmall: false },
+      { name: "lazurite", hasSmall: true },
+      { name: "magnesium", hasSmall: false },
+      { name: "manganese", hasSmall: false },
+      { name: "marble", hasSmall: false },
+      { name: "netherrack", hasSmall: true },
+      { name: "nickel", hasSmall: false },
+      { name: "obsidian", hasSmall: false },
+      { name: "olivine", hasSmall: true },
+      { name: "phosphorous", hasSmall: false },
+      { name: "pyrite", hasSmall: false },
+      { name: "pyrope", hasSmall: false },
+      { name: "quartz", hasSmall: false },
+      { name: "saltpeter", hasSmall: false },
+      { name: "saw", hasSmall: true },
+      { name: "sodalite", hasSmall: false },
+      { name: "spessartine", hasSmall: false },
+      { name: "sphalerite", hasSmall: false },
+      { name: "steel", hasSmall: true },
+      { name: "sulfur", hasSmall: false },
+      { name: "uvarovite", hasSmall: false },
+      { name: "glowstone", hasSmall: true },
+      { name: "redstone", hasSmall: true },
+      { name: "peridot", hasSmall: false },
+      { name: "red_garnet", hasSmall: false },
+      { name: "ruby", hasSmall: false },
+      { name: "sapphire", hasSmall: false },
+      { name: "yellow_garnet", hasSmall: false },
+    ] as const satisfies Dust[];
     dusts.forEach((dust) => {
-      if (!dust[1]) {
-        event.remove({ output: `techreborn:${dust[0]}_dust` });
+      if (dust.hasSmall) {
+        event.remove({ output: `techreborn:${dust.name}_small_dust` });
       }
-      event.remove({ output: `techreborn:${dust[0]}_small_dust` });
+      if (dust.name != "glowstone" && dust.name != "redstone") event.remove({ output: `techreborn:${dust.name}_dust` });
     });
 
     MATERIALS.forEach((material) => {
@@ -887,7 +924,7 @@ export function recipeRemovals() {
     });
 
     for (let recipe of CRUSHING_RECIPES_TO_BECOME_GRINDING) {
-      event.remove({ type: "create:crushing", input: recipe[0] });
+      event.remove({ type: "create:crushing", input: recipe.input.item });
     }
   });
 }

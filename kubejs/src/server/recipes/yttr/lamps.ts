@@ -1,26 +1,28 @@
 export function yttrLamps() {
   //Lamp Recipe Fixes
   onEvent("recipes", (event) => {
-    const lampTypes = ["lamp", "fixture", "cage_lamp", "panel"];
+    type OpenObject = { [key in string]: string | number | boolean | Internal.CompoundTag_ };
+
+    const lampTypes = ["lamp", "fixture", "cage_lamp", "panel"] as const;
     const lampColors = [
       //don't include colorless
-      ["white", "$minecraft:white_dye"],
-      ["orange", "minecraft:orange_dye"],
-      ["magenta", "minecraft:white_dye"],
-      ["light_blue", "minecraft:light_blue_dye"],
-      ["yellow", "minecraft:yellow_dye"],
-      ["lime", "minecraft:lime_dye"],
-      ["pink", "minecraft:pink_dye"],
-      ["gray", "minecraft:gray_dye"],
-      ["light_gray", "minecraft:light_gray_dye"],
-      ["cyan", "minecraft:cyan_dye"],
-      ["purple", "minecraft:purple_dye"],
-      ["blue", "minecraft:blue_dye"],
-      ["brown", "minecraft:brown_dye"],
-      ["green", "minecraft:green_dye"],
-      ["red", "minecraft:red_dye"],
-      ["black", "minecraft:black_dye"],
-      ["teal", "yttr:yttrium_dust"],
+      { color: "white", material: "$minecraft:white_dye" },
+      { color: "orange", material: "minecraft:orange_dye" },
+      { color: "magenta", material: "minecraft:white_dye" },
+      { color: "light_blue", material: "minecraft:light_blue_dye" },
+      { color: "yellow", material: "minecraft:yellow_dye" },
+      { color: "lime", material: "minecraft:lime_dye" },
+      { color: "pink", material: "minecraft:pink_dye" },
+      { color: "gray", material: "minecraft:gray_dye" },
+      { color: "light_gray", material: "minecraft:light_gray_dye" },
+      { color: "cyan", material: "minecraft:cyan_dye" },
+      { color: "purple", material: "minecraft:purple_dye" },
+      { color: "blue", material: "minecraft:blue_dye" },
+      { color: "brown", material: "minecraft:brown_dye" },
+      { color: "green", material: "minecraft:green_dye" },
+      { color: "red", material: "minecraft:red_dye" },
+      { color: "black", material: "minecraft:black_dye" },
+      { color: "teal", material: "yttr:yttrium_dust" },
     ];
 
     //Lamp recipe fixes
@@ -37,12 +39,15 @@ export function yttrLamps() {
           "minecraft:redstone_torch",
         ])
         .modifyResult((grid, result) => {
-          let item = grid.find(Ingredient.of(`yttr:${lamp}`).ignoreNBT());
+          let item = grid.find(Item.of(`yttr:${lamp}`).ignoreNBT());
           let inputNbt = item.nbt || {};
 
-          let outputNbt = {};
-          outputNbt.Inverted = !inputNbt.Inverted;
-          outputNbt.LampColor = inputNbt.LampColor || "colorless";
+          let outputNbt: OpenObject = {};
+          if ("Inverted" in inputNbt) outputNbt.Inverted = !inputNbt.Inverted;
+          if ("LampColor" in inputNbt) outputNbt.LampColor = (inputNbt.LampColor as string | undefined) || "colorless";
+          else {
+            outputNbt.LampColor = "colorless";
+          }
           return result.withNBT(outputNbt);
         })
         .keepIngredient("minecraft:redstone_torch")
@@ -55,16 +60,16 @@ export function yttrLamps() {
           "#yttr:lamp_dyes",
         ])
         .modifyResult((grid, result) => {
-          let item = grid.find(Ingredient.of(`yttr:${lamp}`).ignoreNBT());
+          let item = grid.find(Item.of(`yttr:${lamp}`).ignoreNBT());
           let dye = grid.find(`#yttr:lamp_dyes`);
           let inputNbt = item.nbt || {};
 
-          let outputNbt = {};
+          let outputNbt: OpenObject = {};
 
-          outputNbt.Inverted = !!inputNbt.Inverted;
+          if ("Inverted" in inputNbt) outputNbt.Inverted = !!inputNbt.Inverted;
           for (let i = 0; i < lampColors.length; ++i) {
-            if (dye.getId() === lampColors[i][1]) {
-              outputNbt.LampColor = lampColors[i][0];
+            if (dye.getId() === lampColors[i].material) {
+              outputNbt.LampColor = lampColors[i].color;
               break;
             }
           }

@@ -1,24 +1,17 @@
+import { CRUSHING_RECIPES_TO_BECOME_GRINDING, DEFAULT_GRIND_POWER, DEFAULT_GRIND_TIME } from "constants";
+
 export function techRebornGrinderRecipes() {
   onEvent("recipes", (event) => {
     crushingToGrinding(event);
-    [
+    const grinderRecipes = [
       {
-        input: [
-          {
-            item: "minecraft:pointed_dripstone",
-            count: 1,
-          },
-        ],
-        output: [
-          {
-            item: "minecraft:clay_ball",
-            count: 1,
-          },
-        ],
+        input: [{ item: "minecraft:pointed_dripstone", count: 1 }],
+        output: [{ item: "minecraft:clay_ball", count: 1 }],
         time: 100,
         power: 5,
       },
-    ].forEach((recipe) => {
+    ] as const;
+    grinderRecipes.forEach((recipe) => {
       event.custom({
         type: "techreborn:grinder",
         time: recipe.time,
@@ -29,7 +22,7 @@ export function techRebornGrinderRecipes() {
     });
   });
 
-  function crushingToGrinding(event) {
+  function crushingToGrinding(event: Internal.RecipeEventJS) {
     //Grinder
     // Remove all block techreborn grinding recipes
 
@@ -48,21 +41,11 @@ export function techRebornGrinderRecipes() {
     for (let recipe of CRUSHING_RECIPES_TO_BECOME_GRINDING) {
       event.custom({
         type: "techreborn:grinder",
-        time: recipe[3] || DEFAULT_GRIND_TIME,
-        power: recipe[4] || DEFAULT_GRIND_POWER,
+        time: "time" in recipe ? recipe.time : DEFAULT_GRIND_TIME,
+        power: "power" in recipe ? recipe.power : DEFAULT_GRIND_POWER,
 
-        ingredients: [
-          {
-            item: recipe[0],
-            count: 1,
-          },
-        ],
-        results: [
-          {
-            item: recipe[2],
-            count: recipe[1],
-          },
-        ],
+        ingredients: [{ item: recipe.input.item, count: 1 }],
+        results: [{ item: recipe.output.item, count: recipe.output.count }],
       });
     }
   }

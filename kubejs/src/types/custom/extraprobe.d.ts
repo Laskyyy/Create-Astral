@@ -23,7 +23,11 @@ declare namespace Internal {
 
   interface RecipeEventJS extends Internal.EventJS {
     custom<TRecipe extends { type: Special.RecipeType_ }>(o: TRecipe): Internal.RecipeJS;
-    shaped(result: Internal.IngredientJS_, pattern: Helper.Pattern, keys: { [key: string]: Internal.IngredientJS_ }): Internal.ShapedRecipeJS;
+    shaped(
+      result: Internal.IngredientJS_,
+      pattern: Helper.Pattern,
+      keys: { [key: string]: Internal.IngredientJS_ }
+    ): Internal.ShapedRecipeJS;
     shaped(output: Internal.ItemStackJS_, inputs: Internal.IngredientJS_[][]): Internal.ShapedRecipeJS;
     shapeless(result: Internal.IngredientJS_, items: Internal.IngredientJS_[]): Internal.ShapelessRecipeJS;
     smoking(output: Internal.ItemStackJS_, input: Internal.IngredientJS_): Internal.CookingRecipeJS;
@@ -46,7 +50,10 @@ declare namespace Internal {
     produceItem(item: IngredientJS_): this;
     produceSU(RPM: number, SU: number): this;
     requireItemTag(tag: `#${Special.ItemTag}`, count: number): this;
-    requireStructure(structure: string[][], key: {[key: string]: Special.Block | `${Special.Block}[${string}]` | `${Special.Block}{${string}}`})
+    requireStructure(
+      structure: string[][],
+      key: { [key: string]: Special.Block | `${Special.Block}[${string}]` | `${Special.Block}{${string}}` }
+    );
   }
 
   interface DocumentedRecipes {
@@ -176,7 +183,10 @@ declare namespace Special {
     | RecipeType
     | "createaddition:charging"
     | "createaddition:liquid_burning"
-    | "createaddition:rolling";
+    | "createaddition:rolling"
+    | "tconstruct:melting_fuel"
+    | "tconstruct:material_fluid"
+    | "tconstruct:material_melting";
 }
 
 declare namespace Custom {}

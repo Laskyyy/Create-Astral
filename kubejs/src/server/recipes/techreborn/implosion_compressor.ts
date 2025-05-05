@@ -1,7 +1,9 @@
+import { MATERIALS } from "constants";
+
 export function techRebornImplosionCompressorRecipes() {
   onEvent("recipes", (event) => {
     sheetImplosionCompressing(event);
-    [
+    const implosionCompressorRecipes = [
       {
         input: [
           { count: 64, item: "techreborn:coal_dust" },
@@ -14,7 +16,8 @@ export function techRebornImplosionCompressorRecipes() {
         power: 60,
         time: 1000,
       },
-    ].forEach((recipe) => {
+    ]
+    implosionCompressorRecipes.forEach((recipe) => {
       event.custom({
         type: "techreborn:implosion_compressor",
         power: recipe.power,
@@ -25,7 +28,7 @@ export function techRebornImplosionCompressorRecipes() {
     });
   });
 
-  function sheetImplosionCompressing(event) {
+  function sheetImplosionCompressing(event: Internal.RecipeEventJS) {
     MATERIALS.forEach((material) => {
       event.custom({
         type: "techreborn:implosion_compressor",

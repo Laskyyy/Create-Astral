@@ -1,11 +1,19 @@
+import { INGOT } from "fluid-constants";
+
 export function toolMaterialsRecipes() {
   onEvent("recipes", (event) => {
     customMeltingAndCasting(event);
     partMaterialRegistry(event);
   });
 
-  function customMeltingAndCasting(event) {
-    [
+  function customMeltingAndCasting(event: Internal.RecipeEventJS) {
+    interface MaterialRecipe {
+      fluid: Special.Fluid;
+      temp: number;
+      toolMaterial: string; // No special type for TConstruct tool materials
+    }
+
+    const materialRecipes: MaterialRecipe[] = [
       {
         fluid: "kubejs:molten_calorite",
         temp: 3000,
@@ -31,7 +39,8 @@ export function toolMaterialsRecipes() {
         temp: 425,
         toolMaterial: "tconstruct:shadow",
       },
-    ].forEach((recipe) => {
+    ];
+    materialRecipes.forEach((recipe) => {
       event.custom({
         type: "tconstruct:material_fluid",
         fluid: {
@@ -54,20 +63,29 @@ export function toolMaterialsRecipes() {
     });
   }
 
-  function partMaterialRegistry(event) {
-    [
-      //? ["material name", "actual resource namespace id", material value, needed material]
-      /// i have no idea what "needed material" means but its an integer soooo i'd just put 1 if i were you
-      /// im so good at 10:30 pm code documentationm X3 - _Shortman
-      ["radiant", "create:refined_radiance", 1, 1],
-      ["shadow", "create:shadow_steel", 1, 1],
-    ].forEach((recipe) => {
+  function partMaterialRegistry(event: Internal.RecipeEventJS) {
+    //? ["material name", "actual resource namespace id", material value, needed material]
+    /// i have no idea what "needed material" means but its an integer soooo i'd just put 1 if i were you
+    /// im so good at 10:30 pm code documentationm X3 - _Shortman
+
+    interface MaterialRegistry {
+      material: string;
+      ingredient: Special.Item;
+      value: number;
+      needed: number;
+    }
+
+    const materialRegistries: MaterialRegistry[] = [
+      { material: "radiant", ingredient: "create:refined_radiance", value: 1, needed: 1 },
+      { material: "shadow", ingredient: "create:shadow_steel", value: 1, needed: 1 },
+    ];
+    materialRegistries.forEach((recipe) => {
       event.custom({
         type: "tconstruct:material",
-        ingredient: { item: recipe[1] },
-        value: recipe[2],
-        needed: recipe[3],
-        material: recipe[0],
+        ingredient: { item: recipe.ingredient },
+        value: recipe.value,
+        needed: recipe.needed,
+        material: recipe.material,
       });
     });
   }
