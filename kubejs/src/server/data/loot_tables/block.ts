@@ -1,4 +1,4 @@
-type BlockThatIsAlsoAnItem = Special.Block & Special.Item
+type BlockThatIsAlsoAnItem = Special.Block & Special.Item;
 
 interface LootFunction {
   function: string;
@@ -18,7 +18,7 @@ export function yttrLootFix() {
   });
 
   // Taken from the old yttr_block_fix.js file
-  // ! Commented out entries aren't both blocks and items! 
+  // ! Commented out entries aren't both blocks and items!
   function yttrBlockFix(event: Internal.BlockLootEventJS) {
     const yttrBlocks: BlockThatIsAlsoAnItem[] = [
       "yttr:centrifuge",
@@ -149,16 +149,16 @@ export function yttrLootFix() {
         },
       ];
       functionArray.concat(
-        lampColors.map((color) => {
+        lampColors.map((lampColor) => {
           return {
             function: "minecraft:set_nbt",
-            tag: `{LampColor: \"${color}\"}`,
+            tag: `{LampColor: \"${lampColor}\"}`,
             conditions: [
               {
                 block: lamp,
                 condition: "minecraft:block_state_property",
                 properties: {
-                  color: color,
+                  color: lampColor,
                 },
               },
             ],

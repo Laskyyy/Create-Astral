@@ -36,30 +36,52 @@ export function rei() {
       "astralsignals:drives_decrypted_t3"
     );
 
-    function getCreatePotion(fluid: Internal.FluidStackJS_, type: string): boolean {
-      const createPotion = Fluid.of("create:potion").getId();
-      if (typeof fluid === "string") return false;
-      if ("getId" in fluid && "Bottle" in fluid.nbt) {
-        return fluid.getId() === createPotion && fluid.nbt.Bottle === type;
-      }
-      return false;
-    }
+    // My type-safe implementation doesn't work
 
-    //Create potion fluids. They have complicated nbt and we want to split them into 3 categories, so predicates must be used.
+    // function getCreatePotion(fluid: Internal.FluidStackJS_, type: string): boolean {
+    //   const createPotion = Fluid.of("create:potion").getId();
+    //   if (typeof fluid === "string") return false;
+    //   if ("getId" in fluid && "Bottle" in fluid.nbt) {
+    //     return fluid.getId() === createPotion && fluid.nbt.Bottle === type;
+    //   }
+    //   return false;
+    // }
+
+    // //Create potion fluids. They have complicated nbt and we want to split them into 3 categories, so predicates must be used.
+    // event.groupFluidsIf(
+    //   "createastral:rei_groups/create/potion",
+    //   Component.translate("text.rei.createastral.create.potion.regular"),
+    //   (fluid) => getCreatePotion(fluid, "REGULAR")
+    // );
+    // event.groupFluidsIf(
+    //   "createastral:rei_groups/create/splash_potion",
+    //   Component.translate("text.rei.createastral.create.potion.splash"),
+    //   (fluid) => getCreatePotion(fluid, "SPLASH")
+    // );
+    // event.groupFluidsIf(
+    //   "createastral:rei_groups/create/lingering_potion",
+    //   Component.translate("text.rei.createastral.create.potion.lingering"),
+    //   (fluid) => getCreatePotion(fluid, "LINGERING")
+    // );
+
+    let createPotion = Fluid.of("create:potion").getId();
     event.groupFluidsIf(
       "createastral:rei_groups/create/potion",
       Component.translate("text.rei.createastral.create.potion.regular"),
-      (fluid) => getCreatePotion(fluid, "REGULAR")
+      // @ts-expect-error Can't seem to make the type-safe way work.
+      (fluid) => fluid.getId() === createPotion && fluid.nbt.Bottle === "REGULAR"
     );
     event.groupFluidsIf(
       "createastral:rei_groups/create/splash_potion",
       Component.translate("text.rei.createastral.create.potion.splash"),
-      (fluid) => getCreatePotion(fluid, "SPLASH")
+      // @ts-expect-error Can't seem to make the type-safe way work.
+      (fluid) => fluid.getId() === createPotion && fluid.nbt.Bottle === "SPLASH"
     );
     event.groupFluidsIf(
       "createastral:rei_groups/create/lingering_potion",
       Component.translate("text.rei.createastral.create.potion.lingering"),
-      (fluid) => getCreatePotion(fluid, "LINGERING")
+      // @ts-expect-error Can't seem to make the type-safe way work.
+      (fluid) => fluid.getId() === createPotion && fluid.nbt.Bottle === "LINGERING"
     );
 
     //Packages

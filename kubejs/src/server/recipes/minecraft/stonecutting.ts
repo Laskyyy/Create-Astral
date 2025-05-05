@@ -208,9 +208,7 @@ export function minecraftStonecuttingRecipes() {
         event.stonecutting(`create:waxed_${state}_${block}`, `create:waxed_${block}`);
       }
     }
-    for (const state of OXIDIZATION_TYPES) {
-      // Other recipes that dont fit much of a pattern
-      // [Input string, Output string]
+    OXIDIZATION_TYPES.forEach((state) => {
       const otherCopperStonecuttingRecipes: StonecuttingRecipe[] = [
         { input: "minecraft:copper_block", outputs: [`minecraft:${state}_copper`] },
         { input: "minecraft:waxed_copper_block", outputs: [`minecraft:waxed_${state}_copper`] },
@@ -224,6 +222,6 @@ export function minecraftStonecuttingRecipes() {
           event.stonecutting(output, recipe.input);
         });
       });
-    }
+    });
   }
 }

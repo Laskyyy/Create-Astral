@@ -172,15 +172,15 @@ export function createCuttingRecipes() {
     CHIPPED_TABLES.forEach((table) => {
       event.forEachRecipe({ type: table }, (recipe) => {
         const tags: Special.ItemTag[] = JSON.parse(recipe.json.toString()).tags;
-        tags.forEach((tag) => {
-          Ingredient.of(`#${tag}`)
+        tags.forEach((itemTag) => {
+          Ingredient.of(`#${itemTag}`)
             .getStacks()
             .forEach((item: any) => {
               event.custom({
                 type: "create:cutting",
                 ingredients: [
                   {
-                    tag: tag,
+                    tag: itemTag,
                   },
                 ],
                 results: [

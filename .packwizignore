@@ -20,7 +20,7 @@ kubejs/package-lock.json
 kubejs/package.json
 kubejs/tsconfig.json
 kubejs/vite.config.ts
-kubejs/node-modules
+kubejs/node_modules
 
 # The contents of the serverpack folder will automatically get lifted to the root directory on build
 serverpack

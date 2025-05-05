@@ -14,9 +14,10 @@ export function villagerTrades() {
 
   interface CustomTradesToAddDefinition {
     profession: Special.VillagerProfession;
-    trades: {
-      [tier in (typeof VillagerTiers)[keyof typeof VillagerTiers]]?: TradeOffer[];
-    };
+    offers: {
+      tier: (typeof VillagerTiers)[keyof typeof VillagerTiers];
+      trades: TradeOffer[];
+    }[];
   }
 
   interface TradeOffer {
@@ -47,225 +48,285 @@ export function villagerTrades() {
     const customTradesToAdd: CustomTradesToAddDefinition[] = [
       {
         profession: "minecraft:armorer",
-        trades: {
-          [VillagerTiers.APPRENTICE]: [
-            {
-              buyItems: [Item.of("minecraft:flint", 18)],
-              sellItem: "createastral:sturdy_helmet",
-            },
-          ],
-          [VillagerTiers.EXPERT]: [
-            {
-              buyItems: [Item.of("minecraft:emerald", 25)],
-              sellItem: "createastral:sturdy_chestplate",
-            },
-            {
-              buyItems: [Item.of("minecraft:emerald", 20)],
-              sellItem: "createastral:sturdy_leggings",
-            },
-          ],
-          [VillagerTiers.MASTER]: [
-            {
-              buyItems: [Item.of("minecraft:emerald", 20)],
-              sellItem: "createastral:sturdy_helmet",
-            },
-            {
-              buyItems: [Item.of("minecraft:emerald", 27)],
-              sellItem: "createastral:sturdy_chestplate",
-            },
-            {
-              buyItems: [Item.of("minecraft:emerald", 23)],
-              sellItem: "createastral:sturdy_boots",
-            },
-          ],
-        },
+        offers: [
+          {
+            tier: VillagerTiers.APPRENTICE,
+            trades: [
+              {
+                buyItems: [Item.of("minecraft:flint", 18)],
+                sellItem: "createastral:sturdy_helmet",
+              },
+            ],
+          },
+          {
+            tier: VillagerTiers.EXPERT,
+            trades: [
+              {
+                buyItems: [Item.of("minecraft:emerald", 25)],
+                sellItem: "createastral:sturdy_chestplate",
+              },
+              {
+                buyItems: [Item.of("minecraft:emerald", 20)],
+                sellItem: "createastral:sturdy_leggings",
+              },
+            ],
+          },
+          {
+            tier: VillagerTiers.MASTER,
+            trades: [
+              {
+                buyItems: [Item.of("minecraft:emerald", 20)],
+                sellItem: "createastral:sturdy_helmet",
+              },
+              {
+                buyItems: [Item.of("minecraft:emerald", 27)],
+                sellItem: "createastral:sturdy_chestplate",
+              },
+              {
+                buyItems: [Item.of("minecraft:emerald", 23)],
+                sellItem: "createastral:sturdy_boots",
+              },
+            ],
+          },
+        ],
       },
       {
         profession: "minecraft:toolsmith",
-        trades: {
-          [VillagerTiers.APPRENTICE]: [
-            {
-              buyItems: [Item.of("minecraft:flint", 18)],
-              sellItem: "createastral:andesite_compound",
-            },
-          ],
-          [VillagerTiers.JOURNEYMAN]: [
-            {
-              buyItems: [Item.of("minecraft:gravel", 1)],
-              sellItem: "minecraft:flint",
-            },
-            {
-              buyItems: [Item.of("minecraft:gold_ingot", 4)],
-              sellItem: "create:wrench",
-            },
-            {
-              buyItems: [Item.of("minecraft:flint", 8)],
-              sellItem: "create:shaft",
-            },
-          ],
-          [VillagerTiers.EXPERT]: [
-            {
-              buyItems: [Item.of("minecraft:flint", 12)],
-              sellItem: "minecraft:iron_pickaxe",
-            },
-            {
-              buyItems: [Item.of("minecraft:flint", 10)],
-              sellItem: "minecraft:iron_shovel",
-            },
-          ],
-          [VillagerTiers.MASTER]: [
-            {
-              buyItems: [Item.of("minecraft:emerald", 6)],
-              sellItem: "createastral:bronze_sheet",
-            },
-            {
-              buyItems: [Item.of("minecraft:emerald", 12)],
-              sellItem: "create:sturdy_sheet",
-            },
-          ],
-        },
+        offers: [
+          {
+            tier: VillagerTiers.APPRENTICE,
+            trades: [
+              {
+                buyItems: [Item.of("minecraft:flint", 18)],
+                sellItem: "createastral:andesite_compound",
+              },
+            ],
+          },
+          {
+            tier: VillagerTiers.JOURNEYMAN,
+            trades: [
+              {
+                buyItems: [Item.of("minecraft:gravel", 1)],
+                sellItem: "minecraft:flint",
+              },
+              {
+                buyItems: [Item.of("minecraft:gold_ingot", 4)],
+                sellItem: "create:wrench",
+              },
+              {
+                buyItems: [Item.of("minecraft:flint", 8)],
+                sellItem: "create:shaft",
+              },
+            ],
+          },
+          {
+            tier: VillagerTiers.EXPERT,
+            trades: [
+              {
+                buyItems: [Item.of("minecraft:flint", 12)],
+                sellItem: "minecraft:iron_pickaxe",
+              },
+              {
+                buyItems: [Item.of("minecraft:flint", 10)],
+                sellItem: "minecraft:iron_shovel",
+              },
+            ],
+          },
+          {
+            tier: VillagerTiers.MASTER,
+            trades: [
+              {
+                buyItems: [Item.of("minecraft:emerald", 6)],
+                sellItem: "createastral:bronze_sheet",
+              },
+              {
+                buyItems: [Item.of("minecraft:emerald", 12)],
+                sellItem: "create:sturdy_sheet",
+              },
+            ],
+          },
+        ],
       },
       {
         profession: "minecraft:weaponsmith",
-        trades: {
-          [VillagerTiers.EXPERT]: [
-            {
-              buyItems: [Item.of("minecraft:flint", 15)],
-              sellItem: "tconstruct:dagger",
-            },
-            {
-              buyItems: [Item.of("minecraft:flint", 16)],
-              sellItem: "tconstruct:sword",
-            },
-          ],
-          [VillagerTiers.MASTER]: [
-            {
-              buyItems: [Item.of("minecraft:flint", 17)],
-              sellItem: "tconstruct:hand_axe",
-            },
-            {
-              buyItems: [Item.of("minecraft:flint", 18)],
-              sellItem: "tconstruct:cleaver",
-            },
-          ],
-        },
+        offers: [
+          {
+            tier: VillagerTiers.EXPERT,
+            trades: [
+              {
+                buyItems: [Item.of("minecraft:flint", 15)],
+                sellItem: "tconstruct:dagger",
+              },
+              {
+                buyItems: [Item.of("minecraft:flint", 16)],
+                sellItem: "tconstruct:sword",
+              },
+            ],
+          },
+          {
+            tier: VillagerTiers.MASTER,
+            trades: [
+              {
+                buyItems: [Item.of("minecraft:flint", 17)],
+                sellItem: "tconstruct:hand_axe",
+              },
+              {
+                buyItems: [Item.of("minecraft:flint", 18)],
+                sellItem: "tconstruct:cleaver",
+              },
+            ],
+          },
+        ],
       },
       {
         profession: "minecraft:cleric",
-        trades: {
-          [VillagerTiers.MASTER]: [
-            {
-              buyItems: [Item.of("ad_astra:moon_sand", 20)],
-              sellItem: "kubejs:shimmer_bucket",
-            },
-          ],
-        },
+        offers: [
+          {
+            tier: VillagerTiers.MASTER,
+            trades: [
+              {
+                buyItems: [Item.of("ad_astra:moon_sand", 20)],
+                sellItem: "kubejs:shimmer_bucket",
+              },
+            ],
+          },
+        ],
       },
       {
         profession: "techreborn:metallurgist",
-        trades: {
-          [VillagerTiers.NOVICE]: [
-            {
-              buyItems: [Item.of("minecraft:emerald", 10)],
-              sellItem: "createastral:bronze_sheet",
-            },
-            {
-              buyItems: [Item.of("minecraft:gold_ingot", 5)],
-              sellItem: "create:wrench",
-            },
-          ],
-          [VillagerTiers.APPRENTICE]: [
-            {
-              buyItems: [Item.of("minecraft:emerald", 10)],
-              sellItem: "create:cogwheel",
-            },
-          ],
-          [VillagerTiers.JOURNEYMAN]: [
-            {
-              buyItems: [Item.of("minecraft:emerald", 7)],
-              sellItem: "createastral:bronze_sheet",
-            },
-            {
-              buyItems: [Item.of("minecraft:emerald", 7)],
-              sellItem: "create:iron_sheet",
-            },
-            {
-              buyItems: [Item.of("minecraft:emerald", 6)],
-              sellItem: "create:copper_sheet",
-            },
-          ],
-          [VillagerTiers.EXPERT]: [
-            {
-              buyItems: [Item.of("minecraft:emerald", 10)],
-              sellItem: "create:minecart_coupling",
-            },
-            {
-              buyItems: [Item.of("minecraft:emerald", 9)],
-              sellItem: "create:whisk",
-            },
-            {
-              buyItems: [Item.of("minecraft:emerald", 9)],
-              sellItem: "create:sturdy_sheet",
-            },
-          ],
-          [VillagerTiers.MASTER]: [
-            {
-              buyItems: [Item.of("minecraft:emerald", 12)],
-              sellItem: "create:propeller",
-            },
-            {
-              buyItems: [Item.of("minecraft:emerald", 14)],
-              sellItem: "create:brass_hand",
-            },
-          ],
-        },
+        offers: [
+          {
+            tier: VillagerTiers.NOVICE,
+            trades: [
+              {
+                buyItems: [Item.of("minecraft:emerald", 10)],
+                sellItem: "createastral:bronze_sheet",
+              },
+              {
+                buyItems: [Item.of("minecraft:gold_ingot", 5)],
+                sellItem: "create:wrench",
+              },
+            ],
+          },
+          {
+            tier: VillagerTiers.APPRENTICE,
+            trades: [
+              {
+                buyItems: [Item.of("minecraft:emerald", 10)],
+                sellItem: "create:cogwheel",
+              },
+            ],
+          },
+          {
+            tier: VillagerTiers.JOURNEYMAN,
+            trades: [
+              {
+                buyItems: [Item.of("minecraft:emerald", 7)],
+                sellItem: "createastral:bronze_sheet",
+              },
+              {
+                buyItems: [Item.of("minecraft:emerald", 7)],
+                sellItem: "create:iron_sheet",
+              },
+              {
+                buyItems: [Item.of("minecraft:emerald", 6)],
+                sellItem: "create:copper_sheet",
+              },
+            ],
+          },
+          {
+            tier: VillagerTiers.EXPERT,
+            trades: [
+              {
+                buyItems: [Item.of("minecraft:emerald", 10)],
+                sellItem: "create:minecart_coupling",
+              },
+              {
+                buyItems: [Item.of("minecraft:emerald", 9)],
+                sellItem: "create:whisk",
+              },
+              {
+                buyItems: [Item.of("minecraft:emerald", 9)],
+                sellItem: "create:sturdy_sheet",
+              },
+            ],
+          },
+          {
+            tier: VillagerTiers.MASTER,
+            trades: [
+              {
+                buyItems: [Item.of("minecraft:emerald", 12)],
+                sellItem: "create:propeller",
+              },
+              {
+                buyItems: [Item.of("minecraft:emerald", 14)],
+                sellItem: "create:brass_hand",
+              },
+            ],
+          },
+        ],
       },
       {
         profession: "techreborn:electrician",
-        trades: {
-          [VillagerTiers.NOVICE]: [
-            {
-              buyItems: [Item.of("create:andesite_alloy", 2)],
-              sellItem: "createaddition:copper_wire",
-            },
-          ],
-          [VillagerTiers.APPRENTICE]: [
-            {
-              buyItems: [Item.of("minecraft:flint", 3)],
-              sellItem: "minecraft:redstone",
-            },
-            {
-              buyItems: [Item.of("create:andesite_alloy", 2)],
-              sellItem: "createaddition:gold_wire",
-            },
-          ],
-          [VillagerTiers.JOURNEYMAN]: [
-            {
-              buyItems: [Item.of("minecraft:flint", 6)],
-              sellItem: "minecraft:repeater",
-            },
-          ],
-          [VillagerTiers.EXPERT]: [
-            {
-              buyItems: [Item.of("create:andesite_alloy", 32)],
-              sellItem: "computercraft:computer_normal",
-            },
-            {
-              buyItems: [Item.of("create:andesite_alloy", 5)],
-              sellItem: "computercraft:cable",
-            },
-          ],
-          [VillagerTiers.MASTER]: [
-            {
-              buyItems: [Item.of("create:andesite_alloy", 10)],
-              sellItem: "minecraft:comparator",
-            },
-            {
-              buyItems: [Item.of("create:andesite_alloy", 10)],
-              sellItem: "minecraft:observer",
-            },
-          ],
-        },
+        offers: [
+          {
+            tier: VillagerTiers.NOVICE,
+            trades: [
+              {
+                buyItems: [Item.of("create:andesite_alloy", 2)],
+                sellItem: "createaddition:copper_wire",
+              },
+            ],
+          },
+          {
+            tier: VillagerTiers.APPRENTICE,
+            trades: [
+              {
+                buyItems: [Item.of("minecraft:flint", 3)],
+                sellItem: "minecraft:redstone",
+              },
+              {
+                buyItems: [Item.of("create:andesite_alloy", 2)],
+                sellItem: "createaddition:gold_wire",
+              },
+            ],
+          },
+          {
+            tier: VillagerTiers.JOURNEYMAN,
+            trades: [
+              {
+                buyItems: [Item.of("minecraft:flint", 6)],
+                sellItem: "minecraft:repeater",
+              },
+            ],
+          },
+          {
+            tier: VillagerTiers.EXPERT,
+            trades: [
+              {
+                buyItems: [Item.of("create:andesite_alloy", 32)],
+                sellItem: "computercraft:computer_normal",
+              },
+              {
+                buyItems: [Item.of("create:andesite_alloy", 5)],
+                sellItem: "computercraft:cable",
+              },
+            ],
+          },
+          {
+            tier: VillagerTiers.MASTER,
+            trades: [
+              {
+                buyItems: [Item.of("create:andesite_alloy", 10)],
+                sellItem: "minecraft:comparator",
+              },
+              {
+                buyItems: [Item.of("create:andesite_alloy", 10)],
+                sellItem: "minecraft:observer",
+              },
+            ],
+          },
+        ],
       },
     ];
 
@@ -278,9 +339,9 @@ export function villagerTrades() {
     event.removeModdedTrades();
 
     customTradesToAdd.forEach((trade) => {
-      Object.entries(trade.trades).forEach(([tier, offers]) => {
-        offers.forEach((offer) => {
-          event.addTrade(trade.profession, Number(tier), offer.buyItems, offer.sellItem);
+      trade.offers.forEach((offer) => {
+        offer.trades.forEach((tieredOffer) => {
+          event.addTrade(trade.profession, offer.tier, tieredOffer.buyItems, tieredOffer.sellItem);
         });
       });
     });

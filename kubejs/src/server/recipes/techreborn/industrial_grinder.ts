@@ -12,7 +12,7 @@ export function techRebornIndustrialGrinderRecipes() {
    * ```
    * [{item: "minecraft:raw_copper", count: 2}, {item: "minecraft:gold_nugget", count: 3}]
    * ```
-   * @param fluid - The fluid necessary to process the recipe.
+   * @param fluidName - The fluid necessary to process the recipe.
    * @param fluidAmount - The amount of fluid (in **mB**, not droplets!)
    * @param energy - Base Energy per tick used for the recipe. 16 E/t if not provided.
    * @param time - Base time in ticks to process the recipe. 100 ticks if not provided.
@@ -21,7 +21,7 @@ export function techRebornIndustrialGrinderRecipes() {
     event: Internal.RecipeEventJS,
     inputTag: string,
     outputs: { item: Special.Item; count?: number }[],
-    fluid: string,
+    fluidName: string,
     fluidAmount: number,
     energy?: number,
     time?: number
@@ -31,7 +31,7 @@ export function techRebornIndustrialGrinderRecipes() {
       power: energy ? energy : 16, // ?? doesn't work with numbers for some reason
       time: time ? time : 100,
       tank: {
-        fluid: fluid,
+        fluid: fluidName,
         amount: fluidAmount,
       },
       ingredients: [
@@ -52,7 +52,7 @@ export function techRebornIndustrialGrinderRecipes() {
    * ```
    * [{item: "minecraft:raw_copper", count: 2}, {item: "minecraft:gold_nugget", count: 3}]
    * ```
-   * @param fluid - The fluid necessary to process the recipe.
+   * @param fluidName - The fluid necessary to process the recipe.
    * @param fluidAmount - The amount of fluid (in **mB**, not droplets!)
    * @param inputCount - The amount of input item. 1 if not provided.
    * @param energy - Base Energy per tick used for the recipe. 16 E/t if not provided.
@@ -62,7 +62,7 @@ export function techRebornIndustrialGrinderRecipes() {
     event: Internal.RecipeEventJS,
     input: string,
     outputs: { item: Special.Item; count?: number }[],
-    fluid: string,
+    fluidName: string,
     fluidAmount: number,
     inputCount?: number,
     energy?: number,
@@ -73,7 +73,7 @@ export function techRebornIndustrialGrinderRecipes() {
       power: energy ? energy : 16,
       time: time ? time : 100,
       tank: {
-        fluid: fluid,
+        fluid: fluidName,
         amount: fluidAmount,
       },
       ingredients: [
@@ -91,13 +91,13 @@ export function techRebornIndustrialGrinderRecipes() {
    * ```
    * {item: item, count: count}
    * ```
-   * @param item - The item ID.
+   * @param itemName - The item ID.
    * @param count - The item amount. 1 if not provided.
    * @returns
    */
-  function itemCount(item: Special.Item, count?: number) {
+  function itemCount(itemName: Special.Item, count?: number) {
     return {
-      item: item,
+      item: itemName,
       count: count ? count : 1,
     };
   }

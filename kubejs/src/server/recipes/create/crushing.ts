@@ -539,11 +539,11 @@ export function createCrushingRecipes() {
 
     // vanilla ores
     const VANILLA_ORES = ["coal", "iron", "copper", "gold", "redstone", "emerald", "lapis", "diamond"] as const;
-    VANILLA_ORES.forEach((ore) => {
-      ores.push({ ore: ore, name: `minecraft:${ore}_ore`, block: "minecraft:cobblestone", bonus: 0 });
+    VANILLA_ORES.forEach((vanillaOre) => {
+      ores.push({ ore: vanillaOre, name: `minecraft:${vanillaOre}_ore`, block: "minecraft:cobblestone", bonus: 0 });
       ores.push({
-        ore: ore,
-        name: `minecraft:deepslate_${ore}_ore`,
+        ore: vanillaOre,
+        name: `minecraft:deepslate_${vanillaOre}_ore`,
         block: `minecraft:cobbled_deepslate`,
         bonus: 1,
       });
@@ -551,10 +551,10 @@ export function createCrushingRecipes() {
 
     // ad astra deepslate (these aren't used I think?)
     const AD_ASTRA_DEEPSLATE_ORES = ["desh", "ostrum", "calorite", "ice_shard"] as const;
-    AD_ASTRA_DEEPSLATE_ORES.forEach((ore) => {
+    AD_ASTRA_DEEPSLATE_ORES.forEach((adAstraDeepslateOre) => {
       ores.push({
-        ore: ore,
-        name: `ad_astra:deepslate_${ore}_ore`,
+        ore: adAstraDeepslateOre,
+        name: `ad_astra:deepslate_${adAstraDeepslateOre}_ore`,
         block: "minecraft:cobbled_deepslate",
         bonus: 1,
       });
@@ -562,20 +562,20 @@ export function createCrushingRecipes() {
 
     /// Ad Astra Planet's normal ores
     const AD_ASTRA_MOON_ORES = ["cheese", "desh", "iron", "ice_shard"] as const;
-    AD_ASTRA_MOON_ORES.forEach((ore) => {
-      ores.push({ ore: ore, name: `ad_astra:moon_${ore}_ore`, block: "ad_astra:moon_cobblestone", bonus: 1 });
+    AD_ASTRA_MOON_ORES.forEach((adAstraMoonOre) => {
+      ores.push({ ore: adAstraMoonOre, name: `ad_astra:moon_${adAstraMoonOre}_ore`, block: "ad_astra:moon_cobblestone", bonus: 1 });
     });
     const AD_ASTRA_MARS_ORES = ["iron", "diamond", "ostrum", "ice_shard"] as const;
-    AD_ASTRA_MARS_ORES.forEach((ore) => {
-      ores.push({ ore: ore, name: `ad_astra:mars_${ore}_ore`, block: "ad_astra:mars_cobblestone", bonus: 1 });
+    AD_ASTRA_MARS_ORES.forEach((adAstraMarsOre) => {
+      ores.push({ ore: adAstraMarsOre, name: `ad_astra:mars_${adAstraMarsOre}_ore`, block: "ad_astra:mars_cobblestone", bonus: 1 });
     });
     const AD_ASTRA_VENUS_ORES = ["coal", "gold", "diamond", "calorite"] as const;
-    AD_ASTRA_VENUS_ORES.forEach((ore) => {
-      ores.push({ ore: ore, name: `ad_astra:venus_${ore}_ore`, block: "ad_astra:venus_cobblestone", bonus: 1 });
+    AD_ASTRA_VENUS_ORES.forEach((adAstraVenusOre) => {
+      ores.push({ ore: adAstraVenusOre, name: `ad_astra:venus_${adAstraVenusOre}_ore`, block: "ad_astra:venus_cobblestone", bonus: 1 });
     });
     const AD_ASTRA_GLACIO_ORES = ["ice_shard", "coal", "copper", "iron", "lapis"] as const;
-    AD_ASTRA_GLACIO_ORES.forEach((ore) => {
-      ores.push({ ore: ore, name: `ad_astra:glacio_${ore}_ore`, block: "ad_astra:glacio_cobblestone", bonus: 1 });
+    AD_ASTRA_GLACIO_ORES.forEach((adAstraGlacioOre) => {
+      ores.push({ ore: adAstraGlacioOre, name: `ad_astra:glacio_${adAstraGlacioOre}_ore`, block: "ad_astra:glacio_cobblestone", bonus: 1 });
     });
 
     ores.forEach((ore) => {
