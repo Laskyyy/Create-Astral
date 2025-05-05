@@ -2,14 +2,22 @@ export function shapedRecipes() {
   onEvent("recipes", (event) => {
     ironAndDiamondRecipes(event);
     astralSignalsRecipes(event);
-    [
+    interface ShapedRecipe {
+      output: Internal.ItemStackJS_;
+      pattern: Helper.Pattern;
+      key: {
+        [key: string]: Internal.IngredientJS_;
+      };
+    }
+
+    const shapedRecipes: ShapedRecipe[] = [
       {
         output: "createastral:andesite_alloy_block",
         pattern: ["AAA", "AAA", "AAA"],
         key: { A: "create:andesite_alloy" },
       },
       {
-        output: "9x create:andesite_alloy",
+        output: Item.of("create:andesite_alloy", 9),
         pattern: ["A"],
         key: { A: "createastral:andesite_alloy_block" },
       },
@@ -19,7 +27,7 @@ export function shapedRecipes() {
         key: { A: "minecraft:charcoal" },
       },
       {
-        output: "9x minecraft:charcoal",
+        output: Item.of("minecraft:charcoal", 9),
         pattern: ["A"],
         key: { A: "createastral:charcoal_block" },
       },
@@ -66,7 +74,7 @@ export function shapedRecipes() {
         },
       },
       {
-        output: "4x minecraft:chest",
+        output: Item.of("minecraft:chest", 4),
         pattern: ["XXX", "X X", "XXX"],
         key: {
           X: "#minecraft:logs",
@@ -76,6 +84,7 @@ export function shapedRecipes() {
         output: "create:track",
         pattern: ["NSN", "NSN", "NSN"],
         key: {
+          // @ts-expect-error Missing tag?
           N: "#create:alloy_nuggets",
           S: "#create:sleepers",
         },
@@ -235,21 +244,21 @@ export function shapedRecipes() {
         output: "vinery:wine_rack_1",
         pattern: ["PSP", "STS", "PSP"],
         key: {
-          P: "#planks",
-          S: "#wooden_slabs",
-          T: "#wooden_trapdoors",
+          P: "#minecraft:planks",
+          S: "#minecraft:wooden_slabs",
+          T: "#minecraft:wooden_trapdoors",
         },
       },
       // Old school slab and stairs
       {
-        output: "6x createastral:blast-resistant_concrete_slab",
+        output: Item.of("createastral:blast-resistant_concrete_slab", 6),
         pattern: ["AAA"],
         key: {
           A: "createastral:blast-resistant_concrete",
         },
       },
       {
-        output: "4x createastral:blast-resistant_concrete_stairs",
+        output: Item.of("createastral:blast-resistant_concrete_stairs", 4),
         pattern: ["A  ", "AA ", "AAA"],
         key: {
           A: "createastral:blast-resistant_concrete",
@@ -312,7 +321,7 @@ export function shapedRecipes() {
         },
       },
       {
-        output: "8x minecraft:arrow",
+        output: Item.of("minecraft:arrow", 8),
         pattern: ["B", "B", "A"],
         key: {
           A: "minecraft:gunpowder",
@@ -367,7 +376,7 @@ export function shapedRecipes() {
         },
       },
       {
-        output: "8x doodads:platform",
+        output: Item.of("doodads:platform", 8),
         pattern: [" A ", "BBB", " A "],
         key: {
           A: "create:andesite_alloy",
@@ -550,7 +559,7 @@ export function shapedRecipes() {
         },
       },
       {
-        output: "4x extended_drawers:connector",
+        output: Item.of("extended_drawers:connector", 4),
         pattern: ["BBB", "BAB", "BBB"],
         key: {
           A: "techreborn:tin_plate",
@@ -558,7 +567,7 @@ export function shapedRecipes() {
         },
       },
       {
-        output: "2x ae2:wireless_booster",
+        output: Item.of("ae2:wireless_booster", 2),
         pattern: ["SCE", "III"],
         key: {
           S: "ae2:fluix_dust",
@@ -576,7 +585,7 @@ export function shapedRecipes() {
         },
       },
       {
-        output: "3x create:cogwheel",
+        output: Item.of("create:cogwheel", 3),
         pattern: ["AB"],
         key: {
           A: "create:andesite_alloy",
@@ -627,21 +636,21 @@ export function shapedRecipes() {
         },
       },
       {
-        output: "3x dustrial_decor:sheet_metal_door",
+        output: Item.of("dustrial_decor:sheet_metal_door", 3),
         pattern: ["AA", "AA", "AA"],
         key: {
           A: "dustrial_decor:sheet_metal",
         },
       },
       {
-        output: "3x dustrial_decor:rusty_iron_door",
+        output: Item.of("dustrial_decor:rusty_iron_door", 3),
         pattern: ["AA", "AA", "AA"],
         key: {
           A: "dustrial_decor:rusty_iron_ingot",
         },
       },
       {
-        output: "6x dustrial_decor:rusty_sheet_metal_treading",
+        output: Item.of("dustrial_decor:rusty_sheet_metal_treading", 6),
         pattern: ["AB", "BA"],
         key: {
           A: "dustrial_decor:rusty_sheet_metal",
@@ -661,6 +670,7 @@ export function shapedRecipes() {
         output: "createastral:andesite_compound",
         pattern: ["BBB", "AAA", "CCC"],
         key: {
+          // @ts-expect-error Missing tag?
           A: "#create:alloy_nuggets",
           B: "minecraft:andesite",
           C: "minecraft:clay_ball",
@@ -748,28 +758,28 @@ export function shapedRecipes() {
         },
       },
       {
-        output: "3x createdeco:andesite_door",
+        output: Item.of("createdeco:andesite_door", 3),
         pattern: ["AA", "AA", "AA"],
         key: {
           A: "create:andesite_alloy",
         },
       },
       {
-        output: "3x createdeco:brass_door",
+        output: Item.of("createdeco:brass_door", 3),
         pattern: ["AA", "AA", "AA"],
         key: {
           A: "create:brass_ingot",
         },
       },
       {
-        output: "3x createdeco:copper_door",
+        output: Item.of("createdeco:copper_door", 3),
         pattern: ["AA", "AA", "AA"],
         key: {
           A: "minecraft:copper_ingot",
         },
       },
       {
-        output: "3x createdeco:zinc_door",
+        output: Item.of("createdeco:zinc_door", 3),
         pattern: ["AA", "AA", "AA"],
         key: {
           A: "create:zinc_ingot",
@@ -826,7 +836,7 @@ export function shapedRecipes() {
         },
       },
       {
-        output: "10x minecraft:torch",
+        output: Item.of("minecraft:torch", 10),
         pattern: ["A", "B"],
         key: {
           A: "naturalist:glow_goop",
@@ -856,7 +866,7 @@ export function shapedRecipes() {
         },
       },
       {
-        output: "2x minecraft:mycelium",
+        output: Item.of("minecraft:mycelium", 2),
         pattern: ["CD", "DC"],
         key: {
           C: "ad_astra:cheese",
@@ -1231,7 +1241,7 @@ export function shapedRecipes() {
         },
       },
       {
-        output: "4x yttr:lamp",
+        output: Item.of("yttr:lamp", 4),
         pattern: ["ABA", "BCB", "ABA"],
         key: {
           A: "minecraft:iron_ingot",
@@ -1247,14 +1257,14 @@ export function shapedRecipes() {
         },
       },
       {
-        output: "4x doodads:asphalt_stair",
+        output: Item.of("doodads:asphalt_stair", 4),
         pattern: ["A  ", "AA ", "AAA"],
         key: {
           A: "doodads:asphalt",
         },
       },
       {
-        output: "6x doodads:asphalt_slab",
+        output: Item.of("doodads:asphalt_slab", 6),
         pattern: ["AAA"],
         key: {
           A: "doodads:asphalt",
@@ -1317,7 +1327,7 @@ export function shapedRecipes() {
         },
       },
       {
-        output: "2x create:fluid_pipe",
+        output: Item.of("create:fluid_pipe", 2),
         pattern: [" S ", "CCC", " S "], // horizontal
         key: {
           S: "#c:plates/copper",
@@ -1325,7 +1335,7 @@ export function shapedRecipes() {
         },
       },
       {
-        output: "2x create:fluid_pipe",
+        output: Item.of("create:fluid_pipe", 2),
         pattern: [" C ", "SCS", " C "], // vertical
         key: {
           S: "#c:plates/copper",
@@ -1350,7 +1360,7 @@ export function shapedRecipes() {
         },
       },
       {
-        output: "2x create:andesite_funnel",
+        output: Item.of("create:andesite_funnel", 2),
         pattern: ["A", "K"],
         key: {
           A: "create:andesite_alloy",
@@ -1358,7 +1368,7 @@ export function shapedRecipes() {
         },
       },
       {
-        output: "2x create:andesite_tunnel",
+        output: Item.of("create:andesite_tunnel", 2),
         pattern: ["AA", "KK"],
         key: {
           A: "create:andesite_alloy",
@@ -1366,7 +1376,7 @@ export function shapedRecipes() {
         },
       },
       {
-        output: "2x create:brass_funnel",
+        output: Item.of("create:brass_funnel", 2),
         pattern: ["E", "A", "K"],
         key: {
           A: "#c:ingots/brass",
@@ -1375,7 +1385,7 @@ export function shapedRecipes() {
         },
       },
       {
-        output: "2x create:brass_tunnel",
+        output: Item.of("create:brass_tunnel", 2),
         pattern: ["E ", "AA", "KK"],
         key: {
           A: "#c:ingots/brass",
@@ -1461,7 +1471,7 @@ export function shapedRecipes() {
         },
       },
       {
-        output: "6x tconstruct:gold_bars",
+        output: Item.of("tconstruct:gold_bars", 6),
         pattern: ["AAA", "AAA"],
         key: {
           A: "minecraft:gold_ingot",
@@ -1477,13 +1487,28 @@ export function shapedRecipes() {
           O: "ad_astra:oxygen_bucket",
         },
       },
-    ].forEach((recipe) => {
+    ] as const;
+    shapedRecipes.forEach((recipe) => {
       event.shaped(recipe.output, recipe.pattern, recipe.key);
     });
   });
 
-  function ironAndDiamondRecipes(event) {
-    const fullkit = {
+  function ironAndDiamondRecipes(event: Internal.RecipeEventJS) {
+    type FullKit = {
+      [gearName in (typeof names)[number]]: Helper.Pattern;
+    };
+    const names = [
+      "helmet",
+      "chestplate",
+      "leggings",
+      "boots",
+      "sword",
+      "pickaxe",
+      "shovel",
+      "axe",
+      "hoe",
+    ] as const satisfies string[];
+    const fullkit: FullKit = {
       helmet: ["SSS", "S S", "   "],
       chestplate: ["S S", "SSS", "SSS"],
       leggings: ["SSS", "S S", "S S"],
@@ -1494,25 +1519,27 @@ export function shapedRecipes() {
       axe: ["SS ", "SW ", " W "],
       hoe: ["SS ", " W ", " W "],
     };
-    const names = ["helmet", "chestplate", "leggings", "boots", "sword", "pickaxe", "shovel", "axe", "hoe"];
+
+    function createToolAndArmorRecipes(
+      event: Internal.RecipeEventJS,
+      output: Internal.IngredientJS_,
+      material: Internal.IngredientJS_,
+      toolname: (typeof names)[number]
+    ) {
+      let key: { S: Internal.IngredientJS_; W?: Internal.IngredientJS_ } = { S: material };
+      if (fullkit[toolname].join("").includes("W")) key.W = "minecraft:stick";
+      event.shaped(output, fullkit[toolname], key);
+    }
 
     names.forEach((name) => {
-      event.shaped("minecraft:iron_" + name, fullkit[name], {
-        S: "create:iron_sheet",
-        W: fullkit[name].join("").includes("W") ? "minecraft:stick" : null,
-      });
-      event.shaped("createastral:copper_" + name, fullkit[name], {
-        S: "minecraft:copper_ingot",
-        W: fullkit[name].join("").includes("W") ? "minecraft:stick" : null,
-      });
-      event.shaped("createastral:brass_" + name, fullkit[name], {
-        S: "create:brass_sheet",
-        W: fullkit[name].join("").includes("W") ? "minecraft:stick" : null,
-      });
+      createToolAndArmorRecipes(event, `minecraft:iron_${name}`, "create:iron_sheet", name);
+      createToolAndArmorRecipes(event, `createastral:copper_${name}`, "minecraft:copper_ingot", name);
+      createToolAndArmorRecipes(event, `createastral:brass_${name}`, "create:brass_sheet", name);
     });
 
-    ["helmet", "chestplate", "leggings", "boots"].forEach((name) => {
-      event.shaped("createastral:sturdy_" + name, fullkit[name], {
+    const armorNames = ["helmet", "chestplate", "leggings", "boots"] as const satisfies string[];
+    armorNames.forEach((name) => {
+      event.shaped(`createastral:sturdy_${name}`, fullkit[name], {
         S: "createastral:sturdy_sheet_block",
       });
     });
@@ -1524,8 +1551,16 @@ export function shapedRecipes() {
     });
   }
 
-  function astralSignalsRecipes(event) {
-    [
+  function astralSignalsRecipes(event: Internal.RecipeEventJS) {
+    interface AstralSignalsRecipe {
+      inputs: {
+        [key: string]: Internal.IngredientJS_;
+      };
+      shape: Helper.Pattern;
+      output: Internal.ItemStackJS_;
+    }
+
+    const astralSignalsRecipes: AstralSignalsRecipe[] = [
       {
         inputs: {
           A: "minecraft:copper_ingot",
@@ -1634,7 +1669,8 @@ export function shapedRecipes() {
         shape: ["BAB"],
         output: "astralsignals:yttric_polyvinyl_sheet",
       },
-    ].forEach((recipe) => {
+    ] as const;
+    astralSignalsRecipes.forEach((recipe) => {
       event.shaped(recipe.output, recipe.shape, recipe.inputs);
     });
   }

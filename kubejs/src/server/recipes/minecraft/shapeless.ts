@@ -1,83 +1,175 @@
 export function shapelessRecipes() {
   onEvent("recipes", (event) => {
     /// Manual-only recipes (cannot be automated with create mixers)
-    //? [[Input string], Output string, Recipe ID]
-    [
-      [["minecraft:magma_block", "minecraft:water_bucket"], "minecraft:obsidian", "washing_obsidian"],
-      [["minecraft:cobblestone"], "1x techreborn:andesite_dust", "andesite_dust"],
-    ].forEach((recipe) => {
-      event.shapeless(recipe[1], recipe[0]).id(`createastral:${recipe[2]}_manual_only`);
+    interface ManualOnlyRecipe {
+      input: Internal.IngredientJS_[];
+      output: Internal.IngredientJS_;
+      recipeID: string;
+    }
+
+    const manualOnlyRecipes: ManualOnlyRecipe[] = [
+      {
+        input: ["minecraft:magma_block", "minecraft:water_bucket"],
+        output: "minecraft:obsidian",
+        recipeID: "washing_obsidian",
+      },
+      {
+        input: ["minecraft:cobblestone"],
+        output: "techreborn:andesite_dust",
+        recipeID: "andesite_dust",
+      },
+    ] as const;
+    manualOnlyRecipes.forEach((recipe) => {
+      event.shapeless(recipe.output, recipe.input).id(`createastral:${recipe.recipeID}_manual_only`);
     });
 
     ////==================================////
 
     /// Non-manual-only recipes (can be automated with create mixers)
-    //? [[Input string], Output string]
-
-    [
-      [["techreborn:rubber", "#ae2:glass_cable"], "ae2:fluix_covered_cable"],
-      [["1x minecraft:diorite", "3x minecraft:sand"], "minecraft:granite"],
-      [["vinery:red_grape"], "1x vinery:red_grape_seeds"],
-      [["vinery:white_grape"], "1x vinery:white_grape_seeds"],
-      [["1x minecraft:diorite", "4x minecraft:flint"], "minecraft:andesite"],
-      [["minecraft:cobblestone", "3x minecraft:quartz"], "minecraft:diorite"],
-      [
-        ["computercraft:turtle_normal", "minecraft:iron_pickaxe", "3x minecraft:diamond"],
-        Item.of("computercraft:turtle_normal", {
+    interface ShapelessRecipe {
+      input: Internal.IngredientJS_[];
+      output: Internal.IngredientJS_;
+    }
+    const shapelessRecipes: ShapelessRecipe[] = [
+      {
+        input: ["techreborn:rubber", "#ae2:glass_cable"],
+        output: "ae2:fluix_covered_cable",
+      },
+      {
+        input: [Item.of("minecraft:diorite", 1), Item.of("minecraft:sand", 3)],
+        output: "minecraft:granite",
+      },
+      {
+        input: ["vinery:red_grape"],
+        output: Item.of("vinery:red_grape_seeds", 1),
+      },
+      {
+        input: ["vinery:white_grape"],
+        output: Item.of("vinery:white_grape_seeds", 1),
+      },
+      {
+        input: [Item.of("minecraft:diorite", 1), Item.of("minecraft:flint", 4)],
+        output: "minecraft:andesite",
+      },
+      {
+        input: ["minecraft:cobblestone", Item.of("minecraft:quartz", 3)],
+        output: "minecraft:diorite",
+      },
+      {
+        input: ["computercraft:turtle_normal", "minecraft:iron_pickaxe", Item.of("minecraft:diamond", 3)],
+        output: Item.of("computercraft:turtle_normal", {
           RightUpgrade: "minecraft:diamond_pickaxe",
         }),
-      ],
-      [
-        ["computercraft:turtle_normal", "minecraft:iron_axe", "3x minecraft:diamond"],
-        Item.of("computercraft:turtle_normal", {
+      },
+      {
+        input: ["computercraft:turtle_normal", "minecraft:iron_axe", Item.of("minecraft:diamond", 3)],
+        output: Item.of("computercraft:turtle_normal", {
           RightUpgrade: "minecraft:diamond_axe",
         }),
-      ],
-      [
-        ["computercraft:turtle_normal", "minecraft:iron_shovel", "minecraft:diamond"],
-        Item.of("computercraft:turtle_normal", {
+      },
+      {
+        input: ["computercraft:turtle_normal", "minecraft:iron_shovel", "minecraft:diamond"],
+        output: Item.of("computercraft:turtle_normal", {
           RightUpgrade: "minecraft:diamond_shovel",
         }),
-      ],
-      [
-        ["computercraft:turtle_normal", "minecraft:iron_hoe", "2x minecraft:diamond"],
-        Item.of("computercraft:turtle_normal", {
+      },
+      {
+        input: ["computercraft:turtle_normal", "minecraft:iron_hoe", Item.of("minecraft:diamond", 2)],
+        output: Item.of("computercraft:turtle_normal", {
           RightUpgrade: "minecraft:diamond_hoe",
         }),
-      ],
-      [
-        ["computercraft:turtle_normal", "minecraft:iron_sword", "2x minecraft:diamond"],
-        Item.of("computercraft:turtle_normal", {
+      },
+      {
+        input: ["computercraft:turtle_normal", "minecraft:iron_sword", Item.of("minecraft:diamond", 2)],
+        output: Item.of("computercraft:turtle_normal", {
           RightUpgrade: "minecraft:diamond_sword",
         }),
-      ],
-      [["create:track"], Item.of("dbe:track_end")],
-      [["ae2:sky_stone_block"], "ad_astra:sky_stone"],
-      [["minecraft:gravel"], "2x techreborn:andesite_dust"],
-      [["createastral:sturdy_sheet_block"], "4x create:sturdy_sheet"],
-      [["createastral:bronze_block"], "9x createastral:bronze_ingot"],
-      [["ad_astra:steel_block"], "9x ad_astra:steel_ingot"],
-      [["createastral:refined_radiance_block"], "9x create:refined_radiance"],
-      [["2x #c:slimeballs", "2x techreborn:sponge_piece"], "3x createastral:synthetic_slime"],
-      [["1x ad_astra:moon_stone", "1x astraladditions:moonset_crystal"], "1x createastral:moonset_stone"],
-      [["ad_astra:fuel_bucket"], "techreborn:nitro_diesel_bucket"],
-      [["ad_astra:oil_bucket"], "techreborn:oil_bucket"],
-      [["#c:plates/iron", "create:fluid_pipe"], "create:fluid_valve"],
-      [["createbigcannons:steel_scrap"], "ad_astra:steel_nugget"],
-      [["createbigcannons:bronze_scrap"], "techreborn:bronze_nugget"],
-      [["createbigcannons:nethersteel_nugget"], "ad_astra:ostrum_nugget"],
-      [["9x techreborn:bronze_nugget"], "createastral:bronze_ingot"],
-      [["createastral:bronze_ingot"], "9x techreborn:bronze_nugget"],
-      [["minecraft:wither_skeleton_skull"], "4x minecraft:wither_rose"],
-      [["astralfoods:fried_cod", "astralfoods:blaze_fries"], "astralfoods:blaze_fries_and_cod"],
-      [["create:dough", "minecraft:cyan_dye"], "tconstruct:sky_slime_ball"],
-    ].forEach((recipe) => {
-      event.shapeless(recipe[1], recipe[0]);
+      },
+      { input: ["create:track"], output: Item.of("dbe:track_end") },
+      {
+        input: ["ae2:sky_stone_block"],
+        output: "ad_astra:sky_stone",
+      },
+      {
+        input: ["minecraft:gravel"],
+        output: Item.of("techreborn:andesite_dust", 2),
+      },
+      {
+        input: ["createastral:sturdy_sheet_block"],
+        output: Item.of("create:sturdy_sheet", 4),
+      },
+      {
+        input: ["createastral:bronze_block"],
+        output: Item.of("createastral:bronze_ingot", 9),
+      },
+      {
+        input: ["ad_astra:steel_block"],
+        output: Item.of("ad_astra:steel_ingot", 9),
+      },
+      {
+        input: ["createastral:refined_radiance_block"],
+        output: Item.of("create:refined_radiance", 9),
+      },
+      {
+        input: [Ingredient.of("#c:slimeballs", 2), Item.of("techreborn:sponge_piece", 2)],
+        output: Item.of("createastral:synthetic_slime", 3),
+      },
+      {
+        input: [Item.of("ad_astra:moon_stone", 1), Item.of("astraladditions:moonset_crystal", 1)],
+        output: Item.of("createastral:moonset_stone", 1),
+      },
+      {
+        input: ["ad_astra:fuel_bucket"],
+        output: "techreborn:nitro_diesel_bucket",
+      },
+      {
+        input: ["ad_astra:oil_bucket"],
+        output: "techreborn:oil_bucket",
+      },
+      {
+        input: ["#c:plates/iron", "create:fluid_pipe"],
+        output: "create:fluid_valve",
+      },
+      {
+        input: ["createbigcannons:steel_scrap"],
+        output: "ad_astra:steel_nugget",
+      },
+      {
+        input: ["createbigcannons:bronze_scrap"],
+        output: "techreborn:bronze_nugget",
+      },
+      {
+        input: ["createbigcannons:nethersteel_nugget"],
+        output: "ad_astra:ostrum_nugget",
+      },
+      {
+        input: [Item.of("techreborn:bronze_nugget", 9)],
+        output: "createastral:bronze_ingot",
+      },
+      {
+        input: ["createastral:bronze_ingot"],
+        output: Item.of("techreborn:bronze_nugget", 9),
+      },
+      {
+        input: ["minecraft:wither_skeleton_skull"],
+        output: Item.of("minecraft:wither_rose", 4),
+      },
+      {
+        input: ["astralfoods:fried_cod", "astralfoods:blaze_fries"],
+        output: "astralfoods:blaze_fries_and_cod",
+      },
+      {
+        input: ["create:dough", "minecraft:cyan_dye"],
+        output: "tconstruct:sky_slime_ball",
+      },
+    ] as const;
+    shapelessRecipes.forEach((recipe) => {
+      event.shapeless(recipe.output, recipe.input);
     });
 
     // Put recipes that require special conditions here, e.g. returning empty buckets
     event
-      .shapeless("3x minecraft:paper", [
+      .shapeless(Item.of("minecraft:paper", 3), [
         "techreborn:saw_dust",
         "techreborn:saw_dust",
         "techreborn:saw_dust",

@@ -2,7 +2,17 @@ export function minecraftComposterRecipes() {
   onEvent("recipes", (event) => {
     //adding composting recipes for coral variants
     onEvent("recipes.compostables", (event) => {
-      const coral = [{ type: "tube" }, { type: "brain" }, { type: "bubble" }, { type: "fire" }, { type: "horn" }] as const;
+      interface Coral {
+        type: string;
+      }
+
+      const coral = [
+        { type: "tube" },
+        { type: "brain" },
+        { type: "bubble" },
+        { type: "fire" },
+        { type: "horn" },
+      ] as const satisfies Coral[];
 
       for (const corals of coral) {
         //normal coral

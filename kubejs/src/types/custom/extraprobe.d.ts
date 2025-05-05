@@ -3,11 +3,6 @@ declare namespace Helper {
   type Pattern = PatternRow[] & { length: 1 | 2 | 3 };
   type BigPatternRow = string;
   type BigPattern = BigPatternRow;
-
-  type ShapelessRecipe = Internal.IngredientJS_[] & { length: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 };
-  /** Slightly faster IngredientJS_. */
-  type IngredientJSLiteOne = Internal.ItemStackJS | Internal.FluidStackJS | Special.Item | Special.Fluid;
-  type IngredientJSLite = IngredientJSLiteOne | IngredientJSLiteOne[];
 }
 
 declare namespace Internal {
@@ -28,8 +23,19 @@ declare namespace Internal {
 
   interface RecipeEventJS extends Internal.EventJS {
     custom<TRecipe extends { type: Special.RecipeType_ }>(o: TRecipe): Internal.RecipeJS;
-    shaped(result: Internal.IngredientJS_, pattern: Helper.Pattern, keys: { [key: string]: Special.Item }): unknown;
-    shapeless(result: Internal.IngredientJS_, items: Helper.ShapelessRecipe): unknown;
+    shaped(result: Internal.IngredientJS_, pattern: Helper.Pattern, keys: { [key: string]: Internal.IngredientJS_ }): Internal.ShapedRecipeJS;
+    shaped(output: Internal.ItemStackJS_, inputs: Internal.IngredientJS_[][]): Internal.ShapedRecipeJS;
+    shapeless(result: Internal.IngredientJS_, items: Internal.IngredientJS_[]): Internal.ShapelessRecipeJS;
+    smoking(output: Internal.ItemStackJS_, input: Internal.IngredientJS_): Internal.CookingRecipeJS;
+    smelting(output: Internal.ItemStackJS_, input: Internal.IngredientJS_): Internal.CookingRecipeJS;
+    smithing(
+      output: Internal.ItemStackJS_,
+      base: Internal.IngredientJS_,
+      addition: Internal.IngredientJS_
+    ): Internal.SmithingRecipeJS;
+    blasting(output: Internal.ItemStackJS_, input: Internal.IngredientJS_): Internal.CookingRecipeJS;
+    stonecutting(output: Internal.ItemStackJS_, input: Internal.IngredientJS_): Internal.StonecuttingRecipeJS;
+    // campfire_cooking(output: Internal.ItemStackJS_, input: Internal.IngredientJS_): Internal.CookingRecipeJS;
   }
 
   interface CustomMachineryRecipes {

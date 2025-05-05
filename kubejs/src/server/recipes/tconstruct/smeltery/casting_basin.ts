@@ -1,219 +1,230 @@
+import { BUCKET, GEM, INGOT, SLIMEBALL } from "fluid-constants";
+
 export function castingBasinRecipes() {
   onEvent("recipes", (event) => {
-    // Fluid: [string Fluid Name, Fluid Amount]
-    // Result: string Item Name
-    // Cooling Time: Time in ticks
-    // Cast: [string Item Name, bool Cast Consumed] or null if none
-    [
+    interface CastingBasinRecipe {
+      fluidInput: {
+        fluid: Special.Fluid;
+        amount: number;
+      };
+      result: Special.Item;
+      coolingTime: number;
+      cast?: { item: Special.Item; consumed?: boolean } | { tag: Special.ItemTag; consumed?: boolean };
+    }
+
+    const castingBasinRecipes: CastingBasinRecipe[] = [
       {
-        fluid: ["kubejs:compound_mixture", INGOT * 9],
+        fluidInput: { fluid: "kubejs:compound_mixture", amount: INGOT * 9 },
         result: "createastral:andesite_alloy_block",
-        cooling_time: 180,
-        cast: null,
+        coolingTime: 180,
       },
       {
-        fluid: ["kubejs:blast-resistant_cement", BUCKET],
+        fluidInput: { fluid: "kubejs:blast-resistant_cement", amount: BUCKET },
         result: "createastral:blast-resistant_concrete",
-        cooling_time: 400,
-        cast: null,
+        coolingTime: 400,
       },
       {
-        fluid: ["tconstruct:molten_quartz", GEM * 3],
+        fluidInput: { fluid: "tconstruct:molten_quartz", amount: GEM * 3 },
         result: "minecraft:granite",
-        cooling_time: 140,
-        cast: [{ item: "minecraft:diorite" }, true],
+        coolingTime: 140,
+        cast: { item: "minecraft:diorite", consumed: true },
       },
       {
-        fluid: ["minecraft:lava", INGOT],
+        fluidInput: { fluid: "minecraft:lava", amount: INGOT },
         result: "minecraft:deepslate",
-        cooling_time: 140,
-        cast: [{ item: "minecraft:cobblestone" }, true],
+        coolingTime: 140,
+        cast: { item: "minecraft:cobblestone", consumed: true },
       },
       {
-        fluid: ["yttr:void", BUCKET],
+        fluidInput: { fluid: "yttr:void", amount: BUCKET },
         result: "yttr:raw_gadolinite_block",
-        cooling_time: 140,
-        cast: [{ item: "ad_astra:raw_calorite_block" }, true],
+        coolingTime: 140,
+        cast: { item: "ad_astra:raw_calorite_block", consumed: true },
       },
       {
-        fluid: ["tconstruct:molten_cobalt", BUCKET],
+        fluidInput: { fluid: "tconstruct:molten_cobalt", amount: BUCKET },
         result: "extended_drawers:controller",
-        cooling_time: 194, // same as cooling cobalt block
-        cast: [{ item: "extended_drawers:shadow_drawer" }, true],
+        coolingTime: 194, // same as cooling cobalt block
+        cast: { item: "extended_drawers:shadow_drawer", consumed: true },
       },
       {
-        fluid: ["tconstruct:liquid_soul", BUCKET],
+        fluidInput: { fluid: "tconstruct:liquid_soul", amount: BUCKET },
         result: "minecraft:diorite",
-        cooling_time: 80,
-        cast: [{ item: "minecraft:basalt" }, true],
+        coolingTime: 80,
+        cast: { item: "minecraft:basalt", consumed: true },
       },
       {
-        fluid: ["kubejs:liquid_xp_nuggies", INGOT * 9],
+        fluidInput: { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT * 9 },
         result: "create:experience_block",
-        cooling_time: 180,
-        cast: null,
+        coolingTime: 180,
       },
       {
-        fluid: ["tconstruct:ender_slime", BUCKET],
+        fluidInput: { fluid: "tconstruct:ender_slime", amount: BUCKET },
         result: "tconstruct:ender_slime_vine",
-        cooling_time: 80,
-        cast: [{ item: "minecraft:vine" }, true],
+        coolingTime: 80,
+        cast: { item: "minecraft:vine", consumed: true },
       },
       {
-        fluid: ["tconstruct:sky_slime", BUCKET],
+        fluidInput: { fluid: "tconstruct:sky_slime", amount: BUCKET },
         result: "tconstruct:sky_slime_vine",
-        cooling_time: 80,
-        cast: [{ item: "minecraft:vine" }, true],
+        coolingTime: 80,
+        cast: { item: "minecraft:vine", consumed: true },
       },
       {
-        fluid: ["kubejs:supercooled_water", BUCKET],
+        fluidInput: { fluid: "kubejs:supercooled_water", amount: BUCKET },
         result: "minecraft:ice",
-        cooling_time: 10,
-        cast: null,
+        coolingTime: 10,
       },
       {
-        fluid: ["kubejs:blast-resistant_cement", BUCKET / 2],
+        fluidInput: { fluid: "kubejs:blast-resistant_cement", amount: BUCKET / 2 },
         result: "createastral:rocket_casing",
-        cooling_time: 500,
-        cast: [{ item: "kubejs:fire_resistant_fragile_sheet_block" }, true],
+        coolingTime: 500,
+        cast: { item: "kubejs:fire_resistant_fragile_sheet_block", consumed: true },
       },
       {
-        fluid: ["kubejs:shimmer", BUCKET * 4],
+        fluidInput: { fluid: "kubejs:shimmer", amount: BUCKET * 4 },
         result: "createastral:ultramatter",
-        cooling_time: 40,
-        cast: [{ item: "yttr:compressed_ultrapure_carbon_block" }, true],
+        coolingTime: 40,
+        cast: { item: "yttr:compressed_ultrapure_carbon_block", consumed: true },
       },
       {
-        fluid: ["tconstruct:molten_tin", BUCKET],
+        fluidInput: { fluid: "tconstruct:molten_tin", amount: BUCKET },
         result: "extended_drawers:shadow_drawer",
-        cooling_time: 117, // same as cooling tin block
-        cast: [{ tag: "extended_drawers:drawer_containers" }, true],
+        coolingTime: 117, // same as cooling tin block
+        // @ts-expect-error Missing tag?
+        cast: { tag: "extended_drawers:drawer_containers", consumed: true },
       },
       {
-        fluid: ["kubejs:shimmer", BUCKET * 2],
+        fluidInput: { fluid: "kubejs:shimmer", amount: BUCKET * 2 },
         result: "ae2:controller",
-        cooling_time: 400,
-        cast: [{ item: "ae2:energy_cell" }, true],
+        coolingTime: 400,
+        cast: { item: "ae2:energy_cell", consumed: true },
       },
       {
-        fluid: ["tconstruct:mushroom_stew", (BUCKET * 2) / 3],
+        fluidInput: { fluid: "tconstruct:mushroom_stew", amount: (BUCKET * 2) / 3 },
         result: "minecraft:mushroom_stem",
-        cooling_time: 25,
+        coolingTime: 25,
       },
       {
-        fluid: ["kubejs:shimmer", BUCKET],
+        fluidInput: { fluid: "kubejs:shimmer", amount: BUCKET },
         result: "createastral:shimmering_stone",
-        cooling_time: 250,
-        cast: [{ item: "ad_astra:moon_stone" }, true],
+        coolingTime: 250,
+        cast: { item: "ad_astra:moon_stone", consumed: true },
       },
       {
-        fluid: ["tconstruct:mushroom_stew", INGOT * 1.5],
+        fluidInput: { fluid: "tconstruct:mushroom_stew", amount: INGOT * 1.5 },
         result: "minecraft:shroomlight",
-        cooling_time: 100,
-        cast: [{ item: "minecraft:glowstone" }, true],
+        coolingTime: 100,
+        cast: { item: "minecraft:glowstone", consumed: true },
       },
       {
-        fluid: ["tconstruct:molten_clay", BUCKET],
+        fluidInput: { fluid: "tconstruct:molten_clay", amount: BUCKET },
         result: "minecraft:clay",
-        cooling_time: 144,
+        coolingTime: 144,
       },
       {
-        fluid: ["kubejs:molten_calorite", BUCKET],
+        fluidInput: { fluid: "kubejs:molten_calorite", amount: BUCKET },
         result: "ad_astra:calorite_block",
-        cooling_time: 194,
+        coolingTime: 194,
       },
       {
-        fluid: ["kubejs:molten_desh", BUCKET],
+        fluidInput: { fluid: "kubejs:molten_desh", amount: BUCKET },
         result: "ad_astra:desh_block",
-        cooling_time: 141,
+        coolingTime: 141,
       },
       {
-        fluid: ["kubejs:molten_ostrum", BUCKET],
+        fluidInput: { fluid: "kubejs:molten_ostrum", amount: BUCKET },
         result: "ad_astra:ostrum_block",
-        cooling_time: 194,
+        coolingTime: 194,
       },
       {
-        fluid: ["tconstruct:molten_steel", BUCKET],
+        fluidInput: { fluid: "tconstruct:molten_steel", amount: BUCKET },
         result: "ad_astra:steel_block",
-        cooling_time: 194,
+        coolingTime: 194,
       },
       {
-        fluid: ["tconstruct:magma", BUCKET / 2],
+        fluidInput: { fluid: "tconstruct:magma", amount: BUCKET / 2 },
         result: "minecraft:magma_block",
-        cooling_time: 90,
-        cast: [{ item: "minecraft:polished_basalt" }, true],
+        coolingTime: 90,
+        cast: { item: "minecraft:polished_basalt", consumed: true },
       },
       {
-        fluid: ["tconstruct:magma", BUCKET / 2],
+        fluidInput: { fluid: "tconstruct:magma", amount: BUCKET / 2 },
         result: "minecraft:stone",
-        cooling_time: 90,
-        cast: [{ item: "minecraft:basalt" }, true],
+        coolingTime: 90,
+        cast: { item: "minecraft:basalt", consumed: true },
       },
       {
-        fluid: ["tconstruct:magma", BUCKET / 2],
+        fluidInput: { fluid: "tconstruct:magma", amount: BUCKET / 2 },
         result: "minecraft:stone",
-        cooling_time: 90,
-        cast: [{ item: "minecraft:gravel" }, true],
+        coolingTime: 90,
+        cast: { item: "minecraft:gravel", consumed: true },
       },
       {
-        fluid: ["tconstruct:seared_stone", BUCKET / 2],
+        fluidInput: { fluid: "tconstruct:seared_stone", amount: BUCKET / 2 },
         result: "tconstruct:seared_cobble_wall",
-        cooling_time: 102,
-        cast: [{ item: "minecraft:cobblestone_wall" }, true],
+        coolingTime: 102,
+        cast: { item: "minecraft:cobblestone_wall", consumed: true },
       },
       {
-        fluid: ["tconstruct:seared_stone", BUCKET / 4],
+        fluidInput: { fluid: "tconstruct:seared_stone", amount: BUCKET / 4 },
         result: "tconstruct:seared_stone_slab",
-        cooling_time: 72,
-        cast: [{ item: "minecraft:stone_slab" }, true],
+        coolingTime: 72,
+        cast: { item: "minecraft:stone_slab", consumed: true },
       },
       {
-        fluid: ["tconstruct:seared_stone", BUCKET / 4],
+        fluidInput: { fluid: "tconstruct:seared_stone", amount: BUCKET / 4 },
         result: "tconstruct:seared_stone_stairs",
-        cooling_time: 102,
-        cast: [{ item: "minecraft:stone_stairs" }, true],
+        coolingTime: 102,
+        cast: { item: "minecraft:stone_stairs", consumed: true },
       },
       {
-        fluid: ["tconstruct:seared_stone", INGOT * 8],
+        fluidInput: { fluid: "tconstruct:seared_stone", amount: INGOT * 8 },
         result: "tconstruct:seared_fancy_bricks",
-        cooling_time: 102,
-        cast: [{ item: "minecraft:chiseled_stone_bricks" }, true],
+        coolingTime: 102,
+        cast: { item: "minecraft:chiseled_stone_bricks", consumed: true },
       },
       {
-        fluid: ["tconstruct:seared_stone", INGOT * 8],
+        fluidInput: { fluid: "tconstruct:seared_stone", amount: INGOT * 8 },
         result: "tconstruct:seared_cracked_bricks",
-        cooling_time: 102,
-        cast: [{ item: "minecraft:cracked_stone_bricks" }, true],
+        coolingTime: 102,
+        cast: { item: "minecraft:cracked_stone_bricks", consumed: true },
       },
       {
-        fluid: ["tconstruct:seared_stone", INGOT * 8],
+        fluidInput: { fluid: "tconstruct:seared_stone", amount: INGOT * 8 },
         result: "tconstruct:seared_paver",
-        cooling_time: 102,
-        cast: [{ item: "minecraft:smooth_stone" }, true],
+        coolingTime: 102,
+        cast: { item: "minecraft:smooth_stone", consumed: true },
       },
       {
-        fluid: ["tconstruct:ichor", SLIMEBALL * 5],
+        fluidInput: { fluid: "tconstruct:ichor", amount: SLIMEBALL * 5 },
         result: "tconstruct:ichor_slime",
-        cooling_time: 103,
-        cast: [{ item: "tconstruct:ichor_congealed_slime" }, true],
+        coolingTime: 103,
+        cast: { item: "tconstruct:ichor_congealed_slime", consumed: true },
       },
       {
-        fluid: ["tconstruct:ichor", BUCKET],
+        fluidInput: { fluid: "tconstruct:ichor", amount: BUCKET },
         result: "tconstruct:ichor_congealed_slime",
-        cooling_time: 92,
+        coolingTime: 92,
       },
-    ].forEach((recipe) => {
-      event.custom({
+    ];
+    castingBasinRecipes.forEach((recipe) => {
+      let basinRecipe: { type: Special.RecipeType_; [key: string]: unknown } = {
         type: "tconstruct:casting_basin",
-        cast: recipe.cast ? recipe.cast[0] : null,
-        cast_consumed: recipe.cast ? recipe.cast[1] : false,
         fluid: {
-          name: recipe.fluid[0],
-          amount: recipe.fluid[1],
+          name: recipe.fluidInput.fluid,
+          amount: recipe.fluidInput.amount,
         },
         result: recipe.result,
-        cooling_time: recipe.cooling_time,
-      });
+        cooling_time: recipe.coolingTime,
+      };
+      if (recipe.cast) {
+        if ("item" in recipe.cast) basinRecipe.cast = { item: recipe.cast.item };
+        else if ("tag" in recipe.cast) basinRecipe.cast = { tag: recipe.cast.tag };
+        if (recipe.cast.consumed) basinRecipe.cast_consumed = recipe.cast.consumed;
+      }
+
+      event.custom(basinRecipe);
     });
   });
 }
