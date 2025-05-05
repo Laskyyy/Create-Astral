@@ -16,7 +16,21 @@ declare namespace Internal {
   type BlockStateFunction_ = BlockStateFunction | (() => BlockIDPredicate);
   type JsonObject_ = JsonObject | object;
   type JsonElement_ = JsonElement | number | string | boolean | object;
-
+  type ArmorMaterial_ =
+    | ArmorMaterial
+    | "gold"
+    | "chain"
+    | "diamond"
+    | "sturdyarmor"
+    | "steelarmor"
+    | "turtle"
+    | "brassarmor"
+    | "radiantarmor"
+    | "iron"
+    | "leather"
+    | "copperarmor"
+    | "netherite";
+  type Tier_ = Tier | "gold" | "diamond" | "iron" | "copper" | "wood" | "brass" | "radiant" | "stone" | "netherite";
   interface ExtendedSceneBuilder$ExtendedWorldInstructions extends Internal.SceneBuilder$WorldInstructions {
     setBlocks(selection: Internal.Selection_, blockState: Internal.BlockState_, spawnParticles: boolean): void;
   }
@@ -176,6 +190,20 @@ declare namespace Internal {
       inputs: Internal.ArrayOrSelf_<Internal.IngredientJS_>
     ): Internal.ProcessingRecipeJS;
   }
+
+  interface AddOreProperties {
+    id: string;
+    biomes: object;
+    addTarget(
+      ruleTest: Internal.Block_ | `#${Special.BlockTag}`,
+      targetState: Internal.Block_ | `#${Special.BlockTag}`
+    ): void;
+  }
+
+  interface ItemBuilder extends Internal.BuilderBase<Internal.Item> {
+    texture(tex: Special.Texture): this;
+    texture(key: string, tex: Special.Texture): this;
+  }
 }
 
 declare namespace Special {
@@ -190,6 +218,10 @@ declare namespace Special {
 }
 
 declare namespace Custom {}
+
+declare namespace dev.latvian.mods.rhino.mod.util.color {
+  type Color_ = Color | number;
+}
 
 // ProbeJS didn't catch that.
 declare function onEvent(eventName: "entity.spawned", handler: (event: any) => void): any;

@@ -6,7 +6,7 @@ declare const HOUR: 3600000;
 declare const SLOT_FEET: EquipmentSlot;
 declare const SLOT_HEAD: EquipmentSlot;
 declare const FTBQuests: Internal.FTBQuestsKubeJSWrapper;
-declare const global: {};
+declare const global: {[key: string]: any};
 declare const MAIN_HAND: Hand;
 declare const SLOT_LEGS: EquipmentSlot;
 declare const AIR_BLOCK: Internal.AirBlock;
