@@ -5,6 +5,7 @@ shaderpacks
 kubejs/assets/**/textures
 fancymenustuff
 config/**/*-client.toml
+config/fancymenu
 configureddefaults
 packwiz-installer.jar
 
