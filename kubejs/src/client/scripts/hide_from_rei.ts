@@ -1,17 +1,12 @@
 export function hideFromREI() {
-  function addTinkerTableVariants(
-    list: (string | Internal.ItemStackJS)[],
-    item: Special.Item,
-    chippedBlock: string,
-    maxNum: number
-  ) {
+  function addTinkerTableVariants(list: Helper.Items[], item: Special.Item, chippedBlock: string, maxNum: number) {
     for (let num = 1; num <= maxNum; num++) {
       list.push(Item.of(item, `{texture:"chipped:${chippedBlock}_${num}"}`));
     }
   }
 
   onEvent("rei.hide.items", (event) => {
-    let HIDDEN_ITEMS: (string | Internal.ItemStackJS)[] = [
+    let HIDDEN_ITEMS: Helper.Items[] = [
       "ae2:silicon",
       "extended_drawers:t1_upgrade",
       "extended_drawers:t2_upgrade",
@@ -580,7 +575,7 @@ export function hideFromREI() {
       "techreborn:steel_storage_block_stairs",
       "techreborn:steel_storage_block_wall",
       "techreborn:neutron_reflector",
-      "techreborn:thick_neturon_reflector",
+      "techreborn:thick_neutron_reflector",
       "techreborn:iridium_neutron_reflector",
       "techreborn:mixed_metal_ingot",
       "techreborn:glowstone_small_dust",
@@ -685,10 +680,8 @@ export function hideFromREI() {
     addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:tinker_station", "crimson_planks", 41);
     addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:tinker_station", "warped_planks", 41);
 
-    const gems = ["peridot", "red_garnet", "ruby", "sapphire", "yellow_garnet"];
+    const gems = ["peridot", "red_garnet", "ruby", "sapphire", "yellow_garnet"] as const;
     gems.forEach((gem) => {
-      HIDDEN_ITEMS.push(`techreborn:${gem}_ore`);
-      HIDDEN_ITEMS.push(`techreborn:deepslate_${gem}_ore`);
       HIDDEN_ITEMS.push(`techreborn:${gem}_storage_block`);
       HIDDEN_ITEMS.push(`techreborn:${gem}_storage_block_stairs`);
       HIDDEN_ITEMS.push(`techreborn:${gem}_storage_block_slab`);
@@ -696,6 +689,12 @@ export function hideFromREI() {
       HIDDEN_ITEMS.push(`techreborn:${gem}_gem`);
       HIDDEN_ITEMS.push(`techreborn:${gem}_dust`);
       HIDDEN_ITEMS.push(`techreborn:${gem}_small_dust`);
+    });
+
+    const gemsWithOres = ["peridot", "ruby", "sapphire"] as const;
+    gemsWithOres.forEach((gem) => {
+      HIDDEN_ITEMS.push(`techreborn:${gem}_ore`);
+      HIDDEN_ITEMS.push(`techreborn:deepslate_${gem}_ore`);
     });
 
     const ingots = [
@@ -709,77 +708,103 @@ export function hideFromREI() {
       "platinum",
       "brass",
       "zinc",
-    ];
+    ] as const;
     ingots.forEach((ingot) => {
-      HIDDEN_ITEMS.push(`techreborn:${ingot}_tiny_dust`);
-      HIDDEN_ITEMS.push(`techreborn:${ingot}_dust`);
       HIDDEN_ITEMS.push(`techreborn:${ingot}_ingot`);
       HIDDEN_ITEMS.push(`techreborn:${ingot}_nugget`);
       HIDDEN_ITEMS.push(`techreborn:${ingot}_plate`);
-      HIDDEN_ITEMS.push(`techreborn:${ingot}_small_dust`);
       HIDDEN_ITEMS.push(`techreborn:${ingot}_storage_block`);
       HIDDEN_ITEMS.push(`techreborn:${ingot}_storage_block_slab`);
       HIDDEN_ITEMS.push(`techreborn:${ingot}_storage_block_stairs`);
       HIDDEN_ITEMS.push(`techreborn:${ingot}_storage_block_wall`);
     });
 
+    const ingotsWithDusts = [
+      "chrome",
+      "titanium",
+      "nickel",
+      "aluminum",
+      "platinum",
+      "brass",
+      "zinc",
+    ] as const;
+
+    ingotsWithDusts.forEach(ingot => {
+      HIDDEN_ITEMS.push(`techreborn:${ingot}_dust`);
+    })
+
+    const ingotsWithSmallDusts = [
+      "chrome",
+      "titanium",
+      "nickel",
+      "tungsten",
+      "platinum",
+      "zinc",
+    ] as const;
+
+    ingotsWithSmallDusts.forEach(ingot => {
+      HIDDEN_ITEMS.push(`techreborn:${ingot}_small_dust`);
+    })
+
     // format, dust name, true if used for anything (keep dust, but not tiny dust)
-    const dusts: [string, boolean][] = [
-      ["almandine", false],
-      ["amethyst", true],
-      ["andesite", true],
-      ["andradite", false],
-      ["ashes", true],
-      ["basalt", true],
-      ["bauxite", false],
-      ["bronze", false],
-      ["calcite", true],
-      ["charcoal", true],
-      ["cinnabar", false],
-      ["clay", true],
-      ["coal", true],
-      ["dark_ashes", true],
-      ["diamond", true],
-      ["diorite", true],
-      ["electrum", true],
-      ["emerald", false],
-      ["ender_eye", false],
-      ["ender_pearl", false], // ae2 ender dust replaces it
-      ["endstone", false],
-      ["flint", true],
-      ["galena", true],
-      ["granite", true],
-      ["grossular", false],
-      ["invar", false],
-      ["lazurite", true],
-      ["magnesium", false],
-      ["manganese", false],
-      ["marble", false],
-      ["netherrack", true],
-      ["nickel", false],
-      ["obsidian", false], // replaced by create obsidian dust
-      ["olivine", true],
-      ["phosphorous", false],
-      ["pyrite", false],
-      ["pyrope", false],
-      ["quartz", false],
-      ["saltpeter", true],
-      ["saw", true],
-      ["sodalite", false],
-      ["spessartine", false],
-      ["sphalerite", false],
-      ["steel", true],
-      ["sulfur", true],
-      ["uvarovite", false],
-    ];
+    const dusts = [
+      { name: "almandine", hideDust: true },
+      { name: "amethyst", hideDust: false, hasSmallDust: false },
+      { name: "andesite", hideDust: false },
+      { name: "andradite", hideDust: true },
+      { name: "ashes", hideDust: false },
+      { name: "basalt", hideDust: false },
+      { name: "bauxite", hideDust: true },
+      { name: "bronze", hideDust: true, hasSmallDust: false },
+      { name: "calcite", hideDust: false },
+      { name: "charcoal", hideDust: false },
+      { name: "cinnabar", hideDust: true },
+      { name: "clay", hideDust: false },
+      { name: "coal", hideDust: false },
+      { name: "dark_ashes", hideDust: false },
+      { name: "diamond", hideDust: false },
+      { name: "diorite", hideDust: false },
+      { name: "electrum", hideDust: false },
+      { name: "emerald", hideDust: true },
+      { name: "ender_eye", hideDust: true },
+      { name: "ender_pearl", hideDust: true }, // ae2 ender dust replaces it
+      { name: "endstone", hideDust: true },
+      { name: "flint", hideDust: false },
+      { name: "galena", hideDust: false },
+      { name: "granite", hideDust: false },
+      { name: "grossular", hideDust: true },
+      { name: "invar", hideDust: true },
+      { name: "lazurite", hideDust: false },
+      { name: "magnesium", hideDust: true },
+      { name: "manganese", hideDust: true },
+      { name: "marble", hideDust: true },
+      { name: "netherrack", hideDust: false },
+      { name: "nickel", hideDust: true },
+      { name: "obsidian", hideDust: true }, // replaced by create obsidian dust
+      { name: "olivine", hideDust: false },
+      { name: "phosphorous", hideDust: true },
+      { name: "pyrite", hideDust: true },
+      { name: "pyrope", hideDust: true },
+      { name: "quartz", hideDust: true },
+      { name: "saltpeter", hideDust: false },
+      { name: "saw", hideDust: false },
+      { name: "sodalite", hideDust: true },
+      { name: "spessartine", hideDust: true },
+      { name: "sphalerite", hideDust: true },
+      { name: "steel", hideDust: false },
+      { name: "sulfur", hideDust: false },
+      { name: "uvarovite", hideDust: true },
+    ] as const;
     dusts.forEach((dust) => {
-      if (!dust[1]) {
-        HIDDEN_ITEMS.push(`techreborn:${dust[0]}_dust`);
+      if (dust.hideDust) {
+        HIDDEN_ITEMS.push(`techreborn:${dust.name}_dust`);
       }
-      HIDDEN_ITEMS.push(`techreborn:${dust[0]}_small_dust`);
+      if (!("hasSmallDust" in dust)) {
+        HIDDEN_ITEMS.push(`techreborn:${dust.name}_small_dust`);
+      }
     });
 
-    const plates: string[] = [
+    const plates = [
       "carbon",
       "coal",
       "copper",
@@ -800,7 +825,7 @@ export function hideFromREI() {
       "sapphire",
       "silicon",
       "yellow_garnet",
-    ];
+    ] as const satisfies string[];
     plates.forEach((id) => HIDDEN_ITEMS.push(`techreborn:${id}_plate`));
 
     HIDDEN_ITEMS.forEach((id) => event.hide(id));

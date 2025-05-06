@@ -3,6 +3,8 @@ declare namespace Helper {
   type Pattern = PatternRow[] & { length: 1 | 2 | 3 };
   type BigPatternRow = string;
   type BigPattern = BigPatternRow;
+
+  type Items = Internal.ItemStackJS_ | `#${Special.ItemTag}` | `@${Special.Mod}` | "*";
 }
 
 declare namespace Internal {
