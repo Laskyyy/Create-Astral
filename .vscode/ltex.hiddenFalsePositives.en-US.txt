@@ -1,2 +1,11 @@
 {"rule":"PREPOSITION_VERB","sentence":"^\\QDev GitHub repository for the Create: Astral modpack\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QDownload the packwiz installer jar from packwiz-installer-bootstrap, and put it into the \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q folder in the instance.\\E$"}
+{"rule":"PREPOSITION_VERB","sentence":"^\\QBearing in mind, of course, that it will only work in a folder where packwiz has been initialized (the Create: Astral repository already has it initialized).\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QFor example, if I have a recipe for the Industrial Sawmill from Tech Reborn, I will add it to the already-existing file - /kubejs/src/server/recipes/techreborn/industrial_sawmill.js.\\E$"}
+{"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QIf you're adding text, refer to the Enabling internationalization in your contributions section of this document.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QIt will look something like \"en_gb\" (British English), \"fr_fr\" (European French), \"de_de\" (German), and so on.\\E$"}
+{"rule":"FR","sentence":"^\\QIt will look something like \"en_gb\" (British English), \"fr_fr\" (European French), \"de_de\" (German), and so on.\\E$"}
+{"rule":"HE_VERB_AGR","sentence":"^\\QMain lang file for most assets\nLang file for custom create ponder guides\nLang file for custom menu texts\\E$"}
+{"rule":"HE_VERB_AGR","sentence":"^\\QMain lang file for most assets\nLang file for custom Create Ponder guides\nLang file for custom menu texts\\E$"}
+{"rule":"PREPOSITION_VERB","sentence":"^\\QWelcome to the Create: Astral Contribution Guidelines!\\E$"}
+{"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QThere's a few things about this repository that you may not expect - primarily, there are no .jar files in the mods folder.\\E$"}

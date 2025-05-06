@@ -1,15 +1,15 @@
 {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "[json5]": {
-        "editor.formatOnSave": false,
-        "editor.defaultFormatter": null
-    },
-    "[javascript]": {"editor.tabSize": 2},
-    "[typescript]": {"editor.tabSize": 2},
-    "[json]": {"editor.tabSize": 2},
-    "files.associations": {
-        "*.mcmeta": "json",
-        ".packwizignore": "ignore"
-    }
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[json5]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+  "[javascript]": { "editor.tabSize": 2 },
+  "[typescript]": { "editor.tabSize": 2 },
+  "[json]": { "editor.tabSize": 2 },
+  "files.associations": {
+    "*.mcmeta": "json",
+    ".packwizignore": "ignore"
+  },
 }
