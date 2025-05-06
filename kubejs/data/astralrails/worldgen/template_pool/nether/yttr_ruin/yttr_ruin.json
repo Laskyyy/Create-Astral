@@ -91,6 +91,33 @@
         "projection": "terrain_matching",
         "element_type": "minecraft:single_pool_element"
       }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "astralrails:nether/yttr_ruin/infusion_altar",
+        "processors": [],
+        "projection": "terrain_matching",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "astralrails:nether/yttr_ruin/door_rift",
+        "processors": [],
+        "projection": "terrain_matching",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "astralrails:nether/yttr_ruin/arc_furnace",
+        "processors": [],
+        "projection": "terrain_matching",
+        "element_type": "minecraft:single_pool_element"
+      }
     }
   ]
 }
