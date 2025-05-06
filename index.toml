@@ -6254,7 +6254,7 @@ hash = "dfc236ad333a94d4b3b56cdcac9feeeb9b63c701321dc1c31e48ae10418951a4"
 
 [[files]]
 file = "kubejs/client_scripts/client.js"
-hash = "7debaf7fc90a7d9c2dc5b160e9ce2ee0040d9e160f6a4be8c0f710e2b6d46773"
+hash = "718f1db6cf4618db09e155dea35c40d8a968e20918201e73570da915bfbde872"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -12850,7 +12850,7 @@ hash = "fd7b072e6d71d6d0b87d004d86efc1bc9cd96e2182b5e56cd3c288d69ac76a90"
 
 [[files]]
 file = "kubejs/startup_scripts/startup.js"
-hash = "3415644d356b7eae688ec3d8c2aa29d9b2d93ae0811ed6cd61d041f7beed6220"
+hash = "5688454588e4b6eff197f8db99c1dcd7950b9efc2659000adff2719770b1802d"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"

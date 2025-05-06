@@ -206,6 +206,17 @@ declare namespace Internal {
     texture(tex: Special.Texture): this;
     texture(key: string, tex: Special.Texture): this;
   }
+
+  interface DeferredRegister<T> extends Internal.Iterable<Internal.RegistrySupplier<T>> {
+    "register(net.minecraft.class_2960,java.util.function.Supplier)"(
+      id: ResourceLocation_,
+      supplier: Internal.Supplier_<any>
+    ): Internal.RegistrySupplier<R>;
+    "register(java.lang.String,java.util.function.Supplier)"(
+      id: string,
+      supplier: Internal.Supplier_<any>
+    ): Internal.RegistrySupplier<R>;
+  }
 }
 
 declare namespace Special {

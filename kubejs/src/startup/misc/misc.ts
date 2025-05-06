@@ -49,7 +49,6 @@ export function misc() {
 
   function registerUpgrade(resourceLocation: string, multiplier: number) {
     drawer_multipliers[resourceLocation] = multiplier;
-    // @ts-expect-error This works.
     ITEMS["register(net.minecraft.class_2960,java.util.function.Supplier)"](resourceLocation, () => {
       return new $UpgradeItem(new $FabricItemSettings(), $ResourceLocation.tryParse(resourceLocation), multiplier);
     });
