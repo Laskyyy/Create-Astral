@@ -285,6 +285,30 @@ const compactingRecipes: CompactingRecipe[] = [
 ```
 Please provide explanation on every usage of this.
 
+#### Naming variables
+
+- Use `let` or `const` to declare variables. Be aware that `const` only makes the reference constant, you can still mutate the constant array/object.
+- Use `const` if the variable is not assigned to later on.
+- For "true" constants (immutable arrays/objects), use `SCREAMING_SNAKE_CASE` or `camelCase`.
+- Currently unused: For classes, use `PascalCase`. Note that `class` syntax is unsupported in KubeJS, and this repository does not use Babel yet, so classes have to be written the old-fashioned way.
+
+Examples:
+```ts
+let inputItem: Special.Item = "minecraft:stone"
+
+const player = event.getPlayer();
+
+export const VANILLA_COPPER_BLOCKS = ["cut_copper", "cut_copper_stairs", "cut_copper_slab"] as const;
+```
+
+- Prefer using descriptive names for variables, unless it's used for iteration (`i`, `j`) or coordinates (`x`, `y`, `z`).
+- Names of variables that refer to Java classes must start with `$`.
+
+Example:
+```ts
+const $DeferredRegister = java("dev.architectury.registry.registries.DeferredRegister");
+```
+
 #### Adding or modifying tags
 
 Registering or modifying tags (such as `#minecraft:logs` or `#create:wrench_pickup`) is to be done via datapack and **not KubeJS**, even if you need to use helper functions. We understand this may be inconvenient, but it allows us to have a much more easily navigable tags library for reference purposes.
