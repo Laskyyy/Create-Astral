@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".envrc"
+hash = "1d26c74fd25a4c3dbb09e029fc609588da499fd4af2a41c88f6316c7f8c54cf1"
+
+[[files]]
 file = "config/DisablePortals.json"
 hash = "2cde14117c96226c89ebafaca24728978ee5b572caa122de791826c21798ff79"
 
@@ -1087,6 +1091,10 @@ hash = "11dc9ee9fd00f1f6d649ac78896b407a419314e6676178a904b6838e66766da7"
 [[files]]
 file = "fancymenustuff/uwu.png"
 hash = "8d7ce46d8038ef37e526605538913133dba45657144c228080d1a8ba1e55436d"
+
+[[files]]
+file = "flake.nix"
+hash = "eb17f373020b268d407dea5109c9775fdc8b4f46e8127dd9325699bc4d2ebd56"
 
 [[files]]
 file = "icon.png"
@@ -2303,6 +2311,14 @@ hash = "4eee8706e276a420e24309e2790b05194cd7a0061c284b4efffde9774f004e73"
 [[files]]
 file = "kubejs/assets/createastral/textures/block/electropipe.png"
 hash = "e0ae56a151c19625dc2c74d1029b4956082af6d8244be8818e17ca5dc588d24f"
+
+[[files]]
+file = "kubejs/assets/createastral/textures/block/ender_coil_ends.png"
+hash = "875c2e79a86b760f7c9577386ad41b22a0bee12df76daf27e01ac2604b274018"
+
+[[files]]
+file = "kubejs/assets/createastral/textures/block/ender_coil_side.png"
+hash = "f8d988146736e75640dfd526541447d7b1807bba4300aaffc06385b4d505078b"
 
 [[files]]
 file = "kubejs/assets/createastral/textures/block/example_block.png"
@@ -7017,6 +7033,10 @@ file = "kubejs/data/astralrails/structures/contest/moon/ichor_facility.nbt"
 hash = "d843535bf708a16451e1435d7a68d9069013c1642b3abbcd6890c39334264a8a"
 
 [[files]]
+file = "kubejs/data/astralrails/structures/contest/moon/ruined_diner.nbt"
+hash = "59c92fce9059db64710e394ba4ee5ffaaaef8f1390f3a67346a9c22be0ea3db7"
+
+[[files]]
 file = "kubejs/data/astralrails/structures/contest/moon/truck.nbt"
 hash = "0c8af54e172aeabb847ac38d4a1edfee34d04fe07b83d5a46d00af31bd789bc7"
 
@@ -7725,6 +7745,22 @@ file = "kubejs/data/astralrails/structures/moon/underground/xp_lake_3.nbt"
 hash = "8166c81e41a77a70aba86c0f282e9a57bdc5d4de75af121f1220f75691f7423d"
 
 [[files]]
+file = "kubejs/data/astralrails/structures/nether/chunk_error/body_1.nbt"
+hash = "973e9843bccdfa866ef648c8b5ebbf5fcc5e3f16531c34fd538cdbdd01f7b9f9"
+
+[[files]]
+file = "kubejs/data/astralrails/structures/nether/chunk_error/body_2.nbt"
+hash = "6a86a5e1854c1c7f9fd9dc5696727613f86cab936f1a1718fd55bbc5ee66cfcc"
+
+[[files]]
+file = "kubejs/data/astralrails/structures/nether/chunk_error/surface_1.nbt"
+hash = "5c41be259b236c9e393de2a5e4c927e96e06896f3021a1347019fde91918472c"
+
+[[files]]
+file = "kubejs/data/astralrails/structures/nether/chunk_error/surface_2.nbt"
+hash = "17e55f7420bf3f64ad898940ec8ef9a1b33c259725188456f2ac531aa522fb78"
+
+[[files]]
 file = "kubejs/data/astralrails/structures/nether/purpur_fortress/l_corner.nbt"
 hash = "abb1fcade0fff64dd273fab219492a3dd0cb18ad0b7840e628ebf21fa8712f8c"
 
@@ -7755,6 +7791,18 @@ hash = "034f547a2c4f202bebedfc8ae636d40faa8e77336d60873f517dbf4bf746147a"
 [[files]]
 file = "kubejs/data/astralrails/structures/nether/purpur_fortress/t_junction.nbt"
 hash = "0cb7c18c285f747459e8e06814fec5fb7bb80486d491651bf07c3191ce881a62"
+
+[[files]]
+file = "kubejs/data/astralrails/structures/nether/yttr_ruin/arc_furnace.nbt"
+hash = "467f8e8b70ead3f60eb28143555978dc0bee8a2f1ca556601d3554e9fc86c669"
+
+[[files]]
+file = "kubejs/data/astralrails/structures/nether/yttr_ruin/door_rift.nbt"
+hash = "72f6ee69454c653b885ddeba6b2938007d8228ddba0a3de8f35733f726310c68"
+
+[[files]]
+file = "kubejs/data/astralrails/structures/nether/yttr_ruin/infusion_altar.nbt"
+hash = "c42e17e12ed4f62cb9ba2859ca31ae161f4b90688b1bde84def4ac48b54da8dc"
 
 [[files]]
 file = "kubejs/data/astralrails/structures/nether/yttr_ruin/ruin_1.nbt"
@@ -8606,7 +8654,7 @@ hash = "df74fdddd8f259c8a0350102fdcae8ba4f455ff5220750c6740b74bf15a7cd73"
 
 [[files]]
 file = "kubejs/data/astralrails/worldgen/configured_structure_feature/nether/chunk_error.json"
-hash = "474c223d5b4e7a0b309713d94eefbfae2ac0d975018c55ee713e255b9a60961c"
+hash = "8bf9f1f7a61d2e99064b0d61424f4e14735c3243d050da014f903a4ae36adc07"
 
 [[files]]
 file = "kubejs/data/astralrails/worldgen/configured_structure_feature/nether/purpur_fortress.json"
@@ -9010,7 +9058,7 @@ hash = "df96cc37c956a8125bc71fe3c62c207e2ad99a52cc5a5f5797218c9c519daf4d"
 
 [[files]]
 file = "kubejs/data/astralrails/worldgen/structure_set/nether/chunk_error.json"
-hash = "f1ce72c0214041dd1c055b4d31a4d34c007f02b1dda6c94effc45ffa2b2d7c19"
+hash = "483129bb4842dacd785f583da1a78995bcb3823e4eba54bd81c86a60b9a67af4"
 
 [[files]]
 file = "kubejs/data/astralrails/worldgen/structure_set/nether/purpur_fortress.json"
@@ -9066,7 +9114,7 @@ hash = "e1cb42e0fb9329ff1d74c3637a60e11939838de7b65dfb53446f4acddafde979"
 
 [[files]]
 file = "kubejs/data/astralrails/worldgen/template_pool/contest/moon.json"
-hash = "4927fe48352909f3c966f7cb2f2d61f2c89d38339353da4637471659431df8b7"
+hash = "b3eb2ffa947f59d6a2e2a63e205ad98a203875aa7982c22b8a8d704c41a1ef74"
 
 [[files]]
 file = "kubejs/data/astralrails/worldgen/template_pool/contest/orbit.json"
@@ -9302,7 +9350,7 @@ hash = "0155232ab3b83b41a6ca5b7db2329ac5fd1bc0b2a642377a539413ad2c5ba66e"
 
 [[files]]
 file = "kubejs/data/astralrails/worldgen/template_pool/nether/chunk_error/chunks.json"
-hash = "1b2d3afb7e18dfe6f3a089c61bf7f576a02d2963ee54ef462f4dc8290d3a3017"
+hash = "aee9cfd751dfeb27f6cde2ca5031f250cfa96af65c885228f8a571110d4d3df3"
 
 [[files]]
 file = "kubejs/data/astralrails/worldgen/template_pool/nether/purpur_fortress/init_path.json"
@@ -9318,7 +9366,7 @@ hash = "1815884627f36967291eb25b6ab85144f287c381235725a5448ead0a0acb6387"
 
 [[files]]
 file = "kubejs/data/astralrails/worldgen/template_pool/nether/yttr_ruin/yttr_ruin.json"
-hash = "c9809d899e89b62663c5ffedbb52680402223ee017f4f8d555d580ad562efb7e"
+hash = "689b47cc64a6775f42a6ec41cc132600231e5b42b6e55969440c6bd76b5c32d8"
 
 [[files]]
 file = "kubejs/data/astralrails/worldgen/template_pool/overworld/dogstatues/dogstatues.json"
@@ -12709,12 +12757,8 @@ file = "kubejs/data/tconstruct/tinkering/materials/definition/shadow.json"
 hash = "f506bf0ce4bd2445df5959f65137920c017df5860c11e557382fbbe7d89e1303"
 
 [[files]]
-file = "kubejs/data/tconstruct/tinkering/materials/stats/brass.json"
-hash = "7beb82227ef058743b13787fb3bc3ab628e67cb1de90fe86df7919540cf80cd5"
-
-[[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/stats/bronze.json"
-hash = "d69a03b4a21c9de23a4cd0eb511fdedccfd4fd7753240d236024b6ce256928d6"
+hash = "5b9e39e6e8f9548d05975ce1f6e7ce37f038ce18b5eb0bbbb4b320b15c7f1856"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/stats/calorite.json"
@@ -12726,11 +12770,11 @@ hash = "814a75c85215f5f0f79c003b2b5efb7609bda80929151e2b68d0c510fe5cf7d9"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/stats/electrum.json"
-hash = "af12afe286f32914aad138b64441005378bf22dc613a26b69b7b894ab65c29f5"
+hash = "80d7e97043cb528fc20314c90b293e700729f08679cfb3280a29f0717ab15311"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/stats/lead.json"
-hash = "773f951207eb4f3b729046ac0787f602947f6e2b451782008006083b9fbeb4c7"
+hash = "a86447263e430f3b3ba9a7d6e5cc5239554d09ed8cfdbff965d2a74f489fe3ab"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/stats/ostrum.json"
@@ -12746,27 +12790,19 @@ hash = "b4166f498838ba4650a99825aa976dae8a53b95737aec39e9c1853cb177c2113"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/stats/silver.json"
-hash = "c293a9176b81d74f7b7c6fe85a51094d066eb71eb90015c9a9ecae7c6c1a7920"
+hash = "9e9b3abb15f7a9a870ad94daa874f83c6983b80b651b01aaa4cb9a278bf8f219"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/stats/steel.json"
-hash = "2970f20adb5b48c4869a2e006a875e04e83af043821b7a820ad07d807ac0ccd9"
-
-[[files]]
-file = "kubejs/data/tconstruct/tinkering/materials/stats/tin.json"
-hash = "7beb82227ef058743b13787fb3bc3ab628e67cb1de90fe86df7919540cf80cd5"
+hash = "42450e194a7d1627e38d320f45b3e68eed7f72225d80a878c11454750dad7ece"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/stats/tungsten.json"
-hash = "da16b9d757de55366ab4940a9b87814355e5725237ab9af2ebc017ff209f5649"
-
-[[files]]
-file = "kubejs/data/tconstruct/tinkering/materials/stats/zinc.json"
-hash = "7beb82227ef058743b13787fb3bc3ab628e67cb1de90fe86df7919540cf80cd5"
+hash = "1e2771acb640dd796721d8b4a89d29947f093ef3a2cc448b9c15e254598de1ff"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/traits/bone.json"
-hash = "f2677d4599e7afa7d97353c32e3de7b2318caf8fadfeeb2eeefe1cda087378a5"
+hash = "602b6b32dd71705fb0499b6f89757b26108945eb3e5c9b2647e4dd0b977d571c"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/traits/calorite.json"
@@ -12790,27 +12826,27 @@ hash = "86b2fdefed5172c0f182342929c03e77fd4f5b500d57d4fbc3ae84f306ce8c9b"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/tool_definitions/cleaver.json"
-hash = "1ef79f396168c5ac00bbfc41d3ac03f1b31276dadb15fe50f8e5f3b2df9794a7"
+hash = "85db2286610bf22c57672fea90c44af3a4a0bfb112a06c51da5ff737f17b74ad"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/tool_definitions/excavator.json"
-hash = "8580cb3c702662beafe23c428247c22e3a6cd5f12c4401347f80f675d979941f"
+hash = "b5092f70b8dd0ca6b30fada30782a929dee7049b19bf079e1e2d933d8bbed0b6"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/tool_definitions/pickaxe.json"
-hash = "53605ef2853d520b6a57b7cc38d5dfb88cfb5112ff4ac4790f5103740cf73ce5"
+hash = "b5e3f16f3e71933804f21bbc1810cc558b0d72164713826a03615ad87ccbcab0"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/tool_definitions/scythe.json"
-hash = "3c51a6525a07269fbd8fcfdbf66967a3dc7050c1293dedb0a84934bd22d645b2"
+hash = "d3c5d55b8d87c38d532418d436388e3f840b669cabf8e693db56b1add67bbfbf"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/tool_definitions/sledge_hammer.json"
-hash = "23c6a188bea36ce13148236cdf075733f78f36bae868a19c0d086a74d668ef65"
+hash = "76926cab7e48e9af8c0f93e645cac1de908613fb2d767c9113f37ee743f60a2f"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/tool_definitions/vein_hammer.json"
-hash = "93975bc537aff42f0e8042fb6991235c197b9930e1531e14858f60fcc15100d2"
+hash = "dc6d2cb28d8bc2f0c88396b67af1d6b5dd6a8422de9fd667369b4a473cccc469"
 
 [[files]]
 file = "kubejs/data/tconstruct/weapon_attributes/broad_axe.json"
@@ -13479,7 +13515,7 @@ metafile = true
 
 [[files]]
 file = "mods/appleskin.pw.toml"
-hash = "bebce246ceb622c9837ce58fa130161bf9a19f3ff9b69d7eb31b5235fccea0b1"
+hash = "e49667b9ed9e64de288bfc1c1942cb0d3efdb3ae7d0607ad0c951bb34567e463"
 metafile = true
 
 [[files]]

@@ -1,67 +1,66 @@
 {
-  "parts": [
-    {
-      "item": "tconstruct:hammer_head",
-      "weight": 2
-    },
-    {
-      "item": "tconstruct:tough_handle"
-    },
-    {
-      "item": "tconstruct:large_plate"
-    },
-    {
-      "item": "tconstruct:large_plate"
-    }
-  ],
-  "stats": {
-    "base": {
-      "tconstruct:attack_damage": 3.0,
-      "tconstruct:attack_speed": 0.75
-    },
-    "multipliers": {
-      "tconstruct:attack_damage": 1.35,
-      "tconstruct:mining_speed": 0.2,
-      "tconstruct:durability": 4.0
-    }
-  },
-  "slots": {
-    "upgrades": 2,
-    "abilities": 1
-  },
-  "traits": [
-    {
-      "name": "tconstruct:smite",
-      "level": 2
-    }
-  ],
-  "actions": [
-    "pickaxe_dig"
-  ],
-  "harvest": {
-    "logic": {
-      "type": "tconstruct:effective_tag",
-      "effective": "minecraft:mineable/pickaxe"
-    },
-    "aoe": {
-      "type": "tconstruct:box",
-      "bonus": {
-        "width": 1,
-        "height": 1
-      },
-      "expansions": [
+    "replace": true,
+    "parts": [
         {
-          "width": 1
+            "item": "tconstruct:hammer_head",
+            "weight": 2
         },
         {
-          "height": 1
+            "item": "tconstruct:tough_handle"
+        },
+        {
+            "item": "tconstruct:large_plate"
+        },
+        {
+            "item": "tconstruct:large_plate"
         }
-      ],
-      "expansion_direction": "tconstruct:side_hit"
+    ],
+    "stats": {
+        "base": {
+            "tconstruct:attack_damage": 3.0,
+            "tconstruct:attack_speed": 0.75
+        },
+        "multipliers": {
+            "tconstruct:attack_damage": 1.35,
+            "tconstruct:mining_speed": 0.2,
+            "tconstruct:durability": 4.0
+        }
+    },
+    "slots": {
+        "upgrades": 2,
+        "abilities": 1
+    },
+    "traits": [
+        {
+            "name": "tconstruct:smite",
+            "level": 2
+        }
+    ],
+    "actions": ["pickaxe_dig"],
+    "harvest": {
+        "logic": {
+            "type": "tconstruct:effective_tag",
+            "effective": "minecraft:mineable/pickaxe"
+        },
+        "aoe": {
+            "type": "tconstruct:box",
+            "bonus": {
+                "width": 1,
+                "height": 1
+            },
+            "expansions": [
+                {
+                    "width": 1
+                },
+                {
+                    "height": 1
+                }
+            ],
+            "expansion_direction": "tconstruct:side_hit"
+        }
+    },
+    "attack": {
+        "type": "tconstruct:particle",
+        "particle": "tconstruct:hammer_attack"
     }
-  },
-  "attack": {
-    "type": "tconstruct:particle",
-    "particle": "tconstruct:hammer_attack"
-  }
 }
