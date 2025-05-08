@@ -17,10 +17,10 @@ let ITEMS = $DeferredRegister.create("createastral", $Registry.ITEM_REGISTRY);
 let drawer_multipliers = {}; // This will be used later for adding tooltips.
 
 function registerUpgrade(mod_id, name, multiplier) {
-    drawer_multipliers[`${mod_id}:${name}`] = multiplier;
-    ITEMS["register(net.minecraft.class_2960,java.util.function.Supplier)"](`${mod_id}:${name}`, () => {
-        return new $UpgradeItem(new $FabricItemSettings(), $ResourceLocation(mod_id, `item/${name}`), multiplier);
-    });
+  drawer_multipliers[`${mod_id}:${name}`] = multiplier;
+  ITEMS["register(net.minecraft.class_2960,java.util.function.Supplier)"](`${mod_id}:${name}`, () => {
+    return new $UpgradeItem(new $FabricItemSettings(), $ResourceLocation(mod_id, `item/${name}`), multiplier);
+  });
 }
 
 registerUpgrade("createastral", "t1_upgrade", 2);

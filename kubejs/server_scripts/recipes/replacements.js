@@ -1,401 +1,735 @@
-onEvent("recipes", (event) => {
-    // [?optional object specifying a mod/type, original item, replacement item]
-    [
-        ["create:powdered_obsidian", "#c:dusts/obsidian"],
-        ["techreborn:obsidian_dust", "#c:dusts/obsidian"],
-        ["createaddition:diamond_grit", "techreborn:diamond_dust"],
-        ["ae2:ender_dust", "techreborn:ender_pearl_dust"],
-        [{ mod: "createbigcannons" }, "create:iron_sheet", "dustrial_decor:cast_iron_billet"],
-        [{ mod: "createbigcannons" }, "minecraft:iron_ingot", "dustrial_decor:cast_iron_billet"],
-        [{ mod: "createbigcannons" }, "minecraft:iron_nugget", "create:zinc_nugget"],
-        [{ mod: "createbigcannons" }, "minecraft:quartz", "create:integrated_circuit"],
-        [{ mod: "createbigcannons" }, "minecraft:redstone", "create:electron_tube"],
-        [{ mod: "createbigcannons" }, "minecraft:iron_bars", "createaddition:iron_wire"],
-        [
-            { output: "tconstruct:raw_cobalt_block" },
-            "#c:raw_materials/cobalt",
-            "tconstruct:raw_cobalt", // fix cobalt craftable with raw cobalt
-        ],
-        [{ output: "createaddition:connector" }, "#c:slimeballs", "createaddition:copper_wire"],
-        [
-            { output: "createbigcannons:nethersteel_screw_lock" },
-            "createbigcannons:nethersteel_ingot",
-            "ad_astra:ostrum_ingot",
-        ],
-        [{ mod: "createbigcannons" }, "minecraft:string", "create:sand_paper"],
-        [{ output: "minecraft:pointed_dripstone" }, "techreborn:calcite_small_dust", "techreborn:calcite_dust"],
-        [{ output: "minecraft:hopper" }, "minecraft:iron_ingot", "create:iron_sheet"],
-        [{ output: "minecraft:calcite" }, "techreborn:calcite_small_dust", "techreborn:calcite_dust"],
-        [{ output: "techreborn:copper_cable" }, "minecraft:copper_ingot", "createaddition:copper_rod"],
-        [{ output: "techreborn:gold_cable" }, "minecraft:gold_ingot", "createaddition:gold_rod"],
-        [
-            {
-                input: "techreborn:rubber",
-                output: "techreborn:insulated_copper_cable",
-            },
-            "minecraft:copper_ingot",
-            "createaddition:copper_rod",
-        ],
+(function recipeReplacements() {
+  onEvent("recipes", (event) => {
+    const replacements = [
+      { original: "create:powdered_obsidian", replaceWith: "#c:dusts/obsidian" },
+      { original: "techreborn:obsidian_dust", replaceWith: "#c:dusts/obsidian" },
+      { original: "createaddition:diamond_grit", replaceWith: "techreborn:diamond_dust" },
+      { original: "ae2:ender_dust", replaceWith: "techreborn:ender_pearl_dust" },
+      {
+        predicate: { mod: "createbigcannons" },
+        original: "create:iron_sheet",
+        replaceWith: "dustrial_decor:cast_iron_billet",
+      },
+      {
+        predicate: { mod: "createbigcannons" },
+        original: "minecraft:iron_ingot",
+        replaceWith: "dustrial_decor:cast_iron_billet",
+      },
+      { predicate: { mod: "createbigcannons" }, original: "minecraft:iron_nugget", replaceWith: "create:zinc_nugget" },
+      {
+        predicate: { mod: "createbigcannons" },
+        original: "minecraft:quartz",
+        replaceWith: "create:integrated_circuit",
+      },
+      { predicate: { mod: "createbigcannons" }, original: "minecraft:redstone", replaceWith: "create:electron_tube" },
+      {
+        predicate: { mod: "createbigcannons" },
+        original: "minecraft:iron_bars",
+        replaceWith: "createaddition:iron_wire",
+      },
+      {
+        predicate: { output: "tconstruct:raw_cobalt_block" },
+        original: "#c:raw_materials/cobalt",
+        replaceWith: "tconstruct:raw_cobalt",
+      },
+      {
+        predicate: { output: "createaddition:connector" },
+        original: "#c:slimeballs",
+        replaceWith: "createaddition:copper_wire",
+      },
+      {
+        predicate: { output: "createbigcannons:nethersteel_screw_lock" },
+        original: "createbigcannons:nethersteel_ingot",
+        replaceWith: "ad_astra:ostrum_ingot",
+      },
+      { predicate: { mod: "createbigcannons" }, original: "minecraft:string", replaceWith: "create:sand_paper" },
+      {
+        predicate: { output: "minecraft:pointed_dripstone" },
+        original: "techreborn:calcite_small_dust",
+        replaceWith: "techreborn:calcite_dust",
+      },
+      { predicate: { output: "minecraft:hopper" }, original: "minecraft:iron_ingot", replaceWith: "create:iron_sheet" },
+      {
+        predicate: { output: "minecraft:calcite" },
+        original: "techreborn:calcite_small_dust",
+        replaceWith: "techreborn:calcite_dust",
+      },
+      {
+        predicate: { output: "techreborn:copper_cable" },
+        original: "minecraft:copper_ingot",
+        replaceWith: "createaddition:copper_rod",
+      },
+      {
+        predicate: { output: "techreborn:gold_cable" },
+        original: "minecraft:gold_ingot",
+        replaceWith: "createaddition:gold_rod",
+      },
+      {
+        predicate: { input: "techreborn:rubber", output: "techreborn:insulated_copper_cable" },
+        original: "minecraft:copper_ingot",
+        replaceWith: "createaddition:copper_rod",
+      },
+      {
+        predicate: { type: "minecraft:crafting_shaped", output: "techreborn:chunk_loader" },
+        original: "techreborn:industrial_machine_frame",
+        replaceWith: "create:shadow_steel_casing",
+      },
+      { original: "techreborn:industrial_machine_frame", replaceWith: "techreborn:basic_machine_frame" },
+      {
+        predicate: { type: "minecraft:crafting_shaped", output: "techreborn:chunk_loader" },
+        original: "techreborn:coal_plate",
+        replaceWith: "techreborn:diamond_plate",
+      },
+      {
+        predicate: { type: "minecraft:crafting_shaped", output: "techreborn:chunk_loader" },
+        original: "techreborn:coal_plate",
+        replaceWith: "techreborn:diamond_plate",
+      },
+      {
+        predicate: { type: "minecraft:crafting_shaped", output: "techreborn:chunk_loader" },
+        original: "createastral:bronze_sheet",
+        replaceWith: "techreborn:electrum_plate",
+      },
+      {
+        predicate: { type: "minecraft:crafting_shaped", output: "techreborn:chunk_loader" },
+        original: "create:golden_sheet",
+        replaceWith: "techreborn:emerald_plate",
+      },
+      { original: "#c:iron_rods", replaceWith: "createaddition:iron_rod" },
+      { original: "ad_astra:iron_rod", replaceWith: "createaddition:iron_rod" },
+      { original: "catwalksinc:iron_rod", replaceWith: "createaddition:iron_rod" },
+      {
+        predicate: { type: "minecraft:crafting_shaped" },
+        original: "campanion:rope",
+        replaceWith: "farmersdelight:rope",
+      },
+      {
+        predicate: { input: "techreborn:insulated_gold_cable" },
+        original: "techreborn:insulated_gold_cable",
+        replaceWith: "createaddition:gold_spool",
+      },
+      {
+        predicate: { input: "techreborn:insulated_copper_cable" },
+        original: "techreborn:insulated_copper_cable",
+        replaceWith: "createaddition:copper_spool",
+      },
+      {
+        predicate: { input: "techreborn:copper_cable" },
+        original: "techreborn:copper_cable",
+        replaceWith: "createaddition:copper_spool",
+      },
+      {
+        predicate: { input: "techreborn:tin_cable" },
+        original: "techreborn:tin_cable",
+        replaceWith: "createaddition:iron_rod",
+      },
+      { original: "dbe:steel_ingot", replaceWith: "dustrial_decor:cast_iron_billet" },
+      { original: "dbe:basic_circuit", replaceWith: "phonos:redstone_chip" },
+      {
+        predicate: { output: "minecraft:shulker_box" },
+        original: "minecraft:chest",
+        replaceWith: ["minecraft:barrel", "minecraft:chest"],
+      },
+      {
+        predicate: { mod: "createaddition" },
+        original: "minecraft:redstone_torch",
+        replaceWith: "create:electron_tube",
+      },
+      {
+        predicate: { output: "create:mechanical_drill" },
+        original: "minecraft:iron_ingot",
+        replaceWith: "create:iron_sheet",
+      },
+      {
+        predicate: { output: "create:mechanical_crafter" },
+        original: "minecraft:crafting_table",
+        replaceWith: "create:precision_mechanism",
+      },
+      {
+        predicate: { output: "ad_astra:rocket_fin" },
+        original: "ad_astra:steel_ingot",
+        replaceWith: "create:sturdy_sheet",
+      },
+      {
+        predicate: { output: "ad_astra:engine_frame" },
+        original: "ad_astra:steel_plate",
+        replaceWith: "create:sturdy_sheet",
+      },
+      {
+        predicate: { output: "ad_astra:engine_fan" },
+        original: "ad_astra:steel_plate",
+        replaceWith: "create:sturdy_sheet",
+      },
+      {
+        predicate: { output: "yttr:giant_cobblestone" },
+        original: "minecraft:cobblestone",
+        replaceWith: "compressor:triple_compressed_cobblestone",
+      },
+      {
+        predicate: { output: "createaddition:accumulator" },
+        original: "create:brass_casing",
+        replaceWith: "techreborn:red_cell_battery",
+      },
+      {
+        predicate: { output: "ad_astra:netherite_space_suit" },
+        original: "ad_astra:oxygen_gear",
+        replaceWith: "techreborn:lead_plate",
+      },
+      {
+        predicate: { output: "ad_astra:space_helmet" },
+        original: "ad_astra:steel_ingot",
+        replaceWith: "create:sturdy_sheet",
+      },
+      { predicate: { output: "create:crushing_wheel" }, original: "#c:stone", replaceWith: "techreborn:silver_ingot" },
+      {
+        predicate: { output: "ad_astra:space_helmet" },
+        original: "minecraft:orange_stained_glass_pane",
+        replaceWith: "create:copper_diving_helmet",
+      },
+      {
+        predicate: { output: "ad_astra:space_pants" },
+        original: "ad_astra:steel_ingot",
+        replaceWith: "create:sturdy_sheet",
+      },
+      {
+        predicate: { output: "create:deployer" },
+        original: "create:electron_tube",
+        replaceWith: "create:polished_rose_quartz",
+      },
+      {
+        predicate: { output: "create:content_observer" },
+        original: "create:electron_tube",
+        replaceWith: "minecraft:redstone_torch",
+      },
+      {
+        predicate: { output: "create:content_observer" },
+        original: "create:brass_casing",
+        replaceWith: "create:railway_casing",
+      },
+      {
+        predicate: { output: "ad_astra:space_suit" },
+        original: "ad_astra:steel_ingot",
+        replaceWith: "create:sturdy_sheet",
+      },
+      {
+        predicate: { output: "ad_astra:space_suit" },
+        original: "ad_astra:oxygen_gear",
+        replaceWith: "create:copper_backtank",
+      },
+      {
+        predicate: { output: "ad_astra:oxygen_tank" },
+        original: "ad_astra:steel_plate",
+        replaceWith: "createastral:bronze_sheet",
+      },
+      {
+        predicate: { output: "ad_astra:oxygen_gear" },
+        original: "ad_astra:steel_plate",
+        replaceWith: "createastral:bronze_sheet",
+      },
+      {
+        predicate: { output: "ad_astra:steel_tank" },
+        original: "ad_astra:steel_plate",
+        replaceWith: "ad_astra:iron_plate",
+      },
+      {
+        predicate: { output: "ad_astra:rocket_nose_cone" },
+        original: "ad_astra:steel_plate",
+        replaceWith: "ad_astra:iron_plate",
+      },
+      {
+        predicate: { output: "ad_astra:netherite_space_helmet" },
+        original: "minecraft:netherite_helmet",
+        replaceWith: "createastral:sturdy_helmet",
+      },
+      {
+        predicate: { output: "ad_astra:netherite_space_suit" },
+        original: "minecraft:netherite_chestplate",
+        replaceWith: "createastral:sturdy_chestplate",
+      },
+      {
+        predicate: { output: "ad_astra:netherite_space_pants" },
+        original: "minecraft:netherite_leggings",
+        replaceWith: "createastral:sturdy_leggings",
+      },
+      {
+        predicate: { output: "ad_astra:netherite_space_boots" },
+        original: "minecraft:netherite_leggings",
+        replaceWith: "createastral:sturdy_boots",
+      },
+      {
+        predicate: { output: "ad_astra:netherite_space_helmet" },
+        original: "ad_astra:steel_plate",
+        replaceWith: "ad_astra:ostrum_plate",
+      },
+      {
+        predicate: { output: "ad_astra:netherite_space_suit" },
+        original: "ad_astra:steel_plate",
+        replaceWith: "ad_astra:ostrum_plate",
+      },
+      {
+        predicate: { output: "ad_astra:netherite_space_suit" },
+        original: "ad_astra:oxygen_tank",
+        replaceWith: "createastral:shimmer_amplifier",
+      },
+      {
+        predicate: { output: "ad_astra:netherite_space_pants" },
+        original: "ad_astra:steel_plate",
+        replaceWith: "ad_astra:ostrum_plate",
+      },
+      {
+        predicate: { output: "ad_astra:netherite_space_boots" },
+        original: "ad_astra:steel_plate",
+        replaceWith: "ad_astra:ostrum_plate",
+      },
+      {
+        predicate: { output: "ad_astra:netherite_space_helmet" },
+        original: "ad_astra:steel_plate",
+        replaceWith: "ad_astra:ostrum_block",
+      },
+      {
+        predicate: { output: "ad_astra:netherite_space_suit" },
+        original: "ad_astra:steel_plate",
+        replaceWith: "ad_astra:ostrum_block",
+      },
+      {
+        predicate: { output: "ad_astra:netherite_space_pants" },
+        original: "ad_astra:steel_plate",
+        replaceWith: "techreborn:lead_plate",
+      },
+      {
+        predicate: { output: "ad_astra:netherite_space_boots" },
+        original: "ad_astra:steel_plate",
+        replaceWith: "techreborn:lead_plate",
+      },
+      {
+        predicate: { output: "minecraft:shulker_box" },
+        original: "techreborn:endstone_small_dust",
+        replaceWith: "ae2:fluix_dust",
+      },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:bronze_plate",
+        replaceWith: "createastral:bronze_sheet",
+      },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:bronze_ingot",
+        replaceWith: "createastral:bronze_ingot",
+      },
+      { original: "techreborn:copper_plate", replaceWith: "create:copper_sheet" },
+      { original: "techreborn:gold_plate", replaceWith: "create:golden_sheet" },
+      { predicate: { mod: "techreborn" }, original: "techreborn:steel_plate", replaceWith: "ad_astra:steel_ingot" },
+      { predicate: { mod: "techreborn" }, original: "minecraft:redstone", replaceWith: "ae2:certus_quartz_crystal" },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:refined_iron_plate",
+        replaceWith: "techreborn:silver_plate",
+      },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:refined_iron_ingot",
+        replaceWith: "techreborn:silver_plate",
+      },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:refined_iron_storage_block",
+        replaceWith: "techreborn:silver_storage_block",
+      },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:refined_iron_nugget",
+        replaceWith: "techreborn:silver_nugget",
+      },
+      { predicate: { mod: "techreborn" }, original: "techreborn:aluminum_plate", replaceWith: "techreborn:lead_plate" },
+      { predicate: { mod: "techreborn" }, original: "techreborn:aluminum_ingot", replaceWith: "techreborn:lead_plate" },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:aluminum_storage_block",
+        replaceWith: "techreborn:lead_storage_block",
+      },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:aluminum_nugget",
+        replaceWith: "techreborn:lead_nugget",
+      },
+      { predicate: { mod: "techreborn" }, original: "techreborn:tungsten_plate", replaceWith: "ad_astra:steel_plate" },
+      { predicate: { mod: "techreborn" }, original: "techreborn:tungsten_ingot", replaceWith: "ad_astra:steel_plate" },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:tungsten_storage_block",
+        replaceWith: "ad_astra:steel_block",
+      },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:tungsten_nugget",
+        replaceWith: "ad_astra:steel_nugget",
+      },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:tungstensteel_plate",
+        replaceWith: "ad_astra:steel_plate",
+      },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:tungstensteel_ingot",
+        replaceWith: "ad_astra:steel_plate",
+      },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:tungstensteel_storage_block",
+        replaceWith: "ad_astra:steel_block",
+      },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:tungstensteel_nugget",
+        replaceWith: "ad_astra:steel_nugget",
+      },
+      { predicate: { mod: "techreborn" }, original: "techreborn:chrome_plate", replaceWith: "ad_astra:ostrum_plate" },
+      { predicate: { mod: "techreborn" }, original: "techreborn:chrome_ingot", replaceWith: "ad_astra:ostrum_plate" },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:chrome_storage_block",
+        replaceWith: "ad_astra:ostrum_block",
+      },
+      { predicate: { mod: "techreborn" }, original: "techreborn:chrome_nugget", replaceWith: "ad_astra:ostrum_nugget" },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:titanium_plate",
+        replaceWith: "ad_astra:calorite_plate",
+      },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:titanium_ingot",
+        replaceWith: "ad_astra:calorite_plate",
+      },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:titanium_storage_block",
+        replaceWith: "ad_astra:calorite_block",
+      },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:titanium_nugget",
+        replaceWith: "ad_astra:calorite_nugget",
+      },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:platinum_plate",
+        replaceWith: "ad_astra:calorite_plate",
+      },
+      {
+        predicate: { output: "techreborn:implosion_compressor" },
+        original: "techreborn:advanced_alloy_ingot",
+        replaceWith: "techreborn:advanced_alloy_plate",
+      },
+      { predicate: { mod: "techreborn" }, original: "techreborn:nickel_ingot", replaceWith: "ad_astra:desh_plate" },
+      { predicate: { mod: "techreborn" }, original: "techreborn:nickel_plate", replaceWith: "ad_astra:desh_plate" },
+      { predicate: { mod: "techreborn" }, original: "techreborn:brass_plate", replaceWith: "create:brass_sheet" },
+      { predicate: { mod: "techreborn" }, original: "techreborn:brass_ingot", replaceWith: "create:brass_ingot" },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:brass_storage_block",
+        replaceWith: "create:brass_block",
+      },
+      { predicate: { mod: "techreborn" }, original: "techreborn:brass_nugget", replaceWith: "create:brass_nugget" },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:electronic_circuit",
+        replaceWith: "create:integrated_circuit",
+      },
+      { predicate: { mod: "techreborn" }, original: "minecraft:lapis_lazuli", replaceWith: "techreborn:lead_plate" },
+      {
+        predicate: { mod: "techreborn", output: "techreborn:red_cell_battery" },
+        original: "techreborn:lead_ingot",
+        replaceWith: "techreborn:silver_plate",
+      },
+      { predicate: { mod: "techreborn" }, original: "techreborn:zinc_plate", replaceWith: "createaddition:zinc_sheet" },
+      { original: "createdeco:zinc_sheet", replaceWith: "createaddition:zinc_sheet" },
+      { predicate: { mod: "techreborn" }, original: "techreborn:zinc_ingot", replaceWith: "create:zinc_ingot" },
+      { predicate: { mod: "techreborn" }, original: "techreborn:zinc_nugget", replaceWith: "create:zinc_nugget" },
+      { original: "#c:ingots/steel", replaceWith: "ad_astra:steel_ingot" },
+      { predicate: { mod: "ae2" }, original: "minecraft:iron_ingot", replaceWith: "techreborn:silver_plate" },
+      { predicate: { mod: "techreborn" }, original: "minecraft:cobblestone", replaceWith: "create:sturdy_sheet" },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:data_storage_chip",
+        replaceWith: "createastral:subatomic_ingot",
+      },
+      { predicate: { mod: "techreborn" }, original: "minecraft:stone", replaceWith: "create:sturdy_sheet" },
+      { predicate: { mod: "techreborn" }, original: "minecraft:cobblestone", replaceWith: "create:sturdy_sheet" },
+      { predicate: { mod: "techreborn" }, original: "minecraft:flint", replaceWith: "create:sturdy_sheet" },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:magnalium_plate",
+        replaceWith: "techreborn:silver_plate",
+      },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:peridot_plate",
+        replaceWith: "createastral:olivine_sheet",
+      },
+      { predicate: { mod: "ae2" }, original: "minecraft:copper_ingot", replaceWith: "techreborn:silver_plate" },
+      { predicate: { mod: "ae2" }, original: "minecraft:redstone", replaceWith: "ae2:fluix_dust" },
+      { predicate: { mod: "ae2" }, original: "ae2:fluix_crystal", replaceWith: "ae2:fluix_dust" },
+      { original: "techreborn:advanced_circuit", replaceWith: "techreborn:electronic_circuit" },
+      {
+        predicate: { output: "gearreborn:hazmat_chestpiece" },
+        original: "techreborn:electronic_circuit",
+        replaceWith: "create:integrated_circuit",
+      },
+      {
+        predicate: { output: "gearreborn:hazmat_helmet" },
+        original: "techreborn:reinforced_glass",
+        replaceWith: "#c:glass",
+      },
+      {
+        predicate: { output: "techreborn:industrial_sawmill" },
+        original: "techreborn:silver_plate",
+        replaceWith: "techreborn:lead_plate",
+      },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:cupronickel_heating_coil",
+        replaceWith: "createastral:copper_heating_coil",
+      },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:nichrome_heating_coil",
 
-        [
-            {
-                type: "minecraft:crafting_shaped",
-                output: "techreborn:chunk_loader",
-            },
-            "techreborn:industrial_machine_frame",
-            "create:shadow_steel_casing",
+        replaceWith: "createastral:ender_heating_coil",
+      },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:energy_crystal",
+        replaceWith: "techreborn:red_cell_battery",
+      },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:lapotron_crystal",
+        replaceWith: "techreborn:lithium_ion_battery",
+      },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:advanced_alloy_plate",
+        replaceWith: "techreborn:lead_plate",
+      },
+      {
+        predicate: { mod: "techreborn", output: "techreborn:advanced_drill" },
+        original: "ad_astra:calorite_plate",
+        replaceWith: "techreborn:lead_plate",
+      },
+      {
+        predicate: { mod: "techreborn", output: "techreborn:advanced_chainsaw" },
+        original: "ad_astra:calorite_plate",
+        replaceWith: "techreborn:lead_plate",
+      },
+      {
+        predicate: { mod: "techreborn", output: "techreborn:advanced_jackhammer" },
+        original: "ad_astra:calorite_plate",
+        replaceWith: "techreborn:lead_plate",
+      },
+      { original: "techreborn:energy_flow_chip", replaceWith: "techreborn:data_storage_chip" },
+      { predicate: { mod: "techreborn" }, original: "techreborn:iridium_ingot", replaceWith: "yttr:yttrium_ingot" },
+      { predicate: { mod: "techreborn" }, original: "techreborn:iridium_plate", replaceWith: "yttr:yttrium_ingot" },
+      {
+        predicate: { output: "ad_astra:cryo_freezer" },
+        original: "ad_astra:ostrum_tank",
+        replaceWith: "techreborn:lithium_ion_battery",
+      },
+      { original: "techreborn:iridium_alloy_plate", replaceWith: "yttr:yttrium_ingot" },
+      { predicate: { mod: "dustrial_decor" }, original: "minecraft:iron_ingot", replaceWith: "create:iron_sheet" },
+      { predicate: { mod: "computercraft" }, original: "minecraft:iron_ingot", replaceWith: "create:iron_sheet" },
+      {
+        predicate: [
+          { id: "ae2:network/cells/item_cell_housing" },
+          { id: "ae2:network/cells/view_cell" },
+          { id: "ae2:network/cells/item_storage_cell_1k" },
+          { id: "ae2:network/cells/item_storage_cell_4k" },
+          { id: "ae2:network/cells/item_storage_cell_16k" },
+          { id: "ae2:network/cells/item_storage_cell_64k" },
+          { id: "ae2:network/cells/item_storage_cell_256k" },
+          { id: "ae2:network/cells/spatial_storage_cell_2_cubed" },
+          { id: "ae2:network/cells/spatial_storage_cell_16_cubed" },
+          { id: "ae2:network/cells/spatial_storage_cell_128_cubed" },
         ],
-        ["techreborn:industrial_machine_frame", "techreborn:basic_machine_frame"],
-        [
-            {
-                type: "minecraft:crafting_shaped",
-                output: "techreborn:chunk_loader",
-            },
-            "techreborn:coal_plate",
-            "techreborn:diamond_plate",
+        original: "techreborn:silver_plate",
+        replaceWith: "create:andesite_casing",
+      },
+      {
+        predicate: [
+          { id: "ae2:network/cells/fluid_cell_housing" },
+          { id: "ae2:network/cells/fluid_storage_cell_1k" },
+          { id: "ae2:network/cells/fluid_storage_cell_4k" },
+          { id: "ae2:network/cells/fluid_storage_cell_16k" },
+          { id: "ae2:network/cells/fluid_storage_cell_64k" },
+          { id: "ae2:network/cells/fluid_storage_cell_256k" },
         ],
-        [
-            {
-                type: "minecraft:crafting_shaped",
-                output: "techreborn:chunk_loader",
-            },
-            "techreborn:coal_plate",
-            "techreborn:diamond_plate",
-        ],
-        [
-            {
-                type: "minecraft:crafting_shaped",
-                output: "techreborn:chunk_loader",
-            },
-            "createastral:bronze_sheet",
-            "techreborn:electrum_plate",
-        ],
-        [
-            {
-                type: "minecraft:crafting_shaped",
-                output: "techreborn:chunk_loader",
-            },
-            "create:golden_sheet",
-            "techreborn:emerald_plate",
-        ],
-        ["#c:iron_rods", "createaddition:iron_rod"],
-        ["ad_astra:iron_rod", "createaddition:iron_rod"],
-        ["catwalksinc:iron_rod", "createaddition:iron_rod"],
-        [{ type: "minecraft:crafting_shaped" }, "campanion:rope", "farmersdelight:rope"],
-        // Tech reborn cables
-        [
-            {
-                input: "techreborn:insulated_gold_cable",
-            },
-            "techreborn:insulated_gold_cable",
-            "createaddition:gold_spool",
-        ],
-        [
-            {
-                input: "techreborn:insulated_copper_cable",
-            },
-            "techreborn:insulated_copper_cable",
-            "createaddition:copper_spool",
-        ],
-        [
-            {
-                input: "techreborn:copper_cable",
-            },
-            "techreborn:copper_cable",
-            "createaddition:copper_spool",
-        ],
-        [
-            {
-                input: "techreborn:tin_cable",
-            },
-            "techreborn:tin_cable",
-            "createaddition:iron_rod",
-        ],
-
-        // ['tconstruct:scorched_brick', 'tconstruct:scorched_bricks') // ???
-        ["dbe:steel_ingot", "dustrial_decor:cast_iron_billet"],
-        ["dbe:basic_circuit", "phonos:redstone_chip"],
-        [{ output: "extendedflywheels:steelflywheel" }, "create:andesite_alloy", "ad_astra:steel_ingot"],
-        [{ output: "minecraft:shulker_box" }, "minecraft:chest", ["minecraft:barrel", "minecraft:chest"]],
-        [{ mod: "createaddition" }, "minecraft:redstone_torch", "create:electron_tube"],
-        [{ output: "create:mechanical_drill" }, "minecraft:iron_ingot", "create:iron_sheet"],
-        [{ output: "create:mechanical_crafter" }, "minecraft:crafting_table", "create:precision_mechanism"],
-        [{ output: "ad_astra:rocket_fin" }, "ad_astra:steel_ingot", "create:sturdy_sheet"],
-        [{ output: "ad_astra:engine_frame" }, "ad_astra:steel_plate", "create:sturdy_sheet"],
-        [{ output: "ad_astra:engine_fan" }, "ad_astra:steel_plate", "create:sturdy_sheet"],
-        [{ output: "yttr:giant_cobblestone" }, "minecraft:cobblestone", "compressor:triple_compressed_cobblestone"],
-        [{ output: "createaddition:accumulator" }, "create:brass_casing", "techreborn:red_cell_battery"],
-        [{ output: "ad_astra:netherite_space_suit" }, "ad_astra:oxygen_gear", "techreborn:lead_plate"],
-        [{ output: "ad_astra:space_helmet" }, "ad_astra:steel_ingot", "create:sturdy_sheet"],
-        [{ output: "create:crushing_wheel" }, "#c:stone", "techreborn:silver_ingot"],
-        [{ output: "ad_astra:space_helmet" }, "minecraft:orange_stained_glass_pane", "create:copper_diving_helmet"],
-        [{ output: "ad_astra:space_pants" }, "ad_astra:steel_ingot", "create:sturdy_sheet"],
-        [{ output: "create:deployer" }, "create:electron_tube", "create:polished_rose_quartz"],
-        [{ output: "create:content_observer" }, "create:electron_tube", "minecraft:redstone_torch"],
-        [{ output: "create:content_observer" }, "create:brass_casing", "create:railway_casing"],
-        [{ output: "ad_astra:space_suit" }, "ad_astra:steel_ingot", "create:sturdy_sheet"],
-        [{ output: "ad_astra:space_suit" }, "ad_astra:oxygen_gear", "create:copper_backtank"],
-        [{ output: "ad_astra:oxygen_tank" }, "ad_astra:steel_plate", "createastral:bronze_sheet"],
-        [{ output: "ad_astra:oxygen_gear" }, "ad_astra:steel_plate", "createastral:bronze_sheet"],
-        [{ output: "ad_astra:steel_tank" }, "ad_astra:steel_plate", "ad_astra:iron_plate"],
-        [{ output: "ad_astra:rocket_nose_cone" }, "ad_astra:steel_plate", "ad_astra:iron_plate"],
-        [{ output: "ad_astra:netherite_space_helmet" }, "minecraft:netherite_helmet", "createastral:sturdy_helmet"],
-        [
-            { output: "ad_astra:netherite_space_suit" },
-            "minecraft:netherite_chestplate",
-            "createastral:sturdy_chestplate",
-        ],
-        [{ output: "ad_astra:netherite_space_pants" }, "minecraft:netherite_leggings", "createastral:sturdy_leggings"],
-        [{ output: "ad_astra:netherite_space_boots" }, "minecraft:netherite_leggings", "createastral:sturdy_boots"],
-        [{ output: "ad_astra:netherite_space_helmet" }, "ad_astra:steel_plate", "ad_astra:ostrum_plate"],
-        [{ output: "ad_astra:netherite_space_suit" }, "ad_astra:steel_plate", "ad_astra:ostrum_plate"],
-        [{ output: "ad_astra:netherite_space_suit" }, "ad_astra:oxygen_tank", "createastral:shimmer_amplifier"],
-        [{ output: "ad_astra:netherite_space_pants" }, "ad_astra:steel_plate", "ad_astra:ostrum_plate"],
-        [{ output: "ad_astra:netherite_space_boots" }, "ad_astra:steel_plate", "ad_astra:ostrum_plate"],
-
-        [{ output: "ad_astra:netherite_space_helmet" }, "ad_astra:steel_plate", "ad_astra:ostrum_block"],
-
-        [{ output: "ad_astra:netherite_space_suit" }, "ad_astra:steel_plate", "ad_astra:ostrum_block"],
-
-        [{ output: "ad_astra:netherite_space_pants" }, "ad_astra:steel_plate", "techreborn:lead_plate"],
-
-        [{ output: "ad_astra:netherite_space_boots" }, "ad_astra:steel_plate", "techreborn:lead_plate"],
-        [{ output: "minecraft:shulker_box" }, "techreborn:endstone_small_dust", "ae2:fluix_dust"],
-
-        [{ mod: "techreborn" }, "techreborn:bronze_plate", "createastral:bronze_sheet"],
-        [{ mod: "techreborn" }, "techreborn:bronze_ingot", "createastral:bronze_ingot"],
-        ["techreborn:copper_plate", "create:copper_sheet"],
-        ["techreborn:gold_plate", "create:gold_sheet"],
-        [{ mod: "techreborn" }, "techreborn:steel_plate", "ad_astra:steel_ingot"],
-        [{ mod: "techreborn" }, "minecraft:redstone", "ae2:certus_quartz_crystal"],
-        [{ mod: "techreborn" }, "techreborn:refined_iron_plate", "techreborn:silver_plate"],
-        [{ mod: "techreborn" }, "techreborn:refined_iron_ingot", "techreborn:silver_plate"],
-        [{ mod: "techreborn" }, "techreborn:refined_iron_storage_block", "techreborn:silver_storage_block"],
-        [{ mod: "techreborn" }, "techreborn:refined_iron_nugget", "techreborn:silver_nugget"],
-        [{ mod: "techreborn" }, "techreborn:aluminum_plate", "techreborn:lead_plate"],
-        [{ mod: "techreborn" }, "techreborn:aluminum_ingot", "techreborn:lead_plate"],
-        [{ mod: "techreborn" }, "techreborn:aluminum_storage_block", "techreborn:lead_storage_block"],
-        [{ mod: "techreborn" }, "techreborn:aluminum_nugget", "techreborn:lead_nugget"],
-        [{ mod: "techreborn" }, "techreborn:tungsten_plate", "ad_astra:steel_plate"],
-        [{ mod: "techreborn" }, "techreborn:tungsten_ingot", "ad_astra:steel_plate"],
-        [{ mod: "techreborn" }, "techreborn:tungsten_storage_block", "ad_astra:steel_block"],
-        [{ mod: "techreborn" }, "techreborn:tungsten_nugget", "ad_astra:steel_nugget"],
-        [{ mod: "techreborn" }, "techreborn:tungstensteel_plate", "ad_astra:steel_plate"],
-        [{ mod: "techreborn" }, "techreborn:tungstensteel_ingot", "ad_astra:steel_plate"],
-        [{ mod: "techreborn" }, "techreborn:tungstensteel_storage_block", "ad_astra:steel_block"],
-        [{ mod: "techreborn" }, "techreborn:tungstensteel_nugget", "ad_astra:steel_nugget"],
-        [{ mod: "techreborn" }, "techreborn:chrome_plate", "ad_astra:ostrum_plate"],
-        [{ mod: "techreborn" }, "techreborn:chrome_ingot", "ad_astra:ostrum_plate"],
-        [{ mod: "techreborn" }, "techreborn:chrome_storage_block", "ad_astra:ostrum_block"],
-        [{ mod: "techreborn" }, "techreborn:chrome_nugget", "ad_astra:ostrum_nugget"],
-        [{ mod: "techreborn" }, "techreborn:titanium_plate", "ad_astra:calorite_plate"],
-        [{ mod: "techreborn" }, "techreborn:titanium_ingot", "ad_astra:calorite_plate"],
-        [{ mod: "techreborn" }, "techreborn:titanium_storage_block", "ad_astra:calorite_block"],
-        [{ mod: "techreborn" }, "techreborn:titanium_nugget", "ad_astra:calorite_nugget"],
-        [{ mod: "techreborn" }, "techreborn:platinum_plate", "ad_astra:calorite_plate"],
-        [
-            { output: "techreborn:implosion_compressor" },
-            "techreborn:advanced_alloy_ingot",
-            "techreborn:advanced_alloy_plate",
-        ],
-        [{ mod: "techreborn" }, "techreborn:nickel_ingot", "ad_astra:desh_plate"],
-        [{ mod: "techreborn" }, "techreborn:nickel_plate", "ad_astra:desh_plate"],
-        [{ mod: "techreborn" }, "techreborn:brass_plate", "create:brass_sheet"],
-        [{ mod: "techreborn" }, "techreborn:brass_ingot", "create:brass_ingot"],
-        [{ mod: "techreborn" }, "techreborn:brass_storage_block", "create:brass_block"],
-        [{ mod: "techreborn" }, "techreborn:brass_nugget", "create:brass_nugget"],
-        [{ mod: "techreborn" }, "techreborn:electronic_circuit", "create:integrated_circuit"],
-        [{ mod: "techreborn" }, "minecraft:lapis_lazuli", "techreborn:lead_plate"],
-        [
-            { mod: "techreborn", output: "techreborn:red_cell_battery" },
-            "techreborn:lead_ingot",
-            "techreborn:silver_plate",
-        ],
-        [{ mod: "techreborn" }, "techreborn:zinc_plate", "createaddition:zinc_sheet"],
-        ["createdeco:zinc_sheet", "createaddition:zinc_sheet"],
-        [{ mod: "techreborn" }, "techreborn:zinc_ingot", "create:zinc_ingot"],
-        [{ mod: "techreborn" }, "techreborn:zinc_nugget", "create:zinc_nugget"],
-        ["#c:ingots/steel", "ad_astra:steel_ingot"],
-        [{ mod: "ae2" }, "minecraft:iron_ingot", "techreborn:silver_plate"],
-        [{ mod: "techreborn" }, "minecraft:cobblestone", "create:sturdy_sheet"],
-        [{ mod: "techreborn" }, "techreborn:data_storage_chip", "createastral:subatomic_ingot"],
-        [{ mod: "techreborn" }, "minecraft:stone", "create:sturdy_sheet"],
-        [{ mod: "techreborn" }, "minecraft:cobblestone", "create:sturdy_sheet"],
-        [{ mod: "techreborn" }, "minecraft:flint", "create:sturdy_sheet"],
-        [{ mod: "techreborn" }, "techreborn:magnalium_plate", "techreborn:silver_plate"],
-        [{ mod: "techreborn" }, "techreborn:peridot_plate", "createastral:olivine_sheet"],
-        [{ mod: "ae2" }, "minecraft:copper_ingot", "techreborn:silver_plate"],
-        [{ mod: "ae2" }, "minecraft:redstone", "ae2:fluix_dust"],
-        [{ mod: "ae2" }, "ae2:fluix_crystal", "ae2:fluix_dust"],
-        ["techreborn:advanced_circuit", "techreborn:electronic_circuit"],
-        [{ output: "gearreborn:hazmat_chestpiece" }, "techreborn:electronic_circuit", "create:integrated_circuit"],
-        [{ output: "gearreborn:hazmat_helmet" }, "techreborn:reinforced_glass", "#c:glass"],
-        [{ output: "techreborn:industrial_sawmill" }, "techreborn:silver_plate", "techreborn:lead_plate"],
-        [{ mod: "techreborn" }, "techreborn:cupronickel_heating_coil", "createastral:copper_heating_coil"],
-        [{ mod: "techreborn" }, "techreborn:nichrome_heating_coil", "createastral:ender_heating_coil"],
-        [{ mod: "techreborn" }, "techreborn:energy_crystal", "techreborn:red_cell_battery"],
-        [{ mod: "techreborn" }, "techreborn:lapotron_crystal", "techreborn:lithium_ion_battery"],
-        [{ mod: "techreborn" }, "techreborn:advanced_alloy_plate", "techreborn:lead_plate"],
-        [
-            { mod: "techreborn", output: "techreborn:advanced_drill" },
-            "ad_astra:calorite_plate",
-            "techreborn:lead_plate",
-        ],
-        [
-            { mod: "techreborn", output: "techreborn:advanced_chainsaw" },
-            "ad_astra:calorite_plate",
-            "techreborn:lead_plate",
-        ],
-        [
-            { mod: "techreborn", output: "techreborn:advanced_jackhammer" },
-            "ad_astra:calorite_plate",
-            "techreborn:lead_plate",
-        ],
-        ["techreborn:energy_flow_chip", "techreborn:data_storage_chip"],
-        [{ mod: "techreborn" }, "techreborn:iridium_ingot", "yttr:yttrium_ingot"],
-        [{ mod: "techreborn" }, "techreborn:iridium_plate", "yttr:yttrium_ingot"],
-        [{ output: "ad_astra:cryo_freezer" }, "ad_astra:ostrum_tank", "techreborn:lithium_ion_battery"],
-        ["techreborn:iridium_alloy_plate", "yttr:yttrium_ingot"],
-        [{ mod: "dustrial_decor" }, "minecraft:iron_ingot", "create:iron_sheet"],
-        [{ mod: "computercraft" }, "minecraft:iron_ingot", "create:iron_sheet"],
-        [
-            [
-                { id: "ae2:network/cells/item_cell_housing" },
-                { id: "ae2:network/cells/view_cell" },
-                { id: "ae2:network/cells/item_storage_cell_1k" },
-                { id: "ae2:network/cells/item_storage_cell_4k" },
-                { id: "ae2:network/cells/item_storage_cell_16k" },
-                { id: "ae2:network/cells/item_storage_cell_64k" },
-                { id: "ae2:network/cells/item_storage_cell_256k" },
-                { id: "ae2:network/cells/spatial_storage_cell_2_cubed" },
-                { id: "ae2:network/cells/spatial_storage_cell_16_cubed" },
-                { id: "ae2:network/cells/spatial_storage_cell_128_cubed" },
-            ],
-            "techreborn:silver_plate",
-            "create:andesite_casing",
-        ],
-        [
-            [
-                { id: "ae2:network/cells/fluid_cell_housing" },
-                { id: "ae2:network/cells/fluid_storage_cell_1k" },
-                { id: "ae2:network/cells/fluid_storage_cell_4k" },
-                { id: "ae2:network/cells/fluid_storage_cell_16k" },
-                { id: "ae2:network/cells/fluid_storage_cell_64k" },
-                { id: "ae2:network/cells/fluid_storage_cell_256k" },
-            ],
-            "techreborn:silver_plate",
-            "create:copper_casing",
-        ],
-        [{ output: "techreborn:industrial_grinder" }, "techreborn:electronic_circuit", "ad_astra:calorite_plate"],
-        [{ output: "techreborn:digital_display" }, "minecraft:black_dye", "techreborn:machine_parts"],
-        [{ output: "techreborn:digital_display" }, "minecraft:glass_pane", "#computercraft:monitor"],
-        ["techreborn:lapotronic_orb", "ad_astra:calorite_plate"],
-        [{ mod: "quarrymod" }, "techreborn:iridium_ingot", "passivepiglins:piglin_coin"],
-        [{ mod: "quarrymod" }, "techreborn:advanced_alloy_plate", "passivepiglins:piglin_coin"],
-        [{ mod: "quarrymod" }, "techreborn:peridot_plate", "ad_astra:steel_plate"],
-        [{ mod: "quarrymod" }, "techreborn:silicon_plate", "techreborn:carbon_mesh"],
-        [{ mod: "quarrymod" }, "techreborn:lapis_plate", "create:lapis_sheet"],
-        [{ mod: "quarrymod" }, "techreborn:peridot_storage_block", "createastral:olivine_sheet"],
-        [{ mod: "quarrymod" }, "techreborn:titanium_plate", "ad_astra:steel_plate"],
-        [{ mod: "quarrymod" }, "techreborn:tungstensteel_plate", "create:shadow_steel"],
-        [{ mod: "phonos" }, "minecraft:iron_ingot", "techreborn:tin_ingot"],
-        [{ mod: "farmersdelight" }, "minecraft:iron_ingot", "techreborn:tin_ingot"],
-        [{ output: "farmersdelight:iron_knife" }, "minecraft:tin_ingot", "techreborn:iron_ingot"],
-        [{ mod: "drinkbeer" }, "minecraft:iron_ingot", "techreborn:tin_ingot"],
-        [{ mod: "computercraft" }, "minecraft:gold_ingot", "create:brass_sheet"],
-        [{ mod: "cccbridge" }, "create:golden_sheet", "create:brass_sheet"],
-        [{ mod: "computercraft" }, "#c:stones", "create:andesite_alloy"],
-
-        [{ mod: "toms_storage" }, "#minecraft:planks", "create:andesite_alloy"],
-        [{ mod: "toms_storage" }, "minecraft:stick", "createaddition:iron_rod"],
-        [{ mod: "toms_storage" }, "minecraft:paper", "create:filter"],
-        [{ mod: "toms_storage" }, "minecraft:crafting_table", "techreborn:silver_plate"],
-        [{ mod: "toms_storage" }, "minecraft:ender_pearl", "techreborn:silver_plate"],
-        [{ mod: "computercraft" }, "minecraft:redstone", "create:polished_rose_quartz"],
-        [{ mod: "computercraft" }, "minecraft:iron_ingot", "create:iron_sheet"],
-        [{ mod: "computercraft" }, "minecraft:golden_apple", "create:display_board"],
-        [{ output: "computercraft:computer_normal" }, "create:electron_tube", "create:polished_rose_quartz"],
-        [{ output: "computercraft:turtle_normal" }, "create:electron_tube", "create:polished_rose_quartz"],
-        [
-            { type: "create:mechanical_crafting", mod: "createaddition" },
-            "create:andesite_alloy",
-            "techreborn:red_cell_battery",
-        ],
-        [
-            { type: "create:mechanical_crafting", mod: "createaddition" },
-            "createaddition:iron_rod",
-            "create:integrated_circuit",
-        ],
-        [
-            {
-                mod: "immersive_aircraft",
-                output: "immersive_aircraft:steel_boiler",
-            },
-            "minecraft:iron_ingot",
-            "ad_astra:steel_plate",
-        ],
-        [{ mod: "immersive_aircraft" }, "minecraft:copper_ingot", "create:fluid_pipe"],
-        [{ mod: "immersive_aircraft" }, "minecraft:iron_ingot", "minecraft:iron_block"],
-        [{ mod: "createendertransmission" }, "minecraft:obsidian", "create:shadow_steel"],
-        [{ mod: "createendertransmission" }, "minecraft:ender_eye", "createastral:subatomic_ingot"],
-        [{ mod: "createendertransmission" }, "minecraft:ender_pearl", "minecraft:ender_eye"],
-        ["techreborn:carbon_plate", "techreborn:carbon_mesh"],
-        ["techreborn:lazurite_plate", "create:lapis_sheet"],
-        ["ae2:sky_stone_block", "ad_astra:sky_stone"],
-    ].forEach((recipe) => {
-        if (recipe.length === 2) {
-            event.replaceInput(recipe[0], recipe[1]);
-        } else if (recipe.length === 3) {
-            event.replaceInput(recipe[0], recipe[1], recipe[2]);
-        }
+        original: "techreborn:silver_plate",
+        replaceWith: "create:copper_casing",
+      },
+      {
+        predicate: { output: "techreborn:industrial_grinder" },
+        original: "techreborn:electronic_circuit",
+        replaceWith: "ad_astra:calorite_plate",
+      },
+      {
+        predicate: { output: "techreborn:digital_display" },
+        original: "minecraft:black_dye",
+        replaceWith: "techreborn:machine_parts",
+      },
+      {
+        predicate: { output: "techreborn:digital_display" },
+        original: "minecraft:glass_pane",
+        replaceWith: "#computercraft:monitor",
+      },
+      { original: "techreborn:lapotronic_orb", replaceWith: "ad_astra:calorite_plate" },
+      {
+        predicate: { mod: "quarrymod" },
+        original: "techreborn:iridium_ingot",
+        replaceWith: "passivepiglins:piglin_coin",
+      },
+      {
+        predicate: { mod: "quarrymod" },
+        original: "techreborn:advanced_alloy_plate",
+        replaceWith: "passivepiglins:piglin_coin",
+      },
+      { predicate: { mod: "quarrymod" }, original: "techreborn:peridot_plate", replaceWith: "ad_astra:steel_plate" },
+      { predicate: { mod: "quarrymod" }, original: "techreborn:silicon_plate", replaceWith: "techreborn:carbon_mesh" },
+      { predicate: { mod: "quarrymod" }, original: "techreborn:lapis_plate", replaceWith: "create:lapis_sheet" },
+      {
+        predicate: { mod: "quarrymod" },
+        original: "techreborn:peridot_storage_block",
+        replaceWith: "createastral:olivine_sheet",
+      },
+      { predicate: { mod: "quarrymod" }, original: "techreborn:titanium_plate", replaceWith: "ad_astra:steel_plate" },
+      {
+        predicate: { mod: "quarrymod" },
+        original: "techreborn:tungstensteel_plate",
+        replaceWith: "create:shadow_steel",
+      },
+      { predicate: { mod: "phonos" }, original: "minecraft:iron_ingot", replaceWith: "techreborn:tin_ingot" },
+      { predicate: { mod: "farmersdelight" }, original: "minecraft:iron_ingot", replaceWith: "techreborn:tin_ingot" },
+      {
+        predicate: { output: "farmersdelight:iron_knife" },
+        original: "minecraft:iron_ingot",
+        replaceWith: "techreborn:tin_ingot",
+      },
+      { predicate: { mod: "drinkbeer" }, original: "minecraft:iron_ingot", replaceWith: "techreborn:tin_ingot" },
+      { predicate: { mod: "computercraft" }, original: "minecraft:gold_ingot", replaceWith: "create:brass_sheet" },
+      { predicate: { mod: "cccbridge" }, original: "create:golden_sheet", replaceWith: "create:brass_sheet" },
+      { predicate: { mod: "computercraft" }, original: "#c:stones", replaceWith: "create:andesite_alloy" },
+      {
+        predicate: { mod: "computercraft" },
+        original: "minecraft:redstone",
+        replaceWith: "create:polished_rose_quartz",
+      },
+      { predicate: { mod: "computercraft" }, original: "minecraft:iron_ingot", replaceWith: "create:iron_sheet" },
+      { predicate: { mod: "computercraft" }, original: "minecraft:golden_apple", replaceWith: "create:display_board" },
+      {
+        predicate: { output: "computercraft:computer_normal" },
+        original: "create:electron_tube",
+        replaceWith: "create:polished_rose_quartz",
+      },
+      {
+        predicate: { output: "computercraft:turtle_normal" },
+        original: "create:electron_tube",
+        replaceWith: "create:polished_rose_quartz",
+      },
+      {
+        predicate: { type: "create:mechanical_crafting", mod: "createaddition" },
+        original: "create:andesite_alloy",
+        replaceWith: "techreborn:red_cell_battery",
+      },
+      {
+        predicate: { type: "create:mechanical_crafting", mod: "createaddition" },
+        original: "createaddition:iron_rod",
+        replaceWith: "create:integrated_circuit",
+      },
+      {
+        predicate: { mod: "immersive_aircraft", output: "immersive_aircraft:steel_boiler" },
+        original: "minecraft:iron_ingot",
+        replaceWith: "ad_astra:steel_plate",
+      },
+      {
+        predicate: { mod: "immersive_aircraft" },
+        original: "minecraft:copper_ingot",
+        replaceWith: "create:fluid_pipe",
+      },
+      {
+        predicate: { mod: "immersive_aircraft" },
+        original: "minecraft:iron_ingot",
+        replaceWith: "minecraft:iron_block",
+      },
+      {
+        predicate: { mod: "createendertransmission" },
+        original: "minecraft:obsidian",
+        replaceWith: "create:shadow_steel",
+      },
+      {
+        predicate: { mod: "createendertransmission" },
+        original: "minecraft:ender_eye",
+        replaceWith: "createastral:subatomic_ingot",
+      },
+      {
+        predicate: { mod: "createendertransmission" },
+        original: "minecraft:ender_pearl",
+        replaceWith: "minecraft:ender_eye",
+      },
+      { original: "techreborn:carbon_plate", replaceWith: "techreborn:carbon_mesh" },
+      { original: "techreborn:lazurite_plate", replaceWith: "create:lapis_sheet" },
+      { original: "ae2:sky_stone_block", replaceWith: "ad_astra:sky_stone" },
+    ];
+    replacements.forEach((replacement) => {
+      if (replacement.predicate) {
+        event.replaceInput(replacement.predicate, replacement.original, replacement.replaceWith);
+      } else {
+        event.replaceInput(replacement.original, replacement.replaceWith);
+      }
     });
-
     // Replace all cells crafting recipes to use tin sheets instead of
     // tin ingots
-    [
-        "water_coolant_cell_60k", // may want to remove this from modpack -- no uses
-        "water_coolant_cell_30k", // and this
-        "water_coolant_cell_10k",
-        "nak_coolant_cell_60k",
-        "nak_coolant_cell_360k", // and this
-        "nak_coolant_cell_180k", // and this
-        "helium_coolant_cell_60k",
-        "helium_coolant_cell_360k", // and this
-        "helium_coolant_cell_180k",
-        "cell",
-    ].forEach((cell) => {
-        event.replaceInput(
-            { type: "minecraft:crafting_shaped", output: "techreborn:" + cell },
-            "techreborn:tin_ingot",
-            "techreborn:tin_plate"
-        );
-        event.replaceInput(
-            { type: "minecraft:crafting_shaped", output: "techreborn:" + cell },
-            "minecraft:copper_ingot",
-            "create:copper_sheet"
-        );
+    const cells = [
+      "water_coolant_cell_60k", // may want to remove this from modpack -- no uses
+      "water_coolant_cell_30k", // and this
+      "water_coolant_cell_10k",
+      "nak_coolant_cell_60k",
+      "nak_coolant_cell_360k", // and this
+      "nak_coolant_cell_180k", // and this
+      "helium_coolant_cell_60k",
+      "helium_coolant_cell_360k", // and this
+      "helium_coolant_cell_180k",
+      "cell",
+    ];
+    cells.forEach((cell) => {
+      event.replaceInput(
+        { type: "minecraft:crafting_shaped", output: `techreborn:${cell}` },
+        "techreborn:tin_ingot",
+        "techreborn:tin_plate",
+      );
+      event.replaceInput(
+        { type: "minecraft:crafting_shaped", output: `techreborn:${cell}` },
+        "minecraft:copper_ingot",
+        "create:copper_sheet",
+      );
     });
     event.replaceInput({ type: "techreborn:solid_canning_machine" }, "techreborn:tin_ingot", "techreborn:tin_plate");
-
     event.replaceOutput("techreborn:electronic_circuit", "create:integrated_circuit");
-
     // Change the resin basin recipe to use an Item Drain so that it can be crafted during chapter 2
     event.replaceInput(
-        { id: "techreborn:crafting_table/machine/resin_basin" },
-        "techreborn:drain",
-        "create:item_drain"
+      { id: "techreborn:crafting_table/machine/resin_basin" },
+      "techreborn:drain",
+      "create:item_drain",
     );
-
     // Buffed catwalk output. Seriously! Its so resource heavy!
-    for (let catwalkMaterial of CATWALK_MATERIALS) {
-        event.remove({
-            output: "createdeco:" + catwalkMaterial[0] + "_catwalk",
-        });
-
-        // Note I'm deliberately changing iron catwalk recipe to not use sandpapering.
-        event.shaped("8x createdeco:" + catwalkMaterial[0] + "_catwalk", [" A ", "ABA", " A "], {
-            A: catwalkMaterial[1],
-            B: catwalkMaterial[0] == "iron" ? "minecraft:iron_bars" : "createdeco:" + catwalkMaterial[0] + "_bars",
-        });
+    for (let catwalkMaterial of global.CATWALK_global.MATERIALS) {
+      event.remove({
+        output: `createdeco:${catwalkMaterial.material}_catwalk`,
+      });
+      // Note I'm deliberately changing iron catwalk recipe to not use sandpapering.
+      event.shaped(Item.of(`createdeco:${catwalkMaterial.material}_catwalk`, 8), [" A ", "ABA", " A "], {
+        A: catwalkMaterial.sheet,
+        B: catwalkMaterial.material == "iron" ? "minecraft:iron_bars" : `createdeco:${catwalkMaterial.material}_bars`,
+      });
     }
-});
+  });
+})();
