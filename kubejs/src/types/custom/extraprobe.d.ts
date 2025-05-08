@@ -33,6 +33,26 @@ declare namespace Internal {
     | "copperarmor"
     | "netherite";
   type Tier_ = Tier | "gold" | "diamond" | "iron" | "copper" | "wood" | "brass" | "radiant" | "stone" | "netherite";
+  type ItemStackJS_ = ItemStackJS | `${number}x ${Special.Item}` | Internal.Item_;
+  type IngredientJS_ =
+  | { ingredient: object }
+  | RegExp
+  | Internal.Ingredient_
+  | { count?: number; item: Internal.ItemStackJS_ }
+  | Internal.IngredientJS_[]
+  | `%${string}`
+  | IngredientJS
+  | Internal.ItemStackJS_
+  | Internal.FluidStackJS_
+  | { fluid: Internal.FluidStackJS_ }
+  | `#${Special.ItemTag}`
+  | "*"
+  | { value: object }
+  | ((arg0: Internal.ItemStackJS) => boolean)
+  | { type: Special.Ingredient }
+  | `@${Special.Mod}`
+  | `${number}x #${Special.Tag}`;
+
   interface ExtendedSceneBuilder$ExtendedWorldInstructions extends Internal.SceneBuilder$WorldInstructions {
     setBlocks(selection: Internal.Selection_, blockState: Internal.BlockState_, spawnParticles: boolean): void;
   }

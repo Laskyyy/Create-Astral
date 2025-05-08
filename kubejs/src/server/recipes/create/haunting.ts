@@ -11,11 +11,11 @@ export function createHauntingRecipes() {
         output: "minecraft:nautilus_shell",
       },
       {
-        input: Item.of("techreborn:charcoal_dust", 2),
+        input: "2x techreborn:coal_dust",
         output: "techreborn:coal_dust",
       },
       {
-        input: Item.of("minecraft:charcoal", 2),
+        input: "2x minecraft:charcoal",
         output: "minecraft:coal",
       },
       {
