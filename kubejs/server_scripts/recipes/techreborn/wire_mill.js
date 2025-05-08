@@ -11,7 +11,7 @@
     // Still, I'll let the wire mill produce wires.
     //
     const WIRE_MATERIALS = ["iron", "gold", "copper"];
-    for (let material of WIRE_.MATERIALS) {
+    for (let material of WIRE_MATERIALS) {
       event.custom({
         type: "techreborn:wire_mill",
         power: 2,

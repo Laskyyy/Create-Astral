@@ -43,7 +43,7 @@ global.upgrades = [
       return new $UpgradeItem(new $FabricItemSettings(), $ResourceLocation.tryParse(resourceLocation), multiplier);
     });
   }
-  upgrades.forEach((upgrade) => registerUpgrade(upgrade.item, upgrade.multiplier));
+  global.upgrades.forEach((upgrade) => registerUpgrade(upgrade.item, upgrade.multiplier));
   ITEMS.register();
   // make create wrench work as tech reborn wrench
   $ToolManager.INSTANCE.customToolHandlerList.add(

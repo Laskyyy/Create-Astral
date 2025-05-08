@@ -1,6 +1,8 @@
+// priority: 99
+
 // constants
 global.OXIDISATION_TYPES = ["exposed", "weathered", "oxidized"];
-global.OXIDIZATION_TYPES = OXIDISATION_TYPES;
+global.OXIDIZATION_TYPES = global.OXIDISATION_TYPES;
 global.VANILLA_COPPER_BLOCKS = ["cut_copper", "cut_copper_stairs", "cut_copper_slab"];
 global.CREATE_COPPER_BLOCKS = [
   "copper_shingles",
@@ -10,7 +12,7 @@ global.CREATE_COPPER_BLOCKS = [
   "copper_tile_slab",
   "copper_tile_stairs",
 ];
-global.CATWALK_global.MATERIALS = [
+global.CATWALK_MATERIALS = [
   { material: "gold", sheet: "create:golden_sheet" },
   { material: "netherite", sheet: "createdeco:netherite_sheet" },
   { material: "andesite", sheet: "create:andesite_alloy" },

@@ -704,12 +704,12 @@
       event.replaceInput(
         { type: "minecraft:crafting_shaped", output: `techreborn:${cell}` },
         "techreborn:tin_ingot",
-        "techreborn:tin_plate",
+        "techreborn:tin_plate"
       );
       event.replaceInput(
         { type: "minecraft:crafting_shaped", output: `techreborn:${cell}` },
         "minecraft:copper_ingot",
-        "create:copper_sheet",
+        "create:copper_sheet"
       );
     });
     event.replaceInput({ type: "techreborn:solid_canning_machine" }, "techreborn:tin_ingot", "techreborn:tin_plate");
@@ -718,10 +718,10 @@
     event.replaceInput(
       { id: "techreborn:crafting_table/machine/resin_basin" },
       "techreborn:drain",
-      "create:item_drain",
+      "create:item_drain"
     );
     // Buffed catwalk output. Seriously! Its so resource heavy!
-    for (let catwalkMaterial of global.CATWALK_global.MATERIALS) {
+    for (let catwalkMaterial of global.CATWALK_MATERIALS) {
       event.remove({
         output: `createdeco:${catwalkMaterial.material}_catwalk`,
       });

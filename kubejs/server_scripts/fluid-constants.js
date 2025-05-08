@@ -1,3 +1,5 @@
+// priority: 100
+
 global.BUCKET = 81000;
 global.GEM_BLOCK = 72900;
 global.SLIMEBALL = 20250;

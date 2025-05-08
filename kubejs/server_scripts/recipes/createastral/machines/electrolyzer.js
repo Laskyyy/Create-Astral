@@ -1,4 +1,12 @@
 (function electrolyzerRecipes() {
+  const BUCKET = global.BUCKET;
+  const GEM_BLOCK = global.GEM_BLOCK;
+  const SLIMEBALL = global.SLIMEBALL;
+  const INGOT = global.INGOT;
+  const GEM = global.GEM;
+  const NUGGET = global.NUGGET;
+  const mB = global.mB;
+
   onEvent("recipes", (event) => {
     const standardElectrolyzerStructure = [
       ["aaa", "aaa", "ama"],

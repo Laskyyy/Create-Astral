@@ -1,6 +1,20 @@
 (function estrogenCentrifugingRecipes() {
+  const BUCKET = global.BUCKET;
+  const GEM_BLOCK = global.GEM_BLOCK;
+  const SLIMEBALL = global.SLIMEBALL;
+  const INGOT = global.INGOT;
+  const GEM = global.GEM;
+  const NUGGET = global.NUGGET;
+  const mB = global.mB;
   onEvent("recipes", (event) => {
-    //? [Input string, output string, amount integer]
+    /**
+     * @typedef CentrifugingRecipe
+     * @prop {Special.Fluid} input
+     * @prop {Special.Fluid} output
+     * @prop {number} amount
+     */
+
+    /** @type {CentrifugingRecipe[]} */
     const centrifugingRecipes = [
       {
         input: "tconstruct:molten_pig_iron",
