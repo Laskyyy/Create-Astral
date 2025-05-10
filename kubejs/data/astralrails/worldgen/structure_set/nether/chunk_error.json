@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "astralrails:nether/chunk_error",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"spacing": 18,
+		"separation": 15,
+		"salt": 1169383378
+	}
+}

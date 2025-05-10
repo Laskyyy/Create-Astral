@@ -449,7 +449,7 @@
 		}
 		{
 			title: "{ftbquests.chapter.read_the_questbook.quests20.title}"
-			icon: "minecraft:lava_bucket"
+			icon: "create:hose_pulley"
 			x: -11.5d
 			y: -5.5d
 			subtitle: "{ftbquests.chapter.read_the_questbook.quests20.subtitle}"

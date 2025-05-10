@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:casting_basin",
-  "fluid": {
-    "tag": "tconstruct:molten_glass",
-    "amount": 81000
-  },
-  "result": "tconstruct:clear_glass",
-  "cooling_time": 176
-}
