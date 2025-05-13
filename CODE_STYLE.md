@@ -6,7 +6,7 @@ In order to make the source code readable, try to fit to these guidelines:
 
 1. [Naming variables](#1-naming-variables)
 2. [Writing scripts](#2-writing-scripts)
-3. [Type checking] (#3-type-checking)
+3. [Type checking](#3-type-checking)
 
 ## 1. Naming variables
 
@@ -54,13 +54,11 @@ function itemCount(itemName, count) {
 (function () {
   const private = "I'm not global and thus accessible only in this script!";
   global.globalString = "I'm global and thus accessible in every script!";
-})()(
-  // IIFEs can be named
-
-  function myScript() {
-    // ...
-  }
-)();
+})();
+// IIFEs can be named
+(function myScript() {
+  // ...
+})();
 ```
 
 - For long lists of recipes, use an array of objects. Do not use arrays of arrays (tuples), as they are harder to document with JSDoc.
