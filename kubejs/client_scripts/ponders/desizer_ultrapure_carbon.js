@@ -1,3 +1,4 @@
+// @ts-check
 (function ultrapureCarbonDesizerPonder() {
   onEvent("ponder.registry", (event) => {
     event

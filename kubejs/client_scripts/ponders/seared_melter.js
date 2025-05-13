@@ -1,3 +1,4 @@
+// @ts-check
 (function searedMelterPonder() {
   onEvent("ponder.registry", (event) => {
     event

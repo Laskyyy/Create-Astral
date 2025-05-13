@@ -1,3 +1,4 @@
+// @ts-check
 (function moonPortalPonder() {
   onEvent("ponder.registry", (event) => {
     event

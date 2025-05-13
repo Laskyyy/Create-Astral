@@ -1,14 +1,7 @@
 {
-    "compilerOptions": {
-        "lib": [
-            "ES5",
-            "ES2015"
-        ],
-        "typeRoots": [
-            "./probe/generated",
-            "./probe/user",
-            "./custom_types"
-        ],
-        "target": "ES2015"
-    }
+  "compilerOptions": {
+    "lib": ["ES5", "ES2015"],
+    "typeRoots": ["./probe/generated", "./custom_types"],
+    "target": "ES2015"
+  }
 }

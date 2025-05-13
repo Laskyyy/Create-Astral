@@ -1,3 +1,4 @@
+// @ts-check
 (function stoneGrowthChamberPonder() {
   onEvent("ponder.registry", (event) => {
     event

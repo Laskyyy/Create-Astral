@@ -1,3 +1,4 @@
+// @ts-check
 (function rootOfContinuityPonder() {
   onEvent("ponder.registry", (event) => {
     event

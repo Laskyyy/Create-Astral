@@ -1,3 +1,4 @@
+// @ts-check
 (function shimmerRefineryPonder() {
   onEvent("ponder.registry", (event) => {
     // Ponder is registered on the void filter, which does not have a recipe

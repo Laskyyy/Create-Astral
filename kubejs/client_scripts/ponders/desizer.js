@@ -1,3 +1,4 @@
+// @ts-check
 (function desizerPonder() {
   onEvent("ponder.registry", (event) => {
     event

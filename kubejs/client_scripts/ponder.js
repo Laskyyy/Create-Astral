@@ -1,3 +1,4 @@
+// @ts-check
 (function ponder() {
   onEvent("ponder.tag", (event) => {
     event.createTag(
