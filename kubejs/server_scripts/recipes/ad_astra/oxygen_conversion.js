@@ -1,4 +1,3 @@
-// @ts-check
 (function adAstraOxygenConversionRecipes() {
   onEvent("recipes", (event) => {
     /**

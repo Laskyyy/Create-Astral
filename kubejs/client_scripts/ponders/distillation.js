@@ -1,4 +1,3 @@
-// @ts-check
 (function distilleryPonder() {
   onEvent("ponder.registry", (event) => {
     event

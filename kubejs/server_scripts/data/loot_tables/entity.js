@@ -1,4 +1,3 @@
-// @ts-check
 (function wanderingWinemakerLoot() {
   onEvent("entity.loot_tables", (event) => {
     vinery(event);

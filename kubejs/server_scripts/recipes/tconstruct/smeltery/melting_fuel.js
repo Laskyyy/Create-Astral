@@ -8,6 +8,14 @@
   const mB = global.mB;
 
   onEvent("recipes", (event) => {
+    /**
+     * @typedef MeltingFuelRecipe
+     * @property {{ name: Special.Fluid; amount: number }} fluid
+     * @property {number} time
+     * @property {number} temp
+     */
+
+    /** @type {MeltingFuelRecipe[]} */
     const meltingFuelRecipes = [
       {
         fluid: { name: "tconstruct:blazing_blood", amount: NUGGET },

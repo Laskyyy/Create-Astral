@@ -1,4 +1,3 @@
-// @ts-check
 (function astralAdditionsChromaticVacuumRecipes() {
   onEvent("recipes", (event) => {
     /**

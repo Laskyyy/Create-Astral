@@ -1,4 +1,3 @@
-// @ts-check
 (function astralGeneratorsFusionReactorRecipes() {
   onEvent("recipes", (event) => {
     fusionHelium3(event);

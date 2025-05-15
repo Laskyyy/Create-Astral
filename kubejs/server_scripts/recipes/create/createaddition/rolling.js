@@ -1,4 +1,3 @@
-// @ts-check
 (function createAdditionRollingRecipes() {
   onEvent("recipes", (event) => {
     /**

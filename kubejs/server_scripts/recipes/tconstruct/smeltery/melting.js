@@ -7,6 +7,16 @@
   const NUGGET = global.NUGGET;
   const mB = global.mB;
   onEvent("recipes", (event) => {
+    /**
+     * @typedef MeltingRecipe
+     * @property {{ fluid: Special.Fluid; amount: number }} fluidInput
+     * @property {Helper.ItemOrTag} input
+     * @property {number} temp
+     * @property {number} time
+     * @property {{ fluid: Special.Fluid; amount: number }[]} [byproducts]
+     */
+
+    /** @type {MeltingRecipe[]} */
     const meltingRecipes = [
       {
         fluidInput: { fluid: "tconstruct:blazing_blood", amount: BUCKET },
@@ -385,6 +395,7 @@
       },
     ];
     meltingRecipes.forEach((recipe) => {
+      /** @type {{ type: Special.RecipeType_; [key: string]: unknown }} */
       let meltingRecipe = {
         type: "tconstruct:melting",
         ingredient: recipe.input,

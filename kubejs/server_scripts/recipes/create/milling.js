@@ -2,6 +2,14 @@
   onEvent("recipes", (event) => {
     otherMillingRecipes(event);
     sifterRecipes(event);
+    /**
+     * @typedef MillingRecipe
+     * @property {Internal.ItemStackJS_} input
+     * @property {Internal.ItemStackJS_} output
+     * @property {number} chance
+     */
+
+    /** @type {MillingRecipe[]} */
     const millingRecipes = [
       {
         input: "minecraft:rooted_dirt",
@@ -213,7 +221,15 @@
       event.recipes.createMilling([Item.of(recipe.output).withChance(recipe.chance)], recipe.input);
     });
   });
+  /** @param {Internal.RecipeEventJS} event */
   function otherMillingRecipes(event) {
+    /**
+     * @typedef OtherMillingRecipe
+     * @property {Internal.ItemStackJS_} input
+     * @property {Internal.ItemStackJS_[]} output
+     */
+
+    /** @type {OtherMillingRecipe[]} */
     const otherMillingRecipes = [
       {
         input: "minecraft:obsidian",
@@ -224,8 +240,18 @@
       event.recipes.createMilling(recipe.output, recipe.input);
     });
   }
+  /** @param {Internal.RecipeEventJS} event */
   function sifterRecipes(event) {
     //? Old Sifter recipes that were transferred to the Millstone to update Create to 0.5.1
+
+    /**
+     * @typedef SifterRecipe
+     * @property {{ item: Special.Item }[]} inputs
+     * @property {{ item: Special.Item; chance: number }[]} outputs
+     * @property {number} [processingTime] Unused.
+     */
+
+    /** @type {SifterRecipe[]} */
     const sifterRecipes = [
       {
         inputs: [{ item: "minecraft:coarse_dirt" }],
@@ -294,40 +320,15 @@
         ],
       },
       {
-        inputs: [
-          {
-            item: "minecraft:clay",
-          },
-        ],
+        inputs: [{ item: "minecraft:clay" }],
         outputs: [
-          {
-            item: "minecraft:kelp",
-            chance: 0.2,
-          },
-          {
-            item: "minecraft:seagrass",
-            chance: 0.3,
-          },
-          {
-            item: "minecraft:tube_coral",
-            chance: 0.05,
-          },
-          {
-            item: "minecraft:brain_coral",
-            chance: 0.05,
-          },
-          {
-            item: "minecraft:bubble_coral",
-            chance: 0.05,
-          },
-          {
-            item: "minecraft:fire_coral",
-            chance: 0.05,
-          },
-          {
-            item: "minecraft:horn_coral",
-            chance: 0.05,
-          },
+          { item: "minecraft:kelp", chance: 0.2 },
+          { item: "minecraft:seagrass", chance: 0.3 },
+          { item: "minecraft:tube_coral", chance: 0.05 },
+          { item: "minecraft:brain_coral", chance: 0.05 },
+          { item: "minecraft:bubble_coral", chance: 0.05 },
+          { item: "minecraft:fire_coral", chance: 0.05 },
+          { item: "minecraft:horn_coral", chance: 0.05 },
         ],
         processingTime: 50,
       },

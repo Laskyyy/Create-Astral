@@ -1,4 +1,3 @@
-// @ts-check
 (function moonPortalPonder() {
   onEvent("ponder.registry", (event) => {
     event
@@ -9,7 +8,7 @@
         scene.text(
           60,
           "In this pack, the Nether is disabled. Instead, items are spread throughout the different planets.",
-          [3, 2, 3],
+          [3, 2, 3]
         );
         scene.idle(40);
         scene.showControls(30, [2, 2, 2], "up").rightClick().withItem("minecraft:flint_and_steel");

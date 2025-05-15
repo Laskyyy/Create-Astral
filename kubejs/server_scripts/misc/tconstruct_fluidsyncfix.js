@@ -1,4 +1,3 @@
-// @ts-check
 (function hephaestusFluidSyncFix() {
   onEvent("block.right_click", (event) => {
     if (event.block.id == "tconstruct:foundry_controller") {

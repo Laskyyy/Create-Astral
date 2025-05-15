@@ -1,6 +1,14 @@
+/**
+ * @typedef StonecuttingRecipe
+ * @property {Internal.IngredientJS_} input
+ * @property {Internal.ItemStackJS_[]} outputs
+ */
+
 (function minecraftStonecuttingRecipes() {
   onEvent("recipes", (event) => {
     copperOxidising(event);
+
+    /** @type {StonecuttingRecipe[]} */
     const stonecuttingRecipes = [
       {
         input: "createastral:blast-resistant_concrete",
@@ -184,6 +192,7 @@
       });
     });
   });
+  /** @param {Internal.RecipeEventJS} event */
   function copperOxidising(event) {
     // Oxidisation of all copper blocks that can weather
     for (const block of global.VANILLA_COPPER_BLOCKS) {
@@ -215,8 +224,3 @@
     });
   }
 })();
-/**
- * @typedef {Object} StonecuttingRecipe
- * @property {Internal.IngredientJS_} input
- * @property {Internal.ItemStackJS_[]} outputs
- */

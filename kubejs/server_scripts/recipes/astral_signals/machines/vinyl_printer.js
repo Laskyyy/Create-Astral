@@ -1,4 +1,3 @@
-// @ts-check
 (function astralSignalsVinylPrinterRecipes() {
   onEvent("recipes", (event) => {
     /**
@@ -10,9 +9,9 @@
 
     /**
      * Can be up to 2 inputs and only 1 output.
-     * 
+     *
      * Can have a second input (typically respectively tiered polyvinyl sheet).
-     * 
+     *
      * All recipes take 200 ticks (10 seconds).
      * @type {PrinterRecipe[]}
      */

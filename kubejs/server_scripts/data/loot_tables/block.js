@@ -1,4 +1,3 @@
-// @ts-check
 (function yttrLootFix() {
   /** @typedef {Special.Block & Special.Item} BlockThatIsAlsoAnItem */
 

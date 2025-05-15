@@ -1,4 +1,3 @@
-// @ts-check
 (function astralGeneratorsBoilerRecipes() {
   onEvent("recipes", (event) => {
     boilerSteamFromFuel(event);

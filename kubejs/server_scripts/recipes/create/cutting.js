@@ -1,4 +1,3 @@
-// @ts-check
 (function createCuttingRecipes() {
   onEvent("recipes", (event) => {
     autoChipped(event);
@@ -6,8 +5,8 @@
 
     /**
      * @typedef CuttingRecipe
-     * @param {Internal.ItemStackJS_} input
-     * @param {Internal.ItemStackJS_ | Internal.ItemStackJS_[]} output
+     * @property {Internal.IngredientJS_} input
+     * @property {Internal.IngredientJS_} output
      */
 
     /** @type {CuttingRecipe[]} */
@@ -160,6 +159,7 @@
   /**
    * Automated Chipped tables via Mechanical Saw.
    * @author KonSola5
+   * @param {Internal.RecipeEventJS} event
    */
   function autoChipped(event) {
     /** @satisfies {Special.RecipeSerializer[]} */
@@ -170,10 +170,12 @@
       "chipped:glassblower",
       "chipped:loom_table",
       "chipped:mason_table",
+      // @ts-expect-error ProbeJS didn't catch that.
       "chipped:tinkering_table",
     ]);
     CHIPPED_TABLES.forEach((table) => {
       event.forEachRecipe({ type: table }, (recipe) => {
+        /** @type {Special.ItemTag[]} */
         const tags = JSON.parse(recipe.json.toString()).tags;
         tags.forEach((itemTag) => {
           Ingredient.of(`#${itemTag}`)

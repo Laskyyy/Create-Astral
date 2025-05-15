@@ -1,5 +1,4 @@
 // priority: 100
-// @ts-check
 
 global.BUCKET = 81000;
 global.GEM_BLOCK = 72900;

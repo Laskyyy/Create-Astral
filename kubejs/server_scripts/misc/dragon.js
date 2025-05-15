@@ -1,23 +1,26 @@
-// @ts-check
 (function dragon() {
   /** @param {Internal.BlockRightClickEventJS} event */
   function bossSpawner(event) {
     let blockPos = event.block.pos;
     event.server.runCommandSilent(
-      `execute in minecraft:the_nether positioned ${blockPos.x} ${blockPos.y} ${blockPos.z} run playsound ad_astra:imminent_doom master @a[distance=..20]`,
+      `execute in minecraft:the_nether positioned ${blockPos.x} ${blockPos.y} ${blockPos.z} run playsound ad_astra:imminent_doom master @a[distance=..20]`
     );
     event.server.runCommandSilent(
-      `execute in minecraft:the_nether positioned ${blockPos.x} ${blockPos.y} ${blockPos.z} run playsound astraladditions:music_wither_spawn master @a[distance=..20]`,
+      `execute in minecraft:the_nether positioned ${blockPos.x} ${blockPos.y} ${blockPos.z} run playsound astraladditions:music_wither_spawn master @a[distance=..20]`
     );
     event.server.scheduleInTicks(11.5 * 20, () => {
       event.server.runCommandSilent(
-        `execute in minecraft:the_nether run particle minecraft:end_rod ${blockPos.x} ${blockPos.y + 10} ${blockPos.z} 0 5 0 0.5 400`,
+        `execute in minecraft:the_nether run particle minecraft:end_rod ${blockPos.x} ${blockPos.y + 10} ${
+          blockPos.z
+        } 0 5 0 0.5 400`
       );
       event.server.runCommandSilent(
-        `execute in minecraft:the_nether positioned ${blockPos.x} ${blockPos.y} ${blockPos.z} at @a[distance=..50] run playsound minecraft:block.end_portal.spawn music @a[distance=..50]`,
+        `execute in minecraft:the_nether positioned ${blockPos.x} ${blockPos.y} ${blockPos.z} at @a[distance=..50] run playsound minecraft:block.end_portal.spawn music @a[distance=..50]`
       );
       event.server.runCommandSilent(
-        `execute in minecraft:the_nether run summon minecraft:ender_dragon ${blockPos.x} ${blockPos.y + 20} ${blockPos.z}`,
+        `execute in minecraft:the_nether run summon minecraft:ender_dragon ${blockPos.x} ${blockPos.y + 20} ${
+          blockPos.z
+        }`
       );
     });
   }
@@ -52,10 +55,10 @@
       event.block.popItem("yttr:haemopal");
       event.block.set("yttr:polished_scorched_obsidian_holster");
       event.server.runCommandSilent(
-        `execute in minecraft:the_nether positioned ${blockPos.x} ${blockPos.y} ${blockPos.z} run playsound ad_astra:wrench master @a[distance=..5] ~ ~ ~ 0.3 0.1`,
+        `execute in minecraft:the_nether positioned ${blockPos.x} ${blockPos.y} ${blockPos.z} run playsound ad_astra:wrench master @a[distance=..5] ~ ~ ~ 0.3 0.1`
       );
       event.server.runCommandSilent(
-        `execute in minecraft:the_nether run particle dust_color_transition 0.5 0 0 2 0.84 0 0 ${blockPos.x} ${blockPos.y} ${blockPos.z} 0.5 0.5 0.5 3 20`,
+        `execute in minecraft:the_nether run particle dust_color_transition 0.5 0 0 2 0.84 0 0 ${blockPos.x} ${blockPos.y} ${blockPos.z} 0.5 0.5 0.5 3 20`
       );
       damageTool(event);
     }

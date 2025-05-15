@@ -1,4 +1,3 @@
-// @ts-check
 (function createCrushingRecipes() {
   onEvent("recipes", (event) => {
     //Replace with other netherrack inputs and outputs
@@ -564,7 +563,7 @@
           Item.of("create:experience_nugget").withChance(BONUS_CRUSH_ORE),
           Item.of(ore.block).withChance(BLOCK_CHANCE),
         ],
-        ore.name,
+        ore.name
       );
     });
     event.recipes.createCrushing(
@@ -574,7 +573,7 @@
         Item.of("create:experience_nugget").withChance(0.5),
         Item.of("ad_astra:mercury_cobblestone").withChance(BLOCK_CHANCE),
       ],
-      "techreborn:deepslate_galena_ore",
+      "techreborn:deepslate_galena_ore"
     );
     // LakyCrushingRecipes from resourcegen.js
     const lakyCrushingRecipes = [

@@ -1,5 +1,3 @@
-// @ts-check
-
 /**
  * @typedef Upgrade
  * @property {`${string}:${string}`} item

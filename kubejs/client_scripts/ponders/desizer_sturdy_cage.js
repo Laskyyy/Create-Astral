@@ -1,4 +1,3 @@
-// @ts-check
 (function sturdyCageDesizerPonder() {
   onEvent("ponder.registry", (event) => {
     event.create("createastral:sturdy_cage").scene("set_replace_modify_tutorial", "Sturdy Cage", (scene, util) => {

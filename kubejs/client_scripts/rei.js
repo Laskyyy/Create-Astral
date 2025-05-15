@@ -1,4 +1,3 @@
-// @ts-check
 (function rei() {
   console.info("Hello, World! (You will see this line every time client resources reload)");
   onEvent("rei.group", (event) => {

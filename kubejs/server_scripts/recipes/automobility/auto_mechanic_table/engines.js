@@ -1,7 +1,5 @@
-// @ts-check
 (function automobilityEngineRecipes() {
   onEvent("recipes", (event) => {
-
     /** @typedef {"copper" | "stone" | "gold" | "iron" | "diamond"} EngineMaterials */
     /** @typedef {`automobility:${EngineMaterials}`} EngineType */
 

@@ -1,7 +1,5 @@
-// @ts-check
 (function astralSignalsDriveEraserRecipes() {
   onEvent("recipes", (event) => {
-
     /**
      * Only one input.
      * Will always return a blank data drive.

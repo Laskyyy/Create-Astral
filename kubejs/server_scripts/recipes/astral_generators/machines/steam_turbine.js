@@ -1,4 +1,3 @@
-// @ts-check
 (function astralGeneratorsSteamTurbineRecipes() {
   onEvent("recipes", (event) => {
     turbineSteamToEnergy(event);

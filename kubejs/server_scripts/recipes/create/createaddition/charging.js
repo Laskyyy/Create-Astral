@@ -1,7 +1,6 @@
-// @ts-check
 (function createAdditionChargingRecipes() {
   onEvent("recipes", (event) => {
-    /** 
+    /**
      * @typedef ItemWithCount
      * @property {Special.Item} item
      * @property {number} count

@@ -1,6 +1,15 @@
 (function entityMeltingRecipes() {
   onEvent("recipes", (event) => {
     const BLAZING_BLOOD_MADIC_AMOUNT = 1620;
+
+    /**
+     * @typedef EntityMeltingRecipe
+     * @property {Special.EntityType} entity
+     * @property {{ fluid: Special.Fluid; amount: number }} result
+     * @property {number} damage
+     */
+
+    /** @type {EntityMeltingRecipe[]} */
     const entityMeltingRecipes = [
       {
         entity: "minecraft:blaze",

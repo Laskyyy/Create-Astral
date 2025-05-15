@@ -1,4 +1,3 @@
-// @ts-check
 (function electrolyzerPonder() {
   onEvent("ponder.registry", (event) => {
     event

@@ -1,4 +1,3 @@
-// @ts-check
 (function stepUpFix() {
   function getPlayerStepHeight(player) {
     const DEFAULT_STEP_HEIGHT = 0.6;

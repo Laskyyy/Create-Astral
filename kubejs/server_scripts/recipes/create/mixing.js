@@ -9,21 +9,20 @@
 
   onEvent("recipes", (event) => {
     farmersCompatMixing(event);
+
+    /**
+     * @typedef MixingRecipe
+     * @property {Internal.IngredientJS_} output
+     * @property {Internal.IngredientJS_} input
+     * @property {"heated" | "superheated"} [heat]
+     * @property {number} [time]
+     */
+
+    /** @type {MixingRecipe[]} */
     const mixingRecipes = [
       {
-        output: [
-          {
-            fluid: "estrogen:molten_amethyst",
-            amount: INGOT / 2,
-          },
-        ],
-        input: [
-          {
-            fluid: "tconstruct:molten_amethyst",
-            amount: 500 * mB,
-          },
-          "astraladditions:bulba_root",
-        ],
+        output: [{ fluid: "estrogen:molten_amethyst", amount: INGOT / 2 }],
+        input: [{ fluid: "tconstruct:molten_amethyst", amount: 500 * mB }, "astraladditions:bulba_root"],
         time: 105,
       },
       {
@@ -32,23 +31,13 @@
         time: 180,
       },
       {
-        output: [
-          {
-            fluid: "kubejs:shimmer",
-            amount: BUCKET / 9,
-          },
-        ],
+        output: [{ fluid: "kubejs:shimmer", amount: BUCKET / 9 }],
         input: ["ae2:fluix_crystal", "minecraft:glowstone_dust", "tconstruct:amethyst_bronze_nugget"],
         heat: "heated",
         time: 180,
       },
       {
-        output: [
-          {
-            fluid: "kubejs:shimmer",
-            amount: BUCKET,
-          },
-        ],
+        output: [{ fluid: "kubejs:shimmer", amount: BUCKET }],
         input: [Item.of("createastral:shimmer_marimo", 4), "naturalist:glow_goop", "astraladditions:lune_shroom"],
         heat: "heated",
         time: 180,
@@ -58,10 +47,7 @@
         input: [
           Item.of("createastral:shimmer_marimo", 2),
           "minecraft:heart_of_the_sea",
-          {
-            fluid: "xpcrystals:soul",
-            amount: BUCKET,
-          },
+          { fluid: "xpcrystals:soul", amount: BUCKET },
         ],
         heat: "heated",
         time: 180,
@@ -84,38 +70,17 @@
       },
       {
         output: [Item.of("createastral:shimmer_marimo", 1)],
-        input: [
-          "createastral:marimo",
-          "ae2:fluix_crystal",
-          {
-            fluid: "kubejs:shimmer",
-            amount: 500 * mB,
-          },
-        ],
+        input: ["createastral:marimo", "ae2:fluix_crystal", { fluid: "kubejs:shimmer", amount: 500 * mB }],
         time: 180,
       },
       {
         output: [Item.of("createastral:shimmer_marimo", 2)],
-        input: [
-          "createastral:shimmer_marimo",
-          "ae2:fluix_crystal_seed",
-          {
-            fluid: "kubejs:shimmer",
-            amount: INGOT,
-          },
-        ],
+        input: ["createastral:shimmer_marimo", "ae2:fluix_crystal_seed", { fluid: "kubejs:shimmer", amount: INGOT }],
         time: 180,
       },
       {
         output: [Item.of("createastral:ender_marimo", 1)],
-        input: [
-          "createastral:marimo",
-          "tconstruct:ender_slime_crystal",
-          {
-            fluid: "kubejs:shimmer",
-            amount: 500 * mB,
-          },
-        ],
+        input: ["createastral:marimo", "tconstruct:ender_slime_crystal", { fluid: "kubejs:shimmer", amount: 500 * mB }],
         time: 180,
       },
       {
@@ -123,54 +88,27 @@
         input: [
           "createastral:ender_marimo",
           "tconstruct:ender_slime_grass_seeds",
-          {
-            fluid: "astraladditions:sputum",
-            amount: INGOT,
-          },
+          { fluid: "astraladditions:sputum", amount: INGOT },
         ],
         time: 180,
       },
       {
         output: [Item.of("createastral:snowy_marimo", 1)],
-        input: [
-          "createastral:marimo",
-          "createastral:prismatic_crystal",
-          {
-            fluid: "kubejs:shimmer",
-            amount: 500 * mB,
-          },
-        ],
+        input: ["createastral:marimo", "createastral:prismatic_crystal", { fluid: "kubejs:shimmer", amount: 500 * mB }],
         time: 180,
       },
       {
         output: [Item.of("createastral:snowy_marimo", 2)],
-        input: [
-          "createastral:snowy_marimo",
-          "ad_astra:ice_shard",
-          {
-            fluid: "minecraft:water",
-            amount: 500 * mB,
-          },
-        ],
+        input: ["createastral:snowy_marimo", "ad_astra:ice_shard", { fluid: "minecraft:water", amount: 500 * mB }],
         time: 180,
       },
       {
         output: [
           Item.of(Item.of("createastral:marimo", 2)).withChance(0.4),
           Item.of(Item.of("createastral:moonset_marimo", 2)).withChance(0.6),
-          {
-            fluid: "minecraft:water",
-            amount: BUCKET,
-          },
+          { fluid: "minecraft:water", amount: BUCKET },
         ],
-        input: [
-          "createastral:marimo",
-          "createastral:moonset_marimo",
-          {
-            fluid: "minecraft:water",
-            amount: BUCKET,
-          },
-        ],
+        input: ["createastral:marimo", "createastral:moonset_marimo", { fluid: "minecraft:water", amount: BUCKET }],
         time: 60,
       },
       {
@@ -178,49 +116,22 @@
         input: [
           "createastral:marimo",
           "astraladditions:moonset_crystal",
-          {
-            fluid: "kubejs:shimmer",
-            amount: 500 * mB,
-          },
+          { fluid: "kubejs:shimmer", amount: 500 * mB },
         ],
         time: 180,
       },
       {
-        output: [
-          Item.of("createastral:marimo", 2),
-          {
-            fluid: "minecraft:water",
-            amount: 500 * mB,
-          },
-        ],
-        input: [
-          "createastral:marimo",
-          {
-            fluid: "minecraft:water",
-            amount: 500 * mB,
-          },
-        ],
+        output: [Item.of("createastral:marimo", 2), { fluid: "minecraft:water", amount: 500 * mB }],
+        input: ["createastral:marimo", { fluid: "minecraft:water", amount: 500 * mB }],
         time: 60,
       },
       {
-        output: [
-          {
-            fluid: "milk:still_milk",
-            amount: 500 * mB,
-          },
-          "cookingforblockheads:cow_jar",
-        ],
+        output: [{ fluid: "milk:still_milk", amount: 500 * mB }, "cookingforblockheads:cow_jar"],
         input: ["cookingforblockheads:cow_jar"],
         time: 60,
       },
       {
-        output: [
-          {
-            fluid: "estrogen:horse_urine",
-            amount: 500 * mB,
-          },
-          "createastral:horse",
-        ],
+        output: [{ fluid: "estrogen:horse_urine", amount: 500 * mB }, "createastral:horse"],
         input: ["createastral:horse"],
         time: 60,
       },
@@ -252,13 +163,7 @@
       },
       {
         output: "minecraft:rotten_flesh",
-        input: [
-          "#c:raw_meat",
-          {
-            fluid: "tconstruct:blood",
-            amount: 25 * mB,
-          },
-        ],
+        input: ["#c:raw_meat", { fluid: "tconstruct:blood", amount: 25 * mB }],
         time: 100,
       },
       {
@@ -272,10 +177,7 @@
             "minecraft:warped_wart_block",
           ],
           "naturalist:glow_goop",
-          {
-            fluid: "create:honey",
-            amount: 25 * mB,
-          },
+          { fluid: "create:honey", amount: 25 * mB },
         ],
         time: 100,
       },
@@ -290,22 +192,13 @@
             "minecraft:warped_wart_block",
           ],
           Item.of("minecraft:glowstone_dust", 2),
-          {
-            fluid: "create:honey",
-            amount: 25 * mB,
-          },
+          { fluid: "create:honey", amount: 25 * mB },
         ],
         time: 100,
       },
       {
         output: "minecraft:ice",
-        input: [
-          Item.of("minecraft:snowball", 2),
-          {
-            fluid: "minecraft:water",
-            amount: BUCKET * 0.5,
-          },
-        ],
+        input: [Item.of("minecraft:snowball", 2), { fluid: "minecraft:water", amount: BUCKET * 0.5 }],
         time: 100,
       },
       {
@@ -319,17 +212,8 @@
         ],
       },
       {
-        output: {
-          fluid: "kubejs:smite",
-          amount: 5 * mB,
-        },
-        input: [
-          {
-            fluid: "minecraft:lava",
-            amount: 100 * mB,
-          },
-          Item.of("minecraft:basalt", 2),
-        ],
+        output: { fluid: "kubejs:smite", amount: 5 * mB },
+        input: [{ fluid: "minecraft:lava", amount: 100 * mB }, Item.of("minecraft:basalt", 2)],
         heat: "heated",
         time: 400,
       },
@@ -340,10 +224,7 @@
           ["minecraft:tropical_fish", "minecraft:pufferfish"],
           Item.of("minecraft:kelp", 3),
           "minecraft:blue_dye",
-          {
-            fluid: "kubejs:shimmer",
-            amount: 100 * mB,
-          },
+          { fluid: "kubejs:shimmer", amount: 100 * mB },
         ],
         time: 100,
       },
@@ -353,10 +234,7 @@
           ["minecraft:tropical_fish", "minecraft:pufferfish"],
           Item.of("minecraft:kelp", 3),
           "minecraft:pink_dye",
-          {
-            fluid: "kubejs:shimmer",
-            amount: 100 * mB,
-          },
+          { fluid: "kubejs:shimmer", amount: 100 * mB },
         ],
         time: 100,
       },
@@ -366,10 +244,7 @@
           ["minecraft:tropical_fish", "minecraft:pufferfish"],
           Item.of("minecraft:kelp", 3),
           "minecraft:purple_dye",
-          {
-            fluid: "kubejs:shimmer",
-            amount: 100 * mB,
-          },
+          { fluid: "kubejs:shimmer", amount: 100 * mB },
         ],
         time: 100,
       },
@@ -379,10 +254,7 @@
           ["minecraft:tropical_fish", "minecraft:pufferfish"],
           Item.of("minecraft:kelp", 3),
           "minecraft:red_dye",
-          {
-            fluid: "kubejs:shimmer",
-            amount: 100 * mB,
-          },
+          { fluid: "kubejs:shimmer", amount: 100 * mB },
         ],
         time: 100,
       },
@@ -392,10 +264,7 @@
           ["minecraft:tropical_fish", "minecraft:pufferfish"],
           Item.of("minecraft:kelp", 3),
           "minecraft:yellow_dye",
-          {
-            fluid: "kubejs:shimmer",
-            amount: 100 * mB,
-          },
+          { fluid: "kubejs:shimmer", amount: 100 * mB },
         ],
         time: 100,
       },
@@ -405,85 +274,43 @@
       },
       {
         output: "techreborn:plantball",
-        input: [
-          Ingredient.of("#minecraft:leaves", 9),
-          {
-            fluid: "createaddition:seed_oil",
-            amount: 500 * mB,
-          },
-        ],
+        input: [Ingredient.of("#minecraft:leaves", 9), { fluid: "createaddition:seed_oil", amount: 500 * mB }],
         heat: "heated",
         time: 1000,
       },
       {
         output: "techreborn:plantball",
-        input: [
-          Ingredient.of("#c:grass_variants", 9),
-          {
-            fluid: "createaddition:seed_oil",
-            amount: 500 * mB,
-          },
-        ],
+        input: [Ingredient.of("#c:grass_variants", 9), { fluid: "createaddition:seed_oil", amount: 500 * mB }],
         heat: "heated",
         time: 1000,
       },
       {
         output: "techreborn:plantball",
-        input: [
-          Item.of("minecraft:kelp", 9),
-          {
-            fluid: "createaddition:seed_oil",
-            amount: 500 * mB,
-          },
-        ],
+        input: [Item.of("minecraft:kelp", 9), { fluid: "createaddition:seed_oil", amount: 500 * mB }],
         heat: "heated",
         time: 1000,
       },
       {
         output: "techreborn:plantball",
-        input: [
-          Item.of("createastral:marimo", 9),
-          {
-            fluid: "createaddition:seed_oil",
-            amount: 500 * mB,
-          },
-        ],
+        input: [Item.of("createastral:marimo", 9), { fluid: "createaddition:seed_oil", amount: 500 * mB }],
         heat: "heated",
         time: 1000,
       },
       {
         output: "techreborn:plantball",
-        input: [
-          Item.of("minecraft:sugar_cane", 9),
-          {
-            fluid: "createaddition:seed_oil",
-            amount: 500 * mB,
-          },
-        ],
+        input: [Item.of("minecraft:sugar_cane", 9), { fluid: "createaddition:seed_oil", amount: 500 * mB }],
         heat: "heated",
         time: 1000,
       },
       {
         output: "createastral:ender_mush",
-        input: [
-          Item.of("tconstruct:ender_slime_crystal", 2),
-          {
-            fluid: "astraladditions:sputum",
-            amount: 500 * mB,
-          },
-        ],
+        input: [Item.of("tconstruct:ender_slime_crystal", 2), { fluid: "astraladditions:sputum", amount: 500 * mB }],
         heat: "superheated",
         time: 1000,
       },
       {
         output: "techreborn:plantball",
-        input: [
-          Item.of("farmersdelight:straw", 3),
-          {
-            fluid: "createaddition:seed_oil",
-            amount: 500 * mB,
-          },
-        ],
+        input: [Item.of("farmersdelight:straw", 3), { fluid: "createaddition:seed_oil", amount: 500 * mB }],
         heat: "heated",
         time: 1000,
       },
@@ -495,13 +322,7 @@
           Item.of("minecraft:fire_coral").withChance(0.2),
           Item.of("minecraft:horn_coral").withChance(0.2),
         ],
-        input: [
-          Item.of("minecraft:sea_pickle", 4),
-          {
-            fluid: "minecraft:water",
-            amount: 250 * mB,
-          },
-        ],
+        input: [Item.of("minecraft:sea_pickle", 4), { fluid: "minecraft:water", amount: 250 * mB }],
         time: 50,
       },
       {
@@ -512,13 +333,7 @@
           Item.of("minecraft:fire_coral_fan").withChance(0.2),
           Item.of("minecraft:horn_coral_fan").withChance(0.2),
         ],
-        input: [
-          Item.of("minecraft:dried_kelp", 4),
-          {
-            fluid: "minecraft:water",
-            amount: 250 * mB,
-          },
-        ],
+        input: [Item.of("minecraft:dried_kelp", 4), { fluid: "minecraft:water", amount: 250 * mB }],
         time: 50,
       },
       {
@@ -1046,10 +861,7 @@
             item: "createastral:astral_singularity",
             amount: 2,
           },
-          {
-            fluid: "kubejs:molten_calorite",
-            amount: INGOT,
-          },
+          { fluid: "kubejs:molten_calorite", amount: INGOT },
         ],
         heat: "superheated",
         time: 1000,
@@ -1057,14 +869,8 @@
       {
         output: "yttr:yttrium_ingot",
         input: [
-          {
-            fluid: "kubejs:molten_desh",
-            amount: INGOT * 4,
-          },
-          {
-            fluid: "kubejs:molten_yttrium",
-            amount: INGOT,
-          },
+          { fluid: "kubejs:molten_desh", amount: INGOT * 4 },
+          { fluid: "kubejs:molten_yttrium", amount: INGOT },
         ],
         heat: "superheated",
         time: 1000,
@@ -1072,14 +878,8 @@
       {
         output: "yttr:yttrium_ingot",
         input: [
-          {
-            fluid: "kubejs:molten_ostrum",
-            amount: INGOT * 2,
-          },
-          {
-            fluid: "kubejs:molten_yttrium",
-            amount: INGOT,
-          },
+          { fluid: "kubejs:molten_ostrum", amount: INGOT * 2 },
+          { fluid: "kubejs:molten_yttrium", amount: INGOT },
         ],
         heat: "superheated",
         time: 1000,
@@ -1087,51 +887,27 @@
       {
         output: "yttr:yttrium_ingot",
         input: [
-          {
-            fluid: "kubejs:molten_calorite",
-            amount: INGOT,
-          },
-          {
-            fluid: "kubejs:molten_yttrium",
-            amount: INGOT,
-          },
+          { fluid: "kubejs:molten_calorite", amount: INGOT },
+          { fluid: "kubejs:molten_yttrium", amount: INGOT },
         ],
         heat: "superheated",
         time: 1000,
       },
       {
         output: "yttr:yttrium_ingot",
-        input: [
-          Item.of("ad_astra:desh_ingot", 4),
-          {
-            fluid: "kubejs:molten_yttrium",
-            amount: INGOT,
-          },
-        ],
+        input: [Item.of("ad_astra:desh_ingot", 4), { fluid: "kubejs:molten_yttrium", amount: INGOT }],
         heat: "superheated",
         time: 1000,
       },
       {
         output: "yttr:yttrium_ingot",
-        input: [
-          Item.of("ad_astra:ostrum_ingot", 2),
-          {
-            fluid: "kubejs:molten_yttrium",
-            amount: INGOT,
-          },
-        ],
+        input: [Item.of("ad_astra:ostrum_ingot", 2), { fluid: "kubejs:molten_yttrium", amount: INGOT }],
         heat: "superheated",
         time: 1000,
       },
       {
         output: "yttr:yttrium_ingot",
-        input: [
-          "ad_astra:calorite_ingot",
-          {
-            fluid: "kubejs:molten_yttrium",
-            amount: INGOT,
-          },
-        ],
+        input: ["ad_astra:calorite_ingot", { fluid: "kubejs:molten_yttrium", amount: INGOT }],
         heat: "superheated",
         time: 1000,
       },
@@ -1149,14 +925,7 @@
       },
       {
         output: "yttr:ruined_cobblestone",
-        input: [
-          "minecraft:cobblestone",
-          "yttr:rubble",
-          {
-            fluid: "tconstruct:magma",
-            amount: 250 * mB,
-          },
-        ],
+        input: ["minecraft:cobblestone", "yttr:rubble", { fluid: "tconstruct:magma", amount: 250 * mB }],
         heat: "superheated",
         time: 200,
       },
@@ -1190,10 +959,7 @@
         input: [
           "astraladditions:steel_ring",
           "astraladditions:shimmer_blaze_powder",
-          {
-            fluid: "tconstruct:blazing_blood",
-            amount: INGOT,
-          },
+          { fluid: "tconstruct:blazing_blood", amount: INGOT },
         ],
         heat: "heated",
         time: 400,
@@ -1204,10 +970,7 @@
           "astraladditions:cometball",
           "minecraft:ender_eye",
           "astraladditions:shimmer_blaze_powder",
-          {
-            fluid: "tconstruct:blazing_blood",
-            amount: BUCKET,
-          },
+          { fluid: "tconstruct:blazing_blood", amount: BUCKET },
         ],
         time: 500,
       },
@@ -1216,10 +979,7 @@
         input: [
           "astraladditions:oh-no_broken",
           "createastral:astral_conduit",
-          {
-            fluid: "tconstruct:blazing_blood",
-            amount: BUCKET,
-          },
+          { fluid: "tconstruct:blazing_blood", amount: BUCKET },
         ],
         heat: "heated",
         time: 500,
@@ -1292,13 +1052,7 @@
       },
       {
         output: "drinkbeer:spice_silver_needle_white_tea",
-        input: [
-          Item.of("techreborn:silver_nugget", 3),
-          {
-            fluid: "kubejs:white_grape_juice",
-            amount: 166 * mB,
-          },
-        ],
+        input: [Item.of("techreborn:silver_nugget", 3), { fluid: "kubejs:white_grape_juice", amount: 166 * mB }],
         heat: "heated",
         time: 500,
       },
@@ -1850,7 +1604,7 @@
       {
         output: Item.of(
           "minecraft:enchanted_book",
-          '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:2s}]}',
+          '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:2s}]}'
         ),
         input: [
           Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:1s}]}'),
@@ -1862,7 +1616,7 @@
       {
         output: Item.of(
           "minecraft:enchanted_book",
-          '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:3s}]}',
+          '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:3s}]}'
         ),
         input: [
           Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:2s}]}'),
@@ -1874,7 +1628,7 @@
       {
         output: Item.of(
           "minecraft:enchanted_book",
-          '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:4s}]}',
+          '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:4s}]}'
         ),
         input: [
           Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:3s}]}'),
@@ -1886,7 +1640,7 @@
       {
         output: Item.of(
           "minecraft:enchanted_book",
-          '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:5s}]}',
+          '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:5s}]}'
         ),
         input: [
           Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:4s}]}'),
@@ -1899,7 +1653,7 @@
       {
         output: Item.of(
           "minecraft:enchanted_book",
-          '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:6s}]}',
+          '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:6s}]}'
         ),
         input: [
           Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:5s}]}'),
@@ -2561,7 +2315,7 @@
       {
         output: Item.of(
           "minecraft:enchanted_book",
-          '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:2s}]}',
+          '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:2s}]}'
         ),
         input: [
           Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:1s}]}'),
@@ -2573,7 +2327,7 @@
       {
         output: Item.of(
           "minecraft:enchanted_book",
-          '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:3s}]}',
+          '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:3s}]}'
         ),
         input: [
           Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:2s}]}'),
@@ -2585,7 +2339,7 @@
       {
         output: Item.of(
           "minecraft:enchanted_book",
-          '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:4s}]}',
+          '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:4s}]}'
         ),
         input: [
           Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:3s}]}'),
@@ -2597,7 +2351,7 @@
       {
         output: Item.of(
           "minecraft:enchanted_book",
-          '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:5s}]}',
+          '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:5s}]}'
         ),
         input: [
           Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:4s}]}'),
@@ -2610,7 +2364,7 @@
       {
         output: Item.of(
           "minecraft:enchanted_book",
-          '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:6s}]}',
+          '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:6s}]}'
         ),
         input: [
           Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:5s}]}'),
@@ -2623,7 +2377,7 @@
       {
         output: Item.of(
           "minecraft:enchanted_book",
-          '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:7s}]}',
+          '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:7s}]}'
         ),
         input: [
           Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:6s}]}'),
@@ -2900,19 +2654,13 @@
         time: 12,
       },
       {
-        output: {
-          fluid: "tconstruct:liquid_soul",
-          amount: 250 * mB,
-        },
+        output: { fluid: "tconstruct:liquid_soul", amount: 250 * mB },
         input: ["xpcrystals:soul_compound"],
         heat: "heated",
         time: 30,
       },
       {
-        output: {
-          fluid: "tconstruct:liquid_soul",
-          amount: 250 * mB,
-        },
+        output: { fluid: "tconstruct:liquid_soul", amount: 250 * mB },
         input: ["xpcrystals:soul_compound", { fluid: "minecraft:water", amount: 125 * mB }],
         heat: "heated",
         time: 25,
@@ -2923,10 +2671,7 @@
         time: 25,
       },
       {
-        output: {
-          fluid: "createaddition:bioethanol",
-          amount: 81000,
-        },
+        output: { fluid: "createaddition:bioethanol", amount: 81000 },
         input: ["minecraft:sugar", "create:cinder_flour", Item.of("createaddition:biomass", 2)],
       },
       {
@@ -2935,10 +2680,7 @@
         heat: "heated",
       },
       {
-        output: {
-          fluid: "tconstruct:molten_amethyst",
-          amount: GEM,
-        },
+        output: { fluid: "tconstruct:molten_amethyst", amount: GEM },
         input: "minecraft:amethyst_shard",
         heat: "heated",
       },
@@ -3158,18 +2900,21 @@
   /**
    * Farmers' Delight mixing compat recipes.
    * @author RandomUser240306
+   * @param {Internal.RecipeEventJS_} event
    */
   function farmersCompatMixing(event) {
     event.forEachRecipe({ type: "farmersdelight:cooking" }, (recipe) => {
       let outputItem = recipe.getOriginalRecipeResult().getId().split(":")[1];
-      let inputItems = recipe.json.get("ingredients").deepCopy(); // Setting this to any, since I have no idea what type this really is.
+      let inputItems = /** @type {any} */(recipe.json.get("ingredients").deepCopy()); // Setting this to any, since I have no idea what type this really is.
       if (outputItem == "cabbage_rolls") return; //too few ingredients to add recipe for
       const containers = {
         "minecraft:glass_bottle": ["hot_cocoa", "apple_cider", "glow_berry_custard"],
         "minecraft:pumpkin": ["stuffed_pumpkin_block"],
         "#c:dough": ["dumplings"],
       };
-      let container = Object.keys(containers).find((key) => containers[key].includes(outputItem)) ?? "minecraft:bowl";
+      let container =
+        /** @type {Special.Item} */ (Object.keys(containers).find((key) => containers[key].includes(outputItem))) ??
+        "minecraft:bowl";
       for (let i = 0; i < inputItems.size(); i++) {
         if (inputItems.get(i).getClass() == "class com.google.gson.JsonObject") {
           if (inputItems.get(i).has("item")) {
@@ -3196,21 +2941,12 @@
         }
       }
       event.recipes
-        .createMixing(
-          {
-            fluid: `kubejs:${outputItem}_fluid`,
-            amount: 250 * mB,
-          },
-          inputItems,
-        )
+        .createMixing({ fluid: `kubejs:${outputItem}_fluid`, amount: 250 * mB }, inputItems)
         .heatRequirement("heated")
         .processingTime(100);
       event.recipes.createFilling(recipe.getOriginalRecipeResult(), [
         container,
-        {
-          fluid: `kubejs:${outputItem}_fluid`,
-          amount: 250 * mB,
-        },
+        { fluid: `kubejs:${outputItem}_fluid`, amount: 250 * mB },
       ]);
     });
   }

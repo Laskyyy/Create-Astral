@@ -1,4 +1,3 @@
-// @ts-check
 /**
  * This file originally contained comments marked with "Better Comments" VS Code extension.
  * Now it has JSDoc comments instead, which have better editor integration.

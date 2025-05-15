@@ -1,4 +1,3 @@
-// @ts-check
 (function astralGeneratorsShapedRecipes() {
   onEvent("recipes", (event) => {
     event.shaped(
@@ -13,7 +12,7 @@
         a: "techreborn:basic_machine_frame",
         b: "createaddition:gold_wire",
         c: "create:depot",
-      },
+      }
     );
     event.shaped("astralgenerators:multiblock_projector", ["xxx", "xya", "xxx"], {
       x: "techreborn:basic_machine_frame",

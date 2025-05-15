@@ -1,4 +1,3 @@
-// @ts-check
 (function createBigCannonsMeltingRecipes() {
   const BUCKET = global.BUCKET;
   const GEM_BLOCK = global.GEM_BLOCK;

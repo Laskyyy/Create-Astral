@@ -1,4 +1,3 @@
-// @ts-check
 (function astralSignalsAnalogDecryptorRecipes() {
   onEvent("recipes", (event) => {
     // Can only be one input and output

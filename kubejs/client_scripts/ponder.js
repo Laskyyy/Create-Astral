@@ -1,4 +1,3 @@
-// @ts-check
 (function ponder() {
   onEvent("ponder.tag", (event) => {
     event.createTag(
@@ -6,7 +5,7 @@
       "createastral:astral_singularity",
       "Create: Astral",
       "Tips and Tricks specific to this modpack",
-      ["createastral:electrolyser_dummy", "createastral:shimmering_stone", "astraladditions:desizer_controller"],
+      ["createastral:electrolyser_dummy", "createastral:shimmering_stone", "astraladditions:desizer_controller"]
     );
     event.createTag("kubejs:tconstruct", "tconstruct:seared_table", "Tinkers Construct", "Tinkers Construct Basics", [
       "tconstruct:seared_melter",
@@ -24,7 +23,7 @@
         "custom_machine_item",
         "You shouldn't see this ponder, it's a debug thing.",
         "kubejs:electrolyser",
-        (scene, util) => {},
+        (scene, util) => {}
       );
   });
   // Registers overrides to show correct ponders

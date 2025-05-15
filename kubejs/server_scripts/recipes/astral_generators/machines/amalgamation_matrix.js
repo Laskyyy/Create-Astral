@@ -1,4 +1,3 @@
-// @ts-check
 (function astralGeneratorsAmalgationMatrixRecipes() {
   onEvent("recipes", (event) => {
     AMFoodAmalgamation(event);

@@ -2,7 +2,14 @@
   onEvent("recipes", (event) => {
     //adding composting recipes for coral variants
     onEvent("recipes.compostables", (event) => {
-      const coral = [{ type: "tube" }, { type: "brain" }, { type: "bubble" }, { type: "fire" }, { type: "horn" }];
+      /** @satisfies {{type: string}[]} */
+      const coral = /** @type {const} */ ([
+        { type: "tube" },
+        { type: "brain" },
+        { type: "bubble" },
+        { type: "fire" },
+        { type: "horn" },
+      ]);
       for (const corals of coral) {
         //normal coral
         event.add(`minecraft:${corals.type}_coral`, 0.3);

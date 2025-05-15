@@ -1,4 +1,3 @@
-// @ts-check
 (function astralSignalsMPDecryptorRecipes() {
   onEvent("recipes", (event) => {
     /**
@@ -8,7 +7,7 @@
      * Time is measured in ticks (20 ticks = 1 second)
      * The block will only accept dormant tier 2 drives and subatomic ingots as inputs.
      * Change the machine registry in kubejs/data/astralsignals/machines/mp_decryptor.json if you wish to modify this
-     */ 
+     */
     event.recipes.custommachinery
       .custom_machine("astralsignals:mp_decryptor", 1200)
       .requireEnergyPerTick(250)

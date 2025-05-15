@@ -1,4 +1,3 @@
-// @ts-check
 (function astralGeneratorsParticleAcceleratorRecipes() {
   onEvent("recipes", (event) => {
     acceleratorSingularity(event);

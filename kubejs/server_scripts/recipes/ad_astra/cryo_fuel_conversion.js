@@ -1,4 +1,3 @@
-// @ts-check
 (function adAstraCryoFuelConversionRecipes() {
   onEvent("recipes", (event) => {
     /**

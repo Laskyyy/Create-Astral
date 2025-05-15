@@ -1,4 +1,3 @@
-// @ts-check
 (function planetDestroyer() {
   const $AdAstra = java("com.github.alexnijjar.ad_astra.AdAstra");
   const $ServerLifecycleEvents = /** @type {any} */ (

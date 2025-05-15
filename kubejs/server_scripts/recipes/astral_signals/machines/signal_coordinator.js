@@ -1,4 +1,3 @@
-// @ts-check
 (function astralSignalsSignalCoordinatorRecipes() {
   onEvent("recipes", (event) => {
     /**

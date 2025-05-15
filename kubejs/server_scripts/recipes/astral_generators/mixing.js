@@ -1,4 +1,3 @@
-// @ts-check
 (function astralGeneratorsMixingRecipes() {
   onEvent("recipes", (event) => {
     event.recipes.create

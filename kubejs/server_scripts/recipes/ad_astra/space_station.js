@@ -1,4 +1,3 @@
-// @ts-check
 (function adAstraSpaceStationRecipe() {
   onEvent("recipes", (event) => {
     /**

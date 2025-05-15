@@ -1,5 +1,4 @@
 // priority: 99
-// @ts-check
 // constants
 
 global.OXIDISATION_TYPES = /** @type {const} */ (["exposed", "weathered", "oxidized"]);

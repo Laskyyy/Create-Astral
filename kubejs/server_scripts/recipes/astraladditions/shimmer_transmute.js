@@ -1,4 +1,3 @@
-// @ts-check
 (function astralAdditionsShimmerTransmutationRecipes() {
   onEvent("recipes", (event) => {
     /**

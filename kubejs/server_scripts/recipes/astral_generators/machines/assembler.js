@@ -1,4 +1,3 @@
-// @ts-check
 (function astralGeneratorsAssemblerRecipes() {
   onEvent("recipes", (event) => {
     assemblerConvergenceCore(event);

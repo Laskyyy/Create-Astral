@@ -1,4 +1,3 @@
-// @ts-check
 (function villagerTrades() {
   const VillagerTiers = Object.freeze({
     NOVICE: 1,

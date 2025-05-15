@@ -1,4 +1,3 @@
-// @ts-check
 (function worldgen() {
   ///OVERWORLD
   onEvent("worldgen.add", (event) => {

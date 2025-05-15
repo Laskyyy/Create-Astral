@@ -1,5 +1,13 @@
 (function createItemApplicationRecipes() {
   onEvent("recipes", (event) => {
+    /**
+     * @typedef ItemApplicationRecipe
+     * @property {Helper.ItemOrTag} output
+     * @property {Helper.ItemOrTag} appliedTo
+     * @property {Helper.ItemOrTag} appliedItem
+     */
+
+    /** @type {ItemApplicationRecipe[]} */
     const itemApplicationRecipes = [
       {
         output: { item: "create:railway_casing" },

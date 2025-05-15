@@ -1,4 +1,3 @@
-// @ts-check
 (function stoneGrowthChamberDummyPonder() {
   onEvent("ponder.registry", (event) => {
     // ? Seems currently unused.

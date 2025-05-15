@@ -1,5 +1,13 @@
 (function createWashingRecipes() {
   onEvent("recipes", (event) => {
+
+    /** 
+     * @typedef WashingRecipe
+     * @param {Internal.IngredientJS_} input
+     * @param {Internal.ItemStackJS_[]} outputs
+     */
+
+    /** @type {WashingRecipe[]} */
     const washingRecipes = [
       //sponge to wet sponge
       {
