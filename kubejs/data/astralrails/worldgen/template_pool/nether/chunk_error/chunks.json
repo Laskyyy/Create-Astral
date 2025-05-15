@@ -5,89 +5,37 @@
     {
       "weight": 1,
       "element": {
-        "location": "astralrails:moon/pipes/pipe_1",
+        "location": "astralrails:nether/chunk_error/body_1",
         "processors": [],
         "projection": "rigid",
         "element_type": "minecraft:legacy_single_pool_element"
       }
     },
-		{
+	{
       "weight": 1,
       "element": {
-        "location": "astralrails:moon/pipes/pipe_2",
+        "location": "astralrails:nether/chunk_error/body_2",
         "processors": [],
         "projection": "rigid",
         "element_type": "minecraft:legacy_single_pool_element"
       }
     },
-		{
+	{
       "weight": 1,
       "element": {
-        "location": "astralrails:moon/pipes/pipe_3",
-        "processors": [],
-        "projection": "terrain_matching",
-        "element_type": "minecraft:legacy_single_pool_element"
-      }
-    },
-		{
-      "weight": 1,
-      "element": {
-        "location": "astralrails:moon/pipes/pipe_4",
-        "processors": [],
-        "projection": "terrain_matching",
-        "element_type": "minecraft:legacy_single_pool_element"
-      }
-    },
-		{
-      "weight": 1,
-      "element": {
-        "location": "astralrails:moon/pipes/pipe_pump",
+        "location": "astralrails:nether/chunk_error/surface_1",
         "processors": [],
         "projection": "rigid",
         "element_type": "minecraft:legacy_single_pool_element"
       }
     },
-		{
+	{
       "weight": 1,
       "element": {
-        "location": "astralrails:moon/pipes/cogwheel",
+        "location": "astralrails:nether/chunk_error/surface_2",
         "processors": [],
         "projection": "rigid",
         "element_type": "minecraft:legacy_single_pool_element"
-      }
-    },
-		{
-      "weight": 1,
-      "element": {
-        "location": "astralrails:moon/nuclear/tank_1",
-        "processors": [],
-        "projection": "rigid",
-        "element_type": "minecraft:legacy_single_pool_element"
-      }
-    },
-		{
-      "weight": 1,
-      "element": {
-        "location": "astralrails:moon/nuclear/house_1",
-        "processors": [],
-        "projection": "rigid",
-        "element_type": "minecraft:legacy_single_pool_element"
-      }
-    },
-		{
-      "weight": 1,
-      "element": {
-        "location": "astralrails:moon/nuclear/house_2",
-        "processors": [],
-        "projection": "rigid",
-        "element_type": "minecraft:legacy_single_pool_element"
-      }
-    },
-		{
-      "weight": 1,
-      "element": {
-        "projection": "rigid",
-        "element_type": "minecraft:empty_pool_element"
       }
     }
   ]
