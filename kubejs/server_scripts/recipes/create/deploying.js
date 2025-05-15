@@ -1,46 +1,49 @@
-onEvent("recipes", (event) => {
-    [
-        {
-            output: "createastral:cheesier_block",
-            basin_input: "ad_astra:cheese_block",
-            deployer_input: "ad_astra:cheese",
-        },
-        {
-            output: "minecraft:redstone_torch",
-            basin_input: "minecraft:torch",
-            deployer_input: "minecraft:redstone",
-        },
-        {
-            output: "dbe:vanta_black",
-            basin_input: "minecraft:stone",
-            deployer_input: "minecraft:black_dye",
-        },
-        {
-            output: "explorerscompass:explorerscompass",
-            basin_input: "minecraft:compass",
-            deployer_input: "phonos:redstone_chip",
-        },
-        {
-            output: "astraladditions:oh-no",
-            basin_input: "astraladditions:moonblazed_orb",
-            deployer_input: "astraladditions:orbital_navigation_ring",
-        },
-        {
-            output: "createastral:contained_end",
-            basin_input: "createastral:sturdy_cage",
-            deployer_input: "yttr:haemopal",
-        },
-        {
-            output: "minecraft:sea_pickle",
-            basin_input: "minecraft:torch",
-            deployer_input: "createastral:marimo",
-        },
-        {
-            output: "create:blaze_burner",
-            basin_input: "create:empty_blaze_burner",
-            deployer_input: "tconstruct:blaze_head",
-        },
-    ].forEach((recipe) => {
-        event.recipes.create.deploying([recipe.output], [recipe.basin_input, recipe.deployer_input]);
+(function createDeployingRecipes() {
+  onEvent("recipes", (event) => {
+    const deployingRecipes = [
+      {
+        output: "createastral:cheesier_block",
+        appliedTo: "ad_astra:cheese_block",
+        deployerInput: "ad_astra:cheese",
+      },
+      {
+        output: "minecraft:redstone_torch",
+        appliedTo: "minecraft:torch",
+        deployerInput: "minecraft:redstone",
+      },
+      {
+        output: "dbe:vanta_black",
+        appliedTo: "minecraft:stone",
+        deployerInput: "minecraft:black_dye",
+      },
+      {
+        output: "explorerscompass:explorerscompass",
+        appliedTo: "minecraft:compass",
+        deployerInput: "phonos:redstone_chip",
+      },
+      {
+        output: "astraladditions:oh-no",
+        appliedTo: "astraladditions:moonblazed_orb",
+        deployerInput: "astraladditions:orbital_navigation_ring",
+      },
+      {
+        output: "createastral:contained_end",
+        appliedTo: "createastral:sturdy_cage",
+        deployerInput: "yttr:haemopal",
+      },
+      {
+        output: "minecraft:sea_pickle",
+        appliedTo: "minecraft:torch",
+        deployerInput: "createastral:marimo",
+      },
+      {
+        output: "create:blaze_burner",
+        appliedTo: "create:empty_blaze_burner",
+        deployerInput: "tconstruct:blaze_head",
+      },
+    ];
+    deployingRecipes.forEach((recipe) => {
+      event.recipes.create.deploying([recipe.output], [recipe.appliedTo, recipe.deployerInput]);
     });
-});
+  });
+})();

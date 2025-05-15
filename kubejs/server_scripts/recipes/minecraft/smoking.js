@@ -1,9 +1,12 @@
-onEvent("recipes", (event) => {
-    [
-        // [Input string, Output string, XP value]
-        ["campanion:marshmallow", "campanion:cooked_marshmallow"],
-        ["campanion:cooked_marshmallow", "campanion:blackened_marshmallow"],
-    ].forEach((recipe) => {
-        event.smoking(recipe[1], recipe[0]).xp(recipe[2] ?? 0.0);
+(function minecraftSmokingRecipes() {
+  onEvent("recipes", (event) => {
+    const smokingRecipes = [
+      // [Input string, Output string, XP value]
+      { input: "campanion:marshmallow", output: "campanion:cooked_marshmallow" },
+      { input: "campanion:cooked_marshmallow", output: "campanion:blackened_marshmallow" },
+    ];
+    smokingRecipes.forEach((recipe) => {
+      event.recipes.minecraft.smoking(recipe.output, recipe.input).xp(recipe.xp ?? 0.0);
     });
-});
+  });
+})();
