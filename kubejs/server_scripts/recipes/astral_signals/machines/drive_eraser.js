@@ -1,9 +1,15 @@
+// @ts-check
 (function astralSignalsDriveEraserRecipes() {
   onEvent("recipes", (event) => {
-    // Only one input
-    // Will always return a blank data drive
-    // All recipes take 40 ticks (2 seconds)
-    // The block will only accept non-blank data drives as inputs, change the machine registry in kubejs/data/astralsignals/machines/drive_eraser.json if you wish to modify this
+
+    /**
+     * Only one input.
+     * Will always return a blank data drive.
+     * All recipes take 40 ticks (2 seconds).
+     * The block will only accept non-blank data drives as inputs.
+     * Change the machine registry in kubejs/data/astralsignals/machines/drive_eraser.json if you wish to modify this.
+     * @type {Special.Item[]}
+     */
     const dataDrives = [
       "astralsignals:data_drive_garbled",
       "astralsignals:data_drive_dormant_t1",

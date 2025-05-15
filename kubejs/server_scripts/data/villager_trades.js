@@ -1,3 +1,4 @@
+// @ts-check
 (function villagerTrades() {
   const VillagerTiers = Object.freeze({
     NOVICE: 1,
@@ -6,7 +7,29 @@
     EXPERT: 4,
     MASTER: 5,
   });
+
+  /**
+   * @typedef TradesToRemoveDefinition
+   * @property {Special.VillagerProfession} profession The namespaced profession ID to remove trades from.
+   * @property {(typeof VillagerTiers)[keyof typeof VillagerTiers][]} tiers Villager tiers to remove.
+   */
+
+  /**
+   * @typedef CustomTradesToAddDefinition
+   * @property {Special.VillagerProfession} profession The namespaced profession ID to add trades to.
+   * @property {object[]} offers What the villager offers based on the villager tier.
+   * @property {(typeof VillagerTiers)[keyof typeof VillagerTiers]} offers.tier The villager tier.
+   * @property {TradeOffer[]} offers.trades The trades offered at that tier.
+   */
+
+  /**
+   * @typedef TradeOffer
+   * @property {[item1: Internal.ItemStackJS_] | [item1: Internal.ItemStackJS_, item2: Internal.ItemStackJS_]} buyItems What items does the villager buy.
+   * @property {Internal.ItemStackJS_} sellItem What item does the villager sell.
+   */
+
   onEvent("morejs.villager.trades", (event) => {
+    /** @type {TradesToRemoveDefinition[]} */
     const vanillaTradesToRemove = [
       {
         profession: "minecraft:armorer",
@@ -25,6 +48,7 @@
         tiers: [VillagerTiers.MASTER],
       },
     ];
+    /** @type {CustomTradesToAddDefinition[]} */
     const customTradesToAdd = [
       {
         profession: "minecraft:armorer",

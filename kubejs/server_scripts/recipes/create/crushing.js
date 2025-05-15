@@ -1,6 +1,13 @@
+// @ts-check
 (function createCrushingRecipes() {
   onEvent("recipes", (event) => {
     //Replace with other netherrack inputs and outputs
+    /**
+     * @typedef CrushingRecipe
+     * @property {Internal.IngredientJS_} input
+     * @property {Internal.IngredientJS_[]} outputs
+     */
+    /** @type {CrushingRecipe[]} */
     const crushingRecipes = [
       {
         input: "tconstruct:ender_slime_crystal_cluster",

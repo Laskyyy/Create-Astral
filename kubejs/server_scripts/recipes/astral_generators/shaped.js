@@ -1,3 +1,4 @@
+// @ts-check
 (function astralGeneratorsShapedRecipes() {
   onEvent("recipes", (event) => {
     event.shaped(

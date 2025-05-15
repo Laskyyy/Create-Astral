@@ -1,34 +1,49 @@
+// @ts-check
 (function createAdditionChargingRecipes() {
   onEvent("recipes", (event) => {
+    /** 
+     * @typedef ItemWithCount
+     * @property {Special.Item} item
+     * @property {number} count
+     */
+
+    /**
+     * @typedef ChargingRecipe
+     * @property {ItemWithCount} input
+     * @property {ItemWithCount} output
+     * @property {number} energy
+     */
+
+    /** @type {ChargingRecipe[]} */
     const chargingRecipes = [
       {
-        input: ["kubejs:molten_desh_bucket", 1],
-        output: ["tconstruct:molten_electrum_bucket", 1],
+        input: { item: "kubejs:molten_desh_bucket", count: 1 },
+        output: { item: "tconstruct:molten_electrum_bucket", count: 1 },
         energy: 4000,
       },
       {
-        input: ["techreborn:synthetic_redstone_crystal", 1],
-        output: ["minecraft:redstone", 5],
+        input: { item: "techreborn:synthetic_redstone_crystal", count: 1 },
+        output: { item: "minecraft:redstone", count: 5 },
         energy: 5000,
       },
       {
-        input: ["createastral:golden_pin", 1],
-        output: ["createastral:electrified_pin", 1],
+        input: { item: "createastral:golden_pin", count: 1 },
+        output: { item: "createastral:electrified_pin", count: 1 },
         energy: 800,
       },
       {
-        input: ["astraladditions:shimmer_heart", 1],
-        output: ["astraladditions:awakened_shimmer_heart", 1],
+        input: { item: "astraladditions:shimmer_heart", count: 1 },
+        output: { item: "astraladditions:awakened_shimmer_heart", count: 1 },
         energy: 800,
       },
       {
-        input: ["yttr:neodymium_dust", 1],
-        output: ["yttr:neodymium_disc", 1],
+        input: { item: "yttr:neodymium_dust", count: 1 },
+        output: { item: "yttr:neodymium_disc", count: 1 },
         energy: 5000,
       },
       {
-        input: ["minecraft:tuff", 1], // add a use for ashes, making tuff much more relevant if you can spare the power
-        output: ["techreborn:ashes_dust", 1],
+        input: { item: "minecraft:tuff", count: 1 }, // add a use for ashes, making tuff much more relevant if you can spare the power
+        output: { item: "techreborn:ashes_dust", count: 1 },
         energy: 10000,
       },
     ];
@@ -36,12 +51,12 @@
       event.custom({
         type: "createaddition:charging",
         input: {
-          item: recipe.input[0],
-          count: recipe.input[1],
+          item: recipe.input.item,
+          count: recipe.input.count,
         },
         result: {
-          item: recipe.output[0],
-          count: recipe.output[1],
+          item: recipe.output.item,
+          count: recipe.output.count,
         },
         energy: recipe.energy,
       });

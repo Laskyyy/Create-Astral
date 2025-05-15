@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
-    "lib": ["ES5", "ES2015"],
+    "lib": ["ES5", "ES2015", "ES2016.Array.Include", "ES2017.Object"],
     "typeRoots": ["./probe/generated", "./custom_types"],
-    "target": "ES2015"
+    "target": "ES2015",
+    "skipLibCheck": true
   }
 }

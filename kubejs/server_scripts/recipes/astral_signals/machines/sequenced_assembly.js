@@ -1,3 +1,4 @@
+// @ts-check
 (function astralSignalsSequencedAssemblyRecipes() {
   const BUCKET = global.BUCKET;
   const GEM_BLOCK = global.GEM_BLOCK;
@@ -8,7 +9,15 @@
   const mB = global.mB;
 
   onEvent("recipes", (event) => {
-    const assemblyRecipes = [
+    /**
+     * @typedef AssemblyRecipe
+     * @property {Internal.RecipeEventJS_} input
+     * @property {Internal.RecipeEventJS_[]} outputs
+     * @property {Internal.RecipeEventJS_} inter
+     */
+
+    /** @satisfies {AssemblyRecipe[]} */
+    const assemblyRecipes = /** @type {const} */ ([
       {
         input: "astralsignals:stirring_signal_beacon",
         outputs: [
@@ -56,7 +65,7 @@
         ],
         inter: "astralsignals:inter_data_drive_dormant_t3",
       },
-    ];
+    ]);
     assemblyRecipes.forEach((inst) => {
       event.recipes.create
         .sequenced_assembly(inst.outputs, inst.input, [

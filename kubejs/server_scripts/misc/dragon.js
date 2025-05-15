@@ -1,4 +1,6 @@
+// @ts-check
 (function dragon() {
+  /** @param {Internal.BlockRightClickEventJS} event */
   function bossSpawner(event) {
     let blockPos = event.block.pos;
     event.server.runCommandSilent(
@@ -19,12 +21,14 @@
       );
     });
   }
+  /** @param {Internal.BlockRightClickEventJS} event */
   function takeItem(event) {
     let selectedSlot = event.player.getSelectedSlot();
     let itemStack = event.player.inventory.get(selectedSlot);
     itemStack.setCount(event.item.getCount() - 1);
     event.player.inventory.set(selectedSlot, itemStack);
   }
+  /** @param {Internal.BlockRightClickEventJS} event */
   function damageTool(event) {
     if (!("Damage" in event.item.nbt)) return;
     if (!(typeof event.item.nbt.Damage === "number")) return;

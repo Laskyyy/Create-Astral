@@ -1,3 +1,4 @@
+// @ts-check
 (function astralAdditionsDesizerRecipes() {
   onEvent("recipes", (event) => {
     desizer27SingleType(event);
@@ -107,6 +108,7 @@
       },
     });
   });
+  /** @param {Internal.RecipeEventJS} event  */
   function desizer27SingleType(event) {
     // recipes for 3*3*3 of a single block type
     const desizer27Recipes = [

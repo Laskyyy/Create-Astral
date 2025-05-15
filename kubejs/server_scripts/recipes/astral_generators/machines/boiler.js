@@ -1,8 +1,10 @@
+// @ts-check
 (function astralGeneratorsBoilerRecipes() {
   onEvent("recipes", (event) => {
     boilerSteamFromFuel(event);
     boilerSteamFromLava(event);
   });
+  /** @param {Internal.RecipeEventJS} event  */
   function boilerSteamFromFuel(event) {
     event.custom({
       type: "custommachinery:custom_machine",
@@ -39,6 +41,7 @@
       ],
     });
   }
+  /** @param {Internal.RecipeEventJS} event  */
   function boilerSteamFromLava(event) {
     event.custom({
       type: "custommachinery:custom_machine",

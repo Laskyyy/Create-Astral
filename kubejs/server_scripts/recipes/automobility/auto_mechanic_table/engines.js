@@ -1,5 +1,18 @@
+// @ts-check
 (function automobilityEngineRecipes() {
   onEvent("recipes", (event) => {
+
+    /** @typedef {"copper" | "stone" | "gold" | "iron" | "diamond"} EngineMaterials */
+    /** @typedef {`automobility:${EngineMaterials}`} EngineType */
+
+    /**
+     * @typedef EngineRecipe
+     * @property {{item: Special.Item}[]} input
+     * @property {EngineType} output
+     * @property {number} sortnum
+     */
+
+    /** @type {EngineRecipe[]} */
     const engineRecipes = [
       {
         input: [

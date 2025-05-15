@@ -1,3 +1,4 @@
+// @ts-check
 (function estrogenCentrifugingRecipes() {
   const BUCKET = global.BUCKET;
   const GEM_BLOCK = global.GEM_BLOCK;
@@ -9,9 +10,9 @@
   onEvent("recipes", (event) => {
     /**
      * @typedef CentrifugingRecipe
-     * @prop {Special.Fluid} input
-     * @prop {Special.Fluid} output
-     * @prop {number} amount
+     * @property {Special.Fluid} input
+     * @property {Special.Fluid} output
+     * @property {number} amount
      */
 
     /** @type {CentrifugingRecipe[]} */

@@ -5,6 +5,8 @@ declare namespace Helper {
   type BigPattern = BigPatternRow;
 
   type Items = Internal.ItemStackJS_ | `#${Special.ItemTag}` | `@${Special.Mod}` | "*";
+  type ItemOrTag = { item: Special.Item } | { tag: Special.ItemTag };
+  type FluidOrTag = { fluid: Special.Fluid } | { tag: Special.FluidTag };
 }
 
 declare namespace Internal {

@@ -1,18 +1,19 @@
 // priority: 99
-
+// @ts-check
 // constants
-global.OXIDISATION_TYPES = ["exposed", "weathered", "oxidized"];
+
+global.OXIDISATION_TYPES = /** @type {const} */ (["exposed", "weathered", "oxidized"]);
 global.OXIDIZATION_TYPES = global.OXIDISATION_TYPES;
-global.VANILLA_COPPER_BLOCKS = ["cut_copper", "cut_copper_stairs", "cut_copper_slab"];
-global.CREATE_COPPER_BLOCKS = [
+global.VANILLA_COPPER_BLOCKS = /** @type {const} */ (["cut_copper", "cut_copper_stairs", "cut_copper_slab"]);
+global.CREATE_COPPER_BLOCKS = /** @type {const} */ ([
   "copper_shingles",
   "copper_shingle_slab",
   "copper_shingle_stairs",
   "copper_tiles",
   "copper_tile_slab",
   "copper_tile_stairs",
-];
-global.CATWALK_MATERIALS = [
+]);
+global.CATWALK_MATERIALS = /** @type {const} */ ([
   { material: "gold", sheet: "create:golden_sheet" },
   { material: "netherite", sheet: "createdeco:netherite_sheet" },
   { material: "andesite", sheet: "create:andesite_alloy" },
@@ -21,8 +22,8 @@ global.CATWALK_MATERIALS = [
   { material: "iron", sheet: "create:iron_sheet" },
   { material: "copper", sheet: "create:copper_sheet" },
   { material: "zinc", sheet: "#c:plates/zinc" },
-];
-global.WOODS = [
+]);
+global.WOODS = /** @type {const} */ ([
   {
     mod: "minecraft",
     type: "oak",
@@ -93,8 +94,8 @@ global.WOODS = [
     type: "cherry",
     tag: "vinery:cherry_logs",
   },
-];
-global.MATERIALS = [
+]);
+global.MATERIALS = /** @type {const} */ ([
   {
     ingot: "minecraft:copper_ingot",
     block: "minecraft:copper_block",
@@ -209,9 +210,21 @@ global.MATERIALS = [
     plate: "createastral:ender_plating",
     useMechPress: false,
   },
-];
-/** @type {CrushingRecipeToBecomeGrinding[]} */
-global.CRUSHING_RECIPES_TO_BECOME_GRINDING = [
+]);
+
+/**
+ * @typedef {object} CrushingRecipeToBecomeGrinding
+ * @property {object} input
+ * @property {Special.Item} input.item
+ * @property {object} output
+ * @property {Special.Item} output.item
+ * @property {number} output.count
+ * @property {number} [time]
+ * @property {number} [power]
+ */
+
+/** @satisfies {CrushingRecipeToBecomeGrinding[]} */
+global.CRUSHING_RECIPES_TO_BECOME_GRINDING = /** @type {const} */ ([
   {
     input: { item: "minecraft:clay_ball" },
     output: { item: "techreborn:clay_dust", count: 1 },
@@ -248,16 +261,6 @@ global.CRUSHING_RECIPES_TO_BECOME_GRINDING = [
     input: { item: "create:sturdy_sheet" },
     output: { item: "createastral:fragile_sheet", count: 1 },
   },
-];
+]);
 global.DEFAULT_GRIND_TIME = 100; // five seconds
 global.DEFAULT_GRIND_POWER = 5;
-/**
- * @typedef {Object} CrushingRecipeToBecomeGrinding
- * @property {Object} input
- * @property {Special.Item} input.item
- * @property {Object} output
- * @property {Special.Item} output.item
- * @property {number} output.count
- * @property {number} [time]
- * @property {number} [power]
- */

@@ -1,7 +1,16 @@
+// @ts-check
 (function createCuttingRecipes() {
   onEvent("recipes", (event) => {
     autoChipped(event);
     farmersCompatCutting(event);
+
+    /**
+     * @typedef CuttingRecipe
+     * @param {Internal.ItemStackJS_} input
+     * @param {Internal.ItemStackJS_ | Internal.ItemStackJS_[]} output
+     */
+
+    /** @type {CuttingRecipe[]} */
     const cuttingRecipes = [
       {
         input: "createastral:marimo",
@@ -153,7 +162,8 @@
    * @author KonSola5
    */
   function autoChipped(event) {
-    const CHIPPED_TABLES = [
+    /** @satisfies {Special.RecipeSerializer[]} */
+    const CHIPPED_TABLES = /** @type {const} */ ([
       "chipped:alchemy_bench",
       "chipped:botanist_workbench",
       "chipped:carpenters_table",
@@ -161,7 +171,7 @@
       "chipped:loom_table",
       "chipped:mason_table",
       "chipped:tinkering_table",
-    ];
+    ]);
     CHIPPED_TABLES.forEach((table) => {
       event.forEachRecipe({ type: table }, (recipe) => {
         const tags = JSON.parse(recipe.json.toString()).tags;
@@ -171,23 +181,18 @@
             .forEach((item) => {
               event.custom({
                 type: "create:cutting",
-                ingredients: [
-                  {
-                    tag: itemTag,
-                  },
-                ],
-                results: [
-                  {
-                    item: item.id,
-                  },
-                ],
+                ingredients: [{ tag: itemTag }],
+                results: [{ item: item.id }],
               });
             });
         });
       });
     });
   }
-  /** @author RandomUser240306 */
+  /**
+   * @author RandomUser240306
+   * @param {Internal.RecipeEventJS} event
+   */
   function farmersCompatCutting(event) {
     event.forEachRecipe({ type: "farmersdelight:cutting" }, (recipe) => {
       let newList = Utils.newList();

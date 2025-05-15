@@ -1,11 +1,30 @@
+// @ts-check
 (function yttrLootFix() {
+  /** @typedef {Special.Block & Special.Item} BlockThatIsAlsoAnItem */
+
+  /**
+   * @typedef LootFunction
+   * @property {string} function
+   * @property {string} tag
+   * @property {LootConditions[]} [conditions]
+   */
+
+  /**
+   * @typedef LootConditions
+   * @property {string} block
+   * @property {string} condition
+   * @property {Record<string, string | boolean | number>} properties
+   */
+
   onEvent("block.loot_tables", (event) => {
     yttrBlockFix(event);
   });
   // Taken from the old yttr_block_fix.js file
   // ! Commented out entries aren't both blocks and items!
+  /** @param {Internal.BlockLootEventJS} event */
   function yttrBlockFix(event) {
-    const yttrBlocks = [
+    /** @satisfies {BlockThatIsAlsoAnItem[]} */
+    const yttrBlocks = /** @type {const} */ ([
       "yttr:centrifuge",
       "yttr:yttrium_block",
       "yttr:power_meter",
@@ -86,13 +105,13 @@
       "yttr:levitation_chamber",
       "yttr:magtank",
       "yttr:dsu",
-    ];
+    ]);
     yttrBlocks.forEach((loot) => {
       event.addSimpleBlock(loot, loot);
       // event.addSimpleBlock("yttr:neodymium_block")
     });
     //Lamp Blocks
-    const lampColors = [
+    const lampColors = /** @type {const} */ ([
       //don't include colorless
       "white",
       "orange",
@@ -111,9 +130,10 @@
       "red",
       "black",
       "teal",
-    ];
-    const yttrLamps = ["yttr:lamp", "yttr:fixture", "yttr:cage_lamp", "yttr:panel"];
+    ]);
+    const yttrLamps = /** @type {const} */ (["yttr:lamp", "yttr:fixture", "yttr:cage_lamp", "yttr:panel"]);
     yttrLamps.forEach((lamp) => {
+      /** @type {LootFunction[]} */
       let functionArray = [
         {
           function: "minecraft:set_nbt",
@@ -148,7 +168,7 @@
               },
             ],
           };
-        }),
+        })
       ),
         event.addJson(lamp, {
           type: "minecraft:block",
@@ -174,16 +194,3 @@
     });
   }
 })();
-/** @typedef {Special.Block & Special.Item} BlockThatIsAlsoAnItem */
-/**
- * @typedef {Object} LootFunction
- * @property {string} function
- * @property {string} tag
- * @property {LootConditions[]} [conditions]
- */
-/**
- * @typedef {Object} LootConditions
- * @property {string} block
- * @property {string} condition
- * @property {Record<string, string | boolean | number>} properties
- */

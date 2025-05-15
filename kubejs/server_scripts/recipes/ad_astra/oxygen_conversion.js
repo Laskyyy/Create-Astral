@@ -1,12 +1,23 @@
+// @ts-check
 (function adAstraOxygenConversionRecipes() {
   onEvent("recipes", (event) => {
-    [
+    /**
+     * @typedef OxygenConversionRecipe
+     * @property {Helper.FluidOrTag} input
+     * @property {object} output
+     * @property {Special.Fluid} output.name
+     * @property {number} ratio
+     */
+
+    /** @type {OxygenConversionRecipe[]} */
+    const oxygenConversionRecipes = [
       {
         input: { tag: "ad_astra:oxygen" },
         output: { name: "ad_astra:oxygen" },
         ratio: 1,
       },
-    ].forEach((recipe) => {
+    ];
+    oxygenConversionRecipes.forEach((recipe) => {
       event.custom({
         type: "ad_astra:oxygen_conversion",
         input: recipe.input,
