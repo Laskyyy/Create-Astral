@@ -9,51 +9,35 @@
     /** @type {StationIngredient[]} */
     const stationIngredients = [
       {
-        ingredient: {
-          tag: "c:iron_plates",
-        },
+        ingredient: { tag: "c:iron_plates" },
         count: 64,
       },
       {
-        ingredient: {
-          item: "techreborn:rubber",
-        },
+        ingredient: { item: "techreborn:rubber" },
         count: 64,
       },
       {
-        ingredient: {
-          tag: "c:compressed_desh",
-        },
+        ingredient: { tag: "c:compressed_desh" },
         count: 32,
       },
       {
-        ingredient: {
-          tag: "c:glass",
-        },
+        ingredient: { tag: "c:glass" },
         count: 32,
       },
       {
-        ingredient: {
-          item: "create:sturdy_sheet",
-        },
+        ingredient: { item: "create:sturdy_sheet" },
         count: 16,
       },
       {
-        ingredient: {
-          item: "create:integrated_circuit",
-        },
+        ingredient: { item: "create:integrated_circuit" },
         count: 8,
       },
       {
-        ingredient: {
-          item: "createastral:navigation_mechanism",
-        },
+        ingredient: { item: "createastral:navigation_mechanism" },
         count: 1,
       },
       {
-        ingredient: {
-          item: "ad_astra:oxygen_distributor",
-        },
+        ingredient: { item: "ad_astra:oxygen_distributor" },
         count: 1,
       },
     ];
