@@ -86,7 +86,6 @@
       .flowingTexture("tconstruct:block/fluid/molten/flowing")
       .gaseous()
       .displayName("Smite");
-    event.create("released_water_coolant").thickTexture(0x63b1ed).bucketColor(0x63b1ed).displayName("Released Coolant");
     event
       .create("compound_mixture")
       .thickTexture(0x66786f)
