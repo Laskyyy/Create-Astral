@@ -1,10 +1,10 @@
-/**
- * @typedef StonecuttingRecipe
- * @property {Internal.IngredientJS_} input
- * @property {Internal.ItemStackJS_[]} outputs
- */
-
 (function minecraftStonecuttingRecipes() {
+  /**
+   * @typedef StonecuttingRecipe
+   * @property {Internal.IngredientJS_} input
+   * @property {Internal.ItemStackJS_[]} outputs
+   */
+
   onEvent("recipes", (event) => {
     copperOxidising(event);
 
@@ -208,6 +208,13 @@
       }
     }
     global.OXIDIZATION_TYPES.forEach((state) => {
+      /**
+       * @typedef OtherCopperStonecuttingRecipe
+       * @property {Internal.ItemStackJS_} input
+       * @property {Internal.ItemStackJS_[]} outputs
+       */
+
+      /** @type {OtherCopperStonecuttingRecipe[]} */
       const otherCopperStonecuttingRecipes = [
         { input: "minecraft:copper_block", outputs: [`minecraft:${state}_copper`] },
         { input: "minecraft:waxed_copper_block", outputs: [`minecraft:waxed_${state}_copper`] },

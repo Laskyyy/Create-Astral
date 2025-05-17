@@ -3,8 +3,8 @@
 
     /** 
      * @typedef WashingRecipe
-     * @param {Internal.IngredientJS_} input
-     * @param {Internal.ItemStackJS_[]} outputs
+     * @property {Internal.IngredientJS_} input
+     * @property {Internal.ItemStackJS_[]} outputs
      */
 
     /** @type {WashingRecipe[]} */

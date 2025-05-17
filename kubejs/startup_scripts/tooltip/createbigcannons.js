@@ -1,5 +1,6 @@
 (function createBigCannonsTooltips() {
   onEvent("item.tooltip", (event) => {
+    /** @type {Helper.Tooltip[]} */
     const createbigcannonsTooltips = [
       {
         item: "createbigcannons:steel_screw_breech",

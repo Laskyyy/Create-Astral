@@ -9,7 +9,7 @@
 
   onEvent("recipes", (event) => {
     /**
-     * @typedef {EmptyingRecipe}
+     * @typedef EmptyingRecipe
      * @property {Internal.IngredientJS_} input
      * @property {Internal.IngredientJS_} outputItem
      * @property {{fluid: Special.Fluid, amount: number}} outputFluid

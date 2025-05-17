@@ -170,8 +170,7 @@
       "chipped:glassblower",
       "chipped:loom_table",
       "chipped:mason_table",
-      // @ts-expect-error ProbeJS didn't catch that.
-      "chipped:tinkering_table",
+      /** @type {Special.RecipeSerializer}*/ ("chipped:tinkering_table"),
     ]);
     CHIPPED_TABLES.forEach((table) => {
       event.forEachRecipe({ type: table }, (recipe) => {

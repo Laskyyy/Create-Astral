@@ -1,5 +1,6 @@
 (function techRebornTooltips() {
   onEvent("item.tooltip", (event) => {
+    /** @type {Helper.Tooltip[]} */
     const techrebornTooltips = [
       {
         item: "techreborn:uu_matter",

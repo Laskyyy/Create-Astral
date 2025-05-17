@@ -7,6 +7,10 @@ declare namespace Helper {
   type Items = Internal.ItemStackJS_ | `#${Special.ItemTag}` | `@${Special.Mod}` | "*";
   type ItemOrTag = { item: Special.Item } | { tag: Special.ItemTag };
   type FluidOrTag = { fluid: Special.Fluid } | { tag: Special.FluidTag };
+  interface Tooltip {
+    item: Special.Item,
+    tooltip: Special.LangKey
+  }
 }
 
 declare namespace Internal {
@@ -35,24 +39,24 @@ declare namespace Internal {
     | "copperarmor"
     | "netherite";
   type Tier_ = Tier | "gold" | "diamond" | "iron" | "copper" | "wood" | "brass" | "radiant" | "stone" | "netherite";
-  type ItemStackJS_ = ItemStackJS | `${number}x ${Special.Item}` | Internal.Item_;
-  type IngredientJS_ =
-    | { ingredient: object }
-    | RegExp
-    | Internal.Ingredient_
-    | { count?: number; item: Internal.ItemStackJS_ }
-    | Internal.IngredientJS_[]
-    | `%${string}`
-    | IngredientJS
-    | Internal.ItemStackJS_
-    | Internal.FluidStackJS_
-    | { fluid: Internal.FluidStackJS_ }
-    | `#${Special.ItemTag}`
-    | "*"
-    | { value: object }
-    | ((arg0: Internal.ItemStackJS) => boolean)
-    | { type: Special.Ingredient }
-    | `@${Special.Mod}`;
+  // type ItemStackJS_ = ItemStackJS | `${number}x ${Special.Item}` | Internal.Item_;
+  // type IngredientJS_ =
+  //   | { ingredient: object }
+  //   | RegExp
+  //   | Internal.Ingredient_
+  //   | { count?: number; item: Internal.ItemStackJS_ }
+  //   | Internal.IngredientJS_[]
+  //   | `%${string}`
+  //   | IngredientJS
+  //   | Internal.ItemStackJS_
+  //   | Internal.FluidStackJS_
+  //   | { fluid: Internal.FluidStackJS_ }
+  //   | `#${Special.ItemTag}`
+  //   | "*"
+  //   | { value: object }
+  //   | ((arg0: Internal.ItemStackJS) => boolean)
+  //   | { type: Special.Ingredient }
+  //   | `@${Special.Mod}`;
   // | `${number}x #${Special.Tag}`;
 
   interface ExtendedSceneBuilder$ExtendedWorldInstructions extends Internal.SceneBuilder$WorldInstructions {
@@ -239,6 +243,13 @@ declare namespace Internal {
       supplier: Internal.Supplier_<any>
     ): Internal.RegistrySupplier<R>;
   }
+  type ItemTooltipEventJS$StaticTooltipHandlerFromJS_ =
+  | ((
+      itemStack: Internal.ItemStackJS,
+      isAdvanced: boolean,
+      lines: Internal.List<globalThis.Component | globalThis.Component[]>
+    ) => void)
+  | ItemTooltipEventJS$StaticTooltipHandlerFromJS;
 }
 
 declare namespace Special {

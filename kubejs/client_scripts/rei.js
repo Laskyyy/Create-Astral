@@ -2,7 +2,7 @@
   console.info("Hello, World! (You will see this line every time client resources reload)");
   onEvent("rei.group", (event) => {
     event.groupItems("kubejs:rei_groups/chipped", Component.of("Chipped Blocks"), [
-      Ingredient.of("@chipped")
+      Ingredient.of(/** @type {Internal.IngredientJS_} */ ("@chipped"))
         .getItemIds()
         .toArray()
         .filter(
@@ -62,16 +62,19 @@
     event.groupFluidsIf(
       "createastral:rei_groups/create/potion",
       Component.translate("text.rei.createastral.create.potion.regular"),
+      // @ts-expect-error My type-safe implementation didn't work.
       (fluid) => fluid.getId() === createPotion && fluid.nbt.Bottle === "REGULAR"
     );
     event.groupFluidsIf(
       "createastral:rei_groups/create/splash_potion",
       Component.translate("text.rei.createastral.create.potion.splash"),
+      // @ts-expect-error My type-safe implementation didn't work.
       (fluid) => fluid.getId() === createPotion && fluid.nbt.Bottle === "SPLASH"
     );
     event.groupFluidsIf(
       "createastral:rei_groups/create/lingering_potion",
       Component.translate("text.rei.createastral.create.potion.lingering"),
+      // @ts-expect-error My type-safe implementation didn't work.
       (fluid) => fluid.getId() === createPotion && fluid.nbt.Bottle === "LINGERING"
     );
     //Packages

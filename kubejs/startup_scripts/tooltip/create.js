@@ -1,5 +1,6 @@
 (function createTooltips() {
   onEvent("item.tooltip", (event) => {
+    /** @type {Helper.Tooltip[]} */
     const createTooltips = [
       {
         item: "create:blaze_cake",

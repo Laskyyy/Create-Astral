@@ -345,7 +345,22 @@
     const CRUSHING_ORE_BONUS_XP_CHUNKS = 0.33;
     const EXTRA_CHANCE = 0.2;
     /// Raw
-    const oreCrushingRecipes = [
+    /**
+     * @typedef OreCrushingRecipe
+     * @property {Special.Mod} mod
+     * @property {Ores[]} ores
+     * @property {string} suffix
+     * @property {string} crushedPrefix
+     */
+
+    /**
+     * @typedef Ores
+     * @property {string} name
+     * @property {Special.Item} [extra]
+     */
+
+    /** @satisfies {OreCrushingRecipe[]} */
+    const oreCrushingRecipes = /** @type {const} */ ([
       {
         mod: "techreborn",
         ores: [
@@ -363,7 +378,7 @@
           },
         ],
         suffix: "storage_block",
-        crushed_prefix: "create",
+        crushedPrefix: "create",
       },
       {
         mod: "ad_astra",
@@ -379,7 +394,7 @@
           { name: "calorite" },
         ],
         suffix: "block",
-        crushed_prefix: "createastral",
+        crushedPrefix: "createastral",
       },
       {
         mod: "yttr",
@@ -390,7 +405,7 @@
           },
         ],
         suffix: "block",
-        crushed_prefix: "createastral",
+        crushedPrefix: "createastral",
       },
       {
         mod: "tconstruct",
@@ -401,59 +416,68 @@
           },
         ],
         suffix: "block",
-        crushed_prefix: "createastral",
+        crushedPrefix: "createastral",
       },
       {
         mod: "create",
         ores: [{ name: "zinc" }],
         suffix: "block",
-        crushed_prefix: "create",
+        crushedPrefix: "create",
       },
       {
         mod: "minecraft",
         ores: [{ name: "iron" }, { name: "gold" }, { name: "copper" }],
         suffix: "block",
-        crushed_prefix: "create",
+        crushedPrefix: "create",
       },
-    ];
+    ]);
     oreCrushingRecipes.forEach((mod) => {
-      mod.ores.forEach((ore) => {
+      mod.ores.forEach((/** @type {{ name: string; extra?: Internal.ItemStackJS_ }} */ ore) => {
         // No way to make this completely type-safe, casts are used.
-        let raw_ore = `${mod.mod}:raw_${ore.name}`;
-        let raw_ore_block = `${mod.mod}:raw_${ore.name}_${mod.suffix}`;
-        let crushed_ore = `${mod.crushed_prefix}:crushed_raw_${ore.name}`;
+        let rawOre = /** @type {Special.Item} */ (`${mod.mod}:raw_${ore.name}`);
+        let rawOreBlock = /** @type {Special.Item} */ (`${mod.mod}:raw_${ore.name}_${mod.suffix}`);
+        let crushedOre = /** @type {Special.Item} */ (`${mod.crushedPrefix}:crushed_raw_${ore.name}`);
         // remove the normal create crushing recipes for ores
         event.remove({
           type: "create:crushing",
-          input: raw_ore_block,
-          output: crushed_ore,
+          input: rawOreBlock,
+          output: crushedOre,
         });
         event.remove({
           type: "create:crushing",
-          input: raw_ore,
-          output: crushed_ore,
+          input: rawOre,
+          output: crushedOre,
         });
         let single_ore_output = [
-          crushed_ore,
-          Item.of(crushed_ore).withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
+          crushedOre,
+          Item.of(crushedOre).withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
           Item.of("create:experience_nugget").withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
         ];
         let multi_ore_output = [
-          Item.of(crushed_ore, 9),
-          Item.of(crushed_ore, 9).withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
+          Item.of(crushedOre, 9),
+          Item.of(crushedOre, 9).withChance(CRUSHING_ORE_BONUS_ORE_YIELD),
           Item.of("create:experience_nugget", 9).withChance(CRUSHING_ORE_BONUS_XP_CHUNKS),
         ];
         if (ore.extra) {
           single_ore_output.push(Item.of(ore.extra).withChance(EXTRA_CHANCE));
           multi_ore_output.push(Item.of(ore.extra, 9).withChance(EXTRA_CHANCE));
         }
-        event.recipes.createCrushing(single_ore_output, raw_ore);
-        event.recipes.createCrushing(multi_ore_output, raw_ore_block);
+        event.recipes.createCrushing(single_ore_output, rawOre);
+        event.recipes.createCrushing(multi_ore_output, rawOreBlock);
       });
     });
     /// Ore block from silktouch
     const BONUS_CRUSH_ORE = 0.75;
     const BLOCK_CHANCE = 0.12;
+    /** @typedef {{[oreType: string]: OreNameCount}} OreMapping */
+
+    /**
+     * @typedef OreNameCount
+     * @property {Special.Item} name
+     * @property {number} count
+     */
+
+    /** @type {OreMapping} */
     const oreMapping = {
       coal: { name: "minecraft:coal", count: 1 },
       iron: { name: "minecraft:raw_iron", count: 1 },
@@ -475,6 +499,15 @@
       yttr: { name: "yttr:raw_gadolinite", count: 1 },
       cobalt: { name: "tconstruct:raw_cobalt", count: 1 },
     };
+    /**
+     * @typedef OreDefinition
+     * @property {string} ore
+     * @property {Special.Item} name
+     * @property {Special.Item & Special.Block} block
+     * @property {number} bonus
+     */
+
+    /** @type {OreDefinition[]} */
     const ores = [
       // Earth Ores
       { ore: "zinc", name: "create:zinc_ore", block: "minecraft:cobblestone", bonus: 0 },
@@ -492,7 +525,16 @@
       { ore: "cobalt", name: "tconstruct:cobalt_ore", block: "ad_astra:moon_cobblestone", bonus: 1 },
     ];
     // vanilla ores
-    const VANILLA_ORES = ["coal", "iron", "copper", "gold", "redstone", "emerald", "lapis", "diamond"];
+    const VANILLA_ORES = /** @type {const} */ ([
+      "coal",
+      "iron",
+      "copper",
+      "gold",
+      "redstone",
+      "emerald",
+      "lapis",
+      "diamond",
+    ]);
     VANILLA_ORES.forEach((vanillaOre) => {
       ores.push({ ore: vanillaOre, name: `minecraft:${vanillaOre}_ore`, block: "minecraft:cobblestone", bonus: 0 });
       ores.push({
@@ -503,7 +545,8 @@
       });
     });
     // ad astra deepslate (these aren't used I think?)
-    const AD_ASTRA_DEEPSLATE_ORES = ["desh", "ostrum", "calorite", "ice_shard"];
+    /** @satisfies {string[]} */
+    const AD_ASTRA_DEEPSLATE_ORES = /** @type {const} */ (["desh", "ostrum", "calorite", "ice_shard"]);
     AD_ASTRA_DEEPSLATE_ORES.forEach((adAstraDeepslateOre) => {
       ores.push({
         ore: adAstraDeepslateOre,
@@ -513,7 +556,8 @@
       });
     });
     /// Ad Astra Planet's normal ores
-    const AD_ASTRA_MOON_ORES = ["cheese", "desh", "iron", "ice_shard"];
+    /** @satisfies {string[]} */
+    const AD_ASTRA_MOON_ORES = /** @type {const} */ (["cheese", "desh", "iron", "ice_shard"]);
     AD_ASTRA_MOON_ORES.forEach((adAstraMoonOre) => {
       ores.push({
         ore: adAstraMoonOre,
@@ -522,7 +566,8 @@
         bonus: 1,
       });
     });
-    const AD_ASTRA_MARS_ORES = ["iron", "diamond", "ostrum", "ice_shard"];
+    /** @satisfies {string[]} */
+    const AD_ASTRA_MARS_ORES = /** @type {const} */ (["iron", "diamond", "ostrum", "ice_shard"]);
     AD_ASTRA_MARS_ORES.forEach((adAstraMarsOre) => {
       ores.push({
         ore: adAstraMarsOre,
@@ -531,7 +576,8 @@
         bonus: 1,
       });
     });
-    const AD_ASTRA_VENUS_ORES = ["coal", "gold", "diamond", "calorite"];
+    /** @satisfies {string[]} */
+    const AD_ASTRA_VENUS_ORES = /** @type {const} */ (["coal", "gold", "diamond", "calorite"]);
     AD_ASTRA_VENUS_ORES.forEach((adAstraVenusOre) => {
       ores.push({
         ore: adAstraVenusOre,
@@ -540,7 +586,8 @@
         bonus: 1,
       });
     });
-    const AD_ASTRA_GLACIO_ORES = ["ice_shard", "coal", "copper", "iron", "lapis"];
+    /** @satisfies {string[]} */
+    const AD_ASTRA_GLACIO_ORES = /** @type {const} */ (["ice_shard", "coal", "copper", "iron", "lapis"]);
     AD_ASTRA_GLACIO_ORES.forEach((adAstraGlacioOre) => {
       ores.push({
         ore: adAstraGlacioOre,
@@ -576,6 +623,13 @@
       "techreborn:deepslate_galena_ore"
     );
     // LakyCrushingRecipes from resourcegen.js
+    /**
+     * @typedef LakyCrushingRecipe
+     * @property {Internal.IngredientJS_} input
+     * @property {Internal.IngredientJS_[]} outputs
+     */
+
+    /** @type {LakyCrushingRecipe[]} */
     const lakyCrushingRecipes = [
       {
         input: "create:ochrum",

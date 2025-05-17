@@ -5,9 +5,9 @@
 
     /**
      * @typedef ShapedRecipe
-     * @param {Internal.ItemStackJS_} output
-     * @param {Helper.Pattern} pattern
-     * @param {{[key: string]: Internal.IngredientJS_}} key
+     * @property {Internal.ItemStackJS_} output
+     * @property {Helper.Pattern} pattern
+     * @property {{[key: string]: Internal.IngredientJS_}} key
      */
 
     /** @type {ShapedRecipe[]} */

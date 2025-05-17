@@ -1,10 +1,20 @@
 (function techRebornImplosionCompressorRecipes() {
   onEvent("recipes", (event) => {
     sheetImplosionCompressing(event);
+
+    /**
+     * @typedef ImplosionCompressorRecipe
+     * @property {{item: Special.Item, count?: number}[]} input
+     * @property {{item: Special.Item, count?: number}[]} output
+     * @property {number} time
+     * @property {number} power
+     */
+
+    /** @type {ImplosionCompressorRecipe[]} */
     const implosionCompressorRecipes = [
       {
         input: [
-          { count: 64, item: "techreborn:coal_dust" },
+          { item: "techreborn:coal_dust", count: 64 },
           { item: "minecraft:tnt", count: 4 },
         ],
         output: [
@@ -25,49 +35,24 @@
       });
     });
   });
+  /** @param {Internal.RecipeEventJS} event  */
   function sheetImplosionCompressing(event) {
     global.MATERIALS.forEach((material) => {
       event.custom({
         type: "techreborn:implosion_compressor",
         power: 30,
         time: 1200,
-        ingredients: [
-          {
-            item: material.block,
-          },
-          {
-            item: "minecraft:tnt",
-          },
-        ],
-        results: [
-          {
-            item: material.plate,
-            count: 9,
-          },
-        ],
+        ingredients: [{ item: material.block }, { item: "minecraft:tnt" }],
+        results: [{ item: material.plate, count: 9 }],
       });
       event.custom({
         type: "techreborn:implosion_compressor",
         power: 50,
         time: 300,
-        ingredients: [
-          {
-            item: material.block,
-            count: 4,
-          },
-          {
-            item: "minecraft:end_crystal",
-          },
-        ],
+        ingredients: [{ item: material.block, count: 4 }, { item: "minecraft:end_crystal" }],
         results: [
-          {
-            item: material.plate,
-            count: 36,
-          },
-          {
-            item: "techreborn:dark_ashes_dust",
-            count: 4,
-          },
+          { item: material.plate, count: 36 },
+          { item: "techreborn:dark_ashes_dust", count: 4 },
         ],
       });
     });

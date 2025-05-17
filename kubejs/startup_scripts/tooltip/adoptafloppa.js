@@ -1,5 +1,6 @@
 (function adoptAFloppaTooltips() {
   onEvent("item.tooltip", (event) => {
+    /** @type {Helper.Tooltip[]} */
     const adoptafloppaTooltips = [
       {
         item: "adoptafloppa:amazon_delivery",

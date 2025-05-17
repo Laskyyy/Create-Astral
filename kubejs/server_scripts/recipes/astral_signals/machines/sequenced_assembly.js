@@ -10,9 +10,9 @@
   onEvent("recipes", (event) => {
     /**
      * @typedef AssemblyRecipe
-     * @property {Internal.RecipeEventJS_} input
-     * @property {Internal.RecipeEventJS_[]} outputs
-     * @property {Internal.RecipeEventJS_} inter
+     * @property {Internal.IngredientJS_} input
+     * @property {Internal.IngredientJS_[]} outputs
+     * @property {Internal.IngredientJS_} inter
      */
 
     /** @satisfies {AssemblyRecipe[]} */

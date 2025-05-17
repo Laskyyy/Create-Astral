@@ -26,7 +26,14 @@
       event
         .create("astralsignals:inter_data_drive_dormant_t3", "create:sequenced_assembly")
         .displayName("Shimmered Dormant Microphysical Data Drive");
-    [
+    /**
+     * @typedef AnalogouslyDecryptedDataDrive
+     * @property {`${string}:${string}`} id
+     * @property {string} name
+     */
+
+    /** @type {AnalogouslyDecryptedDataDrive[]} */
+    const analogouslyDecryptedDataDrives = [
       {
         id: "astralsignals:data_drive_decrypted_13",
         name: "Analogously Decrypted Data Drive - 13",
@@ -79,10 +86,18 @@
         id: "astralsignals:data_drive_decrypted_otherside",
         name: "Analogously Decrypted Data Drive - otherside",
       },
-    ].forEach((item) => {
+    ];
+    analogouslyDecryptedDataDrives.forEach((item) => {
       event.create(item.id).displayName(item.name).glow(true);
     });
-    [
+    /**
+     * @typedef ParallelDecryptedDataDrive
+     * @property {`${string}:${string}`} id
+     * @property {string} name
+     */
+
+    /** @type {ParallelDecryptedDataDrive[]} */
+    const parallelDecryptedDataDrives = [
       {
         id: "astralsignals:data_drive_decrypted_purpleprison",
         name: "Parallel Decrypted Data Drive - Purple Prison",
@@ -99,10 +114,19 @@
         id: "astralsignals:data_drive_decrypted_memorandum",
         name: "Parallel Decrypted Data Drive - memorandum",
       },
-    ].forEach((item) => {
+    ];
+    parallelDecryptedDataDrives.forEach((item) => {
       event.create(item.id).displayName(item.name).rarity("uncommon").glow(true);
     });
-    [
+
+    /**
+     * @typedef MicrophysicallyDecryptedDataDrive
+     * @property {`${string}:${string}`} id
+     * @property {string} name
+     */
+
+    /** @type {MicrophysicallyDecryptedDataDrive[]} */
+    const microphysicallyDecryptedDataDrives = [
       {
         id: "astralsignals:data_drive_decrypted_wolfgif",
         name: "Microphysically Decrypted Data Drive - Astral Lakes WolfGif Remix",
@@ -119,7 +143,8 @@
         id: "astralsignals:data_drive_decrypted_torus",
         name: "Microphysically Decrypted Data Drive - torus",
       },
-    ].forEach((item) => {
+    ];
+    microphysicallyDecryptedDataDrives.forEach((item) => {
       event.create(item.id).displayName(item.name).rarity("rare").glow(true);
     });
   });

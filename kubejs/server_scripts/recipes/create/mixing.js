@@ -2780,6 +2780,14 @@
      * flowers.js
      * @author Max Norfolk
      */
+
+    /**
+     * @typedef DeadBushFlowerRevivingRecipe
+     * @property {Special.Item} flower
+     * @property {Special.Item} dye
+     */
+
+    /** @type {DeadBushFlowerRevivingRecipe[]} */
     const deadBushFlowerRevivingRecipes = [
       {
         flower: "minecraft:dandelion",
@@ -2840,7 +2848,15 @@
         ])
         .processingTime(50);
     });
-    /// Array format: [2 tall flower, 1 tall flower]
+    
+    /**
+     * @typedef SmallToTallFlowerMixingRecipe
+     * @property {Special.Item} tallFlower
+     * @property {Special.Item} flower
+     */
+
+    /** @type {SmallToTallFlowerMixingRecipe[]} */
+
     const smallToTallFlowerMixingRecipes = [
       {
         tallFlower: "minecraft:sunflower",

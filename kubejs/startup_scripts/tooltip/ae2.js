@@ -1,5 +1,6 @@
 (function ae2Tooltips() {
   onEvent("item.tooltip", (event) => {
+    /** @type {Helper.Tooltip[]} */
     const ae2Tooltips = [
       {
         item: "ae2:quartz_ore",

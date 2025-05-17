@@ -195,7 +195,15 @@
       .displayName("Miner Pale Ale");
     event.create("supercooled_water").thinTexture(0x4afff0).bucketColor(0x4afff0).displayName("Supercooled Water");
   });
+  /** @param {Registry.Fluid} event  */
   function liquidFoodGen(event) {
+    /**
+     * @typedef LiquidFood
+     * @property {string} name
+     * @property {string} displayName
+     * @property {number} color
+     */
+    /** @type {LiquidFood[]} */
     const liquidFoods = [
       {
         name: "dumplings_fluid",

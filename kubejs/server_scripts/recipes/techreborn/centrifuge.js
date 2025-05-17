@@ -1,7 +1,30 @@
-
-
 (function techRebornCentrifugeRecipes() {
   onEvent("recipes", (event) => {
+    /**
+     * @typedef CentrifugeRecipe
+     * @property {ItemOrCell[]} input
+     * @property {ItemOrCell[]} output
+     * @property {number} power
+     * @property {number} time
+     */
+
+    /** @typedef {Cell | Item} ItemOrCell */
+
+    /**
+     * @typedef Item
+     * @property {Exclude<Special.Item, "techreborn:cell">} item
+     * @property {object} [nbt]
+     * @property {number} [count]
+     */
+
+    /**
+     * @typedef Cell
+     * @property {"techreborn:cell"} item
+     * @property {{fluid: Special.Fluid}} [nbt]
+     * @property {number} [count]
+     */
+
+    /** @type {CentrifugeRecipe[]} */
     const centrifugeRecipes = [
       {
         input: [{ item: "farmersdelight:rich_soil", count: 2 }],
@@ -36,7 +59,7 @@
       {
         input: [
           { item: "minecraft:soul_sand", count: 16 },
-          { item: "techreborn:cell", nbt: "null" },
+          { item: "techreborn:cell" },
         ],
         output: [
           { item: "minecraft:sand", count: 10 },
@@ -50,7 +73,7 @@
       {
         input: [
           { item: "minecraft:soul_soil", count: 16 },
-          { item: "techreborn:cell", nbt: "null" },
+          { item: "techreborn:cell" },
         ],
         output: [
           { item: "minecraft:dirt", count: 8 },
