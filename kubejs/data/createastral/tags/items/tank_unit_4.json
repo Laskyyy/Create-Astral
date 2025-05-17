@@ -1,0 +1,9 @@
+{
+    "values": [
+        "create:fluid_tank",
+        "techreborn:basic_tank_unit",
+        "techreborn:advanced_tank_unit",
+        "techreborn:industrial_tank_unit",
+        "techreborn:quantum_tank_unit"
+    ]
+}

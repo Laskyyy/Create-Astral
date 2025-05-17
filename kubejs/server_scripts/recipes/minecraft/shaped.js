@@ -909,7 +909,7 @@
         pattern: ["CCC", "DED", "CCC"],
         key: {
           D: "create:copper_sheet",
-          E: "minecraft:water_bucket",
+          E: "minecraft:lava_bucket",
           C: "create:copper_casing",
         },
       },
