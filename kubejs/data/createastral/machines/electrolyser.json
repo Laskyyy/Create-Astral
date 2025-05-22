@@ -41,13 +41,13 @@
     },
     {
       "x": 236,
-      "y": 5,
+      "y": 3,
       "type": "custommachinery:status"
     },
     {
       "text": "custommachinery.createastral.electrolyser.text",
-      "x": 7,
-      "y": 5,
+      "x": 8,
+      "y": 6,
       "type": "custommachinery:text"
     }
   ],
@@ -58,7 +58,7 @@
       "id": "oxygentank",
       "maxInput": 0,
       "maxOutput": 1000,
-      "filter": ["ad_astra:oxygen", "kubejs:smite"],
+      "filter": ["ad_astra:oxygen", "kubejs:smite", "techreborn:electrolyzed_water"],
       "whitelist": true
     },
     {
@@ -67,7 +67,7 @@
       "id": "watertank",
       "maxInput": 666,
       "maxOutput": 0,
-      "filter": ["minecraft:water", "kubejs:hellfire"],
+      "filter": ["minecraft:water", "kubejs:hellfire", "kubejs:released_water_coolant"],
       "whitelist": true
     }
   ]
