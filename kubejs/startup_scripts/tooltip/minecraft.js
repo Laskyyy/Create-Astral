@@ -1,5 +1,6 @@
 (function minecraftTooltips() {
   onEvent("item.tooltip", (event) => {
+    /** @type {Helper.Tooltip[]} */
     const minecraftTooltips = [
       {
         item: "minecraft:ancient_debris",

@@ -3,8 +3,11 @@
     event
       .create("createastral:electrolyser_dummy")
       .scene("electrolyzer", "The Electrolyzer multiblock", "kubejs:electrolyser", (scene, util) => {
+        /** @type {[x: number, y: number, z: number]} */
         const electrolyzerPos = [2, 2, 1];
+        /** @type {[x: number, y: number, z: number]} */
         const electrolyzerPos2 = [2, 3, 1];
+        /** @type {[[x: number, y: number, z: number], [x: number, y: number, z: number]]} */
         const multiblockRange = [
           [1, 2, 1],
           [3, 4, 3],
@@ -19,7 +22,7 @@
               .with("west", "false")
               .with("up", "false")
               .with("down", "false"),
-          false,
+          false
         );
         scene.world.modifyBlock(
           [2, 1, 1],
@@ -31,7 +34,7 @@
               .with("west", "true")
               .with("up", "true")
               .with("down", "false"),
-          false,
+          false
         );
         scene.showBasePlate();
         for (let y = multiblockRange[0][1]; y <= multiblockRange[1][1]; y++) {
@@ -76,10 +79,9 @@
           .text(
             100,
             "Oxygen pumped into the Oxygen Loader can be used to fill up your spacesuits and tanks",
-            [3, 4.5, 0],
+            [3, 4.5, 0]
           )
           .placeNearTarget();
       });
   });
 })();
-/** @typedef {[number, number, number]} Vec3 */

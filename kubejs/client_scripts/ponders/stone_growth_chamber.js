@@ -74,7 +74,7 @@
           .text(
             80,
             "When built using different Stones, the Stone Growth Chamber will generate different types of cobblestone",
-            [3, 2.5, 3],
+            [3, 2.5, 3]
           )
           .attachKeyFrame();
         scene.idle(10);
@@ -109,7 +109,7 @@
         scene.text(
           90,
           "This currently works with Stone, Andesite and any default stone from each planet, like Moon Stone and Mars Stone",
-          [3, 2.5, 3],
+          [3, 2.5, 3]
         );
         scene.idle(100);
         scene.world.setBlocks([1, 1, 3], "chipped:mossy_stone_bricks_1", true);
@@ -179,7 +179,7 @@
           .text(
             150,
             "A list of valid stone blocks can be found by searching '$createastral:stone_growth_chamber/building_blocks' in REI",
-            [3, 2.5, 3],
+            [3, 2.5, 3]
           )
           .attachKeyFrame();
         scene.idle(20);
@@ -212,7 +212,7 @@
           .text(
             120,
             "Similarly, valid glass blocks can be found by searching '$createastral:stone_growth_chamber/glass_blocks'",
-            [1.5, 3, 2.5],
+            [1.5, 3, 2.5]
           )
           .attachKeyFrame();
         scene.world.setBlocks([1, 3, 1, 3, 3, 3], "minecraft:air", false);

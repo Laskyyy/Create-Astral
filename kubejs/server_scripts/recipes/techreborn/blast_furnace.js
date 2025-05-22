@@ -1,5 +1,22 @@
 (function techRebornBlastFurnaceRecipes() {
   onEvent("recipes", (event) => {
+    /**
+     * @typedef BlastFurnaceRecipe
+     * @property {(FluidCell | {item: Special.Item, count?: number})[]} input
+     * @property {{item: Special.Item, count?: number}} output
+     * @property {number} power
+     * @property {number} time
+     * @property {number} heat
+     */
+
+    /**
+     * @typedef FluidCell
+     * @property {Special.Fluid} fluid
+     * @property {Special.Item} holder
+     * @property {number} count
+     */
+
+    /** @type {BlastFurnaceRecipe[]} */
     const blastFurnaceRecipes = [
       {
         input: [

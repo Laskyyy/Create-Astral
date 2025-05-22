@@ -1,5 +1,13 @@
 (function recipeReplacements() {
   onEvent("recipes", (event) => {
+    /**
+     * @typedef Replacement
+     * @property {Internal.IngredientJS_} original The original item or tag in the recipe.
+     * @property {Internal.IngredientJS_} replaceWith The item or tag to replace the original with.
+     * @property {Internal.RecipeFilter_} [predicate] Specifies, which recipes are affected by the replacement.
+     */
+
+    /** @type {Replacement[]} */
     const replacements = [
       { original: "create:powdered_obsidian", replaceWith: "#c:dusts/obsidian" },
       { original: "techreborn:obsidian_dust", replaceWith: "#c:dusts/obsidian" },
@@ -495,7 +503,7 @@
       {
         predicate: { mod: "techreborn" },
         original: "techreborn:nichrome_heating_coil",
-
+        // @ts-expect-error Missing item?
         replaceWith: "createastral:ender_heating_coil",
       },
       {
@@ -688,7 +696,7 @@
     });
     // Replace all cells crafting recipes to use tin sheets instead of
     // tin ingots
-    const cells = [
+    const cells = /** @type {const} */ ([
       "water_coolant_cell_60k", // may want to remove this from modpack -- no uses
       "water_coolant_cell_30k", // and this
       "water_coolant_cell_10k",
@@ -699,7 +707,7 @@
       "helium_coolant_cell_360k", // and this
       "helium_coolant_cell_180k",
       "cell",
-    ];
+    ]);
     cells.forEach((cell) => {
       event.replaceInput(
         { type: "minecraft:crafting_shaped", output: `techreborn:${cell}` },

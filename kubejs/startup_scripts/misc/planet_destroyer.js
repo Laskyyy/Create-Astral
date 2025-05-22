@@ -1,11 +1,16 @@
 (function planetDestroyer() {
   const $AdAstra = java("com.github.alexnijjar.ad_astra.AdAstra");
-  const $ServerLifecycleEvents = java("net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents");
+  const $ServerLifecycleEvents = /** @type {any} */ (
+    java("net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents")
+  );
   onEvent("fabric.event.register", (event) => {
     event.register("ServerLifecycleEvents.EndDataPackReload", $ServerLifecycleEvents, "END_DATA_PACK_RELOAD");
     event.register("ServerLifecycleEvents.ServerStarted", $ServerLifecycleEvents, "SERVER_STARTED");
   });
-  //kill off the ad astra planets that refuse to die
+  /**
+   * Kills of the Ad Astra planets that refuse to die.
+   * @param {Internal.ProxyEventJS} event
+   */
   function planetDestroyer(event) {
     const planets = $AdAstra.planets;
     //DESTROY VENUS

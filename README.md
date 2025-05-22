@@ -16,6 +16,7 @@ Does not include mods, or most configs, only pack specific files which are used 
 
 -   [Contributing guidelines](CONTRIBUTING.md)
 -   [License](LICENSE.md)
+-   [Code Style](CODE_STYLE.md)
 
 ## Automatic Builds
 

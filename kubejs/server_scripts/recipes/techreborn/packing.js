@@ -2,23 +2,17 @@
   // Repurposes the TR (t)Rolling Machine as a Packer, and TR Assembling Machine as an Unpacker.
   /**
    * Creates a 3x3 packing recipe.
-   * @param event - The recipe event. Make sure that the function is called from within the event!
-   * @param input - Input item (ex. "minecraft:iron_ingot").
-   * @param output - Output item (ex. "minecraft:iron_block").
+   * @param {Internal.RecipeEventJS} event - The recipe event. Make sure that the function is called from within the event!
+   * @param {Special.Item} input - Input item (ex. "minecraft:iron_ingot").
+   * @param {Special.Item} output - Output item (ex. "minecraft:iron_block").
    */
   function pack9(event, input, output) {
     event.custom({
       type: "techreborn:rolling_machine",
       shaped: {
         pattern: ["III", "III", "III"],
-        key: {
-          I: {
-            item: input,
-          },
-        },
-        result: {
-          item: output,
-        },
+        key: { I: { item: input } },
+        result: { item: output },
       },
       power: 5,
       time: 250,
@@ -26,23 +20,17 @@
   }
   /**
    * Creates a 2x2 packing recipe.
-   * @param event - The recipe event. Make sure that the function is called from within the event!
-   * @param input - Input item (ex. "minecraft:quartz").
-   * @param output - Output item (ex. "minecraft:quartz_block").
+   * @param {Internal.RecipeEventJS} event - The recipe event. Make sure that the function is called from within the event!
+   * @param {Special.Item} input - Input item (ex. "minecraft:quartz").
+   * @param {Special.Item} output - Output item (ex. "minecraft:quartz_block").
    */
   function pack4(event, input, output) {
     event.custom({
       type: "techreborn:rolling_machine",
       shaped: {
         pattern: ["II ", "II ", "   "],
-        key: {
-          I: {
-            item: input,
-          },
-        },
-        result: {
-          item: output,
-        },
+        key: { I: { item: input } },
+        result: { item: output },
       },
       power: 5,
       time: 250,
@@ -50,10 +38,10 @@
   }
   /**
    * Creates an unpacking recipe.
-   * @param event - The recipe event. Make sure that the function is called from within the event!
-   * @param input - Input item (ex. "minecraft:iron_block").
-   * @param output - Output item (ex. "minecraft:iron_ingot").
-   * @param amount - The amount of item returned.
+   * @param {Internal.RecipeEventJS} event - The recipe event. Make sure that the function is called from within the event!
+   * @param {Special.Item} input - Input item (ex. "minecraft:iron_block").
+   * @param {Special.Item} output - Output item (ex. "minecraft:iron_ingot").
+   * @param {number} amount - The amount of item returned.
    */
   function unpack(event, input, output, amount) {
     event.custom({
@@ -73,6 +61,30 @@
       ],
     });
   }
+
+  /**
+   * @typedef PackMaterialWithoutNugger
+   * @property {Special.Mod} mod
+   * @property {string} type
+   * @property {string} [append]
+   * @property {boolean} [smallRecipe]
+   * @property {boolean} [notUnpackable]
+   * @property {false} [hasNugget]
+   */
+
+  /**
+   * @typedef PackMaterialWithNugget
+   * @property {Special.Mod} mod
+   * @property {string} type
+   * @property {string} [append]
+   * @property {boolean} [smallRecipe]
+   * @property {boolean} [notUnpackable]
+   * @property {true} [hasNugget]
+   * @property {Special.Mod} [nuggetMod]
+   */
+  /** @typedef {PackMaterialWithNugget | PackMaterialWithNugget} PackMaterial */
+
+  /** @type {PackMaterial[]} */
   const PACK_MATERIALS = [
     {
       mod: "minecraft",
@@ -359,7 +371,8 @@
       append: "_ingot",
     },
   ];
-  const SMALL_PILES = [
+  /** @satisfies {{type: string, dust?: Special.Item}[]} */
+  const SMALL_PILES = /** @type {const} */ ([
     // All from Tech Reborn
     { type: "almandine" },
     { type: "andesite" },
@@ -408,8 +421,9 @@
     { type: "steel" },
     { type: "uvarovite" },
     { type: "yellow_garnet" },
-  ];
-  const COMPRESSION_DEGREES = [
+  ]);
+  /** @satisfies {string[]} */
+  const COMPRESSION_DEGREES = /** @type {const} */ ([
     "",
     "double_",
     "triple_",
@@ -418,8 +432,9 @@
     "sextuple_",
     "septuple_",
     "octuple_",
-  ];
-  const COMPRESSABLE_MATERIALS = [
+  ]);
+  /** @satisfies {string[]} */
+  const COMPRESSABLE_MATERIALS = /** @type {const} */ ([
     "stone",
     "granite",
     "diorite",
@@ -434,16 +449,22 @@
     "cobbled_deepslate",
     "blackstone",
     "end_stone",
-  ];
+  ]);
   onEvent("recipes", (event) => {
     event.remove({ type: "techreborn:assembling_machine" });
     event.remove({ type: "techreborn:rolling_machine" });
     // Resources, resource blocks and resource nuggets
     PACK_MATERIALS.forEach((material) => {
       // Can't be made type-safe, since TS cross-multiplies variants, despite the loop being one-dimensional.
-      let ingotID = `${material.mod}:${material.type}${"append" in material ? material.append : ""}`;
-      let blockID = `${material.mod}:${material.type}${material.mod == "techreborn" ? "_storage" : ""}_block`; // Tech Reborn moment
-      let nuggetID = `${"nuggetMod" in material ? material.nuggetMod : material.mod}:${material.type}_nugget`;
+      let ingotID = /** @type {Special.Item} */ (
+        `${material.mod}:${material.type}${"append" in material ? material.append : ""}`
+      );
+      let blockID = /** @type {Special.Item} */ (
+        `${material.mod}:${material.type}${material.mod == "techreborn" ? "_storage" : ""}_block`
+      ); // Tech Reborn moment
+      let nuggetID = /** @type {Special.Item} */ (
+        `${"nuggetMod" in material ? material.nuggetMod : material.mod}:${material.type}_nugget`
+      );
       // Type-safe again starting from here on
       if ("smallRecipe" in material) {
         pack4(event, ingotID, blockID);
@@ -467,7 +488,9 @@
     pack4(event, "minecraft:glowstone_dust", "minecraft:glowstone");
     // Small Dusts -> Dusts and vice versa
     SMALL_PILES.forEach((dust) => {
+      /** @type {Special.Item} */
       let smallDustID = `techreborn:${dust.type}_small_dust`;
+      /** @type {Special.Item} */
       let largeDustID = "dust" in dust ? dust.dust : `techreborn:${dust.type}_dust`;
       pack4(event, smallDustID, largeDustID);
       unpack(event, largeDustID, smallDustID, 4);
@@ -475,8 +498,10 @@
     //Compressed mass-produced blocks
     COMPRESSABLE_MATERIALS.forEach((material) => {
       for (let i = 0; i < 8; i++) {
+        /** @type {Special.Item} */
         let compressDown =
           i == 0 ? `minecraft:${material}` : `compressor:${COMPRESSION_DEGREES[i - 1]}compressed_${material}`;
+        /** @type {Special.Item} */
         let compressUp = `compressor:${COMPRESSION_DEGREES[i]}compressed_${material}`;
         pack9(event, compressDown, compressUp);
         unpack(event, compressUp, compressDown, 9);

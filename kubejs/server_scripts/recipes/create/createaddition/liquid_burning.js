@@ -8,6 +8,20 @@
   const mB = global.mB;
 
   onEvent("recipes", (event) => {
+    /**
+     * @typedef FluidWithAmount
+     * @property {Special.Fluid} fluid
+     * @property {number} amount
+     */
+
+    /**
+     * @typedef LiquidBurningRecipe
+     * @property {FluidWithAmount} input
+     * @property {number} burnTime
+     * @property {boolean} superheated
+     */
+
+    /** @type {LiquidBurningRecipe[]} */
     const liquidBurningRecipes = [
       {
         input: { fluid: "createaddition:bioethanol", amount: BUCKET },

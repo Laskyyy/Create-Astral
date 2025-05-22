@@ -1,10 +1,11 @@
 (function yttrLamps() {
   //Lamp Recipe Fixes
   onEvent("recipes", (event) => {
-    const lampTypes = ["lamp", "fixture", "cage_lamp", "panel"];
-    const lampColors = [
+    const lampTypes = /** @type {const} */ (["lamp", "fixture", "cage_lamp", "panel"]);
+    /** @satisfies {{color: string, material: Special.Item}[]} */
+    const lampColors = /** @type {const} */ ([
       //don't include colorless
-      { color: "white", material: "$minecraft:white_dye" },
+      { color: "white", material: "minecraft:white_dye" },
       { color: "orange", material: "minecraft:orange_dye" },
       { color: "magenta", material: "minecraft:white_dye" },
       { color: "light_blue", material: "minecraft:light_blue_dye" },
@@ -21,7 +22,7 @@
       { color: "red", material: "minecraft:red_dye" },
       { color: "black", material: "minecraft:black_dye" },
       { color: "teal", material: "yttr:yttrium_dust" },
-    ];
+    ]);
     //Lamp recipe fixes
     lampTypes.forEach((lamp) => {
       //this recipe is shaped for some reason
@@ -30,16 +31,22 @@
       event.remove({ id: `yttr:crafting/lamp/${lamp}_dye` });
       //recreate lamp inversion recipe as a shapeless one. Also make it not consume the redstone torch
       event
-        .shapeless(Item.of(`yttr:${lamp}`).withNBT('{Inverted:true, LampColor:"colorless"}'), [
+        .shapeless(Item.of(`yttr:${lamp}`).withNBT({ Inverted: true, LampColor: "colorless" }), [
           `yttr:${lamp}`,
           "minecraft:redstone_torch",
         ])
         .modifyResult((grid, result) => {
           let item = grid.find(Item.of(`yttr:${lamp}`).ignoreNBT());
           let inputNbt = item.nbt || {};
+          /**
+           * @typedef OutputNBT
+           * @property {boolean} Inverted
+           * @property {string} LampColor
+           */
+          /** @type {OutputNBT} */
           let outputNbt = {};
           if ("Inverted" in inputNbt) outputNbt.Inverted = !inputNbt.Inverted;
-          if ("LampColor" in inputNbt) outputNbt.LampColor = inputNbt.LampColor || "colorless";
+          if ("LampColor" in inputNbt) outputNbt.LampColor = /** @type {string} */ (inputNbt.LampColor) || "colorless";
           else {
             outputNbt.LampColor = "colorless";
           }
@@ -57,6 +64,12 @@
           let item = grid.find(Item.of(`yttr:${lamp}`).ignoreNBT());
           let dye = grid.find(`#yttr:lamp_dyes`);
           let inputNbt = item.nbt || {};
+          /**
+           * @typedef OutputNBT
+           * @property {boolean} Inverted
+           * @property {string} LampColor
+           */
+          /** @type {OutputNBT} */
           let outputNbt = {};
           if ("Inverted" in inputNbt) outputNbt.Inverted = !!inputNbt.Inverted;
           for (let i = 0; i < lampColors.length; ++i) {

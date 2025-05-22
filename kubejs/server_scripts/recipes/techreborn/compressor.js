@@ -25,6 +25,7 @@
       });
     });
   });
+  /** @param {Internal.RecipeEventJS} event */
   function sheetCompressing(event) {
     global.MATERIALS.forEach((material) => {
       event.custom({

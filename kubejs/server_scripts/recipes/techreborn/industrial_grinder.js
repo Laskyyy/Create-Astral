@@ -2,19 +2,17 @@
   // Balances the Industrial Grinder and adds new recipes to it.
   /**
    * Creates an Industrial Grinder recipe with a tag input.
-   * @param event - The recipe event. Make sure that the function is called from within the event!
-   * @param energy - Base Energy per tick used for the recipe.
-   * @param time - Base time in ticks to process the recipe.
-   * @param inputTag - Input tag (ex. `"c:copper_ores"`).
-   * @param outputs - Output items in the array of objects containing "item" and optionally "count" fields.
+   * @param {Internal.RecipeEventJS} event - The recipe event. Make sure that the function is called from within the event!
+   * @param {string} inputTag - Input tag (ex. `"c:copper_ores"`).
+   * @param {{ item: Special.Item; count?: number }[]} outputs - Output items in the array of objects containing "item" and optionally "count" fields.
    * For example:
    * ```
    * [{item: "minecraft:raw_copper", count: 2}, {item: "minecraft:gold_nugget", count: 3}]
    * ```
-   * @param fluidName - The fluid necessary to process the recipe.
-   * @param fluidAmount - The amount of fluid (in **mB**, not droplets!)
-   * @param energy - Base Energy per tick used for the recipe. 16 E/t if not provided.
-   * @param time - Base time in ticks to process the recipe. 100 ticks if not provided.
+   * @param {Special.Fluid} fluidName - The fluid necessary to process the recipe.
+   * @param {number} fluidAmount - The amount of fluid (in **mB**, not droplets!)
+   * @param {number} [energy] - Base Energy per tick used for the recipe. 16 E/t if not provided.
+   * @param {number} [time] - Base time in ticks to process the recipe. 100 ticks if not provided.
    */
   function industrialGrinderTag(event, inputTag, outputs, fluidName, fluidAmount, energy, time) {
     event.custom({
@@ -25,28 +23,24 @@
         fluid: fluidName,
         amount: fluidAmount,
       },
-      ingredients: [
-        {
-          tag: inputTag,
-        },
-      ],
+      ingredients: [{ tag: inputTag }],
       results: outputs,
     });
   }
   /**
    * Creates an Industrial Grinder recipe with an item input.
-   * @param event - The recipe event. Make sure that the function is called from within the event!
-   * @param input - Input item (ex. `"minecraft:cobblestone"`).
-   * @param outputs - Output items in the array of objects containing "item" and optionally "count" fields.
+   * @param {Internal.RecipeEventJS} event - The recipe event. Make sure that the function is called from within the event!
+   * @param {Special.Item} input - Input item (ex. `"minecraft:cobblestone"`).
+   * @param {{ item: Special.Item; count?: number }[]} outputs - Output items in the array of objects containing "item" and optionally "count" fields.
    * For example:
    * ```
    * [{item: "minecraft:raw_copper", count: 2}, {item: "minecraft:gold_nugget", count: 3}]
    * ```
-   * @param fluidName - The fluid necessary to process the recipe.
-   * @param fluidAmount - The amount of fluid (in **mB**, not droplets!)
-   * @param inputCount - The amount of input item. 1 if not provided.
-   * @param energy - Base Energy per tick used for the recipe. 16 E/t if not provided.
-   * @param time - Base time in ticks to process the recipe. 100 ticks if not provided.
+   * @param {Special.Fluid} fluidName - The fluid necessary to process the recipe.
+   * @param {number} fluidAmount - The amount of fluid (in **mB**, not droplets!)
+   * @param {number} inputCount - The amount of input item. 1 if not provided.
+   * @param {number} [energy] - Base Energy per tick used for the recipe. 16 E/t if not provided.
+   * @param {number} [time] - Base time in ticks to process the recipe. 100 ticks if not provided.
    */
   function industrialGrinder(event, input, outputs, fluidName, fluidAmount, inputCount, energy, time) {
     event.custom({
@@ -71,8 +65,8 @@
    * ```
    * {item: item, count: count}
    * ```
-   * @param itemName - The item ID.
-   * @param count - The item amount. 1 if not provided.
+   * @param {Special.Item} itemName - The item ID.
+   * @param {number} [count] - The item amount. 1 if not provided.
    * @returns
    */
   function itemCount(itemName, count) {
@@ -86,6 +80,26 @@
   const oreBlockMercuryRate = 44;
   const rawOreWaterRate = 17; // Little less than crushing wheels + foundry combined
   const rawOreMercuryRate = 24; // 2.5 ingots per raw ore, wowie!
+  /**
+   * @typedef OreItem
+   * @property {Special.Item} item
+   * @property {number} [count]
+   * @property {{item: Special.Item, count: number}[]} [waterOutput]
+   * @property {{item: Special.Item, count: number}[]} [mercuryOutput]
+   * @property {number} [energy]
+   * @property {number} [time]
+   */
+  /**
+   * @typedef OreTag
+   * @property {Special.ItemTag} tag
+   * @property {{item: Special.Item, count: number}[]} [waterOutput]
+   * @property {{item: Special.Item, count: number}[]} [mercuryOutput]
+   * @property {number} [energy]
+   * @property {number} [time]
+   */
+  /** @typedef {OreItem | OreTag} Ore */
+
+  /** @type {Ore[]} */
   const ORES = [
     // Ore blocks
     {
@@ -326,6 +340,17 @@
       mercuryOutput: [itemCount("yttr:yttrium_nugget", rawOreMercuryRate)],
     },
   ];
+  /**
+   * @typedef CobbleProcessingRecipe
+   * @property {Special.Item} item
+   * @property {number} [count]
+   * @property {{ item: Special.Item; count: number }[]} output
+   * @property {number} time
+   * @property {number} [energy]
+   * @property {number} waterAmount
+   */
+
+  /** @type {CobbleProcessingRecipe[]} */
   const COBBLE_PROCESSING = [
     {
       item: "minecraft:cobblestone",
@@ -371,7 +396,7 @@
             100,
             ore.count,
             ore.energy,
-            ore.time,
+            ore.time
           );
         }
       }
@@ -385,7 +410,7 @@
         item.waterAmount,
         item.count,
         item.energy,
-        item.time,
+        item.time
       );
     });
   });

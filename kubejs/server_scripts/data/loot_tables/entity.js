@@ -3,6 +3,7 @@
     vinery(event);
   });
   // Taken from the old vinery.js file
+  /** @param {Internal.EntityLootEventJS} event */
   function vinery(event) {
     event.addEntity("vinery:wandering_winemaker", (table) => {
       table.addPool((pool) => {

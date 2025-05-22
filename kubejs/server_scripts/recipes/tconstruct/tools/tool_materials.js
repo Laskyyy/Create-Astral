@@ -11,7 +11,16 @@
     customMeltingAndCasting(event);
     partMaterialRegistry(event);
   });
+  /** @param {Internal.RecipeEventJS} event */
   function customMeltingAndCasting(event) {
+    /**
+     * @typedef MaterialRecipe
+     * @property {Special.Fluid} fluid
+     * @property {number} temp
+     * @property {string} toolMaterial
+     */
+
+    /** @type {MaterialRecipe[]} */
     const materialRecipes = [
       {
         fluid: "kubejs:molten_calorite",
@@ -60,10 +69,18 @@
       });
     });
   }
+  /** @param {Internal.RecipeEventJS} event */
   function partMaterialRegistry(event) {
-    //? ["material name", "actual resource namespace id", material value, needed material]
     /// i have no idea what "needed material" means but its an integer soooo i'd just put 1 if i were you
     /// im so good at 10:30 pm code documentationm X3 - _Shortman
+    /** 
+     * @typedef MaterialRegistry
+     * @property {string} material
+     * @property {Special.Item} ingredient
+     * @property {number} value
+     * @property {number} needed
+     */
+    /** @type {MaterialRegistry[]} */
     const materialRegistries = [
       { material: "radiant", ingredient: "create:refined_radiance", value: 1, needed: 1 },
       { material: "shadow", ingredient: "create:shadow_steel", value: 1, needed: 1 },

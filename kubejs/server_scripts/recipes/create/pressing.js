@@ -1,5 +1,12 @@
 (function createPressingRecipes() {
   onEvent("recipes", (event) => {
+    /**
+     * @typedef PressingRecipe
+     * @property {Internal.IngredientJS_} input
+     * @property {Internal.IngredientJS_} output
+     */
+
+    /** @type {PressingRecipe[]} */
     const pressingRecipes = [
       {
         input: "createastral:shimmer_marimo",

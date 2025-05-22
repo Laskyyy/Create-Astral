@@ -2,9 +2,13 @@
   onEvent("item.registry", (event) => {
     wineTransitionals(event);
   });
+  /** @param {Registry.Item} event  */
   function wineTransitionals(event) {
-    // Transitional wines
-    const wines = [
+    /**
+     * Transitional wines.
+     * @satisfies {string[]}
+     */
+    const wines = /** @type {const} */ ([
       "noir",
       "chenet",
       "king_danis",
@@ -16,7 +20,7 @@
       "solaris",
       "aegis",
       "apple",
-    ];
+    ]);
     for (const wine of wines) {
       event.create(`kubejs:incomplete_${wine}_wine`, "create:sequenced_assembly").texture(`kubejs:item/${wine}_wine`);
     }

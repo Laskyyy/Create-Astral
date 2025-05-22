@@ -7,6 +7,15 @@
   const NUGGET = global.NUGGET;
   const mB = global.mB;
   onEvent("recipes", (event) => {
+    /**
+     * @typedef CastingTableRecipe
+     * @property {{fluid: Special.Fluid; amount: number;}} fluidInput
+     * @property {Special.Item} result
+     * @property {number} coolingTime
+     * @property {{ item: Special.Item; consumed?: boolean } | { tag: Special.ItemTag; consumed?: boolean }} [cast]
+     */
+
+    /** @type {CastingTableRecipe[]} */
     const castingTableRecipes = [
       {
         fluidInput: { fluid: "kubejs:red_paste", amount: 100 * mB },
@@ -313,6 +322,7 @@
       },
     ];
     castingTableRecipes.forEach((recipe) => {
+      /** @type {{ type: Special.RecipeType_; [key: string]: unknown }} */
       let tableRecipe = {
         type: "tconstruct:casting_table",
         fluid: {

@@ -2,6 +2,14 @@
   onEvent("recipes", (event) => {
     autoChipped(event);
     farmersCompatCutting(event);
+
+    /**
+     * @typedef CuttingRecipe
+     * @property {Internal.IngredientJS_} input
+     * @property {Internal.IngredientJS_} output
+     */
+
+    /** @type {CuttingRecipe[]} */
     const cuttingRecipes = [
       {
         input: "createastral:marimo",
@@ -151,19 +159,22 @@
   /**
    * Automated Chipped tables via Mechanical Saw.
    * @author KonSola5
+   * @param {Internal.RecipeEventJS} event
    */
   function autoChipped(event) {
-    const CHIPPED_TABLES = [
+    /** @satisfies {Special.RecipeSerializer[]} */
+    const CHIPPED_TABLES = /** @type {const} */ ([
       "chipped:alchemy_bench",
       "chipped:botanist_workbench",
       "chipped:carpenters_table",
       "chipped:glassblower",
       "chipped:loom_table",
       "chipped:mason_table",
-      "chipped:tinkering_table",
-    ];
+      /** @type {Special.RecipeSerializer}*/ ("chipped:tinkering_table"),
+    ]);
     CHIPPED_TABLES.forEach((table) => {
       event.forEachRecipe({ type: table }, (recipe) => {
+        /** @type {Special.ItemTag[]} */
         const tags = JSON.parse(recipe.json.toString()).tags;
         tags.forEach((itemTag) => {
           Ingredient.of(`#${itemTag}`)
@@ -171,23 +182,18 @@
             .forEach((item) => {
               event.custom({
                 type: "create:cutting",
-                ingredients: [
-                  {
-                    tag: itemTag,
-                  },
-                ],
-                results: [
-                  {
-                    item: item.id,
-                  },
-                ],
+                ingredients: [{ tag: itemTag }],
+                results: [{ item: item.id }],
               });
             });
         });
       });
     });
   }
-  /** @author RandomUser240306 */
+  /**
+   * @author RandomUser240306
+   * @param {Internal.RecipeEventJS} event
+   */
   function farmersCompatCutting(event) {
     event.forEachRecipe({ type: "farmersdelight:cutting" }, (recipe) => {
       let newList = Utils.newList();

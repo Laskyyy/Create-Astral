@@ -8,13 +8,15 @@
   const mB = global.mB;
 
   onEvent("recipes", (event) => {
-    const emptyingRecipes = [
-      {
-        input: "techreborn:water_coolant_cell_60k",
-        outputItem: Item.of("techreborn:cell", 6),
-        outputFluid: { fluid: "kubejs:released_water_coolant", amount: BUCKET },
-      },
-    ];
+    /**
+     * @typedef EmptyingRecipe
+     * @property {Internal.IngredientJS_} input
+     * @property {Internal.IngredientJS_} outputItem
+     * @property {{fluid: Special.Fluid, amount: number}} outputFluid
+     */
+
+    /** @type {EmptyingRecipe[]} */
+    const emptyingRecipes = [];
     emptyingRecipes.forEach((recipe) => {
       event.recipes.createEmptying([recipe.outputItem, recipe.outputFluid], recipe.input);
     });

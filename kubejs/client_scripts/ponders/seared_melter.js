@@ -14,7 +14,7 @@
           .text(
             80,
             "Then, a Melter is placed on top, and when the Heater below is fueled, it can melt ores into liquid",
-            [2, 2, 2],
+            [2, 2, 2]
           )
           .attachKeyFrame();
         scene.idle(85);
@@ -25,7 +25,7 @@
           .text(
             80,
             "Finally, Faucets are placed on the sides, which can be used to pour the liquid into a Casting Basin or Casting Table",
-            [1.5, 2.5, 2],
+            [1.5, 2.5, 2]
           )
           .attachKeyFrame();
         scene.idle(85);
@@ -40,7 +40,7 @@
               .with("west", "false")
               .with("up", "true")
               .with("down", "true"),
-          false,
+          false
         );
         scene
           .text(60, "Create Fluid Pipes can be used to transfer the liquid to something like a Spout", [2, 3.5, 2])

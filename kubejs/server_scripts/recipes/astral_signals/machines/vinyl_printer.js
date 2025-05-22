@@ -1,8 +1,20 @@
 (function astralSignalsVinylPrinterRecipes() {
   onEvent("recipes", (event) => {
-    // Can be up to 2 inputs and only 1 output
-    // Can have a second input (typically respectively tiered polyvinyl sheet)
-    // All recipes take 200 ticks (10 seconds)
+    /**
+     * @typedef PrinterRecipe
+     * @property {Special.Item} drive
+     * @property {Special.Item} disc
+     * @property {Special.Item} output
+     */
+
+    /**
+     * Can be up to 2 inputs and only 1 output.
+     *
+     * Can have a second input (typically respectively tiered polyvinyl sheet).
+     *
+     * All recipes take 200 ticks (10 seconds).
+     * @type {PrinterRecipe[]}
+     */
     const printerRecipes = [
       {
         drive: "astralsignals:data_drive_decrypted_13",

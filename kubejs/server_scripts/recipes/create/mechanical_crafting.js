@@ -1,5 +1,13 @@
 (function createMechanicalCraftingRecipes() {
+  /**
+   * @typedef MechanicalCraftingRecipe
+   * @property {Internal.IngredientJS_} output
+   * @property {string[]} pattern Array of rows with inputs based on letters assigned.
+   * @property {{[key: string]: Internal.IngredientJS_}} key Object with letters assigned to input items, to be used in the shape.
+   */
+
   onEvent("recipes", (event) => {
+    /** @type {MechanicalCraftingRecipe[]} */
     const mechanicalCraftingRecipes = [
       {
         output: "ad_astra:calorite_tank",
