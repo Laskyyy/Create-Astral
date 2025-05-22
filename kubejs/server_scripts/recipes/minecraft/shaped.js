@@ -1240,6 +1240,15 @@
         },
       },
       {
+        output: Item.of("yttr:lazor_emitter", 4),
+        pattern: ["ABA", "ACA", "AAA"],
+        key: {
+          A: "yttr:yttrium_ingot",
+          B: "minecraft:amethyst_shard",
+          C: "yttr:lamp",
+        },
+      },
+      {
         output: "ad_astra:strophar_cap",
         pattern: ["AA", "AA"],
         key: {
