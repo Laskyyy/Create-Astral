@@ -1333,7 +1333,7 @@
           ]),
         ]
       )
-      .transitionalItem("createastral:incomplete_electronic_circuit")
+      .transitionalItem("createbigcannons:nethersteel_screw_breech")
       .loops(6);
     event.recipes.create
       .sequenced_assembly(
