@@ -573,6 +573,7 @@
       { output: "yttr:lamp", input: "yttr:glowing_gas" },
       { output: "yttr:quicksilver" },
       { output: "minecraft:slime_ball", type: "yttr:centrifuging" },
+      { output: "yttr:lazor_emitter" },
       { input: "yttr:raw_gadolinite", type: "yttr:centrifuging" },
       { input: "minecraft:coal", type: "yttr:centrifuging" },
       // Minecraft
