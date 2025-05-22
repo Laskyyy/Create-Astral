@@ -1,12 +1,14 @@
-onEvent("recipes", (event) => {
-    [
-        // [Input string, Output string, XP value]
-        ["createastral:andesite_compound", "create:andesite_alloy"],
-        ["minecraft:rotten_flesh", "minecraft:leather", 2.0],
-        ["create:crushed_raw_tin", "techreborn:tin_ingot", 0.1],
-        ["create:crushed_raw_silver", "techreborn:silver_ingot", 0.5],
-        ["create:crushed_raw_lead", "techreborn:lead_ingot", 0.5],
-    ].forEach((recipe) => {
-        event.smelting(recipe[1], recipe[0]).xp(recipe[2] ?? 0.0);
+(function minecraftSmeltingRecipes() {
+  onEvent("recipes", (event) => {
+    const smeltingRecipes = [
+      { input: "createastral:andesite_compound", output: "create:andesite_alloy" },
+      { input: "minecraft:rotten_flesh", output: "minecraft:leather", xp: 2.0 },
+      { input: "create:crushed_raw_tin", output: "techreborn:tin_ingot", xp: 0.1 },
+      { input: "create:crushed_raw_silver", output: "techreborn:silver_ingot", xp: 0.5 },
+      { input: "create:crushed_raw_lead", output: "techreborn:lead_ingot", xp: 0.5 },
+    ];
+    smeltingRecipes.forEach((recipe) => {
+      event.recipes.minecraft.smelting(recipe.output, recipe.input).xp(recipe.xp ?? 0.0);
     });
-});
+  });
+})();
