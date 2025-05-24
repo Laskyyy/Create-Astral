@@ -3,10 +3,10 @@
 [general]
 	#Forge Energy conversion rate (in FE/t at 256 RPM).
 	#Range: > 0
-	fe_conversion = 32
+	fe_at_max_rpm = 480
 	#Max stress for the Alternator and Electric Motor (in SU at 256 RPM).
 	#Range: > 0
-	baseline_stress = 4096
+	max_stress = 16384
 
 #Electric Motor
 [electric_motor]
@@ -18,7 +18,7 @@
 	motor_min_consumption = 1
 	#Electric Motor max input in FE (Energy transfer not consumption).
 	#Range: 0 ~ 2147483647
-	motor_max_input = 256
+	motor_max_input = 512
 	#Electric Motor min/max RPM.
 	#Range: > 1
 	motor_rpm_range = 256
@@ -33,7 +33,7 @@
 	generator_capacity = 2048
 	#Alternator max input in FE (Energy transfer, not generation).
 	#Range: 0 ~ 2147483647
-	generator_max_output = 256
+	generator_max_output = 512
 
 #Rolling Mill
 [rolling_mill]
