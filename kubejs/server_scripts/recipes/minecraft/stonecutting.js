@@ -1,125 +1,233 @@
-onEvent("recipes", (event) => {
+(function minecraftStonecuttingRecipes() {
+  /**
+   * @typedef StonecuttingRecipe
+   * @property {Internal.IngredientJS_} input
+   * @property {Internal.ItemStackJS_[]} outputs
+   */
+
+  onEvent("recipes", (event) => {
     copperOxidising(event);
 
-    [
-        // [Input string, Output string]
-        ["createastral:blast-resistant_concrete", "2x createastral:blast-resistant_concrete_slab"],
-        ["createastral:blast-resistant_concrete", "createastral:blast-resistant_concrete_stairs"],
-        ["minecraft:dripstone_block", "2x minecraft:pointed_dripstone"],
-        ["createastral:bronze_ingot", "2x createastral:bronze_sheet"],
-        ["createastral:andesite_compound", "minecraft:wooden_hoe"],
-        ["createastral:andesite_compound", "minecraft:wooden_axe"],
-        ["createastral:andesite_compound", "minecraft:wooden_shovel"],
-        ["createastral:andesite_compound", "minecraft:wooden_pickaxe"],
-        ["createastral:andesite_compound", "minecraft:wooden_sword"],
-        ["createastral:andesite_compound", "minecraft:stone_hoe"],
-        ["createastral:andesite_compound", "minecraft:stone_axe"],
-        ["createastral:andesite_compound", "minecraft:stone_shovel"],
-        ["createastral:andesite_compound", "minecraft:stone_pickaxe"],
-        ["createastral:andesite_compound", "minecraft:stone_sword"],
-        ["minecraft:dirt", "8x automobility:dirt_off_road"],
-        ["minecraft:grass_block", "8x automobility:grass_off_road"],
-        ["minecraft:moss_block", "8x automobility:grass_off_road"],
-        ["minecraft:moss_carpet", "2x automobility:grass_off_road"],
-        ["minecraft:sand", "8x automobility:sand_off_road"],
-        ["techreborn:basic_machine_frame", "ae2:inscriber"],
-        ["#c:plates/gold", "tconstruct:gear_cast"],
-        ["#c:plates/gold", "astraladditions:ring_gold_cast"],
-        ["#c:plates/gold", "tconstruct:coin_cast"],
-        ["automobility:dash_panel", "automobility:sloped_dash_panel"],
-        ["automobility:dash_panel", "automobility:steep_sloped_dash_panel"],
-        ["yttr:wasteland_stone", "yttr:ruined_cobblestone"],
-        ["yttr:wasteland_stone", "yttr:ruined_device_gt_1"],
-        ["yttr:wasteland_stone", "yttr:ruined_device_bc_1"],
-        ["yttr:wasteland_stone", "yttr:ruined_device_fo_1"],
-        ["yttr:wasteland_dirt", "yttr:ruined_bricks"],
-        ["yttr:wasteland_dirt", "yttr:ruined_construct_rc_1"],
-        ["yttr:wasteland_dirt", "yttr:ruined_construct_rc_2"],
-        ["yttr:wasteland_dirt", "yttr:ruined_tank"],
-        ["yttr:wasteland_dirt", "yttr:ruined_pipe"],
-        ["yttr:wasteland_dirt", "yttr:ruined_tube"],
-        ["yttr:wasteland_dirt", "yttr:wasteland_grass"],
-        ["yttr:wasteland_log", "yttr:ruined_container"],
-        ["yttr:wasteland_log", "yttr:ruined_device_bc_2"],
-        ["yttr:wasteland_log", "yttr:ruined_device_rp_1"],
-        ["yttr:wasteland_log", "yttr:ruined_frame"],
-        ["yttr:wasteland_log", "yttr:ruined_lever"],
-        ["yttr:wasteland_log", "yttr:ruined_torch"],
-        ["astraladditions:desizer_8", "astraladditions:desizer_1"],
-        ["astraladditions:desizer_8", "astraladditions:desizer_2"],
-        ["astraladditions:desizer_8", "astraladditions:desizer_3"],
-        ["astraladditions:desizer_8", "astraladditions:desizer_4"],
-        ["astraladditions:desizer_8", "astraladditions:desizer_6"],
-        ["astraladditions:desizer_8", "astraladditions:desizer_7"],
-        ["astraladditions:desizer_8", "astraladditions:desizer_9"],
-        ["create:copper_sheet", "2x createdeco:copper_sheet_metal"],
-        ["create:andesite_alloy", "2x createdeco:andesite_sheet_metal"],
-        ["create:golden_sheet", "2x createdeco:gold_sheet_metal"],
-        ["createdeco:netherite_sheet", "2x createdeco:netherite_sheet_metal"],
-        ["create:brass_sheet", "2x createdeco:brass_sheet_metal"],
-        ["createdeco:cast_iron_sheet", "2x createdeco:cast_iron_sheet_metal"],
-        ["create:iron_sheet", "2x createdeco:iron_sheet_metal"],
-        ["createdeco:zinc_sheet", "2x createdeco:zinc_sheet_metal"],
-        ["create:track", "railways:track_acacia"],
-        ["create:track", "railways:track_birch"],
-        ["create:track", "railways:track_crimson"],
-        ["create:track", "railways:track_dark_oak"],
-        ["create:track", "railways:track_jungle"],
-        ["create:track", "railways:track_oak"],
-        ["create:track", "railways:track_spruce"],
-        ["create:track", "railways:track_warped"],
-        ["create:track", "railways:track_blackstone"],
-        ["create:track", "railways:track_ender"],
-        ["create:track", "railways:track_tieless"],
-        ["create:track", "railways:track_phantom"],
-        ["create:track", "railways:track_monorail"],
-        ["minecraft:iron_ingot", "dustrial_decor:sheet_metal"],
-        ["dustrial_decor:rusty_iron_ingot", "dustrial_decor:rusty_sheet_metal"],
-        ["dustrial_decor:sheet_metal_plating", "dustrial_decor:sheet_metal_paneling"],
-        ["dustrial_decor:sheet_metal_plating", "dustrial_decor:sheet_metal_plating_stairs"],
-        ["dustrial_decor:sheet_metal_plating", "2x dustrial_decor:sheet_metal_plating_slab"],
-        ["dustrial_decor:rusty_sheet_metal_plating", "dustrial_decor:rusty_sheet_metal_paneling"],
-        ["dustrial_decor:rusty_sheet_metal_plating", "dustrial_decor:rusty_sheet_metal_plating_stairs"],
-        ["dustrial_decor:rusty_sheet_metal_plating", "2x dustrial_decor:rusty_sheet_metal_plating_slab"],
-        ["dustrial_decor:sheet_metal_treading", "dustrial_decor:sheet_metal_treading_stairs"],
-        ["dustrial_decor:sheet_metal_treading", "2x dustrial_decor:sheet_metal_treading_slab"],
-        ["dustrial_decor:rusty_sheet_metal_treading", "dustrial_decor:rusty_sheet_metal_treading_stairs"],
-        ["dustrial_decor:rusty_sheet_metal_treading", "2x dustrial_decor:rusty_sheet_metal_treading_slab"],
-        ["doodads:asphalt", "doodads:asphalt_stair"],
-        ["doodads:asphalt", "2x doodads:asphalt_slab"],
-        ["minecraft:copper_block", "4x createdeco:copper_sheet_metal"],
-    ].forEach((recipe) => {
-        event.stonecutting(recipe[1], recipe[0]);
+    /** @type {StonecuttingRecipe[]} */
+    const stonecuttingRecipes = [
+      {
+        input: "createastral:blast-resistant_concrete",
+        outputs: [
+          Item.of("createastral:blast-resistant_concrete_slab", 2),
+          "createastral:blast-resistant_concrete_stairs",
+        ],
+      },
+      {
+        input: "minecraft:dripstone_block",
+        outputs: [Item.of("minecraft:pointed_dripstone", 2)],
+      },
+      {
+        input: "createastral:bronze_ingot",
+        outputs: [Item.of("createastral:bronze_sheet", 2)],
+      },
+      {
+        input: "createastral:andesite_compound",
+        outputs: [
+          "minecraft:wooden_hoe",
+          "minecraft:wooden_axe",
+          "minecraft:wooden_shovel",
+          "minecraft:wooden_pickaxe",
+          "minecraft:wooden_sword",
+          "minecraft:stone_hoe",
+          "minecraft:stone_axe",
+          "minecraft:stone_shovel",
+          "minecraft:stone_pickaxe",
+          "minecraft:stone_sword",
+        ],
+      },
+      {
+        input: "minecraft:dirt",
+        outputs: [Item.of("automobility:dirt_off_road", 8)],
+      },
+      {
+        input: "minecraft:grass_block",
+        outputs: [Item.of("automobility:grass_off_road", 8)],
+      },
+      {
+        input: "minecraft:moss_block",
+        outputs: [Item.of("automobility:grass_off_road", 8)],
+      },
+      {
+        input: "minecraft:moss_carpet",
+        outputs: [Item.of("automobility:grass_off_road", 2)],
+      },
+      {
+        input: "minecraft:sand",
+        outputs: [Item.of("automobility:sand_off_road", 8)],
+      },
+      {
+        input: "techreborn:basic_machine_frame",
+        outputs: ["ae2:inscriber"],
+      },
+      {
+        input: "#c:plates/gold",
+        outputs: ["tconstruct:gear_cast", "astraladditions:ring_gold_cast", "tconstruct:coin_cast"],
+      },
+      {
+        input: "automobility:dash_panel",
+        outputs: ["automobility:sloped_dash_panel", "automobility:steep_sloped_dash_panel"],
+      },
+      {
+        input: "yttr:wasteland_stone",
+        outputs: [
+          "yttr:ruined_cobblestone",
+          "yttr:ruined_device_gt_1",
+          "yttr:ruined_device_bc_1",
+          "yttr:ruined_device_fo_1",
+        ],
+      },
+      {
+        input: "yttr:wasteland_dirt",
+        outputs: [
+          "yttr:ruined_bricks",
+          "yttr:ruined_construct_rc_1",
+          "yttr:ruined_construct_rc_2",
+          "yttr:ruined_tank",
+          "yttr:ruined_pipe",
+          "yttr:ruined_tube",
+          "yttr:wasteland_grass",
+        ],
+      },
+      {
+        input: "yttr:wasteland_dirt",
+        outputs: [
+          "yttr:ruined_container",
+          "yttr:ruined_device_bc_2",
+          "yttr:ruined_device_rp_1",
+          "yttr:ruined_frame",
+          "yttr:ruined_lever",
+          "yttr:ruined_torch",
+        ],
+      },
+      {
+        input: "astraladditions:desizer_8",
+        outputs: [
+          "astraladditions:desizer_1",
+          "astraladditions:desizer_2",
+          "astraladditions:desizer_3",
+          "astraladditions:desizer_4",
+          "astraladditions:desizer_6",
+          "astraladditions:desizer_7",
+          "astraladditions:desizer_9",
+        ],
+      },
+      { input: "create:copper_sheet", outputs: [Item.of("createdeco:copper_sheet_metal", 2)] },
+      { input: "create:andesite_alloy", outputs: [Item.of("createdeco:andesite_sheet_metal", 2)] },
+      { input: "create:golden_sheet", outputs: [Item.of("createdeco:gold_sheet_metal", 2)] },
+      { input: "createdeco:netherite_sheet", outputs: [Item.of("createdeco:netherite_sheet_metal", 2)] },
+      { input: "create:brass_sheet", outputs: [Item.of("createdeco:brass_sheet_metal", 2)] },
+      { input: "createdeco:cast_iron_sheet", outputs: [Item.of("createdeco:cast_iron_sheet_metal", 2)] },
+      { input: "create:iron_sheet", outputs: [Item.of("createdeco:iron_sheet_metal", 2)] },
+      { input: "createdeco:zinc_sheet", outputs: [Item.of("createdeco:zinc_sheet_metal", 2)] },
+      {
+        input: "create:track",
+        outputs: [
+          "railways:track_acacia",
+          "railways:track_birch",
+          "railways:track_crimson",
+          "railways:track_dark_oak",
+          "railways:track_jungle",
+          "railways:track_oak",
+          "railways:track_spruce",
+          "railways:track_warped",
+          "railways:track_blackstone",
+          "railways:track_ender",
+          "railways:track_tieless",
+          "railways:track_phantom",
+          "railways:track_monorail",
+        ],
+      },
+      {
+        input: "minecraft:iron_ingot",
+        outputs: ["dustrial_decor:sheet_metal"],
+      },
+      {
+        input: "dustrial_decor:rusty_iron_ingot",
+        outputs: ["dustrial_decor:rusty_sheet_metal"],
+      },
+      {
+        input: "dustrial_decor:sheet_metal_plating",
+        outputs: [
+          "dustrial_decor:sheet_metal_paneling",
+          "dustrial_decor:sheet_metal_plating_stairs",
+          Item.of("dustrial_decor:sheet_metal_plating_slab", 2),
+        ],
+      },
+      {
+        input: "dustrial_decor:rusty_sheet_metal_plating",
+        outputs: [
+          "dustrial_decor:rusty_sheet_metal_paneling",
+          "dustrial_decor:rusty_sheet_metal_plating_stairs",
+          Item.of("dustrial_decor:rusty_sheet_metal_plating_slab", 2),
+        ],
+      },
+      {
+        input: "dustrial_decor:sheet_metal_treading",
+        outputs: ["dustrial_decor:sheet_metal_treading_stairs", Item.of("dustrial_decor:sheet_metal_treading_slab", 2)],
+      },
+      {
+        input: "dustrial_decor:rusty_sheet_metal_treading",
+        outputs: [
+          "dustrial_decor:rusty_sheet_metal_treading_stairs",
+          Item.of("dustrial_decor:rusty_sheet_metal_treading_slab", 2),
+        ],
+      },
+      {
+        input: "doodads:asphalt",
+        outputs: ["doodads:asphalt_stair", Item.of("doodads:asphalt_slab", 2)],
+      },
+      {
+        input: "minecraft:copper_block",
+        outputs: [Item.of("createdeco:copper_sheet_metal", 4)],
+      },
+    ];
+    stonecuttingRecipes.forEach((recipe) => {
+      recipe.outputs.forEach((output) => {
+        event.stonecutting(output, recipe.input);
+      });
     });
-});
-
-function copperOxidising(event) {
+  });
+  /** @param {Internal.RecipeEventJS} event */
+  function copperOxidising(event) {
     // Oxidisation of all copper blocks that can weather
+    for (const block of global.VANILLA_COPPER_BLOCKS) {
+      for (const state of global.OXIDIZATION_TYPES) {
+        event.stonecutting(`minecraft:${state}_${block}`, `minecraft:${block}`);
+        event.stonecutting(`minecraft:waxed_${state}_${block}`, `minecraft:waxed_${block}`);
+      }
+    }
+    for (const block of global.CREATE_COPPER_BLOCKS) {
+      for (const state of global.OXIDIZATION_TYPES) {
+        event.stonecutting(`create:${state}_${block}`, `create:${block}`);
+        event.stonecutting(`create:waxed_${state}_${block}`, `create:waxed_${block}`);
+      }
+    }
+    global.OXIDIZATION_TYPES.forEach((state) => {
+      /**
+       * @typedef OtherCopperStonecuttingRecipe
+       * @property {Internal.ItemStackJS_} input
+       * @property {Internal.ItemStackJS_[]} outputs
+       */
 
-    for (const block of vanillaCopperBlocks) {
-        for (const state of oxidisationTypes) {
-            event.stonecutting(`minecraft:${state}_${block}`, `minecraft:${block}`);
-            event.stonecutting(`minecraft:waxed_${state}_${block}`, `minecraft:waxed_${block}`);
-        }
-    }
-    for (const block of createCopperBlocks) {
-        for (const state of oxidisationTypes) {
-            event.stonecutting(`create:${state}_${block}`, `create:${block}`);
-            event.stonecutting(`create:waxed_${state}_${block}`, `create:waxed_${block}`);
-        }
-    }
-    for (const state of oxidisationTypes) {
-        // Other recipes that dont fit much of a pattern
-        // [Input string, Output string]
-        [
-            ["minecraft:copper_block", `minecraft:${state}_copper`],
-            ["minecraft:waxed_copper_block", `minecraft:waxed_${state}_copper`],
-            ["phonos:copper_speaker", `phonos:${state}_copper_speaker`],
-            ["phonos:waxed_copper_speaker", `phonos:waxed_${state}_copper_speaker`],
-            ["tconstruct:copper_platform", `tconstruct:${state}_copper_platform`],
-            ["tconstruct:waxed_copper_platform", `tconstruct:waxed_${state}_copper_platform`],
-        ].forEach((recipe) => {
-            event.stonecutting(recipe[1], recipe[0]);
+      /** @type {OtherCopperStonecuttingRecipe[]} */
+      const otherCopperStonecuttingRecipes = [
+        { input: "minecraft:copper_block", outputs: [`minecraft:${state}_copper`] },
+        { input: "minecraft:waxed_copper_block", outputs: [`minecraft:waxed_${state}_copper`] },
+        { input: "phonos:copper_speaker", outputs: [`phonos:${state}_copper_speaker`] },
+        { input: "phonos:waxed_copper_speaker", outputs: [`phonos:waxed_${state}_copper_speaker`] },
+        { input: "tconstruct:copper_platform", outputs: [`tconstruct:${state}_copper_platform`] },
+        { input: "tconstruct:waxed_copper_platform", outputs: [`tconstruct:waxed_${state}_copper_platform`] },
+      ];
+      otherCopperStonecuttingRecipes.forEach((recipe) => {
+        recipe.outputs.forEach((output) => {
+          event.stonecutting(output, recipe.input);
         });
-    }
-}
+      });
+    });
+  }
+})();

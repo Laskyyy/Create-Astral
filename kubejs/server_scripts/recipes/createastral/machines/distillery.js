@@ -1,25 +1,35 @@
-onEvent("recipes", (event) => {
-    const oldDistillationTowerStructure = [
-        // old structure is still supported to avoid breaking factories immediately
-        ["       ", "       ", "  eee  ", "  eee  ", "  eee  ", "       ", "       "],
-        ["   a   ", "   a   ", "  bbb  ", "aabbbaa", "  bbb  ", "   a   ", "   a   "],
-        ["       ", "   a   ", "  ada  ", " ad da ", "  ada  ", "   a   ", "       "],
-        ["       ", "       ", "   c   ", "  c c  ", "   m   ", "       ", "       "],
-        ["       ", "       ", "   c   ", "  c c  ", "   c   ", "       ", "       "],
-        ["       ", "       ", "       ", "   c   ", "       ", "       ", "       "],
-    ];
+(function distilleryRecipes() {
+  const BUCKET = global.BUCKET;
+  const GEM_BLOCK = global.GEM_BLOCK;
+  const SLIMEBALL = global.SLIMEBALL;
+  const INGOT = global.INGOT;
+  const GEM = global.GEM;
+  const NUGGET = global.NUGGET;
+  const mB = global.mB;
 
-    const newDistillationTowerStructure = [
-        // moved the controller block so 5 sides are accessible including the back
-        ["       ", "       ", "  eee  ", "  eee  ", "  eee  ", "       ", "       "],
-        ["   a   ", "   a   ", "  bbb  ", "aabbbaa", "  bbb  ", "   a   ", "   a   "],
-        ["       ", "   a   ", "  ada  ", " ad da ", "  ada  ", "   a   ", "       "],
-        ["       ", "       ", "   c   ", "  c c  ", "   c   ", "       ", "       "],
-        ["       ", "       ", "   c   ", "  c c  ", "   m   ", "       ", "       "],
-        ["       ", "       ", "       ", "   c   ", "       ", "       ", "       "],
-    ];
-
-    const distillationTowerStructure = [oldDistillationTowerStructure, newDistillationTowerStructure];
+  onEvent("recipes", (event) => {
+    const oldDistillationTowerStructure = /** @type {const} */ ([
+      // old structure is still supported to avoid breaking factories immediately
+      ["       ", "       ", "  eee  ", "  eee  ", "  eee  ", "       ", "       "],
+      ["   a   ", "   a   ", "  bbb  ", "aabbbaa", "  bbb  ", "   a   ", "   a   "],
+      ["       ", "   a   ", "  ada  ", " ad da ", "  ada  ", "   a   ", "       "],
+      ["       ", "       ", "   c   ", "  c c  ", "   m   ", "       ", "       "],
+      ["       ", "       ", "   c   ", "  c c  ", "   c   ", "       ", "       "],
+      ["       ", "       ", "       ", "   c   ", "       ", "       ", "       "],
+    ]);
+    const newDistillationTowerStructure = /** @type {const} */ ([
+      // moved the controller block so 5 sides are accessible including the back
+      ["       ", "       ", "  eee  ", "  eee  ", "  eee  ", "       ", "       "],
+      ["   a   ", "   a   ", "  bbb  ", "aabbbaa", "  bbb  ", "   a   ", "   a   "],
+      ["       ", "   a   ", "  ada  ", " ad da ", "  ada  ", "   a   ", "       "],
+      ["       ", "       ", "   c   ", "  c c  ", "   c   ", "       ", "       "],
+      ["       ", "       ", "   c   ", "  c c  ", "   m   ", "       ", "       "],
+      ["       ", "       ", "       ", "   c   ", "       ", "       ", "       "],
+    ]);
+    const distillationTowerStructure = /** @type {const} */ ([
+      oldDistillationTowerStructure,
+      newDistillationTowerStructure,
+    ]);
 
     /*
      * Aim of this script is to fix the blaze burner jank caused by fluid burners and superheated burners
@@ -39,120 +49,130 @@ onEvent("recipes", (event) => {
      *
      * All fields (burnersAllowed, time, itemInput, fluidInput, energy, and fluidOutput) need to be filled to make the recipes work.
      * Any extra recipes can go outside the forEach loop.
-     *
-     * burnersAllowed: [array],
-     * time: integer,
-     * itemInput: ["item", count],
-     * fluidInput: ["fluid", amount],
-     * energy: integer,
-     * fluidOutput: ["fluid", amount]
      */
 
-    [
-        {
-            // biofuel
-            burnersAllowed: [
-                "create:blaze_burner{fuelLevel:1}",
-                "createaddition:liquid_blaze_burner{fuelLevel:1}",
-                "create:blaze_burner{isCreative:1b}",
-                "createaddition:liquid_blaze_burner{isCreative:1b}",
-            ],
-            time: 100,
-            itemInput: ["createastral:pure_biomatter", 1],
-            fluidInput: ["minecraft:water", BUCKET],
-            energy: 10000,
-            fluidOutput: ["techreborn:biofuel", BUCKET * 4],
-        },
-        {
-            // fuel -- creative burners would conflict with fuel2
-            burnersAllowed: ["create:blaze_burner{fuelLevel:1}", "createaddition:liquid_blaze_burner{fuelLevel:1}"],
-            time: 100,
-            itemInput: ["createastral:refining_agent", 1],
-            fluidInput: ["techreborn:oil", BUCKET],
-            energy: 10000,
-            fluidOutput: ["kubejs:hellfire", BUCKET],
-        },
-        {
-            // fuel2
-            burnersAllowed: [
-                "create:blaze_burner{fuelLevel:2}",
-                "createaddition:liquid_blaze_burner{fuelLevel:2}",
-                "create:blaze_burner{isCreative:1b}",
-                "createaddition:liquid_blaze_burner{isCreative:1b}",
-            ],
-            time: 100,
-            itemInput: ["createastral:refining_agent", 1],
-            fluidInput: ["techreborn:oil", BUCKET],
-            energy: 2500,
-            fluidOutput: ["kubejs:hellfire", BUCKET],
-        },
-        {
-            // uranium
-            burnersAllowed: [
-                "create:blaze_burner{fuelLevel:2}",
-                "createaddition:liquid_blaze_burner{fuelLevel:2}",
-                "create:blaze_burner{isCreative:1b}",
-                "createaddition:liquid_blaze_burner{isCreative:1b}",
-            ],
-            time: 200,
-            itemInput: ["createastral:uranium_residue", 4],
-            fluidInput: ["techreborn:mercury", BUCKET],
-            energy: 10000,
-            fluidOutput: ["tconstruct:molten_uranium", BUCKET],
-        },
-    ].forEach((recipe) => {
-        for (const towerStructure of distillationTowerStructure) {
-            event.custom({
-                type: "custommachinery:custom_machine",
-                machine: "createastral:distillery",
-                time: recipe.time,
-                requirements: [
-                    {
-                        type: "custommachinery:structure",
-                        keys: {
-                            a: "dbe:steel_frame",
-                            b: "techreborn:basic_machine_casing",
-                            c: "techreborn:basic_machine_frame",
-                            d: "techreborn:advanced_machine_frame",
-                            e: "create:distillation_tower/blaze_burners",
-                        },
-                        pattern: towerStructure,
-                    },
-                    {
-                        type: "custommachinery:block",
-                        mode: "input",
-                        action: "check",
-                        pos: [-1, -3, -2, 1, -4, 0],
-                        filter: recipe.burnersAllowed,
-                        whitelist: true,
-                        amount: 9,
-                        comparator: "==",
-                    },
-                    {
-                        type: "custommachinery:fluid",
-                        fluid: recipe.fluidInput[0],
-                        amount: recipe.fluidInput[1],
-                        mode: "input",
-                    },
-                    {
-                        type: "custommachinery:item",
-                        item: recipe.itemInput[0],
-                        amount: recipe.itemInput[1],
-                        mode: "input",
-                    },
-                    {
-                        type: "custommachinery:energy",
-                        mode: "input",
-                        amount: recipe.energy,
-                    },
-                    {
-                        type: "custommachinery:fluid",
-                        fluid: recipe.fluidOutput[0],
-                        amount: recipe.fluidOutput[1],
-                        mode: "output",
-                    },
-                ],
-            });
-        }
+    /** @typedef {"create:blaze_burner" | "createaddition:liquid_blaze_burner"} Burners */
+    /** @typedef {"fuelLevel:1" | "isCreative:1b"} HeatedNBT */
+    /** @typedef {"fuelLevel:2" | "isCreative:1b"} SuperheatedNBT */
+    /** @typedef {Burners | `${Burners}{${HeatedNBT | SuperheatedNBT}}`} Burner */
+    /**
+     * @typedef DistilleryRecipe
+     * @property {Burner[]} burnersAllowed
+     * @property {number} time
+     * @property {{ item: Special.Item; count: number }} itemInput
+     * @property {{ fluid: Special.Fluid; amount: number }} fluidInput
+     * @property {number} energy
+     * @property {{ fluid: Special.Fluid; amount: number }} fluidOutput
+     */
+
+    /** @type {DistilleryRecipe[]} */
+    const distilleryRecipes = [
+      {
+        // biofuel
+        burnersAllowed: [
+          "create:blaze_burner{fuelLevel:1}",
+          "createaddition:liquid_blaze_burner{fuelLevel:1}",
+          "create:blaze_burner{isCreative:1b}",
+          "createaddition:liquid_blaze_burner{isCreative:1b}",
+        ],
+        time: 100,
+        itemInput: { item: "createastral:pure_biomatter", count: 1 },
+        fluidInput: { fluid: "minecraft:water", amount: BUCKET },
+        energy: 10000,
+        fluidOutput: { fluid: "techreborn:biofuel", amount: BUCKET * 4 },
+      },
+      {
+        // fuel -- creative burners would conflict with fuel2
+        burnersAllowed: ["create:blaze_burner{fuelLevel:1}", "createaddition:liquid_blaze_burner{fuelLevel:1}"],
+        time: 100,
+        itemInput: { item: "createastral:refining_agent", count: 1 },
+        fluidInput: { fluid: "techreborn:oil", amount: BUCKET },
+        energy: 10000,
+        fluidOutput: { fluid: "kubejs:hellfire", amount: BUCKET },
+      },
+      {
+        // fuel2
+        burnersAllowed: [
+          "create:blaze_burner{fuelLevel:2}",
+          "createaddition:liquid_blaze_burner{fuelLevel:2}",
+          "create:blaze_burner{isCreative:1b}",
+          "createaddition:liquid_blaze_burner{isCreative:1b}",
+        ],
+        time: 100,
+        itemInput: { item: "createastral:refining_agent", count: 1 },
+        fluidInput: { fluid: "techreborn:oil", amount: BUCKET },
+        energy: 2500,
+        fluidOutput: { fluid: "kubejs:hellfire", amount: BUCKET },
+      },
+      {
+        // uranium
+        burnersAllowed: [
+          "create:blaze_burner{fuelLevel:2}",
+          "createaddition:liquid_blaze_burner{fuelLevel:2}",
+          "create:blaze_burner{isCreative:1b}",
+          "createaddition:liquid_blaze_burner{isCreative:1b}",
+        ],
+        time: 200,
+        itemInput: { item: "createastral:uranium_residue", count: 4 },
+        fluidInput: { fluid: "techreborn:mercury", amount: BUCKET },
+        energy: 10000,
+        fluidOutput: { fluid: "tconstruct:molten_uranium", amount: BUCKET },
+      },
+    ];
+    distilleryRecipes.forEach((recipe) => {
+      for (const towerStructure of distillationTowerStructure) {
+        event.custom({
+          type: "custommachinery:custom_machine",
+          machine: "createastral:distillery",
+          time: recipe.time,
+          requirements: [
+            {
+              type: "custommachinery:structure",
+              keys: {
+                a: "dbe:steel_frame",
+                b: "techreborn:basic_machine_casing",
+                c: "techreborn:basic_machine_frame",
+                d: "techreborn:advanced_machine_frame",
+                e: "create:distillation_tower/blaze_burners",
+              },
+              pattern: towerStructure,
+            },
+            {
+              type: "custommachinery:block",
+              mode: "input",
+              action: "check",
+              pos: [-1, -3, -2, 1, -4, 0],
+              filter: recipe.burnersAllowed,
+              whitelist: true,
+              amount: 9,
+              comparator: "==",
+            },
+            {
+              type: "custommachinery:fluid",
+              fluid: recipe.fluidInput.fluid,
+              amount: recipe.fluidInput.amount,
+              mode: "input",
+            },
+            {
+              type: "custommachinery:item",
+              item: recipe.itemInput.item,
+              amount: recipe.itemInput.count,
+              mode: "input",
+            },
+            {
+              type: "custommachinery:energy",
+              mode: "input",
+              amount: recipe.energy,
+            },
+            {
+              type: "custommachinery:fluid",
+              fluid: recipe.fluidOutput.fluid,
+              amount: recipe.fluidOutput.amount,
+              mode: "output",
+            },
+          ],
+        });
+      }
     });
-});
+  });
+})();

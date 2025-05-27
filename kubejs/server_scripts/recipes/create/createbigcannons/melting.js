@@ -1,108 +1,128 @@
-onEvent("recipes", (event) => {
-    [
-        {
-            itemInput: ["createastral:bronze_block", 1],
-            fluidOutput: ["tconstruct:molten_bronze", BUCKET],
-            time: 1620,
-            heat: "heated",
-        },
-        {
-            itemInput: ["createastral:bronze_ingot", 1],
-            fluidOutput: ["tconstruct:molten_bronze", INGOT],
-            time: 180,
-            heat: "heated",
-        },
-        {
-            itemInput: ["techreborn:bronze_nugget", 1],
-            fluidOutput: ["tconstruct:molten_bronze", NUGGET],
-            time: 20,
-            heat: "heated",
-        },
-        {
-            itemInput: ["createbigcannons:bronze_scrap", 1],
-            fluidOutput: ["tconstruct:molten_bronze", NUGGET],
-            time: 20,
-            heat: "heated",
-        },
-        {
-            itemInput: ["minecraft:coal", 8],
-            fluidOutput: ["techreborn:carbon", BUCKET / 8],
-            time: 300,
-            heat: "heated",
-        },
-        {
-            itemInput: ["yttr:ultrapure_carbon", 1],
-            fluidOutput: ["techreborn:carbon", BUCKET / 4],
-            time: 300,
-            heat: "superheated",
-        },
-        {
-            itemInput: ["createastral:ender_mush", 1],
-            fluidOutput: ["kubejs:metabolic_broth", BUCKET],
-            time: 750,
-            heat: "superheated",
-        },
-        {
-            itemInput: ["createastral:ender_mush", 1],
-            fluidOutput: ["kubejs:metabolic_broth", BUCKET],
-            time: 750,
-            heat: "superheated",
-        },
-        {
-            itemInput: ["ad_astra:ostrum_block", 1],
-            fluidOutput: ["kubejs:molten_ostrum", BUCKET],
-            time: 1620,
-            heat: "heated",
-        },
-        {
-            itemInput: ["ad_astra:ostrum_ingot", 1],
-            fluidOutput: ["kubejs:molten_ostrum", INGOT],
-            time: 180,
-            heat: "heated",
-        },
-        {
-            itemInput: ["ad_astra:ostrum_nugget", 1],
-            fluidOutput: ["kubejs:molten_ostrum", NUGGET],
-            time: 20,
-            heat: "heated",
-        },
-        {
-            itemInput: ["ad_astra:polished_permafrost", 1],
-            fluidOutput: ["techreborn:nitrogen", BUCKET / 5],
-            time: 100,
-            heat: "superheated",
-        },
-        {
-            itemInput: ["ad_astra:permafrost", 1],
-            fluidOutput: ["techreborn:nitrogen", BUCKET / 10],
-            time: 300,
-            heat: "heated",
-        },
-        {
-            itemInput: ["ad_astra:steel_block", 1],
-            fluidOutput: ["tconstruct:molten_steel", BUCKET],
-            time: 1620,
-            heat: "heated",
-        },
-        {
-            itemInput: ["ad_astra:steel_ingot", 1],
-            fluidOutput: ["tconstruct:molten_steel", INGOT],
-            time: 180,
-            heat: "heated",
-        },
-        {
-            itemInput: ["ad_astra:steel_nugget", 1],
-            fluidOutput: ["tconstruct:molten_steel", NUGGET],
-            time: 20,
-            heat: "heated",
-        },
-    ].forEach((recipe) => {
-        event.custom({
-            type: "createbigcannons:melting",
-            ingredients: [{ item: recipe.itemInput[0], count: recipe.itemInput[1] }],
-            results: [{ fluid: recipe.fluidOutput[0], amount: recipe.fluidOutput[1] }],
-            processingTime: recipe.time,
-            heatRequirement: recipe.heat,
-        });
+(function createBigCannonsMeltingRecipes() {
+  const BUCKET = global.BUCKET;
+  const GEM_BLOCK = global.GEM_BLOCK;
+  const SLIMEBALL = global.SLIMEBALL;
+  const INGOT = global.INGOT;
+  const GEM = global.GEM;
+  const NUGGET = global.NUGGET;
+  const mB = global.mB;
+
+  onEvent("recipes", (event) => {
+    /**
+     * @typedef MeltingRecipe
+     * @property {{item: Special.Item, count: number}} input
+     * @property {{fluid: Special.Fluid, amount: number}} output
+     * @property {number} time
+     * @property {"heated" | "superheated"} heat
+     */
+
+    /** @type {MeltingRecipe[]} */
+    const meltingRecipes = [
+      {
+        input: { item: "createastral:bronze_block", count: 1 },
+        output: { fluid: "tconstruct:molten_bronze", amount: BUCKET },
+        time: 1620,
+        heat: "heated",
+      },
+      {
+        input: { item: "createastral:bronze_ingot", count: 1 },
+        output: { fluid: "tconstruct:molten_bronze", amount: INGOT },
+        time: 180,
+        heat: "heated",
+      },
+      {
+        input: { item: "techreborn:bronze_nugget", count: 1 },
+        output: { fluid: "tconstruct:molten_bronze", amount: NUGGET },
+        time: 20,
+        heat: "heated",
+      },
+      {
+        input: { item: "createbigcannons:bronze_scrap", count: 1 },
+        output: { fluid: "tconstruct:molten_bronze", amount: NUGGET },
+        time: 20,
+        heat: "heated",
+      },
+      {
+        input: { item: "minecraft:coal", count: 8 },
+        output: { fluid: "techreborn:carbon", amount: 125 * mB },
+        time: 300,
+        heat: "heated",
+      },
+      {
+        input: { item: "yttr:ultrapure_carbon", count: 1 },
+        output: { fluid: "techreborn:carbon", amount: 250 * mB },
+        time: 300,
+        heat: "superheated",
+      },
+      {
+        input: { item: "createastral:ender_mush", count: 1 },
+        output: { fluid: "kubejs:metabolic_broth", amount: BUCKET },
+        time: 750,
+        heat: "superheated",
+      },
+      {
+        input: { item: "createastral:ender_mush", count: 1 },
+        output: { fluid: "kubejs:metabolic_broth", amount: BUCKET },
+        time: 750,
+        heat: "superheated",
+      },
+      {
+        input: { item: "ad_astra:ostrum_block", count: 1 },
+        output: { fluid: "kubejs:molten_ostrum", amount: BUCKET },
+        time: 1620,
+        heat: "heated",
+      },
+      {
+        input: { item: "ad_astra:ostrum_ingot", count: 1 },
+        output: { fluid: "kubejs:molten_ostrum", amount: INGOT },
+        time: 180,
+        heat: "heated",
+      },
+      {
+        input: { item: "ad_astra:ostrum_nugget", count: 1 },
+        output: { fluid: "kubejs:molten_ostrum", amount: NUGGET },
+        time: 20,
+        heat: "heated",
+      },
+      {
+        input: { item: "ad_astra:polished_permafrost", count: 1 },
+        output: { fluid: "techreborn:nitrogen", amount: 200 * mB },
+        time: 100,
+        heat: "superheated",
+      },
+      {
+        input: { item: "ad_astra:permafrost", count: 1 },
+        output: { fluid: "techreborn:nitrogen", amount: 100 * mB },
+        time: 300,
+        heat: "heated",
+      },
+      {
+        input: { item: "ad_astra:steel_block", count: 1 },
+        output: { fluid: "tconstruct:molten_steel", amount: BUCKET },
+        time: 1620,
+        heat: "heated",
+      },
+      {
+        input: { item: "ad_astra:steel_ingot", count: 1 },
+        output: { fluid: "tconstruct:molten_steel", amount: INGOT },
+        time: 180,
+        heat: "heated",
+      },
+      {
+        input: { item: "ad_astra:steel_nugget", count: 1 },
+        output: { fluid: "tconstruct:molten_steel", amount: NUGGET },
+        time: 20,
+        heat: "heated",
+      },
+    ];
+    meltingRecipes.forEach((recipe) => {
+      event.custom({
+        type: "createbigcannons:melting",
+        ingredients: [recipe.input],
+        results: [recipe.output],
+        processingTime: recipe.time,
+        heatRequirement: recipe.heat,
+      });
     });
-});
+  });
+})();

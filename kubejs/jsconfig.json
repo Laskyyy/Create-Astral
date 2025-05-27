@@ -1,14 +1,12 @@
 {
-    "compilerOptions": {
-        "lib": [
-            "ES5",
-            "ES2015"
-        ],
-        "typeRoots": [
-            "./probe/generated",
-            "./probe/user",
-            "./custom_types"
-        ],
-        "target": "ES2015"
-    }
+  "compilerOptions": {
+    "lib": ["ES5", "ES2015", "ES2016.Array.Include", "ES2017.Object"],
+    "typeRoots": ["./probe/generated", "./custom_types"],
+    "checkJs": false,
+    "allowJs": true,
+    "target": "ES2015",
+    "skipLibCheck": true,
+    "disableSizeLimit": true,
+    "noEmit": true
+  }
 }

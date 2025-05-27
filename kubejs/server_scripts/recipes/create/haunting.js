@@ -1,34 +1,103 @@
-onEvent("recipes", (event) => {
-    // [Input string, Output string]
-    [
-        ["naturalist:snail_shell", "minecraft:nautilus_shell"],
-        ["2x techreborn:charcoal_dust", "techreborn:coal_dust"],
-        ["2x minecraft:charcoal", "minecraft:coal"],
-        ["minecraft:sand", "minecraft:soul_sand"],
-        ["minecraft:soul_sand", "minecraft:netherrack"],
-        ["vinery:cherry_sapling", "vinery:old_cherry_sapling"],
+(function createHauntingRecipes() {
+  onEvent("recipes", (event) => {
+    /**
+     * @typedef HauntingRecipe
+     * @property {Internal.ItemStackJS_} input
+     * @property {Internal.ItemStackJS_} output
+     */
 
-        //dead coral blocks
-        ["minecraft:tube_coral_block", "minecraft:dead_tube_coral_block"],
-        ["minecraft:brain_coral_block", "minecraft:dead_brain_coral_block"],
-        ["minecraft:bubble_coral_block", "minecraft:dead_bubble_coral_block"],
-        ["minecraft:fire_coral_block", "minecraft:dead_fire_coral_block"],
-        ["minecraft:horn_coral_block", "minecraft:dead_horn_coral_block"],
-
-        //dead coral
-        ["minecraft:tube_coral", "minecraft:dead_tube_coral"],
-        ["minecraft:brain_coral", "minecraft:dead_brain_coral"],
-        ["minecraft:bubble_coral", "minecraft:dead_bubble_coral"],
-        ["minecraft:fire_coral", "minecraft:dead_fire_coral"],
-        ["minecraft:horn_coral", "minecraft:dead_horn_coral"],
-
-        //dead coral fans
-        ["minecraft:tube_coral_fan", "minecraft:dead_tube_coral_fan"],
-        ["minecraft:brain_coral_fan", "minecraft:dead_brain_coral_fan"],
-        ["minecraft:bubble_coral_fan", "minecraft:dead_bubble_coral_fan"],
-        ["minecraft:fire_coral_fan", "minecraft:dead_fire_coral_fan"],
-        ["minecraft:horn_coral_fan", "minecraft:dead_horn_coral_fan"],
-    ].forEach((recipe) => {
-        event.recipes.createHaunting(recipe[1], recipe[0]);
+    /** @type {HauntingRecipe[]} */
+    const hauntingRecipes = [
+      {
+        input: "naturalist:snail_shell",
+        output: "minecraft:nautilus_shell",
+      },
+      {
+        input: Item.of("techreborn:coal_dust", 2),
+        output: "techreborn:coal_dust",
+      },
+      {
+        input: Item.of("minecraft:charcoal", 2),
+        output: "minecraft:coal",
+      },
+      {
+        input: "minecraft:sand",
+        output: "minecraft:soul_sand",
+      },
+      {
+        input: "minecraft:soul_sand",
+        output: "minecraft:netherrack",
+      },
+      {
+        input: "vinery:cherry_sapling",
+        output: "vinery:old_cherry_sapling",
+      },
+      //dead coral blocks
+      {
+        input: "minecraft:tube_coral_block",
+        output: "minecraft:dead_tube_coral_block",
+      },
+      {
+        input: "minecraft:brain_coral_block",
+        output: "minecraft:dead_brain_coral_block",
+      },
+      {
+        input: "minecraft:bubble_coral_block",
+        output: "minecraft:dead_bubble_coral_block",
+      },
+      {
+        input: "minecraft:fire_coral_block",
+        output: "minecraft:dead_fire_coral_block",
+      },
+      {
+        input: "minecraft:horn_coral_block",
+        output: "minecraft:dead_horn_coral_block",
+      },
+      //dead coral
+      {
+        input: "minecraft:tube_coral",
+        output: "minecraft:dead_tube_coral",
+      },
+      {
+        input: "minecraft:brain_coral",
+        output: "minecraft:dead_brain_coral",
+      },
+      {
+        input: "minecraft:bubble_coral",
+        output: "minecraft:dead_bubble_coral",
+      },
+      {
+        input: "minecraft:fire_coral",
+        output: "minecraft:dead_fire_coral",
+      },
+      {
+        input: "minecraft:horn_coral",
+        output: "minecraft:dead_horn_coral",
+      },
+      //dead coral fans
+      {
+        input: "minecraft:tube_coral_fan",
+        output: "minecraft:dead_tube_coral_fan",
+      },
+      {
+        input: "minecraft:brain_coral_fan",
+        output: "minecraft:dead_brain_coral_fan",
+      },
+      {
+        input: "minecraft:bubble_coral_fan",
+        output: "minecraft:dead_bubble_coral_fan",
+      },
+      {
+        input: "minecraft:fire_coral_fan",
+        output: "minecraft:dead_fire_coral_fan",
+      },
+      {
+        input: "minecraft:horn_coral_fan",
+        output: "minecraft:dead_horn_coral_fan",
+      },
+    ];
+    hauntingRecipes.forEach((recipe) => {
+      event.recipes.createHaunting(recipe.output, recipe.input);
     });
-});
+  });
+})();

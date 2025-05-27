@@ -1,26 +1,25 @@
-let computercraftHasFired = false;
-onEvent("item.tooltip", (event) => {
-    if (computercraftHasFired) return;
-    computercraftHasFired = true;
+(function computerCraftTooltips() {
+  onEvent("item.tooltip", (event) => {
+    /** @type {Helper.Tooltip[]} */
     const computercraftTooltips = [
-        {
-            item: "computercraft:disk",
-            tooltip: "tooltip.computercraft.disk",
-        },
+      {
+        item: "computercraft:disk",
+        tooltip: "tooltip.computercraft.disk",
+      },
     ];
-
     computercraftTooltips.forEach((tooltip) => {
-        event.addAdvanced(tooltip.item, (item, advanced, text) => {
-            if (!event.isShift()) {
-                text.add(1, [
-                    Text.of(Component.translate("tooltip.hover.tip.1")).darkGreen(),
-                    Text.of(Component.translate("tooltip.hover.tip.2")).green(),
-                    Text.of(Component.translate("tooltip.hover.tip.3")).darkGreen(),
-                ]);
-            }
-            if (event.isShift()) {
-                text.add(1, [Text.of(Component.translate(tooltip.tooltip)).green()]);
-            }
-        });
+      event.addAdvanced(tooltip.item, (item, advanced, text) => {
+        if (!event.isShift()) {
+          text.add(1, [
+            Text.of(Component.translate("tooltip.hover.tip.1")).darkGreen(),
+            Text.of(Component.translate("tooltip.hover.tip.2")).green(),
+            Text.of(Component.translate("tooltip.hover.tip.3")).darkGreen(),
+          ]);
+        }
+        if (event.isShift()) {
+          text.add(1, [Text.of(Component.translate(tooltip.tooltip)).green()]);
+        }
+      });
     });
-});
+  });
+})();

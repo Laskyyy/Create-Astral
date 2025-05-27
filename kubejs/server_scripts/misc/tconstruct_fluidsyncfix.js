@@ -1,4 +1,15 @@
-onEvent('block.right_click', event => {
-    if (event.block.id == "tconstruct:foundry_controller" && event.block.entity.tank != null)
-        event.block.entity.tank.syncFluids()
-})
+(function hephaestusFluidSyncFix() {
+  onEvent("block.right_click", (event) => {
+    if (event.block.id == "tconstruct:foundry_controller") {
+      let blockEntity = event.block.entity;
+      if (
+        "tank" in blockEntity &&
+        typeof blockEntity.tank == "object" &&
+        "syncFluids" in blockEntity.tank &&
+        typeof blockEntity.tank.syncFluids == "function"
+      ) {
+        blockEntity.tank.syncFluids();
+      }
+    }
+  });
+})();
