@@ -1,16 +1,23 @@
 (function createHauntingRecipes() {
   onEvent("recipes", (event) => {
+    /**
+     * @typedef HauntingRecipe
+     * @property {Internal.ItemStackJS_} input
+     * @property {Internal.ItemStackJS_} output
+     */
+
+    /** @type {HauntingRecipe[]} */
     const hauntingRecipes = [
       {
         input: "naturalist:snail_shell",
         output: "minecraft:nautilus_shell",
       },
       {
-        input: "2x techreborn:coal_dust",
+        input: Item.of("techreborn:coal_dust", 2),
         output: "techreborn:coal_dust",
       },
       {
-        input: "2x minecraft:charcoal",
+        input: Item.of("minecraft:charcoal", 2),
         output: "minecraft:coal",
       },
       {

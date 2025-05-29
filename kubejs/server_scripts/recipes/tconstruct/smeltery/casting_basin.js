@@ -7,6 +7,15 @@
   const NUGGET = global.NUGGET;
   const mB = global.mB;
   onEvent("recipes", (event) => {
+    /**
+     * @typedef CastingBasinRecipe
+     * @property {{fluid: Special.Fluid; amount: number;}} fluidInput
+     * @property {Special.Item} result
+     * @property {number} coolingTime
+     * @property {{ item: Special.Item; consumed?: boolean } | { tag: Special.ItemTag; consumed?: boolean }} [cast]
+     */
+
+    /** @type {CastingBasinRecipe[]} */
     const castingBasinRecipes = [
       {
         fluidInput: { fluid: "kubejs:compound_mixture", amount: INGOT * 9 },
@@ -86,7 +95,7 @@
         fluidInput: { fluid: "tconstruct:molten_tin", amount: BUCKET },
         result: "extended_drawers:shadow_drawer",
         coolingTime: 117, // same as cooling tin block
-
+        // @ts-expect-error Missing tag?
         cast: { tag: "extended_drawers:drawer_containers", consumed: true },
       },
       {
@@ -204,6 +213,7 @@
       },
     ];
     castingBasinRecipes.forEach((recipe) => {
+      /** @type {{ type: Special.RecipeType_; [key: string]: unknown }} */
       let basinRecipe = {
         type: "tconstruct:casting_basin",
         fluid: {

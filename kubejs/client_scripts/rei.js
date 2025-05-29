@@ -2,7 +2,7 @@
   console.info("Hello, World! (You will see this line every time client resources reload)");
   onEvent("rei.group", (event) => {
     event.groupItems("kubejs:rei_groups/chipped", Component.of("Chipped Blocks"), [
-      Ingredient.of("@chipped")
+      Ingredient.of(/** @type {Internal.IngredientJS_} */ ("@chipped"))
         .getItemIds()
         .toArray()
         .filter(
@@ -67,18 +67,24 @@
       "createastral:rei_groups/create/potion",
       Component.translate("text.rei.createastral.create.potion.regular"),
 
+      // @ts-expect-error My type-safe implementation didn't work.
+      Astral-Experimental
       (fluid) => fluid.getId() === createPotion && fluid.nbt.Bottle === "REGULAR"
     );
     event.groupFluidsIf(
       "createastral:rei_groups/create/splash_potion",
       Component.translate("text.rei.createastral.create.potion.splash"),
 
+      // @ts-expect-error My type-safe implementation didn't work.
+      Astral-Experimental
       (fluid) => fluid.getId() === createPotion && fluid.nbt.Bottle === "SPLASH"
     );
     event.groupFluidsIf(
       "createastral:rei_groups/create/lingering_potion",
       Component.translate("text.rei.createastral.create.potion.lingering"),
 
+      // @ts-expect-error My type-safe implementation didn't work.
+      Astral-Experimental
       (fluid) => fluid.getId() === createPotion && fluid.nbt.Bottle === "LINGERING"
     );
     //Packages
@@ -136,8 +142,8 @@
   });
   //Add Potion fluids to REI
   onEvent("rei.add.fluids", (event) => {
-    let bottles = ["REGULAR", "SPLASH", "LINGERING"];
-    let potions = [
+    let bottles = /** @type {const} */ ["REGULAR", "SPLASH", "LINGERING"];
+    let potions = /** @type {const} */ ([
       //The order that we create these rei entries in is important!
       ["minecraft:mundane", []],
       ["minecraft:thick", []],
@@ -160,7 +166,7 @@
       ["minecraft:slow_falling", ["long"]],
       ["naturalist:forest_dasher", ["long", "strong"]],
       ["naturalist:glowing", ["long"]],
-    ];
+    ]);
     bottles.forEach((bottle) => {
       for (let i = 0; i < potions.length; ++i) {
         let potionName = potions[i][0];

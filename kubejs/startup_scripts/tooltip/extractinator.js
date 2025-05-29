@@ -1,5 +1,6 @@
 (function extractinatorTooltips() {
   onEvent("item.tooltip", (event) => {
+    /** @type {Helper.Tooltip[]} */
     const extractinatorTooltips = [
       {
         item: "extractinator:extractinator",

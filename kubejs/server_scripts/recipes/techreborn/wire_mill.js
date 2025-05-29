@@ -2,6 +2,7 @@
   onEvent("recipes", (event) => {
     wireMillWires(event);
   });
+  /** @param {Internal.RecipeEventJS} event  */
   function wireMillWires(event) {
     // Wire Mill
     // Let's making the rolling mill more relevant by making cables require create addition rods
@@ -10,7 +11,8 @@
     //  to use both machines for an item they may not craft often, outside of circuit automation.
     // Still, I'll let the wire mill produce wires.
     //
-    const WIRE_MATERIALS = ["iron", "gold", "copper"];
+    /** @satisfies {string[]} */
+    const WIRE_MATERIALS = /** @type {const} */ (["iron", "gold", "copper"]);
     for (let material of WIRE_MATERIALS) {
       event.custom({
         type: "techreborn:wire_mill",

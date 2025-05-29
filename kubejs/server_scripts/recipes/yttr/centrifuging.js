@@ -1,5 +1,17 @@
 (function yttrCentrifugingRecipes() {
   onEvent("recipes", (event) => {
+    /**
+     * @typedef CentrifugingRecipe
+     * @property {SubstitutableInput} input
+     * @property {{item: Special.Item, count?: number}[] & {length: 1 | 2 | 3 | 4}} output
+     * @property {number} time
+     */
+
+    /**
+     * @typedef {{item: Special.Item, count?: number, "yttr:no_substitution"?: boolean}} SubstitutableInput
+     */
+
+    /** @type {CentrifugingRecipe[]} */
     const centrifugingRecipes = [
       {
         input: { item: "minecraft:coal", count: 16 },

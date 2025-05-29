@@ -1,5 +1,6 @@
 (function astralFoodsTooltips() {
   onEvent("item.tooltip", (event) => {
+    /** @type {Helper.Tooltip[]} */
     const astralfoodsTooltips = [
       {
         item: "astralfoods:shimmered_rabbit_stew",

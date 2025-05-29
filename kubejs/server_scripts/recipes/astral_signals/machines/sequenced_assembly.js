@@ -8,7 +8,15 @@
   const mB = global.mB;
 
   onEvent("recipes", (event) => {
-    const assemblyRecipes = [
+    /**
+     * @typedef AssemblyRecipe
+     * @property {Internal.IngredientJS_} input
+     * @property {Internal.IngredientJS_[]} outputs
+     * @property {Internal.IngredientJS_} inter
+     */
+
+    /** @satisfies {AssemblyRecipe[]} */
+    const assemblyRecipes = /** @type {const} */ ([
       {
         input: "astralsignals:stirring_signal_beacon",
         outputs: [
@@ -56,7 +64,7 @@
         ],
         inter: "astralsignals:inter_data_drive_dormant_t3",
       },
-    ];
+    ]);
     assemblyRecipes.forEach((inst) => {
       event.recipes.create
         .sequenced_assembly(inst.outputs, inst.input, [

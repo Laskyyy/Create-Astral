@@ -1,5 +1,6 @@
 (function adAstraTooltips() {
   onEvent("item.tooltip", (event) => {
+    /** @type {Helper.Tooltip[]} */
     const adAstraTooltips = [
       {
         item: "ad_astra:space_helmet",

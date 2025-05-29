@@ -1,5 +1,16 @@
 (function shapelessRecipes() {
   onEvent("recipes", (event) => {
+    /**
+     * @typedef ManualOnlyRecipe
+     * @property {Internal.IngredientJS_[]} input
+     * @property {Internal.IngredientJS_} output
+     * @property {string} recipeID
+     */
+
+    /** 
+     * Manual only recipes - can't be automated with Create's Mechanical Mixers.
+     * @type {ManualOnlyRecipe[]}
+     */
     const manualOnlyRecipes = [
       {
         input: ["minecraft:magma_block", "minecraft:water_bucket"],
@@ -15,6 +26,17 @@
     manualOnlyRecipes.forEach((recipe) => {
       event.shapeless(recipe.output, recipe.input).id(`createastral:${recipe.recipeID}_manual_only`);
     });
+
+    /**
+     * @typedef ShapelessRecipe
+     * @property {Internal.IngredientJS_[]} input
+     * @property {Internal.IngredientJS_} output
+     */
+
+    /**
+     * General shapeless recipes - those can be automated with Create's Mechanical Mixers.
+     * @type {ShapelessRecipe[]}
+     */
     const shapelessRecipes = [
       {
         input: ["techreborn:rubber", "#ae2:glass_cable"],
@@ -164,6 +186,6 @@
     event
       .shapeless("minecraft:dripstone_block", ["minecraft:calcite", "minecraft:water_bucket"])
       .replaceIngredient("minecraft:water_bucket", "minecraft:bucket")
-      .id("techreborn:crafting_table/paper_manual_only");
+      .id("minecraft:crafting_table/dripstone_block_manual_only");
   });
 })();

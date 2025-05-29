@@ -1,5 +1,13 @@
 (function minecraftSmeltingRecipes() {
   onEvent("recipes", (event) => {
+    /**
+     * @typedef SmeltingRecipe
+     * @property {Internal.ItemStackJS_} input
+     * @property {Internal.ItemStackJS_} output
+     * @property {number} [xp]
+     */
+
+    /** @type {SmeltingRecipe[]} */
     const smeltingRecipes = [
       { input: "createastral:andesite_compound", output: "create:andesite_alloy" },
       { input: "minecraft:rotten_flesh", output: "minecraft:leather", xp: 2.0 },

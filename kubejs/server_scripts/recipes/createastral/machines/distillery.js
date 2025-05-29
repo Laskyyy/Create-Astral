@@ -8,7 +8,7 @@
   const mB = global.mB;
 
   onEvent("recipes", (event) => {
-    const oldDistillationTowerStructure = [
+    const oldDistillationTowerStructure = /** @type {const} */ ([
       // old structure is still supported to avoid breaking factories immediately
       ["       ", "       ", "  eee  ", "  eee  ", "  eee  ", "       ", "       "],
       ["   a   ", "   a   ", "  bbb  ", "aabbbaa", "  bbb  ", "   a   ", "   a   "],
@@ -16,8 +16,8 @@
       ["       ", "       ", "   c   ", "  c c  ", "   m   ", "       ", "       "],
       ["       ", "       ", "   c   ", "  c c  ", "   c   ", "       ", "       "],
       ["       ", "       ", "       ", "   c   ", "       ", "       ", "       "],
-    ];
-    const newDistillationTowerStructure = [
+    ]);
+    const newDistillationTowerStructure = /** @type {const} */ ([
       // moved the controller block so 5 sides are accessible including the back
       ["       ", "       ", "  eee  ", "  eee  ", "  eee  ", "       ", "       "],
       ["   a   ", "   a   ", "  bbb  ", "aabbbaa", "  bbb  ", "   a   ", "   a   "],
@@ -25,8 +25,47 @@
       ["       ", "       ", "   c   ", "  c c  ", "   c   ", "       ", "       "],
       ["       ", "       ", "   c   ", "  c c  ", "   m   ", "       ", "       "],
       ["       ", "       ", "       ", "   c   ", "       ", "       ", "       "],
-    ];
-    const distillationTowerStructure = [oldDistillationTowerStructure, newDistillationTowerStructure];
+    ]);
+    const distillationTowerStructure = /** @type {const} */ ([
+      oldDistillationTowerStructure,
+      newDistillationTowerStructure,
+    ]);
+
+    /*
+     * Aim of this script is to fix the blaze burner jank caused by fluid burners and superheated burners
+     * In each recipe block, specify the burners allowed for the recipe in a list
+     *
+     * Burners that can be used:
+     * - "create:blaze_burner"                               --- Unheated blaze burner
+     * - "createaddition:liquid_blaze_burner"                --- Unheated liquid burner
+     * - "create:blaze_burner{fuelLevel:1}"                  --- Heated blaze burner
+     * - "createaddition:liquid_blaze_burner{fuelLevel:1}"   --- Heated liquid blaze burner
+     * - "create:blaze_burner{fuelLevel:2}"                  --- Superheated blaze burner
+     * - "createaddition:liquid_blaze_burner{fuelLevel:2}"   --- Superheated liquid blaze burner
+     * - "create:blaze_burner{isCreative:1b}"                --- Creative blaze cake on blaze burner
+     * - "createaddition:liquid_blaze_burner{isCreative:1b}" --- Creative blaze cake on liquid blaze burner
+     *
+     * Heat state of creative burners is not stored in NBT so any burner interacted with a creative cake will work, including those in smouldering state.
+     *
+     * All fields (burnersAllowed, time, itemInput, fluidInput, energy, and fluidOutput) need to be filled to make the recipes work.
+     * Any extra recipes can go outside the forEach loop.
+     */
+
+    /** @typedef {"create:blaze_burner" | "createaddition:liquid_blaze_burner"} Burners */
+    /** @typedef {"fuelLevel:1" | "isCreative:1b"} HeatedNBT */
+    /** @typedef {"fuelLevel:2" | "isCreative:1b"} SuperheatedNBT */
+    /** @typedef {Burners | `${Burners}{${HeatedNBT | SuperheatedNBT}}`} Burner */
+    /**
+     * @typedef DistilleryRecipe
+     * @property {Burner[]} burnersAllowed
+     * @property {number} time
+     * @property {{ item: Special.Item; count: number }} itemInput
+     * @property {{ fluid: Special.Fluid; amount: number }} fluidInput
+     * @property {number} energy
+     * @property {{ fluid: Special.Fluid; amount: number }} fluidOutput
+     */
+
+    /** @type {DistilleryRecipe[]} */
     const distilleryRecipes = [
       {
         // biofuel

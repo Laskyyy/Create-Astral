@@ -2,6 +2,7 @@
   onEvent("recipes", (event) => {
     turbineSteamToEnergy(event);
   });
+  /** @param {Internal.RecipeEventJS} event  */
   function turbineSteamToEnergy(event) {
     event.custom({
       type: "custommachinery:custom_machine",

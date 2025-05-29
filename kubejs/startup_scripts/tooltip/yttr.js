@@ -1,5 +1,6 @@
 (function yttrTooltips() {
   onEvent("item.tooltip", (event) => {
+    /** @type {Helper.Tooltip[]} */
     const yttrTooltips = [
       {
         item: "yttr:gadolinite",

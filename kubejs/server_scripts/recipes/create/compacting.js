@@ -6,9 +6,15 @@
   const GEM = global.GEM;
   const NUGGET = global.NUGGET;
   const mB = global.mB;
-
+  /**
+   * @typedef CompactingRecipe
+   * @property {Internal.IngredientJS_} output
+   * @property {Internal.IngredientJS_[]} inputs
+   * @property {"heated" | "superheated"} [heat]
+   */
   onEvent("recipes", (event) => {
     lakyCompactingRecipes(event);
+    /** @type {CompactingRecipe[]} */
     const compactingRecipes = [
       {
         output: ["minecraft:end_stone"],
@@ -147,10 +153,7 @@
         inputs: [
           "create:sturdy_sheet",
           "create:andesite_casing",
-          {
-            fluid: "tconstruct:molten_obsidian",
-            amount: mB * 50,
-          },
+          { fluid: "tconstruct:molten_obsidian", amount: 50 * mB },
         ],
       },
       {
@@ -270,13 +273,7 @@
       },
       {
         output: ["ae2:silicon_press", "ae2:printed_silicon"],
-        inputs: [
-          "ae2:silicon_press",
-          {
-            fluid: "techreborn:silicon",
-            amount: INGOT,
-          },
-        ],
+        inputs: ["ae2:silicon_press", { fluid: "techreborn:silicon", amount: INGOT }],
         heat: "heated",
       },
       {
@@ -286,13 +283,7 @@
       },
       {
         output: ["ae2:logic_processor_press", "ae2:printed_logic_processor"],
-        inputs: [
-          "ae2:logic_processor_press",
-          {
-            fluid: "tconstruct:molten_gold",
-            amount: INGOT,
-          },
-        ],
+        inputs: ["ae2:logic_processor_press", { fluid: "tconstruct:molten_gold", amount: INGOT }],
         heat: "heated",
       },
       {
@@ -302,13 +293,7 @@
       },
       {
         output: ["ae2:engineering_processor_press", "ae2:printed_engineering_processor"],
-        inputs: [
-          "ae2:engineering_processor_press",
-          {
-            fluid: "tconstruct:molten_diamond",
-            amount: GEM,
-          },
-        ],
+        inputs: ["ae2:engineering_processor_press", { fluid: "tconstruct:molten_diamond", amount: GEM }],
         heat: "heated",
       },
       {
@@ -318,13 +303,7 @@
       },
       {
         output: ["ae2:calculation_processor_press", "ae2:printed_calculation_processor"],
-        inputs: [
-          "ae2:calculation_processor_press",
-          {
-            fluid: "kubejs:molten_desh",
-            amount: INGOT,
-          },
-        ],
+        inputs: ["ae2:calculation_processor_press", { fluid: "kubejs:molten_desh", amount: INGOT }],
         heat: "heated",
       },
       {
@@ -424,42 +403,27 @@
           Item.of("minecraft:pufferfish").withChance(0.15),
           Item.of("minecraft:ink_sac").withChance(0.15),
         ],
-        inputs: "minecraft:wet_sponge",
+        inputs: ["minecraft:wet_sponge"],
       },
       {
         output: "ad_astra:ostrum_ingot",
-        inputs: {
-          fluid: "kubejs:molten_ostrum",
-          amount: INGOT,
-        },
+        inputs: [{ fluid: "kubejs:molten_ostrum", amount: INGOT }],
       },
       {
         output: "ad_astra:ostrum_nugget",
-        inputs: {
-          fluid: "kubejs:molten_ostrum",
-          amount: NUGGET,
-        },
+        inputs: [{ fluid: "kubejs:molten_ostrum", amount: NUGGET }],
       },
       {
         output: "createdeco:cast_iron_ingot",
-        inputs: {
-          fluid: "createbigcannons:molten_cast_iron",
-          amount: INGOT,
-        },
+        inputs: [{ fluid: "createbigcannons:molten_cast_iron", amount: INGOT }],
       },
       {
         output: "createdeco:cast_iron_nugget",
-        inputs: {
-          fluid: "createbigcannons:molten_cast_iron",
-          amount: NUGGET,
-        },
+        inputs: [{ fluid: "createbigcannons:molten_cast_iron", amount: NUGGET }],
       },
       {
-        output: {
-          amount: BUCKET / 4,
-          fluid: "tconstruct:earth_slime",
-        },
-        inputs: "minecraft:slime_ball",
+        output: { fluid: "tconstruct:earth_slime", amount: SLIMEBALL },
+        inputs: ["minecraft:slime_ball"],
       },
       {
         output: "astralfoods:blaze_fries",
@@ -474,7 +438,9 @@
       event.recipes.createCompacting(recipe.output, recipe.inputs).heatRequirement(recipe.heat ?? "");
     });
   });
+  /** @param {Internal.RecipeEventJS} event */
   function lakyCompactingRecipes(event) {
+    /** @type {CompactingRecipe[]} */
     const recipeList = [
       {
         output: "create:ochrum",
@@ -527,9 +493,3 @@
     });
   }
 })();
-/**
- * @typedef {Object} CompactingRecipe
- * @property {Internal.IngredientJS_} output
- * @property {Internal.IngredientJS_} inputs
- * @property {"heated" | "superheated"} [heat]
- */

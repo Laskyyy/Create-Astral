@@ -1,3 +1,10 @@
+/**
+ * @typedef Upgrade
+ * @property {`${string}:${string}`} item
+ * @property {number} multiplier
+ */
+
+/** @type {Upgrade[]} */
 global.upgrades = [
   {
     item: "createastral:t1_upgrade",
@@ -26,19 +33,18 @@ global.upgrades = [
 ];
 (function misc() {
   const $DeferredRegister = java("dev.architectury.registry.registries.DeferredRegister");
-  // const $Tiers = java("net.minecraft.world.item.Tiers");
-  // const $Item = java("net.minecraft.world.item.Item");
   const $Registry = java("net.minecraft.core.Registry");
   const $UpgradeItem = java("io.github.mattidragon.extendeddrawers.item.UpgradeItem");
-  // const $ResourceLocation = java("net.minecraft.class_2960");
   const $ResourceLocation = java("net.minecraft.resources.ResourceLocation");
   const $FabricItemSettings = java("net.fabricmc.fabric.api.item.v1.FabricItemSettings");
   const $ToolManager = java("reborncore.api.ToolManager");
   const $GenericWrenchHelper = java("reborncore.common.util.GenericWrenchHelper");
   let ITEMS = $DeferredRegister.create("createastral", $Registry.ITEM_REGISTRY);
-  let drawer_multipliers = {}; // This will be used later for adding tooltips.
+  /**
+   * @param {string} resourceLocation
+   * @param {number} multiplier
+   */
   function registerUpgrade(resourceLocation, multiplier) {
-    drawer_multipliers[resourceLocation] = multiplier;
     ITEMS["register(net.minecraft.class_2960,java.util.function.Supplier)"](resourceLocation, () => {
       return new $UpgradeItem(new $FabricItemSettings(), $ResourceLocation.tryParse(resourceLocation), multiplier);
     });
@@ -47,11 +53,6 @@ global.upgrades = [
   ITEMS.register();
   // make create wrench work as tech reborn wrench
   $ToolManager.INSTANCE.customToolHandlerList.add(
-    new $GenericWrenchHelper(new $ResourceLocation("create:wrench"), true),
+    new $GenericWrenchHelper(new $ResourceLocation("create:wrench"), true)
   );
 })();
-/**
- * @typedef {Object} Upgrade
- * @property {`${string}:${string}`} item
- * @property {number} multiplier
- */
