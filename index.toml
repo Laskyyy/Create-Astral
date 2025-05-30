@@ -5950,7 +5950,7 @@ hash = "384657fcfd2f3e37fd3249f50d783afcfb5b97348099fc29f4a0291ea3f5d6b7"
 
 [[files]]
 file = "kubejs/assets/tconstruct/lang/en_us.json"
-hash = "b7850874d88a5eaa938d6c726f75d9a500e2da8e4c8901a6ba6749ee999dc071"
+hash = "d40c6bfbaf8cdda30cd37e16308cfdb674facc5c3c026be7c6a41cd5811399b1"
 
 [[files]]
 file = "kubejs/assets/tconstruct/lang/fr_fr.json"
@@ -14602,7 +14602,7 @@ hash = "a365ba5f4570e79b58a87d45cee6ecdab0492872ce0af2f219c0d04834f4a57a"
 
 [[files]]
 file = "kubejs/data/tconstruct/lang/en_us.json"
-hash = "c6fd7dc8ec922af25f133fc035396ccc110020f0d20b1e3cab43f6ba7982019a"
+hash = "df642e03b0dd686e412cf2b50fa5361419c2e48365d5cfa55bb578a87468bf84"
 
 [[files]]
 file = "kubejs/data/tconstruct/recipes/tools/modifiers/ability/double_jump.json"
@@ -15406,7 +15406,7 @@ hash = "8f2a3b672a0320bc915f389a18c5911c7034e985c074a19085f33152d0674ddc"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/tools/tool_materials.js"
-hash = "2a3493b14540eb1d8711e84b7abb316ae7a56c57b49aff7bf06aceb1c72060b1"
+hash = "6462ff729ca6ab016bf7828d986bc7254118c233ec0d8d7c42a428c61d4854a8"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/techreborn/blast_furnace.js"

@@ -1365,7 +1365,7 @@
     "material.tconstruct.iron": "Iron",
     "material.tconstruct.iron.oxidized": "Raw Iron",
     "material.tconstruct.iron.flavor": "Ironic. He could save others from death, but not himself.",
-    "material.tconstruct.iron.encyclopedia": "Causes mining blocks and hitting mobs to attract nearby items",
+    "material.tconstruct.iron.encyclopedia": "Gives an extra 15% durability per part",
     "material.tconstruct.iron.skull_flavor": "Violation of quarantine",
     "material.tconstruct.iron.skull_encyclopedia": "Melee attacks copy all negative status effects from the wearer to the target",
 

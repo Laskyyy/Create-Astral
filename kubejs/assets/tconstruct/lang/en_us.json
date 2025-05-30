@@ -6,23 +6,23 @@
 
     "material.tconstruct.desh": "Desh",
     "material.tconstruct.desh.flavor": "Soft, Speedy, Reliable.",
-    "material.tconstruct.desh.encyclopedia": "Average overall stats, contains a variety of unusual modifiers for mining and convenience.",
+    "material.tconstruct.desh.encyclopedia": "Grants +6 mining speed per level at full durability, 0 boost below 50% durability",
 
     "material.tconstruct.ostrum": "Ostrum",
     "material.tconstruct.ostrum.flavor": "This weighs tons! You're making tools out of this?!.",
-    "material.tconstruct.ostrum.encyclopedia": "Godly durability, but is a pain to swing with it's slow mining speed. Incredibly useful for ore mining.",
+    "material.tconstruct.ostrum.encyclopedia": "Gives an extra 15% durability per part",
 
     "material.tconstruct.calorite": "Calorite",
     "material.tconstruct.calorite.flavor": "Sharpest metal in the lands.",
-    "material.tconstruct.calorite.encyclopedia": "Blood red, just like your enemies after feeling the blade end of your cleaver.",
+    "material.tconstruct.calorite.encyclopedia": "Grants 0.75 damage per part",
 
     "material.tconstruct.shadow": "Shadow",
     "material.tconstruct.shadow.flavor": "As dense as dark matter.",
-    "material.tconstruct.shadow.encyclopedia": "Ridiculous durability. Makes for almost perfect tool rod handles and bindings.",
+    "material.tconstruct.shadow.encyclopedia": "Grants +19% durability, +4% damage and speed and +0.5 mining speed to blocks that don't require tools per part",
 
     "material.tconstruct.radiant": "Radiant",
-    "material.tconstruct.radiant.flavor": "Hard. Light.",
-    "material.tconstruct.radiant.encyclopedia": "The power of light itself. Extremely brittle in the casting process, it boasts unparalleled modifiers, speed, and slots to toy with. ",
+    "material.tconstruct.radiant.flavor": "The power of light itself.",
+    "material.tconstruct.radiant.encyclopedia": "Grants +8 mining speed against ores and 1 extra upgrade slot per part. The tool glows and can place Glows.",
 
     "material.tconstruct.iron.encyclopedia": "Causes mining blocks and hitting mobs to attract nearby items",
 
