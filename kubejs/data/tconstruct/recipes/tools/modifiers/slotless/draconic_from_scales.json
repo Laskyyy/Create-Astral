@@ -1,16 +1,12 @@
 {
-  "type": "tconstruct:modifier",
-  "inputs": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "item": "createastral:astral_singularity"
+      "fabric:load_conditions": [
+        {
+          "condition": "porting_lib:false"
+        }
+      ]
     }
-  ],
-  "tools": {
-    "tag": "tconstruct:modifiable"
-  },
-  "result": {
-    "name": "tconstruct:draconic",
-    "level": 1
-  },
-  "max_level": 1
+  ]
 }

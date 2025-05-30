@@ -1,0 +1,77 @@
+[
+  {
+    "name": "intro",
+    "data": "sections/introduction.json",
+    "icon": {
+      "item": "tconstruct:pick_head_cast"
+    }
+  },
+  {
+    "name": "smeltery",
+    "data": "sections/smeltery.json",
+    "icon": {
+      "item": "tconstruct:smeltery_controller"
+    }
+  },
+  {
+    "name": "entity_melting",
+    "data": "sections/entitymelting.json",
+    "icon": {
+      "item": "minecraft:creeper_head"
+    }
+  },
+  {
+    "name": "materials",
+    "extraData": { "tconstruct:material_tier": 3 },
+    "icon": {
+      "item": "tconstruct:slimesteel_ingot"
+    }
+  },
+  {
+    "name": "tools",
+    "data": "sections/tools.json",
+    "icon": {
+      "item": {
+        "type": "forge:nbt",
+        "item": "tconstruct:cleaver",
+        "nbt": {
+          "tic_broken": false,
+          "tic_display": true,
+          "Damage": 0,
+          "tic_materials": [
+            "tconstruct:ui_render#head",
+            "tconstruct:ui_render#handle",
+            "tconstruct:ui_render#extra",
+            "tconstruct:ui_render#large"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "abilities",
+    "data": "sections/abilities.json",
+    "icon": {
+      "item": {
+        "type": "forge:nbt",
+        "item": "tconstruct:creative_slot",
+        "nbt": {
+          "slot": "abilities"
+        }
+      }
+    }
+  },
+  {
+    "name": "defense",
+    "data": "sections/defense.json",
+    "icon": {
+      "item": {
+        "type": "forge:nbt",
+        "item": "tconstruct:creative_slot",
+        "nbt": {
+          "slot": "defense"
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "name": "foreward",
+    "type": "mantle:text",
+    "data": "intro/foreward.json"
+  },
+  {
+    "name": "updates",
+    "type": "mantle:text",
+    "data": "intro/updates.json"
+  }
+]

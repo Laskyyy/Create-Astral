@@ -3013,5 +3013,9 @@
     "text.rei.createastral.yttr.mercurial_potion": "Mercurial Potion",
     "text.rei.createastral.yttr.mercurial_splash_potion": "Mercurial Splash Potion",
 
-    "porting_lib.stepHeight": "Step Height"
+    "porting_lib.stepHeight": "Step Height",
+
+    "modifier.createastral.spacious": "Spacious",
+    "modifier.createastral.spacious.flavor": "So much room for activities!",
+    "modifier.createastral.spacious.description": "Gives extra room for an additional upgrade!"
 }

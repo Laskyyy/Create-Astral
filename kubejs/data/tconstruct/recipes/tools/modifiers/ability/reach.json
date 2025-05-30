@@ -5,16 +5,16 @@
       "item": "create:mechanical_piston"
     },
     {
-      "tag": "createastral:astral_conduit"
+      "item": "createastral:astral_conduit"
     },
     {
       "item": "create:mechanical_piston"
     },
     {
-      "tag": "create:piston_extension_pole"
+      "item": "create:piston_extension_pole"
     },
     {
-      "tag": "create:piston_extension_pole"
+      "item": "create:piston_extension_pole"
     }
   ],
   "tools": {
