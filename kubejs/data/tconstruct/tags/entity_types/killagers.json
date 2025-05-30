@@ -1,4 +1,9 @@
 {
   "replace": true,
-  "values": ["#c:villagers", "#c:illagers", "minecraft:iron_golem", "minecraft:ravager"]
+  "values": [
+    "#c:villagers",
+    "#c:illagers",
+    "minecraft:iron_golem",
+    "minecraft:ravager"
+  ]
 }

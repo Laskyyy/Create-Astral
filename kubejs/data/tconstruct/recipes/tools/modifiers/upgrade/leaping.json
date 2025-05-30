@@ -4,7 +4,7 @@
     "item": "tconstruct:sky_slime_dirt"
   },
   "amount_per_item": 1,
-  "needed_per_level": 118,
+  "needed_per_level": 18,
   "tools": {
     "tag": "tconstruct:modifiable/armor/leggings"
   },

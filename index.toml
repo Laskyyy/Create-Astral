@@ -5950,7 +5950,7 @@ hash = "384657fcfd2f3e37fd3249f50d783afcfb5b97348099fc29f4a0291ea3f5d6b7"
 
 [[files]]
 file = "kubejs/assets/tconstruct/lang/en_us.json"
-hash = "d40c6bfbaf8cdda30cd37e16308cfdb674facc5c3c026be7c6a41cd5811399b1"
+hash = "395ccb28ba5d254e8d97bd3a38ee79d92826c28b25f655b76aefc145d973bada"
 
 [[files]]
 file = "kubejs/assets/tconstruct/lang/fr_fr.json"
@@ -11906,7 +11906,7 @@ hash = "25872c3a34f3a317e7bd31c7fedfb1bcaf7123cb169486281c4d8df4edb5a1f4"
 
 [[files]]
 file = "kubejs/data/c/tags/entity_types/illagers.json"
-hash = "294d1bacc62ea86df9fd1512f545c2a1af6a254451cde847b3fe87d897750712"
+hash = "47b86d7f1f7b536950181c7a4b540f3a1d0ccf2d261cf9cbacce81b2e016ce26"
 
 [[files]]
 file = "kubejs/data/c/tags/entity_types/slimes.json"
@@ -11918,7 +11918,7 @@ hash = "f1b2982eb46519f71c5c90161a3a8904a7fb339b1626645c58e7b657b8607493"
 
 [[files]]
 file = "kubejs/data/c/tags/entity_types/villagers.json"
-hash = "5127aab05e8e547a6834271b427a8724a99947e6913dcf1f4859a8dfce21362f"
+hash = "16794673e4f3c45e74ce84db78c3f339ddcc03be09159022f0139ed97b2f73cb"
 
 [[files]]
 file = "kubejs/data/c/tags/fluids/beetroot_soup.json"
@@ -14834,7 +14834,7 @@ hash = "928200922241a5b44c3192ddbab70951a41c1797f53da1536e8ea365886f3b09"
 
 [[files]]
 file = "kubejs/data/tconstruct/tags/entity_types/killagers.json"
-hash = "3aa267ceeb393e26401d86ecc4587c31a6b44f6719d48e40687c0762ad81c0a3"
+hash = "3dde71878edff9f132d01ef983f7d0cad4d657b6e964f38f624a5bd9af3f6336"
 
 [[files]]
 file = "kubejs/data/tconstruct/tags/fluids/desh.json"
