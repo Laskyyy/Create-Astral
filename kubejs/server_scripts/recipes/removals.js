@@ -633,6 +633,7 @@
       },
       { output: "minecraft:dispenser" },
       { input: "tconstruct:copper_nugget", output: "minecraft:copper_ingot" },
+      { id: "minecraft:cut_copper" },
       // xpcrystals
       { output: "xpcrystals:crystal_broth" },
       { output: "xpcrystals:sticky_crystal_pudding" },

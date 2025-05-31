@@ -185,6 +185,10 @@
         input: "minecraft:copper_block",
         outputs: [Item.of("createdeco:copper_sheet_metal", 4)],
       },
+      {
+        input: "minecraft:copper_block",
+        outputs: [Item.of("minecraft:cut_copper", 4)],
+      },
     ];
     stonecuttingRecipes.forEach((recipe) => {
       recipe.outputs.forEach((output) => {
