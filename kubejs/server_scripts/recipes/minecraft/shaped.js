@@ -1494,6 +1494,97 @@
           P: "#minecraft:planks",
         },
       },
+      {
+        output: "minecraft:oak_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "minecraft:oak_slab",
+        },
+      },
+      {
+        output: "minecraft:spruce_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "minecraft:spruce_slab",
+        },
+      },
+      {
+        output: "minecraft:birch_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "minecraft:birch_slab",
+        },
+      },
+      {
+        output: "minecraft:jungle_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "minecraft:jungle_slab",
+        },
+      },
+      {
+        output: "minecraft:acacia_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "minecraft:acacia_slab",
+        },
+      },
+      {
+        output: "minecraft:dark_oak_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "minecraft:dark_oak_slab",
+        },
+      },
+      {
+        output: "minecraft:warped_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "minecraft:warped_slab",
+        },
+      },
+      {
+        output: "minecraft:crimson_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "minecraft:crimson_slab",
+        },
+      },
+      {
+        output: "techreborn:rubber_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "techreborn:rubber_plank_slab",
+        },
+      },
+      {
+        output: "tconstruct:greenheart_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "tconstruct:greenheart_planks_slab",
+        },
+      },
+      {
+        output: "tconstruct:skyroot_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "tconstruct:skyroot_planks_slab",
+        },
+      },
+      {
+        output: "tconstruct:bloodshroom_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "tconstruct:bloodshroom_planks_slab",
+        },
+      },
+      {
+        output: "vinery:cherry_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "vinery:cherry_slab",
+        },
+      },
     ];
     shapedRecipes.forEach((recipe) => {
       event.shaped(recipe.output, recipe.pattern, recipe.key);
