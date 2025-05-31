@@ -1486,6 +1486,14 @@
           O: "ad_astra:oxygen_bucket",
         },
       },
+      {
+        output: "vinery:grapevine_pot",
+        pattern: ["S S", "PPP"],
+        key: {
+          S: "#minecraft:wooden_slabs",
+          P: "#minecraft:planks",
+        },
+      },
     ];
     shapedRecipes.forEach((recipe) => {
       event.shaped(recipe.output, recipe.pattern, recipe.key);

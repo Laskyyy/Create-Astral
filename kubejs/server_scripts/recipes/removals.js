@@ -641,6 +641,7 @@
       { output: "xpcrystals:xp_boost_potion" },
       // vinery
       { output: "vinery:wine_rack_1" },
+      { output: "vinery:grapevine_pot" },
       // techreborn
       { output: "techreborn:sulfur" },
       {
