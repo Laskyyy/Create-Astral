@@ -77,6 +77,7 @@ The format is a slight modification of the [Keep a Changelog](https://keepachang
 
 - Updated Create: Copycats+ to 2.2.2 as the mod has been known to cause rendering issues in the older version.
 - Updated REI to 8.4.788 as the mod has been known to cause crashes in the older version.
+- Updated Defined's Blocks to 1.0.2.
 
 #### Behind-the-scenes
 
