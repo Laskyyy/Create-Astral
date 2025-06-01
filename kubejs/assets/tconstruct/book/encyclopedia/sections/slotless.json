@@ -48,6 +48,10 @@
   },
   {
     "type": "tconstruct:modifier",
+    "data": "slotless/bonus/amplified.json"
+  },
+  {
+    "type": "tconstruct:modifier",
     "data": "slotless/bonus/harmonious.json"
   },
   {
