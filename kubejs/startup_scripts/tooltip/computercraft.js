@@ -1,5 +1,6 @@
 (function computerCraftTooltips() {
   onEvent("item.tooltip", (event) => {
+    /** @type {Helper.Tooltip[]} */
     const computercraftTooltips = [
       {
         item: "computercraft:disk",

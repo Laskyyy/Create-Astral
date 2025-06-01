@@ -1,5 +1,12 @@
 (function createSandpaperPolishingRecipes() {
   onEvent("recipes", (event) => {
+    /**
+     * @typedef SandpaperPolishingRecipe
+     * @property {Internal.IngredientJS_} input
+     * @property {Internal.IngredientJS_} output
+     */
+
+    /** @type {SandpaperPolishingRecipe[]} */
     const sandpaperPolishingRecipes = [
       {
         input: "minecraft:blackstone",

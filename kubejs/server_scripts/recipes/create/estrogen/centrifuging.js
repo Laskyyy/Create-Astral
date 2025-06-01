@@ -9,9 +9,9 @@
   onEvent("recipes", (event) => {
     /**
      * @typedef CentrifugingRecipe
-     * @prop {Special.Fluid} input
-     * @prop {Special.Fluid} output
-     * @prop {number} amount
+     * @property {Special.Fluid} input
+     * @property {Special.Fluid} output
+     * @property {number} amount
      */
 
     /** @type {CentrifugingRecipe[]} */

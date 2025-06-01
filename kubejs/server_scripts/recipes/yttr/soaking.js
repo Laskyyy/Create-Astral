@@ -1,5 +1,14 @@
 (function yttrSoakingRecipes() {
   onEvent("recipes", (event) => {
+    /**
+     * @typedef SoakingRecipe
+     * @property {{item: Special.Item}[]} input
+     * @property {Special.Fluid} soakingFluid
+     * @property {{block: Special.Block}} output
+     * @property {Special.SoundEvent} [sound]
+     */
+    
+    /** @type {SoakingRecipe[]} */
     const soakingRecipes = [
       {
         input: [{ item: "create:chromatic_compound" }],

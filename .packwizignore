@@ -4,6 +4,9 @@
 # Exclude README
 /README.md
 LICENSE*.md
+CHANGELOG.md
+CONTRIBUTING.md
+CODE_STYLE.md
 .prettierrc
 packwiz
 packwiz.exe
@@ -13,6 +16,7 @@ kubejs/probe
 .idea
 reload-example.bat
 server.packwizignore
+.envrc
 
 # The contents of the serverpack folder will automatically get lifted to the root directory on build
 serverpack

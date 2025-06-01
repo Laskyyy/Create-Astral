@@ -1,11 +1,20 @@
 (function stoneGrowthChamberRecipes() {
   onEvent("recipes", (event) => {
-    const newCopperSGCStructure = [
+    const newCopperSGCStructure = /** @type {const} */ ([
       ["aaa", "aaa", "ama"],
       ["ggg", "glg", "ggg"],
       ["aaa", "aaa", "aaa"],
-    ];
-    const stoneGrowthChamberRecipes = [
+    ]);
+
+    /**
+     * @typedef StoneGrowthChamberRecipe
+     * @property {string} material
+     * @property {Special.Item} output
+     * @property {number} time
+     */
+
+    /** @satisfies {StoneGrowthChamberRecipe[]} */
+    const stoneGrowthChamberRecipes = /** @type {const} */([
       {
         material: "andesite",
         output: "minecraft:andesite",
@@ -41,7 +50,7 @@
         output: "ad_astra:venus_cobblestone",
         time: 10,
       },
-    ];
+    ]);
     stoneGrowthChamberRecipes.forEach((recipe) => {
       event.custom({
         type: "custommachinery:custom_machine",

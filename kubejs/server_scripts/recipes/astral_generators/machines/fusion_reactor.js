@@ -2,6 +2,7 @@
   onEvent("recipes", (event) => {
     fusionHelium3(event);
   });
+  /** @param {Internal.RecipeEventJS} event  */
   function fusionHelium3(event) {
     event.custom({
       type: "custommachinery:custom_machine",

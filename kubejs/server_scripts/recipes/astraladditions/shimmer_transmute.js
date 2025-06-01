@@ -1,5 +1,13 @@
 (function astralAdditionsShimmerTransmutationRecipes() {
   onEvent("recipes", (event) => {
+    /**
+     * @typedef ShimmerTransmutationRecipe
+     * @property {Special.Item} input
+     * @property {Special.Item} output
+     * @property {boolean} stack64 Allows 64 of an item to be transmuted.
+     */
+
+    /** @type {ShimmerTransmutationRecipe[]} */
     const shimmerTransmutationRecipes = [
       {
         input: "tconstruct:earth_slime_grass_seeds",

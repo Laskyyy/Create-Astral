@@ -1,6 +1,14 @@
 (function minecraftStonecuttingRecipes() {
+  /**
+   * @typedef StonecuttingRecipe
+   * @property {Internal.IngredientJS_} input
+   * @property {Internal.ItemStackJS_[]} outputs
+   */
+
   onEvent("recipes", (event) => {
     copperOxidising(event);
+
+    /** @type {StonecuttingRecipe[]} */
     const stonecuttingRecipes = [
       {
         input: "createastral:blast-resistant_concrete",
@@ -177,6 +185,10 @@
         input: "minecraft:copper_block",
         outputs: [Item.of("createdeco:copper_sheet_metal", 4)],
       },
+      {
+        input: "minecraft:copper_block",
+        outputs: [Item.of("minecraft:cut_copper", 4)],
+      },
     ];
     stonecuttingRecipes.forEach((recipe) => {
       recipe.outputs.forEach((output) => {
@@ -184,6 +196,7 @@
       });
     });
   });
+  /** @param {Internal.RecipeEventJS} event */
   function copperOxidising(event) {
     // Oxidisation of all copper blocks that can weather
     for (const block of global.VANILLA_COPPER_BLOCKS) {
@@ -199,6 +212,13 @@
       }
     }
     global.OXIDIZATION_TYPES.forEach((state) => {
+      /**
+       * @typedef OtherCopperStonecuttingRecipe
+       * @property {Internal.ItemStackJS_} input
+       * @property {Internal.ItemStackJS_[]} outputs
+       */
+
+      /** @type {OtherCopperStonecuttingRecipe[]} */
       const otherCopperStonecuttingRecipes = [
         { input: "minecraft:copper_block", outputs: [`minecraft:${state}_copper`] },
         { input: "minecraft:waxed_copper_block", outputs: [`minecraft:waxed_${state}_copper`] },
@@ -215,8 +235,3 @@
     });
   }
 })();
-/**
- * @typedef {Object} StonecuttingRecipe
- * @property {Internal.IngredientJS_} input
- * @property {Internal.ItemStackJS_[]} outputs
- */

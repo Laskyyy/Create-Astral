@@ -1,5 +1,13 @@
 (function astralAdditionsChromaticVacuumRecipes() {
   onEvent("recipes", (event) => {
+    /**
+     * @typedef ChromaticVacuumRecipe
+     * @property {Special.Block} block
+     * @property {Special.Item} loot
+     * @property {Special.Block} result
+     */
+
+    /** @type {ChromaticVacuumRecipe[]} */
     const chromaticVacuumRecipes = [
       {
         block: "yttr:continuous_platform",
@@ -39,7 +47,7 @@
   });
   onEvent("recipes", (event) => {
     // white is the fallback colour extracted blocks resort to so i've excluded it from this to prevent infinite loop of white dye
-    const colours = [
+    const colours = /** @type {const} */ ([
       "orange",
       "magenta",
       "light_blue",
@@ -55,7 +63,7 @@
       "green",
       "red",
       "black",
-    ];
+    ]);
     // wool
     colours.forEach((colour) => {
       event.custom({

@@ -1,10 +1,18 @@
 (function hideFromREI() {
+  /**
+   *
+   * @param {Internal.IngredientJS_[]} list
+   * @param {Special.Item} item
+   * @param {string} chippedBlock
+   * @param {number} maxNum
+   */
   function addTinkerTableVariants(list, item, chippedBlock, maxNum) {
     for (let num = 1; num <= maxNum; num++) {
       list.push(Item.of(item, `{texture:"chipped:${chippedBlock}_${num}"}`));
     }
   }
   onEvent("rei.hide.items", (event) => {
+    /** @type {Internal.IngredientJS_[]} */
     let HIDDEN_ITEMS = [
       "ae2:silicon",
       "extended_drawers:t1_upgrade",
@@ -676,7 +684,7 @@
     addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:tinker_station", "dark_oak_planks", 41);
     addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:tinker_station", "crimson_planks", 41);
     addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:tinker_station", "warped_planks", 41);
-    const gems = ["peridot", "red_garnet", "ruby", "sapphire", "yellow_garnet"];
+    const gems = /** @type {const} */ (["peridot", "red_garnet", "ruby", "sapphire", "yellow_garnet"]);
     gems.forEach((gem) => {
       HIDDEN_ITEMS.push(`techreborn:${gem}_storage_block`);
       HIDDEN_ITEMS.push(`techreborn:${gem}_storage_block_stairs`);
@@ -686,12 +694,12 @@
       HIDDEN_ITEMS.push(`techreborn:${gem}_dust`);
       HIDDEN_ITEMS.push(`techreborn:${gem}_small_dust`);
     });
-    const gemsWithOres = ["peridot", "ruby", "sapphire"];
+    const gemsWithOres = /** @type {const} */ (["peridot", "ruby", "sapphire"]);
     gemsWithOres.forEach((gem) => {
       HIDDEN_ITEMS.push(`techreborn:${gem}_ore`);
       HIDDEN_ITEMS.push(`techreborn:deepslate_${gem}_ore`);
     });
-    const ingots = [
+    const ingots = /** @type {const} */ ([
       "tungstensteel",
       "chrome",
       "titanium",
@@ -702,7 +710,7 @@
       "platinum",
       "brass",
       "zinc",
-    ];
+    ]);
     ingots.forEach((ingot) => {
       HIDDEN_ITEMS.push(`techreborn:${ingot}_ingot`);
       HIDDEN_ITEMS.push(`techreborn:${ingot}_nugget`);
@@ -712,16 +720,31 @@
       HIDDEN_ITEMS.push(`techreborn:${ingot}_storage_block_stairs`);
       HIDDEN_ITEMS.push(`techreborn:${ingot}_storage_block_wall`);
     });
-    const ingotsWithDusts = ["chrome", "titanium", "nickel", "aluminum", "platinum", "brass", "zinc"];
+    const ingotsWithDusts = /** @type {const} */ ([
+      "chrome",
+      "titanium",
+      "nickel",
+      "aluminum",
+      "platinum",
+      "brass",
+      "zinc",
+    ]);
     ingotsWithDusts.forEach((ingot) => {
       HIDDEN_ITEMS.push(`techreborn:${ingot}_dust`);
     });
-    const ingotsWithSmallDusts = ["chrome", "titanium", "nickel", "tungsten", "platinum", "zinc"];
+    const ingotsWithSmallDusts = /** @type {const} */ ([
+      "chrome",
+      "titanium",
+      "nickel",
+      "tungsten",
+      "platinum",
+      "zinc",
+    ]);
     ingotsWithSmallDusts.forEach((ingot) => {
       HIDDEN_ITEMS.push(`techreborn:${ingot}_small_dust`);
     });
     // format, dust name, true if used for anything (keep dust, but not tiny dust)
-    const dusts = [
+    const dusts = /** @type {const} */ ([
       { name: "almandine", hideDust: true },
       { name: "amethyst", hideDust: false, hasSmallDust: false },
       { name: "andesite", hideDust: false },
@@ -768,7 +791,7 @@
       { name: "steel", hideDust: false },
       { name: "sulfur", hideDust: false },
       { name: "uvarovite", hideDust: true },
-    ];
+    ]);
     dusts.forEach((dust) => {
       if (dust.hideDust) {
         HIDDEN_ITEMS.push(`techreborn:${dust.name}_dust`);
@@ -777,7 +800,7 @@
         HIDDEN_ITEMS.push(`techreborn:${dust.name}_small_dust`);
       }
     });
-    const plates = [
+    const plates = /** @type {const} */ ([
       "carbon",
       "coal",
       "copper",
@@ -798,7 +821,7 @@
       "sapphire",
       "silicon",
       "yellow_garnet",
-    ];
+    ]);
     plates.forEach((id) => HIDDEN_ITEMS.push(`techreborn:${id}_plate`));
     HIDDEN_ITEMS.forEach((id) => event.hide(id));
   });

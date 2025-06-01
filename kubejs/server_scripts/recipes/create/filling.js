@@ -9,6 +9,15 @@
 
   onEvent("recipes", (event) => {
     // The functions are pretty self-explanatory
+    /**
+     * @typedef FillingRecipe
+     * @property {Internal.ItemStackJS_} input
+     * @property {Internal.ItemStackJS_} output
+     * @property {Special.Fluid} fluid
+     * @property {number} amount
+     */
+
+    /** @type {FillingRecipe[]} */
     const fillingRecipes = [
       {
         input: "minecraft:glass_bottle",

@@ -1,5 +1,6 @@
 (function createAstralTooltips() {
   onEvent("item.tooltip", (event) => {
+    /** @type {Helper.Tooltip[]} */
     const createastralTooltips = [
       {
         item: "createastral:swift_andesite",

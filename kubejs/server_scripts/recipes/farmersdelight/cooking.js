@@ -1,5 +1,14 @@
 (function farmersDelightCookingRecipes() {
   onEvent("recipes", (event) => {
+    /**
+     * @typedef FarmersDelightCookingRecipe
+     * @property {{ item: Special.Item }[]} input
+     * @property {{ item: Special.Item }} output
+     * @property {number} xp
+     * @property {number} time
+     */
+
+    /** @type {FarmersDelightCookingRecipe[]} */
     const farmersDelightCookingRecipes = [
       {
         input: [{ item: "createastral:astral_singularity" }],

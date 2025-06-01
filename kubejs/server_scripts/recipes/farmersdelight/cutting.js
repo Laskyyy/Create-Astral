@@ -1,5 +1,14 @@
 (function farmersDelightCuttingRecipes() {
   onEvent("recipes", (event) => {
+    /**
+     * @typedef FarmersDelightCuttingRecipe
+     * @property {Special.Item} input
+     * @property {Special.ItemTag} tool
+     * @property {{ item: Special.Item; count?: number }[]} result
+     * @property {Special.SoundEvent} [sound]
+     */
+
+    /** @type {FarmersDelightCuttingRecipe[]} */
     const farmersDelightCuttingRecipes = [
       {
         input: "techreborn:rubber_log",

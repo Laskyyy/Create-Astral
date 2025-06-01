@@ -1,8 +1,10 @@
 (function extendedDrawersTooltips() {
   onEvent("item.tooltip", (event) => {
+    /** @type {Helper.Tooltip[]} */
     for (const upgrade of global.upgrades) {
+      let upgradeItem = /** @type {Special.Item} */ (upgrade.item)
       event.add(
-        [upgrade.item],
+        upgradeItem,
         Text.gray(Component.translate("tooltip.drawer.upgrade")).append(Text.green(`${upgrade.multiplier}x`)),
       );
     }

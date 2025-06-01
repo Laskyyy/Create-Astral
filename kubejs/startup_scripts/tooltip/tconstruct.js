@@ -1,5 +1,6 @@
 (function hephaestusTooltips() {
   onEvent("item.tooltip", (event) => {
+    /** @type {Helper.Tooltip[]} */
     const tconstructTooltips = [
       {
         item: "tconstruct:smeltery_controller",

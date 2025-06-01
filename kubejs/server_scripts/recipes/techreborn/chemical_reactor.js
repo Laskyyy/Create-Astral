@@ -1,5 +1,21 @@
 (function techRebornChemicalReactorRecipes() {
   onEvent("recipes", (event) => {
+    /**
+     * @typedef ChemicalReactorRecipe
+     * @property {(FluidCell | {item: Special.Item, count?: number})[]} input
+     * @property {{item: Special.Item, count?: number}[]} output
+     * @property {number} power
+     * @property {number} time
+     */
+
+    /**
+     * @typedef FluidCell
+     * @property {Special.Fluid} fluid
+     * @property {Special.Item} holder
+     * @property {number} count
+     */
+
+    /** @type {ChemicalReactorRecipe[]} */
     const chemicalReactorRecipes = [
       {
         input: [

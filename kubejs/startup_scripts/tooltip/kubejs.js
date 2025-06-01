@@ -1,5 +1,6 @@
 (function kubeJSTooltips() {
   onEvent("item.tooltip", (event) => {
+    /** @type {Helper.Tooltip[]} */
     const kubejsTooltips = [
       {
         item: "kubejs:broken_fire_resistant_fragile_sheet_block",

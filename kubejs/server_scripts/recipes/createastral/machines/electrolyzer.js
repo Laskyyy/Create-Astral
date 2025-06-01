@@ -8,17 +8,17 @@
   const mB = global.mB;
 
   onEvent("recipes", (event) => {
-    const standardElectrolyzerStructure = [
+    const standardElectrolyzerStructure = /** @type {const} */ ([
       ["aaa", "aaa", "ama"],
       ["bbb", "b b", "bbb"],
       ["aaa", "aaa", "aaa"],
-    ]; // air gap in middle
-    const fallbackElectrolyzerStructure = [
+    ]); // air gap in middle
+    const fallbackElectrolyzerStructure = /** @type {const} */ ([
       ["aaa", "aaa", "ama"],
       ["bbb", "bbb", "bbb"],
       ["aaa", "aaa", "aaa"],
-    ]; // "fallback recipe for peeps who built it wrong" - lasky
-    const electrolyzerStructure = [standardElectrolyzerStructure, fallbackElectrolyzerStructure];
+    ]); // "fallback recipe for peeps who built it wrong" - lasky
+    const electrolyzerStructure = /** @type {const} */ ([standardElectrolyzerStructure, fallbackElectrolyzerStructure]);
     const electrolyzerRecipes = [
       {
         time: 20,

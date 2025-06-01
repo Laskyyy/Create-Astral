@@ -2,7 +2,7 @@
   console.info("Hello, World! (You will see this line every time client resources reload)");
   onEvent("rei.group", (event) => {
     event.groupItems("kubejs:rei_groups/chipped", Component.of("Chipped Blocks"), [
-      Ingredient.of("@chipped")
+      Ingredient.of(/** @type {Internal.IngredientJS_} */ ("@chipped"))
         .getItemIds()
         .toArray()
         .filter(
@@ -14,24 +14,24 @@
             item !== "chipped:alchemy_bench" &&
             item !== "chipped:tinkering_table" &&
             item !== "chipped:carpenters_table" &&
-            item !== "chipped:mechanist_workbench",
+            item !== "chipped:mechanist_workbench"
         ),
     ]);
     //Decrypted Drives
     event.groupItemsByTag(
       "createastral:rei_groups/astralsignals/drives_decrypted_t1",
       Component.translate("text.rei.createastral.astralsignals.drives_decrypted_t1"),
-      "astralsignals:drives_decrypted_t1",
+      "astralsignals:drives_decrypted_t1"
     );
     event.groupItemsByTag(
       "createastral:rei_groups/astralsignals/drives_decrypted_t2",
       Component.translate("text.rei.createastral.astralsignals.drives_decrypted_t2"),
-      "astralsignals:drives_decrypted_t2",
+      "astralsignals:drives_decrypted_t2"
     );
     event.groupItemsByTag(
       "createastral:rei_groups/astralsignals/drives_decrypted_t3",
       Component.translate("text.rei.createastral.astralsignals.drives_decrypted_t3"),
-      "astralsignals:drives_decrypted_t3",
+      "astralsignals:drives_decrypted_t3"
     );
     // My type-safe implementation doesn't work
     // function getCreatePotion(fluid: Internal.FluidStackJS_, type: string): boolean {
@@ -62,43 +62,43 @@
     event.groupFluidsIf(
       "createastral:rei_groups/create/potion",
       Component.translate("text.rei.createastral.create.potion.regular"),
-
-      (fluid) => fluid.getId() === createPotion && fluid.nbt.Bottle === "REGULAR",
+      // @ts-expect-error My type-safe implementation didn't work.
+      (fluid) => fluid.getId() === createPotion && fluid.nbt.Bottle === "REGULAR"
     );
     event.groupFluidsIf(
       "createastral:rei_groups/create/splash_potion",
       Component.translate("text.rei.createastral.create.potion.splash"),
-
-      (fluid) => fluid.getId() === createPotion && fluid.nbt.Bottle === "SPLASH",
+      // @ts-expect-error My type-safe implementation didn't work.
+      (fluid) => fluid.getId() === createPotion && fluid.nbt.Bottle === "SPLASH"
     );
     event.groupFluidsIf(
       "createastral:rei_groups/create/lingering_potion",
       Component.translate("text.rei.createastral.create.potion.lingering"),
-
-      (fluid) => fluid.getId() === createPotion && fluid.nbt.Bottle === "LINGERING",
+      // @ts-expect-error My type-safe implementation didn't work.
+      (fluid) => fluid.getId() === createPotion && fluid.nbt.Bottle === "LINGERING"
     );
     //Packages
     event.groupSameItem(
       "createastral:rei_groups/packages/package",
       Component.translate("text.rei.createastral.packages.package"),
-      "packages:package",
+      "packages:package"
     );
     //Tech Reborn cells
     event.groupSameItem(
       "createastral:rei_groups/techreborn/cell",
       Component.translate("text.rei.createastral.techreborn.cell"),
-      "techreborn:cell",
+      "techreborn:cell"
     );
     //Tinker's anvils
     event.groupSameItem(
       "createastral:rei_groups/tconstruct/tinkers_anvil",
       Component.translate("text.rei.createastral.tconstruct.tinkers_anvil"),
-      "tconstruct:tinkers_anvil",
+      "tconstruct:tinkers_anvil"
     );
     event.groupSameItem(
       "createastral:rei_groups/tconstruct/scorched_anvil",
       Component.translate("text.rei.createastral.tconstruct.scorched_anvil"),
-      "tconstruct:scorched_anvil",
+      "tconstruct:scorched_anvil"
     );
     //Tinker's tool parts and tools
     //DOES NOT WORK. There is no way to group all tool parts and tools into their own categories. And grouping by part or tool could be annoying.
@@ -107,18 +107,18 @@
     event.groupSameItem(
       "createastral:rei_groups/tconstruct/slime_helmet",
       Component.translate("text.rei.createastral.tconstruct.slime_helmet"),
-      "tconstruct:slime_helmet",
+      "tconstruct:slime_helmet"
     );
     //mercurial potions
     event.groupSameItem(
       "createastral:rei_groups/yttr/mercurial_potion",
       Component.translate("text.rei.createastral.yttr.mercurial_potion"),
-      "yttr:mercurial_potion",
+      "yttr:mercurial_potion"
     );
     event.groupSameItem(
       "createastral:rei_groups/yttr/mercurial_splash_potion",
       Component.translate("text.rei.createastral.yttr.mercurial_potion"),
-      "yttr:mercurial_splash_potion",
+      "yttr:mercurial_splash_potion"
     );
   });
   onEvent("rei.add.items", (event) => {
@@ -132,8 +132,8 @@
   });
   //Add Potion fluids to REI
   onEvent("rei.add.fluids", (event) => {
-    let bottles = ["REGULAR", "SPLASH", "LINGERING"];
-    let potions = [
+    let bottles = /** @type {const} */ ["REGULAR", "SPLASH", "LINGERING"];
+    let potions = /** @type {const} */ ([
       //The order that we create these rei entries in is important!
       ["minecraft:mundane", []],
       ["minecraft:thick", []],
@@ -156,7 +156,7 @@
       ["minecraft:slow_falling", ["long"]],
       ["naturalist:forest_dasher", ["long", "strong"]],
       ["naturalist:glowing", ["long"]],
-    ];
+    ]);
     bottles.forEach((bottle) => {
       for (let i = 0; i < potions.length; ++i) {
         let potionName = potions[i][0];

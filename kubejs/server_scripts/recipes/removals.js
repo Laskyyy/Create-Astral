@@ -1,8 +1,7 @@
 (function recipeRemovals() {
   onEvent("recipes", (event) => {
-    // Removal Object
-    // Output, Input, Type, Mod
     //Tech Reborn
+    /** @type {Internal.RecipeFilter_[]} */
     const recipeRemovals = [
       // storage units
       { output: "techreborn:crude_storage_unit" },
@@ -390,9 +389,11 @@
       { id: "tconstruct:smeltery/casting/metal/steel/ingot_sand_cast" },
       { id: "tconstruct:smeltery/casting/metal/steel/nugget_gold_cast" },
       { id: "tconstruct:smeltery/casting/metal/steel/nugget_sand_cast" },
+      // @ts-expect-error Missing recipe?
       { id: "tconstruct:smeltery/casting/metal/steel/plate_gold_cast" },
+      // @ts-expect-error Missing recipe?
       { id: "tconstruct:smeltery/casting/metal/steel/plate_sand_cast" },
-
+      // @ts-expect-error Missing recipe?
       { id: "tconstruct:smeltery/casting/metal/uranium/block" },
       { id: "tconstruct:smeltery/casting/scorched/brick_composite" },
       { id: "tconstruct:smeltery/casting/scorched/polished_from_magma" },
@@ -404,9 +405,11 @@
       { id: "tconstruct:smeltery/casting/seared/chiseled" },
       { id: "tconstruct:smeltery/casting/seared/cracked" },
       { id: "tconstruct:smeltery/casting/seared/paver" },
+      // @ts-expect-error Missing recipe?
       { id: "tconstruct:smeltery/casting/slime/ichor/block" },
+      // @ts-expect-error Missing recipe?
       { id: "tconstruct:smeltery/casting/slime/ichor/congealed" },
-
+      // @ts-expect-error Missing recipe?
       { id: "tconstruct:smeltery/casting/slime/slimeball" },
       { id: "tconstruct:smeltery/entity_melting/blaze" },
       { id: "tconstruct:smeltery/entity_melting/heads/blaze" },
@@ -423,9 +426,11 @@
       { id: "tconstruct:smeltery/melting/metal/iron/raw_block" },
       { id: "tconstruct:smeltery/melting/metal/iron/raw" },
       { id: "tconstruct:smeltery/melting/metal/rose_gold/silky_cloth" },
+      // @ts-expect-error Missing recipe?
       { id: "tconstruct:smeltery/melting/metal/silver/ore_singular" },
       { id: "tconstruct:smeltery/melting/metal/silver/raw_block" },
       { id: "tconstruct:smeltery/melting/metal/silver/raw" },
+      // @ts-expect-error Missing recipe?
       { id: "tconstruct:smeltery/melting/metal/tin/ore_singular" },
       { id: "tconstruct:smeltery/melting/metal/tin/raw_block" },
       { id: "tconstruct:smeltery/melting/metal/tin/raw" },
@@ -433,7 +438,7 @@
       { id: "tconstruct:smeltery/melting/obsidian/block" },
       { id: "tconstruct:smeltery/melting/obsidian/chest" },
       { id: "tconstruct:smeltery/melting/obsidian/dust" },
-
+      // @ts-expect-error Missing recipe?
       { id: "tconstruct:smeltery/melting/obsidian/foundry_controler" },
       { id: "tconstruct:smeltery/melting/obsidian/foundry_io" },
       { id: "tconstruct:smeltery/melting/obsidian/pane" },
@@ -486,7 +491,7 @@
       { output: "mcdw:sword_diamond_sword_var" },
       { output: "automobility:auto_mechanic_table" },
       { output: "automobility:automobile_assembler" },
-
+      // @ts-expect-error Missing item?
       { type: "automobility:automobile_assembler" },
       { type: "ad_astra:fuel_conversion" },
       { output: "campanion:grappling_hook" },
@@ -515,7 +520,7 @@
       { output: "immersive_aircraft:boiler" },
       { output: "immersive_aircraft:engine" },
       { output: "immersive_aircraft:nether_engine" },
-
+      // @ts-expect-error Missing item?
       { output: "immersive_aircraft:large_propeller" },
       { output: "immersive_aircraft:airship" },
       { output: "immersive_aircraft:gyrodyne" },
@@ -628,6 +633,7 @@
       },
       { output: "minecraft:dispenser" },
       { input: "tconstruct:copper_nugget", output: "minecraft:copper_ingot" },
+      { id: "minecraft:cut_copper" },
       // xpcrystals
       { output: "xpcrystals:crystal_broth" },
       { output: "xpcrystals:sticky_crystal_pudding" },
@@ -636,6 +642,7 @@
       { output: "xpcrystals:xp_boost_potion" },
       // vinery
       { output: "vinery:wine_rack_1" },
+      { output: "vinery:grapevine_pot" },
       // techreborn
       { output: "techreborn:sulfur" },
       {
@@ -671,7 +678,8 @@
     });
     // YTTR Project Table
     event.remove({ output: "yttr:project_table" });
-    const colors = [
+    /** @satisfies {string[]} */
+    const colors = /** @type {const} */ ([
       "white",
       "orange",
       "magenta",
@@ -688,10 +696,11 @@
       "green",
       "red",
       "black",
-    ];
+    ]);
     colors.forEach((color) => event.remove({ output: `yttr:${color}_project_table` }));
     // Define the array of materials
-    const materials = ["techreborn:bronze", "techreborn:silver"];
+    /** @satisfies {string[]} */
+    const materials = /** @type {const} */ (["techreborn:bronze", "techreborn:silver"]);
     // Define a function to remove all recipes with a given material
     materials.forEach((material) => {
       event.remove({ output: `${material}_helmet` });
@@ -704,7 +713,8 @@
     event.remove({ output: "techreborn:bronze_pickaxe" });
     event.remove({ output: "techreborn:bronze_hoe" });
     event.remove({ output: "techreborn:bronze_spade" }); // TR calls shovels "spades". 🤔
-    const metal = [
+    /** @satisfies {string[]} */
+    const metal = /** @type {const} */ ([
       "tungstensteel",
       "chrome",
       "titanium",
@@ -718,7 +728,7 @@
       "zinc",
       "nickel",
       "platinum",
-    ];
+    ]);
     metal.forEach((metal) => {
       event.remove({ output: `techreborn:${metal}_plate` });
       event.remove({ output: `techreborn:${metal}_ingot` });
@@ -728,7 +738,8 @@
       event.remove({ output: `techreborn:${metal}_storage_block_wall` });
       event.remove({ output: `techreborn:${metal}_nugget` });
     });
-    const metalsWithDusts = [
+    /** @satisfies {string[]} */
+    const metalsWithDusts = /** @type {const} */ ([
       "chrome",
       "titanium",
       "nickel",
@@ -739,16 +750,29 @@
       "zinc",
       "nickel",
       "platinum",
-    ];
+    ]);
     metalsWithDusts.forEach((metal) => {
       event.remove({ output: `techreborn:${metal}_dust` });
     });
-    const metalsWithSmallDusts = ["chrome", "titanium", "nickel", "tungsten", "platinum", "zinc", "nickel", "platinum"];
+    /** @satisfies {string[]} */
+    const metalsWithSmallDusts = /** @type {const} */ ([
+      "chrome",
+      "titanium",
+      "nickel",
+      "tungsten",
+      "platinum",
+      "zinc",
+      "nickel",
+      "platinum",
+    ]);
     metalsWithSmallDusts.forEach((dust) => {
       event.remove({ output: `techreborn:${dust}_small_dust` });
     });
-    // remove unused plate materials.
-    const plates = [
+    /**
+     * Remove unused plate materials.
+     * @satisfies {string[]}
+     */
+    const plates = /** @type {const} */ ([
       "iron",
       "copper",
       "gold",
@@ -763,11 +787,12 @@
       "obsidian",
       "redstone",
       "silicon",
-    ];
+    ]);
     plates.forEach((plate) => {
       event.remove({ output: `techreborn:${plate}_plate` });
     });
-    const dusts = [
+    /** @satisfies {{name: string, hasSmall: boolean}[]} */
+    const dusts = /** @type {const} */ ([
       { name: "almandine", hasSmall: false },
       { name: "amethyst", hasSmall: false },
       { name: "andesite", hasSmall: true },
@@ -821,7 +846,7 @@
       { name: "ruby", hasSmall: false },
       { name: "sapphire", hasSmall: false },
       { name: "yellow_garnet", hasSmall: false },
-    ];
+    ]);
     dusts.forEach((dust) => {
       if (dust.hasSmall) {
         event.remove({ output: `techreborn:${dust.name}_small_dust` });

@@ -1,5 +1,13 @@
 (function createDeployingRecipes() {
   onEvent("recipes", (event) => {
+    /**
+     * @typedef DeployingRecipe
+     * @property {Internal.IngredientJS_} output
+     * @property {Internal.IngredientJS_} appliedTo
+     * @property {Internal.IngredientJS_} deployerInput
+     */
+
+    /** @type {DeployingRecipe[]} */
     const deployingRecipes = [
       {
         output: "createastral:cheesier_block",

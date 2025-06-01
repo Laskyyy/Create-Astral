@@ -7,6 +7,7 @@
     assemblerSolidBoiler(event);
     assemblerSteamTurbine(event);
   });
+  /** @param {Internal.RecipeEventJS} event  */
   function assemblerConvergenceCore(event) {
     event.custom({
       type: "custommachinery:custom_machine",
@@ -39,6 +40,7 @@
       ],
     });
   }
+  /** @param {Internal.RecipeEventJS} event  */
   function assemblerFluidBoiler(event) {
     event.custom({
       type: "custommachinery:custom_machine",
@@ -84,6 +86,7 @@
       ],
     });
   }
+  /** @param {Internal.RecipeEventJS} event  */
   function assemblerFusionReactor(event) {
     event.custom({
       type: "custommachinery:custom_machine",
@@ -159,6 +162,7 @@
       ],
     });
   }
+  /** @param {Internal.RecipeEventJS} event  */
   function assemblerParticleAccelerator(event) {
     event.custom({
       type: "custommachinery:custom_machine",
@@ -234,6 +238,7 @@
       ],
     });
   }
+  /** @param {Internal.RecipeEventJS} event  */
   function assemblerSolidBoiler(event) {
     event.custom({
       type: "custommachinery:custom_machine",
@@ -279,6 +284,7 @@
       ],
     });
   }
+  /** @param {Internal.RecipeEventJS} event  */
   function assemblerSteamTurbine(event) {
     event.custom({
       type: "custommachinery:custom_machine",

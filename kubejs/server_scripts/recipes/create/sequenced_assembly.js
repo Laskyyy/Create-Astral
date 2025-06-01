@@ -321,6 +321,7 @@
       ],
       loops: 1,
     });
+    /** @param {Internal.RecipeEventJS} event */
     function biomassSequence(event) {
       const transitional_c_plantball = "techreborn:plantball";
       event.recipes.create
@@ -367,6 +368,7 @@
         .transitionalItem(transitional_bio_pellet)
         .loops(1);
     }
+    /** @param {Internal.RecipeEventJS} event */
     function circuitSequence(event) {
       const incomplete_transitional_circuit = "createastral:incomplete_transitional_electronic_circuit";
       event.recipes.create
@@ -742,6 +744,7 @@
         .transitionalItem(inc_starshard)
         .loops(3);
     }
+    /** @param {Internal.RecipeEventJS} event */
     function casingSequence(event) {
       const inc_casing = "createastral:incomplete_copper_casing";
       event.recipes.create
@@ -777,9 +780,10 @@
         .transitionalItem(inc_mf)
         .loops(4);
     }
+    /** @param {Internal.RecipeEventJS} event */
     function diamondSequence(event) {
       // Item type , loop amount
-      const items = [
+      const items = /** @type {const} */([
         { item: "helmet", loops: 4 },
         { item: "chestplate", loops: 8 },
         { item: "leggings", loops: 6 },
@@ -789,7 +793,7 @@
         { item: "shovel", loops: 1 },
         { item: "hoe", loops: 1 },
         { item: "sword", loops: 2 },
-      ];
+      ]);
       items.forEach((item) => {
         event.recipes.create
           .sequenced_assembly(
@@ -813,6 +817,7 @@
           .loops(item.loops);
       });
     }
+    /** @param {Internal.RecipeEventJS} event */
     function piglinSequence(event) {
       event.recipes.create
         .sequenced_assembly(
@@ -884,6 +889,7 @@
         .transitionalItem("minecraft:gold_ingot")
         .loops(1);
     }
+    /** @param {Internal.RecipeEventJS} event */
     function wineSequence(event) {
       event.recipes.create
         .sequenced_assembly(

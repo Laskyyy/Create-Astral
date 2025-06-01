@@ -2,6 +2,15 @@
   onEvent("recipes", (event) => {
     ironAndDiamondRecipes(event);
     astralSignalsRecipes(event);
+
+    /**
+     * @typedef ShapedRecipe
+     * @property {Internal.ItemStackJS_} output
+     * @property {Helper.Pattern} pattern
+     * @property {{[key: string]: Internal.IngredientJS_}} key
+     */
+
+    /** @type {ShapedRecipe[]} */
     const shapedRecipes = [
       {
         output: "createastral:andesite_alloy_block",
@@ -1477,13 +1486,128 @@
           O: "ad_astra:oxygen_bucket",
         },
       },
+      {
+        output: "vinery:grapevine_pot",
+        pattern: ["S S", "PPP"],
+        key: {
+          S: "#minecraft:wooden_slabs",
+          P: "#minecraft:planks",
+        },
+      },
+      {
+        output: "minecraft:oak_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "minecraft:oak_slab",
+        },
+      },
+      {
+        output: "minecraft:spruce_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "minecraft:spruce_slab",
+        },
+      },
+      {
+        output: "minecraft:birch_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "minecraft:birch_slab",
+        },
+      },
+      {
+        output: "minecraft:jungle_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "minecraft:jungle_slab",
+        },
+      },
+      {
+        output: "minecraft:acacia_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "minecraft:acacia_slab",
+        },
+      },
+      {
+        output: "minecraft:dark_oak_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "minecraft:dark_oak_slab",
+        },
+      },
+      {
+        output: "minecraft:warped_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "minecraft:warped_slab",
+        },
+      },
+      {
+        output: "minecraft:crimson_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "minecraft:crimson_slab",
+        },
+      },
+      {
+        output: "techreborn:rubber_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "techreborn:rubber_plank_slab",
+        },
+      },
+      {
+        output: "tconstruct:greenheart_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "tconstruct:greenheart_planks_slab",
+        },
+      },
+      {
+        output: "tconstruct:skyroot_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "tconstruct:skyroot_planks_slab",
+        },
+      },
+      {
+        output: "tconstruct:bloodshroom_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "tconstruct:bloodshroom_planks_slab",
+        },
+      },
+      {
+        output: "vinery:cherry_planks",
+        pattern: ["S", "S"],
+        key: {
+          S: "vinery:cherry_slab",
+        },
+      },
     ];
     shapedRecipes.forEach((recipe) => {
       event.shaped(recipe.output, recipe.pattern, recipe.key);
     });
   });
+  /** @param {Internal.RecipeEventJS} event */
   function ironAndDiamondRecipes(event) {
-    const names = ["helmet", "chestplate", "leggings", "boots", "sword", "pickaxe", "shovel", "axe", "hoe"];
+    /** @typedef {{[gearName in (typeof names)[number]]: Helper.Pattern}} FullKit */
+
+    /** @satisfies {string[]} */
+    const names = /** @type {const} */ ([
+      "helmet",
+      "chestplate",
+      "leggings",
+      "boots",
+      "sword",
+      "pickaxe",
+      "shovel",
+      "axe",
+      "hoe",
+    ]);
+
+    /** @type {FullKit} */
     const fullkit = {
       helmet: ["SSS", "S S", "   "],
       chestplate: ["S S", "SSS", "SSS"],
@@ -1495,6 +1619,12 @@
       axe: ["SS ", "SW ", " W "],
       hoe: ["SS ", " W ", " W "],
     };
+    /**
+     * @param {Internal.RecipeEventJS} event
+     * @param {Internal.IngredientJS_} output
+     * @param {Internal.IngredientJS_} material
+     * @param {(typeof names)[number]} toolname
+     */
     function createToolAndArmorRecipes(event, output, material, toolname) {
       let key = { S: material };
       if (fullkit[toolname].join("").includes("W")) key.W = "minecraft:stick";
@@ -1505,7 +1635,8 @@
       createToolAndArmorRecipes(event, `createastral:copper_${name}`, "minecraft:copper_ingot", name);
       createToolAndArmorRecipes(event, `createastral:brass_${name}`, "create:brass_sheet", name);
     });
-    const armorNames = ["helmet", "chestplate", "leggings", "boots"];
+    /** @satisfies {string[]} */
+    const armorNames = /** @type {const} */ (["helmet", "chestplate", "leggings", "boots"]);
     armorNames.forEach((name) => {
       event.shaped(`createastral:sturdy_${name}`, fullkit[name], {
         S: "createastral:sturdy_sheet_block",
@@ -1517,7 +1648,16 @@
       B: "create:sturdy_sheet",
     });
   }
+  /** @param {Internal.RecipeEventJS} event */
   function astralSignalsRecipes(event) {
+    /**
+     * @typedef AstralSignalsRecipe
+     * @property {{[key: string]: Internal.IngredientJS_}} inputs
+     * @property {Helper.Pattern} shape
+     * @property {Internal.ItemStackJS_} output
+     */
+
+    /** @type {AstralSignalsRecipe[]} */
     const astralSignalsRecipes = [
       {
         inputs: {

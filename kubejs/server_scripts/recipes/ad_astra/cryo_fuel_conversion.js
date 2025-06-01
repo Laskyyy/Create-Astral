@@ -1,6 +1,16 @@
 (function adAstraCryoFuelConversionRecipes() {
   onEvent("recipes", (event) => {
-    [
+    /**
+     * @typedef CryoFuelConversionRecipe
+     * @property {object} input
+     * @property {Special.Item} input.item
+     * @property {object} output
+     * @property {Special.Fluid} output.name
+     * @property {number} ratio
+     */
+
+    /** @type {CryoFuelConversionRecipe[]} */
+    const cryoFuelConversionRecipes = [
       {
         input: { item: "createastral:prismatic_crystal" },
         output: { name: "kubejs:aurorite" },
@@ -26,7 +36,8 @@
         output: { name: "techreborn:hydrogen" },
         ratio: 0.025,
       },
-    ].forEach((recipe) => {
+    ];
+    cryoFuelConversionRecipes.forEach((recipe) => {
       event.custom({
         type: "ad_astra:cryo_fuel_conversion",
         input: recipe.input,
