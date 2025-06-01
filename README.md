@@ -14,9 +14,10 @@ Does not include mods, or most configs, only pack specific files which are used 
 
 ## Useful documents on this repository
 
+-   [Changelog](CHANGELOG.md)
 -   [Contributing guidelines](CONTRIBUTING.md)
 -   [License](LICENSE.md)
--   [Code Style](CODE_STYLE.md)
+-   [Code style guidelines](CODE_STYLE.md)
 
 ## Automatic Builds
 
