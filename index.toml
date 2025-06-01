@@ -4138,7 +4138,11 @@ hash = "7fcd9376ebb9efbe5179bfaff40a25165e00be2537fe65d04077d309fdbc863c"
 
 [[files]]
 file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/slotless/bonus.json"
-hash = "0ef7111f32e3e79d3944a84af0062a97bec3ca4621644c4a145eeaf2c3072150"
+hash = "bcf78198d25a4a833fe5d8fc56dba2bd65643bfe95f126dea8d029433c3efad4"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/slotless/bonus/amplified.json"
+hash = "4512ba3b748fcf94977814d58422181c5febdc636dd71b02ff3b1289682a7b14"
 
 [[files]]
 file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/slotless/bonus/draconic.json"
@@ -4482,7 +4486,7 @@ hash = "ae1e9dab9c776b8087edced6e21df2c322992008c590b9bb09ad0a6587f839be"
 
 [[files]]
 file = "kubejs/assets/tconstruct/book/encyclopedia/sections/slotless.json"
-hash = "8b69b3653df7fd0082340f723c50ba6d569f601fe33127c689bba33c6a1bca3c"
+hash = "d71f349a7dbefe64e7b86371ce0e1cae25142a4bfff5faa183eb4f15a56a429c"
 
 [[files]]
 file = "kubejs/assets/tconstruct/book/encyclopedia/sections/tools.json"
@@ -15262,7 +15266,7 @@ hash = "ce87cf340688fab96dc38d9d9c551c29729efb4948d950fad74439da240b6cd2"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/shaped.js"
-hash = "e50794b05b5c4dbe8c12061df13696705973baa41c3b052060cd44baa7598cc5"
+hash = "7f256158f94ef40acd1d7417b16baf0e578275a152980992f619cf25b820931c"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/shapeless.js"

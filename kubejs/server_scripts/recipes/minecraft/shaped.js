@@ -253,7 +253,7 @@
         key: {
           A: "tconstruct:seared_bricks",
           B: "#c:glass",
-          C: "create:brass_sheet",
+          C: "#c:plates/gold",
           D: "create:fluid_tank",
         },
       },
@@ -273,7 +273,7 @@
         key: {
           A: "tconstruct:scorched_bricks",
           B: "#c:glass",
-          C: "#c:plates/gold",
+          C: "#c:plates/brass",
           D: "create:fluid_tank",
         },
       },
