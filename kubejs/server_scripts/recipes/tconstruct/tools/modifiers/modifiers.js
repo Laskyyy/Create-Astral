@@ -282,7 +282,7 @@
       {
         input: {
           item: "tconstruct:sky_slime_dirt",
-          count: 18,
+          count: 64,
         },
         appliableTo: "#tconstruct:modifiable/armor/leggings",
         slots: { upgrades: 1 },
