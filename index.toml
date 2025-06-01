@@ -8438,7 +8438,7 @@ hash = "4869ea0c45f560ff504433e0873edc13be683a4dec98d58bb09e24aa7a388355"
 
 [[files]]
 file = "kubejs/custom_types/extraprobe.d.ts"
-hash = "00f1f999666a47b5b9f75a7fb2a0a5c3d095bb8064fb11d72783a4b75d04ee35"
+hash = "eb64f1822891476cd368c4c13d90d9583823e2b04246ee9757ffca7b8982639f"
 
 [[files]]
 file = "kubejs/custom_types/ponderjs.d.ts"
@@ -13233,10 +13233,6 @@ file = "kubejs/data/createastral/potato_cannon_projectile_types/smallcog.json"
 hash = "7abfd9426b3a2aa7de9c3a8592a7afd040b7b0b8d59d9778325f875e675989d9"
 
 [[files]]
-file = "kubejs/data/createastral/recipes/tools/modifiers/slotless/spacious.json"
-hash = "a4aa970f4d88558485778a72841f99cd3d60bb507126eed1ee8354035d701276"
-
-[[files]]
 file = "kubejs/data/createastral/structures/electrolyser.nbt"
 hash = "b262db1d517c988e592085194802e8bff9b663f677c636615121017b479603a1"
 
@@ -14605,94 +14601,6 @@ file = "kubejs/data/tconstruct/lang/en_us.json"
 hash = "df642e03b0dd686e412cf2b50fa5361419c2e48365d5cfa55bb578a87468bf84"
 
 [[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/ability/double_jump.json"
-hash = "4913a305d12fedd58941be831f4052d25cba85a1344d79b033d87393a87f6111"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/ability/luck_level_1.json"
-hash = "a52017be6f84ef429ed6ebc2ec9fb4ad12ab56625f0e1d8b6e2ef6a807e6bed5"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/ability/luck_level_2.json"
-hash = "53f6809ff6dc27676116cb481e6cedf5eaa9fbf177bf4b0468793b9b71920c5d"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/ability/luck_level_3.json"
-hash = "2b956dc1d51328bcf42507cfb8dd7539e0fdc5b73d80cf30e1b2148725702e3e"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/ability/reach.json"
-hash = "451f73f3b7c0d343d4f7f47c3fb8fd506a1c88124d4687459d1659c16e0d3368"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/ability/strength.json"
-hash = "1658a6336582169d29230ea129044edceabe60a39f6bf1d5754a8e2d11d94816"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/ability/tool_belt_1.json"
-hash = "a090977678b556451b6202d9b5dd7888eb01622b215cb5d2bc4879fb64d1688a"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/ability/tool_belt_2.json"
-hash = "56a6597cd34ed5cc8ddd3f9a4728166504537640090e8a68b3960f50075a2f42"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/ability/tool_belt_3.json"
-hash = "a7cfc19212789128aebb24ad365092f815f69c0e2618c2ec82c8d927e30cde8a"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/ability/tool_belt_4.json"
-hash = "e754e016a502a60afd1f509737af098ba1b2e4d3304a3c38bfe27b4bc2f8ff50"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/ability/tool_belt_5.json"
-hash = "aaef417f88cb2225001d67ece268a753cf44190f3da59376114981f940bba68f"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/ability/tool_belt_6.json"
-hash = "d3b9f9047e5175655b28e18caf9208b0f9e1e6960c2f5c3d5cdbf0742ecb5517"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/ability/unbreakable.json"
-hash = "997943fc5ce0f755e4fb5e13350e87014e22ff75c2abe1a1ce3a4443ec73c838"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/slotless/draconic_from_head.json"
-hash = "31708b7229493100cbaa2caa175c9d02ef6f05199dfabcb286c5069d2f191157"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/slotless/draconic_from_scales.json"
-hash = "c87cc229884f83483f6c9db13bb709b3b62b38252e5478759a8d460fb8b75f88"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/slotless/resurrected.json"
-hash = "edacad13fdc172f8b1f457e6d1680f0856d284ffa8d60ddf52aab5b3a660eb23"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/upgrade/killager_from_block.json"
-hash = "ae5d50efefd5fad26a4a5b9485522fc7ca8bf141a57a5e4fdf288814e27d7fde"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/upgrade/killager_from_block_unarmed.json"
-hash = "1fe718220f36695b44e8cca7e889f2876aa446d5f772189d9e34083becc409bd"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/upgrade/killager_from_dust.json"
-hash = "6aa6b4a897aac3ceea22a3aba65c76510233265d85665e9f4bd2c056511076f7"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/upgrade/killager_from_dust_unarmed.json"
-hash = "015b90ebd8c8fd74eb6ab914289d0a5279883b43ad1b9ed91204291752423f4c"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/upgrade/leaping.json"
-hash = "7532e123bd71a664a88decaa56688679f6056e5509f37703bcd7414a4295499b"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/upgrade/piercing.json"
-hash = "adeac98f1023235c8aa5473234e684653cb244fd1b8463e68abfa7f17650252c"
-
-[[files]]
 file = "kubejs/data/tconstruct/structures/slime_islands/blood/0x1x0.nbt"
 hash = "82ed9cdacaa6762a96bee565522e24a4a0b51342caafb80c2a8a59fc6590b9ae"
 
@@ -14882,11 +14790,11 @@ hash = "f506bf0ce4bd2445df5959f65137920c017df5860c11e557382fbbe7d89e1303"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/definition/desh.json"
-hash = "f506bf0ce4bd2445df5959f65137920c017df5860c11e557382fbbe7d89e1303"
+hash = "aadc5932dfdc7378225170fbbfcf7ae9db32ea56c180b3a33c7256e27fb8b51d"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/definition/ostrum.json"
-hash = "f506bf0ce4bd2445df5959f65137920c017df5860c11e557382fbbe7d89e1303"
+hash = "aadc5932dfdc7378225170fbbfcf7ae9db32ea56c180b3a33c7256e27fb8b51d"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/definition/radiant.json"
@@ -14958,7 +14866,7 @@ hash = "f2677d4599e7afa7d97353c32e3de7b2318caf8fadfeeb2eeefe1cda087378a5"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/traits/calorite.json"
-hash = "43dc9b9926aea4a6a1cef5cee48e679f551fabf0dae07e1717352a261a08460f"
+hash = "4e2e149a145dade8d524624ff5b92fedb7b8ae87119555c6b5a9adf1f1d54e34"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/traits/desh.json"
@@ -15262,7 +15170,7 @@ hash = "93c347153da3863ef88ecf0b1985a1d263a6664fa918b1e76355996173947849"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/deploying.js"
-hash = "77ab37b90e268609ae60dbd0e6b2a32439536308d60d9dcfb7480843c23a966e"
+hash = "444e8927020997f13b483c0edc2dac1a7333394db35e7746ce55a2bd2ab23315"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/emptying.js"
@@ -15374,7 +15282,7 @@ hash = "d73e68b60571f7d293a4fa4c28406a8b14c4558da06bbdc2b3ee7c4ec1b4aa77"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/removals.js"
-hash = "39360e3fe9fe53e0d6b5d1121d9ec3938c32d9163687b498467e0479e4eec13a"
+hash = "b216fc722b330d4409f07cbd871666562c4ee708f14362b1fc50048cdaf43176"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/replacements.js"
@@ -15401,8 +15309,12 @@ file = "kubejs/server_scripts/recipes/tconstruct/smeltery/melting_fuel.js"
 hash = "e1d3c2aa832de3aaa3e3cd3dd001a5dbff45984b0138171dae59e95e0eef7a63"
 
 [[files]]
-file = "kubejs/server_scripts/recipes/tconstruct/tools/modifiers/modifiers.txt"
-hash = "8f2a3b672a0320bc915f389a18c5911c7034e985c074a19085f33152d0674ddc"
+file = "kubejs/server_scripts/recipes/tconstruct/tools/modifiers/modifiers.d.ts"
+hash = "661f7aca3e9ff9c8f528771b108e8e05a6644de1366902037814b9f2434d517e"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/tconstruct/tools/modifiers/modifiers.js"
+hash = "b71b9a7ded30e4347410ec4e4505f759ed02b58fa3ddc053951515932219ffaf"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/tools/tool_materials.js"
