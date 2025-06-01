@@ -1,6 +1,10 @@
 # Create: Astral Repository Contribution Guidelines
 
-Please refer to the [License](/LICENSE.md) before making any pull requests or personal modifications.
+YOU MUST REFER TO THE [LICENSE](/LICENSE.md) BEFORE MAKING ANY PULL REQUESTS OR PERSONAL MODIFICATIONS.
+
+Please also refer to the [CODE_STYLE](CODE_STYLE.md) document if making contributions to any JavaScript files.
+
+If you make any notable changes, please note them in the [CHANGELOG](CHANGELOG.md) file, following the convention of [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## Contents of this document:
 
@@ -32,7 +36,7 @@ After you've done that, please take a look at the documentation for specific typ
 
 ### Locations that may be of interest
 
-```json
+```
 📦
 ┣ 📂config // Various configs for all sorts of mods
 ┃ ┣ 📂ftbquests // Configs for quests including the questbook data
@@ -47,7 +51,8 @@ After you've done that, please take a look at the documentation for specific typ
 ┃ ┗ 📂startup_scripts // Things that run once upon startup
 ┣ 📂resourcepacks // Toggleable textures
 ┣ 📜README.md // The README for the GitHub repository
-┗ 📜CONTRIBUTING.md // This file! Feel free to contribute your own documentation and fix any errors that you see.
+┣ 📜CHANGELOG.md // The changelog for Astral which will be used to summarise updates in a human-readable format
+┗ 📜CONTRIBUTING.md // This file! Feel free to contribute your own documentation and fix any errors that you see
 ```
 
 ### Setting up your game instance
