@@ -11,11 +11,12 @@ and this project follows a similar system to [Semantic Versioning](https://semve
 
 ### Added
 
-- This changelog file!
+- This changelog!
 
 ### Changed
 
-> *Nothing to see here yet...*
+- [README.md](README.md) now references this changelog.
+- [CONTRIBUTING.md](CONTRIBUTING.md) now references this changelog and [CODE_STYLE.md](CODE_STYLE.md). 
 
 ### Removed
 
