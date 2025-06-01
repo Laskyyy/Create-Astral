@@ -202,23 +202,6 @@
           M: "create:brass_block",
         },
       },
-      {
-        output: "tconstruct:scorched_fuel_tank",
-        pattern: ["AAA", "ABA"],
-        key: {
-          A: "tconstruct:scorched_brick",
-          B: "create:fluid_tank",
-        },
-      },
-      {
-        output: "tconstruct:scorched_fuel_gauge",
-        pattern: ["ACA", "CBC", "AAA"],
-        key: {
-          A: "tconstruct:scorched_brick",
-          B: "create:fluid_tank",
-          C: "#c:glass",
-        },
-      },
       // Changed blaze burner recipe.
       {
         output: "create:empty_blaze_burner",
@@ -280,7 +263,27 @@
         key: {
           A: "tconstruct:seared_bricks",
           B: "#c:glass",
-          C: "create:brass_sheet",
+          C: "#c:plates/gold",
+          D: "create:fluid_tank",
+        },
+      },
+      {
+        output: "tconstruct:scorched_fuel_tank",
+        pattern: ["CCC", "BDB", "AAA"],
+        key: {
+          A: "tconstruct:scorched_bricks",
+          B: "#c:glass",
+          C: "#c:plates/gold",
+          D: "create:fluid_tank",
+        },
+      },
+      {
+        output: "tconstruct:scorched_fuel_gauge",
+        pattern: ["CAC", "BDB", "ACA"],
+        key: {
+          A: "tconstruct:scorched_bricks",
+          B: "#c:glass",
+          C: "#c:plates/brass",
           D: "create:fluid_tank",
         },
       },
@@ -289,7 +292,7 @@
         pattern: ["ACA", "ADA", "ACA"],
         key: {
           A: "tconstruct:seared_bricks",
-          C: "create:brass_sheet",
+          C: "#c:plates/brass",
           D: "create:fluid_tank",
         },
       },

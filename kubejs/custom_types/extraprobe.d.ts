@@ -410,6 +410,7 @@ declare namespace Special {
     | "tconstruct:soulbound"
     | "tconstruct:soulspeed"
     | "createastral:spacious"
+    | "createastral:amplified"
     | "tconstruct:speedy"
     | "tconstruct:spider_disguise"
     | "tconstruct:spilling"

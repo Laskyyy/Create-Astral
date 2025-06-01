@@ -209,6 +209,12 @@
         result: { name: "createastral:spacious", level: 1 },
         maxLevel: 1,
       },
+      {
+        inputs: ["createastral:shimmer_amplifier"],
+        appliableTo: "#tconstruct:modifiable",
+        result: { name: "createastral:amplified", level: 1 },
+        maxLevel: 1,
+      },
     ];
 
     /**

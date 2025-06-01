@@ -2178,7 +2178,7 @@ hash = "ddaed1f475cb36918b8bbefaeb691b9037fa2e22a4195805999edaad0469e5c4"
 
 [[files]]
 file = "kubejs/assets/createastral/lang/en_us.json"
-hash = "fa4f43bb76019dcee1789bbe01a63640161115215752e954504dbcc79b9b955d"
+hash = "22718e9cda4cf5b5108bef14e291b0b2847ad221663f60796c22cdad80f2a7b0"
 
 [[files]]
 file = "kubejs/assets/createastral/lang/fr_fr.json"
@@ -2186,7 +2186,7 @@ hash = "cb5eaac36df5e46897fbd09f3ced9a589a63801b3e4440a64694fbdf4f753ec6"
 
 [[files]]
 file = "kubejs/assets/createastral/mantle/colors.json"
-hash = "8374f4322eecae5c9e8ed8779ba3bbb2a363e66b10d918a8d2a12202db0c758a"
+hash = "12cc613e69240686d2fac9e4074a7b6994281ce020b8eb0e7225834de5daf04b"
 
 [[files]]
 file = "kubejs/assets/createastral/models/item/ender_marimo.json"
@@ -8438,7 +8438,7 @@ hash = "4869ea0c45f560ff504433e0873edc13be683a4dec98d58bb09e24aa7a388355"
 
 [[files]]
 file = "kubejs/custom_types/extraprobe.d.ts"
-hash = "eb64f1822891476cd368c4c13d90d9583823e2b04246ee9757ffca7b8982639f"
+hash = "e8493a77b28a7b4971599b7142629667747de798c49ea60d83daf7e6f45c1a35"
 
 [[files]]
 file = "kubejs/custom_types/ponderjs.d.ts"
@@ -13433,6 +13433,10 @@ file = "kubejs/data/createastral/tags/items/blueprint.json"
 hash = "b0349377aa9a22dc9980a3d05556967170d122b008a596c9857812e3190857a6"
 
 [[files]]
+file = "kubejs/data/createastral/tinkering/modifiers/amplified.json"
+hash = "6e1a07db8de86002d547d54d030ff79ff1e697030295bd60b41e0388de0cfedd"
+
+[[files]]
 file = "kubejs/data/createastral/tinkering/modifiers/spacious.json"
 hash = "a14942ed4e02e119030b6f4dc835b4abb21fac29a9fea5bc3c407eabb46f5f18"
 
@@ -15182,7 +15186,7 @@ hash = "abc017cb50ac19a804d75c5a3c4f7867396bd51877c14df0d583dfaa72a244aa"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/filling.js"
-hash = "fbc26dd50a1ebbac24d8618ce4552df9e083a6994f5fa8d8a705c242fabd85e2"
+hash = "b4ff1742c5e613e61c82ca2855820fed12cc4198ab64940a96b76502c08a0784"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/haunting.js"
@@ -15202,7 +15206,7 @@ hash = "57a19ec1c4ff6bddab0f354714d75732bd797bfabde47b2e75b4a291c4356611"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/mixing.js"
-hash = "d094c784073471dfdc55faf566e1c75e022fe3208660b68de3d78a676a3313c8"
+hash = "7ce455f25cdabe978e857d802326936bb59cc6c576c7c98393c5e7bd0fecdc33"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/pressing.js"
@@ -15258,7 +15262,7 @@ hash = "ce87cf340688fab96dc38d9d9c551c29729efb4948d950fad74439da240b6cd2"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/shaped.js"
-hash = "717c7eeca83fd1044d0a067bb82cd765c0e12ea6d1d1615dbb50f7cc476b76c9"
+hash = "e50794b05b5c4dbe8c12061df13696705973baa41c3b052060cd44baa7598cc5"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/shapeless.js"
@@ -15282,7 +15286,7 @@ hash = "d73e68b60571f7d293a4fa4c28406a8b14c4558da06bbdc2b3ee7c4ec1b4aa77"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/removals.js"
-hash = "b216fc722b330d4409f07cbd871666562c4ee708f14362b1fc50048cdaf43176"
+hash = "aeb9e35da04ed08afea440535f64ddae6e81d160a910018f3c7a5323da2e7d3d"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/replacements.js"
@@ -15310,11 +15314,11 @@ hash = "e1d3c2aa832de3aaa3e3cd3dd001a5dbff45984b0138171dae59e95e0eef7a63"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/tools/modifiers/modifiers.d.ts"
-hash = "661f7aca3e9ff9c8f528771b108e8e05a6644de1366902037814b9f2434d517e"
+hash = "6397bbb78d3c01105114fac3fd5e7bcd016037c0442604f7982c32847d039d15"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/tools/modifiers/modifiers.js"
-hash = "b71b9a7ded30e4347410ec4e4505f759ed02b58fa3ddc053951515932219ffaf"
+hash = "4fbf83bbfd27f2f2b3724008f759ffc30ee694fb24fd3a76ad9e9a95f1372838"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/tools/tool_materials.js"
