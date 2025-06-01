@@ -44,7 +44,7 @@ interface ItemWithValueAndCount {
   /** The amount of progress 1 item gives towards a level. */
   value?: number;
   /** The amount of item needed for a level. */
-  count: number;
+  needed: number;
 }
 interface TagWithValueAndCount {
   /** The item tag. */
@@ -52,7 +52,7 @@ interface TagWithValueAndCount {
   /** The amount of progress 1 item gives towards a level. */
   value?: number;
   /** The amount of item needed for a level. */
-  count: number;
+  needed: number;
 }
 
 interface IncrementalModifierRecipe {

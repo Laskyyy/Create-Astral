@@ -221,7 +221,7 @@
       {
         input: {
           item: "tconstruct:ichor_slime_ball",
-          count: 192,
+          needed: 192,
         },
         appliableTo: "#tconstruct:modifiable/armor/chestplate",
         slots: { abilities: 1 },
@@ -231,7 +231,7 @@
         input: {
           tag: "c:storage_blocks/iron",
           value: 9,
-          count: 45,
+          needed: 45,
         },
         appliableTo: "#tconstruct:modifiable/unarmed",
         requirements: {
@@ -247,7 +247,7 @@
         input: {
           tag: "c:storage_blocks/iron",
           value: 9,
-          count: 45,
+          needed: 45,
         },
         appliableTo: "#tconstruct:modifiable/melee",
         slots: { upgrades: 1 },
@@ -257,7 +257,7 @@
       {
         input: {
           tag: "c:ingots/iron",
-          count: 45,
+          needed: 45,
         },
         appliableTo: "#tconstruct:modifiable/unarmed",
         requirements: {
@@ -272,7 +272,7 @@
       {
         input: {
           tag: "c:ingots/iron",
-          count: 45,
+          needed: 45,
         },
         appliableTo: "#tconstruct:modifiable/melee",
         slots: { upgrades: 1 },
@@ -282,7 +282,7 @@
       {
         input: {
           item: "tconstruct:sky_slime_dirt",
-          count: 64,
+          needed: 64,
         },
         appliableTo: "#tconstruct:modifiable/armor/leggings",
         slots: { upgrades: 1 },
@@ -292,7 +292,7 @@
       {
         input: {
           item: "minecraft:cactus",
-          count: 25,
+          needed: 25,
         },
         appliableTo: "#tconstruct:modifiable/melee",
         slots: { upgrades: 1 },
@@ -384,7 +384,7 @@
     incrementalModifierRecipes.forEach((modifierRecipe) => {
       /** @type {{type: "tconstruct:incremental_modifier", [key: string]: unknown}} */
       const recipeJSON = { type: "tconstruct:incremental_modifier" };
-      let count = modifierRecipe.input.count;
+      let count = modifierRecipe.input.needed;
       let value = modifierRecipe.input.value || 1;
       if ("item" in modifierRecipe.input) {
         recipeJSON.input = { item: modifierRecipe.input.item };
