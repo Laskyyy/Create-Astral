@@ -78,6 +78,8 @@ The format is a slight modification of the [Keep a Changelog](https://keepachang
 - Updated Create: Copycats+ to 2.2.2 as the mod has been known to cause rendering issues in the older version.
 - Updated REI to 8.4.788 as the mod has been known to cause crashes in the older version.
 - Updated Defined's Blocks to 1.0.2.
+- Updated FancyMenu to 3.5.2 to get new formatting features.
+- Updated Drippy Loading Screen to 3.0.12 for compatibility with the FancyMenu update.
 
 #### Behind-the-scenes
 
@@ -90,8 +92,8 @@ The format is a slight modification of the [Keep a Changelog](https://keepachang
 
 #### Mod removals
 
-- Removed the Quarry Reborn mod as it is completely useless.
-- Removed the Global Packs mod as its function can and has been fulfilled by KubeJS.
+- Removed the Quarry Reborn mod as it is completely redundant.
+- Removed the Global Packs mod as its function can be, and has been, fulfilled by KubeJS.
 
 #### Game-changing
 
