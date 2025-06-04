@@ -51,7 +51,9 @@
       },
     ];
     deployingRecipes.forEach((recipe) => {
-      event.recipes.create.deploying([recipe.output], [recipe.appliedTo, recipe.deployerInput]);
+      /** @type {[Internal.IngredientJS_, Internal.IngredientJS_]} */
+      const input = [recipe.appliedTo, recipe.deployerInput];
+      event.recipes.create.deploying([recipe.output], input);
     });
   });
 })();

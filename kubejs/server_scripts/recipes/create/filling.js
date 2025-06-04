@@ -29,13 +29,13 @@
         input: "minecraft:dirt",
         output: "tconstruct:sky_slime_dirt",
         fluid: "tconstruct:sky_slime",
-        amount: 250,
+        amount: SLIMEBALL,
       },
       {
         input: "minecraft:dirt",
         output: "tconstruct:earth_slime_dirt",
         fluid: "tconstruct:earth_slime",
-        amount: 250,
+        amount: SLIMEBALL,
       },
       {
         input: "tconstruct:ender_slime_crystal",

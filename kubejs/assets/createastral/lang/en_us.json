@@ -3015,5 +3015,13 @@
   "text.rei.createastral.yttr.mercurial_potion": "Mercurial Potion",
   "text.rei.createastral.yttr.mercurial_splash_potion": "Mercurial Splash Potion",
 
-  "porting_lib.stepHeight": "Step Height"
+  "porting_lib.stepHeight": "Step Height",
+
+  "modifier.createastral.spacious": "Spacious",
+  "modifier.createastral.spacious.flavor": "So much room for activities!",
+  "modifier.createastral.spacious.description": "Gives extra room for an additional upgrade!",
+
+  "modifier.createastral.amplified": "Amplified",
+  "modifier.createastral.amplified.flavor": "Supercharged!",
+  "modifier.createastral.amplified.description": "The Shimmer amplification device lets your tool handle an additional ability!"
 }

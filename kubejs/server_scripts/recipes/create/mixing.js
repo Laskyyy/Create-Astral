@@ -715,6 +715,16 @@
         time: 0,
       },
       {
+        output: "tconstruct:scorched_bricks",
+        input: [Item.of("tconstruct:scorched_brick", 4), "#c:slimeballs"],
+        time: 0,
+      },
+      {
+        output: "tconstruct:scorched_bricks",
+        input: [Item.of("tconstruct:scorched_brick", 4), "techreborn:sap"],
+        time: 0,
+      },
+      {
         output: "techreborn:steel_dust",
         input: [Item.of("minecraft:iron_ingot", 6), Item.of("techreborn:coal_dust", 4)],
         heat: "heated",
