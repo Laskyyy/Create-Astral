@@ -20,6 +20,12 @@ astralmenu.mainmenu.menucredit.line3 = Implemented by Erdragh and _Shortman
 
 astralmenu.creditsmenu.title = Create: Astral Credits
 astralmenu.creditsmenu.packdevs.header = Pack Developers
+astralmenu.creditsmenu.packdevs.description.laskyyy = Creator of Create: Astral, and resident wolf.
+astralmenu.creditsmenu.packdevs.description.ethanicuss = Maintainer of many of the content mods made exclusively for Astral, such as Astral Additions, as well as composer for some of the modpack's OST.
+astralmenu.creditsmenu.packdevs.description.erdragh = Maintainer of many patch mods made exclusively for Create: Astral to keep it from falling apart at the seams.
+astralmenu.creditsmenu.packdevs.description.winter = Composer for most of Create: Astral's iconic original soundtrack.
+astralmenu.creditsmenu.packdevs.description.shortman = Menu designer, bug patcher, monocle man. Also maintains the GitHub repository in a constant effort to make development as seamless as possible.
+astralmenu.creditsmenu.packdevs.description.trashpanda = The mastermind behind many unique recipe types and flashy effects within the modpack, as well as various recipe compatibility patches in REI.
 astralmenu.creditsmenu.contributors.header = Significant Contributors
 astralmenu.creditsmenu.screenshots.header = Main Menu Screenshots
 astralmenu.creditsmenu.screenshots.nzmanor = N.Z. Manor (Official Server)
