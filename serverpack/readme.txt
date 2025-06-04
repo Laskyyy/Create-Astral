@@ -21,6 +21,8 @@ If server instantly crashes when booting = Java version mismatch (Use Java 17)
 
 If server does a lot of setup (30 seconds+) before crashing = Mod issue, if you added any extra mods try removing them first and see if it works.
 
+If fluids like water don't behave like fluids when you try swimming in them, check that you followed step 3.
+
 ---
 
 Note on CurseForge, Vinery and Hephaestus:
