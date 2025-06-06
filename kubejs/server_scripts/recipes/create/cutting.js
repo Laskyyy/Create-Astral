@@ -151,6 +151,58 @@
         input: "#minecraft:planks",
         output: "techreborn:wood_plate",
       },
+      {
+        input: "minecraft:oak_planks",
+        output: Item.of("minecraft:oak_slab", 2),
+      },
+      {
+        input: "minecraft:spruce_planks",
+        output: Item.of("minecraft:spruce_slab", 2),
+      },
+      {
+        input: "minecraft:birch_planks",
+        output: Item.of("minecraft:birch_slab", 2),
+      },
+      {
+        input: "minecraft:jungle_planks",
+        output: Item.of("minecraft:jungle_slab", 2),
+      },
+      {
+        input: "minecraft:acacia_planks",
+        output: Item.of("minecraft:acacia_slab", 2),
+      },
+      {
+        input: "minecraft:dark_oak_planks",
+        output: Item.of("minecraft:dark_oak_slab", 2),
+      },
+      {
+        input: "minecraft:warped_planks",
+        output: Item.of("minecraft:warped_slab", 2),
+      },
+      {
+        input: "minecraft:crimson_planks",
+        output: Item.of("minecraft:crimson_slab", 2),
+      },
+      {
+        input: "techreborn:rubber_planks",
+        output: Item.of("techreborn:rubber_plank_slab", 2),
+      },
+      {
+        input: "tconstruct:greenheart_planks",
+        output: Item.of("tconstruct:greenheart_planks_slab", 2),
+      },
+      {
+        input: "tconstruct:skyroot_planks",
+        output: Item.of("tconstruct:skyroot_planks_slab", 2),
+      },
+      {
+        input: "tconstruct:bloodshroom_planks",
+        output: Item.of("tconstruct:bloodshroom_planks_slab", 2),
+      },
+      {
+        input: "vinery:cherry_planks",
+        output: Item.of("vinery:cherry_slab", 2),
+      },
     ];
     cuttingRecipes.forEach((recipe) => {
       event.recipes.createCutting(recipe.output, recipe.input);

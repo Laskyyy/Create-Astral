@@ -1,8 +1,12 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".envrc"
+hash = "1d26c74fd25a4c3dbb09e029fc609588da499fd4af2a41c88f6316c7f8c54cf1"
+
+[[files]]
 file = "CODE_STYLE.md"
-hash = "328b38e7de7e8e039ae858ca99909611137eb94d557db40dd215d23e6aa5fa33"
+hash = "46f817b87dd09efbaa8961b4ef0923835e8f5c015d203893b1e15b8b09be9e3e"
 
 [[files]]
 file = "config/DisablePortals.json"
@@ -1093,6 +1097,10 @@ file = "fancymenustuff/uwu.png"
 hash = "8d7ce46d8038ef37e526605538913133dba45657144c228080d1a8ba1e55436d"
 
 [[files]]
+file = "flake.nix"
+hash = "eb17f373020b268d407dea5109c9775fdc8b4f46e8127dd9325699bc4d2ebd56"
+
+[[files]]
 file = "icon.png"
 hash = "c4c858bf25e6e4e1c99d297cc4720c4cd9d4a10ef6dfb090c120a5a9e81cf8f6"
 
@@ -2166,11 +2174,15 @@ hash = "ddaed1f475cb36918b8bbefaeb691b9037fa2e22a4195805999edaad0469e5c4"
 
 [[files]]
 file = "kubejs/assets/createastral/lang/en_us.json"
-hash = "41faceeac73e28f095413b77144e33a0928a78665f3aa5c0f36d868156cb809d"
+hash = "22718e9cda4cf5b5108bef14e291b0b2847ad221663f60796c22cdad80f2a7b0"
 
 [[files]]
 file = "kubejs/assets/createastral/lang/fr_fr.json"
 hash = "cb5eaac36df5e46897fbd09f3ced9a589a63801b3e4440a64694fbdf4f753ec6"
+
+[[files]]
+file = "kubejs/assets/createastral/mantle/colors.json"
+hash = "12cc613e69240686d2fac9e4074a7b6994281ce020b8eb0e7225834de5daf04b"
 
 [[files]]
 file = "kubejs/assets/createastral/models/item/ender_marimo.json"
@@ -2307,6 +2319,22 @@ hash = "4eee8706e276a420e24309e2790b05194cd7a0061c284b4efffde9774f004e73"
 [[files]]
 file = "kubejs/assets/createastral/textures/block/electropipe.png"
 hash = "e0ae56a151c19625dc2c74d1029b4956082af6d8244be8818e17ca5dc588d24f"
+
+[[files]]
+file = "kubejs/assets/createastral/textures/block/ender_coil_ends.png"
+hash = "875c2e79a86b760f7c9577386ad41b22a0bee12df76daf27e01ac2604b274018"
+
+[[files]]
+file = "kubejs/assets/createastral/textures/block/ender_coil_side.png"
+hash = "f8d988146736e75640dfd526541447d7b1807bba4300aaffc06385b4d505078b"
+
+[[files]]
+file = "kubejs/assets/createastral/textures/block/ender_coil_ends.png"
+hash = "875c2e79a86b760f7c9577386ad41b22a0bee12df76daf27e01ac2604b274018"
+
+[[files]]
+file = "kubejs/assets/createastral/textures/block/ender_coil_side.png"
+hash = "f8d988146736e75640dfd526541447d7b1807bba4300aaffc06385b4d505078b"
 
 [[files]]
 file = "kubejs/assets/createastral/textures/block/example_block.png"
@@ -3841,8 +3869,2096 @@ file = "kubejs/assets/scout/textures/item/upgraded_pouch.png"
 hash = "048d7c2396a95dd5958681125aedef76e777b125678d662e0a8ddbd5444c88e3"
 
 [[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/appearance.json"
+hash = "7a94d7af5d27257d359ded06ba9ba0f05082f03eea96826e02abc79127cc7726"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/armor.json"
+hash = "06edc575d8d36af119f9b9ff96cc5340e70187001b137e6879d620dad921d705"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/armor/aqua_affinity.json"
+hash = "82421be164305febcdb3a121de160a912a858497f0fdab7665c4b54312e9e40b"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/armor/bouncy.json"
+hash = "90531ffa755e2a20fdcbeca0dce8157bf20e2eabdf277fc2a4b2a71f1029674c"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/armor/double_jump.json"
+hash = "a03bb576890ff7e6bfd47d0c4fc910eb2592f78fc282d266c3b4a9cf32aeef86"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/armor/flamewake.json"
+hash = "aa05aba6c69853220cd5d02ed532f5318a8df7de74ccc9c0d9a29917d682ad46"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/armor/frost_walker.json"
+hash = "3b9a2d92a3e2e45801d7265a0ecccc5a482821d8ac5bcb3a4fbcac4354ae38b4"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/armor/path_maker.json"
+hash = "5b7423e4d3eb9c3a4688ffb4a6897333b3a0910d39b2703a7a15169768ee2988"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/armor/plowing.json"
+hash = "18a41e7836a545056dc806b62ad510ace216f18e7d00a87a942a76308087de4a"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/armor/pockets.json"
+hash = "5faf534ab01c39a4ee0e9e58bd765da8651a650e2e78947db7a9300073dfbaa8"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/armor/protection.json"
+hash = "18d22f7ed9f8d10c28aa6d6e88c5955cc4dfa3a79341b760d8f9bc29856ffa01"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/armor/reach.json"
+hash = "65aff6322d89a5cb6fb98c72cd3d2be5961348c4a02eddab3ab4572b310aecce"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/armor/slurping.json"
+hash = "9d45f230de0bf402cbfba510adc396e15af258001389ba37ee6c6960d9b21df4"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/armor/snowdrift.json"
+hash = "0ca4f367df548f261c5d9b92d7639daf38db75c34b025b766d0a86f8187219c7"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/armor/strength.json"
+hash = "12513395e9256c8a1efe60fb4f37b79a90d4e403ed59afefac6c3bd5d6739a8f"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/armor/tool_belt.json"
+hash = "b990d4103357dc9982364fdcce9fac1eda6284795183e95c6fabf6a3775aa410"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/armor/unarmed_attack.json"
+hash = "c9483095ed42fb96ed93e1c40268c93a110bd84598fb518acc63e78160d20ad4"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/armor/wetting.json"
+hash = "8e7b90a40fc57d919cdcd4cbf330b40df5b57fa3a5e8db15d7add15c1aa14cec"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/armor/zoom.json"
+hash = "49c37aa0b17ec3a33744ac5876895414d2fc6f09b34c9470e30af04154d7450c"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/general.json"
+hash = "f2d469e3a4766346ba3c8b2d46d4902bbf3f550ff7d5da71b381e974cb44aedf"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/general/gilded.json"
+hash = "7367fe3ebf5147420438ac3b2452880297359dd5efe33b5cc86d90404bda4a91"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/general/luck.json"
+hash = "30a629772500bde55847b2eb04733c02f9c2fefe7edbd269c05cd02180d5b636"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/general/unbreakable.json"
+hash = "50aeeb097351b10621e3f3be3b5a79922629b2cf7e160f1188a6b7643f8c82c0"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/harvest.json"
+hash = "b19b31af545647f9e27dcb3a9466ee2e0706bcc39bdca5c0ec3dc03b66e07106"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/harvest/autosmelt.json"
+hash = "761dec3fd6b67c0a1b2e4a9a1714451a9dccd8b9eb3a6159f2f057eb81a5983a"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/harvest/exchanging.json"
+hash = "af7a5a49361014e564145100da324656045462c685f2ff694b6d3e90cc9ba4a7"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/harvest/expanded.json"
+hash = "70531b516b06e0f701d56bb1a756bdd6e14caa921b3e7834defae7c00c5422de"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/harvest/silky.json"
+hash = "cc0d7df658e0b379b9f8e19f434bd7d399f3a0d772db81fdf408febf9d21938f"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/interact.json"
+hash = "5433ba3e004277b5683b0fc2435892f91e39cb652a6903388321272786a6acae"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/interact/bucketing.json"
+hash = "c2d8b9ec4863da25228341e0886baf3baecb1d796c2f4ebfb0d563db46cbe923"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/interact/firestarter.json"
+hash = "ea4dbfba5df6a9ac9481d1297774ec585ee4d30eb362ab8173d6328bcb4a38a1"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/interact/glowing.json"
+hash = "3d8c453beb7d001968f8c5b20ec2577ec4e7ee300e51ff9cc3f2bc4af71f3ee6"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/interact/pathing.json"
+hash = "f2354085f95a41e5aa76541cbab4f46a224c97f719c3b8acf81cfa7a8dba66ea"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/interact/stripping.json"
+hash = "e2656297e0a80af004863165497abf7b6b10425ce99a56a1785c081a3e1befa0"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/interact/tilling.json"
+hash = "9fd1d839e5d8d5f71e7b0d3cf9fae439220c3a753259496ee345baccdbf21faf"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/weapon.json"
+hash = "878ea27a96bba7135d5b4414ae1bd0f07561938cc278a3d2650c9c2059a45dc1"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/weapon/dual_wielding.json"
+hash = "3dc8c8a754fbebc4e8dca65088beba7a4d529c4af12d1fed6938e66ac0b237b3"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/weapon/melting.json"
+hash = "221403dc80dc630b405d0a8bdd53aabd73e4913e70d35f5e18da9dc175d22a3f"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/abilities/weapon/spilling.json"
+hash = "559f5991e6467d1cf59481de8462eb6e95b827ffa8752def1c699e0c5f4fd75c"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/armor/info.json"
+hash = "f3367b3d4194b386dd01e7ad8229f9ffdec8b6ffb90d1d26de0ae76a18e8976f"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/armor/plate/boots.json"
+hash = "6f8f72c62ae02bfedc022d89bf79dccb15ff56cf7c4286db48565418f1900adc"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/armor/plate/chestplate.json"
+hash = "e18cf2947b23bc874a72edff6a214e45f18d91f2c421b726f648e762e18d6ac3"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/armor/plate/helmet.json"
+hash = "6b461dd8d8c8770ab41397bea3c56b9452f01e3eb18e96d929bb9a0d4abad450"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/armor/plate/leggings.json"
+hash = "7fe984541ef6f343818fa7c48143dd28510c3119115719d04ed9f5193d7d5b2f"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/armor/slime/boots.json"
+hash = "e35e4e3a181badeb12c0c52e7a9294b7d875c6b8e99cbe90679cc5bf5b44669e"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/armor/slime/shell.json"
+hash = "2395b870452bfd29ec67ac385e78c1bccca7900acc675be93edc12335b8a19fe"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/armor/slime/skull.json"
+hash = "62f8608df1fd3c5022ffd4095ec426443fe6ea9eceeec7a8f05622c550d9c1d3"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/armor/slime/slimelytra.json"
+hash = "bcb3372d8799a25c9e93d4cbed1d4c7111fe8e2b6ff3be3f130425347441d331"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/armor/travelers/boots.json"
+hash = "d49f97b21339ffd9da62561045bc12433469c769453c5e0dccb97b4dbe610704"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/armor/travelers/goggles.json"
+hash = "e2ebc04e49a86316fbe94eb8681624b90fc0527cf7ec16a95df3ae6fd7181c1b"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/armor/travelers/pants.json"
+hash = "99095899c79565ac347ddec3c5e4aa35a041b50d2dea7283c66ea5700ce5a721"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/armor/travelers/vest.json"
+hash = "72db917730f3f58c806c60e00e56db6530d6ec97624d54d450a75a80e0489b1b"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/defense/protection.json"
+hash = "0827e98764fb2bc4449da92b3b2cee35eea94726709019b927c417aa1f9e7604"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/defense/protection/blast.json"
+hash = "c0e1ec416f88b587d5cb6033e0f1f6ad2c781a92a457536d0c5e98f40c32156e"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/defense/protection/dragonborn.json"
+hash = "e94438272d3c8ecbd29718e9d4b200a3d0bb3b1c10f3dcbb0a2bd17f1361cc6f"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/defense/protection/fire.json"
+hash = "54ab49c167a5613afbdfffab96fc7f05e55a51ad1ce68eb91ee45345e90780c2"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/defense/protection/magic.json"
+hash = "ad14b74b6177a16f4abe2132b4fc13cc83bc8fc4dd1a23db9d7e175615311856"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/defense/protection/melee.json"
+hash = "9b1cb9660b006b78cfbd68156cd30defe87e4baaa10133d32d81584237807805"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/defense/protection/projectile.json"
+hash = "0b1e58cda24906f91726e8e16a6180dbaedab5161cd1f6fde78aa2284b231578"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/defense/protection/shulking.json"
+hash = "13470945a08577d0ba61b70cf56ade364db4b0bdeee8cb27c5938f69a18f580b"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/defense/protection/turtle_shell.json"
+hash = "b7a570a4aa49a4bbac3b34b6d1e19c5a422b2d9aee907f4adc5b8166848be2a2"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/defense/special.json"
+hash = "cd1c7d3f68fe32e5970be745acbfe7e1b0d95cfe947e8c50669a1dc091439095"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/defense/special/golden.json"
+hash = "d7bc45104a28ef639a58bb6cf37bcff8879c10373bf348b6eca7df456fa0270e"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/defense/special/knockback_resistance.json"
+hash = "1e63809f158d1e4ca0628f7936f37fb292e3045d75e6a7a66891cd9e2844de44"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/defense/special/revitalizing.json"
+hash = "b096a01ac83476d7a0f286f2aabb4f822b3a1ff556db6b0e6b57b881819eb5cd"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/intro/foreward.json"
+hash = "7448f5262c47a5645e5b7fb9590ad17f961274c5960ef64cd4d5c1fcddab5e06"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/intro/updates.json"
+hash = "07ed3f904e5684469163b5fc6fb34fd35c76ecd4b85505081a6b9f2a7c5a14ec"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/language.lang"
+hash = "7fcd9376ebb9efbe5179bfaff40a25165e00be2537fe65d04077d309fdbc863c"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/slotless/bonus.json"
+hash = "bcf78198d25a4a833fe5d8fc56dba2bd65643bfe95f126dea8d029433c3efad4"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/slotless/bonus/amplified.json"
+hash = "4512ba3b748fcf94977814d58422181c5febdc636dd71b02ff3b1289682a7b14"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/slotless/bonus/draconic.json"
+hash = "84a1dad9f23c3b3dd757baff57bb3513bf78797ab060cd92d47f7128d4186582"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/slotless/bonus/harmonious.json"
+hash = "90782f2e593427df32801642b83ee23e0b8b3d9f10f13291dd562132eb2d2e31"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/slotless/bonus/recapitated.json"
+hash = "099c9de2e75e917bec6cd13ff37e11cbb803435a6adf3adbc96c2a4a284ccc7f"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/slotless/bonus/resurrected.json"
+hash = "b70935e3228505a973acdfc03eee1b7e1a6a1c095638e3696322c60d41083af2"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/slotless/bonus/spacious.json"
+hash = "5b1b86e9b7786aec1136ea6be0a9252f60ca72414701e69cd12d188c3b09617a"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/slotless/bonus/writable.json"
+hash = "8bcb83d182d0b48d65bf866802efd0a70593fa2417312b4dbf5cd6b1fb02469d"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/slotless/general.json"
+hash = "2abf336eabc604f413d50b323b1848cafafd4660cf06efbda00e095a689d0192"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/slotless/general/dyed.json"
+hash = "d6e87b6e1e8cb8c595f7c8c86d9c69cc61c4700c10cd772f1009419d019806d9"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/slotless/general/embellishment.json"
+hash = "d6a9ae42d38e52712dbc404d592bd44aebee82664070f143127c6af1eba28411"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/slotless/general/farsighted.json"
+hash = "dd4341fa7f124760ade2ed4936a74421a9b74ea9727c1077e8dd5021e8b33cac"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/slotless/general/nearsighted.json"
+hash = "aa846cc776effb2b678ac2deef3c1035e7f65e5df223ec98ab974814ba1e47b9"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/slotless/general/offhanded.json"
+hash = "d94b7bb1eb607a51fde2ababfff30c1c350bdd024102efab7e3304ba6a79dece"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/slotless/general/overslime.json"
+hash = "167d23b7b40fa0ec81f9058d7f35872f8e2bea7182943c51a7313010e000401d"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/slotless/general/shiny.json"
+hash = "1353fc3f866424461a685a46e1742fc1499fa5c60cd3b5ec66e89e7940e875d3"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/slotless/general/worldbound.json"
+hash = "f1de03ff3ee14f1c43a152bf2596acc0467712fb201f5dfef3c4264d6316a55a"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/tools/large.json"
+hash = "553cd5c76ff364d5c2fb1da53dcb62348e20b328eea367a3180142530beb1efd"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/tools/large/broad_axe.json"
+hash = "8d2c7767489866f6f5d94c71335ba77eb0fcadb03936e4f298cdff8a25af799d"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/tools/large/cleaver.json"
+hash = "eec454cc6819b05433c3b45c2c31d5d8bc7b803bd234eb5138ee459de79efa87"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/tools/large/excavator.json"
+hash = "419fe65a8dd905f1600aba7792094bb39a227569f4a0def26ad42a38ef1c6651"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/tools/large/scythe.json"
+hash = "45fe5fa256663227678402d47f7910d3fb2a751db21b5c5a7202b2ccfcbbdccc"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/tools/large/sledge_hammer.json"
+hash = "c04418a4f7a8298cd66bcd9b67765a4fdf46f77c6a4a1c9b9291a6b895e28434"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/tools/large/vein_hammer.json"
+hash = "195d165b37dfbb45cad7ae228bdcddc52013c7b1d654fc3d010435d2adf25564"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/tools/small.json"
+hash = "09b1eba3803632f7b6ba77b733f4b111b08055c7867469e02e10ffefdf697140"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/tools/small/dagger.json"
+hash = "d5a5515d6c9a924952357e8cd035241d3e8d38ab2ae072f81aaa94fb8b8868b3"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/tools/small/flint_and_brick.json"
+hash = "013b5ec605be5a8fbb36fefb0465521ee9219be0d730c317fff71dc4edd27b61"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/tools/small/hand_axe.json"
+hash = "44b2c5b8818d725c892347e09ed3ace1143f0a021dc6d1fa815e59e237695883"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/tools/small/kama.json"
+hash = "7ec7c597eeb72fb60ea5f1960dfb8d0fb9a2e8f9a457d7af3f8dc8f3348ed90b"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/tools/small/mattock.json"
+hash = "a2d5e2da2adccfc6f06c6b05667d79331fdf94c8996ef217f1ade747f315925e"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/tools/small/pickadze.json"
+hash = "9324cf26b38d1e32d16bac0352559a62007e5590f7b0b204f9dc43a5d20e4fab"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/tools/small/pickaxe.json"
+hash = "521c0f0a7740497df91f0aa68be963dbd6f4222a61bcb8e2d4eaa5a93d0f5ce7"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/tools/small/sword.json"
+hash = "58d52c3eeb01189002e09e5905f1bdbdca7f9bd9116e1c94903cb7c2563eaf70"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/armor.json"
+hash = "de34d3a853a711691ea0ce8bdc2e1e092471f2303242c5174c35d8785fd36ff6"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/armor/feather_falling.json"
+hash = "eb0cfc862aab6258154cf5ebc2d58f66a56a1f22809de2874c6a7adb70706453"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/armor/haste.json"
+hash = "7d87efdd813c6aeab29a7f8452aa4bb24cc01763b235d058a66db955e5f09546"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/armor/item_frame.json"
+hash = "e61537b29486b200df8d1f70b337c57cf1ef4c333a421ca0b9de18d326cee2a6"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/armor/knockback.json"
+hash = "dc5554e8e0ae609bdfc1f96188b33fdfd9653f485cc4dfceb635487b45966683"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/armor/leaping.json"
+hash = "84e4c371ea0a16826fc25d2b4f9b12fc9f10bd8b4c528d3fa515f07f126eae9c"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/armor/lightspeed.json"
+hash = "40e250c5f91376f82f659ef2695454ae96fd97b3e1dc19aa81330a404b86e737"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/armor/looting.json"
+hash = "b15b6fc668e7438cea13ff8972122b840801885cb5e3eb7b16bb579a2d6d0e8c"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/armor/respiration.json"
+hash = "def7bdd09682285c8419214ce48d56e56987dda1cf2ce5ffae618a543004e199"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/armor/ricochet.json"
+hash = "dd9909058fb7cbf4d9a38e5b0bc90312709c73bb966d23f5c1a7d7fde89b5796"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/armor/shield_strap.json"
+hash = "5bd191fd616b0a96e57938fe2f455c012131bdad0d104aa22d6512af643c33e5"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/armor/soulspeed.json"
+hash = "1dc476d309d5bed8c672dfc906687002adaa61ca0d4a6b48309d79636bcf05ef"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/armor/speedy.json"
+hash = "fbb9e74f0e26ef4c38eb200fc6f25c28bcce601b91f9980c29e10673938bbc2e"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/armor/springy.json"
+hash = "de48134dcf6a5a2be397393de13b515c1b17782e705ce6a3ccbc4a24d8cf4c6d"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/armor/step_up.json"
+hash = "7bbe91704fd850f44c03752a78e3ebae49c6a7c0107046148c0c294f9332b5bf"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/armor/sticky.json"
+hash = "5aa871b178f30b20f0624b2035f8d61740da25872587fbd6e2c35c7f3e2e129e"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/armor/thorns.json"
+hash = "ebd0f59f0796b99d8385a8d91553043fb16ebc6bd581841d5afa8d79aeca2d74"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/general.json"
+hash = "fe4ead04527bdb26159eee4b1d428dde7e3fdd888631f0f50a551b64866f8ea2"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/general/diamond.json"
+hash = "11fd1e6b18cfcdf78c58fc16097af9cff7290e3271735686ccf49a702169f2a2"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/general/emerald.json"
+hash = "b49bddbd4ac642d42391069c52695a0250a50a1880a426154034ea350ec16c6e"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/general/experienced.json"
+hash = "b1c4472210a3be675a469b2876f44dc6b91482cc045b5c2f536ec0f98b946658"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/general/fireprimer.json"
+hash = "f1035f5d2deeb878253ccbd03945f0d2bdd80dd2ed14e5a93c7a35c25ee1b0f7"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/general/magnetic.json"
+hash = "b783a1e427e170e6a6f818f62dcd7328e41042376a785f66ed1527c9b0c1a8f1"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/general/netherite.json"
+hash = "f4b8554ad9d55a2a2fa61abe41a83781e34eb0a4a6dec61d07ccbf123eadd38c"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/general/overforced.json"
+hash = "32770b0162399ca171a03e67c1ac94a99a0a6724409dae64dd64b5e527f861e8"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/general/reinforced.json"
+hash = "848597960816787f9635d8a5130eebf1aa164a2160cc61da8f45e712d03da630"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/general/soulbound.json"
+hash = "585d01988905196d97acba66ee66d9d735e9fd836f7376a489db57269ffa1da4"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/general/tank.json"
+hash = "c409082eaadba798bf5e6e17946d2a511d107ac8d1599b3cf6b17a945894ec67"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/general/the_one_probe.json"
+hash = "31fec3a6d6c80ff8cffa8df5fd5ae9bebedba2414b93602cae50aeaabe523f81"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/harvest.json"
+hash = "cb1ad6dfb79332e3106f65203a29ff63f4c7186696171ba406f1da79b2443ae1"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/harvest/blasting.json"
+hash = "ce031fed687e85138d42ae6d5ede5840b31dd4bc3cd336a37fdac547e5b49cca"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/harvest/haste.json"
+hash = "70321fe266c5713bf0a02711d85978b91c8c486aae31e998c32f882995382466"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/harvest/hydraulic.json"
+hash = "b37d17705676f068ffb80c76a5f1a036b7989968ba4cbf064ef164c6252fae2e"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/harvest/lightspeed.json"
+hash = "4f3a912746f03c1ef2c8d53f9f8601c66bbfc3095d2cb80b1188051f1d61ad7a"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/weapon.json"
+hash = "24c024d3ca73dbabac6bfae567584aa197499fb7fb3b6e514c5fc63ec2e0a0e5"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/weapon/antiaquatic.json"
+hash = "3005ae5eaaecbeeb57643fb3323be3e901cd4194fe0523eeed6c164fcf7e9f1b"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/weapon/bane_of_sssss.json"
+hash = "a3a349c279a01c872a5f3dc5b6be43bd0a23429611113f4baa58dc1cae44c1e4"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/weapon/cooling.json"
+hash = "3b6905860d784a5347218b34b85e792b8a9b6ad00924048bc457aa0652ea5134"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/weapon/fiery.json"
+hash = "495e8d5a0c45efd35bb4cea80e9ad7a4c4014e40f1d563550369a254c9a09878"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/weapon/killager.json"
+hash = "c53385c49b37a088d4c6f8e46bdfef85e907bcc84f29cacd8cd7c33a972657c8"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/weapon/knockback.json"
+hash = "8b888941f1f5d2b1f12fd3143d5147933c075ba53e6f021876d9168c97fd8f29"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/weapon/necrotic.json"
+hash = "17b35f8d8d034d596881706aeae0c93036d5f64d52423955ab4e2a8762490713"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/weapon/padded.json"
+hash = "8f0ca363f22cf8ae3c7c64ffc599ab5f9ede0f955cfaf7821dc475248cfc1490"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/weapon/severing.json"
+hash = "fc0c86a9ce658aca0e68815b73964961d9384f3b64faddf6a1707f3ec836f343"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/weapon/sharpness.json"
+hash = "09d818e201c383f6d2c3f78ac0d615494c0fbc8bd06108332716b48e88e3d620"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/weapon/smite.json"
+hash = "7d92d443ce23494ffe4d605fe8c598fa44564d089f841c8ac2353cd0e24d5dc5"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/weapon/sticky.json"
+hash = "4c77cb9cb3afc7acd805083d50947688a8b8cf8e81a670795ccbcd2868b1a03c"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/weapon/sweeping_edge.json"
+hash = "de0e3fac91a917e4e0826e3735234933f83970a571beb6cd300debddc21a2ced"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/en_us/upgrades/weapon/swiftstrike.json"
+hash = "2350b8f13c1f893ed1b683cff7f94dd188a3b1308e68e130e220694b9c1e0d0f"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/index.json"
+hash = "88c9dddda3c01c03990027474e273f3a9013e30e91ee6ad013b8a55e4ad98d89"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/sections/abilities.json"
+hash = "32442c716c701f6c63700473e2b2b82707850b3c9bcfe7122b545171c2beddd7"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/sections/armor.json"
+hash = "ba6e874f1dbf634b036977f66ab31dbc363523bf9c9d4c35d38f5f67ada2eb57"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/sections/defense.json"
+hash = "31934f92ee21b566b5cbc3590e08d2f8d6506c350bcf6ff1571c98794b98f4eb"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/sections/intro.json"
+hash = "ae1e9dab9c776b8087edced6e21df2c322992008c590b9bb09ad0a6587f839be"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/sections/slotless.json"
+hash = "d71f349a7dbefe64e7b86371ce0e1cae25142a4bfff5faa183eb4f15a56a429c"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/sections/tools.json"
+hash = "0ee9e2e1f3f88cea07df49a6ce72cc2b729b5749437df8ae76199ced4a7c8232"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/encyclopedia/sections/upgrades.json"
+hash = "c712939024dbddf0d8fa251e13e9cb5d48cca02f0152fcc71fc4c8a1a674abd9"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/appearance.json"
+hash = "b050b032bb1be906c4225b3d101fe6ee9be9304df7e980fd77dc0475846f43f6"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/alloyer/alloyer.json"
+hash = "33d839929876a9c34b9eb3003a848af80f38b373854dfb7d5ccb1d3034b7b6da"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/alloyer/casting.json"
+hash = "13a106845fa6a479ae0e715540304ab6312fdfb2d98eb5edbd4413f4386f2b2a"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/alloyer/features.json"
+hash = "f26c1eba3ad7284794506036b1781177b4eab3cf2d79f884d64bede0187cd627"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/alloyer/gui1.json"
+hash = "46e2575820eb971abecaf8f06b48123341658f6562495b018aee3c276e0408b8"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/alloyer/gui2.json"
+hash = "e07dab8d2cc8c94bb082cf1d35864cee65fa7a9412226bc934f6e9f4b09f5834"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/armor/boots.json"
+hash = "afee2768c93597255dd35326bb67327270cd590c11733a7fcf0e4aa7ee4bde8f"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/armor/chestplate.json"
+hash = "c1ea0dddd5c58b126cbf914f64e26e71e68b46def68674472ded5f4babf1ac0c"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/armor/helmet.json"
+hash = "dee49f8dcccd837a3bc102efc232ee9151ff30c27a61709c29db51e25ac4ab89"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/armor/leggings.json"
+hash = "4ce053175da7cd7b0d1213f9306c42bc28577b805239c401279d2f8826bc7f20"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/blazing_blood/carry.json"
+hash = "aa950dfe6055c0f151c32bb38d62f3c84780b29fc69cb4ad8ead50e43b6a7775"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/blazing_blood/foundry.json"
+hash = "60f572731f4b18159c6defd814894f6044861e1fd81a157d4efd6dbc36fca021"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/blazing_blood/head.json"
+hash = "ff5447ebeb49e801b7b5e555b48fd3d95611ce5fbbee7ed4b85f9bd15ace7536"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/blazing_blood/index.json"
+hash = "92992037e3477579df8a8e6e57b25130a9ee8ddd7e2d53d5ff6b2f212e833f46"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/blazing_blood/intro.json"
+hash = "e34f2c72b81627cf03d79d4584454c1b19b21ab3d5b4a0cc1b9d6bbd1cf3ff63"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/blazing_blood/melting.json"
+hash = "ed895349b628801af15e2e197eb06e3442758c5cc89e09c1f02c8c56961723c3"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/blazing_blood/piglin_bartering.json"
+hash = "bf6286800d93e1419e53bd35749d8a0e729d3809a1345829451256e2ef837147"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/foundry/byproducts.json"
+hash = "b326d8238503fb9815eedb49be4e4e3cb4e33f1911b76fbfc1a776feaf013098"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/foundry/controller.json"
+hash = "f4e9bfa9f3780bb6c97ccc070042cc744a9bf6837f08aae2eb58c185092bf674"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/foundry/features.json"
+hash = "90642a986947e7b8d4e48a0ae0e938b32a7b80cdb8655bef40681c2a02f403fa"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/foundry/gui1.json"
+hash = "4bb7e0b66666ab92bf33759f442177d893dffd57618c19cd56284883026ab97d"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/foundry/gui2.json"
+hash = "7306f8bda015b01937fc9d665b31674a7ba96897df0b6f4d6b0bfffe5b166ff2"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/foundry/index.json"
+hash = "d4f8f3a9555a4614df92e4d7145c6069399626769e6c7c10fbb105ce74e395f9"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/foundry/multiblock.json"
+hash = "0be82cb761226c1f1b8307e8d4730c37c63222dd87812835b8544d804f179a90"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/foundry/scorched_chute.json"
+hash = "c070e933f66deb1ba0c18f6e9e1e42725a68afb780f56b53a2d48ecb0568ac1e"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/foundry/scorched_drain.json"
+hash = "ac4af15eabfedb5addce099567110c0219f85badd5c64000cc22d099f9e5a2e8"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/foundry/scorched_duct.json"
+hash = "a70617517b68f2dae81efd31b437fad07ac45928dcc60115cf5f1786efcdf753"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/foundry/scorchedblocks.json"
+hash = "154b3ff6f8d0ecdc5ce260173dadd9a9f744945d5ea6a23a952f8fd2c9c840a5"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/foundry/scorchedglass.json"
+hash = "9f129ded61220d2991351534aac0abe5e4e0816791adc6d5220eb9aa3456d99f"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/foundry/scorchedladder.json"
+hash = "fcfb23c4693a2b905979bddaf0afc24b9611b78c6a6f70e1d248beb306e73f24"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/foundry/structurerequirements.json"
+hash = "6664cf498c8274e81851cc16a60018171a5ee3d2cceaef3f1b0edfdad294815e"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/foundry/tanks.json"
+hash = "ae71d439266f3688b592cd836f3df9d8d75843b72769402cae53c1f9bf42f660"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/intro/intro.json"
+hash = "4ffbf8b6eab6b3a024d33eab8839938c013d82a762385a0e0102d70cc7961d0d"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/en_us/language.lang"
+hash = "b4e1482bc8c7016f494c4d0916c8b04e04ff0132c55dcfe0ecc0bc31582b4128"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/index.json"
+hash = "d431807d7e921b6ccb2e56a08cda9a1ada382b48a88a72d82be9783194fb5e02"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/sections/alloyer.json"
+hash = "68df8d7837fac2f35492f095ab83d7dbd402f4b8f03d8420e43f87146d390f31"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/sections/armor.json"
+hash = "f6dec0f01d94fbb9a42018236cd091eae0697f8138d13de7db21772f82b20047"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/sections/blazing_blood.json"
+hash = "2bff45d77f6db2ad20cdf9d94fe3edbb0148dd3fce0bbf8579651129e71fb974"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/sections/foundry.json"
+hash = "3b88898a7e8bc5f74feaeba0fca6f24d83274b2c3a724630781f3789a8f102ba"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/fantastic_foundry/sections/intro.json"
+hash = "f23d1c593b15b899549f468fc6a328f20f84bd5f33b74b5faff4a9ddbfae9d9b"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/alloyer.png"
+hash = "bebfbe6d8e03f3b7ffc716bd8cbe999cba50c98e84c710767bdf88b7b0bb3dbb"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/alloyergui.png"
+hash = "5b6057be18b547fa27ec05935cbd88c1c448386f3f629e0cb2fc666602e0736d"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/bartering.png"
+hash = "b9e7cc6bf3b8c74743fa21a89ceae6493c9cdc80a57cc0c4da05c3d0a176e9c8"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/blaze_smeltery.png"
+hash = "23356d4d27a8fe8ddf0efadef6266a6a75ea77314d08aa7355970d7917cf0a2e"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/book_encyclopedia.png"
+hash = "3fb679d12f50b3e933a89a30222e9f08ee63757d30bebb9bab1a955bc5861b01"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/book_mighty_smelting.png"
+hash = "3143f3b77152e643aabcbce5b6b9856ab1b9dbceaf9cdc64c0073064a2d64d99"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/cake.png"
+hash = "7190798cb93b2e49712000177ca2ae2b6d199431504c40398bb1d63b2a683868"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/carry_blaze.png"
+hash = "dbd14f49c7f2e8ff4e47f5bf26cc14081f38976aadc54c29fc58fb365be5ab5b"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/cast_automation.png"
+hash = "1669d5799a94c98b085fa95ef19ef7636183a50a73b0876040ff59a7e3493ce2"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/channels.png"
+hash = "bc44a5521e2f69cd106743e9005fba1daeddfb61130934bc0f2026e12150aec8"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/compositecast.png"
+hash = "96f8434cf70a3e132b6516ae408415b52e14b9ef2b84d45dd5f44c5a92386d2a"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/covers/encyclopedia_cover.png"
+hash = "5f49f21e8da173831c3aa5cb0dd2a0468d070dde6952e2d921f811d18135ad0d"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/covers/encyclopedia_pages.png"
+hash = "767afaa5e1edc8b31d8938637246ded996f092a56c26c44053b9fc7be4203255"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/covers/fantastic_foundry_cover.png"
+hash = "300a91a4b0e11eb1aa7ace6b9ad67e86378a57d882f490e797950820ff628807"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/covers/fantastic_foundry_pages.png"
+hash = "ef3916b4954ee6c8200a049d98b1d04856120fce6cbb2843e91efb0d905f63b1"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/covers/gadgetry_cover.png"
+hash = "5bb3557caa4b346488023a2e87e731bee3db148dc6060a5e2d511e8a4ee9fd80"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/covers/gadgetry_pages.png"
+hash = "9ba0674401a98c031c43c584000698c4b9d37f1c03280334ab6cabec0267b907"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/covers/materials_and_you_cover.png"
+hash = "abe8d709ddedcc390a467656613c8e470406e59e150c170e7687705e98c7bfb1"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/covers/materials_and_you_pages.png"
+hash = "cdc82ac477203949e3e4d32867b3b2cc06796622a885460cf1f6b03098cbc84e"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/covers/mighty_smelting_cover.png"
+hash = "9bf4a4836e45aa762ae14a787b7b7c7eb50ea26046884a12b06ae8cef194c584"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/covers/mighty_smelting_pages.png"
+hash = "dad25c04666bc4b3cc9347ba6753e8579a0b29bf5b4ff7a72b6bfc31a817ecaa"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/covers/puny_smelting_cover.png"
+hash = "754dda8d29edff06129989adf2a07cede6a23ca4fcec2fbf3644e326144dfb42"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/covers/puny_smelting_pages.png"
+hash = "cb1c9e425930e93258b3b90de565b49292eb0fe0d287b9efe3d0b48365b8d823"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/damage_tools.png"
+hash = "17095410729873b35993d09828f216e46adb57566c3b2c26084051166498e81e"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/entitymelting.png"
+hash = "d51774a1cdbe1642fd210176f74ea5eabfe24bca1919e2de3de75c0e6435b9d3"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/fancy_frames.png"
+hash = "bd14832a75c8677c48b06aefe6b7d2d952ddd94864c5cdca4bd3fa559410d384"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/faucet_pour.png"
+hash = "1e1d98a90c1f2971532043567ead612d75797a19f9ff55cc87cc37de06856dba"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/fcontroller.png"
+hash = "e66e3799b2fe5406368da09fd01b964290495cc057767f88d5d3873e70ea03dc"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/foundrygui.png"
+hash = "e150a98ac1cc097ae6bfa46991a9d212640a993934727881657f2117c7cda96b"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/geodes/earthslime.png"
+hash = "43390ee67aabb04699c5abc54717932fbb81dcbc60cab31e99c2cf5ce4bcafea"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/geodes/enderslime.png"
+hash = "ac8e1ccca3571e583ab6a6100a56814e0a19afb46854a677e5882318129bd091"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/geodes/ichor.png"
+hash = "c3bbe768bd32d1d436a1fa8ee7c609a2805084c398ddbd5282da408dff58b3df"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/geodes/skyslime.png"
+hash = "191b7243326c43035acf83f9bf5a97f70542be68a8bb13a8d2ea887598de86c1"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/gold_pick.png"
+hash = "8e44d4a48b0720baa4af6aa70602b6c6025062cc5cd4df135bb30e5e835794fc"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/islands/blood.png"
+hash = "b897ad54df073bce5a1fd9403afa215b09a9c199a77f972cdeeded2c78a4f0c9"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/islands/clay.png"
+hash = "27a9d490861a1a16993136a8cce9fdc86ce590be1f7e9e27faa5c34e5ea056d7"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/islands/earthslime.png"
+hash = "bf59fd126c1996b36cca2b9c4b6f9a19bf1411a98a7f37561bff6976f689bcaa"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/islands/enderslime.png"
+hash = "4aac6eadc83448e4c350f17c5dac324d657bfc042ad94479e6c5900e24ec6958"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/islands/skyslime.png"
+hash = "ff9489cd0b2b348ee0daaba886d38e17da31aba8c9b547ed98dcf1f7ef917745"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/manyullyn_alloy.png"
+hash = "5fcaf6004f5c85e2cf56baa860f108508e3319fc6360d373f685deaf5adef7bf"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/melter.png"
+hash = "8ae979d67dac00abaffda36e69e8cd1c8d813ade21ac702a5401849d8dd833a8"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/meltergui.png"
+hash = "d206696e16252a8c4659edf0ec6c56c757a717bf31a042ada396f7175a2f4233"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/movingfluids.png"
+hash = "4a1bbed80d3dcdea28134537f26032822b0b71b324a42a195373795cc79a64f2"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/offhand.png"
+hash = "31651a9795d3fe81ac742f5d9fb5b5794fa78fe48c444d45f65145104c8cd9a6"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/part_swapping.png"
+hash = "084d65131bf54fcc1bd9ca3a129b3c913c791300bfac21d1cb2d642528e32bf5"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/partbuilder.png"
+hash = "c17c4345dd70256bdec2227dc1002b0f2c7dd76c527bcd022086ad6d80fac587"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/piggybackpack.png"
+hash = "4826870e00f1853b3bfdab7e024b1f2f75a821ba523394c2462547dbe771badc"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/recycling.png"
+hash = "7ccb1b636195d53a261f6b785ea02ce0a1637806ba9f57635518fbc417ff4af3"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/remove_modifiers.png"
+hash = "3ff4fb09d195f55a052bc020387e0f8f44ea7bced65e3cbedf62716661d4faa7"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/sand_pick.png"
+hash = "96a470fb1fb011d2530c60b776d97cc57a6e56a835f83e3bf7dd89993b80a230"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/sandcast.png"
+hash = "54512c81c2364399f7fb359b3bf654a02f578a2019c13c2037afc0e496713c19"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/scontroller.png"
+hash = "0ce037551e6689614c790354f1a34ec6b255b1036e23b9e306115ab4216a8634"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/scorched_casting.png"
+hash = "5877bc41e4516ab079404295b797323546a98c809f27c21ca294fe505bdc13a9"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/smeltergui.png"
+hash = "7efbc768e519ec3425a6c1bbdf9e09e195a3750fc77b2dfafc42de1ca1b59193"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/thruul.png"
+hash = "890da71e4ff4b701984e7a323b574ed43355c3263b968e727a42c3d9fa49ff4b"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/images/tinkerstation.png"
+hash = "82d7a6b1304ff0c1c802c3a4c70d002da71255fc838802a03320fa8aaf20884c"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/appearance.json"
+hash = "4bceb97b70377d252d7b58be541be4b482143d1bb2e0277cab58cec60244ad41"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/armor/boots.json"
+hash = "6412f7bce4b502f20b842b367c5ea746a8df554b5c46448ea552efd1c0de815c"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/armor/goggles.json"
+hash = "4326db7d1f3ae01636acc529586a7a11c455df9fee9132325721051a05a2e67d"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/armor/pants.json"
+hash = "09057472aa776112e29102c408f0f1d57513eb46e8d6a2ba9b41e3fd14dfb7d3"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/armor/vest.json"
+hash = "436d59233e82f48785e587aa2d74f5575a284445a0353bfe1af0b87d226c5216"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/furtherreading/fantastic_foundry_craft.json"
+hash = "69408740a4c239f705231682e96a87c1168b49b03227ed380253e9b01f2f0e86"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/furtherreading/furtherreading.json"
+hash = "6330f8421a3abb25d2f52119b123e9e58ad67082632f74b275628eede3ad6cbb"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/furtherreading/gadget_craft.json"
+hash = "4ca77bb38912bba15709d392452b714856577d0d557e117221ce2313c18d1c40"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/furtherreading/puny_craft.json"
+hash = "b8eb7e81c0e8daf36681ed72bfaae48e41d627f0025ad4f3a5371951894b9f05"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/intro/partbuilder.json"
+hash = "6385c96e27aef42a01641f2e6b72a510ca1ce8043594562fcd845eaaa310f163"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/intro/partbuilder_craft.json"
+hash = "cea898c20e73981e86e228be6cd131cc9869cc02212277ab1afe124268c8f3a0"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/intro/partchest_craft.json"
+hash = "b483018ea36dc676bdcac2a446b48baffaff2c4e49b992aedc5552ae2e1dab0d"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/intro/pattern_craft.json"
+hash = "6f30c2f22dd94c2e16cf6e21d572924bc1f5b4f2fba6b8146f6a24a660aac560"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/intro/recycling.json"
+hash = "57f92d01e736838f8cc852864da2da6bd5ad06805e151701764237ed71dc32c5"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/intro/storage.json"
+hash = "f597317e1487c31bafd58cea46cb3bdea20b98aa3dd89fdc2ebd60adce8bbcf7"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/intro/tinkerschest_craft.json"
+hash = "db7565ee890e4a211db746fe60980cb9dac2781ac899fed3e2deb25628f1de4a"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/intro/tinkerstation.json"
+hash = "0073fee2d5403e1e43b8e0bef8448dace048140b838fad85fd1c7982dba82716"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/intro/tinkerstation2.json"
+hash = "140984d6230a79bac5789c0e5ac45079ee4a7a5cd19a9d6bcb3766352e62f530"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/intro/tinkerstation_craft.json"
+hash = "3d15635e6f74c72cb96a135f039dd912b13209d0109112026d09ae2e81a8a193"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/intro/welcome.json"
+hash = "6af4ef9047cd080e92e127518c73a2172cd5b7bb8bd9aae81828c548627b8392"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/language.lang"
+hash = "df120e514a4bdd296aaaa245537e85da48074fae1ecfdff0b44a4b0bed199011"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/modifiers/abilities.json"
+hash = "2129c49d8958456fc8b9b5ef144ff7f8a2d0ca031cac5a33b4558cc4320170f8"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/modifiers/defense.json"
+hash = "54b8ba01880fb72b1fde284b2d6f5faec26be03d45bb37c837ebc8c56b19582c"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/modifiers/index.json"
+hash = "f9f293cacdd31740560cc3ce19f3164e2605e5c52f5d8d07149a76c352a217f3"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/modifiers/slotless.json"
+hash = "1bd791b317fc2811fbaf9b0df34256053e250935b672d3b8208ca5929982fd7e"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/modifiers/traits.json"
+hash = "0b2251bc9334670d19221e886c5f0ab42382086409d292381dbb2aefcf572cd7"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/modifiers/upgrades.json"
+hash = "10d22a15eb7b5ea6647c1f6654c09d8506514182918c963d52156125b2154142"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/tools/axe.json"
+hash = "043f533fb023190424aee530e8383389ac2817fa3e505a6f15be9874e8d08d02"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/tools/dagger.json"
+hash = "70e1007cd6226eb809d59cf572479e21d80216e6e048605f6f806f5719788615"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/tools/flint_and_brick.json"
+hash = "7ad6ed7868f46dae339e34f8ca367530c9fe35413c88840a56aa84d8532713aa"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/tools/kama.json"
+hash = "5011d98e2e465e60efa592e567a50bd06dc352731a2532b851f4e54f570f974f"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/tools/mattock.json"
+hash = "1db68a4ca47f504c4c1209a476d1f35fa37bf75889256441943a772d25308594"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/tools/part_swapping.json"
+hash = "2c066cb47aa375794b92d704d06cbd0e4021c89a809746c88c137ed16938027f"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/tools/pickadze.json"
+hash = "c5d9fc4c5ecce89febe5b1d6e12032c912e6b7fe7444a515f2ff6f7d65c3ffa8"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/tools/pickaxe.json"
+hash = "600acf3258de4acc7a9c7833854578e51f70de4d75fc2b24481d3b7bf9dfeaa6"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/tools/repairing.json"
+hash = "3fd0469f4914ca92bbd49a3484356e1f40714a5588092a5302fa12f9d4d7a16b"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/en_us/tools/sword.json"
+hash = "f00e78ce7610ed47acb9a206a96c46601d600cd2496aeab8ac410bdc278ba13f"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/index.json"
+hash = "ac17914811f729dd30516d9de295569be0003de7b08c4ad5d93e8c723aad2ccc"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/sections/armor.json"
+hash = "261e504557d2f3eb5d10caa0c333f0140b2b7bbefe1f834a2723caad6310408a"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/sections/furtherreading.json"
+hash = "680f74d6187bdc32567bf0a0d65e757ccbe645430919c8f3b1d8ef9b2d2e64c9"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/sections/introduction.json"
+hash = "2635115ce0ed89d2fa3ec23c8342f8c756b09177d6a6f42ad8c8ce6acd878b36"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/sections/modifiers.json"
+hash = "327d134c2375bcb692b20dbb11227b9869d3dc99d204e38c5ff9adb63cfb035f"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/materials_and_you/sections/tools.json"
+hash = "5b6e9a194404f480f724952e81c710a5c6008d7f6b99b681259d32e33f75d0bd"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/appearance.json"
+hash = "2aa78434fc6e1beabbc6b2af77edb5622e7fe6d79669f1e6ea489abf6336d3e2"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/armor.json"
+hash = "06edc575d8d36af119f9b9ff96cc5340e70187001b137e6879d620dad921d705"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/armor/aqua_affinity.json"
+hash = "7625c27c97e89ad573df5b6e677321b8b94873748b64ea93929d706abf682125"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/armor/bouncy.json"
+hash = "2f9dfddf6f497f8114fecb3756f3192d7b40581e29d3d040ab32476aa0eb0c64"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/armor/double_jump.json"
+hash = "0a07557585b1ab6041fd0f547b2969cf1669aa72770835b7c20e58479becd49a"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/armor/flamewake.json"
+hash = "335a2100ee64710c2dbb53fbe1da4fb938daf14ac9b64413e6ecfe60807bd829"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/armor/frost_walker.json"
+hash = "4cef5c7aee0f0c4c44159a64e7c9786b7a0520cd7cc0da909f60c924c4beff9c"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/armor/path_maker.json"
+hash = "81cbc7934175bad9cb227cb05bd57c275f87f68ec6b47cd8c74d3179dbeb676f"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/armor/plowing.json"
+hash = "aa4077378c57c1596efd5d5141579a12c2f71060cc465b4ec2801567ea3d92fe"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/armor/pockets.json"
+hash = "944999710a147a21ab19a6c61bcc2430f541e4773638ca8d990994be8364c654"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/armor/protection.json"
+hash = "f6037a752de0fa590f98cb1d4df196d1eee67e41bf5bb510635a6ea62666bea5"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/armor/reach.json"
+hash = "d8e43727225178c682b0dc2c092bd6c09be5e7c15e594d8d07642f96b6ecda80"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/armor/slurping.json"
+hash = "7a4e768be6ab22c6d57fbb3ce1c0b459dab0272dd3fbc0a56550285e4c54fc82"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/armor/snowdrift.json"
+hash = "ee833e2f5afb7f445bdb4f6454da045f668fa5d43fa9cef50cb81df0013195a1"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/armor/strength.json"
+hash = "48ff787ccdb1b9ffa2a5c1ea4a99a66f83acdee1c9ffc3151551f153293201d5"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/armor/tool_belt.json"
+hash = "3a02026b58e514f67030a31ce53777f6ae9c0d2daa3b1b572ecb7fa7582fd964"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/armor/unarmed_attack.json"
+hash = "ee6240671c09f7b2b743ea553e2fce64956752ee16ea231e1a51bf499720a0e4"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/armor/wetting.json"
+hash = "99ac0fbdf4185b16779e1f161798d5bdf15275950c8e42d4167d16ac70a11209"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/armor/zoom.json"
+hash = "c9a9cb54f115022bcba9d980a2f283030aaeaa62a86c4b73eaa45965ac6a584f"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/general.json"
+hash = "6b64c6681956a2b024dee87ac61aa1bb6c3c1c3bf55595ce5de6c1a8b57746a9"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/general/draconic.json"
+hash = "2a28c5e668d8a06fbbf5c16d947bb57854cee74734e0f1417ffb3505ca18bcf7"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/general/gilded.json"
+hash = "bc2e8de35fac222c2ea7b57440fdc8bc62ecbdfcc48be42aac85a75054afdaf5"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/general/luck.json"
+hash = "ed5021f964aca5e6a2dffa16c510436fb6141c2a4129cf693da8f6b2214ee425"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/general/unbreakable.json"
+hash = "02308457a8f19ce3690f3c5e76703261e9bd2f6aacfdf81f500eb88a669ba36a"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/harvest.json"
+hash = "5a9c276689e92d38ff0f12b420741d84374f970b2328b154ea6184a0733407fb"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/harvest/autosmelt.json"
+hash = "07567f2fc6a26d532987e95afaee1935449d1e1152492dda42ed7241d96834ce"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/harvest/exchanging.json"
+hash = "b55ea82643c4e57add830bf6c447cb3a59be349a0a0f3dc2b1d952e929897caa"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/harvest/expanded.json"
+hash = "b5cb19a81f1e245185625fbd63a2caa481d5f308d51cf8cd962ba4b2d4ab2441"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/harvest/silky.json"
+hash = "df9912017b45bf0cf72091bd54cf69775fedcf0022bd2fae84671586a471f46e"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/interact.json"
+hash = "4789d048cbaa726ace49c7ba0cf8f23ac56344a052862612aa622b32de8e08e4"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/interact/bucketing.json"
+hash = "c2f7311baa72f63dea524cf55488e8b7f3e6301e42c7d5ecf3ca14ac30d653d4"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/interact/firestarter.json"
+hash = "37c76d13e382f641dd29578f39b19aa6d5d94024b64160022841195aa4569baf"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/interact/glowing.json"
+hash = "690d43347c639cc762158880994f8281753dd96fbabb24bd186ccca60df1f250"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/interact/pathing.json"
+hash = "56d09c7c0ddbd18964c48e6a8b44a5e31f371811b92c2cf0630e386ec2824247"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/interact/stripping.json"
+hash = "04ae4983d2e69b9a77a69e71a481a5712e4b352cf2272ade52d6294b50e087fd"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/interact/tilling.json"
+hash = "254e9357e35c8a4fbad2df5ffd306c6c1ba5a7cfe6da749d164790b70ddefedb"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/weapon.json"
+hash = "c8aa73e3262db967a728fd10a6503db3432d853f1b19d8d67fe7ae5ea5af622d"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/weapon/dual_wielding.json"
+hash = "7288a2b4506e20104a99027234d495a42f432b2bb43a7fec8f32e41ff90c3e6c"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/weapon/melting.json"
+hash = "74cee40630f3383c654aa37c755ed008a758ba009765b3c7234f1ef9aeb33b35"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/abilities/weapon/spilling.json"
+hash = "db03a2723093f527d07a0b9c79297a5991ebe5d39cc16e7f62469af1576f4a3e"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/defense/protection.json"
+hash = "0827e98764fb2bc4449da92b3b2cee35eea94726709019b927c417aa1f9e7604"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/defense/protection/blast.json"
+hash = "dbe5950fb01bc407d5a5d5ef31b0d1df12cebf8c6216d376cfc090b9b26a50d4"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/defense/protection/dragonborn.json"
+hash = "0187fe77590fce2b60c4f515d3b265eb325a4b3ebc2bdfca2feb71d908066687"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/defense/protection/fire.json"
+hash = "c74a16b5480d90694f1f25d2307af6f03eccfe23ea9a673fde7e0d3da81d549d"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/defense/protection/magic.json"
+hash = "9859b8227a0c05a92467018d22984891f8293f3f77015bded1418d2eb17f1cc6"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/defense/protection/melee.json"
+hash = "9610d0677121d69afa0924931165a41d997988b719141b54335c1b224cfec8ba"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/defense/protection/projectile.json"
+hash = "cc209524aed0dc3e0d98f055ae99cd1fff6d9058b73fcc0522d92c34cf9ce5ef"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/defense/protection/shulking.json"
+hash = "2841d97c30cc56a48369d6745e40ff1fd3444025219e5338b792a345c4c859a1"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/defense/protection/turtle_shell.json"
+hash = "eb6b3191b6fd0250ac1c56bf500fbe0551e879af7772292f3006fa777073f4c3"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/defense/special.json"
+hash = "cd1c7d3f68fe32e5970be745acbfe7e1b0d95cfe947e8c50669a1dc091439095"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/defense/special/golden.json"
+hash = "eb4b1dd6bf111c2b14e7244091550c8470d54607868c715997c4b3c213c0ec5e"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/defense/special/knockback_resistance.json"
+hash = "9c36105f8c7c29d0df3f36aa26d1b27400f5f76de4423b491b0164627dcbd08f"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/defense/special/revitalizing.json"
+hash = "8761c9c4876a240c013960c4e574842ade12d556fee0f57902fa719f0c3a06f2"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/entitymelting/entitymelting.json"
+hash = "09b806d034b817535d212bb9c599355a0edd5def740d3fd5b23ae445cb35e1f9"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/entitymelting/intro.json"
+hash = "4973e6fedbd03613d838357670747dc846bf2d7183dc6bbe0546c5cbb082de11"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/entitymelting/notable.json"
+hash = "11b5a9d62597a432dc61bcac1e3399699624306e24f72e1fe3b7cb9834020732"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/intro/thruul.json"
+hash = "2bd8501005cc266ae0e2750d8430c80023e9d5bdc53fb4feb9a24a78e96c5840"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/intro/tinkers_anvil.json"
+hash = "9ba498880a964cd399b4326eeb887564b9dca87aea0ee47472ed4267394b3f73"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/intro/tinkersanvil_craft.json"
+hash = "c101cebe974c390baebc2f2acdb1f63b6c340e1965a4eefedbef9eadb39a5986"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/language.lang"
+hash = "7f97783351835c573e93ce40884443f5e31881a8c8b06ef04a4a9c787bcf0c48"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/smeltery/alloying.json"
+hash = "6aa4e55c1413ca4dd537ac7cca32a409415355b5f8aa5e452d7f6f7b95c2bedd"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/smeltery/controller.json"
+hash = "6b61fa66934077704391b0170ce98a65029273dfcd29d084994e32105ae71b33"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/smeltery/features.json"
+hash = "1891519cc71e7c335dc81cbabed08320bcc5f670111d975ceaa556d0c76c300f"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/smeltery/gui1.json"
+hash = "28cae6a41d2aa3f6382f0e8f31bcaf42fff67c0746961ea2f5303fabff9db086"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/smeltery/gui2.json"
+hash = "014afb392b7f5017c3a4300efa71fc3243ec9934ae36fb359cb368cd543e1b18"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/smeltery/index.json"
+hash = "4496a7b5b6dd6509858f01f87036d2d27641f13f4f76332d711e2eafb08666dd"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/smeltery/multiblock.json"
+hash = "0136ea603db9730e851f87e54af4b9caf11e1b00dafc5dd450b8bde24faabaef"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/smeltery/seared_chute.json"
+hash = "f501101441eac0a9a4c581a086951c29323e9c64b07b47236c8bf29b2c202391"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/smeltery/seared_drain.json"
+hash = "79205eb4512076c798ebfa7d1112906806da56436fe79cddb8e5466c9f2ad030"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/smeltery/seared_duct.json"
+hash = "7fc4fa325bfe6a19990a6fd37a339c6f5eadb77b67c11ae1c7f76747cac18f6b"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/smeltery/searedblocks.json"
+hash = "6b00aebf5a7aa767459032ee6e22c22c293af7d15dfbd1765304e290b2d8a453"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/smeltery/searedglass.json"
+hash = "bac40997b02b3106267384cec14f2d0ac7a027a39dce7db15284c8097b7c7800"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/smeltery/searedladder.json"
+hash = "22f1dbe192fa1226db30cb8e16512aa17401068b7801500bcd0ff67d77da1e28"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/smeltery/structurerequirements.json"
+hash = "ba93ed8c3cf4375ee37dd0b19429ab389a11375102b9df41fe152a3adea489f5"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/smeltery/tanks.json"
+hash = "5ca9f4f4e54ef1bc23dbde7d35a4e0e93804035452ddf286b406cbb7b735559e"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/smeltery/thruul.json"
+hash = "928a4fc4864e50dbd7363ab8a769149a509c54fc0a682172f7d2e0fd9a577192"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/tools/broad_axe.json"
+hash = "b0b1ca11aa56dc995e90ed7b409a2d3507ed7543cf3b8f5de5bedb819e4d631c"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/tools/cleaver.json"
+hash = "0647b25db0ee235cb44d1fefe99e055682d3d506425980ffe9a00e6be475e7ec"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/tools/excavator.json"
+hash = "b439e96b4da9910b6975e12b1ad92ab850ddc8388577b5068bd9b695fe6b65a1"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/tools/scythe.json"
+hash = "42bfeaf2128636f705910a32b5ade2eb43e1ff7c97caf2e7ea52077fc00dfef6"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/tools/sledge_hammer.json"
+hash = "0d4fbb3cff0289b658dacca36261713a03ab8239b766019575836c6d2d6712e2"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/en_us/tools/vein_hammer.json"
+hash = "f6406b72c7888b301d2eda64a87e182a7e7358305cd793d3a4f44d7e228cff02"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/index.json"
+hash = "050b09ef5f774596d1695feb27542dd6d6ee687990fe06ad678dffb08ed6525e"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/sections/abilities.json"
+hash = "91ba3657f4f2ca7d6b56e253636bf904364a9f7e98e3af7e21f4bcb99b6c0d00"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/sections/defense.json"
+hash = "31934f92ee21b566b5cbc3590e08d2f8d6506c350bcf6ff1571c98794b98f4eb"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/sections/entitymelting.json"
+hash = "7bc8650d5b2d9fac40e4ba4bcdec51b4556b80894202107353c3e5afce7fc8a3"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/sections/introduction.json"
+hash = "a5781afb78c837ee90980b88b4b5244592a5801baf85b6e89f3853f019a6764b"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/sections/smeltery.json"
+hash = "489f24c55c7ab776fe3bd33ac9720f765f613b2af64ebe79fe10f78e7eaa0c63"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/mighty_smelting/sections/tools.json"
+hash = "18a67b26710fbc313766388b0b179b450dd9c121fb557f3aacf6e41f56f78362"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/appearance.json"
+hash = "2b2c92c23c0a83d1e57ca956469d8acaaa3f472d6d7d294fcd9df513f80cca8b"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/casting/automation.json"
+hash = "b0a15bed82951c9e2c038ff85ec85c3b39f09e33153edbf555827eb331ba7bb4"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/casting/goldcast.json"
+hash = "17aff6cbe99fc2d1454a932f50a60d1c8747d0471ce6fdc5be6808ee5a74e58f"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/casting/intro.json"
+hash = "c4053e741e6abd4a9b7a7fca0aedaeb783267cf629696f9ab565fe43caa38b75"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/casting/othercast.json"
+hash = "26b93d26138e4af409180860afe60d30136dc45fe29c28b09440aedf8e6db92a"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/casting/sandcast.json"
+hash = "a38ee5171e6f55f8bbaa3d3341c7241456f2e6977ed23bbd029453485349ccd8"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/casting/sandcast2.json"
+hash = "6c6ffeae8e65f40b4af26e7a015814bfab14cbdbe3a6192968a35906538a3870"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/casting/sandcast_craft.json"
+hash = "786b01641b5487db0d8a77a41aba858d1bb83e25ba83791195ce911c6dbec37d"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/further_reading/encyclopedia.json"
+hash = "adc1244f9d1ead1f2a92693592466574dd288de0143739b054dd6f88c051de50"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/further_reading/mighty_smelting.json"
+hash = "19828ee7867dbfb993394a3114381f1e9c2c0392cf84110e92893724a7c9a3cf"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/introduction/thruul.json"
+hash = "825e4716195e3acf98e060283ed4b11938a25b0d2647538179ffc9da6ee0d976"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/language.lang"
+hash = "08fad9703394c5972a989db2d222aa7e97852ca6d2f930894a734b61859ce351"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/melting/features.json"
+hash = "bbfeee2749d6895fdd5fe43a076be8f475359354f5b46753f40d2dce391ef7c7"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/melting/melter.json"
+hash = "41bfed02140667a1f8fc58d95fd4a5016ab9f03fc75375b50a1987e78aa5a34c"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/melting/meltergui.json"
+hash = "99e68c9d38dcbd6cbdce223d7a69f738463591656b420576e9c1b4900457fd31"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/melting/meltergui2.json"
+hash = "2d283c70a5c67f921904536b0f56103534461f51e4f056892838a390e381cf16"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/movingfluids/channel.json"
+hash = "a5cc41db3a6ba7d58b68f51b9bcfc1ee8d0cc969a7d15a197daaf5fcceaba5e0"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/movingfluids/channel2.json"
+hash = "5a513c7d9e46d7e49bf25156d3a56740e6ce95627f80062eb1975b3621d24b98"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/movingfluids/copper_can.json"
+hash = "5abe873fe92f9af0a36d7d06f5137e35c49ae95c2a3879cfe5dc50c0c1091b50"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/movingfluids/copper_can_craft.json"
+hash = "2ac179fa9677116f661be663fbec751181ec784aa9feacb71232749f92251b54"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/movingfluids/faucet.json"
+hash = "3ff6d1d5d994832d42bd40b8bd73a7454a82938b06406898cec47fe678a81b00"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/movingfluids/faucet2.json"
+hash = "128059aa6a1b4b8978a1f585746d06ce1f7d173f9a471212c04b74df250365fd"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/movingfluids/intro.json"
+hash = "b343cad11fdb167a1c2f8203871b9f6bbd240d2b2630e063c5410768c8a507fb"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/movingfluids/thruul.json"
+hash = "5f9f23ea005f62deeb9fd69bf5fdce8ce0b4bbe411a9e3749c26eee7d709746d"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/slotless/bonus/harmonious.json"
+hash = "026abacff7225f225af42ae830f9f3db80c7dd91a7064faa66ca63c7e188c580"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/slotless/bonus/recapitated.json"
+hash = "3ba7213507723acbf1ecb01d121e799b47486482e8066a77c1e62d9b643456be"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/slotless/bonus/resurrected.json"
+hash = "b8fafe3dec348ce5839ba6d5391e14fd8bfbb541720ddc93d8f194762f80abd4"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/slotless/bonus/writable.json"
+hash = "6b13836b3a614e7c805ed91d1b5894d66421f7aaad1492a453214cb4161c88c4"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/slotless/bonus_upgrades.json"
+hash = "a36e63132e14debe1bbb9d5798c6d134b835d189ecc884451fc201f4977160d4"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/slotless/general/dyed.json"
+hash = "e12c0544524173fb31abe0bebcda95a505801e98e377f0a6655c25d345489ec4"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/slotless/general/embellishment.json"
+hash = "85a452055f0a0d7492e97370a8198358a43df3f50649a51f3d76d0cb4f14b68f"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/slotless/general/farsighted.json"
+hash = "b536b9ff6d0f157df0316a0a6a7db82eda55fb8edf90c11a4e6e367033fa273a"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/slotless/general/nearsighted.json"
+hash = "32192c16aa7361c4f7f5b7014064e64503c7a6e36b12674f9aad6829f0560b7d"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/slotless/general/offhanded.json"
+hash = "e167da965e552e4406c669692eca4e8545cae35012f719460eb317a4e303a356"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/slotless/general/overslime.json"
+hash = "59aed1aa8b932b273cebb6bc9d1ccc51ff3a63bd0c633537baffc900b62e394f"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/slotless/general/shiny.json"
+hash = "e92949df91cc8406760be575acb7a9843e33b7ee85ada148955557dad797b7d6"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/slotless/general/worldbound.json"
+hash = "b911caa3447afe155414f90c38cdacf11885b30d78c7e99fc8c8838a0b9c38f5"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/slotless/slotless.json"
+hash = "1d21de62f02f5eee8fb218fc8dd77af46bfd0b5e73ccb86560f8c05212dc7fd8"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/armor.json"
+hash = "792625a44e98c030d85c06bf603871c775a0d810a4f89cf2dbd861fe89ddc3b5"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/armor/feather_falling.json"
+hash = "a2ddf066abb0c8043d5e223b290415d5c91eb4b44d45fe0078b64177a6b25595"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/armor/haste.json"
+hash = "d5bc9b17f6645a34d03a36d33c5f09e6044c2cf4785cef56cdd45b13f4b0ba83"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/armor/item_frame.json"
+hash = "93b5e261d9df96880338b875d118af95891d605fdee3e2a56f0a5876b9870164"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/armor/knockback.json"
+hash = "4cd6982f48d8e81e9793cbd29a59e77bc798665397b1215543eacbf1a91be21c"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/armor/leaping.json"
+hash = "7dcfa36ddb8b244e4f7da17667d1bf3848d613350cff9ab4efe9054d74f4fa4a"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/armor/lightspeed.json"
+hash = "a5f95756cc1319941e56578d1aa9fc0f3d772c17e57307a026d3a6ae491dd83b"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/armor/looting.json"
+hash = "e329d4686683c7b86a571eed13b96ce2d1796800d4577ac4689de5edb6240e76"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/armor/respiration.json"
+hash = "7f06e9e0641ac340c97fed6fc51b349da212a429b04ff36839965799d174dc0c"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/armor/ricochet.json"
+hash = "1572776272692238cd86c5dc195601bebe558c640b969a100517e9ab2673fa2c"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/armor/shield_strap.json"
+hash = "83cc73add35802e30b0fc23151aa64c55fa80f3efe3f06d6186aba29ee1469cf"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/armor/soulspeed.json"
+hash = "eaa47968790aaea2681cd10e6075518ae395acf54074bb3297535cdb26f0bdf5"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/armor/speedy.json"
+hash = "376673f8de0870ca582210641ef4f089fca07abdddcb2c617dfa6b6925e6b121"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/armor/springy.json"
+hash = "05e98239dc7ebc6a9d88b508142bbfc42bed195ca759f5da0895a2851ac56414"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/armor/step_up.json"
+hash = "de9597be594e6a25ec8339c7565c3d9982195fd352a336ecf37ab0b0d04b4103"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/armor/thorns.json"
+hash = "36a60d94259cc5111d48b8b023be3dfb8176a3d559c858fbdff70a84872e37e5"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/general.json"
+hash = "2af4015c04862e74a9f03229d9483cc139b8e294897d02ef2c3508711cee23f2"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/general/diamond.json"
+hash = "f3d1bdd4e472be5821edc37bb65eb1d0fa40203079bc3e4f16f8179ed5cc34c0"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/general/emerald.json"
+hash = "da15240702908289ee14b9512186f0b61da77861c20740a4b792364e45de1149"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/general/experienced.json"
+hash = "30cd7943b2066c78864393d2f26a71529fa2f87c59199b293e85a51b9d8ce00b"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/general/fireprimer.json"
+hash = "92b9f6943325019a729107dc4ca0e020f8c47026b5e600b91ff557d7b3f0a55e"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/general/magnetic.json"
+hash = "3d0b19314cd875af5d1b5ac5004412f7f1625255667844d44f5ab08f1f03b7d4"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/general/netherite.json"
+hash = "aadc58326080205c84e1266bd3f51f566733f3ca7e0d88a116e0562a7b4e7ba7"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/general/overforced.json"
+hash = "0547eb6b5574c3b4263a07257941e73954e301110e7dc3a285e8f998d10502d6"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/general/reinforced.json"
+hash = "16a861ba8b47a23e7189b3b8603d7b616269ff767d9ebbf81cd39c7aaa3f027d"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/general/soulbound.json"
+hash = "7fa316c89366a1e743c10b1c349aa2c855c0e0d0c0dd67e776bcaca6e95552db"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/general/tank.json"
+hash = "65f3df44f674e00dea098f0720b34d88b65d520856d85d65b4038580d4637134"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/general/the_one_probe.json"
+hash = "0f9a9a712fde32580aa465272b0068ab2466d00b6bbe48d9b01cc0e2fd44a29a"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/harvest.json"
+hash = "ef382b0e15f43a4227dfe9e0a52254eb3fa13cadeeb74c89059c626e33dbf9af"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/harvest/blasting.json"
+hash = "88ff0553229684392c76e672c0109f00025d7ead2cbcf5dfcbe154399cfdcfb3"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/harvest/haste.json"
+hash = "02a9a1600d7ff5e175e7c09989243bb984edc61070e75b5217bc7f74b7f3d3ef"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/harvest/hydraulic.json"
+hash = "782130ff689144705f674dccc46b0b9ee303f5cbcf7cf5ed06dcdfbb01aa80b7"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/harvest/lightspeed.json"
+hash = "7dd6140307e68ec5c9f9ec8181cd03c1c47552cf53ba3f350ed0d0bf6aba2022"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/weapon.json"
+hash = "652d315c899314457867974bd20a98eb2f36b47b11e9d1aa7bffec8bac8a32a0"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/weapon/antiaquatic.json"
+hash = "aeb19dfd5ba5a5de358a8a870764396b30b17fafa1772972394be0cd2e53923f"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/weapon/baneofsssss.json"
+hash = "1c57073088b976fe0a33379c371b23eb30946cb22f6f4a177b798277fcf4afb8"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/weapon/cooling.json"
+hash = "af48498b524c24960180b0232037a0e7ae78ff1e71402aa98cbcfa56bcdc8882"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/weapon/fiery.json"
+hash = "8260a548e26d5a94d52bfe14b4bade1d47043dab70bc9d7453cbbccd279b5fbf"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/weapon/killager.json"
+hash = "4eadec7172ad96759304070e34d2f8a128d72559002b7d0527e262ed0cc4e242"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/weapon/knockback.json"
+hash = "dfecd9ac186debc9b07b1219dfb0639b6814f9b8b0e05800e8ffcfa3d87e060a"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/weapon/necrotic.json"
+hash = "fa65c8b961ccbd1e435a44bbe9f30bae60febaa3a8a4353ecaf258f294cb9636"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/weapon/padded.json"
+hash = "275d666a5be7680fc3738ca17212597b6df147a23ebae5c88cf039d9019e1c68"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/weapon/piercing.json"
+hash = "c152fa881cb6848c1d918beb93c0525fffc1ce82f565d60863f632d27478b824"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/weapon/severing.json"
+hash = "a64a0a6b02686b2538eaa92a90a7ecbfc4d4bb90d6c5e99e5a0c843b77879768"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/weapon/sharpness.json"
+hash = "e71c923d670cb49e88b424f9462ecfedc4cc5f51c155121319e8b71871eb8831"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/weapon/smite.json"
+hash = "749832d1aae3c519e7da0a10b385468947994bf35b5cbc3997bcba1739b07835"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/weapon/sticky.json"
+hash = "6612bdf9cf1f33dd979dfb63910d705514a924108cded5f41b0ea69e7c88f59c"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/weapon/sweeping_edge.json"
+hash = "43525450d9f9f26cff639e09707cc2d467833aeff895c864c9db818947f8af74"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/en_us/upgrades/weapon/swiftstrike.json"
+hash = "085a7d7ffcf956dbb5071a9b8b87e6c61f6f40302f3dc8e3ec300dbee35c2963"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/index.json"
+hash = "2d636db4a121edd3d4e0618a2553821377a87eebf90528c9331f5edab8c686ba"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/sections/casting.json"
+hash = "8e6b58b3641f6770e4ae30e21915326f9327fee7df7ab4ae7d854fb96a5ede15"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/sections/further_reading.json"
+hash = "af3e0890898de3ac3a3a2c663b2eb9c456cab18a303c667c435afe3c4d9cb749"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/sections/introduction.json"
+hash = "6f4365282b48a963d0b2188b8253d6acd48b470cd16e6d7843f7f9ac1acdc155"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/sections/melting.json"
+hash = "1596c7c775c580d65f174532bd302452c1e1c21da04d213311f809183e73b609"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/sections/movingfluids.json"
+hash = "f3811debb62b28bc7512fba5d0c2d010f35751f6369deb5ebd5fc14acd481292"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/sections/slotless.json"
+hash = "485f82ba970b72b4825c50f056e6f3745f55bfb3264f607d1375e289d5e510f7"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/puny_smelting/sections/upgrades.json"
+hash = "d309c5ff56dda43746198dd284e0f6e4c89274dd1301a6990c03cb9e5ebc51c7"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/structures/foundry.nbt"
+hash = "a6c6dff7e72ca1d54165ab16a53d11e9c15a960ce602120f5dd68852e5c16435"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/structures/smeltery.nbt"
+hash = "222a5bbea5dc5f08f519cb3814a6464abcc4fc8a59689529977c00f3572845a4"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/appearance.json"
+hash = "084d11b9f026870f890c8bcbd9ef2558317f768ec7d362493da4dbac42741885"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/armor/boots.json"
+hash = "18a492bdd8862bd40321a8a9531a6d5e99793e0e26580da06a014712aaabc6a0"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/armor/shell.json"
+hash = "2060d96503d55f3194990ddc9f41012ca79063386114e7add2ca38b9d2ea13d4"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/armor/skull.json"
+hash = "b44e348d094e575134f2e32ca42032bebcc39c760bfa066d6749634973d65f0c"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/armor/slimelytra.json"
+hash = "e576f3f5365b912b2eb39a712451ce490b3fece9c0b63ccfc5901544a3c8f187"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/exploration/dragon_scales.json"
+hash = "7d0f717be565e2eb3a7f160c6f73bdc7f914e7271594e16ebba548d63be5db5f"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/exploration/geode/earthslime.json"
+hash = "2001e179307e776e52ad3d32d08098f4903f930f2469137fcb3a9dbf3f7fb4eb"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/exploration/geode/enderslime.json"
+hash = "b7b927b62f05e348adf0424e9966279fa23320e2bd32dac75321c9a5b52dd8f7"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/exploration/geode/ichor.json"
+hash = "8cacbd18bfe8e4d1885b4adf8fbe9237b1cd00fe186a624c557068875101a723"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/exploration/geode/skyslime.json"
+hash = "28dabfbba48e277726319116a1d03696059b296e2816215985ec4c9621e978d7"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/exploration/grass_seeds.json"
+hash = "9e699b25642ae97740ef4b009aa34f448b8388540dfe7633208f6a5e4c462338"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/exploration/index.json"
+hash = "6409ef1252c90ee185277ec11f01cdbc1ca3282d54a007fa293aef71d22314ab"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/exploration/island/blood.json"
+hash = "e12aa80994292b28e6a1ea988d2904342b3e5585c9f93a9b0e41bc41a3d78699"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/exploration/island/clay.json"
+hash = "b6269d81cfd03b2e2f4c80dce291822dbbc8350fb537bf24537ad31651614c43"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/exploration/island/earthslime.json"
+hash = "12b88a28a099d6442d03111088c0c71b83b0afb43023a86268c7a6b2188a3ec1"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/exploration/island/enderslime.json"
+hash = "2e44663e557f71af906d5fff153b4833e4bc59598737e34239f45ff0c242e61b"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/exploration/island/skyslime.json"
+hash = "c2f8bacb2162dbfe4e7a39934e892f9af8bbde49b063201cec96cb1e7b506f07"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/exploration/necrotic_bones.json"
+hash = "4b672d5bda5713df9b2b8786b6eaa55aa595c2a7e32975bf54d13607ff3023f5"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/gadgets/cake.json"
+hash = "cc5689a3165639b80bf65da0df742ed03f5d0111cf793c223f2ad80d43794447"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/gadgets/efln.json"
+hash = "7586884229b0144130e3bed2fc9d21acbc23cac468b6c29e474e7628e96eaa17"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/gadgets/fancy_frame.json"
+hash = "4cacdcbf9cc9aed9ab171355c2195788a4f916547d72c195827693e822fb5380"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/gadgets/fancy_frame_details.json"
+hash = "b76b8ba0b89c44bac63a9b279d00cd846eee73cbd8ae89a31fe33e5dc227e84f"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/gadgets/flint_shuriken.json"
+hash = "c932cf3cc0c90fbbaa44098a38a15ff7f849332b7104a675d1710f4e5d3cf5e0"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/gadgets/glowball.json"
+hash = "18af98ece5124882f13de0b45bcaf9e515fa7084fce3dacc04f662ed2394cbb3"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/gadgets/index.json"
+hash = "8d04860023a277e58b50af0a5d23bedbb0f8a9433693b27a467ab66f713b010d"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/gadgets/piggybackpack.json"
+hash = "430a7c7f54fdddc696a3a6d81a36e05ef7ab37ec7a62c06ab2fd3412d7e38441"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/gadgets/quartz_shuriken.json"
+hash = "7cf2a84b0ce2c3eaa0270dfa364f72f5cca61be8a1af7358e0dbc42ed8480999"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/gadgets/slimesling.json"
+hash = "7d104ef2c39eb4b3c3bf62370713c62c6d047dd129ebc85e5464611fcad89082"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/intro.json"
+hash = "f1de5da4cf836409a9893c9ce6c4028336bda81be3a1adc146e6204b3a8ff46a"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/language.lang"
+hash = "d6373758ddaf02e469c85d5ed8d89b6f197e33f454432faed62545025d19999e"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/modifiers/damage_tools.json"
+hash = "589e2d9560ea041bd48597904e9d958a4d3a86a84fa3de73806e2b2deafba1c9"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/modifiers/index.json"
+hash = "8514e727919c0f6b973ea61aa1ff220de94781ae66d49091b834e28bc881799d"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/en_us/modifiers/remove_modifiers.json"
+hash = "9ee1446f0dfbf06cb962e02c0b51765a57361b58a89a11914f5631e108d414ee"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/index.json"
+hash = "3a37ebe1b4d1b4111be47c8fc70355bbc22031a01470e8f70a6a379ebb3cd40a"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/sections/armor.json"
+hash = "f60b95edfc848bb79c929b708efab34abe9d0dcdba3fd66d3fb375a9e888f676"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/sections/exploration.json"
+hash = "a33fe75642f8321722fdf3e736e6570b125e78a8351be4de371fe522bbabdda1"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/sections/gadgets.json"
+hash = "0232afb0f5e74754d587b2851d805d8a06b963deae036229fe3baa8ff8959057"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/sections/intro.json"
+hash = "d2454349efa59d0e2c0bee45125c3c3ff66a0663c73ec64b084beacc57fdd68a"
+
+[[files]]
+file = "kubejs/assets/tconstruct/book/tinkers_gadgetry/sections/modifiers.json"
+hash = "384657fcfd2f3e37fd3249f50d783afcfb5b97348099fc29f4a0291ea3f5d6b7"
+
+[[files]]
 file = "kubejs/assets/tconstruct/lang/en_us.json"
-hash = "a64a242d7715c56201e3c1e6ba86e918b1ffee598e985f189602323bb6ad2f13"
+hash = "395ccb28ba5d254e8d97bd3a38ee79d92826c28b25f655b76aefc145d973bada"
 
 [[files]]
 file = "kubejs/assets/tconstruct/lang/fr_fr.json"
@@ -6181,6 +8297,14 @@ file = "kubejs/assets/vinery/models/block/dirt_slab_top.json"
 hash = "95200526bddaf9a025e0a53488bf5b15e5c886742beb540032b4f24d9c721669"
 
 [[files]]
+file = "kubejs/assets/vinery/models/block/fermentation_barrel.json"
+hash = "5f90d8d5681030bae7082b966e0aa8ffa2dd86436c5ffde21686ee16e3f79c1a"
+
+[[files]]
+file = "kubejs/assets/vinery/models/block/fermentation_barrel.json"
+hash = "5f90d8d5681030bae7082b966e0aa8ffa2dd86436c5ffde21686ee16e3f79c1a"
+
+[[files]]
 file = "kubejs/assets/vinery/models/block/grass_slab.json"
 hash = "e6796f273c68862f63b6694e1ed813f5392c0ab3aa828be5eac8311f8c55d023"
 
@@ -6258,63 +8382,78 @@ hash = "dfc236ad333a94d4b3b56cdcac9feeeb9b63c701321dc1c31e48ae10418951a4"
 
 [[files]]
 file = "kubejs/client_scripts/hide_from_rei.js"
-hash = "01cf62118828e8510a9e1e2afd636792801015ae58ed9b89376d35a1fdbd9492"
+hash = "8e22f8cd7f72e11da9eb75390fb3a4fa14622d699dc1a57abed6eb8e94d926fb"
+hash = "8e22f8cd7f72e11da9eb75390fb3a4fa14622d699dc1a57abed6eb8e94d926fb"
 
 [[files]]
 file = "kubejs/client_scripts/ponder.js"
-hash = "a45541a4d7cbd1e6c87d95d83da58a57b7e529863d03bd4d8a4dc49e50358864"
+hash = "2f3dd0fdccacbd43120642cd2a71173503b062250c99deaab2857fa1a532bd61"
+hash = "2f3dd0fdccacbd43120642cd2a71173503b062250c99deaab2857fa1a532bd61"
 
 [[files]]
 file = "kubejs/client_scripts/ponders/desizer.js"
-hash = "b705b27168d30523a129cfc22f6000fc0632b1ea01096ff843a7d7b8e8417bc2"
+hash = "d4cdb6c78f881fe516052e2fe545454813e7f6fe5509ca1dd2e24b34da2886ce"
+hash = "d4cdb6c78f881fe516052e2fe545454813e7f6fe5509ca1dd2e24b34da2886ce"
 
 [[files]]
 file = "kubejs/client_scripts/ponders/desizer_sturdy_cage.js"
-hash = "5aed4f0b9de5d762cdbb97fd6a282d0781b852d0b24ea14fa595328afc1094e8"
+hash = "cab308c456e05f18be73712fa25ef9c1cc5f8db58539d54019ebe95adedff390"
+hash = "cab308c456e05f18be73712fa25ef9c1cc5f8db58539d54019ebe95adedff390"
 
 [[files]]
 file = "kubejs/client_scripts/ponders/desizer_ultrapure_carbon.js"
-hash = "1e2f1d633db2797d31a8b96e38cb3e8d969e054a90d4bd35e858a42e2f7b3a2e"
+hash = "f3c80e1766b539b125a5ab6bbe00be51654a0137b56d0f342fdc60cd156dea52"
+hash = "f3c80e1766b539b125a5ab6bbe00be51654a0137b56d0f342fdc60cd156dea52"
 
 [[files]]
 file = "kubejs/client_scripts/ponders/distillation.js"
-hash = "1146933b21c236771b34461586a8bb3359f13ea96f85bb16ae8aeeb460ee8ccb"
+hash = "ea6a007cd1a52fb36541a29965bf9cc3629eeaf98690aaf4cc445ab9f8f564a9"
+hash = "ea6a007cd1a52fb36541a29965bf9cc3629eeaf98690aaf4cc445ab9f8f564a9"
 
 [[files]]
 file = "kubejs/client_scripts/ponders/electrolyzer.js"
-hash = "a830ab2d29ed0b5b33395b57f881517e0ce96a86729bbd1052f6873cbcfdda77"
+hash = "25d8068322600ecc37b7d38eb3602db44068afde25324331327d4f875d615691"
+hash = "25d8068322600ecc37b7d38eb3602db44068afde25324331327d4f875d615691"
 
 [[files]]
 file = "kubejs/client_scripts/ponders/moon_portal.js"
-hash = "dd3dd3e67deaf4a1cebca747ba374d58580173b580f3bec4daf00c351689607c"
+hash = "46b43d7d8afc12b8e6c06781ee5a9d449a37735bc1506c5f1572a79634d4c672"
+hash = "46b43d7d8afc12b8e6c06781ee5a9d449a37735bc1506c5f1572a79634d4c672"
 
 [[files]]
 file = "kubejs/client_scripts/ponders/root_of_continuity.js"
-hash = "27d32f3294ecd5ffa3ffe5667cef9bf3511d4f7a357f71891cacc8079b48dd78"
+hash = "2ead4585598e60be119d1214dc28c2b7a4ab114278c11725322b9bffa3aebbcf"
+hash = "2ead4585598e60be119d1214dc28c2b7a4ab114278c11725322b9bffa3aebbcf"
 
 [[files]]
 file = "kubejs/client_scripts/ponders/seared_melter.js"
-hash = "7e1f2f5fb8ccfe5c691c8897b5ecf3e99cb511ee38a8dc6ae7013eff915459f7"
+hash = "5b29dafeeefa0bdc23e254753ecfefaf79ff827f9e598c60c7dc03a3fa8be02e"
+hash = "5b29dafeeefa0bdc23e254753ecfefaf79ff827f9e598c60c7dc03a3fa8be02e"
 
 [[files]]
 file = "kubejs/client_scripts/ponders/shimmer_refinery.js"
-hash = "25c1c68f5e78458eca576aed15732d0955238ee5f340ea8c0620fc93c338b590"
+hash = "27bdf7891a30ef2de95cf627cca5f4b049bf89a63abbae0929a1d22f238ec353"
+hash = "27bdf7891a30ef2de95cf627cca5f4b049bf89a63abbae0929a1d22f238ec353"
 
 [[files]]
 file = "kubejs/client_scripts/ponders/stone_growth_chamber.js"
-hash = "78caa84702389757ee7804f91b67b154f07b7cb2030635107f0821733de52552"
+hash = "ebdf59607e209418a517df41d196e310e9c507031b077252830de6eee72fccc6"
+hash = "ebdf59607e209418a517df41d196e310e9c507031b077252830de6eee72fccc6"
 
 [[files]]
 file = "kubejs/client_scripts/ponders/stone_growth_chamber_dummy.js"
-hash = "b27c54187ffbe174cfbe6fced15f3de28af69f277cb30df35928e04e7a901ae0"
+hash = "c71acebbf6177d15831d6b6af2105c96ae29d9c837e86a2db4401abce36f517f"
+hash = "c71acebbf6177d15831d6b6af2105c96ae29d9c837e86a2db4401abce36f517f"
 
 [[files]]
 file = "kubejs/client_scripts/rei.js"
-hash = "e4c9eb8c791ba5f1f7fe10d96f550d63e4357ca1a8f3d99660452fb408931efb"
+hash = "b1db5a46416f743c749c271a09d10e18ac053f3feba8477684442079f7bca9ce"
+hash = "b1db5a46416f743c749c271a09d10e18ac053f3feba8477684442079f7bca9ce"
 
 [[files]]
 file = "kubejs/client_scripts/step_up_fix.js"
-hash = "82e1be5f3081fe7262e9dc44ec03f14a253a9aeeffc1417e817cf8039e371a3a"
+hash = "2476e4cb9c841ae46450379a20e215c9e545d8e145b7dabed664af5655c2d886"
+hash = "2476e4cb9c841ae46450379a20e215c9e545d8e145b7dabed664af5655c2d886"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -6326,7 +8465,7 @@ hash = "4869ea0c45f560ff504433e0873edc13be683a4dec98d58bb09e24aa7a388355"
 
 [[files]]
 file = "kubejs/custom_types/extraprobe.d.ts"
-hash = "bdaf609d1ad9631720c019d3cea29582cf8f7b09eec2f430194f52c0656dc587"
+hash = "00f1f999666a47b5b9f75a7fb2a0a5c3d095bb8064fb11d72783a4b75d04ee35"
 
 [[files]]
 file = "kubejs/custom_types/ponderjs.d.ts"
@@ -7023,6 +9162,14 @@ hash = "187a47b80f151591d70bb8036086f37402dbadc2904af38eb1ebf161cacf950d"
 [[files]]
 file = "kubejs/data/astralrails/structures/contest/moon/ichor_facility.nbt"
 hash = "d843535bf708a16451e1435d7a68d9069013c1642b3abbcd6890c39334264a8a"
+
+[[files]]
+file = "kubejs/data/astralrails/structures/contest/moon/ruined_diner.nbt"
+hash = "59c92fce9059db64710e394ba4ee5ffaaaef8f1390f3a67346a9c22be0ea3db7"
+
+[[files]]
+file = "kubejs/data/astralrails/structures/contest/moon/ruined_diner.nbt"
+hash = "59c92fce9059db64710e394ba4ee5ffaaaef8f1390f3a67346a9c22be0ea3db7"
 
 [[files]]
 file = "kubejs/data/astralrails/structures/contest/moon/truck.nbt"
@@ -7733,6 +9880,38 @@ file = "kubejs/data/astralrails/structures/moon/underground/xp_lake_3.nbt"
 hash = "8166c81e41a77a70aba86c0f282e9a57bdc5d4de75af121f1220f75691f7423d"
 
 [[files]]
+file = "kubejs/data/astralrails/structures/nether/chunk_error/body_1.nbt"
+hash = "2fbbaf3aaf2abb710f19e40f35b00113c49ff989716d15991f912bdb87139a9c"
+
+[[files]]
+file = "kubejs/data/astralrails/structures/nether/chunk_error/body_2.nbt"
+hash = "71f3608053eb63cc2506f4e6a3e47cf635dca570b2bfbc4f3f0d002e90cd60af"
+
+[[files]]
+file = "kubejs/data/astralrails/structures/nether/chunk_error/surface_1.nbt"
+hash = "4863061104afe1b70e02a608c272a6821f53176e0db1f7c3759c95fa8b90062d"
+
+[[files]]
+file = "kubejs/data/astralrails/structures/nether/chunk_error/surface_2.nbt"
+hash = "9a278f3bb7bdc513433a4b05d8699b388c6199b71f4ba03388b00fec5b54a47a"
+
+[[files]]
+file = "kubejs/data/astralrails/structures/nether/chunk_error/body_1.nbt"
+hash = "2fbbaf3aaf2abb710f19e40f35b00113c49ff989716d15991f912bdb87139a9c"
+
+[[files]]
+file = "kubejs/data/astralrails/structures/nether/chunk_error/body_2.nbt"
+hash = "71f3608053eb63cc2506f4e6a3e47cf635dca570b2bfbc4f3f0d002e90cd60af"
+
+[[files]]
+file = "kubejs/data/astralrails/structures/nether/chunk_error/surface_1.nbt"
+hash = "4863061104afe1b70e02a608c272a6821f53176e0db1f7c3759c95fa8b90062d"
+
+[[files]]
+file = "kubejs/data/astralrails/structures/nether/chunk_error/surface_2.nbt"
+hash = "9a278f3bb7bdc513433a4b05d8699b388c6199b71f4ba03388b00fec5b54a47a"
+
+[[files]]
 file = "kubejs/data/astralrails/structures/nether/purpur_fortress/l_corner.nbt"
 hash = "abb1fcade0fff64dd273fab219492a3dd0cb18ad0b7840e628ebf21fa8712f8c"
 
@@ -7763,6 +9942,30 @@ hash = "034f547a2c4f202bebedfc8ae636d40faa8e77336d60873f517dbf4bf746147a"
 [[files]]
 file = "kubejs/data/astralrails/structures/nether/purpur_fortress/t_junction.nbt"
 hash = "0cb7c18c285f747459e8e06814fec5fb7bb80486d491651bf07c3191ce881a62"
+
+[[files]]
+file = "kubejs/data/astralrails/structures/nether/yttr_ruin/arc_furnace.nbt"
+hash = "467f8e8b70ead3f60eb28143555978dc0bee8a2f1ca556601d3554e9fc86c669"
+
+[[files]]
+file = "kubejs/data/astralrails/structures/nether/yttr_ruin/door_rift.nbt"
+hash = "72f6ee69454c653b885ddeba6b2938007d8228ddba0a3de8f35733f726310c68"
+
+[[files]]
+file = "kubejs/data/astralrails/structures/nether/yttr_ruin/infusion_altar.nbt"
+hash = "c42e17e12ed4f62cb9ba2859ca31ae161f4b90688b1bde84def4ac48b54da8dc"
+
+[[files]]
+file = "kubejs/data/astralrails/structures/nether/yttr_ruin/arc_furnace.nbt"
+hash = "467f8e8b70ead3f60eb28143555978dc0bee8a2f1ca556601d3554e9fc86c669"
+
+[[files]]
+file = "kubejs/data/astralrails/structures/nether/yttr_ruin/door_rift.nbt"
+hash = "72f6ee69454c653b885ddeba6b2938007d8228ddba0a3de8f35733f726310c68"
+
+[[files]]
+file = "kubejs/data/astralrails/structures/nether/yttr_ruin/infusion_altar.nbt"
+hash = "c42e17e12ed4f62cb9ba2859ca31ae161f4b90688b1bde84def4ac48b54da8dc"
 
 [[files]]
 file = "kubejs/data/astralrails/structures/nether/yttr_ruin/ruin_1.nbt"
@@ -8614,7 +10817,8 @@ hash = "df74fdddd8f259c8a0350102fdcae8ba4f455ff5220750c6740b74bf15a7cd73"
 
 [[files]]
 file = "kubejs/data/astralrails/worldgen/configured_structure_feature/nether/chunk_error.json"
-hash = "474c223d5b4e7a0b309713d94eefbfae2ac0d975018c55ee713e255b9a60961c"
+hash = "8bf9f1f7a61d2e99064b0d61424f4e14735c3243d050da014f903a4ae36adc07"
+hash = "8bf9f1f7a61d2e99064b0d61424f4e14735c3243d050da014f903a4ae36adc07"
 
 [[files]]
 file = "kubejs/data/astralrails/worldgen/configured_structure_feature/nether/purpur_fortress.json"
@@ -9018,7 +11222,8 @@ hash = "df96cc37c956a8125bc71fe3c62c207e2ad99a52cc5a5f5797218c9c519daf4d"
 
 [[files]]
 file = "kubejs/data/astralrails/worldgen/structure_set/nether/chunk_error.json"
-hash = "f1ce72c0214041dd1c055b4d31a4d34c007f02b1dda6c94effc45ffa2b2d7c19"
+hash = "483129bb4842dacd785f583da1a78995bcb3823e4eba54bd81c86a60b9a67af4"
+hash = "483129bb4842dacd785f583da1a78995bcb3823e4eba54bd81c86a60b9a67af4"
 
 [[files]]
 file = "kubejs/data/astralrails/worldgen/structure_set/nether/purpur_fortress.json"
@@ -9074,7 +11279,8 @@ hash = "e1cb42e0fb9329ff1d74c3637a60e11939838de7b65dfb53446f4acddafde979"
 
 [[files]]
 file = "kubejs/data/astralrails/worldgen/template_pool/contest/moon.json"
-hash = "4927fe48352909f3c966f7cb2f2d61f2c89d38339353da4637471659431df8b7"
+hash = "b3eb2ffa947f59d6a2e2a63e205ad98a203875aa7982c22b8a8d704c41a1ef74"
+hash = "b3eb2ffa947f59d6a2e2a63e205ad98a203875aa7982c22b8a8d704c41a1ef74"
 
 [[files]]
 file = "kubejs/data/astralrails/worldgen/template_pool/contest/orbit.json"
@@ -9310,7 +11516,8 @@ hash = "0155232ab3b83b41a6ca5b7db2329ac5fd1bc0b2a642377a539413ad2c5ba66e"
 
 [[files]]
 file = "kubejs/data/astralrails/worldgen/template_pool/nether/chunk_error/chunks.json"
-hash = "1b2d3afb7e18dfe6f3a089c61bf7f576a02d2963ee54ef462f4dc8290d3a3017"
+hash = "aee9cfd751dfeb27f6cde2ca5031f250cfa96af65c885228f8a571110d4d3df3"
+hash = "aee9cfd751dfeb27f6cde2ca5031f250cfa96af65c885228f8a571110d4d3df3"
 
 [[files]]
 file = "kubejs/data/astralrails/worldgen/template_pool/nether/purpur_fortress/init_path.json"
@@ -9326,7 +11533,8 @@ hash = "1815884627f36967291eb25b6ab85144f287c381235725a5448ead0a0acb6387"
 
 [[files]]
 file = "kubejs/data/astralrails/worldgen/template_pool/nether/yttr_ruin/yttr_ruin.json"
-hash = "c9809d899e89b62663c5ffedbb52680402223ee017f4f8d555d580ad562efb7e"
+hash = "689b47cc64a6775f42a6ec41cc132600231e5b42b6e55969440c6bd76b5c32d8"
+hash = "689b47cc64a6775f42a6ec41cc132600231e5b42b6e55969440c6bd76b5c32d8"
 
 [[files]]
 file = "kubejs/data/astralrails/worldgen/template_pool/overworld/dogstatues/dogstatues.json"
@@ -9762,7 +11970,7 @@ hash = "25872c3a34f3a317e7bd31c7fedfb1bcaf7123cb169486281c4d8df4edb5a1f4"
 
 [[files]]
 file = "kubejs/data/c/tags/entity_types/illagers.json"
-hash = "294d1bacc62ea86df9fd1512f545c2a1af6a254451cde847b3fe87d897750712"
+hash = "47b86d7f1f7b536950181c7a4b540f3a1d0ccf2d261cf9cbacce81b2e016ce26"
 
 [[files]]
 file = "kubejs/data/c/tags/entity_types/slimes.json"
@@ -9774,7 +11982,7 @@ hash = "f1b2982eb46519f71c5c90161a3a8904a7fb339b1626645c58e7b657b8607493"
 
 [[files]]
 file = "kubejs/data/c/tags/entity_types/villagers.json"
-hash = "5127aab05e8e547a6834271b427a8724a99947e6913dcf1f4859a8dfce21362f"
+hash = "16794673e4f3c45e74ce84db78c3f339ddcc03be09159022f0139ed97b2f73cb"
 
 [[files]]
 file = "kubejs/data/c/tags/fluids/beetroot_soup.json"
@@ -10210,7 +12418,7 @@ hash = "23a5712ec137942d0f8267f1f9d2d3f8fc63524a6ce2b867b820876923957f5e"
 
 [[files]]
 file = "kubejs/data/c/tags/items/ingots.json"
-hash = "2a667e3280c89cfbab4e13ab1d74c5b57212ada87f7513560fde77d2dc0e9863"
+hash = "a178d633787f90917f3185ced4fd34a46076d1a7e70d34e9c5cc25c33969e0c7"
 
 [[files]]
 file = "kubejs/data/c/tags/items/ingots/aluminum.json"
@@ -11287,6 +13495,14 @@ hash = "269af0b402699064ee45668a1c038a30203a76ec9382d16d60336021d61be521"
 [[files]]
 file = "kubejs/data/createastral/tags/items/blueprint.json"
 hash = "b0349377aa9a22dc9980a3d05556967170d122b008a596c9857812e3190857a6"
+
+[[files]]
+file = "kubejs/data/createastral/tinkering/modifiers/amplified.json"
+hash = "6e1a07db8de86002d547d54d030ff79ff1e697030295bd60b41e0388de0cfedd"
+
+[[files]]
+file = "kubejs/data/createastral/tinkering/modifiers/spacious.json"
+hash = "a14942ed4e02e119030b6f4dc835b4abb21fac29a9fea5bc3c407eabb46f5f18"
 
 [[files]]
 file = "kubejs/data/createastral/worldgen/biome/consumed_end.json"
@@ -12450,71 +14666,7 @@ hash = "a365ba5f4570e79b58a87d45cee6ecdab0492872ce0af2f219c0d04834f4a57a"
 
 [[files]]
 file = "kubejs/data/tconstruct/lang/en_us.json"
-hash = "1c62803796b092e0d18646481e6dd5420a6dc5afcb0dfee4e298b4dd022409ae"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/ability/double_jump.json"
-hash = "4913a305d12fedd58941be831f4052d25cba85a1344d79b033d87393a87f6111"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/ability/luck_level_1.json"
-hash = "a52017be6f84ef429ed6ebc2ec9fb4ad12ab56625f0e1d8b6e2ef6a807e6bed5"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/ability/luck_level_2.json"
-hash = "53f6809ff6dc27676116cb481e6cedf5eaa9fbf177bf4b0468793b9b71920c5d"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/ability/luck_level_3.json"
-hash = "2b956dc1d51328bcf42507cfb8dd7539e0fdc5b73d80cf30e1b2148725702e3e"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/ability/reach.json"
-hash = "65f5a0216f64fab5673f1f11de404c2dd0a6bad99db71b412c19aaee056f6817"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/ability/strength.json"
-hash = "1658a6336582169d29230ea129044edceabe60a39f6bf1d5754a8e2d11d94816"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/ability/unbreakable.json"
-hash = "997943fc5ce0f755e4fb5e13350e87014e22ff75c2abe1a1ce3a4443ec73c838"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/slotless/draconic_from_head.json"
-hash = "31708b7229493100cbaa2caa175c9d02ef6f05199dfabcb286c5069d2f191157"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/slotless/draconic_from_scales.json"
-hash = "31708b7229493100cbaa2caa175c9d02ef6f05199dfabcb286c5069d2f191157"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/slotless/resurrected.json"
-hash = "edacad13fdc172f8b1f457e6d1680f0856d284ffa8d60ddf52aab5b3a660eb23"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/upgrade/killager_from_block.json"
-hash = "ae5d50efefd5fad26a4a5b9485522fc7ca8bf141a57a5e4fdf288814e27d7fde"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/upgrade/killager_from_block_unarmed.json"
-hash = "1fe718220f36695b44e8cca7e889f2876aa446d5f772189d9e34083becc409bd"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/upgrade/killager_from_dust.json"
-hash = "6aa6b4a897aac3ceea22a3aba65c76510233265d85665e9f4bd2c056511076f7"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/upgrade/killager_from_dust_unarmed.json"
-hash = "015b90ebd8c8fd74eb6ab914289d0a5279883b43ad1b9ed91204291752423f4c"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/upgrade/leaping.json"
-hash = "28f983f9d426cc08932306db73cf36f7bdb178fe11e7d4ed267bf89ac7e44b2b"
-
-[[files]]
-file = "kubejs/data/tconstruct/recipes/tools/modifiers/upgrade/piercing.json"
-hash = "adeac98f1023235c8aa5473234e684653cb244fd1b8463e68abfa7f17650252c"
+hash = "df642e03b0dd686e412cf2b50fa5361419c2e48365d5cfa55bb578a87468bf84"
 
 [[files]]
 file = "kubejs/data/tconstruct/structures/slime_islands/blood/0x1x0.nbt"
@@ -12657,6 +14809,10 @@ file = "kubejs/data/tconstruct/structures/slime_islands/vanilla/8x1x11.nbt"
 hash = "928200922241a5b44c3192ddbab70951a41c1797f53da1536e8ea365886f3b09"
 
 [[files]]
+file = "kubejs/data/tconstruct/tags/entity_types/killagers.json"
+hash = "3dde71878edff9f132d01ef983f7d0cad4d657b6e964f38f624a5bd9af3f6336"
+
+[[files]]
 file = "kubejs/data/tconstruct/tags/fluids/desh.json"
 hash = "d061b2f719c0e9f13038f1767a0117e7afd8cebd9c0e29c3bb05bd0a3b29c187"
 
@@ -12702,11 +14858,11 @@ hash = "f506bf0ce4bd2445df5959f65137920c017df5860c11e557382fbbe7d89e1303"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/definition/desh.json"
-hash = "f506bf0ce4bd2445df5959f65137920c017df5860c11e557382fbbe7d89e1303"
+hash = "aadc5932dfdc7378225170fbbfcf7ae9db32ea56c180b3a33c7256e27fb8b51d"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/definition/ostrum.json"
-hash = "f506bf0ce4bd2445df5959f65137920c017df5860c11e557382fbbe7d89e1303"
+hash = "aadc5932dfdc7378225170fbbfcf7ae9db32ea56c180b3a33c7256e27fb8b51d"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/definition/radiant.json"
@@ -12717,12 +14873,8 @@ file = "kubejs/data/tconstruct/tinkering/materials/definition/shadow.json"
 hash = "f506bf0ce4bd2445df5959f65137920c017df5860c11e557382fbbe7d89e1303"
 
 [[files]]
-file = "kubejs/data/tconstruct/tinkering/materials/stats/brass.json"
-hash = "7beb82227ef058743b13787fb3bc3ab628e67cb1de90fe86df7919540cf80cd5"
-
-[[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/stats/bronze.json"
-hash = "d69a03b4a21c9de23a4cd0eb511fdedccfd4fd7753240d236024b6ce256928d6"
+hash = "5b9e39e6e8f9548d05975ce1f6e7ce37f038ce18b5eb0bbbb4b320b15c7f1856"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/stats/calorite.json"
@@ -12734,11 +14886,11 @@ hash = "814a75c85215f5f0f79c003b2b5efb7609bda80929151e2b68d0c510fe5cf7d9"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/stats/electrum.json"
-hash = "af12afe286f32914aad138b64441005378bf22dc613a26b69b7b894ab65c29f5"
+hash = "80d7e97043cb528fc20314c90b293e700729f08679cfb3280a29f0717ab15311"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/stats/lead.json"
-hash = "773f951207eb4f3b729046ac0787f602947f6e2b451782008006083b9fbeb4c7"
+hash = "a86447263e430f3b3ba9a7d6e5cc5239554d09ed8cfdbff965d2a74f489fe3ab"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/stats/ostrum.json"
@@ -12754,35 +14906,31 @@ hash = "b4166f498838ba4650a99825aa976dae8a53b95737aec39e9c1853cb177c2113"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/stats/silver.json"
-hash = "c293a9176b81d74f7b7c6fe85a51094d066eb71eb90015c9a9ecae7c6c1a7920"
+hash = "9e9b3abb15f7a9a870ad94daa874f83c6983b80b651b01aaa4cb9a278bf8f219"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/stats/steel.json"
-hash = "2970f20adb5b48c4869a2e006a875e04e83af043821b7a820ad07d807ac0ccd9"
-
-[[files]]
-file = "kubejs/data/tconstruct/tinkering/materials/stats/tin.json"
-hash = "7beb82227ef058743b13787fb3bc3ab628e67cb1de90fe86df7919540cf80cd5"
+hash = "42450e194a7d1627e38d320f45b3e68eed7f72225d80a878c11454750dad7ece"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/stats/tungsten.json"
-hash = "da16b9d757de55366ab4940a9b87814355e5725237ab9af2ebc017ff209f5649"
-
-[[files]]
-file = "kubejs/data/tconstruct/tinkering/materials/stats/zinc.json"
-hash = "7beb82227ef058743b13787fb3bc3ab628e67cb1de90fe86df7919540cf80cd5"
+hash = "1e2771acb640dd796721d8b4a89d29947f093ef3a2cc448b9c15e254598de1ff"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/traits/bone.json"
-hash = "f2677d4599e7afa7d97353c32e3de7b2318caf8fadfeeb2eeefe1cda087378a5"
+hash = "602b6b32dd71705fb0499b6f89757b26108945eb3e5c9b2647e4dd0b977d571c"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/traits/calorite.json"
-hash = "43dc9b9926aea4a6a1cef5cee48e679f551fabf0dae07e1717352a261a08460f"
+hash = "4e2e149a145dade8d524624ff5b92fedb7b8ae87119555c6b5a9adf1f1d54e34"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/traits/desh.json"
 hash = "bf74f9348d6e1fe09e61c1dc0b12431a5803577d564a9dd3a657a4989391cab0"
+
+[[files]]
+file = "kubejs/data/tconstruct/tinkering/materials/traits/iron.json"
+hash = "3b929b546fc495fd6c401c9e7f8c721797d95322b5d94ec3933f421a30cf6d61"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/materials/traits/ostrum.json"
@@ -12798,27 +14946,27 @@ hash = "86b2fdefed5172c0f182342929c03e77fd4f5b500d57d4fbc3ae84f306ce8c9b"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/tool_definitions/cleaver.json"
-hash = "1ef79f396168c5ac00bbfc41d3ac03f1b31276dadb15fe50f8e5f3b2df9794a7"
+hash = "85db2286610bf22c57672fea90c44af3a4a0bfb112a06c51da5ff737f17b74ad"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/tool_definitions/excavator.json"
-hash = "8580cb3c702662beafe23c428247c22e3a6cd5f12c4401347f80f675d979941f"
+hash = "b5092f70b8dd0ca6b30fada30782a929dee7049b19bf079e1e2d933d8bbed0b6"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/tool_definitions/pickaxe.json"
-hash = "53605ef2853d520b6a57b7cc38d5dfb88cfb5112ff4ac4790f5103740cf73ce5"
+hash = "b5e3f16f3e71933804f21bbc1810cc558b0d72164713826a03615ad87ccbcab0"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/tool_definitions/scythe.json"
-hash = "3c51a6525a07269fbd8fcfdbf66967a3dc7050c1293dedb0a84934bd22d645b2"
+hash = "d3c5d55b8d87c38d532418d436388e3f840b669cabf8e693db56b1add67bbfbf"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/tool_definitions/sledge_hammer.json"
-hash = "23c6a188bea36ce13148236cdf075733f78f36bae868a19c0d086a74d668ef65"
+hash = "76926cab7e48e9af8c0f93e645cac1de908613fb2d767c9113f37ee743f60a2f"
 
 [[files]]
 file = "kubejs/data/tconstruct/tinkering/tool_definitions/vein_hammer.json"
-hash = "93975bc537aff42f0e8042fb6991235c197b9930e1531e14858f60fcc15100d2"
+hash = "dc6d2cb28d8bc2f0c88396b67af1d6b5dd6a8422de9fd667369b4a473cccc469"
 
 [[files]]
 file = "kubejs/data/tconstruct/weapon_attributes/broad_axe.json"
@@ -12914,235 +15062,289 @@ hash = "2d1602852e036f534b2126527eef4e23f196efd1f0cd6b4959ab343ac09cceef"
 
 [[files]]
 file = "kubejs/jsconfig.json"
-hash = "d2a0b017bf78ca69cc87df2e2cad9a62cfe5f8247482f25ed12641b2f04b0741"
+hash = "79cd8674b255478c3ffd0a334c7aaab74e86da94799cc400b97ccd19b7d6f4b6"
 
 [[files]]
 file = "kubejs/server_scripts/constants.js"
-hash = "e15ce721d94b8dc9a679519669f05d9b1e81197fb4334e360b267476de44a4fe"
+hash = "7854064e4f7579ef22c6ede9f2078fd6333c13b27645957319348f56c3d8abd7"
+hash = "7854064e4f7579ef22c6ede9f2078fd6333c13b27645957319348f56c3d8abd7"
 
 [[files]]
 file = "kubejs/server_scripts/data/loot_tables/block.js"
-hash = "1c015d603a9f5daadc39000b05f3834639b34e449282010c1e5efce7353a7344"
+hash = "da676dd32a4affdeed2b06a2176317a1ba2fccf6ee83c36b22e56f4cb170163c"
+hash = "da676dd32a4affdeed2b06a2176317a1ba2fccf6ee83c36b22e56f4cb170163c"
 
 [[files]]
 file = "kubejs/server_scripts/data/loot_tables/entity.js"
-hash = "26eb25c500378a7a37ae35cefd2fa5b6fd27444b2663b4ec18840d768e4022f4"
+hash = "3a8fd8ca84888c0f0a940b8ab42090c661769aff59e92ec73925d0416fc12b06"
+hash = "3a8fd8ca84888c0f0a940b8ab42090c661769aff59e92ec73925d0416fc12b06"
 
 [[files]]
 file = "kubejs/server_scripts/data/villager_trades.js"
-hash = "e6fe78552d5bad673082c8108b427f6be34086591b34da71b8dc7c8a57143cb2"
+hash = "0736ab6d30bb143b40e86d29dab2f95b1afd421bd8e2d5330d6724a26ce567dc"
+hash = "0736ab6d30bb143b40e86d29dab2f95b1afd421bd8e2d5330d6724a26ce567dc"
 
 [[files]]
 file = "kubejs/server_scripts/fluid-constants.js"
-hash = "f7bc81e89eb68ae18125603c5c63d0f1750da90679cd066c2c3e745ec10987ea"
+hash = "382e130363bebe57bdf7241505ef079c791dd149fb59cf623d67e250ed42cbec"
+hash = "382e130363bebe57bdf7241505ef079c791dd149fb59cf623d67e250ed42cbec"
 
 [[files]]
 file = "kubejs/server_scripts/misc/dragon.js"
-hash = "1645b728fee3db6bd440a8c27a4ab9e292dc972851bc869c4991b1d305af692d"
+hash = "1e1c0096e628e1a1089446b97c64a44efacd5db236105c7ad03388e02d3f8e9a"
+hash = "1e1c0096e628e1a1089446b97c64a44efacd5db236105c7ad03388e02d3f8e9a"
 
 [[files]]
 file = "kubejs/server_scripts/misc/interaction.js"
-hash = "1a07ec0340ad7d0163bf6494b3c81793c1b31d35e5eafdfc2e03ccd8ffba8e71"
+hash = "dde196448c1ba6d3d2f755a98270d9c9afd6162891097a1e74be69af1dcc758c"
+hash = "dde196448c1ba6d3d2f755a98270d9c9afd6162891097a1e74be69af1dcc758c"
 
 [[files]]
 file = "kubejs/server_scripts/misc/spawnpointfix.js"
-hash = "22f6277c1528befc65b74552a2c3640275e82f40046ef2ddf3b81a7f3e9f8c81"
+hash = "a335def6318199ebe33a9bfb3c42e94612c4580f7991726e879441ad9bb1681e"
+hash = "a335def6318199ebe33a9bfb3c42e94612c4580f7991726e879441ad9bb1681e"
 
 [[files]]
 file = "kubejs/server_scripts/misc/tconstruct_fluidsyncfix.js"
-hash = "e03b57ec6b679ef7572a7dd4428b99f8429a713ada6080609d952a278318aef9"
+hash = "514a26863d99114bb01b62af616eca3f560cea10a79f9423d6f2df9201de0c73"
+hash = "514a26863d99114bb01b62af616eca3f560cea10a79f9423d6f2df9201de0c73"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/ad_astra/cryo_fuel_conversion.js"
-hash = "5fdc5eef443450a591f18e0d33e1e84837571779594835bbab2a265e4d86c052"
+hash = "32de423c7378a40bf547b9eeb13eb80650c53c34259e7a73ed20f665ea0b911c"
+hash = "32de423c7378a40bf547b9eeb13eb80650c53c34259e7a73ed20f665ea0b911c"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/ad_astra/oxygen_conversion.js"
-hash = "1dd928c25b591d9dc5c130b8114b9e616bc31efbb6b9be99bdd2301a33125842"
+hash = "c970388c8e02c7dce3a307271603f1e1b8bb0711be834fcdf78f523317463fb5"
+hash = "c970388c8e02c7dce3a307271603f1e1b8bb0711be834fcdf78f523317463fb5"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/ad_astra/space_station.js"
-hash = "bd7f9e9b79b30d2e448edd87064b902e61b16b64344a40ee92cbfde98af46ca0"
+hash = "19ce382f69e65ff67c45204541561e63514a0b1476ad5c77cb044d149bbb0084"
+hash = "19ce382f69e65ff67c45204541561e63514a0b1476ad5c77cb044d149bbb0084"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astral_generators/machines/amalgamation_matrix.js"
-hash = "4afc89250ab3e266ef249e33e3ccd9dd4fc654aa6523aa76af01bb16b8ed0549"
+hash = "e2b277189785ae0b56fe92ea9bc3b3a3db007e7553a211d29cdce3ecd1cadc17"
+hash = "e2b277189785ae0b56fe92ea9bc3b3a3db007e7553a211d29cdce3ecd1cadc17"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astral_generators/machines/assembler.js"
-hash = "a3948e10583b753f25abb5e108fcdd866a64dd4e9faf6a7f16e3eb30e01fd7a1"
+hash = "866e52d8919b6bc6fb78f4589079b0802395e6a813a9b6e4e1b6d2bc3cbffcae"
+hash = "866e52d8919b6bc6fb78f4589079b0802395e6a813a9b6e4e1b6d2bc3cbffcae"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astral_generators/machines/boiler.js"
-hash = "f6accf5dcf865c0664eac870d858abc79f2867a2a2833905c4312e70667880cf"
+hash = "9fff57ee30e62bdd64055d88f66a57476f8012f8e008578565c1592dfce3a33e"
+hash = "9fff57ee30e62bdd64055d88f66a57476f8012f8e008578565c1592dfce3a33e"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astral_generators/machines/fusion_reactor.js"
-hash = "d0cbb2ff1de192cf30257aeda7bf4628bdedf738865bacfa30b4da62667c1e5c"
+hash = "00bacc5f106ed3a804f19b7d7cf7757ef63392ffc5ca371132ebbc9117be79a6"
+hash = "00bacc5f106ed3a804f19b7d7cf7757ef63392ffc5ca371132ebbc9117be79a6"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astral_generators/machines/particle_accelerator.js"
-hash = "f2d7bb835afe5f845f3ac6943f8e6fe2e9df0a3ea57dbc3e680a2b57a1f13804"
+hash = "29740025b73d45fb1d5a6b6c4d713c9f66a913a6bebf71466a452fa1b5d7cd80"
+hash = "29740025b73d45fb1d5a6b6c4d713c9f66a913a6bebf71466a452fa1b5d7cd80"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astral_generators/machines/steam_turbine.js"
-hash = "2712e5102f9c9471cb0eacdf8577424c749a7ab7b517e3e156eaa5669e06b571"
+hash = "03c54a2dcf34c97204db7b34864911d5a09474183a3698f1921777d2c5c076c4"
+hash = "03c54a2dcf34c97204db7b34864911d5a09474183a3698f1921777d2c5c076c4"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astral_generators/mixing.js"
-hash = "dd3c42d2a90f013d64edafd2ea453ad75b245b00325c0ea87cf378ba9d066e25"
+hash = "46a2da6103364e34d9d5003b746491dcb1958c683177bdd992948b1592b11643"
+hash = "46a2da6103364e34d9d5003b746491dcb1958c683177bdd992948b1592b11643"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astral_generators/shaped.js"
-hash = "40194e4b22fc4bb1af126cfee5efc8cf30698838afdd46c2567cd58e30c9ce39"
+hash = "9d2e4ba8d2a91bbb2af9e0416331e5cf0e791f0b60f5763b96c297f25bc22746"
+hash = "9d2e4ba8d2a91bbb2af9e0416331e5cf0e791f0b60f5763b96c297f25bc22746"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astral_generators/shapeless.js"
-hash = "72b41cf747f5c4bcb281d3a710d9c580c547ce1554672f3f4234b52a2a70d067"
+hash = "65935b87d9bfeb9e7a12e5dd85f261f052d7310df54e85bb66129df304c66573"
+hash = "65935b87d9bfeb9e7a12e5dd85f261f052d7310df54e85bb66129df304c66573"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astral_signals/machines/analog_decryptor.js"
-hash = "863839098fee5109bbc41b61474625efd9d51b414165073616a8590b3108afef"
+hash = "4f070051545e0bbbcc86c3f0f1c073535c7e810114ccc6ac7c8d6877713bb97a"
+hash = "4f070051545e0bbbcc86c3f0f1c073535c7e810114ccc6ac7c8d6877713bb97a"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astral_signals/machines/drive_eraser.js"
-hash = "bf076953d8557a733a4c312379d620340a09deb38f56b63283e29d4061d6c7c7"
+hash = "a443787bdd84a77b6d38a83041d780cd0b82be9f8cdca3a4bfb2582909b894a2"
+hash = "a443787bdd84a77b6d38a83041d780cd0b82be9f8cdca3a4bfb2582909b894a2"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astral_signals/machines/mp_decryptor.js"
-hash = "507f78484c6d02db60935083dfc6785443ee408ede956678d57617547f1607ae"
+hash = "cbd4271743574c6289ad8cd50e98b573cf6f9edebc42e84594e38835b30e525c"
+hash = "cbd4271743574c6289ad8cd50e98b573cf6f9edebc42e84594e38835b30e525c"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astral_signals/machines/pp_decryptor.js"
-hash = "4362370369e394ee7457ca613ba6381d7220651f6f94a8e77709efe39022236a"
+hash = "34ba09d315ea55019e92cdd39bc36b3161eea4e66842498ed2c549d81f2fbfbc"
+hash = "34ba09d315ea55019e92cdd39bc36b3161eea4e66842498ed2c549d81f2fbfbc"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astral_signals/machines/radio_telescope.js"
-hash = "fe5543b8cc930c4dd8ef2c486e18809aa2bed7e17c94a071b5c5f3db7dc04d07"
+hash = "9dd8d2acd03822412feb7ecddb812265117cac06b4f74c38638cc8f3000941dc"
+hash = "9dd8d2acd03822412feb7ecddb812265117cac06b4f74c38638cc8f3000941dc"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astral_signals/machines/sequenced_assembly.js"
-hash = "8a923149c69b7990f99eb7a7d8467f88251e27f65825e0b24e42b8707647ed1f"
+hash = "85e23ea712c6a9077f6644d7a6801de9962b755eb0fb39d1326427e02255661d"
+hash = "85e23ea712c6a9077f6644d7a6801de9962b755eb0fb39d1326427e02255661d"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astral_signals/machines/signal_coordinator.js"
-hash = "8a4ee54a31a7098ac89c9a8c33096238bb4dac060d09d1fba9e1eb074f31094d"
+hash = "cca9fcafb66d10f5815d75f62e99a4f2afcfa79e37de0a1e0f854f48c9aabe9e"
+hash = "cca9fcafb66d10f5815d75f62e99a4f2afcfa79e37de0a1e0f854f48c9aabe9e"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astral_signals/machines/vinyl_printer.js"
-hash = "176628db24b367caf10385a21e14b63b38b7ae7abaefcd2e4070dd1bfda44df8"
+hash = "417ac391646ef21ddb9c34ae3218b615285edc298d7a55d1cba246e486f5e1bd"
+hash = "417ac391646ef21ddb9c34ae3218b615285edc298d7a55d1cba246e486f5e1bd"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astraladditions/chromatic_vacuum.js"
-hash = "f6e1da88853758a85e4db16793bb3311d5a141e3589849307c77195aece2361c"
+hash = "e97086a98d1fe4ec779b24ad8535791bd636184bf6eb8167549e348aa09cc090"
+hash = "e97086a98d1fe4ec779b24ad8535791bd636184bf6eb8167549e348aa09cc090"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astraladditions/desizer.js"
-hash = "0496eaa569d7c93f563843b0911df8565409f46ef41bbb0d5c65cb28c3995614"
+hash = "1a7e832e7aacf92156f9602dafbec4314d075e4f7cd5c199b6e5a7d18b810a09"
+hash = "1a7e832e7aacf92156f9602dafbec4314d075e4f7cd5c199b6e5a7d18b810a09"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astraladditions/shimmer_transmute.js"
-hash = "5a3ffb28cabcb1ab7401f2d677267fb40ff980cc611d94f7e6d3a7d7ec45fabd"
+hash = "609d7a0077432be6308851f47ac9293b0fc6232c40c7d594f2abde3837180ab0"
+hash = "609d7a0077432be6308851f47ac9293b0fc6232c40c7d594f2abde3837180ab0"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/automobility/auto_mechanic_table/engines.js"
-hash = "30a74cd92d066aa7f4ca99d4682071a2948ec7645d4ab8203f3c1fa438536566"
+hash = "6b39af26e7e37b89e771491e710c6277d83e9eed4fa9cabbcba129da7df2b9d9"
+hash = "6b39af26e7e37b89e771491e710c6277d83e9eed4fa9cabbcba129da7df2b9d9"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/compacting.js"
-hash = "769659c2a65c670b8102f0b6de11db050d941b4f79ccf81c851cb60df705b8ef"
+hash = "b17c6d406e10fc1b4e1a15b91e9f7a7d4b43481338b31a651ba3c06b7a54ee41"
+hash = "b17c6d406e10fc1b4e1a15b91e9f7a7d4b43481338b31a651ba3c06b7a54ee41"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/createaddition/charging.js"
-hash = "cb102966976bee29bb8174db07ae1f4c311e1c62fa00f39a0b3703d43224be02"
+hash = "e6dbc880545eb631cdbc3427731c551fbe41cbdae5390f84bbcf39a2513cec21"
+hash = "e6dbc880545eb631cdbc3427731c551fbe41cbdae5390f84bbcf39a2513cec21"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/createaddition/liquid_burning.js"
-hash = "9a245101213b11fdbd3ba41368993fcd797148d6882bd41bde83bad5822f1091"
+hash = "3f14f9e58f8be1ed1833ac8f608ee1fc3234f36ffa354b2c7c914b3771be0c97"
+hash = "3f14f9e58f8be1ed1833ac8f608ee1fc3234f36ffa354b2c7c914b3771be0c97"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/createaddition/rolling.js"
-hash = "b4ec316310a45c190ca9f59b085614512945012a4f7bf578cbb0f0f4fdcaa49d"
+hash = "44a0e6fb18dbe88a3e3127fdd93504f2d8dfcb6d49dd70a1227b1c00beb14320"
+hash = "44a0e6fb18dbe88a3e3127fdd93504f2d8dfcb6d49dd70a1227b1c00beb14320"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/createbigcannons/melting.js"
-hash = "da97add493048b960cdd57a945acde7ce05f336a82cb034a0b1be9e359364fa8"
+hash = "b6dbcce204d6b7de69b1582469e5253aa0f7f2c8147386434a7150be2074365c"
+hash = "b6dbcce204d6b7de69b1582469e5253aa0f7f2c8147386434a7150be2074365c"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/crushing.js"
-hash = "09f1c324fea156c4335c0e6430bf8b9e08d6cfdbe4712fade689feb67d25b762"
+hash = "ed80cd9bf6e11ee8c57eb742174c741fc7014f682abd1f42d644454860d3ba45"
+hash = "ed80cd9bf6e11ee8c57eb742174c741fc7014f682abd1f42d644454860d3ba45"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/cutting.js"
-hash = "2a5259e0e0a48c19a81fadde80c290f9ca77e84aab75f16516cefa68a9b6f0c1"
+hash = "93c347153da3863ef88ecf0b1985a1d263a6664fa918b1e76355996173947849"
+hash = "93c347153da3863ef88ecf0b1985a1d263a6664fa918b1e76355996173947849"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/deploying.js"
-hash = "28abfff6f4d8b43011be0127651177f1ba2ee3177f5f5456c230dada53c5d9c7"
+hash = "77ab37b90e268609ae60dbd0e6b2a32439536308d60d9dcfb7480843c23a966e"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/emptying.js"
-hash = "5d7aabd928c46938e54f5b46e070f10d5f076168a27ece31403c354750eea422"
+hash = "8ebb38881e9913a10d095298366942bf5e7ad51380b480cad7354920b4e3b44a"
+hash = "8ebb38881e9913a10d095298366942bf5e7ad51380b480cad7354920b4e3b44a"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/estrogen/centrifuging.js"
-hash = "a79fb5fa16a965511fcb39ad128577888b4ae8fc92ec58c65aac9351b42caa5a"
+hash = "abc017cb50ac19a804d75c5a3c4f7867396bd51877c14df0d583dfaa72a244aa"
+hash = "abc017cb50ac19a804d75c5a3c4f7867396bd51877c14df0d583dfaa72a244aa"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/filling.js"
-hash = "8414318a1fe871d7d5639ef18bfb5ebaa4978b470635b4a34cad5e525f6eb80d"
+hash = "fbc26dd50a1ebbac24d8618ce4552df9e083a6994f5fa8d8a705c242fabd85e2"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/haunting.js"
-hash = "41b546528f05b2fd53e472ecde72b733ce25a758b9db565e1235df5ae6d799dc"
+hash = "dd8193026966346ed3d97f2f03ea48eacb7c2efbd8d0a39da9c6c7a316f84364"
+hash = "dd8193026966346ed3d97f2f03ea48eacb7c2efbd8d0a39da9c6c7a316f84364"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/item_application.js"
-hash = "867ad957a05d80e8ebc689c664ccee52075fed307837b50c5dd137d0686c56c2"
+hash = "d28459db6ec8f5eb3bf37a986e661a153964b14d92b665084411d1ec9cb594be"
+hash = "d28459db6ec8f5eb3bf37a986e661a153964b14d92b665084411d1ec9cb594be"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/mechanical_crafting.js"
-hash = "05d3060980c9530ea4b4552a9975ccbacd94293f73f1e7df65fa40f87db0f064"
+hash = "8ecacc53d55d4da8288d1f936e88bc4e47b9c7d9b9fdcf547e18324f06f295d6"
+hash = "8ecacc53d55d4da8288d1f936e88bc4e47b9c7d9b9fdcf547e18324f06f295d6"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/milling.js"
-hash = "55348ed13deb05f7d9f8b2c4c8f7109d59dd30acd435acb072b80a1d018090ad"
+hash = "57a19ec1c4ff6bddab0f354714d75732bd797bfabde47b2e75b4a291c4356611"
+hash = "57a19ec1c4ff6bddab0f354714d75732bd797bfabde47b2e75b4a291c4356611"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/mixing.js"
-hash = "31795cee82de5869b7338c2daec796792cf2e8bb5194294ed7761c64793343d3"
+hash = "d094c784073471dfdc55faf566e1c75e022fe3208660b68de3d78a676a3313c8"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/pressing.js"
-hash = "fcbf4a22129c68b78cacde385d2757e8aa57d4a4d77726fe739824498a88fd7c"
+hash = "d6b7f63433e157d622f48723af7bb4cc582719c137d5ec8399a537c68d126fdd"
+hash = "d6b7f63433e157d622f48723af7bb4cc582719c137d5ec8399a537c68d126fdd"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/sandpaper_polishing.js"
-hash = "5198a6ab66d7cfba25f31ab8f3054f6813410bba36958164c8dfdca9b1b798fd"
+hash = "f85a6be3c6f36bf5e290347ecc7362683086b5ebd74188963bf768811bf44442"
+hash = "f85a6be3c6f36bf5e290347ecc7362683086b5ebd74188963bf768811bf44442"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/sequenced_assembly.js"
-hash = "36c2665983129c75aed10dfe4435dc81b7a2cc44f61e56c3952734f829b06114"
+hash = "3cff535d78dd93fbe5d8386d89773300e73b2f9ded8e45b4e34e0dff5a1afd3f"
+hash = "3cff535d78dd93fbe5d8386d89773300e73b2f9ded8e45b4e34e0dff5a1afd3f"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/splashing.js"
-hash = "4cd7525d5ee8f37359310cca3f3382a10654d51efa9bc5fa41db2cff4f79bdb8"
+hash = "7c5c249c949b7d3e1bc5a4de45800b26031edcc0ac7f0ac45e79a5ac4218d3d7"
+hash = "7c5c249c949b7d3e1bc5a4de45800b26031edcc0ac7f0ac45e79a5ac4218d3d7"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/createastral/machines/distillery.js"
-hash = "2728d2b23f34af7beb96bfa3d5dc88e946657a7e18ead1c56bc6c5f6c2709117"
+hash = "58cb09d4c8713c8da8c32c37b2b9120c5ddb41ad497150a2fac58eee5d48e235"
+hash = "58cb09d4c8713c8da8c32c37b2b9120c5ddb41ad497150a2fac58eee5d48e235"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/createastral/machines/electrolyzer.js"
-hash = "839620654a7e634d0dfd2afc16351be035c9c984d83168fd21feaa130834a4a7"
+hash = "d1b888678293fd9c0cc676e0ec2c9c7a4d15a7b7424d425f837de2adfbf4acb5"
+hash = "d1b888678293fd9c0cc676e0ec2c9c7a4d15a7b7424d425f837de2adfbf4acb5"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/createastral/machines/shimmer_refinery.js"
-hash = "af246b262bcd0dbdb5d3307640eaae94ff1213e9e85d5b9ca6a118045ddfee14"
+hash = "e327bbd6c91b7a5256e6be24b273fd00d7e2e969e0056d95735ebebb3e4f9aed"
+hash = "e327bbd6c91b7a5256e6be24b273fd00d7e2e969e0056d95735ebebb3e4f9aed"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/createastral/machines/stone_growth_chamber/copper.js"
-hash = "1484ad9544069b17a754646f65c66b32973a1864c6237ef621733ee93dbab943"
+hash = "aca435cc4e6224b997d5f7c4ad678fd8343fc92efead95cefaeaa64c5cb28184"
+hash = "aca435cc4e6224b997d5f7c4ad678fd8343fc92efead95cefaeaa64c5cb28184"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/custommachinery/machines.js"
@@ -13150,143 +15352,178 @@ hash = "e3b7313609abe0adf00d6fc2245f8bd9507df81f15f370396b05b0e0e6a0c6ba"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/farmersdelight/cooking.js"
-hash = "de0cd8d1daf1a42629db653afc87e511a9370636e6475da6172b3bc8a2078d70"
+hash = "73841e6369df5358ef37387564b7c90ea52fda1312d8cda737458b25e248f1af"
+hash = "73841e6369df5358ef37387564b7c90ea52fda1312d8cda737458b25e248f1af"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/farmersdelight/cutting.js"
-hash = "f4f88e004617361609223dffa8b6da2914faf5384e83b81fd3042ce3a3e30e40"
+hash = "90b5593bcdc601f57298f2c51d89bf8cc74305d71c37ad963f592845024c3a4f"
+hash = "90b5593bcdc601f57298f2c51d89bf8cc74305d71c37ad963f592845024c3a4f"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/blasting.js"
-hash = "bf86867210e591428e83fcf0c9a3e5221ccb8c3e78632150101dae4649ac08f4"
+hash = "ba7cd13baf3aa66cb370a7598360a6a2d4b6891c8d5dacc5c9e80be12965b594"
+hash = "ba7cd13baf3aa66cb370a7598360a6a2d4b6891c8d5dacc5c9e80be12965b594"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/compostables.js"
-hash = "058f16920d30da6bf4e0fd399874349a993b68a1ecdcf73fb0c6afae7f50b01a"
+hash = "ce87cf340688fab96dc38d9d9c551c29729efb4948d950fad74439da240b6cd2"
+hash = "ce87cf340688fab96dc38d9d9c551c29729efb4948d950fad74439da240b6cd2"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/shaped.js"
-hash = "6fa7da2c48b60ab963da29226b07653d64b82fb907721b53f9d24ccbd4a401ee"
+hash = "eb5de508cf522af0e1a4677c0b1ecd785b9bc817cd5bf071487a70f6dba53e4c"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/shapeless.js"
-hash = "4ec342757596c79b785450c6984295663c0ca63151c99007a2c257e5bccb9632"
+hash = "7c4324f956fcd8d967b2d8894dcf368cb33819e57c3196569e4eefe1ea61aa95"
+hash = "7c4324f956fcd8d967b2d8894dcf368cb33819e57c3196569e4eefe1ea61aa95"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/smelting.js"
-hash = "9f44cd550632d24c769fc8dcdc5723075d1ac489a3dcade5900935d6440012aa"
+hash = "28cb7d9293a4973571573cc0967e2f823ac53d87ace215668e6684ecee671204"
+hash = "28cb7d9293a4973571573cc0967e2f823ac53d87ace215668e6684ecee671204"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/smithing.js"
-hash = "39b8058c64eacea66309222ebedd7241a008d9152449cc45fd3e070b2d30ff14"
+hash = "64ceea0c4f6a777ec9992806cb2dcd103ebcb64866ae5fc2c3ae94c4f2f2d49d"
+hash = "64ceea0c4f6a777ec9992806cb2dcd103ebcb64866ae5fc2c3ae94c4f2f2d49d"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/smoking.js"
-hash = "8aba0304a086ed0c8fe4783fc4eff6668d60a12097dccf81bdb0b4f3eaf647a0"
+hash = "a60f2fce9490d76610595e235b0d9b2a89354a0defaf326f2d71c4e9835ac3ed"
+hash = "a60f2fce9490d76610595e235b0d9b2a89354a0defaf326f2d71c4e9835ac3ed"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/stonecutting.js"
-hash = "14cf328b174515bf165bd9247f283419a2cd6d3f9a5e34202a8a0317123274d5"
+hash = "d73e68b60571f7d293a4fa4c28406a8b14c4558da06bbdc2b3ee7c4ec1b4aa77"
+hash = "d73e68b60571f7d293a4fa4c28406a8b14c4558da06bbdc2b3ee7c4ec1b4aa77"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/removals.js"
-hash = "34ebd134f92724be1e49287b8cfc24943bf1cd9c52065ce9aba52b0a0ca568d3"
+hash = "aa66d50a896f0e74a4907a1edd59e9a7cba1b783ab366dd6b83326719ee49d14"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/replacements.js"
-hash = "2676ccbbe100cac9c8b731b6cff311e34cc6bd4eedb57db9b72b16b8d50f8f73"
+hash = "defcc823557a8fc5b295db380847ddb202aa7efa5eb40d7b82ee28d77a11ce38"
+hash = "defcc823557a8fc5b295db380847ddb202aa7efa5eb40d7b82ee28d77a11ce38"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/smeltery/casting_basin.js"
-hash = "8be4ac2c97dca65558b70790a9982b5f403e9bc1264c80b59898ec52a9cc6325"
+hash = "d5012e5ab08017d7e12a24ba5ac2a2f1235b6e828498cc9bbb1ff72642fe9d13"
+hash = "d5012e5ab08017d7e12a24ba5ac2a2f1235b6e828498cc9bbb1ff72642fe9d13"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/smeltery/casting_table.js"
-hash = "88ab4c40b3a98b44d6654949994b665b064395d510c490950f2063d8a152a26b"
+hash = "0dff5f415165eddf470b5d1039d1bd478f4f73f365c06ec615416585b6a17e7b"
+hash = "0dff5f415165eddf470b5d1039d1bd478f4f73f365c06ec615416585b6a17e7b"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/smeltery/entity_melting.js"
-hash = "ffec43476376024af9c174532453d33c4d07adacac43d0ecbc24b7114594b97e"
+hash = "32abeee06f29234b8cceba59b8cb01863b6e6bafb4f38f8047bd735696e3dfdb"
+hash = "32abeee06f29234b8cceba59b8cb01863b6e6bafb4f38f8047bd735696e3dfdb"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/smeltery/melting.js"
-hash = "21afb51e667cfa7900237946d9467a8064bd0756f2fc541b70faa9cd13699b1e"
+hash = "35bdcf449e0e8caecbac877d10ba61c37e86c8012668bf4da375b26d55a4c0df"
+hash = "35bdcf449e0e8caecbac877d10ba61c37e86c8012668bf4da375b26d55a4c0df"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/smeltery/melting_fuel.js"
-hash = "75ccb0278b41b26335ac4f4b4418f6ba2ea47dc5198e1dea4c3747bf3b4f571e"
+hash = "e1d3c2aa832de3aaa3e3cd3dd001a5dbff45984b0138171dae59e95e0eef7a63"
+hash = "e1d3c2aa832de3aaa3e3cd3dd001a5dbff45984b0138171dae59e95e0eef7a63"
 
 [[files]]
-file = "kubejs/server_scripts/recipes/tconstruct/tools/modifiers/modifiers.txt"
-hash = "8f2a3b672a0320bc915f389a18c5911c7034e985c074a19085f33152d0674ddc"
+file = "kubejs/server_scripts/recipes/tconstruct/tools/modifiers/modifiers.d.ts"
+hash = "6397bbb78d3c01105114fac3fd5e7bcd016037c0442604f7982c32847d039d15"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/tconstruct/tools/modifiers/modifiers.js"
+hash = "4fbf83bbfd27f2f2b3724008f759ffc30ee694fb24fd3a76ad9e9a95f1372838"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/tools/tool_materials.js"
-hash = "af53c24988518ed92868635bef31558091581dc907e450102970d5e7a64b53a2"
+hash = "5ddb496f2d333dd30391f9aa17e29ea87ee932d5cd07c6849ccd653554a5ddee"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/techreborn/blast_furnace.js"
-hash = "9b117ab428e806b24d8a11984d63a3969b1c333f7083128aa1aea97751c87253"
+hash = "64c2217b2f663167fb20c3e14ff6340d89d3b03de0532b39134415094330a6a4"
+hash = "64c2217b2f663167fb20c3e14ff6340d89d3b03de0532b39134415094330a6a4"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/techreborn/centrifuge.js"
-hash = "3e0f04973464f4b6b4207d1ffc39c9bc23a9457bd28d818b87dffad8ac2b9400"
+hash = "6cb3a81bc4a4f137c355f412ec1c65475211e98d1ab1a107bd4838f78291793c"
+hash = "6cb3a81bc4a4f137c355f412ec1c65475211e98d1ab1a107bd4838f78291793c"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/techreborn/chemical_reactor.js"
-hash = "16243cd730f8014a8890a2a7add4d4e5f1843a36fcc9fe101ae98d42e613cce1"
+hash = "237da521a208b538c17f64a812425601cf2bda2caf5598f24170c616f96fac2a"
+hash = "237da521a208b538c17f64a812425601cf2bda2caf5598f24170c616f96fac2a"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/techreborn/compressor.js"
-hash = "d6ca02d12a326c9d74e4f097c9b0c9cfeb71d371fcc855eeaf9c47355b5f1657"
+hash = "65b738b7353d7ccf5f700930b6c1e045b5032845db1517299038878e222aff58"
+hash = "65b738b7353d7ccf5f700930b6c1e045b5032845db1517299038878e222aff58"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/techreborn/grinder.js"
-hash = "ed06ead623cc2a4dcde24f32ec30c5ea4ea8a86b7f3a185fa25d9f1a3f66e4fc"
+hash = "f07da6975fc84dbd2a4cb84263cbf377b7dc80cb4141c056263402fb93e7470b"
+hash = "f07da6975fc84dbd2a4cb84263cbf377b7dc80cb4141c056263402fb93e7470b"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/techreborn/implosion_compressor.js"
-hash = "8d86c3ee35986facb754c4ba4786ada8bbacd1b498a03a660ac28cc438742a29"
+hash = "bbc7a3a68a34778ff32b3c3fc2cc02cdff76a0aa7d98cd5626beec4c49a9a9f0"
+hash = "bbc7a3a68a34778ff32b3c3fc2cc02cdff76a0aa7d98cd5626beec4c49a9a9f0"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/techreborn/industrial_electrolyzer.js"
-hash = "b67f943b95945b871f1fa9b01dd5bf6e74355be89336fef75db223a13110a024"
+hash = "cf9a20cc9d806be89ce3059bd13f3171df48d12ab881fe692f27ba2b1c00ff1a"
+hash = "cf9a20cc9d806be89ce3059bd13f3171df48d12ab881fe692f27ba2b1c00ff1a"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/techreborn/industrial_grinder.js"
-hash = "ccfbe9001d88782640b95e22c36da1bbc3ed2e0130e19a0c801535dcd91c7e12"
+hash = "55dc769ea33544e3aef1ed01ef0c40abece87f158b36903a9ce8d54f6fc306e1"
+hash = "55dc769ea33544e3aef1ed01ef0c40abece87f158b36903a9ce8d54f6fc306e1"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/techreborn/industrial_sawmill.js"
-hash = "6193a39404172ee8db31b37367b729622768755debf59166d20fbb9c4e7c59e9"
+hash = "77dde533e26b39a10ba3bd907cde5b0951c104cbf025a01264deb25d75be7c10"
+hash = "77dde533e26b39a10ba3bd907cde5b0951c104cbf025a01264deb25d75be7c10"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/techreborn/packing.js"
-hash = "21cb586d45213e8eecf09744eb021c2fe9d40aa9c51e2240fb91f6c8a323c620"
+hash = "b97f91b4c954fc8a8833e2496cd96148129ad1a639096f60f2a06c137cbefb8c"
+hash = "b97f91b4c954fc8a8833e2496cd96148129ad1a639096f60f2a06c137cbefb8c"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/techreborn/solid_canning_machine.js"
-hash = "415c50c7fcbe7506323e61c5e2eeefa54926eed5dfd65bf992392a1b6aaecf8d"
+hash = "3ab7ecbb19e5c282e6e6f1aba687f4a74f713f8e125434622cf3213020b03f9d"
+hash = "3ab7ecbb19e5c282e6e6f1aba687f4a74f713f8e125434622cf3213020b03f9d"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/techreborn/vacuum_freezer.js"
-hash = "34605b38577747ac3f1e3bc24987c8d153a74fefc70495cdd9ab862a8eda8114"
+hash = "bb40f8852eeaf9d48644c0d5da2a028cf0d6a06af6d741663a2fe78d9fef8df7"
+hash = "bb40f8852eeaf9d48644c0d5da2a028cf0d6a06af6d741663a2fe78d9fef8df7"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/techreborn/wire_mill.js"
-hash = "72a77428592abd5b901e745b40c4c727719e891d8534475d13461ae1860f0092"
+hash = "630d9e92d9fecc5067c71e3cf52f5d3fc5985fb7f0fe2dc1e2a7d69a80743cba"
+hash = "630d9e92d9fecc5067c71e3cf52f5d3fc5985fb7f0fe2dc1e2a7d69a80743cba"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/yttr/centrifuging.js"
-hash = "039a3c509d2697244e612e11d3e9cba3ab28dee3354a9caf5fbf8df999cd4264"
+hash = "f90ba9412487c103615343406a92118f4d9d3f376fe4755c0043a9d1e39bb972"
+hash = "f90ba9412487c103615343406a92118f4d9d3f376fe4755c0043a9d1e39bb972"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/yttr/lamps.js"
-hash = "1228c7edbcaad4fc6de58094ef5df6969ffaba530de0a02a29ccf2e3bf26dc3a"
+hash = "d1f96841bceffe7626c4e7b404a997c4f4bd4c7e571b66b85d9c7ca658d24134"
+hash = "d1f96841bceffe7626c4e7b404a997c4f4bd4c7e571b66b85d9c7ca658d24134"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/yttr/soaking.js"
-hash = "bc838d11e92d2c38df68f4252020ffef4ca3bb38947fdfb4830c551d09dab5a9"
+hash = "9d379f82c3b08cce77043d08fc6fc926c0f26582641d8015e0d1c0fdba463d13"
+hash = "9d379f82c3b08cce77043d08fc6fc926c0f26582641d8015e0d1c0fdba463d13"
 
 [[files]]
 file = "kubejs/server_scripts/settings.js"
@@ -13294,15 +15531,18 @@ hash = "686691dd1feb89cc9678c9994806ad23730d1b828ad2a2d53aa60cf1ef420d61"
 
 [[files]]
 file = "kubejs/startup_scripts/misc/misc.js"
-hash = "7e64e14fe5bae64eb56d2f54ad7ab17b9933cae25aa5f054e4054298eba2a264"
+hash = "8a7aec5ccb3c27933eb2202953cb99e420d8093b87207e27c616a6b566f1d529"
+hash = "8a7aec5ccb3c27933eb2202953cb99e420d8093b87207e27c616a6b566f1d529"
 
 [[files]]
 file = "kubejs/startup_scripts/misc/planet_destroyer.js"
-hash = "b01931af1318af877cfebf951f08cf669feb4a0afe465980a63ce1504eeb587d"
+hash = "93ed7447f0aef20d7a38dcd3999edf219545ea8ff54b417a7525eed52f8b3628"
+hash = "93ed7447f0aef20d7a38dcd3999edf219545ea8ff54b417a7525eed52f8b3628"
 
 [[files]]
 file = "kubejs/startup_scripts/misc/worldgen.js"
-hash = "844d2b10086f82af4ea87098ffd515ea99691c3152077d1c34feda4df369cc85"
+hash = "402cbfb0e2238cbed95d90a5c9e16d002bf11c59d9b04e03529a77a50d17a95b"
+hash = "402cbfb0e2238cbed95d90a5c9e16d002bf11c59d9b04e03529a77a50d17a95b"
 
 [[files]]
 file = "kubejs/startup_scripts/modification/create/block.js"
@@ -13362,7 +15602,8 @@ hash = "f3e562d9004956d9227db0f99fb9f7b78648e50844a7e0892815fa85772d79f5"
 
 [[files]]
 file = "kubejs/startup_scripts/registry/astralsignals/item.js"
-hash = "8723e55402340af6f5233f7737728c93f53556d8afb7b377970d447d827b2bc2"
+hash = "c644a105942d60a57684546e9e0daa22b0233b46bfa5543271fd75ed129ee48a"
+hash = "c644a105942d60a57684546e9e0daa22b0233b46bfa5543271fd75ed129ee48a"
 
 [[files]]
 file = "kubejs/startup_scripts/registry/createastral/block.js"
@@ -13394,11 +15635,13 @@ hash = "f6c433af2980ed61a24273c2157a52bd6ee00b2ee85041c729cc05c7c959a69d"
 
 [[files]]
 file = "kubejs/startup_scripts/registry/kubejs/fluid.js"
-hash = "b02c309af7e83d8a08898c21e5e9164b188dd4eb435a0db06873d9240121c8bf"
+hash = "efaa5e5466305c90d4ec0778273c23f71cb9e1263eeed360f7853100b8cd3a63"
+hash = "efaa5e5466305c90d4ec0778273c23f71cb9e1263eeed360f7853100b8cd3a63"
 
 [[files]]
 file = "kubejs/startup_scripts/registry/kubejs/item.js"
-hash = "ed97c79e75ec78992b800c402357c81f02b52ef8b68907186fd18af8f6b6b610"
+hash = "b9dcf4d22d0cc48e4c31e638a19c35e7362b3c5d79130617a96948cac573cd67"
+hash = "b9dcf4d22d0cc48e4c31e638a19c35e7362b3c5d79130617a96948cac573cd67"
 
 [[files]]
 file = "kubejs/startup_scripts/registry/yttr/block.js"
@@ -13406,15 +15649,18 @@ hash = "add5d302b3c2ba08cc7a76bdca4894797380e3c976458b8e5ea292d574b5cad2"
 
 [[files]]
 file = "kubejs/startup_scripts/tooltip/ad_astra.js"
-hash = "8074061bd6e128c93be967cd80e82e78953743bcbfb95fe25f5605aa733a6043"
+hash = "43dc55b00f0f56e0c17f47b93bc6d5cb185fad5bcba906bf0aadd25084033e12"
+hash = "43dc55b00f0f56e0c17f47b93bc6d5cb185fad5bcba906bf0aadd25084033e12"
 
 [[files]]
 file = "kubejs/startup_scripts/tooltip/adoptafloppa.js"
-hash = "fc54f2c60279a0c91a9535a938593f6420fe91c7298894996b0978f502b8ad58"
+hash = "f1dae102fff0d37663c4afdf47724e0f54b5890888ed5659ac2e18c66101c91c"
+hash = "f1dae102fff0d37663c4afdf47724e0f54b5890888ed5659ac2e18c66101c91c"
 
 [[files]]
 file = "kubejs/startup_scripts/tooltip/ae2.js"
-hash = "608551779d4c7a2efad4bd4e9910e047805e28d4c9f803c0117120256c80ed06"
+hash = "1016d256700979193dade5a5cc1042942ce118740561a4ba2d84f759c09ed81c"
+hash = "1016d256700979193dade5a5cc1042942ce118740561a4ba2d84f759c09ed81c"
 
 [[files]]
 file = "kubejs/startup_scripts/tooltip/astraladditions.js"
@@ -13422,51 +15668,63 @@ hash = "97d8236399b5778b9135359d01b4bdf46295187dac488a55ed2055a3340445f6"
 
 [[files]]
 file = "kubejs/startup_scripts/tooltip/astralfoods.js"
-hash = "aaa5a757a4d4729da1d025fb72b3cebf2648f5bb64b5055fd867e2dbcfc1867e"
+hash = "c68c41cb6a50decb7d9f8a378e435c1d4280f5fb75f5dbbf1496a851aa6dfd38"
+hash = "c68c41cb6a50decb7d9f8a378e435c1d4280f5fb75f5dbbf1496a851aa6dfd38"
 
 [[files]]
 file = "kubejs/startup_scripts/tooltip/computercraft.js"
-hash = "2bf4e4f91c109c745f23337cfceb5e5620122964a6c6f6576d4bd2b725bc348c"
+hash = "0b71d7cfe3309f12115778e09a80e98b425fb8d24015e0c044e63e0b8038ad5f"
+hash = "0b71d7cfe3309f12115778e09a80e98b425fb8d24015e0c044e63e0b8038ad5f"
 
 [[files]]
 file = "kubejs/startup_scripts/tooltip/create.js"
-hash = "6c4984063d0b48b4292ed24372e1e7831a1afe882493ed1e131f2c1ad49f7e9a"
+hash = "8165e9f8ca0f5bddc502b32288a190d1d911b22a615b10f38b4817b14c0bd49b"
+hash = "8165e9f8ca0f5bddc502b32288a190d1d911b22a615b10f38b4817b14c0bd49b"
 
 [[files]]
 file = "kubejs/startup_scripts/tooltip/createastral.js"
-hash = "c54464a57a336b191d0ab5a5924ada658b88051ca7ebff54ec03f24ffaf3305c"
+hash = "acb0fa58f3d64582c7e34d0c0235cbd38461e66b71c11e0a309dc7ba51e560d6"
+hash = "acb0fa58f3d64582c7e34d0c0235cbd38461e66b71c11e0a309dc7ba51e560d6"
 
 [[files]]
 file = "kubejs/startup_scripts/tooltip/createbigcannons.js"
-hash = "bc57414859a299ac3c2a6bd2cc13e0165038d47a8641e8c8a2cc9f954eef034a"
+hash = "f88a91b0b153917fb33caf47e4d38fc3fee90612a8faa72a532626645308b819"
+hash = "f88a91b0b153917fb33caf47e4d38fc3fee90612a8faa72a532626645308b819"
 
 [[files]]
 file = "kubejs/startup_scripts/tooltip/extended_drawers.js"
-hash = "1f4f74f69cc91ccba7abebb7a71729cfe45b8ca3fb1b8d9435f06289e3d59256"
+hash = "f0e85b0da739dc2149cae562735f92618d57cb92391d92f371c0795a4a5e99a2"
+hash = "f0e85b0da739dc2149cae562735f92618d57cb92391d92f371c0795a4a5e99a2"
 
 [[files]]
 file = "kubejs/startup_scripts/tooltip/extractinator.js"
-hash = "25b540f96f0fd7b03908bab7f691acffafc20700e97553e604acb73fb21b4a7c"
+hash = "2aebc2487289d1e0892d31bc132ed23c397836485e9f32c5f4f456306ba53103"
+hash = "2aebc2487289d1e0892d31bc132ed23c397836485e9f32c5f4f456306ba53103"
 
 [[files]]
 file = "kubejs/startup_scripts/tooltip/kubejs.js"
-hash = "0c4302949ba4e9a40d7f70b7e59e6f9ae7a8be5ae02f5ac80c9907e42ecb15c8"
+hash = "9f9a3081874b13b4d62836baacf784a6bb489ce828123439ec59d2509f57c67d"
+hash = "9f9a3081874b13b4d62836baacf784a6bb489ce828123439ec59d2509f57c67d"
 
 [[files]]
 file = "kubejs/startup_scripts/tooltip/minecraft.js"
-hash = "336be25783c62e347ccbbfc0768c45b30ad24fbe519de604a60eee98f9a7181b"
+hash = "3c03812f12b7501eb2429355c16d28ee329f9d723a21e940e1aa0f8eaed2e4db"
+hash = "3c03812f12b7501eb2429355c16d28ee329f9d723a21e940e1aa0f8eaed2e4db"
 
 [[files]]
 file = "kubejs/startup_scripts/tooltip/tconstruct.js"
-hash = "057506971bb48b7b306155f6d94b7401de2ee7a6fea4cde1e4462afb394a5fdb"
+hash = "1ec4d3ef25e538877c9d6be5c8bdcdd230afdb76960e4931664f79f4451ce12c"
+hash = "1ec4d3ef25e538877c9d6be5c8bdcdd230afdb76960e4931664f79f4451ce12c"
 
 [[files]]
 file = "kubejs/startup_scripts/tooltip/techreborn.js"
-hash = "17d552a7276008b79fbe14c37558b9f621803abd15a16eb15afa6f23d88ddac1"
+hash = "f679a627a256a6b3d0f6a1646a82d08e7074442b0c242ba1745ef11aa34845c8"
+hash = "f679a627a256a6b3d0f6a1646a82d08e7074442b0c242ba1745ef11aa34845c8"
 
 [[files]]
 file = "kubejs/startup_scripts/tooltip/yttr.js"
-hash = "31908c490fbbc50a4999c3fa7d508582e496977363533fd0c63f473bf0c433cf"
+hash = "9f44d7c30d10c5dc0b67a70f79e1dba40afcf9e0e10aaef603bb3399a2767f5a"
+hash = "9f44d7c30d10c5dc0b67a70f79e1dba40afcf9e0e10aaef603bb3399a2767f5a"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
@@ -13495,7 +15753,8 @@ metafile = true
 
 [[files]]
 file = "mods/appleskin.pw.toml"
-hash = "bebce246ceb622c9837ce58fa130161bf9a19f3ff9b69d7eb31b5235fccea0b1"
+hash = "e49667b9ed9e64de288bfc1c1942cb0d3efdb3ae7d0607ad0c951bb34567e463"
+hash = "e49667b9ed9e64de288bfc1c1942cb0d3efdb3ae7d0607ad0c951bb34567e463"
 metafile = true
 
 [[files]]
@@ -13763,7 +16022,7 @@ metafile = true
 
 [[files]]
 file = "mods/defineds-blocks.pw.toml"
-hash = "7460b8c9165eb64ea8b444aed84709215d48853b65da15cc531f1b93d8ed4a71"
+hash = "9a84616534ffbe0b6ff38d90ea795a8618d2ed371225a16ea06043dea1708886"
 metafile = true
 
 [[files]]
