@@ -1,45 +1,46 @@
 {
-    "name": "custommachinery.createastral.stone_growth_chamber",
-    "appearance": {
-        "block": "createastral:stone_growth_chamber_dummy",
-        "running": {
-            "lightlevel": 15
-        }
+  "name": "custommachinery.createastral.stone_growth_chamber",
+  "appearance": {
+    "block": "createastral:stone_growth_chamber_dummy",
+    "running": {
+      "lightlevel": 15
+    }
+  },
+  "gui": [
+    {
+      "texture": "createastral:textures/gui/sgc_gui.png",
+      "x": 47,
+      "y": 16,
+      "type": "custommachinery:texture",
+      "width": 256,
+      "height": 192
     },
-    "gui": [
-        {
-            "texture": "createastral:textures/gui/sgc_gui.png",
-            "x": 47,
-            "y": 16,
-            "type": "custommachinery:texture",
-            "width": 256,
-            "height": 192
-        },
-        {
-            "x": 47,
-            "y": 80,
-            "type": "custommachinery:player_inventory"
-        },
-        {
-            "id": "stoneslot",
-            "x": 119,
-            "y": 38,
-            "type": "custommachinery:slot"
-        },
-        {
-            "text": "custommachinery.createastral.stone_growth_chamber.text",
-            "x": 7,
-            "y": 5,
-            "type": "custommachinery:text"
-        }
-    ],
-    "components": [
-        {
-            "type": "custommachinery:item",
-            "variant": "custommachinery:default",
-            "capacity": 64,
-            "id": "stoneslot",
-            "mode": "both"
-        }
-    ]
+    {
+      "x": 47,
+      "y": 80,
+      "type": "custommachinery:player_inventory"
+    },
+    {
+      "texture": "createastral:textures/gui/sgc_slot.png",
+      "id": "stoneslot",
+      "x": 119,
+      "y": 38,
+      "type": "custommachinery:slot"
+    },
+    {
+      "text": "custommachinery.createastral.stone_growth_chamber.text",
+      "x": 7,
+      "y": 5,
+      "type": "custommachinery:text"
+    }
+  ],
+  "components": [
+    {
+      "type": "custommachinery:item",
+      "variant": "custommachinery:default",
+      "capacity": 64,
+      "id": "stoneslot",
+      "mode": "both"
+    }
+  ]
 }
