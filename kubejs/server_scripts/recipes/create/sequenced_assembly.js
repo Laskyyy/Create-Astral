@@ -1333,7 +1333,7 @@
           ]),
         ],
       )
-      .transitionalItem("createbigcannons:nethersteel_screw_breech")
+      .transitionalItem("createastral:incomplete_shimmer_amplifier")
       .loops(6);
     event.recipes.create
       .sequenced_assembly(
