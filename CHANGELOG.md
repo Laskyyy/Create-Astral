@@ -83,6 +83,7 @@ The format is a slight modification of the [Keep a Changelog](https://keepachang
 
 #### Behind-the-scenes
 
+- Overhauled the in-game credits menu to include more people and generally look nicer and be more organised.
 - Completely overhauled the file structure for Astral's own code, making it much more consistent and readable, and adding type checking. This has also potentially fixed countless bugs and missing recipes, and may have broken others.
 - `server.packwizignore` now excludes FancyMenu configs as well as the new location for textures within the KubeJS folder.
 - Clarified a few terms more explicitly in `LICENSE.md`.
