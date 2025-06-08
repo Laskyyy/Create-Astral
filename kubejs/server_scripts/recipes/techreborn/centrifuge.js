@@ -85,11 +85,12 @@
         time: 2500,
       },
       {
-        input: [{ item: "glowstone", count: 4 }, { item: "techreborn:cell" }],
+        input: [{ item: "yttr:glowing_gas", count: 1 }, { item: "techreborn:cell" }],
         output: [
-          { item: "minecraft:gold_nugget", count: 5 },
-          { item: "minecraft:redstone_dust" },
+          { item: "minecraft:gold_nugget", count: 6 },
+          { item: "minecraft:glowstone_dust", count: 3 },
           { item: "techreborn:cell", nbt: { fluid: "techreborn:helium" } },
+          { item: "minecraft:glass_bottle" },
         ],
         power: 6,
         time: 600,
