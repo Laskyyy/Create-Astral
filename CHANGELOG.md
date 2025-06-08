@@ -18,8 +18,14 @@ The format is a slight modification of the [Keep a Changelog](https://keepachang
 
 #### Gameplay-changing
 
+- Added Piglin Towers, a new structure found on Mars.
+- Added various new structures on the Moon.
+- Added various new structures in the ??? dimension.
+- Added cheese-related blocks for all your cheese needs.
 - Added Ambrosia, Bar of Chocolate, Blaze Fries, Blaze Fries and Cod, Blaze Rods, Chocolate Ice Cream, Cod 'n' Blaze, Fried Cod, Gamer's Delight, and Ice Cream Sandwich foods via Astral Foods.
 - Added a Recovery Orb edible which functions like a pre-nerf Seared Potato, intended for use to recover lost items after dying on the Moon.
+- Added a new mid-game upgrade slot bonus for Hephaestus tools - Spacious, which needs a 16³ Spatial Component from Applied Energistics 2.
+- Added a new late-game ability slot bonus for Hephaestus tools - Amplified, which needs a Shimmer Amplifier.
 
 #### QOL
 
@@ -48,9 +54,14 @@ The format is a slight modification of the [Keep a Changelog](https://keepachang
 - Earthslime and Skyslime Saplings are now craftable with Oak Saplings and the respective type of slime fluid.
 - Normal Slime Balls can now be made using Lime Dye and any other type of slimeball in a mixer.
 - Old Cherry Saplings can now be made by haunting a normal Cherry Sapling.
+- Old Cherry Saplings can now sometimes drop from normal Cherry trees.
 - Fish slices can now be melted to give blood at 80% efficiency to give use for sawing fish to get bonemeal.
 - Moon Stone can now be manufactured pre-Moon using a sequenced assembly (assuming access to Shimmer).
 - Molten Netherite can now be made wit Molten Debris and Molten Gold in a mixer.
+- Mycelium now has a new recipe using Cheese.
+- Seared Tanks now use Gold Sheets in their recipes instead of Brass Sheets.
+- Scorched Tanks now have a recipe similar to that of their early-game counterpart, Seared Tanks, but with Brass Sheets instead of Gold Sheets.
+- Scorched Bricks now require Sap or Slime Balls, just like Seared Bricks, for parity with said counterpart.
 
 #### QOL
 
@@ -58,7 +69,8 @@ The format is a slight modification of the [Keep a Changelog](https://keepachang
 - Slightly adjusted the positions for some of the quests near the end of Chapter 5 to allow other quests some room to breathe.
 - Added a tooltip to the Nether Engine from Immersive Aircraft to clarify that it is intended to not have a recipe.
 - The recipe for Shimmery Compound now takes half the resources and time, and gives half the output - this is to prevent the mixer seizing up after completing each recipe.
-- Gold Bars can now be put into Hephaestus Cast Chests.
+- Gold Bars (not to be confused with Gold Ingots) can now be put into Hephaestus Cast Chests.
+- The Hephaestus Encyclopedia entries now say exactly what each tool part does.
 
 #### Bug Patches
 
@@ -72,6 +84,13 @@ The format is a slight modification of the [Keep a Changelog](https://keepachang
 - The Automate Blood Or Slime quest now only requires one criteria to be completed.
 - The Biomatter quest in Chapter 4 no longer requires the player to automate Netherite.
 - Modified the dependencies of the Distillation Tower area of Chapter 4 to be more sensible.
+- Fixed the issue with the Moonset Marimo duplication recipe not giving a net gain of anything.
+- Fixed a loot table not generating on Mars.
+- Fixed the Reach and Leaping modifiers on Hephaestus items not being obtainable due to recipe conflicts.
+- Fixed the Tool Belt upgrade for Hephaestus armour not being obtainable due to recipe conflicts.
+- Fixed the Killager modifier for Hephaestus weapons not being effective against Lunarians and Corrupted Lunarians.
+- Fixed Desh, Ostrum, and Calorite tools not being able to be repaired with their ingots.
+- The Distillation Tower and Shimmer Refinery multiblocks will now work properly with normal, liquid, and creative Blaze Burners.
 
 #### Minor mod updates
 
@@ -88,6 +107,8 @@ The format is a slight modification of the [Keep a Changelog](https://keepachang
 - `server.packwizignore` now excludes FancyMenu configs as well as the new location for textures within the KubeJS folder.
 - Clarified a few terms more explicitly in `LICENSE.md`.
 - Cleaned up the main `README.md` file in the repository. Now it redirects to the other CAPITALISED markdown documents for further specific information.
+- Added index.toml to .gitignore and wiped it clean to prevent merge conflicts from sometimes bricking dev environments. Packwiz automatically generates index.toml when it is run, so this should only affect the load time of the first time you run packwiz (which will be significantly longer than normal as packwiz generates index.toml).
+- Added packwiz binaries to .gitignore to prevent them from reappearing in the GitHub repository in the future.
 
 ### REMOVALS
 
