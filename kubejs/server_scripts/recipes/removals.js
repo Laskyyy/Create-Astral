@@ -652,6 +652,7 @@
       { id: "vinery:wood_fired_oven_cooking/toast" },
       // techreborn
       { output: "techreborn:sulfur" },
+      { output: "techreborn:iridium_ingot" },
       {
         input: "minecraft:soul_soil",
         output: "techreborn:coal_dust",
