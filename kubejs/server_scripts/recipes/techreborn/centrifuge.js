@@ -84,6 +84,16 @@
         power: 5,
         time: 2500,
       },
+      {
+        input: [{ item: "glowstone", count: 4 }, { item: "techreborn:cell" }],
+        output: [
+          { item: "minecraft:gold_nugget", count: 5 },
+          { item: "minecraft:redstone_dust" },
+          { item: "techreborn:cell", nbt: { fluid: "techreborn:helium" } },
+        ],
+        power: 6,
+        time: 600,
+      },
     ];
     centrifugeRecipes.forEach((recipe) => {
       event.custom({
