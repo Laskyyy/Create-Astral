@@ -694,6 +694,7 @@
       { id: "tconstruct:tools/modifiers/ability/tool_belt_5" },
       { id: "tconstruct:tools/modifiers/ability/tool_belt_6" },
       { id: "tconstruct:tools/modifiers/ability/unbreakable" },
+      { id: "tconstruct:tools/modifiers/defense/turtle_shell" },
       { id: "tconstruct:tools/modifiers/slotless/draconic_from_head" },
       { id: "tconstruct:tools/modifiers/slotless/draconic_from_scales" },
       { id: "tconstruct:tools/modifiers/slotless/resurrected" },
