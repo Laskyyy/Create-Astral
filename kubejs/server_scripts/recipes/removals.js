@@ -648,6 +648,7 @@
       // vinery
       { output: "vinery:wine_rack_1" },
       { output: "vinery:grapevine_pot" },
+      { output: "vinery:dough" },
       { id: "vinery:wood_fired_oven_cooking/toast" },
       // techreborn
       { output: "techreborn:sulfur" },
@@ -678,6 +679,7 @@
       // farmers delight
       { type: "farmersdelight:cutting", input: "minecraft:gravel" },
       { type: "farmersdelight:cutting", input: "farmersdelight:wild_rice" },
+      { output: "farmersdelight:wheat_dough" },
       // Hephaestus modifiers
       { id: "tconstruct:tools/modifiers/ability/double_jump" },
       { id: "tconstruct:tools/modifiers/ability/luck_level_1" },

@@ -11,7 +11,7 @@
     /** @type {WoodFiredOvenRecipe[]} */
     const woodFiredOvenRecipes = [
       {
-        input: [{ tag: "minecraft:dough" }, { tag: "minecraft:dough" }, { item: "minecraft:sugar" }],
+        input: [{ item: "create:dough" }, { item: "create:dough" }, { item: "minecraft:sugar" }],
         output: "vinery:toast",
         outputCount: 3,
         xp: 0.35,
