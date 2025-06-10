@@ -648,6 +648,7 @@
       // vinery
       { output: "vinery:wine_rack_1" },
       { output: "vinery:grapevine_pot" },
+      { id: "vinery:wood_fired_oven_cooking/toast" },
       // techreborn
       { output: "techreborn:sulfur" },
       {
