@@ -521,7 +521,6 @@
       { output: "dbe:steel_ingot" },
       { output: "dbe:copper_coil" },
       { output: "farmersdelight:cooking_pot" },
-      { output: "campanion:rope" },
       { output: "immersive_aircraft:boiler" },
       { output: "immersive_aircraft:engine" },
       { output: "immersive_aircraft:nether_engine" },
