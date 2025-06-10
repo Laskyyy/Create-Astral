@@ -653,6 +653,7 @@
       // techreborn
       { output: "techreborn:sulfur" },
       { output: "techreborn:iridium_ingot" },
+      { output: "techreborn:iridium_block" },
       {
         input: "minecraft:soul_soil",
         output: "techreborn:coal_dust",
