@@ -1,4 +1,4 @@
-(function vineryWoodFiredOvenRecipes(event) {
+(function vineryWoodFiredOvenRecipes() {
   onEvent("recipes", (event) => {
     /**
      * @typedef WoodFiredOvenRecipe
