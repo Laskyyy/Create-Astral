@@ -686,6 +686,31 @@
       { original: "techreborn:carbon_plate", replaceWith: "techreborn:carbon_mesh" },
       { original: "techreborn:lazurite_plate", replaceWith: "create:lapis_sheet" },
       { original: "ae2:sky_stone_block", replaceWith: "ad_astra:sky_stone" },
+      {
+        predicate: { input: "#c:dough" },
+        original: "#c:dough",
+        replaceWith: "create:dough",
+      },
+      {
+        predicate: { input: "#minecraft:dough" },
+        original: "#minecraft:dough",
+        replaceWith: "create:dough",
+      },
+      {
+        predicate: { input: "#c:dough/wheat" },
+        original: "#c:dough/wheat",
+        replaceWith: "create:dough",
+      },
+      {
+        predicate: { input: "farmersdelight:wheat_dough" },
+        original: "farmersdelight:wheat_dough",
+        replaceWith: "create:dough",
+      },
+      {
+        predicate: { input: "vinery:dough" },
+        original: "vinery:dough",
+        replaceWith: "create:dough",
+      },
     ];
     replacements.forEach((replacement) => {
       if (replacement.predicate) {
