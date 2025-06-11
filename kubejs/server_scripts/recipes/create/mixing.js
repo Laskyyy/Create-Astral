@@ -1365,7 +1365,6 @@
           Item.of("minecraft:glow_ink_sac", 1),
           "astraladditions:lune_shroom",
         ],
-        heat: "heated",
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:2s}]}'),
