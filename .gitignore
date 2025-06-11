@@ -17,6 +17,5 @@ kubejs/exported
 
 # Direnv
 .direnv
-index.toml
 packwiz.exe
 packwiz
