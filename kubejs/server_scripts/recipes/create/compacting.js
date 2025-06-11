@@ -433,6 +433,10 @@
         output: "astralfoods:fried_cod",
         inputs: ["minecraft:cod", { fluid: "createaddition:seed_oil", amount: 100 * mB }],
       },
+      {
+        output: "createbigcannons:steel_screw_lock",
+        inputs: [Item.of("astraladditions:steel_ring", 2)],
+      },
     ];
     compactingRecipes.forEach((recipe) => {
       event.recipes.createCompacting(recipe.output, recipe.inputs).heatRequirement(recipe.heat ?? "");
