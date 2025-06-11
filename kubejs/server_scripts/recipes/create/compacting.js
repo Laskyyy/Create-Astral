@@ -436,6 +436,7 @@
       {
         output: "createbigcannons:steel_screw_lock",
         inputs: [Item.of("astraladditions:steel_ring", 2)],
+        heat: "heated",
       },
     ];
     compactingRecipes.forEach((recipe) => {
