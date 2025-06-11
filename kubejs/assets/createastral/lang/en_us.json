@@ -121,6 +121,8 @@
   "tooltip.techreborn.tin_ingot": "This metal is found in the overworld, most commonly at Y=70 ",
   "tooltip.techreborn.tin_nugget": "This metal is found in the overworld, most commonly at Y=70 ",
 
+  "tooltip.travelersbackpack.abilities_disabled": "Travelers Backpack abilities are disabled by default!",
+
   "tooltip.ae2.quartz_ore": "Found underground on the moon",
   "tooltip.ae2.deepslate_quartz_ore": "Found underground on the moon",
   "tooltip.ae2.certus_quartz": "Found underground on the moon.",
