@@ -1,18 +1,19 @@
 {
-    "recommendations": [
-        // Grammar checking in Markdown files
-        "valentjn.vscode-ltex",
-        // Formatter
-        "esbenp.prettier-vscode",
-        // Makes errors more visible
-        "usernamehw.errorlens",
-        // Even better git integration
-        "eamodio.gitlens",
-        // Syntax highlighting etc. for .json5 files (used by some mods for configuration)
-        "mrmlnc.vscode-json5",
-        // for viewing nbt files
-        "misodee.vscode-nbt",
-        // for special comment highlighting
-        "aaron-bond.better-comments"
-    ]
+  "recommendations": [
+    // Grammar checking in Markdown files
+    "valentjn.vscode-ltex",
+    // Formatter
+    "esbenp.prettier-vscode",
+    "EditorConfig.EditorConfig",
+    // Makes errors more visible
+    "usernamehw.errorlens",
+    // Even better git integration
+    "eamodio.gitlens",
+    // Syntax highlighting etc. for .json5 files (used by some mods for configuration)
+    "mrmlnc.vscode-json5",
+    // for viewing nbt files
+    "misodee.vscode-nbt",
+    // for special comment highlighting
+    "aaron-bond.better-comments"
+  ]
 }
