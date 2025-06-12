@@ -591,30 +591,6 @@
         replaceWith: "#computercraft:monitor",
       },
       { original: "techreborn:lapotronic_orb", replaceWith: "ad_astra:calorite_plate" },
-      {
-        predicate: { mod: "quarrymod" },
-        original: "techreborn:iridium_ingot",
-        replaceWith: "passivepiglins:piglin_coin",
-      },
-      {
-        predicate: { mod: "quarrymod" },
-        original: "techreborn:advanced_alloy_plate",
-        replaceWith: "passivepiglins:piglin_coin",
-      },
-      { predicate: { mod: "quarrymod" }, original: "techreborn:peridot_plate", replaceWith: "ad_astra:steel_plate" },
-      { predicate: { mod: "quarrymod" }, original: "techreborn:silicon_plate", replaceWith: "techreborn:carbon_mesh" },
-      { predicate: { mod: "quarrymod" }, original: "techreborn:lapis_plate", replaceWith: "create:lapis_sheet" },
-      {
-        predicate: { mod: "quarrymod" },
-        original: "techreborn:peridot_storage_block",
-        replaceWith: "createastral:olivine_sheet",
-      },
-      { predicate: { mod: "quarrymod" }, original: "techreborn:titanium_plate", replaceWith: "ad_astra:steel_plate" },
-      {
-        predicate: { mod: "quarrymod" },
-        original: "techreborn:tungstensteel_plate",
-        replaceWith: "create:shadow_steel",
-      },
       { predicate: { mod: "phonos" }, original: "minecraft:iron_ingot", replaceWith: "techreborn:tin_ingot" },
       { predicate: { mod: "farmersdelight" }, original: "minecraft:iron_ingot", replaceWith: "techreborn:tin_ingot" },
       {
