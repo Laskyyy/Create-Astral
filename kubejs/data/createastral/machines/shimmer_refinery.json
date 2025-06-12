@@ -8,10 +8,12 @@
   },
   "gui": [
     {
-      "texture": "custommachinery:textures/gui/base_background.png",
+      "texture": "createastral:textures/gui/refinery_gui.png",
       "x": 0,
       "y": 0,
-      "type": "custommachinery:texture"
+      "type": "custommachinery:texture",
+      "width": 256,
+      "height": 166
     },
     {
       "x": 47,
@@ -47,13 +49,13 @@
       "type": "custommachinery:progress"
     },
     {
-      "x": 236,
-      "y": 5,
+      "x": 216,
+      "y": 6,
       "type": "custommachinery:status"
     },
     {
       "text": "custommachinery.createastral.shimmer_refinery.text",
-      "x": 7,
+      "x": 31,
       "y": 5,
       "type": "custommachinery:text"
     }

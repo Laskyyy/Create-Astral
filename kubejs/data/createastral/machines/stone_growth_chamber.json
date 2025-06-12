@@ -21,10 +21,10 @@
       "type": "custommachinery:player_inventory"
     },
     {
-      "texture": "createastral:textures/gui/sgc_slot.png",
+      "texture": "createastral:textures/gui/sgc_slot",
       "id": "stoneslot",
-      "x": 119,
-      "y": 38,
+      "x": 128,
+      "y": 50,
       "type": "custommachinery:slot"
     },
     {
