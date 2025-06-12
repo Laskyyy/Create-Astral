@@ -12,7 +12,7 @@ The format is a slight modification of the [Keep a Changelog](https://keepachang
 
 - Added this changelog! Changelogs will now be much more human-readable from here on out and logged in one file on the GitHub repository for anyone to view.
 
-#### Mod Additions
+#### Mod additions
 
 > _Nothing to see here yet..._
 
@@ -27,7 +27,7 @@ The format is a slight modification of the [Keep a Changelog](https://keepachang
 - Added a new mid-game upgrade slot bonus for Hephaestus tools - Spacious, which needs a 16³ Spatial Component from Applied Energistics 2.
 - Added a new late-game ability slot bonus for Hephaestus tools - Amplified, which needs a Shimmer Amplifier.
 
-#### QOL
+#### Quality of life
 
 - Re-added the in-game changelogs for 2.1.1 and 2.1.2, and preserved the changelog for 2.1.3.
 
@@ -62,17 +62,25 @@ The format is a slight modification of the [Keep a Changelog](https://keepachang
 - Seared Tanks now use Gold Sheets in their recipes instead of Brass Sheets.
 - Scorched Tanks now have a recipe similar to that of their early-game counterpart, Seared Tanks, but with Brass Sheets instead of Gold Sheets.
 - Scorched Bricks now require Sap or Slime Balls, just like Seared Bricks, for parity with said counterpart.
+- All three dough types have been harmonised into `create:dough` - meaning there are no longer recipes to make the other two types of dough, and all recipes now accept `create:dough`.
+- Re-enabled the recipe for Rope from Campanion as it is the only rope that can be used to make rope bridges.
+- Added a new recipe for Zinc Sheet Metal from Create Deco as its recipe was unintentionally removed when unifying the Zinc Sheets in 2.1.3.
 
-#### QOL
+#### Quality of life
 
 - The Chapter 4 "Observe Piglin" quest now clarifies that they are found in bastions.
 - Slightly adjusted the positions for some of the quests near the end of Chapter 5 to allow other quests some room to breathe.
 - Added a tooltip to the Nether Engine from Immersive Aircraft to clarify that it is intended to not have a recipe.
-- The recipe for Shimmery Compound now takes half the resources and time, and gives half the output - this is to prevent the mixer seizing up after completing each recipe.
+- The recipe for Shimmery Compound now takes half the resources and time, and gives half the output - this is to prevent the mixer seizing up after completing each recipe and does not affect yield ratios.
 - Gold Bars (not to be confused with Gold Ingots) can now be put into Hephaestus Cast Chests.
 - The Hephaestus Encyclopedia entries now say exactly what each tool part does.
+- Removed most of the remaining British English vocabulary from `/kubejs/assets/createastral/lang/en_us.json` and replaced it with the equivalent United States English spellings.
+- Adjusted capitalisation in numerous quest descriptions and subtitles to be more consistent and to make capitalised words less overused.
+- Added tooltips to Traveler's Backpacks that have abilities to clarify that abilities are disabled by default. Bear in mind that they can be re-enabled in the config file.
+- Added a description to some of the quests in the Astral Signals questline to explain how to finish processing data drives as REI doesn't want to display the recipe.
+- The bedrock stone generator quest now tries to clarify that it needs to specifically be a stone generator and not a cobblestone generator, and also attempts to explain how to make a stone generator.
 
-#### Bug Patches
+#### Bug patches
 
 - Fixed missing text in the in-game changelog menu.
 - Patched a Copper duplication bug involving Cut Copper blocks and waxing/melting them.
@@ -86,11 +94,19 @@ The format is a slight modification of the [Keep a Changelog](https://keepachang
 - Modified the dependencies of the Distillation Tower area of Chapter 4 to be more sensible.
 - Fixed the issue with the Moonset Marimo duplication recipe not giving a net gain of anything.
 - Fixed a loot table not generating on Mars.
-- Fixed the Reach and Leaping modifiers on Hephaestus items not being obtainable due to recipe conflicts.
-- Fixed the Tool Belt upgrade for Hephaestus armour not being obtainable due to recipe conflicts.
+- Fixed the Leaping modifier on Hephaestus items not being obtainable due to recipe conflicts.
+- Fixed the Reach modifier on Hephaestus items not being obtainable due to an item mislabelled as a tag in its recipe.
+- Fixed the Tool Belt upgrade for Hephaestus armour not being obtainable due to an incorrect item tag in its recipe.
 - Fixed the Killager modifier for Hephaestus weapons not being effective against Lunarians and Corrupted Lunarians.
 - Fixed Desh, Ostrum, and Calorite tools not being able to be repaired with their ingots.
-- The Distillation Tower and Shimmer Refinery multiblocks will now work properly with normal, liquid, and creative Blaze Burners.
+- The Distillation Tower and Shimmer Refinery multiblocks will now work properly with normal, liquid, and creative Blaze Burners. Do note that due to a technical limitation, these multiblocks do not care what heat state a **creative** Blaze Burner is in, all recipes will work with any heat-state creative burner. This will not affect survival play.
+- Fixed Hepatizon and Queen's Slime Recipes using different ratios of inputs at different heat levels.
+- Fixed a recipe conflict between Milk Bread and Toast in the Vinery Wood Fired Oven.
+- Amended Chapter 3's Automate Gold quest to provide accurate information about washing Soul Sand and Soil.
+- Fixed a recipe conflict between the Ricochet and Replenish enchanted books.
+- Fixed a recipe conflict between the Steel Screw Lock and the Steel Ring.
+- Amended Chapter 3's Steel quests near the end of the chapter to stop spreading residual misinformation from 2.0 about Steel.
+- Fixed a recipe conflict with the Lune-Shroom-boosted Shimmer recipe and the similar non-boosted recipe by removing the heat requirement for the Lune-Shroom-boosted recipe.
 
 #### Minor mod updates
 
@@ -107,7 +123,7 @@ The format is a slight modification of the [Keep a Changelog](https://keepachang
 - `server.packwizignore` now excludes FancyMenu configs as well as the new location for textures within the KubeJS folder.
 - Clarified a few terms more explicitly in `LICENSE.md`.
 - Cleaned up the main `README.md` file in the repository. Now it redirects to the other CAPITALISED markdown documents for further specific information.
-- Added index.toml to .gitignore and wiped it clean to prevent merge conflicts from sometimes bricking dev environments. Packwiz automatically generates index.toml when it is run, so this should only affect the load time of the first time you run packwiz (which will be significantly longer than normal as packwiz generates index.toml).
+- Wiped index.toml clean and added a clause in CONTRIBUTING.md asking contributors not to commit changes to index.toml. This has been done to cut down on headache-inducing merge conflicts that arise as a result of changes to this file. Packwiz automatically generates index.toml when it is run, so this should only affect the load time of the first time you run packwiz (which will be significantly longer than normal as packwiz generates index.toml).
 - Added packwiz binaries to .gitignore to prevent them from reappearing in the GitHub repository in the future.
 
 ### REMOVALS
@@ -121,6 +137,7 @@ The format is a slight modification of the [Keep a Changelog](https://keepachang
 
 - Removed Released Coolant (fluid) as it wasn't used for anything.
 - Deprecated the original Stone Growth Chamber structure from 2.1 - please use one of the new structures instead.
+- Removed the recipe for the Turtle Shell modifier for Hephaestus armour as it has a broken attribute and hence does nothing.
 
 #### Behind-the-scenes
 
