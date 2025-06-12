@@ -142,3 +142,243 @@ The format is a slight modification of the [Keep a Changelog](https://keepachang
 #### Behind-the-scenes
 
 - Removed the packwiz binaries from the repository to decrease the size of it.
+
+## 2.1.3 [Current Release]
+
+### ADDITIONS
+
+#### Mod additions
+
+> _Changelog construction in progress..._
+
+#### Gameplay-changing
+
+> _Changelog construction in progress..._
+
+#### Quality of life
+
+> _Changelog construction in progress..._
+
+#### Behind-the-scenes
+
+> _Changelog construction in progress..._
+
+### CHANGES
+
+#### Major mod updates
+
+> _Changelog construction in progress..._
+
+#### Gameplay-changing
+
+> _Changelog construction in progress..._
+
+#### Quality of life
+
+> _Changelog construction in progress..._
+
+#### Bug patches
+
+> _Changelog construction in progress..._
+
+#### Minor mod updates
+
+> _Changelog construction in progress..._
+
+#### Behind-the-scenes
+
+> _Changelog construction in progress..._
+
+### REMOVALS
+
+#### Mod removals
+
+> _Changelog construction in progress..._
+
+#### Gameplay-changing
+
+> _Changelog construction in progress..._
+
+#### Behind-the-scenes
+
+> _Changelog construction in progress..._
+
+## 2.1.2
+
+### ADDITIONS
+
+#### Mod additions
+
+> _Changelog construction in progress..._
+
+#### Gameplay-changing
+
+> _Changelog construction in progress..._
+
+#### Quality of life
+
+> _Changelog construction in progress..._
+
+#### Behind-the-scenes
+
+> _Changelog construction in progress..._
+
+### CHANGES
+
+#### Major mod updates
+
+> _Changelog construction in progress..._
+
+#### Gameplay-changing
+
+> _Changelog construction in progress..._
+
+#### Quality of life
+
+> _Changelog construction in progress..._
+
+#### Bug patches
+
+> _Changelog construction in progress..._
+
+#### Minor mod updates
+
+> _Changelog construction in progress..._
+
+#### Behind-the-scenes
+
+> _Changelog construction in progress..._
+
+### REMOVALS
+
+#### Mod removals
+
+> _Changelog construction in progress..._
+
+#### Gameplay-changing
+
+> _Changelog construction in progress..._
+
+#### Behind-the-scenes
+
+> _Changelog construction in progress..._
+
+## 2.1.1
+
+### ADDITIONS
+
+#### Mod additions
+
+> _Changelog construction in progress..._
+
+#### Gameplay-changing
+
+> _Changelog construction in progress..._
+
+#### Quality of life
+
+> _Changelog construction in progress..._
+
+#### Behind-the-scenes
+
+> _Changelog construction in progress..._
+
+### CHANGES
+
+#### Major mod updates
+
+> _Changelog construction in progress..._
+
+#### Gameplay-changing
+
+> _Changelog construction in progress..._
+
+#### Quality of life
+
+> _Changelog construction in progress..._
+
+#### Bug patches
+
+> _Changelog construction in progress..._
+
+#### Minor mod updates
+
+> _Changelog construction in progress..._
+
+#### Behind-the-scenes
+
+> _Changelog construction in progress..._
+
+### REMOVALS
+
+#### Mod removals
+
+> _Changelog construction in progress..._
+
+#### Gameplay-changing
+
+> _Changelog construction in progress..._
+
+#### Behind-the-scenes
+
+> _Changelog construction in progress..._
+
+## 2.1
+
+### ADDITIONS
+
+#### Mod additions
+
+> _Changelog construction in progress..._
+
+#### Gameplay-changing
+
+> _Changelog construction in progress..._
+
+#### Quality of life
+
+> _Changelog construction in progress..._
+
+#### Behind-the-scenes
+
+> _Changelog construction in progress..._
+
+### CHANGES
+
+#### Major mod updates
+
+> _Changelog construction in progress..._
+
+#### Gameplay-changing
+
+> _Changelog construction in progress..._
+
+#### Quality of life
+
+> _Changelog construction in progress..._
+
+#### Bug patches
+
+> _Changelog construction in progress..._
+
+#### Minor mod updates
+
+> _Changelog construction in progress..._
+
+#### Behind-the-scenes
+
+> _Changelog construction in progress..._
+
+### REMOVALS
+
+#### Mod removals
+
+> _Changelog construction in progress..._
+
+#### Gameplay-changing
+
+> _Changelog construction in progress..._
+
+#### Behind-the-scenes
+
+> _Changelog construction in progress..._
