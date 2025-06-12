@@ -1,1 +1,6 @@
 hash-format = "sha256"
+
+[[files]]
+file = "mods/defineds-blocks.pw.toml"
+hash = "e20edcc2bcb01966e43d2fa5cfd4ce9cdb448dccda8928675fd55e1e821293f9"
+metafile = true
