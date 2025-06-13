@@ -99,7 +99,7 @@ The format is a slight modification of the [Keep a Changelog](https://keepachang
 - Fixed the Tool Belt upgrade for Hephaestus armour not being obtainable due to an incorrect item tag in its recipe.
 - Fixed the Killager modifier for Hephaestus weapons not being effective against Lunarians and Corrupted Lunarians.
 - Fixed Desh, Ostrum, and Calorite tools not being able to be repaired with their ingots.
-- The Distillation Tower and Shimmer Refinery multiblocks will now work properly with normal, liquid, and creative Blaze Burners. Do note that due to a technical limitation, these multiblocks do not care what heat state a **creative** Blaze Burner is in, all recipes will work with any heat-state creative burner. This will not affect survival play.
+- The Distillation Tower and Shimmer Refinery multiblocks will now work properly with normal, liquid, and creative Blaze Burners (for real this time). Do note that due to a technical limitation, these multiblocks do not care what heat state a **creative** Blaze Burner is in, all recipes will work with any heat-state creative burner. This will not affect survival play.
 - Fixed Hepatizon and Queen's Slime Recipes using different ratios of inputs at different heat levels.
 - Fixed a recipe conflict between Milk Bread and Toast in the Vinery Wood Fired Oven.
 - Amended Chapter 3's Automate Gold quest to provide accurate information about washing Soul Sand and Soil.
@@ -147,61 +147,132 @@ The format is a slight modification of the [Keep a Changelog](https://keepachang
 
 ### ADDITIONS
 
+- The pack has now been localised for Chinese (zh_cn).
+
 #### Mod additions
 
-> _Changelog construction in progress..._
+> _Nothing to see here yet..._
 
 #### Gameplay-changing
 
-> _Changelog construction in progress..._
+- Added Marimo (moss balls), providing automations for many vanilla plant-based items like Sea Grass, Rooted Dirt and Sea Pickles.
+- Added Shimmer Marimo, providing a new recipe for Shimmer.
+- Added Moonset Marimo, providing difficult recipes for items like Molten Ender, Moonset Crystal and Chorus Flowers.
+- Added Snowy Marimo, providing new recipes for various Chapter 4 materials and Powder Snow.
+- Added Ender Marimo, providing new recipes for various Chapter 6 materials.
+- Added a new structure, the Purpur Fortress, to Chapter 6's dimension, with a chance to find a Microphysical Probe.
+- Added Aurorite Blocks, used to build a Glacio portal.
+- Added a Horse item, generating Horse products without a Horse.
+- Added a bunch of new spices, beers, and wines as food items.
 
 #### Quality of life
 
-> _Changelog construction in progress..._
+> _Nothing to see here yet..._
 
 #### Behind-the-scenes
 
-> _Changelog construction in progress..._
+> _Nothing to see here yet..._
 
 ### CHANGES
 
 #### Major mod updates
 
-> _Changelog construction in progress..._
+- Updated Astral Additions to 1.4
+  - REI support for the Desizer, Chromatic Vacuum and new Shimmer Transmutation.
+  - Lune Shrooms now grow vertically rather than on the same Y level.
+  - Bulba Root now regrows properly when cut.
+  - Desizer Casing blocks are now unified into a single dynamic block.
 
 #### Gameplay-changing
 
-> _Changelog construction in progress..._
+- Revamped Chapter 4 and Chapter 5 pain points, like the Oil/Separation Agent/Hellfire/Nitrogen/Refined Shimmer recipe line, adding new recipe options and buffing/fixing some existing ones.
+- Revamped Chapter 6 pain points - Enderslime Crystal is now automatable using Create, Yttric Centrifuge no longer operates at a snail's pace.
+- Added a recipe for the Milk Jar, providing an easy method of generating Milk without a Cow.
+- Added alternate recipes using nuggets for all alloying recipes as AE2 autocrafting has issues with liquids.
+- Added unheated mixer recipe with nuggets for Bronze, keeping the two ingots of Bronze per one ingot of Tin and Copper ratio.
+- Added heated recipes with nuggets for Brass, Amethyst Brass, Electrum, Slimesteel, Queen's Slime, Manyullyn, and Hepatizon.
+- Replaced the heated recipe for Pig Iron, changing it from ingots to nuggets, as there was already a superheated recipe with ingots.
+- Replaced the Tech Reborn Block Placer recipe with something that makes more sense.
+- Re-added recipes for the Tech Reborn Block Breaker and Player Detector.
+- Added a Sawing recipe to turn Bone Blocks into Skeleton Skulls.
+- Added a recipe for crafting 4 Chests with 8 Logs.
+- Added a recipe for Rich Soil by washing Compost, making Rich Soil much easier to obtain and automate.
+- Added a deploying recipe for deploying Blaze Heads on to Empty Blaze Burners.
 
 #### Quality of life
 
-> _Changelog construction in progress..._
+- Swapped the outputs of compacting a Wet Sponge and Sand -> Clay and dry Sponge so that it's possible to filter the Basin for Clay.
+- Clarified in the Chapter 3 quest for Lamps that Coal Dust can also be made using Crushing Wheels.
+- Unhid mob heads from REI since they are obtainable and useful for Hephaestus modifiers.
+- Hid the Yttr Project Tables from REI since they're replaced by the Project Table mod.
+- Hid sequenced assembly transition items from REI.
+- Hid Custom Machinery dummy machine blocks from REI.
+- Hid uncraftable potion fluids from Hephaestus and Traveler's Backpacks.
+- Added Create potion fluid entries to REI.
+- Removed duplicate REI groups and added new groups:
+  - Analogously Decrypted Data Drive
+  - Parallel Decrypted Data Drive
+  - Microphysically Decrypted Data Drive
+  - Potion Fluid
+  - Splash Potion Fluid
+  - Lingering Potion Fluid
+  - Package
+  - Seared Anvil
+  - Scorched Anvil
+  - Slimeskull
+  - Fluid Cell
+  - Mercurial Potion
+  - Mercurial Splash Potion
+- Added Foundry, Smeltery, and Melter blocks to the list of wrenchable blocks.
 
 #### Bug patches
 
-> _Changelog construction in progress..._
+- Fixed the infamous Hephaestus "white/missing texture bug" that occurred consistently on certain systems by overriding ModernFix's "faster_texture_loading" mixin.
+- Some Estrogen recipes (Patches) that were previously non-functional now have correct recipes.
+- Fixed a bug where JourneyMap user config would be overwritten when updating the modpack.
+- Fixed the superheated recipe for Amethyst Bronze making the same amount as the heated recipe but taking three times longer, by doubling the output and lowering the time to mix compared to the heated recipe.
+- Fixed a recipe conflict with the Rose Gold heated recipe by making it use nuggets to differentiate it from unheated or superheated.
+- Melting Steel Blocks, Steel Ingots, and Bronze Ingots now gives the correct amount of fluid.
+- Fixed some Molten Ostrum recipes not working due to incorrect namespaces.
+- Fixed Yttr Lamps converting into colourless non-Inverted Lamps when mined.
+- Fixed the Yttr Lamp inversion recipe consuming the Redstone Torch, fixed the Lamp dyeing recipes, and made both of these recipe types shapeless.
+- Replaced most mentions of Pipelines in the questbook with Power Plants.
+- Fixed a typo in the Chapter 4 Lead Plate quest.
+- Fixed an issue where Foundries' contents would lose sync with the client.
+- Fixed a bug where players were unable to set their spawnpoint
+- Fixed the Certus Quartz recipe in the Industrial Centrifuge outputting a non-existent Fluid Cell as a byproduct, causing the outputted Empty Cells to be unstackable.
+- Fixed the Distillation Tower not recognising Liquid Blaze Burners (hindsight: wasn't actually fixed).
+- Fixed a recipe conflict in the Mechanical Crafter between crafting a single piece of Cobblestone into either Skipping Stones or Andesite Dust by making the Andesite Dust recipe manual-only.
+- Fixed a dupe where Iron Wires could be melted for a net gain of Iron.
 
 #### Minor mod updates
 
-> _Changelog construction in progress..._
+- Updated StaREI to 1.0.1.
+- Updated Defined's Blocks to 1.0.1
 
 #### Behind-the-scenes
 
-> _Changelog construction in progress..._
+- Added `server.packwizignore` to `.packwizignore` so that it doesn't get included in client packs.
+- Fixed the code that converts Potato Cannon projectiles so that projectiles aren't checked multiple times if they are actually projectiles, and they can no longer check if they are items or other entity types.
+- Moved some client scripts around to be sorted in a way that makes more sense.
+- Moved stuff that didn't hide things in REI out of `/kubejs/client_scripts/hide_from_rei.js`.
+- Moved the step-up fix script into its own client script.
 
 ### REMOVALS
 
 #### Mod removals
 
-> _Changelog construction in progress..._
+> _Nothing to see here yet..._
 
 #### Gameplay-changing
 
-> _Changelog construction in progress..._
+- Removed second Bronze superheated recipe as its worse than the existing one and not 1:1.
+- Removed the Experience Block -> 9 Experience Nuggets recipe as it is intended to be able to turn an Experience Block into 81 Experience Nuggets.
+- Removed recipes for some Tech Reborn items that were hidden in REI.
 
 #### Behind-the-scenes
 
-> _Changelog construction in progress..._
+> _Nothing to see here yet..._
 
 ## 2.1.2
 
