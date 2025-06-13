@@ -6,6 +6,10 @@ If you are a contributor, please update this file with the changes you have made
 
 The format is a slight modification of the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) style, and this project's versioning follows a similar system to [Semantic Versioning](https://semver.org/spec/v2.0.0.html), but not to the letter.
 
+Release dates attached to version numbers are in the format `YYYY/MM/DD` as per the standards of [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html), recommended by [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
+
+Please note that patch notes for versions 2.1.3 and lower are currently lacking in full information, due to poor documentation of changes before implementation of the changelog.
+
 ## 2.1.4 [Unreleased]
 
 **IMPORTANT:**
@@ -111,6 +115,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 - Fixed a recipe conflict between the Steel Screw Lock and the Steel Ring.
 - Amended Chapter 3's Steel quests near the end of the chapter to stop spreading residual misinformation from 2.0 about Steel.
 - Fixed a recipe conflict with the Lune-Shroom-boosted Shimmer recipe and the similar non-boosted recipe by removing the heat requirement for the Lune-Shroom-boosted recipe.
+- Fixed a duplication bug involving the Yttr Chute by removing its recipe and hiding it from REI.
 
 #### Minor mod updates
 
@@ -139,14 +144,14 @@ This update comes with a completely overhauled file structure for Astral's own c
 #### Game-changing
 
 - Removed Released Coolant (fluid) as it wasn't used for anything.
-- Deprecated the original Stone Growth Chamber structure from 2.1 - please use one of the new structures instead.
+- Made the original Stone Growth Chamber structure from 2.1 disfunctional - please use one of the new structures instead.
 - Removed the recipe for the Turtle Shell modifier for Hephaestus armour as it has a broken attribute and hence does nothing.
 
 #### Behind-the-scenes
 
 - Removed the packwiz binaries from the repository to decrease the size of it.
 
-## 2.1.3 [Current Release]
+## 2.1.3 [Current Release] - 2025/01/05
 
 ### ADDITIONS
 
@@ -244,7 +249,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 - Fixed an issue where Foundries' contents would lose sync with the client.
 - Fixed a bug where players were unable to set their spawnpoint
 - Fixed the Certus Quartz recipe in the Industrial Centrifuge outputting a non-existent Fluid Cell as a byproduct, causing the outputted Empty Cells to be unstackable.
-- Fixed the Distillation Tower not recognising Liquid Blaze Burners (hindsight: wasn't actually fixed).
+- Fixed the Distillation Tower not recognising Liquid Blaze Burners (again) (hindsight: was still somehow not actually fixed).
 - Fixed a recipe conflict in the Mechanical Crafter between crafting a single piece of Cobblestone into either Skipping Stones or Andesite Dust by making the Andesite Dust recipe manual-only.
 - Fixed a dupe where Iron Wires could be melted for a net gain of Iron.
 
@@ -277,7 +282,100 @@ This update comes with a completely overhauled file structure for Astral's own c
 
 > _Nothing to see here yet..._
 
-## 2.1.2
+## 2.1.2 - 2024/10/31
+
+### ADDITIONS
+
+With this patch, the questbook now has been fully internationalised, adding localisation keys for translators.
+
+> **Update from 2.1.4:**
+>
+> If you want to translate the modpack, please read CONTRIBUTING.md on the GitHub repository for a guide on how to do so. We'd greatly appreciate you putting the time and effort into making the modpack more accessible!
+
+#### Mod additions
+
+- Added a suite of REI addons:
+  - Roughly enough Resources
+  - Roughly Enough Loot Tables
+  - Roughly Enough Professions
+  - Roughly Enough Trades
+- Added StarEI - an REI addon for Astral's Custom Machinery recipes.
+- Added Defined's Blocks.
+
+#### Gameplay-changing
+
+- Added a portal to the Moon Debris.
+- Added ore geodes to the Moon Debris dimension.
+- Added a Cobblestone variant of the Stone Growth Chamber that uses Stone Bricks in the structure.
+- Added new food items in Astral Foods including Bulba's Tea and Dipped Potato.
+
+#### Quality of life
+
+> _Nothing to see here yet..._
+
+#### Behind-the-scenes
+
+> _Nothing to see here yet..._
+
+### CHANGES
+
+#### Major mod updates
+
+- Updated Create: Copycats+ to 2.1.4, which includes copycats for components such as cogwheels and fluid pipes.
+
+#### Gameplay-changing
+
+- Tweaked the generation in the Chapter 6 dimension to do with Monazite spawning.
+- Added a new automation path for Blazing Blood using a Blaze Burner loop, removing reliance on having a player stand next to a Blaze Spawner inside a Foundry.
+- Quantum tanks have been re-buffed to Tier 6 upgrade equivalent amounts (virtually infinite capacity).
+- Adjusted recipes for Shimmered Apple and Seared Potato.
+- Rebalanced some Astral Foods food statistics and effects.
+- Added a recipe to craft Vinery Grape Seeds from their respective Grapes.
+- Added new Kelp recipes.
+- Buffed some recipes introduced in 2.1.1 to make them more appealing.
+- Nerfed the Steam Turbine from Astral Generators (168 000 E/t -> 15 000 E/t).
+
+#### Quality of life
+
+- Tweaked the Stone Growth Chamber to use block tags in its structure to allow for more customisability.
+
+#### Bug patches
+
+- Patched out the existence of bottomless fluid deposits as they weren't intended to be in the pack. Newly generated worlds will reflect this. If enabling bottomless fluids in create config yourself, new fluids can be bottomless such as chocolate, blood, milk and honey to reflect them being useful in many automation recipes.
+- Fixed some default example multiblock schematics showing the wrong multiblocks.
+- Removed conflicting recipes for crushing Netherrack.
+- Added a missing recipe for the Calorite Tank.
+- Fixed a bunch of item names that displayed as internal localisation keys.
+- Fixed some discrepancies in various quest descriptions.
+- Fixed the Copper Shovel not being able to be used in recipes that look for shovel tags (mainly Farmer's Delight recipes).
+- Fixed the Distillation Tower not functioning with Liquid Blaze Burners (hindsight: this was in fact not fixed).
+- Fixed metal alloying recipes that didn't work, as Create allows heated recipes to be done while superheated, by distinguishing heated and superheated recipes with molten metals and solid metals respectively.
+- Fixed a Gold duplication bug.
+- Fixed Eggs without Chickens (???).
+
+#### Minor mod updates
+
+- Updated XPCrystals to 1.0.5, with fixes for XP Lake spawning.
+
+#### Behind-the-scenes
+
+> _Nothing to see here yet..._
+
+### REMOVALS
+
+#### Mod removals
+
+> _Nothing to see here yet..._
+
+#### Gameplay-changing
+
+- Removed Venus and Glacio (the one in Proxima Centauri, not the one in orbit of Mars) from the planet menu. Venus has been removed as it has very little content, is not at all required for progression, and is not within our scope to build upon any time soon.
+
+#### Behind-the-scenes
+
+> _Nothing to see here yet..._
+
+## 2.1.1 - 2024/10/16
 
 ### ADDITIONS
 
@@ -337,67 +435,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 
 > _Changelog construction in progress..._
 
-## 2.1.1
-
-### ADDITIONS
-
-#### Mod additions
-
-> _Changelog construction in progress..._
-
-#### Gameplay-changing
-
-> _Changelog construction in progress..._
-
-#### Quality of life
-
-> _Changelog construction in progress..._
-
-#### Behind-the-scenes
-
-> _Changelog construction in progress..._
-
-### CHANGES
-
-#### Major mod updates
-
-> _Changelog construction in progress..._
-
-#### Gameplay-changing
-
-> _Changelog construction in progress..._
-
-#### Quality of life
-
-> _Changelog construction in progress..._
-
-#### Bug patches
-
-> _Changelog construction in progress..._
-
-#### Minor mod updates
-
-> _Changelog construction in progress..._
-
-#### Behind-the-scenes
-
-> _Changelog construction in progress..._
-
-### REMOVALS
-
-#### Mod removals
-
-> _Changelog construction in progress..._
-
-#### Gameplay-changing
-
-> _Changelog construction in progress..._
-
-#### Behind-the-scenes
-
-> _Changelog construction in progress..._
-
-## 2.1
+## 2.1 - 2024/10/08
 
 ### ADDITIONS
 
