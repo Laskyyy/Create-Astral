@@ -8,6 +8,10 @@ The format is a slight modification of the [Keep a Changelog](https://keepachang
 
 ## 2.1.4 [Unreleased]
 
+**IMPORTANT:**
+
+This update comes with a completely overhauled file structure for Astral's own code, making it much more consistent and readable, and adding type checking for the sake of ease of development. Almost every line of custom KubeJS and Datapack code has been verified, moved, or rewritten - this has potentially fixed countless bugs and missing recipes, and may have broken others. Please report any bugs you find in either our Discord server's Bug Reports channel, or on our GitHub Issue Tracker - and also please verify that the bug you are reporting isn't an intended change (please read the rest of the changelog).
+
 ### ADDITIONS
 
 - Added this changelog! Changelogs will now be much more human-readable from here on out and logged in one file on the GitHub repository for anyone to view.
@@ -57,14 +61,14 @@ The format is a slight modification of the [Keep a Changelog](https://keepachang
 - Old Cherry Saplings can now sometimes drop from normal Cherry trees.
 - Fish slices can now be melted to give blood at 80% efficiency to give use for sawing fish to get bonemeal.
 - Moon Stone can now be manufactured pre-Moon using a sequenced assembly (assuming access to Shimmer).
-- Molten Netherite can now be made wit Molten Debris and Molten Gold in a mixer.
+- Molten Netherite can now be made with Molten Debris and Molten Gold in a mixer.
 - Mycelium now has a new recipe using Cheese.
 - Seared Tanks now use Gold Sheets in their recipes instead of Brass Sheets.
 - Scorched Tanks now have a recipe similar to that of their early-game counterpart, Seared Tanks, but with Brass Sheets instead of Gold Sheets.
 - Scorched Bricks now require Sap or Slime Balls, just like Seared Bricks, for parity with said counterpart.
 - All three dough types have been harmonised into `create:dough` - meaning there are no longer recipes to make the other two types of dough, and all recipes now accept `create:dough`.
 - Re-enabled the recipe for Rope from Campanion as it is the only rope that can be used to make rope bridges.
-- Added a new recipe for Zinc Sheet Metal from Create Deco as its recipe was unintentionally removed when unifying the Zinc Sheets in 2.1.3.
+- Added a new recipe for Zinc Sheet Metal from Create Deco as its recipe was unintentionally removed when unifying the Zinc Sheets in a prior update.
 
 #### Quality of life
 
@@ -78,7 +82,7 @@ The format is a slight modification of the [Keep a Changelog](https://keepachang
 - Adjusted capitalisation in numerous quest descriptions and subtitles to be more consistent and to make capitalised words less overused.
 - Added tooltips to Traveler's Backpacks that have abilities to clarify that abilities are disabled by default. Bear in mind that they can be re-enabled in the config file.
 - Added a description to some of the quests in the Astral Signals questline to explain how to finish processing data drives as REI doesn't want to display the recipe.
-- The bedrock stone generator quest now tries to clarify that it needs to specifically be a stone generator and not a cobblestone generator, and also attempts to explain how to make a stone generator.
+- The Bedrock Stone generator quest now tries to clarify that it needs to specifically be a Stone generator and not a Cobblestone generator, and also attempts to explain how to make a Stone generator.
 
 #### Bug patches
 
@@ -119,18 +123,17 @@ The format is a slight modification of the [Keep a Changelog](https://keepachang
 #### Behind-the-scenes
 
 - Overhauled the in-game credits menu to include more people and generally look nicer and be more organised.
-- Completely overhauled the file structure for Astral's own code, making it much more consistent and readable, and adding type checking. This has also potentially fixed countless bugs and missing recipes, and may have broken others.
 - `server.packwizignore` now excludes FancyMenu configs as well as the new location for textures within the KubeJS folder.
 - Clarified a few terms more explicitly in `LICENSE.md`.
 - Cleaned up the main `README.md` file in the repository. Now it redirects to the other CAPITALISED markdown documents for further specific information.
 - Wiped index.toml clean and added a clause in CONTRIBUTING.md asking contributors not to commit changes to index.toml. This has been done to cut down on headache-inducing merge conflicts that arise as a result of changes to this file. Packwiz automatically generates index.toml when it is run, so this should only affect the load time of the first time you run packwiz (which will be significantly longer than normal as packwiz generates index.toml).
-- Added packwiz binaries to .gitignore to prevent them from reappearing in the GitHub repository in the future.
+- Added packwiz binaries to `.gitignore` to prevent them from reappearing in the GitHub repository in the future.
 
 ### REMOVALS
 
 #### Mod removals
 
-- Removed the Quarry Reborn mod as it is completely redundant.
+- Removed the Quarry Reborn mod as it is completely redundant and was non-functional anyway due to missing recipes for the last few updates.
 - Removed the Global Packs mod as its function can be, and has been, fulfilled by KubeJS.
 
 #### Game-changing
