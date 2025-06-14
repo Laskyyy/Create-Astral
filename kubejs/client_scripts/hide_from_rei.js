@@ -608,6 +608,7 @@
       "createbigcannons:molten_nethersteel_bucket",
       "createdeco:zinc_sheet",
       "#yttr:project_tables",
+      "yttr:chute",
       "createastral:laskinium",
       "createastral:laskinium_pill",
       //Sequenced Assembly Transition Items - not useful to have in rei
