@@ -1,86 +1,88 @@
 {
-    "name": "custommachinery.createastral.shimmer_refinery",
-    "appearance": {
-        "block": "yttr:void_filter",
-        "running": {
-            "lightlevel": 15
-        }
+  "name": "custommachinery.createastral.shimmer_refinery",
+  "appearance": {
+    "block": "yttr:void_filter",
+    "running": {
+      "lightlevel": 15
+    }
+  },
+  "gui": [
+    {
+      "texture": "custommachinery:textures/gui/base_background.png",
+      "x": 0,
+      "y": 0,
+      "type": "custommachinery:texture"
     },
-    "gui": [
-        {
-            "texture": "custommachinery:textures/gui/base_background.png",
-            "x": 0,
-            "y": 0,
-            "type": "custommachinery:texture"
-        },
-        {
-            "x": 47,
-            "y": 80,
-            "type": "custommachinery:player_inventory"
-        },
-        {
-            "id": "inputtank",
-            "x": 90,
-            "y": 30,
-            "type": "custommachinery:fluid"
-        },
-        {
-            "id": "inputslot",
-            "x": 70,
-            "y": 30,
-            "type": "custommachinery:slot"
-        },
-        {
-            "id": "outputslot",
-            "x": 142,
-            "y": 30,
-            "type": "custommachinery:slot"
-        },
-        {
-            "type": "custommachinery:energy",
-            "x": 20,
-            "y": 20
-        },
-        {
-            "x": 116,
-            "y": 30,
-            "type": "custommachinery:progress"
-        },
-        {
-            "x": 236,
-            "y": 5,
-            "type": "custommachinery:status"
-        },
-        {
-            "text": "custommachinery.createastral.shimmer_refinery.text",
-            "x": 7,
-            "y": 5,
-            "type": "custommachinery:text"
-        }
-    ],
-    "components": [
-        {
-            "type": "custommachinery:fluid",
-            "capacity": 810000,
-            "id": "inputtank",
-            "maxInput": 50000,
-            "maxOutput": 0
-        },
-        {
-            "type": "custommachinery:item",
-            "id": "inputslot",
-            "mode": "input"
-        },
-        {
-            "type": "custommachinery:item",
-            "id": "outputslot",
-            "mode": "output"
-        },
-        {
-            "type": "custommachinery:energy",
-            "capacity": 1000000,
-            "maxInput": 50000,
-            "maxOutput": 0
-        }
-    ]
+    {
+      "x": 47,
+      "y": 80,
+      "type": "custommachinery:player_inventory"
+    },
+    {
+      "id": "inputtank",
+      "x": 90,
+      "y": 30,
+      "type": "custommachinery:fluid"
+    },
+    {
+      "id": "inputslot",
+      "x": 70,
+      "y": 30,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "outputslot",
+      "x": 142,
+      "y": 30,
+      "type": "custommachinery:slot"
+    },
+    {
+      "type": "custommachinery:energy",
+      "x": 20,
+      "y": 20
+    },
+    {
+      "x": 116,
+      "y": 30,
+      "type": "custommachinery:progress"
+    },
+    {
+      "x": 236,
+      "y": 5,
+      "type": "custommachinery:status"
+    },
+    {
+      "text": "custommachinery.createastral.shimmer_refinery.text",
+      "x": 7,
+      "y": 5,
+      "type": "custommachinery:text"
+    }
+  ],
+  "components": [
+    {
+      "type": "custommachinery:fluid",
+      "capacity": 810000,
+      "id": "inputtank",
+      "maxInput": 50000,
+      "maxOutput": 0,
+      "filter": "kubejs:shimmer",
+      "whitelist": true
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "inputslot",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "outputslot",
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:energy",
+      "capacity": 1000000,
+      "maxInput": 50000,
+      "maxOutput": 0
+    }
+  ]
 }
