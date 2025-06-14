@@ -113,7 +113,7 @@
         cast: { item: "tconstruct:gem_cast", consumed: false },
       },
       {
-        fluidInput: { fluid: "kubejs:molten_ostrum", amount: NUGGET * 8 },
+        fluidInput: { fluid: "kubejs:molten_ostrum", amount: INGOT * 2 },
         result: "createbigcannons:nethersteel_screw_lock",
         coolingTime: 60,
         cast: { item: "astraladditions:ring_gold_cast", consumed: false },
@@ -123,12 +123,6 @@
         result: "ae2:fluix_dust",
         coolingTime: 40,
         cast: { item: "minecraft:redstone", consumed: true },
-      },
-      {
-        fluidInput: { fluid: "tconstruct:molten_steel", amount: NUGGET * 8 },
-        result: "createbigcannons:steel_screw_lock",
-        coolingTime: 60,
-        cast: { item: "astraladditions:ring_gold_cast", consumed: false },
       },
       {
         fluidInput: { fluid: "kubejs:compound_mixture", amount: INGOT },

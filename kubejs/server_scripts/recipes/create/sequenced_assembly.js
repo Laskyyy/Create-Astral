@@ -37,7 +37,7 @@
             "tconstruct:small_ender_slime_crystal_bud",
             { fluid: "tconstruct:ender_slime", amount: (250 * mB) / 3 },
           ]),
-        ],
+        ]
       )
       .transitionalItem("tconstruct:small_ender_slime_crystal_bud")
       .loops(3);
@@ -54,7 +54,7 @@
             "tconstruct:medium_ender_slime_crystal_bud",
             { fluid: "tconstruct:ender_slime", amount: (250 * mB) / 3 },
           ]),
-        ],
+        ]
       )
       .transitionalItem("tconstruct:medium_ender_slime_crystal_bud")
       .loops(3);
@@ -71,7 +71,7 @@
             "tconstruct:large_ender_slime_crystal_bud",
             { fluid: "tconstruct:ender_slime", amount: (250 * mB) / 3 },
           ]),
-        ],
+        ]
       )
       .transitionalItem("tconstruct:large_ender_slime_crystal_bud")
       .loops(3);
@@ -186,7 +186,7 @@
             "astraladditions:blazed_steel_ring",
             "createastral:astral_conduit",
           ]),
-        ],
+        ]
       )
       .transitionalItem("astraladditions:blazed_steel_ring")
       .loops(1);
@@ -212,7 +212,7 @@
         [
           event.recipes.createPressing(inc_sturdy_sheet, inc_sturdy_sheet),
           event.recipes.createPressing(inc_sturdy_sheet, inc_sturdy_sheet),
-        ],
+        ]
       )
       .transitionalItem(inc_sturdy_sheet)
       .loops(5);
@@ -284,7 +284,7 @@
             "minecraft:bowl",
             { fluid: "kubejs:shimmer", amount: BUCKET },
           ]),
-        ],
+        ]
       )
       .transitionalItem("minecraft:bowl")
       .loops(1);
@@ -333,7 +333,7 @@
             Item.of("farmersdelight:straw").withChance(0.5),
           ],
           "techreborn:plantball",
-          [event.recipes.createPressing(transitional_c_plantball, transitional_c_plantball)],
+          [event.recipes.createPressing(transitional_c_plantball, transitional_c_plantball)]
         )
         .transitionalItem(transitional_c_plantball)
         .loops(4);
@@ -355,7 +355,7 @@
             Item.of("farmersdelight:straw").withChance(0.5),
           ],
           "techreborn:plantball",
-          [event.recipes.createPressing(transitional_c_plantball, transitional_c_plantball)],
+          [event.recipes.createPressing(transitional_c_plantball, transitional_c_plantball)]
         )
         .transitionalItem(transitional_c_plantball)
         .loops(4);
@@ -384,7 +384,7 @@
               incomplete_transitional_circuit,
               "createastral:electrified_pin",
             ]),
-          ],
+          ]
         )
         .transitionalItem(incomplete_transitional_circuit)
         .loops(32);
@@ -403,9 +403,9 @@
             ]),
             event.recipes.createPressing(
               "createastral:incomplete_electronic_circuit",
-              "createastral:incomplete_electronic_circuit",
+              "createastral:incomplete_electronic_circuit"
             ),
-          ],
+          ]
         )
         .transitionalItem("createastral:incomplete_electronic_circuit")
         .loops(1);
@@ -439,7 +439,7 @@
               { fluid: "kubejs:molten_radiance", amount: BUCKET / 2 },
             ]),
             event.recipes.createPressing("ad_astra:calorite_engine", "ad_astra:calorite_engine"),
-          ],
+          ]
         )
         .transitionalItem("ad_astra:calorite_engine")
         .loops(5);
@@ -469,7 +469,7 @@
               { fluid: "kubejs:molten_calorite", amount: BUCKET / 2 },
             ]),
             event.recipes.createPressing("ad_astra:mercury_stone", "ad_astra:mercury_stone"),
-          ],
+          ]
         )
         .transitionalItem("ad_astra:mercury_stone")
         .loops(5);
@@ -489,7 +489,7 @@
               { fluid: "kubejs:aurorite", amount: BUCKET / 2 },
             ]),
             event.recipes.createPressing("ad_astra:polished_permafrost", "ad_astra:polished_permafrost"),
-          ],
+          ]
         )
         .transitionalItem("ad_astra:polished_permafrost")
         .loops(1);
@@ -511,7 +511,7 @@
               { fluid: "estrogen:liquid_estrogen", amount: BUCKET },
             ]),
             event.recipes.createDeploying("create:sand_paper", ["blahaj:blue_shark", "blahaj:blue_shark"]),
-          ],
+          ]
         )
         .transitionalItem("ad_astra:polished_permafrost")
         .loops(1);
@@ -538,7 +538,7 @@
               { fluid: "ad_astra:cryo_fuel", amount: BUCKET },
             ]),
             event.recipes.createPressing("createastral:navigation_mechanism", "createastral:navigation_mechanism"),
-          ],
+          ]
         )
         .transitionalItem("createastral:navigation_mechanism")
         .loops(4);
@@ -568,7 +568,7 @@
             ]),
             event.recipes.createDeploying("create:copper_casing", ["create:copper_casing", "create:brass_sheet"]),
             event.recipes.createPressing("create:copper_casing", "create:copper_casing"),
-          ],
+          ]
         )
         .transitionalItem("createastral:incomplete_brass_casing")
         .loops(3);
@@ -593,7 +593,7 @@
               "techreborn:basic_machine_frame",
               "techreborn:lead_plate",
             ]),
-          ],
+          ]
         )
         .transitionalItem("createastral:incomplete_advanced_machine_frame")
         .loops(1);
@@ -618,7 +618,7 @@
               "techreborn:advanced_machine_frame",
               "ad_astra:ostrum_plate",
             ]),
-          ],
+          ]
         )
         .transitionalItem("createastral:incomplete_industrial_machine_frame")
         .loops(1);
@@ -758,7 +758,7 @@
             // input
             event.recipes.createDeploying(inc_casing, [inc_casing, "techreborn:rubber"]),
             event.recipes.createDeploying(inc_casing, [inc_casing, "create:copper_sheet"]),
-          ],
+          ]
         )
         .transitionalItem(inc_casing)
         .loops(3);
@@ -775,7 +775,7 @@
             event.recipes.createFilling(inc_mf, [inc_mf, { fluid: "tconstruct:molten_silver", amount: INGOT }]),
             event.recipes.createDeploying(inc_mf, [inc_mf, "techreborn:rubber"]),
             event.recipes.createPressing(inc_mf, inc_mf), //yeah!
-          ],
+          ]
         )
         .transitionalItem(inc_mf)
         .loops(4);
@@ -783,7 +783,7 @@
     /** @param {Internal.RecipeEventJS} event */
     function diamondSequence(event) {
       // Item type , loop amount
-      const items = /** @type {const} */([
+      const items = /** @type {const} */ ([
         { item: "helmet", loops: 4 },
         { item: "chestplate", loops: 8 },
         { item: "leggings", loops: 6 },
@@ -811,7 +811,7 @@
                   amount: 250 * mB,
                 },
               ]),
-            ],
+            ]
           )
           .transitionalItem(`createastral:brass_${item.item}`)
           .loops(item.loops);
@@ -835,7 +835,7 @@
               "minecraft:piglin_banner_pattern",
             ]),
             event.recipes.createPressing("create:golden_sheet", "create:golden_sheet").processingTime(75),
-          ],
+          ]
         )
         .transitionalItem("createastral:coin")
         .loops(1);
@@ -862,7 +862,7 @@
               "minecraft:crimson_fungus",
               "minecraft:crimson_fungus",
             ]),
-          ],
+          ]
         )
         .transitionalItem("createastral:filled_golden_bowl")
         .loops(1);
@@ -884,7 +884,7 @@
               "createastral:golden_pin",
               "createastral:golden_pin",
             ]),
-          ],
+          ]
         )
         .transitionalItem("minecraft:gold_ingot")
         .loops(1);
@@ -912,7 +912,7 @@
               "kubejs:incomplete_chenet_wine",
               "minecraft:sweet_berries",
             ]),
-          ],
+          ]
         )
         .transitionalItem("kubejs:incomplete_chenet_wine")
         .loops(1);
@@ -937,7 +937,7 @@
               "kubejs:incomplete_king_danis_wine",
               { fluid: "create:honey", amount: 250 * mB },
             ]),
-          ],
+          ]
         )
         .transitionalItem("kubejs:incomplete_king_danis_wine")
         .loops(1);
@@ -962,7 +962,7 @@
               "kubejs:incomplete_noir_wine",
               "minecraft:kelp",
             ]),
-          ],
+          ]
         )
         .transitionalItem("kubejs:incomplete_noir_wine")
         .loops(1);
@@ -987,7 +987,7 @@
               "kubejs:incomplete_bolvar_wine",
               "vinery:cherry",
             ]),
-          ],
+          ]
         )
         .transitionalItem("kubejs:incomplete_bolvar_wine")
         .loops(1);
@@ -1012,7 +1012,7 @@
               "kubejs:incomplete_cherry_wine",
               "vinery:cherry",
             ]),
-          ],
+          ]
         )
         .transitionalItem("kubejs:incomplete_cherry_wine")
         .loops(1);
@@ -1037,7 +1037,7 @@
               "kubejs:incomplete_jellie_wine",
               { fluid: "create:honey", amount: 250 * mB },
             ]),
-          ],
+          ]
         )
         .transitionalItem("kubejs:incomplete_jellie_wine")
         .loops(1);
@@ -1062,7 +1062,7 @@
               "kubejs:incomplete_clark_wine",
               "minecraft:sweet_berries",
             ]),
-          ],
+          ]
         )
         .transitionalItem("kubejs:incomplete_clark_wine")
         .loops(1);
@@ -1087,7 +1087,7 @@
               "kubejs:incomplete_mellohi_wine",
               { fluid: "kubejs:white_grape_juice", amount: 250 * mB },
             ]),
-          ],
+          ]
         )
         .transitionalItem("kubejs:incomplete_mellohi_wine")
         .loops(1);
@@ -1112,7 +1112,7 @@
               "kubejs:incomplete_solaris_wine",
               { fluid: "create:honey", amount: 250 * mB },
             ]),
-          ],
+          ]
         )
         .transitionalItem("kubejs:incomplete_solaris_wine")
         .loops(1);
@@ -1137,7 +1137,7 @@
               "kubejs:incomplete_aegis_wine",
               "minecraft:kelp",
             ]),
-          ],
+          ]
         )
         .transitionalItem("kubejs:incomplete_aegis_wine")
         .loops(1);
@@ -1162,7 +1162,7 @@
               "kubejs:incomplete_apple_wine",
               "minecraft:apple",
             ]),
-          ],
+          ]
         )
         .transitionalItem("kubejs:incomplete_apple_wine")
         .loops(1);
@@ -1187,7 +1187,7 @@
               "kubejs:incomplete_kelp_cider",
               "minecraft:apple",
             ]),
-          ],
+          ]
         )
         .transitionalItem("kubejs:incomplete_kelp_cider")
         .loops(1);
@@ -1212,7 +1212,7 @@
               "kubejs:incomplete_apple_cider",
               "minecraft:apple",
             ]),
-          ],
+          ]
         )
         .transitionalItem("kubejs:incomplete_apple_cider")
         .loops(1);
@@ -1238,7 +1238,7 @@
             "create:incomplete_precision_mechanism",
             "createaddition:capacitor",
           ]),
-        ],
+        ]
       )
       .transitionalItem("create:incomplete_precision_mechanism")
       .loops(2);
@@ -1282,7 +1282,7 @@
             { fluid: "minecraft:lava", amount: 250 * mB },
           ]), //fill 1/4 bucket lava
           event.recipes.createPressing("minecraft:ender_pearl", "minecraft:ender_pearl"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:ender_pearl")
       .loops(3);
@@ -1302,7 +1302,7 @@
           ]),
           event.recipes.createDeploying(inc_redstone_chip, [inc_redstone_chip, "#c:wires"]), //fill obsid
           event.recipes.createPressing(inc_redstone_chip, "#c:wires"), //yeah
-        ],
+        ]
       )
       .transitionalItem(inc_redstone_chip)
       .loops(12);
@@ -1331,7 +1331,7 @@
             "createbigcannons:nethersteel_screw_breech",
             { fluid: "techreborn:silicon", amount: 3000 },
           ]),
-        ],
+        ]
       )
       .transitionalItem("createastral:incomplete_electronic_circuit")
       .loops(6);
@@ -1342,7 +1342,7 @@
           "minecraft:ink_sac", // output
         ],
         "minecraft:black_dye",
-        [event.recipes.createDeploying("minecraft:black_dye", ["minecraft:black_dye", "minecraft:paper"])],
+        [event.recipes.createDeploying("minecraft:black_dye", ["minecraft:black_dye", "minecraft:paper"])]
       )
       .transitionalItem("minecraft:black_dye")
       .loops(2);
@@ -1381,7 +1381,7 @@
           event.recipes.createFilling("create:dough", ["create:dough", { fluid: "minecraft:water", amount: 100 * mB }]),
           event.recipes.createPressing("create:dough", "create:dough"),
           event.recipes.createCutting("create:dough", "create:dough"),
-        ],
+        ]
       )
       .transitionalItem("create:dough")
       .loops(2);
@@ -1397,7 +1397,7 @@
           ]),
           event.recipes.createPressing("createastral:protopork", "createastral:protopork"),
           event.recipes.createCutting("createastral:protopork", "createastral:protopork"),
-        ],
+        ]
       )
       .transitionalItem("createastral:protopork")
       .loops(1);
@@ -1413,7 +1413,7 @@
           ]),
           event.recipes.createPressing("createastral:protomutton", "createastral:protomutton"),
           event.recipes.createCutting("createastral:protomutton", "createastral:protomutton"),
-        ],
+        ]
       )
       .transitionalItem("createastral:protomutton")
       .loops(1);
@@ -1429,7 +1429,7 @@
           ]),
           event.recipes.createPressing("createastral:protobeef", "createastral:protobeef"),
           event.recipes.createCutting("createastral:protobeef", "createastral:protobeef"),
-        ],
+        ]
       )
       .transitionalItem("createastral:protobeef")
       .loops(1);
@@ -1448,7 +1448,7 @@
           ]),
           event.recipes.createPressing("createastral:protochicken", "createastral:protochicken"),
           event.recipes.createCutting("createastral:protochicken", "createastral:protochicken"),
-        ],
+        ]
       )
       .transitionalItem("createastral:protochicken")
       .loops(1);
@@ -1464,7 +1464,7 @@
           ]),
           event.recipes.createPressing("createastral:protorabbit", "createastral:protorabbit"),
           event.recipes.createCutting("createastral:protorabbit", "createastral:protorabbit"),
-        ],
+        ]
       )
       .transitionalItem("createastral:protorabbit")
       .loops(1);
@@ -1483,7 +1483,7 @@
             "createastral:seitan",
             { fluid: "kubejs:shimmer", amount: 10 * mB }, //For the bit of magic required to create life
           ]),
-        ],
+        ]
       )
       .transitionalItem("createastral:seitan")
       .loops(1);
@@ -1500,7 +1500,7 @@
             { fluid: "tconstruct:blood", amount: 100 * mB },
           ]),
           event.recipes.createPressing("minecraft:porkchop", "minecraft:porkchop"),
-        ],
+        ]
       )
       .transitionalItem("createastral:seitan")
       .loops(1);
@@ -1521,7 +1521,7 @@
             { fluid: "minecraft:water", amount: 500 * mB },
           ]),
           event.recipes.createPressing("createastral:seitan", "createastral:seitan"),
-        ],
+        ]
       )
       .transitionalItem("createastral:seitan")
       .loops(1);
@@ -1544,7 +1544,7 @@
             { fluid: "kubejs:shimmer", amount: 50 * mB },
           ]),
           event.recipes.createPressing("createastral:incomplete_blaze_head", "createastral:incomplete_blaze_head"),
-        ],
+        ]
       )
       .transitionalItem("createastral:incomplete_blaze_head")
       .loops(1);
@@ -1569,7 +1569,7 @@
             "minecraft:amethyst_shard",
             { fluid: "kubejs:shimmer", amount: 10 * mB },
           ]),
-        ],
+        ]
       )
       .transitionalItem("minecraft:amethyst_shard")
       .loops(1);
@@ -1594,7 +1594,7 @@
             "minecraft:small_amethyst_bud",
             { fluid: "kubejs:shimmer", amount: 10 * mB },
           ]),
-        ],
+        ]
       )
       .transitionalItem("minecraft:small_amethyst_bud")
       .loops(1);
@@ -1619,7 +1619,7 @@
             "minecraft:medium_amethyst_bud",
             { fluid: "kubejs:shimmer", amount: 10 * mB },
           ]),
-        ],
+        ]
       )
       .transitionalItem("minecraft:medium_amethyst_bud")
       .loops(1);
@@ -1644,7 +1644,7 @@
             "minecraft:large_amethyst_bud",
             { fluid: "kubejs:shimmer", amount: 10 * mB },
           ]),
-        ],
+        ]
       )
       .transitionalItem("minecraft:large_amethyst_bud")
       .loops(1);
@@ -1665,7 +1665,7 @@
             "createastral:martian_clump",
             { fluid: "kubejs:shimmer", amount: BUCKET / 2 },
           ]),
-        ],
+        ]
       )
       .transitionalItem("createastral:martian_clump")
       .loops(1);
@@ -1682,7 +1682,7 @@
             "astralfoods:blaze_fries_and_cod",
             "minecraft:paper",
           ]),
-        ],
+        ]
       )
       .transitionalItem("astralfoods:blaze_fries_and_cod")
       .loops(3);
@@ -1714,7 +1714,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -1733,7 +1733,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -1752,7 +1752,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -1771,7 +1771,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -1790,7 +1790,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -1809,7 +1809,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -1828,7 +1828,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -1847,7 +1847,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -1866,7 +1866,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -1885,7 +1885,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -1904,7 +1904,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -1923,7 +1923,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -1942,7 +1942,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -1958,7 +1958,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -1974,7 +1974,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -1990,7 +1990,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2006,7 +2006,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2022,7 +2022,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2041,7 +2041,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2057,7 +2057,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2080,7 +2080,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2096,7 +2096,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2115,7 +2115,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2134,7 +2134,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2150,7 +2150,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2166,7 +2166,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2185,7 +2185,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2204,7 +2204,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2223,7 +2223,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2239,7 +2239,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2258,7 +2258,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2277,7 +2277,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2293,7 +2293,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2312,7 +2312,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2331,7 +2331,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2349,7 +2349,7 @@
           { fluid: "xpcrystals:soul", amount: BUCKET },
         ]), //gathering the souls / def something that could be changed
         event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-      ],
+      ]
     );
     event.recipes.create
       .sequenced_assembly(
@@ -2366,7 +2366,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2385,7 +2385,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2404,7 +2404,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2434,7 +2434,7 @@
               amount: BUCKET / 3,
             },
           ]),
-        ],
+        ]
       )
       .transitionalItem("minecraft:glass_bottle")
       .loops(1);
@@ -2451,7 +2451,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2467,7 +2467,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2485,7 +2485,7 @@
           { fluid: "xpcrystals:soul", amount: BUCKET },
         ]), //gathering the souls / def something that could be changed
         event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-      ],
+      ]
     );
     event.recipes.create
       .sequenced_assembly(
@@ -2502,7 +2502,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2518,7 +2518,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2537,7 +2537,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2553,7 +2553,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2569,7 +2569,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2585,7 +2585,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2604,7 +2604,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2620,7 +2620,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2636,7 +2636,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2655,7 +2655,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2671,7 +2671,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2690,7 +2690,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2709,7 +2709,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2725,7 +2725,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2744,7 +2744,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2763,7 +2763,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2779,7 +2779,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2798,7 +2798,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2817,7 +2817,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2836,7 +2836,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2855,7 +2855,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2874,7 +2874,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2893,7 +2893,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2912,7 +2912,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2928,7 +2928,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2944,7 +2944,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2963,7 +2963,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -2982,7 +2982,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -3001,7 +3001,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -3020,7 +3020,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -3039,7 +3039,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -3058,7 +3058,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -3077,7 +3077,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -3096,7 +3096,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -3115,7 +3115,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -3131,7 +3131,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -3150,7 +3150,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -3169,7 +3169,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -3185,7 +3185,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -3204,7 +3204,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -3223,7 +3223,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -3239,7 +3239,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -3258,7 +3258,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -3277,7 +3277,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -3296,26 +3296,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
-      )
-      .transitionalItem("minecraft:enchanted_book")
-      .loops(1);
-    event.recipes.create
-      .sequenced_assembly(
-        [Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"mcdw:replenish",lvl:1s}]}')],
-        ["minecraft:book"],
-        [
-          event.recipes.createDeploying("minecraft:enchanted_book", [
-            "createbigcannons:recoil_spring",
-            "createbigcannons:recoil_spring",
-          ]),
-          event.recipes.createDeploying("minecraft:enchanted_book", ["xpcrystals:xp_crystal", "xpcrystals:xp_crystal"]), // insert crystal here / def something that could be changed
-          event.recipes.createFilling("minecraft:enchanted_book", [
-            "minecraft:enchanted_book",
-            { fluid: "xpcrystals:soul", amount: BUCKET },
-          ]), //gathering the souls / def something that could be changed
-          event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -3331,7 +3312,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -3350,7 +3331,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -3370,7 +3351,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -3386,7 +3367,7 @@
             { fluid: "xpcrystals:soul", amount: BUCKET },
           ]), //gathering the souls / def something that could be changed
           event.recipes.createPressing("minecraft:enchanted_book", "minecraft:enchanted_book"),
-        ],
+        ]
       )
       .transitionalItem("minecraft:enchanted_book")
       .loops(1);
@@ -3416,7 +3397,7 @@
               amount: BUCKET / 3,
             },
           ]),
-        ],
+        ]
       )
       .transitionalItem("minecraft:glass_bottle")
       .loops(1);
