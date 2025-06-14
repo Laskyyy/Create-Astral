@@ -8,7 +8,7 @@
   },
   "gui": [
     {
-      "texture": "createastral:textures/gui/sgc_gui.png",
+      "texture": "createastral:textures/gui/sgc/sgc_gui.png",
       "x": 47,
       "y": 16,
       "type": "custommachinery:texture",
@@ -17,20 +17,20 @@
     },
     {
       "x": 47,
-      "y": 80,
+      "y": 104,
       "type": "custommachinery:player_inventory"
     },
     {
-      "texture": "createastral:textures/gui/sgc_slot",
+      "texture": "createastral:textures/gui/sgc/sgc_slot",
       "id": "stoneslot",
       "x": 128,
-      "y": 50,
+      "y": 58,
       "type": "custommachinery:slot"
     },
     {
       "text": "custommachinery.createastral.stone_growth_chamber.text",
-      "x": 7,
-      "y": 5,
+      "x": 9,
+      "y": 8,
       "type": "custommachinery:text"
     }
   ],

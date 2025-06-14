@@ -8,7 +8,7 @@
   },
   "gui": [
     {
-      "texture": "createastral:textures/gui/distillery_gui.png",
+      "texture": "createastral:textures/gui/distillation_tower/distillation_tower_gui.png",
       "x": 47,
       "y": 8,
       "type": "custommachinery:texture",
@@ -17,7 +17,7 @@
     },
     {
       "x": 47,
-      "y": 80,
+      "y": 104,
       "type": "custommachinery:player_inventory"
     },
     {
