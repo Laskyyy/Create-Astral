@@ -68,7 +68,6 @@
       Component.translate("text.rei.createastral.create.potion.regular"),
 
       // @ts-expect-error My type-safe implementation didn't work.
-      Astral-Experimental
       (fluid) => fluid.getId() === createPotion && fluid.nbt.Bottle === "REGULAR"
     );
     event.groupFluidsIf(
@@ -76,7 +75,6 @@
       Component.translate("text.rei.createastral.create.potion.splash"),
 
       // @ts-expect-error My type-safe implementation didn't work.
-      Astral-Experimental
       (fluid) => fluid.getId() === createPotion && fluid.nbt.Bottle === "SPLASH"
     );
     event.groupFluidsIf(
@@ -84,7 +82,6 @@
       Component.translate("text.rei.createastral.create.potion.lingering"),
 
       // @ts-expect-error My type-safe implementation didn't work.
-      Astral-Experimental
       (fluid) => fluid.getId() === createPotion && fluid.nbt.Bottle === "LINGERING"
     );
     //Packages
