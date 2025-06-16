@@ -96,7 +96,9 @@
       "capacity": 810000,
       "id": "inputtank",
       "maxInput": 50000,
-      "maxOutput": 0
+      "maxOutput": 0,
+      "filter": "kubejs:shimmer",
+      "whitelist": true
     },
     {
       "type": "custommachinery:item",

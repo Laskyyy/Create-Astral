@@ -1227,13 +1227,6 @@
         },
       },
       {
-        output: "yttr:chute",
-        pattern: ["A A", "A A", "A A"],
-        key: {
-          A: "create:iron_sheet",
-        },
-      },
-      {
         output: "yttr:bedrock_smasher",
         pattern: ["AAA", " B ", " C "],
         key: {
