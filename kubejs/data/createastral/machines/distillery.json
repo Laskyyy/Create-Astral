@@ -44,9 +44,13 @@
       "y": 30
     },
     {
-      "x": 116,
-      "y": 30,
-      "type": "custommachinery:progress"
+      "emptyTexture": "createastral:textures/gui/distillation_tower/distillation_tower_progress_empty.png",
+      "filledTexture": "createastral:textures/gui/distillation_tower/distillation_tower_progress_full.png",
+      "x": 118,
+      "y": 34,
+      "type": "custommachinery:progress",
+      "height": 30,
+      "width": 16
     },
     {
       "x": 236,

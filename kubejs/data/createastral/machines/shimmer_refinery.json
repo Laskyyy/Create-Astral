@@ -39,16 +39,22 @@
       "height": 52
     },
     {
+      "texture": "createastral:textures/gui/refinery/refinery_slot.png",
       "id": "inputslot",
       "x": 70,
       "y": 30,
-      "type": "custommachinery:slot"
+      "type": "custommachinery:slot",
+      "width": 16,
+      "height": 16
     },
     {
+      "texture": "createastral:textures/gui/refinery/refinery_slot.png",
       "id": "outputslot",
       "x": 142,
       "y": 30,
-      "type": "custommachinery:slot"
+      "type": "custommachinery:slot",
+      "width": 16,
+      "height": 16
     },
     {
       "emptytexture": "createastral:textures/gui/refinery/refinery_energy_empty.png",
