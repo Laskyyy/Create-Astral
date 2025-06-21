@@ -8,14 +8,16 @@
   },
   "gui": [
     {
-      "texture": "createastral:textures/gui/distillation_tower_gui.png",
+      "texture": "createastral:textures/gui/distillation_tower/distillation_tower_gui.png",
       "x": 47,
       "y": 8,
-      "type": "custommachinery:texture"
+      "type": "custommachinery:texture",
+      "width": 256,
+      "height": 192
     },
     {
       "x": 47,
-      "y": 80,
+      "y": 104,
       "type": "custommachinery:player_inventory"
     },
     {
@@ -38,13 +40,17 @@
     },
     {
       "type": "custommachinery:energy",
-      "x": 20,
-      "y": 20
+      "x": 30,
+      "y": 30
     },
     {
-      "x": 116,
-      "y": 30,
-      "type": "custommachinery:progress"
+      "emptyTexture": "createastral:textures/gui/distillation_tower/distillation_tower_progress_empty.png",
+      "filledTexture": "createastral:textures/gui/distillation_tower/distillation_tower_progress_full.png",
+      "x": 118,
+      "y": 34,
+      "type": "custommachinery:progress",
+      "height": 30,
+      "width": 16
     },
     {
       "x": 236,
@@ -71,7 +77,6 @@
       "capacity": 810000,
       "id": "inputtank",
       "maxInput": 50000,
-      "maxOutput": 0,
       "filter": ["minecraft:water", "techreborn:oil", "techreborn:mercury"],
       "whitelist": true
     },

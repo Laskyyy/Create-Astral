@@ -17,6 +17,10 @@
             item !== "chipped:mechanist_workbench"
         ),
     ]);
+
+    // Compressed Blocks
+    event.groupItems("kubejs:rei_groups/compressed", "Compressed Blocks", [Ingredient.of("@compressor").getItemIds()]);
+
     //Decrypted Drives
     event.groupItemsByTag(
       "createastral:rei_groups/astralsignals/drives_decrypted_t1",
@@ -62,18 +66,21 @@
     event.groupFluidsIf(
       "createastral:rei_groups/create/potion",
       Component.translate("text.rei.createastral.create.potion.regular"),
+
       // @ts-expect-error My type-safe implementation didn't work.
       (fluid) => fluid.getId() === createPotion && fluid.nbt.Bottle === "REGULAR"
     );
     event.groupFluidsIf(
       "createastral:rei_groups/create/splash_potion",
       Component.translate("text.rei.createastral.create.potion.splash"),
+
       // @ts-expect-error My type-safe implementation didn't work.
       (fluid) => fluid.getId() === createPotion && fluid.nbt.Bottle === "SPLASH"
     );
     event.groupFluidsIf(
       "createastral:rei_groups/create/lingering_potion",
       Component.translate("text.rei.createastral.create.potion.lingering"),
+
       // @ts-expect-error My type-safe implementation didn't work.
       (fluid) => fluid.getId() === createPotion && fluid.nbt.Bottle === "LINGERING"
     );

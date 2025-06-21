@@ -185,6 +185,7 @@
     event.create("createastral:incomplete_logic_processor", "create:sequenced_assembly");
     event.create("createastral:incomplete_engineering_processor", "create:sequenced_assembly");
     event.create("createastral:incomplete_dash_panel", "create:sequenced_assembly");
+    event.create("createastral:incomplete_shimmer_amplifier", "create:sequenced_assembly");
     event.create("createastral:incomplete_copper_casing", "create:sequenced_assembly").modelJson({
       parent: "minecraft:block/cube",
       textures: {
