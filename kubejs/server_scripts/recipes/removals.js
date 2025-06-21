@@ -573,6 +573,7 @@
       { output: "yttr:lamp", input: "yttr:glowing_gas" },
       { output: "yttr:quicksilver" },
       { output: "minecraft:slime_ball", type: "yttr:centrifuging" },
+      { output: "yttr:lazor_emitter" },
       { input: "yttr:raw_gadolinite", type: "yttr:centrifuging" },
       { input: "minecraft:coal", type: "yttr:centrifuging" },
       // Minecraft
@@ -651,6 +652,8 @@
       { id: "vinery:wood_fired_oven_cooking/toast" },
       // techreborn
       { output: "techreborn:sulfur" },
+      { output: "techreborn:iridium_ingot" },
+      { output: "techreborn:iridium_block" },
       {
         input: "minecraft:soul_soil",
         output: "techreborn:coal_dust",

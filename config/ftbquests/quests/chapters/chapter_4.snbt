@@ -1805,9 +1805,6 @@
 				""
 				""
 				"{ftbquests.chapter.chapter_4.quests55.description3}"
-				""
-				""
-				"{ftbquests.chapter.chapter_4.quests55.description6}"
 			]
 			dependencies: ["752215E611021472"]
 			id: "64A1C434EB7021E6"

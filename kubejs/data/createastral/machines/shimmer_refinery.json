@@ -8,53 +8,85 @@
   },
   "gui": [
     {
-      "texture": "custommachinery:textures/gui/base_background.png",
+      "texture": "createastral:textures/gui/refinery/refinery_gui.png",
       "x": 0,
       "y": 0,
-      "type": "custommachinery:texture"
+      "type": "custommachinery:texture",
+      "width": 256,
+      "height": 192
     },
     {
       "x": 47,
-      "y": 80,
+      "y": 104,
       "type": "custommachinery:player_inventory"
     },
     {
+      "texture": "createastral:textures/gui/refinery/refinery_tank.png",
       "id": "inputtank",
-      "x": 90,
-      "y": 30,
-      "type": "custommachinery:fluid"
+      "x": 95,
+      "y": 35,
+      "type": "custommachinery:fluid",
+      "width": 18,
+      "height": 40
     },
     {
+      "texture": "createastral:textures/gui/refinery/refinery_tank_texture.png",
+      "id": "inputtank",
+      "x": 90,
+      "y": 29,
+      "type": "custommachinery:texture",
+      "width": 28,
+      "height": 52
+    },
+    {
+      "texture": "createastral:textures/gui/refinery/refinery_slot.png",
       "id": "inputslot",
       "x": 70,
       "y": 30,
-      "type": "custommachinery:slot"
+      "type": "custommachinery:slot",
+      "width": 16,
+      "height": 16
     },
     {
+      "texture": "createastral:textures/gui/refinery/refinery_slot.png",
       "id": "outputslot",
       "x": 142,
       "y": 30,
-      "type": "custommachinery:slot"
+      "type": "custommachinery:slot",
+      "width": 16,
+      "height": 16
     },
     {
+      "emptytexture": "createastral:textures/gui/refinery/refinery_energy_empty.png",
+      "filledtexture": "createastral:textures/gui/refinery/refinery_energy_full.png",
       "type": "custommachinery:energy",
       "x": 20,
-      "y": 20
+      "y": 20,
+      "width": 16,
+      "height": 50
     },
     {
-      "x": 116,
+      "emptyTexture": "createastral:textures/gui/refinery/refinery_progress_empty.png",
+      "filledTexture": "createastral:textures/gui/refinery/refinery_progress_full.png",
+      "x": 124,
       "y": 30,
-      "type": "custommachinery:progress"
+      "type": "custommachinery:progress",
+      "width": 12,
+      "height": 22
     },
     {
-      "x": 236,
-      "y": 5,
-      "type": "custommachinery:status"
+      "idleTexture": "createastral:textures/gui/refinery/refinery_status_idle.png",
+      "RunningTexture": "createastral:textures/gui/refinery/refinery_status_running.png",
+      "x": 220,
+      "y": 10,
+      "type": "custommachinery:status",
+      "width": 8,
+      "height": 12
     },
     {
       "text": "custommachinery.createastral.shimmer_refinery.text",
-      "x": 7,
-      "y": 5,
+      "x": 31,
+      "y": 6,
       "type": "custommachinery:text"
     }
   ],

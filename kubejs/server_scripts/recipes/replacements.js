@@ -659,6 +659,11 @@
         original: "minecraft:ender_pearl",
         replaceWith: "minecraft:ender_eye",
       },
+      {
+        predicate: { mod: "techreborn" },
+        original: "techreborn:iridium_nugget",
+        replaceWith: "yttr:yttrium_nugget",
+      },
       { original: "techreborn:carbon_plate", replaceWith: "techreborn:carbon_mesh" },
       { original: "techreborn:lazurite_plate", replaceWith: "create:lapis_sheet" },
       { original: "ae2:sky_stone_block", replaceWith: "ad_astra:sky_stone" },
