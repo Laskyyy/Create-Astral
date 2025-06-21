@@ -1,1 +1,5 @@
 hash-format = "sha256"
+
+# HEY YOU!
+# Please exclude this file from commits. It's a local cache that can cause issues when merged into main.
+# Apologies for the manual check - .gitignore does not work for this file.
