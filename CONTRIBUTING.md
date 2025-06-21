@@ -1,6 +1,11 @@
+---
+lang: en_GB
+# a british person wrote this document so we're making it british grammar
+---
+
 # Create: Astral Repository Contribution Guidelines
 
-YOU MUST REFER TO THE [LICENSE](/LICENSE.md) BEFORE MAKING ANY PULL REQUESTS OR PERSONAL MODIFICATIONS.
+**YOU MUST REFER TO THE [LICENSE](/LICENSE.md) BEFORE MAKING ANY PULL REQUESTS OR PERSONAL MODIFICATIONS.**
 
 Please also refer to the [CODE_STYLE](CODE_STYLE.md) document if making contributions to any JavaScript files.
 
@@ -8,21 +13,21 @@ If you make any notable changes, please note them in the [CHANGELOG](CHANGELOG.m
 
 ## Contents of this document:
 
--   [General Overview **(Please read this before anything else!)**](#general-overview)
-    -   [Locations that may be of interest](#locations-that-may-be-of-interest)
-    -   [Setting up your game instance](#setting-up-your-game-instance)
-    -   [Setting up your code environment](#setting-up-your-code-environment)
-        -   [Running the packwiz server within your locally cloned repository](#running-the-packwiz-server-within-your-locally-cloned-repository)
-        -   [Running the packwiz server using your PATH](#running-the-packwiz-server-using-your-path-windows-only)
--   [KubeJS, Resources, and Datapack contributions](#kubejs-resources-and-datapack-contributions)
-    -   [Housekeeping](#housekeeping)
-        -   [Recipe contributions](#recipe-contributions)
-        -   [Adding or modifying tags](#adding-or-modifying-tags)
-        -   [All other contributions of this category](#all-other-contributions-of-this-category)
-    -   [Internationalisation support](#internationalisation-and-localisation-support)
--   [Quest contributions](#quest-contributions)
-    -   [Language keys](#language-keys)
--   [Translating](#translating)
+- [General Overview **(Please read this before anything else!)**](#general-overview)
+  - [Locations that may be of interest](#locations-that-may-be-of-interest)
+  - [Setting up your game instance](#setting-up-your-game-instance)
+  - [Setting up your code environment](#setting-up-your-code-environment)
+    - [Running the packwiz server within your locally cloned repository](#running-the-packwiz-server-within-your-locally-cloned-repository)
+    - [Running the packwiz server using your PATH](#running-the-packwiz-server-using-your-path-windows-only)
+- [KubeJS, Resources, and Datapack contributions](#kubejs-resources-and-datapack-contributions)
+  - [Housekeeping](#housekeeping)
+    - [Recipe contributions](#recipe-contributions)
+    - [Adding or modifying tags](#adding-or-modifying-tags)
+    - [All other contributions of this category](#all-other-contributions-of-this-category)
+  - [Internationalisation support](#internationalisation-and-localisation-support)
+- [Quest contributions](#quest-contributions)
+  - [Language keys](#language-keys)
+- [Translating](#translating)
 
 ## General Overview
 
@@ -59,10 +64,10 @@ After you've done that, please take a look at the documentation for specific typ
 
 This is a simplified version of the tutorial found on the [packwiz website](https://packwiz.infra.link/tutorials/installing/packwiz-installer/) - it's recommended you look at that tutorial if you get stuck.
 
--   To start, make sure you have [Prism Launcher](https://prismlauncher.org/) or a launcher similar to it that can execute **pre-launch commands** _(if you are unsure as to what this means, download Prism anyway)_, such as [MultiMC](https://multimc.org/).
--   Create an instance in the launcher with just the Minecraft version (1.18.2), and Fabric version (0.16.3). Increase memory allocation to about 6-8 GB for the instance if you haven't already set it as a global value in your launcher.
--   Download the packwiz installer jar from [packwiz-installer-bootstrap](https://github.com/packwiz/packwiz-installer-bootstrap/releases), and put it into the `.minecraft/` folder in the instance, **not the `.minecraft/mods/` folder**. If there isn't already a `.minecraft/` folder, you can just create a folder with that name, or ideally you can start the instance once and close out of it once the folders have been generated.
--   Now, set up your launcher to execute the pre-launch command. If you're using Prism, go to Edit Instance ⇒ Settings ⇒ Custom commands, then check the Custom Commands tickbox, and paste the following command into the pre-launch command field:
+- To start, make sure you have [Prism Launcher](https://prismlauncher.org/) or a launcher similar to it that can execute **pre-launch commands** _(if you are unsure as to what this means, download Prism anyway)_, such as [MultiMC](https://multimc.org/).
+- Create an instance in the launcher with just the Minecraft version (1.18.2), and Fabric version (0.16.3). Increase memory allocation to about 6-8 GB for the instance if you haven't already set it as a global value in your launcher.
+- Download the packwiz installer jar from [packwiz-installer-bootstrap](https://github.com/packwiz/packwiz-installer-bootstrap/releases), and put it into the `.minecraft/` folder in the instance, **not the `.minecraft/mods/` folder**. If there isn't already a `.minecraft/` folder, you can just create a folder with that name, or ideally you can start the instance once and close out of it once the folders have been generated.
+- Now, set up your launcher to execute the pre-launch command. If you're using Prism, go to Edit Instance ⇒ Settings ⇒ Custom commands, then check the Custom Commands tick box, and paste the following command into the pre-launch command field:
 
 ```shell
 "$INST_JAVA" -jar packwiz-installer-bootstrap.jar http://localhost:8080/pack.toml
@@ -74,13 +79,13 @@ This is a simplified version of the tutorial found on the [packwiz website](http
 
 That's the game installation sorted, now we'll address the developer environment.
 
--   Make your own GitHub fork of this repository, then clone it locally using Git, and open it with a code editor of your choice. We recommend a proper IDE (Integrated Developer Environment), such as [Visual Studio Code](https://code.visualstudio.com/), or the open source version, [VSCodium](https://vscodium.com/) - **basic text editors such as Notepad++ are discouraged**.
-    > If you are unsure as to how to clone a repository, look up "how to clone a git repository locally" - as there are loads of tutorials online, and there are so many ways to do this (such as through the command line or through your IDE directly) that we won't cover it here.
+- Make your own GitHub fork of this repository, then clone it locally using Git, and open it with a code editor of your choice. We recommend a proper IDE (Integrated Developer Environment), such as [Visual Studio Code](https://code.visualstudio.com/), or the open source version, [VSCodium](https://vscodium.com/) - **basic text editors such as Notepad++ are discouraged**.
+  > If you are unsure as to how to clone a repository, look up "how to clone a git repository locally" - as there are loads of tutorials online, and there are so many ways to do this (such as through the command line or through your IDE directly) that we won't cover it here.
 
 There are multiple ways to go about the next step. We'll cover the following two:
 
--   Running the packwiz server within the locally cloned repository (all operating systems)
--   Running the packwiz server using your PATH (Windows)
+- Running the packwiz server within the locally cloned repository (all operating systems)
+- Running the packwiz server using your PATH (Windows)
 
 > For both methods, you will have to download the latest packwiz binary from the [GitHub workflows](https://github.com/packwiz/packwiz/actions). Click on the most recent "Workflow run" (ignore the names of them, just click the most recent one) and scroll down to "Artifacts". Download the correct file for your operating system.
 
@@ -90,11 +95,11 @@ There are, of course, many ways to do this depending on your operating system. F
 
 This is the easiest and most universal method to install, however other methods may be worth it for ease of use, or if you plan on using packwiz in other modpacks' repositories in the future.
 
--   Unzip the archive you downloaded and extract the packwiz file.
--   Navigate to the folder where your cloned repository is.
--   Move the packwiz file into that folder.
+- Unzip the archive you downloaded and extract the packwiz file.
+- Navigate to the folder where your cloned repository is.
+- Move the packwiz file into that folder.
 
-Simple as that! On MacOS and Linux-based operating systems, you can execute the file by running `packwiz serve` in the terminal while targeting the cloned repository's directory. Do note that on Windows, Powershell will block running the file. To bypass this, put `./packwiz.exe serve` in your terminal instead.
+Simple as that! On macOS and Linux-based operating systems, you can execute the file by running `packwiz serve` in the terminal while targeting the cloned repository's directory. Do note that on Windows, PowerShell will block running the file. To bypass this, put `./packwiz.exe serve` in your terminal instead.
 
 Now your Prism instance will automatically update when you start the game as long as the packwiz server is running (and you've saved your files). Note that this does not update the game as you edit the files in the repository, you have to restart the game every time you wish to update the files.
 
@@ -102,16 +107,16 @@ If you want, you could also write a batch script (here's an [example](/reload-ex
 
 #### Running the packwiz server using your PATH (Windows only)
 
-If you're tired of downloading the packwiz binary every time you start developing a new modpack, or you're tired of typing `./packwiz.exe serve` every time you start your terminal, you may wish to add the packwiz exe to your PATH variable. This allows you to run `packwiz serve` from any folder that contains the correct `pack.toml` and `index.toml` files for packwiz to reference, without needing another packwiz binary installed in the same folder.
+If you're tired of downloading the packwiz binary every time you start developing a new modpack, or you're tired of typing `./packwiz.exe serve` every time you start your terminal, you may wish to add the packwiz EXE to your PATH variable. This allows you to run `packwiz serve` from any folder that contains the correct `pack.toml` and `index.toml` files for packwiz to reference, without needing another packwiz binary installed in the same folder.
 
 This process is the same on Windows 10 and Windows 11.
 
--   Unzip the archive you downloaded and extract the packwiz executable to a safe permanent location, ideally outside the cloned repository, such as in your Documents folder.
--   Open the start menu (press the Windows key) and search for "View advanced system settings".
--   Click on "Environment Variables".
--   Under the "System variables" list, find "Path" and select it, then click "Edit".
--   In the dialog window that just opened, click "New" then add the full directory to the packwiz.exe file as a new item in the list.
--   Click "OK" on every window until the system settings have closed entirely.
+- Unzip the archive you downloaded and extract the packwiz executable to a safe permanent location, ideally outside the cloned repository, such as in your Documents folder.
+- Open the start menu (press the Windows key) and search for "View advanced system settings".
+- Click on "Environment Variables".
+- Under the "System variables" list, find "Path" and select it, then click "Edit".
+- In the dialog window that just opened, click "New" then add the full directory to the packwiz.exe file as a new item in the list.
+- Click "OK" on every window until the system settings have closed entirely.
 
 You will now be able to execute `packwiz serve` from any directory on your computer. Bearing in mind, of course, that it will only work in a folder where packwiz has been initialised (the Create: Astral repository already has it initialised).
 
@@ -123,21 +128,21 @@ As of May 2025, Create: Astral's code structure has been entirely [moved around 
 
 Here's the run-down:
 
--   All **asset and resource files** can be found in [/kubejs/assets/](/kubejs/assets/)
--   All **data-driven recipe files** are now handled by KubeJS and can be found in [/kubejs/server_scripts/recipes](/kubejs/server_scripts/recipes)
-    > There is an exception to the above, being the Hephaestus (tconstruct) modifiers, which can be found in [/kubejs/data/tconstruct/recipes/tools/modifiers/](/kubejs/data/tconstruct/recipes/tools/modifiers/)
--   All other **data-driven (datapack) .json files** (NOT RECIPE FILES) can be found in [/kubejs/data/](/kubejs/data/)
--   All **KubeJS startup scripts** are now organised to be more intuitively located in [/kubejs/startup_scripts/](/kubejs/startup_scripts/) - not much has changed otherwise
+- All **asset and resource files** can be found in [/kubejs/assets/](/kubejs/assets/)
+- All **data-driven recipe files** are now handled by KubeJS and can be found in [/kubejs/server_scripts/recipes](/kubejs/server_scripts/recipes)
+  > There is an exception to the above, being the Hephaestus (tconstruct) modifiers, which can be found in [/kubejs/data/tconstruct/recipes/tools/modifiers/](/kubejs/data/tconstruct/recipes/tools/modifiers/)
+- All other **data-driven (datapack) JSON files** (NOT RECIPE FILES) can be found in [/kubejs/data/](/kubejs/data/)
+- All **KubeJS startup scripts** are now organised to be more intuitively located in [/kubejs/startup_scripts/](/kubejs/startup_scripts/) - not much has changed otherwise
 
 For everything else, the place they're stored hasn't changed and should be rather intuitive for both first-time and long-time contributors.
 
 You can refer to the [KubeJS README](/kubejs/README.txt) for more information on what each folder in [/kubejs/](/kubejs/) does.
 
-If you're new to datapacks, resources, and KubeJS, then take a look at their respective wikis for more information on how to utilise them. Astral has been organised in such a way to aid in readability and accessibility so you may be able to pick up some skills from just reading through code.
+If you're new to datapacks, resources, and KubeJS, then take a look at their respective wikis for more information on how to utilise them. Astral has been organised in such a way to aid in readability and accessibility, so you may be able to pick up some skills from just reading through code.
 
--   [KubeJS Wiki for 1.18.2](https://wiki.latvian.dev/books/kubejs-legacy)
--   [Minecraft Wiki article on Data Packs](https://minecraft.wiki/w/Data_pack)
--   [Minecraft Wiki article on Resource Packs](https://minecraft.wiki/w/Resource_pack)
+- [KubeJS Wiki for 1.18.2](https://wiki.latvian.dev/books/kubejs-legacy)
+- [Minecraft Wiki article on Data Packs](https://minecraft.wiki/w/Data_pack)
+- [Minecraft Wiki article on Resource Packs](https://minecraft.wiki/w/Resource_pack)
 
 ### Housekeeping
 
@@ -147,9 +152,9 @@ In order to keep Astral tidy and to avoid it looking like it did before the May 
 
 For recipe contributions, please organise them in [/kubejs/server_scripts/recipes/](/kubejs/server_scripts/recipes/) by their crafting type rather than collecting all your contributions in one place. This makes it much easier to find all the added recipes.
 
--   For example, if I have a recipe for the Industrial Sawmill from Tech Reborn, I will add it to the already-existing file - [/kubejs/server_scripts/recipes/techreborn/industrial_sawmill.js](/kubejs/server_scripts/recipes/techreborn/industrial_sawmill.js).
--   If I have a recipe for a crafting type that does not yet exist, I will make a new file using the following directory template:
-    > /kubejs/server_scripts/recipes/{mod namespace}/{crafting type}.js
+- For example, if I have a recipe for the Industrial Sawmill from Tech Reborn, I will add it to the already-existing file - [/kubejs/server_scripts/recipes/techreborn/industrial_sawmill.js](/kubejs/server_scripts/recipes/techreborn/industrial_sawmill.js).
+- If I have a recipe for a crafting type that does not yet exist, I will make a new file using the following directory template:
+  > /kubejs/server_scripts/recipes/{mod namespace}/{crafting type}.js
 
 Please also **don't** make recipes in the [/kubejs/data/](/kubejs/data/) folder as it makes it more difficult to find if recipes are spread across both KubeJS and datapacks.
 
@@ -167,7 +172,7 @@ Feel completely free to use helper functions to add recipes en-masse, as long as
 
 #### Adding or modifying tags
 
-Registering or modifying tags (such as `#minecraft:logs` or `#create:wrench_pickup`) is to be done via datapack and **not KubeJS**, even if you need to use helper functions. We understand this may be inconvenient but it allows us to have a much more easily navigatable tags library for reference purposes.
+Registering or modifying tags (such as `#minecraft:logs` or `#create:wrench_pickup`) is to be done via datapack and **not KubeJS**, even if you need to use helper functions. We understand this may be inconvenient, but it allows us to have a much more easily navigable tags library for reference purposes.
 
 #### All other contributions of this category
 
@@ -185,35 +190,35 @@ As you can imagine this is very important for accessibility for players around t
 
 Here's an [example](https://github.com/Laskyyy/Create-Astral/pull/389) of changing the added tooltip and some other text to a language key. For adding a new item/block/fluid, the naming of the key in the language file needs to follow these rules.
 
-To name keys in the [lang file](/kubejs/assets/createastral/lang/en_us.json) correctly, you need use the **prefix** (`item/block/fluid`) + the **namespace** of mod (such as `kubejs`,`create_astral`) + the **id** of item/block/fluid. For vaules, it's the **displayed name** instead of translation keys. Here is an example:
+To name keys in the [lang file](/kubejs/assets/createastral/lang/en_us.json) correctly, you need to use the **prefix** (`item/block/fluid`) + the **namespace** of mod (such as `kubejs`,`create_astral`) + the **ID** of item/block/fluid. For values, it's the **displayed name** instead of translation keys. Here is an example:
 
 ```json
 {
-    "item.createastral.crushed_raw_desh": "Crushed Raw Desh",
-    "block.kubejs.fragile_sheet_block": "Fragile Sheet Block",
-    "fluid.kubejs.molten_calorite": "Calorite"
+  "item.createastral.crushed_raw_desh": "Crushed Raw Desh",
+  "block.kubejs.fragile_sheet_block": "Fragile Sheet Block",
+  "fluid.kubejs.molten_calorite": "Calorite"
 }
 ```
 
-For other texts in javascript, you should use [text components](https://wiki.latvian.dev/books/kubejs-legacy/page/components-kubejs-and-you). Here is an [example](/kubejs/startup_scripts/tooltip/minecraft.js#L65).
+For other texts in JavaScript, you should use [text components](https://wiki.latvian.dev/books/kubejs-legacy/page/components-kubejs-and-you). Here is an [example](/kubejs/startup_scripts/tooltip/minecraft.js#L65).
 
 Here are the files where language keys are assigned a translated text value:
 
--   [Main lang file for most assets](/kubejs/assets/createastral/lang/en_us.json)
--   [Lang file for custom create ponder guides](/kubejs/assets/ponderjs_generated/lang/en_us.json)
--   [Lang file for custom menu texts](/config/fancymenu/custom_locals/astralmenu/en_us.local)
+- [Main lang file for most assets](/kubejs/assets/createastral/lang/en_us.json)
+- [Lang file for custom create ponder guides](/kubejs/assets/ponderjs_generated/lang/en_us.json)
+- [Lang file for custom menu texts](/config/fancymenu/custom_locals/astralmenu/en_us.local)
 
 You MUST assign a text value for lang keys in the en_us local file before any other language. The en_us file is used as a fallback if a translation doesn't exist for a given language.
 
 ## Quest contributions
 
-If you've found yourself in this section, it's likely that you're making a pull request to fix a typo, update an inconsistency, or add some quality-of-life (QoL) to the in-game FTB Quests questbook. In that case, thank you for making the modpack more accessible and friendly to players who might be newer to modded minecraft <3
+If you've found yourself in this section, it's likely that you're making a pull request to fix a typo, update an inconsistency, or add some quality-of-life (QoL) to the in-game FTB Quests questbook. In that case, thank you for making the modpack more accessible and friendly to players who might be newer to modded Minecraft <3
 
 When editing the quests, you may notice something very strange about the quests:
 
 ### Language keys
 
-Language keys, or lang keys, are a way of referring to a translation present in an en_us.json file within the modpack's resources. Refer to the [Internationalisation and localisation support](#internationalisation-and-localisation-support) section of this document for more information on what this means.
+Language keys, or lang keys, are a way of referring to a translation present in an `en_us.json` file within the modpack's resources. Refer to the [Internationalisation and localisation support](#internationalisation-and-localisation-support) section of this document for more information on what this means.
 
 If you just want to edit the text, do it in this [file](/kubejs/assets/createastral/lang/en_us.json#L515) underneath the FTB Quests section. It's recommended that you have both the game and your IDE open side-by-side to make this process easier. Do not edit the text within the questbook directly.
 
@@ -229,9 +234,9 @@ First of all, refer to the [Minecraft Wiki's article on Language](https://minecr
 
 Next, you'll need to go to the following folder locations:
 
--   [Main lang file for most assets](/kubejs/assets/createastral/lang/en_us.json)
--   [Lang file for custom create ponder guides](/kubejs/assets/ponderjs_generated/lang/en_us.json)
--   [Lang file for custom menu texts](/config/fancymenu/custom_locals/astralmenu/en_us.local)
+- [Main lang file for most assets](/kubejs/assets/createastral/lang/en_us.json)
+- [Lang file for custom create ponder guides](/kubejs/assets/ponderjs_generated/lang/en_us.json)
+- [Lang file for custom menu texts](/config/fancymenu/custom_locals/astralmenu/en_us.local)
 
 In each of those, make a copy of the en_us file. **DO NOT EDIT THIS FILE TO TRANSLATE IT TO A DIFFERENT LANGUAGE!** Rename the copy you just made to the locale code for your language that you found earlier on the Minecraft Wiki. Now, you can translate all the texts in your copy into your language.
 
