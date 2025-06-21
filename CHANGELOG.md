@@ -1,3 +1,8 @@
+---
+lang: en_GB
+# this version of the changelog was written by a british person so the grammar will be british
+---
+
 # Create: Astral Changelog
 
 All notable changes to this project will be documented in this file.
@@ -8,7 +13,7 @@ The format is a slight modification of the [Keep a Changelog](https://keepachang
 
 Release dates attached to version numbers are in the format `YYYY/MM/DD` as per the standards of [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html), recommended by [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
-Please note that patch notes for versions 2.1.3 and lower are currently lacking in full information, due to poor documentation of changes before implementation of the changelog.
+Please note that patch notes for versions 2.1.3 and lower are currently lacking in full information, or may even be entirely inaccurate, due to poor documentation of changes before implementation of the changelog. If you notice anything that is incorrect or missing, please open a Pull Request with your fixes.
 
 ## 2.1.4 [Unreleased]
 
@@ -380,7 +385,7 @@ With this patch, the questbook now has been fully internationalised, adding loca
 
 #### Gameplay-changing
 
-- Removed Venus and Glacio (the one in Proxima Centauri, not the one in orbit of Mars) from the planet menu. Venus has been removed as it has very little content, is not at all required for progression, and is not within our scope to build upon any time soon.
+- Removed Venus and the "fake" Glacio (the one in Proxima Centauri, not the one in orbit of Mars, that one is still there) from the planet menu. Venus has been removed as it has very little content, is not at all required for progression, and is not within our scope to build upon any time soon.
 
 #### Behind-the-scenes
 
@@ -392,116 +397,192 @@ With this patch, the questbook now has been fully internationalised, adding loca
 
 #### Mod additions
 
-> _Changelog construction in progress..._
+- Added Astral Generators:
+  - Recipes exist, but there is not yet documentation in the questbook.
 
 #### Gameplay-changing
 
-> _Changelog construction in progress..._
+> _Nothing to see here yet..._
 
 #### Quality of life
 
-> _Changelog construction in progress..._
+> _Nothing to see here yet..._
 
 #### Behind-the-scenes
 
-> _Changelog construction in progress..._
+> _Nothing to see here yet..._
 
 ### CHANGES
 
 #### Major mod updates
 
-> _Changelog construction in progress..._
+> _Nothing to see here yet..._
 
 #### Gameplay-changing
 
-> _Changelog construction in progress..._
+- Changed the location of the machine controller in the Stone Growth Chamber to be one block lower to allow for hopper/chute access. Old structure is retained so as to not immediately break existing factories, however it only generates Andesite regardless of where it's placed.
+- Stone Growth Chambers no longer generate output based on dimension, instead they now generate based on what blocks they're made from. Please refer to the original Chapter 2 quest for more information.
+- Buffed the recipe for Blaze Cakes so they now use less Hellfire.
+- Reverted nerf for Tech Reborn fuels.
+- Unified the Andesite Alloy blocks from Create and Create: Astral (KubeJS).
+- Added a recipe to melt Slime Logs.
+- Added some new recipe options for Calcite and Dripstone - also made them mill into higher yields of Bonemeal.
+- Added more automation routes for dyes.
+- Screw Breeches are now wrenchable to pick them up without breaking them - they could not previously be obtained in survival without using Silk Touch.
+- Buffed recipe for Ink Sacs.
+- Tweaked some Tech Reborn fluids to not use ingot amounts (111)
 
 #### Quality of life
 
-> _Changelog construction in progress..._
+- Structure NBT (???)
+- Fragile Sheet Blocks are now wrenchable to pick up.
 
 #### Bug patches
 
-> _Changelog construction in progress..._
+- Fixed Stone Growth Chambers not generating outputs on servers.
+- Fixed an issue where falling out of Earth Orbit would put you in the End.
+- Fixed Space Stations voiding nearby terrain when created.
+- Fixed the recipe for Seitan.
+- Fixed missing names for Tech Reborn fluids.
+- Fixed a recipe conflict for crushing Andesite - the recipe now produces Cobblestone instead of Tin Nuggets.
+- Fixed milling recipes incorrectly displaying outputs as "200%" chance instead of the intended 100% chance for 2 items.
+- Restored methods of getting resources from Soul Sand and Soul Soil.
+- Fixed the recipe for the Shimmer Amplifier using impossible fluid amounts in the spouting step of the sequenced assembly.
 
 #### Minor mod updates
 
-> _Changelog construction in progress..._
+> _Nothing to see here yet..._
 
 #### Behind-the-scenes
 
-> _Changelog construction in progress..._
+> _Nothing to see here yet..._
 
 ### REMOVALS
 
 #### Mod removals
 
-> _Changelog construction in progress..._
+> _Nothing to see here yet..._
 
 #### Gameplay-changing
 
-> _Changelog construction in progress..._
+- Deprecated the original structure for the Stone Growth Chamber in favour of the new one. Expect the old structure to be removed in an upcoming patch.
+- Removed all recipes for the Zinc Sheets from Create: Deco, as they have no uses that can't be replaced with the Zinc Sheets from Create: Crafts And Additions.
 
 #### Behind-the-scenes
 
-> _Changelog construction in progress..._
+> _Nothing to see here yet..._
 
 ## 2.1 - 2024/10/08
+
+> **Note**:
+>
+> Along with the issues of a non-standard documentation, the changelog for 2.1 may differ in language style from the rest of the changelog due to being originally written much more informally, as well as due to just how large of an update 2.1 was to Create: Astral. Due to its size, I have decided to just copy and paste the original changelog while organising each comment into their respective categories and fixing basic grammatical mistakes that I immediately noticed.
+>
+> If you wish to take on the responsibility of cleaning this up, please make a Pull Request on the GitHub repository - it'd be much appreciated.
 
 ### ADDITIONS
 
 #### Mod additions
 
-> _Changelog construction in progress..._
+- Added XPCrystals
+- Added Traveler's Backpacks
+- Added Yttr
+- Added Create Big Cannons
+- Added Create: Copycats+
+- Added Create Additions
+- Added Project Table
+- Added Create: Ender Transmission
+- Added Create: Estrogen
+- Added Storage Drawers
+- Added Discord Rich Presence
+- Added TrashCans
+- Added Buildings Gadgets and Trowels
 
 #### Gameplay-changing
 
-> _Changelog construction in progress..._
+- Introduced a new Chapter 6 and an actual tangible End of the modpack.
+- Added many new structures placed around the world to strengthen Create: Astral’s 'unique' atmosphere (especially thanks to structure contest submitters). Structures are now vastly more varied, and even inhabit orbit dimensions.
+- Introduced an entirely new create-related enchantmant chain, for automation of enchantments (in the late game, this extends above maximum level caps for certain enchantments).
+- Added methods of obtaining meats and mob drops without directly harming an animal at all.
+- Multiple new multiblocks spread across all tiers of progression have been created. (REI support for some may be limited or non-existent, but recipes will be explained within the questbook!)
+- Added a Create: Astral multiblock to lessen the reliance on normal cobblestone gens to ease the strain item entities sometimes have on the game.
+- Portals for Mars & Mercury now exist, but are less simple to obtain than the Shimmer Portal, and will be obtained later in chapters where you have already explored that planet. (Reducing reliance on rockets for when the 'gimmick' of them has faded)
+- Added Immersive Aircraft "Blueprints", which can be found in generated structure loot tables. These can be duplicated infinitely once the first of each is obtained.
+- Added storage drawers to provide a smarter solution to storage than packages and CSU’s. These come with custom-implemented storage drawer upgrades for smoother progression.
+- Added two more dimensions that are relevant in Ch4 (one being entirely new), and another dimension is introduced in Ch6.
+- Added train support for custom Astral Portals.
+- Added secret plushies :3
+- Added new Potato cannon projectiles, some useful, some less than useful, some… explosive…
 
 #### Quality of life
 
-> _Changelog construction in progress..._
+- Added an optional community paintings resource pack, made from content posted to our Discord server's #fan-art channel.
+- Added Ponder support for some custom multiblocks, including the electrolyzer.
+- Re-added trinket slots to allow as many trinkets as you can fit…
+- Added prompt to rEaD tHe QuEsTbOoK
 
 #### Behind-the-scenes
 
-> _Changelog construction in progress..._
+> _Nothing to see here yet..._
 
 ### CHANGES
 
 #### Major mod updates
 
-> _Changelog construction in progress..._
+- Updated Create to 0.5.1 - Rise and Shine
+- Updated Astral Additions to 1.3.1
+  - Including new mobs, items with unique gameplay mechanics, a varietiy of fixes, and more.
 
 #### Gameplay-changing
 
-> _Changelog construction in progress..._
+- Gave some love the entire quest book to include clearer descriptions, new automation explanations, and an almost entirely remade mid-endgame.
+- Reworked the resource generation in its totality (goodbye, deepslate gen). Cobblestone generators still kick off many production chains, and all lunar cobble varieties can be generated in the Stone Growth Chamber multiblock in different planet orbits. All metals can be obtained in much greater varieties AND quantities from alternative sources, and those sources (e.g. create orestones) can be automated more easily.
+- Reworked and added a plethora of new Create-ified food recipes for all food mods. (Inc. Liquid Food processing PR).
+- Reworked Villagers to work in Create: Astral by changing the trades to not break progression, and changed some trader varieties to be more thematic to a create-pack.
+- Adjusted the power generation curve by adding new options and reworking/buffing the lesser used ones.
+- Reworked Tinker tool balance. (Buffed sledgehammer back to it's true strength. Additionally, adjusted lesser used tools to be more relevant).
+- Changed inventory management, by making shulker boxes and the newly added Travelers Backpack (Compatible with spacesuits!) be accessible more conveniently.
+- Reworked AE2 Recipes to work with Create instead of the Vanilla AE2 methods, adjusted the questline for it.
+- Adjusted Ad Astra planet generation (Mercury is now flatter, but retains patches of extreme spikes and mars terrain is now more rough). Ore should now generate more commonly / evenly to incentivise exploring on your first visit.
+- Superheating through blaze cakes are back, liquid superheating still exists and is even smoother, accepting the actual fluids rather than buckets when using a straw.
+- Easier access to Brass Create components early-on, including the regular suite of funnels/tunnels, alongside stockpile switches and content observers.
+- Added log stripping support for all wood types.
+- Reworked a large amount of stonecutting & mechanical saw recipes so they integrate with Create sawing smoothly.
 
 #### Quality of life
 
-> _Changelog construction in progress..._
+- Reworked the primary UI, and re-made almost all of the existing textures for Create: Astral that weren't directly created by us to be in-house.
+- Create-Style sheet textures replace all types of metal plates, and transitional textures for a number of create sequenced assemblies should further differentiate items in active assembly lines.
+- Completely overhauled the main menu, with new custom icons for the buttons with short animations to make it feel more alive, as well as a collection of screenshots from the community creating a slideshow in the background.
+- Introduced many extra tooltips for more informational content regarding less-clear item usages.
+- Added too many splash texts, to hopefully make you smile, because we love you. <3
+- Easy access home from the end by shift clicking any bedrock at y=0
 
 #### Bug patches
 
-> _Changelog construction in progress..._
+- Fixed the default settings configuration setup (Will now keep your settings every time you update the pack).
+- Fixed fluid player behaviour for custom fluids (collision/floating/lava burning).
+- Fixed common duplication bugs through updating to Create 0.5.1
+- Fixed loot table behaviour (Example: Loot tables were sometimes not generating properly, when a player visits another structure of the same type)
 
 #### Minor mod updates
 
-> _Changelog construction in progress..._
+> _Nothing to see here yet..._
 
 #### Behind-the-scenes
 
-> _Changelog construction in progress..._
+> _Nothing to see here yet..._
 
 ### REMOVALS
 
 #### Mod removals
 
-> _Changelog construction in progress..._
+- Removed Create: Sifter - its recipes have been distributed between different standard Create processes.
 
 #### Gameplay-changing
 
-> _Changelog construction in progress..._
+- Removed the reliance on 10k infinite pools of fluids, added tiered automation recipes for Shimmer and Lava, and further recipes for most other fluid types (10k pools are now disabled by default, but can be re-enabled in the Create settings widget on the pause menu).
 
 #### Behind-the-scenes
 
-> _Changelog construction in progress..._
+> _Nothing to see here yet..._
