@@ -38,6 +38,8 @@ This update comes with a completely overhauled file structure for Astral's own c
 #### Quality of life
 
 - Re-added the in-game changelogs for 2.1.1 and 2.1.2, and preserved the changelog for 2.1.3.
+- Added four new GUIs for the Electrolyser, Distillation Tower, Stone Growth Chamber, and Shimmer Refinery multiblock structures.
+- Added a dedicated transistional item for the Shimmer Amplifier sequenced assembly recipe.
 
 #### Behind-the-scenes
 
@@ -73,6 +75,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 - All three dough types have been harmonised into `create:dough` - meaning there are no longer recipes to make the other two types of dough, and all recipes now accept `create:dough`.
 - Re-enabled the recipe for Rope from Campanion as it is the only rope that can be used to make rope bridges.
 - Added a new recipe for Zinc Sheet Metal from Create Deco as its recipe was unintentionally removed when unifying the Zinc Sheets in a prior update.
+- Added a recipe for Helium which uses Glowdamp.
 
 #### Quality of life
 
@@ -87,6 +90,10 @@ This update comes with a completely overhauled file structure for Astral's own c
 - Added tooltips to Traveler's Backpacks that have abilities to clarify that abilities are disabled by default. Bear in mind that they can be re-enabled in the config file.
 - Added a description to some of the quests in the Astral Signals questline to explain how to finish processing data drives as REI doesn't want to display the recipe.
 - The Bedrock Stone generator quest now tries to clarify that it needs to specifically be a Stone generator and not a Cobblestone generator, and also attempts to explain how to make a Stone generator.
+- Added more accurate information to the Brass Casing quest in Chapter 3.
+- Grouped all Compressor blocks (e.g. Compressed Cobblestone) into one REI group.
+- Made Rocket Casing and Desizer Casing able to be picked up with wrenches.
+- Made Basic, Advanced, and Industrial Machine Frames and Machine Casings able to be picked up with wrenches.
 
 #### Bug patches
 
@@ -116,6 +123,10 @@ This update comes with a completely overhauled file structure for Astral's own c
 - Amended Chapter 3's Steel quests near the end of the chapter to stop spreading residual misinformation from 2.0 about Steel.
 - Fixed a recipe conflict with the Lune-Shroom-boosted Shimmer recipe and the similar non-boosted recipe by removing the heat requirement for the Lune-Shroom-boosted recipe.
 - Fixed a duplication bug involving the Yttr Chute by removing its recipe and hiding it from REI.
+- Removed incorrect part of the description for the Tesla Coil quest in Chapter 3 to do with charging items.
+- Fixed a description error in the Lead-lined Space Suit quest in Chapter 4 calling it a Netherite suit instead of a Lead-lined suit.
+- Changed the recipe for the Yttr Lazor Emitter due to Brookite being unobtainable.
+- Replaced Iriduim that was being used in some recipes with Yttrium. Also removed the Iridium Ingot and Iridium Block recipes.
 
 #### Minor mod updates
 
