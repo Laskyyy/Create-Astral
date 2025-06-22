@@ -1,4 +1,5 @@
 (function travelersbackpackToolTips() {
+  const { addLocalizedShiftTooltip } = global.startup;
   onEvent("item.tooltip", (event) => {
     /** @type {Helper.Tooltip[]} */
     const travelersbackpackToolTips = [

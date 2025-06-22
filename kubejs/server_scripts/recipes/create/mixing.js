@@ -648,7 +648,7 @@
       },
       {
         output: Fluid.of("tconstruct:molten_hepatizon", INGOT * 4),
-        input: ["techreborn:cobalt_ingot", Item.of("tconstruct:lead_ingot", 2)],
+        input: ["tconstruct:cobalt_ingot", Item.of("techreborn:lead_ingot", 2)],
         heat: "superheated",
         time: 5,
       },

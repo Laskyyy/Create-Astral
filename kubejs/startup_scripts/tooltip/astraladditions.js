@@ -1,4 +1,5 @@
 (function astralAdditionsTooltips() {
+  const { addLocalizedShiftTooltip } = global.startup;
   onEvent("item.tooltip", (event) => {
     event.addAdvanced("astraladditions:fragile_item", (item, advanced, text) => {
       if (!event.isShift()) {
