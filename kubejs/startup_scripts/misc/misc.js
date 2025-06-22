@@ -31,6 +31,9 @@ global.upgrades = [
     multiplier: 1048576, // 2^20x, this makes the regular drawer store 2^31 items
   },
 ];
+
+console.info("Create: Astral Modpack version = 2.1.4");
+
 (function misc() {
   const $DeferredRegister = java("dev.architectury.registry.registries.DeferredRegister");
   const $Registry = java("net.minecraft.core.Registry");
