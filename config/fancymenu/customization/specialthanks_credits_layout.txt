@@ -3,14 +3,14 @@ type = fancymenu_layout
 layout-meta {
   identifier = main_menu_image_credits
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1749199546618
+  last_edited_time = 1750554846504
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
   custom_menu_title = Create: Astral Credits
-  [loading_requirement_container_meta:3d94c5a4-1269-49c9-99d5-39dbf5f544ae-1749199183798] = [groups:][instances:d3036992-c3b3-46e5-aaf6-60f58b90006b-1748891901757;]
+  [loading_requirement_container_meta:1958fc23-7729-4e75-8e90-84b199e171e5-1750554799692] = [groups:][instances:d3036992-c3b3-46e5-aaf6-60f58b90006b-1748891901757;]
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:d3036992-c3b3-46e5-aaf6-60f58b90006b-1748891901757] = credits_screen_visible:2
 }
 
@@ -388,7 +388,7 @@ element {
   base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 1921
-  auto_sizing_base_screen_height = 1017
+  auto_sizing_base_screen_height = 1080
   sticky_anchor = false
   anchor_point = mid-centered
   x = -177
@@ -469,7 +469,7 @@ element {
 
 element {
   interactable = true
-  source = {"placeholder":"local","values":{"key":"astralmenu.creditsmenu.specialthanks.betatesters"}}
+  source = ^^^%n%{"placeholder":"local","values":{"key":"astralmenu.creditsmenu.specialthanks.betatesters"}}%n%^^^
   source_mode = direct
   shadow = true
   case_mode = upper
@@ -506,7 +506,7 @@ element {
   auto_sizing_base_screen_height = 1080
   sticky_anchor = false
   anchor_point = mid-centered
-  x = -227
+  x = -110
   y = -20
   width = 220
   height = 20
