@@ -141,6 +141,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 - Added a missing recipe for sawing Rubber Logs to produce Bark as a byproduct.
 - Added missing Copper Oxidation recipes to the Stonecutter.
 - Fixed an issue where Shadow Drawers would keep eating Molten Tin when casting due to being able to be used in their own recipe.
+- Fixed incorrectly assigned Spruce Log variant names from Chipped.
 
 #### Minor mod updates
 
