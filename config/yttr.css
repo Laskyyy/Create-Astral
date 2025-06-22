@@ -1,7 +1,7 @@
 /* Yttr config file. Based on a subset of CSS. My crusade to make cursed configs continues... */
 
 #general {
-	/*
+  /*
 	 * If set to "on", some quality-of-life changes to compensate for latency will be made. However,
 	 * these changes also make cheating easier, so they should only be used on a whitelisted server
 	 * with a trusted playerbase.
@@ -10,62 +10,62 @@
 	 * timing on the server side. This makes timing firing the rifle feel much better, but a hacked
 	 * client can get perfect shots every time.
 	 */
-	trust-players: off;
-	
-	/*
+  trust-players: off;
+
+  /*
 	 * If set to "on", Yttr will add all modded blockstates to the debug world after mods have
 	 * initialized.
 	 */
-	fixup-debug-world: on;
-	
-	/*
+  fixup-debug-world: on;
+
+  /*
 	 * If set to "on", enables inside-jokes and various chaos. Nothing destructive.
 	 */
-	shenanigans: on;
-	
-	/*
+  shenanigans: on;
+
+  /*
 	 * If set to "on", Overworld void holes created through other means than a Bedrock Breaker (e.g.
 	 * creative breaking) will still create Void Geysers. Turn this off if you have other mods that
 	 * need void holes for their own reasons.
 	 */
-	convert-void-holes: off;
+  convert-void-holes: off;
 }
 
 #client {
-	/*
+  /*
 	 * If set to "on", cleaved slopes will try to feel smooth. Kind of buggy, but when it works it's
 	 * awesome.
 	 */
-	slope-smoothing: on;
-	
-	/*
+  slope-smoothing: on;
+
+  /*
 	 * If set to "on", force-disables OpenGL compatibility mode. "auto" acts as "on" on macOS, and
 	 * "off" everywhere else.
 	 *
 	 * Running Yttr under the OpenGL Core Profile is NOT SUPPORTED, and may lead to RENDER BUGS and
 	 * CRASHES.
 	 */
-	force-opengl-core: auto;
-	
-	/*
+  force-opengl-core: auto;
+
+  /*
 	 * The color of the ingame configuration menu.
 	 */
-	config-color: teal;
-	
-	/*
+  config-color: teal;
+
+  /*
 	 * If set to "on", the vanilla debug HUD will be set to half (or 2/3, on odd gui scales) size.
 	 */
-	shrink-debug-hud: on;
-	
-	/*
+  shrink-debug-hud: on;
+
+  /*
 	 * If on, contextual control hints will appear when holding some items, providing information on
 	 * which keys/buttons do what, how, and when.
 	 */
-	control-hints: on;
+  control-hints: on;
 }
 
 #rifle {
-	/*
+  /*
 	 * If set to "off", the Void rifle mode will be disabled. It provides an easy way to destroy
 	 * massive amounts of blocks very cheaply (once sufficiently far into Yttr's progression) and
 	 * can be a griefing tool.
@@ -75,8 +75,8 @@
 	 *
 	 * If that's not enough for you, this nuclear option off switch is offered.
 	 */
-	allow-void: off;
-	/*
+  allow-void: off;
+  /*
 	 * If set to "off", the Explode rifle mode will be disabled. It provides a relatively cheap way
 	 * to create normal vanilla explosions. If set to "soft", the explosions will not break any
 	 * blocks, but will still damage entities and set off Bedrock Breakers.
@@ -85,95 +85,95 @@
 	 * Void Geysers and obtain Bedrock Shards. If you are afraid of explosions, it's recommended to
 	 * use "soft" rather than "off".
 	 */
-	allow-explode: on;
-	/*
+  allow-explode: on;
+  /*
 	 * If set to "off", the Fire rifle mode will be disabled. It provides a way to light fires, and
 	 * destroy blocks in #yttr:fire_mode_instabreak instantly.
 	 */
-	allow-fire: off;
-	
-	/*
+  allow-fire: off;
+
+  /*
 	 * If on, ding noises will play as the rifle charges informing you of important timing points.
 	 * The first ding is for a normal 500kJ shot, and there are then three dings leading up to the
 	 * 650kJ shot.
 	 */
-	timing-assist: on;
+  timing-assist: on;
 }
 
 #enchantments {
-	/*
+  /*
 	 * If on, the Vorpal weapon enchantment can be obtained, which provides a level-dependent chance
 	 * to deal a very large of damage on strike.
 	 */
-	vorpal: on;
-	/*
+  vorpal: on;
+  /*
 	 * If on, the Disjunction weapon enchantment can be obtained, which acts as an analogue to
 	 * Smite for Ender creatures.
 	 */
-	disjunction: on;
-	/*
+  disjunction: on;
+  /*
 	 * If on, the Curse of Annihilation tool enchantment can be obtained, which completely destroys
 	 * any items that would have been dropped when breaking a block.
 	 */
-	annihilation: on;
-	/*
+  annihilation: off;
+  /*
 	 * If on, the Curse of Shattering tool enchantment can be obtained, which "shatters" dropped
 	 * items via 1x1 crafting recipes, reverse-stonecutting, and more.
 	 */
-	shattering: on;
-	/*
+  shattering: off;
+  /*
 	 * If on, the Springing coil enchantment can be obtained, increasing your jump height.
 	 */
-	springing: on;
-	/*
+  springing: on;
+  /*
 	 * If on, the Stabilization coil enchantment can be obtained, removing the midair break speed
 	 * penalty.
 	 */
-	stabilization: on;
-	
-	/*
+  stabilization: on;
+
+  /*
 	 * If on, Yttr's Curses can be obtained via regular enchanting.
 	 */
-	curses-in-table: on;
+  curses-in-table: on;
 }
 
 #worldgen {
-	/*
+  /*
 	 * Generate Gadolinite ore in the overworld, a source of Yttrium and Neodymium, plus a bonus
 	 * source of iron.
 	 * 
 	 * DISABLING THIS BREAKS YTTR'S PROGRESSION. You need to provide an alternate way to get
 	 * Yttrium and Neodymium.
 	 */
-	gadolinite: off;
-	/*
+  gadolinite: off;
+  /*
 	 * Generate Brookite ore in the overworld, an ore specifically for tools and decorative blocks.
 	 * 
 	 * In the future, Yttr progression will require Brookite; for now, disabling this is safe.
 	 */
-	brookite: off;
-	
-	/*
+  brookite: off;
+
+  /*
 	 * Generate Squeeze Trees in the overworld, providing an easy source of sponges, Delicace, and
 	 * a convenient way to flood areas with water.
 	 * 
 	 * Squeeze Trees are not required for Yttr progression.
 	 */
-	squeeze-trees: off;
-	/*
+  squeeze-trees: off;
+  /*
 	 * Generate the Wasteland biome.
 	 * 
 	 * The Wasteland is not required for Yttr progression.
 	 */
-	wasteland: off;
-	
-	/*
+  wasteland: off;
+
+  /*
 	 * Replace the Nether's bottom bedrock with unremovable "Core Lava" and barriers. This exists
 	 * to help tie together Yttr's lore, but it provides an easy source of infinite lava, may break
 	 * other mods that expect bedrock under the nether, and it's hard to get out of if you fall in.
 	 */
-	core-lava: on;
-	/*
+  core-lava: on;
+  /*
 	 * Replace the Nether's ceiling and top bedrock with the "Scorched Summit", a new biome.
 	 * 
 	 * In the future, Yttr progression will require visiting the Summit; for now, disabling this is
@@ -183,19 +183,19 @@
 	 * without any mods. Just removing the bedrock and providing this much more interesting
 	 * replacement makes more sense than you think.
 	 */
-	scorched: on;
-	/*
+  scorched: on;
+  /*
 	 * Perform Scorched retrogeneration in Nether chunks that still have bedrock.
 	 *
 	 * Won't destroy existing structures.
 	 */
-	scorched-retrogen: off;
-	
-	/*
+  scorched-retrogen: off;
+
+  /*
 	 * Generate "Roots of Continuity" on the underside of small End islands.
 	 * 
 	 * DISABLING THIS BREAKS YTTR'S PROGRESSION. You need to provide an alternate way to access
 	 * Drops of Continuity.
 	 */
-	continuity: off;
+  continuity: off;
 }
