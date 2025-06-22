@@ -14,7 +14,7 @@ variable {
 
 variable {
   name = changelog_visible
-  value = 0
+  value = 
   reset_on_launch = true
 }
 
