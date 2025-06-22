@@ -176,7 +176,7 @@
             "minecraft:nether_wart_block",
             "minecraft:warped_wart_block",
           ],
-          "naturalist:glow_goop",
+            "naturalist:glow_goop",
           { fluid: "create:honey", amount: 25 * mB },
         ],
         time: 100,
@@ -274,31 +274,13 @@
       },
       {
         output: "techreborn:plantball",
-        input: [Ingredient.of("#minecraft:leaves", 9), { fluid: "createaddition:seed_oil", amount: 500 * mB }],
-        heat: "heated",
-        time: 1000,
-      },
-      {
-        output: "techreborn:plantball",
-        input: [Ingredient.of("#c:grass_variants", 9), { fluid: "createaddition:seed_oil", amount: 500 * mB }],
-        heat: "heated",
-        time: 1000,
-      },
-      {
-        output: "techreborn:plantball",
-        input: [Item.of("minecraft:kelp", 9), { fluid: "createaddition:seed_oil", amount: 500 * mB }],
-        heat: "heated",
-        time: 1000,
-      },
-      {
-        output: "techreborn:plantball",
-        input: [Item.of("createastral:marimo", 9), { fluid: "createaddition:seed_oil", amount: 500 * mB }],
-        heat: "heated",
-        time: 1000,
-      },
-      {
-        output: "techreborn:plantball",
-        input: [Item.of("minecraft:sugar_cane", 9), { fluid: "createaddition:seed_oil", amount: 500 * mB }],
+        input: [Ingredient.of([
+          "#minecraft:leaves",
+          "#c:grass_variants",
+          "minecraft:kelp",
+          "createastral:marimo",
+          "minecraft:sugar_cane"
+        ], 9), { fluid: "createaddition:seed_oil", amount: 500 * mB }],
         heat: "heated",
         time: 1000,
       },
@@ -545,15 +527,15 @@
         time: 40,
       },
       {
-        output: Fluid.of("tconstruct:molten_slimesteel", INGOT),
-        input: [Item.of("minecraft:iron_nugget", 9), "tconstruct:sky_slime_ball", "#tconstruct:seared_blocks"],
-        heat: "heated",
-        time: 300,
-      },
-      {
         output: Fluid.of("tconstruct:molten_slimesteel", INGOT * 2),
         input: ["minecraft:iron_ingot", "tconstruct:sky_slime_ball", "#tconstruct:seared_blocks"],
         heat: "superheated",
+        time: 300,
+      },
+      {
+        output: Fluid.of("tconstruct:molten_slimesteel", INGOT),
+        input: [Item.of("minecraft:iron_nugget", 9), "tconstruct:sky_slime_ball", "#tconstruct:seared_blocks"],
+        heat: "heated",
         time: 300,
       },
       {
