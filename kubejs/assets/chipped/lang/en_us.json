@@ -1,6 +1,4 @@
 {
-    "block.chipped.spruce_log_1": "Firewood Spruce Log",
-    "block.chipped.spruce_log_11": "Chipped Spruce Log",
     "block.chipped.birch_log_3": "Edge Cut Birch Log",
     "block.chipped.birch_log_5": "Center Cut Birch Log",
     "block.chipped.dark_oak_log_1": "Firewood Dark Oak Log",
@@ -21,14 +19,15 @@
     "block.chipped.oak_log_6": "Mixed Oak Log",
     "block.chipped.oak_log_7": "Nailed Oak Log",
     "block.chipped.oak_log_8": "Chipped Oak Log",
-    "block.chipped.spruce_log_2": "Center Cut Oak Log",
-    "block.chipped.spruce_log_3": "Damaged Oak Log",
-    "block.chipped.spruce_log_4": "Edge Cut Oak Log",
-    "block.chipped.spruce_log_5": "Flowering Oak Log",
-    "block.chipped.spruce_log_6": "Mixed Oak Log",
-    "block.chipped.spruce_log_7": "Nailed Oak Log",
-    "block.chipped.spruce_log_8": "Overgrown Oak Log",
-    "block.chipped.spruce_log_9": "Planked Oak Log",
-    "block.chipped.spruce_log_10": "Reinforced Oak Log",
-    "block.chipped.spruce_log_11": "Chipped Oak Log"
+    "block.chipped.spruce_log_1": "Firewood Spruce Log",
+    "block.chipped.spruce_log_2": "Center Cut Spruce Log",
+    "block.chipped.spruce_log_3": "Damaged Spruce Log",
+    "block.chipped.spruce_log_4": "Edge Cut Spruce Log",
+    "block.chipped.spruce_log_5": "Flowering Spruce Log",
+    "block.chipped.spruce_log_6": "Mixed Spruce Log",
+    "block.chipped.spruce_log_7": "Nailed Spruce Log",
+    "block.chipped.spruce_log_8": "Overgrown Spruce Log",
+    "block.chipped.spruce_log_9": "Planked Spruce Log",
+    "block.chipped.spruce_log_10": "Reinforced Spruce Log",
+    "block.chipped.spruce_log_11": "Chipped Spruce Log"
 }
