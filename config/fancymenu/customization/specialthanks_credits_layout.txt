@@ -1,7 +1,7 @@
 type = fancymenu_layout
 
 layout-meta {
-  identifier = main_menu_image_credits
+  identifier = credits_screen
   render_custom_elements_behind_vanilla = false
   last_edited_time = 1750554846504
   is_enabled = true
