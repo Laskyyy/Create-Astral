@@ -39,10 +39,10 @@ This update comes with a completely overhauled file structure for Astral's own c
 - Added a Recovery Orb edible which functions like a pre-nerf Seared Potato, intended for use to recover lost items after dying on the Moon.
 - Added a new mid-game upgrade slot bonus for Hephaestus tools - Spacious, which needs a 16³ Spatial Component from Applied Energistics 2.
 - Added a new late-game ability slot bonus for Hephaestus tools - Amplified, which needs a Shimmer Amplifier.
+- Added a new structure for the Distillation Tower multiblock that moves the controller one block up to allow an additional side of the block to be accessed.
 
 #### Quality of life
 
-- Re-added the in-game changelogs for 2.1.1 and 2.1.2, and preserved the changelog for 2.1.3.
 - Added four new GUIs for the Electrolyser, Distillation Tower, Stone Growth Chamber, and Shimmer Refinery multiblock structures.
 - Added a dedicated transistional item for the Shimmer Amplifier sequenced assembly recipe.
 
@@ -81,6 +81,9 @@ This update comes with a completely overhauled file structure for Astral's own c
 - Re-enabled the recipe for Rope from Campanion as it is the only rope that can be used to make rope bridges.
 - Added a new recipe for Zinc Sheet Metal from Create Deco as its recipe was unintentionally removed when unifying the Zinc Sheets in a prior update.
 - Added a recipe for Helium which uses Glowdamp.
+- Halved the amount of time Bioethanol can fuel liquid Blaze Burners for.
+- Increased the amount of time Seed Oil can fuel liquid Blaze Burners for by 2.5x.
+- Tripled the amount of time Blazing Blood can fuel liquid Blaze Burners for.
 
 #### Quality of life
 
@@ -99,6 +102,8 @@ This update comes with a completely overhauled file structure for Astral's own c
 - Grouped all Compressor blocks (e.g. Compressed Cobblestone) into one REI group.
 - Made Rocket Casing and Desizer Casing able to be picked up with wrenches.
 - Made Basic, Advanced, and Industrial Machine Frames and Machine Casings able to be picked up with wrenches.
+- Re-added the in-game changelogs for 2.1.1 and 2.1.2, and preserved the changelog for 2.1.3. Also completely redesigned the in-game changelog.
+- Overhauled the in-game credits menu to include more people and generally look nicer and be more organised.
 
 #### Bug patches
 
@@ -132,6 +137,10 @@ This update comes with a completely overhauled file structure for Astral's own c
 - Fixed a description error in the Lead-lined Space Suit quest in Chapter 4 calling it a Netherite suit instead of a Lead-lined suit.
 - Changed the recipe for the Yttr Lazor Emitter due to Brookite being unobtainable.
 - Replaced Iriduim that was being used in some recipes with Yttrium. Also removed the Iridium Ingot and Iridium Block recipes.
+- Made the Netherite Knife from Farmer's Delight fireproof.
+- Added a missing recipe for sawing Rubber Logs to produce Bark as a byproduct.
+- Added missing Copper Oxidation recipes to the Stonecutter.
+- Fixed an issue where Shadow Drawers would keep eating Molten Tin when casting due to being able to be used in their own recipe.
 
 #### Minor mod updates
 
@@ -143,12 +152,12 @@ This update comes with a completely overhauled file structure for Astral's own c
 
 #### Behind-the-scenes
 
-- Overhauled the in-game credits menu to include more people and generally look nicer and be more organised.
 - `server.packwizignore` now excludes FancyMenu configs as well as the new location for textures within the KubeJS folder.
 - Clarified a few terms more explicitly in `LICENSE.md`.
 - Cleaned up the main `README.md` file in the repository. Now it redirects to the other CAPITALISED markdown documents for further specific information.
 - Wiped index.toml clean and added a clause in CONTRIBUTING.md asking contributors not to commit changes to index.toml. This has been done to cut down on headache-inducing merge conflicts that arise as a result of changes to this file. Packwiz automatically generates index.toml when it is run, so this should only affect the load time of the first time you run packwiz (which will be significantly longer than normal as packwiz generates index.toml).
 - Added packwiz binaries to `.gitignore` to prevent them from reappearing in the GitHub repository in the future.
+- Made Charcoal Blocks register their furnace burn time upon block registry instead of post-registry modification.
 
 ### REMOVALS
 
@@ -162,6 +171,8 @@ This update comes with a completely overhauled file structure for Astral's own c
 - Removed Released Coolant (fluid) as it wasn't used for anything.
 - Made the original Stone Growth Chamber structure from 2.1 disfunctional - please use one of the new structures instead.
 - Removed the recipe for the Turtle Shell modifier for Hephaestus armour as it has a broken attribute and hence does nothing.
+- Removed the ability to obtain Yttr's curse enchantments (Annihilation and Shattering) due to an XP duplication issue.
+- Removed the drill boring recipe for Skeleton Skulls, given they can be much more easily obtained by stonecutting a bone block.
 
 #### Behind-the-scenes
 
