@@ -1,4 +1,6 @@
 (function recipeReplacements() {
+  const {CATWALK_MATERIALS} = global.server
+
   onEvent("recipes", (event) => {
     /**
      * @typedef Replacement
@@ -735,7 +737,7 @@
       "create:item_drain"
     );
     // Buffed catwalk output. Seriously! Its so resource heavy!
-    for (let catwalkMaterial of global.CATWALK_MATERIALS) {
+    for (let catwalkMaterial of CATWALK_MATERIALS) {
       event.remove({
         output: `createdeco:${catwalkMaterial.material}_catwalk`,
       });

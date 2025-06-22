@@ -1,8 +1,8 @@
 (function extendedDrawersTooltips() {
-  const { addLocalizedShiftTooltip } = global.startup;
+  const { addLocalizedShiftTooltip, upgrades } = global.startup;
   onEvent("item.tooltip", (event) => {
     /** @type {Helper.Tooltip[]} */
-    for (const upgrade of global.upgrades) {
+    for (const upgrade of upgrades) {
       let upgradeItem = /** @type {Special.Item} */ (upgrade.item);
       event.add(
         upgradeItem,

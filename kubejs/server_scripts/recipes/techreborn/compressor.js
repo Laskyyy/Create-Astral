@@ -1,4 +1,6 @@
 (function techRebornCompressorRecipes() {
+  const { MATERIALS } = global.server;
+
   onEvent("recipes", (event) => {
     sheetCompressing(event);
     const compressorRecipes = [
@@ -27,7 +29,7 @@
   });
   /** @param {Internal.RecipeEventJS} event */
   function sheetCompressing(event) {
-    global.MATERIALS.forEach((material) => {
+    MATERIALS.forEach((material) => {
       event.custom({
         type: "techreborn:compressor",
         power: 10,

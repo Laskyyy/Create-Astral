@@ -1,4 +1,6 @@
 (function recipeRemovals() {
+  const { MATERIALS, CRUSHING_RECIPES_TO_BECOME_GRINDING } = global.server;
+
   onEvent("recipes", (event) => {
     //Tech Reborn
     /** @type {Internal.RecipeFilter_[]} */
@@ -653,7 +655,7 @@
       // techreborn
       { output: "techreborn:sulfur" },
       { output: "techreborn:iridium_ingot" },
-      { output: "techreborn:iridium_block" },
+      { output: "techreborn:iridium_storage_block" },
       {
         input: "minecraft:soul_soil",
         output: "techreborn:coal_dust",
@@ -887,10 +889,10 @@
       }
       if (dust.name != "glowstone" && dust.name != "redstone") event.remove({ output: `techreborn:${dust.name}_dust` });
     });
-    global.MATERIALS.forEach((material) => {
+    MATERIALS.forEach((material) => {
       event.remove({ not: { mod: "tconstruct" }, output: material.plate });
     });
-    for (let recipe of global.CRUSHING_RECIPES_TO_BECOME_GRINDING) {
+    for (let recipe of CRUSHING_RECIPES_TO_BECOME_GRINDING) {
       event.remove({ type: "create:crushing", input: recipe.input.item });
     }
   });

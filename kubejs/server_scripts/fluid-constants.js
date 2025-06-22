@@ -1,9 +1,11 @@
 // priority: 100
 
-global.BUCKET = /** @type {const} */ (81000);
-global.GEM_BLOCK = /** @type {const} */ (72900);
-global.SLIMEBALL = /** @type {const} */ (20250);
-global.INGOT = /** @type {const} */ (9000);
-global.GEM = /** @type {const} */ (8100);
-global.NUGGET = /** @type {const} */ (1000);
-global.mB = /** @type {const} */ (81);
+global.fluids = Object.freeze({
+  BUCKET: 81000,
+  GEM_BLOCK: 72900,
+  SLIMEBALL: 20250,
+  INGOT: 9000,
+  GEM: 8100,
+  NUGGET: 1000,
+  mB: 81,
+});
