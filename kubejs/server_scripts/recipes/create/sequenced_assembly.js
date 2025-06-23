@@ -163,19 +163,21 @@
       .addPressingStep()
       .loops(5)
       .build();
+    
+    // prettier-ignore
     createSequencedAssembly(event, {
       input: "#c:plates/gold",
       transitional: "create:incomplete_precision_mechanism",
       outputs: [
         Item.of("create:precision_mechanism").withChance(120), // Let's go gambling!
-        Item.of("create:golden_sheet").withChance(8), // Oh, dang it!
-        Item.of("create:andesite_alloy").withChance(8), // Oh, dang it!
-        Item.of("create:cogwheel").withChance(5), // Oh, dang it!
-        Item.of("minecraft:gold_nugget").withChance(3), // Oh, dang it!
-        Item.of("create:shaft").withChance(2), // Oh, dang it!
-        Item.of("create:crushed_raw_gold").withChance(2), // Oh, dang it!
-        Item.of("minecraft:iron_ingot").withChance(1), // Oh, dang it!
-        Item.of("minecraft:clock").withChance(1), // Oh, dang it!
+        Item.of("create:golden_sheet").withChance(8),          // Oh, dang it!
+        Item.of("create:andesite_alloy").withChance(8),        // Oh, dang it!
+        Item.of("create:cogwheel").withChance(5),              // Oh, dang it!
+        Item.of("minecraft:gold_nugget").withChance(3),        // Oh, dang it!
+        Item.of("create:shaft").withChance(2),                 // Oh, dang it!
+        Item.of("create:crushed_raw_gold").withChance(2),      // Oh, dang it!
+        Item.of("minecraft:iron_ingot").withChance(1),         // Oh, dang it!
+        Item.of("minecraft:clock").withChance(1),              // Oh, dang it!
       ],
     })
       .addDeployingStep("create:cogwheel")
