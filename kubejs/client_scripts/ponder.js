@@ -12,6 +12,13 @@
       "tconstruct:foundry_controller",
       "tconstruct:seared_faucet",
     ]);
+    event.createTag(
+      "kubejs:funnies",
+      "adoptafloppa:bebe_item",
+      "Funnies",
+      "All the funny/joke ponders",
+      "astraladditions:moonblazed_orb"
+    )
   });
   onEvent("ponder.registry", (event) => {
     // Registers a ponder to the custom machine block, so create offers to ponder

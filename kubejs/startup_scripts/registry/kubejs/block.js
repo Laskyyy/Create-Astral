@@ -28,5 +28,7 @@
       .box(0, 0, 0, 16, 8, 16, true)
       .box(2, 8, 2, 14, 12, 14, true)
       .displayName("Broken Fire Resistant Fragile Sheet Block");
+    event
+      .create("kubejs:pondering_thy_orb", "basic")
   });
 })();
