@@ -195,6 +195,8 @@
       .addDeployingStep("minecraft:cooked_rabbit")
       .addFillingStep({ fluid: "kubejs:shimmer", amount: BUCKET })
       .build();
+
+    // Yttr uses a non-standard ingredient, this has to remain an "event.custom".
     event.custom({
       type: "create:sequenced_assembly",
       ingredient: {
