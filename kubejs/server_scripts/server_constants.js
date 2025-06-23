@@ -1,3 +1,5 @@
+// priority: 100
+
 global.server = Object.freeze({
   OXIDISATION_TYPES: /** @type {const} */ (["exposed", "weathered", "oxidized"]),
   OXIDIZATION_TYPES: /** @type {const} */ (["exposed", "weathered", "oxidized"]),
@@ -92,6 +94,16 @@ global.server = Object.freeze({
       tag: "vinery:cherry_logs",
     },
   ]),
+
+  /**
+   * @typedef Material
+   * @property {Special.Item} ingot
+   * @property {Special.Item} block
+   * @property {Special.Item} plate
+   * @property {boolean} useMechPress
+   */
+
+  /** @satisfies {Material[]} */
   MATERIALS: /** @type {const} */ ([
     {
       ingot: "minecraft:copper_ingot",
@@ -261,4 +273,144 @@ global.server = Object.freeze({
   ]),
   DEFAULT_GRIND_TIME: /** @type {const} */ (100), // five seconds
   DEFAULT_GRIND_POWER: /** @type {const} */ (5),
+  /**
+   * Builds a new sequenced assembly recipe.
+   * @example
+   * ```js
+   * createSequencedAssembly(event, {
+   *   input: "minecraft:bucket",
+   *   transitional: "minecraft:bucket",
+   *   outputs: ["minecraft:powder_snow_bucket"],
+   * })
+   *   .addDeployingStep("createastral:snowy_marimo")
+   *   .addFillingStep({ fluid: "minecraft:water", amount: 250 * mB })
+   *   .loops(2)
+   *   .build();
+   * ```
+   * @param {Internal.RecipeEventJS} event The recipe event.
+   * @param {SequencedAssemblyIO} io Input, transitional and output items for the recipe.
+   */
+  createSequencedAssembly(event, io) {
+    return new SequencedAssemblyBuilder(event, io);
+  },
+
+  /**
+   * Outputs an NBT tag corresponding to given enchantments on an Enchanted Book.
+   * @param {{id: Special.Enchantment, level: number}[]} enchantmentArray
+   */
+  enchants(enchantmentArray) {
+    let nbt = "{StoredEnchantments:[";
+    enchantmentArray.forEach((enchantment, index) => {
+      if (index !== 0) {
+        nbt += ",";
+      }
+      nbt += `{id:"${enchantment.id}",lvl:${enchantment.level}s}`;
+    });
+    nbt += "]}";
+    return nbt;
+  },
 });
+
+/**
+ * @typedef SequencedAssemblyIO Input, transitional and output items for the recipe.
+ * @property {Internal.IngredientJS_} input The input
+ * @property {Internal.ItemStackJS_} transitional The transitional, "incomplete" item.
+ * @property {Internal.IngredientJS_[]} outputs The array of output items, optionally with chances defined.
+ */
+
+/**
+ * Builds a new sequenced assembly recipe.
+ *
+ * If `.loops(number)` isn't provided, 1 loop is the default.
+ *
+ * @example
+ * ```js
+ * new SequencedAssemblyBuilder(event, {
+ *   input: "minecraft:bucket",
+ *   transitional: "minecraft:bucket",
+ *   outputs: ["minecraft:powder_snow_bucket"],
+ * })
+ *   .addDeployingStep("createastral:snowy_marimo")
+ *   .addFillingStep({ fluid: "minecraft:water", amount: 250 * mB })
+ *   .loops(2)
+ *   .build();
+ * ```
+ * @param {Internal.RecipeEventJS} event The recipe event.
+ * @param {SequencedAssemblyIO} io Input, transitional and output items for the recipe.
+ */
+function SequencedAssemblyBuilder(event, io) {
+  /** @type {Internal.RecipeEventJS} */
+  this._event = event;
+  /** @type {Internal.IngredientJS_} */
+  this._input = io.input;
+  /** @type {Internal.ItemStackJS_} */
+  this._transitional = io.transitional;
+  /** @type {Internal.IngredientJS_[]} */
+  this._outputs = io.outputs;
+  /** @type {Internal.ProcessingRecipeJS_[]} */
+  this._steps = [];
+  /** @type {number} */
+  this._loopAmount = 1;
+}
+
+/**
+ * Adds a new filling step.
+ * @param {Internal.FluidStackJS_} fluid The fluid to use in the recipe.
+ */
+SequencedAssemblyBuilder.prototype.addFillingStep = function (fluid) {
+  this._steps.push(this._event.recipes.createFilling(this._transitional, [this._transitional, fluid]));
+  return this;
+};
+
+/**
+ * Adds a new pressing step.
+ * @returns {this} The current instance.
+ */
+SequencedAssemblyBuilder.prototype.addPressingStep = function () {
+  this._steps.push(this._event.recipes.createPressing(this._transitional, this._transitional));
+  return this;
+};
+
+/**
+ * Adds a new cutting step.
+ * @param {number} [processingTime] Processing time in ticks.
+ * @returns {this} The current instance.
+ */
+SequencedAssemblyBuilder.prototype.addCuttingStep = function (processingTime) {
+  let cuttingRecipe = this._event.recipes.createCutting(this._transitional, this._transitional);
+  if (typeof processingTime !== "undefined") cuttingRecipe = cuttingRecipe.processingTime(processingTime);
+  this._steps.push(cuttingRecipe);
+  return this;
+};
+
+/**
+ * Adds a new deploying step.
+ * @param {Internal.IngredientJS_} item
+ * @returns {this} The current instance.
+ */
+SequencedAssemblyBuilder.prototype.addDeployingStep = function (item) {
+  this._steps.push(this._event.recipes.createDeploying(this._transitional, [this._transitional, item]));
+  return this;
+};
+
+/**
+ * Sets the amount of loops needed to finish the recipe.
+ *
+ * Defaults to 1 if not provided.
+ * @param {number} loopAmount Amount of loops needed to finish the recipe.
+ * @returns {this} The current instance.
+ */
+SequencedAssemblyBuilder.prototype.loops = function (loopAmount) {
+  this._loopAmount = loopAmount;
+  return this;
+};
+
+/**
+ * Builds the recipe.
+ */
+SequencedAssemblyBuilder.prototype.build = function () {
+  this._event.recipes.create
+    .sequenced_assembly(this._outputs, this._input, this._steps)
+    .transitionalItem(this._transitional)
+    .loops(this._loopAmount);
+};

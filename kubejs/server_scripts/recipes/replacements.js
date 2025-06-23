@@ -1,5 +1,5 @@
 (function recipeReplacements() {
-  const {CATWALK_MATERIALS} = global.server
+  const { CATWALK_MATERIALS } = global.server;
 
   onEvent("recipes", (event) => {
     /**
