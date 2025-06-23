@@ -1,5 +1,5 @@
 {
-	"type": "minecraft:chest",
+  "type": "minecraft:chest",
   "pools": [
     {
       "rolls": {
@@ -71,47 +71,42 @@
           "weight": 1,
           "name": "farmersdelight:vegetable_noodles"
         },
-				{
+        {
           "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:egg"
         },
-				{
+        {
           "type": "minecraft:item",
           "weight": 1,
           "name": "farmersdelight:milk_bottle"
         },
-				{
+        {
           "type": "minecraft:item",
           "weight": 1,
           "name": "farmersdelight:tomato"
         },
-				{
+        {
           "type": "minecraft:item",
           "weight": 1,
           "name": "farmersdelight:rice_panicle"
         },
-				{
+        {
           "type": "minecraft:item",
           "weight": 1,
           "name": "farmersdelight:cabbage"
         },
-				{
+        {
           "type": "minecraft:item",
           "weight": 1,
           "name": "farmersdelight:cabbage_leaf"
         },
-				{
+        {
           "type": "minecraft:item",
           "weight": 1,
           "name": "farmersdelight:minced_beef"
         },
-				{
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "farmersdelight:wheat_dough"
-        },
-				{
+        {
           "type": "minecraft:item",
           "weight": 1,
           "name": "farmersdelight:cake_slice"
@@ -121,32 +116,32 @@
           "weight": 2,
           "name": "minecraft:brick"
         },
-				{
+        {
           "type": "minecraft:item",
           "weight": 2,
           "name": "create:wheat_flour"
         },
-				{
+        {
           "type": "minecraft:item",
           "weight": 2,
           "name": "createastral:andesite_compound"
         },
-				{
+        {
           "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:bread"
         },
-				{
+        {
           "type": "minecraft:item",
           "weight": 1,
           "name": "create:cogwheel"
         },
-				{
+        {
           "type": "minecraft:item",
           "weight": 1,
           "name": "createastral:bronze_sheet"
         },
-				{
+        {
           "type": "minecraft:item",
           "weight": 1,
           "name": "minecraft:coal"
@@ -156,22 +151,22 @@
           "weight": 2,
           "name": "vinery:cherry"
         },
-				{
+        {
           "type": "minecraft:item",
           "weight": 2,
           "name": "vinery:white_grape"
         },
-				{
+        {
           "type": "minecraft:item",
           "weight": 2,
           "name": "vinery:red_grape"
         },
-				{
+        {
           "type": "minecraft:item",
           "weight": 1,
           "name": "vinery:white_grape_seeds"
         },
-				{
+        {
           "type": "minecraft:item",
           "weight": 1,
           "name": "vinery:red_grape_seeds"
@@ -191,7 +186,7 @@
           "weight": 1,
           "name": "create:gearbox"
         },
-				{
+        {
           "type": "minecraft:item",
           "weight": 2,
           "name": "minecraft:apple"

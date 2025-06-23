@@ -1,88 +1,96 @@
 {
-    "name": "custommachinery.createastral.distillery",
-    "appearance": {
-        "block": "createastral:distillery_dummy",
-        "running": {
-            "lightlevel": 15
-        }
+  "name": "custommachinery.createastral.distillery",
+  "appearance": {
+    "block": "createastral:distillery_dummy",
+    "running": {
+      "lightlevel": 15
+    }
+  },
+  "gui": [
+    {
+      "texture": "createastral:textures/gui/distillation_tower/distillation_tower_gui.png",
+      "x": 47,
+      "y": 8,
+      "type": "custommachinery:texture",
+      "width": 256,
+      "height": 192
     },
-    "gui": [
-        {
-            "texture": "createastral:textures/gui/distillation_tower_gui.png",
-            "x": 47,
-            "y": 8,
-            "type": "custommachinery:texture"
-        },
-        {
-            "x": 47,
-            "y": 80,
-            "type": "custommachinery:player_inventory"
-        },
-        {
-            "id": "inputtank",
-            "x": 90,
-            "y": 30,
-            "type": "custommachinery:fluid"
-        },
-        {
-            "id": "inputslot",
-            "x": 70,
-            "y": 30,
-            "type": "custommachinery:slot"
-        },
-        {
-            "id": "outputtank",
-            "x": 142,
-            "y": 30,
-            "type": "custommachinery:fluid"
-        },
-        {
-            "type": "custommachinery:energy",
-            "x": 20,
-            "y": 20
-        },
-        {
-            "x": 116,
-            "y": 30,
-            "type": "custommachinery:progress"
-        },
-        {
-            "x": 236,
-            "y": 5,
-            "type": "custommachinery:status"
-        },
-        {
-            "text": "custommachinery.createastral.distillery.text",
-            "x": 7,
-            "y": 5,
-            "type": "custommachinery:text"
-        }
-    ],
-    "components": [
-        {
-            "type": "custommachinery:fluid",
-            "capacity": 810000,
-            "id": "outputtank",
-            "maxInput": 0,
-            "maxOutput": 1000
-        },
-        {
-            "type": "custommachinery:fluid",
-            "capacity": 810000,
-            "id": "inputtank",
-            "maxInput": 50000,
-            "maxOutput": 0
-        },
-        {
-            "type": "custommachinery:item",
-            "id": "inputslot",
-            "mode": "input"
-        },
-        {
-            "type": "custommachinery:energy",
-            "capacity": 100000,
-            "maxInput": 50000,
-            "maxOutput": 0
-        }
-    ]
+    {
+      "x": 47,
+      "y": 104,
+      "type": "custommachinery:player_inventory"
+    },
+    {
+      "id": "inputtank",
+      "x": 90,
+      "y": 30,
+      "type": "custommachinery:fluid"
+    },
+    {
+      "id": "inputslot",
+      "x": 70,
+      "y": 30,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "outputtank",
+      "x": 142,
+      "y": 30,
+      "type": "custommachinery:fluid"
+    },
+    {
+      "type": "custommachinery:energy",
+      "x": 30,
+      "y": 30
+    },
+    {
+      "emptyTexture": "createastral:textures/gui/distillation_tower/distillation_tower_progress_empty.png",
+      "filledTexture": "createastral:textures/gui/distillation_tower/distillation_tower_progress_full.png",
+      "x": 118,
+      "y": 34,
+      "type": "custommachinery:progress",
+      "height": 30,
+      "width": 16
+    },
+    {
+      "x": 236,
+      "y": 5,
+      "type": "custommachinery:status"
+    },
+    {
+      "text": "custommachinery.createastral.distillery.text",
+      "x": 7,
+      "y": 5,
+      "type": "custommachinery:text"
+    }
+  ],
+  "components": [
+    {
+      "type": "custommachinery:fluid",
+      "capacity": 810000,
+      "id": "outputtank",
+      "maxInput": 0,
+      "maxOutput": 1000
+    },
+    {
+      "type": "custommachinery:fluid",
+      "capacity": 810000,
+      "id": "inputtank",
+      "maxInput": 50000,
+      "maxOutput": 0,
+      "filter": ["minecraft:water", "techreborn:oil", "techreborn:mercury"],
+      "whitelist": true
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "inputslot",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:energy",
+      "capacity": 100000,
+      "maxInput": 50000,
+      "maxOutput": 0
+    }
+  ]
 }

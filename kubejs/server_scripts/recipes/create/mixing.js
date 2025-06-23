@@ -600,8 +600,8 @@
         time: 5,
       },
       {
-        output: Fluid.of("tconstruct:molten_queens_slime", INGOT * 2),
-        input: ["tconstruct:slimesteel_ingot", Item.of("tconstruct:cobalt_ingot", 2)],
+        output: Fluid.of("tconstruct:molten_queens_slime", INGOT * 4),
+        input: ["tconstruct:cobalt_ingot", Item.of("tconstruct:slimesteel_ingot", 2)],
         heat: "superheated",
         time: 5,
       },
@@ -647,8 +647,8 @@
         time: 5,
       },
       {
-        output: Fluid.of("tconstruct:molten_hepatizon", INGOT / 2),
-        input: ["techreborn:lead_ingot", Item.of("tconstruct:cobalt_ingot", 2)],
+        output: Fluid.of("tconstruct:molten_hepatizon", INGOT * 4),
+        input: ["techreborn:cobalt_ingot", Item.of("tconstruct:lead_ingot", 2)],
         heat: "superheated",
         time: 5,
       },
@@ -1365,7 +1365,6 @@
           Item.of("minecraft:glow_ink_sac", 1),
           "astraladditions:lune_shroom",
         ],
-        heat: "heated",
       },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:2s}]}'),
@@ -2858,7 +2857,7 @@
         ])
         .processingTime(50);
     });
-    
+
     /**
      * @typedef SmallToTallFlowerMixingRecipe
      * @property {Special.Item} tallFlower
@@ -2931,7 +2930,7 @@
   function farmersCompatMixing(event) {
     event.forEachRecipe({ type: "farmersdelight:cooking" }, (recipe) => {
       let outputItem = recipe.getOriginalRecipeResult().getId().split(":")[1];
-      let inputItems = /** @type {any} */(recipe.json.get("ingredients").deepCopy()); // Setting this to any, since I have no idea what type this really is.
+      let inputItems = /** @type {any} */ (recipe.json.get("ingredients").deepCopy()); // Setting this to any, since I have no idea what type this really is.
       if (outputItem == "cabbage_rolls") return; //too few ingredients to add recipe for
       const containers = {
         "minecraft:glass_bottle": ["hot_cocoa", "apple_cider", "glow_berry_custard"],

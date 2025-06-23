@@ -1227,13 +1227,6 @@
         },
       },
       {
-        output: "yttr:chute",
-        pattern: ["A A", "A A", "A A"],
-        key: {
-          A: "create:iron_sheet",
-        },
-      },
-      {
         output: "yttr:bedrock_smasher",
         pattern: ["AAA", " B ", " C "],
         key: {
@@ -1249,6 +1242,15 @@
           A: "minecraft:iron_ingot",
           B: "minecraft:glass_pane",
           C: "minecraft:redstone_lamp",
+        },
+      },
+      {
+        output: Item.of("yttr:lazor_emitter", 4),
+        pattern: ["ABA", "ACA", "AAA"],
+        key: {
+          A: "yttr:yttrium_ingot",
+          B: "minecraft:amethyst_shard",
+          C: "yttr:lamp",
         },
       },
       {

@@ -521,7 +521,6 @@
       { output: "dbe:steel_ingot" },
       { output: "dbe:copper_coil" },
       { output: "farmersdelight:cooking_pot" },
-      { output: "campanion:rope" },
       { output: "immersive_aircraft:boiler" },
       { output: "immersive_aircraft:engine" },
       { output: "immersive_aircraft:nether_engine" },
@@ -574,6 +573,7 @@
       { output: "yttr:lamp", input: "yttr:glowing_gas" },
       { output: "yttr:quicksilver" },
       { output: "minecraft:slime_ball", type: "yttr:centrifuging" },
+      { output: "yttr:lazor_emitter" },
       { input: "yttr:raw_gadolinite", type: "yttr:centrifuging" },
       { input: "minecraft:coal", type: "yttr:centrifuging" },
       // Minecraft
@@ -648,8 +648,12 @@
       // vinery
       { output: "vinery:wine_rack_1" },
       { output: "vinery:grapevine_pot" },
+      { output: "vinery:dough" },
+      { id: "vinery:wood_fired_oven_cooking/toast" },
       // techreborn
       { output: "techreborn:sulfur" },
+      { output: "techreborn:iridium_ingot" },
+      { output: "techreborn:iridium_block" },
       {
         input: "minecraft:soul_soil",
         output: "techreborn:coal_dust",
@@ -677,6 +681,7 @@
       // farmers delight
       { type: "farmersdelight:cutting", input: "minecraft:gravel" },
       { type: "farmersdelight:cutting", input: "farmersdelight:wild_rice" },
+      { output: "farmersdelight:wheat_dough" },
       // Hephaestus modifiers
       { id: "tconstruct:tools/modifiers/ability/double_jump" },
       { id: "tconstruct:tools/modifiers/ability/luck_level_1" },
@@ -691,6 +696,7 @@
       { id: "tconstruct:tools/modifiers/ability/tool_belt_5" },
       { id: "tconstruct:tools/modifiers/ability/tool_belt_6" },
       { id: "tconstruct:tools/modifiers/ability/unbreakable" },
+      { id: "tconstruct:tools/modifiers/defense/turtle_shell" },
       { id: "tconstruct:tools/modifiers/slotless/draconic_from_head" },
       { id: "tconstruct:tools/modifiers/slotless/draconic_from_scales" },
       { id: "tconstruct:tools/modifiers/slotless/resurrected" },
