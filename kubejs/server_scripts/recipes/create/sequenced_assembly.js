@@ -1369,6 +1369,7 @@
       .addPressingStep()
       .build();
 
+    // FIXME: Duplicate first item, only one of two is targettable!
     createSequencedAssembly(event, {
       input: "minecraft:book",
       transitional: "minecraft:enchanted_book",
@@ -1380,6 +1381,7 @@
       .addPressingStep()
       .build();
 
+    // FIXME: Duplicate first item, only one of two is targettable!
     createSequencedAssembly(event, {
       input: "minecraft:book",
       transitional: "minecraft:enchanted_book",
