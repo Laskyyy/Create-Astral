@@ -511,7 +511,7 @@
           transitional: `createastral:brass_${item.item}`,
           outputs: [`minecraft:diamond_${item.item}`],
         })
-          .addFillingStep({ fluid: "tconstruct:molten_diamond", amount: 250 * mB })
+          .addFillingStep({ fluid: "tconstruct:molten_diamond", amount: GEM })
           .loops(item.loops)
           .build();
       });
@@ -1373,7 +1373,6 @@
       .addPressingStep()
       .build();
 
-    // FIXME: Duplicate first item, only one of two is targettable!
     createSequencedAssembly(event, {
       input: "minecraft:book",
       transitional: "minecraft:enchanted_book",
@@ -1385,13 +1384,12 @@
       .addPressingStep()
       .build();
 
-    // FIXME: Duplicate first item, only one of two is targettable!
     createSequencedAssembly(event, {
       input: "minecraft:book",
       transitional: "minecraft:enchanted_book",
       outputs: [Item.of("minecraft:enchanted_book", enchants([{ id: "create:potato_recovery", level: 1 }]))],
     })
-      .addDeployingStep("ad_astra:oxygen_bucket")
+      .addDeployingStep("minecraft:potato")
       .addDeployingStep("xpcrystals:xp_crystal")
       .addFillingStep({ fluid: "xpcrystals:soul", amount: BUCKET })
       .addPressingStep()
