@@ -1,5 +1,6 @@
 (function astralSignalsSequencedAssemblyRecipes() {
   const { BUCKET, GEM_BLOCK, SLIMEBALL, INGOT, GEM, NUGGET, mB } = global.fluids;
+  const { createSequencedAssembly } = global.server;
 
   onEvent("recipes", (event) => {
     /**
@@ -60,13 +61,14 @@
       },
     ]);
     assemblyRecipes.forEach((inst) => {
-      event.recipes.create
-        .sequenced_assembly(inst.outputs, inst.input, [
-          event.recipes.createFilling(inst.inter, [inst.inter, { fluid: "kubejs:shimmer", amount: BUCKET }]),
-          event.recipes.createPressing(inst.inter, inst.inter),
-        ])
-        .transitionalItem(inst.inter)
-        .loops(1);
+      createSequencedAssembly(event, {
+        input: inst.input,
+        transitional: inst.inter,
+        outputs: inst.outputs,
+      })
+        .addFillingStep({ fluid: "kubejs:shimmer", amount: BUCKET })
+        .addPressingStep()
+        .build();
     });
   });
 })();
