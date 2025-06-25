@@ -84,6 +84,8 @@ This update comes with a completely overhauled file structure for Astral's own c
 - Halved the amount of time Bioethanol can fuel liquid Blaze Burners for.
 - Increased the amount of time Seed Oil can fuel liquid Blaze Burners for by 2.5x.
 - Tripled the amount of time Blazing Blood can fuel liquid Blaze Burners for.
+- Changed Launch Gel's transitional item to be Slimesteel Nugget.
+- Diamond tools now need 1 Diamond worth of Molten Diamond per loop instead of 2.5 Diamonds.
 
 #### Quality of life
 
@@ -141,7 +143,10 @@ This update comes with a completely overhauled file structure for Astral's own c
 - Added a missing recipe for sawing Rubber Logs to produce Bark as a byproduct.
 - Added missing Copper Oxidation recipes to the Stonecutter.
 - Fixed an issue where Shadow Drawers would keep eating Molten Tin when casting due to being able to be used in their own recipe.
-- Fixed incorrectly assigned Spruce Log variant names from Chipped.
+- Fixed incorrectly assigned Log variant textures from Chipped that contradicted their names.
+- Fixed Plasma Fluid (previously Metabolic Broth) having the same name as a progression-vital fluid also named Metabolic Broth.
+- Fixed some enchantment recipes having 4 loops and Precision Mechanism as a transitional item because these were omitted from the recipe.
+- Fixed the inability to create both Capacity and Potato Recovery enchanted books by changing Potato Recovery's assembly to use a Potato as a first item.
 
 #### Minor mod updates
 
@@ -159,6 +164,9 @@ This update comes with a completely overhauled file structure for Astral's own c
 - Wiped index.toml clean and added a clause in CONTRIBUTING.md asking contributors not to commit changes to index.toml. This has been done to cut down on headache-inducing merge conflicts that arise as a result of changes to this file. Packwiz automatically generates index.toml when it is run, so this should only affect the load time of the first time you run packwiz (which will be significantly longer than normal as packwiz generates index.toml).
 - Added packwiz binaries to `.gitignore` to prevent them from reappearing in the GitHub repository in the future.
 - Made Charcoal Blocks register their furnace burn time upon block registry instead of post-registry modification.
+- Fixed incorrect type name in `immersive_aircraft.js`.
+- Fixed incorrect output removal in `removals.js`.
+- Fixed mixed up mod names in `mixing.js`.
 
 ### REMOVALS
 
@@ -178,6 +186,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 #### Behind-the-scenes
 
 - Removed the packwiz binaries from the repository to decrease the size of it.
+- Removed duplicate Plantball and Biomass sequenced assemblies.
 
 ## 2.1.3 [Current Release] - 2025/01/05
 
