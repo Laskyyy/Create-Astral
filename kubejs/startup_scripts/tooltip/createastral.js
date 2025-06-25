@@ -1,4 +1,5 @@
 (function createAstralTooltips() {
+  const { addLocalizedShiftTooltip } = global.startup;
   onEvent("item.tooltip", (event) => {
     /** @type {Helper.Tooltip[]} */
     const createastralTooltips = [
@@ -39,20 +40,7 @@
         tooltip: "tooltip.createastral.uranium_residue",
       },
     ];
-    createastralTooltips.forEach((tooltip) => {
-      event.addAdvanced(tooltip.item, (item, advanced, text) => {
-        if (!event.isShift()) {
-          text.add(1, [
-            Text.of(Component.translate("tooltip.hover.tip.1")).darkGreen(),
-            Text.of(Component.translate("tooltip.hover.tip.2")).green(),
-            Text.of(Component.translate("tooltip.hover.tip.3")).darkGreen(),
-          ]);
-        }
-        if (event.isShift()) {
-          text.add(1, [Text.of(Component.translate(tooltip.tooltip)).green()]);
-        }
-      });
-    });
+    createastralTooltips.forEach((tooltip) => addLocalizedShiftTooltip(event, tooltip.item, tooltip.tooltip));
     event.addAdvanced("createastral:orcane", (item, advanced, text) => {
       if (!event.isShift()) {
         text.add(1, [

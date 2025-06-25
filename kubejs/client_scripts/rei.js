@@ -19,7 +19,9 @@
     ]);
 
     // Compressed Blocks
-    event.groupItems("kubejs:rei_groups/compressed", "Compressed Blocks", [Ingredient.of("@compressor").getItemIds()]);
+    event.groupItems("kubejs:rei_groups/compressed", Component.of("Compressed Blocks"), [
+      Ingredient.of(/** @type {Internal.IngredientJS_} */ ("@compressor")).getItemIds().toArray(),
+    ]);
 
     //Decrypted Drives
     event.groupItemsByTag(
