@@ -695,7 +695,7 @@
 
     createSequencedAssembly(event, {
       input: "tconstruct:slimesteel_nugget",
-      transitional: "create:tree_fertilizer", // WTF?
+      transitional: "tconstruct:slimesteel_nugget", // WTF?
       outputs: ["automobility:launch_gel"],
     })
       .addPressingStep()
