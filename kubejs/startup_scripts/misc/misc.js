@@ -1,3 +1,5 @@
+console.info("Create: Astral Modpack version = 2.1.4");
+
 (function misc() {
   const { upgrades } = global.startup;
   const $DeferredRegister = java("dev.architectury.registry.registries.DeferredRegister");

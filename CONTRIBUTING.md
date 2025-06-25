@@ -1,8 +1,15 @@
+---
+lang: en_GB
+# a british person wrote this document so we're making it british grammar
+---
+
 # Create: Astral Repository Contribution Guidelines
 
 ## Important forewords
 
-YOU MUST REFER TO THE [LICENSE](/LICENSE.md) BEFORE MAKING ANY PULL REQUESTS OR PERSONAL MODIFICATIONS.
+## Important forewords
+
+**YOU MUST REFER TO THE [LICENSE](/LICENSE.md) BEFORE MAKING ANY PULL REQUESTS OR PERSONAL MODIFICATIONS.**
 
 Please also refer to the [CODE_STYLE](CODE_STYLE.md) document if making contributions to any JavaScript files.
 
@@ -66,7 +73,7 @@ This is a simplified version of the tutorial found on the [packwiz website](http
 - To start, make sure you have [Prism Launcher](https://prismlauncher.org/) or a launcher similar to it that can execute **pre-launch commands** _(if you are unsure as to what this means, download Prism anyway)_, such as [MultiMC](https://multimc.org/).
 - Create an instance in the launcher with just the Minecraft version (1.18.2), and Fabric version (0.16.3). Increase memory allocation to about 6-8 GB for the instance if you haven't already set it as a global value in your launcher.
 - Download the packwiz installer jar from [packwiz-installer-bootstrap](https://github.com/packwiz/packwiz-installer-bootstrap/releases), and put it into the `.minecraft/` folder in the instance, **not the `.minecraft/mods/` folder**. If there isn't already a `.minecraft/` folder, you can just create a folder with that name, or ideally you can start the instance once and close out of it once the folders have been generated.
-- Now, set up your launcher to execute the pre-launch command. If you're using Prism, go to Edit Instance ⇒ Settings ⇒ Custom commands, then check the Custom Commands tickbox, and paste the following command into the pre-launch command field:
+- Now, set up your launcher to execute the pre-launch command. If you're using Prism, go to Edit Instance ⇒ Settings ⇒ Custom commands, then check the Custom Commands tick box, and paste the following command into the pre-launch command field:
 
 ```shell
 "$INST_JAVA" -jar packwiz-installer-bootstrap.jar http://localhost:8080/pack.toml
@@ -98,7 +105,7 @@ This is the easiest and most universal method to install, however other methods 
 - Navigate to the folder where your cloned repository is.
 - Move the packwiz file into that folder.
 
-Simple as that! On MacOS and Linux-based operating systems, you can execute the file by running `packwiz serve` in the terminal while targeting the cloned repository's directory. Do note that on Windows, Powershell will block running the file. To bypass this, put `./packwiz.exe serve` in your terminal instead.
+Simple as that! You can execute the file by running `./packwiz serve` in the terminal while targeting the cloned repository's directory.
 
 Now your Prism instance will automatically update when you start the game as long as the packwiz server is running (and you've saved your files). Note that this does not update the game as you edit the files in the repository, you have to restart the game every time you wish to update the files.
 
@@ -106,7 +113,7 @@ If you want, you could also write a batch script (here's an [example](/reload-ex
 
 #### Running the packwiz server using your PATH (Windows only)
 
-If you're tired of downloading the packwiz binary every time you start developing a new modpack, or you're tired of typing `./packwiz.exe serve` every time you start your terminal, you may wish to add the packwiz exe to your PATH variable. This allows you to run `packwiz serve` from any folder that contains the correct `pack.toml` and `index.toml` files for packwiz to reference, without needing another packwiz binary installed in the same folder.
+If you're tired of downloading or copying the entire packwiz binary every time you start developing a new modpack, or you're tired of typing the `./` in `./packwiz.exe serve` every time you start your terminal, you may wish to add the packwiz EXE to your PATH variable. This allows you to run `packwiz serve` from any folder that contains the correct `pack.toml` and `index.toml` files for packwiz to reference, without needing another packwiz binary installed in the same folder.
 
 This process is the same on Windows 10 and Windows 11.
 
@@ -130,14 +137,14 @@ Here's the run-down:
 - All **asset and resource files** can be found in [/kubejs/assets/](/kubejs/assets/)
 - All **data-driven recipe files** are now handled by KubeJS and can be found in [/kubejs/server_scripts/recipes](/kubejs/server_scripts/recipes)
   > There is an exception to the above, being the Hephaestus (tconstruct) modifiers, which can be found in [/kubejs/data/tconstruct/recipes/tools/modifiers/](/kubejs/data/tconstruct/recipes/tools/modifiers/)
-- All other **data-driven (datapack) .json files** (NOT RECIPE FILES) can be found in [/kubejs/data/](/kubejs/data/)
+- All other **data-driven (datapack) JSON files** (NOT RECIPE FILES) can be found in [/kubejs/data/](/kubejs/data/)
 - All **KubeJS startup scripts** are now organised to be more intuitively located in [/kubejs/startup_scripts/](/kubejs/startup_scripts/) - not much has changed otherwise
 
 For everything else, the place they're stored hasn't changed and should be rather intuitive for both first-time and long-time contributors.
 
 You can refer to the [KubeJS README](/kubejs/README.txt) for more information on what each folder in [/kubejs/](/kubejs/) does.
 
-If you're new to datapacks, resources, and KubeJS, then take a look at their respective wikis for more information on how to utilise them. Astral has been organised in such a way to aid in readability and accessibility so you may be able to pick up some skills from just reading through code.
+If you're new to datapacks, resources, and KubeJS, then take a look at their respective wikis for more information on how to utilise them. Astral has been organised in such a way to aid in readability and accessibility, so you may be able to pick up some skills from just reading through code.
 
 - [KubeJS Wiki for 1.18.2](https://wiki.latvian.dev/books/kubejs-legacy)
 - [Minecraft Wiki article on Data Packs](https://minecraft.wiki/w/Data_pack)
@@ -171,7 +178,7 @@ Feel completely free to use helper functions to add recipes en-masse, as long as
 
 #### Adding or modifying tags
 
-Registering or modifying tags (such as `#minecraft:logs` or `#create:wrench_pickup`) is to be done via datapack and **not KubeJS**, even if you need to use helper functions. We understand this may be inconvenient but it allows us to have a much more easily navigatable tags library for reference purposes.
+Registering or modifying tags (such as `#minecraft:logs` or `#create:wrench_pickup`) is to be done via datapack and **not KubeJS**, even if you need to use helper functions. We understand this may be inconvenient, but it allows us to have a much more easily navigable tags library for reference purposes.
 
 #### All other contributions of this category
 
@@ -189,7 +196,7 @@ As you can imagine this is very important for accessibility for players around t
 
 Here's an [example](https://github.com/Laskyyy/Create-Astral/pull/389) of changing the added tooltip and some other text to a language key. For adding a new item/block/fluid, the naming of the key in the language file needs to follow these rules.
 
-To name keys in the [lang file](/kubejs/assets/createastral/lang/en_us.json) correctly, you need use the **prefix** (`item/block/fluid`) + the **namespace** of mod (such as `kubejs`,`create_astral`) + the **id** of item/block/fluid. For vaules, it's the **displayed name** instead of translation keys. Here is an example:
+To name keys in the [lang file](/kubejs/assets/createastral/lang/en_us.json) correctly, you need to use the **prefix** (`item/block/fluid`) + the **namespace** of mod (such as `kubejs`,`create_astral`) + the **ID** of item/block/fluid. For values, it's the **displayed name** instead of translation keys. Here is an example:
 
 ```json
 {
@@ -199,7 +206,7 @@ To name keys in the [lang file](/kubejs/assets/createastral/lang/en_us.json) cor
 }
 ```
 
-For other texts in javascript, you should use [text components](https://wiki.latvian.dev/books/kubejs-legacy/page/components-kubejs-and-you). Here is an [example](/kubejs/startup_scripts/tooltip/minecraft.js#L65).
+For other texts in JavaScript, you should use [text components](https://wiki.latvian.dev/books/kubejs-legacy/page/components-kubejs-and-you). Here is an [example](/kubejs/startup_scripts/tooltip/minecraft.js#L65).
 
 Here are the files where language keys are assigned a translated text value:
 
@@ -211,13 +218,13 @@ You MUST assign a text value for lang keys in the en_us local file before any ot
 
 ## Quest contributions
 
-If you've found yourself in this section, it's likely that you're making a pull request to fix a typo, update an inconsistency, or add some quality-of-life (QoL) to the in-game FTB Quests questbook. In that case, thank you for making the modpack more accessible and friendly to players who might be newer to modded minecraft <3
+If you've found yourself in this section, it's likely that you're making a pull request to fix a typo, update an inconsistency, or add some quality-of-life (QoL) to the in-game FTB Quests questbook. In that case, thank you for making the modpack more accessible and friendly to players who might be newer to modded Minecraft <3
 
 When editing the quests, you may notice something very strange about the quests:
 
 ### Language keys
 
-Language keys, or lang keys, are a way of referring to a translation present in an en_us.json file within the modpack's resources. Refer to the [Internationalisation and localisation support](#internationalisation-and-localisation-support) section of this document for more information on what this means.
+Language keys, or lang keys, are a way of referring to a translation present in an `en_us.json` file within the modpack's resources. Refer to the [Internationalisation and localisation support](#internationalisation-and-localisation-support) section of this document for more information on what this means.
 
 If you just want to edit the text, do it in this [file](/kubejs/assets/createastral/lang/en_us.json#L515) underneath the FTB Quests section. It's recommended that you have both the game and your IDE open side-by-side to make this process easier. Do not edit the text within the questbook directly.
 
