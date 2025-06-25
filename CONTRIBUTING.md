@@ -105,7 +105,7 @@ This is the easiest and most universal method to install, however other methods 
 - Navigate to the folder where your cloned repository is.
 - Move the packwiz file into that folder.
 
-Simple as that! You can execute the file by running `./packwiz serve` in the terminal while targeting the cloned repository's directory.
+Simple as that! You can execute the file by running `./packwiz serve` in the terminal while targeting the cloned repository's directory. On Windows, this command will be `./packwiz.exe serve`
 
 Now your Prism instance will automatically update when you start the game as long as the packwiz server is running (and you've saved your files). Note that this does not update the game as you edit the files in the repository, you have to restart the game every time you wish to update the files.
 
@@ -113,7 +113,7 @@ If you want, you could also write a batch script (here's an [example](/reload-ex
 
 #### Running the packwiz server using your PATH (Windows only)
 
-If you're tired of downloading or copying the entire packwiz binary every time you start developing a new modpack, or you're tired of typing the `./` in `./packwiz.exe serve` every time you start your terminal, you may wish to add the packwiz EXE to your PATH variable. This allows you to run `packwiz serve` from any folder that contains the correct `pack.toml` and `index.toml` files for packwiz to reference, without needing another packwiz binary installed in the same folder.
+If you're tired of downloading or copying the entire packwiz binary every time you start developing a new modpack, or you're tired of typing the `./` and `.exe` in `./packwiz.exe serve` every time you start your terminal, you may wish to add the packwiz EXE to your PATH variable. This allows you to run `packwiz serve` from any folder that contains the correct `pack.toml` and `index.toml` files for packwiz to reference, without needing another packwiz binary installed in the same folder.
 
 This process is the same on Windows 10 and Windows 11.
 
