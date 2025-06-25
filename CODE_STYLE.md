@@ -48,6 +48,15 @@ function itemCount(itemName, count) {
 }
 ```
 
+- Classes should be named using PascalCase.  
+KubeJS does not support the `class` keyword, so you must use constructor functions instead.
+```js
+function SequencedAssemblyBuilder(event, io) {
+  this._event = event;
+  // ...
+}
+```
+
 - Java classes should be prepended with a `$` sign.
 
 ```js
@@ -132,13 +141,27 @@ gems.forEach((gem) => {
 });
 ```
 
+- This repository defines constants and common code in the `global` object.  
+  - `global.server` stores common constants and functions for server code.
+  - `global.fluids` stores constants related to fluid amounts, like `BUCKET` or `mB`.
+  - `global.startup` stores constants and functions for startup code.
+- To access the constants, destructure the object inside the IIFE:  
+```js
+(function myScript() {
+  const { createSequencedAssembly } = global.server
+  const { BUCKET, mB } = global.fluids
+
+  // ...
+})();
+```
+
 ## 3. Type checking
 
 ### 3.1. Setup
 
 You can optionally type-check your script against ProbeJS scripts by doing the following:
 
-- Add ProbeJS to the pack:<br>
+- Add ProbeJS to the pack:  
   https://www.curseforge.com/minecraft/mc-mods/probejs/files/4365861
 - Launch Minecraft
 - For best possible dump:

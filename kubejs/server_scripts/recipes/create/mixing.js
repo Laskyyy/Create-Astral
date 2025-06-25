@@ -1,11 +1,5 @@
 (function createMixingRecipes() {
-  const BUCKET = global.BUCKET;
-  const GEM_BLOCK = global.GEM_BLOCK;
-  const SLIMEBALL = global.SLIMEBALL;
-  const INGOT = global.INGOT;
-  const GEM = global.GEM;
-  const NUGGET = global.NUGGET;
-  const mB = global.mB;
+  const { BUCKET, GEM_BLOCK, SLIMEBALL, INGOT, GEM, NUGGET, mB } = global.fluids;
 
   onEvent("recipes", (event) => {
     farmersCompatMixing(event);
@@ -648,7 +642,7 @@
       },
       {
         output: Fluid.of("tconstruct:molten_hepatizon", INGOT * 4),
-        input: ["techreborn:cobalt_ingot", Item.of("tconstruct:lead_ingot", 2)],
+        input: ["tconstruct:cobalt_ingot", Item.of("techreborn:lead_ingot", 2)],
         heat: "superheated",
         time: 5,
       },

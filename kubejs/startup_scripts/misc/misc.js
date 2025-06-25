@@ -1,40 +1,7 @@
-/**
- * @typedef Upgrade
- * @property {`${string}:${string}`} item
- * @property {number} multiplier
- */
-
-/** @type {Upgrade[]} */
-global.upgrades = [
-  {
-    item: "createastral:t1_upgrade",
-    multiplier: 2,
-  },
-  {
-    item: "createastral:t2_upgrade",
-    multiplier: 4,
-  },
-  {
-    item: "createastral:t3_upgrade",
-    multiplier: 16,
-  },
-  {
-    item: "createastral:t4_upgrade",
-    multiplier: 64,
-  },
-  {
-    item: "createastral:t5_upgrade",
-    multiplier: 256,
-  },
-  {
-    item: "createastral:t6_upgrade",
-    multiplier: 1048576, // 2^20x, this makes the regular drawer store 2^31 items
-  },
-];
-
 console.info("Create: Astral Modpack version = 2.1.4");
 
 (function misc() {
+  const { upgrades } = global.startup;
   const $DeferredRegister = java("dev.architectury.registry.registries.DeferredRegister");
   const $Registry = java("net.minecraft.core.Registry");
   const $UpgradeItem = java("io.github.mattidragon.extendeddrawers.item.UpgradeItem");
@@ -52,7 +19,7 @@ console.info("Create: Astral Modpack version = 2.1.4");
       return new $UpgradeItem(new $FabricItemSettings(), $ResourceLocation.tryParse(resourceLocation), multiplier);
     });
   }
-  global.upgrades.forEach((upgrade) => registerUpgrade(upgrade.item, upgrade.multiplier));
+  upgrades.forEach((upgrade) => registerUpgrade(upgrade.item, upgrade.multiplier));
   ITEMS.register();
   // make create wrench work as tech reborn wrench
   $ToolManager.INSTANCE.customToolHandlerList.add(

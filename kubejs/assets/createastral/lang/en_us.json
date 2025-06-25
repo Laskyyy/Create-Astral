@@ -422,6 +422,11 @@
   "block.doodads.asphalt_slab": "Asphalt Slab",
   "block.doodads.asphalt_stair": "Asphalt Stair",
   "block.yttr.polished_scorched_obsidian_holster_alive": "Polished Scorched Obsidian Holster Alive",
+  
+  "fluid.astralgenerators.steam": "Steam",
+  "fluid.astralgenerators.deuterium": "Deuterium",
+  "fluid.astralgenerators.tritium": "Tritium",
+  "fluid.astralgenerators.helium3": "Helium 3",
 
   "fluid.kubejs.molten_calorite": "Calorite",
   "fluid.kubejs.molten_ostrum": "Ostrum",
@@ -433,7 +438,7 @@
   "fluid.kubejs.shimmer": "Shimmer",
   "fluid.kubejs.aurorite": "Aurorite",
   "fluid.kubejs.metabolic_broth": "Metabolic Broth",
-  "fluid.kubejs.plasma_fluid": "Metabolic Broth",
+  "fluid.kubejs.plasma_fluid": "Plasma Fluid",
   "fluid.kubejs.hellfire": "Hellfire",
   "fluid.kubejs.smite": "Smite",
   "fluid.kubejs.released_water_coolant": "Released Coolant",
