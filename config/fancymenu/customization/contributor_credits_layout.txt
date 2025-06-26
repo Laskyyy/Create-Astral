@@ -1,16 +1,16 @@
 type = fancymenu_layout
 
 layout-meta {
-  identifier = main_menu_image_credits
+  identifier = credits_screen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1749199711703
+  last_edited_time = 1750554977428
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
   custom_menu_title = Create: Astral Credits
-  [loading_requirement_container_meta:5e70e06a-5f7f-405a-a297-8aa10ebe0bda-1749199626231] = [groups:][instances:d3036992-c3b3-46e5-aaf6-60f58b90006b-1748891901757;]
+  [loading_requirement_container_meta:a0fea86b-f022-4ddd-859b-b35890dd2b88-1750554846505] = [groups:][instances:d3036992-c3b3-46e5-aaf6-60f58b90006b-1748891901757;]
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if][req_id:d3036992-c3b3-46e5-aaf6-60f58b90006b-1748891901757] = credits_screen_visible:1
 }
 
