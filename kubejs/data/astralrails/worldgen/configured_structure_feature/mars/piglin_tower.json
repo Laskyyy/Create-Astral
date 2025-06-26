@@ -1,7 +1,7 @@
 {
   "config": {
     "start_pool": "astralrails:mars/piglin/lobby",
-    "size": 7
+    "size": 6
   },
   "biomes": "ad_astra:martian_wastelands",
   "adapt_noise":true,
