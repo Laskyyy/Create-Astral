@@ -288,24 +288,6 @@
         },
       },
       {
-        output: "tconstruct:seared_ingot_tank",
-        pattern: ["ACA", "ADA", "ACA"],
-        key: {
-          A: "tconstruct:seared_bricks",
-          C: "#c:plates/brass",
-          D: "create:fluid_tank",
-        },
-      },
-      {
-        output: "tconstruct:seared_ingot_gauge",
-        pattern: ["AAA", "CDC", "AAA"],
-        key: {
-          A: "tconstruct:seared_bricks",
-          C: "create:brass_sheet",
-          D: "create:fluid_tank",
-        },
-      },
-      {
         output: "tconstruct:seared_melter",
         pattern: ["CWC", "SSS", "CSC"],
         key: {
