@@ -9,8 +9,8 @@
   "gui": [
     {
       "texture": "createastral:textures/gui/distillation_tower/distillation_tower_gui.png",
-      "x": 47,
-      "y": 8,
+      "x": 0,
+      "y": 0,
       "type": "custommachinery:texture",
       "width": 256,
       "height": 192
