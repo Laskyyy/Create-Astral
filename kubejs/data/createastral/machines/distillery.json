@@ -77,6 +77,7 @@
       "capacity": 810000,
       "id": "inputtank",
       "maxInput": 50000,
+      "maxOutput": 0,
       "filter": ["minecraft:water", "techreborn:oil", "techreborn:mercury"],
       "whitelist": true
     },

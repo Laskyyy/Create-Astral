@@ -1,4 +1,6 @@
 (function createPressingRecipes() {
+  const { MATERIALS } = global.server;
+
   onEvent("recipes", (event) => {
     /**
      * @typedef PressingRecipe
@@ -61,7 +63,7 @@
     pressingRecipes.forEach((recipe) => {
       event.recipes.createPressing(recipe.output, recipe.input);
     });
-    global.MATERIALS.forEach((material) => {
+    MATERIALS.forEach((material) => {
       if (material.useMechPress) {
         event.recipes.createPressing(material.plate, material.ingot);
       }

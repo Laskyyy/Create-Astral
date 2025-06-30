@@ -1,4 +1,6 @@
 (function techRebornGrinderRecipes() {
+  const {CRUSHING_RECIPES_TO_BECOME_GRINDING, DEFAULT_GRIND_POWER, DEFAULT_GRIND_TIME} = global.server
+
   onEvent("recipes", (event) => {
     crushingToGrinding(event);
     /**
@@ -42,11 +44,11 @@
    * @param {Internal.RecipeEventJS} event
    */
   function crushingToGrinding(event) {
-    for (let recipe of global.CRUSHING_RECIPES_TO_BECOME_GRINDING) {
+    for (let recipe of CRUSHING_RECIPES_TO_BECOME_GRINDING) {
       event.custom({
         type: "techreborn:grinder",
-        time: "time" in recipe ? recipe.time : global.DEFAULT_GRIND_TIME,
-        power: "power" in recipe ? recipe.power : global.DEFAULT_GRIND_POWER,
+        time: "time" in recipe ? recipe.time : DEFAULT_GRIND_TIME,
+        power: "power" in recipe ? recipe.power : DEFAULT_GRIND_POWER,
         ingredients: [{ item: recipe.input.item, count: 1 }],
         results: [{ item: recipe.output.item, count: recipe.output.count }],
       });

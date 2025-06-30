@@ -1,15 +1,10 @@
 (function techRebornIndustrialSawmillRecipes() {
-  const BUCKET = global.BUCKET;
-  const GEM_BLOCK = global.GEM_BLOCK;
-  const SLIMEBALL = global.SLIMEBALL;
-  const INGOT = global.INGOT;
-  const GEM = global.GEM;
-  const NUGGET = global.NUGGET;
-  const mB = global.mB;
+  const { BUCKET, GEM_BLOCK, SLIMEBALL, INGOT, GEM, NUGGET, mB } = global.fluids;
+  const {WOODS} = global.server
 
   onEvent("recipes", (event) => {
     event.remove({ type: "techreborn:industrial_sawmill" });
-    global.WOODS.forEach((wood) => {
+    WOODS.forEach((wood) => {
       let mod_id = wood.mod;
       let type = wood.type;
       event.custom({

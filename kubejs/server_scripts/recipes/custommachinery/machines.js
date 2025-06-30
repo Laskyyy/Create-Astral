@@ -1,11 +1,5 @@
 (function customMachineryRecipes() {
-  const BUCKET = global.BUCKET;
-  const GEM_BLOCK = global.GEM_BLOCK;
-  const SLIMEBALL = global.SLIMEBALL;
-  const INGOT = global.INGOT;
-  const GEM = global.GEM;
-  const NUGGET = global.NUGGET;
-  const mB = global.mB;
+  const { BUCKET, GEM_BLOCK, SLIMEBALL, INGOT, GEM, NUGGET, mB } = global.fluids;
 
   onEvent("recipes", (event) => {
     event.recipes.custommachinery
@@ -77,7 +71,7 @@
           d: "dbe:black_guilded_boiler[axis=y]",
           e: "techreborn:lightning_rod",
           f: "techreborn:refined_iron_fence",
-        },
+        }
       )
       .requireFluid(Fluid.of("kubejs:smite", BUCKET))
       .runCommandOnEnd("/summon minecraft:lightning_bolt")

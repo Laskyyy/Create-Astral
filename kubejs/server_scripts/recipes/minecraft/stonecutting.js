@@ -1,4 +1,5 @@
 (function minecraftStonecuttingRecipes() {
+  const {OXIDIZATION_TYPES, VANILLA_COPPER_BLOCKS, CREATE_COPPER_BLOCKS} = global.server
   /**
    * @typedef StonecuttingRecipe
    * @property {Internal.IngredientJS_} input
@@ -203,19 +204,19 @@
   /** @param {Internal.RecipeEventJS} event */
   function copperOxidising(event) {
     // Oxidisation of all copper blocks that can weather
-    for (const block of global.VANILLA_COPPER_BLOCKS) {
-      for (const state of global.OXIDIZATION_TYPES) {
+    for (const block of VANILLA_COPPER_BLOCKS) {
+      for (const state of OXIDIZATION_TYPES) {
         event.stonecutting(`minecraft:${state}_${block}`, `minecraft:${block}`);
         event.stonecutting(`minecraft:waxed_${state}_${block}`, `minecraft:waxed_${block}`);
       }
     }
-    for (const block of global.CREATE_COPPER_BLOCKS) {
-      for (const state of global.OXIDIZATION_TYPES) {
+    for (const block of CREATE_COPPER_BLOCKS) {
+      for (const state of OXIDIZATION_TYPES) {
         event.stonecutting(`create:${state}_${block}`, `create:${block}`);
         event.stonecutting(`create:waxed_${state}_${block}`, `create:waxed_${block}`);
       }
     }
-    global.OXIDIZATION_TYPES.forEach((state) => {
+    OXIDIZATION_TYPES.forEach((state) => {
       /**
        * @typedef OtherCopperStonecuttingRecipe
        * @property {Internal.ItemStackJS_} input
