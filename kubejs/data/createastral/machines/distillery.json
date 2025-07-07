@@ -22,45 +22,45 @@
     },
     {
       "id": "inputtank",
-      "x": 90,
-      "y": 30,
+      "x": 53,
+      "y": 40,
       "type": "custommachinery:fluid"
     },
     {
       "id": "inputslot",
-      "x": 70,
-      "y": 30,
+      "x": 82,
+      "y": 40,
       "type": "custommachinery:slot"
     },
     {
       "id": "outputtank",
-      "x": 142,
-      "y": 30,
+      "x": 183,
+      "y": 40,
       "type": "custommachinery:fluid"
     },
     {
       "type": "custommachinery:energy",
-      "x": 30,
-      "y": 30
+      "x": 26,
+      "y": 32
     },
     {
       "emptyTexture": "createastral:textures/gui/distillation_tower/distillation_tower_progress_empty.png",
-      "filledTexture": "createastral:textures/gui/distillation_tower/distillation_tower_progress_full.png",
+      "filledTexture": "createastral:textures/gui/distillation_tower/distillation_tower_progress_filled.png",
       "x": 118,
       "y": 34,
       "type": "custommachinery:progress",
-      "height": 30,
-      "width": 16
+      "height": 32,
+      "width": 48
     },
     {
-      "x": 236,
-      "y": 5,
+      "x": 232,
+      "y": 8,
       "type": "custommachinery:status"
     },
     {
       "text": "custommachinery.createastral.distillery.text",
-      "x": 7,
-      "y": 5,
+      "x": 34,
+      "y": 6,
       "type": "custommachinery:text"
     }
   ],
