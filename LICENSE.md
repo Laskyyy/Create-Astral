@@ -4,4 +4,4 @@ However, contribution to the pack is very open regarding translations and improv
 
 Multiple contributors under Astral have licensing in various terms which may need to be asked directly.
 
-Any enquiries regarding direct usage of Astral specific resources are to be directed to the team to discuss as a whole. You can contact us via the discord server at https://discord.gg/createastral.
+Any enquiries regarding direct usage of Astral specific resources are to be directed to the team to discuss as a whole. You can contact us via the discord server at https://discord.gg/StW3Q5K8dJ.
