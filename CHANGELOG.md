@@ -62,7 +62,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 
 - Nerfed Quantum Bites, Seared Potatoes, and Dipped Potatoes.
 - Halved the water requirement for making Dough in a mixer.
-- Blazing Blood can now be made by mixing Blaze Powder and Blood in a heated basin.
+- Blazing Blood can now be made by mixing Blaze Powder and Blood in a superheated basin.
 - The Grapevine Pot from Vinery can now be crafted with any wood type.
 - Cocoa Beans are now craftable with Shimmer, Brown Dye, Wheat Seeds, and Tree Fertiliser.
 - Skyslime Balls are now craftable with Dough and Cyan Dye.
@@ -147,6 +147,8 @@ This update comes with a completely overhauled file structure for Astral's own c
 - Fixed Plasma Fluid (previously Metabolic Broth) having the same name as a progression-vital fluid also named Metabolic Broth.
 - Fixed some enchantment recipes having 4 loops and Precision Mechanism as a transitional item because these were omitted from the recipe.
 - Fixed the inability to create both Capacity and Potato Recovery enchanted books by changing Potato Recovery's assembly to use a Potato as a first item.
+- Fixed most fluid cell quest tasks not respecting NBT and completing when the player is holding any type of fluid cell.
+- Fixed certain blocks not being able to be picked up by wrenches.
 
 #### Minor mod updates
 
@@ -167,6 +169,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 - Fixed incorrect type name in `immersive_aircraft.js`.
 - Fixed incorrect output removal in `removals.js`.
 - Fixed mixed up mod names in `mixing.js`.
+- Updated the bug report template on GitHub to autoassign the new bug tag name.
 
 ### REMOVALS
 

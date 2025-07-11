@@ -237,6 +237,7 @@
 							fluid: "techreborn:lithium"
 						}
 					}
+					match_nbt: true
 				}
 			]
 			rewards: [
@@ -667,8 +668,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						File: "[AstralExamples] Distillery.nbt"
 						Rotation: "NONE"
+						File: "[AstralExamples] Distillery.nbt"
 						Mirror: "NONE"
 						Bounds: [
 							5
@@ -726,6 +727,7 @@
 							fluid: "tconstruct:molten_iron"
 						}
 					}
+					match_nbt: true
 				}
 				{
 					id: "30B11C4314A81F5C"
@@ -737,6 +739,7 @@
 							fluid: "techreborn:carbon"
 						}
 					}
+					match_nbt: true
 				}
 			]
 			rewards: [{
@@ -1028,6 +1031,7 @@
 						fluid: "techreborn:methane"
 					}
 				}
+				match_nbt: true
 			}]
 			rewards: [{
 				id: "14830FF635820F71"
@@ -1323,6 +1327,7 @@
 						fluid: "techreborn:sulfur"
 					}
 				}
+				match_nbt: true
 			}]
 		}
 		{
@@ -1344,6 +1349,7 @@
 							fluid: "techreborn:sulfur"
 						}
 					}
+					match_nbt: true
 				}
 				{
 					id: "3F26111DB0043FBA"
@@ -1385,6 +1391,7 @@
 						fluid: "techreborn:oil"
 					}
 				}
+				match_nbt: true
 			}]
 		}
 		{
@@ -1516,6 +1523,7 @@
 							fluid: "techreborn:oil"
 						}
 					}
+					match_nbt: true
 				}
 				{
 					id: "4A61D1E1FE5ED548"
@@ -1627,6 +1635,7 @@
 						fluid: "techreborn:nitrogen"
 					}
 				}
+				match_nbt: true
 			}]
 			rewards: [{
 				id: "27E0D0EDB9F5A76B"

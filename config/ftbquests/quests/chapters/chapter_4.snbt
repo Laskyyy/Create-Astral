@@ -787,7 +787,10 @@
 					id: "tconstruct:sword"
 					Count: 1b
 					tag: {
-						Damage: 0
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.5f
+							"tconstruct:durability": 1.1f
+						}
 						tic_stats: {
 							"tconstruct:attack_speed": 1.7600001f
 							"tconstruct:mining_speed": 4.07f
@@ -795,15 +798,8 @@
 							"tconstruct:harvest_tier": "minecraft:diamond"
 							"tconstruct:durability": 246.40001f
 						}
-						tic_multipliers: {
-							"tconstruct:mining_speed": 0.5f
-							"tconstruct:durability": 1.1f
-						}
-						tic_materials: [
-							"tconstruct:silver"
-							"tconstruct:silver"
-							"tconstruct:silver"
-						]
+						Damage: 0
+						tic_broken: 0b
 						tic_modifiers: [
 							{
 								name: "tconstruct:smite"
@@ -814,7 +810,11 @@
 								level: 1s
 							}
 						]
-						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:silver"
+							"tconstruct:silver"
+							"tconstruct:silver"
+						]
 						tic_persistent_data: {
 							upgrades: 3
 							abilities: 1
@@ -967,6 +967,7 @@
 					}
 				}
 				count: 3L
+				match_nbt: true
 			}]
 			rewards: [{
 				id: "3D434E26EC91C3E3"
@@ -2109,6 +2110,7 @@
 					id: "04874DA2291F924D"
 					type: "item"
 					item: "techreborn:cell"
+					match_nbt: true
 				}
 			]
 		}
@@ -3634,14 +3636,14 @@
 						tag: {
 							tic_modifiers: [ ]
 							tic_broken: 0b
-							Damage: 0
+							tic_multipliers: { }
 							tic_stats: {
 								"tconstruct:armor_toughness": 2.0f
 								"tconstruct:knockback_resistance": 0.1f
 								"tconstruct:durability": 330.0f
 								"tconstruct:armor": 2.0f
 							}
-							tic_multipliers: { }
+							Damage: 0
 							tic_persistent_data: {
 								upgrades: 1
 								abilities: 1
@@ -3659,14 +3661,14 @@
 						tag: {
 							tic_modifiers: [ ]
 							tic_broken: 0b
-							Damage: 0
+							tic_multipliers: { }
 							tic_stats: {
 								"tconstruct:armor_toughness": 2.0f
 								"tconstruct:knockback_resistance": 0.1f
 								"tconstruct:durability": 480.0f
 								"tconstruct:armor": 7.0f
 							}
-							tic_multipliers: { }
+							Damage: 0
 							tic_persistent_data: {
 								upgrades: 1
 								abilities: 1
@@ -3684,14 +3686,14 @@
 						tag: {
 							tic_modifiers: [ ]
 							tic_broken: 0b
-							Damage: 0
+							tic_multipliers: { }
 							tic_stats: {
 								"tconstruct:armor_toughness": 2.0f
 								"tconstruct:knockback_resistance": 0.1f
 								"tconstruct:durability": 450.0f
 								"tconstruct:armor": 5.0f
 							}
-							tic_multipliers: { }
+							Damage: 0
 							tic_persistent_data: {
 								upgrades: 1
 								abilities: 1
@@ -3709,14 +3711,14 @@
 						tag: {
 							tic_modifiers: [ ]
 							tic_broken: 0b
-							Damage: 0
+							tic_multipliers: { }
 							tic_stats: {
 								"tconstruct:armor_toughness": 2.0f
 								"tconstruct:knockback_resistance": 0.1f
 								"tconstruct:durability": 390.0f
 								"tconstruct:armor": 2.0f
 							}
-							tic_multipliers: { }
+							Damage: 0
 							tic_persistent_data: {
 								upgrades: 1
 								abilities: 1

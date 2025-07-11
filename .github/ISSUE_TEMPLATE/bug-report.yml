@@ -3,7 +3,7 @@
 name: Bug Report
 description: File a bug report
 title: "[Bug]: "
-labels: [bug]
+labels: [type: bug]
 body:
     - type: textarea
       id: bug
@@ -39,7 +39,7 @@ body:
       attributes:
           label: Version
           description: What version of the modpack are you on?
-          placeholder: 2.0.5b
+          placeholder: 2.1.4
       validations:
           required: true
 

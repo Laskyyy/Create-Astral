@@ -1094,8 +1094,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						Rotation: "NONE"
 						File: "[AstralExamples] Shimmer Refinery.nbt"
+						Rotation: "NONE"
 						Mirror: "NONE"
 						Bounds: [
 							5
@@ -1302,6 +1302,7 @@
 						fluid: "tconstruct:molten_uranium"
 					}
 				}
+				match_nbt: true
 			}]
 		}
 		{
@@ -1423,6 +1424,7 @@
 						fluid: "techreborn:mercury"
 					}
 				}
+				match_nbt: true
 			}]
 		}
 		{
@@ -1724,6 +1726,7 @@
 						fluid: "kubejs:molten_radiance"
 					}
 				}
+				match_nbt: true
 			}]
 		}
 		{
@@ -1753,6 +1756,7 @@
 						fluid: "kubejs:molten_shadowsteel"
 					}
 				}
+				match_nbt: true
 			}]
 		}
 		{
