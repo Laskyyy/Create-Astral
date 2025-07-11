@@ -9,8 +9,8 @@
   "gui": [
     {
       "texture": "createastral:textures/gui/sgc/sgc_gui.png",
-      "x": 47,
-      "y": 16,
+      "x": 0,
+      "y": 0,
       "type": "custommachinery:texture",
       "width": 256,
       "height": 192

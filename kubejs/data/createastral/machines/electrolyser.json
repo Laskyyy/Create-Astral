@@ -9,7 +9,7 @@
   "gui": [
     {
       "texture": "createastral:textures/gui/electrolyzer/electrolyzer_gui.png",
-      "x": 47,
+      "x": 0,
       "y": 0,
       "type": "custommachinery:texture",
       "width": 256,
