@@ -62,7 +62,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 
 - Nerfed Quantum Bites, Seared Potatoes, and Dipped Potatoes.
 - Halved the water requirement for making Dough in a mixer.
-- Blazing Blood can now be made by mixing Blaze Powder and Blood in a heated basin.
+- Blazing Blood can now be made by mixing Blaze Powder and Blood in a superheated basin.
 - The Grapevine Pot from Vinery can now be crafted with any wood type.
 - Cocoa Beans are now craftable with Shimmer, Brown Dye, Wheat Seeds, and Tree Fertiliser.
 - Skyslime Balls are now craftable with Dough and Cyan Dye.
