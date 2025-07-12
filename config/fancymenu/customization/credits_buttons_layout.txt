@@ -3,14 +3,14 @@ type = fancymenu_layout
 layout-meta {
   identifier = credits_screen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1749166138048
+  last_edited_time = 1752326707720
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
   custom_menu_title = Create: Astral Credits
-  [loading_requirement_container_meta:3e58ec29-859d-4e6b-993e-25b3851ebe67-1749166124191] = [groups:][instances:]
+  [loading_requirement_container_meta:1c2dcd63-2b76-4b8c-a74f-a9c391ea5378-1752326684640] = [groups:][instances:]
 }
 
 customization {
@@ -22,6 +22,16 @@ customization {
   action = autoscale
   basewidth = 2560
   baseheight = 1440
+}
+
+menu_background {
+  image_path = [source:local]/config/fancymenu/assets/static-backgrounds/lunararchway.png
+  slide = false
+  repeat_texture = false
+  parallax = false
+  parallax_intensity = 0.02
+  invert_parallax = false
+  background_type = image
 }
 
 customization {
