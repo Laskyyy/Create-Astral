@@ -1084,7 +1084,7 @@ element {
 
 element {
   interactable = false
-  source = |||%n%Client version: &c{"placeholder":"getvariable","values":{"name":"version"}}%n%Most recent version: &b{"placeholder":"json","values":{"source":"https://api.shortrailman.uk/createastral.json","json_path":"$.release_version"}}%n%|||
+  source = |||%n%Client version: &c{"placeholder":"getvariable","values":{"name":"version"}}&r%n%Most recent version: &b{"placeholder":"json","values":{"source":"https://api.github.com/repos/Laskyyy/Create-Astral/releases/latest","json_path":"$.tag_name"}}&r%n%|||
   source_mode = direct
   shadow = true
   scale = 1.0

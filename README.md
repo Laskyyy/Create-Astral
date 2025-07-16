@@ -22,7 +22,6 @@ Does not include mods, or most configs, only pack specific files which are used 
 ## External resources this repository uses
 
 - [packwiz](https://packwiz.infra.link/) - used in constructing the modpack from this lightweight repository into a launcher instance, as well as managing mod updates.
-- [ShortAPI](https://api.shortrailman.uk/createastral.json) - used for updating the most recent modpack version number in the main menu.
 
 This section may not be complete - if there are other external resources used within this repository that should be credited, please open a Pull Request with updates to this file.
 
