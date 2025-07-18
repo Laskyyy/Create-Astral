@@ -1084,7 +1084,7 @@ element {
 
 element {
   interactable = false
-  source = |||%n%Current version: &c{"placeholder":"getvariable","values":{"name":"version"}}&r%n%Most Recent version: &b{"placeholder":"json","values":{"source":"https://api.github.com/repos/Laskyyy/Create-Astral/releases/latest","json_path":"$.tag_name"}}&r%n%|||
+  source = |||%n%Current version: &c{"placeholder":"getvariable","values":{"name":"version"}}&r%n%Most recent version: &b{"placeholder":"json","values":{"source":"https://api.github.com/repos/Laskyyy/Create-Astral/releases/latest","json_path":"$.tag_name"}}&r%n%|||
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -1121,7 +1121,7 @@ element {
   sticky_anchor = false
   anchor_point = bottom-right
   x = -165
-  y = -40
+  y = -35
   width = 200
   height = 25
   stretch_x = false
