@@ -45,6 +45,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 
 - Added four new GUIs for the Electrolyser, Distillation Tower, Stone Growth Chamber, and Shimmer Refinery multiblock structures.
 - Added a dedicated transistional item for the Shimmer Amplifier sequenced assembly recipe.
+- Added a live version tracker on the main menu that pulls the most recent version of Astral from the GitHub repository releases.
 
 #### Behind-the-scenes
 
@@ -86,6 +87,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 - Tripled the amount of time Blazing Blood can fuel liquid Blaze Burners for.
 - Changed Launch Gel's transitional item to be Slimesteel Nugget.
 - Diamond tools now need 1 Diamond worth of Molten Diamond per loop instead of 2.5 Diamonds.
+- Buffed marimo dupe recipes to now output 3 marimo instead of 2. This helps with recycling using brass funnels to extract precisely 2 marimo from the basin, leaving one in the basin to be reprocessed.
 
 #### Quality of life
 
@@ -106,6 +108,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 - Made Basic, Advanced, and Industrial Machine Frames and Machine Casings able to be picked up with wrenches.
 - Re-added the in-game changelogs for 2.1.1 and 2.1.2, and preserved the changelog for 2.1.3. Also completely redesigned the in-game changelog.
 - Overhauled the in-game credits menu to include more people and generally look nicer and be more organised.
+- Baked main menu screenshot credits onto the images themselves. Best viewed in a 16:9 monitor aspect ratio.
 
 #### Bug patches
 
