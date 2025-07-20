@@ -68,7 +68,7 @@
         time: 180,
       },
       {
-        output: [Item.of("createastral:shimmer_marimo", 2)],
+        output: [Item.of("createastral:shimmer_marimo", 3)],
         input: ["createastral:shimmer_marimo", "ae2:fluix_crystal_seed", { fluid: "kubejs:shimmer", amount: INGOT }],
         time: 180,
       },
@@ -78,7 +78,7 @@
         time: 180,
       },
       {
-        output: [Item.of("createastral:ender_marimo", 2)],
+        output: [Item.of("createastral:ender_marimo", 3)],
         input: [
           "createastral:ender_marimo",
           "tconstruct:ender_slime_grass_seeds",
@@ -92,7 +92,7 @@
         time: 180,
       },
       {
-        output: [Item.of("createastral:snowy_marimo", 2)],
+        output: [Item.of("createastral:snowy_marimo", 3)],
         input: ["createastral:snowy_marimo", "ad_astra:ice_shard", { fluid: "minecraft:water", amount: 500 * mB }],
         time: 180,
       },
@@ -115,7 +115,7 @@
         time: 180,
       },
       {
-        output: [Item.of("createastral:marimo", 2), { fluid: "minecraft:water", amount: 500 * mB }],
+        output: [Item.of("createastral:marimo", 3), { fluid: "minecraft:water", amount: 500 * mB }],
         input: ["createastral:marimo", { fluid: "minecraft:water", amount: 500 * mB }],
         time: 60,
       },
