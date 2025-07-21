@@ -1,4 +1,8 @@
+PLEASE READ THE WHOLE DOCUMENT! It contains all the information required to set up the server, as well as some troubleshooting tips for common problems.
+
 After you've extracted the serverpack, follow these steps to fully set up the server:
+
+=-= If you downloaded this serverpack from the Astral GitHub releases, you do not need to do step 3. Step 3 only applies if you downloaded from Curseforge. =-=
 
 1. Download download the fabric server .jar version 0.16.3 at https://meta.fabricmc.net/v2/versions/loader/1.18.2/0.16.3/0.11.1/server/jar
 2. Drag into main folder of server (with mods folder, config folder etc.), rename to exactly "server.jar"
@@ -11,17 +15,23 @@ After you've extracted the serverpack, follow these steps to fully set up the se
 5. Once server runs, an "eula.txt" will appear. Open it and set it to 'true'.
 6. Re-run the server and it should now boot.
 
-Ensure you have properly port-forwarded your ip! This varies wildly based on your internet provider, server host or country so find an online resource to help with this.
+Ensure you have properly port-forwarded your IP! This varies wildly based on your internet provider, server host, or country so find an online resource to help with this.
 To change the allocated RAM, open your relevant startup script in notepad and change the -XMX and -XMS flags from 4G or 6G to whatever amount of gigabytes of ram you prefer.
 Don't forget to op yourself through console to perform admin commands ingame 'op YOURNAME'.
 
-If the included scripts don't launch, try booting with your own, especially if using a server host who usually like to use their own start scripts and fabric .jars
+TROUBLESHOOTING:
+
+If the included startup scripts don't launch, try booting with your own, especially if using a server host who usually like to use their own start scripts and fabric .jars
 
 If server instantly crashes when booting = Java version mismatch (Use Java 17)
 
 If server does a lot of setup (30 seconds+) before crashing = Mod issue, if you added any extra mods try removing them first and see if it works.
 
-If fluids like water don't behave like fluids when you try swimming in them, check that you followed step 3.
+If fluids like water don't behave like fluids when you try swimming in them, and you downloaded the pack from Curseforge, check that you followed step 3.
+
+If there are missing quest icons in the questbook, and you downloaded the pack from Curseforge, check that you followed step 3.
+
+If none of these frequently occuring issues apply to you or the fixes don't work, you can join our discord at https://discord.gg/StW3Q5K8dJ and open a thread in the #help forum channel!
 
 ---
 
