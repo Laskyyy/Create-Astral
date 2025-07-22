@@ -152,6 +152,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 - Fixed the inability to create both Capacity and Potato Recovery enchanted books by changing Potato Recovery's assembly to use a Potato as a first item.
 - Fixed most fluid cell quest tasks not respecting NBT and completing when the player is holding any type of fluid cell.
 - Fixed certain blocks not being able to be picked up by wrenches.
+- Fixed the Farmer's Delight Chocolate Pie filling recipe not working due to a broken fluid amount.
 
 #### Minor mod updates
 

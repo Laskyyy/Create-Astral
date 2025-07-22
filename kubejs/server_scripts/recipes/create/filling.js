@@ -158,6 +158,12 @@
         amount: 250 * mB,
       },
       {
+        input: "farmersdelight:pie_crust",
+        output: "farmersdelight:chocolate_pie",
+        fluid: "create:chocolate",
+        amount: 500 * mB,
+      },
+      {
         input: "drinkbeer:empty_beer_mug",
         output: "drinkbeer:beer_mug",
         fluid: "kubejs:miner_pale_ale_fluid",
