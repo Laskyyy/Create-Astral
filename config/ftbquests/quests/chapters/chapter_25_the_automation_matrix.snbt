@@ -858,7 +858,6 @@
 			y: 16.25d
 			shape: "diamond"
 			description: [""]
-			min_required_dependencies: 2
 			dependencies: ["737625E7DFCB0382"]
 			size: 2.5d
 			id: "1D0E2A46A37501CB"
