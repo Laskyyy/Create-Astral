@@ -684,6 +684,7 @@
       { type: "farmersdelight:cutting", input: "minecraft:gravel" },
       { type: "farmersdelight:cutting", input: "farmersdelight:wild_rice" },
       { output: "farmersdelight:wheat_dough" },
+      { id: "farmersdelight:create/filling/chocolate_pie" },
       // Hephaestus modifiers
       { id: "tconstruct:tools/modifiers/ability/double_jump" },
       { id: "tconstruct:tools/modifiers/ability/luck_level_1" },
