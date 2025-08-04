@@ -174,6 +174,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 - Fixed incorrect output removal in `removals.js`.
 - Fixed mixed up mod names in `mixing.js`.
 - Updated the bug report template on GitHub to autoassign the new bug tag name.
+- Removed duplicate Plantball and Biomass sequenced assemblies.
 
 ### REMOVALS
 
@@ -192,8 +193,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 
 #### Behind-the-scenes
 
-- Removed the packwiz binaries from the repository to decrease the size of it.
-- Removed duplicate Plantball and Biomass sequenced assemblies.
+- Removed the packwiz binaries from the repository because now CONTRIBUTING.md tells you how to get the latest version of them.
 
 ## 2.1.3 [Current Release] - 2025/01/05
 

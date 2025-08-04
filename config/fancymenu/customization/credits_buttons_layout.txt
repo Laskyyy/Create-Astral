@@ -25,7 +25,7 @@ customization {
 }
 
 menu_background {
-  image_path = [source:local]/config/fancymenu/assets/static-backgrounds/lunararchway.png
+  image_path = [source:local]/config/fancymenu/assets/static-backgrounds/creditbackground.png
   slide = false
   repeat_texture = false
   parallax = false
