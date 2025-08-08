@@ -8,7 +8,7 @@
     forEachSupportedSystem = f:
       inputs.nixpkgs.lib.genAttrs supportedSystems (system:
         f {
-          pkgs = import nixpkgs {inherit system;};
+          pkgs = import inputs.nixpkgs {inherit system;};
         });
   in {
     devShells = forEachSupportedSystem ({pkgs}: {
