@@ -1299,7 +1299,7 @@
         ],
       },
       {
-        output: Item.of("minecraft:kelp", 0), // If you got the bonemeal, some kelp can be arranged
+        output: Item.of("minecraft:kelp", 10), // If you got the bonemeal, some kelp can be arranged
         input: ["minecraft:kelp", "minecraft:bone_meal", { fluid: "minecraft:water", amount: 500 * mB }],
         time: 120,
       },
