@@ -52,21 +52,20 @@
     ]
   },
   "features": [
-    [,
-			"astralrails:orbit/asteroids_small",
+    [
+      "astralrails:orbit/asteroids_small",
       "ad_astra:moon_cheese_ore",
       "ad_astra:moon_soul_soil",
       "ad_astra:moon_ice_shard_ore",
       "ad_astra:moon_iron_ore",
       "ad_astra:moon_desh_ore",
-			"astralrails:moon_soul_sand_patch"
-      
+      "astralrails:moon_soul_sand_patch"
     ],
     [
       "createastral:debris_pillar",
-			"createastral:moonset_crystal",
-			"astralrails:orbit/meteor_desh",
-			"astralrails:orbit/meteor_xp"
+      "createastral:moonset_crystal",
+      "astralrails:orbit/meteor_desh",
+      "astralrails:orbit/meteor_xp"
     ]
   ]
 }

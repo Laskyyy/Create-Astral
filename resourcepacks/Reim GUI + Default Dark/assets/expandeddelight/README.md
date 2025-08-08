@@ -5,5 +5,5 @@ If you are interested in testing the mod as I work on it, download the files on 
 
 <p align="center"> Current features are listed <a href="https://github.com/ianm1647/expandeddelight/issues/1">here</a></p>
 
-<h4 align="center"> The mod is now available on CurseForge!</p>
+<h4 align="center"> The mod is now available on CurseForge!</h4>
 <p align="center"><a href="https://www.curseforge.com/minecraft/mc-mods/expanded-delight"><img src="https://i.ibb.co/fDHvmnz/logo-4x33v.png" alt="logo-4x33v" border="0"></a></p>
