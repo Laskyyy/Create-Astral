@@ -69,13 +69,11 @@
 			hide: true
 			size: 2.0d
 			id: "326EB9A775B8D791"
-			tasks: [
-				{
-					id: "50441F5A6EECD674"
-					type: "checkmark"
-					title: "{ftbquests.chapter.astral_storage.quests0.tasks0.title}"
-				}
-			]
+			tasks: [{
+				id: "50441F5A6EECD674"
+				type: "checkmark"
+				title: "{ftbquests.chapter.astral_storage.quests0.tasks0.title}"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_storage.quests1.title}"
@@ -83,13 +81,11 @@
 			y: -2.0d
 			dependencies: ["7A2E9BE533B92DC0"]
 			id: "396D08757F6B9CC2"
-			tasks: [
-				{
-					id: "3D7BCAD49F189A8F"
-					type: "item"
-					item: "ae2:calculation_processor_press"
-				}
-			]
+			tasks: [{
+				id: "3D7BCAD49F189A8F"
+				type: "item"
+				item: "ae2:calculation_processor_press"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_storage.quests2.title}"
@@ -97,13 +93,11 @@
 			y: -2.0d
 			dependencies: ["7A2E9BE533B92DC0"]
 			id: "1BF34B94FC7DCC2A"
-			tasks: [
-				{
-					id: "61951F37EB189176"
-					type: "item"
-					item: "ae2:engineering_processor_press"
-				}
-			]
+			tasks: [{
+				id: "61951F37EB189176"
+				type: "item"
+				item: "ae2:engineering_processor_press"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_storage.quests3.title}"
@@ -111,13 +105,11 @@
 			y: -2.5d
 			dependencies: ["7A2E9BE533B92DC0"]
 			id: "2A2EAD3A06D7196D"
-			tasks: [
-				{
-					id: "7B03E7692661F1C8"
-					type: "item"
-					item: "ae2:logic_processor_press"
-				}
-			]
+			tasks: [{
+				id: "7B03E7692661F1C8"
+				type: "item"
+				item: "ae2:logic_processor_press"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_storage.quests4.title}"
@@ -126,13 +118,11 @@
 			subtitle: "{ftbquests.chapter.astral_storage.quests4.subtitle}"
 			dependencies: ["326EB9A775B8D791"]
 			id: "43DF61335F1A3AD6"
-			tasks: [
-				{
-					id: "6AF0153E0EEBA9AF"
-					type: "item"
-					item: "ae2:silicon_press"
-				}
-			]
+			tasks: [{
+				id: "6AF0153E0EEBA9AF"
+				type: "item"
+				item: "ae2:silicon_press"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_storage.quests5.title}"
@@ -142,13 +132,11 @@
 			dependencies: ["790B0567FF49110F"]
 			hide: true
 			id: "227EF17194467491"
-			tasks: [
-				{
-					id: "18B63463F0275B5F"
-					type: "item"
-					item: "ae2:certus_quartz_dust"
-				}
-			]
+			tasks: [{
+				id: "18B63463F0275B5F"
+				type: "item"
+				item: "ae2:certus_quartz_dust"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_storage.quests6.title}"
@@ -160,21 +148,17 @@
 				"227EF17194467491"
 			]
 			id: "7A2E9BE533B92DC0"
-			tasks: [
-				{
-					id: "3EB0AE528455D7C3"
-					type: "item"
-					item: "ae2:printed_silicon"
-				}
-			]
-			rewards: [
-				{
-					id: "114410E96146E5FE"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 1659707140697346501L
-				}
-			]
+			tasks: [{
+				id: "3EB0AE528455D7C3"
+				type: "item"
+				item: "ae2:printed_silicon"
+			}]
+			rewards: [{
+				id: "114410E96146E5FE"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1659707140697346501L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_storage.quests7.title}"
@@ -203,14 +187,12 @@
 					item: "ae2:printed_logic_processor"
 				}
 			]
-			rewards: [
-				{
-					id: "6521283F3C0CE5E9"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 1659707140697346501L
-				}
-			]
+			rewards: [{
+				id: "6521283F3C0CE5E9"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1659707140697346501L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_storage.quests8.title}"
@@ -226,14 +208,12 @@
 			]
 			dependencies: ["326EB9A775B8D791"]
 			id: "432AF29897E50CDC"
-			tasks: [
-				{
-					id: "1BA6BB94C76CAA81"
-					type: "item"
-					item: "ad_astra:sky_stone"
-					count: 64L
-				}
-			]
+			tasks: [{
+				id: "1BA6BB94C76CAA81"
+				type: "item"
+				item: "ad_astra:sky_stone"
+				count: 64L
+			}]
 			rewards: [
 				{
 					id: "3A10A6E1DB7FD45E"
@@ -258,13 +238,11 @@
 			hide_dependency_lines: true
 			dependencies: ["227EF17194467491"]
 			id: "47DD53AAA0680214"
-			tasks: [
-				{
-					id: "4D52CABBB8594569"
-					type: "item"
-					item: "ae2:certus_quartz_dust"
-				}
-			]
+			tasks: [{
+				id: "4D52CABBB8594569"
+				type: "item"
+				item: "ae2:certus_quartz_dust"
+			}]
 		}
 		{
 			x: -3.5d
@@ -274,13 +252,11 @@
 			hide_dependency_lines: true
 			dependencies: ["227EF17194467491"]
 			id: "5B72AC99C3A727CE"
-			tasks: [
-				{
-					id: "40E04826DCB04BAE"
-					type: "item"
-					item: "kubejs:shimmer_bucket"
-				}
-			]
+			tasks: [{
+				id: "40E04826DCB04BAE"
+				type: "item"
+				item: "kubejs:shimmer_bucket"
+			}]
 		}
 		{
 			x: -5.0d
@@ -292,13 +268,11 @@
 				"7A9F59521C6A6B7E"
 			]
 			id: "2D5C0605E1EB21AD"
-			tasks: [
-				{
-					id: "69B7BA16EDCF980E"
-					type: "item"
-					item: "ae2:fluix_dust"
-				}
-			]
+			tasks: [{
+				id: "69B7BA16EDCF980E"
+				type: "item"
+				item: "ae2:fluix_dust"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_storage.quests12.title}"
@@ -325,14 +299,12 @@
 					item: "ae2:engineering_processor"
 				}
 			]
-			rewards: [
-				{
-					id: "0D05C14246FE6AB5"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 1659707140697346501L
-				}
-			]
+			rewards: [{
+				id: "0D05C14246FE6AB5"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1659707140697346501L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_storage.quests13.title}"
@@ -374,14 +346,12 @@
 					}
 				}
 			]
-			rewards: [
-				{
-					id: "2482933B90AC24EA"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 1659707140697346501L
-				}
-			]
+			rewards: [{
+				id: "2482933B90AC24EA"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1659707140697346501L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_storage.quests14.title}"
@@ -409,14 +379,12 @@
 					item: "ae2:controller"
 				}
 			]
-			rewards: [
-				{
-					id: "58123A1F38E15005"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 1659707140697346501L
-				}
-			]
+			rewards: [{
+				id: "58123A1F38E15005"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1659707140697346501L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_storage.quests15.title}"
@@ -456,13 +424,11 @@
 			]
 			dependencies: ["0C8063DF02E52A47"]
 			id: "690FA10B8A532B16"
-			tasks: [
-				{
-					id: "76F97AC9364E59F1"
-					type: "item"
-					item: "ae2:drive"
-				}
-			]
+			tasks: [{
+				id: "76F97AC9364E59F1"
+				type: "item"
+				item: "ae2:drive"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_storage.quests17.title}"
@@ -478,21 +444,17 @@
 			dependencies: ["100EEA0D73CFFBE6"]
 			optional: true
 			id: "000CC99296151B0A"
-			tasks: [
-				{
-					id: "5821DA7521DE3643"
-					type: "item"
-					item: "ae2:controller"
-				}
-			]
-			rewards: [
-				{
-					id: "6EB559CA6D63CD57"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 1659707140697346501L
-				}
-			]
+			tasks: [{
+				id: "5821DA7521DE3643"
+				type: "item"
+				item: "ae2:controller"
+			}]
+			rewards: [{
+				id: "6EB559CA6D63CD57"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1659707140697346501L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_storage.quests18.title}"
@@ -514,21 +476,17 @@
 			dependencies: ["690FA10B8A532B16"]
 			min_width: 300
 			id: "0C1BF4EAE2CC1729"
-			tasks: [
-				{
-					id: "7342E1A9A92606C4"
-					type: "item"
-					item: "ae2:cell_workbench"
-				}
-			]
-			rewards: [
-				{
-					id: "45CC9220F71DBF12"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 1659707140697346501L
-				}
-			]
+			tasks: [{
+				id: "7342E1A9A92606C4"
+				type: "item"
+				item: "ae2:cell_workbench"
+			}]
+			rewards: [{
+				id: "45CC9220F71DBF12"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1659707140697346501L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_storage.quests19.title}"
@@ -572,14 +530,12 @@
 					item: "ae2:spatial_io_port"
 				}
 			]
-			rewards: [
-				{
-					id: "66FAEE72CCAD091E"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 1659707140697346501L
-				}
-			]
+			rewards: [{
+				id: "66FAEE72CCAD091E"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1659707140697346501L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_storage.quests20.title}"
@@ -643,21 +599,17 @@
 			]
 			dependencies: ["0F92EA9231F85D25"]
 			id: "5B6C345D10546F73"
-			tasks: [
-				{
-					id: "7B8883E4CC1BDD9F"
-					type: "item"
-					item: "ae2:me_p2p_tunnel"
-				}
-			]
-			rewards: [
-				{
-					id: "17BB7A819118528E"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 1659707140697346501L
-				}
-			]
+			tasks: [{
+				id: "7B8883E4CC1BDD9F"
+				type: "item"
+				item: "ae2:me_p2p_tunnel"
+			}]
+			rewards: [{
+				id: "17BB7A819118528E"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1659707140697346501L
+			}]
 		}
 		{
 			x: -3.5d
@@ -691,14 +643,12 @@
 					item: "ae2:export_bus"
 				}
 			]
-			rewards: [
-				{
-					id: "7F96188B8FC272CD"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 1659707140697346501L
-				}
-			]
+			rewards: [{
+				id: "7F96188B8FC272CD"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1659707140697346501L
+			}]
 		}
 		{
 			icon: "minecraft:redstone_torch"
@@ -741,13 +691,11 @@
 			hide_dependency_lines: true
 			dependencies: ["326EB9A775B8D791"]
 			id: "07A6E8FD5F4961E0"
-			tasks: [
-				{
-					id: "66FEC24EDD870128"
-					type: "checkmark"
-					title: "{ftbquests.chapter.astral_storage.quests24.tasks0.title}"
-				}
-			]
+			tasks: [{
+				id: "66FEC24EDD870128"
+				type: "checkmark"
+				title: "{ftbquests.chapter.astral_storage.quests24.tasks0.title}"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_storage.quests25.title}"
@@ -781,14 +729,12 @@
 					item: "ae2:annihilation_plane"
 				}
 			]
-			rewards: [
-				{
-					id: "62DF335B4F07E4C4"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 1659707140697346501L
-				}
-			]
+			rewards: [{
+				id: "62DF335B4F07E4C4"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1659707140697346501L
+			}]
 		}
 	]
 	quest_links: [ ]

@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:casting_basin",
-  "fluid": {
-    "tag": "c:honey",
-    "amount": 108000
-  },
-  "result": "minecraft:honey_block",
-  "cooling_time": 98
-}

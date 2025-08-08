@@ -1,0 +1,4 @@
+{
+    "replace": false,
+    "values": ["#c:raw_materials/cobalt", "techreborn:raw_tin", "create:crushed_raw_tin", "create:crushed_raw_zinc"]
+}

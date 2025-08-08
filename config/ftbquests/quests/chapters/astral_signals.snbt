@@ -110,13 +110,11 @@
 			hide: true
 			dependency_requirement: "one_completed"
 			id: "6A7E9B1D97D7F5F6"
-			tasks: [
-				{
-					id: "168E16EBC1F6D259"
-					type: "item"
-					item: "astralsignals:ancient_receiver"
-				}
-			]
+			tasks: [{
+				id: "168E16EBC1F6D259"
+				type: "item"
+				item: "astralsignals:ancient_receiver"
+			}]
 		}
 		{
 			x: 2.0d
@@ -132,27 +130,23 @@
 				"2014C5E0EA557199"
 			]
 			id: "38C4272C58E5D202"
-			tasks: [
-				{
-					id: "39B5C3E37EA41780"
-					type: "item"
-					item: {
-						id: "custommachinery:custom_machine_item"
-						Count: 1b
-						tag: {
-							machine: "astralsignals:signal_coordinator"
-						}
+			tasks: [{
+				id: "39B5C3E37EA41780"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "astralsignals:signal_coordinator"
 					}
 				}
-			]
-			rewards: [
-				{
-					id: "7395D02086BE7D22"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 5687404501397719867L
-				}
-			]
+			}]
+			rewards: [{
+				id: "7395D02086BE7D22"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5687404501397719867L
+			}]
 		}
 		{
 			x: 5.5d
@@ -168,27 +162,23 @@
 				"4A09D2D32FC1623D"
 			]
 			id: "37A372C5779194DA"
-			tasks: [
-				{
-					id: "00A4A6D504BD8143"
-					type: "item"
-					item: {
-						id: "custommachinery:custom_machine_item"
-						Count: 1b
-						tag: {
-							machine: "astralsignals:radio_telescope"
-						}
+			tasks: [{
+				id: "00A4A6D504BD8143"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "astralsignals:radio_telescope"
 					}
 				}
-			]
-			rewards: [
-				{
-					id: "79148E1CCF9DB6AF"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 5687404501397719867L
-				}
-			]
+			}]
+			rewards: [{
+				id: "79148E1CCF9DB6AF"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5687404501397719867L
+			}]
 		}
 		{
 			x: 7.5d
@@ -201,27 +191,23 @@
 			]
 			dependencies: ["7C4ED98970F918BE"]
 			id: "6821F86937D5E499"
-			tasks: [
-				{
-					id: "17086DC89D68E863"
-					type: "item"
-					item: {
-						id: "custommachinery:custom_machine_item"
-						Count: 1b
-						tag: {
-							machine: "astralsignals:analog_decryptor"
-						}
+			tasks: [{
+				id: "17086DC89D68E863"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "astralsignals:analog_decryptor"
 					}
 				}
-			]
-			rewards: [
-				{
-					id: "75A0ECA6CF5F6A1D"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 5687404501397719867L
-				}
-			]
+			}]
+			rewards: [{
+				id: "75A0ECA6CF5F6A1D"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5687404501397719867L
+			}]
 		}
 		{
 			x: 13.0d
@@ -229,19 +215,17 @@
 			hide_dependency_lines: true
 			dependencies: ["33856BEC179B720A"]
 			id: "69E916E1BA593CD7"
-			tasks: [
-				{
-					id: "5E4FFE4DA21E3120"
-					type: "item"
-					item: {
-						id: "custommachinery:custom_machine_item"
-						Count: 1b
-						tag: {
-							machine: "astralsignals:vinyl_printer"
-						}
+			tasks: [{
+				id: "5E4FFE4DA21E3120"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "astralsignals:vinyl_printer"
 					}
 				}
-			]
+			}]
 			rewards: [
 				{
 					id: "226C1C645B4D196C"
@@ -272,27 +256,23 @@
 			]
 			hide: true
 			id: "740769C2802E7EE4"
-			tasks: [
-				{
-					id: "7197A45C7E4BF708"
-					type: "item"
-					item: {
-						id: "custommachinery:custom_machine_item"
-						Count: 1b
-						tag: {
-							machine: "astralsignals:pp_decryptor"
-						}
+			tasks: [{
+				id: "7197A45C7E4BF708"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "astralsignals:pp_decryptor"
 					}
 				}
-			]
-			rewards: [
-				{
-					id: "273F92EA62A5EDBB"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 2053519168689179764L
-				}
-			]
+			}]
+			rewards: [{
+				id: "273F92EA62A5EDBB"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
+			}]
 		}
 		{
 			x: 8.5d
@@ -309,27 +289,23 @@
 			]
 			hide: true
 			id: "1AE5C771D29C9BC2"
-			tasks: [
-				{
-					id: "2476A4ABD9F7ED31"
-					type: "item"
-					item: {
-						id: "custommachinery:custom_machine_item"
-						Count: 1b
-						tag: {
-							machine: "astralsignals:mp_decryptor"
-						}
+			tasks: [{
+				id: "2476A4ABD9F7ED31"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "astralsignals:mp_decryptor"
 					}
 				}
-			]
-			rewards: [
-				{
-					id: "1312D6B4ADE35F6C"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 1747526165463332193L
-				}
-			]
+			}]
+			rewards: [{
+				id: "1312D6B4ADE35F6C"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1747526165463332193L
+			}]
 		}
 		{
 			x: 12.0d
@@ -337,13 +313,11 @@
 			subtitle: "{ftbquests.chapter.astral_signals.quests7.subtitle}"
 			dependencies: ["715E926DF4DED51A"]
 			id: "33856BEC179B720A"
-			tasks: [
-				{
-					id: "032CD91F58FD0D72"
-					type: "item"
-					item: "astralsignals:polyvinyl_sheet"
-				}
-			]
+			tasks: [{
+				id: "032CD91F58FD0D72"
+				type: "item"
+				item: "astralsignals:polyvinyl_sheet"
+			}]
 		}
 		{
 			x: 9.0d
@@ -351,13 +325,11 @@
 			subtitle: "{ftbquests.chapter.astral_signals.quests8.subtitle}"
 			dependencies: ["6821F86937D5E499"]
 			id: "04F638504B6D607C"
-			tasks: [
-				{
-					id: "0DE59865D642E4F1"
-					type: "item"
-					item: "astralsignals:data_drive_dormant_t1"
-				}
-			]
+			tasks: [{
+				id: "0DE59865D642E4F1"
+				type: "item"
+				item: "astralsignals:data_drive_dormant_t1"
+			}]
 		}
 		{
 			x: 9.5d
@@ -370,13 +342,11 @@
 			]
 			hide: true
 			id: "3B9A0AB1F6BE839D"
-			tasks: [
-				{
-					id: "453B3471841E3D90"
-					type: "item"
-					item: "astralsignals:data_drive_dormant_t2"
-				}
-			]
+			tasks: [{
+				id: "453B3471841E3D90"
+				type: "item"
+				item: "astralsignals:data_drive_dormant_t2"
+			}]
 		}
 		{
 			x: 10.0d
@@ -388,13 +358,11 @@
 				"1AE5C771D29C9BC2"
 			]
 			id: "3392473AE31BBF22"
-			tasks: [
-				{
-					id: "0A74657FAC44BCBB"
-					type: "item"
-					item: "astralsignals:data_drive_dormant_t3"
-				}
-			]
+			tasks: [{
+				id: "0A74657FAC44BCBB"
+				type: "item"
+				item: "astralsignals:data_drive_dormant_t3"
+			}]
 		}
 		{
 			x: 12.5d
@@ -405,13 +373,11 @@
 				"33856BEC179B720A"
 			]
 			id: "5CF8F8C8E59F50DF"
-			tasks: [
-				{
-					id: "29BEBA914920520A"
-					type: "item"
-					item: "astralsignals:shimmer_polyvinyl_sheet"
-				}
-			]
+			tasks: [{
+				id: "29BEBA914920520A"
+				type: "item"
+				item: "astralsignals:shimmer_polyvinyl_sheet"
+			}]
 		}
 		{
 			x: 13.0d
@@ -422,13 +388,11 @@
 				"5CF8F8C8E59F50DF"
 			]
 			id: "41371FAD5638F39F"
-			tasks: [
-				{
-					id: "382D000DA82D49B5"
-					type: "item"
-					item: "astralsignals:yttric_polyvinyl_sheet"
-				}
-			]
+			tasks: [{
+				id: "382D000DA82D49B5"
+				type: "item"
+				item: "astralsignals:yttric_polyvinyl_sheet"
+			}]
 		}
 		{
 			x: 5.0d
@@ -438,13 +402,11 @@
 			hide_dependency_lines: true
 			dependencies: ["4A09D2D32FC1623D"]
 			id: "22D73D57C82D4297"
-			tasks: [
-				{
-					id: "69D06242C1241308"
-					type: "item"
-					item: "astralsignals:data_drive_blank"
-				}
-			]
+			tasks: [{
+				id: "69D06242C1241308"
+				type: "item"
+				item: "astralsignals:data_drive_blank"
+			}]
 		}
 		{
 			x: 7.0d
@@ -457,20 +419,16 @@
 			]
 			dependencies: ["37A372C5779194DA"]
 			id: "7C4ED98970F918BE"
-			tasks: [
-				{
-					id: "28B44FE63BD26954"
-					type: "item"
-					item: "astralsignals:data_drive_garbled"
-				}
-			]
-			rewards: [
-				{
-					id: "7E3DF9BD78DCE107"
-					type: "item"
-					item: "astralsignals:data_drive_blank"
-				}
-			]
+			tasks: [{
+				id: "28B44FE63BD26954"
+				type: "item"
+				item: "astralsignals:data_drive_garbled"
+			}]
+			rewards: [{
+				id: "7E3DF9BD78DCE107"
+				type: "item"
+				item: "astralsignals:data_drive_blank"
+			}]
 		}
 		{
 			x: 1.5d
@@ -484,13 +442,11 @@
 			hide_dependency_lines: true
 			dependencies: ["6A7E9B1D97D7F5F6"]
 			id: "2014C5E0EA557199"
-			tasks: [
-				{
-					id: "5BAA2CFB98CD16B7"
-					type: "item"
-					item: "astralsignals:dormant_signal_beacon"
-				}
-			]
+			tasks: [{
+				id: "5BAA2CFB98CD16B7"
+				type: "item"
+				item: "astralsignals:dormant_signal_beacon"
+			}]
 		}
 		{
 			x: 3.5d
@@ -499,13 +455,11 @@
 			description: ["{ftbquests.chapter.astral_signals.quests16.description}"]
 			dependencies: ["38C4272C58E5D202"]
 			id: "4BE6535AC9215A17"
-			tasks: [
-				{
-					id: "72C3EE1F06CA5DFC"
-					type: "item"
-					item: "astralsignals:stirring_signal_beacon"
-				}
-			]
+			tasks: [{
+				id: "72C3EE1F06CA5DFC"
+				type: "item"
+				item: "astralsignals:stirring_signal_beacon"
+			}]
 		}
 		{
 			x: 5.0d
@@ -514,20 +468,16 @@
 			description: ["{ftbquests.chapter.astral_signals.quests17.description}"]
 			dependencies: ["4BE6535AC9215A17"]
 			id: "4A09D2D32FC1623D"
-			tasks: [
-				{
-					id: "6E45E03FD9ABE5B2"
-					type: "item"
-					item: "astralsignals:homing_signal_beacon"
-				}
-			]
-			rewards: [
-				{
-					id: "3847D923F677A6CF"
-					type: "item"
-					item: "astralsignals:dormant_signal_beacon"
-				}
-			]
+			tasks: [{
+				id: "6E45E03FD9ABE5B2"
+				type: "item"
+				item: "astralsignals:homing_signal_beacon"
+			}]
+			rewards: [{
+				id: "3847D923F677A6CF"
+				type: "item"
+				item: "astralsignals:dormant_signal_beacon"
+			}]
 		}
 		{
 			x: 6.5d
@@ -543,13 +493,11 @@
 			dependency_requirement: "one_completed"
 			invisible: true
 			id: "2C0436F31A5E966D"
-			tasks: [
-				{
-					id: "63B80B6FBC04CEA9"
-					type: "item"
-					item: "astralsignals:parallel_processor"
-				}
-			]
+			tasks: [{
+				id: "63B80B6FBC04CEA9"
+				type: "item"
+				item: "astralsignals:parallel_processor"
+			}]
 		}
 		{
 			x: 7.0d
@@ -565,94 +513,85 @@
 			dependency_requirement: "one_completed"
 			invisible: true
 			id: "48662E4F9FCF6CC9"
-			tasks: [
-				{
-					id: "481B571563E77B2F"
-					type: "item"
-					item: "astralsignals:microphysical_probe"
-				}
-			]
+			tasks: [{
+				id: "481B571563E77B2F"
+				type: "item"
+				item: "astralsignals:microphysical_probe"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_signals.quests20.title}"
 			x: 10.5d
 			y: 0.5d
 			subtitle: "{ftbquests.chapter.astral_signals.quests20.subtitle}"
+			description: ["{ftbquests.chapter.astral_signals.quests20.description}"]
 			dependencies: ["04F638504B6D607C"]
 			id: "715E926DF4DED51A"
-			tasks: [
-				{
-					id: "293DC774A0C0CE72"
-					type: "item"
-					title: "{ftbquests.chapter.astral_signals.quests20.tasks0.title}"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "astralsignals:drives_decrypted_t1"
-						}
+			tasks: [{
+				id: "293DC774A0C0CE72"
+				type: "item"
+				title: "{ftbquests.chapter.astral_signals.quests20.tasks0.title}"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "astralsignals:drives_decrypted_t1"
 					}
 				}
-			]
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_signals.quests21.title}"
 			x: 11.0d
 			y: 1.5d
 			subtitle: "{ftbquests.chapter.astral_signals.quests21.subtitle}"
+			description: ["{ftbquests.chapter.astral_signals.quests20.description}"]
 			dependencies: ["3B9A0AB1F6BE839D"]
 			id: "0DB6A844CCA38CD5"
-			tasks: [
-				{
-					id: "6D0899C9AF55448A"
-					type: "item"
-					title: "{ftbquests.chapter.astral_signals.quests21.tasks0.title}"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "astralsignals:drives_decrypted_t2"
-						}
+			tasks: [{
+				id: "6D0899C9AF55448A"
+				type: "item"
+				title: "{ftbquests.chapter.astral_signals.quests21.tasks0.title}"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "astralsignals:drives_decrypted_t2"
 					}
 				}
-			]
-			rewards: [
-				{
-					id: "03AB975ACCC39B3C"
-					type: "item"
-					item: "astralsignals:polyvinyl_sheet"
-				}
-			]
+			}]
+			rewards: [{
+				id: "03AB975ACCC39B3C"
+				type: "item"
+				item: "astralsignals:polyvinyl_sheet"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_signals.quests22.title}"
 			x: 11.5d
 			y: 2.5d
 			subtitle: "{ftbquests.chapter.astral_signals.quests22.subtitle}"
+			description: ["{ftbquests.chapter.astral_signals.quests20.description}"]
 			dependencies: ["3392473AE31BBF22"]
 			hide: true
 			id: "6233CD80C11EFA15"
-			tasks: [
-				{
-					id: "7D2AD81E4176AD79"
-					type: "item"
-					title: "{ftbquests.chapter.astral_signals.quests22.tasks0.title}"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "astralsignals:drives_decrypted_t3"
-						}
+			tasks: [{
+				id: "7D2AD81E4176AD79"
+				type: "item"
+				title: "{ftbquests.chapter.astral_signals.quests22.tasks0.title}"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "astralsignals:drives_decrypted_t3"
 					}
 				}
-			]
-			rewards: [
-				{
-					id: "5C1B56A8BE2A7617"
-					type: "item"
-					item: "astralsignals:polyvinyl_sheet"
-				}
-			]
+			}]
+			rewards: [{
+				id: "5C1B56A8BE2A7617"
+				type: "item"
+				item: "astralsignals:polyvinyl_sheet"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_signals.quests23.title}"
@@ -664,20 +603,18 @@
 				"41371FAD5638F39F"
 			]
 			id: "167AAE95CC5E18D4"
-			tasks: [
-				{
-					id: "6EB6D697BBFC0802"
-					type: "item"
-					title: "{ftbquests.chapter.astral_signals.quests23.tasks0.title}"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "astralsignals:discs_t3"
-						}
+			tasks: [{
+				id: "6EB6D697BBFC0802"
+				type: "item"
+				title: "{ftbquests.chapter.astral_signals.quests23.tasks0.title}"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "astralsignals:discs_t3"
 					}
 				}
-			]
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_signals.quests24.title}"
@@ -689,20 +626,18 @@
 				"5CF8F8C8E59F50DF"
 			]
 			id: "7958451C6004D845"
-			tasks: [
-				{
-					id: "601D3461708EBF93"
-					type: "item"
-					title: "{ftbquests.chapter.astral_signals.quests24.tasks0.title}"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "astralsignals:discs_t2"
-						}
+			tasks: [{
+				id: "601D3461708EBF93"
+				type: "item"
+				title: "{ftbquests.chapter.astral_signals.quests24.tasks0.title}"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "astralsignals:discs_t2"
 					}
 				}
-			]
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_signals.quests25.title}"
@@ -714,20 +649,18 @@
 				"33856BEC179B720A"
 			]
 			id: "2752CD6F9AA7448A"
-			tasks: [
-				{
-					id: "191D0BC743E5EC59"
-					type: "item"
-					title: "{ftbquests.chapter.astral_signals.quests25.tasks0.title}"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "astralsignals:discs_t1"
-						}
+			tasks: [{
+				id: "191D0BC743E5EC59"
+				type: "item"
+				title: "{ftbquests.chapter.astral_signals.quests25.tasks0.title}"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "astralsignals:discs_t1"
 					}
 				}
-			]
+			}]
 		}
 		{
 			x: 5.5d
@@ -736,27 +669,23 @@
 			description: ["{ftbquests.chapter.astral_signals.quests26.description}"]
 			dependencies: ["22D73D57C82D4297"]
 			id: "42ED20F23C62FEF3"
-			tasks: [
-				{
-					id: "512D021D34EF6DCD"
-					type: "item"
-					item: {
-						id: "custommachinery:custom_machine_item"
-						Count: 1b
-						tag: {
-							machine: "astralsignals:drive_eraser"
-						}
+			tasks: [{
+				id: "512D021D34EF6DCD"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "astralsignals:drive_eraser"
 					}
 				}
-			]
-			rewards: [
-				{
-					id: "3850DEDC7492CB5A"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 5687404501397719867L
-				}
-			]
+			}]
+			rewards: [{
+				id: "3850DEDC7492CB5A"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5687404501397719867L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_signals.quests27.title}"
@@ -831,13 +760,11 @@
 					item: "minecraft:music_disc_otherside"
 				}
 			]
-			rewards: [
-				{
-					id: "448510290080C367"
-					type: "item"
-					item: "astralsignals:polyvinyl_sheet"
-				}
-			]
+			rewards: [{
+				id: "448510290080C367"
+				type: "item"
+				item: "astralsignals:polyvinyl_sheet"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_signals.quests28.title}"
@@ -867,13 +794,11 @@
 					item: "yttr:music_disc_memorandum"
 				}
 			]
-			rewards: [
-				{
-					id: "6E524B5AC34CD5DA"
-					type: "item"
-					item: "astralsignals:polyvinyl_sheet"
-				}
-			]
+			rewards: [{
+				id: "6E524B5AC34CD5DA"
+				type: "item"
+				item: "astralsignals:polyvinyl_sheet"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_signals.quests29.title}"
@@ -903,13 +828,11 @@
 					item: "yttr:music_disc_torus"
 				}
 			]
-			rewards: [
-				{
-					id: "06CD5013E9BD51CA"
-					type: "item"
-					item: "astralsignals:polyvinyl_sheet"
-				}
-			]
+			rewards: [{
+				id: "06CD5013E9BD51CA"
+				type: "item"
+				item: "astralsignals:polyvinyl_sheet"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.astral_signals.quests30.title}"
@@ -942,13 +865,11 @@
 			]
 			hide: true
 			id: "28DE28FBCF42CA8F"
-			tasks: [
-				{
-					id: "25CE3E0C8022796C"
-					type: "checkmark"
-					title: "{ftbquests.chapter.astral_signals.quests30.tasks0.title}"
-				}
-			]
+			tasks: [{
+				id: "25CE3E0C8022796C"
+				type: "checkmark"
+				title: "{ftbquests.chapter.astral_signals.quests30.tasks0.title}"
+			}]
 		}
 	]
 	quest_links: [ ]

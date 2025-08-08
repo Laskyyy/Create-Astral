@@ -35,7 +35,7 @@
 
 	[[init.buttons]]
 		label = "Discord"
-		url = "https://discord.gg/mNeHyuZdqm"
+		url = "https://discord.gg/StW3Q5K8dJ"
 
 
 [main_menu]
@@ -61,7 +61,7 @@
 
 	[[main_menu.buttons]]
 		label = "Discord"
-		url = "https://discord.gg/mNeHyuZdqm"
+		url = "https://discord.gg/StW3Q5K8dJ"
 
 
 [server_list]
@@ -87,7 +87,7 @@
 
 	[[server_list.buttons]]
 		label = "Discord"
-		url = "https://discord.gg/mNeHyuZdqm"
+		url = "https://discord.gg/StW3Q5K8dJ"
 
 
 [realms_list]
@@ -113,7 +113,7 @@
 
 	[[realms_list.buttons]]
 		label = "Discord"
-		url = "https://discord.gg/mNeHyuZdqm"
+		url = "https://discord.gg/StW3Q5K8dJ"
 
 
 [join_game]
@@ -139,7 +139,7 @@
 
 	[[join_game.buttons]]
 		label = "Discord"
-		url = "https://discord.gg/mNeHyuZdqm"
+		url = "https://discord.gg/StW3Q5K8dJ"
 
 
 [single_player]
@@ -165,7 +165,7 @@
 
 	[[single_player.buttons]]
 		label = "Discord"
-		url = "https://discord.gg/mNeHyuZdqm"
+		url = "https://discord.gg/StW3Q5K8dJ"
 
 
 [multi_player]
@@ -191,7 +191,7 @@
 
 	[[multi_player.buttons]]
 		label = "Discord"
-		url = "https://discord.gg/mNeHyuZdqm"
+		url = "https://discord.gg/StW3Q5K8dJ"
 
 
 [realms]

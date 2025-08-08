@@ -9,6 +9,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			icon: "minecraft:bone_meal"
 			x: -35.0d
 			y: -4.0d
 			shape: "square"
@@ -22,9 +23,15 @@
 					type: "item"
 					item: "minecraft:bone_meal"
 				}
+				{
+					id: "1F215F7992F24434"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:sand"
 			x: -21.5d
 			y: -3.0d
 			shape: "circle"
@@ -42,9 +49,15 @@
 					type: "item"
 					item: "minecraft:sand"
 				}
+				{
+					id: "352DE056F72B5430"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:clay_ball"
 			x: -21.5d
 			y: -2.0d
 			shape: "diamond"
@@ -59,9 +72,15 @@
 					type: "item"
 					item: "minecraft:clay_ball"
 				}
+				{
+					id: "13E875958AD8D6E3"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:quartz"
 			x: -33.0d
 			y: 10.0d
 			shape: "diamond"
@@ -78,9 +97,15 @@
 					type: "item"
 					item: "minecraft:quartz"
 				}
+				{
+					id: "477A737B21E2E008"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "techreborn:silver_nugget"
 			x: -42.0d
 			y: 5.0d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests4.subtitle}"
@@ -98,9 +123,15 @@
 					type: "item"
 					item: "techreborn:silver_nugget"
 				}
+				{
+					id: "756B559ECCA907A5"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:glass"
 			x: -30.0d
 			y: -5.5d
 			shape: "pentagon"
@@ -115,9 +146,15 @@
 					type: "item"
 					item: "minecraft:glass"
 				}
+				{
+					id: "7FF94291DEE0F1AB"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "techreborn:synthetic_redstone_crystal"
 			x: -30.0d
 			y: -4.0d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests6.subtitle}"
@@ -134,9 +171,15 @@
 					type: "item"
 					item: "techreborn:synthetic_redstone_crystal"
 				}
+				{
+					id: "344156750DFEA91B"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:redstone"
 			x: -30.0d
 			y: -2.0d
 			shape: "diamond"
@@ -154,9 +197,15 @@
 					type: "item"
 					item: "minecraft:redstone"
 				}
+				{
+					id: "62DE3C4B6529E6F9"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:kelp"
 			x: -32.5d
 			y: -5.5d
 			shape: "pentagon"
@@ -172,9 +221,15 @@
 					type: "item"
 					item: "minecraft:kelp"
 				}
+				{
+					id: "1A414C22266487AD"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:dried_kelp"
 			x: -32.5d
 			y: -4.0d
 			shape: "square"
@@ -193,9 +248,15 @@
 					type: "item"
 					item: "minecraft:dried_kelp"
 				}
+				{
+					id: "60ED6E1FBD24E40A"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:gunpowder"
 			x: -32.5d
 			y: -2.0d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests10.subtitle}"
@@ -211,9 +272,15 @@
 					type: "item"
 					item: "minecraft:gunpowder"
 				}
+				{
+					id: "780FC9CF6E7A5270"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:lapis_lazuli"
 			x: -25.5d
 			y: 17.5d
 			shape: "diamond"
@@ -229,9 +296,15 @@
 					type: "item"
 					item: "minecraft:lapis_lazuli"
 				}
+				{
+					id: "046273D02551DAB9"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "techreborn:lazurite_dust"
 			x: -24.5d
 			y: 15.5d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests12.subtitle}"
@@ -245,10 +318,16 @@
 					type: "item"
 					item: "techreborn:lazurite_dust"
 				}
+				{
+					id: "2B74B921D140029A"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests13.title}"
+			icon: "minecraft:flint"
 			x: -19.5d
 			y: -4.0d
 			shape: "octagon"
@@ -268,9 +347,15 @@
 					type: "item"
 					item: "minecraft:flint"
 				}
+				{
+					id: "55B60E844834D4CE"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:composter"
 			x: -35.0d
 			y: -5.5d
 			shape: "pentagon"
@@ -290,9 +375,15 @@
 					type: "item"
 					item: "minecraft:calcite"
 				}
+				{
+					id: "14928B47B8ECC0DA"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:rose_quartz"
 			x: -32.5d
 			y: 11.5d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests15.subtitle}"
@@ -308,9 +399,15 @@
 					type: "item"
 					item: "create:rose_quartz"
 				}
+				{
+					id: "6A7E649D81085E81"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:polished_rose_quartz"
 			x: -31.0d
 			y: 12.0d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests16.subtitle}"
@@ -323,9 +420,15 @@
 					type: "item"
 					item: "create:polished_rose_quartz"
 				}
+				{
+					id: "661456E1406125EF"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:electron_tube"
 			x: -29.440476190476183d
 			y: 13.267857142857174d
 			shape: "diamond"
@@ -346,9 +449,15 @@
 					type: "item"
 					item: "create:electron_tube"
 				}
+				{
+					id: "79BFC7FEB037EFB6"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "tconstruct:blazing_blood_bucket"
 			x: -32.0d
 			y: 17.5d
 			shape: "square"
@@ -362,9 +471,15 @@
 					type: "item"
 					item: "tconstruct:blazing_blood_bucket"
 				}
+				{
+					id: "0766EF9C24467324"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "tconstruct:blood_bucket"
 			x: -30.0d
 			y: 17.5d
 			shape: "square"
@@ -378,9 +493,15 @@
 					type: "item"
 					item: "tconstruct:blood_bucket"
 				}
+				{
+					id: "63F1277FFE1080D1"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:slime_ball"
 			x: -40.0d
 			y: -2.0d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests20.subtitle}"
@@ -396,9 +517,15 @@
 					type: "item"
 					item: "minecraft:slime_ball"
 				}
+				{
+					id: "1BB5008A12EEE23D"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:dough"
 			x: -40.0d
 			y: -3.0d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests21.subtitle}"
@@ -410,9 +537,15 @@
 					type: "item"
 					item: "create:dough"
 				}
+				{
+					id: "0B720CCB7B0FFC93"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:lime_dye"
 			x: -37.5d
 			y: -2.0d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests22.subtitle}"
@@ -427,9 +560,15 @@
 					type: "item"
 					item: "minecraft:lime_dye"
 				}
+				{
+					id: "40E15A69DCE8615D"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:green_dye"
 			x: -37.5d
 			y: -4.0d
 			shape: "square"
@@ -442,9 +581,15 @@
 					type: "item"
 					item: "minecraft:green_dye"
 				}
+				{
+					id: "39A60E8ECF678F2A"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:blaze_rod"
 			x: -32.0d
 			y: 19.0d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests24.subtitle}"
@@ -456,9 +601,15 @@
 					type: "item"
 					item: "minecraft:blaze_rod"
 				}
+				{
+					id: "735F8CF5F0B43A8D"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:blaze_powder"
 			x: -32.0d
 			y: 20.5d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests25.subtitle}"
@@ -470,9 +621,15 @@
 					type: "item"
 					item: "minecraft:blaze_powder"
 				}
+				{
+					id: "4C34A2B2A3F4549C"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:magma_cream"
 			x: -31.0d
 			y: 22.0d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests26.subtitle}"
@@ -489,9 +646,15 @@
 					type: "item"
 					item: "minecraft:magma_cream"
 				}
+				{
+					id: "1864DAA45D3723E2"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:obsidian"
 			x: -24.5d
 			y: -4.0d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests27.subtitle}"
@@ -505,9 +668,15 @@
 					type: "item"
 					item: "minecraft:obsidian"
 				}
+				{
+					id: "3583E169F5C768F4"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:sturdy_sheet"
 			x: -24.5d
 			y: -0.5d
 			shape: "diamond"
@@ -521,9 +690,15 @@
 					type: "item"
 					item: "create:sturdy_sheet"
 				}
+				{
+					id: "2134DC7C5854C9D1"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "tconstruct:blood_slime_ball"
 			x: -30.0d
 			y: 19.0d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests29.subtitle}"
@@ -534,6 +709,11 @@
 					id: "0F7409F178A3CB9F"
 					type: "item"
 					item: "tconstruct:blood_slime_ball"
+				}
+				{
+					id: "1DB62A41BB1365B0"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
 				}
 			]
 		}
@@ -546,15 +726,14 @@
 			dependencies: ["75928E9A25B2EFFD"]
 			size: 1.5d
 			id: "3CB5D433A10C2040"
-			tasks: [
-				{
-					id: "6D2E325203A1C22C"
-					type: "item"
-					item: "tconstruct:foundry_controller"
-				}
-			]
+			tasks: [{
+				id: "6D2E325203A1C22C"
+				type: "item"
+				item: "tconstruct:foundry_controller"
+			}]
 		}
 		{
+			icon: "create:wheat_flour"
 			x: -40.0d
 			y: -4.0d
 			shape: "square"
@@ -567,9 +746,15 @@
 					type: "item"
 					item: "create:wheat_flour"
 				}
+				{
+					id: "186336011A053493"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:andesite_alloy"
 			x: -16.999999999999915d
 			y: 11.440476190476303d
 			shape: "diamond"
@@ -588,9 +773,15 @@
 					type: "item"
 					item: "create:andesite_alloy"
 				}
+				{
+					id: "6E819400E840E6E9"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "kubejs:compound_mixture_bucket"
 			x: -17.0d
 			y: 9.5d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests33.subtitle}"
@@ -607,9 +798,15 @@
 					type: "item"
 					item: "kubejs:compound_mixture_bucket"
 				}
+				{
+					id: "40F3C66C866A4781"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:andesite_casing"
 			x: -43.75d
 			y: 13.75d
 			shape: "diamond"
@@ -625,9 +822,15 @@
 					type: "item"
 					item: "create:andesite_casing"
 				}
+				{
+					id: "56B370B28D902354"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:copper_casing"
 			x: -45.0d
 			y: 15.0d
 			shape: "diamond"
@@ -642,14 +845,19 @@
 					type: "item"
 					item: "create:copper_casing"
 				}
+				{
+					id: "36EDF94C8CC89A06"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:brass_casing"
 			x: -43.75d
 			y: 16.25d
 			shape: "diamond"
 			description: [""]
-			min_required_dependencies: 2
 			dependencies: ["737625E7DFCB0382"]
 			size: 2.5d
 			id: "1D0E2A46A37501CB"
@@ -659,10 +867,16 @@
 					type: "item"
 					item: "create:brass_casing"
 				}
+				{
+					id: "350F87853E26B282"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests37.title}"
+			icon: "techreborn:rubber_sapling"
 			x: -27.0d
 			y: -5.5d
 			shape: "pentagon"
@@ -685,9 +899,15 @@
 						}
 					}
 				}
+				{
+					id: "2EB50A9195126D7F"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "techreborn:rubber_log"
 			x: -27.0d
 			y: -4.0d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests38.subtitle}"
@@ -706,9 +926,15 @@
 						}
 					}
 				}
+				{
+					id: "02455C84BD5E0021"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:charcoal"
 			x: -28.0d
 			y: -3.0d
 			shape: "diamond"
@@ -722,9 +948,15 @@
 					type: "item"
 					item: "minecraft:charcoal"
 				}
+				{
+					id: "40D525D60E12795E"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "techreborn:sap"
 			x: -27.0d
 			y: -3.0d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests40.subtitle}"
@@ -736,9 +968,15 @@
 					type: "item"
 					item: "techreborn:sap"
 				}
+				{
+					id: "018802F9C3516C62"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "techreborn:rubber"
 			x: -27.0d
 			y: -2.0d
 			shape: "diamond"
@@ -752,9 +990,15 @@
 					type: "item"
 					item: "techreborn:rubber"
 				}
+				{
+					id: "7BFBEEE032BD6AA1"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:coal"
 			x: -28.0d
 			y: -2.0d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests42.subtitle}"
@@ -769,9 +1013,15 @@
 					type: "item"
 					item: "minecraft:coal"
 				}
+				{
+					id: "01E75100C9968F03"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "techreborn:basic_machine_frame"
 			x: -45.0d
 			y: 17.5d
 			shape: "diamond"
@@ -785,9 +1035,15 @@
 					type: "item"
 					item: "techreborn:basic_machine_frame"
 				}
+				{
+					id: "4E8356257A597801"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:lapis_lazuli"
 			x: -24.0d
 			y: 17.0d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests44.subtitle}"
@@ -804,9 +1060,15 @@
 					type: "item"
 					item: "minecraft:lapis_block"
 				}
+				{
+					id: "437B8422EE82EA0C"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:lapis_sheet"
 			x: -22.5d
 			y: 18.0d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests45.subtitle}"
@@ -818,9 +1080,15 @@
 					type: "item"
 					item: "create:lapis_sheet"
 				}
+				{
+					id: "50032ABA82D13AB7"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "createaddition:copper_wire"
 			x: -21.0d
 			y: 18.0d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests46.subtitle}"
@@ -836,9 +1104,15 @@
 					type: "item"
 					item: "createaddition:copper_wire"
 				}
+				{
+					id: "24EF193FA8A1216F"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "tconstruct:molten_silver_bucket"
 			x: -24.0d
 			y: 18.5d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests47.subtitle}"
@@ -852,9 +1126,15 @@
 					type: "item"
 					item: "tconstruct:molten_silver_bucket"
 				}
+				{
+					id: "49463F734C66E6F4"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:integrated_circuit"
 			x: -22.5d
 			y: 20.0d
 			shape: "diamond"
@@ -873,10 +1153,16 @@
 					type: "item"
 					item: "create:integrated_circuit"
 				}
+				{
+					id: "65BD6779F01762CD"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests49.title}"
+			icon: "minecraft:clay_ball"
 			x: -18.5d
 			y: 9.5d
 			shape: "octagon"
@@ -889,10 +1175,16 @@
 					type: "item"
 					item: "minecraft:clay_ball"
 				}
+				{
+					id: "00CB7BEAE0EA61F9"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests50.title}"
+			icon: "minecraft:iron_nugget"
 			x: -15.5d
 			y: 9.5d
 			shape: "octagon"
@@ -917,10 +1209,16 @@
 					type: "item"
 					item: "create:zinc_nugget"
 				}
+				{
+					id: "3B8BB00509A6811F"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests51.title}"
+			icon: "minecraft:redstone"
 			x: -33.5d
 			y: 11.5d
 			shape: "octagon"
@@ -934,9 +1232,15 @@
 					type: "item"
 					item: "minecraft:redstone"
 				}
+				{
+					id: "330757EEEF2B1845"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:white_dye"
 			x: -35.0d
 			y: -2.0d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests52.subtitle}"
@@ -948,9 +1252,15 @@
 					type: "item"
 					item: "minecraft:white_dye"
 				}
+				{
+					id: "3489B36402F23257"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "tconstruct:molten_rose_gold_bucket"
 			x: -29.5d
 			y: 10.5d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests53.subtitle}"
@@ -968,9 +1278,15 @@
 					type: "item"
 					item: "tconstruct:molten_rose_gold_bucket"
 				}
+				{
+					id: "43D4D17A6F4B69B1"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:copper_ingot"
 			x: -28.0d
 			y: 9.5d
 			shape: "octagon"
@@ -984,9 +1300,15 @@
 					type: "item"
 					item: "minecraft:copper_ingot"
 				}
+				{
+					id: "54BAFB3E42B428BF"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:gold_ingot"
 			x: -31.0d
 			y: 9.5d
 			shape: "octagon"
@@ -1000,9 +1322,15 @@
 					type: "item"
 					item: "minecraft:gold_ingot"
 				}
+				{
+					id: "0F5583B1CE2EB489"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "tconstruct:nether_grout"
 			x: -31.0d
 			y: 23.0d
 			shape: "circle"
@@ -1020,9 +1348,15 @@
 					type: "item"
 					item: "tconstruct:nether_grout"
 				}
+				{
+					id: "7BF92FB98B7F1707"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:powdered_obsidian"
 			x: -24.5d
 			y: -2.0d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests57.subtitle}"
@@ -1034,9 +1368,15 @@
 					type: "item"
 					item: "create:powdered_obsidian"
 				}
+				{
+					id: "0FC4530E748F85DE"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:copper_sheet"
 			x: -21.0d
 			y: 16.5d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests58.subtitle}"
@@ -1050,9 +1390,15 @@
 					type: "item"
 					item: "create:copper_sheet"
 				}
+				{
+					id: "1BF9E569CFF0C3FF"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:magma_block"
 			x: -24.5d
 			y: -5.5d
 			shape: "pentagon"
@@ -1069,9 +1415,15 @@
 					type: "item"
 					item: "minecraft:magma_block"
 				}
+				{
+					id: "7A3C2DDE3A015E92"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "tconstruct:scorched_brick"
 			x: -30.999999999999886d
 			y: 24.88095238095245d
 			shape: "diamond"
@@ -1090,9 +1442,15 @@
 					type: "item"
 					item: "tconstruct:scorched_brick"
 				}
+				{
+					id: "040B71DEAA92DEF7"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:wheat"
 			x: -40.0d
 			y: -5.5d
 			shape: "pentagon"
@@ -1107,10 +1465,16 @@
 					type: "item"
 					item: "minecraft:wheat"
 				}
+				{
+					id: "3D721A0357C6C7EC"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests62.title}"
+			icon: "minecraft:cactus"
 			x: -37.5d
 			y: -5.5d
 			shape: "pentagon"
@@ -1137,6 +1501,11 @@
 					type: "item"
 					item: "minecraft:large_fern"
 				}
+				{
+					id: "28D57FF7300DDB45"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
@@ -1155,16 +1524,15 @@
 			hide: true
 			size: 5.0d
 			id: "75928E9A25B2EFFD"
-			tasks: [
-				{
-					id: "0C4A361DA556D37A"
-					type: "checkmark"
-					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests63.tasks0.title}"
-				}
-			]
+			tasks: [{
+				id: "0C4A361DA556D37A"
+				type: "checkmark"
+				title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests63.tasks0.title}"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests64.title}"
+			icon: "minecraft:slime_ball"
 			x: -30.0d
 			y: 20.5d
 			min_required_dependencies: 2
@@ -1188,6 +1556,11 @@
 						}
 					}
 				}
+				{
+					id: "1ED5F2774EC852E5"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
@@ -1209,13 +1582,11 @@
 			hide: false
 			size: 3.0d
 			id: "3CDA0DBF9C8CF228"
-			tasks: [
-				{
-					id: "6A7245A59D6471C9"
-					type: "checkmark"
-					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests65.tasks0.title}"
-				}
-			]
+			tasks: [{
+				id: "6A7245A59D6471C9"
+				type: "checkmark"
+				title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests65.tasks0.title}"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests66.title}"
@@ -1231,23 +1602,20 @@
 			dependencies: ["3CDA0DBF9C8CF228"]
 			size: 1.5d
 			id: "4E42B1B429EF3AFF"
-			tasks: [
-				{
-					id: "01671A62BCC4E3F3"
-					type: "checkmark"
-					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests66.tasks0.title}"
-				}
-			]
-			rewards: [
-				{
-					id: "2682F0057C2A2B48"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 2053519168689179764L
-				}
-			]
+			tasks: [{
+				id: "01671A62BCC4E3F3"
+				type: "checkmark"
+				title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests66.tasks0.title}"
+			}]
+			rewards: [{
+				id: "2682F0057C2A2B48"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
+			}]
 		}
 		{
+			icon: "create:ochrum"
 			x: -31.0d
 			y: 4.0d
 			dependencies: ["72D7864EBA8E3ABA"]
@@ -1259,9 +1627,15 @@
 					item: "create:ochrum"
 					count: 64L
 				}
+				{
+					id: "7B9F3A7F70949372"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:crimsite"
 			x: -37.0d
 			y: 4.0d
 			dependencies: ["1EAA2FB8699F543B"]
@@ -1273,9 +1647,15 @@
 					item: "create:crimsite"
 					count: 64L
 				}
+				{
+					id: "4970DFF7F075C560"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:veridium"
 			x: -28.0d
 			y: 4.0d
 			dependencies: ["432B82B19DFB1465"]
@@ -1287,9 +1667,15 @@
 					item: "create:veridium"
 					count: 64L
 				}
+				{
+					id: "340E639231783374"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:asurine"
 			x: -34.0d
 			y: 4.0d
 			dependencies: ["795C15A264870B71"]
@@ -1301,9 +1687,15 @@
 					item: "create:asurine"
 					count: 64L
 				}
+				{
+					id: "61B49546AA819575"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:lapis_lazuli"
 			x: -35.0d
 			y: 4.0d
 			dependencies: ["3848102DC87DC4D0"]
@@ -1314,9 +1706,15 @@
 					type: "item"
 					item: "minecraft:lapis_lazuli"
 				}
+				{
+					id: "2D96EF2B0CA0EB62"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:scorchia"
 			x: -25.0d
 			y: 4.0d
 			dependencies: ["74175B603EE5E3AF"]
@@ -1328,9 +1726,15 @@
 					item: "create:scorchia"
 					count: 64L
 				}
+				{
+					id: "6A7E5BFB426DAAF1"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:scoria"
 			x: -22.0d
 			y: 4.0d
 			dependencies: ["40458DEE478FDD85"]
@@ -1342,9 +1746,15 @@
 					item: "create:scoria"
 					count: 64L
 				}
+				{
+					id: "32C0446E66B0FA41"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "tconstruct:scorched_brick"
 			x: -21.0d
 			y: 5.0d
 			dependencies: ["3930FFC230D67068"]
@@ -1355,9 +1765,15 @@
 					type: "item"
 					item: "tconstruct:scorched_brick"
 				}
+				{
+					id: "19469CF4D1CA882E"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:magma_cream"
 			x: -23.0d
 			y: 5.0d
 			dependencies: ["3930FFC230D67068"]
@@ -1368,9 +1784,15 @@
 					type: "item"
 					item: "minecraft:magma_cream"
 				}
+				{
+					id: "2FC63B01C27D37F2"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "tconstruct:seared_brick"
 			x: -26.0d
 			y: 5.0d
 			dependencies: ["6D8ECB10B559D4C3"]
@@ -1381,9 +1803,15 @@
 					type: "item"
 					item: "tconstruct:seared_brick"
 				}
+				{
+					id: "3902F6FCE665EA5D"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:powdered_obsidian"
 			x: -26.0d
 			y: 4.0d
 			dependencies: ["6D8ECB10B559D4C3"]
@@ -1394,9 +1822,15 @@
 					type: "item"
 					item: "create:powdered_obsidian"
 				}
+				{
+					id: "63113490EBDCAD02"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:raw_zinc"
 			x: -25.0d
 			y: 6.5d
 			shape: "square"
@@ -1409,17 +1843,21 @@
 					type: "item"
 					item: "create:raw_zinc"
 				}
-			]
-			rewards: [
 				{
-					id: "1BE162CC3A1E4D2C"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 2053519168689179764L
+					id: "43A5741C385B6D3A"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
 				}
 			]
+			rewards: [{
+				id: "1BE162CC3A1E4D2C"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
+			}]
 		}
 		{
+			icon: "create:limestone"
 			x: -40.0d
 			y: 4.0d
 			shape: "circle"
@@ -1432,9 +1870,15 @@
 					item: "create:limestone"
 					count: 64L
 				}
+				{
+					id: "313A617BCF975999"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "createastral:lime"
 			x: -41.0d
 			y: 5.0d
 			dependencies: ["60FEDA21DCE756B6"]
@@ -1445,9 +1889,15 @@
 					type: "item"
 					item: "createastral:lime"
 				}
+				{
+					id: "1FAF198AB4DFE099"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "techreborn:raw_tin"
 			x: -40.0d
 			y: 6.5d
 			shape: "square"
@@ -1460,17 +1910,21 @@
 					type: "item"
 					item: "techreborn:raw_tin"
 				}
-			]
-			rewards: [
 				{
-					id: "577A5CF75A759451"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 2053519168689179764L
+					id: "2CEBC88643083171"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
 				}
 			]
+			rewards: [{
+				id: "577A5CF75A759451"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
+			}]
 		}
 		{
+			icon: "tconstruct:raw_cobalt"
 			x: -34.0d
 			y: 6.5d
 			shape: "square"
@@ -1483,17 +1937,21 @@
 					type: "item"
 					item: "tconstruct:raw_cobalt"
 				}
-			]
-			rewards: [
 				{
-					id: "790481ACBA975EAF"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 2053519168689179764L
+					id: "5B1847CCF3E22636"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
 				}
 			]
+			rewards: [{
+				id: "790481ACBA975EAF"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
+			}]
 		}
 		{
+			icon: "minecraft:raw_gold"
 			x: -31.0d
 			y: 6.5d
 			shape: "square"
@@ -1506,17 +1964,21 @@
 					type: "item"
 					item: "minecraft:raw_gold"
 				}
-			]
-			rewards: [
 				{
-					id: "2EA4E67EFF241B01"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 2053519168689179764L
+					id: "7A6FCAA4E44A6511"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
 				}
 			]
+			rewards: [{
+				id: "2EA4E67EFF241B01"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
+			}]
 		}
 		{
+			icon: "minecraft:raw_iron"
 			x: -37.0d
 			y: 6.5d
 			shape: "square"
@@ -1529,17 +1991,21 @@
 					type: "item"
 					item: "minecraft:raw_iron"
 				}
-			]
-			rewards: [
 				{
-					id: "79A2E11FDDF7A9D7"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 2053519168689179764L
+					id: "2EAC8BBF679FBAE4"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
 				}
 			]
+			rewards: [{
+				id: "79A2E11FDDF7A9D7"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
+			}]
 		}
 		{
+			icon: "minecraft:raw_copper"
 			x: -28.0d
 			y: 6.5d
 			shape: "square"
@@ -1552,17 +2018,21 @@
 					type: "item"
 					item: "minecraft:raw_copper"
 				}
-			]
-			rewards: [
 				{
-					id: "7B924DA2654A5984"
-					type: "loot"
-					exclude_from_claim_all: true
-					table_id: 2053519168689179764L
+					id: "7FEBF47C80AEEEC1"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
 				}
 			]
+			rewards: [{
+				id: "7B924DA2654A5984"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2053519168689179764L
+			}]
 		}
 		{
+			icon: "create:honey_bucket"
 			x: -31.0d
 			y: 1.0d
 			hide_dependency_lines: true
@@ -1574,9 +2044,15 @@
 					type: "item"
 					item: "create:honey_bucket"
 				}
+				{
+					id: "4D53527073D28BB5"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "tconstruct:blood_bucket"
 			x: -37.0d
 			y: 1.0d
 			hide_dependency_lines: true
@@ -1588,9 +2064,15 @@
 					type: "item"
 					item: "tconstruct:blood_bucket"
 				}
+				{
+					id: "0209E487D9F60C41"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:milk_bucket"
 			x: -40.0d
 			y: 2.0d
 			hide_dependency_lines: true
@@ -1602,9 +2084,15 @@
 					type: "item"
 					item: "minecraft:milk_bucket"
 				}
+				{
+					id: "798F8E9BDD579612"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:lava_bucket"
 			x: -28.0d
 			y: 2.0d
 			hide_dependency_lines: true
@@ -1616,9 +2104,15 @@
 					type: "item"
 					item: "minecraft:lava_bucket"
 				}
+				{
+					id: "316387773D0D8F60"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:water_bucket"
 			x: -34.0d
 			y: 2.0d
 			hide_dependency_lines: true
@@ -1630,9 +2124,15 @@
 					type: "item"
 					item: "minecraft:water_bucket"
 				}
+				{
+					id: "7434D661E004EDFA"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "tconstruct:blazing_blood_bucket"
 			x: -25.0d
 			y: 1.0d
 			hide_dependency_lines: true
@@ -1644,9 +2144,15 @@
 					type: "item"
 					item: "tconstruct:blazing_blood_bucket"
 				}
+				{
+					id: "55C3699FC88BABFC"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:chocolate_bucket"
 			x: -22.0d
 			y: 2.0d
 			hide_dependency_lines: true
@@ -1658,9 +2164,15 @@
 					type: "item"
 					item: "create:chocolate_bucket"
 				}
+				{
+					id: "369C28FF50F0D90D"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:redstone"
 			x: -38.0d
 			y: 5.0d
 			dependencies: ["1ACB3A0438D74FA8"]
@@ -1671,9 +2183,15 @@
 					type: "item"
 					item: "minecraft:redstone"
 				}
+				{
+					id: "04F58FA4243E68DD"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:andesite"
 			x: -41.0d
 			y: 4.0d
 			dependencies: ["60FEDA21DCE756B6"]
@@ -1684,9 +2202,15 @@
 					type: "item"
 					item: "minecraft:andesite"
 				}
+				{
+					id: "5030D6CB294C7133"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:magma_block"
 			x: -23.0d
 			y: 4.0d
 			dependencies: ["3930FFC230D67068"]
@@ -1697,9 +2221,15 @@
 					type: "item"
 					item: "minecraft:magma_block"
 				}
+				{
+					id: "3776694B726572B4"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:glowstone_dust"
 			x: -32.0d
 			y: 5.0d
 			dependencies: ["54995020F2BB0E05"]
@@ -1710,9 +2240,15 @@
 					type: "item"
 					item: "minecraft:glowstone_dust"
 				}
+				{
+					id: "742A0A167481CEA9"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:emerald"
 			x: -29.0d
 			y: 5.0d
 			dependencies: ["4C2C2C74FB0F242E"]
@@ -1723,9 +2259,15 @@
 					type: "item"
 					item: "minecraft:emerald"
 				}
+				{
+					id: "3BC26C00D53F3719"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "techreborn:lazurite_dust"
 			x: -35.0d
 			y: 5.0d
 			dependencies: ["3848102DC87DC4D0"]
@@ -1736,9 +2278,15 @@
 					type: "item"
 					item: "techreborn:lazurite_dust"
 				}
+				{
+					id: "766B9BFF3447FD91"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:cobblestone"
 			x: -41.0d
 			y: 2.0d
 			hide_dependency_lines: true
@@ -1750,9 +2298,15 @@
 					type: "item"
 					item: "minecraft:cobblestone"
 				}
+				{
+					id: "5D973A8D87C35EF0"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:tuff"
 			x: -36.0d
 			y: 1.0d
 			hide_dependency_lines: true
@@ -1764,9 +2318,15 @@
 					type: "item"
 					item: "minecraft:tuff"
 				}
+				{
+					id: "1CBFD372815E2105"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:cobblestone"
 			x: -38.0d
 			y: 1.0d
 			hide_dependency_lines: true
@@ -1778,9 +2338,15 @@
 					type: "item"
 					item: "minecraft:cobblestone"
 				}
+				{
+					id: "11E56C32AEDD2C58"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:cobblestone"
 			x: -32.0d
 			y: 1.0d
 			hide_dependency_lines: true
@@ -1792,9 +2358,15 @@
 					type: "item"
 					item: "minecraft:cobblestone"
 				}
+				{
+					id: "55720E2C6908DF0D"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:dripstone_block"
 			x: -30.0d
 			y: 1.0d
 			hide_dependency_lines: true
@@ -1806,9 +2378,15 @@
 					type: "item"
 					item: "minecraft:dripstone_block"
 				}
+				{
+					id: "7519313708E625F5"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:prismarine"
 			x: -33.0d
 			y: 2.0d
 			hide_dependency_lines: true
@@ -1820,9 +2398,15 @@
 					type: "item"
 					item: "minecraft:prismarine"
 				}
+				{
+					id: "78E03C95EF7F1377"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:kelp"
 			x: -35.0d
 			y: 2.0d
 			hide_dependency_lines: true
@@ -1834,9 +2418,15 @@
 					type: "item"
 					item: "minecraft:kelp"
 				}
+				{
+					id: "4623CF7DEA9A7019"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:slime_ball"
 			x: -29.0d
 			y: 2.0d
 			hide_dependency_lines: true
@@ -1848,9 +2438,15 @@
 					type: "item"
 					item: "minecraft:slime_ball"
 				}
+				{
+					id: "432F3D25CFFAAB28"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:cobblestone"
 			x: -27.0d
 			y: 2.0d
 			hide_dependency_lines: true
@@ -1862,9 +2458,15 @@
 					type: "item"
 					item: "minecraft:cobblestone"
 				}
+				{
+					id: "50DC973CA699B891"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:blackstone"
 			x: -26.0d
 			y: 1.0d
 			hide_dependency_lines: true
@@ -1876,9 +2478,15 @@
 					type: "item"
 					item: "minecraft:blackstone"
 				}
+				{
+					id: "3FEA8A8FB08C7AEC"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "ad_astra:moon_sand"
 			x: -24.0d
 			y: 1.0d
 			hide_dependency_lines: true
@@ -1890,9 +2498,15 @@
 					type: "item"
 					item: "ad_astra:moon_sand"
 				}
+				{
+					id: "5E70C0CA86E00B30"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:soul_soil"
 			x: -21.0d
 			y: 2.0d
 			hide_dependency_lines: true
@@ -1909,9 +2523,15 @@
 					type: "item"
 					item: "minecraft:soul_sand"
 				}
+				{
+					id: "6747E1BD132FB078"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:andesite"
 			x: -17.0d
 			y: 7.0d
 			shape: "square"
@@ -1924,9 +2544,15 @@
 					type: "item"
 					item: "minecraft:andesite"
 				}
+				{
+					id: "23C7AD9308CCC061"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "techreborn:andesite_dust"
 			x: -17.0d
 			y: 4.5d
 			hide_dependency_lines: true
@@ -1939,9 +2565,15 @@
 					type: "item"
 					item: "techreborn:andesite_dust"
 				}
+				{
+					id: "47F01A6772E449D1"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:cobblestone"
 			x: -21.5d
 			y: -5.5d
 			shape: "pentagon"
@@ -1955,9 +2587,15 @@
 					type: "item"
 					item: "minecraft:cobblestone"
 				}
+				{
+					id: "56F242CDFAAF86A4"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:gravel"
 			x: -21.5d
 			y: -4.0d
 			dependencies: ["080F8A78EC0E37E3"]
@@ -1968,9 +2606,15 @@
 					type: "item"
 					item: "minecraft:gravel"
 				}
+				{
+					id: "69009B46E57B7530"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "techreborn:advanced_machine_frame"
 			x: -43.75d
 			y: 18.75d
 			shape: "diamond"
@@ -1983,9 +2627,15 @@
 					type: "item"
 					item: "techreborn:advanced_machine_frame"
 				}
+				{
+					id: "234DC771E58AE1C8"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:powdered_obsidian"
 			x: -32.0d
 			y: 22.0d
 			hide_dependency_lines: true
@@ -1997,9 +2647,15 @@
 					type: "item"
 					item: "create:powdered_obsidian"
 				}
+				{
+					id: "016047B349013404"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:soul_soil"
 			x: -30.0d
 			y: 22.0d
 			hide_dependency_lines: true
@@ -2011,6 +2667,11 @@
 					type: "item"
 					item: "minecraft:soul_soil"
 				}
+				{
+					id: "36C3E61E0C5B0F9B"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
@@ -2018,21 +2679,20 @@
 			y: -1.0d
 			dependencies: ["435FEF448EECB8A9"]
 			id: "7A3F834C4F7B9133"
-			tasks: [
-				{
-					id: "08EA6022C84D8E1F"
-					type: "item"
-					item: {
-						id: "create:super_glue"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "08EA6022C84D8E1F"
+				type: "item"
+				item: {
+					id: "create:super_glue"
+					Count: 1b
+					tag: {
+						Damage: 0
 					}
 				}
-			]
+			}]
 		}
 		{
+			icon: "minecraft:iron_nugget"
 			x: -22.5d
 			y: -4.0d
 			dependencies: ["003484147EC41589"]
@@ -2043,9 +2703,15 @@
 					type: "item"
 					item: "minecraft:iron_nugget"
 				}
+				{
+					id: "0A503B6FA9FA8187"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:zinc_ingot"
 			x: -25.0d
 			y: 9.5d
 			dependencies: ["2D90C8ED3DD34561"]
@@ -2056,9 +2722,15 @@
 					type: "item"
 					item: "create:zinc_ingot"
 				}
+				{
+					id: "57D8ED2E590195E7"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:brass_ingot"
 			x: -26.5d
 			y: 11.5d
 			shape: "diamond"
@@ -2076,6 +2748,11 @@
 					item: "create:brass_ingot"
 					consume_items: false
 				}
+				{
+					id: "72085CEB768AB9D0"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
@@ -2083,15 +2760,14 @@
 			y: 10.0d
 			dependencies: ["6ED96165ED450D8B"]
 			id: "2A8F9496538E8074"
-			tasks: [
-				{
-					id: "088A420109597D2D"
-					type: "item"
-					item: "create:blaze_burner"
-				}
-			]
+			tasks: [{
+				id: "088A420109597D2D"
+				type: "item"
+				item: "create:blaze_burner"
+			}]
 		}
 		{
+			icon: "techreborn:electronic_circuit"
 			x: -23.75d
 			y: 21.25d
 			shape: "diamond"
@@ -2108,9 +2784,15 @@
 					type: "item"
 					item: "techreborn:electronic_circuit"
 				}
+				{
+					id: "20F7FFD5C0EF3BCE"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "techreborn:industrial_circuit"
 			x: -25.0d
 			y: 22.5d
 			shape: "diamond"
@@ -2126,6 +2808,11 @@
 					id: "13927682D8828CED"
 					type: "item"
 					item: "techreborn:industrial_circuit"
+				}
+				{
+					id: "6D468791DE5CB49A"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
 				}
 			]
 		}
@@ -2143,14 +2830,13 @@
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests125.subtitle}"
 			dependencies: ["6D73E725B72F6E88"]
 			id: "6ED96165ED450D8B"
-			tasks: [
-				{
-					id: "6B73AAA9FE2CCEA8"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "6B73AAA9FE2CCEA8"
+				type: "checkmark"
+			}]
 		}
 		{
+			icon: "create:refined_radiance_casing"
 			x: -43.75d
 			y: 21.25d
 			shape: "diamond"
@@ -2163,25 +2849,15 @@
 					type: "item"
 					item: "create:refined_radiance_casing"
 				}
-			]
-		}
-		{
-			title: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests127.title}"
-			x: -32.0d
-			y: 23.0d
-			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests127.subtitle}"
-			hide_dependency_lines: true
-			dependencies: ["3CB5D433A10C2040"]
-			id: "24EF2D48101694B9"
-			tasks: [
 				{
-					id: "558C812DA769E7DB"
-					type: "item"
-					item: "techreborn:scrap"
+					id: "0AF2E8FEA8E8661B"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
 				}
 			]
 		}
 		{
+			icon: "minecraft:dripstone_block"
 			x: -41.5d
 			y: -2.0d
 			dependencies: [
@@ -2195,9 +2871,15 @@
 					type: "item"
 					item: "minecraft:dripstone_block"
 				}
+				{
+					id: "1F92FA0F116BFE74"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:granite"
 			x: -41.5d
 			y: -3.0d
 			hide_dependency_lines: true
@@ -2209,9 +2891,15 @@
 					type: "item"
 					item: "minecraft:granite"
 				}
+				{
+					id: "0AB871E3BF61AF25"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:tube_coral_block"
 			x: -41.5d
 			y: 10.0d
 			hide_dependency_lines: true
@@ -2223,9 +2911,15 @@
 					type: "item"
 					item: "minecraft:tube_coral_block"
 				}
+				{
+					id: "75B5048150E24461"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:brain_coral_block"
 			x: -40.5d
 			y: 10.0d
 			hide_dependency_lines: true
@@ -2237,9 +2931,15 @@
 					type: "item"
 					item: "minecraft:brain_coral_block"
 				}
+				{
+					id: "6F9EE9807BE5E04D"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:bubble_coral_block"
 			x: -39.5d
 			y: 10.0d
 			hide_dependency_lines: true
@@ -2251,9 +2951,15 @@
 					type: "item"
 					item: "minecraft:bubble_coral_block"
 				}
+				{
+					id: "064CCE39D2DE49ED"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:fire_coral_block"
 			x: -38.5d
 			y: 10.0d
 			hide_dependency_lines: true
@@ -2265,9 +2971,15 @@
 					type: "item"
 					item: "minecraft:fire_coral_block"
 				}
+				{
+					id: "6689832DD2AB258D"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:horn_coral_block"
 			x: -37.5d
 			y: 10.0d
 			hide_dependency_lines: true
@@ -2279,9 +2991,15 @@
 					type: "item"
 					item: "minecraft:horn_coral_block"
 				}
+				{
+					id: "397AEEE9831AED3D"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:shadow_steel_casing"
 			x: -45.0d
 			y: 20.0d
 			shape: "diamond"
@@ -2293,6 +3011,11 @@
 					id: "7887119D4D1D8F0D"
 					type: "item"
 					item: "create:shadow_steel_casing"
+				}
+				{
+					id: "4AC0681C0A17DE21"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
 				}
 			]
 		}
@@ -2322,9 +3045,15 @@
 						}
 					}
 				}
+				{
+					id: "58A2240AB4EF0AFD"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:prismarine_shard"
 			x: -40.5d
 			y: 12.5d
 			dependencies: ["2F3FEC1F22FC45E0"]
@@ -2335,9 +3064,15 @@
 					type: "item"
 					item: "minecraft:prismarine_shard"
 				}
+				{
+					id: "40B52519B87A15A8"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:lapis_lazuli"
 			x: -41.5d
 			y: 11.0d
 			dependencies: ["5E2BAA885FC40321"]
@@ -2348,9 +3083,15 @@
 					type: "item"
 					item: "minecraft:lapis_lazuli"
 				}
+				{
+					id: "5FFAB0FA15537444"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "farmersdelight:ham"
 			x: -40.5d
 			y: 11.0d
 			dependencies: ["4CFDE2174401C627"]
@@ -2361,9 +3102,15 @@
 					type: "item"
 					item: "farmersdelight:ham"
 				}
+				{
+					id: "135FD002B78152E2"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:popped_chorus_fruit"
 			x: -39.5d
 			y: 11.0d
 			dependencies: ["156B9F54B45FDA59"]
@@ -2374,9 +3121,15 @@
 					type: "item"
 					item: "minecraft:popped_chorus_fruit"
 				}
+				{
+					id: "3078D965492F59E2"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "ae2:ender_dust"
 			x: -39.5d
 			y: 9.0d
 			dependencies: ["156B9F54B45FDA59"]
@@ -2387,9 +3140,15 @@
 					type: "item"
 					item: "ae2:ender_dust"
 				}
+				{
+					id: "56B846252BE19BDD"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:blaze_powder"
 			x: -38.5d
 			y: 9.0d
 			dependencies: ["788B528231AE68FE"]
@@ -2400,9 +3159,15 @@
 					type: "item"
 					item: "minecraft:blaze_powder"
 				}
+				{
+					id: "5F6EFE038D15C20B"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "tconstruct:blood_slime_ball"
 			x: -38.5d
 			y: 11.0d
 			dependencies: ["788B528231AE68FE"]
@@ -2413,9 +3178,15 @@
 					type: "item"
 					item: "tconstruct:blood_slime_ball"
 				}
+				{
+					id: "6AC05405FAFC8711"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "techreborn:sponge_piece"
 			x: -37.5d
 			y: 9.0d
 			dependencies: ["0EAB3D183E6C300A"]
@@ -2426,9 +3197,15 @@
 					type: "item"
 					item: "techreborn:sponge_piece"
 				}
+				{
+					id: "07A5F20A317A0423"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:sea_pickle"
 			x: -37.5d
 			y: 11.0d
 			dependencies: ["0EAB3D183E6C300A"]
@@ -2439,9 +3216,15 @@
 					type: "item"
 					item: "minecraft:sea_pickle"
 				}
+				{
+					id: "0F569E6AEAE13A48"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "createastral:electrified_pin"
 			x: -25.0d
 			y: 20.0d
 			dependencies: ["759E56BE7B6E2BB3"]
@@ -2452,9 +3235,15 @@
 					type: "item"
 					item: "createastral:electrified_pin"
 				}
+				{
+					id: "3194E6D2C49E4AB2"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "techreborn:lead_plate"
 			x: -22.5d
 			y: 22.0d
 			dependencies: ["759E56BE7B6E2BB3"]
@@ -2465,9 +3254,15 @@
 					type: "item"
 					item: "techreborn:lead_plate"
 				}
+				{
+					id: "2EC255F57E40F190"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "techreborn:machine_parts"
 			x: -24.0d
 			y: 24.0d
 			dependencies: ["2989343CF8B46EB6"]
@@ -2478,9 +3273,15 @@
 					type: "item"
 					item: "techreborn:machine_parts"
 				}
+				{
+					id: "6CE02AB3DBCAAF68"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "createastral:calorite_pin"
 			x: -26.5d
 			y: 21.5d
 			dependencies: ["2989343CF8B46EB6"]
@@ -2490,6 +3291,11 @@
 					id: "02CD5C12823A1817"
 					type: "item"
 					item: "createastral:calorite_pin"
+				}
+				{
+					id: "77CBAE0789D63B1C"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
 				}
 			]
 		}
@@ -2502,46 +3308,17 @@
 			dependencies: ["75928E9A25B2EFFD"]
 			size: 3.0d
 			id: "5AFF1BD1A2ABF7A0"
-			tasks: [
-				{
-					id: "4516C97BCEF2D5DE"
-					type: "item"
-					item: {
-						id: "custommachinery:custom_machine_item"
-						Count: 1b
-						tag: {
-							machine: "createastral:stone_growth_chamber"
-						}
+			tasks: [{
+				id: "4516C97BCEF2D5DE"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "createastral:stone_growth_chamber"
 					}
 				}
-			]
-			rewards: [
-				{
-					id: "52A0A4BD8AA2E042"
-					type: "item"
-					item: {
-						id: "create:schematic"
-						Count: 1b
-						tag: {
-							Anchor: {
-								Z: 0
-								X: 0
-								Y: 0
-							}
-							Owner: "Laskyyy"
-							Deployed: 0b
-							File: "[AstralExamples] Stone Growth Chamber.nbt"
-							Rotation: "NONE"
-							Mirror: "NONE"
-							Bounds: [
-								3
-								3
-								3
-							]
-						}
-					}
-				}
-			]
+			}]
 		}
 		{
 			x: -36.0d
@@ -2551,48 +3328,20 @@
 			dependencies: ["75928E9A25B2EFFD"]
 			size: 3.0d
 			id: "052A6A3EA6BC93D5"
-			tasks: [
-				{
-					id: "52CFAD59E84D1FD2"
-					type: "item"
-					item: {
-						id: "custommachinery:custom_machine_item"
-						Count: 1b
-						tag: {
-							machine: "createastral:distillery"
-						}
+			tasks: [{
+				id: "52CFAD59E84D1FD2"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "createastral:distillery"
 					}
 				}
-			]
-			rewards: [
-				{
-					id: "26BB7BAFA474570B"
-					type: "item"
-					item: {
-						id: "create:schematic"
-						Count: 1b
-						tag: {
-							Anchor: {
-								Z: 0
-								X: 0
-								Y: 0
-							}
-							Owner: "Laskyyy"
-							Deployed: 0b
-							File: "[AstralExamples] Distillery.nbt"
-							Rotation: "NONE"
-							Mirror: "NONE"
-							Bounds: [
-								5
-								5
-								5
-							]
-						}
-					}
-				}
-			]
+			}]
 		}
 		{
+			icon: "minecraft:andesite"
 			x: -40.5d
 			y: 17.0d
 			hide_dependency_lines: true
@@ -2604,9 +3353,15 @@
 					type: "item"
 					item: "minecraft:andesite"
 				}
+				{
+					id: "7BDA9C380D4E00AF"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "ad_astra:moon_stone"
 			x: -40.5d
 			y: 18.0d
 			hide_dependency_lines: true
@@ -2618,9 +3373,15 @@
 					type: "item"
 					item: "ad_astra:moon_stone"
 				}
+				{
+					id: "75396A221AFFCEB9"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "ad_astra:mars_stone"
 			x: -40.5d
 			y: 19.0d
 			hide_dependency_lines: true
@@ -2632,9 +3393,15 @@
 					type: "item"
 					item: "ad_astra:mars_stone"
 				}
+				{
+					id: "193C6433C33105E6"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "ad_astra:mercury_stone"
 			x: -40.5d
 			y: 20.0d
 			hide_dependency_lines: true
@@ -2646,9 +3413,15 @@
 					type: "item"
 					item: "ad_astra:mercury_stone"
 				}
+				{
+					id: "0067B4A73CDDEEC4"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "ad_astra:glacio_stone"
 			x: -40.5d
 			y: 21.0d
 			hide_dependency_lines: true
@@ -2660,9 +3433,15 @@
 					type: "item"
 					item: "ad_astra:glacio_stone"
 				}
+				{
+					id: "42CB52D213C8345F"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "ad_astra:desh_nugget"
 			x: -39.0d
 			y: 18.0d
 			dependencies: ["2E8FC330FEEF68BF"]
@@ -2673,9 +3452,15 @@
 					type: "item"
 					item: "ad_astra:desh_nugget"
 				}
+				{
+					id: "4A44AD8769C7814E"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "ad_astra:ostrum_nugget"
 			x: -39.0d
 			y: 19.0d
 			dependencies: ["67353038EE90A053"]
@@ -2686,9 +3471,15 @@
 					type: "item"
 					item: "ad_astra:ostrum_nugget"
 				}
+				{
+					id: "1BC2A1CEF6EAC33D"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "ad_astra:calorite_nugget"
 			x: -39.0d
 			y: 20.0d
 			dependencies: ["5E5CD5E22967ADA1"]
@@ -2699,9 +3490,21 @@
 					type: "item"
 					item: "ad_astra:calorite_nugget"
 				}
+				{
+					id: "15FE131A64D4B97E"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: {
+				id: "techreborn:cell"
+				Count: 1b
+				tag: {
+					fluid: "kubejs:hellfire"
+				}
+			}
 			x: -35.0d
 			y: 17.5d
 			dependencies: ["36B70BA3B4CC3803"]
@@ -2717,10 +3520,23 @@
 							fluid: "kubejs:hellfire"
 						}
 					}
+					match_nbt: true
+				}
+				{
+					id: "1378FAD80CFDBE63"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
 				}
 			]
 		}
 		{
+			icon: {
+				id: "techreborn:cell"
+				Count: 1b
+				tag: {
+					fluid: "techreborn:biofuel"
+				}
+			}
 			x: -35.0d
 			y: 18.5d
 			dependencies: ["1AC8A25302812909"]
@@ -2736,10 +3552,23 @@
 							fluid: "techreborn:biofuel"
 						}
 					}
+					match_nbt: true
+				}
+				{
+					id: "0574E3D15324A3E8"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
 				}
 			]
 		}
 		{
+			icon: {
+				id: "techreborn:cell"
+				Count: 1b
+				tag: {
+					fluid: "tconstruct:molten_uranium"
+				}
+			}
 			x: -35.0d
 			y: 19.5d
 			dependencies: ["42FE4109E62B8CAF"]
@@ -2755,10 +3584,23 @@
 							fluid: "tconstruct:molten_uranium"
 						}
 					}
+					match_nbt: true
+				}
+				{
+					id: "424372AAFEB706AD"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
 				}
 			]
 		}
 		{
+			icon: {
+				id: "techreborn:cell"
+				Count: 1b
+				tag: {
+					fluid: "ad_astra:oil"
+				}
+			}
 			x: -37.0d
 			y: 17.5d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests163.subtitle}"
@@ -2776,15 +3618,28 @@
 							fluid: "techreborn:oil"
 						}
 					}
+					match_nbt: true
 				}
 				{
 					id: "7F8D3D68294CB2A5"
 					type: "item"
 					item: "createastral:refining_agent"
 				}
+				{
+					id: "1A3D57CD8F67DC1A"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: {
+				id: "techreborn:cell"
+				Count: 1b
+				tag: {
+					fluid: "minecraft:water"
+				}
+			}
 			x: -37.0d
 			y: 18.5d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests164.subtitle}"
@@ -2802,15 +3657,28 @@
 							fluid: "minecraft:water"
 						}
 					}
+					match_nbt: true
 				}
 				{
 					id: "67BD8063EC97ABD1"
 					type: "item"
 					item: "createastral:pure_biomatter"
 				}
+				{
+					id: "303A5AAD3D106DF8"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: {
+				id: "techreborn:cell"
+				Count: 1b
+				tag: {
+					fluid: "techreborn:mercury"
+				}
+			}
 			x: -37.0d
 			y: 19.5d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests165.subtitle}"
@@ -2829,15 +3697,22 @@
 							fluid: "techreborn:mercury"
 						}
 					}
+					match_nbt: true
 				}
 				{
 					id: "254C68EE3D137F2F"
 					type: "item"
 					item: "createastral:uranium_residue"
 				}
+				{
+					id: "286DAE91C002BAB9"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "create:andesite_alloy"
 			x: -39.0d
 			y: 17.0d
 			dependencies: ["3E19BCBCCE9229BF"]
@@ -2848,9 +3723,15 @@
 					type: "item"
 					item: "create:andesite_alloy"
 				}
+				{
+					id: "5B638A1C08FE125C"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "createastral:prismatic_crystal"
 			x: -39.0d
 			y: 21.0d
 			dependencies: ["219107EA6C17A920"]
@@ -2861,9 +3742,15 @@
 					type: "item"
 					item: "createastral:prismatic_crystal"
 				}
+				{
+					id: "71DA4D8F0B4AA7AD"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:red_dye"
 			x: -31.0d
 			y: -4.0d
 			hide_dependency_lines: true
@@ -2875,9 +3762,15 @@
 					type: "item"
 					item: "minecraft:red_dye"
 				}
+				{
+					id: "0B4A57089999B891"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:brown_mushroom"
 			x: -43.5d
 			y: 9.0d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests169.subtitle}"
@@ -2890,9 +3783,15 @@
 					type: "item"
 					item: "minecraft:brown_mushroom"
 				}
+				{
+					id: "2083557EFBB78A07"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "createastral:seitan"
 			x: -43.5d
 			y: 10.0d
 			dependencies: ["272C487352DDE36E"]
@@ -2903,9 +3802,15 @@
 					type: "item"
 					item: "createastral:seitan"
 				}
+				{
+					id: "7112EBC3CABCDF38"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:beef"
 			x: -43.5d
 			y: 11.0d
 			min_required_dependencies: 1
@@ -2947,9 +3852,15 @@
 					type: "item"
 					item: "minecraft:ink_sac"
 				}
+				{
+					id: "5C9748A83D8DBEF0"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:clay_ball"
 			x: -39.0d
 			y: 4.0d
 			dependencies: ["60FEDA21DCE756B6"]
@@ -2959,6 +3870,11 @@
 					id: "6F3511A65BFA4780"
 					type: "item"
 					item: "minecraft:clay_ball"
+				}
+				{
+					id: "6923DA92E34CA0B5"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
 				}
 			]
 		}
@@ -2992,14 +3908,13 @@
 			hide_dependency_lines: true
 			dependencies: ["75928E9A25B2EFFD"]
 			id: "4D947F2DBBA0CBD9"
-			tasks: [
-				{
-					id: "26A6B8841800C301"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "26A6B8841800C301"
+				type: "checkmark"
+			}]
 		}
 		{
+			icon: "astraladditions:bulba_root"
 			x: -38.5d
 			y: 12.5d
 			subtitle: "{ftbquests.chapter.chapter_25_the_automation_matrix.quests175.subtitle}"
@@ -3013,9 +3928,15 @@
 					type: "item"
 					item: "astraladditions:bulba_root"
 				}
+				{
+					id: "165DF4155F728ADD"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
+				}
 			]
 		}
 		{
+			icon: "minecraft:prismarine_crystals"
 			x: -39.5d
 			y: 12.5d
 			dependencies: ["494DAA43E781A919"]
@@ -3027,14 +3948,17 @@
 					item: "minecraft:prismarine_crystals"
 					count: 8L
 				}
-			]
-			rewards: [
 				{
-					id: "593A18DA4D880B33"
-					type: "item"
-					item: "minecraft:sea_lantern"
+					id: "6FDA398FC25DB629"
+					type: "checkmark"
+					title: "{ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark}"
 				}
 			]
+			rewards: [{
+				id: "593A18DA4D880B33"
+				type: "item"
+				item: "minecraft:sea_lantern"
+			}]
 		}
 	]
 	quest_links: [ ]

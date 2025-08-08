@@ -967,6 +967,7 @@
 					}
 				}
 				count: 3L
+				match_nbt: true
 			}]
 			rewards: [{
 				id: "3D434E26EC91C3E3"
@@ -1805,9 +1806,6 @@
 				""
 				""
 				"{ftbquests.chapter.chapter_4.quests55.description3}"
-				""
-				""
-				"{ftbquests.chapter.chapter_4.quests55.description6}"
 			]
 			dependencies: ["752215E611021472"]
 			id: "64A1C434EB7021E6"
@@ -2112,6 +2110,7 @@
 					id: "04874DA2291F924D"
 					type: "item"
 					item: "techreborn:cell"
+					match_nbt: true
 				}
 			]
 		}
@@ -2554,6 +2553,7 @@
 			]
 			dependencies: ["5355CA2F0BA74BF1"]
 			optional: true
+			min_required_tasks: 1
 			id: "78370C1AE832CBF1"
 			tasks: [
 				{

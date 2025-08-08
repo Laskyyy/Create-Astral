@@ -1,0 +1,82 @@
+{
+  "name": "custommachinery.createastral.electrolyser",
+  "appearance": {
+    "block": "createastral:electrolyser_dummy",
+    "running": {
+      "lightlevel": 15
+    }
+  },
+  "gui": [
+    {
+      "texture": "createastral:textures/gui/electrolyzer/electrolyzer_gui.png",
+      "x": 0,
+      "y": 0,
+      "type": "custommachinery:texture",
+      "width": 256,
+      "height": 192
+    },
+    {
+      "x": 47,
+      "y": 104,
+      "type": "custommachinery:player_inventory"
+    },
+    {
+      "id": "watertank",
+      "x": 90,
+      "y": 30,
+      "texture": "createastral:textures/gui/electrolyzer/electrolyzer_tank.png",
+      "type": "custommachinery:fluid",
+      "width": 18,
+      "height": 44
+    },
+    {
+      "id": "oxygentank",
+      "x": 142,
+      "y": 30,
+      "texture": "createastral:textures/gui/electrolyzer/electrolyzer_tank.png",
+      "type": "custommachinery:fluid",
+      "width": 18,
+      "height": 44
+    },
+    {
+      "x": 120,
+      "y": 45,
+      "emptyTexture": "createastral:textures/gui/electrolyzer/electrolyzer_progress_bar_empty.png",
+      "filledTexture": "createastral:textures/gui/electrolyzer/electrolyzer_progress_bar_full.png",
+      "type": "custommachinery:progress",
+      "width": 10,
+      "height": 10
+    },
+    {
+      "x": 236,
+      "y": 4,
+      "type": "custommachinery:status"
+    },
+    {
+      "text": "custommachinery.createastral.electrolyser.text",
+      "x": 9,
+      "y": 8,
+      "type": "custommachinery:text"
+    }
+  ],
+  "components": [
+    {
+      "type": "custommachinery:fluid",
+      "capacity": 810000,
+      "id": "oxygentank",
+      "maxInput": 0,
+      "maxOutput": 1000,
+      "filter": ["ad_astra:oxygen", "kubejs:smite"],
+      "whitelist": true
+    },
+    {
+      "type": "custommachinery:fluid",
+      "capacity": 810000,
+      "id": "watertank",
+      "maxInput": 666,
+      "maxOutput": 0,
+      "filter": ["minecraft:water", "kubejs:hellfire"],
+      "whitelist": true
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:wooden_shovel",
+        "minecraft:stone_shovel",
+        "minecraft:iron_shovel",
+        "minecraft:diamond_shovel",
+        "minecraft:golden_shovel",
+        "minecraft:netherite_shovel",
+        "tconstruct:excavator",
+        "tconstruct:mattock",
+        "createastral:copper_shovel"
+    ]
+}

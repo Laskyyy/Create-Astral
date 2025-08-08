@@ -1,0 +1,46 @@
+{
+  "name": "custommachinery.createastral.stone_growth_chamber",
+  "appearance": {
+    "block": "createastral:stone_growth_chamber_dummy",
+    "running": {
+      "lightlevel": 15
+    }
+  },
+  "gui": [
+    {
+      "texture": "createastral:textures/gui/sgc/sgc_gui.png",
+      "x": 0,
+      "y": 0,
+      "type": "custommachinery:texture",
+      "width": 256,
+      "height": 192
+    },
+    {
+      "x": 47,
+      "y": 104,
+      "type": "custommachinery:player_inventory"
+    },
+    {
+      "texture": "createastral:textures/gui/sgc/sgc_slot",
+      "id": "stoneslot",
+      "x": 128,
+      "y": 58,
+      "type": "custommachinery:slot"
+    },
+    {
+      "text": "custommachinery.createastral.stone_growth_chamber.text",
+      "x": 9,
+      "y": 8,
+      "type": "custommachinery:text"
+    }
+  ],
+  "components": [
+    {
+      "type": "custommachinery:item",
+      "variant": "custommachinery:default",
+      "capacity": 64,
+      "id": "stoneslot",
+      "mode": "both"
+    }
+  ]
+}

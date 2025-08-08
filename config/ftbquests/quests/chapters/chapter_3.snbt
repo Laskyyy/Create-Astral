@@ -746,8 +746,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						File: "[AstralExamples] Electrolyzer.nbt"
 						Rotation: "NONE"
+						File: "[AstralExamples] Electrolyzer.nbt"
 						Mirror: "NONE"
 						Bounds: [
 							7
@@ -2780,8 +2780,6 @@
 				"{ftbquests.chapter.chapter_3.quests72.description0}"
 				""
 				"{ftbquests.chapter.chapter_3.quests72.description2}"
-				""
-				"{ftbquests.chapter.chapter_3.quests72.description4}"
 			]
 			dependencies: [
 				"5042E544D3181FAC"
@@ -2906,8 +2904,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						File: "[AstralExamples] Stone Growth Chamber.nbt"
 						Rotation: "NONE"
+						File: "[AstralExamples] Stone Growth Chamber.nbt"
 						Mirror: "NONE"
 						Bounds: [
 							3

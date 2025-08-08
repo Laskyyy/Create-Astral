@@ -7,7 +7,7 @@ astralmenu.mainmenu.options.hover = Configure the game
 astralmenu.mainmenu.quit.text = Quit Game
 astralmenu.mainmenu.quit.hover = Come back soon!
 astralmenu.mainmenu.changelog.text = Changelog
-astralmenu.mainmenu.changelog.hover = Latest Patch: 2.1.3
+astralmenu.mainmenu.changelog.hover = Latest Patch: 2.1.4
 astralmenu.mainmenu.music.hover = Listen to the OST on Spotify!
 astralmenu.mainmenu.discord.hover = Join the official Discord server!
 astralmenu.mainmenu.credits.hover = Open the credits for Create: Astral
@@ -19,28 +19,45 @@ astralmenu.mainmenu.menucredit.line2 = Button icons by _Shortman
 astralmenu.mainmenu.menucredit.line3 = Implemented by Erdragh and _Shortman
 
 astralmenu.creditsmenu.title = Create: Astral Credits
+astralmenu.creditsmenu.buttons.contributors = Contributors
+astralmenu.creditsmenu.buttons.developers = Developers
+astralmenu.creditsmenu.buttons.specialthanks = Special Thanks
 astralmenu.creditsmenu.packdevs.header = Pack Developers
+astralmenu.creditsmenu.packdevs.description.laskyyy = Creator of Create: Astral, and resident wolf.
+astralmenu.creditsmenu.packdevs.description.ethanicuss = Maintainer of many of the content mods made exclusively for Astral, such as Astral Additions, as well as composer for some of the modpack's OST.
+astralmenu.creditsmenu.packdevs.description.erdragh = Maintainer of many patch mods made exclusively for Create: Astral to keep it from falling apart at the seams.
+astralmenu.creditsmenu.packdevs.description.winter = Composer for most of Create: Astral's iconic original soundtrack.
+astralmenu.creditsmenu.packdevs.description.shortman = Menu designer, bug patcher, monocle man. Also maintains the GitHub repository in a constant effort to make development as seamless as possible.
+astralmenu.creditsmenu.packdevs.description.trashpanda = The mastermind behind many unique recipe types and flashy effects within the modpack, as well as various recipe compatibility patches in REI.
 astralmenu.creditsmenu.contributors.header = Significant Contributors
-astralmenu.creditsmenu.screenshots.header = Main Menu Screenshots
-astralmenu.creditsmenu.screenshots.nzmanor = N.Z. Manor (Official Server)
-astralmenu.creditsmenu.screenshots.bar = Bar (Sister Server)
-astralmenu.creditsmenu.screenshots.lander = Moon Lander
-astralmenu.creditsmenu.screenshots.station = Train Station (Official Server)
-astralmenu.creditsmenu.screenshots.mountain = Mountainside Base
-astralmenu.creditsmenu.screenshots.tanks = Lava Tanks
-astralmenu.creditsmenu.screenshots.guard = Ruined Guard Monument
-astralmenu.creditsmenu.screenshots.satellite = Rusted Satellite Dish
-astralmenu.creditsmenu.screenshots.underground = Underground Lava Operation
-astralmenu.creditsmenu.structures.header = Structure Designers
-astralmenu.creditsmenu.testers.header = Beta Testers
+astralmenu.creditsmenu.contributors.programmers = Programmers
+astralmenu.creditsmenu.contributors.composers = Composers
+astralmenu.creditsmenu.contributors.artists = Artists
+astralmenu.creditsmenu.contributors.translators = Translators
+astralmenu.creditsmenu.contributors.other = Other
+astralmenu.creditsmenu.contributors.structures = Structure Designers
+astralmenu.creditsmenu.specialthanks.header = Extra Special Thanks
+astralmenu.creditsmenu.specialthanks.description.lizard = Retired developer of Create: Astral, responsible for a hefty chunk of the pack's core progression. He is now working on personal projects, and we wish him all the best!
+astralmenu.creditsmenu.specialthanks.description.b0b = Carried Astral's community on his shoulders as the manager of the Astral discord server. Now retired, B0b played a key role in the Astral community for a long time, and we are forever thankful.
+astralmenu.creditsmenu.specialthanks.betatesters = Beta Testers
+astralmenu.creditsmenu.specialthanks.backgroundcredit = Thanks to Senkou for the background to the credits screen!
 astralmenu.creditsmenu.close = Close Credits
 
 astralmenu.changelog.2_1.title = Create: Astral Version 2.1
 astralmenu.changelog.2_1.close = Close Changelog
-astralmenu.changelog.2_1_1.label = Update 2.1
+astralmenu.changelog.2_1.label = Update 2.1
 
-astralmenu.changelog.2_1_1.title = Create: Astral Patch 2.1.3
-astralmenu.changelog.2_1_1.label = Patch 2.1.3
+astralmenu.changelog.2_1_1.title = Create: Astral Patch 2.1.1
+astralmenu.changelog.2_1_1.label = Patch 2.1.1
+
+astralmenu.changelog.2_1_2.title = Create: Astral Patch 2.1.2
+astralmenu.changelog.2_1_2.label = Patch 2.1.2
+
+astralmenu.changelog.2_1_3.title = Create: Astral Patch 2.1.3
+astralmenu.changelog.2_1_3.label = Patch 2.1.3
+
+astralmenu.changelog.2_1_4.title = Create: Astral Patch 2.1.4
+astralmenu.changelog.2_1_4.label = Patch 2.1.4
 
 astralmenu.multiplayer_error_message.line1 = If you're getting an error when joining a multiplayer server, try rejoining before reporting it as a bug!
 astralmenu.multiplayer_error_message.line2 = If you still can't join, please join the Discord (link can be found on the left hand side of the main menu) and report it in the #bug-reports channel!

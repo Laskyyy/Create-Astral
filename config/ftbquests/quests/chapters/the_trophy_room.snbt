@@ -340,19 +340,17 @@
 					count: 1024L
 				}
 			]
-			rewards: [
-				{
-					id: "5EBE4E6AAD4FA946"
-					type: "item"
-					item: {
-						id: "tconstruct:creative_slot"
-						Count: 1b
-						tag: {
-							slot: "souls"
-						}
+			rewards: [{
+				id: "5EBE4E6AAD4FA946"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "souls"
 					}
 				}
-			]
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.the_trophy_room.quests1.title}"
@@ -362,20 +360,16 @@
 			dependencies: ["0938969824F4D4CB"]
 			hide: true
 			id: "5E9F6A0BF9C19736"
-			tasks: [
-				{
-					id: "108E346B5F9E1E83"
-					type: "item"
-					item: "astraladditions:disc_astral_lakes_remix"
-				}
-			]
-			rewards: [
-				{
-					id: "512F5A5D2ED5C68C"
-					type: "item"
-					item: "createastral:logo"
-				}
-			]
+			tasks: [{
+				id: "108E346B5F9E1E83"
+				type: "item"
+				item: "astraladditions:disc_astral_lakes_remix"
+			}]
+			rewards: [{
+				id: "512F5A5D2ED5C68C"
+				type: "item"
+				item: "createastral:logo"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.the_trophy_room.quests2.title}"
@@ -385,27 +379,23 @@
 			dependencies: ["0938969824F4D4CB"]
 			hide: true
 			id: "1E0623DDA08556BA"
-			tasks: [
-				{
-					id: "7CE193024FB74F7A"
-					type: "item"
-					item: "tconstruct:pig_iron_block"
-					count: 64L
-				}
-			]
-			rewards: [
-				{
-					id: "589ADE9778F55289"
-					type: "item"
-					item: {
-						id: "tconstruct:creative_slot"
-						Count: 1b
-						tag: {
-							slot: "defense"
-						}
+			tasks: [{
+				id: "7CE193024FB74F7A"
+				type: "item"
+				item: "tconstruct:pig_iron_block"
+				count: 64L
+			}]
+			rewards: [{
+				id: "589ADE9778F55289"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "defense"
 					}
 				}
-			]
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.the_trophy_room.quests3.title}"
@@ -415,27 +405,23 @@
 			dependencies: ["0938969824F4D4CB"]
 			hide: true
 			id: "6727F3852FC3323C"
-			tasks: [
-				{
-					id: "15E65CBF22539E31"
-					type: "advancement"
-					advancement: "farmersdelight:main/master_chef"
-					criterion: ""
-				}
-			]
-			rewards: [
-				{
-					id: "7330AA55AA6F602B"
-					type: "item"
-					item: {
-						id: "yttr:spatula"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "15E65CBF22539E31"
+				type: "advancement"
+				advancement: "farmersdelight:main/master_chef"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "7330AA55AA6F602B"
+				type: "item"
+				item: {
+					id: "yttr:spatula"
+					Count: 1b
+					tag: {
+						Damage: 0
 					}
 				}
-			]
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.the_trophy_room.quests4.title}"
@@ -445,21 +431,17 @@
 			dependencies: ["0938969824F4D4CB"]
 			hide: true
 			id: "69915811D14AB0BD"
-			tasks: [
-				{
-					id: "45F7C0CC5F8674FA"
-					type: "item"
-					item: "estrogen:crystal_estrogen_pill"
-					count: 256L
-				}
-			]
-			rewards: [
-				{
-					id: "7301652C7D6D1885"
-					type: "item"
-					item: "doodads:bendy_straw"
-				}
-			]
+			tasks: [{
+				id: "45F7C0CC5F8674FA"
+				type: "item"
+				item: "estrogen:crystal_estrogen_pill"
+				count: 256L
+			}]
+			rewards: [{
+				id: "7301652C7D6D1885"
+				type: "item"
+				item: "doodads:bendy_straw"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.the_trophy_room.quests5.title}"
@@ -469,27 +451,23 @@
 			dependencies: ["0938969824F4D4CB"]
 			hide: true
 			id: "0A141ADE11568F1E"
-			tasks: [
-				{
-					id: "43B5414428A95403"
-					type: "item"
-					item: "yttr:root_of_continuity"
-					count: 256L
-				}
-			]
-			rewards: [
-				{
-					id: "4C27D9381718D749"
-					type: "item"
-					item: {
-						id: "tconstruct:creative_slot"
-						Count: 1b
-						tag: {
-							slot: "abilities"
-						}
+			tasks: [{
+				id: "43B5414428A95403"
+				type: "item"
+				item: "yttr:root_of_continuity"
+				count: 256L
+			}]
+			rewards: [{
+				id: "4C27D9381718D749"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "abilities"
 					}
 				}
-			]
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.the_trophy_room.quests6.title}"
@@ -499,21 +477,17 @@
 			dependencies: ["0938969824F4D4CB"]
 			hide: true
 			id: "36BC1547ABFE2C05"
-			tasks: [
-				{
-					id: "22B41618D457A687"
-					type: "xp"
-					value: 210L
-					points: false
-				}
-			]
-			rewards: [
-				{
-					id: "53E78BE47D4E33B6"
-					type: "item"
-					item: "minecraft:knowledge_book"
-				}
-			]
+			tasks: [{
+				id: "22B41618D457A687"
+				type: "xp"
+				value: 210L
+				points: false
+			}]
+			rewards: [{
+				id: "53E78BE47D4E33B6"
+				type: "item"
+				item: "minecraft:knowledge_book"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.the_trophy_room.quests7.title}"
@@ -615,13 +589,11 @@
 					count: 64L
 				}
 			]
-			rewards: [
-				{
-					id: "37352E1E4AC29880"
-					type: "item"
-					item: "createbigcannons:traffic_cone"
-				}
-			]
+			rewards: [{
+				id: "37352E1E4AC29880"
+				type: "item"
+				item: "createbigcannons:traffic_cone"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.the_trophy_room.quests8.title}"
@@ -631,27 +603,23 @@
 			dependencies: ["0938969824F4D4CB"]
 			hide: true
 			id: "6F2EE9291E961AEE"
-			tasks: [
-				{
-					id: "51E9B59AEB7D5E51"
-					type: "item"
-					item: "createastral:subatomic_ingot"
-					count: 512L
-				}
-			]
-			rewards: [
-				{
-					id: "6A6413FE63B230F5"
-					type: "item"
-					item: {
-						id: "tconstruct:creative_slot"
-						Count: 1b
-						tag: {
-							slot: "upgrades"
-						}
+			tasks: [{
+				id: "51E9B59AEB7D5E51"
+				type: "item"
+				item: "createastral:subatomic_ingot"
+				count: 512L
+			}]
+			rewards: [{
+				id: "6A6413FE63B230F5"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "upgrades"
 					}
 				}
-			]
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.the_trophy_room.quests9.title}"
@@ -661,20 +629,16 @@
 			dependencies: ["0938969824F4D4CB"]
 			hide: true
 			id: "38E17A6C19D35584"
-			tasks: [
-				{
-					id: "138D971F11B540A2"
-					type: "item"
-					item: "compressor:octuple_compressed_cobblestone"
-				}
-			]
-			rewards: [
-				{
-					id: "4A66702D078A2F6D"
-					type: "item"
-					item: "yttr:giant_cobblestone"
-				}
-			]
+			tasks: [{
+				id: "138D971F11B540A2"
+				type: "item"
+				item: "compressor:octuple_compressed_cobblestone"
+			}]
+			rewards: [{
+				id: "4A66702D078A2F6D"
+				type: "item"
+				item: "yttr:giant_cobblestone"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.the_trophy_room.quests10.title}"
@@ -684,21 +648,17 @@
 			dependencies: ["0938969824F4D4CB"]
 			hide: true
 			id: "477C2D5CA5F8F5C2"
-			tasks: [
-				{
-					id: "31EAC2B25F4A968F"
-					type: "item"
-					item: "yttr:ultrapure_netherite"
-					count: 256L
-				}
-			]
-			rewards: [
-				{
-					id: "44FF6F2F7E172B84"
-					type: "item"
-					item: "immersive_aircraft:nether_engine"
-				}
-			]
+			tasks: [{
+				id: "31EAC2B25F4A968F"
+				type: "item"
+				item: "yttr:ultrapure_netherite"
+				count: 256L
+			}]
+			rewards: [{
+				id: "44FF6F2F7E172B84"
+				type: "item"
+				item: "immersive_aircraft:nether_engine"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.the_trophy_room.quests11.title}"
@@ -708,21 +668,17 @@
 			dependencies: ["0938969824F4D4CB"]
 			hide: true
 			id: "2E145505F5721C4F"
-			tasks: [
-				{
-					id: "36DC77FB2187411C"
-					type: "dimension"
-					icon: "minecraft:end_portal_frame"
-					dimension: "minecraft:the_end"
-				}
-			]
-			rewards: [
-				{
-					id: "1BF5E74A70172AE3"
-					type: "item"
-					item: "minecraft:dragon_egg"
-				}
-			]
+			tasks: [{
+				id: "36DC77FB2187411C"
+				type: "dimension"
+				icon: "minecraft:end_portal_frame"
+				dimension: "minecraft:the_end"
+			}]
+			rewards: [{
+				id: "1BF5E74A70172AE3"
+				type: "item"
+				item: "minecraft:dragon_egg"
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.the_trophy_room.quests12.title}"
@@ -746,20 +702,16 @@
 				"6F2EE9291E961AEE"
 			]
 			id: "5C59106DF5771CE2"
-			tasks: [
-				{
-					id: "47C02E9DDC6692C7"
-					type: "structure"
-					structure: "astralrails:dogstatue"
-				}
-			]
-			rewards: [
-				{
-					id: "72E8CFF935C36AC1"
-					type: "item"
-					item: "blahaj:bread"
-				}
-			]
+			tasks: [{
+				id: "47C02E9DDC6692C7"
+				type: "structure"
+				structure: "astralrails:dogstatue"
+			}]
+			rewards: [{
+				id: "72E8CFF935C36AC1"
+				type: "item"
+				item: "blahaj:bread"
+			}]
 		}
 	]
 	quest_links: [ ]
