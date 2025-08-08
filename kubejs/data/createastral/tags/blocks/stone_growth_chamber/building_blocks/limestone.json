@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "create:cut_limestone",
+    "create:polished_cut_limestone",
+    "create:cut_limestone_bricks",
+    "create:small_limestone_bricks"
+  ]
+}
