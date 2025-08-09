@@ -263,7 +263,7 @@
       },
       {
         predicate: { output: "ad_astra:netherite_space_boots" },
-        original: "minecraft:netherite_leggings",
+        original: "minecraft:netherite_boots",
         replaceWith: "createastral:sturdy_boots",
       },
       {
