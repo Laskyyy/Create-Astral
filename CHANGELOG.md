@@ -43,9 +43,9 @@ _Nothing to see here yet..._
 
 #### Gameplay-changing
 
-- Buffed Melter primary output of ore blocks (obtained via silk touch) to give 2 ingots of the material instead of 13 nuggets.
-- Buffed Foundry byproduct of ore blocks (obtained via silk touch) to give 6 nuggets instead of 4⅓ nuggets.
-- Nerfed Foundry byproduct of all raw ores to give 3¼ nuggets (3250 droplets), and raw ore storage blocks to give 3¼ ingots, to get rid of the horrible 4⅓ nugget value (rounds to 4333 droplets).
+- Buffed Melter primary output of some ore blocks (obtained via silk touch) to give 2 ingots of the material instead of 13 nuggets.
+- Buffed Foundry byproduct of some ore blocks (obtained via silk touch) to give 6 nuggets instead of 4⅓ nuggets.
+- Nerfed Foundry byproduct of some raw ores to give 3¼ nuggets (3250 droplets), and raw ore storage blocks to give 3¼ ingots, to get rid of the horrible 4⅓ nugget value (rounds to 4333 droplets).
 
 #### Quality of life
 
@@ -56,6 +56,8 @@ _Nothing to see here yet..._
 - Fixed several raw ores melting into a lower yield than a Furnace when placed in a Melter.
 - Fixed a crash caused when looking at certain Cutting Board recipes.
 - Fixed a conflicting Dripstone Block recipe in the Millstone producing Gold Nuggets when it should produce Clay.
+- Fixed missing recipe for haunting charcoal dust into charcoal.
+- Fixed haunting recipe for coal from charcoal requiring two charcoal instead of one.
 
 #### Minor mod updates
 
