@@ -15,7 +15,69 @@ Release dates attached to version numbers are in the format `YYYY/MM/DD` as per 
 
 Please note that patch notes for versions 2.1.3 and lower are currently lacking in full information, or may even be entirely inaccurate, due to poor documentation of changes before implementation of the changelog. If you notice anything that is incorrect or missing, please open a Pull Request with your fixes.
 
-## 2.1.4 [Unreleased]
+## 2.1.4a [UNRELEASED]
+
+### ADDITIONS
+
+#### Mod additions
+
+_Nothing to see here yet..._
+
+#### Gameplay-changing
+
+_Nothing to see here yet..._
+
+#### Quality of life
+
+_Nothing to see here yet..._
+
+#### Behind-the-scenes
+
+_Nothing to see here yet..._
+
+### CHANGES
+
+#### Major mod updates
+
+_Nothing to see here yet..._
+
+#### Gameplay-changing
+
+- Buffed Melter primary output of ore blocks (obtained via silk touch) to give 2 ingots of the material instead of 13 nuggets.
+- Buffed Foundry byproduct of ore blocks (obtained via silk touch) to give 6 nuggets instead of 4⅓ nuggets.
+- Nerfed Foundry byproduct of all raw ores to give 3¼ nuggets (3250 droplets), and raw ore storage blocks to give 3¼ ingots, to get rid of the horrible 4⅓ nugget value (rounds to 4333 droplets).
+
+#### Quality of life
+
+_Nothing to see here yet..._
+
+#### Bug patches
+
+- Fixed several raw ores melting into a lower yield than a Furnace when placed in a Melter.
+
+#### Minor mod updates
+
+_Nothing to see here yet..._
+
+#### Behind-the-scenes
+
+_Nothing to see here yet..._
+
+### REMOVALS
+
+#### Mod removals
+
+_Nothing to see here yet..._
+
+#### Gameplay-changing
+
+_Nothing to see here yet..._
+
+#### Behind-the-scenes
+
+_Nothing to see here yet..._
+
+## 2.1.4 [Current Release] - 2025/08/08
 
 **IMPORTANT:**
 
@@ -195,7 +257,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 
 - Removed the packwiz binaries from the repository because now CONTRIBUTING.md tells you how to get the latest version of them.
 
-## 2.1.3 [Current Release] - 2025/01/05
+## 2.1.3 - 2025/01/05
 
 ### ADDITIONS
 
