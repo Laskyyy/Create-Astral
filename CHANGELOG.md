@@ -58,6 +58,7 @@ _Nothing to see here yet..._
 - Fixed a conflicting Dripstone Block recipe in the Millstone producing Gold Nuggets when it should produce Clay.
 - Fixed missing recipe for haunting charcoal dust into charcoal.
 - Fixed haunting recipe for coal from charcoal requiring two charcoal instead of one.
+- Fixed a missing recipe for coal dust in the Grinder.
 
 #### Minor mod updates
 
