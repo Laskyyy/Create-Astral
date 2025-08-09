@@ -57,7 +57,7 @@
   "tooltip.kubejs.shimmer": "Usa la Brújula del Explorador para buscar \"Lagos de Shimmer\" subterráneos.",
   "tooltip.kubejs.shimmer_bucket": "Usa la Brújula del Explorador para buscar \"Lagos de Shimmer\" subterráneos.",
 
-  "tooltip.createastral.swift_andesite": "Coloca debajo de un bloque para otorgarle un aumento de velocidad similar al del pavimento de andesita.", 
+  "tooltip.createastral.swift_andesite": "Coloca debajo de un bloque para otorgarle un aumento de velocidad similar al del pavimento de andesita.",
   "tooltip.createastral.voidtouched_compound": "Lanza componente cromático al vacío para obtener",
   "tooltip.createastral.uranium_residue": "Usa en una torre de destilación mezclado con mercurio para obtener uranio fundido.",
   "tooltip.createastral.gyrodyne_blueprint": "Un esquema antiguo de una civilización perdida. ¿Quizá pueda encontrarse en instalaciones antiguas?",
@@ -173,7 +173,7 @@
 
   "item.astralsignals.dormant_signal_beacon": "Baliza de señal latente",
   "item.astralsignals.stirring_signal_beacon": "Baliza de señal activa",
-  "item.astralsignals.homing_signal_beacon": "Baliza de señal de rastreo"
+  "item.astralsignals.homing_signal_beacon": "Baliza de señal de rastreo",
 
   "item.astralsignals.data_drive_blank": "Disco duro vacío",
   "item.astralsignals.data_drive_garbled": "Disco duro corrupto",
@@ -268,7 +268,7 @@
   "item.createastral.protochicken": "Protopollo",
   "item.createastral.protomutton": "Protocordero",
   "item.createastral.protorabbit": "Protoconejo",
-  
+
   "item.createastral.radiant_helmet": "Casco radiante",
   "item.createastral.radiant_chestplate": "Peto radiante",
   "item.createastral.radiant_leggings": "Pantalones radiantes",
@@ -315,7 +315,7 @@
   "item.createastral.pure_biomatter": "Biomateria pura",
   "item.createastral.lime": "Polvo de cal",
   "item.createastral.synthetic_slime": "Slime sintético",
-  
+
   "item.createastral.incomplete_electronic_circuit": "Circuito electrónico incompleto",
   "item.createastral.incomplete_transitional_electronic_circuit": "Circuito electrónico incompleto",
   "item.createastral.transitional_lapis_sheet": "Circuito integrado incompleto",
@@ -353,7 +353,7 @@
   "item.astralfoods.food_amalgamation": "Amalgama de comida",
   "item.astralfoods.bulbas_tea": "Té de Bulba",
   "item.astralfoods.astralfoods.dipped_potato": "Patata bañada",
-  
+
   "block.kubejs.fragile_sheet_block": "Bloque de placa frágil",
   "block.kubejs.broken_fragile_sheet_block": "Bloque de placa frágil rota",
   "block.kubejs.fire_resistant_fragile_sheet_block": "Bloque de placa frágil ignífuga",
@@ -404,7 +404,6 @@
 
   "item.astralfoods.ambrosia": "Ambrosia",
   "item.astralfoods.chocolate_ice_cream": "Helado de chocolate",
-  "item.astralfoods.ice_cream_sandwich": "Ice Cream Sandwich",
   "item.astralfoods.ice_cream_sandwich": "Sándwich de helado",
   "item.astralfoods.gamers_delight": "Delicia del gamer",
   "item.astralfoods.fried_cod": "Bacalao frito",
@@ -637,7 +636,8 @@
   "ftbquests.chapter.6.quests30.description2": "Para invocar a una &5Gran Bestia&r, necesitamos un sacrificio. Esta jaula de bloques robustas podrá contenerlo.",
   "ftbquests.chapter.6.quests31.title": "Ender contenido",
   "ftbquests.chapter.6.quests31.description0": "Un vigilante del End será el mejor sacrificio. Su grito resonará por todo el cielo. ",
-  "ftbquests.chapter.6.quests31.description2": "Usando un &bLazo&r, captura a un Observador Ender y colócalo rápidamente en la jaula robusta. Recuerda que los lazos no pueden contener criaturas para siempre. Reduce los PS del Observador Ender para mantenerlo en el lazo por más tiempo.",  "ftbquests.chapter.6.quests31.description4": "If you haven't had the pleasure of meeting one yet, Ender Watchers are giant jellyfish that roam the Warped Forest and Small End Islands biomes.",
+  "ftbquests.chapter.6.quests31.description2": "Usando un &bLazo&r, captura a un Observador Ender y colócalo rápidamente en la jaula robusta. Recuerda que los lazos no pueden contener criaturas para siempre. Reduce los PS del Observador Ender para mantenerlo en el lazo por más tiempo.",
+  "ftbquests.chapter.6.quests31.description4": "If you haven't had the pleasure of meeting one yet, Ender Watchers are giant jellyfish that roam the Warped Forest and Small End Islands biomes.",
   "ftbquests.chapter.6.quests32.title": "Ultramateria",
   "ftbquests.chapter.6.quests32.subtitle": "Shimmer...",
   "ftbquests.chapter.6.quests32.description": "Shimmer, la sangre de la realidad. Combinada con carbono ultrapuro condensado, un armazón para un conducto está al alcanze de la mano.",
@@ -721,7 +721,7 @@
   "ftbquests.chapter.6_raow.quests2.description3": "El proceso para este será similar al de los que hiciste en el Capítulo 4. Estos utilizan pines de calorita y litio,",
   "ftbquests.chapter.6_raow.quests2.description6": "Como ya eres bastante hábil con REI a estas alturas, me saltaré los detalles de su creación.",
   "ftbquests.chapter.6_raow.quests3.title": "Bienvenido a la muerte térmica del universo.",
-  "ftbquests.chapter.6_raow.quests3.subtitle": "Disfruta tu estancia.",,
+  "ftbquests.chapter.6_raow.quests3.subtitle": "Disfruta tu estancia.",
   "ftbquests.chapter.6_raow.quests3.description": "Hogar del terreno más peligroso de cualquier planeta que hayas visto hasta ahora, Mercurio ofrece recompensas lucrativas para aquellos lo bastante valientes como para explorarlo.",
   "ftbquests.chapter.6_raow.quests4.title": "Herramientas Tech Reborn + Turbo",
   "ftbquests.chapter.6_raow.quests4.description": "Otra tanda de mejoras para el equipo de Tech Reborn.",
@@ -1377,7 +1377,7 @@
   "ftbquests.chapter.chapter_2.quests17.description13": "Las posibilidades son infinitas.",
   "ftbquests.chapter.chapter_2.quests17.description15": "La documentación está disponible en &bhttps://tweaked.cc&r.",
   "ftbquests.chapter.chapter_2.quests17.description17": "No te preocupes — no necesitas usar Ordenadores para completar el modpack.",
-  "ftbquests.chapter.chapter_2.quests18.subtitle": "Avanza 70, gira a la izquierda",  
+  "ftbquests.chapter.chapter_2.quests18.subtitle": "Avanza 70, gira a la izquierda",
   "ftbquests.chapter.chapter_2.quests18.description0": "Las &6Tortugas&r son básicamente ordenadores que pueden moverse.",
   "ftbquests.chapter.chapter_2.quests18.description2": "Para que una Tortuga se mueva, necesita combustible.",
   "ftbquests.chapter.chapter_2.quests18.description4": "Dale a la Tortuga algo de combustible colocando carbón en la ranura actualmente seleccionada y luego ejecuta turtle.refuel().",
@@ -1421,7 +1421,7 @@
   "ftbquests.chapter.chapter_2.quests27.description": "¡Encuentra formas de convertir esto en arcilla!",
   "ftbquests.chapter.chapter_2.quests28.subtitle": "Un juguete nuevo",
   "ftbquests.chapter.chapter_2.quests28.description": "Usado en la producción de cables y varillas, el tren de laminado funciona igual que la muela.",
-  "ftbquests.chapter.chapter_2.quests29.title": "Taladro de diamantes",  
+  "ftbquests.chapter.chapter_2.quests29.title": "Taladro de diamantes",
   "ftbquests.chapter.chapter_2.quests29.subtitle": "El sueño de Minecraft",
   "ftbquests.chapter.chapter_2.quests29.description0": "Puedes usar diamantes para:",
   "ftbquests.chapter.chapter_2.quests29.description1": "- Mejorar tu equipo de Hephaestus: simplemente pon la herramienta y un diamante en una Estación de Tinkers. La herramienta ahora podrá minar como una herramienta de diamante, además minará más rápido y tendrá más durabilidad.",
@@ -1540,7 +1540,7 @@
   "ftbquests.chapter.chapter_2.quests55.description4": "Esta no es la única forma de hacer andesita o polvo de andesita. Usando REI, puedes hacer clic en andesita y en polvo de andesita para ver todas sus recetas. Recuerda que REI es tu amigo: a menudo hay recetas en el pack que no se mencionan en este libro de misiones, así que asegúrate de explorar todas las recetas de cualquier objeto que necesites en más cantidad.",
 
   "ftbquests.chapter.chapter_25_the_automation_matrix.title": "La matriz de automatización",
-  "ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark": "Automatizado!",  
+  "ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark": "Automatizado!",
   "ftbquests.chapter.chapter_25_the_automation_matrix.quests0.subtitle": "Compostar orgánicos",
   "ftbquests.chapter.chapter_25_the_automation_matrix.quests0.description": "El polvo de hueso se usa para acelerar el crecimiento de los cultivos.",
   "ftbquests.chapter.chapter_25_the_automation_matrix.quests1.subtitle": "Puede que haya una forma de automatizar esto más tarde...",
@@ -2084,7 +2084,7 @@
   "ftbquests.chapter.chapter_3.quests80.subtitle": "Esto sigue siendo un pack técnico, lo juro",
   "ftbquests.chapter.chapter_3.quests80.description0": "El Shimmer puede usarse para transmutar ciertos objetos, transformándolos en otros. Pulsa U sobre un cubo de Shimmer en tu inventario para ver todas las recetas.",
   "ftbquests.chapter.chapter_3.quests80.description2": "Simplemente lanza un objeto válido al líquido Shimmer y ¡mira cómo ocurre la CIENCIA! ¡Recuerda llevar tus gafas protectoras!",
-  
+
   "ftbquests.chapter.chapter_4.title": "3) Remanentes de una Civilización Perdida",
   "ftbquests.chapter.chapter_4.quests0.subtitle": "¡Consigue un Blaze de una planta de energía perdida en la Luna!",
   "ftbquests.chapter.chapter_4.quests0.description0": "Las plantas de energía aparecen con peligrosos esqueletos de Wither y generadores de Blaze garantizados. Con un quemador de Blaze vacío, podrás hacer clic derecho sobre los Blazes y atraparlos.",
@@ -2463,7 +2463,7 @@
   "ftbquests.chapter.chapter_4.quests103.title": "¡Va genial con limones!",
   "ftbquests.chapter.chapter_4.quests103.description0": "Triturar piedra caliza te dará cal, un ingrediente necesario para fabricar hormigón del bueno.",
   "ftbquests.chapter.chapter_4.quests104.title": "Automatiza placas robustas",
-    "ftbquests.chapter.chapter_4.quests104.subtitle": "Estas han estado apareciendo cada vez más.",
+  "ftbquests.chapter.chapter_4.quests104.subtitle": "Estas han estado apareciendo cada vez más.",
   "ftbquests.chapter.chapter_4.quests104.description0": "Con una fuente constante de polvo de Blaze y una fuente de slime (alternativa o no), ahora tienes una forma de fabricar obsidiana enfriando bloques de magma.",
   "ftbquests.chapter.chapter_4.quests104.description3": "Las placas robustas son cada vez más relevantes y son bastante importantes en la ruta de la plata. Podrías considerar automatizarlas.",
   "ftbquests.chapter.chapter_4.quests104.tasks0.title": "4x64 placas robustas",
