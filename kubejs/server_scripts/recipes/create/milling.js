@@ -77,11 +77,6 @@
         chance: 1,
       },
       {
-        input: "minecraft:dripstone_block",
-        output: Item.of("minecraft:gold_nugget", 2),
-        chance: 1,
-      },
-      {
         input: "minecraft:blackstone",
         output: "create:zinc_nugget",
         chance: 0.5,
