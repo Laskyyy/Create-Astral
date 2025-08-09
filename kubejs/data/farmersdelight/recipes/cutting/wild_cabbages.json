@@ -1,0 +1,20 @@
+{
+  "replace": true,
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "farmersdelight:wild_cabbages"
+    }
+  ],
+  "result": [
+    {
+      "item": "farmersdelight:cabbage_seeds"
+    },
+    {
+      "item": "minecraft:yellow_dye"
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knives"
+  }
+}

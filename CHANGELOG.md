@@ -54,6 +54,7 @@ _Nothing to see here yet..._
 #### Bug patches
 
 - Fixed several raw ores melting into a lower yield than a Furnace when placed in a Melter.
+- Fixed a crash caused when looking at chopping board recipes.
 
 #### Minor mod updates
 
