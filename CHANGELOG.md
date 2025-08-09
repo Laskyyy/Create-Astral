@@ -15,7 +15,7 @@ Release dates attached to version numbers are in the format `YYYY/MM/DD` as per 
 
 Please note that patch notes for versions 2.1.3 and lower are currently lacking in full information, or may even be entirely inaccurate, due to poor documentation of changes before implementation of the changelog. If you notice anything that is incorrect or missing, please open a Pull Request with your fixes.
 
-## 2.1.4a [UNRELEASED]
+## 2.1.4a [HOTFIX, Current Release] - 2025/08/09
 
 ### ADDITIONS
 
@@ -82,7 +82,7 @@ _Nothing to see here yet..._
 
 _Nothing to see here yet..._
 
-## 2.1.4 [Current Release] - 2025/08/08
+## 2.1.4 - 2025/08/08
 
 **IMPORTANT:**
 
