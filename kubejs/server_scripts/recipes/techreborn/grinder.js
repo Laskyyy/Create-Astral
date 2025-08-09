@@ -21,7 +21,7 @@
       },
       {
         input: [{ item: "minecraft:coal", count: 1 }],
-        output: [{ item: "minecraft:coal_dust", count: 1 }],
+        output: [{ item: "techreborn:coal_dust", count: 1 }],
         time: 200,
         power: 5,
       },
