@@ -182,13 +182,6 @@
         time: 16,
       },
       {
-        fluidOutput: { fluid: "kubejs:molten_calorite", amount: NUGGET * 13 },
-        input: { tag: "c:raw_materials/calorite" },
-        temp: 3000,
-        time: 71,
-        byproducts: [{ fluid: "tconstruct:molten_diamond", amount: GEM / 9 }],
-      },
-      {
         fluidOutput: { fluid: "tconstruct:molten_copper", amount: NUGGET },
         input: { tag: "c:wires/copper" },
         temp: 500,
@@ -293,7 +286,8 @@
 
       // Raw material melting
       /// Output: NUGGET * 13
-      /// Byproduct: (NUGGET * 13) / 4
+      /// Metal byproduct: (NUGGET * 13) / 4
+      /// Gem byproduct: GEM / 9
 
       {
         fluidOutput: { fluid: "tconstruct:molten_iron", amount: NUGGET * 13 },
@@ -331,6 +325,13 @@
         byproducts: [{ fluid: "tconstruct:molten_lead", amount: (NUGGET * 13) / 4 }],
       },
       {
+        fluidOutput: { fluid: "kubejs:molten_calorite", amount: NUGGET * 13 },
+        input: { tag: "c:raw_materials/calorite" },
+        temp: 3000,
+        time: 71,
+        byproducts: [{ fluid: "tconstruct:molten_diamond", amount: GEM / 9 }],
+      },
+      {
         fluidOutput: { fluid: "kubejs:molten_yttrium", amount: NUGGET * 13 },
         input: { item: "yttr:yttrium_dust" },
         temp: 3000,
@@ -340,7 +341,8 @@
 
       // Raw material block melting
       /// Output: INGOT * 13
-      /// Byproduct: (INGOT * 13) / 4
+      /// Metal byproduct: (INGOT * 13) / 4
+      /// Gem byproduct: GEM / 9
 
       {
         fluidOutput: { fluid: "tconstruct:molten_iron", amount: INGOT * 13 },
@@ -387,21 +389,22 @@
 
       // Ore block melting
       /// Output: INGOT * 2
-      /// Byproduct: NUGGET * 6
+      /// Metal byproduct: NUGGET * 6
+      /// Gem byproduct: GEM / 6
 
-      {
-        fluidOutput: { fluid: "tconstruct:molten_silver", amount: INGOT * 2 },
-        input: { tag: "c:ores/silver" },
-        temp: 225,
-        time: 98,
-        byproducts: [{ fluid: "kubejs:molten_desh", amount: NUGGET * 6 }],
-      },
       {
         fluidOutput: { fluid: "tconstruct:molten_tin", amount: INGOT * 2 },
         input: { tag: "c:ores/tin" },
         temp: 225,
         time: 98,
         byproducts: [{ fluid: "tconstruct:molten_copper", amount: NUGGET * 6 }],
+      },
+      {
+        fluidOutput: { fluid: "tconstruct:molten_silver", amount: INGOT * 2 },
+        input: { tag: "c:ores/silver" },
+        temp: 225,
+        time: 98,
+        byproducts: [{ fluid: "kubejs:molten_desh", amount: NUGGET * 6 }],
       },
     ];
     meltingRecipes.forEach((recipe) => {
