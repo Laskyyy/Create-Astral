@@ -1005,6 +1005,18 @@
           E: "techreborn:basic_machine_frame",
         },
       },
+	  {
+	    output: "techreborn:industrial_centrifuge",
+		pattern: ["ABC", "DED", "FBF"],
+		key: {
+          A: "techreborn:lead_plate",
+          B: "techreborn:extractor",
+          C: "techreborn:electronic_circuit",
+          D: "techreborn:advanced_machine_frame",
+          E: "create:mechanical_bearing",
+		  F: "create:rotation_speed_controller",
+		}
+	  },
       {
         output: "techreborn:electric_furnace",
         pattern: ["ABA", "CDC", "AEA"],
