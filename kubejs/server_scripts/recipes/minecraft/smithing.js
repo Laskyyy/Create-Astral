@@ -36,21 +36,19 @@
 
     /** @satisfies {StorageUnit[]} */
     const storageUnits = /** @type {const} */ ([
-      { prefix: "basic", tier: 2, index: 0 },
-      { prefix: "advanced", tier: 3, index: 1 },
-      { prefix: "industrial", tier: 4, index: 2 },
-      { prefix: "quantum", tier: 6, index: 3 },
+      { prefix: "basic", tier: 2, index: 1 },
+      { prefix: "advanced", tier: 3, index: 2 },
+      { prefix: "industrial", tier: 4, index: 3 },
+      { prefix: "quantum", tier: 6, index: 4 },
     ]);
     storageUnits.forEach((unit) => {
       event.smithing(
         `techreborn:${unit.prefix}_storage_unit`,
-        // @ts-expect-error These are block tags, how does that even work???
         `#createastral:storage_unit_${unit.index}`,
         `createastral:t${unit.tier}_upgrade`
       );
       event.smithing(
         `techreborn:${unit.prefix}_tank_unit`,
-        // @ts-expect-error These are block tags, how does that even work???
         `#createastral:tank_unit_${unit.index}`,
         `createastral:t${unit.tier}_upgrade`
       );

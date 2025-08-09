@@ -159,6 +159,7 @@
       { id: "techreborn:solid_canning_machine/sulfur_cell" },
       { id: "techreborn:solid_canning_machine/bio_cell" },
       //Create
+      { output: "create:sturdy_sheet" },
       { output: "create:track" },
       { output: "create:blaze_cake" },
       { output: "create:blaze_cake_base" },
