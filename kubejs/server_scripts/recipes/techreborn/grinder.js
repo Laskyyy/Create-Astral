@@ -1,5 +1,5 @@
 (function techRebornGrinderRecipes() {
-  const {CRUSHING_RECIPES_TO_BECOME_GRINDING, DEFAULT_GRIND_POWER, DEFAULT_GRIND_TIME} = global.server
+  const { CRUSHING_RECIPES_TO_BECOME_GRINDING, DEFAULT_GRIND_POWER, DEFAULT_GRIND_TIME } = global.server;
 
   onEvent("recipes", (event) => {
     crushingToGrinding(event);
@@ -17,6 +17,12 @@
         input: [{ item: "minecraft:pointed_dripstone", count: 1 }],
         output: [{ item: "minecraft:clay_ball", count: 1 }],
         time: 100,
+        power: 5,
+      },
+      {
+        input: [{ item: "minecraft:coal", count: 1 }],
+        output: [{ item: "minecraft:coal_dust", count: 1 }],
+        time: 200,
         power: 5,
       },
     ];
