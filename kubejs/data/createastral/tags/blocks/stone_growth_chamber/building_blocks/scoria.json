@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "create:cut_scoria",
+    "create:polished_cut_scoria",
+    "create:cut_scoria_bricks",
+    "create:small_scoria_bricks"
+  ]
+}

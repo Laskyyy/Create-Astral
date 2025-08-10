@@ -44,13 +44,11 @@
     storageUnits.forEach((unit) => {
       event.smithing(
         `techreborn:${unit.prefix}_storage_unit`,
-        // @ts-expect-error These are block tags, how does that even work???
         `#createastral:storage_unit_${unit.index}`,
         `createastral:t${unit.tier}_upgrade`
       );
       event.smithing(
         `techreborn:${unit.prefix}_tank_unit`,
-        // @ts-expect-error These are block tags, how does that even work???
         `#createastral:tank_unit_${unit.index}`,
         `createastral:t${unit.tier}_upgrade`
       );
