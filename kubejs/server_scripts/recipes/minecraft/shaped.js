@@ -613,7 +613,7 @@
         output: "yttr:suit_station",
         pattern: ["YYY", "CCC", "YFY"],
         key: {
-          Y: "#yttr:substituted:yttrium",
+          Y: "#yttr:substituted_yttrium",
           C: "create:chute",
           F: "techreborn:industrial_blast_furnace",
         },
