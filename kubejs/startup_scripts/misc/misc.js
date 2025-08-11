@@ -14,12 +14,12 @@ console.info("Create: Astral Modpack version = 2.1.4b");
    * @param {string} resourceLocation
    * @param {number} multiplier
    */
-  function registerUpgrade(resourceLocation, multiplier) {
-    ITEMS["register(net.minecraft.class_2960,java.util.function.Supplier)"](resourceLocation, () => {
+  function registerUpgrade(itemNamespace, resourceLocation, multiplier) {
+    ITEMS["register(net.minecraft.class_2960,java.util.function.Supplier)"](itemNamespace, () => {
       return new $UpgradeItem(new $FabricItemSettings(), $ResourceLocation.tryParse(resourceLocation), multiplier);
     });
   }
-  upgrades.forEach((upgrade) => registerUpgrade(upgrade.item, upgrade.multiplier));
+  upgrades.forEach((upgrade) => registerUpgrade(upgrade.item, upgrade.sprite, upgrade.multiplier));
   ITEMS.register();
   // make create wrench work as tech reborn wrench
   $ToolManager.INSTANCE.customToolHandlerList.add(
