@@ -15,41 +15,41 @@ Release dates attached to version numbers are in the format `YYYY/MM/DD` as per 
 
 Please note that patch notes for versions 2.1.3 and lower are currently lacking in full information, or may even be entirely inaccurate, due to poor documentation of changes before implementation of the changelog. If you notice anything that is incorrect or missing, please open a Pull Request with your fixes.
 
-## 2.1.4a [HOTFIX, Current Release] - 2025/08/09
-
-### ADDITIONS
-
-#### Mod additions
-
-_Nothing to see here yet..._
-
-#### Gameplay-changing
-
-_Nothing to see here yet..._
-
-#### Quality of life
-
-_Nothing to see here yet..._
-
-#### Behind-the-scenes
-
-_Nothing to see here yet..._
+## 2.1.4b [HOTFIX, Current Release] - 2025/08/11
 
 ### CHANGES
 
-#### Major mod updates
+#### Gameplay-changing
 
-_Nothing to see here yet..._
+- Removed recipes for the Hephaestus Mushroom Stew fluid and replaced them with the KubeJS Mushroom Stew fluid.
+- Made the Synthetic Redstone Crystal recipe shapeless.
+
+#### Bug patches
+
+- Fixed the Desh Rocket being uncraftable.
+- Fixed the Industrial Centrifuge being uncraftable.
+- Fixed the Yttr Suit Station being uncraftable.
+- Fixed a conflicting recipe for Sturdy Sheets caused by the base Create recipe still existing.
+- Fixed the Lead-lined Space Suit recipe requring the wrong armour set to craft (it was using Netherite instead of Sturdy).
+- Fixed Cherry, Glacian, Old Growth Cherry, and Rubber stripped logs and wood not being valid in making Andesite Casing.
+- Fixed the Tech Reborn Grinder not having all the recipes it should have had.
+- Fixed Tech Reborn Storage Units and Tanks not being upgradeable.
+- Fixed Oil not being craftable.
+- Fixed a variety of broken recipes with Traveler's Backpacks.
+- Fixed the Chapter 3 haunting quest requiring Blackstone to complete (Blackstone is no longer obtainable via haunting).
+- Fixed a variety of incorrect Hephaestus material melting temperature values.
+- Fixed a KubeJS error being thrown every time a Foundry Controller was right clicked.
+- Fixed storage upgrades applied to Drawers from Extended Drawers showing a missing texture on the front face of the block.
+
+## 2.1.4a [HOTFIX] - 2025/08/09
+
+### CHANGES
 
 #### Gameplay-changing
 
 - Buffed Melter primary output of some ore blocks (obtained via silk touch) to give 2 ingots of the material instead of 13 nuggets.
 - Buffed Foundry byproduct of some ore blocks (obtained via silk touch) to give 6 nuggets instead of 4⅓ nuggets.
 - Nerfed Foundry byproduct of some raw ores to give 3¼ nuggets (3250 droplets), and raw ore storage blocks to give 3¼ ingots, to get rid of the horrible 4⅓ nugget value (rounds to 4333 droplets).
-
-#### Quality of life
-
-_Nothing to see here yet..._
 
 #### Bug patches
 
@@ -59,28 +59,6 @@ _Nothing to see here yet..._
 - Fixed missing recipe for haunting charcoal dust into charcoal.
 - Fixed haunting recipe for coal from charcoal requiring two charcoal instead of one.
 - Fixed a missing recipe for coal dust in the Grinder.
-
-#### Minor mod updates
-
-_Nothing to see here yet..._
-
-#### Behind-the-scenes
-
-_Nothing to see here yet..._
-
-### REMOVALS
-
-#### Mod removals
-
-_Nothing to see here yet..._
-
-#### Gameplay-changing
-
-_Nothing to see here yet..._
-
-#### Behind-the-scenes
-
-_Nothing to see here yet..._
 
 ## 2.1.4 - 2025/08/08
 

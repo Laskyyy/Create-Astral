@@ -39,7 +39,7 @@ body:
     attributes:
       label: Version
       description: What version of the modpack are you on?
-      placeholder: 2.1.4a
+      placeholder: 2.1.4b
     validations:
       required: true
 

@@ -23,7 +23,43 @@
         input: [{ item: "minecraft:coal", count: 1 }],
         output: [{ item: "techreborn:coal_dust", count: 1 }],
         time: 200,
+        power: 2,
+      },
+	  {
+        input: [{ item: "ad_astra:steel_ingot", count: 1 }],
+        output: [{ item: "techreborn:steel_dust", count: 1 }],
+        time: 200,
         power: 5,
+      },
+	  {
+        input: [{ tag: `c:basalt` , count: 1 }],//tag
+        output: [{ item: "techreborn:basalt_dust", count: 1 }],
+        time: 200,
+        power: 5,
+      },
+	  {
+        input: [{ item: "minecraft:charcoal", count: 1 }],
+        output: [{ item: "techreborn:charcoal_dust", count: 1 }],
+        time: 200,
+        power: 4,
+      },
+	  {
+        input: [{ item: "minecraft:diamond", count: 1 }],
+        output: [{ item: "techreborn:diamond_dust", count: 1 }],
+        time: 240,
+        power: 4,
+      },
+	  {
+        input: [{ item: "techreborn:electrum_ingot", count: 1 }],
+        output: [{ item: "techreborn:electrum_dust", count: 1 }],
+        time: 200,
+        power: 5,
+      },
+	  {
+        input: [{ item: "techreborn:deepslate_galena_ore", count: 1 }],
+        output: [{ item: "techreborn:galena_dust", count: 2 }],
+        time: 220,
+        power: 2,
       },
     ];
     grinderRecipes.forEach((recipe) => {
