@@ -609,6 +609,15 @@
           B: "minecraft:stone",
         },
       },
+	  {
+        output: "yttr:suit_station",
+        pattern: ["YYY", "CCC", "YFY"],
+        key: {
+          Y: "#yttr:substituted:yttrium",
+          C: "create:chute",
+          F: "techreborn:industrial_blast_furnace",
+        },
+      },
       {
         output: "createastral:promethium_atomic_battery",
         pattern: ["CAC", "BDB", "CEC"],
