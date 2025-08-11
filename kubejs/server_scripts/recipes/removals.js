@@ -423,6 +423,7 @@
       { id: "tconstruct:smeltery/casting/slime/ichor/congealed" },
       // @ts-expect-error Missing recipe?
       { id: "tconstruct:smeltery/casting/slime/slimeball" },
+      { id: "tconstruct:smeltery/casting/soup/mushroom" },
       { id: "tconstruct:smeltery/entity_melting/blaze" },
       { id: "tconstruct:smeltery/entity_melting/heads/blaze" },
       { id: "tconstruct:smeltery/melting/fuel/blaze" },
@@ -458,6 +459,9 @@
       { id: "tconstruct:smeltery/melting/seared/grout" },
       { id: "tconstruct:smeltery/melting/slime/beetroot_soup" },
       { id: "tconstruct:smeltery/melting/slime/honey_block" },
+      { id: "tconstruct:smeltery/melting/slime/mushroom_stew" },
+      { output: "tconstruct:mushroom_stew" },
+      { input: "tconstruct:mushroom_stew" },
       //horse armor
       { output: "minecraft:leather_horse_armor" },
       { type: "tconstruct:melting", input: "minecraft:iron_horse_armor" },
@@ -493,7 +497,7 @@
       { output: "travelersbackpack:green_sleeping_bag" },
       { output: "travelersbackpack:red_sleeping_bag" },
       { output: "travelersbackpack:black_sleeping_bag" },
-	  { input: "travelersbackpack:backpack_tank", output: "travelersbackpack:standard" },
+      { input: "travelersbackpack:backpack_tank", output: "travelersbackpack:standard" },
       { output: "travelersbackpack:hose" },
       { output: "travelersbackpack:hose_nozzle" },
       { output: "ad_astra:ostrum_engine" },
