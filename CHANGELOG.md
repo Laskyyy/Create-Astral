@@ -15,7 +15,7 @@ Release dates attached to version numbers are in the format `YYYY/MM/DD` as per 
 
 Please note that patch notes for versions 2.1.3 and lower are currently lacking in full information, or may even be entirely inaccurate, due to poor documentation of changes before implementation of the changelog. If you notice anything that is incorrect or missing, please open a Pull Request with your fixes.
 
-## 2.1.4b [HOTFIX, UNRELEASED]
+## 2.1.4b [HOTFIX, Current Release] - 2025/08/11
 
 ### CHANGES
 
@@ -37,8 +37,10 @@ Please note that patch notes for versions 2.1.3 and lower are currently lacking 
 - Fixed a variety of broken recipes with Traveler's Backpacks.
 - Fixed the Chapter 3 haunting quest requiring Blackstone to complete (Blackstone is no longer obtainable via haunting).
 - Fixed a variety of incorrect Hephaestus material melting temperature values.
+- Fixed a KubeJS error being thrown every time a Foundry Controller was right clicked.
+- Fixed storage upgrades applied to Drawers from Extended Drawers showing a missing texture on the front face of the block.
 
-## 2.1.4a [HOTFIX, Current Release] - 2025/08/09
+## 2.1.4a [HOTFIX] - 2025/08/09
 
 ### CHANGES
 
