@@ -28,6 +28,7 @@ Please note that patch notes for versions 2.1.3 and lower are currently lacking 
 
 - Fixed the Desh Rocket being uncraftable.
 - Fixed the Industrial Centrifuge being uncraftable.
+- Fixed the Yttr Suit Station being uncraftable.
 - Fixed a conflicting recipe for Sturdy Sheets caused by the base Create recipe still existing.
 - Fixed the Lead-lined Space Suit recipe requring the wrong armour set to craft (it was using Netherite instead of Sturdy).
 - Fixed Cherry, Glacian, Old Growth Cherry, and Rubber stripped logs and wood not being valid in making Andesite Casing.
