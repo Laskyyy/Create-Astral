@@ -1,4 +1,4 @@
-console.info("Create: Astral Modpack version = 2.1.4a");
+console.info("Create: Astral Modpack version = 2.1.4b");
 
 (function misc() {
   const { upgrades } = global.startup;
