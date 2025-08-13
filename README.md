@@ -14,10 +14,21 @@ Does not include mods, or most configs, only pack specific files which are used 
 
 ## Useful documents on this repository
 
--   [Changelog](CHANGELOG.md)
--   [Contributing guidelines](CONTRIBUTING.md)
--   [License](LICENSE.md)
--   [Code style guidelines](CODE_STYLE.md)
+- [Changelog](CHANGELOG.md)
+- [Contributing guidelines](CONTRIBUTING.md)
+- [License](LICENSE.md)
+- [Code style guidelines](CODE_STYLE.md)
+
+## External resources this repository uses
+
+- [packwiz](https://packwiz.infra.link/) - used in constructing the modpack from this lightweight repository into a launcher instance, as well as managing mod updates.
+
+This section may not be complete - if there are other external resources used within this repository that should be credited, please open a Pull Request with updates to this file.
+
+## Other interesting links
+
+- [Official Discord server](https://discord.gg/StW3Q5K8dJ)
+- [Curseforge page](https://www.curseforge.com/minecraft/modpacks/create-astral)
 
 ## Automatic Builds
 

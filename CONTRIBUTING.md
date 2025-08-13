@@ -7,8 +7,6 @@ lang: en_GB
 
 ## Important forewords
 
-## Important forewords
-
 **YOU MUST REFER TO THE [LICENSE](/LICENSE.md) BEFORE MAKING ANY PULL REQUESTS OR PERSONAL MODIFICATIONS.**
 
 Please also refer to the [CODE_STYLE](CODE_STYLE.md) document if making contributions to any JavaScript files.

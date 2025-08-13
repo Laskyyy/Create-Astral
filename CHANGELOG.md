@@ -45,6 +45,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 
 - Added four new GUIs for the Electrolyser, Distillation Tower, Stone Growth Chamber, and Shimmer Refinery multiblock structures.
 - Added a dedicated transistional item for the Shimmer Amplifier sequenced assembly recipe.
+- Added a live version tracker on the main menu that pulls the most recent version of Astral from the GitHub repository releases.
 
 #### Behind-the-scenes
 
@@ -86,6 +87,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 - Tripled the amount of time Blazing Blood can fuel liquid Blaze Burners for.
 - Changed Launch Gel's transitional item to be Slimesteel Nugget.
 - Diamond tools now need 1 Diamond worth of Molten Diamond per loop instead of 2.5 Diamonds.
+- Buffed marimo dupe recipes to now output 3 marimo instead of 2. This helps with recycling using brass funnels to extract precisely 2 marimo from the basin, leaving one in the basin to be reprocessed.
 
 #### Quality of life
 
@@ -106,6 +108,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 - Made Basic, Advanced, and Industrial Machine Frames and Machine Casings able to be picked up with wrenches.
 - Re-added the in-game changelogs for 2.1.1 and 2.1.2, and preserved the changelog for 2.1.3. Also completely redesigned the in-game changelog.
 - Overhauled the in-game credits menu to include more people and generally look nicer and be more organised.
+- Baked main menu screenshot credits onto the images themselves. Best viewed in a 16:9 monitor aspect ratio.
 
 #### Bug patches
 
@@ -149,6 +152,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 - Fixed the inability to create both Capacity and Potato Recovery enchanted books by changing Potato Recovery's assembly to use a Potato as a first item.
 - Fixed most fluid cell quest tasks not respecting NBT and completing when the player is holding any type of fluid cell.
 - Fixed certain blocks not being able to be picked up by wrenches.
+- Fixed the Farmer's Delight Chocolate Pie filling recipe not working due to a broken fluid amount.
 
 #### Minor mod updates
 
@@ -170,6 +174,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 - Fixed incorrect output removal in `removals.js`.
 - Fixed mixed up mod names in `mixing.js`.
 - Updated the bug report template on GitHub to autoassign the new bug tag name.
+- Removed duplicate Plantball and Biomass sequenced assemblies.
 
 ### REMOVALS
 
@@ -188,8 +193,7 @@ This update comes with a completely overhauled file structure for Astral's own c
 
 #### Behind-the-scenes
 
-- Removed the packwiz binaries from the repository to decrease the size of it.
-- Removed duplicate Plantball and Biomass sequenced assemblies.
+- Removed the packwiz binaries from the repository because now CONTRIBUTING.md tells you how to get the latest version of them.
 
 ## 2.1.3 [Current Release] - 2025/01/05
 

@@ -24,6 +24,5 @@
     "age=7": [ { "model": "block/wheat_stage7" },
 		{ "model": "block/wheat_stage7_2" } 
 	]
-    }
   }
 }
