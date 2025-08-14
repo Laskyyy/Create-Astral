@@ -12,6 +12,9 @@
     "fluid.ad_astra.oil": "Oil",
     "fluid.ad_astra.cryo_fuel": "Cryo Fuel",
     "fluid.ad_astra.fuel": "Fuel",
+	
+	"block.ad_astra.venus_gold_ore": "Mars Gold Ore",
+	"item.ad_astra.venus_gold_ore": "Mars Gold Ore",
 
     "item.ad_astra.steel_plate": "Steel Sheet",
     "item.ad_astra.desh_plate": "Desh Sheet",
