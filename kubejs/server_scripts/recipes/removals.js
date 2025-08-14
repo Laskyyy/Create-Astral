@@ -273,6 +273,7 @@
       { output: "createdeco:zinc_sheet" },
       //Create Additions
       { output: "createaddition:alternator" },
+      { id: "createaddition:mixing/bioethanol" },
       { output: "createaddition:electric_motor" },
       { output: "createaddition:tesla_coil" },
       { output: "createaddition:biomass_pellet" },
