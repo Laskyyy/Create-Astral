@@ -13,6 +13,12 @@
     /** @type {MeltingRecipe[]} */
     const meltingRecipes = [
       // Misc melting
+	  {
+        fluidOutput: { fluid: "techreborn:sulfur", amount: 22500 },
+        input: { item: "techreborn:sulfur_dust" },
+        temp: 800,
+        time: 500,
+      },
       {
         fluidOutput: { fluid: "tconstruct:blazing_blood", amount: BUCKET },
         input: { item: "create:blaze_burner" },
