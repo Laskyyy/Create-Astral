@@ -14,6 +14,18 @@
     const meltingRecipes = [
       // Misc melting
 	  {
+        fluidOutput: { fluid: "tconstruct:earth_slime", amount: 22500/2 },
+        input: { tag: "tconstruct:greenheart_logs" },
+        temp: 50,
+        time: 50,
+      },
+	  {
+        fluidOutput: { fluid: "tconstruct:sky_slime", amount: 22500/2 },
+        input: { tag: "tconstruct:skyroot_logs" },
+        temp: 50,
+        time: 50,
+      },
+	  {
         fluidOutput: { fluid: "techreborn:sulfur", amount: 22500 },
         input: { item: "techreborn:sulfur_dust" },
         temp: 800,
