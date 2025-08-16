@@ -15,6 +15,21 @@ Release dates attached to version numbers are in the format `YYYY/MM/DD` as per 
 
 Please note that patch notes for versions 2.1.3 and lower are currently lacking in full information, or may even be entirely inaccurate, due to poor documentation of changes before implementation of the changelog. If you notice anything that is incorrect or missing, please open a Pull Request with your fixes.
 
+## 2.1.4c [HOTFIX, UNRELEASED]
+
+### CHANGES
+
+#### Gameplay-changing
+
+- Removed the base recipe for Bioethanol from Create: Crafts and Additions.
+
+#### Bug patches
+
+- Fixed missing Sulphur recipe for automating Oil.
+- Fixed missing recipe for melting Slime Logs into Slime.
+- Fixed Venus Gold Ore appearing on Mars, retexturing and renaming it to Mars Gold Ore.
+- Fixed inconsistency in the name of Diamond Grit ~~Sandpaper~~ Sand Paper to match the other Sand Papers.
+
 ## 2.1.4b [HOTFIX, Current Release] - 2025/08/11
 
 ### CHANGES
@@ -240,6 +255,8 @@ This update comes with a completely overhauled file structure for Astral's own c
 
 - Removed the packwiz binaries from the repository because now CONTRIBUTING.md tells you how to get the latest version of them.
 
+---
+
 ## 2.1.3 - 2025/01/05
 
 ### ADDITIONS
@@ -371,6 +388,8 @@ This update comes with a completely overhauled file structure for Astral's own c
 
 > _Nothing to see here yet..._
 
+---
+
 ## 2.1.2 - 2024/10/31
 
 ### ADDITIONS
@@ -464,6 +483,8 @@ With this patch, the questbook now has been fully internationalised, adding loca
 
 > _Nothing to see here yet..._
 
+---
+
 ## 2.1.1 - 2024/10/16
 
 ### ADDITIONS
@@ -544,6 +565,8 @@ With this patch, the questbook now has been fully internationalised, adding loca
 #### Behind-the-scenes
 
 > _Nothing to see here yet..._
+
+---
 
 ## 2.1 - 2024/10/08
 
