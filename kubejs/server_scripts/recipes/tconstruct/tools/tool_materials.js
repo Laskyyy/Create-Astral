@@ -18,7 +18,7 @@
     const materialRecipes = [
       {
         fluid: "kubejs:molten_calorite",
-        temp: 1800,
+        temp: 3000,
         toolMaterial: "tconstruct:calorite",
       },
       {
@@ -28,7 +28,7 @@
       },
       {
         fluid: "kubejs:molten_ostrum",
-        temp: 950,
+        temp: 3000,
         toolMaterial: "tconstruct:ostrum",
       },
       {
