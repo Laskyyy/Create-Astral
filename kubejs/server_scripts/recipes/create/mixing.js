@@ -653,7 +653,7 @@
         time: 500,
       },
       {
-        output: "create:chromatic_compound",
+        output: Item.of("create:chromatic_compound", 1).withNBT({}),
         input: [Item.of("techreborn:uu_matter", 4), { fluid: "kubejs:shimmer", amount: BUCKET }],
         heat: "superheated",
         time: 2500,
