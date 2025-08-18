@@ -1,0 +1,9 @@
+{
+    "values": [
+        "techreborn:storage_buffer",
+        "techreborn:crude_storage_unit",
+        "techreborn:basic_storage_unit",
+        "techreborn:advanced_storage_unit",
+        "techreborn:industrial_storage_unit"
+    ]    
+}

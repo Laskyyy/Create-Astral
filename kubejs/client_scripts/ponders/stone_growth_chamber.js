@@ -45,8 +45,8 @@
         scene.idle(1);
         scene.text(30, "Glass", [1.5, 3, 2.5]);
         scene.idle(40);
-        scene.world.setBlocks([2, 2, 2], "minecraft:lava", true);
-        scene.text(30, "Lava in the middle", [2.5, 3, 2.5]);
+        scene.world.setBlocks([2, 2, 2], "minecraft:water", true);
+        scene.text(30, "Water in the middle", [2.5, 3, 2.5]);
         scene.idle(40);
         scene.world.setBlocks([1, 3, 3], "create:cut_andesite", true);
         scene.idle(1);
@@ -108,7 +108,7 @@
         scene.idle(70);
         scene.text(
           90,
-          "This currently works with Stone, Andesite and any default stone from each planet, like Moon Stone and Mars Stone",
+          "This currently works with Stone, Andesite, Limestone, Scoria, Basalt and any default stone from each planet, like Moon Stone and Mars Stone",
           [3, 2.5, 3]
         );
         scene.idle(100);
@@ -218,13 +218,13 @@
         scene.world.setBlocks([1, 3, 1, 3, 3, 3], "minecraft:air", false);
         scene.idle(30);
         scene.world.setBlocks([1, 2, 1, 3, 2, 3], "minecraft:tinted_glass", true);
-        scene.world.setBlock([2, 2, 2], "minecraft:lava", false);
+        scene.world.setBlock([2, 2, 2], "minecraft:water", false);
         scene.idle(30);
         scene.world.setBlocks([1, 2, 1, 3, 2, 3], "tconstruct:gray_clear_stained_glass", true);
-        scene.world.setBlock([2, 2, 2], "minecraft:lava", false);
+        scene.world.setBlock([2, 2, 2], "minecraft:water", false);
         scene.idle(30);
         scene.world.setBlocks([1, 2, 1, 3, 2, 3], "chipped:glass_48", true);
-        scene.world.setBlock([2, 2, 2], "minecraft:lava", false);
+        scene.world.setBlock([2, 2, 2], "minecraft:water", false);
         scene.idle(30);
         scene.world.setBlocks([1, 3, 1, 3, 3, 3], "create:small_andesite_bricks", true);
       });
