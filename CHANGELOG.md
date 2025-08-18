@@ -29,6 +29,12 @@ Please note that patch notes for versions 2.1.3 and lower are currently lacking 
 - Fixed missing recipe for melting Slime Logs into Slime.
 - Fixed Venus Gold Ore appearing on Mars, retexturing and renaming it to Mars Gold Ore.
 - Fixed inconsistency in the name of Diamond Grit ~~Sandpaper~~ Sand Paper to match the other Sand Papers.
+- Fixed Ostrum and Calorite melting at the wrong temperatures.
+- Fixed missing name for Mercury Calorite Ore.
+- Fixed a lot of ores being mineable with the wrong material level.
+- Fixed the quest for pressing Seeds into Seed Oil incorrectly saying that the basin needs to be heated.
+- Fixed Chromatic Compound not stacking properly.
+- Fixed melting yields of metals that were changed in 2.1.4a to give the correct value of 12 nuggets instead of 13.
 
 ## 2.1.4b [HOTFIX, Current Release] - 2025/08/11
 
