@@ -3,7 +3,7 @@
 	group: ""
 	order_index: 12
 	filename: "astral_generators"
-	title: "Astral Generators"
+	title: "{ftbquests.chapter.astral_generators.title}"
 	icon: {
 		id: "custommachinery:custom_machine_item"
 		Count: 1b
@@ -17,19 +17,19 @@
 		{
 			x: -7.0d
 			y: -0.5d
-			description: ["It's time to produce more energy with Astral Generators"]
+			description: ["{ftbquests.chapter.astral_generators.quests0.description0}"]
 			id: "3A00720E78CC7F3E"
 			tasks: [{
 				id: "18F327B3F9AFCEA5"
 				type: "checkmark"
-				title: "Astral Generators"
+				title: "{ftbquests.chapter.astral_generators.quests0.tasks0.title}"
 			}]
 		}
 		{
 			x: -5.0d
 			y: -0.5d
-			subtitle: "The most important machine"
-			description: ["To build multiblocks, you need to make their controllers first and the only way is by using Assembler"]
+			subtitle: "{ftbquests.chapter.astral_generators.quests1.subtitle}"
+			description: ["{ftbquests.chapter.astral_generators.quests1.description0}"]
 			dependencies: ["3A00720E78CC7F3E"]
 			id: "0FB347E806BF046E"
 			tasks: [{
@@ -47,8 +47,8 @@
 		{
 			x: -5.0d
 			y: -2.5d
-			subtitle: "Save your time!"
-			description: ["Using the multiblock projector will help you building multiblocks faster. Right Click to turn on/off and Shift + Right Click to change multiblocks"]
+			subtitle: "{ftbquests.chapter.astral_generators.quests2.subtitle}"
+			description: ["{ftbquests.chapter.astral_generators.quests2.description0}"]
 			dependencies: ["0FB347E806BF046E"]
 			id: "54DB338FD208E618"
 			tasks: [{
@@ -60,19 +60,19 @@
 		{
 			x: -2.0d
 			y: -1.5d
-			description: ["Steam is the best way to produce energy in mid game"]
+			description: ["{ftbquests.chapter.astral_generators.quests3.description0}"]
 			dependencies: ["0FB347E806BF046E"]
 			id: "62A3BA0C8D795E07"
 			tasks: [{
 				id: "37C6A35B9EAD99D7"
 				type: "checkmark"
-				title: "Energy from Steam"
+				title: "{ftbquests.chapter.astral_generators.quests3.tasks0.title}"
 			}]
 		}
 		{
 			x: 0.0d
 			y: -2.5d
-			description: ["You can produce Steam from burnable fuel like coal, wood, etc."]
+			description: ["{ftbquests.chapter.astral_generators.quests4.description0}"]
 			dependencies: ["62A3BA0C8D795E07"]
 			id: "30BA09121190CCED"
 			tasks: [{
@@ -84,7 +84,7 @@
 		{
 			x: 0.0d
 			y: -0.5d
-			description: ["If you have infinite lava, you can also use it to produce Steam"]
+			description: ["{ftbquests.chapter.astral_generators.quests5.description0}"]
 			dependencies: ["62A3BA0C8D795E07"]
 			id: "526B2A5D8974356C"
 			tasks: [{
@@ -96,7 +96,7 @@
 		{
 			x: 2.0d
 			y: -1.5d
-			description: ["When you have Steam, let use it to produce energy"]
+			description: ["{ftbquests.chapter.astral_generators.quests6.description0}"]
 			dependencies: [
 				"526B2A5D8974356C"
 				"30BA09121190CCED"
@@ -131,13 +131,13 @@
 			}
 			x: -5.0d
 			y: 1.0d
-			description: ["The Assembler can export products from the bottom and receive items from the top, left and right."]
+			description: ["{ftbquests.chapter.astral_generators.quests7.description0}"]
 			dependencies: ["0FB347E806BF046E"]
 			id: "53DDEBD8ED8A3891"
 			tasks: [{
 				id: "5DFFAD52749C7E40"
 				type: "checkmark"
-				title: "About Assembler"
+				title: "{ftbquests.chapter.astral_generators.quests7.tasks0.title}"
 			}]
 		}
 	]
