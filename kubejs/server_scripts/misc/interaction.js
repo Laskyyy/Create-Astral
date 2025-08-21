@@ -210,6 +210,66 @@
       },
     },
     {
+      projectile: { item: "createastral:cogwheel_skull" },
+      createAutoJson: {
+        fileName: "cogwheel_skull",
+        reloadTicks: 60,
+        damage: 5,
+        knockback: 0,
+        drag: 1,
+        velocityMultiplier: 0.5,
+        gravityMultiplier: 0.5,
+        sticky: false,
+        soundPitch: 0.5,
+      },
+      particles: {
+        enabled: true,
+        spread: 3,
+        size: 150,
+        speed: 1,
+        count: 50,
+        type: "ae2:matter_cannon_fx",
+        hasColor: false,
+        color: [0.31, 0.7, 0],
+      },
+      explosion: {
+        enabled: false,
+      },
+      AOE: {
+        enabled: true,
+        effectList: [
+          {
+            potionEffect: "minecraft:slowness",
+            potionTime: 5,
+            potionAmplifier: 100,
+            potionHideParticles: true,
+            range: "7",
+          },
+          {
+            potionEffect: "minecraft:mining_fatigue",
+            potionTime: 5,
+            potionAmplifier: 100,
+            potionHideParticles: true,
+            range: "7",
+          },
+          {
+            potionEffect: "minecraft:weakness",
+            potionTime: 5,
+            potionAmplifier: 100,
+            potionHideParticles: true,
+            range: "7",
+          },
+          {
+            potionEffect: "minecraft:jump_boost",
+            potionTime: 5,
+            potionAmplifier: 200,
+            potionHideParticles: true,
+            range: "7",
+          },
+        ],
+      },
+    },
+    {
       projectile: { item: "createbigcannons:autocannon_cartridge" },
       particles: {
         enabled: false,
