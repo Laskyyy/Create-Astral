@@ -1,9 +1,9 @@
 {
-    "replace": "true",
+    "replace": true,
     "default": [
-      {
-        "name": "tconstruct:crumbling",
-        "level": 1
-      }
+        {
+            "name": "tconstruct:crumbling",
+            "level": 1
+        }
     ]
-  }
+}

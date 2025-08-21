@@ -2,37 +2,49 @@ type = user_variables
 
 variable {
   name = viewed_changelog_2.1
-  value = false
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = credits_screen_visible
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = changelog_visible
+  value = 
+  reset_on_launch = true
+}
+
+variable {
+  name = viewed_changelog_2.1.2
+  value = 0
   reset_on_launch = false
 }
 
 variable {
   name = viewed_changelog_2.1.1
-  value = false
-  reset_on_launch = false
-}
-
-variable {
-  name = viewed_changelog_2.1.2
-  value = false
-  reset_on_launch = false
-}
-
-variable {
-  name = viewed_changelog_2.1.3
-  value = false
+  value = 0
   reset_on_launch = false
 }
 
 variable {
   name = viewed_changelog_2.1.4
-  value = false
+  value = 0
+  reset_on_launch = false
+}
+
+variable {
+  name = viewed_changelog_2.1.3
+  value = 0
   reset_on_launch = false
 }
 
 variable {
   name = version
-  value = EXPERIMENTAL
+  value = EXPERIMENTAL [v2.1.5]
   reset_on_launch = false
 }
 

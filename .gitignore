@@ -14,3 +14,8 @@ kubejs/exported
 
 # IntelliJ project files
 .idea
+
+# Direnv
+.direnv
+packwiz.exe
+packwiz

@@ -1,84 +1,94 @@
-onEvent("recipes", (event) => {
-    [
-        // "stack64" allows 64 of an item to be transmuted
-        {
-            input: "tconstruct:earth_slime_grass_seeds",
-            output: "tconstruct:ender_slime_grass_seeds",
-            stack64: true,
+(function astralAdditionsShimmerTransmutationRecipes() {
+  onEvent("recipes", (event) => {
+    /**
+     * @typedef ShimmerTransmutationRecipe
+     * @property {Special.Item} input
+     * @property {Special.Item} output
+     * @property {boolean} stack64 Allows 64 of an item to be transmuted.
+     */
+
+    /** @type {ShimmerTransmutationRecipe[]} */
+    const shimmerTransmutationRecipes = [
+      {
+        input: "tconstruct:earth_slime_grass_seeds",
+        output: "tconstruct:ender_slime_grass_seeds",
+        stack64: true,
+      },
+      {
+        input: "minecraft:sea_lantern",
+        output: "minecraft:glowstone",
+        stack64: true,
+      },
+      {
+        input: "techreborn:lead_ingot",
+        output: "minecraft:glowstone",
+        stack64: true,
+      },
+      {
+        input: "minecraft:green_dye",
+        output: "minecraft:red_dye",
+        stack64: true,
+      },
+      {
+        input: "minecraft:red_dye",
+        output: "minecraft:green_dye",
+        stack64: true,
+      },
+      {
+        input: "minecraft:yellow_dye",
+        output: "minecraft:blue_dye",
+        stack64: true,
+      },
+      {
+        input: "minecraft:blue_dye",
+        output: "minecraft:yellow_dye",
+        stack64: true,
+      },
+      {
+        input: "minecraft:green_dye",
+        output: "minecraft:red_dye",
+        stack64: true,
+      },
+      {
+        input: "minecraft:lily_of_the_valley",
+        output: "astraladditions:shimmer_lily",
+        stack64: true,
+      },
+      {
+        input: "astralfoods:chocolate_ice_cream",
+        output: "astralfoods:ambrosia",
+        stack64: false,
+      },
+    ];
+    shimmerTransmutationRecipes.forEach((recipe) => {
+      event.custom({
+        type: "astraladditions:shimmer_transmute",
+        input: {
+          item: recipe.input,
+          count: 1,
         },
-        {
-            input: "minecraft:sea_lantern",
-            output: "minecraft:glowstone",
-            stack64: true,
-        },
-        {
-            input: "techreborn:lead_ingot",
-            output: "minecraft:glowstone",
-            stack64: true,
-        },
-        {
-            input: "minecraft:green_dye",
-            output: "minecraft:red_dye",
-            stack64: true,
-        },
-        {
-            input: "minecraft:red_dye",
-            output: "minecraft:green_dye",
-            stack64: true,
-        },
-        {
-            input: "minecraft:yellow_dye",
-            output: "minecraft:blue_dye",
-            stack64: true,
-        },
-        {
-            input: "minecraft:blue_dye",
-            output: "minecraft:yellow_dye",
-            stack64: true,
-        },
-        {
-            input: "minecraft:green_dye",
-            output: "minecraft:red_dye",
-            stack64: true,
-        },
-        {
-            input: "minecraft:lily_of_the_valley",
-            output: "astraladditions:shimmer_lily",
-            stack64: true,
-        },
-        {
-            input: "astralfoods:chocolate_ice_cream",
-            output: "astralfoods:ambrosia",
-            stack64: false,
-        },
-    ].forEach((recipe) => {
+        output: [
+          {
+            item: recipe.output,
+            count: 1,
+          },
+        ],
+      });
+      if (recipe.stack64) {
         event.custom({
-            type: "astraladditions:shimmer_transmute",
-            input: {
-                item: recipe.input,
-                count: 1,
+          type: "astraladditions:shimmer_transmute",
+          input: {
+            item: recipe.input,
+            count: 64,
+          },
+          output: [
+            {
+              item: recipe.output,
+              count: 64,
             },
-            output: [
-                {
-                    item: recipe.output,
-                    count: 1,
-                },
-            ],
+          ],
         });
-        if (recipe.stack64) {
-            event.custom({
-                type: "astraladditions:shimmer_transmute",
-                input: {
-                    item: recipe.input,
-                    count: 64,
-                },
-                output: [
-                    {
-                        item: recipe.output,
-                        count: 64,
-                    },
-                ],
-            });
-        }
+      }
     });
-});
+  });
+})();

@@ -1,52 +1,68 @@
-onEvent("recipes", (event) => {
+(function minecraftSmithingRecipes() {
+  onEvent("recipes", (event) => {
     storageUnitTiers(event);
     radiantUpgrades(event);
 
-    [
-        // [Primary Input, Material Input, Output]
-        ["minecraft:copper_ingot", "techreborn:tin_ingot", "createastral:bronze_ingot"],
-        ["techreborn:tin_ingot", "minecraft:copper_ingot", "createastral:bronze_ingot"],
-        ["farmersdelight:skillet", "minecraft:water_bucket", "farmersdelight:cooking_pot"],
-        ["reinfchest:diamond_chest", "minecraft:netherite_ingot", "reinfchest:netherite_chest"],
-    ].forEach((recipe) => {
-        event.smithing(recipe[2], recipe[0], recipe[1]);
-    });
-});
+    /**
+     * @typedef SmithingRecipe
+     * @property {Internal.IngredientJS_} base
+     * @property {Internal.IngredientJS_} addition
+     * @property {Internal.ItemStackJS_} output
+     */
 
-function storageUnitTiers(event) {
+    /** @type {SmithingRecipe[]} */
+    const smithingRecipes = [
+      // [Primary Input, Material Input, Output]
+      { base: "minecraft:copper_ingot", addition: "techreborn:tin_ingot", output: "createastral:bronze_ingot" },
+      { base: "techreborn:tin_ingot", addition: "minecraft:copper_ingot", output: "createastral:bronze_ingot" },
+      { base: "farmersdelight:skillet", addition: "minecraft:water_bucket", output: "farmersdelight:cooking_pot" },
+      { base: "reinfchest:diamond_chest", addition: "minecraft:netherite_ingot", output: "reinfchest:netherite_chest" },
+    ];
+    smithingRecipes.forEach((recipe) => {
+      event.smithing(recipe.output, recipe.base, recipe.addition);
+    });
+  });
+  /** @param {Internal.RecipeEventJS} event */
+  function storageUnitTiers(event) {
     // TR units
     event.smithing("techreborn:crude_storage_unit", "techreborn:storage_buffer", "createastral:t1_upgrade");
 
-    // prefix, tier
-    [
-        ["basic", 2],
-        ["advanced", 3],
-        ["industrial", 4],
-        ["quantum", 6],
-    ].forEach((arr, index) => {
-        const prefix = arr[0];
-        const tier = arr[1];
-        event.smithing(
-            `techreborn:${prefix}_storage_unit`,
-            "#createastral:storage_unit_" + index,
-            `createastral:t${tier}_upgrade`
-        );
-        event.smithing(
-            `techreborn:${prefix}_tank_unit`,
-            "#createastral:tank_unit_" + index,
-            `createastral:t${tier}_upgrade`
-        );
+    /**
+     * @typedef StorageUnit
+     * @property {string} prefix
+     * @property {number} tier
+     * @property {number} index
+     */
+
+    /** @satisfies {StorageUnit[]} */
+    const storageUnits = /** @type {const} */ ([
+      { prefix: "basic", tier: 2, index: 1 },
+      { prefix: "advanced", tier: 3, index: 2 },
+      { prefix: "industrial", tier: 4, index: 3 },
+      { prefix: "quantum", tier: 6, index: 4 },
+    ]);
+    storageUnits.forEach((unit) => {
+      event.smithing(
+        `techreborn:${unit.prefix}_storage_unit`,
+        `#createastral:storage_unit_${unit.index}`,
+        `createastral:t${unit.tier}_upgrade`
+      );
+      event.smithing(
+        `techreborn:${unit.prefix}_tank_unit`,
+        `#createastral:tank_unit_${unit.index}`,
+        `createastral:t${unit.tier}_upgrade`
+      );
     });
-}
-
-function radiantUpgrades(event) {
-    const armour = ["helmet", "chestplate", "leggings", "boots"];
-    const tools = ["sword", "axe", "shovel", "pickaxe"];
-
-    for (const type of armour) {
-        event.smithing(`createastral:radiant_${type}`, `createastral:steel_${type}`, "create:refined_radiance");
+  }
+  /** @param {Internal.RecipeEventJS} event */
+  function radiantUpgrades(event) {
+    const armor = /** @type {const} */ (["helmet", "chestplate", "leggings", "boots"]);
+    const tools = /** @type {const} */ (["sword", "axe", "shovel", "pickaxe"]);
+    for (const type of armor) {
+      event.smithing(`createastral:radiant_${type}`, `createastral:steel_${type}`, "create:refined_radiance");
     }
     for (const type of tools) {
-        event.smithing(`createastral:radiant_${type}`, `minecraft:netherite_${type}`, "create:refined_radiance");
+      event.smithing(`createastral:radiant_${type}`, `minecraft:netherite_${type}`, "create:refined_radiance");
     }
-}
+  }
+})();

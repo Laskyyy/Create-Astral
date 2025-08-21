@@ -1,46 +1,44 @@
 {
-  "replace": "true",
-  "parts": [
-    {
-      "item": "tconstruct:pick_head"
-    },
-    {
-      "item": "tconstruct:tool_handle"
-    },
-    {
-      "item": "tconstruct:tool_binding"
-    }
-  ],
-  "stats": {
-    "base": {
-      "tconstruct:attack_damage": 0.5,
-      "tconstruct:attack_speed": 1.2
-    }
-  },
-  "slots": {
-    "upgrades": 3,
-    "abilities": 1
-  },
-  "actions": [
-    "pickaxe_dig"
-  ],
-  "harvest": {
-    "logic": {
-      "type": "tconstruct:effective_tag",
-      "effective": "minecraft:mineable/pickaxe"
-    },
-    "aoe": {
-      "type": "tconstruct:box",
-      "bonus": {},
-      "expansions": [
+    "replace": true,
+    "parts": [
         {
-          "depth": 2
+            "item": "tconstruct:pick_head"
         },
         {
-          "height": 1
+            "item": "tconstruct:tool_handle"
+        },
+        {
+            "item": "tconstruct:tool_binding"
         }
-      ],
-      "expansion_direction": "tconstruct:pitch"
+    ],
+    "stats": {
+        "base": {
+            "tconstruct:attack_damage": 0.5,
+            "tconstruct:attack_speed": 1.2
+        }
+    },
+    "slots": {
+        "upgrades": 3,
+        "abilities": 1
+    },
+    "actions": ["pickaxe_dig"],
+    "harvest": {
+        "logic": {
+            "type": "tconstruct:effective_tag",
+            "effective": "minecraft:mineable/pickaxe"
+        },
+        "aoe": {
+            "type": "tconstruct:box",
+            "bonus": {},
+            "expansions": [
+                {
+                    "depth": 2
+                },
+                {
+                    "height": 1
+                }
+            ],
+            "expansion_direction": "tconstruct:pitch"
+        }
     }
-  }
 }

@@ -524,6 +524,7 @@
 			x: 10.5d
 			y: 0.5d
 			subtitle: "{ftbquests.chapter.astral_signals.quests20.subtitle}"
+			description: ["{ftbquests.chapter.astral_signals.quests20.description}"]
 			dependencies: ["04F638504B6D607C"]
 			id: "715E926DF4DED51A"
 			tasks: [{
@@ -544,6 +545,7 @@
 			x: 11.0d
 			y: 1.5d
 			subtitle: "{ftbquests.chapter.astral_signals.quests21.subtitle}"
+			description: ["{ftbquests.chapter.astral_signals.quests20.description}"]
 			dependencies: ["3B9A0AB1F6BE839D"]
 			id: "0DB6A844CCA38CD5"
 			tasks: [{
@@ -569,6 +571,7 @@
 			x: 11.5d
 			y: 2.5d
 			subtitle: "{ftbquests.chapter.astral_signals.quests22.subtitle}"
+			description: ["{ftbquests.chapter.astral_signals.quests20.description}"]
 			dependencies: ["3392473AE31BBF22"]
 			hide: true
 			id: "6233CD80C11EFA15"

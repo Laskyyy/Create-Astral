@@ -858,7 +858,6 @@
 			y: 16.25d
 			shape: "diamond"
 			description: [""]
-			min_required_dependencies: 2
 			dependencies: ["737625E7DFCB0382"]
 			size: 2.5d
 			id: "1D0E2A46A37501CB"
@@ -3521,6 +3520,7 @@
 							fluid: "kubejs:hellfire"
 						}
 					}
+					match_nbt: true
 				}
 				{
 					id: "1378FAD80CFDBE63"
@@ -3552,6 +3552,7 @@
 							fluid: "techreborn:biofuel"
 						}
 					}
+					match_nbt: true
 				}
 				{
 					id: "0574E3D15324A3E8"
@@ -3583,6 +3584,7 @@
 							fluid: "tconstruct:molten_uranium"
 						}
 					}
+					match_nbt: true
 				}
 				{
 					id: "424372AAFEB706AD"
@@ -3616,6 +3618,7 @@
 							fluid: "techreborn:oil"
 						}
 					}
+					match_nbt: true
 				}
 				{
 					id: "7F8D3D68294CB2A5"
@@ -3654,6 +3657,7 @@
 							fluid: "minecraft:water"
 						}
 					}
+					match_nbt: true
 				}
 				{
 					id: "67BD8063EC97ABD1"
@@ -3693,6 +3697,7 @@
 							fluid: "techreborn:mercury"
 						}
 					}
+					match_nbt: true
 				}
 				{
 					id: "254C68EE3D137F2F"

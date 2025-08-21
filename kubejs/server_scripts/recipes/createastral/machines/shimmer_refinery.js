@@ -1,11 +1,14 @@
-onEvent("recipes", (event) => {
-    const shimmerRefineryStructure = [
-        ["ee ee", "ee ee", "  m  ", "ee ee", "ee ee"],
-        ["dd dd", "dd dd", "  a  ", "dd dd", "dd dd"],
-        ["dd dd", "dd dd", "  a  ", "dd dd", "dd dd"],
-        ["ddadd", "ddbdd", "abbba", "ddbdd", "ddadd"],
-        ["     ", "  a  ", " aca ", "  a  ", "     "],
-    ];
+(function shimmerRefineryRecipes() {
+  const { BUCKET, GEM_BLOCK, SLIMEBALL, INGOT, GEM, NUGGET, mB } = global.fluids;
+
+  onEvent("recipes", (event) => {
+    const shimmerRefineryStructure = /** @type {const} */ ([
+      ["ee ee", "ee ee", "  m  ", "ee ee", "ee ee"],
+      ["dd dd", "dd dd", "  a  ", "dd dd", "dd dd"],
+      ["dd dd", "dd dd", "  a  ", "dd dd", "dd dd"],
+      ["ddadd", "ddbdd", "abbba", "ddbdd", "ddadd"],
+      ["     ", "  a  ", " aca ", "  a  ", "     "],
+    ]);
 
     /*
      * Aim of this script is to fix the blaze burner jank caused by fluid burners and superheated burners
@@ -25,81 +28,91 @@ onEvent("recipes", (event) => {
      *
      * All fields (burnersAllowed, time, itemInput, fluidInput, energy, and itemOutput) need to be filled to make the recipes work.
      * Any extra recipes can go outside the forEach loop.
-     *
-     * burnersAllowed: [array],
-     * time: integer,
-     * itemInput: ["item", count],
-     * fluidInput: ["fluid", amount],
-     * energy: integer,
-     * itemOutput: ["item", count]
      */
 
-    [
-        {
-            burnersAllowed: [
-                "create:blaze_burner{fuelLevel:2}",
-                "createaddition:liquid_blaze_burner{fuelLevel:2}",
-                "create:blaze_burner{isCreative:1b}",
-                "createaddition:liquid_blaze_burner{isCreative:1b}",
-            ],
-            time: 125,
-            fluidInput: ["kubejs:shimmer", BUCKET],
-            itemInput: ["createastral:refining_agent", 1],
-            energy: 20000,
-            itemOutput: ["techreborn:uu_matter", 1],
-        },
-    ].forEach((recipe) => {
-        event.custom({
-            type: "custommachinery:custom_machine",
-            machine: "createastral:shimmer_refinery",
-            time: recipe.time,
-            requirements: [
-                {
-                    type: "custommachinery:structure",
-                    keys: {
-                        a: "dbe:steel_frame",
-                        b: "techreborn:advanced_machine_casing",
-                        c: "techreborn:industrial_machine_frame",
-                        d: "yttr:magtank",
-                        e: "create:distillation_tower/blaze_burners",
-                    },
-                    pattern: shimmerRefineryStructure,
-                },
-                {
-                    type: "custommachinery:block",
-                    mode: "input",
-                    action: "check",
-                    pos: [-2, 0, -2, 2, 0, 2],
-                    filter: recipe.burnersAllowed,
-                    whitelist: true,
-                    amount: 16,
-                    comparator: "==",
-                },
-                {
-                    type: "custommachinery:fluid",
-                    fluid: recipe.fluidInput[0],
-                    amount: recipe.fluidInput[1],
-                    mode: "input",
-                },
-                {
-                    type: "custommachinery:item",
-                    mode: "input",
-                    item: recipe.itemInput[0],
-                    amount: recipe.itemInput[1],
-                },
+    /** @typedef {"create:blaze_burner" | "createaddition:liquid_blaze_burner"} Burners */
+    /** @typedef {"fuelLevel:1" | "isCreative:1b"} HeatedNBT */
+    /** @typedef {"fuelLevel:2" | "isCreative:1b"} SuperheatedNBT */
+    /** @typedef {Burners | `${Burners}{${HeatedNBT | SuperheatedNBT}}`} Burner */
 
-                {
-                    type: "custommachinery:energy",
-                    mode: "input",
-                    amount: recipe.energy,
-                },
-                {
-                    type: "custommachinery:item",
-                    item: recipe.itemOutput[0],
-                    amount: recipe.itemOutput[1],
-                    mode: "output",
-                },
-            ],
-        });
+    /**
+     * @typedef ShimmerRefineryRecipe
+     * @property {Burner[]} burnersAllowed
+     * @property {number} time
+     * @property {{ item: Special.Item; count: number }} itemInput
+     * @property {{ fluid: Special.Fluid; amount: number }} fluidInput
+     * @property {number} energy
+     * @property {{ item: Special.Item; count: number }} itemOutput
+     */
+
+    /** @type {ShimmerRefineryRecipe[]} */
+    const shimmerRefineryRecipes = [
+      {
+        burnersAllowed: [
+          "create:blaze_burner{fuelLevel:2}",
+          "createaddition:liquid_blaze_burner{fuelLevel:2}",
+          "create:blaze_burner{isCreative:1b}",
+          "createaddition:liquid_blaze_burner{isCreative:1b}",
+        ],
+        time: 125,
+        fluidInput: { fluid: "kubejs:shimmer", amount: BUCKET },
+        itemInput: { item: "createastral:refining_agent", count: 1 },
+        energy: 20000,
+        itemOutput: { item: "techreborn:uu_matter", count: 1 },
+      },
+    ];
+    shimmerRefineryRecipes.forEach((recipe) => {
+      event.custom({
+        type: "custommachinery:custom_machine",
+        machine: "createastral:shimmer_refinery",
+        time: recipe.time,
+        requirements: [
+          {
+            type: "custommachinery:structure",
+            keys: {
+              a: "dbe:steel_frame",
+              b: "techreborn:advanced_machine_casing",
+              c: "techreborn:industrial_machine_frame",
+              d: "yttr:magtank",
+              e: "create:distillation_tower/blaze_burners",
+            },
+            pattern: shimmerRefineryStructure,
+          },
+          {
+            type: "custommachinery:block",
+            mode: "input",
+            action: "check",
+            pos: [-2, 0, -2, 2, 0, 2],
+            filter: recipe.burnersAllowed,
+            whitelist: true,
+            amount: 16,
+            comparator: "==",
+          },
+          {
+            type: "custommachinery:fluid",
+            fluid: recipe.fluidInput.fluid,
+            amount: recipe.fluidInput.amount,
+            mode: "input",
+          },
+          {
+            type: "custommachinery:item",
+            mode: "input",
+            item: recipe.itemInput.item,
+            amount: recipe.itemInput.count,
+          },
+          {
+            type: "custommachinery:energy",
+            mode: "input",
+            amount: recipe.energy,
+          },
+          {
+            type: "custommachinery:item",
+            item: recipe.itemOutput.item,
+            amount: recipe.itemOutput.count,
+            mode: "output",
+          },
+        ],
+      });
     });
-});
+  });
+})();
