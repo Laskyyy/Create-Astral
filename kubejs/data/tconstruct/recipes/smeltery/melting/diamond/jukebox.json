@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "minecraft:jukebox"
+  },
+  "result": {
+    "fluid": "tconstruct:molten_diamond",
+    "amount": 8100
+  },
+  "temperature": 800,
+  "time": 75
+}

@@ -13,11 +13,11 @@
         output: "minecraft:nautilus_shell",
       },
       {
-        input: Item.of("techreborn:coal_dust", 2),
+        input: "techreborn:charcoal_dust",
         output: "techreborn:coal_dust",
       },
       {
-        input: Item.of("minecraft:charcoal", 2),
+        input: "minecraft:charcoal",
         output: "minecraft:coal",
       },
       {

@@ -577,15 +577,15 @@
       });
     });
     /** @satisfies {string[]} */
-    const AD_ASTRA_VENUS_ORES = /** @type {const} */ (["coal", "gold", "diamond", "calorite"]);
-    AD_ASTRA_VENUS_ORES.forEach((adAstraVenusOre) => {
-      ores.push({
-        ore: adAstraVenusOre,
-        name: `ad_astra:venus_${adAstraVenusOre}_ore`,
-        block: "ad_astra:venus_cobblestone",
-        bonus: 1,
-      });
-    });
+    //const AD_ASTRA_VENUS_ORES = /** @type {const} */ (["coal", "gold", "diamond", "calorite"]);
+    //AD_ASTRA_VENUS_ORES.forEach((adAstraVenusOre) => {
+    //  ores.push({
+    //    ore: adAstraVenusOre,
+    //    name: `ad_astra:venus_${adAstraVenusOre}_ore`,
+    //    block: "ad_astra:venus_cobblestone",
+    //    bonus: 1,
+    //  }); Removed as we don't have venus ores (apart from the retextured gold ore)
+    //});
     /** @satisfies {string[]} */
     const AD_ASTRA_GLACIO_ORES = /** @type {const} */ (["ice_shard", "coal", "copper", "iron", "lapis"]);
     AD_ASTRA_GLACIO_ORES.forEach((adAstraGlacioOre) => {
@@ -621,6 +621,15 @@
         Item.of("ad_astra:mercury_cobblestone").withChance(BLOCK_CHANCE),
       ],
       "techreborn:deepslate_galena_ore"
+    );
+    event.recipes.createCrushing(
+      [
+        Item.of("minecraft:raw_gold", 2),
+        Item.of("minecraft:raw_gold").withChance(0.75),
+        Item.of("create:experience_nugget").withChance(0.9),
+        Item.of("ad_astra:mars_cobblestone").withChance(BLOCK_CHANCE),
+      ],
+      "ad_astra:venus_gold_ore"
     );
     // LakyCrushingRecipes from resourcegen.js
     /**

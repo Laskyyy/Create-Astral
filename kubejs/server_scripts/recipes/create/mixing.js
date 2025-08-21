@@ -1145,7 +1145,7 @@
         time: 50,
       },
       {
-        output: [{ fluid: "rechreborn:oil", amount: 250 * mB }],
+        output: [{ fluid: "techreborn:oil", amount: 250 * mB }],
         input: [{ fluid: "techreborn:sulfur", amount: 500 * mB }, Item.of("techreborn:coal_dust", 3)],
         time: 300,
       },

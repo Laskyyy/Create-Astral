@@ -33,12 +33,12 @@
       },
       {
         fluid: "kubejs:molten_radiance",
-        temp: 425,
+        temp: 2000,
         toolMaterial: "tconstruct:radiant",
       },
       {
         fluid: "kubejs:molten_shadowsteel",
-        temp: 425,
+        temp: 2000,
         toolMaterial: "tconstruct:shadow",
       },
     ];
