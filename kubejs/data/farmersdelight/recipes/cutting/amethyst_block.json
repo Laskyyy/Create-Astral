@@ -1,0 +1,19 @@
+{
+  "replace": true,
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:amethyst_block"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool",
+    "tag": "c:tools/pickaxes"
+  },
+  "result": [
+    {
+      "item": "minecraft:amethyst_shard",
+      "count": 4
+    }
+  ]
+}

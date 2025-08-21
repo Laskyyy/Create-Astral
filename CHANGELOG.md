@@ -15,7 +15,73 @@ Release dates attached to version numbers are in the format `YYYY/MM/DD` as per 
 
 Please note that patch notes for versions 2.1.3 and lower are currently lacking in full information, or may even be entirely inaccurate, due to poor documentation of changes before implementation of the changelog. If you notice anything that is incorrect or missing, please open a Pull Request with your fixes.
 
-## 2.1.4 [Unreleased]
+## 2.1.4c [HOTFIX, Current Release] - 2025/08/18
+
+### CHANGES
+
+#### Gameplay-changing
+
+- Removed the base recipe for Bioethanol from Create: Crafts and Additions.
+
+#### Bug patches
+
+- Fixed missing Sulphur recipe for automating Oil.
+- Fixed missing recipe for melting Slime Logs into Slime.
+- Fixed Venus Gold Ore appearing on Mars, retexturing and renaming it to Mars Gold Ore.
+- Fixed inconsistency in the name of Diamond Grit ~~Sandpaper~~ Sand Paper to match the other Sand Papers.
+- Fixed Ostrum and Calorite melting at the wrong temperatures.
+- Fixed missing name for Mercury Calorite Ore.
+- Fixed a lot of ores being mineable with the wrong material level.
+- Fixed the quest for pressing Seeds into Seed Oil incorrectly saying that the basin needs to be heated.
+- Fixed Chromatic Compound not stacking properly.
+- Fixed melting yields of metals that were changed in 2.1.4a to give the correct value of 12 nuggets instead of 13.
+
+## 2.1.4b [HOTFIX] - 2025/08/11
+
+### CHANGES
+
+#### Gameplay-changing
+
+- Removed recipes for the Hephaestus Mushroom Stew fluid and replaced them with the KubeJS Mushroom Stew fluid.
+- Made the Synthetic Redstone Crystal recipe shapeless.
+
+#### Bug patches
+
+- Fixed the Desh Rocket being uncraftable.
+- Fixed the Industrial Centrifuge being uncraftable.
+- Fixed the Yttr Suit Station being uncraftable.
+- Fixed a conflicting recipe for Sturdy Sheets caused by the base Create recipe still existing.
+- Fixed the Lead-lined Space Suit recipe requring the wrong armour set to craft (it was using Netherite instead of Sturdy).
+- Fixed Cherry, Glacian, Old Growth Cherry, and Rubber stripped logs and wood not being valid in making Andesite Casing.
+- Fixed the Tech Reborn Grinder not having all the recipes it should have had.
+- Fixed Tech Reborn Storage Units and Tanks not being upgradeable.
+- Fixed Oil not being craftable.
+- Fixed a variety of broken recipes with Traveler's Backpacks.
+- Fixed the Chapter 3 haunting quest requiring Blackstone to complete (Blackstone is no longer obtainable via haunting).
+- Fixed a variety of incorrect Hephaestus material melting temperature values.
+- Fixed a KubeJS error being thrown every time a Foundry Controller was right clicked.
+- Fixed storage upgrades applied to Drawers from Extended Drawers showing a missing texture on the front face of the block.
+
+## 2.1.4a [HOTFIX] - 2025/08/09
+
+### CHANGES
+
+#### Gameplay-changing
+
+- Buffed Melter primary output of some ore blocks (obtained via silk touch) to give 2 ingots of the material instead of 13 nuggets.
+- Buffed Foundry byproduct of some ore blocks (obtained via silk touch) to give 6 nuggets instead of 4⅓ nuggets.
+- Nerfed Foundry byproduct of some raw ores to give 3¼ nuggets (3250 droplets), and raw ore storage blocks to give 3¼ ingots, to get rid of the horrible 4⅓ nugget value (rounds to 4333 droplets).
+
+#### Bug patches
+
+- Fixed several raw ores melting into a lower yield than a Furnace when placed in a Melter.
+- Fixed a crash caused when looking at certain Cutting Board recipes.
+- Fixed a conflicting Dripstone Block recipe in the Millstone producing Gold Nuggets when it should produce Clay.
+- Fixed missing recipe for haunting charcoal dust into charcoal.
+- Fixed haunting recipe for coal from charcoal requiring two charcoal instead of one.
+- Fixed a missing recipe for coal dust in the Grinder.
+
+## 2.1.4 - 2025/08/08
 
 **IMPORTANT:**
 
@@ -195,7 +261,9 @@ This update comes with a completely overhauled file structure for Astral's own c
 
 - Removed the packwiz binaries from the repository because now CONTRIBUTING.md tells you how to get the latest version of them.
 
-## 2.1.3 [Current Release] - 2025/01/05
+---
+
+## 2.1.3 - 2025/01/05
 
 ### ADDITIONS
 
@@ -326,6 +394,8 @@ This update comes with a completely overhauled file structure for Astral's own c
 
 > _Nothing to see here yet..._
 
+---
+
 ## 2.1.2 - 2024/10/31
 
 ### ADDITIONS
@@ -419,6 +489,8 @@ With this patch, the questbook now has been fully internationalised, adding loca
 
 > _Nothing to see here yet..._
 
+---
+
 ## 2.1.1 - 2024/10/16
 
 ### ADDITIONS
@@ -499,6 +571,8 @@ With this patch, the questbook now has been fully internationalised, adding loca
 #### Behind-the-scenes
 
 > _Nothing to see here yet..._
+
+---
 
 ## 2.1 - 2024/10/08
 

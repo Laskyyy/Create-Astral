@@ -7,7 +7,7 @@
      * @property {string} recipeID
      */
 
-    /** 
+    /**
      * Manual only recipes - can't be automated with Create's Mechanical Mixers.
      * @type {ManualOnlyRecipe[]}
      */
@@ -168,6 +168,10 @@
       {
         input: ["create:dough", "minecraft:cyan_dye"],
         output: "tconstruct:sky_slime_ball",
+      },
+      {
+        input: [Item.of("minecraft:red_dye", 2), Ingredient.of("#c:glass", 2)],
+        output: "techreborn:synthetic_redstone_crystal",
       },
     ];
     shapelessRecipes.forEach((recipe) => {

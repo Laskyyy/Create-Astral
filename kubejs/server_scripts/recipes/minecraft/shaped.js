@@ -619,6 +619,15 @@
         },
       },
       {
+        output: "yttr:suit_station",
+        pattern: ["YYY", "CCC", "YFY"],
+        key: {
+          Y: "#yttr:substituted_yttrium",
+          C: "create:chute",
+          F: "techreborn:industrial_blast_furnace",
+        },
+      },
+      {
         output: "createastral:promethium_atomic_battery",
         pattern: ["CAC", "BDB", "CEC"],
         key: {
@@ -837,14 +846,6 @@
         },
       },
       {
-        output: "techreborn:synthetic_redstone_crystal",
-        pattern: ["AB", "BA"],
-        key: {
-          A: "minecraft:red_dye",
-          B: "#c:glass",
-        },
-      },
-      {
         output: "createastral:synthetic_slime_block",
         pattern: ["SSS", "SSS", "SSS"],
         key: {
@@ -1012,6 +1013,18 @@
           C: "create:mechanical_harvester",
           D: "create:mechanical_bearing",
           E: "techreborn:basic_machine_frame",
+        },
+      },
+      {
+        output: "techreborn:industrial_centrifuge",
+        pattern: ["ABC", "DED", "FBF"],
+        key: {
+          A: "techreborn:lead_plate",
+          B: "techreborn:extractor",
+          C: "techreborn:electronic_circuit",
+          D: "techreborn:advanced_machine_frame",
+          E: "create:mechanical_bearing",
+          F: "create:rotation_speed_controller",
         },
       },
       {
@@ -1242,6 +1255,44 @@
           A: "yttr:yttrium_ingot",
           B: "minecraft:amethyst_shard",
           C: "yttr:lamp",
+        },
+      },
+      {
+        output: "ad_astra:netherite_space_helmet",
+        pattern: ["OSO", "LGL"],
+        key: {
+          O: "ad_astra:ostrum_plate",
+          L: "techreborn:lead_plate",
+          G: "minecraft:orange_stained_glass_pane",
+          S: "createastral:sturdy_helmet",
+        },
+      },
+      {
+        output: "ad_astra:netherite_space_suit",
+        pattern: ["O O", "ALA", "LSL"],
+        key: {
+          A: "createastral:shimmer_amplifier",
+          O: "ad_astra:ostrum_plate",
+          L: "techreborn:lead_plate",
+          S: "createastral:sturdy_chestplate",
+        },
+      },
+      {
+        output: "ad_astra:netherite_space_pants",
+        pattern: ["OSO", "O O", "L L"],
+        key: {
+          O: "ad_astra:ostrum_plate",
+          L: "techreborn:lead_plate",
+          S: "createastral:sturdy_leggings",
+        },
+      },
+      {
+        output: "ad_astra:netherite_space_boots",
+        pattern: ["OSO", "L L"],
+        key: {
+          O: "ad_astra:ostrum_plate",
+          L: "techreborn:lead_plate",
+          S: "createastral:sturdy_boots",
         },
       },
       {

@@ -110,7 +110,7 @@
         cast: { item: "ad_astra:moon_stone", consumed: true },
       },
       {
-        fluidInput: { fluid: "tconstruct:mushroom_stew", amount: INGOT * 1.5 },
+        fluidInput: { fluid: "kubejs:mushroom_stew_fluid", amount: INGOT * 1.5 },
         result: "minecraft:shroomlight",
         coolingTime: 100,
         cast: { item: "minecraft:glowstone", consumed: true },
@@ -204,6 +204,12 @@
         fluidInput: { fluid: "tconstruct:ichor", amount: BUCKET },
         result: "tconstruct:ichor_congealed_slime",
         coolingTime: 92,
+      },
+      {
+        fluidInput: { fluid: "kubejs:mushroom_stew_fluid", amount: 250 * mB },
+        result: "minecraft:shroomlight",
+        coolingTime: 100,
+        cast: { item: "minecraft:glowstone", consumed: true },
       },
     ];
     castingBasinRecipes.forEach((recipe) => {
