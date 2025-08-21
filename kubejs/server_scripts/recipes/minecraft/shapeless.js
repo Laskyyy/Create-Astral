@@ -170,8 +170,8 @@
         output: "tconstruct:sky_slime_ball",
       },
       {
-          input: [Item.of("minecraft:red_dye", 2), Ingredient.of("#c:glass", 2)],
-          output: "techreborn:synthetic_redstone_crystal"
+        input: [Item.of("minecraft:red_dye", 2), Ingredient.of("#c:glass", 2)],
+        output: "techreborn:synthetic_redstone_crystal",
       },
     ];
     shapelessRecipes.forEach((recipe) => {

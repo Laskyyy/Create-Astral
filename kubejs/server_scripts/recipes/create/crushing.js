@@ -622,7 +622,7 @@
       ],
       "techreborn:deepslate_galena_ore"
     );
-	event.recipes.createCrushing(
+    event.recipes.createCrushing(
       [
         Item.of("minecraft:raw_gold", 2),
         Item.of("minecraft:raw_gold").withChance(0.75),

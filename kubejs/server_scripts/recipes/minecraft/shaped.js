@@ -609,7 +609,7 @@
           B: "minecraft:stone",
         },
       },
-	  {
+      {
         output: "yttr:suit_station",
         pattern: ["YYY", "CCC", "YFY"],
         key: {

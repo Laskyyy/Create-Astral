@@ -11,7 +11,7 @@
 
     /** @type {CastingTableRecipe[]} */
     const castingTableRecipes = [
-		{
+      {
         fluidInput: { fluid: "kubejs:shimmer", amount: 10 * BUCKET },
         result: "minecraft:saddle",
         coolingTime: 200,
