@@ -2,7 +2,7 @@
   function getPlayerStepHeight(player) {
     const DEFAULT_STEP_HEIGHT = 0.6;
     // Type assertion for now, maybe there's a more type safe way
-    const leggingsNBT = player.legsArmorItem.nbt;
+    const leggingsNBT = player.getLegsArmorItem().toNBT();
     const leggingsTag = leggingsNBT?.tag;
     if (leggingsTag == undefined) return DEFAULT_STEP_HEIGHT;
     const leggingsModifiers = leggingsTag.tic_modifiers;
