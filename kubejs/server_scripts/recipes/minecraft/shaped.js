@@ -586,6 +586,15 @@
         },
       },
       {
+        output: "createastral:cogwheel_skull",
+        pattern: ["A", "B", "C"],
+        key: {
+          A: "minecraft:skeleton_skull",
+          B: "minecraft:clock",
+          C: "create:cogwheel",
+        },
+      },
+      {
         output: "yttr:wasteland_dirt",
         pattern: ["ABA"],
         key: {

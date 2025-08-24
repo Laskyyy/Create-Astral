@@ -41,6 +41,7 @@
       },
     ];
     createastralTooltips.forEach((tooltip) => addLocalizedShiftTooltip(event, tooltip.item, tooltip.tooltip));
+    event.add("createastral:cogwheel_skull", Text.of(Component.translate("tooltip.createastral.cogwheel_skull")).gray());
     event.addAdvanced("createastral:orcane", (item, advanced, text) => {
       if (!event.isShift()) {
         text.add(1, [
