@@ -15,6 +15,68 @@ Release dates attached to version numbers are in the format `YYYY/MM/DD` as per 
 
 Please note that patch notes for versions 2.1.3 and lower are currently lacking in full information, or may even be entirely inaccurate, due to poor documentation of changes before implementation of the changelog. If you notice anything that is incorrect or missing, please open a Pull Request with your fixes.
 
+## 2.1.5 [UNRELEASED]
+
+### ADDITIONS
+
+- The modpack has now been localised for European Spanish (es_es).
+
+#### Mod additions
+
+> _Nothing to see here yet..._
+
+#### Gameplay-changing
+
+> _Nothing to see here yet..._
+
+#### Quality of life
+
+> _Nothing to see here yet..._
+
+#### Behind-the-scenes
+
+> _Nothing to see here yet..._
+
+### CHANGES
+
+#### Major mod updates
+
+> _Nothing to see here yet..._
+
+#### Gameplay-changing
+
+- Custom Potato Cannon projectiles now have some more possible effects when firing and landing, depending on the projectile.
+
+#### Quality of life
+
+> _Nothing to see here yet..._
+
+#### Bug patches
+
+- Fixed the step-up modifier not working after 2.1.4.
+
+#### Minor mod updates
+
+> _Nothing to see here yet..._
+
+#### Behind-the-scenes
+
+> _Nothing to see here yet..._
+
+### REMOVALS
+
+#### Mod removals
+
+> _Nothing to see here yet..._
+
+#### Game-changing
+
+> _Nothing to see here yet..._
+
+#### Behind-the-scenes
+
+> _Nothing to see here yet..._
+
 ## 2.1.4c [HOTFIX, Current Release] - 2025/08/18
 
 ### CHANGES
