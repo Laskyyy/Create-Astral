@@ -1,0 +1,13 @@
+name = "CodeBebeLib"
+filename = "codebebelib-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8605e6e2e002c2cc5a0fbf207427e84ecbbae946"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6482333
+project-id = 1255782

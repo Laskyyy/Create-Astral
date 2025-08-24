@@ -1,0 +1,145 @@
+{
+	id: "1F6ED9C565157A63"
+	group: ""
+	order_index: 12
+	filename: "astral_generators"
+	title: "{ftbquests.chapter.astral_generators.title}"
+	icon: {
+		id: "custommachinery:custom_machine_item"
+		Count: 1b
+		tag: {
+			machine: "astralgenerators:assembler"
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -7.0d
+			y: -0.5d
+			description: ["{ftbquests.chapter.astral_generators.quests0.description0}"]
+			id: "3A00720E78CC7F3E"
+			tasks: [{
+				id: "18F327B3F9AFCEA5"
+				type: "checkmark"
+				title: "{ftbquests.chapter.astral_generators.quests0.tasks0.title}"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -0.5d
+			subtitle: "{ftbquests.chapter.astral_generators.quests1.subtitle}"
+			description: ["{ftbquests.chapter.astral_generators.quests1.description0}"]
+			dependencies: ["3A00720E78CC7F3E"]
+			id: "0FB347E806BF046E"
+			tasks: [{
+				id: "12788DDCBC9A5F64"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "astralgenerators:assembler"
+					}
+				}
+			}]
+		}
+		{
+			x: -5.0d
+			y: -2.5d
+			subtitle: "{ftbquests.chapter.astral_generators.quests2.subtitle}"
+			description: ["{ftbquests.chapter.astral_generators.quests2.description0}"]
+			dependencies: ["0FB347E806BF046E"]
+			id: "54DB338FD208E618"
+			tasks: [{
+				id: "2FB61777E6EFB5AD"
+				type: "item"
+				item: "astralgenerators:multiblock_projector"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.5d
+			description: ["{ftbquests.chapter.astral_generators.quests3.description0}"]
+			dependencies: ["0FB347E806BF046E"]
+			id: "62A3BA0C8D795E07"
+			tasks: [{
+				id: "37C6A35B9EAD99D7"
+				type: "checkmark"
+				title: "{ftbquests.chapter.astral_generators.quests3.tasks0.title}"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.5d
+			description: ["{ftbquests.chapter.astral_generators.quests4.description0}"]
+			dependencies: ["62A3BA0C8D795E07"]
+			id: "30BA09121190CCED"
+			tasks: [{
+				id: "47D70D2C0DED592E"
+				type: "item"
+				item: "astralgenerators:solid_fuel_boiler_controller"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -0.5d
+			description: ["{ftbquests.chapter.astral_generators.quests5.description0}"]
+			dependencies: ["62A3BA0C8D795E07"]
+			id: "526B2A5D8974356C"
+			tasks: [{
+				id: "51DF2CA749C2DEED"
+				type: "item"
+				item: "astralgenerators:liquid_fuel_boiler_controller"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			description: ["{ftbquests.chapter.astral_generators.quests6.description0}"]
+			dependencies: [
+				"526B2A5D8974356C"
+				"30BA09121190CCED"
+			]
+			dependency_requirement: "one_completed"
+			id: "044E88F2927CACC5"
+			tasks: [
+				{
+					id: "0558FB9DFA247861"
+					type: "item"
+					item: "astralgenerators:steam_turbine_controller"
+				}
+				{
+					id: "2466B7F706D50CDD"
+					type: "item"
+					item: "astralgenerators:steam_turbine_casing"
+				}
+				{
+					id: "511A7DF7F94C870F"
+					type: "item"
+					item: "astralgenerators:steam_turbine_vent"
+				}
+			]
+		}
+		{
+			icon: {
+				id: "custommachinery:custom_machine_item"
+				Count: 1b
+				tag: {
+					machine: "astralgenerators:assembler"
+				}
+			}
+			x: -5.0d
+			y: 1.0d
+			description: ["{ftbquests.chapter.astral_generators.quests7.description0}"]
+			dependencies: ["0FB347E806BF046E"]
+			id: "53DDEBD8ED8A3891"
+			tasks: [{
+				id: "5DFFAD52749C7E40"
+				type: "checkmark"
+				title: "{ftbquests.chapter.astral_generators.quests7.tasks0.title}"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
