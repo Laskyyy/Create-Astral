@@ -91,7 +91,8 @@
       .textureAll("createastral:block/blast_side")
       .texture("up", "createastral:block/blast_top")
       .texture("down", "createastral:block/blast_top")
-      .tagBlock("minecraft:mineable/pickaxe");
+      .tagBlock("minecraft:mineable/pickaxe")
+      .displayName("Blast-Resistant Concrete");
     event
       .create("createastral:blast-resistant_concrete_slab", "slab")
       .material("stone")
@@ -100,7 +101,8 @@
       .textureAll("createastral:block/blast_side")
       .texture("up", "createastral:block/blast_top")
       .texture("down", "createastral:block/blast_top")
-      .tagBlock("minecraft:mineable/pickaxe");
+      .tagBlock("minecraft:mineable/pickaxe")
+      .displayName("Blast-Resistant Concrete Slab");
     event
       .create("createastral:blast-resistant_concrete_stairs", "stairs")
       .material("stone")
@@ -109,7 +111,8 @@
       .textureAll("createastral:block/blast_side")
       .texture("up", "createastral:block/blast_top")
       .texture("down", "createastral:block/blast_top")
-      .tagBlock("minecraft:mineable/pickaxe");
+      .tagBlock("minecraft:mineable/pickaxe")
+      .displayName("Blast-Resistant Concrete Stairs");
     event
       .create("createastral:distillery_dummy", "basic")
       .hardness(4)
@@ -215,6 +218,7 @@
       .box(4, 0, 4, 12, 14, 12, true)
       .box(2, 0, 2, 14, 3, 14, true)
       .tagBlock("minecraft:mineable/pickaxe")
+      .tagBlock("minecraft:mineable/axe")
       .requiresTool(true)
       .property(BlockProperties.HORIZONTAL_FACING)
       .placementState(event =>

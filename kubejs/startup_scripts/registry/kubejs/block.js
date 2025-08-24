@@ -19,7 +19,7 @@
       .material("stone")
       .defaultTranslucent()
       .hardness(1)
-      .displayName("Fire Resistant Fragile Sheet Block");
+      .displayName("Fire-Resistant Fragile Sheet Block");
     event
       .create("kubejs:broken_fire_resistant_fragile_sheet_block", "basic")
       .material("stone")
@@ -27,6 +27,6 @@
       .hardness(1)
       .box(0, 0, 0, 16, 8, 16, true)
       .box(2, 8, 2, 14, 12, 14, true)
-      .displayName("Broken Fire Resistant Fragile Sheet Block");
+      .displayName("Broken Fire-Resistant Fragile Sheet Block");
   });
 })();

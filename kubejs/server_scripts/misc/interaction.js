@@ -230,7 +230,6 @@
         count: 50,
         type: "ae2:matter_cannon_fx",
         hasColor: false,
-        color: [0.31, 0.7, 0],
       },
       explosion: {
         enabled: false,
