@@ -188,6 +188,8 @@
         enabled: true,
         strength: 8,
         damageTerrain: true,
+        causesFire: false,
+        silent: true,
       },
       AOE: {
         enabled: true,
@@ -207,6 +209,10 @@
             range: "10",
           },
         ],
+      },
+      sound: {
+        enabled: false,
+        soundList: [],
       },
     },
     {
@@ -327,7 +333,14 @@
               if (ammoType.explosion.enabled) {
                 explosion.strength(ammoType.explosion.strength);
                 explosion.damagesTerrain(ammoType.explosion.damageTerrain);
+                explosion.causesFire(ammoType.explosion.causesFire);
                 explosion.explode();
+
+                if (ammoType.explosion.silent) {
+                  server.runCommandSilent(
+                    `execute in ${dim} positioned ${x} ${y} ${z} run stopsound @a[distance=..128] block minecraft:entity.generic.explode`
+                  );
+                }
               }
               if (ammoType.AOE.enabled) {
                 ammoType.AOE.effectList.forEach((command) => {
@@ -336,6 +349,15 @@
                   );
                 });
               }
+
+              if (ammoType.sound.enabled) {
+                ammoType.sound.soundList.forEach((command) => {
+                  server.runCommandSilent(
+                    `execute in ${dim} run playsound ${command.soundName} ${command.soundType} @a[distance=..${command.soundRange}] ${x} ${y} ${z} ${command.soundVolume} ${command.soundPitch}`
+                  );
+                });
+              }
+
               return;
             }
             event.reschedule();
