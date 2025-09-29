@@ -17,6 +17,7 @@ packwiz
 kubejs/assets/kubejs/probe
 kubejs/probe
 kubejs/exported
+mods/probejs*
 
 # Exclude IntelliJ project files
 .idea
