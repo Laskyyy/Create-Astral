@@ -1,7 +1,16 @@
 (function ponder() {
   onEvent("ponder.tag", (event) => {
     // Registers tags as seen in the ponder index homepage
+    /**
+     * @typedef PonderTags
+     * @property {Namespace} namespace
+     * @property {Special.Item} icon
+     * @property {string} displayName
+     * @property {string} [tooltip]
+     * @property {Namespace[]} assignedPonders
+     */
 
+    /** @type {PonderTags[]} */
     const ponderTags = [
       {
         namespace: "kubejs:createastral_tips", // Anything unique to astral that isn't a machine or part of a kubejs addon e.g. astralsignals
@@ -15,7 +24,29 @@
         icon: "createastral:electrolyser_dummy",
         displayName: "Create: Astral Machines",
         tooltip: "Guides on the custom machines added by Astral",
-        assignedPonders: ["createastral:electrolyser_dummy", "astraladditions:desizer_controller"],
+        assignedPonders: [
+          "createastral:stone_growth_chamber_dummy",
+          "createastral:electrolyser_dummy",
+          "createastral:slime_furnace_dummy",
+          "createastral:channeling_transformer_dummy",
+          "createastral:distillery_dummy",
+          "createastral:gas_mixer_dummy",
+          "yttr:void_filter",
+          "astraladditions:desizer_controller",
+        ],
+      },
+      {
+        namespace: "kubejs:astralgen_machines", // Astral gen machines
+        icon: "astralgenerators:engine_intake_casing",
+        displayName: "Astral Generators machines",
+        tooltip: "Guides on some methods of power generation",
+        assignedPonders: [
+          "astralgenerators:assembler",
+          "astralgenerators:steam_turbine",
+          "astralgenerators:solid_boiler",
+          "astralgenerators:fluid_boiler",
+          "astralgenerators:amalgamation_matrix_controller",
+        ],
       },
       {
         namespace: "kubejs:astralsignals", // Everything under the category of Astral Signals including machines and items
@@ -39,10 +70,10 @@
         assignedPonders: ["tconstruct:seared_melter", "tconstruct:foundry_controller", "tconstruct:seared_faucet"],
       },
       {
-        namespace: "kubejs:yttr",
+        namespace: "kubejs:yttr", // Custom ponder integration for yttr
         icon: "yttr:logo",
         displayName: "Yttr",
-        tooltip: "Mechanics that push the boundaries of your gameplay",
+        tooltip: "Mechanics that push the boundaries of gameplay",
         assignedPonders: ["yttr:root_of_continuity"],
       },
     ];
