@@ -16,7 +16,7 @@
         namespace: "kubejs:createastral_tips", // Anything unique to astral that isn't a machine or part of a kubejs addon e.g. astralsignals
         icon: "createastral:astral_singularity",
         displayName: "Create: Astral Tips",
-        tooltip: "Tips and tricks specific to this modpack",
+        tooltip: "Tips and hints specific to this modpack",
         assignedPonders: ["createastral:shimmering_stone"],
       },
       {
