@@ -1,21 +1,26 @@
+# Exclude unneccesary packwiz-related tools
 packwiz-installer-bootstrap.jar
 packwiz-installer.jar
 completion.sh
 reload.bat
+packwiz.exe
+packwiz
+
 # Exclude exported CurseForge zip files
 *.zip
 
 # Exclude exported Modrinth modpacks
 *.mrpack
+
+# Exclude IDE tools
 *.code-workspace
 kubejs/assets/kubejs/probe
 kubejs/probe
 kubejs/exported
+mods/probejs*
 
-# IntelliJ project files
+# Exclude IntelliJ project files
 .idea
 
 # Direnv
 .direnv
-packwiz.exe
-packwiz
