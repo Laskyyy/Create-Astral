@@ -92,6 +92,7 @@
       { output: "yttr:promethium_lump" },
       { output: "yttr:promethium_glob" },
       { output: "yttr:reinforced_cleaver" },
+	  
       { type: "techreborn:scrapbox" },
       {
         type: "techreborn:grinder",
@@ -156,6 +157,14 @@
       { output: "techreborn:block_placer" },
       { output: "minecraft:soul_sand", type: "techreborn:centrifuge" },
       { input: "techreborn:clay_dust", type: "techreborn:industrial_electrolyzer" },
+	  { input: "techreborn:invar_ingot" },
+	  { output: "techreborn:invar_ingot" },
+	  { input: "techreborn:invar_nugget" },
+	  { output: "techreborn:invar_nugget" },
+	  { input: "techreborn:invar_sheet" },
+	  { output: "techreborn:invar_sheet" },
+	  { input: "techreborn:invar_storage_block" },
+	  { output: "techreborn:invar_storage_block" },
       { id: "techreborn:solid_canning_machine/sulfur_cell" },
       { id: "techreborn:solid_canning_machine/bio_cell" },
       //Create
