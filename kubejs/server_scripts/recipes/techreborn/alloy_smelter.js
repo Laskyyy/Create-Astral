@@ -48,10 +48,10 @@
       },
 	  {
         input: [
-          { item: "create:andesite_iron", count: 1 },
-          { item: "minecraft:clay", count: 1 },
+          { item: "dustrial_decor:cast_iron_billet", count: 1 },
+          { item: "minecraft:clay", count: 3 },
         ],
-        output: { item: "create:andesite_compound", count: 2 },
+        output: { item: "create:andesite_compound", count: 3 },
         power: 96,
         time: 1000,
       },
