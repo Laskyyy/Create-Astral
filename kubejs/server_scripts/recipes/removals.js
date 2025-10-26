@@ -58,6 +58,7 @@
       { output: "techreborn:block_breaker" },
       { output: "techreborn:wire_mill" },
       { output: "techreborn:compressor" },
+      { output: "techreborn:iron_alloy_furnace", input: "techreborn:silver_plate" },
       { output: "techreborn:synthetic_redstone_crystal" },
       { output: "techreborn:bronze_nugget" },
       { output: "techreborn:steel_ingot" },
