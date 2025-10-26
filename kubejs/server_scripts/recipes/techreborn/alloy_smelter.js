@@ -24,7 +24,7 @@
           { item: "minecraft:copper_ingot", count: 1 },
           { item: "create:tin_ingot", count: 1 },
         ],
-        output: { item: "create:bronze_ingot", count: 2 },
+        output: { item: "createastral:bronze_ingot", count: 2 },
         power: 48,
         time: 600,
       },
