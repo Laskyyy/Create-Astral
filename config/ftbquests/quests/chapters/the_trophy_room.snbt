@@ -454,7 +454,7 @@
 			tasks: [{
 				id: "43B5414428A95403"
 				type: "item"
-				item: "yttr:root_of_continuity"
+				item: "createastral:shimmer_amplifier"
 				count: 256L
 			}]
 			rewards: [{
