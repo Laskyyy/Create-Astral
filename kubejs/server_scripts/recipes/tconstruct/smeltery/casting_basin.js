@@ -11,6 +11,12 @@
 
     /** @type {CastingBasinRecipe[]} */
     const castingBasinRecipes = [
+		{
+        fluidInput: { fluid: "tconstruct:molten_brass", amount: INGOT * 9 },
+        result: "createastral:incomplete_brass_casing",
+        coolingTime: 180,
+        cast: { item: "create:copper_casing", consumed: true },
+      },
       {
         fluidInput: { fluid: "kubejs:compound_mixture", amount: INGOT * 9 },
         result: "createastral:andesite_alloy_block",
