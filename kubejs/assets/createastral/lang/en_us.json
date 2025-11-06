@@ -68,6 +68,7 @@
   "tooltip.createastral.orcane.2": "A major change you *might* want to be aware of. The Nether does not exist. Do not even try to make the portal as it will not function. All Nether related items are distributed throughout the pack (mostly planets)",
   "tooltip.createastral.bronze_block": "Texture courtesy of Create: Alloyed.",
   "tooltip.createastral.seitan": "MEAT - Multipurpose, Ethical And True",
+  "tooltip.createastral.cogwheel_skull": "Timestop I",
 
   "tooltip.astraladditions.fragile_item": "Breaks when held in player inventories, it must be moved with logistical methods!",
 
@@ -356,8 +357,8 @@
 
   "block.kubejs.fragile_sheet_block": "Fragile Sheet Block",
   "block.kubejs.broken_fragile_sheet_block": "Broken Fragile Sheet Block",
-  "block.kubejs.fire_resistant_fragile_sheet_block": "Fire Resistant Fragile Sheet Block",
-  "block.kubejs.broken_fire_resistant_fragile_sheet_block": "Broken Fire Resistant Fragile Sheet Block",
+  "block.kubejs.fire_resistant_fragile_sheet_block": "Fire-Resistant Fragile Sheet Block",
+  "block.kubejs.broken_fire_resistant_fragile_sheet_block": "Broken Fire-Resistant Fragile Sheet Block",
 
   "block.astralsignals.signal_coordinator_dummy": "Signal Coordinator Dummy",
   "block.astralsignals.radio_telescope_dummy": "Radio Telescope Dummy",
@@ -380,9 +381,9 @@
   "block.createastral.bronze_block": "Bronze Block",
   "block.createastral.copper_heating_coil": "Copper Coil Block",
 
-  "block.createastral.blast-resistant_concrete": "Blast Resistant Concrete",
-  "block.createastral.blast-resistant_concrete_slab": "Blast Resistant Concrete Slab",
-  "block.createastral.blast-resistant_concrete_stairs": "Blast Resistant Concrete Stairs",
+  "block.createastral.blast-resistant_concrete": "Blast-Resistant Concrete",
+  "block.createastral.blast-resistant_concrete_slab": "Blast-Resistant Concrete Slab",
+  "block.createastral.blast-resistant_concrete_stairs": "Blast-Resistant Concrete Stairs",
 
   "block.createastral.distillery_dummy": "Distillery Dummy",
   "block.createastral.electrolyser_dummy": "Electrolyzer Dummy",
@@ -401,6 +402,7 @@
   "block.createastral.swift_andesite": "Swift Andesite",
   "block.createastral.rocket_casing": "Rocket Casing",
   "block.createastral.moonset_stone": "Moonset Stone",
+  "block.createastral.cogwheel_skull": "Cogwheel Skull",
 
   "item.astralfoods.ambrosia": "Ambrosia",
   "item.astralfoods.chocolate_ice_cream": "Chocolate Ice Cream",
@@ -2437,7 +2439,7 @@
   "ftbquests.chapter.chapter_4.quests95.description3": "Steel will have a lot more relevance in Chapter 4. For now, it's vital for getting there in the first place.",
   "ftbquests.chapter.chapter_4.quests96.title": "Blast-Resistant Cement",
   "ftbquests.chapter.chapter_4.quests96.subtitle": "This doesn't make the bucket blast resistant, just the cement in it.",
-  "ftbquests.chapter.chapter_4.quests96.description0": "To make blast-resistant Cement, Steel and Lime Dust needs to be mixed together with Concrete Powder.",
+  "ftbquests.chapter.chapter_4.quests96.description0": "To make Blast-Resistant Cement, Steel and Lime Dust needs to be mixed together with Concrete Powder.",
   "ftbquests.chapter.chapter_4.quests96.description3": "Clay Dust for the Concrete Powder can be obtained by crushing Limestone, or crushing Clay. The material is too soft for the Grinder to work.",
   "ftbquests.chapter.chapter_4.quests97.subtitle": "More useful then you might realize!",
   "ftbquests.chapter.chapter_4.quests97.description0": "Lastly, all you need to do is pour the Cement into a Casting Basin.",
