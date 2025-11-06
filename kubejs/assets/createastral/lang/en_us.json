@@ -311,8 +311,6 @@
 
   "item.createastral.orcane": "Information / General Progression",
   "item.createastral.astral_singularity": "Astral Singularity",
-  "item.createastral.laskinium": "Laskinium",
-  "item.createastral.laskinium_pill": "Laskinium Pill",
   "item.createastral.pure_biomatter": "Pure Biomatter",
   "item.createastral.lime": "Lime Dust",
   "item.createastral.synthetic_slime": "Synthetic Slime",
@@ -443,7 +441,6 @@
   "fluid.kubejs.plasma_fluid": "Plasma Fluid",
   "fluid.kubejs.hellfire": "Hellfire",
   "fluid.kubejs.smite": "Smite",
-  "fluid.kubejs.released_water_coolant": "Released Coolant",
   "fluid.kubejs.compound_mixture": "Compound Mixture",
   "fluid.kubejs.blast-resistant_cement": "Blast-Resistant Cement",
   "fluid.kubejs.red_grape_juice": "Red Grape Juice",
