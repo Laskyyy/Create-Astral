@@ -19,6 +19,9 @@
     event.create("createastral:electrified_pin");
     event.create("createastral:ender_mush");
     event.create("createastral:promethium_atomic_battery").glow(true).rarity("epic");
+    event.create("createastral:circuit_paper");
+    event.create("createastral:copper_clad_lapis_board");
+    event.create("createastral:printed_copper_clad_lapis_board");
     event.create("createastral:logo");
     event.create("createastral:bronze_ingot");
     event.create("createastral:uranium_residue").rarity("uncommon");

@@ -11,6 +11,17 @@
     wineSequence(event);
     enchantBooks(event);
 
+
+	 createSequencedAssembly(event, {
+      input: "createastral:copper_clad_lapis_board",
+      transitional: "createastral:copper_clad_lapis_board",
+      outputs: ["createastral:printed_copper_clad_lapis_board"],
+    })
+      .addDeployingStep("createastral:circuit_paper")
+      .addPressingStep()
+      .loops(1)
+      .build();
+	
     createSequencedAssembly(event, {
       input: "minecraft:bucket",
       transitional: "minecraft:bucket",
