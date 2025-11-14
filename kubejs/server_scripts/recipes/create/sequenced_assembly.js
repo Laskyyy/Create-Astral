@@ -196,6 +196,17 @@
       .addDeployingStep("#c:nuggets/desh")
       .loops(6)
       .build();
+	  
+	createSequencedAssembly(event, {
+      input: "#c:plates/brass",
+      transitional: "create:incomplete_precision_mechanism",
+      outputs: ["create:precision_mechanism"],
+    })
+      .addDeployingStep("copycats:copycat_cogwheel")
+      .addDeployingStep("copycats:copycat_large_cogwheel")
+      .addDeployingStep("astraladditions:steel_ring")
+      .loops(6)
+      .build();
 
     createSequencedAssembly(event, {
       input: "minecraft:bowl",
