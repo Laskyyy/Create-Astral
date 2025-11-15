@@ -1,0 +1,25 @@
+{
+  "replace": true,
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "yttr:rubble",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0,
+                "max": 2,
+                "type": "minecraft:uniform"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
