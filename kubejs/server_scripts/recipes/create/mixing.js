@@ -16,7 +16,7 @@
     const mixingRecipes = [
 		{
         output: [{ fluid: "techreborn:sulfuric_acid", amount: BUCKET }],
-        input: [{ fluid: "techreborn:sulfur", amount: 500 * mB }, { fluid: "minecraft:water", amount: 500 * mB }, { fluid: "ad_astra:oxygen", amount: BUCKET }],
+        input: ["techreborn:sulfur_dust", { fluid: "minecraft:water", amount: 500 * mB }, { fluid: "ad_astra:oxygen", amount: BUCKET }],
         time: 300,
       },
       {
