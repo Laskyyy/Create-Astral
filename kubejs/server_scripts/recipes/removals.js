@@ -93,7 +93,6 @@
       { output: "yttr:promethium_lump" },
       { output: "yttr:promethium_glob" },
       { output: "yttr:reinforced_cleaver" },
-	  
       { type: "techreborn:scrapbox" },
       {
         type: "techreborn:grinder",
