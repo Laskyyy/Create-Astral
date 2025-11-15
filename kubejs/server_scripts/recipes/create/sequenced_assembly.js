@@ -513,6 +513,17 @@
         .addPressingStep() //yeah!
         .loops(4)
         .build();
+		
+	  createSequencedAssembly(event, {
+        input: "astralgenerators:steel_frame",
+        transitional: "createastral:incomplete_basic_machine_frame",
+        outputs: ["techreborn:basic_machine_frame"],
+      })
+        .addFillingStep({ fluid: "tconstruct:molten_silver", amount: INGOT })
+        .addDeployingStep("techreborn:rubber")
+        .addPressingStep()
+        .loops(4)
+        .build();
     }
     /** @param {Internal.RecipeEventJS} event */
     function diamondSequence(event) {
