@@ -74,6 +74,16 @@
         original: "minecraft:gold_ingot",
         replaceWith: "createaddition:gold_rod",
       },
+	  {
+        predicate: { type: "minecraft:crafting_shaped", output: "techreborn:thermal_generator" },
+        original: "techreborn:invar_plate",
+        replaceWith: "ad_astra:ostrum_plate",
+      },
+	  {
+        predicate: { type: "minecraft:crafting_shaped", output: "techreborn:gas_turbine" },
+        original: "techreborn:invar_plate",
+        replaceWith: "ad_astra:ostrum_plate",
+      },
       {
         predicate: { input: "techreborn:rubber", output: "techreborn:insulated_copper_cable" },
         original: "minecraft:copper_ingot",
