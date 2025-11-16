@@ -2708,6 +2708,10 @@
         time: 80,
       },
       {
+        output: ["farmersdelight:pie_crust"],
+        input: [{ fluid: "milk:still_milk", amount: 250 * mB }, Item.of("create:wheat_flour", 3)],
+      },
+      {
         output: Fluid.of("tconstruct:molten_netherite", (INGOT * 3) / 10),
         input: [
           { fluid: "tconstruct:molten_debris", amount: INGOT },
