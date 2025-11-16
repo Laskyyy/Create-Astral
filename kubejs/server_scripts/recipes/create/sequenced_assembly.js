@@ -848,7 +848,7 @@
 
     createSequencedAssembly(event, {
       input: "createastral:seitan",
-      transitional: "createastral:seitan",
+      transitional: "createastral:protoegg",
       outputs: ["minecraft:egg"],
     })
       .addDeployingStep("techreborn:calcite_dust")
