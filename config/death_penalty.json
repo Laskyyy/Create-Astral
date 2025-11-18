@@ -1,0 +1,38 @@
+{
+  "global": {
+    "enabled": true,
+    "onlyWithKeepInventory": true
+  },
+  "rules": [
+    {
+      "name": "Death By Hunger",
+      "when": [
+        "inFire",
+        "onFire"
+      ],
+      "where": [
+        "minecraft:overworld"
+      ],
+      "from": [],
+      "using": [],
+      "penalties": [
+        {
+          "type": "set_food",
+          "value": 18,
+          "saturationValue": 6.0
+        }
+      ]
+    }
+  ],
+  "defaultPenalties": [
+    {
+      "type": "xp_percent",
+      "valueF": 0.25
+    },
+	{
+	  "type": "set_food",
+	  "value": 10,
+	  "saturationValue": 0.0
+	}
+  ]
+}
