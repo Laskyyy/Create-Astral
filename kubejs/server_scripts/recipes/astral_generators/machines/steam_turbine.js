@@ -1,4 +1,5 @@
 (function astralGeneratorsSteamTurbineRecipes() {
+  const { BUCKET } = global.fluids;
   onEvent("recipes", (event) => {
     turbineSteamToEnergy(event);
   });
@@ -12,7 +13,7 @@
         {
           type: "custommachinery:fluid",
           fluid: "astralgenerators:steam",
-          amount: 84000,
+          amount: BUCKET * 5 / 12, // In order to maintain the ratio with the previous weird value. Whyyyyyyy
           mode: "input",
         },
         {
