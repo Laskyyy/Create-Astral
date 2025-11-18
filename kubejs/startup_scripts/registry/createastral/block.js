@@ -117,9 +117,22 @@
       .create("createastral:distillery_dummy", "basic")
       .hardness(4)
       .resistance(1200)
-      .textureAll("techreborn:block/machines/tier1_machines/machine_side")
-      .texture("down", "techreborn:block/machines/tier1_machines/machine_bottom")
-      .texture("up", "techreborn:block/machines/tier1_machines/machine_top")
+      .texture("east", "techreborn:block/machines/tier2_machines/machine_east")
+      .texture("south", "techreborn:block/machines/tier2_machines/machine_back")
+      .texture("west", "techreborn:block/machines/tier2_machines/machine_west")
+      .texture("down", "techreborn:block/machines/tier2_machines/machine_bottom")
+      .texture("up", "techreborn:block/machines/tier2_machines/machine_top")
+      .texture("north", "createastral:block/distillation_tower_off")
+      .tagBlock("minecraft:mineable/pickaxe");
+	event
+      .create("createastral:distillery_dummy_on", "basic")
+      .hardness(4)
+      .resistance(1200)
+      .texture("east", "techreborn:block/machines/tier2_machines/machine_east")
+      .texture("south", "techreborn:block/machines/tier2_machines/machine_back")
+      .texture("west", "techreborn:block/machines/tier2_machines/machine_west")
+      .texture("down", "techreborn:block/machines/tier2_machines/machine_bottom")
+      .texture("up", "techreborn:block/machines/tier2_machines/machine_top")
       .texture("north", "createastral:block/distillation_tower_on")
       .tagBlock("minecraft:mineable/pickaxe");
     event

@@ -65,16 +65,6 @@
         },
       },
       {
-        output: "techreborn:compressor",
-        pattern: ["ABA", "ACA", "ADA"],
-        key: {
-          A: "create:sturdy_sheet",
-          B: "create:integrated_circuit",
-          C: "create:mechanical_press",
-          D: "techreborn:basic_machine_frame",
-        },
-      },
-      {
         output: Item.of("minecraft:chest", 4),
         pattern: ["XXX", "X X", "XXX"],
         key: {
@@ -1091,12 +1081,24 @@
         },
       },
       {
+        output: "techreborn:iron_alloy_furnace",
+        pattern: ["ABA", "CDC", "EFE"],
+        key: {
+          A: "create:sturdy_sheet",
+          B: "create:mechanical_mixer",
+          C: "techreborn:iron_furnace",
+          D: "techreborn:basic_machine_frame",
+          E: "create:integrated_circuit",
+          F: "create:blaze_burner",
+        },
+      },
+	  {
         output: "techreborn:alloy_smelter",
         pattern: ["ABA", "CDC", "EFE"],
         key: {
           A: "create:sturdy_sheet",
           B: "create:mechanical_mixer",
-          C: "create:basin",
+          C: "techreborn:red_cell_battery",
           D: "techreborn:basic_machine_frame",
           E: "create:integrated_circuit",
           F: "create:blaze_burner",
