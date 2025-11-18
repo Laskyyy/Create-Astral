@@ -1,0 +1,7 @@
+{
+  "stop_sound": {
+    "category": "neutral",
+    "subtitle": "subtitle.createastral.stop_sound",
+    "sounds": ["createastral:stop_sound"]
+  }
+}

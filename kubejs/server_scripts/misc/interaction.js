@@ -273,6 +273,18 @@
           },
         ],
       },
+      sound: {
+        enabled: true,
+        soundList: [
+          {
+            soundName: "createastral:stop_sound",
+            soundType: "master",
+            soundRange: "128",
+            soundVolume: "0.3",
+            soundPitch: "1"
+          }
+        ],
+      },
     },
     {
       projectile: { item: "createbigcannons:autocannon_cartridge" },
