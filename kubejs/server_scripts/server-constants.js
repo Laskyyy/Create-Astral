@@ -352,7 +352,10 @@ global.server = Object.freeze({
      * @returns {this} The current instance.
      */
     SequencedAssemblyBuilder.prototype.addDeployingStep = function (item) {
-      this._steps.push(this._event.recipes.createDeploying(this._transitional, [this._transitional, item]));
+      // Inputs extracted into its own variable to work around the "union type too complex to represent" error.
+      /** @type {Internal.IngredientJS_} */
+      const inputs = [this._transitional, item]
+      this._steps.push(this._event.recipes.createDeploying(this._transitional, inputs));
       return this;
     };
 

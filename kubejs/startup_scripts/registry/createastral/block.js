@@ -91,7 +91,8 @@
       .textureAll("createastral:block/blast_side")
       .texture("up", "createastral:block/blast_top")
       .texture("down", "createastral:block/blast_top")
-      .tagBlock("minecraft:mineable/pickaxe");
+      .tagBlock("minecraft:mineable/pickaxe")
+      .displayName("Blast-Resistant Concrete");
     event
       .create("createastral:blast-resistant_concrete_slab", "slab")
       .material("stone")
@@ -100,7 +101,8 @@
       .textureAll("createastral:block/blast_side")
       .texture("up", "createastral:block/blast_top")
       .texture("down", "createastral:block/blast_top")
-      .tagBlock("minecraft:mineable/pickaxe");
+      .tagBlock("minecraft:mineable/pickaxe")
+      .displayName("Blast-Resistant Concrete Slab");
     event
       .create("createastral:blast-resistant_concrete_stairs", "stairs")
       .material("stone")
@@ -109,14 +111,28 @@
       .textureAll("createastral:block/blast_side")
       .texture("up", "createastral:block/blast_top")
       .texture("down", "createastral:block/blast_top")
-      .tagBlock("minecraft:mineable/pickaxe");
+      .tagBlock("minecraft:mineable/pickaxe")
+      .displayName("Blast-Resistant Concrete Stairs");
     event
       .create("createastral:distillery_dummy", "basic")
       .hardness(4)
       .resistance(1200)
-      .textureAll("techreborn:block/machines/tier1_machines/machine_side")
-      .texture("down", "techreborn:block/machines/tier1_machines/machine_bottom")
-      .texture("up", "techreborn:block/machines/tier1_machines/machine_top")
+      .texture("east", "techreborn:block/machines/tier2_machines/machine_east")
+      .texture("south", "techreborn:block/machines/tier2_machines/machine_back")
+      .texture("west", "techreborn:block/machines/tier2_machines/machine_west")
+      .texture("down", "techreborn:block/machines/tier2_machines/machine_bottom")
+      .texture("up", "techreborn:block/machines/tier2_machines/machine_top")
+      .texture("north", "createastral:block/distillation_tower_off")
+      .tagBlock("minecraft:mineable/pickaxe");
+	event
+      .create("createastral:distillery_dummy_on", "basic")
+      .hardness(4)
+      .resistance(1200)
+      .texture("east", "techreborn:block/machines/tier2_machines/machine_east")
+      .texture("south", "techreborn:block/machines/tier2_machines/machine_back")
+      .texture("west", "techreborn:block/machines/tier2_machines/machine_west")
+      .texture("down", "techreborn:block/machines/tier2_machines/machine_bottom")
+      .texture("up", "techreborn:block/machines/tier2_machines/machine_top")
       .texture("north", "createastral:block/distillation_tower_on")
       .tagBlock("minecraft:mineable/pickaxe");
     event
@@ -208,5 +224,29 @@
       .textureAll("createastral:block/gas_mixer")
       .texture("down", "createastral:block/gas_mixer_shaft");
     event.create("createastral:channeling_transformer_dummy").textureAll("createastral:block/channeling_transformer");
+    event
+      .create("createastral:cogwheel_skull")
+      .material("lantern")
+      .hardness(2)
+      .box(4, 0, 4, 12, 14, 12, true)
+      .box(2, 0, 2, 14, 3, 14, true)
+      .tagBlock("minecraft:mineable/pickaxe")
+      .tagBlock("minecraft:mineable/axe")
+      .requiresTool(true)
+      .property(BlockProperties.HORIZONTAL_FACING)
+      .placementState(event =>
+        event.set(
+          BlockProperties.HORIZONTAL_FACING,
+          `${event.getHorizontalDirection().getOpposite()}`
+        )
+      )
+      .blockstateJson = {
+        "variants": {
+          "facing=north": { "model": "createastral:block/cogwheel_skull"           },
+          "facing=east" : { "model": "createastral:block/cogwheel_skull", "y": 90  },
+          "facing=south": { "model": "createastral:block/cogwheel_skull", "y": 180 },
+          "facing=west" : { "model": "createastral:block/cogwheel_skull", "y": 270 },
+        }
+      };
   });
 })();

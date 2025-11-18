@@ -1,4 +1,5 @@
 (function astralGeneratorsFusionReactorRecipes() {
+  const { BUCKET } = global.fluids;
   onEvent("recipes", (event) => {
     fusionHelium3(event);
   });
@@ -13,18 +14,18 @@
           type: "custommachinery:fluid",
           mode: "input",
           fluid: "techreborn:deuterium",
-          amount: 100800,
+          amount: BUCKET,
         },
         {
           type: "custommachinery:fluid",
           mode: "input",
           fluid: "techreborn:tritium",
-          amount: 100800,
+          amount: BUCKET,
         },
         {
           type: "custommachinery:fluid",
           fluid: "techreborn:helium3",
-          amount: 100800,
+          amount: BUCKET,
           mode: "output",
         },
         {

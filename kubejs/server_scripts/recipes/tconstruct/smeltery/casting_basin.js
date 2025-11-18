@@ -89,7 +89,6 @@
         fluidInput: { fluid: "tconstruct:molten_tin", amount: BUCKET },
         result: "extended_drawers:shadow_drawer",
         coolingTime: 117, // same as cooling tin block
-        // @ts-expect-error Missing tag?
         cast: { tag: "extended_drawers:drawer_containers", consumed: true },
       },
       {

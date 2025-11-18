@@ -6,6 +6,7 @@ declare namespace Helper {
 
   type Items = Internal.ItemStackJS_ | `#${Special.ItemTag}` | `@${Special.Mod}` | "*";
   type ItemOrTag = { item: Special.Item } | { tag: Special.ItemTag };
+  type ItemOrTagWithCount = { item: Special.Item, count?: number } | { tag: Special.ItemTag, count?: number };
   type FluidOrTag = { fluid: Special.Fluid } | { tag: Special.FluidTag };
   interface Tooltip {
     item: Special.Item;
