@@ -5,7 +5,7 @@
     crushingToGrinding(event);
     /**
      * @typedef GrinderRecipe
-     * @property {{item: Special.Item, count?: number}[]} input
+     * @property {Helper.ItemOrTagWithCount[]} input
      * @property {{item: Special.Item, count?: number}[]} output
      * @property {number} time
      * @property {number} power
@@ -32,7 +32,7 @@
         power: 5,
       },
       {
-        input: [{ tag: `c:basalt`, count: 1 }], //tag
+        input: [{ tag: "c:basalt", count: 1 }], //tag
         output: [{ item: "techreborn:basalt_dust", count: 1 }],
         time: 200,
         power: 5,
