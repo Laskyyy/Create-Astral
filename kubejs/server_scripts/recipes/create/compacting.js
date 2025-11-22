@@ -241,6 +241,10 @@
         inputs: ["farmersdelight:canvas", "minecraft:ink_sac", "createaddition:iron_wire"],
       },
       {
+        output: "createastral:desh_dust",
+        inputs: [Item.of("createastral:small_desh_dust", 9)],
+      },
+      {
         output: "minecraft:andesite",
         inputs: [Item.of("minecraft:flint", 2), "minecraft:gravel", { fluid: "minecraft:lava", amount: 100 * mB }],
         heat: "heated",
@@ -322,6 +326,16 @@
       {
         output: "minecraft:shulker_shell",
         inputs: ["ae2:ender_dust", Item.of("minecraft:purple_dye", 8)],
+        heat: "heated",
+      },
+      {
+        output: "createastral:blast-resistant_doncrete",
+        inputs: [
+          "#c:concrete_powder",
+          Item.of("createastral:lime", 2),
+          Item.of("createastral:desh_dust", 4),
+          { fluid: "minecraft:lava", amount: BUCKET/2 },
+		],
         heat: "heated",
       },
       {

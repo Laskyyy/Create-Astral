@@ -203,6 +203,14 @@
         },
       },
       {
+        output: "ad_astra:launch_pad",
+        pattern: ["BAAAB", "ABABA", "AABAA", "ABABA", "BAAAB"],
+        key: {
+          A: "createastral:blast-resistant_doncrete",
+          B: "create:sturdy_sheet",
+        },
+      },
+      {
         output: "techreborn:data_storage_chip",
         pattern: ["A", "C", "B"],
         key: {

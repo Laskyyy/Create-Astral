@@ -24,6 +24,8 @@
     event.create("createastral:printed_copper_clad_lapis_board");
     event.create("createastral:logo");
     event.create("createastral:bronze_ingot");
+    event.create("createastral:desh_dust");
+    event.create("createastral:small_desh_dust");
     event.create("createastral:uranium_residue").rarity("uncommon");
     event.create("createastral:navigation_mechanism");
     event.create("createastral:living_mechanism");

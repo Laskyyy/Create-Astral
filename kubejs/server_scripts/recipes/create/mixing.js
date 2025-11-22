@@ -359,7 +359,7 @@
         input: [
           "#c:concrete_powder",
           Item.of("createastral:lime", 2),
-          Item.of("techreborn:steel_dust", 3),
+          Item.of("techreborn:steel_dust", 2),
           { fluid: "minecraft:water", amount: BUCKET },
         ],
         heat: "heated",

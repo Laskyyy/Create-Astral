@@ -61,6 +61,24 @@
         time: 220,
         power: 2,
       },
+      {
+        input: [{ item: "ad_astra:desh_ingot", count: 1 }],
+        output: [{ item: "createastral:desh_dust", count: 1 }],
+        time: 120,
+        power: 2,
+      },
+      {
+        input: [{ item: "ad_astra:raw_desh", count: 1 }],
+        output: [{ item: "createastral:desh_dust", count: 1 }],
+        time: 100,
+        power: 2,
+      },
+      {
+        input: [{ item: "ad_astra:desh_nugget", count: 1 }],
+        output: [{ item: "createastral:small_desh_dust", count: 1 }],
+        time: 20,
+        power: 2,
+      },
     ];
     grinderRecipes.forEach((recipe) => {
       event.custom({

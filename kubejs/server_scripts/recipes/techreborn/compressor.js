@@ -16,6 +16,12 @@
         time: 300,
         power: 10,
       },
+      {
+        input: [{ item: "createastral:small_desh_dust", count: 9 }],
+        output: [{ item: "createastral:desh_dust", count: 1 }],
+        time: 40,
+        power: 2,
+      },
     ];
     compressorRecipes.forEach((recipe) => {
       event.custom({
