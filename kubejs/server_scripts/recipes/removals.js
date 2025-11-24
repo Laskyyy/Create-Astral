@@ -98,6 +98,10 @@
         type: "techreborn:grinder",
         input: "#techreborn:calcite_dust_material",
       },
+      {
+        type: "techreborn:extractor",
+        input: "techreborn:plantball",
+      },
       { type: "techreborn:grinder", input: "#c:ores" },
       { type: "techreborn:grinder", input: "#c:storage_blocks" },
       {
