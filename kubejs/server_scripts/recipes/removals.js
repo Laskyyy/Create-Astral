@@ -102,6 +102,10 @@
         type: "techreborn:extractor",
         input: "techreborn:plantball",
       },
+      {
+        type: "techreborn:chemical_reactor",
+        output: "minecraft:leather",
+      },
       { type: "techreborn:grinder", input: "#c:ores" },
       { type: "techreborn:grinder", input: "#c:storage_blocks" },
       {
