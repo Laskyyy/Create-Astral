@@ -17,6 +17,12 @@
         time: 100,
         power: 5,
       },
+      {
+        input: [{ item: "techreborn:compressed_plantball", count: 1 }],
+        output: [{ item: "createaddition:biomass", count: 1 }],
+        time: 120,
+        power: 6,
+      },
     ];
     extractorRecipes.forEach((recipe) => {
       event.custom({

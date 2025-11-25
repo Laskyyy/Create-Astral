@@ -7,8 +7,14 @@
       {
         input: [{ item: "techreborn:compressed_plantball", count: 4 }],
         output: [{ item: "createaddition:biomass", count: 1 }],
-        time: 300,
-        power: 10,
+        time: 200,
+        power: 1,
+      },
+      {
+        input: [{ item: "techreborn:plantball", count: 2 }],
+        output: [{ item: "techreborn:compressed_plantball", count: 1 }],
+        time: 100,
+        power: 5,
       },
       {
         input: [{ item: "createastral:fragile_sheet", count: 16 }],
