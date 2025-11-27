@@ -1,0 +1,20 @@
+{
+  "type": "extractinator:extractinating",
+  "input": {
+    "item": "extractinator:slush"
+  },
+  "drops": [
+    {
+      "drop": "#extractinator:slush",
+      "drop_chance": 0.55,
+      "min_drop_count": 1,
+      "max_drop_count": 5
+    },
+    {
+      "drop": "#extractinator:slush_rare",
+      "drop_chance": 0.04,
+      "min_drop_count": 1,
+      "max_drop_count": 2
+    }
+  ]
+}

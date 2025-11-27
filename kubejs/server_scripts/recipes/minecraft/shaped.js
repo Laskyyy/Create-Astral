@@ -1443,14 +1443,13 @@
       },
       {
         output: "extractinator:extractinator",
-        pattern: ["H  ", "PRA", "CBA"],
+        pattern: ["H ", "FC", "MS"],
         key: {
           H: "minecraft:hopper",
-          P: "minecraft:piston",
-          C: "minecraft:cauldron",
-          B: "minecraft:copper_block",
-          R: "minecraft:redstone_block",
-          A: "minecraft:chain",
+          F: "create:filter",
+          C: "create:cogwheel",
+          M: "create:millstone",
+          S: "dustrial_decor:sheet_metal",
         },
       },
       {
