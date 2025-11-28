@@ -58,6 +58,7 @@
       { output: "techreborn:block_breaker" },
       { output: "techreborn:wire_mill" },
       { output: "techreborn:compressor" },
+      { output: "techreborn:compressed_air" },
       { output: "techreborn:iron_alloy_furnace" },
       { output: "techreborn:synthetic_redstone_crystal" },
       { output: "techreborn:bronze_nugget" },
@@ -154,6 +155,7 @@
         output: "techreborn:nak_coolant_cell_60k",
       },
       { id: "techreborn:crafting_table/paper" },
+      { id: "techreborn:compressor/compressed_air_cell" }, // cause of a recipe duplicate (i cant find the other recipe that does the same thing) whee spaghetti code
       { output: "techreborn:block_placer" },
       { output: "minecraft:soul_sand", type: "techreborn:centrifuge" },
       { input: "techreborn:clay_dust", type: "techreborn:industrial_electrolyzer" },
