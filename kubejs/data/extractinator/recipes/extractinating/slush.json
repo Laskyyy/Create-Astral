@@ -12,7 +12,7 @@
     },
     {
       "drop": "#extractinator:slush_rare",
-      "drop_chance": 0.04,
+      "drop_chance": 0.08,
       "min_drop_count": 1,
       "max_drop_count": 2
     }
