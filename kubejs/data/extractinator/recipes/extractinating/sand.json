@@ -1,0 +1,24 @@
+{
+  "type": "extractinator:extractinating",
+  "input": {
+    "tag": "minecraft:sand"
+  },
+  "drops": [
+    {
+      "drop": "minecraft:dead_bush",
+      "drop_chance": 0.06,
+      "min_drop_count": 1,
+      "max_drop_count": 3
+    },
+    {
+      "drop": "minecraft:clay_ball",
+      "drop_chance": 0.1,
+      "min_drop_count": 1,
+      "max_drop_count": 2
+    },
+    {
+      "drop": "minecraft:cactus",
+      "drop_chance": 0.02
+    }
+  ]
+}

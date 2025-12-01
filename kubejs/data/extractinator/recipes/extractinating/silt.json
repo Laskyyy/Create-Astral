@@ -5,13 +5,13 @@
   },
   "drops": [
     {
-      "drop": "#extractinator:item/silt",
+      "drop": "#extractinator:silt",
       "drop_chance": 0.60,
       "min_drop_count": 2,
       "max_drop_count": 6
     },
     {
-      "drop": "#extractinator:item/silt_rare",
+      "drop": "#extractinator:silt_rare",
       "drop_chance": 0.05,
       "min_drop_count": 1,
       "max_drop_count": 2

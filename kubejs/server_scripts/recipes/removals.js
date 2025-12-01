@@ -698,7 +698,6 @@
         output: "minecraft:redstone",
       },
       // extractinator
-      { type: "extractinator:extractinating" },
       { output: "extractinator:extractinator" },
       // estrogen
       { type: "create:compacting", input: "minecraft:slime_ball" },
