@@ -780,12 +780,27 @@
 				"{ftbquests.chapter.chapter_3.quests17.description12}"
 			]
 			dependencies: ["70799237323247B7"]
+			min_required_tasks: 1
 			id: "0F4C452C9C9AB1B8"
-			tasks: [{
-				id: "1BC2FEBA428BF095"
-				type: "item"
-				item: "tconstruct:molten_rose_gold_bucket"
-			}]
+			tasks: [
+				{
+					id: "1BC2FEBA428BF095"
+					type: "item"
+					item: "tconstruct:molten_rose_gold_bucket"
+				}
+				{
+					id: "53E2284C87044D18"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "tconstruct:molten_rose_gold"
+						}
+					}
+					match_nbt: true
+				}
+			]
 			rewards: [
 				{
 					id: "44A1974D27454D3A"
@@ -867,12 +882,27 @@
 			min_required_dependencies: 1
 			dependencies: ["267CD8D04921402E"]
 			dependency_requirement: "one_completed"
+			min_required_tasks: 1
 			id: "00F3EA4A8FB5B11B"
-			tasks: [{
-				id: "1BE3D8C8806EA239"
-				type: "item"
-				item: "kubejs:shimmer_bucket"
-			}]
+			tasks: [
+				{
+					id: "1BE3D8C8806EA239"
+					type: "item"
+					item: "kubejs:shimmer_bucket"
+				}
+				{
+					id: "730DF8FED4E5E595"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "kubejs:shimmer"
+						}
+					}
+					match_nbt: true
+				}
+			]
 			rewards: [{
 				id: "31F9BBCBD48F1BFA"
 				type: "item"
@@ -917,12 +947,27 @@
 			shape: "rsquare"
 			description: ["{ftbquests.chapter.chapter_3.quests21.description}"]
 			dependencies: ["70799237323247B7"]
+			min_required_tasks: 1
 			id: "5A1B85C3323DDBD1"
-			tasks: [{
-				id: "57BB6CFDC8C9F731"
-				type: "item"
-				item: "kubejs:compound_mixture_bucket"
-			}]
+			tasks: [
+				{
+					id: "57BB6CFDC8C9F731"
+					type: "item"
+					item: "kubejs:compound_mixture_bucket"
+				}
+				{
+					id: "408E640DF87D127E"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "kubejs:compound_mixture"
+						}
+					}
+					match_nbt: true
+				}
+			]
 			rewards: [{
 				id: "0C0EDF94D00BFA3B"
 				type: "item"
@@ -1134,12 +1179,27 @@
 			shape: "rsquare"
 			description: ["{ftbquests.chapter.chapter_3.quests29.description}"]
 			dependencies: ["70799237323247B7"]
+			min_required_tasks: 1
 			id: "0E939F8167F47710"
-			tasks: [{
-				id: "48920459D1BBDA83"
-				type: "item"
-				item: "tconstruct:molten_bronze_bucket"
-			}]
+			tasks: [
+				{
+					id: "48920459D1BBDA83"
+					type: "item"
+					item: "tconstruct:molten_bronze_bucket"
+				}
+				{
+					id: "20E34DBA9A8C283A"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "tconstruct:molten_bronze"
+						}
+					}
+					match_nbt: true
+				}
+			]
 			rewards: [{
 				id: "591B68F92188CBBC"
 				type: "item"
@@ -2022,9 +2082,29 @@
 					count: 640L
 				}
 				{
-					id: "0F07739CD62649E1"
+					id: "498063EFF0ACCE6E"
 					type: "item"
-					item: "minecraft:lava_bucket"
+					title: "{ftbquests.chapter.chapter_3.quests52.tasks3.title}"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "techreborn:cell"
+									Count: 1b
+									tag: {
+										fluid: "minecraft:lava"
+									}
+								}
+								match_nbt: true
+								{
+									id: "minecraft:lava_bucket"
+									Count: 1b
+								}
+							]
+						}
+					}
 					count: 8L
 				}
 			]

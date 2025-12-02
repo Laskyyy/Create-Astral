@@ -228,13 +228,26 @@
 					count: 4L
 				}
 				{
-					id: "0B4ADE9DAC75D9AF"
+					id: "035E7F573A4A8551"
 					type: "item"
+					title: "{ftbquests.chapter.chapter_5.quests2.tasks2.title}"
 					item: {
-						id: "techreborn:cell"
+						id: "itemfilters:or"
 						Count: 1b
 						tag: {
-							fluid: "techreborn:lithium"
+							items: [
+								{
+									id: "techreborn:cell"
+									tag: {
+										fluid: "techreborn:lithium"
+									}
+									Count: 1b
+								}
+								{
+									id: "techreborn:lithium_bucket"
+									Count: 1b
+								}
+							]
 						}
 					}
 					match_nbt: true
@@ -1317,30 +1330,9 @@
 			description: ["{ftbquests.chapter.chapter_5.quests37.description}"]
 			dependencies: ["04954A167C56AC1C"]
 			id: "0842CB2511EA7CE9"
-			tasks: [{
-				id: "2DA7A2C0AEC6781C"
-				type: "item"
-				item: {
-					id: "techreborn:cell"
-					Count: 1b
-					tag: {
-						fluid: "techreborn:sulfur"
-					}
-				}
-				match_nbt: true
-			}]
-		}
-		{
-			title: "{ftbquests.chapter.chapter_5.quests38.title}"
-			x: 13.0d
-			y: 3.5d
-			subtitle: "{ftbquests.chapter.chapter_5.quests38.subtitle}"
-			description: ["{ftbquests.chapter.chapter_5.quests38.description}"]
-			dependencies: ["0842CB2511EA7CE9"]
-			id: "7E55004B488A16C1"
 			tasks: [
 				{
-					id: "7266F6F5E4D67949"
+					id: "2DA7A2C0AEC6781C"
 					type: "item"
 					item: {
 						id: "techreborn:cell"
@@ -1352,9 +1344,50 @@
 					match_nbt: true
 				}
 				{
-					id: "3F26111DB0043FBA"
+					id: "764FE811D58B5E5B"
+					type: "item"
+					item: "techreborn:sulfur_bucket"
+				}
+			]
+		}
+		{
+			title: "{ftbquests.chapter.chapter_5.quests38.title}"
+			x: 13.0d
+			y: 3.5d
+			subtitle: "{ftbquests.chapter.chapter_5.quests38.subtitle}"
+			description: ["{ftbquests.chapter.chapter_5.quests38.description}"]
+			dependencies: ["0842CB2511EA7CE9"]
+			id: "7E55004B488A16C1"
+			tasks: [
+				{
+					id: "34C7AADE017CB5E6"
 					type: "item"
 					item: "techreborn:coal_dust"
+				}
+				{
+					id: "21A94F98356809F6"
+					type: "item"
+					title: "{ftbquests.chapter.chapter_5.quests38.tasks2.title}"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "techreborn:cell"
+									tag: {
+										fluid: "techreborn:sulfur"
+									}
+									Count: 1b
+								}
+								{
+									id: "techreborn:sulfur_bucket"
+									Count: 1b
+								}
+							]
+						}
+					}
+					match_nbt: true
 				}
 			]
 			rewards: [{
@@ -1380,19 +1413,27 @@
 			]
 			dependencies: ["7E55004B488A16C1"]
 			size: 1.5d
+			min_required_tasks: 1
 			id: "4167177A752546A3"
-			tasks: [{
-				id: "4E42AA832C55804E"
-				type: "item"
-				item: {
-					id: "techreborn:cell"
-					Count: 1b
-					tag: {
-						fluid: "techreborn:oil"
+			tasks: [
+				{
+					id: "4E42AA832C55804E"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "techreborn:oil"
+						}
 					}
+					match_nbt: true
 				}
-				match_nbt: true
-			}]
+				{
+					id: "74D1443AFF539E52"
+					type: "item"
+					item: "techreborn:oil_bucket"
+				}
+			]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_5.quests40.title}"
@@ -1513,18 +1554,29 @@
 			min_required_tasks: 2
 			id: "07C60C1DB44579B9"
 			tasks: [
-				{
-					id: "5D982FC7B6331B59"
+				id: "21A94F98356809F6"
 					type: "item"
+					title: "{ftbquests.chapter.chapter_5.quests42.tasks1.title}"
 					item: {
-						id: "techreborn:cell"
+						id: "itemfilters:or"
 						Count: 1b
 						tag: {
-							fluid: "techreborn:oil"
+							items: [
+								{
+									id: "techreborn:cell"
+									tag: {
+										fluid: "techreborn:oil"
+									}
+									Count: 1b
+								}
+								{
+									id: "techreborn:oil_bucket"
+									Count: 1b
+								}
+							]
 						}
 					}
 					match_nbt: true
-				}
 				{
 					id: "4A61D1E1FE5ED548"
 					type: "item"
@@ -1624,19 +1676,27 @@
 				"{ftbquests.chapter.chapter_5.quests46.description6}"
 			]
 			dependencies: ["33DA3ABE77235723"]
+			min_required_tasks: 1
 			id: "7A30BBD9F64920A4"
-			tasks: [{
-				id: "05E87D559048BC40"
-				type: "item"
-				item: {
-					id: "techreborn:cell"
-					Count: 1b
-					tag: {
-						fluid: "techreborn:nitrogen"
+			tasks: [
+				{
+					id: "05E87D559048BC40"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "techreborn:nitrogen"
+						}
 					}
+					match_nbt: true
 				}
-				match_nbt: true
-			}]
+				{
+					id: "2C5E4FAB945A64AA"
+					type: "item"
+					item: "techreborn:nitrogen_bucket"
+				}
+			]
 			rewards: [{
 				id: "27E0D0EDB9F5A76B"
 				type: "loot"
@@ -1680,12 +1740,26 @@
 				"407805C6726FB46F"
 				"0FFDADC5EC32AEC7"
 			]
+			min_required_tasks: 1
 			id: "3F21FC19DD9459EF"
-			tasks: [{
-				id: "66F516E06ED0EF60"
-				type: "item"
-				item: "ad_astra:cryo_fuel_bucket"
-			}]
+			tasks: [
+				{
+					id: "66F516E06ED0EF60"
+					type: "item"
+					item: "ad_astra:cryo_fuel_bucket"
+				}
+				{
+					id: "69791154F543F938"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "ad_astra:cryo_fuel"
+						}
+					}
+				}
+			]
 			rewards: [{
 				id: "62BA6B42C6558BCA"
 				type: "loot"

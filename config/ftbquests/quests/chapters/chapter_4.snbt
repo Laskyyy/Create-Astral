@@ -955,20 +955,29 @@
 				"22C043704EB6527C"
 			]
 			size: 1.75d
+			min_required_tasks: 1
 			id: "57724BFDF0A78FAF"
-			tasks: [{
-				id: "6FDEEB9ACA45AA73"
-				type: "item"
-				item: {
-					id: "techreborn:cell"
-					Count: 1b
-					tag: {
-						fluid: "techreborn:biofuel"
+			tasks: [
+				{
+					id: "6FDEEB9ACA45AA73"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "techreborn:biofuel"
+						}
 					}
+					count: 3L
+					match_nbt: true
 				}
-				count: 3L
-				match_nbt: true
-			}]
+				{
+					id: "75B1D855F0B848E7"
+					type: "item"
+					item: "techreborn:biofuel_bucket"
+					count: 3L
+				}
+			]
 			rewards: [{
 				id: "3D434E26EC91C3E3"
 				type: "loot"
@@ -1636,11 +1645,6 @@
 			id: "494F84A10D6934E7"
 			tasks: [
 				{
-					id: "428441742E5CD542"
-					type: "item"
-					item: "createaddition:seed_oil_bucket"
-				}
-				{
 					id: "1C7275685128FEF1"
 					type: "item"
 					title: "{ftbquests.chapter.chapter_4.quests49.tasks1.title}"
@@ -1650,6 +1654,31 @@
 						tag: {
 							value: "c:seeds"
 						}
+					}
+				}
+				{
+					id: "5719DFEA6A9725D8"
+					type: "item"
+					title: "{ftbquests.chapter.chapter_4.quests49.tasks2.title}"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "techreborn:cell"
+									tag: {
+										fluid: "createaddition:seed_oil"
+									}
+									Count: 1b
+								}
+								{
+									id: "createaddition:seed_oil_bucket"
+									Count: 1b
+								}
+							]
+						}
+						match_nbt: true
 					}
 				}
 			]
@@ -2245,12 +2274,26 @@
 				"{ftbquests.chapter.chapter_4.quests72.description3}"
 			]
 			dependencies: ["64A1C434EB7021E6"]
+			min_required_tasks: 1
 			id: "55214095FAF22F42"
-			tasks: [{
-				id: "0276F73188BF69D0"
-				type: "item"
-				item: "tconstruct:molten_electrum_bucket"
-			}]
+			tasks: [
+				{
+					id: "0276F73188BF69D0"
+					type: "item"
+					item: "tconstruct:molten_electrum_bucket"
+				}
+				{
+					id: "4A8D77D1D9290759"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "tconstruct:molten_electrum"
+						}
+					}
+				}
+			]
 			rewards: [
 				{
 					id: "365574D8751A7E34"
@@ -2952,12 +2995,26 @@
 				"70FE485B4505AC81"
 				"49BE333EAC6260C8"
 			]
+			min_required_tasks: 1
 			id: "65DED861096175C2"
-			tasks: [{
-				id: "6EAE447DF0EF949F"
-				type: "item"
-				item: "kubejs:blast-resistant_cement_bucket"
-			}]
+			tasks: [
+				{
+					id: "6EAE447DF0EF949F"
+					type: "item"
+					item: "kubejs:blast-resistant_cement_bucket"
+				}
+				{
+					id: "19B1B96B0520A59C"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "kubejs:blast-resistant_cement"
+						}
+					}
+				}
+			]
 		}
 		{
 			x: 0.5d
@@ -4184,9 +4241,29 @@
 					item: "xpcrystals:xp_crystal"
 				}
 				{
-					id: "7B476681124C996E"
+					id: "1A005A3EACD17C40"
 					type: "item"
-					item: "kubejs:liquid_xp_nuggies_bucket"
+					title: "{ftbquests.chapter.chapter_4.quests140.tasks3.title}"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "techreborn:cell"
+									tag: {
+										fluid: "kubejs:liquid_xp_nuggies"
+									}
+									Count: 1b
+								}
+								{
+									id: "kubejs:liquid_xp_nuggies_bucket"
+									Count: 1b
+								}
+							]
+						}
+					}
+					match_nbt: true
 				}
 			]
 			rewards: [{
