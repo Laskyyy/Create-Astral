@@ -1,0 +1,16 @@
+{
+  "replace": true,
+  "values": [
+	"techreborn:andesite_dust",
+	"techreborn:calcite_dust",
+	"create:copper_nugget",
+	"create:zinc_nugget",
+	"minecraft:lapis_lazuli",
+	"minecraft:pointed_dripstone",
+	"minecraft:clay_ball",
+	"minecraft:snowball",
+	"minecraft:bone_meal",
+	"techreborn:ashes_dust",
+	"minecraft:seagrass"
+  ]
+}
