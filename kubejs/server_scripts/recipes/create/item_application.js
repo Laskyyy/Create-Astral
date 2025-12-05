@@ -30,6 +30,11 @@
         appliedItem: { item: "create:shadow_steel" },
       },
       {
+        output: { item: "createastral:incomplete_brass_casing" },
+        appliedTo: { item: "create:copper_casing" },
+        appliedItem: { item: "create:brass_sheet" },
+      },
+      {
         output: { item: "create:refined_radiance_casing" },
         appliedTo: { item: "techreborn:advanced_machine_frame" },
         appliedItem: { item: "create:refined_radiance" },

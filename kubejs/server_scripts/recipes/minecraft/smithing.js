@@ -17,7 +17,6 @@
       { base: "techreborn:tin_ingot", addition: "minecraft:copper_ingot", output: "createastral:bronze_ingot" },
       { base: "farmersdelight:skillet", addition: "minecraft:water_bucket", output: "farmersdelight:cooking_pot" },
       { base: "reinfchest:diamond_chest", addition: "minecraft:netherite_ingot", output: "reinfchest:netherite_chest" },
-      { base: "create:copper_casing", addition: "create:brass_sheet", output: "createastral:incomplete_brass_casing" },
       { base: "create:lapis_sheet", addition: "create:copper_sheet", output: "createastral:copper_clad_lapis_board" },
     ];
     smithingRecipes.forEach((recipe) => {
