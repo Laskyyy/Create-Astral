@@ -23,6 +23,24 @@
         time: 120,
         power: 6,
       },
+      {
+        input: [{ tag: "minecraft:beds", count: 1 }],
+        output: [{ item: "minecraft:string", count: 9 }],
+        time: 120,
+        power: 6,
+      },
+      {
+        input: [{ tag: "minecraft:banners", count: 3 }],
+        output: [{ item: "minecraft:string", count: 15 }],
+        time: 120,
+        power: 6,
+      },
+      {
+        input: [{ item: "minecraft:sweet_berries", count: 4 }],
+        output: [{ item: "minecraft:red_dye", count: 5 }],
+        time: 300,
+        power: 10,
+      }
     ];
     extractorRecipes.forEach((recipe) => {
       event.custom({
