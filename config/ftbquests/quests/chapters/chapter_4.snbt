@@ -1029,9 +1029,6 @@
 				""
 				""
 				"{ftbquests.chapter.chapter_4.quests28.description3}"
-				""
-				""
-				"{ftbquests.chapter.chapter_4.quests28.description6}"
 			]
 			dependencies: ["5459F646B9A392C4"]
 			size: 1.75d
@@ -4337,6 +4334,33 @@
 				id: "25E6BAEB7430518E"
 				type: "item"
 				item: "blahaj:blue_shark"
+			}]
+		}
+		{
+			x: -12.0d
+			y: -1.5d
+			subtitle: "{ftbquests.chapter.chapter_4.quests141.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_4.quests141.description0}"
+				""
+				"{ftbquests.chapter.chapter_4.quests141.description2}"
+				""
+				"{ftbquests.chapter.chapter_4.quests141.description3}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests141.description4}"
+			]
+			dependencies: ["752215E611021472"]
+			id: "20768473377DAF57"
+			tasks: [{
+				id: "33CDCD7F0C1EEDFE"
+				type: "item"
+				item: "techreborn:overclocker_upgrade"
+			}]
+			rewards: [{
+				id: "6CF8EFC215656F53"
+				type: "item"
+				item: "techreborn:nak_coolant_cell_60k"
 			}]
 		}
 	]

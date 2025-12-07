@@ -1017,6 +1017,8 @@
 				""
 				"{ftbquests.chapter.6_raow.quests29.description2}"
 				""
+				""
+				"{ftbquests.chapter.6_raow.quests29.description3}"
 			]
 			dependencies: ["637D5C1C0C789F9E"]
 			id: "6F5C9A0CC0CAC7A8"

@@ -3100,6 +3100,37 @@
 				item: "astraladditions:shimmer_bottle"
 			}]
 		}
+		{
+			title: "{ftbquests.chapter.chapter_3.quests81.title}"
+			icon: "createdeco:orange_decal"
+			x: -4.0d
+			y: 0.5d
+			subtitle: "{ftbquests.chapter.chapter_3.quests81.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_3.quests81.description0}"
+				"{ftbquests.chapter.chapter_3.quests81.description2}"
+				""
+				"{ftbquests.chapter.chapter_3.quests81.description3}"
+				"{ftbquests.chapter.chapter_3.quests81.description4}"
+				"{ftbquests.chapter.chapter_3.quests81.description5}"
+				""
+				"{ftbquests.chapter.chapter_3.quests81.description6}"
+			]
+			hide_dependency_lines: true
+			dependencies: ["0A34148EBAF329B3"]
+			id: "127D8709795BEDBC"
+			tasks: [{
+				id: "5F612D686C86B8C2"
+				type: "checkmark"
+				title: "{ftbquests.chapter.chapter_3.quests81.tasks0.title}"
+			}]
+			rewards: [{
+				id: "372566BD43178BDE"
+				type: "item"
+				item: "tconstruct:copper_can"
+				count: 9
+			}]
+		}
 	]
 	quest_links: [ ]
 }
