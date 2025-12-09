@@ -333,8 +333,8 @@
         inputs: [
           "#c:concrete_powder",
           Item.of("createastral:lime", 2),
-          Item.of("createastral:desh_dust", 4),
-          { fluid: "minecraft:lava", amount: BUCKET/2 },
+          Item.of("createastral:desh_dust", 6),
+          { fluid: "minecraft:lava", amount: BUCKET },
 		],
         heat: "heated",
       },
