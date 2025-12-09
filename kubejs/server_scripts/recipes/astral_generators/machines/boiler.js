@@ -1,4 +1,6 @@
 (function astralGeneratorsBoilerRecipes() {
+  const { BUCKET } = global.fluids;
+
   onEvent("recipes", (event) => {
     boilerSteamFromFuel(event);
     boilerSteamFromLava(event);
@@ -17,12 +19,12 @@
           type: "custommachinery:fluid",
           mode: "input",
           fluid: "minecraft:water",
-          amount: 100800,
+          amount: BUCKET,
         },
         {
           type: "custommachinery:fluid",
           fluid: "astralgenerators:steam",
-          amount: 201600,
+          amount: 2 * BUCKET,
           mode: "output",
         },
         {
@@ -51,18 +53,18 @@
           type: "custommachinery:fluid",
           mode: "input",
           fluid: "minecraft:lava",
-          amount: 100800,
+          amount: BUCKET,
         },
         {
           type: "custommachinery:fluid",
           mode: "input",
           fluid: "minecraft:water",
-          amount: 100800,
+          amount: BUCKET,
         },
         {
           type: "custommachinery:fluid",
           fluid: "astralgenerators:steam",
-          amount: 201600,
+          amount: 2 * BUCKET,
           mode: "output",
         },
         {

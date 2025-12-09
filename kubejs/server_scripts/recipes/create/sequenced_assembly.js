@@ -163,7 +163,7 @@
       .addPressingStep()
       .loops(5)
       .build();
-    
+
     // prettier-ignore
     createSequencedAssembly(event, {
       input: "#c:plates/gold",
@@ -331,6 +331,7 @@
         .addFillingStep({ fluid: "tconstruct:ender_slime", amount: BUCKET })
         .addDeployingStep("minecraft:chorus_fruit")
         .build();
+
       createSequencedAssembly(event, {
         input: "create:copper_casing",
         transitional: "createastral:incomplete_brass_casing",
@@ -847,7 +848,7 @@
 
     createSequencedAssembly(event, {
       input: "createastral:seitan",
-      transitional: "createastral:seitan",
+      transitional: "createastral:protoegg",
       outputs: ["minecraft:egg"],
     })
       .addDeployingStep("techreborn:calcite_dust")

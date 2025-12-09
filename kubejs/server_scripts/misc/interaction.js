@@ -1,3 +1,4 @@
+/// <reference types="./interaction.d.ts"/>
 /**
  * This file originally contained comments marked with "Better Comments" VS Code extension.
  * Now it has JSDoc comments instead, which have better editor integration.
@@ -99,64 +100,6 @@
     }
   });
 
-  /**
-   * @typedef ProjectileConfig
-   * @property {Projectile} projectile
-   * @property {Particles} particles
-   * @property {Explosion} explosion
-   */
-
-  /**
-   * @typedef Projectile
-   * @property {Special.Item} item Item ID.
-   */
-
-  /** @typedef {ParticlesEnabledWithNoColor | ParticlesEnabledWithColor | ParticlesDisabled} Particles */
-
-  /**
-   * @typedef ParticlesEnabledWithNoColor
-   * @property {true} enabled Whether the ammo emits particles or not.
-   * @property {number} spread
-   * @property {number} size
-   * @property {number} speed
-   * @property {number} count
-   * @property {string} type
-   * @property {number} size
-   * @property {false} hasColor Specifies whether the particle's color can be changed.
-   */
-
-  /**
-   * @typedef ParticlesEnabledWithColor
-   * @property {true} enabled Whether the ammo emits particles or not.
-   * @property {number} spread
-   * @property {number} size
-   * @property {number} speed
-   * @property {number} count
-   * @property {string} type
-   * @property {number} size
-   * @property {true} hasColor Specifies whether the particle's color can be changed.
-   * @property {[red: number, green: number, blue: number]} color The color of the particle
-   */
-
-  /**
-   * @typedef ParticlesDisabled
-   * @property {false} enabled Whether the ammo emits particles or not.
-   */
-
-  /** @typedef {ExplosionEnabled | ExplosionDisabled} Explosion */
-
-  /**
-   * @typedef ExplosionEnabled
-   * @property {true} enabled
-   * @property {number} strength
-   * @property {boolean} damageTerrain
-   */
-
-  /**
-   * @typedef ExplosionDisabled
-   * @property {false} enabled
-   */
-
   /** @type {ProjectileConfig[]} */
 
   //? createAutoJson will now also create the required json for create to understand that it can shoot that item.
@@ -212,7 +155,7 @@
       },
       sound: {
         enabled: false,
-        soundList: [],
+        // soundList: [],
       },
     },
     {
@@ -302,6 +245,7 @@
         sticky: ammo.sticky,
         sound_pitch: ammo.soundPitch,
       };
+      // @ts-expect-error This works.
       JsonIO.write(`kubejs/data/createastral/potato_cannon_projectile_types/${ammo.fileName}.json`, json);
     });
   });
@@ -313,14 +257,14 @@
         if (entity.fullNBT.Item.id === ammoType.projectile.item) {
           server.scheduleInTicks(5, (event) => {
             if (entity.removed || entity.deadOrDying || !entity.alive) {
-              let x = entity.fullNBT.Pos[0];
-              let y = entity.fullNBT.Pos[1];
-              let z = entity.fullNBT.Pos[2];
-              let dim = entity.getLevel().getDimension();
-              let explosion = entity.block.offset(0, 0, 0).createExplosion();
+              const x = entity.fullNBT.Pos[0];
+              const y = entity.fullNBT.Pos[1];
+              const z = entity.fullNBT.Pos[2];
+              const dim = entity.getLevel().getDimension();
+              const explosion = entity.block.offset(0, 0, 0).createExplosion();
               if (ammoType.particles.enabled) {
                 if (ammoType.particles.hasColor) {
-                  let [red, green, blue] = ammoType.particles.color;
+                  const [red, green, blue] = ammoType.particles.color;
                   server.runCommandSilent(
                     `execute in ${dim} run particle ${ammoType.particles.type} ${red} ${green} ${blue} ${ammoType.particles.size} ${x} ${y} ${z} ${ammoType.particles.spread} ${ammoType.particles.spread} ${ammoType.particles.spread} ${ammoType.particles.speed} ${ammoType.particles.count}`
                   );
@@ -365,48 +309,46 @@
         }
       });
     } else if (entity.type === "minecraft:item") {
-      let dim = entity.getLevel().getDimension();
-      let x = entity.x,
-        y = entity.y,
-        z = entity.z;
+      const dim = entity.getLevel().getDimension();
+      const {x, y, z} = entity;
       switch (entity.item) {
         case "createastral:fragile_sheet":
           entity.item = "createastral:broken_fragile_sheet";
           server.runCommandSilent(
-            `execute in ${dim} run particle minecraft:block minecraft:magenta_concrete_powder ${entity.x} ${entity.y} ${entity.z} 0.0 0.1 0.0 0 5`
+            `execute in ${dim} run particle minecraft:block minecraft:magenta_concrete_powder ${x} ${y} ${z} 0.0 0.1 0.0 0 5`
           );
           server.runCommandSilent(
-            `execute in ${dim} run playsound create:crushing_1 block @a ${entity.x} ${entity.y} ${entity.z}`
+            `execute in ${dim} run playsound create:crushing_1 block @a ${x} ${y} ${z}`
           );
           break;
 
         case "createastral:fragile_rocket_fin":
           entity.item = "createastral:broken_fragile_rocket_fin";
           server.runCommandSilent(
-            `execute in ${dim} run particle minecraft:block createastral:sturdy_sheet_block ${entity.x} ${entity.y} ${entity.z} 0.0 0.1 0.0 0 5`
+            `execute in ${dim} run particle minecraft:block createastral:sturdy_sheet_block ${x} ${y} ${z} 0.0 0.1 0.0 0 5`
           );
           server.runCommandSilent(
-            `execute in ${dim} run playsound create:crushing_1 block @a ${entity.x} ${entity.y} ${entity.z}`
+            `execute in ${dim} run playsound create:crushing_1 block @a ${x} ${y} ${z}`
           );
           break;
 
         case "kubejs:fragile_sheet_block":
           entity.item = "kubejs:broken_fragile_sheet_block";
           server.runCommandSilent(
-            `execute in ${dim} run particle minecraft:block kubejs:fragile_sheet_block ${entity.x} ${entity.y} ${entity.z} 0.0 0.1 0.0 0 5`
+            `execute in ${dim} run particle minecraft:block kubejs:fragile_sheet_block ${x} ${y} ${z} 0.0 0.1 0.0 0 5`
           );
           server.runCommandSilent(
-            `execute in ${dim} run playsound create:crushing_1 block @a ${entity.x} ${entity.y} ${entity.z}`
+            `execute in ${dim} run playsound create:crushing_1 block @a ${x} ${y} ${z}`
           );
           break;
 
         case "kubejs:fire_resistant_fragile_sheet_block":
           entity.item = "kubejs:broken_fire_resistant_fragile_sheet_block";
           server.runCommandSilent(
-            `execute in ${dim} run particle minecraft:block kubejs:broken_fire_resistant_fragile_sheet_block ${entity.x} ${entity.y} ${entity.z} 0.0 0.1 0.0 0 5`
+            `execute in ${dim} run particle minecraft:block kubejs:broken_fire_resistant_fragile_sheet_block ${x} ${y} ${z} 0.0 0.1 0.0 0 5`
           );
           server.runCommandSilent(
-            `execute in ${dim} run playsound create:crushing_1 block @a ${entity.x} ${entity.y} ${entity.z}`
+            `execute in ${dim} run playsound create:crushing_1 block @a ${x} ${y} ${z}`
           );
           break;
 

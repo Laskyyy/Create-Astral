@@ -1,0 +1,15 @@
+{
+  "replace": true,
+  "values": [
+	"minecraft:flint",
+	"minecraft:iron_nugget",
+	"techreborn:tin_nugget",
+	"minecraft:coal",
+	"minecraft:gunpowder",
+	"minecraft:clay_ball",
+	"minecraft:bone",
+	"dustrial_decor:rusty_iron_nugget",
+	"minecraft:string",
+	"techreborn:ashes_dust"
+  ]
+}

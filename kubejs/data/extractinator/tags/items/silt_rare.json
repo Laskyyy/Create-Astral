@@ -1,0 +1,12 @@
+{
+  "replace": true,
+  "values": [
+	"minecraft:redstone",
+	"minecraft:slime_ball",
+	"minecraft:amethyst_shard",
+	"minecraft:emerald",
+	"minecraft:ender_pearl",
+	"minecraft:glow_ink_sac",
+	"minecraft:gold_nugget"
+  ]
+}

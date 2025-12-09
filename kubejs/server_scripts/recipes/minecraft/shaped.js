@@ -65,16 +65,6 @@
         },
       },
       {
-        output: "techreborn:compressor",
-        pattern: ["ABA", "ACA", "ADA"],
-        key: {
-          A: "create:sturdy_sheet",
-          B: "create:integrated_circuit",
-          C: "create:mechanical_press",
-          D: "techreborn:basic_machine_frame",
-        },
-      },
-      {
         output: Item.of("minecraft:chest", 4),
         pattern: ["XXX", "X X", "XXX"],
         key: {
@@ -148,7 +138,7 @@
         output: "ad_astra:oxygen_loader",
         pattern: ["IOI", "PTP", "IFI"],
         key: {
-          I: "create:iron_sheet",
+          I: "#c:iron_plates",
           O: "ad_astra:oxygen_tank",
           P: "create:smart_fluid_pipe",
           T: "create:fluid_tank",
@@ -311,17 +301,6 @@
         key: {
           A: "minecraft:gunpowder",
           B: "minecraft:copper_ingot",
-        },
-      },
-      {
-        output: "ad_astra:oxygen_loader",
-        pattern: ["BAB", "DED", "BCB"],
-        key: {
-          A: "ad_astra:oxygen_tank",
-          B: "#c:iron_plates",
-          C: "ad_astra:engine_fan",
-          D: "create:smart_fluid_pipe",
-          E: "create:fluid_tank",
         },
       },
       {
@@ -1091,12 +1070,24 @@
         },
       },
       {
+        output: "techreborn:iron_alloy_furnace",
+        pattern: ["ABA", "CDC", "EFE"],
+        key: {
+          A: "create:sturdy_sheet",
+          B: "create:mechanical_mixer",
+          C: "techreborn:iron_furnace",
+          D: "techreborn:basic_machine_frame",
+          E: "create:integrated_circuit",
+          F: "create:blaze_burner",
+        },
+      },
+	  {
         output: "techreborn:alloy_smelter",
         pattern: ["ABA", "CDC", "EFE"],
         key: {
           A: "create:sturdy_sheet",
           B: "create:mechanical_mixer",
-          C: "create:basin",
+          C: "techreborn:red_cell_battery",
           D: "techreborn:basic_machine_frame",
           E: "create:integrated_circuit",
           F: "create:blaze_burner",
@@ -1441,14 +1432,13 @@
       },
       {
         output: "extractinator:extractinator",
-        pattern: ["H  ", "PRA", "CBA"],
+        pattern: ["H ", "FC", "MS"],
         key: {
           H: "minecraft:hopper",
-          P: "minecraft:piston",
-          C: "minecraft:cauldron",
-          B: "minecraft:copper_block",
-          R: "minecraft:redstone_block",
-          A: "minecraft:chain",
+          F: "create:filter",
+          C: "create:cogwheel",
+          M: "create:millstone",
+          S: "dustrial_decor:sheet_metal",
         },
       },
       {
