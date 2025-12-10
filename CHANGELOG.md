@@ -17,9 +17,16 @@ Please note that patch notes for versions 2.1.3 and lower are currently lacking 
 
 ## 2.1.5 [UNRELEASED]
 
+### SUMMARY
+
+Most changes in 2.1.5 are surrounding many pain points in Chapter 3, when most players typically quit as the grind ramps up dramatically. Alternate recipes have been added for many of the more painful processes such as Integrated Circuits, Brass Casing, and Launchpads to try to tackle this, with the aim of having easier yet less automatable solutions than the existing ones, or adding alternate recipes to give players more choice depending on what their automation setup looks like.
+
+Hephaestus has entered LTS for 1.18.2, meaning that some of the oldest bugs in the modpack have now been addressed. Thanks to @AlphaMode for continuing to support the mod!
+
 ### ADDITIONS
 
-- The modpack has now been localised for European Spanish (es_es).
+- The modpack has now been localised for European Spanish (es_es) - bear in mind this may already be outdated (#598) @lizondoalex
+- The modpack has now been localised for British English (en_gb) (#624) @The-Shortman
 
 #### Mod additions
 
@@ -27,7 +34,12 @@ Please note that patch notes for versions 2.1.3 and lower are currently lacking 
 
 #### Gameplay-changing
 
-> _Nothing to see here yet..._
+- Added a new Cogwheel Skull item, which can be used as a projectile for the Potato Cannon, with the ability to freeze mobs for a short time in the impact radius (#610) @Nik-Was
+- Implemented the Tech Reborn Alloy Furnace as an alternative to the Alloy Smelter. The Furnace uses fuel while the Smelter uses energy (#634) @ethanicusss
+- Implemented functionality to the Extractinator - Silt, Slush, Sand, and Gravel can be processed using it (#643) @ethanicusss
+- Added Doncrete, a Desh-Concrete hybrid block that can be used as a substitute for Blast-Resistant Concrete in the Launchpad recipe (#636) @ethanicusss
+- Added a set of items for an alternate production line for Integrated Circuits that can be done manually, requiring no Deployers, intended for small batch crafts (#636) @ethanicusss
+- Added an alternate production line for Biofuel (#636) @ethanicusss
 
 #### Quality of life
 
@@ -35,7 +47,9 @@ Please note that patch notes for versions 2.1.3 and lower are currently lacking 
 
 #### Behind-the-scenes
 
-> _Nothing to see here yet..._
+- Added a Pull Request Template to the GitHub repository (#626) @The-Shortman
+- Added a permanent Bug Tracker Project to the GitHub repository @The-Shortman
+- Added summaries to the top of future changelogs for a quick TL;DR of important changes @The-Shortman
 
 ### CHANGES
 
@@ -45,23 +59,56 @@ Please note that patch notes for versions 2.1.3 and lower are currently lacking 
 
 #### Gameplay-changing
 
-- Custom Potato Cannon projectiles now have some more possible effects when firing and landing, depending on the projectile.
+- Custom Potato Cannon projectiles now have some more possible effects when firing and landing, depending on the projectile (#612) @HyperRaccoon13
+- Removed Invar recipes as the metal is no longer used in anything (#634) @ethanicusss
+- Added all Mixer-based alloys to the recipes of the Tech Reborn Alloy Smelter (#634) @ethanicusss
+- Changed the recipes of the Thermal Generator and Gas Turbine to use Ostrum instead of Invar (#634) @ethanicusss
+- Nerfed the amount of Rubble obtainable from Ruined Containers to be in-line with other ruined blocks, which now only drop a minimum of 0 and a maximum of 2 rubble each (#635) @The-Shortman
+- Added an alternate, less efficient, easier recipe for Brass Casing (#636) @ethanicusss
+- Added an alternate production line for Precision Mechanisms once Steel is obtainable, which has a 100% output rate as opposed to the earlier recipe's 80% output rate (#636) @ethanicusss
+- Added an alternate recipe for Basic Machine Frames once Steel is obtainable, the Copper Casing can now be substituted with a Steel Frame (#636) @ethanicusss
+- Changed the Sulphuric Acid Mixer recipe to use Sulphur Dust instead of liquid Sulphur (#636) @ethanicusss
+- Reduced the amount of Steel required in making Blast Resistant Cement fluid by 33% (#636) @ethanicusss
+- Launchpad recipes now give two launchpads instead of only one, for the same cost (#636) @ethanicusss
+- Reduced power consumption of the existing Biomass recipe in the Compressor to 200E total (#636) @ethanicusss
+- Added an alternate recipe for Compressed Plantballs in the Compressor that guarantees their output as opposed to the Mechanical Press recipe (#636) @ethanicusss
+- Buffed the recipe for Leather in the Chemical Reactor to be better than just bulk blasting Rotten Flesh (#636) @ethanicusss
+- Buffed a few recipes in the Extractor and Grinder machines (#636) @ethanicusss
 
 #### Quality of life
 
-> _Nothing to see here yet..._
+- Changed the texture of the Distillation Tower Controller to match the advanced machine casing it is made from, and added an "off" variant for its idle state (#625) @ethanicusss
+- Astral Generators multiblock fluid inputs and outputs are now based around a bucket amount, but the ratio of input to output is the same as before (#622) @KonSola5
 
 #### Bug patches
 
-- Fixed the step-up modifier not working after 2.1.4.
+- Fixed the step-up modifier not working after 2.1.4 (#608) @ConductiveFoam
+- Reduced the texture size of the Hephaestus Farsighted modifier in an attempt to reduce mipmap level load times [N.B. There are more textures that need to be addressed like this] (#631, #632) @ethanicusss
+- Fixed Bronze Nuggets not melting into Molten Bronze (#620) @ConductiveFoam
+- Fixed a multitude of typos, grammar mistakes, and inaccuracies in the Questbook (#621, #624) @ConductiveFoam @The-Shortman
+- Bulba Tea recipe now outputs a bottle instead of 333 mB, removing stray millibuckets (#622) @KonSola5
+- Fixed duplicate recipes for the Oxygen Loader and Compressed Air Cells appearing in REI (#633) @The-Shortman
+- Fixed Compressor block names not having assigned lang keys, now they show their proper names instead of internal names (#633) @The-Shortman
+- Fixed the Alternator and Motor from Crafts and Additions not being able to output/input their full generation/consumption with only one connector (#633) @The-Shortman
+- Fixed the recipe for the Strength modifier conflicting with Overslime on Hephaestus chestplates (#633) @The-Shortman
+- Fixed the Seitan to Egg recipe turning into Protopork halfway through and outputting Pork (#633) @The-Shortman
+- Fixed the Mixer recipe for Farmers' Delight Pie Crust using an incorrect fluid amount (#633) @The-Shortman
+- Changed the Blackstone to Scorchia quest in the Automation Matrix chapter from Blackstone to Basalt, to properly represent that specific automation line (#638) @ConductiveFoam
 
 #### Minor mod updates
 
-> _Nothing to see here yet..._
+- Updated Hephaestus to version 3.5.2.312, providing LTS for 1.18.2
+  - Fixed chestplates preventing certain right-click interactions like sleeping, mounting entities, and interacting with pets
+  - Fixed the Luck modifer not increasing mob drop rates on weapons
+  - Fixed the Pockets ability on leggings not working
 
 #### Behind-the-scenes
 
-> _Nothing to see here yet..._
+- Placed every script that wasn't in an IIFE into an IIFE (#622) @KonSola5
+- Hephaestus fluid sync fix script is explicitly not type checked (#622) @KonSola5
+- Changed numbers to fluid constants where the constants weren't already being used (#622) @KonSola5
+- Remade type definitions for `interaction.js`, housed in `interaction.d.ts` (#622, #646) @KonSola5 @The-Shortman
+- Moved fluid constants to startup scripts in case they need fluid constants at some point, they currently don't (#622) @KonSola5
 
 ### REMOVALS
 
