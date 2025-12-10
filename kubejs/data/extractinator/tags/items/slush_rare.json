@@ -1,0 +1,15 @@
+{
+  "replace": true,
+  "values": [
+	"ad_astra:ice_shard",
+	"minecraft:ink_sac",
+	"minecraft:prismarine_shard",
+	"minecraft:prismarine_crystals",
+	"techreborn:diamond_nugget",
+	"minecraft:gold_nugget",
+	"minecraft:nautilus_shell",
+	"minecraft:kelp",
+	"techreborn:sponge_piece",
+	"minecraft:sea_pickle"
+  ]
+}
