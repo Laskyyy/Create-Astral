@@ -130,7 +130,7 @@
   "tooltip.ae2.certus_quartz_dust": "Found underground on the moon",
 
   "tooltip.computercraft.disk": "This recipe is not correct, use redstone instead of rose quartz.",
-  "tooltip.extractinator.extractinator": "Purely decorative. No functional use. Not a Terraria reference.",
+  "tooltip.extractinator.extractinator": "Extractinate blocks for loot! Press U on me to see available recipes.",
   "tooltip.adoptafloppa.amazon_delivery": "A note is attached: \"Feed this thing fish once a day or else it will explode. Good luck.\".",
   "tooltip.tconstruct.raw_cobalt": "Gated by reaching the Moon!.",
   "tooltip.tconstruct.smeltery_controller": "Disabled, use a foundry in chapter 3.",
@@ -271,6 +271,7 @@
   "item.createastral.protochicken": "Protochicken",
   "item.createastral.protomutton": "Protomutton",
   "item.createastral.protorabbit": "Protorabbit",
+  "item.createastral.protoegg": "Protoegg",
 
   "item.createastral.radiant_helmet": "Radiant Helmet",
   "item.createastral.radiant_chestplate": "Radiant Chestplate",

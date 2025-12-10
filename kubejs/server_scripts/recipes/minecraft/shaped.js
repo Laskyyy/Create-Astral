@@ -138,7 +138,7 @@
         output: "ad_astra:oxygen_loader",
         pattern: ["IOI", "PTP", "IFI"],
         key: {
-          I: "create:iron_sheet",
+          I: "#c:iron_plates",
           O: "ad_astra:oxygen_tank",
           P: "create:smart_fluid_pipe",
           T: "create:fluid_tank",
@@ -301,17 +301,6 @@
         key: {
           A: "minecraft:gunpowder",
           B: "minecraft:copper_ingot",
-        },
-      },
-      {
-        output: "ad_astra:oxygen_loader",
-        pattern: ["BAB", "DED", "BCB"],
-        key: {
-          A: "ad_astra:oxygen_tank",
-          B: "#c:iron_plates",
-          C: "ad_astra:engine_fan",
-          D: "create:smart_fluid_pipe",
-          E: "create:fluid_tank",
         },
       },
       {
@@ -1443,14 +1432,13 @@
       },
       {
         output: "extractinator:extractinator",
-        pattern: ["H  ", "PRA", "CBA"],
+        pattern: ["H ", "FC", "MS"],
         key: {
           H: "minecraft:hopper",
-          P: "minecraft:piston",
-          C: "minecraft:cauldron",
-          B: "minecraft:copper_block",
-          R: "minecraft:redstone_block",
-          A: "minecraft:chain",
+          F: "create:filter",
+          C: "create:cogwheel",
+          M: "create:millstone",
+          S: "dustrial_decor:sheet_metal",
         },
       },
       {
