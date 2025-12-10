@@ -63,6 +63,10 @@
         inputs: ["minecraft:seagrass"],
       },
       {
+        output: "minecraft:warped_wart_block",
+        inputs: [Item.of("minecraft:twisting_vines", 9)],
+      },
+      {
         output: { fluid: "astraladditions:sputum", amount: 500 * mB },
         inputs: [
           Item.of("createastral:ender_marimo", 4),

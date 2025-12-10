@@ -30,6 +30,11 @@
         time: 180,
       },
       {
+        output: ["minecraft:mycelium"],
+        input: ["#minecraft:dirt", "ad_astra:cheese"],
+        time: 100,
+      },
+      {
         output: [{ fluid: "kubejs:shimmer", amount: BUCKET / 9 }],
         input: ["ae2:fluix_crystal", "minecraft:glowstone_dust", "tconstruct:amethyst_bronze_nugget"],
         heat: "heated",

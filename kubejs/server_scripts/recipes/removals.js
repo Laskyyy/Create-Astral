@@ -275,6 +275,7 @@
       { type: "create:crushing", input: "minecraft:blaze_rod" },
       { type: "create:crushing", input: "minecraft:bone" },
       { type: "create:crushing", input: "minecraft:tuff" },
+      { type: "create:crushing", input: "minecraft:nether_wart_block" },
       { type: "create:milling", input: "minecraft:tuff" },
       { type: "create:milling", input: "minecraft:basalt" },
       { type: "create:milling", input: "minecraft:clay" },
