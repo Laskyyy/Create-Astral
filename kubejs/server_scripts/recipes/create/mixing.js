@@ -14,6 +14,11 @@
 
     /** @type {MixingRecipe[]} */
     const mixingRecipes = [
+		{
+        output: [{ fluid: "techreborn:sulfuric_acid", amount: BUCKET }],
+        input: ["techreborn:sulfur_dust", { fluid: "minecraft:water", amount: 500 * mB }, { fluid: "ad_astra:oxygen", amount: BUCKET }],
+        time: 300,
+      },
       {
         output: [{ fluid: "estrogen:molten_amethyst", amount: INGOT / 2 }],
         input: [{ fluid: "tconstruct:molten_amethyst", amount: 500 * mB }, "astraladditions:bulba_root"],
@@ -354,7 +359,7 @@
         input: [
           "#c:concrete_powder",
           Item.of("createastral:lime", 2),
-          Item.of("techreborn:steel_dust", 3),
+          Item.of("techreborn:steel_dust", 2),
           { fluid: "minecraft:water", amount: BUCKET },
         ],
         heat: "heated",

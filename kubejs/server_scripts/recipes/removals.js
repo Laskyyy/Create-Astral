@@ -99,6 +99,54 @@
         type: "techreborn:grinder",
         input: "#techreborn:calcite_dust_material",
       },
+      {
+        type: "techreborn:extractor",
+        input: "techreborn:plantball",
+      },
+      {
+        type: "techreborn:extractor",
+        input: "minecraft:sugar_cane",
+      },
+      {
+        type: "techreborn:extractor",
+        input: "minecraft:crossbow",
+      },
+      {
+        type: "techreborn:extractor",
+        input: "minecraft:bow",
+      },
+      {
+        type: "techreborn:extractor",
+        input: "#minecraft:beds",
+      },
+      {
+        type: "techreborn:extractor",
+        input: "#minecraft:banners",
+      },
+      {
+        type: "techreborn:extractor",
+        input: "minecraft:sweet_berries",
+      },
+      {
+        type: "techreborn:extractor",
+        input: "#c:plates/lead",
+      },
+      {
+        type: "techreborn:extractor",
+        input: "minecraft:orange_tulip",
+      },
+      {
+        type: "techreborn:grinder",
+        input: "#c:certus_quartz",
+      },
+      {
+        type: "techreborn:grinder",
+        input: "#c:plates/obsidian",
+      },
+      {
+        type: "techreborn:chemical_reactor",
+        output: "minecraft:leather",
+      },
       { type: "techreborn:grinder", input: "#c:ores" },
       { type: "techreborn:grinder", input: "#c:storage_blocks" },
       {

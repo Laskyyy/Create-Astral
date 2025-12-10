@@ -89,7 +89,7 @@
         cast: { item: "createastral:fragile_rocket_fin", consumed: true },
       },
       {
-        fluidInput: { fluid: "tconstruct:molten_steel", amount: INGOT },
+        fluidInput: { fluid: "tconstruct:molten_steel", amount: INGOT/3 },
         result: "astraladditions:steel_ring",
         coolingTime: 100,
         cast: { item: "astraladditions:ring_gold_cast", consumed: false },

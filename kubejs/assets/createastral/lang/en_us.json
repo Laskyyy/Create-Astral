@@ -163,6 +163,8 @@
   "tooltip.hover.warning.2": "Shift ",
   "tooltip.hover.warning.3": "to see more info.",
 
+  "subtitle.createastral.stop_sound": "Time stops",
+
   "comment_3": "custom item/block/fluid",
 
   "item.create.lapis_sheet": "Lapis Sheet",
@@ -239,6 +241,9 @@
   "item.createastral.electrified_pin": "Electrified Pin",
   "item.createastral.ender_mush": "Ender Mush",
   "item.createastral.promethium_atomic_battery": "Promethium Atomic Battery",
+  "item.createastral.printed_circuit": "Printed Circuit",
+  "item.createastral.copper_clad_lapis_board": "Copper Clad Lapis Board",
+  "item.createastral.printed_copper_clad_lapis_board": "Printed Copper Clad Lapis Board",
   "item.createastral.logo": "Astral",
   "item.createastral.uranium_residue": "Uranium Residue",
   "item.createastral.navigation_mechanism": "Navigation Mechanism",

@@ -83,6 +83,16 @@
       .hardness(3)
       .tagBlock("minecraft:mineable/pickaxe")
       .displayName("Copper Coil Block");
+	event
+      .create("createastral:blast-resistant_doncrete", "basic")
+      .material("stone")
+      .hardness(4)
+      .resistance(1200)
+      .textureAll("createastral:block/doncrete_side")
+      .texture("up", "createastral:block/doncrete")
+      .texture("down", "createastral:block/doncrete")
+      .tagBlock("minecraft:mineable/pickaxe")
+      .displayName("Blast-Resistant Doncrete");
     event
       .create("createastral:blast-resistant_concrete", "basic")
       .material("stone")
