@@ -7,14 +7,26 @@
       {
         input: [{ item: "techreborn:compressed_plantball", count: 4 }],
         output: [{ item: "createaddition:biomass", count: 1 }],
-        time: 300,
-        power: 10,
+        time: 200,
+        power: 1,
+      },
+      {
+        input: [{ item: "techreborn:plantball", count: 2 }],
+        output: [{ item: "techreborn:compressed_plantball", count: 1 }],
+        time: 100,
+        power: 5,
       },
       {
         input: [{ item: "createastral:fragile_sheet", count: 16 }],
         output: [{ item: "createastral:fragile_rocket_fin", count: 1 }],
         time: 300,
         power: 10,
+      },
+      {
+        input: [{ item: "createastral:small_desh_dust", count: 9 }],
+        output: [{ item: "createastral:desh_dust", count: 1 }],
+        time: 40,
+        power: 2,
       },
     ];
     compressorRecipes.forEach((recipe) => {
