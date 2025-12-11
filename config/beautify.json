@@ -1,0 +1,9 @@
+{
+  "blinds": {
+    "searchRadius": 6,
+    "opensFromRoot": true
+  },
+  "houses": {
+    "botanistSpawnWeight": 2
+  }
+}

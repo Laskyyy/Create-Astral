@@ -1,0 +1,42 @@
+[
+  {
+    "id": "ae2",
+    "enabled": true
+  },
+  {
+    "id": "camsbackpacks",
+    "enabled": true
+  },
+  {
+    "id": "fastbench",
+    "enabled": true
+  },
+  {
+    "id": "fastfurnace",
+    "enabled": true
+  },
+  {
+    "id": "improved-stations",
+    "enabled": true
+  },
+  {
+    "id": "ironfurnaces",
+    "enabled": true
+  },
+  {
+    "id": "origins",
+    "enabled": true
+  },
+  {
+    "id": "recipecache",
+    "enabled": true
+  },
+  {
+    "id": "roughlyenoughitems-runtime",
+    "enabled": true
+  },
+  {
+    "id": "toms_storage",
+    "enabled": true
+  }
+]

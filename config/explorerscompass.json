@@ -1,0 +1,24 @@
+{
+  "common": {
+    "allowTeleportComment": "Allows a player to teleport to a located structure when in creative mode, opped, or in cheat mode.",
+    "allowTeleport": true,
+    "displayCoordinatesComment": "Allows players to view the precise coordinates and distance of a located structure on the HUD, rather than relying on the direction the compass is pointing.",
+    "displayCoordinates": true,
+    "maxRadiusComment": "The maximum radius that will be searched for a structure. Raising this value will increase search accuracy but will potentially make the process more resource intensive.",
+    "maxRadius": 10000,
+    "maxSamplesComment": "The maximum number of samples to be taken when searching for a structure.",
+    "maxSamples": 100000,
+    "structureBlacklistComment": "A list of structures that the compass will not be able to search for, specified by resource location. The wildcard character * can be used to match any number of characters, and ? can be used to match one character. Ex (ignore backslashes): [\"minecraft:stronghold\", \"minecraft:endcity\", \"minecraft:*village*\"]",
+    "structureBlacklist": []
+  },
+  "client": {
+    "displayWithChatOpenComment": "Displays compass information even while chat is open.",
+    "displayWithChatOpen": true,
+    "translateStructureNamesComment": "Attempts to translate structure names before fixing the unlocalized names. Translations may not be available for all structures.",
+    "translateStructureNames": true,
+    "overlayLineOffsetComment": "The line offset for information rendered on the HUD.",
+    "overlayLineOffset": 1,
+    "overlaySideComment": "The side for information rendered on the HUD. Ex: LEFT, RIGHT",
+    "overlaySide": "LEFT"
+  }
+}

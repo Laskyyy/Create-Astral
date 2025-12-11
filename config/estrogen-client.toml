@@ -1,0 +1,28 @@
+
+#.
+#Settings for the chest feature
+[chest]
+	#.
+	#Enable chest feature
+	chestFeature = true
+	#.
+	#Enable chest feature armor
+	chestArmor = true
+
+#.
+#UI element Configuration
+[ui]
+	#.
+	#Enable dash overlay
+	dashOverlay = true
+
+#.
+#Compatibility between other mods settings
+[compat]
+	#.
+	#Enable ears Compatibility
+	ears = true
+	#.
+	#Enable figura Compatibility
+	figura = true
+

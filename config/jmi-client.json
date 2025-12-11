@@ -1,0 +1,11 @@
+{
+  "ftbChunks": true,
+  "waystone": true,
+  "waypointMessageBlocks": [],
+  "waypointMessageEmptyHandOnly": true,
+  "claimedChunkOverlayOpacity": 0.222223,
+  "disableFTBFunction": true,
+  "showClaimChunkScreen": true,
+  "waystoneColor": 16777215,
+  "defaultConfigVersion": -1
+}

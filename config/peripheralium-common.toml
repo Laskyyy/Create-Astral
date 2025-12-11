@@ -1,0 +1,30 @@
+
+[limitations]
+	#Limits max item transfer per one operation
+	#Range: 1 ~ 9223372036854775807
+	itemStorageTransferLimit = 128
+	#Limits max fluid transfer per one operation
+	#Range: 1 ~ 9223372036854775807
+	fluidStorageTransferLimit = 5305500
+
+[cooldown]
+	#Enables initial cooldown on peripheral initialization
+	isInitialCooldownEnabled = true
+	#Determinates initial cooldown sensentive level, values lower then this value will not trigger initial cooldown
+	#Range: > 0
+	initialCooldownSensetiveLevel = 6000
+	#Determinates trashold for cooldown to be stored
+	#Range: > 0
+	cooldownTrashholdLevel = 100
+
+[experience]
+	#Determinates amount xp to correspond one fuel point
+	#Range: > 1
+	xpToFuelRate = 10
+
+[operations]
+	#Range: > 1000
+	xpTransferCooldown = 1000
+	#Range: > 0
+	xpTransferCost = 1
+

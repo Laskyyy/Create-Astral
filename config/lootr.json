@@ -1,0 +1,46 @@
+{
+  "debug": {
+    "report_invalid_tables": true
+  },
+  "seed": {
+    "randomize_seed": true
+  },
+  "conversion": {
+    "maximum_entry_age": 1800
+  },
+  "breaking": {
+    "enable_break": false,
+    "enable_fake_player_break": false,
+    "disable_break": false,
+    "power_comparators": true,
+    "blast_resistant": false,
+    "blast_immune": false
+  },
+  "lists": {
+    "dimension_whitelist": [],
+    "dimension_blacklist": [],
+    "loot_table_blacklist": [],
+    "loot_modid_blacklist": []
+  },
+  "decay": {
+    "decay_value": 6000,
+    "decay_all": false,
+    "decay_modids": [],
+    "decay_loot_tables": [],
+    "decay_dimensions": []
+  },
+  "refresh": {
+    "refresh_value": 24000,
+    "refresh_all": false,
+    "refresh_modids": [],
+    "refresh_loot_tables": [],
+    "refresh_dimensions": []
+  },
+  "notifications": {
+    "notification_delay": 600,
+    "disable_notifications": false
+  },
+  "vanilla": {
+    "vanilla_textures": false
+  }
+}
