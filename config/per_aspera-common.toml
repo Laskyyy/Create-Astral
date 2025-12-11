@@ -1,0 +1,18 @@
+#Whether the thruster boots should be enabled
+thrusterBootsEnabled = true
+#How high thruster boots can boost you
+#Range: 0.05 ~ 5.0
+thrusterBootsJumpStrength = 0.6
+#Time in ticks for cooldown of using thruster boots
+#Range: > 0
+thrusterBootsTimeoutTicks = 120
+#Where the Thruster Boots Charge display is aligned
+#Allowed Values: TopLeft, TopCenter, TopRight, LeftCenter, RightCenter, BottomLeft, BottomCenter, BottomRight
+thrusterBootsChargeHUDAlignment = "TopRight"
+#X-Offset of the Thruster Boots Charge HUD
+#Range: -1000 ~ 1000
+thrusterBootsChargeHUDX = 10
+#Y-Offset of the Thruster Boots Charge HUD
+#Range: -1000 ~ 1000
+thrusterBootsChargeHUDY = 10
+

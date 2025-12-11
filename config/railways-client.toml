@@ -1,0 +1,16 @@
+
+#General settings
+[general]
+	#Journeymap train overlay update time (in ticks)
+	#Range: 1 ~ 600
+	journeymapUpdateTicks = 1
+	#Journeymap train overlay old marker removal check time (in ticks)
+	#Range: 10 ~ 1200
+	journeymapObsolescenceCheckTicks = 200
+	#Show extended debug info in coupler goggle overlay
+	extendedCouplerDebug = false
+	#Skip clientside train derailing. This prevents stuttering when a train places tracks, but trains will not appear derailed when they crash
+	skipClientsideDerailing = false
+	#Use a scanline shader when spying through a conductor
+	conductorSpyShader = true
+

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "compressor:block/octuple_compressed_basalt"
+    }
+  }
+}

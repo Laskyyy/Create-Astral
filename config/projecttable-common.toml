@@ -1,0 +1,8 @@
+#How many rows of extra storage should a project table have?
+#Range: 0 ~ 5
+extraStorageRows = 2
+#Whether the inventory of the block can be interacted with from the outside
+storageInteractions = true
+#Whether inputting items into the block starts in the crafting grid or the extra storage
+insertIntoGrid = false
+
