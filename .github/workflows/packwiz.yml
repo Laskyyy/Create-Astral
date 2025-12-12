@@ -74,6 +74,7 @@ jobs:
           ./packwiz refresh
 
       - name: Clean up after CurseForge client zip creation
+        run: |
           ./packwiz remove servercore
           mv temp-jar/servercore* ./mods
           rm -r ./temp-jar
