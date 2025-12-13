@@ -72,7 +72,7 @@ jobs:
           done < "./kubejs/startup_scripts/misc/misc.js" > "tmp.js"
           IFS="$OLD_IFS"
           cat tmp.js > ./kubejs/startup_scripts/misc/misc.js
-          rm tmp.db
+          rm tmp.js
 
       - name: Create pull request to new release branch
         uses: peter-evans/create-pull-request@v8
