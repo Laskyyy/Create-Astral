@@ -1,0 +1,83 @@
+name: Create release branch
+
+on:
+  workflow_dispatch:
+    inputs:
+      new_version:
+        description: Version to display on all fields
+        required: true
+
+jobs:
+  versioning:
+    name: Grab version numbers
+    runs-on: ubuntu-latest
+    outputs:
+      old_version: ${{steps.old-version.outputs.version}}
+      new_version: ${{github.events.inputs.new_version}}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Get old version
+        id: old-version
+        shell: bash
+        run: |
+          echo "version=$(echo "$(<pack.toml)" | grep "version =" | cut -d '"' -f 2)" >> "$GITHUB_OUTPUT"
+
+  release:
+    name: Open Pull Request
+    needs: [versioning]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          ref: Astral-Experimental
+
+      # cant use sed easily here because it gets weird when the version grabber greps for regex characters like [] expecially in experimental versioning
+      - name: Set pack.toml version
+        id: packwiz-version
+        shell: bash
+        run: |
+          while read -r line; do
+            echo "${line//"${{needs.versioning.outputs.old_version}}"/"${{needs.versioning.outputs.new_version}}"}"
+          done < "pack.toml" > "tmp.toml"
+          cat tmp.toml > pack.toml
+          rm tmp.toml
+
+      # need to set IFS to be empty so that read preserves whitespace
+      - name: Set FancyMenu environment variable
+        id: fancymenu-version
+        shell: bash
+        run: |
+          OLD_IFS="$IFS"
+          IFS=
+          while read -r line; do
+            echo "${line//"${{needs.versioning.outputs.old_version}}"/"${{needs.versioning.outputs.new_version}}"}"
+          done < "./config/fancymenu/user_variables.db" > "tmp.db"
+          IFS="$OLD_IFS"
+          cat tmp.db > ./config/fancymenu/user_variables.db
+          rm tmp.db
+
+      - name: Set startup debug log version
+        id: startup-version
+        shell: bash
+        run: |
+          OLD_IFS="$IFS"
+          IFS=
+          while read -r line; do
+            echo "${line//"${{needs.versioning.outputs.old_version}}"/"${{needs.versioning.outputs.new_version}}"}"
+          done < "./kubejs/startup_scripts/misc/misc.js" > "tmp.js"
+          IFS="$OLD_IFS"
+          cat tmp.js > ./kubejs/startup_scripts/misc/misc.js
+          rm tmp.db
+
+      - name: Create pull request to new release branch
+        uses: peter-evans/create-pull-request@v8
+        with:
+          commit-message: THIS IS A TEST, THE NEW UPDATE IS NOT BEING RELEASED YET!
+          title: Merge auto/${{needs.versioning.outputs.new_version}} into main
+          branch: auto/${{needs.versioning.outputs.new_version}}
+          base: main
