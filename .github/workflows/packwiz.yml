@@ -70,7 +70,7 @@ jobs:
 
       - name: Create CurseForge client zip
         run: |
-          ./packwiz curseforge export -o ${{steps.construct-base-name.outputs.ASTRAL_CF_NAME}}.zip
+          ./packwiz curseforge export -o "${{steps.construct-base-name.outputs.ASTRAL_CF_NAME}}.zip"
           ./packwiz refresh
 
       - name: Clean up after CurseForge client zip creation
@@ -117,7 +117,7 @@ jobs:
       - name: Unpack client pack for nicer artifact
         if: ${{github.event.inputs.artifacts}}
         run: |
-          unzip ${{steps.construct-base-name.outputs.ASTRAL_CF_NAME}}.zip -d ./client
+          unzip "${{steps.construct-base-name.outputs.ASTRAL_CF_NAME}}.zip" -d ./client
 
       - name: Upload client pack to GitHub
         if: ${{ github.event.inputs.artifacts }}
