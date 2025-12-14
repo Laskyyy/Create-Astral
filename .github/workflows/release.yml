@@ -13,7 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       old_version: ${{steps.old-version.outputs.version}}
-      new_version: ${{github.events.inputs.new_version}}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -42,7 +41,7 @@ jobs:
         shell: bash
         run: |
           while read -r line; do
-            echo "${line//"${{needs.versioning.outputs.old_version}}"/"${{needs.versioning.outputs.new_version}}"}"
+            echo "${line//"${{needs.versioning.outputs.old_version}}"/"${{github.event.inputs.new_version}}"}"
           done < "pack.toml" > "tmp.toml"
           cat tmp.toml > pack.toml
           rm tmp.toml
@@ -55,7 +54,7 @@ jobs:
           OLD_IFS="$IFS"
           IFS=
           while read -r line; do
-            echo "${line//"${{needs.versioning.outputs.old_version}}"/"${{needs.versioning.outputs.new_version}}"}"
+            echo "${line//"${{needs.versioning.outputs.old_version}}"/"${{github.event.inputs.new_version}}"}"
           done < "./config/fancymenu/user_variables.db" > "tmp.db"
           IFS="$OLD_IFS"
           cat tmp.db > ./config/fancymenu/user_variables.db
@@ -68,7 +67,7 @@ jobs:
           OLD_IFS="$IFS"
           IFS=
           while read -r line; do
-            echo "${line//"${{needs.versioning.outputs.old_version}}"/"${{needs.versioning.outputs.new_version}}"}"
+            echo "${line//"${{needs.versioning.outputs.old_version}}"/"${{github.event.inputs.new_version}}"}"
           done < "./kubejs/startup_scripts/misc/misc.js" > "tmp.js"
           IFS="$OLD_IFS"
           cat tmp.js > ./kubejs/startup_scripts/misc/misc.js
@@ -78,7 +77,7 @@ jobs:
         id: open-pr
         shell: bash
         run: |
-          VERSION=${{needs.versioning.outputs.new_version}}
+          VERSION=${{github.event.inputs.new_version}}
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b "release/$VERSION"
