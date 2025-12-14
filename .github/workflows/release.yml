@@ -75,9 +75,9 @@ jobs:
           rm tmp.js
 
       - name: Create pull request to new release branch
-        uses: peter-evans/create-pull-request@v8
-        with:
-          commit-message: THIS IS A TEST, THE NEW UPDATE IS NOT BEING RELEASED YET!
-          title: Merge auto/${{needs.versioning.outputs.new_version}} into main
-          branch: auto/${{needs.versioning.outputs.new_version}}
-          base: main
+        id: open-pr
+        shell: bash
+        run: |
+          gh pr create -t "Merge release/${{needs.versioning.outputs.new_version}} into main" -H "release/${{needs.versioning.outputs.new_version}}" -B "main"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
