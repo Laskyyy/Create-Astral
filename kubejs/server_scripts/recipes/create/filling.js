@@ -134,12 +134,6 @@
         amount: 250 * mB,
       },
       {
-        input: "minecraft:apple",
-        output: "astralfoods:shimmered_apple",
-        fluid: "kubejs:shimmer",
-        amount: BUCKET / 3,
-      },
-      {
         input: "astralfoods:seared_potato",
         output: "astralfoods:dipped_potato",
         fluid: "tconstruct:molten_gold",

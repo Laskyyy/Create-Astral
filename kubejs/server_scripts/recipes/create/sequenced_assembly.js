@@ -163,7 +163,7 @@
       .addPressingStep()
       .loops(5)
       .build();
-    
+
     // prettier-ignore
     createSequencedAssembly(event, {
       input: "#c:plates/gold",
@@ -194,6 +194,24 @@
       .addDeployingStep("astralfoods:seared_potato")
       .addDeployingStep("minecraft:cooked_rabbit")
       .addFillingStep({ fluid: "kubejs:shimmer", amount: BUCKET })
+      .build();
+
+    createSequencedAssembly(event, {
+      input: "minecraft:apple",
+      transitional: "minecraft:apple",
+      outputs: ["astralfoods:shimmered_apple"],
+    })
+      .addDeployingStep("tconstruct:ender_slime_crystal")
+      .addFillingStep({ fluid: "kubejs:shimmer", amount: BUCKET / 3 })
+      .build();
+
+    createSequencedAssembly(event, {
+      input: "farmersdelight:pie_crust",
+      transitional: "farmersdelight:pie_crust",
+      outputs: ["astralfoods:gamers_delight"],
+    })
+      .addDeployingStep("techreborn:compressed_plantball")
+      .addFillingStep({ fluid: "techreborn:lithium", amount: BUCKET })
       .build();
 
     // Yttr uses a non-standard ingredient, this has to remain an "event.custom".

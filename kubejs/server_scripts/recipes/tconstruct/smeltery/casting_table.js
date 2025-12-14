@@ -101,9 +101,9 @@
         cast: { item: "minecraft:lily_of_the_valley", consumed: true },
       },
       {
-        fluidInput: { fluid: "tconstruct:seared_stone", amount: NUGGET * 3 },
+        fluidInput: { fluid: "tconstruct:seared_stone", amount: SLIMEBALL },
         result: "astralfoods:seared_potato",
-        coolingTime: 20,
+        coolingTime: 40,
         cast: { item: "minecraft:potato", consumed: true },
       },
       {

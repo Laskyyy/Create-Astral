@@ -1334,52 +1334,6 @@
 			}]
 		}
 		{
-			title: "{ftbquests.chapter.assorted_goals.quests40.title}"
-			x: -10.5d
-			y: 9.0d
-			description: [
-				"{ftbquests.chapter.assorted_goals.quests40.description0}"
-				""
-				"{ftbquests.chapter.assorted_goals.quests40.description2}"
-			]
-			dependencies: ["2CE5BB6A7B30CA4C"]
-			optional: true
-			id: "3522109BABC7E48B"
-			tasks: [
-				{
-					id: "34A0BAA9C0AE7A74"
-					type: "item"
-					item: "cookingforblockheads:white_kitchen_floor"
-				}
-				{
-					id: "009412A63A560AB1"
-					type: "item"
-					item: "cookingforblockheads:milk_jar"
-				}
-				{
-					id: "720CA3FD6574A4AF"
-					type: "item"
-					item: "cookingforblockheads:fridge"
-				}
-				{
-					id: "6D8617ECA0B6259F"
-					type: "item"
-					item: "cookingforblockheads:oven"
-				}
-				{
-					id: "6FC3BADFCF84BEF5"
-					type: "item"
-					item: "cookingforblockheads:cooking_table"
-				}
-			]
-			rewards: [{
-				id: "3E69ED9AD85027DE"
-				type: "item"
-				item: "chipped:white_concrete_1"
-				count: 10
-			}]
-		}
-		{
 			title: "{ftbquests.chapter.assorted_goals.quests41.title}"
 			icon: {
 				id: "ftbquests:custom_icon"
@@ -1470,31 +1424,6 @@
 				id: "3093A76BEC813CA5"
 				type: "item"
 				item: "farmersdelight:hot_cocoa"
-			}]
-		}
-		{
-			x: -11.5d
-			y: 9.0d
-			subtitle: "{ftbquests.chapter.assorted_goals.quests45.subtitle}"
-			dependencies: ["3522109BABC7E48B"]
-			optional: true
-			id: "152FF1A843FFDDB5"
-			tasks: [
-				{
-					id: "17B4104F33DAE09C"
-					type: "item"
-					item: "cookingforblockheads:recipe_book"
-				}
-				{
-					id: "44ABB2A96EF3BC1D"
-					type: "item"
-					item: "cookingforblockheads:no_filter_edition"
-				}
-			]
-			rewards: [{
-				id: "424A77A5F66DAD47"
-				type: "item"
-				item: "minecraft:cooked_beef"
 			}]
 		}
 		{
@@ -1715,31 +1644,6 @@
 				type: "item"
 				item: "vinery:grapevine_pot"
 			}]
-		}
-		{
-			title: "{ftbquests.chapter.assorted_goals.quests54.title}"
-			x: -9.0d
-			y: 8.5d
-			subtitle: "{ftbquests.chapter.assorted_goals.quests54.subtitle}"
-			dependencies: ["2CE5BB6A7B30CA4C"]
-			id: "4D65B95D552D92BA"
-			tasks: [
-				{
-					id: "5051275100D1E1F0"
-					type: "item"
-					item: "vinery:wood_fired_oven"
-				}
-				{
-					id: "7CD55BBD425B31A4"
-					type: "item"
-					item: "vinery:stove"
-				}
-				{
-					id: "5D50E36D0CF39183"
-					type: "item"
-					item: "vinery:kitchen_sink"
-				}
-			]
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests55.title}"
@@ -1963,6 +1867,32 @@
 				id: "4F8FB44812FB367D"
 				type: "item"
 				item: "drinkbeer:recipe_board_package"
+			}]
+		}
+		{
+			icon: {
+				id: "farmersdelight:diamond_knife"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -9.0d
+			y: 11.5d
+			shape: "gear"
+			subtitle: "{ftbquests.chapter.assorted_goals.quests59.subtitle}"
+			description: [
+				"{ftbquests.chapter.assorted_goals.quests59.description0}"
+				""
+				"{ftbquests.chapter.assorted_goals.quests59.description2}"
+			]
+			dependencies: ["2CE5BB6A7B30CA4C"]
+			size: 1.25d
+			id: "5CD05F26EB5C6754"
+			tasks: [{
+				id: "3C00FC0C8F6C30A1"
+				type: "checkmark"
+				title: "{ftbquests.chapter.assorted_goals.quests59.title}"
 			}]
 		}
 	]

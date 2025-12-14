@@ -2738,16 +2738,6 @@
         time: 60,
       },
       {
-        output: ["astralfoods:gamers_delight"],
-        input: [
-          "techreborn:compressed_plantball",
-          "farmersdelight:pie_crust",
-          { fluid: "techreborn:lithium", amount: BUCKET },
-        ],
-        heat: "heated",
-        time: 80,
-      },
-      {
         output: "minecraft:slime_ball",
         input: ["minecraft:lime_dye", "#c:slimeballs"],
         time: 50,
