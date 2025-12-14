@@ -219,11 +219,7 @@
 					id: "tconstruct:dagger"
 					Count: 1b
 					tag: {
-						tic_multipliers: {
-							"tconstruct:mining_speed": 0.75f
-							"tconstruct:attack_damage": 0.65f
-							"tconstruct:durability": 0.75f
-						}
+						Damage: 0
 						tic_stats: {
 							"tconstruct:attack_speed": 2.3939998f
 							"tconstruct:mining_speed": 5.835375f
@@ -231,8 +227,15 @@
 							"tconstruct:harvest_tier": "minecraft:diamond"
 							"tconstruct:durability": 629.25f
 						}
-						Damage: 0
-						tic_broken: 0b
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.75f
+							"tconstruct:attack_damage": 0.65f
+							"tconstruct:durability": 0.75f
+						}
+						tic_materials: [
+							"tconstruct:cobalt"
+							"tconstruct:cobalt"
+						]
 						tic_modifiers: [
 							{
 								name: "tconstruct:lightweight"
@@ -251,10 +254,7 @@
 								level: 1s
 							}
 						]
-						tic_materials: [
-							"tconstruct:cobalt"
-							"tconstruct:cobalt"
-						]
+						tic_broken: 0b
 						tic_volatile_data: {
 							"tconstruct:duel_wielding": 1b
 						}
@@ -519,7 +519,7 @@
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests54.title}"
-			x: -0.5d
+			x: -2.0d
 			y: 2.0d
 			subtitle: "{ftbquests.chapter.assorted_goals.quests54.subtitle}"
 			dependencies: ["2CE5BB6A7B30CA4C"]
@@ -544,8 +544,8 @@
 		}
 		{
 			title: "{ftbquests.chapter.assorted_goals.quests40.title}"
-			x: 0.0d
-			y: -2.0d
+			x: -1.5d
+			y: -1.5d
 			description: [
 				"{ftbquests.chapter.assorted_goals.quests40.description0}"
 				""
@@ -589,8 +589,8 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: -2.0d
+			x: -3.0d
+			y: -1.5d
 			subtitle: "{ftbquests.chapter.assorted_goals.quests45.subtitle}"
 			dependencies: ["3522109BABC7E48B"]
 			optional: true
@@ -611,6 +611,380 @@
 				id: "424A77A5F66DAD47"
 				type: "item"
 				item: "minecraft:cooked_beef"
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.assorted_goals.quests10.title}"
+			x: -3.75d
+			y: 2.25d
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.assorted_goals.quests10.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests10.description}"]
+			hide_dependency_lines: true
+			dependencies: ["0BCED0F8481E0C21"]
+			size: 1.5d
+			optional: true
+			id: "05E45A7D1C9927E5"
+			tasks: [{
+				id: "06BFB633FC06AF54"
+				type: "item"
+				item: "drinkbeer:beer_barrel"
+			}]
+			rewards: [{
+				id: "2FB3A079A96DE590"
+				type: "item"
+				item: "create:dough"
+				count: 3
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.assorted_goals.quests48.title}"
+			icon: "vinery:old_cherry_sapling"
+			x: -2.5d
+			y: 3.0d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests48.subtitle}"
+			description: [
+				"{ftbquests.chapter.assorted_goals.quests48.description0}"
+				""
+				""
+				"{ftbquests.chapter.assorted_goals.quests48.description3}"
+			]
+			hide_dependency_lines: false
+			dependencies: ["05E45A7D1C9927E5"]
+			id: "165C3C3DF1B9B4A3"
+			tasks: [{
+				id: "0B0B28657F7C6931"
+				type: "item"
+				item: "vinery:fermentation_barrel"
+			}]
+			rewards: [
+				{
+					id: "28323BFEABB17884"
+					type: "item"
+					item: "vinery:red_grape_seeds"
+				}
+				{
+					id: "75F06EEAB86BDAB7"
+					type: "item"
+					item: "vinery:white_grape_seeds"
+				}
+				{
+					id: "5B9905DBF04FDAF2"
+					type: "item"
+					item: "vinery:cherry_sapling"
+				}
+			]
+		}
+		{
+			title: "{ftbquests.chapter.assorted_goals.quests53.title}"
+			icon: "vinery:red_grape"
+			x: -1.0d
+			y: 3.0d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests53.subtitle}"
+			dependencies: ["165C3C3DF1B9B4A3"]
+			id: "6BECCB7FA4132517"
+			tasks: [{
+				id: "4750F1C7CA412A27"
+				type: "item"
+				item: "vinery:grapevine_pot"
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.assorted_goals.quests50.title}"
+			x: 0.0d
+			y: 3.0d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests50.subtitle}"
+			description: [
+				"{ftbquests.chapter.assorted_goals.quests50.description0}"
+				"{ftbquests.chapter.assorted_goals.quests50.description1}"
+				"{ftbquests.chapter.assorted_goals.quests50.description2}"
+				"{ftbquests.chapter.assorted_goals.quests50.description3}"
+				"{ftbquests.chapter.assorted_goals.quests50.description4}"
+			]
+			dependencies: ["6BECCB7FA4132517"]
+			id: "529CAD4508F33471"
+			tasks: [{
+				id: "0914332FB936AF32"
+				type: "item"
+				item: {
+					id: "vinery:red_grapejuice_wine_bottle"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "1097AB4611D7E57D"
+				type: "item"
+				item: "vinery:wine_box"
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.assorted_goals.quests51.title}"
+			x: -0.5d
+			y: 4.0d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests51.subtitle}"
+			description: [
+				"{ftbquests.chapter.assorted_goals.quests51.description0}"
+				"{ftbquests.chapter.assorted_goals.quests51.description1}"
+				"{ftbquests.chapter.assorted_goals.quests51.description2}"
+			]
+			dependencies: ["6BECCB7FA4132517"]
+			id: "66AF3CCC6B74CC09"
+			tasks: [{
+				id: "297B32716629650B"
+				type: "item"
+				item: {
+					id: "vinery:white_grapejuice_wine_bottle"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "75E5A6B7988A3D1A"
+				type: "item"
+				item: "vinery:wine_rack_2"
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.assorted_goals.quests52.title}"
+			x: -2.0d
+			y: 4.0d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests52.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests52.description}"]
+			dependencies: ["165C3C3DF1B9B4A3"]
+			id: "4B565923D33B2CB8"
+			tasks: [{
+				id: "46966651EFC64C4E"
+				type: "item"
+				item: "vinery:wine_press"
+			}]
+			rewards: [{
+				id: "1B24564A722FFBEC"
+				type: "item"
+				item: "vinery:apple_mash"
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.assorted_goals.quests49.title}"
+			x: -1.5d
+			y: 5.0d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests49.subtitle}"
+			description: [
+				"{ftbquests.chapter.assorted_goals.quests49.description0}"
+				"{ftbquests.chapter.assorted_goals.quests49.description1}"
+				"{ftbquests.chapter.assorted_goals.quests49.description2}"
+			]
+			dependencies: ["4B565923D33B2CB8"]
+			id: "1D8FB0253FF41716"
+			tasks: [{
+				id: "47820AF8B45F9AEE"
+				type: "item"
+				item: {
+					id: "vinery:apple_juice"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "5136D615F0B99ABE"
+					type: "item"
+					item: "vinery:chair"
+				}
+				{
+					id: "06F6AB6335CF891E"
+					type: "item"
+					item: "vinery:table"
+					count: 8
+				}
+			]
+		}
+		{
+			title: "{ftbquests.chapter.assorted_goals.quests27.title}"
+			x: -3.0d
+			y: 1.0d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests27.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests27.description}"]
+			dependencies: ["05E45A7D1C9927E5"]
+			optional: true
+			id: "69C0C2601F6F79A7"
+			tasks: [
+				{
+					id: "6E1B4CE64F9E6A8F"
+					type: "item"
+					item: "drinkbeer:spice_blaze_paprika"
+					consume_items: false
+				}
+				{
+					id: "764CD4323F636BDF"
+					type: "item"
+					item: "drinkbeer:spice_dried_eglia_bud"
+					consume_items: false
+				}
+				{
+					id: "0D98C3FD843D2C07"
+					type: "item"
+					item: "drinkbeer:spice_smoked_eglia_bud"
+					consume_items: false
+				}
+				{
+					id: "0D087B8E65CA9C46"
+					type: "item"
+					item: "drinkbeer:spice_amethyst_nigella_seeds"
+					consume_items: false
+				}
+				{
+					id: "00B2396D3A8C1EE5"
+					type: "item"
+					item: "drinkbeer:spice_citrine_nigella_seeds"
+					consume_items: false
+				}
+				{
+					id: "1E78F09CA1D956AB"
+					type: "item"
+					item: "drinkbeer:spice_ice_mint"
+					consume_items: false
+				}
+				{
+					id: "2D2910BB2441F6E1"
+					type: "item"
+					item: "drinkbeer:spice_ice_patchouli"
+					consume_items: false
+				}
+				{
+					id: "1C2F140FF8B9BBF3"
+					type: "item"
+					item: "drinkbeer:spice_storm_shards"
+					consume_items: false
+				}
+				{
+					id: "1C7B42E48B5032C8"
+					type: "item"
+					item: "drinkbeer:spice_roasted_red_pine_nuts"
+					consume_items: false
+				}
+				{
+					id: "6922A26AAFAB484D"
+					type: "item"
+					item: "drinkbeer:spice_glace_goji_berries"
+					consume_items: false
+				}
+				{
+					id: "5CE763E3FD012D33"
+					type: "item"
+					item: "drinkbeer:spice_frozen_persimmon"
+					consume_items: false
+				}
+				{
+					id: "1B55F8D7A019169A"
+					type: "item"
+					item: "drinkbeer:spice_roasted_pecans"
+					consume_items: false
+				}
+				{
+					id: "4AABA452BC41B753"
+					type: "item"
+					item: "drinkbeer:spice_silver_needle_white_tea"
+					consume_items: false
+				}
+				{
+					id: "4CDF96F4E1232628"
+					type: "item"
+					item: "drinkbeer:spice_golden_cinnamon_powder"
+					consume_items: false
+				}
+				{
+					id: "1D3D2EAD17CF1B00"
+					type: "item"
+					item: "drinkbeer:spice_dried_selaginella"
+					consume_items: false
+				}
+			]
+			rewards: [{
+				id: "3415146CCA0548A2"
+				type: "item"
+				item: {
+					id: "mcdw:axe_encrusted_anchor"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: 3.5d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests58.subtitle}"
+			dependencies: ["05E45A7D1C9927E5"]
+			id: "23B56D5D09CE3A0E"
+			tasks: [{
+				id: "4F8FB44812FB367D"
+				type: "item"
+				item: "drinkbeer:recipe_board_package"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 2.5d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests42.subtitle}"
+			dependencies: ["05E45A7D1C9927E5"]
+			optional: true
+			id: "7D768E5AA9EA358C"
+			tasks: [
+				{
+					id: "070C4B0598E4F104"
+					type: "item"
+					item: "drinkbeer:empty_beer_mug"
+				}
+				{
+					id: "479FFE3123D77A5A"
+					type: "item"
+					item: "minecraft:wheat"
+					count: 3L
+				}
+				{
+					id: "4D9FB657EA74050E"
+					type: "item"
+					item: "minecraft:water_bucket"
+				}
+			]
+		}
+		{
+			x: -6.5d
+			y: 2.0d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests43.subtitle}"
+			dependencies: ["7D768E5AA9EA358C"]
+			optional: true
+			id: "52832D8DA239C017"
+			tasks: [{
+				id: "67BF890594998248"
+				type: "item"
+				item: "drinkbeer:beer_mug"
+			}]
+			rewards: [{
+				id: "004A64084DE31C6B"
+				type: "item"
+				item: "drinkbeer:empty_beer_mug"
+				count: 5
+			}]
+		}
+		{
+			x: -7.5d
+			y: 1.5d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests44.subtitle}"
+			dependencies: ["52832D8DA239C017"]
+			optional: true
+			id: "154EF80FC9B8F0B0"
+			tasks: [{
+				id: "145A72A4C427E775"
+				type: "item"
+				item: "drinkbeer:bartending_table_normal"
+			}]
+			rewards: [{
+				id: "3093A76BEC813CA5"
+				type: "item"
+				item: "farmersdelight:hot_cocoa"
 			}]
 		}
 	]
