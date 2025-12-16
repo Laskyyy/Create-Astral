@@ -1,3 +1,4 @@
+/// <reference types="./interaction.d.ts"/>
 /**
  * This file originally contained comments marked with "Better Comments" VS Code extension.
  * Now it has JSDoc comments instead, which have better editor integration.
@@ -73,9 +74,9 @@
   /// swift andesite by max
   onEvent("player.tick", (event) => {
     const player = event.getPlayer();
-    const x = Math.floor(player.x);
-    const y = Math.floor(player.y);
-    const z = Math.floor(player.z);
+    let x = Math.floor(player.x);
+    let y = Math.floor(player.y);
+    let z = Math.floor(player.z);
     if (event.level.getBlock(x, y - 2, z).id == "createastral:swift_andesite") {
       player.potionEffects.add("minecraft:speed", 20, 0, false, false);
     }
@@ -98,64 +99,6 @@
       Utils.server.runCommandSilent(`setblock ${x} ${y - 1} ${z} kubejs:broken_fire_resistant_fragile_sheet_block`);
     }
   });
-
-  /**
-   * @typedef ProjectileConfig
-   * @property {Projectile} projectile
-   * @property {Particles} particles
-   * @property {Explosion} explosion
-   */
-
-  /**
-   * @typedef Projectile
-   * @property {Special.Item} item Item ID.
-   */
-
-  /** @typedef {ParticlesEnabledWithNoColor | ParticlesEnabledWithColor | ParticlesDisabled} Particles */
-
-  /**
-   * @typedef ParticlesEnabledWithNoColor
-   * @property {true} enabled Whether the ammo emits particles or not.
-   * @property {number} spread
-   * @property {number} size
-   * @property {number} speed
-   * @property {number} count
-   * @property {string} type
-   * @property {number} size
-   * @property {false} hasColor Specifies whether the particle's color can be changed.
-   */
-
-  /**
-   * @typedef ParticlesEnabledWithColor
-   * @property {true} enabled Whether the ammo emits particles or not.
-   * @property {number} spread
-   * @property {number} size
-   * @property {number} speed
-   * @property {number} count
-   * @property {string} type
-   * @property {number} size
-   * @property {true} hasColor Specifies whether the particle's color can be changed.
-   * @property {[red: number, green: number, blue: number]} color The color of the particle
-   */
-
-  /**
-   * @typedef ParticlesDisabled
-   * @property {false} enabled Whether the ammo emits particles or not.
-   */
-
-  /** @typedef {ExplosionEnabled | ExplosionDisabled} Explosion */
-
-  /**
-   * @typedef ExplosionEnabled
-   * @property {true} enabled
-   * @property {number} strength
-   * @property {boolean} damageTerrain
-   */
-
-  /**
-   * @typedef ExplosionDisabled
-   * @property {false} enabled
-   */
 
   /** @type {ProjectileConfig[]} */
 
@@ -212,7 +155,7 @@
       },
       sound: {
         enabled: false,
-        soundList: [],
+        // soundList: [],
       },
     },
     {
@@ -273,6 +216,18 @@
           },
         ],
       },
+      sound: {
+        enabled: true,
+        soundList: [
+          {
+            soundName: "createastral:stop_sound",
+            soundType: "master",
+            soundRange: "128",
+            soundVolume: "0.3",
+            soundPitch: "1"
+          }
+        ],
+      },
     },
     {
       projectile: { item: "createbigcannons:autocannon_cartridge" },
@@ -302,6 +257,7 @@
         sticky: ammo.sticky,
         sound_pitch: ammo.soundPitch,
       };
+      // @ts-expect-error This works.
       JsonIO.write(`kubejs/data/createastral/potato_cannon_projectile_types/${ammo.fileName}.json`, json);
     });
   });
@@ -366,48 +322,38 @@
       });
     } else if (entity.type === "minecraft:item") {
       let dim = entity.getLevel().getDimension();
-      let x = entity.x,
-        y = entity.y,
-        z = entity.z;
+      let { x, y, z } = entity;
       switch (entity.item) {
         case "createastral:fragile_sheet":
           entity.item = "createastral:broken_fragile_sheet";
           server.runCommandSilent(
-            `execute in ${dim} run particle minecraft:block minecraft:magenta_concrete_powder ${entity.x} ${entity.y} ${entity.z} 0.0 0.1 0.0 0 5`
+            `execute in ${dim} run particle minecraft:block minecraft:magenta_concrete_powder ${x} ${y} ${z} 0.0 0.1 0.0 0 5`
           );
-          server.runCommandSilent(
-            `execute in ${dim} run playsound create:crushing_1 block @a ${entity.x} ${entity.y} ${entity.z}`
-          );
+          server.runCommandSilent(`execute in ${dim} run playsound create:crushing_1 block @a ${x} ${y} ${z}`);
           break;
 
         case "createastral:fragile_rocket_fin":
           entity.item = "createastral:broken_fragile_rocket_fin";
           server.runCommandSilent(
-            `execute in ${dim} run particle minecraft:block createastral:sturdy_sheet_block ${entity.x} ${entity.y} ${entity.z} 0.0 0.1 0.0 0 5`
+            `execute in ${dim} run particle minecraft:block createastral:sturdy_sheet_block ${x} ${y} ${z} 0.0 0.1 0.0 0 5`
           );
-          server.runCommandSilent(
-            `execute in ${dim} run playsound create:crushing_1 block @a ${entity.x} ${entity.y} ${entity.z}`
-          );
+          server.runCommandSilent(`execute in ${dim} run playsound create:crushing_1 block @a ${x} ${y} ${z}`);
           break;
 
         case "kubejs:fragile_sheet_block":
           entity.item = "kubejs:broken_fragile_sheet_block";
           server.runCommandSilent(
-            `execute in ${dim} run particle minecraft:block kubejs:fragile_sheet_block ${entity.x} ${entity.y} ${entity.z} 0.0 0.1 0.0 0 5`
+            `execute in ${dim} run particle minecraft:block kubejs:fragile_sheet_block ${x} ${y} ${z} 0.0 0.1 0.0 0 5`
           );
-          server.runCommandSilent(
-            `execute in ${dim} run playsound create:crushing_1 block @a ${entity.x} ${entity.y} ${entity.z}`
-          );
+          server.runCommandSilent(`execute in ${dim} run playsound create:crushing_1 block @a ${x} ${y} ${z}`);
           break;
 
         case "kubejs:fire_resistant_fragile_sheet_block":
           entity.item = "kubejs:broken_fire_resistant_fragile_sheet_block";
           server.runCommandSilent(
-            `execute in ${dim} run particle minecraft:block kubejs:broken_fire_resistant_fragile_sheet_block ${entity.x} ${entity.y} ${entity.z} 0.0 0.1 0.0 0 5`
+            `execute in ${dim} run particle minecraft:block kubejs:broken_fire_resistant_fragile_sheet_block ${x} ${y} ${z} 0.0 0.1 0.0 0 5`
           );
-          server.runCommandSilent(
-            `execute in ${dim} run playsound create:crushing_1 block @a ${entity.x} ${entity.y} ${entity.z}`
-          );
+          server.runCommandSilent(`execute in ${dim} run playsound create:crushing_1 block @a ${x} ${y} ${z}`);
           break;
 
         default:

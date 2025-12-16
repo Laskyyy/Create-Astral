@@ -1,5 +1,5 @@
 (function createMixingRecipes() {
-  const { BUCKET, GEM_BLOCK, SLIMEBALL, INGOT, GEM, NUGGET, mB } = global.fluids;
+  const { BUCKET, BOTTLE, GEM_BLOCK, SLIMEBALL, INGOT, GEM, NUGGET, mB } = global.fluids;
 
   onEvent("recipes", (event) => {
     farmersCompatMixing(event);
@@ -14,6 +14,11 @@
 
     /** @type {MixingRecipe[]} */
     const mixingRecipes = [
+		{
+        output: [{ fluid: "techreborn:sulfuric_acid", amount: BUCKET }],
+        input: ["techreborn:sulfur_dust", { fluid: "minecraft:water", amount: 500 * mB }, { fluid: "ad_astra:oxygen", amount: BUCKET }],
+        time: 300,
+      },
       {
         output: [{ fluid: "estrogen:molten_amethyst", amount: INGOT / 2 }],
         input: [{ fluid: "tconstruct:molten_amethyst", amount: 500 * mB }, "astraladditions:bulba_root"],
@@ -23,6 +28,11 @@
         output: ["create:tree_fertilizer"],
         input: ["#minecraft:saplings", "#c:coral_fans", "minecraft:bone_meal"],
         time: 180,
+      },
+      {
+        output: ["minecraft:mycelium"],
+        input: ["#minecraft:dirt", "ad_astra:cheese"],
+        time: 100,
       },
       {
         output: [{ fluid: "kubejs:shimmer", amount: BUCKET / 9 }],
@@ -354,7 +364,7 @@
         input: [
           "#c:concrete_powder",
           Item.of("createastral:lime", 2),
-          Item.of("techreborn:steel_dust", 3),
+          Item.of("techreborn:steel_dust", 2),
           { fluid: "minecraft:water", amount: BUCKET },
         ],
         heat: "heated",
@@ -1182,8 +1192,8 @@
         output: ["astralfoods:bulbas_tea"],
         input: [
           "astraladditions:bulba_root",
-          { fluid: "minecraft:water", amount: 333 * mB },
-          { fluid: "milk:still_milk", amount: 333 * mB },
+          { fluid: "minecraft:water", amount: BOTTLE },
+          { fluid: "milk:still_milk", amount: BOTTLE },
         ],
         heat: "heated",
         time: 45,
@@ -2633,7 +2643,7 @@
         heat: "superheated",
       },
       {
-        output: { fluid: "kubejs:liquid_xp_nuggies", amount: 1000 },
+        output: { fluid: "kubejs:liquid_xp_nuggies", amount: NUGGET },
         input: ["create:experience_nugget"],
         heat: "heated",
         time: 10,
@@ -2651,7 +2661,7 @@
         time: 1000,
       },
       {
-        output: { fluid: "kubejs:liquid_xp_nuggies", amount: 2000 },
+        output: { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * NUGGET },
         input: ["xpcrystals:xp_crystal"],
         heat: "heated",
         time: 12,
@@ -2674,7 +2684,7 @@
         time: 25,
       },
       {
-        output: { fluid: "createaddition:bioethanol", amount: 81000 },
+        output: { fluid: "createaddition:bioethanol", amount: BUCKET },
         input: ["minecraft:sugar", "create:cinder_flour", Item.of("createaddition:biomass", 2)],
       },
       {
@@ -2706,6 +2716,10 @@
           "create:tree_fertilizer",
         ],
         time: 80,
+      },
+      {
+        output: ["farmersdelight:pie_crust"],
+        input: [{ fluid: "milk:still_milk", amount: 250 * mB }, Item.of("create:wheat_flour", 3)],
       },
       {
         output: Fluid.of("tconstruct:molten_netherite", (INGOT * 3) / 10),

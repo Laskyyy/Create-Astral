@@ -26,6 +26,15 @@
         power: 30,
         time: 400,
       },
+	  {
+        input: [
+          Item.of("minecraft:rotten_flesh", 3),
+          Item.of("techreborn:ashes_dust", 2),
+        ],
+        output: [{ item: "minecraft:leather", count: 5 }],
+        power: 3,
+        time: 300,
+      },
     ];
     chemicalReactorRecipes.forEach((recipe) => {
       event.custom({

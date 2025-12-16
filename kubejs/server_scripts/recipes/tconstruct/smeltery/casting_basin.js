@@ -11,6 +11,12 @@
 
     /** @type {CastingBasinRecipe[]} */
     const castingBasinRecipes = [
+		{
+        fluidInput: { fluid: "tconstruct:molten_brass", amount: INGOT * 9 },
+        result: "create:brass_casing",
+        coolingTime: 180,
+        cast: { item: "createastral:incomplete_brass_casing", consumed: true },
+      },
       {
         fluidInput: { fluid: "kubejs:compound_mixture", amount: INGOT * 9 },
         result: "createastral:andesite_alloy_block",
@@ -89,7 +95,6 @@
         fluidInput: { fluid: "tconstruct:molten_tin", amount: BUCKET },
         result: "extended_drawers:shadow_drawer",
         coolingTime: 117, // same as cooling tin block
-        // @ts-expect-error Missing tag?
         cast: { tag: "extended_drawers:drawer_containers", consumed: true },
       },
       {

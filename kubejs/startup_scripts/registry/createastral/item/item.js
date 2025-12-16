@@ -19,8 +19,13 @@
     event.create("createastral:electrified_pin");
     event.create("createastral:ender_mush");
     event.create("createastral:promethium_atomic_battery").glow(true).rarity("epic");
+    event.create("createastral:circuit_paper");
+    event.create("createastral:copper_clad_lapis_board");
+    event.create("createastral:printed_copper_clad_lapis_board");
     event.create("createastral:logo");
     event.create("createastral:bronze_ingot");
+    event.create("createastral:desh_dust");
+    event.create("createastral:small_desh_dust");
     event.create("createastral:uranium_residue").rarity("uncommon");
     event.create("createastral:navigation_mechanism");
     event.create("createastral:living_mechanism");
@@ -38,11 +43,12 @@
       .food((food) => {
         food.hunger(2).saturation(0.5).alwaysEdible();
       });
-    event.create("createastral:protobeef");
-    event.create("createastral:protochicken");
-    event.create("createastral:protomutton");
-    event.create("createastral:protopork");
-    event.create("createastral:protorabbit");
+    event.create("createastral:protobeef", "create:sequenced_assembly");
+    event.create("createastral:protochicken", "create:sequenced_assembly");
+    event.create("createastral:protomutton", "create:sequenced_assembly");
+    event.create("createastral:protopork", "create:sequenced_assembly");
+    event.create("createastral:protorabbit", "create:sequenced_assembly");
+    event.create("createastral:protoegg", "create:sequenced_assembly");
     event.create("createastral:quadrocopter_blueprint").texture("create:item/schematic");
     event.create("createastral:gyrodyne_blueprint").texture("create:item/schematic");
     event.create("createastral:biplane_blueprint").texture("create:item/schematic");

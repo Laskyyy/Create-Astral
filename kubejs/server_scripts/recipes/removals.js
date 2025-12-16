@@ -58,6 +58,8 @@
       { output: "techreborn:block_breaker" },
       { output: "techreborn:wire_mill" },
       { output: "techreborn:compressor" },
+      { output: "techreborn:compressed_air" },
+      { output: "techreborn:iron_alloy_furnace" },
       { output: "techreborn:synthetic_redstone_crystal" },
       { output: "techreborn:bronze_nugget" },
       { output: "techreborn:steel_ingot" },
@@ -96,6 +98,54 @@
       {
         type: "techreborn:grinder",
         input: "#techreborn:calcite_dust_material",
+      },
+      {
+        type: "techreborn:extractor",
+        input: "techreborn:plantball",
+      },
+      {
+        type: "techreborn:extractor",
+        input: "minecraft:sugar_cane",
+      },
+      {
+        type: "techreborn:extractor",
+        input: "minecraft:crossbow",
+      },
+      {
+        type: "techreborn:extractor",
+        input: "minecraft:bow",
+      },
+      {
+        type: "techreborn:extractor",
+        input: "#minecraft:beds",
+      },
+      {
+        type: "techreborn:extractor",
+        input: "#minecraft:banners",
+      },
+      {
+        type: "techreborn:extractor",
+        input: "minecraft:sweet_berries",
+      },
+      {
+        type: "techreborn:extractor",
+        input: "#c:plates/lead",
+      },
+      {
+        type: "techreborn:extractor",
+        input: "minecraft:orange_tulip",
+      },
+      {
+        type: "techreborn:grinder",
+        input: "#c:certus_quartz",
+      },
+      {
+        type: "techreborn:grinder",
+        input: "#c:plates/obsidian",
+      },
+      {
+        type: "techreborn:chemical_reactor",
+        output: "minecraft:leather",
       },
       { type: "techreborn:grinder", input: "#c:ores" },
       { type: "techreborn:grinder", input: "#c:storage_blocks" },
@@ -153,9 +203,24 @@
         output: "techreborn:nak_coolant_cell_60k",
       },
       { id: "techreborn:crafting_table/paper" },
+      { id: "techreborn:compressor/compressed_air_cell" }, // cause of a recipe duplicate (i cant find the other recipe that does the same thing) whee spaghetti code
       { output: "techreborn:block_placer" },
       { output: "minecraft:soul_sand", type: "techreborn:centrifuge" },
       { input: "techreborn:clay_dust", type: "techreborn:industrial_electrolyzer" },
+      { input: "techreborn:invar_ingot" },
+      { output: "techreborn:invar_ingot" },
+      { type: "techreborn:rolling_machine", output: "techreborn:invar_ingot" },
+      { type: "tconstruct:casting_table", output: "techreborn:invar_ingot" },
+      { input: "techreborn:invar_nugget" },
+      { output: "techreborn:invar_nugget" },
+      { output: "techreborn:invar_plate" },
+      { type: "create:pressing", output: "techreborn:invar_plate" },
+      { type: "techreborn:compressor", output: "techreborn:invar_plate" },
+      { type: "techreborn:implosion_compressor", output: "techreborn:invar_plate" },
+      { type: "create:pressing", output: "techreborn:invar_plate" },
+      { input: "techreborn:invar_storage_block" },
+      { output: "techreborn:invar_storage_block" },
+      { type: "techreborn:rolling_machine", output: "techreborn:invar_storage_block" },
       { id: "techreborn:solid_canning_machine/sulfur_cell" },
       { id: "techreborn:solid_canning_machine/bio_cell" },
       //Create
@@ -210,6 +275,7 @@
       { type: "create:crushing", input: "minecraft:blaze_rod" },
       { type: "create:crushing", input: "minecraft:bone" },
       { type: "create:crushing", input: "minecraft:tuff" },
+      { type: "create:crushing", input: "minecraft:nether_wart_block" },
       { type: "create:milling", input: "minecraft:tuff" },
       { type: "create:milling", input: "minecraft:basalt" },
       { type: "create:milling", input: "minecraft:clay" },
@@ -683,7 +749,6 @@
         output: "minecraft:redstone",
       },
       // extractinator
-      { type: "extractinator:extractinating" },
       { output: "extractinator:extractinator" },
       // estrogen
       { type: "create:compacting", input: "minecraft:slime_ball" },
@@ -695,6 +760,7 @@
       { type: "farmersdelight:cutting", input: "farmersdelight:wild_rice" },
       { output: "farmersdelight:wheat_dough" },
       { id: "farmersdelight:create/filling/chocolate_pie" },
+      { id: "farmersdelight:create/mixing/pie_crust_from_mixing" },
       // Hephaestus modifiers
       { id: "tconstruct:tools/modifiers/ability/double_jump" },
       { id: "tconstruct:tools/modifiers/ability/luck_level_1" },

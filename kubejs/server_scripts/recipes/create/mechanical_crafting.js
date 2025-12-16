@@ -195,10 +195,18 @@
         },
       },
       {
-        output: "ad_astra:launch_pad",
+        output: Item.of("ad_astra:launch_pad", 2),
         pattern: ["BAAAB", "ABABA", "AABAA", "ABABA", "BAAAB"],
         key: {
           A: "createastral:blast-resistant_concrete",
+          B: "create:sturdy_sheet",
+        },
+      },
+      {
+        output: Item.of("ad_astra:launch_pad", 2),
+        pattern: ["BAAAB", "ABABA", "AABAA", "ABABA", "BAAAB"],
+        key: {
+          A: "createastral:blast-resistant_doncrete",
           B: "create:sturdy_sheet",
         },
       },

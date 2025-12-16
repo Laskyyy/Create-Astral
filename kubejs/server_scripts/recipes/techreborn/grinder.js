@@ -5,7 +5,7 @@
     crushingToGrinding(event);
     /**
      * @typedef GrinderRecipe
-     * @property {{item: Special.Item, count?: number}[]} input
+     * @property {Helper.ItemOrTagWithCount[]} input
      * @property {{item: Special.Item, count?: number}[]} output
      * @property {number} time
      * @property {number} power
@@ -32,7 +32,7 @@
         power: 5,
       },
       {
-        input: [{ tag: `c:basalt`, count: 1 }], //tag
+        input: [{ tag: "c:basalt", count: 1 }], //tag
         output: [{ item: "techreborn:basalt_dust", count: 1 }],
         time: 200,
         power: 5,
@@ -61,6 +61,30 @@
         time: 220,
         power: 2,
       },
+      {
+        input: [{ item: "ad_astra:desh_ingot", count: 1 }],
+        output: [{ item: "createastral:desh_dust", count: 1 }],
+        time: 120,
+        power: 2,
+      },
+      {
+        input: [{ item: "ad_astra:raw_desh", count: 1 }],
+        output: [{ item: "createastral:desh_dust", count: 1 }],
+        time: 100,
+        power: 2,
+      },
+      {
+        input: [{ item: "ad_astra:desh_nugget", count: 1 }],
+        output: [{ item: "createastral:small_desh_dust", count: 1 }],
+        time: 20,
+        power: 2,
+      },
+      {
+        input: [{ tag: "c:certus_quartz", count: 2 }],
+        output: [{ item: "ae2:certus_quartz_dust", count: 2 }],
+        time: 300,
+        power: 2,
+      }
     ];
     grinderRecipes.forEach((recipe) => {
       event.custom({
