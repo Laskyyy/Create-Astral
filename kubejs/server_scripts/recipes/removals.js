@@ -347,6 +347,7 @@
       { output: "createaddition:biomass" },
       { output: "createaddition:bioethanol" },
       { type: "createaddition:liquid_burning" },
+      { id: "createaddition:compat/tconstruct/tinkers_bronze" },
       // Create Railways
       { output: "railways:track_acacia" },
       { output: "railways:track_birch" },
@@ -379,6 +380,8 @@
       { output: "createbigcannons:molten_steel", type: "createbigcannons:melting" },
       { output: "createbigcannons:cast_iron_ingot", type: "create:compacting" },
       { output: "createbigcannons:cast_iron_nugget", type: "create:compacting" },
+      { id: "createbigcannons:compacting/forge_bronze_ingot" },
+      { id: "createbigcannons:compacting/forge_steel_ingot" },
       // dustrial decor sheetmetal rework
       { output: "dustrial_decor:rusty_iron_door" },
       { output: "dustrial_decor:rusty_sheet_metal_treading" },
@@ -569,6 +572,8 @@
       { output: "travelersbackpack:hose_nozzle" },
       { output: "ad_astra:ostrum_engine" },
       { output: "dbe:server_rack" },
+      { id: "dbe:rec_log_pile_chair" },
+      { id: "dbe:rec_jungle_tile" },
       { output: "dustrial_decor:cast_iron_billet" },
       { output: "mcdw:pick_diamond_pickaxe_var" },
       { output: "mcdw:sword_diamond_sword_var" },
