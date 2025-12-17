@@ -12,12 +12,6 @@
     /** @type {CastingBasinRecipe[]} */
     const castingBasinRecipes = [
 	  {
-        fluidInput: { fluid: "techreborn:silicon", amount: BUCKET/10 },
-        result: "createaddition:straw",
-        coolingTime: 50,
-        cast: { item: "createastral:straw_gold_cast", consumed: false },
-      },
-	  {
         fluidInput: { fluid: "tconstruct:molten_brass", amount: INGOT * 9 },
         result: "create:brass_casing",
         coolingTime: 180,
