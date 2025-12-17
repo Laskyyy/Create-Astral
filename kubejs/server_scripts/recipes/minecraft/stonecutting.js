@@ -67,7 +67,7 @@
       },
       {
         input: "#c:plates/gold",
-        outputs: ["tconstruct:gear_cast", "astraladditions:ring_gold_cast", "tconstruct:coin_cast"],
+        outputs: ["tconstruct:gear_cast", "astraladditions:ring_gold_cast", "tconstruct:coin_cast", "createastral:straw_gold_cast"],
       },
       {
         input: "automobility:dash_panel",
