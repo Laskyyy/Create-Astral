@@ -39,6 +39,36 @@
         appliedTo: { item: "techreborn:advanced_machine_frame" },
         appliedItem: { item: "create:refined_radiance" },
       },
+      {
+        output: { item: "tconstruct:medium_earth_slime_crystal_bud" },
+        appliedTo: { item: "tconstruct:small_earth_slime_crystal_bud" },
+        appliedItem: { item: "createastral:saltmeal" },
+      },
+      {
+        output: { item: "tconstruct:large_earth_slime_crystal_bud" },
+        appliedTo: { item: "tconstruct:medium_earth_slime_crystal_bud" },
+        appliedItem: { item: "createastral:saltmeal" },
+      },
+      {
+        output: { item: "tconstruct:earth_slime_crystal_cluster" },
+        appliedTo: { item: "tconstruct:large_earth_slime_crystal_bud" },
+        appliedItem: { item: "createastral:saltmeal" },
+      },
+      {
+        output: { item: "tconstruct:medium_ender_slime_crystal_bud" },
+        appliedTo: { item: "tconstruct:small_ender_slime_crystal_bud" },
+        appliedItem: { item: "createastral:saltmeal" },
+      },
+      {
+        output: { item: "tconstruct:large_ender_slime_crystal_bud" },
+        appliedTo: { item: "tconstruct:medium_ender_slime_crystal_bud" },
+        appliedItem: { item: "createastral:saltmeal" },
+      },
+      {
+        output: { item: "tconstruct:ender_slime_crystal_cluster" },
+        appliedTo: { item: "tconstruct:large_ender_slime_crystal_bud" },
+        appliedItem: { item: "createastral:saltmeal" },
+      },
     ];
     itemApplicationRecipes.forEach((recipe) => {
       event.custom({
