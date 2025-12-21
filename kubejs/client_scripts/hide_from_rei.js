@@ -670,6 +670,7 @@
       "createastral:washer_dummy",
       "createastral:gas_mixer_dummy",
       "createastral:channeling_transformer_dummy",
+      "astralfoods:blender_dummy",
     ];
     addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:part_builder", "oak_planks", 41);
     addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:part_builder", "birch_planks", 41);

@@ -164,6 +164,18 @@
       .food((food) => {
         food.hunger(16).saturation(1.2).effect("resistance", 600, 1, 1).alwaysEdible();
       });
+    event
+      .create("astralfoods:mashed_potato")
+      .displayName("Mashed Potato")
+      .food((food) => {
+        food.hunger(4).saturation(1.2);
+      });
+    event
+      .create("astralfoods:hash_brown")
+      .displayName("Hash Brown")
+      .food((food) => {
+        food.hunger(5).saturation(1.3);
+      });
   });
   onEvent("fluid.registry", (event) => {
     event

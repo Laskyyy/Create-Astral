@@ -2790,7 +2790,7 @@
     mixingRecipes.forEach((recipe) => {
       event.recipes
         .createMixing(recipe.output, recipe.input)
-        .heatRequirement(recipe.heat ?? "")
+        .heatRequirement(recipe.heat ?? "unheated")
         .processingTime(recipe.time ?? 100);
     });
     /**

@@ -13,6 +13,17 @@
     /** @type {ShapedRecipe[]} */
     const shapedRecipes = [
       {
+        output: Item.of("custommachinery:custom_machine_item", { machine: "astralfoods:blender" }),
+        pattern: [" S ", "RGW", "SPS"],
+        key: {
+			S: "ad_astra:steel_plate",
+			G: "minecraft:glass",
+			R: "phonos:redstone_chip",
+			W: "createaddition:gold_spool",
+			P: "create:propeller"
+		},
+      },
+      {
         output: "createastral:andesite_alloy_block",
         pattern: ["AAA", "AAA", "AAA"],
         key: { A: "create:andesite_alloy" },
