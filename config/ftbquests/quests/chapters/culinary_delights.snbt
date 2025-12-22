@@ -137,6 +137,7 @@
 		{
 			x: 5.5d
 			y: 4.5d
+			description: ["{ftbquests.chapter.culinary_delights.quests12.description0}"]
 			dependencies: [
 				"150F57F29F8DDCE1"
 				"51BD31261A5725E3"
@@ -157,6 +158,7 @@
 		{
 			x: 3.0d
 			y: 3.0d
+			description: ["{ftbquests.chapter.culinary_delights.quests9.description0}"]
 			dependencies: ["5FDD72553B8EC457"]
 			id: "76BC27EC1FC2DB0A"
 			tasks: [{
@@ -174,6 +176,11 @@
 		{
 			x: 5.5d
 			y: 1.5d
+			description: [
+				"{ftbquests.chapter.culinary_delights.quests10.description0}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests10.description1}"
+			]
 			dependencies: ["5FDD72553B8EC457"]
 			id: "12A1347D9DBCE55F"
 			tasks: [{
@@ -185,6 +192,14 @@
 		{
 			x: 6.0d
 			y: 3.0d
+			subtitle: "{ftbquests.chapter.culinary_delights.quests11.subtitle}"
+			description: [
+				"{ftbquests.chapter.culinary_delights.quests11.description0}"
+				""
+				"ftbquests.chapter.culinary_delights.quests11.description1"
+				""
+				"ftbquests.chapter.culinary_delights.quests11.description2"
+			]
 			dependencies: ["12A1347D9DBCE55F"]
 			id: "71289D68787E78C4"
 			tasks: [{
@@ -202,6 +217,13 @@
 		{
 			x: 3.5d
 			y: 4.5d
+			description: [
+				"{ftbquests.chapter.culinary_delights.quests13.description0}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests13.description1}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests13.description2}"
+			]
 			dependencies: [
 				"150F57F29F8DDCE1"
 				"51BD31261A5725E3"
@@ -269,6 +291,13 @@
 		{
 			x: 9.0d
 			y: 0.0d
+			description: [
+				"{ftbquests.chapter.culinary_delights.quests17.description0}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests17.description1}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests17.description2}"
+			]
 			dependencies: [
 				"6A4E8950ADB36592"
 				"624026189BBACBB0"
@@ -298,6 +327,7 @@
 		{
 			x: 3.0d
 			y: -3.0d
+			description: ["{ftbquests.chapter.culinary_delights.quests4.description0}"]
 			dependencies: [
 				"06EB9DF33418E603"
 				"751CC4EF84A919C7"
@@ -312,6 +342,13 @@
 		{
 			x: 4.5d
 			y: -1.5d
+			description: [
+				"ftbquests.chapter.culinary_delights.quests6.description0"
+				""
+				"ftbquests.chapter.culinary_delights.quests6.description1"
+				""
+				"ftbquests.chapter.culinary_delights.quests6.description2"
+			]
 			dependencies: [
 				"694E06E4C17BFF6E"
 				"586FA45ED205784F"
@@ -337,6 +374,13 @@
 		{
 			x: 4.5d
 			y: -4.5d
+			description: [
+				"{ftbquests.chapter.culinary_delights.quests5.description0}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests5.description1}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests5.description2}"
+			]
 			dependencies: ["694E06E4C17BFF6E"]
 			id: "09E7F778F74CF0CB"
 			tasks: [{
@@ -362,6 +406,7 @@
 		{
 			x: 6.0d
 			y: -3.0d
+			description: ["{ftbquests.chapter.culinary_delights.quests7.description0}"]
 			dependencies: [
 				"06EB9DF33418E603"
 				"6499CD689863283D"
@@ -376,6 +421,14 @@
 		{
 			x: 12.0d
 			y: 0.0d
+			description: [
+				"{ftbquests.chapter.culinary_delights.quests16.description0}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests16.description1}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests16.description2}"
+				"{ftbquests.chapter.culinary_delights.quests16.description3}"
+			]
 			dependencies: [
 				"6A4E8950ADB36592"
 				"7B5DE5040FC24D21"
@@ -396,6 +449,14 @@
 		{
 			x: 9.5d
 			y: 1.5d
+			description: [
+				"{ftbquests.chapter.culinary_delights.quests14.description0}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests14.description1}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests14.description2}"
+				"{ftbquests.chapter.culinary_delights.quests14.description3}"
+			]
 			dependencies: [
 				"6A4E8950ADB36592"
 				"47A50CF905A68E98"
@@ -450,6 +511,7 @@
 		{
 			x: 3.5d
 			y: 1.5d
+			description: ["{ftbquests.chapter.culinary_delights.quests8.description0}"]
 			dependencies: [
 				"150F57F29F8DDCE1"
 				"51BD31261A5725E3"
@@ -478,6 +540,13 @@
 		{
 			x: 11.5d
 			y: 1.5d
+			description: [
+				"{ftbquests.chapter.culinary_delights.quests15.description0}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests15.description1}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests15.description2}"
+			]
 			dependencies: [
 				"6A4E8950ADB36592"
 				"586DA028F2A79E2F"

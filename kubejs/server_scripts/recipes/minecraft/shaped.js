@@ -869,7 +869,7 @@
         },
       },
       {
-        output: "techreborn:refined_iron_fence",
+        output: Item.of("techreborn:refined_iron_fence", 2),
         pattern: ["BSB", "BSB"],
         key: {
           B: "minecraft:iron_block",
@@ -1092,7 +1092,7 @@
           F: "create:blaze_burner",
         },
       },
-	  {
+      {
         output: "techreborn:alloy_smelter",
         pattern: ["ABA", "CDC", "EFE"],
         key: {

@@ -1,7 +1,7 @@
 {
 	id: "3E0862BB5F2DDA3C"
 	group: ""
-	order_index: 4
+	order_index: 3
 	filename: "chapter_3"
 	title: "{ftbquests.chapter.chapter_3.title}"
 	icon: "create:fluid_tank"

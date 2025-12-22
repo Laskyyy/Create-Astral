@@ -1,7 +1,7 @@
 {
 	id: "1A12E870F117B0D1"
 	group: ""
-	order_index: 5
+	order_index: 4
 	filename: "chapter_4"
 	title: "{ftbquests.chapter.chapter_4.title}"
 	icon: {
@@ -1275,12 +1275,20 @@
 				"{ftbquests.chapter.chapter_4.quests37.description3}"
 			]
 			dependencies: ["73973C5E6D2573B8"]
+			min_required_tasks: 1
 			id: "0ADFE1D87DB51856"
-			tasks: [{
-				id: "75F20E3FC26D6824"
-				type: "item"
-				item: "techreborn:basic_storage_unit"
-			}]
+			tasks: [
+				{
+					id: "75F20E3FC26D6824"
+					type: "item"
+					item: "techreborn:basic_storage_unit"
+				}
+				{
+					id: "77270AF64AD16A22"
+					type: "item"
+					item: "techreborn:basic_tank_unit"
+				}
+			]
 			rewards: [{
 				id: "03284E024A33A23B"
 				type: "loot"
@@ -2079,7 +2087,7 @@
 		{
 			title: "{ftbquests.chapter.chapter_4.quests64.title}"
 			x: -9.0d
-			y: -0.5d
+			y: 0.0d
 			shape: "rsquare"
 			subtitle: "{ftbquests.chapter.chapter_4.quests64.subtitle}"
 			description: [
@@ -2498,7 +2506,7 @@
 		{
 			title: "{ftbquests.chapter.chapter_4.quests81.title}"
 			x: -10.0d
-			y: -0.5d
+			y: 0.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests81.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests81.description0}"
@@ -3114,7 +3122,7 @@
 		{
 			title: "{ftbquests.chapter.chapter_4.quests101.title}"
 			x: -10.0d
-			y: 0.5d
+			y: 1.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests101.subtitle}"
 			description: ["{ftbquests.chapter.chapter_4.quests101.description}"]
 			dependencies: ["2F7F41E1C9C7F7B3"]
@@ -3140,7 +3148,7 @@
 		{
 			title: "{ftbquests.chapter.chapter_4.quests102.title}"
 			x: -9.0d
-			y: 0.5d
+			y: 1.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests102.subtitle}"
 			description: ["{ftbquests.chapter.chapter_4.quests102.description}"]
 			dependencies: ["2F7F41E1C9C7F7B3"]
@@ -4337,7 +4345,7 @@
 			}]
 		}
 		{
-			x: -12.0d
+			x: -13.0d
 			y: -1.5d
 			subtitle: "{ftbquests.chapter.chapter_4.quests141.subtitle}"
 			description: [
@@ -4347,10 +4355,9 @@
 				""
 				"{ftbquests.chapter.chapter_4.quests141.description3}"
 				""
-				""
 				"{ftbquests.chapter.chapter_4.quests141.description4}"
 			]
-			dependencies: ["752215E611021472"]
+			dependencies: ["301604FEAD4699AD"]
 			id: "20768473377DAF57"
 			tasks: [{
 				id: "33CDCD7F0C1EEDFE"
@@ -4362,6 +4369,125 @@
 				type: "item"
 				item: "techreborn:nak_coolant_cell_60k"
 			}]
+		}
+		{
+			title: "{ftbquests.chapter.chapter_4.quests142.title}"
+			x: -14.5d
+			y: -1.5d
+			subtitle: "{ftbquests.chapter.chapter_4.quests142.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_4.quests142.description0}"
+				""
+				"{ftbquests.chapter.chapter_4.quests142.description1}"
+			]
+			dependencies: ["5459F646B9A392C4"]
+			id: "78CDCE09FF3D361C"
+			tasks: [{
+				id: "04F0510B3EE4D512"
+				type: "item"
+				item: "techreborn:solid_fuel_generator"
+			}]
+			rewards: [{
+				id: "578C6F52AE4B5D85"
+				type: "item"
+				item: "techreborn:red_cell_battery"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -3.5d
+			subtitle: "{ftbquests.chapter.chapter_4.quests145.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_4.quests145.description0}"
+				""
+				"{ftbquests.chapter.chapter_4.quests145.description1}"
+			]
+			dependencies: ["07B10625859F1AF9"]
+			id: "4830FC116DADB964"
+			tasks: [{
+				id: "1E0C9C3A216F8277"
+				type: "item"
+				item: "techreborn:lightning_rod"
+			}]
+			rewards: [
+				{
+					id: "1F5F42886C482D57"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5253492355592689915L
+				}
+				{
+					id: "13AC8DD527241A07"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 1s
+								id: "mcdw:thundering"
+							}]
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -12.0d
+			y: -1.5d
+			subtitle: "{ftbquests.chapter.chapter_4.quests144.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_4.quests144.description0}"
+				""
+				"{ftbquests.chapter.chapter_4.quests144.description1}"
+			]
+			dependencies: ["752215E611021472"]
+			id: "301604FEAD4699AD"
+			tasks: [{
+				id: "287992853B174B7D"
+				type: "item"
+				item: "techreborn:chemical_reactor"
+			}]
+			rewards: [{
+				id: "16D4B69EDB6A4D92"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
+			}]
+		}
+		{
+			x: -9.0d
+			y: -1.0d
+			subtitle: "{ftbquests.chapter.chapter_4.quests143.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_4.quests143.description0}"
+				""
+				"{ftbquests.chapter.chapter_4.quests143.description1}"
+				"{ftbquests.chapter.chapter_4.quests143.description2}"
+				""
+				"{ftbquests.chapter.chapter_4.quests143.description3}"
+			]
+			dependencies: ["752215E611021472"]
+			id: "5E6A803498A7CF11"
+			tasks: [{
+				id: "34159F7C1E5A2943"
+				type: "item"
+				item: "techreborn:greenhouse_controller"
+			}]
+			rewards: [
+				{
+					id: "5AAD4C3D25356B6D"
+					type: "item"
+					item: "farmersdelight:rich_soil"
+					count: 4
+				}
+				{
+					id: "0720E2A96E3E79FA"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5253492355592689915L
+				}
+			]
 		}
 	]
 	quest_links: [ ]

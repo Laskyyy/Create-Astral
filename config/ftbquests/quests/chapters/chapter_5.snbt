@@ -1,7 +1,7 @@
 {
 	id: "33205DD87098DE65"
 	group: ""
-	order_index: 7
+	order_index: 5
 	filename: "chapter_5"
 	title: "{ftbquests.chapter.chapter_5.title}"
 	icon: "techreborn:electronic_circuit"
@@ -420,16 +420,27 @@
 			}]
 			rewards: [
 				{
-					id: "6F94AD86CBF1F65D"
-					type: "item"
-					item: "ad_astra:strophar_mushroom"
-					count: 32
-				}
-				{
 					id: "7E9733966E308186"
 					type: "loot"
 					exclude_from_claim_all: true
 					table_id: 2770258610575478801L
+				}
+				{
+					id: "356053839C9F8E4D"
+					type: "item"
+					item: "create:blaze_cake"
+					count: 4
+				}
+				{
+					id: "66335CCA11571AAF"
+					type: "item"
+					item: {
+						id: "per_aspera:thruster_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
 				}
 			]
 		}
@@ -448,12 +459,20 @@
 				icon: "ad_astra:mercury_globe"
 				dimension: "ad_astra:mercury"
 			}]
-			rewards: [{
-				id: "3BBF172AD342EF01"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 2770258610575478801L
-			}]
+			rewards: [
+				{
+					id: "3BBF172AD342EF01"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2770258610575478801L
+				}
+				{
+					id: "1DA6422E45384EFE"
+					type: "item"
+					item: "ad_astra:strophar_mushroom"
+					count: 32
+				}
+			]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_5.quests7.title}"
@@ -1551,7 +1570,7 @@
 				"2799577FF58D10A3"
 				"4167177A752546A3"
 			]
-			min_required_tasks: 2
+			min_required_tasks: 0
 			id: "07C60C1DB44579B9"
 			tasks: [
 				id: "21A94F98356809F6"
@@ -2394,6 +2413,39 @@
 				item: "createastral:ancient_stone"
 				count: 10L
 			}]
+		}
+		{
+			x: 4.5d
+			y: -4.5d
+			subtitle: "{ftbquests.chapter.chapter_5.quests76.subtitle}"
+			description: ["{ftbquests.chapter.chapter_5.quests76.description0}"]
+			dependencies: ["5729A883639B2EEF"]
+			optional: true
+			id: "4B4DFCFC13696F0E"
+			tasks: [{
+				id: "21F371196CEA56FB"
+				type: "item"
+				item: "techreborn:industrial_sawmill"
+			}]
+			rewards: [
+				{
+					id: "22CF2DE77427839D"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 2770258610575478801L
+				}
+				{
+					id: "60AB98F3B28E29B7"
+					type: "item"
+					item: {
+						id: "tconstruct:broad_axe_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:hepatizon"
+						}
+					}
+				}
+			]
 		}
 	]
 	quest_links: [ ]
