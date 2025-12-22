@@ -400,6 +400,17 @@
   "block.createastral.blast-resistant_concrete": "Blast-Resistant Concrete",
   "block.createastral.blast-resistant_concrete_slab": "Blast-Resistant Concrete Slab",
   "block.createastral.blast-resistant_concrete_stairs": "Blast-Resistant Concrete Stairs",
+  
+  "block.createastral.blast-resistant_doncrete": "Blast-Resistant Doncrete",
+  "block.createastral.blast-resistant_doncrete_slab": "Blast-Resistant Doncrete Slab",
+  "block.createastral.blast-resistant_concrete_stairs": "Blast-Resistant Doncrete Stairs",
+  
+  "block.createastral.rock_salt": "Rock Salt",
+  "block.createastral.rock_salt_slab": "Rock Salt Slab",
+  "block.createastral.rock_salt_stais": "Rock Salt Stairs",
+  "block.createastral.rock_salt_bricks": "Rock Salt Bricks",
+  "block.createastral.rock_salt_pillar": "Rock Salt Pillar",
+  "block.createastral.rock_salt_polished": "Polished Rock Salt",
 
   "block.createastral.distillery_dummy": "Distillery Dummy",
   "block.createastral.electrolyser_dummy": "Electrolyzer Dummy",

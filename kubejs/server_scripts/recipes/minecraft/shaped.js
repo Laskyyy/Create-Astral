@@ -248,6 +248,34 @@
           A: "createastral:blast-resistant_concrete",
         },
       },
+	  {
+        output: Item.of("createastral:blast-resistant_doncrete_slab", 6),
+        pattern: ["AAA"],
+        key: {
+          A: "createastral:blast-resistant_doncrete",
+        },
+      },
+      {
+        output: Item.of("createastral:blast-resistant_doncrete_stairs", 4),
+        pattern: ["A  ", "AA ", "AAA"],
+        key: {
+          A: "createastral:blast-resistant_doncrete",
+        },
+      },
+	  {
+        output: Item.of("createastral:rock_salt_slab", 6),
+        pattern: ["AAA"],
+        key: {
+          A: "createastral:rock_salt",
+        },
+      },
+      {
+        output: Item.of("createastral:rock_salt_stairs", 4),
+        pattern: ["A  ", "AA ", "AAA"],
+        key: {
+          A: "createastral:rock_salt",
+        },
+      },
       {
         output: "tconstruct:seared_fuel_tank",
         pattern: ["CCC", "BDB", "AAA"],

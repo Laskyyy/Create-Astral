@@ -9,8 +9,8 @@
     event.recipes.custommachinery
       .custom_machine("astralfoods:blender", 300)
       .requireItem(Item.of("yttr:delicace"))
-      .requireItem(Item.of("techreborn:saltpeter_dust"))
-      .produceItem(Item.of("createastral:saltmeal"));
+      .requireItem(Item.of("techreborn:saltpeter_dust", 5))
+      .produceItem(Item.of("createastral:saltmeal", 6));
     event.recipes.custommachinery
       .custom_machine("astralfoods:blender", 100)
       .requireItem(Item.of("create:dough"))

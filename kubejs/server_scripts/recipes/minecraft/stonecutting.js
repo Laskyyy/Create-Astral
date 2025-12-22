@@ -19,6 +19,23 @@
         ],
       },
       {
+        input: "createastral:blast-resistant_doncrete",
+        outputs: [
+          Item.of("createastral:blast-resistant_doncrete_slab", 2),
+          "createastral:blast-resistant_doncrete_stairs",
+        ],
+      },
+      {
+        input: "createastral:rock_salt",
+        outputs: [
+          Item.of("createastral:rock_salt_slab", 2),
+          "createastral:rock_salt_stairs",
+          "createastral:rock_salt_bricks",
+          "createastral:rock_salt_pillar",
+          "createastral:rock_salt_polished"
+        ],
+      },
+      {
         input: "minecraft:dripstone_block",
         outputs: [Item.of("minecraft:pointed_dripstone", 2)],
       },
