@@ -2632,8 +2632,8 @@
   "ftbquests.chapter.chapter_4.quests141.subtitle": "Machines too slow? Use these!",
   "ftbquests.chapter.chapter_4.quests141.description0": "&6Overclockers&r are upgrades for &6Tech Reborn&r machines.",
   "ftbquests.chapter.chapter_4.quests141.description2": "They increase the speed of machines at the cost of making them use more energy.",
-  "ftbquests.chapter.chapter_4.quests141.description3": "They also stack with each other!",
-  "ftbquests.chapter.chapter_4.quests141.description4": "&7Other TR upgrades also exist but they're not nearly as noteworthy.&r",
+  "ftbquests.chapter.chapter_4.quests141.description3": "Open a machine's GUI, and place the upgrade in one of the four slots on the left. Having multiple upgrades will increase the effect.",
+  "ftbquests.chapter.chapter_4.quests141.description4": "&7Other TR upgrades also exist but they're not nearly as noteworthy. You can find them in REI by searching 'Upgrade'&r",
   "ftbquests.chapter.chapter_4.quests142.title": "Need More Power?",
   "ftbquests.chapter.chapter_4.quests142.subtitle": "Into The Future!",
   "ftbquests.chapter.chapter_4.quests142.description0": "&6Generators&r consume Furnace fuels to produce energy!",
@@ -3157,4 +3157,5 @@
   "modifier.createastral.amplified.flavor": "Supercharged!",
   "modifier.createastral.amplified.description": "The Shimmer amplification device lets your tool handle an additional ability!"
 }
+
 
