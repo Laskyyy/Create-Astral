@@ -14,6 +14,11 @@
 
     /** @type {MixingRecipe[]} */
     const mixingRecipes = [
+		{
+        output: [{ fluid: "techreborn:sulfuric_acid", amount: BUCKET }],
+        input: ["techreborn:sulfur_dust", { fluid: "minecraft:water", amount: 500 * mB }, { fluid: "ad_astra:oxygen", amount: BUCKET }],
+        time: 300,
+      },
       {
         output: [{ fluid: "estrogen:molten_amethyst", amount: INGOT / 2 }],
         input: [{ fluid: "tconstruct:molten_amethyst", amount: 500 * mB }, "astraladditions:bulba_root"],
@@ -23,6 +28,11 @@
         output: ["create:tree_fertilizer"],
         input: ["#minecraft:saplings", "#c:coral_fans", "minecraft:bone_meal"],
         time: 180,
+      },
+      {
+        output: ["minecraft:mycelium"],
+        input: ["#minecraft:dirt", "ad_astra:cheese"],
+        time: 100,
       },
       {
         output: [{ fluid: "kubejs:shimmer", amount: BUCKET / 9 }],
@@ -354,7 +364,7 @@
         input: [
           "#c:concrete_powder",
           Item.of("createastral:lime", 2),
-          Item.of("techreborn:steel_dust", 3),
+          Item.of("techreborn:steel_dust", 2),
           { fluid: "minecraft:water", amount: BUCKET },
         ],
         heat: "heated",
@@ -2708,6 +2718,10 @@
         time: 80,
       },
       {
+        output: ["farmersdelight:pie_crust"],
+        input: [{ fluid: "milk:still_milk", amount: 250 * mB }, Item.of("create:wheat_flour", 3)],
+      },
+      {
         output: Fluid.of("tconstruct:molten_netherite", (INGOT * 3) / 10),
         input: [
           { fluid: "tconstruct:molten_debris", amount: INGOT },
@@ -2766,7 +2780,7 @@
     mixingRecipes.forEach((recipe) => {
       event.recipes
         .createMixing(recipe.output, recipe.input)
-        .heatRequirement(recipe.heat ?? "")
+        .heatRequirement(recipe.heat ?? "none")
         .processingTime(recipe.time ?? 100);
     });
     /**

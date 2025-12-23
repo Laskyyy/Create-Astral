@@ -11,6 +11,17 @@
     wineSequence(event);
     enchantBooks(event);
 
+
+	 createSequencedAssembly(event, {
+      input: "createastral:copper_clad_lapis_board",
+      transitional: "createastral:copper_clad_lapis_board",
+      outputs: ["createastral:printed_copper_clad_lapis_board"],
+    })
+      .addDeployingStep("createastral:circuit_paper")
+      .addPressingStep()
+      .loops(1)
+      .build();
+	
     createSequencedAssembly(event, {
       input: "minecraft:bucket",
       transitional: "minecraft:bucket",
@@ -185,6 +196,17 @@
       .addDeployingStep("#c:nuggets/desh")
       .loops(6)
       .build();
+	  
+	createSequencedAssembly(event, {
+      input: "#c:plates/brass",
+      transitional: "create:incomplete_precision_mechanism",
+      outputs: ["create:precision_mechanism"],
+    })
+      .addDeployingStep("copycats:copycat_cogwheel")
+      .addDeployingStep("copycats:copycat_large_cogwheel")
+      .addDeployingStep("astraladditions:steel_ring")
+      .loops(6)
+      .build();
 
     createSequencedAssembly(event, {
       input: "minecraft:bowl",
@@ -349,6 +371,7 @@
         .addFillingStep({ fluid: "tconstruct:ender_slime", amount: BUCKET })
         .addDeployingStep("minecraft:chorus_fruit")
         .build();
+
       createSequencedAssembly(event, {
         input: "create:copper_casing",
         transitional: "createastral:incomplete_brass_casing",
@@ -507,6 +530,17 @@
         .addFillingStep({ fluid: "tconstruct:molten_silver", amount: INGOT })
         .addDeployingStep("techreborn:rubber")
         .addPressingStep() //yeah!
+        .loops(4)
+        .build();
+		
+	  createSequencedAssembly(event, {
+        input: "astralgenerators:steel_frame",
+        transitional: "createastral:incomplete_basic_machine_frame",
+        outputs: ["techreborn:basic_machine_frame"],
+      })
+        .addFillingStep({ fluid: "tconstruct:molten_silver", amount: INGOT })
+        .addDeployingStep("techreborn:rubber")
+        .addPressingStep()
         .loops(4)
         .build();
     }
@@ -865,7 +899,7 @@
 
     createSequencedAssembly(event, {
       input: "createastral:seitan",
-      transitional: "createastral:seitan",
+      transitional: "createastral:protoegg",
       outputs: ["minecraft:egg"],
     })
       .addDeployingStep("techreborn:calcite_dust")

@@ -13,6 +13,17 @@
     /** @type {ShapedRecipe[]} */
     const shapedRecipes = [
       {
+        output: Item.of("custommachinery:custom_machine_item", { machine: "astralfoods:blender" }),
+        pattern: [" S ", "RGW", "SPS"],
+        key: {
+			S: "ad_astra:steel_plate",
+			G: "minecraft:glass",
+			R: "phonos:redstone_chip",
+			W: "createaddition:gold_spool",
+			P: "create:propeller"
+		},
+      },
+      {
         output: "createastral:andesite_alloy_block",
         pattern: ["AAA", "AAA", "AAA"],
         key: { A: "create:andesite_alloy" },
@@ -138,7 +149,7 @@
         output: "ad_astra:oxygen_loader",
         pattern: ["IOI", "PTP", "IFI"],
         key: {
-          I: "create:iron_sheet",
+          I: "#c:iron_plates",
           O: "ad_astra:oxygen_tank",
           P: "create:smart_fluid_pipe",
           T: "create:fluid_tank",
@@ -237,6 +248,34 @@
           A: "createastral:blast-resistant_concrete",
         },
       },
+	  {
+        output: Item.of("createastral:blast-resistant_doncrete_slab", 6),
+        pattern: ["AAA"],
+        key: {
+          A: "createastral:blast-resistant_doncrete",
+        },
+      },
+      {
+        output: Item.of("createastral:blast-resistant_doncrete_stairs", 4),
+        pattern: ["A  ", "AA ", "AAA"],
+        key: {
+          A: "createastral:blast-resistant_doncrete",
+        },
+      },
+	  {
+        output: Item.of("createastral:rock_salt_slab", 6),
+        pattern: ["AAA"],
+        key: {
+          A: "createastral:rock_salt",
+        },
+      },
+      {
+        output: Item.of("createastral:rock_salt_stairs", 4),
+        pattern: ["A  ", "AA ", "AAA"],
+        key: {
+          A: "createastral:rock_salt",
+        },
+      },
       {
         output: "tconstruct:seared_fuel_tank",
         pattern: ["CCC", "BDB", "AAA"],
@@ -301,17 +340,6 @@
         key: {
           A: "minecraft:gunpowder",
           B: "minecraft:copper_ingot",
-        },
-      },
-      {
-        output: "ad_astra:oxygen_loader",
-        pattern: ["BAB", "DED", "BCB"],
-        key: {
-          A: "ad_astra:oxygen_tank",
-          B: "#c:iron_plates",
-          C: "ad_astra:engine_fan",
-          D: "create:smart_fluid_pipe",
-          E: "create:fluid_tank",
         },
       },
       {
@@ -1443,14 +1471,13 @@
       },
       {
         output: "extractinator:extractinator",
-        pattern: ["H  ", "PRA", "CBA"],
+        pattern: ["H ", "FC", "MS"],
         key: {
           H: "minecraft:hopper",
-          P: "minecraft:piston",
-          C: "minecraft:cauldron",
-          B: "minecraft:copper_block",
-          R: "minecraft:redstone_block",
-          A: "minecraft:chain",
+          F: "create:filter",
+          C: "create:cogwheel",
+          M: "create:millstone",
+          S: "dustrial_decor:sheet_metal",
         },
       },
       {

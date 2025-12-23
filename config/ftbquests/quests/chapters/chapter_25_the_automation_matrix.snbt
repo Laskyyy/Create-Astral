@@ -2466,7 +2466,7 @@
 			]
 		}
 		{
-			icon: "minecraft:blackstone"
+			icon: "minecraft:basalt"
 			x: -26.0d
 			y: 1.0d
 			hide_dependency_lines: true
@@ -2476,7 +2476,7 @@
 				{
 					id: "6B85531A164856E6"
 					type: "item"
-					item: "minecraft:blackstone"
+					item: "minecraft:basalt"
 				}
 				{
 					id: "3FEA8A8FB08C7AEC"

@@ -11,6 +11,18 @@
 
     /** @type {CastingBasinRecipe[]} */
     const castingBasinRecipes = [
+	  {
+        fluidInput: { fluid: "tconstruct:molten_steel", amount: INGOT * 8 },
+        result: "createbigcannons:unbored_steel_screw_breech",
+        coolingTime: 180,
+        cast: { item: "createbigcannons:screw_breech_cast_mould", consumed: false },
+      },
+	  {
+        fluidInput: { fluid: "tconstruct:molten_brass", amount: INGOT * 9 },
+        result: "create:brass_casing",
+        coolingTime: 180,
+        cast: { item: "createastral:incomplete_brass_casing", consumed: true },
+      },
       {
         fluidInput: { fluid: "kubejs:compound_mixture", amount: INGOT * 9 },
         result: "createastral:andesite_alloy_block",
