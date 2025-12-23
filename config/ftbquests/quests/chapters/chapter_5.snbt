@@ -1573,7 +1573,8 @@
 			min_required_tasks: 0
 			id: "07C60C1DB44579B9"
 			tasks: [
-				id: "21A94F98356809F6"
+				{
+					id: "21A94F98356809F6"
 					type: "item"
 					title: "{ftbquests.chapter.chapter_5.quests42.tasks1.title}"
 					item: {
@@ -1583,10 +1584,11 @@
 							items: [
 								{
 									id: "techreborn:cell"
+									Count: 1b
 									tag: {
 										fluid: "techreborn:oil"
 									}
-									Count: 1b
+									match_nbt: true
 								}
 								{
 									id: "techreborn:oil_bucket"
@@ -1595,7 +1597,7 @@
 							]
 						}
 					}
-					match_nbt: true
+				}
 				{
 					id: "4A61D1E1FE5ED548"
 					type: "item"

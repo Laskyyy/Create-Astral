@@ -2096,8 +2096,8 @@
 									tag: {
 										fluid: "minecraft:lava"
 									}
+									match_nbt: true
 								}
-								match_nbt: true
 								{
 									id: "minecraft:lava_bucket"
 									Count: 1b
