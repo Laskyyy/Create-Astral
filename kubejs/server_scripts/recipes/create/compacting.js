@@ -452,7 +452,7 @@
       },
     ];
     compactingRecipes.forEach((recipe) => {
-      event.recipes.createCompacting(recipe.output, recipe.inputs).heatRequirement(recipe.heat ?? "");
+      event.recipes.createCompacting(recipe.output, recipe.inputs).heatRequirement(recipe.heat ?? "none");
     });
   });
   /** @param {Internal.RecipeEventJS} event */
