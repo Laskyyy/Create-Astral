@@ -2639,10 +2639,10 @@
   "ftbquests.chapter.chapter_4.quests142.description0": "&6Generators&r consume Furnace fuels to produce energy!",
   "ftbquests.chapter.chapter_4.quests142.description1": "They're also the basis for most other Tech Reborn power production!",
   "ftbquests.chapter.chapter_4.quests143.subtitle": "I hate radial farms!",
-  "ftbquests.chapter.chapter_4.quests143.description0": "A multiblock that replaces radial farms.",
-  "ftbquests.chapter.chapter_4.quests143.description1": "It'll harvest and replant any crops in the 9x9 behind it.",
+  "ftbquests.chapter.chapter_4.quests143.description0": "An electrical alternative to radial farms.",
+  "ftbquests.chapter.chapter_4.quests143.description1": "The Greenhouse Controller will harvest and replant any crops in the 9x9 space behind it. Click 'Toggle Multiblock Hologram' to view the available space.",
   "ftbquests.chapter.chapter_4.quests143.description2": "It can also harvest Sap from Rubber Trees!",
-  "ftbquests.chapter.chapter_4.quests143.description3": "Adding Incandecent Lamps boosts plant growth!",
+  "ftbquests.chapter.chapter_4.quests143.description3": "Adding Incandecent Lamps boosts plant growth, though these lamps must also be powered by electricity.",
   "ftbquests.chapter.chapter_4.quests144.subtitle": "Reinventing the &mwheel&r mixer.",
   "ftbquests.chapter.chapter_4.quests144.description0": "Essentially Tech Reborn's Mixer.",
   "ftbquests.chapter.chapter_4.quests144.description1": "Will create new substances and dye things more efficiently!",
@@ -3157,5 +3157,6 @@
   "modifier.createastral.amplified.flavor": "Supercharged!",
   "modifier.createastral.amplified.description": "The Shimmer amplification device lets your tool handle an additional ability!"
 }
+
 
 
