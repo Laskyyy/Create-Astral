@@ -11,6 +11,12 @@
 
     /** @type {CastingTableRecipe[]} */
     const castingTableRecipes = [
+	  {
+        fluidInput: { fluid: "techreborn:silicon", amount: BUCKET/10 },
+        result: "createaddition:straw",
+        coolingTime: 50,
+        cast: { item: "createastral:straw_gold_cast", consumed: false },
+      },
       {
         fluidInput: { fluid: "kubejs:shimmer", amount: 10 * BUCKET },
         result: "minecraft:saddle",

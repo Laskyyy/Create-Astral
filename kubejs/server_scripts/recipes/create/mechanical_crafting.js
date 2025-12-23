@@ -550,7 +550,7 @@
         pattern: ["  C  ", "C S C", " SDS ", "  S  ", "  S  "],
         key: {
           S: "minecraft:prismarine_shard",
-          D: "createaddition:diamond_grit",
+          D: "techreborn:diamond_dust",
           C: "minecraft:prismarine_crystals",
         },
       },

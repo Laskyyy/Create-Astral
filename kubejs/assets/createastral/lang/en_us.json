@@ -31,6 +31,9 @@
   "custommachinery.astralsignals.signal_coordinator.text": "Signal Coordinator",
   "custommachinery.astralsignals.vinyl_printer": "Vinyl Printer",
   "custommachinery.astralsignals.vinyl_printer.text": "Vinyl Printer",
+  
+  "custommachinery.astralfoods.blender": "Blender",
+  "custommachinery.astralfoods.blender.text": "Blender",
 
   "custommachinery.createastral.channeling_transformer": "Channeling Transformer",
   "custommachinery.createastral.channeling_transformer.text": "Channeling Transformer",
@@ -220,6 +223,8 @@
   "item.createastral.crushed_raw_calorite": "Crushed Raw Calorite",
   "item.createastral.crushed_raw_cobalt": "Crushed Raw Cobalt",
   "item.createastral.crushed_raw_gadolinite": "Crushed Raw Yttrium",
+  
+  "item.createastral.straw_gold_cast": "Straw Gold Cast",
 
   "item.createastral.subatomic_ingot": "Subatomic Ingot",
   "item.createastral.bronze_ingot": "Bronze Ingot",
@@ -244,6 +249,7 @@
   "item.createastral.printed_circuit": "Printed Circuit",
   "item.createastral.copper_clad_lapis_board": "Copper Clad Lapis Board",
   "item.createastral.printed_copper_clad_lapis_board": "Printed Copper Clad Lapis Board",
+  "item.createastral.saltmeal": "Saltmeal",
   "item.createastral.logo": "Astral",
   "item.createastral.uranium_residue": "Uranium Residue",
   "item.createastral.navigation_mechanism": "Navigation Mechanism",
@@ -360,6 +366,8 @@
   "item.astralfoods.food_amalgamation": "Food Amalgamation",
   "item.astralfoods.bulbas_tea": "Bulba's Tea",
   "item.astralfoods.astralfoods.dipped_potato": "Dipped Potato",
+  "item.astralfoods.astralfoods.mashed_potato": "Mashed Potato",
+  "item.astralfoods.astralfoods.hash_brown": "Hash Brown",
 
   "block.kubejs.fragile_sheet_block": "Fragile Sheet Block",
   "block.kubejs.broken_fragile_sheet_block": "Broken Fragile Sheet Block",
@@ -373,6 +381,8 @@
   "block.astralsignals.mp_decryptor_dummy": "MPD Dummy",
   "block.astralsignals.drive_eraser_dummy": "Drive Eraser Dummy",
   "block.astralsignals.vinyl_printer_dummy": "Vinyl Printer Dummy",
+  
+  "block.astralfoods.blender": "Blender",
 
   "block.createastral.sturdy_sheet_block": "Sturdy Sheet Block",
   "block.createastral.shimmering_stone": "Shimmering Stone",
@@ -390,6 +400,17 @@
   "block.createastral.blast-resistant_concrete": "Blast-Resistant Concrete",
   "block.createastral.blast-resistant_concrete_slab": "Blast-Resistant Concrete Slab",
   "block.createastral.blast-resistant_concrete_stairs": "Blast-Resistant Concrete Stairs",
+  
+  "block.createastral.blast-resistant_doncrete": "Blast-Resistant Doncrete",
+  "block.createastral.blast-resistant_doncrete_slab": "Blast-Resistant Doncrete Slab",
+  "block.createastral.blast-resistant_concrete_stairs": "Blast-Resistant Doncrete Stairs",
+  
+  "block.createastral.rock_salt": "Rock Salt",
+  "block.createastral.rock_salt_slab": "Rock Salt Slab",
+  "block.createastral.rock_salt_stais": "Rock Salt Stairs",
+  "block.createastral.rock_salt_bricks": "Rock Salt Bricks",
+  "block.createastral.rock_salt_pillar": "Rock Salt Pillar",
+  "block.createastral.rock_salt_polished": "Polished Rock Salt",
 
   "block.createastral.distillery_dummy": "Distillery Dummy",
   "block.createastral.electrolyser_dummy": "Electrolyzer Dummy",
@@ -427,8 +448,8 @@
   "item.createastral.ender_marimo": "Ender Marimo",
   "item.createastral.shimmer_marimo": "Shimarimo",
 
-  "block.doodads.asphalt_slab": "Asphalt Slab",
-  "block.doodads.asphalt_stair": "Asphalt Stair",
+  "block.doodads.asphalt_slab": "Andesite Pavement Slab",
+  "block.doodads.asphalt_stair": "Andesite Pavement Stair",
   "block.yttr.polished_scorched_obsidian_holster_alive": "Polished Scorched Obsidian Holster Alive",
 
   "fluid.astralgenerators.steam": "Steam",

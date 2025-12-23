@@ -68,6 +68,8 @@
     event.create("createastral:fragile_rocket_fin");
     event.create("createastral:broken_fragile_rocket_fin");
     event.create("createastral:gold_casted_rocket_fin");
+    event.create("createastral:saltmeal");
+    event.create("createastral:straw_gold_cast");
     event.create("createastral:horse").food((food) => {
       food.hunger(0).saturation(0).alwaysEdible();
     });

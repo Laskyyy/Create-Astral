@@ -446,13 +446,18 @@
         inputs: ["minecraft:cod", { fluid: "createaddition:seed_oil", amount: 100 * mB }],
       },
       {
+        output: "astralfoods:hash_brown",
+        inputs: ["astralfoods:mashed_potato", { fluid: "createaddition:seed_oil", amount: 100 * mB }],
+		heat: "heated"
+      },
+      {
         output: "createbigcannons:steel_screw_lock",
         inputs: [Item.of("astraladditions:steel_ring", 2)],
         heat: "heated",
       },
     ];
     compactingRecipes.forEach((recipe) => {
-      event.recipes.createCompacting(recipe.output, recipe.inputs).heatRequirement(recipe.heat ?? "");
+      event.recipes.createCompacting(recipe.output, recipe.inputs).heatRequirement(recipe.heat ?? "none");
     });
   });
   /** @param {Internal.RecipeEventJS} event */
