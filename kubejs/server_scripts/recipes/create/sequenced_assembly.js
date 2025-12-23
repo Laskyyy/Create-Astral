@@ -386,7 +386,7 @@
         transitional: "createastral:transitional_lapis_sheet",
         outputs: ["create:integrated_circuit"],
       })
-        .addFillingStep({ fluid: "tconstruct:molten_silver", amount: BUCKET / 24 })
+        .addFillingStep({ fluid: "tconstruct:molten_silver", amount: BUCKET / 20 })
         .addDeployingStep("createaddition:copper_wire")
         .addDeployingStep("createaddition:copper_wire")
         .addPressingStep()
