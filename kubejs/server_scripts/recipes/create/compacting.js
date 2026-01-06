@@ -440,10 +440,12 @@
       {
         output: "astralfoods:blaze_fries",
         inputs: ["astralfoods:blaze_rods", { fluid: "createaddition:seed_oil", amount: 100 * mB }],
+        heat: "heated",
       },
       {
         output: "astralfoods:fried_cod",
         inputs: ["minecraft:cod", { fluid: "createaddition:seed_oil", amount: 100 * mB }],
+        heat: "heated",
       },
       {
         output: "astralfoods:hash_brown",
