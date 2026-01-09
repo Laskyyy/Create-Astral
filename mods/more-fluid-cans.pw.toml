@@ -1,0 +1,13 @@
+name = "More Fluid Cans"
+filename = "more-fluid-cans-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "bc86546937f5c146eacc57b3be036a566d082bb6"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7425572
+project-id = 1421591

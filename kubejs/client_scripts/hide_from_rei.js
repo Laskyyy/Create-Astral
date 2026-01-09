@@ -613,6 +613,7 @@
       "createastral:laskinium_pill",
       "farmersdelight:wheat_dough",
       "vinery:dough",
+      "more-fluid-cans:copper_can",
       //Sequenced Assembly Transition Items - not useful to have in rei
       "railways:white_incomplete_conductor_cap",
       "railways:orange_incomplete_conductor_cap",
