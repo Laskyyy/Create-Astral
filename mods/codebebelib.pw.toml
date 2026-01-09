@@ -1,0 +1,15 @@
+filename = 'codebebelib-2.0.0-beta.jar'
+name = 'CodeBebeLib'
+side = 'both'
+x-prismlauncher-loaders = [ 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.18.2' ]
+x-prismlauncher-release-type = 'beta'
+
+[download]
+hash = '3654ef26b2e866cb875ca802ffff2cf57ae9cd51'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+
+[update.curseforge]
+file-id = 7361952
+project-id = 1255782
