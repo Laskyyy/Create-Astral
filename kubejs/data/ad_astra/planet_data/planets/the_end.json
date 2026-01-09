@@ -3,9 +3,9 @@
     "galaxy": "ad_astra:milky_way",
     "solar_system": "ad_astra:proxima_centauri",
     "world": "minecraft:the_end",
-    "orbit_world": "minecraft:the_end",
+    "orbit_world": "ae2:spatial_storage",
     "parent_world": null,
-    "rocket_tier": 4,
+    "rocket_tier": 5,
     "gravity": 2.721,
     "has_atmosphere": false,
     "days_in_year": 365,
@@ -13,5 +13,5 @@
     "solar_power": 0,
     "orbit_solar_power": 0,
     "has_oxygen": false,
-    "button_color": "light_blue"
+    "button_color": "black"
 }
