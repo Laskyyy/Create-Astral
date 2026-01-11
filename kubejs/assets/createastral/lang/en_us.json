@@ -31,7 +31,7 @@
   "custommachinery.astralsignals.signal_coordinator.text": "Signal Coordinator",
   "custommachinery.astralsignals.vinyl_printer": "Vinyl Printer",
   "custommachinery.astralsignals.vinyl_printer.text": "Vinyl Printer",
-  
+
   "custommachinery.astralfoods.blender": "Blender",
   "custommachinery.astralfoods.blender.text": "Blender",
 
@@ -223,7 +223,7 @@
   "item.createastral.crushed_raw_calorite": "Crushed Raw Calorite",
   "item.createastral.crushed_raw_cobalt": "Crushed Raw Cobalt",
   "item.createastral.crushed_raw_gadolinite": "Crushed Raw Yttrium",
-  
+
   "item.createastral.straw_gold_cast": "Straw Gold Cast",
 
   "item.createastral.subatomic_ingot": "Subatomic Ingot",
@@ -381,7 +381,7 @@
   "block.astralsignals.mp_decryptor_dummy": "MPD Dummy",
   "block.astralsignals.drive_eraser_dummy": "Drive Eraser Dummy",
   "block.astralsignals.vinyl_printer_dummy": "Vinyl Printer Dummy",
-  
+
   "block.astralfoods.blender": "Blender",
 
   "block.createastral.sturdy_sheet_block": "Sturdy Sheet Block",
@@ -400,11 +400,11 @@
   "block.createastral.blast-resistant_concrete": "Blast-Resistant Concrete",
   "block.createastral.blast-resistant_concrete_slab": "Blast-Resistant Concrete Slab",
   "block.createastral.blast-resistant_concrete_stairs": "Blast-Resistant Concrete Stairs",
-  
+
   "block.createastral.blast-resistant_doncrete": "Blast-Resistant Doncrete",
   "block.createastral.blast-resistant_doncrete_slab": "Blast-Resistant Doncrete Slab",
-  "block.createastral.blast-resistant_concrete_stairs": "Blast-Resistant Doncrete Stairs",
-  
+  "block.createastral.blast-resistant_doncrete_stairs": "Blast-Resistant Doncrete Stairs",
+
   "block.createastral.rock_salt": "Rock Salt",
   "block.createastral.rock_salt_slab": "Rock Salt Slab",
   "block.createastral.rock_salt_stais": "Rock Salt Stairs",
@@ -3077,6 +3077,8 @@
   "ftbquests.chapter.culinary_delights.quests17.description0": "Lost your space suit? This'll help you stay on the moon without a space suit!",
   "ftbquests.chapter.culinary_delights.quests17.description1": "The company didn't hand out space suits for the whole crew so they made it the chef's (my) mission!",
   "ftbquests.chapter.culinary_delights.quests17.description2": "I'm guessing the metal melds with your body making it more &7Resistant&r.",
+  "ftbquests.chapter.culinary_delights.quests18.subtitle": "The final recipe.",
+  "ftbquests.chapter.culinary_delights.quests18.description0": "What if one could cook with their very essence?",
 
   "ftbquests.chapter.the_trophy_room.title": "?) The Trophy Room",
   "ftbquests.chapter.the_trophy_room.quests0.title": "I automated",
@@ -3157,6 +3159,3 @@
   "modifier.createastral.amplified.flavor": "Supercharged!",
   "modifier.createastral.amplified.description": "The Shimmer amplification device lets your tool handle an additional ability!"
 }
-
-
-
