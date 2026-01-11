@@ -1,7 +1,7 @@
 {
 	id: "2A0109E8725CF69C"
-	group: ""
-	order_index: 3
+	group: "31A321D19BB5F68F"
+	order_index: 2
 	filename: "astral_signals"
 	title: "{ftbquests.chapter.astral_signals.title}"
 	icon: "astralsignals:signal_coordinator_dummy"

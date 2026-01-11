@@ -45,7 +45,7 @@
 	enableOverstressedTooltip = true
 	#.
 	#Determines if the fluid unit should be simplified
-	simplifyFluidUnit = true
+	simplifyFluidUnit = false
 	#.
 	#Offset the Create config button in the in-game menu by this many pixels on the X axis
 	#The sign (-/+) of this value determines what side of the row the button appears on (left/right)

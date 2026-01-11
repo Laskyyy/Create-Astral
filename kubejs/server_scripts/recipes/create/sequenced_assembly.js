@@ -218,6 +218,24 @@
       .addFillingStep({ fluid: "kubejs:shimmer", amount: BUCKET })
       .build();
 
+    createSequencedAssembly(event, {
+      input: "minecraft:apple",
+      transitional: "minecraft:apple",
+      outputs: ["astralfoods:shimmered_apple"],
+    })
+      .addDeployingStep("tconstruct:ender_slime_crystal")
+      .addFillingStep({ fluid: "kubejs:shimmer", amount: BUCKET / 3 })
+      .build();
+
+    createSequencedAssembly(event, {
+      input: "farmersdelight:pie_crust",
+      transitional: "farmersdelight:pie_crust",
+      outputs: ["astralfoods:gamers_delight"],
+    })
+      .addDeployingStep("techreborn:compressed_plantball")
+      .addFillingStep({ fluid: "techreborn:lithium", amount: BUCKET })
+      .build();
+
     // Yttr uses a non-standard ingredient, this has to remain an "event.custom".
     event.custom({
       type: "create:sequenced_assembly",
@@ -391,7 +409,7 @@
         transitional: "createastral:transitional_lapis_sheet",
         outputs: ["create:integrated_circuit"],
       })
-        .addFillingStep({ fluid: "tconstruct:molten_silver", amount: BUCKET / 24 })
+        .addFillingStep({ fluid: "tconstruct:molten_silver", amount: BUCKET / 20 })
         .addDeployingStep("createaddition:copper_wire")
         .addDeployingStep("createaddition:copper_wire")
         .addPressingStep()

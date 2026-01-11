@@ -1,0 +1,1061 @@
+{
+	id: "642BFDB8CF0488F9"
+	group: "31A321D19BB5F68F"
+	order_index: 1
+	filename: "culinary_delights"
+	title: "{ftbquests.chapter.culinary_delights.title}"
+	icon: "astralfoods:food_amalgamation"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "{ftbquests.chapter.culinary_delights.quests0.title}"
+			icon: "astralfoods:food_amalgamation"
+			x: 1.0d
+			y: 0.0d
+			shape: "pentagon"
+			subtitle: "{ftbquests.chapter.culinary_delights.quests0.subtitle}"
+			description: [
+				"{ftbquests.chapter.culinary_delights.quests0.description0}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests0.description1}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests0.description2}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests0.description3}"
+			]
+			hide_dependency_lines: false
+			dependencies: ["5CD05F26EB5C6754"]
+			size: 2.0d
+			optional: true
+			id: "6BC3D5174DDB02DC"
+			tasks: [{
+				id: "46A3120BD0575B02"
+				type: "checkmark"
+				title: "Welcome to Astral Foods!"
+			}]
+			rewards: [{
+				id: "307F742F598AF6B2"
+				type: "item"
+				item: "astralfoods:quantum_bites"
+				count: 8
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.culinary_delights.quests1.title}"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "ad_astra:textures/sky/earth.png"
+				}
+			}
+			x: 4.5d
+			y: -3.0d
+			description: [
+				"{ftbquests.chapter.culinary_delights.quests1.description0}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests1.description1}"
+			]
+			hide_dependency_lines: true
+			dependencies: ["6BC3D5174DDB02DC"]
+			size: 1.5d
+			id: "06EB9DF33418E603"
+			tasks: [{
+				id: "742E7A31DBA711FB"
+				type: "dimension"
+				icon: "ad_astra:earth_globe"
+				dimension: "minecraft:overworld"
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.culinary_delights.quests2.title}"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "ad_astra:textures/sky/moon.png"
+				}
+			}
+			x: 4.5d
+			y: 3.0d
+			description: [
+				"{ftbquests.chapter.culinary_delights.quests2.description0}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests2.description1}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests2.description2}"
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"6BC3D5174DDB02DC"
+				"15B9947ABCCB882F"
+			]
+			size: 1.5d
+			id: "150F57F29F8DDCE1"
+			tasks: [{
+				id: "4EBC09AC3C66E9EA"
+				type: "dimension"
+				icon: "ad_astra:moon_globe"
+				dimension: "ad_astra:moon"
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.culinary_delights.quests3.title}"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "ad_astra:textures/sky/mercury.png"
+				}
+			}
+			x: 10.5d
+			y: 0.0d
+			description: [
+				"{ftbquests.chapter.culinary_delights.quests3.description0}"
+				"{ftbquests.chapter.culinary_delights.quests3.description1}"
+				"{ftbquests.chapter.culinary_delights.quests3.description2}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests3.description3}"
+				"{ftbquests.chapter.culinary_delights.quests3.description4}"
+			]
+			hide_dependency_lines: true
+			dependencies: ["6BC3D5174DDB02DC"]
+			size: 1.5d
+			id: "6A4E8950ADB36592"
+			tasks: [{
+				id: "3DD3223896B28D90"
+				type: "checkmark"
+				title: "{ftbquests.chapter.culinary_delights.quests3.tasks0.title}"
+			}]
+			rewards: [{
+				id: "2714992E4D03110E"
+				type: "item"
+				item: "tconstruct:magma_cake"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 4.5d
+			description: ["{ftbquests.chapter.culinary_delights.quests12.description0}"]
+			dependencies: [
+				"150F57F29F8DDCE1"
+				"51BD31261A5725E3"
+			]
+			id: "41C1D3211BE1F8CE"
+			tasks: [{
+				id: "3F5D1300EAB5B965"
+				type: "item"
+				item: "astralfoods:bulbas_tea"
+			}]
+			rewards: [{
+				id: "31243FF2C29D86B1"
+				type: "item"
+				item: "createaddition:straw"
+				count: 4
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.0d
+			description: ["{ftbquests.chapter.culinary_delights.quests9.description0}"]
+			dependencies: ["5FDD72553B8EC457"]
+			id: "76BC27EC1FC2DB0A"
+			tasks: [{
+				id: "2EFB24B8DCBD023B"
+				type: "item"
+				item: "astralfoods:ice_cream_sandwich"
+			}]
+			rewards: [{
+				id: "67C928EFB01DB983"
+				type: "item"
+				item: "farmersdelight:egg_sandwich"
+				count: 4
+			}]
+		}
+		{
+			x: 5.5d
+			y: 1.5d
+			description: [
+				"{ftbquests.chapter.culinary_delights.quests10.description0}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests10.description1}"
+			]
+			dependencies: ["5FDD72553B8EC457"]
+			id: "12A1347D9DBCE55F"
+			tasks: [{
+				id: "1D8469D082326A84"
+				type: "item"
+				item: "astralfoods:chocolate_ice_cream"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.0d
+			subtitle: "{ftbquests.chapter.culinary_delights.quests11.subtitle}"
+			description: [
+				"{ftbquests.chapter.culinary_delights.quests11.description0}"
+				""
+				"ftbquests.chapter.culinary_delights.quests11.description1"
+				""
+				"ftbquests.chapter.culinary_delights.quests11.description2"
+			]
+			dependencies: ["12A1347D9DBCE55F"]
+			id: "71289D68787E78C4"
+			tasks: [{
+				id: "208D34589B161F1C"
+				type: "item"
+				item: "astralfoods:ambrosia"
+			}]
+			rewards: [{
+				id: "7E45C2054D404633"
+				type: "item"
+				item: "doodads:platform"
+				count: 8
+			}]
+		}
+		{
+			x: 3.5d
+			y: 4.5d
+			description: [
+				"{ftbquests.chapter.culinary_delights.quests13.description0}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests13.description1}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests13.description2}"
+			]
+			dependencies: [
+				"150F57F29F8DDCE1"
+				"51BD31261A5725E3"
+			]
+			id: "794DAD9220286864"
+			tasks: [{
+				id: "3EA063C9D0E041B4"
+				type: "item"
+				item: "astralfoods:cod_n_blaze"
+			}]
+			rewards: [{
+				id: "0F672157213B0F04"
+				type: "item"
+				item: {
+					id: "tconstruct:dagger"
+					Count: 1b
+					tag: {
+						Damage: 0
+						tic_stats: {
+							"tconstruct:attack_speed": 2.3939998f
+							"tconstruct:mining_speed": 5.835375f
+							"tconstruct:attack_damage": 3.4125f
+							"tconstruct:harvest_tier": "minecraft:diamond"
+							"tconstruct:durability": 629.25f
+						}
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.75f
+							"tconstruct:attack_damage": 0.65f
+							"tconstruct:durability": 0.75f
+						}
+						tic_materials: [
+							"tconstruct:cobalt"
+							"tconstruct:cobalt"
+						]
+						tic_modifiers: [
+							{
+								name: "tconstruct:lightweight"
+								level: 2s
+							}
+							{
+								name: "tconstruct:padded"
+								level: 1s
+							}
+							{
+								name: "tconstruct:offhand_attack"
+								level: 1s
+							}
+							{
+								name: "tconstruct:silky_shears"
+								level: 1s
+							}
+						]
+						tic_broken: 0b
+						tic_volatile_data: {
+							"tconstruct:duel_wielding": 1b
+						}
+						tic_persistent_data: {
+							upgrades: 3
+							abilities: 1
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 9.0d
+			y: 0.0d
+			description: [
+				"{ftbquests.chapter.culinary_delights.quests17.description0}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests17.description1}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests17.description2}"
+			]
+			dependencies: [
+				"6A4E8950ADB36592"
+				"624026189BBACBB0"
+			]
+			id: "56D7AAA4C9245917"
+			tasks: [{
+				id: "0BCE655810374B7F"
+				type: "item"
+				item: "astralfoods:recovery_orb"
+			}]
+			rewards: [{
+				id: "40F12A551FE3DBCE"
+				type: "item"
+				item: {
+					id: "ad_astra:oxygen_tank"
+					Count: 1b
+					tag: {
+						fluid: {
+							fluid: "ad_astra:oxygen"
+						}
+						amount: 40500L
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			x: 3.0d
+			y: -3.0d
+			description: ["{ftbquests.chapter.culinary_delights.quests4.description0}"]
+			dependencies: [
+				"06EB9DF33418E603"
+				"751CC4EF84A919C7"
+			]
+			id: "694E06E4C17BFF6E"
+			tasks: [{
+				id: "5A933E80B24ABCBF"
+				type: "item"
+				item: "astralfoods:seared_potato"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.5d
+			description: [
+				"ftbquests.chapter.culinary_delights.quests6.description0"
+				""
+				"ftbquests.chapter.culinary_delights.quests6.description1"
+				""
+				"ftbquests.chapter.culinary_delights.quests6.description2"
+			]
+			dependencies: [
+				"694E06E4C17BFF6E"
+				"586FA45ED205784F"
+			]
+			id: "389FB1A4AD89F745"
+			tasks: [{
+				id: "05E33E89AAD7D766"
+				type: "item"
+				item: "astralfoods:shimmered_rabbit_stew"
+			}]
+			rewards: [{
+				id: "4629663D82E1F486"
+				type: "item"
+				item: {
+					id: "tconstruct:large_plate"
+					Count: 1b
+					tag: {
+						Material: "tconstruct:amethyst_bronze"
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: -4.5d
+			description: [
+				"{ftbquests.chapter.culinary_delights.quests5.description0}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests5.description1}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests5.description2}"
+			]
+			dependencies: ["694E06E4C17BFF6E"]
+			id: "09E7F778F74CF0CB"
+			tasks: [{
+				id: "28D125E9474BAC6F"
+				type: "item"
+				item: "astralfoods:dipped_potato"
+			}]
+			rewards: [{
+				id: "5DE49541D0D89455"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 2s
+							id: "create:potato_recovery"
+						}]
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: -3.0d
+			description: ["{ftbquests.chapter.culinary_delights.quests7.description0}"]
+			dependencies: [
+				"06EB9DF33418E603"
+				"6499CD689863283D"
+			]
+			id: "09A00FD305DD2585"
+			tasks: [{
+				id: "773DC1B8120FAE62"
+				type: "item"
+				item: "astralfoods:fried_cod"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 0.0d
+			description: [
+				"{ftbquests.chapter.culinary_delights.quests16.description0}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests16.description1}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests16.description2}"
+				"{ftbquests.chapter.culinary_delights.quests16.description3}"
+			]
+			dependencies: [
+				"6A4E8950ADB36592"
+				"7B5DE5040FC24D21"
+			]
+			id: "376088E66CD25AC2"
+			tasks: [{
+				id: "475DD3AD51DBB911"
+				type: "item"
+				item: "astralfoods:gamers_delight"
+			}]
+			rewards: [{
+				id: "1D65B7445D4391BB"
+				type: "item"
+				item: "minecraft:blue_ice"
+				count: 16
+			}]
+		}
+		{
+			x: 9.5d
+			y: 1.5d
+			description: [
+				"{ftbquests.chapter.culinary_delights.quests14.description0}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests14.description1}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests14.description2}"
+				"{ftbquests.chapter.culinary_delights.quests14.description3}"
+			]
+			dependencies: [
+				"6A4E8950ADB36592"
+				"47A50CF905A68E98"
+			]
+			id: "364C2CA683525228"
+			tasks: [{
+				id: "69A06743435D08FC"
+				type: "item"
+				item: "astralfoods:compressed_onion"
+			}]
+			rewards: [{
+				id: "14AA0D831F55AEBC"
+				type: "item"
+				item: "yttr:compressed_ultrapure_carbon_block"
+			}]
+		}
+		{
+			x: 10.5d
+			y: -2.0d
+			dependencies: [
+				"61D48A57D179ED82"
+				"5F1C949E32B1FEBD"
+			]
+			id: "0094B9C59BA7C1A4"
+			tasks: [{
+				id: "00F28C2992EA6333"
+				type: "item"
+				item: "astralfoods:quantum_pasta"
+			}]
+			rewards: [
+				{
+					id: "0AD52883EE4CF39F"
+					type: "item"
+					item: "createastral:astral_singularity"
+				}
+				{
+					id: "6069EFDFC46E57A8"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 3s
+								id: "mcdw:void_strike"
+							}]
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: 1.5d
+			description: ["{ftbquests.chapter.culinary_delights.quests8.description0}"]
+			dependencies: [
+				"150F57F29F8DDCE1"
+				"51BD31261A5725E3"
+			]
+			min_required_tasks: 1
+			id: "5FDD72553B8EC457"
+			tasks: [
+				{
+					id: "6040123043EC0F94"
+					type: "item"
+					item: "astralfoods:cream_bucket"
+				}
+				{
+					id: "0995A9A263BE73E7"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "astralfoods:cream"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 11.5d
+			y: 1.5d
+			description: [
+				"{ftbquests.chapter.culinary_delights.quests15.description0}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests15.description1}"
+				""
+				"{ftbquests.chapter.culinary_delights.quests15.description2}"
+			]
+			dependencies: [
+				"6A4E8950ADB36592"
+				"586DA028F2A79E2F"
+			]
+			id: "2AA70CC5B469E11E"
+			tasks: [{
+				id: "464CE0281D221AC8"
+				type: "item"
+				item: "astralfoods:shimmered_apple"
+			}]
+			rewards: [{
+				id: "1BE84A10F04DC094"
+				type: "item"
+				item: "tconstruct:jeweled_apple"
+				count: 2
+			}]
+		}
+		{
+			x: 12.0d
+			y: -1.5d
+			dependencies: ["6A4E8950ADB36592"]
+			id: "61D48A57D179ED82"
+			tasks: [{
+				id: "64A8BB554F6661AE"
+				type: "item"
+				item: "astralfoods:astral_sauce"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -1.5d
+			dependencies: ["6A4E8950ADB36592"]
+			id: "5F1C949E32B1FEBD"
+			tasks: [{
+				id: "76DAE971213D02A5"
+				type: "item"
+				item: "astralfoods:quantum_bites"
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.assorted_goals.quests54.title}"
+			x: -2.0d
+			y: 2.0d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests54.subtitle}"
+			dependencies: ["2CE5BB6A7B30CA4C"]
+			id: "4D65B95D552D92BA"
+			tasks: [
+				{
+					id: "5051275100D1E1F0"
+					type: "item"
+					item: "vinery:wood_fired_oven"
+				}
+				{
+					id: "7CD55BBD425B31A4"
+					type: "item"
+					item: "vinery:stove"
+				}
+				{
+					id: "5D50E36D0CF39183"
+					type: "item"
+					item: "vinery:kitchen_sink"
+				}
+			]
+		}
+		{
+			title: "{ftbquests.chapter.assorted_goals.quests40.title}"
+			x: -1.5d
+			y: -1.5d
+			description: [
+				"{ftbquests.chapter.assorted_goals.quests40.description0}"
+				""
+				"{ftbquests.chapter.assorted_goals.quests40.description2}"
+			]
+			dependencies: ["2CE5BB6A7B30CA4C"]
+			optional: true
+			id: "3522109BABC7E48B"
+			tasks: [
+				{
+					id: "34A0BAA9C0AE7A74"
+					type: "item"
+					item: "cookingforblockheads:white_kitchen_floor"
+				}
+				{
+					id: "009412A63A560AB1"
+					type: "item"
+					item: "cookingforblockheads:milk_jar"
+				}
+				{
+					id: "720CA3FD6574A4AF"
+					type: "item"
+					item: "cookingforblockheads:fridge"
+				}
+				{
+					id: "6D8617ECA0B6259F"
+					type: "item"
+					item: "cookingforblockheads:oven"
+				}
+				{
+					id: "6FC3BADFCF84BEF5"
+					type: "item"
+					item: "cookingforblockheads:cooking_table"
+				}
+			]
+			rewards: [{
+				id: "3E69ED9AD85027DE"
+				type: "item"
+				item: "chipped:white_concrete_1"
+				count: 10
+			}]
+		}
+		{
+			x: -3.0d
+			y: -1.5d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests45.subtitle}"
+			dependencies: ["3522109BABC7E48B"]
+			optional: true
+			id: "152FF1A843FFDDB5"
+			tasks: [
+				{
+					id: "17B4104F33DAE09C"
+					type: "item"
+					item: "cookingforblockheads:recipe_book"
+				}
+				{
+					id: "44ABB2A96EF3BC1D"
+					type: "item"
+					item: "cookingforblockheads:no_filter_edition"
+				}
+			]
+			rewards: [{
+				id: "424A77A5F66DAD47"
+				type: "item"
+				item: "minecraft:cooked_beef"
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.assorted_goals.quests10.title}"
+			x: -3.75d
+			y: 2.25d
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.assorted_goals.quests10.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests10.description}"]
+			hide_dependency_lines: true
+			dependencies: ["0BCED0F8481E0C21"]
+			size: 1.5d
+			optional: true
+			id: "05E45A7D1C9927E5"
+			tasks: [{
+				id: "06BFB633FC06AF54"
+				type: "item"
+				item: "drinkbeer:beer_barrel"
+			}]
+			rewards: [{
+				id: "2FB3A079A96DE590"
+				type: "item"
+				item: "create:dough"
+				count: 3
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.assorted_goals.quests48.title}"
+			icon: "vinery:old_cherry_sapling"
+			x: -2.5d
+			y: 3.0d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests48.subtitle}"
+			description: [
+				"{ftbquests.chapter.assorted_goals.quests48.description0}"
+				""
+				""
+				"{ftbquests.chapter.assorted_goals.quests48.description3}"
+			]
+			hide_dependency_lines: false
+			dependencies: ["05E45A7D1C9927E5"]
+			id: "165C3C3DF1B9B4A3"
+			tasks: [{
+				id: "0B0B28657F7C6931"
+				type: "item"
+				item: "vinery:fermentation_barrel"
+			}]
+			rewards: [
+				{
+					id: "28323BFEABB17884"
+					type: "item"
+					item: "vinery:red_grape_seeds"
+				}
+				{
+					id: "75F06EEAB86BDAB7"
+					type: "item"
+					item: "vinery:white_grape_seeds"
+				}
+				{
+					id: "5B9905DBF04FDAF2"
+					type: "item"
+					item: "vinery:cherry_sapling"
+				}
+			]
+		}
+		{
+			title: "{ftbquests.chapter.assorted_goals.quests53.title}"
+			icon: "vinery:red_grape"
+			x: -1.0d
+			y: 3.0d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests53.subtitle}"
+			dependencies: ["165C3C3DF1B9B4A3"]
+			id: "6BECCB7FA4132517"
+			tasks: [{
+				id: "4750F1C7CA412A27"
+				type: "item"
+				item: "vinery:grapevine_pot"
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.assorted_goals.quests50.title}"
+			x: 0.0d
+			y: 3.0d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests50.subtitle}"
+			description: [
+				"{ftbquests.chapter.assorted_goals.quests50.description0}"
+				"{ftbquests.chapter.assorted_goals.quests50.description1}"
+				"{ftbquests.chapter.assorted_goals.quests50.description2}"
+				"{ftbquests.chapter.assorted_goals.quests50.description3}"
+				"{ftbquests.chapter.assorted_goals.quests50.description4}"
+			]
+			dependencies: ["6BECCB7FA4132517"]
+			id: "529CAD4508F33471"
+			tasks: [{
+				id: "0914332FB936AF32"
+				type: "item"
+				item: {
+					id: "vinery:red_grapejuice_wine_bottle"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "1097AB4611D7E57D"
+				type: "item"
+				item: "vinery:wine_box"
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.assorted_goals.quests51.title}"
+			x: -0.5d
+			y: 4.0d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests51.subtitle}"
+			description: [
+				"{ftbquests.chapter.assorted_goals.quests51.description0}"
+				"{ftbquests.chapter.assorted_goals.quests51.description1}"
+				"{ftbquests.chapter.assorted_goals.quests51.description2}"
+			]
+			dependencies: ["6BECCB7FA4132517"]
+			id: "66AF3CCC6B74CC09"
+			tasks: [{
+				id: "297B32716629650B"
+				type: "item"
+				item: {
+					id: "vinery:white_grapejuice_wine_bottle"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "75E5A6B7988A3D1A"
+				type: "item"
+				item: "vinery:wine_rack_2"
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.assorted_goals.quests52.title}"
+			x: -2.0d
+			y: 4.0d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests52.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests52.description}"]
+			dependencies: ["165C3C3DF1B9B4A3"]
+			id: "4B565923D33B2CB8"
+			tasks: [{
+				id: "46966651EFC64C4E"
+				type: "item"
+				item: "vinery:wine_press"
+			}]
+			rewards: [{
+				id: "1B24564A722FFBEC"
+				type: "item"
+				item: "vinery:apple_mash"
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.assorted_goals.quests49.title}"
+			x: -1.5d
+			y: 5.0d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests49.subtitle}"
+			description: [
+				"{ftbquests.chapter.assorted_goals.quests49.description0}"
+				"{ftbquests.chapter.assorted_goals.quests49.description1}"
+				"{ftbquests.chapter.assorted_goals.quests49.description2}"
+			]
+			dependencies: ["4B565923D33B2CB8"]
+			id: "1D8FB0253FF41716"
+			tasks: [{
+				id: "47820AF8B45F9AEE"
+				type: "item"
+				item: {
+					id: "vinery:apple_juice"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "5136D615F0B99ABE"
+					type: "item"
+					item: "vinery:chair"
+				}
+				{
+					id: "06F6AB6335CF891E"
+					type: "item"
+					item: "vinery:table"
+					count: 8
+				}
+			]
+		}
+		{
+			title: "{ftbquests.chapter.assorted_goals.quests27.title}"
+			x: -3.0d
+			y: 1.0d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests27.subtitle}"
+			description: ["{ftbquests.chapter.assorted_goals.quests27.description}"]
+			dependencies: ["05E45A7D1C9927E5"]
+			optional: true
+			id: "69C0C2601F6F79A7"
+			tasks: [
+				{
+					id: "6E1B4CE64F9E6A8F"
+					type: "item"
+					item: "drinkbeer:spice_blaze_paprika"
+					consume_items: false
+				}
+				{
+					id: "764CD4323F636BDF"
+					type: "item"
+					item: "drinkbeer:spice_dried_eglia_bud"
+					consume_items: false
+				}
+				{
+					id: "0D98C3FD843D2C07"
+					type: "item"
+					item: "drinkbeer:spice_smoked_eglia_bud"
+					consume_items: false
+				}
+				{
+					id: "0D087B8E65CA9C46"
+					type: "item"
+					item: "drinkbeer:spice_amethyst_nigella_seeds"
+					consume_items: false
+				}
+				{
+					id: "00B2396D3A8C1EE5"
+					type: "item"
+					item: "drinkbeer:spice_citrine_nigella_seeds"
+					consume_items: false
+				}
+				{
+					id: "1E78F09CA1D956AB"
+					type: "item"
+					item: "drinkbeer:spice_ice_mint"
+					consume_items: false
+				}
+				{
+					id: "2D2910BB2441F6E1"
+					type: "item"
+					item: "drinkbeer:spice_ice_patchouli"
+					consume_items: false
+				}
+				{
+					id: "1C2F140FF8B9BBF3"
+					type: "item"
+					item: "drinkbeer:spice_storm_shards"
+					consume_items: false
+				}
+				{
+					id: "1C7B42E48B5032C8"
+					type: "item"
+					item: "drinkbeer:spice_roasted_red_pine_nuts"
+					consume_items: false
+				}
+				{
+					id: "6922A26AAFAB484D"
+					type: "item"
+					item: "drinkbeer:spice_glace_goji_berries"
+					consume_items: false
+				}
+				{
+					id: "5CE763E3FD012D33"
+					type: "item"
+					item: "drinkbeer:spice_frozen_persimmon"
+					consume_items: false
+				}
+				{
+					id: "1B55F8D7A019169A"
+					type: "item"
+					item: "drinkbeer:spice_roasted_pecans"
+					consume_items: false
+				}
+				{
+					id: "4AABA452BC41B753"
+					type: "item"
+					item: "drinkbeer:spice_silver_needle_white_tea"
+					consume_items: false
+				}
+				{
+					id: "4CDF96F4E1232628"
+					type: "item"
+					item: "drinkbeer:spice_golden_cinnamon_powder"
+					consume_items: false
+				}
+				{
+					id: "1D3D2EAD17CF1B00"
+					type: "item"
+					item: "drinkbeer:spice_dried_selaginella"
+					consume_items: false
+				}
+			]
+			rewards: [{
+				id: "3415146CCA0548A2"
+				type: "item"
+				item: {
+					id: "mcdw:axe_encrusted_anchor"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: 3.5d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests58.subtitle}"
+			dependencies: ["05E45A7D1C9927E5"]
+			id: "23B56D5D09CE3A0E"
+			tasks: [{
+				id: "4F8FB44812FB367D"
+				type: "item"
+				item: "drinkbeer:recipe_board_package"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 2.5d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests42.subtitle}"
+			dependencies: ["05E45A7D1C9927E5"]
+			optional: true
+			id: "7D768E5AA9EA358C"
+			tasks: [
+				{
+					id: "070C4B0598E4F104"
+					type: "item"
+					item: "drinkbeer:empty_beer_mug"
+				}
+				{
+					id: "479FFE3123D77A5A"
+					type: "item"
+					item: "minecraft:wheat"
+					count: 3L
+				}
+				{
+					id: "4D9FB657EA74050E"
+					type: "item"
+					item: "minecraft:water_bucket"
+				}
+			]
+		}
+		{
+			x: -6.5d
+			y: 2.0d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests43.subtitle}"
+			dependencies: ["7D768E5AA9EA358C"]
+			optional: true
+			id: "52832D8DA239C017"
+			tasks: [{
+				id: "67BF890594998248"
+				type: "item"
+				item: "drinkbeer:beer_mug"
+			}]
+			rewards: [{
+				id: "004A64084DE31C6B"
+				type: "item"
+				item: "drinkbeer:empty_beer_mug"
+				count: 5
+			}]
+		}
+		{
+			x: -7.5d
+			y: 1.5d
+			subtitle: "{ftbquests.chapter.assorted_goals.quests44.subtitle}"
+			dependencies: ["52832D8DA239C017"]
+			optional: true
+			id: "154EF80FC9B8F0B0"
+			tasks: [{
+				id: "145A72A4C427E775"
+				type: "item"
+				item: "drinkbeer:bartending_table_normal"
+			}]
+			rewards: [{
+				id: "3093A76BEC813CA5"
+				type: "item"
+				item: "farmersdelight:hot_cocoa"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
