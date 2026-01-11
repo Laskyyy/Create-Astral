@@ -65,7 +65,7 @@ jobs:
         run: |
           mkdir temp-jar
           mv mods/servercore* ./temp-jar
-          ./packwiz cf add https://www.curseforge.com/minecraft/mc-mods/servercore
+          ./packwiz cf add https://www.curseforge.com/minecraft/mc-mods/servercore/files/4492100
 
       - name: Create CurseForge client zip
         shell: bash
