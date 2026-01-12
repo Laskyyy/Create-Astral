@@ -385,7 +385,7 @@
 			item: "astralsignals:polyvinyl_sheet"
 		}
 		{
-			item: "more-fluid-cans:emerald_can"
+			item: "morefluidcans:emerald_can"
 			count: 16
 		}
 		{
@@ -393,7 +393,7 @@
 			count: 16
 		}
 		{
-			item: "more-fluid-cans:brick_can"
+			item: "morefluidcans:brick_can"
 			count: 16
 		}
 	]
