@@ -284,7 +284,7 @@
 			weight: 5
 		}
 		{
-			item: "more-fluid-cans:emerald_can"
+			item: "morefluidcans:emerald_can"
 			count: 9
 		}
 		{
@@ -292,7 +292,7 @@
 			count: 9
 		}
 		{
-			item: "more-fluid-cans:brick_can"
+			item: "morefluidcans:brick_can"
 			count: 9
 		}
 	]
