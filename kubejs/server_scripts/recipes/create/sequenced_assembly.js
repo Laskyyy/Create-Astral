@@ -11,6 +11,17 @@
     wineSequence(event);
     enchantBooks(event);
 
+
+	 createSequencedAssembly(event, {
+      input: "createastral:copper_clad_lapis_board",
+      transitional: "createastral:copper_clad_lapis_board",
+      outputs: ["createastral:printed_copper_clad_lapis_board"],
+    })
+      .addDeployingStep("createastral:circuit_paper")
+      .addPressingStep()
+      .loops(1)
+      .build();
+	
     createSequencedAssembly(event, {
       input: "minecraft:bucket",
       transitional: "minecraft:bucket",
@@ -185,6 +196,17 @@
       .addDeployingStep("#c:nuggets/desh")
       .loops(6)
       .build();
+	  
+	createSequencedAssembly(event, {
+      input: "#c:plates/brass",
+      transitional: "create:incomplete_precision_mechanism",
+      outputs: ["create:precision_mechanism"],
+    })
+      .addDeployingStep("copycats:copycat_cogwheel")
+      .addDeployingStep("copycats:copycat_large_cogwheel")
+      .addDeployingStep("astraladditions:steel_ring")
+      .loops(6)
+      .build();
 
     createSequencedAssembly(event, {
       input: "minecraft:bowl",
@@ -194,6 +216,24 @@
       .addDeployingStep("astralfoods:seared_potato")
       .addDeployingStep("minecraft:cooked_rabbit")
       .addFillingStep({ fluid: "kubejs:shimmer", amount: BUCKET })
+      .build();
+
+    createSequencedAssembly(event, {
+      input: "minecraft:apple",
+      transitional: "minecraft:apple",
+      outputs: ["astralfoods:shimmered_apple"],
+    })
+      .addDeployingStep("tconstruct:ender_slime_crystal")
+      .addFillingStep({ fluid: "kubejs:shimmer", amount: BUCKET / 3 })
+      .build();
+
+    createSequencedAssembly(event, {
+      input: "farmersdelight:pie_crust",
+      transitional: "farmersdelight:pie_crust",
+      outputs: ["astralfoods:gamers_delight"],
+    })
+      .addDeployingStep("techreborn:compressed_plantball")
+      .addFillingStep({ fluid: "techreborn:lithium", amount: BUCKET })
       .build();
 
     // Yttr uses a non-standard ingredient, this has to remain an "event.custom".
@@ -369,7 +409,7 @@
         transitional: "createastral:transitional_lapis_sheet",
         outputs: ["create:integrated_circuit"],
       })
-        .addFillingStep({ fluid: "tconstruct:molten_silver", amount: BUCKET / 24 })
+        .addFillingStep({ fluid: "tconstruct:molten_silver", amount: BUCKET / 20 })
         .addDeployingStep("createaddition:copper_wire")
         .addDeployingStep("createaddition:copper_wire")
         .addPressingStep()
@@ -490,6 +530,17 @@
         .addFillingStep({ fluid: "tconstruct:molten_silver", amount: INGOT })
         .addDeployingStep("techreborn:rubber")
         .addPressingStep() //yeah!
+        .loops(4)
+        .build();
+		
+	  createSequencedAssembly(event, {
+        input: "astralgenerators:steel_frame",
+        transitional: "createastral:incomplete_basic_machine_frame",
+        outputs: ["techreborn:basic_machine_frame"],
+      })
+        .addFillingStep({ fluid: "tconstruct:molten_silver", amount: INGOT })
+        .addDeployingStep("techreborn:rubber")
+        .addPressingStep()
         .loops(4)
         .build();
     }

@@ -11,6 +11,12 @@
 
     /** @type {CastingTableRecipe[]} */
     const castingTableRecipes = [
+	  {
+        fluidInput: { fluid: "techreborn:silicon", amount: BUCKET/10 },
+        result: "createaddition:straw",
+        coolingTime: 50,
+        cast: { item: "createastral:straw_gold_cast", consumed: false },
+      },
       {
         fluidInput: { fluid: "kubejs:shimmer", amount: 10 * BUCKET },
         result: "minecraft:saddle",
@@ -89,7 +95,7 @@
         cast: { item: "createastral:fragile_rocket_fin", consumed: true },
       },
       {
-        fluidInput: { fluid: "tconstruct:molten_steel", amount: INGOT },
+        fluidInput: { fluid: "tconstruct:molten_steel", amount: INGOT/3 },
         result: "astraladditions:steel_ring",
         coolingTime: 100,
         cast: { item: "astraladditions:ring_gold_cast", consumed: false },
@@ -101,9 +107,9 @@
         cast: { item: "minecraft:lily_of_the_valley", consumed: true },
       },
       {
-        fluidInput: { fluid: "tconstruct:seared_stone", amount: NUGGET * 3 },
+        fluidInput: { fluid: "tconstruct:seared_stone", amount: SLIMEBALL / 2 },
         result: "astralfoods:seared_potato",
-        coolingTime: 20,
+        coolingTime: 30,
         cast: { item: "minecraft:potato", consumed: true },
       },
       {

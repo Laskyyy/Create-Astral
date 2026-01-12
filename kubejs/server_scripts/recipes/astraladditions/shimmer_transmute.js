@@ -59,6 +59,16 @@
         output: "astralfoods:ambrosia",
         stack64: false,
       },
+      {
+        input: "minecraft:nether_wart_block",
+        output: "minecraft:warped_wart_block",
+        stack64: false,
+      },
+      {
+        input: "minecraft:nether_wart_block",
+        output: "minecraft:warped_wart_block",
+        stack64: true,
+      },
     ];
     shimmerTransmutationRecipes.forEach((recipe) => {
       event.custom({
