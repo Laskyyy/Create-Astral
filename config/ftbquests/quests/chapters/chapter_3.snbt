@@ -2091,12 +2091,12 @@
 						tag: {
 							items: [
 								{
+									match_nbt: 1b
 									id: "techreborn:cell"
 									Count: 1b
 									tag: {
 										fluid: "minecraft:lava"
 									}
-									match_nbt: true
 								}
 								{
 									id: "minecraft:lava_bucket"
@@ -3129,6 +3129,19 @@
 				type: "item"
 				item: "tconstruct:copper_can"
 				count: 9
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.0d
+			subtitle: "{ftbquests.chapter.chapter_3.quest_list_filter.subtitle}"
+			description: ["{ftbquests.chapter.chapter_3.quest_list_filter.description0}"]
+			dependencies: ["70799237323247B7"]
+			id: "4F9CA33C22736CCE"
+			tasks: [{
+				id: "769AA80EF3A18B16"
+				type: "item"
+				item: "create:filter"
 			}]
 		}
 	]
