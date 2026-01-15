@@ -746,8 +746,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						Rotation: "NONE"
 						File: "[AstralExamples] Electrolyzer.nbt"
+						Rotation: "NONE"
 						Mirror: "NONE"
 						Bounds: [
 							7
@@ -2092,11 +2092,11 @@
 							items: [
 								{
 									match_nbt: 1b
-									id: "techreborn:cell"
-									Count: 1b
 									tag: {
 										fluid: "minecraft:lava"
 									}
+									Count: 1b
+									id: "techreborn:cell"
 								}
 								{
 									id: "minecraft:lava_bucket"
@@ -2984,8 +2984,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						Rotation: "NONE"
 						File: "[AstralExamples] Stone Growth Chamber.nbt"
+						Rotation: "NONE"
 						Mirror: "NONE"
 						Bounds: [
 							3
