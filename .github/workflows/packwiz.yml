@@ -51,13 +51,15 @@ jobs:
           restore-keys: |
             cached-mods-
 
-      - name: Construct version string
+      - name: Construct version strings
         id: construct-base-name
         shell: bash
         run: |
-          VERSION_NUMBER="$(echo "$(<pack.toml)" | grep "version =" | cut -d '"' -f 2)"
-          echo "ASTRAL_CF_NAME=Create-Astral-CurseForge-$VERSION_NUMBER-${{github.run_number}}" >> "$GITHUB_OUTPUT"
-          echo "ASTRAL_SERVER_NAME=Create-Astral-Server-$VERSION_NUMBER-${{github.run_number}}" >> "$GITHUB_OUTPUT"
+          MODPACK_VERSION_NUMBER="$(echo "$(<pack.toml)" | grep "version =" | cut -d '"' -f 2)"
+          echo "ASTRAL_CF_NAME=Create-Astral-CurseForge-$MODPACK_VERSION_NUMBER-${{github.run_number}}" >> "$GITHUB_OUTPUT"
+          echo "ASTRAL_SERVER_NAME=Create-Astral-Server-$MODPACK_VERSION_NUMBER-${{github.run_number}}" >> "$GITHUB_OUTPUT"
+          FABRIC_VERSION_NUMBER="$(echo "$(<pack.toml)" | grep "fabric =" | cut -d '"' -f 2)"
+          echo "FABRIC_VERSION=$FABRIC_VERSION_NUMBER" >> "$GITHUB_OUTPUT"
 
       # servercore needs to be turned into a .toml for the curseforge export as CF won't accept it as an override jar
       - name: Prepare for CurseForge client zip creation
@@ -101,6 +103,7 @@ jobs:
         run: |
           cd server
           java -jar ../packwiz-installer-bootstrap.jar -g -s server ../pack.toml
+          curl "https://meta.fabricmc.net/v2/versions/loader/1.18.2/${{steps.construct-base-name.outputs.FABRIC_VERSION}}/0.11.1/server/jar" --output server.jar
           rm -f packwiz-installer.jar
           rm -f packwiz.json
           ls -l
