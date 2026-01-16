@@ -1758,7 +1758,7 @@
 				""
 				"{ftbquests.chapter.chapter_2.quests53.description6}"
 			]
-			dependencies: ["0873D71412D52F18"]
+			dependencies: ["1579C73B735F06F8"]
 			id: "1D294F2F189410BD"
 			tasks: [{
 				id: "0C573B0469B99101"
