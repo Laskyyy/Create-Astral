@@ -843,9 +843,10 @@
       },
       {
         output: "createastral:copper_heating_coil",
-        pattern: ["AAA", "AAA", "AAA"],
+        pattern: [" A ", "ABA", " A "],
         key: {
           A: "createaddition:copper_spool",
+          B: "minecraft:copper_block",
         },
       },
       {
