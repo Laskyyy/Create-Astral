@@ -656,6 +656,8 @@
 				"{ftbquests.chapter.chapter_3.quests14.description5}"
 				""
 				"{ftbquests.chapter.chapter_3.quests14.description7}"
+				""
+				"{ftbquests.chapter.chapter_3.quests14.description9}"
 			]
 			dependencies: ["267CD8D04921402E"]
 			id: "343B8B2BF76B1D3B"

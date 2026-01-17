@@ -1572,6 +1572,9 @@
   "ftbquests.chapter.chapter_2.quests55.description0": "Got Andesite problems? I feel bad for you, son.",
   "ftbquests.chapter.chapter_2.quests55.description2": "Crush Cobblestone using a Mechanical Press and you'll be left with a neat pile of Andesite Dust! Place 4 Andesite Dust in a Basin and use another Mechanical Press over a Basin to Compact the dust into a fresh block of Andesite!",
   "ftbquests.chapter.chapter_2.quests55.description4": "This isn't the only way to make Andesite or Andesite Dust. Using REI, you can click on Andesite and Andesite Dust to see all of their recipes. Remember that REI is your friend! Often there are recipes in the pack that are not mentioned in this questbook, so make sure to explore all the recipes for any items you need more of!",
+  "ftbquests.chapter.chapter_2.quest_marimo.subtitle": "They float when they are happy :)",
+  "ftbquests.chapter.chapter_2.quest_marimo.description0": "Marimo are aquatic plants that thrive off water alone. With a saw (and a bit of magic) Moss can be cut down into Marimo! Marimo can be automated by spinning it in a mixer with water and can be processed into various plants. Press U on Marimo to see its uses :)",
+  "ftbquests.chapter.chapter_2.quest_marimo.description2": "In later chapters, Marimo can be bred into different species, giving access to more recipe routes.",
 
   "ftbquests.chapter.chapter_25_the_automation_matrix.title": "The Automation Matrix",
   "ftbquests.chapter.chapter_25_the_automation_matrix.generic_checkmark": "Automated!",
@@ -1772,6 +1775,7 @@
   "ftbquests.chapter.chapter_3.quests14.description3": "Pump Water into the Electrolyzer.",
   "ftbquests.chapter.chapter_3.quests14.description5": "If the multiblock is done correctly, the Electrolyzer will start producing Oxygen.",
   "ftbquests.chapter.chapter_3.quests14.description7": "Pump Oxygen from the Electrolyzer - you don't need filters as Oxygen is the only liquid that can be extracted.",
+  "ftbquests.chapter.chapter_3.quests14.description9": "&7Subcrafting hint! It's handy to know you need 128 Copper Wires for all those pesky spools...&r",
   "ftbquests.chapter.chapter_3.quests15.subtitle": "Electron Tube PTSD",
   "ftbquests.chapter.chapter_3.quests15.description0": "&6Electron Tubes&r are used in advanced Create technology.",
   "ftbquests.chapter.chapter_3.quests15.description2": "So far, there's not much use for them, but when you get access to Brass, they will become important.",
