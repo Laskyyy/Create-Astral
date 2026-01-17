@@ -584,6 +584,7 @@
 				"00F3EA4A8FB5B11B"
 				"08BC73F24043BB91"
 			]
+			dependency_requirement: "one_completed"
 			size: 1.25d
 			id: "0A71AC65808AFBE5"
 			tasks: [{
@@ -748,8 +749,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						File: "[AstralExamples] Electrolyzer.nbt"
 						Rotation: "NONE"
+						File: "[AstralExamples] Electrolyzer.nbt"
 						Mirror: "NONE"
 						Bounds: [
 							7
@@ -2094,11 +2095,11 @@
 							items: [
 								{
 									match_nbt: 1b
+									id: "techreborn:cell"
+									Count: 1b
 									tag: {
 										fluid: "minecraft:lava"
 									}
-									Count: 1b
-									id: "techreborn:cell"
 								}
 								{
 									id: "minecraft:lava_bucket"
@@ -2725,6 +2726,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["00F3EA4A8FB5B11B"]
+			min_required_tasks: 1
 			id: "08BC73F24043BB91"
 			tasks: [
 				{
@@ -2986,8 +2988,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						File: "[AstralExamples] Stone Growth Chamber.nbt"
 						Rotation: "NONE"
+						File: "[AstralExamples] Stone Growth Chamber.nbt"
 						Mirror: "NONE"
 						Bounds: [
 							3
@@ -3145,6 +3147,42 @@
 				type: "item"
 				item: "create:filter"
 			}]
+		}
+		{
+			title: "{ftbquests.chapter.chapter_3.item_filtering.title}"
+			icon: "create:brass_funnel"
+			x: 0.0d
+			y: 5.5d
+			subtitle: "{ftbquests.chapter.chapter_3.item_filtering.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_3.item_filtering.description0}"
+				""
+				"{ftbquests.chapter.chapter_3.item_filtering.description2}"
+			]
+			dependencies: ["710C81D7DE6C7FCB"]
+			id: "12FB7B2190988210"
+			tasks: [{
+				id: "37288980A4C4AB8A"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [
+				{
+					id: "58BCC559203A7E37"
+					type: "item"
+					item: "extended_drawers:single_drawer"
+				}
+				{
+					id: "01FC45F0AA8D5FB4"
+					type: "item"
+					item: "extended_drawers:lock"
+				}
+				{
+					id: "2519BC237AC05E18"
+					type: "item"
+					item: "create:andesite_funnel"
+				}
+			]
 		}
 	]
 	quest_links: [ ]

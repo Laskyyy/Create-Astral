@@ -238,10 +238,10 @@
 							items: [
 								{
 									id: "techreborn:cell"
+									Count: 1b
 									tag: {
 										fluid: "techreborn:lithium"
 									}
-									Count: 1b
 								}
 								{
 									id: "techreborn:lithium_bucket"
@@ -700,8 +700,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						Rotation: "NONE"
 						File: "[AstralExamples] Distillery.nbt"
+						Rotation: "NONE"
 						Mirror: "NONE"
 						Bounds: [
 							5
@@ -1394,10 +1394,10 @@
 							items: [
 								{
 									id: "techreborn:cell"
+									Count: 1b
 									tag: {
 										fluid: "techreborn:sulfur"
 									}
-									Count: 1b
 								}
 								{
 									id: "techreborn:sulfur_bucket"
@@ -1570,11 +1570,10 @@
 				"2799577FF58D10A3"
 				"4167177A752546A3"
 			]
-			min_required_tasks: 0
 			id: "07C60C1DB44579B9"
 			tasks: [
 				{
-					id: "21A94F98356809F6"
+					id: "792715C58CB29D05"
 					type: "item"
 					title: "{ftbquests.chapter.chapter_5.quests42.tasks1.title}"
 					item: {
@@ -1583,12 +1582,12 @@
 						tag: {
 							items: [
 								{
-									id: "techreborn:cell"
-									Count: 1b
+									match_nbt: 1b
 									tag: {
 										fluid: "techreborn:oil"
 									}
-									match_nbt: true
+									Count: 1b
+									id: "techreborn:cell"
 								}
 								{
 									id: "techreborn:oil_bucket"
@@ -2448,6 +2447,29 @@
 					}
 				}
 			]
+		}
+		{
+			x: 13.0d
+			y: -3.5d
+			subtitle: "{ftbquests.chapter.chapter_5.channeling_trans.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_5.channeling_trans.description0}"
+				""
+				"{ftbquests.chapter.chapter_5.channeling_trans.description2}"
+			]
+			dependencies: ["0BA5C147C098C5A8"]
+			id: "1073B800B0568F44"
+			tasks: [{
+				id: "46DAC7EBC4ED227C"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "createastral:channeling_transformer"
+					}
+				}
+			}]
 		}
 	]
 	quest_links: [ ]
