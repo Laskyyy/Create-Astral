@@ -13,6 +13,17 @@
     /** @type {ShapedRecipe[]} */
     const shapedRecipes = [
       {
+        output: Item.of("custommachinery:custom_machine_item", { machine: "astralfoods:blender" }),
+        pattern: [" S ", "RGW", "SPS"],
+        key: {
+			S: "ad_astra:steel_plate",
+			G: "minecraft:glass",
+			R: "phonos:redstone_chip",
+			W: "createaddition:gold_spool",
+			P: "create:propeller"
+		},
+      },
+      {
         output: "createastral:andesite_alloy_block",
         pattern: ["AAA", "AAA", "AAA"],
         key: { A: "create:andesite_alloy" },
@@ -235,6 +246,34 @@
         pattern: ["A  ", "AA ", "AAA"],
         key: {
           A: "createastral:blast-resistant_concrete",
+        },
+      },
+	  {
+        output: Item.of("createastral:blast-resistant_doncrete_slab", 6),
+        pattern: ["AAA"],
+        key: {
+          A: "createastral:blast-resistant_doncrete",
+        },
+      },
+      {
+        output: Item.of("createastral:blast-resistant_doncrete_stairs", 4),
+        pattern: ["A  ", "AA ", "AAA"],
+        key: {
+          A: "createastral:blast-resistant_doncrete",
+        },
+      },
+	  {
+        output: Item.of("createastral:rock_salt_slab", 6),
+        pattern: ["AAA"],
+        key: {
+          A: "createastral:rock_salt",
+        },
+      },
+      {
+        output: Item.of("createastral:rock_salt_stairs", 4),
+        pattern: ["A  ", "AA ", "AAA"],
+        key: {
+          A: "createastral:rock_salt",
         },
       },
       {
@@ -804,9 +843,10 @@
       },
       {
         output: "createastral:copper_heating_coil",
-        pattern: ["AAA", "AAA", "AAA"],
+        pattern: [" A ", "ABA", " A "],
         key: {
           A: "createaddition:copper_spool",
+          B: "minecraft:copper_block",
         },
       },
       {
@@ -858,7 +898,7 @@
         },
       },
       {
-        output: "techreborn:refined_iron_fence",
+        output: Item.of("techreborn:refined_iron_fence", 2),
         pattern: ["BSB", "BSB"],
         key: {
           B: "minecraft:iron_block",
@@ -1081,7 +1121,7 @@
           F: "create:blaze_burner",
         },
       },
-	  {
+      {
         output: "techreborn:alloy_smelter",
         pattern: ["ABA", "CDC", "EFE"],
         key: {

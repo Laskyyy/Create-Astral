@@ -19,8 +19,13 @@
     event.create("createastral:electrified_pin");
     event.create("createastral:ender_mush");
     event.create("createastral:promethium_atomic_battery").glow(true).rarity("epic");
+    event.create("createastral:circuit_paper");
+    event.create("createastral:copper_clad_lapis_board");
+    event.create("createastral:printed_copper_clad_lapis_board");
     event.create("createastral:logo");
     event.create("createastral:bronze_ingot");
+    event.create("createastral:desh_dust");
+    event.create("createastral:small_desh_dust");
     event.create("createastral:uranium_residue").rarity("uncommon");
     event.create("createastral:navigation_mechanism");
     event.create("createastral:living_mechanism");
@@ -63,6 +68,8 @@
     event.create("createastral:fragile_rocket_fin");
     event.create("createastral:broken_fragile_rocket_fin");
     event.create("createastral:gold_casted_rocket_fin");
+    event.create("createastral:saltmeal");
+    event.create("createastral:straw_gold_cast");
     event.create("createastral:horse").food((food) => {
       food.hunger(0).saturation(0).alwaysEdible();
     });

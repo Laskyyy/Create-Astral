@@ -99,6 +99,54 @@
         type: "techreborn:grinder",
         input: "#techreborn:calcite_dust_material",
       },
+      {
+        type: "techreborn:extractor",
+        input: "techreborn:plantball",
+      },
+      {
+        type: "techreborn:extractor",
+        input: "minecraft:sugar_cane",
+      },
+      {
+        type: "techreborn:extractor",
+        input: "minecraft:crossbow",
+      },
+      {
+        type: "techreborn:extractor",
+        input: "minecraft:bow",
+      },
+      {
+        type: "techreborn:extractor",
+        input: "#minecraft:beds",
+      },
+      {
+        type: "techreborn:extractor",
+        input: "#minecraft:banners",
+      },
+      {
+        type: "techreborn:extractor",
+        input: "minecraft:sweet_berries",
+      },
+      {
+        type: "techreborn:extractor",
+        input: "#c:plates/lead",
+      },
+      {
+        type: "techreborn:extractor",
+        input: "minecraft:orange_tulip",
+      },
+      {
+        type: "techreborn:grinder",
+        input: "#c:certus_quartz",
+      },
+      {
+        type: "techreborn:grinder",
+        input: "#c:plates/obsidian",
+      },
+      {
+        type: "techreborn:chemical_reactor",
+        output: "minecraft:leather",
+      },
       { type: "techreborn:grinder", input: "#c:ores" },
       { type: "techreborn:grinder", input: "#c:storage_blocks" },
       {
@@ -227,6 +275,7 @@
       { type: "create:crushing", input: "minecraft:blaze_rod" },
       { type: "create:crushing", input: "minecraft:bone" },
       { type: "create:crushing", input: "minecraft:tuff" },
+      { type: "create:crushing", input: "minecraft:nether_wart_block" },
       { type: "create:milling", input: "minecraft:tuff" },
       { type: "create:milling", input: "minecraft:basalt" },
       { type: "create:milling", input: "minecraft:clay" },
@@ -290,6 +339,7 @@
       { output: "createdeco:zinc_sheet" },
       //Create Additions
       { output: "createaddition:alternator" },
+      { output: "createaddition:straw" },
       { id: "createaddition:mixing/bioethanol" },
       { output: "createaddition:electric_motor" },
       { output: "createaddition:tesla_coil" },
@@ -298,6 +348,7 @@
       { output: "createaddition:biomass" },
       { output: "createaddition:bioethanol" },
       { type: "createaddition:liquid_burning" },
+      { id: "createaddition:compat/tconstruct/tinkers_bronze" },
       // Create Railways
       { output: "railways:track_acacia" },
       { output: "railways:track_birch" },
@@ -330,6 +381,8 @@
       { output: "createbigcannons:molten_steel", type: "createbigcannons:melting" },
       { output: "createbigcannons:cast_iron_ingot", type: "create:compacting" },
       { output: "createbigcannons:cast_iron_nugget", type: "create:compacting" },
+      { id: "createbigcannons:compacting/forge_bronze_ingot" },
+      { id: "createbigcannons:compacting/forge_steel_ingot" },
       // dustrial decor sheetmetal rework
       { output: "dustrial_decor:rusty_iron_door" },
       { output: "dustrial_decor:rusty_sheet_metal_treading" },
@@ -520,6 +573,8 @@
       { output: "travelersbackpack:hose_nozzle" },
       { output: "ad_astra:ostrum_engine" },
       { output: "dbe:server_rack" },
+      { id: "dbe:rec_log_pile_chair" },
+      { id: "dbe:rec_jungle_tile" },
       { output: "dustrial_decor:cast_iron_billet" },
       { output: "mcdw:pick_diamond_pickaxe_var" },
       { output: "mcdw:sword_diamond_sword_var" },

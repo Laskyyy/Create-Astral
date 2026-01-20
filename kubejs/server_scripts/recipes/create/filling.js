@@ -14,6 +14,12 @@
     /** @type {FillingRecipe[]} */
     const fillingRecipes = [
       {
+        input: "createastral:printed_copper_clad_lapis_board",
+        output: "create:integrated_circuit",
+        fluid: "techreborn:sulfuric_acid",
+        amount: BUCKET / 2,
+      },
+      {
         input: "minecraft:glass_bottle",
         output: "astraladditions:shimmer_bottle",
         fluid: "kubejs:shimmer",
@@ -132,12 +138,6 @@
         output: "minecraft:dripstone_block",
         fluid: "minecraft:water",
         amount: 250 * mB,
-      },
-      {
-        input: "minecraft:apple",
-        output: "astralfoods:shimmered_apple",
-        fluid: "kubejs:shimmer",
-        amount: BUCKET / 3,
       },
       {
         input: "astralfoods:seared_potato",
