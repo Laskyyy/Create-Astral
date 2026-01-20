@@ -432,6 +432,7 @@
       { output: "ae2:fluix_dust" },
       { output: "ae2:molecular_assembler" },
       { output: "ae2:inscriber" },
+      { output: "ae2:quartz_growth_accelerator" },
       { type: "ae2:inscriber" },
       { output: "ae2:controller", type: "crafting_shaped" },
       // Tconstruct
