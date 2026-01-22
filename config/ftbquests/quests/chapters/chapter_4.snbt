@@ -735,7 +735,7 @@
 		{
 			title: "{ftbquests.chapter.chapter_4.quests19.title}"
 			x: -18.5d
-			y: -2.0d
+			y: 0.5d
 			subtitle: "{ftbquests.chapter.chapter_4.quests19.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests19.description0}"
@@ -761,9 +761,11 @@
 			y: -2.5d
 			subtitle: "{ftbquests.chapter.chapter_4.quests20.subtitle}"
 			description: ["{ftbquests.chapter.chapter_4.quests20.description}"]
+			min_required_dependencies: 1
 			dependencies: [
-				"1A08EE7C76242947"
 				"1DFF76A494C9A586"
+				"2F2D1A7A221900E5"
+				"1035D3C1E64A3322"
 			]
 			id: "73973C5E6D2573B8"
 			tasks: [{
@@ -792,7 +794,10 @@
 					id: "tconstruct:sword"
 					Count: 1b
 					tag: {
-						Damage: 0
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.5f
+							"tconstruct:durability": 1.1f
+						}
 						tic_stats: {
 							"tconstruct:attack_speed": 1.7600001f
 							"tconstruct:mining_speed": 4.07f
@@ -800,15 +805,8 @@
 							"tconstruct:harvest_tier": "minecraft:diamond"
 							"tconstruct:durability": 246.40001f
 						}
-						tic_multipliers: {
-							"tconstruct:mining_speed": 0.5f
-							"tconstruct:durability": 1.1f
-						}
-						tic_materials: [
-							"tconstruct:silver"
-							"tconstruct:silver"
-							"tconstruct:silver"
-						]
+						Damage: 0
+						tic_broken: 0b
 						tic_modifiers: [
 							{
 								name: "tconstruct:smite"
@@ -819,7 +817,11 @@
 								level: 1s
 							}
 						]
-						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:silver"
+							"tconstruct:silver"
+							"tconstruct:silver"
+						]
 						tic_persistent_data: {
 							upgrades: 3
 							abilities: 1
@@ -1677,10 +1679,10 @@
 							items: [
 								{
 									id: "techreborn:cell"
-									Count: 1b
 									tag: {
 										fluid: "createaddition:seed_oil"
 									}
+									Count: 1b
 								}
 								{
 									id: "createaddition:seed_oil_bucket"
@@ -3697,14 +3699,14 @@
 						tag: {
 							tic_modifiers: [ ]
 							tic_broken: 0b
-							Damage: 0
+							tic_multipliers: { }
 							tic_stats: {
 								"tconstruct:armor_toughness": 2.0f
 								"tconstruct:knockback_resistance": 0.1f
 								"tconstruct:durability": 330.0f
 								"tconstruct:armor": 2.0f
 							}
-							tic_multipliers: { }
+							Damage: 0
 							tic_persistent_data: {
 								upgrades: 1
 								abilities: 1
@@ -3722,14 +3724,14 @@
 						tag: {
 							tic_modifiers: [ ]
 							tic_broken: 0b
-							Damage: 0
+							tic_multipliers: { }
 							tic_stats: {
 								"tconstruct:armor_toughness": 2.0f
 								"tconstruct:knockback_resistance": 0.1f
 								"tconstruct:durability": 480.0f
 								"tconstruct:armor": 7.0f
 							}
-							tic_multipliers: { }
+							Damage: 0
 							tic_persistent_data: {
 								upgrades: 1
 								abilities: 1
@@ -3747,14 +3749,14 @@
 						tag: {
 							tic_modifiers: [ ]
 							tic_broken: 0b
-							Damage: 0
+							tic_multipliers: { }
 							tic_stats: {
 								"tconstruct:armor_toughness": 2.0f
 								"tconstruct:knockback_resistance": 0.1f
 								"tconstruct:durability": 450.0f
 								"tconstruct:armor": 5.0f
 							}
-							tic_multipliers: { }
+							Damage: 0
 							tic_persistent_data: {
 								upgrades: 1
 								abilities: 1
@@ -3772,14 +3774,14 @@
 						tag: {
 							tic_modifiers: [ ]
 							tic_broken: 0b
-							Damage: 0
+							tic_multipliers: { }
 							tic_stats: {
 								"tconstruct:armor_toughness": 2.0f
 								"tconstruct:knockback_resistance": 0.1f
 								"tconstruct:durability": 390.0f
 								"tconstruct:armor": 2.0f
 							}
-							tic_multipliers: { }
+							Damage: 0
 							tic_persistent_data: {
 								upgrades: 1
 								abilities: 1
@@ -4260,10 +4262,10 @@
 							items: [
 								{
 									id: "techreborn:cell"
-									Count: 1b
 									tag: {
 										fluid: "kubejs:liquid_xp_nuggies"
 									}
+									Count: 1b
 								}
 								{
 									id: "kubejs:liquid_xp_nuggies_bucket"
@@ -4492,6 +4494,44 @@
 					table_id: 5253492355592689915L
 				}
 			]
+		}
+		{
+			x: -18.0d
+			y: -1.0d
+			dependencies: [
+				"1A08EE7C76242947"
+				"1D30E6C494694B78"
+			]
+			id: "2F2D1A7A221900E5"
+			tasks: [{
+				id: "3DBAEB5FF587648D"
+				type: "item"
+				item: "createastral:printed_copper_clad_lapis_board"
+			}]
+		}
+		{
+			x: -18.5d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["306D009F01634115"]
+			id: "1035D3C1E64A3322"
+			tasks: [{
+				id: "2DB2D97E19FD75BB"
+				type: "item"
+				item: "techreborn:sulfuric_acid_bucket"
+			}]
+		}
+		{
+			x: -17.5d
+			y: 0.5d
+			hide_dependency_lines: true
+			dependencies: ["306D009F01634115"]
+			id: "1D30E6C494694B78"
+			tasks: [{
+				id: "1FD6E21CB531DDC2"
+				type: "item"
+				item: "createastral:circuit_paper"
+			}]
 		}
 	]
 	quest_links: [ ]
