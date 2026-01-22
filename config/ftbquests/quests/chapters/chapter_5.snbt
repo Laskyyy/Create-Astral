@@ -204,7 +204,7 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_5.quests2.title}"
-			x: 5.5d
+			x: 8.0d
 			y: 1.0d
 			shape: "square"
 			subtitle: "{ftbquests.chapter.chapter_5.quests2.subtitle}"
@@ -238,10 +238,10 @@
 							items: [
 								{
 									id: "techreborn:cell"
+									Count: 1b
 									tag: {
 										fluid: "techreborn:lithium"
 									}
-									Count: 1b
 								}
 								{
 									id: "techreborn:lithium_bucket"
@@ -269,8 +269,8 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_5.quests3.title}"
-			x: 7.0833333333333215d
-			y: -0.4761904761904816d
+			x: 6.0d
+			y: 0.0d
 			shape: "square"
 			subtitle: "{ftbquests.chapter.chapter_5.quests3.subtitle}"
 			description: [
@@ -700,8 +700,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						Rotation: "NONE"
 						File: "[AstralExamples] Distillery.nbt"
+						Rotation: "NONE"
 						Mirror: "NONE"
 						Bounds: [
 							5
@@ -714,9 +714,10 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_5.quests13.title}"
-			x: 4.0d
-			y: -0.5d
+			x: 6.5d
+			y: 2.0d
 			subtitle: "{ftbquests.chapter.chapter_5.quests13.subtitle}"
+			hide_dependency_lines: true
 			dependencies: ["5729A883639B2EEF"]
 			id: "42FDBAC4A8966F9D"
 			tasks: [{
@@ -1135,6 +1136,7 @@
 			title: "{ftbquests.chapter.chapter_5.quests28.title}"
 			x: 10.0d
 			y: 2.5d
+			shape: "rsquare"
 			subtitle: "{ftbquests.chapter.chapter_5.quests28.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_5.quests28.description0}"
@@ -1240,6 +1242,12 @@
 						Damage: 0
 					}
 				}
+			}]
+			rewards: [{
+				id: "69B3609276C785CD"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2770258610575478801L
 			}]
 		}
 		{
@@ -1394,10 +1402,10 @@
 							items: [
 								{
 									id: "techreborn:cell"
+									Count: 1b
 									tag: {
 										fluid: "techreborn:sulfur"
 									}
-									Count: 1b
 								}
 								{
 									id: "techreborn:sulfur_bucket"
@@ -1583,11 +1591,11 @@
 							items: [
 								{
 									match_nbt: 1b
-									id: "techreborn:cell"
-									Count: 1b
 									tag: {
 										fluid: "techreborn:oil"
 									}
+									Count: 1b
+									id: "techreborn:cell"
 								}
 								{
 									id: "techreborn:oil_bucket"
@@ -1749,7 +1757,7 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_5.quests48.title}"
-			x: 22.0d
+			x: 22.5d
 			y: 1.0d
 			description: [
 				"{ftbquests.chapter.chapter_5.quests48.description0}"
@@ -1789,8 +1797,8 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_5.quests49.title}"
-			x: 21.0d
-			y: 2.0d
+			x: 22.5d
+			y: 2.5d
 			subtitle: "{ftbquests.chapter.chapter_5.quests49.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_5.quests49.description0}"
@@ -1863,8 +1871,8 @@
 					fluid: "kubejs:aurorite"
 				}
 			}
-			x: 19.5d
-			y: 1.0d
+			x: 20.0d
+			y: 1.5d
 			description: [
 				"{ftbquests.chapter.chapter_5.quests51.description0}"
 				""
@@ -1883,8 +1891,8 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_5.quests52.title}"
-			x: 19.5d
-			y: 2.5d
+			x: 19.0d
+			y: 3.0d
 			description: [
 				"{ftbquests.chapter.chapter_5.quests52.description0}"
 				""
@@ -1962,7 +1970,7 @@
 		{
 			title: "{ftbquests.chapter.chapter_5.quests56.title}"
 			icon: "yttr:continuous_platform"
-			x: 19.5d
+			x: 20.5d
 			y: 0.0d
 			subtitle: "{ftbquests.chapter.chapter_5.quests56.subtitle}"
 			description: [
@@ -1970,6 +1978,7 @@
 				""
 				"{ftbquests.chapter.chapter_5.quests56.description2}"
 			]
+			hide_dependency_lines: true
 			dependencies: ["562D93203A0A135A"]
 			dependency_requirement: "one_completed"
 			id: "2CF70CD66E486131"
@@ -2074,15 +2083,10 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_5.quests61.title}"
-			icon: {
-				id: "ftbquests:custom_icon"
-				Count: 1b
-				tag: {
-					Icon: "ad_astra:textures/sky/glacio.png"
-				}
-			}
+			icon: "ad_astra:glacio_globe"
 			x: 17.0d
 			y: 3.5d
+			shape: "pentagon"
 			subtitle: "{ftbquests.chapter.chapter_5.quests61.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_5.quests61.description0}"
@@ -2091,12 +2095,25 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["5729A883639B2EEF"]
+			size: 1.5d
 			id: "111E91837243077C"
 			tasks: [{
 				id: "02F4F003BBEE3953"
 				type: "dimension"
 				dimension: "ad_astra:glacio"
 			}]
+			rewards: [
+				{
+					id: "6FF91263F560F6BC"
+					type: "item"
+					item: "drinkbeer:beer_mug_frothy_pink_eggnog"
+				}
+				{
+					id: "60425E4E7A5F379B"
+					type: "xp"
+					xp: 200
+				}
+			]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_5.quests62.title}"
@@ -2139,8 +2156,8 @@
 					Icon: "techreborn:textures/item/tool/advanced_drill.png"
 				}
 			}
-			x: 5.5d
-			y: 2.5d
+			x: 8.0d
+			y: -0.5d
 			description: [
 				"{ftbquests.chapter.chapter_5.quests63.description0}"
 				""
@@ -2221,6 +2238,12 @@
 				type: "item"
 				item: "kubejs:fire_resistant_fragile_sheet_block"
 				count: 6L
+			}]
+			rewards: [{
+				id: "2FCAC51E6B99F82C"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2770258610575478801L
 			}]
 		}
 		{
@@ -2416,8 +2439,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: -4.5d
+			x: 4.0d
+			y: -3.5d
 			subtitle: "{ftbquests.chapter.chapter_5.quests76.subtitle}"
 			description: ["{ftbquests.chapter.chapter_5.quests76.description0}"]
 			dependencies: ["5729A883639B2EEF"]
@@ -2505,10 +2528,17 @@
 					item: "techreborn:refined_iron_fence"
 				}
 			]
+			rewards: [{
+				id: "5E9709326E4D3185"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2770258610575478801L
+			}]
 		}
 		{
-			x: 6.5d
-			y: -5.0d
+			x: 4.0d
+			y: -5.5d
+			shape: "heart"
 			subtitle: "{ftbquests.chapter.chapter_5.blender.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_5.blender.description0}"
@@ -2529,6 +2559,12 @@
 						machine: "astralfoods:blender"
 					}
 				}
+			}]
+			rewards: [{
+				id: "16C7582E056734BB"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2770258610575478801L
 			}]
 		}
 	]

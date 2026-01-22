@@ -685,6 +685,12 @@
 				type: "item"
 				item: "computercraft:turtle_normal"
 			}]
+			rewards: [{
+				id: "70F36FB8A22E98F7"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5687404501397719867L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_2.quests19.title}"
@@ -1099,11 +1105,19 @@
 				type: "item"
 				item: "ad_astra:earth_globe"
 			}]
-			rewards: [{
-				id: "474F63CEE27D89D4"
-				type: "item"
-				item: "ad_astra:moon_globe"
-			}]
+			rewards: [
+				{
+					id: "474F63CEE27D89D4"
+					type: "item"
+					item: "ad_astra:moon_globe"
+				}
+				{
+					id: "47E4E71BE77E3FA8"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5687404501397719867L
+				}
+			]
 		}
 		{
 			x: 0.0d
@@ -1672,6 +1686,12 @@
 				id: "5DBB517949D1F4E6"
 				type: "item"
 				item: "minecraft:enchanting_table"
+			}]
+			rewards: [{
+				id: "79986E8F52D9F6DA"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5687404501397719867L
 			}]
 		}
 		{
