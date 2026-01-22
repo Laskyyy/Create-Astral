@@ -238,10 +238,10 @@
 							items: [
 								{
 									id: "techreborn:cell"
-									Count: 1b
 									tag: {
 										fluid: "techreborn:lithium"
 									}
+									Count: 1b
 								}
 								{
 									id: "techreborn:lithium_bucket"
@@ -700,8 +700,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						File: "[AstralExamples] Distillery.nbt"
 						Rotation: "NONE"
+						File: "[AstralExamples] Distillery.nbt"
 						Mirror: "NONE"
 						Bounds: [
 							5
@@ -1394,10 +1394,10 @@
 							items: [
 								{
 									id: "techreborn:cell"
-									Count: 1b
 									tag: {
 										fluid: "techreborn:sulfur"
 									}
+									Count: 1b
 								}
 								{
 									id: "techreborn:sulfur_bucket"
@@ -1583,11 +1583,11 @@
 							items: [
 								{
 									match_nbt: 1b
+									id: "techreborn:cell"
+									Count: 1b
 									tag: {
 										fluid: "techreborn:oil"
 									}
-									Count: 1b
-									id: "techreborn:cell"
 								}
 								{
 									id: "techreborn:oil_bucket"
@@ -2456,17 +2456,77 @@
 				"{ftbquests.chapter.chapter_5.channeling_trans.description0}"
 				""
 				"{ftbquests.chapter.chapter_5.channeling_trans.description2}"
+				"{image:createastral:textures/item/channeling_trans.png width:196 height:120 align:1}"
 			]
 			dependencies: ["0BA5C147C098C5A8"]
 			id: "1073B800B0568F44"
+			tasks: [
+				{
+					id: "46DAC7EBC4ED227C"
+					type: "item"
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "createastral:channeling_transformer"
+						}
+					}
+				}
+				{
+					id: "3BF9E6D8DDD1008E"
+					type: "item"
+					item: "createdeco:netherite_sheet_metal"
+					count: 4L
+				}
+				{
+					id: "1638F7A11D196704"
+					type: "item"
+					item: "createdeco:netherite_support"
+					count: 4L
+				}
+				{
+					id: "211EDD7B52BD520C"
+					type: "item"
+					item: "createdeco:netherite_hull"
+				}
+				{
+					id: "35BC90D51B059E4C"
+					type: "item"
+					item: "dbe:black_guilded_boiler"
+				}
+				{
+					id: "238F70AB6A9EA751"
+					type: "item"
+					item: "techreborn:lightning_rod"
+				}
+				{
+					id: "76202A614AF9162E"
+					type: "item"
+					item: "techreborn:refined_iron_fence"
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: -5.0d
+			subtitle: "{ftbquests.chapter.chapter_5.blender.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_5.blender.description0}"
+				""
+				"{ftbquests.chapter.chapter_5.blender.description2}"
+				""
+				"{ftbquests.chapter.chapter_5.blender.description4}"
+			]
+			dependencies: ["30B554B51AEFEB0C"]
+			id: "52C8D56DC0260931"
 			tasks: [{
-				id: "46DAC7EBC4ED227C"
+				id: "6AED618595A3EBDC"
 				type: "item"
 				item: {
 					id: "custommachinery:custom_machine_item"
 					Count: 1b
 					tag: {
-						machine: "createastral:channeling_transformer"
+						machine: "astralfoods:blender"
 					}
 				}
 			}]

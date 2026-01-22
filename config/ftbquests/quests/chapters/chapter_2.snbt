@@ -1819,7 +1819,7 @@
 			description: [
 				"{ftbquests.chapter.chapter_3.quest_marimo.description0}"
 				""
-				"{ftbquests.chapter.chapter_3.quest_marimo.description2}"
+				"{ftbquests.chapter.chapter_2.quest_marimo.description2}"
 			]
 			dependencies: ["0E7A9F741823BB1C"]
 			id: "648B7850DA996820"

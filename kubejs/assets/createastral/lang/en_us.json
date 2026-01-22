@@ -368,6 +368,7 @@
   "item.astralfoods.astralfoods.dipped_potato": "Dipped Potato",
   "item.astralfoods.astralfoods.mashed_potato": "Mashed Potato",
   "item.astralfoods.astralfoods.hash_brown": "Hash Brown",
+  "item.astralfoods.astralfoods.protein_ball": "Protein Ball",
 
   "block.kubejs.fragile_sheet_block": "Fragile Sheet Block",
   "block.kubejs.broken_fragile_sheet_block": "Broken Fragile Sheet Block",
@@ -2146,7 +2147,7 @@
   "ftbquests.chapter.chapter_3.item_filtering.title": "Early-game item filtering",
   "ftbquests.chapter.chapter_3.item_filtering.subtitle": "Brass not required!",
   "ftbquests.chapter.chapter_3.item_filtering.description0": "It's not recommended to rush ahead just for Brass. You are better than that >:)",
-  "ftbquests.chapter.chapter_3.item_filtering.description2": "Instead, use a &6Drawer&r, &6Drawer Lock&r and an &6Andesite Funnel&r. The Drawer can only accept one item type, so ONLY the configured item will enter it. In the first image, the item will only pass through if it is an iron nugget. In the second image, any Flint will be pulled off the belt. You can use these methods to aid in iron production via Washing.",
+  "ftbquests.chapter.chapter_3.item_filtering.description2": "Instead, use a &6Drawer&r, &6Drawer Lock&r and an &6Andesite Funnel&r. The Drawer can only accept one item type, so ONLY the configured item will enter it. In the first configuration, the item will only pass through if it is an iron nugget. In the second configuration, any Flint will be pulled off the belt. You can use these methods to aid in iron production via Washing.",
 
   "ftbquests.chapter.chapter_4.title": "3) Remnants of a Lost Civilization",
   "ftbquests.chapter.chapter_4.quests0.subtitle": "Obtain a Blaze from a lost Power Plant on the Moon!",
@@ -2935,6 +2936,11 @@
   "ftbquests.chapter.chapter_5.channeling_trans.subtitle": "Zeus is watching closely...",
   "ftbquests.chapter.chapter_5.channeling_trans.description0": "Struggling for power? This will help.",
   "ftbquests.chapter.chapter_5.channeling_trans.description2": "The &6Channeling Transformer&r is a multiblock power generator that summons lightning using liquid &6Smite&r, and then captures energy from the lightning using a &6Lightning Rod&r. Electrolyze Hellfire into &6Smite&r and pump it into the &6Channeling Transformer&r block at the bottom of the multiblock. Wait 1 minute for the machine to charge and then... &4BOOM&r! The &6Lightning Rod&r is now full of electricity. Use your preferred method of E transfer to move it.",
+  "ftbquests.chapter.chapter_5.blender.subtitle": "Not for 3D modelling!",
+  "ftbquests.chapter.chapter_5.blender.description0": "The &6Blender&r is a high-tech mixer specifically for mixing food like Protein Balls, Mashed Potato and Seitan!",
+  "ftbquests.chapter.chapter_5.blender.description2": "... other yummy foods include: more efficient recipes for Bone Meal, Slime, Sand, Biomass and more!",
+  "ftbquests.chapter.chapter_5.blender.description4": "Toss items into the &6Blender&r by hand or by using an item transport method such as a &6Chute&r. The items can be input in any order.",
+
 
   "ftbquests.chapter.read_the_questbook.title": "Read the Questbook! (FAQ)",
   "ftbquests.chapter.read_the_questbook.quests0.title": "&6Vanilla Tools",

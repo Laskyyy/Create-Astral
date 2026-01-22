@@ -792,7 +792,10 @@
 					id: "tconstruct:sword"
 					Count: 1b
 					tag: {
-						Damage: 0
+						tic_multipliers: {
+							"tconstruct:mining_speed": 0.5f
+							"tconstruct:durability": 1.1f
+						}
 						tic_stats: {
 							"tconstruct:attack_speed": 1.7600001f
 							"tconstruct:mining_speed": 4.07f
@@ -800,15 +803,8 @@
 							"tconstruct:harvest_tier": "minecraft:diamond"
 							"tconstruct:durability": 246.40001f
 						}
-						tic_multipliers: {
-							"tconstruct:mining_speed": 0.5f
-							"tconstruct:durability": 1.1f
-						}
-						tic_materials: [
-							"tconstruct:silver"
-							"tconstruct:silver"
-							"tconstruct:silver"
-						]
+						Damage: 0
+						tic_broken: 0b
 						tic_modifiers: [
 							{
 								name: "tconstruct:smite"
@@ -819,7 +815,11 @@
 								level: 1s
 							}
 						]
-						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:silver"
+							"tconstruct:silver"
+							"tconstruct:silver"
+						]
 						tic_persistent_data: {
 							upgrades: 3
 							abilities: 1
@@ -1243,8 +1243,8 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_4.quests36.title}"
-			x: -1.5d
-			y: 3.0d
+			x: -4.0d
+			y: 2.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests36.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests36.description0}"
@@ -1677,10 +1677,10 @@
 							items: [
 								{
 									id: "techreborn:cell"
-									Count: 1b
 									tag: {
 										fluid: "createaddition:seed_oil"
 									}
+									Count: 1b
 								}
 								{
 									id: "createaddition:seed_oil_bucket"
@@ -2953,8 +2953,8 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_4.quests94.title}"
-			x: -1.5d
-			y: 4.0d
+			x: -4.5d
+			y: 3.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests94.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests94.description0}"
@@ -2972,7 +2972,7 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_4.quests95.title}"
-			x: -0.5d
+			x: -1.0d
 			y: 4.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests95.subtitle}"
 			description: [
@@ -2991,7 +2991,7 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_4.quests96.title}"
-			x: -0.5d
+			x: -1.0d
 			y: 5.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests96.subtitle}"
 			description: [
@@ -3172,7 +3172,7 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_4.quests103.title}"
-			x: -1.5d
+			x: -2.5d
 			y: 5.0d
 			description: [
 				"{ftbquests.chapter.chapter_4.quests103.description0}"
@@ -3357,8 +3357,8 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_4.quests111.title}"
-			x: -0.5d
-			y: 3.0d
+			x: -1.0d
+			y: 2.5d
 			subtitle: "{ftbquests.chapter.chapter_4.quests111.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests111.description0}"
@@ -3697,14 +3697,14 @@
 						tag: {
 							tic_modifiers: [ ]
 							tic_broken: 0b
-							Damage: 0
+							tic_multipliers: { }
 							tic_stats: {
 								"tconstruct:armor_toughness": 2.0f
 								"tconstruct:knockback_resistance": 0.1f
 								"tconstruct:durability": 330.0f
 								"tconstruct:armor": 2.0f
 							}
-							tic_multipliers: { }
+							Damage: 0
 							tic_persistent_data: {
 								upgrades: 1
 								abilities: 1
@@ -3722,14 +3722,14 @@
 						tag: {
 							tic_modifiers: [ ]
 							tic_broken: 0b
-							Damage: 0
+							tic_multipliers: { }
 							tic_stats: {
 								"tconstruct:armor_toughness": 2.0f
 								"tconstruct:knockback_resistance": 0.1f
 								"tconstruct:durability": 480.0f
 								"tconstruct:armor": 7.0f
 							}
-							tic_multipliers: { }
+							Damage: 0
 							tic_persistent_data: {
 								upgrades: 1
 								abilities: 1
@@ -3747,14 +3747,14 @@
 						tag: {
 							tic_modifiers: [ ]
 							tic_broken: 0b
-							Damage: 0
+							tic_multipliers: { }
 							tic_stats: {
 								"tconstruct:armor_toughness": 2.0f
 								"tconstruct:knockback_resistance": 0.1f
 								"tconstruct:durability": 450.0f
 								"tconstruct:armor": 5.0f
 							}
-							tic_multipliers: { }
+							Damage: 0
 							tic_persistent_data: {
 								upgrades: 1
 								abilities: 1
@@ -3772,14 +3772,14 @@
 						tag: {
 							tic_modifiers: [ ]
 							tic_broken: 0b
-							Damage: 0
+							tic_multipliers: { }
 							tic_stats: {
 								"tconstruct:armor_toughness": 2.0f
 								"tconstruct:knockback_resistance": 0.1f
 								"tconstruct:durability": 390.0f
 								"tconstruct:armor": 2.0f
 							}
-							tic_multipliers: { }
+							Damage: 0
 							tic_persistent_data: {
 								upgrades: 1
 								abilities: 1
@@ -3814,7 +3814,7 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_4.quests124.title}"
-			x: 1.0d
+			x: 0.5d
 			y: 4.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests124.subtitle}"
 			description: [
@@ -4260,10 +4260,10 @@
 							items: [
 								{
 									id: "techreborn:cell"
-									Count: 1b
 									tag: {
 										fluid: "kubejs:liquid_xp_nuggies"
 									}
+									Count: 1b
 								}
 								{
 									id: "kubejs:liquid_xp_nuggies_bucket"
