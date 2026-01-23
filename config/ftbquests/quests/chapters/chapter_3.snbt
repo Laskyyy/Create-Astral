@@ -3186,6 +3186,39 @@
 				}
 			]
 		}
+		{
+			title: "{ftbquests.chapter.chapter_4.quests37.title}"
+			x: 2.5d
+			y: 1.5d
+			subtitle: "{ftbquests.chapter.chapter_4.quests37.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_4.quests37.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests37.description3}"
+			]
+			dependencies: ["62DAEDF65FB2226B"]
+			min_required_tasks: 1
+			id: "0ADFE1D87DB51856"
+			tasks: [
+				{
+					id: "75F20E3FC26D6824"
+					type: "item"
+					item: "techreborn:basic_storage_unit"
+				}
+				{
+					id: "77270AF64AD16A22"
+					type: "item"
+					item: "techreborn:basic_tank_unit"
+				}
+			]
+			rewards: [{
+				id: "03284E024A33A23B"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
+			}]
+		}
 	]
 	quest_links: [ ]
 }

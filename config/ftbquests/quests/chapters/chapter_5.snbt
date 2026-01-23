@@ -238,10 +238,10 @@
 							items: [
 								{
 									id: "techreborn:cell"
-									Count: 1b
 									tag: {
 										fluid: "techreborn:lithium"
 									}
+									Count: 1b
 								}
 								{
 									id: "techreborn:lithium_bucket"
@@ -700,8 +700,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						File: "[AstralExamples] Distillery.nbt"
 						Rotation: "NONE"
+						File: "[AstralExamples] Distillery.nbt"
 						Mirror: "NONE"
 						Bounds: [
 							5
@@ -1284,106 +1284,39 @@
 			]
 		}
 		{
-			title: "{ftbquests.chapter.chapter_5.quests34.title}"
-			x: 13.0d
-			y: 5.0d
-			description: ["{ftbquests.chapter.chapter_5.quests34.description}"]
-			dependencies: ["7244D7E45BDFFD0E"]
-			id: "3489CBA7A54C6530"
-			tasks: [{
-				id: "6510FC422735D220"
-				type: "item"
-				item: "ae2:sky_dust"
-			}]
-		}
-		{
-			title: "{ftbquests.chapter.chapter_5.quests35.title}"
-			x: 14.5d
-			y: 6.5d
-			description: ["{ftbquests.chapter.chapter_5.quests35.description}"]
-			hide_dependency_lines: true
-			dependencies: ["253F29A00B4EA050"]
-			optional: true
-			id: "7244D7E45BDFFD0E"
-			tasks: [
-				{
-					id: "1EFEF2C9A28BBAB2"
-					type: "item"
-					item: "ae2:certus_quartz_dust"
-				}
-				{
-					id: "0288FED6A38543B9"
-					type: "item"
-					item: "ad_astra:moon_stone"
-				}
-			]
-			rewards: [{
-				id: "75EA643738E2BABD"
-				type: "item"
-				item: "ad_astra:sky_stone"
-			}]
-		}
-		{
 			title: "{ftbquests.chapter.chapter_5.quests36.title}"
 			icon: "techreborn:sulfur_dust"
-			x: 14.5d
-			y: 5.0d
+			x: 12.0d
+			y: 3.75d
+			subtitle: "{ftbquests.chapter.chapter_5.quests36.subtitle}"
 			description: ["{ftbquests.chapter.chapter_5.quests36.description}"]
-			dependencies: ["3489CBA7A54C6530"]
+			hide_dependency_lines: true
+			dependencies: ["253F29A00B4EA050"]
 			size: 1.5d
 			id: "04954A167C56AC1C"
-			tasks: [
-				{
-					id: "0D39FC988F2720A8"
-					type: "item"
-					item: "minecraft:glowstone_dust"
-				}
-				{
-					id: "2FFE0A87E5921D7F"
-					type: "item"
-					item: "ae2:sky_dust"
-				}
-			]
-			rewards: [{
-				id: "128F0866D8D9DD0E"
+			tasks: [{
+				id: "28DDCEFC8D876935"
 				type: "item"
 				item: "techreborn:sulfur_dust"
 			}]
-		}
-		{
-			title: "{ftbquests.chapter.chapter_5.quests37.title}"
-			x: 14.5d
-			y: 3.5d
-			description: ["{ftbquests.chapter.chapter_5.quests37.description}"]
-			dependencies: ["04954A167C56AC1C"]
-			id: "0842CB2511EA7CE9"
-			tasks: [
-				{
-					id: "2DA7A2C0AEC6781C"
-					type: "item"
-					item: {
-						id: "techreborn:cell"
-						Count: 1b
-						tag: {
-							fluid: "techreborn:sulfur"
-						}
-					}
-					match_nbt: true
-				}
-				{
-					id: "764FE811D58B5E5B"
-					type: "item"
-					item: "techreborn:sulfur_bucket"
-				}
-			]
+			rewards: [{
+				id: "51F561FA45F5E0F0"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 2770258610575478801L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_5.quests38.title}"
 			x: 13.0d
-			y: 3.5d
+			y: 2.5d
 			subtitle: "{ftbquests.chapter.chapter_5.quests38.subtitle}"
-			description: ["{ftbquests.chapter.chapter_5.quests38.description}"]
-			dependencies: ["0842CB2511EA7CE9"]
+			description: [
+				"{ftbquests.chapter.chapter_5.quests38.description}"
+				""
+				"{ftbquests.chapter.chapter_5.quests38.description2}"
+			]
+			dependencies: ["04954A167C56AC1C"]
 			id: "7E55004B488A16C1"
 			tasks: [
 				{
@@ -1402,10 +1335,10 @@
 							items: [
 								{
 									id: "techreborn:cell"
-									Count: 1b
 									tag: {
 										fluid: "techreborn:sulfur"
 									}
+									Count: 1b
 								}
 								{
 									id: "techreborn:sulfur_bucket"
@@ -1591,11 +1524,11 @@
 							items: [
 								{
 									match_nbt: 1b
+									id: "techreborn:cell"
+									Count: 1b
 									tag: {
 										fluid: "techreborn:oil"
 									}
-									Count: 1b
-									id: "techreborn:cell"
 								}
 								{
 									id: "techreborn:oil_bucket"

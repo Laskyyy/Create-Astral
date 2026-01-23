@@ -166,7 +166,9 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests3.description0}"
 				""
+				"{ftbquests.chapter.chapter_4.quests3.description2}"
 				""
+				"{ftbquests.chapter.chapter_4.quests3.description4}"
 			]
 			dependencies: ["705C815541DB89F8"]
 			id: "21DBCD51CC35B794"
@@ -734,8 +736,8 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_4.quests19.title}"
-			x: -18.5d
-			y: 0.5d
+			x: -17.5d
+			y: 0.0d
 			subtitle: "{ftbquests.chapter.chapter_4.quests19.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests19.description0}"
@@ -760,7 +762,13 @@
 			x: -17.0d
 			y: -2.5d
 			subtitle: "{ftbquests.chapter.chapter_4.quests20.subtitle}"
-			description: ["{ftbquests.chapter.chapter_4.quests20.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_4.quests20.description}"
+				""
+				"{ftbquests.chapter.chapter_4.quests20.description2}"
+				""
+				"{ftbquests.chapter.chapter_4.quests20.description4}"
+			]
 			min_required_dependencies: 1
 			dependencies: [
 				"1DFF76A494C9A586"
@@ -772,6 +780,12 @@
 				id: "05C23BCCCFD166F1"
 				type: "item"
 				item: "create:integrated_circuit"
+			}]
+			rewards: [{
+				id: "5D91E4F0FF3D6D32"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
 			}]
 		}
 		{
@@ -1269,39 +1283,6 @@
 					item: "techreborn:lamp_incandescent"
 				}
 			]
-		}
-		{
-			title: "{ftbquests.chapter.chapter_4.quests37.title}"
-			x: -17.0d
-			y: -1.0d
-			subtitle: "{ftbquests.chapter.chapter_4.quests37.subtitle}"
-			description: [
-				"{ftbquests.chapter.chapter_4.quests37.description0}"
-				""
-				""
-				"{ftbquests.chapter.chapter_4.quests37.description3}"
-			]
-			dependencies: ["73973C5E6D2573B8"]
-			min_required_tasks: 1
-			id: "0ADFE1D87DB51856"
-			tasks: [
-				{
-					id: "75F20E3FC26D6824"
-					type: "item"
-					item: "techreborn:basic_storage_unit"
-				}
-				{
-					id: "77270AF64AD16A22"
-					type: "item"
-					item: "techreborn:basic_tank_unit"
-				}
-			]
-			rewards: [{
-				id: "03284E024A33A23B"
-				type: "loot"
-				exclude_from_claim_all: true
-				table_id: 5253492355592689915L
-			}]
 		}
 		{
 			title: "{ftbquests.chapter.chapter_4.quests38.title}"
@@ -4496,8 +4477,9 @@
 			]
 		}
 		{
-			x: -18.0d
+			x: -17.0d
 			y: -1.0d
+			description: ["{ftbquests.chapter.chapter_4.printed_board.description}"]
 			dependencies: [
 				"1A08EE7C76242947"
 				"1D30E6C494694B78"
@@ -4510,10 +4492,10 @@
 			}]
 		}
 		{
-			x: -18.5d
-			y: -2.0d
-			hide_dependency_lines: true
-			dependencies: ["306D009F01634115"]
+			x: -18.0d
+			y: -1.0d
+			description: ["{ftbquests.chapter.chapter_4.sulfuric_acid.description}"]
+			dependencies: ["34E60A5BAB205ACB"]
 			id: "1035D3C1E64A3322"
 			tasks: [{
 				id: "2DB2D97E19FD75BB"
@@ -4522,8 +4504,10 @@
 			}]
 		}
 		{
-			x: -17.5d
-			y: 0.5d
+			x: -16.5d
+			y: 0.0d
+			subtitle: "{ftbquests.chapter.chapter_4.circuit_paper.subtitle}"
+			description: ["{ftbquests.chapter.chapter_4.circuit_paper.description}"]
 			hide_dependency_lines: true
 			dependencies: ["306D009F01634115"]
 			id: "1D30E6C494694B78"
@@ -4531,6 +4515,23 @@
 				id: "1FD6E21CB531DDC2"
 				type: "item"
 				item: "createastral:circuit_paper"
+			}]
+		}
+		{
+			x: -18.5d
+			y: 0.0d
+			description: [
+				"{ftbquests.chapter.chapter_4.sulfur_dust.description}"
+				""
+				"{ftbquests.chapter.chapter_4.sulfur_dust.description2}"
+			]
+			hide_dependency_lines: true
+			dependencies: ["306D009F01634115"]
+			id: "34E60A5BAB205ACB"
+			tasks: [{
+				id: "20A98AFB75C27C88"
+				type: "item"
+				item: "techreborn:sulfur_dust"
 			}]
 		}
 	]
