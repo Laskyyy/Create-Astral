@@ -432,6 +432,7 @@
       { output: "ae2:fluix_dust" },
       { output: "ae2:molecular_assembler" },
       { output: "ae2:inscriber" },
+      { output: "ae2:quartz_growth_accelerator" },
       { type: "ae2:inscriber" },
       { output: "ae2:controller", type: "crafting_shaped" },
       // Tconstruct
@@ -580,6 +581,7 @@
       { output: "mcdw:sword_diamond_sword_var" },
       { output: "automobility:auto_mechanic_table" },
       { output: "automobility:automobile_assembler" },
+      { output: "morefluidcans:copper_can" },
       // @ts-expect-error Missing item?
       { type: "automobility:automobile_assembler" },
       { type: "ad_astra:fuel_conversion" },

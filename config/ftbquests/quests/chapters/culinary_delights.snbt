@@ -476,6 +476,8 @@
 		{
 			x: 10.5d
 			y: -2.0d
+			subtitle: "{ftbquests.chapter.culinary_delights.quests18.subtitle}"
+			description: ["{ftbquests.chapter.culinary_delights.quests8.description0}"]
 			dependencies: [
 				"61D48A57D179ED82"
 				"5F1C949E32B1FEBD"
