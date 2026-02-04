@@ -1,0 +1,29 @@
+{
+  "biome.ad_astra.infernal_venus_barrens": "焰金荒原",
+  "entity.ad_astra.glacian_ram": "月羊",
+  "item.ad_astra.netherite_space_boots": "衬铅航天靴",
+  "item.ad_astra.netherite_space_helmet": "衬铅航天面罩",
+  "item.ad_astra.netherite_space_pants": "衬铅航天裤",
+  "item.ad_astra.netherite_space_suit": "衬铅航天服",
+  "item.ad_astra.tier_2_rocket": "戴斯火箭",
+  "item.ad_astra.tier_3_rocket": "紫金火箭",
+  "item.ad_astra.tier_4_rocket": "耐热金属火箭",
+  "fluid.ad_astra.oxygen": "氧气",
+  "fluid.ad_astra.oil": "原油",
+  "fluid.ad_astra.cryo_fuel": "凛冰燃料",
+  "fluid.ad_astra.fuel": "燃料",
+
+  "block.ad_astra.venus_gold_ore": "火星金矿石",
+  "item.ad_astra.venus_gold_ore": "火星金矿石",
+  "block.ad_astra.deepslate_calorite_ore": "水星耐热金属矿石",
+  "item.ad_astra.deepslate_calorite_ore": "水星耐热金属矿石",
+
+  "item.ad_astra.steel_plate": "钢板",
+  "item.ad_astra.desh_plate": "戴斯板",
+  "item.ad_astra.ostrum_plate": "紫金板",
+  "item.ad_astra.calorite_plate": "耐热金属板",
+  "block.ad_astra.calorite_block": "耐热合金块",
+
+  "gui.ad_astra.text.proxima_centauri": "另一个维度",
+  "gui.ad_astra.text.solar_system": "维度"
+}
