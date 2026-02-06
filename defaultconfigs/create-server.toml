@@ -62,7 +62,7 @@ limitAdventureMode = true
 	enableRefinedRadianceRecipe = false
 	#.
 	#Allow the standard in-world Shadow Steel recipe.
-	enableShadowSteelRecipe = true
+	enableShadowSteelRecipe = false
 
 #.
 #Parameters and abilities of Create's kinetic mechanisms

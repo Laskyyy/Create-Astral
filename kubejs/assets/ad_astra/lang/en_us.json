@@ -22,5 +22,8 @@
   "item.ad_astra.desh_plate": "Desh Sheet",
   "item.ad_astra.ostrum_plate": "Ostrum Sheet",
   "item.ad_astra.calorite_plate": "Calorite Sheet",
-  "block.ad_astra.calorite_block": "Calorite Block"
+  "block.ad_astra.calorite_block": "Calorite Block",
+  
+  "gui.ad_astra.text.proxima_centauri": "Another Dimension",
+  "gui.ad_astra.text.solar_system": "Dimension"
 }

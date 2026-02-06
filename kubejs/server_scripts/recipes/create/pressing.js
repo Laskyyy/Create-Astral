@@ -11,6 +11,10 @@
     /** @type {PressingRecipe[]} */
     const pressingRecipes = [
       {
+        input: "minecraft:potato",
+        output: "astralfoods:mashed_potato",
+      },
+      {
         input: "createastral:shimmer_marimo",
         output: "ae2:fluix_dust",
       },

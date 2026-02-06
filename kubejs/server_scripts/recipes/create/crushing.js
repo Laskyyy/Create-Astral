@@ -9,6 +9,12 @@
     /** @type {CrushingRecipe[]} */
     const crushingRecipes = [
       {
+        input: "createastral:rock_salt",
+        outputs: [
+          Item.of("techreborn:saltpeter_dust"),
+        ],
+      },
+      {
         input: "tconstruct:ender_slime_crystal_cluster",
         outputs: [
           Item.of("tconstruct:ender_slime_crystal", 3),

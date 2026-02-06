@@ -1,7 +1,7 @@
 {
 	id: "7136A22A8137E1D1"
 	group: ""
-	order_index: 9
+	order_index: 7
 	filename: "6"
 	title: "{ftbquests.chapter.6.title}"
 	icon: {
@@ -460,12 +460,19 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["586DA028F2A79E2F"]
+			min_required_tasks: 1
 			id: "21305A046B14B983"
-			tasks: [{
-				id: "4C3D57267E00AB49"
-				type: "item"
-				item: "astraladditions:sputum_bucket"
-			}]
+			tasks: [
+				{
+					id: "4C3D57267E00AB49"
+					type: "item"
+					item: "astraladditions:sputum_bucket"
+				}
+				{
+					id: "3D2DA61CC699D18D"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			title: "{ftbquests.chapter.6.quests19.title}"
@@ -565,12 +572,19 @@
 			subtitle: "{ftbquests.chapter.6.quests23.subtitle}"
 			description: ["{ftbquests.chapter.6.quests23.description}"]
 			dependencies: ["658F1D4DCD082AD0"]
+			min_required_tasks: 1
 			id: "07CB23B8118CE00A"
-			tasks: [{
-				id: "24D8805020D30947"
-				type: "item"
-				item: "kubejs:metabolic_broth_bucket"
-			}]
+			tasks: [
+				{
+					id: "24D8805020D30947"
+					type: "item"
+					item: "kubejs:metabolic_broth_bucket"
+				}
+				{
+					id: "2C50E1CCA2C47346"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			x: 0.5d

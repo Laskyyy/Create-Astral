@@ -63,6 +63,10 @@
         inputs: ["minecraft:seagrass"],
       },
       {
+        output: "minecraft:warped_wart_block",
+        inputs: [Item.of("minecraft:twisting_vines", 9)],
+      },
+      {
         output: { fluid: "astraladditions:sputum", amount: 500 * mB },
         inputs: [
           Item.of("createastral:ender_marimo", 4),
@@ -436,10 +440,17 @@
       {
         output: "astralfoods:blaze_fries",
         inputs: ["astralfoods:blaze_rods", { fluid: "createaddition:seed_oil", amount: 100 * mB }],
+        heat: "heated",
       },
       {
         output: "astralfoods:fried_cod",
         inputs: ["minecraft:cod", { fluid: "createaddition:seed_oil", amount: 100 * mB }],
+        heat: "heated",
+      },
+      {
+        output: "astralfoods:hash_brown",
+        inputs: ["astralfoods:mashed_potato", { fluid: "createaddition:seed_oil", amount: 100 * mB }],
+		heat: "heated"
       },
       {
         output: "createbigcannons:steel_screw_lock",
@@ -448,7 +459,7 @@
       },
     ];
     compactingRecipes.forEach((recipe) => {
-      event.recipes.createCompacting(recipe.output, recipe.inputs).heatRequirement(recipe.heat ?? "");
+      event.recipes.createCompacting(recipe.output, recipe.inputs).heatRequirement(recipe.heat ?? "none");
     });
   });
   /** @param {Internal.RecipeEventJS} event */

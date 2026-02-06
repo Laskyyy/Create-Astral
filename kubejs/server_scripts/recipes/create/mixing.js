@@ -30,6 +30,11 @@
         time: 180,
       },
       {
+        output: ["minecraft:mycelium"],
+        input: ["#minecraft:dirt", "ad_astra:cheese"],
+        time: 100,
+      },
+      {
         output: [{ fluid: "kubejs:shimmer", amount: BUCKET / 9 }],
         input: ["ae2:fluix_crystal", "minecraft:glowstone_dust", "tconstruct:amethyst_bronze_nugget"],
         heat: "heated",
@@ -2747,16 +2752,6 @@
         time: 60,
       },
       {
-        output: ["astralfoods:gamers_delight"],
-        input: [
-          "techreborn:compressed_plantball",
-          "farmersdelight:pie_crust",
-          { fluid: "techreborn:lithium", amount: BUCKET },
-        ],
-        heat: "heated",
-        time: 80,
-      },
-      {
         output: "minecraft:slime_ball",
         input: ["minecraft:lime_dye", "#c:slimeballs"],
         time: 50,
@@ -2785,7 +2780,7 @@
     mixingRecipes.forEach((recipe) => {
       event.recipes
         .createMixing(recipe.output, recipe.input)
-        .heatRequirement(recipe.heat ?? "")
+        .heatRequirement(recipe.heat ?? "none")
         .processingTime(recipe.time ?? 100);
     });
     /**
