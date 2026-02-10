@@ -2291,6 +2291,11 @@
 			title: "{ftbquests.chapter.chapter_5.quests71.title}"
 			x: 18.0d
 			y: -9.0d
+			description: [
+				"{ftbquests.chapter.chapter_5.quests71.description}"
+				""
+				"{ftbquests.chapter.chapter_5.quests71.description2}"
+			]
 			dependencies: [
 				"45ED6D09FF4EE5F0"
 				"52C8F72154556551"
@@ -2319,7 +2324,13 @@
 			title: "{ftbquests.chapter.chapter_5.quests73.title}"
 			x: 18.5d
 			y: -10.0d
-			description: ["{ftbquests.chapter.chapter_5.quests73.description}"]
+			description: [
+				"{ftbquests.chapter.chapter_5.quests73.description}"
+				""
+				"{ftbquests.chapter.chapter_5.quests73.description2}"
+				""
+				"{ftbquests.chapter.chapter_5.quests73.description4}"
+			]
 			hide_dependency_lines: true
 			dependencies: ["673DC1F22D2F790D"]
 			id: "52C8F72154556551"
