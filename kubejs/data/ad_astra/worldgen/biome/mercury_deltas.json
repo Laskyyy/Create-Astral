@@ -61,6 +61,10 @@
     "astraladditions:whast": {
       "energy_budget": 0.015,
       "charge": 0.4
+    },
+    "astraladditions:blackhole": {
+      "energy_budget": 0.015,
+      "charge": 0.4
     }
   },
   "carvers": {
