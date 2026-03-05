@@ -238,10 +238,10 @@
 							items: [
 								{
 									id: "techreborn:cell"
+									Count: 1b
 									tag: {
 										fluid: "techreborn:lithium"
 									}
-									Count: 1b
 								}
 								{
 									id: "techreborn:lithium_bucket"
@@ -700,8 +700,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						Rotation: "NONE"
 						File: "[AstralExamples] Distillery.nbt"
+						Rotation: "NONE"
 						Mirror: "NONE"
 						Bounds: [
 							5
@@ -1335,10 +1335,10 @@
 							items: [
 								{
 									id: "techreborn:cell"
+									Count: 1b
 									tag: {
 										fluid: "techreborn:sulfur"
 									}
-									Count: 1b
 								}
 								{
 									id: "techreborn:sulfur_bucket"
@@ -1524,11 +1524,11 @@
 							items: [
 								{
 									match_nbt: 1b
-									id: "techreborn:cell"
-									Count: 1b
 									tag: {
 										fluid: "techreborn:oil"
 									}
+									Count: 1b
+									id: "techreborn:cell"
 								}
 								{
 									id: "techreborn:oil_bucket"
@@ -1903,7 +1903,7 @@
 		{
 			title: "{ftbquests.chapter.chapter_5.quests56.title}"
 			icon: "yttr:continuous_platform"
-			x: 20.5d
+			x: 21.0d
 			y: 0.0d
 			subtitle: "{ftbquests.chapter.chapter_5.quests56.subtitle}"
 			description: [
@@ -2509,6 +2509,24 @@
 				type: "loot"
 				exclude_from_claim_all: true
 				table_id: 2770258610575478801L
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.chapter_5.glacio_portal.title}"
+			x: 15.5d
+			y: 4.0d
+			subtitle: "{ftbquests.chapter.chapter_5.glacio_portal.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_5.glacio_portal.description}"
+				""
+				"{ftbquests.chapter.chapter_5.glacio_portal.description2}"
+			]
+			dependencies: ["111E91837243077C"]
+			id: "0CF7B65E247DAAC9"
+			tasks: [{
+				id: "0ADD98C763CDCF0F"
+				type: "item"
+				item: "createastral:aurorite_block"
 			}]
 		}
 	]
