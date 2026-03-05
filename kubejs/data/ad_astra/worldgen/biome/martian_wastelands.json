@@ -22,27 +22,21 @@
     "monster": [
       {
         "type": "ad_astra:martian_raptor",
-        "weight": 105,
+        "weight": 100,
         "minCount": 1,
         "maxCount": 3
       },
       {
         "type": "minecraft:wither_skeleton",
-        "weight": 85,
+        "weight": 80,
         "minCount": 1,
         "maxCount": 2
       },
       {
         "type": "minecraft:husk",
-        "weight": 105,
+        "weight": 100,
         "minCount": 1,
         "maxCount": 3
-      },
-      {
-        "type": "astraladditions:blackhole",
-        "weight": 65,
-        "minCount": 1,
-        "maxCount": 2
       }
     ]
   },
