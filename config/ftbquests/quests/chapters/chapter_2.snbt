@@ -1835,9 +1835,9 @@
 		{
 			x: -0.5d
 			y: -3.0d
-			subtitle: "{ftbquests.chapter.chapter_3.quest_marimo.subtitle}"
+			subtitle: "{ftbquests.chapter.chapter_2.quest_marimo.subtitle}"
 			description: [
-				"{ftbquests.chapter.chapter_3.quest_marimo.description0}"
+				"{ftbquests.chapter.chapter_2.quest_marimo.description0}"
 				""
 				"{ftbquests.chapter.chapter_2.quest_marimo.description2}"
 			]
