@@ -1,10 +1,8 @@
 (function astralFoodsBlenderRecipes() {
   onEvent("recipes", (event) => {
     /**
-     * Can only be one input and output
+     * Accepts 4 shapeless inputs and produces 1 output
      * Time is measured in ticks (20 ticks = 1 second)
-     * The block will only accept dormant signal beacons as inputs.
-     * Change the machine registry in kubejs/data/astralsignals/machines/signal_coordinator.json if you wish to modify this
      */
     event.recipes.custommachinery
       .custom_machine("astralfoods:blender", 100)
