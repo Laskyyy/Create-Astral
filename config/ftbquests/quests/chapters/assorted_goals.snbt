@@ -401,18 +401,11 @@
 			size: 2.5d
 			min_required_tasks: 1
 			id: "0BCED0F8481E0C21"
-			tasks: [
-				{
-					id: "576B4EA932FC2E16"
-					type: "item"
-					item: "minecraft:crafting_table"
-				}
-				{
-					id: "3B80E831E315C381"
-					type: "item"
-					item: "projecttable:projecttable"
-				}
-			]
+			tasks: [{
+				id: "576B4EA932FC2E16"
+				type: "item"
+				item: "minecraft:crafting_table"
+			}]
 			rewards: [
 				{
 					id: "10ED69DCCDA4E6C2"
@@ -579,7 +572,7 @@
 				id: "072F87225B252EF0"
 				type: "item"
 				item: "minecraft:melon"
-				count: 64L
+				count: 32L
 			}]
 			rewards: [{
 				id: "70CEAFBC1ED06AAF"
@@ -599,7 +592,7 @@
 				id: "1E76A2267860CAB1"
 				type: "item"
 				item: "minecraft:cactus"
-				count: 64L
+				count: 32L
 			}]
 			rewards: [{
 				id: "7EF1AFDAC31ED87C"
@@ -619,7 +612,7 @@
 				id: "455B346FB9ADE2BB"
 				type: "item"
 				item: "minecraft:pumpkin"
-				count: 64L
+				count: 32L
 			}]
 			rewards: [{
 				id: "62BE7175BE9B0DED"
@@ -885,9 +878,9 @@
 				Count: 1b
 				tag: {
 					Automobile: {
-						engine: "automobility:stone"
-						frame: "automobility:yellow_tractor"
 						wheels: "automobility:standard"
+						frame: "automobility:yellow_tractor"
+						engine: "automobility:stone"
 					}
 				}
 			}
@@ -975,9 +968,9 @@
 						Count: 1b
 						tag: {
 							Automobile: {
-								wheels: "automobility:standard"
-								frame: "automobility:yellow_tractor"
 								engine: "automobility:stone"
+								frame: "automobility:yellow_tractor"
+								wheels: "automobility:standard"
 							}
 						}
 					}
@@ -1273,8 +1266,8 @@
 								realCount: 0
 							}
 							PackageStyle: {
-								inner: "minecraft:oak_planks"
 								frame: "minecraft:oak_log"
+								inner: "minecraft:oak_planks"
 								color: 0
 							}
 						}
@@ -1507,9 +1500,7 @@
 			y: 11.5d
 			shape: "gear"
 			subtitle: "{ftbquests.chapter.assorted_goals.quests59.subtitle}"
-			description: [
-				"{ftbquests.chapter.assorted_goals.quests59.description0}"
-			]
+			description: ["{ftbquests.chapter.assorted_goals.quests59.description0}"]
 			dependencies: ["2CE5BB6A7B30CA4C"]
 			size: 1.25d
 			id: "5CD05F26EB5C6754"

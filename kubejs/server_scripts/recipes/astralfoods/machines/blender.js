@@ -1,11 +1,25 @@
 (function astralFoodsBlenderRecipes() {
   onEvent("recipes", (event) => {
     /**
-     * Can only be one input and output
+     * Accepts 4 shapeless inputs and produces 1 output
      * Time is measured in ticks (20 ticks = 1 second)
-     * The block will only accept dormant signal beacons as inputs.
-     * Change the machine registry in kubejs/data/astralsignals/machines/signal_coordinator.json if you wish to modify this
      */
+    event.recipes.custommachinery
+      .custom_machine("astralfoods:blender", 100)
+      .requireItem(Item.of("minecraft:potato"))
+      .produceItem(Item.of("astralfoods:mashed_potato"));
+    event.recipes.custommachinery
+      .custom_machine("astralfoods:blender", 100)
+      .requireItem(Item.of("minecraft:brown_mushroom"))
+      .requireItem(Item.of("createastral:seitan"))
+      .produceItem(Item.of("createastral:seitan", 2));
+    event.recipes.custommachinery
+      .custom_machine("astralfoods:blender", 100)
+      .requireItem(Item.of("minecraft:pumpkin_seeds"))
+      .requireItem(Item.of("minecraft:beetroot_seeds"))
+      .requireItem(Item.of("minecraft:cocoa_beans"))
+      .requireItem(Item.of("farmersdelight:fried_egg"))
+      .produceItem(Item.of("astralfoods:protein_ball"));
     event.recipes.custommachinery
       .custom_machine("astralfoods:blender", 300)
       .requireItem(Item.of("yttr:delicace"))
@@ -37,7 +51,7 @@
       .produceItem(Item.of("createaddition:biomass", 1));
     event.recipes.custommachinery
       .custom_machine("astralfoods:blender", 100)
-      .requireItem(Item.of("minecraft:potato"))
-      .produceItem(Item.of("astralfoods:mashed_potato"));
+      .requireItem(Item.of("techreborn:andesite_dust"))
+      .produceItem(Item.of("minecraft:sand"));
   });
 })();
