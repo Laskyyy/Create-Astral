@@ -17,26 +17,26 @@
       "probability": 0.014
     }
   },
-  "creature_spawn_probability": 0.2,
+  "creature_spawn_probability": 0.16,
   "spawners": {
     "monster": [
       {
-        "type": "ad_astra:martian_raptor",
+        "type": "ad_astra:sulfur_creeper",
         "weight": 100,
         "minCount": 1,
         "maxCount": 3
       },
       {
-        "type": "minecraft:wither_skeleton",
-        "weight": 80,
-        "minCount": 1,
-        "maxCount": 2
+      	"type": "minecraft:wither_skeleton",
+      	"weight": 70,
+      	"minCount": 1,
+      	"maxCount": 2
       },
       {
-        "type": "minecraft:husk",
-        "weight": 100,
-        "minCount": 1,
-        "maxCount": 3
+      	"type": "minecraft:husk",
+      	"weight": 80,
+      	"minCount": 1,
+      	"maxCount": 3
       }
     ]
   },

@@ -434,7 +434,7 @@
         time: 100,
       },
       {
-        output: Fluid.of("techreborn:silicon", mB * 400),
+        output: Fluid.of("techreborn:silicon", BUCKET),
         input: ["ae2:certus_quartz_crystal"],
         heat: "superheated",
         time: 200,

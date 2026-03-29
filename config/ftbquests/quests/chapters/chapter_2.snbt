@@ -219,7 +219,7 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_2.quests4.title}"
-			x: -3.5d
+			x: -4.0d
 			y: 0.0d
 			description: [
 				"{ftbquests.chapter.chapter_2.quests4.description0}"
@@ -277,8 +277,8 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: -1.5d
+			x: -4.0d
+			y: -2.0d
 			subtitle: "{ftbquests.chapter.chapter_2.quests7.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_2.quests7.description0}"
@@ -569,7 +569,7 @@
 		{
 			icon: "create:mechanical_mixer"
 			x: -2.0d
-			y: -1.5d
+			y: -3.0d
 			shape: "circle"
 			subtitle: "{ftbquests.chapter.chapter_2.quests15.subtitle}"
 			description: [
@@ -684,6 +684,12 @@
 				id: "3EF37A796B2984A4"
 				type: "item"
 				item: "computercraft:turtle_normal"
+			}]
+			rewards: [{
+				id: "70F36FB8A22E98F7"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5687404501397719867L
 			}]
 		}
 		{
@@ -917,7 +923,7 @@
 		{
 			title: "{ftbquests.chapter.chapter_2.quests25.title}"
 			x: -2.0d
-			y: -4.0d
+			y: -6.0d
 			shape: "gear"
 			subtitle: "{ftbquests.chapter.chapter_2.quests25.subtitle}"
 			description: [
@@ -1044,7 +1050,7 @@
 			]
 		}
 		{
-			x: -4.0d
+			x: -5.0d
 			y: -1.5d
 			subtitle: "{ftbquests.chapter.chapter_2.quests28.subtitle}"
 			description: ["{ftbquests.chapter.chapter_2.quests28.description}"]
@@ -1064,8 +1070,8 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_2.quests29.title}"
-			x: -3.5d
-			y: -2.5d
+			x: -4.5d
+			y: -3.0d
 			subtitle: "{ftbquests.chapter.chapter_2.quests29.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_2.quests29.description0}"
@@ -1088,7 +1094,7 @@
 			}]
 		}
 		{
-			x: -4.5d
+			x: -5.5d
 			y: -2.5d
 			subtitle: "{ftbquests.chapter.chapter_2.quests30.subtitle}"
 			description: ["{ftbquests.chapter.chapter_2.quests30.description}"]
@@ -1099,15 +1105,23 @@
 				type: "item"
 				item: "ad_astra:earth_globe"
 			}]
-			rewards: [{
-				id: "474F63CEE27D89D4"
-				type: "item"
-				item: "ad_astra:moon_globe"
-			}]
+			rewards: [
+				{
+					id: "474F63CEE27D89D4"
+					type: "item"
+					item: "ad_astra:moon_globe"
+				}
+				{
+					id: "47E4E71BE77E3FA8"
+					type: "loot"
+					exclude_from_claim_all: true
+					table_id: 5687404501397719867L
+				}
+			]
 		}
 		{
-			x: -1.0d
-			y: -1.5d
+			x: 0.0d
+			y: -2.0d
 			subtitle: "{ftbquests.chapter.chapter_2.quests31.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_2.quests31.description0}"
@@ -1124,8 +1138,8 @@
 		}
 		{
 			title: "{ftbquests.chapter.chapter_2.quests32.title}"
-			x: -0.5d
-			y: -2.5d
+			x: 0.5d
+			y: -3.0d
 			shape: "pentagon"
 			subtitle: "{ftbquests.chapter.chapter_2.quests32.subtitle}"
 			dependencies: ["0E7A9F741823BB1C"]
@@ -1201,11 +1215,6 @@
 					item: "minecraft:sugar_cane"
 				}
 				{
-					id: "7A003056CC5F14DF"
-					type: "item"
-					item: "minecraft:chorus_flower"
-				}
-				{
 					id: "29DEEB2705325E02"
 					type: "item"
 					item: "minecraft:kelp"
@@ -1214,7 +1223,7 @@
 			]
 		}
 		{
-			x: 0.0d
+			x: 1.0d
 			y: -1.5d
 			subtitle: "{ftbquests.chapter.chapter_2.quests33.subtitle}"
 			description: [
@@ -1234,7 +1243,7 @@
 		{
 			title: "{ftbquests.chapter.chapter_2.quests34.title}"
 			icon: "minecraft:blast_furnace"
-			x: 0.5d
+			x: 1.5d
 			y: -2.5d
 			subtitle: "{ftbquests.chapter.chapter_2.quests34.subtitle}"
 			description: [
@@ -1603,7 +1612,7 @@
 		}
 		{
 			icon: "railways:track_monorail"
-			x: -6.5d
+			x: -8.0d
 			y: -1.5d
 			subtitle: "{ftbquests.chapter.chapter_2.quests47.subtitle}"
 			description: ["{ftbquests.chapter.chapter_2.quests47.description}"]
@@ -1659,8 +1668,8 @@
 			}]
 		}
 		{
-			x: -4.0d
-			y: -3.5d
+			x: -5.0d
+			y: -4.0d
 			subtitle: "{ftbquests.chapter.chapter_2.quests49.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_2.quests49.description0}"
@@ -1678,9 +1687,15 @@
 				type: "item"
 				item: "minecraft:enchanting_table"
 			}]
+			rewards: [{
+				id: "79986E8F52D9F6DA"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5687404501397719867L
+			}]
 		}
 		{
-			x: -0.5d
+			x: 0.0d
 			y: 0.0d
 			subtitle: "{ftbquests.chapter.chapter_2.quests50.subtitle}"
 			description: [
@@ -1815,6 +1830,88 @@
 				id: "1DA5493AD2F20DD2"
 				type: "item"
 				item: "createaddition:honey_cake"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -3.0d
+			subtitle: "{ftbquests.chapter.chapter_2.quest_marimo.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_2.quest_marimo.description0}"
+				""
+				"{ftbquests.chapter.chapter_2.quest_marimo.description2}"
+			]
+			dependencies: ["0E7A9F741823BB1C"]
+			id: "648B7850DA996820"
+			tasks: [{
+				id: "1154483F42721770"
+				type: "item"
+				item: "createastral:marimo"
+				count: 32L
+			}]
+			rewards: [{
+				id: "1B06B240F3A10BDD"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5687404501397719867L
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.chapter_2.iron_nuggetomation.title}"
+			x: 2.5d
+			y: -2.0d
+			subtitle: "{ftbquests.chapter.chapter_2.iron_nuggetomation.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_2.iron_nuggetomation.description0}"
+				""
+				"{ftbquests.chapter.chapter_2.iron_nuggetomation.description2}"
+			]
+			dependencies: ["5A0C01D3ED5C49D4"]
+			id: "6DD4CA5290C6FAA1"
+			tasks: [
+				{
+					id: "62F3DFFF6B4A646E"
+					type: "item"
+					item: "minecraft:iron_nugget"
+					count: 64L
+				}
+				{
+					id: "54AB6332EC224808"
+					type: "item"
+					item: "minecraft:flint"
+					count: 32L
+				}
+			]
+			rewards: [{
+				id: "0AE61550533EA0D3"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5687404501397719867L
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.chapter_2.clayomation.title}"
+			x: 2.0d
+			y: -1.0d
+			subtitle: "{ftbquests.chapter.chapter_2.clayomation.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_2.clayomation.description0}"
+				""
+				"{ftbquests.chapter.chapter_2.clayomation.description2}"
+			]
+			dependencies: ["5A0C01D3ED5C49D4"]
+			id: "1C37CCBFC94C8E6D"
+			tasks: [{
+				id: "58A41F6DB7FF7992"
+				type: "item"
+				item: "minecraft:clay_ball"
+				count: 64L
+			}]
+			rewards: [{
+				id: "34858158EDCF8C3D"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5687404501397719867L
 			}]
 		}
 	]
