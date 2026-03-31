@@ -1,13 +1,13 @@
 name = "Defined's Blocks"
-filename = "definedsblocks-1.0.5.jar"
+filename = "definedsblocks-1.0.6.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "8d223475be3bda16c726c163290e27e99f8d69ce"
+hash = "3dae6559986e6221f19cef53bf39a95a3e163c95"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7476620
+file-id = 7828092
 project-id = 1129990
