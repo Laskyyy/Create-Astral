@@ -1,0 +1,13 @@
+name = "Sense"
+filename = "sense-1.0.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "37d76fa03119a9fcc0bb1f755b7bff7cae19b2db"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7850453
+project-id = 1418112

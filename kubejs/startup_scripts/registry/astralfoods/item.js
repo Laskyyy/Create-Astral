@@ -168,13 +168,22 @@
       .create("astralfoods:mashed_potato")
       .displayName("Mashed Potato")
       .food((food) => {
-        food.hunger(4).saturation(1.2);
+        food.hunger(2).saturation(1);
       });
     event
       .create("astralfoods:hash_brown")
       .displayName("Hash Brown")
       .food((food) => {
-        food.hunger(5).saturation(1.3);
+        food.hunger(6).saturation(1.1);
+      });
+    event
+      .create("astralfoods:protein_ball")
+      .displayName("Protein Ball")
+      .food((food) => {
+        food
+          .hunger(6)
+          .saturation(0.35)
+          .effect("strength", 600, 0, 1)
       });
   });
   onEvent("fluid.registry", (event) => {
