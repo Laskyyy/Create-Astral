@@ -1915,7 +1915,7 @@
       transitional: "minecraft:enchanted_book",
       outputs: [Item.of("minecraft:enchanted_book", enchants([{ id: "mcdw:soul_devourer", level: 1 }]))],
     })
-      .addDeployingStep("tconstruct:soulsteel_nugget")
+      .addDeployingStep("tconstruct:queens_slime_nugget")
       .addDeployingStep("xpcrystals:xp_crystal")
       .addFillingStep({ fluid: "xpcrystals:soul", amount: BUCKET })
       .addPressingStep()

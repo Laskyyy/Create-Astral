@@ -3322,7 +3322,6 @@
 			title: "{ftbquests.chapter.chapter_4.quests110.title}"
 			x: -10.5d
 			y: -6.0d
-			subtitle: "{ftbquests.chapter.chapter_4.quests110.subtitle}"
 			description: ["{ftbquests.chapter.chapter_4.quests110.description}"]
 			dependencies: ["64271E1245394C9A"]
 			id: "7FF635D31674DBBA"
@@ -4115,6 +4114,11 @@
 					item: "create:large_cogwheel"
 				}
 				{
+					id: "6DA7469A8DE65795"
+					type: "item"
+					item: "createastral:cogwheel_skull"
+				}
+				{
 					id: "7AA1E7393E84E9B4"
 					type: "item"
 					item: "minecraft:arrow"
@@ -4532,6 +4536,58 @@
 				id: "20A98AFB75C27C88"
 				type: "item"
 				item: "techreborn:sulfur_dust"
+			}]
+		}
+		{
+			title: "{&dShimmer&r weaponry}"
+			x: -26.0d
+			y: -6.5d
+			shape: "heart"
+			subtitle: "{ftbquests.chapter.chapter_4.quests146.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_4.quests146.description0}"
+				""
+				"{ftbquests.chapter.chapter_4.quests146.description2}"
+				""
+				"{ftbquests.chapter.chapter_4.quests146.description3}"
+				""
+				"{ftbquests.chapter.chapter_4.quests146.description4}"
+			]
+			dependencies: ["33875939443A5D1C"]
+			id: "39C2E83C1343D6B1"
+			tasks: [
+				{
+					id: "6C691B8042D96B93"
+					type: "item"
+					item: {
+						id: "astraladditions:shimmer_blower"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4B39F2DC90EF96EC"
+					type: "item"
+					item: {
+						id: "astraladditions:lunar_wacker"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "364B99F7B58F1150"
+					type: "item"
+					item: "astraladditions:shimmerang"
+				}
+			]
+			rewards: [{
+				id: "273918F8B327E101"
+				type: "item"
+				item: "create:experience_block"
 			}]
 		}
 	]

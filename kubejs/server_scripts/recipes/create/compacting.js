@@ -457,6 +457,15 @@
         inputs: [Item.of("astraladditions:steel_ring", 2)],
         heat: "heated",
       },
+      {
+        output: "astraladditions:soulsteal_dagger",
+        inputs: [
+          "mcdw:dagger_soul_knife",
+          { fluid: "xpcrystals:soul", amount: BUCKET },
+          { fluid: "tconstruct:molten_steel", amount: BUCKET / 2 },
+        ],
+        heat: "superheated",
+      },
     ];
     compactingRecipes.forEach((recipe) => {
       event.recipes.createCompacting(recipe.output, recipe.inputs).heatRequirement(recipe.heat ?? "none");

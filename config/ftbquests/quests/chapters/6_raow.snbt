@@ -1885,6 +1885,78 @@
 				item: "astralfoods:shimmered_apple"
 			}]
 		}
+		{
+			x: 22.5d
+			y: 0.0d
+			shape: "heart"
+			subtitle: "{ftbquests.chapter.6_raow.quests64.subtitle}"
+			description: [
+				"{ftbquests.chapter.6_raow.quests64.description0}"
+				"{ftbquests.chapter.6_raow.quests64.description2}"
+				""
+				"{ftbquests.chapter.6_raow.quests64.description3}"
+				"{ftbquests.chapter.6_raow.quests64.description4}"
+				"{ftbquests.chapter.6_raow.quests64.description5}"
+				""
+				"{ftbquests.chapter.6_raow.quests64.description6}"
+			]
+			dependencies: ["17794A6A366C8497"]
+			id: "1ECEFEADF3882708"
+			tasks: [{
+				id: "4D40E53F617B6D82"
+				type: "item"
+				item: {
+					id: "astraladditions:astral_hoe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "4F3E3579590B181C"
+				type: "item"
+				item: {
+					id: "create:sand_paper"
+					Count: 1b
+					tag: {
+						RepairCost: 0
+						Damage: 0
+						display: {
+							Name: "{\"text\":\"Congratulations\"}"
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.6_raow.quests65.title}"
+			icon: "createdeco:green_decal"
+			x: 24.5d
+			y: -7.5d
+			description: [
+				"{ftbquests.chapter.6_raow.quests65.description0}"
+				""
+				"{ftbquests.chapter.6_raow.quests65.description2}"
+				""
+				"{ftbquests.chapter.6_raow.quests65.description3}"
+				""
+				"{ftbquests.chapter.6_raow.quests65.description4}"
+				""
+				"{ftbquests.chapter.6_raow.quests65.description5}"
+				""
+				"{ftbquests.chapter.6_raow.quests65.description6}"
+				"{ftbquests.chapter.6_raow.quests65.description7}"
+			]
+			hide_dependency_lines: true
+			dependencies: ["07A143B6DCF06587"]
+			id: "46B2EF238C9D324A"
+			tasks: [{
+				id: "691180CF79F09367"
+				type: "checkmark"
+				title: "{ftbquests.chapter.6_raow.quests65.tasks0.title}"
+			}]
+		}
 	]
 	quest_links: [ ]
 }

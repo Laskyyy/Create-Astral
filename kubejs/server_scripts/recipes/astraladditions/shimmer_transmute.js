@@ -69,6 +69,16 @@
         output: "minecraft:warped_wart_block",
         stack64: true,
       },
+      {
+        input: "minecraft:iron_sword",
+        output: "astraladditions:beta_iron_weapon",
+        stack64: false,
+      },
+      {
+        input: "minecraft:diamond_sword",
+        output: "astraladditions:beta_diamond_weapon",
+        stack64: false,
+      },
     ];
     shimmerTransmutationRecipes.forEach((recipe) => {
       event.custom({

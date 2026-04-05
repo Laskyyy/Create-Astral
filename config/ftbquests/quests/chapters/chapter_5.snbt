@@ -2529,6 +2529,72 @@
 				item: "createastral:aurorite_block"
 			}]
 		}
+		{
+			x: 26.0d
+			y: 0.5d
+			shape: "heart"
+			subtitle: "{ftbquests.chapter.chapter_5.quests77.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_5.quests77.description0}"
+				""
+				"{ftbquests.chapter.chapter_5.quests77.description2}"
+				"{ftbquests.chapter.chapter_5.quests77.description3}"
+			]
+			dependencies: ["08F5A89342F03D4C"]
+			size: 1.5d
+			id: "31B2DDDD9BB927F6"
+			tasks: [{
+				id: "17A2ED4993593E80"
+				type: "item"
+				item: "astraladditions:rapier"
+			}]
+			rewards: [{
+				id: "19338E10530F79E0"
+				type: "item"
+				item: "estrogen:estrogen_pill"
+				count: 3
+			}]
+		}
+		{
+			x: 14.5d
+			y: 0.0d
+			subtitle: "{ftbquests.chapter.chapter_5.quests78.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_5.quests78.description0}"
+				""
+				"{ftbquests.chapter.chapter_5.quests78.description2}"
+				""
+				"{ftbquests.chapter.chapter_5.quests78.description3}"
+				"{ftbquests.chapter.chapter_5.quests78.description4}"
+			]
+			dependencies: ["1B80AB828439B3F1"]
+			id: "111BD75F3881985A"
+			tasks: [{
+				id: "11035F51BB94E904"
+				type: "item"
+				item: {
+					id: "astraladditions:soulsteal_dagger"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "10FF169A1AABCF0E"
+				type: "item"
+				item: {
+					id: "minecraft:enchanted_book"
+					Count: 1b
+					tag: {
+						StoredEnchantments: [{
+							lvl: 1s
+							id: "mcdw:soul_siphon"
+						}]
+					}
+				}
+			}]
+		}
 	]
 	quest_links: [ ]
 }
