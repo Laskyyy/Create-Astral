@@ -910,7 +910,7 @@
   "ftbquests.chapter.6_raow.quests54.subtitle": "Bright and soggy",
   "ftbquests.chapter.6_raow.quests54.description0": "Glowdamp is the glowing gas that illuminates Shroomlight blocks.",
   "ftbquests.chapter.6_raow.quests54.description2": "It can be extracted by placing a Shroomlight block inbetween two Yttrium Blocks, and pushing the two Yttrium Blocks together using a piston. This will crush the Shroomlight inbetween, and release the gas into the air. Collect the Glowdamp gas using a Glass Bottle.",
-  "ftbquests.chapter.6_raow.quests54.description4": "The Glowdamp can then be used to create Lamps and Lazers, and will be used to fill Rifle Canisters later on.",
+  "ftbquests.chapter.6_raow.quests54.description4": "The Glowdamp can then be centrifuged to form Glowstone and Helium, and will be used to fill Rifle Canisters later on.",
   "ftbquests.chapter.6_raow.quests55.subtitle": "Light it up",
   "ftbquests.chapter.6_raow.quests55.description0": "Utilize Glowdamp to light up your world with a rainbow of new Redstone-powered lamps.",
   "ftbquests.chapter.6_raow.quests55.description2": "Use REI to see how the Lamp can be Inverted, dyed, and used to create Lazors!",
@@ -2180,7 +2180,7 @@
   "ftbquests.chapter.chapter_3.quests83.subtitle": "\"I'm old!\"",
   "ftbquests.chapter.chapter_3.quests83.description0": "Prefer 1.8 combat?",
   "ftbquests.chapter.chapter_3.quests83.description2": "These weapons are unbound by trivial things like \"cooldowns\" or \"balance\". Their only limit is the user themself.",
-  "ftbquests.chapter.chapter_3.quests83.description3": "(Btw these are just the ones made by transmuting, there are many more to be crafted)",
+  "ftbquests.chapter.chapter_3.quests83.description3": "Search \"Beta Weapon\" in REI to see all the available Beta Swords. There is one per chapter from here onwards.",
 
   "ftbquests.chapter.chapter_4.title": "3) Remnants of a Lost Civilization",
   "ftbquests.chapter.chapter_4.quests0.subtitle": "Obtain a Blaze from a lost Power Plant on the Moon!",

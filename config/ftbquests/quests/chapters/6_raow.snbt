@@ -265,7 +265,7 @@
 				}
 			}
 			x: 18.0d
-			y: -1.0d
+			y: 1.0d
 			description: ["{ftbquests.chapter.6_raow.quests4.description}"]
 			dependencies: ["3705B91C0D4EA2A0"]
 			optional: true
@@ -290,8 +290,8 @@
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests5.title}"
-			x: 19.5d
-			y: 0.75d
+			x: 18.0d
+			y: -0.75d
 			shape: "square"
 			description: ["{ftbquests.chapter.6_raow.quests5.description}"]
 			dependencies: ["4E9CF88D314F6843"]
@@ -1687,6 +1687,12 @@
 					item: "yttr:ir_lazor_emitter"
 				}
 			]
+			rewards: [{
+				id: "1A29B5BE39F28223"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1747526165463332193L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests57.title}"
@@ -1862,7 +1868,7 @@
 			}]
 		}
 		{
-			x: 16.0d
+			x: 16.5d
 			y: -3.5d
 			subtitle: "{ftbquests.chapter.6_raow.quests63.subtitle}"
 			description: ["{ftbquests.chapter.6_raow.quests63.description}"]
@@ -1886,8 +1892,9 @@
 			}]
 		}
 		{
-			x: 22.5d
+			x: 20.25d
 			y: 0.0d
+			size: 1.5d
 			shape: "heart"
 			subtitle: "{ftbquests.chapter.6_raow.quests64.subtitle}"
 			description: [
