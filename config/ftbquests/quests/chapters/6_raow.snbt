@@ -1957,6 +1957,35 @@
 				title: "{ftbquests.chapter.6_raow.quests65.tasks0.title}"
 			}]
 		}
+		{
+			x: 15.5d
+			y: -3.0d
+			subtitle: "{ftbquests.chapter.6_raow.quests66.subtitle}"
+			description: [
+				"{ftbquests.chapter.6_raow.quests66.description0}"
+				""
+				"{ftbquests.chapter.6_raow.quests66.description2}"
+				""
+				"{ftbquests.chapter.6_raow.quests66.description3}"
+				""
+				"{ftbquests.chapter.6_raow.quests66.description4}"
+				""
+				"{ftbquests.chapter.6_raow.quests66.description5}"
+			]
+			dependencies: ["7001A75C47B1DA1A"]
+			id: "4591410BA0D27646"
+			tasks: [{
+				id: "491E25E1F31A9B66"
+				type: "item"
+				item: "yttr:dsu"
+			}]
+			rewards: [{
+				id: "63B93C7A32D118F4"
+				type: "item"
+				item: "reinfchest:diamond_chest"
+				count: 2
+			}]
+		}
 	]
 	quest_links: [ ]
 }

@@ -1048,34 +1048,74 @@
 			description: [
 				"{ftbquests.chapter.chapter_4.quests28.description0}"
 				""
+				"{ftbquests.chapter.chapter_4.quests28.description2}"
 				""
 				"{ftbquests.chapter.chapter_4.quests28.description3}"
+				"{ftbquests.chapter.chapter_4.quests28.description4}"
+				""
+				"{ftbquests.chapter.chapter_4.quests28.description5}"
+				""
+				"{ftbquests.chapter.chapter_4.quests28.description6}"
+				""
+				"{ftbquests.chapter.chapter_4.quests28.description7}"
 			]
 			dependencies: ["5459F646B9A392C4"]
 			size: 1.75d
 			id: "752215E611021472"
 			tasks: [
 				{
-					id: "7EE6369103C1E25B"
+					id: "6B9E53D683756E51"
 					type: "item"
-					item: "createaddition:connector"
-					count: 2L
+					item: "astralgenerators:resolith_manipulator"
 				}
 				{
-					id: "2C15FF4A593E1B6C"
+					id: "7FA22FC1EA03D901"
 					type: "item"
-					item: "createaddition:copper_spool"
+					title: "{ftbquests.chapter.chapter_4.quests28.tasks2.title}"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "astralgenerators:iron_resolith_relay"
+									Count: 1b
+								}
+								{
+									id: "astralgenerators:electrum_resolith_relay"
+									Count: 1b
+								}
+							]
+						}
+					}
 				}
 				{
-					id: "1FE4FD6804CFFA00"
+					id: "0D7AECA112533A5B"
 					type: "item"
-					item: "createaddition:gold_spool"
+					title: "{ftbquests.chapter.chapter_4.quests28.tasks3.title}"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "astralgenerators:iron_resolith_transceiver"
+									Count: 1b
+								}
+								{
+									id: "astralgenerators:electrum_resolith_transceiver"
+									Count: 1b
+								}
+							]
+						}
+					}
 				}
 			]
 			rewards: [{
-				id: "1D210D89E1A57307"
+				id: "2282740643D475FA"
 				type: "item"
-				item: "techreborn:manual"
+				item: "astralgenerators:iron_resolith_relay"
+				count: 4
 			}]
 		}
 		{
@@ -4539,7 +4579,7 @@
 			}]
 		}
 		{
-			title: "{&dShimmer&r weaponry}"
+			title: "{ftbquests.chapter.chapter_4.quests146.title}"
 			x: -26.0d
 			y: -6.5d
 			shape: "heart"
@@ -4552,6 +4592,8 @@
 				"{ftbquests.chapter.chapter_4.quests146.description3}"
 				""
 				"{ftbquests.chapter.chapter_4.quests146.description4}"
+				""
+				"{ftbquests.chapter.chapter_4.quests146.description5}"
 			]
 			dependencies: ["33875939443A5D1C"]
 			id: "39C2E83C1343D6B1"
@@ -4582,6 +4624,17 @@
 					id: "364B99F7B58F1150"
 					type: "item"
 					item: "astraladditions:shimmerang"
+				}
+				{
+					id: "7B4A998BC6B687FE"
+					type: "item"
+					item: {
+						id: "astraladditions:shimmer_fishing_rod"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
 				}
 			]
 			rewards: [{

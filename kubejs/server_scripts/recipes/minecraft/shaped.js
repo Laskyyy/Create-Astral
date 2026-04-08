@@ -13,6 +13,15 @@
     /** @type {ShapedRecipe[]} */
     const shapedRecipes = [
       {
+        output: "astraladditions:shimmer_fishing_rod",
+        pattern: ["  D", " BT", "B T"],
+        key: {
+          D: "astraladditions:shimmer_blaze_powder",
+          B: "astraladditions:shimmer_blaze_rod",
+          T: "astraladditions:shimmering_thread",
+        },
+      },
+      {
         output: "astraladditions:parry_shield",
         pattern: ["GRG", "RBR", " G "],
         key: {
