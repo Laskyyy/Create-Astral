@@ -102,6 +102,13 @@
       .flowingTexture("tconstruct:block/fluid/molten/flowing")
       .displayName("Blast-Resistant Cement");
     event
+      .create("blast-resistant_dement")
+      .thickTexture(0xB68E78)
+      .bucketColor(0xB68E78)
+      .stillTexture("tconstruct:block/fluid/molten/still")
+      .flowingTexture("tconstruct:block/fluid/molten/flowing")
+      .displayName("Blast-Resistant Dement");
+    event
       .create("red_grape_juice")
       .thinTexture(0x864e97)
       .bucketColor(0x864e97)

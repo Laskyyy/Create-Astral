@@ -28,6 +28,12 @@
         time: 40,
         power: 2,
       },
+      {
+        input: [{ item: "createastral:desh_dust", count: 1 }],
+        output: [{ item: "ad_astra:desh_ingot", count: 1 }],
+        time: 80,
+        power: 1,
+      },
     ];
     compressorRecipes.forEach((recipe) => {
       event.custom({

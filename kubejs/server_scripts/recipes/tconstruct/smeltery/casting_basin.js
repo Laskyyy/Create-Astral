@@ -34,6 +34,11 @@
         coolingTime: 400,
       },
       {
+        fluidInput: { fluid: "kubejs:blast-resistant_dement", amount: BUCKET },
+        result: "createastral:blast-resistant_doncrete",
+        coolingTime: 400,
+      },
+      {
         fluidInput: { fluid: "tconstruct:molten_quartz", amount: GEM * 3 },
         result: "minecraft:granite",
         coolingTime: 140,
