@@ -56,10 +56,10 @@ See below for server requirements, recommendations, and troubleshooting.
 These requirements are the _minimum required_ guidelines for running a Create: Astral server.
 
 - At least 4 GB of RAM allocated to the server. Do not allocate all RAM on the machine to Minecraft, leave at least 2 GB for overhead processes if no other applications are running on the same computer. 4 GB is generally enough for 1 to 4 players, however if you have it, more RAM is beneficial for smooth exploration and loading large bases effectively.
-- Java versions 17 or 21 are required to run the server. Any other version will result in crashes. Check your Java version by running `java --version` in your terminal.
-  - If you are on Linux, you can download Java from [Eclipse Temurin](https://adoptium.net/temurin/releases/?version=21&os=any&arch=any), select Linux, and download the `.tar.gz`. Alternatively, you can install Java using your package manager, which may be easier if you are running a headless (console-only) server. This varies depending on your distribution (e.g. Ubuntu, Fedora, Arch), so it's best to look up how to install Java 21 for the distribution your server is running on.
+- Java version is required to run the server. Any other version will result in crashes. Check your Java version by running `java --version` in your terminal.
+  - If you are on Linux, you can download Java from [Eclipse Temurin](https://adoptium.net/temurin/releases/?version=17&os=any&arch=any), select Linux, and download the `.tar.gz`. Alternatively, you can install Java using your package manager, which may be easier if you are running a headless (console-only) server. This varies depending on your distribution (e.g. Ubuntu, Fedora, Arch), so it's best to look up how to install Java 17 for the distribution your server is running on.
     > You may want to consider containerised approaches to running a server to prevent Java version conflicts. Useful softwares for this are [Pterodactyl](https://pterodactyl.io) and [Pelican](https://pelican.dev) server managers, which are free, however require a degree of technical knowledge to run successfully.
-  - If you are on Windows or macOS, you can download Java version 21 from [Eclipse Temurin](https://adoptium.net/temurin/releases/?version=21&os=any&arch=any), just select your platform, choose the JRE version, and download the `.msi` for Windows or the `.pkg` for macOS.
+  - If you are on Windows or macOS, you can download Java version 17 from [Eclipse Temurin](https://adoptium.net/temurin/releases/?version=17&os=any&arch=any), just select your platform, choose the JRE version, and download the `.msi` for Windows or the `.pkg` for macOS.
 
 ## SERVER RECOMMENDATIONS
 
@@ -97,7 +97,7 @@ If none of these solutions work for you, please join the Discord server and post
 >
 > SOLUTION:
 >
-> - Check your Java version with `java --version`. If it doesn't read 17 or 21, refer back to the [SERVER REQUIREMENTS](#server-requirements) section of this document.
+> - Check your Java version with `java --version`. If it doesn't read 17, refer back to the [SERVER REQUIREMENTS](#server-requirements) section of this document.
 
 ---
 
