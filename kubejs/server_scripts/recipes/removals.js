@@ -628,6 +628,7 @@
       { output: "buildinggadgets:gadget_copy_paste" },
       { output: "buildinggadgets:gadget_destruction" },
       { output: "buildinggadgets:gadget_exchanging" },
+      { output: "astraladditions:parry_shield" },
       // Yttr
       { type: "yttr:centrifuging", input: "minecraft:coal" },
       { output: "yttr:chute" },

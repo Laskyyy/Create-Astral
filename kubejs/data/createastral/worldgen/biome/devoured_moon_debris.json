@@ -28,10 +28,16 @@
       	"maxCount": 2
       },
       {
-      	"type": "astraladditions:hemogiant",
-      	"weight": 3,
-      	"minCount": 1,
-      	"maxCount": 1
+        "type": "astraladditions:hemogiant",
+        "weight": 3,
+        "minCount": 1,
+        "maxCount": 1
+      },
+      {
+        "type": "astraladditions:blackhole",
+        "weight": 2,
+        "minCount": 1,
+        "maxCount": 2
       }
     ]
   },

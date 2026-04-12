@@ -3219,6 +3219,85 @@
 				table_id: 5253492355592689915L
 			}]
 		}
+		{
+			x: 3.5d
+			y: -1.5d
+			shape: "heart"
+			subtitle: "{ftbquests.chapter.chapter_3.quests82.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_3.quests82.description0}"
+				""
+				"{ftbquests.chapter.chapter_3.quests82.description2}"
+				"{ftbquests.chapter.chapter_3.quests82.description3}"
+				""
+				"{ftbquests.chapter.chapter_3.quests82.description4}"
+			]
+			dependencies: ["0F4C452C9C9AB1B8"]
+			id: "564271DCFE01B695"
+			tasks: [{
+				id: "157A6BF25140B459"
+				type: "item"
+				item: "astraladditions:parry_shield"
+			}]
+			rewards: [{
+				id: "3BB76FF2FC966AA3"
+				type: "item"
+				item: "create:polished_rose_quartz"
+				count: 4
+			}]
+		}
+		{
+			title: "Beta Swords"
+			x: 6.5d
+			y: -6.0d
+			subtitle: "\"I'm old!\""
+			description: [
+				"{ftbquests.chapter.chapter_3.quests83.description0}"
+				""
+				"{ftbquests.chapter.chapter_3.quests83.description2}"
+				""
+				"{ftbquests.chapter.chapter_3.quests83.description3}"
+			]
+			hide_dependency_lines: true
+			dependencies: ["00F3EA4A8FB5B11B"]
+			min_required_tasks: 1
+			id: "76D995DCE0C69051"
+			tasks: [
+				{
+					id: "031CA3E2D4D0518B"
+					type: "item"
+					item: {
+						id: "astraladditions:beta_iron_weapon"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4194209321A44F71"
+					type: "item"
+					item: {
+						id: "astraladditions:beta_diamond_weapon"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "50F3096EC938AC6F"
+				type: "item"
+				item: {
+					id: "mcdw:hammer_great_hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
 	]
 	quest_links: [ ]
 }

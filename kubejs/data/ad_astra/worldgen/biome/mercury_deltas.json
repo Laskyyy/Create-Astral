@@ -22,24 +22,30 @@
         "maxCount": 4
       },
       {
-      	"type": "astraladditions:whast",
-      	"weight": 30,
-      	"minCount": 1,
-      	"maxCount": 1
+        "type": "astraladditions:whast",
+        "weight": 30,
+        "minCount": 1,
+        "maxCount": 1
       },
       {
-      	"type": "astraladditions:glazer",
-      	"weight": 70,
-      	"minCount": 1,
-      	"maxCount": 2
+        "type": "astraladditions:glazer",
+        "weight": 70,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "type": "astraladditions:blackhole",
+        "weight": 70,
+        "minCount": 1,
+        "maxCount": 2
       }
     ],
     "creature": [
       {
-	"type": "minecraft:strider",
-	"weight": 40,
-	"minCount": 1,
-	"maxCount": 2
+        "type": "minecraft:strider",
+        "weight": 40,
+        "minCount": 1,
+        "maxCount": 2
       }
     ]
   },
@@ -55,14 +61,14 @@
     "astraladditions:whast": {
       "energy_budget": 0.015,
       "charge": 0.4
+    },
+    "astraladditions:blackhole": {
+      "energy_budget": 0.015,
+      "charge": 0.4
     }
   },
   "carvers": {
-    "air": [
-      "minecraft:cave",
-      "minecraft:cave_extra_underground",
-      "minecraft:canyon"
-    ]
+    "air": ["minecraft:cave", "minecraft:cave_extra_underground", "minecraft:canyon"]
   },
   "features": [
     [

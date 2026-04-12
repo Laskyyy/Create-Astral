@@ -1914,6 +1914,29 @@
 				table_id: 5687404501397719867L
 			}]
 		}
+		{
+			x: -4.0d
+			y: -4.0d
+			subtitle: "{ftbquests.chapter.chapter_2.quests56.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_2.quests56.description0}"
+				""
+				"{ftbquests.chapter.chapter_2.quests56.description2}"
+			]
+			dependencies: ["605ECFFA4F1C2736"]
+			id: "2AACC0E857845C53"
+			tasks: [{
+				id: "5A4FC1DFCA135BCC"
+				type: "item"
+				item: "astraladditions:diamond_boomer"
+			}]
+			rewards: [{
+				id: "2E18FC5D3CA2056F"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5687404501397719867L
+			}]
+		}
 	]
 	quest_links: [ ]
 }

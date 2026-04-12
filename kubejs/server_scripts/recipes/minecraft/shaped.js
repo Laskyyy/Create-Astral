@@ -13,15 +13,81 @@
     /** @type {ShapedRecipe[]} */
     const shapedRecipes = [
       {
+        output: "astraladditions:shimmer_fishing_rod",
+        pattern: ["  D", " BT", "B T"],
+        key: {
+          D: "astraladditions:shimmer_blaze_powder",
+          B: "astraladditions:shimmer_blaze_rod",
+          T: "astraladditions:shimmering_thread",
+        },
+      },
+      {
+        output: "astraladditions:parry_shield",
+        pattern: ["GRG", "RBR", " G "],
+        key: {
+          G: "minecraft:gold_ingot",
+          R: "minecraft:red_dye",
+          B: "tconstruct:rose_gold_block",
+        },
+      },
+      {
+        output: "astraladditions:beta_ender_weapon",
+        pattern: ["I", "I", "S"],
+        key: {
+          S: "minecraft:stick",
+          I: "createastral:ender_plating",
+        },
+      },
+      {
+        output: "astraladditions:beta_calorite_weapon",
+        pattern: ["I", "I", "S"],
+        key: {
+          S: "minecraft:stick",
+          I: "ad_astra:calorite_ingot",
+        },
+      },
+      {
+        output: "astraladditions:beta_ostrum_weapon",
+        pattern: ["I", "I", "S"],
+        key: {
+          S: "minecraft:stick",
+          I: "ad_astra:ostrum_ingot",
+        },
+      },
+      {
+        output: "astraladditions:beta_desh_weapon",
+        pattern: ["I", "I", "S"],
+        key: {
+          S: "minecraft:stick",
+          I: "ad_astra:desh_ingot",
+        },
+      },
+      {
+        output: "astraladditions:diamond_boomer",
+        pattern: [" D ", "S S"],
+        key: {
+          D: "minecraft:diamond",
+          S: "createastral:sturdy_sheet_block",
+        },
+      },
+      {
+        output: "astraladditions:shimmerang",
+        pattern: [" P ", "I I"],
+        key: {
+          P: "astraladditions:shimmer_blaze_powder",
+          I: "astraladditions:shimmer_blaze_rod",
+        },
+      },
+      {
         output: Item.of("custommachinery:custom_machine_item", { machine: "astralfoods:blender" }),
         pattern: [" S ", "RGW", "SPS"],
         key: {
-			S: "ad_astra:steel_plate",
-			G: "minecraft:glass",
-			R: "phonos:redstone_chip",
-			W: "createaddition:gold_spool",
-			P: "create:propeller"
-		},
+          S: "ad_astra:steel_plate",
+          G: "minecraft:glass",
+          R: "phonos:redstone_chip",
+          W: "createaddition:gold_spool",
+          P: "create:propeller",
+        },
       },
       {
         output: "createastral:andesite_alloy_block",
