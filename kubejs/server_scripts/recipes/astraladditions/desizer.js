@@ -135,6 +135,10 @@
         input: { item: "minecraft:coal_block" },
         output: { item: "minecraft:diamond_block" },
       },
+      {
+        input: { item: "minecraft:netherrack" },
+        output: { item: "minecraft:glowstone" },
+      },
     ];
     desizer27Recipes.forEach((recipe) => {
       event.custom({
