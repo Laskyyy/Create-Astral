@@ -373,6 +373,18 @@
         .build();
 
       createSequencedAssembly(event, {
+        input: "createastral:steel_casing",
+        transitional: "createastral:incomplete_brass_casing",
+        outputs: ["create:brass_casing"],
+      })
+        .addDeployingStep("createaddition:brass_rod")
+        .addFillingStep({ fluid: "tconstruct:molten_brass", amount: NUGGET })
+        .addDeployingStep("create:brass_sheet")
+        .addPressingStep()
+        .loops(3)
+        .build();
+
+      createSequencedAssembly(event, {
         input: "create:copper_casing",
         transitional: "createastral:incomplete_brass_casing",
         outputs: ["create:brass_casing"],
@@ -522,6 +534,17 @@
         .loops(3)
         .build();
 
+	  createSequencedAssembly(event, {
+        input: "createastral:steel_casing",
+        transitional: "createastral:incomplete_basic_machine_frame",
+        outputs: ["techreborn:basic_machine_frame"],
+      })
+        .addFillingStep({ fluid: "tconstruct:molten_silver", amount: INGOT })
+        .addDeployingStep("techreborn:rubber")
+        .addPressingStep()
+        .loops(4)
+        .build();
+
       createSequencedAssembly(event, {
         input: "create:copper_casing",
         transitional: "createastral:incomplete_basic_machine_frame",
@@ -530,17 +553,6 @@
         .addFillingStep({ fluid: "tconstruct:molten_silver", amount: INGOT })
         .addDeployingStep("techreborn:rubber")
         .addPressingStep() //yeah!
-        .loops(4)
-        .build();
-		
-	  createSequencedAssembly(event, {
-        input: "astralgenerators:steel_frame",
-        transitional: "createastral:incomplete_basic_machine_frame",
-        outputs: ["techreborn:basic_machine_frame"],
-      })
-        .addFillingStep({ fluid: "tconstruct:molten_silver", amount: INGOT })
-        .addDeployingStep("techreborn:rubber")
-        .addPressingStep()
         .loops(4)
         .build();
     }

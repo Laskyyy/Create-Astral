@@ -29,6 +29,7 @@
     event.create("createastral:uranium_residue").rarity("uncommon");
     event.create("createastral:navigation_mechanism");
     event.create("createastral:living_mechanism");
+    event.create("createastral:sputum_bottle");
     event.create("createastral:coin", "create:sequenced_assembly").displayName("Golden Coin");
     event.create("createastral:golden_bowl").displayName("Golden Bowl");
     event
