@@ -373,19 +373,7 @@
         .build();
 
       createSequencedAssembly(event, {
-        input: "createastral:steel_casing",
-        transitional: "createastral:incomplete_brass_casing",
-        outputs: ["create:brass_casing"],
-      })
-        .addDeployingStep("createaddition:brass_rod")
-        .addFillingStep({ fluid: "tconstruct:molten_brass", amount: NUGGET })
-        .addDeployingStep("create:brass_sheet")
-        .addPressingStep()
-        .loops(3)
-        .build();
-
-      createSequencedAssembly(event, {
-        input: "create:copper_casing",
+        input: "#createastral:copper_steel_casings",
         transitional: "createastral:incomplete_brass_casing",
         outputs: ["create:brass_casing"],
       })
@@ -535,7 +523,7 @@
         .build();
 
 	  createSequencedAssembly(event, {
-        input: "createastral:steel_casing",
+        input: "#createastral:copper_steel_casings",
         transitional: "createastral:incomplete_basic_machine_frame",
         outputs: ["techreborn:basic_machine_frame"],
       })
@@ -546,7 +534,7 @@
         .build();
 
       createSequencedAssembly(event, {
-        input: "create:copper_casing",
+        input: "",
         transitional: "createastral:incomplete_basic_machine_frame",
         outputs: ["techreborn:basic_machine_frame"],
       })
@@ -554,6 +542,15 @@
         .addDeployingStep("techreborn:rubber")
         .addPressingStep() //yeah!
         .loops(4)
+        .build();
+
+      createSequencedAssembly(event, {
+        input: "minecraft:dragon_breath",
+        transitional: "minecraft:dragon_breath",
+        outputs: ["createastral:sputum_bottle"],
+      })
+        .addFillingStep({ fluid: "tconstruct:ender_slime", amount: BUCKET/3 })
+        .addFillingStep({ fluid: "yttr:void", amount: BUCKET/3 })
         .build();
     }
     /** @param {Internal.RecipeEventJS} event */

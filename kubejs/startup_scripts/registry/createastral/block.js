@@ -8,7 +8,7 @@
       .displayName("Sturdy Sheet Block");
     event
       .create("createastral:steel_casing")
-      .material("lantern")
+      .material("stone")
       .hardness(12)
       .tagBlock("minecraft:mineable/pickaxe")
       .displayName("Steel Casing");
@@ -195,6 +195,7 @@
     event
       .create("createastral:voidtouched_compound", "basic")
       .hardness(4)
+      .resistance(1200)
       .tagBlock("minecraft:mineable/pickaxe")
       .displayName("Voidtouched Compound");
     event
