@@ -14,20 +14,20 @@
     /** @type {ItemSmashingRecipe[]} */
     const itemSmashingRecipes = [
       {
-        input: { "block": "createastral:voidtouched_compound" },
-        catalysts: { "block": "createastral:steel_casing" },
+        input: { "block": "compressor:triple_compressed_deepslate" },
+        catalysts: { "block": "astraladditions:steel_casing" },
         output: { "item": "yttr:bedrock_shard" }
       },
       {
         input: { "block": "minecraft:horn_coral_block" },
-        catalysts: { "block": "createastral:steel_casing" },
+        catalysts: { "block": "astraladditions:steel_casing" },
         output: { "item": "techreborn:sponge_piece" }
       }
     ];
     /** @type {ItemSmashingRecipe[]} */
 	const cloudSmashingRecipes = [
       {
-        input: { "block": "minecraft:crying_obsidian" },
+        input: { "block": "astraladditions:mourning_obsidian" },
 		catalysts: { "block": "astraladditions:desizer_base" },
         cloudcolor: "#FF00FF",
 		cloudsize: 1,
@@ -37,7 +37,7 @@
       {
         input: { "block": "minecraft:honey_block" },
         catalysts: { "block": "minecraft:honeycomb_block" },
-        cloudcolor: "#FF00FF",
+        cloudcolor: "#DFB240",
         cloudsize: 1,
         cloudoutput: { "item": "minecraft:honey_bottle" },
         cloudeffects: [ { "effect": "minecraft:absorption", "duration": 8000 } ]
@@ -45,7 +45,7 @@
       {
         input: { "block": "minecraft:amethyst_block" },
         catalysts: { "block": "ae2:fluix_block" },
-        cloudcolor: "#FF00FF",
+        cloudcolor: "#AA00AA",
         cloudsize: 1,
         cloudoutput: { "item": "astraladditions:shimmer_bottle" },
         cloudeffects: [ { "effect": "minecraft:glowing", "duration": 100 } ]
@@ -53,7 +53,7 @@
       {
         input: { "block": "minecraft:amethyst_cluster" },
         catalysts: { "block": "ae2:fluix_block" },
-        cloudcolor: "#FF00FF",
+        cloudcolor: "#AA00AA",
         cloudsize: 2,
         cloudoutput: { "item": "astraladditions:shimmer_bottle" },
         cloudeffects: [ { "effect": "minecraft:glowing", "duration": 150 } ]

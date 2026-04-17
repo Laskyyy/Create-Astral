@@ -2,6 +2,6 @@
   "replace": false,
   "values": [
     "create:copper_casing",
-    "createastral:steel_casing"
+    "astraladditions:steel_casing"
   ]
 }

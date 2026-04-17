@@ -7,12 +7,6 @@
       .tagBlock("minecraft:mineable/pickaxe")
       .displayName("Sturdy Sheet Block");
     event
-      .create("createastral:steel_casing")
-      .material("stone")
-      .hardness(12)
-      .tagBlock("minecraft:mineable/pickaxe")
-      .displayName("Steel Casing");
-    event
       .create("createastral:shimmering_stone")
       .material("stone")
       .hardness(20)

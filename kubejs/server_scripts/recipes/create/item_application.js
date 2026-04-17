@@ -15,7 +15,7 @@
         appliedItem: { tag: "c:plates/obsidian" },
       },
       {
-        output: { item: "createastral:steel_casing" },
+        output: { item: "astraladditions:steel_casing" },
         appliedTo: { item: "dbe:steel_plating" },
         appliedItem: { item: "ad_astra:steel_plate" },
       },
