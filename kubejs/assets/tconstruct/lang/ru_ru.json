@@ -13,14 +13,14 @@
     "material.tconstruct.ostrum.encyclopedia": "Даёт дополнительные 15% прочности за каждую деталь.",
 
     "material.tconstruct.calorite": "Калорит",
-    "material.tconstruct.calorite.flavor": " Самый острый металл в этих землях.",
+    "material.tconstruct.calorite.flavor": "Острейший металл в этих землях.",
     "material.tconstruct.calorite.encyclopedia": "Даёт +0.75 к урону за каждую деталь.",
 
     "material.tconstruct.shadow": "Тень",
     "material.tconstruct.shadow.flavor": "Плотный, словно тёмная материя.",
     "material.tconstruct.shadow.encyclopedia": "Даёт +19% к прочности, +4% к урону и общей скорости, а также +0.5 к скорости копания блоков, не требующих инструментов (за каждую деталь).",
 
-    "material.tconstruct.radiant": "Лучистый сплав",
+    "material.tconstruct.radiant": "Сияние",
     "material.tconstruct.radiant.flavor": "Сила самого света.",
     "material.tconstruct.radiant.encyclopedia": "Даёт +8 к скорости копания руд и 1 дополнительный слот улучшений за каждую деталь. Инструмент светится и может размещать источники света.",
 
