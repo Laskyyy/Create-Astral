@@ -12,7 +12,7 @@
     /** @type {CastingBasinRecipe[]} */
     const castingBasinRecipes = [
 	  {
-        fluidInput: { fluid: "yttr:void", amount: INGOT * 1 },
+        fluidInput: { fluid: "yttr:void", amount: BUCKET / 9 },
         result: "astraladditions:mourning_obsidian",
         coolingTime: 180,
         cast: { item: "minecraft:crying_obsidian", consumed: true },
