@@ -96,6 +96,10 @@
     "techreborn:rolling_machine": "Упаковщик",
     "block.techreborn.assembly_machine": "Распаковщик",
     "techreborn:assembling_machine": "Распаковщик",
+    "block.techreborn.iron_alloy_furnace": "Печь для сплавов",
+    "techreborn:iron_alloy_furnace": "Печь для сплавов",
+    "block.techreborn.alloy_smelter": "Электропечь для сплавов",
+    "techreborn:alloy_smelter": "Печь для сплавов",
 
     "techreborn.message.info.block.techreborn.rolling_machine": "Быстро упаковывает рецепты 3x3 и 2x2",
     "techreborn.message.info.block.techreborn.assembly_machine": "Распаковывает спрессованные материалы",

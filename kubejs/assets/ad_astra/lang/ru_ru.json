@@ -22,5 +22,7 @@
   "item.ad_astra.desh_plate": "Лист деша",
   "item.ad_astra.ostrum_plate": "Лист острума",
   "item.ad_astra.calorite_plate": "Лист калорита",
-  "block.ad_astra.calorite_block": "Блок калорита"
+  "block.ad_astra.calorite_block": "Блок калорита",
+  "gui.ad_astra.text.proxima_centauri": "Иное измерение",
+  "gui.ad_astra.text.solar_system": "Измерение"
 }
