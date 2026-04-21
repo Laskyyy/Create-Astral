@@ -534,19 +534,8 @@
         .build();
 
       createSequencedAssembly(event, {
-        input: "",
-        transitional: "createastral:incomplete_basic_machine_frame",
-        outputs: ["techreborn:basic_machine_frame"],
-      })
-        .addFillingStep({ fluid: "tconstruct:molten_silver", amount: INGOT })
-        .addDeployingStep("techreborn:rubber")
-        .addPressingStep() //yeah!
-        .loops(4)
-        .build();
-
-      createSequencedAssembly(event, {
         input: "minecraft:dragon_breath",
-        transitional: "minecraft:dragon_breath",
+      transitional: "createastral:dragons_sputum",
         outputs: ["createastral:sputum_bottle"],
       })
         .addFillingStep({ fluid: "tconstruct:ender_slime", amount: BUCKET/3 })

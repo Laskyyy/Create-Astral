@@ -50,6 +50,7 @@
     event.create("createastral:protopork", "create:sequenced_assembly");
     event.create("createastral:protorabbit", "create:sequenced_assembly");
     event.create("createastral:protoegg", "create:sequenced_assembly");
+    event.create("createastral:dragons_sputum", "create:sequenced_assembly");
     event.create("createastral:quadrocopter_blueprint").texture("create:item/schematic");
     event.create("createastral:gyrodyne_blueprint").texture("create:item/schematic");
     event.create("createastral:biplane_blueprint").texture("create:item/schematic");
