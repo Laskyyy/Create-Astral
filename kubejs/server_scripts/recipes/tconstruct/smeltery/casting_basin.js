@@ -12,6 +12,12 @@
     /** @type {CastingBasinRecipe[]} */
     const castingBasinRecipes = [
 	  {
+        fluidInput: { fluid: "yttr:void", amount: BUCKET / 9 },
+        result: "astraladditions:mourning_obsidian",
+        coolingTime: 180,
+        cast: { item: "minecraft:crying_obsidian", consumed: true },
+      },
+      {
         fluidInput: { fluid: "tconstruct:molten_steel", amount: INGOT * 8 },
         result: "createbigcannons:unbored_steel_screw_breech",
         coolingTime: 180,

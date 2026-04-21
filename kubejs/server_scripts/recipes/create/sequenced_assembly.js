@@ -373,7 +373,7 @@
         .build();
 
       createSequencedAssembly(event, {
-        input: "create:copper_casing",
+        input: "#createastral:copper_steel_casings",
         transitional: "createastral:incomplete_brass_casing",
         outputs: ["create:brass_casing"],
       })
@@ -522,19 +522,8 @@
         .loops(3)
         .build();
 
-      createSequencedAssembly(event, {
-        input: "create:copper_casing",
-        transitional: "createastral:incomplete_basic_machine_frame",
-        outputs: ["techreborn:basic_machine_frame"],
-      })
-        .addFillingStep({ fluid: "tconstruct:molten_silver", amount: INGOT })
-        .addDeployingStep("techreborn:rubber")
-        .addPressingStep() //yeah!
-        .loops(4)
-        .build();
-		
 	  createSequencedAssembly(event, {
-        input: "astralgenerators:steel_frame",
+        input: "#createastral:copper_steel_casings",
         transitional: "createastral:incomplete_basic_machine_frame",
         outputs: ["techreborn:basic_machine_frame"],
       })
@@ -542,6 +531,15 @@
         .addDeployingStep("techreborn:rubber")
         .addPressingStep()
         .loops(4)
+        .build();
+
+      createSequencedAssembly(event, {
+        input: "minecraft:dragon_breath",
+      transitional: "createastral:dragons_sputum",
+        outputs: ["createastral:sputum_bottle"],
+      })
+        .addFillingStep({ fluid: "tconstruct:ender_slime", amount: BUCKET/3 })
+        .addFillingStep({ fluid: "yttr:void", amount: BUCKET/3 })
         .build();
     }
     /** @param {Internal.RecipeEventJS} event */

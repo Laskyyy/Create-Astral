@@ -386,6 +386,7 @@
   "block.astralfoods.blender": "Blender",
 
   "block.createastral.sturdy_sheet_block": "Sturdy Sheet Block",
+  "block.createastral.sputum_bottle": "Sputum Bottle",
   "block.createastral.shimmering_stone": "Shimmering Stone",
   "block.createastral.monazite_crystal": "Monazite Crystal",
   "block.createastral.ancient_stone": "Ancient Stone",
@@ -551,6 +552,8 @@
   "item.minecraft.tipped_arrow.effect.luck": "Bullet of Luck",
   "item.minecraft.tipped_arrow.effect.turtle_master": "Bullet of the Turtle Master",
   "item.minecraft.tipped_arrow.effect.slow_falling": "Bullet of Slow Falling",
+
+  "item.tconstruct.ender_slime_grass_seeds": "Ender Slimy Seeds",
 
   "comment_5": "ftbquests",
 
