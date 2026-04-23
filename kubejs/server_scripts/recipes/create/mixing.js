@@ -15,6 +15,15 @@
     /** @type {MixingRecipe[]} */
     const mixingRecipes = [
       {
+        output: [{ fluid: "techreborn:sulfuric_acid", amount: BUCKET }],
+        input: [
+          "techreborn:sulfur_dust",
+          { fluid: "minecraft:water", amount: 500 * mB },
+          { fluid: "ad_astra:oxygen", amount: BUCKET },
+        ],
+        time: 300,
+      },
+      {
         output: [{ fluid: "estrogen:molten_amethyst", amount: INGOT / 2 }],
         input: [{ fluid: "tconstruct:molten_amethyst", amount: 500 * mB }, "astraladditions:bulba_root"],
         time: 105,
@@ -23,6 +32,11 @@
         output: ["create:tree_fertilizer"],
         input: ["#minecraft:saplings", "#c:coral_fans", "minecraft:bone_meal"],
         time: 180,
+      },
+      {
+        output: ["minecraft:mycelium"],
+        input: ["#minecraft:dirt", "ad_astra:cheese"],
+        time: 100,
       },
       {
         output: [{ fluid: "kubejs:shimmer", amount: BUCKET / 9 }],
@@ -354,7 +368,7 @@
         input: [
           "#c:concrete_powder",
           Item.of("createastral:lime", 2),
-          Item.of("techreborn:steel_dust", 3),
+          Item.of("techreborn:steel_dust", 2),
           { fluid: "minecraft:water", amount: BUCKET },
         ],
         heat: "heated",
@@ -420,7 +434,7 @@
         time: 100,
       },
       {
-        output: Fluid.of("techreborn:silicon", mB * 400),
+        output: Fluid.of("techreborn:silicon", BUCKET),
         input: ["ae2:certus_quartz_crystal"],
         heat: "superheated",
         time: 200,
@@ -1396,26 +1410,27 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:6s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:5s}]}'),
-          "create:experience_block",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 500 * mB },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:7s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:6s}]}'),
-          "create:experience_block",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      //Commented out every enchantment that exceeds vanilla since anvils don't let you do that anyways. To be fixed
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:6s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:5s}]}'),
+      //     "create:experience_block",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 500 * mB },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:7s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sharpness",lvl:6s}]}'),
+      //     "create:experience_block",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:2s}]}'),
         input: [
@@ -1434,25 +1449,25 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:4s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:3s}]}'),
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:5s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:4s}]}'),
-          "createastral:experience_ingot",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:4s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:3s}]}'),
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:5s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:unbreaking",lvl:4s}]}'),
+      //     "createastral:experience_ingot",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:2s}]}'),
         input: [
@@ -1480,36 +1495,36 @@
         ],
         heat: "heated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:5s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:4s}]}'),
-          "createastral:experience_ingot",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:shimmer", amount: BUCKET },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:6s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:5s}]}'),
-          "create:experience_block",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 500 * mB },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:7s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:6s}]}'),
-          "create:experience_block",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:5s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:4s}]}'),
+      //     "createastral:experience_ingot",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:shimmer", amount: BUCKET },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:6s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:5s}]}'),
+      //     "create:experience_block",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 500 * mB },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:7s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:protection",lvl:6s}]}'),
+      //     "create:experience_block",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:2s}]}'),
         input: [
@@ -1537,26 +1552,26 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:5s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:4s}]}'),
-          "createastral:experience_ingot",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:6s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:5s}]}'),
-          "create:experience_block",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 500 * mB },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:5s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:4s}]}'),
+      //     "createastral:experience_ingot",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:6s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_protection",lvl:5s}]}'),
+      //     "create:experience_block",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 500 * mB },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:2s}]}'),
         input: [
@@ -1584,30 +1599,30 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:5s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:4s}]}'),
-          "createastral:experience_ingot",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:6s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:5s}]}'),
-          "create:experience_block",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 500 * mB },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:5s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:4s}]}'),
+      //     "createastral:experience_ingot",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:6s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:blast_protection",lvl:5s}]}'),
+      //     "create:experience_block",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 500 * mB },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of(
           "minecraft:enchanted_book",
-          '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:2s}]}'
+          '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:2s}]}',
         ),
         input: [
           Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:1s}]}'),
@@ -1619,7 +1634,7 @@
       {
         output: Item.of(
           "minecraft:enchanted_book",
-          '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:3s}]}'
+          '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:3s}]}',
         ),
         input: [
           Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:2s}]}'),
@@ -1631,7 +1646,7 @@
       {
         output: Item.of(
           "minecraft:enchanted_book",
-          '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:4s}]}'
+          '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:4s}]}',
         ),
         input: [
           Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:3s}]}'),
@@ -1640,32 +1655,32 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of(
-          "minecraft:enchanted_book",
-          '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:5s}]}'
-        ),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:4s}]}'),
-          "createastral:experience_ingot",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of(
-          "minecraft:enchanted_book",
-          '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:6s}]}'
-        ),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:5s}]}'),
-          "create:experience_block",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 500 * mB },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of(
+      //     "minecraft:enchanted_book",
+      //     '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:5s}]}'
+      //   ),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:4s}]}'),
+      //     "createastral:experience_ingot",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of(
+      //     "minecraft:enchanted_book",
+      //     '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:6s}]}'
+      //   ),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:projectile_protection",lvl:5s}]}'),
+      //     "create:experience_block",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 500 * mB },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:thorns",lvl:2s}]}'),
         input: [
@@ -1684,25 +1699,25 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:thorns",lvl:4s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:thorns",lvl:3s}]}'),
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:thorns",lvl:5s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:thorns",lvl:4s}]}'),
-          "createastral:experience_ingot",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:thorns",lvl:4s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:thorns",lvl:3s}]}'),
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:thorns",lvl:5s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:thorns",lvl:4s}]}'),
+      //     "createastral:experience_ingot",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:2s}]}'),
         input: [
@@ -1721,25 +1736,25 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:4s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:3s}]}'),
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:5s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:4s}]}'),
-          "createastral:experience_ingot",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:4s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:3s}]}'),
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:5s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:sweeping",lvl:4s}]}'),
+      //     "createastral:experience_ingot",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:2s}]}'),
         input: [
@@ -1758,25 +1773,25 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:4s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:3s}]}'),
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:5s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:4s}]}'),
-          "createastral:experience_ingot",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:4s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:3s}]}'),
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:5s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:soul_speed",lvl:4s}]}'),
+      //     "createastral:experience_ingot",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:2s}]}'),
         input: [
@@ -1814,26 +1829,26 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:6s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:5s}]}'),
-          "create:experience_block",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 500 * mB },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:7s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:6s}]}'),
-          "create:experience_block",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:6s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:5s}]}'),
+      //     "create:experience_block",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 500 * mB },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:7s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:smite",lvl:6s}]}'),
+      //     "create:experience_block",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:respiration",lvl:2s}]}'),
         input: [
@@ -1852,25 +1867,25 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:respiration",lvl:4s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:respiration",lvl:3s}]}'),
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:respiration",lvl:5s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:respiration",lvl:4s}]}'),
-          "createastral:experience_ingot",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:respiration",lvl:4s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:respiration",lvl:3s}]}'),
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:respiration",lvl:5s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:respiration",lvl:4s}]}'),
+      //     "createastral:experience_ingot",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:2s}]}'),
         input: [
@@ -1889,25 +1904,25 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:4s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:3s}]}'),
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:5s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:4s}]}'),
-          "createastral:experience_ingot",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:4s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:3s}]}'),
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:5s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:quick_charge",lvl:4s}]}'),
+      //     "createastral:experience_ingot",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:punch",lvl:2s}]}'),
         input: [
@@ -1917,24 +1932,24 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:punch",lvl:3s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:punch",lvl:2s}]}'),
-          { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:punch",lvl:4s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:punch",lvl:3s}]}'),
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:punch",lvl:3s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:punch",lvl:2s}]}'),
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:punch",lvl:4s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:punch",lvl:3s}]}'),
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:2s}]}'),
         input: [
@@ -1972,26 +1987,26 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:6s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:5s}]}'),
-          "create:experience_block",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 500 * mB },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:7s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:6s}]}'),
-          "create:experience_block",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:6s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:5s}]}'),
+      //     "create:experience_block",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 500 * mB },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:7s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:power",lvl:6s}]}'),
+      //     "create:experience_block",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:2s}]}'),
         input: [
@@ -2010,25 +2025,25 @@
         ],
         heat: "heated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:4s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:3s}]}'),
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:shimmer", amount: BUCKET },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:5s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:4s}]}'),
-          "createastral:experience_ingot",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:4s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:3s}]}'),
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:shimmer", amount: BUCKET },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:5s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:4s}]}'),
+      //     "createastral:experience_ingot",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:piercing",lvl:6s}]}'),
         input: [
@@ -2057,25 +2072,25 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:looting",lvl:4s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:looting",lvl:3s}]}'),
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:looting",lvl:5s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:looting",lvl:4s}]}'),
-          "createastral:experience_ingot",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:looting",lvl:4s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:looting",lvl:3s}]}'),
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:looting",lvl:5s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:looting",lvl:4s}]}'),
+      //     "createastral:experience_ingot",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:knockback",lvl:2s}]}'),
         input: [
@@ -2085,24 +2100,24 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:knockback",lvl:3s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:knockback",lvl:2s}]}'),
-          { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:knockback",lvl:4s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:knockback",lvl:3s}]}'),
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:knockback",lvl:3s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:knockback",lvl:2s}]}'),
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:knockback",lvl:4s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:knockback",lvl:3s}]}'),
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:frost_walker",lvl:2s}]}'),
         input: [
@@ -2112,23 +2127,23 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:frost_walker",lvl:3s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:frost_walker",lvl:2s}]}'),
-          { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:frost_walker",lvl:4s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:frost_walker",lvl:3s}]}'),
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:frost_walker",lvl:3s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:frost_walker",lvl:2s}]}'),
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:frost_walker",lvl:4s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:frost_walker",lvl:3s}]}'),
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fortune",lvl:2s}]}'),
         input: [
@@ -2147,25 +2162,25 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fortune",lvl:4s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fortune",lvl:3s}]}'),
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fortune",lvl:5s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fortune",lvl:4s}]}'),
-          "createastral:experience_ingot",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fortune",lvl:4s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fortune",lvl:3s}]}'),
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fortune",lvl:5s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fortune",lvl:4s}]}'),
+      //     "createastral:experience_ingot",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_aspect",lvl:2s}]}'),
         input: [
@@ -2175,24 +2190,24 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_aspect",lvl:3s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_aspect",lvl:2s}]}'),
-          { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_aspect",lvl:4s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_aspect",lvl:3s}]}'),
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_aspect",lvl:3s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_aspect",lvl:2s}]}'),
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_aspect",lvl:4s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:fire_aspect",lvl:3s}]}'),
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:2s}]}'),
         input: [
@@ -2220,26 +2235,26 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:5s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:4s}]}'),
-          "createastral:experience_ingot",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:6s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:5s}]}'),
-          "create:experience_block",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 500 * mB },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:5s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:4s}]}'),
+      //     "createastral:experience_ingot",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:6s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:feather_falling",lvl:5s}]}'),
+      //     "create:experience_block",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 500 * mB },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:2s}]}'),
         input: [
@@ -2277,26 +2292,26 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:6s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:5s}]}'),
-          "create:experience_block",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 500 * mB },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:7s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:6s}]}'),
-          "create:experience_block",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:6s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:5s}]}'),
+      //     "create:experience_block",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 500 * mB },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:7s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:efficiency",lvl:6s}]}'),
+      //     "create:experience_block",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:depth_strider",lvl:2s}]}'),
         input: [
@@ -2318,7 +2333,7 @@
       {
         output: Item.of(
           "minecraft:enchanted_book",
-          '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:2s}]}'
+          '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:2s}]}',
         ),
         input: [
           Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:1s}]}'),
@@ -2330,7 +2345,7 @@
       {
         output: Item.of(
           "minecraft:enchanted_book",
-          '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:3s}]}'
+          '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:3s}]}',
         ),
         input: [
           Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:2s}]}'),
@@ -2342,7 +2357,7 @@
       {
         output: Item.of(
           "minecraft:enchanted_book",
-          '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:4s}]}'
+          '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:4s}]}',
         ),
         input: [
           Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:3s}]}'),
@@ -2354,7 +2369,7 @@
       {
         output: Item.of(
           "minecraft:enchanted_book",
-          '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:5s}]}'
+          '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:5s}]}',
         ),
         input: [
           Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:4s}]}'),
@@ -2364,32 +2379,32 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of(
-          "minecraft:enchanted_book",
-          '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:6s}]}'
-        ),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:5s}]}'),
-          "create:experience_block",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 500 * mB },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of(
-          "minecraft:enchanted_book",
-          '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:7s}]}'
-        ),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:6s}]}'),
-          "create:experience_block",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of(
+      //     "minecraft:enchanted_book",
+      //     '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:6s}]}'
+      //   ),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:5s}]}'),
+      //     "create:experience_block",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 500 * mB },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of(
+      //     "minecraft:enchanted_book",
+      //     '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:7s}]}'
+      //   ),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:bane_of_arthropods",lvl:6s}]}'),
+      //     "create:experience_block",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:lure",lvl:2s}]}'),
         input: [
@@ -2408,25 +2423,25 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:lure",lvl:4s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:lure",lvl:3s}]}'),
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:lure",lvl:5s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:lure",lvl:4s}]}'),
-          "createastral:experience_ingot",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:lure",lvl:4s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:lure",lvl:3s}]}'),
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:lure",lvl:5s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:lure",lvl:4s}]}'),
+      //     "createastral:experience_ingot",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:2s}]}'),
         input: [
@@ -2445,25 +2460,25 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:4s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:3s}]}'),
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:5s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:4s}]}'),
-          "createastral:experience_ingot",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:4s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:3s}]}'),
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:5s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:luck_of_the_sea",lvl:4s}]}'),
+      //     "createastral:experience_ingot",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:2s}]}'),
         input: [
@@ -2482,25 +2497,25 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:4s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:3s}]}'),
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:5s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:4s}]}'),
-          "createastral:experience_ingot",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:4s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:3s}]}'),
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:5s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:loyalty",lvl:4s}]}'),
+      //     "createastral:experience_ingot",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:riptide",lvl:2s}]}'),
         input: [
@@ -2519,25 +2534,25 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:riptide",lvl:4s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:riptide",lvl:3s}]}'),
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:riptide",lvl:5s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:riptide",lvl:4s}]}'),
-          "createastral:experience_ingot",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:riptide",lvl:4s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:riptide",lvl:3s}]}'),
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:riptide",lvl:5s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:riptide",lvl:4s}]}'),
+      //     "createastral:experience_ingot",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:2s}]}'),
         input: [
@@ -2575,26 +2590,26 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:6s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:5s}]}'),
-          "create:experience_block",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 500 * mB },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:7s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:6s}]}'),
-          "create:experience_block",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:6s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:5s}]}'),
+      //     "create:experience_block",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 500 * mB },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:7s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"minecraft:impaling",lvl:6s}]}'),
+      //     "create:experience_block",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: BUCKET },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:2s}]}'),
         input: [
@@ -2613,25 +2628,25 @@
         ],
         heat: "superheated",
       },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:4s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:3s}]}'),
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 125 * mB },
-        ],
-        heat: "superheated",
-      },
-      {
-        output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:5s}]}'),
-        input: [
-          Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:4s}]}'),
-          "createastral:experience_ingot",
-          { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
-          { fluid: "kubejs:hellfire", amount: 250 * mB },
-        ],
-        heat: "superheated",
-      },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:4s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:3s}]}'),
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 125 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
+      // {
+      //   output: Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:5s}]}'),
+      //   input: [
+      //     Item.of("minecraft:enchanted_book", '{StoredEnchantments:[{id:"farmersdelight:backstabbing",lvl:4s}]}'),
+      //     "createastral:experience_ingot",
+      //     { fluid: "kubejs:liquid_xp_nuggies", amount: 2 * INGOT },
+      //     { fluid: "kubejs:hellfire", amount: 250 * mB },
+      //   ],
+      //   heat: "superheated",
+      // },
       {
         output: { fluid: "kubejs:liquid_xp_nuggies", amount: NUGGET },
         input: ["create:experience_nugget"],
@@ -2708,6 +2723,10 @@
         time: 80,
       },
       {
+        output: ["farmersdelight:pie_crust"],
+        input: [{ fluid: "milk:still_milk", amount: 250 * mB }, Item.of("create:wheat_flour", 3)],
+      },
+      {
         output: Fluid.of("tconstruct:molten_netherite", (INGOT * 3) / 10),
         input: [
           { fluid: "tconstruct:molten_debris", amount: INGOT },
@@ -2738,16 +2757,6 @@
         time: 60,
       },
       {
-        output: ["astralfoods:gamers_delight"],
-        input: [
-          "techreborn:compressed_plantball",
-          "farmersdelight:pie_crust",
-          { fluid: "techreborn:lithium", amount: BUCKET },
-        ],
-        heat: "heated",
-        time: 80,
-      },
-      {
         output: "minecraft:slime_ball",
         input: ["minecraft:lime_dye", "#c:slimeballs"],
         time: 50,
@@ -2776,7 +2785,7 @@
     mixingRecipes.forEach((recipe) => {
       event.recipes
         .createMixing(recipe.output, recipe.input)
-        .heatRequirement(recipe.heat ?? "")
+        .heatRequirement(recipe.heat ?? "none")
         .processingTime(recipe.time ?? 100);
     });
     /**

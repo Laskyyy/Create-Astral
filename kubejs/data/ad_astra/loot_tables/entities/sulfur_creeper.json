@@ -25,7 +25,7 @@
                             "function": "minecraft:looting_enchant"
                         }
                     ],
-                    "name": "minecraft:gunpowder"
+                    "name": "techreborn:sulfur_dust"
                 }
             ],
             "rolls": 1.0

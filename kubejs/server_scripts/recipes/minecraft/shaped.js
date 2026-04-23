@@ -13,6 +13,83 @@
     /** @type {ShapedRecipe[]} */
     const shapedRecipes = [
       {
+        output: "astraladditions:shimmer_fishing_rod",
+        pattern: ["  D", " BT", "B T"],
+        key: {
+          D: "astraladditions:shimmer_blaze_powder",
+          B: "astraladditions:shimmer_blaze_rod",
+          T: "astraladditions:shimmering_thread",
+        },
+      },
+      {
+        output: "astraladditions:parry_shield",
+        pattern: ["GRG", "RBR", " G "],
+        key: {
+          G: "minecraft:gold_ingot",
+          R: "minecraft:red_dye",
+          B: "tconstruct:rose_gold_block",
+        },
+      },
+      {
+        output: "astraladditions:beta_ender_weapon",
+        pattern: ["I", "I", "S"],
+        key: {
+          S: "minecraft:stick",
+          I: "createastral:ender_plating",
+        },
+      },
+      {
+        output: "astraladditions:beta_calorite_weapon",
+        pattern: ["I", "I", "S"],
+        key: {
+          S: "minecraft:stick",
+          I: "ad_astra:calorite_ingot",
+        },
+      },
+      {
+        output: "astraladditions:beta_ostrum_weapon",
+        pattern: ["I", "I", "S"],
+        key: {
+          S: "minecraft:stick",
+          I: "ad_astra:ostrum_ingot",
+        },
+      },
+      {
+        output: "astraladditions:beta_desh_weapon",
+        pattern: ["I", "I", "S"],
+        key: {
+          S: "minecraft:stick",
+          I: "ad_astra:desh_ingot",
+        },
+      },
+      {
+        output: "astraladditions:diamond_boomer",
+        pattern: [" D ", "S S"],
+        key: {
+          D: "minecraft:diamond",
+          S: "createastral:sturdy_sheet_block",
+        },
+      },
+      {
+        output: "astraladditions:shimmerang",
+        pattern: [" P ", "I I"],
+        key: {
+          P: "astraladditions:shimmer_blaze_powder",
+          I: "astraladditions:shimmer_blaze_rod",
+        },
+      },
+      {
+        output: Item.of("custommachinery:custom_machine_item", { machine: "astralfoods:blender" }),
+        pattern: [" S ", "RGW", "SPS"],
+        key: {
+          S: "ad_astra:steel_plate",
+          G: "minecraft:glass",
+          R: "phonos:redstone_chip",
+          W: "createaddition:gold_spool",
+          P: "create:propeller",
+        },
+      },
+      {
         output: "createastral:andesite_alloy_block",
         pattern: ["AAA", "AAA", "AAA"],
         key: { A: "create:andesite_alloy" },
@@ -138,7 +215,7 @@
         output: "ad_astra:oxygen_loader",
         pattern: ["IOI", "PTP", "IFI"],
         key: {
-          I: "create:iron_sheet",
+          I: "#c:iron_plates",
           O: "ad_astra:oxygen_tank",
           P: "create:smart_fluid_pipe",
           T: "create:fluid_tank",
@@ -237,6 +314,34 @@
           A: "createastral:blast-resistant_concrete",
         },
       },
+	  {
+        output: Item.of("createastral:blast-resistant_doncrete_slab", 6),
+        pattern: ["AAA"],
+        key: {
+          A: "createastral:blast-resistant_doncrete",
+        },
+      },
+      {
+        output: Item.of("createastral:blast-resistant_doncrete_stairs", 4),
+        pattern: ["A  ", "AA ", "AAA"],
+        key: {
+          A: "createastral:blast-resistant_doncrete",
+        },
+      },
+	  {
+        output: Item.of("createastral:rock_salt_slab", 6),
+        pattern: ["AAA"],
+        key: {
+          A: "createastral:rock_salt",
+        },
+      },
+      {
+        output: Item.of("createastral:rock_salt_stairs", 4),
+        pattern: ["A  ", "AA ", "AAA"],
+        key: {
+          A: "createastral:rock_salt",
+        },
+      },
       {
         output: "tconstruct:seared_fuel_tank",
         pattern: ["CCC", "BDB", "AAA"],
@@ -301,17 +406,6 @@
         key: {
           A: "minecraft:gunpowder",
           B: "minecraft:copper_ingot",
-        },
-      },
-      {
-        output: "ad_astra:oxygen_loader",
-        pattern: ["BAB", "DED", "BCB"],
-        key: {
-          A: "ad_astra:oxygen_tank",
-          B: "#c:iron_plates",
-          C: "ad_astra:engine_fan",
-          D: "create:smart_fluid_pipe",
-          E: "create:fluid_tank",
         },
       },
       {
@@ -815,9 +909,10 @@
       },
       {
         output: "createastral:copper_heating_coil",
-        pattern: ["AAA", "AAA", "AAA"],
+        pattern: [" A ", "ABA", " A "],
         key: {
           A: "createaddition:copper_spool",
+          B: "minecraft:copper_block",
         },
       },
       {
@@ -869,7 +964,7 @@
         },
       },
       {
-        output: "techreborn:refined_iron_fence",
+        output: Item.of("techreborn:refined_iron_fence", 2),
         pattern: ["BSB", "BSB"],
         key: {
           B: "minecraft:iron_block",
@@ -1092,7 +1187,7 @@
           F: "create:blaze_burner",
         },
       },
-	  {
+      {
         output: "techreborn:alloy_smelter",
         pattern: ["ABA", "CDC", "EFE"],
         key: {
@@ -1443,14 +1538,13 @@
       },
       {
         output: "extractinator:extractinator",
-        pattern: ["H  ", "PRA", "CBA"],
+        pattern: ["H ", "FC", "MS"],
         key: {
           H: "minecraft:hopper",
-          P: "minecraft:piston",
-          C: "minecraft:cauldron",
-          B: "minecraft:copper_block",
-          R: "minecraft:redstone_block",
-          A: "minecraft:chain",
+          F: "create:filter",
+          C: "create:cogwheel",
+          M: "create:millstone",
+          S: "dustrial_decor:sheet_metal",
         },
       },
       {

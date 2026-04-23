@@ -1,0 +1,20 @@
+{
+  "type": "vinery:wine_fermentation",
+  "ingredients": [
+    {
+      "item": "minecraft:dragon_breath"
+    },
+    {
+      "item": "minecraft:honey_bottle"
+    },
+    {
+      "item": "minecraft:chorus_fruit"
+    },
+    {
+      "item": "techreborn:dark_ashes_dust"
+    }
+  ],
+  "result": {
+    "item": "createastral:sputum_bottle"
+  }
+}

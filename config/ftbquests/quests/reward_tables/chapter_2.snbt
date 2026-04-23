@@ -283,6 +283,18 @@
 			count: 32
 			weight: 5
 		}
+		{
+			item: "morefluidcans:emerald_can"
+			count: 9
+		}
+		{
+			item: "tconstruct:copper_can"
+			count: 9
+		}
+		{
+			item: "morefluidcans:brick_can"
+			count: 9
+		}
 	]
 	loot_crate: {
 		drops: {
