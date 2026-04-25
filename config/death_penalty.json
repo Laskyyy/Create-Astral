@@ -122,8 +122,12 @@
     },
 	{
 	  "type": "set_food",
-	  "value": 10,
+	  "value": 15,
 	  "saturationValue": 0.0
-	}
+	},
+    {
+      "type": "item_drop",
+      "valueF": 0.5
+    }
   ]
 }
