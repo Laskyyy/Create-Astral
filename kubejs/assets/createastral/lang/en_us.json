@@ -3126,6 +3126,11 @@
   "ftbquests.chapter.read_the_questbook.quests21.title": "How to FTBQuests",
   "ftbquests.chapter.read_the_questbook.quests21.subtitle": "First time using a quest book?",
   "ftbquests.chapter.read_the_questbook.quests21.description0": "Close this quest and hover your mouse to the left of the screen to open the chapter browser :)",
+  "ftbquests.chapter.read_the_questbook.quests22.title": "The Death Penalty",
+  "ftbquests.chapter.read_the_questbook.quests22.subtitle": "[Experimental Feature!]",
+  "ftbquests.chapter.read_the_questbook.quests22.description0": "A new mod, called \"&6The Death Penalty&r\" has been added in 2.1.5. This mod applies various penalties for dying: respawning with &6less hunger&r and increased &6XP loss&r.",
+  "ftbquests.chapter.read_the_questbook.quests22.description1": "To enable the experimental mode, run \"&6/gamerule KeepInventory true&r\" as an operator. Dying with Keep Inventory on will now delete half of your Raw Ores, Food, Treasure Items like Enchanted Books, and Ammo like bullets. This is to discourage players in Keep Inventory worlds to use dying as a method of returning home after exploration.",
+  "ftbquests.chapter.read_the_questbook.quests22.description2": "To see a complete list of items that will be lost, search \"&6$death_penalty&r\" in REI. The intention is to enable Keep Inventory by default next update if this feature is liked, so give us feedback on the Discord!",
 
   "ftbquests.chapter.culinary_delights.title": "Culinary Delights",
   "ftbquests.chapter.culinary_delights.quests0.title": "Welcome to Astral Foods!",
