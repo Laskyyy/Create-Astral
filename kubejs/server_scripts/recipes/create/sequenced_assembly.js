@@ -11,8 +11,29 @@
     wineSequence(event);
     enchantBooks(event);
 
+    createSequencedAssembly(event, {
+          input: "createastral:uranium_residue",
+          transitional: "createastral:incomplete_slop",
+          outputs: ["adoptafloppa:radioactive_slop"],
+        })
+          .addDeployingStep("astraladditions:shimmer_heart")
+          .addFillingStep({ fluid: "xpcrystals:soul", amount: BUCKET })
+          .loops(1)
+          .build();
 
-	 createSequencedAssembly(event, {
+	createSequencedAssembly(event, {
+      input: "minecraft:beacon",
+      transitional: "createastral:tampered_beacon",
+      outputs: ["createendertransmission:chunk_loader"],
+    })
+      .addDeployingStep("ae2:matter_ball")
+      .addDeployingStep("minecraft:conduit")
+      .addDeployingStep("astraladditions:awakened_shimmer_heart")
+      .addDeployingStep("astraladditions:moonblazed_orb")
+      .loops(1)
+      .build();
+
+	createSequencedAssembly(event, {
       input: "createastral:copper_clad_lapis_board",
       transitional: "createastral:copper_clad_lapis_board",
       outputs: ["createastral:printed_copper_clad_lapis_board"],

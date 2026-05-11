@@ -177,6 +177,8 @@
       .create("createastral:transitional_lapis_sheet", "create:sequenced_assembly")
       .displayName("Incomplete Integrated Circuit");
     event
+      .create("createastral:incomplete_slop", "create:sequenced_assembly");
+    event
       .create("createastral:incomplete_navigation_mechanism", "create:sequenced_assembly")
       .displayName("Incomplete Navigation Mechanism");
     event
@@ -262,6 +264,7 @@
         east: "createastral:item/incomplete_refined_radiance_casing",
       },
     });
+    event.create("createastral:tampered_beacon", "create:sequenced_assembly");
     event.create("createastral:incomplete_shadow_steel_casing", "create:sequenced_assembly").modelJson({
       parent: "minecraft:block/cube",
       textures: {
