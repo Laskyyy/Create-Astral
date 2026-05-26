@@ -1,0 +1,63 @@
+astralmenu.mainmenu.singleplayer.text = Одиночная
+astralmenu.mainmenu.singleplayer.hover = Наслаждайтесь приключением!
+astralmenu.mainmenu.multiplayer.text = Сетевая
+astralmenu.mainmenu.multiplayer.hover = Присоединяйтесь к официальным серверам!
+astralmenu.mainmenu.options.text = Настройки
+astralmenu.mainmenu.options.hover = Настройте игру под себя
+astralmenu.mainmenu.quit.text = Выйти
+astralmenu.mainmenu.quit.hover = Возвращайтесь скорее!
+astralmenu.mainmenu.changelog.text = Список изменений
+astralmenu.mainmenu.changelog.hover = Последнее обновление: 2.1.4c
+astralmenu.mainmenu.music.hover = Слушайте OST на Spotify!
+astralmenu.mainmenu.discord.hover = Наш официальный Discord-сервер!
+astralmenu.mainmenu.credits.hover = Авторы Create: Astral
+astralmenu.mainmenu.accessibility.hover = Специальные возможности
+astralmenu.mainmenu.modlist.hover = Список модов
+astralmenu.mainmenu.createconfig.hover = Конфигурация Create
+astralmenu.mainmenu.menucredit.line1 = Концепт меню: _Shortman
+astralmenu.mainmenu.menucredit.line2 = Иконки кнопок: _Shortman
+astralmenu.mainmenu.menucredit.line3 = Реализация: Erdragh и _Shortman
+
+astralmenu.creditsmenu.title = Авторы Create: Astral
+astralmenu.creditsmenu.buttons.contributors = Помощники
+astralmenu.creditsmenu.buttons.developers = Разработчики
+astralmenu.creditsmenu.buttons.specialthanks = Особая благодарность
+astralmenu.creditsmenu.packdevs.header = Разработчики сборки
+astralmenu.creditsmenu.packdevs.description.laskyyy = Создатель Create: Astral и штатный волк.
+astralmenu.creditsmenu.packdevs.description.ethanicuss = Куратор многих контентных модов, созданных эксклюзивно для Astral (например, Astral Additions), а также композитор части саундтрека.
+astralmenu.creditsmenu.packdevs.description.erdragh = Куратор патч-модов, созданных специально для Create: Astral, чтобы сборка не рассыпалась по швам.
+astralmenu.creditsmenu.packdevs.description.winter = Композитор большей части культового оригинального саундтрека Create: Astral.
+astralmenu.creditsmenu.packdevs.description.shortman = Дизайнер меню, мастер патчей, человек в монокле. Также поддерживает репозиторий GitHub для беспрепятственной разработки.
+astralmenu.creditsmenu.packdevs.description.trashpanda = Идейный вдохновитель многих уникальных рецептов и визуальных эффектов в сборке, а также патчей совместимости для REI.
+astralmenu.creditsmenu.contributors.header = Значимый вклад
+astralmenu.creditsmenu.contributors.programmers = Программисты
+astralmenu.creditsmenu.contributors.composers = Композиторы
+astralmenu.creditsmenu.contributors.artists = Художники
+astralmenu.creditsmenu.contributors.translators = Переводчики
+astralmenu.creditsmenu.contributors.other = Прочие
+astralmenu.creditsmenu.contributors.structures = Дизайнеры структур
+astralmenu.creditsmenu.specialthanks.header = Огромное спасибо
+astralmenu.creditsmenu.specialthanks.description.lizard = Бывший разработчик Create: Astral, ответственный за большую часть основной прогрессии пака. Сейчас работает над личными проектами, и мы желаем ему всего лучшего!
+astralmenu.creditsmenu.specialthanks.description.b0b = Держал сообщество Astral на своих плечах в качестве менеджера Discord-сервера. Мы бесконечно благодарны ему за ключевую роль в жизни проекта.
+astralmenu.creditsmenu.specialthanks.betatesters = Бета-тестеры
+astralmenu.creditsmenu.specialthanks.backgroundcredit = Спасибо Senkou за фон для экрана титров!
+astralmenu.creditsmenu.close = Закрыть
+
+astralmenu.changelog.2_1.title = Create: Astral Версия 2.1
+astralmenu.changelog.2_1.close = Закрыть список изменений
+astralmenu.changelog.2_1.label = Обновление 2.1
+
+astralmenu.changelog.2_1_1.title = Create: Astral Патч 2.1.1
+astralmenu.changelog.2_1_1.label = Патч 2.1.1
+
+astralmenu.changelog.2_1_2.title = Create: Astral Патч 2.1.2
+astralmenu.changelog.2_1_2.label = Патч 2.1.2
+
+astralmenu.changelog.2_1_3.title = Create: Astral Патч 2.1.3
+astralmenu.changelog.2_1_3.label = Патч 2.1.3
+
+astralmenu.changelog.2_1_4.title = Create: Astral Патч 2.1.4
+astralmenu.changelog.2_1_4.label = Патч 2.1.4
+
+astralmenu.multiplayer_error_message.line1 = Если при входе на сервер возникает ошибка, попробуйте перезайти перед тем, как сообщать о баге!
+astralmenu.multiplayer_error_message.line2 = Если войти всё равно не удается, пожалуйста, перейдите в наш Discord (ссылка слева в меню) и сообщите об этом в канале #bug-reports!

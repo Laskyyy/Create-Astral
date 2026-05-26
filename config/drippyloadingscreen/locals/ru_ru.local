@@ -1,0 +1,547 @@
+drippyloadingscreen.helper.creator.messages.sure = Вы уверены?
+drippyloadingscreen.helper.creator.empty = ПУСТО
+
+drippyloadingscreen.helper.creator.layoutempty.title = Макет пуст!
+drippyloadingscreen.helper.creator.layoutempty.desc = В вашем макете нет контента.%n%%n%Сначала добавьте немного «магии кастомизации», прежде чем сохранять его!
+
+drippyloadingscreen.helper.creator.invalidaudio.title = Неверный аудиофайл!
+drippyloadingscreen.helper.creator.invalidaudio.desc = Файл, который вы хотите загрузить, не существует или имеет неподдерживаемый формат.%n%%n%Пожалуйста, проверьте путь к файлу и убедитесь, что это корректный WAV-файл!
+
+drippyloadingscreen.helper.creator.invalidimage.title = Неверный файл изображения!
+drippyloadingscreen.helper.creator.invalidimage.desc = Изображение не найдено или формат не поддерживается.%n%%n%Поддерживаемые типы файлов: JPG/JPEG, PNG и GIF.
+
+drippyloadingscreen.helper.creator.imagenotfound.title = Изображение не найдено!
+drippyloadingscreen.helper.creator.imagenotfound.desc = Изображение отсутствует по указанному пути.
+
+drippyloadingscreen.helper.creator.texttooshort.title = Текст слишком короткий!
+drippyloadingscreen.helper.creator.texttooshort.desc = В тексте должен быть хотя бы один символ!%n%Иначе это будет... ничто.%n%%n%Никто не хочет быть ничем, так что не делайте так со своим текстом!
+
+drippyloadingscreen.helper.creator.cannotdelete.title = Элемент нельзя удалить!
+drippyloadingscreen.helper.creator.cannotdelete.desc = К сожалению, этот элемент нельзя удалить.%n%%n%Вам придется научиться жить с ним...
+
+drippyloadingscreen.helper.creator.savefile.cancel = Отмена
+
+drippyloadingscreen.helper.creator.layoutoptions.renderorder = Порядок отрисовки
+drippyloadingscreen.helper.creator.layoutoptions.renderorder.background = Задний план (Background)
+drippyloadingscreen.helper.creator.layoutoptions.renderorder.foreground = Передний план (Foreground)
+
+drippyloadingscreen.helper.creator.layoutoptions.version.mc = Версия Minecraft
+drippyloadingscreen.helper.creator.layoutoptions.version.dl = Версия DrippyLoadingScreen
+drippyloadingscreen.helper.creator.layoutoptions.version.minimum = Установить минимум
+drippyloadingscreen.helper.creator.layoutoptions.version.minimum.mc = Мин. версия Minecraft
+drippyloadingscreen.helper.creator.layoutoptions.version.minimum.fh = Мин. версия DrippyLoadingScreen
+drippyloadingscreen.helper.creator.layoutoptions.version.maximum = Установить максимум
+drippyloadingscreen.helper.creator.layoutoptions.version.maximum.mc = Макс. версия Minecraft
+drippyloadingscreen.helper.creator.layoutoptions.version.maximum.dl = Макс. версия DrippyLoadingScreen
+
+drippyloadingscreen.helper.creator.layoutoptions.resetbackground = Сбросить фон
+
+drippyloadingscreen.helper.creator.layoutoptions.requiredmods = Требуемые моды
+drippyloadingscreen.helper.creator.layoutoptions.requiredmods.desc = ID модов (через запятую)
+
+drippyloadingscreen.helper.creator.close = Вы действительно хотите закрыть конструктор макетов?
+
+drippyloadingscreen.helper.creator.audio.delete = Удалить
+drippyloadingscreen.helper.creator.audio.delete.msg = Вы действительно хотите удалить это аудио?
+drippyloadingscreen.helper.creator.audio.enableloop = Повтор: §cВыкл
+drippyloadingscreen.helper.creator.audio.disableloop = Повтор: §aВкл
+
+drippyloadingscreen.helper.creator.add.image = Изображение
+drippyloadingscreen.helper.creator.add.image.path = Путь к изображению
+
+drippyloadingscreen.helper.creator.add.animation = Анимация
+drippyloadingscreen.helper.creator.add.animation.entername = Добавить по имени
+drippyloadingscreen.helper.creator.add.animation.entername.title = Название анимации
+
+drippyloadingscreen.helper.creator.add.text = Текст
+drippyloadingscreen.helper.creator.add.text.newtext = Новый текст
+
+drippyloadingscreen.helper.creator.add.audio = Аудио
+
+drippyloadingscreen.helper.creator.vanillabutton.autoclick = Кликнуть кнопку
+drippyloadingscreen.helper.creator.vanillabutton.autoclick.popup = Автоматические клики кнопок
+
+drippyloadingscreen.helper.creator.backgroundoptions = Параметры фона
+
+drippyloadingscreen.helper.creator.items.setorientation = Установить ориентацию
+drippyloadingscreen.helper.creator.items.delete = Удалить
+drippyloadingscreen.helper.creator.items.border.posx = ПозX
+drippyloadingscreen.helper.creator.items.border.posy = ПозY
+drippyloadingscreen.helper.creator.items.border.orientation = ориентация
+drippyloadingscreen.helper.creator.items.border.width = ширина
+drippyloadingscreen.helper.creator.items.border.height = высота
+
+drippyloadingscreen.helper.creator.items.string.setscale = Установить масштаб
+drippyloadingscreen.helper.creator.items.string.setshadow = Тень: §cВыкл
+drippyloadingscreen.helper.creator.items.string.setnoshadow = Тень: §aВкл
+drippyloadingscreen.helper.creator.items.string.edit = Изменить содержимое
+drippyloadingscreen.helper.creator.items.string.border.centered = по центру
+drippyloadingscreen.helper.creator.items.string.border.scale = масштаб
+
+drippyloadingscreen.helper.creator.items.string.scale.invalidvalue.title = Неверное значение!
+drippyloadingscreen.helper.creator.items.string.scale.invalidvalue.desc = Введенное значение не является допустимым масштабом!%n%%n%Примеры: 1.0, 2.0, 0.5
+
+drippyloadingscreen.helper.creator.deleteobject = Вы действительно хотите §lУДАЛИТЬ §rэтот элемент?
+
+drippyloadingscreen.helper.creator.choosefile.enterorchoose = §lВведите путь или выберите файл
+drippyloadingscreen.helper.creator.choosefile.choose = Выбрать файл
+drippyloadingscreen.helper.creator.choosefile.notsupported = §cВыбор файлов не поддерживается или отключен! Введите путь вручную.
+
+drippyloadingscreen.helper.creator.webstring.multiline = Многострочность: §cВыкл
+drippyloadingscreen.helper.creator.webstring.nomultiline = Многострочность: §aВкл
+
+drippyloadingscreen.helper.creator.web.invalidurl = §c§lНеверный URL!%n%%n%Этот URL некорректен или не существует.
+drippyloadingscreen.helper.creator.web.enterurl = Введите URL
+
+drippyloadingscreen.helper.creator.add.webimage = Веб-изображение
+drippyloadingscreen.helper.creator.add.webtext = Веб-текст
+
+drippyloadingscreen.helper.creator.editlayout = Редактировать макеты
+drippyloadingscreen.helper.creator.editlayout.popup.loadall = Загрузить все
+drippyloadingscreen.helper.creator.editlayout.popup.loadselected = Загрузить выбранный макет
+drippyloadingscreen.helper.creator.editlayout.popup.layouts = Макеты
+drippyloadingscreen.helper.creator.editlayout.popup.cancel = Отмена
+drippyloadingscreen.helper.creator.editlayout.popup.actionscount = Действий кастомизации: {}
+drippyloadingscreen.helper.creator.editlayout.nolayouts.msg = §c§lМакеты не найдены!%n%%n%Для этого меню нет макетов.%n%%n%Чтобы настроить это меню, используйте кнопку «Создать макет»!
+drippyloadingscreen.helper.creator.editlayout.popup.msg = Для этого экрана найдено несколько файлов кастомизации!%n%%n%Хотите загрузить полный макет (объединить всё)%n%или выбрать конкретный файл?%n%%n%§cМета-данные макетов теряются при объединении!
+
+drippyloadingscreen.helper.creator.editlayout.single.override = Перезаписать существующий
+drippyloadingscreen.helper.creator.editlayout.single.asnew.keep = Сохранить как новый (оставить другие вкл.)
+drippyloadingscreen.helper.creator.editlayout.single.asnew.disable = Сохранить как новый (выключить остальные)
+
+drippyloadingscreen.helper.creator.items.button.hoverlabel = Подсказка при наведении
+drippyloadingscreen.helper.creator.items.button.hoverlabel.text = Текст подсказки
+drippyloadingscreen.helper.creator.items.button.hoverlabel.reset = Сбросить подсказку
+drippyloadingscreen.helper.creator.items.button.hoversound = Звук при наведении
+drippyloadingscreen.helper.creator.items.button.hoversound.path = Путь к звуку
+drippyloadingscreen.helper.creator.items.button.hoversound.reset = Сбросить звук
+
+drippyloadingscreen.helper.creator.editlayout.unsupportedvalues = §c§lНеподдерживаемые значения!%n%%n%Ваш макет содержит значения, которые не работают в конструкторе.%n%Скорее всего, вы используете §lформулы (вычисления) размера или позиции.%n%%n%Пожалуйста, замените их на абсолютные числа вручную и попробуйте снова.
+
+drippyloadingscreen.helper.creator.textures.invalidcharacters = §c§lНедопустимые символы!%n%%n%Имя файла изображения содержит запрещенные символы.%n%%n%Используйте только: «a-z», «0-9», «.», «_» и «-».%n%Пробелы, заглавные буквы и спецсимволы не поддерживаются.
+
+drippyloadingscreen.helper.buttons.tools.customguis = Кастомные GUI
+drippyloadingscreen.helper.buttons.tools.customguis.open = Открыть GUI
+drippyloadingscreen.helper.buttons.tools.customguis.delete = Удалить GUI
+drippyloadingscreen.helper.buttons.tools.customguis.pickbyname = Выбрать по имени
+drippyloadingscreen.helper.buttons.tools.customguis.openbyname = Открыть по имени
+drippyloadingscreen.helper.buttons.tools.customguis.deletebyname = Удалить по имени
+drippyloadingscreen.helper.buttons.tools.customguis.sure = §c§lВы уверены?%n%%n%Вы действительно хотите §lУДАЛИТЬ §rэтот GUI?%n%%n%§lЭто действие нельзя отменить!
+
+drippyloadingscreen.helper.buttons.tools.creategui = Создать GUI
+drippyloadingscreen.helper.buttons.tools.creategui.allowesc = Разрешить
+drippyloadingscreen.helper.buttons.tools.creategui.donotallowesc = Запретить
+drippyloadingscreen.helper.buttons.tools.creategui.invalididentifier = §cНеверный идентификатор!
+drippyloadingscreen.helper.buttons.tools.creategui.identifieralreadyused = §cID уже используется! Выберите другой.
+drippyloadingscreen.helper.buttons.tools.creategui.allowescdesc = Разрешить закрытие меню кнопкой ESC
+drippyloadingscreen.helper.buttons.tools.creategui.menuidentifier = Идентификатор меню
+drippyloadingscreen.helper.buttons.tools.creategui.menutitle = Заголовок меню (опционально)
+drippyloadingscreen.helper.buttons.tools.creategui.create = Создать
+
+drippyloadingscreen.gameintro.skip = НАЖМИТЕ ПРОБЕЛ, ЧТОБЫ ПРОПУСТИТЬ
+
+drippyloadingscreen.helper.creator.items.chooselayer = Выбрать слой
+
+drippyloadingscreen.customization.items.webstring.unabletoload = Не удалось загрузить веб-текст! Неверный URL или нет интернета.
+
+drippyloadingscreen.custombuttons.action.opengui.cannotopengui = §c§lНе удалось открыть GUI!%n%%n%Указанный интерфейс не существует или не поддерживается.
+
+drippyloadingscreen.helper.creator.custombutton.config.actiontype.opengui.desc = Открывает GUI по его идентификатору.
+drippyloadingscreen.helper.creator.custombutton.config.actiontype.opengui.desc.value = Идентификатор меню
+
+drippyloadingscreen.helper.creator.popup.hidefor.delayeverytime = Задержка каждый раз
+drippyloadingscreen.helper.creator.popup.hidefor.delayfirsttime = Задержка в первый раз
+
+drippyloadingscreen.helper.creator.windowsize = Ограничения размера окна
+drippyloadingscreen.helper.creator.windowsize.biggerthan = Больше чем
+drippyloadingscreen.helper.creator.windowsize.smallerthan = Меньше чем
+drippyloadingscreen.helper.creator.windowsize.biggerthan.desc = Включать макет, только если окно больше X
+drippyloadingscreen.helper.creator.windowsize.smallerthan.desc = Включать макет, только если окно меньше X
+drippyloadingscreen.helper.creator.windowsize.currentwidth = Текущая ширина окна
+drippyloadingscreen.helper.creator.windowsize.currentheight = Текущая высота окна
+
+drippyloadingscreen.helper.creator.rightclick.scale = Масштаб интерфейса
+drippyloadingscreen.helper.creator.rightclick.scale.invalid = §c§lНеверный масштаб!%n%%n%Значение масштаба должно быть больше нуля.
+
+drippyloadingscreen.helper.popup.togglecustomization.enable = Кастомизация: §cВыкл
+drippyloadingscreen.helper.popup.togglecustomization.disable = Кастомизация: §aВкл
+
+drippyloadingscreen.helper.creator.object.stretch = Растягивание (Stretch)
+drippyloadingscreen.helper.creator.object.stretch.x = По ширине экрана
+drippyloadingscreen.helper.creator.object.stretch.y = По высоте экрана
+
+drippyloadingscreen.helper.creator.object.stretch.unsupportedorientation = §c§lНеподдерживаемая ориентация!%n%%n%Текущая ориентация элемента не позволяет выполнить растягивание.%n%%n%§lПоддерживаемые типы: {}
+
+drippyloadingscreen.helper.buttons.customization.createlayout.btndesc = Настройте текущее меню%n%в удобном визуальном редакторе!%n%%n%§cВАЖНО:%n%Используйте эту кнопку для%n%редактирования уже существующих меню.
+drippyloadingscreen.helper.buttons.customization.editlayout.btndesc = Редактировать макеты для%n%текущего меню.
+
+drippyloadingscreen.helper.buttons.reload.btndesc = Перезагрузит HUD, все макеты,%n%конфиг мода и прочее.%n%%n%Полезно после ручного изменения%n%файлов макета или конфига.
+
+drippyloadingscreen.helper.buttons.customization.managelayouts = Управление макетами
+drippyloadingscreen.helper.buttons.customization.managelayouts.enable = §aВключить §rмакет
+drippyloadingscreen.helper.buttons.customization.managelayouts.enabled = §aВключено
+drippyloadingscreen.helper.buttons.customization.managelayouts.disable = §cВыключить §rмакет
+drippyloadingscreen.helper.buttons.customization.managelayouts.disabled = §cВыключено
+drippyloadingscreen.helper.buttons.customization.managelayouts.delete = Удалить макет
+drippyloadingscreen.helper.buttons.customization.managelayouts.delete.msg = §c§lВы уверены?%n%%n%Вы действительно хотите §c§lУДАЛИТЬ §rэтот макет?%n%%n%§c§lЭто действие нельзя отменить!
+drippyloadingscreen.helper.buttons.customization.managelayouts.btndesc = Управление всеми макетами для%n%текущего меню.
+drippyloadingscreen.helper.buttons.customization.managelayouts.layout.btndesc = §lИнфо о макете:%n%%n%Статус: {}%n%Действий кастомизации: {}%n%%n%§cЛКМ для доп. опций!
+
+drippyloadingscreen.helper.creator.object.moveup = Переместить выше
+drippyloadingscreen.helper.creator.object.moveup.desc = Перемещает элемент на слой выше.%n%%n%§cВАЖНО:%n%Выбранный элемент всегда сверху,%n%поэтому вы увидите результат,%n%только когда снимете выделение.
+drippyloadingscreen.helper.creator.object.movedown = Переместить ниже
+drippyloadingscreen.helper.creator.object.movedown.desc = Перемещает элемент на слой ниже.
+
+drippyloadingscreen.helper.buttons.customization.managelayouts.openintexteditor = Открыть в текстовом редакторе
+drippyloadingscreen.helper.buttons.customization.managelayouts.openintexteditor.desc = Открывает файл макета в%n%вашем текстовом редакторе.%n%%n%§cВАЖНО:%n%После ручного изменения файла%n%нужно нажать «Перезагрузить»!
+drippyloadingscreen.helper.creator.deleteselectedobjects = Вы действительно хотите §lУДАЛИТЬ §rвсе выбранные элементы?
+
+drippyloadingscreen.helper.creator.multiselect.object.deleteall = Удалить все
+drippyloadingscreen.helper.creator.multiselect.object.deleteall.btndesc = Удалит все выбранные элементы.
+drippyloadingscreen.helper.creator.multiselect.object.stretchall = Растянуть все
+drippyloadingscreen.helper.creator.multiselect.object.stretchall.btndesc = Растягивает все §lподдерживаемые §rэлементы%n%по ширине или высоте меню.
+
+drippyloadingscreen.helper.creator.add.playerentity = Сущность игрока
+
+drippyloadingscreen.helper.creator.items.playerentity.setscale = Установить масштаб
+drippyloadingscreen.helper.creator.items.playerentity.playername = Имя игрока
+drippyloadingscreen.helper.creator.items.playerentity.playername.auto = Авто
+drippyloadingscreen.helper.creator.items.playerentity.playername.setname = Указать имя
+drippyloadingscreen.helper.creator.items.playerentity.skin = Установить скин
+drippyloadingscreen.helper.creator.items.playerentity.cape = Установить плащ
+drippyloadingscreen.helper.creator.items.playerentity.texture.local = Локальная текстура
+drippyloadingscreen.helper.creator.items.playerentity.texture.url = URL-ссылка
+drippyloadingscreen.helper.creator.items.playerentity.rotation = Вращение
+drippyloadingscreen.helper.creator.items.playerentity.rotation.auto = Авто-вращение
+drippyloadingscreen.helper.creator.items.playerentity.rotation.custom = Свое вращение
+drippyloadingscreen.helper.creator.items.playerentity.rotation.custom.bodyx = Горизонт. вращение тела
+drippyloadingscreen.helper.creator.items.playerentity.rotation.custom.bodyy = Вертикал. вращение тела
+drippyloadingscreen.helper.creator.items.playerentity.rotation.custom.headx = Горизонт. вращение головы
+drippyloadingscreen.helper.creator.items.playerentity.rotation.custom.heady = Вертикал. вращение головы
+drippyloadingscreen.helper.creator.items.playerentity.showname.off = Показывать имя: §cВыкл
+drippyloadingscreen.helper.creator.items.playerentity.showname.on = Показывать имя: §aВкл
+drippyloadingscreen.helper.creator.items.playerentity.crouching.off = Крадется: §cВыкл
+drippyloadingscreen.helper.creator.items.playerentity.crouching.on = Крадется: §aВкл
+drippyloadingscreen.helper.creator.items.playerentity.parrot.off = Попугай: §cВыкл
+drippyloadingscreen.helper.creator.items.playerentity.parrot.on = Попугай: §aВкл
+drippyloadingscreen.helper.creator.items.playerentity.slim.off = Тонкие руки (Slim): §cВыкл
+drippyloadingscreen.helper.creator.items.playerentity.slim.on = Тонкие руки (Slim): §aВкл
+
+drippyloadingscreen.helper.creator.items.playerentity.setscale.btndesc = Установить масштаб игрока.
+drippyloadingscreen.helper.creator.items.playerentity.playername.btndesc = Установить имя (ник) игрока.
+drippyloadingscreen.helper.creator.items.playerentity.playername.auto.btndesc = Автоматически отобразит текущего пользователя.
+drippyloadingscreen.helper.creator.items.playerentity.playername.setname.btndesc = Ручной ввод имени. Игрок не обязательно%n%должен существовать.
+drippyloadingscreen.helper.creator.items.playerentity.skin.btndesc = Установить текстуру скина. Она имеет приоритет%n%над обычным скином игрока.
+drippyloadingscreen.helper.creator.items.playerentity.cape.btndesc = Установить текстуру плаща. Она имеет приоритет%n%над обычным плащом игрока.
+drippyloadingscreen.helper.creator.items.playerentity.rotation.btndesc = Настроить вращение головы и тела.
+drippyloadingscreen.helper.creator.items.playerentity.rotation.auto.btndesc = Взгляд игрока будет следовать за курсором.
+drippyloadingscreen.helper.creator.items.playerentity.rotation.custom.btndesc = Установить фиксированные углы поворота.
+drippyloadingscreen.helper.creator.items.playerentity.showname.btndesc = Видимость ника над головой.
+drippyloadingscreen.helper.creator.items.playerentity.crouching.btndesc = Должен ли игрок приседать.
+drippyloadingscreen.helper.creator.items.playerentity.parrot.btndesc = Пр-р-роклятые пираты! (Попугай на плече)
+drippyloadingscreen.helper.creator.items.playerentity.slim.btndesc = Использовать ли модель Slim (с тонкими руками).
+
+drippyloadingscreen.helper.creator.items.playerentity.texture.invalidtexture.title = Неверная текстура!
+drippyloadingscreen.helper.creator.items.playerentity.texture.invalidtexture.desc = Файл не существует или поврежден.%n%%n%§lПоддерживаемые форматы: §rPNG
+
+drippyloadingscreen.popup.apply = Применить
+
+drippyloadingscreen.helper.creator.items.orientation.btndesc = Устанавливает точку привязки (Origin),%n%от которой рассчитывается позиция элемента.%n%%n%§cПРИМЕЧАНИЕ:%n%Вы увидите результат смены ориентации,%n%если измените размер окна редактора.
+
+drippyloadingscreen.helper.creator.add.slideshow = Слайд-шоу
+drippyloadingscreen.helper.creator.add.slideshow.entername = Добавить по имени
+drippyloadingscreen.helper.creator.add.slideshow.entername.title = Введите название слайд-шоу
+
+drippyloadingscreen.helper.creator.backgroundoptions.backgroundslideshow = Фоновое слайд-шоу
+drippyloadingscreen.helper.creator.backgroundoptions.backgroundslideshow.set = Установить фон
+drippyloadingscreen.helper.creator.backgroundoptions.backgroundslideshow.set.desc = Делает выбранное слайд-шоу активным фоном.
+drippyloadingscreen.helper.creator.backgroundoptions.backgroundslideshow.clear = Очистить
+drippyloadingscreen.helper.creator.backgroundoptions.backgroundslideshow.clear.desc = Удаляет текущее фоновое слайд-шоу.
+
+drippyloadingscreen.helper.creator.backgroundoptions.slideshows = Слайд-шоу
+
+drippyloadingscreen.helper.creator.slideshownotfound = §c§lСлайд-шоу не найдено!%n%%n%Проверьте правильность написания названия.
+
+drippyloadingscreen.helper.creator.sidemenu.settings.btndesc = Настройки редактора макетов
+drippyloadingscreen.helper.creator.sidemenu.settings.on = §aВкл
+drippyloadingscreen.helper.creator.sidemenu.settings.off = §cВыкл
+drippyloadingscreen.helper.creator.sidemenu.settings.vanillanotification = Предупреждение о кнопках ваниллы
+drippyloadingscreen.helper.creator.sidemenu.settings.popupmenuscale = Масштаб контекстного меню
+
+drippyloadingscreen.helper.creator.add.shapes = Фигура
+drippyloadingscreen.helper.creator.add.shapes.rectangle = Прямоугольник
+
+drippyloadingscreen.helper.creator.items.shape.color = Цвет
+drippyloadingscreen.helper.creator.items.shape.color.btndesc = Установите цвет фигуры в HEX.%n%%n%§cПРИМЕЧАНИЕ:%n%Вы можете использовать HEX-коды для%n%настройки прозрачности элемента!
+
+drippyloadingscreen.helper.creator.object.movedown.desc.subtext.vanillabutton = %n%%n%§cНельзя переместить элементы за%n%§cстандартные кнопки Minecraft.%n%%n%Вместо этого установите §lпорядок отрисовки§r%n%на '§lbackground§r' (задний план).%n%%n%§lПКМ §rпо фону редактора для настройки!
+
+drippyloadingscreen.helper.buttons.tools.misc = Прочее
+drippyloadingscreen.helper.buttons.tools.misc.btndesc = Дополнительные инструменты для кастомизации.
+drippyloadingscreen.helper.buttons.tools.misc.openloadingscreen = Экран загрузки мира
+drippyloadingscreen.helper.buttons.tools.misc.openloadingscreen.btndesc = Откроет пустой экземпляр экрана загрузки мира%n%для его настройки.%n%%n%§cПРИМЕЧАНИЕ:%n%Закрыть это меню можно кнопкой%n%§lОткрыть главное меню§r.
+drippyloadingscreen.helper.buttons.tools.misc.openmainmenu = Открыть главное меню
+drippyloadingscreen.helper.buttons.tools.misc.openmessagescreen = Экран сообщений
+drippyloadingscreen.helper.buttons.tools.misc.openmessagescreen.btndesc = Откроет экран, видимый перед загрузкой мира%n%или при выходе из него.
+
+drippyloadingscreen.helper.menubar.expand = Развернуть меню
+drippyloadingscreen.helper.menubar.shrink = Свернуть меню
+
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.desc = §lПлейсхолдеры текста%n%%n%Вставляйте переменные, которые заменятся%n%реальными данными (имя игрока, версия и т.д.).%n%%n%§l§cВАЖНО:%n%В редакторе видны сами плейсхолдеры,%n%а в игре — их значения.
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.playername = Имя игрока
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.playeruuid = UUID игрока
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.mcversion = Версия Minecraft
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.forgeversion = Версия загрузчика (Loader)
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.modversion = Версия мода
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.modversion.desc = Версия мода по его ID.%n%Замените '<modid>' на ID нужного мода.
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.totalmods = Всего модов
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.loadedmods = Активных модов
+
+drippyloadingscreen.helper.creator.items.string.alignment = Выравнивание
+drippyloadingscreen.helper.creator.items.string.alignment.desc = Настройка выравнивания текста.%n%§cПолезно, когда длина текста меняется%n%§c(например, при использовании плейсхолдеров).
+drippyloadingscreen.helper.creator.items.string.alignment.left = По левому краю
+drippyloadingscreen.helper.creator.items.string.alignment.right = По правому краю
+drippyloadingscreen.helper.creator.items.string.alignment.centered = По центру
+
+drippyloadingscreen.helper.ui.hud = Экран загрузки
+drippyloadingscreen.helper.ui.hud.layouts = Макеты
+drippyloadingscreen.helper.ui.hud.layouts.new = Создать
+drippyloadingscreen.helper.ui.hud.layouts.manage = Управление макетами
+drippyloadingscreen.helper.ui.hud.layouts.manage.edit = Изменить
+
+drippyloadingscreen.helper.ui.closehelper = Закрыть помощник кастомизации
+
+drippyloadingscreen.helper.ui.reload.desc = Перезагрузить DrippyLoadingScreen.%n%%n%§lОбновит:%n%- Слайд-шоу%n%- Конфиг мода%n%- Макеты
+
+drippyloadingscreen.helper.editor.ui.unsavedwarning = §c§lВы уверены?%n%%n%Все несохраненные изменения макета%n%будут безвозвратно утеряны!
+
+drippyloadingscreen.helper.editor.ui.layout = Макет
+drippyloadingscreen.helper.editor.ui.layout.new = Новый
+drippyloadingscreen.helper.editor.ui.layout.open = Открыть
+drippyloadingscreen.helper.editor.ui.layout.save = Сохранить
+drippyloadingscreen.helper.editor.ui.layout.saveas = Сохранить как
+drippyloadingscreen.helper.editor.ui.layout.saveas.entername = §lВведите название макета
+drippyloadingscreen.helper.editor.ui.layout.saveas.failed = §c§lОшибка сохранения!%n%%n%Недопустимое имя или макет уже существует!
+drippyloadingscreen.helper.editor.ui.layout.properties = Свойства
+
+drippyloadingscreen.helper.editor.ui.edit = Правка
+drippyloadingscreen.helper.editor.ui.edit.undo = Отменить
+drippyloadingscreen.helper.editor.ui.edit.redo = Повторить
+drippyloadingscreen.helper.editor.ui.edit.copy = Копировать
+drippyloadingscreen.helper.editor.ui.edit.paste = Вставить
+
+drippyloadingscreen.helper.editor.ui.element = Элемент
+drippyloadingscreen.helper.editor.ui.element.new = Новый
+drippyloadingscreen.helper.editor.ui.element.manageaudio = Управление аудио
+drippyloadingscreen.helper.editor.ui.element.deletedvanillabuttons = Удаленные ванильные кнопки
+
+drippyloadingscreen.helper.editor.ui.exit = Выход
+
+drippyloadingscreen.helper.editor.ui.layoutproperties.newelement = Новый элемент
+
+drippyloadingscreen.helper.ui.warning = §lВнимание!
+drippyloadingscreen.helper.ui.warning.unicode = Шрифты Юникод не полностью поддерживаются!%n%Рекомендуется отключить их в настройках языка.
+
+drippyloadingscreen.helper.creator.error.invalidfile = §c§lОшибка!%n%%n%Некорректный или отсутствующий файл!
+
+drippyloadingscreen.helper.creator.add.splash = Сплэш (Splash Text)
+drippyloadingscreen.helper.creator.add.splash.single = Одиночный сплэш
+drippyloadingscreen.helper.creator.add.splash.single.popup.headline = Введите текст сплэша.
+drippyloadingscreen.helper.creator.add.splash.single.btn.desc = Введите текст.%n%%n%§c§lТолько базовые символы!%n%Спецсимволы (@, ä и т.д.) вызовут%n%ошибки отрисовки.
+drippyloadingscreen.helper.creator.add.splash.multi = Список сплэшей
+drippyloadingscreen.helper.creator.add.splash.multi.popup.headline = Выберите файл со списком сплэшей.
+
+drippyloadingscreen.helper.creator.items.splash.bounce.on = Анимация прыжка: §aВкл
+drippyloadingscreen.helper.creator.items.splash.bounce.off = Анимация прыжка: §cВыкл
+drippyloadingscreen.helper.creator.items.splash.refresh.on = Обновление: §aВкл
+drippyloadingscreen.helper.creator.items.splash.refresh.desc = Выбирать новый сплэш при каждой%n%загрузке или открытии меню.
+drippyloadingscreen.helper.creator.items.splash.basecolor = Базовый цвет
+drippyloadingscreen.helper.creator.items.splash.rotation = Поворот
+
+drippyloadingscreen.helper.ui.tools = Инструменты
+
+drippyloadingscreen.helper.editor.elements.vanilla.managedeleted = Удаленные ванильные элементы
+drippyloadingscreen.helper.editor.elements.vanilla.managedeleted.entry.desc = §cЛКМ, чтобы вернуть видимость!
+
+drippyloadingscreen.helper.openhelper = Настроить экран загрузки
+
+drippyloadingscreen.config = Настройки DrippyLoadingScreen
+drippyloadingscreen.config.categories.logging = Логирование
+drippyloadingscreen.config.printwarnings = Выводить предупреждения
+drippyloadingscreen.config.categories.layouteditor = Редактор макетов
+drippyloadingscreen.config.editordeleteconfirmation = Подтверждение удаления
+
+drippyloadingscreen.config.categories.customization = Кастомизация
+
+drippyloadingscreen.config.showcustomizationcontrols = Кнопки управления
+drippyloadingscreen.config.showcustomizationcontrols.desc = Отображать ли кнопки кастомизации%n%в главном меню.%n%%n%§c§lВАЖНО:%n%Если вы также отключите горячие клавиши,%n%вам придется возвращать эту настройку%n%вручную через файл конфигурации.
+
+drippyloadingscreen.config.enablekeybinds = Горячие клавиши
+drippyloadingscreen.config.enablekeybinds.desc = Включить использование горячих клавиш мода.%n%%n%§c§lВАЖНО:%n%После изменения этого значения%n%требуется перезапуск игры.
+
+drippyloadingscreen.config.categories.ui = Интерфейс мода
+
+drippyloadingscreen.config.uiscale = Масштаб интерфейса
+drippyloadingscreen.config.uiscale.desc = Масштаб элементов самого мода:%n%панелей меню, контекстных окон и прочего.
+
+drippyloadingscreen.helper.editor.properties.renderingorder.desc = Должны ли §lкастомные §rэлементы%n%отрисовываться позади или поверх%n%всех ванильных элементов.
+
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.realtimeyear = Год
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.realtimemonth = Месяц
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.realtimeday = День
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.realtimehour = Час
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.realtimeminute = Минута
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.realtimesecond = Секунда
+
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.categories.player = Игрок
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.categories.other = Прочее
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.categories.realtime = Реальное время
+
+drippyloadingscreen.helper.editor.elements.vanilla.resetelement = Сбросить элемент
+drippyloadingscreen.helper.editor.elements.vanilla.resetelement.btn.desc = Сбрасывает параметры элемента%n%к значениям по умолчанию.
+
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.fps = Текущий FPS
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.percentram = Использование ОЗУ в %
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.usedram = Исп. ОЗУ в МБ
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.maxram = Макс. ОЗУ в МБ
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.targetblock = Блок под прицелом
+
+drippyloadingscreen.helper.editor.elements.scale = Масштаб
+drippyloadingscreen.helper.editor.elements.scale.btn.desc = Установить масштаб этого элемента.
+
+drippyloadingscreen.helper.ui.hud.lightmode.on = Лайт-режим: §aВкл
+drippyloadingscreen.helper.ui.hud.lightmode.off = Лайт-режим: §cВыкл
+drippyloadingscreen.helper.ui.hud.lightmode.btn.desc = Если включено, ванильные элементы HUD%n%больше нельзя будет изменить.%n%%n%Вы всё еще сможете добавлять свои элементы,%n%но правки оригинальных будут игнорироваться.%n%%n%§cВключение значительно улучшает%n%§cсовместимость с другими модами.%n%%n%§oНажмите, чтобы переключить.
+drippyloadingscreen.helper.ui.hud.lightmode.popup.msg = §c§lВы уверены?%n%%n%Это действие требует перезапуска§r.%n%%n%Вы действительно хотите §cвыйти из игры §rсейчас?
+
+drippyloadingscreen.helper.editor.elements.string.rainbow.on = Радужный режим: §aВкл
+drippyloadingscreen.helper.editor.elements.string.rainbow.off = Радужный режим: §cВыкл
+drippyloadingscreen.helper.editor.elements.string.rainbow.btn.desc = Будет ли текст переливаться RGB-цветами.
+drippyloadingscreen.helper.editor.elements.string.rainbow.speed = Скорость переливания
+drippyloadingscreen.helper.editor.elements.string.rainbow.colors = Настроить градиенты радуги
+drippyloadingscreen.helper.editor.elements.string.rainbow.colors.popup.firststartcolor = Начало первого градиента
+drippyloadingscreen.helper.editor.elements.string.rainbow.colors.popup.firstendcolor = Конец первого градиента
+drippyloadingscreen.helper.editor.elements.string.rainbow.colors.popup.secondstartcolor = Начало второго градиента
+drippyloadingscreen.helper.editor.elements.string.rainbow.colors.popup.secondendcolor = Конец второго градиента
+drippyloadingscreen.helper.editor.elements.string.rainbow.colors.popup.colordesc.line1 = Первые два цвета — градиент текста в начале затухания,
+drippyloadingscreen.helper.editor.elements.string.rainbow.colors.popup.colordesc.line2 = вторые два — градиент в конце.
+drippyloadingscreen.helper.editor.elements.string.rainbow.colors.popup.colordesc.line3 = Текст плавно переходит от первого градиента ко второму.
+
+drippyloadingscreen.helper.editor.backgroundcolor = Цвет фона
+drippyloadingscreen.helper.editor.backgroundcolor.btn.desc = Изменить цвет фона экрана загрузки.
+
+drippyloadingscreen.helper.editor.elements.vanilla.progressbar.color = Цвет полосы
+drippyloadingscreen.helper.editor.elements.vanilla.progressbar.color.btn.desc = Установить цвет полосы прогресса.
+
+drippyloadingscreen.helper.editor.elements.text.color = Цвет текста
+drippyloadingscreen.helper.editor.elements.text.color.btn.desc = Установить цвет этого текста.
+drippyloadingscreen.helper.editor.elements.text.onlybasicchars = §c§lПоддерживаются только базовые символы!%n%Использование спецсимволов (@, ä и др.)%n%приведет к ошибкам отрисовки!
+
+drippyloadingscreen.helper.creator.add.custombars.barcolor = Цвет полосы (HEX)
+drippyloadingscreen.helper.creator.add.custombars.backgroundcolor = Цвет фона полосы (HEX)
+drippyloadingscreen.helper.creator.add.custombars.bartexture = Текстура полосы
+drippyloadingscreen.helper.creator.add.custombars.bartexture.btn.desc = Своя текстура для полосы.%n%Она заменит собой цвет.
+drippyloadingscreen.helper.creator.add.custombars.backgroundtexture = Текстура фона
+drippyloadingscreen.helper.creator.add.custombars.backgroundtexture.btn.desc = Своя текстура для фона полосы.%n%Она заменит собой цвет фона.
+drippyloadingscreen.helper.creator.add.custombars.direction.left = Направление: §6Влево
+drippyloadingscreen.helper.creator.add.custombars.direction.right = Направление: §6Вправо
+drippyloadingscreen.helper.creator.add.custombars.direction.up = Направление: §6Вверх
+drippyloadingscreen.helper.creator.add.custombars.direction.down = Направление: §6Вниз
+
+drippyloadingscreen.helper.creator.add.customprogressbar = Своя полоса прогресса
+
+drippyloadingscreen.helper.editor.backgroundimage = Фоновое изображение
+drippyloadingscreen.helper.editor.backgroundimage.btn.desc = Использовать картинку в качестве фона.
+
+drippyloadingscreen.config.showgrid = Показать сетку
+drippyloadingscreen.config.showgrid.desc = Добавить сетку в редактор для удобного выравнивания.
+drippyloadingscreen.config.gridsize = Размер сетки
+drippyloadingscreen.config.gridsize.desc = Размер одного квадрата сетки.
+
+drippyloadingscreen.helper.editor.forcescale = Принудительный масштаб GUI
+drippyloadingscreen.helper.editor.forcescale.btn.desc = Заставить экран загрузки использовать конкретный масштаб.
+
+drippyloadingscreen.helper.editor.fadeout.on = Плавное затухание: §aВкл
+drippyloadingscreen.helper.editor.fadeout.off = Плавное затухание: §cВыкл
+drippyloadingscreen.helper.editor.fadeout.btn.desc = Должен ли экран загрузки плавно%n%переходить к следующему экрану.%n%%n%§cВсегда выключено, если установлен FancyMenu.
+
+drippyloadingscreen.helper.editor.properties.autoscale.on = Авто-масштаб: §aВкл
+drippyloadingscreen.helper.editor.properties.autoscale.off = Авто-масштаб: §cВыкл
+drippyloadingscreen.helper.editor.properties.autoscale.btn.desc = Drippy сам подстроит масштаб экрана загрузки,%n%чтобы ваш макет корректно выглядел на%n%любых разрешениях экрана.%n%%n%Чтобы настроить это, измените размер окна%n%так, чтобы всё выглядело хорошо, и нажмите%n%эту кнопку.%n%%n%§cТекст может выглядеть размытым на некоторых%n%§cмасштабах. Это нельзя исправить. Рекомендуется%n%§cиспользовать изображения вместо текста.
+drippyloadingscreen.helper.editor.properties.autoscale.basesize.popup.desc.line1 = Здесь вы можете задать базовое разрешение макета.
+drippyloadingscreen.helper.editor.properties.autoscale.basesize.popup.desc.line2 = Это размер окна, под который рисовался макет.
+drippyloadingscreen.helper.editor.properties.autoscale.basesize.popup.desc.line3 = Если вы создавали его в текущем окне, просто оставьте значения как есть.
+drippyloadingscreen.helper.editor.properties.autoscale.error = §c§lЧто-то пошло не так!%n%%n%Не удалось установить базовый размер.%n%Убедитесь, что числа больше 0 и корректны.
+
+drippyloadingscreen.helper.editor.windowsize.currentwidth = Текущая ширина окна
+drippyloadingscreen.helper.editor.windowsize.currentheight = Текущая высота окна
+
+drippyloadingscreen.helper.editor.layoutoptions.randommode.on = Случайный режим: §aВкл
+drippyloadingscreen.helper.editor.layoutoptions.randommode.off = Случайный режим: §cВыкл
+drippyloadingscreen.helper.editor.layoutoptions.randommode.btn.desc = Выбирает случайный макет из той же группы%n%при каждом открытии меню.%n%%n%Полезно для рандомизации фонов.
+drippyloadingscreen.helper.editor.layoutoptions.randommode.setgroup = Установить группу
+drippyloadingscreen.helper.editor.layoutoptions.randommode.setgroup.btn.desc = Указать группу для этого макета.%n%При открытии меню выбирается один макет из группы.
+drippyloadingscreen.helper.editor.layoutoptions.randommode.onlyfirsttime.on = Рандом только один раз: §aВкл
+drippyloadingscreen.helper.editor.layoutoptions.randommode.onlyfirsttime.off = Рандом только один раз: §cВыкл
+drippyloadingscreen.helper.editor.layoutoptions.randommode.onlyfirsttime.btn.desc = Рандомизировать макет каждый раз или%n%выбрать один раз на всю сессию игры.
+
+drippyloadingscreen.helper.editor.items.copyid = Копировать ID элемента
+
+drippyloadingscreen.helper.editor.items.orientation.loading-progress.setidentifier = Указать ID элемента
+drippyloadingscreen.helper.editor.items.orientation.loading-progress.setidentifier.identifiernotfound = §c§lОшибка!%n%%n%Элемент с таким ID не найден!
+drippyloadingscreen.helper.editor.items.orientation.loading-progress.setidentifier.invalidtype = §c§lОшибка!%n%%n%Этот элемент не является полосой прогресса!
+drippyloadingscreen.helper.editor.items.orientation.loading-progress.btn.desc = Позиция §lконца полосы §rкастомного прогресс-бара%n%станет точкой привязки. Этот элемент будет%n%двигаться вместе с полоской загрузки.%n%%n%§cВам нужен ID родительского элемента.%n%§cЕго можно получить через ПКМ по элементу.
+
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.loadingprogress = Прогресс загрузки в %
+
+drippyloadingscreen.helper.editor.layoutoptions.backgroundoptions.keepaspect.on = Сохранять пропорции фона: §aВкл
+drippyloadingscreen.helper.editor.layoutoptions.backgroundoptions.keepaspect.off = Сохранять пропорции фона: §cВыкл
+
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.cpuinfo = Инфо о процессоре (CPU)
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.gpuinfo = Инфо о видеокарте (GPU)
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.javaversion = Версия Java
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.osname = Имя ОС
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.openglversion = Версия OpenGL
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.randomtext = Случайный текст из TXT
+drippyloadingscreen.helper.ui.dynamicvariabletextfield.variables.randomtext.desc = Выбирает случайную строку из TXT-файла.%n%%n%Замените '<filepath>' на путь к файлу,%n%а '<interval_sec>' на интервал в секундах.%n%Интервал 0 — выбор один раз за сессию.
+
+drippyloadingscreen.back = Назад
+drippyloadingscreen.done = Готово
+drippyloadingscreen.cancel = Отмена
+
+drippyloadingscreen.audio.channel = Аудио-канал: §6{}
+drippyloadingscreen.audio.loop.on = Повтор: §aВкл
+drippyloadingscreen.audio.loop.off = Повтор: §cВыкл
+drippyloadingscreen.audio.once_per_session.on = Один раз за сессию: §aВкл
+drippyloadingscreen.audio.once_per_session.off = Один раз за сессию: §cВыкл
+drippyloadingscreen.audio.once_per_session.desc = Воспроизводить звуки только один раз за сессию.
+drippyloadingscreen.audio.manage = Управление аудио
+drippyloadingscreen.audio.manage.desc = Добавить, изменить или удалить звуки.
+drippyloadingscreen.audio.choose = Выбрать аудио
+drippyloadingscreen.audio.choose.info = §lИнфо об аудио%n%%n%{}%n%Индекс: §6{}%n%Громкость: §6{}
+drippyloadingscreen.audio.add = Добавить аудио
+drippyloadingscreen.audio.remove = Удалить аудио
+drippyloadingscreen.audio.remove.confirm = §c§lВы уверены?%n%%n%Удалить это аудио?
+drippyloadingscreen.audio.edit = Изменить аудио
+drippyloadingscreen.audio.add_or_edit = Добавить/Изменить аудио
+drippyloadingscreen.audio.sourcetype.external_local = Источник: §6Локальный
+drippyloadingscreen.audio.sourcetype.external_web = Источник: §6Веб-ссылка
+drippyloadingscreen.audio.choosesource = Выбрать источник
+drippyloadingscreen.audio.choosesource.file.invalid = §c§lОшибка!%n%%n%Файл не является корректным OGG!
+drippyloadingscreen.audio.choosesource.url = Введите URL
+drippyloadingscreen.audio.choosesource.url.invalid = §c§lНеверный URL!
+drippyloadingscreen.audio.index = Индекс
+drippyloadingscreen.audio.index.desc = Используется для определения порядка%n%воспроизведения звуков элемента.%n%%n%Звуки с одинаковым индексом перемешиваются.
+drippyloadingscreen.audio.volume = Громкость
+
+drippyloadingscreen.audio.item = Аудио
+drippyloadingscreen.audio.item.desc = Добавляет обработчик звука в макет.%n%%n%§cВиден только в редакторе!
+
+drippyloadingscreen.config.categories.loading_behaviour = Поведение при загрузке
+
+drippyloadingscreen.config.custom_sound_engine_reloading = Кастомная загрузка звука
+drippyloadingscreen.config.custom_sound_engine_reloading.desc = Изменяет поведение звукового движка,%n%чтобы звуки могли играть во время%n%загрузки игры.
+
+drippyloadingscreen.editor.extension.dummy.audio.btn.desc = §6Вам необходимо установить %n%§6§lAuudio§r§6, чтобы использовать%n%§6этот элемент.%n%%n%§cНажмите, чтобы открыть%n%§cстраницу загрузки.
+
+drippyloadingscreen.helper.editor.properties.autoscale.forced_scale_needed = Вам нужно установить §lпринудительный масштаб§n%перед использованием авто-масштабирования!%n%%n%Рекомендуется значение 2.%n%%n%§cДля настройки нажмите ПКМ по фону%n%§cи выберите §lПринудительный масштаб GUI§r.
