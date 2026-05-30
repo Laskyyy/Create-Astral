@@ -106,6 +106,8 @@ Hephaestus has entered LTS for 1.18.2, meaning that some of the oldest bugs in t
   - Added the ability to fish in Shimmer
   - Added Desert Flowers that spawn in the Martian Desert
   - Fixed Yttr's Void Shelving Unit to work properly
+- Updated Adopt A Floppa to 1.2.2 (7e35eac) @ethanicusss
+  - Added the Sloppa
 
 #### Gameplay-changing
 
