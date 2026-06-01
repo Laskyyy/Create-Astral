@@ -53,8 +53,8 @@
 
   "comment_2": "tooltips",
 
-  "tooltip.kubejs.broken_fire_resistant_fragile_sheet_block": "Throw Lingering Fire Resistance onto Fragile Sheet Blocks to create. Wrenchable.",
-  "tooltip.kubejs.fire_resistant_fragile_sheet_block": "Throw Lingering Fire Resistance onto Fragile Sheet Blocks to create. Wrenchable.",
+  "tooltip.kubejs.broken_fire_resistant_fragile_sheet_block": "Throw lingering Fire Resistance onto Fragile Sheet Blocks to create. Wrenchable.",
+  "tooltip.kubejs.fire_resistant_fragile_sheet_block": "Throw lingering Fire Resistance onto Fragile Sheet Blocks to create. Wrenchable.",
   "tooltip.kubejs.fragile_sheet_block": "Wrenchable.",
   "tooltip.kubejs.broken_fragile_sheet_block": "Wrenchable.",
   "tooltip.kubejs.shimmer": "Use the Explorer's Compass to look for underground \"Shimmer Lakes\"",
@@ -2309,7 +2309,7 @@
   "ftbquests.chapter.chapter_4.quests29.description0": "Crouch and Right-Click to open its UI. From there, Biofuel can be deposited. It can store up to three buckets; that being said, it's a smart idea to keep some spare. Being stranded is the worst thing that can happen to you.",
   "ftbquests.chapter.chapter_4.quests29.description5": "Right-click to enter the rocket. After pressing Spacebar, you'll launch off and gain access to a planetary selection system. You can't explore every planet just yet, but you'll still have some new options.",
   "ftbquests.chapter.chapter_4.quests29.description8": "After selecting a location, you'll descend to the planet in a lander. Spacebar will decelerate it. Make sure you do not hit the ground too fast - &6the lander WILL explode O_O&r - and you'll be left with no way home. The truly paranoid will take two rockets, and will hold Spacebar for the full descent. F5 can help with the landing process.",
-  "ftbquests.chapter.chapter_4.quests29.description11": "Happy spacefaring! You've also gained access to &6Orbit&r, hosting many ores, and the &6Moon Debris&r.",
+  "ftbquests.chapter.chapter_4.quests29.description11": "Happy spacefaring! You've also gained access to &6Orbits&r, hosting many ores, and the &6Moon Debris&r.",
   "ftbquests.chapter.chapter_4.quests30.title": "Rocket Fin Casting",
   "ftbquests.chapter.chapter_4.quests30.subtitle": "Pour Molten Gold over a Fragile Fin to create a cast shape.",
   "ftbquests.chapter.chapter_4.quests30.description": "By casting the Fragile Fin, it will be ready to further process into a more stable material.",
