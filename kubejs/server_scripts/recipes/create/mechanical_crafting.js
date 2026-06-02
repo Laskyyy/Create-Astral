@@ -10,6 +10,17 @@
     /** @type {MechanicalCraftingRecipe[]} */
     const mechanicalCraftingRecipes = [
       {
+        output: "astraladditions:rapier",
+        pattern: ["   P", " EP ", "OFO ", "OI  "],
+        key: {
+          E: "techreborn:electronic_circuit",
+          P: "createastral:prismatic_crystal",
+          F: "astraladditions:fragile_item",
+          I: "createaddition:iron_rod",
+          O: "ad_astra:ostrum_plate",
+        },
+      },
+      {
         output: "ad_astra:calorite_tank",
         pattern: [" C ", "COC", " C "],
         key: {

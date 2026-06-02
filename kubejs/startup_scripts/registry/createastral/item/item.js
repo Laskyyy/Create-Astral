@@ -29,6 +29,7 @@
     event.create("createastral:uranium_residue").rarity("uncommon");
     event.create("createastral:navigation_mechanism");
     event.create("createastral:living_mechanism");
+    event.create("createastral:sputum_bottle");
     event.create("createastral:coin", "create:sequenced_assembly").displayName("Golden Coin");
     event.create("createastral:golden_bowl").displayName("Golden Bowl");
     event
@@ -49,6 +50,7 @@
     event.create("createastral:protopork", "create:sequenced_assembly");
     event.create("createastral:protorabbit", "create:sequenced_assembly");
     event.create("createastral:protoegg", "create:sequenced_assembly");
+    event.create("createastral:dragons_sputum", "create:sequenced_assembly");
     event.create("createastral:quadrocopter_blueprint").texture("create:item/schematic");
     event.create("createastral:gyrodyne_blueprint").texture("create:item/schematic");
     event.create("createastral:biplane_blueprint").texture("create:item/schematic");

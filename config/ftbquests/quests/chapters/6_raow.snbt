@@ -265,7 +265,7 @@
 				}
 			}
 			x: 18.0d
-			y: -1.0d
+			y: 1.0d
 			description: ["{ftbquests.chapter.6_raow.quests4.description}"]
 			dependencies: ["3705B91C0D4EA2A0"]
 			optional: true
@@ -290,8 +290,8 @@
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests5.title}"
-			x: 19.5d
-			y: 0.75d
+			x: 18.0d
+			y: -0.75d
 			shape: "square"
 			description: ["{ftbquests.chapter.6_raow.quests5.description}"]
 			dependencies: ["4E9CF88D314F6843"]
@@ -1687,6 +1687,12 @@
 					item: "yttr:ir_lazor_emitter"
 				}
 			]
+			rewards: [{
+				id: "1A29B5BE39F28223"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1747526165463332193L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests57.title}"
@@ -1862,7 +1868,7 @@
 			}]
 		}
 		{
-			x: 16.0d
+			x: 16.5d
 			y: -3.5d
 			subtitle: "{ftbquests.chapter.6_raow.quests63.subtitle}"
 			description: ["{ftbquests.chapter.6_raow.quests63.description}"]
@@ -1883,6 +1889,108 @@
 				id: "21D6FC083CB0F3FC"
 				type: "item"
 				item: "astralfoods:shimmered_apple"
+			}]
+		}
+		{
+			x: 20.25d
+			y: 0.0d
+			size: 1.5d
+			shape: "heart"
+			subtitle: "{ftbquests.chapter.6_raow.quests64.subtitle}"
+			description: [
+				"{ftbquests.chapter.6_raow.quests64.description0}"
+				"{ftbquests.chapter.6_raow.quests64.description2}"
+				""
+				"{ftbquests.chapter.6_raow.quests64.description3}"
+				"{ftbquests.chapter.6_raow.quests64.description4}"
+				"{ftbquests.chapter.6_raow.quests64.description5}"
+				""
+				"{ftbquests.chapter.6_raow.quests64.description6}"
+			]
+			dependencies: ["17794A6A366C8497"]
+			id: "1ECEFEADF3882708"
+			tasks: [{
+				id: "4D40E53F617B6D82"
+				type: "item"
+				item: {
+					id: "astraladditions:astral_hoe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "4F3E3579590B181C"
+				type: "item"
+				item: {
+					id: "create:sand_paper"
+					Count: 1b
+					tag: {
+						RepairCost: 0
+						Damage: 0
+						display: {
+							Name: "{\"text\":\"Congratulations\"}"
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.6_raow.quests65.title}"
+			icon: "createdeco:green_decal"
+			x: 24.5d
+			y: -7.5d
+			description: [
+				"{ftbquests.chapter.6_raow.quests65.description0}"
+				""
+				"{ftbquests.chapter.6_raow.quests65.description2}"
+				""
+				"{ftbquests.chapter.6_raow.quests65.description3}"
+				""
+				"{ftbquests.chapter.6_raow.quests65.description4}"
+				""
+				"{ftbquests.chapter.6_raow.quests65.description5}"
+				""
+				"{ftbquests.chapter.6_raow.quests65.description6}"
+				"{ftbquests.chapter.6_raow.quests65.description7}"
+			]
+			hide_dependency_lines: true
+			dependencies: ["07A143B6DCF06587"]
+			id: "46B2EF238C9D324A"
+			tasks: [{
+				id: "691180CF79F09367"
+				type: "checkmark"
+				title: "{ftbquests.chapter.6_raow.quests65.tasks0.title}"
+			}]
+		}
+		{
+			x: 15.5d
+			y: -3.0d
+			subtitle: "{ftbquests.chapter.6_raow.quests66.subtitle}"
+			description: [
+				"{ftbquests.chapter.6_raow.quests66.description0}"
+				""
+				"{ftbquests.chapter.6_raow.quests66.description2}"
+				""
+				"{ftbquests.chapter.6_raow.quests66.description3}"
+				""
+				"{ftbquests.chapter.6_raow.quests66.description4}"
+				""
+				"{ftbquests.chapter.6_raow.quests66.description5}"
+			]
+			dependencies: ["7001A75C47B1DA1A"]
+			id: "4591410BA0D27646"
+			tasks: [{
+				id: "491E25E1F31A9B66"
+				type: "item"
+				item: "yttr:dsu"
+			}]
+			rewards: [{
+				id: "63B93C7A32D118F4"
+				type: "item"
+				item: "reinfchest:diamond_chest"
+				count: 2
 			}]
 		}
 	]

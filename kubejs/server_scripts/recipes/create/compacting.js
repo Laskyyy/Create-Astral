@@ -333,11 +333,11 @@
         heat: "heated",
       },
       {
-        output: "createastral:blast-resistant_doncrete",
+        output: Fluid.of("kubejs:blast-resistant_dement", BUCKET),
         inputs: [
           "#c:concrete_powder",
           Item.of("createastral:lime", 2),
-          Item.of("createastral:desh_dust", 12),
+          Item.of("createastral:desh_dust", 18),
           { fluid: "minecraft:lava", amount: BUCKET },
 		],
         heat: "heated",
@@ -456,6 +456,15 @@
         output: "createbigcannons:steel_screw_lock",
         inputs: [Item.of("astraladditions:steel_ring", 2)],
         heat: "heated",
+      },
+      {
+        output: "astraladditions:soulsteal_dagger",
+        inputs: [
+          "mcdw:dagger_soul_knife",
+          { fluid: "xpcrystals:soul", amount: BUCKET },
+          { fluid: "tconstruct:molten_steel", amount: BUCKET / 2 },
+        ],
+        heat: "superheated",
       },
     ];
     compactingRecipes.forEach((recipe) => {

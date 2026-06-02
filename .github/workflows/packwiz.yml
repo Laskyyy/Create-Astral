@@ -11,10 +11,6 @@ on:
         description: Create serverpack
         required: true
         default: "true"
-      publish:
-        description: Publish version to CurseForge
-        required: false
-        default: "false"
   pull_request:
     branches: ["main", "Astral-Experimental"]
   push:
@@ -22,58 +18,66 @@ on:
 
 jobs:
   build:
+    name: Build Modpack
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
-      - name: setup jdk 17
-        uses: actions/setup-java@v4
+      - name: Setup JDK 17
+        uses: actions/setup-java@v5
         with:
           java-version: 17
           distribution: "temurin"
 
-      - name: Get latest packwiz binary
+      - name: Download packwiz binary # now with static releases instead of action artifacts!
         id: download-packwiz
-        uses: dawidd6/action-download-artifact@v6
+        uses: robinraju/release-downloader@v1.13
         with:
-          workflow: go.yml
-          branch: main
-          name: Linux 64-bit x86
-          repo: packwiz/packwiz
+          repository: The-Shortman/packwiz
+          tag: "v1.0.0"
+          fileName: Linux_x86-64.zip
+          extract: true
 
       - name: Make packwiz binary executable
+        shell: bash
         run: chmod +x ./packwiz
 
       - name: Restore cached mod downloads
         id: cache-mods-restore
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v5
         with:
           path: /home/runner/.cache/packwiz/cache
           key: cached-mods
           restore-keys: |
             cached-mods-
 
-      - name: Construct version string
+      - name: Construct version strings
         id: construct-base-name
+        shell: bash
         run: |
-          VERSION_NUMBER="$(echo "$(<pack.toml)" | grep "version =" | cut -d '"' -f 2)"
-          echo "ASTRAL_CF_NAME=Create-Astral-CurseForge-$VERSION_NUMBER-${{github.run_number}}" >> "$GITHUB_OUTPUT"
-          echo "ASTRAL_SERVER_NAME=Create-Astral-Server-$VERSION_NUMBER-${{github.run_number}}" >> "$GITHUB_OUTPUT"
+          MODPACK_VERSION_NUMBER="$(echo "$(<pack.toml)" | grep "version =" | cut -d '"' -f 2)"
+          echo "ASTRAL_CF_NAME=Create-Astral-CurseForge-$MODPACK_VERSION_NUMBER-${{github.run_number}}" >> "$GITHUB_OUTPUT"
+          echo "ASTRAL_SERVER_NAME=Create-Astral-Server-$MODPACK_VERSION_NUMBER-${{github.run_number}}" >> "$GITHUB_OUTPUT"
+          FABRIC_VERSION_NUMBER="$(echo "$(<pack.toml)" | grep "fabric =" | cut -d '"' -f 2)"
+          echo "FABRIC_VERSION=$FABRIC_VERSION_NUMBER" >> "$GITHUB_OUTPUT"
 
       # servercore needs to be turned into a .toml for the curseforge export as CF won't accept it as an override jar
       - name: Prepare for CurseForge client zip creation
+        shell: bash
         run: |
           mkdir temp-jar
           mv mods/servercore* ./temp-jar
-          ./packwiz cf add ServerCore
+          ./packwiz cf add https://www.curseforge.com/minecraft/mc-mods/servercore/files/4492100
 
       - name: Create CurseForge client zip
+        shell: bash
         run: |
           ./packwiz curseforge export -o "${{steps.construct-base-name.outputs.ASTRAL_CF_NAME}}.zip"
           ./packwiz refresh
 
       - name: Clean up after CurseForge client zip creation
+        shell: bash
         run: |
           ./packwiz remove servercore
           mv temp-jar/servercore* ./mods
@@ -89,7 +93,7 @@ jobs:
 
       - name: Download packwiz-installer-bootstrap
         if: ${{ github.event.inputs.serverpack }}
-        uses: robinraju/release-downloader@v1.10
+        uses: robinraju/release-downloader@v1.13
         with:
           repository: packwiz/packwiz-installer-bootstrap
           latest: true
@@ -100,7 +104,9 @@ jobs:
         run: |
           cd server
           java -jar ../packwiz-installer-bootstrap.jar -g -s server ../pack.toml
+          curl "https://meta.fabricmc.net/v2/versions/loader/1.18.2/${{steps.construct-base-name.outputs.FABRIC_VERSION}}/0.11.1/server/jar" --output server.jar
           rm -f packwiz-installer.jar
+          rm -f packwiz.json
           ls -l
           cd ../
 
@@ -121,25 +127,14 @@ jobs:
 
       - name: Upload client pack to GitHub
         if: ${{ github.event.inputs.artifacts }}
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ${{steps.construct-base-name.outputs.ASTRAL_CF_NAME}}
           path: ./client
 
       - name: Upload serverpack to GitHub
         if: ${{ github.event.inputs.serverpack && github.event.inputs.artifacts }}
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ${{steps.construct-base-name.outputs.ASTRAL_SERVER_NAME}}
           path: ./server
-
-  # This job publishes the modpack to CurseForge
-  publish:
-    runs-on: ubuntu-latest
-    needs: build
-    if: ${{github.event.inputs.publish}}
-    steps:
-      - name: Prepare files
-        uses: actions/download-artifact@v4
-      - name: List files
-        run: ls -l

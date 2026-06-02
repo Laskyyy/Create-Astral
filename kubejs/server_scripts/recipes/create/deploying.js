@@ -10,6 +10,11 @@
     /** @type {DeployingRecipe[]} */
     const deployingRecipes = [
       {
+        output: "minecraft:crying_obsidian",
+        appliedTo: "minecraft:obsidian",
+        deployerInput: "tconstruct:ender_slime_grass_seeds",
+      },
+      {
         output: "createastral:cheesier_block",
         appliedTo: "ad_astra:cheese_block",
         deployerInput: "ad_astra:cheese",

@@ -26,5 +26,20 @@
 
     "material.tconstruct.iron.encyclopedia": "Causes mining blocks and hitting mobs to attract nearby items",
 
+    "modifier.tconstruct.pockets.description": "The pants have pockets, allowing you to store additional items which can be accessed by sneaking and interacting",
+    "modifier.tconstruct.tool_belt.description": "Interacting with the leggings allows swapping the hotbar",
+    "recipe.tconstruct.modifier.netherite_requirements": "Netherite requires either diamond or emerald to be applied",
+
+    "advancements.tconstruct.smeltery.structure.description": "The smeltery controller is disabled in this pack! Use Create Mixers to make alloys",
+    "advancements.tconstruct.smeltery.tinkers_anvil.description": "Craft a Tinker's Anvil using alloys from the mixer!",
+    "advancements.tconstruct.foundry.alloyer.description": "The alloyer is disabled in this pack! Use Create Mixers to make alloys",
+    "advancements.tconstruct.foundry.structure.description": "Cast a foundry controller from molten obsidian, build a foundry, and open the foundry UI",
+    "advancements.tconstruct.world.sky_island.description": "Locate a skyslime island in the sky. They also have an alternative variant made of earthslime!",
+    "advancements.tconstruct.world.blood_island.description": "Blood islands are disabled, but you can still find blood blocks (or make them yourself!)",
+    "advancements.tconstruct.world.ender_island.description": "Enderslime islands don't exist, you'll find enderslime crystals in another dimension...",
+    "advancements.tconstruct.world.clay_island.title": "Shimmering Island",
+    "advancements.tconstruct.world.clay_island.description": "Clay islands in the sky were taken over by Shimmer — a new mysterious substance...",
+    "advancements.tconstruct.world.slime_sling.description": "Sufficiently use each of the 4 slime sling types (Not obtainable in survival! Slimeslings and Skyslime Slings are disabled in this pack)",
+
     "death.attack.fusion" : "%1$s experienced radiance"
 }

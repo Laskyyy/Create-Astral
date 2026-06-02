@@ -584,6 +584,7 @@
 				"00F3EA4A8FB5B11B"
 				"08BC73F24043BB91"
 			]
+			dependency_requirement: "one_completed"
 			size: 1.25d
 			id: "0A71AC65808AFBE5"
 			tasks: [{
@@ -656,6 +657,8 @@
 				"{ftbquests.chapter.chapter_3.quests14.description5}"
 				""
 				"{ftbquests.chapter.chapter_3.quests14.description7}"
+				""
+				"{ftbquests.chapter.chapter_3.quests14.description9}"
 			]
 			dependencies: ["267CD8D04921402E"]
 			id: "343B8B2BF76B1D3B"
@@ -2091,12 +2094,12 @@
 						tag: {
 							items: [
 								{
+									match_nbt: 1b
 									id: "techreborn:cell"
 									Count: 1b
 									tag: {
 										fluid: "minecraft:lava"
 									}
-									match_nbt: true
 								}
 								{
 									id: "minecraft:lava_bucket"
@@ -2470,14 +2473,14 @@
 			id: "08550B021D54D2DF"
 			tasks: [
 				{
-					id: "5D343FA9E913F5C9"
-					type: "item"
-					item: "create:display_link"
-				}
-				{
 					id: "10C34F210300282C"
 					type: "item"
 					item: "create:display_board"
+				}
+				{
+					id: "5D343FA9E913F5C9"
+					type: "item"
+					item: "create:display_link"
 				}
 			]
 			rewards: [
@@ -2723,6 +2726,7 @@
 			]
 			hide_dependency_lines: true
 			dependencies: ["00F3EA4A8FB5B11B"]
+			min_required_tasks: 1
 			id: "08BC73F24043BB91"
 			tasks: [
 				{
@@ -3129,6 +3133,169 @@
 				type: "item"
 				item: "tconstruct:copper_can"
 				count: 9
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.0d
+			subtitle: "{ftbquests.chapter.chapter_3.quest_list_filter.subtitle}"
+			description: ["{ftbquests.chapter.chapter_3.quest_list_filter.description0}"]
+			dependencies: ["70799237323247B7"]
+			id: "4F9CA33C22736CCE"
+			tasks: [{
+				id: "769AA80EF3A18B16"
+				type: "item"
+				item: "create:filter"
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.chapter_3.item_filtering.title}"
+			icon: "create:brass_funnel"
+			x: 0.0d
+			y: 5.5d
+			subtitle: "{ftbquests.chapter.chapter_3.item_filtering.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_3.item_filtering.description0}"
+				""
+				"{ftbquests.chapter.chapter_3.item_filtering.description2}"
+				""
+				"{image:createastral:textures/item/item_filtering.png width:200 height:130 align:1}"
+			]
+			dependencies: ["710C81D7DE6C7FCB"]
+			id: "12FB7B2190988210"
+			tasks: [{
+				id: "37288980A4C4AB8A"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [
+				{
+					id: "58BCC559203A7E37"
+					type: "item"
+					item: "extended_drawers:single_drawer"
+				}
+				{
+					id: "01FC45F0AA8D5FB4"
+					type: "item"
+					item: "extended_drawers:lock"
+				}
+				{
+					id: "2519BC237AC05E18"
+					type: "item"
+					item: "create:andesite_funnel"
+				}
+			]
+		}
+		{
+			title: "{ftbquests.chapter.chapter_4.quests37.title}"
+			x: 2.5d
+			y: 1.5d
+			subtitle: "{ftbquests.chapter.chapter_4.quests37.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_4.quests37.description0}"
+				""
+				""
+				"{ftbquests.chapter.chapter_4.quests37.description3}"
+			]
+			dependencies: ["62DAEDF65FB2226B"]
+			min_required_tasks: 1
+			id: "0ADFE1D87DB51856"
+			tasks: [
+				{
+					id: "75F20E3FC26D6824"
+					type: "item"
+					item: "techreborn:basic_storage_unit"
+				}
+				{
+					id: "77270AF64AD16A22"
+					type: "item"
+					item: "techreborn:basic_tank_unit"
+				}
+			]
+			rewards: [{
+				id: "03284E024A33A23B"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 5253492355592689915L
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.5d
+			shape: "heart"
+			subtitle: "{ftbquests.chapter.chapter_3.quests82.subtitle}"
+			description: [
+				"{ftbquests.chapter.chapter_3.quests82.description0}"
+				""
+				"{ftbquests.chapter.chapter_3.quests82.description2}"
+				"{ftbquests.chapter.chapter_3.quests82.description3}"
+				""
+				"{ftbquests.chapter.chapter_3.quests82.description4}"
+			]
+			dependencies: ["0F4C452C9C9AB1B8"]
+			id: "564271DCFE01B695"
+			tasks: [{
+				id: "157A6BF25140B459"
+				type: "item"
+				item: "astraladditions:parry_shield"
+			}]
+			rewards: [{
+				id: "3BB76FF2FC966AA3"
+				type: "item"
+				item: "create:polished_rose_quartz"
+				count: 4
+			}]
+		}
+		{
+			title: "Beta Swords"
+			x: 6.5d
+			y: -6.0d
+			subtitle: "\"I'm old!\""
+			description: [
+				"{ftbquests.chapter.chapter_3.quests83.description0}"
+				""
+				"{ftbquests.chapter.chapter_3.quests83.description2}"
+				""
+				"{ftbquests.chapter.chapter_3.quests83.description3}"
+			]
+			hide_dependency_lines: true
+			dependencies: ["00F3EA4A8FB5B11B"]
+			min_required_tasks: 1
+			id: "76D995DCE0C69051"
+			tasks: [
+				{
+					id: "031CA3E2D4D0518B"
+					type: "item"
+					item: {
+						id: "astraladditions:beta_iron_weapon"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4194209321A44F71"
+					type: "item"
+					item: {
+						id: "astraladditions:beta_diamond_weapon"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "50F3096EC938AC6F"
+				type: "item"
+				item: {
+					id: "mcdw:hammer_great_hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
 			}]
 		}
 	]
