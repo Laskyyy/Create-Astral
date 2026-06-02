@@ -15,6 +15,11 @@
         deployerInput: "tconstruct:ender_slime_grass_seeds",
       },
       {
+        output: "createendertransmission:chunk_loader",
+        appliedTo: "minecraft:beacon",
+        deployerInput: "createastral:astral_singularity",
+      },
+      {
         output: "createastral:cheesier_block",
         appliedTo: "ad_astra:cheese_block",
         deployerInput: "ad_astra:cheese",

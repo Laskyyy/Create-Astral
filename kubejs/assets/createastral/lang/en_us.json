@@ -432,6 +432,8 @@
   "block.createastral.rocket_casing": "Rocket Casing",
   "block.createastral.moonset_stone": "Moonset Stone",
   "block.createastral.cogwheel_skull": "Cogwheel Skull",
+  "block.createastral.tampered_beacon": "Tampered Beacon",
+  "block.createastral.incomplete_slop": "Incomplete Slop",
 
   "item.astralfoods.ambrosia": "Ambrosia",
   "item.astralfoods.chocolate_ice_cream": "Chocolate Ice Cream",

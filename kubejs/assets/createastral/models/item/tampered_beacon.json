@@ -1,0 +1,6 @@
+{
+	"parent": "block/beacon",
+	"textures": {
+		"beacon": "createastral:block/voidtouched_compound"
+	}
+}
