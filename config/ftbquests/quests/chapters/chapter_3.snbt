@@ -2473,14 +2473,14 @@
 			id: "08550B021D54D2DF"
 			tasks: [
 				{
-					id: "5D343FA9E913F5C9"
-					type: "item"
-					item: "create:display_link"
-				}
-				{
 					id: "10C34F210300282C"
 					type: "item"
 					item: "create:display_board"
+				}
+				{
+					id: "5D343FA9E913F5C9"
+					type: "item"
+					item: "create:display_link"
 				}
 			]
 			rewards: [
