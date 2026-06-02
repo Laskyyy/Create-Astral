@@ -30,15 +30,14 @@ jobs:
           java-version: 17
           distribution: "temurin"
 
-      - name: Get latest packwiz binary
+      - name: Download packwiz binary # now with static releases instead of action artifacts!
         id: download-packwiz
-        uses: dawidd6/action-download-artifact@v21
+        uses: robinraju/release-downloader@v1.13
         with:
-          workflow: go.yml
-          branch: main
-          name: Linux 64-bit x86
-          # temorary fix for packwiz not running a go action since february, will figure out a better solution later
-          repo: The-Shortman/packwiz
+          repository: The-Shortman/packwiz
+          tag: "v1.0.0"
+          fileName: Linux_x86-64.zip
+          extract: true
 
       - name: Make packwiz binary executable
         shell: bash
