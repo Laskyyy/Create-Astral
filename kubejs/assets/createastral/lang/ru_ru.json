@@ -3129,7 +3129,7 @@
   "ftbquests.chapter.read_the_questbook.quests22.title": "Наказание за смерть",
   "ftbquests.chapter.read_the_questbook.quests22.subtitle": "[Экспериментальная фича!]",
   "ftbquests.chapter.read_the_questbook.quests22.description0": "В версии 2.1.5 был добавлен новый мод «&6The Death Penalty&r». Он добавляет различные штрафы за смерть: возрождение &6голодным&r и увеличенную &6потерю опыта&r.",
-  "ftbquests.chapter.read_the_questbook.quests22.description1": "Для включения экспериментального режима выполните коменду «&6/gamerule KeepInventory true&r» в статусе оператора. Смерть с включённым keepInventory теперь будет удалять половину ваших сырых руд, еды, сокровищ (например, зачарованных книг) и боеприпасов (пуль). Это сделано, чтобы не позволять игрокам в мирах с keepInventory использовать смерть для возвращения домой после исследования.",
+  "ftbquests.chapter.read_the_questbook.quests22.description1": "Для включения экспериментального режима выполните коменду «&6/gamerule keepInventory true&r» в статусе оператора. Смерть с включённым keepInventory теперь будет удалять половину ваших сырых руд, еды, сокровищ (например, зачарованных книг) и боеприпасов (пуль). Это сделано, чтобы не позволять игрокам в мирах с keepInventory использовать смерть для возвращения домой после исследования.",
   "ftbquests.chapter.read_the_questbook.quests22.description2": "Чтобы увидеть полный список всего, что быдут удаляться, наберите «&6$death_penalty&r» в REI. Предполагается включить keepInventory по умолчанию в следующем обновлении, если эта фича понравится игрокам, так что оставляйте обратную связь в Discord!",
 
   "ftbquests.chapter.culinary_delights.title": "Кулинарные радости",
