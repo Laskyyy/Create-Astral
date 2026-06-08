@@ -552,8 +552,6 @@
   "item.minecraft.tipped_arrow.effect.turtle_master": "Bullet of the Turtle Master",
   "item.minecraft.tipped_arrow.effect.slow_falling": "Bullet of Slow Falling",
 
-  "item.tconstruct.ender_slime_grass_seeds": "Ender Slimy Seeds",
-
   "comment_5": "ftbquests",
 
   "ftbquests.data.data.title": "Create: Astral",
@@ -565,7 +563,7 @@
   "ftbquests.chapter.6.quests0.description0": "A wasteland above, and the bowels below. Something about this place is familiar, yet twisted.",
   "ftbquests.chapter.6.quests0.description2": "The same force that devoured The Moon, I feel it. It formed an entire ecosystem here - an entire world as its nest.",
   "ftbquests.chapter.6.quests1.subtitle": "Inevitable",
-  "ftbquests.chapter.6.quests1.description0": "&5The End&r swallows all. Dimensions born and voided. ",
+  "ftbquests.chapter.6.quests1.description0": "&5The End&r swallows all. Dimensions born and voided.",
   "ftbquests.chapter.6.quests1.description2": "Yet there's something intriguing about an inevitable End. Harvest the fruits. We have everything we need for a greater form of Astral Conduit.",
   "ftbquests.chapter.6.quests2.subtitle": "The End, Crystallized",
   "ftbquests.chapter.6.quests2.description0": "A foul odour, like the inside of an animal, fills the air of the world below the surface. The ground is slimy, and purple crystals can be seen within.",
@@ -2455,7 +2453,7 @@
   "ftbquests.chapter.chapter_4.quests68.description6": "Very inventive engineers might be able to make a quarry with this, as machines like Drills work on structures being moved around via Rope Pulleys much like they do on Mechanical Bearings, Trains, and Cart Contraptions. This applies to Pistons and Gantries too.",
   "ftbquests.chapter.chapter_4.quests69.title": "Useful Moving Contraption #3",
   "ftbquests.chapter.chapter_4.quests69.subtitle": "This allows you to move things back and forth.",
-  "ftbquests.chapter.chapter_4.quests69.description0": "The Mechanical Piston can push connected contraptions forwards. The sticky version can push them back and forth. They resemble regular Minecraft Pistons, although their range can be made longer than their Redstone counterpart.",
+  "ftbquests.chapter.chapter_4.quests69.description0": "The Mechanical Piston can push connected structures forwards. The sticky version can push them back and forth. They resemble regular Minecraft Pistons, although their range can be made longer than their Redstone counterpart.",
   "ftbquests.chapter.chapter_4.quests69.description3": "Combined with a Sequenced Gearshift, they can be used to make elevators. Weird how that works.",
   "ftbquests.chapter.chapter_4.quests69.description6": "(A lowkey practical use for them is pushing blocks made in a Cobblestone or Basalt Generator to a Drill placed in a more convenient spot.)",
   "ftbquests.chapter.chapter_4.quests70.title": "Let's Set Up Fuel Production Line",
@@ -3128,8 +3126,8 @@
   "ftbquests.chapter.read_the_questbook.quests22.title": "The Death Penalty",
   "ftbquests.chapter.read_the_questbook.quests22.subtitle": "[Experimental Feature!]",
   "ftbquests.chapter.read_the_questbook.quests22.description0": "A new mod, called \"&6The Death Penalty&r\" has been added in 2.1.5. This mod applies various penalties for dying: respawning with &6less hunger&r and increased &6XP loss&r.",
-  "ftbquests.chapter.read_the_questbook.quests22.description1": "To enable the experimental mode, run \"&6/gamerule KeepInventory true&r\" as an operator. Dying with Keep Inventory on will now delete half of your Raw Ores, Food, Treasure Items like Enchanted Books, and Ammo like bullets. This is to discourage players in Keep Inventory worlds to use dying as a method of returning home after exploration.",
-  "ftbquests.chapter.read_the_questbook.quests22.description2": "To see a complete list of items that will be lost, search \"&6$death_penalty&r\" in REI. The intention is to enable Keep Inventory by default next update if this feature is liked, so give us feedback on the Discord!",
+  "ftbquests.chapter.read_the_questbook.quests22.description1": "To enable the experimental mode, run \"&6/gamerule KeepInventory true&r\" as an operator. Dying with keepInventory on will now delete half of your Raw Ores, Food, Treasure Items like Enchanted Books, and Ammo like bullets. This is to discourage players in keepInventory worlds to use dying as a method of returning home after exploration.",
+  "ftbquests.chapter.read_the_questbook.quests22.description2": "To see a complete list of items that will be lost, search \"&6$death_penalty&r\" in REI. The intention is to enable keepInventory by default next update if this feature is liked, so give us feedback on the Discord!",
 
   "ftbquests.chapter.culinary_delights.title": "Culinary Delights",
   "ftbquests.chapter.culinary_delights.quests0.title": "Welcome to Astral Foods!",
