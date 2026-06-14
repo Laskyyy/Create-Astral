@@ -18,6 +18,7 @@
       { base: "farmersdelight:skillet", addition: "minecraft:water_bucket", output: "farmersdelight:cooking_pot" },
       { base: "reinfchest:diamond_chest", addition: "minecraft:netherite_ingot", output: "reinfchest:netherite_chest" },
       { base: "create:lapis_sheet", addition: "create:copper_sheet", output: "createastral:copper_clad_lapis_board" },
+      { base: "minecraft:netherite_hoe", addition: "create:chromatic_compound", output: "astraladditions:astral_hoe" },
     ];
     smithingRecipes.forEach((recipe) => {
       event.smithing(recipe.output, recipe.base, recipe.addition);

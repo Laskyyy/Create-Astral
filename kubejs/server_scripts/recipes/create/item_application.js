@@ -15,6 +15,11 @@
         appliedItem: { tag: "c:plates/obsidian" },
       },
       {
+        output: { item: "astraladditions:steel_casing" },
+        appliedTo: { item: "dbe:steel_plating" },
+        appliedItem: { item: "ad_astra:steel_plate" },
+      },
+      {
         output: { item: "techreborn:advanced_machine_casing" },
         appliedTo: { item: "techreborn:basic_machine_casing" },
         appliedItem: { item: "ad_astra:steel_plate" },

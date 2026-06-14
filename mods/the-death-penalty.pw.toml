@@ -1,0 +1,13 @@
+name = "The Death Penalty"
+filename = "death_penalty-1.2.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "98db3b464285b757a8d65cab034a925a2636cd38"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7676316
+project-id = 1340337

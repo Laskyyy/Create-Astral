@@ -14,6 +14,12 @@
     /** @type {FillingRecipe[]} */
     const fillingRecipes = [
       {
+        input: "compressor:compressed_cobblestone",
+        output: "minecraft:glowstone",
+        fluid: "tconstruct:blazing_blood",
+        amount: BUCKET / 4,
+      },
+	  {
         input: "createastral:printed_copper_clad_lapis_board",
         output: "create:integrated_circuit",
         fluid: "techreborn:sulfuric_acid",

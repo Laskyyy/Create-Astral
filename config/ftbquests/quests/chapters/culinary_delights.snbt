@@ -26,13 +26,14 @@
 			]
 			hide_dependency_lines: false
 			dependencies: ["5CD05F26EB5C6754"]
+			hide: true
 			size: 2.0d
 			optional: true
 			id: "6BC3D5174DDB02DC"
 			tasks: [{
 				id: "46A3120BD0575B02"
 				type: "checkmark"
-				title: "Welcome to Astral Foods!"
+				title: "{ftbquests.chapter.culinary_delights.quests0.tasks0.title}"
 			}]
 			rewards: [{
 				id: "307F742F598AF6B2"
@@ -196,9 +197,9 @@
 			description: [
 				"{ftbquests.chapter.culinary_delights.quests11.description0}"
 				""
-				"ftbquests.chapter.culinary_delights.quests11.description1"
+				"{ftbquests.chapter.culinary_delights.quests11.description1}"
 				""
-				"ftbquests.chapter.culinary_delights.quests11.description2"
+				"{ftbquests.chapter.culinary_delights.quests11.description2}"
 			]
 			dependencies: ["12A1347D9DBCE55F"]
 			id: "71289D68787E78C4"
@@ -343,11 +344,11 @@
 			x: 4.5d
 			y: -1.5d
 			description: [
-				"ftbquests.chapter.culinary_delights.quests6.description0"
+				"{ftbquests.chapter.culinary_delights.quests6.description0}"
 				""
-				"ftbquests.chapter.culinary_delights.quests6.description1"
+				"{ftbquests.chapter.culinary_delights.quests6.description1}"
 				""
-				"ftbquests.chapter.culinary_delights.quests6.description2"
+				"{ftbquests.chapter.culinary_delights.quests6.description2}"
 			]
 			dependencies: [
 				"694E06E4C17BFF6E"
@@ -477,7 +478,7 @@
 			x: 10.5d
 			y: -2.0d
 			subtitle: "{ftbquests.chapter.culinary_delights.quests18.subtitle}"
-			description: ["{ftbquests.chapter.culinary_delights.quests8.description0}"]
+			description: ["{ftbquests.chapter.culinary_delights.quests18.description0}"]
 			dependencies: [
 				"61D48A57D179ED82"
 				"5F1C949E32B1FEBD"
@@ -594,6 +595,7 @@
 			y: 2.0d
 			subtitle: "{ftbquests.chapter.assorted_goals.quests54.subtitle}"
 			dependencies: ["2CE5BB6A7B30CA4C"]
+			hide: true
 			id: "4D65B95D552D92BA"
 			tasks: [
 				{
@@ -623,6 +625,7 @@
 				"{ftbquests.chapter.assorted_goals.quests40.description2}"
 			]
 			dependencies: ["2CE5BB6A7B30CA4C"]
+			hide: true
 			optional: true
 			id: "3522109BABC7E48B"
 			tasks: [
@@ -693,6 +696,7 @@
 			description: ["{ftbquests.chapter.assorted_goals.quests10.description}"]
 			hide_dependency_lines: true
 			dependencies: ["0BCED0F8481E0C21"]
+			hide: true
 			size: 1.5d
 			optional: true
 			id: "05E45A7D1C9927E5"
