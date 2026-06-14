@@ -361,6 +361,12 @@
   "item.createastral.t4_upgrade": "Tier 4 Upgrade",
   "item.createastral.t5_upgrade": "Tier 5 Upgrade",
   "item.createastral.t6_upgrade": "Tier 6 Upgrade",
+  "item.createastral.sputum_bottle": "Sputum Bottle",
+  "item.createastral.dragons_sputum": "Dragon's Sputum",
+  "item.createastral.laskinium": "Laskinium",
+  "item.createastral.laskinium_pill": "Laskinium Pill",
+  "item.createastral.incomplete_slop": "Incomplete Slop",
+  "item.createastral.tampered_beacon": "Tampered Beacon",
 
   "item.astralfoods.quantum_bites": "Quantum Bites",
   "item.astralfoods.astral_sauce": "Astral Sauce",
@@ -374,10 +380,7 @@
   "item.astralfoods.compressed_onion": "Compressed Onion",
   "item.astralfoods.food_amalgamation": "Food Amalgamation",
   "item.astralfoods.bulbas_tea": "Bulba's Tea",
-  "item.astralfoods.astralfoods.dipped_potato": "Dipped Potato",
-  "item.astralfoods.astralfoods.mashed_potato": "Mashed Potato",
-  "item.astralfoods.astralfoods.hash_brown": "Hash Brown",
-  "item.astralfoods.astralfoods.protein_ball": "Protein Ball",
+  "item.astralfoods.protein_ball": "Protein Ball",
 
   "item.kubejs.incomplete_noir_wine": "Incomplete Noir Wine",
   "item.kubejs.incomplete_chenet_wine": "Incomplete Chenet Wine",
@@ -413,7 +416,6 @@
   "block.definedsblocks.undefined_block": "uhhh ignore this",
 
   "block.createastral.sturdy_sheet_block": "Sturdy Sheet Block",
-  "block.createastral.sputum_bottle": "Sputum Bottle",
   "block.createastral.shimmering_stone": "Shimmering Stone",
   "block.createastral.monazite_crystal": "Monazite Crystal",
   "block.createastral.ancient_stone": "Ancient Stone",
@@ -465,8 +467,6 @@
   "block.createastral.rocket_casing": "Rocket Casing",
   "block.createastral.moonset_stone": "Moonset Stone",
   "block.createastral.cogwheel_skull": "Cogwheel Skull",
-  "block.createastral.tampered_beacon": "Tampered Beacon",
-  "block.createastral.incomplete_slop": "Incomplete Slop",
 
   "item.astralfoods.ambrosia": "Ambrosia",
   "item.astralfoods.chocolate_ice_cream": "Chocolate Ice Cream",
@@ -565,6 +565,7 @@
   "item.kubejs.smite_bucket": "Smite Bucket",
   "item.kubejs.compound_mixture_bucket": "Compound Mixture Bucket",
   "item.kubejs.blast-resistant_cement_bucket": "Blast-Resistant Cement Bucket",
+  "item.kubejs.blast-resistant_dement_bucket": "Blast-Resistant Dement Bucket",
   "item.kubejs.red_grape_juice_bucket": "Red Grape Juice Bucket",
   "item.kubejs.white_grape_juice_bucket": "White Grape Juice Bucket",
   "item.kubejs.liquid_xp_nuggies_bucket": "Liquified Experience Nuggets Bucket",
@@ -605,6 +606,7 @@
   "item.kubejs.vegetable_soup_fluid_bucket": "Vegetable Soup Bucket",
   "item.kubejs.apple_cider_fluid_bucket": "Apple Cider Bucket",
   "item.kubejs.chicken_soup_fluid_bucket": "Chicken Soup Bucket",
+  "item.astralfoods.cream_bucket": "Cream Bucket",
 
   "item.tconstruct.ender_slime_grass_seeds": "Ender Slimy Seeds",
 
@@ -3297,6 +3299,8 @@
   "starei.planet.venus": "Venus",
   "starei.planet.glacio": "Glacio",
 
+  "text.rei.createastral.chipped.block": "Chipped Blocks",
+  "text.rei.createastral.compressed.block": "Compressed Blocks",
   "text.rei.createastral.astralsignals.drives_decrypted_t1": "Analogously Decrypted Data Drive",
   "text.rei.createastral.astralsignals.drives_decrypted_t2": "§eParallel Decrypted Data Drive",
   "text.rei.createastral.astralsignals.drives_decrypted_t3": "§bMicrophysically Decrypted Data Drive",
