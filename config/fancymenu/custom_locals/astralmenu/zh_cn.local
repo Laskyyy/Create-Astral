@@ -35,12 +35,5 @@ astralmenu.creditsmenu.structures.header = 结构设计者
 astralmenu.creditsmenu.testers.header = Beta时期测试者
 astralmenu.creditsmenu.close = 关闭致谢人员表
 
-astralmenu.changelog.2_1.title = 机械动力：星辰 Ver 2.1
-astralmenu.changelog.2_1.close = 关闭更新日志
-astralmenu.changelog.2_1_1.label =2.1版本更新
-
-astralmenu.changelog.2_1_1.title = 机械动力：星辰2.1.3更新补丁
-astralmenu.changelog.2_1_1.label = 2.1.3版本补丁
-
 astralmenu.multiplayer_error_message.line1 = 如果你加入多人游戏时报错，请先多试几次再考虑报告bug！
 astralmenu.multiplayer_error_message.line2 = 如果你还是没法进多人游戏，请加入我们的Discord（链接在主菜单左边），然后在#bug-reports频道中报告bug！

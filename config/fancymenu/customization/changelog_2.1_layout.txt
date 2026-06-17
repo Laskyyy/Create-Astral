@@ -1141,8 +1141,8 @@ element {
 
 element {
   button_element_executable_block_identifier = 0c0949fb-bdac-43cb-91f6-34634487caf7-1727453726350
-  [executable_action_instance:b40abae6-13a4-4be2-9989-7dd1164a46e5-1727455666960][action_type:set_variable] = viewed_changelog_2.1.4:1
-  [executable_action_instance:fd52e48c-a620-4a36-8cc3-9d4185d9cb0f-1728926722297][action_type:set_variable] = changelog_visible:214
+  [executable_action_instance:b40abae6-13a4-4be2-9989-7dd1164a46e5-1727455666960][action_type:set_variable] = viewed_changelog_2.1.5:1
+  [executable_action_instance:fd52e48c-a620-4a36-8cc3-9d4185d9cb0f-1728926722297][action_type:set_variable] = changelog_visible:215=1
   [executable_block:0c0949fb-bdac-43cb-91f6-34634487caf7-1727453726350][type:generic] = [executables:b40abae6-13a4-4be2-9989-7dd1164a46e5-1727455666960;fd52e48c-a620-4a36-8cc3-9d4185d9cb0f-1728926722297;]
   restartbackgroundanimations = true
   nine_slice_custom_background = false
