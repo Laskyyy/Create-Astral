@@ -202,7 +202,7 @@ element {
 
 element {
   interactable = true
-  source = ## {"placeholder":"local","values":{"key":"astralmenu.creditsmenu.contributors.artists"}}%n%^^^%n%Ethanicuss%n%Jamiscus%n%ShaiN%n%Xelo%n%;;_Shortman;;%n%;;Miko_Boi;;%n%DepressedBlobfish%n%Sparrow%n%^^^%n%%n%## {"placeholder":"local","values":{"key":"astralmenu.creditsmenu.contributors.translators"}}%n%^^^%n%HarmonicSkies%n%XETROO%n%lrcno6%n%;;Miko_Boi;;%n%Nageih%n%^^^%n%%n%## {"placeholder":"local","values":{"key":"astralmenu.creditsmenu.contributors.other"}}%n%^^^%n%;;Infern0_b0b;;%n%NikWas%n%Blueish Sapphire%n%RaKonski%n%NickIndustries%n%HelixGlitch%n%Cuberyl%n%^^^
+  source = ## {"placeholder":"local","values":{"key":"astralmenu.creditsmenu.contributors.artists"}}%n%^^^%n%Ethanicuss%n%Jamiscus%n%ShaiN%n%Xelo%n%;;_Shortman;;%n%;;Miko_Boi;;%n%DepressedBlobfish%n%Sparrow%n%^^^%n%%n%## {"placeholder":"local","values":{"key":"astralmenu.creditsmenu.contributors.translators"}}%n%^^^%n%HarmonicSkies%n%XETROO%n%lrcno6%n%;;Miko_Boi;;%n%VM Chinese Translation Group%n%^^^%n%%n%## {"placeholder":"local","values":{"key":"astralmenu.creditsmenu.contributors.other"}}%n%^^^%n%;;Infern0_b0b;;%n%NikWas%n%Blueish Sapphire%n%RaKonski%n%NickIndustries%n%HelixGlitch%n%Cuberyl%n%^^^
   source_mode = direct
   shadow = true
   scale = 1.0
