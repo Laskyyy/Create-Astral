@@ -45,3 +45,5 @@ astralmenu.creditsmenu.close = Close Credits
 
 astralmenu.multiplayer_error_message.line1 = If you're getting an error when joining a multiplayer server, try rejoining before reporting it as a bug!
 astralmenu.multiplayer_error_message.line2 = If you still can't join, please join the Discord (link can be found on the left hand side of the main menu) and report it in the #bug-reports channel!
+
+astralmenu.resourcepackmenu.resourcepack_help = <- Resource packs broken? Click here to fix!

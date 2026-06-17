@@ -1,0 +1,13 @@
+name = "Astral Chinese Translation Resource"
+filename = "Astral Chinese Translation Resource.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d9fab37b525dfc107135320250f871e8b52349d0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7746262
+project-id = 1484070

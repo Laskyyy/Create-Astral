@@ -19,11 +19,17 @@
     event.create("createastral:electrified_pin");
     event.create("createastral:ender_mush");
     event.create("createastral:promethium_atomic_battery").glow(true).rarity("epic");
+    event.create("createastral:circuit_paper");
+    event.create("createastral:copper_clad_lapis_board");
+    event.create("createastral:printed_copper_clad_lapis_board");
     event.create("createastral:logo");
     event.create("createastral:bronze_ingot");
+    event.create("createastral:desh_dust");
+    event.create("createastral:small_desh_dust");
     event.create("createastral:uranium_residue").rarity("uncommon");
     event.create("createastral:navigation_mechanism");
     event.create("createastral:living_mechanism");
+    event.create("createastral:sputum_bottle");
     event.create("createastral:coin", "create:sequenced_assembly").displayName("Golden Coin");
     event.create("createastral:golden_bowl").displayName("Golden Bowl");
     event
@@ -44,6 +50,7 @@
     event.create("createastral:protopork", "create:sequenced_assembly");
     event.create("createastral:protorabbit", "create:sequenced_assembly");
     event.create("createastral:protoegg", "create:sequenced_assembly");
+    event.create("createastral:dragons_sputum", "create:sequenced_assembly");
     event.create("createastral:quadrocopter_blueprint").texture("create:item/schematic");
     event.create("createastral:gyrodyne_blueprint").texture("create:item/schematic");
     event.create("createastral:biplane_blueprint").texture("create:item/schematic");
@@ -63,6 +70,8 @@
     event.create("createastral:fragile_rocket_fin");
     event.create("createastral:broken_fragile_rocket_fin");
     event.create("createastral:gold_casted_rocket_fin");
+    event.create("createastral:saltmeal");
+    event.create("createastral:straw_gold_cast");
     event.create("createastral:horse").food((food) => {
       food.hunger(0).saturation(0).alwaysEdible();
     });
@@ -168,6 +177,8 @@
       .create("createastral:transitional_lapis_sheet", "create:sequenced_assembly")
       .displayName("Incomplete Integrated Circuit");
     event
+      .create("createastral:incomplete_slop", "create:sequenced_assembly");
+    event
       .create("createastral:incomplete_navigation_mechanism", "create:sequenced_assembly")
       .displayName("Incomplete Navigation Mechanism");
     event
@@ -253,6 +264,7 @@
         east: "createastral:item/incomplete_refined_radiance_casing",
       },
     });
+    event.create("createastral:tampered_beacon", "create:sequenced_assembly");
     event.create("createastral:incomplete_shadow_steel_casing", "create:sequenced_assembly").modelJson({
       parent: "minecraft:block/cube",
       textures: {

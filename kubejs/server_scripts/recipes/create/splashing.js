@@ -27,6 +27,14 @@
         ],
       },
       {
+        input: "techreborn:compressed_plantball",
+        outputs: [
+          Item.of("createastral:pure_biomatter").withChance(0.8),
+          Item.of("minecraft:bone_meal").withChance(0.1),
+          Item.of("techreborn:plantball").withChance(0.25),
+        ],
+      },
+      {
         input: "minecraft:soul_soil",
         outputs: [
           Item.of("minecraft:gold_nugget").withChance(0.08),

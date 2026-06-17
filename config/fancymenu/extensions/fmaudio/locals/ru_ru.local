@@ -1,0 +1,53 @@
+
+fancymenu.fmaudio.back = Назад
+fancymenu.fmaudio.done = Готово
+fancymenu.fmaudio.cancel = Отмена
+
+fancymenu.fmaudio.audio.channel = Аудио-канал: §6{}
+fancymenu.fmaudio.audio.loop.on = Повтор: §aВкл
+fancymenu.fmaudio.audio.loop.off = Повтор: §cВыкл
+fancymenu.fmaudio.audio.once_per_session.on = Один раз за сессию: §aВкл
+fancymenu.fmaudio.audio.once_per_session.off = Один раз за сессию: §cВыкл
+fancymenu.fmaudio.audio.once_per_session.desc = Если включено, аудио будет воспроизводиться%n%только один раз за сеанс игры.
+fancymenu.fmaudio.audio.manage = Управление аудио
+fancymenu.fmaudio.audio.manage.desc = Добавление, редактирование или удаление звуков.
+fancymenu.fmaudio.audio.choose = Выбрать аудио
+fancymenu.fmaudio.audio.choose.info = §lИнфо об аудио%n%%n%{}%n%Индекс: §6{}%n%Громкость: §6{}
+fancymenu.fmaudio.audio.add = Добавить аудио
+fancymenu.fmaudio.audio.remove = Удалить аудио
+fancymenu.fmaudio.audio.remove.confirm = §c§lВы уверены?%n%%n%Вы действительно хотите §cудалить §rэто аудио?%n% %n% %n% %n%
+fancymenu.fmaudio.audio.edit = Редактировать аудио
+fancymenu.fmaudio.audio.add_or_edit = Добавить/Изменить аудио
+fancymenu.fmaudio.audio.sourcetype.external_local = Тип источника: §6Локальный
+fancymenu.fmaudio.audio.sourcetype.external_web = Тип источника: §6Веб-ссылка
+fancymenu.fmaudio.audio.choosesource = Выбрать источник
+fancymenu.fmaudio.audio.choosesource.file.invalid = §c§lНеверный файл!%n%%n%Выбранный файл не в корректном формате OGG!%n% %n% %n% %n%
+fancymenu.fmaudio.audio.choosesource.url = Введите URL аудио
+fancymenu.fmaudio.audio.choosesource.url.invalid = §c§lНеверный URL!%n%%n%Ссылка некорректна. Убедитесь в наличии интернет-соединения%n%и отсутствии опечаток.%n% %n% %n% %n%
+fancymenu.fmaudio.audio.index = Индекс
+fancymenu.fmaudio.audio.index.desc = Индекс используется для сортировки аудиозаписей.%n%Он определяет порядок воспроизведения.%n%%n%Звуки с одинаковым индексом будут%n%воспроизводиться в §lслучайном порядке§r.
+fancymenu.fmaudio.audio.volume = Громкость
+fancymenu.fmaudio.audio.volume.desc = Громкость данного аудио.
+
+fancymenu.fmaudio.item = Аудио
+fancymenu.fmaudio.item.desc = Добавляет обработчик аудио в макет.%n%%n%Используется для фоновой музыки или звуков.%n%Может содержать несколько файлов одновременно.%n%%n%§cЭтот элемент виден только в редакторе!%n%§cВ самом меню он будет скрыт.
+
+fancymenu.fmaudio.buttonaction.togglemute.action.desc = Включить/выключить звук аудио-элемента по его ID.
+fancymenu.fmaudio.buttonaction.togglemute.value.desc = ID аудио-элемента
+
+fancymenu.fmaudio.visibilityrequirement.is_muted = Звук элемента выключен
+fancymenu.fmaudio.visibilityrequirement.is_muted.desc = Проверяет, выключен ли звук у аудио-элемента.%n%%n%Вы можете узнать ID элемента,%n%нажав на него правой кнопкой мыши.
+fancymenu.fmaudio.visibilityrequirement.is_muted.value = ID аудио-элемента
+
+fancymenu.fmaudio.config = Настройки аудио-дополнения
+
+fancymenu.fmaudio.config.categories.world = Мир
+
+fancymenu.fmaudio.config.stop_world_music_in_menu = Отключить музыку в сетевых меню
+fancymenu.fmaudio.config.stop_world_music_in_menu.desc = Только для мультиплеера!%n%%n%Должна ли фоновая музыка мира%n%останавливаться в меню, даже если%n%вы находитесь на сервере.
+
+fancymenu.fmaudio.config.only_play_out_of_world = Играть только вне мира
+fancymenu.fmaudio.config.only_play_out_of_world.desc = Если включено, аудио будет играть только тогда,%n%когда вы не находитесь в мире или на сервере.
+
+
+

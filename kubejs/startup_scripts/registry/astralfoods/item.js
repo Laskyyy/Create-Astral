@@ -11,14 +11,14 @@
       .create("astralfoods:astral_sauce")
       .displayName("Astral Sauce")
       .food((food) => {
-        food.hunger(7).saturation(0.6).effect("wither", 440, 0, 1).effect("hunger", 440, 1, 1).alwaysEdible();
+        food.hunger(14).saturation(0.6).effect("wither", 440, 0, 1).effect("hunger", 440, 1, 1).alwaysEdible();
       });
     event
       .create("astralfoods:quantum_pasta")
       .displayName("Quantum Pasta")
       .food((food) => {
         food
-          .hunger(75)
+          .hunger(150)
           .saturation(1.1)
           .effect("haste", 5000, 1, 1)
           .effect("regeneration", 5000, 1, 1)
@@ -40,7 +40,7 @@
           .saturation(0.8)
           .effect("resistance", 440, 1, 1)
           .effect("absorption", 440, 0, 1)
-          .effect("jump_boost", 160, 128, 1)
+          .effect("jump_boost", 360, 128, 1)
           .alwaysEdible();
       });
     event
@@ -64,14 +64,14 @@
       .create("astralfoods:compressed_onion")
       .displayName("Compressed Onion")
       .food((food) => {
-        food.hunger(54).saturation(0.6).effect("slowness", 200, 1, 1).effect("nausea", 200, 2, 1).alwaysEdible();
+        food.hunger(162).saturation(0.4).effect("slowness", 200, 1, 1).effect("nausea", 200, 2, 1).alwaysEdible();
       });
     event
       .create("astralfoods:food_amalgamation")
       .displayName("Food Amalgamation")
       .food((food) => {
         food
-          .hunger(200)
+          .hunger(400)
           .saturation(1)
           .effect("regeneration", 400, 4, 1)
           .effect("resistance", 1000, 3, 1)
@@ -98,7 +98,7 @@
       .create("astralfoods:chocolate_ice_cream")
       .displayName("Chocolate Ice Cream")
       .food((food) => {
-        food.hunger(3).saturation(1.2).effect("speed", 800, 0, 1).alwaysEdible();
+        food.hunger(3).saturation(1.2).effect("speed", 700, 0, 1).alwaysEdible();
       });
     event
       .create("astralfoods:ice_cream_sandwich")
@@ -113,7 +113,7 @@
         food
           .hunger(7)
           .saturation(1.3)
-          .effect("createaddition:shocking", 10, 1, 1)
+          .effect("createaddition:shocking", 14, 1, 1)
           .effect("strength", 440, 0, 1)
           .alwaysEdible();
       });
@@ -142,7 +142,7 @@
         food
           .hunger(9)
           .saturation(0.9)
-          .effect("fire_resistance", 300, 0, 1)
+          .effect("fire_resistance", 400, 0, 1)
           .effect("farmersdelight:nourishment", 3500, 0, 1);
       });
     event
@@ -152,9 +152,9 @@
         food
           .hunger(12)
           .saturation(1)
-          .effect("fire_resistance", 360, 0, 1)
+          .effect("fire_resistance", 540, 0, 1)
           .effect("farmersdelight:nourishment", 5000, 0, 1)
-          .effect("absorption", 360, 0, 1);
+          .effect("absorption", 540, 0, 1);
       });
     event
       .create("astralfoods:recovery_orb")
@@ -163,6 +163,27 @@
       .maxStackSize(4)
       .food((food) => {
         food.hunger(16).saturation(1.2).effect("resistance", 600, 1, 1).alwaysEdible();
+      });
+    event
+      .create("astralfoods:mashed_potato")
+      .displayName("Mashed Potato")
+      .food((food) => {
+        food.hunger(2).saturation(1);
+      });
+    event
+      .create("astralfoods:hash_brown")
+      .displayName("Hash Brown")
+      .food((food) => {
+        food.hunger(6).saturation(1.1);
+      });
+    event
+      .create("astralfoods:protein_ball")
+      .displayName("Protein Ball")
+      .food((food) => {
+        food
+          .hunger(6)
+          .saturation(0.35)
+          .effect("strength", 600, 0, 1)
       });
   });
   onEvent("fluid.registry", (event) => {

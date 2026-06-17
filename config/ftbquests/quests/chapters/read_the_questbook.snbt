@@ -475,6 +475,26 @@
 				title: "Wow thanks!"
 			}]
 		}
+		{
+			title: "{ftbquests.chapter.read_the_questbook.quests22.title}"
+			icon: "minecraft:skeleton_skull"
+			x: -3.0d
+			y: -4.5d
+			subtitle: "{ftbquests.chapter.read_the_questbook.quests22.subtitle}"
+			description: [
+				"{ftbquests.chapter.read_the_questbook.quests22.description0}"
+				""
+				"{ftbquests.chapter.read_the_questbook.quests22.description1}"
+				""
+				"{ftbquests.chapter.read_the_questbook.quests22.description2}"
+			]
+			id: "7C3DB815CCE492F4"
+			tasks: [{
+				id: "156DE2840C5E7E53"
+				type: "checkmark"
+				title: "The Death Penalty"
+			}]
+		}
 	]
 	quest_links: [ ]
 }
