@@ -48,6 +48,11 @@ Hephaestus has entered LTS for 1.18.2, meaning that some of the oldest bugs in t
   - Enabling KeepInventory will now enable experimental options that removes certain items from the player's inventory, like Raw Ores, chest loot, food, and ammunition upon respawn
   - We are looking for feedback on how this mod plays when KeepInventory is enabled, and are considering enabling KeepInventory by default with these penalties applied in the future
   - There is a quest explaining this mod in the FAQ chapter
+- Added Pack Order (#705) @The-Shortman
+  - Another in-house mod written by @HyperRaccoon13
+  - Allows modpack developers to define a default resource pack order, and adds a button in the resource pack menu that sets it to that order
+  - The button shows an 'X' if the resource packs don't match the predefined order, and a checkmark if the resource packs do match the predefined order
+  - Effectively prevents the "my resource packs reset, what was the original order?" conundrum, so now you just have to press one button when your packs inevitably reset, and all your problems are solved
 
 #### Gameplay-changing
 
@@ -73,6 +78,7 @@ Hephaestus has entered LTS for 1.18.2, meaning that some of the oldest bugs in t
 - Added three new Glowstone recipes (#694) @ethanicusss
 - Added custom recipes for a process from the Yttr mod, previously unused in Astral, called Piston Smashing (#695) @ethanicusss
 - Added a Sputum Bottle along with a set of different recipes to make Sputum (#695) @ethanicusss
+- Added two recipes for the Ender Transmission Chunk Loader, effectively allowing endgame chunkloading without FTB Claim limits (#700) @ethanicusss
 
 #### Quality of life
 
@@ -80,7 +86,7 @@ Hephaestus has entered LTS for 1.18.2, meaning that some of the oldest bugs in t
 - The modpack has now been localised for British English (en_gb) (#624) @The-Shortman
 - Added some decor from Beautify and Vinery to the Phonos Village House structure (#654) @ethanicusss
 - Added some new quests and chapters - and modified some existing quests and chapters - to explain a multitude of previously unmentioned or poorly-explained concepts (#659, #686, #687) @MikoTheBoi @ethanicusss
-- The modpack has now been localised for Russian (ru_ru) (#680) @Godzillys
+- The modpack has now been localised for Russian (ru_ru) (#680, #704, #710) @Godzillys @Nik-Was
 
 #### Behind-the-scenes
 
@@ -144,6 +150,7 @@ Hephaestus has entered LTS for 1.18.2, meaning that some of the oldest bugs in t
 
 - Changed the texture of the Distillation Tower Controller to match the advanced machine casing it is made from, and added an "off" variant for its idle state (#625) @ethanicusss
 - Astral Generators multiblock fluid inputs and outputs are now based around a bucket amount, but the ratio of input to output is the same as before (#622) @KonSola5
+- Optimised many of the language keys throughout translation files (#683) @nageih @VM-Chinese-translate-group
 
 #### Bug patches
 
@@ -193,6 +200,7 @@ Hephaestus has entered LTS for 1.18.2, meaning that some of the oldest bugs in t
 - Prevented packwiz.json appearing in the serverpack, included the Fabric server jar in the serverpack, and removed the unused publish job from the build action (#672) @The-Shortman
 - Rewrote the serverpack README file in markdown, with more organisation and detail (#672) @The-Shortman
 - Added a default 'none' heat condition for recipes to resolve warnings on startup (#671) @ethanicusss
+- Bumped action versions in workflows and fixed the issue of packwiz having expired binaries (#706) @The-Shortman
 
 ### REMOVALS
 
