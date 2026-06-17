@@ -53,6 +53,9 @@ Hephaestus has entered LTS for 1.18.2, meaning that some of the oldest bugs in t
   - Allows modpack developers to define a default resource pack order, and adds a button in the resource pack menu that sets it to that order
   - The button shows an 'X' if the resource packs don't match the predefined order, and a checkmark if the resource packs do match the predefined order
   - Effectively prevents the "my resource packs reset, what was the original order?" conundrum, so now you just have to press one button when your packs inevitably reset, and all your problems are solved
+- Added Log Begone (#692) @The-Shortman
+  - Configured to redact commonly spammed log entries that are useless to the end user during diagnosis of issues with the modpack
+  - Reduces the size of the log between game launch and entering world by about 80% (that's a lot of spam!)
 
 #### Gameplay-changing
 
