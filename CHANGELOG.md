@@ -108,7 +108,7 @@ Hephaestus has entered LTS for 1.18.2, meaning that some of the oldest bugs in t
   - Updated machine GUI textures
   - Added Resolith as an alternative energy transfer method
   - Added a Steam Bucket
-- Updated Astral Additions to 1.5.3 (#697) @ethanicusss
+- Updated Astral Additions to 1.5.4 (#697) @ethanicusss
   - Added the Black Hole mob, which spawns in the Moon Debris and in Mercury Deltas
   - Added a set of new weapons: the Rapier, Soulsteal Dagger, Diamond Boomer, Shimmerang, Parry Shield, and the Beta Weapons
   - Added a set of new tools: the Astral Hoe and the Shimmer Fishing Rod
