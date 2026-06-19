@@ -1,0 +1,30 @@
+{
+  "block.tconstruct.cobalt_ore": "月球钴矿石",
+
+  "item.tconstruct.liquid_soul_bucket": "液态灵魂沙桶",
+  "fluid.tconstruct.liquid_soul": "液态灵魂沙",
+
+  "material.tconstruct.desh": "戴斯",
+  "material.tconstruct.desh.flavor": "柔软，轻便，可靠。",
+  "material.tconstruct.desh.encyclopedia": "各项性能总体上很平均，但包含各种关于挖矿的加强并让使用更加便利。",
+
+  "material.tconstruct.ostrum": "紫金",
+  "material.tconstruct.ostrum.flavor": "千钧重物，给你拿来做工具？！",
+  "material.tconstruct.ostrum.encyclopedia": "超神般的耐用性，但由于其缓慢的挖掘速度，挥动起来很痛苦。在矿石开采方面十分有利。",
+
+  "material.tconstruct.calorite": "耐热金属",
+  "material.tconstruct.calorite.flavor": "最锋利的金属。",
+  "material.tconstruct.calorite.encyclopedia": "如血般的红色，就像你的敌人感受到你剑刃的寒锋之后溅出的血一样红。",
+
+  "material.tconstruct.shadow": "暗影钢",
+  "material.tconstruct.shadow.flavor": "如暗物质般致密。",
+  "material.tconstruct.shadow.encyclopedia": "拥有令人不可思议的耐用性，用来制作工具手柄和绑定结简直完美。",
+
+  "material.tconstruct.radiant": "光辉石",
+  "material.tconstruct.radiant.flavor": "坚硬，光亮。",
+  "material.tconstruct.radiant.encyclopedia": "它就是光芒力量的化身。尽管它在铸造过程中很脆弱，但是它可以带来无与伦比的强化属性、挖掘速度和可供把玩的升级槽。",
+
+  "material.tconstruct.iron.encyclopedia": "进行攻击和挖掘时吸引附近的物品。",
+
+  "death.attack.fusion": "%1$s被辐射整死了"
+}

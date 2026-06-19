@@ -1,0 +1,13 @@
+{
+    "fluid.astraladditions.sputum": "未知实体唾液",
+    "item.yttr.raw_gadolinite": "粗钇",
+    "item.yttr.ultrapure_wolfram": "超纯残骸",
+    "block.yttr.gadolinite": "钇",
+    "block.yttr.raw_gadolinite_block": "粗钇块",
+    "block.yttr.deepslate_gadolinite": "深层钇矿石",
+    "block.yttr.continuous_platform": "方体棱晶",
+    "block.yttr.centrifuge": "钇离心机",
+    "advancements.yttr.obtain_xl_iron_ingot.desc": "烧炼硅铍钇矿以获得大块铁锭",
+    "advancements.yttr.obtain_yttrium_ingot.desc": "通过烧炼钇矿以获得钇锭",
+    "fluid.yttr.core_lava": "地心熔岩"
+}
