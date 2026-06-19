@@ -89,7 +89,7 @@ Hephaestus has entered LTS for 1.18.2, meaning that some of the oldest bugs in t
 - The modpack has now been localised for British English (en_gb) (#624) @The-Shortman
 - Added some decor from Beautify and Vinery to the Phonos Village House structure (#654) @ethanicusss
 - Added some new quests and chapters - and modified some existing quests and chapters - to explain a multitude of previously unmentioned or poorly-explained concepts (#659, #686, #687) @MikoTheBoi @ethanicusss
-- The modpack has now been localised for Russian (ru_ru) (#680, #704, #710) @Godzillys @Nik-Was
+- The modpack has now been localised for Russian (ru_ru) (#680, #704, #710, #712) @Godzillys @Nik-Was
 
 #### Behind-the-scenes
 
@@ -160,7 +160,7 @@ Hephaestus has entered LTS for 1.18.2, meaning that some of the oldest bugs in t
 - Fixed the step-up modifier not working after 2.1.4 (#608) @ConductiveFoam
 - Reduced the texture size of the Hephaestus Farsighted modifier in an attempt to reduce mipmap level load times [N.B. There are more textures that need to be addressed like this] (#631, #632) @ethanicusss
 - Fixed Bronze Nuggets not melting into Molten Bronze (#620) @ConductiveFoam
-- Fixed a multitude of typos, grammar mistakes, and inaccuracies in the Questbook (#621, #624) @ConductiveFoam @The-Shortman
+- Fixed a multitude of typos, grammar mistakes, and inaccuracies in the Questbook (#621, #624, #712) @ConductiveFoam @The-Shortman @Nik-Was
 - Bulba Tea recipe now outputs a bottle instead of 333 mB, removing stray millibuckets (#622) @KonSola5
 - Fixed duplicate recipes for the Oxygen Loader and Compressed Air Cells appearing in REI (#633) @The-Shortman
 - Fixed Compressor block names not having assigned lang keys, now they show their proper names instead of internal names (#633) @The-Shortman
@@ -204,6 +204,7 @@ Hephaestus has entered LTS for 1.18.2, meaning that some of the oldest bugs in t
 - Rewrote the serverpack README file in markdown, with more organisation and detail (#672) @The-Shortman
 - Added a default 'none' heat condition for recipes to resolve warnings on startup (#671) @ethanicusss
 - Bumped action versions in workflows and fixed the issue of packwiz having expired binaries (#706) @The-Shortman
+- Optimised resource packs in the repo by using pw.toml metadata files instead of complete folders (#711) @The-Shortman
 
 ### REMOVALS
 
