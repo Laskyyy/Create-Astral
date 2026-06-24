@@ -17,7 +17,7 @@ drippyloadingscreen.helper.creator.texttooshort.title = Текст слишко�
 drippyloadingscreen.helper.creator.texttooshort.desc = В тексте должен быть хотя бы один символ!%n%Иначе это будет... ничто.%n%%n%Никто не хочет быть ничем, так что не делайте так со своим текстом!
 
 drippyloadingscreen.helper.creator.cannotdelete.title = Элемент нельзя удалить!
-drippyloadingscreen.helper.creator.cannotdelete.desc = К сожалению, этот элемент нельзя удалить.%n%%n%Вам придется научиться жить с ним...
+drippyloadingscreen.helper.creator.cannotdelete.desc = К сожалению, этот элемент нельзя удалить.%n%%n%Вам придётся научиться жить с ним...
 
 drippyloadingscreen.helper.creator.savefile.cancel = Отмена
 
@@ -374,7 +374,7 @@ drippyloadingscreen.config.editordeleteconfirmation = Подтверждение
 drippyloadingscreen.config.categories.customization = Кастомизация
 
 drippyloadingscreen.config.showcustomizationcontrols = Кнопки управления
-drippyloadingscreen.config.showcustomizationcontrols.desc = Отображать ли кнопки кастомизации%n%в главном меню.%n%%n%§c§lВАЖНО:%n%Если вы также отключите горячие клавиши,%n%вам придется возвращать эту настройку%n%вручную через файл конфигурации.
+drippyloadingscreen.config.showcustomizationcontrols.desc = Отображать ли кнопки кастомизации%n%в главном меню.%n%%n%§c§lВАЖНО:%n%Если вы также отключите горячие клавиши,%n%вам придётся возвращать эту настройку%n%вручную через файл конфигурации.
 
 drippyloadingscreen.config.enablekeybinds = Горячие клавиши
 drippyloadingscreen.config.enablekeybinds.desc = Включить использование горячих клавиш мода.%n%%n%§c§lВАЖНО:%n%После изменения этого значения%n%требуется перезапуск игры.
@@ -411,7 +411,7 @@ drippyloadingscreen.helper.editor.elements.scale.btn.desc = Установить
 
 drippyloadingscreen.helper.ui.hud.lightmode.on = Лайт-режим: §aВкл
 drippyloadingscreen.helper.ui.hud.lightmode.off = Лайт-режим: §cВыкл
-drippyloadingscreen.helper.ui.hud.lightmode.btn.desc = Если включено, ванильные элементы HUD%n%больше нельзя будет изменить.%n%%n%Вы всё еще сможете добавлять свои элементы,%n%но правки оригинальных будут игнорироваться.%n%%n%§cВключение значительно улучшает%n%§cсовместимость с другими модами.%n%%n%§oНажмите, чтобы переключить.
+drippyloadingscreen.helper.ui.hud.lightmode.btn.desc = Если включено, ванильные элементы HUD%n%больше нельзя будет изменить.%n%%n%Вы всё ещё сможете добавлять свои элементы,%n%но правки оригинальных будут игнорироваться.%n%%n%§cВключение значительно улучшает%n%§cсовместимость с другими модами.%n%%n%§oНажмите, чтобы переключить.
 drippyloadingscreen.helper.ui.hud.lightmode.popup.msg = §c§lВы уверены?%n%%n%Это действие требует перезапуска§r.%n%%n%Вы действительно хотите §cвыйти из игры §rсейчас?
 
 drippyloadingscreen.helper.editor.elements.string.rainbow.on = Радужный режим: §aВкл
@@ -435,7 +435,7 @@ drippyloadingscreen.helper.editor.elements.vanilla.progressbar.color.btn.desc = 
 
 drippyloadingscreen.helper.editor.elements.text.color = Цвет текста
 drippyloadingscreen.helper.editor.elements.text.color.btn.desc = Установить цвет этого текста.
-drippyloadingscreen.helper.editor.elements.text.onlybasicchars = §c§lПоддерживаются только базовые символы!%n%Использование спецсимволов (@, ä и др.)%n%приведет к ошибкам отрисовки!
+drippyloadingscreen.helper.editor.elements.text.onlybasicchars = §c§lПоддерживаются только базовые символы!%n%Использование спецсимволов (@, ä и др.)%n%приведёт к ошибкам отрисовки!
 
 drippyloadingscreen.helper.creator.add.custombars.barcolor = Цвет полосы (HEX)
 drippyloadingscreen.helper.creator.add.custombars.backgroundcolor = Цвет фона полосы (HEX)
