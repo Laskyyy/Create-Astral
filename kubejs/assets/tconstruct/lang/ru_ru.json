@@ -340,7 +340,7 @@
     "material.tconstruct.glass.skull_encyclopedia": "Удержание клавиши взаимодействия со шлемом заставляет владельца взорваться",
 
     "material.tconstruct.invar": "Инвар",
-    "material.tconstruct.invar.flavor": "Устойчив как к температуре, так и к аресту.",
+    "material.tconstruct.invar.flavor": "Сопротивляется и температуре, и аресту.",
     "material.tconstruct.invar.encyclopedia": "Даёт +2.5 урона в биомах с нейтральной температурой",
 
     "material.tconstruct.plated_slimewood": "Слизедрево в обшивке",
@@ -470,7 +470,7 @@
     "modifier.tconstruct.sticky.description": "Атакующие могут застрять на месте или, как минимум, замедлиться",
     "modifier.tconstruct.springy.flavor": "Прыг-скок!",
     "modifier.tconstruct.respiration": "Подводное дыхание",
-    "modifier.tconstruct.respiration.description": "Увеличивает объём легких",
+    "modifier.tconstruct.respiration.description": "Увеличивает объём лёгких",
     "modifier.tconstruct.zoom.description": "Позволяет рассматривать далёкие объекты при взаимодействии во время приседания",
     "modifier.tconstruct.slurping": "Хлебание",
     "modifier.tconstruct.aqua_affinity.description": "Убирает штраф к скорости копания под водой",
@@ -740,7 +740,7 @@
     "gui.tconstruct.error.not_enough_durability": "Недостаточно прочности для замены деталей!\nТребуется ещё %d ед. прочности.",
 
     "subtitles.tconstruct.little_saw": "Работа пилой",
-    "subtitles.tconstruct.item_frame_click": "Щелканье часов в рамке",
+    "subtitles.tconstruct.item_frame_click": "Щёлканье часов в рамке",
     "subtitles.tconstruct.casting_cools": "Остывание отливки",
     "subtitles.tconstruct.casting.click": "Щелчок литейного блока",
     "subtitles.tconstruct.slime_sling": "Прыжок на слизевой рогатке",
