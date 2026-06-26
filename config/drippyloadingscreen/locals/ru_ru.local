@@ -270,7 +270,7 @@ drippyloadingscreen.helper.creator.slideshownotfound = §c§lСлайд-шоу �
 drippyloadingscreen.helper.creator.sidemenu.settings.btndesc = Настройки редактора макетов
 drippyloadingscreen.helper.creator.sidemenu.settings.on = §aВкл
 drippyloadingscreen.helper.creator.sidemenu.settings.off = §cВыкл
-drippyloadingscreen.helper.creator.sidemenu.settings.vanillanotification = Предупреждение о перемещении  ванильных кнопок
+drippyloadingscreen.helper.creator.sidemenu.settings.vanillanotification = Предупреждение о перемещении ванильных кнопок
 drippyloadingscreen.helper.creator.sidemenu.settings.popupmenuscale = Масштаб контекстного меню (ПКМ)
 
 drippyloadingscreen.helper.creator.add.shapes = Фигура
