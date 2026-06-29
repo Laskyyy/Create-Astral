@@ -33,7 +33,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
         with:
-          ref: feature/workflow
+          ref: Astral-Experimental
 
       - name: Get latest packwiz binary
         id: download-packwiz
