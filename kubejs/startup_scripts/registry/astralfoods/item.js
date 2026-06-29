@@ -108,7 +108,7 @@
       });
     event
       .create("astralfoods:gamers_delight")
-      .displayName("Gamers Delight")
+      .displayName("Gamers' Delight")
       .food((food) => {
         food
           .hunger(7)
@@ -147,7 +147,7 @@
       });
     event
       .create("astralfoods:cod_n_blaze")
-      .displayName("Cod n' Blaze")
+      .displayName("Cod 'n' Blaze")
       .food((food) => {
         food
           .hunger(12)

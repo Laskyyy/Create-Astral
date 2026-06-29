@@ -3019,9 +3019,6 @@
 			subtitle: "{ftbquests.chapter.chapter_4.quests96.subtitle}"
 			description: [
 				"{ftbquests.chapter.chapter_4.quests96.description0}"
-				""
-				""
-				"{ftbquests.chapter.chapter_4.quests96.description3}"
 			]
 			dependencies: [
 				"70FE485B4505AC81"
