@@ -1,6 +1,6 @@
 name = "Astral Chinese Translation Resource"
 filename = "Astral Chinese Translation Resource.zip"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"

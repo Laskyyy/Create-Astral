@@ -7,7 +7,7 @@ astralmenu.mainmenu.options.hover = Configura el juego
 astralmenu.mainmenu.quit.text = Cerrar
 astralmenu.mainmenu.quit.hover = Vuelve pronto!
 astralmenu.mainmenu.changelog.text = Historial de cambios
-astralmenu.mainmenu.changelog.hover = Último parche: 2.1.4
+astralmenu.mainmenu.changelog.hover = Último parche: 2.1.5
 astralmenu.mainmenu.music.hover = Escucha la banda sonora en Spotify!
 astralmenu.mainmenu.discord.hover = Únete al servidor oficial de Discord!
 astralmenu.mainmenu.credits.hover = Abre los créditos de Create Astral
@@ -42,22 +42,6 @@ astralmenu.creditsmenu.specialthanks.description.b0b = Sostuvo a la comunidad de
 astralmenu.creditsmenu.specialthanks.betatesters = Beta testers
 astralmenu.creditsmenu.specialthanks.backgroundcredit = Agradecimientos a Senkou por el fondo de la pantalla de créditos!
 astralmenu.creditsmenu.close = Cierre de créditos
-
-astralmenu.changelog.2_1.title = Create: Astral Version 2.1
-astralmenu.changelog.2_1.close = Close Changelog
-astralmenu.changelog.2_1.label = Update 2.1
-
-astralmenu.changelog.2_1_1.title = Create: Astral Patch 2.1.1
-astralmenu.changelog.2_1_1.label = Patch 2.1.1
-
-astralmenu.changelog.2_1_2.title = Create: Astral Patch 2.1.2
-astralmenu.changelog.2_1_2.label = Patch 2.1.2
-
-astralmenu.changelog.2_1_3.title = Create: Astral Patch 2.1.3
-astralmenu.changelog.2_1_3.label = Patch 2.1.3
-
-astralmenu.changelog.2_1_4.title = Create: Astral Patch 2.1.4
-astralmenu.changelog.2_1_4.label = Patch 2.1.4
 
 astralmenu.multiplayer_error_message.line1 = Si te encuentras con un error al unirte a un servidor multijugador, prueba a volver a unirte antes de reportarlo como error!
 astralmenu.multiplayer_error_message.line2 = Si sigues sin poder unirte, por favor, únete al Discord (el link puede ser encontrado en la izquierda del menú principal) y repórtalo en el canal #bug-reports!

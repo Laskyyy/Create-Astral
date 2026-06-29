@@ -1,6 +1,0 @@
-{
-    "parent": "block/croptall",
-    "textures": {
-        "croptall": "block/potatoes_stage3_4"
-    }
-}
