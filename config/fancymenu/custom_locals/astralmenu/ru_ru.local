@@ -60,6 +60,6 @@ astralmenu.changelog.2_1_4.title = Create: Astral Патч 2.1.4
 astralmenu.changelog.2_1_4.label = Патч 2.1.4
 
 astralmenu.multiplayer_error_message.line1 = Если при входе на сервер возникает ошибка, попробуйте перезайти перед тем, как сообщать о баге!
-astralmenu.multiplayer_error_message.line2 = Если войти всё равно не удается, пожалуйста, перейдите в наш Discord (ссылка слева в меню) и сообщите об этом в канале #bug-reports!
+astralmenu.multiplayer_error_message.line2 = Если войти всё равно не удаётся, пожалуйста, перейдите в наш Discord (ссылка слева в меню) и сообщите об этом в канале #bug-reports!
 
 astralmenu.resourcepackmenu.resourcepack_help = <- Слетели ресурспаки? Нажмите сюда, чтобы исправить!

@@ -3,7 +3,7 @@
 
     "block.tconstruct.nahuatl": "Доски науатль",
     "block.tconstruct.nahuatl_slab": "Плита из науатля",
-    "block.tconstruct.nahuatl_stairs": "Ступени из науатля",
+    "block.tconstruct.nahuatl_stairs": "Ступеньки из науатля",
     "block.tconstruct.nahuatl_fence": "Забор из науатля",
 
     "block.tconstruct.gold_bars": "Золотая решётка",
@@ -340,7 +340,7 @@
     "material.tconstruct.glass.skull_encyclopedia": "Удержание клавиши взаимодействия со шлемом заставляет владельца взорваться",
 
     "material.tconstruct.invar": "Инвар",
-    "material.tconstruct.invar.flavor": "Устойчив как к температуре, так и к аресту.",
+    "material.tconstruct.invar.flavor": "Сопротивляется и температуре, и аресту.",
     "material.tconstruct.invar.encyclopedia": "Даёт +2.5 урона в биомах с нейтральной температурой",
 
     "material.tconstruct.plated_slimewood": "Слизедрево в обшивке",
@@ -443,7 +443,7 @@
     "modifier.tconstruct.swiftstrike.4": "Сверхбыстрый удар",
     "modifier.tconstruct.swiftstrike.5": "Молниеносный удар",
     "modifier.tconstruct.swiftstrike.description": "Магические фиолетовые самоцветы делают оружие легче, позволяя бить чаще!",
-    "modifier.tconstruct.knockback_resistance.description": "Наковальни тяжелые, так что они должны удерживать вас на месте, верно?",
+    "modifier.tconstruct.knockback_resistance.description": "Наковальни тяжёлые, так что они должны удерживать вас на месте, верно?",
     "modifier.tconstruct.ricochet.description": "Отскакивайте дальше при получении удара для эффективного отступления",
     "modifier.tconstruct.revitalizing.flavor": "Чувствуется прилив сил",
     "modifier.tconstruct.revitalizing.description": "Укрепляет сердце, даруя дополнительные ячейки здоровья",
@@ -470,15 +470,15 @@
     "modifier.tconstruct.sticky.description": "Атакующие могут застрять на месте или, как минимум, замедлиться",
     "modifier.tconstruct.springy.flavor": "Прыг-скок!",
     "modifier.tconstruct.respiration": "Подводное дыхание",
-    "modifier.tconstruct.respiration.description": "Увеличивает объём легких",
-    "modifier.tconstruct.zoom.description": "Позволяет рассматривать далекие объекты при взаимодействии во время приседния",
+    "modifier.tconstruct.respiration.description": "Увеличивает объём лёгких",
+    "modifier.tconstruct.zoom.description": "Позволяет рассматривать далёкие объекты при взаимодействии во время приседания",
     "modifier.tconstruct.slurping": "Хлебание",
     "modifier.tconstruct.aqua_affinity.description": "Убирает штраф к скорости копания под водой",
     "modifier.tconstruct.item_frame.description": "Добавляет в шлем слоты для наблюдения предметов. Идеально для часов и компасов",
     "modifier.tconstruct.armor_power": "Мощь",
     "modifier.tconstruct.strength.flavor": "Чувствуете, как сила наполняет вас?",
     "recipe.tconstruct.modifier.unarmed": "Требуется сначала добавить модификатор «Безоружная атака»",
-    "modifier.tconstruct.wings.description": "Позволяет парить, прыгнув еще раз во время нахождения в воздухе",
+    "modifier.tconstruct.wings.description": "Позволяет парить, прыгнув ещё раз во время нахождения в воздухе",
 
     "modifier.tconstruct.speedy": "Скороход",
     "modifier.tconstruct.speedy.flavor": "Беги, Лола, беги...",
@@ -657,7 +657,7 @@
     "modifier.tconstruct.enderdodging.description": "Позволяет уклоняться от снарядов и случайным образом избегать атак с помощью телепортации",
     "modifier.tconstruct.strong_bones.flavor": "Молоко есть?",
     "modifier.tconstruct.frosttouch.flavor": "Ледяное прикосновение держит врагов на расстоянии",
-    "modifier.tconstruct.frosttouch.description": "Стрелы накладывают медлительность; молоко также дает эффект замедления при атаке ближнего боя",
+    "modifier.tconstruct.frosttouch.description": "Стрелы накладывают медлительность; молоко также даёт эффект замедления при атаке ближнего боя",
     "modifier.tconstruct.withered.flavor": "Секрет распада",
     "modifier.tconstruct.withered.description": "Иссушает цели при атаке; эффект усиливается после употребления молока",
     "modifier.tconstruct.boon_of_sssss.flavor": "Зелья очень сильны в этом шлеме",
@@ -740,7 +740,7 @@
     "gui.tconstruct.error.not_enough_durability": "Недостаточно прочности для замены деталей!\nТребуется ещё %d ед. прочности.",
 
     "subtitles.tconstruct.little_saw": "Работа пилой",
-    "subtitles.tconstruct.item_frame_click": "Щелканье часов в рамке",
+    "subtitles.tconstruct.item_frame_click": "Щёлканье часов в рамке",
     "subtitles.tconstruct.casting_cools": "Остывание отливки",
     "subtitles.tconstruct.casting.click": "Щелчок литейного блока",
     "subtitles.tconstruct.slime_sling": "Прыжок на слизевой рогатке",
