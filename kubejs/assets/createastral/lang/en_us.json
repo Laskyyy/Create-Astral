@@ -3157,7 +3157,7 @@
   "ftbquests.chapter.read_the_questbook.quests16.description2": "&6Locked Drawers&r are also a feature in Extended Drawers, preventing any other item from entering the locked drawer.",
   "ftbquests.chapter.read_the_questbook.quests17.subtitle": "Toggle Combat Music",
   "ftbquests.chapter.read_the_questbook.quests17.description0": "We heard your request!! Combat music has been turned down and a config option has been added.",
-  "ftbquests.chapter.read_the_questbook.quests17.description2": ".minecraft\\\\config\\\\astraladditions\\\\combatmusic.txt",
+  "ftbquests.chapter.read_the_questbook.quests17.description2": ".minecraft\\config\\astraladditions\\combatmusic.txt",
   "ftbquests.chapter.read_the_questbook.quests17.description4": "Simply set the value in this file from 'true' to 'false'",
   "ftbquests.chapter.read_the_questbook.quests17.tasks0.title": "Combat Music",
   "ftbquests.chapter.read_the_questbook.quests18.description0": "The custom music you will hear throughout the pack is licensed so that you may use it &6wherever you wish&r!",

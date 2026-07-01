@@ -2932,7 +2932,7 @@
   "ftbquests.chapter.read_the_questbook.quests16.description2": "Los &6cajones bloqueados&r también son una característica de Extended Drawers, evitando que cualquier otro objeto entre en el cajón bloqueado.",
   "ftbquests.chapter.read_the_questbook.quests17.subtitle": "Alternar música de combate",
   "ftbquests.chapter.read_the_questbook.quests17.description0": "¡Escuchamos tu petición! La música de combate se ha bajado y se ha añadido una opción de configuración.",
-  "ftbquests.chapter.read_the_questbook.quests17.description2": ".minecraft\\\\config\\\\astraladditions\\\\combatmusic.txt",
+  "ftbquests.chapter.read_the_questbook.quests17.description2": ".minecraft\\config\\astraladditions\\combatmusic.txt",
   "ftbquests.chapter.read_the_questbook.quests17.description4": "Simplemente cambia el valor en este archivo de 'true' a 'false'",
   "ftbquests.chapter.read_the_questbook.quests17.tasks0.title": "Música de combate",
   "ftbquests.chapter.read_the_questbook.quests18.description0": "La música personalizada que escucharás a lo largo del pack tiene licencia para que puedas usarla &6donde quieras&r.",
