@@ -1,4 +1,4 @@
-This is a more extensive version of the 'quickstart.txt' document also included in this server pack. It includes some more information for those that wish to
+This is a more extensive version of the 'quickstart.txt' document also included in this server pack.
 
 This document is best read in a text editor that supports Markdown, however should still be legible in more basic text editors like Notepad.
 
