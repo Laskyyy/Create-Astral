@@ -1728,6 +1728,16 @@
           S: "vinery:cherry_slab",
         },
       },
+      {
+        output: "astralgenerators:resolith_manipulator",
+        pattern: [" RN", " IB", " I "],
+        key: {
+          R: "minecraft:red_dye",
+          N: "minecraft:iron_nugget",
+          B: "minecraft:blue_dye",
+          I: "ad_astra:desh_ingot",
+        },
+      },
     ];
     shapedRecipes.forEach((recipe) => {
       event.shaped(recipe.output, recipe.pattern, recipe.key);
