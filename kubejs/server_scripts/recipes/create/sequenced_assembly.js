@@ -459,6 +459,16 @@
         .addDeployingStep("#c:dyes")
         .loops(2)
         .build();
+		
+	  createSequencedAssembly(event, {
+        input: "minecraft:potato",
+        transitional: "minecraft:potato",
+        outputs: [Item.of("astraladditions:spud_mag", 1)],
+      })
+        .addDeployingStep("minecraft:potato")
+        .addDeployingStep("minecraft:potato")
+        .addDeployingStep("minecraft:string")
+        .build();
 
       createSequencedAssembly(event, {
         input: "ad_astra:ostrum_engine",
