@@ -462,6 +462,42 @@
         },
         {
           "type": "minecraft:item",
+          "name": "astraladditions:desert_azulia",
+          "weight": 50,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 7,
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "astraladditions:desert_roots",
+          "weight": 50,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 7,
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "astraladditions:spud_mag",
+          "weight": 50,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 7,
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "create:piston_extension_pole",
           "weight": 100,
           "functions": [
