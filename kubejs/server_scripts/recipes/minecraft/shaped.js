@@ -1638,6 +1638,14 @@
         },
       },
       {
+        output: Item.of("steel_mesh_trapdoor", 3),
+        pattern: ["BFB", "BFB"],
+        key: {
+          B: "dbe:steel_plating",
+          F: "dbe:steel_frame",
+        },
+      },
+      {
         output: "minecraft:oak_planks",
         pattern: ["S", "S"],
         key: {
@@ -1762,13 +1770,12 @@
       },
       {
         output: "astralgenerators:resolith_manipulator",
-        pattern: [" rd", " ic", "g  "],
+        pattern: [" RN", " IB", " I "],
         key: {
-          c: "minecraft:copper_ingot",
-          d: "ad_astra:desh_ingot",
-          r: "minecraft:redstone_dust",
-          i: "minecraft:iron_ingot",
-          g: "minecraft:gold_nugget",
+          R: "minecraft:red_dye",
+          N: "minecraft:iron_nugget",
+          B: "minecraft:blue_dye",
+          I: "ad_astra:desh_ingot",
         },
       },
       {
