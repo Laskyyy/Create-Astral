@@ -15,13 +15,17 @@ Release dates attached to version numbers are in the format `YYYY/MM/DD` as per 
 
 Please note that patch notes for versions 2.1.3 and lower are currently lacking in full information, or may even be entirely inaccurate, due to poor documentation of changes before implementation of the changelog. If you notice anything that is incorrect or missing, please open a Pull Request with your fixes.
 
-## 2.1.5 [UNRELEASED]
+## 2.1.5 [CURRENT RELEASE] - 2026/07/05
 
 ### SUMMARY
 
 Most changes in 2.1.5 are surrounding many pain points in Chapter 3, when most players typically quit as the grind ramps up dramatically. Alternate recipes have been added for many of the more painful processes such as Integrated Circuits, Brass Casing, and Launchpads to try to tackle this, with the aim of having easier, yet less automatable, solutions than the existing ones, or adding alternate recipes to give players more choice depending on what their automation setup looks like.
 
-Hephaestus has entered LTS for 1.18.2, meaning that some of the oldest bugs in the modpack have now been addressed. Huge thanks to @AlphaMode for continuing to provide support for the mod!
+Fabric has been updated from 0.16.3 to 0.18.4. This may introduce unforseen issues, so please keep reporting any bugs you find on GitHub or Discord!
+
+Hephaestus has entered LTS for 1.18.2, meaning that some of the oldest bugs in the modpack have now been addressed. Huge thanks to @AlphaMode for continuing to provide support for the mod! This also means that those hosting a server will no longer have to manually install Hephaestus, although the same still can't be said for Vinery.
+
+We have also decided to include the No Chat Restrictions mod in the pack, so that players in countries where multiplayer chat has been restricted can once again enjoy the modpack. The majority of the Create: Astral developer team is from the United Kingdom, one such country where these restrictions have been forced upon the population, so this was necessary for continuing our development of the modpack. We do not recommend any person ever hand over their identity to access online chat services, and instead encourage you to seek alternative solutions.
 
 ### ADDITIONS
 
@@ -56,6 +60,10 @@ Hephaestus has entered LTS for 1.18.2, meaning that some of the oldest bugs in t
 - Added Log Begone (#692) @The-Shortman
   - Configured to redact commonly spammed log entries that are useless to the end user during diagnosis of issues with the modpack
   - Reduces the size of the log between game launch and entering world by about 80% (that's a lot of spam!)
+- Added No Chat Restrictions (#717) @ethanicusss
+  - The UK government has enforced chat restrictions for accounts of users residing in the UK that have not verified their age - this mod disables that feature, as it is only a client-side check
+  - The restriction of chat features limits many vital functions of the game, most notably running commands, and not being able to chat with other players, even on LAN servers
+  - Adding this mod will now make it possible for British players to enjoy the full modpack experience again
 
 #### Gameplay-changing
 
@@ -82,6 +90,7 @@ Hephaestus has entered LTS for 1.18.2, meaning that some of the oldest bugs in t
 - Added custom recipes for a process from the Yttr mod, previously unused in Astral, called Piston Smashing (#695) @ethanicusss
 - Added a Sputum Bottle along with a set of different recipes to make Sputum (#695) @ethanicusss
 - Added two recipes for the Ender Transmission Chunk Loader, effectively allowing endgame chunkloading without FTB Claim limits (#700) @ethanicusss
+- Added a recipe for the Andesite Iron Trapdoor (#715) @MikoTheBoi
 
 #### Quality of life
 
@@ -102,6 +111,9 @@ Hephaestus has entered LTS for 1.18.2, meaning that some of the oldest bugs in t
 
 #### Major mod updates
 
+- Updated Fabric to 0.18.4 (#717) @ethanicusss
+  - Prior version of Fabric was 0.16.3, so we are expecting issues to arise from this update
+  - As always, please report any buigs you run into
 - Updated Astral Generators to v2.0.0-alpha5 (#691) @tobynguyen27
   - Updated textures for blocks
   - Redesigned multiblock structures
@@ -226,7 +238,7 @@ Hephaestus has entered LTS for 1.18.2, meaning that some of the oldest bugs in t
 
 > _Nothing to see here yet..._
 
-## 2.1.4c [HOTFIX, Current Release] - 2025/08/18
+## 2.1.4c [HOTFIX] - 2025/08/18
 
 ### CHANGES
 
