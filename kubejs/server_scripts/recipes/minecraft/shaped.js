@@ -1638,6 +1638,14 @@
         },
       },
       {
+        output: Item.of("dbe:steel_mesh_trapdoor", 3),
+        pattern: ["BFB", "BFB"],
+        key: {
+          B: "dbe:steel_plating",
+          F: "dbe:steel_frame",
+        },
+      },
+      {
         output: "minecraft:oak_planks",
         pattern: ["S", "S"],
         key: {
