@@ -314,7 +314,7 @@
           A: "createastral:blast-resistant_concrete",
         },
       },
-	  {
+      {
         output: Item.of("createastral:blast-resistant_doncrete_slab", 6),
         pattern: ["AAA"],
         key: {
@@ -328,7 +328,7 @@
           A: "createastral:blast-resistant_doncrete",
         },
       },
-	  {
+      {
         output: Item.of("createastral:rock_salt_slab", 6),
         pattern: ["AAA"],
         key: {
@@ -1638,6 +1638,14 @@
         },
       },
       {
+        output: Item.of("dbe:steel_mesh_trapdoor", 3),
+        pattern: ["BFB", "BFB"],
+        key: {
+          B: "dbe:steel_plating",
+          F: "dbe:steel_frame",
+        },
+      },
+      {
         output: "minecraft:oak_planks",
         pattern: ["S", "S"],
         key: {
@@ -1726,6 +1734,80 @@
         pattern: ["S", "S"],
         key: {
           S: "vinery:cherry_slab",
+        },
+      },
+
+      // Astral Generators Recipes
+
+      {
+        output: Item.of("custommachinery:custom_machine_item", { machine: "astralgenerators:assembler" }),
+        pattern: ["aza", "ycy", "bxb"],
+        key: {
+          x: "create:belt_connector",
+          y: "create:mechanical_arm",
+          z: "techreborn:electronic_circuit",
+          a: "techreborn:basic_machine_frame",
+          b: "createaddition:gold_wire",
+          c: "create:depot",
+        },
+      },
+      {
+        output: "astralgenerators:multiblock_projector",
+        pattern: ["xxx", "xya", "xxx"],
+        key: {
+          x: "techreborn:basic_machine_frame",
+          y: "create:integrated_circuit",
+          a: "minecraft:light_blue_stained_glass_pane",
+        },
+      },
+      {
+        output: "astralgenerators:pipe_casing",
+        pattern: ["xxx", "xyx", "xxx"],
+        key: {
+          x: "ad_astra:steel_plate",
+          y: "create:fluid_pipe",
+        },
+      },
+      {
+        output: "astralgenerators:resolith_manipulator",
+        pattern: [" RN", " IB", " I "],
+        key: {
+          R: "minecraft:red_dye",
+          N: "minecraft:iron_nugget",
+          B: "minecraft:blue_dye",
+          I: "ad_astra:desh_ingot",
+        },
+      },
+      {
+        output: "astralgenerators:iron_resolith_relay",
+        pattern: [" c ", "cic", " c "],
+        key: {
+          c: "create:copper_nugget",
+          i: "minecraft:iron_ingot",
+        },
+      },
+      {
+        output: Item.of("astralgenerators:iron_resolith_transceiver", 2),
+        pattern: [" c ", "cic", " c "],
+        key: {
+          c: "createaddition:copper_spool",
+          i: "minecraft:iron_ingot",
+        },
+      },
+      {
+        output: "astralgenerators:electrum_resolith_relay",
+        pattern: [" c ", "cic", " c "],
+        key: {
+          c: "create:copper_nugget",
+          i: "techreborn:electrum_ingot",
+        },
+      },
+      {
+        output: Item.of("astralgenerators:electrum_resolith_transceiver", 2),
+        pattern: [" c ", "cic", " c "],
+        key: {
+          c: "createaddition:copper_spool",
+          i: "techreborn:electrum_ingot",
         },
       },
     ];

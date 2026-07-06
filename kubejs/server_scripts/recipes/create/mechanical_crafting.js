@@ -93,6 +93,15 @@
         },
       },
       {
+        output: "astraladditions:spudshotgun",
+        pattern: ["PPLLL", "PPLM "],
+        key: {
+          L: "techreborn:lead_plate",
+          P: "create:fluid_pipe",
+          M: "create:precision_mechanism"
+        },
+      },
+      {
         output: "astraladditions:chromatic_vacuum",
         pattern: [" B ", "ACA", "AAA"],
         key: {
