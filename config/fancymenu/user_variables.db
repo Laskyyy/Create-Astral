@@ -44,7 +44,13 @@ variable {
 
 variable {
   name = version
-  value = v2.1.4c
+  value = 2.1.5
+  reset_on_launch = false
+}
+
+variable {
+  name = viewed_changelog_2.1.5
+  value = 0
   reset_on_launch = false
 }
 

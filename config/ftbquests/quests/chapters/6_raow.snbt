@@ -1,7 +1,7 @@
 {
 	id: "5CC09F97DD5CD4CA"
 	group: ""
-	order_index: 8
+	order_index: 6
 	filename: "6_raow"
 	title: "{ftbquests.chapter.6_raow.title}"
 	icon: "createastral:subatomic_ingot"
@@ -265,7 +265,7 @@
 				}
 			}
 			x: 18.0d
-			y: -1.0d
+			y: 1.0d
 			description: ["{ftbquests.chapter.6_raow.quests4.description}"]
 			dependencies: ["3705B91C0D4EA2A0"]
 			optional: true
@@ -290,8 +290,8 @@
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests5.title}"
-			x: 19.5d
-			y: 0.75d
+			x: 18.0d
+			y: -0.75d
 			shape: "square"
 			description: ["{ftbquests.chapter.6_raow.quests5.description}"]
 			dependencies: ["4E9CF88D314F6843"]
@@ -617,19 +617,27 @@
 				"{ftbquests.chapter.6_raow.quests14.description2}"
 			]
 			dependencies: ["0DA873C30C320AD9"]
+			min_required_tasks: 1
 			id: "471D3DCAFD9710EC"
-			tasks: [{
-				id: "4F4F59A87FE43DAB"
-				type: "item"
-				item: {
-					id: "techreborn:cell"
-					Count: 1b
-					tag: {
-						fluid: "yttr:void"
+			tasks: [
+				{
+					id: "4F4F59A87FE43DAB"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "yttr:void"
+						}
 					}
+					match_nbt: true
 				}
-				match_nbt: true
-			}]
+				{
+					id: "2D5098ADCF9F2E6B"
+					type: "item"
+					item: "yttr:void_bucket"
+				}
+			]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests15.title}"
@@ -689,6 +697,12 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "184AC901EAB4BA70"
+				type: "random"
+				exclude_from_claim_all: true
+				table_id: 1747526165463332193L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests16.title}"
@@ -1003,6 +1017,8 @@
 				""
 				"{ftbquests.chapter.6_raow.quests29.description2}"
 				""
+				""
+				"{ftbquests.chapter.6_raow.quests29.description3}"
 			]
 			dependencies: ["637D5C1C0C789F9E"]
 			id: "6F5C9A0CC0CAC7A8"
@@ -1413,19 +1429,27 @@
 			description: ["{ftbquests.chapter.6_raow.quests46.description}"]
 			hide_dependency_lines: true
 			dependencies: ["5BCACF82FA7D1B80"]
+			min_required_tasks: 1
 			id: "06431C6B11CBD4D1"
-			tasks: [{
-				id: "2AD9F7D6CA6CC058"
-				type: "item"
-				item: {
-					id: "techreborn:cell"
-					Count: 1b
-					tag: {
-						fluid: "techreborn:mercury"
+			tasks: [
+				{
+					id: "2AD9F7D6CA6CC058"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "techreborn:mercury"
+						}
 					}
+					match_nbt: true
 				}
-				match_nbt: true
-			}]
+				{
+					id: "5F45B1947E3BA9D7"
+					type: "item"
+					item: "techreborn:mercury_bucket"
+				}
+			]
 		}
 		{
 			x: 18.0d
@@ -1663,6 +1687,12 @@
 					item: "yttr:ir_lazor_emitter"
 				}
 			]
+			rewards: [{
+				id: "1A29B5BE39F28223"
+				type: "loot"
+				exclude_from_claim_all: true
+				table_id: 1747526165463332193L
+			}]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests57.title}"
@@ -1715,19 +1745,31 @@
 				"67337DF3DCEAC3DE"
 				"1CCB3210417B55B6"
 			]
+			min_required_tasks: 1
 			id: "65F77462CD1DFFDB"
-			tasks: [{
-				id: "38E2FE16957BF2CC"
-				type: "item"
-				item: {
-					id: "techreborn:cell"
-					Count: 1b
-					tag: {
-						fluid: "kubejs:molten_radiance"
+			tasks: [
+				{
+					id: "38E2FE16957BF2CC"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "kubejs:molten_radiance"
+						}
 					}
+					match_nbt: true
 				}
-				match_nbt: true
-			}]
+				{
+					id: "6ABEA908CDE3444A"
+					type: "item"
+					item: "kubejs:molten_radiance_bucket"
+				}
+				{
+					id: "3C47E67212175577"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			x: 23.0d
@@ -1745,19 +1787,31 @@
 				"1A3925C20FDC3876"
 				"1CCB3210417B55B6"
 			]
+			min_required_tasks: 1
 			id: "6328B6E2C86D8834"
-			tasks: [{
-				id: "20C665E85CBE42FD"
-				type: "item"
-				item: {
-					id: "techreborn:cell"
-					Count: 1b
-					tag: {
-						fluid: "kubejs:molten_shadowsteel"
+			tasks: [
+				{
+					id: "20C665E85CBE42FD"
+					type: "item"
+					item: {
+						id: "techreborn:cell"
+						Count: 1b
+						tag: {
+							fluid: "kubejs:molten_shadowsteel"
+						}
 					}
+					match_nbt: true
 				}
-				match_nbt: true
-			}]
+				{
+					id: "2C1879B14519F7CE"
+					type: "item"
+					item: "kubejs:molten_shadowsteel_bucket"
+				}
+				{
+					id: "74AE6E97ED54C9E5"
+					type: "checkmark"
+				}
+			]
 		}
 		{
 			title: "{ftbquests.chapter.6_raow.quests61.title}"
@@ -1814,7 +1868,7 @@
 			}]
 		}
 		{
-			x: 16.0d
+			x: 16.5d
 			y: -3.5d
 			subtitle: "{ftbquests.chapter.6_raow.quests63.subtitle}"
 			description: ["{ftbquests.chapter.6_raow.quests63.description}"]
@@ -1835,6 +1889,108 @@
 				id: "21D6FC083CB0F3FC"
 				type: "item"
 				item: "astralfoods:shimmered_apple"
+			}]
+		}
+		{
+			x: 20.25d
+			y: 0.0d
+			size: 1.5d
+			shape: "heart"
+			subtitle: "{ftbquests.chapter.6_raow.quests64.subtitle}"
+			description: [
+				"{ftbquests.chapter.6_raow.quests64.description0}"
+				"{ftbquests.chapter.6_raow.quests64.description2}"
+				""
+				"{ftbquests.chapter.6_raow.quests64.description3}"
+				"{ftbquests.chapter.6_raow.quests64.description4}"
+				"{ftbquests.chapter.6_raow.quests64.description5}"
+				""
+				"{ftbquests.chapter.6_raow.quests64.description6}"
+			]
+			dependencies: ["17794A6A366C8497"]
+			id: "1ECEFEADF3882708"
+			tasks: [{
+				id: "4D40E53F617B6D82"
+				type: "item"
+				item: {
+					id: "astraladditions:astral_hoe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "4F3E3579590B181C"
+				type: "item"
+				item: {
+					id: "create:sand_paper"
+					Count: 1b
+					tag: {
+						RepairCost: 0
+						Damage: 0
+						display: {
+							Name: "{\"text\":\"Congratulations\"}"
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "{ftbquests.chapter.6_raow.quests65.title}"
+			icon: "createdeco:green_decal"
+			x: 24.5d
+			y: -7.5d
+			description: [
+				"{ftbquests.chapter.6_raow.quests65.description0}"
+				""
+				"{ftbquests.chapter.6_raow.quests65.description2}"
+				""
+				"{ftbquests.chapter.6_raow.quests65.description3}"
+				""
+				"{ftbquests.chapter.6_raow.quests65.description4}"
+				""
+				"{ftbquests.chapter.6_raow.quests65.description5}"
+				""
+				"{ftbquests.chapter.6_raow.quests65.description6}"
+				"{ftbquests.chapter.6_raow.quests65.description7}"
+			]
+			hide_dependency_lines: true
+			dependencies: ["07A143B6DCF06587"]
+			id: "46B2EF238C9D324A"
+			tasks: [{
+				id: "691180CF79F09367"
+				type: "checkmark"
+				title: "{ftbquests.chapter.6_raow.quests65.tasks0.title}"
+			}]
+		}
+		{
+			x: 15.5d
+			y: -3.0d
+			subtitle: "{ftbquests.chapter.6_raow.quests66.subtitle}"
+			description: [
+				"{ftbquests.chapter.6_raow.quests66.description0}"
+				""
+				"{ftbquests.chapter.6_raow.quests66.description2}"
+				""
+				"{ftbquests.chapter.6_raow.quests66.description3}"
+				""
+				"{ftbquests.chapter.6_raow.quests66.description4}"
+				""
+				"{ftbquests.chapter.6_raow.quests66.description5}"
+			]
+			dependencies: ["7001A75C47B1DA1A"]
+			id: "4591410BA0D27646"
+			tasks: [{
+				id: "491E25E1F31A9B66"
+				type: "item"
+				item: "yttr:dsu"
+			}]
+			rewards: [{
+				id: "63B93C7A32D118F4"
+				type: "item"
+				item: "reinfchest:diamond_chest"
+				count: 2
 			}]
 		}
 	]

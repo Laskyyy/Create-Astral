@@ -1,0 +1,133 @@
+{
+  "global": {
+    "enabled": true,
+    "onlyWithKeepInventory": true
+  },
+  "rules": [
+    {
+      "name": "Death By Lava/Fire",
+      "when": [
+        "inFire",
+        "lava"
+      ],
+      "where": [],
+      "from": [],
+      "using": [],
+      "penalties": [
+        {
+          "type": "xp_percent",
+          "valueF": 0.75
+        },
+		{
+		  "type": "add_effect",
+		  "id": "minecraft:slowness",
+		  "durationTicks": 1200
+		},
+		{
+		  "type": "add_effect",
+		  "id": "minecraft:mining_fatigue",
+		  "amplifier": 0,
+		  "durationTicks": 1800
+		},
+		{
+		  "type": "set_food",
+		  "value": 6,
+		  "saturationValue": 0.0
+		}
+      ]
+    },
+	{
+      "name": "Death By Void",
+      "when": [
+        "outOfWorld"
+      ],
+      "where": [],
+      "from": [],
+      "using": [],
+      "penalties": [
+        {
+          "type": "xp_percent",
+          "valueF": 0.75
+        },
+		{
+		  "type": "add_effect",
+		  "id": "minecraft:blindness",
+		  "amplifier": 0,
+		  "durationTicks": 300
+		},
+		{
+		  "type": "set_food",
+		  "value": 6,
+		  "saturationValue": 0.0
+		}
+      ]
+    },
+	{
+      "name": "Death By Frost",
+      "when": [
+        "freeze"
+      ],
+      "where": [],
+      "from": [],
+      "using": [],
+      "penalties": [
+        {
+          "type": "xp_percent",
+          "valueF": 0.25
+        },
+		{
+		  "type": "add_effect",
+		  "id": "astraladditions:frost",
+		  "amplifier": 0,
+		  "durationTicks": 300
+		},
+		{
+		  "type": "set_food",
+		  "value": 8,
+		  "saturationValue": 0.0
+		}
+      ]
+    },
+	{
+      "name": "Death By Fall",
+      "when": [
+        "fall"
+      ],
+      "where": [],
+      "from": [],
+      "using": [],
+      "penalties": [
+        {
+          "type": "xp_percent",
+          "valueF": 0.25
+        },
+		{
+		  "type": "add_effect",
+		  "id": "minecraft:slowness",
+		  "amplifier": 0,
+		  "durationTicks": 600
+		},
+		{
+		  "type": "set_food",
+		  "value": 8,
+		  "saturationValue": 0.0
+		}
+      ]
+    }
+  ],
+  "defaultPenalties": [
+    {
+      "type": "xp_percent",
+      "valueF": 0.25
+    },
+	{
+	  "type": "set_food",
+	  "value": 15,
+	  "saturationValue": 0.0
+	},
+    {
+      "type": "item_drop",
+      "valueF": 0.5
+    }
+  ]
+}

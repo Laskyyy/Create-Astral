@@ -1,0 +1,13 @@
+name = "Ear Trinkets"
+filename = "eartrinkets-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4a2cff6e0781f3c5506e3494baafaae910977562"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7370801
+project-id = 1412038

@@ -15,7 +15,230 @@ Release dates attached to version numbers are in the format `YYYY/MM/DD` as per 
 
 Please note that patch notes for versions 2.1.3 and lower are currently lacking in full information, or may even be entirely inaccurate, due to poor documentation of changes before implementation of the changelog. If you notice anything that is incorrect or missing, please open a Pull Request with your fixes.
 
-## 2.1.4c [HOTFIX, UNRELEASED]
+## 2.1.5 [CURRENT RELEASE] - 2026/07/05
+
+### SUMMARY
+
+Most changes in 2.1.5 are surrounding many pain points in Chapter 3, when most players typically quit as the grind ramps up dramatically. Alternate recipes have been added for many of the more painful processes such as Integrated Circuits, Brass Casing, and Launchpads to try to tackle this, with the aim of having easier, yet less automatable, solutions than the existing ones, or adding alternate recipes to give players more choice depending on what their automation setup looks like.
+
+Fabric has been updated from 0.16.3 to 0.18.4. This may introduce unforseen issues, so please keep reporting any bugs you find on GitHub or Discord!
+
+Hephaestus has entered LTS for 1.18.2, meaning that some of the oldest bugs in the modpack have now been addressed. Huge thanks to @AlphaMode for continuing to provide support for the mod! This also means that those hosting a server will no longer have to manually install Hephaestus, although the same still can't be said for Vinery.
+
+We have also decided to include the No Chat Restrictions mod in the pack, so that players in countries where multiplayer chat has been restricted can once again enjoy the modpack. The majority of the Create: Astral developer team is from the United Kingdom, one such country where these restrictions have been forced upon the population, so this was necessary for continuing our development of the modpack. We do not recommend any person ever hand over their identity to access online chat services, and instead encourage you to seek alternative solutions.
+
+### ADDITIONS
+
+#### Mod additions
+
+- Added Chunk Corruption Preventor (#657) @ethanicusss
+  - This mod attempts to prevent chunks from resetting to their default state when failing to save properly by removing problematic blocks from those chunks
+  - If it can't prevent a corruption, it dumps info to logs to help server admins diagnose the problem
+  - No guarantees that it works every time
+- Added Smoke Signals (#658) @ethanicusss
+  - You can now put coloured Wool underneath Campfires, and the smoke will mimic that colour
+- Added Sense (#673) @tobynguyen27
+  - A library used by Defined's Blocks and Astral Generators
+- Added CodeBebeLib (#673) @tobynguyen27
+  - A library used by Defined's Blocks and Astral Generators
+- Added More Fluid Cans (#675) @MikoTheBoi
+  - Adds a pair of cans that can hold 100 mB (or one Gem) and 250 mB (or one Brick, or Slimeball) of any fluid
+- Added Ear Trinkets (#682) @Nik-Was
+  - Wearable Cat Ears with a dedicated trinket slot
+  - Cat Ears grant a 2% speed boost, with more trinkets planned for the future
+- Added The Death Penalty (#696) @ethanicusss
+  - An in-house mod written by @HyperRaccoon13
+  - Adds death penalties to the modpack - by default, players will now respawn with less XP and 7.5 hunger shanks instead of the full 10
+  - Enabling KeepInventory will now enable experimental options that removes certain items from the player's inventory, like Raw Ores, chest loot, food, and ammunition upon respawn
+  - We are looking for feedback on how this mod plays when KeepInventory is enabled, and are considering enabling KeepInventory by default with these penalties applied in the future
+  - There is a quest explaining this mod in the FAQ chapter
+- Added Pack Order (#705) @The-Shortman
+  - Another in-house mod written by @HyperRaccoon13
+  - Allows modpack developers to define a default resource pack order, and adds a button in the resource pack menu that sets it to that order
+  - The button shows an 'X' if the resource packs don't match the predefined order, and a checkmark if the resource packs do match the predefined order
+  - Effectively prevents the "my resource packs reset, what was the original order?" conundrum, so now you just have to press one button when your packs inevitably reset, and all your problems are solved
+- Added Log Begone (#692) @The-Shortman
+  - Configured to redact commonly spammed log entries that are useless to the end user during diagnosis of issues with the modpack
+  - Reduces the size of the log between game launch and entering world by about 80% (that's a lot of spam!)
+- Added No Chat Restrictions (#717) @ethanicusss
+  - The UK government has enforced chat restrictions for accounts of users residing in the UK that have not verified their age - this mod disables that feature, as it is only a client-side check
+  - The restriction of chat features limits many vital functions of the game, most notably running commands, and not being able to chat with other players, even on LAN servers
+  - Adding this mod will now make it possible for British players to enjoy the full modpack experience again
+
+#### Gameplay-changing
+
+- Added a new Cogwheel Skull item, which can be used as a projectile for the Potato Cannon, with the ability to freeze mobs for a short time in the impact radius (#610) @Nik-Was
+- Implemented the Tech Reborn Alloy Furnace as an alternative to the Alloy Smelter. The Furnace uses fuel while the Smelter uses energy (#634) @ethanicusss
+- Implemented functionality to the Extractinator - Silt, Slush, Sand, and Gravel can be processed using it (#643) @ethanicusss
+- Added Doncrete, a Desh-Concrete hybrid block that can be used as a substitute for Blast-Resistant Concrete in the Launchpad recipe, along with a Stair and Slab variant (#636, #671) @ethanicusss
+- Added a set of items for an alternate production line for Integrated Circuits that can be done manually, requiring no Deployers, intended for small batch crafts (#636) @ethanicusss
+- Added an alternate production line for Biofuel (#636) @ethanicusss
+- Added an alternate, less efficient, easier recipe for Brass Casing (#636) @ethanicusss
+- Added an alternate production line for Precision Mechanisms once Steel is obtainable, which has a 100% output rate as opposed to the earlier recipe's 80% output rate (#636) @ethanicusss
+- Added an alternate recipe for Basic Machine Frames once Steel is obtainable, the Copper Casing can now be substituted with a Steel Frame (#636) @ethanicusss
+- Added an alternate recipe for Compressed Plantballs in the Compressor that guarantees their output as opposed to the Mechanical Press recipe (#636) @ethanicusss
+- Added a new recipe for Warped Wart Blocks, making them automatable without a Warped Fungus farm (#648) @ethanicusss
+- Added a new recipe for Mycelium, involving mixing Dirt and Cheese (#648) @ethanicusss
+- Added Rock Salt, a new orestone on Mercury with decorative variants, which can be crushed into Saltpeter (#671) @ethanicusss
+- Added the Blender, a custom machine that takes up to 4 shapeless inputs and outputs an item - it can currently craft Saltmeal and can do some alternative recipes (#671) @ethanicusss
+- Added Saltmeal, which can be used on any Amethyst-like crystal to grow it to the next stage (#671) @ethanicusss
+- Added Mashed Potato, Hashbrowns, and Protein Balls as new food items (#671, #687) @ethanicusss
+- Added a new recipe for the Unbored Steel Screw Breech, allowing it to be cast using Hephaestus casting (#671) @ethanicusss
+- Added a new Straw Cast for casting Straws (#671) @ethanicusss
+- Added some more rewards to certain quests (#687) @ethanicusss
+- Added three new Glowstone recipes (#694) @ethanicusss
+- Added custom recipes for a process from the Yttr mod, previously unused in Astral, called Piston Smashing (#695) @ethanicusss
+- Added a Sputum Bottle along with a set of different recipes to make Sputum (#695) @ethanicusss
+- Added two recipes for the Ender Transmission Chunk Loader, effectively allowing endgame chunkloading without FTB Claim limits (#700) @ethanicusss
+- Added a recipe for the Andesite Iron Trapdoor (#715) @MikoTheBoi
+
+#### Quality of life
+
+- The modpack has now been localised for European Spanish (es_es) - bear in mind this may already be outdated (#598) @lizondoalex
+- The modpack has now been localised for British English (en_gb) (#624) @The-Shortman
+- Added some decor from Beautify and Vinery to the Phonos Village House structure (#654) @ethanicusss
+- Added some new quests and chapters - and modified some existing quests and chapters - to explain a multitude of previously unmentioned or poorly-explained concepts (#659, #686, #687) @MikoTheBoi @ethanicusss
+- The modpack has now been localised for Russian (ru_ru) (#680, #704, #710, #712) @Godzillys @Nik-Was
+
+#### Behind-the-scenes
+
+- Added a Pull Request Template to the GitHub repository (#626) @The-Shortman
+- Added a permanent Bug Tracker Project to the GitHub repository @The-Shortman
+- Added summaries to the top of future changelogs for a quick TL;DR of important changes @The-Shortman
+- Added various placeholder textures and model files to resolve errors on startup (#671, #687) @ethanicusss
+
+### CHANGES
+
+#### Major mod updates
+
+- Updated Fabric to 0.18.4 (#717) @ethanicusss
+  - Prior version of Fabric was 0.16.3, so we are expecting issues to arise from this update
+  - As always, please report any bugs you run into
+- Updated Astral Generators to v2.0.0-alpha5 (#691) @tobynguyen27
+  - Updated textures for blocks
+  - Redesigned multiblock structures
+  - Updated machine GUI textures
+  - Added Resolith as an alternative energy transfer method
+  - Added a Steam Bucket
+- Updated Astral Additions to 1.5.4 (#697) @ethanicusss
+  - Added the Black Hole mob, which spawns in the Moon Debris and in Mercury Deltas
+  - Added a set of new weapons: the Rapier, Soulsteal Dagger, Diamond Boomer, Shimmerang, Parry Shield, Spud Shotgun, and the Beta Weapons
+  - Added a set of new tools: the Astral Hoe and the Shimmer Fishing Rod
+  - Added the ability to fish in Shimmer (Shimmer Fishing Rod required)
+  - Added Desert Flowers that spawn in the Martian Desert
+  - Fixed Yttr's Void Shelving Unit to work properly
+- Updated Adopt A Floppa to 1.2.2 (7e35eac) @ethanicusss
+  - Added the Sloppa
+
+#### Gameplay-changing
+
+- Custom Potato Cannon projectiles now have some more possible effects when firing and landing, depending on the projectile (#612) @HyperRaccoon13
+- Added all Mixer-based alloys to the recipes of the Tech Reborn Alloy Smelter (#634) @ethanicusss
+- Changed the recipes of the Thermal Generator and Gas Turbine to use Ostrum instead of Invar (#634) @ethanicusss
+- Nerfed the amount of Rubble obtainable from Ruined Containers to be in-line with other ruined blocks, which now only drop a minimum of 0 and a maximum of 2 rubble each (#635) @The-Shortman
+- Changed the Sulphuric Acid Mixer recipe to use Sulphur Dust instead of liquid Sulphur (#636) @ethanicusss
+- Reduced the amount of Steel required in making Blast Resistant Cement fluid by 33% (#636) @ethanicusss
+- Launchpad recipes now give two launchpads instead of only one, for the same cost (#636) @ethanicusss
+- Reduced power consumption of the existing Biomass recipe in the Compressor to 200E total (#636) @ethanicusss
+- Buffed the recipe for Leather in the Chemical Reactor to be better than just bulk blasting Rotten Flesh (#636) @ethanicusss
+- Buffed a few recipes in the Extractor and Grinder machines (#636) @ethanicusss
+- Changed the drop pool of Corrupted Lunarians, so they now drop Phantom Membranes at a 33% chance (#651) @ethanicusss
+- Replaced the endgame Root Of Continuity quest with a Shimmer Amplifier quest (#656) @ethanicusss
+- Certain recipes that previously only accepted Buckets now also accept Tech Reborn Fluid Cells (#659) @MikoTheBoi
+- Buffed the recipe for the Iron Fence to give 2x the legacy output (#659) @MikoTheBoi
+- Reverted the Shimmer Apple recipe to use an Ender Crystal (#659) @MikoTheBoi
+- Changed Gamer's Delight recipe to be a Sequenced Assembly (#659) @MikoTheBoi
+- Nerfed Seared Potato recipe to use more Seared Stone and to have a longer cooling time after being cast (#659) @MikoTheBoi
+- Blaze Fries and Fried Cod now take heating (#659) @MikoTheBoi
+- Buffed the amount of hunger fulfillment Astral Sauce, Quantum Pasta, Compressed Onion, and Food Amalgamation provide (#659) @MikoTheBoi
+- Buffed the amount of Fire Resistance time that Blaze Fries And Cod provides (#659) @MikoTheBoi
+- Buffed the amount of Fire Resistance and Absorption time that Cod 'n' Blaze provides (#659) @MikoTheBoi
+- Nerfed the Dipped Potato by increasing the amount of time you can't jump (#659) @MikoTheBoi
+- Nerfed the time that Chocolate Ice Cream gives Speed for (#659) @MikoTheBoi
+- Nerfed Gamer's Delight by increasing Shock time (#659) @MikoTheBoi
+- Increased the amount of Molten Silver required in making Integrated Circuits, primarily to make the fluid values easier to read (#659) @MikoTheBoi
+- Straws now require casting Molten Silicon instead of just Bamboo (#671) @ethanicusss
+- Changed the recipe for the Copper Coil Block to require roughly the same amount of copper, but require less usage of the Rolling Mill, making the recipe more intuitive to craft and less tedious (#681) @ethanicusss
+- Changed the drop pool of Sulphur Creepers to now drop Sulphur (#687) @ethanicusss
+
+#### Quality of life
+
+- Changed the texture of the Distillation Tower Controller to match the advanced machine casing it is made from, and added an "off" variant for its idle state (#625) @ethanicusss
+- Astral Generators multiblock fluid inputs and outputs are now based around a bucket amount, but the ratio of input to output is the same as before (#622) @KonSola5
+- Optimised many of the language keys throughout translation files (#683) @nageih @VM-Chinese-translate-group
+
+#### Bug patches
+
+- Fixed the step-up modifier not working after 2.1.4 (#608) @ConductiveFoam
+- Reduced the texture size of the Hephaestus Farsighted modifier in an attempt to reduce mipmap level load times [N.B. There are more textures that need to be addressed like this] (#631, #632) @ethanicusss
+- Fixed Bronze Nuggets not melting into Molten Bronze (#620) @ConductiveFoam
+- Fixed a multitude of typos, grammar mistakes, and inaccuracies in the Questbook (#621, #624, #712) @ConductiveFoam @The-Shortman @Nik-Was
+- Bulba Tea recipe now outputs a bottle instead of 333 mB, removing stray millibuckets (#622) @KonSola5
+- Fixed duplicate recipes for the Oxygen Loader and Compressed Air Cells appearing in REI (#633) @The-Shortman
+- Fixed Compressor block names not having assigned lang keys, now they show their proper names instead of internal names (#633) @The-Shortman
+- Fixed the Alternator and Motor from Crafts and Additions not being able to output/input their full generation/consumption with only one connector (#633) @The-Shortman
+- Fixed the recipe for the Strength modifier conflicting with Overslime on Hephaestus chestplates (#633) @The-Shortman
+- Fixed the Seitan to Egg recipe turning into Protopork halfway through and outputting Pork (#633) @The-Shortman
+- Fixed the Mixer recipe for Farmers' Delight Pie Crust using an incorrect fluid amount (#633) @The-Shortman
+- Changed the Blackstone to Scorchia quest in the Automation Matrix chapter from Blackstone to Basalt, to properly represent that specific automation line (#638) @ConductiveFoam
+- Attempted to fix trains deleting themselves when disassembled (#647) @The-Shortman
+- Fixed a Nether Wart duplication glitch (#648) @ethanicusss
+- Removed a bunch of recipes that had null outputs (#653) @ConductiveFoam
+- Replaced naturally spawning Phonos Jukeboxes with Pianos, Note Blocks, and Vanilla Jukeboxes, as the Phonos Jukebox causes crashes when interacted with (#654) @ethanicusss
+- Replaced Diamond Grit in the Trident crafting recipe with Diamond Dust, making the Trident actually craftable (#671) @ethanicusss
+- Renamed Asphalt Slab and Asphalt Stair to match Andesite Pavement (#671) @ethanicusss
+- Fixed Acacia Fences having a missing texture in the inventory (#671) @ethanicusss
+- Fixed a scenario where the player can fall through the world in the End to get to the Nether - this is not intended functionality, in fact, I don't even know what the "Nether" is (#674) @ethanicusss
+- Fixed the Industrial Blast Furnace not returning cells from recipes (#686) @MikoTheBoi
+- Fixed the Sawmill not having any recipe inputs (#699) @MikoTheBoi
+
+#### Minor mod updates
+
+- Updated Hephaestus to version 3.5.2.312, providing LTS for 1.18.2 (#644) @The-Shortman
+  - Fixed chestplates preventing certain right-click interactions like sleeping, mounting entities, and interacting with pets
+  - Fixed the Luck modifer not increasing mob drop rates on weapons
+  - Fixed the Pockets ability on leggings not working
+- Updated Defined's Blocks to v1.0.6 (#673) @tobynguyen27
+  - Added Pastel colour blocks
+  - Added support for Chipped Workbenches
+  - Added a 'squish' animation for the Hatsune Miku Plushie
+  - Added a Teto and Neru plushie
+
+#### Behind-the-scenes
+
+- Placed every script that wasn't in an IIFE into an IIFE (#622) @KonSola5
+- Hephaestus fluid sync fix script is explicitly not type checked (#622) @KonSola5
+- Changed numbers to fluid constants where the constants weren't already being used (#622) @KonSola5
+- Remade type definitions for `interaction.js`, housed in `interaction.d.ts` (#622, #646) @KonSola5 @The-Shortman
+- Moved fluid constants to startup scripts in case they need fluid constants at some point, they currently don't (#622) @KonSola5
+- Improved the automatic modpack build script to skip the servercore .jar when building the client pack - it now building the CurseForge zip using the servercore .pw.toml file - and added an action to create release branches (#650) @The-Shortman
+- Prevented packwiz.json appearing in the serverpack, included the Fabric server jar in the serverpack, and removed the unused publish job from the build action (#672) @The-Shortman
+- Rewrote the serverpack README file in markdown, with more organisation and detail (#672) @The-Shortman
+- Added a default 'none' heat condition for recipes to resolve warnings on startup (#671) @ethanicusss
+- Bumped action versions in workflows and fixed the issue of packwiz having expired binaries (#706) @The-Shortman
+- Optimised resource packs in the repo by using pw.toml metadata files instead of complete folders (#711) @The-Shortman
+
+### REMOVALS
+
+#### Mod removals
+
+> _Nothing to see here yet..._
+
+#### Game-changing
+
+- Removed Invar recipes as the metal is no longer used in anything (#634) @ethanicusss
+- Removed the ability to turn Chromatic Compound into Shadow Steel by dropping it into the void - the custom recipe must be used instead (#655) @ethanicusss
+- Removed the recipe for the Quartz Growth Accelerator as it doesn't serve a use (#675) @MikoTheBoi
+- Removed recipes for Enchanted Books that exceed vanilla levels, as they didn't work properly when applying to tools (#686) @MikoTheBoi
+- Removed the Project Table quest from Chapter 0.5 as it is broken (#687) @ethanicusss
+- Removed Moonmen as they served no gameplay or lore purpose (#688) @ethanicusss
+- Removed the Lead to Glowstone transmutation recipe as it was never intentional (#694) @ethanicusss
+
+#### Behind-the-scenes
+
+> _Nothing to see here yet..._
+
+## 2.1.4c [HOTFIX] - 2025/08/18
 
 ### CHANGES
 
@@ -36,7 +259,7 @@ Please note that patch notes for versions 2.1.3 and lower are currently lacking 
 - Fixed Chromatic Compound not stacking properly.
 - Fixed melting yields of metals that were changed in 2.1.4a to give the correct value of 12 nuggets instead of 13.
 
-## 2.1.4b [HOTFIX, Current Release] - 2025/08/11
+## 2.1.4b [HOTFIX] - 2025/08/11
 
 ### CHANGES
 

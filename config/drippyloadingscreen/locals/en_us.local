@@ -18,7 +18,7 @@ drippyloadingscreen.helper.creator.texttooshort.title = Text too short!
 drippyloadingscreen.helper.creator.texttooshort.desc = Your text needs at least one character to be a text!%n%Otherwise..it...would be nothing.%n%%n%Nobody wants to be nothing, so don't do that to your text!
 
 drippyloadingscreen.helper.creator.cannotdelete.title = Element can't be deleted!
-drippyloadingscreen.helper.creator.cannotdelete.desc = Sorry, but you cannot delete this element.%n%%n%You will need to learn how to live with it..
+drippyloadingscreen.helper.creator.cannotdelete.desc = Sorry, but you cannot delete this element.%n%%n%You will need to learn how to live with it...
 
 drippyloadingscreen.helper.creator.savefile.cancel = Cancel
 
@@ -91,7 +91,7 @@ drippyloadingscreen.helper.creator.choosefile.notsupported = §cFile chooser not
 drippyloadingscreen.helper.creator.webstring.multiline = Multilined: §cOff
 drippyloadingscreen.helper.creator.webstring.nomultiline = Multilined: §aOn
 
-drippyloadingscreen.helper.creator.web.invalidurl = §c§lInvalid URL!%n%%n%This URL is not a valid URL or does not exists!
+drippyloadingscreen.helper.creator.web.invalidurl = §c§lInvalid URL!%n%%n%This URL is not a valid URL or does not exist!
 drippyloadingscreen.helper.creator.web.enterurl = Enter URL
 
 drippyloadingscreen.helper.creator.add.webimage = Web Image
@@ -286,7 +286,7 @@ drippyloadingscreen.helper.buttons.tools.misc.btndesc = Contains more tools and 
 drippyloadingscreen.helper.buttons.tools.misc.openloadingscreen = Open Loading Screen
 drippyloadingscreen.helper.buttons.tools.misc.openloadingscreen.btndesc = Will open a "dead" instance of a%n%world loading screen, to be able%n%to customize it.%n%%n%§cNOTE:%n%You can close this menu by%n%clicking the §lOpen Main Menu §rbutton§r.
 drippyloadingscreen.helper.buttons.tools.misc.openmainmenu = Open Main Menu
-drippyloadingscreen.helper.buttons.tools.misc.openmainmenu.btndesc = Will open the main menu.%n%Useful when stucked in a menu.
+drippyloadingscreen.helper.buttons.tools.misc.openmainmenu.btndesc = Will open the main menu.%n%Useful when stuck in a menu.
 drippyloadingscreen.helper.buttons.tools.misc.openmessagescreen = Open Message Screen
 drippyloadingscreen.helper.buttons.tools.misc.openmessagescreen.btndesc = Will open an instance of the%n%message screen you see before%n%the world loading screen or when%n%leaving a world, to be able to%n%customize it.%n%%n%§cNOTE:%n%You can close this menu by%n%clicking the §lOpen Main Menu §rbutton§r.
 

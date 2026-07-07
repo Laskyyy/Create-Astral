@@ -1,3 +1,4 @@
+/// <reference types="./interaction.d.ts"/>
 /**
  * This file originally contained comments marked with "Better Comments" VS Code extension.
  * Now it has JSDoc comments instead, which have better editor integration.
@@ -73,9 +74,9 @@
   /// swift andesite by max
   onEvent("player.tick", (event) => {
     const player = event.getPlayer();
-    const x = Math.floor(player.x);
-    const y = Math.floor(player.y);
-    const z = Math.floor(player.z);
+    let x = Math.floor(player.x);
+    let y = Math.floor(player.y);
+    let z = Math.floor(player.z);
     if (event.level.getBlock(x, y - 2, z).id == "createastral:swift_andesite") {
       player.potionEffects.add("minecraft:speed", 20, 0, false, false);
     }
@@ -99,69 +100,22 @@
     }
   });
 
-  /**
-   * @typedef ProjectileConfig
-   * @property {Projectile} projectile
-   * @property {Particles} particles
-   * @property {Explosion} explosion
-   */
-
-  /**
-   * @typedef Projectile
-   * @property {Special.Item} item Item ID.
-   */
-
-  /** @typedef {ParticlesEnabledWithNoColor | ParticlesEnabledWithColor | ParticlesDisabled} Particles */
-
-  /**
-   * @typedef ParticlesEnabledWithNoColor
-   * @property {true} enabled Whether the ammo emits particles or not.
-   * @property {number} spread
-   * @property {number} size
-   * @property {number} speed
-   * @property {number} count
-   * @property {string} type
-   * @property {number} size
-   * @property {false} hasColor Specifies whether the particle's color can be changed.
-   */
-
-  /**
-   * @typedef ParticlesEnabledWithColor
-   * @property {true} enabled Whether the ammo emits particles or not.
-   * @property {number} spread
-   * @property {number} size
-   * @property {number} speed
-   * @property {number} count
-   * @property {string} type
-   * @property {number} size
-   * @property {true} hasColor Specifies whether the particle's color can be changed.
-   * @property {[red: number, green: number, blue: number]} color The color of the particle
-   */
-
-  /**
-   * @typedef ParticlesDisabled
-   * @property {false} enabled Whether the ammo emits particles or not.
-   */
-
-  /** @typedef {ExplosionEnabled | ExplosionDisabled} Explosion */
-
-  /**
-   * @typedef ExplosionEnabled
-   * @property {true} enabled
-   * @property {number} strength
-   * @property {boolean} damageTerrain
-   */
-
-  /**
-   * @typedef ExplosionDisabled
-   * @property {false} enabled
-   */
-
   /** @type {ProjectileConfig[]} */
+
+  //? createAutoJson will now also create the required json for create to understand that it can shoot that item.
   const ammos = [
     {
-      projectile: {
-        item: "createastral:astral_singularity",
+      projectile: { item: "createastral:astral_singularity" },
+      createAutoJson: {
+        fileName: "singularity",
+        reloadTicks: 90,
+        damage: 30,
+        knockback: 8,
+        drag: 1,
+        velocityMultiplier: 0.1,
+        gravityMultiplier: 0,
+        sticky: true,
+        soundPitch: 0,
       },
       particles: {
         enabled: true,
@@ -177,12 +131,106 @@
         enabled: true,
         strength: 8,
         damageTerrain: true,
+        causesFire: false,
+        silent: true,
+      },
+      AOE: {
+        enabled: true,
+        effectList: [
+          {
+            potionEffect: "minecraft:wither",
+            potionTime: 5,
+            potionAmplifier: 2,
+            potionHideParticles: false,
+            range: "10",
+          },
+          {
+            potionEffect: "minecraft:hunger",
+            potionTime: 5,
+            potionAmplifier: 2,
+            potionHideParticles: false,
+            range: "10",
+          },
+        ],
+      },
+      sound: {
+        enabled: false,
+        // soundList: [],
       },
     },
     {
-      projectile: {
-        item: "createbigcannons:autocannon_cartridge",
+      projectile: { item: "createastral:cogwheel_skull" },
+      createAutoJson: {
+        fileName: "cogwheel_skull",
+        reloadTicks: 60,
+        damage: 5,
+        knockback: 0,
+        drag: 1,
+        velocityMultiplier: 0.5,
+        gravityMultiplier: 0.5,
+        sticky: false,
+        soundPitch: 0.5,
       },
+      particles: {
+        enabled: true,
+        spread: 3,
+        size: 150,
+        speed: 1,
+        count: 50,
+        type: "ae2:matter_cannon_fx",
+        hasColor: false,
+      },
+      explosion: {
+        enabled: false,
+      },
+      AOE: {
+        enabled: true,
+        effectList: [
+          {
+            potionEffect: "minecraft:slowness",
+            potionTime: 5,
+            potionAmplifier: 100,
+            potionHideParticles: true,
+            range: "7",
+          },
+          {
+            potionEffect: "minecraft:mining_fatigue",
+            potionTime: 5,
+            potionAmplifier: 100,
+            potionHideParticles: true,
+            range: "7",
+          },
+          {
+            potionEffect: "minecraft:weakness",
+            potionTime: 5,
+            potionAmplifier: 100,
+            potionHideParticles: true,
+            range: "7",
+          },
+          {
+            potionEffect: "minecraft:jump_boost",
+            potionTime: 5,
+            potionAmplifier: 200,
+            potionHideParticles: true,
+            range: "7",
+          },
+        ],
+      },
+      sound: {
+        enabled: true,
+        soundList: [
+          {
+            soundName: "createastral:stop_sound",
+            soundType: "master",
+            soundRange: "128",
+            soundVolume: "0.3",
+            soundPitch: "1"
+          }
+        ],
+      },
+    },
+    {
+      projectile: { item: "createbigcannons:autocannon_cartridge" },
       particles: {
         enabled: false,
       },
@@ -194,7 +242,26 @@
     },
   ];
 
-  // TODO: Test this with multiple people shooting at once
+  onEvent("server.load", () => {
+    ammos.forEach((ammoType) => {
+      if (!ammoType.createAutoJson) return;
+      const ammo = ammoType.createAutoJson;
+      let json = {
+        items: [ammoType.projectile.item],
+        reload_ticks: ammo.reloadTicks,
+        damage: ammo.damage,
+        knockback: ammo.knockback,
+        drag: ammo.drag,
+        velocity_multiplier: ammo.velocityMultiplier,
+        gravity_multiplier: ammo.gravityMultiplier,
+        sticky: ammo.sticky,
+        sound_pitch: ammo.soundPitch,
+      };
+      // @ts-expect-error This works.
+      JsonIO.write(`kubejs/data/createastral/potato_cannon_projectile_types/${ammo.fileName}.json`, json);
+    });
+  });
+
   onEvent("entity.spawned", (event) => {
     const { entity, server } = event;
     if (entity.type === "create:potato_projectile") {
@@ -205,24 +272,48 @@
               let x = entity.fullNBT.Pos[0];
               let y = entity.fullNBT.Pos[1];
               let z = entity.fullNBT.Pos[2];
+              let dim = entity.getLevel().getDimension();
               let explosion = entity.block.offset(0, 0, 0).createExplosion();
               if (ammoType.particles.enabled) {
                 if (ammoType.particles.hasColor) {
                   let [red, green, blue] = ammoType.particles.color;
                   server.runCommandSilent(
-                    `particle ${ammoType.particles.type} ${red} ${green} ${blue} ${ammoType.particles.size} ${x} ${y} ${z} ${ammoType.particles.spread} ${ammoType.particles.spread} ${ammoType.particles.spread} ${ammoType.particles.speed} ${ammoType.particles.count}`
+                    `execute in ${dim} run particle ${ammoType.particles.type} ${red} ${green} ${blue} ${ammoType.particles.size} ${x} ${y} ${z} ${ammoType.particles.spread} ${ammoType.particles.spread} ${ammoType.particles.spread} ${ammoType.particles.speed} ${ammoType.particles.count}`
                   );
                 } else {
                   server.runCommandSilent(
-                    `particle ${ammoType.particles.type} ${x} ${y} ${z} ${ammoType.particles.spread} ${ammoType.particles.spread} ${ammoType.particles.spread} ${ammoType.particles.speed} ${ammoType.particles.count}`
+                    `execute in ${dim} run particle ${ammoType.particles.type} ${x} ${y} ${z} ${ammoType.particles.spread} ${ammoType.particles.spread} ${ammoType.particles.spread} ${ammoType.particles.speed} ${ammoType.particles.count}`
                   );
                 }
               }
               if (ammoType.explosion.enabled) {
                 explosion.strength(ammoType.explosion.strength);
                 explosion.damagesTerrain(ammoType.explosion.damageTerrain);
+                explosion.causesFire(ammoType.explosion.causesFire);
                 explosion.explode();
+
+                if (ammoType.explosion.silent) {
+                  server.runCommandSilent(
+                    `execute in ${dim} positioned ${x} ${y} ${z} run stopsound @a[distance=..128] block minecraft:entity.generic.explode`
+                  );
+                }
               }
+              if (ammoType.AOE.enabled) {
+                ammoType.AOE.effectList.forEach((command) => {
+                  server.runCommandSilent(
+                    `execute in ${dim} positioned ${x} ${y} ${z} run effect give @e[type=!item, distance=..${command.range}] ${command.potionEffect} ${command.potionTime} ${command.potionAmplifier} ${command.potionHideParticles}`
+                  );
+                });
+              }
+
+              if (ammoType.sound.enabled) {
+                ammoType.sound.soundList.forEach((command) => {
+                  server.runCommandSilent(
+                    `execute in ${dim} run playsound ${command.soundName} ${command.soundType} @a[distance=..${command.soundRange}] ${x} ${y} ${z} ${command.soundVolume} ${command.soundPitch}`
+                  );
+                });
+              }
+
               return;
             }
             event.reschedule();
@@ -230,30 +321,42 @@
         }
       });
     } else if (entity.type === "minecraft:item") {
-      if (entity.item === "createastral:fragile_sheet") {
-        entity.item = "createastral:broken_fragile_sheet";
-        Utils.server.runCommandSilent(
-          `particle minecraft:block minecraft:magenta_concrete_powder ${entity.x} ${entity.y} ${entity.z} 0.0 0.1 0.0 0 5`
-        );
-        Utils.server.runCommandSilent(`playsound create:crushing_1 block @a ${entity.x} ${entity.y} ${entity.z}`);
-      } else if (entity.item === "createastral:fragile_rocket_fin") {
-        entity.item = "createastral:broken_fragile_rocket_fin";
-        Utils.server.runCommandSilent(
-          `particle minecraft:block createastral:sturdy_sheet_block ${entity.x} ${entity.y} ${entity.z} 0.0 0.1 0.0 0 5`
-        );
-        Utils.server.runCommandSilent(`playsound create:crushing_1 block @a ${entity.x} ${entity.y} ${entity.z}`);
-      } else if (entity.item === "kubejs:fragile_sheet_block") {
-        entity.item = "kubejs:broken_fragile_sheet_block";
-        Utils.server.runCommandSilent(
-          `particle minecraft:block kubejs:fragile_sheet_block ${entity.x} ${entity.y} ${entity.z} 0.0 0.1 0.0 0 5`
-        );
-        Utils.server.runCommandSilent(`playsound create:crushing_1 block @a ${entity.x} ${entity.y} ${entity.z}`);
-      } else if (entity.item === "kubejs:fire_resistant_fragile_sheet_block") {
-        entity.item = "kubejs:broken_fire_resistant_fragile_sheet_block";
-        Utils.server.runCommandSilent(
-          `particle minecraft:block kubejs:broken_fire_resistant_fragile_sheet_block ${entity.x} ${entity.y} ${entity.z} 0.0 0.1 0.0 0 5`
-        );
-        Utils.server.runCommandSilent(`playsound create:crushing_1 block @a ${entity.x} ${entity.y} ${entity.z}`);
+      let dim = entity.getLevel().getDimension();
+      let { x, y, z } = entity;
+      switch (entity.item) {
+        case "createastral:fragile_sheet":
+          entity.item = "createastral:broken_fragile_sheet";
+          server.runCommandSilent(
+            `execute in ${dim} run particle minecraft:block minecraft:magenta_concrete_powder ${x} ${y} ${z} 0.0 0.1 0.0 0 5`
+          );
+          server.runCommandSilent(`execute in ${dim} run playsound create:crushing_1 block @a ${x} ${y} ${z}`);
+          break;
+
+        case "createastral:fragile_rocket_fin":
+          entity.item = "createastral:broken_fragile_rocket_fin";
+          server.runCommandSilent(
+            `execute in ${dim} run particle minecraft:block createastral:sturdy_sheet_block ${x} ${y} ${z} 0.0 0.1 0.0 0 5`
+          );
+          server.runCommandSilent(`execute in ${dim} run playsound create:crushing_1 block @a ${x} ${y} ${z}`);
+          break;
+
+        case "kubejs:fragile_sheet_block":
+          entity.item = "kubejs:broken_fragile_sheet_block";
+          server.runCommandSilent(
+            `execute in ${dim} run particle minecraft:block kubejs:fragile_sheet_block ${x} ${y} ${z} 0.0 0.1 0.0 0 5`
+          );
+          server.runCommandSilent(`execute in ${dim} run playsound create:crushing_1 block @a ${x} ${y} ${z}`);
+          break;
+
+        case "kubejs:fire_resistant_fragile_sheet_block":
+          entity.item = "kubejs:broken_fire_resistant_fragile_sheet_block";
+          server.runCommandSilent(
+            `execute in ${dim} run particle minecraft:block kubejs:broken_fire_resistant_fragile_sheet_block ${x} ${y} ${z} 0.0 0.1 0.0 0 5`
+          );
+          server.runCommandSilent(`execute in ${dim} run playsound create:crushing_1 block @a ${x} ${y} ${z}`);
+          break;
+
+        default:
       }
     } else if (entity.type === "minecraft:area_effect_cloud") {
       console.log(entity.fullNBT);

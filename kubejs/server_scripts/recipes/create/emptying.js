@@ -10,7 +10,18 @@
      */
 
     /** @type {EmptyingRecipe[]} */
-    const emptyingRecipes = [];
+    const emptyingRecipes = [
+	  {
+	    input: { "item": "astraladditions:shimmer_bottle" },
+		outputItem: { "item": "minecraft:glass_bottle" },
+		outputFluid: Fluid.of("kubejs:shimmer", BUCKET/3)
+	  },
+      {
+	    input: { "item": "createastral:sputum_bottle" },
+		outputItem: { "item": "minecraft:glass_bottle" },
+		outputFluid: Fluid.of("astraladditions:sputum", BUCKET/3)
+	  }
+	];
     emptyingRecipes.forEach((recipe) => {
       event.recipes.createEmptying([recipe.outputItem, recipe.outputFluid], recipe.input);
     });

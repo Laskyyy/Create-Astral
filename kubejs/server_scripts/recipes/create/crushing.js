@@ -9,6 +9,12 @@
     /** @type {CrushingRecipe[]} */
     const crushingRecipes = [
       {
+        input: "createastral:rock_salt",
+        outputs: [
+          Item.of("techreborn:saltpeter_dust"),
+        ],
+      },
+      {
         input: "tconstruct:ender_slime_crystal_cluster",
         outputs: [
           Item.of("tconstruct:ender_slime_crystal", 3),
@@ -622,7 +628,7 @@
       ],
       "techreborn:deepslate_galena_ore"
     );
-	event.recipes.createCrushing(
+    event.recipes.createCrushing(
       [
         Item.of("minecraft:raw_gold", 2),
         Item.of("minecraft:raw_gold").withChance(0.75),

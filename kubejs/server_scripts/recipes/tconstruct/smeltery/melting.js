@@ -182,6 +182,12 @@
         time: 57,
       },
       {
+        fluidOutput: { fluid: "tconstruct:molten_bronze", amount: NUGGET },
+        input: { tag: "c:bronze_nuggets" },
+        temp: 700,
+        time: 16,
+      },
+      {
         fluidOutput: { fluid: "kubejs:molten_calorite", amount: BUCKET },
         input: { item: "ad_astra:calorite_block" },
         temp: 3000,

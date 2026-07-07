@@ -1,4 +1,5 @@
 (function astralGeneratorsParticleAcceleratorRecipes() {
+  const {BUCKET} = global.fluids;
   onEvent("recipes", (event) => {
     acceleratorSingularity(event);
   });
@@ -25,7 +26,7 @@
           type: "custommachinery:fluid",
           mode: "input",
           fluid: "minecraft:water",
-          amount: 100800,
+          amount: BUCKET,
         },
         {
           type: "custommachinery:energy",

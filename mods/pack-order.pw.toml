@@ -1,0 +1,13 @@
+name = "Pack Order"
+filename = "packorder-1.0.0.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "e9a4d01602cbdaaa5ca69b64cebec8d6b0c9c2eb"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8144929
+project-id = 1553737

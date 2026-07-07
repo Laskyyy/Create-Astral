@@ -63,6 +63,10 @@
         inputs: ["minecraft:seagrass"],
       },
       {
+        output: "minecraft:warped_wart_block",
+        inputs: [Item.of("minecraft:twisting_vines", 9)],
+      },
+      {
         output: { fluid: "astraladditions:sputum", amount: 500 * mB },
         inputs: [
           Item.of("createastral:ender_marimo", 4),
@@ -241,6 +245,10 @@
         inputs: ["farmersdelight:canvas", "minecraft:ink_sac", "createaddition:iron_wire"],
       },
       {
+        output: "createastral:desh_dust",
+        inputs: [Item.of("createastral:small_desh_dust", 9)],
+      },
+      {
         output: "minecraft:andesite",
         inputs: [Item.of("minecraft:flint", 2), "minecraft:gravel", { fluid: "minecraft:lava", amount: 100 * mB }],
         heat: "heated",
@@ -322,6 +330,16 @@
       {
         output: "minecraft:shulker_shell",
         inputs: ["ae2:ender_dust", Item.of("minecraft:purple_dye", 8)],
+        heat: "heated",
+      },
+      {
+        output: Fluid.of("kubejs:blast-resistant_dement", BUCKET),
+        inputs: [
+          "#c:concrete_powder",
+          Item.of("createastral:lime", 2),
+          Item.of("createastral:desh_dust", 18),
+          { fluid: "minecraft:lava", amount: BUCKET },
+		],
         heat: "heated",
       },
       {
@@ -422,19 +440,35 @@
       {
         output: "astralfoods:blaze_fries",
         inputs: ["astralfoods:blaze_rods", { fluid: "createaddition:seed_oil", amount: 100 * mB }],
+        heat: "heated",
       },
       {
         output: "astralfoods:fried_cod",
         inputs: ["minecraft:cod", { fluid: "createaddition:seed_oil", amount: 100 * mB }],
+        heat: "heated",
+      },
+      {
+        output: "astralfoods:hash_brown",
+        inputs: ["astralfoods:mashed_potato", { fluid: "createaddition:seed_oil", amount: 100 * mB }],
+		heat: "heated"
       },
       {
         output: "createbigcannons:steel_screw_lock",
         inputs: [Item.of("astraladditions:steel_ring", 2)],
         heat: "heated",
       },
+      {
+        output: "astraladditions:soulsteal_dagger",
+        inputs: [
+          "mcdw:dagger_soul_knife",
+          { fluid: "xpcrystals:soul", amount: BUCKET },
+          { fluid: "tconstruct:molten_steel", amount: BUCKET / 2 },
+        ],
+        heat: "superheated",
+      },
     ];
     compactingRecipes.forEach((recipe) => {
-      event.recipes.createCompacting(recipe.output, recipe.inputs).heatRequirement(recipe.heat ?? "");
+      event.recipes.createCompacting(recipe.output, recipe.inputs).heatRequirement(recipe.heat ?? "none");
     });
   });
   /** @param {Internal.RecipeEventJS} event */

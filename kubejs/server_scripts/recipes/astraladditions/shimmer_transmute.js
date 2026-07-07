@@ -19,8 +19,8 @@
         output: "minecraft:glowstone",
         stack64: true,
       },
-      {
-        input: "techreborn:lead_ingot",
+	  {
+        input: "minecraft:shroomlight",
         output: "minecraft:glowstone",
         stack64: true,
       },
@@ -57,6 +57,26 @@
       {
         input: "astralfoods:chocolate_ice_cream",
         output: "astralfoods:ambrosia",
+        stack64: false,
+      },
+      {
+        input: "minecraft:nether_wart_block",
+        output: "minecraft:warped_wart_block",
+        stack64: false,
+      },
+      {
+        input: "minecraft:nether_wart_block",
+        output: "minecraft:warped_wart_block",
+        stack64: true,
+      },
+      {
+        input: "minecraft:iron_sword",
+        output: "astraladditions:beta_iron_weapon",
+        stack64: false,
+      },
+      {
+        input: "minecraft:diamond_sword",
+        output: "astraladditions:beta_diamond_weapon",
         stack64: false,
       },
     ];

@@ -2,6 +2,8 @@
     "language.name": "English",
     "language.region": "United States",
     "language.code": "en_us",
+    "logging_tip": "Please Read The Quest Book (Hover Over Me!)",
+    "logging_tip.hover": "The Quest Book contains most of the information needed to progress in this modpack - it's your friend! Use the item to prevent this message from appearing.",
     "addServer.enterIp": "Discover whole new Astral Realms.",
     "multiplayer.title": "Discover whole new Astral Realms.",
     "item.minecraft.bow": "Makeshift Pistol",

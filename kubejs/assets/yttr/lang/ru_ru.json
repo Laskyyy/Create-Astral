@@ -1,0 +1,13 @@
+{
+    "fluid.astraladditions.sputum": "Мокрота",
+    "item.yttr.raw_gadolinite": "Рудный иттрий",
+    "item.yttr.ultrapure_wolfram": "Сверхчистые обломки",
+    "block.yttr.gadolinite": "Иттрий",
+    "block.yttr.raw_gadolinite_block": "Блок рудного иттрия",
+    "block.yttr.deepslate_gadolinite": "Глубинносланцевый иттрий",
+    "block.yttr.continuous_platform": "Структурированные призматические кристаллы",
+    "block.yttr.centrifuge": "Иттриевая центрифуга",
+    "advancements.yttr.obtain_xl_iron_ingot.desc": "Получите Большое Железо, переплавив необработанный иттрий",
+    "advancements.yttr.obtain_yttrium_ingot.desc": "Получите слиток иттрия, переплавив необработанный иттрий в плавильне",
+    "fluid.yttr.core_lava": "Лава ядра"
+}

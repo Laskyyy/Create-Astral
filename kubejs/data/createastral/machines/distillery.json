@@ -3,6 +3,7 @@
   "appearance": {
     "block": "createastral:distillery_dummy",
     "running": {
+	  "block": "createastral:distillery_dummy_on",
       "lightlevel": 15
     }
   },

@@ -1,0 +1,99 @@
+{
+    "name": "custommachinery.astralfoods.blender",
+    "appearance": {
+        "block": "astralfoods:blender_dummy",
+		"running": {
+		  "block": "astralfoods:blender_on_dummy"
+		}
+    },
+    "gui": [
+        {
+            "texture": "custommachinery:textures/gui/base_background.png",
+            "x": 0,
+            "y": 0,
+            "type": "custommachinery:texture"
+        },
+        {
+            "x": 47,
+            "y": 80,
+            "type": "custommachinery:player_inventory"
+        },
+        {
+            "id": "input",
+            "x": 78,
+            "y": 30,
+            "type": "custommachinery:slot"
+        },
+        {
+            "id": "input2",
+            "x": 96,
+            "y": 30,
+            "type": "custommachinery:slot"
+        },
+        {
+            "id": "input3",
+            "x": 78,
+            "y": 48,
+            "type": "custommachinery:slot"
+        },
+        {
+            "id": "input4",
+            "x": 96,
+            "y": 48,
+            "type": "custommachinery:slot"
+        },
+        {
+            "id": "output",
+            "x": 142,
+            "y": 30,
+            "type": "custommachinery:slot"
+        },
+        {
+            "x": 116,
+            "y": 30,
+            "type": "custommachinery:progress"
+        },
+        {
+            "x": 236,
+            "y": 5,
+            "type": "custommachinery:status"
+        },
+        {
+            "text": "custommachinery.astralfoods.blender.text",
+            "x": 7,
+            "y": 5,
+            "type": "custommachinery:text"
+        }
+    ],
+    "components": [
+        {
+            "type": "custommachinery:item",
+            "id": "input",
+            "mode": "input",
+            "whitelist": false
+        },
+		{
+            "type": "custommachinery:item",
+            "id": "input2",
+            "mode": "input",
+            "whitelist": false
+        },
+		{
+            "type": "custommachinery:item",
+            "id": "input3",
+            "mode": "input",
+            "whitelist": false
+        },
+		{
+            "type": "custommachinery:item",
+            "id": "input4",
+            "mode": "input",
+            "whitelist": false
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "output",
+            "mode": "output"
+        }
+    ]
+}

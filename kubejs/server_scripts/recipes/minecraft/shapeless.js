@@ -38,6 +38,10 @@
      * @type {ShapelessRecipe[]}
      */
     const shapelessRecipes = [
+	  {
+        input: ["minecraft:paper", "minecraft:black_dye"],
+        output: "createastral:circuit_paper",
+      },
       {
         input: ["techreborn:rubber", "#ae2:glass_cable"],
         output: "ae2:fluix_covered_cable",
@@ -170,8 +174,8 @@
         output: "tconstruct:sky_slime_ball",
       },
       {
-          input: [Item.of("minecraft:red_dye", 2), Ingredient.of("#c:glass", 2)],
-          output: "techreborn:synthetic_redstone_crystal"
+        input: [Item.of("minecraft:red_dye", 2), Ingredient.of("#c:glass", 2)],
+        output: "techreborn:synthetic_redstone_crystal",
       },
     ];
     shapelessRecipes.forEach((recipe) => {

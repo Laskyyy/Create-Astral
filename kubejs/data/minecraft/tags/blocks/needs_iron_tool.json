@@ -1,7 +1,4 @@
 {
-    "replace": false,
-  "values": [
-    "extractinator:extractinator",
-    "createastral:shimmering_stone"
-  ]
-  }
+  "replace": false,
+  "values": ["extractinator:extractinator", "createastral:shimmering_stone"]
+}

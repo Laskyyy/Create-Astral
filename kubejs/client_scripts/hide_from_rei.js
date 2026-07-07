@@ -613,6 +613,7 @@
       "createastral:laskinium_pill",
       "farmersdelight:wheat_dough",
       "vinery:dough",
+      "morefluidcans:copper_can",
       //Sequenced Assembly Transition Items - not useful to have in rei
       "railways:white_incomplete_conductor_cap",
       "railways:orange_incomplete_conductor_cap",
@@ -670,6 +671,7 @@
       "createastral:washer_dummy",
       "createastral:gas_mixer_dummy",
       "createastral:channeling_transformer_dummy",
+      "astralfoods:blender_dummy",
     ];
     addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:part_builder", "oak_planks", 41);
     addTinkerTableVariants(HIDDEN_ITEMS, "tconstruct:part_builder", "birch_planks", 41);

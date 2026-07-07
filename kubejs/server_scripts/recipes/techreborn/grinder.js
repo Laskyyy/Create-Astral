@@ -5,7 +5,7 @@
     crushingToGrinding(event);
     /**
      * @typedef GrinderRecipe
-     * @property {{item: Special.Item, count?: number}[]} input
+     * @property {Helper.ItemOrTagWithCount[]} input
      * @property {{item: Special.Item, count?: number}[]} output
      * @property {number} time
      * @property {number} power
@@ -25,42 +25,66 @@
         time: 200,
         power: 2,
       },
-	  {
+      {
         input: [{ item: "ad_astra:steel_ingot", count: 1 }],
         output: [{ item: "techreborn:steel_dust", count: 1 }],
         time: 200,
         power: 5,
       },
-	  {
-        input: [{ tag: `c:basalt` , count: 1 }],//tag
+      {
+        input: [{ tag: "c:basalt", count: 1 }], //tag
         output: [{ item: "techreborn:basalt_dust", count: 1 }],
         time: 200,
         power: 5,
       },
-	  {
+      {
         input: [{ item: "minecraft:charcoal", count: 1 }],
         output: [{ item: "techreborn:charcoal_dust", count: 1 }],
         time: 200,
         power: 4,
       },
-	  {
+      {
         input: [{ item: "minecraft:diamond", count: 1 }],
         output: [{ item: "techreborn:diamond_dust", count: 1 }],
         time: 240,
         power: 4,
       },
-	  {
+      {
         input: [{ item: "techreborn:electrum_ingot", count: 1 }],
         output: [{ item: "techreborn:electrum_dust", count: 1 }],
         time: 200,
         power: 5,
       },
-	  {
+      {
         input: [{ item: "techreborn:deepslate_galena_ore", count: 1 }],
         output: [{ item: "techreborn:galena_dust", count: 2 }],
         time: 220,
         power: 2,
       },
+      {
+        input: [{ item: "ad_astra:desh_ingot", count: 1 }],
+        output: [{ item: "createastral:desh_dust", count: 1 }],
+        time: 120,
+        power: 2,
+      },
+      {
+        input: [{ item: "ad_astra:raw_desh", count: 1 }],
+        output: [{ item: "createastral:desh_dust", count: 1 }],
+        time: 100,
+        power: 2,
+      },
+      {
+        input: [{ item: "ad_astra:desh_nugget", count: 1 }],
+        output: [{ item: "createastral:small_desh_dust", count: 1 }],
+        time: 20,
+        power: 2,
+      },
+      {
+        input: [{ tag: "c:certus_quartz", count: 2 }],
+        output: [{ item: "ae2:certus_quartz_dust", count: 2 }],
+        time: 300,
+        power: 2,
+      }
     ];
     grinderRecipes.forEach((recipe) => {
       event.custom({

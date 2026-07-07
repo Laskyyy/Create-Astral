@@ -17,24 +17,24 @@
       "probability": 0.014
     }
   },
-  "creature_spawn_probability": 0.2,
+  "creature_spawn_probability": 0.16,
   "spawners": {
     "monster": [
       {
-        "type": "ad_astra:martian_raptor",
+        "type": "ad_astra:sulfur_creeper",
         "weight": 100,
         "minCount": 1,
         "maxCount": 3
       },
       {
       	"type": "minecraft:wither_skeleton",
-      	"weight": 80,
+      	"weight": 70,
       	"minCount": 1,
       	"maxCount": 2
       },
       {
       	"type": "minecraft:husk",
-      	"weight": 100,
+      	"weight": 80,
       	"minCount": 1,
       	"maxCount": 3
       }
@@ -47,11 +47,7 @@
     }
   },
   "carvers": {
-    "air": [
-      "minecraft:cave",
-      "minecraft:cave_extra_underground",
-      "minecraft:canyon"
-    ]
+    "air": ["minecraft:cave", "minecraft:cave_extra_underground", "minecraft:canyon"]
   },
   "features": [
     [
@@ -64,13 +60,12 @@
     [
       "minecraft:large_dripstone",
       "minecraft:pointed_dripstone",
-			"astralrails:mars_shroom",
-			"astralrails:mars_crimson_nylium_patch",
-			"astralrails:mars_crimson_veg",
-			"astralrails:mars_dripstone_cluster",
+      "astralrails:mars_shroom",
+      "astralrails:mars_crimson_nylium_patch",
+      "astralrails:mars_crimson_veg",
+      "astralrails:mars_dripstone_cluster",
       "astralrails:mars_blackstone_patch",
       "astralrails:mars_bramblebone_veg"
-      
     ]
   ]
 }

@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "extended_drawers:single_drawer",
+        "extended_drawers:double_drawer",
+        "extended_drawers:quad_drawer"
+    ]
+}

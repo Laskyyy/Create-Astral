@@ -1,0 +1,13 @@
+name = "No Chat Restrictions"
+filename = "NoChatRestrictions-Fabric-MC1.18.2-v1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8a95e07d5ac4aed7c62f8d3f0974a9eebec417bd"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7536205
+project-id = 1442925
