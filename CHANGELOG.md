@@ -48,7 +48,7 @@ We have also decided to include the No Chat Restrictions mod in the pack, so tha
   - Cat Ears grant a 2% speed boost, with more trinkets planned for the future
 - Added The Death Penalty (#696) @ethanicusss
   - An in-house mod written by @HyperRaccoon13
-  - Overhauls death penalties in the modpack - by default, players will now respawn with less XP and 7.5 hunger shanks instead of the full 10
+  - Adds death penalties to the modpack - by default, players will now respawn with less XP and 7.5 hunger shanks instead of the full 10
   - Enabling KeepInventory will now enable experimental options that removes certain items from the player's inventory, like Raw Ores, chest loot, food, and ammunition upon respawn
   - We are looking for feedback on how this mod plays when KeepInventory is enabled, and are considering enabling KeepInventory by default with these penalties applied in the future
   - There is a quest explaining this mod in the FAQ chapter
@@ -113,7 +113,7 @@ We have also decided to include the No Chat Restrictions mod in the pack, so tha
 
 - Updated Fabric to 0.18.4 (#717) @ethanicusss
   - Prior version of Fabric was 0.16.3, so we are expecting issues to arise from this update
-  - As always, please report any buigs you run into
+  - As always, please report any bugs you run into
 - Updated Astral Generators to v2.0.0-alpha5 (#691) @tobynguyen27
   - Updated textures for blocks
   - Redesigned multiblock structures
@@ -122,9 +122,9 @@ We have also decided to include the No Chat Restrictions mod in the pack, so tha
   - Added a Steam Bucket
 - Updated Astral Additions to 1.5.4 (#697) @ethanicusss
   - Added the Black Hole mob, which spawns in the Moon Debris and in Mercury Deltas
-  - Added a set of new weapons: the Rapier, Soulsteal Dagger, Diamond Boomer, Shimmerang, Parry Shield, and the Beta Weapons
+  - Added a set of new weapons: the Rapier, Soulsteal Dagger, Diamond Boomer, Shimmerang, Parry Shield, Spud Shotgun, and the Beta Weapons
   - Added a set of new tools: the Astral Hoe and the Shimmer Fishing Rod
-  - Added the ability to fish in Shimmer
+  - Added the ability to fish in Shimmer (Shimmer Fishing Rod required)
   - Added Desert Flowers that spawn in the Martian Desert
   - Fixed Yttr's Void Shelving Unit to work properly
 - Updated Adopt A Floppa to 1.2.2 (7e35eac) @ethanicusss
