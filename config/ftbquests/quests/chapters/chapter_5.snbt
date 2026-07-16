@@ -238,10 +238,10 @@
 							items: [
 								{
 									id: "techreborn:cell"
+									Count: 1b
 									tag: {
 										fluid: "techreborn:lithium"
 									}
-									Count: 1b
 								}
 								{
 									id: "techreborn:lithium_bucket"
@@ -700,8 +700,8 @@
 						}
 						Owner: "Laskyyy"
 						Deployed: 0b
-						Rotation: "NONE"
 						File: "[AstralExamples] Distillery.nbt"
+						Rotation: "NONE"
 						Mirror: "NONE"
 						Bounds: [
 							5
@@ -1335,10 +1335,10 @@
 							items: [
 								{
 									id: "techreborn:cell"
+									Count: 1b
 									tag: {
 										fluid: "techreborn:sulfur"
 									}
-									Count: 1b
 								}
 								{
 									id: "techreborn:sulfur_bucket"
@@ -1524,11 +1524,11 @@
 							items: [
 								{
 									match_nbt: 1b
-									id: "techreborn:cell"
-									Count: 1b
 									tag: {
 										fluid: "techreborn:oil"
 									}
+									Count: 1b
+									id: "techreborn:cell"
 								}
 								{
 									id: "techreborn:oil_bucket"
