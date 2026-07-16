@@ -1020,6 +1020,9 @@
   "ftbquests.chapter.6_raow.quests66.description3": "- It is not possible to automatically input into it (extracting works fine!);",
   "ftbquests.chapter.6_raow.quests66.description4": "- It has a row less than a Double Chest.",
   "ftbquests.chapter.6_raow.quests66.description5": "It's for you to decide whether it's worth using.",
+  "ftbquests.chapter.6_raow.quests67.subtitle": "Speed up crystal growth!",
+  "ftbquests.chapter.6_raow.quests67.description0": "Crystals like seasoning too! Right click any crystal bud like &6Amethyst&r or &6Ender Slime&r and they'll grow to the next stage!",
+  "ftbquests.chapter.6_raow.quests67.description1": "Saltmeal is crafted using the &6Blender&r introduced in Chapter 4, which unfortunately doesn't have REI support yet! It can be crafted with &6Delicace&r and &6Saltpeter&r ike so:",
 
   "ftbquests.chapter.assorted_goals.title": "0.5) Getting Started",
   "ftbquests.chapter.assorted_goals.quests0.title": "A Knight in Shining Copper",
@@ -3058,7 +3061,7 @@
   "ftbquests.chapter.chapter_5.blender.subtitle": "Not for 3D modeling!",
   "ftbquests.chapter.chapter_5.blender.description0": "The &6Blender&r is a high-tech mixer specifically for mixing food like Protein Balls, Mashed Potato and Seitan!",
   "ftbquests.chapter.chapter_5.blender.description2": "...other yummy foods include: more efficient recipes for Bone Meal, Slime, Sand, Biomass and more!",
-  "ftbquests.chapter.chapter_5.blender.description4": "Toss items into the &6Blender&r by hand or by using an item transport method such as a &6Chute&r. The items can be inserted in any order.",
+  "ftbquests.chapter.chapter_5.blender.description4": "Toss items into the &6Blender&r by hand or by using an item transport method such as a &6Chute&r. The items can be inserted in any order. Unfortunately it doesn't have REI support (yet), so we'll do things the old-fashioned way:",
   "ftbquests.chapter.chapter_5.quests77.subtitle": "Dash fast, &4kill&r even faster",
   "ftbquests.chapter.chapter_5.quests77.description0": "The &6Rapier&r allows you to perform a &6double dash attack&r, once forward then back. While in this state an instance of damage done to you will be reflected back! Though it'll have to cool down after.",
   "ftbquests.chapter.chapter_5.quests77.description2": "An ancient weapon, now transformed into the new age.",
