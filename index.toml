@@ -410,7 +410,7 @@ hash = "6818a8f380892deda94db1dd6243e1be18576a93795cfce7cd9cf91d23530832"
 
 [[files]]
 file = "config/fancymenu/custom_locals/astralmenu/en_gb.local"
-hash = "bc57d3e5ea968267ac2465ef892ab3ea7e74bda6fa43ffa5a520fdc0a2d73513"
+hash = "338cdc47f5d421043977d0d435909ac086f3a123fca1df311ab11ff2951a53ac"
 
 [[files]]
 file = "config/fancymenu/custom_locals/astralmenu/en_us.local"
@@ -422,7 +422,7 @@ hash = "aa7b0e7a945242d5f5d17241423e31cbc6bacf0f4ef01e3fef77f6a477fc651a"
 
 [[files]]
 file = "config/fancymenu/custom_locals/astralmenu/ru_ru.local"
-hash = "76ac34d9250aef492cb79467d4e69140095e89f870c8c237e631db1b96b9283d"
+hash = "89d5bca70731f1b16ffbed6962d3c7a2fc36b689079d2a63cced711b3d2f5882"
 
 [[files]]
 file = "config/fancymenu/custom_locals/astralmenu/zh_cn.local"
@@ -434,7 +434,7 @@ hash = "82345259c75fa165daeac4670393f7d30e08c21c011acaf1887976384964e641"
 
 [[files]]
 file = "config/fancymenu/customization/changelog_2.1_layout.txt"
-hash = "8d87ebb4a71a059f30a3cb6ccde701f5a75b1eee52e10f2c93196aadd50a5aaa"
+hash = "028aae6100f4c39a523b9ae3ea7306d46f3c7641e374ec5cc807201d82ff3a7e"
 
 [[files]]
 file = "config/fancymenu/customization/contributor_credits_layout.txt"
@@ -662,7 +662,7 @@ hash = "3577efc059037059e7236eabf6bf65d96a3ca9c54b8d069afb9e0db63bc80d16"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/chapter_5.snbt"
-hash = "6c4bdbb8b51636baa9b7f3b204df55fb6380e30dc73d57e3925fe7ef6e0fbc5a"
+hash = "05a236dc59a49ac12d205eb18e7601275d57211712e7cf651b0994d07f27ea12"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/culinary_delights.snbt"
@@ -910,7 +910,7 @@ hash = "8e9929da9fb98f3b346947b7c3f21654cee6226024655bb203e1da366b34b60f"
 
 [[files]]
 file = "config/packorder/pack_order.json"
-hash = "ec3f3f9f9c18e5a1bf8c6b2ee6bfe7fbd002a77fb96fa33b3a14f910f9a2835c"
+hash = "87fe1989c252ed15fc0a16ad0a8f9a7cc25c88435a17f7af0f035205cfd45e14"
 
 [[files]]
 file = "config/pal.properties"
@@ -1667,6 +1667,14 @@ hash = "d1275ede37ff2cebe1e202eaf2e5733e675a372082675e44f51e75f68a68a1e9"
 [[files]]
 file = "kubejs/assets/astralfoods/textures/item/shimmered_rabbit_stew.png"
 hash = "9ca3f6e70f9174321f95c822da830cdfe8deb33b3ccbe2a3bcf97635b8799fe2"
+
+[[files]]
+file = "kubejs/assets/astralgenerators/models/item/resolith_manipulator.json"
+hash = "be8b555e113e91ab480776e8da2efd51c554494785e1953a525857834e50838e"
+
+[[files]]
+file = "kubejs/assets/astralgenerators/textures/item/resolith_manipulator.png"
+hash = "bc7556839a6f234f4b6b9b0cebc954f1853726b645f4c774c4d1cf8b71b01051"
 
 [[files]]
 file = "kubejs/assets/astralsignals/models/block/analog_decryptor_dummy.json"
@@ -2570,15 +2578,15 @@ hash = "7d02ffdce10222c9a610d22f56c0950a622ed66101c391179e0cabace652448e"
 
 [[files]]
 file = "kubejs/assets/createastral/lang/en_gb.json"
-hash = "57487179cb3cda45bf6be3249afd0c1844fe6d79d0f9189e69d54d72f7382027"
+hash = "d89c33fec52c463418f0c33cefbf8f43459c9b84459ae18969afcd16ae722aa8"
 
 [[files]]
 file = "kubejs/assets/createastral/lang/en_us.json"
-hash = "d752cc8e4271d0805824a31d434646aad732139ddfed94034bc4ca749a791dc5"
+hash = "c496e0df3d081009cb6caa4d62179817630919b8f7a09f6049d56b14dced2c4e"
 
 [[files]]
 file = "kubejs/assets/createastral/lang/es_es.json"
-hash = "9506bc63f4d15e72a09d6349dfa0240ea5cd02e21d36bf33dc18953a90844e0e"
+hash = "b8fe23508bb1400e3ac33b46e5b8496180d88de707e74d99137552e343494392"
 
 [[files]]
 file = "kubejs/assets/createastral/lang/fr_fr.json"
@@ -2586,7 +2594,7 @@ hash = "cb5eaac36df5e46897fbd09f3ced9a589a63801b3e4440a64694fbdf4f753ec6"
 
 [[files]]
 file = "kubejs/assets/createastral/lang/ru_ru.json"
-hash = "16a4e5c3f428260cdff67af4eaf433596d6b3df9129cf36a724701bf2ba89157"
+hash = "d2a02eb2c23949152a77c93883426e8b4e7a2f7b76dabc96f945f1345e8b23fb"
 
 [[files]]
 file = "kubejs/assets/createastral/mantle/colors.json"
@@ -7570,7 +7578,7 @@ hash = "482aedd5d45258ebc3b2babf5581ef6e3f2397f4b2d9a1680f97c039e458aef7"
 
 [[files]]
 file = "kubejs/data/astralrails/loot_tables/chests/generic/ch4.json"
-hash = "e473028f995af161df4118454411bd4b27fc6750743f4d981291f5b65120de98"
+hash = "c86855625cc84f62c8acaa109bbbf903c71d4205079cbc136acd0a439ef4a8af"
 
 [[files]]
 file = "kubejs/data/astralrails/loot_tables/chests/generic/ch6.json"
@@ -14134,11 +14142,7 @@ hash = "46a2da6103364e34d9d5003b746491dcb1958c683177bdd992948b1592b11643"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astral_generators/shaped.js"
-hash = "9d2e4ba8d2a91bbb2af9e0416331e5cf0e791f0b60f5763b96c297f25bc22746"
-
-[[files]]
-file = "kubejs/server_scripts/recipes/astral_generators/shapeless.js"
-hash = "65935b87d9bfeb9e7a12e5dd85f261f052d7310df54e85bb66129df304c66573"
+hash = "cdd96624352d2fdef57cbbfd7d488e6d5c03964dbc72cd579294740c48fc3ba2"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/astral_signals/machines/analog_decryptor.js"
@@ -14246,7 +14250,7 @@ hash = "2cfe531ff7f70dfa3da4d718089cf96e6727d2449aa36fcf04258d0f24d50a98"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/mechanical_crafting.js"
-hash = "cfa4281b0a0bd94975b3110abb16044bcd0da4314da87e71c6ae0ebc7de81374"
+hash = "140e223b5292a7ef063681d43c9032dc3ed4010519f0997a494dc5a83acaeb53"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/milling.js"
@@ -14266,7 +14270,7 @@ hash = "f85a6be3c6f36bf5e290347ecc7362683086b5ebd74188963bf768811bf44442"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/sequenced_assembly.js"
-hash = "97b2112a0e287fabf8a56eb4bef92c9c6f433276595039af4c6dced4deca3f83"
+hash = "7d578bf47ff58e7f71ba03b3d7e0c157558acd4e5b51f20632590e77df0674b1"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/splashing.js"
@@ -14310,7 +14314,7 @@ hash = "ce87cf340688fab96dc38d9d9c551c29729efb4948d950fad74439da240b6cd2"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/shaped.js"
-hash = "1057339f685b0b3ac12cecf9327f95f2f68abeadd6cc7dc0bef47444b20bf1db"
+hash = "80be07a00127e101d1ba3746937c06b28c3e85bcb826210d97b363fc76bfca96"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/shapeless.js"
@@ -15124,7 +15128,7 @@ metafile = true
 
 [[files]]
 file = "mods/hephaestus-fabric.pw.toml"
-hash = "af03c1831e15963fe13d904b4f49609ac72fd9c344c0d3058a154620b6cf3497"
+hash = "5f8019cc8398ae22280bd14e809a086feb152f65147f0c7b03b49ba0a0bb04ba"
 metafile = true
 
 [[files]]
@@ -15339,6 +15343,11 @@ metafile = true
 [[files]]
 file = "mods/neruina.pw.toml"
 hash = "17e8ed3dbc72e1c5f4d2cc0b320bfbf55638f29afe940b9011381087a3507cc6"
+metafile = true
+
+[[files]]
+file = "mods/no-chat-restrictions.pw.toml"
+hash = "e6d112d4a2682a2bf24f27c02f40ce96d472a7d3be76173a953a1cf73b954d78"
 metafile = true
 
 [[files]]
@@ -18313,7 +18322,7 @@ metafile = true
 
 [[files]]
 file = "resourcepacks/create-touch-ups.pw.toml"
-hash = "296afbbbc2f0bbc8040f44293a4be3620bb10c9886b5ed2c7155885888373e4b"
+hash = "41a6e5850eec365a6041048ed868f9328451f4d2c6b3ee08bf596d521773dc8e"
 metafile = true
 
 [[files]]
