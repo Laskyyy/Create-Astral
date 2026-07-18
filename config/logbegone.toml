@@ -1,0 +1,8 @@
+# The configuration file for Log Begone
+
+[logbegone]
+# If a log message has one of these phrases, it will be filtered out from logging
+phrases = ["deprecated and will be removed in a future version of Roughly Enough Items.", "Unable to load model: ", "Exception loading blockstate definition: ", "Missing sound for event: ", "minecraft:optifine/cem/", "the above file didn't specify all uv directions!", "Failed to read tree dialogue JSON object", "This line is printed by an example mod mixin!", "specified a duration. Durations have no impact on this type of recipe.", "Tried to deserialize invalid heat condition:", "has more item inputs", "has more item outputs", "Couldn't parse loot table", "Could not open resource for loot table", "Parsing error loading custom advancement mcdw:recipes"]
+
+# If a log message matches one of these regex patterns, it will be filtered out from logging. EX: 
+regex = []

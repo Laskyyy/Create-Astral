@@ -8,15 +8,14 @@ on:
         required: true
 
 jobs:
-  versioning:
-    name: Grab version numbers
+  create-pullrequest:
+    name: Create Pull Request
     runs-on: ubuntu-latest
-    outputs:
-      old_version: ${{steps.old-version.outputs.version}}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
         with:
+          ref: Astral-Experimental
           fetch-depth: 0
 
       - name: Get old version
@@ -25,24 +24,14 @@ jobs:
         run: |
           echo "version=$(echo "$(<pack.toml)" | grep "version =" | cut -d '"' -f 2)" >> "$GITHUB_OUTPUT"
 
-  release:
-    name: Open Pull Request
-    needs: [versioning]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-        with:
-          ref: feature/workflow
-
-      - name: Get latest packwiz binary
+      - name: Download packwiz binary # now with static releases instead of action artifacts!
         id: download-packwiz
-        uses: dawidd6/action-download-artifact@v6
+        uses: robinraju/release-downloader@v1.13
         with:
-          workflow: go.yml
-          branch: main
-          name: Linux 64-bit x86
-          repo: packwiz/packwiz
+          repository: The-Shortman/packwiz
+          tag: "v1.0.0"
+          fileName: Linux_x86-64.zip
+          extract: true
 
       - name: Make packwiz binary executable
         shell: bash
@@ -54,7 +43,7 @@ jobs:
         shell: bash
         run: |
           while read -r line; do
-            echo "${line//"${{needs.versioning.outputs.old_version}}"/"${{github.event.inputs.new_version}}"}"
+            echo "${line//"${{steps.old-version.outputs.old_version}}"/"${{github.event.inputs.new_version}}"}"
           done < "pack.toml" > "tmp.toml"
           cat tmp.toml > pack.toml
           rm tmp.toml
@@ -67,7 +56,7 @@ jobs:
           OLD_IFS="$IFS"
           IFS=
           while read -r line; do
-            echo "${line//"${{needs.versioning.outputs.old_version}}"/"${{github.event.inputs.new_version}}"}"
+            echo "${line//"${{steps.old-version.outputs.old_version}}"/"${{github.event.inputs.new_version}}"}"
           done < "./config/fancymenu/user_variables.db" > "tmp.db"
           IFS="$OLD_IFS"
           cat tmp.db > ./config/fancymenu/user_variables.db
@@ -80,7 +69,7 @@ jobs:
           OLD_IFS="$IFS"
           IFS=
           while read -r line; do
-            echo "${line//"${{needs.versioning.outputs.old_version}}"/"${{github.event.inputs.new_version}}"}"
+            echo "${line//"${{steps.old-version.outputs.old_version}}"/"${{github.event.inputs.new_version}}"}"
           done < "./kubejs/startup_scripts/misc/misc.js" > "tmp.js"
           IFS="$OLD_IFS"
           cat tmp.js > ./kubejs/startup_scripts/misc/misc.js

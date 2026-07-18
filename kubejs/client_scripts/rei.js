@@ -1,8 +1,8 @@
 (function rei() {
   console.info("Hello, World! (You will see this line every time client resources reload)");
   onEvent("rei.group", (event) => {
-    event.groupItems("kubejs:rei_groups/chipped", Component.of("Chipped Blocks"), [
-      Ingredient.of(/** @type {Internal.IngredientJS_} */ ("@chipped"))
+    event.groupItems("kubejs:rei_groups/chipped", Component.translate("text.rei.createastral.chipped.block"), [
+      Ingredient.of(/** @type {Internal.IngredientJS_} */("@chipped"))
         .getItemIds()
         .toArray()
         .filter(
@@ -19,8 +19,8 @@
     ]);
 
     // Compressed Blocks
-    event.groupItems("kubejs:rei_groups/compressed", Component.of("Compressed Blocks"), [
-      Ingredient.of(/** @type {Internal.IngredientJS_} */ ("@compressor")).getItemIds().toArray(),
+    event.groupItems("kubejs:rei_groups/compressed", Component.translate("text.rei.createastral.compressed.block"), [
+      Ingredient.of(/** @type {Internal.IngredientJS_} */("@compressor")).getItemIds().toArray(),
     ]);
 
     //Decrypted Drives
@@ -141,7 +141,7 @@
   });
   //Add Potion fluids to REI
   onEvent("rei.add.fluids", (event) => {
-    let bottles = /** @type {const} */ ["REGULAR", "SPLASH", "LINGERING"];
+    let bottles = /** @type {const} */["REGULAR", "SPLASH", "LINGERING"];
     let potions = /** @type {const} */ ([
       //The order that we create these rei entries in is important!
       ["minecraft:mundane", []],

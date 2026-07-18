@@ -1,0 +1,13 @@
+name = "Complimentary Shaders - Reimagined"
+filename = "ComplimentaryReimagined_r5.1.1.zip"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "8738d99d8a78b7e7ea71b5c15a3432bc04eba715"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4913944
+project-id = 627557

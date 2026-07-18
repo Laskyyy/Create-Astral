@@ -22,7 +22,7 @@
     event.create("createastral:circuit_paper");
     event.create("createastral:copper_clad_lapis_board");
     event.create("createastral:printed_copper_clad_lapis_board");
-    event.create("createastral:logo");
+    event.create("createastral:logo").displayName("Astral");
     event.create("createastral:bronze_ingot");
     event.create("createastral:desh_dust");
     event.create("createastral:small_desh_dust");
@@ -50,7 +50,7 @@
     event.create("createastral:protopork", "create:sequenced_assembly");
     event.create("createastral:protorabbit", "create:sequenced_assembly");
     event.create("createastral:protoegg", "create:sequenced_assembly");
-    event.create("createastral:dragons_sputum", "create:sequenced_assembly");
+    event.create("createastral:dragons_sputum", "create:sequenced_assembly").displayName("Dragon's Sputum");
     event.create("createastral:quadrocopter_blueprint").texture("create:item/schematic");
     event.create("createastral:gyrodyne_blueprint").texture("create:item/schematic");
     event.create("createastral:biplane_blueprint").texture("create:item/schematic");
@@ -60,7 +60,7 @@
     event.create("createastral:shimmer_amplifier").rarity("epic");
     event.create("createastral:star_shard").glow(true);
     event.create("createastral:pure_star_shard").glow(true).rarity("epic");
-    event.create("createastral:crushed_raw_gadolinite");
+    event.create("createastral:crushed_raw_gadolinite").displayName("Crushed Raw Yttrium");
     event.create("createastral:crushed_raw_cobalt");
     event.create("createastral:experience_ingot").glow(true);
     event.create("createastral:stone_dust").displayName("Stone Dust");
@@ -177,6 +177,8 @@
       .create("createastral:transitional_lapis_sheet", "create:sequenced_assembly")
       .displayName("Incomplete Integrated Circuit");
     event
+      .create("createastral:incomplete_slop", "create:sequenced_assembly");
+    event
       .create("createastral:incomplete_navigation_mechanism", "create:sequenced_assembly")
       .displayName("Incomplete Navigation Mechanism");
     event
@@ -262,6 +264,7 @@
         east: "createastral:item/incomplete_refined_radiance_casing",
       },
     });
+    event.create("createastral:tampered_beacon", "create:sequenced_assembly");
     event.create("createastral:incomplete_shadow_steel_casing", "create:sequenced_assembly").modelJson({
       parent: "minecraft:block/cube",
       textures: {

@@ -1,6 +1,6 @@
 name = "Pack Order"
 filename = "packorder-1.0.0.jar"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"

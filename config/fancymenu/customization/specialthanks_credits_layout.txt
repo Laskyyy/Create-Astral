@@ -567,7 +567,7 @@ element {
 
 element {
   interactable = true
-  source = ^^^%n%Alpvia%n%Ari%n%DRCheese1%n%Dzsonzi%n%GayGirl_Violet%n%HanetRee%n%HelixGlitch%n%Icewater%n%Littlemojo%n%Luthien%n%Masoki%n%MrRumblz89%n%Neijr%n%^^^
+  source = ^^^%n%Selvia%n%Ari%n%DRCheese1%n%Dzsonzi%n%RubyRose_x3%n%HanetRee%n%HelixGlitch%n%Icewater%n%Littlemojo%n%Luthien%n%Masoki%n%MrRumblz89%n%Neijr%n%^^^
   source_mode = direct
   shadow = true
   scale = 1.0

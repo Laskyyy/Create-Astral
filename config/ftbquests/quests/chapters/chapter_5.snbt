@@ -2490,6 +2490,9 @@
 				"{ftbquests.chapter.chapter_5.blender.description2}"
 				""
 				"{ftbquests.chapter.chapter_5.blender.description4}"
+				""
+				"{image:createastral:textures/item/blender_rei_1.png width:200 height:270 align:1}"
+				"{image:createastral:textures/item/blender_rei_2.png width:200 height:216 align:1}"
 			]
 			dependencies: ["30B554B51AEFEB0C"]
 			id: "52C8D56DC0260931"
@@ -2546,7 +2549,13 @@
 			tasks: [{
 				id: "17A2ED4993593E80"
 				type: "item"
-				item: "astraladditions:rapier"
+				item: {
+					id: "astraladditions:rapier"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
 			}]
 			rewards: [{
 				id: "19338E10530F79E0"
@@ -2593,6 +2602,33 @@
 						}]
 					}
 				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.0d
+			shape: "heart"
+			subtitle: "{ftbquests.chapter.chapter_5.quests79.subtitle}"
+			description: ["{ftbquests.chapter.chapter_5.quests79.description0}"]
+			dependencies: ["2993E04DCB7B4EC4"]
+			size: 1.5d
+			id: "589FA6E35088AD47"
+			tasks: [{
+				id: "5527B7631D090F67"
+				type: "item"
+				item: {
+					id: "astraladditions:spudshotgun"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "27F854E8AC4F7361"
+				type: "item"
+				item: "astraladditions:spud_mag"
+				count: 3
 			}]
 		}
 	]
