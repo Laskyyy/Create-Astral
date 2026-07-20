@@ -1,0 +1,35 @@
+{
+	"processors": [
+		{
+			"processor_type": "minecraft:rule",
+			"rules": [
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "minecraft:smooth_basalt",
+						"probability": 0.1
+					},
+					"output_state": {
+						"Name": "minecraft:lava"
+					}
+				},
+				{
+					"location_predicate": {
+						"predicate_type": "minecraft:always_true"
+					},
+					"input_predicate": {
+						"predicate_type": "minecraft:random_block_match",
+						"block": "minecraft:smooth_basalt",
+						"probability": 0.5
+					},
+					"output_state": {
+						"Name": "minecraft:magma_block"
+					}
+				}
+			]
+		}
+	]
+}

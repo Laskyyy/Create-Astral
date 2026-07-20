@@ -1,0 +1,22 @@
+{
+  "name": "astralrails:paths/start_paths",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "astralrails:mars/gilded_citadel/outer_1",
+        "processors": [
+          {
+            "processor_type": "astralrails:mars/concrete_lava"
+          },
+          {
+            "processor_type": "astralrails:mars/smooth_basalt_lava"
+          }
+        ],
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
