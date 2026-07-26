@@ -1141,7 +1141,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 0c0949fb-bdac-43cb-91f6-34634487caf7-1727453726350
-  [executable_action_instance:b40abae6-13a4-4be2-9989-7dd1164a46e5-1727455666960][action_type:set_variable] = viewed_changelog_2.1.5:1
+  [executable_action_instance:b40abae6-13a4-4be2-9989-7dd1164a46e5-1727455666960][action_type:set_variable] = viewed_changelog_2.1.5a:1
   [executable_action_instance:fd52e48c-a620-4a36-8cc3-9d4185d9cb0f-1728926722297][action_type:set_variable] = changelog_visible:215
   [executable_block:0c0949fb-bdac-43cb-91f6-34634487caf7-1727453726350][type:generic] = [executables:b40abae6-13a4-4be2-9989-7dd1164a46e5-1727455666960;fd52e48c-a620-4a36-8cc3-9d4185d9cb0f-1728926722297;]
   restartbackgroundanimations = true
@@ -1239,7 +1239,7 @@ element {
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if_not][group:notify_requirements][req_id:25fb8514-1be7-4e44-8f4b-406b55921833-1750556060804] = viewed_changelog_2.1.2:1
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if_not][group:notify_requirements][req_id:b59e31fd-3522-4c3d-aea0-c511bc6e6f71-1750556076046] = viewed_changelog_2.1.3:1
   [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if_not][group:notify_requirements][req_id:1e4c4beb-119c-4927-97e6-84c1c9bd8a37-1750556087228] = viewed_changelog_2.1.4:1
-  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if_not][group:notify_requirements][req_id:f69f6f39-4216-4e1e-a8e0-c4fb239552ab-1781714915221] = viewed_changelog_2.1.5:1
+  [loading_requirement:fancymenu_visibility_requirement_is_variable_value][requirement_mode:if_not][group:notify_requirements][req_id:f69f6f39-4216-4e1e-a8e0-c4fb239552ab-1781714915221] = viewed_changelog_2.1.5a:1
   enable_parallax = false
   parallax_intensity = 0.5
   invert_parallax = false
