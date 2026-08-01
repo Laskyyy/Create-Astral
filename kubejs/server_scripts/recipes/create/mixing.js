@@ -527,6 +527,12 @@
         time: 100,
       },
       {
+        output: Fluid.of("tconstruct:molten_slimesteel", INGOT * 2),
+        input: ["minecraft:iron_ingot", "tconstruct:sky_slime_ball", "#tconstruct:seared_blocks"],
+        heat: "superheated",
+        time: 300,
+      },
+      {
         output: Fluid.of("tconstruct:molten_slimesteel", INGOT),
         input: ["minecraft:iron_ingot", "tconstruct:sky_slime_ball", "#tconstruct:seared_blocks"],
         heat: "heated",
@@ -556,12 +562,6 @@
         output: Fluid.of("tconstruct:molten_slimesteel", INGOT),
         input: [Item.of("minecraft:iron_nugget", 9), "tconstruct:sky_slime_ball", "#tconstruct:seared_blocks"],
         heat: "heated",
-        time: 300,
-      },
-      {
-        output: Fluid.of("tconstruct:molten_slimesteel", INGOT * 2),
-        input: ["minecraft:iron_ingot", "tconstruct:sky_slime_ball", "#tconstruct:seared_blocks"],
-        heat: "superheated",
         time: 300,
       },
       {
