@@ -5,6 +5,12 @@
     //Tech Reborn
     /** @type {Internal.RecipeFilter_[]} */
     const recipeRemovals = [
+      // Automobility default engine recipes
+      { id: "automobility:engine/copper_engine" },
+      { id: "automobility:engine/diamond_engine" },
+      { id: "automobility:engine/gold_engine" },
+      { id: "automobility:engine/iron_engine" },
+      { id: "automobility:engine/stone_engine" },
       // storage units
       { output: "techreborn:crude_storage_unit" },
       { output: "techreborn:basic_storage_unit" },
