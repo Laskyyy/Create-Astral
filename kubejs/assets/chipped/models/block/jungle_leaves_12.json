@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "chipped:block/jungle_leaves/jungle_leaves_11",
+    "side": "chipped:block/jungle_leaves/jungle_leaves_12"
+  }
+}
