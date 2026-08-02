@@ -352,6 +352,11 @@
     "block.chipped.glass_pane_100": "Square Warped Glass Pane",
     "block.chipped.glass_pane_101": "Woven Warped Glass Pane",
 
+    "block.chipped.glowstone_2": "Sea Glowstone Lantern",
+    "block.chipped.glowstone_3": "Framed Glowstone Lantern",
+    "block.chipped.glowstone_15": "Wither Engraved Glowstone",
+    "block.chipped.glowstone_20": "Nether Engraved Glowstone",
+
     "block.chipped.black_glazed_terracotta_1": "Black Glazed Terracotta Pillar Sides",
     "block.chipped.black_glazed_terracotta_2": "Black Glazed Terracotta Pillar Top",
     "block.chipped.blue_glazed_terracotta_1": "Blue Glazed Terracotta Pillar Sides",
@@ -640,6 +645,11 @@
     "block.chipped.redstone_torch_3": "Yellow Redstone Torch",
     "block.chipped.redstone_torch_4": "Green Redstone Torch",
     "block.chipped.redstone_torch_5": "Lightstick Redstone Torch",
+
+    "block.chipped.sand_6": "Overgrown Sand",
+    "block.chipped.sand_7": "Pearl Sand",
+    "block.chipped.sand_8": "Tar Sand",
+    "block.chipped.sand_11": "Wet Sand",
 
     "block.chipped.crimson_stem_1": "Firewood Crimson Stem",
     "block.chipped.crimson_stem_2": "Center Cut Crimson Stem",
